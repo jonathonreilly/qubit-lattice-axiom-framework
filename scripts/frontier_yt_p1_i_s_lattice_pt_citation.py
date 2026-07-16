@@ -11,10 +11,10 @@ Cl(3)/Z^3 action. It verifies:
 
   1. retained color tensor C_F = 4/3 from the prior P1 color-factor
      retention note (SU(3) Casimir D7 + S1);
-  2. retained canonical-surface constants alpha_LM = 0.0907,
+  2. conditional canonical-surface arithmetic alpha_LM = 0.0907,
      alpha_LM / (4 pi) = 0.00721 from `canonical_plaquette_surface.py`;
-  3. exact reproduction of the packaged delta_PT = alpha_LM * C_F / (2 pi)
-     = 1.92% under the implicit standard-fundamental assumption I_S = 2;
+  3. exact reproduction of the historical conditional arithmetic
+     delta_PT = alpha_LM * C_F / (2 pi) = 1.92% when I_S = 2 is supplied;
   4. supplied comparison bracket I_S in [4, 10] with central I_S ~ 6 for
      the tadpole-improved Wilson-plaquette + 1-link staggered scalar
      density at beta ~ 6 (Sharpe 1994; Bhattacharya-Sharpe 1998;
@@ -36,12 +36,13 @@ Cl(3)/Z^3 action. It verifies:
 
 Authority
 ---------
-Retained foundations (not modified by this runner):
+Structural foundations and conditional arithmetic sources:
   - docs/YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md (C_F/C_A/T_F n_f)
   - docs/YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md
   - scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py (I_1 = I_S reduction)
   - docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md (Z_V^conserved = 1)
-  - docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md (packaged 1.92%)
+  - docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md
+    (unaudited conditional alpha_LM arithmetic only)
   - scripts/canonical_plaquette_surface.py
 
 Master obstruction theorem (NOT modified by this runner):
@@ -73,7 +74,7 @@ import sys
 from pathlib import Path
 from typing import Dict, Tuple
 
-# Retained canonical-surface constants (not modified here).
+# Conditional canonical-surface arithmetic (not promoted here).
 from canonical_plaquette_surface import (
     CANONICAL_ALPHA_BARE,
     CANONICAL_ALPHA_LM,
@@ -116,6 +117,7 @@ def part_0_status_boundary() -> None:
     print("=" * 72)
 
     note = read_note()
+    note_compact = " ".join(note.split())
     check("source note exists", NOTE_PATH.exists(), str(NOTE_PATH.relative_to(ROOT)))
     check("claim type is bounded_theorem", "**Claim type:** bounded_theorem" in note)
     check(
@@ -125,8 +127,15 @@ def part_0_status_boundary() -> None:
     check("conditional citation/support boundary is present", "conditional citation/support layer" in note)
     check("conditional arithmetic lemma boundary is present", "conditional arithmetic lemma" in note)
     check(
+        "canonical alpha source is explicitly unaudited conditional arithmetic",
+        "That certificate is unaudited on current `main`" in note_compact
+        and "not retained authority for the physical/canonical input" in note_compact,
+    )
+    check(
         "bracket is not asserted audit-closed",
-        "not assert that the bracket is framework-native or audit-closed" in note,
+        "no audit should treat the" in note
+        and "bracket as retained unless the bracket itself is separately accepted" in note
+        and "external bracket as a retained framework-native value" in note,
     )
     check("old proposed_retained status is absent", "proposed_retained" not in note)
     check("PR-local source proposal marker is absent", "source-note proposal only" not in note)
@@ -150,7 +159,7 @@ ALPHA_LM = CANONICAL_ALPHA_LM
 ALPHA_LM_OVER_4PI = ALPHA_LM / (4.0 * PI)
 ALPHA_LM_OVER_2PI = ALPHA_LM / (2.0 * PI)
 
-# Packaged P1 nominal (from UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md).
+# Historical conditional I_S = 2 arithmetic; no bridge authority is used.
 DELTA_PT_PACKAGED = ALPHA_LM * C_F / (2.0 * PI)
 
 # Standard-fundamental-Yukawa value of I_S in the (alpha/(4 pi)) convention.
@@ -226,12 +235,12 @@ def part_a_retained_color_tensor() -> None:
 
 
 # ---------------------------------------------------------------------------
-# PART B: Retained canonical-surface constants
+# PART B: Conditional canonical-surface arithmetic
 # ---------------------------------------------------------------------------
 
 def part_b_canonical_surface() -> None:
     print("\n" + "=" * 72)
-    print("PART B: Retained canonical-surface constants")
+    print("PART B: Conditional canonical-surface arithmetic")
     print("=" * 72)
 
     print(f"\n  <P>                         = {CANONICAL_PLAQUETTE:.6f}")
@@ -242,7 +251,7 @@ def part_b_canonical_surface() -> None:
     print(f"  alpha_LM / (2 pi)           = {ALPHA_LM_OVER_2PI:.10f}")
 
     check(
-        "alpha_LM matches canonical-surface retention",
+        "alpha_LM arithmetic matches alpha_bare/u_0",
         abs(ALPHA_LM - ALPHA_BARE / U_0) < 1e-12,
         f"alpha_LM = {ALPHA_LM:.10f}",
     )
@@ -257,7 +266,7 @@ def part_b_canonical_surface() -> None:
         f"alpha_LM/(4 pi) = {ALPHA_LM_OVER_4PI:.10f}",
     )
     check(
-        "<P> = 0.5934 and u_0 = <P>^(1/4) ~ 0.8777 retained",
+        "<P> = 0.5934 and u_0 = <P>^(1/4) ~ 0.8777 arithmetic",
         abs(CANONICAL_PLAQUETTE - 0.5934) < 1e-6
         and abs(U_0 - 0.87768138) < 1e-6,
         f"<P>={CANONICAL_PLAQUETTE:.4f}, u_0={U_0:.6f}",

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_loop_geometric_bound.py
-runner_sha256: b60257546e61ea478667212948c7d6c7560df8229623c2001be6e9a089b5269e
+runner_sha256: 50adabda258b0360f9d664b2cd47e1c361253f1a57100ecc511d1a13146b8b37
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.20
@@ -86,7 +86,7 @@ PART D: Framework-native ratio bound r_R = (a/pi) * b_0
   [PASS (C)] Geometric-sum convergence r_R < 1  (r_R = 0.2213)
   [PASS (C)] Tight candidate (a/pi)*2 C_A saturates (justifying b_0 choice)  ((a/pi)*2 C_A = 0.1732 = r_max = 0.1732)
   [PASS (C)] r_R bounded by analog P3 envelope (a/pi)*C_A^2 from above  (r_R = 0.2213 < (a/pi)*C_A^2 = 0.2597)
-  [PASS (C)] r_R derived from retained SU(3) Casimirs + retained n_l + retained alpha_LM only  (structural retention provenance verified)
+  [PASS (C)] r_R derived from retained SU(3) Casimirs + retained n_l + conditional alpha_LM  (structural retention provenance verified)
 
 ========================================================================
 PART E: Tail residual and total bound at truncation N = 1
@@ -159,22 +159,12 @@ PART F: Comparison with analog P3 K-series bound
   [PASS (C)] P1 tail factor ~ 0.63 x P3 tail factor (compounded tightening)  (tail_factor_ratio = 0.6351)
 
 ========================================================================
-PART G: Cross-consistency with single-tensor 2-loop estimate
+PART G: Source-scope firewall
 ========================================================================
-
-  Informal single-tensor 2-loop estimate (UV bridge note):
-    (a_LM/pi)^2 * C_F^2     = 0.00148076  = 0.1481%
-
-  Retained 2-loop bound (this note, packaged I_S=2):
-    Delta_1 * r_R           = 0.00425718  = 0.4257%
-
-  Ratio retained-bound / single-tensor   = 2.8750
-  [PASS (C)] Retained 2-loop bound >= single-tensor C_F^2 estimate  (bound = 0.004257 vs single = 0.001481)
-  [PASS (C)] Ratio retained/single in [2.5, 3.5] (full tensor envelope correction)  (ratio = 2.8750)
-  [PASS (C)] Informal 2-loop (~0.15%) consistent with bound (< 0.5%)  (single_tensor = 0.001481)
-
-  1-loop / total at packaged I_S=2       = 0.7787
-    (= 1 - r_R = 0.7787)
+  [PASS (C)] Source note links the bounded canonical alpha certificate
+  [PASS (C)] Source note no longer cites the UV coefficient bridge
+  [PASS (C)] Historical single-tensor cross-validation is explicitly removed
+  [PASS (C)] Individual higher-loop coefficients remain explicit non-claims
 
 ========================================================================
 PART H: Structural retention provenance
@@ -184,24 +174,25 @@ PART H: Structural retention provenance
     - SU(3) Casimirs C_F, T_F, C_A  (from YT_EW_COLOR_PROJECTION_THEOREM.md D7)
     - retained n_l = 5 at M_Pl      (from SM branch of complete-prediction-chain)
     - derived b_0 = 23/3            (exact rational at SU(3), n_l=5)
-    - alpha_LM = 0.09066784         (from canonical_plaquette_surface.py via UV bridge note)
+    - alpha_LM = 0.09066784         (from bounded canonical arithmetic certificate)
     - I_S bracket [2, 4-10]         (from YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md)
 
   NOT used by this bound as a derivation input:
     - any literature value of delta_R^{(2)} or higher
     - any non-retained empirical parameter
     - any external numerical input beyond the SU(3) Casimir algebra,
-      the retained SM light-flavor count, and the retained alpha_LM anchor.
+      the retained SM light-flavor count and the conditional alpha_LM arithmetic.
 
-  Informal cross-check inputs (not derivation inputs):
-    - single-tensor 2-loop estimate ~0.15% from UV bridge note (Sec G)
+  Removed stale attribution:
+    - no single-tensor 2-loop estimate is sourced from the UV coefficient bridge
   [PASS (C)] Bound input b_0 = 23/3 is a retained rational at SU(3), n_l=5  (b_0 = 23/3 verified)
-  [PASS (C)] Bound input alpha_LM is retained from canonical plaquette surface  (alpha_LM = 0.09066784)
+  [PASS (C)] Bound input alpha_LM matches the conditionally supplied arithmetic  (alpha_LM = 0.09066784)
+  [PASS (C)] Source note marks the alpha source unaudited and non-retained
   [PASS (C)] No literature value of delta_R^{(2)} or higher imported  (runner does not reference any delta_R^{(n)} for n >= 2)
   [PASS (C)] Prior P1 notes are the sole upstream sources  (retention lineage: Fierz no-go + color-factor + I_S citation + canonical alpha_LM)
 
 ========================================================================
-SUMMARY: PASS=43  FAIL=0
+SUMMARY: PASS=45  FAIL=0
 ========================================================================
 
 Framework-native ratio r_R = (a_LM/pi) * b_0             = 0.221264
@@ -220,8 +211,8 @@ At central cited I_S = 6:
   |tail(N=1)| bound         = 1.6400%
   |Delta_R^total| bound     = 7.4121%
 
-(Bound depends only on retained SU(3) Casimirs, retained n_l = 5,
- and retained alpha_LM; no literature value of delta_R^{(2)} or higher imported.)
+(Bound depends on retained SU(3) Casimirs, retained n_l = 5,
+ and conditional alpha_LM arithmetic; no literature delta_R^{(2)} value imported.)
 
 ----- stderr -----
 

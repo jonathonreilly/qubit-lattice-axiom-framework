@@ -163,12 +163,11 @@ does **not** modify:
   (`docs/YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md`), whose
   `Δ_3 ≃ +0.933` central and `[+0.667, +2.000]` range are inherited
   without modification;
-- the packaged `delta_PT = 1.92 %` support note
-  (`docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`), which remains
-  defensible in its stated OPEN-status role as a continuum
-  vertex-correction magnitude heuristic — and is explicitly
-  reinterpreted below as the **single-channel (C_F only)
-  approximation** to the full three-channel Δ_R;
+- the historical packaged `delta_PT = 1.92 %` comparator, retained only as
+  conditional arithmetic under `I_S = 2` and reinterpreted below as the
+  **single-channel (C_F only) approximation** to the full three-channel Δ_R.
+  No current authority cited here derives its source-action or continuum-vertex
+  interpretation;
 - the prior cited I_S-based `5.77 %` P1 central from
   `docs/YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md`, which
   remains defensible in its stated role as a cited C_F-channel
@@ -221,13 +220,17 @@ citation-and-bound channel evaluations.
 - **Retained Ward identity (tree level):**
   [`docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) — `y_t_bare² =
   g_bare²/(2 N_c) = g_bare²/6` at tree level.
-- **Canonical-surface anchors:**
-  [`docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) — `⟨P⟩ = 0.5934`,
-  `u_0 = 0.87768`, `α_LM = 0.09067`, `α_LM/(4π) = 0.00721`.
-- **Packaged delta_PT support (reinterpreted):**
-  [`docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`](UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md) — packaged
-  `delta_PT = α_LM · C_F / (2π) = 1.92 %`, reinterpreted in §5.1 as
-  the single-channel (C_F only) approximation to Δ_R.
+- **Conditional canonical arithmetic source (unaudited):**
+  [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)
+  — bounded arithmetic for `⟨P⟩ = 0.5934`, `u_0 = 0.87768`,
+  `α_LM = 0.09067`, and `α_LM/(4π) = 0.00721`, conditional on the parent
+  plaquette reuse surface. Its current ledger row is unaudited; this is
+  provenance for conditional arithmetic, not retained authority for the
+  physical/canonical input.
+- **Historical packaged comparator (reinterpreted):**
+  `delta_PT = α_LM · C_F / (2π) = 1.92 %` is local conditional arithmetic,
+  reinterpreted in §5.1 as the single-channel (C_F only) approximation to
+  Δ_R. Its source-action/matching interpretation remains open.
 - **Cited I_S literature (reinterpreted):**
   [`docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`](YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md) — cited
   `I_S ∈ [4, 10]` bracket, reinterpreted in §5.2 as a
@@ -428,11 +431,15 @@ From the three BZ-computation sub-theorems
     C_A  =  N_c  =  3                         (D7 at SU(3))
     T_F  =  1/2                               (D7 + S1 at SU(3))
     n_f  =  6                                 (MSbar side at M_Pl, standard SM)
-    ⟨P⟩  =  0.5934                            (retained plaquette)
-    u_0  =  ⟨P⟩^{1/4}  =  0.877681            (retained tadpole factor)
-    α_LM =  α_bare / u_0  =  0.090668         (retained canonical coupling)
-    α_LM / (4π)  =  0.007215                  (retained expansion parameter)
+    ⟨P⟩  =  0.5934                            (conditionally supplied)
+    u_0  =  ⟨P⟩^{1/4}  =  0.877681            (conditional arithmetic)
+    α_LM =  α_bare / u_0  =  0.090668         (conditional arithmetic)
+    α_LM / (4π)  =  0.007215                  (conditional arithmetic)
 ```
+
+The linked bounded arithmetic certificate is unaudited on current `main`; these
+numbers are inputs to the displayed assembly, not retained physical/canonical
+authority.
 
 ---
 
@@ -722,7 +729,8 @@ consistency check and supports the retained result.
 
 ### 5.1 Packaged `delta_PT = 1.92 %` (C_F channel only)
 
-From `docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`:
+Using the historical conditional convention `I_S = 2` together with the
+canonical arithmetic certificate:
 
 ```
     packaged delta_PT  =  α_LM · C_F / (2π)
@@ -740,10 +748,10 @@ the first of three terms. It is **not** the full Δ_R; it is a
 single-channel (C_F only) approximation that (a) omits the C_A
 channel (−7.22 %), (b) omits the T_F n_f channel (+2.02 %).
 
-The packaged value remains defensible in its stated role as a
-"continuum vertex-correction magnitude heuristic" — it correctly
-captures the C_F-channel magnitude — but it is not the retained
-P1 central on the full ratio.
+The arithmetic correctly reproduces the `C_F`-channel term under
+`Δ_1 = 2`, but no current authority cited here derives that historical
+identification from the source action. It is not the full Δ_R or an
+independently justified P1 central.
 
 ### 5.2 Cited I_S-based `5.77 %` (C_F channel only, no external-Z_ψ accounting)
 

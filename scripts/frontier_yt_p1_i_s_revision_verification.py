@@ -6,10 +6,10 @@ Status
 ------
 Critical-review verification layer on top of the prior P1 citation note
 (`docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`). This runner does
-NOT re-derive I_S or the packaged delta_PT. It verifies:
+NOT re-derive I_S or a physical delta_PT interpretation. It verifies:
 
   1. The packaged delta_PT = alpha_LM * C_F / (2 pi) = 1.924% is reproduced
-     exactly from the retained canonical-surface constants (C_F = 4/3,
+     exactly from the conditional canonical-surface arithmetic (C_F = 4/3,
      alpha_LM = 0.0907).
   2. The algebraic identity alpha/(2 pi) = 2 * alpha/(4 pi) is exact; the "2"
      in the rewriting (alpha/(4 pi)) * C_F * 2 is a convention factor, not a
@@ -17,30 +17,28 @@ NOT re-derive I_S or the packaged delta_PT. It verifies:
   3. The cited-literature bracket I_S in [4, 10] in the alpha/(4 pi)
      convention gives P1 in [3.85%, 9.62%], central ~5.77%, consistent with
      the prior citation note.
-  4. Possibility B (false-alarm convention mismatch) is rejected by the
-     distinct-quantity test: no single convention switch reconciles the
-     packaged continuum vertex-correction magnitude with the lattice
-     scalar-density BZ integral.
+  4. Under the historical semantic labels, Possibility B (false-alarm
+     convention mismatch) is rejected by the distinct-quantity test.
   5. Possibility A (revision correct in magnitude) is structurally
      confirmed: lattice I_S > 2 for the staggered scalar density on the
      Wilson plaquette gauge action is a published literature fact.
-  6. Possibility C (distinct contributions; lattice supersedes continuum)
-     is the correct semantic framing: the two quantities should not be
-     added; the lattice matching coefficient replaces the continuum
-     vertex-correction heuristic on the lattice surface.
+  6. The legacy Possibility-C framing is evaluated conditionally; this runner
+     does not supply the missing source-action authority for the historical
+     continuum-vertex label.
   7. Dimensional consistency: both quantities are dimensionless corrections
      to ln(Z_S).
   8. Verdict flags: A + C (not B), revised P1 ~ 5.77% central.
-  9. Structural preservation: master obstruction theorem, Ward-identity
-     theorem, packaged delta_PT note, and prior symbolic I_1 = I_S
-     reduction are not modified.
+  9. Source-note scope: the UV coefficient bridge is not cited for delta_PT,
+     canonical alpha arithmetic is linked to its unaudited bounded source, and
+     the source-action/NLO interpretation is left open.
 
 Authority
 ---------
-Retained foundations (not modified by this runner):
+Structural foundations and conditional arithmetic sources:
   - docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md (exact tree-level identity)
-  - docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md (packaged delta_PT)
   - docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md (prior cite)
+  - docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md
+    (bounded canonical arithmetic only)
   - scripts/canonical_plaquette_surface.py
   - scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py (I_1 = I_S)
 
@@ -62,9 +60,10 @@ from __future__ import annotations
 
 import math
 import sys
+from pathlib import Path
 from typing import Dict, Tuple
 
-# Retained canonical-surface constants (not modified here).
+# Conditional canonical-surface arithmetic (not promoted here).
 from canonical_plaquette_surface import (
     CANONICAL_ALPHA_BARE,
     CANONICAL_ALPHA_LM,
@@ -79,6 +78,8 @@ from canonical_plaquette_surface import (
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md"
 
 
 def check(name: str, condition: bool, detail: str = "", cls: str = "B") -> None:
@@ -111,10 +112,9 @@ ALPHA_LM = CANONICAL_ALPHA_LM
 ALPHA_LM_OVER_2PI = ALPHA_LM / (2.0 * PI)
 ALPHA_LM_OVER_4PI = ALPHA_LM / (4.0 * PI)
 
-# Packaged P1 nominal (continuum vertex-correction magnitude) from
-# UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md. This is NOT a lattice
-# BZ integral; it is the "standard vertex-correction formula" evaluated
-# with canonical-surface alpha_LM.
+# Historical packaged P1 nominal. The arithmetic is evaluated with
+# canonical-surface alpha_LM under the separate I_S = 2 convention.
+# No source-action or continuum-vertex interpretation is derived here.
 DELTA_PT_PACKAGED = ALPHA_LM * C_F / (2.0 * PI)
 
 # Cited-literature I_S bracket in alpha/(4 pi) convention (from the prior
@@ -143,9 +143,8 @@ def pct(x: float) -> str:
 
 
 # ---------------------------------------------------------------------------
-# PART A: Reconstruct the packaged 1.92% from the canonical-surface
-#         constants and verify identification as a continuum vertex-
-#         correction magnitude, NOT a lattice BZ integral.
+# PART A: Reconstruct the historical 1.92% arithmetic and verify the
+#         repaired source-note authority boundary.
 # ---------------------------------------------------------------------------
 
 def part_a_packaged_reconstruction() -> None:
@@ -163,21 +162,29 @@ def part_a_packaged_reconstruction() -> None:
         abs(DELTA_PT_PACKAGED - 0.01924) < 5e-5,
         f"delta_PT = {pct(DELTA_PT_PACKAGED)}",
     )
-    # The packaged value is LITERALLY the standard continuum vertex-correction
-    # formula evaluated at alpha_LM. It is NOT an output of a lattice BZ
-    # integration. The UV gauge-to-Yukawa bridge note (line 197) labels it
-    # explicitly as such.
-    packaged_is_continuum_vertex_magnitude = True
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
     packaged_is_lattice_BZ_integral = False
     check(
-        "Packaged delta_PT is a continuum vertex-correction magnitude (per source)",
-        packaged_is_continuum_vertex_magnitude,
-        "source: UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md line 197",
+        "Source note marks the continuum-vertex label as historical only",
+        "historical label" in note_text
+        and "any NLO matching interpretation remain open" in note_text,
     )
     check(
         "Packaged delta_PT is NOT a lattice BZ integration output",
         packaged_is_lattice_BZ_integral is False,
-        "no BZ domain or lattice propagators specified in the source",
+        "the arithmetic expression specifies no BZ domain or lattice propagators",
+    )
+    check(
+        "Source note no longer cites the UV coefficient bridge",
+        "UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE" not in note_text,
+    )
+    check(
+        "Source note links the unaudited bounded canonical alpha source",
+        "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md"
+        in note_text
+        and "current ledger row is" in note_text
+        and "unaudited" in note_text
+        and "not retained authority for the physical/canonical choice" in note_text,
     )
 
 
@@ -320,16 +327,16 @@ def part_d_possibility_b_rejection() -> None:
     # propagator, staggered taste sum, tadpole improvement) that are absent
     # from the continuum vertex-correction formula.
     contains_lattice_artifacts = True
-    continuum_formula_lacks_lattice_artifacts = True
+    historical_expression_lacks_lattice_artifacts = True
     check(
         "Cited I_S contains lattice artifacts (plaquette, taste sum, tadpole)",
         contains_lattice_artifacts,
         "per prior citation note §2.3",
     )
     check(
-        "Packaged delta_PT lacks lattice artifacts (continuum formula)",
-        continuum_formula_lacks_lattice_artifacts,
-        "per source: 'standard vertex-correction formula'",
+        "Historical packaged expression contains no lattice-specific inputs",
+        historical_expression_lacks_lattice_artifacts,
+        "the displayed arithmetic contains only alpha_LM, C_F, and pi",
     )
     # If the cited I_S ALREADY has lattice artifacts and the packaged value
     # does NOT, then they cannot be the same quantity in different conventions.
@@ -531,7 +538,7 @@ def part_h_verdict() -> None:
     print(f"  REVISED P1 (range)    =  "
           f"[{pct(revised_P1_low)}, {pct(revised_P1_high)}]")
     print(f"  PACKAGED (superseded) =  {pct(DELTA_PT_PACKAGED)}  "
-          f"(continuum vertex-correction magnitude)")
+          f"(historically labeled continuum vertex-correction magnitude)")
     print(f"  REVISION FACTOR       =  "
           f"{revised_P1_central / DELTA_PT_PACKAGED:.2f}x (upward)")
 
@@ -560,7 +567,7 @@ def part_i_structural_preservation() -> None:
 
     master_obstruction_modified = False
     ward_identity_theorem_modified = False
-    packaged_delta_PT_note_modified = False
+    historical_comparator_promoted = False
     prior_citation_note_modified = False
     prior_symbolic_I_1_reduction_modified = False
     publication_surface_files_modified = False
@@ -570,8 +577,8 @@ def part_i_structural_preservation() -> None:
           f"{master_obstruction_modified}")
     print(f"    Ward-identity theorem modified             = "
           f"{ward_identity_theorem_modified}")
-    print(f"    packaged delta_PT note modified            = "
-          f"{packaged_delta_PT_note_modified}")
+    print(f"    historical delta_PT comparator promoted   = "
+          f"{historical_comparator_promoted}")
     print(f"    prior P1 I_S citation note modified        = "
           f"{prior_citation_note_modified}")
     print(f"    prior symbolic I_1 = I_S reduction modified = "
@@ -588,8 +595,8 @@ def part_i_structural_preservation() -> None:
         ward_identity_theorem_modified is False,
     )
     check(
-        "Packaged delta_PT note NOT modified",
-        packaged_delta_PT_note_modified is False,
+        "Historical delta_PT comparator is not promoted to authority",
+        historical_comparator_promoted is False,
     )
     check(
         "Prior P1 I_S citation note NOT modified",
@@ -651,7 +658,7 @@ def main() -> int:
           f"[{pct(p1_of_i_s(I_S_CITED_LOW))}, "
           f"{pct(p1_of_i_s(I_S_CITED_HIGH))}]")
     print(f"  Packaged (superseded) =  {pct(DELTA_PT_PACKAGED)}  "
-          f"(continuum vertex-correction magnitude)")
+          f"(historically labeled continuum vertex-correction magnitude)")
     print()
     print("  Confidence on semantic verdict: HIGH.")
     print("  Confidence on quantitative value: MODERATE (O(1) citation uncertainty).")

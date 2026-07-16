@@ -23,7 +23,7 @@ staggered-Dirac surface, with per-channel retained centrals
 This runner verifies:
 
   (i)   retention of all structural inputs (SU(3) Casimirs, n_f, canonical
-        surface constants, per-channel formulae from the parent theorems);
+        surface arithmetic, per-channel formulae from the parent theorems);
   (ii)  per-channel contributions to Delta_R at central:
           C_F * Delta_1 * alpha/(4pi)     ~= +1.924 %
           C_A * Delta_2 * alpha/(4pi)     ~= -7.215 %
@@ -51,7 +51,7 @@ Retained foundations used by this runner (not modified here):
     (Delta_2 central = -10/3, range [-5, 0])
   - docs/YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md
     (Delta_3 central = (4/3) * 0.7, range [+0.667, +2.000])
-  - scripts/canonical_plaquette_surface.py
+  - scripts/canonical_plaquette_surface.py (conditional canonical arithmetic)
 
 Authority note (this runner):
   docs/YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md
@@ -63,6 +63,7 @@ from __future__ import annotations
 
 import math
 import sys
+from pathlib import Path
 from typing import List, Tuple
 
 from canonical_plaquette_surface import (
@@ -79,6 +80,8 @@ from canonical_plaquette_surface import (
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md"
 
 
 def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> None:
@@ -96,7 +99,7 @@ def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> None:
 
 
 # ---------------------------------------------------------------------------
-# Retained constants (framework-native, from upstream theorems)
+# Retained structural constants plus conditional canonical arithmetic
 # ---------------------------------------------------------------------------
 
 PI = math.pi
@@ -111,8 +114,9 @@ U_0 = CANONICAL_U0
 ALPHA_LM = CANONICAL_ALPHA_LM
 ALPHA_LM_OVER_4PI = ALPHA_LM / (4.0 * PI)
 
-# Packaged PT delta (from UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md)
-# delta_PT = alpha_LM * C_F / (2 pi) = (alpha_LM/(4pi)) * C_F * 2
+# Historical packaged comparator, conditional on I_S = 2:
+# delta_PT = alpha_LM * C_F / (2 pi) = (alpha_LM/(4pi)) * C_F * 2.
+# No source-action or continuum-vertex authority is assigned here.
 PACKAGED_DELTA_PT = ALPHA_LM_OVER_4PI * C_F * 2.0
 
 # Cited I_S-based C_F-channel single-channel central (5.77 %)
@@ -636,10 +640,27 @@ def main() -> int:
         True,
         "Delta_3 = 0.933 central with [0.667, 2.000] range inherited",
     )
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "Packaged delta_PT support note NOT modified (single-channel role preserved)",
-        True,
-        "1.92 % still defensible as C_F-only approximation",
+        "Historical delta_PT arithmetic remains a C_F-only conditional comparator",
+        abs(PACKAGED_DELTA_PT - ALPHA_LM * C_F / (2.0 * PI)) < 1e-15,
+        "no independent source-action interpretation is inferred",
+    )
+    check(
+        "Source note no longer cites the UV coefficient bridge for delta_PT",
+        "UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE" not in note_text,
+        "retired bridge attribution absent",
+    )
+    check(
+        "Source note links the unaudited bounded canonical alpha source",
+        "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md"
+        in note_text
+        and "current ledger row is unaudited" in note_text
+        and "not retained physical/canonical" in note_text,
+    )
+    check(
+        "Source note keeps source-action interpretation open",
+        "source-action/matching interpretation remains open" in note_text,
     )
     check(
         "Cited I_S citation note NOT modified (single-channel role preserved)",

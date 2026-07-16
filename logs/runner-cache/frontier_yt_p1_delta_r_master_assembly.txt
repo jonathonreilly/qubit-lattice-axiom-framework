@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_delta_r_master_assembly.py
-runner_sha256: 53b82bf057cf4ffbe265d5787c2cc3871fc025f82770a0d548b2637b5f889641
+runner_sha256: 27f4e8f4977c3d2cf69252dd29cb511a650720b63b3be554a0d2c9d09524849a
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================
@@ -98,14 +98,17 @@ Block 13: Structural preservation checks.
   [PASS (C)] Delta_1 BZ-computation sub-theorem NOT modified  (Delta_1 = +2 central with [0, +8] range inherited)
   [PASS (C)] Delta_2 BZ-computation sub-theorem NOT modified  (Delta_2 = -10/3 central with [-5, 0] range inherited)
   [PASS (C)] Delta_3 BZ-computation sub-theorem NOT modified  (Delta_3 = 0.933 central with [0.667, 2.000] range inherited)
-  [PASS (C)] Packaged delta_PT support note NOT modified (single-channel role preserved)  (1.92 % still defensible as C_F-only approximation)
+  [PASS (C)] Historical delta_PT arithmetic remains a C_F-only conditional comparator  (no independent source-action interpretation is inferred)
+  [PASS (C)] Source note no longer cites the UV coefficient bridge for delta_PT  (retired bridge attribution absent)
+  [PASS (C)] Source note links the unaudited bounded canonical alpha source
+  [PASS (C)] Source note keeps source-action interpretation open
   [PASS (C)] Cited I_S citation note NOT modified (single-channel role preserved)  (5.77 % still defensible as C_F-only, no-Z_psi approximation)
   [PASS (C)] Ward-identity tree-level theorem NOT modified  (y_t_bare^2 = g_bare^2 / 6 at tree level unchanged)
   [PASS (C)] Publication-surface files NOT modified  (no propagation to publication tables)
   [PASS (C)] Framework-native BZ quadratures of I_v_scalar, I_SE^{gg}, I_SE^{fl} remain OPEN  (literature-cited centrals used; sub-percent pinning requires framework-native quadrature)
 
 ========================================================================
-SUMMARY: PASS=68  FAIL=0
+SUMMARY: PASS=71  FAIL=0
 ========================================================================
 
 DEFINITIVE RESULT (Three-Channel Delta_R Master Assembly):

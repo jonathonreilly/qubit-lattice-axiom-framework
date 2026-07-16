@@ -52,10 +52,10 @@ It does not modify:
   orthogonal to the C_A channel addressed here;
 - the retained I_S citation note (`[4, 10]` central `~6` for the
   C_F-channel scalar-density matching);
-- the packaged `delta_PT = 1.92 %` support note
-  (`docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`), which
-  remains defensible in its stated role as a continuum
-  vertex-correction magnitude heuristic.
+- the historical packaged `delta_PT = 1.92 %` comparator, whose arithmetic is
+  reproduced only conditionally from `α_LM · C_F/(2π)` (equivalently
+  `(α_LM/(4π)) · C_F · 2`). No current bridge cited by this note derives the
+  `I_S = 2` identification, source action, or continuum-vertex interpretation.
 
 Specifically, this note does NOT propagate any numerical change into
 any publication-surface table; the `Δ_2`-inclusive ratio correction
@@ -79,12 +79,16 @@ could be contemplated.
     revised `P1 ∈ [3.85 %, 9.62 %]` central `5.77 %`.
   - [`docs/YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md`](YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md) — geometric
     tail bound on the loop-expansion axis.
-- **Subordinate support:**
-  [`docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`](UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md) — packaged
-  `delta_PT = 1.92 %`.
-- **Canonical-surface authority:**
-  [`docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) — `⟨P⟩ = 0.5934`,
-  `u_0 = 0.87768`, `α_LM = 0.09067`, `α_LM/(4π) = 0.00721`.
+- **Historical packaged comparator (not an authority):**
+  `delta_PT = α_LM · C_F/(2π) = 1.92 %` is retained here only as conditional
+  arithmetic under the historical `I_S = 2` convention. The missing
+  source-action/matching justification remains open.
+- **Conditional canonical arithmetic source (unaudited):**
+  [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)
+  — bounded arithmetic for `⟨P⟩ = 0.5934`, `u_0 = 0.87768`,
+  `α_LM = 0.09067`, and `α_LM/(4π) = 0.00721`, conditional on the parent
+  plaquette reuse surface. Its current ledger row is unaudited, so this link
+  does not close the physical/canonical input.
 - **Ward authority:**
   [`docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) — `y_t_bare² =
   g_bare² / (2 N_c) = g_bare² / 6` at tree level.
@@ -142,9 +146,11 @@ This note inherits without modification:
 - **SM flavor count at M_Pl, MSbar side** — `n_f = 6` (standard SM;
   irrelevant to C_A channel but recorded for cross-referencing the
   T_F n_f channel `Δ_3`).
-- **Canonical-surface anchors** — `⟨P⟩ = 0.5934`, `u_0 = 0.87768`,
-  `α_LM = 0.09067`, `α_LM/(4π) = 0.00721` (from
-  `docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md`).
+- **Conditional canonical arithmetic** — `⟨P⟩ = 0.5934`,
+  `u_0 = 0.87768`, `α_LM = 0.09067`, `α_LM/(4π) = 0.00721`, recorded
+  by the bounded certificate linked above. That certificate is unaudited on
+  current `main`; it is arithmetic provenance, not retained authority for the
+  physical or canonical choice.
 - **Ward tree-level identity** — `y_t_bare² = g_bare² / 6` at tree
   level on the scalar-singlet channel of the Q_L block.
 - **Rep-A/Rep-B structural decomposition** —

@@ -109,7 +109,9 @@ Read it together with:
 - [`YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md`](YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md) (retained `C_F`/`C_A`/`T_F n_f` decomposition)
 - [`YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md`](YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md) (no-algebraic-shortcut)
 - [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) (retained exact tree-level identity `y_t_bare = g_bare / sqrt(2 N_c)`)
-- [`UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`](UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md) (subordinate `delta_PT = 1.92%` support discussion)
+- historical packaged `delta_PT = 1.92%` comparator (local conditional
+  arithmetic only; no current bridge is cited for source-action or matching
+  authority)
 - `docs/YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md` (master obstruction theorem; not modified by this note; downstream/context reference, not a dependency of this arithmetic row)
 - `scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py` and
   `logs/retained/yt_p1_i1_lattice_pt_symbolic_2026-04-17.log` (retained symbolic
@@ -223,10 +225,13 @@ This note inherits without modification the retained structure of the prior P1 s
       α_LM/(4π)  =                       =  0.00721473
   ```
 
-  retained from `docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md` + `YT_VERTEX_POWER_DERIVATION.md`.
+  certified arithmetically by
+  [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md),
+  conditional on its parent plaquette reuse surface. That certificate is
+  unaudited on current `main`; it is conditional arithmetic provenance, not
+  retained authority for the physical/canonical input.
 
-- **Packaged `delta_PT` nominal** (from
-  `docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`):
+- **Historical packaged `delta_PT` nominal** (conditional arithmetic only):
 
   ```
       delta_PT_packaged  =  α_LM · C_F / (2π)
@@ -234,8 +239,9 @@ This note inherits without modification the retained structure of the prior P1 s
                          ≃  1.9240 %
   ```
 
-  which is the `(α/(4π)) · C_F · I_S` evaluation under the **implicit assumption**
-  `I_S = I_S_standard = 2` (i.e. the standard fundamental-Yukawa vertex correction).
+  which is the `(α/(4π)) · C_F · I_S` evaluation under the **historical
+  assumption** `I_S = I_S_standard = 2`. This row has no current
+  source-action or matching authority for that identification.
 
 ## 2. The integral `I_S` for the composite `H_unit` bilinear
 
@@ -472,9 +478,9 @@ P1 budget line; closing it requires a framework-native BZ integration.
 - Conserved-current Ward `I_V = 0 ⇒ I_1 = I_S`
   (symbolic runner 21/21 PASS).
 - Canonical-surface constants `α_LM = 0.0907`, `u_0 = 0.878`, `⟨P⟩ = 0.5934`
-  (`canonical_plaquette_surface.py`).
-- Packaged `delta_PT = α_LM · C_F / (2π) ≃ 1.92%` evaluation
-  (`UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`).
+  ([`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)).
+- Historical packaged `delta_PT = α_LM · C_F / (2π) ≃ 1.92%` conditional
+  arithmetic under `I_S = 2`; no source-action interpretation is claimed.
 
 **Cited (external lattice-QCD literature, with acknowledged uncertainty):**
 
@@ -602,8 +608,8 @@ Specifically the runner verifies:
 - exact retention of `C_F = 4/3`, `C_A = 3`, `T_F = 1/2` from the prior color-factor note;
 - exact retention of canonical-surface `α_LM = 0.0907`, `α_LM / (4π) = 0.00721` from
   `canonical_plaquette_surface.py`;
-- exact reproduction of the packaged `delta_PT ≃ 1.92%` under the implicit standard-
-  fundamental `I_S = 2` (sanity check against the prior UV gauge bridge note);
+- exact reproduction of the packaged `delta_PT ≃ 1.92%` under the historical
+  `I_S = 2` convention (conditional arithmetic sanity check only);
 - the supplied range `I_S ∈ [4, 10]` with central `I_S ≃ 6` maps to `P1 ∈ [3.85%, 9.62%]`
   with central `P1 ≃ 5.77%` to sub-permille tolerance on the arithmetic;
 - the revision factor `P1_central / P1_packaged ≃ 3.0×` matches
@@ -616,7 +622,6 @@ Specifically the runner verifies:
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [plaquette_self_consistency_note](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
-- [uv_gauge_to_yukawa_bridge_sc_vs_pert_note](UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md)
 - `yt_p1_color_factor_retention_note_2026-04-17` (downstream consumer;
   backticked to avoid length-3 cycles through the YT_P1_DELTA_{1,2,3}_BZ
   computation notes — those delta-channel notes already cite this

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p2_f_yt_loop_geometric_bound.py
-runner_sha256: dffe7b4d4a875c43172f86fb777c6a7623155cf02dd8fdfc7b73f38e7eee6b8b
+runner_sha256: f7077e0e42c403684edc25572fe9f4b55b8e4beb7284da170ab230104e43fe5f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.23
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 ========================================================================
@@ -95,7 +95,7 @@ PART D: Framework-native ratio bound r_M = (a_LM/pi) * b_0
   [PASS] Geometric-sum convergence r_M < 1  (r_M = 0.2213)
   [PASS] r_M numerically matches analog P1 loop-expansion envelope 0.22126  (r_M = 0.221264)
   [PASS] r_M bounded above by analog P3 envelope (a/pi) * C_A^2  (r_M = 0.2213 < (a_LM/pi)*C_A^2 = 0.2597)
-  [PASS] r_M derived from retained SU(3) Casimirs + retained n_l + retained alpha_LM only  (structural retention provenance verified)
+  [PASS] r_M derived from retained SU(3) Casimirs + retained n_l + conditional alpha_LM  (structural retention provenance verified)
 
 ========================================================================
 PART E: Geometric tail residual at truncation N = 2
@@ -200,7 +200,7 @@ PART I: Structural retention provenance
     - SU(3) Casimirs C_F, T_F, C_A    (from YT_EW_COLOR_PROJECTION_THEOREM.md D7)
     - retained n_l = 5 on M_Pl -> v   (from SM branch of complete-prediction-chain)
     - derived b_0 = 23/3              (exact rational at SU(3), n_l=5)
-    - alpha_LM = 0.09066784           (from canonical_plaquette_surface.py via UV bridge note)
+    - alpha_LM = 0.09066784           (from bounded canonical arithmetic certificate)
     - retained M^{1} = 1.926         (from v-matching note Eq. 3.2)
     - retained M^{2} = 1.9730         (from primary chain, 2-loop SM RGE)
     - retained M_obs = 1.9734         (taste-staircase target)
@@ -210,7 +210,7 @@ PART I: Structural retention provenance
     - any literature value of the 3-loop or higher integrated F_yt correction
     - any non-retained empirical parameter
     - any external numerical input beyond the SU(3) Casimir algebra,
-      the retained SM light-flavor count, the retained alpha_LM, and
+      the retained SM light-flavor count, conditional alpha_LM arithmetic, and
       the retained primary-chain M values.
 
   Structural assumption (retention surface):
@@ -219,13 +219,16 @@ PART I: Structural retention provenance
        asymptotically-free SM RGE; analog of the P1 loop-expansion bound
        on the same UV surface).
   [PASS] Bound input b_0 = 23/3 is a retained rational at SU(3), n_l=5  (b_0 = 23/3 verified)
-  [PASS] Bound input alpha_LM retained from canonical plaquette surface  (alpha_LM = 0.09066784)
+  [PASS] Bound input alpha_LM matches the conditionally supplied arithmetic  (alpha_LM = 0.09066784)
+  [PASS] Source note links the unaudited bounded canonical alpha source
+  [PASS] Source note marks the alpha source unaudited and non-retained
+  [PASS] Source note no longer cites the UV coefficient bridge
   [PASS] Retained structural prefactor sqrt(u_0) * sqrt(8/9) from v-matching note  (prefactor = 0.883267)
   [PASS] No literature 3-loop or higher integrated F_yt correction imported  (runner does not reference any F_yt^{n} for n >= 3)
   [PASS] Prior P2 notes (taste-staircase + v-matching) are the sole upstream sources  (retention lineage: taste-staircase + v-matching decomp + canonical alpha_LM)
 
 ========================================================================
-SUMMARY: PASS=48  FAIL=0
+SUMMARY: PASS=51  FAIL=0
 ========================================================================
 
 Framework-native ratio  r_M = (a_LM/pi) * b_0        = 0.221264
@@ -247,8 +250,8 @@ Comparisons:
   Packaged P2 budget                                 = 0.50%
   Retained / packaged                                = 1.35x
 
-(Bound depends only on retained SU(3) Casimirs, retained n_l = 5,
- retained alpha_LM, and retained primary-chain M^(1), M^(2) values;
+(Bound depends on retained SU(3) Casimirs, retained n_l = 5,
+ conditional alpha_LM arithmetic, and retained primary-chain M^(1), M^(2) values;
  no literature 3-loop or higher integrated F_yt correction imported.)
 
 ----- stderr -----

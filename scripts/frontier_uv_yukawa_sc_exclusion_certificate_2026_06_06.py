@@ -1,78 +1,37 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 r"""
-UV gauge-to-Yukawa coefficient selection: STRONG-COUPLING DOMAIN EXCLUSION at beta=6
-====================================================================================
+UV gauge-to-Yukawa coefficient comparison and plaquette-radius diagnostic
+============================================================================
 
-Subordinate support for the audited_conditional bridge
-``UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`` (claim
-``uv_gauge_to_yukawa_bridge_sc_vs_pert_note``), which selects the PERTURBATIVE
-leading 4-fermion coefficient
+This runner consumes the bounded finite packet from
+``UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md``:
 
-        C_pert  = 1/(2 N_c) = 1/6     ->   y_t/g_s = sqrt(C_pert)  = 1/sqrt(6) = 0.40825
+        C_pert   = 1/(2 N_c) = 1/6
+        C_strong = 1/N_c^2   = 1/9
 
-over the STRONG-COUPLING leading coefficient
+It does not identify either square root with a physical Yukawa/gauge readout
+and does not select a governing expansion.
 
-        C_strong = 1/N_c^2  = 1/9     ->   y_t/g_s = sqrt(C_strong) = 1/N_c    = 0.33333
-
-on the framework's tadpole-improved canonical surface.  In the y_t/g_s RATIO the
-mean-link tadpole factor u_0 = <P>^(1/4) cancels (note Step 4), so the value of
-<P> is NOT load-bearing for the ratio -- the SELECTION between C_pert and
-C_strong is what fixes the ratio at 1/sqrt(6) versus 1/N_c.
-
-The bridge note's argument for the selection is HEURISTIC:
-"the character-coefficient ratio c_1/c_0 ~ O(0.4) at beta=6 is not small, so the
-strong-coupling expansion does not converge rapidly."  This runner REPLACES that
-heuristic with a RIGOROUS domain-exclusion certificate built from the framework's
-own certified beta=6 connected-plaquette campaign:
-
-  (A) the leading coefficients C_pert, C_strong are REPROVEN here from the
-      retained SU(N_c) Fierz identity and the one-link Haar integral (Haar-sampled
-      cross-check), so the 1/sqrt(6)-vs-1/N_c fork is exact;
-
-  (B) the strong-coupling (character / linked-cluster) expansion has a CERTIFIED
-      radius of convergence R_SC ~ 5.39 < 6, REPROVEN here by d-log Pade on the
-      certified exact connected coefficients d_5..d_11 (derived from SU(3)-Haar
-      primitives + the Picard-Fuchs J recurrence in the on-main campaign runners
-      and reused here), cross-checked against the literature Fisher-zero
-      |beta_c| ~ 5.7 (Li-Meurice, arXiv:0710.5771; COMPARATOR ONLY);
-
-  (C) the radius is OBSERVABLE-INDEPENDENT: at finite volume every lattice
-      observable <O> = N_O(beta)/Z(beta) is a ratio of ENTIRE functions of beta
-      (finite sums of exp(-beta S)), so its only finite-beta singularities are
-      zeros of the common partition function Z (Fisher zeros).  The 4-fermion
-      coefficient is a local observable, so its strong-coupling radius is the SAME
-      R_SC ~ 5.39 set by the nearest Fisher zero -- the plaquette series measures
-      it.  (Yang-Lee/Fisher; Itzykson-Drouffe, Statistical Field Theory.)
-
-  (D) THEREFORE beta=6 > R_SC: the leading strong-coupling coefficient C_strong
-      cannot govern the 4-fermion coefficient at beta=6 (it lies beyond the SC
-      domain of convergence) -- the strong-coupling fork (ratio 1/N_c) is EXCLUDED.
-      The complementary perturbative leg (alpha_LM = alpha_bare/u_0 = 0.0907 << 1,
-      optimal truncation ~ pi/alpha_LM ~ 35 loops) is IN its domain (re-verified
-      here), so C_pert is the leading term of the only convergent expansion at
-      beta=6 -> y_t/g_s = 1/sqrt(6).
-
-SCOPE / HONEST RESIDUAL.  This certificate closes the SC-EXCLUSION leg of the
-bridge's selection (the conceptually load-bearing 1/sqrt(6)-vs-1/N_c fork).  It
-does NOT by itself flip the bridge to retained: the bridge stays conditional on
-(i) an absolute derivation of <P>(6) = 0.5934 (cancels in the ratio but is the
-deferred beta=6 wall for any absolute g_s use), (ii) the g_bare / staggered-Dirac
-trace-normalization gates (a separate matter-sector lane), and (iii) shared
-tadpole transport.  No axiom is added; no audit verdict is written; no fitted
-input is used.  The radius R is EVIDENCE (3 concurring estimators + literature
-comparator), not a closed-form proof of divergence; "exclusion" here means
-"beta=6 lies beyond the certified/cross-checked radius."
+The remaining blocks reproduce a finite d-log Pade estimate from connected
+plaquette coefficients and test the exact limitation that a common
+partition-function denominator does not imply an identical uncancelled
+nearest singularity for every observable. The output is domain evidence for
+the plaquette series, not a convergence proof for the four-fermion observable
+and not a perturbative selector.
 
 Run:  python3 scripts/frontier_uv_yukawa_sc_exclusion_certificate_2026_06_06.py
 """
 
 import sys
 import math
+from pathlib import Path
 import sympy as sp
 
 PASS = []
 FAIL = []
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "UV_YUKAWA_STRONG_COUPLING_DOMAIN_EXCLUSION_RADIUS_CERTIFICATE_BOUNDED_NOTE_2026-06-06.md"
 
 
 def check(name, cond, detail=""):
@@ -119,12 +78,12 @@ def block1_C_pert():
           f"max|sum_A T^A T^A - 1/2(d_ad d_bc - 1/N d_ab d_cd)| = {fierz_err:.2e}")
     # color-singlet coefficient magnitude = 1/(2 Nc)
     C_pert = sp.Rational(1, 2) / Nc
-    ratio_pert = sp.sqrt(C_pert)
+    sqrt_pert = sp.sqrt(C_pert)
     check("C_pert = 1/(2 N_c) = 1/6", C_pert == sp.Rational(1, 6), f"C_pert={C_pert}")
-    check("y_t/g_s |_pert = sqrt(C_pert) = 1/sqrt(6)",
-          sp.simplify(ratio_pert - 1 / sp.sqrt(6)) == 0,
-          f"= {float(ratio_pert):.8f}")
-    return C_pert, ratio_pert
+    check("sqrt(C_pert) = 1/sqrt(6) as coefficient arithmetic",
+          sp.simplify(sqrt_pert - 1 / sp.sqrt(6)) == 0,
+          f"= {float(sqrt_pert):.8f}")
+    return C_pert, sqrt_pert
 
 
 def block2_C_strong():
@@ -133,11 +92,11 @@ def block2_C_strong():
     # one-link Haar (note B.1):  int dU U_ab (Udag)_cd = (1/Nc) d_ad d_bc
     # two bilinears at a link + same Fierz -> C_strong = 1/Nc^2.
     C_strong = sp.Rational(1, 1) / Nc**2
-    ratio_strong = sp.sqrt(C_strong)
+    sqrt_strong = sp.sqrt(C_strong)
     check("C_strong = 1/N_c^2 = 1/9", C_strong == sp.Rational(1, 9), f"C_strong={C_strong}")
-    check("y_t/g_s |_strong = sqrt(C_strong) = 1/N_c = 1/3",
-          sp.simplify(ratio_strong - sp.Rational(1, 3)) == 0,
-          f"= {float(ratio_strong):.8f}")
+    check("sqrt(C_strong) = 1/N_c = 1/3 as coefficient arithmetic",
+          sp.simplify(sqrt_strong - sp.Rational(1, 3)) == 0,
+          f"= {float(sqrt_strong):.8f}")
     # Haar-sampled cross-check of B.1 (the correct index contraction: <U_ab (Udag)_cd>).
     import numpy as np
     rng = np.random.default_rng(20260606)
@@ -161,7 +120,7 @@ def block2_C_strong():
     err = float(np.max(np.abs(acc - expd)))
     check("Haar one-link B.1: <U_ab (Udag)_cd> = (1/N_c) d_ad d_bc (MC)", err < 0.02,
           f"max|.|={err:.4f} -> 0")
-    return C_strong, ratio_strong
+    return C_strong, sqrt_strong
 
 
 # ---- Pade helpers (manual, exact then numeric pole-finding) ----
@@ -197,11 +156,11 @@ def pade_poles(a, L, M):
 
 
 def block3_radius():
-    print("\n[BLOCK 3] Reprove the strong-coupling radius R_SC from certified d_5..d_11")
+    print("\n[BLOCK 3] Finite d-log Pade radius estimate from d_5..d_11")
     d5 = D[5]
     cs = [sp.Integer(1)] + [D[5 + k] / d5 for k in range(1, 7)]  # c_0..c_6, c_k = d_{5+k}/d_5
     check("series prefactor positive d_5=1/472392 > 0", d5 > 0)
-    check("sign change at d_9 (forces complex-pair, not real pole)", D[9] < 0 and D[8] > 0,
+    check("sign change at d_9 is consistent with complex-pair behavior", D[9] < 0 and D[8] > 0,
           f"d_8>0, d_9<0")
     g = dlog_series(cs, 5)  # g_0..g_5
     # [2/2] d-log Pade (the strongest 7-coefficient estimator; needs g_0..g_4)
@@ -217,8 +176,8 @@ def block3_radius():
           f"beta_c ~ {dom.real:.3f} +/- {abs(dom.imag):.3f} i, arg ~ {arg_deg:.1f} deg")
     check("[2/2] radius |beta_c| ~ 5.39 (in [5.0, 5.8])", 5.0 < R22 < 5.8,
           f"R22 = {R22:.3f}")
-    check("CERTIFIED RADIUS R_SC < 6  ==>  beta=6 beyond SC domain", R22 < 6.0,
-          f"R_SC ~ {R22:.3f} < 6")
+    check("finite [2/2] estimate lies below beta=6", R22 < 6.0,
+          f"R_est ~ {R22:.3f} < 6; not a convergence certificate")
     # [1/1]: the real-pole ansatz -> spurious real pole (TEETH: must NOT be trusted)
     roots11 = pade_poles([float(x) for x in g], 1, 1)
     r11 = roots11[0]
@@ -232,8 +191,8 @@ def block3_radius():
     return R22
 
 
-def block4_observable_independence():
-    print("\n[BLOCK 4] Observable-independence of R_SC (Fisher-zero lemma)")
+def block4_observable_scope():
+    print("\n[BLOCK 4] Common-denominator sharing and cancellation controls")
     # Finite-volume lemma demonstrated on a minimal 1-link toy: two distinct local
     # observables share the SAME beta-singularity (a zero of the common Z), so they
     # share the SAME radius. (Illustration of the entire-numerator/common-denominator
@@ -252,33 +211,33 @@ def block4_observable_independence():
     r1 = sorted(abs(r) for r in pade_poles([float(x) for x in p1], 3, 2))[0]
     r2 = sorted(abs(r) for r in pade_poles([float(x) for x in p2], 3, 2))[0]
     target = float(sp.sqrt(5))
-    check("two distinct observables share one radius |b_c|=sqrt(5) (Fisher-zero)",
+    check("two chosen observables share one radius |b_c|=sqrt(5)",
           abs(r1 - target) < 1e-3 and abs(r2 - target) < 1e-3,
           f"R(O1)={r1:.4f}, R(O2)={r2:.4f}, sqrt(5)={target:.4f}")
-    check("=> 4-fermion coefficient inherits the plaquette-measured R_SC (local obs)", True,
-          "finite-vol numerators entire; singularities = zeros of common Z")
+    O_cancel = sp.simplify(Z / Z)
+    check("an entire numerator can cancel all denominator zeros",
+          O_cancel == 1,
+          "O_cancel = Z/Z = 1, so common Z does not force an identical radius")
+    check("plaquette radius cannot be assigned to another observable from common Z alone",
+          O_cancel == 1,
+          "observable-specific cancellation leaves the four-fermion radius open")
     return True
 
 
-def block5_selection_and_pt_leg(R22, ratio_pert, ratio_strong):
-    print("\n[BLOCK 5] Selection certificate + perturbative-domain (complementary) leg")
-    beta = 6.0
-    check("beta = 6 > R_SC  ==>  C_strong (ratio 1/N_c) EXCLUDED at beta=6", beta > R22,
-          f"6 > {R22:.3f}")
-    # complementary perturbative leg: alpha_LM = alpha_bare/u_0 << 1 (PT in-domain)
-    P = 0.5934  # surface input (cancels in the ratio; used only to exhibit u_0, alpha_LM)
-    u0 = P ** 0.25
-    alpha_bare = 1.0 / (4 * math.pi)
-    alpha_LM = alpha_bare / u0
-    n_opt = math.pi / alpha_LM
-    check("perturbative coupling alpha_LM = alpha_bare/u_0 << 1 (PT in-domain)", alpha_LM < 0.2,
-          f"alpha_LM = {alpha_LM:.5f}, optimal truncation ~ {n_opt:.0f} loops")
-    check("the two forks are DISTINCT (selection is non-vacuous): 1/sqrt(6) != 1/N_c",
-          sp.simplify(ratio_pert - ratio_strong) != 0,
-          f"1/sqrt(6)={float(ratio_pert):.5f} vs 1/N_c={float(ratio_strong):.5f}")
-    check("SELECTION FORCED: only-convergent-expansion leading term = C_pert "
-          "-> y_t/g_s = 1/sqrt(6)", True,
-          f"= {float(ratio_pert):.8f}")
+def block5_scope_boundary(R22, sqrt_pert, sqrt_strong):
+    print("\n[BLOCK 5] Source-note selector firewall")
+    note = NOTE.read_text(encoding="utf-8")
+    check("the two coefficient square roots are distinct",
+          sp.simplify(sqrt_pert - sqrt_strong) != 0,
+          f"1/sqrt(6)={float(sqrt_pert):.5f} vs 1/N_c={float(sqrt_strong):.5f}")
+    check("source note preserves public C_strong = 1/N_c^2 convention",
+          "`C_strong = 1/N_c^2`" in note)
+    check("source note explicitly leaves governing-expansion selection open",
+          "No governing-expansion conclusion follows from this packet" in note)
+    check("source note does not claim an only-convergent expansion",
+          "only convergent expansion" not in note.lower())
+    check("beta=6 comparison is retained only as finite plaquette evidence",
+          R22 < 6.0 and "finite-order" in note)
     return True
 
 
@@ -288,21 +247,22 @@ def block6_literature_comparator(R22):
     check("framework R_SC consistent with literature Fisher-zero ~5.7 (within ~6%)",
           abs(R22 - fisher_lit) / fisher_lit < 0.10,
           f"R_SC={R22:.3f} vs lit {fisher_lit} (comparator only)")
-    check("both < 6 (independent confirmation beta=6 is beyond SC domain)",
-          R22 < 6 and fisher_lit < 6)
+    check("both estimates are below 6 without transferring the radius to another observable",
+          R22 < 6 and fisher_lit < 6,
+          "comparison is plaquette-series evidence only")
     return True
 
 
 def main():
     print("=" * 78)
-    print("UV gauge-to-Yukawa: STRONG-COUPLING DOMAIN EXCLUSION at beta=6")
-    print("(subordinate support for uv_gauge_to_yukawa_bridge_sc_vs_pert_note)")
+    print("UV gauge-to-Yukawa: coefficient comparison + plaquette-radius diagnostic")
+    print("(bounded support for uv_gauge_to_yukawa_bridge_sc_vs_pert_note)")
     print("=" * 78)
     Cp, rp = block1_C_pert()
     Cs, rs = block2_C_strong()
     R22 = block3_radius()
-    block4_observable_independence()
-    block5_selection_and_pt_leg(R22, rp, rs)
+    block4_observable_scope()
+    block5_scope_boundary(R22, rp, rs)
     block6_literature_comparator(R22)
     print("\n" + "=" * 78)
     print(f"SCORECARD:  PASS = {len(PASS)}   FAIL = {len(FAIL)}")

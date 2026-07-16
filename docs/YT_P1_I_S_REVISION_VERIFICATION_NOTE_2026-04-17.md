@@ -6,10 +6,11 @@
 **Verdict (up front, Abstract §0):** the cited-literature upward revision of P1 from
 the packaged `1.92%` nominal to `~5.77%` is **structurally honest but semantically
 partial**. The packaged `1.92%` was never a framework-native lattice-to-MSbar matching
-derivation for the composite `H_unit` bilinear — the UV gauge-to-Yukawa bridge note
-records it explicitly as *the magnitude of the 1-loop vertex correction on the tadpole-
-improved PT surface (standard vertex-correction formula)*. It is a continuum-vertex
-heuristic written with lattice inputs, not a lattice BZ integral. The cited
+derivation for the composite `H_unit` bilinear. Its current reproducible content in
+this row is only the conditional arithmetic
+`alpha_LM · C_F/(2 pi) = (alpha_LM/(4 pi)) · C_F · 2`; the historical
+continuum-vertex/source-action interpretation is not supplied by a current
+load-bearing authority here. The cited
 `I_S ∈ [4, 10]` is a different object — it is a genuine lattice-to-MSbar BZ matching
 coefficient for the staggered scalar density on the Wilson plaquette gauge action at
 `β ≃ 6`. The two are **not the same quantity** in different conventions
@@ -17,6 +18,15 @@ coefficient for the staggered scalar density on the Wilson plaquette gauge actio
 same NLO scale on the `y_t(M_Pl)/g_s(M_Pl)` readout.
 **Runner:** `scripts/frontier_yt_p1_i_s_revision_verification.py`
 **Log:** `logs/retained/yt_p1_i_s_revision_verification_2026-04-17.log`
+
+> **2026-07-16 scope correction.** The current UV coefficient bridge does not
+> contain or authorize the historical `delta_PT`, NLO, source-action, or
+> canonical-`alpha_LM` prose previously cited by this note. Throughout the
+> legacy discussion below, “continuum vertex-correction magnitude” is only a
+> historical label for the conditional arithmetic
+> `alpha_LM · C_F/(2 pi) = (alpha_LM/(4 pi)) · C_F · 2`. This row proves that
+> arithmetic identity only. The identification `I_S = 2`, its source-action
+> meaning, and any NLO matching interpretation remain open.
 
 ---
 
@@ -29,9 +39,9 @@ This note is a **verification / critical-review** layer. It does **not** modify:
 - the retained Ward-identity theorem
   (`docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md`), which is an exact tree-level
   algebraic identity with no precision claim attached;
-- the packaged `delta_PT = 1.92%` value in
-  `docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`, which remains defensible in
-  its stated role as an OPEN-status continuum-vertex magnitude heuristic;
+- the historical packaged `delta_PT = 1.92%` comparator, which remains only
+  conditional arithmetic under `I_S = 2`; no current source-action or
+  continuum-vertex authority is claimed;
 - the prior citation note
   `docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`, whose literature-
   bracket reading of `I_S ∈ [4, 10]` is internally consistent;
@@ -58,11 +68,10 @@ two different approaches to the same NLO scale). Specifically:
 
 - The packaged `delta_PT = α_LM · C_F / (2π) = 1.924%` is a **continuum vertex-
   correction magnitude** written with canonical-surface inputs. It is a
-  heuristic "size-of-NLO" estimate of the standard continuum vertex-correction
-  magnitude, NOT a lattice BZ integration for any specific operator. The UV
-  gauge-to-Yukawa bridge note labels it explicitly as such (line 197: "the
-  magnitude of the 1-loop vertex correction on the tadpole-improved PT
-  surface").
+  historically labeled “continuum vertex-correction magnitude,” but this row
+  establishes only its conditional arithmetic form. It is not a lattice BZ
+  integration for any specific operator, and the source-action/NLO
+  interpretation is not supplied here.
 - The cited `I_S ≈ 6` (range `[4, 10]`) is a **lattice-to-MSbar BZ integral** for
   the staggered scalar density operator on the Wilson plaquette gauge action at
   `β ≃ 6`, with tadpole improvement. This is a distinct object; it is a real
@@ -122,8 +131,10 @@ not provided in either this note or the prior citation note.
 This note inherits without modification:
 
 - `C_F = 4/3`, `C_A = 3`, `T_F = 1/2` at `SU(3)` (D7 + S1);
-- Canonical surface `⟨P⟩ = 0.5934`, `u_0 = 0.87768`, `α_LM = 0.09067`,
-  `α_LM / (4π) = 0.00721` (from `scripts/canonical_plaquette_surface.py`);
+- Conditional canonical arithmetic `⟨P⟩ = 0.5934`, `u_0 = 0.87768`,
+  `α_LM = 0.09067`, `α_LM / (4π) = 0.00721` (from
+  `scripts/canonical_plaquette_surface.py`; not a retained physical/canonical
+  input in this row);
 - Color-tensor decomposition `Δ_R = C_F · I_1 + C_A · I_2 + T_F n_f · I_3`
   (from the prior color-factor reduction, referenced by the citation note);
 - Ward-identity tree-level identity `y_t_bare = g_bare / √6` from
@@ -136,35 +147,24 @@ This note inherits without modification:
 
 ## 2. Reconstruction of the packaged `1.92%`
 
-### 2.1 Literal source
+### 2.1 Conditional arithmetic, not current source authority
 
-The packaged value is defined in
-`docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md` (the "NLO corrections" section,
-lines 192–199):
+The canonical arithmetic certificate
+[`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)
+records the displayed `alpha_LM` arithmetic only. Its current ledger row is
+unaudited, so it is not retained authority for the physical/canonical choice.
+Under the separate historical
+convention `I_S = 2`, one obtains:
 
 ```
-    **Perturbative 1-loop vertex correction (derived):**
-        C_F = (N_c^2 - 1) / (2 N_c) = 4/3 for SU(3)
-        delta_PT = alpha_LM * C_F / (2 pi) = 1.92%
-
-    This is the magnitude of the 1-loop vertex correction on the tadpole-
-    improved PT surface (standard vertex-correction formula, retained in
-    Block 9 of the runner).
+    C_F = (N_c^2 - 1) / (2 N_c) = 4/3
+    delta_PT_historical = alpha_LM * C_F / (2 pi) = 1.92%
+                        = (alpha_LM/(4 pi)) * C_F * 2
 ```
 
-Three structural facts read off this source:
-
-(a) The coefficient `C_F / (2π)` is the **standard continuum-QED/QCD vertex-
-    correction prefactor** (e.g., `δZ_ψ^{1-loop} = −(α/(2π)) · C_F · [½ + …]` or
-    the Ward-related vertex factor `F_1(0) = 1 + (α/(2π)) · C_F · [0 + IR]`).
-
-(b) The word "magnitude" is used — i.e. this is a characteristic scale of NLO,
-    not a specific operator-matching coefficient.
-
-(c) The source labels the status "OPEN; support-only; not part of authority
-    theorem", with the explicit caveat "Any downstream package that reuses the
-    theorem's exact algebraic identity ... and wants a quantitative precision
-    claim must carry its own systematic ... or leave the systematic OPEN."
+The equality is arithmetic. No current authority cited by this row derives
+`I_S = 2` from the staggered source action, identifies the expression as the
+governing NLO vertex correction, or promotes it to a precision claim.
 
 ### 2.2 What the packaged value is NOT
 
@@ -572,8 +572,8 @@ The runner verifies:
   `ln(Z_S)`);
 - verdict determination: A (magnitude) + C (semantics), not B;
 - revised P1 central `~5.77%`, range `[3.85%, 9.62%]`;
-- no modification of the master obstruction theorem, the Ward-identity
-  theorem, or the packaged `δ_PT` note;
+- no modification of the master obstruction theorem or Ward-identity theorem,
+  and no promotion of the historical `δ_PT` comparator;
 - structural preservation of the prior symbolic `I_1 = I_S` reduction.
 
 ## Audit dependency repair links
@@ -581,7 +581,6 @@ The runner verifies:
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [yt_p1_i_s_lattice_pt_citation_note_2026-04-17](YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md)
-- [uv_gauge_to_yukawa_bridge_sc_vs_pert_note](UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md)
 - [yt_ward_identity_derivation_theorem](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
 - `yt_uv_to_ir_transport_obstruction_theorem_note_2026-04-17`
   (master upstream authority; backticked to avoid length-3 cycle through

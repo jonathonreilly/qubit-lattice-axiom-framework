@@ -29,7 +29,7 @@ Retained foundations (not modified by this runner):
   - docs/YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md (Delta_2 formula)
   - docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md (Wilson plaquette context)
   - docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md (P1 citation chain context)
-  - scripts/canonical_plaquette_surface.py (canonical constants)
+  - scripts/canonical_plaquette_surface.py (conditional canonical arithmetic)
   - scripts/frontier_yt_p1_rep_ab_cancellation.py (Rep-A/Rep-B cancellation, 23/23 PASS sibling)
 
 Self-contained: stdlib only.
@@ -39,6 +39,7 @@ from __future__ import annotations
 
 import math
 import sys
+from pathlib import Path
 from typing import Dict, List, Tuple
 
 from canonical_plaquette_surface import (
@@ -55,6 +56,8 @@ from canonical_plaquette_surface import (
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md"
 
 
 def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> None:
@@ -72,7 +75,7 @@ def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> None:
 
 
 # ---------------------------------------------------------------------------
-# Retained constants (framework-native)
+# Structural constants plus conditional canonical arithmetic
 # ---------------------------------------------------------------------------
 
 PI = math.pi
@@ -171,7 +174,7 @@ def main() -> int:
     # -----------------------------------------------------------------------
     # Block 1: Retained constants
     # -----------------------------------------------------------------------
-    print("Block 1: Retained SU(3) Casimirs and canonical-surface constants.")
+    print("Block 1: Retained SU(3) Casimirs and conditional canonical arithmetic.")
     check(
         "N_c = 3", N_C == 3, f"N_c = {N_C}",
     )
@@ -188,12 +191,12 @@ def main() -> int:
         abs(T_F - 0.5) < 1e-12, f"T_F = {T_F:.10f}",
     )
     check(
-        "alpha_LM matches canonical-surface retention",
+        "alpha_LM arithmetic matches alpha_bare/u_0",
         abs(ALPHA_LM - ALPHA_BARE / U_0) < 1e-12,
         f"alpha_LM = {ALPHA_LM:.10f}",
     )
     check(
-        "alpha_LM/(4 pi) = 0.00721 +/- 1e-5 (retained)",
+        "alpha_LM/(4 pi) = 0.00721 +/- 1e-5 (conditional arithmetic)",
         abs(ALPHA_LM_OVER_4PI - 0.00721) < 1e-5,
         f"alpha_LM/(4 pi) = {ALPHA_LM_OVER_4PI:.10f}",
     )
@@ -494,10 +497,28 @@ def main() -> int:
         True,
         "Delta_R = (alpha/(4 pi)) * (C_F Delta_1 + C_A Delta_2 + T_F n_f Delta_3)",
     )
+    historical_delta_pt = ALPHA_LM * C_F / (2.0 * PI)
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "Packaged delta_PT = 1.92 % unchanged by this note",
-        abs((ALPHA_LM * C_F / (2.0 * PI)) - 0.01924) < 5e-4,
-        "packaged value retained as continuum-heuristic lower baseline",
+        "Historical delta_PT conditional arithmetic reproduces 1.92 %",
+        abs(historical_delta_pt - 0.01924) < 5e-4,
+        "arithmetic only under the historical I_S = 2 convention",
+    )
+    check(
+        "Source note no longer cites the UV coefficient bridge for delta_PT",
+        "UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE" not in note_text,
+        "retired bridge attribution absent",
+    )
+    check(
+        "Source note links the unaudited bounded canonical alpha source",
+        "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md"
+        in note_text
+        and "current ledger row is unaudited" in note_text
+        and "does not close the physical/canonical input" in note_text,
+    )
+    check(
+        "Source-action and matching justification remain explicit open conditions",
+        "source-action/matching justification remains open" in note_text,
     )
     check(
         "Cited I_S bracket [4, 10] unchanged (C_F channel, orthogonal)",

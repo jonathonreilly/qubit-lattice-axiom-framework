@@ -7,6 +7,13 @@
 > below is invalidated; m_t is **ballpark, not a controlled prediction**. Δ_2 (C_A
 > gluonic) is clean. See
 > [YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md](YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md).
+>
+> **2026-07-16 alpha-source correction.** The current UV coefficient bridge
+> does not supply `alpha_LM`. The linked bounded arithmetic certificate is
+> itself unaudited on current `main`; it records the conditional calculation
+> `alpha_LM = alpha_bare/u_0`, but does not retain the physical/canonical input.
+> Legacy “retained canonical coupling” wording below must be read subject to
+> this correction.
 
 # P1 Loop-Expansion Geometric Tail Bound on the Lattice-to-MSbar Matching at M_Pl
 
@@ -48,7 +55,7 @@ to, and independent of, the cited `I_S` 1-loop BZ integral question
 - **SU(3) Casimir authorities:**
   - [`docs/YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md) — retained `C_F`, `C_A`, `T_F`.
   - [`docs/YT_EXACT_SCHUR_NORMAL_FORM_UNIQUENESS_NOTE.md`](YT_EXACT_SCHUR_NORMAL_FORM_UNIQUENESS_NOTE.md) — gauge-group uniqueness.
-- **Canonical coupling authority:** [`docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`](UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md) and [`scripts/canonical_plaquette_surface.py`](../scripts/canonical_plaquette_surface.py) — retained `α_LM = α_bare / u_0 = 0.0907` on the tadpole-improved Wilson-plaquette + staggered surface.
+- **Conditional canonical arithmetic source (unaudited):** [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) and [`scripts/canonical_plaquette_surface.py`](../scripts/canonical_plaquette_surface.py) — bounded arithmetic `α_LM = α_bare / u_0 = 0.0907`, conditional on the parent plaquette reuse surface; not retained authority for the physical/canonical input.
 - **SM light-flavor content at M_Pl:** inherited `n_l = 5` through the retained SM matter content carried by the complete-prediction-chain runners.
 
 ## Abstract
@@ -481,7 +488,9 @@ The following claims are explicitly NOT made:
 - The retained geometric bound is **not** claimed to be strict for all `n` without further structural input. The bound is verified to envelope the three indicative 2-loop/1-loop ratios that follow from the retained color-tensor decomposition, and is assumed by asymptotic argument for `n ≥ 2`. A framework-native proof of geometric decay for all `n ≥ n_0` from the underlying action (e.g., a renormalon-bound theorem at the retained `M_Pl` scale) would be a separate retention step.
 - The three indicative 2-loop/1-loop ratios `r_CF`, `r_CA`, `r_lp` are **retention-consistent upper estimates**: they retain the color-tensor prefactors and assume `|J_X| ~ O(1)` for the 2-loop BZ integrals. They are not derived 2-loop values. A framework-native BZ evaluation of `J_CF`, `J_CA`, `J_lp` would sharpen (likely reduce) these ratios.
 - The retained bound is **not** the tightest possible envelope. A tighter empirical bound (e.g., `r_emp ≈ 0.18`, non-retained) is accessible but deliberately not adopted; the present bound uses only retained `SU(3)` Casimir + SM-flavor combinations through `b_0`.
-- The retained bound does **not** depend on any imported literature value of `δ_R^{(2)}` or higher; the cited 2-loop estimates in `UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md` (`~0.15%`) enter only as informal cross-validation, not as derivation inputs.
+- The retained bound does **not** depend on any imported literature value of
+  `δ_R^{(2)}` or higher. No current authority cited by this row supplies the
+  historical `~0.15%` single-tensor estimate; that cross-validation is removed.
 - The canonical coupling value `α_LM = 0.0907` enters as a numerical anchor from `canonical_plaquette_surface.py`; no derivation result of this note depends on its specific numerical value beyond the tail-size estimates reported above.
 - The bound loses structural tightness as `α_LM` increases: at `(α_LM/π) · b_0 ≥ 1` (i.e., `α_LM ≥ π · 3/23 ≈ 0.410`), the geometric sum diverges and the bound fails. The retention anchor `α_LM = 0.0907` is well below this regime.
 - The `I_S` axis of P1 is **not** closed by this note. It is carried separately by `YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md` as a citation-and-bound layer.
@@ -493,7 +502,8 @@ The structural retention is verified by the primary runner
 deterministic PASS/FAIL checks on:
 
 1. Retained SU(3) Casimirs `C_F = 4/3`, `T_F = 1/2`, `C_A = 3` and the derived quantity `b_0 = 23/3` at `n_l = 5`.
-2. Retained canonical coupling `α_LM = 0.09066784`, `(α_LM/π) = 0.02886`.
+2. Conditionally supplied arithmetic `α_LM = 0.09066784`,
+   `(α_LM/π) = 0.02886`; no retained physical/canonical input is claimed.
 3. 1-loop matching value `Δ_1` at both the packaged `I_S = 2` (`1.924%`) and central cited `I_S = 6` (`5.772%`) references.
 4. The three indicative 2-loop/1-loop ratios `r_CF = 0.0770`, `r_CA = 0.1732`, `r_lp = 0.1443`.
 5. Proposed framework-native bound `r_R = (α_LM/π) · b_0 = 0.22126` at `α_LM, n_l = 5`.
@@ -503,8 +513,10 @@ deterministic PASS/FAIL checks on:
 9. Tail residual `|tail(N=1)| = Δ_1 · r_R / (1 - r_R) = Δ_1 · 0.2841` at both `I_S = 2` and `I_S = 6`.
 10. Total bound `|Δ_R^{total}| ≤ Δ_1 · 1.2841` at both reference points.
 11. Comparison with P3 K-series bound structure (analog with `C_A^2` at `α_s(m_t)`): verify P1 bound is tighter in both coupling and envelope factors.
-12. Cross-consistency with informal 2-loop estimate (`~0.15%` as `C_F^2 · (α_LM/π)^2` in `UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`): the retained 2-loop bound `Δ_1 · r_R = 0.426%` at packaged `I_S = 2` is consistent with (larger than) the single-tensor estimate `0.148%`.
-13. Structural retention provenance (bound depends only on retained SU(3) Casimirs, retained `n_l = 5`, and retained `α_LM`).
+12. Source-scope firewall: the note cites the unaudited conditional arithmetic source,
+    does not cite the UV coefficient bridge for `alpha_LM` or higher-loop
+    authority, and keeps all individual `δ_R^{(n≥2)}` values open.
+13. Structural retention provenance (bound depends only on retained SU(3) Casimirs, retained `n_l = 5`, and the conditionally supplied `α_LM` arithmetic).
 
 - **Log:** `logs/retained/yt_p1_loop_geometric_bound_2026-04-17.log`.
 - **Prior P1 retention steps:**
@@ -512,10 +524,10 @@ deterministic PASS/FAIL checks on:
   - `YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md` — color-tensor decomposition.
   - `YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md` — 1-loop `I_S` citation.
 - **Analog P3 template:** `YT_P3_K_SERIES_GEOMETRIC_BOUND_NOTE_2026-04-17.md`.
-- **Upstream authorities (read-only):**
+- **Upstream sources (read-only):**
   - `docs/YT_EW_COLOR_PROJECTION_THEOREM.md` — SU(3) Casimirs.
   - `docs/YT_EXACT_SCHUR_NORMAL_FORM_UNIQUENESS_NOTE.md` — gauge-group uniqueness.
-  - `docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md` — canonical `α_LM`.
+  - `docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md` — unaudited bounded arithmetic, conditional on its parent plaquette input; not retained physical/canonical authority.
 
 No publication-surface file (`CLAIMS_TABLE`, `PUBLICATION_MATRIX`,
 `DERIVATION_ATLAS`, ...) is modified by this submission.

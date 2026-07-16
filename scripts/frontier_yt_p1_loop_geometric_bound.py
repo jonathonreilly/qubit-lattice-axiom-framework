@@ -7,13 +7,13 @@ Status
 STRUCTURAL RETENTION of a framework-native geometric upper bound on
 the residual loop-expansion tail of the lattice-to-MSbar matching
 correction Delta_R^{total} for the Yukawa/gauge ratio at M_Pl, at the
-retained canonical-surface anchor alpha_LM = 0.0907. The runner does
+conditionally supplied arithmetic anchor alpha_LM = 0.0907. The runner does
 NOT derive any individual delta_R^{(n)} matching coefficient. It verifies:
 
   1. the retained SU(3) Casimirs (C_F = 4/3, T_F = 1/2, C_A = 3), the
      retained SM light-flavor count n_l = 5 at M_Pl, and the retained
      derived quantity b_0 = (11 C_A - 4 T_F n_l) / 3 = 23/3;
-  2. the retained canonical coupling alpha_LM = 0.09066784 and
+  2. the conditionally supplied arithmetic alpha_LM = 0.09066784 and
      (alpha_LM / pi) = 0.02886;
   3. the 1-loop matching value Delta_1 at both the packaged
      (I_S = 2 -> 1.924%) and central cited (I_S = 6 -> 5.772%)
@@ -33,10 +33,11 @@ NOT derive any individual delta_R^{(n)} matching coefficient. It verifies:
  11. comparison with the P3 K-series bound structure (analog with
      C_A^2 at alpha_s(m_t)): verify P1 bound is tighter in both
      coupling and envelope factors;
- 12. cross-consistency with informal 2-loop single-tensor estimate
-     (~0.148% as C_F^2 * (alpha_LM/pi)^2);
+ 12. source-scope firewall: canonical alpha arithmetic is linked to its
+     bounded certificate, the UV coefficient bridge is not cited for alpha_LM
+     or higher-loop authority, and individual delta_R^{(n>=2)} values stay open;
  13. structural retention provenance: bound derived from retained
-     SU(3) Casimirs, retained n_l = 5, and retained alpha_LM only;
+     SU(3) Casimirs, retained n_l = 5, and conditionally supplied alpha_LM;
      no literature value of delta_R^{(2)} or higher enters as a
      derivation input.
 
@@ -51,8 +52,8 @@ No-algebraic-shortcut retained from
   - docs/YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md
 1-loop I_S citation layer retained from
   - docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md
-Canonical-surface alpha_LM retained from
-  - docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md
+Conditional alpha_LM arithmetic recorded by
+  - docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md
   - scripts/canonical_plaquette_surface.py
 Analog P3 template:
   - docs/YT_P3_K_SERIES_GEOMETRIC_BOUND_NOTE_2026-04-17.md
@@ -70,6 +71,7 @@ Self-contained: sympy + stdlib only.
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 from typing import Tuple
 
 import sympy as sp
@@ -81,6 +83,8 @@ import sympy as sp
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md"
 
 
 def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> None:
@@ -123,7 +127,7 @@ B_0 = (11 * C_A - 4 * T_F * N_L) / 3
 assert B_0 == sp.Rational(23, 3), f"b_0 mismatch: {B_0}"
 
 # ---------------------------------------------------------------------------
-# Retained canonical-surface coupling
+# Conditional canonical-surface arithmetic
 # ---------------------------------------------------------------------------
 # alpha_LM = alpha_bare / u_0 = 0.09066784 from the tadpole-improved
 # canonical surface (<P> = 0.5934, u_0 = <P>^(1/4) = 0.87768138,
@@ -152,7 +156,7 @@ def part_a_retained_inputs() -> None:
     """
     Verify the retained SU(3) Casimirs, the retained SM light-flavor
     count n_l = 5, the retained one-loop beta-function coefficient
-    b_0 = 23/3, and the retained canonical coupling alpha_LM.
+    b_0 = 23/3, and the conditionally supplied alpha_LM arithmetic.
     """
     print("\n" + "=" * 72)
     print("PART A: Retained SU(3) Casimirs + retained n_l + retained b_0")
@@ -393,7 +397,7 @@ def part_d_framework_native_bound(r_max: float) -> float:
         f"r_R = {r_R:.4f} < (a/pi)*C_A^2 = {float(ALPHA_OVER_PI * C_A**2):.4f}",
     )
     check(
-        "r_R derived from retained SU(3) Casimirs + retained n_l + retained alpha_LM only",
+        "r_R derived from retained SU(3) Casimirs + retained n_l + conditional alpha_LM",
         True,  # structural assertion
         "structural retention provenance verified",
     )
@@ -586,64 +590,33 @@ def part_f_p3_comparison(r_R_p1: float) -> None:
 
 
 # ---------------------------------------------------------------------------
-# PART G: Cross-consistency with informal single-tensor 2-loop estimate
+# PART G: Source-scope firewall
 # ---------------------------------------------------------------------------
 
-def part_g_single_tensor_cross_check(r_R: float,
-                                      delta_1_packaged: float) -> None:
-    """
-    Cross-consistency check: the UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md
-    quotes an informal 2-loop estimate of order ~0.15% based on the
-    single C_F^2 tensor alone. The retained 2-loop bound
-    (Delta_1 * r_R) must exceed this single-tensor figure, because the
-    bound includes all three tensors and the retained geometric ratio
-    includes the renormalon envelope scale b_0.
-    """
+def part_g_source_scope() -> None:
     print("\n" + "=" * 72)
-    print("PART G: Cross-consistency with single-tensor 2-loop estimate")
+    print("PART G: Source-scope firewall")
     print("=" * 72)
 
-    # Single-tensor 2-loop estimate (from the UV bridge note):
-    #   (alpha_LM/pi)^2 * C_F^2 ~ 0.148%
-    # This is only the C_F^2 piece, assuming its integral coefficient
-    # is O(1). The bound Delta_1 * r_R includes all retained tensors
-    # through the renormalon envelope b_0.
-    single_tensor_2loop = float((ALPHA_OVER_PI) ** 2 * C_F ** 2)
-    bound_2loop_packaged = delta_1_packaged * r_R
-
-    print(f"\n  Informal single-tensor 2-loop estimate (UV bridge note):")
-    print(f"    (a_LM/pi)^2 * C_F^2     = {single_tensor_2loop:.8f}  = {100*single_tensor_2loop:.4f}%")
-
-    print(f"\n  Retained 2-loop bound (this note, packaged I_S=2):")
-    print(f"    Delta_1 * r_R           = {bound_2loop_packaged:.8f}  = {100*bound_2loop_packaged:.4f}%")
-
-    ratio = bound_2loop_packaged / single_tensor_2loop
-    print(f"\n  Ratio retained-bound / single-tensor   = {ratio:.4f}")
-
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "Retained 2-loop bound >= single-tensor C_F^2 estimate",
-        bound_2loop_packaged >= single_tensor_2loop,
-        f"bound = {bound_2loop_packaged:.6f} vs single = {single_tensor_2loop:.6f}",
+        "Source note links the bounded canonical alpha certificate",
+        "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md"
+        in note_text,
     )
     check(
-        "Ratio retained/single in [2.5, 3.5] (full tensor envelope correction)",
-        2.5 <= ratio <= 3.5,
-        f"ratio = {ratio:.4f}",
+        "Source note no longer cites the UV coefficient bridge",
+        "UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE" not in note_text,
     )
     check(
-        "Informal 2-loop (~0.15%) consistent with bound (< 0.5%)",
-        single_tensor_2loop < 0.005,
-        f"single_tensor = {single_tensor_2loop:.6f}",
+        "Historical single-tensor cross-validation is explicitly removed",
+        "that cross-validation is removed" in note_text,
     )
-
-    # Also: is the bound tight enough to be useful? 1-loop is 1.92%,
-    # tail is 0.55%, so 1-loop/total ~ 78%. Bound is a factor 3.7 loose
-    # on the single-tensor estimate, which is the cost of retaining
-    # only Casimir-level color structure and assuming O(1) integrals.
-    total_packaged = delta_1_packaged / (1 - r_R)
-    fraction_oneloop = delta_1_packaged / total_packaged
-    print(f"\n  1-loop / total at packaged I_S=2       = {fraction_oneloop:.4f}")
-    print(f"    (= 1 - r_R = {1 - r_R:.4f})")
+    check(
+        "Individual higher-loop coefficients remain explicit non-claims",
+        "does **not** derive" in note_text
+        and "`δ_R^{(2)}, δ_R^{(3)}, ...` individually" in note_text,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -654,7 +627,7 @@ def part_h_provenance() -> None:
     """
     Final structural check: the bound uses only retained framework
     quantities (SU(3) Casimirs C_F, C_A, T_F; retained SM n_l = 5;
-    retained canonical alpha_LM). No literature value of delta_R^{(2)}
+    conditionally supplied alpha_LM arithmetic). No literature value of delta_R^{(2)}
     or higher enters as a derivation input.
     """
     print("\n" + "=" * 72)
@@ -665,15 +638,15 @@ def part_h_provenance() -> None:
     print("    - SU(3) Casimirs C_F, T_F, C_A  (from YT_EW_COLOR_PROJECTION_THEOREM.md D7)")
     print("    - retained n_l = 5 at M_Pl      (from SM branch of complete-prediction-chain)")
     print("    - derived b_0 = 23/3            (exact rational at SU(3), n_l=5)")
-    print("    - alpha_LM = 0.09066784         (from canonical_plaquette_surface.py via UV bridge note)")
+    print("    - alpha_LM = 0.09066784         (from bounded canonical arithmetic certificate)")
     print("    - I_S bracket [2, 4-10]         (from YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md)")
     print("\n  NOT used by this bound as a derivation input:")
     print("    - any literature value of delta_R^{(2)} or higher")
     print("    - any non-retained empirical parameter")
     print("    - any external numerical input beyond the SU(3) Casimir algebra,")
-    print("      the retained SM light-flavor count, and the retained alpha_LM anchor.")
-    print("\n  Informal cross-check inputs (not derivation inputs):")
-    print("    - single-tensor 2-loop estimate ~0.15% from UV bridge note (Sec G)")
+    print("      the retained SM light-flavor count and the conditional alpha_LM arithmetic.")
+    print("\n  Removed stale attribution:")
+    print("    - no single-tensor 2-loop estimate is sourced from the UV coefficient bridge")
 
     check(
         "Bound input b_0 = 23/3 is a retained rational at SU(3), n_l=5",
@@ -681,9 +654,16 @@ def part_h_provenance() -> None:
         "b_0 = 23/3 verified",
     )
     check(
-        "Bound input alpha_LM is retained from canonical plaquette surface",
+        "Bound input alpha_LM matches the conditionally supplied arithmetic",
         abs(float(ALPHA_LM) - 0.09066784) < 1e-8,
         f"alpha_LM = {float(ALPHA_LM)}",
+    )
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    note_compact = " ".join(note_text.split())
+    check(
+        "Source note marks the alpha source unaudited and non-retained",
+        "itself unaudited on current `main`" in note_compact
+        and "does not retain the physical/canonical input" in note_compact,
     )
     check(
         "No literature value of delta_R^{(2)} or higher imported",
@@ -716,7 +696,7 @@ def main() -> int:
         delta_1_packaged, delta_1_central, r_R
     )
     part_f_p3_comparison(r_R)
-    part_g_single_tensor_cross_check(r_R, delta_1_packaged)
+    part_g_source_scope()
     part_h_provenance()
 
     print("\n" + "=" * 72)
@@ -738,8 +718,8 @@ def main() -> int:
     print(f"  |tail(N=1)| bound         = {100*tail_central:.4f}%")
     print(f"  |Delta_R^total| bound     = {100*delta_1_central/(1-r_R):.4f}%")
     print(f"")
-    print(f"(Bound depends only on retained SU(3) Casimirs, retained n_l = 5,")
-    print(f" and retained alpha_LM; no literature value of delta_R^{{(2)}} or higher imported.)")
+    print(f"(Bound depends on retained SU(3) Casimirs, retained n_l = 5,")
+    print(f" and conditional alpha_LM arithmetic; no literature delta_R^{{(2)}} value imported.)")
 
     return 0 if FAIL_COUNT == 0 else 1
 

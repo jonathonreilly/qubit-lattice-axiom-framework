@@ -5,6 +5,13 @@
 **Primary runner:** `scripts/frontier_yt_p2_f_yt_loop_geometric_bound.py`
 **Log:** `logs/retained/yt_p2_f_yt_loop_geometric_bound_2026-04-17.log`.
 
+> **2026-07-16 alpha-source correction.** The current UV coefficient bridge
+> does not supply `alpha_LM`. The linked bounded arithmetic certificate is
+> itself unaudited on current `main`; it records the conditional calculation
+> `alpha_LM = alpha_bare/u_0`, but does not retain the physical/canonical input.
+> Legacy “retained canonical coupling” wording below must be read subject to
+> this correction.
+
 ---
 
 ## Authority notice
@@ -46,7 +53,7 @@ the framework surface.
 - **SU(3) Casimir authorities:**
   - [`docs/YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md) — retained `C_F`, `C_A`, `T_F`.
   - [`docs/YT_EXACT_SCHUR_NORMAL_FORM_UNIQUENESS_NOTE.md`](YT_EXACT_SCHUR_NORMAL_FORM_UNIQUENESS_NOTE.md) — gauge-group uniqueness.
-- **Canonical coupling authority:** [`docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`](UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md) and [`scripts/canonical_plaquette_surface.py`](../scripts/canonical_plaquette_surface.py) — retained `α_LM = α_bare / u_0 = 0.0907` on the tadpole-improved Wilson-plaquette + staggered surface.
+- **Conditional canonical arithmetic source (unaudited):** [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) and [`scripts/canonical_plaquette_surface.py`](../scripts/canonical_plaquette_surface.py) — bounded arithmetic `α_LM = α_bare / u_0 = 0.0907`, conditional on the parent plaquette reuse surface; not retained authority for the physical/canonical input.
 - **SM light-flavor content between v and M_Pl:** inherited `n_l = 5` through the retained SM matter content (u, d, s, c, b) carried by the complete-prediction-chain runners; `n_l` is constant across the full UV→IR transport interval (no flavor thresholds between `v` and `M_Pl`).
 
 ---
@@ -732,8 +739,8 @@ deterministic PASS/FAIL checks on:
    the retained SM light-flavor count `n_l = 5`.
 2. Retained derived coefficient `b_0 = (11 C_A − 4 T_F n_l) / 3 = 23/3`
    at `n_l = 5`.
-3. Retained canonical coupling `α_LM = 0.09066784`,
-   `(α_LM / π) = 0.02886`.
+3. Conditionally supplied arithmetic `α_LM = 0.09066784`,
+   `(α_LM / π) = 0.02886`; no retained physical/canonical input is claimed.
 4. Retained integrated-M values from the v-matching note and primary
    chain: `M^{(0)} = 0.8833`, `M^{(1)} = 1.926`, `M^{(2)} = 1.9730`,
    `M_obs = 1.9734`.
@@ -756,7 +763,7 @@ deterministic PASS/FAIL checks on:
     from P3).
 16. Retention-tightening table at truncation N = 2, 3, 4.
 17. Structural retention provenance: bound depends only on retained
-    SU(3) Casimirs, retained `n_l = 5`, retained `α_LM`, and the
+    SU(3) Casimirs, retained `n_l = 5`, conditionally supplied `α_LM`, and the
     retained two-loop primary-chain `M` values. No literature value
     of the 3-loop or higher SM RGE integrated contribution imported.
 
@@ -767,10 +774,10 @@ deterministic PASS/FAIL checks on:
 - **Analog loop-expansion templates:**
   - `YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md` — same retained envelope on the UV surface.
   - `YT_P3_K_SERIES_GEOMETRIC_BOUND_NOTE_2026-04-17.md` — analog IR surface with `C_A^2` envelope.
-- **Upstream authorities (read-only):**
+- **Upstream sources (read-only):**
   - `docs/YT_EW_COLOR_PROJECTION_THEOREM.md` — SU(3) Casimirs.
   - `docs/YT_EXACT_SCHUR_NORMAL_FORM_UNIQUENESS_NOTE.md` — gauge-group uniqueness.
-  - `docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md` — canonical `α_LM`.
+  - `docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md` — unaudited bounded arithmetic, conditional on its parent plaquette input; not retained physical/canonical authority.
   - `docs/YT_QFP_INSENSITIVITY_SUPPORT_NOTE.md` — loose prior 3% envelope.
 
 No publication-surface file (`CLAIMS_TABLE`, `PUBLICATION_MATRIX`,

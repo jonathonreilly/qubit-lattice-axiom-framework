@@ -1,22 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_delta_2_bz.py
-runner_sha256: fab6e9119c396e9df2117f2c3758682b9320d854958efba34c4769de5d7408b4
+runner_sha256: 4cc6a46e29982f8df5d8428bb4da2025c8fdc4989804fb15bde2c3c495e7240f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================
 YT P1 - Delta_2 (C_A channel) BZ computation
 ========================================================================
 
-Block 1: Retained SU(3) Casimirs and canonical-surface constants.
+Block 1: Retained SU(3) Casimirs and conditional canonical arithmetic.
   [PASS (C)] N_c = 3  (N_c = 3)
   [PASS (C)] C_F = 4/3 (retained from D7 + S1)  (C_F = 1.3333333333)
   [PASS (C)] C_A = 3  (C_A = 3.0000000000)
   [PASS (C)] T_F = 1/2  (T_F = 0.5000000000)
-  [PASS (C)] alpha_LM matches canonical-surface retention  (alpha_LM = 0.0906678360)
-  [PASS (C)] alpha_LM/(4 pi) = 0.00721 +/- 1e-5 (retained)  (alpha_LM/(4 pi) = 0.0072151171)
+  [PASS (C)] alpha_LM arithmetic matches alpha_bare/u_0  (alpha_LM = 0.0906678360)
+  [PASS (C)] alpha_LM/(4 pi) = 0.00721 +/- 1e-5 (conditional arithmetic)  (alpha_LM/(4 pi) = 0.0072151171)
 
 Block 2: Retained Rep-A/Rep-B formula Delta_2 = I_v_gauge - (5/3) I_SE.
   [PASS (C)] Delta_2(0, 0) = 0 (structural baseline)  (Delta_2(0, 0) = 0.000000)
@@ -96,13 +96,16 @@ Block 9: Structural preservation checks.
   [PASS (C)] Rep-A/Rep-B partial-cancellation formula preserved  (Delta_2 = I_v_gauge - (5/3) I_SE retained from sibling theorem)
   [PASS (C)] 5/3 factor from QCD gluon self-energy color decomposition (HIGH confidence)  (11/3 C_A pure-gauge piece splits into vertex + 5/3 gluonic/ghost)
   [PASS (C)] Three-channel ratio decomposition unchanged  (Delta_R = (alpha/(4 pi)) * (C_F Delta_1 + C_A Delta_2 + T_F n_f Delta_3))
-  [PASS (C)] Packaged delta_PT = 1.92 % unchanged by this note  (packaged value retained as continuum-heuristic lower baseline)
+  [PASS (C)] Historical delta_PT conditional arithmetic reproduces 1.92 %  (arithmetic only under the historical I_S = 2 convention)
+  [PASS (C)] Source note no longer cites the UV coefficient bridge for delta_PT  (retired bridge attribution absent)
+  [PASS (C)] Source note links the unaudited bounded canonical alpha source
+  [PASS (C)] Source-action and matching justification remain explicit open conditions
   [PASS (C)] Cited I_S bracket [4, 10] unchanged (C_F channel, orthogonal)  (this note addresses C_A channel only; C_F channel handled elsewhere)
   [PASS (C)] Master obstruction theorem NOT modified by this note  (authority boundary respected)
   [PASS (C)] Publication-surface files NOT modified by this note  (no net ratio correction is propagated; Delta_1 and Delta_3 excluded)
 
 ========================================================================
-SUMMARY: PASS=42  FAIL=0
+SUMMARY: PASS=45  FAIL=0
 ========================================================================
 
 RETAINED CITATION-LEVEL RESULTS:

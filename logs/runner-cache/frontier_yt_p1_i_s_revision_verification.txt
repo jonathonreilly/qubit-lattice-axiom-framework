@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_i_s_revision_verification.py
-runner_sha256: 886fe474a2c57eb75a1e19a09f3570e89e1b9c7cd1f2916cf6bb1ebc09de5a0a
+runner_sha256: b554255c5e55d80bcff95abc19412419fa54e2e16af80189ec6e5fc444ebf1a6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================
@@ -21,8 +21,10 @@ PART A: Reconstruction of packaged delta_PT = 1.92%
   alpha_LM * C_F / (2 pi)   = 0.0192403124
                            = 1.9240 %
   [PASS (B)] Packaged delta_PT = alpha_LM * C_F / (2 pi) evaluates to 1.924%  (delta_PT = 1.9240 %)
-  [PASS (B)] Packaged delta_PT is a continuum vertex-correction magnitude (per source)  (source: UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md line 197)
-  [PASS (B)] Packaged delta_PT is NOT a lattice BZ integration output  (no BZ domain or lattice propagators specified in the source)
+  [PASS (B)] Source note marks the continuum-vertex label as historical only
+  [PASS (B)] Packaged delta_PT is NOT a lattice BZ integration output  (the arithmetic expression specifies no BZ domain or lattice propagators)
+  [PASS (B)] Source note no longer cites the UV coefficient bridge
+  [PASS (B)] Source note links the unaudited bounded canonical alpha source
 
 ========================================================================
 PART B: Convention identity alpha/(2 pi) = 2 alpha/(4 pi)
@@ -63,7 +65,7 @@ PART D: Rejection of Possibility B (false-alarm convention mismatch)
   [PASS (B)] Ratio P1(I_S=6) / packaged = 3.0, not 1.0 (no single-convention match)  (ratio = 3.0000)
   [PASS (B)] Possibility B rejected: no normalization switch equates the two  (packaged and cited differ by a factor 3.0, not a convention factor)
   [PASS (B)] Cited I_S contains lattice artifacts (plaquette, taste sum, tadpole)  (per prior citation note §2.3)
-  [PASS (B)] Packaged delta_PT lacks lattice artifacts (continuum formula)  (per source: 'standard vertex-correction formula')
+  [PASS (B)] Historical packaged expression contains no lattice-specific inputs  (the displayed arithmetic contains only alpha_LM, C_F, and pi)
   [PASS (B)] Possibility B rejected on semantic grounds (distinct physical objects)  (lattice-artifact content differs; they are not convention-related)
 
 ========================================================================
@@ -101,7 +103,7 @@ PART H: Verdict determination
 
   REVISED P1 (central)  =  5.7721 %  (I_S = 6.0)
   REVISED P1 (range)    =  [3.8481 %, 9.6202 %]
-  PACKAGED (superseded) =  1.9240 %  (continuum vertex-correction magnitude)
+  PACKAGED (superseded) =  1.9240 %  (historically labeled continuum vertex-correction magnitude)
   REVISION FACTOR       =  3.00x (upward)
   [PASS (B)] Confidence HIGH on semantic verdict (B rejected; A+C correct)
   [PASS (B)] Confidence MODERATE on quantitative value (O(1) citation uncertainty)  (cited I_S ~ 6 not framework-native; range [4, 10] carries uncertainty)
@@ -113,20 +115,20 @@ PART I: Structural preservation (nothing retained is modified)
   Structural flags:
     master obstruction theorem modified        = False
     Ward-identity theorem modified             = False
-    packaged delta_PT note modified            = False
+    historical delta_PT comparator promoted   = False
     prior P1 I_S citation note modified        = False
     prior symbolic I_1 = I_S reduction modified = False
     publication-surface files modified         = False
   [PASS (B)] Master obstruction theorem NOT modified
   [PASS (B)] Ward-identity theorem NOT modified
-  [PASS (B)] Packaged delta_PT note NOT modified
+  [PASS (B)] Historical delta_PT comparator is not promoted to authority
   [PASS (B)] Prior P1 I_S citation note NOT modified
   [PASS (B)] Prior symbolic I_1 = I_S reduction NOT modified
   [PASS (B)] Publication-surface files NOT modified
   [PASS (B)] This runner produces only the verification note + runner + log  (no edits to existing retained or publication-surface files)
 
 ========================================================================
-SUMMARY: PASS=38  FAIL=0
+SUMMARY: PASS=40  FAIL=0
 ========================================================================
 
 FINAL VERDICT:
@@ -136,7 +138,7 @@ FINAL VERDICT:
 
   Revised P1 (central)  =  5.7721 %  (I_S = 6.0 cited, alpha/(4 pi) convention)
   Revised P1 (range)    =  [3.8481 %, 9.6202 %]
-  Packaged (superseded) =  1.9240 %  (continuum vertex-correction magnitude)
+  Packaged (superseded) =  1.9240 %  (historically labeled continuum vertex-correction magnitude)
 
   Confidence on semantic verdict: HIGH.
   Confidence on quantitative value: MODERATE (O(1) citation uncertainty).

@@ -39,7 +39,7 @@ Outcome reproven here (per the note):
   - Barrier-parameter selector (Nesterov-Nemirovski barrier calculus):
         nu[W] := sup_{z>0} W'(z)^2 / |W''(z)| < oo,
         with W'' nonvanishing of constant sign on ALL of R_{>0}
-        (the same full-R_{>0} domain as the parent's T1-d / lemma L3).
+        (the same full-R_{>0} domain as the parent's declared T1-d boundary).
     On {s*g_p}:  W'^2/|W''| = |s| z^p / |p-1|,  sup finite  <=>  p = 0.
     nu[log] = 1 (the canonical barrier; self-concordance extremal equality
     |W'''| = 2|W''|^{3/2} exactly).  PROVEN OUTSIDE the irreducible class:
@@ -468,7 +468,7 @@ check(
 print("== T9: falsification leg — removing the declared full-R_>0 domain breaks selection ==")
 # On a compact interval [1, 2] every member has finite sup (monotone ratio):
 # the selector's load-bearing input is exactly the full-R_>0 domain — the same
-# domain hypothesis as the parent's T1-d / lemma L3.
+# domain hypothesis as the parent's declared T1-d boundary.
 finite_on_compact = True
 for pv in [sp.Rational(1, 2), -sp.Rational(1, 2), sp.Integer(2)]:
     rv = sp.Abs(ratio.subs(p, pv))

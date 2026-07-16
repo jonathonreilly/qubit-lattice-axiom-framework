@@ -13,7 +13,7 @@ finding that unconditional baseline-to-observable closure is not supported.
 2026-06-04 Record-axiom repair: P1 scalar record additivity is no longer a
 Tier-A admission when the row uses only finite scalar record additivity; it is
 part of the approved `minimal_axioms` node (current memo:
-[MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)). 2026-06-06
+[MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md)). 2026-06-06
 positive-source-cone repair: on the finite real source sector this note
 actually consumes, P2 phase-blindness is eliminated rather than admitted.
 2026-06-10 boundary-declaration repair: the readout-identification bridge
@@ -117,7 +117,7 @@ the runner verifies.
 As of the 2026-06-04 Record repair, the P1 part of that older premise set
 is no longer a Tier-A admission when used only as finite scalar record
 additivity: it is supplied by the approved Record axiom (current memo:
-[MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)). As of the
+[MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md)). As of the
 2026-06-06 source-cone repair, the separate P2 admission is no longer
 load-bearing on the in-scope consumed source surface: the positive-source-cone
 bridge proves `det(D+J) in R_{>0}` on the relevant finite branch, so there is
@@ -259,7 +259,7 @@ axiom citation:
 - **T1-c (axiom premise: Record finite scalar additivity).** For any finite
   pairwise-disjoint collection of records, the scalar readout `I` is finitely
   additive with `I(empty) = 0`
-  ([MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md), Record).
+  ([MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md), Record).
 - **T1-d (declared bridge premise — the Boundary).** The
   readout-identification bridge: the scalar record readout `W` of the
   source-deformed block is a continuous function of `Z = det(D+J)` alone,
@@ -728,7 +728,8 @@ above are however **c-equivariant** in the precise sense that their
 algebraic-structural content is invariant under `W -> c W` rescaling:
 
 - **Theorem 1 (selected generator family).** Under Record/P1, the declared
-  Boundary, and L3 on the real-positive source branch, the continuous
+  Boundary, and the elementary continuous Cauchy classification on the
+  real-positive source branch, the continuous
   additive solutions form exactly the one-parameter family
   `{W_c = c · log det(D+J) : c in R}` (the full Cauchy solution family,
   including the degenerate `c = 0` and negative-`c` members). Since
@@ -795,7 +796,7 @@ the consuming row.
 
 - **Record/P1 finite scalar additivity** is supplied by Record only in the
   narrow sense stated in
-  [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md). This axiom
+  [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md). This axiom
   premise support is chain-satisfying for dependency closure, but it is not a
   `retained_bounded` audit status and does not promote downstream rows. The
   older P1 no-go portfolio remains useful history for why this was a genuine
@@ -919,7 +920,7 @@ upstreams named above and remains comparator-only here.
   family `{c log det(D+J) : c in R}` with `c = 1` conventional (claim
   scope, headline, c-equivariance section);
   (d) stale axiom citations updated to the current memo
-  `MINIMAL_AXIOMS_2026-06-05.md` (the ledger's `minimal_axioms` target);
+  `MINIMAL_AXIOMS_2026-06-29.md` (the ledger's `minimal_axioms` target);
   (e) runner upgrades: Theorem-2 derivative trace formulas residual-checked
   against central finite differences on a non-uniform positive-cone source
   (Part 2); Matsubara closed form, exact spectral multiset, and pair-product

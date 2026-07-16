@@ -3,7 +3,7 @@ runner: scripts/frontier_hierarchy_observable_principle_from_axiom.py
 runner_sha256: 6b01ea3b047acd4c697bb20abf31c60c1d1ec2613b52a68f40ef22b077787172
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 Hierarchy observable principle with declared finite readout boundary

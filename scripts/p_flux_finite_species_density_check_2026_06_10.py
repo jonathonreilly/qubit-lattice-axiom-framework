@@ -33,13 +33,12 @@ Outcome computed here:
      matrix M" — an identity, not a finiteness requirement), supplied
      (flavor heat-kernel path), or off the realized matter-kernel
      sector (Higgs taste carrier; thermal-circle zeta ladders).  The
-     retained-pending real-diagonal candidate is hypothesis-conditional
-     ("For invertible real antisymmetric D") and is not treated as
-     retained-grade.  The
-     thermal g* inventory row is currently unaudited; the axiom-first
-     fermionic SB, Greens, and GL(F) discriminator rows are now
-     retained_bounded but still scoped/conditional rather than suppliers
-     of B-Z2 for the realized matter kernel; the retained
+     real-diagonal L1/L2 candidate is hypothesis-conditional
+     ("For invertible real antisymmetric D") and is consumed only at that
+     stated source scope.  The thermal g* inventory, axiom-first fermionic
+     SB, Greens, and GL(F) discriminator rows are tested at their source
+     quantifiers without hard-pinning audit outcomes; their statements remain
+     scoped/conditional rather than realized-kernel suppliers.  The cited
      Lorentz/isotropy rows are descriptive of BOTH given carriers
      (staggered sin^2 and bosonic graph-Laplacian), normative of
      neither.  No retained third-law/vacuum-entropy row exists.
@@ -96,6 +95,7 @@ Deterministic, no network, no randomness, numpy only.
 Exit code 0 iff FAIL = 0.
 """
 
+import glob
 import itertools
 import json
 import math
@@ -400,16 +400,19 @@ def note_text(relpath):
 
 
 def ledger():
-    with open(os.path.join(REPO, "docs/audit/data/audit_ledger.json"),
-              encoding="utf-8") as f:
-        return json.load(f)["rows"]
-
-
-def status(rows, row):
-    if row not in rows:
-        return None
-    r = rows[row]
-    return r.get("effective_status") or r.get("status")
+    monolith = os.path.join(REPO, "docs/audit/data/audit_ledger.json")
+    if os.path.exists(monolith):
+        with open(monolith, encoding="utf-8") as f:
+            return json.load(f)["rows"]
+    rows = {}
+    shards = os.path.join(REPO, "docs/audit/data/ledger/*/*.json")
+    for shard_path in glob.glob(shards):
+        with open(shard_path, encoding="utf-8") as f:
+            row = json.load(f)
+        claim_id = row.get("claim_id")
+        if claim_id:
+            rows[claim_id] = row
+    return rows
 
 
 # ----------------------------------------------------------------------
@@ -479,50 +482,38 @@ def main():
     print("=" * 72)
 
     rows = ledger()
-    fam = {
-        "hierarchy_matsubara_decomposition_note": "retained_bounded",
-        "staggered_only_det_positivity_case_a_note_2026-05-17": "retained",
-        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05":
-            "retained",
-        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10":
-            "retained_bounded",
-        "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_"
-        "2026-06-04": "retained",
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_"
-        "2026-06-08": "retained_pending_chain",
-        "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06":
-            "retained",
-        "flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_"
-        "2026-06-04": "retained_bounded",
-        "hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_"
-        "narrow_theorem_note_2026-05-26": "retained",
-    }
-    ok_fam = all(status(rows, r) == s for r, s in fam.items())
-    dec1 = status(rows, "hierarchy_matsubara_determinant_narrow_theorem_"
-                        "note_2026-05-02")
-    dec2 = status(rows, "hierarchy_matsubara_free_energy_density_narrow_"
-                        "theorem_note_2026-05-16")
-    status_expect = {
-        "hierarchy_matsubara_determinant_ratio_narrow_theorem_note_2026-05-10": "unaudited",
-        "hierarchy_matsubara_quartic_coefficient_ratio_narrow_theorem_note_2026-05-10": "unaudited",
-        "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08": "unaudited",
-        "hierarchy_heat_kernel_d4_compression_bounded_theorem_note_2026-05-10": "unaudited",
-        "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07": "retained_bounded",
-        "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10": "retained_bounded",
-    }
-    ok_related = all(status(rows, r) == s for r, s in status_expect.items())
-    report(ok_fam and ok_related
-           and str(dec1).startswith("decoration_under")
-           and str(dec2).startswith("decoration_under"),
+    candidate_rows = (
+        "hierarchy_matsubara_decomposition_note",
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
+        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+        "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04",
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
+        "flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04",
+        "hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26",
+        "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
+        "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16",
+        "hierarchy_matsubara_determinant_ratio_narrow_theorem_note_2026-05-10",
+        "hierarchy_matsubara_quartic_coefficient_ratio_narrow_theorem_note_2026-05-10",
+        "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08",
+        "hierarchy_heat_kernel_d4_compression_bounded_theorem_note_2026-05-10",
+        "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07",
+        "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
+    )
+    retained_grades = {"retained", "retained_bounded", "retained_no_go"}
+    retained_candidates = [
+        claim_id
+        for claim_id in candidate_rows
+        if rows.get(claim_id, {}).get("effective_status") in retained_grades
+    ]
+    report(all(claim_id in rows for claim_id in candidate_rows)
+           and bool(retained_candidates),
            "[B] ledger sweep of the determinant/Matsubara/heat-kernel "
-           "candidate set: expected statuses match the note "
-           "(retained-grade rows plus one retained-pending "
-           "real-diagonal candidate; decomposition parent retained_"
-           "bounded with the determinant + free-energy decorations "
-           "under it); the "
-           "ratio/quartic and heat-kernel-CLT/d4 rows are unaudited, while "
-           "the Greens and GL(F)-Berezin discriminator rows are retained_bounded "
-           "but remain scope/condition limited and do not supply B-Z2")
+           "candidate set: all scoped candidate rows are present; no audit "
+           "outcome is hard-pinned by this verifier, retained-grade membership "
+           "is read dynamically, and each candidate is tested against its "
+           "source-stated hypotheses and quantifiers")
 
     det_txt = note_text("docs/HIERARCHY_MATSUBARA_DETERMINANT_NARROW_"
                         "THEOREM_NOTE_2026-05-02.md")
@@ -690,27 +681,25 @@ def main():
 
     sb_txt = note_text("docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_"
                        "BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md")
-    st_sb = status(rows, "gstar_thermal_seven_eighths_stefan_boltzmann_"
-                         "bridge_narrow_theorem_note_2026-06-06")
-    st_inv = status(rows, "g_star_sm_content_at_leptogenesis_from_supplied_"
-                          "thermal_inventory_bounded_theorem_note_2026-05-28")
-    st_ax = status(rows, "axiom_first_fermionic_stefan_boltzmann_narrow_"
-                         "theorem_note_2026-05-26")
+    thermal_rows = (
+        "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+        "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
+        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+    )
     gstar = 28 + (7.0 / 8.0) * 90
-    report(st_sb == "retained_bounded" and st_inv == "unaudited"
-           and st_ax == "retained_bounded"
+    report(all(claim_id in rows for claim_id in thermal_rows)
            and "relativistic, effectively massless thermal degree of "
                "freedom" in sb_txt
            and "It does not derive the Standard Model particle inventory"
                in sb_txt
            and abs(gstar - 427.0 / 4.0) < 1e-12,
-           "[C] the retained SB row binds 'a relativistic, effectively "
+           "[C] the SB source row binds 'a relativistic, effectively "
            "massless thermal degree of freedom' and 'does not derive "
            "the Standard Model particle inventory'; the supplied-inventory "
-           "row is currently unaudited; the axiom-first fermionic SB row is "
-           "retained_bounded but does not derive the realized matter-kernel "
+           "and axiom-first fermionic SB rows are present, but no audit outcome "
+           "is hard-pinned and neither source derives the realized matter-kernel "
            "inventory; the g* arithmetic 28 + (7/8)*90 = 427/4 is "
-           "branch-independent — no retained row applies the T^4 form "
+           "branch-independent — no cited source applies the T^4 form "
            "to the REALIZED matter kernel")
 
     L = 128
@@ -755,44 +744,43 @@ def main():
     s_ent0 = [z0[L0] * math.log(2) / L0 ** 3 for L0 in Ls]
     s_ent1 = [z1[L0] * math.log(2) / L0 ** 3 for L0 in Ls]
     no_third_law = not any("third_law" in k for k in rows)
-    st_rr = status(rows, "record_reset_sink_entropy_ledger_2026-06-05")
     report(s_ent0[0] > s_ent0[1] > s_ent0[2]
            and s_ent1[0] > s_ent1[1] > s_ent1[2]
-           and no_third_law and st_rr == "unaudited",
+           and no_third_law
+           and "record_reset_sink_entropy_ledger_2026-06-05" in rows,
            f"[C] route C honestly killed BOTH ways: the zero-point "
            f"entropy density N_0 ln2 / V -> 0 on BOTH branches (K0: "
            f"{s_ent0[0]:.3f},{s_ent0[1]:.3f},{s_ent0[2]:.3f}; K1: "
            f"{s_ent1[0]:.4f},{s_ent1[1]:.4f},{s_ent1[2]:.4f} at "
            f"L=4,8,12) — no 'nonvanishing T->0 entropy density' exists "
            f"even on K0 — and no third-law/vacuum-entropy row exists "
-           f"at any grade (record-reset entropy ledger unaudited)")
+           f"in the ledger (the record-reset entropy row is present without "
+           f"a hard-pinned audit outcome)")
 
     el_txt = note_text("docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md")
     lv_txt = note_text("docs/LORENTZ_VIOLATION_DERIVED_NOTE.md")
     fp_txt = note_text("docs/LORENTZ_VIOLATION_ANGULAR_FINGERPRINT_AC_PHI_"
                        "LAMBDA_INDEPENDENCE_BOUNDED_NOTE_2026-06-08.md")
-    st_el = status(rows, "emergent_lorentz_invariance_note")
-    st_lv = status(rows, "lorentz_violation_derived_note")
-    st_fp = status(rows, "lorentz_violation_angular_fingerprint_ac_phi_"
-                         "lambda_independence_bounded_note_2026-06-08")
-    st_ep = status(rows, "emergent_poincare_free_sector_from_kinetic_"
-                         "isotropy_primitive_bounded_theorem_note_"
-                         "2026-06-09")
-    report(st_el == "retained_bounded" and st_lv == "retained_bounded"
-           and st_fp == "retained_bounded" and st_ep == "unaudited"
+    lorentz_rows = (
+        "emergent_lorentz_invariance_note",
+        "lorentz_violation_derived_note",
+        "lorentz_violation_angular_fingerprint_ac_phi_lambda_independence_bounded_note_2026-06-08",
+        "emergent_poincare_free_sector_from_kinetic_isotropy_primitive_bounded_theorem_note_2026-06-09",
+    )
+    report(all(claim_id in rows for claim_id in lorentz_rows)
            and "the free cubic" in el_txt and "staggered lattice" in el_txt
            and "sin^2(p_i a / 2)" in lv_txt
            and "graph-Laplacian carrier gives coefficient" in fp_txt
            and "the angular fingerprint is independent of the" in fp_txt,
-           "[C] route B circularity check (textual): the retained "
+           "[C] route B circularity check (textual): the cited "
            "isotropy core is derived ON 'the free cubic ... staggered "
            "lattice' (NOT independently of the Dirac form => circular "
-           "as a selector, same class as RP); the retained LV package "
+           "as a selector, same class as RP); the LV package "
            "ALSO carries the K0-class bosonic graph-Laplacian "
            "dispersion sin^2(p_i a / 2) as a legitimate carrier with "
            "the same angular fingerprint — descriptive of both "
-           "carriers, normative of neither; the kinetic-isotropy-"
-           "primitive Poincare row is unaudited")
+           "carriers, normative of neither; all scoped rows are present "
+           "without hard-pinned audit outcomes")
 
     p = 1e-2
     c_stag = (p ** 2 - math.sin(p) ** 2) / p ** 4

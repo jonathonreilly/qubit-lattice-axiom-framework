@@ -107,7 +107,7 @@ readout a function of determinant alone.
 
 **N3 -- Hidden-wall scan.** The used inputs are explicit: minimal axioms,
 finite determinant/direct-sum algebra, continuity on the positive source cone,
-and the retained positive-branch determinant lemma. Future readout-context
+and the L1/L2 positive-branch determinant lemma. Future readout-context
 theorems or approved primitives are named as future import-retirement paths,
 not consumed here.
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/observable_principle_p1_exponent_attack_2026_06_10.py
-runner_sha256: 211cdbe8d55f41c97834ffa236d7b003ad3d7d5f26988d9877ee18a9d4c2aa9e
+runner_sha256: 4a4442b67ace3f5864b710041ca25a11fb6b91ef06965cb8b7424f61c1488f49
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.09
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 == T1: family well-posedness (normalized exponent family) ==

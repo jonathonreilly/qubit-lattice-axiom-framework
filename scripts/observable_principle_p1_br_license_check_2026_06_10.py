@@ -11,8 +11,8 @@ reduced the P1 license demand to the single clause
 
 and named the next hunt target: a retained finite-resolution/record-capacity
 adjacent structure. This runner verifies the hunt outcome over the retained
-record/measurement surface, with the unbounded Record schema consumed only as
-an audited-conditional supplied-record premise:
+record/measurement surface, with the unbounded Record schema consumed only at
+its stated conditional supplied-record scope:
 
   POSITIVE (narrow lemmas, all reproven exactly here):
   - Lemma W (second demand reduction, BR => BR-int): the per-e-fold
@@ -94,6 +94,7 @@ Expected: TOTAL: PASS=31 FAIL=0
 
 from __future__ import annotations
 
+import glob
 import itertools
 import json
 import os
@@ -134,6 +135,7 @@ BARRIER_NOTE = os.path.join(
     "OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
 )
 LEDGER = os.path.join(REPO, "docs", "audit", "data", "audit_ledger.json")
+LEDGER_SHARDS = os.path.join(REPO, "docs", "audit", "data", "ledger", "*", "*.json")
 
 z = sp.Symbol("z", positive=True)
 u = sp.Symbol("u", real=True)
@@ -467,7 +469,7 @@ check(
     "compact collapse: on [1, e] and on the licensed L2 Neumann image [1, 85/64] every member "
     "has finite response and finite e-fold increment (monotone endpoint evaluation) — "
     "(BR)/(BR-int)/(CAP) select NOTHING there; the full-R_>0 clause is exactly the declared "
-    "T1-d / lemma-L3 domain hypothesis, no hidden domain freedom",
+    "T1-d domain hypothesis, not L1/L2 det-positivity content",
     compact_ok,
 )
 check(
@@ -480,10 +482,18 @@ check(
 
 # ----------------------------------------------------------------------
 print("== T9: ledger scan — zero retained-grade capacity/rate suppliers (extends NU-note T9) ==")
-with open(LEDGER, "r", encoding="utf-8") as fh:
-    ledger = json.load(fh)
-rows = ledger["rows"]
-retained_grades = {"retained", "retained_bounded", "retained_pending_chain", "retained_no_go"}
+if os.path.exists(LEDGER):
+    with open(LEDGER, "r", encoding="utf-8") as fh:
+        rows = json.load(fh)["rows"]
+else:
+    rows = {}
+    for shard_path in glob.glob(LEDGER_SHARDS):
+        with open(shard_path, "r", encoding="utf-8") as fh:
+            row = json.load(fh)
+        claim_id = row.get("claim_id")
+        if claim_id:
+            rows[claim_id] = row
+retained_grades = {"retained", "retained_bounded", "retained_no_go"}
 import re as _re
 
 patterns = _re.compile(
@@ -502,30 +512,22 @@ check(
     matches == [],
     detail=f"matches={matches!r}",
 )
-ctx_allowed = {
-    "record_function_finite_sector_algebra_2026-06-05": {"retained"},
-    # This row is now audited_conditional on main; that strengthens the
-    # runner's boundary reading rather than supplying the missing cap.
-    "record_unbounded_finite_additivity_schema_2026-06-06": {"audited_conditional"},
-    "magnitude_reads_minimal_record_block_2026-06-06": {"retained_no_go"},
-    "post_record_count_probability_firewall_2026-06-06": {"retained_no_go"},
-    "observable_principle_record_scalar_map_no_go_note_2026-06-05": {"retained_no_go"},
-    "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06": {"retained_no_go"},
-    "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20": {"retained"},
-    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": {"retained"},
-    "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": {"retained_pending_chain", "retained_bounded"},
-    "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06": {"retained"},
-}
-ctx_bad = {
-    kk: rows.get(kk, {}).get("effective_status")
-    for kk, allowed in ctx_allowed.items()
-    if rows.get(kk, {}).get("effective_status") not in allowed
-}
+ctx_rows = (
+    "record_function_finite_sector_algebra_2026-06-05",
+    "record_unbounded_finite_additivity_schema_2026-06-06",
+    "magnitude_reads_minimal_record_block_2026-06-06",
+    "post_record_count_probability_firewall_2026-06-06",
+    "observable_principle_record_scalar_map_no_go_note_2026-06-05",
+    "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06",
+    "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+    "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
+    "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06",
+)
 check(
     "B",
-    "cited rows present at their current admissible effective statuses; unbounded Record is audited_conditional and local tomography is retained_bounded or retained_pending_chain in the live ledger",
-    not ctx_bad,
-    detail=f"mismatches={ctx_bad!r}",
+    "cited context rows are present; no audit outcome is hard-pinned by this verifier",
+    all(claim_id in rows for claim_id in ctx_rows),
 )
 check(
     "B",

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/observable_principle_p1_nu_license_check_2026_06_10.py
-runner_sha256: ffef0951f48ca8da8f3da62916e9d90b6ffba546e35f941ad697e8a5d932376b
+runner_sha256: 76ab277cd0caaee03ef5d227cf7116a6b957f395cceb6dd3c7bfc621cfabf991
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.90
+elapsed_sec: 1.20
 status: ok
 ----- stdout -----
 == T1: the family, the selected member, and the clause split ==

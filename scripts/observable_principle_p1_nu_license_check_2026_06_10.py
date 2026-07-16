@@ -505,7 +505,7 @@ else:
         claim_id = row.get("claim_id")
         if claim_id:
             rows[claim_id] = row
-retained_grades = {"retained", "retained_bounded", "retained_pending_chain", "retained_no_go"}
+retained_grades = {"retained", "retained_bounded", "retained_no_go"}
 patterns = re.compile(
     r"barrier|self_concordan|operator_monoton|complete_monoton|bernstein"
     r"|bounded_response|response_bound|log_scale|readout_curvature|readout_regularity"

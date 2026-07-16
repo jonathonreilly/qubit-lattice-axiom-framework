@@ -311,7 +311,7 @@ sector decomposition — the exact N7 shape.
 - **Removing the declared full-domain input breaks selection:** on a compact
   interval `[1, 2] ⊂ R_{>0}` every member has finite sup (the ratio is
   monotone in `z`), so (NU) selects **nothing** without the full-`R_{>0}`
-  domain. The selector's load-bearing input is exactly the L3/T1-d domain
+  domain. The selector's load-bearing input is exactly the T1-d full-domain
   hypothesis — no hidden extra domain freedom.
 - **Degenerate member:** `p = 1` is excluded by the curvature leg, not by
   fiat (and is independently non-additive).
@@ -320,8 +320,10 @@ sector decomposition — the exact N7 shape.
 
 (NU) is **not** supplied by Record (the axiom memo excludes readout
 identification), not by the det-positivity lemma (L1/L2 give branch
-positivity, L3 gives Cauchy uniqueness *given* additivity), and not by any
-cited source row. T10 verifies that the note leaves (NU) explicitly
+positivity only), and not by any cited source row. The elementary Cauchy
+classification applies only after T1-d separately supplies determinant-only
+dependence, source-block-to-record composition, and the full domain. T10
+verifies that the note leaves (NU) explicitly
 unlicensed and does not claim P1 closure. The physical reading of (NU) — the
 readout's squared response per unit curvature is uniformly bounded over the
 entire amplitude range, i.e. the readout resolves the amplitude domain with
@@ -349,7 +351,7 @@ T1-a..T1-e restructures as:
 - T1-e′: Stage FORM (det-character theorem) narrows candidates to
   `{s·g_p}`; (NU) point-selects `p = 0` (this note's theorem); Record
   additivity over disjoint records becomes a derived **consistency check**
-  of the selected `log det` (it holds, by L3 direction (Add)⇐log), not an
+  of the selected `log det` (it holds because `log` is additive), not an
   input.
 
 The admitted-premise count does not drop (one declared premise is exchanged
@@ -443,7 +445,7 @@ specific to the post-FORM exponent family, which is the only place the
 selector is asked to act. A second steelman — "(NU)'s full-`R_{>0}` domain
 is doing the work" — is conceded and quantified: T9 shows selection
 collapses on compact domains; but that domain input is identical to the
-already-declared T1-d/L3 domain hypothesis, so no new domain premise is
+already-declared T1-d domain hypothesis, so no new domain premise is
 consumed.
 
 **N8 — Cross-cycle echo.** The Pattern-L wall (every selector is additivity
@@ -493,7 +495,7 @@ reduction computations (elementary calculus/algebra, runner-reproven);
 (3) the cone-condition interval computations (elementary, runner-reproven);
 (4) **the (NU) barrier-parameter premise — declared, consumed as a premise,
 and explicitly not supplied by any cited row**; (5) the full-`R_{>0}` domain
-hypothesis, identical to the parent's T1-d/L3 domain clause. The physical
+hypothesis, identical to the parent's T1-d full-domain clause. The physical
 identification of the readout with `det(D+J)` remains gated exactly as in
 the parent note.
 

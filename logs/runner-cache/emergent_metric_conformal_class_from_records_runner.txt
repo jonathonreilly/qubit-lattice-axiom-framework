@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/emergent_metric_conformal_class_from_records_runner.py
-runner_sha256: 2f4d51207ab75ac8b992ce06ee0ce976544bfe6bd99a8edadebdb5b0d468ce2f
+runner_sha256: e9b9f4610b95335fd19ede1ced4c2e3e19b46284a1c0c45081b6c3e4fd1de9f7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -27,7 +27,7 @@ Emergent conformal-class consumer: open causal-source bridge ledger
   [PASS] source packet path exists: scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py
   [PASS] source packet path exists: logs/runner-cache/reconstructed_h_quasilocal_microcausality_bridge_runner.txt
   [PASS] owned cache reports clean execution: logs/runner-cache/reconstructed_h_quasilocal_microcausality_bridge_runner.txt
-  [PASS] source packet path exists: docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md
+  [PASS] free-bilinear LR candidate remains non-load-bearing context  | not a required source-packet file or citation-graph dependency
 
 Diagnostic only: one-particle group speed
   sampled_one_particle_group_speed = 0.709282 (lattice units)

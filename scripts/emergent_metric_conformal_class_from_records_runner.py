@@ -39,7 +39,9 @@ SOURCE_FILES = (
     "docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
     "scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py",
     "logs/runner-cache/reconstructed_h_quasilocal_microcausality_bridge_runner.txt",
-    "docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md",
+)
+NON_LOAD_BEARING_LR_CONTEXT = (
+    "docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md"
 )
 
 PASS = 0
@@ -133,6 +135,15 @@ def main() -> int:
                 f"owned cache reports clean execution: {rel_path}",
                 cache_reports_clean_execution(path),
             )
+
+    lr_context_name = Path(NON_LOAD_BEARING_LR_CONTEXT).name
+    check(
+        "free-bilinear LR candidate remains non-load-bearing context",
+        NON_LOAD_BEARING_LR_CONTEXT not in SOURCE_FILES
+        and f"`{lr_context_name}`" in note_text
+        and f"]({lr_context_name})" not in note_text,
+        "not a required source-packet file or citation-graph dependency",
+    )
 
     print()
     print("Diagnostic only: one-particle group speed")

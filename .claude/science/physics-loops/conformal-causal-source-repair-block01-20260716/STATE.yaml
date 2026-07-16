@@ -4,7 +4,7 @@ target_status: best-honest-status
 current_goal: "Repair the conformal causal-source packet without promoting a causal or conformal bridge."
 remote_branch: physics-loop/conformal-causal-source-repair-block01-20260716
 base_ref: origin/main
-base_commit: 1cc237c6f1
+base_commit: 81684fb592
 cycle_count: 1
 block_count: 1
 active_route: "Scope split: record timing no-go; fixed-mass one-particle contour support; open conformal consumer."

@@ -43,3 +43,17 @@ The user forbade subagents, so the required reviewer roles are run locally:
   pass in a disposable worktree; no verdict was produced or applied.
 
 Recommendation: **PASS WITH BOUNDED CLAIMS**.
+
+## Independent Sol xhigh review-loop iteration 3
+
+- **Semantic bridge:** the consumer runner listed the independently judged
+  free-bilinear LR candidate among required source-packet files, so the
+  supposedly non-load-bearing pointer still affected PASS. The candidate is
+  now excluded from the required packet, and the runner instead checks that it
+  remains code-formatted context rather than a citation-graph dependency.
+- **Pack consistency:** `STATE.yaml` now records the actual fresh
+  `origin/main` merge base used by PR #5422.
+- **Independent math:** symbolic reduction confirms the exact
+  `Re sin^2(x+i y)` identity; high-precision contour integration agrees after
+  the one-coordinate shift; finite Fock enumeration confirms the vacuum and
+  multiparticle spectrum split; and `-log(exp(-2E))/(2a_tau)=E/a_tau`.

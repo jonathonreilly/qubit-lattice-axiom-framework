@@ -129,8 +129,9 @@ front.
 
 The runner verifies the source scope, the separation between negative
 boundaries and positive causal inputs, the six named open bridges, the honest
-group-speed label, the exact null-cone conformal algebra, and the abstract
-clock-reparametrization no-go. It returns nonzero whenever any check fails.
+group-speed label, the non-inheritance of the context-only free-bilinear LR
+candidate, the exact null-cone conformal algebra, and the abstract clock-
+reparametrization no-go. It returns nonzero whenever any check fails.
 
 ```bash
 PYTHONPATH=scripts python3 scripts/emergent_metric_conformal_class_from_records_runner.py

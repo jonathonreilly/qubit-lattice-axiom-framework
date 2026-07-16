@@ -23,8 +23,8 @@ base_ref: origin/main
 base_commit: d4576165d181867dbbadedc9b870e4337d2752ed
 rebase_status: complete
 rebase_required_before_pr: false
-lock_mode: branch-local-supervisor
-lock_note: "Worktree-local block lock; delete before final commit."
+lock_mode: released-after-pr-open
+lock_note: "The block-local lock covered implementation/review and was deleted before the PR checkpoint."
 active_route: "representation-ring multiplicity series plus independent finite-Gram Schur proof, multi-link kernel, and integrated features"
 hard_residual: "Replace the SU(N>=3) comparator-only boundary by an exact coefficient-sign theorem and runner gate on the finite open-slab pure-gauge carrier."
 a_min:
@@ -56,7 +56,9 @@ open_imports: []
 trace_class: direct_blocker_closure
 reachability_to_target: closes
 review_disposition: pass
-pr_status: pending
+pr_status: open
+pr_number: 5405
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5405
 block_01:
   pr_number: 5398
   pr_status: merged
@@ -80,6 +82,6 @@ pipeline_validation:
   target_generated_deps: []
   target_transitive_descendants: 784
   generated_outputs_removed: true
-last_checkpoint_at_utc: "2026-07-16T13:19:49Z"
-next_exact_action: "Delete the local lock files, commit this checkpoint, push the branch, and open the block-02 review PR."
+last_checkpoint_at_utc: "2026-07-16T13:23:00Z"
+next_exact_action: "Do not merge PR 5405. Continue the block-02 deep attack through at least 2026-07-16T14:48:12Z, amend the PR if a real issue appears, then pivot to opportunity 3."
 stop_condition: "Runtime exhaustion, reviewed PR plus honest pivot, or documented opportunity exhaustion."

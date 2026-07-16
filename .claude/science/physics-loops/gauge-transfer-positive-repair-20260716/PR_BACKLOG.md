@@ -18,9 +18,13 @@ Proposed title:
 
 `[physics-loop] Wilson plane SU(N) positivity repair block 02`
 
+Open PR:
+[PR 5405](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5405).
+
 Status: implementation, cache, independent checks, review-loop, rebase, and
-disposable pipeline compatibility pass. Final checkpoint commit, push, and PR
-remain.
+disposable pipeline compatibility pass. The branch-local source is
+`candidate-retained-grade`; independent audit remains required. Never merge
+from this campaign worker.
 
 The PR body must quote the archived conditional blocker, identify the active
 review-queue route, report exact runner and independent-check results, state

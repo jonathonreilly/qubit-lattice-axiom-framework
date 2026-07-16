@@ -18,8 +18,8 @@ framework primitives is load-bearing for this finite Wilson operator theorem.
 | `beta=6` Perron/thermal data | none | one computed lattice input | existing plaquette stack | no | no | separate tensor/Perron computation | excluded |
 | strict positivity of every character coefficient | none | support-only stronger statement | prior plan hypothesis | no | no | unnecessary | not claimed |
 | transfer-invariant source sector | none | unjustified import | source-sector pullback no-go | no | no | separate intertwining theorem | explicitly disclaimed |
-| exhaustive finite `S_3` replacement-group model | transfer-factorization diagnostic | support-only | paired runner | no | no | remove without changing the analytic `SU(3)` proof | not theorem evidence |
-| runner constants `NMAX_TENSOR=8`, `RECURRENCE_BOX=5`, `GRAM_SIZE=18`, seed `20260716`, `beta=1.7`, `S_3` couplings `0.61/0.37`, source `-0.29`, `L_t=2`, and `TOL=2e-11` | deterministic finite diagnostics and falsifiers only | insensitive nuisance | paired runner | no | no | vary or remove without changing the proof | not physical inputs |
+| exhaustive finite `S_3` replacement-group model | transfer-factorization diagnostic | support-only | paired runner | no | no | remove without changing the analytic `SU(3)` proof | support evidence only; not proof of the analytic `SU(3)` theorem |
+| runner constants `NMAX_TENSOR=8`, `RECURRENCE_BOX=5`, `GRAM_SIZE=18`, seed `20260716`, `beta=1.7`, `S_3` couplings `0.61/0.37`, source `-0.29`, `L_t=2`, `TOL=2e-11`, recurrence threshold `1e-10`, and negative-beta threshold `-1e-6` | deterministic finite diagnostics and falsifiers only | insensitive nuisance | paired runner | no | no | vary or remove without changing the proof | not physical inputs |
 | four fixed torus samples, tested recurrence range `0<=p,q<=3`, negative-beta sign control, and the matrix `[[1,2],[2,1]]` | deterministic recurrence and hostile controls | insensitive nuisance | paired runner | no | no | replace by other discriminating samples/controls | not physical inputs |
 
 ## Counterfactual pass

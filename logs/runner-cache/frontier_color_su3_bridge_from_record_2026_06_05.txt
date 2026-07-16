@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_su3_bridge_from_record_2026_06_05.py
+runner_sha256: ee8df9cd1f25a99d49b263754f93b1948fdefcf004e81a8970516e2af08a3092
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
 ====================================================================================
 FRONTIER: SU(3)_c symmetric-base -> physical-color bridge from the
 record-gauge principle (#2667 +#2711). HONEST IS/IS-NOT probe.
@@ -62,13 +70,15 @@ link-end dof. We can write a Gauss law for EITHER symmetry.
   [PASS] SU(3): bare color link-end transport variant at endpoint A
   [PASS] SU(3): dressed color singlet invariant at endpoint A (Wilson-type)
 
-  RESULT: BOTH a fiber-SU(2) Gauss law and a base-SU(3) Gauss law can
-  be written on the SAME two-endpoint link carrier, and BOTH show the
-  identical 0->1->2 endpoint-invariance profile. So records + locality
-  + the link/Gauss-law structure do NOT discriminate base SU(3) from
-  fiber SU(2): whichever generator is PLACED on the link end is the
-  one whose singlets become the records.
-  [PASS] CRUX: base-SU(3)-vs-fiber-SU(2) gauging is NOT forced by records/locality/links  (both symmetries admit the same Gauss-law profile on the same carrier)
+  RESULT: a fiber-SU(2) Gauss law (two-endpoint qubit carrier) and a
+  base-SU(3) Gauss law (endpoint C^3 (x) link-end C^3 carrier) each admit
+  the same bare-transport-variant / dressed-singlet-invariant structure
+  on their own carrier (the SU(3) case is verified at the matched
+  endpoint A; the two carriers are not identified). So records + locality
+  + the link/Gauss-law structure do NOT by themselves discriminate base
+  SU(3) from fiber SU(2): whichever generator is PLACED on the link end
+  is the one whose singlets become the records.
+  [PASS] CRUX: base-SU(3)-vs-fiber-SU(2) gauging is NOT forced by records/locality/links  (each symmetry admits the tested variant/invariant structure on its own link carrier)
 
   SHARPENING (the asymmetry makes the color residual MORE specific):
   - a single qubit link-end (Qubit axiom, M_2(C)) carries SU(2)
@@ -80,16 +90,19 @@ link-end dof. We can write a Gauss law for EITHER symmetry.
   => the matter-realization residual is therefore not merely a 'pick a
      symmetry' coin flip; for COLOR it specifically requires assigning
      quarks to the base-pair symmetric block AND routing that color
-     index onto the links -- a structured matter+connection choice the
-     {Lattice,Qubit,Admissibility,Record} axioms do not supply (cf. #2679: a bare
-     qubit link gives su(2), not su(3)).
+     index onto the links -- a structured matter+connection choice that
+     records + locality + the link/Gauss-law structure do not supply
+     (cf. #2679: a bare qubit link gives su(2), not su(3)).
 
   The remaining selector is the ASSIGNMENT 'quarks occupy the 3D
   symmetric base block as the fundamental 3 (color), and the gauge
   connection carries that color index on the links'. That assignment
-  is the matter realization (the AC_phi_lambda family: which subsystem
-  the matter occupies). It is NOT delivered by Lattice+Quantum+Record.
-  [PASS] matter-realization residual is outside {Lattice,Qubit,Admissibility,Record} scope (per axiom memo)  (Quantum: 'no gauge group'; Record: 'no arbitrary observable identification')
+  is the matter-realization residual (which subsystem the matter
+  occupies). It is NOT delivered by records + locality + the links.
+
+  (narration, not scored) per the axiom memo: Qubit supplies no gauge
+  group and Record supplies no arbitrary observable identification, so
+  the matter-realization residual is not supplied by records+locality.
 
 ------------------------------------------------------------------------------------
 PART 4: residual ledger -- the bridge = [#2667 half] + [named residual]
@@ -105,7 +118,7 @@ Bridge('symmetric-base -> physical-color') decomposes as:
       WHICH local symmetry's singlets are the physical records, i.e.
       the assignment of quarks to the 3D-symmetric-base fundamental 3
       with the color index living on the links. = the MATTER
-      REALIZATION (AC_phi_lambda family). [Part 3 CRUX: not forced.]
+      REALIZATION residual. [Part 3 CRUX: not forced.]
 
   Reconciliation with the flagged boundary: the framework's notes
   (CL3_COLOR_AUTOMORPHISM, CL3_SU3_SYMMETRIC_BASE..., baryon/meson
@@ -114,7 +127,9 @@ Bridge('symmetric-base -> physical-color') decomposes as:
   (a) but NOT (b); the deferred bridge IS the residual (b).
   [PASS] (a) verified: commutant identity holds for the color singlets
   [PASS] (b) named: residual = matter realization (which symmetry's singlets are records)
-  [PASS] boundary reconciled: deferred bridge == residual (b), not (a)  (notes defer 'symmetric-base = physical color', which is (b))
+
+  (narration, not scored) the framework's color notes defer
+  'symmetric-base = physical color', i.e. residual (b), not (a).
 
 ------------------------------------------------------------------------------------
 VERDICT
@@ -123,7 +138,7 @@ Record axiom (#2667 +#2711) supplies the gauge-from-record-invariance
 HALF of the symmetric-base -> physical-color bridge (a genuine
 algebraic identity on the explicit C^8 carrier), but NOT the full
 bridge: the residual -- WHICH local symmetry is gauged / quarks in the
-fundamental-3 / the matter realization (AC_phi_lambda) -- is open,
+fundamental-3 / the matter-realization residual -- is open,
 not forced. base-SU(3)-vs-fiber-SU(2) gauging is NOT discriminated by
 records/locality/links. This is PARTIAL-PINNING, not a derivation of
 color. The framework's 'the bridge is the load-bearing boundary' flag
@@ -132,5 +147,8 @@ is the residual (b); #2667 reduces the bridge to it but does not close it.
 ------------------------------------------------------------------------------------
 SELF-CHECK SUMMARY
 ------------------------------------------------------------------------------------
-  peak RSS (best-effort): 69.0 MB  (cap 2048 MB)
-  SUMMARY: PASS=23 FAIL=0
+  peak RSS (best-effort): 68.0 MB  (cap 2048 MB)
+  SUMMARY: PASS=21 FAIL=0
+
+----- stderr -----
+

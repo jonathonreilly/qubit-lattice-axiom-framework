@@ -145,8 +145,8 @@ def main() -> int:
               f"-> color gl({d_sym}) dim {d_sym*d_sym}, su({d_sym}) dim {d_sym*d_sym-1}")
 
     # Check 1/2: symmetric block dim = d for every d (covariation), and != fixed 3
-    check("support 1: symmetric block dim = d for d=2..6 (Sym^{d-1}(C^2), exponent d-1 VARIES) -> N_c = d, "
-          "co-varies with the lattice dimension (NOT fixed at Sym^2=3)",
+    check("support 1: symmetric block dim = d for d=2..6 (Sym^{d-1}(C^2), exponent d-1 VARIES) -> candidate "
+          "color-carrier dim = d, co-varies with the lattice dimension (NOT fixed at Sym^2=3)",
           all_cov and [r[3] for r in rows] == [2, 3, 4, 5, 6],
           f"symmetric block dims = {[r[3] for r in rows]} for d={[r[0] for r in rows]} (== d)")
 
@@ -160,8 +160,9 @@ def main() -> int:
         ok = (d_sym == d and gl_dim == d * d)
         su_ok = su_ok and ok
         detail3.append(f"d={d}: gl({d_sym}) dim {gl_dim} (=d^2={d*d}), su({d_sym}) dim {su_dim}")
-    check("support 2: commutant of residual S_{d-1} on the symmetric isotype = gl(d) (dim d^2) -> color su(d) "
-          "(dim d^2-1); d=3->su(3), d=4->su(4), d=5->su(5) (Schur-Weyl: End(Sym^{d-1} C^2)=gl(d))",
+    check("support 2: commutant of residual S_{d-1} on the symmetric isotype = gl(d) (dim d^2) -> candidate "
+          "color-carrier su(d) as the traceless part (dim d^2-1); d=3->su(3), d=4->su(4), d=5->su(5) "
+          "(this is End(Sym^{d-1} C^2)=gl(d) by Schur-Weyl; physical-color identification is not proven here)",
           su_ok, "; ".join(detail3))
 
     # Check 4: the fixed Sym^2(C^2) reading is the d=3 special case.
@@ -191,7 +192,8 @@ def main() -> int:
     print(
         "VERDICT (counterfactual support, under an assumed Z^d taste-cube family with one selected weak\n"
         "axis): the residual base is Sym^{d-1}(C^2) with dim = d; the S_{d-1} commutant on the symmetric\n"
-        "isotype is gl(d), so the color block is su(d) and N_c = d in this counterfactual family. At the\n"
+        "isotype is gl(d) = End(Sym^{d-1}(C^2)); identifying its traceless part as physical color su(d)\n"
+        "with N_c = d is a candidate carrier reading (not a forced selection) in this counterfactual family. At the\n"
         "Z^3 baseline this gives N_c = 3, CONSISTENT with the retained graph-first SU(3) / CL3_COLOR_AUTO-\n"
         "MORPHISM result on the live d=3 surface. This is SUPPORT (it shows N_c tracks dim along the\n"
         "assumed family, addressing a matched-pair-coincidence worry); it is NOT a from-axioms derivation\n"

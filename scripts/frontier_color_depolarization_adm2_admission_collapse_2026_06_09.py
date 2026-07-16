@@ -1,5 +1,5 @@
 """Block 09 runner -- the three ADM-2 color-depolarization mechanisms collapse
-to TWO irreducible gauge-structure admissions, neither supplied by Lattice + Quantum + Record.
+to TWO irreducible unsupplied gauge-structure conditions (open dependencies), neither supplied by Lattice + Quantum + Record.
 
 Context. The gauge-link / color-einselection campaign reduced the undelivered
 gauge-link generator's R2 input to a single matter question (ADM-2): does the
@@ -18,19 +18,21 @@ onto THREE distinct mechanisms, each gated by a named admission:
 Continuing to relocate ADM-2 onto a fresh admission per block is corollary
 churn. This runner consolidates instead: it records, with exact finite-
 dimensional linear algebra, that the three mechanisms collapse to exactly TWO
-irreducible admissions, and that BOTH coincide with the gauge-structure objects
+irreducible unsupplied conditions, and that BOTH coincide with the gauge-structure objects
 the campaign is trying to induce -- so neither is supplied by Lattice + Quantum + Record.
 
   COLLAPSE STEP 1 (TWIRL == PRIMITIVITY).  The twirl's load-bearing element --
   the UNIFORM averaging weight that lands the marginal exactly on I3/3 rather
-  than at some other diagonal point -- is supplied by Quantum, not by
-  Record: for ANY unitary U the unistochastic matrix S_ij = |U_ij|^2 is doubly
-  stochastic (rows AND columns sum to 1), so its stationary vector is forced
-  uniform (= I3/3) whenever S is primitive. A generic NON-unitary primitive
+  than at some other diagonal point -- comes from the assumed unitary
+  (doubly-stochastic) structure of the twirl map, not from Record: for ANY
+  unitary U the unistochastic matrix S_ij = |U_ij|^2 is doubly stochastic
+  (rows AND columns sum to 1), so its stationary vector is forced uniform
+  (= I3/3) whenever S is primitive. A generic NON-unitary primitive
   column-stochastic kick relaxes to a NON-uniform stationary vector -- so the
-  uniform weight is pinned by unitarity, not chosen. What then survives of the
-  twirl mechanism is exactly the primitivity mechanism's residual: a named
-  record frame B (record_formation_not_unconditionally_forced = retained_no_go)
+  uniform weight is pinned by the assumed unitarity, not chosen. What then
+  survives of the twirl mechanism is exactly the primitivity mechanism's
+  residual: a named record frame B (see the
+  record_formation_not_unconditionally_forced note; status per the ledger)
   PLUS a primitive U. And a primitive S requires a generic non-diagonal SU(3)
   link V != I3 -- a presupposed LOCAL connection (the gauge link the campaign
   induces; circular). Free color-diagonal hopping gives S = I frame-
@@ -46,7 +48,7 @@ the campaign is trying to induce -- so neither is supplied by Lattice + Quantum 
   conserved under the global/covariant action, so neutrality is an initial-
   condition admission, not dynamically forced.
 
-So the THREE mechanisms gate on TWO admissions:
+So the THREE mechanisms gate on TWO unsupplied conditions:
   (A) a presupposed LOCAL SU(3) connection V != I3 (+ a named record frame B)
       -- covers TWIRL and PRIMITIVITY;
   (B) a GLOBAL color-singlet / Gauss-law physical-state condition
@@ -54,7 +56,7 @@ So the THREE mechanisms gate on TWO admissions:
 (A) is the gauge link the campaign seeks to INDUCE (circular to consume); (B)
 is global color confinement (an import; the confinement corpus on main is
 unaudited and imports scale-setting, not axiom-derived). Neither is supplied by
-Lattice + Quantum + Record. This BOUNDS ADM-2 depolarization as admission-gated across all
+Lattice + Quantum + Record. This BOUNDS ADM-2 depolarization as conditional on those two unsupplied gauge-structure objects across all
 mechanisms mapped this campaign and identifies the two gates with the two
 undelivered gauge-structure objects. NO hat is discharged (ADM-1, R1 link
 generator, R2 link-measure delivery, blocking isometry untouched); this is a
@@ -300,8 +302,12 @@ prod[0] = 1.0  # |0, 0bar>, a non-singlet product state
 check("G5.4 non-singlet product state => POLARIZED marginal (P = 2/3 > 0)",
       abs(order_param(marginal_A(prod)) - 2.0 / 3.0) < TOL)
 
-# color charge is CONSERVED under the global action: a charged (non-singlet)
-# two-carrier state stays charged -> dynamics does not drive it to the singlet.
+# color charge is invariant under the global/covariant unitary orbit: a charged
+# (non-singlet) two-carrier state stays charged under g (x) conj(g). This is
+# group-orbit invariance of the total-color Casimir, NOT a claim that no
+# covariant dynamics can depolarize -- a covariant channel (e.g. the partial
+# trace of the ENTANGLEMENT mechanism below) can still move a charged state
+# toward an invariant mixed state.
 def casimir_total(psi):
     """Quadratic Casimir of the TOTAL color on C^3 (x) C^3bar via the generators
     T^a (x) I + I (x) (-T^a*) summed; nonzero iff the joint state carries net color."""
@@ -344,7 +350,7 @@ for _ in range(50):
     psi2 = G @ prod
     if abs(casimir_total(psi2) - C_charged) > 1e-7:
         cons_ok = False
-check("G5.6 total color Casimir conserved under global action (charge not driven to 0)", cons_ok)
+check("G5.6 total color Casimir invariant under the global unitary orbit (group-orbit invariance, not a no-depolarization claim)", cons_ok)
 
 # ======================================================================
 # GROUP 6 -- the lone carrier cannot self-depolarize (Schur): no SU(3)-invariant
@@ -373,7 +379,7 @@ check("G6.1 Schur on C^3 (EXACT): commutant of the SU(3) generators is 1-dimensi
 # D1 no hat discharged: this consolidation delivers depolarization on NEITHER
 #    admission -- both lanes still require an undelivered object. Encode as: the
 #    free/scalar lane does NOT reach I3/3 AND the singlet lane needs a non-product
-#    (entangled, neutrality-constrained) state, i.e. neither Lattice/Qubit/Admissibility/Record default
+#    (entangled, neutrality-constrained) state, i.e. neither Lattice/Quantum/Record default
 #    (free hopping + arbitrary product matter state) depolarizes.
 rho = rho0.copy()
 for _ in range(400):
@@ -409,3 +415,5 @@ check("G7.4 not-a-no-go witness: supplying the named object (a link) DOES depola
       depolarizes(0.6))
 
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
+if FAIL != 0:
+    raise SystemExit(1)

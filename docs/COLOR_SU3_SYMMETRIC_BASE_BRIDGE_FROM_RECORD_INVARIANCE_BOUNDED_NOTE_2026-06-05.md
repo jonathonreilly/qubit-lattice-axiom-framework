@@ -87,8 +87,9 @@ algebraic facts (all verified by the primary runner, 23/23 PASS):
 This note is bounded because the chiral-cube carrier, the
 `(base x fiber)` decomposition, the two-endpoint link model, and the
 choice of which symmetry index sits on the link end are all model
-conventions cited or stipulated here; they are not supplied by the
-Lattice, Qubit, Admissibility, and Record axioms.
+conventions cited or stipulated here; they are not fixed by the
+record-invariance, locality, and link/Gauss-law structure tested here
+(no Admissibility model is constructed).
 
 ## Verdict (IS / IS-NOT)
 
@@ -102,8 +103,8 @@ Lattice, Qubit, Admissibility, and Record axioms.
   bridge. It does not force the antecedent. Whether the base SU(3)
   (color) rather than the fiber SU(2) (weak isospin) is the gauged
   symmetry — equivalently, whether the physical records are the color
-  singlets — depends on the matter realization, which is not delivered
-  by Lattice + Qubit + Admissibility + Record.
+  singlets — depends on the matter realization, which is not fixed by the
+  record-invariance, locality, and link/Gauss-law structure tested here.
 
 The honest reading is **partial-pinning**: the deferred
 "symmetric-base -> physical-color" bridge equals
@@ -115,7 +116,7 @@ and the record-invariance structure supplies only the first summand.
 | Part of the bridge | Supplied by | Status |
 |---|---|---|
 | (a) gauge group = commutant of the record-invariance generators; given "records = color singlets", the gauged group is the base SU(3) | the gauge-from-invariance-commutant structure (the two-endpoint note) | genuine algebraic identity on the explicit carrier (verified) |
-| (b) which local symmetry's singlets are the physical records: quarks in the base-pair symmetric fundamental `3`, with the color index routed onto the links | the matter realization (the `AC_phi_lambda` family) | open; not forced by Lattice + Qubit + Admissibility + Record |
+| (b) which local symmetry's singlets are the physical records: quarks in the base-pair symmetric fundamental `3`, with the color index routed onto the links | the matter realization (which subsystem the matter occupies) | open; not fixed by records + locality + the link/Gauss-law structure |
 
 Residual (b) is exactly the boundary the framework's color notes already
 defer ("the identification of the 3D symmetric base subspace with

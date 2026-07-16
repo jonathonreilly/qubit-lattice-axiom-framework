@@ -61,7 +61,6 @@ This is a structural / algebraic probe only.
 
 from __future__ import annotations
 
-import os
 import sys
 from itertools import permutations, product
 
@@ -456,18 +455,20 @@ def main() -> int:
     check("SU(3): dressed color singlet invariant at endpoint A (Wilson-type)", color_dressed_inv)
 
     emit("")
-    emit("  RESULT: BOTH a fiber-SU(2) Gauss law and a base-SU(3) Gauss law can")
-    emit("  be written on the SAME two-endpoint link carrier, and BOTH show the")
-    emit("  identical 0->1->2 endpoint-invariance profile. So records + locality")
-    emit("  + the link/Gauss-law structure do NOT discriminate base SU(3) from")
-    emit("  fiber SU(2): whichever generator is PLACED on the link end is the")
-    emit("  one whose singlets become the records.")
+    emit("  RESULT: a fiber-SU(2) Gauss law (two-endpoint qubit carrier) and a")
+    emit("  base-SU(3) Gauss law (endpoint C^3 (x) link-end C^3 carrier) each admit")
+    emit("  the same bare-transport-variant / dressed-singlet-invariant structure")
+    emit("  on their own carrier (the SU(3) case is verified at the matched")
+    emit("  endpoint A; the two carriers are not identified). So records + locality")
+    emit("  + the link/Gauss-law structure do NOT by themselves discriminate base")
+    emit("  SU(3) from fiber SU(2): whichever generator is PLACED on the link end")
+    emit("  is the one whose singlets become the records.")
     # The discriminator (which generator sits on the link) is an INPUT.
     both_have_profile = (not invA) and invB and (not color_invA) and color_dressed_inv
     check(
         "CRUX: base-SU(3)-vs-fiber-SU(2) gauging is NOT forced by records/locality/links",
         both_have_profile,
-        "both symmetries admit the same Gauss-law profile on the same carrier",
+        "each symmetry admits the tested variant/invariant structure on its own link carrier",
     )
 
     # SHARPENING: there IS a genuine asymmetry, and it makes the residual MORE
@@ -497,9 +498,9 @@ def main() -> int:
     emit("  => the matter-realization residual is therefore not merely a 'pick a")
     emit("     symmetry' coin flip; for COLOR it specifically requires assigning")
     emit("     quarks to the base-pair symmetric block AND routing that color")
-    emit("     index onto the links -- a structured matter+connection choice the")
-    emit("     {Lattice,Qubit,Admissibility,Record} axioms do not supply (cf. #2679: a bare")
-    emit("     qubit link gives su(2), not su(3)).")
+    emit("     index onto the links -- a structured matter+connection choice that")
+    emit("     records + locality + the link/Gauss-law structure do not supply")
+    emit("     (cf. #2679: a bare qubit link gives su(2), not su(3)).")
 
     # Make the admission explicit: the choice = which subsystem the quarks
     # occupy (the 3D symmetric base in the fundamental 3) = matter realization.
@@ -507,15 +508,15 @@ def main() -> int:
     emit("  The remaining selector is the ASSIGNMENT 'quarks occupy the 3D")
     emit("  symmetric base block as the fundamental 3 (color), and the gauge")
     emit("  connection carries that color index on the links'. That assignment")
-    emit("  is the matter realization (the AC_phi_lambda family: which subsystem")
-    emit("  the matter occupies). It is NOT delivered by Lattice+Quantum+Record.")
-    # Cross-check against the framework's own axiom scope (Record does not
-    # supply observable identification; Quantum does not supply gauge group).
-    check(
-        "matter-realization residual is outside {Lattice,Qubit,Admissibility,Record} scope (per axiom memo)",
-        True,
-        "Quantum: 'no gauge group'; Record: 'no arbitrary observable identification'",
-    )
+    emit("  is the matter-realization residual (which subsystem the matter")
+    emit("  occupies). It is NOT delivered by records + locality + the links.")
+    # Cross-check against the framework's own axiom scope (narration, not a
+    # scored check): the axiom memo states the Qubit axiom supplies no gauge
+    # group and the Record axiom supplies no arbitrary observable identification.
+    emit("")
+    emit("  (narration, not scored) per the axiom memo: Qubit supplies no gauge")
+    emit("  group and Record supplies no arbitrary observable identification, so")
+    emit("  the matter-realization residual is not supplied by records+locality.")
 
     # ========================================================================
     section("PART 4: residual ledger -- the bridge = [#2667 half] + [named residual]")
@@ -531,7 +532,7 @@ def main() -> int:
     emit("      WHICH local symmetry's singlets are the physical records, i.e.")
     emit("      the assignment of quarks to the 3D-symmetric-base fundamental 3")
     emit("      with the color index living on the links. = the MATTER")
-    emit("      REALIZATION (AC_phi_lambda family). [Part 3 CRUX: not forced.]")
+    emit("      REALIZATION residual. [Part 3 CRUX: not forced.]")
     emit("")
     emit("  Reconciliation with the flagged boundary: the framework's notes")
     emit("  (CL3_COLOR_AUTOMORPHISM, CL3_SU3_SYMMETRIC_BASE..., baryon/meson")
@@ -541,11 +542,11 @@ def main() -> int:
     # consistency self-checks of the ledger claims
     check("(a) verified: commutant identity holds for the color singlets", meson_in_commutant and baryon_in_commutant)
     check("(b) named: residual = matter realization (which symmetry's singlets are records)", both_have_profile)
-    check(
-        "boundary reconciled: deferred bridge == residual (b), not (a)",
-        True,
-        "notes defer 'symmetric-base = physical color', which is (b)",
-    )
+    # boundary reconciliation (narration, not a scored check): the framework's
+    # color notes defer 'symmetric-base = physical color', which is residual (b).
+    emit("")
+    emit("  (narration, not scored) the framework's color notes defer")
+    emit("  'symmetric-base = physical color', i.e. residual (b), not (a).")
 
     # ========================================================================
     section("VERDICT")
@@ -554,7 +555,7 @@ def main() -> int:
     emit("HALF of the symmetric-base -> physical-color bridge (a genuine")
     emit("algebraic identity on the explicit C^8 carrier), but NOT the full")
     emit("bridge: the residual -- WHICH local symmetry is gauged / quarks in the")
-    emit("fundamental-3 / the matter realization (AC_phi_lambda) -- is open,")
+    emit("fundamental-3 / the matter-realization residual -- is open,")
     emit("not forced. base-SU(3)-vs-fiber-SU(2) gauging is NOT discriminated by")
     emit("records/locality/links. This is PARTIAL-PINNING, not a derivation of")
     emit("color. The framework's 'the bridge is the load-bearing boundary' flag")
@@ -570,16 +571,12 @@ def main() -> int:
         globals()["FAIL"] += 1
     emit(f"  SUMMARY: PASS={PASS} FAIL={FAIL}")
 
-    # write the full (uncapped) log to the runner cache
-    try:
-        outdir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "logs", "runner-cache")
-        os.makedirs(outdir, exist_ok=True)
-        logpath = os.path.join(outdir, "frontier_color_su3_bridge_from_record_2026_06_05.txt")
-        with open(logpath, "w") as fh:
-            fh.write("\n".join(_LINES) + "\n")
-        print(f"[log] full report written to {logpath}")
-    except Exception as exc:  # pragma: no cover
-        print(f"[log] could not write cache log: {exc}")
+    # The canonical SHA-pinned runner cache (logs/runner-cache/<stem>.txt) is
+    # produced by scripts/precompute_audit_runners.py through the runner_cache
+    # wrapper, which captures this stdout under the `===== runner cache v1 =====`
+    # envelope. Do not hand-write the cache path here: a raw self-write clobbers
+    # the v1 header (source hash, exit code, stdout/stderr sections) and the
+    # cache parser then classifies the artifact as corrupt.
 
     return 0 if FAIL == 0 else 1
 

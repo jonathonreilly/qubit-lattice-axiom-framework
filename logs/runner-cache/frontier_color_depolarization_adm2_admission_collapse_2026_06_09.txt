@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_color_depolarization_adm2_admission_collapse_2026_06_09.py
-runner_sha256: 5d19d888cf5d4ef3d757ac32ef26672151f2b808ec19e923f083de47b7928a5f
+runner_sha256: ceac4cbb5831fe25dda495259fd06c2ec9013a678362b35b3c4c6168a8bfa6dd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 PASS  G1.1 unitary U => S_ij=|U_ij|^2 is doubly stochastic (rows & cols sum 1)
@@ -24,7 +24,7 @@ PASS  G5.2 Schur: generic GLOBAL-invariant joint state has marginal I3/3
 PASS  G5.3 the Schur premise really is GLOBAL-action invariance g (x) conj(g)
 PASS  G5.4 non-singlet product state => POLARIZED marginal (P = 2/3 > 0)
 PASS  G5.5 total-color Casimir = 0 on the singlet, > 0 on the charged state
-PASS  G5.6 total color Casimir conserved under global action (charge not driven to 0)
+PASS  G5.6 total color Casimir invariant under the global unitary orbit (group-orbit invariance, not a no-depolarization claim)
 PASS  G6.1 Schur on C^3 (EXACT): commutant of the SU(3) generators is 1-dimensional (= C.I3)
 PASS  G7.1 no hat discharged: free-hop + product-state default stays POLARIZED on both lanes
 PASS  G7.2 admissions distinct: global action alone leaves a non-neutral marginal polarized

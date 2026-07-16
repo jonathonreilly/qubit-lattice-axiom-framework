@@ -1,0 +1,10 @@
+PASS banach_derivative_and_covariance: DR_direct=(0.02727272727272726, -0.008374655647382922), DR_expectation=(0.02727272727272726, -0.008374655647382922), D2_direct=(0.016997245179063362, -0.017250772184656486), -Cov=(0.016997245179063362, -0.017250772184656486)
+PASS split_projection_identities: E(Lf)=(0.31000000000000005, -0.09), E(centered)=(-2.1026951223961298e-17, 2.4850033264681535e-18)
+PASS centered_kernel_not_nonlinear: E(h)=0.0, E(h^2)=1.0, D2R[h,h]=-1.0
+PASS unlocalized_cauchy_boundary_m12: K=0.090084010199, epsilon=0.029915989801, radius=0.029477235615, Q_C=276.962233734, exp(-Lambda/2)Q_C=276.823787231
+PASS unlocalized_cauchy_boundary_m16: K=0.106977939166, epsilon=0.013022060834, radius=0.012938002753, Q_C=631.015557481, exp(-Lambda/2)Q_C=630.700128566
+PASS unlocalized_cauchy_boundary_m20: K=0.098883241708, epsilon=0.026116758292, radius=0.025781539778, Q_C=329.858151831, exp(-Lambda/2)Q_C=329.693263980
+PASS finite_jet_plaquette_character_tail: jet_rank=9, kernel_index=9, coarse=(d2,s4), fine=(d4,s8), composed_ratio=0.997004495503
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=9 FAIL=0

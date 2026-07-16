@@ -1,12 +1,10 @@
 # DM Leptogenesis PMNS Sole-Axiom Boundary (Finite-Sample Rescope)
 
 **Claim ID:** `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16`
-**Original date:** 2026-04-16
-**Repaired:** 2026-07-16
+**Date:** 2026-04-16 (revised 2026-07-16)
+**Type:** bounded_theorem
 **Status:** bounded support note — exact finite supplied-sample algebra plus a
 conditional supplied-map diagnostic
-**Repair disposition:** support-only demotion from the former sole-axiom
-boundary claim
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py`
 
 ## Question
@@ -168,6 +166,16 @@ checks that `Phi` is unchanged by:
 - arbitrary left/right diagonal rephasing; and
 - repeating the identical supplied sample.
 
+The first two invariances hold for every permutation matrix `P` and diagonal
+unitaries `L,R`, not only for the representative controls in the runner:
+
+```text
+(P Y P^dagger)(P Y P^dagger)^dagger = P H P^dagger,
+(L Y R)(L Y R)^dagger               = L H L^dagger.
+```
+
+Both transformations preserve the eigenvalues and trace of `H`.
+
 This guards the displayed separation against a raw basis-label or phase
 artifact. It still gives no PMNS column selector, no transport functional, and
 no physical `eta` readout.
@@ -204,29 +212,6 @@ The runner also inspects its own abstract syntax tree and verifies:
 | NumPy Hermitian eigensolver | numerical evaluation of `Phi` | computation tool | yes only for the conditional lemma | checked with permutation/rephasing controls |
 | Transport constants, flavor selector, eta target/readout | former downstream interpretation | unsupported imports | no longer present | removed completely |
 
-## No-go and boundary memory consulted
-
-The clean bridge was tested against the current premise registry and the
-relevant PMNS boundary stack:
-
-- [`PMNS_CURRENT_BANK_VALUE_SELECTION_NOGO_NOTE.md`](PMNS_CURRENT_BANK_VALUE_SELECTION_NOGO_NOTE.md)
-  records that the checked current bank supplies no positive value-selection
-  law;
-- [`PMNS_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md`](PMNS_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md)
-  is explicit that its source/transfer pack is supplied rather than derived
-  from `Cl(3)` on `Z^3`;
-- [`PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md`](PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md)
-  leaves the physical carrier/readout and canonical right-frame law open;
-- [`DM_LEPTOGENESIS_PMNS_TRANSPORT_SELECTOR_FIREWALL_NOTE_2026-06-17.md`](DM_LEPTOGENESIS_PMNS_TRANSPORT_SELECTOR_FIREWALL_NOTE_2026-06-17.md)
-  prevents a target crossing from being cited as a physical selector;
-- the apparent fixed-seed/source-manifold and reduction-exhaustion bridges are
-  currently unaudited and import their seed surfaces, carriers, or
-  observational targets.
-
-This is not an exhaustive no-go against every future construction. It is the
-reason the present retained substrate does not support the former clean-path
-claim.
-
 ## What remains open
 
 A future sole/current-axiom boundary claim would still need all of:
@@ -243,17 +228,11 @@ A future sole/current-axiom boundary claim would still need all of:
 Until those bridges exist, this stable claim row should be read only at the
 finite supplied-sample and conditional supplied-map scope above.
 
-## Direct-consumer scope
-
-The current audit graph records zero descendants for this claim, and a source
-search finds no note or runner importing this stable note/runner. No downstream
-consumer is changed by this repair.
-
 ## Verification
 
 ```bash
-PYTHONPATH=scripts python3 scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py
-PYTHONPATH=scripts python3 scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py --intentional-failure-probe
+python3 scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py
+python3 scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py --intentional-failure-probe
 ```
 
 The first command must exit `0`. The intentional failure probe must exit

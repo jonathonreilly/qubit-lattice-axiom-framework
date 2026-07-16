@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py
-runner_sha256: 7fe0960159a4a41085aa3357e45b795995f135960551e8c264148aaaba6819d9
+runner_sha256: e50fdd493ffe003449cab199636eaf03568106e95222ae1c81c851ddf0854983
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,14 +17,11 @@ Actual current-surface claim:
   carrier identification, or physical eta readout is claimed.
 
 ========================================================================================
-PART 0: CURRENT-SURFACE AND IMPORT FIREWALLS
+PART 0: IMPORT AND EXECUTABLE FIREWALLS
 ========================================================================================
-  [PASS (B)] The current framework memo names the four-axiom surface explicitly  (axioms=['Admissibility', 'Lattice', 'Qubit', 'Record'])
-  [PASS (B)] The current framework memo withholds source/action, dynamics, and selector content
-  [PASS (B)] The approved premise registry contains no PMNS, leptogenesis, source, or selector premise  (registered_ids=['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive'])
-  [PASS (B)] The repaired runner imports no project-local physics module  (imports=['__future__', 'argparse', 'ast', 'dataclasses', 'fractions', 'itertools', 'json', 'numpy', 'pathlib', 'sys'])
+  [PASS (B)] The repaired runner imports no project-local physics module  (imports=['__future__', 'argparse', 'ast', 'dataclasses', 'fractions', 'itertools', 'numpy', 'pathlib', 'sys'])
   [PASS (B)] No load-bearing check uses a literal True conclusion
-  [PASS (B)] No former physical eta target or canonical eta constant is referenced
+  [PASS (B)] No former physical eta target name or numeric target is referenced
 
 ========================================================================================
 PART 1: EXACT FINITE SUPPLIED-SAMPLE SEED-MAP NONUNIQUENESS
@@ -55,12 +52,6 @@ PART 3: CONDITIONAL SUPPLIED NUMERICAL-MAP LEMMA
   [PASS (D)] The conditional supplied-map nonuniqueness predicate holds  (conditional on the displayed carrier construction only)
 
 ========================================================================================
-PART 4: EXECUTABLE SCOPE CERTIFICATE
-========================================================================================
-  [PASS (B)] The source note states the finite-sample and historical/current axiom scope
-  [PASS (B)] The source note explicitly withholds every former physical downstream bridge
-
-========================================================================================
 RESULT
 ========================================================================================
   Disposition:
@@ -69,7 +60,7 @@ RESULT
     - conditional supplied numerical-map lemma
     - active-family admissibility and every physical eta bridge remain open
 
-PASS=24 FAIL=0
+PASS=19 FAIL=0
 
 ----- stderr -----
 

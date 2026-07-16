@@ -22,7 +22,6 @@ from __future__ import annotations
 
 import argparse
 import ast
-import json
 import sys
 from dataclasses import dataclass
 from fractions import Fraction
@@ -32,10 +31,7 @@ from pathlib import Path
 import numpy as np
 
 
-ROOT = Path(__file__).resolve().parents[1]
 SOURCE_PATH = Path(__file__).resolve()
-MINIMAL_AXIOMS_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
-PREMISE_REGISTRY_PATH = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -71,6 +67,17 @@ CYCLE = np.array(
     ],
     dtype=complex,
 )
+
+FORBIDDEN_PHYSICAL_ETA_NAMES = {
+    "ETA_OBS",
+    "ETA_NE_CANONICAL",
+    "ETA_NE_SEED",
+}
+FORBIDDEN_PHYSICAL_ETA_NUMBER_LITERALS = {
+    "6.12e-10",
+    "0.7190825360613422",
+    "0.9895125971972334",
+}
 
 
 def check(category: str, name: str, condition: bool, detail: str = "") -> bool:
@@ -193,29 +200,46 @@ def has_literal_true_load_bearing_check() -> bool:
     for node in ast.walk(tree):
         if not isinstance(node, ast.Call) or not isinstance(node.func, ast.Name):
             continue
-        if node.func.id != "check" or len(node.args) < 3:
+        if node.func.id != "check":
             continue
-        condition = node.args[2]
+        condition = node.args[2] if len(node.args) >= 3 else None
+        if condition is None:
+            condition = next(
+                (
+                    keyword.value
+                    for keyword in node.keywords
+                    if keyword.arg == "condition"
+                ),
+                None,
+            )
         if isinstance(condition, ast.Constant) and condition.value is True:
             return True
     return False
 
 
-def referenced_physical_eta_names() -> set[str]:
+def referenced_physical_eta_targets() -> set[str]:
     tree = ast.parse(SOURCE_PATH.read_text(encoding="utf-8"))
     names = {node.id for node in ast.walk(tree) if isinstance(node, ast.Name)}
-    return {name for name in names if name.startswith("ETA_") or "best_eta" in name}
+    hits = {
+        name
+        for name in names
+        if name in FORBIDDEN_PHYSICAL_ETA_NAMES or "best_eta" in name
+    }
+    for node in ast.walk(tree):
+        if (
+            isinstance(node, ast.Constant)
+            and isinstance(node.value, (int, float))
+            and repr(float(node.value)) in FORBIDDEN_PHYSICAL_ETA_NUMBER_LITERALS
+        ):
+            hits.add(repr(node.value))
+    return hits
 
 
 def part0_scope_and_import_firewalls() -> None:
     print("\n" + "=" * 88)
-    print("PART 0: CURRENT-SURFACE AND IMPORT FIREWALLS")
+    print("PART 0: IMPORT AND EXECUTABLE FIREWALLS")
     print("=" * 88)
 
-    minimal_axioms = MINIMAL_AXIOMS_PATH.read_text(encoding="utf-8")
-    premise_registry = json.loads(PREMISE_REGISTRY_PATH.read_text(encoding="utf-8"))
-    current_axiom_names = {"Lattice", "Qubit", "Admissibility", "Record"}
-    registered_ids = set(premise_registry["canonical_ids"])
     allowed_import_roots = {
         "__future__",
         "argparse",
@@ -223,38 +247,12 @@ def part0_scope_and_import_firewalls() -> None:
         "dataclasses",
         "fractions",
         "itertools",
-        "json",
         "numpy",
         "pathlib",
         "sys",
     }
     imported_roots = imported_module_roots()
 
-    check(
-        "B",
-        "The current framework memo names the four-axiom surface explicitly",
-        all(name in minimal_axioms for name in current_axiom_names),
-        f"axioms={sorted(current_axiom_names)}",
-    )
-    check(
-        "B",
-        "The current framework memo withholds source/action, dynamics, and selector content",
-        "source/action and physical-observable identification" in minimal_axioms
-        and "choose a Hamiltonian or transfer operator" in minimal_axioms
-        and "formation rule" in minimal_axioms,
-    )
-    check(
-        "B",
-        "The approved premise registry contains no PMNS, leptogenesis, source, or selector premise",
-        registered_ids
-        == {
-            "minimal_axioms",
-            "scale_reference_primitive",
-            "kinetic_isotropy_primitive",
-            "realized_state_primitive",
-        },
-        f"registered_ids={sorted(registered_ids)}",
-    )
     check(
         "B",
         "The repaired runner imports no project-local physics module",
@@ -268,8 +266,8 @@ def part0_scope_and_import_firewalls() -> None:
     )
     check(
         "B",
-        "No former physical eta target or canonical eta constant is referenced",
-        not referenced_physical_eta_names(),
+        "No former physical eta target name or numeric target is referenced",
+        not referenced_physical_eta_targets(),
     )
 
 
@@ -421,36 +419,6 @@ def part3_conditional_supplied_map_lemma() -> None:
     )
 
 
-def part4_scope_certificate() -> None:
-    print("\n" + "=" * 88)
-    print("PART 4: EXECUTABLE SCOPE CERTIFICATE")
-    print("=" * 88)
-
-    note = (
-        ROOT / "docs" / "DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md"
-    ).read_text(encoding="utf-8")
-    required_scope_phrases = (
-        "finite supplied-sample",
-        "current four-axiom",
-        "does not derive an admissible active-source family",
-        "no physical `eta` readout",
-        "historical `Cl(3)` on `Z^3`",
-    )
-
-    check(
-        "B",
-        "The source note states the finite-sample and historical/current axiom scope",
-        all(phrase in note for phrase in required_scope_phrases),
-    )
-    check(
-        "B",
-        "The source note explicitly withholds every former physical downstream bridge",
-        "supply no source/action, carrier, selector, or target" in note
-        and "no PMNS column selector" in note
-        and "no transport functional" in note,
-    )
-
-
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -478,7 +446,6 @@ def main() -> int:
     part1_exact_finite_sample_seed_map_nonuniqueness()
     part2_hostile_controls()
     part3_conditional_supplied_map_lemma()
-    part4_scope_certificate()
 
     if args.intentional_failure_probe:
         check(

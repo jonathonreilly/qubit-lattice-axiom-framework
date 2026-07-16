@@ -18,8 +18,9 @@ Proposed title:
 
 `[physics-loop] Wilson plane SU(N) positivity repair block 02`
 
-Status: implementation, cache, independent checks, and review-loop pass.
-Disposable pipeline validation, final rebase metadata, push, and PR remain.
+Status: implementation, cache, independent checks, review-loop, rebase, and
+disposable pipeline compatibility pass. Final checkpoint commit, push, and PR
+remain.
 
 The PR body must quote the archived conditional blocker, identify the active
 review-queue route, report exact runner and independent-check results, state

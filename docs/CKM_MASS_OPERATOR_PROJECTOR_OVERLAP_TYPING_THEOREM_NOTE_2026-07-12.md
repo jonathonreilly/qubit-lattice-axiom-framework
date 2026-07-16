@@ -262,7 +262,7 @@ Still open:
 
 1. derivation of physical `M_u` and `M_d` from framework source/action data;
 2. a dynamical theorem forcing (1.2) or (4.5);
-3. a derived generation-to-six-state carrier lift, if that route is retained;
+3. a derived generation-to-six-state carrier lift, if that route is pursued;
 4. absolute quark masses, RG transport, and empirical comparison.
 
 The current claim is one bounded row with an exact support result and an exact

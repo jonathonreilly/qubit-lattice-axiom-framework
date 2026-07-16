@@ -57,10 +57,10 @@ modify the parent note's audit ledger row.
   down-type mass-ratio comparisons, conditional on the imported
   alpha_s(v), 5/6 bridge, PDG mass inputs, and QCD transport factor."
 
-The parent note's `Status` line and `Scope qualifiers` section already
-record the same boundary in source form. This narrowing companion
-isolates the **within-scope algebraic content** that the audit
-verdict accepts as a numerical match.
+The rewritten parent records the same boundary in source form (parent
+Sections 2, 4, 7, and 8). This narrowing companion isolates the
+**within-scope algebraic content** that the 2026-05-05 audit
+verdict accepted as a numerical match.
 
 ## Narrow within-scope content (what the audited row does close)
 
@@ -73,8 +73,11 @@ following identities. This table describes the source version reviewed in
 | `C_F - T_F = 5/6` from SU(3) Casimir arithmetic | exact rational | audited PASS (sympy) |
 | `|V_cb|_atlas = alpha_s(v) / sqrt(6)` | supplied CKM-atlas comparator identification, conditional on `alpha_s(v)` | audited PASS (historical) |
 | 1-loop mass-anomalous-dimension exponent `gamma_m / (2 beta_0) = 12/25` for `n_f = 4` | exact rational from SU(3) Casimir bookkeeping | audited PASS |
-| `R_thresh = R_common * transport_1loop` | comparator bookkeeping; the 1-loop-truncated factor is not an exact all-orders QCD transport | audited PASS (10^-10) |
-| `(R_pred / R_common) / (R_pred / R_thresh) = transport_1loop` | algebraic consequence of the previous identity | audited PASS (10^-10) |
+| `R_thresh = R_common * transport_observed` | tautological mass-quotation bookkeeping (`transport_observed = m_s(2 GeV)/m_s(m_b)`, an observed quotient, not a computed QCD transport) | audited PASS (10^-10) |
+| `(R_pred / R_common) / (R_pred / R_thresh) = transport_observed` | exact algebraic consequence of the previous identity | audited PASS (10^-10) |
+
+The separately computed one-loop-truncated factor (`[alpha_s(2 GeV)/alpha_s(m_b)]^(12/25)`)
+is a different number from `transport_observed`; only the `12/25` exponent is exact.
 
 The historical audit treated these identities and the reproduced numerical
 match as comparator-relative support. The 2026-07-12 parent repair supersedes
@@ -83,18 +86,18 @@ the relative deviation stays on the common-scale value.
 
 ## What the narrow scope does **not** close
 
-The audit verdict and the parent's own scope qualifiers section
-already flag these explicitly. This companion note records them in
-one place for re-audit traceability:
+The 2026-05-05 audit verdict and the rewritten parent's boundary sections
+(parent Sections 4, 7, and 8) already flag these explicitly. This companion
+note records them in one place for re-audit traceability:
 
-- the theorem-grade derivation of the `5/6` bridge itself (the parent
-  cites [`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`](CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md)
-  as bounded support);
-- a retained theorem forcing the threshold-local comparator as the
+- the theorem-grade derivation of the `5/6` bridge itself (recorded as open
+  bounded support in [`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`](CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md));
+- a theorem forcing the threshold-local comparator as the
   unique framework-natural mass-scale convention;
 - elimination of the historical runner's hard-coded full-loop PDG transport
   factor `1.14747` in favour of a covariant theory/observation comparison;
-- the down-type mass-ratio lane's bounded -> retained promotion;
+- the down-type mass-ratio lane's promotion from bounded support to a closed
+  derivation;
 - the canonical parent note
   [`QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`](QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md)
   records the same scale-selection boundary as a separate bounded
@@ -107,10 +110,10 @@ and proves that shared multiplicative transport cannot rescue the crossed
 sub-percent comparison. It does not claim the full bridge. The remaining
 positive target is:
 
-1. a retained theorem deriving the `5/6` bridge `|V_cb| = (m_s/m_b)^{5/6}`
+1. a theorem deriving the `5/6` bridge `|V_cb| = (m_s/m_b)^{5/6}`
    from framework primitives at `g = 1` (non-perturbative
    exponentiation mechanism);
-2. a retained typed map from that mass operator to the CKM amplitude through
+2. a typed map from that mass operator to the CKM amplitude through
    the normalized determinant;
 3. a common or explicitly RG-covariant mass surface. A directly mixed surface
    must carry its scale prescription inside the mass/operator map.
@@ -144,7 +147,8 @@ companion and its dependencies.
 This companion note does **not**:
 
 - modify the parent note's audit-ledger row;
-- promote the parent's `audit_status` from `audited_numerical_match`;
+- promote or restore the parent's prior `audited_numerical_match` verdict (the
+  rewritten parent row is currently `unaudited`);
 - re-derive the `5/6` bridge or the scale-selection theorem;
 - reproduce or pin the current parent runner's output;
 - extend the audited scope beyond what the parent already declares.

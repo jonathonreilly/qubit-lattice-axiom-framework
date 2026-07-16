@@ -29,8 +29,9 @@ t := Tr(P_c^u P_b^d) = (m_s/m_b)^(5/3).                 (1.1)
 This note attacks the remaining source/action target from three independent
 directions. It establishes:
 
-1. even on the retained residual-`Z_2` Hermitian normal form, fixed simple
-   up/down spectra leave `t` free over the whole interval `[0,1]`;
+1. even on the residual-`Z_2` Hermitian normal form (reproduced here in the
+   runner's narrow commutant scope), fixed simple up/down spectra leave `t`
+   free over the whole interval `[0,1]`;
 2. Jacobi/NNI sparsity likewise constructs mass operators but does not select
    their relative eigenbasis;
 3. there is an exact target-equivalent positive composite for which determinant
@@ -57,8 +58,12 @@ The algebraic results use:
 The labels `u,c,t` and `d,s,b` are supplied ordered-spectrum labels inherited
 from the parent. They are a naming/readout convention, not a derived result.
 
-The residual-`Z_2` test additionally uses the exact normal form in
-[`Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md`](Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md).
+The residual-`Z_2` test reuses the exact five-parameter `Z_2` commutant normal
+form set out in
+[`Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md`](Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md)
+(that note's own broader `S_3`-locus claim is not consumed here, and the
+commutant structure used below is reconstructed and checked directly by the
+paired runner).
 
 Forbidden proof inputs are observed masses, CKM targets, fitted texture
 coefficients, nearest-rational selection, an imported gauge-link
@@ -130,9 +135,10 @@ For `H_u^(0)`, `P_c^u=P_b^d=|X_3><X_3|` and the overlap is one. For
 `H_u^(1)`, the charm line is `span(e_+)`, orthogonal to the bottom line, and
 the overlap is zero.
 
-Full unbroken `S_3` does not repair this freedom because the retained
-[`S3_MASS_MATRIX_NO_GO_NOTE.md`](S3_MASS_MATRIX_NO_GO_NOTE.md)
-forces a repeated eigenvalue. Shared `C_3` circulants are simultaneously
+Full unbroken `S_3` does not repair this freedom: an `S_3`-invariant Hermitian
+operator on `C^3` reduces to a scalar plus a multiple of the all-ones matrix and
+therefore carries a repeated eigenvalue, the same abstract degeneracy recorded in
+[`S3_MASS_MATRIX_NO_GO_NOTE.md`](S3_MASS_MATRIX_NO_GO_NOTE.md). Shared `C_3` circulants are simultaneously
 Fourier diagonal and give only zero/one projector overlaps. Distinct residual
 axes require an additional sector selector and yield either discrete
 mass-independent overlaps or renewed continuous freedom.
@@ -355,7 +361,7 @@ consumed as dependencies here.
 
 Established here:
 
-1. fixed spectra plus retained `Z_2` normal form do not force alignment;
+1. fixed spectra plus the residual-`Z_2` normal form do not force alignment;
 2. spectra plus Jacobi/NNI sparsity do not force alignment;
 3. natural separable spectral actions do not force a mass-dependent interior
    overlap;

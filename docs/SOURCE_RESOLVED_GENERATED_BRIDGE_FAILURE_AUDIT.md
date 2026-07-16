@@ -1,67 +1,55 @@
 # Source-Resolved Generated Bridge Failure Audit
 
 **Date:** 2026-04-05  
-**Status:** support - structural or confirmatory support note
+**Type:** no_go
 
 ## Scope
 
-This is a synthesis note over the retained generated-family bridge cluster:
+This is a synthesis over four finite generated-family bridge probes:
 
-- [`docs/SOURCE_RESOLVED_GENERATED_DISCRIMINATOR_PROBE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_GENERATED_DISCRIMINATOR_PROBE_NOTE.md)
-- [`docs/SOURCE_RESOLVED_GENERATED_WAVEFIELD_TRANSFER_V2_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_GENERATED_WAVEFIELD_TRANSFER_V2_NOTE.md)
-- [`docs/SOURCE_RESOLVED_GEOMETRY_RULE_REPAIR_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_GEOMETRY_RULE_REPAIR_NOTE.md)
-- [`docs/SOURCE_RESOLVED_RADICAL_GEOMETRY_PROBE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_RADICAL_GEOMETRY_PROBE_NOTE.md)
+- [Generated discriminator probe](SOURCE_RESOLVED_GENERATED_DISCRIMINATOR_PROBE_NOTE.md)
+- [Generated wavefield-transfer probe](SOURCE_RESOLVED_GENERATED_WAVEFIELD_TRANSFER_V2_NOTE.md)
+- [Additive geometry-rule repair probe](SOURCE_RESOLVED_GEOMETRY_RULE_REPAIR_NOTE.md)
+- [Radical geometry probe](SOURCE_RESOLVED_RADICAL_GEOMETRY_PROBE_NOTE.md)
 
 ## Adversarial question
 
-Did we robustly close the current compact generated-family bridge, or does one
-metric / implementation choice still leave a narrow reopening?
+Do any of the four named finite variants recover the tracked weak-field
+sign, source-strength response, and support diagnostics on their declared
+cards?
 
 ## Synthesis
 
-The answer is: **the current compact generated-family bridge is robustly closed
-on the tested family**.
+On their declared cards, none of the four named variants recovers the full
+tracked diagnostic package.
 
 Why:
 
 - the discriminator says the bridge is geometry-limited, not field-rule-limited
 - the `z`-spread transfer variant does not widen support or rescue the wavefield
 - the additive sector-fan geometry repair worsens the sign count, loses
-  aggregate support, and does not recover the weak-field mass law
+  aggregate support, and moves the source-strength exponent farther from `1`
 - the radical downstream-reach fan moves support around, but it also fails to
   make the wavefield update matter on the generated family
 
-Taken together, these are not one-off misses.
-They are four separate attempts at the same bottleneck from different angles.
+Taken together, these are four finite negative results for four stated
+variants. They do not exhaust nearby geometry rules, generated families,
+field architectures, or aggregation choices.
 
-## Narrow reopening check
+## Untested nearby routes
 
-The only narrow reopening left is not a metric tweak on the same bridge.
+The following remain outside this synthesis:
 
-It would have to be one of:
+- other sector resolutions, floors, rankings, or source-adaptive fans
+- weighted rather than binary added edges
+- larger seed, size, radius, or coordinate-range sweeps
+- materially different generated families
+- different field kernels or propagation architectures
+- different observables or aggregation prescriptions
 
-- a genuinely different generated-family geometry rule
-- a materially different generated family
-- or a different field architecture altogether
+## Bounded conclusion
 
-What does **not** look like a narrow reopening:
-
-- re-labelling the same bridge with a different support summary
-- re-fitting the same signs with a different average
-- one more small sector / fan / z-spread tweak on the same compact family
-
-## Final verdict
-
-Treat the current compact generated-family bridge as **closed**.
-
-The safe reading is:
-
-- support rescue is real
-- the wavefield bridge is real
-- but the current generated family remains geometry-limited
-- no tested geometry-rule variant has yet opened a path to full weak-field
-  closure on this family
-
-So the next generated-family move, if we keep that lane, is not another small
-bridge tweak.
-It is a genuinely new geometry rule or a different family entirely.
+The four named variants are negative on their exact finite cards. This note
+does not rule out another sector fan, another geometry rule, another generated
+family, or another field architecture. Independent audit owns any later
+ratification of this finite synthesis.

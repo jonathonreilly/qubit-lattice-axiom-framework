@@ -4,8 +4,8 @@
 Question:
   The discriminator says the current generated-family bridge is geometry-limited.
   Can a single geometry-construction change widen detector support enough for the
-  weak-field sign and mass-scaling read to improve, without changing the field
-  rule itself?
+  weak-field sign and source-strength response to improve, without changing the
+  field rule itself?
 
 Scope:
   - compact generated 3D DAG family
@@ -14,7 +14,7 @@ Scope:
   - exact zero-source reduction check
   - one field rule only: static Green kernel
   - observables: TOWARD count, detector effective support N_eff,
-    detector support fraction, and centroid-shift exponent
+    detector support fraction, and source-strength response exponent
 
 This is intentionally geometry-only. It does not compare static vs wavefield
 rules. The point is to test whether widening the generated support structure
@@ -341,8 +341,9 @@ def _green_field(
     for i, (x, y, z) in enumerate(positions):
         val = 0.0
         for w, (mx, my, mz) in zip(weights, source_pos):
-            r = math.sqrt((x - mx) ** 2 + (y - my) ** 2 + (z - mz) ** 2) + GREEN_EPS
-            val += w * strength * math.exp(-GREEN_MU * r) / r
+            geometric_r = math.sqrt((x - mx) ** 2 + (y - my) ** 2 + (z - mz) ** 2)
+            rho = geometric_r + GREEN_EPS
+            val += w * strength * math.exp(-GREEN_MU * rho) / rho
         field[i] = val / len(source_pos)
     return field
 
@@ -433,10 +434,13 @@ def main() -> None:
     print(f"family seeds=0..{N_SEEDS - 1}, layers={N_LAYERS}, nodes/layer={NODES_PER_LAYER}, connect_radius={CONNECT_RADIUS}")
     print(f"baseline bridge: k-nearest floor augmentation (k={K_NEAREST}, min_edges={MIN_EDGES})")
     print(f"repair bridge: preserved kNN-floor adjacency + adaptive sector stencil/floor={SECTOR_FLOOR}")
-    print(f"static Green kernel: exp(-mu r)/(r+eps), mu={GREEN_MU:.2f}, eps={GREEN_EPS:.2f}")
+    print(
+        "static Green kernel: exp[-mu(r+eps)]/(r+eps), "
+        f"mu={GREEN_MU:.2f}, eps={GREEN_EPS:.2f}"
+    )
     print(f"source strengths={SOURCE_STRENGTHS}")
     print(f"field target max={FIELD_TARGET_MAX}")
-    print("observables: zero-source reduction, centroid sign counts, F~M exponent, detector N_eff")
+    print("observables: zero-source reduction, centroid sign counts, alpha exponent, detector N_eff")
     print("diagnostic: does a geometry repair widen support enough to improve the weak-field read?")
     print()
 
@@ -467,7 +471,7 @@ def main() -> None:
                 f"seed={seed} {family_label:>8s} "
                 f"zero={summary['zero_shift']:.3e} "
                 f"TOWARD={summary['toward_count']}/{summary['total']} "
-                f"F~M={alpha_str} N_eff={summary['eff_support']:.2f}"
+                f"alpha={alpha_str} N_eff={summary['eff_support']:.2f}"
             )
 
     print()
@@ -497,7 +501,7 @@ def main() -> None:
         print(
             f"{family_label:>8s}  zero={summary['zero_shift']:.3e}  "
             f"TOWARD={summary['toward_count']}/{summary['total']}  "
-            f"F~M={alpha_str}  N_eff={summary['eff_support']:.2f}  "
+            f"alpha={alpha_str}  N_eff={summary['eff_support']:.2f}  "
             f"support_frac={summary['support_frac']:.3f}"
         )
 
@@ -521,12 +525,12 @@ def main() -> None:
     print("SAFE READ")
     print("  - The baseline kNN-floor bridge is the declared control.")
     print("  - The repaired adjacency is an additive superset of that input bridge.")
-    print("  - The repair is only interesting if it widens support and improves")
-    print("    the weak-field sign or mass-law read without a field-rule change.")
-    print("  - If support broadens but sign and F~M do not improve, the family is")
-    print("    still geometry-limited, just with a wider bottleneck.")
-    print("  - If the repair worsens both support and sign, that is a clean no-go")
-    print("    for this geometry-rule idea on the compact generated family.")
+    print("  - Improvement on this card means wider aggregate support, more TOWARD")
+    print("    cases, and a source-strength exponent alpha closer to the linear target 1.")
+    print("  - The additive repair lowers aggregate support and TOWARD count, while")
+    print("    moving alpha farther from 1.")
+    print("  - This is a finite negative for this exact additive rule and parameter card;")
+    print("    other sectorizations, fan constructions, families, and field rules remain untested.")
 
 
 if __name__ == "__main__":

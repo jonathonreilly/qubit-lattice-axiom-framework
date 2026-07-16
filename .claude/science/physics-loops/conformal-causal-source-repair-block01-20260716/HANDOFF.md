@@ -1,5 +1,7 @@
 # Handoff
 
+Ready PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5422
+
 ## Claim delta
 
 - The record-history row is a pure negative boundary for a supplied abstract

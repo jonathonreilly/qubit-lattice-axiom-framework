@@ -1,4 +1,5 @@
 # PR Backlog
 
-No deferred PR is needed. The review-clean block is ready for its single GitHub
-PR; the URL is recorded after creation.
+No deferred PR is needed. The single review-clean ready PR is:
+
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5422

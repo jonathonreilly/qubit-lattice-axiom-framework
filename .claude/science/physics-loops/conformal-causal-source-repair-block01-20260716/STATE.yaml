@@ -37,7 +37,8 @@ trace_gate_class: direct_blocker_closure
 reachability_to_target: partially_closes
 review_disposition: pass_with_bounded_claims
 verification_status: "direct runners clean; owned caches fresh; disposable-worktree pipeline and strict lint clean"
-pr_status: pending
+pr_status: open_ready
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5422
 lock_note: "Canonical lock path is unavailable for this account; shared /private/tmp supervisor lock acquired for this block."
-next_exact_action: "Rebase the review-clean block onto current origin/main, commit, push, and open one ready PR."
+next_exact_action: "Independent review/audit of the no-go and bounded-kernel rows; do not consume the open conformal row as a causal source."
 stop_condition: "One bounded repair block is review-clean, pushed, and represented by one ready PR."

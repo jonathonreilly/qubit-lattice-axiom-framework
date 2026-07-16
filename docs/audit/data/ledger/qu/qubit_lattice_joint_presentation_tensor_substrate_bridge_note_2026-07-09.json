@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1273,6 +1273,70 @@
         "total_pass": 40
       },
       "verdict_rationale": "Issue: J1 and J2 are explicit load-bearing admissions outside the accepted axiom/approved-primitive registry. Why this blocks: the exact symbolic runner checks tensor generation, commutants, dimensions, and projection span after using canonical commuting embeddings and a chosen minimal carrier; it does not derive either selection from the live axioms. Repair target: supply retained-grade bridge theorems deriving the physical joint presentation and m = 1, or register them as approved primitives. Claim boundary until fixed: the stated finite-dimensional conclusions remain valid as a bounded theorem conditional on J1 and J2."
+    },
+    {
+      "archived_at": "2026-07-16T01:38:27.019242+00:00",
+      "audit_date": "2026-07-16T01:38:12.569683+00:00",
+      "audit_invocation_history": [
+        "e4bec8ef8dec47e49a3d30e3e18b33c0"
+      ],
+      "audit_invocation_id": "e4bec8ef8dec47e49a3d30e3e18b33c0",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 9.992,
+        "runner_hash": "94c5120910cda948ac1ba8001c060e52e144130a9d7d72befd64d37a2c5646a3",
+        "transitive_descendants": 719
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-qubit_lattice_joint_pres-099",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic conclusions follow on the declared J1/J2 surface, but J1 and J2 are neither derived from the accepted axioms nor registered as approved premises. The chain from the accepted framework surface therefore remains open at both supplied inputs.",
+      "claim_scope": "The finite-dimensional generated-algebra, multiplicity, minimal m = 1 carrier, Gleason dimension-threshold, and projection-span conclusions conditional on J1 and J2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-16T01:38:12.569683+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Pairwise commutation makes \u03a6 a unital *-homomorphism from M\u2082(\u2102)^{\u2297n}, simplicity makes it injective, finite-factor representation theory gives H \u2245 \u2102^{2\u207f} \u2297 \u2102\u1d50, and J2 then selects m = 1.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained derivations or approved-premise registration for both J1 and J2, correct runner check A4 to the current Qualification wording, and rerun for 40/0 before requesting an unbounded clean verdict.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 9,
+        "C": 8,
+        "D": 6,
+        "total_pass": 39
+      },
+      "verdict_rationale": "Issue: the finite-dimensional proof is mathematically valid only after importing J1 and J2, which the note correctly identifies as unapproved, underived premises. Why this blocks and safe boundary: the result is supportable as the stated bounded implication, not as closure from the registered framework surface. The completed runner reports 39/1; comparison of its source with the supplied authority identifies the failure as the stale A4 wording needle, while its tensor, multiplicity, and projection checks perform genuine exact calculations; repair requires closing J1/J2 and correcting A4. For N1\u2013N8 discipline, the note establishes only two independent named conditions and does not claim route exhaustion, supply matching residual witnesses, disposition partial-closure and cross-cycle candidates, or resolve an independent steelman, so its negative language is bounded conditional rationale rather than a no-go result."
     }
   ],
   "prose_corrections": [],

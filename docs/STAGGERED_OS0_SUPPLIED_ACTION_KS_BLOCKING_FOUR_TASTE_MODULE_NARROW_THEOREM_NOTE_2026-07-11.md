@@ -18,14 +18,14 @@ This is an exact theorem about a defined finite periodic difference operator.
 The signs, shifts, block map, and rephasing are definitions, not conclusions
 about a physical action.
 
-Fix positive integers `M_0,...,M_3`, a nonzero scalar `a`, and the finite
-periodic set
+Fix positive integers `M_0,...,M_3`, scalars `m in C` and `a in C` with
+`a != 0`, and the finite periodic set
 
 ```text
 Lambda_M = product_(mu=0)^3 Z/(2 M_mu)Z.
 ```
 
-For `n in Lambda_M`, define
+On the function space `V_M={f:Lambda_M -> C}`, define
 
 ```text
 eta_mu(n) = (-1)^(sum_(nu<mu) n_nu),
@@ -58,10 +58,11 @@ generation, continuum-species, or reconstruction theorem.
 
 ## Exact blocking and rephasing
 
-Write a site uniquely as `n=2y+b`. Because the periods are even,
-`eta_mu(2y+b)=eta_mu(b)`. On a coarse Fourier character with
-`q_mu^(M_mu)=1`, choose any `t_mu` satisfying `t_mu^2=q_mu`. The fiber matrix
-of (1) is
+Write a site uniquely as `n=2y+b`, with
+`y in product_mu Z/(M_mu)Z` and `b in {0,1}^4`. Because the periods are
+even, `eta_mu(2y+b)=eta_mu(b)`. On a coarse Fourier character with
+`q_mu^(M_mu)=1`, choose any `t_mu in C` satisfying `t_mu^2=q_mu`. The fiber
+matrix of (1) is
 
 ```text
 B(t) = m I_16 + sum_mu B_mu(t),

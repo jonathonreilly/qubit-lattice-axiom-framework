@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py
-runner_sha256: f6c51669752b2794004df98f86de41dbb81a1fec25cdee688b2a1b6311b80131
+runner_sha256: 372a9e95bac3f08002e1df5efedaf3335d2b6af2d8d6f74442f67b7404cc6bc8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -15,7 +15,7 @@ Part 1: corner cardinality and role-free arithmetic
   [PASS (A)] the comparison corner set has exactly 16 elements
   [PASS (A)] every enumerated corner zeros the exact sum of sine squares
   [PASS (A)] 16=4*4 is an integer identity
-  [PASS (A)] the arithmetic hypotheses contain no factor-role assignment
+  [PASS (A)] integer arithmetic does not uniquely select the displayed factor pair  (unordered factor pairs=((1, 16), (2, 8), (4, 4)))
 
 Part 2: independent Cl(3,0) complexification dimensions
 -------------------------------------------------------
@@ -38,7 +38,7 @@ Part 4: structural non-identification firewall
 ----------------------------------------------
   [PASS (A)] no required physical bridge is among the formal hypotheses  (formal hypotheses=['cited_cl3_split', 'defined_four_bit_matrices', 'finite_complex_linear_algebra', 'finite_set_counting', 'integer_arithmetic'])
   [PASS (A)] the formal module conclusion is licensed but physical taste/carrier conclusions are not
-  [PASS (A)] the d=6 identity 64=8*8 confirms that arithmetic alone supplies no stable roles
+  [PASS (A)] the d=6 identity 64=8*8 is checked without assigning either factor a role
 
 ========================================================================================
 TOTAL: PASS=18, FAIL=0

@@ -43,8 +43,8 @@ Fix the comparison dimension `d=4`.
   identify their carriers.  In particular, (R4) does not turn either copy
   index into a taste, species, generation, field, or physical carrier.
 
-The strongest retained conclusion is the conjunction of (R1)-(R5).  The
-legacy words in the stable identity do not strengthen it.
+The conclusion stated here is the conjunction of (R1)-(R5).  The legacy
+words in the stable identity do not strengthen it.
 
 ## 2. One-hop authorities
 
@@ -59,7 +59,7 @@ legacy words in the stable identity do not strengthen it.
 No authority is cited for an identification among these three objects,
 because no such identification is claimed.
 
-## 3. Admitted mathematical inputs
+## 3. Mathematical inputs
 
 - finite-set counting and integer arithmetic;
 - exact finite-dimensional complex linear algebra;
@@ -149,8 +149,8 @@ prose or audit state.  It checks:
 5. irreducibility by exact rank 16 of the `gamma`-word span;
 6. a structural hypothesis firewall rejecting an illicit physical-carrier
    or taste inference; and
-7. the `d=6` arithmetic counterexample to assigning stable factor roles by
-   dimension counting.
+7. the `d=6` factorization as a second exact identity to which the runner
+   assigns no physical or representation-theoretic factor roles.
 
 Expected normal output is `FAIL=0` and a zero exit status.
 

@@ -166,8 +166,16 @@ def main() -> int:
         all(sp.simplify(sum(sp.sin(value) ** 2 for value in corner)) == 0 for corner in corners),
     )
     check("16=4*4 is an integer identity", 16 == 4 * 4)
-    role_assignments = frozenset()
-    check("the arithmetic hypotheses contain no factor-role assignment", not role_assignments)
+    factor_pairs = tuple(
+        (left, 16 // left)
+        for left in range(1, 17)
+        if 16 % left == 0 and left <= 16 // left
+    )
+    check(
+        "integer arithmetic does not uniquely select the displayed factor pair",
+        factor_pairs == ((1, 16), (2, 8), (4, 4)),
+        detail=f"unordered factor pairs={factor_pairs}",
+    )
 
     section("Part 2: independent Cl(3,0) complexification dimensions")
     sigma_1 = sp.Matrix([[0, 1], [1, 0]])
@@ -229,7 +237,7 @@ def main() -> int:
     left = 2 ** (d_other // 2)
     right = 2 ** (d_other // 2)
     check(
-        "the d=6 identity 64=8*8 confirms that arithmetic alone supplies no stable roles",
+        "the d=6 identity 64=8*8 is checked without assigning either factor a role",
         2**d_other == left * right and (left, right) == (8, 8),
     )
 

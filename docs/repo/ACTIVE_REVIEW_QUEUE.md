@@ -20,7 +20,7 @@ truth surface.
 
 ## Current State
 
-As of `2026-07-10`, the queue includes the four runner/cache audit-readiness
+As of `2026-07-16`, the queue includes the four runner/cache audit-readiness
 items below together with the existing science-facing open lanes. The runner
 failures are recorded honestly; no claim or content gate is weakened to clear
 them.

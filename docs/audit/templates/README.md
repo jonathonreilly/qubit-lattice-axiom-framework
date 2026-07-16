@@ -11,29 +11,31 @@ To enable the audit-lane GitHub Actions workflow on this repo, a user with
 push permission and `workflow` token scope (a normal repo collaborator using
 their personal access token works) must run:
 
+The template is kept byte-identical to the intended live workflow.
+
+**Step 1 — inspect.** If a live workflow already exists, this stops on any
+mismatch; reconcile before copying (if the live file is newer, update the
+template instead of overwriting the live file):
+
 ```bash
 mkdir -p .github/workflows
-# The template is kept byte-identical to the intended live workflow. Before
-# overwriting an EXISTING .github/workflows/audit.yml, diff first — if the
-# live file is newer than the template, update the template instead:
-diff docs/audit/templates/audit_workflow.yml .github/workflows/audit.yml || true
+if [ -f .github/workflows/audit.yml ]; then
+  diff -u docs/audit/templates/audit_workflow.yml .github/workflows/audit.yml \
+    || { echo "live workflow differs from template — reconcile first"; exit 1; }
+fi
+```
+
+**Step 2 — install** (only after step 1 passes or you have reconciled):
+
+```bash
 cp docs/audit/templates/audit_workflow.yml .github/workflows/audit.yml
 git add .github/workflows/audit.yml
 git commit -m "audit: install audit-lane CI workflow"
 git push
 ```
 
-Once installed, the workflow runs on:
-- every pull request that touches audit-relevant docs, audit scripts,
-  project scripts, or the workflow file,
-- a nightly cron at 06:00 UTC,
-- manual `workflow_dispatch`.
-
-On scheduled and manual runs the workflow auto-commits regenerated audit-data
-and publication-effective-status views back to the checked-out branch as
-`audit-bot`. PR runs are advisory: they report stale runner caches and
-pipeline-generated diffs as warnings/job-summary notes, but do not red-fail
-open PRs while `main` is moving. Review-loop regenerates and verifies before
-landing.
-
-See `docs/audit/CI_INTEGRATION.md` for the full integration spec.
+Once installed, the workflow runs on the nightly `06:00 UTC` cron (with
+auto-commit of regenerated audit data back to `main`) and on manual
+`workflow_dispatch`. It has no pull-request trigger: review-loop is the
+pre-merge gate, and the separate `pr-smoke` workflow carries PR-time
+compile/test signal.

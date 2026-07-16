@@ -13,9 +13,10 @@ changes that the agent credential (no `workflow` OAuth scope) cannot push:
    Python + audit-tooling unit tests when `docs/audit/scripts/**` changes
    (trigger includes the shell tooling, e.g. `run_pipeline.sh`). Change
    detectors are captured fail-closed outside conditionals (a failing
-   git diff aborts the step rather than selecting the skip branch); the
-   multi-command run steps set bash + pipefail; unittest output is never
-   piped. Read-only permissions; 15-minute cap; no auto-commit.
+   git diff aborts the step rather than selecting the skip branch); the two
+   detector/test steps set bash + pipefail (the install step is a plain
+   pipeline-free run block); unittest output is never piped. Read-only
+   permissions; 15-minute cap; no auto-commit.
 
 The patch does NOT include the requirements pin — that is PR #5403.
 

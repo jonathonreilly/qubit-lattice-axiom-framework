@@ -81,6 +81,34 @@ atoms, followed by full covariance, schedule, deletion, and predecessor
 regression. Cycle 165 does not claim that placement is already complete, and
 it makes no impossibility or minimum-axiom claim.
 
+## Framework relevance and failure conditions
+
+The compiler is not the objective by itself, and the present axioms are not
+being protected. This campaign tests whether one candidate local framework can
+turn physical records into a nontrivial conditional quantum update without a
+host calculation supplying intermediate bits, selectors, products, payloads,
+or outputs.
+
+That is a real contribution to the operational-quantum interface: the
+conditional stabilizer-update map has now been decomposed into local,
+covariant, deletion-sensitive mechanisms under one candidate law. The physical
+row roles also test whether distinct algebraic carriers can be individuated
+and reused by their record context, but they do not yet derive physical matter
+or statistics.
+
+The result does not connect the operational pipeline to a derived clock,
+continuum dynamics, thermodynamic resource, gravity response, boundary
+selection, occurrence rule, or probability law. Those cross-interface joins
+remain the standard by which the framework—and therefore its axioms—must be
+judged.
+
+The candidate structure should be rejected or revised if joint placement
+requires incompatible local laws, host-supplied intermediates, orientation-
+specific exceptions, or unbounded new role types for each downstream
+operation. Even a successful joint placement remains only a substrate theorem
+until its records and transformations are identified with independently
+derived physical lane quantities.
+
 Nothing here addresses occurrence, outcome choice, weights, local time,
 permanence, or fundamental-law selection. No axiom, primitive, registry,
 policy, or audit edit follows.

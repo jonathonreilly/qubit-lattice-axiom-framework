@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/native_gauge_transfer_certified_gap_rung_two_bounded_2026_06_12.py
-runner_sha256: 7c33c1d1688c7dfe2246fc09677ea65bc8221bc361e7f9f6095f71a9d1143bad
+runner_sha256: 2d246c7b781948a7f30b86fb5d3f40452e48a812f908eca3f18c04ee3985305f
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 15.59
+elapsed_sec: 11.39
 status: ok
 ----- stdout -----
 Native gauge-transfer certified gap rung-two bounded runner

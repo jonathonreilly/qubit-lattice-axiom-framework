@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/native_gauge_transfer_certified_gap_rung_four_bounded_2026_06_12.py
-runner_sha256: 276351e60ef6d6c681818bebcbc7bcf7ba89526dd4a2bc29ca9aaa5f1042dc89
+runner_sha256: c0bb7fa134120b794923e6e8741a04c8d8eda1c3cf1475a84496143714c10441
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 492.65
+elapsed_sec: 356.45
 status: ok
 ----- stdout -----
 Native gauge-transfer certified gap rung-four bounded runner
@@ -54,7 +54,7 @@ PASS: old trace bracket plus sharp tail stops before beta=22
 PASS: path-count tail majorant is no larger than rung-three scalar tail on witnesses
       exact path-count delta2 is <= rung-three scalar delta2 on witness rows
 PASS: finite outer-box true-operator tail witness is dominated by rung-four tail radius
-      finite outer boxes S in {22, 26}, beta in {20, 22}; min tail/true_op_tail=421.342956, min tail/weighted_fro=707909.995899; beta=22 S=26 true_op_tail=6.670602384455e+06, tail_radius=2.810611326691e+09, factor=421.342956
+      finite outer boxes S in {22, 26}, beta in {20, 22}; min tail/true_op_tail=421.342956, min tail/weighted_fro=707909.995899; beta=22 S=26 true_op_tail=6.670602384458e+06, tail_radius=2.810611326691e+09, factor=421.342956
 PASS: exact characteristic-polynomial Sturm brackets still contain every float eigenvalue on the B_4 check block
       beta=117/25 checked 25 Sturm intervals on B_4
 PASS: s=14 block float lambda_1 lies inside the exact deflation intervals on HS rows

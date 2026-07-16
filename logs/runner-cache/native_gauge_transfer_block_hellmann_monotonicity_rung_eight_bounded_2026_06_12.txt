@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12.py
-runner_sha256: 42878d628a5500d9a444cb8221ca14a93f8a3789acae4a4799247a45fe025ed5
+runner_sha256: b7c16ec74dbfc84cac87d394c942fe90e41192860b440c0f2552cc5ef447ddf9
 timeout_sec: 540
 exit_code: 0
-elapsed_sec: 39.47
+elapsed_sec: 29.54
 status: ok
 ----- stdout -----
 Native gauge-transfer block-Hellmann monotonicity rung-eight runner
@@ -33,9 +33,9 @@ PASS: character recurrence differentiates Wilson coefficients
 PASS: top two finite-block eigenvalues are simple on certified integer grid
       shell=16 beta=1..26 min_gap01=9.481e-02, min_gap12=2.150e-02
 PASS: product-rule Hellmann split matches direct derivative matrix
-      max split error=1.707e-15
+      max split error=2.665e-15
 PASS: Hellmann log-ratio derivative matches central finite difference
-      errors=beta=8: 4.007e-10, beta=20: 3.243e-11
+      errors=beta=8: 4.004e-10, beta=20: 3.143e-11
 PASS: beta=2 row is not in the decreasing derivative regime
       logdiff=1.596939e-01
 PASS: J-expectation ordering is witnessed on post-peak grid

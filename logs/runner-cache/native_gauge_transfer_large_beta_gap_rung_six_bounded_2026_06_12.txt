@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/native_gauge_transfer_large_beta_gap_rung_six_bounded_2026_06_12.py
-runner_sha256: 35e8d94955262b978a120647e85497fc10d4ab5fe4c2261d6e5c47a35d9aa25d
+runner_sha256: 87f46685c03b49d924b674cd405d3bf45676a2c12333e0ef6b2e1d47a09062e2
 timeout_sec: 540
 exit_code: 0
-elapsed_sec: 180.16
+elapsed_sec: 124.71
 status: ok
 ----- stdout -----
 Native gauge-transfer large-beta gap rung-six bounded runner
@@ -17,18 +17,18 @@ PASS: dimension function is the exact spectral-edge harmonic function
 PASS: Wilson coefficient saddle constant is numerically the SU(3) value 3
       samples=3.013186, 3.013157, 3.013162, 3.013014, 3.012702, 3.012583, 3.011483
 TRUE LARGE-BETA HALF-SLICE RATIOS
-coeff_table beta= 50 shell=36 states=1369 mode_max=360 elapsed=9.26s
+coeff_table beta= 50 shell=36 states=1369 mode_max=360 elapsed=6.40s
 true beta= 50 s30=0.200348567623 s36=0.200348567762 spread=1.386e-10
-coeff_table beta= 60 shell=42 states=1849 mode_max=360 elapsed=13.28s
+coeff_table beta= 60 shell=42 states=1849 mode_max=360 elapsed=8.53s
 true beta= 60 s36=0.199245299606 s42=0.199245299606 spread=6.896e-13
-coeff_table beta= 80 shell=50 states=2601 mode_max=360 elapsed=18.77s
+coeff_table beta= 80 shell=50 states=2601 mode_max=360 elapsed=11.73s
 true beta= 80 s42=0.197873420918 s50=0.197873420919 spread=4.511e-13
-coeff_table beta=100 shell=60 states=3721 mode_max=360 elapsed=25.20s
+coeff_table beta=100 shell=60 states=3721 mode_max=360 elapsed=16.60s
 true beta=100 s50=0.197054136330 s60=0.197054136330 spread=5.523e-15
-coeff_table beta=140 shell=70 states=5041 mode_max=360 elapsed=33.21s
-true beta=140 s60=0.196121339772 s70=0.196121339772 spread=2.331e-15
-coeff_table beta=200 shell=80 states=6561 mode_max=360 elapsed=43.56s
-true beta=200 s70=0.195424212513 s80=0.195424212513 spread=2.073e-14
+coeff_table beta=140 shell=70 states=5041 mode_max=360 elapsed=22.58s
+true beta=140 s60=0.196121339772 s70=0.196121339772 spread=2.359e-15
+coeff_table beta=200 shell=80 states=6561 mode_max=360 elapsed=29.48s
+true beta=200 s70=0.195424212513 s80=0.195424212513 spread=2.076e-14
 
 true_extrapolation fit_1_over_beta2=0.193805817496 fit_1_over_beta3=0.193805813752 estimate=0.193805815624 error_proxy=3.744e-09
 

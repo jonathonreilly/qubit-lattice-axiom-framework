@@ -356,7 +356,10 @@ def collect_ledger(tracked: list) -> dict:
         claim_ids.append(claim_id)
         status = row.get("effective_status")
         if status is None:
+            # Measured AND rejected: None is outside the controlled set the
+            # audit linter enforces (BUG-25).
             histogram["MISSING"] += 1
+            parse_errors.append(f"{shard}: missing/null effective_status")
         elif isinstance(status, str) and (
             status in ALLOWED_EFFECTIVE_STATUSES or status.startswith("decoration_under_")
         ):
@@ -397,8 +400,14 @@ def _load_ids(rel_path: str, container_keys: tuple, tracked_set: set) -> dict:
     if rel_path not in tracked_set or not _regular_file(rel_path):
         return {"ids": [], "file_sha256": None, "tracked": False}
     path = os.path.join(REPO_ROOT, rel_path)
-    with open(path, "r", encoding="utf-8") as fh:
-        data = json.load(fh)
+    try:
+        with open(path, "r", encoding="utf-8") as fh:
+            data = json.load(fh)
+    except (json.JSONDecodeError, OSError, UnicodeDecodeError) as exc:
+        # Fail closed with a structured diagnostic (registry unreadable is
+        # treated exactly like registry untracked: run_check fails on it).
+        return {"ids": [], "file_sha256": None, "tracked": False,
+                "parse_error": f"{rel_path}: {exc}"}
     entries = data
     if isinstance(data, dict):
         for key in container_keys:
@@ -589,7 +598,8 @@ def run_check(enforce_links: bool) -> int:
         failures.append(f"duplicate claim ids: {ledger['duplicate_claim_ids']}")
     for family in ("premises", "obligations"):
         if not snapshot[family].get("tracked", False):
-            failures.append(f"{family} registry file is not git-tracked")
+            detail = snapshot[family].get("parse_error") or "not git-tracked or not a regular file"
+            failures.append(f"{family} registry unusable: {detail}")
     known_dupes = {"README.md", "SKILL.md"}
     unexpected = [
         name for name in snapshot["docs"]["duplicate_basenames"] if name not in known_dupes

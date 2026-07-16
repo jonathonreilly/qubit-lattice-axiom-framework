@@ -221,9 +221,19 @@ def main() -> int:
     )
     record(
         checks,
+        "source links the narrow Wald-Newton algebra without laundering the physical bridge",
+        "BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`]("
+        in note
+        and "direct authority only for the abstract algebraic equivalence" in note
+        and "named row-local gravitational boundary/action premise" in note
+        and "not a result imported\nfrom the algebraic equivalence" in note,
+        "abstract 4Gc=1 authority and supplied physical identification remain separate",
+    )
+    record(
+        checks,
         "source keeps the Wald/gravitational carrier identification explicit",
-        "carrier-side identification `c_cell = 1/(4 G_lambda)`" in note
-        and "is not\nderived from physical `Cl(3)`" in note,
+        "named row-local gravitational boundary/action premise" in note
+        and "Neither step is derived from\nphysical `Cl(3)`" in note,
         "conditional gravitational bridge",
     )
     record(

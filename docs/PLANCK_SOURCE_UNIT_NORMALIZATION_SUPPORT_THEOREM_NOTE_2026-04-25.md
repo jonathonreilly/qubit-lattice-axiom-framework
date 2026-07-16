@@ -17,7 +17,12 @@ imported from its direct conditional authority:
 - [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
   — conditional source of `c_cell=Tr((I_16/16)P_A)=1/4`. It does not derive
   the gravitational boundary/action identification from the four framework
-  axioms.
+  axioms; its section 5 names that identification as the separate open bridge
+  premise supplied here.
+- [`BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`](BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — direct authority only for the abstract algebraic equivalence
+  `c=1/(4G) <=> 4Gc=1`. It does not identify `c` with `c_cell`, identify `G`
+  physically, or supply the gravitational boundary/action bridge.
 - `AREA_LAW_COEFFICIENT_GAP_NOTE.md` (context recording only, backticked
   to avoid length-3 cycle — this note imports `c_cell = 1/4` from the
   primitive-coframe carrier theorem, not from the coefficient-gap synthesis
@@ -26,13 +31,14 @@ imported from its direct conditional authority:
   `c_cell = Tr((I_16/16) P_A) = 4/16 = 1/4` across the conditional Planck
   packet authority chain.
 
-The carrier-side identification `c_cell = 1/(4 G_lambda)` is the
-Wald-Noether area-law reading on the same conditional Planck packet; it
-is part of the same packet's external authority surface and is not
-derived from physical `Cl(3)` on `Z^3` alone. This note explicitly flags
-itself as not a standalone minimal-stack closure of `a^(-1) = M_Pl`; the
-source-unit normalization clarifies the bare/Newton mass-unit accounting
-once the carrier and its Wald reading are accepted.
+The physical identification of the abstract coefficient with `c_cell` is the
+named row-local gravitational boundary/action premise, not a result imported
+from the algebraic equivalence. Once that premise is supplied, the cited
+narrow algebra gives `c_cell = 1/(4 G_lambda)`. Neither step is derived from
+physical `Cl(3)` on `Z^3` alone. This note explicitly flags itself as not a
+standalone minimal-stack closure of `a^(-1) = M_Pl`; the source-unit
+normalization clarifies the bare/Newton mass-unit accounting once the carrier
+and its Wald reading are accepted.
 
 ## Verdict
 

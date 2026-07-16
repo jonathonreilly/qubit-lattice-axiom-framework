@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_2026_05_17.py
-runner_sha256: 3705418d985d0b6097cd94a80b42d7460ef9a6447a292cb8ffdb8f6897d9932b
+runner_sha256: a48e63cb422f8558058bad63bd689e0c3aca74a556a8579a07fe202bb9e065a5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.30
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 === Substep-4 AC_lambda simultaneous-diagonalization bridge ===
@@ -84,13 +84,15 @@ status: ok
   PASS  diag(k1,k2,k3) commutes with T_2
   PASS  diag(k1,k2,k3) commutes with T_3
   PASS  commuting algebra has complex dimension 3
-  PASS  complex diagonal positive control is non-Hermitian
+  PASS  commuting complex diagonal control is non-Hermitian
   PASS  complex diagonal non-Hermitian control commutes with the full triple
   PASS  [diag(1,2,5), T_1] = 0
   PASS  [diag(1,2,5), T_2] = 0
   PASS  [diag(1,2,5), T_3] = 0
 
 [hostile complex controls]
+  PASS  directed E_12 control lies outside the previous Hermitian ansatz :: K_12 is nonzero while K_21 = 0
+  PASS  the full commutator mechanism rejects that non-Hermitian direction :: coverage outside the old ansatz, not a theorem counterexample
   PASS  dense hostile K is complex, non-Hermitian, and has all six off-diagonal entries nonzero
   PASS  every dense hostile off-diagonal entry is detected by the triple
   PASS  dense hostile K fails all three commutator equations :: nonzero counts = {1: 4, 2: 4, 3: 4}
@@ -101,7 +103,7 @@ status: ok
   PASS  coincident signatures have zero separation weight
 
 === Summary ===
-PASS=74 FAIL=0
+PASS=76 FAIL=0
 
 ----- stderr -----
 

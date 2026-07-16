@@ -625,7 +625,7 @@
         },
         {
           "claim_id": "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16",
@@ -1585,6 +1585,10 @@
         },
         {
           "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "lattice_nn_light_cone_note",
           "effective_status": "unaudited"
         },
         {
@@ -2940,9 +2944,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 671
+      "uncertified_count": 672
     }
   ],
-  "repo_head": "b73617d59ce29fb0aca77d81b760402b04383d71",
+  "repo_head": "54a54507172374ce3b81100e0078318831cbcf86",
   "schema": "lane_certification_v2"
 }

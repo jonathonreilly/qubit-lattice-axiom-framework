@@ -1,40 +1,42 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py
-runner_sha256: fab667abf5e58d8055f81490c7219aceaf598f94bbb8304f357f28bcc3ca7f5f
+runner_sha256: b2950f3d19758403e0ae9d8bc40e8f5e3a6c5c4f45d1ad065a95241035e2e824
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 ==============================================================================
-Gauge OS Step 1: trivial-holonomy temporal gauge + plus-local f
+Gauge OS Step 1: U_0=I sector + symmetrized reflection-Hermiticity
 ==============================================================================
 Carrier: (Z/4) x (Z/2)^3, 32 sites, SU(3), beta=1.75, seed=20260602
-Scope: pure Wilson action; P(x)=I sector; no full RP or residual Polyakov claim.
+Scope: pure Wilson action; P(x)=I/U_0=I sector; raw-link f is a worked witness only; downstream OS admissibility remains open.
 
 === Part A: finite carrier, reflection, and Wilson decomposition ===
 
 === Part B: periodic complete temporal gauge criterion ===
 
-=== Part C: plus-local f versus two-half reflection-Hermitian F ===
+=== Part C: raw-link f witness versus symmetrized F ===
 
 === Part D: hostile partition and reflection-orientation controls ===
 
-=== Part E: source-scope and dependency firewall ===
+=== Part E: source contract and sharded-ledger consumer firewall ===
 
 ==============================================================================
 [PASS] A.carrier.plaquette_count  (count=192, formula=6*4*2^3=192)
 [PASS] A.partition.exact_counts  (|P+|=72, |P-|=72, |plane|=24, |wrap|=24)
 [PASS] A.partition.disjoint_exhaustive  (union=192, total=192, disjoint=True)
 [PASS] A.partition.theta_class_bijection  (P+<->P-; reflection-plane and periodic-wrap families fixed setwise)
+[PASS] A.partition.even_periodic_formula_sweep  (L_t=4, L_s=2, counts={'plus': 72, 'minus': 72, 'mixed_plane': 24, 'mixed_wrap': 24}, total_ok=True, theta_map=True; L_t=4, L_s=3, counts={'plus': 243, 'minus': 243, 'mixed_plane': 81, 'mixed_wrap': 81}, total_ok=True, theta_map=True; L_t=6, L_s=2, counts={'plus': 120, 'minus': 120, 'mixed_plane': 24, 'mixed_wrap': 24}, total_ok=True, theta_map=True; L_t=6, L_s=3, counts={'plus': 405, 'minus': 405, 'mixed_plane': 81, 'mixed_wrap': 81}, total_ok=True, theta_map=True; L_t=8, L_s=2, counts={'plus': 168, 'minus': 168, 'mixed_plane': 24, 'mixed_wrap': 24}, total_ok=True, theta_map=True; L_t=8, L_s=3, counts={'plus': 567, 'minus': 567, 'mixed_plane': 81, 'mixed_wrap': 81}, total_ok=True, theta_map=True; L_t=10, L_s=2, counts={'plus': 216, 'minus': 216, 'mixed_plane': 24, 'mixed_wrap': 24}, total_ok=True, theta_map=True; L_t=10, L_s=3, counts={'plus': 729, 'minus': 729, 'mixed_plane': 81, 'mixed_wrap': 81}, total_ok=True, theta_map=True)
 [PASS] A.theta.complete_temporal_gauge_sector_stable  (max ||(Theta U)_0-I||=0.000e+00)
 [PASS] A.action.disjoint_sum  (diff=0.000e+00)
 [PASS] A.action.reflected_half  (|S--S+(Theta U)|=0.000e+00)
 [PASS] A.action.decomposition  (diff=0.000e+00)
 [PASS] A.action.half_reality  (S+=-5.65924981, S-=-4.06268767, Smixed=-1.00748818)
-[PASS] A.theta.involution_generic  (max_link_diff=0.000e+00)
-[PASS] A.action.full_theta_invariance_generic  (|S(Theta U)-S(U)|=8.882e-16)
-[PASS] A.action.theta_fixed_consistency  (max_link_diff=0.000e+00)
+[PASS] A.theta.involution_u0_identity_sector  (max_link_diff=0.000e+00)
+[PASS] A.action.full_theta_invariance_u0_identity_sector  (|S(Theta U)-S(U)|=0.000e+00)
+[PASS] A.action.theta_fixed_half_reality  (S+=-0.55719665)
+[PASS] A.action.theta_fixed_half_invariance  (max_link_diff=0.000e+00)
 [PASS] B.trivial_holonomy.constructed  (max ||P-I||=1.548e-15)
 [PASS] B.periodic_recursion.closes  (max endpoint mismatch=1.548e-15)
 [PASS] B.complete_temporal_gauge.constructed  (max ||U0^g-I||=1.548e-15)
@@ -46,16 +48,19 @@ Scope: pure Wilson action; P(x)=I sector; no full RP or residual Polyakov claim.
 [PASS] C.f.negative_mutation_independence  (|f(U_mut)-f(U)|=0.000e+00)
 [PASS] C.os_form.independent_reflected_plaquette  (|Theta(f)f-conj(f_minus(U))f|=0.000e+00)
 [PASS] C.F.reflection_hermiticity  (|F(Theta U)-conj(F(U))|=0.000e+00)
+[PASS] C.hostile.unsymmetrized_f_not_reflection_hermitian  (|f(Theta U)-conj(f(U))|=6.119e-02)
 [PASS] C.hostile.F_product_is_not_OS_f_product  (|conj(F)F-Theta(f)f|=7.659e-03)
 [PASS] C.hostile.F_is_not_plus_local  (structural_plus_local=False, |F(U_mut)-F(U)|=2.907e-01)
 [PASS] C.hostile.negative_half_leak_rejected  (structural_plus_local=False, |f_bad(U_mut)-f_bad(U)|=7.266e-02)
 [PASS] D.hostile.omitted_wrap_partition_fails  (missing=24, |S_full-S_wrong|=2.564e+00)
 [PASS] D.hostile.wrong_temporal_orientation_fails  (correct_diff=1.332e-15, wrong_diff=4.167e-01)
+[PASS] E.note.export_contract_exact  (exact match)
 [PASS] E.note.required_scope_markers  (all present)
-[PASS] E.note.stale_bridge_language_absent  (none present)
+[PASS] E.note.unsupported_exports_absent  (none present)
+[PASS] E.direct_consumers.sharded_ledger_noninheritance  (axiom_first_reflection_positivity_theorem_note_2026-04-29, plaquette_bootstrap_framework_integration_note_2026-05-03, plaquette_marked_slice_bulk_average_translation_bridge_narrow_theorem_note_2026-06-12, rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06)
 [PASS] E.load_bearing_dependency.present_in_worktree  (GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md)
 
-SCORECARD: PASS=31 FAIL=0
+SCORECARD: PASS=36 FAIL=0
 All narrowed finite-sector and hostile-control checks PASSED.
 Independent audit alone decides effective status.
 

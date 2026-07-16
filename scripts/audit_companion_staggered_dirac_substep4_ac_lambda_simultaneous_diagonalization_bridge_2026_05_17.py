@@ -419,7 +419,7 @@ def main() -> int:
         4 - 5 * sp.I,
     )
     check(
-        "complex diagonal positive control is non-Hermitian",
+        "commuting complex diagonal control is non-Hermitian",
         not is_zero_matrix(K_complex_diagonal - dagger(K_complex_diagonal)),
     )
     check(
@@ -439,6 +439,27 @@ def main() -> int:
 
     # ----- Hostile deterministic complex controls -----
     print("\n[hostile complex controls]")
+    K_directed = sp.zeros(3, 3)
+    K_directed[0, 1] = 1 + 2 * sp.I
+    directed_commutators = {
+        mu: K_directed * T[mu] - T[mu] * K_directed
+        for mu in MUS
+    }
+    check(
+        "directed E_12 control lies outside the previous Hermitian ansatz",
+        K_directed[0, 1] != 0
+        and K_directed[1, 0] == 0
+        and not is_zero_matrix(K_directed - dagger(K_directed)),
+        detail="K_12 is nonzero while K_21 = 0",
+    )
+    check(
+        "the full commutator mechanism rejects that non-Hermitian direction",
+        not is_zero_matrix(directed_commutators[1])
+        and not is_zero_matrix(directed_commutators[2])
+        and is_zero_matrix(directed_commutators[3]),
+        detail="coverage outside the old ansatz, not a theorem counterexample",
+    )
+
     K_dense_hostile = sp.Matrix(
         [
             [1 + 2 * sp.I, 2 - sp.I, -3 + 4 * sp.I],

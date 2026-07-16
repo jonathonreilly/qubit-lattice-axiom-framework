@@ -145,16 +145,16 @@ unitary triple (2a)-(2c) — is carried by the in-flight substep-3 note
 `STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md` and is
 out of scope here.
 
-## 4. Admitted-context inputs
+## 4. Mathematical inputs
 
 - **Standard finite-dim complex linear algebra.** Diagonal operators
   commuting in a common eigenbasis; commutator identity; matrix
-  entries via inner products on a chosen basis. Admitted-context
-  mathematical infrastructure on the framework's accepted surface.
+  entries via inner products on a chosen basis. This is standard
+  mathematical infrastructure, not a supplied physics premise.
 - **Exact arithmetic on `3 × 3` complex matrices.** Verified by the
   companion runner via sympy.
 
-No physics conventions admitted beyond the abstract algebraic framing.
+No physics convention is used beyond the abstract algebraic framing.
 No PDG value consumed. No staggered-Dirac / lattice-action / `g_bare` /
 framework-instance-specific input.
 
@@ -246,10 +246,10 @@ dimension `3`. ∎
   `STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`
   records the joint eigenvalue triples
   `((-1, +1, +1), (+1, -1, +1), (+1, +1, -1))` for the framework's
-  three lattice translations on hw=1 corners on `Z^3` APBC, but is
-  in-flight and not yet retained; this narrow theorem treats the
-  joint-eigenvalue triples (2a)-(2c) as the abstract input, not as a
-  forced consequence of the framework's substrate.
+  three lattice translations on hw=1 corners on `Z^3` APBC. Its
+  audit-pipeline status is not consumed here; this narrow theorem
+  treats the joint-eigenvalue triples (2a)-(2c) as the abstract input,
+  not as a forced consequence of the framework's substrate.
 - Does **not** derive the substep-2 Kawamoto-Smit kinetic operator
   form or its translation-invariance. Those are carried by separate
   in-flight notes (substep-2 packaging).
@@ -270,7 +270,7 @@ dimension `3`. ∎
 - No PDG observed values consumed.
 - No literature numerical comparators consumed.
 - No fitted selectors consumed.
-- No admitted unit conventions load-bearing on the claim.
+- No unit convention is load-bearing on the claim.
 - No same-surface family arguments.
 - No staggered-Dirac realization gate output consumed (the open gate
   is named in plain text only as the parent identity that contextualizes
@@ -314,35 +314,59 @@ verifies via sympy exact symbolic arithmetic:
 2. **(L1) pairwise distinctness.** For each ordered pair
    `(α, β) ∈ {1, 2, 3}^2` with `α ≠ β`, enumerate the `μ`s for which
    `τ_μ^(α) ≠ τ_μ^(β)` and confirm at least one such `μ` exists.
-3. **(L3) single-`T_μ` off-diagonal vanishing.** Construct a generic
-   symbolic Hermitian `K` with 6 free real parameters (3 diagonal +
-   3 complex off-diagonal). For each ordered pair `(α, β)` with
-   `α ≠ β`, pick the lowest-index `μ` with `τ_μ^(α) ≠ τ_μ^(β)`,
-   and verify the identity
-   `⟨e_α | [K, T_μ] | e_β⟩ = (τ_μ^(β) - τ_μ^(α)) ⟨e_α | K | e_β⟩`.
-4. **(L2) simultaneous diagonalization corollary.** Impose
-   `[K, T_μ] = 0` for `μ = 1, 2, 3` and solve for the off-diagonal
-   parameters of `K`. Verify the unique solution forces all six
-   off-diagonal real parameters to zero.
-5. **(L4) diagonal class.** Verify that a generic diagonal matrix
-   `K = diag(k_1, k_2, k_3)` with `k_α ∈ C` commutes with each `T_μ`
-   for `μ = 1, 2, 3`. Verify the commuting algebra has complex
-   dimension `3`.
-6. **Worked numerical instance.** Plug in `k_1 = 1, k_2 = 2, k_3 = 5`
-   and verify `[diag(1, 2, 5), T_μ] = 0` for all `μ ∈ {1, 2, 3}`.
-7. **Counter-example: non-diagonal `K` with one off-diagonal entry.**
-   Construct `K = diag(1, 2, 5) + |e_1⟩⟨e_2|` (i.e., add an
-   off-diagonal entry between basis vectors 1 and 2). Verify
-   `[K, T_1] ≠ 0` because `τ_1^(1) ≠ τ_1^(2)`. This confirms the
-   distinctness condition is load-bearing for the diagonal-class
-   result.
-8. **Coincidence-set boundary at `T_μ = I`.** If all three eigenvalue
-   triples coincide (e.g., `τ_μ^(α) = +1` for all `μ, α`), then any
-   operator commutes with `T_μ = I` trivially, and the diagonal-class
-   conclusion fails. Confirm this counter-case to verify pairwise
-   distinctness is necessary.
+3. **Generic complex operator coverage.** Construct a fully generic
+   `K ∈ M_3(C)` using independent real and imaginary coordinates for
+   all nine entries: 18 algebraically independent real symbols in
+   total. Verify that opposite off-diagonal entries have disjoint
+   coordinate sets, so no Hermiticity, symmetry, normality, reality,
+   or conjugate-pair relation is imposed.
+4. **(L3) full entrywise identity.** For every `μ` and every matrix
+   entry `(α, β)`, verify exactly
+   `[K,T_μ]_{αβ} =
+   (τ_μ^(β) - τ_μ^(α)) K_{αβ}`. For each of the six ordered
+   off-diagonal entries, also verify the reconstruction identity
+   `Σ_μ (τ_μ^(β)-τ_μ^(α))[K,T_μ]_{αβ} = 8 K_{αβ}`.
+5. **(L2) exact generic-complex solve.** Split all three commutator
+   systems into real and imaginary parts and solve them together.
+   Verify that the equations contain all 12 real coordinates of the
+   six complex ordered off-diagonal entries, contain none of the six
+   real coordinates of the three complex diagonal entries, and force
+   every off-diagonal coordinate independently to zero.
+6. **Independent rank/kernel certificate.** Build the complex-linear
+   map
+   `K ↦ ([K,T_1], [K,T_2], [K,T_3])` as an exact `27 × 9` matrix on
+   the matrix-unit basis. Verify complex rank `6`, nullity `3`, pivot
+   directions exactly the six off-diagonal matrix units, and kernel
+   exactly `span_C{E_11,E_22,E_33}`.
+7. **(L4) exact diagonal commutant.** Verify that
+   `diag(k_1,k_2,k_3)` with three independent complex parameters
+   commutes with every `T_μ`, including a non-Hermitian complex
+   diagonal commuting control. Hence the commutant is exactly `C^3`
+   and has complex dimension `3`.
+8. **Hostile coverage outside the old Hermitian ansatz.** Retain the
+   earlier Hermitian solve only as a secondary continuity check. Then
+   test the directed non-Hermitian matrix direction
+   `K = (1+2i)E_12`, for which `K_12 ≠ 0` but `K_21 = 0`, and a dense
+   complex non-Hermitian matrix with all six ordered off-diagonal
+   entries nonzero. Verify that the distinguishing commutators detect
+   these directions. This demonstrates missing coverage in the old
+   Hermitian certificate; it is not a counterexample to the theorem.
+9. **Non-distinct-spectrum boundary.** Replace the triple by
+   `T_1 = T_2 = T_3 = I`. Verify that the same dense non-diagonal
+   complex matrix then commutes with the triple and that every
+   separation weight vanishes, confirming that pairwise joint-spectrum
+   distinctness is load-bearing.
 
-Expected output: `PASS=N FAIL=0` with `N ≥ 14`.
+The previous Hermitian ansatz linked `K_βα` to the conjugate of
+`K_αβ` and restricted the diagonal entries to real values. It therefore
+covered only a 9-real-dimensional specialization of the
+18-real-dimensional complex matrix space quantified by (L2)-(L4).
+Its successful solve was consistent with the theorem but was not, by
+itself, an executable certificate of the universal complex-linear
+statement. The generic solve and independent complex rank/kernel
+calculation remove that coverage gap.
+
+Expected output: `PASS=N FAIL=0` with `N ≥ 50`.
 
 ## 10. Cross-references
 
@@ -366,9 +390,9 @@ edges:
 - `STAGGERED_DIRAC_SUBSTEP4_AC_PHI_TRACE_EQUIPARTITION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`
   — sibling AC_φ narrow theorem shipped same date.
 - `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
-  — sister substep-1 narrow bridge (audited_clean).
+  — sister substep-1 narrow bridge; its status remains audit-pipeline-derived.
 - `STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
-  — sister substep-3 narrow bridge (audited_clean).
+  — sister substep-3 narrow bridge; its status remains audit-pipeline-derived.
 - `STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`
   — pre-existing in-flight substep-3 packaging carrying the
   `Z^3`-substrate hw=1 carrier identification with the explicit
@@ -378,7 +402,7 @@ edges:
   — pre-existing in-flight substep-2 packaging carrying the
   Kawamoto-Smit kinetic operator form whose translation-invariance is
   the bridge to (b) above.
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-06-29.md`
   — framework baseline memo for the physical Cl(3) local algebra and
   Z^3 spatial substrate; the narrow theorem does not consume its
   effective status.

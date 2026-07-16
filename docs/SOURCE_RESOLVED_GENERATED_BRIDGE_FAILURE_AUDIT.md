@@ -14,13 +14,13 @@ This is a synthesis over four finite generated-family bridge probes:
 
 ## Adversarial question
 
-Do any of the four named finite probes meet their own declared weak-field
-diagnostic or transfer target on their stated cards?
+Do any of the four named finite probes provide a positive weak-field recovery
+or transfer result on their stated cards?
 
 ## Synthesis
 
-On their declared cards, none of the four named probes meets its stated
-target.
+On their declared cards, none of the four named probes provides a positive
+recovery or transfer result.
 
 Why:
 

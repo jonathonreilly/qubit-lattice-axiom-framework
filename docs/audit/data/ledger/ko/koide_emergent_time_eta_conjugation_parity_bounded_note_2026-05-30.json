@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1351,6 +1351,60 @@
         "total_pass": 17
       },
       "verdict_rationale": "The runner performs genuine symbolic and matrix calculations: it proves the P similarity, spectral multiset invariance, exactness of the displayed spectrum-derived one-form, and spectral invariance of the real transpose-preserving extension. However, Check 6 tests only eigenvalues; transpose-related spectra do not by themselves control an eigenvector-dependent Berry connection or eta term. The claim is therefore clean only after restricting the conclusion to spectrum-only functionals, while the broader extension requires an additional bridge theorem."
+    },
+    {
+      "archived_at": "2026-07-16T04:35:04.631771+00:00",
+      "audit_date": "2026-07-16T04:34:55.222090+00:00",
+      "audit_invocation_history": [
+        "9add0e149d6b4c68a5cf1bd9e57d9ac9"
+      ],
+      "audit_invocation_id": "9add0e149d6b4c68a5cf1bd9e57d9ac9",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 10.972,
+        "runner_hash": "56e6b8726cc420f84578dd4b7dfc431365ad47f91c9d279cd99541867cb335f7",
+        "transitive_descendants": 709
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-koide_emergent_time_eta_-122",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Similarity and transposition prove spectral invariance, while the b-independent Fourier basis proves the displayed circulant's spectral one-form is exact. Transposition alone does not control parameter-dependent eigenvectors, so a bridge excluding eigenvector-dependent Berry/eta contributions for the extensions is missing.",
+      "claim_scope": "Conjugation-even spectra and zero spectral one-form curl for the displayed C_3 circulant, plus conjugation-even spectra for transpose-preserving real extensions; eigenvector-dependent Berry/eta vanishing for those extensions is not established.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-16T04:34:55.222090+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The relation O(a,conj(b)) = O(a,b)^T preserves the spectrum and is asserted to prevent a conjugation-odd spectral term.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow the extension language to conjugation-even spectral functionals, or add a theorem and runner checks that explicitly control eigenvector-dependent Berry/eta connections.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The runner genuinely checks the stated matrix identities, conjugation-even spectra, and zero curl of A = sum_k g(lambda_k) d lambda_k; it is not merely printing expected constants. It does not establish vanishing of eigenvector-dependent Berry/eta contributions for a transpose-preserving extension, because transpose equality constrains eigenvalues but not the parameter-space eigenvector connection. For no-go discipline, N1/N7 leave complex, holomorphic, and eigenvector-dependent routes open; N2 identifies the residual spectral-to-eigenvector wall; N3/N5 rhetoric is bounded but lacks per-resolution execution; N4 has no retained prior witness; and N6/N8 provide no accepted closure of that residual."
     }
   ],
   "prose_corrections": [],

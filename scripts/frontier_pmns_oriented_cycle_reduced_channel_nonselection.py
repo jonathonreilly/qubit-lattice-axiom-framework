@@ -3,7 +3,8 @@
 
 Question:
   On an explicitly supplied graph-first-symmetric reduced-cycle family, does
-  the current exact bank select a unique point?
+  residual symmetry, coordinate extraction, and a target-constructed fixture
+  select a unique point?
 
 Answer:
   The supplied coordinate map does not select a point. It only extracts the
@@ -135,9 +136,9 @@ def part2_target_constructed_response_round_trip_is_consistency_only() -> None:
     print("  [INFO] independent physical carrier or Record-readout evidence.")
 
 
-def part3_current_exact_constraints_do_not_select_a_unique_reduced_channel_point() -> None:
+def part3_checked_constraints_do_not_select_a_unique_reduced_channel_point() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: THE CURRENT EXACT BANK DOES NOT SELECT A UNIQUE REDUCED-CHANNEL POINT")
+    print("PART 3: THE CHECKED CONSTRAINTS DO NOT SELECT A UNIQUE REDUCED-CHANNEL POINT")
     print("=" * 88)
 
     a = active_block_with_reduced_cycle(0.41, 0.32, 0.28, xbar=1.0)
@@ -164,11 +165,12 @@ def main() -> int:
     print()
     print("Question:")
     print("  On an explicitly supplied graph-first-symmetric reduced-cycle family,")
-    print("  does the current exact bank select a unique point?")
+    print("  do the checked residual, coordinate, and fixture mechanisms select")
+    print("  a unique point?")
 
     part1_the_graph_first_symmetric_family_is_exactly_three_real_dimensional()
     part2_target_constructed_response_round_trip_is_consistency_only()
-    part3_current_exact_constraints_do_not_select_a_unique_reduced_channel_point()
+    part3_checked_constraints_do_not_select_a_unique_reduced_channel_point()
 
     print("\n" + "=" * 88)
     print("RESULT")

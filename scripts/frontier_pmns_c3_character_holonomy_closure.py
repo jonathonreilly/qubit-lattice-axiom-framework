@@ -107,7 +107,11 @@ def part1_the_supplied_cycle_matrix_has_the_canonical_c3_character_triple() -> N
     check("Its eigencharacters are exactly 1, omega, omega^2",
           np.linalg.norm(evals_sorted - target_sorted) < 1e-12,
           f"evals={np.round(evals_sorted, 6)}")
-    check("Therefore the supplied C3 character phases are 0, 2pi/3, 4pi/3", True)
+    check(
+        "The supplied cycle has exactly the three canonical C3 eigencharacters",
+        np.linalg.norm(evals_sorted - target_sorted) < 1e-12
+        and np.linalg.norm(np.linalg.matrix_power(c, 3) - np.eye(3)) < 1e-12,
+    )
 
 
 def part2_the_supplied_character_triple_has_full_rank_on_the_reduced_cycle_family() -> None:
@@ -121,7 +125,10 @@ def part2_the_supplied_character_triple_has_full_rank_on_the_reduced_cycle_famil
     check("The character-triple design matrix is the canonical C3 matrix",
           np.linalg.norm(m - np.array([[2.0, 0.0, 1.0], [-1.0, math.sqrt(3.0), 1.0], [-1.0, -math.sqrt(3.0), 1.0]])) < 1e-12)
     check("The exact C3 character triple has nonzero determinant", abs(det) > 1e-12, f"det={det:.12f}")
-    check("So the supplied character triple removes the one-angle 2-real kernel algebraically", True)
+    check(
+        "The supplied character triple removes the one-angle 2-real kernel algebraically",
+        np.linalg.matrix_rank(m) == 3,
+    )
 
 
 def part3_the_reduced_cycle_coordinates_are_reconstructed_from_the_supplied_character_functionals() -> None:
@@ -140,7 +147,10 @@ def part3_the_reduced_cycle_coordinates_are_reconstructed_from_the_supplied_char
     check("The reduced coordinates are reconstructed exactly from the supplied character functionals",
           np.linalg.norm(recovered - target) < 1e-12,
           f"recovered={np.round(recovered, 6)}")
-    check("So the supplied reduced-cycle coordinates invert exactly on this C3 character map", True)
+    check(
+        "The supplied reduced-cycle coordinates invert exactly on this C3 character map",
+        np.linalg.norm(recovered - target) < 1e-12,
+    )
 
 
 def part4_circularity_guard() -> None:

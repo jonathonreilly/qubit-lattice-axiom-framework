@@ -84,7 +84,7 @@ statuses verified against `docs/audit/data/audit_ledger.json`
   cubic characteristic polynomial used to bracket eigenvalues sign-
   strictly over every sub-box of `B`.
 - **(X2)** [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  (`bounded_theorem`; audit status owned by the independent audit lane).
+  (`claim_type: bounded_theorem`).
   Role: for the explicitly supplied chart matrix, extract its
   `E_12,E_23,E_31` coordinates as `diag(A C^dagger)`. X2 does not derive or
   physically identify the chart, carrier, or readout.

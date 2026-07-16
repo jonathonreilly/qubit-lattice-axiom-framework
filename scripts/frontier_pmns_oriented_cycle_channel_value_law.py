@@ -188,7 +188,8 @@ def part0_source_scope_firewall() -> None:
         "consistency-only",
         "remaining `missing_bridge_theorem` is explicit",
         "Record-compatible physical observable/readout map",
-        "framework derivation or selection of the supplied matrix `A`",
+        "framework construction identifying which matrix-valued block is `A`",
+        "separate state, parameter, or selector law fixing the numerical cycle",
         RUNNER_PATH,
     ]
     for phrase in required_note_phrases:
@@ -251,6 +252,20 @@ def part2_generic_complex_matrix_coordinate_extraction() -> None:
     print("=" * 88)
 
     basis = oriented_cycle_basis()
+    matrix_units = tuple(e(i, j) for i in range(3) for j in range(3))
+    expected_unit_coeffs = tuple(
+        np.array([unit[0, 1], unit[1, 2], unit[2, 0]], dtype=complex)
+        for unit in matrix_units
+    )
+    check(
+        "all nine standard matrix units obey the coordinate and projection identities",
+        all(
+            np.linalg.norm(oriented_cycle_coeffs_from_block(unit) - expected) < TOL
+            and np.linalg.norm(forward_cycle_projection(unit) - explicit_forward_cycle_slots(unit)) < TOL
+            for unit, expected in zip(matrix_units, expected_unit_coeffs)
+        ),
+    )
+
     for index, matrix in enumerate(generic_test_matrices(), start=1):
         coeffs = oriented_cycle_coeffs_from_block(matrix)
         slots = np.array([matrix[0, 1], matrix[1, 2], matrix[2, 0]], dtype=complex)

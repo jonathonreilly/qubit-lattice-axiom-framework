@@ -5,13 +5,14 @@
 **Script:** `scripts/frontier_pmns_current_bank_value_selection_nogo.py`
 
 ## Question
-Does the current exact bank contain a positive value-selection law for the
-retained PMNS lane?
+Do the free, scalar, residual-symmetry, coordinate-extraction, and
+target-constructed-fixture mechanisms checked here select a unique reduced
+cycle value?
 
 ## Answer
 No.
 
-The current exact bank now closes the retained PMNS lane negatively:
+The checked mechanism packet closes negatively:
 
 - the sole axiom `Cl(3)` on `Z^3` gives only the trivial free lower-level
   response profiles on the retained lepton triplets
@@ -23,7 +24,7 @@ The current exact bank now closes the retained PMNS lane negatively:
 - target-constructed response fixtures round-trip supplied reduced blocks as
   consistency checks only
 
-Therefore the current exact bank does **not** contain a positive
+Therefore none of the mechanisms exercised here supplies a positive
 value-selection law on that reduced channel.
 
 ## Exact Content
@@ -35,7 +36,7 @@ A_{\mathrm{fwd}}(u,v,w)
 = (u + i v) E_{12} + w E_{23} + (u - i v) E_{31}.
 \]
 
-The current exact bank proves:
+The runner verifies:
 
 1. The sole axiom gives only the trivial free response profiles.
 2. The retained local scalar routes never leave the diagonal/scalar sector.
@@ -47,7 +48,7 @@ The current exact bank proves:
 5. The response-profile examples are constructed from target reduced blocks
    and invert back to them; they are consistency-only.
 
-So, after a candidate block is supplied, the current exact bank fixes:
+So, after a candidate block is supplied, this packet fixes:
 
 - its reduced matrix support,
 - the algebraic coordinate chart,
@@ -61,14 +62,15 @@ coordinate lemma must not be used as evidence for any of those bridges.
 
 ## Consequence
 
-The current-bank value-selection attempt closes negatively at this boundary.
+The checked value-selection attempt closes negatively at this boundary.
 
-Any further positive value-selection law would require:
+This is not an exhaustive inventory theorem for every present or future
+framework route. An uninspected source, Record map, or selector could change
+the conclusion. A positive value-selection law still requires:
 
-- genuinely new dynamics, or
-- a further admitted extension.
-
-It would also require separate retained carrier and physical-readout bridges.
+- a retained physical carrier and Record-compatible readout;
+- a framework construction of the relevant matrix-valued block; and
+- a state, parameter, or selector law fixing its numerical coordinates.
 
 ## Verification
 

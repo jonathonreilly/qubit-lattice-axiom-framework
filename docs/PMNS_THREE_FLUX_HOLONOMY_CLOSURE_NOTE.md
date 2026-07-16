@@ -64,8 +64,8 @@ closure route on the reduced PMNS cycle family.
 It is now strengthened further by
 `PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*),
 which shows that the exact `C3` character triple already supplies a canonical
-native three-mode holonomy family. So the result below can now be read in two
-ways:
+three-functional coordinate map on the supplied reduced family. So the result
+below can now be read in two ways:
 
 - as a generic three-flux closure theorem, and
 - as a bounded `C3`-character inversion on a supplied reduced matrix family.
@@ -132,14 +132,13 @@ One-hop authority candidates cited:
   not vice versa.)
   — audit row:
   `pmns_c3_character_holonomy_closure_note`. Sibling candidate
-  authority strengthening the present three-angle closure to a native
-  `C_3`-character closure on the retained graph-first cycle frame, as
+  authority relating the present three-angle inversion to a supplied
+  `C_3`-character coordinate map on the reduced cycle frame, as
   cross-referenced in the present note's "Consequence" section. The
-  `C_3`-character readout supplies the canonical native three-mode
-  holonomy family (phases `0, 2 pi / 3, 4 pi / 3`) that closes the
-  reduced cycle values without admitting an external generic
-  three-flux family. This is listed as a candidate dependency while
-  independent audit decides whether it closes the edge.
+  three supplied character phases (`0, 2 pi / 3, 4 pi / 3`) give an
+  invertible coordinate-functional triple. They do not supply a physical
+  readout, carrier, or value selector. This is listed as a candidate
+  dependency while independent audit decides whether it closes the edge.
 - [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
   — audit row:
   `pmns_oriented_cycle_channel_value_law_note`. Sibling source

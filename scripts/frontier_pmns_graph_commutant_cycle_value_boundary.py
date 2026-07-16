@@ -22,8 +22,8 @@ Answer:
   family, so they do not select a unique point (u,v,w).
 
   In other words, this route is a theorem-grade boundary, not a positive
-  value law.  The current bank still needs a lower-level source/transport
-  law to fix the reduced cycle values themselves.
+  value law. A separate lower-level source/transport and physical-readout
+  bridge would be needed to fix and interpret the reduced cycle values.
 """
 
 from __future__ import annotations
@@ -262,8 +262,8 @@ def part4_current_bank_status() -> None:
           and ("diag(A C^dagger)" in note or "diag(A C^\\dagger)" in note))
     check("The stable-path note leaves the physical carrier and Record readout open",
           "Record-compatible physical observable/readout map" in note
-          and "framework derivation or selection of the supplied matrix `A`" in note)
-    check("The reduced-channel no-go note says the current bank does not select a unique point",
+          and "framework construction identifying which matrix-valued block is `A`" in note)
+    check("The reduced-channel note says the checked algebra does not select a unique point",
           "unique value on the reduced channel" in reduced or "does not select a unique point" in reduced)
     check(
         "The commutant note excludes a physical PMNS readout bridge",

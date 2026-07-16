@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Exact C3-character mode reduction of the remaining PMNS value problem.
+"""C3-character mode reduction on a supplied reduced-cycle matrix family.
 
 Question:
-  Once the native C3-character holonomy family is closed, what is the exact
-  remaining sole-axiom PMNS value-selection problem on the retained `hw=1`
-  triplet?
+  For the supplied reduced-cycle matrix family and supplied C3
+  character-functional triple, what is the exact Fourier-mode reduction?
 
 Answer:
   It is smaller than the raw 3-real reduced-cycle family.
@@ -13,30 +12,30 @@ Answer:
 
       A_fwd(u, v, w) = (u + i v) E12 + w E23 + (u - i v) E31
 
-  the exact native C3-character holonomy triple has discrete Fourier modes
+  the supplied C3 character-functional triple has discrete Fourier modes
 
       z0 = w,
       z1 = u - i v,
       z2 = u + i v.
 
-  So the reduced PMNS value problem is exactly the selection of:
+  Thus the supplied matrix family is parametrized by:
 
       - one real trivial-character amplitude w
       - one complex nontrivial character amplitude chi := z2 = u + i v
 
   with z1 = conjugate(chi) on the residual graph-first antiunitary slice.
 
-  The current sole-axiom routes do not fail on a generic 3-real mystery. They
-  fail because they annihilate the nontrivial character amplitude exactly:
+  The three named route blocks checked below annihilate the nontrivial
+  character coordinate exactly:
 
       chi = 0
 
   on the sole-axiom free route, the sole-axiom hw=1 source/transfer route, and
   the retained scalar route.
 
-  Therefore the next honest positive target is not an arbitrary PMNS value law,
-  but a sole-axiom law that produces nonzero C3-nontrivial character amplitude
-  on the retained `hw=1` response family.
+  These route-wise checks are not an exhaustive current-bank theorem and do
+  not supply a physical carrier, Record-compatible readout, block-construction
+  law, or numerical selector.
 """
 
 from __future__ import annotations
@@ -121,7 +120,7 @@ def part1_the_reduced_cycle_family_is_exactly_trivial_plus_one_nontrivial_charac
     check("The omega^2 character mode is exactly u + i v",
           abs(modes[2] - complex(u, v)) < 1e-12,
           f"z2={modes[2]:.6f}")
-    check("The three native holonomies are exactly the inverse character transform of (w, u-iv, u+iv)",
+    check("The three supplied functionals are exactly the inverse character transform of (w, u-iv, u+iv)",
           np.linalg.norm(
               hol
               - np.array(
@@ -148,13 +147,17 @@ def part2_graph_first_reduction_forces_the_nontrivial_character_pair_to_be_conju
     check("The graph-first reduced channel makes the two nontrivial character modes complex conjugates",
           abs(modes[1] - np.conjugate(modes[2])) < 1e-12,
           f"z1={modes[1]:.6f}, z2={modes[2]:.6f}")
-    check("So the remaining value problem is one real trivial mode plus one complex nontrivial mode", True,
-          f"(w, chi)=({modes[0]:.6f}, {modes[2]:.6f})")
+    check(
+        "The supplied family is parametrized by one real trivial mode and one complex nontrivial mode",
+        abs(modes[0].imag) < 1e-12
+        and abs(modes[1] - np.conjugate(modes[2])) < 1e-12,
+        f"(w, chi)=({modes[0]:.6f}, {modes[2]:.6f})",
+    )
 
 
-def part3_current_sole_axiom_routes_annihilate_the_nontrivial_character_mode_exactly() -> None:
+def part3_three_named_route_blocks_annihilate_the_nontrivial_character_mode() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: CURRENT SOLE-AXIOM ROUTES ANNIHILATE THE NONTRIVIAL CHARACTER MODE EXACTLY")
+    print("PART 3: THREE NAMED ROUTE BLOCKS ANNIHILATE THE NONTRIVIAL CHARACTER MODE")
     print("=" * 88)
 
     free_hol, free_modes = reduced_character_data_from_block(I3)
@@ -178,14 +181,14 @@ def part3_current_sole_axiom_routes_annihilate_the_nontrivial_character_mode_exa
     check("The retained scalar route has zero nontrivial character modes too",
           abs(scalar_modes[1]) < 1e-12 and abs(scalar_modes[2]) < 1e-12,
           f"modes={np.round(scalar_modes, 6)}")
-    check("All three routes therefore give only trivial retained character holonomies",
+    check("All three named route blocks therefore give only trivial character-functional values",
           np.linalg.norm(free_hol) < 1e-12 and np.linalg.norm(source_hol) < 1e-12 and np.linalg.norm(scalar_hol) < 1e-12,
           f"free={np.round(free_hol, 6)}, source={np.round(source_hol, 6)}, scalar={np.round(scalar_hol, 6)}")
 
 
-def part4_the_exact_missing_source_is_a_nonzero_c3_nontrivial_character_amplitude() -> None:
+def part4_the_supplied_mode_map_distinguishes_but_does_not_select_points() -> None:
     print("\n" + "=" * 88)
-    print("PART 4: THE EXACT MISSING SOURCE IS A NONZERO C3 NONTRIVIAL CHARACTER AMPLITUDE")
+    print("PART 4: THE SUPPLIED MODE MAP DISTINGUISHES BUT DOES NOT SELECT POINTS")
     print("=" * 88)
 
     a = active_block_with_reduced_cycle(0.41, 0.32, 0.28, xbar=1.0)
@@ -193,7 +196,7 @@ def part4_the_exact_missing_source_is_a_nonzero_c3_nontrivial_character_amplitud
     _hol_a, modes_a = reduced_character_data_from_block(a)
     _hol_b, modes_b = reduced_character_data_from_block(b)
 
-    check("Distinct realized reduced-channel points correspond to distinct nontrivial character amplitudes",
+    check("Distinct supplied reduced-cycle points correspond to distinct nontrivial character coordinates",
           abs(modes_a[2] - modes_b[2]) > 1e-6,
           f"chi_a={modes_a[2]:.6f}, chi_b={modes_b[2]:.6f}")
     check("Once the nontrivial character amplitude chi is known, u and v are fixed exactly",
@@ -202,7 +205,11 @@ def part4_the_exact_missing_source_is_a_nonzero_c3_nontrivial_character_amplitud
           and abs(modes_b[2].real - 0.29) < 1e-12
           and abs(modes_b[2].imag + 0.17) < 1e-12,
           f"chi_a={modes_a[2]:.6f}, chi_b={modes_b[2]:.6f}")
-    check("Therefore the current sole-axiom blocker is exactly the production of nonzero C3-nontrivial character amplitude on the retained hw=1 response family", True)
+    check(
+        "The supplied functional map distinguishes the two inputs but selects neither one",
+        abs(modes_a[2] - modes_b[2]) > 1e-6
+        and np.linalg.norm(a - b) > 1e-6,
+    )
 
 
 def part5_circularity_guard() -> None:
@@ -223,30 +230,29 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Question:")
-    print("  Once the native C3-character holonomy family is closed, what is the")
-    print("  exact remaining sole-axiom PMNS value-selection problem?")
+    print("  What is the exact C3 Fourier-mode reduction on the supplied")
+    print("  reduced-cycle matrix family?")
 
     part1_the_reduced_cycle_family_is_exactly_trivial_plus_one_nontrivial_character()
     part2_graph_first_reduction_forces_the_nontrivial_character_pair_to_be_conjugate()
-    part3_current_sole_axiom_routes_annihilate_the_nontrivial_character_mode_exactly()
-    part4_the_exact_missing_source_is_a_nonzero_c3_nontrivial_character_amplitude()
+    part3_three_named_route_blocks_annihilate_the_nontrivial_character_mode()
+    part4_the_supplied_mode_map_distinguishes_but_does_not_select_points()
     part5_circularity_guard()
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact reduced-law theorem:")
-    print("    - the retained graph-first PMNS value problem is exactly")
+    print("  Exact supplied-family coordinate reduction:")
+    print("    - the supplied graph-first-symmetric matrix family is exactly")
     print("      one real trivial-character mode w plus one complex nontrivial")
     print("      character amplitude chi")
     print("    - the graph-first antiunitary reduction forces the opposite")
     print("      nontrivial mode to be conjugate(chi)")
-    print("    - the current sole-axiom free, source/transfer, and scalar routes")
+    print("    - the three named free, source/transfer, and scalar route blocks")
     print("      all annihilate chi exactly")
     print()
-    print("  So the next honest positive target is now completely explicit:")
-    print("  derive a sole-axiom law that produces nonzero C3-nontrivial character")
-    print("  amplitude on the retained hw=1 response family.")
+    print("  These checks do not establish a physical carrier, Record readout,")
+    print("  block-construction law, exhaustive route inventory, or value selector.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

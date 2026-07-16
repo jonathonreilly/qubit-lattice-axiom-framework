@@ -55,7 +55,7 @@ def main() -> int:
         "PMNS cycle-coordinate row is scoped as bounded supplied-block algebra",
         "**Claim type:** bounded_theorem" in cycle_note
         and "Record-compatible physical observable/readout map" in cycle_note
-        and "framework derivation or selection of the supplied matrix `A`" in cycle_note,
+        and "framework construction identifying which matrix-valued block is `A`" in cycle_note,
     )
 
     open_row = rows.get("quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26")

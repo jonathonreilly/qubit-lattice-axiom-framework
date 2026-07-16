@@ -23,9 +23,9 @@ and is consistency-only, not independent physical realization evidence.
 
 ## Question
 
-Once the retained PMNS lane is reduced to the graph-first selected-axis
-oriented-cycle channel, does the current exact bank select the remaining cycle
-values?
+On the explicitly supplied graph-first-symmetric oriented-cycle family, do
+residual symmetry, coordinate extraction, and a target-constructed fixture
+select the remaining cycle values?
 
 ## Answer
 

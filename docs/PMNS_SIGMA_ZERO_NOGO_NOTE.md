@@ -5,8 +5,8 @@
 **Script:** `scripts/frontier_pmns_sigma_zero_no_go.py`
 
 ## Question
-On the current pure-retained sole-axiom PMNS bank, can the retained native
-sources, readouts, or selectors force nonzero `sigma`?
+Do the three named route blocks and the displayed unconstrained positive-lift
+action checked here force nonzero `sigma`?
 
 ## Answer
 No.
@@ -15,17 +15,16 @@ For a supplied block, `sigma` is the algebraic mean of the three extracted
 forward-cycle coordinates. On the displayed `C_3`-covariant slice it agrees
 with the separately defined transport mean and character functional.
 
-But on the current pure-retained bank:
+On the checked examples:
 
 - the free route has `sigma = 0`
 - the canonical sole-axiom `hw=1` source/transfer route still has `sigma = 0`
 - the retained scalar route has `sigma = 0`
-- the only current native selector without an extra PMNS constraint surface,
-  the unconstrained effective action on the canonical positive lift, is still
-  minimized at the seed and so also stays at `sigma = 0`
+- the displayed unconstrained effective action on the canonical positive lift
+  is minimized at the seed and so also stays at `sigma = 0`
 
-Therefore the current pure-retained PMNS bank does **not** force nonzero
-`sigma`.
+Therefore these named routes and this displayed action do **not** force
+nonzero `sigma`.
 
 ## Exact Content
 
@@ -34,9 +33,9 @@ The theorem packages four exact points:
 1. `sigma` is an algebraic supplied-block coordinate: the cycle mean and the
    displayed transport mean agree exactly.
 2. On the `C_3`-covariant fixed-`sigma` point, `J_chi = sigma`, so `sigma`
-   is a genuine positive PMNS candidate source.
-3. Every currently retained PMNS source route still lands at `sigma = 0`.
-4. The current unconstrained native selector also stays at the seed rather
+   is a nonzero algebraic candidate coordinate on that supplied slice.
+3. The three named route blocks land at `sigma = 0`.
+4. The displayed unconstrained positive-lift action stays at the seed rather
    than lifting `sigma` away from zero.
 
 The stable-path coordinate lemma does not identify `sigma` as a physical
@@ -44,13 +43,15 @@ observable, derive a Record-compatible readout, or select the supplied block.
 
 ## Consequence
 
-The PMNS retained lane is now closed more sharply than the earlier generic
-value-selection no-go:
+The checked packet gives a route-specific boundary:
 
-- the current pure-retained bank sets `sigma = 0`
-- hence its retained PMNS current samples all have `J_chi = 0`
-- any nonzero `sigma` requires a genuinely new pure-PMNS source law or a
-  genuinely new admitted constraint surface beyond the current retained bank
+- the free, named source/transfer, and scalar blocks set `sigma = 0`;
+- their algebraic `J_chi` values are also zero;
+- the displayed positive-lift action favors the zero seed over the one tested
+  nonzero candidate.
+
+This does not prove that the named routes exhaust the current bank or that no
+other action, source, Record map, or selector can produce nonzero `sigma`.
 
 ## Verification
 

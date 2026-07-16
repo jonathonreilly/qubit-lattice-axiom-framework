@@ -77,8 +77,8 @@ statuses verified against `docs/audit/data/audit_ledger.json`
   anchor that anchors the box cover.
 - **(X2) Bounded forward-cycle coordinate extraction.**
   [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  (`claim_type: bounded_theorem`; status authority remains the independent
-  audit lane). Role here: for the separately supplied chamber chart
+  (`claim_type: bounded_theorem`). Role here: for the separately supplied
+  chamber chart
   `H(m, δ, q) = H_BASE + m T_M + δ T_D + q T_Q`, extract the displayed
   cycle coordinates exactly. It does not derive or physically identify that
   chart, its `hw=1` carrier, or a readout map.

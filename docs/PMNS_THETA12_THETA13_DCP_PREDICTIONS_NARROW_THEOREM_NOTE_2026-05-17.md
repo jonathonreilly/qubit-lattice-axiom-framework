@@ -86,8 +86,8 @@ statuses verified against `docs/audit/data/audit_ledger.json`
   characteristic polynomial + adjugate-based interval projectors).
 - **(X2) Bounded forward-cycle coordinate extraction.**
   [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  (`claim_type: bounded_theorem`; status authority remains the independent
-  audit lane). Role: once the displayed chamber chart matrix is supplied,
+  (`claim_type: bounded_theorem`). Role: once the displayed chamber chart
+  matrix is supplied,
   extract its `E_12,E_23,E_31` coordinates exactly. It does not derive the
   `hw=1` carrier, physically identify the chart, or provide a readout law.
 - **(X3) NuFit 5.3 NO 3-σ rectangle on `(s_12^2, s_13^2)`.**

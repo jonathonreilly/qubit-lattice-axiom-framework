@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
-"""Final current-bank closeout on PMNS value selection.
+"""Checked-mechanism boundary for PMNS reduced-cycle value selection.
 
 Question:
   After the sole-axiom free-point theorem, the scalar deformation boundaries,
   the graph-first selector reduction, and the oriented-cycle coordinate map,
-  does the current exact bank contain a positive value-selection law for the
-  retained PMNS lane?
+  do the mechanisms checked here select a unique reduced-cycle value?
 
 Answer:
   No.
 
-  The current exact bank proves:
+  The runner verifies:
 
     1. the sole axiom `Cl(3)` on `Z^3` gives only the trivial free response
        profiles on the retained lepton triplets
@@ -22,9 +21,8 @@ Answer:
     5. target-constructed response fixtures round-trip supplied reduced blocks,
        but are consistency-only rather than independent physical evidence
 
-  Therefore the current exact bank does not contain a positive value-selection
-  law on that reduced channel. Any further positive law would require genuinely
-  new dynamics or a further admitted extension.
+  None of those checked mechanisms selects a unique reduced-cycle value. This
+  is not an exhaustive inventory theorem for every framework route.
 """
 
 from __future__ import annotations
@@ -182,8 +180,8 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Question:")
-    print("  Does the current exact bank contain a positive value-selection law for")
-    print("  the retained PMNS lane?")
+    print("  Do the checked free, scalar, residual-symmetry, coordinate, and")
+    print("  target-constructed-fixture mechanisms select a unique value?")
 
     part1_free_and_scalar_routes_are_too_small()
     part2_graph_first_restricts_a_supplied_candidate_family()
@@ -193,19 +191,18 @@ def main() -> int:
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact current-bank closeout:")
-    print("    - the sole axiom gives only the trivial free response profiles")
-    print("    - the retained scalar deformation routes stay too small")
+    print("  Checked-mechanism boundary:")
+    print("    - the checked free response profile is rejected")
+    print("    - the checked scalar deformation route stays too small")
     print("    - graph-first residual symmetry restricts a supplied candidate")
     print("      block to the reduced oriented forward-cycle family")
     print("    - target-constructed response fixtures round-trip supplied reduced")
     print("      blocks as consistency checks only")
-    print("    - the current exact bank therefore does not select a unique value")
+    print("    - none of these checked mechanisms selects a unique value")
     print()
-    print("  So the retained PMNS lane closes negatively on the current exact bank.")
-    print("  Any further positive value-selection law would require genuinely new")
-    print("  dynamics or a further admitted extension. The physical carrier and")
-    print("  Record-compatible readout bridges also remain open.")
+    print("  This is not an exhaustive route inventory. A physical carrier,")
+    print("  Record-compatible readout, block-construction law, and numerical")
+    print("  selector remain separate open bridges.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

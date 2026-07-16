@@ -2,7 +2,6 @@
 
 **Date:** 2026-04-16  
 **Claim type:** bounded_theorem
-**Status authority:** independent audit lane only
 **Status:** bounded finite-dimensional algebra lemma
 **Stable claim id:** `pmns_oriented_cycle_channel_value_law_note`
 **Script:** `scripts/frontier_pmns_oriented_cycle_channel_value_law.py`
@@ -86,9 +85,9 @@ basis matrices.
 
 ## What the runner establishes
 
-The runner verifies the lemma on multiple deterministic generic complex
-`3 x 3` matrices, not on an `active_operator` or a target-derived response
-fixture. It checks:
+The runner verifies the lemma on all nine standard matrix units and on
+multiple deterministic dense complex `3 x 3` matrices, not on an
+`active_operator` or a target-derived response fixture. It checks:
 
 - the supplied embedding and projected-cycle identity;
 - projector orthogonality, completeness, and the edge-basis identities;
@@ -114,8 +113,10 @@ The remaining `missing_bridge_theorem` is explicit. This row does not supply:
    physical `hw=1` taste carrier;
 2. a Record-compatible physical observable/readout map from record content to
    the complex coordinate tuple `(c_1,c_2,c_3)`;
-3. a framework derivation or selection of the supplied matrix `A`;
-4. a framework law selecting numerical values of its cycle coordinates.
+3. a framework construction identifying which matrix-valued block is `A`,
+   without assuming its realized entries;
+4. a separate state, parameter, or selector law fixing the numerical cycle
+   coordinates of that block.
 
 Until those bridges are separately derived and retained, this row is only the
 bounded algebraic coordinate-extraction lemma above.

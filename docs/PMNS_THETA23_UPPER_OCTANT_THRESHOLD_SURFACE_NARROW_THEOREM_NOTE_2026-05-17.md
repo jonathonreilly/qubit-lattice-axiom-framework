@@ -69,8 +69,8 @@ narrow theorem below; ledger statuses verified against
   neighborhood.
 - **(X2) Bounded forward-cycle coordinate extraction.**
   [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  (`claim_type: bounded_theorem`; status authority remains the independent
-  audit lane). For the separately supplied chart matrix, X2 extracts its
+  (`claim_type: bounded_theorem`). For the separately supplied chart matrix,
+  X2 extracts its
   forward-cycle coordinates exactly. It does not derive the physical `hw=1`
   carrier, identify the chamber chart, or provide a readout law.
 - **(X3) NuFit 5.3 NO 3-σ box on `(s_12^2, s_13^2, s_23^2)`.**

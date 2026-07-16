@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Full retained-neutrino sole-axiom closure boundary.
+"""Named-route retained-neutrino sole-axiom closure boundary.
 
 Question:
-  Does the retained neutrino lane close top-to-bottom from the sole axiom
-  `Cl(3)` on `Z^3` alone?
+  Do the named PMNS and charge-preserving Majorana routes checked here provide
+  a full positive neutrino realization from `Cl(3)` on `Z^3` alone?
 
 Answer:
   No.
@@ -17,8 +17,8 @@ Answer:
     - on the Majorana side, the lower-level charge-preserving response layer
       induces no anomalous Nambu block
 
-  Therefore full retained-neutrino sole-axiom closure is blocked on the current
-  exact bank.
+  Therefore the named route packet does not supply full retained-neutrino
+  sole-axiom closure. No exhaustive route inventory is claimed.
 """
 
 from __future__ import annotations
@@ -185,8 +185,8 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Question:")
-    print("  Does the retained neutrino lane close top-to-bottom from the sole axiom")
-    print("  Cl(3) on Z^3 alone?")
+    print("  Do the named PMNS and charge-preserving Majorana routes checked here")
+    print("  provide a full positive neutrino realization from Cl(3) on Z^3?")
 
     part1_dirac_pmns_sole_axiom_route_is_not_positively_closed()
     part2_reduced_cycle_fixtures_are_consistency_only()
@@ -196,17 +196,16 @@ def main() -> int:
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact retained-neutrino sole-axiom boundary:")
-    print("    - the sole axiom does not produce PMNS-active lower-level response profiles")
-    print("    - retained scalar deformation routes stay too small")
+    print("  Named-route retained-neutrino boundary:")
+    print("    - the checked free PMNS response profile is rejected")
+    print("    - the checked scalar deformation route stays too small")
     print("    - target-constructed reduced-cycle fixtures round-trip consistently,")
     print("      but do not establish a physical carrier or readout")
-    print("    - the retained Majorana lane does not reopen on the lower-level")
-    print("      charge-preserving response layer")
+    print("    - the checked charge-preserving Majorana response has zero")
+    print("      anomalous block")
     print()
-    print("  Therefore full retained-neutrino closure from Cl(3) on Z^3 alone is")
-    print("  blocked on the current exact bank. Any further positive closure would")
-    print("  require genuinely new dynamics or a further admitted extension.")
+    print("  Therefore this named route packet does not close a full positive")
+    print("  neutrino realization. No exhaustive current-bank no-go is claimed.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

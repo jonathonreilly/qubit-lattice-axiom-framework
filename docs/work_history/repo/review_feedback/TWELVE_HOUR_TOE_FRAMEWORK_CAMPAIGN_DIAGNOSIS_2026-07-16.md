@@ -2,7 +2,8 @@
 
 Date: 2026-07-16
 
-Status: campaign synthesis through Cycle 195; no axiom edit proposed
+Status: campaign synthesis through source-grade Cycle 197B; audit unset; no
+axiom edit proposed
 
 Authority: none
 
@@ -22,8 +23,8 @@ identifies a wrong ontology or law type is progress.
 
 The campaign has built a coherent **record-law skeleton**, not a TOE.
 
-Under one deterministic proper-cubic nearest-neighbour table, finite record
-apparatuses can:
+Across a closely related sequence of deterministic proper-cubic
+nearest-neighbour tables, finite record apparatuses can:
 
 - carry out a complete bounded stabilizer update;
 - derive scheduler-independent causal depth from load-bearing record
@@ -36,14 +37,20 @@ apparatuses can:
 
 Those are genuine advances. They show that local append-only records can
 support a large, compositional causal computer without a hidden scheduler.
+They do not yet show that one final microscopic table simultaneously realizes
+every listed apparatus. Cycle 197B gives one 102,398-row candidate table that
+separately hosts the latest bounded membership/interaction and dispatcher
+corpora; simultaneous mixed spatial composition, complete lawful domain, and
+law selection remain open.
 
 The same work also exposed the decisive limitation. The large compiler uses
 many exact onsite role labels. Distinct elements of one `M_2(C)` possibility
 domain are mathematically available, but arbitrary nonorthogonal one-qubit
 states are not a perfectly distinguishable nondestructive classical
-alphabet. The 32-valued row carrier and the 153-role compiler are therefore
-extensional record-law semantics until an orthogonal spatial encoding or a
-direct CP/instrument implementation is supplied.
+alphabet. The 32-valued row carrier and the 153-role Cycle-185 compiler are
+therefore extensional record-law semantics until an orthogonal spatial
+encoding or a direct CP/instrument implementation is supplied. Cycle 190 adds
+two roles; Cycle 197B adds no further role to that 155-role candidate table.
 
 Cycle 178 closes the first part of that gap for the carrier: every row word
 can be represented by five spatially separate `H0/H1` lineages, with no
@@ -101,6 +108,60 @@ state. Finite context consistency therefore does not derive quantum weights.
 What remains is a normalized effect-complete operational law or equivalent
 full-frame structure; after that completion, trace form follows
 mathematically rather than needing a separate Born sentence.
+
+Cycle 190 closes the earlier finite-membership construction failure. Each of
+the five generated binary endpoints now has typed egress into a value-neutral
+membership lineage and an ordered literal consumer. All 32 words close under
+both schedules; the completed egress closes in all 24 orientations; and 320
+endpoint deletion/absence controls are exact. The result makes one finite
+“these five records belong to this causal object” fact without ever creating
+or supplying a 32-valued payload. It is a physical composition bridge, not
+yet a self-bound particle. Its all-24 statement is for the completed egress
+boundary; the full Cycle-178 predecessor retains its known rotated-coordinate
+schedule profile.
+
+Cycle 193 removes the host-side context dispatcher from the conditional
+quantum architecture. Three ordinary `H0/H1` context records route through
+seven binary routers to one of six program tapes, `OMIT`, or reserved
+`INVALID`; the selected tape is scanned physically and every context, tape,
+mutation, schedule, and proper-cubic rotation control closes. The exact
+remaining execution seam is no longer “choose a context in Python.” It is a
+microscopic law that gives the selected `H0/H1`, `CX01`, and `CX10` tokens
+their coherent gate meanings on one encoded system and pointer.
+
+Cycle 196 supplies the first designed two-carrier payload interaction. One
+selected literal from each compact bundle exits through the typed Cycle-190
+fork; each input remains independently readable while the other branch from
+each writes one exact XOR record with ancestry from both inputs. All four
+values, 32 deletion controls, four flips, 20,640 rotated local formations, and
+96 rotated terminal corpora close with zero new rows or roles. This is a
+classical two-record interaction, not whole-object or quantum scattering: the
+two all-five membership trees are not parents of the joint record, and no
+phase, momentum, energy, force, or particle identity is represented.
+
+Cycle 197A diagnoses the apparent law-union collision between that interaction
+branch and the physical dispatcher. Their literal raw-table union has 1,032
+double-valued signatures, but every one is an inherited old-versus-
+replacement codebook row from Cycle 175; none belongs to the new egress,
+interaction, router, or scan mechanisms. All 32 Cycle-190 histories, all four
+Cycle-196 interactions, and all 40 Cycle-193 schedule/rotation runs query zero
+of those signatures.
+
+Cycle 197B then constructs one chosen replacement-base repair. It retains the
+complete 102,338-row Cycle-190 law and adds six binary-ingress rows, 48 router
+rows, and six net scan rows. The result is a deterministic 102,398-row raw
+local-rule candidate with zero conflicts and no additional onsite roles. The
+hard matter/interaction and dispatcher corpora remain exact under it. For the
+hard Cycle-179 ZI fixture, the `ROLE_MAP` translation is exactly equal to
+regeneration inside the replacement codebook: zero old aliases occur in the
+initial records and all 141 expected-record occurrences are the data-code
+`A_0_2`. The fixture closes; the unchanged old-codebook artifact is not
+replayed.
+
+This is bounded raw-table compatibility, not law selection. The replacement
+codebook is an offline global compiler choice, not a physically selected
+runtime branch. A simultaneous mixed apparatus, arbitrary boundaries,
+compactness, uniqueness, and empirical selection remain open.
 
 ## What is now established
 
@@ -177,6 +238,28 @@ payloads do not. An exhaustive 1,683-offset census finds no disjoint rigid
 translation of the unchanged complete supports with payload sites adjacent.
 That is not an interaction no-go; endpoint routing, staggering, rotation, or
 a designed interaction window remain live.
+
+Cycle 190 supplies the endpoint route and the missing common-membership
+record for one bundle. It adds two fresh roles and sixteen canonical rows:
+each generated bit terminal forks into a literal consumer and a
+value-neutral membership branch, and four joins produce one final lineage
+with all-five ancestry. The complete output remains five ordered `H0/H1`
+records rather than one 32-valued site. This closes the Cycle-183 construction
+failure at record grade while leaving dynamical binding and interaction open.
+
+Cycle 196 then routes one selected egress from each of two compact bundles to
+an existing local XOR row. All four combined histories have 3,256 causal
+states, 7,126 load-bearing edges, equal minimum/maximum schedule frontiers,
+zero adjacent unordered writes, and twenty inherited exits. Both literal
+identity continuations survive and the new joint record has exactly
+`{left lane 2, right lane 2}` ancestry. The unchanged 102,338-row Cycle-190
+law already contains every required cable and XOR row.
+
+This closes the narrow “can two shielded payloads ever meet and condition one
+new fact?” question. It does not close matter interaction: only one classical
+lane from each supplied bundle enters an engineered gate, while shell
+collision, whole-object identity, coherent amplitudes, conservation laws, and
+scattering remain absent.
 
 ### Causal order can supply a discrete relative clock
 
@@ -306,13 +389,20 @@ This establishes compactability of the construction, not binding. The compact
 graph still factorizes into five independent systems and generates no common
 membership/status record.
 
-Cycle 183 attempted the missing generated all-five membership and literal
-consumer. Its join tree is promising but the integrated construction does not
-close: the inherited endpoint geometry emits base-law parasitic literals on
-unused faces. The failure is construction-scoped, not a binding no-go.
-Typed egress, a farther single-stem split, and a redesigned terminal remain
-live. The exact negative is retained rather than calling the partial ancestry
-graph a bound object.
+Cycle 183 first attempted the missing generated all-five membership and
+literal consumer but failed because the inherited endpoint geometry emitted
+base-law parasitic literals on unused faces. Cycle 190 repairs that precise
+defect with typed egress, capped recurrent adapters, and a value-neutral join
+tree. It closes all 32 histories under both schedules, all 24
+completed-boundary orientations, and all 320 endpoint deletion/absence
+controls. It does not repair the Cycle-178 predecessor's inherited
+whole-history rotated-coordinate discovery/replay aliases.
+
+The resulting `MEMBER5` record is generated rather than supplied, and no site
+carries the five-bit word. This is finite causal membership in the exact
+record sense: the record has load-bearing ancestry from all five lanes. It does not
+derive an attractive force, numerical particle identity, coherent internal
+state, or persistence through collision.
 
 ## The important reclassification
 
@@ -336,8 +426,10 @@ finite conditional grade-3 process for two system qubits, a two-bit pointer,
 six Peres–Mermin contexts, and a tomographically complete Pauli future
 repertoire. Cycle 191 reduces all six context instruments and both
 preparations to one real-Clifford H/CNOT interpreter with short program
-records. The process and interpreter remain conditional and are not yet
-implemented by the nearest-neighbour record law.
+records. Cycle 190 closes grade-2 finite membership for the compact binary
+carrier. Cycle 193 physically routes and scans the context program without a
+host lookup. The process and token semantics remain conditional and are not
+yet implemented by the nearest-neighbour record law.
 
 This is not a cosmetic downgrade. It is the difference between demonstrating
 a cellular computer and demonstrating a quantum physical law.
@@ -347,42 +439,148 @@ a cellular computer and demonstrating a quantum physical law.
 | Surface | What the campaign says | Current status |
 |---|---|---|
 | Lattice | `Z^3` and proper-cubic covariance support exact local compilation | useful hypothesis; continuum rotations, boosts, Lorentz recovery, and empirical lattice effects remain untested |
-| Qubit | one-site `M_2(C)` is enough for an orthogonal binary record pair | the 153-role extensional alphabet is not a physical one-site classical register; spatial binary encoding remains live, so no larger onsite algebra is yet forced |
+| Qubit | one-site `M_2(C)` is enough for an orthogonal binary record pair | the 153-role Cycle-185 alphabet, and the 155-role Cycle-190/197B extension, are extensional labels rather than a physical one-site classical register; spatial binary encoding remains live, so no larger onsite algebra is yet forced |
 | Finite composition | five sites can host 32 binary codewords in the ordinary generated tensor algebra | generated finite composition is a theorem condition, not current axiom content; silent global sectors remain unless the law domain or an operational theorem removes them |
-| Admissibility | one fixed local rule can host all tested constructions | the axiom supplies only a rule slot; it neither identifies the exact law nor derives the 4,414-case proper-cubic quotient; the 153-role table remains an extensional macro-law until spatialized, and its unrestricted domain is nonconfluent without update/domain semantics |
+| Admissibility | one deterministic 102,398-row replacement-base raw table separately hosts the mapped Cycle-179 formation fixture and the tested finite-membership, classical-interaction, and physical-dispatch corpora | this is bounded candidate-table compatibility, not a selected microscopic law; simultaneous mixed geometry, complete lawful domain, compactness, the still-unpriced proper-cubic quotient of this table, and unrestricted occurrence/confluence remain open |
 | Record | append-only records support stable ancestry and form-before-read; two witnesses give one-erasure redundancy in the coherent lift | universal occurrence, content selection, rate, first seed, and storage renewal remain absent; witness count does not supply actuality; absolute permanence may create downstream capacity pressure |
 | Qualification | states are record configurations | Cycle 189 reconstructs one complete two-qubit density calculator from complete record fibres and fixed law; lattice-wide sufficiency, environments, and microscopic phase transport remain open |
 
 No present result validates the four axioms as nature's minimum. It shows only
 that they admit one increasingly capable record-law architecture.
 
+## Relation to existing mechanisms
+
+The campaign's ingredients have close precedents, even though the tested
+combination is unusual.
+
+- Wolfram multiway rewriting asks update paths to reconverge into invariant
+  causal structure. This campaign instead appends permanent records on a
+  fixed cubic lattice and has only finite-apparatus confluence certificates,
+  not a general causal-invariance theorem
+  ([Wolfram technical introduction](https://www.wolframphysics.org/technical-introduction/the-updating-process-in-our-models/causal-invariance/);
+  [Gorard 2020](https://arxiv.org/abs/2004.14810)).
+- Quantum cellular automata and quantum lattice gases already combine a
+  homogeneous local rule, finite propagation, coherent evolution, and
+  particle-like sectors. Those models possess the unitary/reversible quantum
+  dynamics that this campaign still needs
+  ([Schumacher–Werner](https://arxiv.org/abs/quant-ph/0405174);
+  [Meyer](https://arxiv.org/abs/quant-ph/9604003)).
+- Autonomous QCA already store a program in physical lattice records and let
+  it locally control a data band. Cycle 193 is an append-only,
+  ancestry-certified implementation of that general architecture, not a new
+  principle of programmable computation
+  ([Shepherd–Franz–Werner](https://arxiv.org/abs/quant-ph/0512058);
+  [Raussendorf](https://arxiv.org/abs/quant-ph/0412048)).
+- Later records and redundant environmental witnesses are standard in
+  recorded/decoherent histories and quantum Darwinism. Those programs do not
+  make “exactly two witnesses” a universal actuality threshold, and neither
+  does Cycle 182
+  ([Hartle](https://arxiv.org/abs/1608.04145);
+  [Blume-Kohout–Zurek](https://arxiv.org/abs/quant-ph/0505031)).
+
+The potentially distinctive result is therefore the integration and proof
+discipline: permanent local ancestry serves simultaneously as data, causal
+certificate, and control medium; contexts become ordinary physical bits and
+stored tapes; and finite constructions are attacked with schedule, deletion,
+mutation, covariance, and predecessor controls while availability,
+occurrence, weight, and frequency remain separate obligations.
+
+That may support a formal construction result after a broader novelty search.
+It is not yet a novel physical mechanism. The unusual part is currently the
+compiler and its verification, while coherent quantum evolution, actual
+occurrence, continuum physics, and empirical predictions remain open.
+
 ## Lane-distance snapshot
 
 The lanes are not equally far from closure.
 
-| Lane | Nearest retained result | Remaining distance |
+| Lane | Strongest current source-grade or conditional result | Remaining distance |
 |---|---|---|
-| classical record information | orthogonal H0/H1 formation, recurrent transport, deletion controls | comparatively close at grade 2; binding, renewal, and interaction remain |
+| classical record information | orthogonal H0/H1 formation, recurrent transport, generated all-five membership, deletion controls | comparatively close at grade 2; renewal and interaction remain |
 | causal order | exact load-bearing DAG and scheduler-independent depth | close for discrete order; far for rate, calibration, Lorentz metric, and continuum |
 | bounded algebraic computation | complete stabilizer update and six-context calculator | strong compiler closure; not yet a microscopic quantum process law |
-| quantum measurement/probability | preterminal pointer dilation, exact interference, normalized finite process, record-fibre sufficiency, one common H/CNOT context interpreter, exact conditional frequency bridge | viable conditional architecture; reduced but still large gap to microscopic gate law, physical dispatch, derivation of Born pairing/component means, and actuality |
-| matter | recurrent localized ancestry, repaired tube contact, and exact two-bundle shell coexistence for all 1,024 word pairs | large gap: exposed payload interaction, binding, nontrivial scattering, coherent propagation, statistics, charges, spectrum, masses |
+| quantum measurement/probability | preterminal pointer dilation, exact interference, normalized finite process, record-fibre sufficiency, one common H/CNOT context interpreter, physical context dispatch, exact conditional frequency bridge | viable conditional architecture; reduced but still large gap to microscopic gate semantics, effect completion, derivation of component means, and actuality |
+| matter | recurrent localized ancestry, generated finite membership, exact shell coexistence for all 1,024 word pairs, and one two-bundle classical XOR interaction | large gap: whole-object interaction, dynamical binding, nontrivial quantum scattering, coherent propagation, statistics, charges, spectrum, masses |
 | gravity/resource | exact record cost and append-only trail accounting | very large gap: conserved source, universal tensor response, equivalence principle, continuum dynamics |
 | cosmology/boundary | named finite seeds and relational-boundary candidates | large gap: first records, one physical boundary/state, multi-carrier generation, observed large-scale state |
-| law selection | one increasingly capable 101,996-row compiler | foundational gap: compact microscopic law/equivalence class and independent prediction |
+| law selection | one deterministic 102,398-row common-base candidate table for the newest classical interaction and dispatch bridges | foundational gap: simultaneous mixed composition, compact microscopic law/equivalence class, complete domain, and independent prediction |
 
 “Close” here means close to a sharply stated conditional theorem, not close
 to experimental confirmation or a finished TOE.
+
+Against the repository's declared `O/T/I/G/B` interface gate, the same result
+reads:
+
+| interface | campaign bridge | present gate |
+|---|---|---|
+| `O` operational quantum closure | Cycle 189 positive record process; Cycle 191 common interpreter; Cycle 193 physical program dispatch; Cycles 194/195 frequency and effect-completion classifiers | microscopically execute the program tokens and realize one effect-complete repeated process |
+| `T` time and causal continuum | Cycle 170 causal depth; Cycle 22 commit clock; Cycle 46 order-plus-density metric route | derive occurrence, relative clock ratios, and causal/volume-faithful continuum |
+| `I` matter and individuation | Cycles 178/180 literal compact carrier; Cycle 190 generated all-five membership; Cycles 188/192 transparent contact; Cycle 196 classical joint payload record | generate dynamical binding, whole-object/coherent scattering, propagation, statistics, chirality, spectrum |
+| `G` resource, thermodynamics, gravity | exact append cost and finite-capacity/export constraints | identify conserved source, renewal, entropy, universal response, and continuum dynamics |
+| `B` boundary and realized history | finite supplied seeds, preparation records, and classified actual-member routes | generate first/repeated preparations and interacting carriers from one physical boundary |
+
+The campaign has organized all five interfaces in one comparison vocabulary
+and tested several of them against one candidate record-law family. No single
+microscopic law yet produces all five bridges in one dependency chain.
 
 ## Missing framework content
 
 ### 1. Exact microscopic law identity
 
-The current law is a large hand-assembled compiler. Cycle 185 shows that its
-101,996 raw rows contain 4,414 proper-cubic cases and compress strongly under
-one representation, so no incompressibility claim is licensed. It is still
-not a compact natural rule, a unique consequence of the foundation, or an
-empirically selected equivalence class.
+The current constructions use large hand-assembled compiler branches. Cycle
+185 shows that the 101,996-row carrier branch contains 4,414 proper-cubic
+cases and compresses strongly under one representation, so no
+incompressibility claim is licensed. Cycle 190 extends that branch to 102,338
+rows; Cycle 193 uses a separate 101,768-row dispatcher branch. A direct union
+has 1,032 shared raw signatures with different outputs. All 1,032 conflicts
+come from the inherited Cycle-178 versus Cycle-179 bases; none comes from the
+new Cycle-190 egress rows or Cycle-193 router/scan rows.
+
+The conflict set is exactly Cycle 175's deliberate “same signature, changed
+output” replacement of the older Cycle-169 codebook: 43 complete
+proper-cubic orbits in seven output-pair families. This is branch-version
+drift, not evidence that the two recent physical mechanisms contradict each
+other. Cycle 197A also shows that none of those signatures is queried by the
+32 Cycle-190, four Cycle-196, or 40 Cycle-193 hard runs: multivalued union,
+either priority, and deletion of all 1,032 rows are extensionally identical on
+that bounded sector.
+
+Cycle 197B performs one constructive repair rather than waiving the literal
+defect. It selects the Cycle-175 replacement codebook as an offline compiler
+choice, retains the complete Cycle-190 table, and adds the Cycle-179 binary
+ingress plus the Cycle-193 router and scan deltas:
+
+```text
+Cycle-190 replacement-base table          102,338
++ binary ingress                                6
++ physical router                              48
++ net tape scan                                 6
+= deterministic raw candidate table       102,398
+  conflicts                                     0
+  additional onsite roles                       0
+```
+
+The Cycle-190 hard membership apparatus, all four Cycle-196 interactions and
+their controls, all sixteen Cycle-193 min/max context histories, program
+controls, and all 24 rotated R2 histories remain exact. For the hard Cycle-179
+ZI fixture, post-hoc `ROLE_MAP` translation is exactly equal to regeneration
+inside Cycle 175's replacement-codebook context. There are zero old alias
+occurrences in the initial records and 141 in expected records, all
+`A_0_2`. This proves the fixture-specific semantic migration without licensing
+a global string rename. The unchanged old-codebook Cycle-179 artifact is not
+replayed.
+
+This closes bounded raw-table compatibility for the newest information/matter
+and quantum-control bridges. It does not make the table a complete predictive
+law or select it as natural or unique. The old and replacement bases are
+indistinguishable on Cycle 197A's Cycle-190/196/193 target corpus; that
+statement does not include the mapped Cycle-179 replay. No simultaneous
+spatially mixed Cycle-190/Cycle-193 apparatus has yet been run.
+Arbitrary-boundary reachability of the 43 replaced row orbits and full-domain
+confluence remain open.
+
+The family is still not a compact natural rule, a unique consequence of the
+foundation, or an empirically selected equivalence class.
 
 A TOE needs either:
 
@@ -516,6 +714,22 @@ operator weights must still connect to actual record frequencies. Those
 remaining atoms are now isolated rather than hidden inside six supplied
 measurement tables.
 
+Cycle 193 removes the physical-dispatch item from that list. Three binary
+context records feed seven absence-safe routers, exactly one twelve-bit tape
+is selected in place, and ordered scan marks preserve the selected program's
+causal lineage. All six contexts, `OMIT`, and reserved `INVALID` close under
+minimum and maximum schedules; context and tape deletions/flips, unselected
+mutations, all 24 proper-cubic images, and the full Cycle-179 hard replay are
+exact. The dispatcher adds no onsite role and no eight- or 32-valued context
+payload.
+
+This is physical control flow, not yet a quantum gate. The residual atom is
+now precise: a homogeneous local process must interpret the selected ordered
+token stream as coherent `H0/H1/CX01/CX10` action, implement the common
+two-pointer copy and reverse program, and prepare fresh coherent
+system/pointer boundaries. Born/effect completion and repeated-process
+component means remain separate obligations.
+
 Cycle 194 closes the last implication conditionally. For each of the twelve
 Cycle-189 preparation-context protocols it constructs five stationary,
 projectively consistent repeated-block extensions with the same one-block
@@ -635,8 +849,16 @@ binary carrier with no additional law content. Both words, all ten literal
 histories, and both dependency graphs survive nearest shell contact. It also
 shows why this is not yet interaction: the shell geometrically prevents any
 H0/H1 payload site from becoming a nearest neighbour of the other bundle.
-The shortest constructive target is now a typed endpoint egress into one
-designed joint gate or scattering region.
+Cycle 190 now supplies typed endpoint egress and a common finite-membership
+lineage. Cycle 196 uses that egress to construct one designed joint payload
+gate: both incoming literal records remain readable, and one new XOR record
+depends on both. It uses only one lane per carrier and does not instantiate
+either all-five membership tree in the interaction apparatus.
+
+The shortest constructive matter target is therefore stronger: make the
+whole-object identities load-bearing in a covariant interaction, preserve or
+lawfully transform conserved incoming/outgoing content, and lift the
+classical literal gate to coherent propagation and nontrivial scattering.
 
 ### 6. Gravity and resource physics
 
@@ -730,32 +952,47 @@ constitutional sentences are required.
 
 ## Current axiom diagnosis
 
-The scientific result is **not ready for a final axiom cut**.
+No particular axiom edit is supported or forced by the current bounded
+results.
 
 What the campaign currently favours:
 
-- formation eligibility belongs naturally in the exact local law or a theorem
-  about that law, not as laboratory readout wording in Record;
-- reading can occur after formation and therefore should not define the lock;
+- formation eligibility can live in the exact local rule or a theorem about
+  that rule; the campaign does not force that placement;
+- reading can occur after formation, so the tested architecture does not need
+  reading to define the lock;
 - two witnesses can define a minimum redundancy certificate, but the current
-  evidence rejects treating their count alone as one-history actualization;
+  evidence blocks deriving one-history actualization from their count alone;
+  it does not rule out a future physical law with a tested threshold;
 - the 32-valued onsite carrier should not be constitutionalized; spatial
-  binary encoding is the honest route;
+  binary encoding is one demonstrated physical route;
 - generated finite composition must be derived from the law domain,
   operationally reconstructed, or stated explicitly before multi-site quantum
   code claims are unconditional;
 - an exact-law identification remains a more important Admissibility issue
-  than polishing a two-witness sentence; and
+  than polishing a two-witness sentence;
 - the exact law must include or derive its lawful state domain and occurrence
   semantics; raw deterministic row outputs are insufficient;
+- Qualification's phrase “at every state ... exactly one answer” must
+  eventually distinguish one local output per signature from one global
+  continuation/history; Cycles 186–188 show that the former does not imply
+  the latter;
 - exact contact/scattering content must be built into or derived from the law
   before the recurrent carrier is treated as matter;
+- generated finite membership and typed egress close without constitutional
+  content, so the earlier Cycle-183 failure supplies no axiom pressure;
+- a bounded two-source classical payload interaction also closes with
+  existing law rows, so payload contact by itself supplies no interaction
+  axiom pressure;
 - late selection among precomputed terminal records is not a quantum
   instrument and should not be constitutionalized as “readout”; and
 - complete record configurations can be predictively sufficient for one
   nontrivial quantum process, so no Qualification edit is presently forced;
 - six contextual instruments can share one compact real-Clifford interpreter,
   so context variety by itself is not evidence for six primitive laws;
+- physical context choice and tape selection can be ordinary binary
+  record dynamics, so a host dispatcher or context-valued primitive is not
+  required;
 - observed frequencies require a theorem about the repeated process's
   invariant components, not an independent frequency postulate or an IID
   axiom;
@@ -770,18 +1007,18 @@ What the campaign currently favours:
 - Record permanence should remain under pressure until renewal, local
   non-revocation, and storage-resource routes are compared.
 
-Possible future constitutional atoms remain candidates, not conclusions:
+Possible future specification pressures remain candidates, not conclusions:
 
-1. an exact-law or exact physical-equivalence-class referent in
-   Admissibility;
+1. an exact specification or cross-reference for the fixed-rule slot already
+   present in Admissibility;
 2. generated finite composition if it cannot be derived from that law;
 3. predictive sufficiency of record configurations if coherent future
    dependence is reconstructed from records; and
 4. local non-revocation in place of unqualified global permanence if the
    resource/renewal lane forces that distinction.
 
-The two-witness rule is presently a successful candidate-law kernel, not a
-proved universal axiom minimum.
+The two-witness rule is presently a bounded eligibility/redundancy kernel, not
+a proved universal formation law or axiom minimum.
 
 The old counting sentence also does not survive as generic Record content.
 Post-formation scalar readout additivity applies to disjoint records that
@@ -794,23 +1031,24 @@ and mass bridges.
 
 ## Decision gate before any final edit
 
-One final foundation edit should wait until these tests are complete:
+Any foundation edit should wait until these remaining tests are complete.
+Generated all-five membership and physical context dispatch are now closed
+bounded constructions rather than items on this list.
 
-1. a generated all-five membership/binding record on the compact carrier,
-   with cross-bit ancestry and deletion controls;
-2. physically dispatch the Cycle-191 H/CNOT programs, microscopically
-   implement that common interpreter, derive a normalized effect-complete
-   operational law so trace form follows, and prove the Cycle-194
-   component-mean condition for its repeated process;
-3. one autonomous full-law binary interpreter macrocell, or a decisive direct
-   smaller-law alternative, followed by exact-law compression/selection;
-4. use typed endpoint egress to move beyond Cycle-192 shielded shell contact
-   and construct one nontrivial covariant payload interaction/scattering
-   kernel;
-5. occurrence/actual-history classification on the resulting lawful
+1. microscopically implement the common Cycle-191 interpreter, derive a
+   normalized effect-complete operational law so trace form follows, and
+   prove the Cycle-194 component-mean condition for its repeated process;
+2. simultaneous mixed Cycle-190/Cycle-193 geometry under the Cycle-197 common
+   base, then one autonomous full-law binary interpreter macrocell or a
+   decisive smaller-law alternative, followed by exact-law
+   compression/selection;
+3. lift Cycle-196's classical one-lane XOR contact to a covariant,
+   whole-object coherent interaction/scattering kernel with conserved
+   incoming/outgoing content;
+4. occurrence/actual-history classification on the resulting lawful
    multi-apparatus domain;
-6. one-boundary generation of multiple carriers; and
-7. record-capacity/renewal comparison against absolute permanence.
+5. one-boundary generation of multiple carriers; and
+6. record-capacity/renewal comparison against absolute permanence.
 
 If those tests close without new ontology, the axiom update may be small or
 zero. If they fail for the same independent reason across live architectures,
@@ -832,14 +1070,14 @@ local record computer
 
 The campaign has substantially strengthened the first three steps and exposed
 the exact interfaces between them. The TOE remains open at quantum process,
-actuality, law selection, matter, and gravity. No final axiom edit is yet
-scientifically justified.
+actuality, law selection, matter, and gravity. No particular axiom edit is
+supported or forced by the current bounded results.
 
 The minimum honest pre-language conclusion is:
 
 ```text
 do not add “read,” “clock,” or “two witnesses” as an actuality slogan;
-do not promote the 101,996-row compiler table as fundamental law;
+do not promote any large compiler branch as fundamental law;
 do require the eventual law to define or derive
     its physical domain,
     its occurrence/process semantics,

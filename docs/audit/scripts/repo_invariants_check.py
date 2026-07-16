@@ -296,6 +296,26 @@ def scan_markdown_link_targets(text: str) -> list:
 
 
 
+def _git_tracked_modes() -> dict:
+    """Repo-relative path -> index mode string (e.g. '100644', '120000').
+    Index modes are pure tracked state: worktree mutations cannot perturb
+    them, and a fresh clone reproduces exactly these kinds (BUG-26)."""
+    proc = subprocess.run(
+        ["git", "-C", REPO_ROOT, "ls-files", "-z", "-s"],
+        capture_output=True,
+        text=True,
+    )
+    if proc.returncode != 0:
+        raise RuntimeError(f"git ls-files -s failed: {proc.stderr.strip()}")
+    modes = {}
+    for entry in proc.stdout.split("\0"):
+        if not entry:
+            continue
+        meta, _tab, path = entry.partition("\t")
+        modes[path] = meta.split(" ", 1)[0]
+    return modes
+
+
 def _git_tracked_files() -> list:
     proc = subprocess.run(
         ["git", "-C", REPO_ROOT, "ls-files", "-z"],
@@ -489,6 +509,7 @@ def collect_authority_links(tracked: list) -> dict:
                 continue
             candidates.setdefault(resolved, set()).add(rel)
 
+    modes = _git_tracked_modes()
     violations = [
         {"target": target, "reason": "absolute-path", "sources": sorted(sources)}
         for target, sources in sorted(absolutes.items())
@@ -498,7 +519,19 @@ def collect_authority_links(tracked: list) -> dict:
     ]
     for rel in sorted(candidates):
         is_dir_link = rel.rstrip("/") in tracked_dirs
-        if rel in tracked_set or is_dir_link:
+        if rel in tracked_set:
+            # A tracked target must also be a regular blob: a symlink or
+            # submodule entry renders as a pathname/commit pointer for a
+            # GitHub reader and dereferences nothing in a fresh clone
+            # (BUG-26). Judged from index modes only.
+            if modes.get(rel) not in ("100644", "100755"):
+                violations.append({
+                    "target": rel,
+                    "reason": "irregular-target",
+                    "sources": sorted(candidates[rel]),
+                })
+            continue
+        if is_dir_link:
             continue
         # The single reason derives from the tracked set ONLY: local ignore
         # rules and untracked scratch files can never change the serialized

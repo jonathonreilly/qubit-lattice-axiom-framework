@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_arrow_from_record_formation_2026_06_05.py
-runner_sha256: 359800c89117f022d2d9dd16bd1fbec04b6a665d6592f6615491806b59e45cbf
+runner_sha256: d1306f32dc634dded2c9263152084ffd2533cf3d0cb7bf7c29d635532de5b2a9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 Arrow-of-time from record formation -- explicit small-system test
@@ -76,12 +76,14 @@ record write: H_k = (pi/2) |1><1|_sys (x) X_k  (real-symmetric CNOT imprint)
   Admitted (irreducible residual):
     * the EXISTENCE of a LOW-record (low-entropy) initial condition.
       = the PAST HYPOTHESIS (Boltzmann / Penrose). The framework does NOT
-      derive a preferred low-entropy boundary from {Lattice, Quantum, Record};
-      Record supplies registration, not a low-entropy initial.
-  Classification: UNIVERSAL-FLOOR. Every physical theory with time-symmetric
-    microdynamics (CM, QM, QFT, GR) needs this same boundary admission to get
-    a thermodynamic arrow. It is NOT a framework-specific gap.
-[PASS] residual is exactly the initial condition (boundary), nothing else -- same map: low-record -> arrow; high-record -> reversed; I/d -> none
+      derive a preferred low-entropy boundary from {Lattice, Qubit, Admissibility, Record};
+      Record supplies occurrence, admissible locking, permanence,
+      content-determined readout, and finite additivity, not a low-entropy initial.
+  Classification: an explicit open boundary condition (the past hypothesis).
+    Standard time-symmetric physics (CM, QM, QFT, GR) likewise needs a
+    low-entropy past boundary for a thermodynamic arrow -- an external
+    comparator, not a claim derived from the finite toy controls here.
+[PASS] on the tested sequential-CNOT schedule, the residual is its selected initial condition (the low-record boundary) -- same map: low-record -> arrow; high-record -> reversed; I/d -> none; scoped to this tested schedule, not all schedules
 
 ========================================================================
 (4) COLLAPSE CHECK -- past hypothesis vs typicality vs rho=I/d
@@ -93,7 +95,7 @@ record write: H_k = (pi/2) |1><1|_sys (x) X_k  (real-symmetric CNOT imprint)
       (no information; the no-arrow fixed point, control 2b).
     * past hypothesis = a LOW-entropy, ordered GLOBAL-INITIAL condition
       (the source of the arrow, control 1).
-    => DISTINCT admissions: a local max-entropy reference state is NOT the
+    => DISTINCT conditions: a local max-entropy reference state is NOT the
        global low-entropy boundary. (Same map gives flat from I/d but a
        monotone arrow from the low-record state.)
   Born typicality (operational omega = frequency) is a WEIGHT/measure
@@ -101,7 +103,9 @@ record write: H_k = (pi/2) |1><1|_sys (x) X_k  (real-symmetric CNOT imprint)
     condition. The past hypothesis is a STATE-SELECTION (low-entropy boundary),
     orthogonal to how outcome frequencies are weighted. => DISTINCT.
 [PASS] past hypothesis (low entropy) is distinct from rho=I/d (max entropy) -- low-record S=0.00 vs I/d S=6.00 = opposite extremes
-[PASS] past hypothesis (state selection) is distinct from Born typicality (weight) -- boundary-condition admission, not an outcome-frequency admission
+  (narration, not scored) the past hypothesis is a STATE SELECTION (a
+  low-entropy boundary condition), whereas Born typicality is a WEIGHT on
+  within-sector outcomes -- conceptually distinct roles.
 
 ========================================================================
 VERDICT
@@ -111,16 +115,17 @@ VERDICT
   (T=e^{-H} self-adjoint; Theta U Theta = U^{-1}) carries NO direction; the
   arrow reverses (2a) / vanishes (2b,2c) when the initial condition changes.
   IRREDUCIBLE RESIDUAL = the existence of a low-record (low-entropy) initial
-  = the PAST HYPOTHESIS, a UNIVERSAL-FLOOR admission shared by every
-  time-symmetric physical theory, NOT a framework-specific gap.
+  = the PAST HYPOTHESIS, an explicit open boundary condition; standard
+  time-symmetric physics needs the same low-entropy past boundary
+  (an external comparator, not derived from the finite toy controls here).
   It is DISTINCT from rho=I/d (max-entropy reference; opposite extreme) and
   from Born typicality (a weight, not a boundary). NOT a from-nothing arrow.
 
 ========================================================================
 SELF-CHECK
 ========================================================================
-PASS=20 FAIL=0
-PEAK_RSS_MB=59.6
+PASS=19 FAIL=0
+PEAK_RSS_MB=55.3
 
 [log written] logs/frontier_arrow_from_record_formation_2026_06_05.txt
 

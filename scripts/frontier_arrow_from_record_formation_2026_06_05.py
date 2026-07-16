@@ -18,7 +18,7 @@ THE QUESTION (honest)
 Does record formation DERIVE the arrow, and is the irreducible residual exactly
 the past hypothesis?  The advertised (and, below, confirmed) outcome is NOT a
 from-nothing derivation: it is that record formation supplies the arrow's
-DIRECTION = "away from the low-record boundary", while the irreducible admission
+DIRECTION = "away from the low-record boundary", while the irreducible open condition
 is the EXISTENCE of a low-record (low-entropy) initial condition = the past
 hypothesis. That pinning is the result; "derived the arrow" would be an
 over-claim and is explicitly NOT made.
@@ -76,7 +76,7 @@ WHAT THIS RUNNER CHECKS (PASS/FAIL self-check at the end)
  (2c) From a generic high-entropy state, R does NOT monotonically grow; the
       record functional fluctuates (arrow vanishes; no clean pointer to copy).
  (3)  RESIDUAL LEDGER: the only thing that flips (1) from increase to
-      decrease/flat is the initial condition. The admission = existence of a
+      decrease/flat is the initial condition. The open condition = existence of a
       low-record initial = the past hypothesis (printed, not asserted).
  (4)  COLLAPSE CHECK: the past hypothesis (LOW entropy, ordered) is distinct
       from the I/d reference (MAX entropy) and from Born typicality (a
@@ -85,7 +85,7 @@ WHAT THIS RUNNER CHECKS (PASS/FAIL self-check at the end)
 
 This is a structural / boundary-condition result. It does NOT derive a
 preferred low-entropy initial from the axioms (that is the irreducible
-past-hypothesis admission), does NOT supply record-production dynamics as an
+past-hypothesis open condition), does NOT supply record-production dynamics as an
 axiom, and does NOT claim a from-nothing arrow.
 """
 
@@ -382,15 +382,17 @@ def main() -> int:
     emit("      derive a preferred low-entropy boundary from {Lattice, Qubit, Admissibility, Record};")
     emit("      Record supplies occurrence, admissible locking, permanence,")
     emit("      content-determined readout, and finite additivity, not a low-entropy initial.")
-    emit("  Classification: UNIVERSAL-FLOOR. Every physical theory with time-symmetric")
-    emit("    microdynamics (CM, QM, QFT, GR) needs this same boundary admission to get")
-    emit("    a thermodynamic arrow. It is NOT a framework-specific gap.")
-    # self-check: the open input is exactly the boundary, witnessed by (1)+(2a)+(2b)
+    emit("  Classification: an explicit open boundary condition (the past hypothesis).")
+    emit("    Standard time-symmetric physics (CM, QM, QFT, GR) likewise needs a")
+    emit("    low-entropy past boundary for a thermodynamic arrow -- an external")
+    emit("    comparator, not a claim derived from the finite toy controls here.")
+    # self-check: on the tested schedule, the open input is the selected boundary,
+    # witnessed by (1)+(2a)+(2b). Scoped to this schedule, not all schedules.
     residual_is_boundary = (red_strict and rev_strict
                             and all(x == red_eq[0] for x in red_eq))
-    record("residual is exactly the initial condition (boundary), nothing else",
+    record("on the tested sequential-CNOT schedule, the residual is its selected initial condition (the low-record boundary)",
            residual_is_boundary,
-           "same map: low-record -> arrow; high-record -> reversed; I/d -> none")
+           "same map: low-record -> arrow; high-record -> reversed; I/d -> none; scoped to this tested schedule, not all schedules")
 
     # ------------------------------------------------------------------ (4)
     section("(4) COLLAPSE CHECK -- past hypothesis vs typicality vs rho=I/d")
@@ -404,7 +406,7 @@ def main() -> int:
     emit("      (no information; the no-arrow fixed point, control 2b).")
     emit("    * past hypothesis = a LOW-entropy, ordered GLOBAL-INITIAL condition")
     emit("      (the source of the arrow, control 1).")
-    emit("    => DISTINCT admissions: a local max-entropy reference state is NOT the")
+    emit("    => DISTINCT conditions: a local max-entropy reference state is NOT the")
     emit("       global low-entropy boundary. (Same map gives flat from I/d but a")
     emit("       monotone arrow from the low-record state.)")
     emit("  Born typicality (operational omega = frequency) is a WEIGHT/measure")
@@ -415,8 +417,9 @@ def main() -> int:
     record("past hypothesis (low entropy) is distinct from rho=I/d (max entropy)",
            distinct_from_Id,
            f"low-record S={S_low_total:.2f} vs I/d S={S_eq_total:.2f} = opposite extremes")
-    record("past hypothesis (state selection) is distinct from Born typicality (weight)",
-           True, "boundary-condition admission, not an outcome-frequency admission")
+    emit("  (narration, not scored) the past hypothesis is a STATE SELECTION (a")
+    emit("  low-entropy boundary condition), whereas Born typicality is a WEIGHT on")
+    emit("  within-sector outcomes -- conceptually distinct roles.")
 
     # ------------------------------------------------------------------ verdict
     section("VERDICT")
@@ -425,8 +428,9 @@ def main() -> int:
     emit("  (T=e^{-H} self-adjoint; Theta U Theta = U^{-1}) carries NO direction; the")
     emit("  arrow reverses (2a) / vanishes (2b,2c) when the initial condition changes.")
     emit("  IRREDUCIBLE RESIDUAL = the existence of a low-record (low-entropy) initial")
-    emit("  = the PAST HYPOTHESIS, a UNIVERSAL-FLOOR admission shared by every")
-    emit("  time-symmetric physical theory, NOT a framework-specific gap.")
+    emit("  = the PAST HYPOTHESIS, an explicit open boundary condition; standard")
+    emit("  time-symmetric physics needs the same low-entropy past boundary")
+    emit("  (an external comparator, not derived from the finite toy controls here).")
     emit("  It is DISTINCT from rho=I/d (max-entropy reference; opposite extreme) and")
     emit("  from Born typicality (a weight, not a boundary). NOT a from-nothing arrow.")
 

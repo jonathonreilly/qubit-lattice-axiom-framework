@@ -58,15 +58,15 @@ record-forming dynamics realized as redundant pointer broadcast:
    The sign of the candidate arrow is therefore an **output** fixed entirely by
    the initial condition, with the dynamics held fixed.
 
-4. **(3) Residual = the past hypothesis (universal-floor).** Record formation
+4. **(3) Residual = the past hypothesis.** Record formation
    derives the arrow's **direction** = "away from the low-record boundary". The
    irreducible open input is the **existence of a low-record (low-entropy)
    initial condition**, i.e. the **past hypothesis** (Boltzmann/Penrose). The
    four axioms supply registration (Record), a carrier (Qubit), and a site
-   set (Lattice) but **no** preferred low-entropy boundary. This open input is
-   **universal-floor**: every theory with time-symmetric microdynamics (CM, QM,
-   QFT, GR) needs the same boundary input for a thermodynamic arrow. It is
-   **not** a framework-specific gap.
+   set (Lattice) but **no** preferred low-entropy boundary. This mirrors the
+   low-entropy past boundary needed in standard time-symmetric physics (CM, QM,
+   QFT, GR) — an external comparator, not a universal claim derived from the
+   finite toy controls here.
 
 5. **(4) Collapse check — distinct from `I/d` and from typicality.** The past
    hypothesis (total vN entropy `0` bits, **ordered**, the source of the arrow)
@@ -76,7 +76,7 @@ record-forming dynamics realized as redundant pointer broadcast:
    low-entropy initial. Born "typicality" (operational `omega = frequency`) is a
    **weight/measure** statement on within-sector outcomes and does **not** name
    a global initial condition. So the past hypothesis is a distinct, third kind
-   of admission: a **boundary state-selection**, orthogonal to both the
+   of open condition: a **boundary state-selection**, orthogonal to both the
    `I/d` reference and the outcome-frequency weight.
 
 ## What Is NOT Claimed
@@ -119,11 +119,12 @@ low-record boundary, not by `T`.
 - `MINIMAL_AXIOMS_2026-06-29.md` — lists arrow/measurement/decoherence/
   record-production dynamics as gates outside the four axioms; this note pins
   the arrow gate's residual.
-- `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` — the central admitted-
-  input registry; the past hypothesis sits with the universal-floor admissions
-  (scale reference / strong-CP-style shared problems), not the framework-specific
-  Tier A-1 derivation targets (AC_phi_lambda, theta). This note does not add a
-  row to any audit-lane data file.
+- `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` — historical target
+  registry (historical only; carries no current status authority). The past
+  hypothesis is an explicit open boundary condition of the same kind as other
+  shared-physics open inputs (a low-entropy past boundary, as in standard
+  time-symmetric physics), not a framework-specific derivation target. This note
+  does not add a row to any audit-lane data file.
 - `AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01.md` — its "matter
   second law `delta S_matter >= 0` under unital evolution" step is precisely the
   direction-relative statement this note grounds: entropy non-decrease holds

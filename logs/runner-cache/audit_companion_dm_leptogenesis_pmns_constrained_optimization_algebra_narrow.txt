@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py
-runner_sha256: e6fc2b5f4c27611dd29c1f39f5c340b6a997b854a40d3c966962e02199417051
+runner_sha256: 6c542b5fc99472959408d7f5ebfd24d6cb7505f19803400a05f3039403f04270
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.66
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 ========================================================================================

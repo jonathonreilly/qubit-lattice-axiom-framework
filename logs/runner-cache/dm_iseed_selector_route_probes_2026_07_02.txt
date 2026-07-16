@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/dm_iseed_selector_route_probes_2026_07_02.py
-runner_sha256: f6674a33637acd6d52f416f43e28d9664aa7a1ce407db7fd10cf4754eaf5c746
+runner_sha256: b1b37c9518ef112b773ebb3bc8bd75e3045e725c1da605f77ff73a97441be1e3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.50
+elapsed_sec: 6.58
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -14,13 +14,13 @@ seed surface: x_seed=(xbar,xbar,xbar), y_seed=(ybar,ybar,ybar)
   xbar=0.5633333333333334, ybar=0.30666666666666664, eta_obs=6.12e-10
 I_seed = D_KL(x||x_seed) + D_KL(y||y_seed) + (1 - cos delta)  [note's info_cost]
 transport map eta_columns imported from the gate note's own runner stack
-realized_state primitive respected: pointwise evaluation, no typicality
+scope: supplied positive points only; no law-admissibility or framework no-go claim
 
 ========================================================================================
-PROBE 1: axiom-surface independence of the favored column i_*
+PROBE 1: finite supplied-surface contingency of the favored column i_*
 ========================================================================================
-[PASS] Two supplied positive realized states favor DIFFERENT transport columns
-       witness: assignment A favors column 0: x=[0.076521, 0.076521, 1.536959], y=[0.10506 , 0.038649, 0.776291], delta=0, eta/eta_obs=[0.468627, 0.468618, 0.219751] | assignment B favors column 1: x=[0.076521, 0.076521, 1.536959], y=[0.041656, 0.041656, 0.836688], delta=0, eta/eta_obs=[0.442683, 0.442683, 0.222029] | both on fixed seed surface (mean-xbar/mean-ybar)=True | distinct favored columns 0 != 1
+[PASS] Two supplied positive points robustly favor DIFFERENT transport columns
+       witness: assignment A favors column 0: x=[0.413591, 0.152152, 1.124257], y=[0.238737, 0.03231 , 0.648954], delta=0.6, eta/eta_obs=[1.049296, 0.64249 , 0.632491], margin=0.406805941 | assignment B favors column 1: x=[1.124257, 0.413591, 0.152152], y=[0.648954, 0.238737, 0.03231 ], delta=0.6, eta/eta_obs=[0.632491, 1.049296, 0.64249 ], margin=0.406805941 | both on fixed seed surface (mean-xbar/mean-ybar)=True | both margins > 1e-06 | distinct favored columns 0 != 1
 
 ========================================================================================
 PROBE 2: weighting-principle dependence of the I_seed argmin

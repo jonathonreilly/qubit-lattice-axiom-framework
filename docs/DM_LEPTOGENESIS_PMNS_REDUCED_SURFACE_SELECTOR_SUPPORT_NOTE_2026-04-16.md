@@ -31,8 +31,8 @@ anchors, and local SLSQP polishing. Its three-branch requirement is an explicit
 test, not a theorem.
 
 The current live runner finds two clustered candidates and exits nonzero because
-it does not stabilize to the required three branches. The same failure is
-present on the comparison baseline. Therefore this note does not claim:
+it does not stabilize to the required three branches. Therefore this note does
+not claim:
 
 - a certified three-branch count;
 - a unique lowest-action branch;

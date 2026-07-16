@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py
-runner_sha256: 00829b9b0b0028f4e2ab994abcf545a1997df74f7988925ea26b564d2f28c6c2
+runner_sha256: 8662518ea69926073d8ce0c6dbb51e47518bb220f864d2811085067b7f9da7e9
 timeout_sec: 1800
 exit_code: 1
-elapsed_sec: 21.52
+elapsed_sec: 21.49
 status: nonzero_exit
 ----- stdout -----
 ========================================================================================
@@ -20,7 +20,7 @@ Question:
 Scope:
   The chart, transport, equality, and readout are supplied. This runner
   does not exclude candidates outside the chart or prove a global minimum.
-  [FAIL] The deterministic chart diagnostic stabilizes to the required three candidates  (exhaustive chart cover did not stabilize to exactly three stationary branches (found 2))
+  [FAIL] The deterministic chart diagnostic stabilizes to the required three candidates  (finite deterministic chart diagnostic did not stabilize to exactly three stationary candidates (found 2))
 
 ========================================================================================
 RESULT

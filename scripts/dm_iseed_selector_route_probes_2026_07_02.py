@@ -11,11 +11,10 @@ Paired note:
 That note is explicit that the minimum-information selector `I_seed` and the
 favored-column equality constraint `eta_{i_*} / eta_obs = 1` are ADOPTED
 (imported from information geometry), not derived from the Lattice + Qubit +
-Admissibility + Record baseline. These probes test three route claims about WHY
-the selector is non-baseline. Each probe is refutation-shaped: it states a
-hypothesis that could be false, computes a witness, and FAILS honestly if the
-witness does not exist. An honest miss reported as a FAIL is a win; a fake pass
-is not.
+Admissibility + Record baseline. These probes test three finite properties of
+that adopted fixture. Each probe is refutation-shaped: it states a hypothesis
+that could be false, computes a witness, and FAILS honestly if the witness does
+not exist. An honest miss reported as a FAIL is a win; a fake pass is not.
 
 Objects reused verbatim from the gate note and its primary runner
 (scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py):
@@ -27,10 +26,9 @@ Objects reused verbatim from the gate note and its primary runner
     imported from the same modules the gate runner imports, so eta ratios here
     are the note's real transport object, not a re-invented proxy.
 
-The "realized_state primitive: pointwise evaluation only, no typicality" rule is
-respected: each supplied realized-state assignment is a single explicit point
-on the supplied fixed-sum seed surface, evaluated pointwise. No measure, no ensemble,
-no typicality assumption is used anywhere.
+Each assignment is only a supplied positive point on the fixed-sum seed
+surface. The probes do not certify law admissibility, invoke the
+`realized_state` primitive, or infer a framework-wide no-go.
 
 Runs from the worktree root:  python3 scripts/dm_iseed_selector_route_probes_2026_07_02.py
 Exit code 0 iff every probe PASSes.
@@ -157,25 +155,24 @@ def fmt(v: np.ndarray) -> str:
 
 
 # ---------------------------------------------------------------------------
-# P1: axiom-surface independence of the favored column
+# P1: finite supplied-surface contingency of the favored column
 # ---------------------------------------------------------------------------
-def probe1_axiom_surface_independence() -> None:
-    """Hypothesis: the I_seed-relevant favored column i_* = argmax_i eta_i is NOT
-    fixed by the axiom surface alone; two supplied positive realized-state
-    assignments on the SAME fixed-sum seed surface can transport-favor
-    DIFFERENT columns. If such a pair exists, i_* is state-contingent registered
-    data, so no axiom-level derivation can pin it without the realized state.
+def probe1_supplied_surface_contingency() -> None:
+    """Hypothesis: two supplied positive points on the SAME fixed-sum seed
+    surface robustly transport-favor DIFFERENT columns under the supplied
+    finite map.
 
-    Refutation-shaped: if the finite small-grid search of on-surface
-    realized states all favor the SAME column, the hypothesis is unsupported and
-    this probe FAILS honestly on that grid.
+    Refutation-shaped: a candidate is accepted only when its largest transport
+    value exceeds the runner-up by more than `separation_tol`. If the finite
+    grid has fewer than two separated favored columns, this probe FAILS.
     """
     print("\n" + "=" * 88)
-    print("PROBE 1: axiom-surface independence of the favored column i_*")
+    print("PROBE 1: finite supplied-surface contingency of the favored column i_*")
     print("=" * 88)
 
     grid = np.linspace(-3.0, 3.0, 7)
-    seen: dict[int, tuple[np.ndarray, np.ndarray, float]] = {}
+    separation_tol = 1e-6
+    best: dict[int, tuple[np.ndarray, np.ndarray, float, np.ndarray, float]] = {}
     for ax in grid:
         for ay in grid:
             for bx in grid:
@@ -183,45 +180,42 @@ def probe1_axiom_surface_independence() -> None:
                     for delta in (0.0, 0.6, 1.2):
                         x = soft3(ax, ay, 3.0 * XBAR)
                         y = soft3(bx, by, 3.0 * YBAR)
-                        col = favored_column(x, y, delta)
-                        if col not in seen:
-                            seen[col] = (x, y, delta)
-        if len(seen) >= 2:
-            break
+                        eta = eta_columns(x, y, delta)
+                        order = np.argsort(eta)
+                        col = int(order[-1])
+                        margin = float(eta[order[-1]] - eta[order[-2]])
+                        if margin > separation_tol and (
+                            col not in best or margin > best[col][4]
+                        ):
+                            best[col] = (x, y, delta, eta, margin)
 
-    passed = len(seen) >= 2
+    passed = 0 in best and 1 in best
     if passed:
-        cols = sorted(seen.keys())
-        c_a, c_b = cols[0], cols[1]
-        xa, ya, da = seen[c_a]
-        xb, yb, db = seen[c_b]
-        # Confirm both assignments are on the supplied fixed-sum surface (pointwise).
+        c_a, c_b = 0, 1
+        xa, ya, da, eta_a, margin_a = best[c_a]
+        xb, yb, db, eta_b, margin_b = best[c_b]
         on_surface = (
             abs(np.mean(xa) - XBAR) < 1e-12
             and abs(np.mean(ya) - YBAR) < 1e-12
             and abs(np.mean(xb) - XBAR) < 1e-12
             and abs(np.mean(yb) - YBAR) < 1e-12
         )
-        eta_a = eta_columns(xa, ya, da)
-        eta_b = eta_columns(xb, yb, db)
         witness = (
             f"assignment A favors column {c_a}: x={fmt(xa)}, y={fmt(ya)}, "
-            f"delta={da:g}, eta/eta_obs={fmt(eta_a)} | "
+            f"delta={da:g}, eta/eta_obs={fmt(eta_a)}, margin={margin_a:.9f} | "
             f"assignment B favors column {c_b}: x={fmt(xb)}, y={fmt(yb)}, "
-            f"delta={db:g}, eta/eta_obs={fmt(eta_b)} | "
+            f"delta={db:g}, eta/eta_obs={fmt(eta_b)}, margin={margin_b:.9f} | "
             f"both on fixed seed surface (mean-xbar/mean-ybar)={on_surface} | "
-            f"distinct favored columns {c_a} != {c_b}"
+            f"both margins > {separation_tol:g} | distinct favored columns {c_a} != {c_b}"
         )
         passed = passed and on_surface
     else:
-        only = next(iter(seen.keys())) if seen else None
         witness = (
-            f"finite on-surface grid favored a single column {only} for every "
-            f"supplied positive realized state searched; no differing pair found "
-            f"(state-contingency is unsupported on the tested grid)"
+            f"finite on-surface grid found robust columns {sorted(best)} with "
+            f"required separation > {separation_tol:g}; no separated 0/1 pair found"
         )
     verdict(
-        "Two supplied positive realized states favor DIFFERENT transport columns",
+        "Two supplied positive points robustly favor DIFFERENT transport columns",
         passed,
         witness,
     )
@@ -253,7 +247,7 @@ def probe2_weighting_principle_dependence() -> None:
     print("=" * 88)
 
     # A finite, explicit candidate bank of supplied positive OFF-seed sources, each a
-    # single pointwise realized state on the supplied fixed-sum surface. The
+    # single supplied positive point on the fixed-sum surface. The
     # equal-logit / zero-phase point (0,0),(0,0),delta=0 IS the seed, so it is
     # skipped: the selector ranges over off-seed sources only.
     logit_pairs = [
@@ -338,7 +332,7 @@ def probe3_constraint_independence() -> None:
     print("PROBE 3: constraint independence of eta_{i_*}/eta_obs = 1")
     print("=" * 88)
 
-    # An explicit supplied model: the pure-seed realized state itself
+    # An explicit supplied model: the pure-seed point itself
     # (x_seed, y_seed, delta = 0). It satisfies every OTHER premise:
     #   - on the supplied fixed-sum seed surface: mean = xbar, ybar
     #   - positive source columns
@@ -394,9 +388,9 @@ def main() -> int:
     print(f"  xbar={XBAR}, ybar={YBAR}, eta_obs={ETA_OBS}")
     print("I_seed = D_KL(x||x_seed) + D_KL(y||y_seed) + (1 - cos delta)  [note's info_cost]")
     print("transport map eta_columns imported from the gate note's own runner stack")
-    print("realized_state primitive respected: pointwise evaluation, no typicality")
+    print("scope: supplied positive points only; no law-admissibility or framework no-go claim")
 
-    probe1_axiom_surface_independence()
+    probe1_supplied_surface_contingency()
     probe2_weighting_principle_dependence()
     probe3_constraint_independence()
 

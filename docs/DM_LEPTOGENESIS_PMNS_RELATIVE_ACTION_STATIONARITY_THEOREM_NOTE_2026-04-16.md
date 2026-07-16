@@ -258,8 +258,7 @@ column:
 These numbers reproduce the supplied helper-stack equality fixture. They do not
 establish a physical readout, a framework-native observable generator, or a
 stationary selector theorem. The current live runner reports
-`|grad S - lambda grad C|` above its acceptance threshold and exits nonzero on
-both this branch and the comparison baseline.
+`|grad S - lambda grad C|` above its acceptance threshold and exits nonzero.
 
 ## What this does not claim
 

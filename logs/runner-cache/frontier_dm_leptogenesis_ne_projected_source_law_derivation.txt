@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py
-runner_sha256: dda8cfe2f94b721d1bd6317fce54692a1d40dc076f8dedd50a112d5f16d19cfb
+runner_sha256: ddd4eb65892c2b9de9931c069c16433fc2b1b10687c92378275c591bf4d29002
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -20,10 +20,11 @@ PART 1: THE PROJECTED HERMITIAN SOURCE PACK RECOVERS H_e EXACTLY
   not the raw five-real PMNS source coordinates.
 
 ========================================================================================
-PART 2: H_e ALONE DETERMINES THE N_e ACTIVE TRANSPORT PACKET
+PART 2: THE SUPPLIED SIMPLE SPECTRUM DETERMINES THE LABELED N_e PACKET
 ========================================================================================
-  [PASS] On the charged-lepton-active branch, the PMNS packet is exactly |U_e|^2^T  (col sums=[1. 1. 1.])
-  [PASS] The packet recovered from H_e matches the canonical N_e active packet exactly  (err=1.00e-06)
+  [PASS] The supplied H_e has three separated eigenvalues in ascending label order  (evals=[0.042385 0.161161 1.571954], gaps=[0.118776 1.410793])
+  [PASS] For that simple-spectrum labeled fixture, |U_e|^2^T is doubly stochastic  (row sums=[1. 1. 1.], col sums=[1. 1. 1.])
+  [PASS] The labeled packet agrees with the six-decimal reference within its stated rounding tolerance  (err=1.00e-06)
 
   recovered N_e packet from H_e:
 [[0.915868 0.071267 0.012865]
@@ -33,25 +34,25 @@ PART 2: H_e ALONE DETERMINES THE N_e ACTIVE TRANSPORT PACKET
 ========================================================================================
 PART 3: THE CONDITIONAL FINITE FUNCTIONAL ORDERS THE SUPPLIED PACKET
 ========================================================================================
-  [PASS] Once H_e and the finite transport fixture are supplied, the packet columns are ordered algorithmically  (func_vals=[0.020997 0.025314 0.023551])
+  [PASS] For the supplied simple-spectrum labels and finite transport fixture, the packet columns are ordered algorithmically  (func_vals=[0.020997 0.025314 0.023551])
 
   finite functional values from dW_e^H-derived packet = [0.020997 0.025314 0.023551]
 
 ========================================================================================
 PART 4: BOTTOM LINE
 ========================================================================================
-  [PASS] The PMNS-assisted flavored DM derivation is stronger than the old five-real-source target  (for N_e transport, dW_e^H is sufficient)
+  [PASS] The supplied simple-spectrum fixture admits a smaller PMNS-side input than the old five-real-source target  (dW_e^H plus ascending eigenvalue labels are sufficient on this fixture)
   [PASS] The remaining PMNS-side input for this conditional reduction is the charged-lepton projected Hermitian source law  (derive dW_e^H on E_e from the current framework baseline)
-  [PASS] The current-framework DM/PMNS bridge therefore still requires evaluating the projected charged-lepton Hermitian response pack  (packet and selected column are downstream algorithmic once H_e is known)
+  [PASS] The current-framework DM/PMNS bridge therefore still requires evaluating the projected charged-lepton Hermitian response pack  (the labeled packet and selected column are downstream on a supplied simple spectrum)
 
   Updated DM-side reduction:
     - finite transport ordering is conditional on supplied inputs
-    - N_e packet is exact from H_e
+    - the supplied simple-spectrum N_e packet follows with ascending labels
     - H_e is exact from dW_e^H
     - remaining target is dW_e^H from the current framework baseline
 
 ========================================================================================
-SUMMARY: PASS=8 FAIL=0
+SUMMARY: PASS=9 FAIL=0
 ========================================================================================
 
 ----- stderr -----

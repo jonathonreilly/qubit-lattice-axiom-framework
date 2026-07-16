@@ -37,8 +37,7 @@ audit pipeline after independent review.
 
 **Primary runner:** [`scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py`](./../scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py)
 
-**Authority role:** Pattern A narrow rescope of the load-bearing
-algebraic core of the parent
+**Authority role:** narrow rescope of the load-bearing algebraic core of the parent
 `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
 row. The broad parent additionally adopts the explicit information-cost
 functional `I_seed = D_KL(x || x_seed) + D_KL(y || y_seed) + (1 - cos delta)`
@@ -256,14 +255,14 @@ framing" section:
    identical seed surface and identical constraint).
 4. The numerical readout `(x_min, y_min, delta_min)` from the parent
    runner, conditional on adopting `I_seed`.
-5. The audit-flagged hole: `I_seed` is "explicitly adopted rather
+5. The open premise boundary: `I_seed` is "explicitly adopted rather
    than derived from the current four-axiom framework baseline".
 6. The standalone calculus content `(T1)-(T3)`.
 
 This narrow theorem isolates only item 6 from items 1-5. The
 constrained-minimum uniqueness and Lagrange stationarity hold as
 pure standalone math under the explicit supplied hypotheses;
-audit-flagged hole 5 is preserved as the load-bearing
+open premise boundary 5 is preserved as the load-bearing
 supplied hypothesis `(H1)` (strict convexity of the selector). The narrow
 theorem does not promote, restate, or attempt to discharge that hole.
 

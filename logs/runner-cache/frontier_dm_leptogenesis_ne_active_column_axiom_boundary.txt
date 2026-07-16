@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_ne_active_column_axiom_boundary.py
-runner_sha256: cf2c744d7f36233017642b392fcdac693bf43543f5ad8edc7ea1663e971f5e8f
+runner_sha256: 90f5cfd103ecac2141b847f688749f2798e3bd8aef2d595f57d682933fc1c5ef
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 0.53
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -18,11 +18,11 @@ PART 1: LOAD THE CONDITIONAL FINITE TRANSPORT FIXTURE
 
   Conditional finite functional:
     F_K(P) = Σ_alpha Psi_K(P_alpha)
-  The only remaining question is whether current PMNS native data force
+  The tested question is whether four supplied summaries force
   the relevant active column on N_e.
 
 ========================================================================================
-PART 2: SAME CURRENTLY NATIVE N_e DATA CAN REALIZE THREE DIFFERENT COLUMNS
+PART 2: SAME TESTED-SUMMARY N_e DATA CAN REALIZE THREE DIFFERENT COLUMNS
 ========================================================================================
   [PASS] Sample A realizes the intended selected active column  (F=[0.025322 0.022911 0.023364])
   [PASS] Sample B realizes the intended selected active column  (F=[0.018571 0.021889 0.018014])
@@ -33,7 +33,7 @@ PART 2: SAME CURRENTLY NATIVE N_e DATA CAN REALIZE THREE DIFFERENT COLUMNS
   [PASS] All three samples share the same active branch bit  (branch_bits=[0, 0, 0])
   [PASS] But they still carry different active five-real source data  (distinct (xi_1,xi_2,eta_1,eta_2,delta))
   [PASS] Those distinct five-real source data induce different active packets  (packet distances are nonzero)
-  [PASS] And they induce three different transport-selected columns on the same current-native N_e data class  (selected_columns=[0, 1, 2])
+  [PASS] And they induce three different transport-selected columns in the same tested-summary N_e class  (selected_columns=[0, 1, 2])
 
   sample A packet:
 [[0.894104 0.067205 0.038691]
@@ -54,15 +54,15 @@ PART 2: SAME CURRENTLY NATIVE N_e DATA CAN REALIZE THREE DIFFERENT COLUMNS
 ========================================================================================
 PART 3: BOTTOM LINE
 ========================================================================================
-  [PASS] The selected N_e active transport column is not fixed by the currently native PMNS data in the tested class  (same seed pair, delta, support, and branch bit can select columns 0, 1, or 2)
+  [PASS] The selected N_e active transport column is not fixed by the four tested summaries  (same seed pair, delta, support, and branch bit can select columns 0, 1, or 2)
   [PASS] The tested PMNS-side ambiguity remains at the active five-real source level  (the column becomes algorithmic once the active source is known)
-  [PASS] The honest current-framework endpoint on this lane is a finite column-level boundary  (current PMNS native laws fix carrier and selector, not the selected active column)
+  [PASS] No full current-framework no-go follows from this finite summary class  (the samples were not shown indistinguishable under every framework datum)
 
-  Current-framework read:
+  Finite-fixture read:
     - the finite transport functional is conditional on supplied inputs
     - one-sided localization to the active block is exact
-    - the selected N_e column is still not fixed
-    - the remaining missing object is the PMNS active five-real source law
+    - the selected N_e column is not fixed by the four tested summaries
+    - no exhaustive PMNS or current-framework no-go is inferred
 
 ========================================================================================
 SUMMARY: PASS=15 FAIL=0

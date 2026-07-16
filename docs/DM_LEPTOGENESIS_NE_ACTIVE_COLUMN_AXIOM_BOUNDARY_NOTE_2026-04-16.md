@@ -8,24 +8,20 @@
 
 ## Status
 
-Finite counterexample boundary for the remaining PMNS-assisted flavored DM
-transport gap, conditional on the supplied transport equations, profiles, and
-finite column functional used by the named runner.
+Finite ambiguity diagnostic for an explicit four-summary equivalence class,
+conditional on the supplied transport equations, profiles, and finite column
+functional used by the named runner.
 
-This note answers the strongest remaining hope after the projector interface,
-active-block localization, and supplied finite transport-functional identity:
-
-maybe the current native PMNS laws still fail to fix the full active
-five-real source, but perhaps they at least force the selected transport column
-on the charged-lepton-active branch `N_e`.
+This note asks whether four explicitly tested summaries already force the
+selected transport column on the charged-lepton-active branch `N_e`.
 
 The answer is no.
 
 ## Question
 
 On the PMNS-assisted DM lane, is the selected `N_e` active transport column
-already determined by the currently native PMNS data coming from the current
-four-axiom baseline?
+already determined by the tested seed averages, phase, support count, and
+branch bit?
 
 Equivalently: after importing
 
@@ -41,7 +37,7 @@ is there still any real ambiguity left in the transport-relevant `N_e` column?
 Yes, there is still real ambiguity.
 
 There exist explicit charged-lepton-active microscopic samples that share the
-same currently native PMNS data:
+same four tested summaries:
 
 - the same seed pair `(xbar, ybar)`,
 - the same fixed phase `delta`,
@@ -58,11 +54,12 @@ and those different sources induce:
 - different values of the supplied finite transport functional,
 - and different selected active columns.
 
-In fact the same current-native `N_e` data class can realize selected column
+In fact the same tested-summary `N_e` class can realize selected column
 `0`, `1`, or `2`.
 
-So the selected `N_e` transport column is **not** fixed by the currently native
-PMNS laws from the current four-axiom baseline.
+So the selected `N_e` transport column is **not** fixed by those four summaries.
+This finite family does not establish that the samples are indistinguishable
+under every datum available from the current framework.
 
 ## Supplied selector used by the counterexample
 
@@ -76,15 +73,15 @@ computed profiles, the branch uses
 So once an active column `P` and that transport fixture are supplied, the
 finite transport read is algorithmic.
 
-The question here is strictly upstream: does the current framework PMNS lane
-already force the relevant active column on `N_e`?
+The question here is strictly upstream and limited: do the four tested
+summaries already force the relevant active column on `N_e`?
 
 For that supplied finite fixture, the explicit samples show it does not.
 
 ## Explicit counterexample family
 
-The runner exhibits three explicit charged-lepton-active samples on the same
-current-native class:
+The runner exhibits three explicit charged-lepton-active samples in the same
+tested-summary class:
 
 - same `xbar = 0.973333333333...`,
 - same `ybar = 0.41`,
@@ -103,23 +100,23 @@ source.
 
 ## Consequence
 
-This sharpens the current-framework DM/PMNS boundary one more step.
+This sharpens the finite diagnostic boundary for the tested equivalence class.
 
 What is available on the stated conditional surface:
 
 - one-sided PMNS projectors localize to the active block,
 - the flavored transport functional follows from the supplied equations,
 - the canonical `N_e` middle-column ordering is known on one finite sample,
-- the seed pair and branch/support data are native.
+- the seed averages, phase, support count, and branch bit are supplied and
+  equal across the three samples.
 
 What is still not fixed:
 
 - the active five-real source,
 - and therefore the selected `N_e` active column.
 
-So the remaining PMNS-side DM object is not just a vague “PMNS value law.”
-It is exactly the active five-real source law, or an equivalent theorem that
-produces the selected active column from it.
+Within this tested class, the active five-real source data, or equivalent
+information, can change the selected active column.
 
 ## Honest endpoint
 
@@ -128,12 +125,11 @@ The honest endpoint on this lane is now:
 - transport functional: conditional on supplied equations, profiles, and
   boundary data
 - active-block localization: closed
-- selected `N_e` column: **not** closed from the current PMNS native laws
+- selected `N_e` column: **not** fixed by the four tested summaries
 
-Therefore the refreshed DM branch does **not** yet gain full flavored transport
-repair from the PMNS lane alone. It gains a finite conditional carrier/selector
-diagnostic, but neither an axiom-native transport bridge nor the final
-PMNS-side value law.
+This is a finite conditional ambiguity diagnostic only. It does not prove a
+full current-framework no-go, does not exhaust all PMNS-side data, and does not
+derive an axiom-native transport bridge or final PMNS-side value law.
 
 ## Command
 

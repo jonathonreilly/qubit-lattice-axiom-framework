@@ -310,7 +310,10 @@ def deterministic_branch_diagnostic() -> list[Branch]:
     candidates = global_search_candidates()
     branches = cluster_solutions(candidates)
     if len(branches) != 3:
-        raise RuntimeError(f"exhaustive chart cover did not stabilize to exactly three stationary branches (found {len(branches)})")
+        raise RuntimeError(
+            "finite deterministic chart diagnostic did not stabilize to "
+            f"exactly three stationary candidates (found {len(branches)})"
+        )
     return branches
 
 

@@ -8,8 +8,8 @@
 
 ## Status
 
-Exact positive derivation transplant from the PMNS microscopic source-response
-lane onto the refreshed DM branch.
+Conditional finite-fixture reduction from the PMNS microscopic source-response
+lane to a labeled DM transport packet.
 
 This note upgrades the flavored-PMNS DM reduction.
 
@@ -32,33 +32,36 @@ Do we still need the full active five-real source
 
 `(xi_1, xi_2, eta_1, eta_2, delta)`?
 
-Or is there a smaller exact source-response object that already determines the
-relevant column?
+Or, on the supplied simple-spectrum fixture with ascending eigenvalue labels,
+is there a smaller source-response object that determines the relevant
+column?
 
 ## Bottom line
 
-There is a smaller exact object.
+There is a smaller conditional input on that supplied fixture.
 
-On `N_e`, the selected transport column is derivable from the charged-lepton
-projected Hermitian source law alone:
+On the supplied `N_e` fixture, the selected transport column is derivable from
+the charged-lepton projected Hermitian source law together with its explicit
+simple-spectrum and ascending-label convention:
 
 `dW_e^H`.
 
 The reduction is algorithmic conditional on the supplied transport fixture:
 
 1. `dW_e^H` reconstructs the active charged-lepton Hermitian block `H_e`
-2. on `N_e`, the PMNS packet is exactly `|U_e|^2^T`
+2. for the supplied simple-spectrum `H_e`, ascending eigenvalue labels define
+   the three eigenspaces, and the `N_e` packet is `|U_e|^2^T`
 3. the supplied finite DM transport functional `F_K` acts on the three packet
    columns
-4. therefore the selected flavored transport column is algorithmic once
-   `dW_e^H` is known
+4. therefore the selected flavored transport column is algorithmic for this
+   labeled fixture once `dW_e^H` is known
 
 So for the PMNS-assisted DM repair route, we do **not** need the raw active
 five-real source as the final target.
 
 We need the projected Hermitian charged-lepton source law.
 
-## Exact reduction
+## Conditional finite-fixture reduction
 
 ### 1. Projected Hermitian source pack determines `H_e`
 
@@ -71,16 +74,21 @@ on the standard Hermitian basis determine `H_e` exactly.
 So the charged-lepton projected Hermitian source law `dW_e^H` fixes `H_e`
 exactly.
 
-### 2. `H_e` determines the `N_e` packet
+### 2. A supplied simple-spectrum, ascending-labeled `H_e` determines the `N_e` packet
 
 On the one-sided charged-lepton-active branch, the passive side is monomial and
 contributes only ordering/permutation data already fixed elsewhere.
 
-Therefore the active packet is exactly
+For the supplied fixture, `H_e` has three separated eigenvalues. Labeling its
+one-dimensional eigenspaces in ascending eigenvalue order fixes the columns up
+to phases, which disappear after taking absolute squares. Under that explicit
+label convention the active packet is
 
 `|U_PMNS|^2 = |U_e|^2^T`.
 
-So `H_e` alone determines the `N_e` packet.
+Thus the supplied simple-spectrum, ascending-labeled `H_e` determines this
+`N_e` packet. Degenerate spectra, or relabeling without an external convention,
+are outside this claim.
 
 ### 3. The supplied finite transport functional orders the columns
 
@@ -92,47 +100,47 @@ quadrature, the branch uses
 Applying this to the three columns of the supplied `N_e` packet orders those
 three finite columns.
 
-On the canonical `N_e` sample, the middle column is first under both the finite
-functional and the helper's direct ODE computation. This is not a derivation of
-a physical yield or readout map.
+On the supplied labeled `N_e` fixture, the middle column is first under both
+the finite functional and the helper's direct ODE computation. This is not a
+derivation of a physical yield or readout map.
 
 ## Consequence
 
-This changes the honest last-mile PMNS/DM target.
+This changes the last-mile input for the supplied simple-spectrum fixture.
 
-What is no longer the right final target:
+What is not needed as a separate input for this calculation:
 
 - the raw active five-real source law
 
-What is now the right final target:
+What replaces it on this fixture:
 
 - the charged-lepton projected Hermitian source law `dW_e^H`
 
 because once `dW_e^H` is known:
 
 - `H_e` is known
-- the `N_e` packet is known
-- the finite-fixture transport ordering is known
+- the packet is known for a supplied simple spectrum and ascending-label
+  convention
+- the finite-fixture transport ordering of those labeled columns is known
 
-So the remaining PMNS contribution to the DM flavored-repair route is smaller
-and more source-response-native than the earlier five-real formulation.
+So this conditional finite-fixture PMNS contribution is smaller than the
+earlier five-real formulation.
 
-## What this closes
+## What this finite fixture establishes
 
-This closes the target-shape question on the PMNS-assisted DM lane more tightly
-than the previous active-projector reduction.
-
-The flavored `N_e` repair path no longer needs a theorem for the raw PMNS
-corner-source coordinates as such. It needs the projected charged-lepton
-Hermitian source law.
+For the supplied simple spectrum and ascending labels, the finite `N_e`
+calculation can use the projected charged-lepton Hermitian source law instead
+of the raw PMNS corner-source coordinates. This does not establish a universal
+target reduction for degenerate or differently labeled packets.
 
 ## What this does not close
 
 This note does **not** yet evaluate `dW_e^H` from the current four-axiom
 framework baseline.
 
-It proves only that once `dW_e^H` and the supplied transport fixture are
-available, the finite `N_e` column ordering is downstream algorithmic.
+It proves only that once `dW_e^H`, a simple-spectrum/ascending-label convention,
+and the supplied transport fixture are available, the finite `N_e` column
+ordering is downstream algorithmic.
 
 So the live remaining gap is now:
 
@@ -177,15 +185,18 @@ Theorem-side authorities (load-bearing one-hop deps):
   used as the source-oriented input to the projected-source law.
 - [DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)
   — supplies the conditional integrating-factor identity and finite transport
-  functional referenced in §"Bottom line" item 3 and §"Exact reduction" §3;
+  functional referenced in §"Bottom line" item 3 and
+  §"Conditional finite-fixture reduction" §3;
   it does not derive the transport equations, profiles, packet, or physical
   readout.
 - [DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)
   — supplies the PMNS-projector interface used to bridge from `H_e`
-  to the `N_e` packet (§"Exact reduction" §2).
+  to the `N_e` packet for the supplied simple-spectrum, ascending-labeled
+  fixture (§"Conditional finite-fixture reduction" §2).
 - [DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md)
   — charged-source response reduction, supplying the
-  `dW_e^H -> H_e` reconstruction step in §"Exact reduction" §1.
+  `dW_e^H -> H_e` reconstruction step in
+  §"Conditional finite-fixture reduction" §1.
 - [DM_LEPTOGENESIS_NE_ACTIVE_COLUMN_AXIOM_BOUNDARY_NOTE_2026-04-16.md](DM_LEPTOGENESIS_NE_ACTIVE_COLUMN_AXIOM_BOUNDARY_NOTE_2026-04-16.md)
   — axiom-side boundary on the `N_e` active-column problem this note
   reduces.
@@ -199,12 +210,9 @@ Theorem-side authorities (load-bearing one-hop deps):
   — sign orientation companion for the projected-source triplet,
   paired with the projected-source law derived here.
 
-These additions are strictly additive: the bottom-line
-transplant statement, the exact-reduction §§1–4, the consequence
-section, and the explicitly recorded "what this does not close" gap
-(deriving `dW_e^H` on `E_e` from `Cl(3)` on `Z^3`) are all unchanged.
-This PR registers the dependency edges; it does not derive
-`dW_e^H` itself.
+The dependency edges record the conditional finite-fixture reduction and its
+explicit remaining gap: deriving `dW_e^H` on `E_e` from the current framework
+baseline. They do not derive `dW_e^H` itself or promote this note.
 
 Until each linked authority is ratified by the independent audit lane,
 the registered edges make the chain traceable but do not promote this

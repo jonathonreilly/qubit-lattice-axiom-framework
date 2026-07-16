@@ -20,7 +20,7 @@ THEN the constrained problem  min { J(z) : z in F }  satisfies
   (T3)  multiplier formula:
         lambda_* = <grad J(z_*), grad C(z_*)> / || grad C(z_*) ||^2.
 
-This Pattern A audit-companion runner adds a sympy-based exact-symbolic
+This narrow-theorem companion runner adds a sympy-based exact-symbolic
 verification:
 
   (a) realizes a generic strictly convex C^2 J(z) (a symbolic SPD

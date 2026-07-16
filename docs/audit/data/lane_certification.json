@@ -69,7 +69,7 @@
         },
         {
           "claim_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
@@ -1513,7 +1513,7 @@
         },
         {
           "claim_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "54a54507172374ce3b81100e0078318831cbcf86",
+  "repo_head": "ef4b64f3d8bcca92e7b7a6f08a8b642c6e57cb87",
   "schema": "lane_certification_v2"
 }

@@ -320,7 +320,8 @@ generator algebra):
 - Retained: [`LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`](LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md).
 - Retained: [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md).
 - Parent (cycle 06): [`NEUTRINO_MAJORANA_OPERATOR_AXIOM_FIRST_NOTE.md`](NEUTRINO_MAJORANA_OPERATOR_AXIOM_FIRST_NOTE.md).
-- Parent (cycle 07): [`HIGGS_MECHANISM_NOTE.md`](HIGGS_MECHANISM_NOTE.md).
+- Formal radial-quartic lemma (historical cycle-07 path; no EWSB or physical
+  Higgs bridge): [`HIGGS_MECHANISM_NOTE.md`](HIGGS_MECHANISM_NOTE.md).
 - Admitted external: Adler 1969, Bell-Jackiw 1969, Witten 1982,
   Peskin-Schroeder 1995 — role-labelled admitted-context mathematical
   machinery.

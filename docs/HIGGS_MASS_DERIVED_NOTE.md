@@ -24,6 +24,13 @@ The framework now supports all of the following:
 | a direct framework-side full 3-loop Higgs computation exists | DERIVED |
 | Buttazzo-style calibrated-fit dependence is required | NO |
 
+Dependency correction (2026-07-16):
+[`HIGGS_MECHANISM_NOTE.md`](./HIGGS_MECHANISM_NOTE.md) is only the exact
+radial-quartic global-minimum lemma for formal `lambda > 0` and real `m2`.
+It supplies none of the physical Higgs, condensate, Coleman-Weinberg,
+boundary-condition, hierarchy, or mass statements in this note. Those
+statements must stand or fall on their other named authorities.
+
 What is **not** yet unbounded is the exact numerical Higgs claim by itself,
 because the Higgs lane still inherits the explicit `y_t(v)` systematic.
 
@@ -31,7 +38,9 @@ because the Higgs lane still inherits the explicit `y_t(v)` systematic.
 
 The paper-safe Higgs claim is now:
 
-- the framework derives the Higgs mechanism itself
+- the radial-quartic lemma does not derive a Higgs mechanism; any physical
+  mechanism claim requires an independent carrier, dynamics, and observable
+  bridge
 - the high-scale boundary input `lambda(M_Pl) = 0` is consumed as
   *admitted-context, literature-standard* (Gap #7, 2026-05-10): the
   earlier "framework-native composite-Higgs / no-elementary-scalar"
@@ -130,7 +139,8 @@ It is “Higgs is conditionally closed at 3-loop on the accepted YT route.”
 ### Supporting Higgs surfaces
 
 - [HIGGS_MECHANISM_NOTE.md](./HIGGS_MECHANISM_NOTE.md)
-  mechanism-level support
+  exact formal radial-polynomial algebra only; not mechanism-level or mass
+  support
 - `HIGGS_FROM_LATTICE_NOTE.md`
   bounded / historical quantitative support (backticked file pointer,
   not a markdown dependency: that support note now carries the
@@ -159,7 +169,7 @@ effective status; this section does not promote this note or any sibling row.
 | `g_2(v)` | `0.648` | [`EW_COUPLING_DERIVATION_NOTE.md`](./EW_COUPLING_DERIVATION_NOTE.md), [`YT_EW_COLOR_PROJECTION_THEOREM.md`](./YT_EW_COLOR_PROJECTION_THEOREM.md); `docs/COMPLETE_PREDICTION_CHAIN_2026_04_15.md` remains a file-pointer context reference for cycle safety. | The runner value is consistent with the bounded EW specialization; non-perturbative SU(2) matching remains the open derivation gate. |
 | `alpha_s(v)` | `0.1033` | [`ALPHA_S_DERIVED_NOTE.md`](./ALPHA_S_DERIVED_NOTE.md), [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](./PLAQUETTE_SELF_CONSISTENCY_NOTE.md), [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](./QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) | The runner consumes `alpha_s(v)` directly. The plaquette `beta = 6` analytic insertion remains upstream work. |
 | `v` | `246.28 GeV` | [`HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md`](./HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md), [`HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md`](./HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md), [`GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md`](./GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md); `docs/COMPLETE_PREDICTION_CHAIN_2026_04_15.md` is context only. | This names the hierarchy surface that supplies the vev scale used by the runner; it does not add a new vev theorem. |
-| `lambda(M_Pl) = 0` | `0.0` (admitted-context input) | [`HIGGS_MECHANISM_NOTE.md`](./HIGGS_MECHANISM_NOTE.md), [`ASSUMPTION_DERIVATION_LEDGER.md`](./ASSUMPTION_DERIVATION_LEDGER.md); `docs/HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md` and `docs/VACUUM_CRITICAL_STABILITY_NOTE.md` are file-pointer context references, not markdown dependencies, to avoid known back-edges. | **Gap #7 update 2026-05-10:** `lambda(M_Pl)` is OPEN. This row was previously framed as a framework-native boundary; the earlier "composite-Higgs / no-elementary-scalar" slogan is not theorem-grade, the landed composite-Higgs stretch attempt records the NJL/BHL composite-scalar obstruction, and no theorem-grade framework derivation is currently in place. The runner's `m_H` prediction uses this value as a literature-standard *admitted-context* input on equal footing with Buttazzo / Degrassi SM analyses. The `m_H ~= 125.1 GeV` numerical prediction therefore does NOT load-bear on a framework derivation of the boundary — it is the same prediction any SM analysis with the same inputs would give. The boundary-derivation itself is logged as an open gate; candidate routes (asymptotic safety, Multiple-Point Principle, pNGB-with-shift-symmetry per Contino-Pomarol 2003) are flagged but none is closed. |
+| `lambda(M_Pl) = 0` | `0.0` (admitted-context input) | [`ASSUMPTION_DERIVATION_LEDGER.md`](./ASSUMPTION_DERIVATION_LEDGER.md); `docs/HIGGS_MECHANISM_NOTE.md` is a formal-polynomial context pointer only and is not an authority for this input. `docs/HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md` and `docs/VACUUM_CRITICAL_STABILITY_NOTE.md` are also file-pointer context references, not markdown dependencies, to avoid known back-edges. | **Gap #7 update 2026-05-10:** `lambda(M_Pl)` is OPEN. This row was previously framed as a framework-native boundary; the earlier "composite-Higgs / no-elementary-scalar" slogan is not theorem-grade, the landed composite-Higgs stretch attempt records the NJL/BHL composite-scalar obstruction, and no theorem-grade framework derivation is currently in place. The runner's `m_H` prediction uses this value as a literature-standard *admitted-context* input on equal footing with Buttazzo / Degrassi SM analyses. The `m_H ~= 125.1 GeV` numerical prediction therefore does NOT load-bear on a framework derivation of the boundary — it is the same prediction any SM analysis with the same inputs would give. The boundary-derivation itself is logged as an open gate; candidate routes (asymptotic safety, Multiple-Point Principle, pNGB-with-shift-symmetry per Contino-Pomarol 2003) are flagged but none is closed. |
 
 This section changes only discoverability of the runner inputs. It does not
 derive any of the six values, does not ask for status promotion, and does not
@@ -191,8 +201,6 @@ with this note's headline.
 
 **Can claim**
 
-- the Higgs mechanism emerges naturally from the lattice
-- the hierarchy problem is solved structurally
 - the repo now contains a direct full 3-loop Higgs computation with no
   Buttazzo-style calibrated-fit dependence
 - for the admitted-context boundary input `lambda(M_Pl) = 0`
@@ -203,6 +211,9 @@ with this note's headline.
 
 **Cannot claim**
 
+- the radial-quartic lemma in `HIGGS_MECHANISM_NOTE.md` derives a scalar
+  carrier, Higgs mechanism, hierarchy solution, boundary condition, or mass
+  prediction
 - `lambda(M_Pl) = 0` is a framework-native / framework-derived Higgs
   boundary condition (Gap #7 retirement, 2026-05-10): the earlier
   "composite-Higgs / no-elementary-scalar" slogan is not theorem-grade;

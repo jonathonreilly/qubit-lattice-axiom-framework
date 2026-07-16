@@ -20,6 +20,7 @@ import math
 import os
 import sys
 from collections import defaultdict
+from dataclasses import dataclass
 from itertools import product
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -34,6 +35,27 @@ DEFAULT_NPL_HALF = [8, 12, 16, 20]
 DEFAULT_CONNECT_RADIUS = [2.5, 3.0, 3.5, 4.0, 4.5]
 DEFAULT_GRID_SPACING = [1.0, 1.25, 1.5]
 DEFAULT_LAYER_JITTER = [0.0, 0.15, 0.3]
+PROBABILITY_FLOOR = 1e-30
+
+
+@dataclass(frozen=True)
+class SorkinBornResult:
+    """Eight-mask detector-probability inclusion-exclusion result.
+
+    All probabilities use the same convention: the unnormalised sum of
+    ``|amplitude|^2`` over the selected detector nodes.  ``legacy_i3`` is the
+    defective seven-term expression retained only to make the bypass
+    background executable and inspectable.
+    """
+
+    probabilities: dict[str, float]
+    p_abc: float
+    p_empty: float
+    corrected_i3: float
+    legacy_i3: float
+    corrected_ratio: float
+    legacy_ratio: float
+    empty_ratio: float
 
 
 def mean_se(vals: list[float]) -> tuple[float, float]:
@@ -56,18 +78,69 @@ def by_layer(positions):
 
 
 def select_slits(positions, barrier_nodes, center_y, slit_gap):
+    middle = sorted(
+        [i for i in barrier_nodes if abs(positions[i][1] - center_y) <= slit_gap],
+        key=lambda i: (abs(positions[i][1] - center_y), i),
+    )
+
+    # The canonical jitter seed 38 can translate the nearest mirror pair just
+    # outside the fixed |y-center| <= slit_gap window.  Preserve the original
+    # aperture selection whenever it supplies three middle nodes; otherwise
+    # deterministically fill the middle aperture from the closest remaining
+    # barrier nodes.  This changes no graph edge and keeps the three slit
+    # groups disjoint.
+    if len(middle) < 3:
+        selected = set(middle)
+        for node in sorted(
+            barrier_nodes,
+            key=lambda i: (abs(positions[i][1] - center_y), i),
+        ):
+            if node in selected:
+                continue
+            middle.append(node)
+            selected.add(node)
+            if len(middle) == 3:
+                break
+
+    middle_nodes = set(middle[:3])
     upper = sorted(
-        [i for i in barrier_nodes if positions[i][1] > center_y + slit_gap],
+        [
+            i
+            for i in barrier_nodes
+            if i not in middle_nodes and positions[i][1] > center_y + slit_gap
+        ],
         key=lambda i: positions[i][1],
     )
     lower = sorted(
-        [i for i in barrier_nodes if positions[i][1] < center_y - slit_gap],
+        [
+            i
+            for i in barrier_nodes
+            if i not in middle_nodes and positions[i][1] < center_y - slit_gap
+        ],
         key=lambda i: -positions[i][1],
     )
-    middle = sorted(
-        [i for i in barrier_nodes if abs(positions[i][1] - center_y) <= slit_gap],
-        key=lambda i: abs(positions[i][1] - center_y),
-    )
+
+    # If the fixed gap window itself is empty, use the remaining nearest
+    # positive/negative nodes.  This is an aperture-selection fallback, not a
+    # geometry change.
+    if not upper:
+        upper = sorted(
+            [
+                i
+                for i in barrier_nodes
+                if i not in middle_nodes and positions[i][1] > center_y
+            ],
+            key=lambda i: (positions[i][1] - center_y, i),
+        )
+    if not lower:
+        lower = sorted(
+            [
+                i
+                for i in barrier_nodes
+                if i not in middle_nodes and positions[i][1] < center_y
+            ],
+            key=lambda i: (center_y - positions[i][1], i),
+        )
     return upper, lower, middle
 
 
@@ -89,37 +162,102 @@ def detector_bin_probs(positions, det_list, amps, y_extent, n_bins=8):
     return [p / norm for p in probs]
 
 
+def detector_probability(det_list, amps):
+    """Unnormalised detector probability used for every Sorkin mask."""
+    return sum(abs(amps[d]) ** 2 for d in det_list)
+
+
 def sorkin_born(positions, adj, src, k, barrier_nodes, slit_a, slit_b, slit_c, det_list, field):
-    all_slits = set(slit_a + slit_b + slit_c)
-    other = set(barrier_nodes) - all_slits
-    combos = {
-        "abc": set(slit_a + slit_b + slit_c),
-        "ab": set(slit_a + slit_b),
-        "ac": set(slit_a + slit_c),
-        "bc": set(slit_b + slit_c),
+    """Compute corrected and legacy three-slit residuals on a fixed graph.
+
+    The corrected statistic is
+
+        P(ABC)-P(AB)-P(AC)-P(BC)+P(A)+P(B)+P(C)-P(empty),
+
+    where ``P(empty)`` blocks every node in the selected barrier layer.  The
+    structured-mirror graph intentionally retains two-layer-back edges, so
+    ``P(empty)`` can be nonzero when paths bypass that layer.
+    """
+    barrier_set = set(barrier_nodes)
+    slit_sets = {
         "a": set(slit_a),
         "b": set(slit_b),
         "c": set(slit_c),
     }
+    all_slits = slit_sets["a"] | slit_sets["b"] | slit_sets["c"]
+    if any(not slit_sets[key] for key in ("a", "b", "c")):
+        raise ValueError("all three slit groups must be nonempty")
+    if len(all_slits) != sum(len(nodes) for nodes in slit_sets.values()):
+        raise ValueError("slit groups must be disjoint")
+    if not all_slits <= barrier_set:
+        raise ValueError("every slit node must belong to the barrier layer")
 
-    i3 = 0.0
-    p_abc = 0.0
+    combos = {
+        "abc": all_slits,
+        "ab": slit_sets["a"] | slit_sets["b"],
+        "ac": slit_sets["a"] | slit_sets["c"],
+        "bc": slit_sets["b"] | slit_sets["c"],
+        "a": slit_sets["a"],
+        "b": slit_sets["b"],
+        "c": slit_sets["c"],
+        "empty": set(),
+    }
+
+    probabilities = {}
     for key, open_set in combos.items():
-        blocked = other | (all_slits - open_set)
+        blocked = barrier_set - open_set
         amps = propagate_LINEAR(positions, adj, field, src, k, blocked)
-        for d in det_list:
-            p = abs(amps[d]) ** 2
-            if key == "abc":
-                p_abc += p
-                i3 += p
-            elif key in ("ab", "ac", "bc"):
-                i3 -= p
-            else:
-                i3 += p
-    return abs(i3) / p_abc if p_abc > 1e-30 else math.nan
+        probabilities[key] = detector_probability(det_list, amps)
+
+    legacy_i3 = (
+        probabilities["abc"]
+        - probabilities["ab"]
+        - probabilities["ac"]
+        - probabilities["bc"]
+        + probabilities["a"]
+        + probabilities["b"]
+        + probabilities["c"]
+    )
+    corrected_i3 = legacy_i3 - probabilities["empty"]
+    p_abc = probabilities["abc"]
+    p_empty = probabilities["empty"]
+    if p_abc <= PROBABILITY_FLOOR:
+        corrected_ratio = math.nan
+        legacy_ratio = math.nan
+        empty_ratio = math.nan
+    else:
+        corrected_ratio = abs(corrected_i3) / p_abc
+        legacy_ratio = abs(legacy_i3) / p_abc
+        empty_ratio = p_empty / p_abc
+    return SorkinBornResult(
+        probabilities=probabilities,
+        p_abc=p_abc,
+        p_empty=p_empty,
+        corrected_i3=corrected_i3,
+        legacy_i3=legacy_i3,
+        corrected_ratio=corrected_ratio,
+        legacy_ratio=legacy_ratio,
+        empty_ratio=empty_ratio,
+    )
 
 
-def measure_config(n_layers, npl_half, connect_radius, grid_spacing, layer_jitter, seed, k, slit_gap):
+def measure_config(
+    n_layers,
+    npl_half,
+    connect_radius,
+    grid_spacing,
+    layer_jitter,
+    seed,
+    k,
+    slit_gap,
+    *,
+    strict=False,
+):
+    def invalid(reason):
+        if strict:
+            raise ValueError(reason)
+        return None
+
     positions, adj = grow_structured_mirror(
         n_layers=n_layers,
         npl_half=npl_half,
@@ -132,34 +270,37 @@ def measure_config(n_layers, npl_half, connect_radius, grid_spacing, layer_jitte
     n = len(positions)
     layer_map, layers = by_layer(positions)
     if len(layers) < 7:
-        return None
+        return invalid("fewer than seven populated layers")
 
     src = layer_map[layers[0]]
     det_list = list(layer_map[layers[-1]])
     if not det_list:
-        return None
+        return invalid("empty detector layer")
 
     barrier_idx = layers[len(layers) // 3]
     barrier_nodes = layer_map[barrier_idx]
     if len(barrier_nodes) < 6:
-        return None
+        return invalid("barrier layer has fewer than six nodes")
 
     center_y = sum(pos[1] for pos in positions) / len(positions)
     slit_a, slit_b, slit_c = select_slits(positions, barrier_nodes, center_y, slit_gap)
     if not slit_a or not slit_b or not slit_c:
-        return None
+        return invalid(
+            f"empty slit group after fallback: "
+            f"A={len(slit_a)} B={len(slit_b)} C={len(slit_c)}"
+        )
     slit_a = slit_a[:3]
     slit_b = slit_b[:3]
     slit_c = slit_c[:3]
     if not slit_a or not slit_b or not slit_c:
-        return None
+        return invalid("empty truncated slit group")
 
     blocked = set(barrier_nodes) - set(slit_a + slit_b + slit_c)
 
     grav_layer = layers[2 * len(layers) // 3]
     mass_nodes = [i for i in layer_map[grav_layer] if positions[i][1] > center_y + 1.0]
     if not mass_nodes:
-        return None
+        return invalid("empty mass-node selection")
 
     field_m = compute_field(positions, mass_nodes)
     field_f = [0.0] * n
@@ -171,8 +312,8 @@ def measure_config(n_layers, npl_half, connect_radius, grid_spacing, layer_jitte
     pb = {d: abs(psi_b[d]) ** 2 for d in det_list}
     na = sum(pa.values())
     nb = sum(pb.values())
-    if na < 1e-30 or nb < 1e-30:
-        return None
+    if na < PROBABILITY_FLOOR or nb < PROBABILITY_FLOOR:
+        return invalid(f"zero branch denominator: P_A={na:.6e}, P_B={nb:.6e}")
     dtv = 0.5 * sum(abs(pa[d] / na - pb[d] / nb) for d in det_list)
 
     env_depth = max(1, round(len(layers) / 6))
@@ -204,8 +345,8 @@ def measure_config(n_layers, npl_half, connect_radius, grid_spacing, layer_jitte
                 + d_cl * psi_b[d1].conjugate() * psi_a[d2]
             )
     tr = sum(rho[(d, d)] for d in det_list).real
-    if tr < 1e-30:
-        return None
+    if tr < PROBABILITY_FLOOR:
+        return invalid(f"zero density-matrix trace: {tr:.6e}")
     for key in rho:
         rho[key] /= tr
     pur_cl = sum(abs(v) ** 2 for v in rho.values()).real
@@ -215,7 +356,7 @@ def measure_config(n_layers, npl_half, connect_radius, grid_spacing, layer_jitte
     pm = sum(abs(am[d]) ** 2 for d in det_list)
     pf = sum(abs(af[d]) ** 2 for d in det_list)
     gravity = math.nan
-    if pm > 1e-30 and pf > 1e-30:
+    if pm > PROBABILITY_FLOOR and pf > PROBABILITY_FLOOR:
         ym = sum(abs(am[d]) ** 2 * positions[d][1] for d in det_list) / pm
         yf = sum(abs(af[d]) ** 2 * positions[d][1] for d in det_list) / pf
         gravity = ym - yf
@@ -225,18 +366,51 @@ def measure_config(n_layers, npl_half, connect_radius, grid_spacing, layer_jitte
     pm0 = sum(abs(am0[d]) ** 2 for d in det_list)
     pf0 = sum(abs(af0[d]) ** 2 for d in det_list)
     grav_k0 = math.nan
-    if pm0 > 1e-30 and pf0 > 1e-30:
+    if pm0 > PROBABILITY_FLOOR and pf0 > PROBABILITY_FLOOR:
         ym0 = sum(abs(am0[d]) ** 2 * positions[d][1] for d in det_list) / pm0
         yf0 = sum(abs(af0[d]) ** 2 * positions[d][1] for d in det_list) / pf0
         grav_k0 = ym0 - yf0
 
-    born = sorkin_born(positions, adj, src, k, barrier_nodes, slit_a, slit_b, slit_c, det_list, field_f)
+    born = sorkin_born(
+        positions,
+        adj,
+        src,
+        k,
+        barrier_nodes,
+        slit_a,
+        slit_b,
+        slit_c,
+        det_list,
+        field_f,
+    )
+    finite_values = {
+        "dtv": dtv,
+        "pur_cl": pur_cl,
+        "s_norm": sn,
+        "gravity": gravity,
+        "grav_k0": grav_k0,
+        "born_corrected": born.corrected_ratio,
+        "born_legacy": born.legacy_ratio,
+        "p_empty_ratio": born.empty_ratio,
+        "p_abc": born.p_abc,
+        "p_empty": born.p_empty,
+    }
+    nonfinite = [name for name, value in finite_values.items() if not math.isfinite(value)]
+    if nonfinite:
+        return invalid(f"non-finite measurement(s): {', '.join(nonfinite)}")
     return {
         "dtv": dtv,
         "pur_cl": pur_cl,
         "s_norm": sn,
         "gravity": gravity,
-        "born": born,
+        "born": born.corrected_ratio,
+        "born_corrected": born.corrected_ratio,
+        "born_legacy": born.legacy_ratio,
+        "p_empty_ratio": born.empty_ratio,
+        "corrected_i3": born.corrected_i3,
+        "legacy_i3": born.legacy_i3,
+        "p_abc": born.p_abc,
+        "p_empty": born.p_empty,
         "grav_k0": grav_k0,
     }
 
@@ -276,9 +450,9 @@ def main():
     print()
     print(
         f"  {'N':>4s}  {'npl':>4s}  {'r':>4s}  {'d_TV':>8s}  {'pur_cl':>8s}  {'S_norm':>8s}  "
-        f"{'gravity':>10s}  {'Born':>10s}  {'k=0':>10s}  {'ok':>3s}"
+        f"{'gravity':>10s}  {'I3/P':>10s}  {'legacy':>10s}  {'P0/P':>10s}  {'k=0':>10s}  {'ok':>3s}"
     )
-    print("  " + "-" * 96)
+    print("  " + "-" * 120)
 
     rows = []
     for n_layers, npl_half, connect_radius, grid_spacing, layer_jitter in product(
@@ -289,41 +463,51 @@ def main():
         sn_all = []
         grav_all = []
         born_all = []
+        legacy_all = []
+        empty_all = []
         k0_all = []
         ok = 0
         for seed in seeds:
-            row = measure_config(
-                n_layers=n_layers,
-                npl_half=npl_half,
-                connect_radius=connect_radius,
-                grid_spacing=grid_spacing,
-                layer_jitter=layer_jitter,
-                seed=seed,
-                k=args.k,
-                slit_gap=args.slit_gap,
-            )
-            if row is None:
-                continue
+            try:
+                row = measure_config(
+                    n_layers=n_layers,
+                    npl_half=npl_half,
+                    connect_radius=connect_radius,
+                    grid_spacing=grid_spacing,
+                    layer_jitter=layer_jitter,
+                    seed=seed,
+                    k=args.k,
+                    slit_gap=args.slit_gap,
+                    strict=True,
+                )
+            except ValueError as exc:
+                raise SystemExit(
+                    "invalid configured seed: "
+                    f"N={n_layers} npl={npl_half} r={connect_radius:g} "
+                    f"g={grid_spacing:g} j={layer_jitter:g} seed={seed}: {exc}"
+                ) from exc
             ok += 1
             dtv_all.append(row["dtv"])
             pur_all.append(row["pur_cl"])
             sn_all.append(row["s_norm"])
             grav_all.append(row["gravity"])
-            born_all.append(row["born"])
+            born_all.append(row["born_corrected"])
+            legacy_all.append(row["born_legacy"])
+            empty_all.append(row["p_empty_ratio"])
             k0_all.append(row["grav_k0"])
 
-        if not ok:
-            print(
-                f"  {n_layers:4d}  {npl_half:4d}  {connect_radius:4.1f}  "
-                f"g={grid_spacing:>4.2f}  j={layer_jitter:>4.2f}  FAIL"
+        if ok != args.n_seeds:
+            raise SystemExit(
+                f"invalid seed count for configured row: ok={ok}, expected={args.n_seeds}"
             )
-            continue
 
         dtv_mean, dtv_se = mean_se(dtv_all)
         pur_mean, pur_se = mean_se(pur_all)
         sn_mean, sn_se = mean_se(sn_all)
         grav_mean, grav_se = mean_se(grav_all)
         born_mean, born_se = mean_se(born_all)
+        legacy_mean, legacy_se = mean_se(legacy_all)
+        empty_mean, empty_se = mean_se(empty_all)
         k0_mean, k0_se = mean_se(k0_all)
 
         rows.append(
@@ -340,16 +524,21 @@ def main():
                 "gravity": grav_mean,
                 "born": born_mean,
                 "born_se": born_se,
+                "born_legacy": legacy_mean,
+                "p_empty_ratio": empty_mean,
                 "k0": k0_mean,
             }
         )
 
         born_str = f"{born_mean:10.2e}" if not math.isnan(born_mean) else f"{'nan':>10s}"
+        legacy_str = f"{legacy_mean:10.2e}" if not math.isnan(legacy_mean) else f"{'nan':>10s}"
+        empty_str = f"{empty_mean:10.2e}" if not math.isnan(empty_mean) else f"{'nan':>10s}"
         print(
             f"  {n_layers:4d}  {npl_half:4d}  {connect_radius:4.1f}  "
             f"g={grid_spacing:>4.2f}  j={layer_jitter:>4.2f}  "
             f"{dtv_mean:8.4f}  {pur_mean:7.4f}±{pur_se:.02f}  {sn_mean:8.4f}  "
-            f"{grav_mean:+7.4f}±{grav_se:.3f}  {born_str}  {k0_mean:+10.2e}  {ok:3d}"
+            f"{grav_mean:+7.4f}±{grav_se:.3f}  {born_str}  {legacy_str}  "
+            f"{empty_str}  {k0_mean:+10.2e}  {ok:3d}"
         )
 
     print()
@@ -364,17 +553,20 @@ def main():
 
     if retained:
         best = retained[0]
-        print("RETAINED POCKET:")
+        print("FINITE JOINT-CRITERIA ROW:")
         print(
             f"  N={best['n_layers']}, npl_half={best['npl_half']}, r={best['connect_radius']:g}, "
             f"grid_spacing={best['grid_spacing']:g}, jitter={best['layer_jitter']:g} -> "
-            f"pur_cl={best['pur_cl']:.4f}, gravity={best['gravity']:+.4f}, Born={best['born']:.2e}, "
+            f"pur_cl={best['pur_cl']:.4f}, gravity={best['gravity']:+.4f}, "
+            f"corrected I3/P={best['born']:.2e}, legacy={best['born_legacy']:.2e}, "
+            f"P(empty)/P={best['p_empty_ratio']:.2e}, "
             f"d_TV={best['dtv']:.4f}, S_norm={best['sn']:.4f}, k=0={best['k0']:+.2e}"
         )
     else:
-        print("RETAINED POCKET: none found in this scan.")
-        print("  Best read is negative: structured mirror growth does not retain a")
-        print("  Born-safe linear pocket under the scanned parameters.")
+        print("FINITE JOINT-CRITERIA ROW: none found in this scan.")
+        print("  This statement concerns only the explicit finite gravity and")
+        print("  pur_cl criteria above; corrected Born cancellation is reported")
+        print("  independently and is not a successor-lane classification.")
 
 
 if __name__ == "__main__":

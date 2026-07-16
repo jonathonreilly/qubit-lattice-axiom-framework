@@ -164,6 +164,20 @@ Cycle-187 split was a law omission rather than generic evidence for a new
 actuality axiom. Reflection, phase shift, exchange, binding, annihilation,
 nonparallel contact, and contact of the H0/H1 payload bundle remain open.
 
+Cycle 192 lifts transparent coexistence to two complete compact five-lane
+binary bundles. The nearest disjoint rigid placement has five fixed-shell
+contacts, forty quiet mixed open sites, and no dynamic or H0/H1 neighbour
+across the interface. The unchanged 101,996-row law therefore composes all
+`32 x 32 = 1,024` word pairs with zero new rows or roles, exact ten-lineage
+factorization, 6,910 deletion-load-bearing edges, and all 24 orientations.
+
+This positive result is also the next geometric discriminator: the bundles
+behave like shielded cable assemblies. Their housings touch while their
+payloads do not. An exhaustive 1,683-offset census finds no disjoint rigid
+translation of the unchanged complete supports with payload sites adjacent.
+That is not an interaction no-go; endpoint routing, staggering, rotation, or
+a designed interaction window remain live.
+
 ### Causal order can supply a discrete relative clock
 
 Cycle 170 derives causal depth from physical load-bearing parent edges. The
@@ -352,7 +366,7 @@ The lanes are not equally far from closure.
 | causal order | exact load-bearing DAG and scheduler-independent depth | close for discrete order; far for rate, calibration, Lorentz metric, and continuum |
 | bounded algebraic computation | complete stabilizer update and six-context calculator | strong compiler closure; not yet a microscopic quantum process law |
 | quantum measurement/probability | preterminal pointer dilation, exact interference, normalized finite process, record-fibre sufficiency, one common H/CNOT context interpreter, exact conditional frequency bridge | viable conditional architecture; reduced but still large gap to microscopic gate law, physical dispatch, derivation of Born pairing/component means, and actuality |
-| matter | recurrent localized ancestry plus a covariant transparent contact kernel | large gap: binding, nontrivial scattering, coherent propagation, statistics, charges, spectrum, masses |
+| matter | recurrent localized ancestry, repaired tube contact, and exact two-bundle shell coexistence for all 1,024 word pairs | large gap: exposed payload interaction, binding, nontrivial scattering, coherent propagation, statistics, charges, spectrum, masses |
 | gravity/resource | exact record cost and append-only trail accounting | very large gap: conserved source, universal tensor response, equivalence principle, continuum dynamics |
 | cosmology/boundary | named finite seeds and relational-boundary candidates | large gap: first records, one physical boundary/state, multi-carrier generation, observed large-scale state |
 | law selection | one increasingly capable 101,996-row compiler | foundational gap: compact microscopic law/equivalence class and independent prediction |
@@ -616,11 +630,36 @@ nontrivial scattering or interaction with conserved incoming/outgoing
 identity, payload preservation, and amplitudes or deterministic outcome
 content. Transparent passage alone is not a particle interaction.
 
+Cycle 192 closes the corresponding coexistence test for the complete compact
+binary carrier with no additional law content. Both words, all ten literal
+histories, and both dependency graphs survive nearest shell contact. It also
+shows why this is not yet interaction: the shell geometrically prevents any
+H0/H1 payload site from becoming a nearest neighbour of the other bundle.
+The shortest constructive target is now a typed endpoint egress into one
+designed joint gate or scattering region.
+
 ### 6. Gravity and resource physics
 
 The append-only compiler has exact record costs and leaves permanent trails.
 It does not identify those costs with energy, stress, curvature, or universal
 coupling.
+
+The capacity probe supplies one hard constraint. In an `N`-site bounded
+region with at most one site-tethered permanent record per site, at most `N`
+new records can form. Sparse formation delays saturation but cannot sustain a
+positive long-run local formation flux. The infinite lattice permits export
+to fresh sites, but the law must generate that transport and pay its finite
+speed and resource costs.
+
+It also separates two meanings of permanence:
+
+- site-tethered permanence preserves the same site/content pair forever;
+- identity permanence permits a fact to be re-encoded or moved while its
+  physical identity and content remain readable.
+
+The current law has not selected between them. A final Record sentence cannot
+safely sharpen “permanent” to same-site preservation until the renewal/export
+architecture is known.
 
 Still missing are:
 
@@ -723,6 +762,11 @@ What the campaign currently favours:
 - finite contextual parity and shared marginals do not supply an
   effect-complete positive law, so a finite “Born/readout” sentence would
   target the wrong layer;
+- the proposed “records are counted by admissible local possibility”
+  sentence is not yet well-typed physics: tied two-atom and untied
+  three-atom instruments both satisfy the present axioms and presentation
+  neutrality, while giving `1/2` and `1/3` weights; the exact law must first
+  identify its physical event algebra and operational equivalence classes;
 - Record permanence should remain under pressure until renewal, local
   non-revocation, and storage-resource routes are compared.
 
@@ -739,6 +783,15 @@ Possible future constitutional atoms remain candidates, not conclusions:
 The two-witness rule is presently a successful candidate-law kernel, not a
 proved universal axiom minimum.
 
+The old counting sentence also does not survive as generic Record content.
+Post-formation scalar readout additivity applies to disjoint records that
+already exist; it does not choose elementary formation events, identify a
+conjugate pair, or assign equal tickets. Once an exact law supplies a physical
+event algebra and a transitive symmetry of its atoms, normalized finite
+additivity derives atom-count weights. Until then, the `r=1/2` and Koide
+branch remains conditional on the tied event quotient plus separate energy
+and mass bridges.
+
 ## Decision gate before any final edit
 
 One final foundation edit should wait until these tests are complete:
@@ -751,8 +804,9 @@ One final foundation edit should wait until these tests are complete:
    component-mean condition for its repeated process;
 3. one autonomous full-law binary interpreter macrocell, or a decisive direct
    smaller-law alternative, followed by exact-law compression/selection;
-4. extend Cycle-188 transparent contact to the orthogonal five-lane payload,
-   then construct a nontrivial covariant scattering/interaction kernel;
+4. use typed endpoint egress to move beyond Cycle-192 shielded shell contact
+   and construct one nontrivial covariant payload interaction/scattering
+   kernel;
 5. occurrence/actual-history classification on the resulting lawful
    multi-apparatus domain;
 6. one-boundary generation of multiple carriers; and

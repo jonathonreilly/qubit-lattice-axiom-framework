@@ -4,7 +4,6 @@
 **Runner cache:** [`frontier_lorentz_violation.txt`](../logs/runner-cache/frontier_lorentz_violation.txt)
 **PStack:** `frontier-lorentz-violation-derived`
 **Claim type:** bounded_theorem
-**Status:** unaudited audit target after scope repair
 
 **Current publication disposition:** not publication-usable. The calculations
 below are conditional on a supplied kinetic operator, lattice spacing, and
@@ -25,8 +24,7 @@ The four axioms do not select that action or kinetic symbol, do not identify
 the lattice spacing with the Planck length, and do not establish the charge
 conjugation, parity, time-reversal, carrier, or SME-sector assumptions needed
 for a physical CPT or phenomenology claim. The exact-CPT source previously
-used by this lane is not an admissible retained-grade dependency and is not
-used by this theorem.
+used by this lane is not used by this theorem.
 
 ## Derivation chain
 

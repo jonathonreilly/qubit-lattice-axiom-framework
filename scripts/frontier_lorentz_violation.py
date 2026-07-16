@@ -6,8 +6,10 @@ finite-difference spatial kinetic symbol on a cubic lattice. It does not derive
 that action, the lattice spacing, a relativistic carrier, CPT, or an SME-sector
 identification from the four axioms. Its phenomenology tables are historical
 scale illustrations, not validated experimental exclusions or framework
-predictions. The robust checks are the Taylor coefficients and normalized
-cubic-harmonic identity for the selected symbol.
+predictions. The robust checks are the full-`O_h` signed-permutation action,
+Taylor coefficients, and normalized cubic-harmonic identity for the selected
+symbol. The full-group certificate and cubic-harmonic identity are independent
+load-bearing exit gates.
 
 The key result: the lattice correction to the dispersion relation is
 

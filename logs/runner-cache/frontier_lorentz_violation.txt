@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_violation.py
-runner_sha256: 5ce5c2bff5d85f497693121069cca70bdee004d864f22671957f851c07a747b0
+runner_sha256: 73478063f8a0f10fb32e117acbc399a4c7d675e26b984be18003e614a524c4f5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.38
+elapsed_sec: 1.68
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -310,7 +310,7 @@ SCOPE VERDICT
     violation or promote the calculation to a four-axiom, framework-native
     selection, CPT, SME-matching, or experimental-consistency result.
 
-  Elapsed: 1.3 s
+  Elapsed: 1.5 s
 
 ==============================================================================
 EXPERIMENT COMPLETE

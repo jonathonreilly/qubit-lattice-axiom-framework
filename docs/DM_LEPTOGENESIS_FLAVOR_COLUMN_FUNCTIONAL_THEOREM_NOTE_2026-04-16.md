@@ -1,10 +1,11 @@
 # DM Leptogenesis Conditional Flavor-Column Functional Identity
 
 **Status:** conditional / support
+**Type:** bounded_theorem
 **Date:** 2026-04-16; scope narrowed 2026-07-16
-**Branch:** `codex/science-fix-dm-leptogenesis-flavor-column-functional-20260716`
-**Script:** `scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py`
-**Framework convention:** "axiom" means only `Cl(3)` on `Z^3`
+**Script:** [`scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py`](../scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py)
+**Framework baseline:** Lattice, Qubit, Admissibility, and Record axioms;
+`Cl(3,0)` is the one-site algebra notation used by the Qubit axiom.
 
 ## Claim
 
@@ -15,7 +16,8 @@ Assume all of the following data are supplied:
 1. a finite interval `[z_0, Z]`;
 2. integrable real profiles `S(z)` and `W(z)`;
 3. a supplied projector column
-   `P = (P_e, P_mu, P_tau)` with `0 <= P_alpha <= 1`;
+   `P = (P_e, P_mu, P_tau)` with `0 <= P_alpha <= 1` and
+   `sum_alpha P_alpha = 1`;
 4. the decoupled initial-value equations
 
    `dY_alpha/dz = P_alpha S(z) - P_alpha W(z) Y_alpha`,
@@ -71,7 +73,7 @@ The runner instantiates the identity on a finite numerical fixture:
 Those objects are supplied computational fixtures. The runner does not derive
 the one-source flavored transport equations, the source or washout profiles,
 their boundary conditions, the numerical constants used by the helper, or the
-canonical packet from `Cl(3)` on `Z^3`.
+canonical packet from the current four-axiom framework baseline.
 
 The runner independently checks the functional against:
 

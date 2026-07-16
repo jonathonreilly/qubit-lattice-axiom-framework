@@ -3,42 +3,27 @@
 DM leptogenesis PMNS relative-action stationarity theorem.
 
 Framework convention:
-  "axiom" means only the single framework axiom Cl(3) on Z^3.
+  the current framework baseline is Lattice, Qubit, Admissibility, and Record.
 
 Purpose:
-  Close the last selector-principle gap on the PMNS-assisted N_e flavored-DM
-  route as far as the current exact branch honestly allows.
+  Separate a standalone matrix Legendre identity from a conditional numerical
+  closure diagnostic.
 
-  Earlier work already showed:
-    - the fixed native N_e seed surface is exact
-    - the favored closure column i_* is fixed by the exact transport-extremal
-      class on that surface
-    - exact closure can be reached by minimizing the seed-relative bosonic
-      action
-
-  The remaining question was whether this minimization is merely an added
-  postulate or can be tied back to the framework's own exact observable
-  grammar.
-
-Exact content here:
+  Content:
   1. On the positive charged block, the seed-relative bosonic action
 
        S_rel(H || H_seed)
          = Tr(H_seed^{-1} H) - log det(H_seed^{-1} H) - 3
 
-     is the exact Legendre-dual effective action of the sole-axiom scalar
-     observable generator W(K) = log det(I + K).
-  2. Therefore constrained minimization of S_rel on a transport-closure
-     surface is not an external information ansatz; it is the native
-     effective-action selector associated with the exact observable principle.
-  3. On the current fixed N_e seed surface and favored column, sampled
-     constrained solves expose more than one stationary branch, but only one
-     branch is the unique lowest-action closure branch; that is the exact
-     effective-action selector.
+     is the exact Legendre dual of a supplied logdet generator
+     W(K) = log det(I + K).
+  2. A supplied helper stack searches a finite set of constrained candidates.
+     That search does not derive a framework-native or physical selector.
 
 Status:
-  - exact Legendre-dual / effective-action reduction
-  - bounded uniqueness on the current refreshed DM branch
+  - exact standalone Legendre identity
+  - conditional numerical diagnostic with truthful nonzero failure on an
+    unsatisfied stationarity tolerance
 """
 
 from __future__ import annotations
@@ -244,17 +229,17 @@ def part1_relative_action_is_the_exact_legendre_dual() -> None:
         hess_samples.append(quad)
 
     check(
-        "The seed-relative bosonic action equals the exact Legendre dual of the sole-axiom logdet generator",
+        "The seed-relative matrix functional equals the Legendre dual of the supplied logdet generator",
         abs(dual_val - s_rel) < 1e-12,
         f"S_rel={s_rel:.12f}, dual={dual_val:.12f}",
     )
     check(
-        "The dual maximizer is the exact observable-principle source K_* = Y^{-1} - I",
+        "The supplied dual functional is stationary at K_* = Y^{-1} - I",
         grad_probe < 1e-8,
         f"max directional gradient={grad_probe:.3e}",
     )
     check(
-        "The dual is strictly concave at K_* so S_rel is the unique effective action on the positive cone",
+        "sampled Hessian directions of the dual are negative at K_*",
         max(hess_samples) < -1e-6,
         f"worst sampled Hessian quadratic={max(hess_samples):.6e}",
     )
@@ -265,9 +250,9 @@ def part1_relative_action_is_the_exact_legendre_dual() -> None:
     print(f"  with Y = H_seed^(-1/2) H H_seed^(-1/2), S_rel = {s_rel:.12f}")
 
 
-def part2_the_current_closure_patch_has_a_unique_lowest_action_branch() -> tuple[int, np.ndarray]:
+def part2_the_current_closure_patch_samples_low_action_candidates() -> tuple[int, np.ndarray]:
     print("\n" + "=" * 88)
-    print("PART 2: THE CURRENT CLOSURE PATCH HAS A UNIQUE LOWEST-ACTION BRANCH")
+    print("PART 2: SAMPLED CLOSURE CANDIDATES ON THE SUPPLIED FIXTURE")
     print("=" * 88)
 
     i_star, extremal_params = favored_column_and_extremal_params()
@@ -313,7 +298,7 @@ def part2_the_current_closure_patch_has_a_unique_lowest_action_branch() -> tuple
     best_idx = int(np.argmax(etas_sel))
 
     check(
-        "The exact transport-extremal class still fixes the favored closure column on the fixed seed surface",
+        "The supplied transport/readout fixture returns favored column zero",
         i_star == 0,
         f"favored column={i_star}",
     )
@@ -323,12 +308,12 @@ def part2_the_current_closure_patch_has_a_unique_lowest_action_branch() -> tuple
         f"sampled action levels={rounded_actions}",
     )
     check(
-        "The lowest-action closure branch is unique across all sampled constrained solves",
+        "The lowest-action candidate agrees across the sampled constrained solves",
         max_low_branch_delta < 1e-5,
         f"max low-branch |Δp|={max_low_branch_delta:.3e}, S_min={min_action:.12f}",
     )
     check(
-        "The constrained stationary source closes eta exactly on the favored column",
+        "The constrained candidate meets the supplied equality on the favored column",
         abs(etas_sel[i_star] - 1.0) < 1e-10 and best_idx == i_star,
         f"etas={np.round(etas_sel, 12)}",
     )
@@ -343,9 +328,9 @@ def part2_the_current_closure_patch_has_a_unique_lowest_action_branch() -> tuple
     return i_star, base
 
 
-def part3_the_stationary_point_is_a_strict_local_closure_minimum(i_star: int, p_star: np.ndarray) -> None:
+def part3_test_local_stationarity_and_curvature(i_star: int, p_star: np.ndarray) -> None:
     print("\n" + "=" * 88)
-    print("PART 3: THE SELECTED BRANCH IS A STRICT LOCAL CLOSURE MINIMUM")
+    print("PART 3: TEST LOCAL STATIONARITY AND CURVATURE")
     print("=" * 88)
 
     grad_s = finite_grad(relative_action_from_params, p_star)
@@ -377,7 +362,7 @@ def part3_the_stationary_point_is_a_strict_local_closure_minimum(i_star: int, p_
         sampled_gaps.append(relative_action_from_params(trial) - relative_action_from_params(p_star))
 
     check(
-        "The exact closure source satisfies the constrained Euler-Lagrange equation for the effective action",
+        "The candidate satisfies the stated constrained Euler-Lagrange tolerance",
         float(np.linalg.norm(lag_grad)) < 2e-5,
         f"|∇S-λ∇C|={np.linalg.norm(lag_grad):.3e}",
     )
@@ -404,19 +389,19 @@ def part4_bottom_line() -> None:
     print("=" * 88)
 
     check(
-        "The relative bosonic action is now an exact sole-axiom effective action, not an imported information ansatz",
+        "The relative matrix functional is the exact Legendre dual of the supplied logdet generator",
         True,
-        "it is the Legendre dual of the exact log|det| observable generator",
+        "standalone matrix identity only",
     )
     check(
-        "On the current PMNS-assisted N_e closure patch, the selector is the unique lowest-action branch of that effective action",
+        "On the supplied finite fixture, one sampled candidate has the lowest returned action",
         True,
-        "stationarity alone is not enough; minimization picks the physical branch",
+        "no physical-selection interpretation is made",
     )
     check(
-        "So the remaining selector gap is no longer the action principle itself but only any future demand for a branch-global analytic uniqueness proof",
+        "Framework provenance, certified stationarity, and global uniqueness remain open",
         True,
-        "the current branch already carries the constrained effective-action selector",
+        "the current numerical diagnostic is conditional and may fail",
     )
 
 
@@ -426,29 +411,26 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Framework convention:")
-    print('  "axiom" means only Cl(3) on Z^3.')
+    print("  current baseline: Lattice, Qubit, Admissibility, and Record.")
     print()
     print("Question:")
-    print("  Is minimizing the seed-relative bosonic action on the fixed N_e seed")
-    print("  surface an extra selector postulate, or is it already the native")
-    print("  effective-action law attached to the sole-axiom observable principle?")
+    print("  What follows algebraically from a supplied logdet generator, and what")
+    print("  remains only a conditional numerical closure diagnostic?")
 
     part1_relative_action_is_the_exact_legendre_dual()
-    i_star, p_star = part2_the_current_closure_patch_has_a_unique_lowest_action_branch()
-    part3_the_stationary_point_is_a_strict_local_closure_minimum(i_star, p_star)
+    i_star, p_star = part2_the_current_closure_patch_samples_low_action_candidates()
+    part3_test_local_stationarity_and_curvature(i_star, p_star)
     part4_bottom_line()
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact reduction:")
-    print("    - S_rel is the exact Legendre-dual effective action of the")
-    print("      sole-axiom scalar observable generator")
-    print("    - the PMNS-assisted N_e closure source is the unique")
-    print("      lowest-action constrained branch on the exact closure surface")
+    print("  Bounded result:")
+    print("    - S_rel is the exact Legendre dual of the supplied logdet generator")
+    print("    - the closure search is a conditional finite diagnostic")
     print()
-    print("  So on the current branch, minimal relative bosonic action is no longer")
-    print("  an external selector ansatz; it is the native effective-action law.")
+    print("  No framework-native action law, certified stationarity, global uniqueness,")
+    print("  physical selector, or physical readout is inferred.")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

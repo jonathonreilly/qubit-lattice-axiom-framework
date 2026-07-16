@@ -13,13 +13,13 @@ the four-axiom baseline.
 
 Three refutation-shaped, machine-checked probes locate **where** the non-baseline
 content of the adopted minimum-information source selector lives, using the gate
-note's own objects (its exact fixed native seed surface, its exact `I_seed`
+note's own objects (its supplied fixed-sum seed surface, its adopted `I_seed`
 functional, and its supplied finite transport map — imported, not
 re-implemented):
 
 1. **P1 (state-contingency of the favored column):** the transport-favored column
    `i_* = argmax_i eta_i` is not fixed by the axiom surface alone — two
-   law-admissible realized states on the *same* fixed native seed surface
+   supplied positive realized states on the *same* fixed-sum seed surface
    transport-favor *different* columns.
 2. **P2 (modality-weighting dependence of the information functional):** the
    argmin of the `I_seed` functional over an explicit finite off-seed candidate
@@ -28,7 +28,7 @@ re-implemented):
    weighting principle doing selective work.
 3. **P3 (independence of the equality constraint):** the anchoring equality
    `eta_{i_*} / eta_obs = 1` is not implied by the note's other premises — explicit
-   admissible models satisfy every other premise with ratio ≠ 1.
+   supplied positive models satisfy every other tested premise with ratio ≠ 1.
 
 This note derives nothing, promotes nothing, and authors no audit status. It
 gives the already-scoped gate a *computed decomposition into three named
@@ -38,11 +38,10 @@ non-baseline pieces*, each a separately attackable derivation target.
 
 The gate note
 [DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)
-(non-retained; ledger `effective_status: audited_conditional` in the generated
-audit ledger at the date of this note) states a two-step selection law: (1)
+states a two-step selection law: (1)
 determine the finite-fixture flavor column `i_*` from the supplied transport
-map; (2) among positive off-seed sources on the fixed
-native seed surface satisfying `eta_{i_*}/eta_obs = 1`, minimize
+map; (2) among positive off-seed sources on the supplied fixed-sum seed surface
+satisfying `eta_{i_*}/eta_obs = 1`, minimize
 `I_seed = D_KL(x||x_seed) + D_KL(y||y_seed) + (1 - cos delta)`.
 
 That note scopes its own audit surface explicitly:
@@ -55,7 +54,8 @@ That note scopes its own audit surface explicitly:
 >   selector theorem, baseline PMNS-branch closure, or derivation of `I_seed`.
 
 and states that the selector objective and constraint are a "choice of objective
-imported from information geometry. It is **not** derived from `Cl(3)` on `Z^3`."
+imported from information geometry. It is **not** derived from the current
+four-axiom framework baseline."
 This note takes that scope as given and asks the next question: *what exactly*
 about the selector is non-baseline? The answer decomposes into three pieces,
 each witnessed by computation below. The diagnosis holds against the current
@@ -80,10 +80,10 @@ All probe objects are reused from the gate row, none invented:
 
 ### P1 — the favored column i_* is realized-state-contingent
 
-**Hypothesis (refutable):** two law-admissible realized states on the same fixed
-native seed surface transport-favor different columns. A FAIL (an exhaustive
-on-surface grid favoring a single column everywhere) would have meant the column
-is surface-rigid and step (1) of the law *is* axiom-surface data.
+**Hypothesis (refutable):** two supplied positive realized states on the same
+fixed-sum seed surface transport-favor different columns. A FAIL (the finite
+on-surface grid favoring a single column everywhere) would have left the
+state-contingency claim unsupported on that grid.
 
 **Witness (computed):** assignment A favors column 0 at
 `x = [0.076521, 0.076521, 1.536959]`, `y = [0.10506, 0.038649, 0.776291]`,
@@ -95,13 +95,13 @@ native seed surface (mean-`xbar`/mean-`ybar` checks pass at 1e-12).
 
 **Reading:** step (1) of the adopted law consumes state-contingent registered
 data. Under the registered `realized_state` primitive this is pointwise-legal
-but not axiom-derivable: quantities that vary across the law-admissible family
+but not axiom-derivable: quantities that vary across the supplied-point family
 remain registered data, so no axiom-surface-only argument pins `i_*` without
 importing the realized state.
 
 ### P2 — the I_seed functional presupposes a modality-weighting principle
 
-**Hypothesis (refutable):** over the same finite bank of admissible off-seed
+**Hypothesis (refutable):** over the same finite bank of supplied positive off-seed
 sources, the argmin of the uniform `I_seed` and the argmin of a legitimately
 modality-weighted `I_seed^{wx,wy}` (positive weights on the x-block and y-block
 KL divergences; `(1,1)` recovers `I_seed` exactly) disagree. A FAIL (coinciding
@@ -137,14 +137,14 @@ adopted content.
 ### P3 — the equality constraint is an independent imposed premise
 
 **Hypothesis (refutable):** the equality `eta_{i_*}/eta_obs = 1` is not implied
-by the note's other premises (fixed native seed surface + positive source +
-transport-favored-column identification). A FAIL (every admissible on-surface
-positive favored-column model forcing ratio = 1) would have meant the equality
-is a consequence, not an imposition.
+by the note's other premises (supplied fixed-sum seed surface + positive source +
+transport-favored-column identification). A FAIL (every tested positive
+on-surface favored-column model forcing ratio = 1) would have left the
+independence claim unsupported on the tested models.
 
 **Witness (computed):** model A = the pure seed `(x_seed, y_seed, delta = 0)` —
 on-surface, positive, `i_* = 1`, `eta_{i_*}/eta_obs = 0.719082664` (deviation
-−0.280917336). Model B = an off-seed admissible source
+−0.280917336). Model B = a supplied positive off-seed source
 `x = [0.940049, 0.283137, 0.466814]`, `y = [0.166053, 0.451379, 0.302568]`,
 `delta = 0.4` — on-surface, positive, `i_* = 0`,
 `eta_{i_*}/eta_obs = 0.908774422` (deviation −0.091225578). Both satisfy every
@@ -175,7 +175,7 @@ face.
 ## realized_state primitive discipline
 
 Every realized state used by the probes is a single explicit supplied point on
-the fixed native seed surface, evaluated pointwise. No measure, ensemble,
+the supplied fixed-sum seed surface, evaluated pointwise. No measure, ensemble,
 typicality, genericity, or weighting assumption is used *by the probes*; the
 modality weighting examined in P2 is a diagnosed property of the adopted
 functional, not a weighting adopted here. State-contingent values (which column
@@ -187,8 +187,7 @@ points.
 - It does **not** derive `I_seed`, the modality weighting, the favored-column
   rule, or the equality constraint from the axioms. The gate note's open
   selector gate stands exactly as scoped there.
-- It does **not** author or predict audit grades; the ledger citation above is
-  descriptive of the generated ledger at the date of writing.
+- It does **not** author or predict audit grades.
 - It proposes **no** retained-grade or theorem-grade status for itself; it is
   support-grade route diagnosis.
 - Each probe is refutation-shaped and could have failed (surface-rigid column /

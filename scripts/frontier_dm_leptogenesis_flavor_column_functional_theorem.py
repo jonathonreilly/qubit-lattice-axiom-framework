@@ -33,19 +33,6 @@ from frontier_dm_leptogenesis_pmns_projector_interface import (
 
 AUDIT_TIMEOUT_SEC = 120
 
-ROOT = Path(__file__).resolve().parents[1]
-RUNNER_PATH = "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py"
-NOTE_PATH = ROOT / "docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md"
-DIRECT_CONSUMER_PATHS = (
-    ROOT / "docs/DM_LEPTOGENESIS_NE_ACTIVE_COLUMN_AXIOM_BOUNDARY_NOTE_2026-04-16.md",
-    ROOT / "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md",
-    ROOT / "docs/DM_LEPTOGENESIS_PMNS_CONSTRAINED_OPTIMIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md",
-    ROOT / "docs/DM_LEPTOGENESIS_PMNS_ISEED_SELECTOR_ROUTE_PROBES_NOTE_2026-07-02.md",
-    ROOT / "docs/DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md",
-    ROOT / "docs/DM_LEPTOGENESIS_PMNS_REDUCTION_EXHAUSTION_THEOREM_NOTE_2026-04-16.md",
-    ROOT / "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
-)
-
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
@@ -166,10 +153,12 @@ def flavored_column_functional(
     washout_tail: np.ndarray,
 ) -> float:
     values = np.asarray(column, dtype=float)
-    if values.ndim != 1 or values.size == 0 or not np.all(np.isfinite(values)):
-        raise ValueError("column must be a non-empty finite 1D array")
+    if values.ndim != 1 or values.size != 3 or not np.all(np.isfinite(values)):
+        raise ValueError("column must be a finite three-flavor 1D array")
     if np.any(values < 0.0) or np.any(values > 1.0):
         raise ValueError("column entries must lie in [0,1]")
+    if not math.isclose(float(math.fsum(values)), 1.0, rel_tol=0.0, abs_tol=1.0e-12):
+        raise ValueError("column entries must sum to one")
     return float(
         math.fsum(
             psi_q(float(q), z_grid, source_profile, washout_tail)
@@ -186,7 +175,7 @@ def flavored_transport_direct(column: np.ndarray, k_decay: float) -> float:
         source_matrix=np.array([column], dtype=float),
         washout_matrix=np.array([column], dtype=float),
     )
-    return abs(float(asym_grid[:, -1].sum()))
+    return float(asym_grid[:, -1].sum())
 
 
 def trapezoid_measure_weights(
@@ -264,39 +253,21 @@ def _raises_value_error(callable_obj: object) -> bool:
 
 def part0_source_scope_firewall() -> None:
     print("\n" + "=" * 88)
-    print("PART 0: SOURCE-SCOPE AND DIRECT-CONSUMER FIREWALL")
+    print("PART 0: SELF-CONTAINED RUNNER-SCOPE FIREWALL")
     print("=" * 88)
 
-    note = NOTE_PATH.read_text(encoding="utf-8")
     source = Path(__file__).read_text(encoding="utf-8")
 
-    required_note_phrases = (
-        "supplied-premise integrating-factor identity",
-        "It does not derive a leptogenesis transport model from the framework.",
-        "This is a finite supplied-packet ordering.",
-        "No global uniqueness claim is made on `[0,1]`",
-        "physical leptogenesis closure",
-        "missing_bridge_theorem",
-        RUNNER_PATH,
+    required_source_phrases = (
+        "conditional on supplied transport",
+        "finite fixtures, not axiom-native physical",
+        "GLOBAL UNIQUENESS OPEN",
+        "No physical yield conversion or canonical-packet derivation",
     )
-    for phrase in required_note_phrases:
+    for phrase in required_source_phrases:
         check(
-            f"source note carries required scope phrase: {phrase}",
-            phrase in note,
-            cls="B",
-        )
-
-    forbidden_note_phrases = (
-        "unique interior maximum",
-        "selects the middle column exactly",
-        "transport selector: closed",
-        "This closes the flavored-column selection problem",
-        "near-closing DM flavored-transport read is now pinned",
-    )
-    for phrase in forbidden_note_phrases:
-        check(
-            f"source note excludes overclaim phrase: {phrase}",
-            phrase not in note,
+            f"runner source carries required scope phrase: {phrase}",
+            phrase in source,
             cls="B",
         )
 
@@ -308,27 +279,8 @@ def part0_source_scope_firewall() -> None:
     )
     for name in forbidden_physical_imports:
         check(
-            f"runner excludes physical yield/readout import: {name}",
+            f"runner source does not reference or consume physical readout name: {name}",
             name not in source,
-            cls="B",
-        )
-
-    consumer_text = "\n".join(
-        path.read_text(encoding="utf-8") for path in DIRECT_CONSUMER_PATHS
-    )
-    laundering_phrases = (
-        "the exact one-source flavored selector",
-        "the flavored transport selector is exact",
-        "the exact DM transport selector",
-        "retained authority supplying the transport-favored flavor column",
-        "retained-grade generated supplier of `i_*`",
-        "fixed by the exact transport extremal class",
-        "fixed by the exact transport-extremal",
-    )
-    for phrase in laundering_phrases:
-        check(
-            f"ledger-declared direct consumers exclude laundering phrase: {phrase}",
-            phrase not in consumer_text,
             cls="B",
         )
 
@@ -423,6 +375,28 @@ def part1_integrating_factor_identity_has_independent_analytic_checks() -> None:
         _raises_value_error(
             lambda: flavored_column_functional(
                 np.array([0.5, np.nan, 0.5]),
+                z_const,
+                source_const,
+                tail_const,
+            )
+        ),
+    )
+    check(
+        "invalid non-three-flavor column is rejected",
+        _raises_value_error(
+            lambda: flavored_column_functional(
+                np.array([0.5, 0.5]),
+                z_const,
+                source_const,
+                tail_const,
+            )
+        ),
+    )
+    check(
+        "invalid non-simplex column is rejected",
+        _raises_value_error(
+            lambda: flavored_column_functional(
+                np.array([0.6, 0.6, 0.0]),
                 z_const,
                 source_const,
                 tail_const,

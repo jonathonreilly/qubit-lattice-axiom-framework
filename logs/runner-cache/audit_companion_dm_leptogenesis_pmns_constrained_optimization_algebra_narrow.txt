@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py
-runner_sha256: 8730772886b8d9ecc261e9e9daf130c5fbd250cc1f7bd3b99d49c0289f9d0f34
+runner_sha256: e6fc2b5f4c27611dd29c1f39f5c340b6a997b854a40d3c966962e02199417051
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.94
+elapsed_sec: 0.66
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 DM_LEPTOGENESIS_PMNS_CONSTRAINED_OPTIMIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17
 Goal: sympy-symbolic verification of (T1) uniqueness, (T2) Lagrange
-stationarity, (T3) multiplier formula under admitted (H1)-(H4) + (H1')
+stationarity, (T3) multiplier formula under supplied (H1)-(H4) + (H1')
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
@@ -22,8 +22,8 @@ Part 0: symbolic setup
   C(z) = c1 z1 + c2 z2 - d
   grad J(z) = [[-A11*a1 + A11*z1 - A12*a2 + A12*z2], [-A12*a1 + A12*z1 - A22*a2 + A22*z2]]
   grad C(z) = [[c1], [c2]]
-  [PASS (A)] A SPD discriminant det(A) = A11 A22 - A12^2 (admitted positive under (H1))  (det_A = A11*A22 - A12**2)
-  [PASS (A)] grad C has explicit nonvanishing-norm form c1^2 + c2^2 (admitted (H2))  (|| grad C ||^2 = c1**2 + c2**2)
+  [PASS (A)] A SPD discriminant det(A) = A11 A22 - A12^2 (supplied positive under (H1))  (det_A = A11*A22 - A12**2)
+  [PASS (A)] grad C has explicit nonvanishing-norm form c1^2 + c2^2 (supplied (H2))  (|| grad C ||^2 = c1**2 + c2**2)
 
 ----------------------------------------------------------------------------------------
 Part 1: closed-form constrained minimizer via Lagrange system

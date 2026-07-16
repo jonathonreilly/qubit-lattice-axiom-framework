@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/dm_iseed_selector_route_probes_2026_07_02.py
-runner_sha256: e44e1848943e2a8ae11d575d8398981d14d4a225af1617ff919c0fcbdcadd28b
-timeout_sec: 180
+runner_sha256: f6674a33637acd6d52f416f43e28d9664aa7a1ce407db7fd10cf4754eaf5c746
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.08
+elapsed_sec: 1.50
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -19,7 +19,7 @@ realized_state primitive respected: pointwise evaluation, no typicality
 ========================================================================================
 PROBE 1: axiom-surface independence of the favored column i_*
 ========================================================================================
-[PASS] Two law-admissible realized states favor DIFFERENT transport columns
+[PASS] Two supplied positive realized states favor DIFFERENT transport columns
        witness: assignment A favors column 0: x=[0.076521, 0.076521, 1.536959], y=[0.10506 , 0.038649, 0.776291], delta=0, eta/eta_obs=[0.468627, 0.468618, 0.219751] | assignment B favors column 1: x=[0.076521, 0.076521, 1.536959], y=[0.041656, 0.041656, 0.836688], delta=0, eta/eta_obs=[0.442683, 0.442683, 0.222029] | both on fixed seed surface (mean-xbar/mean-ybar)=True | distinct favored columns 0 != 1
 
 ========================================================================================

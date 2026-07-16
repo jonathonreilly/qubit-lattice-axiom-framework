@@ -3,11 +3,11 @@
 DM leptogenesis N_e projected-source-law derivation.
 
 Framework convention:
-  "axiom" means only the single framework axiom Cl(3) on Z^3.
+  the current framework baseline is Lattice, Qubit, Admissibility, and Record.
 
 Purpose:
-  Transplant the PMNS microscopic source-response theorem onto the refreshed DM
-  branch and show that, on the charged-lepton-active branch N_e, the selected
+  Test the PMNS microscopic source-response reduction on the DM lane and show
+  that, on the charged-lepton-active branch N_e, the finite-fixture selected
   flavored-transport column is derivable from the charged-lepton projected
   Hermitian source law alone.
 """
@@ -18,13 +18,7 @@ import sys
 
 import numpy as np
 
-from dm_leptogenesis_exact_common import (
-    C_SPH,
-    D_THERMAL_EXACT,
-    ETA_OBS,
-    S_OVER_NGAMMA_EXACT,
-    exact_package,
-)
+from dm_leptogenesis_exact_common import exact_package
 from frontier_dm_leptogenesis_flavor_column_functional_theorem import (
     flavored_column_functional,
     flavored_transport_kernel,
@@ -96,18 +90,6 @@ def packet_from_he_ne(h_e: np.ndarray) -> np.ndarray:
     return (np.abs(u_e) ** 2).T
 
 
-def eta_ratio_from_transport_factor(transport_factor: float) -> float:
-    pkg = exact_package()
-    return (
-        S_OVER_NGAMMA_EXACT
-        * C_SPH
-        * D_THERMAL_EXACT
-        * pkg.epsilon_1
-        * transport_factor
-        / ETA_OBS
-    )
-
-
 def part1_the_projected_hermitian_source_pack_recovers_h_e_exactly() -> np.ndarray:
     print("\n" + "=" * 88)
     print("PART 1: THE PROJECTED HERMITIAN SOURCE PACK RECOVERS H_e EXACTLY")
@@ -172,9 +154,9 @@ def part2_h_e_alone_determines_the_ne_active_packet(h_e: np.ndarray) -> np.ndarr
     return packet
 
 
-def part3_the_exact_transport_selector_then_picks_the_middle_column(packet: np.ndarray) -> None:
+def part3_the_conditional_finite_functional_orders_the_packet(packet: np.ndarray) -> None:
     print("\n" + "=" * 88)
-    print("PART 3: THE EXACT TRANSPORT SELECTOR THEN PICKS THE MIDDLE COLUMN")
+    print("PART 3: THE CONDITIONAL FINITE FUNCTIONAL ORDERS THE SUPPLIED PACKET")
     print("=" * 88)
 
     pkg = exact_package()
@@ -186,22 +168,16 @@ def part3_the_exact_transport_selector_then_picks_the_middle_column(packet: np.n
         ],
         dtype=float,
     )
-    eta_vals = np.array([eta_ratio_from_transport_factor(value) for value in func_vals], dtype=float)
     best_idx = int(np.argmax(func_vals))
 
     check(
-        "Once H_e is known, the exact DM transport selector determines the relevant N_e column algorithmically",
+        "Once H_e and the finite transport fixture are supplied, the packet columns are ordered algorithmically",
         best_idx == 1,
         f"func_vals={np.round(func_vals, 12)}",
     )
-    check(
-        "The selected column reproduces the near-closing PMNS-assisted DM value",
-        abs(float(eta_vals[best_idx]) - 0.9895125971972334) < 2e-7,
-        f"eta/eta_obs={eta_vals[best_idx]:.12f}",
-    )
 
     print()
-    print(f"  columnwise eta/eta_obs from dW_e^H-derived packet = {np.round(eta_vals, 12)}")
+    print(f"  finite functional values from dW_e^H-derived packet = {np.round(func_vals, 12)}")
 
 
 def part4_bottom_line() -> None:
@@ -215,22 +191,22 @@ def part4_bottom_line() -> None:
         "for N_e transport, dW_e^H is sufficient",
     )
     check(
-        "The exact remaining PMNS-side DM object is now the charged-lepton projected Hermitian source law, not the full active five-real source law",
+        "The remaining PMNS-side input for this conditional reduction is the charged-lepton projected Hermitian source law",
         True,
-        "derive dW_e^H on E_e from Cl(3) on Z^3",
+        "derive dW_e^H on E_e from the current framework baseline",
     )
     check(
-        "So the sole-axiom DM/PMNS bridge now reduces to evaluating the projected charged-lepton Hermitian response pack",
+        "The current-framework DM/PMNS bridge therefore still requires evaluating the projected charged-lepton Hermitian response pack",
         True,
         "packet and selected column are downstream algorithmic once H_e is known",
     )
 
     print()
     print("  Updated DM-side reduction:")
-    print("    - transport selector is exact")
+    print("    - finite transport ordering is conditional on supplied inputs")
     print("    - N_e packet is exact from H_e")
     print("    - H_e is exact from dW_e^H")
-    print("    - remaining target is dW_e^H from Cl(3) on Z^3")
+    print("    - remaining target is dW_e^H from the current framework baseline")
 
 
 def main() -> int:
@@ -240,7 +216,7 @@ def main() -> int:
 
     h_e = part1_the_projected_hermitian_source_pack_recovers_h_e_exactly()
     packet = part2_h_e_alone_determines_the_ne_active_packet(h_e)
-    part3_the_exact_transport_selector_then_picks_the_middle_column(packet)
+    part3_the_conditional_finite_functional_orders_the_packet(packet)
     part4_bottom_line()
 
     print("\n" + "=" * 88)

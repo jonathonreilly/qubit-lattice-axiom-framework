@@ -2,8 +2,7 @@
 """
 Route probes for the dm-leptogenesis I_seed minimum-information selector gate.
 
-Gate note (ledger effective_status: audited_conditional; the note's own scope
-declares an open selector gate):
+Gate note (its source-authored scope declares an open selector gate):
   docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md
 
 Paired note:
@@ -24,13 +23,13 @@ Objects reused verbatim from the gate note and its primary runner
     with xbar = 0.5633333333333334, ybar = 0.30666666666666664
   - I_seed(x, y, delta) = D_KL(x||x_seed) + D_KL(y||y_seed) + (1 - cos delta),
     KL taken on the L1-normalized columns (identical to the runner's info_cost)
-  - the exact transport map eta_columns_from_active(x, y, delta) and eta_obs,
+  - the supplied transport/readout map eta_columns_from_active(x, y, delta),
     imported from the same modules the gate runner imports, so eta ratios here
     are the note's real transport object, not a re-invented proxy.
 
 The "realized_state primitive: pointwise evaluation only, no typicality" rule is
-respected: each admissible realized-state assignment is a single explicit point
-on the fixed native seed surface, evaluated pointwise. No measure, no ensemble,
+respected: each supplied realized-state assignment is a single explicit point
+on the supplied fixed-sum seed surface, evaluated pointwise. No measure, no ensemble,
 no typicality assumption is used anywhere.
 
 Runs from the worktree root:  python3 scripts/dm_iseed_selector_route_probes_2026_07_02.py
@@ -89,7 +88,7 @@ def verdict(name: str, passed: bool, witness: str) -> None:
 
 def soft3(u: float, v: float, total: float) -> np.ndarray:
     """Positive 3-vector with fixed sum `total` (same simplex-surface map as the
-    gate runner's soft3, so every point lies on the fixed native seed surface:
+    gate runner's soft3, so every point lies on the supplied fixed-sum surface:
     mean(x) = xbar when total = 3*xbar)."""
     logits = np.array([u, v, 0.0], dtype=float)
     logits -= np.max(logits)
@@ -128,7 +127,7 @@ def info_cost_weighted(x: np.ndarray, y: np.ndarray, delta: float, wx: float, wy
 
 
 def eta_columns(x: np.ndarray, y: np.ndarray, delta: float) -> np.ndarray:
-    """eta_{i}/eta_obs for i in {0,1,2}, using the gate note's exact transport
+    """eta_{i}/eta_obs for i in {0,1,2}, using the gate note's supplied transport
     map (imported, not re-derived)."""
     h_e = canonical_h(x, y, delta)
     packet = active_packet_from_h(h_e).T
@@ -162,14 +161,14 @@ def fmt(v: np.ndarray) -> str:
 # ---------------------------------------------------------------------------
 def probe1_axiom_surface_independence() -> None:
     """Hypothesis: the I_seed-relevant favored column i_* = argmax_i eta_i is NOT
-    fixed by the axiom surface alone; two law-admissible realized-state
-    assignments on the SAME fixed native seed surface can transport-favor
+    fixed by the axiom surface alone; two supplied positive realized-state
+    assignments on the SAME fixed-sum seed surface can transport-favor
     DIFFERENT columns. If such a pair exists, i_* is state-contingent registered
     data, so no axiom-level derivation can pin it without the realized state.
 
-    Refutation-shaped: if an exhaustive small-grid search of on-surface
+    Refutation-shaped: if the finite small-grid search of on-surface
     realized states all favor the SAME column, the hypothesis is unsupported and
-    this probe FAILS honestly (the favored column would then be surface-rigid).
+    this probe FAILS honestly on that grid.
     """
     print("\n" + "=" * 88)
     print("PROBE 1: axiom-surface independence of the favored column i_*")
@@ -196,7 +195,7 @@ def probe1_axiom_surface_independence() -> None:
         c_a, c_b = cols[0], cols[1]
         xa, ya, da = seen[c_a]
         xb, yb, db = seen[c_b]
-        # Confirm both assignments are on the fixed native seed surface (pointwise).
+        # Confirm both assignments are on the supplied fixed-sum surface (pointwise).
         on_surface = (
             abs(np.mean(xa) - XBAR) < 1e-12
             and abs(np.mean(ya) - YBAR) < 1e-12
@@ -217,12 +216,12 @@ def probe1_axiom_surface_independence() -> None:
     else:
         only = next(iter(seen.keys())) if seen else None
         witness = (
-            f"exhaustive on-surface grid favored a single column {only} for every "
-            f"admissible realized state searched; no differing pair found "
-            f"(favored column is surface-rigid across the grid)"
+            f"finite on-surface grid favored a single column {only} for every "
+            f"supplied positive realized state searched; no differing pair found "
+            f"(state-contingency is unsupported on the tested grid)"
         )
     verdict(
-        "Two law-admissible realized states favor DIFFERENT transport columns",
+        "Two supplied positive realized states favor DIFFERENT transport columns",
         passed,
         witness,
     )
@@ -233,7 +232,7 @@ def probe1_axiom_surface_independence() -> None:
 # ---------------------------------------------------------------------------
 def probe2_weighting_principle_dependence() -> None:
     """Hypothesis: the minimum-information selection presupposes a modality
-    weighting principle. Over the SAME finite candidate set of admissible
+    weighting principle. Over the SAME finite candidate set of supplied positive
     OFF-seed sources, the argmin of the uniform functional I_seed (equal x/y
     weight) and the argmin of a legitimately modality-weighted functional
     I_seed^{wx,wy} disagree.
@@ -253,8 +252,8 @@ def probe2_weighting_principle_dependence() -> None:
     print("PROBE 2: weighting-principle dependence of the I_seed argmin")
     print("=" * 88)
 
-    # A finite, explicit candidate bank of admissible OFF-seed sources, each a
-    # single pointwise realized state on the fixed native seed surface. The
+    # A finite, explicit candidate bank of supplied positive OFF-seed sources, each a
+    # single pointwise realized state on the supplied fixed-sum surface. The
     # equal-logit / zero-phase point (0,0),(0,0),delta=0 IS the seed, so it is
     # skipped: the selector ranges over off-seed sources only.
     logit_pairs = [
@@ -326,12 +325,12 @@ def probe2_weighting_principle_dependence() -> None:
 # ---------------------------------------------------------------------------
 def probe3_constraint_independence() -> None:
     """Hypothesis: the equality eta_{i_*}/eta_obs = 1 is an INDEPENDENT imposed
-    constraint, not implied by the note's other premises (fixed native seed
+    constraint, not implied by the note's other premises (supplied fixed-sum
     surface + positive off-seed source + transport-favored-column identification).
-    Witness: a finite admissible model satisfying all those other premises whose
+    Witness: a finite supplied positive model satisfying all those other premises whose
     computed eta_{i_*}/eta_obs != 1.
 
-    Refutation-shaped: if every admissible on-surface, positive, favored-column
+    Refutation-shaped: if every tested on-surface, positive, favored-column
     model forced eta_{i_*}/eta_obs = 1, the constraint would be a consequence of
     the other premises and this probe would FAIL honestly.
     """
@@ -339,9 +338,9 @@ def probe3_constraint_independence() -> None:
     print("PROBE 3: constraint independence of eta_{i_*}/eta_obs = 1")
     print("=" * 88)
 
-    # An explicit admissible model: the pure-seed realized state itself
+    # An explicit supplied model: the pure-seed realized state itself
     # (x_seed, y_seed, delta = 0). It satisfies every OTHER premise:
-    #   - on the fixed native seed surface (it IS the seed): mean = xbar, ybar
+    #   - on the supplied fixed-sum seed surface: mean = xbar, ybar
     #   - positive source columns
     #   - a well-defined transport-favored column i_* = argmax_i eta_i
     # but its off-seed displacement is zero, so it is not fitted to eta_obs.
@@ -356,8 +355,8 @@ def probe3_constraint_independence() -> None:
     positive0 = bool(np.all(x0 > 0) and np.all(y0 > 0))
     ne_one0 = abs(ratio0 - 1.0) > 1e-6
 
-    # A second, off-seed admissible model to show the miss is generic, not a
-    # boundary artifact of the seed point.
+    # A second, off-seed supplied model gives another explicit miss, not only
+    # the seed point.
     x1 = soft3(0.7, -0.5, 3.0 * XBAR)
     y1 = soft3(-0.6, 0.4, 3.0 * YBAR)
     d1 = 0.4

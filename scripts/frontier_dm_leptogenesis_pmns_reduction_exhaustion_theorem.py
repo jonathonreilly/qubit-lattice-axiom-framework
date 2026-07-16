@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
 """
-DM leptogenesis PMNS reduction-exhaustion theorem.
+DM leptogenesis PMNS conditional reduction-factorization diagnostic.
 
 Framework convention:
-  "axiom" means only the single framework axiom Cl(3) on Z^3.
+  the current framework baseline is Lattice, Qubit, Admissibility, and Record.
 
 Purpose:
-  Close the last review-scope loophole in the PMNS-assisted N_e closure lane.
+  Check a supplied source-chart factorization in the PMNS-assisted N_e lane.
 
   Earlier review concern:
     do we need a separate "all-possible-components" analytic uniqueness theorem
     beyond the exact closure surface already used by the selector theorem?
 
-Exact answer here:
-  No, not for the PMNS-assisted N_e claim on the refreshed branch, because
-  the exact closure problem already factors through one exact reduced domain:
+  Supplied chart:
 
       S_seed
         = { (x, y, delta) :
@@ -23,18 +21,9 @@ Exact answer here:
               sum_i y_i = 3 YBAR_NE,
               delta in [-pi, pi] }.
 
-  The current branch already proves:
-    1. the one-sided N_e PMNS packet is exactly |U_e|^2^T, so the passive side
-       contributes only ordering and no extra transport degrees of freedom;
-    2. the flavored transport output is an exact scalar functional of a packet
-       column, so there is no hidden transport state beyond that packet;
-    3. the full microscopic D-lane factors through D -> D_- -> dW_e^H -> H_e;
-    4. the active source chart used on the branch is exact and surjective onto
-       the interior of S_seed.
-
-  Therefore every admissible PMNS-assisted N_e closure component already lives
-  on S_seed. There is no separate physical domain "beyond the reduced surface"
-  on which another uniqueness theorem would have to range.
+  The checks show only that named helper candidates and a supplied finite
+  transport calculation factor through this chart. They do not prove that every
+  admissible physical component lies on S_seed.
 """
 
 from __future__ import annotations
@@ -82,9 +71,9 @@ def inverse_soft3(weights: np.ndarray) -> np.ndarray:
     return np.array([math.log(w[0] / w[2]), math.log(w[1] / w[2])], dtype=float)
 
 
-def part1_the_active_seed_surface_chart_is_exact_and_exhaustive() -> None:
+def part1_the_active_seed_surface_chart_round_trips() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: THE FIXED N_e SEED SURFACE HAS AN EXACT GLOBAL CHART")
+    print("PART 1: THE SUPPLIED N_e SEED-SURFACE CHART ROUND-TRIPS")
     print("=" * 88)
 
     x_target = np.array([0.471675, 0.553810, 0.664515], dtype=float)
@@ -132,9 +121,9 @@ def part1_the_active_seed_surface_chart_is_exact_and_exhaustive() -> None:
     print(f"  recovered delta = {delta_back:.6f}")
 
 
-def part2_the_pmns_assisted_eta_map_factors_exactly_through_the_reduced_surface() -> None:
+def part2_the_supplied_eta_fixture_factors_through_the_chart() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: THE ETA MAP FACTORS EXACTLY THROUGH THE REDUCED SURFACE")
+    print("PART 2: THE SUPPLIED ETA FIXTURE FACTORS THROUGH THE CHART")
     print("=" * 88)
 
     x = np.array([0.471675, 0.553810, 0.664515], dtype=float)
@@ -160,12 +149,12 @@ def part2_the_pmns_assisted_eta_map_factors_exactly_through_the_reduced_surface(
         f"err={np.linalg.norm(packet_full - packet_act):.2e}",
     )
     check(
-        "The flavored transport output is then an exact scalar functional of active packet columns",
+        "The supplied finite transport output is a scalar functional of active packet columns",
         np.all(func_vals > 0.0),
         f"F(P)={np.round(func_vals, 12)}",
     )
     check(
-        "So the PMNS-assisted eta map already factors through H_e and its active packet, with no extra passive or transport state",
+        "The named helper eta fixture factors through H_e and its active packet",
         best_idx == 0,
         f"favored column={best_idx}",
     )
@@ -175,9 +164,9 @@ def part2_the_pmns_assisted_eta_map_factors_exactly_through_the_reduced_surface(
     print(f"  exact column functionals = {np.round(func_vals, 12)}")
 
 
-def part3_every_current_closure_branch_lives_on_the_same_exact_reduced_domain() -> None:
+def part3_imported_candidate_branches_lie_on_the_supplied_surface() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: THE FULL-CLOSURE BRANCHES ALREADY LIVE ON THAT EXACT DOMAIN")
+    print("PART 3: IMPORTED CANDIDATE BRANCHES LIE ON THE SUPPLIED SURFACE")
     print("=" * 88)
 
     i_star, branches = selector.part1_enumerate_stationary_branches()
@@ -189,17 +178,17 @@ def part3_every_current_closure_branch_lives_on_the_same_exact_reduced_domain() 
     x_hi, y_hi, d_hi = stat.rel.build_active_from_params(high.representative)
 
     check(
-        "The low-action closure branch lies on the exact fixed native seed surface",
+        "The imported low-action candidate lies on the supplied fixed-sum seed surface",
         abs(np.mean(x_lo) - rel.XBAR_NE) < 1e-12 and abs(np.mean(y_lo) - rel.YBAR_NE) < 1e-12,
         f"(xbar,ybar)=({np.mean(x_lo):.6f},{np.mean(y_lo):.6f})",
     )
     check(
-        "The higher stationary closure branch lies on the same exact fixed native seed surface",
+        "The imported higher-action candidate lies on the same supplied fixed-sum seed surface",
         abs(np.mean(x_hi) - rel.XBAR_NE) < 1e-12 and abs(np.mean(y_hi) - rel.YBAR_NE) < 1e-12,
         f"(xbar,ybar)=({np.mean(x_hi):.6f},{np.mean(y_hi):.6f})",
     )
     check(
-        "So even the full-closure selector competition is already an internal problem on one exact reduced domain",
+        "The two imported candidate representatives lie on the same supplied chart",
         abs(d_lo) < 1e-4 and abs(d_hi) < 1e-4,
         f"(delta_lo,delta_hi)=({d_lo:.3e},{d_hi:.3e})",
     )
@@ -217,42 +206,46 @@ def part4_bottom_line() -> None:
     print("=" * 88)
 
     print("  Nature-review read:")
-    print("    - the phrase 'beyond the exact closure surface we reduced to' is no")
-    print("      longer a live loophole on the PMNS-assisted N_e route")
-    print("    - the exact reduction chain already proves that surface is the whole")
-    print("      admissible domain for this closure problem")
-    print("    - so the selector theorem only has to classify branches on that")
-    print("      surface, not on some larger external domain")
+    print("    - the named finite computation factors through the supplied seed surface")
+    print("    - no check proves that surface is the whole admissible physical domain")
+    print("    - disconnected or omitted components and global uniqueness remain open")
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM LEPTOGENESIS PMNS REDUCTION-EXHAUSTION THEOREM")
+    print("DM LEPTOGENESIS PMNS CONDITIONAL REDUCTION-FACTORIZATION DIAGNOSTIC")
     print("=" * 88)
     print()
     print("Framework convention:")
-    print('  "axiom" means only Cl(3) on Z^3.')
+    print("  current baseline: Lattice, Qubit, Admissibility, and Record.")
     print()
     print("Question:")
-    print("  Do we still need a stronger theorem about 'all possible components'")
-    print("  beyond the exact closure surface already used on the PMNS-assisted N_e")
-    print("  route, or is that larger domain already eliminated by the exact")
-    print("  reduction chain?")
+    print("  Which supplied chart is consumed by the named finite computation, and")
+    print("  what domain-exhaustion claims remain open?")
 
-    part1_the_active_seed_surface_chart_is_exact_and_exhaustive()
-    part2_the_pmns_assisted_eta_map_factors_exactly_through_the_reduced_surface()
-    part3_every_current_closure_branch_lives_on_the_same_exact_reduced_domain()
+    part1_the_active_seed_surface_chart_round_trips()
+    part2_the_supplied_eta_fixture_factors_through_the_chart()
+    candidate_refinement_completed = True
+    try:
+        part3_imported_candidate_branches_lie_on_the_supplied_surface()
+    except RuntimeError as exc:
+        candidate_refinement_completed = False
+        check(
+            "The imported constrained candidate refinement completes",
+            False,
+            str(exc),
+        )
     part4_bottom_line()
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact reduction answer:")
-    print("    - the fixed native N_e seed surface is the full admissible domain of")
-    print("      the PMNS-assisted closure problem on this branch")
-    print("    - the eta map factors exactly through that domain")
-    print("    - so a theorem about components 'beyond' that surface is not")
-    print("      separately required for the N_e closure claim")
+    print("  Conditional factorization answer:")
+    print("    - the supplied chart round-trips on tested fixed-sum points")
+    print("    - the finite eta exemplar factors through that chart")
+    if not candidate_refinement_completed:
+        print("    - imported candidate refinement did not complete")
+    print("    - admissible-domain exhaustion and global uniqueness remain open")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

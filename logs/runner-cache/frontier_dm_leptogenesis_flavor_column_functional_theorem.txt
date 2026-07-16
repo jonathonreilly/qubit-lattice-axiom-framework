@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py
-runner_sha256: 9ab0f928b3b62393fa282c7e83e741123a2c9a0667d13cdb7b346f5c4d760d9f
+runner_sha256: f40f1b4dc97dd11cb68b3cdf614cece78ebdb89778b3f24d3bdb59a97a1746c2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.61
+elapsed_sec: 1.83
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -11,31 +11,16 @@ DM LEPTOGENESIS CONDITIONAL FLAVOR-COLUMN FUNCTIONAL IDENTITY
 ========================================================================================
 
 ========================================================================================
-PART 0: SOURCE-SCOPE AND DIRECT-CONSUMER FIREWALL
+PART 0: SELF-CONTAINED RUNNER-SCOPE FIREWALL
 ========================================================================================
-  [B] PASS: source note carries required scope phrase: supplied-premise integrating-factor identity
-  [B] PASS: source note carries required scope phrase: It does not derive a leptogenesis transport model from the framework.
-  [B] PASS: source note carries required scope phrase: This is a finite supplied-packet ordering.
-  [B] PASS: source note carries required scope phrase: No global uniqueness claim is made on `[0,1]`
-  [B] PASS: source note carries required scope phrase: physical leptogenesis closure
-  [B] PASS: source note carries required scope phrase: missing_bridge_theorem
-  [B] PASS: source note carries required scope phrase: scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py
-  [B] PASS: source note excludes overclaim phrase: unique interior maximum
-  [B] PASS: source note excludes overclaim phrase: selects the middle column exactly
-  [B] PASS: source note excludes overclaim phrase: transport selector: closed
-  [B] PASS: source note excludes overclaim phrase: This closes the flavored-column selection problem
-  [B] PASS: source note excludes overclaim phrase: near-closing DM flavored-transport read is now pinned
-  [B] PASS: runner excludes physical yield/readout import: ETA_OBS
-  [B] PASS: runner excludes physical yield/readout import: C_SPH
-  [B] PASS: runner excludes physical yield/readout import: D_THERMAL_EXACT
-  [B] PASS: runner excludes physical yield/readout import: S_OVER_NGAMMA_EXACT
-  [B] PASS: ledger-declared direct consumers exclude laundering phrase: the exact one-source flavored selector
-  [B] PASS: ledger-declared direct consumers exclude laundering phrase: the flavored transport selector is exact
-  [B] PASS: ledger-declared direct consumers exclude laundering phrase: the exact DM transport selector
-  [B] PASS: ledger-declared direct consumers exclude laundering phrase: retained authority supplying the transport-favored flavor column
-  [B] PASS: ledger-declared direct consumers exclude laundering phrase: retained-grade generated supplier of `i_*`
-  [B] PASS: ledger-declared direct consumers exclude laundering phrase: fixed by the exact transport extremal class
-  [B] PASS: ledger-declared direct consumers exclude laundering phrase: fixed by the exact transport-extremal
+  [B] PASS: runner source carries required scope phrase: conditional on supplied transport
+  [B] PASS: runner source carries required scope phrase: finite fixtures, not axiom-native physical
+  [B] PASS: runner source carries required scope phrase: GLOBAL UNIQUENESS OPEN
+  [B] PASS: runner source carries required scope phrase: No physical yield conversion or canonical-packet derivation
+  [B] PASS: runner source does not reference or consume physical readout name: ETA_OBS
+  [B] PASS: runner source does not reference or consume physical readout name: C_SPH
+  [B] PASS: runner source does not reference or consume physical readout name: D_THERMAL_EXACT
+  [B] PASS: runner source does not reference or consume physical readout name: S_OVER_NGAMMA_EXACT
 
 ========================================================================================
 PART 1: CONDITIONAL INTEGRATING-FACTOR IDENTITY
@@ -45,6 +30,8 @@ PART 1: CONDITIONAL INTEGRATING-FACTOR IDENTITY
   [A] PASS: invalid negative projector weight is rejected
   [A] PASS: invalid non-monotone integration grid is rejected
   [A] PASS: invalid non-finite column is rejected
+  [A] PASS: invalid non-three-flavor column is rejected
+  [A] PASS: invalid non-simplex column is rejected
 
 ========================================================================================
 PART 2: SUPPLIED FINITE KERNEL CROSS-RECOMPUTATION
@@ -81,7 +68,7 @@ PART 4: SUPPLIED CANONICAL PACKET FINITE ORDERING
   No physical yield conversion or canonical-packet derivation is claimed here.
 
 ========================================================================================
-SUMMARY: classified_pass=38 fail=0
+SUMMARY: classified_pass=25 fail=0
 ========================================================================================
 
 ----- stderr -----

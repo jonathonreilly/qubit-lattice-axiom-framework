@@ -7,7 +7,7 @@ calculus-identity implication: GIVEN
 
   (H1)  J : Omega -> R is C^2, strictly convex on open convex Omega;
   (H1') F = { z in Omega : C(z) = 0 } is segment-feasible
-        (admitted convex-feasibility, not discharged);
+        (supplied convex-feasibility, not discharged);
   (H2)  grad C(z) =/= 0 on F;
   (H3)  F is non-empty and bounded;
   (H4)  the constrained minimum of J on F is attained at an interior
@@ -45,11 +45,11 @@ verification:
 Companion role: not a new claim row, not a new source note, no status
 promotion. Provides audit-friendly evidence that the parent's
 load-bearing standalone calculus content holds at exact symbolic
-precision under the four explicit admitted inputs plus (H1'). The
-admitted inputs themselves are not re-derived; in particular, the
+precision under the four explicit supplied hypotheses plus (H1'). The
+supplied hypotheses themselves are not re-derived; in particular, the
 strict convexity of I_seed and the constraint regularity of
-eta_{i_*}/eta_obs - 1 remain admitted imports from the parent row
-and from the retained
+eta_{i_*}/eta_obs - 1 remain conditional imports from the parent row
+and from the cited
 dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16
 authority.
 """
@@ -106,7 +106,7 @@ def main() -> int:
     print("Audit companion (exact-symbolic) for")
     print("DM_LEPTOGENESIS_PMNS_CONSTRAINED_OPTIMIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17")
     print("Goal: sympy-symbolic verification of (T1) uniqueness, (T2) Lagrange")
-    print("stationarity, (T3) multiplier formula under admitted (H1)-(H4) + (H1')")
+    print("stationarity, (T3) multiplier formula under supplied (H1)-(H4) + (H1')")
     print("=" * 88)
 
     # ---------------------------------------------------------------------
@@ -158,17 +158,17 @@ def main() -> int:
     print(f"  grad J(z) = {grad_J.tolist()}")
     print(f"  grad C(z) = {grad_C.tolist()}")
 
-    # SPD discriminant nonvanishing (admitted (H1): A SPD)
+    # SPD discriminant nonvanishing (supplied (H1): A SPD)
     check(
-        "A SPD discriminant det(A) = A11 A22 - A12^2 (admitted positive under (H1))",
+        "A SPD discriminant det(A) = A11 A22 - A12^2 (supplied positive under (H1))",
         det_A != 0,
         detail=f"det_A = {det_A}",
     )
 
-    # Constraint regularity (admitted (H2): grad C =/= 0 on F)
+    # Constraint regularity (supplied (H2): grad C =/= 0 on F)
     grad_C_norm_sq = (grad_C.T @ grad_C)[0, 0]
     check(
-        "grad C has explicit nonvanishing-norm form c1^2 + c2^2 (admitted (H2))",
+        "grad C has explicit nonvanishing-norm form c1^2 + c2^2 (supplied (H2))",
         simplify(grad_C_norm_sq - (c1**2 + c2**2)) == 0,
         detail=f"|| grad C ||^2 = {grad_C_norm_sq}",
     )
@@ -388,7 +388,7 @@ def main() -> int:
     section("Part 8: counterfactual probe -- necessity of (H2) (constraint regularity)")
     # ---------------------------------------------------------------------
     # Replace C by C_cf(z) = (z1)^2 + (z2)^2 - r^2 at the point z = (0, 0),
-    # but the (admitted) feasible point is z_feas = (0, 0). At z_feas,
+    # but the supplied feasible point is z_feas = (0, 0). At z_feas,
     # grad C_cf = (2 z1, 2 z2) = (0, 0), so (H2) fails.
     # The (L-formula) lambda_* = <gJ, gC> / ||gC||^2 has zero denominator.
     r = Symbol("r", positive=True, real=True)

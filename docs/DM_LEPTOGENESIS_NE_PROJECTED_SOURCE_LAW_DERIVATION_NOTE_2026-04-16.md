@@ -3,9 +3,8 @@
 **Claim type:** positive_theorem
 
 **Date:** 2026-04-16  
-**Branch:** `codex/dm-main-refresh`  
 **Script:** `scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py`  
-**Framework convention:** "axiom" means only `Cl(3)` on `Z^3`
+**Framework baseline:** Lattice, Qubit, Admissibility, and Record axioms.
 
 ## Status
 
@@ -129,14 +128,15 @@ Hermitian source law.
 
 ## What this does not close
 
-This note does **not** yet evaluate `dW_e^H` from `Cl(3)` on `Z^3`.
+This note does **not** yet evaluate `dW_e^H` from the current four-axiom
+framework baseline.
 
 It proves only that once `dW_e^H` and the supplied transport fixture are
 available, the finite `N_e` column ordering is downstream algorithmic.
 
 So the live remaining gap is now:
 
-- derive `dW_e^H` on `E_e` from `Cl(3)` on `Z^3`
+- derive `dW_e^H` on `E_e` from the current four-axiom framework baseline
 
 not:
 
@@ -151,7 +151,8 @@ python3 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py
 ## Citations
 
 The load-bearing traceability requirement for this theorem is to link
-the repo-native authorities for `dW_e^H` from `Cl(3)` on `Z^3`, the
+the repo-native authorities for `dW_e^H` from the current four-axiom framework
+baseline, the
 `H_e -> N_e packet` bridge, and the supplied finite transport functional. The
 runner imports the load-bearing ingredients from named theorem-side
 modules, each backed by a dedicated repo-native theorem note. The

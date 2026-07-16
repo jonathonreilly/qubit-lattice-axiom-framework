@@ -3,14 +3,13 @@
 **Date:** 2026-05-17
 **Type:** bounded_theorem
 **Claim scope:** the standalone calculus-identity implication that, GIVEN
-(i) an admitted scalar selector functional `J : Omega -> R` that is `C^2`
+(i) a supplied scalar selector functional `J : Omega -> R` that is `C^2`
 and strictly convex on an open convex domain `Omega subseteq R^n`,
-(ii) an admitted scalar equality constraint `C : Omega -> R` of class
+(ii) a supplied scalar equality constraint `C : Omega -> R` of class
 `C^1` with non-vanishing gradient on the feasible set
-`F := { z in Omega : C(z) = 0 }`, (iii) admitted non-emptiness and
-boundedness of `F`, and (iv) an admitted explicit feasible point
-`z_0 in F`, and (v) admitted segment-feasibility of `F` on the relevant
-component, the constrained minimization problem
+`F := { z in Omega : C(z) = 0 }`, (iii) supplied non-emptiness and
+boundedness of `F`, (iv) supplied attainment at an interior feasible point,
+and (v) global segment-feasibility of `F`, the constrained minimization problem
 ```text
 minimize    J(z)
 subject to  z in F                                                       (P)
@@ -26,10 +25,10 @@ load-bearing class-(A) calculus identity at the heart of the
 `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
 row: that step is exactly an instance of `(P)` with `J = I_seed` and
 `C(z) = eta_{i_*}(z) / eta_obs - 1`. The five hypotheses
-`(i)-(v)` are explicit admitted inputs of the present narrow note; the
+`(i)-(v)` are explicit supplied hypotheses of the present narrow note; the
 narrow theorem does not derive any of them and in particular does not
-derive `I_seed` from `Cl(3)` on `Z^3`. The selector `I_seed` remains an
-admitted import the audit lane re-evaluates separately, exactly as the
+derive `I_seed` from the current four-axiom framework baseline. The selector
+`I_seed` remains a conditional import evaluated separately, exactly as the
 parent note already scopes it.
 
 **Status authority:** independent audit lane only. This source note does
@@ -48,7 +47,7 @@ and the explicit finite-fixture column index `i_*` from the conditional
 [`DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)
 input. This narrow theorem isolates only the abstract
 calculus content of "constrained-minimum existence and stationarity
-characterization under admitted strict convexity and admitted constraint
+characterization under supplied strict convexity and supplied constraint
 regularity", which is a pure standalone math identity reviewable
 independently of (a) the framework-internal status of `I_seed`,
 (b) the explicit form of `eta` as a function of the active block,
@@ -64,13 +63,13 @@ be a `C^2` function. Let
 ```text
 C : Omega -> R                                                           (C)
 ```
-be a `C^1` function. Assume the four admitted hypotheses:
+be a `C^1` function. Assume the four supplied hypotheses:
 
 ```text
-(H1)  J is strictly convex on Omega                                      (Adm-J)
-(H2)  grad C(z) =/= 0  for all z in F := { z in Omega : C(z) = 0 }       (Adm-LICQ)
-(H3)  F is non-empty and bounded                                         (Adm-F)
-(H4)  J extends continuously to the closure of F inside Omega and the   (Adm-att)
+(H1)  J is strictly convex on Omega
+(H2)  grad C(z) =/= 0  for all z in F := { z in Omega : C(z) = 0 }
+(H3)  F is non-empty and bounded
+(H4)  J extends continuously to the closure of F inside Omega and the
       minimum of J on F is attained at some interior point z_* in F
       (i.e., z_* in Omega, not on the boundary of Omega).
 ```
@@ -104,15 +103,15 @@ where `<.,.>` is the standard Euclidean inner product on `R^n` and
 
 ## Proof
 
-We use one additional admitted hypothesis, stated explicitly:
+We use one additional supplied hypothesis, stated explicitly:
 
-**Hypothesis (H1') (admitted, F-segment-feasibility).** Between any
+**Hypothesis (H1') (global F-segment-feasibility).** Between any
 two points `z_a, z_b in F`, the segment
 `z_t := (1 - t) z_a + t z_b`, `t in [0, 1]`, stays in `F`. This is the
-standard convex-feasible admitted hypothesis (automatic for affine
-equality constraints; for smooth nonlinear equality constraints it is
-an admitted local-convexity input on the relevant connected component
-of `F`, not discharged here).
+standard convex-feasible hypothesis (automatic for affine equality
+constraints). For a nonlinear equality constraint it is a genuinely global
+condition on `F`; componentwise segment-feasibility would prove only
+componentwise uniqueness and is not enough for `(T1)`.
 
 `(T1)`. Suppose `z_a, z_b in F` are two global minimizers with
 `J(z_a) = J(z_b) = m`, and assume for contradiction `z_a =/= z_b`. By
@@ -166,7 +165,7 @@ QED
       of grad J at z_*).
 ```
 
-All follow algebraically from `(T1)-(T3)` and the admitted hypotheses
+All follow algebraically from `(T1)-(T3)` and the supplied hypotheses
 `(H1)-(H4)` plus `(H1')`.
 
 ## Application to the parent row (informative, not load-bearing)
@@ -194,32 +193,33 @@ Then `(P)` is exactly "choose the one minimizing `I_seed`", and
 ## What this claims
 
 - The standalone calculus-identity content `(T1)-(T3)`, **conditional
-  on** the explicit admitted hypotheses `(H1)-(H4)` plus the
-  path-connectedness `(H1')`, holds at exact symbolic level.
+  on** the explicit supplied hypotheses `(H1)-(H4)` plus the global
+  segment-feasibility `(H1')`, holds at exact symbolic level.
 - Three corollary identities `(C1)-(C3)` that follow algebraically.
 - An informative identification of the narrow theorem's abstract data
   `(J, C, Omega, F)` with the parent row's `(I_seed, eta-constraint,
-  positivity chart, closure surface)`, treated as an admitted import
+  positivity chart, closure surface)`, treated as a conditional import
   and not derived here.
 
 ## What this does NOT claim
 
-- Does **not** derive `I_seed` from `Cl(3)` on `Z^3`. The selector
-  `I_seed` remains an admitted import from information geometry, exactly
-  as the parent note already scopes it. The narrow theorem is
-  selector-agnostic: any admitted strictly-convex `C^2` `J` satisfies
-  `(T1)-(T3)` under the same constraint-regularity admitted inputs.
-- Does **not** derive strict convexity of `I_seed`. That is admitted
+- Does **not** derive `I_seed` from the current four-axiom framework baseline.
+  The selector `I_seed` remains a conditional import from information geometry,
+  exactly as the parent note already scopes it. The narrow theorem is
+  selector-agnostic: any supplied strictly-convex `C^2` `J` satisfies
+  `(T1)-(T3)` under the same supplied constraint-regularity inputs.
+- Does **not** derive strict convexity of `I_seed`. That is supplied
   via `(H1)` and is internal to the parent row's adopted information
   geometry (`D_KL` strict convexity is a standard convex-analysis
   identity; the present narrow theorem does not need to re-derive it).
 - Does **not** derive the constraint-regularity `(H2)` (non-vanishing
-  `grad C` on `F`). That is admitted via the smoothness of the
+  `grad C` on `F`). That is supplied as a hypothesis; smoothness alone does not
+  establish it. The
   flavored transport map. The parent runner exhibits a feasible point
   `z_0` and the analytic structure of `eta_{i_*}(z)`; the present
   narrow theorem does not re-derive these.
 - Does **not** derive the existence or boundedness of `F`. That is
-  admitted via `(H3)` and is exhibited by the parent runner.
+  supplied via `(H3)` and is exhibited by the parent runner.
 - Does **not** identify `i_*`. The column index is the conditional output of
   the supplied finite transport fixture in
   `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`,
@@ -233,9 +233,9 @@ Then `(P)` is exactly "choose the one minimizing `I_seed`", and
   classification) all yield matching low-action branches; the narrow
   theorem says nothing about selector choice.
 - Does **not** consume any PDG observed values, literature numerical
-  comparators, fitted selectors, admitted unit conventions, or
+  comparators, fitted selectors, supplied unit conventions, or
   same-surface family arguments beyond the explicitly listed
-  admitted inputs.
+  supplied hypotheses.
 
 ## Relation to the parent `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` row
 
@@ -251,20 +251,20 @@ framing" section:
    supplying the finite-fixture index `i_*`.
 3. The analytic-stationary-classification theorem
    (`dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16`,
-   generated retained-grade), which already proves the KKT structure for the
+   a sibling KKT calculation), which addresses the KKT structure for the
    *S_rel* objective on the reduced surface (different selector but
    identical seed surface and identical constraint).
 4. The numerical readout `(x_min, y_min, delta_min)` from the parent
    runner, conditional on adopting `I_seed`.
 5. The audit-flagged hole: `I_seed` is "explicitly adopted rather
-   than derived from `Cl(3)` on `Z^3`".
+   than derived from the current four-axiom framework baseline".
 6. The standalone calculus content `(T1)-(T3)`.
 
 This narrow theorem isolates only item 6 from items 1-5. The
 constrained-minimum uniqueness and Lagrange stationarity hold as
-pure standalone math under the explicit admitted hypotheses;
-audit-flagged hole 5 is preserved verbatim as the load-bearing
-admitted input `(H1)` (strict convexity of the selector). The narrow
+pure standalone math under the explicit supplied hypotheses;
+audit-flagged hole 5 is preserved as the load-bearing
+supplied hypothesis `(H1)` (strict convexity of the selector). The narrow
 theorem does not promote, restate, or attempt to discharge that hole.
 
 ## Cited dependencies
@@ -272,32 +272,31 @@ theorem does not promote, restate, or attempt to discharge that hole.
 - [`DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)
   — parent row supplying the abstract identification
   `(J, C, Omega, F)` with `(I_seed, eta-constraint, positivity chart,
-  closure surface)`; currently non-retained in the generated audit
-  ledger at the date of this note.
+  closure surface)`; cited for scientific inputs, not for a mutable generated
+  status.
 - [`DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)
   — conditional supplied-fixture input for the column index `i_*` used to
   define the constraint `C(z)` in the abstract identification; the present
   calculus theorem does not inherit transport provenance, packet canonicity,
   or physical readout authority from that input.
 - [`DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md)
-  — retained sibling authority that already exhibits the KKT structure
+  — sibling calculation that exhibits the KKT structure
   for the same exact seed surface and the same constraint
   `eta_{i_*} / eta_obs = 1`, but with a different (framework-internal)
   selector `S_rel` instead of `I_seed`. Cited only for cross-reference;
-  not load-bearing on the present narrow theorem. Generated as
-  retained-grade in the audit ledger at the date of this note.
+  not load-bearing on the present narrow theorem.
 
 ## Forbidden imports check
 
 - No PDG observed values consumed.
 - No literature numerical comparators consumed.
-- No fitted selectors consumed (the selector `I_seed` is admitted
+- No fitted selectors consumed (the selector `I_seed` is supplied
   via `(H1)` as strictly convex; the narrow theorem makes no
   selector-choice claim).
-- No admitted unit conventions load-bearing on the claim.
+- No supplied unit conventions load-bearing on the claim.
 - No same-surface family arguments.
-- No new axiom introduced. The framework axiom remains `Cl(3)` on
-  `Z^3` and is not modified by this note.
+- No new axiom introduced. The current framework baseline remains Lattice,
+  Qubit, Admissibility, and Record.
 
 ## Validation
 
@@ -335,13 +334,11 @@ The runner closes with PASS=N FAIL=0 at exact sympy precision.
 ## Cross-references
 
 - `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
-  (parent broad row; currently non-retained in the generated audit
-  ledger; bundles items 1-6; this narrow theorem isolates only item 6).
+  (parent broad row; bundles items 1-6; this narrow theorem isolates only
+  item 6).
 - `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`
   (conditional supplied-fixture source of `i_*`; no status inheritance).
 - `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16`
-  (retained sibling KKT theorem with framework-internal `S_rel`
-  selector; generated retained-grade).
+  (sibling KKT calculation with framework-internal `S_rel` selector).
 - `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`
-  (retained sibling broad-multistart support note; generated
-  retained-grade).
+  (sibling broad-multistart support note).

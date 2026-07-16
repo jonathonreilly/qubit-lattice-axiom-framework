@@ -1,16 +1,16 @@
 # DM Leptogenesis `N_e` Active-Column Axiom Boundary
 
 **Status:** bounded - bounded or caveated result note
+**Type:** bounded_theorem
 **Date:** 2026-04-16  
-**Branch:** `codex/dm-main-refresh`  
 **Script:** `scripts/frontier_dm_leptogenesis_ne_active_column_axiom_boundary.py`  
-**Framework convention:** "axiom" means only `Cl(3)` on `Z^3`
+**Framework baseline:** Lattice, Qubit, Admissibility, and Record axioms.
 
 ## Status
 
 Finite counterexample boundary for the remaining PMNS-assisted flavored DM
 transport gap, conditional on the supplied transport equations, profiles, and
-finite column functional used by the refreshed branch.
+finite column functional used by the named runner.
 
 This note answers the strongest remaining hope after the projector interface,
 active-block localization, and supplied finite transport-functional identity:
@@ -24,8 +24,8 @@ The answer is no.
 ## Question
 
 On the PMNS-assisted DM lane, is the selected `N_e` active transport column
-already determined by the currently native PMNS data coming from `Cl(3)` on
-`Z^3`?
+already determined by the currently native PMNS data coming from the current
+four-axiom baseline?
 
 Equivalently: after importing
 
@@ -62,7 +62,7 @@ In fact the same current-native `N_e` data class can realize selected column
 `0`, `1`, or `2`.
 
 So the selected `N_e` transport column is **not** fixed by the currently native
-PMNS laws from `Cl(3)` on `Z^3`.
+PMNS laws from the current four-axiom baseline.
 
 ## Supplied selector used by the counterexample
 
@@ -76,8 +76,8 @@ computed profiles, the branch uses
 So once an active column `P` and that transport fixture are supplied, the
 finite transport read is algorithmic.
 
-The question here is strictly upstream: does the sole-axiom PMNS lane already
-force the relevant active column on `N_e`?
+The question here is strictly upstream: does the current framework PMNS lane
+already force the relevant active column on `N_e`?
 
 For that supplied finite fixture, the explicit samples show it does not.
 
@@ -103,7 +103,7 @@ source.
 
 ## Consequence
 
-This sharpens the sole-axiom DM/PMNS boundary one more step.
+This sharpens the current-framework DM/PMNS boundary one more step.
 
 What is available on the stated conditional surface:
 

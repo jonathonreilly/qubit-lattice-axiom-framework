@@ -1,26 +1,14 @@
-# DM Leptogenesis PMNS Reduced-Surface Selector Support
+# DM Leptogenesis PMNS Reduced-Surface Selector Diagnostic
 
 **Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-16
+**Type:** bounded_theorem
+**Date:** 2026-04-16; scope corrected 2026-07-16
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py`
-**Framework convention:** “axiom” means only `Cl(3)` on `Z^3`
+**Framework baseline:** Lattice, Qubit, Admissibility, and Record axioms.
 
-## Question
+## Scope
 
-The existing PMNS-assisted `N_e` selector theorem already found the lowest-action
-closure branch on the exact reduced surface by a multistart constrained scan.
-The remaining review question was whether that lower-action branch can be
-certified as the unique global minimum on the exact reduced domain by a more
-exhaustive optimization argument, rather than just a branch scan.
-
-This note answers that question on the reduced surface only, but it is kept as
-strong optimization support rather than a live theorem-grade certification.
-
-## What the reduced domain is
-
-The reduction-exhaustion theorem already eliminated all admissible closure
-components beyond the fixed native `N_e` seed surface. On that exact domain we
-use the compact chart
+The runner explores a supplied five-coordinate chart
 
 `(u_1, u_2, v_1, v_2, delta) in [0,1]^4 x [-pi, pi]`
 
@@ -28,79 +16,42 @@ with
 
 `x = 3 XBAR_NE * (u_1, (1-u_1)u_2, (1-u_1)(1-u_2))`
 
-`y = 3 YBAR_NE * (v_1, (1-v_1)v_2, (1-v_1)(1-v_2))`
+and
 
-This chart is exact and surjective onto the fixed native `N_e` seed surface.
-So a global optimization over this compact chart is already a global
-optimization over the admissible PMNS-assisted closure domain.
+`y = 3 YBAR_NE * (v_1, (1-v_1)v_2, (1-v_1)(1-v_2))`.
 
-## What is supported
+This chart parametrizes the stipulated non-negative fixed-sum seed surface.
+Neither this note nor its runner proves that the surface exhausts every
+physically admissible PMNS/leptogenesis realization.
 
-The runner performs a deterministic compact-chart search plus local polishing
-on that exact compact chart.
+## Current deterministic diagnostic
 
-1. a deterministic compact-chart lattice cover with constrained local
-   minimization;
-2. a direct branch-polishing pass on the converged stationary representatives.
+The runner combines a small deterministic chart cover, previously known branch
+anchors, and local SLSQP polishing. Its three-branch requirement is an explicit
+test, not a theorem.
 
-The searches recover the same three reduced-surface branches already seen on
-the refreshed branch. The support result is:
+The current live runner finds two clustered candidates and exits nonzero because
+it does not stabilize to the required three branches. The same failure is
+present on the comparison baseline. Therefore this note does not claim:
 
-- three stationary closure branches on the reduced surface
-- one branch is the lowest-action branch in the current reduced-surface search
-- the lower branch meets the supplied finite-kernel equality numerically
-- the lower branch is separated from the next branch by a finite action gap
+- a certified three-branch count;
+- a unique lowest-action branch;
+- a global minimum on the supplied chart;
+- a global minimum on any larger physical domain;
+- a physical selector or yield/readout theorem.
 
-The lower-action branch is the same exact branch already seen in the earlier
-selector theorem:
+The existing candidate coordinates remain useful debugging fixtures, but the
+old stale-green cache is not current evidence for a three-branch result.
 
-- `x = (0.471675, 0.553810, 0.664515)`
-- `y = (0.208063, 0.464382, 0.247555)`
-- `delta ~ 0`
-- `S_rel = 0.240906701390`
-- the helper-stack equality ratio is numerically `1`
+Every equality or favored-column calculation in this diagnostic is conditional
+on the supplied transport equations, profiles, finite quadrature, packet
+construction, and physical readout factors.
 
-The second stationary branch is:
+## Upstream inputs
 
-- `x = (0.460724, 0.560504, 0.668773)`
-- `y = (0.211572, 0.455054, 0.253373)`
-- `delta ~ -1.0e-3`
-- `S_rel = 0.242719075805`
-
-The higher stationary branch is:
-
-- `x = (0.790189, 0.406763, 0.493048)`
-- `y = (0.586185, 0.167566, 0.166248)`
-- `delta ~ 0`
-- `S_rel = 1.110657539338`
-
-So the finite action gap is:
-
-`Delta S_min = 0.001812374006`
-
-## Scope
-
-This file is kept as **support** rather than live theorem authority because
-the current deterministic search still uses previously known branch anchors and
-local polishing. So the safe live statement is:
-
-- the reduced-surface search support consistently recovers a three-branch
-  stationary set with the same low-action branch
-- the low branch remains separated by a finite action gap
-- this materially strengthens the PMNS-assisted route
-- it is not yet promoted here as a theorem-grade global selector certificate
-- every favored-column and equality statement remains conditional on the
-  supplied transport equations, profiles, finite quadrature, packet
-  construction, and physical readout factors; this note derives none of those
-  inputs
-
-## Upstream authorities
-
-The runner imports four PMNS-side modules; each has a framework wrapper note:
-
-- [DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md) — conditional finite flavor-column functional identity (`func` module); no transport provenance or physical-readout authority is inherited.
-- [DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md) — active-projector reduction (`act` module).
-- [DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md) — observable-relative action law (`rel` module).
+- [DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md) — conditional finite flavor-column functional identity; no transport provenance or physical-readout authority is inherited.
+- [DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md) — active-projector reduction.
+- [DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md) — supplied observable-relative action helper.
 - [DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md) — projector interface supplying `canonical_h`.
 
 ## Command

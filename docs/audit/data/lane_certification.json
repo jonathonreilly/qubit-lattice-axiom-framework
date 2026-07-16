@@ -29,7 +29,7 @@
         },
         {
           "claim_id": "cpt_exact_note",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
@@ -577,7 +577,7 @@
         },
         {
           "claim_id": "cpt_exact_note",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "cpt_squared_is_identity_theorem_note_2026-05-02",
@@ -1521,7 +1521,7 @@
         },
         {
           "claim_id": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "koide_mru_demotion_note_2026-04-20",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "84fcf1a02288449373bf6aca4a3ddce06ad9aaea",
+  "repo_head": "47032b0d30e927a1e02c795639d8112534690116",
   "schema": "lane_certification_v2"
 }

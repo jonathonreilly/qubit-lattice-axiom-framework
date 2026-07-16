@@ -17,13 +17,13 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 242 |
+| critical | `unaudited` | 243 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 126 |
 | critical | `audited_conditional` | 7 |
 | ? | `unresolved` | 5 |
-| critical | `audited_failed` | 4 |
 | critical | `audit_in_progress` | 3 |
+| critical | `audited_failed` | 3 |
 | critical | `audited_renaming` | 2 |
 | high | `audited_conditional` | 2 |
 | medium | `audited_conditional` | 2 |
@@ -60,7 +60,7 @@ publication tables phrase it.
 | critical | `cl3_taste_generation_theorem` | `retained_pending_chain` | `audited_decoration` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `confinement_string_tension_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `cosmological_constant_spectral_gap_identity_theorem_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| critical | `cpt_exact_note` | `audited_failed` | `audited_failed` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
+| critical | `cpt_exact_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `dm_leptogenesis_hrad_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |

@@ -1,124 +1,45 @@
 {
-  "audit_date": "2026-07-13T06:49:02.767515+00:00",
-  "audit_invocation_history": [
-    "0b333dd93b2b4e99a4e46b537ab5b4a0",
-    "780a9f69fced4b209e8799f6e34bf16d",
-    "ab9ef26a016b489db41db610803482f6"
-  ],
-  "audit_invocation_id": "ab9ef26a016b489db41db610803482f6",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional algebraic free-staggered theorem: for real anti-Hermitian D satisfying P D P = -D, H=iD is Hermitian, Theta_H=P K preserves H, and the full Theta_H-odd Hamiltonian proxy vanishes; the runner additionally verifies direction-resolved proxies at L=4 and L=6. No SME operator-basis completeness or physical SME-coefficient conclusion was audited."
-    },
-    "dep_claim_type": {
-      "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded"
-    },
-    "deps": [
-      "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
-    ],
-    "load_bearing_score": 31.775,
-    "runner_hash": "31e432fcb81ef0ee3292f8a5f6d810191fb688261fbd13ca367d0e9f09840edc",
-    "transitive_descendants": 875
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-judicial-1-20260713-7abd2d90",
-  "auditor_confidence": "judicial",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separately defined Theta_H odd-sector result may survive a narrower formulation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260713-7abd2d90\", \"judge\": 1, \"rationale\": \"The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separa\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260713-eb4834ff\", \"judge\": 2, \"rationale\": \"The runner tests the real anti-Hermitian operator D while calling it H; its physical Hermitian lift iD appears only in a spectral calculation. Because K(iD)K=-iD, the retained simultaneous claims T=K invariance and CP K/CPT invariance of physical H=iD are false, while the cited bridge instead establishes the distinct Theta_H=P K symmetry. The first position correctly ratifies failure over the exact supplied pre-audit scope.\", \"tuple\": [\"first\", \"audited_failed\", \"positive_theorem\", \"The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260713-e80e1202\", \"judge\": 3, \"rationale\": \"The primary runner computes the real anti-Hermitian operator D while calling it H; its direct T=K and CPK checks therefore do not establish those identities for the physical Hermitian lift iD. The cited bridge confirms that K reverses i, so CPK flips iD and must be replaced by Theta_H=PK; this contradicts the retained theorem and symmetry table as written.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260713-7737686a\", \"judge\": 4, \"rationale\": \"The primary runner constructs the real anti-Hermitian hopping operator D under the variable name H and applies T=K and CPK to that operator; multiplying by i appears only in the spectral calculation. For the physical Hermitian lift H=iD, complex conjugation reverses i, so T=K does not preserve H and CPK flips H. The cited bridge explicitly confirms this and instead establishes the distinct antiunitary symmetry Theta_H=PK. Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, despite the valid PK odd-sector result.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260713-433197b8\", \"judge\": 5, \"rationale\": \"The primary runner\\u2019s C, P, T=K, and CP/CPT identities concern the real anti-Hermitian operator D that it labels H; multiplying by i makes the physical Hermitian lift complex, so K sends iD to -iD. The cited bridge expressly confirms that naive CP K flips physical H and replaces it with Theta_H=P K (equivalently using T_H=C K). Thus the retained theorem and symmetry table incorrectly combine D-level T=K/CPK identities with physical-Hamiltonian claims, and the theorem as written does not close.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}]",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "cpt_exact_note",
-  "claim_scope": "The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-13T06:49:02.767515+00:00",
-  "claim_type_provenance": "judicial_review",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
-  "cross_confirmation": {
-    "agreement_schema": "audit_tuple_v2",
-    "first_audit": {
-      "audit_date": "2026-07-13T02:45:05.299073+00:00",
-      "audit_invocation_id": "0b333dd93b2b4e99a4e46b537ab5b4a0",
-      "auditor": "codex-audit-batch-A-20260713-bd68e749",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.",
-      "claim_type": "positive_theorem",
-      "independence": "cross_family",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [],
-      "notes_for_re_audit_if_any": "Narrow the retained theorem so T=K and CP K invariance apply only to D, while the physical Hermitian lift claims only Theta_H=P K invariance and its vanishing odd projection.",
-      "verdict": "audited_failed",
-      "verdict_rationale": "The finite-lattice D-level identities and residual computations are genuine algebraic checks, but they do not prove the theorem as written for physical H=iD. The cited bridge explicitly states that naive CP K flips H and replaces it with Theta_H=P K, contradicting the simultaneous retained assertions T=K invariance and CP/CPT invariance for physical H. A narrower theorem asserting the D-level identities separately from Theta_H invariance of H=iD would avoid this contradiction."
-    },
-    "mode": "judicial_third_pass",
-    "second_audit": {
-      "audit_date": "2026-07-13T02:45:05.303128+00:00",
-      "audit_invocation_id": "780a9f69fced4b209e8799f6e34bf16d",
-      "auditor": "codex-audit-batch-B-20260713-0df09396",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.",
-      "claim_type": "positive_theorem",
-      "independence": "fresh_context",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [],
-      "notes_for_re_audit_if_any": "Re-state the physical-Hamiltonian theorem consistently with Theta_H=PK and T_H=CK, remove the false T=K/CPK identities for H=iD, and update the primary runner to test the Hermitian lift directly.",
-      "verdict": "audited_failed",
-      "verdict_rationale": "The runner consistently constructs and tests the real anti-Hermitian hopping operator D while labeling it H; its Hermitian lift iD appears only in a spectrum check. Therefore its T=K and CP K identities do not transfer to physical H=iD because K reverses i. The cited bridge explicitly confirms this failure and substitutes Theta_H=PK, which is not the CPK transformation asserted in the retained theorem and symmetry table."
-    },
-    "status": "third_confirmed_second",
-    "third_audit": {
-      "audit_date": "2026-07-13T06:49:02.767515+00:00",
-      "audit_invocation_id": "ab9ef26a016b489db41db610803482f6",
-      "auditor": "codex-judicial-1-20260713-7abd2d90",
-      "auditor_family": "codex-gpt-5.6",
-      "auditor_model": "gpt-5.6-sol",
-      "auditor_reasoning_effort": "xhigh",
-      "claim_scope": "The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.",
-      "claim_type": "positive_theorem",
-      "first_auditor_error": "Its verdict and core rationale are correct, but its scope describes a generic \"free staggered operator\" and attaches \"after H=iD\" only to the residuals, leaving ambiguous whether the contested T=K and CPK assertions concern physical H. The second position more exactly captures the retained theorem as written and the operator-level mismatch demonstrated by the runner and bridge.",
-      "independence": "judicial_review",
-      "judgment_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separately defined Theta_H odd-sector result may survive a narrower formulation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260713-7abd2d90\", \"judge\": 1, \"rationale\": \"The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separa\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260713-eb4834ff\", \"judge\": 2, \"rationale\": \"The runner tests the real anti-Hermitian operator D while calling it H; its physical Hermitian lift iD appears only in a spectral calculation. Because K(iD)K=-iD, the retained simultaneous claims T=K invariance and CP K/CPT invariance of physical H=iD are false, while the cited bridge instead establishes the distinct Theta_H=P K symmetry. The first position correctly ratifies failure over the exact supplied pre-audit scope.\", \"tuple\": [\"first\", \"audited_failed\", \"positive_theorem\", \"The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260713-e80e1202\", \"judge\": 3, \"rationale\": \"The primary runner computes the real anti-Hermitian operator D while calling it H; its direct T=K and CPK checks therefore do not establish those identities for the physical Hermitian lift iD. The cited bridge confirms that K reverses i, so CPK flips iD and must be replaced by Theta_H=PK; this contradicts the retained theorem and symmetry table as written.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260713-7737686a\", \"judge\": 4, \"rationale\": \"The primary runner constructs the real anti-Hermitian hopping operator D under the variable name H and applies T=K and CPK to that operator; multiplying by i appears only in the spectral calculation. For the physical Hermitian lift H=iD, complex conjugation reverses i, so T=K does not preserve H and CPK flips H. The cited bridge explicitly confirms this and instead establishes the distinct antiunitary symmetry Theta_H=PK. Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, despite the valid PK odd-sector result.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260713-433197b8\", \"judge\": 5, \"rationale\": \"The primary runner\\u2019s C, P, T=K, and CP/CPT identities concern the real anti-Hermitian operator D that it labels H; multiplying by i makes the physical Hermitian lift complex, so K sends iD to -iD. The cited bridge expressly confirms that naive CP K flips physical H and replaces it with Theta_H=P K (equivalently using T_H=C K). Thus the retained theorem and symmetry table incorrectly combine D-level T=K/CPK identities with physical-Hamiltonian claims, and the theorem as written does not close.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}]",
-      "load_bearing_step_class": "A",
-      "negative_assertion_classes": [],
-      "second_auditor_error": "none",
-      "sided_with": "second",
-      "verdict": "audited_failed"
-    }
-  },
+  "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
   ],
   "direct_in_degree": 44,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "judicial_review",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 31.775,
-  "load_bearing_step": "The physical-Hamiltonian statement uses the bridge theorem's Hermitian lift H = iD and antiunitary representative Theta_H = P K.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "5b8f580bf1abc9b2485f451acec1be9f87d3e7aa0ec45cabd339de9f05b383ef",
   "note_path": "docs/CPT_EXACT_NOTE.md",
-  "notes_for_re_audit_if_any": "Re-state the physical-Hamiltonian theorem consistently with Theta_H=PK and T_H=CK, remove the false T=K/CPK identities for H=iD, and update the primary runner to test the Hermitian lift directly.",
-  "open_dependency_paths": [
-    "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md"
-  ],
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
   "previous_audits": [
     {
       "archived_at": "2026-04-30T18:17:51.104833+00:00",
@@ -1823,19 +1744,135 @@
         "total_pass": 53
       },
       "verdict_rationale": "Issue: the primary runner names the real anti-Hermitian hopping operator H and verifies CPK invariance of that operator, whereas the retained physical Hamiltonian is H=iD. On the Hermitian lift, K and CPK contribute the antiunitary i-to-minus-i sign and flip H; only the bridge's different representative Theta_H=PK preserves H. The D-level C/P/CP identities and the separate Theta_H=PK odd-sector identity are supported, but their current combined C/P/T/CPT presentation is not."
+    },
+    {
+      "archived_at": "2026-07-16T03:24:23.556483+00:00",
+      "audit_date": "2026-07-13T06:49:02.767515+00:00",
+      "audit_invocation_history": [
+        "0b333dd93b2b4e99a4e46b537ab5b4a0",
+        "780a9f69fced4b209e8799f6e34bf16d",
+        "ab9ef26a016b489db41db610803482f6"
+      ],
+      "audit_invocation_id": "ab9ef26a016b489db41db610803482f6",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional algebraic free-staggered theorem: for real anti-Hermitian D satisfying P D P = -D, H=iD is Hermitian, Theta_H=P K preserves H, and the full Theta_H-odd Hamiltonian proxy vanishes; the runner additionally verifies direction-resolved proxies at L=4 and L=6. No SME operator-basis completeness or physical SME-coefficient conclusion was audited."
+        },
+        "dep_claim_type": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded"
+        },
+        "deps": [
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 31.775,
+        "runner_hash": "31e432fcb81ef0ee3292f8a5f6d810191fb688261fbd13ca367d0e9f09840edc",
+        "transitive_descendants": 875
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-judicial-1-20260713-7abd2d90",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separately defined Theta_H odd-sector result may survive a narrower formulation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260713-7abd2d90\", \"judge\": 1, \"rationale\": \"The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separa\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260713-eb4834ff\", \"judge\": 2, \"rationale\": \"The runner tests the real anti-Hermitian operator D while calling it H; its physical Hermitian lift iD appears only in a spectral calculation. Because K(iD)K=-iD, the retained simultaneous claims T=K invariance and CP K/CPT invariance of physical H=iD are false, while the cited bridge instead establishes the distinct Theta_H=P K symmetry. The first position correctly ratifies failure over the exact supplied pre-audit scope.\", \"tuple\": [\"first\", \"audited_failed\", \"positive_theorem\", \"The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260713-e80e1202\", \"judge\": 3, \"rationale\": \"The primary runner computes the real anti-Hermitian operator D while calling it H; its direct T=K and CPK checks therefore do not establish those identities for the physical Hermitian lift iD. The cited bridge confirms that K reverses i, so CPK flips iD and must be replaced by Theta_H=PK; this contradicts the retained theorem and symmetry table as written.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260713-7737686a\", \"judge\": 4, \"rationale\": \"The primary runner constructs the real anti-Hermitian hopping operator D under the variable name H and applies T=K and CPK to that operator; multiplying by i appears only in the spectral calculation. For the physical Hermitian lift H=iD, complex conjugation reverses i, so T=K does not preserve H and CPK flips H. The cited bridge explicitly confirms this and instead establishes the distinct antiunitary symmetry Theta_H=PK. Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, despite the valid PK odd-sector result.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260713-433197b8\", \"judge\": 5, \"rationale\": \"The primary runner\\u2019s C, P, T=K, and CP/CPT identities concern the real anti-Hermitian operator D that it labels H; multiplying by i makes the physical Hermitian lift complex, so K sends iD to -iD. The cited bridge expressly confirms that naive CP K flips physical H and replaces it with Theta_H=P K (equivalently using T_H=C K). Thus the retained theorem and symmetry table incorrectly combine D-level T=K/CPK identities with physical-Hamiltonian claims, and the theorem as written does not close.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}]",
+      "claim_scope": "The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-13T06:49:02.767515+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "agreement_schema": "audit_tuple_v2",
+        "first_audit": {
+          "audit_date": "2026-07-13T02:45:05.299073+00:00",
+          "audit_invocation_id": "0b333dd93b2b4e99a4e46b537ab5b4a0",
+          "auditor": "codex-audit-batch-A-20260713-bd68e749",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [],
+          "notes_for_re_audit_if_any": "Narrow the retained theorem so T=K and CP K invariance apply only to D, while the physical Hermitian lift claims only Theta_H=P K invariance and its vanishing odd projection.",
+          "verdict": "audited_failed",
+          "verdict_rationale": "The finite-lattice D-level identities and residual computations are genuine algebraic checks, but they do not prove the theorem as written for physical H=iD. The cited bridge explicitly states that naive CP K flips H and replaces it with Theta_H=P K, contradicting the simultaneous retained assertions T=K invariance and CP/CPT invariance for physical H. A narrower theorem asserting the D-level identities separately from Theta_H invariance of H=iD would avoid this contradiction."
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-13T02:45:05.303128+00:00",
+          "audit_invocation_id": "780a9f69fced4b209e8799f6e34bf16d",
+          "auditor": "codex-audit-batch-B-20260713-0df09396",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [],
+          "notes_for_re_audit_if_any": "Re-state the physical-Hamiltonian theorem consistently with Theta_H=PK and T_H=CK, remove the false T=K/CPK identities for H=iD, and update the primary runner to test the Hermitian lift directly.",
+          "verdict": "audited_failed",
+          "verdict_rationale": "The runner consistently constructs and tests the real anti-Hermitian hopping operator D while labeling it H; its Hermitian lift iD appears only in a spectrum check. Therefore its T=K and CP K identities do not transfer to physical H=iD because K reverses i. The cited bridge explicitly confirms this failure and substitutes Theta_H=PK, which is not the CPK transformation asserted in the retained theorem and symmetry table."
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-13T06:49:02.767515+00:00",
+          "audit_invocation_id": "ab9ef26a016b489db41db610803482f6",
+          "auditor": "codex-judicial-1-20260713-7abd2d90",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "Its verdict and core rationale are correct, but its scope describes a generic \"free staggered operator\" and attaches \"after H=iD\" only to the residuals, leaving ambiguous whether the contested T=K and CPK assertions concern physical H. The second position more exactly captures the retained theorem as written and the operator-level mismatch demonstrated by the runner and bridge.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separately defined Theta_H odd-sector result may survive a narrower formulation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260713-7abd2d90\", \"judge\": 1, \"rationale\": \"The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separa\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260713-eb4834ff\", \"judge\": 2, \"rationale\": \"The runner tests the real anti-Hermitian operator D while calling it H; its physical Hermitian lift iD appears only in a spectral calculation. Because K(iD)K=-iD, the retained simultaneous claims T=K invariance and CP K/CPT invariance of physical H=iD are false, while the cited bridge instead establishes the distinct Theta_H=P K symmetry. The first position correctly ratifies failure over the exact supplied pre-audit scope.\", \"tuple\": [\"first\", \"audited_failed\", \"positive_theorem\", \"The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260713-e80e1202\", \"judge\": 3, \"rationale\": \"The primary runner computes the real anti-Hermitian operator D while calling it H; its direct T=K and CPK checks therefore do not establish those identities for the physical Hermitian lift iD. The cited bridge confirms that K reverses i, so CPK flips iD and must be replaced by Theta_H=PK; this contradicts the retained theorem and symmetry table as written.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260713-7737686a\", \"judge\": 4, \"rationale\": \"The primary runner constructs the real anti-Hermitian hopping operator D under the variable name H and applies T=K and CPK to that operator; multiplying by i appears only in the spectral calculation. For the physical Hermitian lift H=iD, complex conjugation reverses i, so T=K does not preserve H and CPK flips H. The cited bridge explicitly confirms this and instead establishes the distinct antiunitary symmetry Theta_H=PK. Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, despite the valid PK odd-sector result.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260713-433197b8\", \"judge\": 5, \"rationale\": \"The primary runner\\u2019s C, P, T=K, and CP/CPT identities concern the real anti-Hermitian operator D that it labels H; multiplying by i makes the physical Hermitian lift complex, so K sends iD to -iD. The cited bridge expressly confirms that naive CP K flips physical H and replaces it with Theta_H=P K (equivalently using T_H=C K). Thus the retained theorem and symmetry table incorrectly combine D-level T=K/CPK identities with physical-Hamiltonian claims, and the theorem as written does not close.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}]",
+          "load_bearing_step_class": "A",
+          "negative_assertion_classes": [],
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_failed"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "runner_hash_changed:31e432fc->4fee660a",
+      "load_bearing_step": "The physical-Hamiltonian statement uses the bridge theorem's Hermitian lift H = iD and antiunitary representative Theta_H = P K.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-state the physical-Hamiltonian theorem consistently with Theta_H=PK and T_H=CK, remove the false T=K/CPK identities for H=iD, and update the primary runner to test the Hermitian lift directly.",
+      "open_dependency_paths": [
+        "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separately defined Theta_H odd-sector result may survive a narrower formulation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260713-7abd2d90\", \"judge\": 1, \"rationale\": \"The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separa\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260713-eb4834ff\", \"judge\": 2, \"rationale\": \"The runner tests the real anti-Hermitian operator D while calling it H; its physical Hermitian lift iD appears only in a spectral calculation. Because K(iD)K=-iD, the retained simultaneous claims T=K invariance and CP K/CPT invariance of physical H=iD are false, while the cited bridge instead establishes the distinct Theta_H=P K symmetry. The first position correctly ratifies failure over the exact supplied pre-audit scope.\", \"tuple\": [\"first\", \"audited_failed\", \"positive_theorem\", \"The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260713-e80e1202\", \"judge\": 3, \"rationale\": \"The primary runner computes the real anti-Hermitian operator D while calling it H; its direct T=K and CPK checks therefore do not establish those identities for the physical Hermitian lift iD. The cited bridge confirms that K reverses i, so CPK flips iD and must be replaced by Theta_H=PK; this contradicts the retained theorem and symmetry table as written.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260713-7737686a\", \"judge\": 4, \"rationale\": \"The primary runner constructs the real anti-Hermitian hopping operator D under the variable name H and applies T=K and CPK to that operator; multiplying by i appears only in the spectral calculation. For the physical Hermitian lift H=iD, complex conjugation reverses i, so T=K does not preserve H and CPK flips H. The cited bridge explicitly confirms this and instead establishes the distinct antiunitary symmetry Theta_H=PK. Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, despite the valid PK odd-sector result.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260713-433197b8\", \"judge\": 5, \"rationale\": \"The primary runner\\u2019s C, P, T=K, and CP/CPT identities concern the real anti-Hermitian operator D that it labels H; multiplying by i makes the physical Hermitian lift complex, so K sends iD to -iD. The cited bridge expressly confirms that naive CP K flips physical H and replaces it with Theta_H=P K (equivalently using T_H=C K). Thus the retained theorem and symmetry table incorrectly combine D-level T=K/CPK identities with physical-Hamiltonian claims, and the theorem as written does not close.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}]"
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 53,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 53
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_cpt_exact.py",
   "title": "CPT Exact Preservation in the Cl(3) Staggered Framework",
   "transitive_descendants": 875,
-  "verdict_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separately defined Theta_H odd-sector result may survive a narrower formulation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260713-7abd2d90\", \"judge\": 1, \"rationale\": \"The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separa\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260713-eb4834ff\", \"judge\": 2, \"rationale\": \"The runner tests the real anti-Hermitian operator D while calling it H; its physical Hermitian lift iD appears only in a spectral calculation. Because K(iD)K=-iD, the retained simultaneous claims T=K invariance and CP K/CPT invariance of physical H=iD are false, while the cited bridge instead establishes the distinct Theta_H=P K symmetry. The first position correctly ratifies failure over the exact supplied pre-audit scope.\", \"tuple\": [\"first\", \"audited_failed\", \"positive_theorem\", \"The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260713-e80e1202\", \"judge\": 3, \"rationale\": \"The primary runner computes the real anti-Hermitian operator D while calling it H; its direct T=K and CPK checks therefore do not establish those identities for the physical Hermitian lift iD. The cited bridge confirms that K reverses i, so CPK flips iD and must be replaced by Theta_H=PK; this contradicts the retained theorem and symmetry table as written.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260713-7737686a\", \"judge\": 4, \"rationale\": \"The primary runner constructs the real anti-Hermitian hopping operator D under the variable name H and applies T=K and CPK to that operator; multiplying by i appears only in the spectral calculation. For the physical Hermitian lift H=iD, complex conjugation reverses i, so T=K does not preserve H and CPK flips H. The cited bridge explicitly confirms this and instead establishes the distinct antiunitary symmetry Theta_H=PK. Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, despite the valid PK odd-sector result.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260713-433197b8\", \"judge\": 5, \"rationale\": \"The primary runner\\u2019s C, P, T=K, and CP/CPT identities concern the real anti-Hermitian operator D that it labels H; multiplying by i makes the physical Hermitian lift complex, so K sends iD to -iD. The cited bridge expressly confirms that naive CP K flips physical H and replaces it with Theta_H=P K (equivalently using T_H=C K). Thus the retained theorem and symmetry table incorrectly combine D-level T=K/CPK identities with physical-Hamiltonian claims, and the theorem as written does not close.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}]"
+  "verdict_rationale": null
 }

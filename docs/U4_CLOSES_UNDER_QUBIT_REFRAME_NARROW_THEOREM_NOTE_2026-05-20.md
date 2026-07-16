@@ -128,7 +128,7 @@ qubit reframe, carried through the 2026-06-05 memo, and current in the
 multiplicity-one named condition this replaces the two-step "abstract Cl(3) +
 open bridge" structure by a single-axiom-plus-condition commitment.
 
-## Step 1 — The qubit-per-site baseline specifies the per-site object directly
+## Step 1 — The qubit-per-site baseline, under multiplicity-one, specifies the per-site object
 
 The current Qubit axiom in `MINIMAL_AXIOMS_2026-06-29.md` names the
 one-site possibility domain by its algebraic presentation `M_2(C)`
@@ -154,7 +154,7 @@ The current memo supplies the algebra `M_2(C)`; the multiplicity-one
 selection above is the named single-module condition, not read off the
 memo verbatim.
 
-## Step 2 — U4 follows immediately
+## Step 2 — U4 follows under the multiplicity-one condition
 
 The U4 bridge becomes:
 
@@ -203,14 +203,14 @@ reduces to the multiplicity-one condition under the qubit reframe.
 
 ## What this can support after audit
 
-- **Closure of the U4 conditional on substep-1 narrow theorems** under
-  the current Qubit axiom. If retained, the three named substep-1
-  notes can be re-audited with their U4 bridge marked closed by the
-  qubit-per-site baseline,
+- **Reduction of the U4-conditional clause on substep-1 narrow theorems to the
+  multiplicity-one condition** under the current Qubit axiom. If retained, the three named substep-1
+  notes can be re-audited with their U4 bridge met by the multiplicity-one
+  condition under the qubit-per-site baseline,
   potentially promoting their bounded status.
 - **Cleaner derivation chain** for downstream notes that previously
   required the Cl(3) per-site uniqueness chain (now: cite the
-  qubit-per-site baseline directly).
+  qubit-per-site baseline with the multiplicity-one condition).
 - **One open piece** of the staggered-Dirac realization gate's substep
   1 (the U4 bridge). The other substeps (Grassmann partition forcing
   from the qubit-per-site plus `Z^3` substrate baseline, Kawamoto-Smit
@@ -246,9 +246,9 @@ reduces to the multiplicity-one condition under the qubit reframe.
 ## Risk classification
 
 `positive_theorem` candidate at narrow-theorem granularity. The narrow
-contribution is making the U4 closure under the qubit reframe **explicit
-and citeable** — recording that the current Qubit axiom retires the
-U4 open bridge that the pre-qubit-reframe framing carried.
+contribution is making the U4 reduction (to the multiplicity-one condition)
+under the qubit reframe **explicit and citeable** — recording that the current Qubit axiom, with the multiplicity-one named
+condition, retires the U4 open bridge that the pre-qubit-reframe framing carried.
 
 Granularity matches the
 `cl3_complexification_split_narrow_theorem_note_2026-05-10` and the

@@ -1,0 +1,29 @@
+PASS R01: connected all-|0> additions are available at insertion
+PASS R02: all-|0> history also satisfies the stronger continual-admissibility reading
+PASS R03: readout is the monotone record count
+PASS R04: four lambda(I-SWAP) Hamiltonians are algebraically distinct
+PASS R05: distinct appended exchange laws have one recomputed record-history/readout signature
+PASS R06: hostile law-to-readout coupling makes the quotient check fail as intended
+PASS R07: the middle |+> insertion is initially available
+PASS R08: mixed history separates insertion-only from continual-admissibility readings
+PASS P01: three rank-one record frames impose rank 12 on a 16-dimensional two-site operator
+PASS P02: same-carrier record-preserving commutant has dimension four
+PASS P03: the full commutant is exactly I_site tensor M2_rest
+PASS P04: SWAP does not preserve an arbitrary locked local record projector
+PASS P05: ordinary hopping also fails the same-carrier permanence demand
+PASS U01: block-diagonal permanence witness is unitary
+PASS U02: a reducing record sector has zero blank-to-record formation block
+PASS U03: blank-record sector swap is unitary
+PASS U04: formation witness violates invariance of the record sector
+PASS J01: locked-output Kraus operation equals Tr(E rho) P exactly
+PASS J02: operation output is supported on the locked rank-one record
+PASS J03: constructed effect is positive definite
+PASS J04: constructed effect obeys E less-than-or-equal-to I
+PASS J05: formation weight is the effect functional
+PASS J06: permanence and locked output admit inequivalent formation effects
+PASS J07: both alternative effects define valid positive weights
+PASS J08: both alternative effects are trace-nonincreasing
+BOUNDARY: record-equivalence is operational; deleting record-null ontology requires a separate criterion.
+BOUNDARY: the rank-one outcome-operation normal form fixes neither E, full-instrument normalization, firing site/rate, nor coherent evolution.
+BOUNDARY: same-carrier permanence excludes both SWAP and ordinary hopping, so it is not a Dirac selector.
+TOTAL: PASS=25 FAIL=0

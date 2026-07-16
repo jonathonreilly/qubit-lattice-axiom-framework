@@ -1,6 +1,6 @@
-From 642775ec141bb91156c4d8fe25975e3f9f80f9e1 Mon Sep 17 00:00:00 2001
+From 3eb007fc7da80eb64d484192ed0a8cd4e2fceb0c Mon Sep 17 00:00:00 2001
 From: Claude Opus <noreply@anthropic.com>
-Date: Thu, 16 Jul 2026 10:27:41 -0400
+Date: Thu, 16 Jul 2026 10:28:16 -0400
 Subject: [PATCH] ci: pin the audit pipeline to release requirements and add a
  per-PR smoke gate
 
@@ -19,9 +19,9 @@ Subject: [PATCH] ci: pin the audit pipeline to release requirements and add a
 
 Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>
 ---
- .github/workflows/audit.yml    | 7 ++++---
- .github/workflows/pr-smoke.yml | 0
- 2 files changed, 4 insertions(+), 3 deletions(-)
+ .github/workflows/audit.yml    |  7 ++--
+ .github/workflows/pr-smoke.yml | 69 ++++++++++++++++++++++++++++++++++
+ 2 files changed, 73 insertions(+), 3 deletions(-)
  create mode 100644 .github/workflows/pr-smoke.yml
 
 diff --git a/.github/workflows/audit.yml b/.github/workflows/audit.yml
@@ -44,7 +44,79 @@ index 7c81450b45..cfe5ca0624 100644
          run: python3 docs/audit/scripts/repair_missing_dependency_edges.py --apply
 diff --git a/.github/workflows/pr-smoke.yml b/.github/workflows/pr-smoke.yml
 new file mode 100644
-index 0000000000..e69de29bb2
+index 0000000000..6d50305d21
+--- /dev/null
++++ b/.github/workflows/pr-smoke.yml
+@@ -0,0 +1,69 @@
++# Fast per-PR gate: byte-compile every changed Python file and run the audit
++# tooling unit tests when audit scripts changed. Read-only; no auto-commit.
++# Exists so breakage is caught at PR time instead of only by the nightly
++# audit lane (the sole channel for generated-output commits).
++name: pr-smoke
++
++on:
++  pull_request:
++    paths:
++      - "**/*.py"
++      - "docs/audit/scripts/**"
++      - "requirements*.txt"
++      - ".github/workflows/pr-smoke.yml"
++
++permissions:
++  contents: read
++
++concurrency:
++  group: pr-smoke-${{ github.event.pull_request.number }}
++  cancel-in-progress: true
++
++jobs:
++  smoke:
++    runs-on: ubuntu-latest
++    timeout-minutes: 15
++    steps:
++      - uses: actions/checkout@v6
++        with:
++          fetch-depth: 0
++
++      - uses: actions/setup-python@v6
++        with:
++          python-version: "3.11"
++
++      - name: Install pinned dependencies
++        run: |
++          python -m pip install --upgrade pip
++          pip install -r requirements-release.txt
++
++      - name: Byte-compile changed Python files
++        shell: bash
++        run: |
++          set -o pipefail
++          git fetch -q origin "${{ github.base_ref }}"
++          changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- '*.py')
++          if [ -z "$changed" ]; then
++            echo "no changed python files"; exit 0
++          fi
++          status=0
++          while IFS= read -r f; do
++            [ -f "$f" ] || continue
++            python -m py_compile "$f" || { echo "COMPILE FAIL: $f"; status=1; }
++          done <<< "$changed"
++          exit "$status"
++
++      - name: Audit tooling unit tests (only when audit scripts changed)
++        shell: bash
++        run: |
++          set -o pipefail
++          git fetch -q origin "${{ github.base_ref }}"
++          # Fail-closed: capture the detector OUTSIDE any conditional so a
++          # failing git diff aborts the step (errexit is suppressed inside
++          # `if` conditions), and test the captured value, never a pipeline.
++          changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- docs/audit/scripts)
++          if [ -n "$changed" ]; then
++            python -m unittest discover -s docs/audit/scripts/tests
++          else
++            echo "audit scripts unchanged; skipped"
++          fi
 -- 
 2.50.1 (Apple Git-155)
 

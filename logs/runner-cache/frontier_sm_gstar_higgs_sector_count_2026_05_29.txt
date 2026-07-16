@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
-runner_sha256: 99f667136c3a12ea42c1e5f95c4763ad629aa60109d2e6edadb8c6097035a36c
+runner_sha256: 2460b6873caebf3fb556a2a8a6c668788a6ebf140d92514f7d9368f82faa5499
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -46,7 +46,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] authority exists: EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md
   [PASS] authority exists: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
   [INFO] prior-cycle R-HIGGS note present on this branch: True (lands via PR #2223; soft check)
-  [PASS] note file exists  (/private/tmp/science-fix-charged-lepton-two-higgs-formal-reduction-20260716/docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md)
+  [PASS] note file exists  (docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md)
   [PASS] note records load-bearing token: '106.75'
   [PASS] note records load-bearing token: '110.75'
   [PASS] note records load-bearing token: 'bounded_theorem'

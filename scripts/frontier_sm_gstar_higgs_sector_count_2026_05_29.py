@@ -252,7 +252,7 @@ def section_note_checks() -> None:
     )
 
     note_exists = NOTE_PATH.exists()
-    check("note file exists", note_exists, str(NOTE_PATH))
+    check("note file exists", note_exists, NOTE_PATH.relative_to(ROOT).as_posix())
     if not note_exists:
         return
     text = NOTE_PATH.read_text(encoding="utf-8")

@@ -2614,7 +2614,7 @@
         },
         {
           "claim_id": "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "unified_matter_content_ewsb_harness_theorem_note_2026-05-03",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "ccc9e0ce254d6a52a2e0397bd6b0bf9dcaa0f05a",
+  "repo_head": "8c39ec52b2b3402e6dacd01fa147367ba7c7ca3c",
   "schema": "lane_certification_v2"
 }

@@ -1,34 +1,38 @@
-# Occupancy Grain-Menu Counting-Measure Bijection over the Declared Record-Influence Class: Bounded Theorem
+# Occupancy Grain-Menu Counting-Measure Correspondence over the Declared Record-Influence Class: Bounded Theorem
 
 **Date:** 2026-07-16
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Premise weight:** conditional. Every claim below is conditional on the declared readings named in this note and on the consumed sources at exactly the live grades listed in Load-bearing dependencies. Nothing consumed is upgraded here, and no derivation obligation is discharged here.
 **Status authority:** independent audit lane only. This source note does not set or predict an audit outcome.
-**Primary runner:** [`scripts/acphilambda_occupancy_grain_menu_counting_bijection_2026_07_16.py`](../scripts/acphilambda_occupancy_grain_menu_counting_bijection_2026_07_16.py)
-**Cache:** [`logs/runner-cache/acphilambda_occupancy_grain_menu_counting_bijection_2026_07_16.txt`](../logs/runner-cache/acphilambda_occupancy_grain_menu_counting_bijection_2026_07_16.txt)
+**Primary runner:** [`scripts/acphilambda_occupancy_grain_menu_counting_correspondence_2026_07_16.py`](../scripts/acphilambda_occupancy_grain_menu_counting_correspondence_2026_07_16.py)
+**Cache:** [`logs/runner-cache/acphilambda_occupancy_grain_menu_counting_correspondence_2026_07_16.txt`](../logs/runner-cache/acphilambda_occupancy_grain_menu_counting_correspondence_2026_07_16.txt)
 
 ## Purpose
 
-This note proves a bounded, grain-by-grain identity over the declared
-record-influence class: within that class, the unique interior durable
-(stationary) weight of continued registration on a supplied cell menu is the
-counting measure on that menu; on the two supplied grain menus below, this
-durable weight coincides with the static canonical weight that the licensing
-classification assigns to those same two menus. On the 2-cell orbit grain
-the durable weight is uniform on 2 cells, so the singlet-cell weight is
-`w = 1/2` and the dial coordinate is `r = 1/2`; on the 3-cell sector grain,
-aggregated on the swap-symmetric surface, the durable weight is uniform on 3
-cells, so `w = 1/3` and `r = 1`. These are exact fork arithmetics over
-supplied menus, not selections among them. The dynamical route and the static
-route consume ONE shared supplied object — the registered cell menu, the
-grain obligation's own count-once-versus-count-twice choice — not two
-independent ones. The note quantifies over the class; it selects no grain,
-no horn, no weight, and no dial value.
+This note proves a bounded fixed-point classification over the declared
+record-influence class. Within that class, every stationary weight is uniform
+on its support; in particular, the unique interior stationary weight on a
+2-cell menu is `w = 1/2`, while the unique interior stationary weight on a
+3-cell menu is uniform on 3 cells and has singlet weight `w = 1/3`. On the
+swap-symmetric 3-cell surface this is the exact aggregated fixed point
+`q = 2/3`. The associated dial coordinates, through the explicitly
+unadopted energy dictionary, are `r = 1/2` and `r = 1`.
 
-Record ontology throughout: dynamics REGISTERS a durable weight — the weight
-that the class of continued-registration (recording) updates leaves
-stationary. No pre-record weight is read, measured, or revealed.
+The resulting numerical set `{1/3, 1/2}` equals the static classification's
+licensed weight set. That equality is a SET-LEVEL ARITHMETIC CORRESPONDENCE
+between independent conditional constructions. The static classification
+operates on one fixed singlet/doublet quotient: carrier/orbit multiplicities
+give `w = 1/3`, while quotient-atom counting gives `w = 1/2`. It is not a
+classification of the dynamical 2-cell and 3-cell menus. No identification of
+measure granularity, formation weighting, and dynamical menu is made here;
+such an identification is the missing binding theorem preserved by the
+formation-gate relocation source. This note selects no menu, weight, horn, or
+dial value.
+
+Record ontology throughout: a supplied initialized weight is called durable
+exactly when the declared continued-registration update leaves it stationary.
+No formation, occurrence, convergence, or pre-record readout is inferred.
 
 ## Supplied objects and consumed readings
 
@@ -82,17 +86,40 @@ stationary. No pre-record weight is read, measured, or revealed.
    r = (1-w)/(2w).
    ```
 
-4. **The licensed static formation-weight menu** of the expressibility
-   classification note (unaudited `bounded_theorem`), verbatim:
+4. **The licensed static formation-weight set and its classification
+   convention** from the expressibility classification note (unaudited
+   `bounded_theorem`), verbatim:
 
    ```text
    W_expr = {1/3, 1/2}.
    ```
 
+   This set is conditional on the source note's Supplied-Object
+   Canonical-Measure Licensing Criterion (SOCMLC), which the source explicitly
+   calls "a classification convention, not a theorem derived from the minimal
+   axioms." Both values concern the same fixed singlet/doublet quotient:
+   "carrier/orbit counting gives singlet weight `w = 1/3`, while counting or
+   left-regular/Hilbert-Schmidt weighting of the **licensed commutative
+   quotient** gives `w = 1/2`." The source expressly says it is "Not a
+   classification for a different carrier, a refined menu, a menu with
+   different orbit sizes, or a three-cell registration."
+
+5. **The independence boundary** of the formation-gate relocation note
+   (unaudited `bounded_theorem`). It states that "an independent formation rule
+   supplies any normalized weight `(w, 1-w)`" and does NOT claim "an
+   identification of measure granularity with formation weighting." It also
+   states: "Not an inference that the tied measure's count-twice analytic grain
+   is itself the formation law. That inference is the missing binding theorem
+   isolated in T4." This boundary is load-bearing for the limited meaning of
+   the correspondence proved below.
+
 ## Declared reading D1 (per-cell pairwise strict sharpening)
 
-This note adds exactly ONE new declared reading — declared in the same sense
-as the consumed note's L2/L3 declared-reading discipline, not derived:
+This note adds the following COMPOSITE declared class boundary — declared in
+the same sense as the consumed note's L2/L3 declared-reading discipline, not
+derived. Its independent components are the normalized common-profile
+`n`-cell update, strict monotonicity of `g = f/x`, and the extension of
+durability-as-stationarity to the finite menu:
 
 > **D1.** On a finite registered cell menu with `n >= 2` cells, continued
 > registration acts per cell through the same profile `f`:
@@ -105,7 +132,7 @@ as the consumed note's L2/L3 declared-reading discipline, not derived:
 > of one weight vector only realize pairs with `p_i + p_j <= 1`, so the
 > per-cell amplification statements alone constrain `g` only on such
 > realizable pairs; D1 declares monotonicity on all of `(0,1]`, which is
-> exactly what the runner's membership gates (R3/R4) check. D1 also carries
+> exactly what the runner's profile-membership gates check. D1 also carries
 > the consumed permanence-to-stationarity reading (L1) to the `n`-cell menu:
 > "durable weight" in this note means exactly "stationary point of `T` on
 > the probability simplex" — stationarity is the entire operational content
@@ -123,7 +150,7 @@ Three honesty facts about D1, each re-proven exactly by the runner:
 
    makes `g(q) < g(1-q)` for `0 < q < 1/2` algebraically equivalent to
    `f(q)(1-q) < q f(1-q)`, i.e. to the influence-odds-versus-input-odds form
-   of L3 (runner R2).
+   of L3 (runner block `TWO_CELL`).
 
 2. **As a condition on the profile `f`, D1 is strictly stronger than 2-cell
    L3.** L3 constrains `g` only at complementary pairs `x + y = 1`; D1
@@ -132,9 +159,9 @@ Three honesty facts about D1, each re-proven exactly by the runner:
    D1 is load-bearing at `n >= 3` and operationally invisible at `n = 2`.
 
 3. **The Lueders exemplar family satisfies D1**: `f_k(q) = q^k` with `k > 1`
-   gives `g(x) = x^(k-1)`, strictly increasing on `(0,1]` (runner R3 checks
-   the membership `g' > 0` on `(0,1]` exactly for each exemplar `k`; R4
-   checks it for the non-power members).
+   gives `g(x) = x^(k-1)`, strictly increasing on `(0,1]` (runner blocks
+   `POWER_PROFILES` and `NONPOWER_PROFILES` check the membership `g' > 0` on
+   `(0,1]` exactly for the power and non-power exemplars).
 
 ## T1 (uniform-on-support classification of durable weights)
 
@@ -149,18 +176,19 @@ it is injective, so all nonzero `p_i` are equal; conversely the uniform
 distribution on a support of size `k` has
 `T(p)_i = f(1/k) / (k f(1/k)) = 1/k`. QED
 
-Reading (record ontology): within the class, continued registration durably
-registers the COUNTING MEASURE on whatever registered cell menu it acts on.
+Reading (record ontology): within the class, every stationary weight is the
+normalized counting measure on ITS SUPPORT. The unique interior stationary
+weight is the normalized counting measure on the full registered menu.
 
-Runner: R5 solves `T(p) = p` exactly at `n = 3` for `f = x^2` and `f = x^3`;
-the simplex fixed set is exactly the `7` uniform-on-support points (three
-vertices, three edge midpoints, barycenter).
+Runner: block `UNIFORM_SUPPORT` solves `T(p) = p` exactly at `n = 3` for
+`f = x^2` and `f = x^3`; the simplex fixed set is exactly the `7`
+uniform-on-support points (three vertices, three edge midpoints, barycenter).
 
-## T2 (aggregation identity and sector-grain universality `q = 2/3`)
+## T2 (aggregation identity and 3-cell-menu universality `q = 2/3`)
 
 Restrict the 3-cell map with common `f` to the swap-symmetric surface
 `(1-q, q/2, q/2)` and track the aggregated doublet weight `q`. The surface is
-invariant (runner R7), and the aggregated 2-cell dynamics is
+invariant (runner block `SWAP_DYNAMICS`), and the aggregated 2-cell dynamics is
 
 ```text
 q -> 2 f(q/2) / (2 f(q/2) + f(1-q)),
@@ -173,8 +201,9 @@ strictly asymmetric: with `f(x) = x g(x)`,
 f_d(q) - f_s(q) = 2 f(q/2) - f(q) = q [ g(q/2) - g(q) ] < 0
 ```
 
-for `0 < q <= 1`, since `q/2 < q` and `g` is strictly increasing. Runner R7
-proves the displayed identity symbolically and checks the exemplar `f = x^2`
+for `0 < q <= 1`, since `q/2 < q` and `g` is strictly increasing. Runner block
+`SWAP_DYNAMICS` proves the displayed identity symbolically and checks the
+exemplar `f = x^2`
 (`f_d(q) = q^2/2 != q^2`); the identity profile `f = x` has constant `g`, so
 it sits outside D1 and gives `f_d = f` exactly — the contrast case. An
 asymmetric pair is exactly a member of the family the consumed note's N1
@@ -192,70 +221,75 @@ chosen as a family extension.
 > holds. Hence under D1 the unique interior fixed point is `q/2 = 1-q`,
 > i.e. `q = 2/3`, for EVERY admissible profile.
 
-This is the exact sector-grain mirror of the consumed note's universal
-orbit-grain interior fixed point `q = 1/2`. Aggregated `q = 2/3` means
+This is the exact 3-cell-menu mirror of the consumed note's universal
+2-cell-menu interior fixed point `q = 1/2`. Aggregated `q = 2/3` means
 `(p_s, p_d) = (1/3, 2/3)`: singlet weight `w = 1/3`, dial `r = 1` — the
 counting measure on 3 cells, seen in aggregated coordinates.
 
-Runner: R1 proves the identity symbolically; R3/R4 solve the power family
+Runner: block `AGGREGATION` proves the identity symbolically; blocks
+`POWER_PROFILES` and `NONPOWER_PROFILES` solve the power family
 `k in {2, 3, 5/2, 4}` and the non-power members `f = x e^(x-1)` and
 `f = (x^2 + x^3)/2` exactly (aggregated interior fixed set `{2/3}`,
-orbit-grain fixed set `{0, 1/2, 1}` in each case). Both non-power members
+2-cell fixed set `{0, 1/2, 1}` in each case). Both non-power members
 satisfy the class codomain `f : [0,1] -> [0,1]` with `f(0) = 0` and
-`f(1) = 1`, gated in R4; a positive rescaling of `f` changes neither `T_f`
-nor either stationarity condition, so the codomain gate costs nothing.
+`f(1) = 1`, gated in `NONPOWER_PROFILES`; a positive rescaling of `f` changes
+neither `T_f` nor either stationarity condition, so the codomain gate costs
+nothing.
 
-## T3 (dynamical-static bijection — the headline)
+## T3 (set-level arithmetic correspondence)
 
 > **T3.** Within the declared record-influence class (D1 together with the
-> consumed L1/L2/L3 readings), the dynamical durable weight at a supplied
-> grain EQUALS the static canonical counting weight at that grain, grain by
-> grain:
+> consumed L1/L2/L3 readings), the set of singlet weights at the two unique
+> interior stationary points is
 >
-> - orbit grain (2 cells): unique interior durable weight = uniform on 2
->   cells, so `w = 1/2` and `r = 1/2`;
-> - sector grain (3 cells, aggregated on the swap-symmetric surface): unique
->   interior durable weight = uniform on 3 cells, so `w = 1/3` and `r = 1`.
+> ```text
+> W_dyn = {1/2, 1/3}.
+> ```
 >
-> These are exactly the counting measures on the two supplied cell menus and
-> exactly the licensed static menu `W_expr = {1/3, 1/2}` of the
-> expressibility classification, carried to dials `{1/2, 1}` by
+> The 2-cell construction supplies `w = 1/2`; the 3-cell construction,
+> aggregated on the swap-symmetric surface, supplies `w = 1/3`. Therefore
+> `W_dyn = W_expr` as unordered numerical sets. Through
 > `r = (1-w)/(2w)` — a coordinate supplied only through the relocation
-> theorem's explicitly unadopted energy dictionary (Residual Atom 2). The
-> dynamical route and the static route consume ONE shared supplied object —
-> the registered cell menu — not two independent ones. Within the class,
-> the entire selection content of the dynamical route is that one supplied
-> cell-menu choice; the class itself selects no grain, and this note
-> selects no grain, weight, horn, or dial value.
+> theorem's explicitly unadopted energy dictionary (Residual Atom 2) — both
+> sets have dial image `{1/2, 1}`.
 
-**Corollary (localization of the supplied grain choice).** On the
-aggregated surface, the supplied cell-menu choice IS the
-common-`f`-versus-`f_d(q) = 2 f(q/2)` asymmetry choice:
-the consumed note's symmetric-family reading at the orbit grain and the
-count-once-versus-count-twice choice named by the grain obligation are the
-same supplied object seen on two surfaces.
+This equality does NOT identify the objects or mechanisms producing the two
+sets. The dynamical values arise from normalized counting on two different
+cell menus. The static values arise on one fixed singlet/doublet quotient:
+carrier/orbit multiplicities `(1,2)` produce `w = 1/3`, while quotient-atom
+counting `(1,1)` produces `w = 1/2`, conditional on SOCMLC. The expressibility
+source excludes a three-cell registration from its classification. The
+relocation source independently supplies the formation weight and explicitly
+leaves measure-granularity/formation-weight identification as a missing
+binding theorem. Accordingly T3 is support-only arithmetic, not a bijection
+of physical grains, formation rules, or supplied objects.
 
-Runner: R6 checks the bijection arithmetic (`w = 1/2 -> r = 1/2`,
-`w = 1/3 -> r = 1`), the exact set equalities with `W_expr` as weights and
-`{1/2, 1}` as dials, and a counterfactual 4-cell menu
-(`w = 1/4 -> r = 3/2`, outside both sets): the arithmetic tracks the
-supplied cell menu, not preferred numerals.
+Runner block `MENU_ARITHMETIC` checks the arithmetic
+(`w = 1/2 -> r = 1/2`, `w = 1/3 -> r = 1`), the exact numerical set
+equalities with `W_expr` as weights and `{1/2, 1}` as dials, and a
+counterfactual 4-cell menu (`w = 1/4 -> r = 3/2`, outside both sets). It tests
+only the advertised set-level correspondence; it does not test or assert a
+physical identification.
 
 ## T4 (K-consistency exhibit)
 
-Both grain dynamics are swap-equivariant, and the swap-symmetric
+Both menu dynamics are swap-equivariant, and the swap-symmetric
 (orbit-constant) surface `p_w = p_wbar` is invariant under the 3-cell map
-with common `f` (symbolic, runner R7). The transverse swap-odd mode at the
-sector-grain uniform point `(1/3, 1/3, 1/3)` for the exemplar `f = x^2` has
+with common `f` (symbolic, runner block `SWAP_DYNAMICS`). The transverse
+swap-odd mode at the 3-cell uniform point `(1/3, 1/3, 1/3)` for the exemplar
+`f = x^2` has
 exact multiplier `2` — but exciting it requires swap-odd (K-odd) initial
 data, which is non-derivable inside the protocol class per the
-KCPT-orbit-constant note's L-K2. So the K-derivable structure of the
-protocol class does not discriminate between the grains.
+KCPT-orbit-constant note's L-K2: "a nonzero K-odd initial datum therefore
+remains a named conditional or open dependency; it is not derivable." This is
+one K-odd perturbation exhibit only. It does not exclude K-even discriminants;
+indeed, the same source gives a jointly K-even doublet-resolving observable.
 
-Honesty: the interior uniform fixed points at BOTH grains are unstable under
+Honesty: the interior uniform fixed points on BOTH menus are unstable under
 iteration — the exemplar `f = x^2` has exact multiplier `2` at the
-orbit-grain fixed point `q = 1/2`, at the aggregated sector-grain fixed
-point `q = 2/3`, and on the transverse swap-odd mode (runner R8). The value
+2-cell fixed point `q = 1/2`, at the aggregated 3-cell fixed
+point `q = 2/3`, and on the transverse swap-odd mode (runner block
+`MULTIPLIERS`). The value
 `2` matches the exact multiplier of the records-flow separatrix exemplar
 `r -> 2 r^2` at `r = 1/2` (consumed unaudited). The selection mode
 throughout is stationarity/durability — a distinguished stationary point,
@@ -275,7 +309,8 @@ g(2/3) = 1/2, g(5/6) = 3/5,   g(1) = 7/10,
 ```
 
 on the pieces `[0,1/6]`, `[1/6,1/3]`, `[1/3,2/3]`, `[2/3,1]` (linear on
-each), and set `f(x) = x g(x)`. Exact facts, all re-proven by runner R9:
+each), and set `f(x) = x g(x)`. Exact facts, all re-proven by runner block
+`D1_WITNESS`:
 
 - **(a) The witness IS in the consumed note's literal 2-cell class.** `f` is
   continuous with `f(0) = 0` and `f(1) = 7/10 <= 1`, and strictly
@@ -286,7 +321,7 @@ each), and set `f(x) = x g(x)`. Exact facts, all re-proven by runner R9:
   `[1/3,2/3]` one has `f' = 2/5 + (3/10) x >= 2/5 > 0` and on `[2/3,1]` the
   slope is positive with positive left-endpoint derivative.
 - **(b) 2-cell L3 holds strictly — the witness leaves the consumed
-  orbit-grain conclusion untouched.** `h(q) = g(1-q) - g(q)` is piecewise
+  2-cell conclusion untouched.** `h(q) = g(1-q) - g(q)` is piecewise
   linear with breakpoints on `(0,1/2)` only at `q = 1/6` and `q = 1/3`, and
 
   ```text
@@ -296,7 +331,8 @@ each), and set `f(x) = x g(x)`. Exact facts, all re-proven by runner R9:
   All breakpoint values on `[0,1/3]` are positive and the final piece
   decreases linearly from `1/20` to the endpoint zero at `q = 1/2`, so
   `h > 0` on `(0,1/2)`; by antisymmetry `h(1-q) = -h(q)`, `h < 0` on
-  `(1/2,1)`. By the R2 identity, `f(q)(1-q) < q f(1-q)` on `(0,1/2)` and
+  `(1/2,1)`. By the `TWO_CELL` identity,
+  `f(q)(1-q) < q f(1-q)` on `(0,1/2)` and
   the reverse on `(1/2,1)`: L3 holds strictly and the witness's 2-cell
   interior fixed set is exactly `{1/2}`.
 - **(c) D1 fails.** `g(1/6) = g(2/3) = 1/2` while `g(1/3) = 9/20 < 1/2`
@@ -325,7 +361,7 @@ each), and set `f(x) = x g(x)`. Exact facts, all re-proven by runner R9:
   because the witness's `g` is non-injective). In dial coordinates the
   witness's durable weights sweep `r in [1/4, 1]` continuously and add the
   isolated value `r = 4` (`q = 8/9`, singlet weight `w = 1/9`). Exact
-  exemplars, each verified by R9: the endpoint `q = 1/3`
+  exemplars, each verified by `D1_WITNESS`: the endpoint `q = 1/3`
   (`2 f(1/6) (2/3) = 1/9 = (1/3) f(2/3)`; weight `w = 2/3`, dial `r = 1/4`,
   outside the licensed menu both as a weight and as a dial); the midpoint
   `q = 1/2`, i.e. `p = (1/2, 1/4, 1/4)` (`g(1/4) = g(1/2) = 19/40`,
@@ -349,10 +385,13 @@ note's own words, "N3 is an exact contrast, not a competing derivation."
 
 ## Bounded consequence
 
-Within the entire declared record-influence class (D1 together with the
-consumed L1/L2/L3 readings), the selection content of the dynamical route
-equals exactly the one supplied cell menu: both routes consume that menu,
-and neither supplies it.
+Within the declared record-influence class (D1 together with the consumed
+L1/L2/L3 readings), T1 classifies every stationary point as uniform on its
+support, and T2 fixes the unique interior point on the swap-symmetric 3-cell
+surface at `q = 2/3`. For the 2-cell and 3-cell interior constructions, the
+resulting singlet-weight set is numerically `{1/2, 1/3}`. Conditional on the
+expressibility source and its SOCMLC convention, that set equals `W_expr`.
+No object-level or physical identity follows from the equality.
 
 The grain derivation obligation's closure criterion is two-part; verbatim:
 
@@ -363,28 +402,28 @@ count-twice `|det_C|^2`/realified realization without inserting the desired
 charged-lepton value or readout dictionary.
 ```
 
-What this note contributes is a class-conditional localization of the SECOND
-part: within the declared class, the count-once-versus-count-twice
-distinction carries the entire residual selection content of the dynamical
-route (T3; the T3 corollary identifies that distinction, on the aggregated
-surface, with the symmetric-family asymmetry choice). The FIRST part —
-deriving the physical matter action and its measure — is untouched here:
-nothing in this note engages it, and no part of the criterion is weakened,
+This note does not engage EITHER part of that criterion. It does not derive
+the physical matter action or measure, and it does not identify its abstract
+2-cell/3-cell menu arithmetic with the physical count-once/count-twice fork.
+The formation-gate relocation source says the latter identification is a
+missing binding theorem. No part of the obligation is weakened, localized,
 replaced, or discharged. The obligation separately lists three notes as
 "Relevant current route maps" (the measure-binary no-go, the
 determinant-power split support note, the record-outcome orbit non-supply
 no-go); this note adds no new map and does not assert that list is complete.
-That is the next path this opens. Nothing is claimed outside the declared
-class: non-symmetric families, non-multiplicative influence forms, and
-non-stationarity selection modes are all out of scope.
+Nothing is claimed outside the declared class: non-symmetric families,
+non-multiplicative influence forms, and non-stationarity selection modes are
+all out of scope.
 
 ## Honest auditor read / Boundary
 
-- **This note does NOT decide the grain.** The registered cell menu
-  (orbit grain versus sector grain; equivalently count-once versus
-  count-twice) remains a supplied object. T3 shows both routes consume that
-  one supplied choice; nothing here derives it, and the grain derivation
-  obligation stays open.
+- **This note does NOT identify or decide the physical grain.** The dynamical
+  2-cell/3-cell menu choice, the static carrier/quotient counting convention,
+  and the physical count-once/count-twice action-and-measure fork remain
+  distinct constructions. T3 proves only equality between the dynamical and
+  static numerical weight sets; it supplies no map to the physical fork. The
+  missing binding theorem is not supplied, and the grain derivation obligation
+  stays fully open.
 - **Everything is class-scoped.** All theorems quantify over the declared
   record-influence class only: the common-`f` symmetric family (consumed L2)
   together with the D1 per-cell strict sharpening. Non-symmetric families,
@@ -399,10 +438,10 @@ non-stationarity selection modes are all out of scope.
   set is the segment `[1/3, 2/3]` together with the isolated point
   `q = 8/9`, sweeping dials `r in [1/4, 1]` plus `r = 4` and including a
   non-counting profile at the licensed dial `r = 1/2`. D1 is load-bearing at
-  `n >= 3` and operationally invisible at `n = 2` (runner R2). A derivation
-  of D1 from the record clauses is not attempted here.
+  `n >= 3` and operationally invisible at `n = 2` (runner block `TWO_CELL`).
+  A derivation of D1 from the record clauses is not attempted here.
 - **Durability is stationarity, not attraction.** The interior uniform fixed
-  points at both grains are unstable under iteration (exact exemplar
+  points on both menus are unstable under iteration (exact exemplar
   multiplier `2` at `q = 1/2`, at aggregated `q = 2/3`, and on the
   transverse swap-odd mode). The selection mode is a distinguished
   stationary point, matching the stationary-point-not-forced anchor
@@ -423,14 +462,16 @@ non-stationarity selection modes are all out of scope.
 
 This note selects no horn, no grain, no `r` value, no `Q` value, no mass, no
 mixing angle, no probability rule, no species map, and no sector weight. The
-two-point menu correspondence in T3 is exact fork arithmetic over supplied
-menus, not a selection among them (the counterfactual 4-cell row in runner
-R6 shows the arithmetic tracks the supplied menu). The dial settings `r = 0`,
+two-point correspondence in T3 is exact set arithmetic across distinct
+conditional constructions, not a selection among them (the counterfactual
+4-cell row in runner block `MENU_ARITHMETIC` shows the arithmetic tracks menu
+cardinality). The dial settings `r = 0`,
 `r = 1/2`, and `r = 1` remain distinguished settings of a dial, per the
 stationary-point-not-forced anchor; nothing here forces or prefers any of
-them. The note adds no axiom, no primitive, no import, no literature
-comparator, and no supplied context beyond the declared reading D1; it
-changes no audit verdict and predicts none; it does not assert that the
+them. The note adds no axiom, no primitive, no literature comparator, and no
+supplied physical binding. It explicitly consumes D1, the parent declared
+readings, the SOCMLC classification convention, and the other graded inputs
+listed below; it changes no audit verdict and predicts none; it does not assert that the
 physical charged-lepton matter action registers either grain; and it does
 not derive record formation, occurrence, or the physical matter action and
 measure named by the grain obligation's closure criterion.
@@ -439,41 +480,41 @@ measure named by the grain obligation's closure criterion.
 
 | Dependency | Live grade (cited at exactly this grade) | Consumed content |
 |---|---|---|
-| [`ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md`](ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md) | unaudited `bounded_theorem` | The declared record-influence class; the permanence-to-stationarity reading (L1), the symmetric-family reading (L2), the strict-sharpening meaning (L3); the universal orbit-grain interior fixed point `q = 1/2`; the N1/N2/N3 negative-control pattern. Verbatim clauses are quoted above and gated in runner R10. |
-| [`KOIDE_FORMATION_WEIGHT_LAW_EXPRESSIBILITY_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-12.md`](KOIDE_FORMATION_WEIGHT_LAW_EXPRESSIBILITY_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-12.md) | unaudited `bounded_theorem` | The licensed static formation-weight menu `W_expr = {1/3, 1/2}` and the per-cell coordinate quote, introduced there through the relocation theorem's explicitly unadopted energy dictionary (Residual Atom 2) — hedge quoted above and gated in runner R10; the static side of T3. |
-| [`KOIDE_FORMATION_GATE_RELOCATION_TIED_MEASURE_PER_CELL_WEIGHT_COMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-12.md`](KOIDE_FORMATION_GATE_RELOCATION_TIED_MEASURE_PER_CELL_WEIGHT_COMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-12.md) | unaudited `bounded_theorem` | Source of the `(w, 1-w) = (singlet, doublet)` per-cell coordinate and the dial map `r = (1-w)/(2w)` used in T3/R6 — supplied only through its explicitly unadopted energy dictionary (Residual Atom 2), declared in that note as its own modeling element, not adopted here. |
+| [`ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md`](ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md) | unaudited `bounded_theorem` | The declared record-influence class; the permanence-to-stationarity reading (L1), the symmetric-family reading (L2), the strict-sharpening meaning (L3); the universal orbit-menu interior fixed point `q = 1/2`; the N1/N2/N3 negative-control pattern. Verbatim clauses are quoted above and gated in runner block `SOURCE_GATES`. |
+| [`KOIDE_FORMATION_WEIGHT_LAW_EXPRESSIBILITY_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-12.md`](KOIDE_FORMATION_WEIGHT_LAW_EXPRESSIBILITY_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-12.md) | unaudited `bounded_theorem` | The static weight set `W_expr = {1/3, 1/2}`, conditional on that note's SOCMLC classification convention; `w = 1/3` from carrier/orbit multiplicities and `w = 1/2` from quotient-atom counting on one fixed two-cell quotient; the explicit exclusion of three-cell registration; and the coordinate hedge. These boundaries are quoted above and gated in runner block `SOURCE_GATES`. T3 consumes only the numerical set for support-only comparison. |
+| [`KOIDE_FORMATION_GATE_RELOCATION_TIED_MEASURE_PER_CELL_WEIGHT_COMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-12.md`](KOIDE_FORMATION_GATE_RELOCATION_TIED_MEASURE_PER_CELL_WEIGHT_COMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-12.md) | unaudited `bounded_theorem` | Source of the `(w, 1-w) = (singlet, doublet)` per-cell coordinate and the dial map `r = (1-w)/(2w)` used in T3 and `MENU_ARITHMETIC` — supplied only through its explicitly unadopted energy dictionary (Residual Atom 2), declared in that note as its own modeling element, not adopted here. Also supplies the load-bearing independence boundary: formation weight is independent of measure granularity unless a missing binding theorem is proved. |
 | [`KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md`](KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md) | unaudited `bounded_theorem` | The aggregation image `E(p_s, p_d) = (p_s, p_d/2, p_d/2)`; orbit-constancy of the swap-symmetric surface; L-K2 (swap-odd data non-derivable inside the protocol class), consumed in T4. |
 | [`FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md`](FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md) | `retained_bounded` | The stationary-point-not-forced framing (distinguished dial settings, lanes not competing answers), consumed in T4 and Non-claims. |
-| [`FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md`](FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md) | unaudited `bounded_theorem` | The records-flow separatrix exemplar `r -> 2 r^2`, whose exact multiplier `2` at `r = 1/2` is matched in runner R8. |
+| [`FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md`](FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md) | unaudited `bounded_theorem` | The records-flow separatrix exemplar `r -> 2 r^2`, whose exact multiplier `2` at `r = 1/2` is matched in runner block `MULTIPLIERS`. |
 | [`KOIDE_GENERATION_WEIGHT_DIAL_SHAPE_FORCED_VALUE_UNFIXED_QUALIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md`](KOIDE_GENERATION_WEIGHT_DIAL_SHAPE_FORCED_VALUE_UNFIXED_QUALIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md) | `audited_conditional` | The dial shape `diag(p_s, p_d/2, p_d/2)` read on the swap-symmetric surface (shape forced, value unfixed). |
-| [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md) | `open_gate` (ledger row: `audited_renaming`) | The open grain derivation obligation. Its two-part closure criterion is quoted verbatim in Bounded consequence (gated in runner R10); this note bears class-conditionally on the second part of that criterion and does not engage the first. Its count-once-versus-count-twice wording is used in the T3 corollary. |
+| [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md) | `open_gate` (ledger row: `audited_renaming`) | The open grain derivation obligation. Its two-part closure criterion is quoted verbatim in Bounded consequence and gated in runner block `SOURCE_GATES`. This note uses it only to state the boundary and does not engage either physical-action step. |
 
 ## Runner verification map
 
 | Block | Content | Result |
 |---|---|---|
-| R1 | Aggregation identity `2 f(q/2)(1-q) - q f(1-q) = q(1-q)[g(q/2) - g(1-q)]` and the odds form of the aggregated fixed-point condition (symbolic) | PASS=3 FAIL=0 |
-| R2 | `n = 2` equivalence identity (D1 content = L3 at complementary pairs) | PASS=2 FAIL=0 |
-| R3 | Power family `k in {2, 3, 5/2, 4}`: D1 membership, aggregated interior fixed set exactly `{2/3}`, orbit-grain fixed set exactly `{0, 1/2, 1}` | PASS=12 FAIL=0 |
-| R4 | Non-power members `f = x e^(x-1)` and `f = (x^2 + x^3)/2`: class-codomain gates (`f(0) = 0`, `f(1) = 1`), strict increase, D1 membership, and the same exact fixed sets | PASS=12 FAIL=0 |
-| R5 | T1 at `n = 3` for `f = x^2`, `f = x^3`: simplex fixed set = exactly the `7` uniform-on-support points | PASS=3 FAIL=0 |
-| R6 | Bijection arithmetic `w = 1/2 -> r = 1/2`, `w = 1/3 -> r = 1`; set equalities with `W_expr` and `{1/2, 1}`; counterfactual 4-cell menu | PASS=5 FAIL=0 |
-| R7 | Swap equivariance, surface invariance, aggregated-shadow formula, exemplar asymmetry `f_d != f_s`, identity-profile contrast, the strict-asymmetry identity | PASS=6 FAIL=0 |
-| R8 | Exact multipliers: transverse swap-odd mode, orbit grain, aggregated sector grain, separatrix match (all `= 2`) | PASS=5 FAIL=0 |
-| R9 | T5 witness: class membership, strict L3, D1 failure, the full aggregated interior fixed set `[1/3, 2/3]` together with `{8/9}` (piecewise certificate: piece mapping, per-piece formulas, identically-zero segment, unique zeros, assembly), the fixed-segment mechanism, spot identities, the non-counting profile at the licensed dial `r = 1/2`, endpoint and isolated dials, dial sweep | PASS=28 FAIL=0 |
-| R10 | Verbatim quote gates: each consumed clause present in its source note AND in this note (flattened substring), including the unadopted-energy-dictionary hedge and the obligation's two-part closure criterion | PASS=10 FAIL=0 |
-| R11 | Note hygiene: no prose decimals outside code fences, pinned closing phrases absent, claim-type line, required sections | PASS=4 FAIL=0 |
+| `AGGREGATION` | Aggregation identity `2 f(q/2)(1-q) - q f(1-q) = q(1-q)[g(q/2) - g(1-q)]` and the odds form of the aggregated fixed-point condition (symbolic) | PASS=3 FAIL=0 |
+| `TWO_CELL` | `n = 2` equivalence identity (D1 content = L3 at complementary pairs) | PASS=2 FAIL=0 |
+| `POWER_PROFILES` | Power family `k in {2, 3, 5/2, 4}`: D1 membership, aggregated interior fixed set exactly `{2/3}`, 2-cell fixed set exactly `{0, 1/2, 1}` | PASS=12 FAIL=0 |
+| `NONPOWER_PROFILES` | Non-power members `f = x e^(x-1)` and `f = (x^2 + x^3)/2`: class-codomain gates (`f(0) = 0`, `f(1) = 1`), strict increase, D1 membership, and the same exact fixed sets | PASS=12 FAIL=0 |
+| `UNIFORM_SUPPORT` | T1 at `n = 3` for `f = x^2`, `f = x^3`: simplex fixed set = exactly the `7` uniform-on-support points | PASS=3 FAIL=0 |
+| `MENU_ARITHMETIC` | Weight-to-dial arithmetic `w = 1/2 -> r = 1/2`, `w = 1/3 -> r = 1`; numerical set equalities with `W_expr` and `{1/2, 1}`; counterfactual 4-cell menu | PASS=5 FAIL=0 |
+| `SWAP_DYNAMICS` | Swap equivariance, surface invariance, aggregated-shadow formula, exemplar asymmetry `f_d != f_s`, identity-profile contrast, the strict-asymmetry identity | PASS=6 FAIL=0 |
+| `MULTIPLIERS` | Exact multipliers: transverse swap-odd mode, 2-cell menu, aggregated 3-cell menu, separatrix match (all `= 2`) | PASS=5 FAIL=0 |
+| `D1_WITNESS` | T5 witness: class membership, strict L3, D1 failure, the full aggregated interior fixed set `[1/3, 2/3]` together with `{8/9}` (piecewise certificate: piece mapping, per-piece formulas, identically-zero segment, unique zeros, assembly), the fixed-segment mechanism, spot identities, the non-counting profile at the licensed numerical dial `r = 1/2`, endpoint and isolated dials, dial sweep | PASS=28 FAIL=0 |
+| `SOURCE_GATES` | Verbatim quote gates: each consumed clause present in its source note AND in this note (flattened substring), including SOCMLC, fixed-quotient provenance, three-cell exclusion, measure/formation independence, K-odd non-derivability, the energy-dictionary hedge, and the obligation criterion | PASS=15 FAIL=0 |
+| `NOTE_HYGIENE` | Note hygiene: no prose decimals outside code fences, pinned closing phrases absent, claim-type line, required sections | PASS=4 FAIL=0 |
 
 Run:
 
 ```bash
-python3 scripts/acphilambda_occupancy_grain_menu_counting_bijection_2026_07_16.py
+python3 scripts/acphilambda_occupancy_grain_menu_counting_correspondence_2026_07_16.py
 ```
 
 Cached run result:
 
 ```text
-TOTAL: PASS=90 FAIL=0
+TOTAL: PASS=95 FAIL=0
 ```
 
 **No check passes by literal stipulation.**

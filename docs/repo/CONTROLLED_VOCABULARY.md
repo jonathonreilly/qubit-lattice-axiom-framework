@@ -483,8 +483,9 @@ language to the audit-lane propose / ratify vocabulary. Source-note
 - `proposed_retained` — author proposes retained-grade; awaits audit ratification
 - `proposed_promoted` — author proposes promoted-grade; awaits audit ratification
 
-The canonical audit-ratified surface is
-[docs/audit/AUDIT_LEDGER.md](../audit/AUDIT_LEDGER.md). Legacy
+The canonical audit-ratified surface is the tracked sharded ledger
+[docs/audit/data/ledger/](../audit/data/ledger/); the rendered
+`docs/audit/AUDIT_LEDGER.md` is a local pipeline-materialized cache. Legacy
 publication summaries may still use manuscript shorthand, but those rows
 should be read as proposed until the audit ledger marks them clean.
 

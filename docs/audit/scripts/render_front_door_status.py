@@ -176,7 +176,7 @@ def main() -> None:
             ]
         ),
         "",
-        "Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and",
+        "Source: tracked shards in [`docs/audit/data/ledger/`](../audit/data/ledger/) and",
         "[`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).",
         "",
         "## Audit Queue",
@@ -214,7 +214,7 @@ def main() -> None:
         [
             "",
             "Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and",
-            "[`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).",
+            "the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).",
             "",
             "## Publication Gap",
             "",

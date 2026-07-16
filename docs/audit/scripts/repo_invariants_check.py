@@ -63,6 +63,15 @@ PREMISE_NODES = "docs/audit/data/axiom_premise_nodes.json"
 OBLIGATIONS = "docs/audit/data/derivation_obligations.json"
 
 # Authority surfaces: the reading path an external reader or agent follows.
+# Audit-lane-owned generated work-queue files are excluded: their links are
+# machine-produced pointers that self-heal when their generators run in the
+# audit lane, and gating the pipeline on them would be circular (the guard
+# runs inside the same pipeline that cannot regenerate them mid-PR).
+AUTHORITY_EXCLUDE = {
+    "docs/audit/MISSING_DERIVATION_PROMPTS.md",
+    "docs/audit/AUDIT_QUEUE.md",
+    "docs/audit/AUDIT_DISPATCH_QUEUE.md",
+}
 AUTHORITY_SURFACES = (
     "README.md",
     "docs/repo/",
@@ -231,7 +240,7 @@ def _authority_surface_files(tracked: list) -> list:
             )
         elif entry in set(tracked):
             files.append(entry)
-    return sorted(set(files))
+    return sorted(set(files) - AUTHORITY_EXCLUDE)
 
 
 def collect_authority_links(tracked: list) -> dict:

@@ -66,7 +66,8 @@ Use these entrypoints in order:
 8. [Reproduce guide](docs/publication/ci3_z3/REPRODUCE.md)
 9. [Science map by domain](docs/publication/ci3_z3/SCIENCE_MAP.md)
 10. [Open science lanes](docs/lanes/open_science/README.md)
-11. [Full audit ledger](docs/audit/AUDIT_LEDGER.md)
+11. [Full audit ledger (tracked shards)](docs/audit/data/ledger/), summarized in
+    [`effective_status_summary.json`](docs/audit/data/effective_status_summary.json)
 
 ## Current Status
 
@@ -83,8 +84,13 @@ the current counts, refreshed by `bash docs/audit/scripts/run_pipeline.sh`.
 
 Source notes and publication tables still contain legacy `retained` /
 `promoted` wording, but the publication-facing authority is the audit-derived
-`effective_status` in
-[`docs/audit/AUDIT_LEDGER.md`](docs/audit/AUDIT_LEDGER.md). Retained-grade
+`effective_status` in the tracked sharded audit ledger
+([`docs/audit/data/ledger/`](docs/audit/data/ledger/), one JSON shard per claim,
+summarized in
+[`docs/audit/data/effective_status_summary.json`](docs/audit/data/effective_status_summary.json)).
+The monolithic `docs/audit/AUDIT_LEDGER.md` is a local pipeline-materialized
+cache (gitignored, absent from fresh clones; rebuild with
+`python3 docs/audit/scripts/ledger_io.py --materialize`). Retained-grade
 `effective_status` values are `retained`, `retained_no_go`, and
 `retained_bounded`; boxed `decoration_under_*` rows are decorations under a
 retained parent, not independent retained rows. `promoted` is

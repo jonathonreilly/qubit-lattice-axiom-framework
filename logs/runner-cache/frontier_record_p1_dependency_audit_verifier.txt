@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_p1_dependency_audit_verifier.py
-runner_sha256: faa1b13808a9fb20be8ddb2937771466cfe5518d4bb4a6495beaa370a06953ae
+runner_sha256: 8d5270c47dcd20af53bb17ae6253a1d11d8f6929f489da32c7720158db1699d2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 Record/P1 dependency audit re-derivation check
@@ -14,11 +14,12 @@ audit_note: docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md
 [PASS] OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md exists on disk
 [PASS] audit ledger source exists  (sharded=True, legacy_cache=True)
 [PASS] axiom-premise registry exists
+[PASS] source-path alias registry exists
 [PASS] live ledger still contains direct dependents of the historical parent  (current_observed=100)
 [PASS] all direct dependents have note_path entries  (paths=100, dependents=100)
 [PASS] live status observation completed without becoming snapshot authority  (current unaudited=87, meta=13, retained=0, retained_bounded=0, audited_clean=0)
 [PASS] observable_principle_from_axiom_note NOT in axiom-premise registry  (axiom_ids_sample=['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive'])
-[PASS] observable_principle_from_axiom_note NOT aliased to minimal_axioms
+[PASS] observable_principle_from_axiom_note NOT aliased to minimal_axioms  (premise_registry=False, source_path_aliases=False, ledger_row=False)
 [PASS] audit note declares no source-citation rewrites
 [PASS] audit note declares no source-note text modifications
 [PASS] audit note declares no audit_status edits
@@ -45,7 +46,7 @@ audit_note: docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md
 [PASS] audit note explicitly prohibits adding old to axiom_premise_nodes
 [PASS] audit note explicitly states 'no row was broadened'
 
-TOTAL: PASS=35 FAIL=0
+TOTAL: PASS=36 FAIL=0
 Record/P1 dependency audit verifier passed: frozen 91-row snapshot internally enumerated and classified LEAVE; current ledger observed separately; no source citations rewritten, no aliasing, no axiom-premise insertion, no audit_status edits, blocking-content categories sum to 91, status authority preserved.
 
 ----- stderr -----

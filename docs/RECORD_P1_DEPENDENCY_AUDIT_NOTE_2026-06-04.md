@@ -50,11 +50,13 @@ must keep the old parent)?
 
 ## Method
 
-Direct dependents were enumerated from the live `origin/main` ledger before
-this meta report was added, by inspecting the `deps` array of every row in
-`docs/audit/data/audit_ledger.json` and selecting rows whose deps
-include `observable_principle_from_axiom_note`. The query returned 91
-rows.
+Direct dependents were enumerated from the then-current `origin/main` ledger
+snapshot before this meta report was added, by inspecting the `deps` array of
+every materialized row and selecting rows whose deps included
+`observable_principle_from_axiom_note`. The query returned 91 rows. That count
+belongs to the frozen 2026-06-04 snapshot; the current tracked source of truth
+is the sharded [`docs/audit/data/ledger/`](audit/data/ledger/) tree, whose live
+dependent count may evolve independently.
 
 The 91 rows were partitioned into six batches and each batch was read
 in full. For every note, the content cited from the old parent was
@@ -286,10 +288,12 @@ modified):
 | Direct dependents | 91 (UNCHANGED) |
 | `effective_status` distribution | UNCHANGED |
 
-The live post-PR ledger has 92 direct dependents if this meta report is counted,
-because the report itself cites the old parent it audits. The verifier excludes
-`record_p1_dependency_audit_note_2026-06-04` when checking the original audited
-population and separately checks that the live count including the report is 92.
+At the historical post-report snapshot, counting this meta report itself would
+have raised the direct-dependent total to 92 because the report cites the old
+parent it audits. That 92-row observation is historical, not a live invariant.
+The verifier excludes `record_p1_dependency_audit_note_2026-06-04` only when
+reporting the current direct dependents other than this report; it does not
+equate the evolving live count to either frozen value.
 
 This audit does not declare a new audit-ready subset. Readiness remains a
 pipeline/audit-queue property after the generated surfaces are recomputed.
@@ -327,8 +331,8 @@ pipeline/audit-queue property after the generated surfaces are recomputed.
   node registry; `observable_principle_from_axiom_note` is NOT in
   this file and must not be added.
 - [docs/audit/data/premise_decision_history.json](audit/data/premise_decision_history.json) — non-authoritative admission-era history;
-  `AC_phi_lambda` and other Tier-A admissions live here, not in
-  axiom-premise nodes.
+  former `AC_phi_lambda` and Tier-A decisions are preserved there as
+  provenance only and supply no premise authority.
 
 ## Validation
 
@@ -347,7 +351,7 @@ verifies:
    checks that live direct dependents still exist and have source-note paths,
    without equating the evolving live set to the frozen snapshot.
 3. The report declares that no source-note rewrites were made.
-4. The classification table accounts for every direct dependent
+4. The classification table accounts for every frozen-snapshot direct dependent
    (REWRITE + SPLIT + LEAVE = 91).
 5. `MINIMAL_AXIOMS_2026-06-04.md` is the cited new authority for the
    Record axiom.

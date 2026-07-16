@@ -33,6 +33,7 @@ if str(AUDIT_SCRIPTS) not in sys.path:
 import ledger_io
 
 AXIOM_NODES = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
+SOURCE_PATH_ALIASES = ROOT / "docs" / "audit" / "data" / "source_path_aliases.json"
 DECISION_HISTORY = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 AUDIT_NOTE = ROOT / "docs" / "RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md"
 MIN_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-04.md"
@@ -69,7 +70,7 @@ def parse_category_lists(audit_text: str) -> dict[str, list[str]]:
 
     This is intentionally mechanical: the report is the durable semantic
     classification, while this runner verifies that the accounting in that
-    report covers exactly the live direct-dependent set.
+    report covers exactly the frozen 91-row historical snapshot.
     """
     categories: dict[str, list[str]] = {}
     current: str | None = None
@@ -107,6 +108,7 @@ def main() -> int:
         detail=f"sharded={ledger_io.sharded()}, legacy_cache={LEDGER.exists()}",
     )
     check("axiom-premise registry exists", AXIOM_NODES.exists())
+    check("source-path alias registry exists", SOURCE_PATH_ALIASES.exists())
 
     # ---- ledger queries ----
     if not ledger_source_exists:
@@ -178,15 +180,46 @@ def main() -> int:
           OLD_PARENT_CID not in axiom_ids,
           detail=f"axiom_ids_sample={sorted(axiom_ids)[:3]}")
 
-    # Search whole ledger for an alias mapping old -> minimal_axioms
-    ledger_text = json.dumps(ledger_payload, sort_keys=True)
-    forbidden_alias = (
-        '"observable_principle_from_axiom_note"' in ledger_text
-        and '"minimal_axioms"' in ledger_text
-        and '"alias_of": "minimal_axioms"' in ledger_text
+    # Inspect the tracked alias authority surfaces directly. The sharded ledger
+    # payload does not contain source-path aliases, so a whole-ledger text
+    # search would not test the actual laundering routes.
+    old_parent_path = str(OBSERVABLE_PRINCIPLE.relative_to(ROOT))
+    minimal_node = (
+        axiom_nodes.get("minimal_axioms", {})
+        if isinstance(axiom_nodes, dict)
+        else {}
     )
-    check("observable_principle_from_axiom_note NOT aliased to minimal_axioms",
-          not forbidden_alias)
+    minimal_paths = {
+        minimal_node.get("current_path"),
+        *(minimal_node.get("aliased_paths") or []),
+    }
+    minimal_paths.discard(None)
+    premise_alias_hit = (
+        old_parent_path in (minimal_node.get("aliased_paths") or [])
+        or OLD_PARENT_CID in (minimal_node.get("legacy_claim_ids") or [])
+    )
+
+    alias_payload = json.loads(SOURCE_PATH_ALIASES.read_text())
+    source_aliases = alias_payload.get("aliases") or {}
+    resolved_path = old_parent_path
+    seen_paths: set[str] = set()
+    while resolved_path in source_aliases and resolved_path not in seen_paths:
+        seen_paths.add(resolved_path)
+        resolved_path = source_aliases[resolved_path]
+    source_alias_hit = resolved_path in minimal_paths
+
+    old_parent_row = rows.get(OLD_PARENT_CID) or {}
+    ledger_alias_hit = old_parent_row.get("alias_of") == "minimal_axioms"
+    forbidden_alias = premise_alias_hit or source_alias_hit or ledger_alias_hit
+    check(
+        "observable_principle_from_axiom_note NOT aliased to minimal_axioms",
+        not forbidden_alias,
+        detail=(
+            f"premise_registry={premise_alias_hit}, "
+            f"source_path_aliases={source_alias_hit}, "
+            f"ledger_row={ledger_alias_hit}"
+        ),
+    )
 
     # ---- discipline: this audit did NOT edit any of the 91 listed source notes ----
     # Verified by checking that the audit note + verifier + cache are the only

@@ -1,49 +1,57 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_staggered_os0_supplied_action_ks_blocking_four_taste_module_2026_07_11.py
-runner_sha256: 8fe31813c9ab93e38504a42abd824bb23116e0240f207aea77eeae740b2cf359
+runner_sha256: 48d286de9f3163f37083a8a66ed1afedcda62c9910baf5d93b5c47ac4468b136
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.63
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
 ========================================================================================
-Supplied-action KS blocking and four-taste module: exact companion
+Defined four-bit periodic difference operator: exact certificate
+mode: normal
 ========================================================================================
 
-Part 1: exact block carrier and canonical staggered phases
-----------------------------------------------------------
-  [PASS (A)] b in {0,1}^4 gives 16 blocked components
-  [PASS (A)] Hamming-weight multiplicities are (1,4,6,4,1)  (observed=(1, 4, 6, 4, 1))
-  [PASS (A)] canonical eta signs depend on preceding block bits
+Part 1: defined finite periodic operator and exact blocking
+-----------------------------------------------------------
+  [PASS (A)] the block labels are exactly the 16 elements of {0,1}^4
+  [PASS (A)] the Hamming grading is (1,4,6,4,1), without assigning module roles  (observed=(1, 4, 6, 4, 1))
+  [PASS (A)] eta_mu(2y+b)=eta_mu(b) on every even periodic block
+  [PASS (A)] the symbolic finite Fourier fibers equal the coefficients from the two site shifts  (entries=64)
+  [PASS (A)] the diagonal rephasing proves all four Laurent-polynomial blocking identities  (directions=[True, True, True, True])
+  [PASS (A)] the full finite fiber has the exact reduced Laurent-polynomial form
+  [PASS (A)] on t=exp(i x), the Laurent coefficient is exactly i sin(x)
 
-Part 2: exact Laurent-polynomial blocking identity
---------------------------------------------------
-  [PASS (A)] rephasing turns every blocked direction into alpha_mu (t_mu-t_mu^-1)/(2a)  (directions=[True, True, True, True])
-  [PASS (A)] the full blocked operator has the exact reduced Laurent-polynomial form
-  [PASS (A)] on t_mu=exp(i p_mu a), the Laurent coefficient is i sin(p_mu a)/a
+Part 2: exact Clifford algebra checks
+-------------------------------------
+  [PASS (A)] each alpha_mu is a real symmetric involution
+  [PASS (A)] the four alpha_mu satisfy every Clifford relation
+  [PASS (A)] the 16 alpha words are linearly independent  (exact rank=16)
+  [PASS (A)] the exact word character is (16,0,...,0)  (character=(16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
+  [PASS (A)] the alpha words are Hilbert-Schmidt orthogonal
 
-Part 3: exact Cl_4(C) representation
-------------------------------------
-  [PASS (A)] each alpha_mu is a real symmetric involution  (squares=[True, True, True, True])
-  [PASS (A)] distinct alpha generators anticommute  (pairs=[True, True, True, True, True, True])
-  [PASS (A)] the 16 Clifford words are linearly independent  (exact rank=16)
-  [PASS (A)] the block-module character is 16 on the identity and 0 on 15 nonidentity words  (character=(16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
+Part 3: explicit unitary four-copy certificate
+----------------------------------------------
+  [PASS (A)] the suffix-sign beta generators commute with every alpha and satisfy Clifford
+  [PASS (A)] Q_01 and Q_23 are commuting Hermitian involutions
+  [PASS (A)] their four joint projectors are orthogonal rank-4 projectors summing to I_16
+  [PASS (A)] the four vectors in the ++ projector form an exact orthonormal basis
+  [PASS (A)] the computed 4x4 restrictions equal the displayed gamma matrices
+  [PASS (A)] the displayed gamma matrices satisfy every Clifford relation
+  [PASS (A)] the gamma words span M_4(C), proving the 4-dimensional module irreducible  (exact rank=16)
+  [PASS (A)] the constructed 16x16 intertwiner U is exactly unitary
+  [PASS (A)] U^dagger alpha_mu U = gamma_mu tensor I_4 for every mu  (directions=(True, True, True, True))
+  [PASS (A)] the explicit similarity certifies four copies, independently of 16=4*4 prose
 
-Part 4: module multiplicity and inverse
----------------------------------------
-  [PASS (A)] Cl_4(C)=M_4(C) gives four irreducible spin modules in the 16-component carrier  (16=4*4)
-  [PASS (A)] the exact character equals four times the irreducible Cl_4(C) character
-  [PASS (A)] the Clifford kinetic square is (sum_mu s_mu^2) I_16
-  [PASS (A)] the blocked operator has the exact scalar-denominator numerator identity
-  [PASS (A)] the displayed inverse is exact on the declared nonzero-denominator domain
-  [PASS (A)] the zero-mass zero-momentum singular point is excluded from the inverse domain
-
-Scope guard
------------
-  [PASS (C)] source note discloses the action premise and disclaims physical-carrier selection
+Part 4: exact inverse and hypothesis firewall
+---------------------------------------------
+  [PASS (A)] the defined kinetic matrix squares to (sum_mu s_mu^2) I_16
+  [PASS (A)] the scalar-denominator numerator identity is exact
+  [PASS (A)] the displayed inverse is exact on its nonzero-denominator domain
+  [PASS (A)] the zero-parameter singular matrix is excluded from the inverse domain
+  [PASS (A)] the formal hypotheses contain none of the four required physical bridges  (formal hypotheses=['defined_block_map', 'defined_shift_operator', 'defined_sign_coefficients', 'finite_complex_linear_algebra', 'finite_periodic_set'])
 
 ========================================================================================
-TOTAL: PASS=17, FAIL=0
+TOTAL: PASS=27, FAIL=0
 ========================================================================================
 
 ----- stderr -----

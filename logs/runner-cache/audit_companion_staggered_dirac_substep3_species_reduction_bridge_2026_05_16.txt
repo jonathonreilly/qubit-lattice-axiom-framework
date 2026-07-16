@@ -1,91 +1,47 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py
-runner_sha256: 74be305caed298a8c634c2ffa10cfc1e6bdd817d3e01500099f788544b76138c
+runner_sha256: f6c51669752b2794004df98f86de41dbb81a1fec25cdee688b2a1b6311b80131
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ========================================================================================
-Audit companion (exact-symbolic) for
-STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16
-Goal: sympy verification of arithmetic factorization 16 = 4 * 4
-      and spinor-count match to Cl(3,0) ⊗_R C chirality pair (2, 2)
+Narrowed substep-3 consumer: exact finite algebra and scope firewall
 ========================================================================================
 
-----------------------------------------------------------------------------------------
-Part 1: (R1) d = 4 corner cardinality = 16 (cited upstream)
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R1) cardinality of corner set {0, pi}^4 equals 16  (|{0, pi}^4| = 16)
-  [PASS (A)] (R1) corner cardinality matches 2^d = 2^4 = 16  (2^4 = 16)
-  [PASS (A)] (R1) every corner in {0, pi}^4 is a zero of sum sin^2(k_mu)  (zero corners = 16/16)
+Part 1: corner cardinality and role-free arithmetic
+---------------------------------------------------
+  [PASS (A)] the comparison corner set has exactly 16 elements
+  [PASS (A)] every enumerated corner zeros the exact sum of sine squares
+  [PASS (A)] 16=4*4 is an integer identity
+  [PASS (A)] the arithmetic hypotheses contain no factor-role assignment
 
-----------------------------------------------------------------------------------------
-Part 2: (R2) arithmetic factorization 16 = 4 * 4 = 2^2 * 2^2
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R2) 16 = 4 * 4 (integer arithmetic)
-  [PASS (A)] (R2) each arithmetic factor is 4 = 2^(d/2) at d = 4  (2^(d/2) = 4)
-  [PASS (A)] (R2) factorization 2^d = 2^(d/2) * 2^(d/2) at d = 4
+Part 2: independent Cl(3,0) complexification dimensions
+-------------------------------------------------------
+  [PASS (A)] the two Pauli realizations have pseudoscalar characters +i and -i
+  [PASS (A)] the two irreducible module dimensions are exactly (2,2)
+  [PASS (A)] their numerical dimension sum is 4
+  [PASS (A)] the split algebra dimension is dim M2 + dim M2 = 8
 
-----------------------------------------------------------------------------------------
-Part 3: (R3) Cl(3,0) ⊗_R C chirality-pair dim 2 + 2 = 4
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R3) positive-chirality realisation: ω = σ_1 σ_2 σ_3 = +i I_2
-  [PASS (A)] (R3) in positive-chirality realisation, e_+ = I_2 (projects to V_+ summand)
-  [PASS (A)] (R3) in positive-chirality realisation, e_- = 0 (V_- summand absent in this rep)
-  [PASS (A)] (R3) parity-conjugate realisation: ω = -σ_1 (-σ_2)(-σ_3) = -i I_2
-  [PASS (A)] (R3) chirality-pair dim sum 2 + 2 = 4 matches N_spinor at d = 4  ((dim V_+, dim V_-) = (2, 2), sum = 4; 2^(d/2) at d=4 = 4)
-  [PASS (A)] (R3) block-diagonal C^4 realisation has rank 4 (full)
+Part 3: explicit defined-operator module certificate
+----------------------------------------------------
+  [PASS (A)] the defined alpha generators satisfy every Clifford relation
+  [PASS (A)] the suffix-sign beta generators commute with every alpha and satisfy Clifford
+  [PASS (A)] four exact orthogonal rank-4 projectors resolve the defined module
+  [PASS (A)] the displayed gamma generators satisfy every Clifford relation
+  [PASS (A)] the gamma words span M4(C), proving irreducibility  (exact rank=16)
+  [PASS (A)] the constructed 16 by 16 intertwiner is exactly unitary
+  [PASS (A)] the exact similarity proves four copies without dimension counting  (directions=(True, True, True, True))
 
-----------------------------------------------------------------------------------------
-Part 4: (R3) Cl(3,0) ⊗_R C algebra dim = 8
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R3) dim_C (M_2(C) ⊕ M_2(C)) = 4 + 4 = 8
-
-----------------------------------------------------------------------------------------
-Part 5: (R4) Hamming-weight count on {0, π}^4
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R4) Hamming-weight distribution on {0, π}^4 equals binom(4, k)  (observed = {0: 1, 1: 4, 2: 6, 3: 4, 4: 1}, expected = {0: 1, 1: 4, 2: 6, 3: 4, 4: 1})
-  [PASS (A)] (R4) Hamming-weight counts sum to 2^d = 16  (sum binom(4, k) = 16)
-
-----------------------------------------------------------------------------------------
-Part 6: (R4) supplied-action Clifford module gives four tastes
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R4) Cl(3) chirality-pair sum 2+2=4 matches the spin-module dimension  (chirality sum = 4)
-  [PASS (A)] (R4) canonical eta flip matrices satisfy the exact Cl_4 relations
-  [PASS (A)] (R4) Clifford-word span has exact dimension 16  (rank=16)
-  [PASS (A)] (R4) blocked-module character is four times the 4-spinor character  (character=(16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
-  [PASS (A)] (R4) 16-dimensional Cl_4(C)=M_4(C) module has multiplicity four
-
-----------------------------------------------------------------------------------------
-Part 7: (R5) supplied-action scope pins
-----------------------------------------------------------------------------------------
-  [PASS (C)] (R5) target cites the supplied-action blocking theorem
-  [PASS (C)] (R5) supplier disclaims framework physical-carrier identification
-  [PASS (C)] (R5) target records physical-carrier selection as a separate obligation
-
-----------------------------------------------------------------------------------------
-Part 8: (R5) Counterfactual at d = 6 (factorization generalizes)
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R5) at d = 6, 2^6 = 64 corners
-  [PASS (A)] (R5) at d = 6, factorization is 8 * 8 = 64  (8 * 8 = 64)
-  [PASS (A)] (R5) generic even-d factorization 2^d = 2^(d/2) * 2^(d/2)
-
-----------------------------------------------------------------------------------------
-Summary
-----------------------------------------------------------------------------------------
-  Verified at exact sympy precision:
-    (R1) d = 4 corner cardinality = 16 (cited upstream naive theorem)
-    (R2) arithmetic factorization 16 = 4 * 4 = 2^2 * 2^2 at d = 4
-    (R3) Cl(3,0) ⊗_R C chirality-pair dim (2, 2), sum = 4
-    (R3) match to N_spinor = 2^(d/2) = 4 at d = 4
-    (R4) Hamming-weight distribution = binom(4, k) summing to 16
-    (R4) supplied-action Cl_4 module is four copies of the spin irrep
-    (R5) supplied-action and physical-carrier scopes are separated
-    (R5) factorization generalizes to even d (d = 6 gives 8 * 8)
+Part 4: structural non-identification firewall
+----------------------------------------------
+  [PASS (A)] no required physical bridge is among the formal hypotheses  (formal hypotheses=['cited_cl3_split', 'defined_four_bit_matrices', 'finite_complex_linear_algebra', 'finite_set_counting', 'integer_arithmetic'])
+  [PASS (A)] the formal module conclusion is licensed but physical taste/carrier conclusions are not
+  [PASS (A)] the d=6 identity 64=8*8 confirms that arithmetic alone supplies no stable roles
 
 ========================================================================================
-TOTAL: PASS=26, FAIL=0
+TOTAL: PASS=18, FAIL=0
 ========================================================================================
 
 ----- stderr -----

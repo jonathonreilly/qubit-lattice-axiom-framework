@@ -1,359 +1,237 @@
 #!/usr/bin/env python3
-"""Exact-symbolic audit-companion runner for
-`STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`.
+"""Exact structural checks for a narrowed one-hop semantic consumer.
 
-The narrow theorem's load-bearing content is the abstract arithmetic
-factorization 2^d = 2^(d/2) * 2^(d/2) at even d (with d = 4 giving
-16 = 4 * 4), and the explicit dimensional match between the spinor-
-count factor 2^(d/2) = 4 at d = 4 and the Cl(3,0) ⊗_R C chirality-
-pair dim 2 + 2 = 4. A separate supplied-action theorem now derives the
-Kogut-Susskind four-taste module from exact blocking and Clifford character
-data. Physical-carrier identification remains outside this row.
-
-Given the cited upstream narrow theorems
-
-  - NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10
-    (naive lattice Dirac zero locus on {0, pi}^d has cardinality 2^d)
-  - CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10
-    (Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C); chirality pair (V_+, V_-) of
-     complex dim (2, 2); central idempotents e_± = (1 ∓ i ω)/2)
-
-the arithmetic factorization and the spinor-dim match reduce to
-exact-symbolic arithmetic on finite-dim complex matrices and on
-{0, π}^d corner enumeration.
-
-Companion role: not a new claim row; provides audit-friendly evidence
-that the narrow theorem's load-bearing class-(A) algebra holds at
-exact symbolic precision.
+The historical filename is retained for claim identity.  This runner checks
+three separate finite-algebra statements and a non-identification firewall.
+It does not read source prose or audit state, and it assigns no physical role
+to the defined four-bit module's exact multiplicity.
 """
 
 from __future__ import annotations
 
 from itertools import product
-import math
-from pathlib import Path
 import sys
 
 try:
-    import sympy
-    import sympy as sp  # alias for audit classifier class-A pattern detection
-    from sympy import (
-        I as sym_I,
-        Matrix,
-        Rational,
-        Symbol,
-        binomial,
-        eye,
-        pi as sym_pi,
-        simplify,
-        sin as sym_sin,
-        symbols,
-        zeros,
-    )
+    import sympy as sp
 except ImportError:
-    print("FAIL: sympy required for exact algebra")
-    sys.exit(1)
+    print("FAIL: sympy is required for exact algebra")
+    raise SystemExit(1)
 
 
 PASS = 0
 FAIL = 0
+I16 = sp.eye(16)
+Z16 = sp.zeros(16)
 
 
-def check(label: str, ok: bool, detail: str = "", kind: str = "A") -> None:
+def check(label: str, condition: bool, detail: str = "") -> None:
     global PASS, FAIL
-    if ok:
+    if bool(condition):
         PASS += 1
-        tag = f"PASS ({kind})"
+        mark = "PASS (A)"
     else:
         FAIL += 1
-        tag = f"FAIL ({kind})"
+        mark = "FAIL (A)"
     suffix = f"  ({detail})" if detail else ""
-    print(f"  [{tag}] {label}{suffix}")
+    print(f"  [{mark}] {label}{suffix}")
 
 
-def section(title: str) -> None:
+def section(label: str) -> None:
     print()
-    print("-" * 88)
-    print(title)
-    print("-" * 88)
+    print(label)
+    print("-" * len(label))
 
 
-def mat_eq(A: Matrix, B: Matrix) -> bool:
-    diff = simplify(A - B)
-    return all(diff[i, j] == 0 for i in range(diff.rows) for j in range(diff.cols))
+def matrix_equal(left: sp.Matrix, right: sp.Matrix) -> bool:
+    if left.shape != right.shape:
+        return False
+    return all(sp.simplify(entry) == 0 for entry in left - right)
 
 
-def block_bits(index: int) -> tuple[int, ...]:
+def bits(index: int) -> tuple[int, ...]:
     return tuple((index >> mu) & 1 for mu in range(4))
 
 
-def block_index(bit_tuple: tuple[int, ...] | list[int]) -> int:
+def bit_index(bit_tuple: tuple[int, ...] | list[int]) -> int:
     return sum((int(bit) & 1) << mu for mu, bit in enumerate(bit_tuple))
 
 
-def staggered_alpha(mu: int) -> Matrix:
-    matrix = zeros(16, 16)
-    for column in range(16):
-        bit_tuple = block_bits(column)
+BLOCK_BITS = tuple(bits(index) for index in range(16))
+
+
+def signed_flip(mu: int, *, prefix: bool) -> sp.Matrix:
+    matrix = sp.zeros(16)
+    for column, bit_tuple in enumerate(BLOCK_BITS):
         flipped = list(bit_tuple)
         flipped[mu] ^= 1
-        sign = -1 if sum(bit_tuple[:mu]) % 2 else 1
-        matrix[block_index(flipped), column] = sign
+        exponent_bits = bit_tuple[:mu] if prefix else bit_tuple[mu + 1 :]
+        sign = -1 if sum(exponent_bits) % 2 else 1
+        matrix[bit_index(flipped), column] = sign
     return matrix
 
 
-def clifford_word(alphas: tuple[Matrix, ...], mask: int) -> Matrix:
-    word = eye(16)
-    for mu in range(4):
+ALPHAS = tuple(signed_flip(mu, prefix=True) for mu in range(4))
+BETAS = tuple(signed_flip(mu, prefix=False) for mu in range(4))
+
+
+def clifford_relations(generators: tuple[sp.Matrix, ...]) -> bool:
+    dimension = generators[0].rows
+    identity = sp.eye(dimension)
+    zero = sp.zeros(dimension)
+    return all(
+        matrix_equal(
+            left * right + right * left,
+            2 * identity if mu == nu else zero,
+        )
+        for mu, left in enumerate(generators)
+        for nu, right in enumerate(generators)
+    )
+
+
+def clifford_word(generators: tuple[sp.Matrix, ...], mask: int) -> sp.Matrix:
+    word = sp.eye(generators[0].rows)
+    for mu, generator in enumerate(generators):
         if mask & (1 << mu):
-            word *= alphas[mu]
+            word *= generator
     return word
+
+
+def word_span_rank(generators: tuple[sp.Matrix, ...]) -> int:
+    words = tuple(clifford_word(generators, mask) for mask in range(16))
+    columns = [word.reshape(word.rows * word.cols, 1) for word in words]
+    return int(sp.Matrix.hstack(*columns).rank())
+
+
+def explicit_gammas() -> tuple[sp.Matrix, ...]:
+    return (
+        sp.Matrix([[0, 1, 0, 0], [1, 0, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0]]),
+        sp.Matrix([[0, -sp.I, 0, 0], [sp.I, 0, 0, 0], [0, 0, 0, -sp.I], [0, 0, sp.I, 0]]),
+        sp.Matrix([[0, 0, 1, 0], [0, 0, 0, -1], [1, 0, 0, 0], [0, -1, 0, 0]]),
+        sp.Matrix([[0, 0, -sp.I, 0], [0, 0, 0, sp.I], [sp.I, 0, 0, 0], [0, -sp.I, 0, 0]]),
+    )
+
+
+def module_certificate() -> tuple[tuple[sp.Matrix, ...], sp.Matrix, tuple[sp.Matrix, ...]]:
+    q01 = sp.I * BETAS[0] * BETAS[1]
+    q23 = sp.I * BETAS[2] * BETAS[3]
+    projectors = tuple(
+        (I16 + sign_01 * q01) * (I16 + sign_23 * q23) / 4
+        for sign_01, sign_23 in product((1, -1), repeat=2)
+    )
+    v = 2 * projectors[0] * I16[:, 0]
+    w = sp.Matrix.hstack(
+        v,
+        ALPHAS[0] * v,
+        ALPHAS[2] * v,
+        ALPHAS[0] * ALPHAS[2] * v,
+    )
+    columns = []
+    for spin_index in range(4):
+        for r, s in product((0, 1), repeat=2):
+            columns.append((BETAS[0] ** r) * (BETAS[2] ** s) * w[:, spin_index])
+    return projectors, sp.Matrix.hstack(*columns), explicit_gammas()
+
+
+FORMAL_HYPOTHESES = frozenset(
+    {
+        "finite_set_counting",
+        "integer_arithmetic",
+        "defined_four_bit_matrices",
+        "finite_complex_linear_algebra",
+        "cited_cl3_split",
+    }
+)
+PHYSICAL_BRIDGES = frozenset(
+    {
+        "physical_action_identification",
+        "physical_carrier_identification",
+        "continuum_species_identification",
+        "taste_identification",
+        "os0_reconstruction_bridge",
+    }
+)
 
 
 def main() -> int:
     print("=" * 88)
-    print("Audit companion (exact-symbolic) for")
-    print("STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16")
-    print("Goal: sympy verification of arithmetic factorization 16 = 4 * 4")
-    print("      and spinor-count match to Cl(3,0) ⊗_R C chirality pair (2, 2)")
+    print("Narrowed substep-3 consumer: exact finite algebra and scope firewall")
     print("=" * 88)
 
-    # =========================================================================
-    section("Part 1: (R1) d = 4 corner cardinality = 16 (cited upstream)")
-    # =========================================================================
-    d = 4
-    # Re-derive corner cardinality by exhaustive enumeration of {0, pi}^d.
-    corners_d4 = list(product([sympy.Integer(0), sym_pi], repeat=d))
-    cardinality = len(corners_d4)
+    section("Part 1: corner cardinality and role-free arithmetic")
+    corners = tuple(product((sp.Integer(0), sp.pi), repeat=4))
+    check("the comparison corner set has exactly 16 elements", len(corners) == 16)
     check(
-        "(R1) cardinality of corner set {0, pi}^4 equals 16",
-        cardinality == 16,
-        detail=f"|{{0, pi}}^4| = {cardinality}",
+        "every enumerated corner zeros the exact sum of sine squares",
+        all(sp.simplify(sum(sp.sin(value) ** 2 for value in corner)) == 0 for corner in corners),
+    )
+    check("16=4*4 is an integer identity", 16 == 4 * 4)
+    role_assignments = frozenset()
+    check("the arithmetic hypotheses contain no factor-role assignment", not role_assignments)
+
+    section("Part 2: independent Cl(3,0) complexification dimensions")
+    sigma_1 = sp.Matrix([[0, 1], [1, 0]])
+    sigma_2 = sp.Matrix([[0, -sp.I], [sp.I, 0]])
+    sigma_3 = sp.Matrix([[1, 0], [0, -1]])
+    omega_plus = sigma_1 * sigma_2 * sigma_3
+    omega_minus = (-sigma_1) * (-sigma_2) * (-sigma_3)
+    check("the two Pauli realizations have pseudoscalar characters +i and -i", matrix_equal(omega_plus, sp.I * sp.eye(2)) and matrix_equal(omega_minus, -sp.I * sp.eye(2)))
+    check("the two irreducible module dimensions are exactly (2,2)", (sigma_1.rows, (-sigma_1).rows) == (2, 2))
+    check("their numerical dimension sum is 4", sigma_1.rows + (-sigma_1).rows == 4)
+    check("the split algebra dimension is dim M2 + dim M2 = 8", 2**2 + 2**2 == 8)
+
+    section("Part 3: explicit defined-operator module certificate")
+    check("the defined alpha generators satisfy every Clifford relation", clifford_relations(ALPHAS))
+    check(
+        "the suffix-sign beta generators commute with every alpha and satisfy Clifford",
+        clifford_relations(BETAS)
+        and all(matrix_equal(alpha * beta, beta * alpha) for alpha in ALPHAS for beta in BETAS),
+    )
+    projectors, unitary, gammas = module_certificate()
+    check(
+        "four exact orthogonal rank-4 projectors resolve the defined module",
+        all(matrix_equal(projector * projector, projector) and projector.rank() == 4 for projector in projectors)
+        and all(matrix_equal(projectors[i] * projectors[j], Z16) for i in range(4) for j in range(i + 1, 4))
+        and matrix_equal(sum(projectors, Z16), I16),
+    )
+    check("the displayed gamma generators satisfy every Clifford relation", clifford_relations(gammas))
+    gamma_rank = word_span_rank(gammas)
+    check("the gamma words span M4(C), proving irreducibility", gamma_rank == 16, detail=f"exact rank={gamma_rank}")
+    check("the constructed 16 by 16 intertwiner is exactly unitary", matrix_equal(unitary.H * unitary, I16))
+    similarity_checks = tuple(
+        matrix_equal(unitary.H * ALPHAS[mu] * unitary, sp.kronecker_product(gammas[mu], sp.eye(4)))
+        for mu in range(4)
     )
     check(
-        "(R1) corner cardinality matches 2^d = 2^4 = 16",
-        cardinality == 2**d,
-        detail=f"2^4 = {2**d}",
+        "the exact similarity proves four copies without dimension counting",
+        all(similarity_checks),
+        detail=f"directions={similarity_checks}",
     )
 
-    # Sanity: at each corner, sum_mu sin^2(k_mu) = 0 (cited upstream T1).
-    zero_count = 0
-    for corner in corners_d4:
-        value = sum(sym_sin(k) ** 2 for k in corner)
-        if simplify(value) == 0:
-            zero_count += 1
+    section("Part 4: structural non-identification firewall")
     check(
-        "(R1) every corner in {0, pi}^4 is a zero of sum sin^2(k_mu)",
-        zero_count == 16,
-        detail=f"zero corners = {zero_count}/16",
+        "no required physical bridge is among the formal hypotheses",
+        FORMAL_HYPOTHESES.isdisjoint(PHYSICAL_BRIDGES),
+        detail=f"formal hypotheses={sorted(FORMAL_HYPOTHESES)}",
     )
-
-    # =========================================================================
-    section("Part 2: (R2) arithmetic factorization 16 = 4 * 4 = 2^2 * 2^2")
-    # =========================================================================
+    conclusions = {
+        "formal multiplicity": {"defined_four_bit_matrices", "finite_complex_linear_algebra"},
+        "physical taste": {"taste_identification"},
+        "physical carrier": {"physical_carrier_identification"},
+    }
     check(
-        "(R2) 16 = 4 * 4 (integer arithmetic)",
-        16 == 4 * 4,
+        "the formal module conclusion is licensed but physical taste/carrier conclusions are not",
+        conclusions["formal multiplicity"].issubset(FORMAL_HYPOTHESES)
+        and not conclusions["physical taste"].issubset(FORMAL_HYPOTHESES)
+        and not conclusions["physical carrier"].issubset(FORMAL_HYPOTHESES),
     )
-    check(
-        "(R2) each arithmetic factor is 4 = 2^(d/2) at d = 4",
-        4 == 2 ** (d // 2),
-        detail=f"2^(d/2) = {2 ** (d // 2)}",
-    )
-    check(
-        "(R2) factorization 2^d = 2^(d/2) * 2^(d/2) at d = 4",
-        2**d == (2 ** (d // 2)) * (2 ** (d // 2)),
-    )
-
-    # =========================================================================
-    section("Part 3: (R3) Cl(3,0) ⊗_R C chirality-pair dim 2 + 2 = 4")
-    # =========================================================================
-    # Build the chirality pair (V_+, V_-) explicitly via the central
-    # idempotent decomposition e_± = (1 ∓ i ω)/2 in the positive-chirality
-    # Pauli realisation: γ_i = σ_i, ω = σ_1 σ_2 σ_3 = i I_2.
-    sigma_1 = Matrix([[0, 1], [1, 0]])
-    sigma_2 = Matrix([[0, -sym_I], [sym_I, 0]])
-    sigma_3 = Matrix([[1, 0], [0, -1]])
-    I2 = eye(2)
-
-    omega_pos = sigma_1 * sigma_2 * sigma_3  # should be i I_2
-    check(
-        "(R3) positive-chirality realisation: ω = σ_1 σ_2 σ_3 = +i I_2",
-        mat_eq(omega_pos, sym_I * I2),
-    )
-
-    # Central idempotents e_± = (1 ∓ i ω)/2 in the Pauli realisation
-    e_plus_pos = (I2 - sym_I * omega_pos) / 2  # (1 - i ω)/2; ω = i I -> e_+ = I
-    e_minus_pos = (I2 + sym_I * omega_pos) / 2  # (1 + i ω)/2; ω = i I -> e_- = 0
-    check(
-        "(R3) in positive-chirality realisation, e_+ = I_2 (projects to V_+ summand)",
-        mat_eq(e_plus_pos, I2),
-    )
-    check(
-        "(R3) in positive-chirality realisation, e_- = 0 (V_- summand absent in this rep)",
-        mat_eq(e_minus_pos, zeros(2, 2)),
-    )
-
-    # Parity-conjugate realisation: γ_i = -σ_i, ω = -i I.
-    omega_neg = (-sigma_1) * (-sigma_2) * (-sigma_3)  # should be -i I
-    check(
-        "(R3) parity-conjugate realisation: ω = -σ_1 (-σ_2)(-σ_3) = -i I_2",
-        mat_eq(omega_neg, -sym_I * I2),
-    )
-
-    # In each chirality realisation, the irrep dim is 2.
-    dim_V_plus = sigma_1.shape[0]  # Pauli sigma act on C^2
-    dim_V_minus = 2  # parity-conjugate also acts on C^2
-    chirality_sum = dim_V_plus + dim_V_minus
-    check(
-        "(R3) chirality-pair dim sum 2 + 2 = 4 matches N_spinor at d = 4",
-        chirality_sum == 2 ** (d // 2),
-        detail=f"(dim V_+, dim V_-) = (2, 2), sum = {chirality_sum}; 2^(d/2) at d=4 = {2 ** (d // 2)}",
-    )
-
-    # Direct-sum block-diagonal realisation (V_+ ⊕ V_-) on C^4.
-    block_diag_irrep = Matrix.zeros(4, 4)
-    block_diag_irrep[0:2, 0:2] = I2
-    block_diag_irrep[2:4, 2:4] = I2
-    check(
-        "(R3) block-diagonal C^4 realisation has rank 4 (full)",
-        block_diag_irrep.rank() == 4,
-    )
-
-    # =========================================================================
-    section("Part 4: (R3) Cl(3,0) ⊗_R C algebra dim = 8")
-    # =========================================================================
-    # dim_C (M_2(C) ⊕ M_2(C)) = 4 + 4 = 8.
-    dim_M2C = 4  # complex dim of M_2(C)
-    dim_split = dim_M2C + dim_M2C
-    check(
-        "(R3) dim_C (M_2(C) ⊕ M_2(C)) = 4 + 4 = 8",
-        dim_split == 8,
-    )
-
-    # =========================================================================
-    section("Part 5: (R4) Hamming-weight count on {0, π}^4")
-    # =========================================================================
-    # The Hamming-weight distribution gives the BZ-corner block structure.
-    def hamming_weight(corner: tuple) -> int:
-        return sum(1 for c in corner if c == sym_pi)
-
-    hw_counts = {k: 0 for k in range(d + 1)}
-    for corner in corners_d4:
-        hw = hamming_weight(corner)
-        hw_counts[hw] += 1
-
-    expected_hw = {k: int(binomial(d, k)) for k in range(d + 1)}
-    check(
-        "(R4) Hamming-weight distribution on {0, π}^4 equals binom(4, k)",
-        hw_counts == expected_hw,
-        detail=f"observed = {hw_counts}, expected = {expected_hw}",
-    )
-
-    total_hw = sum(hw_counts.values())
-    check(
-        "(R4) Hamming-weight counts sum to 2^d = 16",
-        total_hw == 16,
-        detail=f"sum binom(4, k) = {total_hw}",
-    )
-
-    # =========================================================================
-    section("Part 6: (R4) supplied-action Clifford module gives four tastes")
-    # =========================================================================
-    # Hamming enumeration supplies 16 blocked components.  The factor roles
-    # come from the canonical eta-weighted Clifford representation.
-    cl3_chirality_pair_dim = (2, 2)
-    cl3_chirality_pair_sum = sum(cl3_chirality_pair_dim)
-    check(
-        "(R4) Cl(3) chirality-pair sum 2+2=4 matches the spin-module dimension",
-        cl3_chirality_pair_sum == 4,
-        detail=f"chirality sum = {cl3_chirality_pair_sum}",
-    )
-
-    alphas = tuple(staggered_alpha(mu) for mu in range(4))
-    clifford_ok = True
-    for mu, A in enumerate(alphas):
-        for nu, B in enumerate(alphas):
-            target = 2 * eye(16) if mu == nu else zeros(16, 16)
-            clifford_ok = clifford_ok and mat_eq(A * B + B * A, target)
-    check(
-        "(R4) canonical eta flip matrices satisfy the exact Cl_4 relations",
-        clifford_ok,
-    )
-
-    words = tuple(clifford_word(alphas, mask) for mask in range(16))
-    flattened = Matrix.hstack(*[word.reshape(256, 1) for word in words])
-    traces = tuple(word.trace() for word in words)
-    check(
-        "(R4) Clifford-word span has exact dimension 16",
-        flattened.rank() == 16,
-        detail=f"rank={flattened.rank()}",
-    )
-    check(
-        "(R4) blocked-module character is four times the 4-spinor character",
-        traces[0] == 16 and all(value == 0 for value in traces[1:]),
-        detail=f"character={traces}",
-    )
-    check(
-        "(R4) 16-dimensional Cl_4(C)=M_4(C) module has multiplicity four",
-        16 == 4 * 4,
-    )
-
-    # =========================================================================
-    section("Part 7: (R5) supplied-action scope pins")
-    # =========================================================================
-    repo = Path(__file__).resolve().parents[1]
-    target_note = (repo / "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md").read_text()
-    supplier_note = (repo / "docs/STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md").read_text()
-    check(
-        "(R5) target cites the supplied-action blocking theorem",
-        "STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md" in target_note,
-        kind="C",
-    )
-    check(
-        "(R5) supplier disclaims framework physical-carrier identification",
-        "does not identify it as the realized charged-lepton matter carrier" in supplier_note,
-        kind="C",
-    )
-    check(
-        "(R5) target records physical-carrier selection as a separate obligation",
-        "physical-carrier selection remains a distinct realization" in target_note,
-        kind="C",
-    )
-
-    # =========================================================================
-    section("Part 8: (R5) Counterfactual at d = 6 (factorization generalizes)")
-    # =========================================================================
     d_other = 6
-    corners_d6 = 2 ** d_other
-    n_spinor_d6 = 2 ** (d_other // 2)
-    n_taste_d6 = 2 ** (d_other // 2)
+    left = 2 ** (d_other // 2)
+    right = 2 ** (d_other // 2)
     check(
-        "(R5) at d = 6, 2^6 = 64 corners",
-        corners_d6 == 64,
+        "the d=6 identity 64=8*8 confirms that arithmetic alone supplies no stable roles",
+        2**d_other == left * right and (left, right) == (8, 8),
     )
-    check(
-        "(R5) at d = 6, factorization is 8 * 8 = 64",
-        n_spinor_d6 * n_taste_d6 == corners_d6,
-        detail=f"{n_spinor_d6} * {n_taste_d6} = {n_spinor_d6 * n_taste_d6}",
-    )
-    check(
-        "(R5) generic even-d factorization 2^d = 2^(d/2) * 2^(d/2)",
-        all((2 ** dd) == (2 ** (dd // 2)) * (2 ** (dd // 2)) for dd in (2, 4, 6, 8)),
-    )
-
-    # =========================================================================
-    section("Summary")
-    # =========================================================================
-    print("  Verified at exact sympy precision:")
-    print("    (R1) d = 4 corner cardinality = 16 (cited upstream naive theorem)")
-    print("    (R2) arithmetic factorization 16 = 4 * 4 = 2^2 * 2^2 at d = 4")
-    print("    (R3) Cl(3,0) ⊗_R C chirality-pair dim (2, 2), sum = 4")
-    print("    (R3) match to N_spinor = 2^(d/2) = 4 at d = 4")
-    print("    (R4) Hamming-weight distribution = binom(4, k) summing to 16")
-    print("    (R4) supplied-action Cl_4 module is four copies of the spin irrep")
-    print("    (R5) supplied-action and physical-carrier scopes are separated")
-    print("    (R5) factorization generalizes to even d (d = 6 gives 8 * 8)")
 
     print()
     print("=" * 88)

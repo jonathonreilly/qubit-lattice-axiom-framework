@@ -276,7 +276,7 @@ Direct dependents of `observable_principle_from_axiom_note` on
 | Direct dependents | 91 |
 | `effective_status = retained` among direct dependents | 0 |
 | `effective_status = retained_bounded` among direct dependents | 0 |
-| `effective_status = audited_clean` among direct dependents | 0 |
+| `audit_status = audited_clean` among direct dependents | 0 |
 | `effective_status = unaudited` among direct dependents | 81 |
 | `claim_type = meta` among direct dependents | 10 |
 

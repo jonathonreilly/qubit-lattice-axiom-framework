@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_p1_dependency_audit_verifier.py
-runner_sha256: 8d5270c47dcd20af53bb17ae6253a1d11d8f6929f489da32c7720158db1699d2
+runner_sha256: 87c52678e4e17566df32014aa2f394165797ef06e816ebfbc49705f5203c900b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 Record/P1 dependency audit re-derivation check
@@ -17,7 +17,7 @@ audit_note: docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md
 [PASS] source-path alias registry exists
 [PASS] live ledger still contains direct dependents of the historical parent  (current_observed=100)
 [PASS] all direct dependents have note_path entries  (paths=100, dependents=100)
-[PASS] live status observation completed without becoming snapshot authority  (current unaudited=87, meta=13, retained=0, retained_bounded=0, audited_clean=0)
+[PASS] live status observation completed without becoming snapshot authority  (current unaudited=87, meta=13, retained=0, retained_bounded=0, audit_status audited_clean=0)
 [PASS] observable_principle_from_axiom_note NOT in axiom-premise registry  (axiom_ids_sample=['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive'])
 [PASS] observable_principle_from_axiom_note NOT aliased to minimal_axioms  (premise_registry=False, source_path_aliases=False, ledger_row=False)
 [PASS] audit note declares no source-citation rewrites

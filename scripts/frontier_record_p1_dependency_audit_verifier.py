@@ -141,18 +141,21 @@ def main() -> int:
     # Status breakdown
     from collections import Counter
     es_counts = Counter(row.get("effective_status") for _, row in direct_dependents)
+    as_counts = Counter(row.get("audit_status") for _, row in direct_dependents)
     ct_counts = Counter(row.get("claim_type") for _, row in direct_dependents)
     unaudited_count = es_counts.get("unaudited", 0)
     meta_count = ct_counts.get("meta", 0)
     retained_count = es_counts.get("retained", 0)
     retained_bounded_count = es_counts.get("retained_bounded", 0)
-    audited_clean_count = es_counts.get("audited_clean", 0)
+    audited_clean_count = as_counts.get("audited_clean", 0)
 
     check("live status observation completed without becoming snapshot authority",
-          sum(es_counts.values()) == n_direct and sum(ct_counts.values()) == n_direct,
+          sum(es_counts.values()) == n_direct
+          and sum(as_counts.values()) == n_direct
+          and sum(ct_counts.values()) == n_direct,
           detail=(f"current unaudited={unaudited_count}, meta={meta_count}, "
                   f"retained={retained_count}, retained_bounded={retained_bounded_count}, "
-                  f"audited_clean={audited_clean_count}"))
+                  f"audit_status audited_clean={audited_clean_count}"))
 
     # ---- discipline: no aliasing, no axiom-premise insertion ----
     axiom_data = json.loads(AXIOM_NODES.read_text())

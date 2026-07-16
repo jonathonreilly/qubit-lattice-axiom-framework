@@ -55,8 +55,9 @@ If audit-retained, this row supplies a candidate upstream support for
 moving the U4-conditional sub-claims of several substep-1 narrow
 theorems (`staggered_dirac_substep1_u4_conditional_single_module`,
 `staggered_dirac_substep1_grassmann_forcing_bridge`,
-`staggered_dirac_substep1_jw_bridge`) from conditional to unconditional
-under the current Qubit axiom. It does not by itself close the parent
+`staggered_dirac_substep1_jw_bridge`) to the multiplicity-one condition
+under the current Qubit axiom (their U4-conditional clause is met by that
+named condition). It does not by itself close the parent
 `staggered_dirac_realization_gate_note_2026-05-03` (which has additional
 substeps beyond U4) or retag any downstream row.
 

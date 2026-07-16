@@ -135,7 +135,7 @@ observability.
 | route | what it would attempt | result | marker |
 |---|---|---|---|
 | Mutual-information route | Use full `I(S:F)` as the record criterion | Fails: the anti-witness has `I(S:1)=1` but Holevo pointer information `chi=0` | ATTEMPTED |
-| Pure single-site monitoring | Derive broadcast from `sum_k Z_S X_k` | Exists only at the CNOT time; off-time it gives `R_delta=0` | ATTEMPTED |
+| Pure single-site monitoring | Derive broadcast from `sum_k Z_S X_k` | Holds at and near the CNOT time; off-time it gives `R_delta=0` (time-sensitive) | ATTEMPTED |
 | Generic PND family | Let arbitrary PND couplings force broadcast | Fails: random `c0 Z_S X1 + c1 Z_S X2 + c2 Z_S X1X2` is overwhelmingly non-redundant | ATTEMPTED |
 | Leading-range present | Add leading single-site terms and hope locality rescues redundancy | Fails: the explicit mixed coupling has range-2 monitoring present but `R_delta=0` | ATTEMPTED |
 | PND-alone witness | Use joint PND monitoring as enough structure | Fails: `Z_S X1X2` commutes with `Z_S` but gives no disjoint single-site broadcast | ATTEMPTED |

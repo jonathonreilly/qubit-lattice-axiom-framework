@@ -194,9 +194,10 @@ exact numpy precision on the sweeps:
 4. the color-singlet projectors lie in the commutant of the base-SU(3)
    action (the gauge-from-invariance-commutant half, conditional on the
    antecedent);
-5. on the two-endpoint link carrier, both a fiber-SU(2) and a base-SU(3)
-   Gauss law realize the same `0 -> 1 -> 2` endpoint-invariance profile
-   (the crux: gauging is not forced);
+5. on their own link carriers, a fiber-SU(2) and a base-SU(3) Gauss law each
+   realize the tested `0 -> 1 -> 2` variant/invariant structure (the SU(3)
+   case verified at the matched endpoint; carriers not identified) --
+   the crux: gauging is not forced;
 6. the framework color-3 is `Sym^2(C^2)` (dimension `3`, not a single
    qubit), so the color residual is a specific matter-and-connection
    assignment;

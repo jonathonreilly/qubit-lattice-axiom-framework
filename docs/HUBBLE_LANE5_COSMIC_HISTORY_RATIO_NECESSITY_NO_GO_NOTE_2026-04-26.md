@@ -206,9 +206,9 @@ landed AND one route from `(C2)`-or-`(C3)`-class landed.
 The no-go is falsified if a candidate Lane 5 closure is exhibited that
 derives numerical `H_0` from the current framework baseline plus the
 scale-reference primitive, without any premise drawn from `{(C1), (C2),
-(C3)}`. The proof's case structure (§2-§4) shows this is impossible, so
-the falsifier is existential — exhibit a counterexample, and the no-go
-falls.
+(C3)}`. The reviewed case structure (§2-§4) covers the C1/C2/C3 routes; the
+falsifier is existential — exhibit a closure outside them (e.g. a direct or
+joint dimensionless relation), and the reviewed-route no-go falls.
 
 ## 7. How this advances Lane 5
 

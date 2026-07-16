@@ -168,7 +168,7 @@ check("G1.3 primitive unitary-induced S => UNIQUE stationary vector = uniform", 
 # GROUP 2 -- COLLAPSE STEP 1b: the uniform weight is NOT free -- a generic
 #            NON-unitary primitive column-stochastic kick relaxes to a
 #            NON-uniform stationary vector. So uniformity needs unitarity,
-#            i.e. it is Quantum-supplied, not a Record-supplied averaging weight.
+#            i.e. it comes from the assumed unitary map, not a Record-supplied averaging weight.
 # ======================================================================
 nonunif_seen = False
 for _ in range(200):

@@ -343,8 +343,9 @@ row, not all conceivable future principles. Any "irreducible" wording below is
 route-portfolio irreducibility, not a claim against future principles outside
 the exercised route classes.
 
-**N6 — Partial-closure path scan.** Remaining non-axiom paths: (1) open-premise
-admission of `GL(F)`/FS (a governance decision, not science produced here);
+**N6 — Partial-closure path scan.** Remaining non-axiom paths: (1) a future
+owner-approved premise registration of `GL(F)`/FS (a governance decision, not
+science produced here);
 (2) emergent-continuum migration (OS→Wightman + standard spin-statistics);
 (3) a future retained principle outside the loop-consistency class (none
 currently nominated). None is pre-judged.

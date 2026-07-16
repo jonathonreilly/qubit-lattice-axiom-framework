@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_color_depolarization_adm2_admission_collapse_2026_06_09.py
-runner_sha256: 6365034cbed9594e1968322b6b83d8a20b8f65872246e8ed7c3c71d166ed5990
+runner_sha256: 896cd29bad2c9aafea6304a6804928e94ac69ef6c7db5c4280c979cb934f884e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 PASS  G1.1 unitary U => S_ij=|U_ij|^2 is doubly stochastic (rows & cols sum 1)

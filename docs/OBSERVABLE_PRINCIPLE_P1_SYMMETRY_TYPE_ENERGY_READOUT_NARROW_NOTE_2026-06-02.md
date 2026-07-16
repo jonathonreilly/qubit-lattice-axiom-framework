@@ -542,7 +542,7 @@ reproven theorems; the class boundary is stated explicitly.
 | Route tested against the negative claim | Marker | Why it does not break this narrow no_go |
 |---|---|---|
 | Symmetry-type law (additive/multiplicative readouts) | THEOREM (not an open premise) | Reproven (runner T2/T3/T4); classifies *which ledger*, does not select the ledger for `W`. |
-| Energies-add via tensor structure (Pivot 1) | FACE ADD (one level up) | `Ĥ = −log(T̂²)`; `{(T̂²)^s}` one orbit; additive member is `log` (runner T5). |
+| Energies-add via tensor structure (Pivot 1) | FACE ADD (one level up) | `Ĥ = −log(T̂²)`; `{(T̂²)^s}` one orbit; additive generator is `log` (runner T5). |
 | Energies-add for interacting subsystems | RULED OUT | Spectrum does not add for `g ≠ 0` (runner T6); additivity is the independent-class = P1 hypothesis. |
 | "`W` is the free energy / energy-sector quantity" (Pivot 2) | FACE ADD = (II.b) = P1 | Free energy defined by log-det convention (runner T7); (II.b) `⇔` P1 (structural-reframing note). |
 | Intensive / Born energy density | FACE BLIND | Orbit-invariant; `−log((T̂²)^s)/(2s) = E` for all `s` (runner T8); singles nothing. |

@@ -127,7 +127,7 @@ def main() -> int:
     print("COLOR-BASE COVARIANCE SUPPORT: N_c = d in a supplied Z^d family")
     print("=" * 78)
     print("Construction: taste cube {0,1}^d; select 1 axis (weak su(2) fiber); base = d-1 residual axes;")
-    print("residual S_{d-1} symmetric block carries color su(N_c).")
+    print("residual S_{d-1} symmetric block carries the candidate color-carrier su(N_c) (not a forced physical-color selection).")
     print()
 
     rows = []

@@ -83,6 +83,30 @@ The subsequent evidence-taxonomy pass removed the remaining `Z_N` exactness
 overstatement and changed D2 to say that the numerical evaluation agrees with
 the exact algebraic factorization. Runner fix-only rereview passed.
 
-Refreshed final cache: `23 PASS / 0 FAIL`, SHA
-`67bd9ae2dd364f6a3b8b7574c5b4f5c8652da0729902ba81cd592724e647c2c5`,
-elapsed `80.56s`.
+The next adversarial pass separated the general finite-spatial-lattice theorem
+from the exact `1+1D` runner surface, made the invariant-orthogonal-complement
+argument explicit, and added B8 as an exact symbolic gate for
+`alpha=beta_Wilson/N` through orders `n=0..9`. Independent random
+`SU(2)`-through-`SU(5)` bounded-observable Grams factorized with maximum error
+`1.778e-15`; an independent two-spatial-direction `SU(3)` slice with genuine
+spatial plaquettes had zero plane-swap and exponential-factorization error at
+the printed precision.
+
+Fix-only review results on that refinement:
+
+- mathematics: `PASS`;
+- runner independence: `PASS`;
+- governance/import/scope: `FIX` — synchronize the pack/PR/cache, remove the
+  nonexistent `1+1D` spatial-plaquette label, attribute the all-order `SU(N)`
+  proof only to the source note, and keep the old gauge-half note contextual.
+
+Those governance fixes are applied. A fresh disposable compatibility pass
+completed with zero strict-lint errors; the target remained
+`bounded_theorem`, `unaudited`, dependency-free, critical, ready, and at 784
+transitive descendants. Every regenerated audit/status output was restored or
+deleted. Final governance fix-only rereview remains before the deep-block
+checkpoint is closed.
+
+Refreshed frozen cache: `24 PASS / 0 FAIL`, SHA
+`bd771dc30e0f5642a4755d623f11cfc36c74b574afc1c6670db2a2a1b6b80eb6`,
+elapsed `80.11s`.

@@ -1,18 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
-runner_sha256: 67bd9ae2dd364f6a3b8b7574c5b4f5c8652da0729902ba81cd592724e647c2c5
+runner_sha256: bd771dc30e0f5642a4755d623f11cfc36c74b574afc1c6670db2a2a1b6b80eb6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 80.56
+elapsed_sec: 80.11
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion for the Wilson-plaquette temporal-gauge RP bridge
 AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05
-Reprove: B_-=Theta B_+, plane norm-square factorization, integrated
+Check: B_-=Theta B_+, plane norm-square factorization, integrated
 three-factor RP Gram PSD for A_+^(2) observables
 (Z_N exhaustive finite-Haar, U(1) Bessel-certified,
- SU(N) representation-ring route,
+ SU(N) source proof with normalization/SU(3) gates,
  SU(2)/SU(3) deterministic or Monte Carlo cross-checks).
 ========================================================================================
 
@@ -32,7 +32,8 @@ Part B: reflection-plane norm-square (Schwarz) factorization
   [PASS] (B4) U(1) plane-kernel coeffs c_n=I_n(beta) have positive lower bounds  (min lower bound for n in [-8,8] = 8.281833e-07)
   [PASS] (B5) U(1) Bessel certificate has tiny positive tail intervals  (max positive tail bound for n in [-8,8] = 2.45e-97)
   [PASS] (B6) U(1) plane-kernel coeffs symmetric c_n = c_{-n}  (max|c_n - c_{-n}| = 0.00e+00)
-  [PASS] (B7) SU(N) Wilson exponential-series scalar weights are nonnegative for beta>=0  (weights=(beta/(2N))^n/n!, N=2..8, n=0..9)
+  [PASS] (B7) SU(N) Wilson exponential-series scalar weights are nonnegative for beta_Wilson>=0  (weights=(beta_Wilson/(2N))^n/n!, N=2..8, n=0..9)
+  [PASS] (B8) alpha=beta_Wilson/N character-series normalization is exact (sympy)  (orders n=0..9 after chi_F+chi_Fbar=2 Re chi_F)
 
 ----------------------------------------------------------------------------------------
 Part C: integrated three-factor RP Gram PSD for A_+^(2) observables
@@ -68,7 +69,7 @@ Part E: SU(2) numeric sample (Haar Monte Carlo)
   [PASS] (E1) SU(2) link-reflection Gram is PSD within MC error (min_eig > -MC noise)  (min_eig = +0.08134, herm/MC-noise = 0.0072)
      SU(2) eigenvalues: [0.08134 0.18961 0.21888 0.43915 0.56473 1.00004]
      (numeric sample only; exhaustive finite-Haar checks above are Z_N,
-      with U(1) and SU(N) plane positivity certified analytically)
+      with U(1) certified here and SU(N) certified in the source proof)
 
 ----------------------------------------------------------------------------------------
 Part F: SU(3) representation-ring certificate and kernel controls
@@ -83,10 +84,11 @@ Part F: SU(3) representation-ring certificate and kernel controls
 ----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
-  Reproved from primitives:
+  Checked from primitives:
    A  reflection symmetry  B_- = Theta B_+  and B_0 plane invariance
    B  plane Boltzmann weight = positive (norm-square) character kernel
-      (Z_N: DFT; U(1): Bessel series; SU(N): representation ring)
+      (Z_N: DFT; U(1): Bessel series; SU(N): source proof with
+       exact normalization and finite SU(3) representation-ring gates here)
    C  integrated three-factor reflected Gram PSD for A_+^(2) observables
       (Z_N exhaustive finite-Haar; U(1) quadrature; wrong-reflection control)
    D  manifest G = W diag(kappa) W^dag with kappa >= 0 (OS Gram = A^dag A)
@@ -95,7 +97,7 @@ Summary
   No literature theorem is used as a derivation input.
 
 ========================================================================================
-TOTAL: 23 PASS / 0 FAIL
+TOTAL: 24 PASS / 0 FAIL
 ========================================================================================
 
 ----- stderr -----

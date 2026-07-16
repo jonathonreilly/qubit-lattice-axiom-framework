@@ -27,9 +27,9 @@ Current block-02 implementation:
 
 Verification:
 
-- final cache: `23 PASS / 0 FAIL`, `81.06s`;
+- final cache: `23 PASS / 0 FAIL`, `80.56s`;
 - runner/cache SHA:
-  `a14afbd3eb1c55eb69e85ecfc66ae8259f9da7dae0973e1d32277bbfd3ce0058`;
+  `67bd9ae2dd364f6a3b8b7574c5b4f5c8652da0729902ba81cd592724e647c2c5`;
 - independent `SU(2)` through `SU(5)` real-Gram/Schur reconstruction, maximum
   error `8.882e-16`;
 - review-loop mathematics, runner independence, and governance/scope lanes:
@@ -37,6 +37,10 @@ Verification:
 - deep-block normalization clarification passed runner fix-only review: legacy
   diagnostic `beta` variables are effective plane `alpha`, while standard
   Wilson `alpha=beta_Wilson/N`;
+- deep-block evidence-taxonomy clarification passed runner fix-only review:
+  `Z_N` is exhaustive finite-Haar enumeration with floating transcendental
+  evaluation, while exact labels are reserved for analytic/symbolic/integer
+  identities;
 - sibling pin runners pass.
 - disposable audit compatibility pipeline completed;
 - strict audit lint: zero errors;

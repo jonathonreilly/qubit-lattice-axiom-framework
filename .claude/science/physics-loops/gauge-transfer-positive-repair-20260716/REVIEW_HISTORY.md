@@ -79,6 +79,10 @@ The post-PR adversarial pass found one remaining notation ambiguity: legacy
 docstring and source contract now state that mapping explicitly. Runner
 fix-only rereview passed.
 
+The subsequent evidence-taxonomy pass removed the remaining `Z_N` exactness
+overstatement and changed D2 to say that the numerical evaluation agrees with
+the exact algebraic factorization. Runner fix-only rereview passed.
+
 Refreshed final cache: `23 PASS / 0 FAIL`, SHA
-`a14afbd3eb1c55eb69e85ecfc66ae8259f9da7dae0973e1d32277bbfd3ce0058`,
-elapsed `81.06s`.
+`67bd9ae2dd364f6a3b8b7574c5b4f5c8652da0729902ba81cd592724e647c2c5`,
+elapsed `80.56s`.

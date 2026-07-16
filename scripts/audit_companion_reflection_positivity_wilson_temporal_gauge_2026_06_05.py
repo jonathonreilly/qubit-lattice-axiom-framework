@@ -39,7 +39,7 @@ fundamental SU(N) Wilson convention used by the source note,
 Checks (all reproved here; no literature theorem is a derivation input):
 
   Part A  B_- = Theta B_+ (reflection symmetry) and B_0 reflection-plane
-          invariance, exactly, on Z_N and U(1).
+          invariance, symbolically and by exhaustive finite Z_N checks.
   Part B  Reflection-plane norm-square factorization: the plane Boltzmann
           factor exp(B_0) is, per straddling link, a character sum with
           REAL NONNEGATIVE coefficients (Z_N: discrete Fourier; U(1):
@@ -51,7 +51,8 @@ Checks (all reproved here; no literature theorem is a derivation input):
   Part C  Integrated three-factor RP Gram is PSD for A_+^(2) observables:
           G_ij = (1/Z) sum_cfg exp(B) conj(F_i(theta cfg)) F_j(cfg) over
           a basis of plaquette / two-link observables on the positive
-          half.  The Z_N checks are exact finite Haar sums; the U(1)
+          half.  The Z_N checks exhaust the finite Haar space while evaluating
+          transcendental weights in floating point; the U(1)
           angular-grid check is numerical quadrature only, with the
           theorem-grade U(1) plane-kernel positivity supplied by the
           Bessel-series certificate in Part B.
@@ -165,8 +166,11 @@ def zn_rp_setup(N: int, beta: float, Ls: int = 2):
 
 
 def zn_rp_gram(N: int, beta: float, Ls: int = 2):
-    """Exact (finite Haar sum) Osterwalder-Schrader reflected Gram matrix
-    G_ij = < Theta(F_i) . F_j > with Theta(F)(U) = conj(F(theta U))."""
+    """Exhaustive finite-Haar Osterwalder-Schrader reflected Gram matrix.
+
+    The configuration sum is complete rather than sampled; exponentials and
+    roots of unity are evaluated in floating point.
+    """
     _, _, weight, basis, F, cfgs = zn_rp_setup(N, beta, Ls)
     Z = sum(weight(c0, c1) for c0 in cfgs for c1 in cfgs)
     M = len(basis)
@@ -423,7 +427,8 @@ def main() -> int:
     print("AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05")
     print("Reprove: B_-=Theta B_+, plane norm-square factorization, integrated")
     print("three-factor RP Gram PSD for A_+^(2) observables")
-    print("(Z_N exact, U(1) Bessel-certified, SU(N) representation-ring route,")
+    print("(Z_N exhaustive finite-Haar, U(1) Bessel-certified,")
+    print(" SU(N) representation-ring route,")
     print(" SU(2)/SU(3) deterministic or Monte Carlo cross-checks).")
     print("=" * 88)
 
@@ -566,7 +571,7 @@ def main() -> int:
     # -------------------------------------------------------------------
     section("Part C: integrated three-factor RP Gram PSD for A_+^(2) observables")
     # -------------------------------------------------------------------
-    # (C1) Z_N exact Gram PSD across N and beta.
+    # (C1) Z_N exhaustive finite-Haar Gram PSD across N and beta.
     all_psd_zn = True
     worst = 1.0
     for Ntest in [2, 3, 4, 5]:
@@ -657,7 +662,7 @@ def main() -> int:
                 for c1 in cfgs_d
             )
     check(
-        "(D2) G = W diag(kappa) W^dag exactly (manifest Osterwalder-Seiler Gram = A^dag A)",
+        "(D2) numerical evaluation agrees with the exact G = W diag(kappa) W^dag factorization",
         np.max(np.abs(Gd - Gfac)) < 1e-9,
         detail=f"||G - W diag(kappa) W^dag|| = {np.max(np.abs(Gd - Gfac)):.2e}",
     )
@@ -681,7 +686,7 @@ def main() -> int:
         detail=f"min_eig = {ev_su2.min():+.5f}, herm/MC-noise = {herr_su2:.4f}",
     )
     print(f"     SU(2) eigenvalues: {np.round(ev_su2, 5)}")
-    print("     (numeric sample only; finite exact statements above are Z_N,")
+    print("     (numeric sample only; exhaustive finite-Haar checks above are Z_N,")
     print("      with U(1) and SU(N) plane positivity certified analytically)")
 
     # -------------------------------------------------------------------
@@ -753,7 +758,7 @@ def main() -> int:
     print("   B  plane Boltzmann weight = positive (norm-square) character kernel")
     print("      (Z_N: DFT; U(1): Bessel series; SU(N): representation ring)")
     print("   C  integrated three-factor reflected Gram PSD for A_+^(2) observables")
-    print("      (Z_N exact finite-Haar; U(1) quadrature cross-check; wrong reflection control)")
+    print("      (Z_N exhaustive finite-Haar; U(1) quadrature; wrong-reflection control)")
     print("   D  manifest G = W diag(kappa) W^dag with kappa >= 0 (OS Gram = A^dag A)")
     print("   E  SU(2) numeric sample PSD (link-reflection structure carries over)")
     print("   F  SU(3) exact tensor multiplicities and deterministic kernel controls")

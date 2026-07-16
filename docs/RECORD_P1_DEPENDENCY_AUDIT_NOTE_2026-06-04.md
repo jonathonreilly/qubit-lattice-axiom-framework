@@ -341,11 +341,11 @@ python3 scripts/frontier_record_p1_dependency_audit_verifier.py
 The verifier is a review-hygiene check, not a physics proof. It
 verifies:
 
-1. The audited pre-existing direct-dependent count of
-   `observable_principle_from_axiom_note` matches the audit's claimed total
-   (91), and the live post-PR count including this meta report is 92.
-2. The report's per-category lists cover exactly the live 91 direct
-   dependents, with no missing, extra, or duplicated paths.
+1. The frozen category lists and classification arithmetic account for exactly
+   the 91 rows in the 2026-06-04 historical snapshot, with no duplicates.
+2. The current tracked sharded ledger is observed separately: the verifier
+   checks that live direct dependents still exist and have source-note paths,
+   without equating the evolving live set to the frozen snapshot.
 3. The report declares that no source-note rewrites were made.
 4. The classification table accounts for every direct dependent
    (REWRITE + SPLIT + LEAVE = 91).

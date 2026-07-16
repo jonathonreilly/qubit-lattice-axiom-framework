@@ -26,6 +26,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+AUDIT_SCRIPTS = ROOT / "docs" / "audit" / "scripts"
+if str(AUDIT_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(AUDIT_SCRIPTS))
+
+import ledger_io
+
 AXIOM_NODES = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 DECISION_HISTORY = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 AUDIT_NOTE = ROOT / "docs" / "RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md"
@@ -94,11 +100,21 @@ def main() -> int:
     check("MINIMAL_AXIOMS_2026-06-04.md exists on disk", MIN_AXIOMS.exists())
     check("OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md exists on disk",
           OBSERVABLE_PRINCIPLE.exists())
-    check("audit ledger exists", LEDGER.exists())
+    ledger_source_exists = ledger_io.sharded() or LEDGER.exists()
+    check(
+        "audit ledger source exists",
+        ledger_source_exists,
+        detail=f"sharded={ledger_io.sharded()}, legacy_cache={LEDGER.exists()}",
+    )
     check("axiom-premise registry exists", AXIOM_NODES.exists())
 
     # ---- ledger queries ----
-    rows = json.loads(LEDGER.read_text())["rows"]
+    if not ledger_source_exists:
+        print()
+        print(f"TOTAL: PASS={len(PASSES)} FAIL={len(FAILS)}")
+        return 1
+    ledger_payload = ledger_io.load_ledger()
+    rows = ledger_payload["rows"]
     live_direct_dependents = [
         (cid, row) for cid, row in rows.items()
         if OLD_PARENT_CID in (row.get("deps") or [])
@@ -163,7 +179,7 @@ def main() -> int:
           detail=f"axiom_ids_sample={sorted(axiom_ids)[:3]}")
 
     # Search whole ledger for an alias mapping old -> minimal_axioms
-    ledger_text = LEDGER.read_text()
+    ledger_text = json.dumps(ledger_payload, sort_keys=True)
     forbidden_alias = (
         '"observable_principle_from_axiom_note"' in ledger_text
         and '"minimal_axioms"' in ledger_text

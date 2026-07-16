@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_p1_dependency_audit_verifier.py
-runner_sha256: 9df0372ba6ecef242fc9b936443290d73b170010f432a8eb4fc72778b00f93f5
+runner_sha256: faa1b13808a9fb20be8ddb2937771466cfe5518d4bb4a6495beaa370a06953ae
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 Record/P1 dependency audit re-derivation check
@@ -12,7 +12,7 @@ audit_note: docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md
 [PASS] audit note exists
 [PASS] MINIMAL_AXIOMS_2026-06-04.md exists on disk
 [PASS] OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md exists on disk
-[PASS] audit ledger exists
+[PASS] audit ledger source exists  (sharded=True, legacy_cache=True)
 [PASS] axiom-premise registry exists
 [PASS] live ledger still contains direct dependents of the historical parent  (current_observed=100)
 [PASS] all direct dependents have note_path entries  (paths=100, dependents=100)

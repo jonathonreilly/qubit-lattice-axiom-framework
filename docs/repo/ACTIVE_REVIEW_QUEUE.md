@@ -50,23 +50,6 @@ Current science/open-lane follow-ups:
   Disposition: `fix on main`.
   Detail:
   [`CONFORMAL_CLASS_CAUSAL_SOURCE_PACKET_REVIEW_2026-07-09.md`](../work_history/repo/review_feedback/CONFORMAL_CLASS_CAUSAL_SOURCE_PACKET_REVIEW_2026-07-09.md)
-- `2026-07-10-wilson-plane-representation-ring-route`
-  Scope:
-  `AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
-  and its companion runner.
-  Finding: the `SU(N>=3)` boundary omits a direct representation-ring proof:
-  expanding `exp[(beta/2N)(chi_R + chi_Rbar)]` gives positive powers of
-  `R direct-sum Rbar`, and tensor-power decomposition has nonnegative integer
-  irrep multiplicities. Replace the group-dependent obstruction language and
-  add a runner gate for this analytic route.
-  Disposition: `fix on main`.
-- `2026-07-10-record-p1-dependency-audit-drift`
-  Scope: `RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md` and
-  `scripts/frontier_record_p1_dependency_audit_verifier.py`.
-  Finding: the live dependency graph no longer matches the frozen June 4
-  counts/classification; the runner now fails honestly, and PR #5115 refreshes
-  its previously stale-green cache without changing the content gate.
-  Disposition: `fix on main`.
 - `2026-07-10-acphilambda-retirement-rematch-drift`
   Scope: `ACPHILAMBDA_RETIREMENT_BASIS_REMATCH_AND_CLAIM_SURFACE_NOTE_2026-07-06.md`
   and `scripts/acphilambda_retirement_basis_rematch_claim_surface_2026_07_06.py`.
@@ -206,6 +189,20 @@ Record each new finding as one bullet:
   optional link to a longer packet in work history
 
 ## Queue History
+
+- `2026-07-10-wilson-plane-representation-ring-route`
+  Resolved on `main`: the repaired finite-volume `SU(N)` note proves
+  nonnegative Wilson character coefficients directly from tensor powers of
+  `F direct-sum Fbar`, and the companion adds exact normalization, `SU(3)`
+  fusion, positive-kernel, and wrong-sign gates. The direct runner reports
+  `25 PASS / 0 FAIL`, with a matching current cache SHA.
+
+- `2026-07-10-record-p1-dependency-audit-drift`
+  Resolved as a frozen-history contract: the 91-row June 4 classification is
+  no longer equated to the evolving live graph, and the verifier observes the
+  current tracked sharded ledger separately while preserving the no-rewrite,
+  no-alias, no-premise-insertion, and no-status-edit disciplines. The direct
+  runner passes on the clean current checkout and its cache is SHA-pinned.
 
 - `2026-07-16-uv-gauge-yukawa-direct-consumer-scope-drift`
   Repaired all seven unaudited direct consumers. The UV radius note now

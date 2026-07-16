@@ -27,6 +27,17 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-07-16-su3-wigner-downstream-status-prose-drift`
+  Scope:
+  `SU3_WIGNER_BLOCK4_STAGING_BLOCK5_ORIENTATION_DIAGNOSTICS_NARROW_THEOREM_NOTE_2026-05-10.md`
+  and `SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md`.
+  Finding: these pre-existing consumer notes literally describe the Block
+  1-3 dependency packet as retained and pin historical effective statuses,
+  while current claim strength is audit-pipeline-derived and Block 1 is
+  awaiting re-audit after its cubic-Casimir label/equivariance repair. The
+  consumer formulas do not pin the corrected H values or channel ordering,
+  so widening PR #5407 into consumer claim-note hash churn is not justified.
+  Disposition: `fix on main`.
 - `2026-07-10-pr5123-tick-admissibility-physical-realization-bridge`
   Scope:
   `TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md`

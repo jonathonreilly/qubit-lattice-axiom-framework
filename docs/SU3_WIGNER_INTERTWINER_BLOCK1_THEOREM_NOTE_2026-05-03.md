@@ -4,19 +4,16 @@
 
 **Claim type:** positive_theorem
 
-**Status:** unaudited positive-theorem candidate. The representation-theoretic
-decomposition and all-\(g\) equivariance statement are exact mathematical
-claims; the supplied matrices, diagonalization, and residual checks are finite
-`complex128` numerical witnesses.
+The representation-theoretic decomposition and all-\(g\) equivariance
+statement are exact mathematical claims. The supplied matrices,
+diagonalization, and residual checks are finite `complex128` numerical
+witnesses. Independent re-audit owns ratification.
 
 **Primary runner:**
 [`frontier_su3_wigner_intertwiner_engine.py`](../scripts/frontier_su3_wigner_intertwiner_engine.py)
 
 **Pinned output:**
 [`frontier_su3_wigner_intertwiner_engine.txt`](../logs/runner-cache/frontier_su3_wigner_intertwiner_engine.txt)
-
-**Block in campaign:** 1 of N; later cube/tensor-network blocks are out of
-scope here.
 
 ## 1. Exact statement
 
@@ -42,6 +39,10 @@ summands. Exchange of the two adjoint factors splits them as
 Sym²(8) = 1 ⊕ 8_s ⊕ 27,       dimensions 1 + 8 + 27 = 36,
 Λ²(8)   = 8_a ⊕ 10 ⊕ 10bar,   dimensions 8 + 10 + 10 = 28.
 ```
+
+The Littlewood–Richardson decomposition, canonical SU(3) Casimir formulas,
+and Casimir invariance are standard representation-theory inputs. No
+measured, fitted, observational, or lattice quantity enters this theorem.
 
 ## 2. Casimir convention and corrected channel labels
 
@@ -80,7 +81,8 @@ H = C2_total + α E + β C3_total,
 α = √2,        β = √3/7,
 ```
 
-the executable channel table is:
+where \(\alpha,\beta\) are auxiliary channel-separation coefficients with no
+physical content. The executable channel table is:
 
 | Channel | Dynkin label | Rank | Exchange | C2 | C3 | H |
 |---|---:|---:|---:|---:|---:|---:|
@@ -125,6 +127,11 @@ the two factors. Functional calculus therefore gives
 
 for every \(g\in SU(3)\), exactly.
 
+The factors \((I\pm C_3/9)/2\) are not standalone projectors on the full
+space: every zero-\(C_3\) sector would receive eigenvalue \(1/2\). They are
+used only after \(L_6(C_2)S_-\) restricts to the 20-dimensional decuplet
+pair, where the cubic spectrum is exactly \(\{-9,+9\}\).
+
 The runner also diagonalizes the finite `complex128` matrix \(H\), groups its
 eigenvectors by the six expected eigenvalues, and forms numerical projectors
 \(P=VV^\dagger\). Floating-point diagonalization supplies reproducible
@@ -155,7 +162,9 @@ The checks include:
 3. \(C_2(1,1)=3\) and \(C_3(1,1)=0\).
 4. Independent fundamental/antifundamental confirmation of the canonical
    cubic-Casimir sign.
-5. Hermiticity and pairwise commutation of \(C_2\), \(E\), and \(C_3\).
+5. Hermiticity and pairwise commutation of \(C_2\), \(E\), and \(C_3\),
+   together with agreement between the total \(C_3\) and an independently
+   expanded coproduct formula.
 6. Six separated \(H\) clusters with ranks `1,8,8,10,10,27`.
 7. Orthonormality of the returned numerical eigenbasis.
 8. For every channel projector: Hermiticity, idempotence, rank, and the
@@ -166,6 +175,14 @@ The checks include:
 11. Hostile controls:
     - the former swapped `10`/`10bar` labels miss the observed \(C_3\) values
       by 18;
+    - a global \(C_3\) sign flip disagrees at order one with the independent
+      coproduct expansion;
+    - the wrong antifundamental convention \(+t_a^*\) gives the fundamental
+      rather than conjugate cubic sign and violates the SU(3) Lie algebra
+      with residual 1;
+    - using \((I+C_3/9)/2\) on the full space gives rank 54 and idempotence
+      residual \(1/4\), while restricting first to \(C_2=6,E=-1\) gives the
+      rank-10 decuplet projector;
     - omitting \(C_3\) leaves only five clusters and one rank-20
       \(C_2=6,E=-1\) projector whose restricted \(C_3\) spectrum is
       \([-9,+9]\).
@@ -196,6 +213,7 @@ projectors:
 | `cubic_casimir(T, d)` | cubic Casimir for supplied generators |
 | `tensor_product_casimir(T)` | total \(C_2\) on \(8\otimes8\) |
 | `tensor_product_cubic_casimir(T, d)` | total \(C_3\) on \(8\otimes8\) |
+| `tensor_product_cubic_casimir_coproduct_expansion(T, d)` | independently expanded total \(C_3\) |
 | `exchange_operator(dim)` | tensor-factor exchange |
 | `cg_decomposition(C2, E, C3)` | numerical \(H\) eigenvalues/eigenbasis |
 | `spectral_channel_projectors(...)` | six eigensolver spectral projectors |
@@ -204,13 +222,15 @@ projectors:
 
 ## 6. Downstream boundary
 
-The [Block 2 note](SU3_WIGNER_INTERTWINER_BLOCK2_THEOREM_NOTE_2026-05-03.md)
-uses only the unordered conjugate pair `10 + 10bar` in its fusion-counting
-rank calculation, and its runner re-bundles its own primitives rather than
+The downstream
+`SU3_WIGNER_INTERTWINER_BLOCK2_THEOREM_NOTE_2026-05-03.md` uses only the
+unordered conjugate pair `10 + 10bar` in its fusion-counting rank
+calculation, and its runner re-bundles its own primitives rather than
 importing this runner. The label correction therefore changes no Block 2
 formula, rank, or API call. Block 3 and later cube/tensor-network blocks
-carry only dependency references and do not pin either corrected
-eigenvalue label. No downstream source changes are needed.
+carry only dependency references and do not pin either corrected eigenvalue
+label. The filename is deliberately backticked here because this is a
+downstream context pointer, not a load-bearing dependency of Block 1.
 
 ## 7. Scope and audit handoff
 
@@ -231,9 +251,7 @@ claim_id: su3_wigner_intertwiner_block1_theorem_note_2026-05-03
 note_path: docs/SU3_WIGNER_INTERTWINER_BLOCK1_THEOREM_NOTE_2026-05-03.md
 runner_path: scripts/frontier_su3_wigner_intertwiner_engine.py
 claim_type: positive_theorem
-intrinsic_status: unaudited
 deps: []
-audit_authority: independent audit lane only
 ```
 
 ## 8. Reproduction
@@ -242,5 +260,6 @@ audit_authority: independent audit lane only
 python3 scripts/frontier_su3_wigner_intertwiner_engine.py
 ```
 
-The SHA-pinned cache linked above is regenerated from the runner and must
-match its live stdout byte for byte after the cache header.
+The SHA-pinned cache linked above is regenerated from the runner. Its stdout
+payload must match live stdout after excluding the cache writer's delimiter
+newline.

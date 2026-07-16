@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_wigner_intertwiner_engine.py
-runner_sha256: cb1f049a06ee6fe767cabebbb3839350b9d032342bac5b8b6649282a05d42d99
+runner_sha256: d2505c3c72725bb9367b5dc0be131f6b62fc7bd92e258b2f22978c992b250f1a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
-SU(3) Wigner Intertwiner Engine — Block 1: (1,1) ⊗ (1,1) CG
+SU(3) Wigner Intertwiner Engine: (1,1) ⊗ (1,1) CG
 ==============================================================================
 
 --- Section A: Gell-Mann basis + structure constants ---
@@ -39,7 +39,8 @@ SU(3) Wigner Intertwiner Engine — Block 1: (1,1) ⊗ (1,1) CG
   max Hermiticity error:             1.332e-15
   exchange involution ||E²-I||_max:  0.000e+00
   max pairwise commutator error:      8.882e-15
-  PASS: C2, exchange, and C3 are numerically Hermitian commuting operators with E²=I.
+  cubic coproduct expansion error:    1.332e-15
+  PASS: C2, exchange, and C3 are numerically Hermitian commuting operators; C3 also matches its independent coproduct expansion.
 
 --- Section D: CG decomposition via simultaneous diagonalization ---
   Diagonalizing H = C_2_total + α E + β C_3_total
@@ -69,7 +70,10 @@ SU(3) Wigner Intertwiner Engine — Block 1: (1,1) ⊗ (1,1) CG
 --- Section G: hostile controls ---
   old swapped-label residuals: 10→C3=-9 gives 18.0; 10bar→C3=+9 gives 18.0
   C2+E-only decuplet projector: rank=20, C3 range=[-9.00000000,9.00000000], total clusters=5
-  PASS: hostile controls reject the old swapped labels and reject C2+E as a six-channel identifier.
+  flipped total-C3 residual against coproduct expansion: 5.19615242
+  wrong antifundamental +t*: C3=+1.11111111, residual from -10/9=2.22222222, Lie residual=1.00000000
+  standalone (I+C3/9)/2: rank=54, idempotence residual=0.25000000; after C2=6, E=-1 restriction: rank=10
+  PASS: hostile controls reject the old swapped labels, a global C3 sign flip, the wrong antifundamental conjugation, C2+E-only channel splitting, and standalone use of (I+C3/9)/2.
 
 --- Section H: deterministic SU(3) equivariance witnesses ---
   seed= 11: C2=1.34e-15 E=3.08e-33 C3=1.56e-15; 1=3.00e-16 8_a=1.06e-15 8_s=5.06e-16 10=5.99e-16 10bar=1.01e-15 27=7.72e-16
@@ -91,7 +95,7 @@ Headline:
   Correct cubic convention: 10=(3,0) has C3=+9 and H≈6.8127;
                             10bar=(0,3) has C3=-9 and H≈2.3589.
 
-Block 1 deliverable: six executable spectral projectors plus a
+Deliverable: six executable spectral projectors plus a
 floating-point orthonormal CG basis. Exact block invariance is supplied
 by the analytic commuting-operator identities, not by numerical precision.
 

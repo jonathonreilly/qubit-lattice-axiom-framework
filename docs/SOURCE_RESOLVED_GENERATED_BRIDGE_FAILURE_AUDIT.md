@@ -26,8 +26,8 @@ Why:
 
 - the discriminator says the bridge is geometry-limited, not field-rule-limited
 - the `z`-spread transfer variant does not widen support or rescue the wavefield
-- the sector-fan geometry repair slightly improves sign but loses support and
-  still does not recover the weak-field mass law
+- the additive sector-fan geometry repair worsens the sign count, loses
+  aggregate support, and does not recover the weak-field mass law
 - the radical downstream-reach fan moves support around, but it also fails to
   make the wavefield update matter on the generated family
 

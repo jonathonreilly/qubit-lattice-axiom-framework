@@ -1,0 +1,8 @@
+PASS Q contraction and massive inverse bounds are independent of finite volume: 6x4:||Q||=0.910882,||D^-1||=0.799328; 8x6:||Q||=0.911021,||D^-1||=0.799952; 10x8:||Q||=0.911032,||D^-1||=0.799998; universal r=0.911032
+PASS The lowest tested site-anchored Q power is exactly local and all tested powers obey the norm bound: remote-change residuals Q^1..Q^5=0.000e+00,0.000e+00,0.000e+00,1.434e-06,5.950e-06; all |tr_x Q^n|<=3r^n
+PASS More-remote endpoint samples reduce determinant-density and propagator response: density=1.006e-05,2.005e-04,2.270e-06,6.284e-07; inverse=2.583e-06,4.665e-05,8.058e-07,2.178e-07
+PASS Fixed-degree Wick minors obey the spatial-volume-uniform mass bound: ||D^-1||=0.799774, ||minor||=0.177063, |det minor|=7.618e-05, m^-q=4.096e-01
+PASS Dimension-four absolute and first-moment interaction majorants converge: sum n^4 r^n/n=1.443568e+06, sum n^5 r^n/n=1.229140e+08, last-50 fractions=6.851e-15,7.440e-14
+PASS The thermodynamic interaction is summable for every fixed strictly positive mass: m=0.01:r=0.999993750039, m=0.1:r=0.999375390381, m=1.0:r=0.941176470588, m=10.0:r=0.137931034483
+PASS Source-note boundary and N1-N8 contract: missing=[]; forbidden=[]; attempted routes=8; directional pairs=10
+SCORECARD PASS=7 FAIL=0

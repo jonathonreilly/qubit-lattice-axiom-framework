@@ -1,183 +1,206 @@
-# CPT Exact Preservation in the Cl(3) Staggered Framework
+# Exact antiunitary symmetry of the free staggered Hermitian lift
 
 **Claim type:** positive_theorem
-**Status authority:** independent audit lane only. Source retained scope
-(post-2026-05-19 narrowing): the Theta_H-odd Hamiltonian-sector identities that the primary runner
-verifies on the real anti-Hermitian D-level and on the Hermitian lift
-H = iD. The all-SME-coefficients corollary is demoted to bounded /
-admitted-bridge status pending a retained SME bilinear-operator-basis
-derivation (see audit-conditional repair block below).
-**Bridge:** [PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md](./PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md)
 
-## 2026-05-19 audit-conditional repair
+**Status authority:** independent audit lane only. This source note proposes
+the finite-lattice theorem below for independent re-audit; it does not
+set or predict an audit verdict.
 
-The 2026-05-18 audit verdict (`audited_conditional`, terminal) on
-`cpt_exact_note` recorded:
-
-> missing_bridge_theorem: add a retained SME bilinear-operator-basis-on-
-> staggered-substrate derivation proving canonical normalization and basis
-> completeness, OR narrow this note to the exact finite-lattice Theta_H/CP
-> identity without the all-SME-coefficients corollary.
-
-This repair takes the second branch. The retained statement of this note
-is now restricted to the Theta_H-odd Hamiltonian-sector identities that the
-primary runner verifies directly. The SME-coefficient identification step
--- the claim that "`a_mu`, `b_mu`, `d_{mu nu}`, `e_mu`, `f_mu`, `g_{mu nu rho}`
-all vanish identically" as canonical SME coefficients -- is an **admitted
-bridge** pending a separate retained derivation. What the runner actually
-computes are residuals `(np.trace(H^{odd}_mu) / N, ||H^{odd}_mu||_F)` of
-the CPT-odd part of the finite-lattice Hamiltonian. These are the
-**Theta_H-odd Hamiltonian-sector residuals**, and they vanish; this is
-the retained content. The identification of those residuals with the
-canonical SME coefficients `a_mu`, `b_mu`, ... requires a retained
-operator-basis bridge that this note no longer claims to supply.
-
-This narrowing is a demotion of the SME-corollary statement, not a
-promotion of new content. The runner output and `D`-level identities
-are unchanged.
-
-## Status
 **Primary runner:** `scripts/frontier_cpt_exact.py`
 
+## Scope
 
-Retained: the Theta_H-odd Hamiltonian-sector identities on even periodic
-lattices. All checks pass on `L = 4, 6, 8`
-(`PASS=53 FAIL=0`), and the runner now rejects odd `L`.
+This note treats the free one-component staggered hopping operator on the
+finite periodic lattice
 
-The original runner proves the `D`-level identities for the real
-anti-Hermitian staggered hopping operator. The physical Hermitian
-Hamiltonian claim is now carried by the bridge note above, which
-explicitly handles the antiunitary `i -> -i` step in `H = iD` and verifies
-the Theta_H-odd zero sector on the Hermitian lift. The SME-coefficient
-labeling of that zero sector is admitted, not retained, pending a
-canonical operator-basis derivation.
-
-## Theorem / Claim
-
-**Retained theorem (Theta_H-odd Hamiltonian-sector identities).**
-The staggered Cl(3) Hamiltonian on Z^3 with periodic boundary conditions
-and even side length `L` satisfies, at the finite-lattice operator level,
-the identities `C H C = -H`, `P H P = -H`, `T H T^{-1} = H`,
-`[CPT, H] = 0`, and `H^{odd} := (H - CPT*H*(CPT)^{-1})/2 = 0`. All
-direction-resolved Hamiltonian-sector residuals
-`trace(H^{odd}_mu)/N` and `||H^{odd}_mu||_F` vanish identically on
-the lattice sizes verified by the runner.
-
-**Admitted (not retained here):** the identification of these vanishing
-Hamiltonian-sector residuals with the canonical SME coefficients
-`a_mu, b_mu, d_{mu nu}, e_mu, f_mu, g_{mu nu rho}`. That identification
-requires a retained SME bilinear-operator-basis-on-staggered-substrate
-derivation proving canonical normalization and basis completeness, which
-this note does not supply.
-
-**Discrete symmetry pattern:**
-
-| Symmetry | Action on H | Status |
-|----------|-------------|--------|
-| C        | H -> -H     | NOT a symmetry of H (spectral flip) |
-| P        | H -> -H     | NOT a symmetry of H (spectral flip) |
-| T        | H -> H      | IS a symmetry (H is real) |
-| CP       | H -> H      | IS a symmetry |
-| CT       | H -> -H     | NOT a symmetry |
-| PT       | H -> -H     | NOT a symmetry |
-| CPT      | H -> H      | IS a symmetry (EXACT) |
-
-This pattern matches the Standard Model: C and P are individually
-violated, CP is preserved at tree level, and CPT is exactly preserved.
-
-## Assumptions
-
-1. Cl(3) staggered framework on Z^3 with periodic boundary conditions.
-2. Even lattice size L (required for parity to be well-defined).
-3. No additional interactions beyond the free staggered Hamiltonian.
-4. The physical-Hamiltonian statement uses the bridge theorem's Hermitian
-   lift `H = iD` and antiunitary representative `Theta_H = P K`.
-
-## What Is Actually Proved
-
-### Exact (theorem-grade):
-
-1. **C operator**: The sublattice parity epsilon(x) = (-1)^{x1+x2+x3}
-   is a real, diagonal, involutory operator satisfying C H C = -H exactly.
-
-2. **P operator**: Spatial inversion x -> -x mod L is a real, involutory
-   permutation satisfying P H P = -H exactly.
-
-3. **T operator**: Complex conjugation acts trivially on H because all
-   staggered phases and hoppings are real: T H T^{-1} = H* = H.
-
-4. **CPT combined**:
-   - CPT * H * (CPT)^{-1} = C * P * H * P * C = C * (-H) * C = -(-H) = H.
-   - [CPT, H] = 0 verified numerically to machine precision on L = 4, 6, 8.
-   - All residuals are exactly 0.00e+00 (not just small -- identically zero).
-
-5. **Theta_H-odd Hamiltonian-sector residuals** (narrowed 2026-05-19):
-   The CPT-odd part of the (Hermitian-lifted) Hamiltonian vanishes
-   identically as a finite-lattice operator residual:
-   - H^{odd} = (H - CPT*H*(CPT)^{-1})/2 = 0.
-   - The direction-resolved Hamiltonian-sector residuals
-     `trace(H^{odd}_mu)/N` vanish (denoted `a_mu` in the runner output;
-     this is a runner-internal label, **not** an identification with the
-     canonical SME `a_mu` coefficient -- see "Admitted" above and the
-     audit-conditional repair block).
-   - The Frobenius norm ||H^{odd}|| = 0 at every lattice size tested.
-
-   The promotion of these vanishing residuals to "all CPT-odd SME
-   coefficients vanish identically" is **admitted, not retained**,
-   pending a canonical bilinear-operator-basis bridge.
-
-6. **Taste-space verification**: CPT invariance verified at 7 BZ points
-   including all high-symmetry points and a generic point.
-
-7. **Cl(3) automorphism**: The combined CP operator maps each KS gamma
-   to minus itself (G_mu -> -G_mu), acting as the grading automorphism
-   of the Clifford algebra. (CP)^2 = I.
-
-## What Remains Open
-
-1. Extension to the interacting theory (gauge fields, Yukawa couplings).
-   The free-field CPT theorem proved here is necessary but not sufficient
-   for the full interacting framework.
-
-2. CP violation from CKM-type phases. The free staggered Hamiltonian has
-   exact CP, but physical CP violation requires complex phases in the
-   interaction sector. The framework must accommodate this without
-   breaking CPT.
-
-3. Connection to the CPT theorem in continuum QFT (Jost 1957, Streater-
-   Wightman). The lattice proof is self-contained but the relationship
-   to the axiomatic continuum proof should be clarified.
-
-## How This Changes The Paper
-
-This is a clean exact result on the Hamiltonian-sector identities that
-can appear in the paper's symmetry section. The retained statement is:
-
-> The staggered Cl(3) Hamiltonian on even periodic `Z^3` lattices is
-> exactly CPT-invariant at the finite-lattice operator level.
-> C and P individually map H -> -H, while T acts trivially on the real
-> Hamiltonian. The product CPT preserves H identically, and the
-> CPT-odd part `H^{odd}` vanishes identically as a finite-lattice
-> operator on all sizes tested.
-
-The further statement "all CPT-odd Standard-Model Extension coefficients
-vanish" is **admitted, not retained**, pending a canonical SME
-operator-basis bridge (see the 2026-05-19 audit-conditional repair block
-at the top of this note).
-
-This is a useful structural consistency check: any framework claiming
-to reproduce SM physics must have exact CPT. The Cl(3) staggered
-framework achieves this automatically from the reality of the staggered
-phases and the algebraic structure of C and P.
-
-The individual C and P violation (both send H -> -H) is also
-physically correct: it reflects the chiral nature of the staggered
-fermion, which is the lattice origin of parity violation.
-
-## Commands Run
-
+```text
+Lambda_L = (Z / L Z)^3,                 L positive and even,
+D_xy = (1/2) sum_mu eta_mu(x)
+       [delta_{y,x+e_mu} - delta_{y,x-e_mu}],
+eta_mu(x) = (-1)^{sum_{nu<mu} x_nu}.
 ```
+
+It distinguishes the real anti-Hermitian hopping operator `D` from its
+Hermitian lift
+
+```text
+H = i D.
+```
+
+Write `D=sum_mu D_mu` for the three direction-resolved terms in the displayed
+sum and `H_mu=iD_mu`. Below, `M^*` means entrywise complex conjugation, while
+`M^dagger` means the Hermitian adjoint.
+
+On the canonical site basis define the real unitaries
+
+```text
+C_xy = epsilon(x) delta_xy,             epsilon(x)=(-1)^{x_1+x_2+x_3},
+P|x> = |-x mod L>,
+```
+
+and let `K` denote componentwise complex conjugation. The symbols `C` and `P`
+mean only the displayed sublattice-sign and inversion matrices. For compact
+algebraic notation define the antiunitary
+
+```text
+T_H := C K,
+```
+
+not bare `K`, and define the corresponding composite
+
+```text
+Theta_H := C P T_H = P K,
+```
+
+where the last equality uses `[C,P]=0` and `C^2=I` on this even periodic
+lattice. The names `T_H` and `Theta_H` are labels for these declared matrix
+representatives; they do not by themselves identify physical time reversal or
+CPT.
+
+## Theorem
+
+For every even `L`:
+
+1. `D` is real and anti-Hermitian, and `H=iD` is Hermitian with `H^*=-H`.
+2. The unitary actions satisfy
+
+   ```text
+   C D C = -D,             P D P = -D,             C P D P C = D,
+   C H C = -H,             P H P = -H,             C P H P C = H.
+   ```
+
+3. Bare conjugation and the old three-factor lift are sign flips of the
+   Hermitian lift, not symmetries:
+
+   ```text
+   K H K^{-1} = -H,
+   C P K H (C P K)^{-1} = -H.
+   ```
+
+4. The declared antiunitary representatives preserve `H`:
+
+   ```text
+   T_H H T_H^{-1} = (C K) H (C K)^{-1} = H,
+   Theta_H H Theta_H^{-1} = (P K) H (P K)^{-1} = H,
+   Theta_H = C P T_H.
+   ```
+
+5. On states, `C`, `P`, `CP`, `K`, `T_H=CK`, `Theta_H=PK`, `CPK`,
+   `C T_H=K`, `P T_H=PCK`, and `CP T_H=PK` all square to `I`.
+6. Consequently the full and direction-resolved `Theta_H`-odd `H`-sector
+   matrices vanish:
+
+   ```text
+   H_odd       = (H       - Theta_H H       Theta_H^{-1}) / 2 = 0,
+   H_{mu,odd}  = (H_mu  - Theta_H H_mu Theta_H^{-1}) / 2 = 0.
+   ```
+
+The runner reconstructs these matrices and checks the identities entrywise on
+`L=4,6,8`. Those computations are finite-instance witnesses; the all-even-`L`
+statement follows from the algebra below.
+
+## Proof
+
+The entries of `D` are real. A hop in direction `mu` does not change any
+coordinate entering `eta_mu`, so exchanging the endpoints reverses only the
+forward-minus-backward sign. Thus `D^T=-D`, hence `D^dagger=-D`, and
+
+```text
+H^dagger = (iD)^dagger = -i D^dagger = iD = H,
+H^* = (iD)^* = -iD = -H.
+```
+
+Every nonzero matrix element of `D` joins opposite sublattices. Therefore
+`epsilon(x)epsilon(y)=-1` on every contributing link and `C D C=-D`.
+
+For inversion,
+
+```text
+(P D P)_{x y} = D_{-x,-y}.
+```
+
+Because `L` is even, `(-x_nu mod L)` has the same parity as `x_nu`, so
+`eta_mu(-x)=eta_mu(x)`. Reversing both endpoints interchanges the forward and
+backward Kronecker deltas, giving `D_{-x,-y}=-D_{x y}` and hence `P D P=-D`.
+The same argument holds separately for each direction `D_mu`.
+
+Also `epsilon(-x mod L)=epsilon(x)`, so `C` and `P` commute. Their two sign
+flips therefore give `CP D (CP)^{-1}=D`. Multiplication by the scalar `i`
+gives the stated unitary actions on `H`.
+
+The antiunitary signs must instead carry `K(i)=-i`. Since `H^*=-H`,
+
+```text
+K H K^{-1} = -H,
+(C P K) H (C P K)^{-1}
+  = C P H^* P C
+  = - C P H P C
+  = -H.
+```
+
+By contrast, either single spectral-flip unitary cancels the conjugation
+sign:
+
+```text
+(C K) H (C K)^{-1} = C H^* C = - C H C = H,
+(P K) H (P K)^{-1} = P H^* P = - P H P = H.
+```
+
+Finally, using `[C,P]=0` and `C^2=I`,
+
+```text
+C P T_H = C P C K = P K = Theta_H.
+```
+
+The matrices `C`, `P`, and `CP` are real involutions. For any one of their
+real unitary parts `U`, the antiunitary square is `(UK)^2=UU^*`; substituting
+the unitary parts in the theorem gives `+I` for every listed antiunitary.
+
+The `Theta_H`-odd projections vanish immediately, direction by direction as
+well as for their sum. This proves the theorem. ∎
+
+## Discrete-action table on `H=iD`
+
+| Operation | Action on `H` | Square on states | In-scope conclusion |
+|---|---:|---:|---|
+| `C` | `H -> -H` | `+I` | unitary spectral flip |
+| `P` | `H -> -H` | `+I` | unitary spectral flip |
+| bare `K` | `H -> -H` | `+I` | not the declared `T_H` |
+| `T_H=C K` | `H -> H` | `+I` | antiunitary symmetry |
+| `C P` | `H -> H` | `+I` | unitary symmetry |
+| `C T_H=K` | `H -> -H` | `+I` | antiunitary spectral flip |
+| `P T_H=P C K` | `H -> -H` | `+I` | antiunitary spectral flip |
+| `C P T_H=Theta_H=P K` | `H -> H` | `+I` | antiunitary symmetry |
+
+This table replaces the inconsistent table that treated the anti-Hermitian
+`D` as the Hermitian lift and consequently called bare `K` and `CPK`
+symmetries of `H=iD`.
+
+## Boundary
+
+The theorem does not identify the zero `Theta_H`-odd hopping sector with a
+complete canonically normalized Standard-Model Extension coefficient basis.
+It does not cover interactions, CKM phases, gauge or Yukawa couplings, or the
+continuum Wightman/Jost CPT theorem. It does not derive an axiom-level or
+physical Hamiltonian identification for `H=iD`, and it does not identify the
+declared `C`, `P`, `T_H`, or `Theta_H` matrices with physical charge
+conjugation, parity, time reversal, or CPT. In particular, no physical
+symmetry violation follows from the spectral flips.
+
+`PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md` and
+`CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md` are
+non-load-bearing consistency cross-checks for the same `i -> -i` algebra; the
+proof above is self-contained.
+
+## Verification
+
+```bash
 python3 scripts/frontier_cpt_exact.py
-# Exit code: 0
-# PASS=53  FAIL=0   (for L = 4, 6, 8; odd L rejected by design)
 ```
+
+The runner rejects odd `L`, reconstructs `D` and `H=iD` independently for
+`L=4,6,8`, and reports exact entrywise identities together with the explicit
+counterchecks `K:H->-H`, `CPK:H->-H`, and the state-space squares of every
+listed representative. The all-even proof includes the degenerate `L=2` case,
+where the forward and backward hops coincide and `D=0`; the nonzero executable
+witnesses begin at `L=4`.

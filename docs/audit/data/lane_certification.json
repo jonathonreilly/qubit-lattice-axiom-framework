@@ -2161,7 +2161,7 @@
         },
         {
           "claim_id": "record_clock_rate_normalization_gate_2026-06-06",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "record_formation_append_consistency_sweep_2026-07-04",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "6f7cc202c9841cbd8ee23a100daaf653f74142a7",
+  "repo_head": "84fcf1a02288449373bf6aca4a3ddce06ad9aaea",
   "schema": "lane_certification_v2"
 }

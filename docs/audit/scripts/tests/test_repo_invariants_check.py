@@ -119,6 +119,11 @@ class AuthorityLinksTrackedSetTest(unittest.TestCase):
         (root / "docs" / "TRACKED.md").write_text("x")
         (root / "docs" / "PRESENT_UNTRACKED.md").write_text("x")
         (root / "docs" / "repo" / "KEEP.md").write_text("x")
+        subprocess.run(
+            ["git", "-C", str(root), "add",
+             "README.md", "docs/TRACKED.md", "docs/repo/KEEP.md"],
+            check=True,
+        )
 
     def _restore(self):
         ric.REPO_ROOT = self._old_root
@@ -646,6 +651,59 @@ class RoundSixProbes(unittest.TestCase):
             code, out = self._check(root, False)
             self.assertEqual(code, 1)
             self.assertIn("premises", out)
+
+
+
+
+class RoundSevenProbes(unittest.TestCase):
+    def test_tracked_symlink_target_is_a_violation_end_to_end(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(os.path.realpath(tmp))
+            subprocess.run(["git", "init", "-q", str(root)], check=True)
+            for rel, payload in ((ric.PREMISE_NODES, {"nodes": {}}),
+                                 (ric.OBLIGATIONS, {"nodes": {}})):
+                p = root / rel
+                p.parent.mkdir(parents=True, exist_ok=True)
+                p.write_text(json.dumps(payload))
+            (root / "README.md").write_text("[t](docs/TARGET.md)")
+            (root / "docs").mkdir(exist_ok=True)
+            (root / "docs" / "TARGET.md").symlink_to("/nonexistent/outside.md")
+            subprocess.run(["git", "-C", str(root), "add", "-A"], check=True)
+            old = ric.REPO_ROOT
+            ric.REPO_ROOT = str(root)
+            try:
+                links = ric.collect_authority_links(
+                    ["README.md", "docs/TARGET.md",
+                     ric.PREMISE_NODES, ric.OBLIGATIONS])
+                self.assertEqual(
+                    [(v["target"], v["reason"]) for v in links["violations"]],
+                    [("docs/TARGET.md", "irregular-target")],
+                )
+                for enforce in (False, True):
+                    out = io.StringIO()
+                    with redirect_stdout(out):
+                        code = ric.run_check(enforce)
+                    if enforce:
+                        self.assertEqual(code, 1)
+                        self.assertIn("irregular-target", out.getvalue())
+            finally:
+                ric.REPO_ROOT = old
+
+    def test_regular_tracked_target_still_clean(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(os.path.realpath(tmp))
+            subprocess.run(["git", "init", "-q", str(root)], check=True)
+            (root / "README.md").write_text("[t](docs/TARGET.md)")
+            (root / "docs").mkdir()
+            (root / "docs" / "TARGET.md").write_text("x")
+            subprocess.run(["git", "-C", str(root), "add", "-A"], check=True)
+            old = ric.REPO_ROOT
+            ric.REPO_ROOT = str(root)
+            try:
+                links = ric.collect_authority_links(["README.md", "docs/TARGET.md"])
+                self.assertEqual(links["violations"], [])
+            finally:
+                ric.REPO_ROOT = old
 
 
 if __name__ == "__main__":

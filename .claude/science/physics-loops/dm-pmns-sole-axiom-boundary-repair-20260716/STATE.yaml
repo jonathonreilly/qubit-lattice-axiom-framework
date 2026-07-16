@@ -55,8 +55,11 @@ trace_class: direct_blocker_closure
 reachability_to_target: closes
 review_disposition: demote
 review_note: "No formal review-loop or self-review was run because the user explicitly prohibited reviewing this PR. The local science disposition is the required support-only demotion."
-pr_status: pending
-block_status: verification_passed_pr_pending
+pr_status: open_ready
+pr_number: 5429
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5429"
+implementation_commit: e991776cd33937a10b78612cce0041d116da54b3
+block_status: ready_pr_open
 verification:
   - "target runner: PASS=24 FAIL=0, exit 0"
   - "intentional failure probe: PASS=24 FAIL=1, exit 1"
@@ -65,5 +68,5 @@ verification:
   - "git diff --check: passed"
   - "required loop-pack files: complete; STATE.yaml parses"
   - "open PR #5427 path overlap: none"
-next_exact_action: "Commit the bounded repair, push the branch, open and verify one ready PR, record its URL and commit in this loop pack, then stop without reviewing or merging."
+next_exact_action: "Stop this author lane. External review may assess PR #5429; do not self-review or merge it."
 stop_condition: "Ready PR opened and verified; do not review or merge it."

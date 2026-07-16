@@ -43,5 +43,10 @@ Focused verification passed:
 - loop-pack completeness and YAML parse;
 - current open-PR #5427 protected-path overlap: none.
 
-Next exact action: commit, push, open and verify one ready PR, and update this
-handoff with the PR URL and commit. Do not review or merge the PR.
+Ready PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5429
+
+Implementation commit:
+`e991776cd33937a10b78612cce0041d116da54b3`
+
+The author lane stops here. External review may assess PR #5429; do not
+self-review or merge it.

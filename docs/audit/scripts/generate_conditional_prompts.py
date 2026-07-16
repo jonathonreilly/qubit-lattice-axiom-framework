@@ -28,6 +28,7 @@ Usage:
 from __future__ import annotations
 
 import json
+import posixpath
 import re
 from pathlib import Path
 
@@ -37,6 +38,15 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 LOG = REPO_ROOT / "docs" / "audit" / "data" / "repair_class_backfill_log.json"
 PROMPTS = REPO_ROOT / "docs" / "audit" / "MISSING_DERIVATION_PROMPTS.md"
+
+
+def heal_legacy_link_prefixes(text: str) -> str:
+    """Rewrite historical repo-root-relative note links to correct
+    docs/audit-relative form. Any link target beginning "docs/" is wrong in
+    this file (it resolves to docs/audit/docs/...); the correct prefix from
+    docs/audit/ is "../". Idempotent."""
+    return text.replace("](docs/", "](../")
+
 SOURCE_PATH_ALIASES = REPO_ROOT / "docs" / "audit" / "data" / "source_path_aliases.json"
 
 CONDITIONAL_SECTIONS = [
@@ -124,7 +134,7 @@ def render_prompt(cid: str, row: dict) -> str:
     block.append(f"### `{cid}`")
     block.append("")
     block.append(
-        f"**Note:** [{note_path}]({note_path})  |  **Descendants:** {descendants}  |  **Class:** {cls}"
+        f"**Note:** [{note_path}]({posixpath.relpath(note_path, 'docs/audit')})  |  **Descendants:** {descendants}  |  **Class:** {cls}"
     )
     block.append("")
     block.append("```")
@@ -197,9 +207,10 @@ def main() -> int:
         section_texts.append(render_section(header, description, by_class[header]))
     new_blob = "\n".join(section_texts).rstrip() + "\n"
 
-    prompts_text = PROMPTS.read_text()
+    prompts_text = heal_legacy_link_prefixes(PROMPTS.read_text())
     updated = replace_or_append_sections(prompts_text, new_blob)
     updated = apply_source_path_aliases(updated, load_source_path_aliases())
+    updated = heal_legacy_link_prefixes(updated)
     PROMPTS.write_text(updated)
 
     print("generate_conditional_prompts: wrote", PROMPTS)

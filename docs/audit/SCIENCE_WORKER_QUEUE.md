@@ -113,5 +113,6 @@ The first pass demonstrated that **honest downgrade is the highest-yield move** 
   (preserved as context; kept for re-audit if any of the closed lanes needs re-promotion)
 - Audit lane policy: [README.md](README.md), [FRESH_LOOK_REQUIREMENTS.md](FRESH_LOOK_REQUIREMENTS.md), [ALGEBRAIC_DECORATION_POLICY.md](ALGEBRAIC_DECORATION_POLICY.md)
 - Mechanical pipeline: `scripts/run_pipeline.sh`
-- Current rendered ledger: [AUDIT_LEDGER.md](AUDIT_LEDGER.md)
+- Ledger source of truth: [data/ledger/](data/ledger/) (the rendered `AUDIT_LEDGER.md`
+  is a local cache; rebuild with `python3 scripts/ledger_io.py --materialize`)
 - Pending audit queue (mechanical): [AUDIT_QUEUE.md](AUDIT_QUEUE.md)

@@ -23,7 +23,7 @@ The repo is migrating to the audit-lane vocabulary:
 
 - source notes may self-declare `proposed_retained` or `proposed_promoted`;
 - `retained` and `promoted` are audit-ratified `effective_status` values only;
-- until a row is ratified in [AUDIT_LEDGER.md](../../audit/AUDIT_LEDGER.md),
+- until a row is ratified in the [sharded audit ledger](../../audit/data/ledger/),
   legacy table labels such as `retained`, `retained companion`, or
   `promoted quantitative` should be read as proposed manuscript placement.
 

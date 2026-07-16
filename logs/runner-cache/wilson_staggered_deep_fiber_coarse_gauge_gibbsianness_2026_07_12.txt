@@ -1,0 +1,13 @@
+PASS deep_wedge_m8: alpha=0.374392146315
+PASS deep_wedge_m10: alpha=0.430718886728
+PASS deep_wedge_m12: alpha=0.392128570889
+PASS fine_exponential_moment_m8: r*exp(4lambda_F)=0.447213595500, partial_tail=6.760193e+02
+PASS fine_exponential_moment_m10: r*exp(4lambda_F)=0.371390676354, partial_tail=3.665375e+02
+PASS uniform_nonnull_normalization: range=[0.409692884,1.836116119], exp(+-C)=[0.223130160,4.481689070]
+PASS quasilocal_tail_combination: lambda_c=min(lambda_F,lambda_H)=0.090000
+PASS finite_z3_image_positive: min_weight=2.468893490e+02, min_conditional=0.333285163
+PASS finite_z3_remote_sensitivity: TV_remote=3.257922033e-06, TV_near=7.365280504e-05
+PASS source_contract: missing=[]
+PASS absolute_energy_difference_contract: forbidden_oscillation_only_step_present=False
+PASS sole_markdown_dependency: direct-dependency markdown-link count=2; external mathematics is bibliographic text
+SCORECARD PASS=12 FAIL=0

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
-runner_sha256: bd771dc30e0f5642a4755d623f11cfc36c74b574afc1c6670db2a2a1b6b80eb6
+runner_sha256: cf2dec4915afc1da9faa22fd3a7cb2086872174376b2fe0c54ef1514cc32c9cb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 80.11
+elapsed_sec: 80.98
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -15,6 +15,11 @@ three-factor RP Gram PSD for A_+^(2) observables
  SU(N) source proof with normalization/SU(3) gates,
  SU(2)/SU(3) deterministic or Monte Carlo cross-checks).
 ========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: exact-gate prerequisites
+----------------------------------------------------------------------------------------
+  [PASS] (P0) sympy is available for the exact symbolic reflection and normalization gates  (explicit prerequisite; missing sympy also fails the Part A fallback)
 
 ----------------------------------------------------------------------------------------
 Part A: reflection symmetry  B_- = Theta B_+  and B_0 plane invariance
@@ -97,7 +102,7 @@ Summary
   No literature theorem is used as a derivation input.
 
 ========================================================================================
-TOTAL: 24 PASS / 0 FAIL
+TOTAL: 25 PASS / 0 FAIL
 ========================================================================================
 
 ----- stderr -----

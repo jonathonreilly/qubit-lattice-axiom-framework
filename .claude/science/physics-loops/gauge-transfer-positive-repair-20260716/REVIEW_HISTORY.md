@@ -120,3 +120,15 @@ output remains in the worktree.
 Final runner/cache wording-only rereview: `PASS`; fresh normalized stdout is
 identical to the pinned transcript, stderr is empty, and no false exact or
 numerical attribution remains.
+
+A final reproducibility attack found that B8 availability had no dedicated
+prerequisite line. The runner now makes exact-gate `sympy` availability
+explicit; the pre-existing Part-A fallback already failed nonzero when
+`sympy` was missing. Refreshed cache:
+`25 PASS / 0 FAIL`, SHA
+`cf2dec4915afc1da9faa22fd3a7cb2086872174376b2fe0c54ef1514cc32c9cb`,
+elapsed `80.98s`. Narrow runner and governance rereviews both passed. The
+disposable compatibility pipeline and strict lint were rerun; the target
+again remained `bounded_theorem`, `unaudited`, dependency-free, critical,
+ready, and at 784 descendants. Every regenerated authority/status output was
+restored or deleted.

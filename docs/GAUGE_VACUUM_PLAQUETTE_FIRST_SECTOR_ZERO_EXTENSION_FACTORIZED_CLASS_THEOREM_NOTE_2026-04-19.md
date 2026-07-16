@@ -1,21 +1,27 @@
-# Gauge-Vacuum Plaquette First-Sector Zero-Extension Factorized-Class Theorem
+# Gauge-Vacuum Plaquette First-Sector Supplied Zero-Extension Packet
 
-**Date:** 2026-04-19
-**Status:** exact constructive existence theorem on the plaquette/Wilson first-sector reopening; the proposed_retained first-sector environment packet already admits one explicit full extension inside the canonical Wilson factorized class
+**Date:** 2026-04-19; supplied-input repair 2026-07-16
+**Claim type:** bounded_theorem
+**Claim scope:** minimal-support zero extension of one supplied finite
+first-sector coefficient vector inside an explicitly declared diagonal model
+class. This note does not identify that vector with a physical Wilson
+environment or stripped two-slice residual.
+**Status authority:** independent audit lane only. This note does not set or
+predict an audit verdict or effective status.
 **Script:** `scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py`
 
 ## Question
 
-Once the retained first-sector packet is known, is existence of a realization
-inside the canonical Wilson factorized class still open?
+Does the supplied first-sector packet admit a finite minimal-support zero
+extension inside the declared diagonal model class?
 
 ## Answer
 
-No.
+Yes.
 
-Take the retained normalized packet
+Take the supplied normalized packet
 
-`rho_ret = (1, 0.267139565315, 0.267139565315, 0)`
+`rho_packet = (1, 0.267139565315, 0.267139565315, 0)`
 
 on the first-symmetric weights
 
@@ -23,13 +29,13 @@ on the first-symmetric weights
 
 Extend it by zero to all higher weights on the dominant-weight box:
 
-- keep the retained entries above,
+- keep the supplied entries above,
 - set `rho_(p,q) = 0` for every other weight.
 
 This yields one explicit full nonnegative conjugation-symmetric coefficient
 sequence `rho_ext`.
 
-Then the factorized Wilson-gauge operator
+Supply the finite local diagonal packet `D_6^loc` and define
 
 `T_ext = exp(3 J) D_6^loc diag(rho_ext) exp(3 J)`
 
@@ -39,16 +45,18 @@ is explicitly:
 - conjugation-symmetric,
 - positive semidefinite on the truncated dominant-weight box.
 
-And on the retained first-symmetric sector it still reconstructs the completed
-three-sample triple exactly.
+On the first-symmetric sector it reconstructs the supplied three-sample data;
+the stored decimal residual is a floating-point witness.
 
-So existence of a factorized-class extension consistent with the retained
-first-sector packet is no longer open either.
+This is a bounded existence statement inside a supplied diagonal model class.
+It does not show that the actual Wilson compression is diagonal or that
+`rho_ext` is its coefficient sequence.
 
-What remains open is more specific:
+What remains open is the physical problem:
 
-> the actual framework-point Wilson environment packet, not just existence of
-> some packet in the factorized class.
+> identify the algebraically stripped two-slice Wilson residual, prove its
+> central-convolution/character-diagonal structure or compute its full
+> character matrix, and then evaluate the required framework-point data.
 
 ## Commands run
 
@@ -60,9 +68,8 @@ Expected summary:
 
 - `PASS=6 FAIL=0`
 
-## Audit dependency repair links
+## Inputs
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md)
-- [gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md)
+- [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md)
+- [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
+- [GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md)

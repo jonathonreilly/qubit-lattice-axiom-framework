@@ -593,8 +593,8 @@
   "z2_hw1_mass_matrix_parametrization_note",
   "z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02"
  ],
- "description": "Tracked eligibility manifest for the shadow publication lane (dispatch-retarget design note 2026-07-16). The admitted set is the exact union of the resolved publication gap and the primary cycle-break targets computed at frozen_commit. New candidates enter via 'pending' entries ({claim_id, first_report_date}) named in the nightly shadow report, and move to 'admitted' only by a review-landed edit after at least one report with no reviewer/owner objection. This file governs shadow REPORTING eligibility only; no dispatch decision reads it while cutover flags are off.",
- "frozen_commit": "fdefe03f523f2ffaf3816de75e63f5dda5482661",
+ "description": "Tracked eligibility manifest for the shadow publication lane (dispatch-retarget design note 2026-07-16). The admitted set is the exact union of the resolved publication gap and the primary cycle-break targets computed by the same pipeline pass recorded at frozen_commit. New candidates enter via 'pending' entries ({claim_id, first_report_date}) named in the nightly shadow report, and move to 'admitted' only by a review-landed edit after at least one report with no reviewer/owner objection. This file governs shadow REPORTING eligibility only; no dispatch decision reads it while cutover flags are off.",
+ "frozen_commit": "fda3461a0063d6eedef3e5bb4468ac8c98e27c10",
  "pending": [],
  "schema_version": 1
 }

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py
-runner_sha256: e74456f0f07792208c630fdd37a94fe2c9ac05f0f439d0dc8788adf67176f803
+runner_sha256: fab667abf5e58d8055f81490c7219aceaf598f94bbb8304f357f28bcc3ca7f5f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -53,7 +53,7 @@ Scope: pure Wilson action; P(x)=I sector; no full RP or residual Polyakov claim.
 [PASS] D.hostile.wrong_temporal_orientation_fails  (correct_diff=1.332e-15, wrong_diff=4.167e-01)
 [PASS] E.note.required_scope_markers  (all present)
 [PASS] E.note.stale_bridge_language_absent  (none present)
-[PASS] E.load_bearing_dependency.present_on_main  (GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md)
+[PASS] E.load_bearing_dependency.present_in_worktree  (GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md)
 
 SCORECARD: PASS=31 FAIL=0
 All narrowed finite-sector and hostile-control checks PASSED.

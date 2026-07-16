@@ -35,12 +35,14 @@ That same authority records the directional consequence:
 
 and hence `a_x = a_y = a_z = a_t = 3w`.
 
-The class split is real and must be tracked. The repaired OS companion
-enumerates, at each site, the three spatial pairs `1 <= i < j <= 3`
-and the three temporal pairs `(0,i)`, `i=1,2,3`. Its finite carrier has
-`6 L_t L_s^3` plaquettes, reducing to `6L^4` on the isotropic
-`Lambda=(Z/L)^4` surface, in
-[GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md](GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md).
+The class split is real and must be tracked. For even `L_t≥4`, the repaired OS
+companion enumerates, at each site, the three spatial pairs
+`1 <= i < j <= 3` and the three temporal pairs `(0,i)`, `i=1,2,3`; its
+finite carrier therefore has `6 L_t L_s^3` plaquettes. This note independently
+uses the same six direction pairs to enumerate `6L^4` plaquettes for every
+`L≥2`, including its `L=2` runner, rather than importing that extension from
+the non-load-bearing context note
+`GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md`.
 
 The licensed thermodynamic object is:
 
@@ -58,7 +60,7 @@ from [PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NAR
 - [PLAQUETTE_4D_MC_SUPPORT_NOTE_2026-05-04.md](PLAQUETTE_4D_MC_SUPPORT_NOTE_2026-05-04.md) for the accepted full periodic `3 spatial + 1 derived time` Wilson plaquette surface at `beta = 6`.
 - [GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md](GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md) for the accepted Wilson source grammar: one common coefficient on all six plaquette orientations and equal induced directional weights.
 - [GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md](GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md) for the boundary that the live action surface remains the accepted isotropic Wilson surface unless a separate theorem supplies a different orientation-dependent coefficient pattern.
-- [GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md](GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md) for the finite `L^4` plaquette enumeration, spatial/temporal split, and Wilson action sum over all plaquettes.
+- Non-load-bearing context only: `GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md` for the analogous spatial/temporal pair split on its even-`L_t≥4` finite-periodic surface. This note's `L≥2` enumeration and Wilson action sum are direct from its own definitions.
 - [PLAQUETTE_OBSERVABLE_UNIQUENESS_BOUNDED_NOTE_2026-05-25.md](PLAQUETTE_OBSERVABLE_UNIQUENESS_BOUNDED_NOTE_2026-05-25.md) for the finite compact Wilson/Haar derivative identity that the normalized average plaquette is the affine derivative observable.
 - [PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md](PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md) for the thermodynamic-limit referent `<P>* := 1 + f'(6)` and the derivative-bracket caveat.
 - Context only: `docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md` for the finite conditional notation `M_beta=exp[(beta/2)J]`. The physical Wilson half-slice identification comes from the Wilson-kernel authorities above, not from a derivation of the middle operator in that conditional note.

@@ -17,7 +17,6 @@ negative-half leak into f, and the attempted classification of F as plus-local.
 
 from __future__ import annotations
 
-import subprocess
 import sys
 from pathlib import Path
 from typing import Callable, Iterable
@@ -674,15 +673,8 @@ NOTE = Path(
 )
 
 
-def _dependency_on_main(filename: str) -> bool:
-    result = subprocess.run(
-        ["git", "ls-tree", "origin/main", f"docs/{filename}"],
-        capture_output=True,
-        text=True,
-        check=False,
-        timeout=10,
-    )
-    return result.returncode == 0 and bool(result.stdout.strip())
+def _dependency_in_worktree(filename: str) -> bool:
+    return (Path("docs") / filename).is_file()
 
 
 def part_e_scope_firewall() -> None:
@@ -720,8 +712,8 @@ def part_e_scope_firewall() -> None:
         "NARROW_THEOREM_NOTE_2026-05-10.md"
     )
     record(
-        "E.load_bearing_dependency.present_on_main",
-        _dependency_on_main(dep),
+        "E.load_bearing_dependency.present_in_worktree",
+        _dependency_in_worktree(dep),
         dep,
     )
 

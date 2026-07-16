@@ -474,7 +474,7 @@ Those are additional hypotheses/theorems of the consuming packet.
 
 ---
 
-## 9. Admitted-context inputs
+## 9. Explicit construction inputs
 
 | Input | Role | Boundary |
 |---|---|---|
@@ -484,8 +484,8 @@ Those are additional hypotheses/theorems of the consuming packet.
 | Reflection rule (11) | explicit finite-lattice convention | temporal dagger retained |
 | Mixed temporal-gauge reduction (19) | load-bearing reduced plaquette identity | cited retained mixed-kernel note; no full RP import |
 
-No fitted values, empirical targets, new axioms, or new Tier-A
-admissions are introduced.
+No fitted values, empirical targets, new axioms, or new framework
+primitives are introduced.
 
 ---
 

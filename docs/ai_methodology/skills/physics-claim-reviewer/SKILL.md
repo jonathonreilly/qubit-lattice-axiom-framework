@@ -28,24 +28,29 @@ it is artifact-chain or semantic drift.
 4. **Attack semantic bridges.** Ask what is selected, fitted, imposed,
    imported, conventional, finite-order, protocol-specific, or only shown on
    one surface. Correct algebra can still compare the wrong physical objects.
-5. **Check status language.** Decide whether the evidence supports retained,
+5. **Audit proof obligations.** For theorem, proof, and reduction claims,
+   reconstruct the obligation graph and apply
+   [`../physics-loop/references/proof-search-governance.md`](../physics-loop/references/proof-search-governance.md).
+   Check the exact target, hypothesis preservation, boundary cases,
+   circularity, and the strength of every unresolved terminal lemma.
+6. **Check status language.** Decide whether the evidence supports retained,
    bounded, support, open, no-go, reject, or historical language.
-6. **Scrutinize no-go claims with the same rigor as positive theorems.**
+7. **Scrutinize no-go claims with the same rigor as positive theorems.**
    A wrongly scoped no-go is just as bad as a wrongly scoped positive theorem,
    and can be worse because it forecloses investigation paths prematurely.
    For any `claim_type: no_go` candidate, run the no-go battery in the
    dedicated section below before recommending disposition.
-7. **Check science naming.** Reject new bare shorthand labels that can be
+8. **Check science naming.** Reject new bare shorthand labels that can be
    confused with axioms, assumptions, Lie types, lane stages, route codes, or
    branch blocks. Require explicit scientific names from the controlled
    vocabulary, with shorthand only as a parenthetical alias when needed.
-8. **Classify findings.** Use the local disposition buckets:
+9. **Classify findings.** Use the local disposition buckets:
    `fix on main`, `support-only demotion`, `science-needed`, `reject`,
    `historical only`.
-9. **Recommend the narrowest honest fix.** Prefer wording fixes for wording
+10. **Recommend the narrowest honest fix.** Prefer wording fixes for wording
    problems; demotion for overclaimed support; new science only when a real
    theorem step is missing.
-10. **Write review output.** Lead with findings and file/line references when
+11. **Write review output.** Lead with findings and file/line references when
     possible, then summarize the safe status.
 
 ## Review Questions
@@ -56,6 +61,11 @@ it is artifact-chain or semantic drift.
 - Is a selector, convention, imported datum, or fitted parameter being treated
   as derived?
 - Is the symbol-to-physics identification actually justified?
+- Does the proof match the exact target, including quantifiers and edge cases?
+- Does every reduction preserve its hypotheses and produce admissible objects?
+- Is the strongest unresolved lemma weaker than the target, or is it
+  target-equivalent/stronger and therefore not genuine near-closure?
+- Is any equivalent formulation of the target being used circularly?
 - Is the claim still true under the stated validation path?
 - Does the public package surface match the latest retained evidence?
 - Does the name identify the scientific object, or is it a bare overloaded
@@ -184,6 +194,8 @@ the gates.
 - Do not treat review as cosmetic copyediting.
 - Do not invent fixes that would require missing science.
 - Do not approve arithmetic-only closure when the semantic bridge is open.
+- Do not approve proof-complete language when the terminal missing lemma is
+  target-equivalent or stronger than the headline claim.
 - Do not bury useful no-go results; preserve them as route-pruning evidence.
 - Do not approve overclaimed no-gos. A wrongly scoped no-go is at least
   as harmful as a wrongly scoped positive theorem; apply the No-Go

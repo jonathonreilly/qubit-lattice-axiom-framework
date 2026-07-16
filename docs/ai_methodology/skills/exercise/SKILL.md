@@ -26,6 +26,13 @@ agent, not a lightweight summarizer. Every main agent and subagent must perform
 the Framework Refresher Read below before starting its assigned exercise slice.
 Do not use image-generation or visual artifact tools for this skill.
 
+For theorem, proof, or multi-step bridge exercises, read
+[`../physics-loop/references/proof-search-governance.md`](../physics-loop/references/proof-search-governance.md)
+before fan-out. Give early agents neutral route-local briefs without the
+favored approach or other agents' conclusions, require concrete mathematical
+returns, and delay cross-pollination until independent passes expose their
+actual gaps.
+
 For literature search, browse current scholarly sources when network access is
 available. Cite papers or source pages precisely. Literature can suggest proof
 templates, but it is never imported as authority: any external proof must be
@@ -82,6 +89,7 @@ conversation. If `--artifact` is requested, write:
   EXERCISE.md
   ASSUMPTIONS_TABLE.md
   ATTACK_VECTORS.md
+  APPROACH_REGISTRY.md
   LITERATURE_SEARCH.md
   MATH_SECTOR_SEARCH.md
   REFRAMING.md
@@ -93,6 +101,9 @@ conversation. If `--artifact` is requested, write:
 Begin by making the blocker precise:
 
 - the target claim, theorem, import, selector, no-go, or bridge;
+- its quantifiers/domain, allowed premises, and forbidden weakenings;
+- required boundary or degenerate cases and outcomes that do not count as
+  closure;
 - what currently fails;
 - what would count as progress;
 - what would count as a decisive closure, demotion, or no-go;
@@ -264,9 +275,15 @@ New route opened | First decisive test
 End with a compact route portfolio:
 
 ```text
-Rank | Route | Source exercise(s) | Premise challenged |
-Expected status if successful | First artifact | Stop condition
+Rank | Approach family | Route | Source exercise(s) | Premise challenged |
+Terminal obligation | Strength vs target | Expected status if successful |
+First concrete artifact | Stop/reopen condition
 ```
+
+For theorem-heavy exercises, normalize families and strength relations using
+the proof-search governance reference. A route ending at a target-equivalent or
+stronger missing lemma is `blocked-equivalent`, not near closure. Reopen it only
+after naming a materially new mechanism.
 
 Also include:
 

@@ -63,6 +63,13 @@ closed. For each route, give:
 - honesty marker: `ATTEMPTED` (tested in this cycle) or `RULED OUT BY PRIOR`
   (closed by an existing retained authority — cite it).
 
+Normalize route families using
+[`../physics-loop/references/proof-search-governance.md`](../physics-loop/references/proof-search-governance.md).
+Two routes count as distinct only when they materially differ in primary
+object/formulation, load-bearing mechanism or invariant, or terminal proof
+obligation. Different agents, notation, or artifact types do not make distinct
+routes.
+
 **Failure condition:** if you can name fewer than 5 distinct routes, the
 no-go is premature. List what you can and stop; do not ship.
 
@@ -182,6 +189,10 @@ no-go.** Use a hostile reviewer voice. Name the specific route or framing
 that might break the claim. Cite the strongest authority that supports the
 counter-argument.
 
+The steelman must identify a concrete unclosed mechanism and terminal
+obligation. Persuasive rhetoric without a mathematically actionable route is
+not by itself evidence that the no-go is premature.
+
 If you can write a convincing steelman, the no-go is premature: there is
 at least one route you have not closed. Demote to partial-attempt and ship
 the steelman as the next cycle's target.
@@ -279,7 +290,8 @@ The cases illustrate:
 
 ## Non-Negotiables
 
-- N1 requires 5 distinct routes, not 5 phrasings of the same route.
+- N1 requires 5 normalized approach families, not 5 phrasings, agents, or
+  artifact types for the same mathematical route.
 - N7 steelman must be the strongest counter-argument, not a token paragraph.
 - N6 "convention reframe vs new axiom" distinction must respect
   `feedback_no_new_axioms.md` — bounded condition with named import-retirement

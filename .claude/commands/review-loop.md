@@ -27,11 +27,12 @@ Mode selection:
 2. Select the mode per the Invocation section above; focused mode only
    when a `[target]` is named.
 3. Fan out the physics reviewers in parallel when the agent environment allows:
-   `CodeRunnerReviewer`, `PhysicsClaimReviewer`, `ImportSupportReviewer`,
-   `NatureRetentionReviewer`, `NoGoDisciplineReviewer` (when negative claims
-   changed), `LabelingConventionReviewer` (when bounded-theorem candidates
-   changed), `RepoGovernanceReviewer`, and optionally
-   `MethodologySkillReviewer`.
+   `CodeRunnerReviewer`, `PhysicsClaimReviewer`,
+   `ProofObligationReviewer` (when theorem/proof/reduction claims changed),
+   `ImportSupportReviewer`, `NatureRetentionReviewer`,
+   `NoGoDisciplineReviewer` (when negative claims changed),
+   `LabelingConventionReviewer` (when bounded-theorem candidates changed),
+   `RepoGovernanceReviewer`, and optionally `MethodologySkillReviewer`.
 4. Fix only verified, narrow findings. Demote overclaims instead of patching
    missing science with prose.
 5. Enforce audit-system compatibility without running the independent audit:
@@ -45,6 +46,8 @@ Mode selection:
 7. For math-bearing runner/proof changes, do not trust PASS output alone:
    independently cross-check load-bearing formulas, signs, factors,
    normalizations, expected values, and edge cases before landing.
+   Reconstruct nontrivial proof-obligation graphs and reject proof-complete
+   framing when the terminal missing lemma is target-equivalent or stronger.
 8. Before classifying a dependency as an import, wall, conditional/open input,
    or bounded-status source, read
    `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`,

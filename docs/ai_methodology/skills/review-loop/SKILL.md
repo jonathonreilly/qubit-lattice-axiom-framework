@@ -470,6 +470,18 @@ each applicable lens must be explicitly covered and named in the findings.
   semantic bridges, selector assumptions, status labels, exact/bounded/support
   boundaries, and code/prose drift.
 
+- `ProofObligationReviewer`
+  Trigger when changed content claims a theorem, proof, derivation, reduction,
+  or closure through a nontrivial intermediate lemma. Apply
+  [`docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md`](../physics-loop/references/proof-search-governance.md).
+  Reconstruct the exact target contract and proof-obligation graph; check
+  hypothesis preservation, admissibility of constructed objects, boundary and
+  degenerate cases, circular use of equivalent statements, and whether the
+  strongest unresolved lemma is weaker than, equivalent to, or stronger than
+  the target. Output `CLOSED`, `CONDITIONAL`, `EQUIVALENT-GAP`, or `FAIL`.
+  An elegant reduction ending in a target-equivalent lemma is not near
+  closure and must not receive proof-complete framing.
+
 - `ImportSupportReviewer`
   Inventory every measured, fitted, literature, PDG, cosmological,
   normalization, boundary-condition, or convention input. Classify each as
@@ -616,6 +628,9 @@ Rules:
   without running `no-go-discipline` N1-N8 against the branch content. An
   unscrutinized negative claim forecloses investigation paths permanently and
   is at least as harmful as an overclaimed positive.
+- Do not approve proof-complete framing until the ProofObligationReviewer has
+  reconstructed the obligation graph and ruled out target-equivalent missing
+  lemmas, circular reductions, and uncovered edge cases.
 ````
 
 ## Consolidate Findings
@@ -627,6 +642,7 @@ Present one iteration summary:
 
 ### Code / Runner: PASS | RISK | FAIL
 ### Physics Claim Boundary: RETAINED | SUPPORT | BOUNDED | OPEN | REJECT
+### Proof Obligations: CLOSED | CONDITIONAL | EQUIVALENT-GAP | FAIL | NOT APPLICABLE
 ### Imports / Support: CLEAN | DISCLOSED | DEMOTE | FAIL
 ### Nature Retention: RETAINED | RETAINED SUPPORT | BOUNDED | OPEN | NO-GO | REJECT
 ### No-Go Discipline: PASS | FAIL | NOT APPLICABLE
@@ -644,6 +660,8 @@ Classify every finding:
 - `IMPORTED_VALUE`
 - `SUPPORT_ONLY_DEMOTION`
 - `MISSING_ARTIFACT`
+- `PROOF_OBLIGATION`
+- `EQUIVALENT_STRENGTH_GAP`
 - `SEMANTIC_BRIDGE`
 - `REPO_GOVERNANCE`
 - `AUDIT_COMPATIBILITY`
@@ -743,23 +761,28 @@ Otherwise apply the narrowest honest fix:
    false PASS checks, and code/prose mismatches.
 2. Demote overclaimed status when the artifact supports only support/bounded
    language.
-3. Mark imported values explicitly; distinguish derived, conditional, fitted,
+3. If a claimed proof or reduction terminates at a target-equivalent or
+   stronger missing lemma, demote the headline to `open_gate`, exact support,
+   or the strongest independently proved narrow lemma. Do not describe the
+   reduction as near closure unless it contains a genuinely new mechanism for
+   the terminal obligation.
+4. Mark imported values explicitly; distinguish derived, conditional, fitted,
    measured, literature, boundary-condition, and insensitive nuisance inputs.
-4. Add or repair paired runner/note references only when the artifact exists.
-5. Make audit-system hygiene fixes only when they do not change the science:
+5. Add or repair paired runner/note references only when the artifact exists.
+6. Make audit-system hygiene fixes only when they do not change the science:
    status-line tier labels, machine-local path removal, stale runner transcript
    refreshes, generated audit queue/ledger seeding, and discoverability wiring.
-6. Rename ambiguous science shorthand to explicit repo vocabulary without
+7. Rename ambiguous science shorthand to explicit repo vocabulary without
    changing the claim boundary. Examples: write `one-qubit operator algebra`
    (or equivalently `M_2(ℂ) ≅ Cl(3,0)`, `physical Cl(3) local algebra` as
    the real-algebra reading — all co-equal labels for the same retained
    algebra-isomorphism class), `Z^3 lattice`,
    `Koide Frobenius-equipartition condition`, or `Lie type A_1` instead of
    bare `A1` / `A2`.
-7. Update `docs/repo/ACTIVE_REVIEW_QUEUE.md` for live unresolved findings.
-8. Route detailed resolved packets to
+8. Update `docs/repo/ACTIVE_REVIEW_QUEUE.md` for live unresolved findings.
+9. Route detailed resolved packets to
    `docs/work_history/repo/review_feedback/` only when a long packet is needed.
-9. When a PR is non-landable but salvageable, preserve only the durable
+10. When a PR is non-landable but salvageable, preserve only the durable
    note/runner content, make the claim boundary canonical, and land that source
    salvage through the current requested landing path. If the rejected branch
    contains substantial non-source packet material, use a clean temporary
@@ -1023,7 +1046,15 @@ formula is correct. If an issue was reopened because the runner's math was
 wrong, treat the whole formula family as suspect until the changed expression
 and any reused helpers are cross-checked.
 
-11. **Native-language PASS gate (hard).** Changed repo-facing text must use
+11. **Proof-obligation scope PASS gate (hard).** When changed content claims a
+theorem, proof, derivation, reduction, or closure through intermediate lemmas,
+run `ProofObligationReviewer`. `CLOSED` supports the stated proof boundary.
+`CONDITIONAL` supports only a claim whose exact premise and narrower scope are
+explicit. `EQUIVALENT-GAP` forbids proof-complete or near-closure framing and
+requires demotion to `open_gate`, support, or the strongest independently
+proved lemma. `FAIL` blocks PASS until the proof is repaired or narrowed.
+
+12. **Native-language PASS gate (hard).** Changed repo-facing text must use
 controlled, native repo vocabulary. Run `scripts/vocab_lint.py --fix` on all
 branch-modified files before landing, then inspect changed headings, metadata,
 runner banners, claim scopes, table labels, and review comments for

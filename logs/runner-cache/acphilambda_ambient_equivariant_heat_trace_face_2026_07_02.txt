@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py
+runner_sha256: 8c357aa3d87ddf49ccf5f433a71d88e2e57aada0acf541e42257e128bcb76b55
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
 
 -- Source and note pins --
 [PASS] note exists
@@ -33,15 +41,15 @@
 [PASS] identity component gives full trace, not diagonal sum
 
 -- T7-1 dense numeric confirmations --
-[PASS] N=4, t=0.3: dense trace equals diagonal sum  (err=3.553e-15)
-[PASS] N=4, t=1.0: dense trace equals diagonal sum  (err=3.109e-15)
-[PASS] N=4, t=3.0: dense trace equals diagonal sum  (err=5.551e-15)
-[PASS] N=5, t=0.3: dense trace equals diagonal sum  (err=1.554e-15)
-[PASS] N=5, t=1.0: dense trace equals diagonal sum  (err=5.329e-15)
-[PASS] N=5, t=3.0: dense trace equals diagonal sum  (err=1.510e-14)
-[PASS] N=6, t=0.3: dense trace equals diagonal sum  (err=0.000e+00)
-[PASS] N=6, t=1.0: dense trace equals diagonal sum  (err=1.998e-15)
-[PASS] N=6, t=3.0: dense trace equals diagonal sum  (err=3.109e-15)
+[PASS] N=4, t=0.3: dense trace equals diagonal sum  (err=0.000e+00)
+[PASS] N=4, t=1.0: dense trace equals diagonal sum  (err=4.441e-16)
+[PASS] N=4, t=3.0: dense trace equals diagonal sum  (err=4.441e-16)
+[PASS] N=5, t=0.3: dense trace equals diagonal sum  (err=4.441e-15)
+[PASS] N=5, t=1.0: dense trace equals diagonal sum  (err=4.663e-15)
+[PASS] N=5, t=3.0: dense trace equals diagonal sum  (err=5.995e-15)
+[PASS] N=6, t=0.3: dense trace equals diagonal sum  (err=4.441e-16)
+[PASS] N=6, t=1.0: dense trace equals diagonal sum  (err=4.441e-16)
+[PASS] N=6, t=3.0: dense trace equals diagonal sum  (err=4.663e-15)
 [PASS] anchor N=4,t=0.3
 [PASS] anchor N=6,t=1.0
 [PASS] wrong dispersion breaks N=4,t=0.3
@@ -93,3 +101,6 @@
 [PASS] verification close is recorded
 
 TOTAL: PASS=81 FAIL=0
+
+----- stderr -----
+

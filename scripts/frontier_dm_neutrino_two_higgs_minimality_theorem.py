@@ -3,9 +3,8 @@
 DM-side minimality theorem for the local neutrino two-Higgs extension.
 
 Question:
-  After the universal-Yukawa no-go and the odd-circulant CP tool, what is the
-  unique minimal exact local Z3 extension that can possibly support the
-  required non-diagonal Hermitian kernel for leptogenesis?
+  Given a separately justified non-diagonal Hermitian right-Gram target, what
+  is the unique minimal exact local Z3 support class that can realize it?
 
 Answer:
   A neutrino two-Higgs lane with distinct Higgs charges.
@@ -14,13 +13,13 @@ Answer:
   - a two-Higgs lane with repeated charge is still effectively single-Higgs
   - two distinct charges are the first exact local escape, and every such pair
     is support-equivalent to the canonical two-Higgs class A + B C
-  - on that class, the DM CP-supporting odd-circulant right-Gram family is
-    realized on the exact admissible subcone d >= 2 r
+  - on that class, the supplied odd-circulant right-Gram family is realized on
+    the exact admissible subcone d >= 2 r
 
 Boundary:
   This does not derive the two-Higgs extension from the bare axiom alone.
-  It proves that once nonzero local DM CP support is required, the canonical
-  two-Higgs distinct-charge lane is the unique minimal exact local escape.
+  It is conditional on a separately justified non-diagonal target and does not
+  derive a physical CP/leptogenesis observable from the target matrix.
 """
 
 from __future__ import annotations
@@ -89,7 +88,7 @@ def shift_matrix() -> np.ndarray:
     return CYCLE.copy()
 
 
-def minimal_cp_family(mu: float, nu: float, eta: float) -> np.ndarray:
+def supplied_odd_circulant_seed(mu: float, nu: float, eta: float) -> np.ndarray:
     s = shift_matrix()
     return mu * np.eye(3, dtype=complex) + nu * (s + s @ s) + 1j * eta * (s - s @ s)
 
@@ -141,9 +140,9 @@ def permutation_matrices() -> list[np.ndarray]:
     return mats
 
 
-def part1_single_higgs_and_repeated_charge_lanes_stay_cp_empty() -> None:
+def part1_single_higgs_and_repeated_charge_lanes_stay_diagonal() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: SINGLE-HIGGS AND REPEATED-CHARGE LANES STAY CP-EMPTY")
+    print("PART 1: SINGLE-HIGGS AND REPEATED-CHARGE LANES STAY DIAGONAL")
     print("=" * 88)
 
     diag_entries = np.array([0.7 + 0.1j, 1.1 - 0.2j, 0.9 + 0.3j], dtype=complex)
@@ -206,7 +205,7 @@ def part2_two_distinct_charges_are_the_first_local_escape() -> None:
 
     print()
     print("  So two distinct Higgs charges are the first exact local class that can")
-    print("  support the non-diagonal Hermitian kernel leptogenesis needs.")
+    print("  support a separately supplied non-diagonal Hermitian target.")
 
 
 def part3_every_distinct_charge_pair_is_canonical_up_to_relabeling() -> None:
@@ -236,17 +235,17 @@ def part3_every_distinct_charge_pair_is_canonical_up_to_relabeling() -> None:
     print("  It is one canonical two-Higgs class up to relabeling.")
 
 
-def part4_the_dm_cp_target_is_realized_on_that_unique_minimal_escape() -> None:
+def part4_the_supplied_target_is_realized_on_that_unique_minimal_escape() -> None:
     print("\n" + "=" * 88)
-    print("PART 4: THE DM CP TARGET LIVES ON THAT UNIQUE MINIMAL ESCAPE")
+    print("PART 4: THE SUPPLIED ALGEBRAIC TARGET LIVES ON THAT MINIMAL ESCAPE")
     print("=" * 88)
 
     mu = 1.0
     nu = 0.20
     eta = 0.10
-    y_cp = minimal_cp_family(mu, nu, eta)
-    k_cp = right_gram(y_cp)
-    k_can, d, r, delta = canonicalize_circulant_right_gram(k_cp)
+    y_seed = supplied_odd_circulant_seed(mu, nu, eta)
+    k_seed = right_gram(y_seed)
+    k_can, d, r, delta = canonicalize_circulant_right_gram(k_seed)
     solution = symmetric_two_higgs_solution(d, r)
     assert solution is not None
     x, y = solution
@@ -256,7 +255,7 @@ def part4_the_dm_cp_target_is_realized_on_that_unique_minimal_escape() -> None:
     k_single = right_gram(single)
 
     check(
-        "The sample odd-circulant CP-supporting kernel lies on the admissible subcone",
+        "The sample odd-circulant target lies on the admissible subcone",
         d >= 2.0 * r,
         f"d={d:.6f}, 2r={2.0*r:.6f}",
     )
@@ -272,9 +271,9 @@ def part4_the_dm_cp_target_is_realized_on_that_unique_minimal_escape() -> None:
     )
 
     print()
-    print("  So once nonzero local DM CP support is required, the canonical")
-    print("  two-Higgs distinct-charge class is not just allowed. It is the unique")
-    print("  minimal exact local escape on the current stack.")
+    print("  Thus, if the displayed non-diagonal target is separately required, the")
+    print("  canonical two-Higgs distinct-charge class is the unique minimal exact")
+    print("  local escape on the current stack.")
 
 
 def main() -> int:
@@ -284,18 +283,18 @@ def main() -> int:
     print()
     print("Authority stack:")
     print("  - DM leptogenesis universal-Yukawa no-go")
-    print("  - DM minimal Z3 circulant CP tool")
+    print("  - supplied Z3 circulant target family")
     print("  - neutrino Dirac two-Higgs escape theorem")
     print("  - DM neutrino two-Higgs right-Gram bridge")
     print()
     print("Question:")
-    print("  What is the unique minimal exact local Z3 extension that can supply")
-    print("  the non-diagonal Hermitian kernel DM leptogenesis now needs?")
+    print("  Given a separately justified non-diagonal right-Gram target, what is")
+    print("  the unique minimal exact local Z3 support class that can realize it?")
 
-    part1_single_higgs_and_repeated_charge_lanes_stay_cp_empty()
+    part1_single_higgs_and_repeated_charge_lanes_stay_diagonal()
     part2_two_distinct_charges_are_the_first_local_escape()
     part3_every_distinct_charge_pair_is_canonical_up_to_relabeling()
-    part4_the_dm_cp_target_is_realized_on_that_unique_minimal_escape()
+    part4_the_supplied_target_is_realized_on_that_unique_minimal_escape()
 
     print("\n" + "=" * 88)
     print("RESULT")
@@ -305,10 +304,12 @@ def main() -> int:
     print("    - repeated charges are still too small")
     print("    - two distinct Higgs charges are the unique minimal exact local escape")
     print("    - that escape is canonical up to relabeling")
-    print("    - the DM CP-supporting right-Gram target already lives on it")
+    print("    - the supplied right-Gram target already lives on it")
+    print("    - no physical CP/leptogenesis readout is inferred from that algebra")
     print()
     print("  So the branch no longer needs to ask whether some other smaller local")
-    print("  extension might rescue the denominator. There is no smaller exact one.")
+    print("  support class could realize the supplied target. There is no smaller")
+    print("  exact one under the stated support assumptions.")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0
@@ -316,4 +317,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-

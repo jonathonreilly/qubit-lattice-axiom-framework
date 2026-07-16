@@ -3,13 +3,14 @@
 DM odd-slot minimal mixed-bridge extension theorem.
 
 Question:
-  After the odd-slot theorem and the current-stack zero law, what is the
-  smallest honest positive extension class that could activate the DM odd slot?
+  If a separate source/activation bridge requires c_odd != 0, what is the
+  smallest extension class left after the odd-direction algebra lemma and the
+  current-stack zero law?
 
 Answer:
   A residual-Z2-odd non-additive mixed bridge with one real amplitude slot.
 
-  More precisely, any future positive local activator must:
+  More precisely, any realization of that separately supplied target must:
     - lie outside the current retained even support/Hermitian/scalar bank
     - be supported on the canonical non-universal two-Higgs locus
     - be residual-Z2 odd
@@ -18,7 +19,8 @@ Answer:
 
 Boundary:
   This is an extension-class theorem only. It does not derive the microscopic
-  bridge functional itself.
+  bridge functional, a physical need for c_odd != 0, or a readout/transport
+  interpretation.
 """
 
 from __future__ import annotations
@@ -71,8 +73,10 @@ def part1_current_bank_eliminates_even_additive_routes() -> None:
     slot = read("docs/DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md")
 
     check(
-        "The odd-slot theorem identifies one unique residual-Z2-odd local class",
-        "exactly one residual-`Z_2`-odd slot" in slot or "unique residual-`Z_2`-odd slot" in slot,
+        "The bounded algebra lemma identifies one unique P23-odd local class",
+        "the `P_23`-odd" in slot
+        and "subspace has real dimension one" in slot
+        and "`c_odd` is the unique" in slot,
     )
     check(
         "The current-zero-law note records c_odd,current = 0",
@@ -84,7 +88,8 @@ def part1_current_bank_eliminates_even_additive_routes() -> None:
     )
 
     print()
-    print("  So any positive realization must leave the current even local bank.")
+    print("  So any separately required nonzero realization must leave the current")
+    print("  even local bank.")
 
 
 def part2_remaining_support_is_the_canonical_two_higgs_locus() -> None:
@@ -106,13 +111,13 @@ def part2_remaining_support_is_the_canonical_two_higgs_locus() -> None:
     )
 
     print()
-    print("  So any positive activator must live on the canonical non-universal")
-    print("  two-Higgs branch, not on some other smaller local extension.")
+    print("  So under the supplied nonzero target, a realization must live on the")
+    print("  canonical non-universal two-Higgs branch.")
 
 
 def part3_reduced_positive_extension_class_has_one_real_amplitude() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: THE REDUCED POSITIVE EXTENSION CLASS HAS ONE REAL AMPLITUDE")
+    print("PART 3: THE REDUCED CONDITIONAL EXTENSION CLASS HAS ONE REAL AMPLITUDE")
     print("=" * 88)
 
     basis_norm = np.linalg.norm(ODD_BASIS)
@@ -125,15 +130,15 @@ def part3_reduced_positive_extension_class_has_one_real_amplitude() -> None:
         f"||basis||={basis_norm:.6f}",
     )
     check(
-        "Any reduced positive activator on that class carries one real amplitude slot",
+        "Any reduced realization on that class carries one real amplitude slot",
         abs(extracted - 0.37) < 1e-12,
         f"a_odd={extracted:.6f}",
     )
 
     print()
-    print("  So the minimal surviving positive DM extension class is not a family of")
-    print("  unrelated activators. On the reduced local quotient it is one odd class")
-    print("  with one real amplitude slot.")
+    print("  So the conditional extension class is not a family of unrelated")
+    print("  activators. On the reduced local quotient it is one odd class with one")
+    print("  real amplitude slot.")
 
 
 def main() -> int:
@@ -142,14 +147,14 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Authority stack:")
-    print("  - DM odd-circulant residual-Z2 slot theorem")
+    print("  - bounded supplied-matrix Hermitian-circulant / P23 algebra lemma")
     print("  - DM odd-circulant current-stack zero law")
     print("  - DM two-Higgs minimality theorem")
     print("  - DM two-Higgs continuity sheet theorem")
     print()
     print("Question:")
-    print("  What is the smallest honest positive extension class that could")
-    print("  activate the unique DM odd slot?")
+    print("  If a separate source/activation bridge requires c_odd != 0, what is")
+    print("  the smallest algebraic extension class left?")
 
     part1_current_bank_eliminates_even_additive_routes()
     part2_remaining_support_is_the_canonical_two_higgs_locus()
@@ -158,12 +163,13 @@ def main() -> int:
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact extension-class answer:")
+    print("  Conditional extension-class answer:")
     print("    - the current even/additive bank is ruled out")
     print("    - the remaining support is the canonical non-universal two-Higgs lane")
     print("    - the surviving local class is the unique odd circulant class")
-    print("    - the reduced positive extension therefore carries one real amplitude")
+    print("    - the reduced extension therefore carries one real amplitude")
     print("      on a residual-Z2-odd non-additive mixed bridge")
+    print("    - this runner does not supply the nonzero target or a physical readout")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

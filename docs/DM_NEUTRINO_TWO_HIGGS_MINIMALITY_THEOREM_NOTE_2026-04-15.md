@@ -7,9 +7,9 @@
 
 ## Question
 
-After the universal-Yukawa no-go and the odd-circulant CP tool, what is the
-smallest exact local `Z_3` extension that can possibly supply the non-diagonal
-Hermitian kernel the DM leptogenesis denominator now needs?
+Given a separately justified target requiring a non-diagonal Hermitian
+right-Gram kernel, what is the smallest exact local `Z_3` support class that
+can realize such a target?
 
 ## Bottom line
 
@@ -22,12 +22,12 @@ More sharply:
 - two distinct charges are the first exact local escape
 - every distinct-charge pair is support-equivalent to one canonical class
   `A + B C`
-- on that class, the DM odd-circulant CP-supporting right-Gram target already
-  lives on the exact admissible subcone `d >= 2 r`
+- on that class, the supplied odd-circulant right-Gram target lives on the
+  exact admissible subcone `d >= 2 r`
 
-So once nonzero local DM CP support is required, the canonical distinct-charge
-two-Higgs lane is the **unique minimal exact local escape** on the current
-stack.
+So, conditional on a separately justified non-diagonal target, the canonical
+distinct-charge two-Higgs lane is the **unique minimal exact local escape** on
+the current stack.
 
 ## Inputs
 
@@ -35,8 +35,8 @@ This theorem combines:
 
 - [DM_LEPTOGENESIS_UNIVERSAL_YUKAWA_NO_GO_NOTE_2026-04-15.md](./DM_LEPTOGENESIS_UNIVERSAL_YUKAWA_NO_GO_NOTE_2026-04-15.md) — universal-Yukawa leptogenesis no-go
 - [DM_NEUTRINO_TWO_HIGGS_RIGHT_GRAM_BRIDGE_NOTE_2026-04-15.md](./DM_NEUTRINO_TWO_HIGGS_RIGHT_GRAM_BRIDGE_NOTE_2026-04-15.md) — DM two-Higgs right-Gram bridge theorem
-- [DM_NEUTRINO_Z3_CIRCULANT_CP_TOOL_NOTE_2026-04-15.md](./DM_NEUTRINO_Z3_CIRCULANT_CP_TOOL_NOTE_2026-04-15.md) — exact `Z_3` circulant CP tool (the algebraic target underlying the odd-circulant CP family)
-- [DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md](./DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md) — DM odd-circulant `Z_2` slot theorem (the odd-circulant CP-supporting carrier)
+- [DM_NEUTRINO_Z3_CIRCULANT_CP_TOOL_NOTE_2026-04-15.md](./DM_NEUTRINO_Z3_CIRCULANT_CP_TOOL_NOTE_2026-04-15.md) — cited source for the supplied circulant target family
+- [DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md](./DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md) — bounded supplied-matrix Hermitian-circulant / `P_23` even-odd algebra lemma; it classifies the odd direction but does not identify a physical carrier or observable
 
 The single-Higgs monomial obstruction (every fixed-charge single-Higgs lane
 gives `Y = D P_q` with `P_q` a support permutation, hence `Y^dag Y` diagonal)
@@ -56,8 +56,8 @@ with `P_q` one of the three exact support permutations. Therefore
 
 is diagonal.
 
-So every fixed-charge single-Higgs lane is exactly CP-empty at the level of the
-Hermitian kernel used by leptogenesis.
+So every fixed-charge single-Higgs lane has a diagonal Hermitian right-Gram
+kernel and cannot realize a separately supplied non-diagonal target.
 
 The same is true for a two-Higgs lane with repeated charge:
 
@@ -79,8 +79,8 @@ Then generically:
 - the texture is no longer monomial
 - the right-Gram kernel `Y^dag Y` becomes non-diagonal
 
-So two distinct charges are the first exact local class that can carry the kind
-of kernel DM now needs.
+So two distinct charges are the first exact local class that can carry a
+generic non-diagonal right-Gram kernel.
 
 ## The charge-pair label is not a real remaining ambiguity
 
@@ -100,9 +100,9 @@ So every distinct-charge pair reduces to one canonical class
 
 The local two-Higgs escape is therefore canonical up to relabeling.
 
-## Connection to the DM CP-supporting target
+## Connection to the supplied algebraic target
 
-The DM odd-circulant CP tool identified the exact algebraic target
+The cited circulant source supplies the algebraic target
 
 `mu I + nu (S + S^2) + i eta (S - S^2)`.
 
@@ -112,8 +112,9 @@ subcone
 
 `d >= 2 r`.
 
-So the DM target is not just compatible with the two-Higgs lane in some loose
-sense. It already sits on that unique minimal local escape.
+Thus the supplied target sits on that unique minimal local escape. This
+realization statement does not establish that the target is physically
+required or that its entrywise odd polynomial is a leptogenesis observable.
 
 ## Theorem-level statement
 
@@ -124,12 +125,12 @@ neutrino lane).** On the current exact local `Z_3` neutrino flavor stack:
 2. every repeated-charge two-Higgs lane reduces to the same diagonal class
 3. every distinct-charge two-Higgs lane is support-equivalent up to relabeling
    to the canonical class `A + B C`
-4. the DM odd-circulant CP-supporting right-Gram family is realized on that
+4. the supplied odd-circulant right-Gram family is realized on that
    canonical class on the exact admissible subcone `d >= 2 r`
 
-Therefore, once nonzero local DM CP support is required, the canonical
-distinct-charge two-Higgs neutrino lane is the **unique minimal exact local
-escape** on the current stack.
+Therefore, conditional on a separately justified non-diagonal target, the
+canonical distinct-charge two-Higgs neutrino lane is the **unique minimal exact
+local escape** on the current stack.
 
 ## What this closes
 
@@ -152,6 +153,8 @@ This note does **not** yet derive:
 - the seven canonical two-Higgs quantities
 - the right-sensitive sheet datum
 - the exact odd-circulant coefficient law
+- a carrier/source/readout/transport bridge making the supplied algebraic
+  target a physical leptogenesis requirement
 
 So it is a route-selection theorem, not full two-Higgs closure.
 
@@ -160,17 +163,18 @@ So it is a route-selection theorem, not full two-Higgs closure.
 **Can claim**
 
 - the canonical distinct-charge two-Higgs neutrino lane is the unique minimal
-  exact local escape once nonzero local DM CP support is required
+  exact local escape once a separate non-diagonal target is supplied
 - no smaller exact local neutrino extension remains on the current stack
 
 **Cannot claim**
 
 - the bare axiom already forces two Higgs with no bridge condition
 - the local two-Higgs coefficients are already derived
+- the bounded odd-circulant algebra lemma derives a physical CP or
+  leptogenesis observable
 
 ## Command
 
 ```bash
 python3 scripts/frontier_dm_neutrino_two_higgs_minimality_theorem.py
 ```
-

@@ -1,36 +1,30 @@
 ===== runner cache v1 =====
 runner: scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py
-runner_sha256: fc9c9bfc4e0bf84fc2aab54d81b18e9355b62371ea4a130c459dc206ab406b36
+runner_sha256: b33a7ac7c6b1e6197d230aa3304b0f471674cf274ad415c79191c760521aeac8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 28.68
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
-==============================================================================
-reconstructed free H = -log(T^2)/(2 a_tau) is QUASI-LOCAL (exp tail)  [class A]
-==============================================================================
+FIXED-MASS ONE-PARTICLE LOG-TRANSFER CONTOUR CHECK
+========================================================================
+Scope: free U=1; one-particle spectrum and one-coordinate axis kernel.
 
--- (0) source-note scope repair guardrails --
-PASS: source note scope repair is wired to the d-dimensional dispersion theorem and leaves residual targets open  (5/5 source guards satisfied)
+[PASS] source note exists  | docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
+[PASS] source note states the narrowed one-particle boundary and open bridges  | 8/8 markers
+[PASS] withdrawn unit, LR-velocity, and gapless-exponent claims are absent
+[PASS] one-particle contraction spectrum lies in the analytic interval  | sample=[0.070384, 0.553582]
+[PASS] full Fock spectrum contains the vacuum eigenvalue 1
+[PASS] multiparticle products extend below the one-particle interval  | multi_min=1.502205e-02, one_min=6.997890e-02
+[PASS] one-particle Hamiltonian eigenvalue is E_d(p)/a_tau  | a_tau=0.5: H1=1.290532, a_tau=1.0: H1=0.645266, a_tau=2.0: H1=0.322633
+[PASS] Re sin^2(x+i y) = sin^2(x) cosh(2y) - sinh^2(y)
+[PASS] one-coordinate strip stays in Re R > 0 before the R=0 and R=-1 branch heights  | m=0.1: rho=0.07987, lower=3.608e-03, sampled_min=3.608e-03; m=0.3: rho=0.23654, lower=3.300e-02, sampled_min=3.300e-02; m=1.0: rho=0.70510, lower=4.148e-01, sampled_min=4.148e-01
+[PASS] shifted one-coordinate contour reproduces the axis Fourier coefficients  | max_abs_error=3.814e-12, rho=0.147837
+[PASS] axis kernel carries only the overall 1/a_tau energy scale  | max_scale_error=0.000e+00
 
--- (1) spec(T^2)=e^{-2E(p)} is gapped away from 0 (m>0) => log well-defined --
-PASS: m=0.1: min spec(T^2) = e^(-2 Emax) = 0.0716 > 0 (gapped)
-PASS: m=0.3: min spec(T^2) = e^(-2 Emax) = 0.0700 > 0 (gapped)
-PASS: m=1.0: min spec(T^2) = e^(-2 Emax) = 0.0557 > 0 (gapped)
-
--- (2) the dispersion is real-analytic for m>0 (radicand R(p) >= m^2 > 0) --
-PASS: R(p)=m^2+sum sin^2 p stays >= m^2 > 0 on the real torus => analyticity strip a=arcsinh(m)>0 (nearest singularity sin^2 p=-m^2) => Paley-Wiener exponential tail  (min R (m=0.3, deterministic 33^3 grid) = 0.0900 >= 0.09)
-
--- (3) H(x) has an exponential tail a>0 ~ arcsinh(m) (quasi-local) for m>0 --
-PASS: m=0.1: exponential rate a=0.092 > 0 and within ~2x of arcsinh(m)=0.100  (prefactor x^-3.24; a/arcsinh(m)=0.92)
-PASS: m=0.3: exponential rate a=0.234 > 0 and within ~2x of arcsinh(m)=0.296  (prefactor x^-4.11; a/arcsinh(m)=0.79)
-PASS: m=1.0: exponential rate a=1.170 > 0 and within ~2x of arcsinh(m)=0.881  (prefactor x^-0.72; a/arcsinh(m)=1.33)
-
--- (4) m=0 (gapless): strip closes (a=0) => pure power-law (not quasi-local) --
-PASS: m=0: H(x) is PURE POWER-LAW (power-fit beats exp-fit, high R^2) => NOT quasi-local => the mass gap (m>0) is the load-bearing input for quasi-locality  (|H(x)| ~ x^-4.12; R^2 power=0.9994 > exp=0.8458)
-
-Scope: free U=1 staggered two-step sector; interacting log-transfer locality and exact tail-composition remain open.
-TOTAL: PASS=9, FAIL=0
+Open: Fock interaction decomposition, quasilocal LR composition, exact causal relation,
+      record-formation event order, and continuum/manifold interface.
+TOTAL: PASS=11 FAIL=0
 
 ----- stderr -----
 

@@ -1,0 +1,43 @@
+loop_slug: conformal-causal-source-repair-block01-20260716
+mode: run
+target_status: best-honest-status
+current_goal: "Repair the conformal causal-source packet without promoting a causal or conformal bridge."
+remote_branch: physics-loop/conformal-causal-source-repair-block01-20260716
+base_ref: origin/main
+base_commit: 1cc237c6f1
+cycle_count: 1
+block_count: 1
+active_route: "Scope split: record timing no-go; fixed-mass one-particle contour support; open conformal consumer."
+hard_residual: "No typed record-formation event order or exact causal relation on the LR observable event set is derived."
+actual_current_surface_status:
+  record_order_row: no-go
+  one_particle_kernel_row: bounded-support
+  conformal_consumer_row: open
+files_touched:
+  - docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md
+  - scripts/frontier_record_history_time_rate_firewall_2026_06_05.py
+  - logs/runner-cache/frontier_record_history_time_rate_firewall_2026_06_05.txt
+  - docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py
+  - logs/runner-cache/reconstructed_h_quasilocal_microcausality_bridge_runner.txt
+  - docs/EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md
+  - scripts/emergent_metric_conformal_class_from_records_runner.py
+  - logs/runner-cache/emergent_metric_conformal_class_from_records_runner.txt
+  - .claude/science/physics-loops/conformal-causal-source-repair-block01-20260716/
+open_imports:
+  - record_atom_to_formation_event_map
+  - formation_event_dependency_order
+  - formation_event_to_lr_observable_event_set_identification
+  - quasilocal_lieb_robinson_composition_with_declared_weight
+  - lr_envelope_to_exact_causal_relation
+  - causal_event_set_to_lorentzian_manifold_interface
+no_go_routes:
+  - "Abstract word/count order alone determines physical durations or rates."
+trace_gate_class: direct_blocker_closure
+reachability_to_target: partially_closes
+review_disposition: pass_with_bounded_claims
+verification_status: "direct runners clean; owned caches fresh; disposable-worktree pipeline and strict lint clean"
+pr_status: pending
+lock_note: "Canonical lock path is unavailable for this account; shared /private/tmp supervisor lock acquired for this block."
+next_exact_action: "Rebase the review-clean block onto current origin/main, commit, push, and open one ready PR."
+stop_condition: "One bounded repair block is review-clean, pushed, and represented by one ready PR."

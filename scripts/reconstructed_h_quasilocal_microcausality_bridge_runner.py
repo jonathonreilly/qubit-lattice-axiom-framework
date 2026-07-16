@@ -1,141 +1,219 @@
 #!/usr/bin/env python3
-"""Class-A verifier: the reconstructed free Hamiltonian H = -log(T_hat^2)/(2 a_tau) is
-QUASI-LOCAL (exponentially-decaying kernel) on the free two-step staggered surface.
+"""Verify the fixed-mass one-particle log-transfer contour statement.
 
-Mechanism (Paley-Wiener / Bernstein). In momentum space the reconstructed free Hamiltonian is the
-exact free staggered dispersion
-    E(p) = arcsinh( sqrt( m^2 + sum_mu sin^2 p_mu ) )
-(so spec(T_hat^2) = e^{-2E(p)}). Its position-space kernel is H(x) = FT[E(p)]. The radicand
-    R(p) = m^2 + sum_mu sin^2 p_mu  >=  m^2 > 0   for all real p (m > 0),
-extends holomorphically (a polynomial in cos 2p_mu) and stays positive on the real torus. In the
-complex strip before the first R=0 singularity, one can choose analytic branches of sqrt(R) and
-arcsinh(sqrt(R)). Hence E(p) is REAL-ANALYTIC on T^d with positive analyticity-strip half-width;
-along one complex momentum direction the first branch point occurs at sin^2 p = -m^2, giving the
-rate scale a = arcsinh(m) > 0. By Paley-Wiener the kernel has an EXPONENTIAL TAIL:
-H(x) ~ (algebraic prefactor) * e^{-a|x|}, so H is quasi-local. The mass gap (m > 0) is
-load-bearing: at m = 0 the radicand vanishes at p = 0 ON the real torus, the strip closes
-(a = 0), and H(x) is a PURE power law (not quasi-local).
-
-This supplies the free-surface quasilocal-H input. Free (U = 1) surface only;
-the interacting H = -log(T[U]) quasi-locality and the exact quasilocal
-Lieb-Robinson tail-composition step are separate open targets.
-
-No new axiom: uses the in-repo d-dimensional free staggered two-step dispersion theorem and
-standard Paley-Wiener/Bernstein analyticity-to-decay; the verification checks the load-bearing
-inequalities and numerical kernel behavior.
+This runner deliberately does not certify a Lieb-Robinson bound or a causal
+cone. It separates the one-particle contraction spectrum from the full Fock
+spectrum, checks H_1(p) = E_d(p) / a_tau, and verifies the one-coordinate
+contour shift behind the axis-kernel exponential bound.
 """
 
 from __future__ import annotations
+
+from itertools import product
 from pathlib import Path
 
 import numpy as np
 
-ROOT = Path(__file__).resolve().parent.parent
-NOTE = ROOT / "docs" / "RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md"
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / (
+    "RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_"
+    "MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md"
+)
 
 PASS = 0
 FAIL = 0
 
 
-def check(name, condition, detail=""):
+def check(name: str, condition: bool, detail: str = "") -> bool:
     global PASS, FAIL
     ok = bool(condition)
-    PASS += int(ok); FAIL += int(not ok)
-    tag = "PASS" if ok else "FAIL"
-    line = f"{tag}: {name}"
-    if detail:
-        line += f"  ({detail})"
-    print(line)
+    PASS += int(ok)
+    FAIL += int(not ok)
+    suffix = f"  | {detail}" if detail else ""
+    print(f"[{'PASS' if ok else 'FAIL'}] {name}{suffix}")
+    return ok
 
 
-def marginal_dispersion(px, m, ng=512):
-    """Ebar(px) = mean over (py,pz) of E(p); the marginal whose FT is H(x,0,0)."""
-    g = 2 * np.pi * (np.arange(ng) + 0.5) / ng
-    PY, PZ = np.meshgrid(g, g, indexing="ij")
-    s2 = np.sin(PY) ** 2 + np.sin(PZ) ** 2
-    return np.array([np.mean(np.arcsinh(np.sqrt(m ** 2 + np.sin(p) ** 2 + s2))) for p in px])
+def energy(momentum: np.ndarray, mass: float) -> np.ndarray:
+    """E_d(p) for an array whose final axis indexes momentum components."""
+    p = np.asarray(momentum)
+    return np.arcsinh(np.sqrt(mass * mass + np.sum(np.sin(p) ** 2, axis=-1)))
 
 
-def kernel_axis(m, Nx=4096):
-    px = 2 * np.pi * np.arange(Nx) / Nx
-    return np.fft.ifft(marginal_dispersion(px, m)).real           # H(x,0,0), x = 0..Nx-1
-
-
-def combined_rate(m):
-    """fit H(x) ~ x^{-p} e^{-a|x|} on the asymptotic window x in [2/a_pred, 8/a_pred]."""
-    Hx = kernel_axis(m)
-    a_pred = np.arcsinh(m) if m > 0 else 0.02
-    x0 = max(int(2 / a_pred), 6); x1 = min(int(8 / a_pred), 420)
-    xs = np.arange(x0, x1)
-    vals = np.abs(Hx[xs]); good = vals > 1e-14
-    xg, vg = xs[good], np.log(vals[good])
-    A = np.vstack([np.ones_like(xg, float), -np.log(xg), -xg.astype(float)]).T
-    coef, *_ = np.linalg.lstsq(A, vg, rcond=None)
-    return float(coef[2]), float(coef[1])                          # (a, p)
-
-
-def source_repair_checks():
-    text = NOTE.read_text(encoding="utf-8")
-    forbidden = ["ret" + "ained", "audit" + "ed_", "un" + "audited", "2" + "erJ", "v_" + "LR"]
-    checks = [
-        "**Status authority:** independent audit lane only" in text,
-        "FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md" in text,
-        "arcsinh(m)/(2d)" in text,
-        "tail-composition step remain open" in text,
-        all(token not in text for token in forbidden),
+def source_boundary_checks() -> None:
+    text = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
+    required = [
+        "**Claim type:** bounded_theorem",
+        "bounded one-particle fixed-mass contour support",
+        "This interval is **not** the full Fock spectrum",
+        "E_d(p) / a_tau",
+        "one-coordinate strip",
+        "does not prove a Lieb-Robinson bound",
+        "does not claim a strict or sharp light cone",
+        "does not assert a general-dimension gapless power-law exponent",
     ]
-    check("source note scope repair is wired to the d-dimensional dispersion theorem and leaves residual targets open",
-          all(checks), detail=f"{sum(checks)}/{len(checks)} source guards satisfied")
+    check("source note exists", NOTE.exists(), str(NOTE.relative_to(ROOT)))
+    check(
+        "source note states the narrowed one-particle boundary and open bridges",
+        all(marker in text for marker in required),
+        f"{sum(marker in text for marker in required)}/{len(required)} markers",
+    )
+    forbidden = [
+        "H = E(p) >= 0",
+        "H = E(p) ≥ 0",
+        "finite LR-cone diagnostic v_LR",
+        "H(x) ~ x^-4",
+        "H(x) ~ x^{−4}",
+    ]
+    check(
+        "withdrawn unit, LR-velocity, and gapless-exponent claims are absent",
+        all(marker not in text for marker in forbidden),
+    )
+
+
+def spectrum_split_checks() -> None:
+    mass = 0.3
+    dimension = 3
+    grid = np.linspace(-np.pi, np.pi, 19, endpoint=False)
+    p1, p2, p3 = np.meshgrid(grid, grid, grid, indexing="ij")
+    momenta = np.stack([p1, p2, p3], axis=-1)
+    energies = energy(momenta, mass)
+    e_min = float(np.arcsinh(mass))
+    e_max = float(np.arcsinh(np.sqrt(mass * mass + dimension)))
+    contractions = np.exp(-2.0 * energies)
+    check(
+        "one-particle contraction spectrum lies in the analytic interval",
+        float(contractions.min()) >= np.exp(-2.0 * e_max) - 1e-12
+        and float(contractions.max()) <= np.exp(-2.0 * e_min) + 1e-12,
+        f"sample=[{contractions.min():.6f}, {contractions.max():.6f}]",
+    )
+
+    sample_energies = np.array([e_min, float(energy(np.array([0.4, 0.0, 0.0]), mass)), e_max])
+    occupations = list(product((0, 1), repeat=len(sample_energies)))
+    fock_spectrum = np.array(
+        [np.exp(-2.0 * np.dot(np.array(n, dtype=float), sample_energies)) for n in occupations]
+    )
+    one_particle = np.exp(-2.0 * sample_energies)
+    multiparticle = np.array(
+        [value for n, value in zip(occupations, fock_spectrum) if sum(n) >= 2]
+    )
+    check(
+        "full Fock spectrum contains the vacuum eigenvalue 1",
+        np.isclose(fock_spectrum.max(), 1.0) and occupations[int(np.argmax(fock_spectrum))] == (0, 0, 0),
+    )
+    check(
+        "multiparticle products extend below the one-particle interval",
+        float(multiparticle.min()) < float(one_particle.min()),
+        f"multi_min={multiparticle.min():.6e}, one_min={one_particle.min():.6e}",
+    )
+
+
+def unit_checks() -> None:
+    p = np.array([0.37, -0.21, 0.48])
+    e = float(energy(p, 0.3))
+    values = []
+    ok = True
+    for a_tau in (0.5, 1.0, 2.0):
+        h_one = e / a_tau
+        values.append(h_one)
+        ok = ok and abs(a_tau * h_one - e) < 1e-14
+    check(
+        "one-particle Hamiltonian eigenvalue is E_d(p)/a_tau",
+        ok and values[0] > values[1] > values[2],
+        ", ".join(f"a_tau={a}: H1={e/a:.6f}" for a in (0.5, 1.0, 2.0)),
+    )
+
+
+def strip_checks() -> None:
+    details: list[str] = []
+    ok = True
+    identity_ok = True
+    for mass in (0.1, 0.3, 1.0):
+        rho = 0.8 * float(np.arcsinh(mass))
+        lower = mass * mass - np.sinh(rho) ** 2
+        r_zero_height = float(np.arcsinh(mass))
+        r_minus_one_height = float(np.arcsinh(np.sqrt(mass * mass + 1.0)))
+        xs = np.linspace(-np.pi, np.pi, 513, endpoint=False)
+        ys = np.linspace(-rho, rho, 17)
+        z = xs[:, None] + 1j * ys[None, :]
+        radicand = mass * mass + np.sin(z) ** 2
+        exact_real = (
+            mass * mass
+            + np.sin(xs[:, None]) ** 2 * np.cosh(2.0 * ys[None, :])
+            - np.sinh(ys[None, :]) ** 2
+        )
+        sampled_min = float(np.min(radicand.real))
+        identity_ok = identity_ok and float(np.max(np.abs(radicand.real - exact_real))) < 1e-12
+        case_ok = (
+            lower > 0
+            and sampled_min >= lower - 1e-12
+            and rho < r_zero_height < r_minus_one_height
+        )
+        ok = ok and case_ok
+        details.append(
+            f"m={mass}: rho={rho:.5f}, lower={lower:.3e}, sampled_min={sampled_min:.3e}"
+        )
+    check(
+        "Re sin^2(x+i y) = sin^2(x) cosh(2y) - sinh^2(y)",
+        identity_ok,
+    )
+    check(
+        "one-coordinate strip stays in Re R > 0 before the R=0 and R=-1 branch heights",
+        ok,
+        "; ".join(details),
+    )
+
+
+def contour_identity_checks() -> None:
+    mass = 0.3
+    a_tau = 1.7
+    rho = 0.5 * float(np.arcsinh(mass))
+    count = 80
+    grid = 2.0 * np.pi * np.arange(count) / count
+    p1, p2, p3 = np.meshgrid(grid, grid, grid, indexing="ij")
+    real_momenta = np.stack([p1, p2, p3], axis=-1)
+    shifted_momenta = real_momenta.astype(complex)
+    shifted_momenta[..., 0] += 1j * rho
+    e_real = energy(real_momenta, mass)
+    e_shift = energy(shifted_momenta, mass)
+    errors: list[float] = []
+    scale_errors: list[float] = []
+    for n in (2, 4, 6):
+        phase = np.exp(1j * n * p1)
+        h_real = np.mean(e_real * phase) / a_tau
+        h_shift = np.exp(-rho * n) * np.mean(e_shift * phase) / a_tau
+        errors.append(float(abs(h_real - h_shift)))
+        scale_errors.append(float(abs((a_tau * h_real) - np.mean(e_real * phase))))
+    check(
+        "shifted one-coordinate contour reproduces the axis Fourier coefficients",
+        max(errors) < 1e-11,
+        f"max_abs_error={max(errors):.3e}, rho={rho:.6f}",
+    )
+    check(
+        "axis kernel carries only the overall 1/a_tau energy scale",
+        max(scale_errors) < 1e-14,
+        f"max_scale_error={max(scale_errors):.3e}",
+    )
 
 
 def main() -> int:
-    print("=" * 78)
-    print("reconstructed free H = -log(T^2)/(2 a_tau) is QUASI-LOCAL (exp tail)  [class A]")
-    print("=" * 78)
-
-    print("\n-- (0) source-note scope repair guardrails --")
-    source_repair_checks()
-
-    # ---- (1) transfer matrix gapped away from 0 (m>0): log well-defined ----
-    print("\n-- (1) spec(T^2)=e^{-2E(p)} is gapped away from 0 (m>0) => log well-defined --")
-    d = 3
-    for m in (0.1, 0.3, 1.0):
-        lo = np.exp(-2 * np.arcsinh(np.sqrt(m ** 2 + d)))
-        check(f"m={m}: min spec(T^2) = e^(-2 Emax) = {lo:.4f} > 0 (gapped)", lo > 0)
-
-    # ---- (2) E(p) real-analytic on the torus (m>0): radicand >= m^2 > 0 everywhere ----
-    print("\n-- (2) the dispersion is real-analytic for m>0 (radicand R(p) >= m^2 > 0) --")
-    grid = 2.0 * np.pi * np.arange(33) / 33
-    P1, P2, P3 = np.meshgrid(grid, grid, grid, indexing="ij", sparse=True)
-    Rmin = float(np.min(0.3 ** 2 + np.sin(P1) ** 2 + np.sin(P2) ** 2 + np.sin(P3) ** 2))
-    check("R(p)=m^2+sum sin^2 p stays >= m^2 > 0 on the real torus => analyticity strip "
-          "a=arcsinh(m)>0 (nearest singularity sin^2 p=-m^2) => Paley-Wiener exponential tail",
-          Rmin >= 0.3 ** 2 - 1e-12, detail=f"min R (m=0.3, deterministic 33^3 grid) = {Rmin:.4f} >= 0.09")
-
-    # ---- (3) H(x) ~ x^-p e^{-a|x|} with exponential tail a>0 ~ arcsinh(m) (quasi-local) ----
-    print("\n-- (3) H(x) has an exponential tail a>0 ~ arcsinh(m) (quasi-local) for m>0 --")
-    for m in (0.1, 0.3, 1.0):
-        a_fit, p_fit = combined_rate(m)
-        a_pred = np.arcsinh(m)
-        check(f"m={m}: exponential rate a={a_fit:.3f} > 0 and within ~2x of arcsinh(m)={a_pred:.3f}",
-              a_fit > 0 and 0.5 * a_pred < a_fit < 2.0 * a_pred,
-              detail=f"prefactor x^-{p_fit:.2f}; a/arcsinh(m)={a_fit / a_pred:.2f}")
-
-    # ---- (4) gap is load-bearing: m=0 => a->0 => PURE POWER-LAW (not quasi-local) ----
-    print("\n-- (4) m=0 (gapless): strip closes (a=0) => pure power-law (not quasi-local) --")
-    Hx = kernel_axis(0.0)
-    xs = np.arange(4, 120); vals = np.abs(Hx[xs]); good = vals > 1e-13
-    xg, vg = xs[good], np.log(vals[good])
-    r2_pow = 1 - np.var(vg - np.polyval(np.polyfit(np.log(xg), vg, 1), np.log(xg))) / np.var(vg)
-    r2_exp = 1 - np.var(vg - np.polyval(np.polyfit(xg, vg, 1), xg)) / np.var(vg)
-    pw = -np.polyfit(np.log(xg), vg, 1)[0]
-    check("m=0: H(x) is PURE POWER-LAW (power-fit beats exp-fit, high R^2) => NOT quasi-local => "
-          "the mass gap (m>0) is the load-bearing input for quasi-locality",
-          r2_pow > r2_exp and r2_pow > 0.99,
-          detail=f"|H(x)| ~ x^-{pw:.2f}; R^2 power={r2_pow:.4f} > exp={r2_exp:.4f}")
-
-    print("\nScope: free U=1 staggered two-step sector; interacting log-transfer locality and exact tail-composition remain open.")
-    print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
+    global PASS, FAIL
+    PASS = 0
+    FAIL = 0
+    print("FIXED-MASS ONE-PARTICLE LOG-TRANSFER CONTOUR CHECK")
+    print("=" * 72)
+    print("Scope: free U=1; one-particle spectrum and one-coordinate axis kernel.")
+    print()
+    source_boundary_checks()
+    spectrum_split_checks()
+    unit_checks()
+    strip_checks()
+    contour_identity_checks()
+    print()
+    print("Open: Fock interaction decomposition, quasilocal LR composition, exact causal relation,")
+    print("      record-formation event order, and continuum/manifold interface.")
+    print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 
 

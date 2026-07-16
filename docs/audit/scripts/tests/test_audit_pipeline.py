@@ -865,11 +865,22 @@ class ApplyAuditTest(unittest.TestCase):
         runner_path = "scripts/test_runner.py"
         runner_body = "print('PASS=1 FAIL=0')\n"
         self.fx.write_runner(runner_path, runner_body)
+        helper_b_path = "scripts/helper_b.py"
+        helper_b_body = "VALUE = 'b'\n"
+        helper_a_path = "scripts/helper_a.py"
+        helper_a_body = "VALUE = 'a'\n"
+        self.fx.write_runner(helper_b_path, helper_b_body)
+        self.fx.write_runner(helper_a_path, helper_a_body)
 
         path, note_hash = self._seed_one_row("test_clean_row", criticality="leaf")
         # Add runner_path to ledger row
         led = self.fx.read_ledger()
         led["rows"]["test_clean_row"]["runner_path"] = runner_path
+        led["rows"]["test_clean_row"]["helper_runner_paths"] = [
+            helper_b_path,
+            helper_a_path,
+            helper_b_path,
+        ]
         self.fx.write_ledger(led)
 
         audit = {
@@ -898,6 +909,13 @@ class ApplyAuditTest(unittest.TestCase):
         import hashlib
         expected = hashlib.sha256(runner_body.encode("utf-8")).hexdigest()
         self.assertEqual(snap["runner_hash"], expected)
+        self.assertEqual(
+            snap["helper_runner_hashes"],
+            {
+                helper_a_path: hashlib.sha256(helper_a_body.encode()).hexdigest(),
+                helper_b_path: hashlib.sha256(helper_b_body.encode()).hexdigest(),
+            },
+        )
 
     def test_weak_independence_blocks_audited_clean(self):
         m = _import("apply_audit")
@@ -4549,6 +4567,42 @@ class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):
                 "audit_state_snapshot": {**base_snap, "criticality": "leaf"},
             }
             self.assertIsNone(m.detect_invalidation(row_noop, {}))
+
+    def test_helper_runner_manifest_drift_invalidates_audit(self):
+        m = _import("invalidate_stale_audits")
+        base = {
+            "claim_id": "helper_manifest_test",
+            "audit_status": "audited_conditional",
+            "negative_assertion_classes": [],
+            "deps": [],
+            "criticality": "leaf",
+            "helper_runner_paths": ["scripts/helper.py"],
+            "audit_state_snapshot": {
+                "criticality": "leaf",
+                "deps": [],
+                "dep_effective_status": {},
+                "runner_hash": None,
+                "helper_runner_hashes": {"scripts/helper.py": "a" * 64},
+            },
+        }
+        with mock.patch.object(
+            m.rc,
+            "runner_sha256",
+            side_effect=lambda path: "b" * 64 if path == "scripts/helper.py" else None,
+        ):
+            reason = m.detect_invalidation(dict(base), {})
+        self.assertEqual(
+            reason,
+            "helper_runner_hash_changed:scripts/helper.py:aaaaaaaa->bbbbbbbb",
+        )
+
+        path_changed = dict(base)
+        path_changed["helper_runner_paths"] = ["scripts/replacement.py"]
+        with mock.patch.object(m.rc, "runner_sha256", return_value=None):
+            self.assertEqual(
+                m.detect_invalidation(path_changed, {}),
+                "helper_runner_paths_changed",
+            )
 
     def test_soft_reset_preserves_audit_evidence_as_first_audit(self):
         """A soft reset must mirror apply_audit's first-pass flow: clean

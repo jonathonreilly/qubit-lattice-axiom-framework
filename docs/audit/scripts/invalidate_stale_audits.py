@@ -449,6 +449,22 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
             else:
                 return f"runner_hash_changed:{snap_runner_hash[:8]}->{cur_runner_hash[:8]}"
 
+        snap_helper_hashes = snap.get("helper_runner_hashes")
+        if isinstance(snap_helper_hashes, dict):
+            current_helper_paths = sorted(set(row.get("helper_runner_paths") or []))
+            if sorted(snap_helper_hashes) != current_helper_paths:
+                return "helper_runner_paths_changed"
+            for helper_path in current_helper_paths:
+                before = snap_helper_hashes.get(helper_path)
+                after = rc.runner_sha256(helper_path)
+                if before != after:
+                    before_short = before[:8] if isinstance(before, str) else "missing"
+                    after_short = after[:8] if isinstance(after, str) else "missing"
+                    return (
+                        f"helper_runner_hash_changed:{helper_path}:"
+                        f"{before_short}->{after_short}"
+                    )
+
     artifact_reason = runner_artifact_issue_resolved(row)
     if artifact_reason is not None:
         return artifact_reason

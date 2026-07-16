@@ -703,6 +703,16 @@ def snapshot_audit_state(row: dict, rows: dict[str, dict]) -> dict:
                 runner_hash_value = _hashlib.sha256(rp.read_bytes()).hexdigest()
             except OSError:
                 runner_hash_value = None
+    helper_runner_hashes: dict[str, str | None] = {}
+    for helper_path in sorted(set(row.get("helper_runner_paths") or [])):
+        hp = REPO_ROOT / helper_path
+        helper_hash: str | None = None
+        if hp.exists():
+            try:
+                helper_hash = hashlib.sha256(hp.read_bytes()).hexdigest()
+            except OSError:
+                pass
+        helper_runner_hashes[helper_path] = helper_hash
     return {
         "deps": deps,
         "dep_effective_status": {
@@ -737,6 +747,7 @@ def snapshot_audit_state(row: dict, rows: dict[str, dict]) -> dict:
         "load_bearing_score": row.get("load_bearing_score"),
         "transitive_descendants": row.get("transitive_descendants"),
         "runner_hash": runner_hash_value,
+        "helper_runner_hashes": helper_runner_hashes,
     }
 
 

@@ -12,6 +12,7 @@ from pathlib import Path
 import numpy as np
 
 from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
+    SOURCE_SECTOR_BOUNDARY,
     exact_small_case as source_factorization_exact_small_case,
 )
 
@@ -121,8 +122,11 @@ def main() -> int:
         "explicit transfer-state identification at `beta = 6` still open" in transfer,
     )
     check(
-        "The source-sector exact helper verifies supplied diagonal D and rejects the old diagonality inference",
-        bool(factor_exact["d_exact"])
+        "The source-sector boundary contract and exact helper keep the theorem supplied-D-only and reject the old diagonality inference",
+        SOURCE_SECTOR_BOUNDARY.supplied_character_diagonal_only
+        and not SOURCE_SECTOR_BOUNDARY.derives_wilson_residual
+        and SOURCE_SECTOR_BOUNDARY.wilson_diagonality_open
+        and bool(factor_exact["d_exact"])
         and bool(factor_exact["formula_exact"])
         and bool(factor_exact["hostile_self_adjoint"])
         and bool(factor_exact["hostile_swap"])

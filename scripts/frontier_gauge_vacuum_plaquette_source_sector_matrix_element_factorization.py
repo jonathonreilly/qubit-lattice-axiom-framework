@@ -34,6 +34,20 @@ HOSTILE_PASS = 0
 FAIL = 0
 
 
+@dataclass(frozen=True)
+class SourceSectorBoundary:
+    supplied_character_diagonal_only: bool
+    derives_wilson_residual: bool
+    wilson_diagonality_open: bool
+
+
+SOURCE_SECTOR_BOUNDARY = SourceSectorBoundary(
+    supplied_character_diagonal_only=True,
+    derives_wilson_residual=False,
+    wilson_diagonality_open=True,
+)
+
+
 def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM") -> None:
     global THEOREM_PASS, SUPPORT_PASS, HOSTILE_PASS, FAIL
     status = "PASS" if condition else "FAIL"

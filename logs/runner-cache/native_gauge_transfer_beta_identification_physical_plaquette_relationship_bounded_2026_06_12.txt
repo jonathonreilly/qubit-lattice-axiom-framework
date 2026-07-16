@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/native_gauge_transfer_beta_identification_physical_plaquette_relationship_bounded_2026_06_12.py
-runner_sha256: ffa47705bfa2856d4f2ba4207475d745c5a9d37f0d511a464f1015cbfe3aa377
+runner_sha256: 34cc71b80b23d53e54013137ab5c2cec18ed71f3a02391eeb3601e13ea1c8468
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.78
+elapsed_sec: 0.79
 status: ok
 ----- stdout -----
 Native transfer beta vs physical plaquette beta relationship verifier
@@ -11,7 +11,7 @@ Native transfer beta vs physical plaquette beta relationship verifier
 PASS: relationship note defines the native transfer operator and diagonal ratio without scratch dependencies
 PASS: character recurrence note fixes J as the plaquette source
 PASS: tensor-transfer note states the Wilson coefficient expansion with beta/3
-PASS: source-sector exact helper verifies supplied diagonal algebra and rejects the old diagonality inference
+PASS: source-sector boundary contract and exact helper keep the algebra supplied-D-only and reject the old diagonality inference
 PASS: plaquette note states the finite Wilson action and average plaquette object
 PASS: plaquette note fences the 0.5934 value as admitted comparison/reuse
 PASS: Wilson positivity note gives the equivalent beta/(2Nc) character argument

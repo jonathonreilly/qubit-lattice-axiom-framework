@@ -16,6 +16,7 @@ import numpy as np
 from scipy.special import iv
 
 from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
+    SOURCE_SECTOR_BOUNDARY,
     exact_small_case as source_factorization_exact_small_case,
 )
 
@@ -176,8 +177,11 @@ def main() -> int:
         in tensor,
     )
     check(
-        "source-sector exact helper verifies supplied diagonal algebra and rejects the old diagonality inference",
-        bool(source_exact["d_exact"])
+        "source-sector boundary contract and exact helper keep the algebra supplied-D-only and reject the old diagonality inference",
+        SOURCE_SECTOR_BOUNDARY.supplied_character_diagonal_only
+        and not SOURCE_SECTOR_BOUNDARY.derives_wilson_residual
+        and SOURCE_SECTOR_BOUNDARY.wilson_diagonality_open
+        and bool(source_exact["d_exact"])
         and bool(source_exact["formula_exact"])
         and bool(source_exact["hostile_self_adjoint"])
         and bool(source_exact["hostile_swap"])

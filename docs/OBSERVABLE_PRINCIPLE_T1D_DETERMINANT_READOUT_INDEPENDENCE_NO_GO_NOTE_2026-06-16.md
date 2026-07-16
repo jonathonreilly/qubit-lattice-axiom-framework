@@ -21,8 +21,9 @@ from:
 1. finite scalar Record additivity for already supplied disjoint records;
 2. determinant multiplicativity on direct sums;
 3. continuity of a scalar source readout on finite positive source data; and
-4. the real-positive determinant branch supplied by
-   [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md).
+4. the L1/L2 real-positive determinant branch supplied by the
+   [real-diagonal source det-positivity lemma](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md),
+   which expressly supplies no determinant-only or source-to-record bridge.
 
 The axiom input is
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md): Record supplies
@@ -106,7 +107,7 @@ readout a function of determinant alone.
 
 **N3 -- Hidden-wall scan.** The used inputs are explicit: minimal axioms,
 finite determinant/direct-sum algebra, continuity on the positive source cone,
-and the retained positive-branch determinant lemma. Future readout-context
+and the L1/L2 positive-branch determinant lemma. Future readout-context
 theorems or approved primitives are named as future import-retirement paths,
 not consumed here.
 

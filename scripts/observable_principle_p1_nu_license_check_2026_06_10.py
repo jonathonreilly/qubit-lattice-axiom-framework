@@ -59,7 +59,7 @@ license-hunt outcome over the retained surface:
     (phi = sech^2 u - tanh u, zero at tanh u0 = (sqrt5-1)/2 with
     h'(u0) != 0) and nu = oo, while sup|zW'| = 1 — it is also the
     strictness witness separating (BR) from (NU).
-  - Amplitude-side retained rows (det-positivity L1/L2, RP gauge-half
+  - Amplitude-side rows (det-positivity L1/L2, RP gauge-half
     Cauchy-Schwarz, transfer/quasilocality structure) are readout-blind:
     on an exact 4x4 PD/Neumann family (rational Givens instance,
     det(I+B) = 10 recomputed; z(t) = (t^2+4)(t^2+16)/64 on the licensed
@@ -67,8 +67,8 @@ license-hunt outcome over the retained surface:
     reference to W and log, W_G, W_Q all compose admissibly; moreover the
     licensed L2 image is the compact [1, 85/64], on which EVERY exponent
     has finite response sup — so the full-R_{>0} clause of (NU)/(BR) is
-    exactly the already-declared T1-d / lemma-L3 domain hypothesis and
-    cannot come from L2.
+    exactly the already-declared T1-d domain hypothesis and cannot come from
+    the L1/L2 det-positivity lemma.
   - Ledger scan: zero retained-grade rows match curvature / barrier /
     response-bound / resolution vocabulary (extends the barrier note's T10).
 
@@ -98,6 +98,7 @@ Expected: TOTAL: PASS=38 FAIL=0
 
 from __future__ import annotations
 
+import glob
 import json
 import os
 import re
@@ -133,6 +134,7 @@ TARGET_NOTE = os.path.join(
     "OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
 )
 LEDGER = os.path.join(REPO, "docs", "audit", "data", "audit_ledger.json")
+LEDGER_SHARDS = os.path.join(REPO, "docs", "audit", "data", "ledger", "*", "*.json")
 
 z = sp.Symbol("z", positive=True)
 u = sp.Symbol("u", real=True)
@@ -404,7 +406,7 @@ check(
 )
 
 # ----------------------------------------------------------------------
-print("== T7: amplitude-side retained rows are readout-blind (exact PD/Neumann family) ==")
+print("== T7: amplitude-side rows are readout-blind (exact PD/Neumann family) ==")
 J2 = sp.Matrix([[0, 1], [-1, 0]])
 cth, sth = sp.Rational(3, 5), sp.Rational(4, 5)
 Q = sp.Matrix(
@@ -466,7 +468,7 @@ check(
     "A",
     "compact collapse on the licensed L2 image [1, 85/64] (and on [1,2]): every p has "
     "finite response sup (monotone endpoint evaluation) — (BR)/(NU) select NOTHING there; "
-    "the full-R_>0 clause is exactly the declared T1-d / lemma-L3 domain hypothesis",
+    "the full-R_>0 clause is exactly the declared T1-d domain hypothesis, not L1/L2 content",
     sup_finite_on_image
     and all(
         sp.Abs(zv**sp.Rational(1, 2)).is_finite for zv in [sp.Integer(1), sp.Integer(2)]
@@ -492,10 +494,18 @@ check(
 
 # ----------------------------------------------------------------------
 print("== T9: ledger scan — zero retained-grade suppliers (extends barrier-note T10) ==")
-with open(LEDGER, "r", encoding="utf-8") as fh:
-    ledger = json.load(fh)
-rows = ledger["rows"]
-retained_grades = {"retained", "retained_bounded", "retained_pending_chain", "retained_no_go"}
+if os.path.exists(LEDGER):
+    with open(LEDGER, "r", encoding="utf-8") as fh:
+        rows = json.load(fh)["rows"]
+else:
+    rows = {}
+    for shard_path in glob.glob(LEDGER_SHARDS):
+        with open(shard_path, "r", encoding="utf-8") as fh:
+            row = json.load(fh)
+        claim_id = row.get("claim_id")
+        if claim_id:
+            rows[claim_id] = row
+retained_grades = {"retained", "retained_bounded", "retained_no_go"}
 patterns = re.compile(
     r"barrier|self_concordan|operator_monoton|complete_monoton|bernstein"
     r"|bounded_response|response_bound|log_scale|readout_curvature|readout_regularity"
@@ -512,20 +522,23 @@ check(
     licensed == [],
     detail=f"matches={licensed!r}",
 )
-ctx = {
-    "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31": "retained_no_go",
-    "observable_principle_record_scalar_map_no_go_note_2026-06-05": "retained_no_go",
-    "post_record_count_probability_firewall_2026-06-06": "retained_no_go",
-    "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06": "retained",
-    "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
-    "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": "retained_pending_chain",
-}
-ctx_ok = all(rows.get(k, {}).get("effective_status") == v for k, v in ctx.items())
-check("B", "cited rows present at the cited effective statuses (one-hop, presence check)", ctx_ok)
+ctx_rows = (
+    "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31",
+    "observable_principle_record_scalar_map_no_go_note_2026-06-05",
+    "post_record_count_probability_firewall_2026-06-06",
+    "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06",
+    "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+)
+ctx_ok = all(claim_id in rows for claim_id in ctx_rows)
 check(
     "B",
-    "Fisher row and det-positivity lemma are visible candidate rows (the two strongest "
-    "candidate suppliers were assessed at full strength, not strawmanned)",
+    "cited context rows are present; no audit outcome is hard-pinned by this verifier",
+    ctx_ok,
+)
+check(
+    "B",
+    "Fisher row and L1/L2 det-positivity lemma are visible candidate rows (the two strongest "
+    "candidate suppliers were assessed at their stated scope, not strawmanned)",
     "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06" in rows
     and "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08" in rows,
 )

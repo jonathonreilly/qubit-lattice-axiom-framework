@@ -26,9 +26,9 @@ hypothesis-conditional (det-positivity: `m > 0`; Jacobi derivative:
 "for any complex matrix M" — an identity with no finiteness clause,
 verified here to hold at `det = 0`), supplied (flavor heat-kernel
 path), or off the realized matter-kernel sector (Higgs taste carrier;
-thermal-circle zeta ladders). The retained-pending real-diagonal
-source candidate is likewise hypothesis-conditional (`For invertible
-real antisymmetric D`) and is not treated as retained-grade. The
+thermal-circle zeta ladders). The L1/L2 real-diagonal source candidate
+is likewise hypothesis-conditional (`For invertible real antisymmetric D`)
+and is consumed only at that stated source scope. The
 retained Stefan-Boltzmann/`g*` rows do not supply the realized
 matter-kernel inventory: the supplied-inventory row is currently
 unaudited, and the axiom-first fermionic SB row is retained_bounded
@@ -130,8 +130,8 @@ determinant and free-energy-density decorations; the staggered-only
 det-positivity Case A row (retained); the staggered-Wilson
 det-positivity bridge (retained); the Berezin determinant row
 (retained_bounded); the flavor log-det Jacobi-derivative row
-(retained); the real-diagonal det-positivity/log-readout lemma
-(retained_pending_chain, not retained-grade); the Higgs mean-field
+(retained); the real-diagonal L1/L2 det-positivity lemma (source-scoped,
+with no readout license consumed); the Higgs mean-field
 determinant taste bridge (retained); the flavor supplied-heat-kernel
 row (retained_bounded); the twisted thermal-zeta period quotient
 (retained). The ratio/quartic Matsubara rows and heat-kernel
@@ -275,9 +275,9 @@ consumed as **tested clauses** — their own hypotheses, quantifiers,
 and normalization clauses define what is checked — never as truth
 inputs about either branch:
 
-1. [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) —
+1. [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) —
    axiom premise node. License used: Lattice (`Z³`, translations, NN
-   cubic adjacency) and Quantum (per-site qubit) for the
+   cubic adjacency) and Qubit (per-site qubit) for the
    constructions. No dynamics drawn.
 2. [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
    — retained. License used: the single-mode-per-site one-particle
@@ -314,10 +314,10 @@ inputs about either branch:
 10. [`FLAVOR_LOGDET_FACTOR_4B_JACOBI_DERIVATIVE_NARROW_THEOREM_NOTE_2026-06-04.md`](FLAVOR_LOGDET_FACTOR_4B_JACOBI_DERIVATIVE_NARROW_THEOREM_NOTE_2026-06-04.md)
     — retained. License used: its hypothesis clause ("invertible on
     an open neighborhood") as the tested clause (check 13).
-11. [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
-    — retained_pending_chain. License used: L1/L2 hypothesis clauses
-    ("For invertible real antisymmetric D") as the tested clause
-    (check 13).
+11. [Real-diagonal source det-positivity lemma](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
+    — source note. License used: only the L1/L2 hypothesis clauses
+    ("For invertible real antisymmetric D") as the tested clause (check 13).
+    No determinant-only or log-readout license is consumed.
 12. [`HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md`](HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md)
     — retained. License used: its fixed-carrier scope
     (`dim H_taste = 16`) as the tested clause (check 13).
@@ -413,8 +413,8 @@ determinant/Matsubara/heat-kernel candidate set is (i)
 staggered-scoped and gapped on its own surface
 (Matsubara family), (ii) hypothesis-conditional on `m > 0` or
 invertibility with a branch-neutral mechanism (det-positivity rows;
-Jacobi; with the retained-pending real-diagonal candidate treated as
-non-retained), (iii) a matrix-agnostic identity with no
+Jacobi; with the real-diagonal candidate consumed only at its stated L1/L2
+source scope), (iii) a matrix-agnostic identity with no
 finiteness clause (Berezin, verified at `det = 0`), (iv) supplied
 (flavor heat kernel), or (v) off the realized matter-kernel sector
 (Higgs taste carrier; thermal-circle zeta). Hence no retained
@@ -466,7 +466,7 @@ branches.** ∎ (Runner checks 17-20.)
   both Euclidean representatives; (3) Berezin/Jacobi/real-diagonal /
   heat-kernel determinant identities, ATTEMPTED, fail because they
   are matrix-agnostic, supplied, hypothesis-conditional, or
-  retained-pending rather than realized-kernel finiteness clauses;
+  source-scoped rather than realized-kernel finiteness clauses;
   (4) Stefan-Boltzmann / `g_eff`, ATTEMPTED, identifies the strongest
   future supplier but fails at present because the retained row is
   supplied-inventory-conditional and does not quantify over the

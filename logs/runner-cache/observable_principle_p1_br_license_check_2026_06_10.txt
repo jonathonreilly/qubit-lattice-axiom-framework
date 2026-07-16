@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/observable_principle_p1_br_license_check_2026_06_10.py
-runner_sha256: 0e4b11a6ad07674bf69bc4ff0e357c690590b59ccbea7aec56e7850d1fe2cf59
+runner_sha256: 36339ab603f041b0f3d6c9794ccf1fb1037df8ee029d2ac11be94e789fe7bae1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.54
+elapsed_sec: 1.52
 status: ok
 ----- stdout -----
 == T1: the clause under hunt — (BR) and its selection chain, recomputed ==
@@ -37,11 +37,11 @@ status: ok
   [PASS][C] the K-side cannot follow from finite local dimension: Z^3 supplies strictly increasing register counts (2n+1)^3 (derivative 6(2n+1)^2 > 0; (2*50+1)^3 = 1030301 > 10^6) with no cap — per-site boundedness times unbounded site count yields NO per-e-fold cap; no retained row couples amplitude e-folds to register counts
   [PASS][B] effect-side rows are readout-blind: Busch/Gleason/local-tomography notes present, their subject is the effect/state measure (Busch note's load-bearing direction is m(E)=Tr(sigma E)), and none of them contains readout-response vocabulary — the readout W does not occur in their statements, so they cannot discriminate (BR) from its violations
 == T8: falsification legs — compact collapse and the granted-clause completion ==
-  [PASS][D] compact collapse: on [1, e] and on the licensed L2 Neumann image [1, 85/64] every member has finite response and finite e-fold increment (monotone endpoint evaluation) — (BR)/(BR-int)/(CAP) select NOTHING there; the full-R_>0 clause is exactly the declared T1-d / lemma-L3 domain hypothesis, no hidden domain freedom
+  [PASS][D] compact collapse: on [1, e] and on the licensed L2 Neumann image [1, 85/64] every member has finite response and finite e-fold increment (monotone endpoint evaluation) — (BR)/(BR-int)/(CAP) select NOTHING there; the full-R_>0 clause is exactly the declared T1-d domain hypothesis, not L1/L2 det-positivity content
   [PASS][D] granting the missing capacity clauses completes the selection exactly: with (CAP-M)+(CAP-K) granted the pass set is {p = 0} and W = c log z follows with T1-d's remaining clauses — the missing license is the single load-bearing gap
 == T9: ledger scan — zero retained-grade capacity/rate suppliers (extends NU-note T9) ==
   [PASS][B] extended ledger scan: ZERO retained-grade rows match capacity/rate/resolution/response-bound vocabulary — (BR), (BR-int), and the (CAP) clauses are all unlicensed  -- matches=[]
-  [PASS][B] cited rows present at their current admissible effective statuses; unbounded Record is audited_conditional and local tomography is retained_bounded or retained_pending_chain in the live ledger  -- mismatches={}
+  [PASS][B] cited context rows are present; no audit outcome is hard-pinned by this verifier
   [PASS][B] the three candidate record-capacity suppliers are visible rows (assessed at full strength, not strawmanned)
   [PASS][B] campaign chain on disk: the NU-license note names the record-capacity/finite-resolution hunt target and the barrier note declares its premise unlicensed
 == T10: note honest-scope, firewall-compliance, and boundary strings ==

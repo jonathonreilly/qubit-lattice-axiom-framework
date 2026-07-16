@@ -26,9 +26,10 @@ Goal:
                            records. NOT derivable from the axiom memo, which
                            excludes source/action and physical-observable
                            identification from Record content.
-    T1-e (lemma fact L3):  Cauchy uniqueness on R_{>0}: the continuous
-                           additive solutions are exactly the family
-                           {W_c = c log r : c in R}; c = 1 is conventional.
+    T1-e (elementary math): once T1-d separately supplies determinant-only
+                            dependence, source-block-to-record composition,
+                            and continuity on R_{>0}, Cauchy uniqueness gives
+                            {W_c = c log r : c in R}; c = 1 is conventional.
 
   The Cauchy family includes the degenerate c=0 null readout. The source-
   response and selector checks below use the conventional nonzero c=1
@@ -1009,9 +1010,10 @@ def test_lemma_facts_recomputed_on_runner_blocks():
         "\n  Summary: the lemma facts this note consumes (L1 cone positivity and\n"
         "  mechanism, L2 Neumann hypothesis and patch positivity) are recomputed\n"
         "  on the runner's own blocks, so T1-b is runner-verified rather than\n"
-        "  citation-only. The Cauchy-uniqueness fact L3 remains cited from the\n"
-        "  lemma; its continuity-on-R_{>0} hypothesis is part of the declared\n"
-        "  readout-identification bridge premise (the Boundary, T1-d)."
+        "  citation-only. No L3 readout fact is cited from that lemma. The declared\n"
+        "  Boundary T1-d separately supplies determinant-only dependence, the\n"
+        "  source-block-to-record bridge, and the full continuity domain; Cauchy\n"
+        "  uniqueness is then elementary mathematics."
     )
 
 

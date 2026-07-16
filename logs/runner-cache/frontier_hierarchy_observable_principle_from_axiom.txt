@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_observable_principle_from_axiom.py
-runner_sha256: ed60d623198785d933063a0b4db2907738061425e84efe5bb40eb0b9607e455a
+runner_sha256: 6b01ea3b047acd4c697bb20abf31c60c1d1ec2613b52a68f40ef22b077787172
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 Hierarchy observable principle with declared finite readout boundary
@@ -87,7 +87,7 @@ PART 3: UNIFORM SCALAR SOURCE GIVES THE EXACT HIERARCHY GENERATOR
   [PASS] uniform-source log|det| generator matches the exact Matsubara formula (u0 = 0.9 and 1.17)
          max absolute generator error = 2.64e-14
   [PASS] spec(D) equals the exact multiset {+-i u0 sqrt(3 + sin^2 omega)} x4 per mode
-         max eigenvalue multiset error = 1.51e-14
+         max eigenvalue multiset error = 1.11e-14
   [PASS] pair-product determinant identity: log|det(D+jI)| = 4 sum_w log(j^2 + u0^2(3+sin^2 w))
          max pair-product identity error = 2.13e-14
   [PASS] the scalar generator is exactly bosonic/sign-blind: W(j) = W(-j)
@@ -182,7 +182,7 @@ PART 8: DET-POSITIVITY LEMMA FACTS L1/L2 RECOMPUTED ON THE RUNNER BLOCKS
   [PASS] L1 mechanism recomputed: B = S^(-1/2) D S^(-1/2) is real antisymmetric
          max ||B^T + B||_F = 1.10e-14
   [PASS] L1 mechanism recomputed: det(I+B) = prod(1 + lambda_k^2) >= 1
-         max |log det(I+B) - sum log(1+lambda^2)| = 1.42e-14, min log det(I+B) = 33.870001 (>= 0)
+         max |log det(I+B) - sum log(1+lambda^2)| = 2.84e-14, min log det(I+B) = 33.870001 (>= 0)
   [PASS] L2 hypothesis recomputed: ||D^-1 J|| < 1 for every source magnitude used in this runner
          max ||D^-1 J||_2 bound = 0.062639 (< 1, Neumann patch covers the consumed sources)
   [PASS] L2 patch positivity recomputed: slogdet sign = +1 for signed sources in the Neumann patch
@@ -191,9 +191,10 @@ PART 8: DET-POSITIVITY LEMMA FACTS L1/L2 RECOMPUTED ON THE RUNNER BLOCKS
   Summary: the lemma facts this note consumes (L1 cone positivity and
   mechanism, L2 Neumann hypothesis and patch positivity) are recomputed
   on the runner's own blocks, so T1-b is runner-verified rather than
-  citation-only. The Cauchy-uniqueness fact L3 remains cited from the
-  lemma; its continuity-on-R_{>0} hypothesis is part of the declared
-  readout-identification bridge premise (the Boundary, T1-d).
+  citation-only. No L3 readout fact is cited from that lemma. The declared
+  Boundary T1-d separately supplies determinant-only dependence, the
+  source-block-to-record bridge, and the full continuity domain; Cauchy
+  uniqueness is then elementary mathematics.
 
 ==============================================================================
 PART 9: T1-D READOUT-INDEPENDENCE GUARDRAIL

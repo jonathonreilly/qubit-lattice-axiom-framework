@@ -1,0 +1,9 @@
+PASS Staggered hop is anti-Hermitian bipartite and obeys the four-dimensional norm envelope: anti-Hermitian=0.000e+00, bipartite=0.000e+00, ||M||=1.680287
+PASS D dagger D has the exact massive range-two form and Q is a strict contraction: A identity=2.187e-15, spec(A)=[1.000328,3.823363], ||Q||=0.941157, universal r=0.941176
+PASS Positive determinant equals one half trace log and the exact Q series converges: logdet residual=3.553e-15, series errors=5.409e-01,5.089e-02,4.744e-05,7.238e-15
+PASS The same strict-contraction series gives the quasilocal staggered inverse: A^-1 errors=5.792e-01,1.351e-01,4.002e-04,3.122e-14, D^-1 residual=1.058e-15
+PASS Finite powers are exactly local before the agreement boundary: central block residuals Q^1..Q^3=0.000e+00,0.000e+00,0.000e+00
+PASS Antiperiodic seam influence decays away from the seam: log-density differences=5.824e-03,1.063e-04,2.285e-06,5.332e-08, inverse differences=1.311e-03,3.694e-05,1.071e-06,3.135e-08
+PASS Every strictly positive mass gives an exponential Hölder radius below one: m=0.01:r=0.999993750039, m=0.1:r=0.999375390381, m=1.0:r=0.941176470588, m=10.0:r=0.137931034483
+PASS Source-note boundary and N1-N8 contract: missing=[]; attempted routes=8; directional pairs=15
+SCORECARD PASS=8 FAIL=0

@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py
-runner_sha256: 3b349605ef5da7162f94b7f0d2aff460f42753b154069ffeeef0be18603e4dc8
+runner_sha256: 1359799bb51b8c94ad2e6910731437592b43c8f8cbe22906e71f4ef3b806d220
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 9.07
+elapsed_sec: 9.17
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
-Part 1 (T1): Schur orthogonality on the finite truncation B_N = B_4
+Part 1 (T1): Schur orthogonality on the finite B_4 truncation
 ----------------------------------------------------------------------------------------
   Using N_GRID = 80 for Weyl integration; matrix size 25 x 25
   [PASS (A)] Schur orthogonality off-diagonal: <chi_(p,q), chi_(p',q')> = 0 for (p,q) != (p',q') on test pairs  (off-diag pairs=72, ok=72, max err=6.805e-16)
@@ -23,7 +23,7 @@ Part 2 (T2): exact matrix-index contraction for character convolution
   [PASS (A)] (T2) raw same-irrep contraction equals Tr D_mu(V) / d_mu throughout B_4  (checked all 25 dimensions, from 1 through 125)
   [PASS (A)] hostile control rejects a missing 1/d_mu factor  (mutant gives Tr D_(1,0)(V), exactly three times the required contraction)
   [PASS (A)] (T2) d_lambda in Z cancels 1/d_mu and gives the exact 25 x 25 identity  (dimension-weighted raw convolution matrix assembled before rho)
-  [PASS (A)] (T2) For abstract rational positive-symmetric (rho_(p,q)): the contracted finite sum gives C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) for every (p,q) in B_N  (all 25 weights in B_4 pass exact matrix-polynomial comparison)
+  [PASS (A)] (T2) For abstract rational positive-symmetric (rho_(p,q)): the contracted finite sum gives C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) for every (p,q) in B_4  (all 25 weights in B_4 pass exact matrix-polynomial comparison)
 
 ----------------------------------------------------------------------------------------
 Part 3 (T3): uniqueness of (rho_(p,q)) for the diagonal operator R
@@ -35,7 +35,7 @@ Part 3 (T3): uniqueness of (rho_(p,q)) for the diagonal operator R
 ----------------------------------------------------------------------------------------
 Part 4 (T4): positivity, self-adjointness, conjugation-symmetry of R
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (T4) R is positive: rho_(p,q) >= 0 on every weight in B_N  (min rho = 0.00125 >= 0)
+  [PASS (A)] (T4) R is positive: rho_(p,q) >= 0 on every weight in B_4  (min rho = 0.00125 >= 0)
   [PASS (A)] (T4) R is self-adjoint (diagonal with real entries)  (||R - R^T||_inf = 0.000e+00)
   [PASS (A)] (T4) R commutes with the conjugation swap (p,q) <-> (q,p)  (||[swap, R]||_inf = 0.000e+00)
   [PASS (A)] (T4) Normalization: rho_(0,0) = 1 exactly  (|rho_(0,0) - 1| = 0.000e+00)
@@ -60,36 +60,37 @@ Part 6: independent deterministic Haar-SU(3) convolution check
 Narrow theorem summary
 ----------------------------------------------------------------------------------------
 
-  Narrow Pattern A theorem statement:
+  Narrow B_4 theorem statement:
 
   HYPOTHESIS:
-    Fix integer truncation N >= 0 with B_N = {(p, q) : 0 <= p, q <= N}.
-    Let (rho_(p,q))_(p,q in B_N) be an abstract real sequence with:
+    Fix N = 4 with B_4 = {(p, q) : 0 <= p, q <= 4}.
+    Let (rho_(p,q))_(p,q in B_4) be an abstract real sequence with:
       rho_(p,q) >= 0,
       rho_(p,q) = rho_(q,p),
       rho_(0,0) = 1.
     Define
       R chi_(p,q) = rho_(p,q) chi_(p,q),
-      Z(W)       = sum_(p,q in B_N) d_(p,q) rho_(p,q) chi_(p,q)(W),
+      Z(W)       = sum_(p,q in B_4) d_(p,q) rho_(p,q) chi_(p,q)(W),
       Z_(0,0)    = d_(0,0) rho_(0,0) = 1,
-      C_{Z/Z_(0,0)} f (V) = int_{SU(3)} (Z(V W^{-1}) / Z_(0,0)) f(W) dW.
+      C_{Z/Z_(0,0)} f (V) = int_{SU(3)} (Z(V W^{-1}) / Z_(0,0)) f(W) dW,
+      with normalized Haar probability measure dW.
 
   CONCLUSION:
-    (T1)  Schur character orthogonality on B_N:
+    (T1)  Schur character orthogonality on B_4:
               <chi_(p,q), chi_(p',q')>_Haar
                  = int_{SU(3)} chi_(p,q)(W) conj(chi_(p',q')(W)) dW
                  = delta_((p,q),(p',q')).
 
     (T2)  Diagonal-action identity:
-              C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)  on V_N.
+              C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)  on V_4.
 
     (T3)  Coefficient uniqueness:
-              R^(1) = R^(2)  iff  rho^(1) = rho^(2) on B_N.
+              R^(1) = R^(2)  iff  rho^(1) = rho^(2) on B_4.
 
     (T4)  R is positive, self-adjoint (in the Schur-orthonormal character basis),
           and commutes with the conjugation swap (p,q) <-> (q,p).
 
-  Audit-lane class:
+  Load-bearing step class:
     (A) - pure finite-dim SU(3) representation theory on an abstract real
     coefficient sequence. No Wilson action, no unmarked spatial environment,
     no beta = 6 framework-point input, no identification with the parent
@@ -97,7 +98,7 @@ Narrow theorem summary
 
   This narrow theorem isolates the abstract algebraic equivalence between
   diagonal-coefficient operators and convolution-by-central-class-function
-  operators on the finite SU(3) character truncation. It does NOT close the
+  operators on the finite SU(3) B_4 character truncation. It does NOT close the
   parent gate. The remaining physical-Wilson-coefficient derivation is
   separately addressed by the bounded companion
   GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.

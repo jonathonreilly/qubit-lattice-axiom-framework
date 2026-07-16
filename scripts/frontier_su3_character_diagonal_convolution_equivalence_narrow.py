@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Pattern A narrow runner for `SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10`.
+"""Abstract B_4 runner for `SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10`.
 
-Verifies, on the finite N = 4 truncation B_N = {(p, q) : 0 <= p, q <= 4} of
+Verifies, on the finite N = 4 truncation B_4 = {(p, q) : 0 <= p, q <= 4} of
 dominant SU(3) weights, the abstract algebraic equivalence between
 
   - the diagonal positive central operator
@@ -11,29 +11,29 @@ dominant SU(3) weights, the abstract algebraic equivalence between
 
   - the normalized convolution operator C_{Z/Z_(0,0)} by the central class
     function
-        Z(W) = sum_(p,q in B_N) d_(p,q) rho_(p,q) chi_(p,q)(W),
+        Z(W) = sum_(p,q in B_4) d_(p,q) rho_(p,q) chi_(p,q)(W),
     where d_(p,q) = (p+1)(q+1)(p+q+2)/2 is the irrep dimension and
     Z_(0,0) = d_(0,0) rho_(0,0) = 1.
 
-THEN the following identities hold (Pattern A, abstract finite-dim SU(3)
-representation theory):
+THEN the following identities hold on the abstract B_4 packet:
 
-  (T1) Schur character orthogonality on B_N (Peter-Weyl, standard
+  (T1) Schur character orthogonality on B_4 (Peter-Weyl, standard
        character normalization on a compact Lie group):
        <chi_(p,q), chi_(p',q')>_Haar
           = int_{SU(3)} chi_(p,q)(W) conj(chi_(p',q')(W)) dW
           = delta_((p,q),(p',q')).
 
   (T2) Diagonal action of normalized convolution:
-       C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) on V_N.
+       C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) on V_4.
 
   (T3) Uniqueness: rho^(1) = rho^(2) iff their diagonal operators agree.
 
   (T4) Positivity / self-adjointness / swap-symmetry of R under the
        abstract hypotheses (rho >= 0, rho symmetric, rho_(0,0) = 1).
 
-This is class-A pure abstract algebra on an abstract real coefficient
-sequence (rho_(p,q)) over the SU(3) character basis. **No** Wilson action,
+This is pure abstract finite-dimensional SU(3) representation theory on an
+abstract real coefficient sequence (rho_(p,q)) over the SU(3) character
+basis. **No** Wilson action,
 **no** unmarked spatial environment, **no** beta = 6 framework-point
 input, and **no** physical coefficient data are consumed.
 
@@ -137,7 +137,7 @@ def haar_inner_product(p1: int, q1: int, p2: int, q2: int, n_grid: int = 80) -> 
 
 
 # =============================================================================
-section("Part 1 (T1): Schur orthogonality on the finite truncation B_N = B_4")
+section("Part 1 (T1): Schur orthogonality on the finite B_4 truncation")
 # =============================================================================
 # Verify <chi_(p,q), chi_(p',q')> = delta_((p,q),(p',q')) numerically.
 # Quadrature grid is finite; the selected character products are expected to
@@ -381,8 +381,8 @@ check(
 
 # Construct an abstract POSITIVE SYMMETRIC rational coefficient sequence:
 def make_positive_symmetric(coef_map: dict[tuple[int, int], Fraction]) -> list[Fraction]:
-    """Build a sequence rho over B_N from a (p,q)->rational map, enforcing
-    rho_(p,q) = rho_(q,p) (use min of given pair) and rho_(0,0) = 1."""
+    """Build a sequence rho over B_4 from a (p,q)->rational map, enforcing
+    rho_(p,q) = rho_(q,p) and rho_(0,0) = 1."""
     rho = [Fraction(0)] * len(B_N)
     rho[INDEX[(0, 0)]] = Fraction(1)
     for (p, q), val in coef_map.items():
@@ -423,7 +423,7 @@ for target in B_N:
 check(
     "(T2) For abstract rational positive-symmetric (rho_(p,q)): "
     "the contracted finite sum gives C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) "
-    "for every (p,q) in B_N",
+    "for every (p,q) in B_4",
     all_targets_ok,
     detail=f"all {len(B_N)} weights in B_{N} pass exact matrix-polynomial comparison",
 )
@@ -486,7 +486,7 @@ for i, (p, q) in enumerate(B_N):
 # Positivity
 rho_min = min(R_matrix.diagonal())
 check(
-    "(T4) R is positive: rho_(p,q) >= 0 on every weight in B_N",
+    "(T4) R is positive: rho_(p,q) >= 0 on every weight in B_4",
     rho_min >= 0,
     detail=f"min rho = {rho_min} >= 0",
 )
@@ -797,36 +797,37 @@ check(
 section("Narrow theorem summary")
 # =============================================================================
 print("""
-  Narrow Pattern A theorem statement:
+  Narrow B_4 theorem statement:
 
   HYPOTHESIS:
-    Fix integer truncation N >= 0 with B_N = {(p, q) : 0 <= p, q <= N}.
-    Let (rho_(p,q))_(p,q in B_N) be an abstract real sequence with:
+    Fix N = 4 with B_4 = {(p, q) : 0 <= p, q <= 4}.
+    Let (rho_(p,q))_(p,q in B_4) be an abstract real sequence with:
       rho_(p,q) >= 0,
       rho_(p,q) = rho_(q,p),
       rho_(0,0) = 1.
     Define
       R chi_(p,q) = rho_(p,q) chi_(p,q),
-      Z(W)       = sum_(p,q in B_N) d_(p,q) rho_(p,q) chi_(p,q)(W),
+      Z(W)       = sum_(p,q in B_4) d_(p,q) rho_(p,q) chi_(p,q)(W),
       Z_(0,0)    = d_(0,0) rho_(0,0) = 1,
-      C_{Z/Z_(0,0)} f (V) = int_{SU(3)} (Z(V W^{-1}) / Z_(0,0)) f(W) dW.
+      C_{Z/Z_(0,0)} f (V) = int_{SU(3)} (Z(V W^{-1}) / Z_(0,0)) f(W) dW,
+      with normalized Haar probability measure dW.
 
   CONCLUSION:
-    (T1)  Schur character orthogonality on B_N:
+    (T1)  Schur character orthogonality on B_4:
               <chi_(p,q), chi_(p',q')>_Haar
                  = int_{SU(3)} chi_(p,q)(W) conj(chi_(p',q')(W)) dW
                  = delta_((p,q),(p',q')).
 
     (T2)  Diagonal-action identity:
-              C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)  on V_N.
+              C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)  on V_4.
 
     (T3)  Coefficient uniqueness:
-              R^(1) = R^(2)  iff  rho^(1) = rho^(2) on B_N.
+              R^(1) = R^(2)  iff  rho^(1) = rho^(2) on B_4.
 
     (T4)  R is positive, self-adjoint (in the Schur-orthonormal character basis),
           and commutes with the conjugation swap (p,q) <-> (q,p).
 
-  Audit-lane class:
+  Load-bearing step class:
     (A) - pure finite-dim SU(3) representation theory on an abstract real
     coefficient sequence. No Wilson action, no unmarked spatial environment,
     no beta = 6 framework-point input, no identification with the parent
@@ -834,7 +835,7 @@ print("""
 
   This narrow theorem isolates the abstract algebraic equivalence between
   diagonal-coefficient operators and convolution-by-central-class-function
-  operators on the finite SU(3) character truncation. It does NOT close the
+  operators on the finite SU(3) B_4 character truncation. It does NOT close the
   parent gate. The remaining physical-Wilson-coefficient derivation is
   separately addressed by the bounded companion
   GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.

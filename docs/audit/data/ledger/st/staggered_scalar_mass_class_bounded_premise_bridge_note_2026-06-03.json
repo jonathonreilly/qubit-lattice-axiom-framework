@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -143,6 +143,68 @@
         "total_pass": 28
       },
       "verdict_rationale": "Within the declared bounded scope, the source note is disciplined: it states the scalar-mass premise locally and does not present it as derived from baseline framework inputs. The cited determinant-positivity authority is marked retained, and the runner source performs actual matrix decompositions and sampled staggered SU(3) determinant-phase checks rather than merely printing pass counts. The runner does hard-code the premise label, so it cannot support any unbounded derivation of the scalar action class; that limitation is already inside the audited claim boundary."
+    },
+    {
+      "archived_at": "2026-07-16T03:27:50.065842+00:00",
+      "audit_date": "2026-07-16T03:27:34.352915+00:00",
+      "audit_invocation_history": [
+        "337f1fc441af483ebf0e1a1a44d6060d"
+      ],
+      "audit_invocation_id": "337f1fc441af483ebf0e1a1a44d6060d",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 9.974,
+        "runner_hash": "e055537a9c31c6ff587ffbebd7031de61e293e5a3faf4d30444a35a8a21f0351",
+        "transitive_descendants": 710
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-staggered_scalar_mass_cl-117",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The stated consequences follow once the row-local scalar-mass premise is supplied. The restricted packet does not derive or otherwise establish why the physical action class must be restricted to that premise.",
+      "claim_scope": "Given the row-local premise M = mI with m > 0 and M_epsilon = 0, the I/epsilon membership exclusions, exact scalar-line determinant positivity supplied by the retained Case A authority, and the stated finite-sample phase checks were audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-16T03:27:34.352915+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Under M = mI, m > 0 and M_epsilon = 0, pseudoscalar and mixed candidates lie outside the action class, while det(D + mI) is real-positive by the retained staggered Case A result.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained source-side derivation restricting the reviewed physical mass action to M = mI, m > 0 and M_epsilon = 0, then re-audit this row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 14,
+        "C": 6,
+        "D": 0,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The retained Case A authority supplies exact positivity on the real scalar line. The runner genuinely constructs sampled staggered operators and computes the reported decompositions and determinant phases, but it hard-codes rather than derives the scalar-mass action-class premise. Because that premise is neither a retained derivation nor an accepted framework premise in the restricted packet, the result remains conditional. The N1-N8 negative-claim gate is not a clean no-go packet: N1, N2, N5, N7, and N8 lack exhaustive route, independence, resolution, steelman, and echo dispositions; N3 makes the premise explicit, N4 supplies no prior-witness match, and N6 identifies no accepted primitive that closes the action-class restriction."
     }
   ],
   "prose_corrections": [],

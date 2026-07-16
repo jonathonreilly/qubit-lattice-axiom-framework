@@ -30,10 +30,10 @@ six-nearest-neighbor reachability relation all admit a family of kinetic forms
 with different `xi`.
 
 That is support for treating `c_t = c_s` as an explicitly approved primitive,
-not as a hidden consequence of Lattice, Quantum, Record, scale, reflection
-positivity, or the single-clock theorem. It is not a new axiom, not a Tier-A
-admission, and not a bounded-status source. Dependencies on the registered
-primitive chain-satisfy through `docs/audit/data/axiom_premise_nodes.json`
+not as a hidden consequence of Lattice, Qubit, Admissibility, Record, scale,
+reflection positivity, or the single-clock theorem. It is not a new axiom, not
+a Tier-A admission, and not a bounded-status source. Dependencies on the
+registered primitive chain-satisfy through `docs/audit/data/axiom_premise_nodes.json`
 without making downstream rows `retained_bounded`.
 
 ## Runner scope
@@ -114,7 +114,7 @@ This section applies the no-go discipline to the narrowed negative claim:
 ## Dependency links
 
 - [KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
-- [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)
+- [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md)
 - [SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md)
 - [SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md](SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md)
 - [SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md](SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md)

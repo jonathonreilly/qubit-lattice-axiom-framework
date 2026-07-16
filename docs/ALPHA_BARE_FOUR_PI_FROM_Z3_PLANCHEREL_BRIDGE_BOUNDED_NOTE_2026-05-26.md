@@ -45,7 +45,7 @@ alpha_bare = 1 / (4 pi).
 Thus the `(4 pi)` denominator in the alpha-bare convention is the same
 numeric `(4 pi)` exposed by the framework-local `Z^3` Green-kernel
 asymptotic in this static-source chain. This bridge does not derive the convention
-`alpha_bare := g_bare^2/(4 pi)` from the framework's Lattice + Quantum
+`alpha_bare := g_bare^2/(4 pi)` from the framework's Lattice + Qubit
 baseline; it composes the landed bounded
 and accepted-premise rows so the parent alpha-bare surface is explicit
 and audit-readable.
@@ -120,8 +120,8 @@ independent audit outcomes of its load-bearing rows.
 
 ## Non-Load-Bearing Context
 
-- `MINIMAL_AXIOMS_2026-06-05.md` states the current repo baseline containing
-  the Lattice, Quantum, and Record axioms.
+- `MINIMAL_AXIOMS_2026-06-29.md` states the current repo baseline containing
+  the Lattice, Qubit, Admissibility, and Record axioms.
 - `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md` names the
   broader hierarchy route; this bridge does not close that route.
 - `HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md`

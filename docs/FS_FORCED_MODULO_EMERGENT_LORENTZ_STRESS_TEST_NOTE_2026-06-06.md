@@ -85,8 +85,9 @@ axiom or primitive** unless genuinely forced.
 "irreducible admission" to **forced-modulo realization gate + emergent-Lorentz + R**:
 conditional on the Link-B realization-gate identification, a framework **target**
 (emergent Lorentz), and a buildable reconstruction `R`, not on a new axiom. The
-static "admission" reading is correct for `{Lattice, Quantum, Record}` *alone*, but
-it abstracts away the spin-1/2-ness of the qubit, the realization gate, and the
+static "admission" reading is correct for
+`{Lattice, Qubit, Admissibility, Record}` *alone*, but it abstracts away the
+spin-1/2-ness of the qubit, the realization gate, and the
 emergent-Lorentz continuum.
 
 ### The forcing chain
@@ -191,6 +192,6 @@ comparator only.
 - [SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md](SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md)
 - [AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md)
 - [FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
-- [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)
+- [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md)
 - [SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md)
 - [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)

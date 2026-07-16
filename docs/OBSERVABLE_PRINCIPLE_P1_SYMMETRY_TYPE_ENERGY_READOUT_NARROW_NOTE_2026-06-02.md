@@ -29,9 +29,9 @@ retire, the admitted P1 premise of
 > - **Pivot 1 — "energies/the Hamiltonian are additive over the tensor
 >   product."** This is true for the **non-interacting / tensor-factorized**
 >   class (`U_{AB} = U_A ⊗ U_B ⟹ H = H_A ⊗ I + I ⊗ H_B`, eigenvalues add;
->   §3.2, runner T2). But (i) it is **not supplied by the Quantum axiom** — the
->   Lattice/Quantum/Record baseline fixes the lattice, local algebra, and finite
->   scalar record readout, not dynamics (`MINIMAL_AXIOMS_2026-06-04.md`);
+>   §3.2, runner T2). But (i) it is **not supplied by the Qubit axiom** — the
+>   Lattice/Qubit/Admissibility/Record baseline fixes the lattice, local algebra, and finite
+>   scalar record readout, not dynamics (`MINIMAL_AXIOMS_2026-06-29.md`);
 >   and (ii) in the framework's **realized** free quadratic sector the
 >   Hamiltonian is itself **defined** as `Ĥ = −log(T̂²)/(2a_τ)` with `T̂²`
 >   a **product** over modes (`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`):
@@ -175,7 +175,7 @@ Each premise consumed, with type and ledger status:
 | `Z[J] = det(D+J)` on a finite block as the source-deformed amplitude | finite determinant context | imported as in the parent note; same Berezin/Grassmann origin (staggered-Dirac realization gate) |
 | `Δf := (1/n)(ln|det(D+m)| − ln|det D|)` is the framework's free-energy density (per-matrix-entry log-det convention) | density-normalization convention | `HIERARCHY_MATSUBARA_FREE_ENERGY_DENSITY_NARROW_THEOREM_NOTE_2026-05-16.md` (explicitly disclaims physical free-energy identification beyond log-det); reproven runner T7 |
 | (II.b) `W = log|Z|` identification `⇔` P1 | reproven equivalence | `OBSERVABLE_PRINCIPLE_P1_BRIDGE_STRUCTURAL_REFRAMING_NARROW_NOTE_2026-05-21.md`; reproven runner T7 |
-| Lattice + Quantum + Record baseline; **no dynamics** | framework baseline | `MINIMAL_AXIOMS_2026-06-04.md` |
+| Lattice + Qubit + Admissibility + Record baseline; **no dynamics** | framework baseline | `MINIMAL_AXIOMS_2026-06-29.md` |
 | Additive + measurable on `(ℝ_+,×)` `⇒ c·log` (Cauchy/Shannon-Khinchin) | functional-equation classification | reproven in #2504 runner T7 / structural-reframing note; literature comparator only |
 
 **Decisive observations.**
@@ -213,7 +213,7 @@ additive readout **without** re-importing P1.
 
 It does not, for two first-principles reasons.
 
-- **The "energies add" fact lives at the SAME exp/log layer.** The Lattice/Quantum/Record baseline commits
+- **The "energies add" fact lives at the SAME exp/log layer.** The Lattice/Qubit/Admissibility/Record baseline commits
   **no** dynamics; the Hamiltonian enters only through a derivation lane. In the
   framework's realized free quadratic sector that lane **constructs** `Ĥ` as
   `Ĥ = −log(T̂²)/(2a_τ)` with `T̂² = ⊗_p diag(1, e^{−2E(p)})` (runner T5). So
@@ -393,8 +393,8 @@ only whether applying it to `W` is forced or selected.
 
 ### 3.2 Pivot 1 — "energies add" is the exp/log move one level up (runner T5)
 
-The Lattice/Quantum/Record baseline commits **no dynamics**
-(`MINIMAL_AXIOMS_2026-06-04.md`; dynamics enter only through their named
+The Lattice/Qubit/Admissibility/Record baseline commits **no dynamics**
+(`MINIMAL_AXIOMS_2026-06-29.md`; dynamics enter only through their named
 derivation lanes). In the framework's realized free quadratic sector
 (`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`), the
 Hamiltonian is **constructed** as
@@ -727,8 +727,8 @@ rows below are target/context only and their audit statuses are not consumed.
 - [`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`](AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md)
   — the free quadratic-sector realization `Ĥ = −log(T̂²)/(2a_τ)` (Pivot 1
   source).
-- [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md)
-  — the Lattice/Quantum/Record baseline and the fact that dynamics are not part
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
+  — the Lattice/Qubit/Admissibility/Record baseline and the fact that dynamics are not part
   of the baseline.
 - [`KOIDE_Q_TWO_THIRDS_Z3_CHARACTER_NORM_SPLIT_RECASTING_THEOREM_NOTE_2026-05-10.md`](KOIDE_Q_TWO_THIRDS_Z3_CHARACTER_NORM_SPLIT_RECASTING_THEOREM_NOTE_2026-05-10.md),
   [`DM_NEUTRINO_Z3_CHARACTER_TRANSFER_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_Z3_CHARACTER_TRANSFER_THEOREM_NOTE_2026-04-15.md),

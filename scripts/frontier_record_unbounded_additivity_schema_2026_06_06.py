@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Record unbounded finite-additivity schema.
 
-The 2026-06-05 Record axiom gives finite additivity over finite disjoint
-record collections and durable realized outcomes. This runner checks the
-exact algebraic consequence relevant to the "bounded vs unbounded" question:
+The 2026-06-29 Record axiom makes records permanent and gives a
+content-determined scalar readout additive over finite disjoint record
+collections. This runner checks the exact algebraic consequence relevant to
+the "bounded vs unbounded" question:
 
 * every fixed finite prefix is bounded by its fixed length;
 * the schema over arbitrary finite disjoint collections has no intrinsic
@@ -26,7 +27,7 @@ PASS = 0
 FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md"
-MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
+MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 LOCAL_ATOM_AVAILABILITY = ROOT / "docs" / "RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md"
 
 
@@ -222,7 +223,7 @@ def main() -> int:
     check("source note states open_gate / conditional-support status", "**Claim type:** open_gate" in note and "actual_current_surface_status: conditional-support" in note)
     check("source note has post-audit claim-type repair", "2026-06-16 Post-Audit Claim-Type Repair" in note)
     check("source note has dependency-edge firewall", "Dependency-Edge Repair And Supplied-Context Firewall" in note)
-    check("source note cites current minimal axiom memo", "MINIMAL_AXIOMS_2026-06-05.md" in note)
+    check("source note cites the minimal axiom memo current at its writing (note is CONTENT-FLIP-queued; re-key follows its rework)", "MINIMAL_AXIOMS_2026-06-05.md" in note)
     check("source note cites local finite readout-atom availability theorem", "RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md" in note)
     monoid_name = "RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md"
     forbidden_dependency_markers = [
@@ -241,10 +242,15 @@ def main() -> int:
     )
     check("record-history monoid is named as parallel context only", "Parallel context only, not a load-bearing dependency" in note)
     check("downstream citation rule is explicit", "requires_local_readout_atom_availability_and_supplied_realized_records" in note)
-    check("minimal Record language supplies durable realized outcome", "A record is the durable registration of the realized outcome." in minimal)
     check(
-        "minimal Record language withholds readout context and dynamics",
-        "A record supplies no readout context" in minimal_flat and "measurement/decoherence dynamics" in minimal_flat,
+        "minimal Record language supplies permanence, content-only readout, and finite additivity",
+        "records are permanent." in minimal_flat
+        and "A readout value is determined by record content alone." in minimal_flat
+        and "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`." in minimal_flat,
+    )
+    check(
+        "minimal Record boundary leaves readout contexts and dynamics downstream",
+        "Probability, dynamics, readout contexts, and physical observable bridges remain downstream." in minimal_flat,
     )
     check("source note locally proves finite word/count surface", "finite histories are finite words" in note_flat and "forgetting order gives finite count vectors" in note_flat)
     check("source note locally proves arbitrary finite Z^3 slots", "for every finite `N`, the lattice sites" in note_flat and "pairwise distinct" in note_flat)

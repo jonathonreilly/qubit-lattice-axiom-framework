@@ -17,8 +17,8 @@ direct_effective_status_change_allowed_from_this_note: false
 
 ## Question and verdict
 
-Does {Lattice = `Z³` (`O_h` point group → emergent `SO(3)`), Quantum = `Cl(3,0)=M₂(ℂ)` per
-site (the qubit; `σ_i` generate the **internal** `su(2)`), Record} **force** the per-site
+Does {Lattice = `Z³` (`O_h` point group → emergent `SO(3)`), Qubit = `Cl(3,0)=M₂(ℂ)` per
+site (the qubit; `σ_i` generate the **internal** `su(2)`), Admissibility, Record} **force** the per-site
 internal `su(2)` to be the **external** spatial-rotation `su(2)` (the qubit doublet = physical
 spin-½)?
 
@@ -53,9 +53,9 @@ rotation `R` must be implemented on the per-site spinor by a spin lift, and:
 - **No spectator hatch at dim 2.** The commutant of `{σ_x,σ_y,σ_z}` in `M₂(ℂ)` is the scalars
   (runner C1), so the spin lift **cannot** act on a separate "spectator" factor inside the
   qubit — it must *be* the qubit's `su(2)`. A distinct spin factor would require
-  `M₂(ℂ)⊗M₂(ℂ)` (dim 4), **violating the dim-2 Quantum axiom** (runner C2).
+  `M₂(ℂ)⊗M₂(ℂ)` (dim 4), **violating the dim-2 Qubit axiom** (runner C2).
 
-So **conditional on the index pairing and the dim-2 Quantum axiom, the external
+So **conditional on the index pairing and the dim-2 Qubit axiom, the external
 spatial-rotation spin is forced to be the internal qubit `su(2)`
 (`S_i=σ_i/2`), with no freedom.** This part is tight and runner-clean.
 
@@ -91,7 +91,7 @@ The only unsupplied hypothesis is the **index-pairing admission**. A future
 result could promote this to "forced-modulo-covariance" *without a new axiom*
 by proving a **lattice-native
 `O_h`-Wigner-covariance lemma that derives the `γ_μ ↔ e_μ` edge-pairing from {Lattice,
-Quantum, Record} without presupposing the `γ`-edge hopping form.** None exists in the repo,
+Qubit, Admissibility, Record} without presupposing the `γ`-edge hopping form.** None exists in the repo,
 and the pairing is the staggered/Kähler-Dirac realization gate, which itself
 carries three further named-open admissions
 (`STAGGERED_DIRAC_EXERCISE_HONEST_REASSESSMENT_NOTE_2026-06-06`): FS fermionic
@@ -149,7 +149,7 @@ the boost-faith no-go. No PDG values.
 These links make the boundary visible to the audit graph. They do not supply
 the index-pairing admission.
 
-- Baseline axioms: [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md).
+- Baseline axioms: [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md).
 - Staggered realization residuals: [`STAGGERED_DIRAC_EXERCISE_HONEST_REASSESSMENT_NOTE_2026-06-06.md`](STAGGERED_DIRAC_EXERCISE_HONEST_REASSESSMENT_NOTE_2026-06-06.md).
 - Boost-level no-go comparator: [`QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`](QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md).
 - Guardrail comparators only: [`INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md`](INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md) and [`CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md`](CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md).

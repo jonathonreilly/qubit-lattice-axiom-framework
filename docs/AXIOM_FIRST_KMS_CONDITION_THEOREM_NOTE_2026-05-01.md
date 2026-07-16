@@ -17,7 +17,7 @@ verdict or promote the row.
 ## Scope
 
 This note records, on the current framework baseline
-([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md))
+([`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md))
 plus the cited RP and spectrum-condition support surfaces, a finite-block
 proof that the finite-temperature Gibbs state reconstructed from the
 reflection-positivity (RP) two-step transfer matrix on a periodic
@@ -47,7 +47,7 @@ temperature.
 
 ## Framework and Support Inputs
 
-- **Quantum / one-qubit operator algebra.** Used only through the
+- **Qubit / one-qubit operator algebra.** Used only through the
   finite physical Hilbert space `H_phys` reconstructed by the two-step
   RP sector from the local fermion/operator algebra.
 - **Lattice / `Z^3` spatial slice.** Used only as the spatial part of
@@ -407,8 +407,9 @@ stated RP/spectrum finite-block support surfaces.
 
 ## Hypothesis set used
 
-- Lattice, Quantum, and Record only in the narrow current-baseline sense
-  stated in [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md).
+- Lattice, Qubit, Admissibility, and Record only in the narrow
+  current-baseline sense stated in
+  [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md).
 - RP transfer-matrix structure (R3 of the RP note).
 - Spectrum condition (SC1, SC2) for `H ≥ 0`.
 - APBC finite-temperature boundary convention and Wick rotation as already
@@ -496,7 +497,7 @@ bare_retained_allowed: false
 
 ## Citations
 
-- framework baseline: [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- framework baseline: [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 - RP support note: [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 - spectrum-condition support note: [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
 - companion cluster-decomposition note: [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)

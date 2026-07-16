@@ -399,9 +399,9 @@ rows are not linked at all so no edge is recorded to a non-retained row:
 - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
   — the umbrella reflection-positivity row (audited_conditional) that collects
   the staggered-only sector; context pointer only, not consumed.
-- `MINIMAL_AXIOMS_2026-06-05.md`
-  — repo Lattice / Quantum / Record baseline surface, named as setup context
-  only; the bridge does not consume its effective status.
+- `MINIMAL_AXIOMS_2026-06-29.md`
+  — repo Lattice / Qubit / Admissibility / Record baseline surface, named as
+  setup context only; the bridge does not consume its effective status.
 
 ## 12. Citation-graph note
 

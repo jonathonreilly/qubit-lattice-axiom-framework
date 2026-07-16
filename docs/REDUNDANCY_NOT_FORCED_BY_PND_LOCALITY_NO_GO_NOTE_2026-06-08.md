@@ -24,7 +24,7 @@ are set only by the independent audit lane.
 names **local observability of a determined outcome** (the realized per-site
 pointer value is independently recoverable by each spatially-disjoint local
 observer — a redundant broadcast) as an open premise not supplied by the
-`{Lattice, Quantum, Record}` axioms. This note asks the sharper, dynamical
+`{Lattice, Qubit, Admissibility, Record}` axioms. This note asks the sharper, dynamical
 question: is local observability **forced** by the record-formation dynamics the
 framework already has — namely
 
@@ -183,7 +183,7 @@ premise.
 
 ## Load-bearing inputs
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) supplies the
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies the
   Record axiom durability clause used to source pointer-non-demolition. The axiom
   baseline chain-satisfies as an approved premise; it is not a source of bounded
   status.

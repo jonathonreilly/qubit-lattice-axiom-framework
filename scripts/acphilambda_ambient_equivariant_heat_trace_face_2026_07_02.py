@@ -143,11 +143,11 @@ def source_checks() -> None:
     check("note exists", NOTE.exists())
     check("fixed-locus source exists", FIXED.exists())
     check("axioms memo exists", AXIOMS.exists())
-    check("fixed-locus local density pin exists", "forced and gives local density `2/9`" in fixed)
-    check("fixed-locus readout exclusion pin exists", "does **not** supply the physical single-summand readout" in fixed)
+    check("fixed-locus local density pin exists", "L_C_3(N) = (1/3)(1/3+1/3) = 2/9." in fixed)
+    check("fixed-locus readout exclusion pin exists", "Separate theorem targets govern" in fixed_flat and "physical single-summand readout" in fixed_flat)
     check("axioms lattice sentence exists", landed_lattice_sentence in axioms_flat)
-    check("note quotes local density pin", "forced and gives local density `2/9`" in note)
-    check("note quotes readout exclusion pin", "does **not**" in note and "supply the physical single-summand readout" in note)
+    check("note quotes local density pin", "L_C_3(N) = (1/3)(1/3+1/3) = 2/9." in note)
+    check("note quotes readout exclusion pin", "Separate theorem targets" in flat(note) and "physical single-summand readout" in flat(note))
     check("note quotes lattice sentence", landed_lattice_sentence in flat(note))
 
 def exact_reduction_checks() -> None:

@@ -26,10 +26,10 @@ independent re-audit.
 
 The legacy claim id includes `axiom_boundary`; in this live source note that is
 historical naming only. The framework baseline is the approved named axiom set
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md): Lattice,
-Quantum, and Record.
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md): Lattice,
+Qubit, Admissibility, and Record.
 
-This packet uses the Lattice + Quantum algebraic surface (`Z^3` plus the
+This packet uses the Lattice + Qubit algebraic surface (`Z^3` plus the
 one-qubit local algebra, equivalently `Cl(3,0)` in its real-algebra reading)
 and the derived atlas rows linked below. It does not introduce a new axiom or
 primitive, and it does not use Record to close a coefficient, source amplitude,
@@ -38,7 +38,7 @@ or benchmark.
 ## Dependency Surface
 
 - Framework baseline:
-  [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+  [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 - Transfer class:
   [`DM_NEUTRINO_WEAK_TRIPLET_TRANSFER_CLASS_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_WEAK_TRIPLET_TRANSFER_CLASS_THEOREM_NOTE_2026-04-15.md)
 - Selector slot:
@@ -60,7 +60,7 @@ These are derived rows on top of the baseline surface, not additional axioms.
 
 ## Live Claim
 
-Within the current Lattice + Quantum baseline plus the linked derived atlas
+Within the current Lattice + Qubit baseline plus the linked derived atlas
 rows, the weak-triplet transfer coefficients are no longer the open part of
 this lane.
 

@@ -62,7 +62,7 @@ would prepare a YT-lane-style explicit-budget statement.
 
 | Identity | Authority |
 |---|---|
-| Lattice/Quantum/Record minimal axiom stack | `MINIMAL_AXIOMS_2026-06-05.md` (axiom premise; chain-satisfies only) |
+| Lattice/Qubit/Admissibility/Record minimal axiom stack | `MINIMAL_AXIOMS_2026-06-29.md` (axiom premise; chain-satisfies only) |
 | `g_bare = 1` and `N_c = 3` → `beta = 6.0` (Wilson plaquette action) | confinement note §3 (arithmetic) |
 | `T = 0` confinement of SU(3) YM (Wilson criterion + decades of lattice) | confinement note §3 |
 | `<P> = 0.5934` plaquette consistency at `beta = 6.0` | confinement note §3 (verified 0.7% on 4^4 lattice) |
@@ -260,7 +260,7 @@ the separate B5 bridge budget is also declared.
   promotion; §4.1 on Route R6 (this audit).
 - `docs/lanes/open_science/01_HADRON_MASS_PROGRAM_OPEN_LANE_2026-04-26.md`
   §3.5 — lane file's framing of 3E.
-- `docs/MINIMAL_AXIOMS_2026-06-05.md` — current minimal accepted axiom
+- `docs/MINIMAL_AXIOMS_2026-06-29.md` — current minimal accepted axiom
   stack; axiom premises chain-satisfy only and do not source bounded
   status.
 
@@ -284,4 +284,4 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [confinement_string_tension_note](CONFINEMENT_STRING_TENSION_NOTE.md)
 - [alpha_s_derived_note](ALPHA_S_DERIVED_NOTE.md)
 - [hadron_mass_lane1_theorem_plan_support_note_2026-04-27](HADRON_MASS_LANE1_THEOREM_PLAN_SUPPORT_NOTE_2026-04-27.md)
-- [minimal_axioms](MINIMAL_AXIOMS_2026-06-05.md)
+- [minimal_axioms](MINIMAL_AXIOMS_2026-06-29.md)

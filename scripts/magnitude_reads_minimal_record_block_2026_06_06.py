@@ -17,7 +17,7 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parent.parent
-MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
+MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 RP_CACHE = ROOT / "logs" / "runner-cache" / "axiom_first_rp_two_step_transfer_matrix_positivity.txt"
 
 PASS = 0
@@ -79,36 +79,39 @@ def main() -> int:
 
     print("--- Section R: Record axiom boundary ---")
     axiom_text = MINIMAL_AXIOMS.read_text(encoding="utf-8")
+    axiom_flat = " ".join(axiom_text.split())
     required_record_phrases = [
-        "A record is the durable registration of the realized outcome.",
-        "Given a readout context",
-        "scalar readout `I` is finitely additive",
-        "record supplies no readout context",
-        "sector-generation rule",
-        "weighting",
-        "normalization",
+        "Records form.",
+        "When present, a record locks exactly one admissible local possibility.",
+        "A site never carries more than one record; records are permanent.",
+        "Only records are readable.",
+        "A readout value is determined by record content alone.",
+        "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`.",
+        "A choice not fixed by the supplied structure remains a named conditional or open dependency.",
+        "context selection",
+        "Born weights",
+        "formation rules (which admissible possibility a new record locks",
         "time metric",
-        "occupancy rule",
     ]
     check(
         "approved Record axiom boundary is present",
-        all(phrase in axiom_text for phrase in required_record_phrases),
+        all(phrase in axiom_flat for phrase in required_record_phrases),
     )
 
     record_excludes_selector_inputs = all(
-        phrase in axiom_text
+        phrase in axiom_flat
         for phrase in [
-            "record supplies no readout context",
-            "weighting",
-            "normalization",
+            "A choice not fixed by the supplied structure remains a named conditional or open dependency.",
+            "context selection",
+            "Born weights",
+            "formation rules (which admissible possibility a new record locks",
             "time metric",
-            "occupancy rule",
         ]
     )
     check(
         "Record does not supply a readout-scale selector",
         record_excludes_selector_inputs,
-        "minimal axioms exclude readout context, time metric, weighting, normalization, and occupancy rule",
+        "minimal axioms leave readout-context selection, time metric, weighting, normalization, and occupancy selection open",
     )
 
     print("--- Section S: conditional arithmetic only ---")

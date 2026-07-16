@@ -99,8 +99,9 @@ Under record-preservation + locality + Hermiticity, the following hold.
 This is **bounded** because the upstream identifications it composes are bounded
 model conventions: the two-endpoint Gauss generators (TWO_ENDPOINT note) and the
 quantum-Darwinism reading of a *record* together with pointer-non-demolition
-(RECORD_FORMATION note) are not supplied by the Lattice, Quantum, and Record
-axioms. The form-class constraint is forced **given** those bridges.
+(RECORD_FORMATION note) are not supplied by the Lattice, Qubit,
+Admissibility, and Record axioms. The form-class constraint is forced **given**
+those bridges.
 
 ## The honest verdict
 
@@ -124,9 +125,10 @@ selection *within* the forced class, not the class itself.
 
 ## Load-Bearing Inputs
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) supplies the
-  repo baseline Lattice + Quantum + Record language. The axiom baseline
-  chain-satisfies as an approved premise; it is not a source of bounded status.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies the
+  repo baseline Lattice + Qubit + Admissibility + Record language. The axiom
+  baseline chain-satisfies as an approved premise; it is not a source of
+  bounded status.
 - [`TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md`](TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md)
   supplies the gauge-structure boundary (`A_inv` = commutant of `{G_v}`,
   endpoint Gauss conventions, the `dim = 36` `U(1)` invariant algebra reused
@@ -153,8 +155,8 @@ selection *within* the forced class, not the class itself.
   and longer matter paths are equally admissible local invariants.
 - It does **not** force non-trivial dynamics: `H = 0` is in the class.
 - It does **not** derive the upstream bridges (two-endpoint Gauss generators;
-  the quantum-Darwinism record reading) from Lattice + Quantum + Record; those
-  remain supplied bounded inputs.
+  the quantum-Darwinism record reading) from Lattice + Qubit +
+  Admissibility + Record; those remain supplied bounded inputs.
 - It does **not** establish the lattice/continuum, the non-abelian dynamical
   equivalence beyond the static `SU(2)` invariance cross-check, or any
   interacting-field generalization; the theorem is on the explicit finite

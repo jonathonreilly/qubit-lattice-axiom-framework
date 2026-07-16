@@ -6,9 +6,9 @@ This runner certifies a narrow source-side repair:
 * The denominator of the supplied two-step transfer T_hat^2 is internally fixed
   to 2 a_tau by the existing blocked-time normalization bridge.
 * The absolute physical clock/rate unit carried by a_tau is still not derived
-  by minimal Lattice/Quantum/Record, by Record counts, or by the transfer
-  spectrum alone.
-* The note wires MINIMAL_AXIOMS_2026-06-05.md as a markdown dependency edge
+  by minimal Lattice/Qubit/Admissibility/Record, by Record counts, or by the
+  transfer spectrum alone.
+* The note wires MINIMAL_AXIOMS_2026-06-29.md as a markdown dependency edge
   (2026-07-10 repair); that path is an aliased path of the canonical
   minimal_axioms premise node, so the edge resolves to the live axiom
   authority.
@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md"
 PARENT = ROOT / "docs" / "AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md"
 SC2 = ROOT / "docs" / "AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
-MIN_AX = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
+MIN_AX = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 POST_RECORD = ROOT / "docs" / "POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md"
 RECORD_GATE = ROOT / "docs" / "RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md"
 PREMISE_NODES = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
@@ -81,11 +81,11 @@ def block_text_anchors() -> None:
     record("parent still leaves B-AXIS.2 and B-AXIS.3 declared", "B-AXIS.2" in parent and "B-AXIS.3" in parent and "independent commuting transfer factor" in parent)
     record("SC2 bridge identifies two-step block spacing", "T_hat^2" in sc2 and "two lattice steps" in sc2 and ("1/(2 a_τ)" in sc2 or "1/(2 a_tau)" in sc2))
     record("SC2 bridge forbids physical mass/unit overread", "No physical mass" in sc2 and "free construction parameters" in sc2)
-    record("minimal Lattice excludes metric scale/lattice spacing/unit conversion", "metric scale" in min_ax and "lattice spacing" in min_ax and "physical unit conversion" in min_ax)
+    record("minimal Lattice excludes metric scale/lattice spacing/unit conversion", "scale-reference primitive" in min_ax and "natural unit equals the Planck length" in min_ax)
     record("minimal Record excludes time metric/dynamics/probability", "time metric" in min_ax and "dynamics" in min_ax and "probability" in min_ax)
-    record("note wires MINIMAL_AXIOMS_2026-06-05 as a markdown dependency edge", "[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)" in note)
+    record("note wires MINIMAL_AXIOMS_2026-06-29 as a markdown dependency edge", "[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)" in note)
     min_ax_node = json.loads(read(PREMISE_NODES))["nodes"]["minimal_axioms"]
-    record("linked 2026-06-05 path aliases the canonical minimal_axioms premise node", MIN_AX.relative_to(ROOT).as_posix() in min_ax_node["aliased_paths"] and (ROOT / min_ax_node["current_path"]).exists())
+    record("linked 2026-06-29 path aliases the canonical minimal_axioms premise node", MIN_AX.relative_to(ROOT).as_posix() in min_ax_node["aliased_paths"] and (ROOT / min_ax_node["current_path"]).exists())
     record("post-record interface says counts do not supply clock metric", "does not supply physical elapsed time" in post and "clock metric" in post)
     record("post-record interface supports rates only with supplied clock map", "supplied clock map" in post and "conditional on the clock map" in post)
     record("record rate gate separates stable dial from physical rate unit", "physical rate claim" in gate and "clock/rate unit" in gate)

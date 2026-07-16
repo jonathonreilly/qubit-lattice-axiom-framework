@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Route-2 Record raw-q selector gate.
 
-Record finite additivity is scalar-linear once a readout context is supplied.
-The Route-2 q-coordinate is a normalized center/shell quotient, so selecting
-raw q as the inverse-square-scaled coordinate requires an additional
+Record readout is content-determined and finitely additive over disjoint
+records. The Route-2 q-coordinate is a normalized center/shell quotient, so
+selecting raw q as the inverse-square-scaled coordinate requires an additional
 normalization/readout theorem.
 """
 
@@ -55,7 +55,8 @@ def main() -> int:
     print("Route-2 Record raw-q selector gate")
     print("=" * 88)
 
-    axioms = read("docs/MINIMAL_AXIOMS_2026-06-05.md")
+    axioms = read("docs/MINIMAL_AXIOMS_2026-06-29.md")
+    axioms_flat = " ".join(axioms.split())
     premise_nodes = read("docs/audit/data/axiom_premise_nodes.json")
     exact_readout = read("docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md")
     record_no_go = read("docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md")
@@ -66,17 +67,21 @@ def main() -> int:
 
     banner("1. Current-surface Record boundaries")
     check(
-        "minimal axioms define Record as durable realized-outcome registration",
-        "A record is the durable registration of the realized outcome." in axioms,
+        "minimal axioms make each Record an admissible lock, unique per site and permanent",
+        "When present, a record locks exactly one admissible local possibility." in axioms_flat
+        and "A site never carries more than one record; records are permanent." in axioms_flat,
     )
     check(
-        "minimal axioms say scalar readout is finitely additive",
-        "scalar readout `I` is finitely additive" in axioms,
+        "minimal axioms make Record readout content-determined and finitely additive",
+        "Only records are readable." in axioms_flat
+        and "A readout value is determined by record content alone." in axioms_flat
+        and "For any finite collection of pairwise-disjoint records, scalar readout" in axioms_flat
+        and "`I` is additive, with `I(empty)=0`." in axioms_flat,
     )
     check(
-        "minimal axioms say Record supplies no readout context or normalization",
-        "record supplies no readout context" in axioms.lower()
-        and "normalization" in axioms.lower(),
+        "minimal axioms leave extra quotient normalization downstream",
+        "Further physical structure requires a retained derivation or bridge" in axioms_flat
+        and "A choice not fixed by the supplied structure remains a named conditional or open dependency." in axioms_flat,
     )
     check(
         "premise registry repeats no downstream readout bridge from Record",
@@ -149,7 +154,11 @@ def main() -> int:
     banner("5. Current-bank verdict")
     check("current bank does not name a raw q Record selector theorem", "raw q record selector" not in current_bank)
     check("current bank does not say Record selects q_X as scaled coordinate", "record selects q_x" not in current_bank)
-    check("current bank explicitly withholds Record normalization", "normalization" in axioms.lower())
+    check(
+        "current bank explicitly withholds Record normalization",
+        "normalization" in premise_nodes.lower()
+        and "downstream theory consequence" in premise_nodes.lower(),
+    )
     check("no observed endpoint value is used as proof input", True)
     check("current result is a no-go for Record-additivity-derived raw q scaling", True)
     check("positive target is a normalized-quotient readout theorem or alternate bridge", True)

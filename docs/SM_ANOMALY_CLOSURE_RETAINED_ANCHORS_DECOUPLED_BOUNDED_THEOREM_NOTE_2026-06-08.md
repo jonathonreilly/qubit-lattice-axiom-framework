@@ -40,8 +40,8 @@ completion is stated as an explicit admitted premise rather than imported from
   (retained_bounded).
 - **(R3, retained)** Three generations `n_gen = 3`:
   [`THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md`](THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md).
-- **(Axiom)** The `{Lattice, Quantum, Record}` baseline:
-  [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md).
+- **(Axiom)** The `{Lattice, Qubit, Admissibility, Record}` baseline:
+  [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md).
 - **(P, admitted premise — stated, not imported)** the **minimal SU(2)-singlet
   right-handed completion** `u_R:(1,3)`, `d_R:(1,3)`, `e_R:(1,1)` (no `ν_R`).
   This is an admission (see Honest ledger C1); it is **not** derived here and

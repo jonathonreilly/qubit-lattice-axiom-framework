@@ -35,17 +35,17 @@ and its traceless Hermitian part has dimension 3. A faithful `su(3)` algebra
 would require an 8-dimensional simple Lie algebra embedding, equivalently the
 usual three-dimensional fundamental color carrier or some additional
 non-qubit multiplicity/selector structure. That structure is not supplied by
-the Lattice, Quantum, and Record axioms.
+the Lattice, Qubit, Admissibility, and Record axioms.
 
 This is a bounded theorem because the link-connection convention is an input
 to this note, not an axiom and not derived here.
 
 ## Load-Bearing Inputs
 
-- [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md) supplies
-  the Lattice + Quantum + Record baseline, including the one-qubit local
-  operator algebra `M_2(C)` at each site. The axiom baseline is a premise
-  chain satisfier only; it is not a source of bounded status.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies
+  the Lattice + Qubit + Admissibility + Record baseline, including the
+  one-qubit local operator algebra `M_2(C)` at each site. The axiom baseline is
+  a premise chain satisfier only; it is not a source of bounded status.
 - [`PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`](PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md)
   supplies the per-site Pauli `su(2)` spin-half module.
 - [`INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md`](INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md)

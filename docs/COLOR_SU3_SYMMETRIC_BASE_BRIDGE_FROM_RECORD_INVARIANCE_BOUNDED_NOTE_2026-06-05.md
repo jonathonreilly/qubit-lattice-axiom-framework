@@ -88,7 +88,7 @@ This note is bounded because the chiral-cube carrier, the
 `(base x fiber)` decomposition, the two-endpoint link model, and the
 choice of which symmetry index sits on the link end are all model
 conventions cited or stipulated here; they are not supplied by the
-Lattice, Quantum, and Record axioms.
+Lattice, Qubit, Admissibility, and Record axioms.
 
 ## Verdict (IS / IS-NOT)
 
@@ -103,7 +103,7 @@ Lattice, Quantum, and Record axioms.
   (color) rather than the fiber SU(2) (weak isospin) is the gauged
   symmetry — equivalently, whether the physical records are the color
   singlets — depends on the matter realization, which is not delivered
-  by Lattice + Quantum + Record.
+  by Lattice + Qubit + Admissibility + Record.
 
 The honest reading is **partial-pinning**: the deferred
 "symmetric-base -> physical-color" bridge equals
@@ -115,7 +115,7 @@ and the record-invariance structure supplies only the first summand.
 | Part of the bridge | Supplied by | Status |
 |---|---|---|
 | (a) gauge group = commutant of the record-invariance generators; given "records = color singlets", the gauged group is the base SU(3) | the gauge-from-invariance-commutant structure (the two-endpoint note) | genuine algebraic identity on the explicit carrier (verified) |
-| (b) which local symmetry's singlets are the physical records: quarks in the base-pair symmetric fundamental `3`, with the color index routed onto the links | the matter realization (the `AC_phi_lambda` family) | open; not forced by Lattice + Quantum + Record |
+| (b) which local symmetry's singlets are the physical records: quarks in the base-pair symmetric fundamental `3`, with the color index routed onto the links | the matter realization (the `AC_phi_lambda` family) | open; not forced by Lattice + Qubit + Admissibility + Record |
 
 Residual (b) is exactly the boundary the framework's color notes already
 defer ("the identification of the 3D symmetric base subspace with
@@ -137,12 +137,12 @@ matter realization, not the gauge-from-invariance-commutant identity.
 
 ## Load-Bearing Inputs
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) supplies
-  the repo baseline Lattice + Quantum + Record language. The Quantum
-  axiom states it does not supply a gauge group; the Record axiom states
-  it does not supply arbitrary observable identification. The axiom
-  baseline chain-satisfies as an approved premise; it is not a source of
-  bounded status.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies
+  the repo baseline Lattice + Qubit + Admissibility + Record language. Its
+  Qualification states that a choice not fixed by the supplied structure
+  remains a named conditional or open dependency. The axiom baseline
+  chain-satisfies as an approved premise; it is not a source of bounded
+  status.
 - [`CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md`](CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md)
   supplies the explicit chiral-cube carrier `C^8 = C^4_base (x) C^2_fiber`,
   the Gell-Mann embedding `T^a_8D`, the fiber-SU(2) action `Jf_i`, and the
@@ -163,8 +163,8 @@ matter realization, not the gauge-from-invariance-commutant identity.
 
 ## What This Does Not Claim
 
-- It does not derive physical color `SU(3)_c` from Lattice + Quantum +
-  Record.
+- It does not derive physical color `SU(3)_c` from Lattice + Qubit +
+  Admissibility + Record.
 - It does not force the antecedent "the physical records are the color
   singlets"; that is residual (b).
 - It does not derive gauge invariance of observables from the Record

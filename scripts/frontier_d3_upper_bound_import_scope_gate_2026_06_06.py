@@ -188,7 +188,7 @@ def main() -> None:
         has(gate, "This note does not claim:")
         and has(gate, "a framework-internal derivation of the full Bertrand closed-orbit theorem")
         and has(gate, "a framework-internal derivation of atomic stability or a hydrogenic")
-        and has(gate, "a full dimension-selection theorem from the current Lattice/Quantum/Record"),
+        and has(gate, "a full dimension-selection theorem from the current Lattice/Qubit/Admissibility/Record"),
     )
     check(
         "gate records future work as native edge audit or stronger theorem work",

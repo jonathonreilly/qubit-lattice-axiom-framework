@@ -15,11 +15,11 @@ after independent audit and dependency closure.
 
 ## Gate Attacked
 
-`MINIMAL_AXIOMS_2026-06-05.md` lists "arrow, measurement, decoherence,
-record-production dynamics" as gates **outside** the three axioms (Lattice,
-Quantum, Record). The framework carried **zero** past-hypothesis notes. This
-note attacks the arrow-of-time gate on a fully explicit small system and pins
-the irreducible residual.
+`MINIMAL_AXIOMS_2026-06-29.md` lists the arrow, decoherence mechanisms, and
+record-production dynamics among the gates **outside** the four axioms
+(Lattice, Qubit, Admissibility, Record). The framework carried **zero** past-hypothesis
+notes. This note attacks the arrow-of-time gate on a fully explicit small
+system and pins the irreducible residual.
 
 ## What Is Claimed (narrow)
 
@@ -62,7 +62,7 @@ record-forming dynamics realized as redundant pointer broadcast:
    derives the arrow's **direction** = "away from the low-record boundary". The
    irreducible open input is the **existence of a low-record (low-entropy)
    initial condition**, i.e. the **past hypothesis** (Boltzmann/Penrose). The
-   three axioms supply registration (Record), a carrier (Quantum), and a site
+   four axioms supply registration (Record), a carrier (Qubit), and a site
    set (Lattice) but **no** preferred low-entropy boundary. This open input is
    **universal-floor**: every theory with time-symmetric microdynamics (CM, QM,
    QFT, GR) needs the same boundary input for a thermodynamic arrow. It is
@@ -87,7 +87,7 @@ record-forming dynamics realized as redundant pointer broadcast:
 - **Not** a derivation of record-production dynamics from the axioms. The
   redundant-broadcast generator is a concrete model realizing #2701's
   pointer-non-demolition + redundant-broadcast description on a small system;
-  the axioms do not supply it (see `MINIMAL_AXIOMS_2026-06-05.md`).
+  the axioms do not supply it (see `MINIMAL_AXIOMS_2026-06-29.md`).
 - **Not** a derivation of a preferred initial state, a cosmological boundary
 	  condition, or any selection principle that would *remove* the past-hypothesis
 	  residual.
@@ -116,8 +116,8 @@ low-record boundary, not by `T`.
 
 ## Relation To Existing Notes (plain-text, non-load-bearing)
 
-- `MINIMAL_AXIOMS_2026-06-05.md` — lists arrow/measurement/decoherence/
-  record-production dynamics as gates outside the three axioms; this note pins
+- `MINIMAL_AXIOMS_2026-06-29.md` — lists arrow/measurement/decoherence/
+  record-production dynamics as gates outside the four axioms; this note pins
   the arrow gate's residual.
 - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` — the central admitted-
   input registry; the past hypothesis sits with the universal-floor admissions

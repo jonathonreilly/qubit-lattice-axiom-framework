@@ -139,7 +139,8 @@ unordered planes the coefficient is `1/2`. Equating the coefficients gives
 
 This note does not claim:
 
-- Wilson plaquette action-surface selection from the three framework axioms;
+- Wilson plaquette action-surface selection from the four framework axioms
+  (Lattice, Qubit, Admissibility, Record);
 - exclusion of Symanzik, heat-kernel, Manton, tadpole-improved, or other
   action surfaces;
 - a physical value for `g_bare`;

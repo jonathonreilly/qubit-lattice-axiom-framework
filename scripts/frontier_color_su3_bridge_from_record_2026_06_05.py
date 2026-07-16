@@ -471,7 +471,7 @@ def main() -> int:
     )
 
     # SHARPENING: there IS a genuine asymmetry, and it makes the residual MORE
-    # specific (not less). The Quantum axiom gives a qubit (M_2(C)) per site.
+    # specific (not less). The Qubit axiom gives a qubit (M_2(C)) per site.
     #  - A single qubit link-end carries SU(2) intrinsically: Aut(M_2(C)) = SO(3),
     #    state-action SU(2) (fiber-SU(2) needs no extra structure -- #2679).
     #  - The framework's color-3 is NOT a single-qubit object: it is the 3D
@@ -479,10 +479,10 @@ def main() -> int:
     #    Gauss law on links requires the link connection to carry the
     #    base-PAIR symmetric (color) index, i.e. to couple to TWO base qubits in
     #    their symmetric square -- a specific multi-qubit assignment, NOT the
-    #    bare per-qubit link the Quantum axiom hands you.
+    #    bare per-qubit link the Qubit axiom hands you.
     emit("")
     emit("  SHARPENING (the asymmetry makes the color residual MORE specific):")
-    emit("  - a single qubit link-end (Quantum axiom, M_2(C)) carries SU(2)")
+    emit("  - a single qubit link-end (Qubit axiom, M_2(C)) carries SU(2)")
     emit("    intrinsically (Aut(M_2(C)) = SO(3)); fiber-SU(2) needs no extra dof.")
     emit("  - the framework's color-3 is Sym^2(C^2) of the (b1,b2) base PAIR;")
     emit("    gauging it on links requires the connection to carry the base-pair")
@@ -498,7 +498,7 @@ def main() -> int:
     emit("     symmetry' coin flip; for COLOR it specifically requires assigning")
     emit("     quarks to the base-pair symmetric block AND routing that color")
     emit("     index onto the links -- a structured matter+connection choice the")
-    emit("     {Lattice,Quantum,Record} axioms do not supply (cf. #2679: a bare")
+    emit("     {Lattice,Qubit,Admissibility,Record} axioms do not supply (cf. #2679: a bare")
     emit("     qubit link gives su(2), not su(3)).")
 
     # Make the admission explicit: the choice = which subsystem the quarks
@@ -512,7 +512,7 @@ def main() -> int:
     # Cross-check against the framework's own axiom scope (Record does not
     # supply observable identification; Quantum does not supply gauge group).
     check(
-        "matter-realization residual is outside {Lattice,Quantum,Record} scope (per axiom memo)",
+        "matter-realization residual is outside {Lattice,Qubit,Admissibility,Record} scope (per axiom memo)",
         True,
         "Quantum: 'no gauge group'; Record: 'no arbitrary observable identification'",
     )

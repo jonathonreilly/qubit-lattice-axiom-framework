@@ -145,7 +145,7 @@ def main() -> int:
     for phrase in [
         "does not derive gauge invariance of observables from the Record axiom",
         "does not identify all gauge-invariant algebra elements with physical observables",
-        "does not derive the endpoint Gauss generators from Lattice + Quantum +",
+        "does not derive the endpoint Gauss generators from Lattice + Qubit +",
         "does not derive gauge dynamics",
         "does not require or establish a repo-wide quantum-link ontology",
     ]:

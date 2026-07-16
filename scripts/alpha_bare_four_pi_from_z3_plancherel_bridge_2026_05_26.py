@@ -68,7 +68,7 @@ required_source_phrases = {
     "i2 dependency": "ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
     "i3 dependency": "CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
     "no new axiom": "no new repo-wide axiom",
-    "current minimal axioms memo": "MINIMAL_AXIOMS_2026-06-05.md",
+    "current minimal axioms memo": "MINIMAL_AXIOMS_2026-06-29.md",
 }
 for label, needle in required_source_phrases.items():
     exact_assert(needle in SOURCE_TEXT, f"(S-required) source contains {label}")

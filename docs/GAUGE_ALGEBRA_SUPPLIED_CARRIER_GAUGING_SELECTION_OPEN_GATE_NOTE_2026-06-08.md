@@ -18,8 +18,8 @@ or predict an audit outcome.
 ## Supplied assumptions
 
 The algebra result is **conditional** on a supplied color-carrier realization. None of the
-following is supplied by the Lattice, Quantum, and Record axioms; each is a
-separate non-axiom input or existing bounded/open authority:
+following is supplied by the Lattice, Qubit, Admissibility, and Record axioms;
+each is a separate non-axiom input or existing bounded/open authority:
 
 | supplied input | authority | ledger role |
 |---|---|---|
@@ -63,7 +63,8 @@ anti-Hermitian algebra on `C³⊗C² ≅ C⁶` is `u(6)` (dim 36). The runner no
 factor-preserving dim-12 algebra plus the 24 cross-factor tensors
 `su(3)⊗su(2)` spans the full `u(6)`. Thus the cut from `u(6)` to
 `su(3)⊕su(2)⊕u(1)` is exactly the supplied factor-locality / `MR_color`
-premise. It is **not** derived from the Lattice, Quantum, and Record axioms.
+premise. It is **not** derived from the Lattice, Qubit, Admissibility, and
+Record axioms.
 
 ## Counterfactual support — `N_c = d`
 

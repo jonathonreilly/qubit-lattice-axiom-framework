@@ -4,10 +4,12 @@ Arrow-of-time from record formation, modulo the past hypothesis (explicit small 
 
 OPEN GATE ATTACKED
 ------------------
-`MINIMAL_AXIOMS_2026-06-05` lists "arrow, measurement, decoherence,
-record-production dynamics" as gates OUTSIDE the three axioms
-{Lattice (Z^3), Quantum (qubit M_2(C)), Record (durable realized-outcome
-registration)}. The smuggle audit notes the framework carries ZERO
+`MINIMAL_AXIOMS_2026-06-29` lists the arrow, decoherence mechanisms, and
+record-production dynamics among the gates OUTSIDE the four axioms
+{Lattice (Z^3), Qubit (qubit M_2(C)), Admissibility (fixed nearest-neighbor
+local constraint), Record (locks exactly one admissible local possibility;
+is unique per site and permanent; has content-determined, finitely additive
+scalar readout)}. The smuggle audit notes the framework carries ZERO
 past-hypothesis notes, so the thermodynamic/temporal arrow is genuinely
 un-attacked. This runner attacks it on a fully explicit small system.
 
@@ -377,8 +379,9 @@ def main() -> int:
     emit("  Admitted (irreducible residual):")
     emit("    * the EXISTENCE of a LOW-record (low-entropy) initial condition.")
     emit("      = the PAST HYPOTHESIS (Boltzmann / Penrose). The framework does NOT")
-    emit("      derive a preferred low-entropy boundary from {Lattice, Quantum, Record};")
-    emit("      Record supplies registration, not a low-entropy initial.")
+    emit("      derive a preferred low-entropy boundary from {Lattice, Qubit, Admissibility, Record};")
+    emit("      Record supplies occurrence, admissible locking, permanence,")
+    emit("      content-determined readout, and finite additivity, not a low-entropy initial.")
     emit("  Classification: UNIVERSAL-FLOOR. Every physical theory with time-symmetric")
     emit("    microdynamics (CM, QM, QFT, GR) needs this same boundary admission to get")
     emit("    a thermodynamic arrow. It is NOT a framework-specific gap.")

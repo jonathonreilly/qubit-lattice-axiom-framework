@@ -311,7 +311,7 @@ supplies only the free fermion-sector two-step positivity factor.
 
 | Input | Role | Status |
 |---|---|---|
-| Lattice / Quantum / Record baseline, including the `Z^3` lattice and physical `Cl(3,0)` local algebra | repo baseline (setup) | repo baseline surface (see `MINIMAL_AXIOMS_2026-06-04.md`) |
+| Lattice / Qubit / Admissibility / Record baseline, including the `Z^3` lattice and physical `Cl(3,0)` local algebra | repo baseline (setup) | repo baseline surface (see `MINIMAL_AXIOMS_2026-06-29.md`) |
 | Free staggered KS action `U = 1`, phases `eta_0 = 1`, `eta_1(t) = (-1)^t`, `m > 0` | construction surface | definitional (parent reflection-positivity conventions) |
 | Second quantization `Gamma(t1)` of a free quadratic transfer kernel | many-body two-step transfer | standard free-fermion functorial relation (`Luscher 1977` / `Creutz 1977` / `Montvay-Munster Sec.4`; `Shale-Stinespring` / `Berezin` functor); for the diagonal free kernel here it is finite-dimensional linear algebra, derived and verified in-repo (runner C5), not load-bearing as a citation |
 
@@ -390,8 +390,8 @@ citation-graph builder does not parse it as an upstream dependency edge:
   free-case fermion-sector two-step transfer positivity. This note restates the
   finite transfer construction it needs and does not assume that row's current
   audit status.
-- `MINIMAL_AXIOMS_2026-06-04.md` -- repo Lattice / Quantum / Record baseline
-  surface, named as setup context only.
+- `MINIMAL_AXIOMS_2026-06-29.md` -- repo Lattice / Qubit / Admissibility /
+  Record baseline surface, named as setup context only.
 
 ## Validation
 

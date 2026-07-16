@@ -34,10 +34,10 @@ with these row-local components:
   that the finite-volume Boltzmann measure is finite.
 
 This is a row-local bounded premise for this bridge. It is not derived here
-from the Lattice / Quantum / Record baseline alone, and it is not promoted
-into a global axiom, framework primitive, or Tier-A admission. The point of
-this bridge is to make the Wilson real-positive measure surface review-visible,
-not to hide it as prose in downstream notes.
+from the Lattice / Qubit / Admissibility / Record baseline alone, and it is
+not promoted into a global axiom, framework primitive, or Tier-A admission.
+The point of this bridge is to make the Wilson real-positive measure surface
+review-visible, not to hide it as prose in downstream notes.
 
 ## Consequences Verified
 

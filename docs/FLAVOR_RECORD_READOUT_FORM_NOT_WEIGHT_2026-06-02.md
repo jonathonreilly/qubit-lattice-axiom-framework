@@ -12,8 +12,8 @@ edit, no audit verdict, and no downstream status change; status remains owned
 by the independent audit lane.
 
 This source note translates the earlier qubit-to-record proposal into the
-approved Lattice, Quantum, Record framework. It does not add or rename an
-axiom. It records a form/weight separation.
+approved Lattice, Qubit, Admissibility, Record framework. It does not add or
+rename an axiom. It records a form/weight separation.
 
 ## Result
 
@@ -75,7 +75,7 @@ status claim.
 - [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
   (downstream occupancy/slot-degree boundary; bounded-theorem source, not an
   audit verdict).
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
   (Record axiom boundary and scope reference).
 
 ## No-Go Discipline Gate

@@ -685,7 +685,7 @@ def test_no_axiom_extension() -> None:
     # admitted for this runner-local diagnostic only; the Wilson coefficient
     # relation is dependency-wired without promoting the beta=6 surface.
     check(
-        "no new axiom or primitive introduced (Lattice/Quantum/Record baseline unchanged)",
+        "no new axiom or primitive introduced (Lattice/Qubit/Admissibility/Record baseline unchanged)",
         "does not propose a new axiom or framework primitive" in plain_body,
         "paired note refuses new axiom/primitive authority",
     )

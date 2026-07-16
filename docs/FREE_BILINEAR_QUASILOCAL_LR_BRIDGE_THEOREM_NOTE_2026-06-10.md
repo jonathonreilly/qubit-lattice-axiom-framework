@@ -61,7 +61,7 @@ currently proved.
    This note reuses that path-counting convention but performs the
    exponentially weighted quasilocal path sum directly.
 3. **One-site algebra.** The current
-   [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) supplies the
+   [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies the
    finite one-qubit one-site operator algebra. No record, readout, species,
    gauge, or continuum bridge is consumed.
 
@@ -210,9 +210,9 @@ TOTAL: PASS=5 FAIL=0
   strict finite-range failure on the free bilinear sector.
 - [`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
   - overlap-weight LR convention and finite-range path-counting template.
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
-  - current Lattice/Quantum/Record premise node; only the finite one-site
-  Quantum algebra and lattice metric are consumed.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
+  - current Lattice/Qubit/Admissibility/Record premise node; only the
+  finite one-site Qubit algebra and lattice metric are consumed.
 
 ## Changelog
 

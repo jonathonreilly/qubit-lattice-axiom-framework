@@ -275,8 +275,8 @@ relabel) is reproven in the runner from the lattice, Clifford, and B4 definition
 
 ## Dependencies
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — Lattice /
-  Quantum / Record baseline (3D + 1; `Z^3` spatial primitive).
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — Lattice /
+  Qubit / Admissibility / Record baseline (3D + 1; `Z^3` spatial primitive).
 - [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
   — the OS0 kinetic-form surface (`c_t = c_s`, `xi = 1`), consumed here.
 - [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md) —

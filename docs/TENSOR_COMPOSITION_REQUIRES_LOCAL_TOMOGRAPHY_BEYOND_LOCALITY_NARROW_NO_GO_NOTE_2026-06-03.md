@@ -34,8 +34,8 @@ pipeline after independent review.
 
 ## Statement
 
-Use the Quantum axiom's one-site carrier `A_x ~= M_2(C)` from
-[`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md). Add only the
+Use the Qubit axiom's one-site carrier `A_x ~= M_2(C)` from
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md). Add only the
 operational locality condition that separated local copies are faithful,
 commute inside the composite, and hence do not signal through local
 operations. Do not add a generation condition saying that the composite is
@@ -68,7 +68,7 @@ The real-rebit comparison remains a useful external sanity check:
 `dim_R(M_2(R)_sa)^2 = 3 * 3 = 9`, while `dim_R(M_4(R)_sa) = 10`. It shows the
 standard no-signalling-versus-local-tomography separation when the scalar
 field is changed. It is not the load-bearing framework witness, because the
-framework's Quantum axiom names complex qubits, not rebits.
+framework's Qubit axiom names complex qubits, not rebits.
 
 ## Proof
 
@@ -111,7 +111,7 @@ tomography/generation premise is required.
   tomography, no-extra-global generation, or an explicit ordinary
   shared-scalar complex tensor-product premise.
 - **Wall independence:** the load-bearing witness uses the same local
-  `M_2(C)` algebra as the Quantum axiom; the rebit comparison is only a
+  `M_2(C)` algebra as the Qubit axiom; the rebit comparison is only a
   comparator.
 - **Hidden-wall scan:** no dynamics, Born rule, measurement instrument,
   record production, gauge group, continuum limit, fitted selector, or
@@ -127,8 +127,8 @@ tomography/generation premise is required.
 - **Steelman:** a framework definition that says "the composite is generated
   by the two commuting local algebras" bypasses the no-go by adding exactly
   the missing premise.
-- **Cross-cycle echo:** dependency on Lattice, Quantum, Record, or any
-  approved primitive must not be treated as a source of bounded status.
+- **Cross-cycle echo:** dependency on Lattice, Qubit, Admissibility, Record,
+  or any approved primitive must not be treated as a source of bounded status.
 
 ## What This Claims
 
@@ -144,8 +144,8 @@ tomography/generation premise is required.
 
 - Does not reject local tomography. It identifies it as the missing premise.
 - Does not add local tomography as an axiom, primitive, or Tier-A admission.
-- Does not derive the ordinary tensor product from Lattice, Quantum, and
-  Record alone.
+- Does not derive the ordinary tensor product from Lattice, Qubit,
+  Admissibility, and Record alone.
 - Does not use rebits as the framework witness; rebits are only a comparator.
 - Does not address graded, fermion-parity-superselected, interacting,
   dynamical, or continuum composites.
@@ -153,8 +153,8 @@ tomography/generation premise is required.
 
 ## Dependencies
 
-- [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md) for the
-  Quantum axiom's one-site `M_2(C)` carrier only. This axiom dependency must
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) for the
+  Qubit axiom's one-site `M_2(C)` carrier only. This axiom dependency must
   not be treated as a source of bounded status.
 
 All other claims are exact finite-dimensional linear algebra reproduced by

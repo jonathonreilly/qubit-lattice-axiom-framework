@@ -30,7 +30,7 @@ DEPENDENCIES = {
     "hadron_mass_lane1_theorem_plan_support_note_2026-04-27": (
         "docs/HADRON_MASS_LANE1_THEOREM_PLAN_SUPPORT_NOTE_2026-04-27.md"
     ),
-    "minimal_axioms": "docs/MINIMAL_AXIOMS_2026-06-05.md",
+    "minimal_axioms": "docs/MINIMAL_AXIOMS_2026-06-29.md",
 }
 
 SIBLING_BOUNDARIES = {
@@ -151,10 +151,11 @@ def part2_registered_dependencies() -> None:
         and "Screening-correction budget" in plan,
     )
     check(
-        "minimal axiom note uses current Lattice/Quantum/Record authority",
-        "Date:** 2026-06-05" in axioms
+        "minimal axiom note uses current Lattice/Qubit/Admissibility/Record authority",
+        "Date:** 2026-06-29" in axioms
         and "Lattice" in axioms
-        and "Quantum" in axioms
+        and "Qubit" in axioms
+        and "Admissibility" in axioms
         and "Record" in axioms,
     )
     check(

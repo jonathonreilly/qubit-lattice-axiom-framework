@@ -1,6 +1,6 @@
-From d68a4db0f617fe7b80ac7b1351f74eb3f38e99ad Mon Sep 17 00:00:00 2001
+From 05ad284d896697a54cda7f33187bb87833313baf Mon Sep 17 00:00:00 2001
 From: Claude Opus <noreply@anthropic.com>
-Date: Thu, 16 Jul 2026 09:30:29 -0400
+Date: Thu, 16 Jul 2026 09:47:45 -0400
 Subject: [PATCH] ci: pin the audit pipeline to release requirements and add a
  per-PR smoke gate
 
@@ -9,22 +9,22 @@ Subject: [PATCH] ci: pin the audit pipeline to release requirements and add a
   the pyyaml pin (PR #5403) landed first: the loose set carried pyyaml>=6.0
   for the repo's vocabulary/render tooling (scripts/vocab_lint.py,
   scripts/migrate_link_aware.py, scripts/render_controlled_vocabulary.py);
-  the exact set must not silently drop it.
-- New pr-smoke.yml: on any PR touching Python or requirements files,
-  byte-compile every changed .py and, when audit tooling changed, run the
+  the exact set must not silently drop it. The copy-over template
+  (docs/audit/templates/audit_workflow.yml) is pinned in PR #5403 so the
+  documented install procedure cannot revert this.
+- New pr-smoke.yml: on any PR touching Python, docs/audit/scripts/** (incl.
+  shell tooling like run_pipeline.sh), or requirements files, byte-compile
+  every changed .py and, when audit tooling changed, run the
   docs/audit/scripts/tests suite. bash with pipefail on every multi-command
-  step so a failing test process is never masked; no output pipes on the
-  unittest invocation. Read-only permissions (contents: read), 15-minute
-  cap, no auto-commit.
+  step; no output pipes on the unittest invocation. Read-only permissions
+  (contents: read), 15-minute cap, no auto-commit.
 
 Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>
 ---
  .github/workflows/audit.yml    |  7 ++--
- .github/workflows/pr-smoke.yml | 64 +++++++++++++++++++++++++++++
- REVIEW_FINDINGS_PRE.md         | 73 ++++++++++++++++++++++++++++++++++
- 3 files changed, 141 insertions(+), 3 deletions(-)
+ .github/workflows/pr-smoke.yml | 65 ++++++++++++++++++++++++++++++++++
+ 2 files changed, 69 insertions(+), 3 deletions(-)
  create mode 100644 .github/workflows/pr-smoke.yml
- create mode 100644 REVIEW_FINDINGS_PRE.md
 
 diff --git a/.github/workflows/audit.yml b/.github/workflows/audit.yml
 index 7c81450b45..cfe5ca0624 100644
@@ -46,10 +46,10 @@ index 7c81450b45..cfe5ca0624 100644
          run: python3 docs/audit/scripts/repair_missing_dependency_edges.py --apply
 diff --git a/.github/workflows/pr-smoke.yml b/.github/workflows/pr-smoke.yml
 new file mode 100644
-index 0000000000..3ddf9cd3f8
+index 0000000000..709dcbec90
 --- /dev/null
 +++ b/.github/workflows/pr-smoke.yml
-@@ -0,0 +1,64 @@
+@@ -0,0 +1,65 @@
 +# Fast per-PR gate: byte-compile every changed Python file and run the audit
 +# tooling unit tests when audit scripts changed. Read-only; no auto-commit.
 +# Exists so breakage is caught at PR time instead of only by the nightly
@@ -60,6 +60,7 @@ index 0000000000..3ddf9cd3f8
 +  pull_request:
 +    paths:
 +      - "**/*.py"
++      - "docs/audit/scripts/**"
 +      - "requirements*.txt"
 +      - ".github/workflows/pr-smoke.yml"
 +
@@ -114,85 +115,6 @@ index 0000000000..3ddf9cd3f8
 +          else
 +            echo "audit scripts unchanged; skipped"
 +          fi
-diff --git a/REVIEW_FINDINGS_PRE.md b/REVIEW_FINDINGS_PRE.md
-new file mode 100644
-index 0000000000..49703b570a
---- /dev/null
-+++ b/REVIEW_FINDINGS_PRE.md
-@@ -0,0 +1,73 @@
-+# PR #5403 Pre-Merge Review Findings
-+
-+Scope: `CodeRunnerReviewer` and `RepoGovernanceReviewer`; review only, with no
-+audit verdicts.
-+
-+## Findings
-+
-+- **BUG** —
-+  `origin/handoff/ci-workflows-20260716:CI_WORKFLOWS_2026-07-16.patch:109`
-+  (target `.github/workflows/pr-smoke.yml:57`): the audit-tooling test command
-+  pipes `python -m unittest ...` into `tail -20` without enabling
-+  `pipefail`. GitHub runs an unspecified Linux shell as `bash -e {0}`, so a
-+  failing test process can be masked by `tail` exiting successfully. Fix by
-+  setting `shell: bash` on the step (GitHub then uses `-eo pipefail`), adding
-+  `set -o pipefail`, or explicitly returning the unittest process status.
-+
-+- **REPO_GOVERNANCE** —
-+  `origin/handoff/ci-workflows-20260716:CI_WORKFLOWS_2026-07-16.patch:10`:
-+  the handoff patch, PR body, and PR commit message say the audit pipeline
-+  imports `yaml` and that the exact-pin switch would otherwise break the
-+  nightly. The requested grep returns no matches on either `HEAD` or current
-+  `origin/main`; neither `.github/workflows/audit.yml` nor
-+  `docs/audit/scripts/run_pipeline.sh` calls a YAML-importing tool. The actual
-+  imports are in `scripts/vocab_lint.py:44`,
-+  `scripts/migrate_link_aware.py:40`, and
-+  `scripts/render_controlled_vocabulary.py:37`. Fix the PR body and commit
-+  message and regenerate the handoff patch so the pin is justified as exact
-+  release-set parity for repository vocabulary/render tooling, or add and test
-+  the claimed YAML-consuming audit step.
-+
-+## Verification Summary
-+
-+- Diff scope: PASS. `git diff origin/main...HEAD` changes only
-+  `requirements-release.txt`; sorted base/head comparison shows that the only
-+  semantic addition is `pyyaml==6.0.3`.
-+- Dependency validity: PASS. PyPI reports PyYAML 6.0.3 as the latest,
-+  non-yanked release, requiring Python `>=3.8`, with a CPython 3.11 Linux
-+  wheel. A CPython 3.11 Linux wheel-only resolver check completed for all five
-+  pins plus `llvmlite==0.47.0`.
-+- Pin consistency: PASS. Numba 0.65.1 requires `numpy>=1.22,<2.5`; SciPy
-+  1.17.1 requires `numpy>=1.26.4,<2.7`; NumPy 2.4.4 satisfies both.
-+  `requirements-release.txt` is alphabetically sorted.
-+- Repository placement: PASS. `requirements-release.txt` is tracked source
-+  with no generated marker, attribute, or repository generator. No science,
-+  claim-status, audit-ledger, generated-status, or publication-authority
-+  surface is changed.
-+- Handoff existence: PASS. The remote handoff branch exists, and its sole
-+  commit adds `CI_WORKFLOWS_2026-07-16.patch` and
-+  `CI_WORKFLOWS_README.md`.
-+- Handoff `audit.yml`: PASS. The workflow hunk applies cleanly and changes the
-+  install to `pip install -r requirements-release.txt`.
-+- Handoff `pr-smoke.yml` authority: PASS. It declares only `contents: read`,
-+  has a 15-minute timeout, and contains no add, commit, push, or write
-+  permission.
-+- Handoff `pr-smoke.yml` enforcement: FAIL. The BUG above lets a failing audit
-+  unit-test suite report success.
-+- Hygiene: `git diff --check` and `sort -c requirements-release.txt` pass. No
-+  audit pipeline or audit worker was run because no claim, publication, or
-+  audit-control surface changed.
-+
-+## Review Result
-+
-+- Code / runner: FAIL
-+- Repository governance: FAIL
-+- Findings: 2 total (`BUG`: 1, `REPO_GOVERNANCE`: 1); fixed: 0 (review only)
-+- Review iterations: 1
-+- Review commits: none
-+
-+The dependency line itself is valid. The requested review fails until the
-+handoff smoke test propagates unittest failures and the unsupported YAML-import
-+rationale is corrected.
-+
-+VERDICT: FAIL
 -- 
 2.50.1 (Apple Git-155)
 

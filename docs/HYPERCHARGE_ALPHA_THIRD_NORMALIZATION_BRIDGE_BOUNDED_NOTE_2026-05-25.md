@@ -1,156 +1,157 @@
-# Hypercharge α = 1/3 Normalization Bridge
+# Exact Formal Two-Equation Normalization Arithmetic
 
 **Date:** 2026-05-25
 **Claim type:** bounded_theorem
-**Status authority:** source-note proposal only; audit verdict and
-effective status are set by the independent audit lane.
-**Primary runner:** [`scripts/hypercharge_alpha_third_normalization_runner.py`](../scripts/hypercharge_alpha_third_normalization_runner.py)
+**Status authority:** source-note proposal only; audit verdict and effective
+status are set by the independent audit lane.
+**Primary runner:**
+[`scripts/hypercharge_alpha_third_normalization_runner.py`](../scripts/hypercharge_alpha_third_normalization_runner.py)
 
 ## Claim
 
-Given the retained graph-first 6+2 split of the left-handed doublet
-sector and the traceless two-eigenvalue U(1) ansatz on that split,
-together with the supplied premise packet below, the normalization
-scale of the one-parameter family
-`Y_α = α (P_sym − 3 P_anti)` is uniquely fixed at
+Let `n_sym`, `n_anti`, `q`, and `t` be supplied rational numbers, and let
+`alpha` and `beta` be formal unknowns. Assume only
 
 ```text
-α = +1/3   (doubled convention),
+n_sym * alpha + n_anti * beta = 0,
+q = t + beta/2,
+n_sym != 0.
 ```
 
-equivalently `Y(L_L) = -1`. The proof-walk uses only:
-
-1. The retained 6-state Sym² and 2-state Anti² split from the
-   graph-first SU(3) surface, plus tracelessness of the two-eigenvalue
-   U(1) ansatz: `6α + 2β = 0`, hence `β = -3α`;
-2. The explicitly supplied premise packet P1-P4 below.
-
-The bridge consists of a one-line rational arithmetic identity. It
-does not claim to derive the premise packet, and it does not promote
-those premises to axioms.
-
-This is a bounded proof-walk responding to the existing conditional
-parent row's repair request for a narrow α-normalization bridge. The
-parent `HYPERCHARGE_IDENTIFICATION_NOTE.md` is context, not a
-load-bearing dependency for this proof. This note does not add a new
-axiom or a new repo-wide theory class.
-
-## Supplied premise packet (not axioms)
-
-The following entries are the complete non-framework premise packet for
-this bounded bridge. They are supplied only for this row's conditional
-normalization arithmetic; they are not registry accepted premises and no
-new repo-wide axiom is introduced.
-
-- **P1 Anti^2-as-L_L readout convention.** On this bounded readout
-  surface, the Anti² branch is named the left-handed lepton doublet
-  branch, so `Y(L_L) = β`.
-- **P2 Gell-Mann-Nishijima convention.** Electric charge and doubled
-  hypercharge are related by `Q = T_3 + Y/2`.
-- **P3 weak-isospin assignment.** The left-handed electron component has
-  `T_3(e_L) = -1/2`.
-- **P4 electron-charge unit convention.** The electron charge is the
-  elementary charge unit, written `Q(e_L) = -1`.
-
-This row proves: **if** the retained 6+2 traceless ratio is used with
-P1-P4, **then** `α = 1/3`. It does not claim to derive P1, P2, P3, or
-P4 from `Cl(3)` on `Z^3`.
-
-## Proof-walk
-
-| Step | Statement | Load-bearing input | Lattice-action input? |
-|---|---|---|---|
-| (B1) | 6+2 graph-first split and traceless two-eigenvalue ansatz give `6α + 2β = 0`, hence `β = -3α` | Retained graph-first split + algebra | no |
-| (B2) | The Anti² branch is the `L_L` branch on this bounded readout surface, so `Y(L_L) = β = -3α` | P1 supplied readout convention | no |
-| (B3) | `Q(e_L) = T_3(e_L) + Y(L_L)/2` | P2 supplied GMN convention | no |
-| (B4) | `T_3(e_L) = -1/2` | P3 supplied weak-isospin assignment | no |
-| (B5) | `Q(e_L) = -1` | P4 supplied electron-charge unit convention | no |
-| (B6) | Substitute (B3)–(B5): `-1 = -1/2 + (-3α)/2` | Rational arithmetic | no |
-| (B7) | Solve for α: `α = 1/3` | Rational arithmetic | no |
-
-The bridge does not cite the Wilson plaquette action, staggered phases,
-Brillouin-zone labels, link unitaries, lattice scale `u_0`, a Monte
-Carlo measurement, or a fitted observational value.
-
-## Exact arithmetic check
-
-From (B5):
+Then the system has the unique exact solution
 
 ```text
-6α + 2β      =  0                            [tracelessness on 6+2 split]
-β            =  -3α
-Y(L_L)       =  β = -3α                      [P1 supplied readout convention]
-Q(e_L)       =  T_3(e_L) + Y(L_L)/2
-            =  T_3(e_L) + (-3α)/2
--1           =  -1/2 + (-3α)/2
--1 + 1/2     =  (-3α)/2
--1/2         =  (-3α)/2
-α            =  (-1/2) · (2 / -3)
-            =  1/3.
+beta  = 2(q - t),
+alpha = -(n_anti/n_sym) * beta.
 ```
 
-No quark electric-charge cross-check is load-bearing in this row. The
-only charge-unit input is P4.
+For the explicitly supplied formal packet
 
-## Load-Bearing Dependencies
+```text
+(n_sym, n_anti, q, t) = (6, 2, -1, -1/2),
+```
 
-- [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
-  — supplies the retained graph-first 6-state Sym² plus 2-state Anti²
-  decomposition used in step (B1).
-- [`GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md`](GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md)
-  — supplies the retained selected-axis surface on which the
-  two-eigenvalue traceless U(1) ansatz is evaluated.
+the solution is
 
-## Non-Load-Bearing Context
+```text
+beta = -1,
+alpha = 1/3.
+```
 
-- `HYPERCHARGE_IDENTIFICATION_NOTE.md` is the conditional parent whose
-  missing α-normalization bridge this note is meant to support after
-  independent audit; it is not a dependency of this proof.
-- `LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`
-  records the same `+1 : (-3)` ratio as a prior decoration row. This
-  note duplicates the two-line ratio derivation instead of depending on
-  that row.
-- `HYPERCHARGE_SQUARED_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md` is a
-  companion squared-trace consistency check, not a load-bearing input.
-- `LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`
-  is chain-assembly context. This bounded bridge admits only the branch
-  readout/notation convention needed to call the Anti² branch `L_L`;
-  it does not claim to rederive the matter assignment.
+This is the whole theorem. The variable names preserve the stable row's
+notation, but they carry no physical semantics in this claim. In particular,
+the theorem does not say that the packet occurs in the framework, that either
+formal block is a particle multiplet, or that `alpha` is a physical
+hypercharge normalization.
 
-The non-framework inputs are exactly P1-P4. The row remains unaudited
-until the independent audit lane reviews this note, its retained
-dependencies, supplied premise packet, and runner.
+## Formal hypotheses
 
-## Boundaries
+Every load-bearing item is an explicit theorem hypothesis:
 
-This bridge does not close:
+1. `n_sym`, `n_anti`, `q`, and `t` are rational inputs.
+2. `n_sym != 0`.
+3. The first equation is supplied with the displayed plus sign.
+4. The second equation is supplied in the displayed convention, equivalently
+   `beta/2 = q - t`.
+5. The specialization uses exactly the displayed packet `(6, 2, -1, -1/2)`.
 
-- derivation of the `Q(electron) = -1` charge-unit convention itself;
-- derivation of the GMN relation `Q = T_3 + Y/2`;
-- derivation of the `T_3(e_L) = -1/2` weak-isospin assignment;
-- derivation of the Anti²-as-`L_L` readout convention;
-- derivation of the chiral matter content itself;
-- any continuum-limit numerical claim such as plaquette, mass, or
-  coupling values;
-- any parent theorem/status promotion (the bridge records α = 1/3 as
-  a separate bounded identity candidate; downstream status of the
-  parent hypercharge note is decided by the audit lane).
+No axiom, approved primitive, retained representation split, physical charge
+assignment, weak-isospin assignment, or readout theorem is a hypothesis of
+this formal result. The row therefore has no load-bearing scientific
+dependency.
 
-The bridge re-bases the parent's existing α = 1/3 admission onto the
-explicit P1-P4 premise packet. It does not eliminate admission; it
-formally exposes the conditional chain.
+## Exact proof and uniqueness certificate
+
+Write the equations as
+
+```text
+[ n_sym   n_anti ] [ alpha ]   [   0   ]
+[   0       1/2  ] [ beta  ] = [ q - t ].
+```
+
+The determinant is
+
+```text
+det = n_sym/2.
+```
+
+Because `n_sym != 0`, the determinant is nonzero and the coefficient matrix
+has rank two. Thus the system has exactly one solution. The second row gives
+`beta = 2(q-t)`. Substitution into the first row gives
+`alpha = -(n_anti/n_sym) beta`.
+
+For the supplied formal packet,
+
+```text
+det   = 6/2 = 3,
+beta  = 2(-1 - (-1/2)) = -1,
+alpha = -(2/6)(-1) = 1/3.
+```
+
+Both equation residuals are exactly zero in rational arithmetic. No decimal
+approximation, fit, empirical comparison, source-note phrase, audit status, or
+pre-recorded answer is used as mathematical evidence.
+
+## Hostile controls
+
+The primary runner constructs the coefficient matrix and solves it with
+`fractions.Fraction`. Normal execution also verifies that the certificate
+fails closed under each of these mutations:
+
+- `n_sym = 0`;
+- a generic determinant-zero two-equation system;
+- a minus sign in place of the displayed trace-equation plus sign;
+- `t - q` in place of `q - t`;
+- a changed multiplicity packet;
+- a changed `q`/`t` packet; and
+- an attempt to infer a physical Anti-squared-to-`L_L` readout from the
+  formal certificate.
+
+The runner's `--intentional-failure` mode presents a changed `q`/`t` packet as
+the stated specialization and exits nonzero when that mutation is rejected.
+
+## Open physical bridges
+
+The following statements are explicitly outside this theorem and remain open
+unless independently supplied by retained-grade authority:
+
+- that a framework representation has the multiplicity split `6+2`;
+- that a formal Anti-squared block is physically `L_L`;
+- that `q=-1` and `t=-1/2` are framework-derived physical values;
+- that `q=t+beta/2` is a derived physical readout equation rather than a
+  supplied formal equation;
+- that the sign and normalization conventions used here are selected by the
+  framework;
+- that the formal variable `alpha` is the framework's hypercharge
+  normalization; and
+- that a common abelian generator/coupling rescaling has been physically
+  fixed.
+
+Consequently, this row does not promote the parent physical hypercharge row.
+`HYPERCHARGE_IDENTIFICATION_NOTE.md` remains context only and must supply or
+derive its own physical interpretation and scale. The graph-first selector,
+commutant, representation, matter-assignment, and charge-table notes are also
+context only; none is consumed by this proof.
 
 ## Verification
 
-Run:
+Run the normal exact certificate:
 
 ```bash
 PYTHONPATH=scripts python3 scripts/hypercharge_alpha_third_normalization_runner.py
 ```
 
-Expected:
+Expected terminal lines:
 
 ```text
-TOTAL: PASS=15 FAIL=0
-VERDICT: bounded premise-packet bridge passes; alpha = 1/3 follows from retained 6+2 split/tracelessness + supplied premise packet P1-P4 by rational arithmetic.
+TOTAL: PASS=18 FAIL=0
+VERDICT: exact formal implication verified; the supplied packet gives beta=-1 and alpha=1/3, with no physical readout inferred.
 ```
+
+Run the fail-closed probe:
+
+```bash
+PYTHONPATH=scripts python3 scripts/hypercharge_alpha_third_normalization_runner.py --intentional-failure
+```
+
+That command must print `INTENTIONAL FAIL` and exit with status `1`.

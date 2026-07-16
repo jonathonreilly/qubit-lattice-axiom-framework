@@ -1,41 +1,39 @@
 ===== runner cache v1 =====
 runner: scripts/hypercharge_alpha_third_normalization_runner.py
-runner_sha256: 0a23b98fb7c88e29b5662817313e6542671d4e4dd18d4c7bf49a4242d81ad26e
+runner_sha256: 3003cb2a08b441a8230231289e7367dc649e4cd1336801a38daa18a9353c8832
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
-HYPERCHARGE ALPHA=1/3 PREMISE-PACKET BRIDGE
+FORMAL TWO-EQUATION NORMALIZATION ARITHMETIC
 
-== Part 0: source firewall ==
-PASS: source contains boundary phrase: Supplied premise packet (not axioms)
-PASS: source contains boundary phrase: P1 Anti^2-as-L_L readout convention
-PASS: source contains boundary phrase: P2 Gell-Mann-Nishijima convention
-PASS: source contains boundary phrase: P3 weak-isospin assignment
-PASS: source contains boundary phrase: P4 electron-charge unit convention
-PASS: source contains boundary phrase: does not claim to derive the premise packet
-PASS: source contains boundary phrase: not registry accepted premises
-PASS: source contains boundary phrase: new repo-wide axiom
-PASS: source contains boundary phrase: scripts/hypercharge_alpha_third_normalization_runner.py
-PASS: source note excludes non-load-bearing cross-check phrase: empirical SM electric charges
-PASS: source note excludes non-load-bearing cross-check phrase: Q(u_L)
-PASS: source note excludes non-load-bearing cross-check phrase: Q(d_L)
+== Part 1: exact general solution certificate ==
+PASS: [A] coefficient matrix is the stated formal system (((Fraction(5, 1), Fraction(3, 1)), (Fraction(0, 1), Fraction(1, 2))))
+PASS: [A] determinant equals n_sym/2 (5/2)
+PASS: [A] nonzero determinant certifies rank two and uniqueness (det=5/2, rank=2)
+PASS: [A] beta equals 2(q-t) (4)
+PASS: [A] alpha equals -(n_anti/n_sym) beta (-12/5)
+PASS: [A] both defining equations have zero exact residual ((Fraction(0, 1), Fraction(0, 1)))
 
-== Part 1: retained 6+2 traceless ratio ==
-PASS: tracelessness on the 6+2 split gives beta/alpha = -3 (-3)
+== Part 2: supplied rational specialization ==
+PASS: [A] the specialization packet is exactly (6,2,-1,-1/2) (FormalInputs(n_sym=Fraction(6, 1), n_anti=Fraction(2, 1), q=Fraction(-1, 1), t=Fraction(-1, 2)))
+PASS: [A] specialized determinant is 3 and the system is unique (det=3, rank=2)
+PASS: [A] specialized beta is -1 (-1)
+PASS: [A] specialized alpha is 1/3 (1/3)
+PASS: [A] specialized equations have zero exact residual ((Fraction(0, 1), Fraction(0, 1)))
 
-== Part 2: exact rational solve from P1-P4 ==
-PASS: alpha = 1/3 follows from Q(e_L), T3(e_L), and Y(L_L)=beta (1/3)
-PASS: Y(L_L) = -1 at alpha = 1/3 (-1)
+== Part 3: hostile mutation controls ==
+PASS: [A] zero n_sym is rejected as non-unique (determinant is zero, so existence/uniqueness is not certified)
+PASS: [A] a generic rank-one 2x2 system is rejected (determinant is zero, so existence/uniqueness is not certified)
+PASS: [A] the wrong trace sign is rejected (equation coefficients or signs changed; alpha is not 1/3)
+PASS: [A] the wrong charge-minus-isospin sign is rejected (charge-minus-isospin sign or values changed; alpha is not 1/3; beta is not -1)
+PASS: [A] a changed multiplicity packet is rejected (formal input packet changed; equation coefficients or signs changed; alpha is not 1/3)
+PASS: [A] a changed q/t packet is rejected (formal input packet changed; charge-minus-isospin sign or values changed; alpha is not 1/3; beta is not -1)
+PASS: [A] an illicit physical-readout inference is rejected (cannot infer 'Anti^2 is physical L_L' from formal certificate (alpha=1/3, beta=-1))
 
-== Result ==
-alpha = 1/3
-Bounded bridge: retained 6+2 split/tracelessness + supplied premise packet P1-P4.
-No new repo-wide axiom and no claim to derive P1-P4.
-
-TOTAL: PASS=15 FAIL=0
-VERDICT: bounded premise-packet bridge passes; alpha = 1/3 follows from retained 6+2 split/tracelessness + supplied premise packet P1-P4 by rational arithmetic.
+TOTAL: PASS=18 FAIL=0
+VERDICT: exact formal implication verified; the supplied packet gives beta=-1 and alpha=1/3, with no physical readout inferred.
 
 ----- stderr -----
 

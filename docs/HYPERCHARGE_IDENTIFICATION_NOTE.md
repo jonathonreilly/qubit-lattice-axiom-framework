@@ -47,10 +47,12 @@ derive an electroweak readout, or supply a complete spectrum.
    antisymmetric block is the structural one-dimensional trivial
    representation.
 3. **Scale boundary.**
-   [HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md](HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
-   supplies the scale alpha=1/3 if independently retained. Until then,
-   alpha=1/3 is an explicit bounded premise of this parent. This note does not
-   derive the scale.
+   `HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`
+   proves only a self-contained formal implication from the supplied packet
+   `(n_sym,n_anti,q,t)=(6,2,-1,-1/2)`. It neither supplies this row's physical
+   scale nor identifies any block or formal variable physically. Therefore
+   `alpha=1/3` remains an explicit supplied scale of this parent. This note
+   does not derive the scale.
 
 These inputs retain their own audit boundaries. Nothing in this note promotes
 them or applies an audit verdict.

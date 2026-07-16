@@ -1,64 +1,78 @@
 ===== runner cache v1 =====
 runner: scripts/structured_mirror_bornsafe_sliced_runner_2026_05_09.py
-runner_sha256: 11547676e45c0004657d2147d79296b952d948d486e05269c89f74db4cafcc6c
-timeout_sec: 120
+runner_sha256: 0ee53fe12f46b5c9bad71e0a27ea403d1235c8965376490ef2098101d9af752a
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 33.24
+elapsed_sec: 19.35
 status: ok
 ----- stdout -----
-==============================================================================
-STRUCTURED MIRROR BORN-SAFE — SLICED INDEPENDENT RUNNER (2026-05-09)
-Recomputes Born values from first principles on a 32-config slice
+HOSTILE CONTROLS AND INDEPENDENT CHECKS
+  [PASS] deterministic bypass rejects legacy statistic: P0/P=1.406342e-01, legacy/P=1.406342e-01, corrected/P=1.095680e-16
+  [PASS] independent eight-mask recomputation agrees: max probability mismatch=0.000e+00
+  [PASS] explicit no-bypass graph makes seven and eight terms agree: P0=0.000e+00, legacy/P=1.870e-16, corrected/P=1.870e-16
+  [PASS] wrong-sign empty-term mutant is rejected: mutant |I3|/P=2.812684e-01
+  [PASS] analytic linear-amplitude inclusion coefficients cancel exactly: corrected_nonzero=0, legacy_nonzero={('D', 'D'): 1}, mutant_nonzero={('D', 'D'): 2}
+
+====================================================================================================================
+STRUCTURED MIRROR CORRECTED EIGHT-TERM SLICED RUNNER
 Source note: docs/STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md
-Born safety threshold: 1e-14
-Seeds per config: 6 (matches scan confirmation protocol)
-Slice size: 32 configurations
-==============================================================================
+Corrected numerical threshold: |I3|/P <= 1e-14
+Seeds per configuration: 6; slice size: 32
+Geometry: original structured mirror, including two-layer-back bypass edges
+====================================================================================================================
 
-  config                                       Born_mean    Born_min   ok
-  ------------------------------------------------------------------------
-  N=40 npl=12 r=3.0 g=1.25 j=0.00               8.79e-03    8.79e-03    6
-  N=25 npl= 8 r=2.5 g=1.25 j=0.00               8.07e-02    8.07e-02    6
-  N=25 npl= 8 r=4.5 g=1.25 j=0.00               7.29e-02    7.29e-02    6
-  N=25 npl=20 r=2.5 g=1.25 j=0.00               8.07e-02    8.07e-02    6
-  N=25 npl=20 r=4.5 g=1.25 j=0.00               7.32e-02    7.32e-02    6
-  N=40 npl= 8 r=2.5 g=1.25 j=0.00               7.47e-02    7.47e-02    6
-  N=40 npl= 8 r=4.5 g=1.25 j=0.00               6.75e-02    6.75e-02    6
-  N=40 npl=20 r=2.5 g=1.25 j=0.00               7.49e-02    7.49e-02    6
-  N=40 npl=20 r=4.5 g=1.25 j=0.00               7.14e-02    7.14e-02    6
-  N=30 npl=12 r=3.5 g=1.25 j=0.00               3.24e-02    3.24e-02    6
-  N=30 npl=16 r=3.5 g=1.25 j=0.00               3.24e-02    3.24e-02    6
-  N=40 npl=12 r=2.5 g=1.25 j=0.00               7.49e-02    7.49e-02    6
-  N=40 npl=12 r=3.5 g=1.25 j=0.00               2.12e-02    2.12e-02    6
-  N=40 npl=12 r=3.0 g=1.00 j=0.00               1.38e-01    1.38e-01    6
-  N=40 npl=12 r=3.0 g=1.50 j=0.00               9.65e-02    9.65e-02    6
-  N=40 npl=16 r=3.0 g=1.25 j=0.00               8.79e-03    8.79e-03    6
-  N=40 npl= 8 r=3.0 g=1.25 j=0.00               8.57e-03    8.57e-03    6
-  N=30 npl=12 r=3.0 g=1.25 j=0.00               1.63e-02    1.63e-02    6
-  N=25 npl= 8 r=2.5 g=1.00 j=0.00               1.13e-01    1.13e-01    6
-  N=25 npl= 8 r=2.5 g=1.50 j=0.00               1.56e-02    1.56e-02    6
-  N=40 npl=20 r=4.5 g=1.00 j=0.00               1.55e-01    1.55e-01    6
-  N=40 npl=20 r=4.5 g=1.50 j=0.00               6.69e-02    6.69e-02    6
-  N=25 npl= 8 r=2.5 g=1.25 j=0.15               9.27e-02    4.34e-02    6
-  N=25 npl= 8 r=2.5 g=1.25 j=0.30               1.01e-01    4.03e-02    5
-  N=40 npl=12 r=3.0 g=1.25 j=0.15               1.19e-01    4.33e-02    6
-  N=40 npl=12 r=3.0 g=1.25 j=0.30               4.05e-02    4.64e-03    5
-  N=40 npl=20 r=4.5 g=1.25 j=0.15               8.91e-02    4.23e-02    6
-  N=40 npl=20 r=4.5 g=1.25 j=0.30               6.86e-02    1.80e-02    5
-  N=30 npl=16 r=3.5 g=1.25 j=0.15               8.88e-02    5.26e-02    6
-  N=30 npl=16 r=3.5 g=1.25 j=0.30               3.43e-01    2.79e-02    5
-  N=25 npl=20 r=4.5 g=1.50 j=0.30               3.03e-01    6.56e-02    5
-  N=40 npl= 8 r=2.5 g=1.00 j=0.15               5.02e-02    2.93e-02    6
+  config                                       I3/P mean    I3/P max     legacy       P0/P    d_TV  pur_cl   gravity  ok
+  ----------------------------------------------------------------------------------------------------------------
+  N=40 npl=12 r=3.0 g=1.25 j=0.00              7.978e-18   7.978e-18  8.788e-03  8.788e-03  0.1208  0.9992   +0.3811   6
+  N=25 npl= 8 r=2.5 g=1.25 j=0.00              1.833e-16   1.833e-16  8.070e-02  8.070e-02  0.0620  0.9938   +0.0639   6
+  N=25 npl= 8 r=4.5 g=1.25 j=0.00              3.136e-16   3.136e-16  7.286e-02  7.286e-02  0.0848  0.9836   -1.3918   6
+  N=25 npl=20 r=2.5 g=1.25 j=0.00              4.719e-16   4.719e-16  8.070e-02  8.070e-02  0.1082  0.9992   -1.2168   6
+  N=25 npl=20 r=4.5 g=1.25 j=0.00              5.469e-16   5.469e-16  7.323e-02  7.323e-02  0.1566  0.9869   -0.2639   6
+  N=40 npl= 8 r=2.5 g=1.25 j=0.00              3.299e-16   3.299e-16  7.470e-02  7.470e-02  0.0614  0.9856   +1.2337   6
+  N=40 npl= 8 r=4.5 g=1.25 j=0.00              5.904e-16   5.904e-16  6.747e-02  6.747e-02  0.2839  0.8517   +0.2736   6
+  N=40 npl=20 r=2.5 g=1.25 j=0.00              1.686e-16   1.686e-16  7.488e-02  7.488e-02  0.3315  0.9305   +0.1458   6
+  N=40 npl=20 r=4.5 g=1.25 j=0.00              2.202e-16   2.202e-16  7.144e-02  7.144e-02  0.2175  0.9504   +0.3467   6
+  N=30 npl=12 r=3.5 g=1.25 j=0.00              3.460e-16   3.460e-16  3.237e-02  3.237e-02  0.2644  0.9436   +1.9953   6
+  N=30 npl=16 r=3.5 g=1.25 j=0.00              6.987e-16   6.987e-16  3.237e-02  3.237e-02  0.2685  0.9413   +2.3384   6
+  N=40 npl=12 r=2.5 g=1.25 j=0.00              2.740e-16   2.740e-16  7.488e-02  7.488e-02  0.1906  0.9691   +1.4868   6
+  N=40 npl=12 r=3.5 g=1.25 j=0.00              8.149e-16   8.149e-16  2.117e-02  2.117e-02  0.2935  0.9087   +2.4055   6
+  N=40 npl=12 r=3.0 g=1.00 j=0.00              5.115e-16   5.115e-16  1.381e-01  1.381e-01  0.1574  0.9903   +1.0593   6
+  N=40 npl=12 r=3.0 g=1.50 j=0.00              6.753e-16   6.753e-16  9.648e-02  9.648e-02  0.7312  0.7142   -2.7343   6
+  N=40 npl=16 r=3.0 g=1.25 j=0.00              7.918e-16   7.918e-16  8.790e-03  8.790e-03  0.1509  0.9926   +0.8525   6
+  N=40 npl= 8 r=3.0 g=1.25 j=0.00              3.839e-16   3.839e-16  8.573e-03  8.573e-03  0.2300  0.9250   +0.7813   6
+  N=30 npl=12 r=3.0 g=1.25 j=0.00              1.524e-15   1.524e-15  1.627e-02  1.627e-02  0.1170  0.9962   +0.1839   6
+  N=25 npl= 8 r=2.5 g=1.00 j=0.00              1.636e-16   1.636e-16  1.131e-01  1.131e-01  0.0335  0.9997   -1.0714   6
+  N=25 npl= 8 r=2.5 g=1.50 j=0.00              6.097e-16   6.097e-16  1.556e-02  1.556e-02  0.1895  0.9456   -1.3093   6
+  N=40 npl=20 r=4.5 g=1.00 j=0.00              3.282e-16   3.282e-16  1.553e-01  1.553e-01  0.1073  0.9940   -0.5458   6
+  N=40 npl=20 r=4.5 g=1.50 j=0.00              2.025e-16   2.025e-16  6.685e-02  6.685e-02  0.3697  0.7855   +1.9704   6
+  N=25 npl= 8 r=2.5 g=1.25 j=0.15              3.220e-16   5.241e-16  9.266e-02  9.266e-02  0.1540  0.9492   +1.6049   6
+  N=25 npl= 8 r=2.5 g=1.25 j=0.30              5.070e-16   1.054e-15  8.947e-02  8.947e-02  0.1274  0.9593   +2.7074   6
+  N=40 npl=12 r=3.0 g=1.25 j=0.15              3.169e-16   8.420e-16  1.193e-01  1.193e-01  0.1738  0.9634   +2.4770   6
+  N=40 npl=12 r=3.0 g=1.25 j=0.30              4.838e-16   1.766e-15  3.950e-02  3.950e-02  0.2054  0.9717   +4.2639   6
+  N=40 npl=20 r=4.5 g=1.25 j=0.15              3.372e-16   5.729e-16  8.869e-02  8.869e-02  0.1786  0.9338   +3.9574   6
+  N=40 npl=20 r=4.5 g=1.25 j=0.30              4.936e-16   1.419e-15  6.108e-02  6.108e-02  0.1395  0.9593   +5.5055   6
+  N=30 npl=16 r=3.5 g=1.25 j=0.15              2.708e-16   5.602e-16  8.882e-02  8.882e-02  0.2412  0.9456   +3.0749   6
+  N=30 npl=16 r=3.5 g=1.25 j=0.30              2.582e-16   5.029e-16  2.953e-01  2.953e-01  0.1619  0.9656   +4.2808   6
+  N=25 npl=20 r=4.5 g=1.50 j=0.30              5.963e-16   1.817e-15  2.629e-01  2.629e-01  0.3452  0.9034   +4.7174   6
+  N=40 npl= 8 r=2.5 g=1.00 j=0.15              2.655e-16   4.978e-16  5.021e-02  5.021e-02  0.1453  0.9665   +2.0837   6
 
-Sliced grid Born minimum: 4.6428e-03
-Achieved at: N=40 npl=12 r=3.0 g=1.25 j=0.30
-Born safety threshold:    1e-14
-Note's documented best:   8.79e-03
+AGGREGATE
+  valid executions: 192/192
+  maximum corrected |I3|/P: 1.816615e-15 at N=25 npl=20 r=4.5 g=1.50 j=0.30, seed=17
+  maximum |legacy/P - P(empty)/P|: 1.776357e-15
+  dtv range over 192 executions: [+3.354922e-02, +7.311804e-01]
+  pur_cl range over 192 executions: [+7.141848e-01, +9.997359e-01]
+  s_norm range over 192 executions: [+8.930359e-04, +8.629478e-01]
+  gravity range over 192 executions: [-2.734334e+00, +7.563472e+00]
+  grav_k0 range over 192 executions: [+0.000000e+00, +0.000000e+00]
+  configurations meeting the scan's finite ancillary screen (mean pur_cl<0.95 and mean gravity>0): 11/32
 
-PASS: sliced grid minimum is well above 1e-14, consistent with
-      the note's bounded null-result claim. Sliced verification
-      reproduces the order of magnitude of the documented best
-      near-Born candidate (8.79e-03) on the same propagator.
+PASS: all 32 configurations produced ok=6 and the corrected eight-term
+      residual stayed below the explicit 1e-14 numerical threshold.
+      The nonzero legacy residual is the measured P(empty) bypass term.
+      Exact cancellation is conditional on the separately checked
+      fixed-graph linear-amplitude/quadratic-probability identity; floating-
+      point cancellation alone is not presented as an exact proof.
 
 ----- stderr -----
 

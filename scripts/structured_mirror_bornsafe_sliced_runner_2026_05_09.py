@@ -1,46 +1,23 @@
 #!/usr/bin/env python3
-"""Structured Mirror Born-Safe — sliced independent runner (2026-05-09).
+"""Corrected eight-term structured-mirror sliced runner.
 
-Sliced complement to
-    docs/STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md
+This registered runner executes every one of the 32 documented slice
+configurations on all six canonical seeds.  It preserves the structured-mirror
+graph, including two-layer-back edges that can bypass the selected barrier
+layer, and evaluates
 
-The slow companion runner (`scripts/structured_mirror_bornsafe_scan.py`)
-sweeps 540 configurations on the structured-mirror linear-propagator
-family and exits with `RETAINED POCKET: none found`. The note's
-null-result claim rests on that 540-config evidence cached in
-`logs/2026-04-03-structured-mirror-bornsafe-scan.txt`.
+    I3 = P(ABC)-P(AB)-P(AC)-P(BC)+P(A)+P(B)+P(C)-P(empty).
 
-This sliced runner is an *independent* check that recomputes Born
-values from first principles on a representative subset of the same
-grid, using the same `propagate_LINEAR` import the slow scan uses,
-then asserts that the grid minimum stays above the documented
-machine-precision Born-safety threshold (`1e-14`).
+The runner also exposes the defective legacy seven-term residual and
+``P(empty)``.  Hostile controls independently recompute all eight masks on
+deterministic bypass/no-bypass graphs, reject a wrong-sign mutant, and check
+the exact integer coefficient identity for a quadratic probability of a
+strictly linear amplitude sum.
 
-The slice covers:
-
-  * the documented best near-Born candidate
-    (N=40, npl_half=12, connect_radius=3.0, grid_spacing=1.25,
-     layer_jitter=0.0)
-  * grid corners over the (N, npl_half, connect_radius, grid_spacing,
-    layer_jitter) axes
-  * a center-of-grid configuration
-  * a small ring of nearby points around the best near-Born candidate
-
-Each config is run with the canonical 6-seed protocol matching the
-scan's confirmation seeds.
-
-Exit code 0 (PASS) means: grid minimum > 1e-14, consistent with the
-note's "no Born-safe pocket" claim.
-
-Exit code 1 (FAIL) means: at least one sliced config beat the
-threshold, which would invalidate the null-result claim and require
-re-opening the lane.
-
-Sliced lane only — does NOT replace the 540-config slow scan, which
-remains reproducible via
-    python3 scripts/structured_mirror_bornsafe_scan.py
-and whose stdout is cached at
-    logs/2026-04-03-structured-mirror-bornsafe-scan.txt
+Numerical cancellation at the configured tolerance is finite floating-point
+evidence.  The coefficient identity supplies the exact boundary, conditional
+on the supplied fixed-graph strictly linear propagator and quadratic detector
+probability convention.
 """
 
 from __future__ import annotations
@@ -48,114 +25,62 @@ from __future__ import annotations
 import math
 import os
 import sys
-from typing import Iterable
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from scripts.structured_mirror_bornsafe_scan import measure_config
+from scripts.mirror_born_audit import propagate_LINEAR
+from scripts.structured_mirror_bornsafe_scan import measure_config, sorkin_born
 
 
+AUDIT_TIMEOUT_SEC = 180
 BORN_SAFETY_THRESHOLD = 1e-14
-DOCUMENTED_BEST_BORN = 8.79e-03  # documented in the note for the
-                                 # best near-Born candidate
-SEEDS = [s * 7 + 3 for s in range(6)]  # matches the scan's seed protocol
+CONTROL_ABS_TOL = 5e-14
+SEEDS = [s * 7 + 3 for s in range(6)]
 K_VALUE = 5.0
 SLIT_GAP = 2.0
 
 
-# Representative slice of the (N, npl_half, connect_radius,
-# grid_spacing, layer_jitter) grid. Chosen to span:
-#   - the documented best near-Born candidate
-#   - all eight corners of the (N, npl_half, connect_radius) cube
-#     at canonical grid_spacing=1.25, layer_jitter=0.0
-#   - the center configuration
-#   - a small neighbourhood of the best candidate
-#   - a representative jittered slice
-#
-# Total: 32 configurations.
+# The registered slice is unchanged: documented old best, grid corners,
+# center, near-best neighbourhood, and jittered configurations.
 SLICED_CONFIGS: list[tuple[int, int, float, float, float]] = [
-    # Documented best near-Born candidate (per the note)
     (40, 12, 3.0, 1.25, 0.0),
-
-    # Corners of the (N, npl_half, connect_radius) cube
-    # at the canonical grid_spacing=1.25, layer_jitter=0.0 plane.
-    (25, 8,  2.5, 1.25, 0.0),
-    (25, 8,  4.5, 1.25, 0.0),
+    (25, 8, 2.5, 1.25, 0.0),
+    (25, 8, 4.5, 1.25, 0.0),
     (25, 20, 2.5, 1.25, 0.0),
     (25, 20, 4.5, 1.25, 0.0),
-    (40, 8,  2.5, 1.25, 0.0),
-    (40, 8,  4.5, 1.25, 0.0),
+    (40, 8, 2.5, 1.25, 0.0),
+    (40, 8, 4.5, 1.25, 0.0),
     (40, 20, 2.5, 1.25, 0.0),
     (40, 20, 4.5, 1.25, 0.0),
-
-    # Center of the grid (mid N, mid npl_half, mid connect_radius)
     (30, 12, 3.5, 1.25, 0.0),
     (30, 16, 3.5, 1.25, 0.0),
-
-    # Small neighbourhood of the best near-Born candidate
     (40, 12, 2.5, 1.25, 0.0),
     (40, 12, 3.5, 1.25, 0.0),
-    (40, 12, 3.0, 1.0,  0.0),
-    (40, 12, 3.0, 1.5,  0.0),
+    (40, 12, 3.0, 1.0, 0.0),
+    (40, 12, 3.0, 1.5, 0.0),
     (40, 16, 3.0, 1.25, 0.0),
-    (40, 8,  3.0, 1.25, 0.0),
+    (40, 8, 3.0, 1.25, 0.0),
     (30, 12, 3.0, 1.25, 0.0),
-
-    # Grid extremes in grid_spacing, layer_jitter
-    (25, 8,  2.5, 1.0,  0.0),
-    (25, 8,  2.5, 1.5,  0.0),
-    (40, 20, 4.5, 1.0,  0.0),
-    (40, 20, 4.5, 1.5,  0.0),
-
-    # Representative jittered slice (j > 0)
-    (25, 8,  2.5, 1.25, 0.15),
-    (25, 8,  2.5, 1.25, 0.30),
+    (25, 8, 2.5, 1.0, 0.0),
+    (25, 8, 2.5, 1.5, 0.0),
+    (40, 20, 4.5, 1.0, 0.0),
+    (40, 20, 4.5, 1.5, 0.0),
+    (25, 8, 2.5, 1.25, 0.15),
+    (25, 8, 2.5, 1.25, 0.30),
     (40, 12, 3.0, 1.25, 0.15),
     (40, 12, 3.0, 1.25, 0.30),
     (40, 20, 4.5, 1.25, 0.15),
     (40, 20, 4.5, 1.25, 0.30),
     (30, 16, 3.5, 1.25, 0.15),
     (30, 16, 3.5, 1.25, 0.30),
-
-    # Add two more boundary checks
-    (25, 20, 4.5, 1.5,  0.30),
-    (40, 8,  2.5, 1.0,  0.15),
+    (25, 20, 4.5, 1.5, 0.30),
+    (40, 8, 2.5, 1.0, 0.15),
 ]
 
 
-def six_seed_born(config: tuple[int, int, float, float, float]) -> dict:
-    """Recompute Born value (mean across 6 seeds) for a single config.
-
-    Calls into the same `measure_config` the slow scan uses, so the
-    sliced runner is testing the same first-principles propagator
-    pipeline (`propagate_LINEAR` from `scripts/mirror_born_audit.py`).
-    """
-    n_layers, npl_half, connect_radius, grid_spacing, layer_jitter = config
-    born_vals: list[float] = []
-    ok_count = 0
-    for seed in SEEDS:
-        row = measure_config(
-            n_layers=n_layers,
-            npl_half=npl_half,
-            connect_radius=connect_radius,
-            grid_spacing=grid_spacing,
-            layer_jitter=layer_jitter,
-            seed=seed,
-            k=K_VALUE,
-            slit_gap=SLIT_GAP,
-        )
-        if row is None:
-            continue
-        if row["born"] is None or math.isnan(row["born"]):
-            continue
-        born_vals.append(row["born"])
-        ok_count += 1
-    if not born_vals:
-        return {"mean": math.nan, "min": math.nan, "ok": 0}
-    born_mean = sum(born_vals) / len(born_vals)
-    born_min = min(born_vals)
-    return {"mean": born_mean, "min": born_min, "ok": ok_count, "vals": born_vals}
+def mean(values: list[float]) -> float:
+    return sum(values) / len(values)
 
 
 def fmt_config(config: tuple[int, int, float, float, float]) -> str:
@@ -166,86 +91,361 @@ def fmt_config(config: tuple[int, int, float, float, float]) -> str:
     )
 
 
-def main() -> int:
-    print("=" * 78)
-    print("STRUCTURED MIRROR BORN-SAFE — SLICED INDEPENDENT RUNNER (2026-05-09)")
-    print("Recomputes Born values from first principles on a 32-config slice")
-    print("Source note: docs/STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md")
-    print(f"Born safety threshold: {BORN_SAFETY_THRESHOLD:.0e}")
-    print(f"Seeds per config: {len(SEEDS)} (matches scan confirmation protocol)")
-    print(f"Slice size: {len(SLICED_CONFIGS)} configurations")
-    print("=" * 78)
-    print()
+def six_seed_measurements(config: tuple[int, int, float, float, float]) -> dict:
+    """Execute all six seeds; an invalid seed is retained as a hard failure."""
+    n_layers, npl_half, connect_radius, grid_spacing, layer_jitter = config
+    samples = []
+    errors = []
+    for seed in SEEDS:
+        try:
+            row = measure_config(
+                n_layers=n_layers,
+                npl_half=npl_half,
+                connect_radius=connect_radius,
+                grid_spacing=grid_spacing,
+                layer_jitter=layer_jitter,
+                seed=seed,
+                k=K_VALUE,
+                slit_gap=SLIT_GAP,
+                strict=True,
+            )
+        except ValueError as exc:
+            errors.append(f"seed={seed}: {exc}")
+            continue
+        samples.append({"seed": seed, **row})
 
-    print(
-        f"  {'config':<42s}  {'Born_mean':>10s}  {'Born_min':>10s}  {'ok':>3s}"
+    result = {"ok": len(samples), "samples": samples, "errors": errors}
+    if len(samples) != len(SEEDS):
+        return result
+
+    for key in (
+        "born_corrected",
+        "born_legacy",
+        "p_empty_ratio",
+        "dtv",
+        "pur_cl",
+        "s_norm",
+        "gravity",
+        "grav_k0",
+    ):
+        values = [sample[key] for sample in samples]
+        result[f"{key}_mean"] = mean(values)
+        result[f"{key}_min"] = min(values)
+        result[f"{key}_max"] = max(values)
+    result["legacy_empty_mismatch_max"] = max(
+        abs(sample["born_legacy"] - sample["p_empty_ratio"])
+        for sample in samples
     )
-    print("  " + "-" * 72)
+    return result
+
+
+def independent_eight_mask_recompute(
+    positions,
+    adj,
+    src,
+    k,
+    barrier_nodes,
+    slit_a,
+    slit_b,
+    slit_c,
+    det_list,
+    field,
+):
+    """Separately written eight-mask probability recomputation.
+
+    This deliberately does not call ``sorkin_born``.
+    """
+    barrier = set(barrier_nodes)
+    a = set(slit_a)
+    b = set(slit_b)
+    c = set(slit_c)
+    open_sets = (
+        ("abc", a | b | c),
+        ("ab", a | b),
+        ("ac", a | c),
+        ("bc", b | c),
+        ("a", a),
+        ("b", b),
+        ("c", c),
+        ("empty", set()),
+    )
+    probabilities = {}
+    for label, open_nodes in open_sets:
+        blocked = barrier - open_nodes
+        amps = propagate_LINEAR(positions, adj, field, src, k, blocked)
+        probabilities[label] = sum(abs(amps[d]) ** 2 for d in det_list)
+    legacy = (
+        probabilities["abc"]
+        - probabilities["ab"]
+        - probabilities["ac"]
+        - probabilities["bc"]
+        + probabilities["a"]
+        + probabilities["b"]
+        + probabilities["c"]
+    )
+    corrected = legacy - probabilities["empty"]
+    return probabilities, legacy, corrected
+
+
+def deterministic_control_graph(*, bypass: bool):
+    """One barrier layer with optional source-to-detector bypass edge."""
+    positions = [
+        (0.0, 0.0, 0.0),
+        (1.0, 3.0, 0.0),
+        (1.0, -3.0, 0.0),
+        (1.0, 0.0, 0.0),
+        (2.0, 0.5, 0.0),
+    ]
+    adj = {
+        0: [1, 2, 3] + ([4] if bypass else []),
+        1: [4],
+        2: [4],
+        3: [4],
+    }
+    return (
+        positions,
+        adj,
+        [0],
+        0.0,
+        [1, 2, 3],
+        [1],
+        [2],
+        [3],
+        [4],
+        [0.0] * 5,
+    )
+
+
+def coefficient_table(*, include_empty: bool, empty_sign: int = -1):
+    """Exact integer coefficients of z_i conjugate(z_j) in inclusion-exclusion."""
+    masks = [
+        (1, {"D", "A", "B", "C"}),
+        (-1, {"D", "A", "B"}),
+        (-1, {"D", "A", "C"}),
+        (-1, {"D", "B", "C"}),
+        (1, {"D", "A"}),
+        (1, {"D", "B"}),
+        (1, {"D", "C"}),
+    ]
+    if include_empty:
+        masks.append((empty_sign, {"D"}))
+    names = ("D", "A", "B", "C")
+    return {
+        (left, right): sum(
+            sign for sign, present in masks if left in present and right in present
+        )
+        for left in names
+        for right in names
+    }
+
+
+def report_control(name: str, ok: bool, detail: str) -> bool:
+    print(f"  [{'PASS' if ok else 'FAIL'}] {name}: {detail}")
+    return ok
+
+
+def run_hostile_controls() -> bool:
+    print("HOSTILE CONTROLS AND INDEPENDENT CHECKS")
+    checks = []
+
+    bypass_args = deterministic_control_graph(bypass=True)
+    bypass = sorkin_born(*bypass_args)
+    independent_probs, independent_legacy, independent_corrected = (
+        independent_eight_mask_recompute(*bypass_args)
+    )
+    probability_mismatch = max(
+        abs(bypass.probabilities[key] - independent_probs[key])
+        for key in bypass.probabilities
+    )
+    scale = max(1.0, bypass.p_abc)
+    checks.append(
+        report_control(
+            "deterministic bypass rejects legacy statistic",
+            bypass.empty_ratio > 1e-6
+            and abs(bypass.legacy_i3 - bypass.p_empty) <= CONTROL_ABS_TOL * scale
+            and bypass.corrected_ratio <= BORN_SAFETY_THRESHOLD,
+            (
+                f"P0/P={bypass.empty_ratio:.6e}, "
+                f"legacy/P={bypass.legacy_ratio:.6e}, "
+                f"corrected/P={bypass.corrected_ratio:.6e}"
+            ),
+        )
+    )
+    checks.append(
+        report_control(
+            "independent eight-mask recomputation agrees",
+            probability_mismatch <= CONTROL_ABS_TOL * scale
+            and abs(independent_legacy - bypass.legacy_i3) <= CONTROL_ABS_TOL * scale
+            and abs(independent_corrected - bypass.corrected_i3)
+            <= CONTROL_ABS_TOL * scale,
+            f"max probability mismatch={probability_mismatch:.3e}",
+        )
+    )
+
+    no_bypass_args = deterministic_control_graph(bypass=False)
+    no_bypass = sorkin_born(*no_bypass_args)
+    checks.append(
+        report_control(
+            "explicit no-bypass graph makes seven and eight terms agree",
+            no_bypass.p_empty == 0.0
+            and abs(no_bypass.legacy_i3 - no_bypass.corrected_i3)
+            <= CONTROL_ABS_TOL * max(1.0, no_bypass.p_abc),
+            (
+                f"P0={no_bypass.p_empty:.3e}, "
+                f"legacy/P={no_bypass.legacy_ratio:.3e}, "
+                f"corrected/P={no_bypass.corrected_ratio:.3e}"
+            ),
+        )
+    )
+
+    wrong_sign_i3 = bypass.legacy_i3 + bypass.p_empty
+    wrong_sign_ratio = abs(wrong_sign_i3) / bypass.p_abc
+    checks.append(
+        report_control(
+            "wrong-sign empty-term mutant is rejected",
+            wrong_sign_ratio > 1e-6,
+            f"mutant |I3|/P={wrong_sign_ratio:.6e}",
+        )
+    )
+
+    corrected_coeffs = coefficient_table(include_empty=True, empty_sign=-1)
+    legacy_coeffs = coefficient_table(include_empty=False)
+    mutant_coeffs = coefficient_table(include_empty=True, empty_sign=1)
+    legacy_nonzero = {
+        monomial: value for monomial, value in legacy_coeffs.items() if value
+    }
+    mutant_nonzero = {
+        monomial: value for monomial, value in mutant_coeffs.items() if value
+    }
+    checks.append(
+        report_control(
+            "analytic linear-amplitude inclusion coefficients cancel exactly",
+            all(value == 0 for value in corrected_coeffs.values())
+            and legacy_nonzero == {("D", "D"): 1}
+            and mutant_nonzero == {("D", "D"): 2},
+            (
+                f"corrected_nonzero=0, legacy_nonzero={legacy_nonzero}, "
+                f"mutant_nonzero={mutant_nonzero}"
+            ),
+        )
+    )
+
+    print()
+    return all(checks)
+
+
+def main() -> int:
+    controls_ok = run_hostile_controls()
+
+    print("=" * 116)
+    print("STRUCTURED MIRROR CORRECTED EIGHT-TERM SLICED RUNNER")
+    print("Source note: docs/STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md")
+    print(f"Corrected numerical threshold: |I3|/P <= {BORN_SAFETY_THRESHOLD:.0e}")
+    print(f"Seeds per configuration: {len(SEEDS)}; slice size: {len(SLICED_CONFIGS)}")
+    print("Geometry: original structured mirror, including two-layer-back bypass edges")
+    print("=" * 116)
+    print()
+    print(
+        f"  {'config':<42s} {'I3/P mean':>11s} {'I3/P max':>11s} "
+        f"{'legacy':>10s} {'P0/P':>10s} {'d_TV':>7s} {'pur_cl':>7s} "
+        f"{'gravity':>9s} {'ok':>3s}"
+    )
+    print("  " + "-" * 112)
 
     rows = []
+    all_valid = True
     for config in SLICED_CONFIGS:
-        result = six_seed_born(config)
+        result = six_seed_measurements(config)
         rows.append((config, result))
-        born_mean = result["mean"]
-        born_min = result["min"]
-        ok = result["ok"]
-        if math.isnan(born_mean):
+        if result["ok"] != len(SEEDS):
+            all_valid = False
             print(
-                f"  {fmt_config(config):<42s}  "
-                f"{'nan':>10s}  {'nan':>10s}  {ok:3d}"
+                f"  {fmt_config(config):<42s} {'INVALID':>11s} {'INVALID':>11s} "
+                f"{'INVALID':>10s} {'INVALID':>10s} {'-':>7s} {'-':>7s} "
+                f"{'-':>9s} {result['ok']:3d}"
             )
-        else:
-            print(
-                f"  {fmt_config(config):<42s}  "
-                f"{born_mean:10.2e}  {born_min:10.2e}  {ok:3d}"
-            )
-
-    print()
-
-    # Aggregate the grid minimum across the slice (per-config minima
-    # over 6 seeds, then min over the slice).
-    slice_min = math.inf
-    slice_min_config = None
-    for config, result in rows:
-        born_min = result["min"]
-        if math.isnan(born_min):
+            for error in result["errors"]:
+                print(f"      {error}")
             continue
-        if born_min < slice_min:
-            slice_min = born_min
-            slice_min_config = config
+        print(
+            f"  {fmt_config(config):<42s} "
+            f"{result['born_corrected_mean']:11.3e} "
+            f"{result['born_corrected_max']:11.3e} "
+            f"{result['born_legacy_mean']:10.3e} "
+            f"{result['p_empty_ratio_mean']:10.3e} "
+            f"{result['dtv_mean']:7.4f} "
+            f"{result['pur_cl_mean']:7.4f} "
+            f"{result['gravity_mean']:+9.4f} "
+            f"{result['ok']:3d}"
+        )
 
-    if slice_min_config is None:
-        print("FAIL: no configurations produced a valid Born readout")
+    print()
+    if not all_valid:
+        print("FAIL: at least one registered configuration did not produce ok=6.")
         return 1
 
-    print(f"Sliced grid Born minimum: {slice_min:.4e}")
-    print(f"Achieved at: {fmt_config(slice_min_config)}")
-    print(f"Born safety threshold:    {BORN_SAFETY_THRESHOLD:.0e}")
-    print(f"Note's documented best:   {DOCUMENTED_BEST_BORN:.2e}")
+    max_corrected = max(
+        (
+            sample["born_corrected"],
+            config,
+            sample["seed"],
+        )
+        for config, result in rows
+        for sample in result["samples"]
+    )
+    max_legacy_empty_mismatch = max(
+        result["legacy_empty_mismatch_max"] for _, result in rows
+    )
+    diagnostic_ranges = {}
+    for key in ("dtv", "pur_cl", "s_norm", "gravity", "grav_k0"):
+        values = [
+            sample[key]
+            for _, result in rows
+            for sample in result["samples"]
+        ]
+        diagnostic_ranges[key] = (min(values), max(values))
+    joint_rows = [
+        config
+        for config, result in rows
+        if result["pur_cl_mean"] < 0.95 and result["gravity_mean"] > 0.0
+    ]
+
+    print("AGGREGATE")
+    print(f"  valid executions: {len(SLICED_CONFIGS) * len(SEEDS)}/192")
+    print(
+        f"  maximum corrected |I3|/P: {max_corrected[0]:.6e} "
+        f"at {fmt_config(max_corrected[1])}, seed={max_corrected[2]}"
+    )
+    print(
+        "  maximum |legacy/P - P(empty)/P|: "
+        f"{max_legacy_empty_mismatch:.6e}"
+    )
+    for key, (minimum, maximum) in diagnostic_ranges.items():
+        print(f"  {key} range over 192 executions: [{minimum:+.6e}, {maximum:+.6e}]")
+    print(
+        "  configurations meeting the scan's finite ancillary screen "
+        f"(mean pur_cl<0.95 and mean gravity>0): {len(joint_rows)}/32"
+    )
     print()
 
-    # Check 1: sliced grid min must stay above the safety threshold.
-    if slice_min <= BORN_SAFETY_THRESHOLD:
-        print("FAIL: sliced grid minimum at or below 1e-14 — would invalidate")
-        print("      the note's null-result claim. Re-open the structured-")
-        print("      mirror Born-safe lane.")
+    if not controls_ok:
+        print("FAIL: one or more hostile controls failed.")
+        return 1
+    if max_corrected[0] > BORN_SAFETY_THRESHOLD:
+        print("FAIL: corrected numerical residual exceeds the declared threshold.")
+        return 1
+    if max_legacy_empty_mismatch > BORN_SAFETY_THRESHOLD:
+        print("FAIL: legacy residual does not track the bypass background.")
         return 1
 
-    # Check 2: sliced grid min should be in the same order of
-    # magnitude as the documented best (within a generous factor),
-    # which is a sanity test that the slice actually exercises the
-    # interesting region of the grid.
-    if slice_min > 1.0:
-        print("FAIL: sliced grid minimum > 1.0 — slice may be missing the")
-        print("      near-Born region of the parameter space.")
-        return 1
-
-    print("PASS: sliced grid minimum is well above 1e-14, consistent with")
-    print("      the note's bounded null-result claim. Sliced verification")
-    print("      reproduces the order of magnitude of the documented best")
-    print("      near-Born candidate (8.79e-03) on the same propagator.")
+    print("PASS: all 32 configurations produced ok=6 and the corrected eight-term")
+    print("      residual stayed below the explicit 1e-14 numerical threshold.")
+    print("      The nonzero legacy residual is the measured P(empty) bypass term.")
+    print("      Exact cancellation is conditional on the separately checked")
+    print("      fixed-graph linear-amplitude/quadratic-probability identity; floating-")
+    print("      point cancellation alone is not presented as an exact proof.")
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    raise SystemExit(main())

@@ -76,11 +76,17 @@ Primary artifact:
 
 ### Structured mirror growth
 
-This is the most important negative result from the recent audit pass.
+This remains an open architecture question, but the previous Born-negative
+reading of the strictly linear registered slice was a statistic defect.
 
 - the geometry idea is physically interesting
-- but the canonical linear validator is not Born-clean
-- the dedicated linear scan found no review-safe Born-clean pocket
+- the corrected eight-term registered linear slice is Born-clean at finite
+  precision on all `32 x 6` executions
+- the old nonzero seven-term residual was the measurable barrier-bypass
+  `P(empty)` contribution
+- the corrected slice still does not by itself establish a flagship or
+  successor architecture; the default layer-normalized growth rule and
+  broader joint-lane questions remain separate
 
 Primary artifacts:
 
@@ -90,6 +96,7 @@ Primary artifacts:
 So structured mirror is currently:
 
 - **interesting geometry result**
+- **finite corrected linear Born slice**
 - **not a retained flagship architecture**
 
 ### Structured chokepoint bridge
@@ -435,7 +442,7 @@ Produce one compact repo-facing card for:
 - exact mirror
 - exact 2D mirror
 - `Z2 x Z2`
-- structured mirror as the negative/open successor
+- structured mirror as a corrected finite/open grown-geometry lane
 
 Goal:
 

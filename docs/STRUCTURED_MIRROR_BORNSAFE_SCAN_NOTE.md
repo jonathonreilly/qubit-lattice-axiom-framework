@@ -1,232 +1,179 @@
-# Structured Mirror Born-Safe Scan Note
+# Structured Mirror Corrected Born Slice Note
 
-**Date:** 2026-04-03 (status line rephrased 2026-04-28; certificate runner added 2026-05-03; sliced runner added 2026-05-09; load-bearing claim narrowed to the registered 32-config slice 2026-05-10 per audit `scope_too_broad` repair target).
-**Status:** bounded null-result note — on the registered 32-config sliced linear-propagator audit-packet runner, no structured-mirror configuration reaches the documented Born-safety threshold (`1e-14`); this is a useful negative control on the sliced family, not a successor lane. The 540-config full-grid scan log remains supporting context for the broader exhaustion claim, which is explicitly scoped here as out-of-load-bearing pending registration of a full-grid runner-cache artifact.
+**Date:** 2026-04-03; corrected eight-term repair 2026-07-16
 **Claim type:** bounded_theorem
+**Status authority:** independent audit lane only.
 
-This note freezes the bounded search for a review-safe structured-mirror
-variant using the strictly linear propagator. The load-bearing scope is
-the registered 32-config sliced runner; the broader 540-config exhaustion
-claim is recorded as supporting context only.
+## Claim
 
-**Primary runner:** [`scripts/structured_mirror_bornsafe_sliced_runner_2026_05_09.py`](../scripts/structured_mirror_bornsafe_sliced_runner_2026_05_09.py)
-— registered sliced independent runner; recomputes corrected Born `|I3|/P`
-from first principles via the same `propagate_LINEAR` import the slow scan
-uses, on a 32-config representative slice (best near-Born candidate, grid
-corners, center, near-best neighbourhood, jittered slice) at the canonical
-6-seed protocol. Asserts grid minimum stays above the documented machine-
-precision Born-safety threshold (`1e-14`); exits nonzero if any sliced
-config beats the threshold (which would invalidate the null result and
-re-open the lane). On the live import, the slice's grid minimum is
-`4.6428e-03`, in the same order of magnitude as the documented best
-(`8.79e-03`), eleven orders of magnitude above the threshold. Cached
-stdout: [`logs/runner-cache/structured_mirror_bornsafe_sliced_runner_2026_05_09.txt`](../logs/runner-cache/structured_mirror_bornsafe_sliced_runner_2026_05_09.txt).
+For the exact registered 32-configuration structured-mirror slice and the six
+canonical seeds per configuration, the supplied fixed-graph strictly linear
+propagator gives a corrected three-slit residual
 
-**Supporting certificate:** [`scripts/structured_mirror_bornsafe_certificate_runner_2026_05_03.py`](../scripts/structured_mirror_bornsafe_certificate_runner_2026_05_03.py)
-— constants-certificate runner; PASS=3/3 confirms the documented best
-near-Born readout is consistent with the scan evidence at the audit-packet
-level.
+```text
+I3 = P(ABC) - P(AB) - P(AC) - P(BC)
+     + P(A) + P(B) + P(C) - P(empty)
+```
 
-**Companion runner:** [`scripts/structured_mirror_bornsafe_scan.py`](../scripts/structured_mirror_bornsafe_scan.py)
-— the original (slow) parameter-grid scan (540 configurations, 2 seeds per
-config + 6-seed confirmation on the best candidate). Reproducible but
-slower than the sliced lane.
+with maximum numerical `|I3|/P(ABC) = 1.816615e-15`. All `192/192`
+configured executions are valid, so every configuration has `ok=6`.
 
-**Cached scan log:** [`logs/2026-04-03-structured-mirror-bornsafe-scan.txt`](../logs/2026-04-03-structured-mirror-bornsafe-scan.txt)
-— completed stdout from the slow scan covering all 540 configurations.
-The documented best near-Born candidate
-`N=40, npl_half=12, connect_radius=3.0, grid_spacing=1.25, layer_jitter=0.0`
-appears at line ~225 with the documented `Born=8.79e-03, d_TV=0.1208, pur_cl=0.9992,
-S_norm=0.0009, gravity=+0.3811`, including the 6-seed confirmation.
-RETAINED POCKET: none found.
+Here `P(empty)` is computed by blocking every node in the selected barrier
+layer. Every one of the eight terms uses the same detector convention: the
+unnormalized sum of `|amplitude|^2` over the final-layer detector nodes.
 
-## Review-loop runner attachment (2026-05-09 update)
+This finite result reverses the earlier slice-only conclusion. The old
+seven-term residual was not a corrected Sorkin statistic on this graph. It
+measured the nonzero barrier-bypass background:
 
-The 2026-05-03 audit flagged the note's null-result claim as lacking a
-registered runner that recomputes the grid minimum from first principles.
-The 2026-05-03 repair attached a constants-certificate runner that
-verified consistency with the scan evidence but did not re-execute the
-underlying first-principles computation.
+```text
+legacy I3 = P(empty)
+```
 
-The 2026-05-09 repair attaches a sliced independent runner
-(`scripts/structured_mirror_bornsafe_sliced_runner_2026_05_09.py`) that:
+up to a maximum normalized floating-point mismatch of `1.776357e-15` over the
+registered slice.
 
-1. recomputes corrected Born `|I3|/P` from first principles per-config
-   using the same `propagate_LINEAR` propagator as the slow companion
-   scan;
-2. covers a 32-config representative slice spanning grid corners,
-   center, near-best neighbourhood, and jittered configurations;
-3. runs the canonical 6-seed protocol per config;
-4. asserts the sliced grid minimum stays above `1e-14` (Born-safety
-   threshold); exits nonzero if any sliced config beats that threshold.
+## Executable authorities
 
-The sliced lane is the new audit-packet runner. The 540-config slow
-scan and its cached log remain supporting context for the broader
-exhaustion claim.
+- **Primary runner:** [`scripts/structured_mirror_bornsafe_sliced_runner_2026_05_09.py`](../scripts/structured_mirror_bornsafe_sliced_runner_2026_05_09.py)
+- **Primary runner cache:** [`logs/runner-cache/structured_mirror_bornsafe_sliced_runner_2026_05_09.txt`](../logs/runner-cache/structured_mirror_bornsafe_sliced_runner_2026_05_09.txt)
+- **Shared corrected helper and full-grid source:** [`scripts/structured_mirror_bornsafe_scan.py`](../scripts/structured_mirror_bornsafe_scan.py)
+- **Structured geometry:** [`scripts/structured_mirror_growth.py`](../scripts/structured_mirror_growth.py)
+- **Strictly linear propagator:** [`scripts/mirror_born_audit.py`](../scripts/mirror_born_audit.py)
 
-## Search Question
+The graph construction is unchanged. In particular, the two-layer-back edges
+remain present and can skip the chosen barrier layer. The repair subtracts
+their measured `P(empty)` contribution; it does not silently convert the
+geometry into a chokepoint.
 
-Starting from the structured mirror growth family, is there a parameter set
-that keeps meaningful decoherence and gravity while also passing the corrected
-three-slit Born harness?
+## Why the corrected identity cancels
 
-## Search Family
+On this fixed forward DAG, a path can bypass the selected barrier layer or pass
+through one of the three disjoint open slit groups, but it cannot revisit the
+barrier layer. Strict linearity therefore decomposes each detector amplitude
+as
 
-The scan used the 3D structured mirror growth geometry from
-[`scripts/structured_mirror_growth.py`](../scripts/structured_mirror_growth.py),
-with the strictly linear propagator imported from
-[`scripts/mirror_born_audit.py`](../scripts/mirror_born_audit.py).
+```text
+D + A + B + C,
+```
 
-Scanned parameters:
+where `D` is the barrier-bypassing amplitude and `A`, `B`, and `C` are the
+three slit-group contributions. Expanding the quadratic detector probability
+produces only terms of the form `z_i conjugate(z_j)`. The eight-mask
+inclusion-exclusion coefficient of every such term is exactly zero.
 
-- `d_growth = 2`
-- `N = 25, 30, 40`
-- `npl_half = 8, 12, 16, 20`
-- `connect_radius = 2.5, 3.0, 3.5, 4.0, 4.5`
-- `grid_spacing = 1.0, 1.25, 1.5`
-- `layer_jitter = 0.0, 0.15, 0.3`
-- `2` seeds per config in the broad sweep
-- a follow-up `6`-seed confirmation on the best near-Born candidate
+The primary runner checks those coefficients as integers. It also checks that
+the defective seven-term form leaves only the coefficient of
+`D conjugate(D)`, namely `+1`, while a wrong-sign empty-term mutant leaves
+coefficient `+2`.
 
-The scan measured:
+This is the exact mathematical boundary of the cancellation statement:
+fixed graph, disjoint barrier apertures, strictly linear amplitude propagation,
+and quadratic detector probability. The measured `1e-15`-scale residuals are
+finite floating-point evidence, not themselves an exact proof.
 
-- `d_TV`
-- `pur_cl`
-- `S_norm`
-- gravity
-- corrected Born `|I3|/P`
-- `k=0` gravity control
+## Registered finite results
 
-## Result
+The registered slice is unchanged: the previously highlighted configuration,
+grid corners, center configurations, a near-highlight neighborhood, and the
+jittered slice. The seed protocol is unchanged:
 
-On the registered 32-config sliced runner (the load-bearing audit-packet
-runner here), no structured-mirror configuration reaches the corrected
-Born-safety threshold (`1e-14`). The 540-config slow scan over the full
-parameter family is consistent with this conclusion but is out-of-load-
-bearing pending registration of a full-grid runner-cache artifact.
+```text
+3, 10, 17, 24, 31, 38
+```
 
-The best near-Born candidate in the broad sweep was:
+The corrected runner reports:
 
-- `N = 40`
-- `npl_half = 12`
-- `connect_radius = 3.0`
-- `grid_spacing = 1.25`
-- `layer_jitter = 0.0`
-- `d_TV = 0.1208`
-- `pur_cl = 0.9992`
-- `S_norm = 0.0009`
-- gravity `+0.3811`
-- Born `8.79e-03`
-- `k=0 = 0.00e+00`
+| Quantity | Corrected finite result |
+|---|---:|
+| configured executions | `192/192` valid |
+| `ok` per configuration | exactly `6` for all `32` |
+| maximum corrected `|I3|/P(ABC)` | `1.816615e-15` |
+| location of maximum | `N=25, npl_half=20, r=4.5, grid_spacing=1.50, jitter=0.30, seed=17` |
+| maximum `|legacy/P - P(empty)/P|` | `1.776357e-15` |
+| `d_TV` range over all executions | `[0.03354922, 0.7311804]` |
+| `pur_cl` range over all executions | `[0.7141848, 0.9997359]` |
+| `S_norm` range over all executions | `[0.0008930359, 0.8629478]` |
+| gravity range over all executions | `[-2.734334, 7.563472]` |
+| `k=0` gravity-control range | exactly `[0, 0]` in the run |
+| configuration means with `pur_cl<0.95` and gravity `>0` | `11/32` |
 
-That candidate was then re-run with `6` seeds and kept the same Born
-readout, so it is not a seed fluke.
+The old highlighted configuration,
+`N=40, npl_half=12, connect_radius=3.0, grid_spacing=1.25,
+layer_jitter=0.0`, retains its previously measured ancillary diagnostics:
 
-### Sliced verification (2026-05-09)
+| Diagnostic | Six-seed mean |
+|---|---:|
+| corrected `|I3|/P(ABC)` | `7.978e-18` |
+| legacy seven-term residual | `8.788e-03` |
+| `P(empty)/P(ABC)` | `8.788e-03` |
+| `d_TV` | `0.1208` |
+| `pur_cl` | `0.9992` |
+| gravity | `+0.3811` |
 
-The sliced independent runner re-executed the same first-principles
-propagator on a 32-config representative slice (best near-Born candidate
-+ grid corners + center + near-best neighbourhood + jittered slice),
-each at the canonical 6-seed protocol. The sliced grid Born minimum is
-`4.6428e-03` (achieved at `N=40, npl_half=12, connect_radius=3.0,
-grid_spacing=1.25, layer_jitter=0.30`), in the same order of magnitude
-as the documented best near-Born candidate (`8.79e-03`) and eleven
-orders of magnitude above the Born-safety threshold (`1e-14`). The
-sliced runner exits zero and is registered as the audit-packet
-runner; the 540-config slow scan remains supporting context.
+The full cache contains the per-configuration means for all 32 rows.
 
-## Interpretation
+The `11/32` ancillary-screen count is only the result of applying the scan's
+finite mean criteria (`pur_cl<0.95`, gravity `>0`) after correcting the Born
+statistic. It is not a successor-lane designation and does not establish
+large-`N`, asymptotic, robustness, or phenomenological closure.
 
-- The structured mirror growth family still produces interesting geometry and
-  a nontrivial gravity read.
-- But under the scanned linear-propagator configurations, it does **not**
-  retain a Born-safe pocket.
-- The practical conclusion is negative: this family is not the current
-  Born-safe structured-mirror successor.
+## Hostile controls
 
-## Bottom Line
+The primary runner includes controls designed to fail the old implementation:
 
-- exact mirror and `Z2 x Z2` remain the review-safe symmetry lanes
-- structured mirror growth is a useful negative control on the registered
-  32-config sliced family, not a Born-safe successor; the broader
-  540-config exhaustion claim is supporting context only
+1. A deterministic graph with a source-to-detector two-layer bypass has
+   `P(empty)/P=1.406342e-01`. The legacy residual has the same value, while the
+   corrected residual cancels to `1.095680e-16`.
+2. A separately written eight-mask recomputation calls the propagator directly
+   for every mask and agrees with the shared helper, with zero probability
+   mismatch on the deterministic control.
+3. Removing the bypass edge gives exactly `P(empty)=0`; the seven- and
+   eight-term forms then agree.
+4. A wrong-sign `+P(empty)` mutant produces `|I3|/P=2.812684e-01` and is
+   rejected.
+5. The integer coefficient check proves the corrected quadratic
+   inclusion-exclusion coefficients vanish, while the legacy and mutant
+   background coefficients are `1` and `2`.
 
-## Audit boundary (2026-04-28)
+## Aperture validity
 
-The earlier Status line read "no `proposed_retained` Born-safe
-structured-mirror pocket found in the scanned linear family", which the
-audit-lane parser read as a `proposed_retained` claim even though the
-literal sentence said the opposite. The Status line has been rephrased
-to a positive bounded null-result framing.
+The prior cached run silently skipped seed `38` for five jittered
+configurations because the fixed `|y-center|<=2` window contained no middle
+slit nodes. The helper now preserves the original aperture selection whenever
+that window supplies three nodes and otherwise uses a deterministic
+nearest-center fallback for the middle group. No edges or node positions are
+changed.
 
-Audit verdict (`audited_failed`, leaf criticality):
+The registered runner treats a missing slit, zero denominator, NaN,
+non-finite diagnostic, or any other invalid seed as a failure. It exits
+successfully only when every row has exactly `ok=6`.
 
-> Issue: this is a parser false positive for the audit queue: the
-> status line contains the token `proposed_retained` only inside the
-> negative statement that no `proposed_retained` Born-safe structured-
-> mirror pocket was found.
+## Historical 540-configuration log
 
-The note's actual content is a search that failed to find a Born-safe
-pocket, plus the best near-Born candidate which was confirmed with 6
-seeds. That is a negative control, not a retained or proposed-retained
-claim.
+[`logs/2026-04-03-structured-mirror-bornsafe-scan.txt`](../logs/2026-04-03-structured-mirror-bornsafe-scan.txt)
+is quarantined historical output. It was produced before the empty-mask repair:
 
-## Audit boundary (2026-05-10 — load-bearing scope narrowed to the registered 32-config slice)
+- its column labeled `Born` is the defective seven-term residual;
+- its `jitter=0.30` rows commonly report `ok=5`, because seed `38` was skipped;
+- its `8.79e-03` and related values are legacy bypass-background readouts;
+- it is not evidence for the corrected statistic and is not current support
+  for this claim.
 
-This revision addresses the generated-audit repair target:
+The full-grid source now implements the corrected eight-term statistic and
+prints corrected, legacy, and empty-mask ratios separately. A corrected
+full-grid run was not needed to close this repair, so no new 540-configuration
+claim is made here. The durable numerical claim is restricted to the fully
+rerun registered `32 x 6` slice.
 
-> scope_too_broad: Split a clean slice-only bounded claim or supply/
-> register the full 540-config scan artifact needed to close the broader
-> exhaustion claim.
+## Boundaries
 
-This revision takes the first branch of the repair target: the load-bearing
-claim is now narrowed to the registered 32-config sliced runner audit-packet
-runner. The 540-config full-grid slow scan and its historical log remain
-supporting context for the broader exhaustion claim, which is explicitly
-out-of-load-bearing pending registration of a `logs/runner-cache/`
-artifact. The constants-certificate runner and the sliced runner remain
-the audit-packet authorities.
+This note does not establish:
 
-## What this note does NOT claim
-
-- A Born-safe structured-mirror pocket on the registered 32-config sliced
-  family.
-- That the broader 540-config full-grid scan is itself a closed audit-
-  packet exhaustion proof; the full-grid slow log is supporting context
-  only and the full-grid runner-cache is not yet registered.
-- That structured mirror growth is a successor lane to exact mirror or
-  `Z2 x Z2`.
-- That the best near-Born candidate (`Born 8.79e-03`) clears any
-  Born-safety threshold.
-
-## What would close this lane (Path A future work)
-
-Reinstating a Born-safe structured-mirror successor would require:
-
-1. A registered runner whose corrected Born `|I3|/P` lands at machine
-   precision (≤ `1e-14`) on at least one structured-mirror parameter
-   set.
-2. A registered runner that holds across at least 6 seeds at the same
-   Born tolerance.
-3. A coexistence demonstration of decoherence and gravity together with
-   the Born-safe pocket on the same parameter set.
-
-## Registered runner artifacts
-
-The registered sliced runner verifies a representative 32-config slice rather
-than the full 540-config scanned family. The companion full-grid scan source
-is present in the worktree:
-
-- Sliced runner (registered, fast slice): `scripts/structured_mirror_bornsafe_sliced_runner_2026_05_09.py`
-  with cache `logs/runner-cache/structured_mirror_bornsafe_sliced_runner_2026_05_09.txt`.
-- Constants certificate runner (registered): `scripts/structured_mirror_bornsafe_certificate_runner_2026_05_03.py`.
-- Full-grid scan runner source (slow, 540 configs): `scripts/structured_mirror_bornsafe_scan.py`.
-- Full-grid scan completed log: `logs/2026-04-03-structured-mirror-bornsafe-scan.txt`
-  (recorded stdout from a prior run covering all 540 configurations; not yet
-  registered in `logs/runner-cache/`).
-
-The bounded scope is therefore: the sliced runner closes the representative
-slice plus the documented near-best region; the full 540-config exhaustion
-claim relies on the prior recorded log, not a current registered cache.
-Registering a full-grid `logs/runner-cache/` artifact remains the residual
-gap.
+- a universal derivation of the Born rule;
+- an exact result from floating-point cancellation alone;
+- a result for nonlinear or layer-normalized propagators;
+- corrected exhaustion of the historical 540-configuration grid;
+- a structured-mirror successor architecture;
+- generalization beyond the exact registered slice and supplied fixed-graph
+  linear propagator.

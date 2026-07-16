@@ -1,0 +1,48 @@
+PASS C01: U_theta is unitary for real theta
+PASS C02: theta=pi/2 is exactly the edge SWAP
+PASS C03a: full two-qubit SWAP commutes with all common-frame su(2) generators
+PASS C03b: I-SWAP is even under reversal of the unoriented edge
+PASS C04a: full three-outcome instrument is normalized at theta=pi/4
+PASS C05a: block-column dilation is an isometry at theta=pi/4
+PASS C06a: K_empty,K_left,K_right are linearly independent at theta=pi/4
+PASS C07a: outcome-forgotten channel has minimal Kraus/Stinespring rank three at theta=pi/4
+PASS C04b: full three-outcome instrument is normalized at theta=pi/2
+PASS C05b: block-column dilation is an isometry at theta=pi/2
+PASS C06b: K_empty,K_left,K_right are linearly independent at theta=pi/2
+PASS C07b: outcome-forgotten channel has minimal Kraus/Stinespring rank three at theta=pi/2
+PASS C08: normalization fixes the no-record effect to qI
+PASS C09a: K_empty=sqrt(q)U realizes the complete one-Kraus polar family
+PASS C09b: K_empty=sqrt(q)U realizes the complete one-Kraus polar family
+PASS E01: one-step empty effect is theta-independent
+PASS E02: one-step left effect is theta-independent
+PASS E03: one-step right effect is theta-independent
+PASS E04: one-step nonempty outcome branch left is theta-independent
+PASS E05: one-step nonempty outcome branch right is theta-independent
+PASS E06: the full instruments differ in their no-record operation
+PASS H01: p_pi/4(empty,right)=q(1-q)/2=1/9
+PASS H02: p_pi/2(empty,right)=q(1-q)=2/9
+PASS H03: p_pi/4(empty,left)=q(1-q)/2=1/9
+PASS H04: p_pi/2(empty,left)=0
+PASS H05: exchange angle changes an outcome-resolved two-step label weight
+PASS H06a: auxiliary twice-composed TP-map weights normalize at theta=pi/4
+PASS H06aA: absorbing horizon-two terminal tree normalizes at theta=pi/4
+PASS H06b: auxiliary twice-composed TP-map weights normalize at theta=pi/2
+PASS H06bA: absorbing horizon-two terminal tree normalizes at theta=pi/2
+PASS H07: side-forgotten outcome coarse graining cannot distinguish theta
+PASS H08: outcome-forgotten CP channels differ, so theta is not dilation gauge
+PASS H09: absorbing eventual first-nonempty-outcome right weight is 1/5 at theta=pi/4
+PASS H10: absorbing eventual first-nonempty-outcome right weight is 1/4 at theta=pi/2
+PASS H11: exchange angle changes the eventual absorbing label distribution
+PASS H12: eventual first-nonempty-outcome labels normalize at theta=pi/4
+PASS H13: eventual first-nonempty-outcome labels normalize at theta=pi/2
+PASS S01: source note exists
+PASS S02: source contains boundary marker: one-excitation sector of one unoriented edge
+PASS S03: source contains boundary marker: fresh append-only outcome register
+PASS S04: source contains boundary marker: does not construct a simultaneous translation-covariant cubic QCA
+PASS S05: source contains boundary marker: does not derive the Born rule
+PASS S06: source contains boundary marker: does not establish that the axioms require amendment
+PASS S07: source contains boundary marker: Minimal outcome-forgotten-channel rank does not select the exchange angle
+BOUNDARY: minimality is relative to the supplied finite CP instrument/channel, not a derivation of that instrument from the axioms.
+BOUNDARY: absorbing label histories use a fresh append-only register that is not derived as a framework Record.
+BOUNDARY: the witness is a supplied one-excitation edge sector, not the full edge algebra, a cubic QCA, or a continuum theory.
+TOTAL: PASS=44 FAIL=0

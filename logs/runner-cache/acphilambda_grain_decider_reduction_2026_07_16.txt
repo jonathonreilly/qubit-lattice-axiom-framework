@@ -1,0 +1,98 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_grain_decider_reduction_2026_07_16.py
+runner_sha256: d5eb999db8f5016bab3b6bc3cc25f68904f2e07bf1d1d5c8c310a1616284f554
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 3.07
+status: ok
+----- stdout -----
+SOURCE_GATES.1 PASS: verbatim quote present in source and note: obligation.closure_criterion
+SOURCE_GATES.2 PASS: verbatim quote present in source and note: obligation.pending_chain
+SOURCE_GATES.3 PASS: verbatim quote present in source and note: 2A.non_selection
+SOURCE_GATES.4 PASS: verbatim quote present in source and note: 2C.unsupplied_dictionary
+SOURCE_GATES.5 PASS: verbatim quote present in source and note: 2C.component_row
+SOURCE_GATES.6 PASS: verbatim quote present in source and note: 2C.slot_row
+SOURCE_GATES.7 PASS: verbatim quote present in source and note: 2C.both_completions
+SOURCE_GATES.8 PASS: verbatim quote present in source and note: 2C.route2_matter_action
+SOURCE_GATES.9 PASS: verbatim quote present in source and note: 3A.claim_scope
+SOURCE_GATES.10 PASS: verbatim quote present in source and note: axioms.record_readout
+SOURCE_GATES.11 PASS: verbatim quote present in source and note: axioms.qualification
+SOURCE_GATES.12 PASS: dependency cited in note and present in docs/: AC_ORBIT_OCCUPANCY_STATISTICAL_GRA...
+SOURCE_GATES.13 PASS: dependency cited in note and present in docs/: ACPHILAMBDA_OCCUPANCY_DETERMINANT_...
+SOURCE_GATES.14 PASS: dependency cited in note and present in docs/: ACPHILAMBDA_FERMIONIC_REALIFICATIO...
+SOURCE_GATES.15 PASS: dependency cited in note and present in docs/: ACPHILAMBDA_MEASURE_BINARY_AXIOM_U...
+SOURCE_GATES.16 PASS: dependency cited in note and present in docs/: ACPHILAMBDA_OCCUPANCY_FORMATION_AP...
+SPECTRAL.1 PASS: det_C(A) == lam0*lam1*lam2
+SPECTRAL.2 PASS: im(lam0) == 0 (K-fixed sector real)
+SPECTRAL.3 PASS: lam2 == conj(lam1) (free K-orbit conjugate pair)
+SPECTRAL.4 PASS: conj(e1) == e2 (K swaps s+ and s-)
+SPECTRAL.5 PASS: C e1 == w e1
+SPECTRAL.6 PASS: A e1 == lam1 e1
+SPECTRAL.7 PASS: A e2 == lam2 e2
+SPECTRAL.8 PASS: im(lam1) == sqrt(3)/2 * (beta - gamma)
+DET_POWER.1 PASS: general 2x2: det(realify(K)) == det_C(K)*conj(det_C(K))
+DET_POWER.2 PASS: 1x1 orbit block: det == (u+iv)*conj(u+iv)
+DET_POWER.3 PASS: general 3x3 circulant: det(realify(Z)) == det_C(Z)*conj(det_C(Z))
+REALITY_CLASS.1 PASS: im(lam1*lam2) == 0 (free-orbit modulus real)
+REALITY_CLASS.2 PASS: lam1*lam2 == lam1*conj(lam1)
+REALITY_CLASS.3 PASS: det_C(conj(K)) == conj(det_C(K))
+REALITY_CLASS.4 PASS: |det_C(K)|^2 invariant under conjugation
+REALITY_CLASS.5 PASS: power 1: det_C(K (+) Kc) == det_C(K)*det_C(Kc)
+REALITY_CLASS.6 PASS: power 2: |det_C(K (+) Kc)|^2 == |det_C(K)|^2 * |det_C(Kc)|^2
+GLOBAL_POWER.1 PASS: r == r under (Ws,Wd) -> (2Ws,2Wd)
+GLOBAL_POWER.2 PASS: r(1,1) == 1/2 and r(2,2) == 1/2 (scale-neutral)
+QUOTIENT_MEASURE.1 PASS: K-orbit partition == [[0],[1,2]] (computed)
+QUOTIENT_MEASURE.2 PASS: orbit cardinalities == [1,2] (computed)
+QUOTIENT_MEASURE.3 PASS: control: unconstrained measure is NOT K-invariant (t1 - t2 nonzero symbolically)
+QUOTIENT_MEASURE.4 PASS: K-invariance residuals solve to the single constraint t1 == t2 (mu0 free)
+QUOTIENT_MEASURE.5 PASS: K-invariance forces mu(s+) == mu(s-) (derived, not stipulated)
+QUOTIENT_MEASURE.6 PASS: orbit-sum pushforward weight == 2t (count-twice)
+QUOTIENT_MEASURE.7 PASS: single-representative restriction weight == t (count-once)
+QUOTIENT_MEASURE.8 PASS: orbit weights differ by exactly the factor 2
+DICTIONARY.1 PASS: component completion: solve x=2r at x=1 -> {1/2}
+DICTIONARY.2 PASS: slot completion: solve x=r at x=1 -> {1}
+DICTIONARY.3 PASS: r == W_d/2 with component W_d=1 -> 1/2
+DICTIONARY.4 PASS: r == W_d/2 with slot W_d=2 -> 1
+DICTIONARY.5 PASS: per-cell dial (1-w_cell)/(2 w_cell) == W/2 with w_cell=1/(1+W)
+DICTIONARY.6 PASS: per-cell dial at W=1 -> 1/2
+DICTIONARY.7 PASS: per-cell dial at W=2 -> 1
+DICTIONARY.8 PASS: equal-per-cell 2-cell -> 1/2
+DICTIONARY.9 PASS: equal-per-cell 3-cell -> 1
+FAITHFULNESS_CONTROLS.1 PASS: N1 horns distinct: 1/2 != 1
+FAITHFULNESS_CONTROLS.2 PASS: N2 at (2,1,0): im(lam1) != 0
+FAITHFULNESS_CONTROLS.3 PASS: N2 at (2,1,0): lam1 != |lam1|^2
+FAITHFULNESS_CONTROLS.4 PASS: N3 control M is Hermitian (M == M^dagger)
+FAITHFULNESS_CONTROLS.5 PASS: N3 control M spectrum all real
+FAITHFULNESS_CONTROLS.6 PASS: N3 control det_C(M) == lamM0*lamM1*lamM2
+FAITHFULNESS_CONTROLS.7 PASS: N3 control M is generically NOT K-real (conj(M) - M nonzero symbolically)
+FAITHFULNESS_CONTROLS.8 PASS: N3 control conj(M) == M exactly when b is real (bi = 0)
+FAITHFULNESS_CONTROLS.9 PASS: N3 control orbit values independent reals: lamM1 - lamM2 nonzero symbolically
+FAITHFULNESS_CONTROLS.10 PASS: N4 Born comparator ((2/3)/2)/(1/3) == 1
+FAITHFULNESS_CONTROLS.11 PASS: explicit count: (W_d/2)/W_s with W_d=1,W_s=1 -> 1/2
+FAITHFULNESS_CONTROLS.12 PASS: explicit count: (W_d/2)/W_s with W_d=2,W_s=1 -> 1
+TRANSLATION.1 PASS: reality-class count-once W_d == 1 (single det_C factor from R3)
+TRANSLATION.2 PASS: reality-class count-twice W_d == 2 (conjugate-paired det_C factors from R3)
+TRANSLATION.3 PASS: the two count-twice factors are mutual conjugates
+TRANSLATION.4 PASS: three guises agree at count-once: W_d == 1
+TRANSLATION.5 PASS: three guises agree at count-twice: W_d == 2
+TRANSLATION.6 PASS: dial_from_Wd(1) == 1/2
+TRANSLATION.7 PASS: dial_from_Wd(2) == 1
+TRANSLATION.8 PASS: reality-class and measure guises give the same dial pair
+TRANSLATION.9 PASS: measure and dictionary guises give the same dial pair
+TRANSLATION.10 PASS: common dial pair == {1/2, 1}
+NOTE_HYGIENE.1 PASS: claim id present in note
+NOTE_HYGIENE.2 PASS: Claim type line present
+NOTE_HYGIENE.3 PASS: Status authority line present
+NOTE_HYGIENE.4 PASS: required section present: ## Purpose
+NOTE_HYGIENE.5 PASS: required section present: ## Honest auditor read / Boundary
+NOTE_HYGIENE.6 PASS: required section present: ## Non-claims
+NOTE_HYGIENE.7 PASS: required section present: ## Load-bearing dependencies
+NOTE_HYGIENE.8 PASS: required section present: ## Runner verification map
+NOTE_HYGIENE.9 PASS: no-stipulation footer present
+NOTE_HYGIENE.10 PASS: no forbidden framing phrases in prose (found=[])
+NOTE_HYGIENE.11 PASS: no bare decimals outside code fences (hits=[])
+NOTE_HYGIENE.12 PASS: markdown .md/.py link targets resolve (unresolved=[])
+TOTAL: PASS=86 FAIL=0
+
+----- stderr -----
+

@@ -69,7 +69,7 @@ without re-ratifying or changing any status:
 | Z3 | `C_F² = 16/9` (abelian-like ladder coefficient in K_2 MSbar-to-pole) | cited; not re-ratified here |
 | Z4 | `2 × F_adj = 16/9` (twice the q-qbar adjoint dimension fraction; numerically equal to C_F²) | cited; not re-ratified here |
 | Z5 | `(7/8)^{1/4}` (APBC eigenvalue ratio in EW hierarchy theorem) | cited; not re-ratified here |
-| Z6 | `(7/8)` = R_lat(3) = η(4)/ζ(4) (triple-coincidence at d=4 per HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10) | cited; not re-ratified here |
+| Z6 | `(7/8)` = R_lat(3) = η(4)/ζ(4), while the separate residual `2^(d-2)-d` vanishes at `d=4` (per HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10, pending independent re-audit) | cited; not re-ratified here |
 | Z7 | `√2` (BAE-condition context per KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS) | cited; not promoted here |
 | Z8 | Brannen-Rivero parameterization `√m_k = v_0(1 + ρ cos(δ + 2πk/3))` | charged-lepton-specific heuristic, cited |
 | Z9 | Q = (2 + ρ²)/6 algebraic identity (Brannen ansatz, independent of δ) | derived, cited |
@@ -83,7 +83,7 @@ without re-ratifying or changing any status:
 | A2 | The three values are derivable from existing source-stack context (SU(3) Casimirs, structure constants, representation theory of Cl(3)). |
 | A3 | The "ρ" parameter is the right structural quantity to derive (vs other parameterizations of the Koide-style relation). |
 | A4 | `F_adj` refers to the adjoint Casimir factor of some retained gauge group. |
-| A5 | The `(7/8)` in ρ_dn relates to the retained `(7/8)^{1/4}` Wilson-chain prefactor (Probe 19). |
+| A5 | The `(7/8)` in ρ_dn relates to the cited `(7/8)^{1/4}` Wilson-chain prefactor (Probe 19). |
 
 ### 2.3 Hostile engagement with each assumption
 
@@ -174,16 +174,18 @@ The numerical match ρ_up ≈ 16/9 is convention-level coincidence.
 
 **A5 — "(7/8) in ρ_dn relates to Wilson-chain (7/8)^{1/4}."** The (7/8)
 factor in the proposed ρ_dn = (7/8) + √2/2 is a **first-power** factor,
-not a fourth-root. The retained Wilson-chain prefactor is (7/8)^{1/4}
+not a fourth-root. The cited Wilson-chain prefactor is (7/8)^{1/4}
 (APBC eigenvalue ratio in `v_EW = M_Pl × (7/8)^{1/4} × α_LM^16`). First-
 power (7/8) appears in `taste_weight = (7/8) × T_F × (8/9) = 7/18` (per
 `YT_ZERO_IMPORT_CHAIN_NOTE`), but never as a standalone first-power
 factor in a Brannen circulant context.
 
-**Hostile verdict on A5:** First-power (7/8) is retained-derived (per
+**Hostile verdict on A5:** First-power (7/8) is supplied here only as
+cited arithmetic pending independent re-audit (per
 `HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10`,
-the triple-coincidence identity at d=4 gives 7/8 = R_lat(3) = η(4)/ζ(4)).
-But its appearance as a summand in ρ_dn = (7/8) + √2/2 is a
+the two ratios give `7/8 = R_lat(3) = η(4)/ζ(4)` while the separate
+alignment residual vanishes at `d=4`). Its appearance as a summand in
+ρ_dn = (7/8) + √2/2 is a
 **combinatorial guess** with no action-level mechanism connecting the
 Riemann-Dirichlet ratio to a circulant amplitude ratio.
 
@@ -260,13 +262,14 @@ specific elements, or **eigenvalues of specific operators** in a
 direct sum decomposition.
 
 In the existing framework context:
-- (7/8) is retained-derived (R_lat(3) = η(4)/ζ(4); APBC factor in
-  Wilson chain at first power; or `(7/8) × T_F × F_adj = 7/18` in
-  taste weight).
+- (7/8) is cited arithmetic pending independent re-audit
+  (`R_lat(3) = η(4)/ζ(4)` with a separately vanishing residual at
+  `d=4`; APBC factor in the Wilson chain at first power; or
+  `(7/8) × T_F × F_adj = 7/18` in taste weight).
 - √2/2 = 1/√2 is the BAE-half (since BAE gives |b|² = a²/2, i.e.,
   |b|/a = 1/√2).
 
-The proposed sum (7/8) + (1/√2) thus combines two distinct retained
+The proposed sum (7/8) + (1/√2) thus combines two distinct cited
 context elements: the APBC/Riemann-Dirichlet factor and the BAE
 amplitude-ratio half. No cited action principle gives this sum
 directly.

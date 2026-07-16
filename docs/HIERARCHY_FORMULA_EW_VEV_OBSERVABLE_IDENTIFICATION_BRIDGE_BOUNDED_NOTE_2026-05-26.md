@@ -1,6 +1,6 @@
 # Hierarchy Formula EW Higgs VEV Bounded Observable-Identification Bridge
 
-**Current authority (2026-07-11):** legacy admission routing below is
+**Current authority (2026-07-11):** legacy premise routing below is
 historical provenance only. The observable-identification bridge remains open
 and supplies no premise.
 
@@ -24,11 +24,12 @@ Given:
 - the retained dimensional fourth-root compression theorem fixing
   `α = 1/d` uniquely at `d = 4` for any simple-power extraction to
   mass dimension one;
-- the retained Riemann-Dirichlet triple-coincidence theorem fixing the
-  rational base `7/8` uniquely at `d = 4`;
+- the Riemann-Dirichlet source theorem under independent re-audit,
+  which proves that the two displayed ratios equal `7/8` while the
+  separate alignment residual vanishes uniquely at integer `d = 4`;
 - the retained `α_LM` geometric-mean identity
   `α_LM^2 = α_bare · α_s(v)`;
-- the supplied admitted-context inputs C1-C4 below;
+- the supplied explicit context inputs C1-C4 below;
 
 the framework's dimension-one hierarchy-formula output
 
@@ -46,13 +47,13 @@ alone, promote the four hierarchy-formula primitives P1-P4 (per
 `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10`) to retained, and it
 does **not** promote the package-level `v = 246.28 GeV` numerical match
 to a derived theorem. It records the observable-identification step P4
-as bounded under explicit admitted-context inputs.
+as bounded under explicit context inputs.
 
-## 2. Supplied admitted-context inputs (NOT proven here)
+## 2. Supplied explicit context inputs (NOT proven here)
 
 The following four context inputs are supplied to this bridge. They are
 the four hierarchy-formula primitives, named explicitly as
-admitted-context so that the bridge's *conditional* content is auditable.
+conditional inputs so that the bridge's scope is auditable.
 
 - **C1 (= hierarchy P1) — `M_Pl` import.** Identification of the
   framework UV scale with the Planck mass `M_Pl = 1.2209 × 10^19 GeV`
@@ -85,8 +86,8 @@ admitted-context so that the bridge's *conditional* content is auditable.
   `≈ 2.59 × 10^(-18)`. The downstream `α_LM^16 ≈ 2.09 × 10^(-17)` and
   the `v_hierarchy ≈ 246.28 GeV` arithmetic are unaffected because the
   `u_0^(-16) ≈ 8.07` factor multiplies through correctly.)
-- **C4 — Observable-principle scalar-additivity admission.** The
-  audited_conditional admission of
+- **C4 — Observable-principle scalar-additivity premise.** The
+  historically recorded conditional premise of
   [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
   (scalar additivity over
   independent subsystems plus its phase-blind scalar-generator premise). This
@@ -104,8 +105,8 @@ representation for the hierarchy output.
 | Step | Statement | Load-bearing input | Lattice-action input? |
 |---|---|---|---|
 | (B1) | Among integer `d ≥ 1`, the unique simple-power extraction `f^α` to mass dimension one is `α = 1/d`; uniquely at `d = 4`, this is `α = 1/4` | Retained dimensional fourth-root compression theorem | no |
-| (B2) | The triple coincidence `R_lat(d-1) = η(d)/ζ(d) = 7/8` and `2^(d-2) = d` holds simultaneously only at `d = 4`, giving the unique rational base `7/8` | Retained Riemann-Dirichlet triple-coincidence theorem | no |
-| (B3) | Composing (B1) + (B2): `(7/8)^(1/4)` is the unique rational-base × unique-exponent simple-power compression to mass dimension one at `d = 4` | (B1) + (B2) | no |
+| (B2) | `R_lat(d-1) = η(d)/ζ(d)` iff the separate residual `A(d) = 2^(d-2)-d` vanishes; this occurs only at integer `d = 4`, where the two ratios equal `7/8` and `A(4)=0` | Riemann-Dirichlet source theorem pending independent re-audit | no |
+| (B3) | On the explicitly supplied `d = 4` surface, composing (B1) + (B2) gives the dimensionless factor `(7/8)^(1/4)` | (B1) + (B2), conditional on the source theorem's future audit status | no |
 | (B4) | The retained `α_LM` geometric-mean identity `α_LM^2 = α_bare · α_s(v)` exhibits `α_LM` as a single dimensionless positive scalar | Retained `α_LM` geometric-mean identity theorem | no |
 | (B5) | Under C1, `[M_Pl] = 1` in mass units; under (B3) and (B4), `[(7/8)^(1/4)] = [α_LM^16] = 0`; therefore `[v_hierarchy] = 1` | C1 + (B3) + (B4) | no |
 | (B6) | The retained EW gauge-mass diagonalization theorem fixes the dimension-one EW Higgs VEV `v` as the unique scalar VEV carrying the `(T_3 = -1/2, Y = +1/2)` gauge transformation of a single `SU(2)_L` Higgs doublet, with `M_W = g v / 2` and `ρ_tree = 1` | Retained EW gauge-mass diagonalization theorem | no |
@@ -142,14 +143,14 @@ This bridge is the **observable-identification step** only (= hierarchy
 P4). The package-level claim that
 `v = M_Pl × (7/8)^(1/4) × α_LM^16` is a **derived theorem** of the
 framework is **not** closed by this bridge. The other three hierarchy
-primitives remain admitted-context:
+primitives remain explicit context inputs:
 
 | Primitive | Bridge slot | Open work |
 |---|---|---|
 | P1 (M_Pl import) | C1 | Wald-Noether algebraic skeleton retained; metric-compatible coframe response + gravitational boundary density bridge premises unaudited/conditional |
 | P2 (Wick `Z^3 → Z^4`) | C2 | Six retained substep theorems; staggered-Dirac realization gate `audited_renaming` (open) |
 | P3 (`u_0^16 → α_LM^16`) | C3 | Regulator-dependence no-go row records the substrate-regulator boundary; bare-coupling `(4π)^(-16)` prefactor is continuum Fourier-measure inheritance, not Cl(3) derived |
-| P4 (observable identification, **this bridge**) | bounded_theorem here | The retained EW diagonalization + retained dimensional compression + retained triple-coincidence + retained `α_LM` identity make the assignment internally consistent GIVEN C1-C4 |
+| P4 (observable identification, **this bridge**) | bounded_theorem here | The retained EW diagonalization + retained dimensional compression + Riemann-Dirichlet source theorem pending re-audit + retained `α_LM` identity make the assignment internally consistent GIVEN C1-C4 |
 
 ### 5.1 Curve-fit defense (honest framing of the 0.0255 % match)
 
@@ -186,28 +187,30 @@ downward absorption) absorbs this `3.42%` overshoot multiplicatively:
 Two readings of this absorption are possible:
 
 - **Structural reading (future closure target):** the `(7/8)^(1/4)` is
-  supplied by independently retained triple-coincidence + dimensional
-  compression theorems at `d = 4`; under a later retained physical
-  `d = 4` selector, the absorption would be a consequence of the d=4
-  multi-witness convergence, not a fit. The remaining unaudited piece is
-  the `L_t = 4` selector (`bosonic_bilinear_selector`).
+  supplied by the two-ratio `7/8` alignment with a separately vanishing
+  residual, together with dimensional compression at `d = 4`. This
+  reading still requires both a successful independent re-audit of the
+  repaired arithmetic source and a retained physical `d = 4` selector;
+  the finite trigonometric checks in that source provide no such selector.
 - **Fit-band reading (devil's advocate):** the `3.42%` overshoot at
   integer `N = 16` is precisely the size of the prefactor that the
-  `d = 4` instance produces; the d=4 multi-witness convergence could
-  itself be a same-surface algebraic coincidence rather than a forcing.
+  `d = 4` instance produces; the two-ratio alignment and zero residual
+  could still be a same-surface algebraic fact rather than a physical
+  forcing.
 
-This bridge **does not** adjudicate between the two readings. The
-`L_t = 4` selector closure is the single unaudited bottleneck for
-promoting the structural reading from "multi-witness retained at d=4"
-to "physical d=4 selection retained." Until that selector audits, the
-0.0255% match remains a **bounded numerical match on the canonical
-surface**, with four named admitted-context inputs.
+This bridge **does not** adjudicate between the two readings. Independent
+re-audit of the repaired arithmetic source and closure of a physical
+`L_t = 4` selector are both required before the structural reading could
+support a physical `d = 4` selection. Until then, the 0.0255% match
+remains a **bounded numerical match on the canonical surface**, with four
+named context inputs.
 
 ### 5.2 What this bridge does NOT do
 
 - Does **not** set, promote, or change any row's `effective_status`.
-- Does **not** add any new admission to `premise_decision_history.json` or any
-  axiom to `axiom_premise_nodes.json`.
+- Does **not** add any new premise decision to
+  `premise_decision_history.json` or any axiom to
+  `axiom_premise_nodes.json`; the former is provenance only.
 - Does **not** promote any of P1-P3 to retained.
 - Does **not** claim the package-level `v_hierarchy = v` as a derived
   theorem.
@@ -215,7 +218,7 @@ surface**, with four named admitted-context inputs.
 - Does **not** introduce new repo vocabulary; uses only canonical
   hierarchy/EW/observable-principle terms.
 
-## 6. Load-Bearing retained dependencies
+## 6. Declared source dependencies and current boundary
 
 - [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
   — supplies the unique dimension-one scalar VEV `v` carrying the
@@ -223,11 +226,13 @@ surface**, with four named admitted-context inputs.
 - [`HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md)
   — supplies `α = 1/d` uniquely at `d = 4`.
 - [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — supplies the `7/8` rational base uniquely at `d = 4`.
+  — supplies the candidate two-ratio `7/8` alignment with a separately
+  vanishing residual at `d = 4`; it is pending independent re-audit and
+  is not a retained dependency at present.
 - [`ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md`](ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md)
   — supplies the single dimensionless `α_LM` coupling.
 
-## 7. Load-Bearing admitted/open context inputs
+## 7. Load-Bearing explicit/open context inputs
 
 These context inputs are load-bearing for this bounded bridge but are not
 promoted by it. Their present audit status is inherited from their own rows
@@ -235,7 +240,7 @@ and from the independent audit lane.
 
 - [`BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`](BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md)
   — retained algebraic skeleton used inside C1; the physical `M_Pl`
-  scale-setting bridge remains an admitted context input here.
+  scale-setting bridge remains an explicit context input here.
 - [`NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md`](NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md)
   and [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
   — C2 species-count/exponent context.
@@ -243,7 +248,7 @@ and from the independent audit lane.
   — C3 regulator-dependence boundary for the species-count to
   hierarchy-exponent bridge.
 - [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
-  — C4 scalar readout admission.
+  — C4 scalar readout premise.
 
 ## 8. Non-Load-Bearing Context
 
@@ -256,13 +261,13 @@ and from the independent audit lane.
   — records the C3 regulator-dependence no-go.
 - `HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md` — the `L_t = 4`
   selector note (unaudited), discussed in the curve-fit defense §5.1.
-- `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` (audited_conditional) —
+- `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` (unaudited) —
   supplies C4 scalar-additivity / phase-blind scalar-generator
-  admission.
+  premise as historical provenance, not as a chain-satisfying class.
 - `BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`
   (retained) — algebraic skeleton for C1 (M_Pl import via Wald-Noether).
-- `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` — the canonical
-  Tier-A registry; this bridge does **not** extend the Tier-A registry.
+- `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` — historical
+  Tier-A registry provenance only; this bridge does **not** extend it.
 
 ## 9. Verification
 
@@ -279,13 +284,14 @@ TOTAL: PASS=30 FAIL=0
 VERDICT: bridge passes; under C1-C4, the dimension-one hierarchy-formula
 output is consistently assigned to the EW Higgs VEV parameter on the
 canonical surface; package-level closure remains bounded by the four named
-admitted-context inputs; the 0.0255% canonical-surface match remains a bounded
+explicit context inputs; the 0.0255% canonical-surface match remains a bounded
 numerical match, not a derived theorem.
 ```
 
 The runner verifies:
 1. Dimension counting `[v_hierarchy] = 1` from C1 + (B3) + (B4).
-2. The retained `(7/8)^(1/4) ≈ 0.967168` from the d=4 triple coincidence.
+2. The conditional `(7/8)^(1/4) ≈ 0.967168` from the repaired
+   two-ratio alignment and zero residual at `d = 4`.
 3. The canonical-surface evaluation `v_hierarchy ≈ 246.2828 GeV` at
    `<P> = 0.5934`, `α_bare = 1/(4π)`, `M_Pl = 1.2209 × 10^19 GeV`.
 4. The `+0.0255%` deviation vs `v_obs = 246.22 GeV`.

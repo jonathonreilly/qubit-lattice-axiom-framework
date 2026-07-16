@@ -4,10 +4,10 @@
 This runner verifies the algebraic content of the proof-walk
 recorded in
 ``docs/HIERARCHY_LT4_PHYSICAL_SELECTION_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md``
-and reads the live audit ledger to confirm that each of the three
-disclosed admissions (the staggered-Dirac realization gate,
+and reads the live governance files to confirm that each of the three
+explicit conditional inputs (the staggered-Dirac realization gate,
 scalar-additivity P1, and CPT-even phase blindness) is tied to an
-existing audit row at the stated effective status.
+existing audit row and is not an approved axiom/primitive node.
 
 Forbidden imports check: the algebraic content (T1-T5) is recomputed
 using stdlib ``cmath`` and ``math`` only. No PDG values, no ``M_Pl``,
@@ -156,56 +156,58 @@ def part5_sin2_nonuniform_at_lt6() -> None:
     )
 
 
-def part6_admission_walls_ledger_check() -> None:
+def part6_conditional_inputs_governance_check() -> None:
     print("\n" + "=" * 78)
-    print("PART 6: Admission-wall catalogue (live ledger check)")
+    print("PART 6: Conditional-input catalogue (live governance check)")
     print("=" * 78)
 
-    ledger_path = (
-        pathlib.Path(__file__).resolve().parent.parent
-        / "docs"
-        / "audit"
-        / "data"
-        / "audit_ledger.json"
+    data_dir = (
+        pathlib.Path(__file__).resolve().parent.parent / "docs" / "audit" / "data"
     )
+    ledger_path = data_dir / "audit_ledger.json"
+    axiom_registry_path = data_dir / "axiom_premise_nodes.json"
     with ledger_path.open() as f:
         ledger = json.load(f)
+    with axiom_registry_path.open() as f:
+        axiom_registry = json.load(f)
     rows = ledger.get("rows", {})
+    approved_ids = set(axiom_registry.get("canonical_ids", []))
 
-    walls = [
+    conditional_inputs = [
         (
             "staggered-Dirac realization gate",
             "staggered_dirac_realization_gate_note_2026-05-03",
-            "open_gate",
         ),
         (
-            "scalar-additivity P1 admission",
+            "scalar-additivity P1 conditional input",
             "observable_principle_from_axiom_note",
-            "audited_conditional",
         ),
         (
             "CPT-even phase blindness",
             "cpt_exact_note",
-            "unaudited",
         ),
     ]
 
-    all_match = True
-    for label, row_id, expected_status in walls:
+    all_registered_and_conditional = True
+    for label, row_id in conditional_inputs:
         row = rows.get(row_id, {})
         actual_status = row.get("effective_status", "<missing>")
-        ok = actual_status == expected_status
-        all_match = all_match and ok
+        exists = bool(row)
+        is_approved_premise = row_id in approved_ids
+        ok = exists and not is_approved_premise
+        all_registered_and_conditional = all_registered_and_conditional and ok
         marker = "[OK]" if ok else "[MISMATCH]"
         print(f"  {marker} {label}")
         print(f"      row_id={row_id}")
-        print(f"      expected={expected_status} actual={actual_status}")
+        print(
+            f"      current_effective_status={actual_status} "
+            f"approved_axiom_or_primitive={is_approved_premise}"
+        )
 
     check(
-        "T6: all three admission walls match the live-ledger effective_status",
-        all_match,
-        "If any mismatch is reported, update the proof-walk note or the runner so the "
-        "conditional shape matches the live ledger.",
+        "T6: all three explicit inputs have live rows and do not chain-satisfy as approved premises",
+        all_registered_and_conditional,
+        "The runner reports current statuses without pinning mutable audit outcomes.",
     )
 
 
@@ -260,11 +262,11 @@ def main() -> None:
     print(
         "Bounded conditional proof-walk: the algebraic L_t = 4 Klein-four orbit\n"
         "result is bridged to the physical EWSB temporal\n"
-        "block via three disclosed admissions: the staggered-Dirac realization\n"
+        "block via three explicit conditional inputs: the staggered-Dirac realization\n"
         "gate, scalar-additivity P1, and CPT-even phase blindness. This\n"
-        "runner verifies the algebraic content and reads the live audit ledger\n"
-        "to confirm each admission wall is tied to an existing audit row at\n"
-        "the stated effective status."
+        "runner verifies the algebraic content and reads the live governance\n"
+        "files to confirm each input has an audit row but is not an approved\n"
+        "axiom/primitive node."
     )
 
     part1_klein_four_orbit_unique_at_lt4()
@@ -272,7 +274,7 @@ def main() -> None:
     part3_next_even_cases_split()
     part4_sin2_uniform_at_lt4()
     part5_sin2_nonuniform_at_lt6()
-    part6_admission_walls_ledger_check()
+    part6_conditional_inputs_governance_check()
     part7_forbidden_imports_check()
 
     print("\n" + "=" * 78)
@@ -282,8 +284,8 @@ def main() -> None:
         print(
             "VERDICT: bounded conditional proof-walk passes; the algebraic\n"
             "L_t = 4 Klein-four orbit content is verified from primitives, and\n"
-            "the three disclosed admissions are tied to live\n"
-            "audit-ledger rows. The conditional shape is the load-bearing\n"
+            "the three explicit conditional inputs are tied to live rows but\n"
+            "do not chain-satisfy as approved premises. The conditional shape is the load-bearing\n"
             "content."
         )
     sys.exit(1 if FAIL_COUNT else 0)

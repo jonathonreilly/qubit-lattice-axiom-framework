@@ -44,6 +44,33 @@ NOTE_PATH = (
     / "docs"
     / "HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md"
 )
+CLAIM_SURFACE_PATHS = (
+    NOTE_PATH,
+    ROOT
+    / "docs"
+    / "HIERARCHY_FORMULA_EW_VEV_OBSERVABLE_IDENTIFICATION_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+    ROOT
+    / "docs"
+    / "HIERARCHY_ALPHA_BARE_FOUR_PI_CONTINUUM_MEASURE_CONTENT_ATTRIBUTION_BOUNDED_NOTE_2026-05-26.md",
+    ROOT
+    / "docs"
+    / "HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md",
+    ROOT
+    / "docs"
+    / "HIERARCHY_SEVEN_EIGHTHS_TWISTED_THERMAL_ZETA_PERIOD_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-26.md",
+    ROOT
+    / "docs"
+    / "HIERARCHY_LT4_PHYSICAL_SELECTION_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md",
+    ROOT
+    / "docs"
+    / "PRIMITIVE_P_HEAVYQ_CASIMIR_CLOSURE_NOTE_2026-05-10_pPheavyq_closure.md",
+    ROOT
+    / "docs"
+    / "BOUGEROL_LACROIX_STAGGERED_BLOCKING_LYAPUNOV_BRIDGE_NO_GO_NOTE_2026-05-10.md",
+    ROOT
+    / "scripts"
+    / "frontier_hierarchy_ew_vev_observable_identification_bridge.py",
+)
 
 PASS = 0
 FAIL = 0
@@ -229,11 +256,19 @@ check(
     detail=f"forward difference = {forward_difference}",
 )
 
+k_sym = symbols("k", nonnegative=True, integer=True)
+forward_on_tail = simplify(forward_difference.subs(d_sym, k_sym + 4))
+forward_tail_recurrence = simplify(
+    forward_on_tail.subs(k_sym, k_sym + 1) - 2 * forward_on_tail - 1
+)
 check(
-    "T16: on integer d>=4 the forward difference has minimum 3 and is positive",
-    2 ** (4 - 2) - 1 == 3
-    and all(2 ** (d - 2) - 1 > 0 for d in range(4, 65)),
-    detail="minimum at d=4 is 3; powers of two increase thereafter",
+    "T16: recurrence certifies the forward difference is positive for every integer d>=4",
+    simplify(forward_on_tail.subs(k_sym, 0) - 3) == 0
+    and forward_tail_recurrence == 0,
+    detail=(
+        "with d=k+4 and k>=0, Delta_0=3 and "
+        "Delta_(k+1)=2*Delta_k+1; induction gives Delta_k>0"
+    ),
 )
 
 hostile_dimensions = (2, 3, 5, 6)
@@ -274,19 +309,25 @@ check(
     detail=required_distinction,
 )
 
-forbidden_fragments = [
+forbidden_fragments = (
+    "triple-" + "coincidence",
+    "triple " + "coincidence",
     "all three quantities equal " + "`7/8`",
     "all three coincide on the rational value " + "`7/8`",
     "three independent identities all evaluate to " + "`7/8`",
     "dimensional-selector value) coincide on " + "`7/8`",
     "three quantities take three distinct rational values",
-    "triple-" + "coincidence identity",
-]
-present_forbidden = [
-    fragment for fragment in forbidden_fragments if fragment in note_flat
-]
+)
+present_forbidden = []
+for path in CLAIM_SURFACE_PATHS:
+    surface_flat = " ".join(path.read_text(encoding="utf-8").split()).lower()
+    for fragment in forbidden_fragments:
+        if fragment.lower() in surface_flat:
+            present_forbidden.append(
+                f"{path.relative_to(ROOT)}: {fragment}"
+            )
 check(
-    "T20 hostile: old three-way numeric-equality prose is absent from the source note",
+    "T20 hostile: old three-way numeric-equality rhetoric is absent from registered claim surfaces",
     not present_forbidden,
     detail=f"present forbidden fragments = {present_forbidden}",
 )

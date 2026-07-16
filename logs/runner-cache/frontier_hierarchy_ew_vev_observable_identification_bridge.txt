@@ -1,20 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_ew_vev_observable_identification_bridge.py
-runner_sha256: 65b98727b099c18c5d7718f81e9007a10771a25e131cf380b9e2337f668086b4
+runner_sha256: a571f3e636553683d3f15464a2ee4f8c4502029e434301f33a97e2ffea055372
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 Section 1: Dimensional fourth-root compression (retained dependency)
   PASS: (B1) alpha = 1/d solves [C_M * f^alpha] = 1 given [f] = d
   PASS: (B1) at d=4, alpha = 1/4 uniquely among positive integers
 
-Section 2: Riemann-Dirichlet triple coincidence (retained dependency)
+Section 2: Riemann-Dirichlet two-ratio alignment (source under re-audit)
   PASS: (B2) R_lat(c=3) = 7/8
   PASS: (B2) eta(4)/zeta(4) = 7/8
-  PASS: (B2) 2^(d-2) = d unique at d=4
-  PASS: (B2) triple simultaneity holds only at d=4 (d in [2,11])
+  PASS: (B2) ratio gap equals -A(d)/(d*2^(d-1)) symbolically
+  PASS: (B2) A(d)=2^(d-2)-d has the unique integer zero d=4
 
 Section 3: alpha_LM geometric-mean identity (retained dependency)
   PASS: (B4) alpha_LM^2 = alpha_bare * alpha_s(v) (symbolic)
@@ -52,7 +52,7 @@ Section 7: Curve-fit defense (Boundaries §5.1)
 
 ========================================================================
 TOTAL: PASS=30 FAIL=0
-VERDICT: bridge passes; under C1-C4, the dimension-one hierarchy-formula output is consistently assigned to the EW Higgs VEV parameter on the canonical surface; package-level closure remains bounded by the four named admitted-context inputs; the 0.0255% canonical-surface match remains a bounded numerical match, not a derived theorem.
+VERDICT: bridge passes; under C1-C4, the dimension-one hierarchy-formula output is consistently assigned to the EW Higgs VEV parameter on the canonical surface; package-level closure remains bounded by the four named explicit context inputs; the 0.0255% canonical-surface match remains a bounded numerical match, not a derived theorem.
 
 ----- stderr -----
 

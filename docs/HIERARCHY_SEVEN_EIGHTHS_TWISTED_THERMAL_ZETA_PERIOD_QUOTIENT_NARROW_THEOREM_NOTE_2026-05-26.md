@@ -473,8 +473,9 @@ narrow theorem does **not** consume any of them and has zero
 ledger dependencies.
 
 - `HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`
-  — sister Class A narrow note (retained) stating the W3 triple-
-  coincidence identity at `d = 4`. The present theorem reaches the
+  — sister Class A narrow note under independent re-audit, stating
+  that two ratios equal `7/8` while a separate residual vanishes at
+  `d = 4`. The present theorem reaches the
   same `7/8` via the Hurwitz-zeta twist route; the arithmetic
   collapses onto the W3 fact (D2 caveat).
 - `HIERARCHY_MATSUBARA_DETERMINANT_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`

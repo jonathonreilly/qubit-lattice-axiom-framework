@@ -471,10 +471,11 @@ ledger dependencies. The backticked references below do not emit
 citation-graph edges; only markdown-link form `[X](Y.md)` would.
 
 - `HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`
-  — sister narrow theorem stating the triple-coincidence (lattice
-  per-mode ratio, eta/zeta, `2^(d − 2) = d`) at `d = 4`. The present
-  note states a different identity — the joint integer-`s` evaluation
-  of `(η(s)/ζ(s))^(1/s)` and its strict monotonicity — and does not
+  — sister narrow theorem under independent re-audit: the two ratios
+  equal `7/8` at `d = 4`, while the separate residual
+  `2^(d − 2) − d` vanishes there. The present note states a different
+  identity — the joint integer-`s` evaluation of
+  `(η(s)/ζ(s))^(1/s)` and its strict monotonicity — and does not
   consume the sister theorem.
 - `HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md`
   — sister narrow theorem on dimensional analysis `[f] = d` giving

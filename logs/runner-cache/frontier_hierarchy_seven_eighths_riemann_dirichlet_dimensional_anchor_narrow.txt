@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py
-runner_sha256: 82e1c7f5f6f3a0ea732dd7142eaa10c08e68a7196e0611cf9bee99c2fa66428c
+runner_sha256: 5e97a717d98d70cd9e59bae0e8461b665e31e87d6c34c96e7c6bb6e3c4c76530
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 
@@ -33,7 +33,7 @@ Ratio-gap/residual equivalence and integer uniqueness
   [PASS (A)] T13: exact scan d=2..64 finds the sole zero at d=4  (zeros = [4])
   [PASS (A)] T14: uniqueness proof base values are A(2)=-1, A(3)=-1, A(4)=0, A(5)=3  (values = {2: -1, 3: -1, 4: 0, 5: 3})
   [PASS (A)] T15: A(d+1)-A(d)=2^(d-2)-1 symbolically  (forward difference = 2**(d - 2) - 1)
-  [PASS (A)] T16: on integer d>=4 the forward difference has minimum 3 and is positive  (minimum at d=4 is 3; powers of two increase thereafter)
+  [PASS (A)] T16: recurrence certifies the forward difference is positive for every integer d>=4  (with d=k+4 and k>=0, Delta_0=3 and Delta_(k+1)=2*Delta_k+1; induction gives Delta_k>0)
   [PASS (A)] T17 hostile: neighboring dimensions have unequal ratios and nonzero residual  (d=2: (3/4, 1/2, -1) | d=3: (5/6, 3/4, -1) | d=5: (9/10, 15/16, 3) | d=6: (11/12, 31/32, 10))
 
 ----------------------------------------------------------------------------------------
@@ -41,7 +41,7 @@ Claim-bearing source-prose guards
 ----------------------------------------------------------------------------------------
   [PASS (A)] T18: source note states the corrected exact tuple  ((R_lat(3), R_RD(4), A(4)) = (7/8, 7/8, 0).)
   [PASS (A)] T19: source note distinguishes the zero residual from the two ratios  (`A(d)` is a residual, not a ratio, and is not a third `7/8`-valued quantity.)
-  [PASS (A)] T20 hostile: old three-way numeric-equality prose is absent from the source note  (present forbidden fragments = [])
+  [PASS (A)] T20 hostile: old three-way numeric-equality rhetoric is absent from registered claim surfaces  (present forbidden fragments = [])
 
 ----------------------------------------------------------------------------------------
 Narrow theorem summary

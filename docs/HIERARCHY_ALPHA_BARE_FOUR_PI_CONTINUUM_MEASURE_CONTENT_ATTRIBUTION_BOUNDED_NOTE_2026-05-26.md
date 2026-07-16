@@ -583,17 +583,17 @@ this content-attribution packet were exercised before authoring:
    `η(1,2;3) = 2/9` (per
    `KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md`).
    The conjecture `η_APS / 2 = 1/8` requires `η_APS = 1/4`, which
-   has no framework authority. The retained derivation of `7/8`
-   in
+   has no framework authority. The source derivation of `7/8` under
+   independent re-audit in
    `HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`
    identifies `1/8 = 1/(2d)` at `d=4` as a per-mode Matsubara
    rational and `1/8 = 2^{1-d}` at `d=4` as a Dirichlet
    eta-vs-zeta tail, NOT as an APS η contribution. The
    APS-η conjecture is therefore not supported by any retained
-   authority; the `1/8` complement of `7/8` has the
-   triple-coincidence (per-mode lattice rational / Dirichlet-eta
-   alignment / `2^{d-2} = d` integer alignment) origin already
-   recorded by the Riemann-Dirichlet anchor theorem.
+   authority. The source derivation under independent re-audit instead
+   identifies the `1/8` complement through equality of the per-mode
+   lattice ratio and Dirichlet eta/zeta ratio at `d=4`, while the
+   separate residual `2^(d-2)-d` vanishes there.
 
 6. **"AS fixed-point closure of `α_bare`."** — counterfactually
    tested: were the framework's `λ(M_Pl) ∈ [0, +O(10^{-3})]`

@@ -630,8 +630,9 @@ load-bearing.
 - `YT_P2_TASTE_STAIRCASE_TRANSPORT_NOTE_2026-04-17.md` —
   per-rung Ward preservation structural identity.
 - `HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`
-  — triple-coincidence narrow theorem (sister narrow theorem
-  for the `(7/8)` factor; not consumed here).
+  — sister narrow theorem under independent re-audit: two ratios equal
+  `7/8` while the separate alignment residual vanishes at `d = 4`
+  (relational context only; not consumed here).
 
 ### Upstream external MET note (graph-visible context)
 

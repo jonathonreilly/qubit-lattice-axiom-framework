@@ -103,6 +103,8 @@ At `d = 4`, equivalently `c = 3`,
 R_lat(3) = 1 − 1/8 = 7/8.                                    (2)
 ```
 
+At `c = 3` (i.e. `d = 4`) this gives `R_lat(3) = 7/8` exactly.
+
 ### 2.2 Riemann-Dirichlet ratio
 
 For real `s > 1`, the zeta and eta series converge absolutely. Splitting
@@ -201,7 +203,7 @@ R_lat(d − 1) − R_RD(d) = −A(d)/[d 2^(d − 1)],
 
 together with the elementary integer-domain proof that `A(d) = 0`
 only at `d = 4`. No observed value, fitted selector, framework axiom,
-physical dimension choice, or admitted normalization enters the proof.
+physical dimension choice, or supplied normalization enters the proof.
 
 ## 4. Authorities and dependencies
 
@@ -249,10 +251,11 @@ The runner checks:
 6. **T10:** a hostile control rejecting the old tuple
    `(7/8, 7/8, 7/8)`.
 7. **T11:** the symbolic ratio-gap/residual identity (7).
-8. **T12-T13:** exact scans confirming ratio equality iff residual
-   zero and finding the only scanned zero at `d = 4`.
+8. **T12-T13:** finite hostile scans confirming ratio equality iff
+   residual zero and finding the only scanned zero at `d = 4`; these
+   scans are not the all-integer uniqueness proof.
 9. **T14-T16:** the base values, forward-difference identity, and
-   monotonicity certificate used for the all-integer proof.
+   recurrence/induction certificate used for the all-integer proof.
 10. **T17:** hostile neighboring-dimension controls at
     `d ∈ {2, 3, 5, 6}`.
 11. **T18-T20:** source-prose guards requiring the corrected tuple and
@@ -275,7 +278,6 @@ proposed_load_bearing_step_class: A
 status_authority: independent audit lane only
 
 declared_one_hop_deps: []
-admitted_context_inputs: []
 forbidden_imports_used: false
 proposal_allowed: true
 audit_required_before_effective_status_change: true

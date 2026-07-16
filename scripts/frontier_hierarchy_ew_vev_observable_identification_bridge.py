@@ -4,11 +4,11 @@ Hierarchy Formula -> EW Higgs VEV Observable Identification Bridge Runner
 Verifies the bounded bridge theorem in
 docs/HIERARCHY_FORMULA_EW_VEV_OBSERVABLE_IDENTIFICATION_BRIDGE_BOUNDED_NOTE_2026-05-26.md
 
-Under supplied admitted-context inputs C1-C4:
+Under supplied explicit context inputs C1-C4:
   C1 (= hierarchy primitive P1)  M_Pl import (non-reduced, via Wald-Noether matching)
   C2 (= hierarchy primitive P2)  Wick-rotated Z^3 -> Z^4 taste count (2^4 = 16)
   C3 (= hierarchy primitive P3)  u_0^16 -> alpha_LM^16 substitution
-  C4                   observable-principle scalar-additivity admission
+  C4                   observable-principle scalar-additivity premise
 
 the dimension-one hierarchy-formula output
 
@@ -104,11 +104,13 @@ check("(B1) at d=4, alpha = 1/4 uniquely among positive integers",
 
 
 # ----------------------------------------------------------------------
-# Section 2: Riemann-Dirichlet triple coincidence at d=4 (retained dep)
-# R_lat(d-1) = eta(d)/zeta(d) = 7/8 and 2^(d-2) = d, simultaneously
-# only at d=4
+# Section 2: Riemann-Dirichlet two-ratio alignment at d=4
+# R_lat(d-1) = eta(d)/zeta(d) iff A(d)=2^(d-2)-d vanishes.
+# The unique integer alignment is d=4, where the two ratios equal 7/8
+# and the separate residual is zero. The source theorem is pending
+# independent re-audit.
 # ----------------------------------------------------------------------
-print("\nSection 2: Riemann-Dirichlet triple coincidence (retained dependency)")
+print("\nSection 2: Riemann-Dirichlet two-ratio alignment (source under re-audit)")
 
 def s2_lattice_ratio_d4() -> bool:
     # R_lat(c) = (c + 1/2) / (c + 1) at c=3 (d=4)
@@ -123,30 +125,31 @@ def s2_eta_zeta_ratio_d4() -> bool:
     ratio = 1 - sp.Rational(2) ** (1 - s)
     return sp.simplify(ratio - sp.Rational(7, 8)) == 0
 
-def s2_integer_alignment_d4() -> bool:
-    # 2^(d-2) = d has unique integer solution d=4 (in d >= 2)
-    solutions = [d for d in range(2, 20) if 2 ** (d - 2) == d]
-    return solutions == [4]
+def s2_gap_residual_identity() -> bool:
+    d = sp.symbols("d", integer=True, positive=True)
+    r_lat = 1 - sp.Rational(1, 2) / d
+    r_rd = 1 - 2 ** (1 - d)
+    residual = 2 ** (d - 2) - d
+    return sp.simplify(r_lat - r_rd + residual / (d * 2 ** (d - 1))) == 0
 
-def s2_triple_simultaneity_only_at_d4() -> bool:
-    # R_lat(d-1) = eta(d)/zeta(d) iff 1/(2d) = 2^(1-d) iff 2^(d-2) = d
-    for d in range(2, 12):
-        R_lat = sp.Rational(1) - sp.Rational(1, 2 * d)
-        ratio = 1 - sp.Rational(2) ** (1 - d)
-        equal = sp.simplify(R_lat - ratio) == 0
-        if equal and d != 4:
-            return False
-        if not equal and d == 4:
-            return False
-    return True
+def s2_integer_alignment_d4() -> bool:
+    # A(2)=A(3)=-1, A(4)=0. For d=k+4, k>=0, the forward
+    # difference Delta_k=A(d+1)-A(d) obeys Delta_0=3 and
+    # Delta_(k+1)=2 Delta_k+1, hence is positive for every k>=0.
+    k = sp.symbols("k", integer=True, nonnegative=True)
+    delta = 2 ** (k + 2) - 1
+    recurrence = sp.simplify(delta.subs(k, k + 1) - 2 * delta - 1)
+    bases = [2 ** (d - 2) - d for d in (2, 3, 4)]
+    return bases == [-1, -1, 0] and delta.subs(k, 0) == 3 and recurrence == 0
 
 check("(B2) R_lat(c=3) = 7/8", s2_lattice_ratio_d4, "per-mode lattice ratio at d=4")
 check("(B2) eta(4)/zeta(4) = 7/8", s2_eta_zeta_ratio_d4, "Riemann-Dirichlet at s=4")
-check("(B2) 2^(d-2) = d unique at d=4", s2_integer_alignment_d4,
-      "integer alignment equation")
-check("(B2) triple simultaneity holds only at d=4 (d in [2,11])",
-      s2_triple_simultaneity_only_at_d4,
-      "joint coincidence")
+check("(B2) ratio gap equals -A(d)/(d*2^(d-1)) symbolically",
+      s2_gap_residual_identity,
+      "two ratios are equal iff the separate residual vanishes")
+check("(B2) A(d)=2^(d-2)-d has the unique integer zero d=4",
+      s2_integer_alignment_d4,
+      "all-integer recurrence/induction certificate")
 
 
 # ----------------------------------------------------------------------
@@ -238,7 +241,7 @@ print("\nSection 5: Dimension counting of v_hierarchy")
 
 def s5_dim_M_Pl() -> bool:
     # [M_Pl] = 1 (C1)
-    return True  # admitted-context input C1
+    return True  # explicit context input C1
 
 def s5_dim_prefactor_zero() -> bool:
     # (7/8)^(1/4): rational base + rational exponent -> dimensionless
@@ -259,7 +262,7 @@ def s5_overall_dim_one() -> bool:
     # [v_hierarchy] = [M_Pl] * [prefactor]*[alpha_LM^16] = 1 + 0 + 0 = 1
     return True
 
-check("(B5) [M_Pl] = 1 (C1)", s5_dim_M_Pl, "supplied admitted-context input")
+check("(B5) [M_Pl] = 1 (C1)", s5_dim_M_Pl, "supplied explicit context input")
 check("(B5) [(7/8)^(1/4)] = 0", s5_dim_prefactor_zero,
       "rational base raised to rational power is dimensionless")
 check("(B5) [alpha_LM^16] = 0", s5_dim_alpha_LM_zero,
@@ -435,7 +438,7 @@ else:
         "VERDICT: bridge passes; under C1-C4, the dimension-one "
         "hierarchy-formula output is consistently assigned to the EW "
         "Higgs VEV parameter on the canonical surface; package-level "
-        "closure remains bounded by the four named admitted-context inputs; "
+        "closure remains bounded by the four named explicit context inputs; "
         "the 0.0255% "
         "canonical-surface match remains a bounded numerical match, not "
         "a derived theorem."

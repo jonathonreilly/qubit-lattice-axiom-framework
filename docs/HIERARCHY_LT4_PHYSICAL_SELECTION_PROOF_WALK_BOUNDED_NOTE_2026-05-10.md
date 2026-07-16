@@ -1,5 +1,11 @@
 # Hierarchy L_t = 4 Physical-Selection Proof-Walk Bounded Note
 
+**Current premise authority (2026-07-16):** the legacy “admission”
+terminology in earlier versions is normalized here to three explicit
+conditional inputs. None of those inputs is an axiom or approved primitive
+in `axiom_premise_nodes.json`, so none chain-satisfies a dependency. Their
+current live-ledger rows are `unaudited`.
+
 **Date:** 2026-05-10
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note
@@ -17,20 +23,18 @@ independent audit lane.
 > Klein-four orbit calculation on the staggered-Dirac APBC temporal circle
 > ([`HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md`](HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md),
 > retained;
-> [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md),
-> retained;
 > [`HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md`](HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md),
-> retained_bounded), and (ii) three explicitly named admissions
-> (the staggered-Dirac realization gate, scalar-additivity admission,
-> and CPT phase-blindness admission), the algebraic `L_t = 4`
+> retained_bounded), and (ii) three explicitly named conditional inputs
+> (the staggered-Dirac realization gate, scalar-additivity premise,
+> and CPT phase-blindness premise), the algebraic `L_t = 4`
 > selector on the staggered block IS the physical EWSB temporal
-> block. The three admissions are necessary: without any one of
+> block. The three conditional inputs are necessary: without any one of
 > them, the algebraic-to-physical bridge does not close from
 > the physical Cl(3) local algebra plus Z^3 spatial substrate alone.
 
 This bounded theorem **explicitly does NOT** claim:
 
-- unconditional retirement of any of the three admissions from the
+- unconditional discharge of any of the three conditional inputs from the
   physical Cl(3) local algebra plus Z^3 spatial substrate;
 - closure of the framework's electroweak hierarchy formula
   `v = M_Pl × α_LM^16 × (7/8)^(1/4)` (downstream chain);
@@ -38,11 +42,11 @@ This bounded theorem **explicitly does NOT** claim:
 - retirement of the open staggered-Dirac realization gate
   ([`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md));
 - a positive-theorem promotion of any cited authority. The
-  conditional shape — closure given the three named admissions —
+  conditional shape — closure given the three named inputs —
   is the load-bearing content.
 
 This note walks the existing chain step-by-step and isolates the
-named admissions, without adding new content beyond making the
+named conditional inputs, without adding new content beyond making the
 conditional shape explicit.
 
 ## 2. Background — what the retained authorities already establish
@@ -69,12 +73,12 @@ block (`L_s = 2`, staggered Dirac on APBC temporal circle):
    checks the next even cases `L_t = 6, 8` as split into multiple
    orbit sectors.
 
-3. **Uniform temporal weight at the selected orbit**
-   ([`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md),
-   retained): at `L_t = 4`, `sin²((2n+1)π/4) = 1/2` for all
-   `n ∈ {0, 1, 2, 3}` — the orbit is uniformly weighted. At
-   `L_t ∈ {6, 8}`, `sin²` is not uniform on the orbit set
-   (explicit values in the cited note).
+3. **Context-only finite temporal-weight check.** At `L_t = 4`,
+   `sin²((2n+1)π/4) = 1/2` for all `n ∈ {0, 1, 2, 3}`. At the
+   checked sizes `L_t ∈ {6, 8}`, the sampled `sin²` values are not
+   uniform. These finite facts are recomputed by the paired runner,
+   are non-load-bearing here, and do not select a physical temporal
+   size or establish uniqueness over all `L_t`.
 
 4. **Spatial-BC and `u_0`-scaling closure**
    ([`HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md`](HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md),
@@ -83,16 +87,17 @@ block (`L_s = 2`, staggered Dirac on APBC temporal circle):
    parameter limit, and the linear `1/u_0` tadpole scaling is the
    exact local statement.
 
-Together these establish: **the algebraic L_t = 4 result on the
-staggered-Dirac block is settled.** What is not settled is the
+Items 1, 2, and 4 supply the stated algebraic/background chain on the
+staggered-Dirac block. Item 3 is only a finite context check and does
+not contribute a temporal-size selector. What is not settled is the
 bridge from "algebraic L_t = 4 on the staggered block" to "physical
 EWSB temporal block."
 
-## 3. The bridge chain — four steps + three admission walls
+## 3. The bridge chain — four steps + three conditional-input walls
 
 The bridge from algebraic `L_t = 4` to physical EWSB temporal block
 is the four-step chain (a)-(d) below. Each step's inputs are
-catalogued, and the three named admissions are isolated.
+catalogued, and the three named conditional inputs are isolated.
 
 ### Step (a). Klein-four orbit on the staggered block at `L_t = 4`
 
@@ -100,14 +105,15 @@ catalogued, and the three named admissions are isolated.
 APBC temporal phases `z_n = exp(i(2n+1)π/L_t)` has a unique minimal
 **resolved** orbit at `L_t = 4`.
 
-**Source:** items 2 + 3 of §2 above, with the finite orbit calculation
-rerun by the paired verifier. This step is algebraic and closed on the
-staggered-Dirac block at the checked sizes.
+**Source:** item 2 of §2 above, with the finite orbit calculation
+rerun by the paired verifier. This step is algebraic on the checked
+sizes. The separate `sin²` samples in item 3 are not used to select
+`L_t = 4`.
 
 **Inputs needed:** APBC phase set on the temporal circle;
 Klein-four group action.
 
-**Admission walls invoked:** none at this algebraic step.
+**Conditional-input walls invoked:** none at this algebraic step.
 
 ### Step (b). The EWSB order parameter is a local bosonic CPT-even bilinear
 
@@ -128,24 +134,17 @@ via [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_
 
 **Inputs needed:** an identification of the physical EWSB order
 parameter with the lattice scalar generator `W[J] = log|det(D + J)|`.
-That identification is the scalar-additivity admission below.
+That identification is the scalar-additivity conditional input below.
 
-**Admission wall invoked:**
+**Conditional-input wall invoked:**
 
-- **Scalar-additivity / observable-class admission.**
-  The audit-named open admission of
-  [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md):
-  *"the load-bearing claim is that the unique additive CPT-even
-  scalar generator is `W = log|det(D + J)|`; the load-bearing
-  step admits scalar additivity on independent subsystems
-  (P1) as a physical-principle premise. The runner verifies the
-  algebra after that premise is chosen; it does not derive why
-  physical scalar observables must select that generator from the
-  axiom alone."*
-  (Source: audit verdict on `observable_principle_from_axiom_note`
-  in the audit ledger.) The 2026-05-09 update to that note
-  retired P2/P3/P4 to runner-local consequences but explicitly
-  left P1 admitted.
+- **Scalar-additivity / observable-class conditional input.**
+  [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
+  records the proposed scalar generator `W = log|det(D + J)|` after
+  scalar additivity on independent subsystems is supplied. Its current
+  live-ledger row is `unaudited`, and the note is not an axiom-premise
+  node. Therefore this proof-walk treats the observable-class step as an
+  explicit conditional input, not as a chain-satisfying premise.
 
 ### Step (c). Klein-four invariance of the EWSB sector
 
@@ -161,19 +160,19 @@ phase blindness applied to the source-deformed Dirac determinant.
 
 **Inputs needed:** CPT-even phase blindness on the staggered block.
 
-**Admission wall invoked:**
+**Conditional-input wall invoked:**
 
-- **CPT-even phase-blindness admission.** The CPT primitive
+- **CPT-even phase-blindness conditional input.** The CPT source
   is supplied by [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md), which
   carries `effective_status = unaudited` in the live audit ledger.
   The 2026-05-10 narrow specialization
   [`CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md`](CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md)
   also carries `effective_status = unaudited`, and the older
   `AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md`
-  carries `effective_status = audited_conditional`. None of the
-  CPT primitives is currently retained; CPT-even phase blindness
-  is therefore an admission at the bridge from algebra to physical
-  bilinear class.
+  is likewise `unaudited`. None of these sources is currently retained
+  or registered as an approved primitive; CPT-even phase blindness is
+  therefore an explicit conditional input at the bridge from algebra
+  to physical bilinear class.
 
 ### Step (d). The physical EWSB temporal block IS L_t = 4
 
@@ -188,17 +187,17 @@ minimal resolved Klein-four orbit on the APBC temporal circle is
 **Inputs needed:** the staggered-Dirac block on which the curvature
 lives must itself be the physical EW substrate.
 
-**Admission wall invoked:**
+**Conditional-input wall invoked:**
 
-- **Staggered-Dirac realization admission.** The framework baseline is
+- **Staggered-Dirac realization conditional input.** The framework baseline is
   **the physical Cl(3) local algebra plus Z^3 spatial substrate**. The
   staggered-Dirac realization on `Z³` (with APBC temporal extent
   and 8-corner doubler structure) is recorded as an **open gate**
   in
   [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-  with `effective_status = open_gate`. Without closure of that
+  with current `effective_status = unaudited`. Without closure of that
   gate, "the staggered block IS the physical EW substrate" is an
-  admission, not a derivation. The Klein-four argument lives on
+  explicit conditional input, not a derivation. The Klein-four argument lives on
   the staggered block; it inherits the gate.
 
 ## 4. Conditional load-bearing statement
@@ -212,27 +211,26 @@ lives must itself be the physical EW substrate.
 > physical EWSB temporal block is `L_t = 4`.
 
 This is the bounded conditional shape this note targets.
-**Unconditional retirement of the three admissions from the physical
+**Unconditional discharge of the three conditional inputs from the physical
 Cl(3) local algebra plus Z^3 spatial substrate is not closed by this
-note.** Each admission is recorded with its
-existing open-gate / audited-conditional / unaudited authority
-row in the live ledger.
+note.** Each input is recorded by an existing `unaudited` authority row
+in the live ledger and remains non-chain-satisfying.
 
 ## 5. Proof-Walk catalogue
 
-The chain has four steps and three admissions. The proof-walk
+The chain has four steps and three conditional inputs. The proof-walk
 catalogue is:
 
-| Step | Statement | Algebra source | Admission wall? |
+| Step | Statement | Algebra source | Conditional-input wall? |
 |---|---|---|---|
-| (a) | Klein-four orbit on APBC phases, unique resolved at L_t=4 | retained Matsubara + retained 7/8 + retained_bounded spatial BC | none (algebraic) |
-| (b) | EWSB order param = local bosonic CPT-even bilinear = `log\|det\|` curvature | bosonic-bilinear selector + observable principle | scalar-additivity admission |
-| (c) | Physical EWSB curvature is Klein-four invariant | CPT-even phase blindness on staggered D | CPT phase-blindness admission |
+| (a) | Klein-four orbit on APBC phases, unique resolved at L_t=4 | retained Matsubara + Klein-four orbit source + retained_bounded spatial BC | none (algebraic) |
+| (b) | EWSB order param = local bosonic CPT-even bilinear = `log\|det\|` curvature | bosonic-bilinear selector + observable principle | scalar-additivity input |
+| (c) | Physical EWSB curvature is Klein-four invariant | CPT-even phase blindness on staggered D | CPT phase-blindness input |
 | (d) | Therefore physical EWSB temporal block = L_t = 4 | (a) ∧ (b) ∧ (c); staggered block IS physical substrate | staggered-Dirac realization gate |
 
 The checked proof-walk **does not** add any new axiom, any new
 repo-wide theory class, or any retained status claim. It does
-not retire any of the three admission walls.
+not discharge any of the three conditional-input walls.
 
 ## 6. Forbidden imports check
 
@@ -253,22 +251,23 @@ not retire any of the three admission walls.
 The load-bearing result is a bounded reframing: it recasts the
 algebraic Klein-four orbit result into the conditional
 physical-selection statement by walking the four bridge steps and
-isolating the three admissions. The algebraic content is supported
-by retained / retained-bounded upstream rows plus the paired finite
-verifier; the bridge to "physical" remains conditional on the three
-named admissions.
+isolating the three conditional inputs. The orbit content is supported by the
+named upstream rows plus the paired verifier. The runner's finite
+`sin²` checks are context-only and do not supply the physical selector;
+the bridge to "physical" remains conditional on the three named
+inputs.
 
 ## 8. What this bounded theorem supports
 
-- An **explicit catalogue** of the three admission walls between
+- An **explicit catalogue** of the three conditional-input walls between
   the retained algebraic L_t = 4 result and the physical EWSB
   temporal-block claim used by the v formula
   `v = M_Pl × α_LM^16 × (7/8)^(1/4)`.
 - A **conditional load-bearing statement** that downstream rows
   citing the L_t = 4 selection can use to inherit the three
-  admission walls explicitly rather than implicitly.
+  conditional-input walls explicitly rather than implicitly.
 - **Audit-tractable narrowing**: the electroweak hierarchy
-  baseline admission used by the v formula is now decomposed into
+  baseline conditional input used by the v formula is now decomposed into
   three existing authority rows: the staggered-Dirac realization
   gate, scalar-additivity P1, and CPT-even phase blindness.
 
@@ -312,16 +311,14 @@ The runner verifies the finite algebraic content:
 3. **T3.** On `L_t ∈ {6, 8}`, the APBC phase set splits into
    multiple Klein-four orbit sectors.
 4. **T4.** `sin²((2n + 1)π/4) = 1/2` for all `n ∈ {0, 1, 2, 3}`
-   (uniform temporal weight at `L_t = 4`).
+   (finite context check only; not a temporal-size selector).
 5. **T5.** `sin²((2n + 1)π/6)` takes values `{1/4, 1, 1/4, 1/4, 1, 1/4}`
-   (non-uniform at `L_t = 6`).
-6. **T6.** Admission-wall catalogue: the proof-walk has exactly
-   three admission walls, each tied to a
-   specific upstream authority row with the named effective
-   status. The runner reads the live ledger
-   (`docs/audit/data/audit_ledger.json`) and reports each row's
-   current `effective_status` so the conditional shape is
-   ledger-checked at runtime.
+   (finite context check only; non-uniform at `L_t = 6`).
+6. **T6.** Conditional-input catalogue: the proof-walk has exactly
+   three explicit inputs, each tied to a live upstream authority row
+   and absent from the approved axiom/primitive registry. The runner
+   reads both governance files so the non-chain-satisfying conditional
+   shape is checked at runtime.
 7. **T7.** Forbidden-imports check: the runner re-derives T1-T5
    from `cmath` / `math` only, with **no** import of PDG values,
    `M_Pl`, `α_LM`, `u_0`, or any framework numerical constant.
@@ -334,12 +331,16 @@ Target PASS = 7, FAIL = 0.
 - [`HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md`](HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md)
   — retained (positive_theorem); exact Matsubara determinant
   closed form on `L_s = 2`.
-- [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — retained (positive_theorem); triple coincidence at `d = 4`
-  yielding `7/8` and `sin² = 1/2` uniformity at `L_t = 4`.
 - [`HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md`](HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md)
   — retained_bounded; finite intensive 3+1 limit forces spatial
   APBC at `L_s = 2`.
+
+### Arithmetic context only
+- `HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`
+  — positive-theorem source pending independent re-audit; proves that
+  two ratios equal `7/8` while a separate alignment residual vanishes
+  at `d = 4`. Its finite `sin²` checks are context-only and do not
+  select `L_t` or enter the physical-selection chain here.
 
 ### Algebraic upstream and bridge context
 - [`HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md`](HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md)
@@ -348,12 +349,11 @@ Target PASS = 7, FAIL = 0.
   algebraic content T1-T5 from primitives, while its EWSB-bilinear
   identification remains part of the disclosed bridge context.
 
-### Admission-wall authorities
+### Conditional-input authorities
 - [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-  — open_gate; staggered-Dirac realization gate authority.
+  — unaudited; staggered-Dirac realization gate authority.
 - [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
-  — audited_conditional; scalar-additivity P1 authority (P1 scalar
-  additivity admission named in audit verdict).
+  — unaudited; scalar-additivity P1 source, not an axiom-premise node.
 - `OBSERVABLE_PRINCIPLE_AUDIT_NOTE_2026-05-02.md`
   — meta; records the audit verdict naming P1.
 - [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md)
@@ -361,7 +361,7 @@ Target PASS = 7, FAIL = 0.
 - [`CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md`](CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md)
   — unaudited; CPT-even phase-blindness narrow specialization.
 - `AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md`
-  — audited_conditional; CPT-even phase-blindness older route.
+  — unaudited; CPT-even phase-blindness older route.
 
 ### Framework axiom set
 - `MINIMAL_AXIOMS_2026-05-03.md`
@@ -381,9 +381,9 @@ Target PASS = 7, FAIL = 0.
 This note is a conditional proof-walk. It walks the existing four-
 step bridge chain from the retained algebraic L_t = 4 result on the
 staggered block to the physical EWSB temporal block, isolates the
-three disclosed admissions, and states the
+three disclosed conditional inputs, and states the
 conditional closure. It does not retire any of the three walls. It
 does not promote any cited authority. The audit lane is the
 authority on effective status; this proposal merely contributes a
 bounded conditional row whose load-bearing chain is the
-admission catalogue plus the conditional closure statement.
+conditional-input catalogue plus the conditional closure statement.

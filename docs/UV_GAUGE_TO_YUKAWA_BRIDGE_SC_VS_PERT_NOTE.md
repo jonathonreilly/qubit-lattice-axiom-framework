@@ -35,8 +35,9 @@ load-bearing.
 
 ## Claim Scope
 
-Let `N_c = 3` and `N_iso = 2` be the retained bounded representation inputs
-used by the runner. The in-scope theorem is the finite coefficient packet:
+Fix `N_c = 3` and `N_iso = 2` as representation conditions for this bounded
+packet. This row does not derive their physical selection. The in-scope theorem
+is the finite coefficient packet:
 
 1. The SU(`N_c`) generator normalization
 
@@ -212,4 +213,4 @@ would need to prove the expansion-domain/selector surface: why the retained
 framework inputs put the relevant coefficient in the tadpole-improved
 perturbative domain rather than the strong-coupling character domain, with the
 plaquette/`u_0`, `g_bare`, staggered-Dirac, and shared tadpole-transport
-dependencies explicitly closed or admitted.
+dependencies explicitly closed or left as named open conditions.

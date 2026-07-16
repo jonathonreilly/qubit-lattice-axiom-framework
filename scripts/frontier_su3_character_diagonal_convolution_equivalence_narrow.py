@@ -35,31 +35,24 @@ representation theory):
 This is class-A pure abstract algebra on an abstract real coefficient
 sequence (rho_(p,q)) over the SU(3) character basis. **No** Wilson action,
 **no** unmarked spatial environment, **no** beta = 6 framework-point
-input is consumed. The bounded companion's computed single-link Wilson
-coefficients are inserted only as abstract positive symmetric numerical
-data, **without** identification with any physical Wilson environment.
+input, and **no** physical coefficient data are consumed.
 
-Numerical verification of Schur orthogonality uses Weyl integration on
-the SU(3) Cartan torus with a fine quadrature grid; symbolic-level
-verification of the diagonal-action identity is done by direct algebraic
-reduction (no Haar integration is needed in the abstract step).
+The load-bearing verification expands chi_lambda(V W^-1) into generic
+representation-matrix entries and contracts the three matrix indices using
+matrix-element Schur orthogonality before rho is introduced. A separate
+deterministic Haar-random SU(3) calculation checks the convolution using
+explicit fundamental, antifundamental, adjoint, and low symmetric-power
+character formulas. Hostile mutations reject a missing 1/d factor, W in
+place of W^-1, conjugating the target character, and returning rho_target
+without the V-dependent character.
 """
 
 from __future__ import annotations
 
 from fractions import Fraction
-from pathlib import Path
 import sys
 
 import numpy as np
-
-try:
-    import scipy.special  # noqa: F401 (used elsewhere in the project; sanity import)
-except ImportError:
-    pass
-
-
-ROOT = Path(__file__).resolve().parent.parent
 
 PASS = 0
 FAIL = 0
@@ -198,34 +191,192 @@ check(
 
 
 # =============================================================================
-section("Part 2 (T2): symbolic derivation of C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)")
+section("Part 2 (T2): exact matrix-index contraction for character convolution")
 # =============================================================================
-# Symbolic reduction does NOT need to do a Haar integral: it uses the
-# identity (9) of the note:
-#   int chi_(p,q)(V W^{-1}) chi_(p',q')(W) dW = delta_((p,q),(p',q')) chi_(p',q')(V) / d_(p,q),
-# which is the standard convolution-of-characters identity (Peter-Weyl).
-# We verify the identity (9) numerically on a small subset (the structural
-# Schur orthogonality of T1 above already implies it after matrix-element
-# expansion); the diagonal action then reduces by linearity to
-#   sum_(p,q) d_(p,q) rho_(p,q) * delta_((p,q),(p',q')) chi_(p',q')(V) / d_(p,q)
-#   = rho_(p',q') chi_(p',q')(V).
-# This is a finite-sum algebraic identity that follows from T1 alone; no
-# additional integration is required.
+# With D^lambda unitary,
+#
+#   chi_lambda(V W^-1)
+#     = Tr[D^lambda(V) D^lambda(W)^dagger]
+#     = sum_(a,b) D^lambda(V)_(a,b) conj(D^lambda(W)_(a,b)),
+#
+# while chi_mu(W) = sum_c D^mu(W)_(c,c). Matrix-element Schur
+# orthogonality supplies, before any character-convolution identity,
+#
+#   int conj(D^lambda_(a,b)) D^mu_(c,c) dW
+#     = delta_(lambda,mu) delta_(a,c) delta_(b,c) / d_mu.
+#
+# The dictionaries below are exact symbolic polynomials in the generic
+# entries D^lambda(V)_(a,b): matrix indices are keys and Fraction values are
+# their coefficients. Thus the 1/d factor and the surviving diagonal trace
+# are produced by the indexed contraction, not inserted by a final helper.
+MatrixPolynomial = dict[tuple[int, int], Fraction]
+ConvolutionPolynomial = dict[tuple[tuple[int, int], int, int], Fraction | float]
 
-# Algebraic step: for an abstract sequence (rho_(p,q)) over B_N, define a
-# symbolic linear functional that takes a basis vector chi_(p,q) -> Z reduction
-# and computes the projection by Schur orthogonality (using only the delta
-# structure already verified in T1).
-def reduce_convolution(rho_seq: list[float], target: tuple[int, int]) -> float:
-    """Apply C_{Z/Z_(0,0)} chi_(target) using the Schur-orthogonal reduction.
 
-    By Peter-Weyl convolution of characters and Schur orthogonality (T1),
-        C_{Z/Z_(0,0)} chi_(p',q') = sum_(p,q) d_(p,q) rho_(p,q) (1/d_(p,q)) delta_(...) chi_(p',q')
-    Only the term (p, q) = (p', q') survives the Kronecker delta. Since
-    d_(p',q') * rho_(p',q') / d_(p',q') = rho_(p',q'), the surviving
-    coefficient is exactly rho_(p',q').
-    """
-    return rho_seq[INDEX[target]]
+def schur_matrix_element_coefficient(
+    kernel: tuple[int, int],
+    target: tuple[int, int],
+    a: int,
+    b: int,
+    c: int,
+) -> Fraction:
+    """Coefficient from int conj(D^kernel_ab) D^target_cc dW."""
+    irrep_delta = int(kernel == target)
+    index_delta = int(a == c) * int(b == c)
+    return Fraction(irrep_delta * index_delta, d_su3(*target))
+
+
+def matrix_element_contraction(
+    kernel: tuple[int, int], target: tuple[int, int]
+) -> MatrixPolynomial:
+    """Mechanically contract the (a,b,c) indices in the translated characters."""
+    if kernel != target:
+        # The inequivalent-irrep Schur delta is zero for every matrix index.
+        return {}
+
+    result: MatrixPolynomial = {}
+    for a in range(d_su3(*kernel)):
+        for b in range(d_su3(*kernel)):
+            coefficient = sum(
+                (
+                    schur_matrix_element_coefficient(kernel, target, a, b, c)
+                    for c in range(d_su3(*target))
+                ),
+                Fraction(0),
+            )
+            if coefficient:
+                result[(a, b)] = coefficient
+    return result
+
+
+def expected_trace_over_dimension(weight: tuple[int, int]) -> MatrixPolynomial:
+    """The symbolic polynomial Tr D^weight(V) / d_weight."""
+    dimension = d_su3(*weight)
+    return {(c, c): Fraction(1, dimension) for c in range(dimension)}
+
+
+CONTRACTIONS = {
+    (kernel, target): matrix_element_contraction(kernel, target)
+    for kernel in B_N
+    for target in B_N
+}
+
+inequivalent_example = CONTRACTIONS[((1, 0), (0, 1))]
+inequivalent_coefficients = [
+    schur_matrix_element_coefficient((1, 0), (0, 1), a, b, c)
+    for a in range(d_su3(1, 0))
+    for b in range(d_su3(1, 0))
+    for c in range(d_su3(0, 1))
+]
+check(
+    "(T2) a generic fundamental/antifundamental matrix-element contraction is zero",
+    inequivalent_example == {}
+    and all(coefficient == 0 for coefficient in inequivalent_coefficients),
+    detail=f"mechanically checked all {len(inequivalent_coefficients)} (a,b,c) coefficients",
+)
+
+fundamental_example = CONTRACTIONS[((1, 0), (1, 0))]
+check(
+    "(T2) a generic same-fundamental contraction is Tr D_(1,0)(V) / 3",
+    fundamental_example
+    == {
+        (0, 0): Fraction(1, 3),
+        (1, 1): Fraction(1, 3),
+        (2, 2): Fraction(1, 3),
+    },
+    detail=f"symbolic polynomial={fundamental_example}",
+)
+
+off_diagonal_contractions_ok = all(
+    CONTRACTIONS[(kernel, target)] == {}
+    for kernel in B_N
+    for target in B_N
+    if kernel != target
+)
+check(
+    "(T2) raw matrix-element contraction vanishes for every unequal B_4 irrep pair",
+    off_diagonal_contractions_ok,
+    detail=f"checked {len(B_N) * (len(B_N) - 1)} inequivalent pairs before applying rho",
+)
+
+diagonal_contractions_ok = all(
+    CONTRACTIONS[(weight, weight)] == expected_trace_over_dimension(weight)
+    for weight in B_N
+)
+check(
+    "(T2) raw same-irrep contraction equals Tr D_mu(V) / d_mu throughout B_4",
+    diagonal_contractions_ok,
+    detail=f"checked all {len(B_N)} dimensions, from 1 through {max(d_su3(*w) for w in B_N)}",
+)
+
+# Hostile mutation: omit the Schur 1/d normalization. It produces Tr D(V),
+# not Tr D(V)/d, already for the fundamental representation.
+missing_dimension_mutant = {
+    (c, c): Fraction(1) for c in range(d_su3(1, 0))
+}
+check(
+    "hostile control rejects a missing 1/d_mu factor",
+    missing_dimension_mutant != fundamental_example
+    and all(
+        missing_dimension_mutant[key] == d_su3(1, 0) * fundamental_example[key]
+        for key in fundamental_example
+    ),
+    detail="mutant gives Tr D_(1,0)(V), exactly three times the required contraction",
+)
+
+
+def apply_z_convolution(
+    rho_seq: list[Fraction] | list[float], target: tuple[int, int]
+) -> ConvolutionPolynomial:
+    """Build C_Z chi_target as a generic representation-matrix polynomial."""
+    result: ConvolutionPolynomial = {}
+    for kernel in B_N:
+        z_coefficient = d_su3(*kernel) * rho_seq[INDEX[kernel]]
+        for (a, b), raw_coefficient in CONTRACTIONS[(kernel, target)].items():
+            key = (kernel, a, b)
+            result[key] = result.get(key, 0) + z_coefficient * raw_coefficient
+    return {key: value for key, value in result.items() if value != 0}
+
+
+def expected_diagonal_polynomial(
+    rho_seq: list[Fraction] | list[float], target: tuple[int, int]
+) -> ConvolutionPolynomial:
+    """Build rho_target Tr D^target(V), independently of the convolution sum."""
+    coefficient = rho_seq[INDEX[target]]
+    if coefficient == 0:
+        return {}
+    return {
+        (target, c, c): coefficient
+        for c in range(d_su3(*target))
+    }
+
+
+# Multiplication by d_lambda in Z cancels the 1/d_mu from the raw
+# contraction only on lambda=mu. This matrix is assembled before rho is
+# chosen, so the dimension cancellation is independently load-bearing.
+dimension_weighted_convolution = np.zeros((len(B_N), len(B_N)), dtype=object)
+for kernel in B_N:
+    for target in B_N:
+        raw = CONTRACTIONS[(kernel, target)]
+        if not raw:
+            dimension_weighted_convolution[INDEX[kernel], INDEX[target]] = Fraction(0)
+        elif raw == expected_trace_over_dimension(target):
+            dimension_weighted_convolution[INDEX[kernel], INDEX[target]] = (
+                d_su3(*kernel) * raw[(0, 0)]
+            )
+        else:
+            dimension_weighted_convolution[INDEX[kernel], INDEX[target]] = None
+
+dimension_cancellation_ok = all(
+    dimension_weighted_convolution[i, j] == Fraction(int(i == j))
+    for i in range(len(B_N))
+    for j in range(len(B_N))
+)
+check(
+    "(T2) d_lambda in Z cancels 1/d_mu and gives the exact 25 x 25 identity",
+    dimension_cancellation_ok,
+    detail="dimension-weighted raw convolution matrix assembled before rho",
+)
 
 
 # Construct an abstract POSITIVE SYMMETRIC rational coefficient sequence:
@@ -259,21 +410,22 @@ rho1 = make_positive_symmetric({
     (4, 4): Fraction(1, 800),
 })
 
-# Check the surviving coefficient under the Schur-orthogonal reduction equals
-# rho_(target) for every target weight.
+# Apply the finite sum only after the raw contraction and dimension
+# cancellation have been checked. Compare full generic matrix polynomials,
+# not a scalar coefficient lookup.
 all_targets_ok = True
 for target in B_N:
-    surviving = reduce_convolution([float(r) for r in rho1], target)
-    expected = float(rho1[INDEX[target]])
-    if abs(surviving - expected) > 1e-15:
+    actual = apply_z_convolution(rho1, target)
+    expected = expected_diagonal_polynomial(rho1, target)
+    if actual != expected:
         all_targets_ok = False
-        print(f"    FAIL: target={target}, surviving={surviving}, expected={expected}")
+        print(f"    FAIL: target={target}, actual={actual}, expected={expected}")
 check(
     "(T2) For abstract rational positive-symmetric (rho_(p,q)): "
-    "Schur-orthogonal reduction yields C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) "
+    "the contracted finite sum gives C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) "
     "for every (p,q) in B_N",
     all_targets_ok,
-    detail=f"all {len(B_N)} weights in B_{N} pass exact algebraic reduction",
+    detail=f"all {len(B_N)} weights in B_{N} pass exact matrix-polynomial comparison",
 )
 
 
@@ -373,13 +525,12 @@ section("Part 5: concrete instance — trivial coefficient sequence collapses to
 # and rho_(0,0) = 1).
 rho_trivial = [Fraction(0)] * len(B_N)
 rho_trivial[INDEX[(0, 0)]] = Fraction(1)
-R_trivial = np.diag([float(r) for r in rho_trivial])
 # Check that C_{Z/Z_(0,0)} chi_(0,0) = 1 * chi_(0,0) and = 0 for any other (p,q).
 ok_trivial = True
 for target in B_N:
-    surviving = reduce_convolution([float(r) for r in rho_trivial], target)
-    expected = 1.0 if target == (0, 0) else 0.0
-    if abs(surviving - expected) > 1e-15:
+    actual = apply_z_convolution(rho_trivial, target)
+    expected = expected_diagonal_polynomial(rho_trivial, target)
+    if actual != expected:
         ok_trivial = False
 check(
     "concrete trivial instance: rho = (1, 0, ..., 0) gives projection onto chi_(0,0)",
@@ -389,69 +540,256 @@ check(
 
 
 # =============================================================================
-section("Part 6: numerical consistency with bounded companion Wilson coefficients")
+section("Part 6: independent deterministic Haar-SU(3) convolution check")
 # =============================================================================
-# The bounded companion runner
-# (frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py)
-# computes specific normalized single-link Wilson boundary coefficients
-# rho_(p,q)(6). Here we USE those numerical values purely as abstract
-# positive symmetric numerical input data, without claiming any physical
-# Wilson environment identification. This is a runner-level sanity check
-# that the algebraic narrow theorem (T1)-(T4) applies to that numerical
-# coefficient sequence; it is NOT a derivation of the parent gate.
-
-rho_pq6 = {  # values from companion runner (closed-form Bessel determinant)
-    (0, 0): 1.000000000000e+00,
-    (1, 0): 4.225317396500e-01,
-    (0, 1): 4.225317396500e-01,
-    (1, 1): 1.622597994799e-01,
-    (2, 0): 1.359617273634e-01,
-    (0, 2): 1.359617273634e-01,
-    (2, 1): 4.828805556745e-02,
-    (1, 2): 4.828805556745e-02,
-    (3, 0): 3.505738045167e-02,
-    (0, 3): 3.505738045167e-02,
-    (2, 2): 1.350507888830e-02,
+# The Monte Carlo convolution below does not use the Weyl integration routine
+# or the symbolic contraction table. It samples Haar-random 3 x 3 SU(3)
+# matrices and evaluates explicit trace formulas for 1, 3, 3bar, 8, 6, 6bar,
+# 10, and 10bar. A small preflight separately cross-checks those formulas
+# against the Weyl formula at fixed torus points.
+MC_WEIGHTS = (
+    (0, 0),
+    (1, 0),
+    (0, 1),
+    (1, 1),
+    (2, 0),
+    (0, 2),
+    (3, 0),
+    (0, 3),
+)
+MC_RHO = {
+    (0, 0): 1.0,
+    (1, 0): 2.0 / 5.0,
+    (0, 1): 2.0 / 5.0,
+    (1, 1): 1.0 / 7.0,
+    (2, 0): 1.0 / 8.0,
+    (0, 2): 1.0 / 8.0,
+    (3, 0): 1.0 / 20.0,
+    (0, 3): 1.0 / 20.0,
 }
-# Fill remaining weights with arbitrary positive symmetric small values for
-# completeness of the abstract test sequence; the companion gives exact
-# values on the listed subset.
-rho_bw = [1.0e-4] * len(B_N)
-for (p, q), val in rho_pq6.items():
-    rho_bw[INDEX[(p, q)]] = val
-# Re-symmetrize and re-normalize
-for p in range(N + 1):
-    for q in range(N + 1):
-        avg = 0.5 * (rho_bw[INDEX[(p, q)]] + rho_bw[INDEX[(q, p)]])
-        rho_bw[INDEX[(p, q)]] = avg
-        rho_bw[INDEX[(q, p)]] = avg
-rho_bw[INDEX[(0, 0)]] = 1.0  # normalize
 
-R_bw = np.diag(rho_bw)
-# Verify hypotheses
-bw_min = min(rho_bw)
-bw_sym_err = float(np.max(np.abs(swap_matrix @ R_bw - R_bw @ swap_matrix)))
-bw_norm_err = abs(rho_bw[INDEX[(0, 0)]] - 1.0)
 
+def explicit_character_table(matrices: np.ndarray) -> np.ndarray:
+    """Explicit low-irrep SU(3) characters for one matrix or a batch."""
+    matrices = np.asarray(matrices, dtype=complex)
+    tr1 = np.trace(matrices, axis1=-2, axis2=-1)
+    matrices2 = matrices @ matrices
+    tr2 = np.trace(matrices2, axis1=-2, axis2=-1)
+    matrices3 = matrices2 @ matrices
+    tr3 = np.trace(matrices3, axis1=-2, axis2=-1)
+
+    chi20 = (tr1**2 + tr2) / 2.0
+    chi30 = (tr1**3 + 3.0 * tr1 * tr2 + 2.0 * tr3) / 6.0
+    values = {
+        (0, 0): np.ones_like(tr1),
+        (1, 0): tr1,
+        (0, 1): np.conjugate(tr1),
+        (1, 1): tr1 * np.conjugate(tr1) - 1.0,
+        (2, 0): chi20,
+        (0, 2): np.conjugate(chi20),
+        (3, 0): chi30,
+        (0, 3): np.conjugate(chi30),
+    }
+    return np.stack([values[weight] for weight in MC_WEIGHTS], axis=-1)
+
+
+def deterministic_haar_su3(sample_count: int, seed: int) -> np.ndarray:
+    """Ginibre-QR sampler for deterministic Haar-random SU(3) matrices."""
+    rng = np.random.default_rng(seed)
+    samples = np.empty((sample_count, 3, 3), dtype=complex)
+    for sample_index in range(sample_count):
+        ginibre = (
+            rng.normal(size=(3, 3))
+            + 1j * rng.normal(size=(3, 3))
+        )
+        q_matrix, r_matrix = np.linalg.qr(ginibre)
+        diagonal = np.diag(r_matrix)
+        phases = diagonal / np.abs(diagonal)
+        q_matrix = q_matrix @ np.diag(phases)
+        determinant = np.linalg.det(q_matrix)
+        determinant_root = np.exp(np.log(determinant) / 3.0)
+        samples[sample_index] = q_matrix / determinant_root
+    return samples
+
+
+identity_characters = explicit_character_table(np.eye(3, dtype=complex))
+expected_dimensions = np.array([d_su3(*weight) for weight in MC_WEIGHTS], dtype=float)
 check(
-    "abstract numerical instance (Wilson coefficients as positive symmetric data) satisfies the abstract hypotheses",
-    bw_min > 0 and bw_sym_err < 1e-12 and bw_norm_err < 1e-12,
-    detail=f"min rho = {bw_min:.6e}, swap err = {bw_sym_err:.3e}, |rho_(0,0)-1| = {bw_norm_err:.3e}",
+    "explicit low-irrep character formulas reproduce their dimensions at the identity",
+    np.max(np.abs(identity_characters - expected_dimensions)) < 1e-12,
+    detail=f"dimensions={expected_dimensions.astype(int).tolist()}",
 )
 
-# Verify diagonal-action conclusion (T2) numerically:
-# C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) on every basis weight.
-diag_action_ok = True
-for target in B_N:
-    surviving = reduce_convolution(rho_bw, target)
-    expected = rho_bw[INDEX[target]]
-    if abs(surviving - expected) > 1e-15:
-        diag_action_ok = False
+formula_crosscheck_error = 0.0
+for t1, t2 in ((0.37, 0.91), (0.4, 1.4), (1.1, -0.23)):
+    diagonal_matrix = np.diag(
+        np.exp(1j * np.array([t1, t2, -t1 - t2]))
+    )
+    explicit_values = explicit_character_table(diagonal_matrix)
+    for index, weight in enumerate(MC_WEIGHTS):
+        formula_crosscheck_error = max(
+            formula_crosscheck_error,
+            abs(explicit_values[index] - weyl_chi(*weight, t1, t2)),
+        )
 check(
-    "(T2) for the abstract numerical input: C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q) for every (p,q) in B_N "
-    "(algebraic reduction, no Wilson-environment claim)",
-    diag_action_ok,
-    detail="exact eigen-action reduction on the abstract positive symmetric coefficient sequence",
+    "explicit character formulas agree with the independent Weyl formula on hostile torus points",
+    formula_crosscheck_error < 1e-10,
+    detail=f"max formula disagreement={formula_crosscheck_error:.3e}",
+)
+
+MC_SAMPLE_COUNT = 40_000
+haar_samples = deterministic_haar_su3(MC_SAMPLE_COUNT, seed=20260716)
+identity3 = np.eye(3, dtype=complex)
+unitarity_error = float(
+    np.max(
+        np.abs(
+            haar_samples @ np.swapaxes(np.conjugate(haar_samples), 1, 2)
+            - identity3
+        )
+    )
+)
+determinant_error = float(np.max(np.abs(np.linalg.det(haar_samples) - 1.0)))
+check(
+    "deterministic Ginibre-QR samples lie in SU(3)",
+    unitarity_error < 1e-12 and determinant_error < 1e-12,
+    detail=f"max unitary err={unitarity_error:.3e}, max det err={determinant_error:.3e}",
+)
+
+sample_characters = explicit_character_table(haar_samples)
+z_coefficients = np.array(
+    [d_su3(*weight) * MC_RHO[weight] for weight in MC_WEIGHTS],
+    dtype=float,
+)
+test_matrices = (
+    np.diag(np.exp(1j * np.array([0.4, 1.4, -1.8]))),
+    np.diag(np.exp(1j * np.array([0.3, 0.7, -1.0]))),
+    deterministic_haar_su3(1, seed=314159)[0],
+)
+
+mc_records: list[dict[str, np.ndarray]] = []
+max_mc_error = 0.0
+max_mc_sigma = 0.0
+for test_matrix in test_matrices:
+    translated = np.einsum(
+        "ab,nbc->nac",
+        test_matrix,
+        np.swapaxes(np.conjugate(haar_samples), 1, 2),
+    )
+    z_values = explicit_character_table(translated) @ z_coefficients
+    integrands = z_values[:, None] * sample_characters
+    estimates = np.mean(integrands, axis=0)
+    standard_errors = np.sqrt(
+        np.mean(np.abs(integrands - estimates) ** 2, axis=0)
+        / MC_SAMPLE_COUNT
+    )
+    test_characters = explicit_character_table(test_matrix)
+    expected_values = np.array(
+        [
+            MC_RHO[weight] * test_characters[index]
+            for index, weight in enumerate(MC_WEIGHTS)
+        ]
+    )
+    errors = np.abs(estimates - expected_values)
+    max_mc_error = max(max_mc_error, float(np.max(errors)))
+    max_mc_sigma = max(
+        max_mc_sigma,
+        float(np.max(errors / np.maximum(standard_errors, 1e-15))),
+    )
+    mc_records.append(
+        {
+            "matrix": test_matrix,
+            "z_values": z_values,
+            "estimates": estimates,
+            "standard_errors": standard_errors,
+            "expected_values": expected_values,
+        }
+    )
+
+mc_convolution_ok = all(
+    np.all(
+        np.abs(record["estimates"] - record["expected_values"])
+        <= 6.0 * record["standard_errors"] + 5.0e-3
+    )
+    for record in mc_records
+)
+check(
+    "(T2) independent Haar-SU(3) convolution matches rho_mu chi_mu(V)",
+    mc_convolution_ok,
+    detail=(
+        f"{len(test_matrices)} V values x {len(MC_WEIGHTS)} irreps, "
+        f"samples={MC_SAMPLE_COUNT}, max err={max_mc_error:.3e}, "
+        f"max normalized err={max_mc_sigma:.2f} sigma"
+    ),
+)
+
+# Convention-hostile controls use the complex fundamental character at the
+# first test matrix, where chi_(1,0)(V) != chi_(0,1)(V). Replacing W^-1 by W,
+# or conjugating chi_mu(W), sends the result to the dual irrep instead.
+fundamental_index = MC_WEIGHTS.index((1, 0))
+antifundamental_index = MC_WEIGHTS.index((0, 1))
+hostile_record = mc_records[0]
+hostile_matrix = hostile_record["matrix"]
+correct_fundamental = hostile_record["expected_values"][fundamental_index]
+dual_fundamental = (
+    MC_RHO[(0, 1)]
+    * explicit_character_table(hostile_matrix)[antifundamental_index]
+)
+
+wrong_inverse_translated = np.einsum(
+    "ab,nbc->nac",
+    hostile_matrix,
+    haar_samples,
+)
+wrong_inverse_z = explicit_character_table(wrong_inverse_translated) @ z_coefficients
+wrong_inverse_integrand = wrong_inverse_z * sample_characters[:, fundamental_index]
+wrong_inverse_estimate = np.mean(wrong_inverse_integrand)
+wrong_inverse_se = np.sqrt(
+    np.mean(np.abs(wrong_inverse_integrand - wrong_inverse_estimate) ** 2)
+    / MC_SAMPLE_COUNT
+)
+check(
+    "hostile control rejects W in place of W^-1",
+    abs(wrong_inverse_estimate - correct_fundamental) > 8.0 * wrong_inverse_se
+    and abs(wrong_inverse_estimate - dual_fundamental) <= 6.0 * wrong_inverse_se + 5.0e-3,
+    detail=(
+        f"mutant is {abs(wrong_inverse_estimate - correct_fundamental) / wrong_inverse_se:.1f} "
+        "sigma from rho_(1,0) chi_(1,0)(V) and tracks the dual character"
+    ),
+)
+
+wrong_conjugate_integrand = (
+    hostile_record["z_values"]
+    * np.conjugate(sample_characters[:, fundamental_index])
+)
+wrong_conjugate_estimate = np.mean(wrong_conjugate_integrand)
+wrong_conjugate_se = np.sqrt(
+    np.mean(np.abs(wrong_conjugate_integrand - wrong_conjugate_estimate) ** 2)
+    / MC_SAMPLE_COUNT
+)
+check(
+    "hostile control rejects conjugating the target character chi_mu(W)",
+    abs(wrong_conjugate_estimate - correct_fundamental) > 8.0 * wrong_conjugate_se
+    and abs(wrong_conjugate_estimate - dual_fundamental) <= 6.0 * wrong_conjugate_se + 5.0e-3,
+    detail=(
+        f"mutant is {abs(wrong_conjugate_estimate - correct_fundamental) / wrong_conjugate_se:.1f} "
+        "sigma from the claimed fundamental action and tracks the antifundamental"
+    ),
+)
+
+# A lookup-only helper returns rho_target and loses chi_target(V). The second
+# matrix makes that failure large and compares it directly with the independently
+# estimated convolution value.
+lookup_record = mc_records[1]
+lookup_only_mutant = MC_RHO[(1, 0)]
+lookup_estimate = lookup_record["estimates"][fundamental_index]
+lookup_se = lookup_record["standard_errors"][fundamental_index]
+check(
+    "hostile control rejects a convolution helper that merely returns rho_target",
+    abs(lookup_estimate - lookup_only_mutant) > 8.0 * lookup_se,
+    detail=(
+        f"lookup-only value={lookup_only_mutant:.6f}, Haar estimate={lookup_estimate:.6f}, "
+        f"separation={abs(lookup_estimate - lookup_only_mutant) / lookup_se:.1f} sigma"
+    ),
 )
 
 

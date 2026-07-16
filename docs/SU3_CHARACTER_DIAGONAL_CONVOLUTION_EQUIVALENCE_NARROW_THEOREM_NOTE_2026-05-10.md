@@ -126,36 +126,82 @@ inverse to that of `W`, and the contragredient irrep of `(p,q)` is
 `(q,p)`); it lets us rewrite the integrand in inverse-element form when
 needed for `(9)` below.
 
-`(T2)` Compute `(C_{Z/Z_(0,0)} chi_(p',q'))(V)` using `(3)`, `(4)`, and
-the substitution `W -> V U^{-1}` so that `V W^{-1} = U`:
+`(T2)` Write `lambda = (p,q)`, `mu = (p',q')`, and let
+`D^lambda`, `D^mu` be unitary irreducible representation matrices.
+By `(3)`, `(4)`, and linearity,
 
 ```text
-(C_{Z/Z_(0,0)} chi_(p',q'))(V)
-   =  integral_{SU(3)} Z(V W^{-1}) chi_(p',q')(W) dW
-   =  sum_(p,q in B_N) d_(p,q) rho_(p,q)
-        integral chi_(p,q)(V W^{-1}) chi_(p',q')(W) dW.                    (8)
+(C_Z chi_mu)(V)
+   = integral_{SU(3)} Z(V W^{-1}) chi_mu(W) dW
+   = sum_(lambda in B_N) d_lambda rho_lambda
+       integral chi_lambda(V W^{-1}) chi_mu(W) dW.                         (8)
 ```
 
-Use the character multiplication identity for the convolution algebra of
-irreducible characters on a compact group: for any `(p,q)` and any
-`V in SU(3)`,
+The inverse and conjugation convention is:
 
 ```text
-integral chi_(p,q)(V W^{-1}) chi_(p',q')(W) dW
-   =  delta_{(p,q),(p',q')} chi_(p',q')(V) / d_(p,q).                      (9)
+D^lambda(V W^{-1})
+   = D^lambda(V) D^lambda(W)^{-1}
+   = D^lambda(V) D^lambda(W)^dagger,
+
+chi_lambda(V W^{-1})
+   = sum_(a,b) D^lambda(V)_(a b) conj(D^lambda(W)_(a b)),
+
+chi_mu(W) = sum_c D^mu(W)_(c c).                                          (9)
 ```
 
-This is a direct consequence of `(7)` (sum over matrix indices after
-inserting matrix-element decomposition; the only surviving term is the
-diagonal one). Substituting `(9)` into `(8)` gives
+Here `W^{-1}` creates the conjugated matrix element in the first character,
+while the target character `chi_mu(W)` is not conjugated. Reordering `(7)`
+gives the precise matrix-element pairing
 
 ```text
-(C_{Z/Z_(0,0)} chi_(p',q'))(V)
-   =  d_(p',q') rho_(p',q') * chi_(p',q')(V) / d_(p',q')
-   =  rho_(p',q') chi_(p',q')(V),                                          (10)
+integral conj(D^lambda(W)_(a b)) D^mu(W)_(c d) dW
+   = delta_(lambda,mu) delta_(a,c) delta_(b,d) / d_mu.                     (10)
 ```
 
-which is exactly `R chi_(p',q')` evaluated at `V`. Hence
+Set `d = c`, insert `(9)`, and contract every index:
+
+```text
+I_(lambda,mu)(V)
+  := integral chi_lambda(V W^{-1}) chi_mu(W) dW
+
+   = sum_(a,b,c) D^lambda(V)_(a b)
+       integral conj(D^lambda(W)_(a b)) D^mu(W)_(c c) dW
+
+   = delta_(lambda,mu) / d_mu
+       sum_(a,b,c) D^lambda(V)_(a b) delta_(a,c) delta_(b,c)
+
+   = delta_(lambda,mu) / d_mu sum_c D^lambda(V)_(c c)
+
+   = delta_(lambda,mu) chi_mu(V) / d_mu.                                  (11)
+```
+
+The last line uses `lambda = mu` only on the surviving Schur-delta branch.
+Thus the trace and the factor `1/d_mu` are outputs of the matrix-index
+contraction, not assumptions from a character-convolution helper.
+
+The inverse/conjugation choices are essential. If `W^{-1}` is replaced by
+`W`, the Haar substitution `U = W^{-1}` changes the target to
+`chi_mu(U^{-1}) = chi_(mu^*)(U)`, where `mu^* = (q',p')`. Likewise,
+replacing `chi_mu(W)` by its complex conjugate directly inserts
+`chi_(mu^*)(W)`. Either mutation therefore produces the dual-irrep action
+`rho_(mu^*) chi_(mu^*)(V)`, not `rho_mu chi_mu(V)` in general. The runner
+tests both mutations on the complex fundamental character at a `V` for
+which `chi_(1,0)(V) != chi_(0,1)(V)`.
+
+Substituting `(11)` into the full finite sum `(8)` gives the dimension
+cancellation explicitly:
+
+```text
+(C_Z chi_mu)(V)
+   = sum_(lambda in B_N)
+       d_lambda rho_lambda delta_(lambda,mu) chi_mu(V) / d_mu
+   = d_mu rho_mu chi_mu(V) / d_mu
+   = rho_mu chi_mu(V).                                                     (12)
+```
+
+Because `Z_(0,0) = 1`, this is also `C_{Z/Z_(0,0)} chi_mu`. It is exactly
+`R chi_mu` evaluated at `V`. Hence
 `C_{Z/Z_(0,0)} = R` on the finite truncation `V_N`.
 
 `(T3)` Because `{chi_(p,q) : (p,q) in B_N}` is a linearly independent
@@ -165,7 +211,8 @@ basis determines its diagonal entries uniquely. So
 `R^(1) = R^(2)` implies `rho^(1)_(p,q) = rho^(2)_(p,q)` for every
 `(p, q) in B_N`. The converse is immediate from `(2)`.
 
-`(T4)` Each `rho_(p,q) >= 0` by hypothesis, so `R` has non-negative
+`(T4)` This conclusion is logically separate from the convolution
+contraction above. Each `rho_(p,q) >= 0` by hypothesis, so `R` has non-negative
 eigenvalues. In the Schur-orthonormal character basis `{chi_(p,q)}`,
 `R` is diagonal with real entries, hence self-adjoint.
 Conjugation symmetry
@@ -236,10 +283,12 @@ is the separate target addressed by the bounded companion
 and is **outside the scope of this narrow theorem**.
 
 The bounded companion supplies explicit normalized single-link Wilson
-boundary coefficients; this narrow theorem supplies the algebraic
-bridge that turns those coefficients into the diagonal operator.
-Together they tighten the parent equation `R_beta^env = C_(Z_beta^env)`
-to two independently audit-able pieces:
+boundary coefficients, but this narrow theorem does not consume them.
+It proves only the abstract algebraic implication after a coefficient
+sequence is supplied. Any use of both notes in the parent chain still
+requires a separate derivation identifying those coefficients and this
+finite character-sector operator with the physical environment
+compression. The two independently audit-able pieces are:
 
 - the **abstract algebraic bridge** (this narrow theorem, finite-dim
   `SU(3)` representation theory),
@@ -276,11 +325,14 @@ verifies, on the finite `N = 4` truncation (`B_N = {(p,q): 0 <= p,q <= 4}`):
 1. Schur orthogonality `(5)` to machine precision via Weyl integration
    on the SU(3) Cartan torus: `<chi_(p,q), chi_(p',q')>_Haar
    = delta_((p,q),(p',q'))` for all sampled pairs in `B_4`.
-2. Symbolic Conclusion `(T2)`: for an abstract positive symmetric
-   rational coefficient sequence and a separately abstract Hermitian
-   diagonal `R`, the convolution operator `C_{Z/Z_(0,0)}` and the
-   diagonal operator `R` agree on each basis character by the formal
-   Schur-orthogonal reduction `(9)`.
+2. Exact matrix-element Conclusion `(T2)`: the runner expands
+   `chi_lambda(V W^{-1}) chi_mu(W)` into the generic `(a,b,c)` matrix-index
+   sum `(9)` and mechanically contracts `(10)`. It checks an inequivalent
+   fundamental/antifundamental pair, every unequal pair in `B_4`, and every
+   same-irrep pair in `B_4`, obtaining exactly
+   `delta_(lambda,mu) Tr D^mu(V)/d_mu`. Before applying any `rho`, it
+   verifies that multiplication by `d_lambda` gives the exact `25 x 25`
+   identity, then checks the full finite sum on every target in `B_4`.
 3. Conclusion `(T3)` uniqueness: two distinct coefficient sequences
    (one positive symmetric, one with one entry perturbed) give two
    distinct diagonal operators with at least one different eigenvalue.
@@ -297,15 +349,17 @@ verifies, on the finite `N = 4` truncation (`B_N = {(p,q): 0 <= p,q <= 4}`):
 6. Concrete instance with `(rho_(p,q)) = (1, 0, 0, ..., 0)` (trivial
    sequence) and confirmation that `C_{Z/Z_(0,0)}` collapses to the
    trivial projection.
-7. Numerical consistency check: when the bounded companion's computed
-   single-link Wilson coefficients `rho_(p,q)(6)` (cited as abstract
-   positive symmetric numerical data **without** identification with
-   any physical Wilson environment) are inserted, `C_{Z/Z_(0,0)}`
-   reproduces the corresponding diagonal action to machine precision.
-   This is a runner-level numerical sanity check, **not** a
-   derivation of the parent gate; the physical interpretation of
-   those coefficients remains separately gated.
+7. Independent numerical support: deterministic Ginibre-QR
+   Haar-random `SU(3)` matrices and explicit trace formulas for the trivial,
+   fundamental, antifundamental, adjoint, symmetric square, conjugate
+   symmetric square, symmetric cube, and conjugate symmetric cube
+   characters reproduce `C_Z chi_mu(V) = rho_mu chi_mu(V)` for three
+   nontrivial `V` values and an abstract rational symmetric coefficient
+   sequence. This Monte Carlo calculation is support, not the exact proof.
+8. Hostile controls that reject a missing `1/d_mu`, `W` in place of
+   `W^{-1}`, conjugating the target character, and a helper that merely
+   returns `rho_mu` without the factor `chi_mu(V)`.
 
 Expected summary:
 
-- `PASS=13 FAIL=0`
+- `PASS=24 FAIL=0`

@@ -1,7 +1,7 @@
-"""SU(3) Wigner intertwiner engine — Block 1 of the cube-closure campaign.
+"""SU(3) Wigner intertwiner engine for the adjoint tensor square.
 
-Block 1 deliverable: explicit Clebsch-Gordan decomposition of the SU(3)
-adjoint tensor product
+Deliverable: explicit Clebsch-Gordan decomposition of the SU(3) adjoint
+tensor product
 
     (1,1) ⊗ (1,1) = (0,0) ⊕ 2·(1,1) ⊕ (3,0) ⊕ (0,3) ⊕ (2,2)
                   = 1   ⊕ 8   ⊕ 8    ⊕ 10    ⊕ 10̄  ⊕ 27
@@ -10,8 +10,9 @@ adjoint tensor product
 via quadratic-Casimir + exchange + cubic-Casimir diagonalization on
 V_(1,1) ⊗ V_(1,1) = C^8 ⊗ C^8.
 
-This is Block 1 of the multi-block plan to build the full SU(3) Wigner-
-Racah machinery needed for the L_s=3 cube tensor-network contraction.
+This finite-dimensional construction supplies representation-theory
+infrastructure used by later SU(3) tensor-network notes; those downstream
+contractions are outside this runner's claim.
 
 Algorithm:
   1. Construct Gell-Mann basis {λ_a, a=1..8} of 3x3 traceless Hermitian
@@ -41,14 +42,13 @@ Validation:
       fundamental and antifundamental matrices.
   V7: D(g)⊗D(g) commutes with C_3 and every channel projector for multiple
       deterministic independently seeded SU(3) elements.
-  V8: hostile controls reject swapped 10/10bar labels and a C_2+E-only
-      rank-20 decuplet-pair projector.
+  V8: hostile controls reject swapped 10/10bar labels, a global C_3 sign
+      flip, a wrong conjugation convention, a C_2+E-only rank-20
+      decuplet-pair projector, and standalone use of (I±C_3/9)/2.
 
-Cluster note: this is SU(3) representation theory, NOT in the
-gauge_vacuum_plaquette family. It is a new infrastructure deliverable
-serving downstream lattice gauge work.
-
-Forbidden imports: none (pure SU(3) rep theory).
+Mathematical inputs: standard SU(3) representation theory, including the
+Littlewood-Richardson decomposition, canonical Casimir formulas, and Casimir
+invariance. There are no measured, fitted, observational, or lattice inputs.
 
 Run:
     python3 scripts/frontier_su3_wigner_intertwiner_engine.py
@@ -224,6 +224,37 @@ def tensor_product_cubic_casimir(T: List[np.ndarray], d: np.ndarray
                 if d[a, b, c] != 0:
                     C = C + d[a, b, c] * T_tot[a] @ T_tot[b] @ T_tot[c]
     return C
+
+
+def tensor_product_cubic_casimir_coproduct_expansion(
+    T: List[np.ndarray],
+    d: np.ndarray,
+) -> np.ndarray:
+    """Independently expand the cubic-Casimir coproduct on V⊗V.
+
+    For Δ(T_a)=T_a⊗I+I⊗T_a and symmetric d_abc,
+
+      Δ(C3) = C3⊗I + I⊗C3
+             + 3 d_abc (T_a T_b⊗T_c + T_a⊗T_b T_c).
+
+    This implementation does not build or cube the total generators.  It
+    anchors the orientation of ``tensor_product_cubic_casimir`` to the same
+    fundamental convention checked below, so a global C3 sign flip cannot
+    merely relabel both projector constructions together.
+    """
+    dim = T[0].shape[0]
+    ident = np.eye(dim, dtype=complex)
+    single_c3 = cubic_casimir(T, d)
+    expanded = np.kron(single_c3, ident) + np.kron(ident, single_c3)
+    for a in range(len(T)):
+        for b in range(len(T)):
+            for c in range(len(T)):
+                if d[a, b, c] != 0:
+                    expanded = expanded + 3.0 * d[a, b, c] * (
+                        np.kron(T[a] @ T[b], T[c])
+                        + np.kron(T[a], T[b] @ T[c])
+                    )
+    return expanded
 
 
 def tensor_product_casimir(T: List[np.ndarray]) -> np.ndarray:
@@ -441,7 +472,7 @@ def expected_su3_casimirs() -> Dict[Tuple[int, int], float]:
 
 def driver() -> int:
     print("=" * 78)
-    print("SU(3) Wigner Intertwiner Engine — Block 1: (1,1) ⊗ (1,1) CG")
+    print("SU(3) Wigner Intertwiner Engine: (1,1) ⊗ (1,1) CG")
     print("=" * 78)
     print()
 
@@ -523,10 +554,47 @@ def driver() -> int:
     print("  Independent cubic-Casimir sign anchor:")
     fundamental = [matrix / 2.0 for matrix in lam]
     antifundamental = [-matrix.conj() for matrix in fundamental]
+    wrong_antifundamental = [matrix.conj() for matrix in fundamental]
     c2_fund = sum(matrix @ matrix for matrix in fundamental)
     c2_antifund = sum(matrix @ matrix for matrix in antifundamental)
     c3_fund = cubic_casimir(fundamental, d)
     c3_antifund = cubic_casimir(antifundamental, d)
+    c3_wrong_antifund = cubic_casimir(wrong_antifundamental, d)
+    antifund_lie_error = 0.0
+    wrong_antifund_lie_error = 0.0
+    for a in range(8):
+        for b in range(8):
+            antifund_expected = sum(
+                1j * f[a, b, c] * antifundamental[c] for c in range(8)
+            )
+            wrong_expected = sum(
+                1j * f[a, b, c] * wrong_antifundamental[c] for c in range(8)
+            )
+            antifund_lie_error = max(
+                antifund_lie_error,
+                float(
+                    np.max(
+                        np.abs(
+                            antifundamental[a] @ antifundamental[b]
+                            - antifundamental[b] @ antifundamental[a]
+                            - antifund_expected
+                        )
+                    )
+                ),
+            )
+            wrong_antifund_lie_error = max(
+                wrong_antifund_lie_error,
+                float(
+                    np.max(
+                        np.abs(
+                            wrong_antifundamental[a] @ wrong_antifundamental[b]
+                            - wrong_antifundamental[b] @ wrong_antifundamental[a]
+                            - wrong_expected
+                        )
+                    )
+                ),
+            )
+    wrong_antifund_c3_scalar = float(np.real(np.trace(c3_wrong_antifund)) / 3.0)
     c2_10, c3_10 = canonical_su3_casimirs(3, 0)
     c2_10bar, c3_10bar = canonical_su3_casimirs(0, 3)
     formula_err = max(
@@ -534,6 +602,7 @@ def driver() -> int:
         float(np.max(np.abs(c2_antifund - (4.0 / 3.0) * np.eye(3)))),
         float(np.max(np.abs(c3_fund - (10.0 / 9.0) * np.eye(3)))),
         float(np.max(np.abs(c3_antifund + (10.0 / 9.0) * np.eye(3)))),
+        antifund_lie_error,
     )
     print("    Formula: C3(p,q)=(p-q)(2p+q+3)(p+2q+3)/18")
     print("    direct fundamental matrices:     C3(1,0)  = +10/9")
@@ -555,6 +624,7 @@ def driver() -> int:
     C_total = tensor_product_casimir(T)
     E = exchange_operator(8)
     C3_total = tensor_product_cubic_casimir(T, d)
+    C3_coproduct = tensor_product_cubic_casimir_coproduct_expansion(T, d)
     ident64 = np.eye(64, dtype=complex)
     hermitian_err = max(
         float(np.max(np.abs(operator - operator.conj().T)))
@@ -566,14 +636,17 @@ def driver() -> int:
         float(np.max(np.abs(C_total @ C3_total - C3_total @ C_total))),
         float(np.max(np.abs(E @ C3_total - C3_total @ E))),
     )
+    c3_coproduct_err = float(np.max(np.abs(C3_total - C3_coproduct)))
     print(f"  max Hermiticity error:             {hermitian_err:.3e}")
     print(f"  exchange involution ||E²-I||_max:  {e_err:.3e}")
     print(f"  max pairwise commutator error:      {operator_comm_err:.3e}")
+    print(f"  cubic coproduct expansion error:    {c3_coproduct_err:.3e}")
     record(
-        "C2, exchange, and C3 are numerically Hermitian commuting operators with E²=I.",
+        "C2, exchange, and C3 are numerically Hermitian commuting operators; C3 also matches its independent coproduct expansion.",
         hermitian_err < OPERATOR_TOL
         and e_err < OPERATOR_TOL
-        and operator_comm_err < OPERATOR_TOL,
+        and operator_comm_err < OPERATOR_TOL
+        and c3_coproduct_err < OPERATOR_TOL,
     )
     print()
 
@@ -585,7 +658,10 @@ def driver() -> int:
     print(f"  α = sqrt(2) = {alpha:.6f}, β = sqrt(3)/7 = {beta:.6f}")
     overlap = eigvecs.conj().T @ eigvecs
     overlap_err = float(np.max(np.abs(overlap - ident64)))
-    actual_pattern = sorted(spec.dimension for spec in CHANNEL_SPECS)
+    actual_pattern = sorted(
+        int(np.linalg.matrix_rank(projector, tol=EIGENVALUE_TOL))
+        for projector in projectors.values()
+    )
     expected_pattern = [1, 8, 8, 10, 10, 27]
     print(f"  six matched dimensions: {actual_pattern}; total={sum(actual_pattern)}")
     print(f"  eigensolver orthonormality ||V†V-I||_max: {overlap_err:.3e}")
@@ -699,6 +775,20 @@ def driver() -> int:
     print("--- Section G: hostile controls ---")
     swapped_10_error = abs(observed_c3["10"] - (-9.0))
     swapped_10bar_error = abs(observed_c3["10bar"] - (+9.0))
+    flipped_total_c3_error = float(
+        np.max(np.abs((-C3_total) - C3_coproduct))
+    )
+    wrong_antifund_c3_error = abs(wrong_antifund_c3_scalar - (-10.0 / 9.0))
+    global_c3_plus = (ident64 + C3_total / 9.0) / 2.0
+    global_c3_plus_rank = int(
+        np.linalg.matrix_rank(global_c3_plus, tol=EIGENVALUE_TOL)
+    )
+    global_c3_plus_idem_error = float(
+        np.max(np.abs(global_c3_plus @ global_c3_plus - global_c3_plus))
+    )
+    restricted_c3_plus_rank = int(
+        np.linalg.matrix_rank(polynomial_projectors["10"], tol=EIGENVALUE_TOL)
+    )
     coarse_eigvals, coarse_eigvecs, _ = cg_decomposition(C_total, E, None)
     coarse_target = 6.0 - alpha
     coarse_indices = np.where(np.abs(coarse_eigvals - coarse_target) < EIGENVALUE_TOL)[0]
@@ -723,10 +813,33 @@ def driver() -> int:
         f"rank={coarse_rank}, C3 range=[{coarse_c3_min:.8f},{coarse_c3_max:.8f}], "
         f"total clusters={coarse_unique_clusters}"
     )
+    print(
+        "  flipped total-C3 residual against coproduct expansion: "
+        f"{flipped_total_c3_error:.8f}"
+    )
+    print(
+        "  wrong antifundamental +t*: "
+        f"C3={wrong_antifund_c3_scalar:+.8f}, "
+        f"residual from -10/9={wrong_antifund_c3_error:.8f}, "
+        f"Lie residual={wrong_antifund_lie_error:.8f}"
+    )
+    print(
+        "  standalone (I+C3/9)/2: "
+        f"rank={global_c3_plus_rank}, "
+        f"idempotence residual={global_c3_plus_idem_error:.8f}; "
+        "after C2=6, E=-1 restriction: "
+        f"rank={restricted_c3_plus_rank}"
+    )
     record(
-        "hostile controls reject the old swapped labels and reject C2+E as a six-channel identifier.",
+        "hostile controls reject the old swapped labels, a global C3 sign flip, the wrong antifundamental conjugation, C2+E-only channel splitting, and standalone use of (I+C3/9)/2.",
         swapped_10_error > 17.0
         and swapped_10bar_error > 17.0
+        and flipped_total_c3_error > 1.0
+        and wrong_antifund_c3_error > 2.0
+        and wrong_antifund_lie_error > 0.9
+        and global_c3_plus_rank == 54
+        and global_c3_plus_idem_error > 0.2
+        and restricted_c3_plus_rank == 10
         and coarse_rank == 20
         and abs(coarse_c3_min + 9.0) < OPERATOR_TOL
         and abs(coarse_c3_max - 9.0) < OPERATOR_TOL
@@ -795,7 +908,7 @@ def driver() -> int:
     print("  Correct cubic convention: 10=(3,0) has C3=+9 and H≈6.8127;")
     print("                            10bar=(0,3) has C3=-9 and H≈2.3589.")
     print()
-    print("Block 1 deliverable: six executable spectral projectors plus a")
+    print("Deliverable: six executable spectral projectors plus a")
     print("floating-point orthonormal CG basis. Exact block invariance is supplied")
     print("by the analytic commuting-operator identities, not by numerical precision.")
     return 0 if fail_count == 0 else 1

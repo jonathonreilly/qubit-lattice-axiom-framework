@@ -1,3 +1,12 @@
+HISTORICAL PRE-CORRECTION OUTPUT — NOT CURRENT BORN EVIDENCE
+======================================================================
+This 540-configuration log used a defective seven-term statistic that omitted
+-P(empty), and many jitter=0.30 rows silently skipped seed 38. The final
+"RETAINED POCKET" conclusion below is preserved only as historical output and
+is withdrawn. See docs/STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md for the
+corrected bounded 32 x 6 result.
+======================================================================
+
 ============================================================================================================
 STRUCTURED MIRROR BORNSAFE SCAN
   linear propagator on the structured mirror growth family
@@ -548,6 +557,7 @@ STRUCTURED MIRROR BORNSAFE SCAN
     40    20   4.5  g=1.50  j=0.15    0.3120   0.8531±0.02    0.5963  +5.2218±0.460    7.12e-02   +0.00e+00    6
     40    20   4.5  g=1.50  j=0.30    0.2012   0.9338±0.01    0.6269  +6.7297±0.294    1.05e-01   +0.00e+00    5
 
-RETAINED POCKET: none found in this scan.
-  Best read is negative: structured mirror growth does not retain a
-  Born-safe linear pocket under the scanned parameters.
+HISTORICAL PRE-CORRECTION CONCLUSION (WITHDRAWN):
+  RETAINED POCKET: none found in this scan.
+  The former negative read used the defective seven-term statistic and is not
+  current corrected Born evidence.

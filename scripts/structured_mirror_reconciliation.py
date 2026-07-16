@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
-"""Reconcile Born claims on the structured-mirror growth family.
+"""Historical pre-correction structured-mirror harness comparison.
 
 This script compares the retained structured-growth geometry under several
-Born harness choices:
+legacy harness choices:
   - canonical joint-validator style: threshold slits + physical mass field
   - threshold slits + flat field
   - audit-style top-K barrier selection + flat field
   - audit-style top-K barrier selection + physical mass field
 
-The point is to separate geometry effects from slit-selection and field-setup
-effects. The structured geometry itself is retained; the question is whether
-any retained harness is genuinely Born-clean.
+Every displayed ratio is the old detectorwise seven-term aggregation. It omits
+``-P(empty)`` and sums ``abs(term)`` separately at each detector, so it is not
+the corrected detector-probability Sorkin statistic and cannot establish a
+current Born-clean or not-Born-clean conclusion. The script remains executable
+only to preserve the historical harness-sensitivity comparison.
 """
 
 from __future__ import annotations
@@ -90,7 +92,9 @@ def mean_se(vals):
     return mean, math.sqrt(var / len(vals))
 
 
-def sorkin_ratio(positions, adj, src, det_list, barrier_nodes, slits, field, k):
+def legacy_detectorwise_seven_term_ratio(
+    positions, adj, src, det_list, barrier_nodes, slits, field, k
+):
     all_slits = set(slits)
     other = set(barrier_nodes) - all_slits
     probs = {}
@@ -154,7 +158,7 @@ def build_graph(n_layers, npl_half, d_growth, connect_radius, layer_jitter, seed
     )
 
 
-def canonical_born(positions, adj, n_layers, k):
+def canonical_legacy_ratio(positions, adj, n_layers, k):
     by_layer = defaultdict(list)
     for idx, pos in enumerate(positions):
         by_layer[round(pos[0])].append(idx)
@@ -183,10 +187,14 @@ def canonical_born(positions, adj, n_layers, k):
     mass = [i for i, _ in ranked[: max(2, len(ranked) // 5)]]
     field = compute_field(positions, mass, 0.5)
     det = list(by_layer[layers[-1]])
-    return sorkin_ratio(positions, adj, src, det, barrier, slits, field, k)
+    return legacy_detectorwise_seven_term_ratio(
+        positions, adj, src, det, barrier, slits, field, k
+    )
 
 
-def audit_style_born(positions, adj, k, top_k=6, use_mass_field=False):
+def audit_style_legacy_ratios(
+    positions, adj, k, top_k=6, use_mass_field=False
+):
     by_layer = defaultdict(list)
     for idx, pos in enumerate(positions):
         by_layer[round(pos[0])].append(idx)
@@ -222,7 +230,11 @@ def audit_style_born(positions, adj, k, top_k=6, use_mass_field=False):
 
     ratios = []
     for trip in combinations(slits, 3):
-        ratios.append(sorkin_ratio(positions, adj, src, det, barrier, list(trip), field, k))
+        ratios.append(
+            legacy_detectorwise_seven_term_ratio(
+                positions, adj, src, det, barrier, list(trip), field, k
+            )
+        )
     ratios = [r for r in ratios if not math.isnan(r)]
     if not ratios:
         return math.nan, math.nan, math.nan
@@ -243,12 +255,19 @@ def main():
 
     seeds = [s * 7 + 3 for s in range(args.n_seeds)]
     print("=" * 108)
-    print("STRUCTURED MIRROR BORN RECONCILIATION")
-    print("  structured-growth geometry under canonical joint validator vs alternate Born harnesses")
+    print("HISTORICAL STRUCTURED MIRROR LEGACY-SEVEN-TERM COMPARISON")
+    print(
+        "  pre-correction detectorwise aggregation; omits -P(empty); "
+        "not current Born evidence"
+    )
     print(f"  npl_half={args.npl_half}, d_growth={args.d_growth}, r={args.connect_radius:g}, seeds={args.n_seeds}, k={args.k:g}")
     print("=" * 108)
     print()
-    print(f"{'N':>4s}  {'canonical(Born)':>18s}  {'flat-threshold(Born)':>21s}  {'audit-topk-flat':>23s}  {'audit-topk-mass':>23s}")
+    print(
+        f"{'N':>4s}  {'canonical(legacy7)':>18s}  "
+        f"{'flat-threshold(legacy7)':>23s}  "
+        f"{'audit-topk-flat':>23s}  {'audit-topk-mass':>23s}"
+    )
     print("-" * 108)
 
     for nl in args.n_layers:
@@ -279,16 +298,33 @@ def main():
             slits = pick_threshold_slits(positions, barrier)
             if slits:
                 flat_field = [0.0] * len(positions)
-                canon_vals.append(canonical_born(positions, adj, nl, args.k))
-                flat_vals.append(sorkin_ratio(positions, adj, src, det, barrier, slits, flat_field, args.k))
+                canon_vals.append(
+                    canonical_legacy_ratio(positions, adj, nl, args.k)
+                )
+                flat_vals.append(
+                    legacy_detectorwise_seven_term_ratio(
+                        positions,
+                        adj,
+                        src,
+                        det,
+                        barrier,
+                        slits,
+                        flat_field,
+                        args.k,
+                    )
+                )
 
-            mn, md, mx = audit_style_born(positions, adj, args.k, top_k=6, use_mass_field=False)
+            mn, md, mx = audit_style_legacy_ratios(
+                positions, adj, args.k, top_k=6, use_mass_field=False
+            )
             if not math.isnan(mn):
                 audit_flat_min.append(mn)
                 audit_flat_med.append(md)
                 audit_flat_max.append(mx)
 
-            mn, md, mx = audit_style_born(positions, adj, args.k, top_k=6, use_mass_field=True)
+            mn, md, mx = audit_style_legacy_ratios(
+                positions, adj, args.k, top_k=6, use_mass_field=True
+            )
             if not math.isnan(mn):
                 audit_mass_min.append(mn)
                 audit_mass_med.append(md)
@@ -307,12 +343,19 @@ def main():
         )
 
     print()
-    print("Interpretation:")
+    print("Historical interpretation only:")
     print("  - canonical = structured-growth geometry with the joint-validator slit/mass harness")
     print("  - flat-threshold = same slits, but no mass field")
     print("  - audit-topk-flat = slit-selection harness used by the Born audit style")
     print("  - audit-topk-mass = same top-k slit selection, but with the physical mass field")
-    print("  - If canonical stays O(1e-1) while audit-topk can approach O(1), the discrepancy is harness-level, not a geometry bug.")
+    print(
+        "  - Variation among these values records legacy harness sensitivity; "
+        "it does not determine"
+    )
+    print(
+        "    the corrected eight-term Born result. See "
+        "docs/STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md."
+    )
 
 
 if __name__ == "__main__":

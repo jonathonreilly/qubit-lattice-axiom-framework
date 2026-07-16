@@ -36,7 +36,9 @@ from scripts.structured_mirror_bornsafe_scan import measure_config, sorkin_born
 AUDIT_TIMEOUT_SEC = 180
 BORN_SAFETY_THRESHOLD = 1e-14
 CONTROL_ABS_TOL = 5e-14
-SEEDS = [s * 7 + 3 for s in range(6)]
+EXPECTED_SEEDS = (3, 10, 17, 24, 31, 38)
+SEEDS = list(EXPECTED_SEEDS)
+EXPECTED_CONFIG_COUNT = 32
 K_VALUE = 5.0
 SLIT_GAP = 2.0
 
@@ -77,6 +79,14 @@ SLICED_CONFIGS: list[tuple[int, int, float, float, float]] = [
     (25, 20, 4.5, 1.5, 0.30),
     (40, 8, 2.5, 1.0, 0.15),
 ]
+
+EXPECTED_APERTURE_FALLBACKS = {
+    ((25, 8, 2.5, 1.25, 0.30), 38),
+    ((40, 12, 3.0, 1.25, 0.30), 38),
+    ((40, 20, 4.5, 1.25, 0.30), 38),
+    ((30, 16, 3.5, 1.25, 0.30), 38),
+    ((25, 20, 4.5, 1.50, 0.30), 38),
+}
 
 
 def mean(values: list[float]) -> float:
@@ -334,14 +344,124 @@ def run_hostile_controls() -> bool:
     return all(checks)
 
 
+def report_aperture_fallbacks(
+    rows: list[tuple[tuple[int, int, float, float, float], dict]],
+) -> bool:
+    """Disclose and gate the finite-card aperture fallback inventory."""
+    fallback_samples = [
+        (config, sample)
+        for config, result in rows
+        for sample in result["samples"]
+        if sample["aperture_fallback_used"]
+    ]
+    actual = {(config, sample["seed"]) for config, sample in fallback_samples}
+    no_valid_choice_changed = all(
+        sample["aperture_original_preserved"]
+        for _, result in rows
+        for sample in result["samples"]
+        if not sample["aperture_fallback_used"]
+    )
+    fallback_semantics_ok = all(
+        sample["aperture_original_counts"][2] == 0
+        and sample["aperture_final_counts"][2] == 2
+        and sample["aperture_fallback_reasons"]
+        == ("middle-empty-nearest-sign-pair",)
+        and sample["aperture_graph_unchanged"]
+        and len(sample["aperture_y_offsets"][2]) == 2
+        and sample["aperture_y_offsets"][2][0]
+        * sample["aperture_y_offsets"][2][1]
+        < 0.0
+        for _, sample in fallback_samples
+    )
+
+    deterministic = True
+    for config, sample in fallback_samples:
+        n_layers, npl_half, connect_radius, grid_spacing, layer_jitter = config
+        repeated = measure_config(
+            n_layers=n_layers,
+            npl_half=npl_half,
+            connect_radius=connect_radius,
+            grid_spacing=grid_spacing,
+            layer_jitter=layer_jitter,
+            seed=sample["seed"],
+            k=K_VALUE,
+            slit_gap=SLIT_GAP,
+            strict=True,
+        )
+        deterministic = deterministic and repeated == {
+            key: value for key, value in sample.items() if key != "seed"
+        }
+
+    print("APERTURE FALLBACK DISCLOSURE")
+    print(
+        "  rule: preserve every originally valid upper/lower/middle choice; "
+        "only an empty middle"
+    )
+    print(
+        "        selects the deterministic nearest +y/-y pair, removes that "
+        "pair from the"
+    )
+    print(
+        "        outer apertures, and changes no node, position, or graph edge."
+    )
+    for config, sample in fallback_samples:
+        middle_offsets = sample["aperture_y_offsets"][2]
+        print(
+            f"  {fmt_config(config)}, seed={sample['seed']}: "
+            f"original counts={sample['aperture_original_counts']}, "
+            f"final counts={sample['aperture_final_counts']}, "
+            f"middle y-center=({middle_offsets[0]:+.6f}, "
+            f"{middle_offsets[1]:+.6f})"
+        )
+    checks = [
+        report_control(
+            "fallback inventory is exactly the registered five rows",
+            actual == EXPECTED_APERTURE_FALLBACKS,
+            f"actual={len(actual)}, expected={len(EXPECTED_APERTURE_FALLBACKS)}",
+        ),
+        report_control(
+            "every originally valid aperture choice is preserved",
+            no_valid_choice_changed,
+            "non-fallback selections equal the original threshold selections",
+        ),
+        report_control(
+            "fallback remains disjoint, sign-ordered, and graph-preserving",
+            fallback_semantics_ok,
+            "middle uses one node per sign; helper hard-fails overlap/sign drift",
+        ),
+        report_control(
+            "fallback selection is deterministic",
+            deterministic,
+            "all five fallback measurements reproduce exactly",
+        ),
+    ]
+    print()
+    return all(checks)
+
+
 def main() -> int:
+    if (
+        tuple(SEEDS) != EXPECTED_SEEDS
+        or len(set(SEEDS)) != len(EXPECTED_SEEDS)
+        or len(SLICED_CONFIGS) != EXPECTED_CONFIG_COUNT
+        or len(set(SLICED_CONFIGS)) != EXPECTED_CONFIG_COUNT
+    ):
+        print(
+            "FAIL: registered-card cardinality drifted from 32 unique "
+            "configurations x 6 canonical seeds."
+        )
+        return 1
+
     controls_ok = run_hostile_controls()
 
     print("=" * 116)
     print("STRUCTURED MIRROR CORRECTED EIGHT-TERM SLICED RUNNER")
     print("Source note: docs/STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md")
     print(f"Corrected numerical threshold: |I3|/P <= {BORN_SAFETY_THRESHOLD:.0e}")
-    print(f"Seeds per configuration: {len(SEEDS)}; slice size: {len(SLICED_CONFIGS)}")
+    print(
+        f"Seeds per configuration: {len(SEEDS)}; "
+        f"slice size: {len(SLICED_CONFIGS)}"
+    )
     print("Geometry: original structured mirror, including two-layer-back bypass edges")
     print("=" * 116)
     print()
@@ -383,6 +503,7 @@ def main() -> int:
     if not all_valid:
         print("FAIL: at least one registered configuration did not produce ok=6.")
         return 1
+    aperture_controls_ok = report_aperture_fallbacks(rows)
 
     max_corrected = max(
         (
@@ -411,7 +532,8 @@ def main() -> int:
     ]
 
     print("AGGREGATE")
-    print(f"  valid executions: {len(SLICED_CONFIGS) * len(SEEDS)}/192")
+    expected_executions = EXPECTED_CONFIG_COUNT * len(EXPECTED_SEEDS)
+    print(f"  valid executions: {expected_executions}/{expected_executions}")
     print(
         f"  maximum corrected |I3|/P: {max_corrected[0]:.6e} "
         f"at {fmt_config(max_corrected[1])}, seed={max_corrected[2]}"
@@ -423,13 +545,17 @@ def main() -> int:
     for key, (minimum, maximum) in diagnostic_ranges.items():
         print(f"  {key} range over 192 executions: [{minimum:+.6e}, {maximum:+.6e}]")
     print(
-        "  configurations meeting the scan's finite ancillary screen "
-        f"(mean pur_cl<0.95 and mean gravity>0): {len(joint_rows)}/32"
+        "  configurations meeting the author-defined finite diagnostic screen "
+        f"(mean pur_cl<0.95 and mean gravity>0): "
+        f"{len(joint_rows)}/{EXPECTED_CONFIG_COUNT}"
     )
     print()
 
     if not controls_ok:
         print("FAIL: one or more hostile controls failed.")
+        return 1
+    if not aperture_controls_ok:
+        print("FAIL: one or more aperture fallback controls failed.")
         return 1
     if max_corrected[0] > BORN_SAFETY_THRESHOLD:
         print("FAIL: corrected numerical residual exceeds the declared threshold.")

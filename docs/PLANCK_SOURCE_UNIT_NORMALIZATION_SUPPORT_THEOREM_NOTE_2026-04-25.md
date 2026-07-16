@@ -14,8 +14,9 @@ The carrier itself is not derived in this note; it is imported from the
 conditional Planck packet's primitive-cell theorem chain:
 
 - [`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md`](AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
-  — minimal local-CAR assumptions under which the primitive parity-gate
-  carrier is forced by the primitive boundary block itself.
+  — conditional coefficient theorem inside supplied exact-support, CAR,
+  normal-channel, tangent-channel, and tangent-symbol axioms; it does not
+  derive that carrier from the primitive boundary block.
 - `AREA_LAW_COEFFICIENT_GAP_NOTE.md` (context recording only, backticked
   to avoid length-3 cycle — this note imports `c_cell = 1/4` from the
   primitive-coframe carrier theorem and its boundary-density extension,

@@ -1,63 +1,73 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_primitive_car_edge_identification.py
-runner_sha256: 8c28cbebc939bd1151ec1af1cd53b0ef8ac041ac2e413a92c652cbcf2c72b6d1
+runner_sha256: 9a1de2cd1af8c329dcd7e59ca2ff75872e466d4f176b295d47ab0a00919be05e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
-AREA-LAW PRIMITIVE CAR EDGE IDENTIFICATION THEOREM
+AREA-LAW CONDITIONAL PRIMITIVE-CAR EDGE-AXIOM COEFFICIENT
 ==============================================================================
 
-Question: do primitive-CAR edge axioms force the two-orbital
-self-dual Laplacian-gated carrier with c_Widom=1/4?
+Question: after support, CAR, normal-channel, tangent-channel, and
+tangent-symbol axioms are supplied, is c_Widom=1/4, and which
+steps remain unforced by the substrate or CAR algebra?
 
-[PASS] primitive event cell has dimension 16: H_cell = C^2_t otimes C^2_x otimes C^2_y otimes C^2_z
-[PASS] Hamming-weight-one primitive packet has rank four: P_A has one atom for t,x,y,z
-[PASS] Planck primitive trace is 4/16 = 1/4: c_cell=0.250000000000
-[PASS] complex CAR Fock dimension is 2^m: m=0,1,2,3 dimensions are 1,2,4,8
-[PASS] rank-four active block forces exactly two CAR modes: matching modes=[2]
-[PASS] one complex edge mode is too small: dim F(C^1)=2 < 4
-[PASS] three complex edge modes are too large: dim F(C^3)=8 > 4
-[PASS] two-mode Fock basis has four occupancy states: basis=[(0, 0), (0, 1), (1, 0), (1, 1)]
-[PASS] two-mode Fock parity splits 2+2: even=[(0, 0), (1, 1)], odd=[(0, 1), (1, 0)]
-[PASS] minimal active support leaves no hidden active spectator: all four primitive active states are exhausted by F(C^2)
-[PASS] primitive normal channel contributes the retained simple-fiber value: two crossings / 12 = 1/6
-[PASS] self-dual tangent channel contributes one average crossing: two crossings on half the transverse zone gives 1/12
-[PASS] normal plus empty misses Bekenstein-Hawking: c=0.166666666667
-[PASS] duplicate normal channel overshoots Bekenstein-Hawking: c=0.333333333333
-[PASS] two tangent-gated channels miss Bekenstein-Hawking: c=0.166666666667
-[PASS] normal plus self-dual tangent channel gives exactly 1/4: c=0.250000000000
-[PASS] quarter is unique among minimal two-mode edge patterns tested: quarter_patterns=['normal+tangent']
-[PASS] normalized tangent-symmetric nearest-neighbor symbol is unique: f(q)=1-mean_j cos(q_j)
-[PASS] 2D tangent line: half-period involution sends Delta to 2-Delta: Delta=0.067672654394, partner=1.932327345606
-[PASS] 3D tangent plane: half-period involution sends Delta to 2-Delta: Delta=0.189087110721, partner=1.810912889279
-[PASS] self-dual threshold is uniquely Delta=1: t=2-t has unique solution t=1
-[PASS] low and high sheets are exchanged by the involution: Delta(0,0)=0 and Delta(pi,pi)=2
-[PASS] tangent set has codimension one: Delta_perp=1 is the zero set of mean cos(q), so it has Haar measure zero
-[PASS] APBC grid (96,) has weighted half-zone measure 1/2: active_weight=48.0, total=96
-[PASS] APBC grid (128,) has weighted half-zone measure 1/2: active_weight=64.0, total=128
-[PASS] APBC grid (32, 32) has weighted half-zone measure 1/2: active_weight=512.0, total=1024
-[PASS] APBC grid (48, 32) has weighted half-zone measure 1/2: active_weight=768.0, total=1536
-[PASS] APBC grid (64, 40) has weighted half-zone measure 1/2: active_weight=1280.0, total=2560
-[PASS] 2D finite check reaches L >= 96: shape (96,) included
-[PASS] 3D finite check reaches transverse L >= 32: shape (32,32) included
-[PASS] average crossing count is exactly three: <N_x>=2+2*(1/2)
-[PASS] Widom coefficient is exactly one quarter: c_Widom=0.250000000000
-[PASS] Widom coefficient equals the Planck primitive trace: 3/12 = 4/16
-[PASS] construction remains outside the retained half-filled NN no-go: carrier has two primitive CAR sectors, not one half-filled NN sector
-[PASS] construction answers the multipocket selector gap inside primitive-CAR axioms: mu=1/2 follows from the self-dual Laplacian sheet
-[PASS] remaining premise is the primitive Clifford/CAR coframe response: Target 3 Clifford bridge supplies a sufficient metric-compatible coframe-response premise
+[PASS] primitive event cell has dimension 16: H_cell=(C^2)^(otimes 4)
+[PASS] supplied Hamming-weight-one support has rank four: rank(P_A)=4
+[PASS] separate primitive trace is one quarter: 4/16=0.250000000000
+[PASS] complex CAR Fock dimension follows 2^m: dimensions=[1, 2, 4, 8]
+[PASS] conditional on the CAR interpretation, rank four gives m=2: matching modes=[2]
+[PASS] one CAR mode is too small for exact support: 2<4
+[PASS] three CAR modes are too large for exact support: 8>4
+[PASS] two-mode Fock basis has four states: basis=[(0, 0), (0, 1), (1, 0), (1, 1)]
+[PASS] two-mode parity splits 2+2: even=[(0, 0), (1, 1)], odd=[(0, 1), (1, 0)]
+[PASS] exact support leaves no additional active Fock spectator: dim F(C^2)=rank(P_A)=4
+[PASS] supplied normal channel contributes 1/6: 2/12
+[PASS] supplied half-zone tangent channel contributes 1/12: 1/12
+[PASS] enumerated pattern normal+empty has its stated coefficient: c=0.166666666667
+[PASS] enumerated pattern normal+normal has its stated coefficient: c=0.333333333333
+[PASS] enumerated pattern tangent+tangent has its stated coefficient: c=0.166666666667
+[PASS] enumerated pattern normal+tangent has its stated coefficient: c=0.250000000000
+[PASS] one quarter is unique only in the four-pattern enumeration: quarter_patterns=['normal+tangent']
+[PASS] a quarter-zone second mode gives a different CAR coefficient: c(1/4)=0.208333333333
+[PASS] a three-quarter-zone second mode gives a different CAR coefficient: c(3/4)=0.291666666667
+[PASS] the coefficient target selects p=1/2 only after a selector family is supplied: p=0.500000000000
+[PASS] normalized tangent-symmetric NN affine-cosine ansatz fixes 1-mean cos: f(0)=0 and f(pi,...,pi)=2
+[PASS] tangent line half-period involution sends Delta to 2-Delta: Delta=0.067672654394, partner=1.932327345606
+[PASS] tangent plane half-period involution sends Delta to 2-Delta: Delta=0.189087110721, partner=1.810912889279
+[PASS] self-dual threshold is Delta=1: fixed point of t -> 2-t
+[PASS] low and high sheets are nonempty and exchanged: Delta(0,0)=0; Delta(pi,pi)=2
+[PASS] APBC grid (96,) has paired half-zone weight 1/2: active=48.0, total=96
+[PASS] APBC grid (128,) has paired half-zone weight 1/2: active=64.0, total=128
+[PASS] APBC grid (32, 32) has paired half-zone weight 1/2: active=512.0, total=1024
+[PASS] APBC grid (48, 32) has paired half-zone weight 1/2: active=768.0, total=1536
+[PASS] APBC grid (64, 40) has paired half-zone weight 1/2: active=1280.0, total=2560
+[PASS] one-dimensional transverse controls reach L=128: largest line grid=128
+[PASS] two-dimensional transverse controls include at least 64x40: 64x40 grid included
+[PASS] supplied normal-plus-half-zone channel has average crossing count three: 2+2*(1/2)=3
+[PASS] conditional Widom coefficient is one quarter: c_Widom=0.250000000000
+[PASS] conditional Widom coefficient equals the separate primitive trace: 3/12=4/16
+[PASS] CAR algebra alone does not pin the active transverse fraction: same two-mode count admits different supplied selector fractions
+[PASS] enumerated-pattern result is not a global uniqueness theorem: continuous selector family lies outside the four named patterns
+[PASS] source title is narrowed to a conditional edge-axiom coefficient theorem: AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md
+[PASS] source status forbids substrate descent and channel forcing: status firewall present
+[PASS] source supplies rather than derives the physical edge channels: channel assumptions are explicit
+[PASS] source states that CAR does not select the dispersions: algebra-to-dispersion bridge denied
+[PASS] source limits uniqueness to the enumerated patterns and ansatz: uniqueness scope bounded
+[PASS] source exposes the exact remaining bridges: remaining-gap firewall present
+[PASS] superseded primitive-block forcing wording is absent: no substrate or uniqueness laundering
+[PASS] source records the analytic zero-set measure premise: measure argument stated
 
 ==============================================================================
-SUMMARY: PASS=36  FAIL=0
+SUMMARY: PASS=45  FAIL=0
 ==============================================================================
 
-Verdict: within the primitive-CAR edge axioms, the rank-four
-boundary packet forces a two-orbital normal-plus-self-dual-tangent
-carrier, and its Widom coefficient is exactly 1/4. The remaining
-status question is the primitive Clifford/CAR coframe-response premise.
+Verdict: CONDITIONAL INSIDE SUPPLIED PRIMITIVE-CAR EDGE AXIOMS.
+The supplied normal plus self-dual half-zone tangent carrier gives
+c_Widom=1/4. CAR alone does not select those dispersions, and the
+retained event-cell substrate does not derive the active Cl_4/CAR block.
 
 ----- stderr -----
 

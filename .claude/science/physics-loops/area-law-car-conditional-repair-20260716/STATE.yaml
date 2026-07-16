@@ -1,0 +1,63 @@
+loop_slug: area-law-car-conditional-repair-20260716
+mode: post-audit-science-fix
+target_status: strongest-honest-bounded-repair
+started_at: 2026-07-16
+runtime_budget: current_deep_work_turn
+checkpoint_interval: durable_after_each_claim-boundary-change
+deep_block: paired_area_law_car_rows
+cycle_count: 1
+block_count: 1
+active_route: conditional_demotion_after_exact_substrate_obstruction
+hard_residual: >-
+  Derive invariant P_A preservation, an induced Cl_4(C) response, and the
+  physical normal/tangent CAR edge-channel assignment from retained substrate
+  content; otherwise keep both claims explicitly conditional.
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+conditional_surface_status: conditional-support
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: true
+proposal_allowed_reason: >-
+  The exact retained representation obstructs the requested substrate-native
+  descent, so the source claims and direct consumers are demoted to the
+  finite-algebra and supplied-edge-axiom consequences that are actually proved.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md
+  - docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md
+  - scripts/frontier_area_law_native_car_semantics_tightening.py
+  - scripts/frontier_area_law_primitive_car_edge_identification.py
+  - direct source consumers and publication indexes
+  - owned runner caches required by source-packet verification
+  - .claude/science/physics-loops/area-law-car-conditional-repair-20260716/PR_BODY.md
+open_imports:
+  - changed retained representation or invariant spinor packet on P_A
+  - intrinsic metric-compatible active-block Clifford coframe selector
+  - retained physical law assigning CAR modes to normal and tangent dispersions
+  - dimensional action-unit metrology for the wider Planck packet
+no_go_routes:
+  - rank-four dimension matching
+  - canonical odd full-cell Clifford restriction to P_A
+  - spatially equivariant 1+3 to 2+2 substrate descent
+  - bilinear M_4(C) existence as a preferred-coframe theorem
+  - CAR mode count as a physical dispersion selector
+trace_gate_classification: direct_blocker_closure
+review_findings:
+  - clean retention is false on the supplied event-cell representation
+  - the old native-CAR note mixed algebraic equivalence with substrate semantics
+  - the old primitive-CAR note treated supplied channel axioms as forced physics
+  - consumer notes collapsed distinct representation, channel, and action-unit premises
+  - all focused hostile controls and direct source-packet runners pass
+  - changed-runner caches are SHA-fresh and changed-surface vocabulary lint reports zero violations
+review_disposition: demote
+pr_status: opened-ready
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5428
+next_exact_action: >-
+  Hand the ready PR to an independent reviewer/auditor; do not self-review,
+  apply audit verdicts, or merge from this lane.
+stop_condition: >-
+  Satisfied: ready PR with exact conditional boundaries, passing hostile
+  controls, no audit-authority mutations, and explicit remaining bridges.

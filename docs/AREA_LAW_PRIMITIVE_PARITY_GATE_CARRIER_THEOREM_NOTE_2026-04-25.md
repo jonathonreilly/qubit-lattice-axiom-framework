@@ -11,11 +11,11 @@ ledger-derived, not source-prose claims.
 ## Cited authorities (one-hop deps)
 
 - [`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md`](AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
-  — support / conditional bridge. Pushes the carrier-identification premise one
-  step deeper: under minimal local complex-CAR edge axioms on the rank-four
-  primitive packet, the two-orbital normal-plus-self-dual-tangent carrier is
-  forced. This is the audited authority for the carrier identification used
-  here.
+  — support / conditional coefficient bridge. Under exact support and a
+  complex-CAR interpretation, rank four gives two modes; the normal and
+  self-dual-tangent dispersions remain separately supplied axioms. This is the
+  conditional authority for the coefficient calculation used here, not a
+  substrate or CAR-only carrier-identification theorem.
 - [`AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md`](AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md)
   — simple-fiber-class Widom no-go support. The no-go this carrier
   evades by leaving the simple-fiber class with a self-dual primitive
@@ -250,9 +250,9 @@ not accepted, the result should be treated as a sharp candidate carrier and the
 previous no-go packet remains the retained status.
 
 [AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md](./AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
-pushes this premise one step deeper: under minimal local complex-CAR edge
-semantics on the rank-four primitive packet, the two-orbital normal-plus-
-self-dual-tangent carrier is forced.
+now makes this premise fully explicit: complex CAR plus exact support gives a
+two-mode Fock block, while the normal and self-dual-tangent edge dispersions
+are additional supplied carrier axioms.
 
 The remaining review question is therefore no longer numerical:
 
@@ -261,12 +261,12 @@ Does the existing Cl(3)/Z^3 primitive boundary semantics force this residual
 self-dual Laplacian edge block, or is it an additional carrier axiom?
 ```
 
-The Target 3 Clifford phase bridge gives a sufficient coframe-response answer:
+The Target 3 Clifford phase bridge gives only a conditional algebraic answer:
 if the metric-compatible primitive Clifford response is supplied on the
-rank-four active block, then that block is the irreducible
-`Cl_4(C)`/two-mode CAR module, and the primitive-CAR edge theorem forces the
-normal plus self-dual tangent carrier. Without that response, this note remains
-a conditional positive carrier theorem.
+rank-four active block, then that block is equivalent to two-mode CAR. A
+separate physical law is still required to assign those modes the normal and
+self-dual-tangent dispersions. This note remains a conditional positive
+carrier theorem.
 
 ## Relation to the action-side `1/4`
 
@@ -315,11 +315,11 @@ c_cell = Tr((I_16/16) P_A) = 1/4                    (cited primitive-coframe
 => c_Widom = c_cell = 1/4                           (matching at (CIP))
 ```
 
-The matching is forced by `<N_x> = 3`, which is itself forced by the self-dual
-half-period involution `tau(q) = q + π·(1,...,1)` sending
-`Δ_perp → 2 - Δ_perp`. The only adjustable input is (CIP) itself, and the
-cited primitive-CAR edge identification theorem reduces (CIP) further to a
-local complex-CAR edge axiom on the rank-four primitive packet.
+Granted (CIP), the matching follows from `<N_x> = 3`; the half-period
+involution `tau(q) = q + π·(1,...,1)` then proves that the supplied
+self-dual sheet has measure `1/2`. The primitive-CAR note does not reduce
+(CIP) to CAR alone: support, channel assignment, and dispersion selection
+remain explicit inputs.
 
 ## What this PR is NOT
 

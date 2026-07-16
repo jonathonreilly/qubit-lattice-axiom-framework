@@ -5,8 +5,9 @@
 **Claim type:** open_gate
 **Status authority:** independent audit lane only; effective status is
 pipeline-derived.
-**Claim scope:** identifies the residual coframe/CAR response and action-unit
-self-consistency gate for the older `(C1)` scale route. This note does not
+**Claim scope:** identifies the residual active-block response,
+edge-channel-law, and action-unit self-consistency packet for the older `(C1)`
+scale route. This note does not
 derive or promote the scale route, does not treat the scale-reference
 primitive as a Planck import or bounded-status source, and does not apply an
 audit verdict.
@@ -31,9 +32,9 @@ This note does the symmetric gate inventory for `(C1)`. The Planck-scale lane
 status note `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` (and the
 2026-04-24 / 2026-04-25 packet that updated it) has already done
 extensive work narrowing the dimensionless self-consistency route to a
-**single load-bearing premise**: the metric-compatible Clifford/CAR coframe
-response on `P_A H_cell`, together with the action-unit metrology boundary.
-This note makes that gate explicit
+**coupled load-bearing premise packet**: a compatible active-block
+Clifford/CAR response on `P_A H_cell`, a physical normal/tangent edge-channel
+law, and the action-unit metrology boundary. This note makes that packet explicit
 in the Lane 5 closure-pathway taxonomy and connects it to the Lane 5
 sub-route 5B.
 
@@ -79,35 +80,40 @@ update), the older conditional source packet says:
   metric-compatible Clifford coframe response, then it polarizes to the
   complex `Cl_4` relations on `P_A H_cell`, which (since
   `rank(P_A) = 4`) is the irreducible `Cl_4(C) ~= M_4(C)` module,
-  equivalently two complex CAR modes. This forces:
-  - `c_Widom = 3/12 = 1/4 = c_cell` (Target 2 closure under the bridge);
+  equivalently two complex CAR modes. This supplies only the algebraic
+  carrier premise. Target 2 additionally requires the normal and
+  self-dual-tangent channel axioms before obtaining
+  `c_Widom = 3/12 = 1/4 = c_cell`;
+  conditionally, the wider packet also gives:
   - `G_Newton,lat = 1` and `a/l_P = 1` on the source-unit surface (Target 1
     closure under the bridge);
   - structural action-phase unit on the same surface (Target 3
     closure under the bridge).
 
-So all three Planck-lane targets have collapsed to **one shared
-conditional**: the metric-compatible Clifford/CAR coframe response on
-`P_A H_cell` plus the action-unit self-consistency boundary.
+Thus the Planck-lane targets share a coupled conditional packet, not one
+algebraic premise. Target 2 additionally needs the edge-channel law that CAR
+algebra does not supply.
 
-## 2. The single residual gate
+## 2. The coupled residual gate packet
 
-The single residual premise on which all three Planck-lane targets
-hinge is:
+The residual premises on which the Planck-lane targets hinge are:
 
-> **The metric-compatible Clifford/CAR coframe response on the rank-four boundary block `P_A H_cell ⊆ H_cell`.**
+> **A compatible Clifford/CAR response on the rank-four block
+> `P_A H_cell ⊆ H_cell`, a retained law assigning its two modes to the
+> physical normal and self-dual-tangent edge channels, and action-unit
+> metrology.**
 
-Equivalently: the **native edge-statistics principle** that fixes
-`P_A H_cell` to the irreducible `Cl_4(C) ~= M_4(C)` module rather than
-admitting non-CAR rank-four semantics (two-qubit, ququart).
+Equivalently: an **additional active-block response premise** fixing
+`P_A H_cell` to an irreducible `Cl_4(C) ~= M_4(C)` module rather than
+non-CAR rank-four semantics, followed by separate edge-channel axioms.
 
 Per the 2026-04-25 area-law tightening note
 (`AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md`):
 
-> Rank `4` alone does not force CAR, because the same Hilbert space
-> admits non-CAR ququart or two-qubit semantics. Thus the exact residual
-> premise is the native edge-statistics principle, not another
-> coefficient calculation.
+> A supplied irreducible `Cl_4(C)` response on `C^4` is equivalent to
+> two-mode CAR. Rank four and the supplied event-cell substrate do not
+> derive that response, and CAR algebra does not assign the physical
+> normal/tangent edge channels.
 
 And per the Target 3 boundary note
 (`PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md`):
@@ -117,34 +123,37 @@ And per the Target 3 boundary note
 > only on `S/kappa` and are invariant under
 > `(S,kappa) -> (lambda S, lambda kappa)`.
 
-So two related residual obligations remain:
+So three related residual obligations remain:
 
-- (G1) **Edge-statistics principle**: derive (or independently
-  axiomatize) the native CAR semantics on `P_A H_cell` from the
-  current framework baseline.
+- (G1a) **Active-block response**: derive (or independently axiomatize) a
+  compatible Clifford/CAR response on `P_A H_cell`.
+- (G1b) **Physical channel law**: derive (or independently axiomatize) the
+  normal and self-dual-tangent edge dispersions and their assignment to the
+  two modes.
 - (G2) **Action-unit metrology**: break the `(S, kappa)` rescaling
   degeneracy that the Hilbert-only stack leaves intact, pinning an
   absolute dimensional action quantum.
 
-(G1) and (G2) are not independent. Per the conditional Clifford phase
-bridge, deriving the Clifford coframe response on `P_A H_cell` and
-deriving the natural phase/action unit self-consistency gives both
-`c_Widom = 1/4` and `G_Newton,lat = 1` on that conditional surface. The
-residual obligation is therefore a single coupled open gate: the
-metric-compatible Clifford coframe response with natural phase/action
-unit self-consistency.
+The current bridges do not prove these obligations equivalent. A supplied
+coframe response gives the CAR algebra but not (G1b); the Target 2 coefficient
+requires (G1a) and (G1b), while the natural-unit scale route additionally
+requires (G2). The residual object is therefore a coupled open packet, not a
+single premise.
 
 ## 3. What resolving this gate would deliver
 
-If future work derives the metric-compatible Clifford/CAR coframe response
-and action-unit self-consistency from the current framework baseline (with
-no added carrier axiom), the chain of consequences to audit would be:
+If future work derives the compatible Clifford/CAR response, physical
+edge-channel law, and action-unit self-consistency from the current framework
+baseline (with no added carrier axiom), the chain of consequences to audit
+would be:
 
 1. The conditional Clifford phase bridge moves from conditional support to
    an audit-ready structural theorem candidate.
 2. Target 1 (gravity/action unit-map uniqueness): closed via standard
    area/action normalization on the carrier surface.
-3. Target 2 (horizon-entropy carrier with exact `1/4`): closed via the
+3. Target 2 (horizon-entropy carrier with exact `1/4`): would close only after
+   deriving both the active-block response and the supplied channel axioms
+   used by the
    primitive parity-gate carrier theorem
    (`AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`)
    and primitive-CAR edge identification
@@ -226,13 +235,14 @@ closure.
 
 **Does:**
 
-- Identifies the **single residual structural premise** for the `(C1)`
+- Identifies the **coupled residual structural premises** for the `(C1)`
   half of the Lane 5 closure-pathway corollary.
-- Names the gate explicitly: metric-compatible Clifford/CAR
-  coframe response on `P_A H_cell`, with natural phase/action units.
+- Names the packet explicitly: compatible Clifford/CAR response on
+  `P_A H_cell`, a physical normal/tangent edge-channel law, and natural
+  phase/action units.
 - Connects the gate to the three Planck-lane targets (gravity/action
-  unit-map uniqueness, horizon-entropy carrier, information/action
-  bridge), all of which collapse to the same conditional.
+  unit-map uniqueness, horizon-entropy carrier, information/action bridge)
+  without collapsing their distinct remaining premises.
 - Inventories the closed routes the gate-resolving derivation must
   avoid.
 - Maps the audit into the Lane 5 closure-pathway corollary and notes
@@ -263,11 +273,12 @@ closure.
   the conditional structural closure under the metric-compatible
   Clifford coframe response.
 - `AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md` —
-  confirms the residual premise is the native edge-statistics
-  principle, not another coefficient calculation.
+  proves the conditional `Cl_4(C)` / two-mode-CAR algebraic equivalence and
+  records the substrate-descent obstruction.
 - `AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`,
   `AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md`
-  — the conditional positive Target 2 carrier theorems.
+  — the conditional positive Target 2 coefficient packet under explicit
+  channel axioms.
 - `PLANCK_FINITE_RESPONSE_NO_GO_NOTE_2026-04-24.md`,
   `PLANCK_PARENT_SOURCE_HIDDEN_CHARACTER_NO_GO_NOTE_2026-04-24.md`,
   `AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md`,
@@ -302,4 +313,5 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [planck_scale_conditional_completion_note_2026-04-24](PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md)
 - [planck_target3_clifford_phase_bridge_theorem_note_2026-04-25](PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md)
 - [area_law_native_car_semantics_tightening_note_2026-04-25](AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md)
+- [area_law_primitive_car_edge_identification_theorem_note_2026-04-25](AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
 - [planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25](PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md)

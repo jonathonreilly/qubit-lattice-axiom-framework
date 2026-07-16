@@ -75,12 +75,13 @@ accepted Planck package.
 
 The 2026-04-30 update is
 [PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](./PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md).
-It proposes to derive the metric-compatible primitive Clifford/CAR edge
-statistics from retained `Cl(3)` bivectors plus the anomaly-forced time axis.
-Audit returned `audited_renaming`: the construction verifies an assigned
-carrier but does not derive the substrate-to-`P_A` forcing step. The Planck
-pin therefore remains the active fallback, and the natural-unit closure remains
-conditional on the Clifford/CAR carrier premise.
+The repaired obstruction theorem shows more sharply that the supplied
+event-cell `P_A` module (`1+3` under spatial substrate `SU(2)`) is not the
+`2+2` restriction of an irreducible `Cl_4(C)` carrier: the equivariant
+intertwiner space is zero, and the canonical full-cell odd Clifford action
+compresses to zero on `P_A`. The Planck pin therefore remains the active
+fallback, and the natural-unit closure remains conditional on a changed
+representation premise or an additional intrinsic active-block response law.
 
 ## 2. Why this lane exists
 
@@ -250,20 +251,16 @@ Current blocker:
   is exactly `3`, so `c_Widom=3/12=1/4`. The theorem is coefficient-clean and
   uses no fitted parameter.
 - [AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md](./AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
-  pushes the carrier premise one step deeper. Under minimal local complex-CAR
-  edge semantics supported exactly on `P_A H_cell`, the rank `4` primitive
-  block forces `F(C^2)`, hence exactly two complex edge orbitals. The selected
-  face supplies one normal channel; the unique tangent-symmetric nearest-
-  neighbor response is the self-dual low-Laplacian sheet of measure `1/2`.
-  Inside these primitive-CAR edge axioms, the `1/4` entanglement coefficient is
-  a theorem rather than a fitted multipocket calibration.
+  is now explicitly bounded. Exact support plus a complex-CAR interpretation
+  gives `F(C^2)`, hence two modes, but the selected normal channel,
+  self-dual tangent channel, and tangent-symbol ansatz are separately supplied
+  carrier axioms. Inside that full conditional packet the `1/4` coefficient is
+  exact; CAR alone does not select it.
 - [AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md](./AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md)
-  tightens the last review decision. If the active primitive boundary response
-  is an irreducible Clifford-Majorana edge algebra, then complex `Cl_4`
-  equals `M_4(C)` and is equivalent to two-mode CAR on the rank-four block.
-  Rank `4` alone does not force CAR, because the same Hilbert space admits
-  non-CAR ququart or two-qubit semantics. Thus the exact residual premise is
-  the native edge-statistics principle, not another coefficient calculation.
+  proves only that a supplied irreducible `Cl_4(C)` response on `C^4` is
+  algebraically equivalent to supplied two-mode CAR. Rank four does not force
+  CAR, the event-cell substrate does not induce this response on `P_A`, and
+  the algebra does not select physical edge dispersions.
 
 2026-04-30 Target 2 update:
 
@@ -272,8 +269,9 @@ Current blocker:
   retained `Cl(3)` bivectors plus the anomaly-forced time axis. Audit returned
   `audited_renaming`: the active primitive `Cl_4(C)` / CAR model is explicit,
   but the substrate-to-`P_A` forcing step is not derived.
-- therefore the Target 3 boundary theorem still applies and Target 2 keeps
-  the prior conditional wording on native edge statistics.
+- therefore the Target 3 boundary theorem still applies and Target 2 remains
+  conditional on both an active-block Clifford/CAR premise and separate
+  physical edge-channel axioms.
 
 ### Target 3: one-axiom information/action bridge
 
@@ -316,15 +314,15 @@ Former blocker:
 2026-04-30 Target 3 update:
 
 - [PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](./PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)
-  supplies an explicit candidate model, not an audit-clean derivation:
-  retained spatial `Cl(3)` bivectors give the native `SU(2)` edge-spin
-  content, the anomaly-forced time axis extends the primitive coframe to a
-  candidate `Cl_4(C)` carrier, but `rank(P_A)=4` does not by itself identify
-  the active packet with the unique irreducible `Cl_4(C)` module;
-- the oriented normal/tangent Majorana pairings give the two complex CAR modes
-  required by the primitive edge theorem;
-- the Hilbert-only no-go remains valid because the derivation uses retained
-  Clifford substrate content beyond bare Hilbert flow.
+  is an exact substrate-descent obstruction on the granted event-cell surface:
+  the `1+3` substrate module on `P_A` has no equivariant map to the `2+2`
+  spatial restriction of an irreducible `Cl_4(C)` carrier, and the canonical
+  full-cell odd generators do not preserve `P_A`;
+- an internal `M_4(C)` Clifford/CAR model can still be assigned, but neither
+  its coframe basis nor the normal/tangent Majorana pairing follows from the
+  retained substrate;
+- the Hilbert-only no-go therefore remains valid, and a positive route needs a
+  changed representation premise or an additional intrinsic response law.
 
 2026-04-25 Target 3 boundary theorem:
 

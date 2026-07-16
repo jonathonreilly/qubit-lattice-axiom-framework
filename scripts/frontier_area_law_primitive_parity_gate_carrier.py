@@ -6,9 +6,9 @@ Authority note:
     docs/AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md
 
 This runner checks the positive Target 2 carrier under its explicit carrier
-identification condition. The Target 3 Clifford phase bridge supplies a
-sufficient coframe-response route for that condition, but does not remove the
-condition from the minimal stack:
+identification condition. A supplied Clifford/CAR response can provide the
+two-mode algebra, but it does not assign the physical dispersions; the full
+normal-plus-self-dual-tangent condition remains explicit:
 
   * a baseline edge orbital with two k_x Fermi crossings for every transverse
     momentum;
@@ -32,6 +32,7 @@ from __future__ import annotations
 import functools
 import math
 import sys
+from pathlib import Path
 
 import numpy as np
 from numpy.linalg import eigh
@@ -39,6 +40,8 @@ from numpy.linalg import eigh
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md"
 
 
 def check(name: str, passed: bool, detail: str) -> bool:
@@ -311,21 +314,41 @@ def main() -> int:
             f"avg_crossings={avg:.12f}, c={c_grid:.12f}",
         )
 
-    # Locality and singular-set checks.
+    # Locality, singular-set, and selector-boundary checks.
+    stencil_offsets = {
+        (0, 0, 0),
+        (1, 0, 0),
+        (-1, 0, 0),
+        (0, 1, 0),
+        (0, -1, 0),
+        (0, 0, 1),
+        (0, 0, -1),
+    }
     check(
         "dispersion representative is finite-range local",
-        True,
-        "cos(k_x)+Delta_perp uses onsite plus nearest-neighbor normal/tangent terms",
+        max(sum(abs(component) for component in offset) for offset in stencil_offsets) == 1,
+        f"Fourier support offsets={sorted(stencil_offsets)}",
+    )
+    boundary_32 = sum(
+        abs(transverse_laplacian(float(ky), float(kz)) - 1.0) < 1.0e-12
+        for ky in apbc_momenta(32)
+        for kz in apbc_momenta(32)
+    )
+    boundary_96 = sum(
+        abs(transverse_laplacian(float(ky), float(kz)) - 1.0) < 1.0e-12
+        for ky in apbc_momenta(96)
+        for kz in apbc_momenta(96)
     )
     check(
-        "gate boundary is measure zero",
-        True,
-        "Delta_perp=1 is a codimension-one transverse boundary and does not affect the integral",
+        "finite-grid tangent-set fraction decreases under isotropic refinement",
+        boundary_96 / (96 * 96) < boundary_32 / (32 * 32),
+        f"fractions={boundary_32/(32*32):.6f}->{boundary_96/(96*96):.6f}",
     )
+    alternative_quarter = widom_from_average_crossings(2.0 + 2.0 * 0.25)
     check(
-        "no fitted continuous parameter enters the coefficient",
-        True,
-        "the only measure is the self-dual Z_2 half-zone measure 1/2",
+        "one quarter is not fixed without the supplied half-zone selector",
+        not math.isclose(alternative_quarter, 0.25, abs_tol=1.0e-15),
+        f"a quarter-zone selector would give c={alternative_quarter:.12f}",
     )
     check(
         "self-dual Laplacian gate is the missing multipocket selector",
@@ -371,9 +394,10 @@ def main() -> int:
         "subleading positive a/log(L) correction is monotone on the tested tail",
     )
     check(
-        "primitive parity-gate carrier identification remains the explicit bridge premise",
-        True,
-        "Target 3 Clifford bridge gives a sufficient metric-compatible coframe-response route",
+        "source keeps CAR and physical channel assignment as separate premises",
+        "CAR plus exact support gives a\ntwo-mode Fock block" in NOTE.read_text(encoding="utf-8")
+        and "separate physical law is still required" in NOTE.read_text(encoding="utf-8"),
+        "coframe algebra does not assign normal/tangent dispersions",
     )
 
     print()
@@ -386,9 +410,9 @@ def main() -> int:
 
     print()
     print("Verdict: the primitive residual Z_2 parity-gate carrier has")
-    print("multipocket Widom coefficient exactly 1/4. This is a conditional")
-    print("positive carrier unless the primitive Clifford/CAR coframe response")
-    print("is accepted or derived separately.")
+    print("multipocket Widom coefficient exactly 1/4 under the full supplied")
+    print("carrier-identification premise. A Clifford/CAR response alone does")
+    print("not assign the normal and self-dual-tangent edge dispersions.")
     return 0
 
 

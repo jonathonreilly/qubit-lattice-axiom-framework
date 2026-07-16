@@ -3,10 +3,10 @@
 
 This runner is not an audit verdict. It packages the source-side evidence for
 the Cycle 5 gate note by checking that the parent note exposes its dependency
-anchors, names the residual Planck/Clifford-CAR coframe and action-unit gate,
-and preserves the non-promotion boundary: the scale-reference primitive is
-units-only, and no C1 closure, retained R_Lambda numerics, or H0 closure are
-claimed on the actual current surface.
+anchors, names the residual active-block response, physical edge-channel law,
+and action-unit packet, and preserves the non-promotion boundary: the
+scale-reference primitive is units-only, and no C1 closure, retained R_Lambda
+numerics, or H0 closure are claimed on the actual current surface.
 """
 
 from __future__ import annotations
@@ -39,6 +39,9 @@ DEPENDENCIES = {
     ),
     "area_law_native_car_semantics_tightening_note_2026-04-25": (
         "docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md"
+    ),
+    "area_law_primitive_car_edge_identification_theorem_note_2026-04-25": (
+        "docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md"
     ),
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25": (
         "docs/PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md"
@@ -96,7 +99,7 @@ def part1_packet_metadata() -> None:
         "parent remains an open-gate support source packet",
         "support gate-identification note on `main`" in parent_norm
         and "**Claim type:** open_gate" in parent
-        and "identifies the residual coframe/CAR response and action-unit" in parent_norm,
+        and "identifies the residual active-block response, edge-channel-law, and action-unit" in parent_norm,
     )
     check(
         "source-packet boundary says it is not a theorem",
@@ -125,6 +128,12 @@ def part2_registered_dependencies() -> None:
     conditional = read(DEPENDENCIES["planck_scale_conditional_completion_note_2026-04-24"])
     target3 = read(DEPENDENCIES["planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"])
     car_tightening = read(DEPENDENCIES["area_law_native_car_semantics_tightening_note_2026-04-25"])
+    primitive_car = read(
+        DEPENDENCIES[
+            "area_law_primitive_car_edge_identification_theorem_note_2026-04-25"
+        ]
+    )
+    primitive_car_norm = normalize(primitive_car)
     phase_boundary = read(DEPENDENCIES["planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25"])
 
     check(
@@ -140,14 +149,15 @@ def part2_registered_dependencies() -> None:
         and "derived `a/l_P = 1` theorem" in parent_norm,
     )
     check(
-        "legacy Planck status keeps natural-unit derivation conditional",
-        "conditional on the primitive Clifford-Majorana edge carrier premise" in status
+        "Planck status keeps natural-unit derivation conditional",
+        "natural-unit structural derivation `G_Newton,lat=1`, `a/l_P=1`" in status
+        and "conditional on the primitive Clifford-Majorana edge carrier premise" in status
         and "`a^(-1) = M_Pl` remains the explicit package pin" in status,
     )
     check(
-        "Planck status names the coframe/CAR bridge and non-CAR alternatives",
-        "P_A H_cell -> Cl_4(C) irreducible module -> F(C^2)" in status
-        and "non-CAR rank-four readings" in status,
+        "Planck status records the exact substrate-descent obstruction",
+        "equivariant\nintertwiner space is zero" in status
+        and "compresses to zero on `P_A`" in status,
     )
     check(
         "conditional packet supplies c_cell and a/l_P algebra under a premise",
@@ -161,9 +171,18 @@ def part2_registered_dependencies() -> None:
         and "It does not\nderive the coframe response on `K`" in target3,
     )
     check(
-        "CAR tightening leaves rank-four semantics underdetermined",
-        "does not by itself fix the dimensional action scale or force CAR" in car_tightening
-        and "two-qubit/ququart semantics on the same rank-four block" in car_tightening,
+        "CAR equivalence note rejects substrate and channel implications",
+        "conditional / bounded algebraic equivalence only" in car_tightening
+        and "It does not imply `c_Widom=1/4`" not in car_tightening
+        and "it does not imply `c_Widom=1/4`" in car_tightening
+        and "None is currently supplied" in car_tightening,
+    )
+    check(
+        "primitive-CAR note keeps channel axioms supplied",
+        "## Supplied primitive-CAR edge axioms" in primitive_car
+        and "**Normal-channel axiom.**" in primitive_car
+        and "**Tangent-channel axiom.**" in primitive_car
+        and "CAR algebra does not derive the normal/tangent channel assignment" in primitive_car_norm,
     )
     check(
         "phase-unit boundary records action-scale and CAR blockers",
@@ -172,28 +191,37 @@ def part2_registered_dependencies() -> None:
     )
 
 
-def part3_single_gate_inventory() -> None:
-    section("Part 3: single residual Planck C1 gate")
+def part3_gate_packet_inventory() -> None:
+    section("Part 3: coupled residual Planck C1 gate packet")
     parent = read(PARENT)
     parent_norm = normalize(parent)
 
     check(
-        "parent identifies a single residual premise",
-        "single residual premise" in parent_norm,
+        "parent identifies coupled residual premises",
+        "coupled residual gate packet" in parent_norm
+        and "coupled open packet, not a single premise" in parent_norm,
     )
     check(
-        "gate object is the metric-compatible Clifford/CAR coframe response",
-        "metric-compatible Clifford/CAR coframe response" in parent_norm
-        and "rank-four boundary block `P_A H_cell" in parent_norm,
+        "packet includes active-block response and physical channel law",
+        "**Active-block response**" in parent
+        and "**Physical channel law**" in parent,
     )
     check(
-        "edge-statistics and action-unit obligations are both named",
-        "**Edge-statistics principle**" in parent
+        "action-unit obligation remains separately named",
+        "**Action-unit metrology**" in parent
+        and "(G2)" in parent,
+    )
+    check(
+        "parent rejects algebra-to-channel collapse",
+        "coframe response gives the CAR algebra but not (G1b)" in parent_norm
+        and "Target 2 additionally needs the edge-channel law" in parent_norm,
+    )
+    check(
+        "all three residual obligations are named",
+        "(G1a)" in parent
+        and "(G1b)" in parent
+        and "(G2)" in parent
         and "**Action-unit metrology**" in parent,
-    )
-    check(
-        "three Planck targets collapse to one shared conditional",
-        "all three Planck-lane targets have collapsed to **one shared conditional**" in parent_norm,
     )
     check(
         "closed shortcut routes are inventoried",
@@ -209,11 +237,15 @@ def part3_single_gate_inventory() -> None:
 class PlanckGatePacket:
     scale_reference_declared: bool
     coframe_response_retained: bool
+    edge_channel_law_retained: bool
     natural_action_units_retained: bool
     history_ratio_or_direct_l_retained: bool
 
     def c1_scale_route_closed(self) -> bool:
         return self.coframe_response_retained and self.natural_action_units_retained
+
+    def target2_carrier_closed(self) -> bool:
+        return self.coframe_response_retained and self.edge_channel_law_retained
 
     def h0_closed_through_c1(self) -> bool:
         return self.c1_scale_route_closed() and self.history_ratio_or_direct_l_retained
@@ -227,30 +259,35 @@ def part4_non_promotion_model() -> None:
     current = PlanckGatePacket(
         scale_reference_declared=True,
         coframe_response_retained=False,
+        edge_channel_law_retained=False,
         natural_action_units_retained=False,
         history_ratio_or_direct_l_retained=False,
     )
     scale_only = PlanckGatePacket(
         scale_reference_declared=True,
         coframe_response_retained=False,
+        edge_channel_law_retained=False,
         natural_action_units_retained=False,
         history_ratio_or_direct_l_retained=False,
     )
     coframe_only = PlanckGatePacket(
         scale_reference_declared=True,
         coframe_response_retained=True,
+        edge_channel_law_retained=False,
         natural_action_units_retained=False,
         history_ratio_or_direct_l_retained=False,
     )
     c1_only = PlanckGatePacket(
         scale_reference_declared=True,
         coframe_response_retained=True,
+        edge_channel_law_retained=False,
         natural_action_units_retained=True,
         history_ratio_or_direct_l_retained=False,
     )
     full_lane5 = PlanckGatePacket(
         scale_reference_declared=True,
         coframe_response_retained=True,
+        edge_channel_law_retained=True,
         natural_action_units_retained=True,
         history_ratio_or_direct_l_retained=True,
     )
@@ -263,6 +300,8 @@ def part4_non_promotion_model() -> None:
     check("scale-reference primitive alone does not close C1", not scale_only.c1_scale_route_closed())
     check("actual current packet does not close C1", not current.c1_scale_route_closed())
     check("coframe response alone is not enough without action units", not coframe_only.c1_scale_route_closed())
+    check("coframe response alone does not close Target 2 without a channel law", not coframe_only.target2_carrier_closed())
+    check("full modeled packet includes the Target 2 channel law", full_lane5.target2_carrier_closed())
     check("C1 alone is not H0 closure without C2/C3", c1_only.c1_scale_route_closed() and not c1_only.h0_closed_through_c1())
     check("full C1 plus C2/C3 packet would close the modeled route", full_lane5.h0_closed_through_c1())
     check(
@@ -282,7 +321,7 @@ def main() -> int:
     print()
     print("Question:")
     print("  Is the Cycle 5 Planck C1 gate packaged with source anchors,")
-    print("  a replayable single-gate inventory, and a non-promotion boundary?")
+    print("  a replayable coupled-gate inventory, and a non-promotion boundary?")
     print()
     print("Answer:")
     print("  Yes for source-packet readiness. This runner does not close C1,")
@@ -290,7 +329,7 @@ def main() -> int:
 
     part1_packet_metadata()
     part2_registered_dependencies()
-    part3_single_gate_inventory()
+    part3_gate_packet_inventory()
     part4_non_promotion_model()
 
     print()

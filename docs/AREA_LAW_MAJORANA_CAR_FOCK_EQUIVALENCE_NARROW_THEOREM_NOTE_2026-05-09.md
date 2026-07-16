@@ -190,12 +190,13 @@ four" alone does not determine the relations `(1)` or `(3)`. ∎(T3)
 
 ## Relation to the parent area-law tightening note
 
-The parent note `AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25`
-states the Target 2 residual premise on `K = P_A H_cell` and observes that
-"complex `Cl_4` is the full matrix algebra `M_4(C)`, this realization is
-irreducible and unique up to a change of Majorana basis." The parent note
-uses that algebraic fact as one step inside a larger physical chain that
-also consumes a substrate-to-`P_A` forcing target. The retained no-gos
+The repaired parent note
+`AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25` now states only
+the same conditional finite-algebra equivalence and explicitly rejects
+substrate-native, preferred-basis, channel-assignment, and coefficient
+implications. This narrow theorem supplies a more detailed algebraic proof;
+neither note turns that fact into a larger physical chain without
+also consuming a substrate-to-`P_A` forcing target. The retained no-gos
 `SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30` and
 `FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30`
 record explicit negative boundaries on that physical chain. The present

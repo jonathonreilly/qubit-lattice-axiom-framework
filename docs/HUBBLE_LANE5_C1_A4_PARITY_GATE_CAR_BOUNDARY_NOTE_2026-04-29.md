@@ -45,8 +45,9 @@ metric-compatible Clifford/CAR coframe response
   `c_cell = Tr((I_16/16) P_A) = 1/4`.
 - The primitive parity-gate theorem supplies a residual `Z_2` self-dual
   low-transverse-Laplacian half-zone.
-- The primitive-CAR edge theorem and Target 3 Clifford phase bridge are used
-  only to preserve the conditional positive chain.
+- The primitive-CAR edge theorem is used only for its coefficient calculation
+  inside supplied channel axioms, and the Target 3 Clifford phase bridge is
+  used only for the conditional finite-algebra equivalence.
 - Standard finite matrix algebra is used to test whether a `Z_2` gate can
   force Clifford/CAR semantics.
 
@@ -133,7 +134,8 @@ Safe wording:
 
 > The primitive parity gate supplies the exact half-zone selector inside the
 > primitive-CAR edge carrier. It does not by itself force the active block to
-> be a metric-compatible Clifford/CAR coframe module.
+> be a metric-compatible Clifford/CAR coframe module, and CAR algebra does not
+> by itself assign the normal/tangent dispersions.
 
 Unsafe wording:
 

@@ -81,8 +81,10 @@ Grassmann/staggered-Dirac response.
 > `P_A γ_a P_A`, supplies four Hermitian anticommuting Cl_4(C)
 > generators on `P_A H_cell`. In particular, `P_A` is **not** a
 > Clifford-module morphism for any bulk-axiom-3 Cl_4(C) action on
-> `H_cell`. Consequently `(G1)` (the native edge-statistics principle
-> on `P_A H_cell`) is not closed by axiom 3 alone.
+> `H_cell`. Consequently `(G1a)` (a compatible active-block
+> Clifford/CAR response on `P_A H_cell`) is not closed by axiom 3 alone.
+> Even a supplied `(G1a)` would leave the physical edge-channel law `(G1b)`
+> open.
 
 ### Proof.
 
@@ -159,9 +161,9 @@ cycle attack frame on the `(G1)` edge-statistics principle:
   morphism, not an arbitrary projection" — answers **negatively**.
 
 It also re-narrows the residual structural obligation on `(G1)`. The
-Cl_4(C) action on `P_A H_cell` that the
-`AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md` two-mode
-CAR construction uses is **internal** to the rank-four block: the
+`Cl_4(C)` action checked by
+`AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md` is explicitly
+**conditional and internal** to the rank-four block: the
 generators in that note act on a 4-dim space `≅ M_4(C)`-module,
 unrelated to the bulk 16-dim Hilbert action via projection. Any
 direct derivation of `(G1)` from `A_min` therefore cannot proceed via
@@ -208,7 +210,7 @@ combined `A1`+`A2` closure pathway because `A1` is closed negatively.
   `docs/HUBBLE_LANE5_C1_GATE_RESIDUAL_PREMISE_ATTACK_AUDIT_NOTE_2026-04-28.md`.
 - 2026-04-26 `(C1)` gate single-residual-premise audit:
   `docs/HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md`.
-- Two-mode CAR tightening (intrinsic 4-dim Cl_4(C) action):
+- Conditional `Cl_4(C)` / two-mode-CAR algebraic equivalence:
   `docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md`.
 - `A4` parity-gate anchor:
   `docs/AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`.

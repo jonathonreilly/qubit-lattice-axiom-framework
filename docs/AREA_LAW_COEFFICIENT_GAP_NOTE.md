@@ -12,8 +12,8 @@ Primary cache: `logs/runner-cache/frontier_area_law_coefficient_gap_source_packe
 The runner checks the source-level authority packet for this synthesis: the
 action-side primitive `1/4` input, the simple-fiber Widom `1/6` no-go, the
 conditional primitive parity-gate positive carrier, and the exact remaining
-rank-four CAR/CIP edge premise. It does not assign an audit verdict or retained
-status.
+rank-four support, CAR, and physical channel premises. It does not assign an
+audit verdict or retained status.
 
 ## Cited authorities (one-hop deps)
 
@@ -42,8 +42,9 @@ authorities. Citations are made explicit per cluster:
   `c_Widom = 1/4` via average crossing count exactly 3, conditional on the
   carrier-identification premise (CIP).
 - [`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md`](AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
-  — support / conditional. Reduces (CIP) to local complex-CAR edge axioms on
-  the rank-four primitive packet.
+  — support / conditional. Computes the coefficient inside explicit
+  rank-four support, complex-CAR, normal-channel, tangent-channel, and
+  tangent-symbol axioms; it does not reduce or derive (CIP) from CAR alone.
 
 ### Bounded entropy companions
 
@@ -226,17 +227,17 @@ Laplacian-gated edge carrier. Otherwise, the broader no-go packet remains the
 retained status.
 
 [AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md](./AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
-then identifies the exact remaining physical premise: accept the rank-four
-packet as a minimal local complex-CAR edge algebra. With that premise,
-`rank(P_A)=4` forces `F(C^2)`, the selected face supplies one normal channel,
-and the unique tangent-symmetric nearest-neighbor response is the self-dual
-Laplacian-gated channel. Inside those CAR/CIP edge axioms, the positive
-`1/4` carrier is forced.
+now separates the premises rather than reducing them to CAR alone. Exact
+support plus the complex-CAR interpretation gives `F(C^2)`, but the normal
+channel, self-dual tangent channel, and tangent-symbol ansatz are separately
+supplied carrier axioms. Inside that full conditional packet the coefficient
+is exactly `1/4`; no substrate or CAR-only channel forcing is claimed.
 
 [AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md](./AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md)
-reduces the premise to irreducible Clifford-Majorana edge statistics. This is
-native to the fermionic/Clifford response language, but it is not forced by
-rank four alone.
+proves only the conditional finite-algebra equivalence between a supplied
+irreducible `Cl_4(C)` response on `C^4` and supplied two-mode CAR. The retained
+event-cell substrate does not derive that response, and the algebraic
+equivalence does not assign physical edge dispersions.
 
 ## Authority-chain provenance
 
@@ -248,7 +249,7 @@ The coefficient-gap structure on the live authority chain is now:
 | Action (ext.) | `n · c_cell = A/(4 G_N)` | [`PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM`](PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md) | audited_conditional |
 | Entangle. (-)  | `c_Widom <= 1/6` (simple-fiber class) | [`AREA_LAW_QUARTER_BROADER_NO_GO_NOTE`](AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md) | audited_conditional |
 | Entangle. (+) | `c_Widom = 1/4` (CIP)             | [`AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM`](AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md) | audited_conditional |
-| Bridge        | (CIP) ← local complex-CAR        | [`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM`](AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md) | support/conditional |
+| Bridge        | `c_Widom=1/4` inside supplied CAR + channel axioms | [`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM`](AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md) | support/conditional |
 
 The synthesis is therefore structurally the same as before, but the
 load-bearing components are no longer implicit. The action-side `1/4` is

@@ -7,7 +7,8 @@ Authority note:
 This runner checks that the coefficient-gap synthesis is reviewable as a
 source packet: it names the action-side 1/4 input, the simple-fiber Widom
 no-go, the conditional primitive parity-gate positive route, and the exact
-remaining rank-four CAR/CIP edge premise.  It does not assign an audit verdict.
+remaining rank-four support/CAR/channel premises. It does not assign an audit
+verdict.
 
 Exit code: 0 on full PASS, 1 on any FAIL.
 """
@@ -113,18 +114,23 @@ def main() -> int:
     print("=" * 78)
     print()
     print("Question: is the coefficient-gap synthesis now runner-backed enough")
-    print("for independent re-audit without pretending that the CAR/CIP")
-    print("premise is already retained?")
+    print("for independent re-audit without pretending that CAR alone")
+    print("derives the physical edge channels?")
     print()
 
     note_path = "docs/AREA_LAW_COEFFICIENT_GAP_NOTE.md"
     note = read_text(note_path)
+    note_norm = re.sub(r"\s+", " ", note)
 
     require_fragment("source note title is present", note, "# Area-Law Coefficient Gap Audit")
     require_fragment("primary runner metadata names this verifier", note, "Primary runner: `scripts/frontier_area_law_coefficient_gap_source_packet.py`")
     require_fragment("primary cache metadata names this verifier output", note, "logs/runner-cache/frontier_area_law_coefficient_gap_source_packet.txt")
     require_fragment("note keeps ledger authority firewall", note, "independent audit lane remains")
-    require_fragment("note states this packet is not an audit verdict", note, "does not assign an audit verdict")
+    require_fragment(
+        "note states this packet is not an audit verdict",
+        note_norm,
+        "does not assign an audit verdict",
+    )
 
     c_cell = 4.0 / 16.0
     simple_fiber = 2.0 / 12.0
@@ -194,19 +200,19 @@ def main() -> int:
             "runner": "scripts/frontier_area_law_primitive_parity_gate_carrier.py",
             "cache": "logs/runner-cache/frontier_area_law_primitive_parity_gate_carrier.txt",
             "expected_pass": 40,
-            "verdict_fragment": "conditional\npositive carrier",
+            "verdict_fragment": "under the full supplied\ncarrier-identification premise",
         },
         {
             "runner": "scripts/frontier_area_law_primitive_car_edge_identification.py",
             "cache": "logs/runner-cache/frontier_area_law_primitive_car_edge_identification.txt",
-            "expected_pass": 36,
-            "verdict_fragment": "remaining\nstatus question",
+            "expected_pass": 45,
+            "verdict_fragment": "CONDITIONAL INSIDE SUPPLIED PRIMITIVE-CAR EDGE AXIOMS",
         },
         {
             "runner": "scripts/frontier_area_law_native_car_semantics_tightening.py",
             "cache": "logs/runner-cache/frontier_area_law_native_car_semantics_tightening.txt",
-            "expected_pass": 23,
-            "verdict_fragment": "rank four alone is\nunderdetermined",
+            "expected_pass": 24,
+            "verdict_fragment": "CONDITIONAL ALGEBRAIC EQUIVALENCE ONLY",
         },
     ]
     for component in components:
@@ -221,7 +227,7 @@ def main() -> int:
         print("Verdict: FAIL; coefficient-gap source packet is not audit-ready.")
         return 1
     print("Verdict: bounded source-packet support. The synthesis is runner-backed")
-    print("and re-auditable, but the rank-four CAR/CIP premise remains explicit;")
+    print("and re-auditable, but support, CAR, and channel premises remain explicit;")
     print("this runner does not assign an audit verdict or retained status.")
     return 0
 

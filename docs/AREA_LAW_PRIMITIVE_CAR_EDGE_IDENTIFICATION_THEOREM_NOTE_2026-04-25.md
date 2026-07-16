@@ -1,30 +1,26 @@
-# Area-Law Primitive CAR Edge Identification Theorem Note
+# Area-Law Conditional Primitive-CAR Edge-Axiom Coefficient Theorem Note
 
 **Date:** 2026-04-25
-**Status:** support / conditional Target 2 bridge; 2026-04-30 carrier
-identification audited_renaming
+**Repair date:** 2026-07-16
+**Stable claim ID:** `area_law_primitive_car_edge_identification_theorem_note_2026-04-25`
+**Status:** conditional support inside supplied primitive-CAR edge axioms; no
+substrate descent, channel forcing, or global carrier-uniqueness claim
 **Runner:** `scripts/frontier_area_law_primitive_car_edge_identification.py`
 
-## Purpose
+## Claim boundary
 
-The primitive parity-gate carrier theorem proves the exact coefficient once the
-two-orbital edge carrier is identified. This note pushes one step deeper: it
-states the minimal local-CAR assumptions under which that carrier is forced by
-the primitive boundary block itself.
+This note proves the following bounded implication:
 
-The result is a conditional bridge:
-
-> If the horizon entropy carrier is the minimal local complex CAR edge algebra
-> supported on the primitive rank-four boundary packet, then the active block
-> is `F(C^2)`, one mode is the normal crossing channel, the other is the
-> self-dual transverse-Laplacian channel, and the Widom coefficient is exactly
+> If the rank-four active block, its two-mode CAR interpretation, one normal
+> edge channel, and one self-dual tangent-Laplacian edge channel are supplied,
+> then the average crossing count is `3` and the Widom coefficient is exactly
 > `1/4`.
 
-This is stronger than the previous multipocket selector statement: the
-half-zone is not an adjustable pocket measure. It is the self-dual half of the
-primitive nearest-neighbor transverse Laplacian.
+Only the rank-to-mode count and the coefficient/measure calculation are
+derived. The substrate does not derive the CAR interpretation, and CAR algebra
+does not derive the normal/tangent channel assignment or their dispersions.
 
-## Primitive-CAR edge axioms
+## Supplied primitive-CAR edge axioms
 
 Let
 
@@ -32,186 +28,169 @@ Let
 H_cell ~= C^2_t otimes C^2_x otimes C^2_y otimes C^2_z ~= C^16
 ```
 
-and let `P_A` be the Hamming-weight-one primitive boundary packet with
-`rank(P_A)=4`.
+and let `P_A` be the Hamming-weight-one packet with `rank(P_A)=4`. For a
+selected face with normal `e_x`, supply all of:
 
-For a selected primitive face with normal `e_x`, assume:
-
-1. **Active support.** The entropy carrier is supported exactly on
-   `P_A H_cell`, with no hidden active spectator sector.
-2. **Minimal complex CAR carrier.** The local edge algebra is a complex CAR
-   Fock algebra `F(C^m)`.
-3. **Primitive normal channel.** One CAR mode is the selected normal crossing
-   channel; as a Widom sector it contributes one occupied `k_x` interval for
-   every transverse momentum.
-4. **Minimal tangent response.** The remaining nontrivial response uses the
-   tangent-symmetric nearest-neighbor transverse Laplacian and the self-dual
-   low sheet.
-5. **No duplicate normal channel.** Distinct primitive modes are not duplicate
-   copies of the same normal channel; the second mode carries the minimal
-   transverse response.
-
-These are the explicit physical assumptions. The theorem below is then
-algebraic and measure-theoretic, with no fitted coefficient.
-
-## Rank-to-CAR step
-
-For a complex CAR Fock algebra,
-
-```text
-dim F(C^m) = 2^m.
-```
-
-Since
-
-```text
-dim(P_A H_cell) = rank(P_A) = 4,
-```
-
-minimal active support forces
-
-```text
-2^m = 4,   m = 2.
-```
-
-Thus the primitive active boundary block has exactly two complex edge orbitals.
-One complex orbital is too small; three are too large. The two-orbital local
-Fock space is not chosen to fit `1/4`: it is forced by the rank-four primitive
-packet once the carrier class is complex CAR.
-
-## Tangent-Laplacian selector step
-
-Let the selected face have `n_perp` tangent primitive directions. The unique
-even nearest-neighbor tangent symbol that is symmetric under tangent-axis
-permutations and normalized to range `[0,2]` is
-
-```text
-Delta_perp(q)
-  = 1 - (1/n_perp) sum_{j=1}^{n_perp} cos(q_j).
-```
-
-The all-tangent half-period involution
-
-```text
-tau(q) = q + pi(1,...,1)
-```
-
-sends
-
-```text
-Delta_perp(tau q) = 2 - Delta_perp(q).
-```
-
-Therefore the threshold `Delta_perp=1` is the unique self-dual threshold, and
-the sheets
-
-```text
-Delta_perp < 1,   Delta_perp > 1
-```
-
-have equal Haar measure. The tangent set `Delta_perp=1` has measure zero. The
-low sheet has normalized measure exactly `1/2`.
-
-This is the missing multipocket selector.
-
-## Edge carrier
-
-The two forced CAR modes are:
-
-1. a baseline normal channel
+1. **Exact active support.** The entropy carrier is exactly `P_A H_cell`, with
+   no active spectator sector.
+2. **Complex-CAR interpretation.** The active algebra is represented as
+   `F(C^m)`.
+3. **Normal-channel axiom.** One CAR mode is assigned the dispersion
+   `epsilon_0(k)=cos(k_x)`, giving two crossings on every transverse fiber.
+4. **Tangent-channel axiom.** The other CAR mode is assigned
+   `epsilon_1(k)=cos(k_x)+Delta_perp(q)` and is active on the self-dual low
+   sheet `Delta_perp(q)<1`.
+5. **Tangent-symbol ansatz.** Within the even, tangent-axis-permutation
+   symmetric, nearest-neighbor affine-cosine class normalized to range
+   `[0,2]`,
 
    ```text
-   epsilon_0(k) = cos(k_x),
+   Delta_perp(q)=1-(1/n_perp) sum_j cos(q_j).
    ```
 
-   which contributes two Fermi crossings on every transverse fiber;
+These are carrier axioms, not consequences of the current minimal retained
+substrate.
 
-2. a self-dual tangent-response channel
+## Derived rank-to-CAR statement
 
-   ```text
-   epsilon_1(k) = cos(k_x) + Delta_perp(q),
-   ```
-
-   which contributes two Fermi crossings exactly on the half-zone
-   `Delta_perp(q)<1`.
-
-The average crossing count is therefore
+Under axioms 1 and 2,
 
 ```text
-<N_x> = 2 + 2*(1/2) = 3.
+dim F(C^m)=2^m=rank(P_A)=4,
 ```
 
-By the Widom-Gioev-Klich formula for a flat primitive cut,
+so `m=2`. This conclusion is conditional on the complex-CAR interpretation.
+A four-dimensional Hilbert space alone also supports ququart and two-qubit
+semantics.
+
+The result `m=2` does not label either orbital as normal or tangent. A unitary
+rotation of the two CAR orbitals preserves the CAR algebra while changing that
+labeling. Axioms 3 and 4 supply the physical assignment.
+
+## Derived half-zone measure
+
+The all-tangent half-period map
 
 ```text
-c_Widom = <N_x> / 12 = 3/12 = 1/4.
+tau(q)=q+pi(1,...,1)
 ```
 
-This matches the primitive Planck trace:
+preserves Haar measure and obeys
 
 ```text
-c_cell = Tr((I_16/16)P_A) = 4/16 = 1/4.
+Delta_perp(tau q)=2-Delta_perp(q).
 ```
 
-## Uniqueness inside the primitive-CAR class
-
-With two CAR modes and one required normal channel, the second mode has only
-three minimal possibilities at the Widom-counting level:
+It exchanges the low and high sheets. The threshold set
+`Delta_perp=1` is the zero set of the nonzero real-analytic function
+`sum_j cos(q_j)` and therefore has Haar measure zero. Hence
 
 ```text
-empty/spectator     -> c = 2/12 = 1/6,
-duplicate normal    -> c = 4/12 = 1/3,
-self-dual tangent   -> c = 3/12 = 1/4.
+mu{Delta_perp<1}=mu{Delta_perp>1}=1/2.
 ```
 
-The primitive-CAR axioms exclude the first by active support and exclude the
-second by no duplicate normal channel. The remaining minimal local tangent
-response is the self-dual Laplacian-gated channel, giving the Bekenstein-
-Hawking coefficient.
+This is exact for the supplied tangent symbol. It is not selected by CAR
+algebra itself.
 
-## What this closes, and audit fallback
+## Derived coefficient
 
-This note closes the carrier-identification step relative to the
-primitive-CAR edge axioms. It upgrades the earlier parity-gate theorem from
-"a candidate multipocket selector" to "the unique minimal local-CAR edge
-carrier."
+Under the supplied channel axioms:
 
-The remaining question was exactly whether the primitive-CAR edge axioms are
-accepted as native `Cl(3)/Z^3` horizon semantics. The Target 3 Clifford phase
-bridge supplies a sufficient metric-compatible coframe response, and the
-2026-04-30 primitive Clifford-Majorana edge derivation attempted to derive
-that response from retained spatial `Cl(3)` bivectors plus the anomaly-forced
-time axis. Audit returned `audited_renaming`: the carrier algebra is verified,
-but the substrate-to-`P_A` forcing step is not derived. This result therefore
-remains a sharp conditional theorem, and the retained no-go packet still
-describes the selector-free surface.
+```text
+normal average crossings  = 2,
+tangent average crossings = 2*(1/2)=1,
+<N_x>                     = 3.
+```
+
+Therefore the flat-cut free-fermion Widom coefficient is
+
+```text
+c_Widom=<N_x>/12=3/12=1/4.
+```
+
+It numerically equals the separate primitive trace
+
+```text
+c_cell=Tr((I_16/16)P_A)=4/16=1/4.
+```
+
+The equality does not turn one quantity into a derivation of the other.
+
+## Limited classification statements
+
+Among only the four enumerated crossing patterns
+
+```text
+normal+empty,
+normal+normal,
+tangent+tangent,
+normal+tangent,
+```
+
+with crossing averages `0`, `2`, and `1` assigned as above, only
+`normal+tangent` yields `1/4`. This is an enumerated-pattern check, not a
+uniqueness theorem over all two-mode CAR Hamiltonians.
+
+Likewise, the displayed `Delta_perp` is unique only inside the supplied
+normalized tangent-symmetric nearest-neighbor affine-cosine ansatz. Longer
+range symbols, anisotropic symbols, additional pockets, other thresholds, and
+orbital mixing are outside that statement.
+
+Indeed, if a second supplied mode is active on a transverse fraction `p`, then
+
+```text
+c(p)=(2+2p)/12.
+```
+
+CAR algebra permits the family; `c(p)=1/4` only when the additional physical
+selector fixes `p=1/2`.
+
+## Retained-surface obstruction and open bridges
+
+The clean substrate bridge fails on the currently supplied event-cell
+representation, as established in
+[PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](./PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md):
+
+- `P_A H_cell` carries spatial substrate content `1+3`, whereas an irreducible
+  `Cl_4(C)` carrier restricts as `2+2`;
+- the exact equivariant intertwiner nullity is zero;
+- the canonical full-cell odd Clifford generators leak out of `P_A` and
+  compress to zero;
+- the intrinsic bilinear algebra can host many Clifford bases but does not
+  select one or assign physical dispersions.
+
+Thus the exact remaining gaps are:
+
+1. substrate-to-`P_A` forcing for a compatible Clifford/CAR response, or a
+   changed retained representation premise;
+2. an intrinsic law selecting a coframe/Majorana pairing on the active block;
+3. a physical edge theorem deriving the normal and self-dual tangent
+   dispersions, including the half-zone selector, from retained dynamics.
+
+Until those gaps close, `1/4` is valid only inside the supplied primitive-CAR
+edge axioms above.
+
+## Relation to the algebraic companion
 
 [AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md](./AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md)
-tightens this question further: primitive-CAR semantics are equivalent to
-accepting irreducible Clifford-Majorana edge statistics on the rank-four
-active block. Rank four alone does not force that statistics choice.
+now states only the conditional finite-algebra equivalence
 
-[PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md](./PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md)
-states the sufficient coframe-response bridge: metric-compatible primitive
-coframe response forces the complex `Cl_4` relations on `P_A H_cell`, and the
-rank-four irreducible module is equivalent to the two-mode CAR carrier. On a
-stripped Hilbert-only surface the conditional wording still applies.
+```text
+irreducible Cl_4(C) on C^4 <-> two-mode complex CAR.
+```
 
-[PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](./PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)
-is the audited-renaming construction of that coframe response: useful as an
-explicit carrier model, but not a derivation of the carrier from the supplied
-substrate content.
+It supplies no substrate-native implication and no channel assignment.
 
-## Relation to retained no-gos
+## Safe wording
 
-- The half-filled nearest-neighbor no-go is untouched; it is a different
-  single-orbital carrier.
-- The simple-fiber Widom no-go is bypassed because the primitive-CAR carrier
-  has two sectors and average crossing count `3`.
-- The multipocket selector no-go is answered by adding the self-dual
-  Laplacian selector and showing it is forced inside the primitive-CAR axioms.
-- The algebraic finite-spectrum no-go is untouched because this is a gapless
-  Widom leading-log carrier, not a finite gapped Schmidt-spectrum entropy.
+> Inside the explicitly supplied primitive-CAR support, normal-channel,
+> tangent-channel, and tangent-symbol axioms, the rank-four block has two CAR
+> modes and the Widom coefficient is exactly `1/4`. The substrate-to-carrier
+> and carrier-to-dispersion bridges remain open.
+
+Unsafe wording includes any claim that rank four or CAR alone forces the
+normal-plus-tangent carrier, that the displayed carrier is globally unique, or
+that the current retained substrate derives the coefficient.
 
 ## Verification
 
@@ -221,13 +200,7 @@ Run:
 python3 scripts/frontier_area_law_primitive_car_edge_identification.py
 ```
 
-The runner checks the rank-to-CAR identification, uniqueness of `m=2`, the
-normal-plus-tangent mode classification, uniqueness of the tangent-symmetric
-nearest-neighbor Laplacian selector, exact half-zone measure in `2D` and `3D`,
-and the final equality `c_Widom=c_cell=1/4`.
-
-Current output:
-
-```text
-SUMMARY: PASS=36  FAIL=0
-```
+The runner checks the conditional rank count, exact half-zone involution,
+finite-grid pair controls, coefficient calculation, alternative selector
+fractions and channel patterns, and source-wording firewalls. It exits nonzero
+on any failed mathematical or claim-boundary check.

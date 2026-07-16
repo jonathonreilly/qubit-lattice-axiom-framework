@@ -18,7 +18,7 @@
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -665,6 +665,69 @@
         "total_pass": 25
       },
       "verdict_rationale": "Issue: the internal odd-dimensional nonexistence result is mathematically supported, but the supplied runner does not provide five distinct N1 mechanism classes or byte-addressable five-resolution N5 evidence required to certify that negative assertion cleanly. Why this blocks: an audited_clean verdict would cement a no-go result without the mandatory N1-N8 stress packet. Repair target: add a current-cycle no-go-discipline runner artifact exercising distinct alternative mechanisms and all required rhetoric-resolution classes. Claim boundary until fixed: the volume-element identity and even-dimensional construction are supported, while the full iff and resulting odd-d_t boundary remain audit-conditional."
+    },
+    {
+      "archived_at": "2026-07-16T02:00:43.649344+00:00",
+      "audit_date": "2026-07-16T02:00:33.951183+00:00",
+      "audit_invocation_history": [
+        "e673fa1bbf2a4394a51b9eb42e51e53d"
+      ],
+      "audit_invocation_id": "e673fa1bbf2a4394a51b9eb42e51e53d",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 10.488,
+        "runner_hash": "0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9",
+        "transitive_descendants": 717
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-clifford_chirality_dimen-105",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic argument and runner support the stated parity result, but the odd-dimensional nonexistence half is a derived no-go boundary. Its mandatory N1-N8 certification is incomplete, so the full iff claim cannot receive a clean terminal verdict from this packet.",
+      "claim_scope": "Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-16T02:00:33.951183+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The Clifford-basis parity condition implies that no nonzero element of Cl(n) anticommutes with every generator for odd n, while for even n a phase-normalized volume element does.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add live N1 alternative-route evidence, the five required N5 resolution-specific checks, an independent N7 steelman resolution, and complete N6/N8 dispositions, then rerun the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "T1, the even-dimensional construction, and the d_s=3 parity specialization are genuine class-A algebra, and all 25 reported checks pass; the accepted Z^3 premise is used within its stated boundary. The artifact also asserts an odd-dimensional no-go boundary, triggering N1-N8. N1 lacks five distinct evidenced attack mechanisms; N2 has only the parity wall; N3 reveals no hidden premise beyond accepted axiom wording; N4 supplies no prior witness; and N5 lacks live checks at all five required resolutions. N6 and N8 are not completely dispositioned and no independent N7 steelman resolution is supplied, so the negative half remains audit-conditional rather than disproved."
     }
   ],
   "prose_corrections": [],

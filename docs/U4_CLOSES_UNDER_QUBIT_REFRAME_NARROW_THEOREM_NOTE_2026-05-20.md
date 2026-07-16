@@ -28,7 +28,8 @@ is the identification of the older U4 bridge with the one-qubit-per-site
 explicit named condition on top of the supplied `M_2(C)` algebra wording.
 
 This note may be cited only as a compatibility/alias map: under the qubit
-baseline, the older U4 open bridge is no longer a separate input. It may not
+baseline with the multiplicity-one condition, the older U4 open bridge reduces
+to that named condition rather than a separate open input. It may not
 be cited as an independent first-principles derivation of the qubit baseline,
 of `M_2(ℂ) ≅ Cl(3,0)`, of the unique faithful module, or of any downstream
 staggered-Dirac substep beyond this alias map.
@@ -197,8 +198,8 @@ condition:
 
 The staggered-Dirac gate's substep 1 thus has only the cross-site
 anticommutation half (JW bridge) and the dimensional-matching half
-(Grassmann forcing bridge) as substantive content — the U4 bridge is
-no longer open under the qubit reframe.
+(Grassmann forcing bridge) as substantive content — the U4 bridge
+reduces to the multiplicity-one condition under the qubit reframe.
 
 ## What this can support after audit
 
@@ -230,12 +231,12 @@ no longer open under the qubit reframe.
 - **Re-derivation of "M_2(ℂ) has a unique faithful complex irrep"** —
   standard simple-matrix-algebra theory (Schur + Wedderburn), cited.
 
-## Admitted inputs
+## Cited inputs
 
-1. **Qubit-per-site baseline of MINIMAL_AXIOMS_2026-06-29** —
-   qubit at every site,
-   equivalently per-site `M_2(ℂ) ≅ Cl(3,0)`. The axiom is the input,
-   not derived here.
+1. **Qubit axiom of MINIMAL_AXIOMS_2026-06-29** —
+   the one-site possibility domain with algebraic presentation
+   `M_2(ℂ) ≅ Cl(3,0)`; the one-qubit-per-site (multiplicity-one) reading is
+   carried as the named condition. The axiom is the input, not derived here.
 2. **Standard simple-matrix-algebra unique-faithful-irrep result** —
    on `M_d(ℂ)`, the unique (up to isomorphism) faithful irreducible
    complex module is `ℂ^d`. Standard finite-dim representation theory

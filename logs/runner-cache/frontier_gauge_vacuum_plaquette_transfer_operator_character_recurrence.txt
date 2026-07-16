@@ -1,80 +1,104 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py
-runner_sha256: 670fe6be455cf02954127ec6f5ccd917164799b0359179ec6c8e37f7e7f75ec4
+runner_sha256: 75a5135ee1509542ca1db2311b475dd81826322df0a56b562c2103f5f084502a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
-==============================================================================
-GAUGE-VACUUM POSITIVE TRANSFER / CHARACTER-RECURRENCE REPAIR
-==============================================================================
+========================================================================================
+GAUGE-VACUUM WILSON TRANSFER / SPATIAL-MIXED SOURCE SUPPORT
+========================================================================================
 
-SU(3) representation-ring witnesses
-  tensor levels checked                 = 0..8
-  dimension sums                        = [1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616]
-  expected dimensions                   = [1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616]
-  minimum truncated coefficient         = 1.030056e-09
-  sampled Wilson Gram minimum eigenvalue= 1.665696e+00
-  negative-beta Gram minimum eigenvalue = -4.483740e+00
+Exact SU(3) character data
+  tensor levels checked                    = 0..8
+  dimension sums                           = [1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616]
+  minimum truncated coefficient            = 1.030056e-09
+  recurrence errors (3,3bar,real)          = 1.361e-13, 1.616e-13, 4.775e-14
+  recurrence symmetry error                = 0.000e+00
+  recurrence compressed spectrum           = [-0.439488, 0.877072]
+  sampled SU(3) Wilson Gram min eigenvalue = 1.665696e+00
 
-SU(3) marked-plaquette recurrence witnesses
-  chi_(1,0) recurrence error            = 1.361e-13
-  chi_(0,1) recurrence error            = 1.616e-13
-  combined source recurrence error      = 4.775e-14
-  compressed recurrence symmetry error  = 0.000e+00
-  compressed recurrence spectrum        = [-0.439488, 0.877072]
+Finite S3 one-plaquette gauge carrier (SUPPORT)
+  link configurations                      = 1296
+  physical class-function dimension        = 3
+  pullback/group basis errors              = 6.661e-16, 2.220e-16
+  Q / T minimum eigenvalues                = 7.565913e-06, 7.443935e-06
+  transfer Gram-factorization error        = 2.220e-16
+  temporal-link/projected-kernel error     = 0.000e+00
+  trace / path sum                         = 1.950324708809 / 1.950324708809
+  spatial mark / path sum                  = 0.197264619367 / 0.197264619367
+  selected spatial source / path sum       = 1.916667254027 / 1.916667254027
+  repeated spatial source / path sum       = 1.851219245209 / 1.851219245209
 
-Exhaustive S3 transfer-factorization witness
-  convolution minimum eigenvalue        = 2.456482e-01
-  gauge-projector idempotence error      = 1.110e-16
-  convolution/projector commutator      = 2.776e-17
-  Q minimum eigenvalue                  = -5.807866e-17
-  transfer minimum eigenvalue           = -2.282425e-17
-  sourced transfer minimum eigenvalue   = -2.214515e-17
-  transfer Gram-factorization error     = 5.551e-16
-  projected mixed-kernel error          = 8.882e-16
-  transfer trace / path sum             = 2.787811478905 / 2.787811478905
-  marked trace / path sum               = 2.853220273574 / 2.853220273574
-  repeated source trace / path sum      = 1.899393076592 / 1.899393076592
-  four-link pullback isometry error      = 3.175e-14
+Mixed two-slice source (SUPPORT)
+  sourced transfer minimum eigenvalue      = 1.491305e-05
+  selected mixed source / path sum         = 2.047889634754 / 2.047889634754
+  repeated mixed source / path sum         = 2.257905743660 / 2.257905743660
+  H Gram minimum eigenvalue                = -5.551115e-17
+  Schur derivative kernel minima m=0..4   = [0.052446357927, 0.183884670732, 0.276025092531, 0.276025092531, 0.29906019798]
+  sourced derivative T minima m=0..4      = [7.443935e-06, 2.6095812e-05, 5.2218267e-05, 3.9162411e-05, 4.5692011e-05]
+  mixed marked trace / path sum            = 0.340898668485 / 0.340898668485
+  mixed derivative / finite difference     = 0.340898668485 / 0.340898669426
+  spatial multiplication-fit residual      = 1.665e-16 (norm 3.248e-16)
+  mixed symmetric-fit residual             = 1.632e-03 (norm 2.509e-03)
+  mixed left/right-fit residuals           = 1.816e-03, 1.816e-03
 
-  [PASS] [THEOREM] tensor powers of 3 direct-sum 3bar have exact nonnegative integer multiplicities
+Hostile controls
+  pointwise-positive symmetric min eig      = -1.000000e+00
+  correct/wrong plaquette gauge errors      = 0.000e+00, 1.500e+00
+  selected-vs-repeated slice mismatch       = 6.544801e-02
+  selected-vs-repeated mixed mismatch       = 2.100161e-01
+  correct/wrong half-weight trace mismatch  = 3.744333e-01
+  correct/wrong Haar trace mismatch         = 4.245432e+09
+  negative effective-coupling min eig       = -6.696686e-04
+
+  [PASS] [SUPPORT] tensor powers of 3 direct-sum 3bar have exact nonnegative integer multiplicities
          checked all dominant weights through tensor level 8
-  [PASS] [THEOREM] the representation-ring decomposition preserves dimension 6^n
+  [PASS] [SUPPORT] the representation-ring decomposition preserves dimension 6^n
          dimension sums = [1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616]
-  [PASS] [THEOREM] positive Taylor weights give nonnegative truncated Wilson coefficients
+  [PASS] [SUPPORT] positive Taylor weights give nonnegative truncated Wilson coefficients
          minimum checked partial coefficient = 1.030056e-09
+  [PASS] [SUPPORT] multiplication by chi_(1,0) obeys the exact SU(3) recurrence
+         maximum error = 1.361e-13
+  [PASS] [SUPPORT] multiplication by chi_(0,1) obeys the exact conjugate recurrence
+         maximum error = 1.616e-13
+  [PASS] [SUPPORT] the real plaquette source obeys the exact six-neighbor recurrence
+         combined error = 4.775e-14, symmetry error = 0.000e+00
   [PASS] [SUPPORT] sampled SU(3) Wilson positive-type Gram matrices are positive semidefinite
          minimum eigenvalue = 1.665696e+00
-  [PASS] [THEOREM] multiplication by chi_(1,0) obeys the exact SU(3) recurrence
-         maximum error = 1.361e-13
-  [PASS] [THEOREM] multiplication by chi_(0,1) obeys the exact conjugate recurrence
-         maximum error = 1.616e-13
-  [PASS] [THEOREM] the real plaquette source obeys the exact six-neighbor recurrence
-         combined error = 4.775e-14, symmetry error = 0.000e+00
-  [PASS] [SUPPORT] finite nonabelian character-exponential convolution is positive and commutes with gauge projection
-         lambda_min(C)=2.456e-01, ||[C,P]||_max=2.776e-17
-  [PASS] [SUPPORT] finite-model gauge-projected Q and half-weight transfer are positive
-         lambda_min(Q)=-5.808e-17, lambda_min(T)=-2.282e-17
-  [PASS] [SUPPORT] the finite-model transfer equals its explicit Gram factorization
-         maximum entry error = 5.551e-16
-  [PASS] [SUPPORT] the finite-model periodic transfer trace equals the exhaustive path sum
-         |trace-path|=7.105e-15, kernel error=8.882e-16
-  [PASS] [SUPPORT] finite-model marked and repeated sources match path sums and preserve positivity
-         marked error=1.421e-14, repeated error=1.021e-14
-  [PASS] [SUPPORT] negative beta is detected outside the nonnegative-coefficient theorem
-         sampled minimum eigenvalue = -4.483740e+00
+  [PASS] [SUPPORT] the finite square pullback is an isometry onto the three class functions
+         errors=6.661e-16, 2.220e-16
+  [PASS] [SUPPORT] the finite gauge-projected transfer is positive and has the explicit Gram factorization
+         lambda_min(Q)=7.566e-06, lambda_min(T)=7.444e-06, factor error=2.220e-16
+  [PASS] [SUPPORT] projected convolution equals temporal-link integration on selected square configurations
+         maximum selected-pair error = 0.000e+00
+  [PASS] [SUPPORT] finite transfer trace and marked spatial insertion equal explicit path sums
+         trace error=4.441e-16, mark error=9.437e-16
+  [PASS] [SUPPORT] selected and repeated spatial sources obey their distinct insertion formulas
+         selected error=1.110e-15, repeated error=2.665e-15
+  [PASS] [SUPPORT] selected and repeated mixed sources match their distinct two-slice path sums
+         lambda_min=1.491e-05, selected error=3.553e-15, repeated error=4.441e-16
+  [PASS] [SUPPORT] mixed source derivatives have H^(circle m) circle exp(gamma H) Schur-power form
+         lambda_min(H)=-5.551e-17, max form error=0.000e+00
+  [PASS] [SUPPORT] the marked mixed insertion matches its path sum and source derivative
+         path error=4.996e-16, finite-difference error=9.419e-10
+  [PASS] [SUPPORT] a mixed two-slice source cannot be silently replaced by one-slice multiplication
+         spatial fit=1.665e-16, mixed sym/left/right=1.632e-03/1.816e-03/1.816e-03
   [PASS] [SUPPORT] pointwise positive symmetry alone does not imply quadratic-form positivity
          counterexample minimum eigenvalue = -1.0
+  [PASS] [SUPPORT] the wrong plaquette word fails gauge invariance while the oriented word passes
+         correct error=0.000e+00, wrong error=1.500e+00
+  [PASS] [SUPPORT] wrong slice placement, half weighting, or Haar normalization changes the path sum
+         slice=6.545e-02, half=3.744e-01, Haar=4.245e+09
+  [PASS] [SUPPORT] negative effective mixed coupling is detected outside the source-positivity domain
+         minimum eigenvalue = -6.696686e-04
   [PASS] [SUPPORT] the compressed recurrence spectrum stays inside the plaquette support interval
          spectrum=[-0.439488, 0.877072]
-  [PASS] [SUPPORT] the four-link plaquette pullback preserves class-character inner products
-         maximum Gram error = 3.175e-14
 
-==============================================================================
-SUMMARY: THEOREM PASS=6 SUPPORT=10 FAIL=0
-==============================================================================
+========================================================================================
+SUMMARY: THEOREM PASS=0 SUPPORT=21 FAIL=0
+========================================================================================
 
 ----- stderr -----
 

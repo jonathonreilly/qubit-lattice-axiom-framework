@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py
-runner_sha256: 9a21307e4888c3f8e6002bb90d94f085b0312236542516a1b4418f8326f6ec36
+runner_sha256: fe5173577579c8fe2b12409074d7d18e1a7913f614b11c5f4b189750901f5bda
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
-GAUGE-VACUUM PLAQUETTE PERRON-STATE REDUCTION
+GAUGE-VACUUM PLAQUETTE PERRON-STATE REDUCTION: FINITE PROXY SUPPORT
 ==============================================================================
 
-Truncated transfer proxy from the explicit character-recurrence operator
+Support-only truncated proxy from the character-recurrence operator
   box size                              = 6 x 6 = 36 states
   proxy transfer parameter tau          = 6.0
   shell deformation coefficients        = (shell=0.15, asym=0.03)
@@ -28,34 +28,38 @@ Thermal-to-Perron convergence witness for J
 
 Symmetry reduction witness
   swap/J commutator error               = 0.000e+00
-  swap/T commutator error               = 3.274e-11
-  Perron swap-invariance error          = 1.251e-15
+  swap/T commutator error               = 5.093e-11
+  Perron swap-invariance error          = 1.034e-15
 
 Jacobi compression witness
   Jacobi dimension                      = 6
-  max Perron-moment mismatch            = 8.882e-16
+  max Perron-moment mismatch            = 1.110e-16
   first Jacobi coefficients             = alpha[:4]=[0.7419122499, 0.4490925275, 0.2767430605, 0.3031525538]
                                          beta[:4]=[0.1601419597, 0.2893923439, 0.327472693, 0.2713503048]
 
-  [PASS] [THEOREM] the explicit source-operator route admits a positivity-improving self-adjoint transfer proxy
+  [PASS] [SUPPORT] the explicit source-operator route admits a positivity-improving self-adjoint transfer proxy
          symmetry error=3.638e-12, min entry=5.380e-02
-  [PASS] [THEOREM] the transfer proxy has one simple strictly positive Perron mode
+  [PASS] [SUPPORT] the transfer proxy has one simple strictly positive Perron mode
          gap=8.895638e+04, positivity floor=9.277243e-05
-  [PASS] [THEOREM] the thermal trace state is exactly the spectral decomposition state and converges to the Perron expectation
-         spectral/direct error=8.882e-16
-  [PASS] [THEOREM] any commuting positivity-preserving symmetry fixes the Perron state
-         commutator=3.274e-11, invariance=1.251e-15
-  [PASS] [THEOREM] the remaining framework-point object is equivalently Jacobi data of J in the Perron state
-         max Jacobi/Perron moment error=8.882e-16
+  [PASS] [SUPPORT] the thermal trace state is exactly the spectral decomposition state and converges to the Perron expectation
+         spectral/direct error=2.220e-16
+  [PASS] [SUPPORT] any commuting positivity-preserving symmetry fixes the Perron state
+         commutator=5.093e-11, invariance=1.034e-15
+  [PASS] [SUPPORT] the plaquette-observable law admits equivalent Jacobi data in the Perron state
+         max Jacobi/Perron moment error=1.110e-16
   [PASS] [SUPPORT] the explicit plaquette-source operator still obeys the conjugation symmetry on the truncated box
          swap/J error=0.000e+00, swap/H error=0.000e+00
   [PASS] [SUPPORT] thermal expectations move monotonically toward the Perron value on the sampled derived-time depths
          errors=['1.573e-01', '5.818e-02', '1.192e-02', '4.561e-04', '6.144e-07']
   [PASS] [SUPPORT] the Jacobi compression is nontrivial rather than rank-one
          jacobi dim=6, max beta=3.275e-01
+  [PASS] [SUPPORT] the transfer source note states the exact A_p/J pullback firewall
+         checks the intertwiner and the explicit non-invariance exclusion
+  [PASS] [SUPPORT] the Perron note inserts A_p in full transfer traces rather than J
+         checks the gauge-space versus local class-function typing
 
 ==============================================================================
-SUMMARY: THEOREM PASS=5 SUPPORT=3 FAIL=0
+SUMMARY: THEOREM PASS=0 SUPPORT=10 FAIL=0
 ==============================================================================
 
 ----- stderr -----

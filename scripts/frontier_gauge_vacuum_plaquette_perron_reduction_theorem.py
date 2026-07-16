@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""
-Exact Perron-state reduction of the explicit plaquette transfer/operator route.
+"""Finite proxy support for the exact Perron-state reduction theorem.
 
-This does not close analytic P(6). It closes the next structural step:
-once the plaquette source operator J is explicit, the transfer state reduces
-exactly to Perron data of the positive one-clock transfer operator, and the
-remaining framework-point object is the Jacobi data of J in that Perron state.
+The analytic theorem is in the paired note and uses the full Wilson transfer
+operator together with the gauge-space plaquette multiplication operator A_p.
+This runner deliberately does not claim to construct that transfer operator:
+it tests generic finite-dimensional Perron/Jacobi mechanics for a recurrence
+proxy and checks the source note's A_p/J scope firewall.
 """
 
 from __future__ import annotations
+
+from pathlib import Path
 
 import numpy as np
 
@@ -23,7 +25,7 @@ SHELL_EPS = 0.15
 ASYM_EPS = 0.03
 
 
-def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM") -> None:
+def check(name: str, condition: bool, detail: str = "", bucket: str = "SUPPORT") -> None:
     global THEOREM_PASS, SUPPORT_PASS, FAIL
     status = "PASS" if condition else "FAIL"
     if condition:
@@ -127,6 +129,18 @@ def conjugation_swap_matrix(weights: list[tuple[int, int]], index: dict[tuple[in
 
 
 def main() -> int:
+    repo_root = Path(__file__).resolve().parents[1]
+    transfer_note = (
+        repo_root
+        / "docs"
+        / "GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md"
+    ).read_text(encoding="utf-8")
+    perron_note = (
+        repo_root
+        / "docs"
+        / "GAUGE_VACUUM_PLAQUETTE_PERRON_REDUCTION_THEOREM_NOTE.md"
+    ).read_text(encoding="utf-8")
+
     jmat, weights, index = build_recurrence_matrix(NMAX)
     diag = np.diag(
         [
@@ -182,10 +196,10 @@ def main() -> int:
     direct_expectation = thermal_state_expectation(tmat, observable, 8)
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE PERRON-STATE REDUCTION")
+    print("GAUGE-VACUUM PLAQUETTE PERRON-STATE REDUCTION: FINITE PROXY SUPPORT")
     print("=" * 78)
     print()
-    print("Truncated transfer proxy from the explicit character-recurrence operator")
+    print("Support-only truncated proxy from the character-recurrence operator")
     print(f"  box size                              = {(NMAX + 1)} x {(NMAX + 1)} = {len(weights)} states")
     print(f"  proxy transfer parameter tau          = {TAU:.1f}")
     print(f"  shell deformation coefficients        = (shell={SHELL_EPS:.2f}, asym={ASYM_EPS:.2f})")
@@ -231,7 +245,7 @@ def main() -> int:
         detail=f"commutator={commute_t_err:.3e}, invariance={invariant_err:.3e}",
     )
     check(
-        "the remaining framework-point object is equivalently Jacobi data of J in the Perron state",
+        "the plaquette-observable law admits equivalent Jacobi data in the Perron state",
         max(moment_errors) < 1.0e-10,
         detail=f"max Jacobi/Perron moment error={max(moment_errors):.3e}",
     )
@@ -253,6 +267,27 @@ def main() -> int:
         jac_dim >= 4 and max(beta) > 1.0e-8,
         detail=f"jacobi dim={jac_dim}, max beta={max(beta) if beta else 0.0:.3e}",
         bucket="SUPPORT",
+    )
+    check(
+        "the transfer source note states the exact A_p/J pullback firewall",
+        (
+            "A_p I_p = I_p J" in transfer_note
+            and (
+                "This theorem does not assert\n\n"
+                "```text\n"
+                "T_beta Range(I_p) subset Range(I_p),\n"
+                "```"
+            ) in transfer_note
+        ),
+        detail="checks the intertwiner and the explicit non-invariance exclusion",
+    )
+    check(
+        "the Perron note inserts A_p in full transfer traces rather than J",
+        (
+            "Tr[T_(L_s,beta)^(L_t) f(A_p)]" in perron_note
+            and "`J` is not inserted directly into a full transfer trace" in perron_note
+        ),
+        detail="checks the gauge-space versus local class-function typing",
     )
 
     print()

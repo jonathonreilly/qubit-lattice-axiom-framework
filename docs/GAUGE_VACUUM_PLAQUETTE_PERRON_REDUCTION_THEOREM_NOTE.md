@@ -1,9 +1,18 @@
 # Gauge-Vacuum Plaquette Perron-State Reduction Theorem
 
 **Date:** 2026-04-16
-**Status:** exact transfer-state reduction theorem on the finite Wilson `3 spatial + 1 derived-time`
-source surface; explicit Perron / Jacobi data at `beta = 6` still open
-**Script:** `scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py`
+**Type:** positive_theorem
+**Claim boundary:** exact Perron and Jacobi-data reduction for the finite
+periodic cubic `SU(3)` Wilson carrier with `L_s >= 2`, normalized Haar measure,
+`beta > 0`, and periodic derived time, conditional on the paired positive
+Wilson transfer theorem; explicit Perron / Jacobi data at `beta = 6` remain
+open.
+**Status authority:** independent audit lane only. This source note does not
+set, apply, or predict an audit outcome.
+**Primary runner:**
+[`scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py`](../scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py)
+**Runner cache:**
+[`logs/runner-cache/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.txt`](../logs/runner-cache/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.txt)
 
 ## Question
 
@@ -50,8 +59,8 @@ That is the right reduced target.
 
 ## Setup
 
-From the exact transfer-operator / character-recurrence theorem already on
-`main`:
+From the paired
+[Wilson transfer / character-recurrence theorem](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md):
 
 - the finite Wilson partition function factors as
   `Z_(L_s,L_t)(beta) = Tr[T_(L_s,beta)^(L_t)]`,
@@ -107,7 +116,8 @@ Perron vector.
 ## Theorem 2: exact symmetry reduction of the Perron state
 
 Any unitary symmetry `S` that commutes with `T_(L_s,beta)` must preserve the
-one-dimensional Perron eigenspace.
+one-dimensional Perron eigenspace. If, in addition, `S` preserves positivity,
+then it fixes the normalized positive Perron vector.
 
 Hence
 
@@ -191,7 +201,9 @@ python3 scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py
 
 Expected summary:
 
-- `THEOREM PASS=0 SUPPORT=10 FAIL=0`
+```text
+SUMMARY: THEOREM PASS=0 SUPPORT=10 FAIL=0
+```
 
 ## Audit dependency repair links
 

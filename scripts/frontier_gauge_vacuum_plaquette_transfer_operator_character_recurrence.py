@@ -781,7 +781,7 @@ def main() -> int:
     )
 
     print("=" * 88)
-    print("GAUGE-VACUUM WILSON TRANSFER / SPATIAL-MIXED SOURCE REPAIR")
+    print("GAUGE-VACUUM WILSON TRANSFER / SPATIAL-MIXED SOURCE SUPPORT")
     print("=" * 88)
     print()
     print("Exact SU(3) character data")

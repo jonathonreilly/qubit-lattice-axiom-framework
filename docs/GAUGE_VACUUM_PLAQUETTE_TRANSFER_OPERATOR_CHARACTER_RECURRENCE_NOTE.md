@@ -26,18 +26,18 @@ the full gauge Hilbert space with a one-plaquette class-function space?
 
 Yes.
 
-The load-bearing sign input is the exact Wilson positive-type theorem proved in
-[`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md):
+The load-bearing sign input is proved self-containedly in Section 2:
 
 ```text
 w_beta(g) = exp[(beta/N) Re Tr_F(g)]
 ```
 
 has nonnegative character coefficients and is a positive-type class function
-for `SU(N)`, `N >= 2`, `beta >= 0`. That theorem proves the open two-slice
-Wilson plane kernel and its integrated reflected Gram on its explicit finite
-open temporal-gauge slab carrier. It does not itself construct a periodic
-transfer operator, a gauge projector, or a marked plaquette insertion.
+for `SU(N)`, `N >= 2`, `beta >= 0`. The earlier open-slab note
+`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+gives a non-load-bearing independent check on an explicit finite open
+temporal-gauge slab. It does not construct the periodic transfer operator,
+gauge projector, or marked plaquette insertions proved here.
 
 This note performs those additional steps. On the finite spatial gauge Hilbert
 space it defines
@@ -184,8 +184,7 @@ expectations.
 
 ## 2. Exact Wilson positive-type input
 
-The landed open-slab theorem cited above proves, for `SU(N)`, `N >= 2`,
-`beta >= 0`, that
+For `SU(N)`, `N >= 2`, `beta >= 0`, the required character expansion is
 
 ```text
 w_beta(g) = sum_lambda a_lambda(beta) chi_lambda(g),
@@ -224,11 +223,10 @@ real inner product `Re Tr(A B^dagger)/N`. Therefore
 This is the exact positive-type statement used below. Pointwise positivity is
 not used as a substitute for quadratic-form positivity.
 
-The same landed theorem proves the integrated Gram on its finite open
-temporal-gauge slab carrier after multiplying by bounded spatial half weights.
-This note uses that result only as an independent open-slab check of the sign
-and half-weight placement. The periodic trace and source identities below are
-derived separately.
+For non-load-bearing comparison, the earlier open-slab note named above also
+proves an integrated Gram on its finite open temporal-gauge slab carrier after
+multiplying by bounded spatial half weights. The periodic trace and source
+identities below are derived separately.
 
 ## 3. Positive gauge-projected transfer operator
 
@@ -663,7 +661,7 @@ step, not a replacement by a one-slice multiplication factor.
 
 ### Proof of positivity
 
-The landed positive-type theorem applies to the marked link with effective
+The Section 2 positive-type proof applies to the marked link with effective
 coupling `gamma >= 0`. All unmarked link convolutions remain positive at
 `beta >= 0`. Their tensor product commutes with `P_G`, so
 
@@ -763,9 +761,8 @@ D_beta,e,m(h)
  = partial_h^m T_beta,e(h) >= 0,
 ```
 
-and `D_beta,e,m(h)` is trace class. Therefore
-
-Because `X` is bounded and the finite carrier is compact, dominated
+and `D_beta,e,m(h)` is trace class. Because `X` is bounded and the finite
+carrier is compact, dominated
 convergence justifies differentiating the kernel/path integral and passing
 `partial_h^m` through the selected trace:
 
@@ -880,8 +877,8 @@ The runner independently checks:
   coupling.
 
 The finite-group and sampled matrix results are support only. The exact
-`SU(N)` proof is the analytic argument in this note and the landed
-positive-type/open-slab theorem it reproduces and extends.
+`SU(N)` proof is the analytic argument in this note; the earlier open-slab
+theorem is non-load-bearing corroborating comparison only.
 
 Expected summary:
 

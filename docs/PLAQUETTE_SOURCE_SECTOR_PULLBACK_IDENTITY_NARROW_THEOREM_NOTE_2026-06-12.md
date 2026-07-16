@@ -10,7 +10,7 @@
 ## One-Hop Authorities
 
 - [GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md) for the full one-clock Wilson transfer, the gauge-space spatial plaquette multiplier `A_p`, and the exact isometric intertwiner `A_p I_p = I_p J`; that note explicitly does not assert transfer invariance of `Range(I_p)`.
-- [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) for the marked source-sector factorization `T_src(beta) = exp[(beta/2) J] D_beta exp[(beta/2) J]`.
+- [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) for the conditional matrix formula `T_beta = exp[(beta/2) J] D_beta exp[(beta/2) J]` after a positive character-diagonal `D_beta` is supplied; not for a Wilson derivation of that hypothesis.
 - [GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md) for the finite local four-link packet `D_beta^loc chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q)`.
 - [GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md) for the bounded residual-environment slot after `D_beta^loc` is stripped.
 - [PLAQUETTE_OBSERVABLE_UNIQUENESS_BOUNDED_NOTE_2026-05-25.md](PLAQUETTE_OBSERVABLE_UNIQUENESS_BOUNDED_NOTE_2026-05-25.md) for the finite Wilson/Haar derivative observable.
@@ -34,11 +34,11 @@ rule to `J` only through the isometry `I_p`. It explicitly does not state that
 `Range(I_p)` is transfer invariant or that any one-plaquette compression
 preserves the full transfer eigenvalue.
 
-The factorization note sharpens the source side. It says `J` acts on the marked-plaquette class-function sector and records the Perron-state reduction language as:
-
-> "reduces exactly to the Perron state"
-
-of the full transfer operator. That is a statement about the large-derived-time full-transfer state. It is not an equality between the full transfer Perron eigenvalue and the landed single-mark source compression eigenvalue.
+The supplied-`D_beta` theorem sharpens only the conditional matrix algebra on
+the marked-plaquette class-function space. It neither derives the physical
+stripped Wilson residual or its character diagonality nor supplies transfer
+invariance of `Range(I_p)` or preservation of the full-transfer Perron
+eigenvalue.
 
 Therefore the full-transfer bridge remains:
 
@@ -50,12 +50,16 @@ for the full one-step transfer. It cannot be applied directly to `lambda_0(T_src
 
 ## Normalization Untangling
 
-The landed source packet is a marked class-function compression:
+The formal source-side packet used by the local falsifier is
 
 ```text
 T_src(beta) = M_beta D_beta^loc C_rho(beta) M_beta,
 M_beta = exp[(beta/2) J].
 ```
+
+This display is a bookkeeping ansatz for the falsifier. It does not derive the
+physical `C_rho(beta)` or establish character diagonality of a stripped Wilson
+residual.
 
 Its three Hellmann-Feynman pieces are:
 
@@ -191,11 +195,19 @@ It does not assert that every future physical residual-environment pullback is i
 
 **N2 wall-independence audit.**
 
-| wall | meaning | independent notes |
-|---|---|---|
-| W1 | No current eigenvalue-preserving restriction theorem from full transfer to `T_src`. | Closing W1 would not erase the local-packet series mismatch. |
-| W2 | Raw dressed local-packet identity fails at exact order `beta^5`. | Closing W2 would not supply the physical residual environment. |
-| W3 | Physical residual environment and its beta derivative remain uncomputed for this pullback. | Closing W3 would not by itself prove the full eigenvalue restriction. |
+The broad program has three named walls:
+
+- `W1`: no current eigenvalue-preserving restriction theorem from the full
+  transfer to `T_src`;
+- `W2`: the raw dressed local-packet identity fails at exact order `beta^5`;
+- `W3`: the physical residual environment and its beta derivative remain
+  uncomputed for this pullback.
+
+| wall pair | closing the first closes the second? | closing the second closes the first? | independent? |
+|---|---|---|---|
+| W1 / W2 | no: an eigenvalue-preserving restriction would not erase the exact local-packet series mismatch | no: the local-packet mismatch does not decide full-transfer restriction | yes |
+| W1 / W3 | no: a restriction theorem would not compute the physical residual environment | no: computing the residual environment would not prove transfer invariance or eigenvalue preservation | yes |
+| W2 / W3 | no: the exact `rho=1` mismatch does not compute the physical residual environment | no: a physical residual packet could repair the broad program but cannot erase the raw `rho=1` mismatch | yes |
 
 The collapsed wall set is `{W1, W2, W3}` for the broad program, but the shipped negative uses only W1 and W2. W3 is kept as an open target.
 

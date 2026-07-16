@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py
-runner_sha256: 6d67465b52c4e07b020626ce77813e5c60ea8c31050f3093c8e5707f6fa97a58
+runner_sha256: 75a5135ee1509542ca1db2311b475dd81826322df0a56b562c2103f5f084502a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 ========================================================================================
-GAUGE-VACUUM WILSON TRANSFER / SPATIAL-MIXED SOURCE REPAIR
+GAUGE-VACUUM WILSON TRANSFER / SPATIAL-MIXED SOURCE SUPPORT
 ========================================================================================
 
 Exact SU(3) character data

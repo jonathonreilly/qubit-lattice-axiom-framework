@@ -29,7 +29,9 @@ witness sourcing (Wilson character integrals); it consumes the bounded
 companion's rho_(p,q)(6) values only as input for the (U5) cross-check.
 The runner's load-bearing claim is the algebraic uniqueness of (S), not
 the numerical value of the canonical Wilson single-link boundary character
-coefficients.
+coefficients.  A hostile positive self-adjoint swap-symmetric off-diagonal
+residual is included to show that stripping uniqueness does not imply
+character diagonality.
 """
 
 from __future__ import annotations
@@ -302,31 +304,33 @@ def main() -> int:
     # (U3c) INJECTIVITY: distinct residuals yield distinct kernels.
     K_distinctness = mp_max_abs_diff(K1, K2)
 
-    # (U4) STRUCTURAL CLASS TRANSPORT: build K self-adjoint + conjugation-
-    # symmetric from a conjugation-symmetric positive diagonal R, recover via
-    # (S), and check the recovered R is also self-adjoint and conjugation-
-    # symmetric. The averaging is done in mpmath so the swap-symmetry of R
-    # is exact at mpmath precision, not at float64 precision.
-    diag_sym_raw = rng.uniform(0.1, 1.0, size=n)
-    diag_sym_mp = [mp.mpf(float(x)) for x in diag_sym_raw]
-    for k, (p, q) in enumerate(weights):
-        k_swap = index[(q, p)]
-        if k_swap > k:
-            avg = (diag_sym_mp[k] + diag_sym_mp[k_swap]) / mp.mpf(2)
-            diag_sym_mp[k] = avg
-            diag_sym_mp[k_swap] = avg
-    R_sym = mp.zeros(n, n)
-    for i in range(n):
-        R_sym[i, i] = diag_sym_mp[i]
-    K_sym = reconstruct(R_sym)
+    # (U4) HOSTILE CONTROL: the conjugate pair (0,1),(1,0) has equal D
+    # entries.  Therefore C=I+|v><v| with v=e_(0,1)+e_(1,0) is positive
+    # definite, self-adjoint, swap-symmetric, commutes with D, and has explicit
+    # off-diagonal character mixing.  K=M D C M is consequently positive,
+    # self-adjoint, and swap-symmetric, but stripping recovers the non-diagonal
+    # C exactly.  This refutes structural-class-to-diagonality transport.
+    hostile_vector = mp.zeros(n, 1)
+    hostile_vector[index[(0, 1)]] = 1
+    hostile_vector[index[(1, 0)]] = 1
+    R_hostile = mp.eye(n) + hostile_vector * hostile_vector.T
+    K_hostile = reconstruct(R_hostile)
+    K_hostile_min_eig = float(
+        np.min(np.linalg.eigvalsh(mp_to_np(K_hostile)))
+    )
 
-    K_sym_self_adj_err = mp_max_abs_diff(K_sym, K_sym.T)
-    K_sym_swap_err = mp_max_abs_diff(swap * K_sym, K_sym * swap)
+    K_hostile_self_adj_err = mp_max_abs_diff(K_hostile, K_hostile.T)
+    K_hostile_swap_err = mp_max_abs_diff(swap * K_hostile, K_hostile * swap)
 
-    R_sym_recovered = strip(K_sym)
-    R_recovered_self_adj_err = mp_max_abs_diff(R_sym_recovered, R_sym_recovered.T)
-    R_recovered_swap_err = mp_max_abs_diff(swap * R_sym_recovered, R_sym_recovered * swap)
-    R_recovered_diag_err = mp_off_diag_max(R_sym_recovered)
+    R_hostile_recovered = strip(K_hostile)
+    hostile_round_trip_err = mp_max_abs_diff(R_hostile_recovered, R_hostile)
+    R_recovered_self_adj_err = mp_max_abs_diff(
+        R_hostile_recovered, R_hostile_recovered.T
+    )
+    R_recovered_swap_err = mp_max_abs_diff(
+        swap * R_hostile_recovered, R_hostile_recovered * swap
+    )
+    R_recovered_diag_err = mp_off_diag_max(R_hostile_recovered)
 
     # (U5) FINITE-BOX AGREEMENT WITH THE BOUNDED COMPANION:
     # Build K from R[rho(6)] with rho(6) = canonical Wilson single-link
@@ -375,12 +379,13 @@ def main() -> int:
     print(f"  ||K1 - K2|| (kernel distinctness)     = {K_distinctness:.3e}")
     print(f"  ||R1 - R2|| (residual distinctness)   = {distinct_residual_err:.6e}")
     print()
-    print("Structural class transport (mpmath, dps=60)")
-    print(f"  K_sym self-adj err                    = {K_sym_self_adj_err:.3e}")
-    print(f"  K_sym swap err                        = {K_sym_swap_err:.3e}")
-    print(f"  recovered R self-adj err              = {R_recovered_self_adj_err:.3e}")
-    print(f"  recovered R swap err                  = {R_recovered_swap_err:.3e}")
-    print(f"  recovered R off-diagonal err          = {R_recovered_diag_err:.3e}")
+    print("Hostile structural control (mpmath, dps=60)")
+    print(f"  K_hostile self-adj err                = {K_hostile_self_adj_err:.3e}")
+    print(f"  K_hostile swap err                    = {K_hostile_swap_err:.3e}")
+    print(f"  hostile stripping round-trip err      = {hostile_round_trip_err:.3e}")
+    print(f"  recovered C self-adj err              = {R_recovered_self_adj_err:.3e}")
+    print(f"  recovered C swap err                  = {R_recovered_swap_err:.3e}")
+    print(f"  recovered C off-diagonal magnitude    = {R_recovered_diag_err:.3e}")
     print()
     print("Bounded-companion cross-check (canonical Wilson rho(6), mpmath)")
     print(f"  rho_(0,0)(6)                          = {rho_6[index[(0,0)]]:.16f}")
@@ -411,11 +416,13 @@ def main() -> int:
         detail=f"||R2 - strip(reconstruct(R2))||={round_trip_err_R2:.3e}, ||R1 - R2||={distinct_residual_err:.3e}, ||K1 - K2||={K_distinctness:.3e}",
     )
     check(
-        "(U4) when K_beta^src|_B is self-adjoint and conjugation-symmetric, the recovered R_beta^env|_B from (S) is also self-adjoint, conjugation-symmetric, and diagonal in the character basis on the finite box (mpmath)",
-        K_sym_self_adj_err < TOL and K_sym_swap_err < TOL
+        "(U4 hostile) positive self-adjoint swap-symmetric kernel data can strip to a positive self-adjoint swap-symmetric operator with off-diagonal character mixing",
+        K_hostile_min_eig > 0.0
+        and K_hostile_self_adj_err < TOL and K_hostile_swap_err < TOL
+        and hostile_round_trip_err < TOL
         and R_recovered_self_adj_err < TOL and R_recovered_swap_err < TOL
-        and R_recovered_diag_err < TOL,
-        detail=f"K sym/swap=({K_sym_self_adj_err:.3e},{K_sym_swap_err:.3e}); R sym/swap/diag=({R_recovered_self_adj_err:.3e},{R_recovered_swap_err:.3e},{R_recovered_diag_err:.3e})",
+        and R_recovered_diag_err > 0.5,
+        detail=f"min eig(K)={K_hostile_min_eig:.3e}; K sym/swap=({K_hostile_self_adj_err:.3e},{K_hostile_swap_err:.3e}); round-trip={hostile_round_trip_err:.3e}; C sym/swap/offdiag=({R_recovered_self_adj_err:.3e},{R_recovered_swap_err:.3e},{R_recovered_diag_err:.3e})",
     )
     check(
         "(U5) when K_6^src|_B is constructed from the bounded companion's canonical Wilson rho_(p,q)(6) coefficients, (S) recovers a diagonal operator whose entries equal rho_(p,q)(6) on the finite box (mpmath)",
@@ -425,7 +432,7 @@ def main() -> int:
 
     # ---- SUPPORT CHECKS ----
     check(
-        "the source operator J|_B is real symmetric and swap-invariant on the finite box (substantiates self-adjointness of M and structural-class transport in (U4))",
+        "the source operator J|_B is real symmetric and swap-invariant on the finite box",
         j_sym_err < 1.0e-15 and j_swap_err < 1.0e-12,
         detail=f"||J - J^T||={j_sym_err:.3e}, ||[S,J]||={j_swap_err:.3e}",
         bucket="SUPPORT",

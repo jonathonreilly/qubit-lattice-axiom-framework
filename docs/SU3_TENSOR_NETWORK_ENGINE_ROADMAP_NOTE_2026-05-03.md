@@ -10,16 +10,16 @@ the open native bridge gate
 
 ## 0. Why this engine
 
-The framework's source-sector factorization
+The current finite reference model uses the conditional operator
 
 ```text
 T_src(6) = exp(3 J) D_6^loc C_(Z_6^env) exp(3 J)
 ```
 
-reduces the gauge-scalar temporal observable bridge to one missing
-non-perturbative datum: the boundary character measure `rho_(p,q)(6)`
-of the unmarked 3D spatial Wilson environment with marked-plaquette
-boundary holonomy held fixed
+with a supplied diagonal `rho`. Completing the physical gauge-scalar bridge
+requires both the non-perturbative boundary data and a load-bearing
+operator-compression theorem showing that the stripped Wilson residual is a
+central convolution/character-diagonal operator
 ([`GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md)).
 
 On the V-invariant minimal block (L_s = 2 APBC spatial cube) this is
@@ -237,7 +237,8 @@ independent audit.
 **Computation:**
 1. Construct the cube `LatticeGraph` (PR 4 input).
 2. Extract `rho_(p,q)(6)` via `extract_rho` (PR 4 output).
-3. Build the source-sector operator
+3. Conditional on proving that compression/diagonality bridge, build the
+   source-sector operator
    `T_src(6) = exp(3 J) D_6^loc C_(Z_6^env) exp(3 J)` using
    `rho_(p,q)(6)`.
 4. Solve the Perron eigenvector and compute

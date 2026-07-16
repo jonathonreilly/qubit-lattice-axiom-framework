@@ -16,7 +16,6 @@ from dataclasses import dataclass
 from math import exp, log
 from pathlib import Path
 import sys
-import time
 
 import numpy as np
 from scipy.sparse import csr_matrix, identity
@@ -191,14 +190,12 @@ def coefficient_table(beta: int, max_shell: int, mode_max: int = MODE_MAX) -> di
         return cached
 
     arg = beta / 3.0
-    started = time.time()
     table: dict[tuple[int, int], float] = {}
     for p, q in weights_box(max_shell):
         table[(p, q)] = src_existing.wilson_character_coefficient(p, q, mode_max, arg)
     print(
         f"coeff_table beta={beta:>3} shell={max_shell:>2} "
-        f"states={(max_shell + 1) ** 2} mode_max={mode_max} "
-        f"elapsed={time.time() - started:.2f}s"
+        f"states={(max_shell + 1) ** 2} mode_max={mode_max}"
     )
     COEFF_CACHE[key] = table
     return table
@@ -462,7 +459,6 @@ def main() -> int:
 
     required_links = [
         "[GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md)",
-        "[GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)",
         "[WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md](WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md)",
     ]
     check(

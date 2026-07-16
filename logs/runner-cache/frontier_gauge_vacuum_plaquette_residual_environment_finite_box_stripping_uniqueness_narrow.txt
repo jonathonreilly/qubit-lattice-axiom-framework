@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow.py
-runner_sha256: 62b4f0b858a3afdda14bd69efcc328b4e2854f137477d4d770aa12d5d1e450a4
+runner_sha256: eecb8a83b53fef204496e8525392bee204a96c7a4da8da6a97a43d5e845fea06
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.66
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -30,12 +30,13 @@ Algebraic stripping round-trip (mpmath, dps=60)
   ||K1 - K2|| (kernel distinctness)     = 6.568e-01
   ||R1 - R2|| (residual distinctness)   = 6.704464e-01
 
-Structural class transport (mpmath, dps=60)
-  K_sym self-adj err                    = 1.945e-62
-  K_sym swap err                        = 0.000e+00
-  recovered R self-adj err              = 5.122e-51
-  recovered R swap err                  = 8.714e-56
-  recovered R off-diagonal err          = 5.122e-51
+Hostile structural control (mpmath, dps=60)
+  K_hostile self-adj err                = 3.889e-62
+  K_hostile swap err                    = 0.000e+00
+  hostile stripping round-trip err      = 7.518e-51
+  recovered C self-adj err              = 7.518e-51
+  recovered C swap err                  = 1.605e-55
+  recovered C off-diagonal magnitude    = 1.000e+00
 
 Bounded-companion cross-check (canonical Wilson rho(6), mpmath)
   rho_(0,0)(6)                          = 1.0000000000000000
@@ -51,11 +52,11 @@ Bounded-companion cross-check (canonical Wilson rho(6), mpmath)
          ||R1 - strip(reconstruct(R1))||=2.471e-51
   [PASS] [THEOREM] (U3b) the stripping identity (S) recovers a SECOND, distinct positive diagonal candidate residual R2 exactly from K = reconstruct(R2) on the finite box, establishing that (S) is a function (no admissibility freedom in the stripped residual)
          ||R2 - strip(reconstruct(R2))||=5.287e-51, ||R1 - R2||=6.704e-01, ||K1 - K2||=6.568e-01
-  [PASS] [THEOREM] (U4) when K_beta^src|_B is self-adjoint and conjugation-symmetric, the recovered R_beta^env|_B from (S) is also self-adjoint, conjugation-symmetric, and diagonal in the character basis on the finite box (mpmath)
-         K sym/swap=(1.945e-62,0.000e+00); R sym/swap/diag=(5.122e-51,8.714e-56,5.122e-51)
+  [PASS] [THEOREM] (U4 hostile) positive self-adjoint swap-symmetric kernel data can strip to a positive self-adjoint swap-symmetric operator with off-diagonal character mixing
+         min eig(K)=1.038e-13; K sym/swap=(3.889e-62,0.000e+00); round-trip=7.518e-51; C sym/swap/offdiag=(7.518e-51,1.605e-55,1.000e+00)
   [PASS] [THEOREM] (U5) when K_6^src|_B is constructed from the bounded companion's canonical Wilson rho_(p,q)(6) coefficients, (S) recovers a diagonal operator whose entries equal rho_(p,q)(6) on the finite box (mpmath)
          ||R[rho(6)] - strip(...)||=2.213e-51, off-diag=2.213e-51, diag match=7.721e-53
-  [PASS] [SUPPORT] the source operator J|_B is real symmetric and swap-invariant on the finite box (substantiates self-adjointness of M and structural-class transport in (U4))
+  [PASS] [SUPPORT] the source operator J|_B is real symmetric and swap-invariant on the finite box
          ||J - J^T||=0.000e+00, ||[S,J]||=0.000e+00
   [PASS] [SUPPORT] the bounded companion's rho_(0,0)(6) = 1 normalization is reproduced exactly by the local Wilson factor diagonal entry consumed here (consistent normalization across the two sister bounded notes)
          rho_(0,0)(6) = 1.0000000000000000
@@ -65,3 +66,6 @@ Bounded-companion cross-check (canonical Wilson rho(6), mpmath)
 ==============================================================================
 SUMMARY: THEOREM PASS=6 SUPPORT=3 FAIL=0
 ==============================================================================
+
+----- stderr -----
+

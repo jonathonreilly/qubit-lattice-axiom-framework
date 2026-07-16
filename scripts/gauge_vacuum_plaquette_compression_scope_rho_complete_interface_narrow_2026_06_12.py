@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Finite checks for the rho-complete compression-scope theorem.
+"""Finite checks for the supplied-rho conditional interface theorem.
 
 The runner stays inside repo-internal finite packets:
 
@@ -7,10 +7,10 @@ The runner stays inside repo-internal finite packets:
 * source readout NMAX=7 and MODE_MAX=200;
 * existing source Perron machinery with rho supplied as input.
 
-It checks that the marked source-sector readout is a function of the diagonal
-rho interface alone.  The off-diagonal perturbation constructed below is a
-finite non-central environment-operator direction with zero diagonal, so every
-rho_(p,q) coefficient is fixed by construction.
+It checks readouts after rho has explicitly been supplied as a diagonal input.
+The off-diagonal perturbation is a hostile control: a diag-only helper erases
+that direction, so unchanged projected output is evidence of information loss,
+not a proof that a physical Wilson residual is character-diagonal.
 """
 
 from __future__ import annotations
@@ -26,6 +26,9 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 import gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11 as one_word
+from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
+    exact_small_case as source_factorization_exact_small_case,
+)
 
 
 AUDIT_TIMEOUT_SEC = 600
@@ -107,13 +110,6 @@ def off_diagonal_perturbation(
     return perturb
 
 
-def note_text() -> str:
-    try:
-        return NOTE_PATH.read_text(encoding="utf-8")
-    except OSError:
-        return ""
-
-
 def main() -> int:
     print("Gauge-vacuum plaquette compression-scope rho-complete interface runner")
     print(
@@ -186,7 +182,7 @@ def main() -> int:
         f"P_triv={anchors['P_triv']:.15f}, P_packet={p_packet:.15f}, P_loc={anchors['P_loc']:.15f}",
     )
 
-    section("Part 4: non-central perturbation with fixed rho")
+    section("Part 4: hostile control for a lossy diag-only interface")
     env_central = np.diag(rho_packet)
     f_idx = tensor_index[FUND]
     adj_idx = tensor_index[ADJOINT]
@@ -217,48 +213,43 @@ def main() -> int:
         and np.count_nonzero(np.diag(perturb)) == 0,
     )
     check(
-        "off-diagonal perturbation leaves every tensor rho coefficient fixed",
+        "diag-only extraction leaves every tensor rho coefficient fixed",
         np.array_equal(rho_from_central, rho_from_perturbed),
     )
     check(
-        "embedded source rho vector is bitwise unchanged",
+        "the raw environment operators are nevertheless different",
+        not np.array_equal(env_central, env_perturbed),
+    )
+    check(
+        "the embedded rho vector is unchanged only after the lossy diagonal projection",
         np.array_equal(rho_packet_source, rho_perturbed_source),
     )
     check(
-        "marked source readout is exactly unchanged after the rho interface",
-        p_packet == p_perturbed,
+        "unchanged projected readout demonstrates helper information loss rather than raw-operator completeness",
+        p_packet == p_perturbed and not np.array_equal(env_central, env_perturbed),
         f"base={p_packet:.17g}, perturbed={p_perturbed:.17g}",
     )
 
-    section("Part 5: note hygiene")
-    text = note_text()
-    expected_links = [
-        "[GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md]",
-        "[GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md]",
-        "[GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md]",
-        "[GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md]",
-    ]
-    check("note file exists and is readable", bool(text))
+    section("Part 5: durable interface semantics")
+    source_exact = source_factorization_exact_small_case()
+    check("paired theorem note exists as a durable repository file", NOTE_PATH.is_file())
     check(
-        "note delegates status to the independent audit lane",
-        "Status authority:** independent audit lane only" in text
-        or "Status authority: independent audit lane only" in text,
+        "copying an equal supplied rho vector leaves the operator readout unchanged",
+        source_p(setup, rho_packet_source.copy()) == p_packet,
     )
     check(
-        "one-hop authorities are markdown links",
-        all(link in text for link in expected_links),
-    )
-    branch_local_ref_prefix = "." + "claude/"
-    check(
-        "durable context pointers are plain-text paths",
-        "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_PERRON_DERIVED_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-11.md" in text
-        and "docs/GAUGE_VACUUM_PLAQUETTE_WIDTH_REDUCTION_MAP_DERIVED_COUPLED_LIFT_BOUNDED_NOTE_2026-06-12.md" in text
-        and branch_local_ref_prefix not in text,
+        "diagonal extraction is idempotent on an already diagonal supplied operator",
+        np.array_equal(diagonal_interface(env_central), rho_packet),
     )
     check(
-        "note names the theorem lane and its outside-scope observables",
-        "source-sector readouts of the factorized marked plaquette kernel" in " ".join(text.split())
-        and "observables outside the marked source-sector kernel" in " ".join(text.split()),
+        "the hostile raw operator cannot be reconstructed from its diagonal interface",
+        not np.array_equal(np.diag(diagonal_interface(env_perturbed)), env_perturbed),
+    )
+    check(
+        "the primary exact hostile control independently rejects a kappa-only physical inference",
+        bool(source_exact["formula_exact"])
+        and bool(source_exact["hostile_mixing"])
+        and bool(source_exact["shadow_fails"]),
     )
 
     print()

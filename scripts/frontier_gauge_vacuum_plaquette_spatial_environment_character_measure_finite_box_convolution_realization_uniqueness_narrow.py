@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Narrow finite-box inverse Peter-Weyl convolution-realization uniqueness
-runner for the plaquette spatial-environment character-measure note.
+runner for a supplied positive character-diagonal operator.
 
 Verifies the standalone finite-truncation algebraic identity stated in
 
@@ -17,20 +17,19 @@ on the finite weight box B = {(p, q) : 0 <= p, q <= 4}. Specifically:
        in B, with character-coefficient agreement checked by Haar
        inner-product expansion against rho_(p,q);
 
-  (M2) forward convolution-realization at finite-box scope:
-       C_(Z_beta^env|_B) chi_(p,q) = rho_(p,q) chi_(p,q),
-       and R_beta^env|_B = C_(Z_beta^env|_B)|_B to machine precision in
-       operator norm;
+  (M2) forward scale-divided convolution-realization at finite-box scope:
+       C_(Z_beta^env|_B/z_00) chi_(p,q) = rho_(p,q) chi_(p,q),
+       and R_beta^env|_B = C_(Z_beta^env|_B/z_00)|_B to machine precision
+       in operator norm;
 
   (M3) inverse Peter-Weyl finite-box uniqueness: for a perturbed
        eigenvalue sequence, the resulting normalized truncated class
        function is distinct from the original and the eigenvalue recovery
        recovers exactly the perturbed eigenvalues, not the original;
 
-  (M4) joint uniqueness at finite-box scope: the constructed pair
-       (R_beta^env|_B, Z_beta^env|_B / z_00) is the unique pair
-       satisfying both block 17's stripping-uniqueness and (M3)'s
-       inverse Peter-Weyl uniqueness;
+  (M4) conditional uniqueness at finite-box scope: once diagonal R|_B is
+       supplied, the normalized finite character polynomial realizing it
+       by convolution is unique;
 
   (M5) witness-source consistency: instantiating rho := rho(6) from the
        bounded companion gives a Z_(6)^env|_B that equals the canonical
@@ -41,6 +40,8 @@ on the finite weight box B = {(p, q) : 0 <= p, q <= 4}. Specifically:
        character-coefficient inversion.
 
 This runner does NOT:
+- derive character diagonality for a stripped Wilson residual,
+- identify a supplied diagonal R|_B with the physical multi-link environment,
 - compute an all-weight closed-form Z_beta^env(W) outside B,
 - close the unmarked spatial Wilson tensor-transfer / Perron problem,
 - close analytic P(6),
@@ -150,7 +151,8 @@ def normalized_convolution_eigenvalues(
     Z|_B and the normalization z_00, compute the normalized convolution
     operator's eigenvalues on chi_(p,q):
 
-      C_Z chi_(p,q) = rho_(p,q) chi_(p,q),  rho_(p,q) = Z_coeffs[i] / (z_00 * d_i).
+      C_(Z/z_00) chi_(p,q) = rho_(p,q) chi_(p,q),
+      rho_(p,q) = Z_coeffs[i] / (z_00 * d_i).
 
     This is the bounded-companion (N2) convolution-on-characters identity
     used as a black-box forward direction; the inverse direction (M3) is
@@ -164,7 +166,7 @@ def normalized_convolution_eigenvalues(
 
 
 def main() -> int:
-    print("Block 19 inverse Peter-Weyl finite-box convolution-realization")
+    print("Finite-box inverse Peter-Weyl convolution-realization")
     print(f"uniqueness runner -- NMAX={NMAX}, beta={BETA}, |B|={(NMAX+1)**2}.")
     print()
 
@@ -215,22 +217,22 @@ def main() -> int:
     )
 
     # ---- M2: forward convolution-realization on H_B
-    # C_(Z|_B) chi_(p,q) = rho_(p,q) chi_(p,q), recovered by dividing the
+    # C_(Z|_B/z_00) chi_(p,q) = rho_(p,q) chi_(p,q), recovered by dividing the
     # Peter-Weyl coefficient by z_00 d_(p,q) and reading off the eigenvalue.
     eigs_recovered = normalized_convolution_eigenvalues(Z_coeffs, z00)
     eig_match_err = float(np.max(np.abs(eigs_recovered - rho)))
     check(
-        "(M2) C_(Z|_B) chi_(p,q) = rho_(p,q) chi_(p,q) (eigenvalue recovery)",
+        "(M2) C_(Z|_B/z_00) chi_(p,q) = rho_(p,q) chi_(p,q) (eigenvalue recovery)",
         eig_match_err == 0.0,
         f"eigenvalue recovery max error = {eig_match_err:.3e}",
     )
-    # Operator equality R = C_(Z|_B) in operator norm on H_B
-    C_Z = np.diag(eigs_recovered)
-    op_norm_err = float(np.linalg.norm(R - C_Z, ord=2))
+    # Operator equality R = C_(Z|_B/z_00) in operator norm on H_B
+    C_Z_over_z00 = np.diag(eigs_recovered)
+    op_norm_err = float(np.linalg.norm(R - C_Z_over_z00, ord=2))
     check(
-        "(M2) R_beta^env|_B = C_(Z_beta^env|_B)|_B in operator norm",
+        "(M2) R_beta^env|_B = C_(Z_beta^env|_B/z_00)|_B in operator norm",
         op_norm_err == 0.0,
-        f"||R - C_Z||_2 = {op_norm_err:.3e}",
+        f"||R - C_(Z/z_00)||_2 = {op_norm_err:.3e}",
     )
 
     # ---- M3: inverse Peter-Weyl finite-box uniqueness via perturbation check
@@ -268,8 +270,8 @@ def main() -> int:
         distinct_err > 0.0,
         f"max coefficient difference = {distinct_err:.3e}",
     )
-    # The eigenvalue recovery on Z'|_B returns rho_prime, not rho. The check
-    # is: C_(Z'|_B) chi_(p,q) = rho'_(p,q) chi_(p,q), i.e. eigenvalue
+    # The eigenvalue recovery on Z'|_B/z_00 returns rho_prime, not rho. The
+    # check is: C_(Z'|_B/z_00) chi_(p,q) = rho'_(p,q) chi_(p,q), i.e. eigenvalue
     # extraction from Z'|_B coefficients returns rho_prime.
     eigs_prime_recovered = normalized_convolution_eigenvalues(Z_prime_coeffs, z00)
     inverse_recovery_err = float(np.max(np.abs(eigs_prime_recovered - rho_prime)))
@@ -283,12 +285,10 @@ def main() -> int:
         f"{inverse_recovery_returns_original:.3e}",
     )
 
-    # ---- M4: joint uniqueness at finite-box scope
+    # ---- M4: conditional uniqueness at finite-box scope
     # Construct the pair (R, Z|_B / z_00) and verify that perturbing either
-    # side breaks the (E') equality. (Block 17's stripping-uniqueness is
-    # exterior context; here we verify the inverse-side uniqueness piece
-    # explicitly by demonstrating that the unique pair satisfies (E') and
-    # any perturbation breaks it.)
+    # side breaks the (E') equality.  R is an explicit diagonal input here;
+    # no property of a physical stripped Wilson operator is inferred.
     norm_Z_constructed = norm_Z
     R_constructed = R
     # Recover R from norm_Z_constructed via eigenvalue extraction
@@ -298,7 +298,7 @@ def main() -> int:
     R_recovered = np.diag(eigs_from_norm_Z)
     forward_recovery_err = float(np.linalg.norm(R_constructed - R_recovered, ord=2))
     check(
-        "(M4) joint uniqueness: R recovered from norm_Z matches R_constructed",
+        "(M4) conditional uniqueness: supplied R recovered from norm_Z matches R_constructed",
         forward_recovery_err < 1e-12,
         f"||R - R_recovered||_2 = {forward_recovery_err:.3e}",
     )
@@ -313,7 +313,7 @@ def main() -> int:
     )
     pair_break_err = float(np.linalg.norm(R_constructed - R_perturbed, ord=2))
     check(
-        "(M4) perturbing norm_Z breaks the (E') equality (uniqueness reverse direction)",
+        "(M4) perturbing norm_Z breaks equality with the supplied R",
         pair_break_err > 0.0,
         f"||R - R_perturbed||_2 = {pair_break_err:.3e}",
     )
@@ -336,7 +336,7 @@ def main() -> int:
             canonical_wilson_match_err, float(abs(Z_coeffs[i] - canonical))
         )
     check(
-        "(M5) Z|_B equals canonical Wilson boundary class function truncation",
+        "(M5) supplied single-link Wilson packet reproduces its own finite character polynomial",
         canonical_wilson_match_err < 1e-12,
         f"|Z_coeff - c_(p,q)(6)| max = {canonical_wilson_match_err:.3e}",
     )
@@ -379,38 +379,25 @@ def main() -> int:
         f"checked {sym_size} characters in B_SYM",
     )
 
-    # Symbolic uniqueness: if two coefficient sequences (z00, rho) and (z00', rho')
-    # give the same C_Z on H_B_SYM, then rho_(p,q) = rho'_(p,q) for all
-    # (p,q) in B_SYM. We verify this by writing the constraint
-    #   z_00 * d * rho = z_00' * d * rho'
-    # on a per-character basis and solving symbolically.
-    z00p_sym = sp.Symbol("z00p", positive=True)
+    # Symbolic uniqueness: equality of scale-divided coefficient vectors
+    # diag(d_(p,q)) rho and diag(d_(p,q)) rho' forces rho=rho' because the
+    # coefficient map is an invertible diagonal matrix.
     sym_rhop = [sp.symbols(f"rhop_{i}") for i in range(sym_size)]
-    # Convolution eigenvalues from the two side: rho_(p,q) and rhop_(p,q).
-    # Constraint: rho_(p,q) = rhop_(p,q) (since both equal the same
-    # diagonal operator's eigenvalue on chi_(p,q)). Then we ask whether
-    # the resulting normalized truncated class functions are equal:
-    #   Z|_B / z_00 = sum d_(p,q) rho_(p,q) chi_(p,q)
-    #   Z'|_B / z_00' = sum d_(p,q) rhop_(p,q) chi_(p,q)
-    # On the orthonormal character basis, equality forces
-    # d_(p,q) rho_(p,q) = d_(p,q) rhop_(p,q), i.e. rho = rhop on B.
-    # Verify symbolically by substituting the constraint and showing the
-    # difference vanishes.
-    sym_diff = [
-        sp.simplify(
-            sp.Integer(dim_su3(p, q)) * sym_rho[i]
-            - sp.Integer(dim_su3(p, q)) * sym_rhop[i]
-        )
-        for i, (p, q) in enumerate(sym_weights)
-    ]
-    sym_uniqueness_consistent = all(
-        sp.simplify(sym_diff[i].subs(sym_rhop[i], sym_rho[i])) == 0
-        for i in range(sym_size)
+    coefficient_map = sp.diag(
+        *[sp.Integer(dim_su3(p, q)) for p, q in sym_weights]
+    )
+    rho_difference = sp.Matrix(sym_rho) - sp.Matrix(sym_rhop)
+    coefficient_difference = coefficient_map * rho_difference
+    recovered_difference = coefficient_map.inv() * coefficient_difference
+    sym_uniqueness_forced = (
+        coefficient_map.det() != 0
+        and recovered_difference == rho_difference
+        and coefficient_map.rank() == sym_size
     )
     check(
-        "(M6) sympy NMAX_SYM=2: normalized-truncation uniqueness is symbolically forced",
-        sym_uniqueness_consistent,
-        "rho = rhop iff truncated normalized class functions agree on B_SYM",
+        "(M6) sympy NMAX_SYM=2: scale-divided truncation uniqueness is symbolically forced",
+        sym_uniqueness_forced,
+        "the diagonal coefficient map has full rank, so equal coefficients force rho=rhop",
     )
 
     # ---- Summary

@@ -8,9 +8,10 @@ finite-volume subcheck repair 2026-06-08
 structural reference choices of the residual environment, plus a bounded no-go
 for three enumerated local-input closure families for `rho_(p,q)(6)`, plus a
 self-contained finite all-forward `L_s=2` Schur shortcut diagnostic.
-The runner does NOT compute the physical
-`rho_(p,q)(6)` for the actual 3D spatial Wilson environment; that 3D
-Perron solve is the missing object.
+The runner does NOT compute the physical `rho_(p,q)(6)` for the actual 3D
+spatial Wilson environment, nor does it prove the separate operator-compression
+and diagonality bridge from those static data to the stripped two-slice source
+residual.
 **Claim boundary:** finite `NMAX = 7`, `MODE_MAX = 200` reference solves with
 `rho` supplied as input (`rho = 1` and `rho = delta`), plus finite parametric
 rho-sensitivity/no-go evidence inside the enumerated families, plus the finite
@@ -23,8 +24,8 @@ canonical `P(6) = 0.5934`.
 
 ## Question
 
-Within the finite bounded packet audited here, the residual `beta = 6`
-reference problem is represented by the source-sector operator
+Within the finite bounded packet audited here, the `beta = 6` reference
+problem is defined by the supplied source-sector operator
 
 `T_src(6) = exp(3 J) D_6^loc C_(Z_6^env) exp(3 J)`
 
@@ -34,16 +35,16 @@ with three explicitly separated pieces:
   `J = (chi_(1,0) + chi_(0,1)) / 6`,
 - the explicit local Wilson marked-link factor
   `D_6^loc chi_(p,q) = a_(p,q)(6)^4 chi_(p,q)`,
-- the residual spatial-environment convolution
+- the supplied diagonal reference factor
   `C_(Z_6^env) chi_(p,q) = rho_(p,q)(6) chi_(p,q)`.
 
 For the bounded reference solves, the first two are explicitly computable from
 `c_lambda(6)` (Bessel
 determinant mode sum) and `SU(3)` intertwiners alone. The third is the
-input diagonal `rho`. In the physical target problem, that third factor would
-be the boundary character measure of the unmarked 3D spatial Wilson
-environment with marked-plaquette boundary holonomy held fixed, but this note
-does not compute or identify that physical measure.
+input diagonal `rho`. Identifying that third factor with the compression of
+the physical unmarked 3D spatial Wilson environment requires a separate
+convolution/regular-translation theorem or direct Wilson-kernel calculation;
+this note neither computes nor proves that identification.
 
 Two questions:
 
@@ -66,11 +67,12 @@ below: `rho = 1` (Dirac-delta environment) and
 `rho = delta_{(p,q),(0,0)}` (decoupled environment) each give a
 fully explicit Perron solve.
 
-The physical residual environment remains the missing object. It would
-require the Perron eigenvector of the positive tensor-transfer operator
-on the 3D unmarked spatial Wilson environment with one marked-plaquette
-boundary, a non-perturbative `SU(3)` lattice gauge problem outside this
-bounded reference-solve packet.
+The physical closure has two open inputs. One is the static boundary data from
+the 3D unmarked spatial Wilson environment with one marked-plaquette boundary,
+a non-perturbative `SU(3)` lattice gauge problem outside this bounded
+reference-solve packet. The other is an operator-compression theorem identifying
+those static data with the algebraically stripped two-slice source residual and
+proving the required character diagonality.
 
 ## Important caveat: rho is INPUT in the reference solves, not OUTPUT
 
@@ -431,22 +433,22 @@ the `beta_env = 0` one-plaquette endpoint intentionally have zero
 nontrivial coefficients and are described as degenerate normalized endpoints,
 not strictly positive interior measures.
 
-## Corollary 1: the missing mathematical object
+## Corollary 1: the missing mathematical objects
 
-The remaining object outside this bounded reference-solve packet is one
-specific non-perturbative quantity:
+One remaining quantity outside this bounded reference-solve packet is
 
 > the boundary character measure `Z_6^env(W)` of the unmarked 3D
 > spatial Wilson environment with the marked plaquette holonomy `W`
-> held fixed,
-> equivalently the Perron eigenvector of the explicit positive
+> held fixed, computed from the Perron eigenvector of the explicit positive
 > tensor-transfer operator built from `c_lambda(6)` and `SU(3)`
 > intertwiners on a 3D `SU(3)` lattice gauge network with one
 > marked-plaquette boundary.
 
 The local Wilson character coefficients and `SU(3)` intertwiners
 furnish only the local building blocks of that 3D tensor network. The
-network's dominant-eigenvector solve is the missing input.
+network's dominant-eigenvector solve remains open. Independently, a theorem
+must relate the resulting static boundary operator to the stripped two-slice
+source residual and establish central-convolution/character-diagonal structure.
 
 ## Hostile-review section
 
@@ -504,14 +506,14 @@ The explicit local Wilson marked-link factor `D_6^loc` (eigenvalues
 distinct: `max|D_loc - P_(0,0)| = 0.0319`. They produce different
 Perron values: `|P_loc - P_triv| = 0.0299`.
 
-The residual environment operator `C_(Z_6^env)` is not a renaming of
-`D_6^loc`. The local/environment factorization theorem cleanly
-isolates `D_6^loc` as the trivial-channel-normalized mixed-kernel
-local factor (finite one-link Wilson convolution to the fourth power),
-while `C_(Z_6^env)` is the residual unmarked spatial environment
-convolution after that local factor has already been stripped off. The
-two operators play structurally different roles and produce different
-Perron data when toggled.
+The supplied reference operator `C_(Z_6^env)` is not a renaming of
+`D_6^loc`. The local/environment factorization theorem cleanly isolates
+`D_6^loc` as the trivial-channel-normalized mixed-kernel local factor (finite
+one-link Wilson convolution to the fourth power), while this reference solve
+defines `C_(Z_6^env)` from a separately supplied diagonal `rho`. The two
+operators play structurally different roles and produce different Perron data
+when toggled. Their product is a conditional reference model; the physical
+stripped-Wilson compression and its character diagonality remain open.
 
 ### Truncation tail bounded, not extrapolated
 
@@ -566,10 +568,10 @@ supplied as input.
 - self-contained finite all-forward `L_s=2` Schur shortcut subcheck:
   graph counts `12/24/48/48/8`, raw-coefficient Schur rho, and
   `P_Schur,L2(6) = 0.429104996947`
-- scoped identification of the still-missing physical object as the 3D
-  spatial Wilson Perron eigenvector, equivalent to the boundary
-  character measure of the unmarked spatial environment with
-  marked-plaquette boundary
+- scoped identification of the still-missing static data as the 3D spatial
+  Wilson Perron eigenvector and associated boundary character measure
+- explicit separation of those static data from the additional stripped
+  two-slice operator-compression/diagonality identification
 - explicit hostile-review checks on constant-lift, tuning, renaming,
   truncation extrapolation, and one-plaquette partition-diagnostic concerns
 
@@ -577,6 +579,8 @@ supplied as input.
 
 - explicit physical `rho_(p,q)(6)` for the actual 3D spatial Wilson
   environment
+- identification of those static coefficients with the stripped two-slice
+  source residual, including character diagonality
 - analytic closure of canonical `P(6) = 0.5934`
 - repo-wide repinning of the canonical plaquette
 - full-volume tensor-transfer Perron solve in 3D

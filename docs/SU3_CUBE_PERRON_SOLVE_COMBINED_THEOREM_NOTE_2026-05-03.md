@@ -144,9 +144,10 @@ plaquettes:
   trivially).
 - Total: `Z_singlet(cube) = c_(0,0)(6)^12 ≈ 2.76e+6`.
 
-The corresponding `rho_(p,q)(6)` is `delta_((p,q), (0,0))` (only the
-trivial irrep contributes). Plugging into the source-sector
-factorization `T_src(6) = exp(3 J) D_6^loc C_(Z_6^env) exp(3 J)`:
+The corresponding supplied reference packet is
+`rho_(p,q)(6) = delta_((p,q), (0,0))` (only the trivial irrep contributes).
+Plugging that packet into the conditional source-sector model
+`T_src(6) = exp(3 J) D_6^loc C_(Z_6^env) exp(3 J)`:
 
 ```text
 P_trivial(6) = 0.4225317396

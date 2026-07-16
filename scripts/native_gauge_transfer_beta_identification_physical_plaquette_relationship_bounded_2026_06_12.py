@@ -15,6 +15,11 @@ from pathlib import Path
 import numpy as np
 from scipy.special import iv
 
+from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
+    SOURCE_SECTOR_BOUNDARY,
+    exact_small_case as source_factorization_exact_small_case,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / (
@@ -22,7 +27,6 @@ NOTE = ROOT / "docs" / (
     "_BOUNDED_NOTE_2026-06-12.md"
 )
 CHAR_RECURRENCE = ROOT / "docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md"
-SOURCE_FACTOR = ROOT / "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md"
 TENSOR_TRANSFER = ROOT / "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md"
 PLAQUETTE_SELF = ROOT / "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md"
 WILSON_POSITIVITY = ROOT / "docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md"
@@ -149,7 +153,7 @@ def main() -> int:
 
     note = read(NOTE)
     recurrence = read(CHAR_RECURRENCE)
-    source_factor = read(SOURCE_FACTOR)
+    source_exact = source_factorization_exact_small_case()
     tensor = read(TENSOR_TRANSFER)
     plaquette = read(PLAQUETTE_SELF)
     wilson = read(WILSON_POSITIVITY)
@@ -173,9 +177,16 @@ def main() -> int:
         in tensor,
     )
     check(
-        "source-sector note distinguishes factorization from residual environment data",
-        "`T_src(beta) = exp[(beta / 2) J] D_beta exp[(beta / 2) J]`" in source_factor
-        and "identify the residual source-sector environment data" in source_factor,
+        "source-sector boundary contract and exact helper keep the algebra supplied-D-only and reject the old diagonality inference",
+        SOURCE_SECTOR_BOUNDARY.supplied_character_diagonal_only
+        and not SOURCE_SECTOR_BOUNDARY.derives_wilson_residual
+        and SOURCE_SECTOR_BOUNDARY.wilson_diagonality_open
+        and bool(source_exact["d_exact"])
+        and bool(source_exact["formula_exact"])
+        and bool(source_exact["hostile_self_adjoint"])
+        and bool(source_exact["hostile_swap"])
+        and bool(source_exact["hostile_mixing"])
+        and bool(source_exact["shadow_fails"]),
     )
     check(
         "plaquette note states the finite Wilson action and average plaquette object",

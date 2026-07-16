@@ -11,6 +11,11 @@ from pathlib import Path
 
 import numpy as np
 
+from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
+    SOURCE_SECTOR_BOUNDARY,
+    exact_small_case as source_factorization_exact_small_case,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -82,8 +87,7 @@ def main() -> int:
 
     transfer = read("docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md")
     strong_cp = read("docs/STRONG_CP_THETA_ZERO_NOTE.md")
-    factor = read("docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md")
-    factor_script = read("scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py")
+    factor_exact = source_factorization_exact_small_case()
     underdet = read("docs/GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md")
     observable = read("docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md")
     support = read("docs/SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md")
@@ -118,11 +122,16 @@ def main() -> int:
         "explicit transfer-state identification at `beta = 6` still open" in transfer,
     )
     check(
-        "The source-sector factorization note and script explicitly use a generic witness rather than the Wilson D_6 data",
-        "generic positive-diagonal witness" in factor
-        and "not an explicit Wilson `D_6` evaluation" in factor
-        and "generic positive conjugation-symmetric diagonal witness" in factor_script
-        and "does not evaluate the Wilson\nresidual diagonal D_6" in factor_script,
+        "The source-sector boundary contract and exact helper keep the theorem supplied-D-only and reject the old diagonality inference",
+        SOURCE_SECTOR_BOUNDARY.supplied_character_diagonal_only
+        and not SOURCE_SECTOR_BOUNDARY.derives_wilson_residual
+        and SOURCE_SECTOR_BOUNDARY.wilson_diagonality_open
+        and bool(factor_exact["d_exact"])
+        and bool(factor_exact["formula_exact"])
+        and bool(factor_exact["hostile_self_adjoint"])
+        and bool(factor_exact["hostile_swap"])
+        and bool(factor_exact["hostile_mixing"])
+        and bool(factor_exact["shadow_fails"]),
     )
     check(
         "The Perron/Jacobi note says even the sharpened factorized class still does not force unique framework-point data",

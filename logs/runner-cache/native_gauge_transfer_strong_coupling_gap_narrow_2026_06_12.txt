@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/native_gauge_transfer_strong_coupling_gap_narrow_2026_06_12.py
-runner_sha256: cc2289013c54f297e5b0255c75f2251fbee0cfde5c7962df2bb4e7a64809d0a3
+runner_sha256: 9b674ec337ec757ef39f2115cbc4d284fd3752cb7e085dcf1dec2d9b2c3189a4
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.69
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 Native gauge-transfer strong-coupling gap bounded runner

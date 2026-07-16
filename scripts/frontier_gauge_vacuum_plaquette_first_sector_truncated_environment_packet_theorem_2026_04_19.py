@@ -1,23 +1,13 @@
 #!/usr/bin/env python3
-"""
-Exact truncated diagonal/environment packet determined by the completed
-first-sector plaquette triple.
+"""Finite supplied diagonal coefficient packet from the completed triple.
 
-This refines the factorized-class boundary:
-
-  1. the rank-one transfer witness does not by itself solve the canonical
-     Wilson factorized-class realization problem;
-  2. but the completed first-sector triple already determines one exact
-     truncated diagonal/environment packet on the retained first-symmetric
-     sector;
-  3. so the remaining seam is extension of that retained packet to the full
-     beta=6 framework-point environment packet, not existence of a retained
-     diagonal packet itself.
+The normalization/reconstruction algebra is exact for the supplied vector.
+The decimal packet is a finite numerical witness and is not identified with
+the physical stripped Wilson residual.
 """
 
 from __future__ import annotations
 
-from pathlib import Path
 import sys
 
 import numpy as np
@@ -31,9 +21,10 @@ from frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_ro
 from frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17 import (
     evaluation_matrix,
 )
+from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
+    exact_small_case as source_factorization_exact_small_case,
+)
 
-
-ROOT = Path(__file__).resolve().parents[1]
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -53,83 +44,82 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     return condition
 
 
-def read(rel_path: str) -> str:
-    return (ROOT / rel_path).read_text()
-
-
 def main() -> int:
     print("=" * 112)
-    print("GAUGE-VACUUM PLAQUETTE FIRST-SECTOR TRUNCATED ENVIRONMENT PACKET")
+    print("GAUGE-VACUUM PLAQUETTE FIRST-SECTOR SUPPLIED COEFFICIENT PACKET")
     print("=" * 112)
     print()
     print("Question:")
-    print("  Does the completed first-sector triple already determine a retained")
-    print("  diagonal/environment packet inside the canonical character-measure")
-    print("  description, even before the full framework-point extension is known?")
+    print("  Does the completed first-sector triple determine one supplied finite")
+    print("  coefficient packet, without identifying it as a physical Wilson")
+    print("  residual or environment operator?")
 
-    completion_note = read("docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_MINIMAL_POSITIVE_COMPLETION_NOTE_2026-04-19.md")
-    factor_note = read("docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md")
-    measure_note = read("docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md")
+    source_exact = source_factorization_exact_small_case()
     v_min, z_min = completed_sector_data()
     z00_min = float(v_min[0])
-    rho_ret = v_min / z00_min
+    rho_packet = v_min / z00_min
 
     sample_angles = [(u1 * np.pi / 16.0, u2 * np.pi / 16.0) for u1, u2 in sample_angle_units().values()]
     e_three = evaluation_matrix([(0, 0), (1, 0), (0, 1), (1, 1)], sample_angles)
-    z_recon = np.real_if_close(z00_min * (e_three @ rho_ret)).real
+    z_recon = np.real_if_close(z00_min * (e_three @ rho_packet)).real
     recon_gap = float(np.linalg.norm(z_recon - z_min))
-    rho_swap_gap = float(abs(rho_ret[1] - rho_ret[2]))
+    rho_swap_gap = float(abs(rho_packet[1] - rho_packet[2]))
 
     print()
     print(f"  v_min                                       = {np.round(v_min, 12).tolist()}")
     print(f"  z00_min                                     = {z00_min:.12f}")
-    print(f"  rho_ret                                     = {np.round(rho_ret, 12).tolist()}")
+    print(f"  rho_packet                                  = {np.round(rho_packet, 12).tolist()}")
     print(f"  reconstructed sample triple                 = {np.round(z_recon, 12).tolist()}")
     print(f"  reconstruction gap                          = {recon_gap:.6e}")
     print()
 
     check(
-        "The factorization and character-measure notes already fix the canonical environment description as an overall scale z_(0,0)^env together with normalized coefficients rho_(p,q)(6)",
-        "positive diagonal coefficient sequence" in factor_note
-        and "normalized central boundary-character packet" in measure_note
-        and "rho_(p,q)(6)" in measure_note,
+        "The source theorem's exact hostile control rejects promotion from structural symmetry to physical diagonality",
+        bool(source_exact["formula_exact"])
+        and bool(source_exact["hostile_mixing"])
+        and bool(source_exact["shadow_fails"]),
     )
     check(
-        "The completion note already fixes one explicit retained first-sector coefficient vector v_min for the completed triple Z_min",
-        "completed sample triple" in completion_note and "a^min" in completion_note,
+        "The completion producers return one finite four-coefficient vector and one finite three-sample target",
+        v_min.shape == (4,)
+        and z_min.shape == (3,)
+        and np.all(np.isfinite(v_min))
+        and np.all(np.isfinite(z_min))
+        and z00_min > 0.0,
     )
     check(
-        "Normalizing by the retained trivial-channel coefficient defines one exact truncated environment packet rho_ret with rho_(0,0)=1",
-        abs(rho_ret[0] - 1.0) < 1.0e-12 and rho_ret[1] > 0.0 and rho_ret[3] > -1.0e-12,
-        f"rho_ret={np.round(rho_ret, 10).tolist()}",
+        "Normalizing by the supplied trivial-channel coefficient defines a finite packet with rho_(0,0)=1",
+        abs(rho_packet[0] - 1.0) < 1.0e-12 and rho_packet[1] > 0.0 and rho_packet[3] > -1.0e-12,
+        f"rho_packet={np.round(rho_packet, 10).tolist()}",
     )
     check(
-        "That truncated packet is conjugation-symmetric on the retained first-symmetric sector",
+        "The supplied packet is conjugation-symmetric on the first-symmetric sector",
         rho_swap_gap < 1.0e-12,
         f"|rho_(1,0)-rho_(0,1)|={rho_swap_gap:.3e}",
     )
     check(
-        "The retained three-sample triple reconstructs exactly from the pair (z00_min, rho_ret)",
+        "The supplied three-sample triple reconstructs to floating-point tolerance from (z00_min, rho_packet)",
         recon_gap < 1.0e-12,
         f"||z_recon-Z_min||={recon_gap:.3e}",
     )
     check(
-        "So the remaining framework-point seam is not existence of a retained diagonal/environment packet itself, but extension of this truncated packet to the full beta=6 environment data",
-        recon_gap < 1.0e-12 and e_three.shape == (3, 4),
+        "The finite packet witness does not defeat the exact off-diagonal hostile control",
+        recon_gap < 1.0e-12
+        and e_three.shape == (3, 4)
+        and bool(source_exact["shadow_fails"]),
         f"z00_min={z00_min:.6f}",
     )
 
     print("\n" + "=" * 112)
     print("RESULT")
     print("=" * 112)
-    print("  Exact refinement:")
+    print("  Conditional finite-packet refinement:")
     print("    - the completed first-sector triple already determines one explicit")
-    print("      retained diagonal/environment packet on the first-symmetric sector")
+    print("      supplied diagonal coefficient packet on the first-symmetric sector")
     print("    - namely one overall scale z00_min together with one normalized")
-    print("      conjugation-symmetric retained coefficient packet rho_ret")
-    print("    - therefore the remaining open object is the extension / realization")
-    print("      of this retained packet inside the full beta=6 framework-point")
-    print("      environment packet, not retained diagonal-packet existence")
+    print("      conjugation-symmetric coefficient packet rho_packet")
+    print("    - Wilson residual diagonality/identification and full-weight extension")
+    print("      remain open; this runner proves neither")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1

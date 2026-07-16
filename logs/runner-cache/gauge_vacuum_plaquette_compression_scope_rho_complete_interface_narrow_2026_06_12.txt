@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_vacuum_plaquette_compression_scope_rho_complete_interface_narrow_2026_06_12.py
-runner_sha256: 0c1645f3fe77b96aa033a5b088b783c7e369556c75b4b6058e8cbf56be3befb9
+runner_sha256: 175220f86b612dff5ba00a5a6c7b1ca35155f1d613b5b6ec0ad4e2493fe4f706
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.90
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 Gauge-vacuum plaquette compression-scope rho-complete interface runner
@@ -30,9 +30,9 @@ one-line consequence: rho = delta_(0,0) => P = P_triv
 P_triv direct delta = 0.422531739647131
 P_triv existing Perron reference = 0.422531739647131
 PASS: delta rho readout equals the existing Perron-solve P_triv value
-      direct=0.42253173964713098, anchor=0.42253173964713098
+      direct=0.4225317396471312, anchor=0.4225317396471312
 PASS: delta rho readout agrees with the printed P_triv anchor
-      delta=0.000e+00
+      delta=2.220e-16
 
 ================================================================================================
 Part 3: one-word rho_packet to source readout
@@ -41,12 +41,12 @@ rho_packet(1,0) = 0.378514922317117
 rho_packet(1,1) = 0.171042019091802
 P_packet = 0.434215413259920
 PASS: one-word rho_packet to P chain reproduces the composed-readout value
-      delta=5.551e-17
+      delta=4.996e-16
 PASS: packet readout lies between the trivial and local rho=1 anchors
       P_triv=0.422531739647131, P_packet=0.434215413259920, P_loc=0.452407159044564
 
 ================================================================================================
-Part 4: non-central perturbation with fixed rho
+Part 4: hostile control for a lossy diag-only interface
 ================================================================================================
 explicit perturbation entries:
   E[(1,0),(1,1)] = 0.125000
@@ -54,21 +54,22 @@ explicit perturbation entries:
 max off-diagonal perturbation magnitude = 0.125000
 P after central interface projection = 0.434215413259920
 PASS: perturbation is a nonzero off-diagonal environment direction
-PASS: off-diagonal perturbation leaves every tensor rho coefficient fixed
-PASS: embedded source rho vector is bitwise unchanged
-PASS: marked source readout is exactly unchanged after the rho interface
-      base=0.43421541325991997, perturbed=0.43421541325991997
+PASS: diag-only extraction leaves every tensor rho coefficient fixed
+PASS: the raw environment operators are nevertheless different
+PASS: the embedded rho vector is unchanged only after the lossy diagonal projection
+PASS: unchanged projected readout demonstrates helper information loss rather than raw-operator completeness
+      base=0.43421541325991952, perturbed=0.43421541325991952
 
 ================================================================================================
-Part 5: note hygiene
+Part 5: durable interface semantics
 ================================================================================================
-PASS: note file exists and is readable
-PASS: note delegates status to the independent audit lane
-PASS: one-hop authorities are markdown links
-PASS: durable context pointers are plain-text paths
-PASS: note names the theorem lane and its outside-scope observables
+PASS: paired theorem note exists as a durable repository file
+PASS: copying an equal supplied rho vector leaves the operator readout unchanged
+PASS: diagonal extraction is idempotent on an already diagonal supplied operator
+PASS: the hostile raw operator cannot be reconstructed from its diagonal interface
+PASS: the primary exact hostile control independently rejects a kappa-only physical inference
 
-TOTAL: PASS=17, FAIL=0
+TOTAL: PASS=18, FAIL=0
 
 ----- stderr -----
 

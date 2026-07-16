@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.py
-runner_sha256: 1aa6155472434410ee8bf878677abb5d44bc7f84032301a0908566bba576c3cd
+runner_sha256: dd189896d39d6b6d5c4aa39dc74eac852c596a6ce1652feea045fa7c9b592708
 timeout_sec: 540
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 Native gauge-transfer operator-norm remainder rung-eight bounded runner

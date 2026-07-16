@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py
-runner_sha256: b5330efb84b5ddf4933d5fc2b3976ac2d92b445e3ea731b6cebe0194e35ac9cf
+runner_sha256: ec52d778e29e59b9b888431866914e3e6a3bfb89deefb42f7df917d877f51858
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.53
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
-Block 19 inverse Peter-Weyl finite-box convolution-realization
+Finite-box inverse Peter-Weyl convolution-realization
 uniqueness runner -- NMAX=4, beta=6.0, |B|=25.
 
   [PASS] [THEOREM] (M1) existence of Z|_B with character coefficients = z_00 d_(p,q) rho_(p,q)
@@ -15,26 +15,26 @@ uniqueness runner -- NMAX=4, beta=6.0, |B|=25.
          imaginary part max = 0.000e+00
   [PASS] [THEOREM] (M1) Z|_B character coefficients are conjugation-symmetric
          swap-asymmetry max = 4.441e-16
-  [PASS] [THEOREM] (M2) C_(Z|_B) chi_(p,q) = rho_(p,q) chi_(p,q) (eigenvalue recovery)
+  [PASS] [THEOREM] (M2) C_(Z|_B/z_00) chi_(p,q) = rho_(p,q) chi_(p,q) (eigenvalue recovery)
          eigenvalue recovery max error = 0.000e+00
-  [PASS] [THEOREM] (M2) R_beta^env|_B = C_(Z_beta^env|_B)|_B in operator norm
-         ||R - C_Z||_2 = 0.000e+00
+  [PASS] [THEOREM] (M2) R_beta^env|_B = C_(Z_beta^env|_B/z_00)|_B in operator norm
+         ||R - C_(Z/z_00)||_2 = 0.000e+00
   [PASS] [THEOREM] (M3) perturbed eigenvalue sequence is conjugation-symmetric
          sym error = 0.000e+00
   [PASS] [THEOREM] (M3) Z'|_B / z_0' is distinct from Z|_B / z_00 under perturbation
          max coefficient difference = 3.000e-02
   [PASS] [THEOREM] (M3) inverse recovery from Z'|_B returns rho_prime, NOT rho
          err vs rho_prime = 0.000e+00; err vs rho = 1.000e-02
-  [PASS] [THEOREM] (M4) joint uniqueness: R recovered from norm_Z matches R_constructed
+  [PASS] [THEOREM] (M4) conditional uniqueness: supplied R recovered from norm_Z matches R_constructed
          ||R - R_recovered||_2 = 2.776e-17
-  [PASS] [THEOREM] (M4) perturbing norm_Z breaks the (E') equality (uniqueness reverse direction)
+  [PASS] [THEOREM] (M4) perturbing norm_Z breaks equality with the supplied R
          ||R - R_perturbed||_2 = 1.000e-02
-  [PASS] [THEOREM] (M5) Z|_B equals canonical Wilson boundary class function truncation
+  [PASS] [THEOREM] (M5) supplied single-link Wilson packet reproduces its own finite character polynomial
          |Z_coeff - c_(p,q)(6)| max = 1.110e-16
   [PASS] [THEOREM] (M6) sympy NMAX_SYM=2: inverse Peter-Weyl eigenvalue recovery is exact
          checked 9 characters in B_SYM
-  [PASS] [THEOREM] (M6) sympy NMAX_SYM=2: normalized-truncation uniqueness is symbolically forced
-         rho = rhop iff truncated normalized class functions agree on B_SYM
+  [PASS] [THEOREM] (M6) sympy NMAX_SYM=2: scale-divided truncation uniqueness is symbolically forced
+         the diagonal coefficient map has full rank, so equal coefficients force rho=rhop
 
 THEOREM PASS=13 FAIL=0
 

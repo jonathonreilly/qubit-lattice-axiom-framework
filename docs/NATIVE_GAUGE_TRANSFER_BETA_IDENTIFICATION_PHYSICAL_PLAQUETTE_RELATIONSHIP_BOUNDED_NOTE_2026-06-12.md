@@ -30,7 +30,8 @@ plaquette-lane reuse license named below.
 - [GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md)
   for the Wilson character expansion with argument `beta/3`.
 - [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
-  for the source-sector factorization and residual-environment target.
+  for the conditional finite-dimensional matrix formula when a diagonal
+  middle operator is supplied; not for Wilson residual diagonality.
 - [WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md](WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md)
   for the equivalent `beta/(2 N_c)` fundamental-character form.
 - [PLAQUETTE_SELF_CONSISTENCY_NOTE.md](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
@@ -187,8 +188,9 @@ The current packet supplies:
 - a native half-slice spectral operator and finite-shell spectral rows;
 - a finite Wilson plaquette observable and an admitted/reuse physical-lane
   comparator;
-- source-sector factorization of the Wilson transfer object;
-- a named residual-environment/Perron target for the plaquette lane.
+- a conditional source-sector matrix formula for a supplied diagonal object;
+- a named Wilson operator-compression/diagonality and Perron target for the
+  plaquette lane.
 
 The current packet does not supply the bridge ingredients that would turn the
 native spectral row into a physical mass-gap statement:
@@ -219,7 +221,7 @@ against overclaiming a negative, not an audit verdict.
 |---|---|---|---|
 | Beta-rescaling route | Treat the gap beta and plaquette beta as different couplings. | The exact character argument comparison gives the same Wilson beta: `beta/3` on `Re Tr` equals `beta/(2N_c)` on `chi+chibar` for `N_c=3`. | ATTEMPTED |
 | Local-coefficient route | Use the shared `c_(p,q)(6)` coefficients to identify the two outputs. | Shared coefficients do not make a spectral ratio equal an environment expectation; the gap lane uses `c/c00`, while plaquette local-link packets use normalized environment data and leave the full spatial environment open. | ATTEMPTED |
-| Source-factorization route | Use `T_src(beta)=exp[(beta/2)J]D_beta exp[(beta/2)J]` as the bridge. | Factorization gives the matrix law once the diagonal data are fixed; the source-sector note still names residual source-sector environment data and Perron data as the remaining constructive datum. | ATTEMPTED |
+| Source-factorization route | Use `T_beta=exp[(beta/2)J]D_beta exp[(beta/2)J]` as the bridge. | The conditional theorem gives the matrix law only after diagonal `D_beta` is supplied; it now explicitly retracts any inference that the stripped Wilson residual is diagonal from positivity and conjugation symmetry. | ATTEMPTED |
 | Plaquette-reuse route | Insert `0.5934` to pin the gap row physically. | The plaquette note licenses `0.5934` only as admitted comparison/reuse; it is not a derivation of a mass gap or a map from the native spectral ratio. | ATTEMPTED |
 | Fixed-lattice gap route | Read the native row as the `beta=6` physical fixed-lattice gap. | The fixed-lattice gap notes keep the `beta=6` gap problem separate and name missing gap premises; the native row here is a finite-shell ratio of a different operator. | ATTEMPTED |
 
@@ -248,7 +250,7 @@ appears only as admitted comparison/reuse.
 |---|---|---|---|
 | Native transfer construction in this note | no physical `beta=6` environment/Perron claim | native spectral row is not a physical-environment claim | yes |
 | [PLAQUETTE_SELF_CONSISTENCY_NOTE.md](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) | `0.5934` not derived or certified there | `0.5934` not a bridge to the native spectral row | yes |
-| [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) | residual diagonal/Perron data remain constructive datum | factorization alone is not the bridge | yes |
+| [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) | supplied-diagonal algebra only; Wilson diagonality and Perron data remain open | the conditional formula alone is not the bridge | yes |
 | [FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md](FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md) | fixed-lattice diagnostics do not prove physical `SU(3)` gap at `beta=6` | native finite-shell row is not a physical gap | yes |
 
 **N5 - Rhetoric audit**
@@ -277,8 +279,8 @@ the plaquette expectation but the source-sector factorization: both lanes use
 the same `J`, the same Wilson coefficient family, and the same `beta=6`, so
 perhaps the native spectral row is already the compressed transfer spectrum of
 the physical source-cyclic sector. That argument would become serious only
-after a source proves that the native diagonal `D_beta` used here is the full
-physical residual-environment diagonal, identifies the physical Hilbert space,
+after a source proves that the actual stripped Wilson residual is
+character-diagonal and equals the native `D_beta` used here, identifies the physical Hilbert space,
 and routes `-log(T)` to the physical channel gap. The cited packet does not
 provide those ingredients; it names the residual/Perron datum as open.
 

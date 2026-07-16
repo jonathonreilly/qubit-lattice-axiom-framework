@@ -103,6 +103,14 @@ PROTECTED_INLINE_RE = re.compile(r"(\[[^\]]+\]\([^)]+\)|\[audit:[^\]]+\])")
 # Parenthesized so the redaction reads as a deliberate editorial token in both
 # label cells and running prose, and stays safe inside markdown link labels.
 REDACTION_TOKEN = "(unratified-source-label)"
+REDACTION_LEGEND = (
+    "**Redaction legend:** every row marked `AUDIT-NONRETAINED ROW` (a row citing "
+    "any non-retained authority, or citing no linked authority at all — the check "
+    "fails closed) has author-side status words replaced by the token "
+    "`(unratified-source-label)` so it cannot be read or scraped as retained "
+    "prose. Each `[audit:...]` badge gives the ledger-derived status of its "
+    "adjacent linked authority; the absence of a badge is never retention."
+)
 SOURCE_STATUS_WORD_RE = re.compile(
     r"\b(?:retained(?:_bounded|_no_go|_pending_chain)?|promoted|"
     r"audited_(?:clean|conditional|renaming|decoration|failed|numerical_match)|"
@@ -404,10 +412,7 @@ def render_table(source_name: str, output_name: str, scope_label: str,
         f"**Retained-grade values:** `retained`, `retained_bounded`, `retained_no_go`. "
         f"Anything else means the audit lane has NOT confirmed the claim, regardless of "
         f"the author-side status text in the row.\n\n"
-        f"**Redaction legend:** in rows citing any non-retained authority, author-side "
-        f"status words are replaced by the token `(unratified-source-label)` so no "
-        f"unratified row can be read or scraped as retained prose; the `[audit:...]` "
-        f"badge on each row carries the ledger-derived status.\n\n"
+        f"{REDACTION_LEGEND}\n\n"
         f"---\n\n"
     )
 

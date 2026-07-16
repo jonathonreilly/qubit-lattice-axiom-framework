@@ -5,7 +5,7 @@
 branch-conditioned coefficient derivation
 **Atlas placement:** canonical toolkit on `main` at
 `docs/publication/ci3_z3/DERIVATION_ATLAS.md`
-**Script:** `scripts/frontier_pmns_selector_sign_to_branch_reduction.py` (PASS=10 FAIL=0 on current main; the runner deps were renamed to `NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md`, `NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`, `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`)
+**Script:** `scripts/frontier_pmns_selector_sign_to_branch_reduction.py`
 
 ## Question
 
@@ -48,8 +48,8 @@ This theorem reuses:
 
 - `PMNS selector unique amplitude slot`
 - `Full neutrino closure last-mile reduction`
-- `Neutrino Dirac two-Higgs observable inverse problem`
-- `Charged-lepton two-Higgs observable inverse problem`
+- separately supplied physical branch hypotheses; this sign theorem does not
+  derive either branch
 
 ## Why this matters
 
@@ -108,4 +108,5 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [pmns_selector_unique_amplitude_slot_note](PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md)
 - [neutrino_two_amplitude_last_mile_reduction_note](NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md)
 - [neutrino_dirac_two_higgs_canonical_reduction_note](NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
-- [charged_lepton_two_higgs_canonical_reduction_note](CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
+- `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md` (context-only formal
+  pointer; not a dependency or physical branch authority)

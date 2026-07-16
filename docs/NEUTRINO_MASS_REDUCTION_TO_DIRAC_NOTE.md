@@ -143,7 +143,8 @@ And the exact PMNS boundary is now also sharper:
 That PMNS boundary is now sharpened one step further on the charged-lepton side
 as well:
 
-- [CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md](./CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md):
+- `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md` (context-only formal
+  pointer, not a dependency):
   for a separately supplied two-offset `3×3` texture, the exact formal
   support/rephasing quotient is canonical and seven-dimensional. That theorem
   does not derive a charged-lepton Yukawa lane, a physical branch, or physical

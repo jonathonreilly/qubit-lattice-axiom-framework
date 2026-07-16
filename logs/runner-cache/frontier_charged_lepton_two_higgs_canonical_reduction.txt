@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py
-runner_sha256: 0bce10fa28dfb92950731173bca8c4a84157a417fd489fb12a94474611b84b67
+runner_sha256: 71030aa473bbeaec51bac2e45210e892a3ddc6f2c14f3f49af0d676096bc475e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -69,8 +69,12 @@ No physical carrier, redundancy, branch, observable, or value is inferred.
          rank=5
   [PASS] an explicit 5 x 5 incidence minor has determinant +1
          det=1; the rank-five image lattice is saturated
+  [PASS] the Smith form has five unit factors and one zero
+         Smith diagonal=(1, 1, 1, 1, 1, 0)
   [PASS] the common opposite left/right phase is the full one-dimensional kernel
          kernel=(-1, -1, -1, 1, 1, 1)
+  [PASS] the full torus stabilizer is connected U(1), with no finite component
+         unit Smith factors exclude a disconnected/discrete stabilizer component
   [PASS] the phase quotient has one invariant covector
          delta = (beta_0+beta_1+beta_2) - (alpha_0+alpha_1+alpha_2)
   [PASS] a symbolic gauge construction makes all A and the first two B coefficients positive
@@ -82,6 +86,8 @@ No physical carrier, redundancy, branch, observable, or value is inferred.
          phase dimension=6-5=1
   [PASS] the generic quotient has exactly seven real parameters
          2*6-5=7
+  [PASS] the normal form and unit Smith factors give the global quotient (R_{>0})^6 x S^1
+         the integer phase formulas are global modulo 2*pi; no finite quotient remains
 
 === C. Hostile controls and the generic-boundary contract ===
   [PASS] equal offsets are rejected by the theorem hypothesis
@@ -95,12 +101,13 @@ No physical carrier, redundancy, branch, observable, or value is inferred.
          three disjoint matching edges give rank 3
   [PASS] a zero coefficient lies outside the all-six-nonzero stratum
          the product phase is undefined when any coefficient vanishes
-  [PASS] the one-zero boundary has a different exact quotient count
-         five nonzero coefficients on a path: 5 moduli and no cycle phase
+  [PASS] all six one-zero strata have the different exact quotient count five
+         each five-edge support is a path: 5 moduli, no phase, connected stabilizer
+  [PASS] every proper support subset is a saturated forest stratum with moduli only
+         all 63 boundary support patterns checked: k active coefficients give (R_{>0})^k, no cycle phase, and a connected U(1)^(6-k) stabilizer
   [PASS] wrong rank and quotient-count claims are rejected
          exact rank=5, exact quotient count=7
-  [PASS] illicit physical-Yukawa inference is rejected by the typed theorem contract
-         the output is a formal quotient; every physical identification remains separate
+  [SCOPE] No physical carrier, field, gauge, branch, observable, or value is among the mathematical inputs or conclusions; this is not a PASS check.
 
 === Result ===
   All six ordered distinct offset pairs have the formal support class A+B C.
@@ -108,7 +115,7 @@ No physical carrier, redundancy, branch, observable, or value is inferred.
   six positive moduli and one invariant phase, hence seven real quotient parameters.
   Zero-coefficient strata and non-cycle supports are outside this generic statement.
   These are quotient parameters, not physical quantities.
-PASS=52 FAIL=0
+PASS=55 FAIL=0
 
 ----- stderr -----
 

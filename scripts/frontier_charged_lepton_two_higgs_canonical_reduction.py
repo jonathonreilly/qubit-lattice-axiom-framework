@@ -23,6 +23,8 @@ import sys
 from collections import deque
 
 import sympy as sp
+from sympy.matrices.normalforms import smith_normal_form
+from sympy.polys.domains import ZZ
 
 
 PASS_COUNT = 0
@@ -53,37 +55,6 @@ CANONICAL_EDGES = (
     (2, 0),
 )
 
-FORMAL_HYPOTHESES = frozenset(
-    {
-        "explicit_3_cycle_C",
-        "distinct_offsets_in_Z3",
-        "supplied_diagonal_coefficient_matrices",
-        "all_six_coefficients_nonzero_for_generic_quotient",
-        "specified_diagonal_rephasing_action",
-    }
-)
-FORMAL_CONCLUSIONS = frozenset(
-    {
-        "formal_support_class_A_plus_BC",
-        "incidence_rank_five",
-        "six_positive_moduli",
-        "one_quotient_phase",
-        "seven_real_quotient_parameters",
-    }
-)
-PHYSICAL_BRIDGES = frozenset(
-    {
-        "charged_lepton_yukawa_sector",
-        "two_physical_Higgs_fields",
-        "effective_Z3_charge_offsets",
-        "field_rephasing_is_physical_gauge_redundancy",
-        "selected_PMNS_branch",
-        "masses_or_PMNS_data",
-        "physical_parameter_values",
-    }
-)
-
-
 def check(name: str, condition: bool, detail: str = "") -> bool:
     """Record one truthful check and preserve a nonzero exit on failure."""
 
@@ -110,12 +81,23 @@ def matrix_equal(left: sp.Matrix, right: sp.Matrix) -> bool:
 def incidence_matrix(edges: tuple[tuple[int, int], ...]) -> sp.Matrix:
     """Unsigned bipartite incidence for phases theta_ij -> theta_ij+l_i+r_j."""
 
-    return sp.Matrix(
-        [
-            [int(left == i) for left in range(3)]
-            + [int(right == j) for right in range(3)]
-            for i, j in edges
-        ]
+    rows = [
+        [int(left == i) for left in range(3)]
+        + [int(right == j) for right in range(3)]
+        for i, j in edges
+    ]
+    return sp.Matrix(rows) if rows else sp.zeros(0, 6)
+
+
+def has_unit_maximal_minor(matrix: sp.Matrix, rank: int) -> bool:
+    """Return whether a rank-sized minor is a unit over Z."""
+
+    if rank == 0:
+        return matrix.cols == 6 and matrix.rank() == 0
+    return any(
+        abs(matrix.extract(rows, columns).det()) == 1
+        for rows in itertools.combinations(range(matrix.rows), rank)
+        for columns in itertools.combinations(range(matrix.cols), rank)
     )
 
 
@@ -267,12 +249,27 @@ def exact_generic_rephasing_quotient() -> None:
         unit_minor == 1,
         detail=f"det={unit_minor}; the rank-five image lattice is saturated",
     )
+    smith_diagonal = tuple(
+        smith_normal_form(phase_map, domain=ZZ)[index, index]
+        for index in range(phase_map.rows)
+    )
+    check(
+        "the Smith form has five unit factors and one zero",
+        smith_diagonal == (1, 1, 1, 1, 1, 0),
+        detail=f"Smith diagonal={smith_diagonal}",
+    )
     check(
         "the common opposite left/right phase is the full one-dimensional kernel",
         len(right_nullspace) == 1
         and matrix_is_zero(phase_map * common_kernel)
         and right_nullspace[0] in (common_kernel, -common_kernel),
         detail=f"kernel={tuple(common_kernel)}",
+    )
+    check(
+        "the full torus stabilizer is connected U(1), with no finite component",
+        smith_diagonal == (1, 1, 1, 1, 1, 0)
+        and len(right_nullspace) == 1,
+        detail="unit Smith factors exclude a disconnected/discrete stabilizer component",
     )
     check(
         "the phase quotient has one invariant covector",
@@ -331,6 +328,12 @@ def exact_generic_rephasing_quotient() -> None:
             f"{quotient_real_dimension}"
         ),
     )
+    check(
+        "the normal form and unit Smith factors give the global quotient (R_{>0})^6 x S^1",
+        matrix_equal(transformed_phases, expected_phases)
+        and smith_diagonal == (1, 1, 1, 1, 1, 0),
+        detail="the integer phase formulas are global modulo 2*pi; no finite quotient remains",
+    )
 
 
 def hostile_controls() -> None:
@@ -378,23 +381,41 @@ def hostile_controls() -> None:
         detail="three disjoint matching edges give rank 3",
     )
 
-    one_zero_edges = CANONICAL_EDGES[:-1]
-    one_zero_map = incidence_matrix(one_zero_edges)
-    one_zero_complex_dimension = len(one_zero_edges)
-    one_zero_phase_dimension = one_zero_complex_dimension - one_zero_map.rank()
-    one_zero_real_quotient_dimension = 2 * one_zero_complex_dimension - one_zero_map.rank()
+    one_zero_supports = tuple(itertools.combinations(CANONICAL_EDGES, 5))
     check(
         "a zero coefficient lies outside the all-six-nonzero stratum",
-        len(one_zero_edges) == 5 and len(one_zero_edges) != len(CANONICAL_EDGES),
+        len(one_zero_supports) == 6,
         detail="the product phase is undefined when any coefficient vanishes",
     )
     check(
-        "the one-zero boundary has a different exact quotient count",
-        support_component_count(one_zero_edges) == 1
-        and one_zero_map.rank() == 5
-        and one_zero_phase_dimension == 0
-        and one_zero_real_quotient_dimension == 5,
-        detail="five nonzero coefficients on a path: 5 moduli and no cycle phase",
+        "all six one-zero strata have the different exact quotient count five",
+        all(
+            support_component_count(edges) == 1
+            and incidence_matrix(edges).rank() == 5
+            and has_unit_maximal_minor(incidence_matrix(edges), 5)
+            for edges in one_zero_supports
+        ),
+        detail="each five-edge support is a path: 5 moduli, no phase, connected stabilizer",
+    )
+
+    proper_support_results = []
+    for active_count in range(6):
+        for edges in itertools.combinations(CANONICAL_EDGES, active_count):
+            phase_map = incidence_matrix(edges)
+            rank = phase_map.rank()
+            proper_support_results.append(
+                rank == active_count
+                and active_count - rank == 0
+                and 2 * active_count - rank == active_count
+                and has_unit_maximal_minor(phase_map, rank)
+            )
+    check(
+        "every proper support subset is a saturated forest stratum with moduli only",
+        len(proper_support_results) == 63 and all(proper_support_results),
+        detail=(
+            "all 63 boundary support patterns checked: k active coefficients give "
+            "(R_{>0})^k, no cycle phase, and a connected U(1)^(6-k) stabilizer"
+        ),
     )
 
     canonical_rank = incidence_matrix(CANONICAL_EDGES).rank()
@@ -405,12 +426,9 @@ def hostile_controls() -> None:
         detail=f"exact rank={canonical_rank}, exact quotient count={canonical_count}",
     )
 
-    physical_inference_is_licensed = bool(PHYSICAL_BRIDGES & FORMAL_CONCLUSIONS)
-    physical_input_was_supplied = bool(PHYSICAL_BRIDGES & FORMAL_HYPOTHESES)
-    check(
-        "illicit physical-Yukawa inference is rejected by the typed theorem contract",
-        not physical_inference_is_licensed and not physical_input_was_supplied,
-        detail="the output is a formal quotient; every physical identification remains separate",
+    print(
+        "  [SCOPE] No physical carrier, field, gauge, branch, observable, or value "
+        "is among the mathematical inputs or conclusions; this is not a PASS check."
     )
 
 

@@ -126,9 +126,9 @@ keeps the following bridges out of scope:
   offsets are not additional thermalized scalar fields;
 - the unaudited 2HDM/SUSY analysis used only as corroborating context.
 
-The repaired claim is therefore bounded support: exact arithmetic plus finite
-Yukawa-texture algebra under the retained-bounded declared-inventory premise,
-not a framework-native derivation of R-HIGGS closure.
+The repaired claim is therefore bounded support: exact census arithmetic under
+the retained-bounded declared-inventory premise, not a framework-native
+derivation of R-HIGGS closure. The formal texture theorem is context only.
 
 ## 1. First-principles reset (A_min)
 
@@ -398,27 +398,18 @@ full thermal doublet from `H_unit`.
 PYTHONPATH=scripts python3 scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
 ```
 
-The runner verifies, at exact rational precision via `fractions.Fraction` and
-with an explicit formal-matrix control that is not load-bearing for the field
-inventory:
+The runner verifies the census at exact rational precision via
+`fractions.Fraction`:
 
 1. **Census arithmetic under each scenario.** One complex doublet `-> 4` scalar
    dof `-> N_bosons = 28 -> g_* = 427/4 = 106.75`; a second thermalized doublet
    `-> 8` dof `-> N_bosons = 32 -> g_* = 443/4 = 110.75`; the shift is exactly
    `+4`, equal to the added scalar dof.
-2. **EWSB-vs-formal-texture distinction as executed control.** For supplied
-   matrices, `Y = D P` is monomial (`Y^dag Y` diagonal) and `Y = A+B C` has
-   the formal `12-5=7` diagonal-rephasing quotient count on its generic
-   stratum.  This does not identify `Y` as a Yukawa matrix, the rephasings as
-   physical gauge redundancy, or the seven quotient coordinates as flavor or
-   PMNS parameters.  Separate right-relabeling and pseudoreality identities
-   are checks only of separately supplied constructions; they do not supply a
-   one- or two-doublet field inventory.
-3. **2HDM bridge boundary.** The `D17` `Z^2` values `(1,1) = 6`,
+2. **2HDM bridge boundary.** The `D17` `Z^2` values `(1,1) = 6`,
    `(1,8) = 8`, `(3,1) = 9/2`, `(8,3) = 24` support uniqueness of the
    unit-normalized scalar-singlet candidate, but the runner does not use that
    as a retained proof of complete EWSB doublet field content.
-4. **Source cross-checks and forbidden-import / new-vocabulary scan.**
+3. **Source cross-checks and forbidden-import / new-vocabulary scan.**
 
 Target: `PASS=N FAIL=0` with `N >= 30`.
 
@@ -431,10 +422,6 @@ Load-bearing arithmetic / support authorities:
   D17 single-composite-`H_unit` `(1,1)` uniqueness on `Q_L`
   (retained_bounded). This is support for the native bridge, not a complete
   retained proof that `H_unit` is one complex EWSB doublet in the thermal census.
-- [`CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`](CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
-  — exact formal reduction and seven-real quotient for a **supplied**
-  two-offset matrix texture; non-load-bearing for Yukawa, Higgs, field-content,
-  PMNS, and thermal-census identifications.
 - [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
   — one-`SU(2)_L`-doublet EW bookkeeping and neutral-vacuum convention
   (retained), used as compatible one-doublet bookkeeping.
@@ -474,6 +461,9 @@ edges):
 
 Plain-text reader pointer (non-load-bearing):
 
+- `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md` — exact formal
+  reduction for a supplied two-offset matrix texture; it is context only and
+  is not a dependency of the census theorem.
 - `SM_GSTAR_FROM_FRAMEWORK_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-05-29.md` — the
   PR #2223 framework-structure census note that names residual R-HIGGS, which
   this note attacks for the census count.
@@ -508,8 +498,8 @@ notes_for_re_audit_if_any: |
   doublet. The retained_bounded Ward theorem supplies D9/D16/D17 native support,
   but this note does not introduce or claim a retained bridge from H_unit
   scalar-singlet uniqueness to one complex EWSB doublet in the thermal census.
-  The one-doublet EW bookkeeping remains retained support; the retained
-  two-Higgs reduction is retained but is a flavor-sector texture theorem. The
+  The one-doublet EW bookkeeping remains retained support. The formal
+  supplied-texture theorem is not a physical or census dependency. The
   2HDM-exclusion analysis note (yt_class_3_susy_2hdm) is unaudited; it is cited
   as corroboration, not as the load-bearing authority. Any dependency-retention
   issue on unaudited cited authorities belongs to independent audit
@@ -519,10 +509,10 @@ notes_for_re_audit_if_any: |
 ## 11. Author tone and audit boundary
 
 This note records one thing: under the retained-bounded declared-inventory
-premise, a **single** complex `SU(2)_L` doublet gives `g_* = 106.75`, while the
-retained "two-Higgs" structure is a
-**flavor-sector Yukawa-texture** device that adds no thermalized dof (`110.75`
-only under an admitted-extension second-doublet import). It is not a synthesis,
+premise, a **single** complex `SU(2)_L` doublet gives `g_* = 106.75`
+(`110.75` only under an admitted-extension second-doublet import). The
+historically named formal texture theorem is not a field-inventory input. This
+note is not a synthesis,
 introduces no repo vocabulary, promotes no other note's status, and does not
 derive the native EWSB bridge, the flavor textures, or the other census
 residuals. The audit lane is the authority on effective status; this proposal

@@ -10,8 +10,8 @@ docs/FLAVOR_LOGDET_FACTOR_4A_SOURCE_ACTION_IDENTIFICATION_NARROW_COMPANION_NOTE_
     (4a-i)  Signed-record incarnation -- yt_source_action_support_packet_note_2026-05-22
             (retained_bounded). The site-diagonal local action S_h = S_0 - sum_x h_x epsilon_x
             produces the same RN family as the additive shift on Z(h).
-    (4a-ii) Operator-side canonical form -- charged_lepton_two_higgs_canonical_reduction_note
-            (formal supplied-texture theorem only). Y = A + B C with diagonal A, B and
+    (4a-ii) Operator-side canonical form -- separately supplied formal texture.
+            Y = A + B C with diagonal A, B and
             the displayed 3-cycle C admits the site-diagonal additive shift
             (A, B) -> (A + diag(j), B). No physical source/Yukawa meaning is imported.
 
@@ -70,16 +70,13 @@ def max_abs(a, b):
 # ---------------------------------------------------------------------------
 
 def forward_three_cycle() -> np.ndarray:
-    """C: forward 3-cycle e_i -> e_{i+1 mod 3} as a 3x3 permutation matrix."""
-    C = np.zeros((3, 3))
-    C[1, 0] = 1.0
-    C[2, 1] = 1.0
-    C[0, 2] = 1.0
-    return C
+    """Return the exact cycle displayed by the supplied-texture theorem."""
+
+    return np.array([[0, 1, 0], [0, 0, 1], [1, 0, 0]], dtype=float)
 
 
-def two_higgs_canonical_Y(x, y, delta):
-    """Y_e,can = diag(x_1, x_2, x_3) + diag(y_1, y_2, y_3 * exp(i delta)) C."""
+def formal_canonical_y(x, y, delta):
+    """Y = diag(x) + diag(y_1, y_2, y_3 exp(i delta)) C."""
     A = np.diag(np.array(x, dtype=complex))
     Bdiag = np.array(
         [y[0], y[1], y[2] * np.exp(1j * delta)], dtype=complex
@@ -170,20 +167,20 @@ def main() -> int:
     # -------------------------------------------------------------
     # T3. Two-Higgs canonical-form additive-shift compatibility.
     # -------------------------------------------------------------
-    x_e = [0.7, 1.3, 1.1]
-    y_e = [0.5, 0.9, 0.6]
-    delta_e = 0.42
-    Y0 = two_higgs_canonical_Y(x_e, y_e, delta_e)
+    x = [0.7, 1.3, 1.1]
+    y = [0.5, 0.9, 0.6]
+    delta = 0.42
+    Y0 = formal_canonical_y(x, y, delta)
 
     j_shift = [0.21, -0.13, 0.08]
     Y_shift = Y0 + np.diag(np.array(j_shift, dtype=complex))
-    # Y_shift = (diag(x_e) + diag(j)) + diag(y_e * exp(i delta)) C
-    # which is the canonical-form Y with A_e' = diag(x_e + j), B_e unchanged.
-    x_e_shifted = [x_e[i] + j_shift[i] for i in range(3)]
-    Y_shift_canonical = two_higgs_canonical_Y(x_e_shifted, y_e, delta_e)
+    # Y_shift = (diag(x) + diag(j)) + diag(y * exp(i delta)) C,
+    # so A changes by diag(j) while B is unchanged.
+    x_shifted = [x[i] + j_shift[i] for i in range(3)]
+    Y_shift_canonical = formal_canonical_y(x_shifted, y, delta)
     shift_err = float(np.max(np.abs(Y_shift - Y_shift_canonical)))
     passed.append(check(
-        "T3. Two-Higgs canonical form: (A, B) -> (A + diag(j), B) yields Y(j) = Y0 + diag(j)",
+        "T3. Supplied formal A+B C form: shifting A yields Y(j) = Y0 + diag(j)",
         shift_err < 1e-12,
         f"max|Y_shift - Y_shift_canonical| = {shift_err:.2e}",
     ))
@@ -200,10 +197,12 @@ def main() -> int:
     # by inverting the linear system: Y - B C must be diagonal.
     # For Y_bad = (A0 + 0.1 * bad_Q) + B C, we'd need A' = A0 + 0.1 * bad_Q,
     # which is NOT diagonal -- so the canonical form is broken.
-    A_candidate = Y_bad - np.diag(np.array([y_e[0], y_e[1], y_e[2] * np.exp(1j * delta_e)], dtype=complex)) @ forward_three_cycle()
+    A_candidate = Y_bad - np.diag(
+        np.array([y[0], y[1], y[2] * np.exp(1j * delta)], dtype=complex)
+    ) @ forward_three_cycle()
     A_offdiag_max = float(np.max(np.abs(A_candidate - np.diag(np.diag(A_candidate)))))
     passed.append(check(
-        "T4. Non-diagonal scalar source breaks the two-Higgs canonical class (A diagonal)",
+        "T4. Non-diagonal scalar source breaks the supplied A+B C class (A diagonal)",
         A_offdiag_max > 1e-3,
         f"max off-diagonal of A_candidate = {A_offdiag_max:.2e} (canonical form broken)",
     ))
@@ -258,7 +257,7 @@ def main() -> int:
     # -------------------------------------------------------------
     # On signed-record surface: j_x = h_x in S_h = S_0 - sum h_x epsilon_x;
     # P_x acts as "indicator of site x" on the epsilon-product basis.
-    # On two-Higgs surface: j_x couples to A_e at site x in the generation-index basis.
+    # On the supplied formal surface: j_x couples to A at index x.
     # The shape sum_x j_x * P_x is the same algebraic form in both surfaces (modulo basis).
     j_check = np.array([0.11, 0.22, 0.33])
     # Signed-record-side per-site source contribution.
@@ -272,8 +271,11 @@ def main() -> int:
     th_shift = np.diag(j_check.astype(complex))
     # Cross-surface compatibility: the additive shift form is sum_x j_x * P_x in both.
     sr_diag_check = all(
-        # Each per-site source is independent of j_y for y != x (site-local linear)
-        True for _ in range(3)
+        abs(sr_per_site[x][i] - sr_per_site[x][j]) < 1e-15
+        for x in range(3)
+        for i, eps_i in enumerate(omega3)
+        for j, eps_j in enumerate(omega3)
+        if eps_i[x] == eps_j[x]
     )
     th_diag_check = float(np.max(np.abs(th_shift - np.diag(np.diag(th_shift))))) < 1e-15
     passed.append(check(
@@ -290,28 +292,18 @@ def main() -> int:
     #  - Supplied-texture formal reduction theorem (exact matrix algebra only)
     #  - Finite linear algebra (rank-one site-local enumeration)
     # NONE of these is the Record baseline; we do NOT invoke I(R_1 sqcup R_2) = I(R_1) + I(R_2).
-    used_record_axiom = False
-    passed.append(check(
-        "T8. Independence from Record baseline: calibration does not invoke scalar record additivity",
-        not used_record_axiom,
-        "uses only YT, a supplied formal matrix texture, and finite linear algebra; no baseline Record input",
-    ))
+    print(
+        "[SCOPE] T8. Record additivity is not an input to this runner; this is "
+        "a declared scope boundary, not a PASS check."
+    )
 
     # -------------------------------------------------------------
     # T9. Residual ledger accounting: staggered-Dirac side remains OPEN.
     # -------------------------------------------------------------
-    factor_4a_status = {
-        "4a-i (signed-record incarnation)": "retained_bounded (YT)",
-        "4a-ii (operator-side canonical form)": "formal supplied-texture hypothesis",
-        "4a-iii (uniqueness modulo basis)": "bounded_theorem (THIS COMPANION)",
-        "4a (staggered-Dirac side)": "OPEN residual -- not addressed",
-    }
-    passed.append(check(
-        "T9. Residual accounting: staggered-Dirac side of Factor 4a remains OPEN",
-        factor_4a_status["4a (staggered-Dirac side)"]
-        == "OPEN residual -- not addressed",
-        "; ".join(f"{k}: {v}" for k, v in factor_4a_status.items()),
-    ))
+    print(
+        "[SCOPE] T9. The staggered-Dirac realization remains outside this "
+        "finite-surface calculation; this is not a PASS check."
+    )
 
     # -------------------------------------------------------------
     # T10. Sibling Factor 4b compatibility: (4a-shape) is the operator form 4b assumes.
@@ -345,29 +337,18 @@ def main() -> int:
     # -------------------------------------------------------------
     # T11. No new axioms/primitives/admissions: finite source-row checks only.
     # -------------------------------------------------------------
-    cited_authorities = [
-        "yt_source_action_support_packet_note_2026-05-22 (retained_bounded)",
-        "charged_lepton_two_higgs_canonical_reduction_note (formal supplied-texture algebra)",
-        "flavor_logdet_factor_4b_jacobi_derivative_2026-06-04 (sibling source note)",
-        "flavor_logdet_generator_three_factor_provenance_2026-06-04 (roadmap)",
-    ]
-    no_new_primitives = True
-    passed.append(check(
-        "T11. No new axioms, primitives, or admissions",
-        no_new_primitives,
-        f"cited source rows: {len(cited_authorities)}; finite algebra only",
-    ))
+    print(
+        "[SCOPE] T11. No new axiom, primitive, or admission is declared by this "
+        "runner; authority is repository/audit metadata, not numerical evidence."
+    )
 
     # -------------------------------------------------------------
     # T12. Coverage-split honesty: companion does NOT claim staggered-Dirac side closed.
     # -------------------------------------------------------------
-    claim_scope = "PARTIAL"
-    claims_full_factor_4a_closed = False
-    passed.append(check(
-        "T12. Coverage-split honesty: companion explicitly does NOT claim full 4a closure",
-        not claims_full_factor_4a_closed and claim_scope == "PARTIAL",
-        "Dirac-operator side remains OPEN residual; companion is bounded_theorem",
-    ))
+    print(
+        "[SCOPE] T12. Full Factor 4a closure is not claimed; the Dirac-operator "
+        "side remains open. This declaration is not a PASS check."
+    )
 
     # -------------------------------------------------------------
     # T13. Larger-n sanity: site-diagonal shift uniqueness holds at n = 4, 5, 6.
@@ -413,14 +394,10 @@ def main() -> int:
     # -------------------------------------------------------------
     # T15. Basis-fixing is supplied by the inputs, not derived here.
     # -------------------------------------------------------------
-    yt_basis = "signed-record basis {epsilon = +-1}^n (from YT_SOURCE_ACTION_SUPPORT_PACKET)"
-    th_basis = "supplied index basis {e_1, e_2, e_3} (formal texture theorem)"
-    basis_derived_here = False
-    passed.append(check(
-        "T15. Basis-fixing is supplied by the inputs, NOT derived in this companion",
-        not basis_derived_here,
-        f"YT basis: {yt_basis}; two-Higgs basis: {th_basis}",
-    ))
+    print(
+        "[SCOPE] T15. The signed-record and supplied-index bases are inputs, not "
+        "outputs of this runner; this is not a PASS check."
+    )
 
     # -------------------------------------------------------------
     # T16. Non-Hermitian shift counter-class: excluded from linear scalar-source class on real surfaces.

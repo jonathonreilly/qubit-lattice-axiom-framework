@@ -201,11 +201,11 @@ One-hop authority candidates cited:
   the slice the present note's continuity selection lives on. This is
   listed as a candidate dependency while independent audit decides
   whether it closes the edge.
-- [`CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`](CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
-  — audit row:
+- `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`
+  — context-only reader pointer, not a dependency edge; audit row:
   `charged_lepton_two_higgs_canonical_reduction_note`. Adjacent exact formal
   theorem for a **supplied** matrix `Y=D_a C^a+D_b C^b`, giving the analogous
-  canonical `A+B C` support and seven-real rephasing quotient. It is cited
+  canonical `A+B C` support and seven-real rephasing quotient. It is mentioned
   only as a finite-matrix parallel: it supplies no charged-lepton, Yukawa,
   Higgs, DM, branch, or physical-parameter identification for this note.
 - [`DM_NEUTRINO_TWO_HIGGS_CLOSURE_ATTACKS_NOTE_2026-04-15.md`](DM_NEUTRINO_TWO_HIGGS_CLOSURE_ATTACKS_NOTE_2026-04-15.md)

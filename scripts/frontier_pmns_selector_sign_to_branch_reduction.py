@@ -11,8 +11,6 @@ import sys
 from pathlib import Path
 
 import numpy as np
-import sympy as sp
-
 ROOT = Path(__file__).resolve().parents[1]
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -65,25 +63,6 @@ def part2_after_sign_selection_only_the_branch_conditioned_coefficients_remain()
 
     last_mile = read("docs/NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md")
     nu_inv = read("docs/NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md")
-    formal_phase_map = sp.Matrix(
-        [
-            [1, 0, 0, 1, 0, 0],
-            [0, 1, 0, 0, 1, 0],
-            [0, 0, 1, 0, 0, 1],
-            [1, 0, 0, 0, 1, 0],
-            [0, 1, 0, 0, 0, 1],
-            [0, 0, 1, 1, 0, 0],
-        ]
-    )
-    formal_outputs = {
-        "formal_support_class_A_plus_BC",
-        "seven_real_quotient_parameters",
-    }
-    physical_bridges = {
-        "charged_lepton_yukawa_sector",
-        "selected_PMNS_branch",
-        "physical_parameter_values",
-    }
 
     check("The two-amplitude last-mile note keeps sole-axiom closure separate",
           "Only two amplitudes remain" in last_mile and "`(J_chi, mu)`" in last_mile)
@@ -91,11 +70,8 @@ def part2_after_sign_selection_only_the_branch_conditioned_coefficients_remain()
           "minimal surviving neutrino-side extension class" in nu_inv
           and ("seven real axiom-side numbers" in nu_inv
                or "exactly `7` real physical parameters" in nu_inv))
-    check("The supplied-texture incidence problem has an exact seven-real quotient",
-          formal_phase_map.rank() == 5 and 12 - formal_phase_map.rank() == 7)
-    check("The two reductions keep selector realization outside their claims",
-          "does **not** derive the seven numbers" in nu_inv
-          and formal_outputs.isdisjoint(physical_bridges))
+    check("The neutrino-side reduction keeps selector realization outside its claim",
+          "does **not** derive the seven numbers" in nu_inv)
 
     print()
     print("  So after a nonzero selector amplitude chooses the branch, the")
@@ -133,7 +109,7 @@ def main() -> int:
     print("  - PMNS selector unique amplitude slot")
     print("  - Neutrino two-amplitude last-mile boundary")
     print("  - Neutrino Dirac two-Higgs canonical reduction")
-    print("  - supplied two-offset 3x3 texture formal reduction")
+    print("  - separately supplied physical branch hypotheses")
     print()
     print("Question:")
     print("  If the unique reduced selector amplitude becomes nonzero, what")

@@ -81,8 +81,8 @@ branch.
 This theorem reuses:
 
 - `PMNS selector sign-to-branch reduction`
-- `Neutrino Dirac two-Higgs observable inverse problem`
-- `Charged-lepton two-Higgs observable inverse problem`
+- the separately supplied canonical branch matrices and their Hermitian-data
+  interpretations; the explicit inverse formulas are proved below
 - `Neutrino full closure last-mile reduction`
 
 It does **not** import a new selector. It sharpens what happens **after** a
@@ -160,9 +160,9 @@ algebraic and explicit:
 
 **Theorem (Branch-conditioned quadratic-sheet coefficient closure on the
 minimal PMNS branches).** Assume the exact PMNS selector sign-to-branch
-reduction theorem, together with the exact canonical two-Higgs observable
-inverse-problem theorems on the neutrino-side and charged-lepton-side minimal
-branches. Then:
+reduction theorem and separately supply the canonical branch matrices together
+with the physical interpretation of `H_nu` or `H_e` as the relevant Hermitian
+data. Then:
 
 1. if `a_sel > 0`, the canonical neutrino-side two-Higgs coefficients are
    reconstructed from `H_nu` by one explicit quadratic equation in `x_1^2`
@@ -215,5 +215,6 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 - [pmns_selector_sign_to_branch_reduction_note](PMNS_SELECTOR_SIGN_TO_BRANCH_REDUCTION_NOTE.md)
 - [neutrino_dirac_two_higgs_canonical_reduction_note](NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
-- [charged_lepton_two_higgs_canonical_reduction_note](CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
+- `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md` (context-only formal
+  pointer; not a dependency or physical branch authority)
 - [neutrino_two_amplitude_last_mile_reduction_note](NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md)

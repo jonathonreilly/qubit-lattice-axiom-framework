@@ -75,9 +75,9 @@ Primary package entry points:
   [LEPTON_SINGLE_HIGGS_PMNS_TRIVIALITY_NOTE.md](./LEPTON_SINGLE_HIGGS_PMNS_TRIVIALITY_NOTE.md)
 - exact minimal neutrino-side two-Higgs canonical reduction:
   [NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md](./NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
-- exact formal supplied-texture canonical reduction (not a physical
-  charged-lepton branch theorem):
-  [CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md](./CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
+- context-only pointer to the exact formal supplied-texture reduction (not a
+  dependency or physical charged-lepton branch theorem):
+  `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`
 - exact PMNS native nontrivial-character current boundary and selector stack:
   [PMNS_C3_NONTRIVIAL_CURRENT_BOUNDARY_NOTE.md](./PMNS_C3_NONTRIVIAL_CURRENT_BOUNDARY_NOTE.md),
   [PMNS_SECTOR_ORIENTATION_ORBIT_NOTE.md](./PMNS_SECTOR_ORIENTATION_ORBIT_NOTE.md),
@@ -134,7 +134,6 @@ So the live status is:
 - [frontier_neutrino_majorana_lower_level_pairing_nogo.py](../scripts/frontier_neutrino_majorana_lower_level_pairing_nogo.py)
 - [frontier_neutrino_majorana_current_stack_zero_law.py](../scripts/frontier_neutrino_majorana_current_stack_zero_law.py)
 - [frontier_neutrino_mass_reduction_to_dirac.py](../scripts/frontier_neutrino_mass_reduction_to_dirac.py)
-- [frontier_charged_lepton_two_higgs_canonical_reduction.py](../scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py)
 - [frontier_pmns_sigma_zero_no_go.py](../scripts/frontier_pmns_sigma_zero_no_go.py)
 - [frontier_pmns_right_conjugacy_invariant_nogo.py](../scripts/frontier_pmns_right_conjugacy_invariant_nogo.py)
 - [frontier_neutrino_two_amplitude_last_mile.py](../scripts/frontier_neutrino_two_amplitude_last_mile.py)

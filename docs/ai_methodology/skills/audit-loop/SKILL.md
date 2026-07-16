@@ -216,16 +216,20 @@ The graph-cycle warning is currently expected. Treat any error as a blocker.
 - When reading `audit_ledger.json`, extract only operational metadata such as `claim_id`, `note_path`, `runner_path`, statuses, `criticality`, `deps`, `note_hash`, and graph-degree fields. Do not print or inspect `verdict_rationale`, `chain_closure_explanation`, `previous_audits`, `audit_history`, or prior auditor notes.
 - File-name listing is allowed when needed, but do not search file contents in audit data/history to find alternate candidate sources or prior conclusions.
 - The shadow dispatch layer carries ZERO evidentiary weight in either
-  direction. `would_park` / `would_park_reason` and `shadow_*` summary fields
-  in `audit_queue.json`, `docs/audit/data/publication_gap.json`,
-  `docs/audit/data/audit_publication_lane.json`,
-  `docs/audit/data/dispatch_shadow_prior.json`,
-  `docs/audit/data/publication_lane_manifest.json`, and the front door's
-  "Dispatch Shadow Report" section are dispatch/reporting metadata only
-  (target selection and owner cutover evidence per the dispatch-retarget
-  design note). Never cite them in a verdict rationale; publication-lane
-  membership, pending admission, or a would-park classification says nothing
-  about whether a claim is true, honest, or well-scoped.
+  direction. In `docs/audit/data/audit_queue.json` this means the per-row
+  `would_park` and `would_park_reason` fields and the summary keys
+  `shadow_would_park_count`, `shadow_conditional_fail_open_count`, and
+  `shadow_publication_lane_size`. Also excluded as evidence: the generated
+  files `docs/audit/data/publication_gap.json`,
+  `docs/audit/data/audit_publication_lane.json` (top-level `shadow_only`,
+  per-entry `would_park`), and `docs/audit/data/dispatch_shadow_prior.json`;
+  the tracked manifest `docs/audit/data/publication_lane_manifest.json`; and
+  the front door's "Dispatch Shadow Report" section. All of it is
+  dispatch/reporting metadata only (target selection and owner cutover
+  evidence per the dispatch-retarget design note). Never cite any of it in a
+  verdict rationale; publication-lane membership, pending admission, or a
+  would-park classification says nothing about whether a claim is true,
+  honest, or well-scoped.
 - If fresh-context contamination occurs before a verdict is applied, discard the current context's judgment for that claim and restart the claim in a distinct restricted-input sub-agent when sub-agents are available. Do not pass the contamination, prior conclusion, or audit-history text to the sub-agent. If no sub-agent is available, stop before applying any audit and report the contamination.
 
 ## Blocked-Row Loop Guard

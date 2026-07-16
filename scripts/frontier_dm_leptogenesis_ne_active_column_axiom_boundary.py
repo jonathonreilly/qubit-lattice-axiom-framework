@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
 """
-DM leptogenesis N_e active-column axiom boundary.
+DM leptogenesis N_e active-column four-summary ambiguity diagnostic.
 
 Framework convention:
-  "axiom" means only the single framework axiom Cl(3) on Z^3.
+  the current framework baseline is Lattice, Qubit, Admissibility, and Record.
 
 Purpose:
-  Test the strongest remaining sole-axiom hope on the PMNS-assisted DM lane:
-  perhaps the current native PMNS laws do not fix the full active five-real
-  source, but they might still force the transport-relevant active column on
-  the charged-lepton-active branch N_e.
-
-  The result is negative. The currently native data are insufficient even for
-  that weaker target.
+  Test whether four explicit summaries (seed averages, phase, support count,
+  and branch bit) force the transport-relevant active column on the
+  charged-lepton-active branch N_e. The finite result is negative only for
+  that tested equivalence class.
 """
 
 from __future__ import annotations
@@ -69,39 +66,39 @@ def column_functional_values(packet: np.ndarray, z_grid: np.ndarray, source_prof
     )
 
 
-def part1_set_the_exact_transport_selector() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+def part1_set_the_conditional_transport_fixture() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     print("\n" + "=" * 88)
-    print("PART 1: FIX THE EXACT DM TRANSPORT SELECTOR")
+    print("PART 1: LOAD THE CONDITIONAL FINITE TRANSPORT FIXTURE")
     print("=" * 88)
 
     pkg = exact_package()
     z_grid, source_profile, washout_tail = flavored_transport_kernel(pkg.k_decay_exact)
 
     check(
-        "The exact one-source flavored selector functional is already fixed on the DM branch",
+        "The supplied one-source finite functional is numerically available",
         len(z_grid) > 100 and np.all(np.diff(washout_tail) <= 1e-10),
         f"K={pkg.k_decay_exact:.12f}",
     )
     check(
-        "So any remaining PMNS-side ambiguity can only come from the active packet, not from transport selection itself",
+        "The supplied fixture has non-negative source weights",
         np.all(source_profile >= -1e-12),
         f"source_min={source_profile.min():.3e}",
     )
 
     print()
-    print("  The DM transport selector is already exact:")
+    print("  Conditional finite functional:")
     print("    F_K(P) = Σ_alpha Psi_K(P_alpha)")
-    print("  The only remaining question is whether current PMNS native data force")
+    print("  The tested question is whether four supplied summaries force")
     print("  the relevant active column on N_e.")
 
     return z_grid, source_profile, washout_tail
 
 
-def part2_same_currently_native_ne_data_can_realize_three_different_selected_columns(
+def part2_same_tested_summary_data_can_realize_three_different_selected_columns(
     z_grid: np.ndarray, source_profile: np.ndarray, washout_tail: np.ndarray
 ) -> None:
     print("\n" + "=" * 88)
-    print("PART 2: SAME CURRENTLY NATIVE N_e DATA CAN REALIZE THREE DIFFERENT COLUMNS")
+    print("PART 2: SAME TESTED-SUMMARY N_e DATA CAN REALIZE THREE DIFFERENT COLUMNS")
     print("=" * 88)
 
     # These three explicit active microscopic samples were found on the same
@@ -174,7 +171,7 @@ def part2_same_currently_native_ne_data_can_realize_three_different_selected_col
         f"delta={deltas[0]:.12f}",
     )
     check(
-        "All three samples share the same one-sided active support pattern",
+        "All three samples share the same one-sided active support count",
         support_counts == [2, 2, 2],
         f"support_counts={support_counts}",
     )
@@ -199,7 +196,7 @@ def part2_same_currently_native_ne_data_can_realize_three_different_selected_col
         "packet distances are nonzero",
     )
     check(
-        "And they induce three different transport-selected columns on the same current-native N_e data class",
+        "And they induce three different transport-selected columns in the same tested-summary N_e class",
         selected_columns == [0, 1, 2],
         f"selected_columns={selected_columns}",
     )
@@ -217,36 +214,36 @@ def part3_bottom_line() -> None:
     print("=" * 88)
 
     check(
-        "The selected N_e active transport column is not fixed by the currently native PMNS data coming from Cl(3) on Z^3",
+        "The selected N_e active transport column is not fixed by the four tested summaries",
         True,
         "same seed pair, delta, support, and branch bit can select columns 0, 1, or 2",
     )
     check(
-        "So the exact remaining PMNS-side DM gap is still the active five-real source law, not merely a weaker column-choice ambiguity",
+        "The tested PMNS-side ambiguity remains at the active five-real source level",
         True,
         "the column becomes algorithmic once the active source is known",
     )
     check(
-        "The honest sole-axiom endpoint on this lane is therefore a column-level boundary, not a hidden positive closure theorem",
+        "No full current-framework no-go follows from this finite summary class",
         True,
-        "current PMNS native laws fix carrier and selector, not the selected active column",
+        "the samples were not shown indistinguishable under every framework datum",
     )
 
     print()
-    print("  Sole-axiom read:")
-    print("    - transport selector is exact")
+    print("  Finite-fixture read:")
+    print("    - the finite transport functional is conditional on supplied inputs")
     print("    - one-sided localization to the active block is exact")
-    print("    - the selected N_e column is still not fixed")
-    print("    - the remaining missing object is the PMNS active five-real source law")
+    print("    - the selected N_e column is not fixed by the four tested summaries")
+    print("    - no exhaustive PMNS or current-framework no-go is inferred")
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM LEPTOGENESIS N_e ACTIVE-COLUMN AXIOM BOUNDARY")
+    print("DM LEPTOGENESIS N_e ACTIVE-COLUMN FOUR-SUMMARY AMBIGUITY DIAGNOSTIC")
     print("=" * 88)
 
-    z_grid, source_profile, washout_tail = part1_set_the_exact_transport_selector()
-    part2_same_currently_native_ne_data_can_realize_three_different_selected_columns(
+    z_grid, source_profile, washout_tail = part1_set_the_conditional_transport_fixture()
+    part2_same_tested_summary_data_can_realize_three_different_selected_columns(
         z_grid, source_profile, washout_tail
     )
     part3_bottom_line()

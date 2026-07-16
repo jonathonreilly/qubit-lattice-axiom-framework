@@ -1,153 +1,150 @@
-# DM Leptogenesis Flavor-Column Functional Theorem
+# DM Leptogenesis Conditional Flavor-Column Functional Identity
 
-**Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-16  
-**Branch:** `codex/dm-main-refresh`  
-**Script:** `scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py`  
-**Framework convention:** "axiom" means only `Cl(3)` on `Z^3`
+**Status:** conditional / support
+**Type:** bounded_theorem
+**Date:** 2026-04-16; scope narrowed 2026-07-16
+**Script:** [`scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py`](../scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py)
+**Framework baseline:** Lattice, Qubit, Admissibility, and Record axioms;
+`Cl(3,0)` is the one-site algebra notation used by the Qubit axiom.
 
-## Status
+## Claim
 
-Exact transport-facing theorem for the flavored column-selection problem on the
-refreshed DM branch.
+This note records a supplied-premise integrating-factor identity. It does not derive a leptogenesis transport model from the framework.
 
-This note does **not** derive the PMNS active five-real source itself. It
-closes the weaker but still important question of how transport selects a PMNS
-column once an active packet is supplied.
+Assume all of the following data are supplied:
 
-## Question
+1. a finite interval `[z_0, Z]`;
+2. integrable real profiles `S(z)` and `W(z)`;
+3. a supplied projector column
+   `P = (P_e, P_mu, P_tau)` with `0 <= P_alpha <= 1` and
+   `sum_alpha P_alpha = 1`;
+4. the decoupled initial-value equations
 
-After reducing the DM flavored-transport target to the active PMNS block, do we
-still need to scan transport numerically across columns to decide which PMNS
-column matters?
+   `dY_alpha/dz = P_alpha S(z) - P_alpha W(z) Y_alpha`,
 
-Or is there an exact transport functional that selects the relevant column?
+   with `Y_alpha(z_0) = 0`.
 
-## Bottom line
+Then the integrating-factor solution is
 
-Yes. There is an exact functional.
-
-For one exact source on the refreshed DM branch, the flavored transport
-equations decouple by flavor once the common heavy-state occupancy profile is
-solved. The final flavored transport factor for a projector column
-
-`P = (P_e, P_mu, P_tau)`
-
-is exactly
-
-`F_K(P) = Psi_K(P_e) + Psi_K(P_mu) + Psi_K(P_tau)`
+`Y_alpha(Z) = Psi_[z_0,Z](P_alpha)`,
 
 where
 
-`Psi_K(q) = q ∫ S_K(z) exp(-q W_K^tail(z)) dz`
+`Psi_[z_0,Z](q) = q integral_[z_0,Z] S(z)
+exp(-q integral_[z,Z] W(t) dt) dz`.
 
-and:
+Therefore the supplied finite-interval total is the column functional
 
-- `S_K(z) = -dN_1/dz` is the exact common source profile from the theorem-native
-  one-source transport solve
-- `W_K^tail(z) = ∫_z^∞ W_K(t) dt` is the exact common washout tail
+`F_[z_0,Z](P) = sum_alpha Psi_[z_0,Z](P_alpha)`.
 
-So the one-source flavored PMNS column problem is not another ODE problem. It
-is an exact scalar functional on the column entries.
+This implication is exact mathematics conditional on the four premises above.
+It does not select or justify those premises.
 
-## Exact reduction
+## Proof
 
-For one source, the flavored transport equations are
+For fixed `alpha`, multiply the supplied equation by
 
-`dY_alpha/dz = P_alpha S_K(z) - P_alpha W_K(z) Y_alpha`.
+`exp(P_alpha integral_[z_0,z] W(t) dt)`.
 
-Because the common source profile `S_K` and common washout profile `W_K` are
-already fixed by the exact one-source solve, each flavor channel is a scalar
-integrating-factor problem.
+The left-hand side becomes the derivative of the product of this integrating
+factor with `Y_alpha(z)`. Integrating from `z_0` to `Z` and using
+`Y_alpha(z_0) = 0` gives
 
-Therefore:
+`Y_alpha(Z) =
+ P_alpha integral_[z_0,Z] S(z)
+ exp(-P_alpha integral_[z,Z] W(t) dt) dz`.
 
-`Y_alpha(∞) = Psi_K(P_alpha)`
+Summing the three independently supplied flavor equations gives the displayed
+column functional. No transport provenance, profile-selection rule, packet
+selection, or physical readout map enters this algebraic step.
 
-and the full flavored transport factor is the sum over the three entries.
+## What the runner actually computes
 
-This is exact on the refreshed branch. It is not a fit.
+The runner instantiates the identity on a finite numerical fixture:
 
-## Exact current-branch channel preference
+- `z in [10^-3, 35]`;
+- a `20,000`-point grid;
+- a BDF occupancy solve from `scripts/dm_leptogenesis_exact_common.py`;
+- a source profile obtained from the numerical occupancy grid;
+- a trapezoidal washout tail and trapezoidal final integral;
+- a canonical `N_e` packet obtained from supplied coordinates
+  `(x, y, delta)` and a finite Hermitian eigensolve.
 
-On the current exact branch, the one-channel kernel `Psi_K(q)` has a unique
-interior maximum at a small nonzero leakage weight:
+Those objects are supplied computational fixtures. The runner does not derive
+the one-source flavored transport equations, the source or washout profiles,
+their boundary conditions, the numerical constants used by the helper, or the
+canonical packet from the current four-axiom framework baseline.
 
-`q_star ≈ 0.035`.
+The runner independently checks the functional against:
 
-That means the branch does **not** prefer:
+- closed-form constant-profile solutions;
+- a separate ODE solve for a non-constant synthetic profile;
+- the helper's direct flavored-transport solve on boundary, democratic,
+  small-leakage, canonical, and deterministic random simplex columns;
+- a second kernel recomputation using a different grid and the differential
+  equation's source term rather than the primary numerical gradient.
 
-- perfectly democratic `q = 1/3`, or
-- an almost pure one-flavor `q ≈ 1`.
+## Finite canonical-packet result
 
-Instead it prefers a column with:
+For the supplied canonical `N_e` active block, the computed packet is
 
-- one dominant flavor entry,
-- plus small but nonzero leakage into the other flavors.
+`[[0.915868, 0.071267, 0.012865],
+  [0.074689, 0.900307, 0.025004],
+  [0.009443, 0.028427, 0.962131]]`.
 
-This is exactly the pattern already seen numerically in the canonical PMNS
-charged-lepton-active sample.
+On the named finite kernel, both the scalar functional and the independent
+direct ODE computation order the three columns with column index `1` first.
 
-## Canonical `N_e` active-column selection
+This is a finite supplied-packet ordering. It is not a derivation of a
+canonical physical packet, a physical yield, or a leptogenesis readout.
 
-On the canonical `N_e` active block, the active packet is
+## Channel-peak boundary
 
-`[[0.915868, 0.074689, 0.009443],
-  [0.071267, 0.900307, 0.028427],
-  [0.012865, 0.025004, 0.962131]]`
+The old runner used a `1001`-point `q` grid to call the channel maximum unique.
+That was not a uniqueness proof.
 
-after the one-sided `N_e` transpose rule is applied.
+The repaired runner does only a narrower analytic local-isolation check for its
+finite trapezoidal kernel. Writing that kernel as
 
-Evaluating the exact transport functional on its three columns:
+`Psi_h(q) = q sum_j a_j exp(-q T_j)`,
 
-- selects the middle column exactly
-- reproduces the direct transport ordering exactly
-- gives the same near-closing value
+with non-negative trapezoid weights `a_j`, it evaluates the analytic
+derivative and brackets one local stationary point in
+`[0.03549, 0.03550]`. On that bracket, `q T_j < 2` for every grid point, so
+every analytic second-derivative term is non-positive and their sum is
+strictly negative.
 
-`eta/eta_obs = 0.989512597197`.
+No global uniqueness claim is made on `[0,1]`, and no continuum uniqueness
+claim is made for an underlying profile. Establishing either would require a
+separate analytic or interval-certified theorem.
 
-So the near-closing DM flavored-transport read is now pinned to one exact
-active PMNS column on the canonical charged-lepton-active sample.
+## Exact scope boundary
 
-## Consequence
+This note closes only:
 
-This sharpens the remaining open science again.
+- the integrating-factor identity conditional on supplied equations, profiles,
+  interval, boundary data, and column;
+- numerical agreement of two implementations on the named finite fixtures;
+- middle-column ordering for the one supplied canonical packet and computed
+  finite kernel;
+- one locally isolated stationary point of the finite trapezoidal channel
+  function.
 
-What is now closed:
+This note does not close:
 
-- the PMNS-pair to projector interface
-- the one-sided reduction to the active Hermitian block
-- the exact flavored-column transport functional
-- the canonical `N_e` active-column selection on the sample already used by the
-  DM branch
+- an axiom-native flavored transport equation;
+- an axiom-native source or washout profile;
+- a physical yield/readout map;
+- a canonical packet-selection theorem;
+- global or continuum uniqueness of the channel maximum;
+- physical leptogenesis closure.
 
-What remains open:
-
-- the PMNS-side value law for the active five-real source
-- or an equivalent theorem producing the selected active transport column
-  directly from `Cl(3)` on `Z^3`
-
-So the remaining gap is no longer “which flavored column transport wants.” It
-is “derive the PMNS active source / column that transport already knows how to
-use.”
-
-## What this closes
-
-This closes the flavored-column selection problem on the DM side.
-
-It is now exact that once an active PMNS packet is supplied, the transport
-column is chosen by a scalar exact functional, not by another phenomenological
-ansatz.
-
-## What this does not close
-
-This note does **not** derive the PMNS active packet itself from the sole
-axiom `Cl(3)` on `Z^3`.
-
-It also does **not** derive the active five-real source.
-
-So it is a transport-facing reduction theorem, not a full PMNS value-law
-closure theorem.
+The remaining repair class is therefore still
+`missing_bridge_theorem`: derive retained one-hop authorities for the transport
+law, profiles and boundary data, canonical packet, and physical readout map.
+If global channel uniqueness remains scientifically load-bearing, add a
+separate analytic or rigorous interval certificate for the intended continuum
+object.
 
 ## Command
 

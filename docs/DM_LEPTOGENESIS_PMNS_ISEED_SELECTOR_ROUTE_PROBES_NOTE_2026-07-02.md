@@ -2,24 +2,25 @@
 
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (bounded support diagnostic of an existing adopted-selector gate)
-**Scope boundary:** the bounded theorem content is the three computed route probes
-P1-P3 locating where the adopted selector's non-baseline content lives. It does
-not derive `I_seed`, the favored-column rule, or the equality constraint from
-the four-axiom baseline.
+**Scope boundary:** the bounded theorem content is the three computed finite
+probes P1-P3 locating choices and contingencies inside the adopted selector
+fixture. It does not derive `I_seed`, the favored-column rule, or the equality
+constraint from the four-axiom baseline, and it does not establish a
+framework-wide no-go.
 **Audit boundary:** the independent audit lane owns all `audit_status` and
 `effective_status` verdicts.
 
 ## Claim (support-grade route diagnosis; no promotion)
 
-Three refutation-shaped, machine-checked probes locate **where** the non-baseline
-content of the adopted minimum-information source selector lives, using the gate
-note's own objects (its exact fixed native seed surface, its exact `I_seed`
-functional, and its exact transport map — imported, not re-implemented):
+Three refutation-shaped, machine-checked probes locate choices and
+contingencies inside the adopted minimum-information source selector fixture,
+using the gate note's supplied fixed-sum seed surface, adopted `I_seed`
+functional, and supplied finite transport map:
 
-1. **P1 (state-contingency of the favored column):** the transport-favored column
-   `i_* = argmax_i eta_i` is not fixed by the axiom surface alone — two
-   law-admissible realized states on the *same* fixed native seed surface
-   transport-favor *different* columns.
+1. **P1 (finite-fixture contingency of the favored column):** two supplied
+   positive points on the *same* fixed-sum seed surface robustly
+   transport-favor *different* columns, with an explicit top-two separation
+   threshold.
 2. **P2 (modality-weighting dependence of the information functional):** the
    argmin of the `I_seed` functional over an explicit finite off-seed candidate
    bank flips under a legitimate positive reweighting of its x-modality and
@@ -27,21 +28,20 @@ functional, and its exact transport map — imported, not re-implemented):
    weighting principle doing selective work.
 3. **P3 (independence of the equality constraint):** the anchoring equality
    `eta_{i_*} / eta_obs = 1` is not implied by the note's other premises — explicit
-   admissible models satisfy every other premise with ratio ≠ 1.
+   supplied positive models satisfy every other tested premise with ratio ≠ 1.
 
-This note derives nothing, promotes nothing, and authors no audit status. It
-gives the already-scoped gate a *computed decomposition into three named
-non-baseline pieces*, each a separately attackable derivation target.
+This note promotes nothing and authors no audit status. It gives the
+already-scoped gate three named finite diagnostics. It does not prove those
+diagnostics are pairwise-independent derivation walls.
 
 ## Context: the gate being mapped
 
 The gate note
 [DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)
-(non-retained; ledger `effective_status: audited_conditional` in the generated
-audit ledger at the date of this note) states a two-step selection law: (1)
-determine the transport-favored flavor column `i_*` from the exact
-transport-extremal class; (2) among positive off-seed sources on the fixed
-native seed surface satisfying `eta_{i_*}/eta_obs = 1`, minimize
+states a two-step selection law: (1)
+determine the finite-fixture flavor column `i_*` from the supplied transport
+map; (2) among positive off-seed sources on the supplied fixed-sum seed surface
+satisfying `eta_{i_*}/eta_obs = 1`, minimize
 `I_seed = D_KL(x||x_seed) + D_KL(y||y_seed) + (1 - cos delta)`.
 
 That note scopes its own audit surface explicitly:
@@ -54,16 +54,17 @@ That note scopes its own audit surface explicitly:
 >   selector theorem, baseline PMNS-branch closure, or derivation of `I_seed`.
 
 and states that the selector objective and constraint are a "choice of objective
-imported from information geometry. It is **not** derived from `Cl(3)` on `Z^3`."
-This note takes that scope as given and asks the next question: *what exactly*
-about the selector is non-baseline? The answer decomposes into three pieces,
-each witnessed by computation below. The diagnosis holds against the current
-four-axiom baseline (Lattice, Qubit, Admissibility, Record): none of the four
-supplies an information functional, a modality weighting, or an observational
-anchoring equality, so the pieces named here are non-baseline against the
-current base, not only the base at the gate note's date.
+imported from information geometry. It is **not** derived from the current
+four-axiom framework baseline."
+This note takes that scope as given and asks which finite choices can be
+isolated computationally. Direct inspection of the current four axiom
+statements (Lattice, Qubit, Admissibility, Record) finds no definition of this
+information functional or observational anchoring equality. That premise check
+does not exclude every possible future bridge theorem.
 
-All probe objects are reused from the gate row, none invented:
+The seed surface, uniform `I_seed`, and transport map are reused from the gate
+row. P2 intentionally constructs a positive reweighting as a diagnostic
+variation:
 
 - Seed surface: `x_seed = (xbar, xbar, xbar)`, `y_seed = (ybar, ybar, ybar)` with
   `xbar = 0.5633333333333334`, `ybar = 0.30666666666666664`.
@@ -77,30 +78,30 @@ All probe objects are reused from the gate row, none invented:
 
 ## The three probes and their computed witnesses
 
-### P1 — the favored column i_* is realized-state-contingent
+### P1 — the favored column i_* is contingent on the supplied finite point
 
-**Hypothesis (refutable):** two law-admissible realized states on the same fixed
-native seed surface transport-favor different columns. A FAIL (an exhaustive
-on-surface grid favoring a single column everywhere) would have meant the column
-is surface-rigid and step (1) of the law *is* axiom-surface data.
+**Hypothesis (refutable):** two supplied positive points on the same fixed-sum
+seed surface transport-favor different columns with top-two separation greater
+than `1e-6`. A FAIL would leave that finite-fixture contingency unsupported on
+the tested grid.
 
 **Witness (computed):** assignment A favors column 0 at
-`x = [0.076521, 0.076521, 1.536959]`, `y = [0.10506, 0.038649, 0.776291]`,
-`delta = 0` (`eta/eta_obs = [0.468627, 0.468618, 0.219751]`); assignment B
-favors column 1 at the same `x`,
-`y = [0.041656, 0.041656, 0.836688]`, `delta = 0`
-(`eta/eta_obs = [0.442683, 0.442683, 0.222029]`). Both verified on the fixed
-native seed surface (mean-`xbar`/mean-`ybar` checks pass at 1e-12).
+`x = [0.413591, 0.152152, 1.124257]`,
+`y = [0.238737, 0.032310, 0.648954]`, `delta = 0.6`
+(`eta/eta_obs = [1.049296, 0.642490, 0.632491]`, top-two margin
+`0.406805941`); assignment B favors column 1 at
+`x = [1.124257, 0.413591, 0.152152]`,
+`y = [0.648954, 0.238737, 0.032310]`, `delta = 0.6`
+(`eta/eta_obs = [0.632491, 1.049296, 0.642490]`, top-two margin
+`0.406805941`). Both pass the fixed-sum mean checks at `1e-12`.
 
-**Reading:** step (1) of the adopted law consumes state-contingent registered
-data. Under the registered `realized_state` primitive this is pointwise-legal
-but not axiom-derivable: quantities that vary across the law-admissible family
-remain registered data, so no axiom-surface-only argument pins `i_*` without
-importing the realized state.
+**Reading:** step (1) of the adopted law depends on which supplied finite point
+is evaluated. The runner does not certify either point as a law-admissible
+framework realization and makes no claim under the `realized_state` primitive.
 
 ### P2 — the I_seed functional presupposes a modality-weighting principle
 
-**Hypothesis (refutable):** over the same finite bank of admissible off-seed
+**Hypothesis (refutable):** over the same finite bank of supplied positive off-seed
 sources, the argmin of the uniform `I_seed` and the argmin of a legitimately
 modality-weighted `I_seed^{wx,wy}` (positive weights on the x-block and y-block
 KL divergences; `(1,1)` recovers `I_seed` exactly) disagree. A FAIL (coinciding
@@ -129,67 +130,61 @@ the constrained selector's output under reweighting (that would require
 searching the equality-constrained feasible set, which this note does not
 construct).
 
-**Reading:** even prior to the constraint, the objective embeds a weighting
-principle the axioms do not supply. This is the second named piece of the
-adopted content.
+**Reading:** even prior to the constraint, the adopted objective embeds a
+weighting choice. This is the second named finite diagnostic.
 
 ### P3 — the equality constraint is an independent imposed premise
 
 **Hypothesis (refutable):** the equality `eta_{i_*}/eta_obs = 1` is not implied
-by the note's other premises (fixed native seed surface + positive source +
-transport-favored-column identification). A FAIL (every admissible on-surface
-positive favored-column model forcing ratio = 1) would have meant the equality
-is a consequence, not an imposition.
+by the note's other premises (supplied fixed-sum seed surface + positive source +
+transport-favored-column identification). A FAIL (every tested positive
+on-surface favored-column model forcing ratio = 1) would have left the
+independence claim unsupported on the tested models.
 
-**Witness (computed):** model A = the pure seed `(x_seed, y_seed, delta = 0)` —
-on-surface, positive, `i_* = 1`, `eta_{i_*}/eta_obs = 0.719082664` (deviation
-−0.280917336). Model B = an off-seed admissible source
+**Witness (computed):** a supplied positive off-seed source
 `x = [0.940049, 0.283137, 0.466814]`, `y = [0.166053, 0.451379, 0.302568]`,
 `delta = 0.4` — on-surface, positive, `i_* = 0`,
-`eta_{i_*}/eta_obs = 0.908774422` (deviation −0.091225578). Both satisfy every
-other premise of the law with ratio ≠ 1.
+`eta_{i_*}/eta_obs = 0.908774422` (deviation −0.091225578). This model
+satisfies every other tested premise of the law with ratio ≠ 1.
 
 **Reading:** the equality does not follow from the other premises; it is exactly
 the "favored-column equality constraint" the gate scope names as
 supplied/adopted — an observation-anchoring premise imposed independently.
 
-## Route diagnosis: three separately attackable pieces
+## Route diagnosis: three separately named diagnostics
 
-The adopted selector's non-baseline content decomposes as:
+The adopted selector fixture exposes:
 
-1. **State-contingency of `i_*`** (P1) — transport-facing: the favored column is
-   registered data of the realized state, not axiom-surface data.
+1. **Finite-point contingency of `i_*`** (P1) — transport-facing: the favored
+   column changes between separated supplied points on the tested surface.
 2. **Modality weighting inside `I_seed`** (P2) — information-geometry-facing:
    the equal-weight combination of the two KL blocks is an unstated selection
    principle.
-3. **The anchoring equality** (P3) — observation-facing: `eta_{i_*}/eta_obs = 1`
-   is an independent imposed premise tying the source to the observed asymmetry.
+3. **The anchoring equality** (P3) — observation-facing:
+   `eta_{i_*}/eta_obs = 1` is independent of the other premises tested by the
+   explicit finite witnesses.
 
-These are independent targets: deriving any one of the three from the four-axiom
-baseline would strictly shrink this gate, and the decomposition tells a future
-derivation attempt which piece it is actually attacking. This note deliberately
-does not rank the three; each is the next path this diagnosis opens on its own
-face.
+These are separately named diagnostics, not a proved pairwise-independent wall
+decomposition. Closing or replacing any one would change the adopted gate, but
+this finite note does not rank them or prove that no common bridge could address
+more than one.
 
-## realized_state primitive discipline
+## Supplied-point premise discipline
 
-Every realized state used by the probes is a single explicit supplied point on
-the fixed native seed surface, evaluated pointwise. No measure, ensemble,
-typicality, genericity, or weighting assumption is used *by the probes*; the
-modality weighting examined in P2 is a diagnosed property of the adopted
-functional, not a weighting adopted here. State-contingent values (which column
-is favored, the eta ratios) are reported as registered data of the supplied
-points.
+Every point used by the probes is an explicit supplied positive point on the
+fixed-sum seed surface, evaluated pointwise. No measure, ensemble, typicality,
+or genericity claim is made. The note does not establish law admissibility and
+therefore does not invoke the `realized_state` primitive. The modality weighting
+examined in P2 is an intentional diagnostic variation, not a framework premise.
 
 ## Scope and honest framing (what this note does not do)
 
 - It does **not** derive `I_seed`, the modality weighting, the favored-column
   rule, or the equality constraint from the axioms. The gate note's open
   selector gate stands exactly as scoped there.
-- It does **not** author or predict audit grades; the ledger citation above is
-  descriptive of the generated ledger at the date of writing.
-- It proposes **no** retained-grade or theorem-grade status for itself; it is
-  support-grade route diagnosis.
+- It does **not** author or predict audit grades.
+- It claims only the bounded finite diagnostics stated above and proposes no
+  retained-grade promotion.
 - Each probe is refutation-shaped and could have failed (surface-rigid column /
   weighting-invariant argmin / equality forced by the other premises); a
   computed miss would have been reported as a FAIL, not disguised.
@@ -213,7 +208,9 @@ the exact seed from the P2 bank so both reported minima are strictly positive.
   — exact package constants (`epsilon_1`, `k_decay_exact`, thermal/sphaleron
   factors) used by the transport map.
 - [DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)
-  — `flavored_column_functional` and the flavored transport kernel.
+  — `flavored_column_functional` and the finite flavored transport kernel,
+  conditional on supplied equations, profiles, boundary data, and packet; the
+  probes do not inherit a physical yield or canonical-packet derivation.
 - [DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md)
   — `active_packet_from_h` (active-sector packet from the effective h).
 - [DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)

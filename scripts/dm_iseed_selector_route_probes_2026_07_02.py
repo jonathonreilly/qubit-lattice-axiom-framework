@@ -2,8 +2,7 @@
 """
 Route probes for the dm-leptogenesis I_seed minimum-information selector gate.
 
-Gate note (ledger effective_status: audited_conditional; the note's own scope
-declares an open selector gate):
+Gate note (its source-authored scope declares an open selector gate):
   docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md
 
 Paired note:
@@ -12,11 +11,10 @@ Paired note:
 That note is explicit that the minimum-information selector `I_seed` and the
 favored-column equality constraint `eta_{i_*} / eta_obs = 1` are ADOPTED
 (imported from information geometry), not derived from the Lattice + Qubit +
-Admissibility + Record baseline. These probes test three route claims about WHY
-the selector is non-baseline. Each probe is refutation-shaped: it states a
-hypothesis that could be false, computes a witness, and FAILS honestly if the
-witness does not exist. An honest miss reported as a FAIL is a win; a fake pass
-is not.
+Admissibility + Record baseline. These probes test three finite properties of
+that adopted fixture. Each probe is refutation-shaped: it states a hypothesis
+that could be false, computes a witness, and FAILS honestly if the witness does
+not exist. An honest miss reported as a FAIL is a win; a fake pass is not.
 
 Objects reused verbatim from the gate note and its primary runner
 (scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py):
@@ -24,14 +22,13 @@ Objects reused verbatim from the gate note and its primary runner
     with xbar = 0.5633333333333334, ybar = 0.30666666666666664
   - I_seed(x, y, delta) = D_KL(x||x_seed) + D_KL(y||y_seed) + (1 - cos delta),
     KL taken on the L1-normalized columns (identical to the runner's info_cost)
-  - the exact transport map eta_columns_from_active(x, y, delta) and eta_obs,
+  - the supplied transport/readout map eta_columns_from_active(x, y, delta),
     imported from the same modules the gate runner imports, so eta ratios here
     are the note's real transport object, not a re-invented proxy.
 
-The "realized_state primitive: pointwise evaluation only, no typicality" rule is
-respected: each admissible realized-state assignment is a single explicit point
-on the fixed native seed surface, evaluated pointwise. No measure, no ensemble,
-no typicality assumption is used anywhere.
+Each assignment is only a supplied positive point on the fixed-sum seed
+surface. The probes do not certify law admissibility, invoke the
+`realized_state` primitive, or infer a framework-wide no-go.
 
 Runs from the worktree root:  python3 scripts/dm_iseed_selector_route_probes_2026_07_02.py
 Exit code 0 iff every probe PASSes.
@@ -89,7 +86,7 @@ def verdict(name: str, passed: bool, witness: str) -> None:
 
 def soft3(u: float, v: float, total: float) -> np.ndarray:
     """Positive 3-vector with fixed sum `total` (same simplex-surface map as the
-    gate runner's soft3, so every point lies on the fixed native seed surface:
+    gate runner's soft3, so every point lies on the supplied fixed-sum surface:
     mean(x) = xbar when total = 3*xbar)."""
     logits = np.array([u, v, 0.0], dtype=float)
     logits -= np.max(logits)
@@ -128,7 +125,7 @@ def info_cost_weighted(x: np.ndarray, y: np.ndarray, delta: float, wx: float, wy
 
 
 def eta_columns(x: np.ndarray, y: np.ndarray, delta: float) -> np.ndarray:
-    """eta_{i}/eta_obs for i in {0,1,2}, using the gate note's exact transport
+    """eta_{i}/eta_obs for i in {0,1,2}, using the gate note's supplied transport
     map (imported, not re-derived)."""
     h_e = canonical_h(x, y, delta)
     packet = active_packet_from_h(h_e).T
@@ -158,25 +155,24 @@ def fmt(v: np.ndarray) -> str:
 
 
 # ---------------------------------------------------------------------------
-# P1: axiom-surface independence of the favored column
+# P1: finite supplied-surface contingency of the favored column
 # ---------------------------------------------------------------------------
-def probe1_axiom_surface_independence() -> None:
-    """Hypothesis: the I_seed-relevant favored column i_* = argmax_i eta_i is NOT
-    fixed by the axiom surface alone; two law-admissible realized-state
-    assignments on the SAME fixed native seed surface can transport-favor
-    DIFFERENT columns. If such a pair exists, i_* is state-contingent registered
-    data, so no axiom-level derivation can pin it without the realized state.
+def probe1_supplied_surface_contingency() -> None:
+    """Hypothesis: two supplied positive points on the SAME fixed-sum seed
+    surface robustly transport-favor DIFFERENT columns under the supplied
+    finite map.
 
-    Refutation-shaped: if an exhaustive small-grid search of on-surface
-    realized states all favor the SAME column, the hypothesis is unsupported and
-    this probe FAILS honestly (the favored column would then be surface-rigid).
+    Refutation-shaped: a candidate is accepted only when its largest transport
+    value exceeds the runner-up by more than `separation_tol`. If the finite
+    grid has fewer than two separated favored columns, this probe FAILS.
     """
     print("\n" + "=" * 88)
-    print("PROBE 1: axiom-surface independence of the favored column i_*")
+    print("PROBE 1: finite supplied-surface contingency of the favored column i_*")
     print("=" * 88)
 
     grid = np.linspace(-3.0, 3.0, 7)
-    seen: dict[int, tuple[np.ndarray, np.ndarray, float]] = {}
+    separation_tol = 1e-6
+    best: dict[int, tuple[np.ndarray, np.ndarray, float, np.ndarray, float]] = {}
     for ax in grid:
         for ay in grid:
             for bx in grid:
@@ -184,45 +180,42 @@ def probe1_axiom_surface_independence() -> None:
                     for delta in (0.0, 0.6, 1.2):
                         x = soft3(ax, ay, 3.0 * XBAR)
                         y = soft3(bx, by, 3.0 * YBAR)
-                        col = favored_column(x, y, delta)
-                        if col not in seen:
-                            seen[col] = (x, y, delta)
-        if len(seen) >= 2:
-            break
+                        eta = eta_columns(x, y, delta)
+                        order = np.argsort(eta)
+                        col = int(order[-1])
+                        margin = float(eta[order[-1]] - eta[order[-2]])
+                        if margin > separation_tol and (
+                            col not in best or margin > best[col][4]
+                        ):
+                            best[col] = (x, y, delta, eta, margin)
 
-    passed = len(seen) >= 2
+    passed = 0 in best and 1 in best
     if passed:
-        cols = sorted(seen.keys())
-        c_a, c_b = cols[0], cols[1]
-        xa, ya, da = seen[c_a]
-        xb, yb, db = seen[c_b]
-        # Confirm both assignments are on the fixed native seed surface (pointwise).
+        c_a, c_b = 0, 1
+        xa, ya, da, eta_a, margin_a = best[c_a]
+        xb, yb, db, eta_b, margin_b = best[c_b]
         on_surface = (
             abs(np.mean(xa) - XBAR) < 1e-12
             and abs(np.mean(ya) - YBAR) < 1e-12
             and abs(np.mean(xb) - XBAR) < 1e-12
             and abs(np.mean(yb) - YBAR) < 1e-12
         )
-        eta_a = eta_columns(xa, ya, da)
-        eta_b = eta_columns(xb, yb, db)
         witness = (
             f"assignment A favors column {c_a}: x={fmt(xa)}, y={fmt(ya)}, "
-            f"delta={da:g}, eta/eta_obs={fmt(eta_a)} | "
+            f"delta={da:g}, eta/eta_obs={fmt(eta_a)}, margin={margin_a:.9f} | "
             f"assignment B favors column {c_b}: x={fmt(xb)}, y={fmt(yb)}, "
-            f"delta={db:g}, eta/eta_obs={fmt(eta_b)} | "
+            f"delta={db:g}, eta/eta_obs={fmt(eta_b)}, margin={margin_b:.9f} | "
             f"both on fixed seed surface (mean-xbar/mean-ybar)={on_surface} | "
-            f"distinct favored columns {c_a} != {c_b}"
+            f"both margins > {separation_tol:g} | distinct favored columns {c_a} != {c_b}"
         )
         passed = passed and on_surface
     else:
-        only = next(iter(seen.keys())) if seen else None
         witness = (
-            f"exhaustive on-surface grid favored a single column {only} for every "
-            f"admissible realized state searched; no differing pair found "
-            f"(favored column is surface-rigid across the grid)"
+            f"finite on-surface grid found robust columns {sorted(best)} with "
+            f"required separation > {separation_tol:g}; no separated 0/1 pair found"
         )
     verdict(
-        "Two law-admissible realized states favor DIFFERENT transport columns",
+        "Two supplied positive points robustly favor DIFFERENT transport columns",
         passed,
         witness,
     )
@@ -233,7 +226,7 @@ def probe1_axiom_surface_independence() -> None:
 # ---------------------------------------------------------------------------
 def probe2_weighting_principle_dependence() -> None:
     """Hypothesis: the minimum-information selection presupposes a modality
-    weighting principle. Over the SAME finite candidate set of admissible
+    weighting principle. Over the SAME finite candidate set of supplied positive
     OFF-seed sources, the argmin of the uniform functional I_seed (equal x/y
     weight) and the argmin of a legitimately modality-weighted functional
     I_seed^{wx,wy} disagree.
@@ -253,8 +246,8 @@ def probe2_weighting_principle_dependence() -> None:
     print("PROBE 2: weighting-principle dependence of the I_seed argmin")
     print("=" * 88)
 
-    # A finite, explicit candidate bank of admissible OFF-seed sources, each a
-    # single pointwise realized state on the fixed native seed surface. The
+    # A finite, explicit candidate bank of supplied positive OFF-seed sources, each a
+    # single supplied positive point on the fixed-sum surface. The
     # equal-logit / zero-phase point (0,0),(0,0),delta=0 IS the seed, so it is
     # skipped: the selector ranges over off-seed sources only.
     logit_pairs = [
@@ -326,12 +319,12 @@ def probe2_weighting_principle_dependence() -> None:
 # ---------------------------------------------------------------------------
 def probe3_constraint_independence() -> None:
     """Hypothesis: the equality eta_{i_*}/eta_obs = 1 is an INDEPENDENT imposed
-    constraint, not implied by the note's other premises (fixed native seed
+    constraint, not implied by the note's other premises (supplied fixed-sum
     surface + positive off-seed source + transport-favored-column identification).
-    Witness: a finite admissible model satisfying all those other premises whose
+    Witness: a finite supplied positive model satisfying all those other premises whose
     computed eta_{i_*}/eta_obs != 1.
 
-    Refutation-shaped: if every admissible on-surface, positive, favored-column
+    Refutation-shaped: if every tested on-surface, positive, favored-column
     model forced eta_{i_*}/eta_obs = 1, the constraint would be a consequence of
     the other premises and this probe would FAIL honestly.
     """
@@ -339,25 +332,8 @@ def probe3_constraint_independence() -> None:
     print("PROBE 3: constraint independence of eta_{i_*}/eta_obs = 1")
     print("=" * 88)
 
-    # An explicit admissible model: the pure-seed realized state itself
-    # (x_seed, y_seed, delta = 0). It satisfies every OTHER premise:
-    #   - on the fixed native seed surface (it IS the seed): mean = xbar, ybar
-    #   - positive source columns
-    #   - a well-defined transport-favored column i_* = argmax_i eta_i
-    # but its off-seed displacement is zero, so it is not fitted to eta_obs.
-    x0 = X_SEED.copy()
-    y0 = Y_SEED.copy()
-    d0 = 0.0
-    eta0 = eta_columns(x0, y0, d0)
-    i_star0 = int(np.argmax(eta0))
-    ratio0 = float(eta0[i_star0])
-
-    on_surface0 = abs(np.mean(x0) - XBAR) < 1e-12 and abs(np.mean(y0) - YBAR) < 1e-12
-    positive0 = bool(np.all(x0 > 0) and np.all(y0 > 0))
-    ne_one0 = abs(ratio0 - 1.0) > 1e-6
-
-    # A second, off-seed admissible model to show the miss is generic, not a
-    # boundary artifact of the seed point.
+    # An explicit off-seed supplied model satisfying every other tested
+    # premise gives a direct miss of the anchoring equality.
     x1 = soft3(0.7, -0.5, 3.0 * XBAR)
     y1 = soft3(-0.6, 0.4, 3.0 * YBAR)
     d1 = 0.4
@@ -366,17 +342,20 @@ def probe3_constraint_independence() -> None:
     ratio1 = float(eta1[i_star1])
     on_surface1 = abs(np.mean(x1) - XBAR) < 1e-12 and abs(np.mean(y1) - YBAR) < 1e-12
     positive1 = bool(np.all(x1 > 0) and np.all(y1 > 0))
+    off_seed1 = bool(
+        np.linalg.norm(x1 - X_SEED) > 1e-9
+        or np.linalg.norm(y1 - Y_SEED) > 1e-9
+        or abs(d1) > 1e-12
+    )
     ne_one1 = abs(ratio1 - 1.0) > 1e-6
 
-    passed = (on_surface0 and positive0 and ne_one0) and (on_surface1 and positive1 and ne_one1)
+    passed = on_surface1 and positive1 and off_seed1 and ne_one1
     witness = (
-        f"model A = pure seed (x_seed,y_seed,delta=0): on_surface={on_surface0}, "
-        f"positive={positive0}, i_*={i_star0}, eta_(i_*)/eta_obs={ratio0:.9f} "
-        f"(deviation from 1 = {ratio0 - 1.0:+.9f}) | "
-        f"model B = off-seed (x={fmt(x1)}, y={fmt(y1)}, delta={d1:g}): "
-        f"on_surface={on_surface1}, positive={positive1}, i_*={i_star1}, "
+        f"off-seed model (x={fmt(x1)}, y={fmt(y1)}, delta={d1:g}): "
+        f"on_surface={on_surface1}, positive={positive1}, off_seed={off_seed1}, "
+        f"i_*={i_star1}, "
         f"eta_(i_*)/eta_obs={ratio1:.9f} (deviation from 1 = {ratio1 - 1.0:+.9f}) | "
-        f"both satisfy the other premises with ratio != 1 ==> equality is an "
+        f"the other tested premises hold with ratio != 1 ==> equality is an "
         f"independent imposed constraint"
     )
     verdict(
@@ -395,9 +374,9 @@ def main() -> int:
     print(f"  xbar={XBAR}, ybar={YBAR}, eta_obs={ETA_OBS}")
     print("I_seed = D_KL(x||x_seed) + D_KL(y||y_seed) + (1 - cos delta)  [note's info_cost]")
     print("transport map eta_columns imported from the gate note's own runner stack")
-    print("realized_state primitive respected: pointwise evaluation, no typicality")
+    print("scope: supplied positive points only; no law-admissibility or framework no-go claim")
 
-    probe1_axiom_surface_independence()
+    probe1_supplied_surface_contingency()
     probe2_weighting_principle_dependence()
     probe3_constraint_independence()
 

@@ -3,23 +3,18 @@
 DM leptogenesis PMNS reduced-surface selector support.
 
 Framework convention:
-  "axiom" means only Cl(3) on Z^3.
+  the current framework baseline is Lattice, Qubit, Admissibility, and Record.
 
 Purpose:
-  Strengthen the PMNS-assisted N_e selector story on the exact fixed native N_e
-  seed surface with a deterministic reduced-surface search plus local
-  polishing.
+  Diagnose a supplied N_e seed-surface chart with a deterministic search plus
+  local polishing.
 
 Live claim scope:
-  - the admissible PMNS-assisted closure domain is already reduced to the fixed
-    native N_e seed surface by the prior reduction-exhaustion theorem;
-  - on that exact reduced domain, this runner performs a deterministic
-    exhaustive compact-chart search, and verifies that the reduced surface
-    carries a finite stationary-branch set with a unique lowest-action branch;
-  - the lower-action branch is recovered as the lowest-action branch on the
-    reduced surface, with a finite action gap to the next branch;
-  - this is strong reduced-surface optimization support, not a live theorem-
-    grade global-minimum certificate.
+  - the chart and physical readout stack are supplied inputs;
+  - the deterministic search requires three clustered branches and exits
+    nonzero if that diagnostic requirement is not met;
+  - no admissible-domain exhaustion, branch-count theorem, global minimum, or
+    physical selector is claimed.
 """
 
 from __future__ import annotations
@@ -244,8 +239,8 @@ def global_search_candidates() -> list[np.ndarray]:
         ([0.05, 0.95], [0.0]),
     ]
 
-    # The exact low/high branch representatives are already known on the current
-    # branch; include them as validation anchors, not as search shortcuts.
+    # The supplied low/high representatives are validation anchors, not search
+    # shortcuts or evidence of an exhaustive branch count.
     candidates.append(np.asarray(LOW_CHART_REF, dtype=float))
     candidates.append(np.asarray(HIGH_CHART_REF, dtype=float))
 
@@ -311,22 +306,25 @@ def cluster_solutions(solutions: list[np.ndarray]) -> list[Branch]:
     return branches
 
 
-def certified_branch_search() -> list[Branch]:
+def deterministic_branch_diagnostic() -> list[Branch]:
     candidates = global_search_candidates()
     branches = cluster_solutions(candidates)
     if len(branches) != 3:
-        raise RuntimeError(f"exhaustive chart cover did not stabilize to exactly three stationary branches (found {len(branches)})")
+        raise RuntimeError(
+            "finite deterministic chart diagnostic did not stabilize to "
+            f"exactly three stationary candidates (found {len(branches)})"
+        )
     return branches
 
 
-def certify_global_minimum(branches: list[Branch]) -> None:
+def evaluate_three_branch_fixture(branches: list[Branch]) -> None:
     low = branches[0]
     mid = branches[1]
     high = branches[2]
     min_gap = mid.action - low.action
 
     check(
-        "The exhaustive compact-chart search returns exactly three stationary closure branches on the reduced surface",
+        "The deterministic compact-chart diagnostic returns its required three stationary candidates",
         len(branches) == 3,
         f"branch count={len(branches)}",
     )
@@ -351,7 +349,7 @@ def certify_global_minimum(branches: list[Branch]) -> None:
         f"ΔS={min_gap:.12f}",
     )
     check(
-        "The lower branch is the unique lowest-action branch in the current reduced-surface search",
+        "The lower candidate has the smallest action in the returned three-candidate fixture",
         mid.action > low.action and high.action > low.action,
         f"branch actions={[round(branch.action, 12) for branch in branches]}",
     )
@@ -396,34 +394,43 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Framework convention:")
-    print('  "axiom" means only Cl(3) on Z^3.')
+    print("  current baseline: Lattice, Qubit, Admissibility, and Record.")
     print()
     print("Question:")
-    print("  On the exact reduced PMNS-assisted N_e seed surface, can the lowest-action")
-    print("  closure branch be recovered robustly on the reduced surface by a")
-    print("  deterministic compact-chart search plus local polishing?")
+    print("  Does the supplied compact-chart diagnostic recover its expected")
+    print("  three-candidate fixture under deterministic local polishing?")
     print()
     print("Scope:")
-    print("  The reduction-exhaustion theorem already eliminates all components beyond")
-    print("  the reduced N_e seed surface. This runner tests reduced-surface")
-    print("  uniqueness/minimality on that exact reduced surface.")
+    print("  The chart, transport, equality, and readout are supplied. This runner")
+    print("  does not exclude candidates outside the chart or prove a global minimum.")
 
-    branches = certified_branch_search()
-    certify_global_minimum(branches)
+    try:
+        branches = deterministic_branch_diagnostic()
+    except RuntimeError as exc:
+        check(
+            "The deterministic chart diagnostic stabilizes to the required three candidates",
+            False,
+            str(exc),
+        )
+        branches = []
+
+    if branches:
+        evaluate_three_branch_fixture(branches)
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Reduced-surface support result:")
-    print("    - exhaustive compact-chart optimization gives a finite set of")
-    print("      three stationary closure branches on the exact reduced domain")
-    print("    - the lower branch is recovered as the lowest-action branch on that surface")
-    print("    - the finite action gap to the next branch is > 1e-3")
-    print("    - the lower branch closes the favored column exactly")
+    print("  Conditional chart diagnostic:")
+    if branches:
+        print("    - the required three-candidate fixture was recovered")
+        print("    - the lowest returned candidate has a finite action gap")
+        print("    - the supplied equality residual is small on that candidate")
+    else:
+        print("    - the required three-candidate fixture was not recovered")
+        print("    - no branch-count, minimum, or selector conclusion follows")
     print()
-    print("  This is strong reduced-surface optimization support. The live authority")
-    print("  path still keeps it below theorem-grade promotion because the current")
-    print("  search uses known branch anchors and local polishing.")
+    print("  This remains a finite diagnostic using known anchors and local polishing;")
+    print("  it is not an exhaustion, uniqueness, or physical-selection theorem.")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

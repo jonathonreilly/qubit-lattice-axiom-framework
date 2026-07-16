@@ -1,76 +1,38 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py
-runner_sha256: de2e333ffacbbaea08c0719e38729fbf4063eb10a1ebe2a14e9ae4b0bcc051ad
-timeout_sec: 600
-exit_code: 0
-elapsed_sec: 187.20
-status: ok
+runner_sha256: a5537b46370dcbd88fce884fac8c2711bec3c1d50a7d601b867fe9af2b6359c1
+timeout_sec: 1800
+exit_code: 1
+elapsed_sec: 21.45
+status: nonzero_exit
 ----- stdout -----
 ========================================================================================
 DM LEPTOGENESIS PMNS REDUCED-SURFACE SELECTOR SUPPORT
 ========================================================================================
 
 Framework convention:
-  "axiom" means only Cl(3) on Z^3.
+  current baseline: Lattice, Qubit, Admissibility, and Record.
 
 Question:
-  On the exact reduced PMNS-assisted N_e seed surface, can the lowest-action
-  closure branch be recovered robustly on the reduced surface by a
-  deterministic compact-chart search plus local polishing?
+  Does the supplied compact-chart diagnostic recover its expected
+  three-candidate fixture under deterministic local polishing?
 
 Scope:
-  The reduction-exhaustion theorem already eliminates all components beyond
-  the reduced N_e seed surface. This runner tests reduced-surface
-  uniqueness/minimality on that exact reduced surface.
-  [PASS] The exhaustive compact-chart search returns exactly three stationary closure branches on the reduced surface  (branch count=3)
-  [PASS] The lower branch closes the favored column exactly  (eta/eta_obs=1.000000000000)
-  [PASS] The lower branch matches the previously derived exact low-action closure branch  (S_rel=0.240906701799)
-  [PASS] The higher stationary branch matches the previously derived higher-action closure branch  (S_rel=1.110657539338)
-  [PASS] The lowest-action branch is separated from the next branch by a finite action gap  (ΔS=0.001812374006)
-  [PASS] The lower branch is the unique lowest-action branch in the current reduced-surface search  (branch actions=[0.240906701799, 0.242719075805, 1.110657539338])
-  stationarity residual (diagnostic only) = 3.240e-04
-  [PASS] The projected tangent Hessian at the lower branch is positive definite  (min eig=4.481077e-01)
-
-  branch 0:
-    count       = 8
-    S_rel       = 0.240906701799
-    x           = [0.471678, 0.553805, 0.664517]
-    y           = [0.208061, 0.464382, 0.247556]
-    delta       = 6.369955226837e-07
-    eta/eta_obs = [1.         0.75917896 0.48459674]
-  branch 1:
-    count       = 1
-    S_rel       = 0.242719075805
-    x           = [0.460724, 0.560504, 0.668773]
-    y           = [0.211572, 0.455054, 0.253373]
-    delta       = -1.002007175711e-03
-    eta/eta_obs = [1.         0.85926271 0.81091999]
-  branch 2:
-    count       = 9
-    S_rel       = 1.110657539338
-    x           = [0.790189, 0.406763, 0.493048]
-    y           = [0.586185, 0.167566, 0.166248]
-    delta       = 2.036936654253e-07
-    eta/eta_obs = [1.         0.94763547 0.95876006]
-
-  low-branch compact chart  = [2.79099e-01, 4.54564e-01, 2.26154e-01, 6.52279e-01, 1.00000e-06]
-  mid-branch compact chart  = [ 0.272618,  0.455962,  0.22997 ,  0.642344, -0.001002]
-  high-branch compact chart = [0.467567, 0.452053, 0.637158, 0.501974, 0.      ]
+  The chart, transport, equality, and readout are supplied. This runner
+  does not exclude candidates outside the chart or prove a global minimum.
+  [FAIL] The deterministic chart diagnostic stabilizes to the required three candidates  (finite deterministic chart diagnostic did not stabilize to exactly three stationary candidates (found 2))
 
 ========================================================================================
 RESULT
 ========================================================================================
-  Reduced-surface support result:
-    - exhaustive compact-chart optimization gives a finite set of
-      three stationary closure branches on the exact reduced domain
-    - the lower branch is recovered as the lowest-action branch on that surface
-    - the finite action gap to the next branch is > 1e-3
-    - the lower branch closes the favored column exactly
+  Conditional chart diagnostic:
+    - the required three-candidate fixture was not recovered
+    - no branch-count, minimum, or selector conclusion follows
 
-  This is strong reduced-surface optimization support. The live authority
-  path still keeps it below theorem-grade promotion because the current
-  search uses known branch anchors and local polishing.
+  This remains a finite diagnostic using known anchors and local polishing;
+  it is not an exhaustion, uniqueness, or physical-selection theorem.
 
-PASS=7  FAIL=0
+PASS=0  FAIL=1
+
 ----- stderr -----
 

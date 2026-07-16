@@ -844,13 +844,28 @@ def _direct_consumers_from_shards() -> list[tuple[str, Path]]:
 
 def _consumer_has_noninheritance_firewall(text: str) -> bool:
     flat = " ".join(text.split())
+    reference_needles = (CLAIM_ID, NOTE.name, NOTE.stem)
     markers = (
         "non-load-bearing",
         "does not by itself prove membership",
         "supplies neither this blocked membership",
         "graph-bookkeeping section",
     )
-    return any(marker in flat for marker in markers)
+    reference_positions: list[int] = []
+    for needle in reference_needles:
+        start = 0
+        while True:
+            position = flat.find(needle, start)
+            if position < 0:
+                break
+            reference_positions.append(position)
+            start = position + len(needle)
+    radius = 600
+    return any(
+        marker in flat[max(0, position - radius) : position + radius]
+        for position in reference_positions
+        for marker in markers
+    )
 
 
 def part_e_scope_firewall() -> None:

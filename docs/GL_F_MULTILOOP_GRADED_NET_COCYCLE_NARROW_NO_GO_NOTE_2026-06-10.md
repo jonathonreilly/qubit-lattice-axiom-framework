@@ -11,17 +11,19 @@ audit verdict and downstream status are set only by the independent audit lane.
 **Primary runner:** [`scripts/gl_f_multiloop_cocycle_check_2026_06_10.py`](../scripts/gl_f_multiloop_cocycle_check_2026_06_10.py)
 (`TOTAL: PASS=44 FAIL=0`, deterministic, < 1 s)
 **Authority role:** exercises and closes the multi-loop derivation route to the
-`GL(F)` predicate named by the route portfolio of the 2026-06-06 FS-admission
-exercise — "multi-loop graded-net cocycle consistency" — on the static
-`{Lattice, Qubit, Admissibility, Record}` baseline. The outcome is NEGATIVE:
+`GL(F)` predicate named by the route portfolio of the 2026-06-06 FS exercise —
+"multi-loop graded-net cocycle consistency" — on the tested graded-net/cocycle
+route (the `Z³` site set + one-qubit-per-site tensor substrate; no Admissibility
+dynamics model is constructed, so the four-axiom baseline is not claimed
+exhausted). The outcome is NEGATIVE:
 the commuting (hard-core-boson) exchange-sign assignment passes every
 multi-loop cocycle consistency condition, so joint loop consistency does not
 force the cross-site sign `−1`. Relative to the cited route portfolio and the
-four retained statistics no-gos, this removes the remaining named
+four statistics no-gos, this removes the remaining named
 loop-consistency route; it does not preclude a future principle outside that
 route class.
-`GL(F)`/FS remains a genuine admission candidate (Tier-A admission, or
-migration off the static baseline, are the remaining paths).
+`GL(F)`/FS remains an open premise (a future derivation, or migration off the
+tested route class, are the remaining paths).
 
 ```yaml
 actual_current_surface_status: no-go
@@ -224,26 +226,26 @@ Load-bearing (markdown links):
    License used: the `Z³` site set and one-qubit-per-site tensor substrate
    only; no dynamics, boundary condition, or statistics input is drawn.
 2. [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
-   — retained. License used: the grading `F`, its involution and grading
+   — (live status per the ledger). License used: the grading `F`, its involution and grading
    facts, as the algebraic carrier in (R2); its selector disclaimer is
    preserved (the grading is verified frame-blind here, never a selector).
 3. [`FERMION_PARITY_PAULI_TENSOR_INVOLUTION_NARROW_THEOREM_NOTE_2026-05-10.md`](FERMION_PARITY_PAULI_TENSOR_INVOLUTION_NARROW_THEOREM_NOTE_2026-05-10.md)
-   — retained. License used: the Pauli-tensor realization `F = ⊗ σ₃` consumed
+   — (live status per the ledger). License used: the Pauli-tensor realization `F = ⊗ σ₃` consumed
    by the runner.
 4. [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md)
-   — retained_no_go. License used: the hard-core third candidate and the §6 /
+   — (live status per the ledger). License used: the hard-core third candidate and the §6 /
    N6 / N7 escape clause naming the missing input class (graded locality);
    this note exercises the strongest remaining member of that class.
 5. [`RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md`](RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md)
-   — retained_no_go. License used: the single-ring neutrality this note
+   — (live status per the ledger). License used: the single-ring neutrality this note
    extends, and its N6 item (3) explicitly naming "full `Z³` graded-net
    multi-loop consistency" as the untested derivation target exercised here.
 6. [`CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md`](CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md)
-   — retained_no_go. License used: the positivity-neutrality facts the
+   — (live status per the ledger). License used: the positivity-neutrality facts the
    multi-loop batteries ([C1]/[C2]/[D3]) extend; no positivity selector is
    consumed.
 7. [`FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md`](FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md)
-   — retained_no_go. License used: route separation only (no rotation input
+   — (live status per the ledger). License used: route separation only (no rotation input
    is consumed here, so this note's loop combinatorics are disjoint from the
    killed rotation-exchange route).
 8. [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md)

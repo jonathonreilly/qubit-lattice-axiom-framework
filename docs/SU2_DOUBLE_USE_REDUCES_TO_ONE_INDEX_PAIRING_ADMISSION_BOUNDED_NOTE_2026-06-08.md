@@ -9,7 +9,7 @@ direct_effective_status_change_allowed_from_this_note: false
 
 **Date:** 2026-06-08
 **Claim type:** bounded_theorem
-**Scope:** conditional theorem plus admission-localization boundary.
+**Scope:** conditional theorem plus open-condition-localization boundary.
 **Primary runner:**
 [`scripts/frontier_su2_double_use_reduces_to_pairing_admission_2026_06_08.py`](../scripts/frontier_su2_double_use_reduces_to_pairing_admission_2026_06_08.py)
 **Cached runner output:**
@@ -23,7 +23,7 @@ internal `su(2)` to be the **external** spatial-rotation `su(2)` (the qubit doub
 spin-½)?
 
 **Verdict: no.** The double-use is neither an unconditional theorem nor a no-go.
-It reduces to one index-pairing admission:
+It reduces to one index-pairing condition:
 
 ```text
 The Clifford/derivative index μ of the dynamical (Kähler-/staggered-)Dirac
@@ -33,11 +33,13 @@ operator D = Σ_μ γ_μ ∂_μ is identified with the spatial lattice edge-dire
 
 with the clean dichotomy checked by the runner (**12/12**):
 
-1. **Given the index-pairing admission, the identification is forced and tight**
+1. **Given the index-pairing condition, the identification is forced and tight**
    (a genuine conditional theorem).
-2. **The index-pairing admission itself is not supplied by the axioms** — the
-   qubit can genuinely *spectate*. Covariance *presupposes* the pairing; it
-   does not deliver it.
+2. **The index-pairing condition itself is not supplied by the tested
+   lattice-hop / qubit structure** (a scalar `O_h`-invariant hop leaves the qubit
+   a spectator; no Admissibility/Record model is exhausted) — the qubit can
+   genuinely *spectate*. Covariance *presupposes* the pairing; it does not
+   deliver it.
 
 ## (1) Conditional theorem: given the pairing, the spin lift is forced
 
@@ -59,9 +61,9 @@ So **conditional on the index pairing and the dim-2 Qubit axiom, the external
 spatial-rotation spin is forced to be the internal qubit `su(2)`
 (`S_i=σ_i/2`), with no freedom.** This part is tight and runner-clean.
 
-## (2) The pairing is not supplied by the axioms — the qubit can spectate
+## (2) The pairing is not supplied by the tested lattice-hop / qubit structure — the qubit can spectate
 
-Without the index-pairing admission, nothing couples the qubit to spatial
+Without the index-pairing condition, nothing couples the qubit to spatial
 structure:
 
 - A **scalar `O_h`-invariant nearest-neighbour hop** `(hop on sites) ⊗ I` commutes with the
@@ -83,17 +85,17 @@ the vector is the adjoint, and the "`2π = −1`" sign is just the `Spin(3)→SO
 not an obstruction. Identifying the two 3-spaces yields no contradiction. (Likewise, the
 framework's live axiom memo does **not** assert a literal "algebra-3 ≠ spatial-3"
 *contradiction*; it merely *declines* to supply a physical-observable bridge — a grantable
-silence — which is exactly why the identification is an **admission**, not a no-go.)
+silence — which is exactly why the identification is an **open condition**, not a no-go.)
 
 ## Residual (the minimal missing principle)
 
-The only unsupplied hypothesis is the **index-pairing admission**. A future
+The only unsupplied hypothesis is the **index-pairing condition**. A future
 result could promote this to "forced-modulo-covariance" *without a new axiom*
 by proving a **lattice-native
 `O_h`-Wigner-covariance lemma that derives the `γ_μ ↔ e_μ` edge-pairing from {Lattice,
 Qubit, Admissibility, Record} without presupposing the `γ`-edge hopping form.** None exists in the repo,
 and the pairing is the staggered/Kähler-Dirac realization gate, which itself
-carries three further named-open admissions
+carries three further named-open conditions
 (`STAGGERED_DIRAC_EXERCISE_HONEST_REASSESSMENT_NOTE_2026-06-06`): FS fermionic
 statistics, the Euclidean signature/time import, and the chirality selector
 `ε(x)`.
@@ -105,8 +107,8 @@ The directly-analogous **boost-level** question is already a landed `retained_no
 - **Dirac–Weyl physical-spin label** (`DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY…`,
   `audited_conditional`): its named-open "identify the framework SU(2) doublet with the
   physical spin/helicity label" bridge is exactly this index-pairing
-  admission. This note pins that gap to the pairing and the forced-given-pairing
-  conditional, rather than leaving it as a vague label admission.
+  condition. This note pins that gap to the pairing and the forced-given-pairing
+  conditional, rather than leaving it as a vague label.
 - **Emergent Lorentz:** the continuum upgrade of this discrete spin link is the boost-spinor
   link, the single non-tight link; so even given the index pairing, relativistic
   spin covariance is a *separate* conditional, never closed from the axioms
@@ -132,7 +134,7 @@ the boost-faith no-go. No PDG values.
 ## What this note does NOT claim (do-not-rewalk guards)
 
 - It does **not** claim the internal `su(2)` *is* the external rotation `su(2)`
-  unconditionally — only forced given the index-pairing admission.
+  unconditionally — only forced given the index-pairing condition.
 - It does **not** force the pairing from the matched `3=3` count (`Cl(3,0)=M₂(ℂ)=GA(3)` vs `Z³`): that
   is the #2559-closed matched-pair **consistency**, ruled *not* a derivation by the d=3 panel;
   reusing it to force the pairing is the panel-flagged **inversion**.
@@ -147,7 +149,7 @@ the boost-faith no-go. No PDG values.
 ## Audit dependency links
 
 These links make the boundary visible to the audit graph. They do not supply
-the index-pairing admission.
+the index-pairing condition.
 
 - Baseline axioms: [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md).
 - Staggered realization residuals: [`STAGGERED_DIRAC_EXERCISE_HONEST_REASSESSMENT_NOTE_2026-06-06.md`](STAGGERED_DIRAC_EXERCISE_HONEST_REASSESSMENT_NOTE_2026-06-06.md).

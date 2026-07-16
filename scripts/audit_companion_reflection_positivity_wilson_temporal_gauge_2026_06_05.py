@@ -439,6 +439,13 @@ def main() -> int:
     print(" SU(2)/SU(3) deterministic or Monte Carlo cross-checks).")
     print("=" * 88)
 
+    section("Part 0: exact-gate prerequisites")
+    check(
+        "(P0) sympy is available for the exact symbolic reflection and normalization gates",
+        HAVE_SYMPY,
+        detail="explicit prerequisite; missing sympy also fails the Part A fallback",
+    )
+
     # -------------------------------------------------------------------
     section("Part A: reflection symmetry  B_- = Theta B_+  and B_0 plane invariance")
     # -------------------------------------------------------------------

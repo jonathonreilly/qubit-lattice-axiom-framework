@@ -27,9 +27,9 @@ Current block-02 implementation:
 
 Verification:
 
-- final cache: `24 PASS / 0 FAIL`, `80.11s`;
+- final cache: `25 PASS / 0 FAIL`, `80.98s`;
 - runner/cache SHA:
-  `bd771dc30e0f5642a4755d623f11cfc36c74b574afc1c6670db2a2a1b6b80eb6`;
+  `cf2dec4915afc1da9faa22fd3a7cb2086872174376b2fe0c54ef1514cc32c9cb`;
 - independent `SU(2)` through `SU(5)` real-Gram/Schur reconstruction, maximum
   error `8.882e-16`;
 - independent arbitrary-bounded-observable factorization on random
@@ -55,6 +55,9 @@ Verification:
 - runner attribution now distinguishes the source's all-order `SU(N)` theorem
   from finite runner gates and treats the older gauge-half note as
   non-load-bearing context;
+- runner now exposes a dedicated `sympy` prerequisite line, making B8
+  availability explicit; the pre-existing Part-A fallback also fails
+  nonzero when `sympy` is missing;
 - sibling pin runners pass.
 - disposable audit compatibility pipeline completed;
 - strict audit lint: zero errors;
@@ -82,7 +85,7 @@ If this worker must be resumed immediately:
 
 ```bash
 cd /private/tmp/physics-loop-gauge-transfer-positive-repair-20260716
-codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 4h22m --target best-honest-status"
+codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 4h11m --target best-honest-status"
 ```
 
 Read `STATE.yaml`, `HANDOFF.md`, and `TRACE_GATE.md`. Do not run `audit-loop`,

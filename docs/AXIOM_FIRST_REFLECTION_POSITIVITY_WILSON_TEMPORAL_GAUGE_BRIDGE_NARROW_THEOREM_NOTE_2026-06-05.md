@@ -298,6 +298,7 @@ python3 scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026
 
 The runner checks:
 
+- a fail-closed `sympy` prerequisite for its exact symbolic gates;
 - the reflection split and Wilson sign;
 - the normalization map `alpha=beta/N`; legacy abelian and `SU(2)` diagnostic
   function arguments named `beta` are explicitly identified as the effective

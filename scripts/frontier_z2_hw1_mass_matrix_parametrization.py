@@ -242,6 +242,43 @@ def part4_genericity() -> None:
     print("PART 4: Genericity in the residual Z_2 family")
     print("=" * 72)
 
+    a, b, c, d_re, d_im = sp.symbols("a b c d_re d_im", real=True)
+    spectral_variable = sp.symbols("lambda")
+    d = d_re + sp.I * d_im
+    symbolic_matrix = sp.Matrix(
+        [
+            [a, d, d],
+            [sp.conjugate(d), b, c],
+            [sp.conjugate(d), c, b],
+        ]
+    )
+    characteristic_polynomial = sp.Poly(
+        symbolic_matrix.charpoly(spectral_variable).as_expr(),
+        spectral_variable,
+    )
+    characteristic_discriminant = sp.factor(
+        sp.discriminant(characteristic_polynomial)
+    )
+    squared_modulus = d_re**2 + d_im**2
+    expected_discriminant = sp.factor(
+        4
+        * ((a - b - c) ** 2 + 8 * squared_modulus)
+        * (c * (a - b + c) - squared_modulus) ** 2
+    )
+    check(
+        "the exact characteristic discriminant has the stated polynomial form",
+        sp.factor(characteristic_discriminant - expected_discriminant) == 0,
+    )
+    witness_discriminant = characteristic_discriminant.subs(
+        {a: 0, b: 2, c: 1, d_re: 0, d_im: 0}
+    )
+    check(
+        "the discriminant is not identically zero, so simple spectrum is generic",
+        witness_discriminant == 36,
+        f"witness discriminant = {witness_discriminant}",
+    )
+
+    # Fixed-seed numerical smoke control, not the proof of genericity.
     rng = np.random.default_rng(21)
     counts = {1: 0, 2: 0, 3: 0}
     for _ in range(500):
@@ -252,8 +289,8 @@ def part4_genericity() -> None:
         counts[distinct] += 1
     fraction_three = counts[3] / 500.0
     fraction_degenerate = (counts[1] + counts[2]) / 500.0
-    check("generic random samples have three distinct eigenvalues", fraction_three > 0.99, f"fraction = {fraction_three:.3f}")
-    check("degenerate samples are rare in random sampling", fraction_degenerate < 0.01, f"fraction = {fraction_degenerate:.3f}")
+    check("fixed-seed smoke samples have three distinct eigenvalues", fraction_three > 0.99, f"fraction = {fraction_three:.3f}")
+    check("fixed-seed smoke samples rarely hit degeneracy", fraction_degenerate < 0.01, f"fraction = {fraction_degenerate:.3f}")
 
 
 def part5_exact_s3_locus() -> None:
@@ -334,16 +371,33 @@ def part5_exact_s3_locus() -> None:
         "an on-locus matrix is invariant under generating 3-cycle r",
         is_invariant(on_locus, U_CYCLE),
     )
+    symbolic_on_locus = (a - c) * sp.eye(3) + c * sp.ones(3)
+    symbolic_operators = {
+        name: sp.Matrix(operator.real.astype(int))
+        for name, operator in operators.items()
+    }
     check(
-        "the on-locus matrix is invariant under all six S_3 matrices",
-        all(is_invariant(on_locus, operator) for operator in operators.values()),
+        "the full parametric locus is exactly invariant under all six S_3 matrices",
+        all(
+            sp.simplify(operator * symbolic_on_locus * operator.T - symbolic_on_locus)
+            == sp.zeros(3)
+            for operator in symbolic_operators.values()
+        ),
     )
-    expected_spectrum = sorted([1.5 + 2.0 * 0.7, 1.5 - 0.7, 1.5 - 0.7])
-    actual_spectrum = sorted(float(value) for value in np.linalg.eigvalsh(on_locus))
+    spectral_variable = sp.symbols("lambda")
+    locus_characteristic_polynomial = sp.factor(
+        symbolic_on_locus.charpoly(spectral_variable).as_expr()
+    )
+    expected_characteristic_polynomial = sp.factor(
+        (spectral_variable - (a + 2 * c))
+        * (spectral_variable - (a - c)) ** 2
+    )
     check(
-        "the S_3 locus has spectrum {a+2c, a-c, a-c}",
-        np.allclose(actual_spectrum, expected_spectrum, atol=1e-12),
-        f"got {actual_spectrum}",
+        "the S_3 locus has exact spectrum {a+2c, a-c, a-c}",
+        sp.factor(
+            locus_characteristic_polynomial - expected_characteristic_polynomial
+        )
+        == 0,
     )
 
     old_false_locus = build_M(2.2, 1.5, 0.7, 0.0)

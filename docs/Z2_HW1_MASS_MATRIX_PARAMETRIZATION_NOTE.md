@@ -90,6 +90,19 @@ already made `c` real, this is precisely `a=b` and `d=c in R`. Conversely,
 those conditions make `M` invariant under both generators and therefore under
 all of `S_3`. This proves necessity and sufficiency without sampling.
 
+The genericity statement is exact as well. For `d=d_R+i d_I`, the
+discriminant of the characteristic polynomial is
+
+```text
+4 ((a-b-c)^2 + 8 (d_R^2+d_I^2))
+  (c(a-b+c) - (d_R^2+d_I^2))^2.
+```
+
+This polynomial is not identically zero: at `(a,b,c,d)=(0,2,1,0)`, the
+matrix has exact spectrum `{0,1,3}` and discriminant `36`. Its nonzero set is
+therefore open and dense, which proves that a generic residual-`Z_2` matrix
+has three distinct eigenvalues.
+
 ## Classical results applied
 
 - Schur's lemma on the `Z_2` decomposition `V_1 ~= 2 * trivial + sign`
@@ -125,5 +138,6 @@ The runner checks invariance, the `5`-dimensional real parameter count, the
 sign eigenvector, the explicit `2 x 2` block, and the closed-form spectrum. It
 then performs an exact symbolic solve of the transposition and 3-cycle
 invariance equations, checks all six permutation matrices on the resulting
-`S_3` locus, verifies its spectrum, and exercises hostile controls omitting
-each necessary locus condition.
+`S_3` locus, verifies the exact characteristic-polynomial factorization and
+generic-family discriminant, and exercises hostile controls omitting each
+necessary locus condition.

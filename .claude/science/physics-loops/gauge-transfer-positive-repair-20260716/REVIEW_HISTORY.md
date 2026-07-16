@@ -104,9 +104,19 @@ Those governance fixes are applied. A fresh disposable compatibility pass
 completed with zero strict-lint errors; the target remained
 `bounded_theorem`, `unaudited`, dependency-free, critical, ready, and at 784
 transitive descendants. Every regenerated audit/status output was restored or
-deleted. Final governance fix-only rereview remains before the deep-block
-checkpoint is closed.
+deleted.
 
 Refreshed frozen cache: `24 PASS / 0 FAIL`, SHA
 `bd771dc30e0f5642a4755d623f11cfc36c74b574afc1c6670db2a2a1b6b80eb6`,
 elapsed `80.11s`.
+
+Final governance fix-only rereview: `PASS`. PR 5405 contains science
+refinement commit `60a16d30ed7bcd9ac4baca48282145f878dadc19`; its body is
+synchronized to the frozen cache and explicitly assigns the all-order
+`SU(N)` theorem to the source proof while describing the runner as finite
+normalization, `SU(3)` recurrence, and diagnostic gates. No audit/status
+output remains in the worktree.
+
+Final runner/cache wording-only rereview: `PASS`; fresh normalized stdout is
+identical to the pinned transcript, stderr is empty, and no false exact or
+numerical attribution remains.

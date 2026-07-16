@@ -69,43 +69,13 @@ The full pipeline adds:
 - `compute_audit_queue.py` — sorted next-up queue.
 - `render_audit_ledger.py` — markdown render.
 
-A minimal GitHub Actions workflow (drop into `.github/workflows/audit.yml`):
-
-```yaml
-name: audit-lane
-on:
-  push:
-    branches: [main, audit-lane]
-  pull_request:
-  schedule:
-    - cron: "0 6 * * *"   # daily 06:00 UTC
-
-jobs:
-  audit_pipeline:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-      - name: Run audit pipeline
-        run: bash docs/audit/scripts/run_pipeline.sh
-      - name: Commit refreshed ledger if changed
-        if: github.event_name == 'schedule' || github.ref == 'refs/heads/main'
-        run: |
-          if [[ -n "$(git status --porcelain docs/audit/data docs/audit/AUDIT_QUEUE.md)" ]]; then
-            git config user.name  "audit-bot"
-            git config user.email "audit-bot@local"
-            git add docs/audit/data docs/audit/AUDIT_QUEUE.md
-            git commit -m "audit: refresh ledger + queue (automated)"
-            git push
-          fi
-      - name: Upload audit queue artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: audit-queue
-          path: docs/audit/data/audit_queue.json
-```
+The installable workflow is maintained as a single canonical template,
+[`docs/audit/templates/audit_workflow.yml`](templates/audit_workflow.yml),
+kept byte-identical to the intended live `.github/workflows/audit.yml`
+(nightly cron + `workflow_dispatch` only; exact pins via
+`requirements-release.txt`; reset-and-regenerate push-race guard). Install or
+update it per [`templates/README.md`](templates/README.md) — do not hand-copy
+workflow YAML from this document.
 
 ## Codex audit invocation
 

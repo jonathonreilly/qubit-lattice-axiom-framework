@@ -4,10 +4,15 @@
 agent credential (no `workflow` OAuth scope) cannot push:
 
 1. `.github/workflows/audit.yml` — install `requirements-release.txt` (exact
-   pins) instead of loose floors. Requires PR #5403 (pyyaml pin) landed first.
+   pins) instead of loose floors. Requires PR #5403 (pyyaml pin) landed first;
+   the pin exists for release-set parity with the loose file (the yaml
+   importers are the vocabulary/render tooling under `scripts/`, not the
+   audit pipeline itself).
 2. `.github/workflows/pr-smoke.yml` (new) — per-PR byte-compile of changed
    Python + audit-tooling unit tests when `docs/audit/scripts` changed.
-   Read-only permissions, 15-minute cap, no auto-commit.
+   bash + pipefail on every multi-command step (a failing unittest process
+   can never be masked by a pipe); read-only permissions, 15-minute cap,
+   no auto-commit.
 
 Apply from any environment with workflow scope:
 

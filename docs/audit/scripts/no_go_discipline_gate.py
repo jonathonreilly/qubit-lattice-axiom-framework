@@ -933,6 +933,35 @@ def _canonical_runner_path(repo_root: Path, raw: str | None) -> str:
     return str(raw)
 
 
+def _repo_local_helper_runner_path(
+    repo_root: Path,
+    raw: str | None,
+) -> str | None:
+    helper = _canonical_runner_path(repo_root, raw)
+    relative = Path(helper)
+    if (
+        relative.is_absolute()
+        or not relative.parts
+        or relative.parts[0] != "scripts"
+        or ".." in relative.parts
+    ):
+        return None
+    try:
+        root = repo_root.resolve()
+        scripts_root = (root / "scripts").resolve()
+        resolved = (root / relative).resolve()
+        # Fail closed on symlinked helpers: the resolved target must stay
+        # inside BOTH the repo root and the resolved scripts/ directory, so a
+        # lexically valid scripts/ entry cannot point elsewhere in the repo.
+        resolved.relative_to(root)
+        resolved.relative_to(scripts_root)
+    except (OSError, ValueError):
+        return None
+    if not resolved.is_file():
+        return None
+    return helper
+
+
 def premise_type_for_id(repo_root: Path, claim_id: str) -> str | None:
     axioms = _load_json(repo_root, AXIOM_REGISTRY)
     if claim_id in set(axioms.get("canonical_ids") or []):
@@ -1209,6 +1238,18 @@ def partial_closure_index_path(claim_id: str) -> str:
 
 def runner_stdout_evidence_path(claim_id: str) -> str:
     return f"audit-packet://runner-stdout/{claim_id}"
+
+
+def independent_runner_stdout_evidence_path(
+    claim_id: str,
+    runner_path: str,
+) -> str:
+    canonical_path = str(runner_path).replace("\\", "/")
+    path_digest = hashlib.sha256(canonical_path.encode("utf-8")).hexdigest()[:16]
+    return (
+        f"audit-packet://runner-stdout-independent/{claim_id}/"
+        f"{Path(canonical_path).stem}-{path_digest}"
+    )
 
 
 def blind_reaudit_control_path(claim_id: str) -> str:
@@ -1809,7 +1850,9 @@ def build_evidence_manifest(
         text=_read_text(root, runner_path),
     )
     for helper_raw in row.get("helper_runner_paths") or []:
-        helper = _canonical_runner_path(root, helper_raw)
+        helper = _repo_local_helper_runner_path(root, helper_raw)
+        if helper is None:
+            continue
         _add_evidence(
             manifest,
             path=helper,
@@ -2792,7 +2835,7 @@ def forensic_mode() -> bool:
     }
 
 
-def source_requires_no_go_discipline(
+def source_is_no_go_artifact(
     note_path: str | None,
     note_body: str | None,
     claim_type_hint: str | None,
@@ -2811,6 +2854,17 @@ def source_requires_no_go_discipline(
         # Filename-level no-go authority is always forensic.  A source may
         # explain that an older reading was withdrawn, but that prose cannot
         # silently downgrade the assurance tier of the no-go-named artifact.
+        return True
+    return False
+
+
+def source_requires_no_go_discipline(
+    note_path: str | None,
+    note_body: str | None,
+    claim_type_hint: str | None,
+) -> bool:
+    body = note_body or ""
+    if source_is_no_go_artifact(note_path, body, claim_type_hint):
         return True
     # Wall-naming positive/bounded rows carry the mandatory heavy packet only
     # in the forensic tier; in the development tier the auditor still applies
@@ -3987,7 +4041,22 @@ def _validate_n7(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             )
             and isinstance(resolution_entry.get("full_content_sha256"), str)
         )
-        independent_execution = "runner_stdout_independent" in resolution_roles
+        # The authenticated independent-execution role only grants authority
+        # when it is not contradicted by a failed or suppressed sibling role on
+        # the same surface. If a producer attaches both (for example a duplicate
+        # helper declaration whose second invocation fails after the first
+        # exits zero), the entry text can be a markerless failure/suppressed
+        # tail; require the roles to be mutually exclusive so incomplete or
+        # failed execution output cannot authenticate an N7 resolution.
+        independent_execution = (
+            "runner_stdout_independent" in resolution_roles
+            and not resolution_roles.intersection(
+                {
+                    "runner_stdout_independent_failed",
+                    "runner_stdout_independent_suppressed",
+                }
+            )
+        )
         if not (accepted_authority or independent_execution):
             return (
                 "N7 independent resolution must cite authenticated independent "

@@ -122,6 +122,14 @@ CLIPPED_EVIDENCE_MARKERS = (
     "[runner stdout clipped; ",
     "[runner cache excerpt clipped; ",
 )
+INDEPENDENT_N7_RESOLUTION_MARKER = "N7_STEELMAN_RESOLUTION"
+# Roles whose evidence must be complete (unclipped) before an audited_clean
+# verdict may rest on it. Keep in sync with
+# docs/audit/scripts/apply_audit.py LOAD_BEARING_EVIDENCE_ROLES.
+LOAD_BEARING_EVIDENCE_ROLES = {
+    "source", "authority", "runner", "helper", "runner_stdout",
+    "runner_stdout_cache_eligible", "runner_stdout_independent",
+}
 
 # Codex rejects turn input above 1,048,576 characters. Keep a safety margin
 # for transport framing. Only the rendered N8 candidate list may be bounded;
@@ -819,6 +827,72 @@ def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
         return f"[runner error: {e}]"
 
 
+def repo_local_helper_runner_path(runner_path: str) -> tuple[str, Path] | None:
+    """Resolve a helper to a regular ``scripts/`` file contained by the repo."""
+    canonical = canonical_runner_path(runner_path)
+    relative = Path(canonical)
+    if (
+        relative.is_absolute()
+        or not relative.parts
+        or relative.parts[0] != "scripts"
+        or ".." in relative.parts
+    ):
+        return None
+    try:
+        root = REPO_ROOT.resolve()
+        scripts_root = (root / "scripts").resolve()
+        resolved = (root / relative).resolve()
+        # Fail closed on symlinked helpers: the resolved target must stay
+        # inside BOTH the repo root and the resolved scripts/ directory, so a
+        # lexically valid scripts/ entry cannot point elsewhere in the repo.
+        resolved.relative_to(root)
+        resolved.relative_to(scripts_root)
+    except (OSError, ValueError):
+        return None
+    if not resolved.is_file():
+        return None
+    return canonical, resolved
+
+
+def get_independent_runner_stdout(
+    runner_path: str,
+    default_timeout_sec: int,
+) -> tuple[str, bool]:
+    """Execute an N7 helper live and authenticate stdout after exit zero."""
+    local_runner = repo_local_helper_runner_path(runner_path)
+    if local_runner is None:
+        return "[runner path rejected: not a repo-local scripts file]", False
+    runner_path, path = local_runner
+    timeout_sec = runner_timeout_for(runner_path, default_timeout_sec)
+    try:
+        result = subprocess.run(
+            [sys.executable, str(path)],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=timeout_sec,
+            env={**os.environ, "PYTHONPATH": str(REPO_ROOT / "scripts")},
+        )
+        if result.returncode != 0:
+            return (
+                f"[runner exit={result.returncode}]\n"
+                f"{result.stdout[-3000:]}\n--- stderr ---\n"
+                f"{result.stderr[-1500:]}",
+                False,
+            )
+        if len(result.stdout) > 6000:
+            return (
+                f"[runner stdout clipped; {len(result.stdout)} chars total]\n"
+                f"{result.stdout[-6000:]}",
+                True,
+            )
+        return result.stdout, True
+    except subprocess.TimeoutExpired:
+        return f"[runner timed out at {timeout_sec}s — likely needs compute-rerun]", False
+    except Exception as error:
+        return f"[runner error: {error}]", False
+
+
 def render_prompt(row: dict, ledger_rows: dict[str, dict],
                   template: str, runner_timeout_sec: int,
                   use_cache: bool = False,
@@ -849,6 +923,11 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
 
     full_note_body = read_note_body(note_path) or f"[note missing on disk: {note_path}]"
     no_go_required = no_go_discipline_gate.source_requires_no_go_discipline(
+        note_path,
+        full_note_body,
+        "" if row.get("dispatch_target") else ledger_claim_type,
+    )
+    no_go_artifact = no_go_discipline_gate.source_is_no_go_artifact(
         note_path,
         full_note_body,
         "" if row.get("dispatch_target") else ledger_claim_type,
@@ -1007,29 +1086,57 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     # into class (C) on packet-incompleteness grounds even when the chain is
     # sound. See AUDIT_AGENT_PROMPT_TEMPLATE.md §3b for the auditor-side
     # protocol.
-    helper_runner_paths = (
+    raw_helper_runner_paths = (
         row.get("helper_runner_paths")
         or ledger_rows.get(cid, {}).get("helper_runner_paths")
         or []
     )
+    # Canonical-deduplicate helper paths before execution. Two declarations of
+    # the same helper resolve to one independent-stdout evidence surface, so a
+    # second (possibly failing) invocation would re-render that entry's text
+    # while the first invocation's authenticated role stays attached — leaving
+    # an authenticated `runner_stdout_independent` role beside a markerless
+    # failure tail. Dedup keeps each helper's authenticated role bound to
+    # exactly one live invocation. The citation-graph producer already emits
+    # unique helper lists, but this must not depend on that convention.
+    helper_runner_paths: list[str] = []
+    _seen_helper_canonical: set[str] = set()
+    for _hp_raw in raw_helper_runner_paths:
+        _hp_canonical = canonical_runner_path(_hp_raw)
+        if _hp_canonical in _seen_helper_canonical:
+            continue
+        _seen_helper_canonical.add(_hp_canonical)
+        helper_runner_paths.append(_hp_raw)
     helper_sources_blocks: list[str] = []
     for hp_raw in helper_runner_paths:
         hp = canonical_runner_path(hp_raw)
-        full_hp = REPO_ROOT / hp
-        if not full_hp.exists():
+        local_helper = repo_local_helper_runner_path(hp)
+        if local_helper is None:
+            rejected_path = (
+                "audit-packet://rejected-helper/"
+                f"{cid}/"
+                f"{hashlib.sha256(str(hp).encode('utf-8')).hexdigest()[:16]}"
+            )
             helper_block = (
-                f"=== BEGIN HELPER RUNNER: {hp} ===\n"
-                f"[helper missing on disk: {hp}]\n"
-                f"=== END HELPER RUNNER: {hp} ==="
+                f"=== BEGIN REJECTED HELPER: {rejected_path} ===\n"
+                "[helper rejected: path is not a repo-local scripts file]\n"
+                f"=== END REJECTED HELPER: {rejected_path} ==="
             )
             helper_sources_blocks.append(helper_block)
             no_go_discipline_gate.set_packet_evidence(
-                evidence_manifest, path=hp, role="helper", text=helper_block,
+                evidence_manifest,
+                path=rejected_path,
+                role="helper_rejected",
+                text=helper_block,
                 invocation_bound_rendered_text=True,
             )
             continue
+        hp, full_hp = local_helper
         try:
             hsrc = full_hp.read_text(encoding="utf-8", errors="replace")
+            helper_declares_independent_resolution = (
+                INDEPENDENT_N7_RESOLUTION_MARKER in hsrc
+            )
             if len(hsrc) > HELPER_SOURCE_CHAR_LIMIT:
                 head = hsrc[: HELPER_SOURCE_CHAR_LIMIT // 2]
                 tail = hsrc[-HELPER_SOURCE_CHAR_LIMIT // 2 :]
@@ -1038,9 +1145,45 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
                     f"... [truncated; helper is {len(hsrc)} chars total] ...\n\n"
                     f"{tail}"
                 )
+            independent_stdout_block = ""
+            if no_go_artifact and helper_declares_independent_resolution:
+                independent_stdout_path = (
+                    no_go_discipline_gate.independent_runner_stdout_evidence_path(
+                        cid, hp
+                    )
+                )
+                if skip_runner_stdout:
+                    independent_stdout = (
+                        "(independent helper stdout suppressed by --no-runner)"
+                    )
+                    independent_stdout_role = (
+                        "runner_stdout_independent_suppressed"
+                    )
+                else:
+                    independent_stdout, independent_stdout_authenticated = (
+                        get_independent_runner_stdout(hp, runner_timeout_sec)
+                    )
+                    independent_stdout_role = (
+                        "runner_stdout_independent"
+                        if independent_stdout_authenticated
+                        else "runner_stdout_independent_failed"
+                    )
+                no_go_discipline_gate.set_packet_evidence(
+                    evidence_manifest,
+                    path=independent_stdout_path,
+                    role=independent_stdout_role,
+                    text=independent_stdout or "(no stdout captured)",
+                )
+                independent_stdout_block = (
+                    "\n=== BEGIN INDEPENDENT HELPER STDOUT: "
+                    f"{independent_stdout_path} ===\n"
+                    f"{independent_stdout or '(no stdout captured)'}\n"
+                    "=== END INDEPENDENT HELPER STDOUT: "
+                    f"{independent_stdout_path} ==="
+                )
             hcache = (
                 "(helper cache is not audit authority; current helper source "
-                "is inspected and the primary runner is executed live)"
+                "is inspected and marked N7 helpers are executed live)"
             )
             helper_block = (
                 f"=== BEGIN HELPER RUNNER: {hp} ===\n"
@@ -1048,6 +1191,7 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
                 f"=== BEGIN HELPER RUNNER CACHE: {hp} ===\n"
                 f"{hcache}\n"
                 f"=== END HELPER RUNNER CACHE: {hp} ===\n"
+                f"{independent_stdout_block}\n"
                 f"=== END HELPER RUNNER: {hp} ==="
             )
             helper_sources_blocks.append(helper_block)
@@ -1529,8 +1673,7 @@ def validate_verdict(
                 marker in str(entry.get("text") or "")
                 for marker in CLIPPED_EVIDENCE_MARKERS
             )
-            and set(entry.get("roles") or [])
-            & {"source", "authority", "runner", "helper", "runner_stdout", "runner_stdout_cache_eligible"}
+            and set(entry.get("roles") or []) & LOAD_BEARING_EVIDENCE_ROLES
         )
         if clipped_paths:
             return (

@@ -8467,6 +8467,545 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 )
             )
 
+    def test_n7_marker_helper_runs_live_as_independent_stdout(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            note_path = root / "docs" / "target.md"
+            runner_path = root / "scripts" / "runner.py"
+            helper_path = root / "scripts" / "helper.py"
+            note_path.parent.mkdir(parents=True, exist_ok=True)
+            runner_path.parent.mkdir(parents=True, exist_ok=True)
+            note_path.write_text(_no_go_evidence_text(), encoding="utf-8")
+            runner_path.write_text("print('primary')\n", encoding="utf-8")
+            helper_path.write_text(
+                "print('N7_STEELMAN_RESOLUTION selector wall resolved')\n",
+                encoding="utf-8",
+            )
+            row = {
+                "claim_id": "target",
+                "note_path": "docs/target.md",
+                "runner_path": "scripts/runner.py",
+                "helper_runner_paths": ["scripts/helper.py"],
+                "claim_type": "no_go",
+                "deps": [],
+            }
+            manifest: dict[str, dict] = {}
+            template = (
+                "{{RUNNER_STDOUT}}\n{{HELPER_RUNNER_SOURCES}}\n"
+                "{{FRAMEWORK_PREMISE_CONTEXT}}\n"
+                "{{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
+                "{{NO_GO_CROSS_CYCLE_INDEX}}\n"
+                "{{NO_GO_EVIDENCE_MANIFEST}}"
+            )
+            with mock.patch.object(
+                m,
+                "get_runner_stdout",
+                return_value=_no_go_evidence_text(),
+            ):
+                prompt = m.render_prompt(
+                    row,
+                    {"target": row},
+                    template,
+                    1,
+                    use_cache=False,
+                    evidence_manifest_out=manifest,
+                )
+            independent_path = (
+                m.no_go_discipline_gate.independent_runner_stdout_evidence_path(
+                    "target", "scripts/helper.py"
+                )
+            )
+            self.assertEqual(
+                manifest[independent_path]["roles"],
+                ["runner_stdout_independent"],
+            )
+            self.assertIn("selector wall resolved", manifest[independent_path]["text"])
+            self.assertIn(independent_path, prompt)
+
+    def test_no_runner_mode_cannot_authenticate_independent_helper_stdout(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            note_path = root / "docs" / "target.md"
+            runner_path = root / "scripts" / "runner.py"
+            helper_path = root / "scripts" / "helper.py"
+            note_path.parent.mkdir(parents=True, exist_ok=True)
+            runner_path.parent.mkdir(parents=True, exist_ok=True)
+            note_path.write_text(_no_go_evidence_text(), encoding="utf-8")
+            runner_path.write_text("print('primary')\n", encoding="utf-8")
+            helper_path.write_text(
+                "print('N7_STEELMAN_RESOLUTION selector wall resolved')\n",
+                encoding="utf-8",
+            )
+            row = {
+                "claim_id": "target",
+                "note_path": "docs/target.md",
+                "runner_path": "scripts/runner.py",
+                "helper_runner_paths": ["scripts/helper.py"],
+                "claim_type": "no_go",
+                "deps": [],
+            }
+            manifest: dict[str, dict] = {}
+            with (
+                mock.patch.object(m, "get_runner_stdout") as live_stdout,
+                mock.patch.object(
+                    m, "get_independent_runner_stdout"
+                ) as independent_stdout,
+            ):
+                m.render_prompt(
+                    row,
+                    {"target": row},
+                    "{{HELPER_RUNNER_SOURCES}}\n{{FRAMEWORK_PREMISE_CONTEXT}}\n"
+                    "{{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
+                    "{{NO_GO_CROSS_CYCLE_INDEX}}\n"
+                    "{{NO_GO_EVIDENCE_MANIFEST}}",
+                    0,
+                    skip_runner_stdout=True,
+                    evidence_manifest_out=manifest,
+                )
+            independent_path = (
+                m.no_go_discipline_gate.independent_runner_stdout_evidence_path(
+                    "target", "scripts/helper.py"
+                )
+            )
+            self.assertEqual(
+                manifest[independent_path]["roles"],
+                ["runner_stdout_independent_suppressed"],
+            )
+            live_stdout.assert_not_called()
+            independent_stdout.assert_not_called()
+
+    def test_failing_n7_helper_stdout_is_not_authenticated(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            note_path = root / "docs" / "target.md"
+            runner_path = root / "scripts" / "runner.py"
+            helper_path = root / "scripts" / "helper.py"
+            note_path.parent.mkdir(parents=True, exist_ok=True)
+            runner_path.parent.mkdir(parents=True, exist_ok=True)
+            note_path.write_text(_no_go_evidence_text(), encoding="utf-8")
+            runner_path.write_text("print('primary')\n", encoding="utf-8")
+            resolution = (
+                "N7_STEELMAN_RESOLUTION selector wall remains unresolved because "
+                "a failing helper cannot authenticate evidence despite printing "
+                "this deliberately long resolution line."
+            )
+            helper_path.write_text(
+                f"print({resolution!r})\n"
+                "raise SystemExit(7)\n",
+                encoding="utf-8",
+            )
+            row = {
+                "claim_id": "target",
+                "note_path": "docs/target.md",
+                "runner_path": "scripts/runner.py",
+                "helper_runner_paths": ["scripts/helper.py"],
+                "claim_type": "no_go",
+                "deps": [],
+            }
+            manifest: dict[str, dict] = {}
+            with mock.patch.object(
+                m,
+                "get_runner_stdout",
+                return_value=_no_go_evidence_text(),
+            ):
+                m.render_prompt(
+                    row,
+                    {"target": row},
+                    "{{HELPER_RUNNER_SOURCES}}\n{{FRAMEWORK_PREMISE_CONTEXT}}\n"
+                    "{{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
+                    "{{NO_GO_CROSS_CYCLE_INDEX}}\n"
+                    "{{NO_GO_EVIDENCE_MANIFEST}}",
+                    2,
+                    use_cache=False,
+                    evidence_manifest_out=manifest,
+                )
+            independent_path = (
+                m.no_go_discipline_gate.independent_runner_stdout_evidence_path(
+                    "target", "scripts/helper.py"
+                )
+            )
+            self.assertEqual(
+                manifest[independent_path]["roles"],
+                ["runner_stdout_independent_failed"],
+            )
+            self.assertIn("runner exit=7", manifest[independent_path]["text"])
+            packet = _no_go_packet(
+                evidence_path="audit-packet://runner-stdout/target",
+                evidence_locator="No-go obstruction",
+                source_path="docs/target.md",
+                claim_id="target",
+            )
+            packet["N7_steelman"].update({
+                "resolution": resolution,
+                "resolution_evidence_path": independent_path,
+                "resolution_evidence_locator": resolution,
+            })
+            self.assertIn(
+                "must cite authenticated independent execution",
+                m.no_go_discipline_gate._validate_n7(
+                    packet, "PASS", manifest
+                ) or "",
+            )
+
+    def test_duplicate_n7_helper_declaration_runs_once_and_stays_authenticated(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            note_path = root / "docs" / "target.md"
+            runner_path = root / "scripts" / "runner.py"
+            helper_path = root / "scripts" / "helper.py"
+            counter_path = root / "invocations.txt"
+            note_path.parent.mkdir(parents=True, exist_ok=True)
+            runner_path.parent.mkdir(parents=True, exist_ok=True)
+            note_path.write_text(_no_go_evidence_text(), encoding="utf-8")
+            runner_path.write_text("print('primary')\n", encoding="utf-8")
+            # Stateful helper: the first invocation exits zero with the N7
+            # resolution marker; any second invocation emits a long failure
+            # tail (no clipping marker) and exits nonzero. Canonical dedup must
+            # keep the duplicate declaration from ever triggering that second
+            # invocation, so the authenticated role cannot be poisoned by a
+            # later markerless failure tail on the same evidence surface.
+            helper_path.write_text(
+                "import pathlib\n"
+                f"c = pathlib.Path({str(counter_path)!r})\n"
+                "n = int(c.read_text()) if c.exists() else 0\n"
+                "c.write_text(str(n + 1))\n"
+                "if n == 0:\n"
+                "    print('N7_STEELMAN_RESOLUTION selector wall resolved')\n"
+                "else:\n"
+                "    print('POISON ' + 'y' * 9000)\n"
+                "    raise SystemExit(7)\n",
+                encoding="utf-8",
+            )
+            row = {
+                "claim_id": "target",
+                "note_path": "docs/target.md",
+                "runner_path": "scripts/runner.py",
+                "helper_runner_paths": ["scripts/helper.py", "scripts/helper.py"],
+                "claim_type": "no_go",
+                "deps": [],
+            }
+            manifest: dict[str, dict] = {}
+            with mock.patch.object(
+                m, "get_runner_stdout", return_value=_no_go_evidence_text(),
+            ):
+                m.render_prompt(
+                    row,
+                    {"target": row},
+                    "{{HELPER_RUNNER_SOURCES}}\n{{FRAMEWORK_PREMISE_CONTEXT}}\n"
+                    "{{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
+                    "{{NO_GO_CROSS_CYCLE_INDEX}}\n"
+                    "{{NO_GO_EVIDENCE_MANIFEST}}",
+                    2,
+                    use_cache=False,
+                    evidence_manifest_out=manifest,
+                )
+            independent_path = (
+                m.no_go_discipline_gate.independent_runner_stdout_evidence_path(
+                    "target", "scripts/helper.py"
+                )
+            )
+            # The helper ran exactly once; the duplicate declaration was dropped.
+            self.assertEqual(counter_path.read_text(), "1")
+            self.assertEqual(
+                manifest[independent_path]["roles"],
+                ["runner_stdout_independent"],
+            )
+            self.assertIn(
+                "selector wall resolved", manifest[independent_path]["text"]
+            )
+            self.assertNotIn("POISON", manifest[independent_path]["text"])
+
+    def test_n7_authenticated_role_revoked_by_failed_sibling(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        packet = _no_go_packet()
+        _set_no_go_scan_coverage(packet, manifest)
+        resolution_path = packet["N7_steelman"]["resolution_evidence_path"]
+        # Baseline: a lone authenticated independent-execution role passes N7.
+        self.assertEqual(
+            manifest[resolution_path]["roles"], ["runner_stdout_independent"]
+        )
+        self.assertIsNone(m._validate_n7(packet, "PASS", manifest))
+        # Defense in depth: an authenticated role contradicted by a failed
+        # sibling on the same surface must no longer authenticate, even if
+        # dedup were bypassed and both roles landed on one entry.
+        manifest[resolution_path]["roles"].append(
+            "runner_stdout_independent_failed"
+        )
+        self.assertIn(
+            "must cite authenticated independent execution",
+            m._validate_n7(packet, "PASS", manifest) or "",
+        )
+
+    def test_independent_helper_stdout_paths_resist_basename_collision(self):
+        m = _import_codex_audit_runner()
+        first = m.no_go_discipline_gate.independent_runner_stdout_evidence_path(
+            "target", "scripts/a/helper.py"
+        )
+        second = m.no_go_discipline_gate.independent_runner_stdout_evidence_path(
+            "target", "scripts/b/helper.py"
+        )
+        self.assertNotEqual(first, second)
+        self.assertIn("/helper-", first)
+        self.assertIn("/helper-", second)
+
+    def test_forensic_positive_row_does_not_run_n7_helper_certificate(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            note_path = root / "docs" / "positive.md"
+            runner_path = root / "scripts" / "runner.py"
+            helper_path = root / "scripts" / "helper.py"
+            note_path.parent.mkdir(parents=True, exist_ok=True)
+            runner_path.parent.mkdir(parents=True, exist_ok=True)
+            note_path.write_text(
+                "Claim type: positive_theorem\nThe selector wall remains unresolved.\n",
+                encoding="utf-8",
+            )
+            runner_path.write_text("print('primary')\n", encoding="utf-8")
+            helper_path.write_text(
+                "print('N7_STEELMAN_RESOLUTION selector wall resolved')\n",
+                encoding="utf-8",
+            )
+            row = {
+                "claim_id": "positive",
+                "note_path": "docs/positive.md",
+                "runner_path": "scripts/runner.py",
+                "helper_runner_paths": ["scripts/helper.py"],
+                "claim_type": "positive_theorem",
+                "deps": [],
+            }
+            manifest: dict[str, dict] = {}
+            with (
+                mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}),
+                mock.patch.object(
+                    m,
+                    "get_runner_stdout",
+                    return_value=_no_go_evidence_text("PRIMARY_STDOUT"),
+                ),
+                mock.patch.object(
+                    m, "get_independent_runner_stdout"
+                ) as independent_stdout,
+            ):
+                m.render_prompt(
+                    row,
+                    {"positive": row},
+                    "{{HELPER_RUNNER_SOURCES}}\n{{FRAMEWORK_PREMISE_CONTEXT}}\n"
+                    "{{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
+                    "{{NO_GO_CROSS_CYCLE_INDEX}}\n"
+                    "{{NO_GO_EVIDENCE_MANIFEST}}",
+                    1,
+                    use_cache=False,
+                    evidence_manifest_out=manifest,
+                )
+            independent_stdout.assert_not_called()
+            self.assertFalse(any(
+                "runner-stdout-independent" in path for path in manifest
+            ))
+
+    def test_nonmarker_helper_does_not_run_as_independent_certificate(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            note_path = root / "docs" / "target.md"
+            runner_path = root / "scripts" / "runner.py"
+            helper_path = root / "scripts" / "helper.py"
+            note_path.parent.mkdir(parents=True, exist_ok=True)
+            runner_path.parent.mkdir(parents=True, exist_ok=True)
+            note_path.write_text(_no_go_evidence_text(), encoding="utf-8")
+            runner_path.write_text("print('primary')\n", encoding="utf-8")
+            helper_path.write_text("print('ordinary helper')\n", encoding="utf-8")
+            row = {
+                "claim_id": "target",
+                "note_path": "docs/target.md",
+                "runner_path": "scripts/runner.py",
+                "helper_runner_paths": ["scripts/helper.py"],
+                "claim_type": "no_go",
+                "deps": [],
+            }
+            with (
+                mock.patch.object(
+                    m,
+                    "get_runner_stdout",
+                    return_value=_no_go_evidence_text("PRIMARY_STDOUT"),
+                ),
+                mock.patch.object(
+                    m, "get_independent_runner_stdout"
+                ) as independent_stdout,
+            ):
+                m.render_prompt(
+                    row,
+                    {"target": row},
+                    "{{HELPER_RUNNER_SOURCES}}\n{{FRAMEWORK_PREMISE_CONTEXT}}\n"
+                    "{{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
+                    "{{NO_GO_CROSS_CYCLE_INDEX}}\n"
+                    "{{NO_GO_EVIDENCE_MANIFEST}}",
+                    1,
+                    use_cache=False,
+                )
+            independent_stdout.assert_not_called()
+
+    def test_absolute_external_helper_is_rejected_without_path_disclosure(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            sandbox = Path(tmp)
+            root = sandbox / "repo"
+            outside = sandbox / "outside.py"
+            m.REPO_ROOT = root
+            note_path = root / "docs" / "target.md"
+            runner_path = root / "scripts" / "runner.py"
+            note_path.parent.mkdir(parents=True, exist_ok=True)
+            runner_path.parent.mkdir(parents=True, exist_ok=True)
+            note_path.write_text(_no_go_evidence_text(), encoding="utf-8")
+            runner_path.write_text("print('primary')\n", encoding="utf-8")
+            outside.write_text(
+                "print('N7_STEELMAN_RESOLUTION selector wall resolved')\n",
+                encoding="utf-8",
+            )
+            row = {
+                "claim_id": "target",
+                "note_path": "docs/target.md",
+                "runner_path": "scripts/runner.py",
+                "helper_runner_paths": [str(outside)],
+                "claim_type": "no_go",
+                "deps": [],
+            }
+            manifest: dict[str, dict] = {}
+            with (
+                mock.patch.object(
+                    m,
+                    "get_runner_stdout",
+                    return_value=_no_go_evidence_text("PRIMARY_STDOUT"),
+                ),
+                mock.patch.object(
+                    m, "get_independent_runner_stdout"
+                ) as independent_stdout,
+            ):
+                prompt = m.render_prompt(
+                    row,
+                    {"target": row},
+                    "{{HELPER_RUNNER_SOURCES}}\n{{FRAMEWORK_PREMISE_CONTEXT}}\n"
+                    "{{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
+                    "{{NO_GO_CROSS_CYCLE_INDEX}}\n"
+                    "{{NO_GO_EVIDENCE_MANIFEST}}",
+                    1,
+                    use_cache=False,
+                    evidence_manifest_out=manifest,
+                )
+            independent_stdout.assert_not_called()
+            self.assertNotIn(str(outside), prompt)
+            rejected = [
+                entry for entry in manifest.values()
+                if "helper_rejected" in set(entry.get("roles") or [])
+            ]
+            self.assertEqual(len(rejected), 1)
+            self.assertIn("not a repo-local scripts file", rejected[0]["text"])
+
+    def test_symlink_helper_escape_is_rejected(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            sandbox = Path(tmp)
+            root = sandbox / "repo"
+            outside = sandbox / "outside.py"
+            scripts = root / "scripts"
+            scripts.mkdir(parents=True, exist_ok=True)
+            outside.write_text(
+                "print('N7_STEELMAN_RESOLUTION selector wall resolved')\n",
+                encoding="utf-8",
+            )
+            link = scripts / "helper.py"
+            link.symlink_to(outside)
+            m.REPO_ROOT = root
+            self.assertIsNone(
+                m.repo_local_helper_runner_path("scripts/helper.py")
+            )
+            stdout, authenticated = m.get_independent_runner_stdout(
+                "scripts/helper.py", 1
+            )
+            self.assertFalse(authenticated)
+            self.assertIn("path rejected", stdout)
+
+    def test_in_repo_symlink_out_of_scripts_is_rejected(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / "repo"
+            scripts = root / "scripts"
+            docs = root / "docs"
+            scripts.mkdir(parents=True, exist_ok=True)
+            docs.mkdir(parents=True, exist_ok=True)
+            escaped = docs / "escaped.py"
+            escaped.write_text(
+                "print('N7_STEELMAN_RESOLUTION selector wall resolved')\n",
+                encoding="utf-8",
+            )
+            link = scripts / "helper.py"
+            link.symlink_to(Path("..") / "docs" / "escaped.py")
+            m.REPO_ROOT = root
+            self.assertIsNone(
+                m.repo_local_helper_runner_path("scripts/helper.py")
+            )
+            stdout, authenticated = m.get_independent_runner_stdout(
+                "scripts/helper.py", 1
+            )
+            self.assertFalse(authenticated)
+            self.assertIn("path rejected", stdout)
+            gate = m.no_go_discipline_gate
+            self.assertIsNone(
+                gate._repo_local_helper_runner_path(root, "scripts/helper.py")
+            )
+            real = scripts / "real_helper.py"
+            real.write_text("print('ok')\n", encoding="utf-8")
+            self.assertEqual(
+                gate._repo_local_helper_runner_path(
+                    root, "scripts/real_helper.py"
+                ),
+                "scripts/real_helper.py",
+            )
+
+    def test_clipped_independent_stdout_blocks_clean_verdict(self):
+        m = _import_codex_audit_runner()
+        manifest = {
+            "audit-packet://runner-stdout-independent/target/helper-aaaa": {
+                "roles": ["runner_stdout_independent"],
+                "text": "[runner stdout clipped; 9999 chars total]\ntail",
+            }
+        }
+        # The runner-side audited_clean clipped-evidence guard scans the
+        # module-level LOAD_BEARING_EVIDENCE_ROLES constant; the independent
+        # stdout role must be a member so clipped independent execution
+        # evidence blocks a clean verdict.
+        self.assertIn(
+            "runner_stdout_independent", m.LOAD_BEARING_EVIDENCE_ROLES
+        )
+        clipped = [
+            path
+            for path, entry in manifest.items()
+            if any(
+                marker in str(entry.get("text") or "")
+                for marker in m.CLIPPED_EVIDENCE_MARKERS
+            )
+            and set(entry.get("roles") or []) & m.LOAD_BEARING_EVIDENCE_ROLES
+        ]
+        self.assertEqual(len(clipped), 1)
+        apply_mod = _import("apply_audit")
+        self.assertIn(
+            "runner_stdout_independent",
+            apply_mod.LOAD_BEARING_EVIDENCE_ROLES,
+        )
+        apply_error = apply_mod.clipped_clean_evidence_error(manifest)
+        self.assertIsNotNone(apply_error)
+        self.assertIn("clipped evidence", apply_error)
+
     def test_source_scan_groups_authenticate_full_bytes_before_display_clipping(self):
         m = _import_codex_audit_runner()
         with tempfile.TemporaryDirectory() as tmp:

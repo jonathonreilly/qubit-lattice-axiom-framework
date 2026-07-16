@@ -56,7 +56,7 @@ CLIPPED_EVIDENCE_MARKERS = (
 )
 LOAD_BEARING_EVIDENCE_ROLES = {
     "source", "authority", "runner", "helper", "runner_stdout",
-    "runner_stdout_cache_eligible",
+    "runner_stdout_cache_eligible", "runner_stdout_independent",
 }
 
 

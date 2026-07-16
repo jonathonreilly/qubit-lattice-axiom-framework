@@ -1,0 +1,18 @@
+PASS actual_hidden_external_coordinate_partition_and_ownership: 56 nonskeleton + 4 skeleton B = 60 hidden Haar; 15 I1 Gaussian; 4 W + 1 K1 slot external; even block trivial and 15 hidden blocks have 5 coordinates
+PASS external_w_mark_stays_in_physical_hidden_raw_arm: F(W)=W has E_hid F=F and Q_hid F=0; formal Q_W F is nonzero and survives E_hid
+PASS skeleton_substitution_and_hidden_expectation_are_contractive: Z2 fixture: (B,W)->(V1,V2) is bijective, sup norm is preserved, and fixed-W E_B is contractive
+PASS paid_primitive_atoms_dominate_regrouped_base_coefficient: ||f||=0.970000000000000 <= paid primitive decorated sum=2.241959594928934; no second atom charge
+PASS site_block_coefficient_atom_algebra: M_blk(fg)=2.291452993211135 <= M_blk(f)M_blk(g)=2.509464594801389
+PASS carrierwise_factorization_exponentiation_envelope: sum_X w_X(expm1 Phi_X)=2.756918840919328e-02 <= expm1(sum_X w_X Phi_X)=2.788161510725265e-02
+PASS site_block_tree_span_and_factor_two_support: |Y|=1, ell=0, |X2|=1, diamX2=0; |Y|=2, ell=1, |X2|=2, diamX2=1; |Y|=3, ell=2, |X2|=3, diamX2=2; |Y|=4, ell=3, |X2|=3, diamX2=2; |Y|=5, ell=4, |X2|=5, diamX2=2; |Y|=4, ell=3, |X2|=3, diamX2=2
+PASS floor_ceil_parity_map_pays_at_most_one_mixed_endpoint: floor/floor and ceil/ceil are l1 1-Lipschitz; floor/ceil for a parity-one second-half start costs at most d+1
+PASS site_block_anchor_multiplicity_is_below_68: 2^4 owner-site blocks + 4 incoming second-half endpoints = 20 <= 68
+PASS attachment_chart_exactly_fits_connected_carrier_weight: Theta+2c_att+Lambda=0.400001=theta_s
+PASS actual_residual_site_block_root_activity: m=1e46: K_dec^bd=1.143660626665446e-03, K_blk<=e^(-.2)K_dec=9.363501261354373e-04<c_att
+PASS fixed_product_marked_response_contracts: D=3.713402581794853e+00, tau=3.477044975855269e-03, a0=3.460817008042905e-03, A_att=6.974243768515832e-03, q_centered=5.241257344203125e-01<q_raw=9.048374180359595e-01, q_sw=9.048374180359595e-01<1
+PASS ordinary_retained_coefficient_factor_envelope_below_allowance: 68e^(.1)K_blk=7.036823114081178e-02, exp(B_weak)-1=7.290318488718554e-02<c_att=0.1
+PASS lower_mass_inherited_aggregate_response_certificate_fails: upper-majorant certificate only at m=1e44: K_blk^bd=9.917144609957677e-02<c_att but tau^bd=4.403230263790677e+01>1 and converted factor majorant=1.723849489211310e+03>c_att; no physical-response failure claimed
+PASS weak_diameter_codomain_is_not_block43_strong_arm: proved Lambda_out=.1 < Block43 Lambda_w=.5; no identity strong return or all-horizon claim
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_BLOCK_SATURATED_PRODUCT_REFERENCE_SPLIT_HANDOFF_SCALAR_NEXT_ACTIVITY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_ENHANCED_MOMENT_GENERATED_BASE_DECORATED_FACTOR_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_TWO_HORIZON_SKELETON_PULLBACK_CANONICAL_REHOEFFDING_INTERTWINING_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=17 FAIL=0

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_mass_operator_projector_overlap_typing.py
-runner_sha256: 6b013501e6518151faa09e7dde9028849c6473658da5ede3a5037063c5c64929
+runner_sha256: 9045cff0f22fdcfe6db2456e817124eacafeeb10a9a2e1e83d709566ad70146c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 CKM MASS-OPERATOR PROJECTOR-OVERLAP TYPING THEOREM
@@ -32,7 +32,7 @@ CKM MASS-OPERATOR PROJECTOR-OVERLAP TYPING THEOREM
 [EXACT_PASS] bridge sixth-power form is |V_cb|^6=R^5
 
 4. TWO-FAMILY COMMUTATOR FALSIFIER
-[EXACT_PASS] commutator invariant is 4t(1-t)
+[EXACT_PASS] commutator invariant is the exact identity chi=4t(1-t) for all theta
 [BOUNDARY_PASS] commutator readout has t<->1-t ambiguity
 
 5. UNIVERSAL DOWN-ONLY COUNTERMODEL

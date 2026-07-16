@@ -148,19 +148,27 @@ def determinant_and_alignment() -> None:
 
 def commutator_control() -> None:
     print("\n4. TWO-FAMILY COMMUTATOR FALSIFIER")
-    a1, a2, b1, b2 = sp.symbols("a1 a2 b1 b2", real=True)
-    cosine = sp.Rational(4, 5)
-    sine = sp.Rational(3, 5)
-    rotation = sp.Matrix([[cosine, sine], [-sine, cosine]])
+    a1, a2, b1, b2, theta = sp.symbols("a1 a2 b1 b2 theta", real=True)
+    rotation = sp.Matrix(
+        [[sp.cos(theta), sp.sin(theta)], [-sp.sin(theta), sp.cos(theta)]]
+    )
     a = sp.simplify(rotation * sp.diag(a1, a2) * rotation.T)
     b = sp.diag(b1, b2)
     commutator = sp.simplify(a * b - b * a)
     frob_sq = sp.simplify(sp.trace(commutator.conjugate().T * commutator))
     gap_sq = (a2 - a1) ** 2 * (b2 - b1) ** 2
-    chi = sp.factor(2 * frob_sq / gap_sq)
-    expected = 4 * sine**2 * cosine**2
-    check("commutator invariant is 4t(1-t)", sp.simplify(chi - expected) == 0)
-    check("commutator readout has t<->1-t ambiguity", sp.simplify(expected - 4 * cosine**2 * sine**2) == 0, boundary=True)
+    chi = sp.simplify(2 * frob_sq / gap_sq)
+    t = sp.sin(theta) ** 2
+    check(
+        "commutator invariant is the exact identity chi=4t(1-t) for all theta",
+        sp.simplify(chi - 4 * t * (1 - t)) == 0,
+    )
+    chi_swapped = sp.simplify(chi.subs(theta, sp.pi / 2 - theta))
+    check(
+        "commutator readout has t<->1-t ambiguity",
+        sp.simplify(chi - chi_swapped) == 0,
+        boundary=True,
+    )
 
 
 def down_only_countermodel() -> None:

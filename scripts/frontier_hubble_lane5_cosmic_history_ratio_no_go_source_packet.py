@@ -203,7 +203,8 @@ def part3_closure_taxonomy() -> None:
     closed = [p for p in packets() if p.closes_h0()]
     nonclosed = [p for p in packets() if not p.closes_h0()]
 
-    print("  closure rule: H0 closes iff C1 and (C2 or C3)")
+    print("  closure rule (bookkeeping over the REVIEWED routes, NOT a proof of exhaustive coverage):")
+    print("    H0 closes iff C1 and (C2 or C3)")
     print("  rule: scale-reference primitive is a units conversion, not C1")
     for p in packets():
         print(
@@ -215,7 +216,7 @@ def part3_closure_taxonomy() -> None:
     check("parent states C1 scale route is required", "**(C1) scale route** [REQUIRED]" in parent)
     check("parent states the scale primitive is not C1", "The primitive is a ruler, not the C1 route" in parent)
     check("parent states one of C2/C3 is required for L", "(C2) cosmic-history-ratio" in parent and "(C3) direct cosmic-`L`" in parent)
-    check("parent states no fourth class exists", "No fourth class exists in the current taxonomy" in parent)
+    check("parent frames C1/C2/C3 as a bookkeeping taxonomy of reviewed routes (not exhaustive)", "bookkeeping taxonomy of the currently" in parent and "not a proof that no other route exists" in parent)
     check("only packets with C1 and one L-class close H0", len(closed) == 3 and all(p.c1_scale_route and p.closes_l() for p in closed))
     check("C1 alone fails because L remains open", not ClosureClassPacket(True, False, False).closes_h0())
     check("C2/C3 without C1 fail because the scale route remains open", all(not p.closes_h0() for p in nonclosed if not p.c1_scale_route))

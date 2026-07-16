@@ -46,9 +46,9 @@ concretely, at least one of
   any cosmic-history-fixing observation reducible to one of the above } .
 ```
 
-**Lane 5 closure-pathway corollary.**
-Any retained Lane 5 closure requires premises drawn from **two** classes:
-the `(C1)` scale route, **and** exactly one dimensionless-`L` class,
+**Lane 5 closure-pathway corollary (over the reviewed routes).**
+Each Lane 5 closure among the currently reviewed routes draws premises from
+**two** classes: the `(C1)` scale route, **and** one dimensionless-`L` class,
 `(C2)` or `(C3)`.
 
 - **(C1) scale route** [REQUIRED]. A derivation of the dimensionless
@@ -67,7 +67,10 @@ the `(C1)` scale route, **and** exactly one dimensionless-`L` class,
   argument that gives `Omega_Lambda` without going through the matter
   cascade.
 
-No fourth class exists in the current taxonomy, and no single class is
+The `(C1)/(C2)/(C3)` classes are a **bookkeeping taxonomy of the currently
+reviewed routes**, not a proof that no other route exists: a direct relation
+fixing `H_0 a`, or a joint relation fixing `(H_inf a)/sqrt(L)`, need not
+decompose into these classes. Among the reviewed routes, no single class is
 sufficient on its own.
 
 ## 1. Source Authorities
@@ -104,16 +107,16 @@ scale content needed for numerical `R_Lambda`, `H_inf`, or `H_0` closure.
 
 `L = (H_inf/H_0)^2` is dimensionless. By the open-number reduction
 theorem (Cycle 2), every late-time bounded cosmology variable is an exact
-function of `(H_0, L)` with `R = Omega_r,0` admitted. Inverting, given
+function of `(H_0, L)` with `R = Omega_r,0` supplied as an input. Inverting, given
 `(R, q_0)` or `(R, z_mLambda)` or `(R, H(a))` for `a != 1`, the
 single-ratio inverse reconstruction theorem (2026-04-25) recovers `L`.
 
 So a retained `L` derivation must supply one of:
 
 - (i) one of `(q_0, z_*, z_mLambda, H(a))` from framework structure, with
-  `R` admitted;
+  `R` supplied;
 - (ii) one of `(Omega_m,0, Omega_Lambda,0)` from framework structure, with
-  `R` admitted;
+  `R` supplied;
 - (iii) one of the bounded-cascade endpoints (`eta`, `alpha_GUT`-corrected
   `R = Omega_DM/Omega_b`, `Omega_b`) retained, propagating through the
   cascade.
@@ -248,7 +251,7 @@ This is a structural no-go bounding the closure space for Lane 5. It does
 not claim that any of `(C1), (C2), (C3)` is impossible. It does not retire
 any input; it classifies what retirement requires. The scale-reference
 primitive is recognized as an approved units conversion and is not treated
-as a missing axiom, Tier-A admission, bounded-status source, or Planck import.
+as a missing axiom, an open premise, a bounded-status source, or a Planck import.
 
 The primary source-packet runner records no audit verdict and makes no
 status promotion. It verifies the dependency links requested for
@@ -300,7 +303,7 @@ impossibility beyond that closure taxonomy.
 **N6 - Partial-closure path scan.** PASS. Two partial-closure paths are
 explicitly preserved: the `(C1)` coframe/action-unit gate and the `(C2)`
 eta-retirement gate. The approved scale-reference primitive is recognized and
-therefore is not counted as a missing axiom, Tier-A admission, bounded-status
+therefore is not counted as a missing axiom, an open premise, a bounded-status
 source, or Planck import.
 
 **N7 - Steelman.** PASS. A hostile reviewer could argue that a future

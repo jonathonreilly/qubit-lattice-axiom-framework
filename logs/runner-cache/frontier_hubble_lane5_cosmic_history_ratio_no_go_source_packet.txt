@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_cosmic_history_ratio_no_go_source_packet.py
-runner_sha256: 23686c9a16f096a908919a8c42848b06ce58c387609d9a6154948c7f44193916
+runner_sha256: 154dde4180c573b25684e4a46a3af9f3c4bf4d5f934bd3354bcdb90fd30bed6a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -33,7 +33,7 @@ Part 1: parent source-packet metadata
 Part 2: dependency links and fingerprints
 ----------------------------------------------------------------------------------------
   [PASS] minimal_axioms: linked from parent
-  [PASS] minimal_axioms: file exists  (docs/MINIMAL_AXIOMS_2026-06-05.md)
+  [PASS] minimal_axioms: file exists  (docs/MINIMAL_AXIOMS_2026-06-29.md)
   [PASS] scale_reference_primitive: linked from parent
   [PASS] scale_reference_primitive: file exists  (docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md)
   [PASS] cosmology_open_number_reduction_theorem_note_2026-04-26: linked from parent
@@ -50,7 +50,7 @@ Part 2: dependency links and fingerprints
   [PASS] hubble_lane5_planck_c1_gate_audit_note_2026-04-26: file exists  (docs/HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md)
   [PASS] hubble_lane5_eta_retirement_gate_audit_note_2026-04-26: linked from parent
   [PASS] hubble_lane5_eta_retirement_gate_audit_note_2026-04-26: file exists  (docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md)
-  [PASS] minimal axiom source is current Lattice/Quantum/Record baseline
+  [PASS] minimal axiom source is current Lattice/Qubit/Admissibility/Record baseline
   [PASS] scale-reference primitive is units-only and non-bounding
   [PASS] open-number theorem reduces late-time variables to H0 and L
   [PASS] omega cascade is explicitly bounded and depends on eta/cascade inputs
@@ -63,7 +63,8 @@ Part 2: dependency links and fingerprints
 ----------------------------------------------------------------------------------------
 Part 3: C1/C2/C3 finite closure model
 ----------------------------------------------------------------------------------------
-  closure rule: H0 closes iff C1 and (C2 or C3)
+  closure rule (bookkeeping over the REVIEWED routes, NOT a proof of exhaustive coverage):
+    H0 closes iff C1 and (C2 or C3)
   rule: scale-reference primitive is a units conversion, not C1
   C1=False C2=False C3=False -> L=False H0=False
   C1=False C2=False C3=True -> L=True H0=False
@@ -76,7 +77,7 @@ Part 3: C1/C2/C3 finite closure model
   [PASS] parent states C1 scale route is required
   [PASS] parent states the scale primitive is not C1
   [PASS] parent states one of C2/C3 is required for L
-  [PASS] parent states no fourth class exists
+  [PASS] parent frames C1/C2/C3 as a bookkeeping taxonomy of reviewed routes (not exhaustive)
   [PASS] only packets with C1 and one L-class close H0
   [PASS] C1 alone fails because L remains open
   [PASS] C2/C3 without C1 fail because the scale route remains open

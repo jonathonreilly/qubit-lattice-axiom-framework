@@ -45,8 +45,8 @@ coefficient.
 
 ## Theorem-level statement
 
-**Theorem (Minimal surviving positive extension class for DM odd-slot
-activation).** Assume a separate target requiring `c_odd != 0`, the bounded
+**Theorem (Conditional minimal extension class for a nonzero odd
+coefficient).** Assume a separate target requiring `c_odd != 0`, the bounded
 supplied-matrix odd-direction lemma, the DM odd-slot current-stack zero law,
 the DM two-Higgs minimality theorem, and the DM two-Higgs continuity sheet
 theorem. Then any realization of that target must:

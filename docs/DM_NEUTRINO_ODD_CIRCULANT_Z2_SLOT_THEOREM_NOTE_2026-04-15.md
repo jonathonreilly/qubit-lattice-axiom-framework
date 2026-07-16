@@ -3,8 +3,8 @@
 **Claim type:** bounded_theorem
 
 **Date:** 2026-04-15  
-**Status:** exact finite-dimensional algebra lemma for the supplied matrix
-conventions; no physical-observable identification
+**Status:** bounded support theorem on the supplied finite-dimensional matrix
+family; no physical-observable identification
 **Script:** `scripts/frontier_dm_neutrino_odd_circulant_z2_slot_theorem.py`
 
 ## Question

@@ -10,7 +10,7 @@ Question:
 Answer:
   A residual-Z2-odd non-additive mixed bridge with one real amplitude slot.
 
-  More precisely, any future positive local activator must:
+  More precisely, any realization of that separately supplied target must:
     - lie outside the current retained even support/Hermitian/scalar bank
     - be supported on the canonical non-universal two-Higgs locus
     - be residual-Z2 odd

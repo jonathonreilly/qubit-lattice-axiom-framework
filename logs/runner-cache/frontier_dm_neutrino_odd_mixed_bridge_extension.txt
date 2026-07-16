@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_odd_mixed_bridge_extension.py
-runner_sha256: 50e26d1d25c1e12ee3016ff10a7b2f81efe7df69bf976b1571dc2ecd505103ea
+runner_sha256: c3d8891a43d980f24ba3d8d296488fd2adb3844cbe21260910b19fb39733bf17
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.09
@@ -63,4 +63,3 @@ RESULT
 PASS=7  FAIL=0
 
 ----- stderr -----
-

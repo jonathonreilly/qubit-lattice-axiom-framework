@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_parent_correctness_audit_2026_04_18.py
-runner_sha256: baa2bf67fb680fa2182faf0bb97b4c326689809163fc266638619d89c10da7e6
+runner_sha256: 7971fadd5866ffb46a2f9deab42a2bac010fc3a5da7a65ef055e4ed0cee491e3
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.09
@@ -21,7 +21,7 @@ PART 1: THE CURRENT REPO USES DIFFERENT PARENT-LEVEL FORMULAS
 PART 2: THE GAUGE-SIDE FRAMEWORK-POINT DATA ARE STILL UNDERDETERMINED
 ========================================================================================
   [PASS] The transfer-operator note explicitly leaves framework-point transfer-state identification open
-  [PASS] The source-sector note and script restrict the theorem to supplied diagonal D and retract Wilson-derived diagonality
+  [PASS] The source-sector exact helper verifies supplied diagonal D and rejects the old diagonality inference
   [PASS] The Perron/Jacobi note says even the sharpened factorized class still does not force unique framework-point data
 
 ========================================================================================

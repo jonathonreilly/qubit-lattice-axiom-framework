@@ -86,8 +86,6 @@ def main() -> int:
 
     transfer = read("docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md")
     strong_cp = read("docs/STRONG_CP_THETA_ZERO_NOTE.md")
-    factor = read("docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md")
-    factor_scope = " ".join(factor.split())
     factor_exact = source_factorization_exact_small_case()
     underdet = read("docs/GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md")
     observable = read("docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md")
@@ -123,10 +121,11 @@ def main() -> int:
         "explicit transfer-state identification at `beta = 6` still open" in transfer,
     )
     check(
-        "The source-sector note and script restrict the theorem to supplied diagonal D and retract Wilson-derived diagonality",
-        "conditional on a supplied positive character-diagonal operator" in factor_scope
-        and "stripped Wilson residual is claimed" in factor_scope
+        "The source-sector exact helper verifies supplied diagonal D and rejects the old diagonality inference",
+        bool(factor_exact["d_exact"])
         and bool(factor_exact["formula_exact"])
+        and bool(factor_exact["hostile_self_adjoint"])
+        and bool(factor_exact["hostile_swap"])
         and bool(factor_exact["hostile_mixing"])
         and bool(factor_exact["shadow_fails"]),
     )

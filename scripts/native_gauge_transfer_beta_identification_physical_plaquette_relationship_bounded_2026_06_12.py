@@ -26,7 +26,6 @@ NOTE = ROOT / "docs" / (
     "_BOUNDED_NOTE_2026-06-12.md"
 )
 CHAR_RECURRENCE = ROOT / "docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md"
-SOURCE_FACTOR = ROOT / "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md"
 TENSOR_TRANSFER = ROOT / "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md"
 PLAQUETTE_SELF = ROOT / "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md"
 WILSON_POSITIVITY = ROOT / "docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md"
@@ -153,8 +152,6 @@ def main() -> int:
 
     note = read(NOTE)
     recurrence = read(CHAR_RECURRENCE)
-    source_factor = read(SOURCE_FACTOR)
-    source_factor_scope = " ".join(source_factor.split())
     source_exact = source_factorization_exact_small_case()
     tensor = read(TENSOR_TRANSFER)
     plaquette = read(PLAQUETTE_SELF)
@@ -179,10 +176,11 @@ def main() -> int:
         in tensor,
     )
     check(
-        "source-sector note makes the matrix formula conditional and keeps Wilson residual diagonality open",
-        "conditional on a supplied positive character-diagonal operator" in source_factor_scope
-        and "stripped Wilson residual is claimed" in source_factor_scope
+        "source-sector exact helper verifies supplied diagonal algebra and rejects the old diagonality inference",
+        bool(source_exact["d_exact"])
         and bool(source_exact["formula_exact"])
+        and bool(source_exact["hostile_self_adjoint"])
+        and bool(source_exact["hostile_swap"])
         and bool(source_exact["hostile_mixing"])
         and bool(source_exact["shadow_fails"]),
     )

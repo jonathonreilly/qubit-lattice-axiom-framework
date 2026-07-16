@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py
-runner_sha256: 6b3b2ce5371ea68ae8ac17890b14d968b315ace081ac9192a4718903cbe91d40
+runner_sha256: 1edb47dc144e38f0c7c33c4495459da9db9d892434f440462bc6f6811d029c7f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.78
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 WILSON SMALL-A MATCHING BETA/G_BARE THEOREM
@@ -24,7 +24,7 @@ Part 0: source-note boundaries
 [PASS] note contains marker: bare_retained_allowed: false
 [PASS] forbidden overclaim absent: effective_status: retained
 [PASS] forbidden overclaim absent: audit_status: audited_clean
-[PASS] forbidden overclaim absent: Wilson plaquette action-surface selection from the three f
+[PASS] forbidden overclaim absent: Wilson plaquette action-surface selection from the four fr
 [PASS] forbidden overclaim absent: g_bare = 1 is derived
 
 ========================================================================================

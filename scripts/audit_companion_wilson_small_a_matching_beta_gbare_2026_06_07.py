@@ -86,7 +86,7 @@ def part0_source_boundaries() -> None:
     forbidden = [
         "effective_status: retained",
         "audit_status: audited_clean",
-        "Wilson plaquette action-surface selection from the three framework axioms is derived",
+        "Wilson plaquette action-surface selection from the four framework axioms is derived",
         "g_bare = 1 is derived",
     ]
     for marker in forbidden:

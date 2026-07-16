@@ -3,10 +3,10 @@
 
 The runner checks only:
 
-1. exact rational anomaly-trace arithmetic for the retained graph-first
-   LH SM content (Q_L = (2,3)_{+1/3} plus L_L = (2,1)_{-1});
+1. exact rational anomaly-trace arithmetic for the supplied formal
+   left-handed packet ``(2,3)_{+1/3} + (2,1)_{-1}``;
 2. the supplied (P1) accepted-premise packet entry (ABJ result for chiral
-   gauge theories), the retained-bounded P-HY LH-surface supplier, and
+   gauge theories), the explicit P-HY physical premise, and
    current P-COMP/P-REC premise edges are recorded in the source note;
 3. anomaly cancellation by the SM right-handed singlet completion
    (y_1, y_2, y_3, y_4) = (4/3, -2/3, -2, 0) by exact rational arithmetic;
@@ -83,11 +83,11 @@ def part0_source_firewall() -> None:
         "**Type:** bounded_theorem",
         "NO NEW ADMISSIONS",
         "does **not** derive",
-        "retained-bounded P-HY LH-surface supplier",
+        "supplied P-HY physical premise",
+        "formal trace-arithmetic boundary",
         "ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md",
-        "HYPERCHARGE_IDENTIFICATION_NOTE.md",
-        "does not derive P-COMP or P-REC",
-        "does not widen P-HY beyond the bounded left-handed hypercharge-identification surface",
+        "does not derive P-HY, P-COMP, or P-REC",
+        "does not supply P-HY, matter assignment, or a physical hypercharge readout",
         "NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23.md",
         "No new axiom, no new admission",
         RUNNER_PATH,
@@ -487,8 +487,8 @@ def main() -> int:
     if FAIL == 0:
         print(
             "VERDICT: bounded ABJ-inconsistency accepted-premise bridge passes; "
-            "LH-content anomaly + P-ABJ/P1 + retained-bounded P-HY supplier "
-            "+ P-COMP/P-REC + named dependencies "
+            "formal LH traces + P-HY + P-ABJ/P1 + P-COMP/P-REC "
+            "+ named dependencies "
             "force d_t in {odd positives} by exact rational arithmetic."
         )
         return 0

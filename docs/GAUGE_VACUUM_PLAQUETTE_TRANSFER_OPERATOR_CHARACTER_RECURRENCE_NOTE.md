@@ -30,7 +30,8 @@ operator has the Gram factorization
 `T_beta = M_beta Q_beta M_beta
         = (Q_beta^(1/2) M_beta)^* (Q_beta^(1/2) M_beta) >= 0`.
 
-Thus the finite Wilson identity
+Thus, in the constant-free Wilson normalization defined below, the finite
+identity
 
 `Z_(L_s,L_t)(beta) = Tr[T_(L_s,beta)^(L_t)]`
 
@@ -58,8 +59,10 @@ operator.
 
 ## Finite-volume setup
 
-Let `E` be the oriented spatial links and `V` the spatial vertices of a finite
-periodic lattice with `L_s >= 2`. Put
+Let `E` be the positively oriented spatial links and `V` the spatial vertices
+of the finite periodic cubic spatial lattice `(Z / L_s Z)^3`, with
+`L_s >= 2`; thus `|E| = 3 L_s^3`, equal to the number of spatial plaquettes
+on one slice. Let `L_t >= 1` and put
 
 `H = L^2(SU(3)^E, dU)`.
 
@@ -78,6 +81,30 @@ and let
 
 be the orthogonal projector onto the gauge-invariant Hilbert space `H_G`.
 This is the gauge-invariant spatial Hilbert space used below.
+
+We use the constant-free Wilson normalization in the transfer formulas:
+`w_beta(g)` omits the field-independent factor `exp(-beta)` carried by each
+plaquette in the canonical action
+
+`S_W[U; beta] = (beta/3) sum_P (3 - Re Tr U_P)`.
+
+Accordingly, `Z_(L_s,L_t)(beta)` below denotes the reduced partition function
+
+`Z_(L_s,L_t)(beta)
+ = exp(beta N_P) Z_W(L_s,L_t; beta)`,
+
+where `N_P = 6 L_s^3 L_t = 2 |E| L_t` and `Z_W` uses `exp(-S_W)`.
+Equivalently, if `T_beta` is the reduced transfer operator constructed below,
+then the canonically normalized Wilson transfer is
+
+`T_beta^W = exp(-2 beta |E|) T_beta`,
+
+and
+
+`Z_W(L_s,L_t; beta) = Tr[(T_beta^W)^(L_t)]`.
+
+The scalar rescaling preserves positive semidefiniteness and cancels from all
+normalized states and the spatial-source expectation formulas below.
 
 Define the one-link convolution and its finite-link product by
 
@@ -104,13 +131,21 @@ restricts to `H_G` and vanishes on its orthogonal complement.
 
 For every `beta >= 0`, the character expansion
 
-`w_beta(g) = sum_lambda c_lambda(beta) chi_lambda(g)`
+`w_beta(g) = sum_lambda a_lambda(beta) chi_lambda(g)`
 
 has
 
-`c_lambda(beta) >= 0`
+`a_lambda(beta) >= 0`
 
 for every irreducible representation `lambda` of `SU(3)`.
+
+Here `a_lambda` is the raw character coefficient. In the dimension-weighted
+convention used on nearby gauge-transfer surfaces,
+
+`w_beta(g) = sum_lambda d_lambda c_lambda(beta) chi_lambda(g)`,
+
+one has `c_lambda = a_lambda / d_lambda`; this dimension-weighted coefficient
+is exactly the convolution eigenvalue derived in Theorem 2.
 
 ### Proof
 
@@ -130,12 +165,12 @@ with the tensor-product multiplicities
 the exponential series is uniformly absolutely convergent, so it may be
 projected term by term onto any character. Therefore
 
-`c_lambda(beta)
+`a_lambda(beta)
  = sum_(n>=0) t^n/n! m_(lambda,n) >= 0`.
 
 Moreover,
 
-`sum_lambda d_lambda c_lambda(beta)
+`sum_lambda d_lambda a_lambda(beta)
  = sum_(n>=0) t^n/n! dim(R)^n
  = exp(beta)`.
 
@@ -160,11 +195,13 @@ the Schur product identity. Therefore
 This is an equivalent positive-type proof and does not use pointwise
 positivity as a substitute for quadratic-form positivity.
 
-## Theorem 2: exact positive finite-volume transfer operator
+## Theorem 2: exact positive finite-volume reduced transfer operator
 
 For `beta >= 0`, `T_beta` is positive, self-adjoint, and trace class. Its
-kernel is exactly the temporal-gauge one-step Wilson kernel with half of the
-spatial action on each boundary slice.
+kernel is exactly the temporal-gauge one-step Wilson kernel in the
+constant-free normalization, with half of the spatial action on each boundary
+slice. The canonically normalized `T_beta^W` above is a positive scalar
+multiple of this operator.
 
 ### Proof
 
@@ -178,7 +215,7 @@ For a unitary matrix realization `D^lambda`, Schur orthogonality gives
 Inserting the character expansion of `w_beta` shows that convolution acts on
 the `lambda` matrix-element sector with scalar
 
-`c_lambda(beta) / d_lambda`.
+`a_lambda(beta) / d_lambda = c_lambda(beta)`.
 
 Theorem 1 makes every such scalar nonnegative, so each `C_(e,beta)` and their
 finite tensor product `C_beta` are positive semidefinite.
@@ -203,7 +240,7 @@ Consequently
 
 Self-adjointness follows from the same factorization. For one link,
 
-`Tr(C_(e,beta)) = sum_lambda d_lambda c_lambda(beta) = exp(beta)`.
+`Tr(C_(e,beta)) = sum_lambda d_lambda a_lambda(beta) = exp(beta)`.
 
 Thus `C_beta` is positive trace class at finite `|E|`; multiplication by the
 bounded `M_beta` and insertion of `P_G` preserve trace class.
@@ -231,22 +268,25 @@ slice and renaming `h_x` as `V_x` gives
    product_(e in E)
    w_beta(U'_e V_(t(e)) U_e^(-1) V_(s(e))^(-1))`.
 
-Each factor is the Wilson weight of the mixed plaquette joining link `e` on
-the two consecutive slices. Multiplication by `M_beta` on the left and right
-adds half the spatial Wilson action of each boundary slice. Therefore
-`T_beta(U',U)` is the exact one-step Wilson kernel.
+Each factor is the constant-free Wilson weight of the mixed plaquette joining
+link `e` on the two consecutive slices. Multiplication by `M_beta` on the left
+and right adds half the constant-free spatial Wilson weight of each boundary
+slice. Therefore `T_beta(U',U)` is the exact reduced one-step Wilson kernel.
 
 Taking the periodic trace of `T_beta^(L_t)` integrates each spatial slice and
 each intervening temporal link once. The two adjacent half weights combine
-to one full spatial weight on every slice, proving
+to one full constant-free spatial weight on every slice, proving
 
 `Z_(L_s,L_t)(beta) = Tr[T_(L_s,beta)^(L_t)]`.
+
+Restoring `exp(-beta)` for each of the `N_P` plaquettes gives the displayed
+`Z_W` / `T_beta^W` relation in the setup.
 
 ## Theorem 3: exact marked spatial-plaquette source algebra
 
 Fix a spatial plaquette `p` and set
 
-`X(W) = (1/3) Re Tr(W)
+`X(W) = (1/3) Re Tr W
       = (chi_(1,0)(W) + chi_(0,1)(W)) / 6`.
 
 Let `A_p` be multiplication by `X(U_p)` on `H_G`, and let `J` be
@@ -274,10 +314,11 @@ one may integrate one of the four plaquette links last. Haar invariance makes
 `<I_p phi, I_p psi>_H
  = integral_(SU(3)) dW conjugate(phi(W)) psi(W)`.
 
-This proves isometry. The intertwining identity is then the pointwise
-identity
+This proves isometry. The intertwining identity is then the pointwise identity
 
 `X(U_p) phi(U_p) = (X phi)(U_p)`.
+
+### Exact `SU(3)` dominant-weight recurrence
 
 The standard tensor-product rules give
 
@@ -346,7 +387,9 @@ and
 
 `Z_repeated(h) = Tr[T_beta(h)^(L_t)]`
 
-is exactly the repeated-source Wilson path integral. Positivity follows from
+is exactly the repeated-source Wilson path integral in the constant-free
+normalization. The canonical action multiplies both sides by
+`exp(-beta N_P)`, independently of `h`. Positivity follows from
 
 `T_beta(h)
  = (Q_beta^(1/2) M_beta exp(h A_p/2))^*
@@ -373,10 +416,11 @@ This note does not supply such a temporal-source construction.
 
 - a self-contained positive-type proof for the one-link `SU(3)` Wilson weight
   at `beta >= 0`
-- an exact positive-semidefinite finite-volume transfer operator, not merely
-  a pointwise positive symmetric kernel
-- the finite Wilson transfer-trace identity on the gauge-invariant spatial
-  Hilbert space
+- an exact positive-semidefinite finite-volume reduced transfer operator, not
+  merely a pointwise positive symmetric kernel; the canonical Wilson transfer
+  differs only by the displayed positive scalar
+- the finite Wilson transfer-trace identity with the constant normalization
+  made explicit on the gauge-invariant spatial Hilbert space
 - the exact marked spatial-plaquette multiplication formula in the positive
   transfer state
 - the exact local `SU(3)` six-neighbor character recurrence and its

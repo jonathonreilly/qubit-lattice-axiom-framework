@@ -30,6 +30,12 @@ Setup (explicit small lattice, link/time reflection):
     observables F:  Theta(F)(U) = conj( F(theta U) ), and
         G_ij = < Theta(F_i) . F_j >  (ordinary expectation).
 
+Coupling notation: legacy Z_N, U(1), and SU(2) diagnostic routines below name
+the coefficient multiplying Re chi directly `beta`; mathematically that
+coefficient is the effective plane coupling `alpha`.  For the standard
+fundamental SU(N) Wilson convention used by the source note,
+`alpha = beta_Wilson / N`.  Part B7 checks this normalization explicitly.
+
 Checks (all reproved here; no literature theorem is a derivation input):
 
   Part A  B_- = Theta B_+ (reflection symmetry) and B_0 reflection-plane

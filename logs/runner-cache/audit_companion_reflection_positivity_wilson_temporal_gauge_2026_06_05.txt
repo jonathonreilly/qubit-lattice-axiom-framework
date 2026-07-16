@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
-runner_sha256: 7a621de2eb8c703dea44bd42845a8aa30fabf0213500828c63baee32bd1c2fdc
+runner_sha256: a14afbd3eb1c55eb69e85ecfc66ae8259f9da7dae0973e1d32277bbfd3ce0058
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 82.11
+elapsed_sec: 81.06
 status: ok
 ----- stdout -----
 ========================================================================================

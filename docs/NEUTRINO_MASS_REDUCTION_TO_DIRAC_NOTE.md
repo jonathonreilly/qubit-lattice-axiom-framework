@@ -143,12 +143,17 @@ And the exact PMNS boundary is now also sharper:
 That PMNS boundary is now sharpened one step further on the charged-lepton side
 as well:
 
-- [CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md](./CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md):
-  if the charged-lepton sector is the first non-monomial lepton lane, its
-  minimal surviving branch is also canonical and seven-dimensional
+- `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md` (context-only formal
+  pointer, not a dependency):
+  for a separately supplied two-offset `3×3` texture, the exact formal
+  support/rephasing quotient is canonical and seven-dimensional. That theorem
+  does not derive a charged-lepton Yukawa lane, a physical branch, or physical
+  quantities; those identifications remain hypotheses of any PMNS consumer
 - [CHARGED_LEPTON_TWO_HIGGS_OBSERVABLE_INVERSE_PROBLEM_NOTE.md](./CHARGED_LEPTON_TWO_HIGGS_OBSERVABLE_INVERSE_PROBLEM_NOTE.md):
-  on that canonical charged-lepton branch, the seven canonical quantities are
-  also locally identifiable from `H_e = Y_e Y_e^dag`
+  conditional on a separately supplied charged-lepton carrier, branch, and
+  observable identification, its seven branch parameters are locally
+  identifiable from `H_e = Y_e Y_e^dag`; that physical hypothesis is not a
+  consequence of the supplied-texture formal theorem
 - [NEUTRINO_FULL_CLOSURE_LAST_MILE_REDUCTION_NOTE.md](./NEUTRINO_FULL_CLOSURE_LAST_MILE_REDUCTION_NOTE.md):
   the remaining full-neutrino closure gap is now reduced piecewise on the
   minimal-branch assumption: `7` quantities on the neutrino-side branch, or

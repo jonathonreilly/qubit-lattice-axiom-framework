@@ -175,12 +175,32 @@ def part4_one_sided_minimal_branches_require_universality_failure() -> None:
     print("PART 4: ONE-SIDED MINIMAL BRANCHES REQUIRE FAILURE OF SHARED-HIGGS UNIVERSALITY")
     print("=" * 88)
 
-    check("A neutrino-side-only minimal branch is incompatible with shared one-set universality", True,
-          "if offsets are shared, |S|=1 keeps both monomial and |S|=2 moves both off the monomial lane")
-    check("A charged-lepton-side-only minimal branch is incompatible with shared one-set universality", True,
-          "the same dichotomy applies with the sectors exchanged")
-    check("Under shared-Higgs universality, the branch bit collapses to a common lepton support class", True,
-          "the remaining question becomes whether universality is exact and, if so, how the shared class is parameterized")
+    support_classes = {}
+    for offsets in ((0,), (1,), (2,), (0, 1), (0, 2), (1, 2)):
+        support = sum(
+            (np.abs(PERMUTATIONS[offset]) > 0).astype(int)
+            for offset in offsets
+        )
+        support_classes[offsets] = np.clip(support, 0, 1)
+
+    one_offset_monomial = all(
+        int(support_classes[offsets].sum()) == 3
+        for offsets in ((0,), (1,), (2,))
+    )
+    two_offset_nonmonomial = all(
+        int(support_classes[offsets].sum()) == 6
+        and np.all(support_classes[offsets].sum(axis=0) == 2)
+        and np.all(support_classes[offsets].sum(axis=1) == 2)
+        for offsets in ((0, 1), (0, 2), (1, 2))
+    )
+    shared_dichotomy = one_offset_monomial and two_offset_nonmonomial
+
+    check("A neutrino-side-only minimal branch is incompatible with shared one-set universality", shared_dichotomy,
+          "the exhaustive shared support sets give 3-edge matchings or 6-edge unions on both sectors")
+    check("A charged-lepton-side-only minimal branch is incompatible with shared one-set universality", shared_dichotomy,
+          "the same exhaustive support dichotomy applies with the sectors exchanged")
+    check("Under shared-Higgs universality, the branch bit collapses to a common lepton support class", shared_dichotomy,
+          "both sectors receive the identical supplied support set")
 
     print()
     print("  So the current neutrino-side-only versus charged-lepton-side-only")
@@ -195,7 +215,8 @@ def main() -> int:
     print("Atlas / axiom inputs reused:")
     print("  - Lepton single-Higgs PMNS triviality theorem")
     print("  - Neutrino Dirac two-Higgs escape theorem")
-    print("  - Charged-lepton two-Higgs canonical reduction theorem")
+    print("  - direct support-union algebra on the supplied offset sets")
+    print("    (the shared-Higgs/Yukawa identification is a separate hypothesis)")
     print()
     print("Question:")
     print("  If the same effective Higgs-offset set contributes to both lepton")

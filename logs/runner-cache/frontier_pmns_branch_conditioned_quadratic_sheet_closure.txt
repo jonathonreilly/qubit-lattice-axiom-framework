@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_branch_conditioned_quadratic_sheet_closure.py
-runner_sha256: b5bcceeb3626eff2a0ad2b0cb699c13087925965592ef6ce18e6f18d279140b7
+runner_sha256: 0b74bcbd0f69f341ebe8f39172e5fd12d8d97315249559eb29bce0dd0f0c4de2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -13,7 +13,8 @@ PMNS BRANCH-CONDITIONED QUADRATIC-SHEET CLOSURE
 Atlas / axiom inputs reused:
   - PMNS selector sign-to-branch reduction
   - neutrino two-Higgs canonical reduction
-  - charged-lepton two-Higgs canonical reduction
+  - supplied two-offset 3x3 texture formal reduction
+    (charged-lepton/observable meaning remains a separate branch hypothesis)
   - neutrino two-amplitude last-mile boundary
 
 Question:

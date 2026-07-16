@@ -25,9 +25,10 @@ Higgs doublet as four real scalar components.
 This repair therefore changes the load-bearing premise of this row from an
 implicit `H_unit -> EWSB doublet` bridge to an explicit retained-bounded
 declared-inventory premise. The row is a **bounded theorem under that premise**:
-it proves the exact `g_*` arithmetic and the flavor-vs-Fock reconciliation that
-the retained "two-Higgs" Yukawa-texture theorem does not add a second
-thermalized scalar doublet.
+it proves the exact `g_*` arithmetic. The historical
+`CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md` now proves only a
+formal quotient for a supplied matrix texture, so it supplies no field content
+at all and cannot add, remove, or count a thermalized scalar doublet.
 
 This does **not** derive `H_unit` as one complex `SU(2)_L` EWSB doublet, does
 not close a framework-native R-HIGGS derivation, and does not add a new axiom,
@@ -91,27 +92,25 @@ Higgs doublet** (4 real scalar dof) is *"assumed, not derived."* Its
 counterfactual C-4 records that a second complex doublet adds 4 scalar dof
 (`28 -> 32`), giving `g_* = 110.75` instead of `106.75`.
 
-This note attacks R-HIGGS on the `g_*` census specifically. It reconciles two
-distinct notions of "Higgs" that the framework carries, whose conflation is the
-trap:
+This note attacks R-HIGGS on the `g_*` census specifically. It separates the
+physical field inventory from a historically named formal matrix theorem:
 
 1. the **high-T EWSB gauge-sector scalar doublet** that contributes to the
    relativistic dof census `g_*` — a scalar in the `SU(2)_L` doublet rep whose
    neutral vacuum drives electroweak symmetry breaking; and
-2. the **Yukawa/flavor-sector "two-Higgs" lane** where the **retained**
-   charged-lepton two-Higgs canonical reduction lives — the structure giving
-   lepton masses and a nontrivial PMNS.
+2. the supplied two-offset `3×3` matrix texture in
+   `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`. Despite the
+   historical filename, that theorem supplies no Yukawa sector, Higgs field,
+   mass, mixing, or PMNS interpretation.
 
-The load-bearing question for this row is whether the retained "two-Higgs"
-flavor theorem changes the declared high-temperature thermal field inventory.
-It does not. The finite inventory premise is supplied by the audited-clean
-declared-inventory note, while this packet proves the finite `g_*` arithmetic
-and executable flavor-vs-Fock distinction. The Ward `H_unit` scalar-singlet
+The formal matrix theorem cannot change the declared high-temperature thermal
+field inventory because it contains no field-content premise or conclusion.
+The finite inventory premise is supplied separately by the declared-inventory
+note, while this packet proves the finite `g_*` arithmetic. The Ward `H_unit` scalar-singlet
 structure is kept as native support and as a separate open derivation route,
 not as the proof input for the full thermal doublet. Under the retained-bounded
-declared inventory, the retained "two-Higgs" reduction is a flavor-sector
-**Yukawa-texture** device that adds no thermalized relativistic dof and
-**`g_* = 106.75` follows**.
+declared inventory, **`g_* = 106.75` follows**. The formal quotient theorem is
+non-load-bearing for that conclusion.
 
 ## 0. 2026-05-31 audit-scope repair
 
@@ -127,9 +126,9 @@ keeps the following bridges out of scope:
   offsets are not additional thermalized scalar fields;
 - the unaudited 2HDM/SUSY analysis used only as corroborating context.
 
-The repaired claim is therefore bounded support: exact arithmetic plus finite
-Yukawa-texture algebra under the retained-bounded declared-inventory premise,
-not a framework-native derivation of R-HIGGS closure.
+The repaired claim is therefore bounded support: exact census arithmetic under
+the retained-bounded declared-inventory premise, not a framework-native
+derivation of R-HIGGS closure. The formal texture theorem is context only.
 
 ## 1. First-principles reset (A_min)
 
@@ -195,41 +194,31 @@ instead supplied by the retained-bounded declared-inventory premise. Without
 that premise, this note supplies support for the native bridge shape and the
 census arithmetic, not a closed derivation of R-HIGGS.
 
-### 2.2 Flavor-sector "two-Higgs" (the Yukawa-texture object)
+### 2.2 Supplied two-offset matrix texture (no physical field-content inference)
 
-The "two-Higgs" of the retained charged-lepton two-Higgs canonical reduction,
-the (unaudited) DM-neutrino two-Higgs minimality theorem, and the (unaudited)
-neutrino Dirac two-Higgs canonical reduction is a statement about the **Yukawa
-coupling matrix** `Y`, not about a second thermalized scalar field. On the
-retained three-generation `Z_3` surface, a Yukawa operator built from one
-**fixed effective `Z_3` generation offset** is **monomial**: `Y = D P` with `D`
-diagonal and `P` a permutation, so `Y^dag Y` is **diagonal** and the left
-diagonalizer is trivial up to phases. The lepton single-Higgs PMNS-triviality
-theorem proves that a fully monomial lepton sector gives a **trivial**
-(permutation-magnitude) PMNS, incompatible with the observed large mixing.
-
-The escape is a Yukawa lane with **two distinct effective `Z_3` offsets**,
-which reduces (up to generation relabeling and field rephasings) to the
-canonical support class
+The formal theorem starts by **supplying** diagonal coefficient matrices and
+distinct labels `a,b in Z_3` in
 
 ```text
-Y = A + B C,    A, B diagonal,    C the forward 3-cycle,
+Y = D_a C^a + D_b C^b.
 ```
 
-generically non-monomial, so `Y^dag Y` is non-diagonal and PMNS/CP can be
-nontrivial. The retained reduction's content is the exact **parameter count**:
-the canonical generic point `diag(x_1,x_2,x_3) + diag(y_1,y_2,y_3 e^{i delta}) C`
-carries `12 - 5 = 7` real physical quantities (six positive moduli `+` one
-phase). These are **flavor-space (coupling) parameters**, not Fock-space
-particle dof.
+It reduces this to `A+B C` by explicit matrix relabelings. On the all-six-
+nonzero stratum, a **specified mathematical** diagonal phase action gives six
+positive moduli plus one invariant phase: seven real **quotient parameters**.
+The theorem expressly does not identify `Y` as a Yukawa matrix, the labels as
+effective charges, the phase action as physical gauge redundancy, or the
+quotient coordinates as masses, mixing data, or other physical quantities.
 
-### 2.3 Why "two distinct offsets" is realized with ONE doublet
+It follows only that this formal object contributes no Fock-space particle
+degree of freedom by itself: no field or particle was among its hypotheses.
+Any physical Yukawa/PMNS reuse needs a separate carrier and observable bridge.
 
-The crucial structural fact, stated verbatim in the retained reduction notes,
-is that *"the support analysis depends only on one effective `Z_3` offset, not
-on whether that offset arose directly from `H` or from a conjugated Higgs
-insertion."* Two mechanisms supply two distinct effective offsets on **one**
-physical doublet:
+### 2.3 Separate conditional route to a one-doublet Yukawa realization
+
+The following one-doublet statements, when used, come from the separately
+cited one-Higgs gauge-selection and pseudoreality sources. They are **not**
+conclusions of the supplied-texture formal reduction:
 
 - **`H` versus `tilde H = i tau_2 H^*`.** By the pseudoreality identity
   `epsilon U^* = U epsilon` of the `SU(2)` fundamental (Higgs-conjugation
@@ -245,10 +234,9 @@ physical doublet:
   **gauge-redundant for PMNS**. The "Higgs charge" label is therefore not a
   second physical field.
 
-So the entire flavor-sector "two-Higgs" structure is realized **within the
-one-doublet field content**: it is a statement about which Yukawa textures the
-one doublet (and its conjugate) can write, not about adding a second thermalized
-scalar.
+Thus any one-doublet Yukawa interpretation is conditional on those separate
+physical sources. The formal `A+B C` theorem alone is neutral between one
+doublet, two doublets, or no Higgs/Yukawa realization at all.
 
 ### 2.4 The genuine-2HDM scenario is an admitted extension, not framework-native
 
@@ -302,12 +290,11 @@ for the `g_*` census).** Under the retained-bounded declared-inventory premise:
    scalar-singlet candidate on `Q_L` (D17) and the no-fundamental-scalar bare
    action fact (D9, D16) remain native support, but they are not used here as a
    closed retained bridge to full thermal doublet field content;
-2. the **retained** charged-lepton two-Higgs canonical reduction and the
-   associated (unaudited) neutrino/DM two-Higgs reductions are **flavor-sector
-   Yukawa-texture** statements (two distinct effective `Z_3` offsets making
-   `Y` non-monomial; an exact 7-real-parameter canonical class), realized
-   **within the one-doublet field content** via `H`/`tilde H` and the gauge-
-   redundant `Z_3` charge `q_H`; they add **no** thermalized relativistic dof;
+2. the supplied-texture formal reduction proves a seven-real matrix quotient
+   only. It supplies no physical field and is non-load-bearing for the thermal
+   census. Any one-doublet Yukawa realization via `H`/`tilde H` and a `Z_3`
+   label rests on the separately cited physical hypotheses, not on that formal
+   theorem;
 3. a genuine two-thermalized-doublet configuration requires an **independent**
    second scalar, which remains an admitted extension for this packet;
 4. therefore, under the retained-bounded declared-inventory premise, the EWSB
@@ -318,17 +305,16 @@ for the `g_*` census).** Under the retained-bounded declared-inventory premise:
 `g_* = 106.75` follows (not `110.75`). The residual R-HIGGS native derivation
 is sharpened rather than closed: the remaining framework-native science step is
 specifically the bridge from `H_unit` scalar-singlet structure to one complex
-EWSB doublet in the thermal census. The retained "two-Higgs" reduction is shown
-not to be a competing thermalized-dof claim.
+EWSB doublet in the thermal census. The supplied formal matrix quotient makes
+no competing thermalized-dof claim.
 
 ## 5. Steelman (N7): the strongest case for two thermalized doublets
 
 Per no-go discipline N7, the strongest argument **against** outcome (a) — i.e.
 for `g_* = 110.75` — is:
 
-> The framework carries a **retained** two-Higgs theorem
-> (`charged_lepton_two_higgs_canonical_reduction_note`, effective status
-> retained) and an unaudited two-Higgs **minimality** theorem stating that a
+> The repository carries a historically named charged-lepton two-Higgs file
+> and an unaudited two-Higgs **minimality** theorem stating that a
 > two-Higgs lane is the **unique minimal** escape once nontrivial flavor mixing
 > / DM CP is required. If "two Higgs" are genuinely *required* by the
 > framework's own flavor structure, parsimony suggests treating them as two
@@ -336,22 +322,20 @@ for `g_* = 110.75` — is:
 > census is `g_* = 110.75`. The single-doublet count would then be the
 > artificial assumption, and `106.75` the overclaim.
 
-**Why this steelman does not overturn outcome (a).** The retained reduction is
-explicitly a statement about the **Yukawa matrix** `Y = A + B C` and its `7`
-real **coupling** parameters — its own text says it *"does not derive the
-two-Higgs extension from the bare axiom alone"* and is a *"reduction theorem
-only."* The "two distinct charges" are two **effective `Z_3` offsets on one
-doublet** (the `H`/`tilde H` conjugate pair and the gauge-redundant `q_H`), not
-two independent scalar fields with two vacua. The minimality theorem's "unique
+**Why this steelman does not overturn outcome (a).** The current formal
+reduction explicitly supplies `Y = D_a C^a+D_b C^b` as matrix data and calls
+its seven coordinates quotient parameters, not physical quantities. It
+derives no Yukawa carrier, Higgs multiplicity, effective charge, or PMNS fact,
+so inferring either one or two thermalized doublets from it is invalid. The
+separate minimality theorem's "unique
 minimal escape" is a statement about the minimal **texture** class that can
 carry nontrivial `Y^dag Y`, not about the minimal **field content**; and its
 companion canonical-slot **no-go** shows even that admitted texture lane is
 internally obstructed. A genuine second **field** (with its own `v_d`, its own
 4 thermalized dof) is not supplied by any retained authority in this packet,
-while D9/D16/D17 provide evidence against it (§2.4). So the retained
-"two-Higgs" is consistent with a **single** physical EWSB doublet whose Yukawa
-textures do the flavor work, but this note does not prove the final EWSB
-field-content bridge. The steelman correctly identifies that the *flavor*
+while D9/D16/D17 provide evidence against it (§2.4). A one-doublet Yukawa
+realization remains a separate conditional construction; this note does not
+derive it or the final EWSB field-content bridge. The steelman identifies that the *flavor*
 sector needs more than a monomial single-offset Yukawa; it does **not**
 establish a second *thermalized* doublet. The honest residual it leaves is
 recorded in §6.
@@ -372,7 +356,10 @@ recorded in §6.
   notes as retained authorities; they remain scoped/corroborating inputs here.
 - It does **not** derive the `7` flavor-sector Yukawa quantities, any PMNS
   angle, any CKM entry, or any Yukawa eigenvalue. The flavor textures stay open.
-- It does **not** promote the retained "two-Higgs" reduction, the EW Higgs
+- It does **not** turn the supplied formal quotient parameters into physical
+  Yukawa quantities or infer a charged-lepton/two-Higgs realization from the
+  historical filename.
+- It does **not** promote the formal reduction, the EW Higgs
   gauge-mass note, the Ward theorem, or any cited note's status; effective
   status is pipeline-owned.
 - It does **not** use the supplied-doublet radial/orbit support note as
@@ -411,32 +398,22 @@ full thermal doublet from `H_unit`.
 PYTHONPATH=scripts python3 scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
 ```
 
-The runner verifies, at exact rational precision via `fractions.Fraction` and
-with explicit linear algebra where a texture statement is load-bearing:
+The runner verifies the census at exact rational precision via
+`fractions.Fraction`:
 
 1. **Census arithmetic under each scenario.** One complex doublet `-> 4` scalar
    dof `-> N_bosons = 28 -> g_* = 427/4 = 106.75`; a second thermalized doublet
    `-> 8` dof `-> N_bosons = 32 -> g_* = 443/4 = 110.75`; the shift is exactly
    `+4`, equal to the added scalar dof.
-2. **EWSB-vs-flavor distinction as executed support.** A single fixed-offset
-   Yukawa `Y = D P` is monomial (`Y^dag Y` diagonal); a two-offset Yukawa
-   `Y = A + B C` is generically non-monomial; the canonical class carries
-   `12 - 5 = 7` real flavor parameters (6 moduli `+` 1 phase); the single-Higgs
-   `Z_3` charge `q_H` is a right-basis relabeling (`Y Y^dag` invariant across
-   `q_H`), hence gauge-redundant for PMNS; the pseudoreality identity
-   `epsilon U^* = U epsilon` makes `tilde H` determined by `H` (one field).
-3. **2HDM bridge boundary.** The `D17` `Z^2` values `(1,1) = 6`,
+2. **2HDM bridge boundary.** The `D17` `Z^2` values `(1,1) = 6`,
    `(1,8) = 8`, `(3,1) = 9/2`, `(8,3) = 24` support uniqueness of the
    unit-normalized scalar-singlet candidate, but the runner does not use that
    as a retained proof of complete EWSB doublet field content.
-4. **Authority cross-checks and forbidden-import / new-vocabulary scan.**
+3. **Source cross-checks and forbidden-import / new-vocabulary scan.**
 
 Target: `PASS=N FAIL=0` with `N >= 30`.
 
-## 9. Cited authorities and status
-
-Ledger effective statuses verified against `docs/audit/data/audit_ledger.json`
-on 2026-05-29.
+## 9. Cited sources and roles
 
 Load-bearing arithmetic / support authorities:
 
@@ -445,9 +422,6 @@ Load-bearing arithmetic / support authorities:
   D17 single-composite-`H_unit` `(1,1)` uniqueness on `Q_L`
   (retained_bounded). This is support for the native bridge, not a complete
   retained proof that `H_unit` is one complex EWSB doublet in the thermal census.
-- [`CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`](CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
-  — the retained two-Higgs canonical reduction (flavor-sector Yukawa texture;
-  7 real quantities) (retained).
 - [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
   — one-`SU(2)_L`-doublet EW bookkeeping and neutral-vacuum convention
   (retained), used as compatible one-doublet bookkeeping.
@@ -487,6 +461,9 @@ edges):
 
 Plain-text reader pointer (non-load-bearing):
 
+- `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md` — exact formal
+  reduction for a supplied two-offset matrix texture; it is context only and
+  is not a dependency of the census theorem.
 - `SM_GSTAR_FROM_FRAMEWORK_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-05-29.md` — the
   PR #2223 framework-structure census note that names residual R-HIGGS, which
   this note attacks for the census count.
@@ -500,13 +477,11 @@ proposed_claim_scope: |
   census object) with the flavor-sector two-Higgs (the Yukawa-texture object) of
   the framework, over the retained-bounded declared Standard-Model inventory
   premise. Under that explicit inventory premise: the EWSB scalar entering the
-  g_* census is ONE doublet (4 scalar dof); the retained
-  charged-lepton two-Higgs canonical reduction (and the associated unaudited
-  neutrino/DM two-Higgs reductions) are flavor-sector Yukawa-texture statements
-  (two distinct effective Z_3 offsets making Y non-monomial; an exact 7-real-
-  parameter canonical class) realized WITHIN the one-doublet field content via
-  H/tilde H and the gauge-redundant Z_3 charge q_H, adding NO thermalized
-  relativistic dof; a genuine two-thermalized-doublet configuration requires an
+  g_* census is ONE doublet (4 scalar dof). The historically named
+  charged-lepton two-Higgs file proves only a seven-real formal quotient for a
+  supplied matrix texture and is non-load-bearing for field content; any
+  one-doublet Yukawa realization requires the separately cited physical
+  hypotheses. A genuine two-thermalized-doublet configuration requires an
   independent scalar admitted as an extension in this packet. Outcome (a):
   single EWSB doublet for the census gives g_* = 106.75 (110.75 only under an
   admitted second-doublet import), but the native H_unit -> EWSB-doublet bridge
@@ -523,8 +498,8 @@ notes_for_re_audit_if_any: |
   doublet. The retained_bounded Ward theorem supplies D9/D16/D17 native support,
   but this note does not introduce or claim a retained bridge from H_unit
   scalar-singlet uniqueness to one complex EWSB doublet in the thermal census.
-  The one-doublet EW bookkeeping remains retained support; the retained
-  two-Higgs reduction is retained but is a flavor-sector texture theorem. The
+  The one-doublet EW bookkeeping remains retained support. The formal
+  supplied-texture theorem is not a physical or census dependency. The
   2HDM-exclusion analysis note (yt_class_3_susy_2hdm) is unaudited; it is cited
   as corroboration, not as the load-bearing authority. Any dependency-retention
   issue on unaudited cited authorities belongs to independent audit
@@ -534,10 +509,10 @@ notes_for_re_audit_if_any: |
 ## 11. Author tone and audit boundary
 
 This note records one thing: under the retained-bounded declared-inventory
-premise, a **single** complex `SU(2)_L` doublet gives `g_* = 106.75`, while the
-retained "two-Higgs" structure is a
-**flavor-sector Yukawa-texture** device that adds no thermalized dof (`110.75`
-only under an admitted-extension second-doublet import). It is not a synthesis,
+premise, a **single** complex `SU(2)_L` doublet gives `g_* = 106.75`
+(`110.75` only under an admitted-extension second-doublet import). The
+historically named formal texture theorem is not a field-inventory input. This
+note is not a synthesis,
 introduces no repo vocabulary, promotes no other note's status, and does not
 derive the native EWSB bridge, the flavor textures, or the other census
 residuals. The audit lane is the authority on effective status; this proposal

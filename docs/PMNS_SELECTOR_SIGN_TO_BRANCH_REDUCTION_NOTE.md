@@ -5,7 +5,7 @@
 branch-conditioned coefficient derivation
 **Atlas placement:** canonical toolkit on `main` at
 `docs/publication/ci3_z3/DERIVATION_ATLAS.md`
-**Script:** `scripts/frontier_pmns_selector_sign_to_branch_reduction.py` (PASS=10 FAIL=0 on current main; the runner deps were renamed to `NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md`, `NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`, `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`)
+**Script:** `scripts/frontier_pmns_selector_sign_to_branch_reduction.py`
 
 ## Question
 
@@ -35,8 +35,12 @@ So:
 After that sign choice, the remaining coefficient derivation is exactly the
 already-known branch-conditioned problem:
 
-- on `N_nu`: `7` real quantities
-- on `N_e`: `3 + 7` real quantities
+- on `N_nu`: `7` branch parameters under its separate physical hypotheses
+- on `N_e`: `3 + 7` branch parameters under its separate physical hypotheses
+
+For the charged-lepton-side `7`, the cited formal theorem proves only the
+seven-real quotient of a supplied `A+B C` texture. It does not derive the
+charged-lepton branch, physical rephasing redundancy, masses, or PMNS data.
 
 ## Atlas and package inputs
 
@@ -44,8 +48,8 @@ This theorem reuses:
 
 - `PMNS selector unique amplitude slot`
 - `Full neutrino closure last-mile reduction`
-- `Neutrino Dirac two-Higgs observable inverse problem`
-- `Charged-lepton two-Higgs observable inverse problem`
+- separately supplied physical branch hypotheses; this sign theorem does not
+  derive either branch
 
 ## Why this matters
 
@@ -87,6 +91,7 @@ This note does **not** derive:
 - the sign or magnitude of `a_sel`
 - the `7` neutrino-side quantities
 - the `3 + 7` charged-lepton-side quantities
+- any physical identification of the supplied two-offset matrix quotient
 
 It is a reduction theorem only.
 
@@ -103,4 +108,5 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [pmns_selector_unique_amplitude_slot_note](PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md)
 - [neutrino_two_amplitude_last_mile_reduction_note](NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md)
 - [neutrino_dirac_two_higgs_canonical_reduction_note](NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
-- [charged_lepton_two_higgs_canonical_reduction_note](CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
+- `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md` (context-only formal
+  pointer; not a dependency or physical branch authority)

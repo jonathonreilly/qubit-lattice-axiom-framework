@@ -1,151 +1,249 @@
-# Charged-Lepton Two-Higgs Canonical Reduction Theorem
+# Supplied Two-Offset 3×3 Texture Canonical Reduction Theorem
 
 **Date:** 2026-04-15
-**Status:** exact reduction/counting theorem on the minimal surviving
-charged-lepton-side extension class
-**Atlas placement:** canonical toolkit on `main` at
-`docs/publication/ci3_z3/DERIVATION_ATLAS.md`
-**Script:** `scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py`
+**Type:** positive_theorem
+**Status:** exact formal reduction theorem for a supplied matrix texture
+**Stable claim ID:** `charged_lepton_two_higgs_canonical_reduction_note`
+**Runner:**
+[`scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py`](../scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py)
+**Cached output:**
+[`logs/runner-cache/frontier_charged_lepton_two_higgs_canonical_reduction.txt`](../logs/runner-cache/frontier_charged_lepton_two_higgs_canonical_reduction.txt)
 
-## Question
+## Scope
 
-If the charged-lepton sector, rather than the neutrino sector, is the first
-lepton Yukawa lane to leave the single-Higgs monomial class, what is the exact
-remaining freedom on that minimal charged-lepton extension?
+This is a self-contained finite-dimensional theorem about a **supplied**
+matrix texture. It is not a derivation of a charged-lepton Yukawa sector or of
+any physical flavor model.
 
-## Bottom line
+Let
 
-It is structurally the same size as the minimal neutrino-side extension.
+```text
+    C = [[0,1,0],
+         [0,0,1],
+         [1,0,0]],              C^3 = I,
+```
 
-Up to generation relabeling and charged-lepton field rephasings, every
-distinct-offset charged-lepton two-Higgs texture reduces to one canonical
-support class
+and supply distinct `a,b ∈ Z_3` together with diagonal complex matrices
 
-`Y_e = A_e + B_e C`
+```text
+    D_a = diag(a_0,a_1,a_2),
+    D_b = diag(b_0,b_1,b_2).
+```
 
-with `C` the forward `3`-cycle and `A_e, B_e` diagonal.
+Define
 
-After exact phase reduction, the generic canonical point has the form
+```text
+    Y = D_a C^a + D_b C^b.                         (1)
+```
 
-`Y_e,can = diag(x^e_1,x^e_2,x^e_3) + diag(y^e_1,y^e_2,y^e_3 e^{i delta_e}) C`
+The words “offset”, “left”, and “right” below label this matrix problem only.
+They do not identify fields, charges, generations, or gauge redundancies.
 
-with all moduli positive and one surviving phase `delta_e`.
+## Theorem
 
-So the minimal exact charged-lepton-side extension class also carries exactly
-**seven real physical quantities**:
+For every ordered pair `a ≠ b` in `Z_3`:
 
-- six positive moduli
-- one phase
+1. right multiplication by `C^{-a}` gives
 
-## Atlas and axiom inputs
+   ```text
+       Y C^{-a} = D_a + D_b C^{b-a};               (2)
+   ```
 
-This theorem reuses:
+2. `C^{b-a}` is either `C` or `C^2`;
+3. the two nonidentity 3-cycles are conjugate by the explicit permutation
 
-- `Lepton single-Higgs PMNS triviality theorem`
-- `Neutrino Dirac two-Higgs escape theorem`
+   ```text
+       S = [[1,0,0],
+            [0,0,1],
+            [0,1,0]],        S C^2 S^{-1} = C;
+   ```
 
-The key exact reuse fact is already in the single-Higgs lepton theorem: the
-charged-lepton support analysis depends only on one effective `Z_3` offset, not
-on whether that offset arose directly from `H` or from a conjugated Higgs
-insertion.
+4. conjugation preserves diagonality of `D_a` and `D_b`.
 
-So the same two-offset support algebra applies on the charged-lepton lane.
+Thus all six ordered distinct offset pairs have one formal support class
 
-## Why the offset-pair label is not a remaining physical ambiguity
+```text
+    A + B C,                                        (3)
+```
 
-There are three unordered distinct effective-offset pairs:
+with supplied diagonal `A,B`. The right multiplication and conjugation in
+this statement are explicit matrix relabelings. No physical equivalence is
+claimed.
 
-- `(0,1)`
-- `(0,2)`
-- `(1,2)`
+The coefficient orientation is explicit. For relative exponent `b-a = 1`,
+namely `(a,b)=(0,1),(1,2),(2,0)`, no conjugation is needed and
 
-Any such texture has the form
+```text
+    A = diag(a_0,a_1,a_2),   B = diag(b_0,b_1,b_2).
+```
 
-`Y_e = D_a P_a + D_b P_b`
+For relative exponent `b-a = 2`, namely
+`(a,b)=(0,2),(1,0),(2,1)`, conjugation by the displayed `S` gives
 
-with `P_a != P_b`.
+```text
+    A = S D_a S^{-1} = diag(a_0,a_2,a_1),
+    B = S D_b S^{-1} = diag(b_0,b_2,b_1).
+```
 
-Exactly as on the neutrino side, right-multiplying by `P_a^dag` makes one term
-diagonal and leaves a relative permutation which is always a nontrivial
-`3`-cycle. All such cycles are conjugate by generation relabeling.
+Thus the conjugator changes the cycle orientation and simultaneously swaps
+the second and third diagonal coefficients; it does not leave those
+coefficients silently fixed.
 
-Therefore all distinct charged-lepton offset pairs reduce to the same
-canonical support class `A_e + B_e C`.
+## Generic rephasing quotient
 
-## Exact phase reduction
+Now restrict to the open dense stratum
 
-Write the canonical support class as
+```text
+    X° = {(A,B): a_0 a_1 a_2 b_0 b_1 b_2 ≠ 0} ≅ (C*)^6.   (4)
+```
 
-`Y_e = diag(a^e_1,a^e_2,a^e_3) + diag(b^e_1,b^e_2,b^e_3) C`.
+On this stratum, **specify** the diagonal phase action
 
-This starts with `6` complex numbers, i.e. `12` real parameters.
+```text
+    Y ↦ L Y R,
+    L = diag(e^{iℓ_0},e^{iℓ_1},e^{iℓ_2}),
+    R = diag(e^{iρ_0},e^{iρ_1},e^{iρ_2}).           (5)
+```
 
-Diagonal charged-lepton left/right rephasings then:
+For the six support edges
 
-1. make all three `a^e_i` positive and real
-2. make two of the three `b^e_i` positive and real
-3. leave one common phase direction redundant
+```text
+    (0,0),(1,1),(2,2),(0,1),(1,2),(2,0),
+```
 
-So exactly one invariant phase survives. A convenient generic normal form is
+the coefficient phases transform by the integer incidence matrix
 
-`Y_e,can = diag(x^e_1,x^e_2,x^e_3) + diag(y^e_1,y^e_2,y^e_3 e^{i delta_e}) C`
+```text
+        [1 0 0 | 1 0 0]
+        [0 1 0 | 0 1 0]
+    M = [0 0 1 | 0 0 1].                            (6)
+        [1 0 0 | 0 1 0]
+        [0 1 0 | 0 0 1]
+        [0 0 1 | 1 0 0]
+```
 
-with all `x^e_i > 0`, all `y^e_i > 0`.
+Exact integer row reduction gives
 
-## Exact parameter count
+```text
+    rank_Z(M) = rank_Q(M) = 5.                      (7)
+```
 
-The generic charged-lepton two-Higgs lane therefore carries:
+For example, the upper-left `5×5` minor has determinant `+1`. Equivalently,
+the Smith normal form has diagonal `(1,1,1,1,1,0)`. Hence the rank-five image
+lattice is saturated. The full stabilizer/kernel is the connected torus
+`U(1)` generated by the common opposite phase
 
-- `12` starting real parameters
-- minus `5` exact removable phase directions
+```text
+    (-1,-1,-1,+1,+1,+1),                            (8)
+```
 
-leaving
+which acts trivially on every coefficient. There is no additional finite or
+disconnected stabilizer component.
 
-`12 - 5 = 7`
+Writing the input coefficient phases as
 
-physical real quantities.
+```text
+    (α_0,α_1,α_2,β_0,β_1,β_2),
+```
 
-## The theorem-level statement
+the left nullspace of `M` is generated by the same integer vector. Therefore
+the unique quotient phase is
 
-**Theorem (Canonical reduction of the minimal two-Higgs charged-lepton lane).**
-Assume the exact single-Higgs lepton-sector PMNS triviality theorem and a
-charged-lepton Yukawa lane with two distinct effective `Z_3` offsets. Then:
+```text
+    δ = (β_0+β_1+β_2) - (α_0+α_1+α_2)
+      = arg[(b_0 b_1 b_2)/(a_0 a_1 a_2)]  mod 2π.  (9)
+```
 
-1. every such charged-lepton texture is equivalent up to generation relabeling
-   to the canonical support class `Y_e = A_e + B_e C`
-2. after exact charged-lepton field rephasings, the generic point has normal
-   form
-   `diag(x^e_1,x^e_2,x^e_3) + diag(y^e_1,y^e_2,y^e_3 e^{i delta_e}) C`
-3. the minimal charged-lepton-side extension class therefore carries exactly
-   `7` real physical quantities
+A constructive gauge choice makes all three `A` coefficients and the first
+two `B` coefficients positive, leaving
 
-So if the charged-lepton sector is the first non-monomial lane, its exact
-remaining gap is also a seven-quantity problem rather than a generic complex
-`3 x 3` texture.
+```text
+    diag(x_0,x_1,x_2)
+      + diag(y_0,y_1,y_2 e^{iδ}) C,
 
-## What this closes
+    x_i > 0,  y_i > 0.                              (10)
+```
 
-This closes the charged-lepton-side analogue of the neutrino two-Higgs
-reduction.
+The constructive phase formulas are integer-linear and therefore hold
+globally on the phase torus, not merely in a tangent-space neighborhood. The
+unit Smith factors leave no finite quotient. Consequently
 
-It is now exact that:
+```text
+    X° / (U(1)^3_left × U(1)^3_right)
+      ≅ (R_{>0})^6 × S^1                            (11)
+```
 
-- the charged-lepton minimal non-monomial lane is canonical up to relabeling
-- its remaining unknown is not a generic matrix family
-- its exact residual freedom is seven real quantities
+after dividing by the one-dimensional kernel of the displayed action. The
+quotient therefore has
 
-## What this does not close
+- six positive moduli;
+- one invariant phase;
+- exactly seven real quotient parameters.
 
-This note does **not** derive:
+These are **quotient parameters**, not physical quantities. A separate
+physical identification would be required before calling the displayed phase
+or moduli observable, gauge-invariant, Yukawa, mass, mixing, or PMNS data.
 
-- the seven charged-lepton quantities
-- a selector choosing the charged-lepton-side branch over the neutrino-side one
-- a cross-sector relation tying the charged-lepton and neutrino canonical lanes
+## Generic boundary
 
-It is a reduction theorem only.
+The seven-parameter statement is only for `X°`, where all six coefficients
+are nonzero.
 
-## Command
+- If `a=b`, the relative support is the identity and the two terms combine on
+  one three-edge matching. This is not the theorem's distinct-offset texture.
+- If the relative permutation is the identity or a transposition, it is not a
+  nontrivial 3-cycle and the support-reduction conclusion does not apply.
+- If any coefficient vanishes, equation (9) is undefined and the active-edge
+  incidence problem must be recomputed for that zero pattern. Every proper
+  subset of the six-cycle is a forest. For a stratum with exactly `k<6`
+  active coefficients, its incidence matrix has saturated rank `k`, its
+  stabilizer is the connected torus `U(1)^{6-k}`, and its quotient is globally
+  `(R_{>0})^k` with no phase coordinate. In particular, each of the six
+  one-zero strata is a five-edge path with five positive moduli, not seven
+  parameters.
+- More severe support loss can disconnect the graph without creating a phase.
+  The three diagonal edges alone form three components, have incidence rank
+  `3`, and give `(R_{>0})^3`. Different exact support patterns are distinct
+  strata; their closures meet only after further coefficients vanish.
+
+Thus “generic” means exactly the all-six-nonzero stratum (4); it is not a
+claim about every boundary point.
+
+## What is and is not proved
+
+The proof and runner exhaust all six ordered distinct pairs in `Z_3`, verify
+the explicit conjugators and symbolic matrix identities, compute the exact
+integer/rational rank, Smith form, and both nullspaces of (6), construct the
+global normal form, and exhaust all `64` support patterns together with
+hostile controls for invalid supports.
+
+No repository science source is a premise of this theorem. In particular,
+the current framework axioms and approved primitives are not asserted to
+supply:
+
+- a charged-lepton or other Yukawa sector;
+- one or two Higgs fields;
+- effective `Z_3` charge offsets;
+- a physical interpretation of the specified phase action;
+- a selected flavor branch;
+- masses, PMNS data, or any physical parameter values.
+
+The stable claim ID and historical file path are preserved so downstream
+citations can narrow to this exact formal scope without inventing a new
+authority.
+
+## Reproduction
+
+Normal execution must exit zero with no failed checks:
 
 ```bash
 python3 scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py
+```
+
+The intentional-failure probe must report a failed rank assertion and exit
+nonzero:
+
+```bash
+python3 scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py \
+  --intentional-failure-probe
 ```

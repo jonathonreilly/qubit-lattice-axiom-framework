@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
-runner_sha256: 7e413009ce1167072ca1b0f9e33a4a3f799be0ab514d0a6ca1d78b929275c7da
+runner_sha256: 2460b6873caebf3fb556a2a8a6c668788a6ebf140d92514f7d9368f82faa5499
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -15,7 +15,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] SU(2)_L dof = dim adj(SU(2)) * 2 = 6  (6)
   [PASS] U(1)_Y dof = 1 * 2 = 2  (2)
   [PASS] gauge bosonic subtotal = 24  (24)
-  [PASS] one complex SU(2)_L doublet -> 4 real scalar dof
+  [PASS] one complex SU(2)_L doublet -> 2 complex * 2 real = 4 scalar dof  (2 * 2 = 4)
   [PASS] per-generation fermionic dof = 30  (30)
   [PASS] N_fermions = 3 * 30 = 90  (90)
   [PASS] single-doublet N_bosons = 28  (28)
@@ -25,15 +25,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] g_* shift from a second thermalized doublet = +4 (one boson per scalar dof)  (4)
   [PASS] the shift equals the 4 added scalar dof (bosonic, weight 1)
 
-[2] flavor-sector two-Higgs = Yukawa Z_3-offset texture, ONE doublet
-  [PASS] single fixed-offset Yukawa Y = D P is monomial -> Y^dag Y diagonal  (all 3 offsets, random couplings)
-  [PASS] two-offset Yukawa Y = A + B C is generically non-monomial -> Y^dag Y non-diagonal  (the flavor escape that makes PMNS nontrivial)
-  [PASS] retained two-Higgs canonical class: 12 - 5 = 7 real physical quantities  (12 - 5 = 7 (6 moduli + 1 phase))
-  [PASS] these 7 are Yukawa-texture parameters, NOT relativistic thermalized dof  (flavor space (couplings) vs Fock space (particle content))
-  [PASS] single-Higgs Z_3 charge q_H is a right-basis relabeling -> Y Y^dag invariant  (q_H gauge-redundant for PMNS; not a second physical doublet)
-  [PASS] pseudoreality epsilon U^* = U epsilon -> tilde H determined by H (one field)  (tilde H = i tau_2 H^* is not an independent doublet)
-
-[3] retained-bounded inventory premise and native bridge boundary
+[2] retained-bounded inventory premise and native bridge boundary
   [PASS] D17: H_unit (1,1) scalar singlet on Q_L has Z^2 = 6
   [PASS] D17: no second (1,1) composite scalar -> alternatives Z^2 in {8, 9/2, 24} != 6  ((1,8)=8, (3,1)=9/2, (8,3)=24)
   [PASS] note claim type is bounded_theorem over retained-bounded declared inventory
@@ -47,23 +39,14 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] radial/orbit support is cited as support only, not field-content authority
   [PASS] radial/orbit support keeps the one-doublet inventory premise load-bearing
 
-[4] note + authority cross-checks
+[3] note + authority cross-checks
   [PASS] authority exists: YT_WARD_IDENTITY_DERIVATION_THEOREM.md
   [PASS] authority exists: HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md
   [PASS] authority exists: SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md
-  [PASS] authority exists: YT_CLASS_3_SUSY_2HDM_ANALYSIS_NOTE_2026-04-18.md
-  [PASS] authority exists: CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md
-  [PASS] authority exists: DM_NEUTRINO_TWO_HIGGS_MINIMALITY_THEOREM_NOTE_2026-04-15.md
-  [PASS] authority exists: LEPTON_SINGLE_HIGGS_PMNS_TRIVIALITY_NOTE.md
-  [PASS] authority exists: HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md
-  [PASS] authority exists: SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md
   [PASS] authority exists: EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md
-  [PASS] authority exists: NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md
-  [PASS] authority exists: DM_NEUTRINO_CANONICAL_TWO_HIGGS_SLOT_NO_GO_NOTE_2026-04-15.md
   [PASS] authority exists: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
   [INFO] prior-cycle R-HIGGS note present on this branch: True (lands via PR #2223; soft check)
-  [PASS] note file exists
-  [PASS] audit ledger has SM DOF inventory retained_bounded  (claim_type=bounded_theorem effective_status=retained_bounded)
+  [PASS] note file exists  (docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md)
   [PASS] note records load-bearing token: '106.75'
   [PASS] note records load-bearing token: '110.75'
   [PASS] note records load-bearing token: 'bounded_theorem'
@@ -83,7 +66,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] no new-vocabulary token: 'algebraic universality'
 
 ==============================================================================
-PASS=63 FAIL=0
+PASS=48 FAIL=0
 ==============================================================================
 
 ----- stderr -----

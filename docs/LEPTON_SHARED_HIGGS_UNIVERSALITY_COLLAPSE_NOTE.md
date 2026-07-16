@@ -39,7 +39,11 @@ This theorem reuses:
 
 - `Lepton single-Higgs PMNS triviality theorem`
 - `Neutrino Dirac two-Higgs escape theorem`
-- `Charged-lepton two-Higgs canonical reduction`
+- direct support-union algebra for the supplied offset sets
+
+The shared-Higgs/Yukawa interpretation is an explicit hypothesis of this
+note. `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md` is a contextual
+formal parallel only, not a dependency or physical authority.
 
 ## Why this matters
 
@@ -74,8 +78,7 @@ Assume:
 
 1. the exact single-Higgs lepton-sector PMNS triviality theorem
 2. the exact minimal two-Higgs neutrino escape theorem
-3. the exact charged-lepton two-Higgs canonical reduction theorem
-4. shared-Higgs universality in the precise sense that the same effective
+3. shared-Higgs universality in the precise sense that the same effective
    Higgs-offset set contributes to both lepton Yukawa sectors
 
 Then:
@@ -103,6 +106,8 @@ This note does **not** prove:
 - that shared-Higgs universality is forced
 - that shared-Higgs universality fails
 - the remaining coefficient problem on the resulting shared support class
+- that the supplied formal texture is a physical charged-lepton Yukawa matrix
+  or that its rephasing action is a physical gauge redundancy
 
 It is a conditional exact theorem only.
 
@@ -118,4 +123,5 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 - [lepton_single_higgs_pmns_triviality_note](LEPTON_SINGLE_HIGGS_PMNS_TRIVIALITY_NOTE.md)
 - [neutrino_dirac_two_higgs_canonical_reduction_note](NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
-- [charged_lepton_two_higgs_canonical_reduction_note](CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
+- `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md` (context-only formal
+  pointer; not a dependency edge)

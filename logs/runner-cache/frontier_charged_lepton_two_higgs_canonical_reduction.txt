@@ -1,91 +1,121 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py
-runner_sha256: 2cfe8f74c7e99e83eda1ced6e8202b84dff22c9dd349e4aea546611310a4ff42
+runner_sha256: 71030aa473bbeaec51bac2e45210e892a3ddc6f2c14f3f49af0d676096bc475e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 ========================================================================================
-CHARGED-LEPTON YUKAWA: TWO-HIGGS CANONICAL REDUCTION
+SUPPLIED TWO-OFFSET 3 x 3 TEXTURE: EXACT FORMAL CANONICAL REDUCTION
 ========================================================================================
+Hypothesis: Y=D_a C^a + D_b C^b with supplied diagonal D_a,D_b and a!=b in Z_3.
+Generic quotient: all six coefficients are nonzero and the specified diagonal
+U(1)^3_left x U(1)^3_right action is imposed as a mathematical equivalence.
+No physical carrier, redundancy, branch, observable, or value is inferred.
 
-Atlas / axiom inputs reused:
-  - Lepton single-Higgs PMNS triviality theorem
-  - Neutrino Dirac two-Higgs escape theorem
-  - effective charged-lepton Z_3 offset language from the lepton lane
+=== A. Exact support reduction for every ordered distinct offset pair ===
+  [PASS] C is an exact order-three permutation
+  [PASS] C inverse is exactly C^2
+  [PASS] all six ordered pairs a != b in Z_3 are present
+         ((0, 1), (0, 2), (1, 0), (1, 2), (2, 0), (2, 1))
+  [PASS] offsets (0,1): right multiplication by C^(-a) is exact
+         relative exponent=1
+  [PASS] offsets (0,1): relative support is a nontrivial 3-cycle
+  [PASS] offsets (0,1): explicit conjugator exists
+         I_3
+  [PASS] offsets (0,1): conjugator sends the relative cycle to C
+  [PASS] offsets (0,1): transformed matrix is exactly A+B C
+  [PASS] offsets (0,2): right multiplication by C^(-a) is exact
+         relative exponent=2
+  [PASS] offsets (0,2): relative support is a nontrivial 3-cycle
+  [PASS] offsets (0,2): explicit conjugator exists
+         swap generations 1 and 2
+  [PASS] offsets (0,2): conjugator sends the relative cycle to C
+  [PASS] offsets (0,2): transformed matrix is exactly A+B C
+  [PASS] offsets (1,0): right multiplication by C^(-a) is exact
+         relative exponent=2
+  [PASS] offsets (1,0): relative support is a nontrivial 3-cycle
+  [PASS] offsets (1,0): explicit conjugator exists
+         swap generations 1 and 2
+  [PASS] offsets (1,0): conjugator sends the relative cycle to C
+  [PASS] offsets (1,0): transformed matrix is exactly A+B C
+  [PASS] offsets (1,2): right multiplication by C^(-a) is exact
+         relative exponent=1
+  [PASS] offsets (1,2): relative support is a nontrivial 3-cycle
+  [PASS] offsets (1,2): explicit conjugator exists
+         I_3
+  [PASS] offsets (1,2): conjugator sends the relative cycle to C
+  [PASS] offsets (1,2): transformed matrix is exactly A+B C
+  [PASS] offsets (2,0): right multiplication by C^(-a) is exact
+         relative exponent=1
+  [PASS] offsets (2,0): relative support is a nontrivial 3-cycle
+  [PASS] offsets (2,0): explicit conjugator exists
+         I_3
+  [PASS] offsets (2,0): conjugator sends the relative cycle to C
+  [PASS] offsets (2,0): transformed matrix is exactly A+B C
+  [PASS] offsets (2,1): right multiplication by C^(-a) is exact
+         relative exponent=2
+  [PASS] offsets (2,1): relative support is a nontrivial 3-cycle
+  [PASS] offsets (2,1): explicit conjugator exists
+         swap generations 1 and 2
+  [PASS] offsets (2,1): conjugator sends the relative cycle to C
+  [PASS] offsets (2,1): transformed matrix is exactly A+B C
 
-Question:
-  If the charged-lepton sector is the first lepton Yukawa lane to leave
-  the single-Higgs monomial class, how much exact freedom is left on
-  that minimal charged-lepton extension?
+=== B. Exact rephasing quotient on the all-nonzero stratum ===
+  [PASS] the canonical support graph is one connected six-cycle
+         components=1
+  [PASS] the integer phase-incidence matrix has exact rank 5
+         rank=5
+  [PASS] an explicit 5 x 5 incidence minor has determinant +1
+         det=1; the rank-five image lattice is saturated
+  [PASS] the Smith form has five unit factors and one zero
+         Smith diagonal=(1, 1, 1, 1, 1, 0)
+  [PASS] the common opposite left/right phase is the full one-dimensional kernel
+         kernel=(-1, -1, -1, 1, 1, 1)
+  [PASS] the full torus stabilizer is connected U(1), with no finite component
+         unit Smith factors exclude a disconnected/discrete stabilizer component
+  [PASS] the phase quotient has one invariant covector
+         delta = (beta_0+beta_1+beta_2) - (alpha_0+alpha_1+alpha_2)
+  [PASS] a symbolic gauge construction makes all A and the first two B coefficients positive
+         transformed phases=(0, 0, 0, 0, 0, -alpha_0 - alpha_1 - alpha_2 + beta_0 + beta_1 + beta_2)
+  [PASS] the residual normal-form phase equals the invariant phase combination
+  [PASS] the generic quotient has six positive modulus coordinates
+         one modulus for each of 6 nonzero coefficients
+  [PASS] the generic quotient has exactly one phase coordinate
+         phase dimension=6-5=1
+  [PASS] the generic quotient has exactly seven real parameters
+         2*6-5=7
+  [PASS] the normal form and unit Smith factors give the global quotient (R_{>0})^6 x S^1
+         the integer phase formulas are global modulo 2*pi; no finite quotient remains
 
-========================================================================================
-PART 1: ALL DISTINCT CHARGED-LEPTON TWO-HIGGS OFFSET PAIRS REDUCE TO ONE SUPPORT CLASS
-========================================================================================
-  [PASS] offsets=(0,1): right multiplication makes one Higgs contribution diagonal  (relative support=
-[[0 1 0]
- [0 0 1]
- [1 0 0]])
-  [PASS] offsets=(0,1): the relative permutation is a nontrivial 3-cycle  (det=1.0+0.0j)
-  [PASS] offsets=(0,1): a generation relabeling maps the pair to the forward-cycle class
-  [PASS] offsets=(0,1): the transformed texture has canonical support class A_e + B_e C  (canon error=0.00e+00)
-  [PASS] offsets=(0,2): right multiplication makes one Higgs contribution diagonal  (relative support=
-[[0 0 1]
- [1 0 0]
- [0 1 0]])
-  [PASS] offsets=(0,2): the relative permutation is a nontrivial 3-cycle  (det=1.0+0.0j)
-  [PASS] offsets=(0,2): a generation relabeling maps the pair to the forward-cycle class
-  [PASS] offsets=(0,2): the transformed texture has canonical support class A_e + B_e C  (canon error=0.00e+00)
-  [PASS] offsets=(1,2): right multiplication makes one Higgs contribution diagonal  (relative support=
-[[0 1 0]
- [0 0 1]
- [1 0 0]])
-  [PASS] offsets=(1,2): the relative permutation is a nontrivial 3-cycle  (det=1.0+0.0j)
-  [PASS] offsets=(1,2): a generation relabeling maps the pair to the forward-cycle class
-  [PASS] offsets=(1,2): the transformed texture has canonical support class A_e + B_e C  (canon error=0.00e+00)
+=== C. Hostile controls and the generic-boundary contract ===
+  [PASS] equal offsets are rejected by the theorem hypothesis
+         the two supplied terms then combine on one three-edge matching
+  [PASS] identity relative support is not misclassified as a nontrivial 3-cycle
+  [PASS] a transposition support is rejected as the wrong cycle class
+         the transposition has order two, not order three
+  [PASS] an invalid conjugator is detected
+         I_3 does not conjugate C^2 to C
+  [PASS] rank-deficient disconnected support is excluded
+         three disjoint matching edges give rank 3
+  [PASS] a zero coefficient lies outside the all-six-nonzero stratum
+         the product phase is undefined when any coefficient vanishes
+  [PASS] all six one-zero strata have the different exact quotient count five
+         each five-edge support is a path: 5 moduli, no phase, connected stabilizer
+  [PASS] every proper support subset is a saturated forest stratum with moduli only
+         all 63 boundary support patterns checked: k active coefficients give (R_{>0})^k, no cycle phase, and a connected U(1)^(6-k) stabilizer
+  [PASS] wrong rank and quotient-count claims are rejected
+         exact rank=5, exact quotient count=7
+  [SCOPE] No physical carrier, field, gauge, branch, observable, or value is among the mathematical inputs or conclusions; this is not a PASS check.
 
-  So the charged-lepton offset-pair label is not a remaining
-  physical ambiguity on the minimal two-Higgs lane. Up to relabeling,
-  there is one canonical support class.
-
-========================================================================================
-PART 2: GENERIC CHARGED-LEPTON TWO-HIGGS TEXTURES REDUCE TO SIX MODULI PLUS ONE PHASE
-========================================================================================
-  [PASS] The diagonal charged-lepton Higgs block can be made strictly positive and real  (a_can=[0.18+0.j 0.33+0.j 1.02-0.j])
-  [PASS] Two of the three off-cycle charged-lepton coefficients can be made strictly positive and real  (b12_can=[0.09+0.j 0.21-0.j])
-  [PASS] Exactly one invariant phase remains on the generic charged-lepton two-Higgs lane  (delta_e=1.300000, invariant=1.300000)
-  [PASS] The canonical texture keeps the same singular-value spectrum  (svals=[0.152753 0.354604 1.187317])
-
-  So the generic canonical charged-lepton normal form is
-    diag(xe1,xe2,xe3) + diag(ye1,ye2,ye3 e^{i delta_e}) C
-  with xe_i > 0, ye_i > 0, and one surviving physical phase delta_e.
-
-========================================================================================
-PART 3: THE MINIMAL CHARGED-LEPTON TWO-HIGGS LANE CARRIES EXACTLY SEVEN REAL INVARIANTS
-========================================================================================
-  [PASS] The generic charged-lepton two-Higgs texture starts with 12 real parameters
-  [PASS] The exact phase-fixing conditions again have rank 5  (rank=5)
-  [PASS] One common phase remains as the exact null direction  (null dim=1)
-  [PASS] So the physical parameter count is 12 - 5 = 7  (physical count=7)
-  [PASS] The canonical charged-lepton normal form uses exactly 6 positive moduli plus 1 phase  (canonical count=7)
-
-  So the minimal exact surviving charged-lepton-side extension class
-  is also a seven-real-number problem on one canonical support class.
-
-========================================================================================
-RESULT
-========================================================================================
-  Exact reduction answer:
-    - all distinct charged-lepton two-Higgs offset pairs reduce to one support class
-    - the generic canonical form is diag(xe1,xe2,xe3)+diag(ye1,ye2,ye3 e^{i delta_e}) C
-    - the minimal surviving charged-lepton-side lane carries exactly 7 real invariants
-
-  So if the charged-lepton sector, rather than the neutrino sector, is
-  the first non-monomial lane, its exact remaining gap is also seven
-  axiom-side quantities.
-
-PASS=21  FAIL=0
+=== Result ===
+  All six ordered distinct offset pairs have the formal support class A+B C.
+  On (C*)^6, the specified rephasing quotient is (R_{>0})^6 x S^1:
+  six positive moduli and one invariant phase, hence seven real quotient parameters.
+  Zero-coefficient strata and non-cycle supports are outside this generic statement.
+  These are quotient parameters, not physical quantities.
+PASS=55 FAIL=0
 
 ----- stderr -----
 

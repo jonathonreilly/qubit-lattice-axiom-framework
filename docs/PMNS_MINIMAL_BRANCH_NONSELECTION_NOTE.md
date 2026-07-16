@@ -6,7 +6,7 @@ PMNS-producing branches
 **Atlas placement:** canonical toolkit on `main` at
 `docs/publication/ci3_z3/DERIVATION_ATLAS.md`
 **Script:** `scripts/frontier_pmns_minimal_branch_nonselection.py`
-(`PASS = 8, FAIL = 0`)
+(`PASS = 9, FAIL = 0`)
 
 **2026-05-01 publication-state note:** The
 `HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17`
@@ -16,24 +16,25 @@ rewritten as a thin redirect to the live retained-lane packet. The
 publication-control wording the previous runner asserted ("CKM /
 quantitative flavor open", "frozen-out exact review packet",
 validation-map "Higgs `Z_3` universality" blocker line) was therefore
-rotated out. The note's actual claim — branch isolation without
-selection — is preserved by the live atlas rows for "PMNS
-minimal-branch nonselection", "Neutrino Dirac two-Higgs canonical
-reduction", "Charged-lepton two-Higgs canonical reduction", and the
-companion "Lepton shared-Higgs universality underdetermination" plus
+rotated out. The note's actual claim — nonselection under separately
+supplied physical branch hypotheses — is preserved by the live atlas rows for
+"PMNS minimal-branch nonselection", "Neutrino Dirac two-Higgs canonical
+reduction", "PMNS branch-conditioned quadratic-sheet closure", and the
+formal, nonphysical "Supplied two-offset `3×3` texture reduction", plus the
+companion "Lepton shared-Higgs universality underdetermination" and
 "Lepton shared-Higgs universality collapse" rows; the live gates note
 keeps the universality lane open. The runner is narrowed to assert
 against that current state; the underlying theorem is unchanged.
 
 ## Question
 
-After isolating the exact minimal PMNS-producing branches,
+After separately supplying the physical minimal-branch hypotheses,
 
 - neutrino-side two-Higgs canonical branch
-- charged-lepton-side two-Higgs canonical branch
+- a charged-lepton-side branch used by the conditional PMNS consumer
 
-does the current exact bank already select one of them or constrain its seven
-canonical quantities?
+does the current exact bank already select one of them or derive its physical
+observables?
 
 ## Bottom line
 
@@ -41,13 +42,12 @@ No.
 
 The current exact bank has reached the following honest endpoint:
 
-- the surviving minimal PMNS-producing branches are isolated
-- their canonical reduction and parameter counts are known
+- the neutrino-side branch and a conditional charged-lepton consumer are recorded
+- the supplied two-offset matrix theorem establishes only a formal quotient
 - but the current atlas/package does **not** contain:
   - a retained Higgs-multiplicity selector
   - a retained shared-Higgs `Z_3` universality theorem
-  - an exact bridge constraining the seven canonical quantities on either
-    minimal branch
+  - an exact bridge deriving physical observables on either minimal branch
 
 So the bank has isolation without selection.
 
@@ -56,7 +56,8 @@ So the bank has isolation without selection.
 This theorem reuses:
 
 - `Neutrino Dirac two-Higgs canonical reduction`
-- `Charged-lepton two-Higgs canonical reduction`
+- `Supplied two-offset 3x3 texture formal reduction` (formal only)
+- `PMNS branch-conditioned quadratic-sheet closure` (separate conditional consumer)
 - the PMNS boundary packet
 - publication controls:
   - `DERIVATION_VALIDATION_MAP.md`
@@ -69,8 +70,10 @@ This theorem reuses:
 The package already encodes three exact facts:
 
 1. the minimal neutrino-side non-monomial branch exists and is canonical
-2. the minimal charged-lepton-side non-monomial branch exists and is canonical
-3. flavor closure remains open because Higgs-`Z_3` universality is still a
+2. the supplied two-offset matrix class has an exact formal quotient theorem,
+   with no charged-lepton or physical-branch identification
+3. a separate conditional PMNS consumer states its charged-lepton branch
+   hypothesis, while flavor closure remains open because Higgs-`Z_3` universality is a
    remaining blocker
 
 The current atlas therefore supports a precise theorem:
@@ -82,22 +85,23 @@ This is not just narrative caution. It is a true current-bank boundary.
 
 ## The theorem-level statement
 
-**Theorem (Current-atlas nonselection of minimal PMNS-producing branches).**
+**Theorem (Current-atlas nonselection under supplied physical branches).**
 Assume the exact PMNS boundary packet, the exact neutrino-side two-Higgs
-canonical reduction theorem, and the exact charged-lepton-side two-Higgs
-canonical reduction theorem. Then:
+canonical reduction theorem, and a separately supplied charged-lepton physical
+branch. Then:
 
-1. the current exact bank isolates the minimal neutrino-side and
-   charged-lepton-side PMNS-producing branches
+1. the current exact bank records the neutrino-side branch and the separate
+   conditional charged-lepton consumer
 2. the publication controls still record Higgs-`Z_3` universality / flavor
    selection as open
 3. the current atlas contains no retained Higgs-multiplicity selector, no
    retained shared-Higgs `Z_3` universality theorem, and no exact bridge
-   constraining the seven canonical quantities on either minimal branch
+   deriving physical observables on either minimal branch
 
 Therefore the current exact bank does not yet select among the surviving
 minimal PMNS-producing branches and does not yet derive their canonical
-invariants.
+observables. The seven coordinates of the supplied matrix quotient are not
+physical quantities without another identification theorem.
 
 ## What this closes
 
@@ -107,12 +111,12 @@ It is now exact that the remaining work is not:
 
 - more branch hunting
 - more support-class classification
-- more parameter-count bookkeeping
+- more formal matrix parameter-count bookkeeping
 
 It is instead one of:
 
 - derive a selector theorem
-- derive the seven canonical quantities on a chosen branch
+- supply and derive physical observables on a chosen branch
 
 ## What this does not close
 

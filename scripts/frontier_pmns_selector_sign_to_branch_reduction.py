@@ -11,7 +11,6 @@ import sys
 from pathlib import Path
 
 import numpy as np
-
 ROOT = Path(__file__).resolve().parents[1]
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -64,7 +63,6 @@ def part2_after_sign_selection_only_the_branch_conditioned_coefficients_remain()
 
     last_mile = read("docs/NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md")
     nu_inv = read("docs/NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md")
-    e_inv = read("docs/CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md")
 
     check("The two-amplitude last-mile note keeps sole-axiom closure separate",
           "Only two amplitudes remain" in last_mile and "`(J_chi, mu)`" in last_mile)
@@ -72,12 +70,8 @@ def part2_after_sign_selection_only_the_branch_conditioned_coefficients_remain()
           "minimal surviving neutrino-side extension class" in nu_inv
           and ("seven real axiom-side numbers" in nu_inv
                or "exactly `7` real physical parameters" in nu_inv))
-    check("The charged-lepton-side canonical reduction records the seven remaining quantities",
-          "minimal surviving\ncharged-lepton-side extension class" in e_inv
-          and "exactly\n**seven real physical quantities**" in e_inv)
-    check("The two canonical reductions keep selector realization outside their claims",
-          "does **not** derive the seven numbers" in nu_inv
-          and "a selector choosing the charged-lepton-side branch" in e_inv)
+    check("The neutrino-side reduction keeps selector realization outside its claim",
+          "does **not** derive the seven numbers" in nu_inv)
 
     print()
     print("  So after a nonzero selector amplitude chooses the branch, the")
@@ -115,7 +109,7 @@ def main() -> int:
     print("  - PMNS selector unique amplitude slot")
     print("  - Neutrino two-amplitude last-mile boundary")
     print("  - Neutrino Dirac two-Higgs canonical reduction")
-    print("  - Charged-lepton two-Higgs canonical reduction")
+    print("  - separately supplied physical branch hypotheses")
     print()
     print("Question:")
     print("  If the unique reduced selector amplitude becomes nonzero, what")

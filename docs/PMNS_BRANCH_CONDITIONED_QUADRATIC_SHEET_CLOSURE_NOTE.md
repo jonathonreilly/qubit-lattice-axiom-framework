@@ -62,10 +62,14 @@ and therefore the full canonical branch coefficients are explicit.
 Generically there are exactly two positive roots on the physical branch. They
 give two distinct canonical coefficient sheets with the same `H_nu`.
 
-On the charged-lepton-side minimal branch, the same cyclic formulas hold with
-`H_e = Y_e Y_e^dag`. The additional monomial neutrino-side data on that branch
-are just the three positive Dirac mass moduli, read directly from the monomial
-neutrino singular values.
+Conditional on a separately supplied charged-lepton-side branch and a
+physical identification of its matrix, the same cyclic formulas hold with
+`H_e = Y_e Y_e^dag`. The formal reduction cited below supplies only the
+`A+B C` matrix shape and its quotient count; it does not supply that branch,
+identify `H_e` as observable, or turn quotient parameters into masses. Under
+the branch hypotheses of this note, the additional monomial neutrino-side
+data are the three positive Dirac mass moduli read from the monomial neutrino
+singular values.
 
 So once `sign(a_sel)` picks the branch, the remaining coefficient problem is
 not an unconstrained seven-parameter search. It is an explicit algebraic
@@ -77,8 +81,8 @@ branch.
 This theorem reuses:
 
 - `PMNS selector sign-to-branch reduction`
-- `Neutrino Dirac two-Higgs observable inverse problem`
-- `Charged-lepton two-Higgs observable inverse problem`
+- the separately supplied canonical branch matrices and their Hermitian-data
+  interpretations; the explicit inverse formulas are proved below
 - `Neutrino full closure last-mile reduction`
 
 It does **not** import a new selector. It sharpens what happens **after** a
@@ -138,6 +142,10 @@ cyclic quadratic reconstruction holds for the canonical charged-lepton matrix
 
 from the Hermitian data `H_e = Y_e Y_e^dag`.
 
+This paragraph is conditional on the separately supplied physical branch and
+Hermitian-data interpretation. The cited formal supplied-texture theorem does
+not derive either bridge.
+
 The extra neutrino-side information on that branch is simpler: the neutrino
 lane remains monomial, so its three positive Dirac masses are just the three
 monomial singular values.
@@ -152,9 +160,9 @@ algebraic and explicit:
 
 **Theorem (Branch-conditioned quadratic-sheet coefficient closure on the
 minimal PMNS branches).** Assume the exact PMNS selector sign-to-branch
-reduction theorem, together with the exact canonical two-Higgs observable
-inverse-problem theorems on the neutrino-side and charged-lepton-side minimal
-branches. Then:
+reduction theorem and separately supply the canonical branch matrices together
+with the physical interpretation of `H_nu` or `H_e` as the relevant Hermitian
+data. Then:
 
 1. if `a_sel > 0`, the canonical neutrino-side two-Higgs coefficients are
    reconstructed from `H_nu` by one explicit quadratic equation in `x_1^2`
@@ -189,6 +197,8 @@ This note does **not** derive:
 - the sign of `a_sel`
 - the branch Hermitian data `H_nu` or `H_e`
 - the residual `Z_2` sheet bit from the retained bank alone
+- the physical charged-lepton/Yukawa meaning of the supplied `A+B C` texture
+  or of its diagonal phase quotient
 
 So it does not by itself promote full positive neutrino closure. It closes the
 post-selector coefficient algebra as far as the current bank honestly allows.
@@ -205,5 +215,6 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 - [pmns_selector_sign_to_branch_reduction_note](PMNS_SELECTOR_SIGN_TO_BRANCH_REDUCTION_NOTE.md)
 - [neutrino_dirac_two_higgs_canonical_reduction_note](NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
-- [charged_lepton_two_higgs_canonical_reduction_note](CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
+- `CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md` (context-only formal
+  pointer; not a dependency or physical branch authority)
 - [neutrino_two_amplitude_last_mile_reduction_note](NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md)

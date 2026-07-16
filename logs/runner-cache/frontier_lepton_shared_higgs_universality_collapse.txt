@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lepton_shared_higgs_universality_collapse.py
-runner_sha256: 9d4760ae0c7177ff00162fd0d6cecd20219f4843fbf2a425377deba31005a744
+runner_sha256: c75c6ea7e14b536ebfa051310338e63cc2db0863784f49b4c2a209f757ef2def
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -13,7 +13,8 @@ LEPTON PMNS BRANCHES: SHARED-HIGGS UNIVERSALITY COLLAPSE
 Atlas / axiom inputs reused:
   - Lepton single-Higgs PMNS triviality theorem
   - Neutrino Dirac two-Higgs escape theorem
-  - Charged-lepton two-Higgs canonical reduction theorem
+  - direct support-union algebra on the supplied offset sets
+    (the shared-Higgs/Yukawa identification is a separate hypothesis)
 
 Question:
   If the same effective Higgs-offset set contributes to both lepton
@@ -77,9 +78,9 @@ PART 3: TWO ACTIVE DISTINCT OFFSETS FORCE BOTH SECTORS OFF THE MONOMIAL LANE
 ========================================================================================
 PART 4: ONE-SIDED MINIMAL BRANCHES REQUIRE FAILURE OF SHARED-HIGGS UNIVERSALITY
 ========================================================================================
-  [PASS] A neutrino-side-only minimal branch is incompatible with shared one-set universality  (if offsets are shared, |S|=1 keeps both monomial and |S|=2 moves both off the monomial lane)
-  [PASS] A charged-lepton-side-only minimal branch is incompatible with shared one-set universality  (the same dichotomy applies with the sectors exchanged)
-  [PASS] Under shared-Higgs universality, the branch bit collapses to a common lepton support class  (the remaining question becomes whether universality is exact and, if so, how the shared class is parameterized)
+  [PASS] A neutrino-side-only minimal branch is incompatible with shared one-set universality  (the exhaustive shared support sets give 3-edge matchings or 6-edge unions on both sectors)
+  [PASS] A charged-lepton-side-only minimal branch is incompatible with shared one-set universality  (the same exhaustive support dichotomy applies with the sectors exchanged)
+  [PASS] Under shared-Higgs universality, the branch bit collapses to a common lepton support class  (both sectors receive the identical supplied support set)
 
   So the current neutrino-side-only versus charged-lepton-side-only
   split is only available if shared-Higgs universality fails.

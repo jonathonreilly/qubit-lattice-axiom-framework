@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_minimal_branch_nonselection.py
-runner_sha256: 03e6deda347f163f789dc0f5e6193a3a66b998f40b965d57a70822b1e1f06451
+runner_sha256: 0a95c17e3e5a03bd50bc562ece324f6e627831507c0f4633448beb013a6e54fb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -12,19 +12,20 @@ PMNS MINIMAL BRANCHES: CURRENT-ATLAS NONSELECTION
 
 Atlas / package inputs reused:
   - Neutrino Dirac two-Higgs canonical reduction
-  - Charged-lepton two-Higgs canonical reduction
+  - supplied two-offset 3x3 texture formal reduction
   - PMNS boundary packet
   - flavor publication controls and live gate notes
 
 Question:
   Does the current exact bank already select the surviving minimal
-  PMNS-producing branch, or constrain its seven canonical quantities?
+  PMNS-producing branch, or derive its physical observables?
 
 ========================================================================================
-PART 1: THE CURRENT ATLAS DOES ISOLATE THE MINIMAL BRANCHES
+PART 1: FORMAL TEXTURE AND PHYSICAL BRANCH HYPOTHESES STAY SEPARATE
 ========================================================================================
   [PASS] Atlas carries the minimal neutrino-side canonical branch
-  [PASS] Atlas carries the minimal charged-lepton-side canonical branch
+  [PASS] Atlas carries the supplied formal texture reduction without calling it a physical branch
+  [PASS] Atlas carries a separate branch-conditioned physical consumer
   [PASS] Atlas carries this note's nonselection row
 
 ========================================================================================
@@ -38,27 +39,27 @@ PART 2: THE CURRENT PACKAGE STILL HAS NO EXACT BRANCH SELECTOR
 ========================================================================================
 PART 3: THE PACKAGE TREATS BRANCH SELECTION AS UNDERDETERMINED
 ========================================================================================
-  [PASS] Atlas keeps both minimal branches and their nonselection theorem co-listed
+  [PASS] Atlas keeps the physical branch consumer separate from the formal theorem
 
   So the current exact bank has reached the honest endpoint:
-    - minimal PMNS-producing branches are isolated,
-    - their canonical sizes are known,
+    - a charged-lepton physical branch is a separate supplied hypothesis,
+    - the formal texture quotient has no physical identification,
     - but no exact selector or invariant-deriving bridge exists yet.
 
 ========================================================================================
 RESULT
 ========================================================================================
   Exact current-atlas answer:
-    - the minimal neutrino-side and charged-lepton-side branches are isolated
-    - the current atlas/package does not select among them
-    - the current exact bank does not yet derive their seven canonical quantities
+    - the neutrino-side branch and a conditional charged-lepton consumer are recorded
+    - the current atlas/package does not select among physical branch hypotheses
+    - seven formal quotient coordinates are not seven physical quantities
 
   So the remaining finish-line work is not more branch hunting.
   It is either:
     - derive a selector theorem, or
-    - derive the seven canonical quantities on a chosen branch.
+    - supply and derive physical observables on a chosen branch.
 
-PASS=8  FAIL=0
+PASS=9  FAIL=0
 
 ----- stderr -----
 

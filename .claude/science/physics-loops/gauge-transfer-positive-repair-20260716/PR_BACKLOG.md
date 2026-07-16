@@ -1,7 +1,18 @@
 # PR Backlog
 
-No PR has been opened yet. Block 01 is not review-ready until the target note,
-runner, cache, independent math check, and review-loop disposition are complete.
+## Block 01
+
+[PR 5398](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5398)
+is open from
+`physics-loop/gauge-transfer-positive-repair-block01-20260716` to `main`.
+
+Title:
+
+`[physics-loop] gauge transfer positive repair block 01`
+
+Local disposition: `pass`. Branch-local claim status:
+`candidate-retained-grade`. Independent audit remains required. Do not merge
+from this campaign worker.
 
 Intended branch:
 
@@ -11,10 +22,10 @@ Intended base:
 
 `main`
 
-Provisional title:
+The PR body quotes the audit repair target verbatim, links the loop pack and
+paired artifacts, lists verification results, states that independent audit
+remains required, and carries no audit verdict prediction.
 
-`[physics-loop] gauge-transfer-positive-repair block01: exact theorem`
+## Block 02
 
-The final PR body must quote the audit repair target verbatim, link the loop
-pack and paired artifacts, list verification results, state that independent
-audit remains required, and carry no audit verdict prediction.
+Pending. The next candidate is opportunity 2 in `OPPORTUNITY_QUEUE.md`.

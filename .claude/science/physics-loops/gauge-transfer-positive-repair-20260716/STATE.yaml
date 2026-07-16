@@ -53,8 +53,11 @@ no_go_routes:
 trace_class: direct_blocker_closure
 reachability_to_target: closes
 review_disposition: pass
-pr_status: pending
-last_checkpoint_at_utc: "2026-07-16T12:41:13Z"
+pr_status: open
+pr_number: 5398
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5398
+block_status: review_pr_open
+last_checkpoint_at_utc: "2026-07-16T12:43:22Z"
 origin_main_seen_at_checkpoint: abd65e73c5dca383da777d646e1663b42dfabbe9
 rebase_required_before_pr: false
 pipeline_validation:
@@ -64,5 +67,5 @@ pipeline_validation:
   target_queue_rank: 34
   generated_outputs_removed: true
 deep_block_status: "not yet consumed; the primary residual closed and passed review before a 120m interval elapsed; use the next related block for the campaign deep block if this turn does not continue"
-next_exact_action: "Run vocab_lint --fix and final checks, remove the branch-local supervisor lock files, commit, push, open the block-01 review PR, then checkpoint the PR and pivot opportunity 2 if campaign execution continues."
+next_exact_action: "Do not merge PR 5398. If campaign execution continues, create physics-loop/gauge-transfer-positive-repair-block02-20260716 from current origin/main, acquire a fresh block-local lock, and ground opportunity 2: the axiom-first Wilson temporal-gauge bridge comparator repair."
 stop_condition: "Runtime exhaustion, a clean reviewed PR for the coherent repair block followed by queue pivot, or documented global opportunity/value-gate exhaustion."

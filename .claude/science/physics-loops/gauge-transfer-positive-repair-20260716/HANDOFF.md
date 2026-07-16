@@ -16,13 +16,19 @@ the changed target in the generated unaudited queue at rank `34`; every
 generated audit/ledger/queue/effective-status output was then restored or
 deleted. The branch is rebased onto `abd65e73c5...`.
 
-Current next action:
+Block 01 is open for review as
+[PR 5398](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5398).
+It is not merged and must not be represented as audit-ratified.
 
-1. run final vocabulary/cache/sibling checks;
-2. remove the untracked branch-local supervisor lock files;
-3. commit, push, and open the block-01 review PR without merging it;
-4. record the PR in this pack and, if the campaign continues in the same turn,
-   pivot to opportunity 2 from `OPPORTUNITY_QUEUE.md`.
+Current next action if the campaign continues:
+
+1. leave PR 5398 for the supervising science-fix/review process;
+2. create
+   `physics-loop/gauge-transfer-positive-repair-block02-20260716`
+   from current `origin/main`;
+3. acquire a new block-local supervisor lock;
+4. ground opportunity 2 from `OPPORTUNITY_QUEUE.md`, recovering its exact
+   current audit blocker before editing.
 
 No 120-minute deep block has been claimed: this first residual closed and
 passed review before that interval elapsed. If this turn ends after opening the
@@ -32,7 +38,7 @@ If this worker must be resumed immediately, run:
 
 ```bash
 cd /private/tmp/physics-loop-gauge-transfer-positive-repair-20260716
-codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 5h35m --target best-honest-status"
+codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 5h33m --target best-honest-status"
 ```
 
 Then read `STATE.yaml` and this file before any broad search. Do not run

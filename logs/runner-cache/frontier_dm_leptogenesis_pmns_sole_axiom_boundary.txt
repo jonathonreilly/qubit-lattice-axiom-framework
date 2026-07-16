@@ -1,59 +1,75 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py
-runner_sha256: 507d96edfd6f17dd5275c0ffcd6abb3772a943454074da36bb2abd20b98d13b0
+runner_sha256: 7fe0960159a4a41085aa3357e45b795995f135960551e8c264148aaaba6819d9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.54
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================================
-DM LEPTOGENESIS PMNS SOLE-AXIOM BOUNDARY
+DM LEPTOGENESIS PMNS SOLE-AXIOM BOUNDARY: FINITE-SAMPLE RESCOPE
 ========================================================================================
 
-Framework convention:
-  "axiom" means only Cl(3) on Z^3.
-
-Question:
-  Does the sole axiom already fix a unique PMNS-assisted flavored-DM
-  repair value once the microscopic route has been reduced to the active
-  D-level last mile?
+Actual current-surface claim:
+  exact nonuniqueness of a mean-seed map on two supplied samples;
+  conditional numerical-map separation under one supplied construction.
+  No axiom-derived active family, transport law, selector, eta target,
+  carrier identification, or physical eta readout is claimed.
 
 ========================================================================================
-PART 1: THE CURRENT SOLE-AXIOM-NATIVE DATA FIX THE SEED PAIR BUT NOT THE OFF-SEED SOURCE
+PART 0: CURRENT-SURFACE AND IMPORT FIREWALLS
 ========================================================================================
-  [PASS] The exact native seed pair can agree while the off-seed microscopic source differs  ((xbar,ybar)=(0.973333,0.410000))
-  [PASS] So the current sole-axiom-native data do not by themselves determine a unique off-seed active D-level point  (the unresolved object is (xi1,xi2,eta1,eta2,delta))
+  [PASS (B)] The current framework memo names the four-axiom surface explicitly  (axioms=['Admissibility', 'Lattice', 'Qubit', 'Record'])
+  [PASS (B)] The current framework memo withholds source/action, dynamics, and selector content
+  [PASS (B)] The approved premise registry contains no PMNS, leptogenesis, source, or selector premise  (registered_ids=['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive'])
+  [PASS (B)] The repaired runner imports no project-local physics module  (imports=['__future__', 'argparse', 'ast', 'dataclasses', 'fractions', 'itertools', 'json', 'numpy', 'pathlib', 'sys'])
+  [PASS (B)] No load-bearing check uses a literal True conclusion
+  [PASS (B)] No former physical eta target or canonical eta constant is referenced
 
 ========================================================================================
-PART 2: DIFFERENT OFF-SEED SOURCES GIVE DIFFERENT PMNS-ASSISTED ETA VALUES
+PART 1: EXACT FINITE SUPPLIED-SAMPLE SEED-MAP NONUNIQUENESS
 ========================================================================================
-  [PASS] Two exact active D-level points on the same native seed surface can select different transport columns  (indices=(1,0))
-  [PASS] They also give different PMNS-assisted eta values on the same exact DM branch  (etas=(0.789720167247,0.773565941623))
-
-  source A eta/eta_obs = [0.723965 0.78972  0.701302]
-  source B eta/eta_obs = [0.773566 0.713467 0.719833]
-
-========================================================================================
-PART 3: ONCE THE OFF-SEED SOURCE IS GIVEN THE REMAINING PATH IS ALGORITHMIC
-========================================================================================
-  [PASS] Supplying the off-seed 5-real source reconstructs the same near-closing N_e value  (etas=[0.820756 0.989513 0.920617], best column=1)
-  [PASS] So the sole-axiom PMNS-assisted DM route is blocked only on that off-seed microscopic source law  (everything downstream of the source law is already closed)
+  [PASS (A)] Both supplied samples are positive three-coordinate tuples
+  [PASS (A)] The two supplied samples have exactly equal rational seed pairs  (seed=(Fraction(73, 75), Fraction(41, 100)))
+  [PASS (A)] Their exact five-coordinate seed-relative sources are unequal  (source_A=(Fraction(53, 300), Fraction(-23, 150), Fraction(0, 1), Fraction(-13, 100), Fraction(63, 100)); source_B=(Fraction(23, 300), Fraction(-1, 300), Fraction(19, 100), Fraction(-8, 25), Fraction(63, 100)))
+  [PASS (A)] Seed plus source reconstructs both supplied samples exactly
+  [PASS (A)] The witness pair is not a simultaneous coordinate permutation
+  [PASS (A)] The finite supplied-sample nonuniqueness predicate holds
 
 ========================================================================================
-PART 4: BOTTOM LINE
+PART 2: HOSTILE CONTROLS FOR THE ALGEBRAIC WITNESS
 ========================================================================================
-  [PASS] The sole axiom fixes the PMNS-assisted DM carrier and seed surface but not a unique near-closing eta value  (distinct off-seed sources remain possible on the same native seed data)
-  [PASS] The exact remaining sole-axiom boundary on this flavored repair route is the active 5-real microscopic source law  ((xi1,xi2,eta1,eta2,delta))
+  [PASS (A)] Wrong-seed control is rejected  (seeds=((Fraction(73, 75), Fraction(41, 100)),(Fraction(293, 300), Fraction(41, 100))))
+  [PASS (A)] Equal-source duplicate control is rejected
+  [PASS (A)] Same-source but shifted-seed control is rejected
+  [PASS (A)] Pure simultaneous-permutation control is rejected as a relabeling
+
+========================================================================================
+PART 3: CONDITIONAL SUPPLIED NUMERICAL-MAP LEMMA
+========================================================================================
+  [PASS (D)] The supplied spectral diagnostic is finite, ordered, and normalized  (signature_A=[0.15596488 0.23124027 0.61279486])
+  [PASS (D)] The two supplied equal-seed samples have different spectral diagnostics under the supplied map  (distance=0.056569657200)
+  [PASS (D)] Equal-source duplicate gives the same downstream diagnostic
+  [PASS (D)] Basis-permutation control leaves the diagnostic invariant
+  [PASS (D)] Left/right rephasing control leaves the diagnostic invariant
+  [PASS (D)] The conditional supplied-map nonuniqueness predicate holds  (conditional on the displayed carrier construction only)
+
+========================================================================================
+PART 4: EXECUTABLE SCOPE CERTIFICATE
+========================================================================================
+  [PASS (B)] The source note states the finite-sample and historical/current axiom scope
+  [PASS (B)] The source note explicitly withholds every former physical downstream bridge
 
 ========================================================================================
 RESULT
 ========================================================================================
-  Exact boundary answer:
-    - no, not from the sole axiom alone on the current branch
-    - the remaining sole-axiom boundary is only the active 5-real
-      off-seed microscopic source law
+  Disposition:
+    - support-only demotion from a sole-axiom boundary claim
+    - exact finite supplied-sample seed-map nonuniqueness
+    - conditional supplied numerical-map lemma
+    - active-family admissibility and every physical eta bridge remain open
 
-PASS=8  FAIL=0
+PASS=24 FAIL=0
 
 ----- stderr -----
 

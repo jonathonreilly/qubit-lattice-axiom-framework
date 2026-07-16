@@ -355,9 +355,9 @@ audit-lane-decided independently):
 - [`BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md`](BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md)
   — PR #1419
 
-Retained authorities shared across the campaign (ledger-verified
-2026-05-17 against `docs/audit/data/audit_ledger.json`
-`effective_status`):
+Dependencies shared across the campaign. The status labels below are dated
+2026-05-17 ledger snapshots; the oriented-cycle coordinate lemma's mutable
+audit status is intentionally not pinned here:
 
 - [`DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md`](DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md)
   — `retained_bounded / bounded_theorem`. Chamber-margin certificate at

@@ -87,9 +87,8 @@ narrow theorem below.
   forward-cycle coordinates are the diagonal of `A C^dagger` in the displayed
   cycle basis. Its role here is limited to algebra on the separately supplied
   chamber chart `H(m, delta, q_+) = H_base + m T_m + delta T_delta + q_+ T_q`
-  and does not derive a physical `hw=1` carrier or readout
-  on the active block, so that the chamber chart used in the prediction
-  is the same chart the audit lane already retains.
+  and does not derive a physical `hw=1` carrier or Record-compatible readout,
+  identify that chart as physical, or select its parameters.
 - **(X3) NuFit 5.3 NO 3-sigma box on (s_12^2, s_13^2, s_23^2).**
   This is a NAMED EXTERNAL ADMISSION, not a derived target: the
   experimental rectangle

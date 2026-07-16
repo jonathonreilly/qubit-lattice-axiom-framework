@@ -20,9 +20,10 @@ That distinction is the useful map:
   or open gates;
 - the repeated appearance of `2/3` is not by itself a single unified object.
 
-## Retained-grade form support
+## Form-support inputs
 
-The following current-main rows are retained-grade inputs to this synthesis:
+The following source rows are inputs to this synthesis. Audit-derived retention
+is a separate runner diagnostic and is not pinned by this note:
 
 - [KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md):
   charged-lepton Koide on a C_3 circulant character surface.

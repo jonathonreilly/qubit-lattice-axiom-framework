@@ -10,6 +10,8 @@
 | matrix-coefficient features | `chi_lambda(UV^dag)=sum_ab D_ab(U) conj D_ab(V)` | closes |
 | multi-link composition | tensor/Schur product of link kernels | closes |
 | integrated feature map | absorb `exp(B_+)F_i` and obtain `W diag(kappa) W^dagger` | closes |
+| arbitrary complex-observable stress test | two-link `SU(2)`-`SU(5)` restrictions with matrix-entry-compatible functions and nonconstant half weights | closes at relative error `1.53e-15` |
+| repository terminology audit | compare local pure-gauge `A_+^(2)` with the mixed gauge--fermion parent usage | closes after explicit exclusion |
 | exact `SU(3)` recurrence | nonnegative multiplicities and `6^n` dimension sum | passes |
 | wrong-sign falsifier | `alpha=-0.1` finite restriction has negative eigenvalue | passes |
 

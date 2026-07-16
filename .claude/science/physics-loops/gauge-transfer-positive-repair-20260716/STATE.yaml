@@ -16,7 +16,7 @@ deep_block: "120m"
 deep_block_status: in_progress
 deep_block_started_at_utc: "2026-07-16T12:48:12Z"
 deep_block_target: "self-contained SU(N) Wilson-plane character positivity and integrated bounded-observable Gram"
-cycle_count: 3
+cycle_count: 4
 block_count: 2
 current_branch: physics-loop/gauge-transfer-positive-repair-block02-20260716
 base_ref: origin/main
@@ -73,6 +73,11 @@ independent_check:
   method: "real Gram H_ij=ReTr(U_i U_j^dag), Schur-power exponential"
   groups: "SU(2), SU(3), SU(4), SU(5)"
   max_reconstruction_error: 8.882e-16
+deep_pressure:
+  - "arbitrary complex gauge-link observables with nonconstant half weights on two-link SU(2)-SU(5) restrictions"
+  - "relative spectral-feature reconstruction error at most 1.53e-15; beta=0 negative eigenvalues only roundoff-scale"
+  - "repository-wide A_+^(2) terminology audited: this theorem covers gauge-link functions only, not mixed gauge--fermion generators"
+  - "fix-only mathematics, runner-consistency, and governance rereviews passed after the scope clarification"
 pipeline_validation:
   status: pass
   strict_lint_errors: 0
@@ -82,6 +87,6 @@ pipeline_validation:
   target_generated_deps: []
   target_transitive_descendants: 784
   generated_outputs_removed: true
-last_checkpoint_at_utc: "2026-07-16T14:05:18Z"
-next_exact_action: "Do not merge PR 5405. Continue the block-02 deep attack through at least 2026-07-16T14:48:12Z, amend the PR if a real issue appears, then pivot to opportunity 3."
+last_checkpoint_at_utc: "2026-07-16T14:20:12Z"
+next_exact_action: "Do not merge PR 5405. Continue the block-02 deep attack through at least 2026-07-16T14:48:12Z, then mark the 120-minute block complete, checkpoint the PR, and pivot to opportunity 3."
 stop_condition: "Runtime exhaustion, reviewed PR plus honest pivot, or documented opportunity exhaustion."

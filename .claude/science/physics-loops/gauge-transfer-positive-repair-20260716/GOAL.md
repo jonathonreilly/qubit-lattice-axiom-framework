@@ -31,7 +31,9 @@ Block 02 proves self-containedly:
    every `N>=2` and `beta>=0`;
 3. an independent real-Gram/Schur-power proof reaches the same positive type;
 4. the finite product-link plane kernel and half weights give the exact
-   integrated Gram for bounded plus-slice observables, including `A_+^(2)`;
+   integrated Gram for bounded gauge-link plus-slice observables, including
+   the source-local pure-gauge `A_+^(2)` surface but not the mixed
+   gauge--fermion parent algebra;
 5. the result remains a finite open-slab pure-gauge theorem with no fermion,
    multislice, transfer-reconstruction, or continuum claim.
 

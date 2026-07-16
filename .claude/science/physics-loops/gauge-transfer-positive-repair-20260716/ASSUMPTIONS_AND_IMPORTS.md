@@ -15,7 +15,8 @@ review history.
 | character/dimension bound | uniform convergence | self-contained matrix bound | yes | displayed |
 | Schur products and real Gram matrices | independent positive-type proof | elementary linear algebra | yes | displayed |
 | bounded real plus-slice Wilson exponent `B_+` | half weight | finite-volume hypothesis | yes | `B_+=0` on exact runner's `1+1D` carrier |
-| bounded measurable plus-slice observables | integrated theorem surface | theorem hypothesis | yes | includes `A_+^(2)` |
+| bounded measurable functions of plus-slice gauge links | integrated theorem surface | theorem hypothesis | yes | includes character, plaquette, and matrix-entry diagnostics on the local pure-gauge `A_+^(2)` surface |
+| mixed gauge--fermion `A_+^(2)` parent algebra | separate interacting surface | excluded import | no | not proved or consumed |
 | strict positivity of every coefficient | stronger statement | forbidden overclaim | no | not claimed |
 | sampled `SU(2)`/`SU(3)` Gram | diagnostic support | runner-only | no | labeled numerical support/control |
 | external Wilson reflection-positivity theorem | literature import | forbidden unless necessary | no | not used |

@@ -132,3 +132,19 @@ disposable compatibility pipeline and strict lint were rerun; the target
 again remained `bounded_theorem`, `unaudited`, dependency-free, critical,
 ready, and at 784 descendants. Every regenerated authority/status output was
 restored or deleted.
+
+The final observable-scope pressure pass compared this note's `A_+^(2)` usage
+with the repository parent theorem, where the same symbol includes staggered
+fermion fields. The repaired note now defines only a pure-gauge gauge-link
+observable surface, explicitly excludes the mixed gauge--fermion algebra, and
+uses "gauge-link observables" rather than "characters" because the `SU(2)`
+diagnostic basis also contains matrix coefficients. Fix-only results:
+
+- mathematics: `PASS` after the character/matrix-entry terminology fix;
+- runner/source consistency: `PASS`; executable and cache remain unchanged;
+- governance/import/scope: `PASS`.
+
+An independent complex-observable factorization stress test on two-link
+`SU(2)` through `SU(5)` restrictions, with nonconstant half weights, had
+maximum relative spectral-feature reconstruction error `1.53e-15`. At
+`alpha=0`, the only negative kernel/Gram eigenvalues were roundoff-scale.

@@ -1,165 +1,117 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py
-runner_sha256: 4840fdfc9a8c676e7a32e877f28fbd7e4b27c2e5bb42a7fe78313e3867cb4975
+runner_sha256: 61766488b2ab92d10ffc1c75f69f22f85354051802da4b569988380546faa89c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 1.23
 status: ok
 ----- stdout -----
-========================================================================================
-Audit companion (exact-symbolic) for
+================================================================================================
+Exact abstract-algebra certificate for
 CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10
-Goal: sympy verification of Cl(3,0) anticommutation, omega^2 = -I,
-      central pseudoscalar centrality, and chirality splitting
-========================================================================================
+Arithmetic: exact SymPy rational/Gaussian-rational; no floating point
+================================================================================================
 
-----------------------------------------------------------------------------------------
-Part 1: Pauli matrices and anticommutation (U1)
-----------------------------------------------------------------------------------------
-  [PASS (A)] (U1) anticommutation: {sigma_1, sigma_1} == 2 I
-  [PASS (A)] (U1) anticommutation: {sigma_1, sigma_2} == 0 I
-  [PASS (A)] (U1) anticommutation: {sigma_1, sigma_3} == 0 I
-  [PASS (A)] (U1) anticommutation: {sigma_2, sigma_1} == 0 I
-  [PASS (A)] (U1) anticommutation: {sigma_2, sigma_2} == 2 I
-  [PASS (A)] (U1) anticommutation: {sigma_2, sigma_3} == 0 I
-  [PASS (A)] (U1) anticommutation: {sigma_3, sigma_1} == 0 I
-  [PASS (A)] (U1) anticommutation: {sigma_3, sigma_2} == 0 I
-  [PASS (A)] (U1) anticommutation: {sigma_3, sigma_3} == 2 I
+------------------------------------------------------------------------------------------------
+Part A: eight-dimensional algebra from the defining relations
+------------------------------------------------------------------------------------------------
+Exact multiplication table (rows multiply columns):
+               1      g1      g2      g3     g12     g13     g23   omega
+      1       1      g1      g2      g3     g12     g13     g23   omega
+     g1      g1       1     g12     g13      g2      g3   omega     g23
+     g2      g2    -g12       1     g23     -g1  -omega      g3    -g13
+     g3      g3    -g13    -g23       1   omega     -g1     -g2     g12
+    g12     g12     -g2      g1   omega      -1    -g23     g13     -g3
+    g13     g13     -g3  -omega      g1     g23      -1    -g12      g2
+    g23     g23   omega     -g3      g2    -g13     g12      -1     -g1
+  omega   omega     g23    -g13     g12     -g3      g2     -g1      -1
+  [PASS (A)] A1 complete 8^3 basis associativity table  (512/512 products)
+  [PASS (A)] A2 all defining Clifford relations hold in the abstract table  (9/9 relations)
+  [PASS (A)] A3 ordered generator monomials give the complete canonical basis  (rank=8)
+  [PASS (A)] A4 joint Pauli map has full complex rank 8  (rank=8, det=-256)
+  [PASS (A)] A5 rho_+ respects all 64 abstract basis products
+  [PASS (A)] A6 rho_- respects all 64 abstract basis products
 
-----------------------------------------------------------------------------------------
-Part 2: positive-chirality irrep rho_+ and central pseudoscalar
-----------------------------------------------------------------------------------------
-  [PASS (A)] (rho_+): omega = sigma_1 sigma_2 sigma_3 == +i I  (omega = [[I, 0], [0, I]])
-  [PASS (A)] (P1 rho_+): omega^2 == -I
-  [PASS (A)] (P2 rho_+): omega sigma_1 == sigma_1 omega (centrality)
-  [PASS (A)] (P2 rho_+): omega sigma_2 == sigma_2 omega (centrality)
-  [PASS (A)] (P2 rho_+): omega sigma_3 == sigma_3 omega (centrality)
+------------------------------------------------------------------------------------------------
+Part B: ordered volume element and central idempotents
+------------------------------------------------------------------------------------------------
+  [PASS (A)] B1 omega is the ordered product gamma_1 gamma_2 gamma_3
+  [PASS (A)] B2 omega^2 = -1 in the abstract algebra
+  [PASS (A)] B3 omega commutes with the complete eight-element basis  (8/8 commutators)
+  [PASS (A)] B4 ordered sign convention gives rho_+(omega)=+iI and rho_-(omega)=-iI
+  [PASS (A)] B5 e_+=(1-i omega)/2 and e_-=(1+i omega)/2 are central orthogonal idempotents
+  [PASS (A)] B6 idempotent labels match omega e_+=+i e_+ and omega e_-=-i e_-
 
-----------------------------------------------------------------------------------------
-Part 3: negative-chirality irrep rho_- via parity conjugation
-----------------------------------------------------------------------------------------
-  [PASS (A)] (U1 rho_-): {-sigma_1, -sigma_1} == 2 I
-  [PASS (A)] (U1 rho_-): {-sigma_1, -sigma_2} == 0 I
-  [PASS (A)] (U1 rho_-): {-sigma_1, -sigma_3} == 0 I
-  [PASS (A)] (U1 rho_-): {-sigma_2, -sigma_1} == 0 I
-  [PASS (A)] (U1 rho_-): {-sigma_2, -sigma_2} == 2 I
-  [PASS (A)] (U1 rho_-): {-sigma_2, -sigma_3} == 0 I
-  [PASS (A)] (U1 rho_-): {-sigma_3, -sigma_1} == 0 I
-  [PASS (A)] (U1 rho_-): {-sigma_3, -sigma_2} == 0 I
-  [PASS (A)] (U1 rho_-): {-sigma_3, -sigma_3} == 2 I
-  [PASS (A)] (rho_-): omega = (-sigma_1)(-sigma_2)(-sigma_3) == -i I  (omega = [[-I, 0], [0, -I]])
-  [PASS (A)] (P1 rho_-): omega^2 == -I
-  [PASS (A)] (P2 rho_-): omega (-sigma_1) == (-sigma_1) omega (centrality)
-  [PASS (A)] (P2 rho_-): omega (-sigma_2) == (-sigma_2) omega (centrality)
-  [PASS (A)] (P2 rho_-): omega (-sigma_3) == (-sigma_3) omega (centrality)
+------------------------------------------------------------------------------------------------
+Part C: complementary four-dimensional two-sided ideals
+------------------------------------------------------------------------------------------------
+  [PASS (A)] C1 A e_+ is four-dimensional with basis {e_+,g1e_+,g2e_+,g3e_+}  (chosen rank=4, ideal rank=4)
+  [PASS (A)] C2 A e_- is four-dimensional with basis {e_-,g1e_-,g2e_-,g3e_-}  (chosen rank=4, ideal rank=4)
+  [PASS (A)] C3 bivectors and omega reduce to the four stated ideal basis vectors  (8/8 reductions)
+  [PASS (A)] C4 exhaustive left/right closure of both ideals  (128/128 products)
+  [PASS (A)] C5 A e_+ and A e_- annihilate each other and form an 8-dimensional direct sum  (cross products=32/32, combined rank=8)
 
-----------------------------------------------------------------------------------------
-Part 4: rho_+ and rho_- are inequivalent (different omega eigenvalues)
-----------------------------------------------------------------------------------------
-  [PASS (A)] (U3) rho_+ and rho_- have distinct central eigenvalues +i vs -i  (+i I != -i I (the chirality summands are non-isomorphic))
+------------------------------------------------------------------------------------------------
+Part D: explicit ideal isomorphisms to M_2(C)
+------------------------------------------------------------------------------------------------
+  [PASS (A)] D1+ Phi_+(e_+,g1e_+,g2e_+,g3e_+) = (I,+sigma1,+sigma2,+sigma3)
+  [PASS (A)] D2+ Phi_+ is surjective onto the four-dimensional M_2(C)  (image rank=4)
+  [PASS (A)] D3+ Phi_+ has zero kernel on its four-dimensional domain  (domain rank=4, kernel dim=0)
+  [PASS (A)] D4+ Phi_+ preserves all 16 products of the ideal basis
+  [PASS (A)] D5+ Phi_+ sends the ideal unit e_+ to I_2
+  [PASS (A)] D1- Phi_-(e_-,g1e_-,g2e_-,g3e_-) = (I,-sigma1,-sigma2,-sigma3)
+  [PASS (A)] D2- Phi_- is surjective onto the four-dimensional M_2(C)  (image rank=4)
+  [PASS (A)] D3- Phi_- has zero kernel on its four-dimensional domain  (domain rank=4, kernel dim=0)
+  [PASS (A)] D4- Phi_- preserves all 16 products of the ideal basis
+  [PASS (A)] D5- Phi_- sends the ideal unit e_- to I_2
+  [PASS (A)] D6 all matrix-unit identities E_ab E_cd = delta_bc E_ad hold  (16/16 products)
+  [PASS (A)] D7 any nonzero two-sided ideal of M_2(C) contains every matrix unit  (16/16 coefficient-isolation identities)
 
-----------------------------------------------------------------------------------------
-Part 5: central idempotents e_± splitting on the algebra
-----------------------------------------------------------------------------------------
-  [PASS (A)] (E in rho_+): e_+ == I (positive-chirality summand projects to identity)
-  [PASS (A)] (E in rho_+): e_- == 0 (negative-chirality summand projects to zero)
-  [PASS (A)] (E in rho_-): e_+ == 0
-  [PASS (A)] (E in rho_-): e_- == I
-  [PASS (A)] (E rho_+): e_+ + e_- == I
-  [PASS (A)] (E rho_+): e_+ e_- == 0
-  [PASS (A)] (E rho_+): e_+^2 == e_+
-  [PASS (A)] (E rho_+): e_-^2 == e_-
-  [PASS (A)] (E rho_-): e_+ + e_- == I
-  [PASS (A)] (E rho_-): e_+ e_- == 0
-  [PASS (A)] (E rho_-): e_+^2 == e_+
-  [PASS (A)] (E rho_-): e_-^2 == e_-
+------------------------------------------------------------------------------------------------
+Part E: representation classification and faithfulness boundary
+------------------------------------------------------------------------------------------------
+  [PASS (A)] E1+ complexified rho_+ has rank 4 and kernel dimension 4  (rank=4, kernel dim=4)
+  [PASS (A)] E2+ restriction of rho_+ to real Cl(3,0) is faithful  (real rank=8)
+  [PASS (A)] E1- complexified rho_- has rank 4 and kernel dimension 4  (rank=4, kernel dim=4)
+  [PASS (A)] E2- restriction of rho_- to real Cl(3,0) is faithful  (real rank=8)
+  [PASS (A)] E3 an irreducible unital module has exactly one active central summand  (solutions=[(0, 1), (1, 0)])
+  [PASS (A)] E4 the commutant of the natural M_2(C) module is exactly C I_2  (commutant dimension=1)
+  [PASS (A)] E5 matrix units generate C^2 from every nonzero coordinate direction  (4/4 actions)
+  [PASS (A)] E6 rho_+ and rho_- are inequivalent because omega has eigenvalues +i and -i
 
-----------------------------------------------------------------------------------------
-Part 6: corollary (C1) tensor-product dim formula = 2^|Lambda|
-----------------------------------------------------------------------------------------
-  [PASS (A)] (C1) |Lambda| = 1: dim_C H_x = 2  (dim = 2)
-  [PASS (A)] (C1) |Lambda| = 2: dim_C ⊗ H_x = 2^2 = 4  (dim = 4)
-  [PASS (A)] (C1) |Lambda| = 3: dim_C ⊗ H_x = 2^3 = 8  (dim = 8)
-  [PASS (A)] (C1) |Lambda| = 4: dim_C ⊗ H_x = 2^4 = 16  (dim = 16)
+------------------------------------------------------------------------------------------------
+Part F: conditional unitary refinement for *-representations
+------------------------------------------------------------------------------------------------
+  [PASS (A)] F1 scaled-unitary intertwiner preserves Hermitian generators
+  [PASS (A)] F2 its Gram matrix is the positive Schur scalar 9 I
+  [PASS (A)] F3 nonunitary similarity still preserves all Clifford relations  (9/9 relations)
+  [PASS (A)] F4 nonunitary similarity leaves the *-representation class  (T^dagger T=[[4, 0], [0, 1]])
 
-----------------------------------------------------------------------------------------
-Part 7: counterfactual probe — dim=1 representation cannot satisfy (Cl3)
-----------------------------------------------------------------------------------------
-  [PASS (A)] (cf) dim=1 with c_1 = 1, c_2 = 1: anticommutator = 2 != 0  (dim=1 representations cannot satisfy off-diagonal (Cl3))
-  [PASS (A)] (cf) dim=1 with c_1 = 1, c_2 = -1: anticommutator = -2 != 0  (dim=1 representations cannot satisfy off-diagonal (Cl3))
-  [PASS (A)] (cf) dim=1 with c_1 = -1, c_2 = 1: anticommutator = -2 != 0  (dim=1 representations cannot satisfy off-diagonal (Cl3))
-  [PASS (A)] (cf) dim=1 with c_1 = -1, c_2 = -1: anticommutator = 2 != 0  (dim=1 representations cannot satisfy off-diagonal (Cl3))
+------------------------------------------------------------------------------------------------
+Part H: hostile controls
+------------------------------------------------------------------------------------------------
+  [PASS (A)] H reject hostile fixture: wrong-volume-sign
+  [PASS (A)] H reject hostile fixture: swapped-idempotents
+  [PASS (A)] H reject hostile fixture: malformed-idempotents
+  [PASS (A)] H reject hostile fixture: incomplete-basis
+  [PASS (A)] H reject hostile fixture: wrong-clifford-relation
+  [PASS (A)] H reject hostile fixture: non-homomorphic-map
 
-----------------------------------------------------------------------------------------
-Part 8: explicit omega^2 = -I proof step expansion
-----------------------------------------------------------------------------------------
-  [PASS (A)] omega^2 step b -> c: swap (g_3 g_1) -> -(g_1 g_3)
-  [PASS (A)] omega^2 step c -> d: swap (g_2 g_1) -> -(g_1 g_2)
-  [PASS (A)] omega^2 step d -> e: cancel signs and write g_1^2 = I
-  [PASS (A)] omega^2 step e -> f: g_1^2 = I, then swap (g_3 g_2) -> -(g_2 g_3)
-  [PASS (A)] omega^2 step f -> g: collect signs
-  [PASS (A)] omega^2 final: -g_2^2 g_3^2 = -I
-  [PASS (A)] omega^2 overall: full expansion equals -I
-
-----------------------------------------------------------------------------------------
-Part 9: *-representation to unitary-equivalence upgrade (U3b)
-----------------------------------------------------------------------------------------
-  [PASS (A)] (9a Hadamard) conjugate of sigma_1 is Hermitian
-  [PASS (A)] (9a Hadamard) conjugate of sigma_2 is Hermitian
-  [PASS (A)] (9a Hadamard) conjugate of sigma_3 is Hermitian
-  [PASS (A)] (9a Hadamard) S^dagger S == I  (unitary intertwiner (c = 1))
-  [PASS (A)] (9a SO(2) rotation) conjugate of sigma_1 is Hermitian
-  [PASS (A)] (9a SO(2) rotation) conjugate of sigma_2 is Hermitian
-  [PASS (A)] (9a SO(2) rotation) conjugate of sigma_3 is Hermitian
-  [PASS (A)] (9a SO(2) rotation) S^dagger S == I  (unitary intertwiner (c = 1))
-  [PASS (A)] (9b 3*Hadamard) conjugate of sigma_1 is Hermitian
-  [PASS (A)] (9b 3*Hadamard) conjugate of sigma_2 is Hermitian
-  [PASS (A)] (9b 3*Hadamard) conjugate of sigma_3 is Hermitian
-  [PASS (A)] (9b 3*Hadamard) S^dagger S == 9 I  (positive scalar multiple of I)
-  [PASS (A)] (9b 3*Hadamard) S^dagger S commutes with sigma_1
-  [PASS (A)] (9b 3*Hadamard) S^dagger S commutes with sigma_2
-  [PASS (A)] (9b 3*Hadamard) S^dagger S commutes with sigma_3
-  [PASS (A)] (9b 3*Hadamard) Schur-scalar identity  (S^dagger S == (trace(S^dagger S)/2) I)
-  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (1, 1)  (valid complex-linear equivalence)
-  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (1, 2)  (valid complex-linear equivalence)
-  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (1, 3)  (valid complex-linear equivalence)
-  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (2, 1)  (valid complex-linear equivalence)
-  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (2, 2)  (valid complex-linear equivalence)
-  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (2, 3)  (valid complex-linear equivalence)
-  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (3, 1)  (valid complex-linear equivalence)
-  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (3, 2)  (valid complex-linear equivalence)
-  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (3, 3)  (valid complex-linear equivalence)
-  [PASS (A)] (9c diag(2,1)) at least one conjugated Pauli image is non-Hermitian  (non-Hermitian image indices = [1, 2])
-  [PASS (A)] (9c diag(2,1)) S^dagger S == diag(4,1) is non-scalar  (S^dagger S = [[4, 0], [0, 1]])
-  [PASS (A)] (9c diag(2,1)) S^dagger S does not commute with sigma_1  (Hermitian-image hypothesis is load-bearing)
-  [PASS (A)] (9c shear) conjugated Clifford relation (1, 1)  (valid complex-linear equivalence)
-  [PASS (A)] (9c shear) conjugated Clifford relation (1, 2)  (valid complex-linear equivalence)
-  [PASS (A)] (9c shear) conjugated Clifford relation (1, 3)  (valid complex-linear equivalence)
-  [PASS (A)] (9c shear) conjugated Clifford relation (2, 1)  (valid complex-linear equivalence)
-  [PASS (A)] (9c shear) conjugated Clifford relation (2, 2)  (valid complex-linear equivalence)
-  [PASS (A)] (9c shear) conjugated Clifford relation (2, 3)  (valid complex-linear equivalence)
-  [PASS (A)] (9c shear) conjugated Clifford relation (3, 1)  (valid complex-linear equivalence)
-  [PASS (A)] (9c shear) conjugated Clifford relation (3, 2)  (valid complex-linear equivalence)
-  [PASS (A)] (9c shear) conjugated Clifford relation (3, 3)  (valid complex-linear equivalence)
-  [PASS (A)] (9c shear) at least one conjugated Pauli image is non-Hermitian  (non-Hermitian image indices = [1, 2, 3])
-
-----------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
 Summary
-----------------------------------------------------------------------------------------
-  Verified at exact sympy precision:
-    (U1) Pauli anticommutation {sigma_i, sigma_j} = 2 delta_{ij} I for 3x3 pairs
-    (P1) omega^2 = -I in both chirality summands
-    (P2) omega central: omega gamma_i = gamma_i omega in both summands
-    (rho_-) parity-conjugate irrep also satisfies (Cl3), (P1), (P2)
-    Central idempotents e_+ + e_- = I, e_+ e_- = 0, e_+^2 = e_+, e_-^2 = e_-
-    (U3) rho_+ != rho_- (distinct omega eigenvalues +i and -i)
-    (C1) tensor-product dim formula 2^|Lambda| for |Lambda| in {1,2,3,4}
-    Counterfactual: dim=1 representations cannot satisfy (Cl3)
-    omega^2 = -I step-by-step expansion matches proof in note
+------------------------------------------------------------------------------------------------
+  Certified from the defining relations:
+    A_C has the exact basis {1,g1,g2,g3,g12,g13,g23,omega}.
+    omega=g1 g2 g3 is central, omega^2=-1, and fixes the idempotent labels.
+    A_C=A_C e_+ direct-sum A_C e_-, with both ideals four-dimensional.
+    Phi_+: A_C e_+ -> M_2(C) and Phi_-: A_C e_- -> M_2(C) are isomorphisms.
+    Therefore A_C has exactly two simple summands and two irreducible module classes.
+    The two complexified irreps kill opposite ideals; their real Cl(3,0)
+    restrictions are faithful. No lattice carrier or physical selection is inferred.
 
-========================================================================================
-TOTAL: PASS=94, FAIL=0
-========================================================================================
+================================================================================================
+TOTAL: PASS=47, FAIL=0
+================================================================================================
 
 ----- stderr -----
 

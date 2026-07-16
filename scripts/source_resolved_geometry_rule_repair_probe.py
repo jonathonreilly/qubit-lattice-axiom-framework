@@ -9,8 +9,8 @@ Question:
 
 Scope:
   - compact generated 3D DAG family
-  - retained k-nearest floor bridge as the baseline control
-  - one geometry-rule repair: retained kNN-floor bridge + adaptive sector fan
+  - k-nearest floor bridge as the baseline control
+  - one geometry-rule repair: preserved input kNN-floor bridge + adaptive sector fan
   - exact zero-source reduction check
   - one field rule only: static Green kernel
   - observables: TOWARD count, detector effective support N_eff,
@@ -18,7 +18,7 @@ Scope:
 
 This is intentionally geometry-only. It does not compare static vs wavefield
 rules. The point is to test whether widening the generated support structure
-helps the retained weak-field lane more than further field tuning.
+helps the declared weak-field lane more than further field tuning.
 """
 
 from __future__ import annotations
@@ -58,6 +58,10 @@ class Family:
     positions: list[tuple[float, float, float]]
     adj: dict[int, list[int]]
     layers: list[list[int]]
+
+
+def _stable_unique(nodes: list[int]) -> list[int]:
+    return list(dict.fromkeys(nodes))
 
 
 def _mean(values: list[float]) -> float:
@@ -142,7 +146,7 @@ def _augment_knn_floor(family: Family) -> Family:
                 dist2 = (dx - sx) ** 2 + (dy - sy) ** 2 + (dz - sz) ** 2
                 ranked.append((dist2, dst))
             ranked.sort(key=lambda item: item[0])
-            selected = list(dict.fromkeys(adj.get(src, [])))
+            selected = _stable_unique(adj.get(src, []))
             for _, dst in ranked[:K_NEAREST]:
                 if dst not in selected:
                     selected.append(dst)
@@ -156,6 +160,49 @@ def _augment_knn_floor(family: Family) -> Family:
     return Family(positions=positions, adj=adj, layers=layers)
 
 
+def _sector_key(values: list[float], value: float) -> int:
+    if len(values) < 3:
+        return 1
+    ordered = sorted(values)
+    t1 = ordered[len(ordered) // 3]
+    t2 = ordered[(2 * len(ordered)) // 3]
+    if value <= t1:
+        return 0
+    if value <= t2:
+        return 1
+    return 2
+
+
+def _sector_floor_candidates(
+    positions: list[tuple[float, float, float]],
+    src: int,
+    dst_nodes: list[int],
+) -> list[int]:
+    """Return adaptive sector representatives plus nearest floor backfill."""
+
+    sx, sy, sz = positions[src]
+    dst_positions = [positions[i] for i in dst_nodes]
+    dy_offsets = [dy - sy for (_, dy, _) in dst_positions]
+    dz_offsets = [dz - sz for (_, _, dz) in dst_positions]
+    sector_best: dict[tuple[int, int], tuple[float, int]] = {}
+    ranked: list[tuple[float, int]] = []
+    for dst, (dx, dy, dz) in zip(dst_nodes, dst_positions):
+        dist2 = (dx - sx) ** 2 + (dy - sy) ** 2 + (dz - sz) ** 2
+        ranked.append((dist2, dst))
+        key = (_sector_key(dy_offsets, dy - sy), _sector_key(dz_offsets, dz - sz))
+        prev = sector_best.get(key)
+        if prev is None or dist2 < prev[0]:
+            sector_best[key] = (dist2, dst)
+
+    selected = [dst for _, dst in sorted(sector_best.values(), key=lambda item: item[0])]
+    for _, dst in sorted(ranked, key=lambda item: item[0]):
+        if len(selected) >= SECTOR_FLOOR:
+            break
+        if dst not in selected:
+            selected.append(dst)
+    return selected
+
+
 def _augment_sector_repair(family: Family) -> Family:
     """Geometry-only repair layered on an existing bridge family.
 
@@ -164,51 +211,121 @@ def _augment_sector_repair(family: Family) -> Family:
 
     The sectors are adaptive in the local y/z spread, so the rule can widen
     support without being tied to grid labels. The input family should already
-    carry the retained kNN-floor bridge.
+    carry the baseline kNN-floor bridge.
     """
 
     positions = family.positions
     layers = family.layers
     adj: dict[int, list[int]] = {i: list(nbs) for i, nbs in family.adj.items()}
 
-    def sector_key(values: list[float], v: float) -> int:
-        if len(values) < 3:
-            return 1
-        ordered = sorted(values)
-        t1 = ordered[len(ordered) // 3]
-        t2 = ordered[(2 * len(ordered)) // 3]
-        if v <= t1:
-            return 0
-        if v <= t2:
-            return 1
-        return 2
-
     for layer in range(len(layers) - 1):
         dst_nodes = layers[layer + 1]
-        dst_positions = [positions[i] for i in dst_nodes]
         for src in layers[layer]:
-            sx, sy, sz = positions[src]
-            dy_offsets = [dy - sy for (_, dy, _) in dst_positions]
-            dz_offsets = [dz - sz for (_, _, dz) in dst_positions]
-            sector_best: dict[tuple[int, int], tuple[float, int]] = {}
-            ranked: list[tuple[float, int]] = []
-            for dst, (dx, dy, dz) in zip(dst_nodes, dst_positions):
-                dist2 = (dx - sx) ** 2 + (dy - sy) ** 2 + (dz - sz) ** 2
-                ranked.append((dist2, dst))
-                key = (sector_key(dy_offsets, dy - sy), sector_key(dz_offsets, dz - sz))
-                prev = sector_best.get(key)
-                if prev is None or dist2 < prev[0]:
-                    sector_best[key] = (dist2, dst)
-
-            selected = [dst for _, dst in sorted(sector_best.values(), key=lambda item: item[0])]
-            for _, dst in sorted(ranked, key=lambda item: item[0]):
-                if len(selected) >= SECTOR_FLOOR:
-                    break
+            selected = _stable_unique(family.adj.get(src, []))
+            for dst in _sector_floor_candidates(positions, src, dst_nodes):
                 if dst not in selected:
                     selected.append(dst)
             adj[src] = selected
 
     return Family(positions=positions, adj=adj, layers=layers)
+
+
+def _repair_invariant_failures(input_family: Family, repaired: Family) -> list[str]:
+    """Return additive-repair invariant violations without trusting the repair."""
+
+    failures: list[str] = []
+    node_layer = {
+        node: layer_index
+        for layer_index, layer_nodes in enumerate(input_family.layers)
+        for node in layer_nodes
+    }
+    for src in sorted(set(input_family.adj) | set(repaired.adj)):
+        before = _stable_unique(input_family.adj.get(src, []))
+        after = repaired.adj.get(src, [])
+        if after[: len(before)] != before:
+            failures.append(f"source {src} does not begin with its input adjacency")
+        missing = [dst for dst in before if dst not in after]
+        if missing:
+            failures.append(f"source {src} lost input edges {missing}")
+        if len(after) != len(set(after)):
+            failures.append(f"source {src} contains duplicate adjacency entries")
+
+        before_set = set(before)
+        added = [dst for dst in after if dst not in before_set]
+        layer_index = node_layer.get(src)
+        permitted = (
+            set(input_family.layers[layer_index + 1])
+            if layer_index is not None and layer_index + 1 < len(input_family.layers)
+            else set()
+        )
+        wrong_layer = [dst for dst in added if dst not in permitted]
+        if wrong_layer:
+            failures.append(f"source {src} added non-next-layer edges {wrong_layer}")
+        expected = list(before)
+        if permitted:
+            for dst in _sector_floor_candidates(
+                input_family.positions,
+                src,
+                input_family.layers[layer_index + 1],
+            ):
+                if dst not in expected:
+                    expected.append(dst)
+        if after != expected:
+            failures.append(f"source {src} is not the exact stable additive sector/floor union")
+    return failures
+
+
+def _assert_additive_repair(input_family: Family, repaired: Family) -> dict[str, int]:
+    failures = _repair_invariant_failures(input_family, repaired)
+    if failures:
+        raise AssertionError("; ".join(failures))
+
+    input_edges = 0
+    added_edges = 0
+    sources_gaining = 0
+    for src in sorted(set(input_family.adj) | set(repaired.adj)):
+        before = set(input_family.adj.get(src, []))
+        after = repaired.adj.get(src, [])
+        added = [dst for dst in after if dst not in before]
+        input_edges += len(before)
+        added_edges += len(added)
+        sources_gaining += int(bool(added))
+    return {
+        "input_edges": input_edges,
+        "added_edges": added_edges,
+        "sources_gaining": sources_gaining,
+    }
+
+
+def _run_topology_regression_checks() -> dict[str, int]:
+    """Use a fixture where replacement semantics must drop a bridge edge."""
+
+    positions = [(0.0, 0.0, 0.0)] + [
+        (1.0, float(offset), 0.0) for offset in range(1, 11)
+    ]
+    fixture = Family(
+        positions=positions,
+        adj={0: [10]},
+        layers=[[0], list(range(1, 11))],
+    )
+    candidates = _sector_floor_candidates(positions, 0, fixture.layers[1])
+    if 10 in candidates or len(candidates) != SECTOR_FLOOR:
+        raise AssertionError("discriminating fixture no longer isolates replacement semantics")
+
+    repaired = _augment_sector_repair(fixture)
+    summary = _assert_additive_repair(fixture, repaired)
+    if summary["added_edges"] <= 0 or summary["sources_gaining"] != 1:
+        raise AssertionError("sector repair failed to add available fixture edges")
+
+    replacement_mutant = Family(
+        positions=positions,
+        adj={0: candidates},
+        layers=fixture.layers,
+    )
+    mutant_failures = _repair_invariant_failures(fixture, replacement_mutant)
+    if not any("input adjacency" in failure or "lost input edges" in failure for failure in mutant_failures):
+        raise AssertionError("replacement-style mutant escaped the subset-preservation gate")
+    return summary
 
 
 def _green_field(
@@ -308,13 +425,14 @@ def _summarize(rows: list[dict[str, float]], zero_shift: float) -> dict[str, flo
 
 
 def main() -> None:
+    fixture_topology = _run_topology_regression_checks()
     print("=" * 104)
     print("SOURCE-RESOLVED GEOMETRY-RULE REPAIR PROBE")
     print("  compact generated DAG family, geometry-sector repair vs kNN-floor bridge")
     print("=" * 104)
     print(f"family seeds=0..{N_SEEDS - 1}, layers={N_LAYERS}, nodes/layer={NODES_PER_LAYER}, connect_radius={CONNECT_RADIUS}")
     print(f"baseline bridge: k-nearest floor augmentation (k={K_NEAREST}, min_edges={MIN_EDGES})")
-    print(f"repair bridge: adaptive sector stencil + floor={SECTOR_FLOOR}")
+    print(f"repair bridge: preserved kNN-floor adjacency + adaptive sector stencil/floor={SECTOR_FLOOR}")
     print(f"static Green kernel: exp(-mu r)/(r+eps), mu={GREEN_MU:.2f}, eps={GREEN_EPS:.2f}")
     print(f"source strengths={SOURCE_STRENGTHS}")
     print(f"field target max={FIELD_TARGET_MAX}")
@@ -324,11 +442,15 @@ def main() -> None:
 
     per_case_results: dict[str, list[dict[str, float]]] = {}
     per_case_zero: dict[str, float] = {}
+    topology_totals = {"input_edges": 0, "added_edges": 0, "sources_gaining": 0}
 
     for seed in range(N_SEEDS):
         base = _family(seed)
         tweak = _augment_knn_floor(base)
         repair = _augment_sector_repair(tweak)
+        topology_summary = _assert_additive_repair(tweak, repair)
+        for key, value in topology_summary.items():
+            topology_totals[key] += value
         all_ys = [y for _, y, _ in tweak.positions]
         cy = sum(all_ys) / len(all_ys)
         mass_ids = _select_mass_nodes(tweak.positions, tweak.layers[len(tweak.layers) // 2], cy)
@@ -347,6 +469,24 @@ def main() -> None:
                 f"TOWARD={summary['toward_count']}/{summary['total']} "
                 f"F~M={alpha_str} N_eff={summary['eff_support']:.2f}"
             )
+
+    print()
+    print("TOPOLOGY GATES")
+    print(
+        "  fixture additive gain: "
+        f"PASS ({fixture_topology['added_edges']} added edges on the discriminating source)"
+    )
+    print("  replacement-style mutant: PASS (rejected for dropping the fixture bridge edge)")
+    print(
+        "  finite-slice input-edge preservation: "
+        f"PASS ({topology_totals['input_edges']} input edges preserved)"
+    )
+    print(
+        "  finite-slice additive next-layer union: "
+        f"PASS ({topology_totals['added_edges']} edges added across "
+        f"{topology_totals['sources_gaining']} sources)"
+    )
+    print("  finite-slice duplicate-free adjacency: PASS")
 
     print()
     print("SUMMARY")
@@ -379,7 +519,8 @@ def main() -> None:
 
     print()
     print("SAFE READ")
-    print("  - The baseline kNN-floor bridge is the retained control.")
+    print("  - The baseline kNN-floor bridge is the declared control.")
+    print("  - The repaired adjacency is an additive superset of that input bridge.")
     print("  - The repair is only interesting if it widens support and improves")
     print("    the weak-field sign or mass-law read without a field-rule change.")
     print("  - If support broadens but sign and F~M do not improve, the family is")

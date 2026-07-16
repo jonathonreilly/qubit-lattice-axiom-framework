@@ -41,12 +41,17 @@ Verification:
   descendants;
 - every generated authority output was restored or deleted.
 
+Block 02 is open for review as
+[PR 5405](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5405).
+Do not merge it from this campaign worker and do not describe it as
+audit-ratified.
+
 Exact next action:
 
-1. delete the worktree-local lock files;
-2. commit this final checkpoint;
-3. push the branch and open the block-02 review PR;
-4. if runtime remains, continue the deep block and then pivot to opportunity 3.
+1. continue adversarial block-02 proof pressure through at least
+   `2026-07-16T14:48:12Z`;
+2. amend PR 5405 only if that pressure finds a real issue;
+3. after the deep-block threshold, checkpoint and pivot to opportunity 3.
 
 The 120-minute deep block began at `2026-07-16T12:48:12Z` and remains in
 progress. Do not claim it complete before `2026-07-16T14:48:12Z`.
@@ -55,7 +60,7 @@ If this worker must be resumed immediately:
 
 ```bash
 cd /private/tmp/physics-loop-gauge-transfer-positive-repair-20260716
-codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 5h --target best-honest-status"
+codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 4h53m --target best-honest-status"
 ```
 
 Read `STATE.yaml`, `HANDOFF.md`, and `TRACE_GATE.md`. Do not run `audit-loop`,

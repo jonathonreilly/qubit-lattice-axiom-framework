@@ -85,7 +85,8 @@ class CollectLedgerSchemaTest(unittest.TestCase):
         ]
         result = ric.collect_ledger(tracked)
         self.assertEqual(result["shard_count"], 3)
-        self.assertEqual(len(result["shard_parse_errors"]), 2)
+        # list_shard: non-object; null_claim: bad claim_id AND missing note_path
+        self.assertEqual(len(result["shard_parse_errors"]), 3)
         self.assertEqual(result["rows_with_missing_note_path"], 0)
         self.assertEqual(
             result["effective_status_histogram"], {"retained": 1, "unaudited": 1}
@@ -282,7 +283,8 @@ class ShardSchemaRoundTwoProbes(unittest.TestCase):
                     ric.LEDGER_PREFIX + "aa/badbytes.json",
                 ]
                 result = ric.collect_ledger(tracked)
-                self.assertEqual(len(result["shard_parse_errors"]), 2)
+                # liststatus: bad status AND missing note_path; badbytes: decode
+                self.assertEqual(len(result["shard_parse_errors"]), 3)
                 self.assertEqual(result["effective_status_histogram"].get("SCHEMA_INVALID"), 1)
                 self.assertEqual(result["retained_grade_total"], 0)
             finally:
@@ -439,6 +441,82 @@ class RoundThreeDiffProbes(DiffSensitivityTest):
     def test_array_leaf_path_is_allowable(self):
         code, _ = self._diff({"a": [{}]}, {"a": [{"b": 1}]}, allow="a.0.b")
         self.assertEqual(code, 0)
+
+
+
+
+class RoundFourProbes(unittest.TestCase):
+    def test_backtick_fence_with_backtick_info_is_inline_span(self):
+        text = "``` x ``` prose\n[a](GONE.md)"
+        self.assertEqual(ric.scan_markdown_link_targets(text), ["GONE.md"])
+
+    def test_wrapped_link_single_newline_parses(self):
+        self.assertEqual(
+            ric.scan_markdown_link_targets("[a](\nGONE.md\n)"), ["GONE.md"]
+        )
+
+    def test_double_newline_does_not_glue_paragraphs(self):
+        self.assertEqual(
+            ric.scan_markdown_link_targets("[a](\n\nNOT_A_LINK.md)"), []
+        )
+
+    def test_absent_or_empty_note_path_is_schema_error(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old = ric.REPO_ROOT
+            ric.REPO_ROOT = tmp
+            try:
+                d = Path(tmp) / ric.LEDGER_PREFIX / "aa"
+                d.mkdir(parents=True)
+                (d / "noname.json").write_text(json.dumps(
+                    {"claim_id": "noname", "effective_status": "unaudited"}))
+                (d / "empty.json").write_text(json.dumps(
+                    {"claim_id": "empty", "effective_status": "unaudited",
+                     "note_path": ""}))
+                result = ric.collect_ledger([
+                    ric.LEDGER_PREFIX + "aa/noname.json",
+                    ric.LEDGER_PREFIX + "aa/empty.json",
+                ])
+                self.assertEqual(len(result["shard_parse_errors"]), 2)
+            finally:
+                ric.REPO_ROOT = old
+
+    def test_symlinked_shard_and_registry_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old = ric.REPO_ROOT
+            ric.REPO_ROOT = tmp
+            try:
+                d = Path(tmp) / ric.LEDGER_PREFIX / "aa"
+                d.mkdir(parents=True)
+                real = Path(tmp) / "outside.json"
+                real.write_text(json.dumps(
+                    {"claim_id": "alias", "effective_status": "unaudited"}))
+                (d / "alias.json").symlink_to(real)
+                result = ric.collect_ledger([ric.LEDGER_PREFIX + "aa/alias.json"])
+                self.assertIn("not a regular file", result["shard_parse_errors"][0])
+                reg = Path(tmp) / ric.PREMISE_NODES
+                reg.parent.mkdir(parents=True, exist_ok=True)
+                reg.symlink_to(real)
+                out = ric._load_ids(ric.PREMISE_NODES, ("nodes",), {ric.PREMISE_NODES})
+                self.assertFalse(out["tracked"])
+            finally:
+                ric.REPO_ROOT = old
+
+    def test_single_reason_is_ignore_rule_independent(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            subprocess.run(["git", "init", "-q", str(root)], check=True)
+            (root / "README.md").write_text("[x](docs/GONE.md)")
+            before = ric.collect_authority_links.__wrapped__ if False else None
+            old = ric.REPO_ROOT
+            ric.REPO_ROOT = str(root)
+            try:
+                first = ric.collect_authority_links(["README.md"])
+                (root / ".gitignore").write_text("docs/GONE.md\n")
+                second = ric.collect_authority_links(["README.md"])
+                self.assertEqual(first["violations"], second["violations"])
+                self.assertEqual(first["violations"][0]["reason"], "not-tracked")
+            finally:
+                ric.REPO_ROOT = old
 
 
 if __name__ == "__main__":

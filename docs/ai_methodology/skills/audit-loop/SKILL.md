@@ -215,6 +215,17 @@ The graph-cycle warning is currently expected. Treat any error as a blocker.
 - Do not run broad content searches over `docs/audit/data/audit_ledger.json`, `docs/audit/AUDIT_LEDGER.md`, or other audit-history files. Use exact `jq` field extraction for selected rows and dependencies.
 - When reading `audit_ledger.json`, extract only operational metadata such as `claim_id`, `note_path`, `runner_path`, statuses, `criticality`, `deps`, `note_hash`, and graph-degree fields. Do not print or inspect `verdict_rationale`, `chain_closure_explanation`, `previous_audits`, `audit_history`, or prior auditor notes.
 - File-name listing is allowed when needed, but do not search file contents in audit data/history to find alternate candidate sources or prior conclusions.
+- The shadow dispatch layer carries ZERO evidentiary weight in either
+  direction. `would_park` / `would_park_reason` and `shadow_*` summary fields
+  in `audit_queue.json`, `docs/audit/data/publication_gap.json`,
+  `docs/audit/data/audit_publication_lane.json`,
+  `docs/audit/data/dispatch_shadow_prior.json`,
+  `docs/audit/data/publication_lane_manifest.json`, and the front door's
+  "Dispatch Shadow Report" section are dispatch/reporting metadata only
+  (target selection and owner cutover evidence per the dispatch-retarget
+  design note). Never cite them in a verdict rationale; publication-lane
+  membership, pending admission, or a would-park classification says nothing
+  about whether a claim is true, honest, or well-scoped.
 - If fresh-context contamination occurs before a verdict is applied, discard the current context's judgment for that claim and restart the claim in a distinct restricted-input sub-agent when sub-agents are available. Do not pass the contamination, prior conclusion, or audit-history text to the sub-agent. If no sub-agent is available, stop before applying any audit and report the contamination.
 
 ## Blocked-Row Loop Guard
@@ -631,9 +642,12 @@ Review the diff. It should normally touch only:
 - `docs/audit/AUDIT_QUEUE.md`;
 - possibly other tracked load-bearing/runner summaries if the pipeline refreshed them.
 
-The monolithic ledger, queue JSON, runner classification, citation graph, and
-rendered `AUDIT_LEDGER.md` are ignored materialized caches; never force-add
-them.
+The monolithic ledger, queue JSON, runner classification, citation graph,
+rendered `AUDIT_LEDGER.md`, and the shadow dispatch files
+(`publication_gap.json`, `audit_publication_lane.json`,
+`dispatch_shadow_prior.json`) are ignored materialized caches; never
+force-add them. `publication_lane_manifest.json` is tracked controlled data
+owned by the review lane — an audit commit must not modify it.
 
 Commit:
 

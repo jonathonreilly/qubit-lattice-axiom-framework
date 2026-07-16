@@ -422,7 +422,7 @@ completed-operator statement is supplied here.
 
 ## 7. Forbidden Imports Check
 
-- No observed value, fitted selector, admitted unit convention, or
+- No observed value, fitted selector, explicit unit convention, or
   literature numerical comparator is used.
 - No framework axiom or primitive is introduced.
 - The proof uses only the displayed finite-dimensional `SU(3)` matrices,
@@ -444,16 +444,20 @@ The companion runner:
 3. checks exact dimension conservation
    `sum_(p,q) m_(p,q)(n)d_(p,q)=6^n` at every level and the local Pieri
    dimension identities;
-4. checks the `beta=0` boundary and exact positive lower monomials at
+4. independently reconstructs the tensor-power decompositions by exact
+   Jacobi-Trudi character algebra through level `8` and by direct
+   Gelfand-Tsetlin torus-character enumeration through level `6`;
+5. checks the `beta=0` boundary and exact positive lower monomials at
    `beta=1`;
-5. reproduces the matrix-index Schur contraction and dimension cancellation
+6. reproduces the matrix-index Schur contraction and dimension cancellation
    on a finite character packet before applying arbitrary rational
    coefficients;
-6. checks stabilization under enlargement of the finite convolution packet;
-7. rejects missing-Pieri-branch, fundamental/antifundamental-swap,
+7. checks stabilization under enlargement of the finite convolution packet;
+8. rejects missing-Pieri-branch, fundamental/antifundamental-swap,
    hard-coded-unit-multiplicity, missing-`1/d`, missing-`d_lambda`, and
-   coefficient-only convolution mutants;
-8. checks source-note scope markers while leaving the separately changing
+   coefficient-only convolution mutants, with the recurrence mutants also
+   required to disagree with both independent character decompositions;
+9. checks source-note scope markers while leaving the separately changing
    downstream consumer prose outside the executable certificate.
 
 Its recurrence is the explicit pair

@@ -34,6 +34,8 @@ CONVOLUTION_BOX_MAX = 3
 Weight = tuple[int, int]
 MultiplicityTable = dict[Weight, int]
 MatrixPolynomial = dict[tuple[Weight, int, int], Fraction]
+CharacterPolynomial = dict[tuple[int, int], Fraction]
+TorusCharacter = dict[tuple[int, int], int]
 
 PASS = 0
 FAIL = 0
@@ -138,6 +140,235 @@ def certified_box(max_coordinate: int) -> list[Weight]:
 
 def convolution_box(max_coordinate: int) -> list[Weight]:
     return certified_box(max_coordinate)
+
+
+def polynomial_add(
+    left: CharacterPolynomial,
+    right: CharacterPolynomial,
+    *,
+    scale: Fraction = Fraction(1),
+) -> CharacterPolynomial:
+    result: defaultdict[tuple[int, int], Fraction] = defaultdict(Fraction)
+    for monomial, coefficient in left.items():
+        result[monomial] += coefficient
+    for monomial, coefficient in right.items():
+        result[monomial] += scale * coefficient
+    return {monomial: coefficient for monomial, coefficient in result.items() if coefficient}
+
+
+def polynomial_multiply(
+    left: CharacterPolynomial,
+    right: CharacterPolynomial,
+) -> CharacterPolynomial:
+    result: defaultdict[tuple[int, int], Fraction] = defaultdict(Fraction)
+    for (a, b), left_coefficient in left.items():
+        for (c, d), right_coefficient in right.items():
+            result[(a + c, b + d)] += left_coefficient * right_coefficient
+    return {monomial: coefficient for monomial, coefficient in result.items() if coefficient}
+
+
+def polynomial_power(base: CharacterPolynomial, exponent: int) -> CharacterPolynomial:
+    result: CharacterPolynomial = {(0, 0): Fraction(1)}
+    for _ in range(exponent):
+        result = polynomial_multiply(result, base)
+    return result
+
+
+def jacobi_trudi_character_table(max_height: int) -> dict[Weight, CharacterPolynomial]:
+    """Exact SU(3) characters in the independent ring Q[chi_3,chi_3bar]."""
+    one: CharacterPolynomial = {(0, 0): Fraction(1)}
+    chi_3: CharacterPolynomial = {(1, 0): Fraction(1)}
+    chi_3bar: CharacterPolynomial = {(0, 1): Fraction(1)}
+    complete: dict[int, CharacterPolynomial] = {
+        -2: {},
+        -1: {},
+        0: one,
+    }
+    for degree in range(1, max_height + 3):
+        term = polynomial_multiply(chi_3, complete[degree - 1])
+        term = polynomial_add(
+            term,
+            polynomial_multiply(chi_3bar, complete.get(degree - 2, {})),
+            scale=Fraction(-1),
+        )
+        term = polynomial_add(term, complete.get(degree - 3, {}))
+        complete[degree] = term
+
+    def h(degree: int) -> CharacterPolynomial:
+        return complete.get(degree, {}) if degree >= 0 else {}
+
+    def det2(
+        a: CharacterPolynomial,
+        b: CharacterPolynomial,
+        c: CharacterPolynomial,
+        d: CharacterPolynomial,
+    ) -> CharacterPolynomial:
+        return polynomial_add(
+            polynomial_multiply(a, d),
+            polynomial_multiply(b, c),
+            scale=Fraction(-1),
+        )
+
+    characters: dict[Weight, CharacterPolynomial] = {}
+    for p in range(max_height + 1):
+        for q in range(max_height + 1 - p):
+            lambda_1 = p + q
+            lambda_2 = q
+            first = polynomial_multiply(
+                h(lambda_1),
+                det2(h(lambda_2), h(lambda_2 + 1), h(-1), h(0)),
+            )
+            second = polynomial_multiply(
+                h(lambda_1 + 1),
+                det2(h(lambda_2 - 1), h(lambda_2 + 1), h(-2), h(0)),
+            )
+            third = polynomial_multiply(
+                h(lambda_1 + 2),
+                det2(h(lambda_2 - 1), h(lambda_2), h(-2), h(-1)),
+            )
+            characters[(p, q)] = polynomial_add(
+                polynomial_add(first, second, scale=Fraction(-1)),
+                third,
+            )
+    return characters
+
+
+def decompose_character_polynomial(
+    polynomial: CharacterPolynomial,
+    characters: dict[Weight, CharacterPolynomial],
+    max_height: int,
+) -> tuple[MultiplicityTable, CharacterPolynomial]:
+    """Triangularly decompose by each character's unique chi_3^p chi_3bar^q term."""
+    remainder = dict(polynomial)
+    multiplicities: dict[Weight, int] = {}
+    candidates = [
+        (p, q)
+        for height in range(max_height, -1, -1)
+        for p in range(height, -1, -1)
+        for q in [height - p]
+    ]
+    for weight in candidates:
+        coefficient = remainder.get(weight, Fraction(0))
+        if not coefficient:
+            continue
+        if coefficient.denominator != 1:
+            return {}, remainder
+        multiplicity = int(coefficient)
+        multiplicities[weight] = multiplicity
+        remainder = polynomial_add(
+            remainder,
+            characters[weight],
+            scale=Fraction(-multiplicity),
+        )
+    return dict(sorted(multiplicities.items())), remainder
+
+
+def jacobi_trudi_levels(max_level: int) -> tuple[list[MultiplicityTable], list[CharacterPolynomial]]:
+    """Decompose (chi_3+chi_3bar)^n without using either Pieri recurrence."""
+    characters = jacobi_trudi_character_table(max_level)
+    base: CharacterPolynomial = {
+        (1, 0): Fraction(1),
+        (0, 1): Fraction(1),
+    }
+    levels: list[MultiplicityTable] = []
+    remainders: list[CharacterPolynomial] = []
+    for level in range(max_level + 1):
+        multiplicities, remainder = decompose_character_polynomial(
+            polynomial_power(base, level),
+            characters,
+            level,
+        )
+        levels.append(multiplicities)
+        remainders.append(remainder)
+    return levels, remainders
+
+
+def torus_add(left: TorusCharacter, right: TorusCharacter) -> TorusCharacter:
+    result: defaultdict[tuple[int, int], int] = defaultdict(int)
+    for monomial, coefficient in left.items():
+        result[monomial] += coefficient
+    for monomial, coefficient in right.items():
+        result[monomial] += coefficient
+    return {monomial: coefficient for monomial, coefficient in result.items() if coefficient}
+
+
+def torus_multiply(left: TorusCharacter, right: TorusCharacter) -> TorusCharacter:
+    result: defaultdict[tuple[int, int], int] = defaultdict(int)
+    for (a, b), left_coefficient in left.items():
+        for (c, d), right_coefficient in right.items():
+            result[(a + c, b + d)] += left_coefficient * right_coefficient
+    return {monomial: coefficient for monomial, coefficient in result.items() if coefficient}
+
+
+def gelfand_tsetlin_character(weight: Weight) -> TorusCharacter:
+    """Enumerate the GL(3) Gelfand-Tsetlin basis and restrict to det=1."""
+    p, q = weight
+    lambda_1, lambda_2, lambda_3 = p + q, q, 0
+    total = lambda_1 + lambda_2 + lambda_3
+    character: defaultdict[tuple[int, int], int] = defaultdict(int)
+    for middle_1 in range(lambda_2, lambda_1 + 1):
+        for middle_2 in range(lambda_3, lambda_2 + 1):
+            for bottom in range(middle_2, middle_1 + 1):
+                exponent_1 = bottom
+                exponent_2 = middle_1 + middle_2 - bottom
+                exponent_3 = total - middle_1 - middle_2
+                character[
+                    (exponent_1 - exponent_3, exponent_2 - exponent_3)
+                ] += 1
+    return dict(character)
+
+
+def decompose_torus_character(
+    character: TorusCharacter,
+    irreducible_characters: dict[Weight, TorusCharacter],
+    max_height: int,
+) -> tuple[MultiplicityTable, TorusCharacter]:
+    """Greedy highest-weight subtraction on exact Laurent torus characters."""
+    remainder = dict(character)
+    multiplicities: dict[Weight, int] = {}
+    candidates = [
+        (p, q)
+        for height in range(max_height, -1, -1)
+        for p in range(height, -1, -1)
+        for q in [height - p]
+    ]
+    for p, q in candidates:
+        highest_monomial = (p + q, q)
+        multiplicity = remainder.get(highest_monomial, 0)
+        if not multiplicity:
+            continue
+        multiplicities[(p, q)] = multiplicity
+        for monomial, coefficient in irreducible_characters[(p, q)].items():
+            remainder[monomial] = remainder.get(monomial, 0) - multiplicity * coefficient
+            if remainder[monomial] == 0:
+                del remainder[monomial]
+    return dict(sorted(multiplicities.items())), remainder
+
+
+def gelfand_tsetlin_levels(max_level: int) -> tuple[list[MultiplicityTable], list[TorusCharacter]]:
+    """Decompose the exact six-weight torus character without Pieri input."""
+    irreducible_characters = {
+        (p, q): gelfand_tsetlin_character((p, q))
+        for p in range(max_level + 1)
+        for q in range(max_level + 1 - p)
+    }
+    base = torus_add(
+        irreducible_characters[(1, 0)],
+        irreducible_characters[(0, 1)],
+    )
+    current: TorusCharacter = {(0, 0): 1}
+    levels: list[MultiplicityTable] = []
+    remainders: list[TorusCharacter] = []
+    for level in range(max_level + 1):
+        multiplicities, remainder = decompose_torus_character(
+            current,
+            irreducible_characters,
+            level,
+        )
+        levels.append(multiplicities)
+        remainders.append(remainder)
+        current = torus_multiply(current, base)
+    return levels, remainders
 
 
 def schur_matrix_element_coefficient(
@@ -296,7 +527,36 @@ def main() -> int:
         detail=f"largest table has {len(levels[-1])} weights",
     )
 
-    section("Part 2: computed all-weight occurrence certificate on B_8")
+    section("Part 2: independent exact character decompositions")
+    jacobi_levels, jacobi_remainders = jacobi_trudi_levels(8)
+    jacobi_trudi_ok = (
+        all(not remainder for remainder in jacobi_remainders)
+        and all(jacobi_levels[level] == levels[level] for level in range(9))
+    )
+    check(
+        "exact Jacobi-Trudi character decomposition matches the Pieri tables",
+        jacobi_trudi_ok,
+        detail="independent Q[chi_3,chi_3bar] decomposition at n=0..8",
+    )
+
+    gt_levels, gt_remainders = gelfand_tsetlin_levels(6)
+    gt_dimensions_ok = all(
+        sum(gelfand_tsetlin_character(weight).values()) == dim_su3(weight)
+        for level in range(7)
+        for weight in gt_levels[level]
+    )
+    gelfand_tsetlin_ok = (
+        gt_dimensions_ok
+        and all(not remainder for remainder in gt_remainders)
+        and all(gt_levels[level] == levels[level] for level in range(7))
+    )
+    check(
+        "exact Gelfand-Tsetlin torus-character decomposition matches the Pieri tables",
+        gelfand_tsetlin_ok,
+        detail="independent basis enumeration and Laurent-character subtraction at n=0..6",
+    )
+
+    section("Part 3: computed all-weight occurrence certificate on B_8")
     occurrence_records: list[tuple[Weight, int, int]] = []
     for weight in certified_box(CERTIFIED_BOX_MAX):
         occurrence = first_occurrence(levels, weight)
@@ -376,7 +636,7 @@ def main() -> int:
             ok &= lower > 0
         check(f"computed positive Wilson-series term for weight {weight}", ok, detail)
 
-    section("Part 3: beta=0 boundary and normalized eigenvalue signs")
+    section("Part 4: beta=0 boundary and normalized eigenvalue signs")
     beta_zero_ok = (
         levels[0] == {(0, 0): 1}
         and all(
@@ -411,7 +671,7 @@ def main() -> int:
         detail="; ".join(normalized_details),
     )
 
-    section("Part 4: hostile controls for the tensor-product certificate")
+    section("Part 5: hostile controls for the tensor-product certificate")
 
     def missing_middle_fundamental_branch(weight: Weight) -> tuple[Weight, ...]:
         p, q = weight
@@ -455,18 +715,43 @@ def main() -> int:
         detail="dimension alone is insufficient; conjugation and first occurrence catch it",
     )
 
+    recurrence_mutants_rejected_independently = all(
+        any(
+            mutant_levels[level] != jacobi_levels[level]
+            and mutant_levels[level] != gt_levels[level]
+            for level in range(5)
+        )
+        for mutant_levels in [missing_branch_levels, swapped_rule_levels]
+    )
+    check(
+        "independent character decompositions reject both hostile Pieri recurrences",
+        recurrence_mutants_rejected_independently,
+        detail="both mutants disagree with Jacobi-Trudi and Gelfand-Tsetlin tables",
+    )
+
+    independently_computed_mixed_occurrences = [
+        (
+            weight,
+            first_occurrence(jacobi_levels, weight),
+            first_occurrence(gt_levels, weight),
+        )
+        for weight in [(1, 1), (2, 1), (1, 2), (3, 2), (2, 3)]
+    ]
     hard_coded_unit_mutant_rejected = any(
-        multiplicity != 1
-        for weight, _level, multiplicity in occurrence_records
-        if weight[0] > 0 and weight[1] > 0
+        jacobi_occurrence is not None
+        and gt_occurrence is not None
+        and jacobi_occurrence == gt_occurrence
+        and jacobi_occurrence[1] > 1
+        for _weight, jacobi_occurrence, gt_occurrence
+        in independently_computed_mixed_occurrences
     )
     check(
         "hostile control rejects hard-coded unit multiplicity at the predicted level",
         hard_coded_unit_mutant_rejected,
-        detail="for example m_(1,1)(2)=2 and m_(2,1)(3)=3",
+        detail="independent character decompositions give m_(1,1)(2)=2 and m_(2,1)(3)=3",
     )
 
-    section("Part 5: exact matrix-index Schur contraction before coefficients")
+    section("Part 6: exact matrix-index Schur contraction before coefficients")
     conv_weights = convolution_box(CONVOLUTION_BOX_MAX)
     contractions = {
         (kernel, target): raw_character_contraction(kernel, target)
@@ -566,7 +851,7 @@ def main() -> int:
         detail=f"support size={len(test_support)}, enlarged packet size={len(conv_weights)}",
     )
 
-    section("Part 6: hostile controls for convolution normalization")
+    section("Part 7: hostile controls for convolution normalization")
     correct_fundamental = contractions[((1, 0), (1, 0))]
     missing_schur_dimension = raw_character_contraction(
         (1, 0),
@@ -622,7 +907,7 @@ def main() -> int:
         detail="mutant swaps fundamental and antifundamental instead of acting diagonally",
     )
 
-    section("Part 7: source-scope checks")
+    section("Part 8: source-scope checks")
     note_text = NOTE.read_text(encoding="utf-8")
 
     note_markers = [

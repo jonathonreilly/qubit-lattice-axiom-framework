@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_observable_principle_p1_symmetry_type_energy_readout_2026_06_02.py
-runner_sha256: 21578deab37325dc61b9d48fd0e44f76b6c55cde418db5a7673579e477f4bd43
+runner_sha256: ebef62966cf953747818d4ba8fc37259eff58f790c0dd7c5584a29f45df7dd71
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.95
+elapsed_sec: 0.60
 status: ok
 ----- stdout -----
 
@@ -55,7 +55,7 @@ T5: PIVOT 1 — 'energies add' is the {r->r^s} orbit move at the transfer level
   [PASS] H = -log(T2)/2 = E1.n1 + E2.n2 (ADDITIVE number-operator form)
          H additive <=> T2 = (x)_p diag(1,e^{-2E}) multiplicative: the exp/log move
   [PASS] (T2)^s = (x)_p diag(1,e^{-2 s E(p)}) multiplicative for EVERY s (single orbit)
-         the additive generator is the s->0 (log) member; energies-add is face ADD
+         the additive generator is the normalized s->0 derivative -log((T2)^s)/(2s); energies-add is face ADD
   [PASS] additive coordinate -log((T2)^s)/(2s) = H for every s (the log readout)
          energies-add reduces to choosing the log member of the orbit = (Add)
 
@@ -76,8 +76,8 @@ T7: PIVOT 2 — 'W is the free energy' = content (II.b), and (II.b) <=> P1
          ln(m^2+c)-ln(c) = ln(1+m^2/c): free-energy = a NAME for the log-det convention
   [PASS] (II.b) W = log|Z| => additivity W(A(+)B) = W(A) + W(B)
          the free-energy/log-Z identification gives additivity
-  [PASS] F_p (p != 0) NOT additive; only p->0 (log) is -> singling = additivity = P1
-         (II.b) <=> P1: the identification IS the admitted classification step
+  [PASS] F_p is not additive at the tested representative p=1; log is an additive representative (the p->0 normalized limit (r^p-1)/p, not the p->0 member r^p->1)
+         tested at p=1 only; uniqueness of log as THE additive readout needs the multiplicative Cauchy theorem under continuity/measurability, not classified here
 
 ==============================================================================
 T8: SYNTHESIS — the energy route = face ADD (P1); the intensive density = face BLIND
@@ -86,14 +86,13 @@ T8: SYNTHESIS — the energy route = face ADD (P1); the intensive density = face
          the energy ledger references the BARE additive value -> face ADD = P1
   [PASS] face BLIND: intensive (normalized) energy = E for every s (singles nothing)
          the per-site/Born energy density is orbit-invariant -> face BLIND
-  [PASS] no third energy readout fixes a finite nonzero exponent (dichotomy holds)
-         energy route collapses into #2504 {face ADD = P1, face BLIND = nothing}
+  [PASS] the two constructed readouts (bare-additive log; intensive normalized) both hold on the tested surface
+         tested faces of #2504 {face ADD = P1, face BLIND = nothing}; a full readout-space classification is not carried out here
 
 ==============================================================================
 T9: live-ledger context presence (no dependency status consumed)
 ==============================================================================
-  [PASS] audit ledger presence recorded (not load-bearing)
-         ledger present with 3087 rows; status NOT consumed as load-bearing
+  [diagnostic, not scored] audit ledger presence recorded (not load-bearing) -- ledger present with 3754 rows; status NOT consumed as load-bearing
 
 ==============================================================================
 T10: note honest-scope strings present; forbidden overclaim strings absent
@@ -110,7 +109,7 @@ T11: source-note boundary declarations present
          missing: []
 
 ==============================================================================
-SCORECARD: PASS=27 FAIL=0
+SCORECARD: PASS=26 FAIL=0
 ==============================================================================
 
 A passing run supports ONLY the bounded finding: the symmetry-type

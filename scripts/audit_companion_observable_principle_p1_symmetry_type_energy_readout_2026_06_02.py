@@ -460,9 +460,11 @@ def test_T5_pivot1_energies_add_is_exp_log() -> None:
     )
 
     # (ii) The WHOLE family (T2)^s is multiplicative over modes for EVERY s,
-    # and the additive generator is the s->0 (log) member s.H. So {(T2)^s} is a
-    # single {r -> r^s} orbit at the transfer-operator level: "H additive" sits
-    # in face ADD of #2504's dichotomy applied here, NOT prior to a log choice.
+    # and the additive generator is the NORMALIZED s->0 derivative
+    # -log((T2)^s)/(2s) = H (NOT the s->0 member itself, which is the identity
+    # since (T2)^s -> I as s->0). So {(T2)^s} is a single {r -> r^s} orbit at
+    # the transfer-operator level: "H additive" sits in face ADD of #2504's
+    # dichotomy applied here, NOT prior to a log choice.
     s = sp.symbols("s", positive=True)
     T2s = _kron(blk(E1) ** s, blk(E2) ** s)
     T2s_direct = sp.diag(1, sp.exp(-2 * s * E2), sp.exp(-2 * s * E1), sp.exp(-2 * s * (E1 + E2)))
@@ -470,7 +472,7 @@ def test_T5_pivot1_energies_add_is_exp_log() -> None:
     check(
         "(T2)^s = (x)_p diag(1,e^{-2 s E(p)}) multiplicative for EVERY s (single orbit)",
         ok_orbit,
-        "the additive generator is the s->0 (log) member; energies-add is face ADD",
+        "the additive generator is the normalized s->0 derivative -log((T2)^s)/(2s); energies-add is face ADD",
     )
 
     # (iii) The additive coordinate is uniquely log: -log((T2)^s)/(2s) = H for
@@ -584,9 +586,11 @@ def test_T7_pivot2_free_energy_identification_is_IIb() -> None:
         (sp.log(ZA * ZB) - (sp.log(ZA) + sp.log(ZB)))
     ) == 0
     check(
-        "F_p (p != 0) NOT additive; only p->0 (log) is -> singling = additivity = P1",
+        "F_p is not additive at the tested representative p=1; log is an additive representative "
+        "(the p->0 normalized limit (r^p-1)/p, not the p->0 member r^p->1)",
         nonzero_p1 and zero_log_limit,
-        "(II.b) <=> P1: the identification IS the admitted classification step",
+        "tested at p=1 only; uniqueness of log as THE additive readout needs the multiplicative "
+        "Cauchy theorem under continuity/measurability, not classified here",
     )
 
 
@@ -624,15 +628,14 @@ def test_T8_synthesis_energy_route_is_face_ADD() -> None:
         "the per-site/Born energy density is orbit-invariant -> face BLIND",
     )
 
-    # The dichotomy: the energy route either reads the bare additive value
-    # (face ADD = P1) or the intensive normalized value (face BLIND = nothing).
-    # There is no third energy readout that fixes a finite nonzero exponent
-    # without referencing the bare additive value -- exactly #2504's dichotomy,
-    # relocated to the energy ledger.
+    # The two CONSTRUCTED readouts: the bare additive value (face ADD = P1) and
+    # the intensive normalized value (face BLIND = nothing). This confirms both
+    # tested faces; it does NOT classify the full allowed readout space, so it is
+    # not a proof that no third energy readout exists.
     check(
-        "no third energy readout fixes a finite nonzero exponent (dichotomy holds)",
+        "the two constructed readouts (bare-additive log; intensive normalized) both hold on the tested surface",
         ok_add and ok_blind,
-        "energy route collapses into #2504 {face ADD = P1, face BLIND = nothing}",
+        "tested faces of #2504 {face ADD = P1, face BLIND = nothing}; a full readout-space classification is not carried out here",
     )
 
 
@@ -654,9 +657,9 @@ def test_T9_ledger_context_presence() -> None:
             detail = f"ledger present (parse note: {exc}); status NOT consumed"
     else:
         detail = "ledger absent in this checkout; runner consumes no ledger status anyway"
-    # This test passes either way: the note's load-bearing content does not
-    # consume any audit status. Presence is recorded for orientation only.
-    check("audit ledger presence recorded (not load-bearing)", True, detail)
+    # Orientation only (not scored): the note's load-bearing content does not
+    # consume any audit status, so ledger presence is not a pass/fail predicate.
+    print(f"  [diagnostic, not scored] audit ledger presence recorded (not load-bearing) -- {detail}")
 
 
 # ---------------------------------------------------------------------------

@@ -37,7 +37,7 @@ retire, the admitted P1 premise of
 >   a **product** over modes (`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`):
 >   "`H` additive" `⟺` "`T̂²` multiplicative" is the **same exp/log move**, one
 >   level up. The whole family `{(T̂²)^s}` is a **single `{r ↦ r^s}` orbit**
->   and the additive generator is the `s → 0` (`log`) member (§3.3, runner
+>   and the additive generator is the `log` generator (the normalized `s → 0` derivative, not the `s → 0` member `r^s → 1`) (§3.3, runner
 >   T5). So Pivot 1 sits in **face ADD** of #2504's dichotomy applied at the
 >   transfer-operator level — it does **not** supply an additive readout
 >   **prior to** a `log` choice.
@@ -191,7 +191,7 @@ Each premise consumed, with type and ledger status:
    input is **Pivot 1** ("the generator `H` is additive, prior to and
    independent of any `log` choice"). The decisive finding is that in this
    framework `H` is **built from** `−log(T̂²)` with `T̂²` multiplicative; the
-   additive `H` is the **`log` member** of the `{(T̂²)^s}` orbit, **not** prior
+   additive `H` is the **`log` generator** of the `{(T̂²)^s}` orbit, **not** prior
    to it. So Pivot 1 is **face ADD** one level up, not an out-of-class input.
 
 **Conclusion of Exercise 1.** The route consumes, beyond standard math and the
@@ -220,7 +220,7 @@ It does not, for two first-principles reasons.
   "`Ĥ` is additive (`Σ_p E(p) n_p`)" is **identical** to "`T̂²` is
   multiplicative over the tensor product," via the **same** `exp`/`log` map that
   takes `Z = exp(log Z)`. The additive coordinate `−log((T̂²)^s)/(2s) = Ĥ` is
-  the **`log` member** of the one-parameter orbit `{(T̂²)^s}` (runner T5) —
+  the **`log` generator** of the one-parameter orbit `{(T̂²)^s}` (runner T5) —
   exactly face ADD of #2504's dichotomy, applied to the transfer operator
   instead of the partition function. "Energies add" is **not** a structure
   prior to `log`; it **is** `log`.
@@ -237,8 +237,9 @@ What is left that could be an **out-of-class** input? Only the bare assertion
 **defined** by the log-det convention `Δf := (1/n)(ln|det(D+m)| − ln|det D|)`
 (runner T7), so the assertion **presupposes** `log|det|`; and the
 identification "`W` is the canonical free-energy/cumulant generator" is content
-(II.b), proven `⇔` P1. There is **no third leg** of the energy route that lives
-outside `𝒞`.
+(II.b), proven `⇔` P1. No **third leg** of the energy route beyond these two is
+constructed here; a full classification of the energy route outside `𝒞` is not
+carried out.
 
 **First-principles bottom line.** The symmetry-type law is a theorem; the
 energy route to the v-chain additive readout reduces to (i) the same exp/log
@@ -325,7 +326,7 @@ defines its free energy by the log-det convention.
   class is P1's own hypothesis), and **(b)** through the additive generator,
   which the framework **builds** as `Ĥ = −log(T̂²)/(2a_τ)` with `{(T̂²)^s}` a
   single `{r ↦ r^s}` orbit whose additive member is `log` (runner T5). So the
-  additive readout is the **`log` member of the orbit** — face ADD — not a prior
+  additive readout is the **`log` generator of the orbit** — face ADD — not a prior
   structure. The remaining leg, "`W` **is** the free energy," is defined by the
   log-det convention (runner T7) and is content (II.b) `⇔` P1. **P1-equivalent.**
 
@@ -408,10 +409,10 @@ tensor product," via the **same** `exp`/`log` map (runner T5: `Ĥ = −log(T̂²
 E_1 n_1 + E_2 n_2` exactly). Moreover the **whole family** `{(T̂²)^s}` is
 multiplicative over modes for every `s` (`(T̂²)^s = ⊗_p diag(1, e^{−2sE(p)})`,
 runner T5) — a **single `{r ↦ r^s}` orbit** — and the additive generator is the
-`s → 0` (`log`) member: `−log((T̂²)^s)/(2s) = Ĥ` for every `s` (runner T5). Thus
+`log` generator (the normalized `s → 0` derivative, not the `s → 0` member `r^s → 1`): `−log((T̂²)^s)/(2s) = Ĥ` for every `s` (runner T5). Thus
 "`Ĥ` additive" sits in **face ADD** of #2504's dichotomy, applied at the
 **transfer-operator** level. It does **not** supply an additive readout **prior
-to** a `log` choice; the additive coordinate **is** the `log` member of the
+to** a `log` choice; the additive coordinate **is** the `log` generator of the
 orbit.
 
 **Steelman (runner T6).** Additivity of `H` is **not generic**. For an
@@ -462,9 +463,11 @@ through additivity content P1 already names.
   and **singles nothing** (the #2504/#2456 Born/normalized-gradient result, here
   at the energy level).
 
-There is **no third energy readout** that fixes a finite nonzero exponent
-without referencing the bare additive value. The energy route therefore
-**collapses into #2504's dichotomy** `{face ADD = P1, face BLIND = nothing}`,
+The two constructed readouts (bare-additive `log`; intensive normalized) are the
+tested faces; a full classification of the readout space (which would need the
+multiplicative Cauchy theorem under continuity/measurability) is not carried out
+here, so **no third energy readout** is claimed excluded. On the tested surface
+the energy route **collapses into #2504's dichotomy** `{face ADD = P1, face BLIND = nothing}`,
 relocated to the energy ledger. It is **not** an out-of-class path-(a′) input.
 
 ### 3.5 Why this is not a derivation of `log` (circularity flag)
@@ -498,7 +501,7 @@ it only to **prove the energy route is P1-equivalent**.
   is consistent (§1, runner T1).
 - **Provides a reusable closer.** Future agents proposing "the additive readout
   is forced because the quantity is an energy" can be pointed to §3.2/§3.3:
-  either the additive generator is the `log` member of the transfer orbit (face
+  either the additive generator is the `log` generator of the transfer orbit (face
   ADD), or the free-energy identification is (II.b) = P1, or the intensive
   variant is face BLIND.
 
@@ -547,7 +550,7 @@ reproven theorems; the class boundary is stated explicitly.
 | Convention/reframe accepting P1 as a classification premise | OPEN FOR USER/REPO POLICY | Names/ratifies the premise; not a derivation. |
 
 **N2 — Wall-independence audit.** The walls collapse to one load-bearing wall on
-the energy route: the additive generator is the `log` member of the transfer
+the energy route: the additive generator is the `log` generator of the transfer
 orbit (Pivot 1, face ADD) and the free-energy identification is (II.b) = P1
 (Pivot 2). The symmetry-type law and the `exp`/`log` bridge are *separate
 theorems*, not walls.
@@ -580,7 +583,7 @@ premise. Neither is called a new axiom and neither is foreclosed.
 prior to any `log` bookkeeping — that is an out-of-class structural fact, not a
 selection." Response: in *this* framework the Hamiltonian is **not** a primitive
 (the baseline carries no dynamics) and is **realized** as `Ĥ = −log(T̂²)` with `T̂²`
-multiplicative; its additivity is the `log` member of the transfer orbit (runner
+multiplicative; its additivity is the `log` generator of the transfer orbit (runner
 T5), and holds **only** in the independent class (runner T6), which is P1's
 hypothesis. The "prior physical additivity of energy" is, operationally, the
 admitted additive/cluster property (Haag; Weinberg §4.4) — face ADD. A genuinely

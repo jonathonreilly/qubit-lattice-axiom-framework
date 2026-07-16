@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py
-runner_sha256: 68daa92978e535a982a2062036af2038fc10b9fe0030b20165787d321f2d7e68
+runner_sha256: ea69b5d85e6b74bf9de54b2a91156235511482d8d555be7dbb5745dee1fcf223
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================================

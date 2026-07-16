@@ -17,10 +17,10 @@ on the finite weight box B = {(p, q) : 0 <= p, q <= 4}. Specifically:
        in B, with character-coefficient agreement checked by Haar
        inner-product expansion against rho_(p,q);
 
-  (M2) forward convolution-realization at finite-box scope:
-       C_(Z_beta^env|_B) chi_(p,q) = rho_(p,q) chi_(p,q),
-       and R_beta^env|_B = C_(Z_beta^env|_B)|_B to machine precision in
-       operator norm;
+  (M2) forward scale-divided convolution-realization at finite-box scope:
+       C_(Z_beta^env|_B/z_00) chi_(p,q) = rho_(p,q) chi_(p,q),
+       and R_beta^env|_B = C_(Z_beta^env|_B/z_00)|_B to machine precision
+       in operator norm;
 
   (M3) inverse Peter-Weyl finite-box uniqueness: for a perturbed
        eigenvalue sequence, the resulting normalized truncated class
@@ -151,7 +151,8 @@ def normalized_convolution_eigenvalues(
     Z|_B and the normalization z_00, compute the normalized convolution
     operator's eigenvalues on chi_(p,q):
 
-      C_Z chi_(p,q) = rho_(p,q) chi_(p,q),  rho_(p,q) = Z_coeffs[i] / (z_00 * d_i).
+      C_(Z/z_00) chi_(p,q) = rho_(p,q) chi_(p,q),
+      rho_(p,q) = Z_coeffs[i] / (z_00 * d_i).
 
     This is the bounded-companion (N2) convolution-on-characters identity
     used as a black-box forward direction; the inverse direction (M3) is
@@ -165,7 +166,7 @@ def normalized_convolution_eigenvalues(
 
 
 def main() -> int:
-    print("Block 19 inverse Peter-Weyl finite-box convolution-realization")
+    print("Finite-box inverse Peter-Weyl convolution-realization")
     print(f"uniqueness runner -- NMAX={NMAX}, beta={BETA}, |B|={(NMAX+1)**2}.")
     print()
 
@@ -216,22 +217,22 @@ def main() -> int:
     )
 
     # ---- M2: forward convolution-realization on H_B
-    # C_(Z|_B) chi_(p,q) = rho_(p,q) chi_(p,q), recovered by dividing the
+    # C_(Z|_B/z_00) chi_(p,q) = rho_(p,q) chi_(p,q), recovered by dividing the
     # Peter-Weyl coefficient by z_00 d_(p,q) and reading off the eigenvalue.
     eigs_recovered = normalized_convolution_eigenvalues(Z_coeffs, z00)
     eig_match_err = float(np.max(np.abs(eigs_recovered - rho)))
     check(
-        "(M2) C_(Z|_B) chi_(p,q) = rho_(p,q) chi_(p,q) (eigenvalue recovery)",
+        "(M2) C_(Z|_B/z_00) chi_(p,q) = rho_(p,q) chi_(p,q) (eigenvalue recovery)",
         eig_match_err == 0.0,
         f"eigenvalue recovery max error = {eig_match_err:.3e}",
     )
-    # Operator equality R = C_(Z|_B) in operator norm on H_B
-    C_Z = np.diag(eigs_recovered)
-    op_norm_err = float(np.linalg.norm(R - C_Z, ord=2))
+    # Operator equality R = C_(Z|_B/z_00) in operator norm on H_B
+    C_Z_over_z00 = np.diag(eigs_recovered)
+    op_norm_err = float(np.linalg.norm(R - C_Z_over_z00, ord=2))
     check(
-        "(M2) R_beta^env|_B = C_(Z_beta^env|_B)|_B in operator norm",
+        "(M2) R_beta^env|_B = C_(Z_beta^env|_B/z_00)|_B in operator norm",
         op_norm_err == 0.0,
-        f"||R - C_Z||_2 = {op_norm_err:.3e}",
+        f"||R - C_(Z/z_00)||_2 = {op_norm_err:.3e}",
     )
 
     # ---- M3: inverse Peter-Weyl finite-box uniqueness via perturbation check
@@ -269,8 +270,8 @@ def main() -> int:
         distinct_err > 0.0,
         f"max coefficient difference = {distinct_err:.3e}",
     )
-    # The eigenvalue recovery on Z'|_B returns rho_prime, not rho. The check
-    # is: C_(Z'|_B) chi_(p,q) = rho'_(p,q) chi_(p,q), i.e. eigenvalue
+    # The eigenvalue recovery on Z'|_B/z_00 returns rho_prime, not rho. The
+    # check is: C_(Z'|_B/z_00) chi_(p,q) = rho'_(p,q) chi_(p,q), i.e. eigenvalue
     # extraction from Z'|_B coefficients returns rho_prime.
     eigs_prime_recovered = normalized_convolution_eigenvalues(Z_prime_coeffs, z00)
     inverse_recovery_err = float(np.max(np.abs(eigs_prime_recovered - rho_prime)))
@@ -378,38 +379,25 @@ def main() -> int:
         f"checked {sym_size} characters in B_SYM",
     )
 
-    # Symbolic uniqueness: if two coefficient sequences (z00, rho) and (z00', rho')
-    # give the same C_Z on H_B_SYM, then rho_(p,q) = rho'_(p,q) for all
-    # (p,q) in B_SYM. We verify this by writing the constraint
-    #   z_00 * d * rho = z_00' * d * rho'
-    # on a per-character basis and solving symbolically.
-    z00p_sym = sp.Symbol("z00p", positive=True)
+    # Symbolic uniqueness: equality of scale-divided coefficient vectors
+    # diag(d_(p,q)) rho and diag(d_(p,q)) rho' forces rho=rho' because the
+    # coefficient map is an invertible diagonal matrix.
     sym_rhop = [sp.symbols(f"rhop_{i}") for i in range(sym_size)]
-    # Convolution eigenvalues from the two side: rho_(p,q) and rhop_(p,q).
-    # Constraint: rho_(p,q) = rhop_(p,q) (since both equal the same
-    # diagonal operator's eigenvalue on chi_(p,q)). Then we ask whether
-    # the resulting normalized truncated class functions are equal:
-    #   Z|_B / z_00 = sum d_(p,q) rho_(p,q) chi_(p,q)
-    #   Z'|_B / z_00' = sum d_(p,q) rhop_(p,q) chi_(p,q)
-    # On the orthonormal character basis, equality forces
-    # d_(p,q) rho_(p,q) = d_(p,q) rhop_(p,q), i.e. rho = rhop on B.
-    # Verify symbolically by substituting the constraint and showing the
-    # difference vanishes.
-    sym_diff = [
-        sp.simplify(
-            sp.Integer(dim_su3(p, q)) * sym_rho[i]
-            - sp.Integer(dim_su3(p, q)) * sym_rhop[i]
-        )
-        for i, (p, q) in enumerate(sym_weights)
-    ]
-    sym_uniqueness_consistent = all(
-        sp.simplify(sym_diff[i].subs(sym_rhop[i], sym_rho[i])) == 0
-        for i in range(sym_size)
+    coefficient_map = sp.diag(
+        *[sp.Integer(dim_su3(p, q)) for p, q in sym_weights]
+    )
+    rho_difference = sp.Matrix(sym_rho) - sp.Matrix(sym_rhop)
+    coefficient_difference = coefficient_map * rho_difference
+    recovered_difference = coefficient_map.inv() * coefficient_difference
+    sym_uniqueness_forced = (
+        coefficient_map.det() != 0
+        and recovered_difference == rho_difference
+        and coefficient_map.rank() == sym_size
     )
     check(
-        "(M6) sympy NMAX_SYM=2: normalized-truncation uniqueness is symbolically forced",
-        sym_uniqueness_consistent,
-        "rho = rhop iff truncated normalized class functions agree on B_SYM",
+        "(M6) sympy NMAX_SYM=2: scale-divided truncation uniqueness is symbolically forced",
+        sym_uniqueness_forced,
+        "the diagonal coefficient map has full rank, so equal coefficients force rho=rhop",
     )
 
     # ---- Summary

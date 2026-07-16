@@ -211,16 +211,26 @@ so `C` mixes characters and is not diagonal. Replacing `C` by `diag(C)` loses
 the cross terms in `M_beta C M_beta`; a `kappa`-only formula is therefore not
 valid for a general positive swap-symmetric operator.
 
+The corresponding finite kernel
+
+`K_C(U,V) := sum_(lambda,mu) C_(lambda,mu)
+chi_lambda(U) overline(chi_mu(V))`
+
+is separately conjugation invariant in `U` and `V`, hence in particular
+simultaneous-conjugation invariant. Thus the hostile example satisfies the old
+invariance premise as well as positivity and self-adjointness.
+
 The representation-theoretic condition that would justify character
 diagonality is stronger: for example, derive an actual kernel
 
 `K(U,V) = k(U V^(-1))`
 
-with `k` a central class function, or prove the equivalent full regular-action
-commutation needed for central convolution. Then Schur/Peter-Weyl theory gives
-character eigenvectors. Simultaneous conjugation alone only commutes with the
-conjugation action; it does not provide this translation/convolution
-structure.
+with `k` a central class function. Alternatively, after extending the operator
+to the relevant `L^2(SU(3))` representation space, prove the full left/right
+regular-action intertwining conditions whose commutant gives central
+convolution. Then Schur/Peter-Weyl theory gives character eigenvectors.
+Simultaneous conjugation alone only commutes with the conjugation action; it
+does not provide this translation/convolution structure.
 
 For the Wilson application, the remaining wall is therefore an explicit
 calculation or theorem showing that the algebraically stripped, compressed

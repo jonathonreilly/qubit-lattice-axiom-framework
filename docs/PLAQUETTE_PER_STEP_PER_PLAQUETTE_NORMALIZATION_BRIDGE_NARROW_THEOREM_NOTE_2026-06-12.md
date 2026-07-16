@@ -160,22 +160,16 @@ marked-slice/bulk-average and spatial/temporal-class translation bridge in
 
 ## Source-Sector Specialization
 
-The source-sector authority
-[`GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
-states:
-
-```text
-On one time step, the marked spatial plaquette enters the Wilson kernel with
-half weight on the incoming slice and half weight on the outgoing slice:
-```
-
-and gives
+The Wilson one-step kernel displayed above places one half of each spatial
+slice action on either side of the mixed kernel. On the finite source packet,
+the conditional algebra is written
 
 ```text
 T_beta = exp[(beta / 2) J] D_beta exp[(beta / 2) J]
-
-only conditionally for an explicitly supplied character-diagonal `D_beta`.
 ```
+
+Here the middle `D_beta` is explicitly supplied as character-diagonal; this
+notation does not derive a physical Wilson residual.
 
 For the finite source-sector machinery, the beta-dependent finite packet is
 written as

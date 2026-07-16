@@ -11,6 +11,10 @@ from pathlib import Path
 
 import numpy as np
 
+from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
+    exact_small_case as source_factorization_exact_small_case,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -83,7 +87,8 @@ def main() -> int:
     transfer = read("docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md")
     strong_cp = read("docs/STRONG_CP_THETA_ZERO_NOTE.md")
     factor = read("docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md")
-    factor_script = read("scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py")
+    factor_scope = " ".join(factor.split())
+    factor_exact = source_factorization_exact_small_case()
     underdet = read("docs/GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md")
     observable = read("docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md")
     support = read("docs/SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md")
@@ -119,10 +124,11 @@ def main() -> int:
     )
     check(
         "The source-sector note and script restrict the theorem to supplied diagonal D and retract Wilson-derived diagonality",
-        "conditional theorem for a supplied `D_beta`" in factor
-        and "does not derive a\nWilson residual operator" in factor
-        and "does not derive a Wilson residual D_beta" in factor_script
-        and "positive self-adjoint swap symmetry alone does not imply character" in factor_script,
+        "conditional on a supplied positive character-diagonal operator" in factor_scope
+        and "stripped Wilson residual is claimed" in factor_scope
+        and bool(factor_exact["formula_exact"])
+        and bool(factor_exact["hostile_mixing"])
+        and bool(factor_exact["shadow_fails"]),
     )
     check(
         "The Perron/Jacobi note says even the sharpened factorized class still does not force unique framework-point data",

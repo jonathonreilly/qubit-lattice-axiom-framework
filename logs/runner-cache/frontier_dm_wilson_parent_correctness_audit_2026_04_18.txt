@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_parent_correctness_audit_2026_04_18.py
-runner_sha256: b537631e512760239bde84f22207b2a2d4cd0bd5965e77a8c2ee1aebd449a64f
+runner_sha256: baa2bf67fb680fa2182faf0bb97b4c326689809163fc266638619d89c10da7e6
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.09

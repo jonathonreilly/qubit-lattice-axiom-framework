@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py
-runner_sha256: 53bb40d55dbe234dd4f0035f7ea4e5229eddbee74cd9f985c3fb429fefd48512
+runner_sha256: cc6e100cd1f00b9dbd1830ff3010235dac0f619ffcd397db6b67369ce09f595b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -16,14 +16,14 @@ Goal: source repair + sympy-symbolic verification of (T1)-(T4) under cited (I1)-
 ----------------------------------------------------------------------------------------
 Part 0a: supplied-input scope and source checks
 ----------------------------------------------------------------------------------------
-  [PASS (A)] I4 source files are present  (Wilson positivity note and runner exist in the restricted packet surface)
-  [PASS (A)] source note exposes plain primary runner and cache metadata  (audit-runner extraction can discover the restricted packet without following markdown link targets)
-  [PASS (A)] parent finite-packet notes keep the physical compression theorem open  (the formal supplied-sequence theorem is not promoted to a Wilson identification)
-  [PASS (A)] I4 source states the bounded one-link coefficient-positivity theorem  (no generated audit ledger status is consumed)
-  [PASS (A)] target note cites the Wilson one-link positivity source for the supplied local coefficient example  (the source is not used to derive D_beta)
-  [PASS (A)] target note states the strict supplied local-coefficient hypothesis  (local nonvanishing does not imply residual diagonality)
-  [PASS (A)] target note narrows Z to compatible finite-window formal convolution packaging  (no hidden all-weight class-function object is required)
-  [PASS (A)] target note excludes Wilson identification, all-weight convergence, and full-Hilbert-space equality  (formal sequence boundary is explicit)
+  [PASS (A)] the theorem note and constructive Wilson support files are present  (all paths are durable repository files)
+  [PASS (A)] the paired runner and cache paths are present  (runner/cache discovery does not depend on note prose)
+  [PASS (A)] exact supplied diagonal quotient equals D_loc^{-1} D  (representative zero-trivial semidefinite packet checked exactly)
+  [PASS (A)] the supplied quotient is positive semidefinite and swap-symmetric  (nonnegativity and conjugation symmetry are exact)
+  [PASS (A)] zero trivial kappa is admitted while actual-trivial normalization is unavailable  (the unnormalized quotient exists but division by z_(0,0) does not)
+  [PASS (A)] hostile C is exactly positive definite, self-adjoint, swap-symmetric, and off-diagonal  (Sylvester minors and the explicit mixing entry are exact)
+  [PASS (A)] diagonal projection loses the hostile operator  (a kappa-only helper discards exact off-diagonal data)
+  [PASS (A)] finite-window Peter-Weyl coefficient map is injective  (nonzero irrep dimensions give a full-rank diagonal map)
   [PASS (A)] constructive SU(3) tensor path reaches every sampled weight  (checked 0<=p,q<=8; min multiplicity=1)
   [PASS (A)] strict beta>0 Wilson lower term is positive on the source certificate grid  (n=p+q term positive for beta>0; beta=0 boundary not overclaimed)
 
@@ -38,8 +38,8 @@ Part 0b: symbolic setup
 Part 1: (T1) structural diagonality of R_beta^env
 ----------------------------------------------------------------------------------------
   [PASS (A)] (T1) R_beta^env is diagonal on the character basis (off-diagonal entries vanish symbolically)  (diag operator on orthonormal basis)
-  [PASS (A)] (T1) R_beta^env is self-adjoint (real diagonal entries)  (all eigenvalues kappa/(a^4) are real positive symbols)
-  [PASS (A)] (T1) R_beta^env eigenvalues are positive (kappa > 0, a > 0 from (I1)+(I2)+(I4))  (every eigenvalue is product/ratio of positive symbols)
+  [PASS (A)] (T1) R_beta^env is self-adjoint (real diagonal entries)  (all eigenvalues kappa/(a^4) are real symbols)
+  [PASS (A)] (T1) R_beta^env eigenvalues are nonnegative (kappa >= 0, a > 0)  (every eigenvalue is a nonnegative symbol divided by a positive fourth power)
   [PASS (A)] (T1) R_beta^env commutes with the swap involution S  (kappa_(p,q) = kappa_(q,p), a_(p,q) = a_(q,p) enforced by symbol-pair sharing)
 
 ----------------------------------------------------------------------------------------
@@ -72,7 +72,7 @@ Part 5: algebraic compatibility R_beta^env = D_beta^loc^{-1} * D_beta
 ----------------------------------------------------------------------------------------
 Part 6: counterfactual probe (D^loc strip is load-bearing)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] counterfactual: stripping only exp[(beta/2)J] gives kappa_(p,q) != kappa_(p,q)/a_(p,q)^4 for (p,q) != (0,0)  (confirms D^loc strip is load-bearing in (D1))
+  [PASS (A)] counterfactual: an admissible a_(1,0)=2 probe shows that omitting D^loc can change the quotient  (kappa-kappa/a^4 = 15/16 for kappa=1, a=2)
   [PASS (A)] counterfactual: at (0,0), D_beta and R_beta^env have the same trivial-irrep eigenvalue  (a_(0,0) = 1 (I2 normalization) so a^4 = 1)
 
 ----------------------------------------------------------------------------------------

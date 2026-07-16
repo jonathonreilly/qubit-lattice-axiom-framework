@@ -29,17 +29,16 @@ The live stack now closes:
 But those facts do **not** yet determine the explicit `beta = 6` Perron moments
 or Jacobi coefficients.
 
-The new local/environment factorization theorem sharpens this one step further:
+The obstruction can be sharpened inside a smaller supplied model class. Supply
+both a strictly positive diagonal local packet `D_6^loc` and a strictly
+positive diagonal swap-symmetric packet `R`, and set `D_6=D_6^loc R`. Even
+inside this restricted class, distinct supplied `R` packets can induce
+different Perron moments and therefore different Jacobi data for the same
+explicit source operator `J`.
 
-- the normalized mixed-kernel part is already fixed exactly to the local Wilson
-  marked-link factor `D_6^loc`,
-- so the still-open freedom sits only in residual source-sector environment
-  data beyond that exact local factor.
-
-Even after the mixed kernel is fixed in that exact way, distinct admissible
-positive conjugation-symmetric residual source-sector environment operators can
-still induce different Perron moments and therefore different Jacobi data for
-the same explicit source operator `J`.
+This sharpening is not a physical mixed-kernel theorem. For the Wilson problem,
+the marked/non-marked compression and the character diagonality of the stripped
+two-slice residual are prior independent open walls.
 
 So the current exact stack still does **not** force the explicit framework-point
 Jacobi coefficients.
@@ -69,12 +68,13 @@ with:
 - `D_6 > 0`,
 - `S D_6 = D_6 S`.
 
-From the new local/environment factorization theorem already on `main`, the
-normalized mixed-kernel part is already explicit:
+For the supplied subclass used by this obstruction, choose an explicit
+strictly positive diagonal packet
 
 `D_6^loc chi_(p,q) = a_(p,q)(6)^4 chi_(p,q)`.
 
-So the conditional class studied by this obstruction is
+Then separately supply a strictly positive diagonal swap-symmetric `R` and
+study
 
 `T = M D_6^loc R M`,
 
@@ -83,6 +83,10 @@ with:
 - `R` diagonal in the character basis,
 - `R > 0`,
 - `S R = R S`.
+
+This factorization is a definition of the obstruction class. It does not assert
+that the physical Wilson mixed kernel compresses to `D_6^loc`, or that its
+stripped residual is diagonal.
 
 Every such supplied-class `T` satisfies the same structural boundary:
 
@@ -107,8 +111,7 @@ Then
 are both positivity-improving self-adjoint transfer operators with unique
 strictly positive Perron states `psi_A`, `psi_B`.
 
-Both lie inside the current exact factorized source-sector boundary already
-closed on `main`.
+Both lie inside the supplied factorized model class defined above.
 
 ## Theorem 2: distinct admissible residual source-sector environment operators can induce distinct Perron moments for the same source operator
 
@@ -146,19 +149,20 @@ Therefore:
 ## What this closes
 
 - exact proof that explicit source-operator realization plus Perron reduction
-  still do **not** force a unique framework-point Perron measure even after the
-  exact local Wilson marked-link factor is fixed
+  still do **not** force a unique framework-point Perron measure even inside a
+  supplied strictly positive diagonal `D_6^loc R` subclass
 - exact proof that symmetry-reduced Jacobi coefficients are still open on the
   current stack
 - exact clarification of what new theorem object is actually needed next:
-  the explicit residual source-sector environment operator beyond the normalized
-  mixed-kernel local factor, or an equivalent exact Perron eigenvector
-  construction once that local factor is fixed
+  first the physical mixed-kernel compression/diagonality identification, then
+  the explicit resulting source-sector operator or an equivalent exact Perron
+  eigenvector construction
 
 ## What this does not close
 
 - explicit Jacobi coefficients at `beta = 6`
 - explicit Perron moments at `beta = 6`
+- physical Wilson mixed-kernel compression or residual diagonality
 - analytic closure of canonical `P(6)`
 - repo-wide repinning of the canonical plaquette
 

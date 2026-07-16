@@ -24,9 +24,10 @@ The runner computes a controlled tube-family probe for the native
 2. Computes the K-plaquette tube family at `beta_env = 6` for `k = 0..6`.
 3. Verifies NMAX convergence for the `k = 1` tube value with drift
    `1.329e-9` between `NMAX = 6` and `NMAX = 7`.
-4. Names the exact remaining closure target: the L_s=2 APBC spatial-cube
-   boundary character measure `rho_(p,q)(6)` for the actual five
-   unmarked plaquettes, not a tube ansatz.
+4. Names one exact remaining evaluation target: the L_s=2 APBC spatial-cube
+   boundary character measure `rho_(p,q)(6)` for the actual five unmarked
+   plaquettes, not a tube ansatz, while keeping the separate stripped
+   two-slice operator-compression/diagonality theorem open.
 
 The tube values are staging data. They are not a strict lower bound for
 the physical cube because the cube has a specific finite geometry and
@@ -128,9 +129,9 @@ with width approximately `0.170999`. That is far wider than the no-go
 witness scale `epsilon_witness ~= 3.03e-4`, so this staging gate does
 not close the observable bridge.
 
-## 4. Closure Target
+## 4. Closure Targets
 
-The next required computation is exact and finite:
+One required computation is exact and finite:
 
 ```text
 Compute rho_(p,q)(6) for the unmarked 3D Wilson environment on the
@@ -142,6 +143,12 @@ The ingredients are already named: Wilson character coefficients from
 Bessel determinants, SU(3) fusion/intertwiner data, and the explicit
 cube link/plaquette incidence pattern. The current runner intentionally
 does not perform that cube solve.
+
+That cube solve alone would supply static boundary data, not the physical
+source-sector residual. A separate exact calculation must identify the
+algebraically stripped two-slice Wilson compression with the relevant boundary
+operator and prove central-convolution/character-diagonal structure, or directly
+prove all off-diagonal character matrix elements vanish.
 
 ## 5. Audit Handling
 

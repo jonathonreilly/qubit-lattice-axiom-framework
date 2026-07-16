@@ -126,8 +126,10 @@ positive definite, hence invertible.
 
 **Conclusion (U2) (local-factor invertibility).** For `beta > 0`, the
 canonical single-link Wilson normalization satisfies `a_(0,0)(beta) = 1`
-and `a_(p,q)(beta) > 0` for all `(p,q)` (strict positivity of the SU(3)
-character integral of a positive central function on a compact group).
+and `a_(p,q)(beta) > 0` for all `(p,q)`. The strict coefficient statement is
+supplied by the constructive representation-ring/exponential-series argument
+for the Wilson character coefficients: a positive `n=p+q` term reaches every
+dominant weight, while all series contributions are nonnegative.
 Therefore `D_beta^loc|_B` has strictly positive diagonal entries, hence
 strictly positive determinant, hence invertible.
 

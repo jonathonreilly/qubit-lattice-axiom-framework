@@ -26,6 +26,9 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 import gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11 as one_word
+from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
+    exact_small_case as source_factorization_exact_small_case,
+)
 
 
 AUDIT_TIMEOUT_SEC = 600
@@ -105,13 +108,6 @@ def off_diagonal_perturbation(
         perturb[i, j] = value
         perturb[j, i] = value
     return perturb
-
-
-def note_text() -> str:
-    try:
-        return NOTE_PATH.read_text(encoding="utf-8")
-    except OSError:
-        return ""
 
 
 def main() -> int:
@@ -234,36 +230,26 @@ def main() -> int:
         f"base={p_packet:.17g}, perturbed={p_perturbed:.17g}",
     )
 
-    section("Part 5: note hygiene")
-    text = note_text()
-    expected_links = [
-        "[GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md]",
-        "[GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md]",
-        "[GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md]",
-        "[GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md]",
-    ]
-    check("note file exists and is readable", bool(text))
+    section("Part 5: durable interface semantics")
+    source_exact = source_factorization_exact_small_case()
+    check("paired theorem note exists as a durable repository file", NOTE_PATH.is_file())
     check(
-        "note delegates status to the independent audit lane",
-        "Status authority:** independent audit lane only" in text
-        or "Status authority: independent audit lane only" in text,
+        "copying an equal supplied rho vector leaves the operator readout unchanged",
+        source_p(setup, rho_packet_source.copy()) == p_packet,
     )
     check(
-        "one-hop authorities are markdown links",
-        all(link in text for link in expected_links),
-    )
-    branch_local_ref_prefix = "." + "claude/"
-    check(
-        "durable context pointers are plain-text paths",
-        "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_PERRON_DERIVED_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-11.md" in text
-        and "docs/GAUGE_VACUUM_PLAQUETTE_WIDTH_REDUCTION_MAP_DERIVED_COUPLED_LIFT_BOUNDED_NOTE_2026-06-12.md" in text
-        and branch_local_ref_prefix not in text,
+        "diagonal extraction is idempotent on an already diagonal supplied operator",
+        np.array_equal(diagonal_interface(env_central), rho_packet),
     )
     check(
-        "note names the conditional diagonal lane and its outside-scope observables",
-        "source-sector readouts of the factorized marked plaquette kernel" in " ".join(text.split())
-        and "observables outside the marked source-sector kernel" in " ".join(text.split())
-        and "does not prove that the physical stripped Wilson" in " ".join(text.split()),
+        "the hostile raw operator cannot be reconstructed from its diagonal interface",
+        not np.array_equal(np.diag(diagonal_interface(env_perturbed)), env_perturbed),
+    )
+    check(
+        "the primary exact hostile control independently rejects a kappa-only physical inference",
+        bool(source_exact["formula_exact"])
+        and bool(source_exact["hostile_mixing"])
+        and bool(source_exact["shadow_fails"]),
     )
 
     print()

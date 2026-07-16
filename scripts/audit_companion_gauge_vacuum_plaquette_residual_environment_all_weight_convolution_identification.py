@@ -34,8 +34,6 @@ FAIL = 0
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md"
-RESIDUAL_PARENT_PATH = ROOT / "docs" / "GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md"
-CHAR_MEASURE_PARENT_PATH = ROOT / "docs" / "GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md"
 WILSON_NOTE_PATH = ROOT / "docs" / "WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md"
 WILSON_RUNNER_PATH = ROOT / "scripts" / "wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py"
 SELF_RUNNER = "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py"
@@ -140,58 +138,85 @@ def main() -> int:
     section("Part 0a: supplied-input scope and source checks")
     # -------------------------------------------------------------------
 
-    note_text = NOTE_PATH.read_text(encoding="utf-8")
-    residual_parent_text = RESIDUAL_PARENT_PATH.read_text(encoding="utf-8")
-    char_measure_parent_text = CHAR_MEASURE_PARENT_PATH.read_text(encoding="utf-8")
-    wilson_note_text = WILSON_NOTE_PATH.read_text(encoding="utf-8")
+    check(
+        "the theorem note and constructive Wilson support files are present",
+        NOTE_PATH.is_file() and WILSON_NOTE_PATH.is_file() and WILSON_RUNNER_PATH.is_file(),
+        detail="all paths are durable repository files",
+    )
+    check(
+        "the paired runner and cache paths are present",
+        (ROOT / SELF_RUNNER).is_file() and (ROOT / SELF_CACHE).is_file(),
+        detail="runner/cache discovery does not depend on note prose",
+    )
 
-    check(
-        "I4 source files are present",
-        WILSON_NOTE_PATH.exists() and WILSON_RUNNER_PATH.exists(),
-        detail="Wilson positivity note and runner exist in the restricted packet surface",
+    scope_weights = weights_box(1)
+    scope_swap, scope_index = swap_matrix(scope_weights)
+    scope_kappa = [
+        sympy.Integer(0),
+        sympy.Integer(2),
+        sympy.Integer(2),
+        sympy.Integer(3),
+    ]
+    scope_a = [
+        sympy.Integer(1),
+        sympy.Integer(2),
+        sympy.Integer(2),
+        sympy.Integer(3),
+    ]
+    scope_D = diag_matrix(scope_kappa)
+    scope_Dloc = diag_matrix([value**4 for value in scope_a])
+    scope_R = diag_matrix(
+        [scope_kappa[i] / scope_a[i] ** 4 for i in range(len(scope_weights))]
     )
     check(
-        "source note exposes plain primary runner and cache metadata",
-        f"**Primary runner:** `{SELF_RUNNER}`" in note_text
-        and f"**Runner cache:** `{SELF_CACHE}`" in note_text,
-        detail="audit-runner extraction can discover the restricted packet without following markdown link targets",
+        "exact supplied diagonal quotient equals D_loc^{-1} D",
+        scope_Dloc.inv() * scope_D == scope_R,
+        detail="representative zero-trivial semidefinite packet checked exactly",
     )
     check(
-        "parent finite-packet notes keep the physical compression theorem open",
-        "does **not** claim that the stripped residual source-sector operator" in residual_parent_text
-        and "open operator-compression gate" in char_measure_parent_text,
-        detail="the formal supplied-sequence theorem is not promoted to a Wilson identification",
+        "the supplied quotient is positive semidefinite and swap-symmetric",
+        all(scope_R[i, i] >= 0 for i in range(len(scope_weights)))
+        and scope_swap * scope_R == scope_R * scope_swap,
+        detail="nonnegativity and conjugation symmetry are exact",
     )
     check(
-        "I4 source states the bounded one-link coefficient-positivity theorem",
-        "c_lambda(beta) >= 0" in wilson_note_text
-        and "gauge kernel alone" in wilson_note_text,
-        detail="no generated audit ledger status is consumed",
+        "zero trivial kappa is admitted while actual-trivial normalization is unavailable",
+        scope_kappa[scope_index[(0, 0)]] == 0,
+        detail="the unnormalized quotient exists but division by z_(0,0) does not",
+    )
+
+    scope_v = zeros(len(scope_weights), 1)
+    scope_v[scope_index[(0, 0)]] = 1
+    scope_v[scope_index[(1, 1)]] = 1
+    scope_hostile = sympy.eye(len(scope_weights)) + scope_v * scope_v.T
+    leading_minors = [
+        scope_hostile[:size, :size].det()
+        for size in range(1, len(scope_weights) + 1)
+    ]
+    check(
+        "hostile C is exactly positive definite, self-adjoint, swap-symmetric, and off-diagonal",
+        all(minor > 0 for minor in leading_minors)
+        and scope_hostile == scope_hostile.T
+        and scope_swap * scope_hostile == scope_hostile * scope_swap
+        and scope_hostile[scope_index[(0, 0)], scope_index[(1, 1)]] == 1,
+        detail="Sylvester minors and the explicit mixing entry are exact",
     )
     check(
-        "target note cites the Wilson one-link positivity source for the supplied local coefficient example",
-        "WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md" in note_text,
-        detail="the source is not used to derive D_beta",
+        "diagonal projection loses the hostile operator",
+        diag_matrix(
+            [scope_hostile[i, i] for i in range(len(scope_weights))]
+        )
+        != scope_hostile,
+        detail="a kappa-only helper discards exact off-diagonal data",
+    )
+    scope_schur_map = diag_matrix(
+        [sympy.Integer(dim_su3(p, q)) for p, q in scope_weights]
     )
     check(
-        "target note states the strict supplied local-coefficient hypothesis",
-        "a_(p,q)(beta) > 0" in note_text
-        and "conditional on `D_beta` itself being" in note_text,
-        detail="local nonvanishing does not imply residual diagonality",
-    )
-    check(
-        "target note narrows Z to compatible finite-window formal convolution packaging",
-        "formal convolution packaging" in note_text
-        and "On every finite weight window" in note_text
-        and "No convergence of an" in note_text,
-        detail="no hidden all-weight class-function object is required",
-    )
-    check(
-        "target note excludes Wilson identification, all-weight convergence, and full-Hilbert-space equality",
-        "does not derive the stripped Wilson residual" in note_text
-        and "No convergence of an" in note_text
-        and "no full-Hilbert-space operator equality" in note_text,
-        detail="formal sequence boundary is explicit",
+        "finite-window Peter-Weyl coefficient map is injective",
+        scope_schur_map.rank() == len(scope_weights)
+        and scope_schur_map.det() != 0,
+        detail="nonzero irrep dimensions give a full-rank diagonal map",
     )
 
     occurrence_box = 8
@@ -240,7 +265,7 @@ def main() -> int:
     S, index = swap_matrix(weights)
     n = len(weights)
 
-    # Abstract positive symbolic coefficient sequences for kappa and a.
+    # Abstract nonnegative kappa and strictly positive a coefficient sequences.
     # Enforce conjugation symmetry: kappa_(p,q) = kappa_(q,p), a_(p,q) = a_(q,p).
     # Implementation: use one symbol per unordered pair {(p,q), (q,p)}.
     unique_pairs = []
@@ -250,12 +275,13 @@ def main() -> int:
         key = tuple(sorted((p, q)))
         if key not in pair_to_sym_kappa:
             unique_pairs.append(key)
-            pair_to_sym_kappa[key] = Symbol(f"kappa_{key[0]}_{key[1]}", positive=True, real=True)
+            pair_to_sym_kappa[key] = Symbol(f"kappa_{key[0]}_{key[1]}", nonnegative=True, real=True)
             pair_to_sym_a[key] = Symbol(f"a_{key[0]}_{key[1]}", positive=True, real=True)
 
-    # Normalization conventions (from I1 + I2):
-    #   kappa_(0,0)(beta) > 0  (I1: D_beta is positive on trivial irrep)
+    # Normalization conventions for the actual-trivial-coefficient subsection:
+    #   kappa_(0,0)(beta) > 0
     #   a_(0,0)(beta) = 1      (I2: trivial-channel normalization)
+    pair_to_sym_kappa[(0, 0)] = Symbol("kappa_0_0", positive=True, real=True)
     pair_to_sym_a[(0, 0)] = sympy.Integer(1)
 
     kappa = [pair_to_sym_kappa[tuple(sorted(w))] for w in weights]
@@ -303,20 +329,18 @@ def main() -> int:
     check(
         "(T1) R_beta^env is self-adjoint (real diagonal entries)",
         self_adjoint,
-        detail="all eigenvalues kappa/(a^4) are real positive symbols",
+        detail="all eigenvalues kappa/(a^4) are real symbols",
     )
 
-    # Check positivity: every eigenvalue is positive on the assumption kappa, a > 0.
-    pos_eigenvalues = all(
-        R_env[i, i].is_positive is True or R_env[i, i].is_positive is None
-        for i in range(n)
+    # Check positive semidefiniteness: every eigenvalue is nonnegative when
+    # kappa>=0 and a>0.
+    nonnegative_eigenvalues = all(
+        R_env[i, i].is_nonnegative is True for i in range(n)
     )
-    # All entries are products/quotients of positive symbols, so all are positive in sympy:
-    pos_strong = all(R_env[i, i].is_positive for i in range(n))
     check(
-        "(T1) R_beta^env eigenvalues are positive (kappa > 0, a > 0 from (I1)+(I2)+(I4))",
-        pos_strong,
-        detail="every eigenvalue is product/ratio of positive symbols",
+        "(T1) R_beta^env eigenvalues are nonnegative (kappa >= 0, a > 0)",
+        nonnegative_eigenvalues,
+        detail="every eigenvalue is a nonnegative symbol divided by a positive fourth power",
     )
 
     # Check conjugation symmetry: [S, R_env] = 0.
@@ -491,15 +515,19 @@ def main() -> int:
     diff_from_correct = [
         simplify(eigs_strip_only_halfslice[i] - rho_env[i]) for i in range(n)
     ]
-    # We expect them to be different on every weight where a_(p,q)^4 != 1, i.e.
-    # for every (p,q) != (0,0):
-    counterfactual_differs = all(
-        diff_from_correct[i] != 0 for i in range(n) if weights[i] != (0, 0)
+    # The hypotheses allow a_(p,q)=1, so nontrivial weights need not differ.
+    # Exhibit one admissible exact probe where the local strip changes the
+    # eigenvalue: kappa_(1,0)=1 and a_(1,0)=2.
+    probe_i = index[(1, 0)]
+    counterfactual_probe = simplify(
+        diff_from_correct[probe_i].subs(
+            {kappa[probe_i]: sympy.Integer(1), a[probe_i]: sympy.Integer(2)}
+        )
     )
     check(
-        "counterfactual: stripping only exp[(beta/2)J] gives kappa_(p,q) != kappa_(p,q)/a_(p,q)^4 for (p,q) != (0,0)",
-        counterfactual_differs,
-        detail="confirms D^loc strip is load-bearing in (D1)",
+        "counterfactual: an admissible a_(1,0)=2 probe shows that omitting D^loc can change the quotient",
+        counterfactual_probe == Rational(15, 16),
+        detail=f"kappa-kappa/a^4 = {counterfactual_probe} for kappa=1, a=2",
     )
 
     # At (0,0), a_(0,0) = 1 so the two are equal — also expected.

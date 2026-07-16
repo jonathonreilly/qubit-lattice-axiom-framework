@@ -315,6 +315,9 @@ def main() -> int:
     hostile_vector[index[(1, 0)]] = 1
     R_hostile = mp.eye(n) + hostile_vector * hostile_vector.T
     K_hostile = reconstruct(R_hostile)
+    K_hostile_min_eig = float(
+        np.min(np.linalg.eigvalsh(mp_to_np(K_hostile)))
+    )
 
     K_hostile_self_adj_err = mp_max_abs_diff(K_hostile, K_hostile.T)
     K_hostile_swap_err = mp_max_abs_diff(swap * K_hostile, K_hostile * swap)
@@ -414,11 +417,12 @@ def main() -> int:
     )
     check(
         "(U4 hostile) positive self-adjoint swap-symmetric kernel data can strip to a positive self-adjoint swap-symmetric operator with off-diagonal character mixing",
-        K_hostile_self_adj_err < TOL and K_hostile_swap_err < TOL
+        K_hostile_min_eig > 0.0
+        and K_hostile_self_adj_err < TOL and K_hostile_swap_err < TOL
         and hostile_round_trip_err < TOL
         and R_recovered_self_adj_err < TOL and R_recovered_swap_err < TOL
         and R_recovered_diag_err > 0.5,
-        detail=f"K sym/swap=({K_hostile_self_adj_err:.3e},{K_hostile_swap_err:.3e}); round-trip={hostile_round_trip_err:.3e}; C sym/swap/offdiag=({R_recovered_self_adj_err:.3e},{R_recovered_swap_err:.3e},{R_recovered_diag_err:.3e})",
+        detail=f"min eig(K)={K_hostile_min_eig:.3e}; K sym/swap=({K_hostile_self_adj_err:.3e},{K_hostile_swap_err:.3e}); round-trip={hostile_round_trip_err:.3e}; C sym/swap/offdiag=({R_recovered_self_adj_err:.3e},{R_recovered_swap_err:.3e},{R_recovered_diag_err:.3e})",
     )
     check(
         "(U5) when K_6^src|_B is constructed from the bounded companion's canonical Wilson rho_(p,q)(6) coefficients, (S) recovers a diagonal operator whose entries equal rho_(p,q)(6) on the finite box (mpmath)",

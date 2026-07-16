@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow.py
-runner_sha256: e1a305eaa9e75fb971c426d28718204e080a566771257384122bbff46d1ef403
+runner_sha256: eecb8a83b53fef204496e8525392bee204a96c7a4da8da6a97a43d5e845fea06
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -53,7 +53,7 @@ Bounded-companion cross-check (canonical Wilson rho(6), mpmath)
   [PASS] [THEOREM] (U3b) the stripping identity (S) recovers a SECOND, distinct positive diagonal candidate residual R2 exactly from K = reconstruct(R2) on the finite box, establishing that (S) is a function (no admissibility freedom in the stripped residual)
          ||R2 - strip(reconstruct(R2))||=5.287e-51, ||R1 - R2||=6.704e-01, ||K1 - K2||=6.568e-01
   [PASS] [THEOREM] (U4 hostile) positive self-adjoint swap-symmetric kernel data can strip to a positive self-adjoint swap-symmetric operator with off-diagonal character mixing
-         K sym/swap=(3.889e-62,0.000e+00); round-trip=7.518e-51; C sym/swap/offdiag=(7.518e-51,1.605e-55,1.000e+00)
+         min eig(K)=1.038e-13; K sym/swap=(3.889e-62,0.000e+00); round-trip=7.518e-51; C sym/swap/offdiag=(7.518e-51,1.605e-55,1.000e+00)
   [PASS] [THEOREM] (U5) when K_6^src|_B is constructed from the bounded companion's canonical Wilson rho_(p,q)(6) coefficients, (S) recovers a diagonal operator whose entries equal rho_(p,q)(6) on the finite box (mpmath)
          ||R[rho(6)] - strip(...)||=2.213e-51, off-diag=2.213e-51, diag match=7.721e-53
   [PASS] [SUPPORT] the source operator J|_B is real symmetric and swap-invariant on the finite box

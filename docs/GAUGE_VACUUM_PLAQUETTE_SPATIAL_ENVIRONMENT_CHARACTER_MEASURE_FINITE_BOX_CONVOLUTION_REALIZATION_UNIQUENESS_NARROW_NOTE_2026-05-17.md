@@ -45,17 +45,25 @@ d_(p,q) = (p+1)(q+1)(p+q+2)/2.
 
 ## Conditional theorem
 
-Normalized convolution by `Z[rho]` acts on the supplied finite character
-packet by
+Define scale-divided convolution by
 
 ```text
-C_(Z[rho]) chi_(p,q) = rho_(p,q) chi_(p,q).
+(C_(Z[rho]/z_0) f)(V)
+  := integral_(SU(3)) (Z[rho](V W^(-1))/z_0) f(W) dW.
+```
+
+This is division by the supplied scale `z_0`; it is not normalization by the
+actual trivial character coefficient unless `rho_(0,0)=1`. It acts on the
+supplied finite character packet by
+
+```text
+C_(Z[rho]/z_0) chi_(p,q) = rho_(p,q) chi_(p,q).
 ```
 
 Therefore
 
 ```text
-C_(Z[rho])|_(H_B) = R[rho].
+C_(Z[rho]/z_0)|_(H_B) = R[rho].
 ```
 
 This is the finite Peter-Weyl identity
@@ -67,14 +75,14 @@ chi_lambda * chi_mu
 
 applied coefficient by coefficient.
 
-The normalized finite character polynomial is unique. If another finite
+The scale-divided finite character polynomial is unique. If another finite
 central polynomial
 
 ```text
 Z'(W) = z'_0 sum_((p,q) in B) d_(p,q) rho'_(p,q) chi_(p,q)(W)
 ```
 
-has the same normalized convolution action on `H_B`, character
+has the same scale-divided convolution action on `H_B`, character
 orthonormality gives
 
 ```text
@@ -85,8 +93,8 @@ for every weight in `B`, hence `Z'/z'_0 = Z[rho]/z_0`.
 
 ## Relation to algebraic stripping
 
-The sister note
-[GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_STRIPPING_UNIQUENESS_NARROW_NOTE_2026-05-17.md](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_STRIPPING_UNIQUENESS_NARROW_NOTE_2026-05-17.md)
+The context note
+`docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_STRIPPING_UNIQUENESS_NARROW_NOTE_2026-05-17.md`
 proves that, after a factorized form
 
 ```text
@@ -140,9 +148,12 @@ conjugation-swap symmetry alone do not supply that result.
 
 ## Dependencies
 
-- [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
-  supplies only the conditional finite-dimensional `M D M` algebra.
 - [SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md](SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md)
   supplies the character/convolution normalization.
 - [GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
   supplies the finite single-link coefficient witness only.
+
+Context only:
+`docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`
+and
+`docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_STRIPPING_UNIQUENESS_NARROW_NOTE_2026-05-17.md`.

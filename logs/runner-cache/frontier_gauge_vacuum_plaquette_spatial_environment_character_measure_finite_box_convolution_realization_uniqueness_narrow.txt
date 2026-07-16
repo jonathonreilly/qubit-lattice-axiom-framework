@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py
-runner_sha256: 087d3754e6a6331c54e5eb816cc320124b4bc060f746358fc80f3637439b526a
+runner_sha256: ec52d778e29e59b9b888431866914e3e6a3bfb89deefb42f7df917d877f51858
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
-Block 19 inverse Peter-Weyl finite-box convolution-realization
+Finite-box inverse Peter-Weyl convolution-realization
 uniqueness runner -- NMAX=4, beta=6.0, |B|=25.
 
   [PASS] [THEOREM] (M1) existence of Z|_B with character coefficients = z_00 d_(p,q) rho_(p,q)
@@ -15,10 +15,10 @@ uniqueness runner -- NMAX=4, beta=6.0, |B|=25.
          imaginary part max = 0.000e+00
   [PASS] [THEOREM] (M1) Z|_B character coefficients are conjugation-symmetric
          swap-asymmetry max = 4.441e-16
-  [PASS] [THEOREM] (M2) C_(Z|_B) chi_(p,q) = rho_(p,q) chi_(p,q) (eigenvalue recovery)
+  [PASS] [THEOREM] (M2) C_(Z|_B/z_00) chi_(p,q) = rho_(p,q) chi_(p,q) (eigenvalue recovery)
          eigenvalue recovery max error = 0.000e+00
-  [PASS] [THEOREM] (M2) R_beta^env|_B = C_(Z_beta^env|_B)|_B in operator norm
-         ||R - C_Z||_2 = 0.000e+00
+  [PASS] [THEOREM] (M2) R_beta^env|_B = C_(Z_beta^env|_B/z_00)|_B in operator norm
+         ||R - C_(Z/z_00)||_2 = 0.000e+00
   [PASS] [THEOREM] (M3) perturbed eigenvalue sequence is conjugation-symmetric
          sym error = 0.000e+00
   [PASS] [THEOREM] (M3) Z'|_B / z_0' is distinct from Z|_B / z_00 under perturbation
@@ -33,8 +33,8 @@ uniqueness runner -- NMAX=4, beta=6.0, |B|=25.
          |Z_coeff - c_(p,q)(6)| max = 1.110e-16
   [PASS] [THEOREM] (M6) sympy NMAX_SYM=2: inverse Peter-Weyl eigenvalue recovery is exact
          checked 9 characters in B_SYM
-  [PASS] [THEOREM] (M6) sympy NMAX_SYM=2: normalized-truncation uniqueness is symbolically forced
-         rho = rhop iff truncated normalized class functions agree on B_SYM
+  [PASS] [THEOREM] (M6) sympy NMAX_SYM=2: scale-divided truncation uniqueness is symbolically forced
+         the diagonal coefficient map has full rank, so equal coefficients force rho=rhop
 
 THEOREM PASS=13 FAIL=0
 

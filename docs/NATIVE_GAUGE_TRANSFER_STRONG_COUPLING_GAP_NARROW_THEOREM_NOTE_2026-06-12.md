@@ -33,9 +33,10 @@ inside the scope below.
 - [GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md)
   for the source character `J = (chi_(1,0)+chi_(0,1))/6` and the exact
   six-neighbor SU(3) dominant-weight recurrence.
-- [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
-  for the conditional source-sector `M D M` algebra reused after this note
-  independently supplies the finite Wilson-coefficient diagonal packet.
+- Context only:
+  `docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`.
+  This note independently supplies the finite Wilson-coefficient diagonal
+  packet.
 - [WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md](WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md)
   for the repo-internal Wilson SU(3) coefficient-positivity support.
 

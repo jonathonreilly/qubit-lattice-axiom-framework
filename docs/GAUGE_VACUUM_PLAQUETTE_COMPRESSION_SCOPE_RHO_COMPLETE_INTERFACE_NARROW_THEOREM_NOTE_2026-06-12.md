@@ -1,7 +1,7 @@
 # Gauge-Vacuum Plaquette Supplied-Rho Interface Conditional Theorem
 
 **Date:** 2026-06-12; supplied-input repin 2026-07-16
-**Claim type:** positive_theorem
+**Claim type:** bounded_theorem
 **Claim scope:** source-sector readouts of a finite factorized marked-plaquette
 kernel after a residual operator is explicitly supplied as character-diagonal.
 Within that declared diagonal class, its coefficient vector `rho_(p,q)` is a
@@ -29,7 +29,7 @@ This is an exact interface theorem inside the supplied diagonal class. It is
 not a theorem that the physical environment has no off-diagonal character
 data.
 
-## One-hop authorities
+## Inputs and context
 
 - [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
   supplies the conditional finite-dimensional `T=M D M` algebra for an
@@ -38,20 +38,15 @@ data.
   supplies the explicit finite local packet
   `D_beta^loc chi_(p,q)=a_(p,q)(beta)^4 chi_(p,q)` while leaving the actual
   mixed-kernel compression bridge open.
-- [GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md)
-  supplies only formal quotient/convolution packaging after diagonal inputs
-  have been supplied.
-- [GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md)
-  supplies bounded tensor-word packets and names the physical boundary-data
-  target; it does not identify that target with the stripped residual.
-- [GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md](GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md)
-  supplies a conditional linkwise local factorization used by finite packets.
 
-The temporal-gauge linkwise factorization note remains relevant to local
-finite packets, but its trivial-channel statement applies when the function
-being integrated is independent of the non-marked links. Unmarked spatial
-plaquette weights in the actual environment violate that independence
-hypothesis, so it cannot establish the physical diagonal interface by itself.
+Context pointers, not theorem premises:
+`docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md`,
+`docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md`,
+and
+`docs/GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md`.
+The last note's independence hypothesis is violated by unmarked spatial
+plaquette weights in the actual environment, so it cannot establish the
+physical diagonal interface.
 
 Context pointers, not one-hop authorities:
 docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_PERRON_DERIVED_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-11.md,

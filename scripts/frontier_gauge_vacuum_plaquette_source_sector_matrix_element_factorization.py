@@ -241,6 +241,38 @@ def exact_determinant(matrix: ExactMatrix) -> Fraction:
     return determinant
 
 
+def exact_rank(matrix: ExactMatrix) -> int:
+    """Fraction-only row reduction returning the exact matrix rank."""
+
+    work = [row.copy() for row in matrix]
+    rows = len(work)
+    columns = len(work[0]) if work else 0
+    pivot_row = 0
+    for column in range(columns):
+        pivot = next(
+            (row for row in range(pivot_row, rows) if work[row][column] != 0),
+            None,
+        )
+        if pivot is None:
+            continue
+        work[pivot_row], work[pivot] = work[pivot], work[pivot_row]
+        pivot_value = work[pivot_row][column]
+        for entry in range(column, columns):
+            work[pivot_row][entry] /= pivot_value
+        for row in range(rows):
+            if row == pivot_row:
+                continue
+            factor = work[row][column]
+            if factor == 0:
+                continue
+            for entry in range(column, columns):
+                work[row][entry] -= factor * work[pivot_row][entry]
+        pivot_row += 1
+        if pivot_row == rows:
+            break
+    return pivot_row
+
+
 def exact_scalar_formula(
     mmat: ExactMatrix, kappa: list[Fraction]
 ) -> ExactMatrix:
@@ -307,8 +339,7 @@ def exact_small_case() -> dict[str, object]:
         and all(value >= 0 for value in kappa),
         "formula_exact": transfer == formula,
         "gram_exact": transfer == gram,
-        "rank_exact": exact_determinant(mmat) != 0
-        and sum(value != 0 for value in kappa) == 3,
+        "rank_exact": exact_rank(transfer) == exact_rank(dmat) == 3,
         "hostile_self_adjoint": hostile == transpose(hostile),
         "hostile_swap": matrix_multiply(swap, hostile)
         == matrix_multiply(hostile, swap),

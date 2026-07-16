@@ -45,12 +45,15 @@ closure route** — it yields only the single-plaquette-in-isolation value
 0.4225 (the wrong observable). This note honors that foreclosure: Lee-Yang
 localization is used here **only to characterize the analyticity class** (to
 validate whether d-log-Pade is the applicable tool), not to produce `<P>(6)`.
-The doubly-walled lane-killer is unchanged — the boundary character measure
+The multi-wall lane-killer is unchanged — the boundary character measure
 `rho_{p,q}(6)` is under-determined by local character + intertwiner data
 ([`GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md)
 Theorem 3) **and** its exact `L_s>=3` evaluation is treewidth-29
 infeasible
 ([`SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md`](SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md)).
+Separately, no current theorem identifies those static data with the
+algebraically stripped two-slice source residual or proves its character
+diagonality.
 
 ## 1. The analyticity framework: Delta singularities = finite-Z Lee-Yang zeros
 
@@ -349,11 +352,14 @@ the beta^8 activation minimum is out of runway.
 **OPEN (unchanged lane-killer):**
 
 - The **location** `|beta_c|` of the thermodynamic `Delta`'s nearest
-  singularity (surrogate estimates span `~2.2` to `~8.2`). This is the open
-  `rho_{p,q}(6)` object restated in the beta-plane.
+  singularity (surrogate estimates span `~2.2` to `~8.2`). This is an
+  independent analytic-continuation input, not a restatement of a boundary
+  coefficient vector.
 - The boundary character measure `rho_{p,q}(6)` itself: under-determined by
   local character + intertwiner data **and** treewidth-29 infeasible at
   `L_s >= 3`. No analytic-class result supplies it.
+- The operator-compression/diagonality theorem relating any such static
+  boundary data to the stripped two-slice Wilson residual.
 - A **from-primitives** proof of no-real-bulk-transition for SU(3) on `[0,6]`
   (the `L->infinity` clause), and exact coefficients `d_8` and beyond (past the
   treewidth wall).

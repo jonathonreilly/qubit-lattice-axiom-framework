@@ -1,32 +1,32 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py
-runner_sha256: a17dfc33a2e0729bef5b14bae9c19484291759833cb4008225471bd9e0e42a6c
+runner_sha256: 50c4ee7e7d071b19f58c15aea1e7ab713cfd044da464d987a931da611e07ccea
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 7.03
+elapsed_sec: 7.08
 status: ok
 ----- stdout -----
 ================================================================================================================
-GAUGE-VACUUM PLAQUETTE FIRST-SECTOR TRUNCATED ENVIRONMENT PACKET
+GAUGE-VACUUM PLAQUETTE FIRST-SECTOR SUPPLIED COEFFICIENT PACKET
 ================================================================================================================
 
 Question:
-  Does the completed first-sector triple already determine a retained
-  diagonal/environment packet inside the canonical character-measure
-  description, even before the full framework-point extension is known?
+  Does the completed first-sector triple determine one supplied finite
+  coefficient packet, without identifying it as a physical Wilson
+  residual or environment operator?
 
   v_min                                       = [0.349606952458, 0.093393849311, 0.093393849311, 0.0]
   z00_min                                     = 0.349606952458
-  rho_ret                                     = [1.0, 0.267139565315, 0.267139565315, 0.0]
+  rho_packet                                  = [1.0, 0.267139565315, 0.267139565315, 0.0]
   reconstructed sample triple                 = [0.135165279562, 0.374012880009, 0.543843858544]
   reconstruction gap                          = 1.665335e-16
 
-  [PASS] The source notes allow this vector only as a supplied diagonal packet and keep the Wilson compression identification open
-  [PASS] The completion note already fixes one explicit retained first-sector coefficient vector v_min for the completed triple Z_min
-  [PASS] Normalizing by the retained trivial-channel coefficient defines one exact truncated environment packet rho_ret with rho_(0,0)=1  (rho_ret=[1.0, 0.2671395653, 0.2671395653, 0.0])
-  [PASS] That truncated packet is conjugation-symmetric on the retained first-symmetric sector  (|rho_(1,0)-rho_(0,1)|=0.000e+00)
-  [PASS] The retained three-sample triple reconstructs exactly from the pair (z00_min, rho_ret)  (||z_recon-Z_min||=1.665e-16)
-  [PASS] The finite packet exists, while physical Wilson identification and full-weight extension both remain open  (z00_min=0.349607)
+  [PASS] The source theorem's exact hostile control rejects promotion from structural symmetry to physical diagonality
+  [PASS] The completion producers return one finite four-coefficient vector and one finite three-sample target
+  [PASS] Normalizing by the supplied trivial-channel coefficient defines a finite packet with rho_(0,0)=1  (rho_packet=[1.0, 0.2671395653, 0.2671395653, 0.0])
+  [PASS] The supplied packet is conjugation-symmetric on the first-symmetric sector  (|rho_(1,0)-rho_(0,1)|=0.000e+00)
+  [PASS] The supplied three-sample triple reconstructs to floating-point tolerance from (z00_min, rho_packet)  (||z_recon-Z_min||=1.665e-16)
+  [PASS] The finite packet witness does not defeat the exact off-diagonal hostile control  (z00_min=0.349607)
 
 ================================================================================================================
 RESULT
@@ -35,7 +35,7 @@ RESULT
     - the completed first-sector triple already determines one explicit
       supplied diagonal coefficient packet on the first-symmetric sector
     - namely one overall scale z00_min together with one normalized
-      conjugation-symmetric coefficient packet rho_ret
+      conjugation-symmetric coefficient packet rho_packet
     - Wilson residual diagonality/identification and full-weight extension
       remain open; this runner proves neither
 

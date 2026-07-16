@@ -15,6 +15,10 @@ from pathlib import Path
 import numpy as np
 from scipy.special import iv
 
+from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
+    exact_small_case as source_factorization_exact_small_case,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / (
@@ -150,6 +154,8 @@ def main() -> int:
     note = read(NOTE)
     recurrence = read(CHAR_RECURRENCE)
     source_factor = read(SOURCE_FACTOR)
+    source_factor_scope = " ".join(source_factor.split())
+    source_exact = source_factorization_exact_small_case()
     tensor = read(TENSOR_TRANSFER)
     plaquette = read(PLAQUETTE_SELF)
     wilson = read(WILSON_POSITIVITY)
@@ -174,10 +180,11 @@ def main() -> int:
     )
     check(
         "source-sector note makes the matrix formula conditional and keeps Wilson residual diagonality open",
-        "conditional theorem for a supplied `D_beta`" in source_factor
-        and "does not derive a" in source_factor
-        and "Wilson residual operator" in source_factor
-        and "central convolution" in source_factor,
+        "conditional on a supplied positive character-diagonal operator" in source_factor_scope
+        and "stripped Wilson residual is claimed" in source_factor_scope
+        and bool(source_exact["formula_exact"])
+        and bool(source_exact["hostile_mixing"])
+        and bool(source_exact["shadow_fails"]),
     )
     check(
         "plaquette note states the finite Wilson action and average plaquette object",

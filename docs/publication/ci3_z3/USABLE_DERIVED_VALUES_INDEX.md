@@ -111,22 +111,17 @@ matrix-element factorization theorem supplies the exact conditional law
 `T_beta = M_beta D_beta M_beta` only after a positive character-diagonal
 `D_beta` is supplied; neither its theorem nor runner derives a Wilson
 `D_6`.
-The updated local/environment factorization theorem then shows that the
-normalized mixed-kernel contribution is already exactly the local Wilson
-marked-link factor, the residual-environment identification theorem isolates
-the compressed unmarked spatial environment, and the spatial-environment
-character-measure theorem realizes that remaining operator as the boundary
-class function `C_(Z_6^env)`, the spatial-environment structural transfer
-theorem realizes those boundary character data as boundary amplitudes of one
-positive spatial transfer law, and the spatial-environment tensor-transfer
-theorem fixes the remaining local matrix-element class to explicit Wilson
-coefficients and `SU(3)` intertwiners, with its runner only a truncated
-support packet over an audited tensor-transfer word rather than a full
-`beta = 6` Perron solve. Before that conditional diagonal model can represent
-the physical Wilson problem, a separate kernel calculation must prove that
-the stripped compression is a central convolution/regular-translation
-commuting operator. If that wall is discharged, the next open object is the
-explicit `beta = 6` tensor-transfer Perron / boundary data.
+The local/environment note supplies a finite diagonal Wilson-coefficient
+packet, the residual note supplies finite reference packets, and the actual
+spatial-environment note supplies a marked-factor deletion identity plus
+finite-volume static boundary-coefficient witnesses. The structural and
+tensor-transfer runners remain bounded supplied packets rather than a physical
+Wilson residual construction. Before any of those data can enter the
+conditional diagonal source model, a separate kernel calculation must identify
+the stripped two-slice Wilson compression and prove central-convolution/
+character-diagonal structure, or directly prove every off-diagonal character
+matrix element vanishes. After that structural wall, explicit `beta = 6`
+tensor-transfer Perron/boundary data would still be required.
 
 | Quantity | Canonical value on `main` | Claim class | Import class | Safe reuse | Authority |
 |---|---:|---|---|---|---|

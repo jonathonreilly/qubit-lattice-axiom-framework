@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/native_gauge_transfer_beta_identification_physical_plaquette_relationship_bounded_2026_06_12.py
-runner_sha256: 384ffb2145d419c501f395b57879224395b0a6de340343e896cf14cdb8e86719
+runner_sha256: e27444602eaae9dadb66f1e4414937ba4653f58b4891e1bdbaa216168c95cb63
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.83
+elapsed_sec: 0.88
 status: ok
 ----- stdout -----
 Native transfer beta vs physical plaquette beta relationship verifier

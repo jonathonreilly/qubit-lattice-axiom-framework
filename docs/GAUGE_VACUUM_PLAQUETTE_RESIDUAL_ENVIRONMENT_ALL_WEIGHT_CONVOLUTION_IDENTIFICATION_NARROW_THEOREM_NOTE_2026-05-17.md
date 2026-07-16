@@ -56,19 +56,13 @@ Define the two character-diagonal operators
 
 `D_beta^loc chi_(p,q) = a_(p,q)(beta)^4 chi_(p,q)`.
 
-The conditional source-sector theorem
-[GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
-supplies the exact consequences of using such a `D_beta`; it does not supply
-Wilson provenance for the coefficients. The bounded local packet
-[GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md)
-provides examples of explicit finite `a_(p,q)` inputs while expressly leaving
-the actual mixed-kernel compression bridge open.
-
-For the all-weight formal statement, strict positivity of the one-link Wilson
-coefficient packet at `beta>0` can be sourced from
-[WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md](WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md).
-The quotient theorem below is still conditional on `D_beta` itself being
-supplied as diagonal.
+The quotient theorem below is conditional on both diagonal inputs. Context
+examples are recorded in
+`docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`,
+`docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md`,
+and
+`docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md`;
+none supplies Wilson provenance for `D_beta`.
 
 ## Theorem 1: exact diagonal quotient
 
@@ -122,7 +116,8 @@ claimed.
 
 ## Theorem 3: normalization
 
-Because `a_(0,0)=1` for the normalized local packet,
+Assume additionally for this normalization statement that
+`kappa_(0,0)(beta)>0`. Because `a_(0,0)=1` for the normalized local packet,
 
 `r_(0,0)(beta)=kappa_(0,0)(beta)`
 
@@ -137,6 +132,10 @@ Thus normalized convolution by `Z/z_(0,0)` gives
 not `R_beta[r]`, unless the additional hypothesis
 `kappa_(0,0)(beta)=1` is supplied. This note does not assume that
 normalization.
+
+If `kappa_(0,0)(beta)=0`, then `z_(0,0)(beta)=0` and normalization by the
+actual trivial coefficient is undefined. The unnormalized finite-window
+identity in Theorem 2 remains valid.
 
 ## Why this is not a Wilson identification
 

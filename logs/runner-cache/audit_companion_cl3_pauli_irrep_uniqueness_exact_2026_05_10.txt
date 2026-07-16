@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py
-runner_sha256: 61766488b2ab92d10ffc1c75f69f22f85354051802da4b569988380546faa89c
+runner_sha256: dde127d28ae8b54f82cc56223ad57ae54e8a6d6ae122131b497a132551edd7f9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.23
+elapsed_sec: 1.13
 status: ok
 ----- stdout -----
 ================================================================================================
 Exact abstract-algebra certificate for
 CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10
-Arithmetic: exact SymPy rational/Gaussian-rational; no floating point
+Arithmetic: exact SymPy symbolic; algebra core Gaussian-rational; no floats
 ================================================================================================
 
 ------------------------------------------------------------------------------------------------
@@ -74,16 +74,18 @@ Part E: representation classification and faithfulness boundary
   [PASS (A)] E2+ restriction of rho_+ to real Cl(3,0) is faithful  (real rank=8)
   [PASS (A)] E1- complexified rho_- has rank 4 and kernel dimension 4  (rank=4, kernel dim=4)
   [PASS (A)] E2- restriction of rho_- to real Cl(3,0) is faithful  (real rank=8)
-  [PASS (A)] E3 an irreducible unital module has exactly one active central summand  (solutions=[(0, 1), (1, 0)])
+  [PASS (A)] E3 complementary central idempotents have only scalar action pairs (1,0) and (0,1)  (solutions=[(0, 1), (1, 0)])
   [PASS (A)] E4 the commutant of the natural M_2(C) module is exactly C I_2  (commutant dimension=1)
   [PASS (A)] E5 matrix units generate C^2 from every nonzero coordinate direction  (4/4 actions)
-  [PASS (A)] E6 rho_+ and rho_- are inequivalent because omega has eigenvalues +i and -i
+  [PASS (A)] E6 the matrix-unit F/G maps are inverse on every unital M_2(C)-module  (5/5 universal identities)
+  [PASS (A)] E7 F(e_j tensor w) is M_2(C)-linear for arbitrary w in E_11 V  (8/8 matrix-unit actions)
+  [PASS (A)] E8 rho_+ and rho_- are inequivalent because omega has eigenvalues +i and -i
 
 ------------------------------------------------------------------------------------------------
 Part F: conditional unitary refinement for *-representations
 ------------------------------------------------------------------------------------------------
   [PASS (A)] F1 scaled-unitary intertwiner preserves Hermitian generators
-  [PASS (A)] F2 its Gram matrix is the positive Schur scalar 9 I
+  [PASS (A)] F2 its Gram matrix is the positive scalar 9 I and lies in the commutant
   [PASS (A)] F3 nonunitary similarity still preserves all Clifford relations  (9/9 relations)
   [PASS (A)] F4 nonunitary similarity leaves the *-representation class  (T^dagger T=[[4, 0], [0, 1]])
 
@@ -110,7 +112,7 @@ Summary
     restrictions are faithful. No lattice carrier or physical selection is inferred.
 
 ================================================================================================
-TOTAL: PASS=47, FAIL=0
+TOTAL: PASS=49, FAIL=0
 ================================================================================================
 
 ----- stderr -----

@@ -17,9 +17,11 @@ certifies:
 7. the unitary-equivalence refinement under the explicit *-representation
    (Hermitian-generator) hypothesis.
 
-All arithmetic is exact SymPy rational/Gaussian-rational arithmetic.  The
-default run also executes hostile controls.  ``--inject-failure`` promotes one
-hostile fixture to a primary check, so the process must exit nonzero.
+All arithmetic is exact SymPy symbolic arithmetic.  The algebra,
+ideal-isomorphism, and module-classification checks are rational/Gaussian-
+rational; the conditional unitary control additionally uses exact ``sqrt(2)``.
+The default run also executes hostile controls.  ``--inject-failure`` promotes
+one hostile fixture to a primary check, so the process must exit nonzero.
 """
 
 from __future__ import annotations
@@ -359,7 +361,7 @@ def main() -> int:
     print("=" * 96)
     print("Exact abstract-algebra certificate for")
     print("CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10")
-    print("Arithmetic: exact SymPy rational/Gaussian-rational; no floating point")
+    print("Arithmetic: exact SymPy symbolic; algebra core Gaussian-rational; no floats")
     print("=" * 96)
 
     basis_by_mask = [blade(mask) for mask in range(DIM)]
@@ -759,7 +761,7 @@ def main() -> int:
         for solution in central_action_solutions
     }
     check(
-        "E3 an irreducible unital module has exactly one active central summand",
+        "E3 complementary central idempotents have only scalar action pairs (1,0) and (0,1)",
         central_action_pairs
         == {
             (sp.Integer(1), sp.Integer(0)),
@@ -814,8 +816,40 @@ def main() -> int:
         f"{len(standard_action_results)} actions",
     )
 
+    e11 = matrix_units[(0, 0)]
+    e12 = matrix_units[(0, 1)]
+    e21 = matrix_units[(1, 0)]
+    module_inverse_results = [
+        matrix_eq(e11 + e21 * e12, identity_2),
+        matrix_eq(e11 * e11, e11),
+        matrix_eq(e12 * e11, zero_2),
+        matrix_eq(e11 * e21 * e11, zero_2),
+        matrix_eq(e12 * e21 * e11, e11),
+    ]
     check(
-        "E6 rho_+ and rho_- are inequivalent because omega has eigenvalues +i and -i",
+        "E6 the matrix-unit F/G maps are inverse on every unital M_2(C)-module",
+        sum(int(result) for result in module_inverse_results)
+        == len(module_inverse_results),
+        f"{sum(int(result) for result in module_inverse_results)}/"
+        f"{len(module_inverse_results)} universal identities",
+    )
+
+    f_operators = (e11, e21)
+    module_linearity_results = []
+    for a, b, source_index in itertools.product(range(2), repeat=3):
+        left = matrix_units[(a, b)] * f_operators[source_index] * e11
+        right = f_operators[a] * e11 if b == source_index else zero_2
+        module_linearity_results.append(matrix_eq(left, right))
+    check(
+        "E7 F(e_j tensor w) is M_2(C)-linear for arbitrary w in E_11 V",
+        sum(int(result) for result in module_linearity_results)
+        == len(module_linearity_results),
+        f"{sum(int(result) for result in module_linearity_results)}/"
+        f"{len(module_linearity_results)} matrix-unit actions",
+    )
+
+    check(
+        "E8 rho_+ and rho_- are inequivalent because omega has eigenvalues +i and -i",
         not matrix_eq(
             representation_of_vector(omega, images_plus),
             representation_of_vector(omega, images_minus),
@@ -837,7 +871,7 @@ def main() -> int:
         all(matrix_eq(image, adjoint(image)) for image in scaled_images),
     )
     check(
-        "F2 its Gram matrix is the positive Schur scalar 9 I",
+        "F2 its Gram matrix is the positive scalar 9 I and lies in the commutant",
         matrix_eq(scaled_gram, 9 * identity_2)
         and all(
             matrix_eq(scaled_gram * sigma, sigma * scaled_gram)

@@ -275,8 +275,23 @@ G : V -> C^2 tensor W,
 G(v) = e_1 tensor E_11 v + e_2 tensor E_12 v                     (14)
 ```
 
-are inverse `M_2(C)`-module maps; the identities follow directly from
-`E_ab E_cd = delta_bc E_ad`. Therefore
+are `M_2(C)`-module maps. Their inverse identities are explicit. For
+`w in W`, `E_11 w = w` and `E_12 w = 0`, so
+
+```text
+F G(v) = E_11 v + E_21 E_12 v = (E_11 + E_22)v = v,
+G F(e_1 tensor w) = e_1 tensor w,
+G F(e_2 tensor w) = e_2 tensor E_12 E_21 w = e_2 tensor w.
+```
+
+Equivariance is the matrix-unit identity
+
+```text
+F(E_ab e_j tensor w) = delta_bj F(e_a tensor w)
+                      = E_ab F(e_j tensor w).
+```
+
+Thus `F` and `G` are inverse module maps and
 
 ```text
 V ~= C^2 tensor W.                                                (15)
@@ -287,9 +302,12 @@ nonzero subspace of `W` would give a proper nonzero submodule in (15).
 Conversely the natural `C^2` module is irreducible because the matrix units
 send either coordinate direction to either basis vector. This proves the
 unique two-dimensional irreducible module of each simple summand and yields
-(6). In particular, (13) forces an irreducible `A`-module to choose exactly
-one of the two summands, so the two modules in (5) exhaust all irreducible
-complex representations.
+(6), with the unique multiplicities
+`n_s = dim_C(E_11 e_s V)`. In particular, (13) forces an irreducible
+`A`-module to choose exactly one of the two summands, so the two modules in
+(5) exhaust all irreducible complex representations. This argument uses no
+Schur-lemma shortcut: its hypotheses are exactly a unital finite-dimensional
+complex module and the displayed matrix-unit relations.
 
 Every complex representation of the real algebra `A_R` extends uniquely to a
 complex-linear representation of `A` by
@@ -354,7 +372,9 @@ comparator, fitted input, or unit convention bears load.
 ## Validation and hostile controls
 
 The primary runner constructs the table (7) over exact SymPy
-Gaussian-rational arithmetic and checks:
+Gaussian-rational arithmetic. The conditional unitary comparison uses the
+exact algebraic number `sqrt(2)` and no floating-point approximation. It
+checks:
 
 1. all `512` basis associativity products, all nine defining relations, the
    eight-element basis rank, and the rank-eight joint Pauli map;
@@ -367,7 +387,8 @@ Gaussian-rational arithmetic and checks:
 6. matrix-unit multiplication and the generic coefficient-isolation proof of
    simplicity;
 7. complexification kernels, real restriction ranks, central-summand actions,
-   the scalar commutant, and Pauli-class inequivalence;
+   the universal matrix-unit `F/G` module isomorphism, natural-module
+   irreducibility, the scalar commutant, and Pauli-class inequivalence;
 8. the conditional `*`-representation unitary refinement.
 
 Normal execution also verifies that the following hostile fixtures are
@@ -383,7 +404,7 @@ rejected:
 All checks are exact algebraic computations: the runner does not read this
 note's prose as evidence, use random sampling, fit floating targets, or accept
 constant truth values as claim checks. Normal execution reports
-`TOTAL: PASS=47, FAIL=0`. For a process-level failure-path check, for example:
+`TOTAL: PASS=49, FAIL=0`. For a process-level failure-path check, for example:
 
 ```bash
 python3 scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py \

@@ -1,9 +1,9 @@
 # Lane 5 Workstream Status: Hubble-H0 Structural Lock And Two-Gate Closure Map
 
 **Date:** 2026-04-27
-**Status:** support lane-status note on `main`. Single read-first Lane 5
-status surface synthesizing the Hubble-H0 workstream output after
-review-and-integration.
+**Type:** meta
+**Scope:** source-side Lane 5 dependency synthesis; no audit disposition and
+no numerical `H_0` closure
 **Lane:** 5 — Hubble constant `H_0` derivation
 **Workstream:** `hubble-h0-20260426`
 
@@ -16,11 +16,11 @@ Before this workstream, Lane 5 closure was framed as five sub-targets
 5D `Sigma m_nu`, 5E inflation). After this workstream, Lane 5 closure
 is framed as a sharp two-gate statement:
 
-> **Lane 5 closure requires retaining premises from BOTH:**
+> **Lane 5 closure requires resolving BOTH route classes:**
 >
-> - **(C1) absolute-scale axiom**, gated by the metric-compatible
->   primitive Clifford/CAR coframe response on `P_A H_cell` with
->   natural phase/action units, AND
+> - **(C1) absolute-scale route**, gated by the coupled active-block response,
+>   physical channel/Widom, gravitational boundary/action, and action-unit
+>   metrology obligations, AND
 > - **one of {(C2) cosmic-history-ratio retirement,
 >   (C3) direct cosmic-`L` derivation}**, with the explicit `(C2)` route
 >   gated by the right-sensitive 2-real `Z_3` doublet-block
@@ -28,21 +28,22 @@ is framed as a sharp two-gate statement:
 >
 > No fourth class exists. No single class is sufficient.
 
-Phase-1 (5C) is landed on `main` as a proposed-retained/admitted-surface
-structural support theorem with explicit operational falsifier (no late-time
-`H_0` running). Phase-2 sub-lanes (5A `Omega_m` and 5B `H_0`) are now
-explicitly gate-isolated — each maps to a single residual microscopic
-selection law on a primitive algebraic block.
+The source-side structural lock has an explicit operational falsifier (no
+late-time `H_0` running under its supplied cosmology conditions). The 5A
+`Omega_m` and 5B `H_0` sub-lanes remain gate-isolated; the `(C1)` side is a
+coupled packet rather than a single microscopic selection law.
 
-## 1. The retained cosmology stack used
+## 1. Foundation and cited model inputs
 
-All five cycles rest on the following retained items already on `main`
-(or admitted-textbook-FRW conventions). No cycle imports an external
-quantitative input.
+The current foundation contains exactly the Lattice, Qubit, Admissibility,
+and Record axioms. The remaining rows are cited model inputs or derived source
+surfaces; they are not additional axioms or approved primitives. No cycle
+imports an observed quantitative value.
 
 | Identity | Authority |
 |---|---|
-| `Cl(3)` on `Z^3` (one-axiom) | `MINIMAL_AXIOMS_2026-04-11.md` |
+| Lattice, Qubit, Admissibility, and Record axioms | [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md) |
+| historical `Cl(3)`/`Z^3` substrate model | supplied model context, not a separate axiom or primitive |
 | `Lambda = 3 / R_Lambda^2` (spectral-gap) | `COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md` |
 | `w_Lambda = -1` (DE EOS) | `DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md` |
 | `H_inf = c / R_Lambda` | `COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md` |
@@ -53,7 +54,7 @@ quantitative input.
 | Matter-radiation equality structural identity | `MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md` |
 | `N_eff = 3 + 0.046 = 3.046` | `N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md` |
 | `Lambda` spectral tower bridge | `GRAVITY_COSMOLOGY_TOWER_LAMBDA_SPECTRAL_BRIDGE_THEOREM_NOTE_2026-04-25.md` |
-| Conditional Planck packet (`a/l_P = 1` on Clifford coframe surface) | `PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md` and 2026-04-25 packet |
+| Conditional Planck packet (`a/l_P = 1` on supplied source-unit, gravitational-carrier, and action-unit surface) | `PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md` and 2026-04-25 packet |
 
 ## 2. Five-cycle output map
 
@@ -114,14 +115,15 @@ Cycle 3 builds.
 
 **Artifact:**
 `docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md`
-(no runner — structural case-analysis on `A_min`).
+(structural case-analysis on the cited cosmology/model surface).
 
-**Claim:** on `A_min` alone, the dimensional `(H_0, H_inf, R_Lambda)`
-are non-numerical (absolute-time necessity), and the dimensionless
+**Claim:** on the four-axiom foundation plus the cited model surface, the
+dimensional `(H_0, H_inf, R_Lambda)` are non-numerical (absolute-time
+necessity), and the dimensionless
 `L = (H_inf/H_0)^2` is non-derivable (cosmic-history-ratio necessity).
 Lane 5 closure therefore requires premises from two classes:
 
-- **(C1) absolute-scale axiom** [REQUIRED];
+- **(C1) absolute-scale route packet** [REQUIRED];
 - **(C2) cosmic-history-ratio retirement** OR **(C3) direct cosmic-`L`
   derivation** [one of the two `L`-pathways].
 
@@ -159,29 +161,31 @@ the gate retires `eta` from the bounded cascade and supplies `(C2)`.
 
 **Artifact:**
 `docs/HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md`
-(no runner — review of retained Planck-lane material).
+with source-packet runner
+`scripts/frontier_hubble_lane5_planck_c1_gate_source_packet.py`.
 
-**Gate identified:** the metric-compatible primitive Clifford/CAR
-coframe response on `P_A H_cell` with natural phase/action units
-(equivalently, the native edge-statistics principle that fixes
-`P_A H_cell` to the irreducible `Cl_4(C) ~= M_4(C)` module rather than
-non-CAR ququart or two-qubit semantics).
+**Gate identified:** a coupled residual packet, not one premise:
 
-**Single conditional unifies all three Planck-lane targets** via the
-2026-04-25 conditional Clifford phase bridge theorem
-(`PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md`):
-T1 (gravity/action unit-map uniqueness), T2 (horizon-entropy carrier
-with exact `1/4`), T3 (one-axiom information/action bridge) all
-collapse to this one premise.
+- (G1a) a compatible active-block `Cl_4(C)`/CAR response on `P_A H_cell`;
+- (G1b) separate normal/self-dual-tangent channel, tangent-symbol, and
+  Widom applicability/normalization conditions;
+- the separately supplied gravitational boundary/action identification for
+  the source-unit/Wald leg; and
+- (G2) action-unit metrology beyond the dimensionless phase convention.
+
+No single conditional unifies the three Planck-lane targets. Abstract
+Clifford/CAR algebra supplies neither the physical channel law nor the
+gravitational/Wald identification, and it does not break the absolute
+action-unit rescaling freedom.
 
 **Closed shortcut routes:** finite-automorphism-only response,
 carrier-only parent-source scalar, simple-fiber Widom carrier,
 multipocket selector axioms, primitive-edge-entropy direct relabeling,
 algebraic finite-Schmidt-spectrum (Baker's theorem).
 
-**Lane 5 contribution:** sub-lane 5B (absolute scale) explicitly
-gate-isolated. Closing the gate retains `R_Lambda` numerically and
-supplies `(C1)`.
+**Lane 5 contribution:** sub-lane 5B (absolute scale) has its coupled gate
+isolated. The current packet retires no numerical input; resolving all listed
+obligations would supply a future `(C1)` route premise.
 
 ## 3. Symmetric two-gate map
 
@@ -189,18 +193,20 @@ The two Lane 5 closure gates are remarkably symmetric:
 
 | | `(C2)` gate (Cycle 4) | `(C1)` gate (Cycle 5) |
 |---|---|---|
-| **Gate object** | right-sensitive 2-real `Z_3` doublet-block point-selection law | metric-compatible primitive Clifford/CAR coframe response |
+| **Gate object** | right-sensitive 2-real `Z_3` doublet-block point-selection law | coupled active-block response, channel/Widom, gravitational-carrier, and action-metrology packet |
 | **Algebraic domain** | `dW_e^H = Schur_{E_e}(D_-)` (charged-lepton response) | `P_A H_cell ⊆ H_cell` (rank-four primitive boundary block) |
-| **What it pins** | `(delta, q_+)` in the moving `Z_3` doublet block | the irreducible `Cl_4(C) ~= M_4(C)` module |
-| **Resulting closure** | retired `eta` from cosmology cascade | retained `a^-1 = M_Pl`, hence numerical `R_Lambda` |
+| **What it pins** | `(delta, q_+)` in the moving `Z_3` doublet block | no single object; all independent `(C1)` obligations must be resolved |
+| **Resulting closure** | conditional `(C2)` route premise | future `(C1)` route premise only after the whole coupled packet is resolved |
 | **Sub-lane** | 5A (cosmic-history-ratio retirement) | 5B (absolute-scale anchor) |
-| **Adjacent live route** | reduced-surface PMNS support, `eta/eta_obs = 1.0` exact constructive point | conditional Clifford phase bridge, `a/l_P = 1` exact under premise |
+| **Adjacent live route** | reduced-surface PMNS support, `eta/eta_obs = 1.0` exact constructive point | separate conditional Clifford response and source-unit/gravitational-carrier/action-metrology supports; no single bridge closes `(C1)` |
 | **Closed shortcuts** | universal-Yukawa, two-Higgs slots, `Z_3` circulant, polar-aligned-core, asymptotic-source / local-selector-family, Wilson-direct-descendant, strong-CP/`gamma`-transfer | finite-automorphism-only response, carrier-only parent-source scalar, simple-fiber Widom, multipocket selector, primitive-edge-entropy, algebraic finite-Schmidt-spectrum |
 
-Both are **microscopic point/edge-selection laws on a primitive
-algebraic block**. Both are residual after extensive no-go work has
-closed adjacent routes. Both are necessary (per Cycle 3) for Lane 5
-closure.
+The `(C2)` gate is one microscopic point-selection law on a primitive
+algebraic block. The `(C1)` gate is instead the coupled packet of response,
+channel/Widom, gravitational-carrier, and action-metrology obligations listed
+above; it is not one edge-selection law. Each route records only its scoped
+shortcut exclusions, and both route classes remain necessary (per Cycle 3)
+for Lane 5 closure.
 
 ## 4. What each cycle did and did not retire
 
@@ -218,20 +224,22 @@ rather than a five-target list.
 
 ## 5. Outstanding open premises
 
-To close Lane 5 (i.e., retire `H_0` from the framework input ledger),
-the following two open premises must each be retained on `A_min`:
+To close Lane 5, the `(C1)` route and one of the `(C2)`/`(C3)` routes must
+each be derived or separately supplied. The current four axioms do not resolve
+them.
 
-### (C1) The metric-compatible primitive Clifford/CAR coframe response
+### (C1) Coupled absolute-scale route packet
 
-A derivation, from `A_min` alone, that the local Clifford algebra
-`Cl(3)` plus the staggered-Dirac dynamics on `Z^3` entail a Clifford-
-Majorana edge response on the rank-four primitive boundary block
-`P_A H_cell`, with natural phase/action units that break the
-`(S, kappa)` rescaling degeneracy.
+This route requires all of the following, with their premise provenance kept
+separate: a compatible active-block Clifford/CAR response; the physical
+normal/self-dual-tangent channel law, tangent symbol, and Widom conditions;
+the gravitational boundary/action identification; and action-unit metrology
+that breaks the `(S,kappa)` rescaling degeneracy.
 
 ### (C2) The right-sensitive `Z_3` doublet-block point-selection law
 
-A derivation, from `A_min` plus the retained PMNS/CP atlas, of a
+A derivation from the four-axiom foundation plus explicitly cited PMNS/CP
+model conditions of a
 microscopic selector law on the moving `Z_3` doublet block that fixes
 `(delta, q_+)` and is right-sensitive (resolves
 `sign(sin(delta))`).

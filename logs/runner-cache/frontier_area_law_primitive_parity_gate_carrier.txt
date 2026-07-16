@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_primitive_parity_gate_carrier.py
-runner_sha256: e15939581f2ba67de0db9f8feaa8e13210d2260338c77fd01b23f53e56e65a24
+runner_sha256: 961505fa076928373b37240eb451d1679674be04583307916dbd90d37436851c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.73
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -26,7 +26,7 @@ multipocket selector needed for c_Widom = 1/4?
 [PASS] Widom coefficient is exactly 1/4: c=<N_x>/12=0.250000000000
 [PASS] entanglement coefficient matches primitive trace coefficient: 3/12 = 4/16 = 1/4
 [PASS] carrier lies outside the simple-fiber no-go class: the direct-sum edge block has average crossing count 3 > 2
-[PASS] baseline channel alone recovers the retained 1/6 value: 2/12=1/6
+[PASS] baseline channel alone recovers the scoped simple-fiber 1/6 value: 2/12=1/6
 [PASS] parity-gated channel adds exactly 1/12: one average crossing divided by 12
 
 Finite APBC crossing grids
@@ -46,9 +46,9 @@ Finite APBC crossing grids
 [PASS] 3D grid 48x32 gives c=1/4: avg_crossings=3.000000000000, c=0.250000000000
 [PASS] 3D grid 64x40 has exact half-zone active count: active_weight=1280.0/2560
 [PASS] 3D grid 64x40 gives c=1/4: avg_crossings=3.000000000000, c=0.250000000000
-[PASS] dispersion representative is finite-range local: cos(k_x)+Delta_perp uses onsite plus nearest-neighbor normal/tangent terms
-[PASS] gate boundary is measure zero: Delta_perp=1 is a codimension-one transverse boundary and does not affect the integral
-[PASS] no fitted continuous parameter enters the coefficient: the only measure is the self-dual Z_2 half-zone measure 1/2
+[PASS] dispersion representative is finite-range local: Fourier support offsets=[(-1, 0, 0), (0, -1, 0), (0, 0, -1), (0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0)]
+[PASS] finite-grid tangent-set fraction decreases under isotropic refinement: fractions=0.062500->0.020833
+[PASS] one quarter is not fixed without the supplied half-zone selector: a quarter-zone selector would give c=0.208333333333
 [PASS] self-dual Laplacian gate is the missing multipocket selector: the selector fixes mu=1/2 before the coefficient is evaluated
 
 Finite cylinder entropy check
@@ -64,16 +64,16 @@ Finite cylinder entropy check
 [PASS] finite entropy c_inf fit is within 3 percent of 1/4: c_inf=0.253119, rel_err=+1.25%
 [PASS] finite entropy c_inf is not compatible with 1/6: c_inf=0.253119, separation=+51.87%
 [PASS] finite c_eff tail decreases toward the Widom value: subleading positive a/log(L) correction is monotone on the tested tail
-[PASS] primitive parity-gate carrier identification remains the explicit bridge premise: Target 3 Clifford bridge gives a sufficient metric-compatible coframe-response route
+[PASS] source keeps CAR and physical channel assignment as separate premises: coframe algebra does not assign normal/tangent dispersions
 
 ==============================================================================
 SUMMARY: PASS=40  FAIL=0
 ==============================================================================
 
-Verdict: the primitive residual Z_2 parity-gate carrier has
-multipocket Widom coefficient exactly 1/4. This is a conditional
-positive carrier unless the primitive Clifford/CAR coframe response
-is accepted or derived separately.
+Result: the primitive residual Z_2 parity-gate carrier has
+multipocket Widom coefficient exactly 1/4 under the full supplied
+carrier-identification premise. A Clifford/CAR response alone does
+not assign the normal and self-dual-tangent edge dispersions.
 
 ----- stderr -----
 

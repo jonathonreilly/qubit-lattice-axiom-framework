@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""Audit the Planck source-unit normalization support theorem."""
+"""Verify the conditional Planck source-unit normalization algebra."""
 
 from __future__ import annotations
 
 from dataclasses import dataclass
 import math
 import sys
+from pathlib import Path
 
 
 TOL = 1e-14
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md"
 
 
 @dataclass(frozen=True)
@@ -38,7 +41,7 @@ def main() -> int:
 
     record(
         checks,
-        "retained Green-kernel coefficient is 1/(4*pi)",
+        "baseline Green-kernel coefficient is 1/(4*pi)",
         close(g_kernel, 1.0 / (4.0 * math.pi)),
         f"G_kernel={g_kernel:.15f}",
     )
@@ -81,7 +84,7 @@ def main() -> int:
     ]
     record(
         checks,
-        "primitive area carrier uniquely fixes lambda=1",
+        "supplied c_cell and Wald relation conditionally fix lambda=1",
         close(lambda_selected, 1.0) and lambda_matches == [1],
         "trial area coefficients="
         + ", ".join(f"{value:.12f}" for value in trial_area_coeffs),
@@ -137,7 +140,7 @@ def main() -> int:
     force_at_r = physical_force_coeff / (r * r)
     record(
         checks,
-        "same source unit gives the physical two-body product law",
+        "same source unit gives the conditional two-body product arithmetic",
         close(source2_monopole, m2)
         and close(physical_force_coeff, newton_force_coeff),
         (
@@ -187,7 +190,7 @@ def main() -> int:
     l_planck_over_a = math.sqrt(g_phys_over_a2)
     record(
         checks,
-        "physical unit map closes a/l_P=1",
+        "conditional physical unit map yields a/l_P=1",
         close(g_phys_over_a2, 1.0) and close(l_planck_over_a, 1.0),
         "G_phys=a^2*G_Newton,lat=a^2, so l_P=a",
     )
@@ -206,22 +209,85 @@ def main() -> int:
         "inputs are G_kernel=1/(4*pi), c_cell=4/16, lambda=4*c_cell",
     )
 
+    note = NOTE.read_text(encoding="utf-8")
+    record(
+        checks,
+        "source imports c_cell from the direct coframe authority",
+        "PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`]("
+        in note
+        and "AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md"
+        not in note,
+        "no CAR-to-gravitational-carrier dependency",
+    )
+    record(
+        checks,
+        "source links the narrow Wald-Newton algebra without laundering the physical bridge",
+        "BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`]("
+        in note
+        and "direct authority only for the abstract algebraic equivalence" in note
+        and "named row-local gravitational boundary/action premise" in note
+        and "not a result imported\nfrom the algebraic equivalence" in note,
+        "abstract 4Gc=1 authority and supplied physical identification remain separate",
+    )
+    record(
+        checks,
+        "source bounds Green-kernel provenance to mathematical response algebra",
+        "LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`]("
+        in note
+        and "cited mathematical input from the linked Green-kernel source" in note
+        and "not a physical equation of motion" in note
+        and "supplied as a mathematical response model" in note
+        and "The Green-kernel source explicitly does not derive a physical Poisson equation" in note
+        and "supplying `F=-M_test grad(phi)`" in note
+        and "not a four-axiom primitive" in note
+        and "retained Green theorem" not in note
+        and "retained package substrate" not in note
+        and "axiom-native field readout" not in note
+        and "native lattice field equation" not in note
+        and "Axiom-Native Content" not in note
+        and "native divergence/Gauss" not in note,
+        "kernel identity is cited; no physical Poisson equation is promoted",
+    )
+    record(
+        checks,
+        "source keeps the Wald/gravitational carrier identification explicit",
+        "named row-local gravitational boundary/action premise" in note
+        and "Neither step is derived from\nphysical `Cl(3)`" in note,
+        "conditional gravitational bridge",
+    )
+    record(
+        checks,
+        "source does not promote Clifford/CAR into the gravitational carrier",
+        "No Clifford/CAR bridge is consumed here" in note
+        and "an abstract active\n`Cl_4(C)` representation does not provide" in note
+        and "Target 3 Clifford phase bridge supplies a sufficient carrier route"
+        not in note,
+        "algebra-to-carrier shortcut rejected",
+    )
+    record(
+        checks,
+        "source does not identify the Widom coefficient with the cell trace",
+        "No equality between `c_Widom` and `c_cell` is asserted" in note
+        and "c_Widom = c_cell" not in note
+        and "retained primitive-cell theorem" not in note,
+        "source-unit algebra remains separate from the edge-channel law",
+    )
+
     print()
     passed = sum(1 for check in checks if check.passed)
     total = len(checks)
     print(f"Summary: {passed}/{total} checks passed.")
     if passed == total:
         print(
-            "Verdict: positive support-theorem closure on the stated carrier "
-            "premise. The Target 3 Clifford bridge supplies a sufficient "
-            "coframe-response route for that premise. The retained 1/(4*pi) is the bare "
-            "Green-kernel coefficient; the physical source scale is fixed by "
-            "c_cell=lambda/4, hence lambda=1 and q_bare=4*pi*M_phys. Therefore "
-            "G_Newton,lat=1, c_cell=1/(4G), EH=c_cell/(4*pi), and a/l_P=1."
+            "Result: conditional source-unit algebra on the explicitly supplied "
+            "c_cell and Wald/Gauss carrier premises. Clifford/CAR does not supply "
+            "those physical identifications. Given them, c_cell=lambda/4 fixes "
+            "lambda=1 and q_bare=4*pi*M_phys, so G_Newton,lat=1, "
+            "c_cell=1/(4G), EH=c_cell/(4*pi), and a/l_P=1."
         )
         return 0
 
-    print("Verdict: source-unit normalization support theorem failed an internal gate.")
+    print("Result: source-unit normalization support theorem failed an internal gate.")
     return 1
 
 

@@ -1,51 +1,58 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_native_car_semantics_tightening.py
-runner_sha256: 0681ceb6bd12e0cc0a533b43a53889ad943f991ca8e5787eebcd41fcda13ccc6
+runner_sha256: 3d921309a7e0dc6cd18970876d6793268d8a2374dfbb378381211a21194bd528
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
-AREA-LAW NATIVE CAR SEMANTICS TIGHTENING
+AREA-LAW CONDITIONAL CLIFFORD-CAR ALGEBRAIC EQUIVALENCE
 ==============================================================================
 
-Question: is the remaining Target 2 premise exactly a
-Clifford-Majorana/CAR edge-statistics principle?
+Question: what follows after an irreducible Cl_4(C) or two-mode
+CAR response is supplied on C^4, and what does not follow from
+rank four or the specified exterior one-form action?
 
-[PASS] primitive active block has rank four: rank(P_A)=4
-[PASS] rank-four primitive trace is one quarter: 4/16=1/4
+[PASS] conditional active representation has dimension four: dim_C K=4
 [PASS] two complex CAR modes have Fock dimension four: dim F(C^2)=4
-[PASS] two annihilation operators obey {c_i,c_j}=0: max error=0.00e+00
-[PASS] two annihilation operators obey {c_i,c_j^dagger}=delta_ij: max error=0.00e+00
-[PASS] CAR modes define four Hermitian Majorana generators: max Hermitian error=0.00e+00
-[PASS] Majorana generators obey complex Clifford Cl_4 relations: max Clifford error=0.00e+00
-[PASS] four Majoranas generate the full active matrix algebra M_4(C): complex span rank=16
-[PASS] complex Cl_4 dimension matches M_4(C) complex dimension: dim_C Cl_4 = 16 = dim_C M_4(C)
-[PASS] Majorana pairs recover the original CAR annihilators: c_a=(gamma_2a+i gamma_2a+1)/2
-[PASS] fermion parity squares to identity: ||P^2-I||=0.00e+00
-[PASS] fermion parity has a 2+2 split on the rank-four block: eigenvalues=[-1, -1, 1, 1]
-[PASS] Majorana generators are odd under fermion parity: max anticommutator=0.00e+00
-[PASS] quadratic Majorana bilinears are even under fermion parity: max commutator=0.00e+00
-[PASS] the same rank-four space admits commuting two-qubit spin factors: ||[X otimes I, I otimes X]||=0.00e+00
-[PASS] commuting two-qubit spin factors are not CAR generators: ||{X otimes I, I otimes X}||=4.00e+00
-[PASS] rank four alone cannot distinguish CAR from spin/ququart semantics: extra Clifford-Majorana statistics principle is the exact residual premise
-[PASS] CAR bridge feeds the primitive normal channel: one normal mode gives 2/12
-[PASS] CAR bridge feeds the self-dual tangent channel: one tangent mode gated on half-zone gives 1/12
-[PASS] native-CAR Target 2 chain gives one quarter: 2/12 + 1/12 = 3/12 = 1/4
-[PASS] native-CAR coefficient equals primitive Planck trace: c_Widom=c_cell
-[PASS] remaining Target 2 review decision is statistics, not coefficient: the Target 3 Clifford bridge reduces this to the metric-compatible coframe-response premise
-[PASS] Target 3 bridge supplies the sharper conditional coframe-response object: metric-compatible Clifford coframe response would force the edge-statistics principle
+[PASS] supplied annihilators obey {c_i,c_j}=0: max error=0.00e+00
+[PASS] supplied annihilators obey {c_i,c_j^dagger}=delta_ij: max error=0.00e+00
+[PASS] CAR modes define four Hermitian Majoranas: max Hermitian error=0.00e+00
+[PASS] Majoranas obey the Cl_4(C) relations: max Clifford error=0.00e+00
+[PASS] Majorana words generate M_4(C): complex span rank=16
+[PASS] paired Majoranas recover the supplied CAR annihilators: max recovery error=0.00e+00
+[PASS] an arbitrary irreducible Cl_4 presentation has one intertwiner line: nullity=1
+[PASS] the normalized Pauli intertwiner is unitary: unitary error=1.42e-14
+[PASS] the unitary intertwiner identifies the noncanonical representation: max intertwining error=1.27e-14
+[PASS] conditional fermion parity squares to identity: error=0.00e+00
+[PASS] conditional fermion parity has a 2+2 split: eigenvalues=[-1, -1, 1, 1]
+[PASS] Majoranas are odd under the conditional parity: max anticommutator=0.00e+00
+[PASS] Majorana bilinears are even under the conditional parity: max commutator=0.00e+00
+[PASS] the same C^4 supports commuting two-qubit factors: commutator norm=0.00e+00
+[PASS] commuting two-qubit factors are not CAR generators: anticommutator norm=4.00e+00
+[PASS] rank four is not a CAR selector: CAR and non-CAR operator semantics coexist on C^4
+[PASS] specified exterior P_A action has 0+2 Casimir while spinor has 3/4: P_A=[0.0, 1.9999999999999996, 1.9999999999999998, 1.9999999999999998], spinor=[0.75, 0.75, 0.75, 0.75]
+[PASS] specified 1+3 to 2+2 equivariant intertwiner space is zero: rank=16, nullity=0
+[PASS] natural full-cell odd generators realize Cl_4: max error=0.00e+00
+[PASS] natural full-cell odd generators compress to zero on P_A: max ||P_A gamma_i P_A||=0.00e+00
+[PASS] natural full-cell odd generators leak out of P_A: max leakage norm=2.000000
+[PASS] source title is narrowed to conditional algebraic equivalence: AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md
+[PASS] source scope forbids exterior-action descent laundering: scope firewall present
+[PASS] source explicitly stops before the physical channel assignment: algebra-to-physics implication denied
+[PASS] source records the exact supplied-action obstruction: intertwiner and compression controls cited
+[PASS] source leaves all positive bridges explicit: open-bridge inventory present
+[PASS] superseded native-promotion wording is absent: no native or uniqueness laundering
 
 ==============================================================================
-SUMMARY: PASS=23  FAIL=0
+SUMMARY: PASS=29  FAIL=0
 ==============================================================================
 
-Verdict: the residual Target 2 premise is exactly the
-Clifford-Majorana/CAR edge-statistics principle. The Target 3
-Clifford phase bridge gives a sufficient coframe-response route;
-without that coframe law, rank four alone is
-underdetermined.
+Result: CONDITIONAL ALGEBRAIC EQUIVALENCE ONLY.
+A supplied irreducible Cl_4(C) response on C^4 is equivalent to
+two-mode CAR. Rank four and the specified exterior one-form action
+do not derive that response, a physical channel assignment, or 1/4;
+other substrate actions and intrinsic active-block laws remain open.
 
 ----- stderr -----
 

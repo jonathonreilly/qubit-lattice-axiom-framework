@@ -104,10 +104,10 @@ Current absolute-scale package rule:
   The further statements `a/l_P = 1`, identification of the gravitational
   carrier, and any dimensionless physical prediction remain conditional on
   their separately named bridges
-- the attempted same-surface structural derivation from the 2026-04-30
-  primitive Clifford-Majorana note was audited as `audited_renaming`: it
-  verifies the candidate `Cl_4(C)` / `F(C^2)` carrier algebra, but does not
-  force that carrier as the substrate-restricted action on `P_A H_cell`
+- the 2026-04-30 primitive Clifford-Majorana source verifies the candidate
+  `Cl_4(C)` / `F(C^2)` carrier algebra and an obstruction for the supplied
+  exterior one-form action, but does not force a physical carrier or exclude
+  other substrate actions and intrinsic active-block laws
 - the 2026-04-24 conditional-completion packet derives `c_cell = 1/4` and
   the unique additive finite-boundary density extension, then gives
   `a/l_P = 1` after the primitive boundary count is accepted as the
@@ -138,11 +138,13 @@ Current absolute-scale package rule:
   `k_x` interval per transverse-momentum fiber, plus consistently normalized
   Schur/direct-sum descendants, obey `c_Widom <= 1/6`, not `1/4`; this is not
   a retained closure until the audit lane confirms it
-- the 2026-04-25 area-law selector packet closes the multipocket-selector,
-  primitive finite-edge entropy, and algebraic finite-Schmidt-spectrum shortcuts
-  negatively; its positive primitive-CAR carrier route is now supplied by the
-  proposed 2026-04-30 metric-compatible Clifford/CAR coframe-response
-  derivation on `P_A H_cell`, rather than left as a separate bridge premise
+- the 2026-04-25 area-law selector notes state scoped negative candidates;
+  they do not close all multipocket, finite-edge, or intrinsic-carrier routes.
+  Exact `1/4` remains conditional on supplied CAR interpretation, physical
+  channel/tangent-symbol laws, and Widom applicability/normalization. The
+  2026-04-30 result obstructs only the supplied exterior one-form action
+  (`1+3` versus `2+2`, zero intertwiner and odd compression), leaving other
+  substrate actions and intrinsic active-block response laws open
 - the 2026-04-30 boundary-incidence no-go shows that oriented boundary faces,
   normal cochains, and Noether flux/current language do not by themselves break
   the Hodge-dual `P_1` / `P_3` tie; it is a proposed no-go audit target, not a
@@ -225,10 +227,11 @@ packaging. Use:
 These rows are still on the paper surface, but their interpretation uses a
 bridge layer beyond the exact structural core.
 
-The Planck-pin row remains bridge-conditioned. The attempted 2026-04-30
-same-surface derivation in
+The Planck-pin row remains bridge-conditioned. The 2026-04-30 source
 [PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](../../PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)
-was audited as `audited_renaming`, so it does not remove the carrier bridge.
+gives an exact obstruction for the supplied exterior one-form action; it does
+not derive a physical carrier, exclude other substrate actions, or remove the
+channel/Widom bridge. Audit status remains pipeline-owned.
 
 - `alpha_s(M_Z)` and the `M_Z` EW rows:
   - derived-chain values plus a separately retained running bridge; reuse of

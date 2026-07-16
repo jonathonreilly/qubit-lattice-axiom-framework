@@ -35,14 +35,18 @@ Verification:
 - review-loop mathematics, runner independence, and governance/scope lanes:
   `PASS` after narrow fixes;
 - sibling pin runners pass.
+- disposable audit compatibility pipeline completed;
+- strict audit lint: zero errors;
+- generated target: dependency-free, critical, ready, `unaudited`, with 784
+  descendants;
+- every generated authority output was restored or deleted.
 
 Exact next action:
 
-1. complete the current rebase conflict resolution by preserving landed
-   block-01 history and this block-02 active state;
-2. run disposable `docs/audit/scripts/run_pipeline.sh` plus strict lint;
-3. restore/delete every generated audit/ledger/queue/effective-status output;
-4. update final base/checkpoint metadata, push, and open the block-02 PR.
+1. delete the worktree-local lock files;
+2. commit this final checkpoint;
+3. push the branch and open the block-02 review PR;
+4. if runtime remains, continue the deep block and then pivot to opportunity 3.
 
 The 120-minute deep block began at `2026-07-16T12:48:12Z` and remains in
 progress. Do not claim it complete before `2026-07-16T14:48:12Z`.

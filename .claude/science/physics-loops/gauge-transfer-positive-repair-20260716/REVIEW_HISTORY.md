@@ -56,3 +56,18 @@ elapsed `82.11s`.
 
 Final local disposition: `pass`. Branch-local source classification:
 `candidate-retained-grade`. This is not an audit verdict.
+
+## Block-02 disposable compatibility validation
+
+After rebasing onto `d4576165d181...`, the full compatibility pipeline and
+`audit_lint.py --strict` completed with zero errors. The generated target row
+was:
+
+- `claim_type=bounded_theorem`;
+- `audit_status=effective_status=unaudited`;
+- dependency-free;
+- critical and ready in the queue;
+- 784 transitive descendants.
+
+All generated ledger, queue, effective-status, publication-view, and
+front-door outputs were restored or deleted. None is part of the branch diff.

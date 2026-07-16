@@ -2068,6 +2068,11 @@ def _cross_cycle_no_go_universe(entry: dict[str, Any]) -> tuple[int, str] | None
             payload = json.loads(str(entry.get("text") or ""))
         except json.JSONDecodeError:
             return None
+        if not isinstance(payload, dict):
+            # Fail closed: a JSON scalar/array in the fallback text cannot
+            # carry the universe metadata; refusing here keeps callers from
+            # aborting on a malformed index entry.
+            return None
         count = payload.get("no_go_row_universe_count")
         digest = payload.get("no_go_row_universe_sha256")
     if (

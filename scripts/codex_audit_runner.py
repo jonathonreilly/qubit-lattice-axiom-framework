@@ -1610,6 +1610,56 @@ def bind_authenticated_casefold_evidence_paths(
     return changes
 
 
+def bind_authenticated_n8_universe_metadata(
+    blob: dict,
+    evidence_manifest: dict[str, dict] | None,
+) -> list[dict[str, object]]:
+    """Bind orchestrator-owned N8 no-go-universe count and digest."""
+    if not isinstance(evidence_manifest, dict):
+        return []
+    packet = blob.get("no_go_discipline")
+    if not isinstance(packet, dict):
+        return []
+    section = packet.get("N8_cross_cycle_echo")
+    if not isinstance(section, dict):
+        return []
+    path = section.get("evidence_path")
+    if not isinstance(path, str) or not path:
+        return []
+    entry = evidence_manifest.get(path)
+    if not isinstance(entry, dict):
+        return []
+    roles = entry.get("roles")
+    # Fail closed on malformed role metadata: only a list of strings can
+    # authenticate the cross-cycle index role. `in` on the checked list never
+    # raises on unhashable members, and non-list shapes (int, str, mapping)
+    # are refused outright instead of aborting the runner with TypeError.
+    if not isinstance(roles, list) or "cross_cycle_index" not in [
+        role for role in roles if isinstance(role, str)
+    ]:
+        return []
+    universe = no_go_discipline_gate._cross_cycle_no_go_universe(entry)
+    if universe is None:
+        return []
+    count, digest = universe
+    changes: list[dict[str, object]] = []
+    for field, authenticated in (
+        ("no_go_row_universe_count", count),
+        ("no_go_row_universe_sha256", digest),
+    ):
+        current = section.get(field)
+        if current == authenticated:
+            continue
+        changes.append({
+            "location": "no_go_discipline.N8_cross_cycle_echo",
+            "field": field,
+            "from": current,
+            "to": authenticated,
+        })
+        section[field] = authenticated
+    return changes
+
+
 def bind_authenticated_occurrence_metadata(
     blob: dict,
     evidence_manifest: dict[str, dict] | None,
@@ -2662,6 +2712,16 @@ def main() -> int:
                         "phase": "authenticated_casefold_evidence_paths_bound",
                         "bindings": casefold_path_bindings,
                     }) + "\n")
+            n8_universe_bindings = bind_authenticated_n8_universe_metadata(
+                blob, exact_evidence_manifest
+            )
+            if n8_universe_bindings:
+                with run_log.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({
+                        "claim_id": cid,
+                        "phase": "authenticated_n8_universe_metadata_bound",
+                        "bindings": n8_universe_bindings,
+                    }) + "\n")
             occurrence_bindings = bind_authenticated_occurrence_metadata(
                 blob, exact_evidence_manifest
             )
@@ -2778,6 +2838,22 @@ def main() -> int:
                                 ),
                                 "attempt": repair_attempt,
                                 "bindings": repair_casefold_path_bindings,
+                            }) + "\n")
+                    repair_n8_universe_bindings = (
+                        bind_authenticated_n8_universe_metadata(
+                            repair_blob, exact_evidence_manifest
+                        )
+                    )
+                    if repair_n8_universe_bindings:
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": (
+                                    "validation_repair_authenticated_n8_"
+                                    "universe_metadata_bound"
+                                ),
+                                "attempt": repair_attempt,
+                                "bindings": repair_n8_universe_bindings,
                             }) + "\n")
                     repair_bindings = bind_authenticated_occurrence_metadata(
                         repair_blob, exact_evidence_manifest
@@ -2907,6 +2983,22 @@ def main() -> int:
                                 ),
                                 "attempt": schema_attempt,
                                 "bindings": schema_casefold_path_bindings,
+                            }) + "\n")
+                    schema_n8_universe_bindings = (
+                        bind_authenticated_n8_universe_metadata(
+                            schema_blob, exact_evidence_manifest
+                        )
+                    )
+                    if schema_n8_universe_bindings:
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": (
+                                    "fresh_schema_retry_authenticated_n8_"
+                                    "universe_metadata_bound"
+                                ),
+                                "attempt": schema_attempt,
+                                "bindings": schema_n8_universe_bindings,
                             }) + "\n")
                     schema_bindings = bind_authenticated_occurrence_metadata(
                         schema_blob, exact_evidence_manifest

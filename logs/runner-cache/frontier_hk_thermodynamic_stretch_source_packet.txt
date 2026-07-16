@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hk_thermodynamic_stretch_source_packet.py
-runner_sha256: c6723e16a4f8f7e585af1e57bb9a56d370bf785a0a468b491d07492e8a909627
+runner_sha256: 2e5fc1eaccbfca0030503a84c087729a4e653520e704fdb2cd517a0ea66298d2
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -10,8 +10,8 @@ status: ok
 HK THERMODYNAMIC STRETCH SOURCE PACKET
 ==============================================================================
 
-Question: is Block 03 now runner-backed as an open gate, with
-the later L_s=2 HK cube result included but not overclaimed?
+Question: is Block 03 runner-backed as an open gate, with the
+legacy Block 06 formal theorem excluded from physical Path A?
 
 [PASS] source note title is present: Heat-Kernel Thermodynamic
 [PASS] primary runner metadata names this verifier: Primary runner: `scripts/frontier_hk_thermodynamic_stretch_source_packet.py`
@@ -26,30 +26,31 @@ the later L_s=2 HK cube result included but not overclaimed?
 [PASS] cluster estimate is the open premise blocker: cluster-decomposition / exponential-clustering estimate
 [PASS] current premises do not contain the cluster estimate: current approved primitive or
 retained-premise surface
-[PASS] Block 06 update is cited: BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md
-[PASS] Block 06 finite cube value is cited: 0.5223243151
-[PASS] Block 06 still leaves the named obstruction open: Block 03's named obstruction stands
+[PASS] Block 06 formal-only correction is recorded: formal finite-matrix theorem rather than
+[PASS] physical Path A is explicitly still open: Path A remains open on this source surface
+[PASS] physical identification bridge is required: independently audited bridge from the proposed
+[PASS] legacy row no longer supplies a finite-volume comparator: supplies neither the physical identification bridge nor a finite-volume
+[PASS] Block 06 is no longer a citation-graph dependency: target appears only as code-formatted historical identity
 [PASS] canonical HK Brownian time at beta=6 is one: t(6)=1
 [PASS] single-plaquette HK value matches exp(-2/3): exp(-2/3)=0.513417119032592
-[PASS] L_s=2 HK cube improves over single plaquette: 0.5223243151 > 0.5134171190
-[PASS] L_s=2 HK cube remains below thermodynamic comparator: 0.5223243151 < 0.5934
-[PASS] finite cube gap remains far from epsilon-witness scale: gap=0.0710756849
 [PASS] BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md exists: docs/BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md
 [PASS] BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md cited by Block 03 note: BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md
 [PASS] BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md exists: docs/BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md
 [PASS] BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md cited by Block 03 note: BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md
-[PASS] BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md exists: docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md
-[PASS] BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md cited by Block 03 note: BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md
 [PASS] SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md exists: docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md
 [PASS] SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md cited by Block 03 note: SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md
 [PASS] GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md exists: docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md
 [PASS] GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md cited by Block 03 note: GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md
 [PASS] SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md exists: docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md
 [PASS] SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md cited by Block 03 note: SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md
-[PASS] cube note names finite value: P_cube_HK(L_s=2, t=1) = 0.5223243151
-[PASS] cube note states thermodynamic limit remains open: does not
-establish the thermodynamic limit
-[PASS] cube note preserves Block 03 blocker: Block 03's named obstruction stands
+[PASS] cube note is a finite weighted-transfer theorem: Finite Weighted-Transfer Theorem
+[PASS] cube note class is positive theorem: **Claim type:** positive_theorem
+[PASS] cube note makes legacy names identity-only: identity only
+[PASS] cube note requires a separate downstream physical bridge: Any downstream physical reuse must add a separate, explicit bridge
+[PASS] cube note declares no source-note dependencies: ## Dependencies
+
+None.
+[PASS] cube theorem does not retain the old physical scalar symbol: P_cube_HK absent from repaired source
 [PASS] scripts/probe_hk_time_derivation.py exists: scripts/probe_hk_time_derivation.py
 [PASS] logs/runner-cache/probe_hk_time_derivation.txt exists: logs/runner-cache/probe_hk_time_derivation.txt
 [PASS] scripts/probe_hk_time_derivation.py cache names same runner: scripts/probe_hk_time_derivation.py
@@ -68,23 +69,14 @@ establish the thermodynamic limit
 [PASS] scripts/probe_hk_plaquette_closed_form.py summary has expected pass count: PASS=8 FAIL=0
 [PASS] scripts/probe_hk_plaquette_closed_form.py cache contains required fragment: exp(-2/3)
 [PASS] scripts/probe_hk_plaquette_closed_form.py cache contains required fragment: SUMMARY: PASS=8 FAIL=0
-[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py exists: scripts/probe_hk_cube_perron_l2_2026_05_06.py
-[PASS] logs/runner-cache/probe_hk_cube_perron_l2_2026_05_06.txt exists: logs/runner-cache/probe_hk_cube_perron_l2_2026_05_06.txt
-[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache names same runner: scripts/probe_hk_cube_perron_l2_2026_05_06.py
-[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache status ok: ok
-[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache exit code zero: 0
-[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache sha is fresh: cache=6de88717f28d9e1967a1c3c81776756c2a7b338d3c4998c8feb52692560d5447
-[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache contains required fragment: P_cube_HK(L_s=2, t=1) ≈ 0.5223243151
-[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache contains required fragment: Block 03's named obstruction
-[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache contains required fragment: thermodynamic-limit closure
 
 ==============================================================================
-SUMMARY: PASS=62 FAIL=0
+SUMMARY: PASS=53 FAIL=0
 ==============================================================================
 
 Verdict: bounded source-packet support. Block 03 is runner-backed
-as an open gate; Block 06 closes the finite-cube comparator path,
-but thermodynamic closure still needs the named clustering estimate.
+as an open gate; Block 06 is formal-only and does not close physical
+Path A; thermodynamic closure still needs the named clustering estimate.
 No audit verdict or retained status is assigned.
 
 ----- stderr -----

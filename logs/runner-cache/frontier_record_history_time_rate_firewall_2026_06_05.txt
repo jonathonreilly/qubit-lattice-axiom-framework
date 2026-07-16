@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_history_time_rate_firewall_2026_06_05.py
-runner_sha256: 6ac2cece90dc65f993d425527f943df60d2ab7617f8176399cc43500e7572881
+runner_sha256: 5d73a2ed9b5601d34b12f4d9d03f61e1a593fedf22a1ebdec43374472e2a221e
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
-RECORD HISTORY ORDER / TIME-RATE FIREWALL
-bounded-support / negative-route-pruning runner
+ABSTRACT RECORD-WORD ORDER / TIME-RATE FIREWALL
+no-go / negative-route-pruning runner
 ==============================================================================
 
 ------------------------------------------------------------------------------
@@ -25,8 +25,8 @@ bounded-support / negative-route-pruning runner
 ------------------------------------------------------------------------------
 2. Same word, different time grids, different rates
 ------------------------------------------------------------------------------
-  [PASS] unit and double grids preserve event order
-  [PASS] irregular grid preserves event order
+  [PASS] unit and double grids preserve abstract index order
+  [PASS] irregular grid preserves abstract index order
   [PASS] record counts are invariant under time-grid choice
   [PASS] unit and double grids give different rates (1.0 vs 0.5)
   [PASS] irregular grid gives another rate (0.5555555555555556 vs 1.0)
@@ -57,6 +57,7 @@ bounded-support / negative-route-pruning runner
 ------------------------------------------------------------------------------
   [PASS] record outputs do not include time outputs
   [PASS] kernel outputs do not include time outputs
+  [PASS] abstract word outputs do not include causal-event outputs
   [PASS] time/rate bridge is a separate output class
 
 ------------------------------------------------------------------------------
@@ -65,14 +66,18 @@ bounded-support / negative-route-pruning runner
   [PASS] source note exists (docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md)
   [PASS] note contains marker: claim_type_author_hint: no_go
   [PASS] note contains marker: **Claim type:** no_go
-  [PASS] note contains marker: bounded negative route-pruning certificate
+  [PASS] note contains marker: narrow negative route-pruning certificate
   [PASS] note contains marker: Trace class: negative route pruning
   [PASS] note contains marker: Does not derive physical time
   [PASS] note contains marker: Does not select a generation/Koide dial setting.
   [PASS] note contains marker: This row is not a positive time/rate theorem.
-  [PASS] note contains marker: It is not a production theorem
+  [PASS] note contains marker: is not a production theorem
   [PASS] note contains marker: makes no retained-status proposal
   [PASS] note contains marker: does not use bare retained language
+  [PASS] note contains marker: MINIMAL_AXIOMS_2026-06-29.md
+  [PASS] note contains marker: does not construct a map from a site-tagged record atom to a formation event
+  [PASS] note contains marker: must not be consumed as a positive causal-order input
+  [PASS] note contains marker: Does not derive record atoms as formation events
   [PASS] forbidden wording absent: time closure
   [PASS] forbidden wording absent: rate closure
   [PASS] forbidden wording absent: generator closure
@@ -82,7 +87,7 @@ bounded-support / negative-route-pruning runner
 ------------------------------------------------------------------------------
 SCORECARD
 ------------------------------------------------------------------------------
-SCORECARD PASS=44 FAIL=0
+SCORECARD PASS=49 FAIL=0
 
 ----- stderr -----
 

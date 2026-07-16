@@ -7,7 +7,7 @@ claim_type_author_hint: no_go
 
 **Date:** 2026-06-05
 **Claim type:** no_go
-**Claim boundary:** bounded negative route-pruning certificate. Independent
+**Claim boundary:** narrow negative route-pruning certificate. Independent
 audit is required before any effective-status use.
 **Status authority:** independent audit lane only. This source note does not
 set an audit verdict, edit audit data, or assert package-status promotion.
@@ -18,12 +18,7 @@ with cache
 
 **Local support inputs:**
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
-- [`RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md`](RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md)
-- [`RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md`](RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md)
-- [`RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md`](RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md)
-- [`ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`](ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md)
-- [`RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`](RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md)
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 
 ## 2026-06-17 source-boundary repair
 
@@ -34,16 +29,28 @@ rate, or clock normalization. A later dynamics theorem may still supply those
 bridges; this row only prevents downstream notes from importing them from
 record-history order alone.
 
-The parent
-[`RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md`](RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md)
-is consumed only as bounded post-record support. It is not a production theorem
-and does not turn this route-pruning row into a positive theorem. It is not a
-production theorem for this child row either. It is not a production theorem.
+The abstract word and optional per-step kernel are quantified theorem inputs,
+not positive conclusions imported from another row. This row is not a
+production theorem and does not turn those inputs into formation dynamics.
+
+## 2026-07-16 causal-source scope split
+
+The object in this note is a **supplied abstract word/order**, not a causal
+event set. This row does not construct a map from a site-tagged record atom to
+a formation event, does not supply a formation-successor relation, and does
+not identify prefix order with the causal or chronological order used by a
+light-cone theorem. It must not be consumed as a positive causal-order input.
+
+Those are separate positive bridges. The current
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) says that
+records form and are permanent, but leaves the formation rule,
+record-production dynamics, time metric, and dependency structure outside the
+axiom content.
 
 ## Question
 
-Does unbounded finite record history supply physical time, rates, or a clock
-normalization?
+Given a supplied abstract finite record word/order, do its order and counts
+determine physical time, rates, or a clock normalization?
 
 No. A record history supplies ordered words and counts. A supplied instrument
 kernel supplies probabilities per admitted step. A physical time metric or
@@ -52,18 +59,18 @@ transition rate requires an additional clock/production normalization.
 The useful typed surface is:
 
 ```text
-record word w in O*
+supplied abstract word w in O*
   -> order/length/counts
   -> optional supplied step kernel P
   -> probabilities per step
   -> requires clock map n |-> t_n for physical rates.
 ```
 
-## Bounded result
+## Supplied abstract-word surface
 
-The record-history monoid gives exact post-record information dynamics:
+Given the supplied word, the abstract word algebra gives:
 
-- append one realized atom;
+- append one supplied word atom;
 - extend a finite word;
 - update integral counts;
 - preserve prefix/order structure;
@@ -106,19 +113,23 @@ theorem is impossible.
 
 ## What this unlocks
 
-- Audit rows can cite record histories for order/count/unbounded-retention
-  support without importing a rate claim.
+- Audit rows can cite this row only for the negative timing/rate boundary over
+  a supplied abstract word; it grants no causal-order premise.
 - Dynamics rows can separate "per-step transition kernel" from
   "continuous-time generator."
-- Arrow-of-time rows can use record accumulation as an oriented order parameter
-  while keeping past-hypothesis and clock-normalization residuals explicit.
-- Production lanes can state exactly what they must add: a clocked process, not
-  another post-record history axiom.
+- Causal-order consumers must add a typed record-atom-to-formation-event map
+  and a supplied or derived dependency order on the same event set as their
+  cone relation.
+- Production lanes can state exactly what they must add: a formation process
+  and a clocked dynamics, not another abstract word/count identity.
 
 ## Boundaries
 
 - Does not derive physical time, rates, a clock, a generator, a measurement
   Hamiltonian, or record production.
+- Does not derive record atoms as formation events, a formation-successor
+  relation, spacelike incomparability, causal order, chronological order, or
+  compatibility with a light-cone event set.
 - Does not claim unlimited metric duration from unbounded finite histories.
 - Does not select a generation/Koide dial setting.
 - Does not apply audit verdicts.
@@ -136,11 +147,12 @@ The runner verifies:
 - the same one-step event probability is compatible with different
   `(lambda, dt)` pairs;
 - the source note keeps clock/rate/selector residuals explicit.
+- the source note forbids positive causal-order use of this negative row.
 
 Expected result:
 
 ```text
-SCORECARD PASS=44 FAIL=0
+SCORECARD PASS=49 FAIL=0
 ```
 
 ## Claim boundary

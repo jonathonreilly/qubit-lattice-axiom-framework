@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Record history order/time-rate firewall.
+"""Abstract record-word order/time-rate firewall.
 
-Finite record histories supply ordered words and counts. Supplied kernels give
-probabilities per admitted step. A physical time metric or rate normalization
-requires an extra clock/production bridge.
+Given a supplied abstract word, its order and counts do not determine a
+physical time metric or rate normalization. This runner does not construct
+record-formation events or a causal order.
 """
 
 from __future__ import annotations
@@ -17,6 +17,7 @@ import numpy as np
 PASS = 0
 FAIL = 0
 TOL = 1e-10
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def emit(line: str = "") -> None:
@@ -55,8 +56,8 @@ def is_stochastic(matrix: np.ndarray) -> bool:
 
 def main() -> int:
     emit("=" * 78)
-    emit("RECORD HISTORY ORDER / TIME-RATE FIREWALL")
-    emit("bounded-support / negative-route-pruning runner")
+    emit("ABSTRACT RECORD-WORD ORDER / TIME-RATE FIREWALL")
+    emit("no-go / negative-route-pruning runner")
     emit("=" * 78)
 
     section("1. Record words supply order/counts, not a metric")
@@ -80,8 +81,8 @@ def main() -> int:
     unit_rate = len(word) / (unit_times[-1] - unit_times[0])
     double_rate = len(word) / (double_times[-1] - double_times[0])
     irregular_rate = len(word) / (irregular_times[-1] - irregular_times[0])
-    check("unit and double grids preserve event order", np.all(np.diff(unit_times) > 0) and np.all(np.diff(double_times) > 0))
-    check("irregular grid preserves event order", np.all(np.diff(irregular_times) > 0))
+    check("unit and double grids preserve abstract index order", np.all(np.diff(unit_times) > 0) and np.all(np.diff(double_times) > 0))
+    check("irregular grid preserves abstract index order", np.all(np.diff(irregular_times) > 0))
     check("record counts are invariant under time-grid choice", np.all(counts(word) == c))
     check("unit and double grids give different rates", abs(unit_rate - double_rate) > TOL, f"{unit_rate} vs {double_rate}")
     check("irregular grid gives another rate", abs(irregular_rate - unit_rate) > TOL, f"{irregular_rate} vs {unit_rate}")
@@ -117,30 +118,42 @@ def main() -> int:
     check("same one-step probability is not a unique rate", abs(q_from_pair1 - q_from_pair2) < TOL and abs(lambda1 - lambda2) > TOL)
 
     section("5. Typed residual ledger")
-    record_outputs = {"word", "prefix_order", "count", "append"}
+    record_outputs = {"word", "abstract_prefix_order", "count", "append"}
     kernel_outputs = {"per_step_probability", "joint_word_probability"}
     time_outputs = {"clock_map", "duration", "continuous_rate", "generator"}
+    causal_outputs = {
+        "formation_event",
+        "formation_successor",
+        "causal_order",
+        "chronological_order",
+        "cone_event_set",
+    }
     check("record outputs do not include time outputs", record_outputs.isdisjoint(time_outputs))
     check("kernel outputs do not include time outputs", kernel_outputs.isdisjoint(time_outputs))
+    check("abstract word outputs do not include causal-event outputs", record_outputs.isdisjoint(causal_outputs))
     check("time/rate bridge is a separate output class", "clock_map" in time_outputs and "append" not in time_outputs)
 
     section("6. Source note sanity")
-    doc = Path("docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md")
+    doc = ROOT / "docs" / "RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md"
     text = doc.read_text(encoding="utf-8")
     text_flat = " ".join(text.split())
     markers = [
         "claim_type_author_hint: no_go",
         "**Claim type:** no_go",
-        "bounded negative route-pruning certificate",
+        "narrow negative route-pruning certificate",
         "Trace class: negative route pruning",
         "Does not derive physical time",
         "Does not select a generation/Koide dial setting.",
         "This row is not a positive time/rate theorem.",
-        "It is not a production theorem",
+        "is not a production theorem",
         "makes no retained-status proposal",
         "does not use bare retained language",
+        "MINIMAL_AXIOMS_2026-06-29.md",
+        "does not construct a map from a site-tagged record atom to a formation event",
+        "must not be consumed as a positive causal-order input",
+        "Does not derive record atoms as formation events",
     ]
-    check("source note exists", doc.exists(), str(doc))
+    check("source note exists", doc.exists(), str(doc.relative_to(ROOT)))
     for marker in markers:
         check(f"note contains marker: {marker}", marker in text or marker in text_flat)
     forbidden_wording = [

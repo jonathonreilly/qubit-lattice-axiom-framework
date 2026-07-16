@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_down_type_scale_convention_support.py
-runner_sha256: d264014abb2dd908740130f58f7e374302d826953bc0c9a14e3099f06f1a87e9
+runner_sha256: b051cb7ab94f2955762af2dd26d6cbd0c183b0b4ba9d8825ca1d4db759ce9d58
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.59
 status: ok
 ----- stdout -----
 CKM DOWN-TYPE FIVE-SIXTHS ALGEBRA AND SCALE-COVARIANCE BOUNDARY

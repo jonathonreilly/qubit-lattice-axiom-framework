@@ -3,7 +3,7 @@ runner: scripts/ckm_down_type_scale_convention_cycle_edge_hygiene_2026_06_17.py
 runner_sha256: c67d66a38641a1606793bf21ab9f8e272ba93c41ace1cd9b114566a0233627a8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================

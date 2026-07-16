@@ -41,10 +41,11 @@ This note narrows the parent's audited scope into the explicitly
 algebraic and arithmetic content that the runner does close, separated
 from the open-bridge dependencies that the parent itself flags.
 
-This is a bounded scope-narrowing companion of an existing audited
-note. It does not add a new axiom, does not add a new repo-wide theory
-class, does not propose a status promotion, and does not modify the
-parent note's audit ledger row.
+This is a bounded scope-narrowing companion of the parent's historically
+audited pre-repair source version; the rewritten parent row is currently
+`bounded_theorem`, `unaudited`. It does not add a new axiom, does not add a new
+repo-wide theory class, does not propose a status promotion, and does not
+modify the parent note's audit ledger row.
 
 ## Audited verdict (verbatim, for clarity)
 
@@ -70,9 +71,9 @@ following identities. This table describes the source version reviewed in
 | Identity | Class | Status |
 |---|---|---|
 | `C_F - T_F = 5/6` from SU(3) Casimir arithmetic | exact rational | audited PASS (sympy) |
-| `|V_cb|_atlas = alpha_s(v) / sqrt(6)` | retained input arithmetic | audited PASS |
+| `|V_cb|_atlas = alpha_s(v) / sqrt(6)` | supplied CKM-atlas comparator identification, conditional on `alpha_s(v)` | audited PASS (historical) |
 | 1-loop mass-anomalous-dimension exponent `gamma_m / (2 beta_0) = 12/25` for `n_f = 4` | exact rational from SU(3) Casimir bookkeeping | audited PASS |
-| `R_thresh = R_common * transport_1loop` | exact QCD identity (1-loop transport) | audited PASS (10^-10) |
+| `R_thresh = R_common * transport_1loop` | comparator bookkeeping; the 1-loop-truncated factor is not an exact all-orders QCD transport | audited PASS (10^-10) |
 | `(R_pred / R_common) / (R_pred / R_thresh) = transport_1loop` | algebraic consequence of the previous identity | audited PASS (10^-10) |
 
 The historical audit treated these identities and the reproduced numerical
@@ -119,17 +120,22 @@ The independent audit lane owns the repaired parent's later classification.
 ## Dependencies
 
 - [`CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md`](CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md)
-  for the parent audited support note.
+  for the parent bounded support note (historically audited pre-repair; the
+  rewritten row is currently `bounded_theorem`, `unaudited`).
 - [`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`](CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md)
   for the open 5/6 bridge dependency.
 - [`QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`](QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md)
   for the canonical scale-selection boundary statement.
 - [`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md)
-  for the retained `alpha_s(v)` anchor.
+  for the `alpha_s(v)` comparator (currently `bounded_theorem`, `unaudited`;
+  conditional on the reused plaquette `<P>=0.5934`).
 - [`CKM_ATLAS_AXIOM_CLOSURE_NOTE.md`](CKM_ATLAS_AXIOM_CLOSURE_NOTE.md)
-  for the retained `|V_cb|_atlas = alpha_s(v) / sqrt(6)` anchor.
+  for the supplied `|V_cb|_atlas = alpha_s(v) / sqrt(6)` identification
+  (currently `positive_theorem`, `unaudited`; a supplied identification, not a
+  derivation).
 
-These are imported authorities for a bounded scope-narrowing companion note.
+These are imported comparator authorities for a bounded scope-narrowing
+companion note.
 The row remains unaudited until the independent audit lane reviews this
 companion and its dependencies.
 

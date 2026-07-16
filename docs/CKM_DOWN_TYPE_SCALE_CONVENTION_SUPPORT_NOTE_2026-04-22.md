@@ -199,6 +199,21 @@ select `2 GeV`.
 
 ## 6. Comparator-only numerical illustration
 
+Every number in this section is a comparator, not a proof input, and each
+carries an explicit conditional provenance. The prediction
+`R_pred = [alpha_s(v)/sqrt(6)]^(6/5)` is a historical conditional comparator:
+`alpha_s(v)` is the reused strong coupling that rides on the supplied plaquette
+`<P>=0.5934` (comparator-only license; see the comparator note
+`ALPHA_S_DERIVED_NOTE.md`, cited here by name only so it stays a comparator and
+not a load-bearing dependency), and the `alpha_s(v)/sqrt(6)` combination rests
+on the supplied CKM-atlas
+identifications `|V_us|^2 = alpha_s(v)/2`, `A^2 = N_pair/N_color = 2/3`, and
+`|V_cb| = A|V_us|^2`, together with the still-open physical five-sixths bridge
+`|V_cb| = (m_s/m_b)^(5/6)`. None of those identifications is derived here. The
+mass values `81.0`, `93.4`, and `4180.0` (MeV: strange at `m_b`, strange at
+`2 GeV`, and bottom at `m_b`) and the couplings `alpha_s(2 GeV)=0.3026`,
+`alpha_s(m_b)=0.2211` are observational/PDG-style literature comparators.
+
 The current central values give
 
 ```text

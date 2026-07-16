@@ -122,6 +122,17 @@ def scale_covariance() -> None:
 
 
 def comparator_only_illustration() -> None:
+    # All constants below are comparators only (comparator=True), never proof
+    # inputs. Conditional provenance:
+    #   alpha_s_v          -- reused strong coupling; rides on the supplied
+    #                         plaquette <P>=0.5934 (comparator-only license,
+    #                         ALPHA_S_DERIVED_NOTE.md). The alpha_s(v)/sqrt(6)
+    #                         prediction rests on the supplied CKM-atlas
+    #                         identifications |V_us|^2=alpha_s(v)/2,
+    #                         A^2=N_pair/N_color=2/3, |V_cb|=A|V_us|^2 and the
+    #                         open 5/6 bridge; none is derived here.
+    #   81.0, 93.4, 4180.0 -- observational/PDG-style running masses (MeV).
+    #   0.3026, 0.2211     -- observational/PDG-style alpha_s literature values.
     print("\n4. COMPARATOR-ONLY NUMERICAL ILLUSTRATION")
     alpha_s_v = 0.103303816122
     r_pred = (alpha_s_v / sqrt(6.0)) ** (6.0 / 5.0)

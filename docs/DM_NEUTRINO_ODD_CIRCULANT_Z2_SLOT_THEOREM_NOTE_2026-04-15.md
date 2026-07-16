@@ -1,80 +1,151 @@
-# DM Neutrino Odd-Circulant Residual-`Z_2` Slot Theorem
+# Supplied `3 x 3` Hermitian-Circulant / `P_23` Even-Odd Algebra Lemma
+
+**Claim type:** bounded_theorem
 
 **Date:** 2026-04-15  
-**Status:** exact local structural theorem on the DM circulant coefficient space  
+**Status:** exact finite-dimensional algebra lemma for the supplied matrix
+conventions; no physical-observable identification
 **Script:** `scripts/frontier_dm_neutrino_odd_circulant_z2_slot_theorem.py`
 
 ## Question
 
-On the DM Hermitian circulant right-Gram family, what exact local coefficient
-slot carries the CP-supporting deformation?
+For the supplied cyclic shift `S` and exchange matrix `P_23`, what is the exact
+real coefficient space of `3 x 3` Hermitian circulant matrices, how does it
+split under `P_23`, and what is the displayed entrywise odd polynomial?
 
-## Bottom line
+## Supplied conventions
 
-There is exactly one residual-`Z_2`-odd slot.
+Use zero-based matrix indices and
 
-Writing the Hermitian circulant kernel as
+```text
+S = [[0,1,0],       P_23 = [[1,0,0],
+     [0,0,1],               [0,0,1],
+     [1,0,0]],              [0,1,0]].
+```
 
-`K = d I + c_even (S + S^2) + i c_odd (S - S^2)`,
+Thus `S^3 = I`, `S^2 = S^dag`, and `P_23 S P_23 = S^2`. Define the real
+Hermitian basis
 
-the exchange `P_23` swaps `S <-> S^2`, leaves `I` and `S + S^2` invariant, and
-flips the sign of `i(S - S^2)`. So:
+```text
+B_0   = I,
+B_+   = S + S^2,
+B_-   = i(S - S^2).
+```
 
-- `d` is residual-`Z_2` even
-- `c_even` is residual-`Z_2` even
-- `c_odd` is residual-`Z_2` odd
+The supplied family is
 
-Moreover, the standard leptogenesis CP kernel on this family is
+```text
+K(d,c_even,c_odd) = d B_0 + c_even B_+ + c_odd B_-,
+```
 
-`Im[(K_01)^2] = 2 c_even c_odd`,
+with `d`, `c_even`, and `c_odd` real. In this exact convention,
 
-so `c_odd` is exactly the local slot that must be activated away from zero.
+```text
+K_01 = c_even + i c_odd.
+```
 
-## Exact weak-axis input
+The plus sign is part of the supplied `S` and zero-based-index convention.
 
-The exact weak-axis `1+2` split already gives a positive local result:
+## Bounded algebra lemma
 
-- the bridged local Dirac surface fills the even circulant slot
-- its Hermitian kernel has `c_odd = 0` exactly
+**Lemma.** The real vector space of `3 x 3` Hermitian matrices commuting with
+the supplied `S` is exactly
 
-So the branch now knows something sharper than “some CP phase is missing.”
-It knows the exact local slot that is missing.
+```text
+span_R {B_0, B_+, B_-}.
+```
 
-## Theorem-level statement
+The expansion is unique. With the Hilbert-Schmidt pairing
+`<A,B> = Tr(A^dag B)`, its coefficients are
 
-**Theorem (Unique residual-`Z_2`-odd slot on the DM Hermitian circulant
-family).** On the Hermitian circulant family
+```text
+d      = <B_0,K> / 3,
+c_even = <B_+,K> / 6,
+c_odd  = <B_-,K> / 6.
+```
 
-`K = d I + c_even (S + S^2) + i c_odd (S - S^2)`,
+Conjugation by `P_23` acts as
 
-with `P_23 S P_23 = S^2`, the coefficient `c_odd` is the unique
-residual-`Z_2`-odd local slot. The standard leptogenesis CP tensor on this
-family is proportional to `c_even c_odd`. The exact weak-axis `1+2` bridge
-fills only the even slot and gives `c_odd = 0`.
+```text
+B_0 -> +B_0,
+B_+ -> +B_+,
+B_- -> -B_-.
+```
 
-Therefore the remaining local coefficient problem on the DM denominator lane is
-exactly the activation law for one residual-`Z_2`-odd slot.
+Therefore the `P_23`-even subspace has real dimension two and the `P_23`-odd
+subspace has real dimension one. Equivalently, `c_odd` is the unique
+`P_23`-odd coefficient in this supplied Hermitian-circulant algebra.
+
+Finally, direct multiplication of the displayed entry gives the exact
+coordinate identity
+
+```text
+A_01(K) := Im[(K_01)^2] = 2 c_even c_odd.
+```
+
+It follows algebraically that `A_01(P_23 K P_23) = -A_01(K)` on this family.
+It is also odd under entrywise complex conjugation. In a convention where
+complex conjugation is called the algebraic CP action, `A_01` may therefore be
+called an algebraic CP-odd polynomial. That terminology does not make it a
+physical CP or leptogenesis observable.
+
+## Basis statement
+
+The coefficient triple and the one-dimensional odd subspace are
+basis-covariant: after simultaneous unitary conjugation of `K`, `S`, `P_23`,
+and the three basis matrices, the Hilbert-Schmidt extraction returns the same
+coefficients and the parity multiplicities remain `(2 even, 1 odd)`.
+
+The coordinate functional `A_01(K) = Im[(K_01)^2]` is different. It refers to
+the displayed zero-based `01` entry and is not invariant under an arbitrary basis change.
+Any physical use must first supply a readout theorem selecting that coordinate
+or replacing it by a justified basis-invariant observable.
+
+## Exact scope firewall
+
+This bounded lemma proves only finite-dimensional supplied-matrix algebra. It
+does **not** prove that:
+
+- the supplied `K` is the physical heavy-neutrino or right-Gram carrier;
+- framework dynamics generate particular values of `d`, `c_even`, or
+  `c_odd`, or require `c_odd != 0`;
+- `A_01` is a decay asymmetry, a leptogenesis invariant, or any other
+  physical readout;
+- a nonzero algebraic polynomial survives normalization, channel summation,
+  washout, kinetics, or thermal transport.
+
+The remaining repair class is `missing_bridge_theorem`. Promotion to a
+physical statement would require, separately:
+
+1. a **carrier bridge** identifying the supplied matrix and basis with the
+   physical right-Gram/heavy-neutrino carrier;
+2. a **source/activation bridge** deriving the coefficients, including any
+   nonzero odd coefficient, from framework inputs;
+3. a **readout bridge** deriving the relevant physical CP/leptogenesis
+   observable, its normalization, and its basis/rephasing convention from the
+   carrier rather than defining it to be `A_01`;
+4. a **transport bridge** carrying that observable through rates, washout,
+   kinetics, and thermal evolution to a physical asymmetry.
+
+None of those bridges is supplied here.
 
 ## What this closes
 
-This closes the last vague part of the local coefficient space.
+This closes the bounded algebra questions:
 
-The branch no longer needs to say:
-
-- “some phase-like thing is missing”
-- “some generic flavor coefficient is missing”
-
-The missing local object is now exact: the odd circulant coefficient `c_odd`.
+- the full real Hermitian-circulant parametrization;
+- the unique `P_23`-odd coefficient;
+- exact Hilbert-Schmidt coefficient extraction;
+- the convention-fixed identity
+  `Im[(K_01)^2] = 2 c_even c_odd`.
 
 ## What this does not close
 
-This note does **not** derive a nonzero activation law for `c_odd`.
-
-It identifies the slot exactly, but it does not yet turn it on.
+This note does not identify a physical carrier, source law, observable, or
+transport law, and it does not state that any coefficient must be activated.
 
 ## Command
 
 ```bash
 python3 scripts/frontier_dm_neutrino_odd_circulant_z2_slot_theorem.py
 ```
-

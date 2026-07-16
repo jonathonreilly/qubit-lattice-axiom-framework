@@ -52,7 +52,7 @@ at fixed `m`. Parity-mixing invariants are the only remaining class.
 | 4 | `det K_doublet = K11 K22 − \|K12\|²` | retained-atlas-native (difference of parity-definite) | parity-mixing via SUM structure | Yes, but saddle; crit point outside chamber |
 | 5 | `‖K_doublet‖_F² = K11² + K22² + 2\|K12\|²` | retained-atlas-native (positive-definite sum) | parity-mixing via SUM structure | **Yes; m-independent closed-form boundary min** |
 | 6 | Traceless-Frob `½(K11−K22)² + 2\|K12\|²` | retained-atlas-native | parity-mixing but degenerate (K11−K22 = −1/√3 constant) | No — q_+-blind |
-| 7 | CP bilinear `c_even · c_odd` ([odd-circulant Z2 slot](./DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md)) | retained theorem on DM circulant family | parity-mixing (bilinear of even/odd) | No — on the active sheet the singlet-slot is frozen (K01 = a_*), so the bilinear is a constant |
+| 7 | Coordinate polynomial `A_01(K) = Im[(K01)^2] = 2 c_even c_odd` ([bounded Hermitian-circulant / P23 lemma](./DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md)) | bounded supplied-matrix algebra lemma; no physical CP/leptogenesis readout | parity-mixing (bilinear of even/odd) in the displayed coordinate basis | No — on the active sheet the singlet-slot is frozen (K01 = a_*), so the polynomial is a constant |
 | 8 | Positive polar H CP tensor ([positive-polar](./DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md)) | retained theorem | parity-mixing in right-Gram slots | Not directly on (δ, q_+); lives in `(d_i, r_ij, φ)` |
 | 9 | Z_3 phase-lift mixed bridge ([phase-lift](./DM_NEUTRINO_Z3_PHASE_LIFT_MIXED_BRIDGE_NOTE_2026-04-15.md)) | **invented post-axiom family** | genuinely parity-mixing | **Not usable** — post-axiom |
 | 10 | Odd-mixed-bridge extension ([extension note](./DM_NEUTRINO_ODD_MIXED_BRIDGE_EXTENSION_NOTE_2026-04-15.md)) | extension-class only (no construction) | classifies activator class | **Not usable** — no derivation |
@@ -203,8 +203,9 @@ requires a canonical-functional selection axiom to close the selector gate.
  alone, provided a min-selection axiom is available.
 - **INSUFFICIENT:** det K_doublet (saddle, unconstrained crit outside
  chamber); traceless-Frob (degenerate in q_+); cubic Tr(J^3) (already
- cubic-variational-obstructed); CP bilinear c_even c_odd (constant on active
- sheet because K01 is the frozen intrinsic slot a_*); positive-polar
+ cubic-variational-obstructed); coordinate polynomial
+ `A_01 = 2 c_even c_odd` (constant on active sheet because K01 is the frozen
+ intrinsic slot a_*; no physical CP readout supplied); positive-polar
  H CP tensor (lives in right-Gram space, not (δ, q_+)).
 - **NOT USABLE (post-axiom, necessary-only, or orthogonal carrier):**
  phase-lift mixed bridge, odd-mixed-bridge extension, CP-kernel
@@ -311,8 +312,10 @@ parity-mixing selector candidates for sole-axiom derivation):
 - [DM_NEUTRINO_CP_KERNEL_DEFORMATION_NECESSITY_NOTE_2026-04-15.md](./DM_NEUTRINO_CP_KERNEL_DEFORMATION_NECESSITY_NOTE_2026-04-15.md)
  (necessary-condition only)
 - [DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md](./DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md)
- (CP-bilinear c_even c_odd; the singlet slot K01 on the active sheet is
- frozen, so this bilinear is a constant on the active sheet)
+ (bounded supplied-matrix identity
+ `A_01(K) = Im[(K01)^2] = 2 c_even c_odd`; the singlet slot K01 on the
+ active sheet is frozen, so this coordinate polynomial is constant; no
+ carrier/readout/transport interpretation is imported)
 - [DM_NEUTRINO_ODD_CIRCULANT_CURRENT_STACK_ZERO_LAW_NOTE_2026-04-15.md](./DM_NEUTRINO_ODD_CIRCULANT_CURRENT_STACK_ZERO_LAW_NOTE_2026-04-15.md)
  (current stack does not turn on c_odd; zero-law)
 

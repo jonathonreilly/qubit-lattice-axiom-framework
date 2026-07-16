@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_two_higgs_minimality_theorem.py
-runner_sha256: 913c5aa213831499e3451a55277eb0f1a8252993ff4f84df9317e5858f2e6e1e
+runner_sha256: c490767c4654be0c4b7306529acbce83faf8ed6d3cb005b4e876e51feca99e2a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -12,16 +12,16 @@ DM NEUTRINO TWO-HIGGS MINIMALITY THEOREM
 
 Authority stack:
   - DM leptogenesis universal-Yukawa no-go
-  - DM minimal Z3 circulant CP tool
+  - supplied Z3 circulant target family
   - neutrino Dirac two-Higgs escape theorem
   - DM neutrino two-Higgs right-Gram bridge
 
 Question:
-  What is the unique minimal exact local Z3 extension that can supply
-  the non-diagonal Hermitian kernel DM leptogenesis now needs?
+  Given a separately justified non-diagonal right-Gram target, what is
+  the unique minimal exact local Z3 support class that can realize it?
 
 ========================================================================================
-PART 1: SINGLE-HIGGS AND REPEATED-CHARGE LANES STAY CP-EMPTY
+PART 1: SINGLE-HIGGS AND REPEATED-CHARGE LANES STAY DIAGONAL
 ========================================================================================
   [PASS] Every fixed-charge single-Higgs lane gives diagonal Y^dag Y  (monomial support keeps the Hermitian kernel diagonal)
   [PASS] A two-Higgs lane with repeated charge is still effectively single-Higgs  (max offdiag=0.00e+00)
@@ -35,7 +35,7 @@ PART 2: TWO DISTINCT HIGGS CHARGES ARE THE FIRST LOCAL ESCAPE
   [PASS] Its right-Gram kernel is generically non-diagonal  (max offdiag=0.760066)
 
   So two distinct Higgs charges are the first exact local class that can
-  support the non-diagonal Hermitian kernel leptogenesis needs.
+  support a separately supplied non-diagonal Hermitian target.
 
 ========================================================================================
 PART 3: EVERY DISTINCT-CHARGE PAIR REDUCES TO THE CANONICAL CLASS
@@ -46,15 +46,15 @@ PART 3: EVERY DISTINCT-CHARGE PAIR REDUCES TO THE CANONICAL CLASS
   It is one canonical two-Higgs class up to relabeling.
 
 ========================================================================================
-PART 4: THE DM CP TARGET LIVES ON THAT UNIQUE MINIMAL ESCAPE
+PART 4: THE SUPPLIED ALGEBRAIC TARGET LIVES ON THAT MINIMAL ESCAPE
 ========================================================================================
-  [PASS] The sample odd-circulant CP-supporting kernel lies on the admissible subcone  (d=1.100000, 2r=0.917606)
+  [PASS] The sample odd-circulant target lies on the admissible subcone  (d=1.100000, 2r=0.917606)
   [PASS] That kernel is realized exactly on the canonical two-Higgs lane  (realization error=2.48e-16)
   [PASS] The same kernel cannot come from the single-Higgs universal bridge  (single-higgs mismatch=0.458803)
 
-  So once nonzero local DM CP support is required, the canonical
-  two-Higgs distinct-charge class is not just allowed. It is the unique
-  minimal exact local escape on the current stack.
+  Thus, if the displayed non-diagonal target is separately required, the
+  canonical two-Higgs distinct-charge class is the unique minimal exact
+  local escape on the current stack.
 
 ========================================================================================
 RESULT
@@ -64,10 +64,12 @@ RESULT
     - repeated charges are still too small
     - two distinct Higgs charges are the unique minimal exact local escape
     - that escape is canonical up to relabeling
-    - the DM CP-supporting right-Gram target already lives on it
+    - the supplied right-Gram target already lives on it
+    - no physical CP/leptogenesis readout is inferred from that algebra
 
   So the branch no longer needs to ask whether some other smaller local
-  extension might rescue the denominator. There is no smaller exact one.
+  support class could realize the supplied target. There is no smaller
+  exact one under the stated support assumptions.
 
 PASS=8  FAIL=0
 

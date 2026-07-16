@@ -1,0 +1,127 @@
+From 1bcb49820e3945546858fcfeeb2fced357aa9a4b Mon Sep 17 00:00:00 2001
+From: Claude Opus <noreply@anthropic.com>
+Date: Thu, 16 Jul 2026 09:05:15 -0400
+Subject: [PATCH] ci: pin the audit pipeline to release requirements and add a
+ per-PR smoke gate
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- requirements-release.txt gains the missing pyyaml pin (the pipeline imports
+  yaml; the release file previously omitted it, so switching CI to exact pins
+  would have broken the nightly).
+- audit.yml installs requirements-release.txt: the nightly's verdict-bearing
+  numerics now run against exact versions instead of loose >= floors, closing
+  the reproducibility gap between CI and the pinned release environment.
+- New pr-smoke.yml: on any PR touching Python or the requirements files,
+  byte-compile every changed .py and, when audit tooling changed, run the
+  docs/audit/scripts/tests suite. Read-only (contents: read), 15-minute cap,
+  no auto-commit — breakage surfaces at PR time instead of the next nightly.
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>
+---
+ .github/workflows/audit.yml    |  7 ++--
+ .github/workflows/pr-smoke.yml | 60 ++++++++++++++++++++++++++++++++++
+ requirements-release.txt       |  5 +--
+ 3 files changed, 67 insertions(+), 5 deletions(-)
+ create mode 100644 .github/workflows/pr-smoke.yml
+
+diff --git a/.github/workflows/audit.yml b/.github/workflows/audit.yml
+index 7c81450b45..f85fec4b91 100644
+--- a/.github/workflows/audit.yml
++++ b/.github/workflows/audit.yml
+@@ -50,9 +50,10 @@ jobs:
+       - name: Install dependencies
+         run: |
+           python -m pip install --upgrade pip
+-          if [ -f requirements.txt ]; then
+-            pip install -r requirements.txt
+-          fi
++          # Exact pins: the audit pipeline's verdict-bearing numerics must run
++          # against a reproducible environment (requirements.txt keeps loose
++          # floors for local convenience only).
++          pip install -r requirements-release.txt
+ 
+       - name: Repair missing dependency edges
+         run: python3 docs/audit/scripts/repair_missing_dependency_edges.py --apply
+diff --git a/.github/workflows/pr-smoke.yml b/.github/workflows/pr-smoke.yml
+new file mode 100644
+index 0000000000..1291afdd1c
+--- /dev/null
++++ b/.github/workflows/pr-smoke.yml
+@@ -0,0 +1,60 @@
++# Fast per-PR gate: byte-compile every changed Python file and run the audit
++# pipeline unit tests when audit tooling changed. Read-only; no auto-commit.
++# This exists so breakage is caught at PR time instead of only by the nightly
++# audit lane (which is the sole channel for generated-output commits).
++name: pr-smoke
++
++on:
++  pull_request:
++    paths:
++      - "**/*.py"
++      - "requirements*.txt"
++      - ".github/workflows/pr-smoke.yml"
++
++permissions:
++  contents: read
++
++concurrency:
++  group: pr-smoke-${{ github.event.pull_request.number }}
++  cancel-in-progress: true
++
++jobs:
++  smoke:
++    runs-on: ubuntu-latest
++    timeout-minutes: 15
++    steps:
++      - uses: actions/checkout@v6
++        with:
++          fetch-depth: 0
++
++      - uses: actions/setup-python@v6
++        with:
++          python-version: "3.11"
++
++      - name: Install pinned dependencies
++        run: |
++          python -m pip install --upgrade pip
++          pip install -r requirements-release.txt
++
++      - name: Byte-compile changed Python files
++        run: |
++          git fetch -q origin "${{ github.base_ref }}"
++          changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- '*.py')
++          if [ -z "$changed" ]; then
++            echo "no changed python files"; exit 0
++          fi
++          status=0
++          while IFS= read -r f; do
++            [ -f "$f" ] || continue
++            python -m py_compile "$f" || { echo "COMPILE FAIL: $f"; status=1; }
++          done <<< "$changed"
++          exit "$status"
++
++      - name: Audit tooling unit tests (only when audit scripts changed)
++        run: |
++          git fetch -q origin "${{ github.base_ref }}"
++          if git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- docs/audit/scripts | grep -q .; then
++            python -m unittest discover -s docs/audit/scripts/tests -v 2>&1 | tail -20
++          else
++            echo "audit scripts unchanged; skipped"
++          fi
+diff --git a/requirements-release.txt b/requirements-release.txt
+index 5d19a71f4e..03349fa5f4 100644
+--- a/requirements-release.txt
++++ b/requirements-release.txt
+@@ -1,4 +1,5 @@
+-numpy==2.4.4
++networkx==3.6.1
+ numba==0.65.1
++numpy==2.4.4
++pyyaml==6.0.3
+ scipy==1.17.1
+-networkx==3.6.1
+-- 
+2.50.1 (Apple Git-155)
+

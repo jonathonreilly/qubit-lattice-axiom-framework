@@ -1,15 +1,38 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_violation.py
-runner_sha256: 03acab820c1b8e28ad99c6ab80bd93e8f9fac41fa553f3b88397242732f2fbe0
+runner_sha256: 5ce5c2bff5d85f497693121069cca70bdee004d864f22671957f851c07a747b0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.19
+elapsed_sec: 1.38
 status: ok
 ----- stdout -----
 ==============================================================================
 FIXED-ACTION CUBIC-ANISOTROPY DIAGNOSTIC
 Conditional SME-style scale parameterization
 ==============================================================================
+
+==============================================================================
+0. FULL O_h SIGNED-PERMUTATION ACTION CERTIFICATE
+==============================================================================
+
+  [PASS] O_h construction has 48 distinct signed-permutation matrices
+         constructed=48, distinct=48 = 3!*2^3
+  [PASS] Every O_h element is an orthogonal 3x3 integer matrix
+         R^T R = I exactly and entries lie in {-1,0,1} for all 48 elements
+  [PASS] O_h contains 24 proper and 24 improper elements
+         det=+1: 24, det=-1: 24
+  [PASS] Identity and inverses are present
+         I is present and R^{-1}=R^T belongs to the set for every element
+  [PASS] The 48-element set is closed under multiplication
+         all 48^2 = 2304 products remain in the constructed set
+  [PASS] The supplied nearest-neighbor cubic kinetic symbol is O_h-invariant
+         max residual=1.776e-15 over 48 x 5 deterministic hostile momentum actions
+  [PASS] sum_i n_i^4 is O_h-invariant
+         max residual=0.000e+00 over 48 x 5 deterministic hostile direction actions
+  [PASS] A generic proper rotation outside O_h changes the finite-a symbol
+         R_z(pi/7): distance to O_h=6.294e-01, |K(Rp)-K(p)|=1.369633
+
+  FULL O_h ACTION CERTIFICATE: PASS (8/8 checks)
 
 ==============================================================================
 1. LATTICE DISPERSION RELATION
@@ -31,7 +54,7 @@ Conditional SME-style scale parameterization
   Therefore:
     E^2 = m^2 + p^2 - (a^2/12) sum_i p_i^4 + (a^4/360) sum_i p_i^6 - ...
                        ^^^^^^^^^^^^^^^^^^^^^^^^
-                       LORENTZ-VIOLATING TERM
+                       FINITE-a CUBIC-ANISOTROPY TERM
 
   The p_i^4 term is spatially anisotropic with cubic symmetry O_h.
   Its coefficient is a^2/12 for this supplied kinetic symbol. This runner
@@ -50,7 +73,7 @@ Conditional SME-style scale parameterization
 2. CONDITIONAL SME-STYLE COEFFICIENT PARAMETERIZATION
 ==============================================================================
 
-  The Lorentz-violating correction decomposes in NORMALIZED real spherical
+  The fixed-action finite-a correction decomposes in NORMALIZED real spherical
   harmonics Y_lm (scipy.special.sph_harm / sympy.Ynm convention):
 
     sum_i p_i^4 = p^4 * [3/5 + (4*sqrt(pi)/15) * K_4(theta, phi)]
@@ -128,13 +151,14 @@ Conditional SME-style scale parameterization
 ==============================================================================
 
   Staggered fermions on a cubic lattice have 2^d degenerate tastes.
-  Taste symmetry is broken at O(a^2), introducing ADDITIONAL Lorentz
-  violation beyond the naive lattice dispersion.
+  Taste symmetry is broken at O(a^2), introducing an ADDITIONAL imported
+  finite-a illustration beyond the naive lattice dispersion.
 
-  The taste-dependent LV has the form:
+  The taste-dependent correction has the form:
     delta(E^2)_taste = a^2 * C_taste * p^4
 
-  where C_taste depends on the taste representation. The total LV
+  where C_taste depends on the taste representation. The total illustrative
+  finite-a coefficient
   for each taste is:
     (a^2/12)(1 + C_taste) * sum_i p_i^4
 
@@ -213,7 +237,7 @@ Conditional SME-style scale parameterization
 ==============================================================================
 
   Lattice: a = l_Planck = 1.6163e-35 m
-  Leading LV coefficient: a^2/12 = 5.6090e-40 GeV^-2
+  Leading finite-a coefficient: a^2/12 = 5.6090e-40 GeV^-2
 
   E (GeV)      (E/E_Pl)^2     axis |delta E^2/E^2|     axis |delta v_g|  
   ──────────── ────────────── ──────────────────────── ──────────────────
@@ -271,7 +295,7 @@ SCOPE VERDICT
      - Historical scale comparison only; no experimental verdict
 
   5. Staggered fermion taste-breaking:
-     - Enhances LV by factor 2-4 depending on taste channel
+     - Changes the imported finite-a illustration by factor 2-4 by taste channel
      - Imported illustration; no physical flavor identification established
      - No experimental comparison is made without a sector response map
 
@@ -281,14 +305,16 @@ SCOPE VERDICT
      - Shared by models with the same cubic symmetry; not unique
 
   BOTTOM LINE:
-    This runner validates the selected symbol's Taylor expansion and cubic
-    harmonic identity. It does not promote the calculation to a four-axiom,
-    CPT, SME-matching, or experimental-consistency result.
+    This runner validates the selected symbol's O_h action, Taylor expansion,
+    and cubic-harmonic identity. It does not establish physical Lorentz
+    violation or promote the calculation to a four-axiom, framework-native
+    selection, CPT, SME-matching, or experimental-consistency result.
 
-  Elapsed: 2.8 s
+  Elapsed: 1.3 s
 
 ==============================================================================
 EXPERIMENT COMPLETE
+  Full O_h action certificate: PASS
   Cubic-harmonic identity check: PASS
 ==============================================================================
 

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cpt_exact.py
-runner_sha256: 3a83182ecec1d9a5a9809851c796f839c2fa5e5ae5a688019edc3d07c990ad0d
+runner_sha256: 4fee660a7a890bf399088a22da3ddcb891d4455e4ed627c51f60c4073dcfd8d2
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.26
@@ -9,9 +9,9 @@ status: ok
 ========================================================================
 FREE STAGGERED HERMITIAN-LIFT ANTIUNITARY IDENTITIES
 ========================================================================
-D is real anti-Hermitian; H=iD is the Hermitian Hamiltonian.
-T_H=C K and physical CPT_H=Theta_H=P K are tested on H directly.
-  [PASS] odd periodic L rejected  (bipartite parity requires even L)
+D is real anti-Hermitian; H=iD is its Hermitian lift.
+T_H=C K and C P T_H=Theta_H=P K are tested on H directly.
+  [PASS] odd periodic L rejected  (odd wrapping breaks bipartite grading and inversion-phase parity)
 
 L=4 (64 sites)
 ------------------------------------------------------------------------
@@ -23,6 +23,7 @@ L=4 (64 sites)
   [PASS] L=4 C real unitary involution
   [PASS] L=4 P real unitary involution
   [PASS] L=4 [C,P]=0
+  [PASS] L=4 CP unitary involution
   [PASS] L=4 C D C=-D
   [PASS] L=4 P D P=-D
   [PASS] L=4 K D K^-1=D  (D-level identity only)
@@ -36,9 +37,16 @@ L=4 (64 sites)
   [PASS] L=4 T_H=C K preserves H
   [PASS] L=4 C P T_H=P K  (uses [C,P]=0 and C^2=I)
   [PASS] L=4 Theta_H=P K preserves H
-  [PASS] L=4 physical CPT_H preserves H directly
+  [PASS] L=4 C P T_H preserves H directly
   [PASS] L=4 C T_H=K flips H
   [PASS] L=4 P T_H=PC K flips H
+  [PASS] L=4 (K)^2=I on states
+  [PASS] L=4 (T_H=C K)^2=I on states
+  [PASS] L=4 (C P K)^2=I on states
+  [PASS] L=4 (Theta_H=P K)^2=I on states
+  [PASS] L=4 (C T_H=K)^2=I on states
+  [PASS] L=4 (P T_H=P C K)^2=I on states
+  [PASS] L=4 (C P T_H=P K)^2=I on states
   [PASS] L=4 H_odd=0 under Theta_H  (||H_odd||_F=0.00e+00)
   [PASS] L=4 H_1,odd=0 under Theta_H  (||H_1,odd||_F=0.00e+00; trace/N=0.00e+00+0.00e+00j)
   [PASS] L=4 H_2,odd=0 under Theta_H  (||H_2,odd||_F=0.00e+00; trace/N=0.00e+00+0.00e+00j)
@@ -56,6 +64,7 @@ L=6 (216 sites)
   [PASS] L=6 C real unitary involution
   [PASS] L=6 P real unitary involution
   [PASS] L=6 [C,P]=0
+  [PASS] L=6 CP unitary involution
   [PASS] L=6 C D C=-D
   [PASS] L=6 P D P=-D
   [PASS] L=6 K D K^-1=D  (D-level identity only)
@@ -69,9 +78,16 @@ L=6 (216 sites)
   [PASS] L=6 T_H=C K preserves H
   [PASS] L=6 C P T_H=P K  (uses [C,P]=0 and C^2=I)
   [PASS] L=6 Theta_H=P K preserves H
-  [PASS] L=6 physical CPT_H preserves H directly
+  [PASS] L=6 C P T_H preserves H directly
   [PASS] L=6 C T_H=K flips H
   [PASS] L=6 P T_H=PC K flips H
+  [PASS] L=6 (K)^2=I on states
+  [PASS] L=6 (T_H=C K)^2=I on states
+  [PASS] L=6 (C P K)^2=I on states
+  [PASS] L=6 (Theta_H=P K)^2=I on states
+  [PASS] L=6 (C T_H=K)^2=I on states
+  [PASS] L=6 (P T_H=P C K)^2=I on states
+  [PASS] L=6 (C P T_H=P K)^2=I on states
   [PASS] L=6 H_odd=0 under Theta_H  (||H_odd||_F=0.00e+00)
   [PASS] L=6 H_1,odd=0 under Theta_H  (||H_1,odd||_F=0.00e+00; trace/N=0.00e+00+0.00e+00j)
   [PASS] L=6 H_2,odd=0 under Theta_H  (||H_2,odd||_F=0.00e+00; trace/N=0.00e+00+0.00e+00j)
@@ -89,6 +105,7 @@ L=8 (512 sites)
   [PASS] L=8 C real unitary involution
   [PASS] L=8 P real unitary involution
   [PASS] L=8 [C,P]=0
+  [PASS] L=8 CP unitary involution
   [PASS] L=8 C D C=-D
   [PASS] L=8 P D P=-D
   [PASS] L=8 K D K^-1=D  (D-level identity only)
@@ -102,9 +119,16 @@ L=8 (512 sites)
   [PASS] L=8 T_H=C K preserves H
   [PASS] L=8 C P T_H=P K  (uses [C,P]=0 and C^2=I)
   [PASS] L=8 Theta_H=P K preserves H
-  [PASS] L=8 physical CPT_H preserves H directly
+  [PASS] L=8 C P T_H preserves H directly
   [PASS] L=8 C T_H=K flips H
   [PASS] L=8 P T_H=PC K flips H
+  [PASS] L=8 (K)^2=I on states
+  [PASS] L=8 (T_H=C K)^2=I on states
+  [PASS] L=8 (C P K)^2=I on states
+  [PASS] L=8 (Theta_H=P K)^2=I on states
+  [PASS] L=8 (C T_H=K)^2=I on states
+  [PASS] L=8 (P T_H=P C K)^2=I on states
+  [PASS] L=8 (C P T_H=P K)^2=I on states
   [PASS] L=8 H_odd=0 under Theta_H  (||H_odd||_F=0.00e+00)
   [PASS] L=8 H_1,odd=0 under Theta_H  (||H_1,odd||_F=0.00e+00; trace/N=0.00e+00+0.00e+00j)
   [PASS] L=8 H_2,odd=0 under Theta_H  (||H_2,odd||_F=0.00e+00; trace/N=0.00e+00+0.00e+00j)
@@ -113,7 +137,7 @@ L=8 (512 sites)
   [PASS] L=8 sum_mu H_mu,odd=H_odd
 
 ========================================================================
-SUMMARY: PASS=91 FAIL=0
+SUMMARY: PASS=115 FAIL=0
 ========================================================================
 All finite-lattice Hermitian-lift identities passed exactly.
 No SME basis-completeness, interaction, or continuum claim was tested.

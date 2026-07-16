@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
-"""Verify the convention-consistent finite-lattice CPT/Hermitian-lift theorem.
+"""Verify the finite-lattice Hermitian-lift antiunitary identities.
 
 The real staggered hopping operator is ``D`` and the Hermitian Hamiltonian is
 ``H = iD``.  The runner keeps their antiunitary actions separate:
 
 * on ``D``, bare complex conjugation fixes ``D`` and ``CPK`` fixes ``D``;
 * on ``H``, bare ``K`` and ``CPK`` flip the sign;
-* with ``T_H = CK``, physical ``CPT_H = CP T_H = PK = Theta_H`` preserves H.
+* with ``T_H = CK``, the composite ``CP T_H = PK = Theta_H`` preserves H.
 
 Only the free even-periodic finite-lattice algebra and the resulting
-Theta_H-odd Hamiltonian-sector zero are tested.  No SME operator-basis
-identification, interacting extension, or continuum CPT theorem is claimed.
+Theta_H-odd H-sector zero are tested.  ``C`` is the sublattice-sign matrix and
+``P`` is inversion; the symbols do not assert physical C/P/T/CPT
+identifications.  No SME operator-basis identification, interacting extension,
+or continuum CPT theorem is claimed.
 """
 
 from __future__ import annotations
@@ -75,16 +77,16 @@ def build_direction_D(L: int, mu: int) -> np.ndarray:
 
 
 def build_D(L: int) -> np.ndarray:
-    """Build D=sum_mu D_mu; D is not the physical Hamiltonian."""
+    """Build D=sum_mu D_mu; D is the real anti-Hermitian hopping matrix."""
     return sum((build_direction_D(L, mu) for mu in range(3)))
 
 
 def build_full_hamiltonian(L: int) -> np.ndarray:
-    """Compatibility name: return the physical Hermitian lift H=iD."""
+    """Compatibility name: return the Hermitian lift H=iD."""
     return 1j * build_D(L)
 
 
-def build_charge_conjugation(L: int) -> np.ndarray:
+def build_sublattice_sign(L: int) -> np.ndarray:
     """Real unitary C=diag((-1)^(x_1+x_2+x_3))."""
     n = L**3
     C = np.zeros((n, n), dtype=np.complex128)
@@ -93,7 +95,7 @@ def build_charge_conjugation(L: int) -> np.ndarray:
     return C
 
 
-def build_parity(L: int) -> np.ndarray:
+def build_inversion(L: int) -> np.ndarray:
     """Real unitary P implementing x -> -x mod L."""
     n = L**3
     P = np.zeros((n, n), dtype=np.complex128)
@@ -109,6 +111,11 @@ def antiunitary_action(unitary_part: np.ndarray, op: np.ndarray) -> np.ndarray:
     return unitary_part @ np.conj(op) @ unitary_part.conj().T
 
 
+def antiunitary_square(unitary_part: np.ndarray) -> np.ndarray:
+    """Return the linear unitary part of (U K)^2, namely U U^*."""
+    return unitary_part @ np.conj(unitary_part)
+
+
 def exact_equal(left: np.ndarray, right: np.ndarray) -> bool:
     """Exact equality is valid here: all entries are dyadic times 1 or i."""
     return bool(np.array_equal(left, right))
@@ -119,13 +126,26 @@ def frobenius(op: np.ndarray) -> float:
 
 
 def verify_odd_L_rejected() -> None:
+    L = 3
     try:
-        build_D(3)
+        build_D(L)
     except ValueError:
         rejected = True
     else:
         rejected = False
-    check("odd periodic L rejected", rejected, "bipartite parity requires even L")
+    origin = (0, 0, 0)
+    wrapped_neighbor = (L - 1, 0, 0)
+    same_sublattice_across_boundary = (
+        (-1) ** sum(origin) == (-1) ** sum(wrapped_neighbor)
+    )
+    site = (1, 0, 0)
+    inverted_site = tuple((-coordinate) % L for coordinate in site)
+    inversion_changes_eta = staggered_eta(1, site) != staggered_eta(1, inverted_site)
+    check(
+        "odd periodic L rejected",
+        rejected and same_sublattice_across_boundary and inversion_changes_eta,
+        "odd wrapping breaks bipartite grading and inversion-phase parity",
+    )
 
 
 def verify_lattice(L: int) -> None:
@@ -137,8 +157,8 @@ def verify_lattice(L: int) -> None:
     D = build_D(L)
     H = 1j * D
     H_mu = [1j * part for part in D_mu]
-    C = build_charge_conjugation(L)
-    P = build_parity(L)
+    C = build_sublattice_sign(L)
+    P = build_inversion(L)
     CP = C @ P
     identity = np.eye(L**3, dtype=np.complex128)
     zero = np.zeros_like(D)
@@ -162,6 +182,7 @@ def verify_lattice(L: int) -> None:
         and exact_equal(P @ P, identity),
     )
     check(f"L={L} [C,P]=0", exact_equal(C @ P, P @ C))
+    check(f"L={L} CP unitary involution", exact_equal(CP @ CP, identity))
 
     check(f"L={L} C D C=-D", exact_equal(C @ D @ C, -D))
     check(f"L={L} P D P=-D", exact_equal(P @ D @ P, -D))
@@ -175,19 +196,34 @@ def verify_lattice(L: int) -> None:
     check(f"L={L} CP H (CP)^-1=H", exact_equal(CP @ H @ CP.conj().T, H))
     check(f"L={L} CPK flips H", exact_equal(antiunitary_action(CP, H), -H), "not a symmetry of H=iD")
 
-    # T_H = C K; physical CPT_H = C P T_H has unitary part CP C = P.
+    # T_H = C K; the composite C P T_H has unitary part CP C = P.
     T_H_unitary = C
-    CPT_H_unitary = CP @ C
+    CP_T_H_unitary = CP @ C
     Theta_H_unitary = P
     check(f"L={L} T_H=C K preserves H", exact_equal(antiunitary_action(T_H_unitary, H), H))
-    check(f"L={L} C P T_H=P K", exact_equal(CPT_H_unitary, Theta_H_unitary), "uses [C,P]=0 and C^2=I")
+    check(f"L={L} C P T_H=P K", exact_equal(CP_T_H_unitary, Theta_H_unitary), "uses [C,P]=0 and C^2=I")
     theta_H = antiunitary_action(Theta_H_unitary, H)
     check(f"L={L} Theta_H=P K preserves H", exact_equal(theta_H, H))
-    check(f"L={L} physical CPT_H preserves H directly", exact_equal(antiunitary_action(CPT_H_unitary, H), H))
+    check(f"L={L} C P T_H preserves H directly", exact_equal(antiunitary_action(CP_T_H_unitary, H), H))
 
     # Counterchecks for the complete table: C T_H = K and P T_H = PC K.
     check(f"L={L} C T_H=K flips H", exact_equal(antiunitary_action(C @ C, H), -H))
     check(f"L={L} P T_H=PC K flips H", exact_equal(antiunitary_action(P @ C, H), -H))
+
+    antiunitaries = (
+        ("K", identity),
+        ("T_H=C K", C),
+        ("C P K", CP),
+        ("Theta_H=P K", P),
+        ("C T_H=K", C @ C),
+        ("P T_H=P C K", P @ C),
+        ("C P T_H=P K", CP_T_H_unitary),
+    )
+    for label, unitary_part in antiunitaries:
+        check(
+            f"L={L} ({label})^2=I on states",
+            exact_equal(antiunitary_square(unitary_part), identity),
+        )
 
     H_odd = 0.5 * (H - theta_H)
     check(f"L={L} H_odd=0 under Theta_H", exact_equal(H_odd, zero), f"||H_odd||_F={frobenius(H_odd):.2e}")
@@ -210,8 +246,8 @@ def main() -> int:
     print("=" * 72)
     print("FREE STAGGERED HERMITIAN-LIFT ANTIUNITARY IDENTITIES")
     print("=" * 72)
-    print("D is real anti-Hermitian; H=iD is the Hermitian Hamiltonian.")
-    print("T_H=C K and physical CPT_H=Theta_H=P K are tested on H directly.")
+    print("D is real anti-Hermitian; H=iD is its Hermitian lift.")
+    print("T_H=C K and C P T_H=Theta_H=P K are tested on H directly.")
 
     verify_odd_L_rejected()
     for L in (4, 6, 8):

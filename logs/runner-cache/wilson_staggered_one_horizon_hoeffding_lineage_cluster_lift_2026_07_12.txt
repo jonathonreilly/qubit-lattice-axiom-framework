@@ -1,0 +1,14 @@
+PASS hoeffding_weight_identity: r*=2.414213562373095, C*=r*^2=1+2r*=5.828427124746190
+PASS canonical_atom_reconstruction_and_bound: atoms=8, reconstruction_error=2.220e-16, atom_norm=2.548233764909<=black_box=259.373383669613
+PASS dummy_coordinate_has_no_tag: nonzero_tag_sets=[(), (0,)]
+PASS skeleton_cancellation_has_empty_current_atom: V-only transporter with syntactic A,H carrier has nonzero_tag_sets=[()]
+PASS centered_tags_do_not_survive_expectation: E[x]=0.0, E[x*x]=1.0
+PASS center_charge_allows_cubic_haar_singlet: SU3-center moments E[z],E[z^2],E[z^3]=[(3.700743415417188e-17+0j), (3.700743415417188e-17-7.401486830834377e-17j), (0.9999999999999997+1.060642464147365e-16j)]; Haar U11 U22 U33 epsilon coefficient=0.166667
+PASS decorated_factor_collection_evaluation: decorated_sum=0.023500000000000, direct_weight=0.023500000000000
+PASS decorated_hard_core_log_evaluation: nonzero_decorations=3, power_errors=[3.469446951953614e-18, 1.0842021724855044e-19, 6.776263578034403e-21, 1.5881867761018131e-22], log_partial=0.023228124713318
+PASS tagged_residual_activity_point: q_hop=6.350016695825048e-03, K_I=2.438980005374748e-09, K_S=9.942623258493337e-07, K=9.967013058547084e-07, margin=9.990032986941454e-04
+PASS strict_nonzero_beta_interval: beta_ceiling=1.747690723278375e-09, beta_probe=1.730213816045591e-09, K_probe=9.900099595330247e-04<c
+PASS tagged_marked_constants: tau=3.670317404266788e-04, A_att=7.342847163210340e-04, q_centered=8.232289647729789e-02, q_split=0.606530659713, B_tag=1.117432197578131e-04
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_GAUSSIAN_ADAPTED_BEREZIN_HANDOFF_AND_SHORTEST_QUADRATIC_CENTER_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=13 FAIL=0

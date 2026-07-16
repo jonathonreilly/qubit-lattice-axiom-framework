@@ -656,6 +656,15 @@ class PublicationEffectiveStatusRenderTest(unittest.TestCase):
             )
             self.assertIn("AUDIT-NONRETAINED ROW", spoofed.splitlines()[2])
 
+    def test_redaction_legend_names_failclosed_scope_and_badge_granularity(self):
+        m = _import("render_publication_effective_status")
+        legend = m.REDACTION_LEGEND
+        self.assertIn("AUDIT-NONRETAINED ROW", legend)
+        self.assertIn("(unratified-source-label)", legend)
+        self.assertIn("fails closed", legend)
+        self.assertIn("absence of a badge is never retention", legend)
+        self.assertIn("adjacent linked authority", legend)
+
     def test_unsafe_row_neutralizes_code_and_link_status_labels(self):
         m = _import("render_publication_effective_status")
         body = (

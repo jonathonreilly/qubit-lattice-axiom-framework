@@ -40,5 +40,10 @@ docs/audit/data/audit_ledger.json
 docs/audit/data/ledger_cache_manifest.json
 docs/audit/data/citation_graph.json
 docs/audit/data/audit_queue.json
+# Shadow-mode dispatch emitters (dispatch-retarget design note 2026-07-16):
+# generated every pipeline pass; the tracked authority is
+# publication_lane_manifest.json.
+docs/audit/data/publication_gap.json
+docs/audit/data/audit_publication_lane.json
 docs/audit/data/runner_classification.json
 docs/audit/AUDIT_LEDGER.md

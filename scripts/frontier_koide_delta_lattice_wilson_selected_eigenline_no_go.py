@@ -406,7 +406,11 @@ def main() -> int:
     record(
         "E.1 the D,U-generated unital star algebra contains no rank-one selector on M_zeta",
         no_go_core,
-        "RESIDUAL_EIGENLINE=rank_two_zeta_zero_mode_sector_not_split_by_D_U_generated_algebra",
+        (
+            "RESIDUAL_EIGENLINE=rank_two_zeta_zero_mode_sector_not_split_by_D_U_generated_algebra"
+            if no_go_core
+            else "RESIDUAL_EIGENLINE=undetermined_due_to_failed_D_U_joint_algebra_checks"
+        ),
     )
     record(
         "E.2 the full Wilson/Clifford construction is explicitly outside the no-go",

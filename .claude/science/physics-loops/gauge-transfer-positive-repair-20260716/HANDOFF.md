@@ -14,7 +14,8 @@ All three review-loop lanes passed after the requested narrow fixes. A
 disposable audit-pipeline run completed with zero strict-lint errors and placed
 the changed target in the generated unaudited queue at rank `34`; every
 generated audit/ledger/queue/effective-status output was then restored or
-deleted. The branch is rebased onto `abd65e73c5...`.
+deleted. The landing review refreshed the branch onto `49bd740942...`; the
+stale-base overlap guard found no shared changed paths.
 
 Block 01 is open for review as
 [PR 5398](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5398).

@@ -82,6 +82,6 @@ pipeline_validation:
   target_generated_deps: []
   target_transitive_descendants: 784
   generated_outputs_removed: true
-last_checkpoint_at_utc: "2026-07-16T13:48:30Z"
+last_checkpoint_at_utc: "2026-07-16T13:54:25Z"
 next_exact_action: "Do not merge PR 5405. Continue the block-02 deep attack through at least 2026-07-16T14:48:12Z, amend the PR if a real issue appears, then pivot to opportunity 3."
 stop_condition: "Runtime exhaustion, reviewed PR plus honest pivot, or documented opportunity exhaustion."

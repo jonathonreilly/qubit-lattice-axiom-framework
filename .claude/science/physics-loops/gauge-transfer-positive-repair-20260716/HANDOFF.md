@@ -38,9 +38,8 @@ Verification:
   plaquettes: exact plane-swap and exponential-factorization agreement to
   floating precision;
 - review-loop mathematics, runner independence, and governance/scope lanes:
-  mathematics and runner independence `PASS`; governance/scope requested
-  final attribution/pack/pipeline synchronization now applied and awaiting
-  fix-only rereview;
+  `PASS` after fix-only attribution, pack, PR-body, and disposable-pipeline
+  synchronization;
 - deep-block normalization clarification passed runner fix-only review: legacy
   diagnostic `beta` variables are effective plane `alpha`, while standard
   Wilson `alpha=beta_Wilson/N`;
@@ -83,7 +82,7 @@ If this worker must be resumed immediately:
 
 ```bash
 cd /private/tmp/physics-loop-gauge-transfer-positive-repair-20260716
-codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 4h27m --target best-honest-status"
+codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 4h22m --target best-honest-status"
 ```
 
 Read `STATE.yaml`, `HANDOFF.md`, and `TRACE_GATE.md`. Do not run `audit-loop`,

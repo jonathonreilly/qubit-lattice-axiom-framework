@@ -35,10 +35,14 @@ Invariants measured (tracked state only)
   docs.md_count                tracked markdown files directly under docs/
   docs.duplicate_basenames     tracked basename collisions across docs/**
   authority_links.violations   markdown links on authority surfaces whose
-                               target file is not tracked (missing, untracked,
-                               or gitignored — each of which 404s for a fresh
-                               clone or GitHub reader). Code spans and fenced
-                               code blocks are masked before link extraction.
+                               target cannot resolve for a fresh clone or
+                               GitHub reader; reasons: not-tracked (missing,
+                               untracked, or gitignored alike — derived from
+                               the tracked set only), absolute-path, and
+                               outside-repository. Code spans and fenced code
+                               blocks are masked before link extraction.
+  authority_links.irregular_surfaces  authority files that are not regular
+                               files (never dereferenced)
 
 Repository inputs are read-only; no audit status is set, no generated surface
 is written, no verdict is minted.
@@ -86,6 +90,18 @@ from audit_lint import ALLOWED_EFFECTIVE_STATUSES  # noqa: E402
 _MISSING = object()
 
 
+def _regular_file(rel_path: str) -> bool:
+    """True iff the tracked path is an existing regular file (not a symlink
+    or other non-regular object); measured inputs are never dereferenced
+    through links (BUG-21)."""
+    import stat as _stat
+    try:
+        mode = os.lstat(os.path.join(REPO_ROOT, rel_path)).st_mode
+    except OSError:
+        return False
+    return _stat.S_ISREG(mode)
+
+
 # --- markdown scanning -------------------------------------------------------
 # Scope claim: this is a conservative reader-path scanner for the authority
 # surfaces, implemented as a line/character scan of the CommonMark constructs
@@ -106,7 +122,9 @@ def mask_code(text: str) -> str:
     for line in text.split("\n"):
         if fence_char is None:
             m = _FENCE_OPEN_RE.match(line)
-            if m:
+            # A backtick fence opener may not contain a backtick in its info
+            # string (CommonMark 4.5); such a line is inline-code material.
+            if m and not (m.group(1)[0] == "`" and "`" in line[m.end():]):
                 fence_char, fence_len = m.group(1)[0], len(m.group(1))
                 out_lines.append("")
                 continue
@@ -156,12 +174,29 @@ def _unescaped(text: str, idx: int) -> bool:
     return backslashes % 2 == 0
 
 
+def _skip_component_whitespace(text: str, pos: int) -> int:
+    """Skip spaces/tabs and AT MOST one line ending (CommonMark permits a
+    single line ending inside inline-link component whitespace; unbounded
+    skipping would glue prose across paragraphs into false links)."""
+    n = len(text)
+    newlines = 0
+    while pos < n:
+        ch = text[pos]
+        if ch in " \t":
+            pos += 1
+        elif ch == "\n" and newlines == 0:
+            newlines += 1
+            pos += 1
+        else:
+            break
+    return pos
+
+
 def _parse_destination(text: str, pos: int):
     """Parse a CommonMark inline-link destination starting just after '('.
     Returns (destination, index-after-closing-paren) or None."""
     n = len(text)
-    while pos < n and text[pos] in " \t":
-        pos += 1
+    pos = _skip_component_whitespace(text, pos)
     if pos < n and text[pos] == "<":
         end = pos + 1
         while end < n and text[end] != "\n":
@@ -191,16 +226,14 @@ def _parse_destination(text: str, pos: int):
 
 def _finish_after_dest(text: str, pos: int, dest: str):
     n = len(text)
-    while pos < n and text[pos] in " \t\n":
-        pos += 1
+    pos = _skip_component_whitespace(text, pos)
     if pos < n and text[pos] in "\"'(":
         closer = {"(": ")"}.get(text[pos], text[pos])
         pos += 1
         while pos < n and not (text[pos] == closer and _unescaped(text, pos)):
             pos += 1
         pos += 1
-        while pos < n and text[pos] in " \t\n":
-            pos += 1
+        pos = _skip_component_whitespace(text, pos)
     if pos < n and text[pos] == ")":
         # CommonMark backslash escapes apply to ASCII punctuation only; a
         # backslash before anything else (e.g. C:\Users) is literal (BUG-12).
@@ -297,6 +330,9 @@ def collect_ledger(tracked: list) -> dict:
     missing_note_paths = 0
     parse_errors = []
     for shard in shard_paths:
+        if not _regular_file(shard):
+            parse_errors.append(f"{shard}: not a regular file")
+            continue
         try:
             with open(os.path.join(REPO_ROOT, shard), "r", encoding="utf-8") as fh:
                 row = json.load(fh)
@@ -327,13 +363,18 @@ def collect_ledger(tracked: list) -> dict:
             parse_errors.append(f"{shard}: effective_status {status!r} not in controlled set")
             histogram["SCHEMA_INVALID"] += 1
         note_path = row.get("note_path")
-        if isinstance(note_path, str) and note_path and note_path not in tracked_set:
-            missing_note_paths += 1
-        elif note_path is not None and not isinstance(note_path, str):
-            parse_errors.append(f"{shard}: non-string note_path")
+        if isinstance(note_path, str) and note_path:
+            if note_path not in tracked_set:
+                missing_note_paths += 1
+        else:
+            # absent, null, empty, or non-string: every form is recorded so a
+            # note_path change can never leave the snapshot identical (BUG-20)
+            parse_errors.append(f"{shard}: missing/empty/non-string note_path")
 
     dupes = sorted(cid for cid, n in Counter(claim_ids).items() if n > 1)
-    ids_sha = hashlib.sha256("\n".join(sorted(claim_ids)).encode()).hexdigest()
+    ids_sha = hashlib.sha256(
+        json.dumps(sorted(claim_ids), separators=(",", ":")).encode()
+    ).hexdigest()
     retained_total = sum(
         count
         for status, count in histogram.items()
@@ -351,7 +392,7 @@ def collect_ledger(tracked: list) -> dict:
 
 
 def _load_ids(rel_path: str, container_keys: tuple, tracked_set: set) -> dict:
-    if rel_path not in tracked_set:
+    if rel_path not in tracked_set or not _regular_file(rel_path):
         return {"ids": [], "file_sha256": None, "tracked": False}
     path = os.path.join(REPO_ROOT, rel_path)
     with open(path, "r", encoding="utf-8") as fh:
@@ -412,6 +453,8 @@ def collect_authority_links(tracked: list) -> dict:
     candidates = {}  # repo-relative target -> set of source files
     absolutes = {}  # machine-local absolute target -> set of source files
     outsiders = {}  # ../-escaping target -> set of source files
+    irregular = [rel for rel in surface_files if not _regular_file(rel)]
+    surface_files = [rel for rel in surface_files if _regular_file(rel)]
     for rel in surface_files:
         with open(os.path.join(REPO_ROOT, rel), "r", encoding="utf-8", errors="replace") as fh:
             text = fh.read()
@@ -435,7 +478,6 @@ def collect_authority_links(tracked: list) -> dict:
                 continue
             candidates.setdefault(resolved, set()).add(rel)
 
-    ignored = _gitignored(sorted(candidates))
     violations = [
         {"target": target, "reason": "absolute-path", "sources": sorted(sources)}
         for target, sources in sorted(absolutes.items())
@@ -447,14 +489,19 @@ def collect_authority_links(tracked: list) -> dict:
         is_dir_link = rel.rstrip("/") in tracked_dirs
         if rel in tracked_set or is_dir_link:
             continue
-        # Reasons derive from git metadata ONLY (tracked set + ignore rules),
-        # so two worktrees at the same commit always produce identical
-        # snapshots regardless of untracked scratch files (BUG-16).
-        reason = "gitignored" if rel in ignored else "not-tracked"
+        # The single reason derives from the tracked set ONLY: local ignore
+        # rules and untracked scratch files can never change the serialized
+        # snapshot (BUG-16, NIT-05). A not-tracked target 404s for any fresh
+        # clone or GitHub reader whether it is gitignored or merely absent.
+        reason = "not-tracked"
         violations.append(
             {"target": rel, "reason": reason, "sources": sorted(candidates[rel])}
         )
-    return {"surfaces_scanned": len(surface_files), "violations": violations}
+    return {
+        "surfaces_scanned": len(surface_files),
+        "irregular_surfaces": sorted(irregular),
+        "violations": violations,
+    }
 
 
 def build_snapshot() -> dict:
@@ -592,7 +639,26 @@ def main() -> int:
             # hard link outside the repo can alias a tracked inode).
             resolved = os.path.realpath(os.path.abspath(args.snapshot))
             repo_real = os.path.realpath(REPO_ROOT)
-            if os.path.commonpath([resolved, repo_real]) == repo_real:
+            inside = os.path.commonpath([resolved, repo_real]) == repo_real
+            if not inside:
+                # Spelling-insensitive filesystems (case folds, unicode
+                # normalization) can alias the repository under a different
+                # string; compare filesystem identity of every existing
+                # ancestor against the repository root (BUG-22).
+                repo_stat = os.stat(repo_real)
+                probe = resolved
+                while True:
+                    if os.path.exists(probe):
+                        try:
+                            if os.path.samestat(os.stat(probe), repo_stat):
+                                inside = True
+                        except OSError:
+                            pass
+                    parent = os.path.dirname(probe)
+                    if parent == probe:
+                        break
+                    probe = parent
+            if inside:
                 print("refusing to write a snapshot inside the repository; "
                       "use a scratch directory or '-' for stdout")
                 return 2

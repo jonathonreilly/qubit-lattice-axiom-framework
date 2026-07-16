@@ -12,410 +12,287 @@ audit lane.
 
 ## 1. Claim scope
 
-> **Theorem (Triple-coincidence at d=4).** Let `d ≥ 2` be an integer.
-> The following three identities all hold simultaneously **only at
-> `d = 4`** among integer `d ≥ 2`:
->
-> **(i)** *Per-mode lattice ratio at uniform Matsubara weight `1/2`.*
-> Set `c = d − 1`. Then
+> **Theorem (two-ratio alignment with a vanishing residual at `d = 4`).**
+> Let `d ≥ 2` be an integer, set `c = d − 1`, and define
 >
 > ```text
-> R_lat(c)  :=  (c + 1/2) / (c + 1)  =  1 − 1/(2(c + 1))  =  1 − 1/(2d).
+> R_lat(c)  :=  (c + 1/2)/(c + 1),
+>
+> R_RD(d)   :=  η(d)/ζ(d)
+>            =  1 − 2^(1 − d),
+>
+> A(d)      :=  2^(d − 2) − d.
 > ```
 >
-> At `c = 3` (i.e. `d = 4`) this gives `R_lat(3) = 7/8` exactly.
->
-> **(ii)** *Riemann-Dirichlet identity at integer `s = d`.* For real
-> `s > 1`,
+> Then
 >
 > ```text
-> η(s) / ζ(s)  =  1 − 2^(1 − s),
+> R_lat(d − 1) = R_RD(d)
+>     ⟺ A(d) = 0
+>     ⟺ d = 4
 > ```
 >
-> where `η(s) = Σ_{n ≥ 1} (-1)^(n-1) / n^s` is the Dirichlet eta and
-> `ζ(s) = Σ_{n ≥ 1} 1 / n^s` is the Riemann zeta function. At `s = 4`
-> this gives `η(4)/ζ(4) = 7/8` exactly.
->
-> **(iii)** *Integer alignment equation.* The integer equation
+> on the integer domain `d ≥ 2`. At that unique integer,
 >
 > ```text
-> 2^(d - 2)  =  d
+> R_lat(3) = R_RD(4) = 7/8,
+> A(4) = 0.
 > ```
 >
-> has a unique solution at `d = 4` among integers `d ≥ 2`.
->
-> **Equivalence at the alignment.** The simultaneous equality
-> `R_lat(d − 1) = η(d)/ζ(d)` for integer `d ≥ 2` is equivalent to (iii):
+> Equivalently, the exact value tuple is
 >
 > ```text
-> 1 − 1/(2d)  =  1 − 2^(1 − d)
->     ⟺  1/(2d)  =  2^(1 − d)
->     ⟺  d · 2^(2 − d)  =  1
->     ⟺  2^(d - 2)  =  d.
+> (R_lat(3), R_RD(4), A(4)) = (7/8, 7/8, 0).
 > ```
->
-> At all integer `d ∈ {2, 3, 5, 6, ...} ≠ 4`, the algebraic equality
-> `1/(2d) = 2^(1 − d)` fails, so the lattice ratio (i) and the
-> number-theoretic ratio (ii) take strictly different rational values.
 
-This narrow theorem **explicitly does NOT** claim:
+Here
 
-- closure of the framework's electroweak hierarchy formula
-  `v = M_Pl × α_LM^16 × (7/8)^(1/4)`;
-- closure of the `(7/8)^(1/4)` compression factor as a derived
-  quantity (the `(1/4)` exponent / heat-kernel readout is a separate
-  downstream question and is **not** in this theorem's load-bearing
-  chain);
-- selection of `L_t = 4` as the physically correct temporal block size
-  (that is the separate question handled by the bosonic-bilinear
-  selector note, which is **not** load-bearing here);
-- any predicted scale value or comparison against PDG observables;
-- closure of `α_LM` or any framework substitution.
+```text
+η(s) = Σ_{n ≥ 1} (-1)^(n-1)/n^s,
+ζ(s) = Σ_{n ≥ 1} 1/n^s
+```
 
-The theorem's content is a triple-coincidence identity: at `d = 4`
-the per-mode lattice ratio `(c + 1/2)/(c + 1)` at `c = d − 1`, the
-Riemann-Dirichlet ratio `η(d)/ζ(d)`, and the integer alignment equation
-`2^(d − 2) = d` all coincide on the rational value `7/8`, and this
-simultaneous coincidence holds at no other integer `d ≥ 2`.
+for real `s > 1`. The two ratios have the common value `7/8` at
+`d = 4`; the separate alignment residual vanishes there. `A(d)` is a
+residual, not a ratio, and is not a third `7/8`-valued quantity.
+
+At every other integer `d ≥ 2`, the two ratios differ and `A(d) ≠ 0`.
+The uniqueness statement is only over the stated integer domain.
+
+### Contextual finite trigonometric check
+
+The primary runner also preserves the exact, non-load-bearing checks
+
+```text
+sin²((2n + 1)π/4) = 1/2,    n = 0,1,2,3,
+```
+
+and non-uniformity of the corresponding sampled values at `L_t = 6`
+and `L_t = 8`. These finite checks explain the `1/2` appearing in the
+displayed rational ratio. They do not select a physical temporal size
+and do not prove uniqueness over all possible `L_t`.
+
+This narrow theorem does **not** claim:
+
+- a physical selection of spacetime dimension, `L_t`, or any framework
+  parameter;
+- closure of a physical hierarchy formula or of an outer fractional
+  exponent;
+- identification of the algebraic ratio with a particular interacting
+  lattice observable;
+- uniqueness outside integer `d ≥ 2`;
+- logical or statistical independence of the two ratios and the
+  residual. Their exact algebraic relation is part of the proof.
 
 ## 2. Proof
 
-The proof is three independent classical-mathematics calculations
-plus an elementary algebraic equivalence.
+### 2.1 Rational ratio
 
-### 2.1 Identity (i): per-mode lattice ratio
-
-By direct algebra,
+With `c = d − 1`,
 
 ```text
-(c + 1/2) / (c + 1)
-  =  ( (2c + 1) / 2 ) / (c + 1)
-  =  (2c + 1) / (2(c + 1))
-  =  1 − 1/(2(c + 1)).                                                  (A)
+(c + 1/2)/(c + 1)
+  = (2c + 1)/(2(c + 1))
+  = 1 − 1/(2(c + 1))
+  = 1 − 1/(2d).                                               (1)
 ```
 
-Substituting `c = d − 1` gives `R_lat(d − 1) = 1 − 1/(2d)`. At `c = 3`
-(`d = 4`), `R_lat(3) = 7/8`. ∎
-
-### 2.2 Identity (ii): Riemann-Dirichlet quotient
-
-For `s > 1`, both `ζ(s)` and `η(s)` are absolutely convergent. Split
-the zeta sum into odd and even terms:
+At `d = 4`, equivalently `c = 3`,
 
 ```text
-ζ(s)  =  Σ_{n odd, n ≥ 1} 1/n^s  +  Σ_{n even, n ≥ 1} 1/n^s
-      =  Σ_{n odd ≥ 1} 1/n^s  +  Σ_{m ≥ 1} 1/(2m)^s
-      =  Σ_{n odd ≥ 1} 1/n^s  +  2^(-s) ζ(s).                           (B)
+R_lat(3) = 1 − 1/8 = 7/8.                                    (2)
 ```
 
-Hence the odd-tail sum equals `(1 − 2^(-s)) ζ(s)`. Now write the eta
-sum as odd minus even:
+### 2.2 Riemann-Dirichlet ratio
+
+For real `s > 1`, the zeta and eta series converge absolutely. Splitting
+the zeta sum into odd and even terms gives
 
 ```text
-η(s)  =  Σ_{n odd ≥ 1} 1/n^s  −  Σ_{m ≥ 1} 1/(2m)^s
-      =  (1 − 2^(-s)) ζ(s)  −  2^(-s) ζ(s)
-      =  (1 − 2 · 2^(-s)) ζ(s)
-      =  (1 − 2^(1 − s)) ζ(s).                                          (C)
+Σ_{n odd ≥ 1} 1/n^s = (1 − 2^(-s)) ζ(s).                     (3)
 ```
 
-Dividing by `ζ(s) > 0` (for real `s > 1`) gives
-`η(s)/ζ(s) = 1 − 2^(1 − s)`. At `s = 4`, this is `1 − 2^(-3) = 7/8`. ∎
-
-This identity is standard; see DLMF §25.2.3 and §25.12 (eta/zeta
-relation). It holds also by analytic continuation away from `s = 1`,
-but only the `s ≥ 2` integer instances are used here.
-
-### 2.3 Identity (iii): integer alignment uniqueness
-
-The function `f(d) = 2^(d − 2) − d` on the integers satisfies
+Subtracting the even contribution from the odd contribution,
 
 ```text
-f(2) = 1 − 2 = −1,
-f(3) = 2 − 3 = −1,
-f(4) = 4 − 4 =  0,
-f(5) = 8 − 5 =  3,
-f(6) = 16 − 6 = 10,
-f(7) = 32 − 7 = 25,
-... and f(d) > 0 for all integer d ≥ 5.
+η(s)
+  = (1 − 2^(-s))ζ(s) − 2^(-s)ζ(s)
+  = (1 − 2^(1 − s))ζ(s).                                     (4)
 ```
 
-To rule out additional zeros at `d ≥ 5`: by induction, the discrete
-forward difference `f(d + 1) − f(d) = 2^(d − 2) − 1`. For `d ≥ 4`,
-`2^(d − 2) ≥ 4 > 1`, so `f` is strictly increasing on `d ≥ 4`. Since
-`f(4) = 0` and `f(5) > 0`, the function is strictly positive for all
-`d ≥ 5`. Combined with `f(2) = f(3) = −1 ≠ 0`, the unique integer
-solution `d ≥ 2` of `2^(d − 2) = d` is `d = 4`. ∎
-
-### 2.4 Equivalence at the alignment
-
-The algebraic chain
+Since `ζ(s) > 0` for real `s > 1`,
 
 ```text
-1 − 1/(2d)  =  1 − 2^(1 − d)
-  ⟺  1/(2d)  =  2^(1 − d)
-  ⟺  1  =  2d · 2^(1 − d)  =  d · 2^(2 − d)
-  ⟺  2^(d − 2)  =  d
+η(s)/ζ(s) = 1 − 2^(1 − s).                                   (5)
 ```
 
-is purely arithmetic; each step is reversible by inverse operation.
-Combined with §2.3, the alignment `R_lat(d − 1) = η(d)/ζ(d)` holds
-for integer `d ≥ 2` if and only if `d = 4`. ∎
-
-The three identities together give the simultaneous coincidence at
-`d = 4`; at every other integer `d ≥ 2`, the lattice ratio and
-Riemann-Dirichlet quotient differ and the integer alignment equation fails.
-
-## 3. Load-bearing step (class A)
-
-The single load-bearing step is the **arithmetic equivalence**
-combining (i), (ii), and (iii):
+At `s = d = 4`,
 
 ```text
-{ (c + 1/2)/(c + 1) at c = d − 1 }  =  { 1 − 2^(1 − d) }
-                                    ⟺  2^(d − 2) = d.
+R_RD(4) = 1 − 2^(-3) = 7/8.                                  (6)
 ```
 
-At `d = 4` all three quantities equal `7/8`. At every other integer
-`d ≥ 2`, the three quantities take three distinct rational values
-and the simultaneous coincidence fails.
+### 2.3 Exact ratio-gap/residual identity
 
-This is load-bearing step class A: pure rational-arithmetic identity with no
-external observed-data, no framework-conditional input, and no
-admitted scale, normalization, or admission of any kind.
+Subtracting (5) from (1) and putting the terms over a common
+denominator gives
 
-## 4. Cited authorities
+```text
+R_lat(d − 1) − R_RD(d)
+  = 2^(1 − d) − 1/(2d)
+  = [d − 2^(d − 2)]/[d 2^(d − 1)]
+  = −A(d)/[d 2^(d − 1)].                                     (7)
+```
 
-This narrow theorem **cites no framework authority** as load-bearing.
-There are zero ledger dependencies. The Riemann-Dirichlet identity
-(ii) is a classical mathematical result (DLMF §25.2.3 / Whittaker-
-Watson §13.13); identities (i) and (iii) are elementary arithmetic.
+For every integer `d ≥ 2`, the denominator `d 2^(d − 1)` is strictly
+positive. Therefore
 
-The triple coincidence at `d = 4` is a fact about three independent
-functions of `d`: the rational `(c + 1/2)/(c + 1)` at `c = d − 1`,
-the analytic-number-theoretic `η(d)/ζ(d)`, and the integer residual
-`2^(d − 2) − d`. Each is well defined for any integer `d ≥ 2` and
-the simultaneous coincidence is verified by direct rational
-computation in §2.4.
+```text
+R_lat(d − 1) = R_RD(d)  ⟺  A(d) = 0.                         (8)
+```
 
-The hypothesis `c = d − 1` and the candidate dimension `d ≥ 2` are
-**stated** rather than imported. Whether any specific framework
-realization at integer `d` actually produces the lattice expression
-`(c + 1/2)/(c + 1)` at `c = d − 1` is a separate question that
-this note does not adjudicate; the implication "if all three
-identities hold simultaneously at integer `d ≥ 2` then `d = 4`"
-holds unconditionally.
+This is the load-bearing alignment identity. It relates the equality
+of the two ratios to the zero of the separate residual; it does not
+assign the ratio value to the residual.
 
-## 5. Forbidden imports check
+### 2.4 Uniqueness of the integer zero
 
-- No PDG observed values consumed.
-- No literature numerical comparators consumed.
-- No fitted selectors consumed.
-- No framework axioms consumed (the theorem holds for any integer
-  `d ≥ 2`; `d = 4` is selected purely by the arithmetic equivalence
-  in §2.4).
-- No same-surface family arguments.
-- No new repo vocabulary introduced; the terms used (Riemann zeta,
-  Dirichlet eta, Matsubara mode, integer alignment equation) are
-  canonical mathematical / physics vocabulary.
+The first values are
 
-## 6. What this theorem closes
+```text
+A(2) = −1,
+A(3) = −1,
+A(4) =  0,
+A(5) =  3.                                                    (9)
+```
 
-- A single positive identity with class-A load-bearing step: at `d = 4`,
-  three independent
-  rational quantities (a per-mode lattice ratio, the Riemann-Dirichlet
-  quotient, and a dimensional-selector value) coincide on `7/8`, and
-  this triple coincidence holds at no other integer `d ≥ 2`.
+For every integer `d ≥ 4`,
 
-## 7. What this theorem does NOT close
+```text
+A(d + 1) − A(d)
+  = 2^(d − 2) − 1
+  ≥ 3
+  > 0.                                                        (10)
+```
 
-- **Framework hierarchy formula closure.** The full chain
-  `v = M_Pl × α_LM^16 × (7/8)^(1/4)` requires closure of `α_LM`,
-  closure of the `M_Pl` scaffold, closure of the per-determinant
-  readout that picks the `(1/4)` outer exponent, and physical
-  selection of `L_t = 4`. None of these are within this narrow
-  theorem's scope.
-- **The `(1/4)` outer exponent.** The compression factor in the
-  framework formula is `(7/8)^(1/4)`, not `(7/8)`. The `(1/4)`
-  outer exponent is the heat-kernel / per-determinant readout
-  question handled by separate bounded-theorem notes; this narrow
-  theorem is silent on it.
-- **`L_t = 4` selection.** The bosonic-bilinear selector note picks
-  `L_t = 4` as the unique minimal Klein-four orbit. That selection
-  is independent of the present theorem; the present theorem
-  exhibits the algebraic content of `d = 4` as a triple coincidence,
-  not as a derivation of `L_t = 4`.
-- **Continuum-vs-finite-`L_t` identification.** This theorem does
-  **not** identify the finite-`L_t` lattice ratio with the
-  continuum number-theoretic value `η(s)/ζ(s)` at `s = 4`; the
-  lattice quantity is the per-mode rational `(c + 1/2)/(c + 1)`
-  at `c = 3`, and the number-theoretic quantity is
-  `1 − 2^(1 − s)` at `s = 4`. They take the same numerical value
-  `7/8` at `d = 4` by the alignment in §2.4, but the lattice
-  expression is not a rewriting of the eta-zeta quotient.
-- **`α_LM^16` substitution.** Out of scope; the framework
-  substitution `α_LM^16` is a separate open lane.
+Thus `A` is strictly increasing on the integers `d ≥ 4`. Together
+with (9), this proves that `A(d) = 0` has the unique integer solution
+`d = 4` on `d ≥ 2`. Combining this with (8) proves that the two ratios
+are equal only at `d = 4`.
 
-## 8. Verification
+### 2.5 Exact value at the alignment
+
+Equations (2), (6), and (9) give
+
+```text
+R_lat(3) = R_RD(4) = 7/8,
+A(4) = 0.                                                     (11)
+```
+
+This proves the theorem. ∎
+
+## 3. Load-bearing step
+
+The single load-bearing step is the exact class-A identity
+
+```text
+R_lat(d − 1) − R_RD(d) = −A(d)/[d 2^(d − 1)],
+```
+
+together with the elementary integer-domain proof that `A(d) = 0`
+only at `d = 4`. No observed value, fitted selector, framework axiom,
+physical dimension choice, or admitted normalization enters the proof.
+
+## 4. Authorities and dependencies
+
+The proof is self-contained and has zero load-bearing repository
+dependencies. Equation (5) is the classical eta-zeta identity; DLMF
+§25.2.3 is background confirmation, not an imported numerical input.
+
+The symbols `c = d − 1` and integer `d ≥ 2` are stated hypotheses.
+The theorem does not assert that a particular framework realization
+must supply those hypotheses.
+
+## 5. Scope boundaries
+
+What this theorem closes:
+
+- the exact equivalence between equality of the two displayed ratios
+  and vanishing of the alignment residual on integer `d ≥ 2`;
+- the unique integer solution `d = 4`;
+- the exact aligned values `(7/8, 7/8, 0)`.
+
+What remains outside scope:
+
+- any physical meaning assigned to `d = 4`;
+- any physical or dynamical selection of `L_t = 4`;
+- any hierarchy-scale, coupling, observable, or parameter prediction;
+- any fourth-root or determinant readout;
+- any claim of independence or provenance beyond the displayed
+  self-contained arithmetic.
+
+## 6. Verification
 
 ```bash
 PYTHONPATH=scripts python3 scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py
 ```
 
-The runner verifies, at exact rational precision via Python `Fraction`
-and `sympy`:
+The runner checks:
 
-1. **T1.** `sin²((2n + 1)π/4) = 1/2` for all `n ∈ {0, 1, 2, 3}` (uniform
-   temporal weight at `L_t = 4`). Symbolic via SymPy.
-2. **T2.** At `L_t = 6`, `sin²` values are not uniform (explicit values
-   `{1/4, 1, 1/4, 1/4, 1, 1/4}`).
-3. **T3.** At `L_t = 8`, `sin²` values are not uniform (explicit values
-   include `1/2 ± √2/4`).
-4. **T4.** Per-temporal-mode determinant factor at `L_t = 4`, `c = 3`:
-   `(c + 1/2)^(L_t · 4) = (7/2)^16` (i.e., the per-temporal-mode value
-   `(7/2)^4` raised to the four temporal modes), verified at exact
-   `Fraction` precision.
-5. **T5.** Per-temporal-mode determinant factor at `L_t = 2`, `c = 3`:
-   `(c + 1)^(L_t · 4) = 4^8`, verified at exact `Fraction` precision.
-6. **T6.** Cross-`L_t` algebraic factor:
-   `(7/2)^16 / 4^16 = (7/8)^16`, exactly. Cross-check against the
-   parent decomposition note's algebraic closed form
-   (cycle 7 / `frontier_hierarchy_matsubara_determinant_narrow.py`
-   pattern).
-7. **T7.** Riemann-Dirichlet identity `η(s)/ζ(s) = 1 − 2^(1 − s)` for
-   integer `s ∈ {2, 3, 4, 5, 6, 7, 8}`, verified at exact `Fraction`
-   precision.
-8. **T8.** `η(4)/ζ(4) = 1 − 1/8 = 7/8`, exact rational.
-9. **T9.** Integer alignment equation: `2^(d − 2) − d = 0` only at `d = 4`
-   among integer `d ∈ {2, 3, 4, 5, 6, 7, 8}`. Explicit values
-   reported.
-10. **T10.** Per-mode lattice ratio symbolic: at `c = d − 1`,
-    `(c + 1/2)/(c + 1) = 1 − 1/(2d)`, verified via SymPy `simplify`.
-11. **T11.** Algebraic equivalence: `1/(2d) = 2^(1 − d) ⟺
-    2^(d − 2) = d` symbolically; verified at `d = 4`.
-12. **Informational.** Numeric cross-check: `(7/8)^(1/4) ≈ 0.96717`
-    matches the framework's compression-exponent value carried in
-    hierarchy notes. This is printed by the runner as relational context
-    and is not part of the pass/fail target.
-13. **T13.** Negative scan: at `d ∈ {2, 3, 5, 6}`, the simultaneous
-    alignment fails. Explicit failure values reported:
-    - `d = 2`: lattice `3/4`, eta/zeta `1/2`, gap `1/4`;
-    - `d = 3`: lattice `5/6`, eta/zeta `3/4`, gap `1/12`;
-    - `d = 5`: lattice `9/10`, eta/zeta `15/16`, gap `−3/80`;
-    - `d = 6`: lattice `11/12`, eta/zeta `31/32`, gap `−5/96`.
-14. **T14.** Combined verification: at `d = 4`, identities (i), (ii),
-    (iii) all hold and all yield `7/8`.
+1. **T1-T3:** the finite contextual trigonometric checks at `L_t = 4`,
+   `6`, and `8`, without an all-`L_t` selection claim.
+2. **T4:** the symbolic rational-ratio identity at `c = d − 1`.
+3. **T5:** the symbolic odd/even eta-zeta split.
+4. **T6-T8:** the exact `d = 4` values `7/8`, `7/8`, and `0`.
+5. **T9:** the exact tuple
+   `(R_lat(3), R_RD(4), A(4)) = (7/8, 7/8, 0)`.
+6. **T10:** a hostile control rejecting the old tuple
+   `(7/8, 7/8, 7/8)`.
+7. **T11:** the symbolic ratio-gap/residual identity (7).
+8. **T12-T13:** exact scans confirming ratio equality iff residual
+   zero and finding the only scanned zero at `d = 4`.
+9. **T14-T16:** the base values, forward-difference identity, and
+   monotonicity certificate used for the all-integer proof.
+10. **T17:** hostile neighboring-dimension controls at
+    `d ∈ {2, 3, 5, 6}`.
+11. **T18-T20:** source-prose guards requiring the corrected tuple and
+    rejecting the old dimensional mismatch on claim-bearing surfaces.
 
-Target PASS = 14, FAIL = 0.
+Target: `PASS = 20`, `FAIL = 0`.
 
-## 9. Independent audit handoff
+## 7. Independent audit handoff
 
 ```yaml
 proposed_claim_type: positive_theorem
 proposed_claim_scope: |
-  Triple-coincidence narrow theorem at d=4 among integer d >= 2:
-  the per-mode lattice ratio (c + 1/2) / (c + 1) at c = d - 1,
-  the Riemann-Dirichlet quotient eta(d) / zeta(d), and the
-  integer alignment equation 2^(d - 2) = d simultaneously
-  evaluate to 7/8 at d = 4 and at no other integer d >= 2. Pure
-  rational arithmetic + classical analytic-number-theory identity;
-  no framework axiom or admission consumed. Does NOT close the
-  hierarchy formula v = M_Pl x alpha_LM^16 x (7/8)^(1/4); does NOT
-  derive L_t = 4 as the physical temporal block; does NOT close
-  the (1/4) outer exponent.
+  For integer d >= 2, define R_lat(c) = (c+1/2)/(c+1),
+  R_RD(d) = eta(d)/zeta(d) = 1 - 2^(1-d), and
+  A(d) = 2^(d-2) - d. Then R_lat(d-1) = R_RD(d) iff A(d) = 0
+  iff d = 4. At d = 4 the two ratios equal 7/8 while the
+  alignment residual vanishes: (R_lat(3), R_RD(4), A(4))
+  = (7/8, 7/8, 0). The uniqueness domain is integers d >= 2.
 proposed_load_bearing_step_class: A
 status_authority: independent audit lane only
 
 declared_one_hop_deps: []
-
 admitted_context_inputs: []
-
 forbidden_imports_used: false
 proposal_allowed: true
 audit_required_before_effective_status_change: true
 ```
 
-## 10. Counterfactual Pass record (audit transparency)
+## 8. Hostile controls and audit boundary
 
-Per `feedback_run_counterfactual_before_compute`, the assumptions
-were exercised before authoring:
+The repaired statement distinguishes three different assertions:
 
-1. **"Three independent identities all evaluate to `7/8` at `d = 4`."**
-   — verified by exact rational computation across `d ∈ {2, ..., 8}`;
-   only `d = 4` aligns. The simultaneous coincidence is genuine
-  triple-coincidence (one rational, one analytic-number-theoretic,
-  one elementary integer equation), not a tautology among rewrites of a
-   single identity.
-2. **"`2^(d − 2) = d` has no other integer solutions."** — proven
-   by discrete-difference monotonicity argument in §2.3. Every
-   integer `d ≥ 5` gives `f(d) > 0` strictly; `d ∈ {2, 3}` give
-   `f(d) = −1`. Unique zero at `d = 4`.
-3. **"The lattice expression `(c + 1/2)/(c + 1)` at `c = d − 1` is
-   the right scaling at general `d`."** — purely a hypothesis
-   about the candidate per-mode ratio, stated as a function of `d`.
-   Whether any specific framework realization at integer `d` actually
-   produces the lattice `(c + 1/2)/(c + 1)` at `c = d − 1` is a
-   separate question this note does not adjudicate. The triple
-   coincidence is a fact about the three functions of `d`, not a
-   claim that the framework realizes them at arbitrary `d`.
-4. **"The framework's `L_t = 4` is `d = 4`."** — independent question
-   handled by the bosonic-bilinear selector. The present theorem
-   does not select `d = 4`; it states the alignment property at
-   `d = 4`. The framework's separate selection of `L_t = 4` is
-   not load-bearing here.
-5. **"The Riemann-Dirichlet identity is standard."** — yes; classical
-   result, proof in §2.2. Does not depend on any framework input.
-6. **"Sub-leading lattice corrections to `(7/8)`."** — there are none
-   at the per-mode algebraic level: `(c + 1/2)/(c + 1)` is exact at
-   `c = 3`. Sub-leading corrections to the framework's full hierarchy
-   formula (continuum limits, mass-correction terms in Δf, etc.) are
-   downstream and outside this theorem's scope.
-7. **"The `(1/4)` outer exponent."** — explicitly outside scope; a
-   separate downstream question handled by the heat-kernel D=4
-   compression bounded theorem note. The triple coincidence
-   identifies `7/8` as the d=4 rational; the `1/D` outer reading
-   is a separate dimensional-analysis question.
+1. `R_lat(3) = 7/8`;
+2. `R_RD(4) = 7/8`;
+3. `A(4) = 0`.
 
-The counterfactual exercise confirmed the result as a class (A)
-narrow positive theorem with no bounded admissions in the
-load-bearing chain.
+The primary runner fails if the third entry is replaced by `7/8`, if
+the exact ratio-gap/residual identity is broken, or if the source note
+reintroduces the old claim that the residual is another ratio-valued
+witness.
 
-## 11. Cross-references
-
-### Hierarchy lane (relational, not load-bearing)
-
-These notes are mentioned only for relational context; the present
-narrow theorem does **not** consume any of them and has zero
-ledger dependencies.
-
-- `HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md` — separate retained
-  authority for the algebraic determinant identity at `L_s = 2`.
-  The present narrow theorem mentions the per-mode rational
-  `(c + 1/2)/(c + 1)` as a function of `c = d − 1` and does not
-  consume the decomposition's framework setup.
-- `HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md` — separate framework
-  note on `L_t = 4` Klein-four orbit selection; not consumed here.
-- `HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md`
-  — separate downstream bounded-theorem note on the `(1/4)` outer
-  exponent; not consumed here.
-- `HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md`
-  — sister Class A narrow note (audited_decoration under the
-  decomposition note) that states the same algebraic determinant
-  identity in narrow form; mentioned for the `(7/8)^16` Class A
-  factor only.
-
-### External authorities (theorem-grade math)
-- DLMF §25.2.3 (eta-zeta sum splitting),
-  https://dlmf.nist.gov/25.2#E3.
-- DLMF §25.12 (Dirichlet eta function),
-  https://dlmf.nist.gov/25.12.
-- E. T. Whittaker & G. N. Watson, *A Course of Modern Analysis*,
-  4th ed., §13.13 (Riemann zeta function and the eta quotient).
-
-## 12. Author tone and audit boundary
-
-This note states one identity. It is not a synthesis. It does not
-promote any other note's status, and does not claim derivation of
-any framework observable. The audit lane is the authority on
-effective status; this proposal merely contributes a Class A
-narrow row whose load-bearing chain has zero framework deps and
-zero bounded admissions.
+This source note does not author an audit verdict. Independent re-audit
+after landing is the only authority for any future status change.

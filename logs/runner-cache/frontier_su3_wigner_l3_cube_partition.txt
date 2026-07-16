@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_wigner_l3_cube_partition.py
-runner_sha256: 3ed5a54c2f1e6f30d89e62a6bc8ae08f22977837d9052f5fb5c23c55d7b0fe30
+runner_sha256: 984df6903cb9f238226c8a5b0c57d9d9b008e307b863e4d8c8089688d4c06978
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 71.43
+elapsed_sec: 64.76
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -11,6 +11,13 @@ SU(3) Wigner Engine — Block 4: L_s=3 Cube Partition Function
 (STAGED: trivial sector exact + (1,1) infrastructure +
  full-cube scope estimate)
 ==============================================================================
+
+--- Prose firewall: pipeline status and no-inheritance boundary ---
+  [PASS] paired consumer note exists (docs/SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md)
+  [PASS] paired consumer note contains no authored audit-status pins
+  [PASS] status-pin matcher rejects hostile mutations without banning boundary prose
+  [PASS] paired consumer note requires pipeline-derived current status (Current dependency status is pipeline-derived.)
+  [PASS] paired consumer note states no-inheritance and H/order boundaries (This consumer does not inherit audit status from Blocks 1-3. | It does not consume Block 1's corrected `H` values or channel ordering.)
 
 --- Section A: trivial sector lambda = (0,0) computed exactly ---
   c_(0,0)(beta=6) = 3.4414403550
@@ -29,7 +36,7 @@ SU(3) Wigner Engine — Block 4: L_s=3 Cube Partition Function
     Building 8 total generators on V^4...
     Computing C_2_total = sum_a (T^a_total)^2...
     Diagonalizing C_2_total...
-  [71.0s] Singlet basis computed.
+  [64.5s] Singlet basis computed.
   Shape: (4096, 8)  (expected (4096, 8))
   PASS: rank-8 singlet basis loaded from Block 2 algorithm.
 
@@ -91,6 +98,8 @@ Headline:
     Per-plaquette tensor: (8,8,8,8) cyclical-trace structure
   FULL 81-link contraction deferred to Block 5 (honest scope:
   multi-day engineering OR optimized-library-assisted execution).
+
+PROSE FIREWALL: PASS=5 FAIL=0
 
 ----- stderr -----
 

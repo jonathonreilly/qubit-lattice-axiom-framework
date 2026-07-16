@@ -4,7 +4,7 @@
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only
 **Type:** bounded_theorem
-**Scope narrowing 2026-05-23 (runner_artifact_issue repair).** Following the 2026-05-16 auditor verdict — "the supplied Block 4 runner genuinely computes the Bessel-determinant coefficients, rebuilds the 4-fold singlet basis, constructs the stated toy plaquette tensor, and reports the advertised 5/5 checks" but no Block 5 runner source/stdout was present in the audit packet — the audited scope of this row is now narrowed to **Block 4 L_s=3 PBC cube partition-function staging only**. The Block 5 L_s=2 PBC orientation/index-graph diagnostics (all-forward 12-plaquette / 24-link / 8-component enumeration and the standard-Wilson `+d1+d2-d1-d2` link-multiplicity degeneracy `{1:4, 2:8, 3:4, 4:4}`) are dropped from the load-bearing claim. The bridge-gap closure limb (P_candidate comparison, bridge-support target, epsilon_witness) remains explicitly NOT load-bearing here and depends on the unaudited open-gate row `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`.
+**Scope narrowing 2026-05-23 (runner_artifact_issue repair).** Following the 2026-05-16 auditor verdict — "the supplied Block 4 runner genuinely computes the Bessel-determinant coefficients, rebuilds the 4-fold singlet basis, constructs the stated toy plaquette tensor, and reports the advertised 5/5 checks" but no Block 5 runner source/stdout was present in the audit packet — the audited scope of this row is now narrowed to **Block 4 L_s=3 PBC cube partition-function staging only**. The Block 5 L_s=2 PBC orientation/index-graph diagnostics (all-forward 12-plaquette / 24-link / 8-component enumeration and the standard-Wilson `+d1+d2-d1-d2` link-multiplicity degeneracy `{1:4, 2:8, 3:4, 4:4}`) are dropped from the load-bearing claim. The bridge-gap closure limb (P_candidate comparison, bridge-support target, epsilon_witness) remains explicitly NOT load-bearing here and depends on the open-gate row `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`, whose current audit treatment is pipeline-derived.
 
 **Primary runner:** `scripts/frontier_su3_wigner_l3_cube_partition.py`
 
@@ -12,6 +12,20 @@
 [`SU3_WIGNER_INTERTWINER_BLOCK1_THEOREM_NOTE_2026-05-03.md`](SU3_WIGNER_INTERTWINER_BLOCK1_THEOREM_NOTE_2026-05-03.md),
 [`SU3_WIGNER_INTERTWINER_BLOCK2_THEOREM_NOTE_2026-05-03.md`](SU3_WIGNER_INTERTWINER_BLOCK2_THEOREM_NOTE_2026-05-03.md),
 and [`SU3_WIGNER_INTERTWINER_BLOCK3_THEOREM_NOTE_2026-05-03.md`](SU3_WIGNER_INTERTWINER_BLOCK3_THEOREM_NOTE_2026-05-03.md).
+
+**Current dependency status is pipeline-derived.** Read the current Blocks
+1-3 rows from the materialized audit ledger and generated audit surfaces at
+review time; this note records no status snapshot. In particular, Block 1's
+cubic-Casimir label/equivariance repair remains subject to independent
+re-audit, and nothing here promotes it.
+
+**No status inheritance.** This consumer does not inherit audit status from
+Blocks 1-3. A passing consumer runner verifies only the Block 4 staging
+formulas; it does not confer an audit outcome on this note or any dependency.
+It does not consume Block 1's corrected `H` values or channel ordering. The
+staging formulas use the Wilson character coefficients, the adjoint
+generator/Casimir construction of the rank-8 four-fold invariant subspace,
+and the L_s=3 cube geometry.
 
 ## 0. Headline
 
@@ -28,14 +42,14 @@ in the SU(3) Wigner-intertwiner engine campaign that began with Blocks 1-3:
 
 **Narrowed bounded verdict (Block 4 staging only):** the finite
 combinatorial / algebraic Block 4 partition-staging facts are checkable
-from the Blocks 1-3 retained packet plus the supplied Block 4 runner.
+from the cited Blocks 1-3 source notes plus the supplied Block 4 runner.
 This narrowed verdict makes no L_s=2 PBC orientation/index-graph claim
 and no bridge-gap closure claim.
 
 **Audit-conditional bridge-gap limb (NOT load-bearing here).** Any
 numerical comparison against `P_CANDIDATE_REPORTED`,
 `BRIDGE_SUPPORT_TARGET`, `EPSILON_WITNESS` would rely on imported
-constants from the unaudited open-gate row
+constants from the open-gate row
 `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`. These are
 NOT part of the load-bearing audited claim. See Section 3.1 for the
 per-item conditional breakdown.
@@ -127,14 +141,14 @@ of the bounded theorem statement in Section 3.
 The Block 5 runner source itself
 (`scripts/frontier_su3_wigner_l2_cube_orientation_verification.py`)
 remains in the repository as a development artifact; this note no
-longer makes any retained claim on its outputs.
+longer makes any theorem claim on its outputs.
 
 ## 3. Block 4 theorem statement (narrowed 2026-05-23)
 
 **Bounded support theorem (narrowed, SU(3) Wigner-Racah engine Block 4).**
 The runner `scripts/frontier_su3_wigner_l3_cube_partition.py`
 delivers the following load-bearing facts (each independently
-checkable from the Blocks 1-3 retained packet plus pure
+checkable from the cited Blocks 1-3 source notes plus pure
 `numpy + scipy.special`):
 
 (a) The L_s=3 PBC cube partition function trivial sector
@@ -161,14 +175,14 @@ beyond the engineering-cost statement in (b).
 ### 3.1 Audit-conditional bridge-gap limb (NOT load-bearing)
 
 Any inference involving the numerical constants imported from the
-unaudited open-gate row
+open-gate row
 `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`
 (`P_CANDIDATE_REPORTED = 0.4291049969`,
 `BRIDGE_SUPPORT_TARGET = 0.5935306800`,
 `EPSILON_WITNESS = 3.03e-4`,
 `P_TRIV_REFERENCE`, `P_LOC_REFERENCE`) is NOT a load-bearing
-component of this note's narrowed audit scope and carries the
-open-gate conditional until that row is itself audited.
+component of this note's narrowed audit scope. The audit pipeline
+determines the current treatment of that row and any downstream effect.
 
 In particular, this narrowed note makes:
 
@@ -179,7 +193,7 @@ In particular, this narrowed note makes:
 - NO claim that "no L_s=2 PBC convention closes the bridge gap";
 - NO claim that "L_s ≥ 3 Wigner-Racah engine work is the next
   required route" (the engineering-cost statement in 3(b) is the
-  only L_s ≥ 3 framing retained).
+  only L_s ≥ 3 framing that remains in this note).
 
 ## 4. Scope
 
@@ -230,7 +244,6 @@ note_path: docs/SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md
 runner_paths:
   - scripts/frontier_su3_wigner_l3_cube_partition.py
 claim_type: bounded_theorem
-intrinsic_status: unaudited
 deps:
   - su3_wigner_intertwiner_block1_theorem_note_2026-05-03  # PR #495
   - su3_wigner_intertwiner_block2_theorem_note_2026-05-03  # PR #498
@@ -257,7 +270,7 @@ review_scope_summary: |
   P_CANDIDATE_REPORTED value 0.4291049969, the BRIDGE_SUPPORT_TARGET
   0.5935306800, the EPSILON_WITNESS 3.03e-4, and any
   "no L_s=2 PBC convention closes the bridge gap" verdict are
-  imported from / depend on the unaudited open-gate row
+  imported from / depend on the open-gate row
   su3_cube_index_graph_shortcut_open_gate_note_2026-05-03 and are
   NOT asserted by this narrowed claim.
 
@@ -288,6 +301,7 @@ Expected summary:
 
 ```text
 SUMMARY: THEOREM PASS=5 FAIL=0
+PROSE FIREWALL: PASS=5 FAIL=0
 ```
 
 ## Audit dependency repair links
@@ -303,13 +317,13 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 ### 2026-05-10 (first narrowing, kept Block 5 in scope)
 
-The 2026-05-08 audit pass on this row recorded
-`audited_conditional` (verdict by
+The 2026-05-08 audit pass on this row recorded a conditional result
+(verdict by
 `codex-audit-loop-gpt55-xhigh-019e056f-ff7e-78b0-bbfe-9ff7a3d79555`,
-load-bearing step class B) with the explicit repair target:
+load-bearing step class B) with the explicit repair target, summarized:
 
 > `missing_dependency_edge`: provide the Block 5 runner source/stdout
-> and retained packet entries for the L_s=2 candidate ansatz plus
+> and pipeline-visible dependency entries for the L_s=2 candidate ansatz plus
 > bridge target/epsilon witness, or **narrow this claim to Block 4
 > staging only**.
 
@@ -333,7 +347,7 @@ packet:
 > verify the 12-plaquette/24-link/8-component and standard-Wilson
 > degeneracy assertions. The bridge-gap/P_candidate limb is correctly
 > disclaimed as non-load-bearing, so the blocker is artifact
-> completeness for the retained narrowed core, not the open-gate
+> completeness for the narrowed core, not the open-gate
 > numerics."
 
 with the repair hint:
@@ -354,8 +368,8 @@ in-scope content are tightened to Block 4 alone.
 
 For the next re-audit cycle, the load-bearing scope of this row is
 narrowed to the following finite combinatorial / algebraic claims,
-which are independently checkable from the Blocks 1-3 retained
-packet plus pure `numpy + scipy.special` via the Block 4 runner:
+which are independently checkable from the cited Blocks 1-3 source
+notes plus pure `numpy + scipy.special` via the Block 4 runner:
 
 1. The trivial-sector exact identity
    `Z_(0,0)(L=3 cube, beta=6) = c_(0,0)(6)^81` for the L_s=3 PBC
@@ -381,13 +395,17 @@ packet plus pure `numpy + scipy.special` via the Block 4 runner:
    contraction-order optimizer. The full L_s=3 cube contraction is
    explicitly deferred and out of audited scope.
 
-### Effective-status read
+### Pipeline-status boundary
 
 This 2026-05-23 revision is a scope narrowing that removes the
 remaining load-bearing dependence on a runner not present in the
 audit packet. The next re-audit cycle should evaluate only this
 narrowed Block 4 staging surface. The final verdict authority remains
-the independent audit lane.
+the independent audit lane. This note does not cache dependency or
+consumer status and does not inherit audit status from the cited
+sources; current claim strength is whatever the audit pipeline derives
+from the current hashes, evidence, dependency graph, and independent
+results.
 - `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`
   (`SU3_CUBE_INDEX_GRAPH_SHORTCUT_OPEN_GATE_NOTE_2026-05-03.md`; context-only
   open-gate reference, not a load-bearing dependency of the narrowed claim)

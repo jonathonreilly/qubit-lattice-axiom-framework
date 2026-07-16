@@ -1,19 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_wigner_block4_block5_narrow_split.py
-runner_sha256: 98176b6ffdf66b374ec20f02868eb74be354bb6b23e6ecb4e52f3e39fd91b253
+runner_sha256: fe386ddebffb5f3160b5d086760b0ff3709a407efd76aa08b4370217fb84df33
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 73.39
+elapsed_sec: 65.07
 status: ok
 ----- stdout -----
 SU(3) Wigner Block 4/5 narrow split primary runner
 ========================================================================
+[PASS] consumer note exists (docs/SU3_WIGNER_BLOCK4_STAGING_BLOCK5_ORIENTATION_DIAGNOSTICS_NARROW_THEOREM_NOTE_2026-05-10.md)
+[PASS] consumer note contains no authored audit-status pins
+[PASS] status-pin matcher rejects hostile mutations without banning boundary prose
+[PASS] consumer note requires pipeline-derived current status (Current dependency status is pipeline-derived.)
+[PASS] consumer note states no-inheritance and H/order boundaries (This consumer does not inherit audit status from Blocks 1-3. | It does not consume Block 1's corrected `H` values or channel ordering.)
 [PASS] Block 4 staging runner exists (scripts/frontier_su3_wigner_l3_cube_partition.py)
 [PASS] Block 4 staging avoids open-gate runner imports
 
 --- Block 4 staging stdout tail ---
-  - (1,1) sector character coefficient c_(1,1)(6) computed.
-  - Singlet basis of V^4 (rank 8, Block 2 import) loaded.
   - Per-plaquette tensor structure encoded.
   - Small sub-network contraction demo passes.
 
@@ -47,6 +50,8 @@ Headline:
     Per-plaquette tensor: (8,8,8,8) cyclical-trace structure
   FULL 81-link contraction deferred to Block 5 (honest scope:
   multi-day engineering OR optimized-library-assisted execution).
+
+PROSE FIREWALL: PASS=5 FAIL=0
 [PASS] Block 4 staging exits 0 (returncode=0)
 [PASS] Block 4 staging expected summary present (SUMMARY: THEOREM PASS=5 FAIL=0)
 [PASS] Block 5 orientation diagnostics runner exists (scripts/frontier_su3_wigner_block5_orientation_diagnostics_narrow.py)
@@ -83,7 +88,7 @@ SUMMARY: PASS=11 FAIL=0
 [PASS] Block 5 orientation diagnostics exits 0 (returncode=0)
 [PASS] Block 5 orientation diagnostics expected summary present (SUMMARY: PASS=11 FAIL=0)
 ========================================================================
-SUMMARY: PASS=8 FAIL=0
+SUMMARY: PASS=13 FAIL=0
 
 ----- stderr -----
 

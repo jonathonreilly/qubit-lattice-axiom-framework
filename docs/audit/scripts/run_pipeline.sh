@@ -37,13 +37,13 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 cd "${REPO_ROOT}"
 
-echo "==> 0-ledger/16 ledger_io.py --materialize (sharded ledger -> monolith read cache)"
+echo "==> 0-ledger/17 ledger_io.py --materialize (sharded ledger -> monolith read cache)"
 python3 docs/audit/scripts/ledger_io.py --materialize
 
 echo "==> 0/17 check_axiom_premise_clean.py (guard: axiom/primitive premise docs stay pure)"
 python3 docs/audit/scripts/check_axiom_premise_clean.py
 
-echo "==> 0a/16 audit_model_family_normalization_guard.py (guard: model/family provenance stays compatible)"
+echo "==> 0a/17 audit_model_family_normalization_guard.py (guard: model/family provenance stays compatible)"
 python3 scripts/audit_model_family_normalization_guard.py
 
 echo "==> 1/17 build_citation_graph.py"
@@ -89,7 +89,7 @@ PY
   if [[ "${invalidated}" == "0" && "${restored}" == "0" ]]; then
     break
   fi
-  echo "==> 7.${attempt}/16 compute_effective_status.py post-invalidation/restore (${invalidated} invalidated, ${restored} restored)"
+  echo "==> 7.${attempt}/17 compute_effective_status.py post-invalidation/restore (${invalidated} invalidated, ${restored} restored)"
   python3 docs/audit/scripts/compute_effective_status.py
 done
 
@@ -98,7 +98,7 @@ if [[ "${invalidated}" != "0" || "${restored}" != "0" ]]; then
   exit 1
 fi
 
-echo "==> 7b/16 compute_lane_certification.py post-invalidation fixed point"
+echo "==> 7b/17 compute_lane_certification.py post-invalidation fixed point"
 python3 docs/audit/scripts/compute_lane_certification.py
 
 echo "==> 8/17 build_cycle_inventory.py"

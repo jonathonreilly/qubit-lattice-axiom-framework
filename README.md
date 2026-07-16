@@ -90,7 +90,7 @@ summarized in
 [`docs/audit/data/effective_status_summary.json`](docs/audit/data/effective_status_summary.json)).
 The monolithic `docs/audit/AUDIT_LEDGER.md` is a local pipeline-materialized
 cache (gitignored, absent from fresh clones; rebuild with
-`python3 docs/audit/scripts/ledger_io.py --materialize`). Retained-grade
+`python3 docs/audit/scripts/render_audit_ledger.py`). Retained-grade
 `effective_status` values are `retained`, `retained_no_go`, and
 `retained_bounded`; boxed `decoration_under_*` rows are decorations under a
 retained parent, not independent retained rows. `promoted` is

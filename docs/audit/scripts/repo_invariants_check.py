@@ -63,14 +63,15 @@ PREMISE_NODES = "docs/audit/data/axiom_premise_nodes.json"
 OBLIGATIONS = "docs/audit/data/derivation_obligations.json"
 
 # Authority surfaces: the reading path an external reader or agent follows.
-# Audit-lane-owned generated work-queue files are excluded: their links are
-# machine-produced pointers that self-heal when their generators run in the
-# audit lane, and gating the pipeline on them would be circular (the guard
-# runs inside the same pipeline that cannot regenerate them mid-PR).
+# MISSING_DERIVATION_PROMPTS.md is excluded: its generator
+# (generate_conditional_prompts.py) runs in the audit workflow AFTER the
+# pipeline, so the in-pipeline guard cannot see its healed state — gating on
+# it is circular. The queue surfaces (AUDIT_QUEUE.md, AUDIT_DISPATCH_QUEUE.md)
+# are regenerated at pipeline stages 9/11, before the stage-17 guard, so they
+# ARE scanned: a queue renderer emitting a dead reader-facing link fails the
+# pipeline loudly.
 AUTHORITY_EXCLUDE = {
     "docs/audit/MISSING_DERIVATION_PROMPTS.md",
-    "docs/audit/AUDIT_QUEUE.md",
-    "docs/audit/AUDIT_DISPATCH_QUEUE.md",
 }
 AUTHORITY_SURFACES = (
     "README.md",

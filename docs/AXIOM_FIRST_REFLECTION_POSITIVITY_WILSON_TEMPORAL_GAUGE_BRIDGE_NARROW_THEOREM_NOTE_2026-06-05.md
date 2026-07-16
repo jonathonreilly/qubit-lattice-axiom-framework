@@ -18,9 +18,9 @@ source-side theorem boundary, not an effective repository status.
 Consider the pure-gauge Wilson plaquette weight on one finite open temporal
 slab with boundary slices `t ∈ {0,1}`, no periodic temporal identification,
 finitely many spatial links, temporal-gauge data `U_0 = 1`, normalized product
-Haar measure, and link reflection `θ:t ↦ 1-t`. The temporal gauge condition is part of this
-explicit carrier definition; no global gauge-fixing theorem is used. On
-plus-slice observables,
+Haar measure, and link reflection `θ:t ↦ 1-t`. The temporal gauge condition is
+part of this explicit carrier definition; no global gauge-fixing theorem is
+used. On plus-slice observables,
 
 ```text
 Θ(F)(U) = overline(F(θU)).
@@ -138,9 +138,10 @@ exp[α Re χ_R]
 Every tensor-product multiplicity `M_(λ,n)` is a nonnegative integer.
 Self-contained complete reducibility follows because an invariant subspace of
 a finite-dimensional unitary representation has an invariant orthogonal
-complement. The
-exchange of the `n` and `λ` sums is justified without importing an external
-positivity theorem: if `d_R=dim R`, then
+complement: if `v` is orthogonal to the invariant subspace `W`, then
+`<R(g)v,w>=<v,R(g)^dagger w>=<v,R(g^(-1))w>=0` for every `w∈W`. The exchange
+of the `n` and `λ` sums is justified without importing an external positivity
+theorem: if `d_R=dim R`, then
 
 ```text
 sum_λ M_(λ,n) |χ_λ(g)|
@@ -256,8 +257,13 @@ On the compact finite-link configuration space, the Wilson half-weight and
 every bounded `F_i` are integrable. The pointwise Boltzmann weight is strictly
 positive, so `0<Z<∞`. Normalization preserves positive semidefiniteness.
 
-The `A_+^(2)` plaquette and degree-at-most-two observables are bounded continuous
-functions and therefore lie inside this proved observable algebra.
+When the finite spatial slice contains spatial plaquettes, its named
+`A_+^(2)` spatial-plaquette and degree-at-most-two observables are bounded
+continuous functions and therefore lie inside this proved observable algebra.
+The exact `1+1`-dimensional runner carrier has no spatial plaquette; its
+degree-at-most-two link-character basis is a diagnostic restriction of the
+same bounded-observable theorem, not a claim that a spatial plaquette exists
+in one spatial dimension.
 
 ## 4. Independent proof frames and controls
 

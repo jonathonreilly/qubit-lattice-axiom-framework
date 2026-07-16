@@ -3,13 +3,14 @@
 reflection-positivity (RP) bridge note
 `AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05`.
 
-What this runner REPROVES from primitives (numpy / sympy only)
---------------------------------------------------------------
-The bridge applies the abstract symmetric-involution norm-square
-hypotheses (the retained gauge-half Cauchy-Schwarz note) to the genuine
-Wilson plaquette action in temporal gauge, and reproves the integrated
-three-factor Osterwalder-Seiler RP form for a basis of A_+^(2)
-observables on the positive-time half.
+What this runner checks from primitives (numpy / sympy only)
+------------------------------------------------------------
+The source note gives the self-contained all-order SU(N) proof.  This runner
+checks its finite-carrier reflection split, exact scalar normalization,
+finite SU(3) representation-ring recurrence, integrated three-factor
+Osterwalder-Seiler RP form on diagnostic bases, and sign-sensitive numerical
+controls.  The older gauge-half Cauchy-Schwarz note names the same algebraic
+shape but is context only, not a derivation premise here.
 
 Setup (explicit small lattice, link/time reflection):
 
@@ -19,12 +20,14 @@ Setup (explicit small lattice, link/time reflection):
   * Time reflection theta across the plane between t=0 and t=1 swaps the
     two slices:  theta(c0, c1) = (c1, c0), where c1 are the positive-half
     (t=1) links and c0 the reflected (t=0) links.
-  * Wilson action uses S_W = -beta * sum_p Re Tr U_p (up to the
-    irrelevant additive constant).  Its Boltzmann exponent splits as
+  * On the runner carrier, write the direct plane coefficient as alpha, so
+    S_W = -alpha * sum_p Re Tr U_p (up to the irrelevant additive constant).
+    Legacy diagnostic routines below name this alpha argument `beta`.  The
+    Boltzmann exponent splits as
     B = B_+ + B_- + B_0:
         B_+ = B_- = 0 on this exact 1+1-dimensional carrier, because there
               are no purely spatial plaquettes;
-        B_0 : beta times the straddling temporal plaquette term.  Equivalently
+        B_0 : alpha times the straddling temporal plaquette term.  Equivalently
               the plane action is S_W,0 = -B_0 and exp(-S_W,0)=exp(B_0).
   * Reflected (Osterwalder-Schrader) inner product on positive-half
     observables F:  Theta(F)(U) = conj( F(theta U) ), and
@@ -34,9 +37,10 @@ Coupling notation: legacy Z_N, U(1), and SU(2) diagnostic routines below name
 the coefficient multiplying Re chi directly `beta`; mathematically that
 coefficient is the effective plane coupling `alpha`.  For the standard
 fundamental SU(N) Wilson convention used by the source note,
-`alpha = beta_Wilson / N`.  Part B7 checks this normalization explicitly.
+`alpha = beta_Wilson / N`.  Parts B7-B8 check this normalization explicitly.
 
-Checks (all reproved here; no literature theorem is a derivation input):
+Checks (exact/symbolic gates are distinguished from numerical support; no
+literature theorem is a derivation input):
 
   Part A  B_- = Theta B_+ (reflection symmetry) and B_0 reflection-plane
           invariance, symbolically and by exhaustive finite Z_N checks.
@@ -44,13 +48,15 @@ Checks (all reproved here; no literature theorem is a derivation input):
           factor exp(B_0) is, per straddling link, a character sum with
           REAL NONNEGATIVE coefficients (Z_N: discrete Fourier; U(1):
           modified-Bessel coefficients certified by the positive-term
-          power series; SU(N): direct representation-ring expansion in
-          tensor powers of the fundamental plus antifundamental), hence a
-          positive (Gram) kernel.  This is the "norm-square" hypothesis of
-          the gauge-half note instantiated on the Wilson plane.
+          power series).  For SU(N), the source note carries the all-order
+          representation-ring proof; this runner checks its universal
+          normalization identity, exact SU(3) fusion recurrence through
+          order eight, and finite positive-kernel restrictions.  These are
+          direct checks of the Wilson norm-square structure, not an import
+          from the contextual gauge-half note.
   Part C  Integrated three-factor RP Gram is PSD for A_+^(2) observables:
           G_ij = (1/Z) sum_cfg exp(B) conj(F_i(theta cfg)) F_j(cfg) over
-          a basis of plaquette / two-link observables on the positive
+          a degree-at-most-two link-character/two-link basis on the positive
           half.  The Z_N checks exhaust the finite Haar space while evaluating
           transcendental weights in floating point; the U(1)
           angular-grid check is numerical quadrature only, with the
@@ -59,8 +65,9 @@ Checks (all reproved here; no literature theorem is a derivation input):
   Part D  Manifest factorization  G = W diag(kappa) W^dag  with all
           kappa >= 0 (the plane-kernel spectrum): the explicit
           Osterwalder-Seiler Gram = A^dag A form making PSD manifest.
-          This is the abstract (G3) sesquilinear-form structure of the
-          gauge-half note, instantiated on the Wilson boundary data.
+          This has the same algebraic shape as the contextual gauge-half
+          construction, but is computed directly from the Wilson boundary
+          data here.
   Part E  SU(2) numeric sample (Haar Monte Carlo): the same link-reflection
           Gram for a degree<=2 SU(2) observable basis is PSD within MC
           error, evidence that the link-reflection structure carries to
@@ -425,10 +432,10 @@ def main() -> int:
     print("=" * 88)
     print("Audit companion for the Wilson-plaquette temporal-gauge RP bridge")
     print("AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05")
-    print("Reprove: B_-=Theta B_+, plane norm-square factorization, integrated")
+    print("Check: B_-=Theta B_+, plane norm-square factorization, integrated")
     print("three-factor RP Gram PSD for A_+^(2) observables")
     print("(Z_N exhaustive finite-Haar, U(1) Bessel-certified,")
-    print(" SU(N) representation-ring route,")
+    print(" SU(N) source proof with normalization/SU(3) gates,")
     print(" SU(2)/SU(3) deterministic or Monte Carlo cross-checks).")
     print("=" * 88)
 
@@ -563,10 +570,34 @@ def main() -> int:
         for n in range(10)
     ]
     check(
-        "(B7) SU(N) Wilson exponential-series scalar weights are nonnegative for beta>=0",
+        "(B7) SU(N) Wilson exponential-series scalar weights are nonnegative for beta_Wilson>=0",
         min(scalar_weights) >= 0.0,
-        detail="weights=(beta/(2N))^n/n!, N=2..8, n=0..9",
+        detail="weights=(beta_Wilson/(2N))^n/n!, N=2..8, n=0..9",
     )
+
+    # (B8) The standard Wilson substitution is exact term by term:
+    # (beta/(2N))^n (chi_F+chi_Fbar)^n/n! equals
+    # (beta/N)^n (Re chi_F)^n/n! when chi_F+chi_Fbar=2 Re chi_F.
+    if HAVE_SYMPY:
+        beta_w_sym, N_w_sym, x_sym = symbols(
+            "beta_w N_w x", nonnegative=True
+        )
+        normalization_terms = [
+            simplify(
+                (beta_w_sym / (2 * N_w_sym)) ** n
+                * (2 * x_sym) ** n
+                / sympy.factorial(n)
+                - (beta_w_sym / N_w_sym) ** n
+                * x_sym ** n
+                / sympy.factorial(n)
+            )
+            for n in range(10)
+        ]
+        check(
+            "(B8) alpha=beta_Wilson/N character-series normalization is exact (sympy)",
+            all(term == 0 for term in normalization_terms),
+            detail="orders n=0..9 after chi_F+chi_Fbar=2 Re chi_F",
+        )
 
     # -------------------------------------------------------------------
     section("Part C: integrated three-factor RP Gram PSD for A_+^(2) observables")
@@ -687,7 +718,7 @@ def main() -> int:
     )
     print(f"     SU(2) eigenvalues: {np.round(ev_su2, 5)}")
     print("     (numeric sample only; exhaustive finite-Haar checks above are Z_N,")
-    print("      with U(1) and SU(N) plane positivity certified analytically)")
+    print("      with U(1) certified here and SU(N) certified in the source proof)")
 
     # -------------------------------------------------------------------
     section("Part F: SU(3) representation-ring certificate and kernel controls")
@@ -753,10 +784,11 @@ def main() -> int:
     # -------------------------------------------------------------------
     section("Summary")
     # -------------------------------------------------------------------
-    print("  Reproved from primitives:")
+    print("  Checked from primitives:")
     print("   A  reflection symmetry  B_- = Theta B_+  and B_0 plane invariance")
     print("   B  plane Boltzmann weight = positive (norm-square) character kernel")
-    print("      (Z_N: DFT; U(1): Bessel series; SU(N): representation ring)")
+    print("      (Z_N: DFT; U(1): Bessel series; SU(N): source proof with")
+    print("       exact normalization and finite SU(3) representation-ring gates here)")
     print("   C  integrated three-factor reflected Gram PSD for A_+^(2) observables")
     print("      (Z_N exhaustive finite-Haar; U(1) quadrature; wrong-reflection control)")
     print("   D  manifest G = W diag(kappa) W^dag with kappa >= 0 (OS Gram = A^dag A)")

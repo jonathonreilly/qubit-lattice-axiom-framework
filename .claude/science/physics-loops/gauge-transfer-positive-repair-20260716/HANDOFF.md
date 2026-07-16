@@ -27,26 +27,42 @@ Current block-02 implementation:
 
 Verification:
 
-- final cache: `23 PASS / 0 FAIL`, `80.56s`;
+- final cache: `24 PASS / 0 FAIL`, `80.11s`;
 - runner/cache SHA:
-  `67bd9ae2dd364f6a3b8b7574c5b4f5c8652da0729902ba81cd592724e647c2c5`;
+  `bd771dc30e0f5642a4755d623f11cfc36c74b574afc1c6670db2a2a1b6b80eb6`;
 - independent `SU(2)` through `SU(5)` real-Gram/Schur reconstruction, maximum
   error `8.882e-16`;
+- independent arbitrary-bounded-observable factorization on random
+  `SU(2)` through `SU(5)` restrictions, maximum error `1.778e-15`;
+- independent two-spatial-direction `SU(3)` slice check with genuine spatial
+  plaquettes: exact plane-swap and exponential-factorization agreement to
+  floating precision;
 - review-loop mathematics, runner independence, and governance/scope lanes:
-  `PASS` after narrow fixes;
+  mathematics and runner independence `PASS`; governance/scope requested
+  final attribution/pack/pipeline synchronization now applied and awaiting
+  fix-only rereview;
 - deep-block normalization clarification passed runner fix-only review: legacy
   diagnostic `beta` variables are effective plane `alpha`, while standard
   Wilson `alpha=beta_Wilson/N`;
+- exact symbolic B8 checks
+  `(beta_Wilson/(2N))^n (chi_F+chi_Fbar)^n/n!`
+  against
+  `(beta_Wilson/N)^n (Re chi_F)^n/n!`
+  through `n=0..9`; the source proof carries the all-order identity;
 - deep-block evidence-taxonomy clarification passed runner fix-only review:
   `Z_N` is exhaustive finite-Haar enumeration with floating transcendental
   evaluation, while exact labels are reserved for analytic/symbolic/integer
   identities;
+- runner attribution now distinguishes the source's all-order `SU(N)` theorem
+  from finite runner gates and treats the older gauge-half note as
+  non-load-bearing context;
 - sibling pin runners pass.
 - disposable audit compatibility pipeline completed;
 - strict audit lint: zero errors;
 - generated target: dependency-free, critical, ready, `unaudited`, with 784
   descendants;
-- every generated authority output was restored or deleted.
+- every generated authority output was restored or deleted. This compatibility
+  pass was rerun after the B8, attribution, and spatial-scope refinements.
 
 Block 02 is open for review as
 [PR 5405](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5405).
@@ -67,7 +83,7 @@ If this worker must be resumed immediately:
 
 ```bash
 cd /private/tmp/physics-loop-gauge-transfer-positive-repair-20260716
-codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 4h53m --target best-honest-status"
+codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 4h27m --target best-honest-status"
 ```
 
 Read `STATE.yaml`, `HANDOFF.md`, and `TRACE_GATE.md`. Do not run `audit-loop`,

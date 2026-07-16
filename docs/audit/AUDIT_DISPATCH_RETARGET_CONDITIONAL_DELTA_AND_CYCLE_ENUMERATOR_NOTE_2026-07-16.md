@@ -32,15 +32,13 @@ review-loop landing only.
    anti-gaming choice. Measured consequence: the publication tables cite 571
    non-retained-grade rows (260 critical, of which 243 are unaudited); 561 of
    the 571 sit in the pending queue at positions 4 through 1,573, competing
-   with ~2,420 uncited pending rows. At the measured application rate
-   (~28 applied verdicts/day: 476 applied verdicts over the 17 days since the
-   2026-06-29 reset, from
-   [`effective_status_summary.json`](data/effective_status_summary.json),
-   measured 2026-07-16), the static current-order bound on clearing the gap
-   cohort is ≈56 days, versus ≈20 days for a hypothetical pure-lane order and
-   ≈40 days under a 1:1 interleave — static lower bounds only; readiness and
-   re-queue dynamics are exactly what the shadow simulation below is for. No
-   stronger duration claim is made here.
+   with ~2,420 uncited pending rows. No throughput rate or time-to-clear
+   figure is asserted here: the ledger's 476 applied-status rows are a
+   surviving stock, not a post-reset flow (only 93 carry an audit date on or
+   after 2026-06-29), and queue positions are selection-order facts, not
+   duration estimates. Timing projections are exactly what the shadow
+   simulation below exists to produce, under explicit selection and
+   readiness assumptions.
 2. **Conditional re-queue churn is real, and partially guarded already.**
    38.98% of verdict commits since 2026-07-08 are `audited_conditional`
    (313 of 803, by commit-subject count). These rows re-enter the pending
@@ -85,12 +83,14 @@ review-loop landing only.
   `unresolved: true` flag rather than dropped. Generated, pipeline-owned,
   never shipped by PRs.
 - [`compute_audit_queue.py`](scripts/compute_audit_queue.py) additionally
-  emits `docs/audit/data/audit_publication_lane.json`: the intersection of
-  the pending queue with `publication_gap.json` ∪ current cycle members,
-  ordered by (criticality rank, readiness, load-bearing score) — criticality
-  and readiness stay ahead of every topology signal, matching the main
-  queue's soundness ordering. **The existing `audit_queue.json` ordering is
-  byte-unchanged in this phase.**
+  emits `docs/audit/data/audit_publication_lane.json` (a derived, generated
+  file): the intersection of the pending queue with `publication_gap.json`
+  ∪ the canonical primary cycle-break-target side list (NOT all cycle
+  members — using every cycle member would silently broaden the existing
+  one-target-per-cycle policy), each entry validated against the tracked
+  manifest below, ordered by the FULL main-queue key (criticality rank,
+  readiness, transitive-descendant reach, load-bearing score). **The
+  existing `audit_queue.json` ordering is byte-unchanged in this phase.**
 - Nightly shadow report (a section appended to the front-door status
   snapshot): lane size; overlap with the topological queue's top segment;
   the hypothetical next-24h dispatch set under interleave vs actual;
@@ -105,21 +105,33 @@ review-loop landing only.
   remains flagship-blind.
 - Publication-table membership DOES become a dispatch-priority signal under
   the interleave — filtering is prioritization. The mitigation is
-  governance, not denial: lane eligibility binds to a **frozen publication
-  manifest** — the cited-row set at a named commit, recorded in the lane
-  file. Membership changes reach the manifest only through review-loop-landed
-  publication-table edits (already the only channel), appear as named
-  adds/removals in the nightly shadow report, and a newly added row becomes
-  lane-eligible only after appearing in the report at least once with no
-  reviewer/owner objection — an explicit, visible surface against citing
-  one's own note into priority.
+  governance, not denial: lane eligibility binds to a **tracked, reviewed
+  manifest sidecar** `docs/audit/data/publication_lane_manifest.json`
+  (schema: `frozen_commit`; `admitted` claim ids; `pending` adds/removals
+  each with its first-shadow-report date; `activation_report` reference).
+  The manifest is a controlled data file in the same review-landable class
+  as dispatcher sidecars — NOT a derived queue cache, so membership,
+  objection windows, and activation state survive fresh clones and nightly
+  regeneration. The generated lane file is derived from and validated
+  against it. Membership changes reach the manifest only through
+  review-loop-landed edits, appear as named adds/removals in the nightly
+  shadow report, and a newly added row becomes lane-eligible only after
+  appearing in at least one report with no reviewer/owner objection — an
+  explicit, visible surface against citing one's own note into priority.
+  Cycle-derived entries (from the primary break-target side list) enter
+  through the same manifest and the same delay.
 
 ### 2c. Cutover (owner-gated)
 
-- Flag `publication_lane_interleave` (default off) in the batch orchestrator:
-  when on, dispatch alternates 1:1 between the lane and the topological
-  queue, de-duplicated, lane-first on ties; the ratio is an
-  orchestrator-config constant, owner-changeable.
+- Flag `publication_lane_interleave` (default off): when on, dispatch
+  interleaves lane and topological rows ONLY within equal
+  (criticality rank, readiness) bands — publication membership can reorder
+  rows inside a band but can never lift a row above a higher criticality
+  band or above a ready row from a blocked one. Inside a band, both streams
+  retain transitive-descendant reach → load-bearing score as sub-keys;
+  lane-first on exact ties; blocked (`ready: false`) rows are excluded from
+  both streams before the merge. The interleave ratio within bands is an
+  owner-changeable config constant.
 - Cutover evidence: ≥5 nightly shadow reports; owner inspects lane
   composition, membership churn, displacement, and starvation (any critical
   topological row deferred beyond a stated bound under simulation).
@@ -143,10 +155,11 @@ scattered today:
   freshness keys only on runner-source SHA); packet/prompt/gate policy
   versions; premise-registry epoch.
 - **No versioned snapshot schema:** legacy snapshots with a present-but-
-  incomplete field set are indistinguishable from complete ones (measured:
-  all 68 rows in the eligible set carry `dep_effective_status`, but 3 lack
-  type/scope/axiom baselines and 19 of the 20 with current helper runners
-  lack `helper_runner_hashes`).
+  incomplete field set are indistinguishable from complete ones. Measured
+  on the owner-ruled eligible set — 54 rows: 46 `audited_conditional` plus
+  8 non-archived `audited_failed` — all carry `dep_effective_status`, but 3
+  lack dependency type/scope/axiom baselines, and of the 13 with current
+  helper runners, 12 lack `helper_runner_hashes`.
 - **Targeting-stream union:** policy-driven targeting outputs (e.g.
   `no_go_index_growth_targets.json`) are not consumed by the ordinary
   dispatcher sidecar path.
@@ -160,18 +173,24 @@ scattered today:
   delta-liveness from a shard's snapshot + the current pipeline state and
   returns the changed-channel list.
 - The orchestrator guard and the queue both call it: the queue renders a
-  visible `parked-awaiting-blocker-change` bucket (rows in the owner-ruled
+  visible parked-awaiting-blocker-change bucket (rows in the owner-ruled
   pending set — `audited_conditional` and non-archived `audited_failed` —
   whose fingerprint shows no movement), with per-row blocking-channel lists;
   parking recomputes every pipeline run and un-parks automatically on any
   channel change. Nothing is hidden or dropped.
-- **Fail-open on schema incompleteness:** a snapshot that is absent, lacks
-  the schema-version marker, or is missing any required baseline for its
-  version stays dispatch-open (with a visible migration counter and reason),
-  and its next verdict stamps a complete v1 snapshot. Fail-open is correct
-  here: the cost is bounded duplicate review effort; fail-closed parking on
-  an invisible channel would silently strand a stale authority. Malformed
-  snapshots WRITTEN under v1 fail loudly.
+- **Version-by-version validation matrix (one unambiguous rule per case):**
+  (i) snapshot absent or carrying no schema-version marker (all legacy
+  rows) → dispatch-open with a visible migration counter and reason; its
+  next verdict stamps a complete v1 snapshot. (ii) snapshot marked v1 but
+  incomplete or structurally invalid → loud pipeline failure (a v1 writer
+  that omits a required baseline is a bug, never a silent fail-open).
+  Fail-open for the legacy branch is correct: the cost is bounded duplicate
+  review effort, while fail-closed parking on an invisible channel would
+  silently strand a stale authority. The matrix is regression-tested per
+  version and per missing-field case.
+- **Snapshot projection, defined:** the fingerprint always reads the LATEST
+  APPLICABLE ARCHIVED verdict snapshot (`previous_audits[-1]`, matching the
+  existing guard's projection), never a live mid-edit snapshot.
 - All canonical targeting streams (dispatcher sidecars, invalidation
   reasons, no-go index-growth targets, `--retarget-conditionals`) union into
   dispatch-liveness ahead of the fingerprint; the fingerprint can only park,
@@ -186,7 +205,7 @@ scattered today:
 
 ### 3c. Shadow phase and cutover (owner-gated)
 
-- Shadow: the queue emits per-row `would-park` reporting plus the summary
+- Shadow: the queue emits per-row would-park reporting plus the summary
   count; dispatch unchanged. Deliverables before any cutover: (i) measured
   duplicate-unchanged-dispatch counts since the existing guard landed;
   (ii) channel-mutation tests — for EVERY fingerprint channel, a test that
@@ -196,6 +215,22 @@ scattered today:
   until that channel is added and versioned.
 - Flag `conditional_delta_gate` (default off): when on, parked rows are not
   offered for dispatch (explicit targeting signals still override).
+- **Consumer coverage (both flags):** dispatch selection has more than one
+  consumer today — the documented top-of-queue driver
+  `scripts/codex_audit_runner.py` (loads and slices `audit_queue.json`,
+  ready-only by default, skips live conditional/failed rows outside an
+  explicit re-audit role) and the batch orchestrator
+  [`orchestrate_audit_batch.py`](scripts/orchestrate_audit_batch.py)
+  (explicit lane/claim lists; sorted-set iteration; invokes the existing
+  conditional guard on its own path). A cutover that flips only one consumer
+  is not a cutover. Implementation must either centralize top-of-queue
+  selection and audit-role classification in one shared routine both
+  consumers call, or update every named consumer, with end-to-end tests
+  through BOTH command paths covering explicit-target override, readiness
+  precedence, and the fingerprint. Fingerprint-open nonterminal rows must be
+  routed through a real re-audit dispatch role (so the promised
+  v1-stamping "next verdict" can actually occur), not left in a role no
+  consumer dispatches.
 
 ## 4. Cycle-domain unification
 
@@ -210,7 +245,9 @@ scattered today:
   domain. Generated surfaces (front door, inventory, queue cycle-break side
   list, effective-status summary) each state their domain explicitly; the
   front door reports both labeled counts. The pipeline gains the invariant:
-  same-domain counts agree across all consumers (mismatch fails the run).
+  same-domain results agree across all consumers by NORMALIZED CYCLE
+  SIGNATURE (sorted canonical node lists), not by count alone (mismatch
+  fails the run).
   The DFS-archaeology disclosure (not a canonical simple-cycle enumeration)
   is carried on every surface that reports a count.
 - The inventory additionally reports strongly-connected-component membership
@@ -231,8 +268,10 @@ scattered today:
    value or commit) that makes the shared walk authoritative. Cycle-break
    target lists may change at this point — that is a dispatch-surface
    change and is why the switch is owner-logged.
-3. **Deletion + invariant:** only after the switch, the inline copies are
-   deleted and the same-domain equality invariant is enforced in the
+3. **Rollback soak, then deletion + invariant:** the legacy copies remain
+   in place (unused but restorable by reverting the switch) for a stated
+   soak window after the switch; only after a clean soak are the inline
+   copies deleted and the same-domain signature invariant enforced in the
    pipeline.
 
 ## 5. Explicitly out of scope (named follow-ups)
@@ -256,7 +295,12 @@ including any ratio or threshold); `evidence` (artifact paths and the commit
 hash they were produced at); `approval_source`; `decision`; and
 `rollback_condition`. This log records decisions; it is a historical record
 in the manner of the axiom-policy approval log and carries no premise or
-interpretive weight of its own.
+interpretive weight of its own. At implementation time, every enabled flag
+or config value must bind mechanically to an owner-ratified entry on an
+authoritative config surface (Class E per the document-authority policy);
+this Class D note's log is the decision record, never the machine authority.
+Implementation must also verify the generic Class D fence: a Class D
+proposal note must not chain-satisfy any citation-graph dependency edge.
 
 - (none yet — note proposed 2026-07-16; shadow-mode implementation may land
   after this note passes review-loop; no cutover switch may be flipped

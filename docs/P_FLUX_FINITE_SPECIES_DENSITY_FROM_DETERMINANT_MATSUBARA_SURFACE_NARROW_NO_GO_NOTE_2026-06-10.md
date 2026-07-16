@@ -314,10 +314,10 @@ inputs about either branch:
 10. [`FLAVOR_LOGDET_FACTOR_4B_JACOBI_DERIVATIVE_NARROW_THEOREM_NOTE_2026-06-04.md`](FLAVOR_LOGDET_FACTOR_4B_JACOBI_DERIVATIVE_NARROW_THEOREM_NOTE_2026-06-04.md)
     — retained. License used: its hypothesis clause ("invertible on
     an open neighborhood") as the tested clause (check 13).
-11. [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
-    — retained_pending_chain. License used: L1/L2 hypothesis clauses
-    ("For invertible real antisymmetric D") as the tested clause
-    (check 13).
+11. [Real-diagonal source det-positivity lemma](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
+    — source note. License used: only the L1/L2 hypothesis clauses
+    ("For invertible real antisymmetric D") as the tested clause (check 13).
+    No determinant-only or log-readout license is consumed.
 12. [`HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md`](HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md)
     — retained. License used: its fixed-carrier scope
     (`dim H_taste = 16`) as the tested clause (check 13).

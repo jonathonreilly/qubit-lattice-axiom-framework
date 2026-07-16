@@ -44,8 +44,8 @@ generator family, and zero-source baseline normalization are explicit
 conventions/checks, not new axioms).
 **Boundary (declared bridge premise, T1-d):** *the scalar record readout `W`
 of the source-deformed block is a continuous function of the Berezin amplitude
-`Z = det(D+J)` alone, defined on all of `R_{>0}` (the lemma's L3 continuity
-hypothesis, not just the attainable block amplitudes), and independent
+`Z = det(D+J)` alone, defined on all of `R_{>0}` (not just the attainable
+block amplitudes), and independent
 disjoint source blocks register as disjoint records.* The axiom memo
 explicitly excludes source/action and physical-observable identification from
 Record content, so this identification is a premise of this note, declared and
@@ -209,7 +209,8 @@ importing the usual QFT language about effective actions and order parameters?
 
 On the finite real staggered source surface consumed by this note, Record/P1
 finite scalar additivity, the declared readout-identification Boundary, and
-the lemma's Cauchy-uniqueness fact select the `log|det(D+J)|` generator
+the elementary continuous Cauchy classification select the
+`log|det(D+J)|` generator
 without importing a separate P2 phase-blindness premise. The
 positive-source-cone bridge proves that the relevant source branch has
 `det(D+J) in R_{>0}`, so the possible distinction between `log det`,
@@ -267,16 +268,19 @@ axiom citation:
   `I(R_1 ⊔ R_2) = I(R_1) + I(R_2)` becomes generator additivity
   `W[J_1 ⊕ J_2] = W[J_1] + W[J_2]`, and where the functional equation —
   justified pointwise only on the attainable block amplitudes — acquires its
-  full `R_{>0} × R_{>0}` Cauchy domain (the L3 continuity hypothesis). The
+  full `R_{>0} × R_{>0}` Cauchy domain. The
   axiom memo explicitly excludes source/action and physical-observable
   identification from Record content, so this input is **not derivable** from
   `minimal_axioms`; it is declared and consumed as the single bridge premise
   of this note.
-- **T1-e (lemma fact L3: Cauchy uniqueness on `R_{>0}`).** By L3 of the
-  det-positivity lemma, with continuity on `R_{>0}` the solutions of the
+- **T1-e (elementary Cauchy classification on `R_{>0}`).** Once T1-d has
+  separately supplied determinant-only dependence, source-block-to-record
+  composition, and continuity on `R_{>0}`, the solutions of the
   multiplicative-to-additive functional equation
   `W(r_1 r_2) = W(r_1) + W(r_2)` are exactly the one-parameter family
   `{W_c(r) = c log r : c in R}`; `c = 1` is the conventional representative.
+  This classification is elementary mathematics and is not consumed from the
+  L1/L2 det-positivity lemma.
 
 **Conclusion (chain a→e).** Given T1-a..T1-e, the additive continuous scalar
 generator family on the consumed branch is exactly
@@ -523,10 +527,11 @@ phase premise on the consumed finite source surface:
   verifies the exact-algebra closure for the selected candidate generator on
   the finite staggered source block.
 - The det-positivity lemma
-  [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
+  [at the stable legacy path](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
   proves that this finite real source branch has `det(D+J) in R_{>0}` on
   the positive source cone and local derivative patch. (That lemma is the
-  self-contained fact this note consumes; the fuller application is the plain
+  self-contained L1/L2 fact this note consumes; it supplies no readout law or
+  source-block-to-record bridge. The fuller application is the plain
   reference `OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md`,
   cited non-load-bearing to avoid a parent↔application audit-graph cycle.)
 - Therefore the old P2 distinction between phase-blind and phase-sensitive
@@ -574,8 +579,8 @@ framing, or the older P2-conditional framing.
 The load-bearing P2 repair is the det-positivity lemma (the self-contained
 `det(D+J) in R_{>0}` fact this note consumes):
 
-- Lemma (load-bearing):
-  [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
+- Lemma (load-bearing for L1/L2 determinant positivity only):
+  [real-diagonal source det-positivity lemma](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
   and its runner
   [`scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py`](../scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py).
 - Application (plain reference, **not** a load-bearing dependency, to avoid a
@@ -595,10 +600,11 @@ Part 8 **recomputes** them on the actual runner blocks — L1 cone positivity
 mechanism (`B = S^{-1/2} D S^{-1/2}` real antisymmetric and
 `det(I+B) = prod(1+lambda_k^2) >= 1`), the L2 Neumann hypothesis
 (`||D^{-1}J|| < 1` for every source magnitude this runner uses), and L2 patch
-positivity for signed sources inside the Neumann patch. The Cauchy-uniqueness
-fact L3 remains cited from the lemma; its continuity-on-`R_{>0}` hypothesis is
-part of the declared readout-identification Boundary (T1-d), matching the
-lemma's L3 hypothesis exactly.
+positivity for signed sources inside the Neumann patch. No L3 readout claim is
+consumed from the lemma. Determinant-only dependence, source-block-to-record
+composition, and the full continuity domain are supplied only by the declared
+readout-identification Boundary (T1-d); the resulting Cauchy classification is
+elementary mathematics.
 
 ### Historical 2026-05-09 candidate checks
 
@@ -901,13 +907,14 @@ upstreams named above and remains comparator-only here.
   (a) the readout-identification bridge premise — previously consumed
   silently inside the Record citation — is declared as the single explicit
   Boundary (header and T1-d): `W` is a continuous function of
-  `Z = det(D+J)` alone on all of `R_{>0}` (the L3 Cauchy-domain content
-  included), and disjoint independent source blocks register as disjoint
+  `Z = det(D+J)` alone on all of `R_{>0}`, and disjoint independent source
+  blocks register as disjoint
   records; the axiom memo excludes this identification from Record content,
   so it is a premise, not a consequence;
   (b) Theorem 1 restated as the five-input chain T1-a..T1-e (computed
   Berezin factorization; runner-recomputed lemma facts L1/L2; Record
-  additivity as axiom premise; the declared Boundary; lemma fact L3);
+  additivity as axiom premise; the declared Boundary; elementary continuous
+  Cauchy classification);
   (c) the uniqueness overclaim fixed: the selected object is the generator
   family `{c log det(D+J) : c in R}` with `c = 1` conventional (claim
   scope, headline, c-equivariance section);

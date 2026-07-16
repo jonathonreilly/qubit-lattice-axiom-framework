@@ -21,8 +21,9 @@ from:
 1. finite scalar Record additivity for already supplied disjoint records;
 2. determinant multiplicativity on direct sums;
 3. continuity of a scalar source readout on finite positive source data; and
-4. the real-positive determinant branch supplied by
-   [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md).
+4. the L1/L2 real-positive determinant branch supplied by the
+   [real-diagonal source det-positivity lemma](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md),
+   which expressly supplies no determinant-only or source-to-record bridge.
 
 The axiom input is
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md): Record supplies

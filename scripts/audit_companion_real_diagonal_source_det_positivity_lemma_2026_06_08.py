@@ -1,39 +1,34 @@
 #!/usr/bin/env python3
-"""Self-contained lemma: a real-diagonal source on the positive cone added to a real antisymmetric
-operator has a strictly positive real determinant (no phase), and Record additivity plus an explicit
-continuity/regularity convention selects the logarithmic readout on R_{>0}.
+"""L1/L2 determinant-positivity checks plus an L3 readout-bridge firewall.
 
-WHY THIS LEMMA EXISTS (audit-graph). The observable-principle parent
-(OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE) needs exactly the fact "det(D+J) in R_{>0} on the positive
-source cone" to make its old P2 (phase-blind vs phase-sensitive) distinction vacuous. That fact was
-cited from OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION (2026-06-06), creating a
-load-bearing 2-cycle parent <-> application (both unaudited), which stalled ~722 downstream rows.
-This note EXTRACTS the self-contained fact the parent actually needs -- it is linear algebra plus
-Record additivity with explicit regularity/baseline conventions, consuming NONE of the parent. The
-parent can then depend on this lemma (one-directional), and the application note keeps depending on
-the parent, breaking the cycle.
+Bounded theorem checked here:
 
-CONTENT (exact / numpy):
-  L1. For D real antisymmetric and S real positive-diagonal, det(S + D) > 0 (real, no phase):
-      S + D = S^(1/2)(I + B)S^(1/2) with B = S^(-1/2) D S^(-1/2) real antisymmetric; eig(B) in {0, +-i*lam},
-      so det(I+B) = prod_k (1 + lam_k^2) >= 1 > 0, and det S > 0.
-  L2. Sign-constancy on a derivative patch: for invertible real antisymmetric D and real diagonal J
-      with ||D^{-1} J|| < 1, det(D + tJ) never crosses 0 on t in [0,1] (Neumann), so det(D+J) keeps the
-      sign of det D = prod lam_k^2 > 0 -> det(D+J) in R_{>0}.
-  L3. Record additivity plus explicit regularity selects the logarithm on R_{>0}: det is
-      multiplicative over disjoint blocks (det(A (+) B) = det A * det B); a continuous map
-      R_{>0}->R additive over this product (Record's finite scalar additivity for disjoint records)
-      is c*log (Cauchy on R_{>0}); c=1 is the convention.
+* L1: for finite real antisymmetric D and positive real diagonal S,
+  det(S + D) is strictly positive real.
+* L2: for invertible real antisymmetric D and real diagonal J satisfying
+  ||D^{-1}J|| < 1, det(D+tJ) stays positive for t in [0,1].
 
-No framework code; no PDG/fitted value. Record finite-scalar additivity is the only framework premise
-(the multiplicative->additive step); continuity on R_{>0} and c=1 are explicit bounded conventions;
-everything else is reproven linear algebra.
+The legacy claim ID contains ``and_log_readout``, but no log-readout theorem is
+claimed. The runner supplies two decisive guards against that scope drift:
+
+* an exact countermodel shows that continuity and direct-sum additivity do not
+  force a determinant-only readout; and
+* source-text checks require the theorem block to remain free of Record/readout
+  claims while the separate open boundary names both missing bridges.
+
+No framework code and no empirical/fitted/literature numerical input are used.
 """
 from __future__ import annotations
+
+from pathlib import Path
+
 import numpy as np
+
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md"
 
 
 def check(name: str, cond: bool, detail: str = "") -> bool:
@@ -46,72 +41,144 @@ def check(name: str, cond: bool, detail: str = "") -> bool:
     return bool(cond)
 
 
-def rand_antisym(n, rng):
-    A = rng.standard_normal((n, n))
-    return A - A.T
+def rand_antisym(n: int, rng: np.random.Generator) -> np.ndarray:
+    a = rng.standard_normal((n, n))
+    return a - a.T
 
 
 def main() -> int:
-    print("REAL-DIAGONAL-SOURCE DET-POSITIVITY + LOG READOUT LEMMA (self-contained)")
-    print("=" * 74)
+    print("REAL-DIAGONAL-SOURCE DETERMINANT POSITIVITY + READOUT-BRIDGE FIREWALL")
+    print("=" * 76)
     rng = np.random.default_rng(0)
 
-    # L1: det(S + D) > 0 for S positive diagonal, D real antisymmetric.
+    # L1: det(S + D) > 0 for S positive diagonal and D real antisymmetric.
     ok1 = True
     worst = np.inf
     for _ in range(400):
         n = int(rng.integers(2, 7))
-        D = rand_antisym(n, rng)
-        S = np.diag(rng.uniform(0.05, 3.0, size=n))
-        d = float(np.linalg.det(S + D))
-        worst = min(worst, d)
-        ok1 = ok1 and (d > 0) and (abs(np.imag(np.linalg.det((S + D).astype(complex)))) < 1e-9)
-    check("L1: det(S + D) > 0 (real, no phase) for positive-diagonal S + real antisymmetric D "
-          "(400 random cases; det(I+B)=prod(1+lam^2)>0)", ok1, f"min det over 400 cases = {worst:.4f} > 0")
+        dmat = rand_antisym(n, rng)
+        smat = np.diag(rng.uniform(0.05, 3.0, size=n))
+        determinant = float(np.linalg.det(smat + dmat))
+        worst = min(worst, determinant)
+        complex_det = np.linalg.det((smat + dmat).astype(complex))
+        ok1 = ok1 and determinant > 0 and abs(np.imag(complex_det)) < 1e-9
+    check(
+        "L1: det(S+D)>0 is real on positive-diagonal S + real antisymmetric D",
+        ok1,
+        f"400 deterministic-seed cases; minimum determinant={worst:.4f}",
+    )
 
-    # L1 structural: eig(B) are 0 or +-i*lam (purely imaginary), so 1+lam^2 factors are >=1.
-    B = rand_antisym(5, rng)
-    ev = np.linalg.eigvals(B)
-    check("L1-structure: a real antisymmetric matrix has purely imaginary spectrum (Re=0) -> "
-          "det(I+B)=prod(1+lam^2) >= 1", np.allclose(np.real(ev), 0, atol=1e-9),
-          f"max|Re eig(B)| = {np.max(np.abs(np.real(ev))):.1e}; det(I+B)={np.real(np.linalg.det(np.eye(5)+B)):.3f}")
+    # L1 structural mechanism on both odd and even dimensions.
+    structure_ok = True
+    details = []
+    for n in (5, 6):
+        bmat = rand_antisym(n, rng)
+        eigenvalues = np.linalg.eigvals(bmat)
+        real_parts_zero = np.allclose(np.real(eigenvalues), 0, atol=1e-9)
+        det_positive = float(np.linalg.det(np.eye(n) + bmat)) >= 1.0 - 1e-9
+        structure_ok = structure_ok and real_parts_zero and det_positive
+        details.append(
+            f"n={n}: max|Re eig|={np.max(np.abs(np.real(eigenvalues))):.1e}, "
+            f"det(I+B)={np.linalg.det(np.eye(n)+bmat):.6f}"
+        )
+    check(
+        "L1 mechanism: real antisymmetric spectrum is imaginary-paired and det(I+B)>=1",
+        structure_ok,
+        "; ".join(details),
+    )
 
-    # L2: Neumann sign-constancy on the derivative patch.
+    # L2: Neumann sign constancy on the derivative patch.
     ok2 = True
+    tested = 0
     for _ in range(200):
-        n = int(rng.integers(2, 6)) * 2  # even -> invertible antisymmetric generic
-        D = rand_antisym(n, rng)
-        if abs(np.linalg.det(D)) < 1e-6:
+        n = int(rng.integers(2, 6)) * 2
+        dmat = rand_antisym(n, rng)
+        if abs(np.linalg.det(dmat)) < 1e-6:
             continue
-        Dinv = np.linalg.inv(D)
-        J = np.diag(rng.standard_normal(n))
-        scale = 0.5 / (np.linalg.norm(Dinv) * np.linalg.norm(J) + 1e-12)  # ensure ||Dinv J|| < 1
-        J = scale * J
-        dets = [float(np.linalg.det(D + t * J)) for t in np.linspace(0, 1, 25)]
-        ok2 = ok2 and all(x > 0 for x in dets)  # det D = prod lam^2 > 0, stays positive
-    check("L2: with ||D^{-1}J|| < 1, det(D + tJ) keeps the positive sign of det D on t in [0,1] "
-          "(Neumann; no zero crossing) -> det(D+J) in R_{>0}", ok2, "200 random invertible patches")
+        jmat = np.diag(rng.standard_normal(n))
+        scale = 0.5 / (np.linalg.norm(np.linalg.inv(dmat) @ jmat) + 1e-12)
+        jmat = scale * jmat
+        neumann_norm = np.linalg.norm(np.linalg.inv(dmat) @ jmat)
+        determinants = [float(np.linalg.det(dmat + t * jmat)) for t in np.linspace(0, 1, 25)]
+        ok2 = ok2 and neumann_norm < 1 and all(value > 0 for value in determinants)
+        tested += 1
+    check(
+        "L2: ||D^{-1}J||<1 keeps det(D+tJ)>0 on t in [0,1]",
+        ok2 and tested > 0,
+        f"{tested} deterministic-seed invertible patches",
+    )
 
-    # L3: multiplicative over disjoint blocks -> Cauchy on R_{>0} -> log readout.
-    A = np.diag(rng.uniform(0.1, 2, 3)) + rand_antisym(3, rng) * 0  # positive-det block
-    Bk = np.diag(rng.uniform(0.1, 2, 4))
-    blk = np.block([[A, np.zeros((3, 4))], [np.zeros((4, 3)), Bk]])
-    mult = np.isclose(np.linalg.det(blk), np.linalg.det(A) * np.linalg.det(Bk))
-    # additive readout candidate W(x)=log x satisfies W(xy)=W(x)+W(y); check on the determinants
-    x, y = float(np.linalg.det(A)), float(np.linalg.det(Bk))
-    additive = np.isclose(np.log(x * y), np.log(x) + np.log(y))
-    check("L3: det is multiplicative over disjoint blocks; Record finite scalar additivity over disjoint "
-          "records + continuity on R_{>0} forces the readout to be c*log det (Cauchy), c=1 convention",
-          bool(mult) and bool(additive),
-          f"det(A(+)B)=det A*det B: {mult}; log(xy)=log x+log y: {additive}")
+    # Open-L3 firewall: determinant algebra remains true in the countermodel.
+    s1 = np.diag([4.0, 1.0])
+    s2 = np.diag([2.0, 2.0])
+    direct_sum = np.block([[s1, np.zeros((2, 2))], [np.zeros((2, 2)), s2]])
+    multiplicative = np.isclose(np.linalg.det(direct_sum), np.linalg.det(s1) * np.linalg.det(s2))
+    check(
+        "L3 firewall premise check: determinant remains multiplicative on direct sums",
+        bool(multiplicative),
+        f"det(S1 direct_sum S2)={np.linalg.det(direct_sum):.1f}",
+    )
+
+    # W_epsilon = log det + epsilon Tr is continuous and direct-sum additive,
+    # yet distinguishes equal-determinant blocks. Thus determinant-only readout
+    # cannot be inferred from determinant multiplicativity plus additivity.
+    epsilon = 0.25
+
+    def w_eps(matrix: np.ndarray) -> float:
+        return float(np.log(np.linalg.det(matrix)) + epsilon * np.trace(matrix))
+
+    additive = np.isclose(w_eps(direct_sum), w_eps(s1) + w_eps(s2))
+    same_det = np.isclose(np.linalg.det(s1), np.linalg.det(s2))
+    different_readout = not np.isclose(w_eps(s1), w_eps(s2))
+    check(
+        "L3 firewall countermodel: continuous block-additive readout need not be determinant-only",
+        bool(additive and same_det and different_readout),
+        (
+            f"det(S1)=det(S2)={np.linalg.det(s1):.1f}; "
+            f"Tr(S1)={np.trace(s1):.1f}, Tr(S2)={np.trace(s2):.1f}; "
+            f"W_eps(S1)={w_eps(s1):.6f}, W_eps(S2)={w_eps(s2):.6f}"
+        ),
+    )
+
+    note_text = NOTE.read_text(encoding="utf-8")
+    theorem_start = note_text.index("## Theorem statement: determinant positivity only")
+    boundary_start = note_text.index("## Open L3 boundary")
+    theorem_block = note_text[theorem_start:boundary_start]
+    theorem_scope_clean = all(
+        token not in theorem_block
+        for token in ("Record", "determinant-only readout", "source-block-to-disjoint-record", "c log det")
+    )
+    check(
+        "Scope guard: the bounded-theorem block contains only L1/L2 determinant positivity",
+        theorem_scope_clean and "complete bounded-theorem target" in theorem_block,
+        "Record/readout bridge vocabulary is confined to the separate open boundary",
+    )
+
+    required_boundary_strings = (
+        "conditional readout classification, not a theorem claim",
+        "determinant-only readout bridge",
+        "source-block-to-disjoint-record bridge",
+        "Only **if a separate future premise or theorem supplies both bridges**",
+        "Choosing `c = 1` is a",
+        "further normalization convention",
+        "Consumers must **not** cite this claim",
+    )
+    missing_boundary_strings = [text for text in required_boundary_strings if text not in note_text]
+    check(
+        "Scope guard: the note explicitly leaves both L3 bridges conditional/open",
+        not missing_boundary_strings,
+        (
+            "required determinant-only, source-to-record, and normalization firewalls are present"
+            if not missing_boundary_strings
+            else f"missing strings: {missing_boundary_strings}"
+        ),
+    )
 
     print(f"\nSCORECARD PASS={PASS} FAIL={FAIL}")
     print(
-        "VERDICT: a real-diagonal source on the positive cone added to a real antisymmetric operator has "
-        "a strictly positive real determinant (no phase), and Record additivity plus explicit continuity "
-        "on R_{>0} selects c*log det as the readout (c=1 convention). This is the self-contained fact the "
-        "observable-principle parent needs to make its P2 phase distinction vacuous -- it consumes none "
-        "of the parent. Audit lane sets the verdict."
+        "RESULT: L1/L2 determinant positivity checks pass. The exact countermodel and source-scope "
+        "guards prevent this runner or note from licensing a determinant-only readout, a "
+        "source-block-to-record bridge, or c log det. Independent audit lane owns status."
     )
     return 0 if FAIL == 0 else 1
 

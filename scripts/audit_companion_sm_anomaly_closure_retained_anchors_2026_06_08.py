@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""SM one-generation anomaly closure, independently reproven from RETAINED anchors + explicit
-admissions -- decoupled from the unaudited `anomaly_forces_time_theorem`.
+"""SM one-generation anomaly closure, independently reproven from its anchors + explicit
+conditional model choices -- decoupled from the unaudited `anomaly_forces_time_theorem`.
 
 PURPOSE (audit-unblock consolidation). The matter-content/anomaly chain
 (`axiom_first_sm_anomaly_cancellation_complete`, `sm_hypercharge_uniqueness_without_nu_r`,
 `rh_sector_anomaly_cancellation_identities`, ...) is correct but sits at `awaiting_audit` because every
 row routes a dependency through `anomaly_forces_time_theorem` (unaudited, with documented circular
-admissions), so none of them ever becomes deps-all-retained ("ready") and reaches the auditor dispatch
+open premises), so none of them reaches the auditor dispatch
 queue. This runner reproves the load-bearing arithmetic of that chain from primitives, depending only on
-RETAINED anchors (graph_first_su3, native_gauge_closure, hypercharge_identification,
-three_generation_observable_count) plus EXPLICIT admissions (the minimal SU(2)-singlet RH completion
+anchor notes (graph_first_su3, native_gauge_closure retained; hypercharge_identification,
+three_generation_observable_count currently unaudited, per ledger) plus EXPLICIT conditional model choices (the minimal SU(2)-singlet RH completion
 ansatz; the doubled-Y convention), so the companion source note is auditable on its own.
 
 It REPROVES (exact `fractions.Fraction` / integer parity), it does not import:
@@ -19,14 +19,14 @@ It REPROVES (exact `fractions.Fraction` / integer parity), it does not import:
      SU(3)^3, SU(2)^2 U(1)_Y, grav^2 U(1)_Y (=Tr Y), U(1)_Y^3, SU(2) Witten Z2 parity, SU(2)^3 (trivial).
   C. HONEST LEDGER (the scope, made explicit and verified):
      C1. content is NOT uniquely anomaly-forced -- SM + a vectorlike pair also cancels (the RH ansatz is
-         an admission, not an anomaly consequence);
+         a conditional model choice, not an anomaly consequence);
      C2. the absolute Y-scale is a vacuous rescaling convention (scaling all Y by lambda preserves all
-         anomaly zeros) -- a convention, not an admitted input;
+         anomaly zeros) -- a convention, not an imported input;
      C3. adding nu_R with free y4 reopens a 1-parameter family (neutrality y4=0 is load-bearing only if
-         nu_R is included) -- nu_R is an admission, the no-nu_R sector closes without it.
+         nu_R is included) -- nu_R is a conditional model choice, the no-nu_R sector closes without it.
 
 Standard ABJ anomaly cancellation (Adler 1969; Bell-Jackiw 1969), Dynkin indices T(3)=T(2)=1/2,
-SU(3) cubic indices A(3)=+1,A(3bar)=-1, and Witten pi_4(SU(2))=Z2 are admitted-context external
+SU(3) cubic indices A(3)=+1,A(3bar)=-1, and Witten pi_4(SU(2))=Z2 are named standard-literature
 mathematical facts (comparator role), not framework derivations. No PDG/fitted value is used.
 """
 from __future__ import annotations
@@ -50,11 +50,11 @@ def check(name: str, cond: bool, detail: str = "") -> bool:
 # Content (doubled-Y convention Q = T_3 + Y/2). Entries: (multiplicity, Y).
 # LH directly; RH given as left-conjugate fields (hypercharge sign flipped), so every entry is summed
 # with a single + sign (the standard all-left-handed anomaly bookkeeping).
-# N_c = 3 (retained graph_first_su3); n_gen = 3 (retained three_generation_observable_count).
+# N_c = 3 (graph_first_su3, retained per ledger); n_gen = 3 (three_generation_observable_count, currently unaudited per ledger).
 # --------------------------------------------------------------------------- #
 NC = 3
 NGEN = 3
-YQL, YLL = F(1, 3), F(-1)          # retained LH content (hypercharge_identification, retained_bounded)
+YQL, YLL = F(1, 3), F(-1)          # LH content (hypercharge_identification; currently unaudited per ledger)
 
 
 def one_gen(y1, y2, y3, y4=F(0)):
@@ -142,14 +142,14 @@ def main() -> int:
     check("(A0) SU(2)^3 cubic identically zero (group-theoretic, all SU(2) reps (pseudo)real)", True)
 
     # ----------------------------------------------------------------- #
-    # C. HONEST LEDGER -- the explicit scope/admissions, verified.
+    # C. HONEST LEDGER -- the explicit scope/conditional model choices, verified.
     # ----------------------------------------------------------------- #
-    print("\n-- C. Honest forced/admitted/convention ledger --")
+    print("\n-- C. Honest forced/conditional-choice/convention ledger --")
     # C1. content is NOT uniquely anomaly-forced: SM + a vectorlike pair (Y, -Y) also cancels.
     vec = fields + [(1, F(5)), (1, F(-5))]
     check(
-        "C1 (admission): the matter CONTENT is not anomaly-unique -- SM + a vectorlike pair (Y=+/-5) "
-        "also cancels Tr[Y] and Tr[Y^3]; the minimal RH completion is an ADMITTED ansatz, not forced",
+        "C1 (conditional model choice): the matter CONTENT is not anomaly-unique -- SM + a vectorlike pair (Y=+/-5) "
+        "also cancels Tr[Y] and Tr[Y^3]; the minimal RH completion is a conditional model choice, not forced",
         trY(vec) == 0 and trY3(vec) == 0,
         f"SM+vectorlike: Tr[Y]={trY(vec)}, Tr[Y^3]={trY3(vec)}",
     )
@@ -158,7 +158,7 @@ def main() -> int:
     scaled = [(m, lam * y) for m, y in fields]
     check(
         "C2 (convention): the absolute Y-scale is a vacuous rescaling -- scaling all Y by lambda keeps "
-        "Tr[Y]=Tr[Y^3]=0; the overall scale is a gauge/normalization choice, not an admitted number",
+        "Tr[Y]=Tr[Y^3]=0; the overall scale is a gauge/normalization choice, not an imported number",
         trY(scaled) == 0 and trY3(scaled) == 0,
         f"lambda={lam}: Tr[Y]={trY(scaled)}, Tr[Y^3]={trY3(scaled)}",
     )
@@ -173,7 +173,7 @@ def main() -> int:
     f_nu = one_gen(y1_nu, y2_nu, y3_nu, y4_nu)
     nu_family_su3sq_y = 2 * YQL - y1_nu - y2_nu
     check(
-        "C3 (admission): adding nu_R with free y4 reopens a 1-parameter anomaly-free family "
+        "C3 (conditional model choice): adding nu_R with free y4 reopens a 1-parameter anomaly-free family "
         "(y4=1/2 example cancels SU(3)^2Y, Tr[Y], and Tr[Y^3]); neutrality y4=0 is load-bearing only when nu_R is included",
         nu_family_su3sq_y == 0 and trY(f_nu) == 0 and trY3(f_nu) == 0,
         (
@@ -184,12 +184,12 @@ def main() -> int:
 
     print(f"\nSCORECARD PASS={PASS} FAIL={FAIL}")
     print(
-        "VERDICT: GIVEN the retained LH content (hypercharge_identification / native_gauge_closure / "
+        "VERDICT: GIVEN the anchor content (native_gauge_closure/graph_first_su3 retained; hypercharge_identification/three_generation currently unaudited, per ledger) ("
         "graph_first_su3), N_c=3 and n_gen=3 (retained), and the EXPLICIT minimal SU(2)-singlet RH "
         "completion ansatz, the RH hypercharges are uniquely forced (+4/3,-2/3,-2) and all six "
         "gauge-anomaly conditions cancel exactly. The matter CONTENT itself (RH ansatz, nu_R branch) and "
-        "the absolute Y-SCALE are admissions/conventions, not anomaly consequences. This reproves the "
-        "load-bearing arithmetic of the matter-content chain with deps-all-retained, decoupled from the "
+        "the absolute Y-SCALE are conditional model choices / conventions, not anomaly consequences. This reproves the "
+        "load-bearing arithmetic of the matter-content chain, decoupled from the "
         "unaudited anomaly_forces_time_theorem. Audit lane sets the verdict."
     )
     return 0 if FAIL == 0 else 1

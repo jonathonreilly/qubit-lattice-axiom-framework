@@ -288,5 +288,6 @@ python3 scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theor
 - [dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md)
 - [dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)
 
-Context only (no dependency edge):
+## Related context
+
 `dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16`.

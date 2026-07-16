@@ -157,18 +157,9 @@ not:
 python3 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py
 ```
 
-## Citations
+## Inputs and related results
 
-The load-bearing traceability requirement for this theorem is to link
-the repo-native authorities for `dW_e^H` from the current four-axiom framework
-baseline, the
-`H_e -> N_e packet` bridge, and the supplied finite transport functional. The
-runner imports the load-bearing ingredients from named theorem-side
-modules, each backed by a dedicated repo-native theorem note. The
-corresponding markdown links are registered as one-hop dependency
-edges below so the citation graph can trace the chain.
-
-Runner-side carriers:
+Runner inputs:
 
 - `scripts/dm_leptogenesis_exact_common.py` — supplies `exact_package`
   and the source-side normalisation used by the runner.
@@ -179,7 +170,7 @@ Runner-side carriers:
   — supplies the PMNS-projector interface used by §2 to convert
   `H_e` into the `N_e` packet `|U_PMNS|^2 = |U_e|^2^T`.
 
-Theorem-side authorities (load-bearing one-hop deps):
+Related results:
 
 - [DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md](DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md)
   — supplies the source-side `exact_package` with `gamma`, `E1`, `E2`,
@@ -199,17 +190,14 @@ Theorem-side authorities (load-bearing one-hop deps):
   `dW_e^H -> H_e` reconstruction step in
   §"Conditional finite-fixture reduction" §1.
 - [DM_LEPTOGENESIS_NE_ACTIVE_COLUMN_AXIOM_BOUNDARY_NOTE_2026-04-16.md](DM_LEPTOGENESIS_NE_ACTIVE_COLUMN_AXIOM_BOUNDARY_NOTE_2026-04-16.md)
-  — axiom-side boundary on the `N_e` active-column problem this note
-  reduces.
-Context only (no dependency edge):
+  — finite four-summary ambiguity diagnostic for the `N_e` active-column
+  calculation.
+
+## Related context
+
 `DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md`.
 Its runner imports `hermitian_linear_responses` from the present runner as a
 sign-orientation companion calculation.
 
-The dependency edges record the conditional finite-fixture reduction and its
-explicit remaining gap: deriving `dW_e^H` on `E_e` from the current framework
-baseline. They do not derive `dW_e^H` itself or promote this note.
-
-Until each linked authority is ratified by the independent audit lane,
-the registered edges make the chain traceable but do not promote this
-note.
+None of these inputs derives `dW_e^H` on `E_e` from the current framework
+baseline; that remains outside this finite-fixture calculation.

@@ -165,7 +165,7 @@ def main() -> int:
     # ----------------------------------------------------------------- #
     # A. The redundant broadcast EXISTS but is FINE-TUNED (coupling form AND time).
     # ----------------------------------------------------------------- #
-    print("\n-- A. The R_delta=N broadcast exists only at a fine-tuned coupling form AND time --")
+    print("\n-- A. The R_delta=N broadcast appears fine-tuned in coupling form AND time (bounded empirical, not measure-zero) --")
     N = 4
     n = N + 1
     env = list(range(1, n))

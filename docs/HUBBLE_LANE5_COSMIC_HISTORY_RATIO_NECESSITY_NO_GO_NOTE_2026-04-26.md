@@ -155,8 +155,10 @@ No single class is sufficient on its own:
 - `(C2)` or `(C3)` alone fixes `L` but leaves the scale-route side open,
   so `H_0` and `R_Lambda` remain non-numerical.
 
-Hence Lane 5 closure requires premises from at least two of the three
-classes — specifically `(C1)` and one of `{(C2), (C3)}`. `QED`
+Hence Lane 5 closure among the currently reviewed routes requires premises from
+two of the three classes — the `(C1)` scale route and one of `{(C2), (C3)}`;
+this is over the reviewed-route taxonomy, not a proof that no other route exists.
+`QED`
 
 The routes reviewed in the Hubble-H0 workstream all map into this taxonomy:
 
@@ -171,8 +173,8 @@ The routes reviewed in the Hubble-H0 workstream all map into this taxonomy:
 - A future direct `Omega_Lambda` derivation from a vacuum/topology argument
   ∈ `(C3)`.
 
-The complete Lane 5 closure path requires one route from `(C1)`-class
-landed AND one route from `(C2)`-or-`(C3)`-class landed.
+Each Lane 5 closure among the currently reviewed routes requires one
+`(C1)`-class route landed AND one `(C2)`-or-`(C3)`-class route landed.
 
 ## 5. What this no-go closes and does not close
 

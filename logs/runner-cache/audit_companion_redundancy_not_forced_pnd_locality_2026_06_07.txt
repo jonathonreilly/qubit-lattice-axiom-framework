@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_redundancy_not_forced_pnd_locality_2026_06_07.py
-runner_sha256: db1b27275bc2ae70824c56dd5f535197a19ffdccd8e1cc1ddd35fd0c9a58fee6
+runner_sha256: 05ab9e82954a70ac8194b40f5a4fc6682bafe2405de8f0bcd8d9a99202e24aed
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 REDUNDANCY IS NOT FORCED BY {DURABILITY/PND + Z^3-LOCALITY + LEADING-RANGE}  (NO-GO)
@@ -13,7 +13,7 @@ REDUNDANCY IS NOT FORCED BY {DURABILITY/PND + Z^3-LOCALITY + LEADING-RANGE}  (NO
 [PASS] anti-witness Z_S Z_1 Z_2=+1: fragment {1} has FULL quantum mutual info I(S:1)=1 bit yet ZERO Holevo pointer info (chi=0) -> mutual information is the WRONG QD measure (this refinement holds)
        I(S:1)=1.000 bit, Holevo chi({1})=0.0e+00
 
--- A. The R_delta=N broadcast exists only at a fine-tuned coupling form AND time --
+-- A. The R_delta=N broadcast appears fine-tuned in coupling form AND time (bounded empirical, not measure-zero) --
 [PASS] at the CNOT point (g t = pi/4) the pure single-site-sum coupling gives R_delta = N = 4 (every fragment reaches the (1-delta) deficit) -- the broadcast EXISTS here
        R_delta=4, per-fragment Holevo chi=1.000 = H_S=1.000
 [PASS] but at g t = pi/6 the SAME coupling gives per-fragment Holevo chi = 0.811 < 0.9*H_S, trace distance 0.866 -> R_delta = 0: the broadcast is FINE-TUNED in time, not robust

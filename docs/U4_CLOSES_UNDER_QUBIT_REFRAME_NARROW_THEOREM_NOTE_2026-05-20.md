@@ -123,8 +123,9 @@ one-particle-per-site realization — that lived in the open
 
 The current Qubit axiom (introduced as the Quantum axiom by the 2026-05-20
 qubit reframe, carried through the 2026-06-05 memo, and current in the
-2026-06-29 four-axiom memo), replaces this two-step
-"abstract Cl(3) + open bridge" structure with a single-axiom commitment.
+2026-06-29 four-axiom memo) supplies the one-site `M_2(C)` algebra; with the
+multiplicity-one named condition this replaces the two-step "abstract Cl(3) +
+open bridge" structure by a single-axiom-plus-condition commitment.
 
 ## Step 1 — The qubit-per-site baseline specifies the per-site object directly
 

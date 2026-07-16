@@ -5,7 +5,7 @@ status_authority: independent_audit_lane_only
 direct_effective_status_change_allowed_from_this_note: false
 ---
 
-# Internal/External su(2) Double-Use Reduces to One Index-Pairing Admission
+# Internal/External su(2) Double-Use Reduces to One Index-Pairing Condition
 
 **Date:** 2026-06-08
 **Claim type:** bounded_theorem

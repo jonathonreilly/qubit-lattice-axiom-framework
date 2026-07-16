@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/color_base_covariance_nc_equals_d_support_2026_06_08.py
-runner_sha256: 09f8937a4cf44c5a6da8acf81b132a600bf562c48292b74c8bab2d1915ed1ad7
+runner_sha256: 4acb2877f0a586b9db852e1a19c588d6804ac95e223a065f920563b34b7f9129
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 COLOR-BASE COVARIANCE SUPPORT: N_c = d in a supplied Z^d family

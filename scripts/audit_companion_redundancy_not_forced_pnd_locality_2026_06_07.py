@@ -12,11 +12,12 @@ requires each fragment to reach the information deficit (1-delta)*H_S, delta ~ 0
 CORRECTED test, and it reports the honest -- inverted -- result.
 
 HONEST RESULT.
-  (A) The redundant broadcast (R_delta = N, every disjoint fragment reaches (1-delta)*H_S) EXISTS, but
-      only at a FINE-TUNED point: the pure single-site-sum monitoring Sum_k Z_S (x) X_k AT the CNOT time
-      g t = pi/4. At g t = pi/6 the SAME coupling gives Holevo chi = 0.811 < 0.9*H_S per fragment, so
-      R_delta = 0. The broadcast is fine-tuned in BOTH the coupling form and the time.
-  (B) A GENUINELY generic pointer-non-demolition coupling H = c0 Z_S X_1 + c1 Z_S X_2 + c2 Z_S X_1 X_2
+  (A) The redundant broadcast (R_delta = N, every disjoint fragment reaches (1-delta)*H_S) EXISTS but
+      appears fine-tuned: the pure single-site-sum monitoring Sum_k Z_S (x) X_k reaches it at and near
+      the CNOT time g t = pi/4, but by g t = pi/6 the SAME coupling gives Holevo chi = 0.811 < 0.9*H_S
+      per fragment, so R_delta = 0. The broadcast is sensitive to both the coupling form and the time
+      (a bounded empirical statement, NOT a measure-zero claim).
+  (B) A randomly sampled pointer-non-demolition coupling H = c0 Z_S X_1 + c1 Z_S X_2 + c2 Z_S X_1 X_2
       (random Gaussian c) gives R_delta = N in ~0/300 samples (delta=0.1). A randomly sampled PND coupling is non-redundant under this seed/threshold.
       The range-2 monitoring being present does NOT rescue redundancy: H = 0.5(Z_S X_1 + Z_S X_2)
       + Z_S X_1 X_2 has the range-2 term present yet yields R_delta = 0.
@@ -190,7 +191,7 @@ def main() -> int:
     )
 
     # ----------------------------------------------------------------- #
-    # B. CORRECTED genericity: a generic PND coupling is non-redundant.
+    # B. CORRECTED genericity: a randomly sampled PND coupling is non-redundant (this seed/threshold).
     # ----------------------------------------------------------------- #
     print("\n-- B. CORRECTED genericity over the full PND family H = c0 Z_S X_1 + c1 Z_S X_2 + c2 Z_S X_1 X_2 --")
     ZX1 = single(Z, 0, n3) @ single(X, 1, n3)
@@ -212,7 +213,7 @@ def main() -> int:
             f"deficit) in only {hits}/{M} samples -> a randomly sampled PND coupling is NOT redundant. "
             "Redundant broadcast is rare under this sampled family (finite hit rate, not a measure-zero proof)",
             hits / M < 0.05,
-            f"redundant in {hits}/{M} = {100*hits/M:.1f}% of generic PND couplings",
+            f"redundant in {hits}/{M} = {100*hits/M:.1f}% of sampled PND couplings",
         )
     # the range-2 term being PRESENT does not rescue redundancy
     H_mix = 0.5 * ZX1 + 0.5 * ZX2 + 1.0 * ZX1X2

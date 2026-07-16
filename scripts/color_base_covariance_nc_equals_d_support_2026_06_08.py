@@ -12,7 +12,7 @@ over-claim to demote. This runner only tests the counterfactual family shape.
 This runner tests that claim against the ACTUAL graph-first construction (GRAPH_FIRST_SU3_INTEGRATION_NOTE):
 the taste cube is {0,1}^d (one taste qubit per spatial axis). Select ONE axis as the weak su(2) fiber; the
 REMAINING d-1 axes form the base (C^2)^{(x)(d-1)}; the residual permutation group S_{d-1} acts; the
-fully-symmetric (trivial-isotype) block carries color. So the base is Sym^{d-1}(C^2), NOT a fixed Sym^2.
+fully-symmetric (trivial-isotype) block carries the candidate color-carrier. So the base is Sym^{d-1}(C^2), NOT a fixed Sym^2.
 
 PREDICTION if the construction is d-COVARIANT (campaign WRONG, note RIGHT):
   dim(symmetric block) = dim Sym^{d-1}(C^2) = (d-1)+1 = d   -> candidate color-carrier dim = d = dim Z^d  (covariation)

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_redundancy_not_forced_pnd_locality_2026_06_07.py
-runner_sha256: f684807642279be6d0367ce5f64156d4b56a80dcde4dfcb473b74a7ceaecb513
+runner_sha256: db1b27275bc2ae70824c56dd5f535197a19ffdccd8e1cc1ddd35fd0c9a58fee6
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.15
@@ -21,9 +21,9 @@ REDUNDANCY IS NOT FORCED BY {DURABILITY/PND + Z^3-LOCALITY + LEADING-RANGE}  (NO
 
 -- B. CORRECTED genericity over the full PND family H = c0 Z_S X_1 + c1 Z_S X_2 + c2 Z_S X_1 X_2 --
 [PASS] sampled PND coupling [t=1]: R_delta = 2 (both single fragments reach the (1-delta) deficit) in only 2/300 samples -> a randomly sampled PND coupling is NOT redundant. Redundant broadcast is rare under this sampled family (finite hit rate, not a measure-zero proof)
-       redundant in 2/300 = 0.7% of generic PND couplings
+       redundant in 2/300 = 0.7% of sampled PND couplings
 [PASS] sampled PND coupling [t=pi/4]: R_delta = 2 (both single fragments reach the (1-delta) deficit) in only 1/300 samples -> a randomly sampled PND coupling is NOT redundant. Redundant broadcast is rare under this sampled family (finite hit rate, not a measure-zero proof)
-       redundant in 1/300 = 0.3% of generic PND couplings
+       redundant in 1/300 = 0.3% of sampled PND couplings
 [PASS] concrete counterexample: H = 0.5(Z_S X_1 + Z_S X_2) + Z_S X_1 X_2 has the range-2 monitoring PRESENT (coeff 0.5) yet gives R_delta = 0 -> 'leading range present' does NOT force redundancy; a higher-range admixture destroys it
        R_delta=0; Holevo chi({1})=0.000 < 0.900
 

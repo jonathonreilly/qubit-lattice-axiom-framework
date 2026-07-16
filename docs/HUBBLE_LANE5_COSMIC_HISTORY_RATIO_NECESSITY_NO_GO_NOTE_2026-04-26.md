@@ -216,7 +216,8 @@ Before this no-go, the program-bounding statement was informal in the
 Cycle-2 open-number reduction theorem. After this no-go, Lane 5's
 closure pathways are:
 
-- formally limited to `{(C1), (C2), (C3)}`;
+- (over the currently reviewed routes) organized into the `{(C1), (C2), (C3)}`
+  bookkeeping taxonomy, which is not claimed exhaustive;
 - each pathway has a sharp open-premise statement;
 - the workstream's effort allocation is correctly directed at retiring
   one of those three premises.

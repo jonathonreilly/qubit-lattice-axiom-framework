@@ -269,7 +269,7 @@ axiom applied to make the framework's commitments explicit.
 **Plain-text pointer references** (NOT load-bearing deps):
 
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` — open-gate parent; substep 1's U4 bridge is the named open piece this note addresses
-- `STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md` — substep-1 conditional sub-claim (C1) becomes unconditional under the qubit-per-site baseline
+- `STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md` — substep-1 conditional sub-claim (C1) reduces to the multiplicity-one condition under the qubit-per-site baseline
 - `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md` — substep-1 dimensional-matching bridge with U4 bridge
 - `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md` — substep-1 cross-site anticommutation bridge with U4 bridge
 - `CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md` — pre-reframe theorem now derivable in one line from the qubit-per-site baseline

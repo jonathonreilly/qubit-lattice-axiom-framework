@@ -11,7 +11,7 @@ explicit chiral-cube carrier
 CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27),
 and tests four things, mapped to the four task parts:
 
-  PART 1  Two candidate local symmetries on the SAME carrier and their
+  PART 1  Two candidate local symmetries on the C^8 = C^4_base (x) C^2_fiber carrier and their
           DISTINCT invariant (record) algebras:
             (i)  base SU(3): Gell-Mann T^a on the 3D symmetric base block;
                  its singlets are the color singlets eps_qqq (baryon) and
@@ -36,9 +36,10 @@ and tests four things, mapped to the four task parts:
           Wilson, #2711), the fiber is matter spin. We build a minimal link
           model and check whether locality+link-structure forces the base
           SU(3) (color) onto the links rather than the fiber SU(2). Result:
-          BOTH a base-SU(3) Gauss law and a fiber-SU(2) Gauss law can be
-          written on the SAME carrier and BOTH have the elementary
-          0 -> 1 -> 2 endpoint-invariance profile; nothing in
+          a base-SU(3) Gauss law and a fiber-SU(2) Gauss law can EACH be
+          written on their own carrier, each with the elementary
+          0 -> 1 -> 2 variant/invariant structure (the SU(3) case verified at
+          the matched endpoint; carriers not identified); nothing in
           {records, locality, links} prefers one over the other. The choice
           is the assignment "quarks occupy the 3D symmetric base in the
           fundamental 3" = the matter-realization residual (which subsystem the matter occupies).

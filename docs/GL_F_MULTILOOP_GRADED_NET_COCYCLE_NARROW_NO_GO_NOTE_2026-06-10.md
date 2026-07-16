@@ -373,7 +373,7 @@ neutrality rests on certified both-frame passes, never on absence of evidence.
 ## 8. What the substep-1 statistics boundary becomes
 
 Before (GL(F) conditional discriminator note §7, B-stat′): "the single missing input is
-`GL(F)`; given `GL(F)` the CAR class is forced; `GL(F)` is an admission
+`GL(F)`; given `GL(F)` the CAR class is forced; `GL(F)` is an open-premise
 candidate." After this note, if it later passes independent audit:
 **B-stat″** — the same, plus: the static-baseline route classes enumerated by
 the 06-06 exercise portfolio have all been exercised and neutralized
@@ -412,7 +412,7 @@ including, among others, the load-bearing lines (verbatim):
 
 ```yaml
 claim_type_author_hint: no_go
-claim_scope: "Multi-loop graded-net cocycle consistency on the Z^3 qubit net with the retained F-grading does not force GL(F): an exchange-sign assignment is jointly realizable and consistent on every closed loop of the exchange groupoid and the lattice (plaquette-generated cycle space, linked loops, JW framing coherence) iff it is symmetric; the consistent set contains the commuting (hard-core) assignment alongside CAR; the only frame-odd loop datum is the exchange-loop holonomy, constrained by consistency only to square to +1. The multi-loop route named by the exercise portfolio and ring no-go N6 item 3 closes as a no-go; GL(F)/FS remains a genuine admission candidate."
+claim_scope: "Multi-loop graded-net cocycle consistency on the Z^3 qubit net with the retained F-grading does not force GL(F): an exchange-sign assignment is jointly realizable and consistent on every closed loop of the exchange groupoid and the lattice (plaquette-generated cycle space, linked loops, JW framing coherence) iff it is symmetric; the consistent set contains the commuting (hard-core) assignment alongside CAR; the only frame-odd loop datum is the exchange-loop holonomy, constrained by consistency only to square to +1. The multi-loop route named by the exercise portfolio and ring no-go N6 item 3 closes as a no-go; GL(F)/FS remains a genuine open-premise candidate."
 upstream_dependencies:
   - staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25
   - ring_monodromy_does_not_force_car_note_2026-06-04

@@ -50,9 +50,8 @@ Fix-only results:
 - runner independence: `PASS`;
 - governance/import/scope: `PASS`.
 
-Final cache: `23 PASS / 0 FAIL`, SHA
-`7a621de2eb8c703dea44bd42845a8aa30fabf0213500828c63baee32bd1c2fdc`,
-elapsed `82.11s`.
+Final cache before the deep-block normalization clarification:
+`23 PASS / 0 FAIL`.
 
 Final local disposition: `pass`. Branch-local source classification:
 `candidate-retained-grade`. This is not an audit verdict.
@@ -71,3 +70,15 @@ was:
 
 All generated ledger, queue, effective-status, publication-view, and
 front-door outputs were restored or deleted. None is part of the branch diff.
+
+## Block-02 deep-block normalization pressure
+
+The post-PR adversarial pass found one remaining notation ambiguity: legacy
+`Z_N`, `U(1)`, and `SU(2)` runner functions called their direct plane coupling
+`beta`, while the source uses standard Wilson `alpha=beta_Wilson/N`. The runner
+docstring and source contract now state that mapping explicitly. Runner
+fix-only rereview passed.
+
+Refreshed final cache: `23 PASS / 0 FAIL`, SHA
+`a14afbd3eb1c55eb69e85ecfc66ae8259f9da7dae0973e1d32277bbfd3ce0058`,
+elapsed `81.06s`.

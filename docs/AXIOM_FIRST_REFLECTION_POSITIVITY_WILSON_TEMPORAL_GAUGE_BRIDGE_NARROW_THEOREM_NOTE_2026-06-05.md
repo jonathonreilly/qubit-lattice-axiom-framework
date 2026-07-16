@@ -293,6 +293,9 @@ python3 scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026
 The runner checks:
 
 - the reflection split and Wilson sign;
+- the normalization map `alpha=beta/N`; legacy abelian and `SU(2)` diagnostic
+  function arguments named `beta` are explicitly identified as the effective
+  plane coupling `alpha`;
 - exact finite `Z_N` coefficient reconstruction and reflected Grams;
 - positive-series interval certificates for the `U(1)` coefficients;
 - the manifest finite-carrier factorization `G=W diag(κ)W^dagger`;

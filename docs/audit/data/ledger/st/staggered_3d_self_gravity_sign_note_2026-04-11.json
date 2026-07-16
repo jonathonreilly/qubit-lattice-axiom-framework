@@ -18,7 +18,7 @@
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1370,6 +1370,60 @@
         "total_pass": 9
       },
       "verdict_rationale": "The runner genuinely constructs the lattice operators, solves the six nonlinear evolutions, and reproduces the reported finite rows without hard-coding their outputs. However, the Hamiltonian, parity-coupled self-field law, coupling strength, centered initial condition, blocking prescription, and finite duration are supplied model choices rather than consequences of the accepted framework premises. The completed evidence supports the exact finite fixture, but not the note's broader physical-architecture and sign-closure language."
+    },
+    {
+      "archived_at": "2026-07-16T06:14:32.739371+00:00",
+      "audit_date": "2026-07-16T06:14:17.974748+00:00",
+      "audit_invocation_history": [
+        "de5d4bccf82645ca97cdd2203796add8"
+      ],
+      "audit_invocation_id": "de5d4bccf82645ca97cdd2203796add8",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 9.97,
+        "runner_hash": "2f4ef7390407f408eb36a3413e9bb2953b97be6a1611e8398b05e76a2bb40be8",
+        "transitive_descendants": 708
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-staggered_3d_self_gravit-131",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-fixture computation closes, but the restricted packet does not derive the selected Hamiltonian, nonlinear Poisson self-source, parameter choices, or physical-observable interpretation from the framework premises, and it supplies no quantitative criterion for trajectory-sign closure.",
+      "claim_scope": "The runner computes final-time contraction and sign nonseparation for the listed blocked-width, core-probability, and blocked-centroid observables on the centered 20-step fixtures at side lengths 9, 11, and 13.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-16T06:14:17.974748+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "In centered 3D self-gravity on the primary staggered architecture, contraction is robust but sign-selective trajectory closure still fails.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim to a computation on the declared nonlinear lattice fixture, define an explicit sign-separation criterion, correct the side-11 norm-drift transcription, and avoid treating forced renormalization as an independent norm-conservation check.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner genuinely performs six nonlinear lattice evolutions and supports the principal width, core, drift, and shell-gradient values; it is not a print-only certificate. The physical self-gravity model and observable bridge are introduced rather than derived from the accepted premises, while the negative result tests only one centered finite-time surface and cannot establish a general trajectory-sign no-go. Per-step normalization also makes the machine-clean norm result non-independent, and the note reports 2.220e-16 for the side-11 attractive norm drift where stdout reports 1.110e-16. The supported result is therefore a conditional finite-fixture positive/negative split."
     }
   ],
   "prose_corrections": [],

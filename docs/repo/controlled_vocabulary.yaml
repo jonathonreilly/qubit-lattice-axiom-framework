@@ -637,10 +637,12 @@ migration_legacy_wording:
     - {label: proposed_retained, definition: "author proposes retained-grade; awaits audit ratification"}
     - {label: proposed_promoted, definition: "author proposes promoted-grade; awaits audit ratification"}
   ratified_surface_pointer: |-
-    The canonical audit-ratified surface is
-    [docs/audit/AUDIT_LEDGER.md](../audit/AUDIT_LEDGER.md). Legacy
-    publication summaries may still use manuscript shorthand, but those rows
-    should be read as proposed until the audit ledger marks them clean.
+    The canonical audit-ratified surface is the tracked sharded ledger
+    [docs/audit/data/ledger/](../audit/data/ledger/); the rendered
+    `docs/audit/AUDIT_LEDGER.md` is a local pipeline-materialized cache.
+    Legacy publication summaries may still use manuscript shorthand, but
+    those rows should be read as proposed until the audit ledger marks
+    them clean.
   new_note_rule: |-
     New notes must use `proposed_retained` / `proposed_promoted` on author
     side and rely on the pipeline's `effective_status` for the

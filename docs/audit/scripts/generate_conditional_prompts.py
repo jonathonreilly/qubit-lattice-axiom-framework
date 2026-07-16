@@ -41,11 +41,18 @@ PROMPTS = REPO_ROOT / "docs" / "audit" / "MISSING_DERIVATION_PROMPTS.md"
 
 
 def heal_legacy_link_prefixes(text: str) -> str:
-    """Rewrite historical repo-root-relative note links to correct
-    docs/audit-relative form. Any link target beginning "docs/" is wrong in
-    this file (it resolves to docs/audit/docs/...); the correct prefix from
-    docs/audit/ is "../". Idempotent."""
-    return text.replace("](docs/", "](../")
+    """Rewrite historical repo-root-relative note links on the generated
+    "**Note:**" link lines to correct docs/audit-relative form (a target
+    beginning "docs/" on those lines resolves to nonexistent
+    docs/audit/docs/...). Scoped to the generated link field only, so
+    quoted evidence, inline code, and fenced examples elsewhere in the
+    file are never mutated. Idempotent."""
+    healed = []
+    for line in text.split("\n"):
+        if line.startswith("**Note:** ["):
+            line = line.replace("](docs/", "](../")
+        healed.append(line)
+    return "\n".join(healed)
 
 SOURCE_PATH_ALIASES = REPO_ROOT / "docs" / "audit" / "data" / "source_path_aliases.json"
 

@@ -2,7 +2,7 @@
 
 Date: 2026-07-16
 
-Status: campaign synthesis through Cycle 187; no axiom edit proposed
+Status: campaign synthesis through Cycle 195; no axiom edit proposed
 
 Authority: none
 
@@ -66,6 +66,42 @@ different permanent facts. The missing layer is now concrete: an exact
 physical process must define interventions, contact, and occurrence—not merely
 availability.
 
+Cycle 189 then supplies the first exact finite positive process witness across
+that seam. A preparation record and one of six context records control a
+two-qubit/two-pointer unitary before pointer and terminal records form. The
+model has exact identity containment, measure-and-forget, interference,
+normalized multi-time weights, contextual parity support, and complete
+record-fibre future sufficiency. It demonstrates that a record-first quantum
+process architecture is coherent. It does not derive the imported
+composition, preparation, context/PVM, phase, Born-pairing, or actuality
+content from the lattice law.
+
+Cycle 191 compresses the six imported context instruments to one common
+instruction set. Every instrument is exactly
+`decode -> two pointer copies -> undo decode`, where each shortest decoder
+uses only Hadamard and CNOT. The relative minus sign in the third column is
+derived from Pauli multiplication; no separately supplied phase gate is
+needed. This removes six independent instrument atoms, but it still leaves
+the physical dispatcher, microscopic H/CNOT dynamics, Born pairing, and
+actual occurrence to be constructed or derived.
+
+Cycle 194 then composes the concrete Cycle-189 weights with the earlier
+record-corpus theorem. All twelve preparation-context protocols admit exact
+IID, correlated Markov, deterministic balanced, frozen, and nonergodic
+repeated-history extensions with the same one-block weights. Four routes
+converge to the target frequencies; the frozen route does not. The missing
+frequency content is therefore the repeated law's component-mean property,
+not another numerical probability formula. The Born trace pairing and
+microscopic repeated process remain imported.
+
+Cycle 195 reduces the one-shot import as far as the current evidence permits.
+It constructs six normalized, parity-correct Peres–Mermin tables with matching
+shared-observable marginals that cannot arise from any positive two-qubit
+state. Finite context consistency therefore does not derive quantum weights.
+What remains is a normalized effect-complete operational law or equivalent
+full-frame structure; after that completion, trace form follows
+mathematically rather than needing a separate Born sentence.
+
 ## What is now established
 
 ### One coherent compiler substrate
@@ -115,6 +151,18 @@ The two initial carriers are jointly supplied, so this is not a
 cosmological-boundary reachability theorem. It is nevertheless a direct
 candidate-law result: isolated carrier recurrence does not provide a closed
 contact or scattering law.
+
+Cycle 188 supplies the missing local content for one precise contact class.
+Exactly 162 canonical tolerance rows, using zero new roles, close all 162
+reachable adjacent diamonds and recover the exact Cartesian product for all
+28 aligned distance-one placements. Every row is deletion-necessary under the
+declared transparent same-output contract. The result persists through
+horizons three, six, and nine and all 24 proper-cubic images.
+
+This repairs transparent coexistence, not scattering. It shows that the
+Cycle-187 split was a law omission rather than generic evidence for a new
+actuality axiom. Reflection, phase shift, exchange, binding, annihilation,
+nonparallel contact, and contact of the H0/H1 payload bundle remain open.
 
 ### Causal order can supply a discrete relative clock
 
@@ -269,8 +317,13 @@ The campaign must distinguish three grades:
 Most of Cycles 149–177 are grade 1. Cycle 178 begins grade 2 for the recurrent
 payload. Cycle 182 supplies a narrow conditional grade-3 dilation for the
 orthogonal copy map, but it assumes CNOT dynamics and fresh targets rather
-than deriving them from the selected law. No current local compiler result
-derives a complete grade-3 physical process.
+than deriving them from the selected law. Cycle 189 supplies a complete
+finite conditional grade-3 process for two system qubits, a two-bit pointer,
+six Peres–Mermin contexts, and a tomographically complete Pauli future
+repertoire. Cycle 191 reduces all six context instruments and both
+preparations to one real-Clifford H/CNOT interpreter with short program
+records. The process and interpreter remain conditional and are not yet
+implemented by the nearest-neighbour record law.
 
 This is not a cosmetic downgrade. It is the difference between demonstrating
 a cellular computer and demonstrating a quantum physical law.
@@ -284,7 +337,7 @@ a cellular computer and demonstrating a quantum physical law.
 | Finite composition | five sites can host 32 binary codewords in the ordinary generated tensor algebra | generated finite composition is a theorem condition, not current axiom content; silent global sectors remain unless the law domain or an operational theorem removes them |
 | Admissibility | one fixed local rule can host all tested constructions | the axiom supplies only a rule slot; it neither identifies the exact law nor derives the 4,414-case proper-cubic quotient; the 153-role table remains an extensional macro-law until spatialized, and its unrestricted domain is nonconfluent without update/domain semantics |
 | Record | append-only records support stable ancestry and form-before-read; two witnesses give one-erasure redundancy in the coherent lift | universal occurrence, content selection, rate, first seed, and storage renewal remain absent; witness count does not supply actuality; absolute permanence may create downstream capacity pressure |
-| Qualification | states are record configurations | a record-only quantum process remains possible, but coherent future dependence must be reconstructed from records, strongly lumpable, or carried by a separately typed process law |
+| Qualification | states are record configurations | Cycle 189 reconstructs one complete two-qubit density calculator from complete record fibres and fixed law; lattice-wide sufficiency, environments, and microscopic phase transport remain open |
 
 No present result validates the four axioms as nature's minimum. It shows only
 that they admit one increasingly capable record-law architecture.
@@ -297,9 +350,9 @@ The lanes are not equally far from closure.
 |---|---|---|
 | classical record information | orthogonal H0/H1 formation, recurrent transport, deletion controls | comparatively close at grade 2; binding, renewal, and interaction remain |
 | causal order | exact load-bearing DAG and scheduler-independent depth | close for discrete order; far for rate, calibration, Lorentz metric, and continuum |
-| bounded algebraic computation | complete stabilizer update and six-context calculator | strong compiler closure; not yet quantum process physics |
-| quantum measurement/probability | coherent witness dilation and operational record-fibre classification | large gap: interference, physical instruments, normalized histories, Born/frequency link, actuality |
-| matter | recurrent localized record ancestry | large gap: binding, coherent propagation, contact/scattering, statistics, charges, spectrum, masses |
+| bounded algebraic computation | complete stabilizer update and six-context calculator | strong compiler closure; not yet a microscopic quantum process law |
+| quantum measurement/probability | preterminal pointer dilation, exact interference, normalized finite process, record-fibre sufficiency, one common H/CNOT context interpreter, exact conditional frequency bridge | viable conditional architecture; reduced but still large gap to microscopic gate law, physical dispatch, derivation of Born pairing/component means, and actuality |
+| matter | recurrent localized ancestry plus a covariant transparent contact kernel | large gap: binding, nontrivial scattering, coherent propagation, statistics, charges, spectrum, masses |
 | gravity/resource | exact record cost and append-only trail accounting | very large gap: conserved source, universal tensor response, equivalence principle, continuum dynamics |
 | cosmology/boundary | named finite seeds and relational-boundary candidates | large gap: first records, one physical boundary/state, multi-carrier generation, observed large-scale state |
 | law selection | one increasingly capable 101,996-row compiler | foundational gap: compact microscopic law/equivalence class and independent prediction |
@@ -368,6 +421,18 @@ terminals. The result is conditional on the supplied two-tube boundary, but
 any framework claiming matter must either admit such multi-carrier states and
 resolve them or derive a physical rule excluding them.
 
+Cycle 188 proves that explicit local tolerance rows can restore confluence on
+that whole aligned contact class without a clock, priority, sampler, or new
+role. It also separates a genuine alternative: synchronous pre-state batching
+writes both competitors into a third terminal that no old asynchronous
+history reaches. Batching is therefore a distinct foliation/update law, while
+the Cycle-188 repair is ordinary local asynchronous continuation.
+
+The actuality lesson is now narrower and better: nonconfluence in a candidate
+table is not automatically constitutional pressure. First search for local
+law content that closes the physical domain. Occurrence semantics remains
+independent where no such confluence theorem or process law exists.
+
 ### 3. Quantum process and probability
 
 The local record compiler currently performs deterministic classical logic on
@@ -392,18 +457,134 @@ process while preserving identity containment and exact record-fibre
 predictions. It must produce interference or contextual statistics rather
 than attach them as a host table.
 
+Cycle 189 constructs that finite process conditionally. For `|++>` followed by
+an `XX` test, omission gives certainty, a forgotten R1/Z-context measurement
+gives `1/2,1/2`, and a forgotten R2/X-context measurement preserves certainty.
+The R1 history matrix assigns half of the original terminal weight to exact
+off-diagonal interference. All six contexts have zero wrong-parity support,
+which no one context-independent shared-observable answer table can
+reproduce.
+
+Complete preparation, context, instrument, pointer, and terminal records
+collapse 256 raw histories into 44 fibres with one future 15-Pauli fingerprint
+each. That fingerprint reconstructs one density operator. At this finite
+scope, the density matrix is a derived record-plus-law calculator rather than
+extra unrecorded ontology, so Qualification pressure is not triggered.
+
+The remaining gap has become sharper: finite composition, blank/preparation
+boundary, the Peres–Mermin context family and relative phase, context coupling,
+Born trace pairing, the legal process category, actuality/frequency, and a
+microscopic nearest-neighbour implementation remain imported.
+
+Cycle 191 removes part of that list. The six context-specific dilations are
+not six independent pieces of physics. Exact Clifford synthesis gives the
+shortest decoders
+
+```text
+R1: []
+C1: [H1]
+C3: [CX10, H1]
+R3: [H0, CX01, H0]
+C2: [CX01, CX10, H1]
+R2: [H0, CX10, CX01, H0].
+```
+
+One common two-CNOT pointer copy between each decoder and its inverse
+reproduces every Cycle-189 instrument exactly. `|00>` and `|++>` preparation
+also use the same instruction set, and the complete bank requires no dynamic
+phase gate. A three-bit context record and one preparation bit are sufficient
+program data.
+
+This is an import reduction, not microscopic physics. The lattice must still
+turn those program records into ordered physical actions; a local process
+must realize H and CNOT on the relevant encoded state; and the normalized
+operator weights must still connect to actual record frequencies. Those
+remaining atoms are now isolated rather than hidden inside six supplied
+measurement tables.
+
+Cycle 194 closes the last implication conditionally. For each of the twelve
+Cycle-189 preparation-context protocols it constructs five stationary,
+projectively consistent repeated-block extensions with the same one-block
+pointer weights:
+
+- an IID product process;
+- a correlated sticky Markov process;
+- a frozen one-outcome sector;
+- a deterministic balanced periodic process; and
+- a nonergodic product/periodic mixture.
+
+The product, Markov, balanced, and equal-mean-mixture routes converge to the
+Cycle-189 frequency vector. The frozen route preserves every one-shot weight
+and every visible block certificate while each invariant component converges
+to a different delta distribution. Thus the exact missing condition is
+
+```text
+every invariant component has the Cycle-189 outcome mean.
+```
+
+This component-mean condition is weaker than IID and weaker than global
+ergodicity. Because all present weights are quarters, halves, or one, a
+deterministic balanced orbit can even give the exact frequency vector on
+every phase. That route has visible periodic correlations and is not offered
+as nature's law; it proves that stochastic sampling is not logically required
+for frequency alone.
+
+The remaining probability gap is now split cleanly: the trace pairing must be
+derived or retained as law content; the microscopic repeated process must
+derive the component-mean property; and an actual-history route must still be
+declared. Visible reset/context/close records define trials but do not prove
+independence or component homogeneity.
+
+Cycle 195 sharpens the first clause. The exact countermodel assigns
+
+```text
+<IX>=1, <XZ>=-1, <ZZ>=-1,
+all six other Peres–Mermin expectations = 0.
+```
+
+Every context has two allowed outcomes of weight `1/2`, the signed products
+are exact, and both appearances of each observable have one marginal. Yet
+`IX` anticommutes with `ZZ` and `XZ`; a positive state with `<IX>=1` must give
+zero expectation to both. The canonical Pauli completion has two negative
+eigenvalues `(1-sqrt(3))/4`.
+
+Thus the six-context process does not itself force positivity across
+incompatible effects. The remaining one-shot law field is narrower than
+“Born rule”: a normalized, effect-complete operational process with physical
+randomization, coarse-graining, and composition. Given that field, the
+Busch/CFMR or four-dimensional Gleason representation supplies trace form.
+
 ### 4. Physical time
 
-Causal depth is now exact. Still missing are:
+Causal depth is now exact. Cycle 22 also shows that a named chain of
+law-generated permanent commits can define a monotone, additive,
+schedule-independent integer clock. The causal direction is
+
+```text
+law makes commits -> a commit chain is counted as a clock,
+```
+
+not `clock -> lock`.
+
+Cycle 46 gives the strongest continuum route presently known. If the record
+order converges faithfully to a distinguishing Lorentzian causal order and
+record number converges to one law-derived uniform volume density, causal
+order fixes the conformal metric and density fixes its conformal factor. This
+can remove separate clock-rate and metric axioms conditionally.
+
+Still missing are:
 
 - an occurrence rate;
 - calibration between local clocks;
+- causal and volume faithfulness of the continuum map;
 - duration and metric reconstruction;
 - boost/Lorentz structure;
 - continuum scaling; and
 - empirical comparison.
 
-Order is not yet time in seconds.
+Order and commit count are not yet time in seconds. The scale reference can
+convert a derived dimensionless interval to units; it cannot supply the
+relative clock ratios or the continuum-density theorem.
 
 ### 5. Matter
 
@@ -428,6 +609,12 @@ Cycle 187 adds a prior requirement. Before dispersion, exchange statistics,
 or mass can be claimed, the carrier must have a complete multi-carrier
 contact law. The current recurrent mechanism has neither complete
 continuation nor unique collision output at nearest-neighbour contact.
+
+Cycle 188 closes transparent aligned contact, so that last sentence is no
+longer true for the tested class. The remaining matter target is stronger:
+nontrivial scattering or interaction with conserved incoming/outgoing
+identity, payload preservation, and amplitudes or deterministic outcome
+content. Transparent passage alone is not a particle interaction.
 
 ### 6. Gravity and resource physics
 
@@ -526,6 +713,16 @@ What the campaign currently favours:
   before the recurrent carrier is treated as matter;
 - late selection among precomputed terminal records is not a quantum
   instrument and should not be constitutionalized as “readout”; and
+- complete record configurations can be predictively sufficient for one
+  nontrivial quantum process, so no Qualification edit is presently forced;
+- six contextual instruments can share one compact real-Clifford interpreter,
+  so context variety by itself is not evidence for six primitive laws;
+- observed frequencies require a theorem about the repeated process's
+  invariant components, not an independent frequency postulate or an IID
+  axiom;
+- finite contextual parity and shared marginals do not supply an
+  effect-complete positive law, so a finite “Born/readout” sentence would
+  target the wrong layer;
 - Record permanence should remain under pressure until renewal, local
   non-revocation, and storage-resource routes are compared.
 
@@ -548,12 +745,14 @@ One final foundation edit should wait until these tests are complete:
 
 1. a generated all-five membership/binding record on the compact carrier,
    with cross-bit ancestry and deletion controls;
-2. one explicit quantum process/instrument bridge that produces interference
-   and contextual statistics from records;
+2. physically dispatch the Cycle-191 H/CNOT programs, microscopically
+   implement that common interpreter, derive a normalized effect-complete
+   operational law so trace form follows, and prove the Cycle-194
+   component-mean condition for its repeated process;
 3. one autonomous full-law binary interpreter macrocell, or a decisive direct
    smaller-law alternative, followed by exact-law compression/selection;
-4. a covariant contact/scattering kernel that closes the Cycle-187 witness and
-   composes with the orthogonal five-lane carrier;
+4. extend Cycle-188 transparent contact to the orthogonal five-lane payload,
+   then construct a nontrivial covariant scattering/interaction kernel;
 5. occurrence/actual-history classification on the resulting lawful
    multi-apparatus domain;
 6. one-boundary generation of multiple carriers; and

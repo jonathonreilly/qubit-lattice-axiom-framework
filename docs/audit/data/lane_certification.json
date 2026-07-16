@@ -129,7 +129,7 @@
         }
       ],
       "certified": false,
-      "closure_size": 41,
+      "closure_size": 40,
       "lane": "charged_lepton_koide_value",
       "root": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
       "roots": [
@@ -2417,7 +2417,7 @@
         },
         {
           "claim_id": "staggered_fermion_card_2026-04-11",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
@@ -2947,6 +2947,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "285504f0d748b306e6368a670553e0bc827c0dab",
+  "repo_head": "7c8831fb29d058fc7ce27a1fd013135882502ec3",
   "schema": "lane_certification_v2"
 }

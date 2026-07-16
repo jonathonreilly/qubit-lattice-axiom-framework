@@ -484,9 +484,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_failed",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audited_failed",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1064,9 +1064,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_renaming",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audited_renaming",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -2984,9 +2984,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_failed",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audited_failed",
       "audit_question": "Useful finite coefficient table, but intentionally finite-box support; reconsider later only if finite tables are accepted as scoped positive theorems.",
       "claim_id": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
       "expected_current_audit_status": "audited_clean",

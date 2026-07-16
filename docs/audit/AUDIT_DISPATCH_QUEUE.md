@@ -53,7 +53,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | # | state | claim_id | current |
 |---:|---|---|---|
 | 1 | resolved_or_superseded | `native_gauge_closure_note` | positive_theorem / audited_clean / retained |
-| 2 | resolved_or_superseded | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem / unaudited / unaudited |
+| 2 | resolved_or_superseded | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem / audited_failed / audited_failed |
 | 3 | resolved_or_superseded | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem / audited_clean / retained |
 | 4 | resolved_or_superseded | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem / unaudited / unaudited |
 | 5 | resolved_or_superseded | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | bounded_theorem / unaudited / unaudited |
@@ -67,7 +67,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 13 | resolved_or_superseded | `three_generation_observable_theorem_note` | bounded_theorem / unaudited / unaudited |
 | 14 | resolved_or_superseded | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
 | 15 | resolved_or_superseded | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem / unaudited / unaudited |
-| 16 | resolved_or_superseded | `oh_schur_boundary_action_note` | positive_theorem / unaudited / unaudited |
+| 16 | resolved_or_superseded | `oh_schur_boundary_action_note` | positive_theorem / audited_renaming / audited_renaming |
 | 17 | resolved_or_superseded | `three_generation_structure_note` | bounded_theorem / unaudited / unaudited |
 | 18 | resolved_or_superseded | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem / audit_in_progress / audit_in_progress |
 | 19 | resolved_or_superseded | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem / audited_clean / retained |
@@ -113,7 +113,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | # | claim_id | current | reason |
 |---:|---|---|---|
 | 1 | `higgs_from_lattice_note` | bounded_theorem / unaudited / unaudited | not_a_direct_promotion_candidate |
-| 2 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem / unaudited / unaudited | not_a_direct_promotion_candidate |
+| 2 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem / audited_failed / audited_failed | not_a_direct_promotion_candidate |
 | 3 | `yt_ward_identity_derivation_theorem` | bounded_theorem / unaudited / unaudited | deferred_normalization_convention |
 | 4 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 5 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |

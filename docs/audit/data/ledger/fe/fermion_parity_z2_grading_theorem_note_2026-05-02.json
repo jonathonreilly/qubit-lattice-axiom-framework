@@ -34,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f41557dba4d4d158a200785bad8baf011eb13fe4a58f234c7f6175b99971f912",
+  "note_hash": "4d2b9c8ca5a883eb1f4b2d0b95ceac365b61de74e842390257ec646adfdf8235",
   "note_path": "docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1284,7 +1284,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

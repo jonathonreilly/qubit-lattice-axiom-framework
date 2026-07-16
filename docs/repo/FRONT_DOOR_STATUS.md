@@ -32,18 +32,18 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3754 |
-| Applied audit verdicts | 445 |
+| Applied audit verdicts | 476 |
 | Retained-grade rows, including boxed decorations | 395 |
 | Retained positive theorems | 76 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 304 |
 | Boxed decorations under retained parents | 15 |
 | Open gates | 2 |
-| Unaudited rows | 2955 |
-| Retained-pending-chain rows | 2 |
-| Audited conditional rows | 24 |
-| Audited renaming rows | 14 |
-| Audited numerical-match rows | 5 |
+| Unaudited rows | 2909 |
+| Retained-pending-chain rows | 3 |
+| Audited conditional rows | 46 |
+| Audited renaming rows | 16 |
+| Audited numerical-match rows | 6 |
 | Citation cycles detected | 63 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
@@ -53,10 +53,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2985 |
-| Ready rows | 613 |
+| Total pending rows | 2981 |
+| Ready rows | 608 |
 | Cycle-break targets | 93 |
-| Critical pending | 724 |
+| Critical pending | 720 |
 | High pending | 330 |
 | Medium pending | 762 |
 | Leaf pending | 1169 |
@@ -66,9 +66,9 @@ Next ready rows by queue order:
 - [`cl3_complexification_split_narrow_theorem_note_2026-05-10`](../../docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; non_terminal_conditional
 - [`fermion_parity_z2_grading_theorem_note_2026-05-02`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`z2_hw1_mass_matrix_parametrization_note`](../../docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) - critical; unaudited
+- [`z2_hw1_mass_matrix_parametrization_note`](../../docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) - critical; non_terminal_failed
 - [`s3_mass_matrix_conditional_degeneracy_note_2026-07-11`](../../docs/S3_MASS_MATRIX_CONDITIONAL_DEGENERACY_NOTE_2026-07-11.md) - critical; audit_in_progress
-- [`hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`](../../docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md) - critical; unaudited
+- [`hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`](../../docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md) - critical; non_terminal_conditional
 - [`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`abj_epsilon_index_square_block_no_go_note_2026-05-30`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md) - critical; unaudited
 
@@ -77,22 +77,22 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **572**.
+- Non-retained-grade cited rows in publication tables: **571**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 254 |
+| critical | `unaudited` | 243 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 126 |
+| critical | `audited_conditional` | 7 |
 | ? | `unresolved` | 5 |
-| critical | `audit_in_progress` | 2 |
-| critical | `audited_conditional` | 2 |
+| critical | `audit_in_progress` | 3 |
+| critical | `audited_failed` | 3 |
+| critical | `audited_renaming` | 2 |
 | high | `audited_conditional` | 2 |
 | medium | `audited_conditional` | 2 |
-| critical | `audited_failed` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | critical | `retained_pending_chain` | 1 |
-| high | `audited_numerical_match` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

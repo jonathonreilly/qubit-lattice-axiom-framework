@@ -34,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4357cbb07d5d90fad60e44f180e72aab8e520a45e8c9322c6df3986c1280ae4f",
+  "note_hash": "f323b094796eb69653bb5e2c9cc52b3e1c4588dc87bf3ab2bbadc0a67c2d3ad2",
   "note_path": "docs/LATTICE_NN_LIGHT_CONE_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

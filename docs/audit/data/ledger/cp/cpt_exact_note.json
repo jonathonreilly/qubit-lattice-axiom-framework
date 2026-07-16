@@ -22,9 +22,7 @@
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
-  ],
+  "deps": [],
   "direct_in_degree": 44,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
@@ -36,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5b8f580bf1abc9b2485f451acec1be9f87d3e7aa0ec45cabd339de9f05b383ef",
+  "note_hash": "f6b498d8e2c6ed33ca7edf94208ff28c92d552f37b72c77ed7d0e847a9dd27ca",
   "note_path": "docs/CPT_EXACT_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1872,7 +1870,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_cpt_exact.py",
-  "title": "CPT Exact Preservation in the Cl(3) Staggered Framework",
+  "title": "Exact antiunitary symmetry of the free staggered Hermitian lift",
   "transitive_descendants": 875,
   "verdict_rationale": null
 }

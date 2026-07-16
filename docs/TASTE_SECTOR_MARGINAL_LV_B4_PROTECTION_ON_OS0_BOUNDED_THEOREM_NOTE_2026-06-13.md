@@ -35,7 +35,7 @@ source-side claim-boundary declaration, not an audit verdict.
 
 ## Role
 
-The retained B4 radiative-stability theorem
+The B4 radiative-stability theorem (currently unaudited per ledger)
 ([`EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md`](EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md))
 forbids the marginal (dimension-4) velocity-anisotropy operator
 `c_t p_t^2 + c_s (p_x^2 + p_y^2 + p_z^2)`, `c_t != c_s`, on the OS0 (`c_t = c_s`)

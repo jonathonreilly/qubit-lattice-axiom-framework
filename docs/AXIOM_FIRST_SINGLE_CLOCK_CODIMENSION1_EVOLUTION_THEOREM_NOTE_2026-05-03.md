@@ -167,8 +167,9 @@ rather than derived.
 - **2026-06-12 (B-RANGE retired by narrowing the propagation clause to
   a retained supplier).** The current claim no longer declares
   (B-RANGE). Instead, S2′(c) is narrowed to the free `U = 1` bilinear
-  exact-log sector and cites the retained_bounded
-  [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md),
+  exact-log sector and cites the
+  [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md)
+  (currently unaudited per ledger),
   which proves a finite-velocity quasilocal Lieb-Robinson envelope for
   `H = -log(T_hat^2)/(2 a_tau)` when `0 < d mu < eta < arcsinh(m)`.
   The older (B-RANGE) finite-range premise remains only historical
@@ -232,8 +233,9 @@ Current baseline carrier:
 local algebra per site; Admissibility and Record are not load-bearing here).
 
 - **Per-site algebra.** Each site `x ∈ Z^3` carries the one-qubit
-  algebra `M_2(C)`; the retained
+  algebra `M_2(C)`; the
   [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
+  (currently unaudited per ledger)
   identifies `Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)` with the two factors
   exchanged by the central element, so the per-site operator content
   is the Pauli realization of the complexified Cl(3).
@@ -250,18 +252,18 @@ No fitted parameters. No observed values used as proof inputs.
 
 ## Inputs (one hop, with exact licenses)
 
-- **(R-STONE)** — retained positive_theorem
+- **(R-STONE)** — positive_theorem (currently unaudited per ledger)
   [`SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md):
   given finite-dim positive Hermitian `T` with trivial kernel and a
   fixed `τ > 0`, `H_gen = -(1/τ) log(T)` is unique, `U(t) =
   exp(-itH_gen)` is the unique strongly continuous one-parameter
   unitary group with that generator, and `T^n = U(-inτ)` (N1–N4).
-- **(R-RP2)** — retained_bounded
+- **(R-RP2)** — bounded_theorem (currently unaudited per ledger)
   [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md):
   bounded finite **2-step staggered-only** RP reduction for factorized
   `A_+^(2)` observables on the fixed-background surface; supplies the
   positive Hermitian blocked transfer `T̂²`.
-- **(R-SC2)** — retained_bounded
+- **(R-SC2)** — bounded_theorem (currently unaudited per ledger)
   [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md):
   with `spec(T̂²) ⊂ (0, M_T]`, functional calculus gives
   `H := -(1/(2a_τ)) log(T̂²/M_T)` self-adjoint with `H ≥ 0`
@@ -276,13 +278,13 @@ No fitted parameters. No observed values used as proof inputs.
   is not derived from the current framework axioms or Record-count
   layer. This source boundary does not close (B-AXIS.2) or (B-AXIS.3)
   and does not set an audit verdict.
-- **(R-ET)** — retained_bounded
+- **(R-ET)** — retained_bounded (per ledger)
   [`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md):
   raw equal-time commutation and tensor factorization for
   finite-dim tensor factors at distinct sites (dynamics excluded
   there; the free-sector propagation statement below is supplied by
   R-FBQL).
-- **(R-FBQL)** — retained_bounded
+- **(R-FBQL)** — bounded_theorem (currently unaudited per ledger)
   [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md):
   on the free `U = 1` bilinear staggered two-step sector, the exact
   reconstructed Hamiltonian `H = -log(T_hat^2)/(2 a_tau)` has a finite
@@ -292,11 +294,11 @@ No fitted parameters. No observed values used as proof inputs.
   `0 < d mu < eta < arcsinh(m)`. The row explicitly excludes strict
   finite-range, `m = 0`, gauged/interacting log-transfer locality, and
   full continuum microcausality.
-- **(R-CL3)** — retained positive_theorem
+- **(R-CL3)** — positive_theorem (currently unaudited per ledger)
   [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md):
   the per-site complexified Cl(3) algebra classification (2-dim
   irreducible Pauli factors).
-- **(G-SCOPE)** — retained_no_go
+- **(G-SCOPE)** — no_go (currently unaudited per ledger)
   [`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`](SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md):
   governing boundary. Stone uniqueness is transfer-relative and
   τ-relative; a no-second-clock claim must separately supply N2
@@ -328,9 +330,9 @@ No fitted parameters. No observed values used as proof inputs.
 
   Source-side N5 support is now isolated in
   [`SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md`](SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md):
-  on the current single-clock source packet, the admitted physical-clock
+  on the current single-clock source packet, the declared physical-clock
   inventory contains exactly the supplied `(T̂², 2a_τ)` transfer/step pair.
-  This supports the admission wording of (B-AXIS.3) only. It does not derive
+  This supports the open-condition wording of (B-AXIS.3) only. It does not derive
   (B-AXIS.1), does not select the axis/transfer construction in (B-AXIS.2),
   and does not mathematically exclude arbitrary commuting positive factor
   transfers.
@@ -624,7 +626,7 @@ source-supported internal block denominator `2a_tau` for the
 retained-bounded RP/SC two-step transfer supply `T_hat^2`, a still-supplied
 absolute physical clock unit/time metric, one declared evolution axis carrying
 that transfer construction, and no independent commuting transfer factor
-admitted as a second clock, the retained finite-dim Stone row gives the unique
+declared as a second clock, the finite-dim Stone row (currently unaudited per ledger) gives the unique
 generator
 `H = -(1/(2a_tau)) log(T_hat^2/M_T) >= 0` and the unique strongly continuous
 one-parameter unitary group `U(t) = exp(-itH)`. Each lattice slice `Sigma_t` is
@@ -676,18 +678,18 @@ authority for effective status.
 ## Citations
 
 - baseline carrier: [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
-- Stone core (retained): [`SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
-- transfer supply (retained_bounded):
+- Stone core (currently unaudited per ledger): [`SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
+- transfer supply (currently unaudited per ledger):
   [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md),
   [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
-- equal-time tensor locality (retained_bounded):
+- equal-time tensor locality (retained_bounded per ledger):
   [`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md)
-- free exact-log quasilocal propagation (retained_bounded, free
+- free exact-log quasilocal propagation (currently unaudited per ledger; free
   `U = 1` bilinear sector only):
   [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md)
-- per-site Cl(3) algebra (retained):
+- per-site Cl(3) algebra (currently unaudited per ledger):
   [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
-- governing boundaries (retained_no_go):
+- governing boundaries (status per ledger):
   [`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`](SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md),
   [`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`](SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md),
   [`QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`](QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md)

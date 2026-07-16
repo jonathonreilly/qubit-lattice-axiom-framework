@@ -20,7 +20,7 @@ but the **energy route to the v-chain additive readout does NOT escape `𝒞`**:
 it lands in **face ADD = P1** (and its intensive/Born variant in **face
 BLIND**), or it relocates the **same** multiplicative→additive (exp/log)
 dichotomy **one level up** (to the dynamics' generator). It pins, but does not
-retire, the admitted P1 premise of
+retire, the open P1 premise of
 [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md).
 
 > **Statement (the energy route is P1-equivalent).** Read the v-chain scalar
@@ -70,7 +70,7 @@ the energy route to the v-chain **additive** readout is **P1-equivalent**
 (diagnosis: it reduces to P1): it does **not** instantiate #2504's
 out-of-class path (a′), because "energies add" and "`W = log Z` is additive"
 are the **same** multiplicative→additive (`exp`/`log`) content read at two
-levels, and the identification "`W` is the free energy" is the admitted
+levels, and the identification "`W` is the free energy" is the assumed
 classification step (II.b). This **confirms and extends** #2456/#2504: the most
 natural path-(a′) candidate (the energy ledger) collapses into the dichotomy.
 This note does NOT close P1; it pins the energy route as P1-equivalent.
@@ -198,7 +198,7 @@ Each premise consumed, with type and ledger status:
 framework baseline, exactly the **identification of the v-chain scalar with the
 energy/free-energy ledger** — which is (II.b) = P1 — and the claim that the
 additive generator is a prior structure — which is the same exp/log move one
-level up. No premise outside `𝒞` is introduced; the admitted-premise count of
+level up. No premise outside `𝒞` is introduced; the open-premise count of
 the parent note is not reduced.
 
 ### Exercise 2 — Elon Musk first-principles
@@ -285,7 +285,7 @@ External authorities directly relevant:
    (1995).** *QFT I*, §4.4. Cluster decomposition / additivity of the energy
    over independent regions is an **axiom / classification criterion**, never
    derived from a more primitive non-additive structure. **Comparator** for
-   Pivot 1: the additive-`H` / cluster property is uniformly **admitted**.
+   Pivot 1: the additive-`H` / cluster property is uniformly **assumed**.
 6. **O. Bratteli & D. W. Robinson (1981).** *Operator Algebras and Quantum
    Statistical Mechanics II*, §5.3 (finite-system KMS ⇔ Gibbs); **M. Reed &
    B. Simon (1975).** *Methods of Modern Mathematical Physics II*, §X (`H` as a
@@ -446,7 +446,7 @@ structural-reframing no-go, already proven **(II.b) `⇔` P1**: if `W = log|Z|`
 then `W` is additive on block-diagonal `D` (runner T7); and additivity (with the
 multiplicative input `r = |det| > 0`) forces `W = c·log|Z|` by the Cauchy
 classifier, while every `F_p` (`p ≠ 0`) fails additivity (runner T7). The
-identification **is** the admitted classification step.
+identification **is** the assumed classification step.
 
 ### 3.4 Synthesis — the energy route lands in face ADD (runner T8)
 
@@ -480,7 +480,7 @@ exactly **why it is not**. Additivity is the **hypothesis** at both levels; the
 energy ledger to "derive" the additive readout would be circular. This note uses
 it only to **prove the energy route is P1-equivalent**.
 
-## 4. What this closes / what remains admitted
+## 4. What this closes / what remains open
 
 ### 4.1 What this closes (positive content despite negative outcome)
 
@@ -505,9 +505,9 @@ it only to **prove the energy route is P1-equivalent**.
   ADD), or the free-energy identification is (II.b) = P1, or the intensive
   variant is face BLIND.
 
-### 4.2 What remains admitted
+### 4.2 What remains open
 
-- **P1 itself** (the exponent-fixing additivity step) remains an admitted
+- **P1 itself** (the exponent-fixing additivity step) remains an open
   physical-principle selection premise of
   `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`. This note does not retire it; it
   pins the energy route as P1-equivalent.
@@ -541,7 +541,7 @@ reproven theorems; the class boundary is stated explicitly.
 
 | Route tested against the negative claim | Marker | Why it does not break this narrow no_go |
 |---|---|---|
-| Symmetry-type law (additive/multiplicative readouts) | THEOREM (not admitted) | Reproven (runner T2/T3/T4); classifies *which ledger*, does not select the ledger for `W`. |
+| Symmetry-type law (additive/multiplicative readouts) | THEOREM (not an open premise) | Reproven (runner T2/T3/T4); classifies *which ledger*, does not select the ledger for `W`. |
 | Energies-add via tensor structure (Pivot 1) | FACE ADD (one level up) | `Ĥ = −log(T̂²)`; `{(T̂²)^s}` one orbit; additive member is `log` (runner T5). |
 | Energies-add for interacting subsystems | RULED OUT | Spectrum does not add for `g ≠ 0` (runner T6); additivity is the independent-class = P1 hypothesis. |
 | "`W` is the free energy / energy-sector quantity" (Pivot 2) | FACE ADD = (II.b) = P1 | Free energy defined by log-det convention (runner T7); (II.b) `⇔` P1 (structural-reframing note). |
@@ -560,7 +560,7 @@ route," "Pivot 1/2," "symmetry-type" are local descriptive labels; "(BLIND),"
 "(ADD)," "face," "orbit," "(II.a)," "(II.b)" are mapped to the existing #2504 /
 #2456 / structural-reframing vocabulary, **not** new repo tags or a parent
 framing. The disputed step (identifying `W` with the energy ledger) is named
-explicitly as the tested admission; the load-bearing result is the elementary
+explicitly as the tested open premise; the load-bearing result is the elementary
 tensor algebra plus the transfer-operator `H = −log(T²)` realization, not the
 audit status of any framework row named for orientation.
 
@@ -586,7 +586,7 @@ selection." Response: in *this* framework the Hamiltonian is **not** a primitive
 multiplicative; its additivity is the `log` generator of the transfer orbit (runner
 T5), and holds **only** in the independent class (runner T6), which is P1's
 hypothesis. The "prior physical additivity of energy" is, operationally, the
-admitted additive/cluster property (Haag; Weinberg §4.4) — face ADD. A genuinely
+assumed additive/cluster property (Haag; Weinberg §4.4) — face ADD. A genuinely
 out-of-class scale mechanism that is **not** the energy ledger is the residual
 (a′); this note does not claim it impossible.
 
@@ -606,7 +606,7 @@ claim universal P1 impossibility.
 | Extensivity route | integer-`N` scaling | existing no-go | a weak (Add) variant; face ADD |
 | Structural reframing (cumulant) | `W = log Z` identification (II.b) | existing no-go | **Pivot 2 IS (II.b); proven `⇔` P1 there** |
 | `det`-character form selection | operator-product character | bounded_theorem | Stage FORM; orthogonal to the energy route |
-| FORM-premise integrity (#2503) | `(M)` co-admission | no_go | the form atom; this note is the exponent/energy atom |
+| FORM-premise integrity (#2503) | `(M)` companion open premise | no_go | the form atom; this note is the exponent/energy atom |
 | Two-stage synthesis | FORM collapse + Gibbs scale | bounded_theorem | the Gibbs/energy scale is face ADD here |
 | #2456 exponent-fixing irreducibility | (Add)⇔(Loc)⇔(Pot) + Born | no_go (four selectors) | this note adds the energy ledger as another face-ADD route |
 | #2504 exponent-fixing selector dichotomy | orbit `{r↦r^p}` dichotomy on `𝒞` | no_go (class `𝒞`) | **this note tests its open path (a′) for the energy ledger and closes that instance** |
@@ -653,7 +653,7 @@ cited framework note's audit status.
   not consumed).
 - No literature numerical comparators consumed.
 - No fitted selectors consumed.
-- No admitted unit conventions load-bearing on the claim.
+- No assumed unit conventions load-bearing on the claim.
 - No same-surface family arguments.
 - No new repo vocabulary or class tags.
 
@@ -714,7 +714,7 @@ realization, and the reproven (II.b) `⇔` P1 / Cauchy skeleton; the framework
 rows below are target/context only and their audit statuses are not consumed.
 
 - [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
-  — parent broad row whose P1 admitted premise this `no_go` pins. Its audit
+  — parent broad row whose P1 open premise this `no_go` pins. Its audit
   status is unaffected by this row.
 - `OBSERVABLE_PRINCIPLE_P1_EXPONENT_SELECTOR_DICHOTOMY_NARROW_NOTE_2026-06-02.md`
   (#2504; not a markdown-linked edge until it lands on main) — whose open path

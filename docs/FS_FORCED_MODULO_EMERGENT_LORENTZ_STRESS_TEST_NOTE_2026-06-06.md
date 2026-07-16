@@ -69,7 +69,7 @@ spin-1/2 support + abstract O_h/Cl(3) support
 
 This is a conditional route map and finite stress-test, not closure of FS and
 not a new axiom. The static baseline remains open to the hard-core boson until
-the realization/Lorentz/`R` chain is derived or otherwise admitted by retained
+the realization/Lorentz/`R` chain is derived or otherwise supplied by a retained
 authority.
 
 ## Role

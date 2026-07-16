@@ -4,7 +4,7 @@
 This runner REPROVES, at exact SymPy/Fraction precision from elementary tensor
 algebra and cited framework context, the load-bearing steps of the
 symmetry-type-readout reframe
-of the admitted P1 premise (scalar additivity on independent subsystems) of
+of the open P1 premise (scalar additivity on independent subsystems) of
 `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, and FORMALIZES the crux test that
 decides whether routing the v-chain additive readout through "the VEV is an
 energy" escapes the sector-composition selector class C of
@@ -91,7 +91,8 @@ Tests (all exact SymPy / Fraction; no fitted or observed inputs):
         additive. Reproven: (i) T^2 multiplicative over modes <=> H additive
         is the exp/log move; (ii) the WHOLE family (T^2)^s = (x)_p
         diag(1, e^{-2 s E(p)}) is multiplicative for EVERY s, and the additive
-        generator is the p->0 (log) member s . H -- i.e. {(T^2)^s} is one
+        generator is the normalized p->0 derivative -log((T^2)^s)/(2 a_tau) (NOT the p->0
+        member, which is the identity since (T^2)^s -> I) -- i.e. {(T^2)^s} is one
         {r ↦ r^s} orbit, so "H additive" sits in face ADD of #2504's dichotomy
         applied at the transfer-operator level. It does NOT supply an additive
         readout PRIOR to a log choice.
@@ -109,10 +110,11 @@ Tests (all exact SymPy / Fraction; no fitted or observed inputs):
         presupposes log|det|; and (II.b) <=> P1 (if W = log|Z| then W is
         additive on block-diagonal D; if W is additive + multiplicative-input
         then W = c log|Z|). Reproven symbolically on the block-diagonal
-        substrate; the identification is the admitted classification step.
+        substrate; the identification is the assumed classification step.
 - T8  : SYNTHESIS — the energy route lands in face ADD of the #2504 dichotomy.
         Reproven: the additive coordinate of the energy ledger is exactly the
-        log readout (the p->0 member of {r ↦ r^p}); the selector "read the
+        log readout (the normalized p->0 derivative / generator of {r ↦ r^p}, not the
+        p->0 member r^p -> 1); the selector "read the
         additive (energy) quantum number" references the BARE additive value
         (face ADD), not an orbit-invariant single-sector readout (face BLIND).
         The Born/normalized energy density (intensive, per-site) is the
@@ -283,7 +285,7 @@ def test_T1_structure_survey() -> None:
     # Consistency: the color/generation note records the Z3 bridge as an OPEN
     # GATE (multiplicative readout is used but not over-claimed), and the Koide
     # recasting is explicitly "not a derivation" -- i.e. the multiplicative
-    # ledger is used HONESTLY, mirroring how the additive ledger is admitted.
+    # ledger is used HONESTLY, mirroring how the additive ledger is assumed.
     gate = ROOT / "docs" / "Z3_CHARACTER_ISOMORPHISM_COLOR_GENERATION_OPEN_GATE_NOTE_2026-05-10.md"
     koide = ROOT / "docs" / "KOIDE_Q_TWO_THIRDS_Z3_CHARACTER_NORM_SPLIT_RECASTING_THEOREM_NOTE_2026-05-10.md"
     cons_ok = (

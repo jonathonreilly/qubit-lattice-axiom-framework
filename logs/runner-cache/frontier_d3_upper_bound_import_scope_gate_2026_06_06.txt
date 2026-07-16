@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py
-runner_sha256: c95fc5db2d11982fc14ff1883a0b9d635d52da9efbac764978e81558e6128e6b
+runner_sha256: 1a41c73ab5b0e9a3829122812bc023f4b2a71d59512b313efae83f5a8535ee2d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.03
 status: ok
 ----- stdout -----
 D3 upper-bound native-stable-edge gate
@@ -29,7 +29,7 @@ D3 upper-bound native-stable-edge gate
 [PASS] upper wrapper forbids internal-derivation overread
 [PASS] stable support note keeps full closed-orbit boundary explicit
 [PASS] Bertrand support note verifies circular-orbit sign classification
-[PASS] Coulomb support note keeps admitted-premise boundary explicit
+[PASS] Coulomb support note keeps its open-premise boundary explicit
 [PASS] Coulomb support note does not close D3 chain by itself
 [PASS] lower support set is exactly the checked current finite set
 [PASS] native stable upper set over checked positive dims is d<=3

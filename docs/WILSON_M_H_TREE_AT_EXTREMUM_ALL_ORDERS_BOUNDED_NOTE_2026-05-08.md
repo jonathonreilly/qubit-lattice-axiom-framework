@@ -54,7 +54,7 @@ dividing by the uniform diagnostic all-corners count `16` (the parent
 Higgs note's
 [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](HIGGS_MASS_FROM_AXIOM_NOTE.md) eqs.
 `[3]–[5]` per-channel identification under the uniform-`N_taste = 16`
-admission — non-derived; bounded in
+convention — non-derived; bounded in
 [`HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`](HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md)
 forward-reference), is the *all-orders-in-r* closed form
 
@@ -190,7 +190,7 @@ above.
 | Step | Load-bearing input | Lattice-action input? |
 |---|---|---|
 | Exact curvature at `m^* = -4r` from sister extremum note: `(1/4) Σ_k binomial(4,k)·((k-2)^2 r^2 - u_0^2)/((k-2)^2 r^2 + u_0^2)^2` | sister forward-reference [`WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md`](WILSON_VTASTE_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md) | no |
-| Per-channel diagnostic count division by uniform-`N_taste = 16` (parent eqs. `[4]–[5]`): `\|d^2V/dm^2\|_per-channel = \|total\|/16` (admitted diagnostic denominator, not a physical channel-selection derivation — see Part II conditional closure (2)) | parent Higgs note + admitted convention | no |
+| Per-channel diagnostic count division by uniform-`N_taste = 16` (parent eqs. `[4]–[5]`): `\|d^2V/dm^2\|_per-channel = \|total\|/16` (assumed diagnostic denominator, not a physical channel-selection derivation — see Part II conditional closure (2)) | parent Higgs note + assumed convention | no |
 | Sign flip: total curvature is negative (tachyonic), so `\|d^2V/dm^2\| = u_0^2 - (k-2)^2 r^2` per term, etc. | algebraic sign | no |
 | Resulting diagnostic `Q_W(r,u_0) = \|per-channel\| = (1/64) · Σ_k binomial(4,k) · (u_0^2 - (k-2)^2 r^2) / ((k-2)^2 r^2 + u_0^2)^2` (eq. (2)) | direct substitution | no |
 | Reduction at `r = 0`: each summand `→ 1/u_0^2`; sum `→ 16/u_0^2`; divide by 64 `→ 1/(4 u_0^2)`; matches parent eq. `[5]` | binomial-state-count `Σ binom = 16` | no |
@@ -276,7 +276,7 @@ why leading-order is `~14 %` off.
   for the staircase multiplicities `binomial(4, k)`.
 - [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](HIGGS_MASS_FROM_AXIOM_NOTE.md)
   for the parent tree-level setup, eqs. `[3]–[6]`, and the uniform-
-  `N_taste = 16` channel admission. (Per Gap #3 lite 2026-05-10 the
+  `N_taste = 16` channel convention. (Per Gap #3 lite 2026-05-10 the
   parent note's headline quantity is now labeled `m_curv_tree` — a
   per-channel symmetric-point curvature scale of V_taste, NOT a
   Higgs-mass pole; this all-orders Wilson-correction note continues to
@@ -285,7 +285,7 @@ why leading-order is `~14 %` off.
   as `m_curv_tree` for first-principles-honest scope.)
 - [`HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`](HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md)
   for the boundary statement that the uniform-`N_taste = 16` choice is
-  itself a non-derived admission. **Forward-reference;** on a sister
+  itself a non-derived convention. **Forward-reference;** on a sister
   branch.
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   for non-load-bearing staggered-Dirac realization gate context.
@@ -326,7 +326,7 @@ derived content of this note. It is a finite-sum identity in symbolic
 - the physical Higgs mass `m_H` numerical value (`m_H_PDG = 125.10` is
   treated as a comparison input only, not a derivation input);
 - the value of the Wilson coefficient `r` itself (the `r ≈ 0.269`
-  value is the *all-orders matching value under the admissions*, not a
+  value is the *all-orders matching value under the assumed conventions*, not a
   derivation of `r`);
 - the plaquette mean-field link `u_0` numerical value;
 - the staggered-Dirac realization gate;

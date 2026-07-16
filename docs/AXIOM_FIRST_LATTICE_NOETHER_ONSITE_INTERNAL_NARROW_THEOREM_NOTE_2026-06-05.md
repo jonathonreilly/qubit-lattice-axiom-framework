@@ -279,7 +279,7 @@ narrow theorem.
   anticommutation, per-site Fock dimension 2, and the Berezin determinant
   readout — the algebraic surface on which the bilinear current is built:
   [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
-  (retained-grade).
+  (currently unaudited per ledger).
 - The finite local density/readout bridge identifying
   `rho_x = chibar_x chi_x` with the CAR number projection `a_x^dag a_x` and
   normalized onsite U(1) generator:
@@ -289,7 +289,7 @@ narrow theorem.
   Hermitian (the `det = prod(m^2 + lambda^2)` reality mechanism), cited as the
   carrier-positivity surface:
   [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md)
-  (retained-grade).
+  (retained per ledger).
 
 **Repaired / parent row (backticked — not a load-bearing dependency edge):**
 

@@ -10,8 +10,8 @@ Checks one row-local bounded premise:
   pseudoscalar epsilon component.
 
 It does not derive that premise from the Lattice / Qubit / Admissibility /
-Record baseline alone, and it adds no repo-wide axiom, framework primitive, or
-Tier-A admission. The runner verifies the consequences needed by the Strong CP
+Record baseline alone, and it adds no repo-wide axiom or framework primitive, and registers no
+admission-class ledger entry. The runner verifies the consequences needed by the Strong CP
 operator-basis row: real scalar masses have positive determinant phase on
 sampled staggered operators, non-real scalar phases fail the determinant phase
 condition, and pseudoscalar/mixed masses are outside the premise because their

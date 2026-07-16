@@ -90,11 +90,11 @@ Supplying the missing native bridge is substantive new work, out of scope for
 this repair. This revision takes the **split path**:
 
 - **Load-bearing (in scope):** The runner's bounded extraction diagnostics on the two small surfaces (1D N=8 and 2D 4x4): traced Bell overlap, negativity, and standard teleportation fidelity under the last-taste-bit logical-qubit identification, confirming a positive first artifact for the Poisson/CHSH cases relative to the null case. The 2026-06-03 repair exposes and checks the imported Poisson/CHSH helper source in the row runner; the 2026-06-07 repair exposes the retained-bounded RALA authority for the finite last-taste logical-operator selection.
-- **NON-load-bearing (split off / admitted):** The native preparation/readout theorem realizing the retained-axis last taste bit as a physical deterministic teleportation carrier (distinct from offline ground-state extraction). This remains a missing bridge theorem recorded here as an admitted, not-derived input.
+- **NON-load-bearing (split off / open):** The native preparation/readout theorem realizing the retained-axis last taste bit as a physical deterministic teleportation carrier (distinct from offline ground-state extraction). This remains a missing bridge theorem recorded here as an open, not-derived input.
 
 No new axiom, primitive, import, or approved bridge is introduced. The
 runner-verified core is the load-bearing content; the named bridge stays an
-admitted, non-load-bearing input until a separate derivation lands.
+open, non-load-bearing input until a separate derivation lands.
 
 ## 2026-06-03 Source-Packet And Carrier-Label Repair
 

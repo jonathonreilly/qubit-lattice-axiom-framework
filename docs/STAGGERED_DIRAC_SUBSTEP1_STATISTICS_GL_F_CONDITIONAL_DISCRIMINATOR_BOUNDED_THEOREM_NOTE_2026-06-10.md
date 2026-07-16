@@ -131,23 +131,23 @@ admit it, and does not ask the audit to adjudicate a global supplier survey.
 ## 3. Cited authorities (one hop, with licenses)
 
 - [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
-  — `retained`. **License used here:** the dimensional free-boson/CCR
+  — (status per the ledger). **License used here:** the dimensional free-boson/CCR
   exclusion and admitted Grassmann candidate inside the declared
   two-candidate surface. This note independently recomputes the finite-cutoff
   CCR defect and does not use that row as a hard-core-vs-CAR selector.
 - [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md`](STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md)
-  — `retained_no_go`. **License used here:** the third candidate (hard-core
+  — (status per the ledger). **License used here:** the third candidate (hard-core
   boson), the tie facts (its (A), (C), (D)), and the named escape clause
   (§6, N6, N7). This note's (T3) reproduces its facts computationally and
   contradicts nothing in it: the selection here is *conditional on `GL(F)`*,
   which the no-go itself identifies as outside the baseline.
 - [`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md)
-  — `retained_bounded`. **License used here:** its scoped canonical-CCR
+  — (status per the ledger). **License used here:** its scoped canonical-CCR
   free-boson exclusion and its explicit hard-core/CAR boundary. It is not
   consumed as a `GL(F)` supplier: its retained scope excludes the free CCR
   branch and leaves hard-core-vs-CAR selection out of scope.
 - [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
-  — `retained`. **License used here:** the grading operator `F`, its
+  — (status per the ledger). **License used here:** the grading operator `F`, its
   involution/spectrum/grading facts (F1)–(F7), used as the *algebraic
   carrier* against which `GL(F)` is defined — exactly the role its own C4
   anticipates. Its disclaimer ("does not by itself prove a physical
@@ -205,7 +205,7 @@ statistics-selection or `GL(F)`-supplier theorem.
 Non-load-bearing reader pointers (plain text): the gate
 `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (S2 support tier this
 boundary refines), `SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md`
-(exercise verdict that FS is a located admission — this note's T1-T3 plus
+(exercise verdict that FS is a located open premise — this note's T1-T3 plus
 the boundary diagnostic are the computed, surface-specific version of that
 location),
 `CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md`,
@@ -256,10 +256,10 @@ shows the conclusion fails when the hypothesis is dropped).
 - **No unconditional statistics selection.** Unconditionally, the retained
   2026-05-25 no-go stands; this note reproduces it (T3) and contradicts
   nothing in it. The selection in (T2) is conditional on `GL(F)`.
-- **`GL(F)` is not supplied here.** It is not derived, not admitted, and not
-  proposed for Tier-A admission by this note; any future `FS`/`GL(F)`
-  admission is a separate governance decision after audit and explicit user
-  approval (no-go §7 process).
+- **`GL(F)` is not supplied here.** It is not derived, not supplied, and not
+  proposed for admission-registration by this note; any future `FS`/`GL(F)`
+  open-premise registration is a separate governance decision after audit and
+  explicit user approval (no-go §7 process).
 - **No CAR-frame uniqueness.** (T2) selects the statistics *class*; the JW
   note's non-uniqueness disclaimer is untouched.
 - **No claim about other locality formalisms.** `GL(F)` is the specific
@@ -277,8 +277,8 @@ Before: "(B-stat): statistics selection open (S2/FS input)". After this note
 graded-locality predicate `GL(F)` relative to the retained parity grading
 `F`; given `GL(F)`, the Grassmann/CAR class is forced on the substep-1
 surface (conditional closure, this note); without it, the retained
-2026-05-25 no-go holds; `GL(F)`/FS is a genuine admission candidate, not
-currently retained or Tier-A admitted."
+2026-05-25 no-go holds; `GL(F)`/FS is a genuine open-premise candidate, not
+currently retained or admission-registered."
 
 ## 8. Command and expected output
 

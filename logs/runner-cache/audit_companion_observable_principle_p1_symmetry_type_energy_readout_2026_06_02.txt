@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_observable_principle_p1_symmetry_type_energy_readout_2026_06_02.py
-runner_sha256: ebef62966cf953747818d4ba8fc37259eff58f790c0dd7c5584a29f45df7dd71
+runner_sha256: 144eb8329d939f489b88f4c9e5350c572f96eb2bd32f53fbda7c6650b94188be
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.60

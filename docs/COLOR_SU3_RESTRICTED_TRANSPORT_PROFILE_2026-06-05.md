@@ -3,7 +3,7 @@
 **Date:** 2026-06-05
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem — exact finite-algebra support under an
-admitted transport rule.
+supplied transport rule.
 **Status authority:** independent audit lane only. This source note does not
 apply audit verdicts, edit audit data, or assert package promotion.
 **Primary runner:**
@@ -21,15 +21,15 @@ with cache
 ## Purpose
 
 The projection block supplies an exact rank-3 symmetric endpoint once a
-two-qubit link endpoint is admitted. This note asks the next narrow question:
+two-qubit link endpoint is supplied. This note asks the next narrow question:
 
 ```text
-Given admitted Sym^2 endpoints and the standard SU(3) endpoint transport law,
+Given supplied Sym^2 endpoints and the standard SU(3) endpoint transport law,
 does endpoint dressing make the color line invariant in the expected 0 -> 1
 -> 2 profile?
 ```
 
-Yes. Under the admitted transformation rule, the finite algebra is exact:
+Yes. Under the supplied transformation rule, the finite algebra is exact:
 bare link transport is endpoint-variant, a half-dressed line is invariant at
 one endpoint, and a fully dressed meson/Wilson-type line is invariant at both
 endpoints.
@@ -61,7 +61,7 @@ Admissibility, Record).
 | closed trace `Tr(U_loop)` | closed-loop invariant | infinitesimal trace of a commutator vanishes |
 
 So, once the two-qubit Sym2 endpoint and SU(3)-restricted transport rule are
-admitted, the color transport profile matches the finite two-endpoint
+supplied, the color transport profile matches the finite two-endpoint
 Gauss-law pattern.
 
 ## What this supplies and what it does not supply
@@ -69,8 +69,8 @@ Gauss-law pattern.
 This block supplies only the finite algebra after the transport rule is supplied:
 
 ```text
-admitted Sym2 endpoint
-  + admitted SU(3) transport transformation law
+supplied Sym2 endpoint
+  + supplied SU(3) transport transformation law
   -> endpoint-invariant color-singlet line algebra.
 ```
 
@@ -92,7 +92,7 @@ formation/readout bridge supplies them. It does not supply the bridge.
 - Does not derive physical color.
 - Does not establish a repo-wide quantum-link ontology.
 - Does not derive the two-qubit endpoint or the SU(3) transport law.
-- Does not derive Gauss generators from the axioms; it checks the admitted
+- Does not derive Gauss generators from the axioms; it checks the supplied
   infinitesimal endpoint action.
 - Does not derive an action, coupling, beta function, rate, time, confinement,
   or continuum QCD.

@@ -46,9 +46,9 @@ Thus the `(4 pi)` denominator in the alpha-bare convention is the same
 numeric `(4 pi)` exposed by the framework-local `Z^3` Green-kernel
 asymptotic in this static-source chain. This bridge does not derive the convention
 `alpha_bare := g_bare^2/(4 pi)` from the framework's Lattice + Qubit
-baseline; it composes the landed bounded
-and accepted-premise rows so the parent alpha-bare surface is explicit
-and audit-readable.
+baseline; it composes the landed bounded rows and the I1-I3 conditional-premise
+bridge rows (currently unaudited per ledger) so the parent alpha-bare surface
+is explicit and audit-readable.
 
 ## Proof-Walk
 

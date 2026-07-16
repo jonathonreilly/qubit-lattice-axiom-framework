@@ -147,7 +147,7 @@ def main() -> None:
         and has(bertrand, "d >= 5` is unstable"),
     )
     check(
-        "Coulomb support note keeps admitted-premise boundary explicit",
+        "Coulomb support note keeps its open-premise boundary explicit",
         has(coulomb, "admitted premises")
         and has(coulomb, "does not supply a framework-native electromagnetic sector"),
     )

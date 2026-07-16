@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_scalar_mass_class_bounded_premise_runner.py
-runner_sha256: e055537a9c31c6ff587ffbebd7031de61e293e5a3faf4d30444a35a8a21f0351
+runner_sha256: d186e6326c3af0cb88a10cfc762ec6c207f3020e18f6d161e91d1e2950527ccb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -51,7 +51,7 @@ STAGGERED SCALAR-MASS ACTION CLASS BOUNDED-PREMISE BRIDGE
   [PASS] mixed mass can pass determinant positivity, so the scalar-class wall is independent  (mixed determinant positive on 12/12; excluded by epsilon component, not by this determinant gate)
 
 ==============================================================================
-SUMMARY: PASS=28 FAIL=0 runtime=0.05s
+SUMMARY: PASS=28 FAIL=0 runtime=0.03s
 VERDICT: bounded-premise bridge passes; premise is explicit and row-local.
 
 ----- stderr -----

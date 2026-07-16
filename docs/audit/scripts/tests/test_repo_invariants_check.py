@@ -1,11 +1,11 @@
 """Regression tests for the repo-invariants harness.
 
-Encodes the concrete probe cases from the PR #5399 sol-max review rounds
-(markdown masking and link grammar, ledger-shard schema safety, tracked-set
-discipline for every measured family, destination classification, snapshot
-diff sensitivity, and the alias-safe snapshot-output refusal). It is a
-regression boundary for those named cases, not a full CommonMark or JSON
-conformance suite.
+Encodes concrete adversarial probe cases: markdown masking and link grammar,
+ledger-shard schema and canonical-placement safety, tracked-set discipline
+for every measured family, destination classification, snapshot diff
+sensitivity, and the snapshot-output write refusal. It is a regression
+boundary for those named cases, not a full CommonMark or JSON conformance
+suite.
 """
 
 import io
@@ -568,6 +568,84 @@ class RoundFiveProbes(unittest.TestCase):
                 self.assertIn("not regular files", out.getvalue())
             finally:
                 ric.REPO_ROOT = old
+
+
+
+
+class RoundSixProbes(unittest.TestCase):
+    def _mk_repo(self, tmp):
+        root = Path(os.path.realpath(tmp))
+        subprocess.run(["git", "init", "-q", str(root)], check=True)
+        for rel, payload in ((ric.PREMISE_NODES, {"nodes": {}}),
+                             (ric.OBLIGATIONS, {"nodes": {}})):
+            p = root / rel
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(json.dumps(payload))
+        return root
+
+    def _check(self, root, enforce):
+        old = ric.REPO_ROOT
+        ric.REPO_ROOT = str(root)
+        try:
+            out = io.StringIO()
+            with redirect_stdout(out):
+                return ric.run_check(enforce), out.getvalue()
+        finally:
+            ric.REPO_ROOT = old
+
+    def test_absent_and_null_status_fail_check_end_to_end(self):
+        for status_form in ("absent", "null"):
+            with tempfile.TemporaryDirectory() as tmp:
+                root = self._mk_repo(tmp)
+                shard_dir = root / ric.LEDGER_PREFIX / "al"
+                shard_dir.mkdir(parents=True)
+                row = {"claim_id": "alpha", "note_path": "docs/A.md"}
+                if status_form == "null":
+                    row["effective_status"] = None
+                (shard_dir / "alpha.json").write_text(json.dumps(row))
+                (root / "docs").mkdir(exist_ok=True)
+                (root / "docs" / "A.md").write_text("x")
+                subprocess.run(["git", "-C", str(root), "add", "-A"], check=True)
+                for enforce in (False, True):
+                    code, out = self._check(root, enforce)
+                    self.assertEqual(code, 1, (status_form, enforce))
+                    self.assertIn("missing/null effective_status", out)
+
+    def test_wrong_fanout_fails_check_end_to_end(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = self._mk_repo(tmp)
+            shard_dir = root / ric.LEDGER_PREFIX / "zz"
+            shard_dir.mkdir(parents=True)
+            (shard_dir / "alpha.json").write_text(json.dumps(
+                {"claim_id": "alpha", "effective_status": "unaudited",
+                 "note_path": "docs/A.md"}))
+            (root / "docs").mkdir(exist_ok=True)
+            (root / "docs" / "A.md").write_text("x")
+            subprocess.run(["git", "-C", str(root), "add", "-A"], check=True)
+            for enforce in (False, True):
+                code, out = self._check(root, enforce)
+                self.assertEqual(code, 1)
+                self.assertIn("not at canonical shard path", out)
+
+    def test_irregular_surface_fails_enforced_mode_too(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = self._mk_repo(tmp)
+            target = root / "REAL.md"
+            target.write_text("[authority](docs/MISSING.md)")
+            (root / "README.md").symlink_to(target)
+            subprocess.run(["git", "-C", str(root), "add", "-A"], check=True)
+            code, out = self._check(root, True)
+            self.assertEqual(code, 1)
+            self.assertIn("not regular files", out)
+
+    def test_malformed_registry_is_structured_failure(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = self._mk_repo(tmp)
+            (root / ric.PREMISE_NODES).write_text("{not json")
+            subprocess.run(["git", "-C", str(root), "add", "-A"], check=True)
+            code, out = self._check(root, False)
+            self.assertEqual(code, 1)
+            self.assertIn("premises", out)
 
 
 if __name__ == "__main__":

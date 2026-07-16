@@ -352,3 +352,6 @@ Neither prong DERIVES r=1/2 (Q=2/3).
  r=1/2 remains admissible-but-unforced on the cited surface; selecting it is a POSIT,
  not a derivation from the current native circulant metric/counting data.
 """)
+
+import sys as _sys
+_sys.exit(1 if FAIL else 0)

@@ -103,7 +103,7 @@ Steps 1-5 use only:
   matrices, polynomial invariants);
 - The Lattice axiom (`Z^3` site set, supplying the indexing context
   in which `Y` is read as a `3 x 3` flavor / generation matrix) and
-  the Qubit axiom (one-qubit / `Cl(3)` local algebra, supplying
+  the Quantum axiom (one-qubit / `Cl(3)` local algebra, supplying
   the algebraic ambient through the upstream source rows);
 - Two upstream source rows cited in the
   parent's "Atlas and axiom inputs" list:
@@ -132,7 +132,7 @@ the parent no-go.
 This companion does **not**:
 
 - introduce a new minimal-axiom statement (the explicit-owner-approved
-  axiom set is fixed at `MINIMAL_AXIOMS_2026-06-29.md`);
+  axiom set is fixed at `MINIMAL_AXIOMS_2026-06-04.md`);
 - change the parent's claim scope, claim type, or admitted-context
   inputs (the no-go remains exactly what the parent states: a no-go
   for right-conjugacy-invariant observables of `K`);
@@ -150,10 +150,14 @@ premise hash.
 
 ## The Record axiom is not used by the load-bearing chain
 
-The Record axiom (`MINIMAL_AXIOMS_2026-06-29.md` §"Record") says:
+The Record axiom (`MINIMAL_AXIOMS_2026-06-04.md` §"Record") says:
 
-> For any finite collection of pairwise-disjoint records, scalar readout
-> `I` is additive, with `I(empty)=0`.
+> When a finite record-readout surface is specified, its scalar record
+> functional is additive over disjoint record collections:
+>
+>     I(R_1 sqcup R_2) = I(R_1) + I(R_2)
+>
+> with `I(empty) = 0` after an explicit additive-baseline convention.
 
 The parent's load-bearing chain (Steps 1-5 above) defines no record
 surface, asks no question about scalar record additivity, and writes
@@ -171,7 +175,7 @@ contraposition conclusion are fixed by:
   traces of powers + det, all standard linear algebra);
 - the Lattice axiom (`Z^3` indexing context, supplied via the upstream
   PMNS-frame chain whose `Y` is a `3 x 3` matrix on generation labels);
-- the Qubit axiom (one-qubit / `Cl(3)` local algebra, supplied via
+- the Quantum axiom (one-qubit / `Cl(3)` local algebra, supplied via
   the upstream chain whose `Y` lives in the generation-flavor sector of
   the `Cl(3)`-on-`Z^3` package).
 
@@ -257,7 +261,7 @@ verifies that the parent's "Question", "Bottom line",
 not close" sections contain zero Record-axiom usage tokens
 (`I(R_1`, `I(R)`, `scalar record`, `record functional`,
 `record-readout`, `additive record`, `additive scalar record`,
-`MINIMAL_AXIOMS_2026-06-29`, `Record axiom`). Confirms the
+`MINIMAL_AXIOMS_2026-06-04`, `Record axiom`). Confirms the
 parent's load-bearing surface does not invoke Record-axiom content.
 
 Block 9 — Static-source scan of parent runner. Reads
@@ -289,7 +293,7 @@ Block 12 — Hypothesis-set parity check. Re-derives the parent's
 load-bearing matrix-algebra steps (right-orbit conjugacy, spectral
 preservation, two witness pairs) without any reference to the
 Record axiom, confirming that the parent's premise set is
-strictly smaller than `{Lattice, Qubit, Admissibility, Record}` and is
+strictly smaller than `{Lattice, Quantum, Record}` and is
 unchanged across the 2026-05-20 -> 2026-06-04 axiom-set update.
 
 Block 13 — Upstream-naming surface scan. Reads the parent's two
@@ -345,7 +349,7 @@ This companion's load-bearing-step invariance observation depends only
 on the Quantum and Lattice content being preserved across the two
 memos — verified in Block 11 — and on the Record axiom adding a
 strictly additive non-overlapping statement — confirmed by direct
-reading of `MINIMAL_AXIOMS_2026-06-29.md` §"Record" and by the
+reading of `MINIMAL_AXIOMS_2026-06-04.md` §"Record" and by the
 parent's load-bearing chain having zero Record-axiom usage tokens
 (Blocks 8-9).
 
@@ -371,7 +375,7 @@ parent's load-bearing chain having zero Record-axiom usage tokens
   `effective_status_reason=awaiting_audit`,
   `load_bearing_score=10.19`, `claim_type=no_go`
 - New framework axioms:
-  [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
+  [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md)
 - Predecessor framework axioms (still authoritative for local-algebra
   content):
   [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)

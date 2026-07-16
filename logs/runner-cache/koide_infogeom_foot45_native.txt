@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/koide_infogeom_foot45_native.py
-runner_sha256: ee2d2402ff4b7a96c444fa267417aa06111bbeebb3cc9a93d01f9526def53f24
+runner_sha256: cf370fabe7ced41813d624fd7c746eb5d63b507c5bf709d92a3f389eccc4a575
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.36
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -27,7 +27,7 @@ KOIDE info-geometry + Foot-45 native test  (native C3 circulant class)
 
 --- C. PRONG 1: quantum geometric tensor (FS metric + Berry) == 0 ---
 [PASS] eigenvectors are b-independent Fourier modes (eigenvector rigidity)
-[PASS] quantum geometric tensor (FS metric + Berry curvature) == 0 over b-plane  -- max|QGT component| = 1.89e-20
+[PASS] quantum geometric tensor (FS metric + Berry curvature) == 0 over b-plane  -- max|QGT component| = 1.31e-20
 [PASS] EXACT: fixed DFT basis F diagonalizes every circulant H (b-constant projectors)  -- max offdiag=2.34e-16, recon err=6.66e-16
     => Re QGT (Fubini-Study metric) = 0  AND  Im QGT (Berry) = 0, EXACTLY:
        spectral projectors |psi_k><psi_k| are b-constant (DFT diagonalizes all circulants);

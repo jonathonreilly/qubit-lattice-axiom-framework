@@ -151,10 +151,20 @@ def main() -> int:
         and "A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently" in axioms,
     )
     gate.check(
-        "U4 note now cites the current axiom memo",
+        "U4 note cites the current axiom memo and carries no stale current-axiom sentinels",
         "MINIMAL_AXIOMS_2026-06-29.md" in note
         and "current Qubit axiom" in note
+        # no stale Quantum-axiom / three-axiom plain-text sentinels presented as current
+        and "current Quantum axiom" not in note
+        and "current three-axiom memo" not in note
+        # 2026-06-05 may appear only as an explicitly historical reference, never as a live markdown link
         and "MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)" not in note,
+    )
+    gate.check(
+        "U4 note carries multiplicity-one as an explicit named condition (not read off the memo verbatim)",
+        "conditional on multiplicity-one" in note
+        and "named condition" in note
+        and "not read off the memo verbatim" in note,
     )
     gate.check(
         "U4 note keeps auditor-owned source-side status",
@@ -196,8 +206,8 @@ def main() -> int:
         "matrix units connect the two coordinate lines",
     )
     gate.check(
-        "U4 consequence is exactly k=1 and dim_C H_x=2",
-        "k(x)` of the per-site Cl(3) module is exactly `1`" in note
+        "U4 carries the multiplicity-one (k=1) named condition giving per-site H_x=C^2, dim 2",
+        "multiplicity `k(x) = 1`" in note
         and "Hilbert `H_x = \u2102\u00b2`" in note
         and "dim 2" in note,
     )
@@ -216,10 +226,11 @@ def main() -> int:
         print("U4 qubit-reframe verifier failed.")
         return 1
     print(
-        "Verified scoped U4 alias closure: the current Qubit axiom supplies "
-        "one qubit/M2(C)/Cl(3,0) per site; Pauli matrices realize the local "
-        "Cl(3,0) carrier as all of M2(C), while downstream staggered gates "
-        "remain separately auditor-owned."
+        "Verified scoped U4 alias reduction: the current Qubit axiom supplies "
+        "the one-site algebra M2(C)/Cl(3,0); under the one-qubit-per-site "
+        "(multiplicity-one) named condition, per-site Hilbert = C^2 and Pauli "
+        "matrices realize the local Cl(3,0) carrier as all of M2(C), while "
+        "downstream staggered gates remain separately auditor-owned."
     )
     return 0
 

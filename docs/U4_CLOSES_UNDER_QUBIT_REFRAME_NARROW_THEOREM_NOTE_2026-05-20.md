@@ -9,8 +9,8 @@
 **Purpose:** Make explicit that the **U4 bridge** ("the framework's
 per-site Hilbert space on the Z^3 substrate IS the Cl(3) faithful
 complex irrep on per-site `V`") — open under the pre-2026-05-20 Cl(3)
-framing — is **directly given by the qubit-per-site baseline** of
-the current Qubit axiom
+framing — is **given, under the one-qubit-per-site (multiplicity-one)
+reading, by the qubit-per-site baseline** of the current Qubit axiom
 ([`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)).
 
 **Audit-dispatch parent candidate:** If a future independent audit
@@ -35,18 +35,20 @@ staggered-Dirac substep beyond this alias map.
 Promotion beyond renaming support requires a separate theorem whose proof
 does not simply restate the accepted qubit-per-site baseline.
 
-Under the new axioms, U4 is no longer an open admission. The
-single-faithful-Cl(3)-module-per-site selection is what the
-qubit-per-site baseline *means*.
+Under the current Qubit axiom, U4 reduces to the multiplicity-one
+(single-faithful-Cl(3)-module-per-site) condition: the Qubit axiom
+supplies the one-site algebra `M_2(C)`, and the "one qubit per site"
+reading (`k(x) = 1`) is the single-module condition this note makes
+explicit.
 Conditional sub-claims on a number of substep-1 narrow theorems
-become unconditional.
+reduce to that multiplicity-one condition.
 
 ## Honest scope
 
 This note **does not re-derive the qubit-per-site baseline**. It
-records the immediate logical consequence: the qubit-per-site baseline
-(qubit at every site, equivalently per-site `M_2(ℂ) ≅ Cl(3,0)`)
-directly closes the U4 bridge.
+records the immediate logical consequence: under the multiplicity-one
+condition, the qubit-per-site baseline (qubit at every site, equivalently
+per-site `M_2(ℂ) ≅ Cl(3,0)`) closes the U4 bridge.
 
 If audit-retained, this row supplies a candidate upstream support for
 moving the U4-conditional sub-claims of several substep-1 narrow
@@ -59,17 +61,24 @@ substeps beyond U4) or retag any downstream row.
 
 ## Claim
 
-By the qubit-per-site baseline in
-[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
-("At each site `x`, the primitive physical local degree of freedom is
-one qubit; equivalently, the primitive one-site operator algebra is
-`A_x ~= M_2(C)`, equivalently `Cl(3,0)` in its real-algebra reading."):
+The current Qubit axiom in
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) reads:
+"The full one-site possibility domain has algebraic presentation
+`M_2(C)`" (with a `Cl(3,0)`-compatible real-algebra presentation used
+equivalently). This supplies the per-site operator **algebra**
+`A_x ~= M_2(C) ≅ Cl(3,0)`.
 
-**Axiom-unpacking statement (narrow).** For every lattice site `x ∈ Z^3`, the per-site
-Hilbert space `H_x` is `ℂ²`, the unique faithful complex irreducible
-module of the per-site operator algebra `M_2(ℂ) ≅ Cl(3,0)`. The
-multiplicity `k(x)` of the per-site Cl(3) module is exactly `1` (a
-single faithful complex irrep, not a direct sum).
+**Axiom-unpacking statement (narrow, conditional on multiplicity-one).**
+Take the physical per-site Hilbert module to be the **irreducible**
+module of `M_2(ℂ) ≅ Cl(3,0)`, i.e. multiplicity `k(x) = 1` (a single
+faithful complex irrep, not a direct sum) — the "one qubit per site"
+reading. Under that condition, for every lattice site `x ∈ Z^3` the
+per-site Hilbert space `H_x` is `ℂ²`, the unique faithful complex
+irreducible module. The current memo supplies the **algebra** `M_2(C)`;
+the multiplicity-one (single-module) commitment is the named condition
+this note unpacks. The current wording states the possibility-domain
+algebra rather than a literal Hilbert-space multiplicity, so `k(x) = 1`
+is carried here as an explicit condition, not read off the memo verbatim.
 
 **Equivalent formulations.** This is the same content as:
 
@@ -82,16 +91,17 @@ single faithful complex irrep, not a direct sum).
 - **(D2)** of `CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02`:
   "per-site Hilbert dim = 2 with Pauli realization `γ_i = σ_i`."
 
-Under the qubit-per-site baseline, the conditional in (C1) (`if k = 1`)
-is no longer required: the baseline specifies a single qubit per site,
-which is precisely the
-single-faithful-complex-irrep selection.
+Under the "one qubit per site" reading of the Qubit axiom
+(multiplicity-one), the conditional in (C1) (`if k = 1`) is met by that
+named condition, which is precisely the single-faithful-complex-irrep
+selection. The current memo supplies the algebra `M_2(C)`; `k = 1` is
+carried here as the explicit single-module condition.
 
 ## Setup
 
 The pre-2026-05-20 Cl(3) framing carried per-site primitives:
 - per-site algebra `A_x = M_2(ℂ) ≅ Cl(3,0)` (real-algebra
-  isomorphism, retained via
+  isomorphism, via
   [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
   §(K2)+(K3))
 - per-site Hilbert `H_x = ?` (open: how `A_x` acts on `H_x`)
@@ -116,25 +126,29 @@ qubit reframe, carried through the 2026-06-05 memo, and current in the
 
 ## Step 1 — The qubit-per-site baseline specifies the per-site object directly
 
-The qubit-per-site baseline in `MINIMAL_AXIOMS_2026-06-05.md` reads
-(as recorded in the canonical
-axiom doc):
+The current Qubit axiom in `MINIMAL_AXIOMS_2026-06-29.md` names the
+one-site possibility domain by its algebraic presentation `M_2(C)`
+(equivalently `Cl(3,0)`). The historical `MINIMAL_AXIOMS_2026-06-05.md`
+wording made the single-module ("one qubit per site") reading explicit:
 
 > "At each site `x`, the primitive physical local degree of freedom is
 > one qubit; equivalently, the primitive one-site operator algebra is
 > `A_x ~= M_2(C)`, equivalently `Cl(3,0)` in its real-algebra reading."
+> (historical 2026-06-05 phrasing)
 
 The word "qubit" carries content: a qubit is, by standard quantum-
 information definition, a 2-dim complex Hilbert space `ℂ²` with the
 algebra of bounded operators `M_2(ℂ)` acting irreducibly on it.
 
-So the qubit-per-site baseline **directly specifies**:
+So, under the "one qubit per site" (multiplicity-one) reading, the
+Qubit baseline specifies:
 - per-site Hilbert `H_x = ℂ²` (dim 2)
 - per-site algebra `A_x = M_2(ℂ)` acting irreducibly on `H_x`
 - multiplicity index `k(x) = 1` (single faithful complex irrep)
 
-This is not a *derivation* under the baseline; it is the *content* of
-the baseline.
+The current memo supplies the algebra `M_2(C)`; the multiplicity-one
+selection above is the named single-module condition, not read off the
+memo verbatim.
 
 ## Step 2 — U4 follows immediately
 
@@ -150,24 +164,26 @@ H_x (per-site physical Hilbert)
     irrep of Cl(3,0)                  M_2(ℂ) ≅ Cl(3,0))
 ```
 
-There is no open admission step. (1) is the axiom content; the unique-
-faithful-irrep step is standard finite-dim simple-matrix-algebra theory
-(Schur's lemma + Wedderburn).
+The only open condition is the multiplicity-one (`k = 1`) commitment
+stated in the Claim. Given that condition, (1) is the axiom content under
+the one-qubit-per-site reading; the unique-faithful-irrep step is standard
+finite-dim simple-matrix-algebra theory (Schur's lemma + Wedderburn).
 
 ## Step 3 — Downstream consequences
 
-Under the qubit-per-site baseline, the following sub-claims previously listed as
-conditional/open become unconditional:
+Under the qubit-per-site baseline with the multiplicity-one condition, the
+following sub-claims previously listed as conditional/open reduce to that named
+condition:
 
 - **Substep-1 U4 conditional (C1)** of
   `STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17`:
-  the `k = 1` selection is given by the qubit-per-site baseline; (C1)
-  becomes unconditional.
-- **Substep-1 Grassmann-forcing bridge U4 admission** of
+  the `k = 1` selection is the multiplicity-one condition carried here; (C1)
+  reduces to that condition.
+- **Substep-1 Grassmann-forcing bridge U4 bridge** of
   `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16`:
   the per-site identification with the Cl(3) faithful complex irrep on
-  the Z^3 substrate is supplied directly by the qubit-per-site baseline.
-- **Substep-1 JW bridge U4 admission** of
+  the Z^3 substrate is supplied under the multiplicity-one condition.
+- **Substep-1 JW bridge U4 bridge** of
   `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17`:
   same as above.
 - **Per-site Hilbert dim 2 theorem** of
@@ -184,8 +200,8 @@ no longer open under the qubit reframe.
 ## What this can support after audit
 
 - **Closure of the U4 conditional on substep-1 narrow theorems** under
-  the current Quantum axiom. If retained, the three named substep-1
-  notes can be re-audited with their U4 admission marked closed by the
+  the current Qubit axiom. If retained, the three named substep-1
+  notes can be re-audited with their U4 bridge marked closed by the
   qubit-per-site baseline,
   potentially promoting their bounded status.
 - **Cleaner derivation chain** for downstream notes that previously
@@ -203,7 +219,7 @@ no longer open under the qubit reframe.
   remain open; substep 1's cross-site anticommutation (JW) and
   dimensional-matching (Grassmann forcing) halves remain in their own
   audit status (addressed via PRs that route their deps through the
-  retained `cl3_complexification_split` parent).
+  `cl3_complexification_split` parent (currently unaudited per ledger)).
 - **The Kawamoto-Smit gamma-matrix taste structure forcing from the
   qubit-per-site plus `Z^3` substrate baseline** — this is the
   substantive substep-2 content; the qubit-per-site baseline specifies
@@ -213,7 +229,7 @@ no longer open under the qubit reframe.
 
 ## Admitted inputs
 
-1. **Qubit-per-site baseline of MINIMAL_AXIOMS_2026-06-05** —
+1. **Qubit-per-site baseline of MINIMAL_AXIOMS_2026-06-29** —
    qubit at every site,
    equivalently per-site `M_2(ℂ) ≅ Cl(3,0)`. The axiom is the input,
    not derived here.
@@ -227,10 +243,10 @@ no longer open under the qubit reframe.
 
 `positive_theorem` candidate at narrow-theorem granularity. The narrow
 contribution is making the U4 closure under the qubit reframe **explicit
-and citeable** — recording that the current Quantum axiom retires the
+and citeable** — recording that the current Qubit axiom retires the
 U4 open bridge that the pre-qubit-reframe framing carried.
 
-Granularity matches the retained
+Granularity matches the
 `cl3_complexification_split_narrow_theorem_note_2026-05-10` and the
 landed Gleason / Busch / Kraus-Choi / Stinespring / Powers /
 Tomita / Inner-aut qubit-lattice companions: standard math + framework
@@ -240,8 +256,8 @@ axiom applied to make the framework's commitments explicit.
 
 **Upstream framework dependencies** (load-bearing; markdown links):
 
-- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — current axiom memo; supplies the Quantum axiom (one qubit per site = `M_2(C)`, equivalently `Cl(3,0)`)
-- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) — retained; §(K2) `M_2(ℂ) ≅ Cl(3,0)` real-algebra isomorphism, §(K4) two-dim irrep dimensional readout
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — current axiom memo; supplies the Qubit axiom (one-site possibility domain with algebraic presentation `M_2(C)`, equivalently `Cl(3,0)`)
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) — currently unaudited per ledger; §(K2) `M_2(ℂ) ≅ Cl(3,0)` real-algebra isomorphism, §(K4) two-dim irrep dimensional readout
 
 **Upstream standard-math imports** (named non-derivation):
 
@@ -252,11 +268,11 @@ axiom applied to make the framework's commitments explicit.
 
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` — open-gate parent; substep 1's U4 bridge is the named open piece this note addresses
 - `STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md` — substep-1 conditional sub-claim (C1) becomes unconditional under the qubit-per-site baseline
-- `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md` — substep-1 dimensional-matching bridge with U4 admission
-- `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md` — substep-1 cross-site anticommutation bridge with U4 admission
+- `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md` — substep-1 dimensional-matching bridge with U4 bridge
+- `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md` — substep-1 cross-site anticommutation bridge with U4 bridge
 - `CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md` — pre-reframe theorem now derivable in one line from the qubit-per-site baseline
 - `A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md` — companion meta on the qubit identification
-- `MINIMAL_AXIOMS_2026-05-20.md` — historical axiom memo that introduced the qubit-reframe wording, superseded by the current three-axiom memo above
+- `MINIMAL_AXIOMS_2026-05-20.md` — historical axiom memo that introduced the qubit-reframe wording, superseded by the current four-axiom memo above
 
 ## What this file is not
 

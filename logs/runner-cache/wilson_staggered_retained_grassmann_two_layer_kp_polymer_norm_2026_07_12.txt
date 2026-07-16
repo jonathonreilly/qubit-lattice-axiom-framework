@@ -1,0 +1,15 @@
+PASS joint_kp_point_m12: K_W=0.011849253889, K_I=0.059705177822, K_S=0.018529578488, K=0.090084010199, epsilon=0.029915989801, q=0.424598064272
+PASS closed_envelopes_m12: K_I=0.059705177822<=0.060028967755, K_S=0.018529578488<=0.018530668232
+PASS joint_kp_point_m16: K_W=0.023702952081, K_I=0.017189402625, K_S=0.066085584459, K=0.106977939166, epsilon=0.013022060834, q=0.318448548204
+PASS closed_envelopes_m16: K_I=0.017189402625<=0.017217054958, K_S=0.066085584459<=0.066102304315
+PASS joint_kp_point_m20: K_W=0.061710429711, K_I=0.007046543214, K_S=0.030126268784, K=0.098883241708, epsilon=0.026116758292, q=0.257319207457
+PASS closed_envelopes_m20: K_I=0.007046543214<=0.007051045068, K_S=0.030126268784<=0.030129958636
+PASS fixed_link_path_incidence: words=4096, determinant=0.009259259259, schur=1.333333333333
+PASS induced_bipartite_constant_floor: odd closed words forbidden; length-two reversals=8
+PASS eta_norm_submultiplicative: product=0.342015700000, bound=0.344746352577
+PASS banach_factor_to_polymer_identity: body=0.999976000000, regrouping=1.110e-16, log=0.000e+00
+PASS balanced_quartic_connected_log: quartic=0.000029662824, monomials=[(0, 1, 2, 3), (0, 3), (1, 2)]
+PASS schur_path_coarse_support: coarse_path=[(0, 0, 0, 0), (0, 0, 0, 0), (1, 0, 0, 0), (1, 1, 0, 0)], anchor_multiplicity=68
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=14 FAIL=0

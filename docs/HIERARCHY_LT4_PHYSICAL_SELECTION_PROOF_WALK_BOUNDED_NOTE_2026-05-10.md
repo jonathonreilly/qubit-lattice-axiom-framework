@@ -207,8 +207,8 @@ lives must itself be the physical EW substrate.
 > (ii) scalar-additivity P1 on independent subsystems forcing
 > `log|det|` as the physical scalar generator, and (iii) CPT-even
 > phase blindness on the staggered block being supplied by a
-> chain-satisfying CPT
-> primitive, the chain (a) → (b) → (c) → (d) in §3 closes and the
+> chain-satisfying CPT authority, the chain (a) → (b) → (c) → (d)
+> in §3 closes and the
 > physical EWSB temporal block is `L_t = 4`.
 
 This is the bounded conditional shape this note targets.
@@ -284,8 +284,8 @@ inputs.
   audit-named repair target for
   [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md);
   it is not retired here.
-- **Unconditional retirement of CPT-even phase blindness.** Retention of CPT-even
-  phase blindness from a CPT primitive is downstream of
+- **Unconditional retirement of CPT-even phase blindness.** Closure of
+  CPT-even phase blindness remains downstream of
   [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md) (unaudited) and
   [`CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md`](CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md)
   (unaudited); it is not retired here.

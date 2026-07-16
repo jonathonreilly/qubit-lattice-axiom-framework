@@ -1,0 +1,16 @@
+PASS finite_lattice_boundary_norm_and_bipartite_parity: ||R_KI||^2=2.040816326530612e-02=1/m^2; ||R_KI(R_II/mu)R_IK||=0.000e+00
+PASS finite_lattice_length_four_tail_bound: E_>=4 PSD lower=1.576e-16; ||E_>=4||=1.617275444849463e-06 <= 4.314394221300380e-06
+PASS finite_lattice_full_and_shortest_gap_checks: gap full=7.282911547990663>=7.282798833819242; gap shortest=7.282913165266106=7.282913165266106
+PASS pointwise_internal_resolvent_locality: max_(d_I<=4) |A_2^-1(u,v)|/[mu^-1 h^d/(1-h^2)]=0.998606145850563
+PASS quadratic_projector_coefficient_to_operator_incidence_one: ||Herm Q||op=1.227245715086757e-01 <= |Herm Q|_1=4.797984702955898e-01 <= |Q|_1=5.885386365971474e-01
+PASS tail_hidden_empty_and_centered_ownership_split: E_hid E=2.000000000000000, Q_hid E={-1: -0.30000000000000004, 1: 0.2999999999999998}, exact reconstruction; empty<=B and centered<=2B
+PASS actual_local_jet_and_conditional_trial_rows_are_separate: actual epsilon_P0=6.150432380261932e-10, conditional epsilon_44=7.036819595670502e-02, K_weak44=7.290318488718554e-02
+PASS actual_p0_base_center_gap: gap(S_base)/m>=0.999999999384957; hidden-empty tail/m has log10=-367.397940008672
+PASS conditional_projected_quadratic_weyl_reserve: conditional epsilon_Q=7.036819657174825e-02; gap_trial/m=0.929631803428252; theta_w=0.0000005<three-pair chart charge=0.218900044560628<theta_d=0.400001
+PASS bipartite_weighted_haar_tail_is_residual_owned_and_tiny: b=2.983652E-92, log10 operator-tail=-321.397940008672, log10 weighted-coefficient-tail=-364.997435900702
+PASS fresh_shortest_center_bond_reference_activity: h3=5.378473479028190e-185, nu3=2.396048814331173e-182, K_B3=3.492715458420906e-181
+PASS fresh_reference_determinant_loop_convergence: C_*h3 exp(L3)=4.676583E-184, log10 K_D3^bd=-366.183021486851
+PASS finite_positive_correlated_reference_normalization: gap=2.092296703857310, det(A3)/det(M3)=0.999238862886154>0, exp(logdet)=0.999238862886154; det(M3)=273.136500000000012, det(M3)*Z3=272.928605672703952=det(A3)=272.928605672703952
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_ENHANCED_MOMENT_GENERATED_BASE_DECORATED_FACTOR_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_EXTRACTED_S2_FUTURE_CENTER_PRODUCT_REFERENCE_COUNTERTERM_PERSISTENT_GAP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_FIXED_BACKGROUND_CORRELATED_BEREZIN_CROSS_WICK_CLUSTER_LOCALITY_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_SITE_BLOCK_SYNTACTIC_SUPPORT_TREE_SPAN_MARKED_RESPONSE_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=15 FAIL=0

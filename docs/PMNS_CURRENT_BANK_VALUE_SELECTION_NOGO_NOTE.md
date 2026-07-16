@@ -5,25 +5,26 @@
 **Script:** `scripts/frontier_pmns_current_bank_value_selection_nogo.py`
 
 ## Question
-Does the current exact bank contain a positive value-selection law for the
-retained PMNS lane?
+Do the free, scalar, residual-symmetry, coordinate-extraction, and
+target-constructed-fixture mechanisms checked here select a unique reduced
+cycle value?
 
 ## Answer
 No.
 
-The current exact bank now closes the retained PMNS lane negatively:
+The checked mechanism packet closes negatively:
 
 - the sole axiom `Cl(3)` on `Z^3` gives only the trivial free lower-level
   response profiles on the retained lepton triplets
 - the retained scalar deformation routes stay diagonal/scalar and are rejected
   by the one-sided PMNS closure stack
-- the only surviving positive carrier is the graph-first reduced oriented
-  forward-cycle channel
-- that reduced channel has an exact native observable law
-- every point of that reduced channel is realized exactly on the lower-level
-  active response chain
+- graph-first residual symmetry restricts an explicitly supplied candidate
+  block to a reduced oriented forward-cycle family
+- a bounded algebraic lemma extracts cycle coordinates from a supplied block
+- target-constructed response fixtures round-trip supplied reduced blocks as
+  consistency checks only
 
-Therefore the current exact bank does **not** contain a positive
+Therefore none of the mechanisms exercised here supplies a positive
 value-selection law on that reduced channel.
 
 ## Exact Content
@@ -35,32 +36,41 @@ A_{\mathrm{fwd}}(u,v,w)
 = (u + i v) E_{12} + w E_{23} + (u - i v) E_{31}.
 \]
 
-The current exact bank proves:
+The runner verifies:
 
 1. The sole axiom gives only the trivial free response profiles.
 2. The retained local scalar routes never leave the diagonal/scalar sector.
-3. The graph-first selected-axis route reduces the surviving positive carrier
-   to the reduced `3`-real oriented-cycle family above.
-4. The native oriented-cycle observable law reads `(u,v,w)` exactly.
-5. Every point of that reduced family is realized on the lower-level active
-   response chain.
+3. On an explicitly supplied candidate block, the graph-first residual
+   symmetry restricts the forward-cycle entries to the reduced `3`-real family
+   above.
+4. The bounded oriented-cycle coordinate lemma reads `(u,v,w)` exactly from a
+   supplied block.
+5. The response-profile examples are constructed from target reduced blocks
+   and invert back to them; they are consistency-only.
 
-So the current exact bank fixes:
+So, after a candidate block is supplied, this packet fixes:
 
-- the carrier,
-- the observable law,
+- its reduced matrix support,
+- the algebraic coordinate chart,
 - and the exact residual symmetry,
 
 but not a unique value.
 
+These checks do not derive the physical carrier, a Record-compatible readout,
+or an independent lower-level source of the reduced blocks. The stable-path
+coordinate lemma must not be used as evidence for any of those bridges.
+
 ## Consequence
 
-The retained PMNS lane is now closed at the current-bank boundary.
+The checked value-selection attempt closes negatively at this boundary.
 
-Any further positive value-selection law would require:
+This is not an exhaustive inventory theorem for every present or future
+framework route. An uninspected source, Record map, or selector could change
+the conclusion. A positive value-selection law still requires:
 
-- genuinely new dynamics, or
-- a further admitted extension.
+- a retained physical carrier and Record-compatible readout;
+- a framework construction of the relevant matrix-valued block; and
+- a state, parameter, or selector law fixing its numerical coordinates.
 
 ## Verification
 

@@ -391,7 +391,7 @@ def part9_claim_discipline() -> None:
         ("status authority: independent audit lane only", True),
         ("no audit_status promotion", True),
         ("krawczyk lower bound load-bearing on S3/S4", True),
-        ("forward-cycle channel value law cited for X2", True),
+        ("bounded supplied-block coordinate lemma cited for X2", True),
         ("hw=1 three-character algebra cited for X4", True),
         ("parent prediction note cited only as anchor source", True),
     ]

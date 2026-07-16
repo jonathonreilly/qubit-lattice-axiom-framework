@@ -5,26 +5,23 @@
 **Script:** `scripts/frontier_neutrino_sole_axiom_full_closure_boundary.py`
 
 ## Question
-Does the retained neutrino lane close top-to-bottom from the sole axiom
-`Cl(3)` on `Z^3` alone?
+Do the named PMNS and charge-preserving Majorana routes checked in this packet
+provide a full positive neutrino realization from `Cl(3)` on `Z^3` alone?
 
 ## Answer
 No.
 
-The current science branch now closes that question exactly.
+No checked route in this packet supplies such a realization.
 
 On the retained Dirac/PMNS side:
 
 - the sole axiom yields only the trivial free lower-level response profiles
-- even the canonical sole-axiom `hw=1` source-inserted / graph-first-
-  transferred pack stays trivial
 - retained scalar deformation routes remain too small
-- the only surviving positive carrier is the graph-first reduced oriented
-  forward-cycle channel
-- every point of that reduced channel is realized on the lower-level active
-  response chain
-- but the current exact bank does **not** select a unique value on that
-  reduced channel
+- graph-first residual symmetry restricts an explicitly supplied candidate
+  block to a reduced oriented forward-cycle family
+- target-constructed response fixtures round-trip supplied reduced blocks as
+  consistency checks, not independent physical realization evidence
+- none of these checks selects a unique value on that reduced channel
 
 On the retained Majorana side:
 
@@ -32,44 +29,44 @@ On the retained Majorana side:
   block
 - so the retained Majorana lane does not reopen there
 
-Therefore full retained-neutrino closure from `Cl(3)` on `Z^3` alone is
-blocked on the current exact bank.
+Therefore the named route packet does not close a full positive neutrino
+realization from `Cl(3)` on `Z^3` alone.
 
 ## Exact Content
 
-The theorem bundles the current exact endpoints into one retained-neutrino
-closeout:
+The packet bundles the checked endpoints:
 
 1. Sole-axiom lower-level PMNS response profiles are the trivial free ones.
-2. Even the strongest canonical sole-axiom `hw=1` source/transfer pack stays
-   trivial and is rejected by the retained PMNS closure stack.
-3. Retained scalar deformation routes stay diagonal/scalar and are rejected by
+2. Retained scalar deformation routes stay diagonal/scalar and are rejected by
    the one-sided PMNS closure stack.
-4. The graph-first reduced oriented-cycle carrier is real and exact, but the
-   current exact bank does not furnish a value-selection law on it.
-5. The retained lower-level charge-preserving Majorana response layer has zero
+3. On a supplied reduced oriented-cycle block, the stable-path parent supplies
+   only algebraic coordinate extraction. It does not furnish the physical
+   carrier, a Record-compatible readout, or a value-selection law.
+4. The retained lower-level charge-preserving Majorana response layer has zero
    anomalous block.
-6. More sharply, the full remaining last mile is now exactly the pair
-   `(J_chi, mu)`, where `J_chi` is the native PMNS nontrivial `C3` current and
-   `mu` is the rephasing-reduced Majorana charge-`2` amplitude.
+5. Remaining positive closure requires the open PMNS carrier/readout/block-
+   selection bridges as well as a nonzero rephasing-reduced Majorana charge-`2`
+   amplitude.
 
 ## Consequence
 
-The retained neutrino science lane is now closed honestly on the sole-axiom
-question:
+The checked packet has the following honest boundary:
 
 - the downstream closure machinery is exact once suitable lower-level data are
   supplied
 - but the sole axiom itself does not supply a full positive retained-neutrino
-  realization
+  realization through the named routes
 
-Any further positive closure would require:
+The target-constructed response fixtures in the runner are consistency-only
+and are not used as independent evidence for a physical PMNS realization.
 
-- genuinely new dynamics selecting nonzero nontrivial `C3` character
-  amplitude on the retained `hw=1` PMNS response family and generating a
-  genuinely off-diagonal charge-`2` Nambu primitive on the doubled `nu_R`
-  line, or
-- a further admitted extension beyond the current exact bank
+A broad current-bank or framework-wide no-go would require a separate,
+complete route inventory. Positive closure of the displayed packet requires:
+
+- genuinely new dynamics deriving a retained PMNS carrier, a Record-compatible
+  readout, the candidate block and its values, and a genuinely off-diagonal
+  charge-`2` Nambu primitive on the doubled `nu_R` line, or
+- a currently uninspected route that supplies those same bridges
 
 ## Verification
 

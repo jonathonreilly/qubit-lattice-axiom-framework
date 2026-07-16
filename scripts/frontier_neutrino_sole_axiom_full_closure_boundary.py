@@ -1,25 +1,24 @@
 #!/usr/bin/env python3
-"""Full retained-neutrino sole-axiom closure boundary.
+"""Named-route retained-neutrino sole-axiom closure boundary.
 
 Question:
-  Does the retained neutrino lane close top-to-bottom from the sole axiom
-  `Cl(3)` on `Z^3` alone?
+  Do the named PMNS and charge-preserving Majorana routes checked here provide
+  a full positive neutrino realization from `Cl(3)` on `Z^3` alone?
 
 Answer:
   No.
 
-  On the retained science branch the sole axiom fixes the exact carrier and the
-  downstream closure interfaces, but it does not produce a full positive
-  neutrino realization:
+  On the retained science branch the exact negative endpoint tests and
+  supplied-block algebra do not produce a full positive neutrino realization:
 
     - on the Dirac/PMNS side, the sole-axiom response profiles are the trivial
-      free ones, scalar routes stay too small, and the surviving graph-first
-      reduced oriented-cycle channel is not value-selected by the current bank
+      free ones, scalar routes stay too small, and graph-first symmetry only
+      restricts an explicitly supplied candidate reduced-cycle block
     - on the Majorana side, the lower-level charge-preserving response layer
       induces no anomalous Nambu block
 
-  Therefore full retained-neutrino sole-axiom closure is blocked on the current
-  exact bank.
+  Therefore the named route packet does not supply full retained-neutrino
+  sole-axiom closure. No exhaustive route inventory is claimed.
 """
 
 from __future__ import annotations
@@ -39,7 +38,7 @@ from frontier_pmns_current_bank_value_selection_nogo import (
     residual_swap_conjugate,
 )
 from frontier_pmns_lower_level_end_to_end_closure import close_from_lower_level_observables
-from frontier_pmns_oriented_cycle_channel_value_law import oriented_cycle_coeffs_from_response_columns
+from frontier_pmns_oriented_cycle_channel_value_law import oriented_cycle_coeffs_from_block
 from frontier_pmns_uniform_scalar_deformation_boundary import scalar_triplet_block
 from pmns_lower_level_utils import (
     I3,
@@ -116,9 +115,9 @@ def part1_dirac_pmns_sole_axiom_route_is_not_positively_closed() -> None:
     check("The retained PMNS closure stack rejects the scalar route too", ok_scalar, detail_scalar)
 
 
-def part2_graph_first_reduced_cycle_channel_is_realized_but_not_selected() -> None:
+def part2_reduced_cycle_fixtures_are_consistency_only() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: THE GRAPH-FIRST REDUCED CYCLE CHANNEL IS REALIZED BUT NOT SELECTED")
+    print("PART 2: REDUCED-CYCLE FIXTURES ARE CONSISTENCY-ONLY")
     print("=" * 88)
 
     lam = 0.31
@@ -131,22 +130,23 @@ def part2_graph_first_reduced_cycle_channel_is_realized_but_not_selected() -> No
     _ref_b, cols_b = active_response_columns_from_sector_operator(sector_b, lam)
     _ker_a, rec_a = derive_active_block_from_response_columns(cols_a, lam)
     _ker_b, rec_b = derive_active_block_from_response_columns(cols_b, lam)
-    coeffs_a = oriented_cycle_coeffs_from_response_columns(cols_a, lam)
-    coeffs_b = oriented_cycle_coeffs_from_response_columns(cols_b, lam)
+    coeffs_a = oriented_cycle_coeffs_from_block(rec_a)
+    coeffs_b = oriented_cycle_coeffs_from_block(rec_b)
     coords_a = reduced_cycle_coordinates(rec_a)
     coords_b = reduced_cycle_coordinates(rec_b)
 
-    check("Two distinct reduced-channel points are both realized exactly on the lower-level active response chain",
+    check("Two target-constructed fixtures round-trip two distinct supplied reduced-channel points",
           np.linalg.norm(rec_a - a) < 1e-12 and np.linalg.norm(rec_b - b) < 1e-12 and np.linalg.norm(a - b) > 1e-6,
           f"|A-B|={np.linalg.norm(a - b):.6f}")
-    check("Both realized points satisfy the same graph-first residual antiunitary symmetry",
+    check("Both round-tripped blocks satisfy the same graph-first residual antiunitary symmetry",
           np.linalg.norm(residual_swap_conjugate(rec_a) - rec_a) < 1e-12
           and np.linalg.norm(residual_swap_conjugate(rec_b) - rec_b) < 1e-12)
-    check("The native oriented-cycle observable law separates the two realized points exactly",
+    check("The bounded algebraic coordinate map separates the two round-tripped blocks",
           np.linalg.norm(coeffs_a - coeffs_b) > 1e-6 and np.linalg.norm(coords_a - coords_b) > 1e-6,
           f"|Δcoords|={np.linalg.norm(coords_a - coords_b):.6f}")
-    print("  [INFO] The current exact bank does not select a unique reduced-channel value")
-    check("The surviving positive carrier has canonical diagonal-plus-forward-cycle support",
+    print("  [INFO] The fixtures were constructed from the targets and are consistency-only.")
+    print("  [INFO] They do not establish a physical carrier or Record-compatible readout.")
+    check("Both supplied candidate blocks have the specified diagonal-plus-forward-cycle support",
           np.array_equal(support_mask(rec_a), TARGET_SUPPORT) and np.array_equal(support_mask(rec_b), TARGET_SUPPORT))
 
 
@@ -171,11 +171,11 @@ def part4_circularity_guards() -> None:
     print("=" * 88)
 
     ok_active, bad_active = circularity_guard(active_response_columns_from_sector_operator, {"x", "y", "delta", "tau", "q"})
-    ok_cycle, bad_cycle = circularity_guard(oriented_cycle_coeffs_from_response_columns, {"u", "v", "w", "sigma"})
+    ok_cycle, bad_cycle = circularity_guard(oriented_cycle_coeffs_from_block, {"u", "v", "w", "sigma"})
     ok_close, bad_close = circularity_guard(close_from_lower_level_observables, {"tau", "q", "x", "y", "delta"})
 
     check("The lower-level active response derivation takes no PMNS-side value targets as inputs", ok_active, f"bad={bad_active}")
-    check("The native oriented-cycle readout takes no reduced-channel coordinates as inputs", ok_cycle, f"bad={bad_cycle}")
+    check("The algebraic coordinate extractor takes no reduced-channel coordinate names as inputs", ok_cycle, f"bad={bad_cycle}")
     check("The downstream PMNS closure stack takes no target PMNS values as inputs", ok_close, f"bad={bad_close}")
 
 
@@ -185,28 +185,27 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Question:")
-    print("  Does the retained neutrino lane close top-to-bottom from the sole axiom")
-    print("  Cl(3) on Z^3 alone?")
+    print("  Do the named PMNS and charge-preserving Majorana routes checked here")
+    print("  provide a full positive neutrino realization from Cl(3) on Z^3?")
 
     part1_dirac_pmns_sole_axiom_route_is_not_positively_closed()
-    part2_graph_first_reduced_cycle_channel_is_realized_but_not_selected()
+    part2_reduced_cycle_fixtures_are_consistency_only()
     part3_majorana_stays_closed_negatively_on_the_lower_level_charge_preserving_lane()
     part4_circularity_guards()
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact retained-neutrino sole-axiom boundary:")
-    print("    - the sole axiom does not produce PMNS-active lower-level response profiles")
-    print("    - retained scalar deformation routes stay too small")
-    print("    - the surviving graph-first reduced oriented-cycle channel is realized")
-    print("      but not value-selected by the current exact bank")
-    print("    - the retained Majorana lane does not reopen on the lower-level")
-    print("      charge-preserving response layer")
+    print("  Named-route retained-neutrino boundary:")
+    print("    - the checked free PMNS response profile is rejected")
+    print("    - the checked scalar deformation route stays too small")
+    print("    - target-constructed reduced-cycle fixtures round-trip consistently,")
+    print("      but do not establish a physical carrier or readout")
+    print("    - the checked charge-preserving Majorana response has zero")
+    print("      anomalous block")
     print()
-    print("  Therefore full retained-neutrino closure from Cl(3) on Z^3 alone is")
-    print("  blocked on the current exact bank. Any further positive closure would")
-    print("  require genuinely new dynamics or a further admitted extension.")
+    print("  Therefore this named route packet does not close a full positive")
+    print("  neutrino realization. No exhaustive current-bank no-go is claimed.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

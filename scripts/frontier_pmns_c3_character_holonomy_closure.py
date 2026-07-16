@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
-"""Exact C3-character holonomy closure on the reduced PMNS cycle family.
+"""Bounded C3-character inversion on a supplied reduced cycle family.
 
 Question:
-  Does the exact coordinate-cycle symmetry already furnish a native three-mode
-  holonomy family on the retained `hw=1` triplet, so that the reduced PMNS
-  cycle values close without admitting an external generic three-flux family?
+  For the supplied forward-cycle matrix C, do its three character phases give
+  an invertible coordinate map on the supplied reduced cycle family?
 
 Answer:
   Yes.
 
-  The projected coordinate-cycle unitary on the retained triplet is the exact
-  forward-cycle matrix `C`, whose character phases are
+  The supplied projected-cycle matrix `C` has character phases
 
       0, 2 pi / 3, 4 pi / 3.
 
@@ -28,9 +26,8 @@ Answer:
   and has nonzero determinant. Therefore `(u, v, w)` are reconstructed exactly
   from the exact C3 character triple itself.
 
-  This removes the need to treat the three-flux family as an extra admitted
-  generic family. What remains blocked is not the readout family, but the
-  sole-axiom production of nontrivial values on that family.
+  This is finite matrix inversion only. It does not derive the physical
+  carrier, a Record-compatible readout, or the matrix/coordinate values.
 """
 
 from __future__ import annotations
@@ -92,9 +89,9 @@ def c3_character_holonomies_on_reduced_family(a: np.ndarray) -> np.ndarray:
     )
 
 
-def part1_the_exact_coordinate_cycle_has_the_canonical_c3_character_triple() -> None:
+def part1_the_supplied_cycle_matrix_has_the_canonical_c3_character_triple() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: THE EXACT COORDINATE CYCLE HAS THE CANONICAL C3 CHARACTER TRIPLE")
+    print("PART 1: THE SUPPLIED CYCLE MATRIX HAS THE CANONICAL C3 CHARACTER TRIPLE")
     print("=" * 88)
 
     c = projected_forward_cycle()
@@ -110,12 +107,16 @@ def part1_the_exact_coordinate_cycle_has_the_canonical_c3_character_triple() -> 
     check("Its eigencharacters are exactly 1, omega, omega^2",
           np.linalg.norm(evals_sorted - target_sorted) < 1e-12,
           f"evals={np.round(evals_sorted, 6)}")
-    check("Therefore the exact native character phases are 0, 2pi/3, 4pi/3", True)
+    check(
+        "The supplied cycle has exactly the three canonical C3 eigencharacters",
+        np.linalg.norm(evals_sorted - target_sorted) < 1e-12
+        and np.linalg.norm(np.linalg.matrix_power(c, 3) - np.eye(3)) < 1e-12,
+    )
 
 
-def part2_the_native_character_triple_has_full_rank_on_the_reduced_cycle_family() -> None:
+def part2_the_supplied_character_triple_has_full_rank_on_the_reduced_cycle_family() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: THE NATIVE CHARACTER TRIPLE HAS FULL RANK ON THE REDUCED CYCLE FAMILY")
+    print("PART 2: THE SUPPLIED CHARACTER TRIPLE HAS FULL RANK ON THE REDUCED CYCLE FAMILY")
     print("=" * 88)
 
     m = c3_character_design_matrix()
@@ -124,12 +125,15 @@ def part2_the_native_character_triple_has_full_rank_on_the_reduced_cycle_family(
     check("The character-triple design matrix is the canonical C3 matrix",
           np.linalg.norm(m - np.array([[2.0, 0.0, 1.0], [-1.0, math.sqrt(3.0), 1.0], [-1.0, -math.sqrt(3.0), 1.0]])) < 1e-12)
     check("The exact C3 character triple has nonzero determinant", abs(det) > 1e-12, f"det={det:.12f}")
-    check("So the exact native character triple already removes the one-angle 2-real kernel", True)
+    check(
+        "The supplied character triple removes the one-angle 2-real kernel algebraically",
+        np.linalg.matrix_rank(m) == 3,
+    )
 
 
-def part3_the_reduced_cycle_coordinates_are_reconstructed_exactly_from_the_native_character_holonomies() -> None:
+def part3_the_reduced_cycle_coordinates_are_reconstructed_from_the_supplied_character_functionals() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: THE REDUCED CYCLE COORDINATES RECONSTRUCT EXACTLY FROM THE NATIVE CHARACTER HOLOMONIES")
+    print("PART 3: THE REDUCED COORDINATES RECONSTRUCT FROM THE SUPPLIED CHARACTER FUNCTIONALS")
     print("=" * 88)
 
     target = np.array([0.41, 0.32, 0.28], dtype=float)
@@ -137,13 +141,16 @@ def part3_the_reduced_cycle_coordinates_are_reconstructed_exactly_from_the_nativ
     hol = c3_character_holonomies_on_reduced_family(a)
     recovered = recover_reduced_cycle_coordinates_from_three_flux_holonomies(hol, c3_character_phases())
 
-    check("The native character holonomy vector is the exact image of (u,v,w)",
+    check("The supplied character-functional vector is the exact image of (u,v,w)",
           np.linalg.norm(hol - c3_character_design_matrix() @ target) < 1e-12,
           f"hol={np.round(hol, 6)}")
-    check("The reduced coordinates are reconstructed exactly from the native character holonomies",
+    check("The reduced coordinates are reconstructed exactly from the supplied character functionals",
           np.linalg.norm(recovered - target) < 1e-12,
           f"recovered={np.round(recovered, 6)}")
-    check("So the reduced PMNS cycle values close exactly on the exact C3 character route", True)
+    check(
+        "The supplied reduced-cycle coordinates invert exactly on this C3 character map",
+        np.linalg.norm(recovered - target) < 1e-12,
+    )
 
 
 def part4_circularity_guard() -> None:
@@ -156,7 +163,7 @@ def part4_circularity_guard() -> None:
     ok_rec, bad_rec = circularity_guard(recover_reduced_cycle_coordinates_from_three_flux_holonomies, {"u", "v", "w", "x", "y", "delta", "tau", "q"})
 
     check("The exact C3 character phases take no PMNS-side target values as inputs", ok_phase, f"bad={bad_phase}")
-    check("The native character holonomy map takes no PMNS-side target coordinates as inputs", ok_hol, f"bad={bad_hol}")
+    check("The supplied character-functional map takes no PMNS-side target coordinates as inputs", ok_hol, f"bad={bad_hol}")
     check("The character-holonomy reconstruction takes no PMNS-side target coordinates as inputs", ok_rec, f"bad={bad_rec}")
 
 
@@ -166,29 +173,27 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Question:")
-    print("  Does the exact coordinate-cycle symmetry already furnish a native")
-    print("  three-mode holonomy family that closes the reduced PMNS cycle values?")
+    print("  Does the supplied C3 cycle matrix give an invertible three-mode")
+    print("  coordinate map on the supplied reduced cycle family?")
 
-    part1_the_exact_coordinate_cycle_has_the_canonical_c3_character_triple()
-    part2_the_native_character_triple_has_full_rank_on_the_reduced_cycle_family()
-    part3_the_reduced_cycle_coordinates_are_reconstructed_exactly_from_the_native_character_holonomies()
+    part1_the_supplied_cycle_matrix_has_the_canonical_c3_character_triple()
+    part2_the_supplied_character_triple_has_full_rank_on_the_reduced_cycle_family()
+    part3_the_reduced_cycle_coordinates_are_reconstructed_from_the_supplied_character_functionals()
     part4_circularity_guard()
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact native closure of the reduced-cycle readout family:")
-    print("    - the projected coordinate cycle has the exact C3 character phases")
+    print("  Bounded algebraic inversion on the supplied reduced-cycle family:")
+    print("    - the supplied projected cycle has the exact C3 character phases")
     print("      0, 2pi/3, 4pi/3")
-    print("    - those three native holonomies already give an invertible 3 x 3")
+    print("    - those three supplied functionals give an invertible 3 x 3")
     print("      system on the reduced graph-first PMNS cycle family")
     print("    - therefore (u,v,w) are reconstructed exactly from the exact C3")
-    print("      character triple itself")
+    print("      character-functional triple")
     print()
-    print("  So the earlier three-flux closure route can now be read as a native")
-    print("  C3-character closure theorem, not merely an admitted generic family.")
-    print("  What still remains blocked is the sole-axiom production of nontrivial")
-    print("  values on that native family.")
+    print("  This does not derive a physical carrier, Record-compatible readout,")
+    print("  or a law selecting the supplied matrix or its coordinates.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

@@ -7,9 +7,8 @@
 
 ## Question
 
-Once the native `C3`-character holonomy family is closed, what is the exact
-remaining sole-axiom PMNS value-selection problem on the retained `hw=1`
-triplet?
+For the supplied reduced-cycle matrix family and the supplied `C3`
+character-functional triple, what is the exact Fourier-mode reduction?
 
 ## Answer
 
@@ -23,7 +22,7 @@ A_{\mathrm{fwd}}(u,v,w)
 (u+i v)E_{12}+wE_{23}+(u-i v)E_{31},
 \]
 
-the exact native `C3`-character holonomy triple has discrete Fourier modes
+the supplied `C3` character-functional triple has discrete Fourier modes
 
 \[
 z_0 = w,\qquad
@@ -31,7 +30,7 @@ z_1 = u-i v,\qquad
 z_2 = u+i v.
 \]
 
-So the remaining PMNS value problem is exactly:
+Thus this supplied matrix family is parametrized by:
 
 - one real trivial-character amplitude `w`
 - one complex nontrivial character amplitude `chi := z_2 = u + i v`
@@ -44,11 +43,10 @@ z_1=\overline{\chi}
 
 on the residual graph-first antiunitary slice.
 
-## Stronger Boundary
+## Checked-route boundary
 
-The current sole-axiom routes do **not** fail on an unspecified `3`-real
-family. They fail because they annihilate the nontrivial character amplitude
-exactly:
+The three named route blocks exercised by the runner annihilate the
+nontrivial character coordinate:
 
 \[
 \chi = 0
@@ -60,20 +58,22 @@ on each of:
 - the sole-axiom `hw=1` source/transfer route
 - the retained scalar route
 
-So the exact missing source is now explicit:
+These are route-wise matrix checks, not an exhaustive current-bank theorem.
+They show that the three named examples do not supply a nonzero `chi`; they do
+not establish a physical `hw=1` carrier, a Record-compatible readout, or a law
+selecting a block or its values.
 
-> a sole-axiom law that produces nonzero `C3`-nontrivial character amplitude on
-> the retained `hw=1` response family.
+The corresponding positive bridge target is therefore conditional:
+
+> after a physical carrier/readout and matrix-construction law are supplied,
+> derive a state or selector law producing nonzero `chi`.
 
 ## Meaning
 
-This sharpens the remaining blocker further than the previous
-nonselection/holonomy notes:
-
-- the native readout family is already closed
-- the graph-first reduced channel is already fixed
-- the unresolved object is not a generic PMNS value law
-- it is only the production of nonzero nontrivial `C3` character amplitude
+The exact content is a change of coordinates on a supplied three-real matrix
+family. The character transform is invertible, and the residual
+swap-conjugation slice makes the two nontrivial modes conjugate. Neither fact
+selects a physical matrix or upgrades the supplied functionals to observables.
 
 ## Verification
 
@@ -100,7 +100,10 @@ Canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (`c
 - `scripts/frontier_generation_rooting_undefined.py`
 - `GENERATION_AXIOM_BOUNDARY_NOTE.md` (preserved)
 
-Therefore `claim_type: bounded_theorem` until that gate closes. When that gate closes, the lane becomes eligible for independent audit/governance retagging as `positive_theorem`; the audit pipeline recomputes `effective_status`, but it does not silently invent a new `claim_type`. The substantive science content of this note is unchanged by this retag.
+Therefore `claim_type: bounded_theorem`. Closure of that historical gate alone
+would not promote this row: the physical carrier, Record-compatible readout,
+matrix-construction, and numerical-selection bridges named above would still
+require separate derivations and independent audit.
 
 ## Audit dependency repair links
 

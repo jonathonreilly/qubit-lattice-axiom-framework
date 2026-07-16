@@ -1040,7 +1040,7 @@ def part9_claim_discipline() -> None:
         "PDG-convention delta_CP via atan2(sin, cos) extraction",
         "interval arithmetic at 200-bit mpmath precision",
         "inherits Krawczyk apparatus from (X1) DM_PMNS_CHAMBER_..._KRAWCZYK_CERTIFICATE",
-        "inherits chart from forward-cycle channel value law (X2)",
+        "uses X2 only as supplied-block forward-cycle coordinate algebra",
         "inherits hw=1 three-character algebra (X4)",
         "Cycles 5a, 6a, 7 cited as cascade partners (in-flight)",
         "parent prediction note cited as Table 2 source only (not promotion)",

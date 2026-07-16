@@ -13,8 +13,8 @@ It is a curated boundary/support packet:
 
 - exact lower-level PMNS closure once the retained source/transfer pack is
   supplied
-- exact native PMNS subtools for value-law, selection-structure, transport,
-  and graph/commutant reduction
+- bounded PMNS coordinate algebra plus separate selection-structure,
+  transport, and graph/commutant tools
 - exact current-stack Majorana zero law and exact mass-lane reduction to the
   Dirac Yukawa object
 - exact negative closeout of the full single-Higgs lepton PMNS route and exact
@@ -23,15 +23,15 @@ It is a curated boundary/support packet:
   two-Higgs class
 - exact PMNS selector reduction stack down to one real reduced amplitude
   `a_sel`, with exact current-stack zero law `a_sel,current = 0`
-- exact current-bank no-go fixing the native cycle/transport mean `sigma` to
-  zero on the pure-retained PMNS bank
+- route-specific checks setting the algebraic cycle/transport mean `sigma` to
+  zero on three named PMNS blocks and the displayed positive-lift action
 - exact current-bank no-go showing no right-conjugacy-invariant observable of
   `K = Y^dag Y` can intrinsicize the admitted right-Gram completion route
 - exact last-mile reduction of the full retained-neutrino sole-axiom frontier
   to the pair `(J_chi, mu)`, with current retained routes setting both to zero
 - exact negative Majorana lower-level pairing result on the retained
   charge-preserving lane
-- exact negative sole-axiom closeout for the current retained neutrino bank
+- named-route sole-axiom boundary for the checked neutrino packet
 - retained-package observable bounds from the retained atmospheric scale plus
   retained normal ordering: `Σm_ν > 50.58 meV`, `m_β ≤ 50.58 meV`,
   `m_ββ ≤ 50.58 meV`, and `0 < Δm²_21 < Δm²_31`
@@ -51,10 +51,10 @@ Primary package entry points:
   [PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md](./PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md)
 - uniform scalar / Coleman-Weinberg route boundary:
   [PMNS_UNIFORM_SCALAR_DEFORMATION_BOUNDARY_NOTE.md](./PMNS_UNIFORM_SCALAR_DEFORMATION_BOUNDARY_NOTE.md)
-- exact oriented-cycle value law and residual selection structure:
+- bounded oriented-cycle coordinate extraction and residual matrix structure:
   [PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md](./PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md),
   [PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md](./PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md)
-- exact reduced-channel nonselection closeout on the current bank:
+- bounded reduced-channel coordinate/nonselection checks:
   [PMNS_ORIENTED_CYCLE_REDUCED_CHANNEL_NONSELECTION_NOTE.md](./PMNS_ORIENTED_CYCLE_REDUCED_CHANNEL_NONSELECTION_NOTE.md),
   [PMNS_CURRENT_BANK_VALUE_SELECTION_NOGO_NOTE.md](./PMNS_CURRENT_BANK_VALUE_SELECTION_NOGO_NOTE.md)
 - exact graph-first / commutant / transport support stack:
@@ -89,12 +89,13 @@ Primary package entry points:
   [PMNS_SELECTOR_CURRENT_STACK_ZERO_LAW_NOTE.md](./PMNS_SELECTOR_CURRENT_STACK_ZERO_LAW_NOTE.md),
   [PMNS_SELECTOR_SIGN_TO_BRANCH_REDUCTION_NOTE.md](./PMNS_SELECTOR_SIGN_TO_BRANCH_REDUCTION_NOTE.md),
   [PMNS_BRANCH_CONDITIONED_QUADRATIC_SHEET_CLOSURE_NOTE.md](./PMNS_BRANCH_CONDITIONED_QUADRATIC_SHEET_CLOSURE_NOTE.md)
-- exact current-bank sigma-zero and right-conjugacy-invariant no-go closeouts:
+- route-specific sigma-zero checks and the separate
+  right-conjugacy-invariant no-go:
   [PMNS_SIGMA_ZERO_NOGO_NOTE.md](./PMNS_SIGMA_ZERO_NOGO_NOTE.md),
   [PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md](./PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md)
 - exact last-mile reduction to the pair `(J_chi, mu)`:
   [NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md](./NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md)
-- exact retained-neutrino sole-axiom negative closeout:
+- named-route retained-neutrino sole-axiom boundary:
   [NEUTRINO_SOLE_AXIOM_FULL_CLOSURE_BOUNDARY_NOTE.md](./NEUTRINO_SOLE_AXIOM_FULL_CLOSURE_BOUNDARY_NOTE.md)
 - retained-package absolute-mass observable bounds:
   [NEUTRINO_RETAINED_OBSERVABLE_BOUNDS_THEOREM_NOTE_2026-04-24.md](./NEUTRINO_RETAINED_OBSERVABLE_BOUNDS_THEOREM_NOTE_2026-04-24.md)
@@ -106,6 +107,8 @@ This packet does **not** claim:
 - a full positive neutrino closure on the sole-axiom surface
 - a positive neutrino Dirac Yukawa activation law
 - a theorem-grade PMNS value-selection law from the current exact bank
+- a retained physical `hw=1` carrier or Record-compatible observable/readout
+  bridge for the oriented-cycle coordinate tuple
 - a positive retained Majorana realization
 - robust point predictions for `m_1`, `m_2`, `m_β`, `m_ββ`, `Σm_ν`, or
   `Δm²_21` beyond the retained-package inequality bounds

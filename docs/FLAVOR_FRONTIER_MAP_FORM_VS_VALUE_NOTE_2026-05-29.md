@@ -20,9 +20,10 @@ That distinction is the useful map:
   or open gates;
 - the repeated appearance of `2/3` is not by itself a single unified object.
 
-## Retained-grade form support
+## Form-support inputs
 
-The following current-main rows are retained-grade inputs to this synthesis:
+The following source rows are inputs to this synthesis. Audit-derived retention
+is a separate runner diagnostic and is not pinned by this note:
 
 - [KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md):
   charged-lepton Koide on a C_3 circulant character surface.
@@ -32,10 +33,11 @@ The following current-main rows are retained-grade inputs to this synthesis:
   and
   [CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md](CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md):
   CKM structural identities and a bounded moduli certificate.
-- [PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md),
+- [PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
+  (bounded supplied-block coordinate algebra; not a physical value/readout law),
   [PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md](PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md),
   and [PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md](PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md):
-  PMNS oriented-cycle structure and bounded conditional magnitudes.
+  PMNS finite oriented-cycle structure and bounded conditional magnitudes.
 - [QUARK_RPSR_SINGLE_SCALAR_READOUT_UNDERDETERMINATION_NOTE_2026-04-28.md](QUARK_RPSR_SINGLE_SCALAR_READOUT_UNDERDETERMINATION_NOTE_2026-04-28.md)
   and [QUARK_C3_CIRCULANT_SOURCE_LAW_BOUNDARY_NOTE_2026-04-28.md](QUARK_C3_CIRCULANT_SOURCE_LAW_BOUNDARY_NOTE_2026-04-28.md):
   quark-sector boundaries showing that the charged-lepton Koide selector

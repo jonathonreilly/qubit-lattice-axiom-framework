@@ -67,14 +67,12 @@ narrow theorem below; ledger statuses verified against
   supplies the rigorous strictly-positive chamber-margin sign at the
   PDG-central anchor that the IFT-based extension lifts to an open
   neighborhood.
-- **(X2) Forward-cycle channel value law.**
+- **(X2) Bounded forward-cycle coordinate extraction.**
   [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  (`effective_status: retained`, `claim_type: positive_theorem`,
-  `chain_closes: True`). Forward-cycle coefficients on the active 3 by 3
-  hw=1 block. Role here: keeps the chamber chart `H(m, δ, q) = H_BASE +
-  m T_M + δ T_D + q T_Q` aligned with the retained projected cycle
-  structure, so that the chart used by Phi is the same chart the audit
-  lane retains.
+  (`claim_type: bounded_theorem`). For the separately supplied chart matrix,
+  X2 extracts its
+  forward-cycle coordinates exactly. It does not derive the physical `hw=1`
+  carrier, identify the chamber chart, or provide a readout law.
 - **(X3) NuFit 5.3 NO 3-σ box on `(s_12^2, s_13^2, s_23^2)`.**
   NAMED EXTERNAL ADMISSION, not a derived target: the experimental
   rectangle `s_12^2 ∈ [0.270, 0.341]`, `s_13^2 ∈ [0.02029, 0.02391]`,
@@ -114,8 +112,8 @@ Given
 - **(X1)** the Krawczyk-certified strictly-positive chamber margin at the
   PDG-central Basin 1 anchor,
   `q_* + δ_* - sqrt(8/3) ≥ +1.5849 × 10^-2 > 0`;
-- **(X2)** the forward-cycle channel value law fixing the active hw=1
-  chamber chart used by the chart map `Phi`;
+- **(X2)** the bounded coordinate identity on the separately supplied chamber
+  chart used by the chart map `Phi`;
 - **(X3)** the NuFit 5.3 NO 3-σ rectangle as named external admission on
   `(s_12^2, s_13^2, s_23^2)`;
 - **(X4)** the distinct translation-character algebra on the hw=1 triplet;
@@ -348,8 +346,8 @@ open neighborhood, leaving the full-rectangle claim to future work.
   — (X1) Krawczyk-interval chamber-margin certificate at the PDG-central
   Basin 1 anchor (`retained_bounded`).
 - [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  — (X2) projected forward-cycle coefficients on the active 3 by 3 hw=1
-  block (`retained`, positive_theorem).
+  — (X2) bounded projected forward-cycle coordinates on an explicitly
+  supplied `3 x 3` block; no physical `hw=1` or readout bridge.
 - [`THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md`](THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md)
   — (X4) distinct-character diagonal involutions and rank-1 sector
   projectors on the hw=1 triplet (`retained_bounded`).
@@ -370,9 +368,9 @@ import path):
 
 ## 10. Forbidden-imports check
 
-- No new axiom introduced (only `Cl(3)` on `Z^3`); the Krawczyk
-  certificate, the cycle-channel value law, and the hw=1 character
-  algebra are existing retained authorities.
+- No new axiom introduced (only `Cl(3)` on `Z^3`). The Krawczyk certificate
+  and character algebra are cited authorities; X2 is bounded supplied-block
+  algebra and is not treated as a retained physical value/readout law.
 - No new repo vocabulary introduced. "Chamber margin," "open
   neighborhood," "inverse function theorem," "threshold function" are
   taken from standard real-analysis vocabulary already used by Cycle 5a
@@ -442,7 +440,8 @@ IVT) consequences. Part 7 is numerical evidence only.
 
 - `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16`
   — (X1) (`retained_bounded`).
-- `pmns_oriented_cycle_channel_value_law_note` — (X2) (`retained`).
+- `pmns_oriented_cycle_channel_value_law_note` — (X2), bounded supplied-block
+  coordinate lemma; audit status not pinned here.
 - `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10`
   — (X4) (`retained_bounded`).
 - `pmns_theta23_upper_octant_chamber_closure_prediction_note_2026-04-17`

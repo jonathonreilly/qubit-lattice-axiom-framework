@@ -789,7 +789,7 @@ def part9_claim_discipline() -> None:
         ("no audit_status promotion language", True),
         ("box-Krawczyk over B is new computational content (X5)", True),
         ("inherits Krawczyk apparatus from (X1)", True),
-        ("inherits chart from forward-cycle channel value law (X2)", True),
+        ("uses X2 only as supplied-block forward-cycle coordinate algebra", True),
         ("inherits hw=1 three-character algebra (X4)", True),
         ("parent prediction note cited as Table 2 source only (not promotion)", True),
         ("Cycle 5a and Cycle 6a narrow notes cited as cascade partners", True),

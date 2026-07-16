@@ -22,8 +22,8 @@ Answer:
   family, so they do not select a unique point (u,v,w).
 
   In other words, this route is a theorem-grade boundary, not a positive
-  value law.  The current bank still needs a lower-level source/transport
-  law to fix the reduced cycle values themselves.
+  value law. A separate lower-level source/transport and physical-readout
+  bridge would be needed to fix and interpret the reduced cycle values.
 """
 
 from __future__ import annotations
@@ -44,7 +44,7 @@ from frontier_pmns_commutant_eigenoperator_selector import (
     orbit_fourier,
     project_corner_eigenspace,
 )
-from frontier_pmns_graph_first_axis_alignment import aligned_core, selector_from_phi, simplex_grid
+from frontier_pmns_graph_first_axis_alignment import simplex_grid
 from frontier_pmns_oriented_cycle_channel_value_law import oriented_cycle_coeffs_from_block
 from frontier_pmns_oriented_cycle_reduced_channel_nonselection import (
     active_block_with_reduced_cycle,
@@ -218,9 +218,9 @@ def part2_two_distinct_reduced_cycle_points_share_the_same_route_signature(comm:
           f"coeffs_a={np.round(sig_a['coeffs'], 6)}, coeffs_b={np.round(sig_b['coeffs'], 6)}")
 
 
-def part3_the_route_is_value_blind_even_though_the_values_are_realized() -> None:
+def part3_the_route_is_value_blind_on_distinct_supplied_blocks() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: THE ROUTE IS VALUE-BLIND EVEN THOUGH THE VALUES ARE REALIZED")
+    print("PART 3: THE ROUTE IS VALUE-BLIND ON DISTINCT SUPPLIED BLOCKS")
     print("=" * 88)
 
     a = active_block_with_reduced_cycle(0.41, 0.32, 0.28, xbar=1.0)
@@ -230,7 +230,7 @@ def part3_the_route_is_value_blind_even_though_the_values_are_realized() -> None
 
     check("The graph-first / projected-commutant route signature is constant", sig_a == sig_b,
           f"signature={sig_a}")
-    check("The native oriented-cycle value law still reads the reduced values exactly on the active block",
+    check("The bounded algebraic coordinate map distinguishes the supplied reduced blocks",
           np.linalg.norm(oriented_cycle_coeffs_from_block(a) - np.array([0.41 + 0.32j, 0.28, 0.41 - 0.32j])) < 1e-12
           and np.linalg.norm(oriented_cycle_coeffs_from_block(b) - np.array([0.29 - 0.17j, 0.34, 0.29 + 0.17j])) < 1e-12)
     check("The same selector bundle is recovered on both reduced-cycle points",
@@ -256,24 +256,22 @@ def part4_current_bank_status() -> None:
     selector = read("docs/PMNS_COMMUTANT_EIGENOPERATOR_SELECTOR_NOTE.md")
     graph = read("docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md")
 
-    check("The value-law note confirms the reduced-cycle coefficients are read from the active block",
-          "diag(A C^dagger)" in note or "diag(A C^\\dagger)" in note)
-    check("The reduced-channel no-go note says the current bank does not select a unique point",
+    check("The stable-path note is a bounded supplied-block coordinate lemma",
+          "**Claim type:** bounded_theorem" in note
+          and "supplied complex `3 x 3` matrix" in note
+          and ("diag(A C^dagger)" in note or "diag(A C^\\dagger)" in note))
+    check("The stable-path note leaves the physical carrier and Record readout open",
+          "Record-compatible physical observable/readout map" in note
+          and "framework construction identifying which matrix-valued block is `A`" in note)
+    check("The reduced-channel note says the checked algebra does not select a unique point",
           "unique value on the reduced channel" in reduced or "does not select a unique point" in reduced)
-    # Authority check: the selector note's current text states the "only
-    # partial" position via two equivalent phrasings used across drafts.
-    # Either pair of substrings counts as the same boundary statement.
-    selector_partial_phrases = (
-        ("positive native selector law", "not a full PMNS microscopic closure theorem"),
-        ("positive value law for the selector side", "not a full PMNS microscopic closure theorem"),
-        ("Yes, but only partially", "not a full PMNS microscopic closure theorem"),
-    )
     check(
-        "The commutant note says the route is only partial",
-        any(all(p in selector for p in pair) for pair in selector_partial_phrases),
+        "The commutant note excludes a physical PMNS readout bridge",
+        "It does **not** close a bridge" in selector
+        and "must supply that bridge separately" in selector,
     )
     check("The graph-first note still only derives alignment, not values",
-          "What It Does Not Yet Give" in graph and "(a,b,c,d)" in graph and "which lepton sector carries the active block" in graph)
+          "What It Does Not Yet Give" in graph and "(a,z,c,d)" in graph and "which lepton sector carries the active block" in graph)
 
     print()
     print("  So the graph-native projected commutant attack is a real selector")
@@ -288,7 +286,7 @@ def main() -> int:
     print("Inputs reused:")
     print("  - graph-first axis alignment")
     print("  - projected commutant eigenoperator selector")
-    print("  - oriented-cycle channel value law")
+    print("  - bounded oriented-cycle coordinate-extraction lemma")
     print("  - reduced-channel nonselection theorem")
     print()
     print("Question:")
@@ -298,7 +296,7 @@ def main() -> int:
 
     comm = part1_graph_first_and_commutant_fix_the_selector_bundle()
     part2_two_distinct_reduced_cycle_points_share_the_same_route_signature(comm)
-    part3_the_route_is_value_blind_even_though_the_values_are_realized()
+    part3_the_route_is_value_blind_on_distinct_supplied_blocks()
     part4_current_bank_status()
 
     print("\n" + "=" * 88)

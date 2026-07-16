@@ -13,31 +13,32 @@ This note depends on:
 - [PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md](./PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
 - [PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md](./PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md)
 
-The selection-structure note supplies the graph-first selected-axis route and
-the residual antiunitary symmetry that pin the reduced channel to the
-`3`-real family `(u, v, w) <-> (u + i v, w, u - i v)`; the channel value-law
-note supplies the native observable law `(c_1, c_2, c_3) = diag(A C^dagger)`
-that reads `(u, v, w)` exactly off the active block; the active-four-real-
-source-from-transport note supplies the lower-level active transport /
-response chain on which every reduced-channel point is exactly realised.
+The selection-structure note supplies the displayed residual antiunitary map
+that pins the reduced matrix family to
+`(u, v, w) <-> (u + i v, w, u - i v)`. The stable-path cycle-coordinate note
+supplies only the bounded algebraic identity
+`(c_1, c_2, c_3) = diag(A C^dagger)` for a supplied `3 x 3` block. The
+response construction used below is a target-constructed fixture round trip
+and is consistency-only, not independent physical realization evidence.
 
 ## Question
 
-Once the retained PMNS lane is reduced to the graph-first selected-axis
-oriented-cycle channel, does the current exact bank select the remaining cycle
-values?
+On the explicitly supplied graph-first-symmetric oriented-cycle family, do
+residual symmetry, coordinate extraction, and a target-constructed fixture
+select the remaining cycle values?
 
 ## Answer
 
 No.
 
-The current exact bank now closes:
+On the explicitly supplied reduced matrix family:
 
-- the oriented-cycle carrier
-- the native observable/value law on that carrier
-- the exact graph-first residual symmetry reduction
+- the residual symmetry reduction is an exact matrix identity;
+- the bounded coordinate extractor returns `(u,v,w)` exactly;
+- the coordinate map itself does not select a unique point.
 
-But it still does **not** select a unique value on the reduced channel.
+This note does not use the coordinate extractor as a physical observable or
+Record readout.
 
 The exact reduced family is
 
@@ -47,11 +48,12 @@ and every point of that `3`-real family:
 
 - satisfies the residual antiunitary symmetry
   `A_fwd = P_23 A_fwd^dagger P_23`
-- is read exactly by the native observable law
-- is realized exactly on the lower-level active response chain
+- has its coordinates extracted exactly by the bounded algebraic lemma
+- can be round-tripped through a target-constructed response fixture as a
+  consistency check
 
-So the last remaining value-selection problem closes negatively for the current
-exact bank.
+The fixture round trip does not prove physical realization or current-bank
+exhaustiveness.
 
 ## Exact chain
 
@@ -67,9 +69,9 @@ Equivalently,
 - `c_1 = conjugate(c_3)`
 - `c_2` real
 
-### 2. Exact native observable law on the reduced family
+### 2. Exact algebraic coordinate extraction on the reduced family
 
-The native oriented-cycle observable law already gives
+For a supplied block, the bounded coordinate-extraction lemma gives
 
 `(c_1,c_2,c_3) = diag(A C^dagger)`.
 
@@ -81,46 +83,44 @@ So on the reduced family, the remaining real coordinates are read exactly as
 
 No further projection ambiguity remains.
 
-### 3. Exact realization on the lower-level active response chain
+### 3. Target-constructed response round trip
 
 For any reduced-channel point `(u,v,w)`, the active block
 
 `A = xbar I_3 + A_fwd(u,v,w)`
 
-is recovered exactly from a lower-level active response profile via the already
-proved active response chain.
+is encoded into a spectator-extended fixture, converted to response columns,
+and recovered by inverting that same construction.
 
-So the reduced family is not merely formal. It is exactly realizable on the
-current lower-level active transport/response chain.
+This is a consistency-only round trip because the fixture is constructed from
+the target `A`. It is not an independent lower-level derivation of `A`, a
+physical carrier, or a Record-compatible readout.
 
 ### 4. Nonselection theorem
 
 There exist distinct reduced-channel points `(u,v,w) != (u',v',w')` such that:
 
 - both satisfy the graph-first residual antiunitary symmetry
-- both sit on the retained diagonal-plus-forward-cycle support
-- both are read exactly by the native observable law
-- both are realized exactly on the lower-level active response chain
+- both sit on the specified diagonal-plus-forward-cycle support
+- both have different algebraically extracted coordinate tuples
+- both can be passed through the same target-constructed consistency fixture
 
-Therefore the current exact bank does not select a unique reduced-channel
-value.
+Therefore coordinate extraction does not select a unique reduced-channel
+value. A broader current-bank nonselection theorem requires separate retained
+carrier, readout, realization, and exhaustiveness premises.
 
 ## Consequence
 
-This is the clean closeout for the last retained oriented-cycle object.
-
-What remains is **not** another hidden theorem inside the current bank.
-Any further positive value-selection law would have to come from:
-
-- genuinely new dynamics, or
-- a further admitted extension beyond the current exact bank
+The coordinate tuple is bounded algebraic data on a supplied matrix, not a
+physical observable supplied by this row. The retained carrier,
+Record-compatible readout, and matrix/value-selection bridges remain open.
 
 ## Boundary
 
 This is not a positive value-selection theorem.
 
-It is the exact negative closeout theorem for the retained graph-first reduced
-cycle channel.
+It is an algebraic nonselection check for the explicitly supplied reduced
+matrix family. The response fixture is consistency-only.
 
 ## Command
 

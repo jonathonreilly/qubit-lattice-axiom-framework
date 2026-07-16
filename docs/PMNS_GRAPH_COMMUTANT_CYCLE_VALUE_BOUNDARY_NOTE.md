@@ -51,11 +51,12 @@ This boundary is compatible with the current exact package:
    route derives alignment, but not the values
 2. the [projected commutant eigenoperator selector](PMNS_COMMUTANT_EIGENOPERATOR_SELECTOR_NOTE.md)
    derives selectors, but not the reduced cycle coefficients
-3. the [native oriented-cycle channel value law](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-   reads the coefficients exactly once an active block is already supplied
+3. the [bounded oriented-cycle coordinate-extraction lemma](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
+   extracts `A_12,A_23,A_31` exactly once a `3 x 3` block is supplied; it
+   supplies no physical carrier or Record-compatible readout
 4. the [reduced-channel nonselection theorem](PMNS_ORIENTED_CYCLE_REDUCED_CHANNEL_NONSELECTION_NOTE.md)
-   remains correct: the current exact bank does not select a unique
-   reduced-channel point
+   shows that residual symmetry and coordinate extraction do not select a
+   unique supplied reduced-channel point
 
 ## Honest next target
 

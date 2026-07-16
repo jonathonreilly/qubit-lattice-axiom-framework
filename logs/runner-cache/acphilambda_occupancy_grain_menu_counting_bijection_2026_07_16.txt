@@ -1,0 +1,113 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_occupancy_grain_menu_counting_bijection_2026_07_16.py
+runner_sha256: c6de31faf67d882d31439f30874aa36206ab437359ed0a8f05d47cd7cd4c16c1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.75
+status: ok
+----- stdout -----
+[R1] Aggregation identity and aggregated fixed-point odds form (symbolic)
+R1.1 PASS: 2 f(q/2)(1-q) - q f(1-q) = q(1-q)[g(q/2) - g(1-q)] exactly
+R1.2 PASS: interior fixed condition of q -> F_d/(F_d+F_s) is F_d(1-q) = q F_s (odds form)
+R1.3 PASS: aggregated displacement numerator is exactly 2 f(q/2)(1-q) - q f(1-q)
+[R2] n=2 equivalence identity: D1 content = L3 at complementary pairs
+R2.1 PASS: f(q)(1-q) - q f(1-q) = q(1-q)[g(q) - g(1-q)] exactly
+R2.2 PASS: exact sample q=1/4, f=x^2: L3 odds inequality, g inequality, identity all hold
+[R3] Power family k in {2, 3, 5/2, 4}: exact fixed sets at both grains
+R3.1 PASS: D1 membership for k=2: g' has empty non-positivity set on (0,1]
+R3.2 PASS: aggregated interior fixed set for k=2 is exactly {2/3}
+R3.3 PASS: orbit-grain exact solve for k=2 yields only {0, 1/2, 1}
+R3.4 PASS: D1 membership for k=3: g' has empty non-positivity set on (0,1]
+R3.5 PASS: aggregated interior fixed set for k=3 is exactly {2/3}
+R3.6 PASS: orbit-grain exact solve for k=3 yields only {0, 1/2, 1}
+R3.7 PASS: D1 membership for k=5/2: g' has empty non-positivity set on (0,1]
+R3.8 PASS: aggregated interior fixed set for k=5/2 is exactly {2/3}
+R3.9 PASS: orbit-grain exact solve for k=5/2 yields only {0, 1/2, 1}
+R3.10 PASS: D1 membership for k=4: g' has empty non-positivity set on (0,1]
+R3.11 PASS: aggregated interior fixed set for k=4 is exactly {2/3}
+R3.12 PASS: orbit-grain exact solve for k=4 yields only {0, 1/2, 1}
+[R4] Non-power members: f = x*e^(x-1) and f = (x^2 + x^3)/2
+R4.1 PASS: f = x e^(x-1): class codomain gates f(0) = 0 and f(1) = 1
+R4.2 PASS: f = x e^(x-1): f' = (1+x) e^(x-1) > 0 on [0,1] (positive exp factor, positive linear factor)
+R4.3 PASS: f = x e^(x-1): D1 membership — g' = e^(x-1) has empty non-positivity set on the reals
+R4.4 PASS: f = x e^(x-1): aggregated stationarity g(q/2) = g(1-q) solves to exactly {2/3}
+R4.5 PASS: f = x e^(x-1): aggregated fixed equation vanishes exactly at q = 2/3
+R4.6 PASS: f = x e^(x-1): orbit stationarity g(q) = g(1-q) solves to exactly {1/2}
+R4.7 PASS: f = x e^(x-1): orbit fixed equation vanishes exactly at q = 1/2
+R4.8 PASS: f = (x^2 + x^3)/2: class codomain gates f(0) = 0 and f(1) = 1
+R4.9 PASS: f = (x^2 + x^3)/2: f' = x(2 + 3x)/2 has empty non-positivity set on (0,1]
+R4.10 PASS: f = (x^2 + x^3)/2: D1 membership — g' = (1 + 2x)/2 has empty non-positivity set on (0,1]
+R4.11 PASS: f = (x^2 + x^3)/2: aggregated interior fixed set is exactly {2/3}
+R4.12 PASS: f = (x^2 + x^3)/2: orbit interior fixed set is exactly {1/2}
+[R5] T1 at n=3: simplex fixed set = the 7 uniform-on-support points
+R5.1 PASS: f = x^2: n=3 simplex fixed set is exactly the 7 uniform-on-support points
+R5.2 PASS: f = x^3: n=3 simplex fixed set is exactly the 7 uniform-on-support points
+R5.3 PASS: uniform-on-support count at n=3 is 2^3 - 1 = 7
+[R6] Weight-to-dial bijection arithmetic and menu set equalities
+R6.1 PASS: orbit grain: w = 1/2 maps to dial r = 1/2
+R6.2 PASS: sector grain: w = 1/3 maps to dial r = 1
+R6.3 PASS: dynamical durable weights {1/2, 1/3} equal the licensed static menu W_expr
+R6.4 PASS: dial image of the menu is exactly {1/2, 1}
+R6.5 PASS: counterfactual 4-cell menu: w = 1/4 -> r = 3/2, outside both licensed sets
+[R7] Swap equivariance, surface invariance, aggregated shadow, asymmetry
+R7.1 PASS: swap equivariance: T(p_s, p_wbar, p_w) = swap T(p_s, p_w, p_wbar) componentwise
+R7.2 PASS: surface invariance: T_w = T_wbar exactly when p_w = p_wbar
+R7.3 PASS: aggregated shadow: q' = T_w + T_wbar = 2 f(q/2) / (f(1-q) + 2 f(q/2)) on the surface
+R7.4 PASS: exemplar f = x^2: f_d(q) = 2 f(q/2) = q^2/2 differs from f_s(q) = q^2
+R7.5 PASS: identity profile f = x: f_d(q) = 2 f(q/2) = q coincides with f_s (contrast case)
+R7.6 PASS: strict asymmetry identity: 2 f(q/2) - f(q) = q [g(q/2) - g(q)] exactly
+[R8] Exact instability multipliers and separatrix match
+R8.1 PASS: f = x^2, n=3: transverse swap-odd mode (0,1,-1) has exact multiplier 2
+R8.2 PASS: f = x^2, orbit grain: multiplier at q = 1/2 is exactly 2
+R8.3 PASS: f = x^2, aggregated sector grain: q = 2/3 is a fixed point
+R8.4 PASS: f = x^2, aggregated sector grain: multiplier at q = 2/3 is exactly 2
+R8.5 PASS: separatrix exemplar r -> 2 r^2: multiplier at r = 1/2 is exactly 2
+[R9] T5 witness: piecewise-linear g separating D1 from 2-cell L3
+R9.1 PASS: witness node values match the declared table exactly
+R9.2 PASS: witness g is continuous at the internal breakpoints 1/6, 1/3, 2/3
+R9.3 PASS: witness f(0) = 0 and f(1) = 7/10 <= 1
+R9.4 PASS: witness f' > 0 at every piece endpoint (strict increase on [0,1])
+R9.5 PASS: named per-piece minima: f'(0) = 2/5 on piece 1, f'(1/3) = 7/20 on piece 2, f' >= 2/5 on piece 3
+R9.6 PASS: h breakpoint values on [0,1/2] are exactly (3/10, 1/10, 1/20, 0)
+R9.7 PASS: h > 0 at interior samples of (0,1/2) and h(1-q) = -h(q) at those samples
+R9.8 PASS: h breakpoint set on (0,1/2) is exactly {1/6, 1/3}
+R9.9 PASS: witness 2-cell interior fixed set (zeros of h on (0,1)) is exactly {1/2}
+R9.10 PASS: linearity certificate: h at each sub-piece midpoint equals the endpoint average
+R9.11 PASS: D1 fails: g(1/6) = g(2/3) = 1/2 while g(1/3) = 9/20 < 1/2 with 1/6 < 1/3
+R9.12 PASS: n=3 non-uniform fixed point: f(2/3) = 1/3, f(1/6) = 1/12, S = 1/2, T(p) = p
+R9.13 PASS: piece mapping: on each q-piece, q/2 and 1-q stay inside the named g-pieces
+R9.14 PASS: phi(q) = g(q/2) - g(1-q) on q-piece [0, 1/3] equals the declared formula
+R9.15 PASS: phi(q) = g(q/2) - g(1-q) on q-piece [1/3, 2/3] equals the declared formula
+R9.16 PASS: phi(q) = g(q/2) - g(1-q) on q-piece [2/3, 5/6] equals the declared formula
+R9.17 PASS: phi(q) = g(q/2) - g(1-q) on q-piece [5/6, 1] equals the declared formula
+R9.18 PASS: identically-zero segment: g(q/2) and g(1-q) are the SAME polynomial 11/20 - 3q/20 on [1/3, 2/3]
+R9.19 PASS: non-flat phi pieces have unique zeros exactly at q = 1/3, 2/3, 8/9
+R9.20 PASS: assembled aggregated interior fixed set is exactly [1/3, 2/3] union {8/9}
+R9.21 PASS: spot identities 2 f(q/2)(1-q) = q f(1-q) at q = 2/5, 1/2, 3/5, 8/9 with declared exact values
+R9.22 PASS: non-counting durable profile (1/2, 1/4, 1/4): g(1/4) = g(1/2) = 19/40, S = 19/40, T(p) = p
+R9.23 PASS: midpoint registers the LICENSED dial: q = 1/2 gives w = 1/2, r = 1/2 in the menu
+R9.24 PASS: fixed-segment mechanism on [1/3, 2/3]: S = c(q), ratios exactly 1-q and q/2 (T(p) = p identically)
+R9.25 PASS: segment endpoint q = 1/3: 2 f(1/6)(2/3) = 1/9 = (1/3) f(2/3); dial r = 1/4 outside the menu
+R9.26 PASS: segment endpoint q = 2/3 stays fixed: 2 f(1/3)(1/3) = (2/3) f(1/3) = 1/10
+R9.27 PASS: isolated fixed point q = 8/9: g(4/9) = g(1/9) = 7/15; singlet weight w = 1/9, dial r = 4
+R9.28 PASS: dial sweep: dr/dw = -1/(2 w^2) < 0; segment weights w in [1/3, 2/3] sweep r in [1/4, 1]
+[R10] Verbatim quote gates (flattened substring in source AND this note)
+R10.1 PASS: Q1 class prose: present verbatim in source and in this note
+R10.2 PASS: Q2 class form: present verbatim in source and in this note
+R10.3 PASS: Q3 recording distinction: present verbatim in source and in this note
+R10.4 PASS: Q4 symmetric-family reading (L2): present verbatim in source and in this note
+R10.5 PASS: Q5 strict-sharpening meaning (L3): present verbatim in source and in this note
+R10.6 PASS: Q6 negative-control contrast: present verbatim in source and in this note
+R10.7 PASS: Q7 licensed static menu: present verbatim in source and in this note
+R10.8 PASS: Q8 weight-to-dial coordinates: present verbatim in source and in this note
+R10.9 PASS: Q9 unadopted-energy-dictionary hedge: present verbatim in source and in this note
+R10.10 PASS: Q10 obligation closure criterion (two-part): present verbatim in source and in this note
+[R11] Note hygiene gates
+R11.1 PASS: no decimal literals outside code fences in the note
+R11.2 PASS: pinned closing phrases are absent from the note
+R11.3 PASS: claim-type line is present exactly
+R11.4 PASS: required sections and status-authority line are present
+TOTAL: PASS=90 FAIL=0
+
+----- stderr -----
+

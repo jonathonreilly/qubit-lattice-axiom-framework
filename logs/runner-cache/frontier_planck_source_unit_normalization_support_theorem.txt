@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_planck_source_unit_normalization_support_theorem.py
-runner_sha256: 5c2240dfded620b3faddcf2cf4b07635d17fc10fc387a0acd28dd3996d54081d
+runner_sha256: 09f79602baf20a2b1269dfc0621ab7bd7d3e8a73f87fb4ef3e5a22acd4df064c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 [PASS] baseline Green-kernel coefficient is 1/(4*pi): G_kernel=0.079577471545948
@@ -22,8 +22,10 @@ status: ok
 [PASS] no measured constants enter the closure arithmetic: inputs are G_kernel=1/(4*pi), c_cell=4/16, lambda=4*c_cell
 [PASS] source imports c_cell from the direct coframe authority: no CAR-to-gravitational-carrier dependency
 [PASS] source keeps the Wald/gravitational carrier identification explicit: conditional gravitational bridge
+[PASS] source does not promote Clifford/CAR into the gravitational carrier: algebra-to-carrier shortcut rejected
+[PASS] source does not identify the Widom coefficient with the cell trace: source-unit algebra remains separate from the edge-channel law
 
-Summary: 16/16 checks passed.
+Summary: 18/18 checks passed.
 Verdict: conditional source-unit algebra on the explicitly supplied c_cell and Wald/Gauss carrier premises. Clifford/CAR does not supply those physical identifications. Given them, c_cell=lambda/4 fixes lambda=1 and q_bare=4*pi*M_phys, so G_Newton,lat=1, c_cell=1/(4G), EH=c_cell/(4*pi), and a/l_P=1.
 
 ----- stderr -----

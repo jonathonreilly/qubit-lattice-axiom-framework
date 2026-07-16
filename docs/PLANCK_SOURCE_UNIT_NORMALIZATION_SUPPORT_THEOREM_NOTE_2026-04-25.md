@@ -128,7 +128,7 @@ be accepted or derived as the gravitational boundary/action carrier.
 | `K(r) -> 1/(4 pi r)` | Green-kernel asymptotic | retained theorem |
 | Gauss/asymptotic monopole readout | exterior scalar source charge `C` | axiom-native field readout from the same divergence-form Poisson law |
 | `M_lambda = lambda C` | possible source-unit family | derived from exterior observability and additivity |
-| `c_cell = 1/4` | primitive boundary/Wald area carrier | retained primitive-cell theorem |
+| `c_cell = 1/4` | primitive boundary/Wald area carrier | supplied conditional carrier premise from the cited coframe source |
 | `lambda = 1` | physical source-unit scale | derived by matching `c_cell = 1/(4G_lambda)` |
 | `q_bare = 4 pi M_phys` | source-unit conversion | derived theorem |
 | `G_Newton,lat = 1` | physical lattice Newton coefficient | derived from `lambda = 1` |
@@ -140,16 +140,20 @@ The only external input is the conventional target definition
 This theorem is therefore a support theorem for the existing conditional
 Planck packet, not a replacement for the current package pin.
 
-The later Target 3 Clifford phase bridge supplies a sufficient carrier route
-under the primitive metric-compatible coframe-response premise. Under that
-conditional bridge, this support theorem becomes the source-unit leg of the
-structural Planck packet:
+No Clifford/CAR bridge is consumed here. In particular, an abstract active
+`Cl_4(C)` representation does not provide either the gravitational
+boundary/action identification or the normal/tangent edge-channel law. This
+support theorem supplies only the source-unit algebra after the direct
+coframe/Wald carrier premises above are separately supplied:
 
 ```text
-c_Widom = c_cell = 1/4,
+c_cell = 1/4,
 G_Newton,lat = 1,
 a/l_P = 1.
 ```
+
+No equality between `c_Widom` and `c_cell` is asserted by this source-unit
+theorem.
 
 ## Lemma 1: Green Kernel Is a Bare-Source Statement
 

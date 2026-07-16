@@ -202,6 +202,11 @@ def part3_gate_packet_inventory() -> None:
         and "coupled open packet, not a single premise" in parent_norm,
     )
     check(
+        "source-packet boundary describes the coupled inventory consistently",
+        "coupled response/channel/Widom/action-unit inventory" in parent_norm
+        and "single-gate inventory" not in parent_norm,
+    )
+    check(
         "packet includes active-block response and physical channel law",
         "**Active-block response**" in parent
         and "**Physical channel law**" in parent,

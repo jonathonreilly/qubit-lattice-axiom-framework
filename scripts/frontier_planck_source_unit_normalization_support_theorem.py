@@ -226,6 +226,23 @@ def main() -> int:
         and "is not\nderived from physical `Cl(3)`" in note,
         "conditional gravitational bridge",
     )
+    record(
+        checks,
+        "source does not promote Clifford/CAR into the gravitational carrier",
+        "No Clifford/CAR bridge is consumed here" in note
+        and "an abstract active\n`Cl_4(C)` representation does not provide" in note
+        and "Target 3 Clifford phase bridge supplies a sufficient carrier route"
+        not in note,
+        "algebra-to-carrier shortcut rejected",
+    )
+    record(
+        checks,
+        "source does not identify the Widom coefficient with the cell trace",
+        "No equality between `c_Widom` and `c_cell` is asserted" in note
+        and "c_Widom = c_cell" not in note
+        and "retained primitive-cell theorem" not in note,
+        "source-unit algebra remains separate from the edge-channel law",
+    )
 
     print()
     passed = sum(1 for check in checks if check.passed)

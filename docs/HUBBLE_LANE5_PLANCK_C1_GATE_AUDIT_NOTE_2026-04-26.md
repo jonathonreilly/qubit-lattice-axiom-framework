@@ -300,9 +300,9 @@ gate on the `(C1)` side, completing the symmetric pair with Cycle 4's
 `(C2)` gate audit.
 
 The attached source-packet runner makes the dependency anchors,
-single-gate inventory, and non-promotion boundary replayable for
-independent re-audit. It does not derive the metric-compatible
-Clifford/CAR coframe response, derive the scale-reference primitive,
+coupled response/channel/Widom/action-unit inventory, and non-promotion
+boundary replayable for independent re-audit. It does not derive the
+metric-compatible Clifford/CAR coframe response, derive the scale-reference primitive,
 retain `R_Lambda` numerically, close `(C1)`, or apply an audit verdict.
 
 ## Dependency links

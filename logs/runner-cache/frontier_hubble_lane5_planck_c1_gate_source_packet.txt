@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_planck_c1_gate_source_packet.py
-runner_sha256: 2c5ed047da3a9120f1220aa9e59c556c4613ba15ffd9ae5e9599f8b75519a439
+runner_sha256: 187c4632909a78cfcdffdb85be2e485465d9c0bfa8c586018dead90ec650db8d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -59,6 +59,7 @@ Part 2: dependency links and source fingerprints
 Part 3: coupled residual Planck C1 gate packet
 ----------------------------------------------------------------------------------------
   [PASS] parent identifies coupled residual premises
+  [PASS] source-packet boundary describes the coupled inventory consistently
   [PASS] packet includes active-block response and physical channel law
   [PASS] action-unit obligation remains separately named
   [PASS] parent rejects algebra-to-channel collapse
@@ -88,7 +89,7 @@ Part 4: finite non-promotion model
   [PASS] runner boundary forbids audit-result mutation
 
 ========================================================================================
-PASS=50 FAIL=0
+PASS=51 FAIL=0
 ========================================================================================
 
 ----- stderr -----

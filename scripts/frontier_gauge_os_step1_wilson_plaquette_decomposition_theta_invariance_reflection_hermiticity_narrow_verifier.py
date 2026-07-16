@@ -1,58 +1,46 @@
 #!/usr/bin/env python3
-"""Verifier for the OS Step 1 Wilson plaquette action decomposition,
-Θ-invariance, and reflection-Hermiticity narrow companion theorem.
+"""Finite SU(3) verifier for the repaired Gauge OS Step 1 narrow theorem.
 
-Pair runner for:
-docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md
+The tested theorem is deliberately restricted to the trivial temporal
+Polyakov-holonomy sector.  It separates:
 
-Exercises three substeps inline (not just cited) on a concrete 2x2x2x2
-SU(3) lattice with explicit random link variables:
+* the exact Wilson-action split on a finite even periodic carrier;
+* the criterion and construction for periodic complete temporal gauge;
+* positive-half support of a declared observable f;
+* reflection-Hermiticity, but not plus-locality, of
+  F = f + conj(f o Theta).
 
-  Part A — Plaquette enumeration and S_W decomposition (D1):
-    - all 6 * 2^4 = 96 plaquettes enumerated and labeled by time-type;
-    - partition P = P_+ ⊔ P_- ⊔ P_(mixed) is disjoint + exhaustive;
-    - the finite-periodic mixed set exposes both the reflection-plane
-      temporal plaquettes and the wraparound temporal plaquettes;
-    - |P_+| = |P_-| (Θ-bijection);
-    - S_W[U] = S_+(U) + S_-(U) + S_(mixed)(U) to machine precision;
-    - S_-(U) = S_+(ΘU) to machine precision (identifying S_- as Θ(S_+)).
-
-  Part B — Θ-invariance of S_+ on time-symmetric configurations (D2):
-    - S_+(U) ∈ R for random configurations;
-    - construct an explicit time-symmetric SU(3) configuration with
-      U_i(-1 - t, x⃗) = U_i(t, x⃗);
-    - verify S_+(ΘU) = S_+(U) on this configuration to machine precision.
-
-  Part C — Reflection-Hermiticity of the OS-Hermitian observable class (D3):
-    - construct an explicit spatial plaquette Wilson loop f(U) at t = 0;
-    - build F(U) := f(U) + conj(f(ΘU));
-    - verify F(ΘU) = conj(F(U)) on a random SU(3) configuration, to
-      machine precision.
-
-  Part D — Cited retained authorities present on main.
-
-  Part E — Hostile-audit checks (no parent modification, no new admission,
-    no no_go weakening, scope limited to pure-gauge Wilson plaquette
-    action).
+Hostile controls are computational: nontrivial temporal holonomy, a missing
+periodic-wrap plaquette family, a wrong temporal reflection orientation, a
+negative-half leak into f, and the attempted classification of F as plus-local.
 """
 
 from __future__ import annotations
 
-import math
 import subprocess
 import sys
-from typing import Iterable
+from pathlib import Path
+from typing import Callable, Iterable
 
 import numpy as np
 
 
-# -----------------------------------------------------------------------
-# Scorecard
-# -----------------------------------------------------------------------
-
 PASS = 0
 FAIL = 0
 LOG: list[str] = []
+
+L_T = 4
+L_S = 2
+N_C = 3
+BETA = 1.75
+SEED = 20260602
+TOL = 1.0e-10
+DTYPE = np.complex128
+
+Site = tuple[int, int, int, int]
+Plaquette = tuple[int, int, int, int, int, int]
+LinkKey = tuple[int, int, int, int, int]
+Observable = Callable[[np.ndarray], complex]
 
 
 def record(name: str, ok: bool, detail: str = "") -> None:
@@ -65,658 +53,704 @@ def record(name: str, ok: bool, detail: str = "") -> None:
         LOG.append(f"[FAIL] {name}" + (f"  ({detail})" if detail else ""))
 
 
-# -----------------------------------------------------------------------
-# Lattice / SU(3) setup
-# -----------------------------------------------------------------------
-
-L = 2           # lattice extent in each direction (small for explicit enumeration)
-N_C = 3         # SU(3)
-BETA = 6.0      # standard Wilson β value (numerical only; decomposition is β-independent)
-DTYPE = np.complex128
-SEED = 20260602
-
-
 def _random_su3(rng: np.random.Generator) -> np.ndarray:
-    """Draw a random SU(3) matrix via QR decomposition of a Ginibre matrix."""
-    A = rng.standard_normal((N_C, N_C)).astype(np.float64) + 1j * rng.standard_normal((N_C, N_C)).astype(np.float64)
-    Q, R = np.linalg.qr(A)
-    # Make Q a uniformly random unitary; then rephase to det = 1.
-    D = np.diag(np.diag(R) / np.abs(np.diag(R)))
-    U = Q @ D
-    detU = np.linalg.det(U)
-    # Project onto SU(3) by dividing first column by det^(1/N_c) phase.
-    phase = (detU ** (1.0 / N_C))
-    U = U / phase
-    return U
+    """Draw a reproducible SU(3) matrix from a complex Ginibre matrix."""
+    a = rng.standard_normal((N_C, N_C)) + 1j * rng.standard_normal((N_C, N_C))
+    q, r = np.linalg.qr(a)
+    phases = np.diag(r)
+    phases = phases / np.abs(phases)
+    u = q @ np.diag(phases)
+    u = u / np.linalg.det(u) ** (1.0 / N_C)
+    return np.asarray(u, dtype=DTYPE)
 
 
-def _build_random_config(seed: int = SEED) -> np.ndarray:
-    """Build a random SU(3) link configuration.
+def _identity_config() -> np.ndarray:
+    shape = (L_T, L_S, L_S, L_S, 4, N_C, N_C)
+    u = np.zeros(shape, dtype=DTYPE)
+    u[...] = np.eye(N_C, dtype=DTYPE)
+    return u
 
-    Layout: U[t, x1, x2, x3, mu] is the link in direction mu from site
-    (t, x1, x2, x3). mu = 0 is temporal, mu = 1, 2, 3 are spatial.
 
-    Lattice topology: periodic in all four directions (Z/L)^4. Time
-    coordinate convention: we treat the slice index t ∈ {0, 1, ..., L-1}
-    as labeling slices {-L/2, ..., L/2 - 1} via t_phys = t - L/2.
-
-    For L = 2, slices are t_phys ∈ {-1, 0}. The reflection Θ through
-    t = -1/2 maps t_phys ↔ -1 - t_phys, i.e. -1 ↔ 0 and 0 ↔ -1 (a swap
-    of the two slices, which is exactly involution). In array index
-    terms, slice 0 (t_phys = -1) ↔ slice 1 (t_phys = 0).
-    """
+def _random_config(seed: int = SEED) -> np.ndarray:
     rng = np.random.default_rng(seed)
-    U = np.zeros((L, L, L, L, 4, N_C, N_C), dtype=DTYPE)
-    for t in range(L):
-        for x1 in range(L):
-            for x2 in range(L):
-                for x3 in range(L):
+    u = _identity_config()
+    for t in range(L_T):
+        for x1 in range(L_S):
+            for x2 in range(L_S):
+                for x3 in range(L_S):
                     for mu in range(4):
-                        U[t, x1, x2, x3, mu] = _random_su3(rng)
-    return U
+                        u[t, x1, x2, x3, mu] = _random_su3(rng)
+    return u
 
 
-def _temporal_gauge_fix(U: np.ndarray) -> np.ndarray:
-    """Set every temporal link to identity (temporal gauge orbit
-    representative). This is the standard gauge fixing of OS Step 1."""
-    U = U.copy()
-    I = np.eye(N_C, dtype=DTYPE)
-    U[:, :, :, :, 0] = I
-    return U
+def _complete_temporal_gauge_config(seed: int = SEED) -> np.ndarray:
+    """Random spatial links with U_0=I, inside the declared theorem sector."""
+    u = _random_config(seed)
+    u[:, :, :, :, 0] = np.eye(N_C, dtype=DTYPE)
+    return u
 
 
-# -----------------------------------------------------------------------
-# Plaquette enumeration
-# -----------------------------------------------------------------------
+def _trivial_holonomy_config(seed: int = SEED + 1) -> np.ndarray:
+    """Build nontrivial temporal links whose ordered Polyakov product is I."""
+    u = _random_config(seed)
+    for x1 in range(L_S):
+        for x2 in range(L_S):
+            for x3 in range(L_S):
+                product = np.eye(N_C, dtype=DTYPE)
+                for t in range(L_T - 1):
+                    product = product @ u[t, x1, x2, x3, 0]
+                u[L_T - 1, x1, x2, x3, 0] = product.conj().T
+    return u
 
-def _all_plaquettes() -> list[tuple[int, int, int, int, int, int]]:
-    """Enumerate all distinct plaquettes (x, mu, nu) with mu < nu.
 
-    Returns list of tuples (t, x1, x2, x3, mu, nu).
-    """
-    out = []
-    for t in range(L):
-        for x1 in range(L):
-            for x2 in range(L):
-                for x3 in range(L):
-                    for mu in range(4):
-                        for nu in range(mu + 1, 4):
-                            out.append((t, x1, x2, x3, mu, nu))
+def _nontrivial_holonomy_control() -> tuple[np.ndarray, np.ndarray]:
+    """Exact SU(3) control with P=diag(-1,-1,1) at one spatial site."""
+    u = _identity_config()
+    h = np.diag([-1.0, -1.0, 1.0]).astype(DTYPE)
+    u[L_T - 1, 0, 0, 0, 0] = h
+    return u, h
+
+
+def _extent(direction: int) -> int:
+    return L_T if direction == 0 else L_S
+
+
+def _shift(site: Site, direction: int, amount: int = 1) -> Site:
+    coords = list(site)
+    coords[direction] = (coords[direction] + amount) % _extent(direction)
+    return tuple(coords)  # type: ignore[return-value]
+
+
+def _physical_time(t_index: int) -> int:
+    return t_index - L_T // 2
+
+
+def _reflected_time_index(t_index: int) -> int:
+    return (L_T - 1 - t_index) % L_T
+
+
+def _all_sites() -> Iterable[Site]:
+    for t in range(L_T):
+        for x1 in range(L_S):
+            for x2 in range(L_S):
+                for x3 in range(L_S):
+                    yield (t, x1, x2, x3)
+
+
+def _all_plaquettes() -> list[Plaquette]:
+    out: list[Plaquette] = []
+    for t, x1, x2, x3 in _all_sites():
+        for mu in range(4):
+            for nu in range(mu + 1, 4):
+                out.append((t, x1, x2, x3, mu, nu))
     return out
 
 
-def _plaquette_holonomy(U: np.ndarray, site: tuple[int, int, int, int], mu: int, nu: int) -> np.ndarray:
-    """U_p = U_mu(x) U_nu(x + mu_hat) U_mu(x + nu_hat)^† U_nu(x)^†."""
-    t, x1, x2, x3 = site
-    coords = [t, x1, x2, x3]
-
-    def shift(coords: list[int], d: int) -> tuple[int, int, int, int]:
-        c = list(coords)
-        c[d] = (c[d] + 1) % L
-        return tuple(c)
-
-    x_plus_mu = shift(coords, mu)
-    x_plus_nu = shift(coords, nu)
-
-    A = U[t, x1, x2, x3, mu]
-    B = U[x_plus_mu[0], x_plus_mu[1], x_plus_mu[2], x_plus_mu[3], nu]
-    C = U[x_plus_nu[0], x_plus_nu[1], x_plus_nu[2], x_plus_nu[3], mu].conj().T
-    D = U[t, x1, x2, x3, nu].conj().T
-    return A @ B @ C @ D
+def _plaquette_holonomy(u: np.ndarray, p: Plaquette) -> np.ndarray:
+    t, x1, x2, x3, mu, nu = p
+    site = (t, x1, x2, x3)
+    x_plus_mu = _shift(site, mu)
+    x_plus_nu = _shift(site, nu)
+    a = u[site + (mu,)]
+    b = u[x_plus_mu + (nu,)]
+    c = u[x_plus_nu + (mu,)].conj().T
+    d = u[site + (nu,)].conj().T
+    return a @ b @ c @ d
 
 
-def _wilson_action(U: np.ndarray, plaquettes: list[tuple[int, int, int, int, int, int]]) -> float:
-    """S_W = -(β/N_c) Σ_p Re Tr U_p, summed over the given plaquette set."""
-    total = 0.0
-    for (t, x1, x2, x3, mu, nu) in plaquettes:
-        U_p = _plaquette_holonomy(U, (t, x1, x2, x3), mu, nu)
-        total += np.real(np.trace(U_p))
-    return -(BETA / N_C) * total
+def _normalized_plaquette(u: np.ndarray, p: Plaquette) -> float:
+    return float(np.real(np.trace(_plaquette_holonomy(u, p))) / N_C)
 
 
-def _classify_plaquette(p: tuple[int, int, int, int, int, int]) -> str:
-    """Classify plaquette by location relative to the half-plane t = -1/2.
+def _wilson_action(u: np.ndarray, plaquettes: Iterable[Plaquette]) -> float:
+    return -BETA * sum(_normalized_plaquette(u, p) for p in plaquettes)
 
-    Physical time coordinate is t_phys = t - L/2 (so for L = 2,
-    t = 0 → t_phys = -1, t = 1 → t_phys = 0).
 
-    Returns 'plus' if all endpoints have t_phys >= 0,
-            'minus' if all endpoints have t_phys <= -1,
-            'mixed' otherwise.
+def _classify_plaquette(p: Plaquette) -> str:
+    t, _, _, _, mu, _ = p
+    t_phys = _physical_time(t)
+    if mu != 0:
+        return "plus" if t_phys >= 0 else "minus"
+    if t_phys == -1:
+        return "mixed_plane"
+    if t_phys == L_T // 2 - 1:
+        return "mixed_wrap"
+    return "plus" if t_phys >= 0 else "minus"
+
+
+def _partition(plaquettes: Iterable[Plaquette]) -> dict[str, list[Plaquette]]:
+    parts = {
+        "plus": [],
+        "minus": [],
+        "mixed_plane": [],
+        "mixed_wrap": [],
+    }
+    for p in plaquettes:
+        parts[_classify_plaquette(p)].append(p)
+    return parts
+
+
+def _reflected_plaquette_class(p: Plaquette) -> str:
+    """Class of the geometrically reflected plaquette.
+
+    Spatial plaquettes move to r(t).  Temporal plaquettes reverse temporal
+    orientation and, when rewritten in the standard positive-temporal
+    orientation, are based at r(t)-1.
     """
     t, x1, x2, x3, mu, nu = p
-    t_phys_low = t - L // 2
-    # endpoints carry time-coordinates depending on mu, nu:
-    # purely spatial (mu, nu both in {1, 2, 3}): all endpoints at t_phys_low
-    # mixed (mu = 0 or nu = 0): endpoints span t_phys_low and t_phys_low + 1
-    if mu >= 1 and nu >= 1:
-        # purely spatial: all at one slice
-        t_min = t_phys_low
-        t_max = t_phys_low
-    else:
-        # Temporal plaquettes have endpoints at t and t + 1. On the finite
-        # periodic lattice, t = L - 1 wraps to t = 0 and is a second mixed
-        # boundary family distinct from the reflection-plane family.
-        if (t + 1) >= L:
-            return 'mixed_wrap'
-        t_min = t_phys_low
-        t_high_array = t + 1
-        t_max_phys = t_high_array - L // 2
-        t_max = max(t_min, t_max_phys)
-        t_min = min(t_min, t_max_phys)
-
-    # Now classify based on (t_min, t_max):
-    if t_min >= 0 and t_max >= 0:
-        return 'plus'
-    elif t_min <= -1 and t_max <= -1:
-        return 'minus'
-    else:
-        return 'mixed'
+    reflected_t = _reflected_time_index(t)
+    if mu == 0:
+        reflected_t = (reflected_t - 1) % L_T
+    reflected = (reflected_t, x1, x2, x3, mu, nu)
+    return _classify_plaquette(reflected)
 
 
-def _partition_plaquettes(plaquettes: list[tuple[int, int, int, int, int, int]]) -> dict[str, list]:
-    """Partition plaquettes by class."""
-    P_plus = []
-    P_minus = []
-    P_mixed = []
-    P_mixed_wrap = []
-    for p in plaquettes:
-        cls = _classify_plaquette(p)
-        if cls == 'plus':
-            P_plus.append(p)
-        elif cls == 'minus':
-            P_minus.append(p)
-        elif cls == 'mixed':
-            P_mixed.append(p)
-        elif cls == 'mixed_wrap':
-            P_mixed_wrap.append(p)
-        else:
-            raise ValueError(f"Unknown plaquette class {cls}")
-    return {'plus': P_plus, 'minus': P_minus, 'mixed': P_mixed, 'mixed_wrap': P_mixed_wrap}
+def _reflect_config(u: np.ndarray) -> np.ndarray:
+    """Correct OS link reflection through t=-1/2."""
+    theta_u = np.zeros_like(u)
+    for site in _all_sites():
+        t, x1, x2, x3 = site
+        t_ref = _reflected_time_index(t)
+        for i in range(1, 4):
+            theta_u[site + (i,)] = u[t_ref, x1, x2, x3, i]
+        temporal_source = (t_ref - 1) % L_T
+        theta_u[site + (0,)] = u[temporal_source, x1, x2, x3, 0].conj().T
+    return theta_u
 
 
-# -----------------------------------------------------------------------
-# Reflection Θ
-# -----------------------------------------------------------------------
-
-def _reflect_config(U: np.ndarray) -> np.ndarray:
-    """Apply the OS reflection Θ : (t_phys, x⃗) → (-1 - t_phys, x⃗).
-
-    In array indices (t = t_phys + L/2): reflected array index is
-    Θ(t) = -1 - (t - L/2) + L/2 = L - 1 - t.
-
-    For L = 2: Θ(0) = 1, Θ(1) = 0 (swap of the two slices).
-
-    Spatial links transform as (ΘU)_i(t, x⃗) = U_i(Θt, x⃗).
-    Temporal links transform as (ΘU)_0(t, x⃗) = U_0(Θ(t) - 1, x⃗)^†
-    in general; in temporal gauge they remain identity so this is trivial.
-    """
-    Theta_U = np.zeros_like(U)
-    for t in range(L):
-        t_reflected = (L - 1 - t) % L
-        for x1 in range(L):
-            for x2 in range(L):
-                for x3 in range(L):
-                    # spatial links: time-coord swapped, spatial fixed
-                    for i in range(1, 4):
-                        Theta_U[t, x1, x2, x3, i] = U[t_reflected, x1, x2, x3, i]
-                    # temporal link: in temporal gauge this is identity;
-                    # set to U_0(t_reflected - 1, x⃗)^† for completeness
-                    t_high = (t_reflected - 1) % L
-                    Theta_U[t, x1, x2, x3, 0] = U[t_high, x1, x2, x3, 0].conj().T
-    return Theta_U
+def _reflect_config_wrong_temporal_orientation(u: np.ndarray) -> np.ndarray:
+    """Hostile rule: correct base point but missing temporal dagger."""
+    theta_u = np.zeros_like(u)
+    for site in _all_sites():
+        t, x1, x2, x3 = site
+        t_ref = _reflected_time_index(t)
+        for i in range(1, 4):
+            theta_u[site + (i,)] = u[t_ref, x1, x2, x3, i]
+        temporal_source = (t_ref - 1) % L_T
+        theta_u[site + (0,)] = u[temporal_source, x1, x2, x3, 0]
+    return theta_u
 
 
-def _build_time_symmetric_config(seed: int = SEED + 1) -> np.ndarray:
-    """Build an explicit time-symmetric SU(3) configuration in temporal gauge.
-
-    For L = 2: we set U_i(0, x⃗) = U_i(1, x⃗) = U_i(x⃗) (t-independent
-    spatial links). Then (ΘU)_i(0, x⃗) = U_i(1, x⃗) = U_i(0, x⃗), so
-    the configuration is in C_(sym).
-    """
-    rng = np.random.default_rng(seed)
-    U = _build_random_config(seed=seed)
-    U = _temporal_gauge_fix(U)
-    # Force time-independence on spatial links
-    for x1 in range(L):
-        for x2 in range(L):
-            for x3 in range(L):
-                for i in range(1, 4):
-                    base_link = U[0, x1, x2, x3, i]
-                    for t in range(L):
-                        U[t, x1, x2, x3, i] = base_link
-    return U
+def _max_link_difference(a: np.ndarray, b: np.ndarray) -> float:
+    return float(np.max(np.linalg.norm(a - b, axis=(-2, -1))))
 
 
-# -----------------------------------------------------------------------
-# Part A: Plaquette enumeration and S_W decomposition (D1)
-# -----------------------------------------------------------------------
-
-def part_A_decomposition() -> None:
-    print("\n=== Part A: plaquette enumeration + S_W decomposition (D1) ===")
-    plaqs = _all_plaquettes()
-    expected_count = 6 * (L ** 4)
-    record(
-        f"A.enum.count: {expected_count} plaquettes enumerated on {L}^4 lattice",
-        len(plaqs) == expected_count,
-        f"got {len(plaqs)} plaquettes (expected {expected_count})",
-    )
-
-    parts = _partition_plaquettes(plaqs)
-    P_plus = parts['plus']
-    P_minus = parts['minus']
-    P_mixed_plane = parts['mixed']
-    P_mixed_wrap = parts['mixed_wrap']
-    P_mixed = P_mixed_plane + P_mixed_wrap
-    total_in_partition = len(P_plus) + len(P_minus) + len(P_mixed)
-    record(
-        "A.partition.exhaustive: P_+ ∪ P_- ∪ P_mixed = P",
-        total_in_partition == len(plaqs),
-        f"|P_+| + |P_-| + |P_mixed| = {len(P_plus)} + {len(P_minus)} + {len(P_mixed)} = {total_in_partition}, total = {len(plaqs)}",
-    )
-
-    # Disjointness: classes are disjoint by construction (single classify call),
-    # but verify explicitly
-    set_plus = set(P_plus)
-    set_minus = set(P_minus)
-    set_mixed = set(P_mixed)
-    record(
-        "A.partition.disjoint: P_+ ∩ P_- = ∅",
-        len(set_plus & set_minus) == 0,
-        "explicit set intersection check",
-    )
-    record(
-        "A.partition.disjoint_mixed: P_+ ∩ P_mixed = ∅, P_- ∩ P_mixed = ∅",
-        len(set_plus & set_mixed) == 0 and len(set_minus & set_mixed) == 0,
-        "explicit set intersection check",
-    )
-    expected_boundary_family = 3 * (L ** 3)
-    record(
-        "A.partition.mixed_reflection_plane_count: finite-periodic reflection-plane family exposed",
-        len(P_mixed_plane) == expected_boundary_family,
-        f"|P_mixed,reflection| = {len(P_mixed_plane)}, expected 3 * L^3 = {expected_boundary_family}",
-    )
-    record(
-        "A.partition.mixed_wraparound_count: finite-periodic wraparound family exposed",
-        len(P_mixed_wrap) == expected_boundary_family,
-        f"|P_mixed,wrap| = {len(P_mixed_wrap)}, expected 3 * L^3 = {expected_boundary_family}",
-    )
-
-    record(
-        "A.partition.bijection: |P_+| = |P_-| (Θ bijection on plaquette set)",
-        len(P_plus) == len(P_minus),
-        f"|P_+| = {len(P_plus)}, |P_-| = {len(P_minus)}",
-    )
-
-    # Build a random temporal-gauge SU(3) configuration
-    U = _temporal_gauge_fix(_build_random_config())
-
-    # Compute S_W on each class
-    S_full = _wilson_action(U, plaqs)
-    S_plus = _wilson_action(U, P_plus)
-    S_minus = _wilson_action(U, P_minus)
-    S_mixed = _wilson_action(U, P_mixed)
-    S_sum = S_plus + S_minus + S_mixed
-
-    record(
-        "A.action.decomposition: S_W[U] = S_+(U) + S_-(U) + S_mixed(U) exactly",
-        abs(S_full - S_sum) < 1e-10,
-        f"S_W = {S_full:.6f}, S_+ + S_- + S_mixed = {S_sum:.6f}, diff = {abs(S_full - S_sum):.2e}",
-    )
-
-    # Identify S_-(U) = S_+(ΘU)
-    Theta_U = _reflect_config(U)
-    S_plus_of_Theta_U = _wilson_action(Theta_U, P_plus)
-    record(
-        "A.action.theta_image: S_-(U) = S_+(ΘU) (identification S_- = Θ S_+)",
-        abs(S_minus - S_plus_of_Theta_U) < 1e-10,
-        f"S_-(U) = {S_minus:.6f}, S_+(ΘU) = {S_plus_of_Theta_U:.6f}, diff = {abs(S_minus - S_plus_of_Theta_U):.2e}",
-    )
-
-    # Full check eq (15): S_W[U] = S_+(U) + S_+(ΘU) + S_mixed(U)
-    S_eq15 = S_plus + S_plus_of_Theta_U + S_mixed
-    record(
-        "A.action.eq15: S_W[U] = S_+(U) + Θ(S_+)(U) + S_mixed(U) exactly",
-        abs(S_full - S_eq15) < 1e-10,
-        f"S_W = {S_full:.6f}, eq (15) RHS = {S_eq15:.6f}, diff = {abs(S_full - S_eq15):.2e}",
-    )
+def _polyakov_holonomy(u: np.ndarray, x1: int, x2: int, x3: int) -> np.ndarray:
+    product = np.eye(N_C, dtype=DTYPE)
+    for t in range(L_T):
+        product = product @ u[t, x1, x2, x3, 0]
+    return product
 
 
-# -----------------------------------------------------------------------
-# Part B: Θ-invariance of S_+ on time-symmetric configurations (D2)
-# -----------------------------------------------------------------------
-
-def part_B_theta_invariance() -> None:
-    print("\n=== Part B: Θ-invariance of S_+ on time-symmetric configurations (D2) ===")
-    plaqs = _all_plaquettes()
-    parts = _partition_plaquettes(plaqs)
-    P_plus = parts['plus']
-
-    # Reality of S_+
-    U_random = _temporal_gauge_fix(_build_random_config())
-    S_plus_random = _wilson_action(U_random, P_plus)
-    record(
-        "B.reality: S_+(U) ∈ R for arbitrary configuration",
-        isinstance(S_plus_random, float) and not math.isnan(S_plus_random),
-        f"S_+(random U) = {S_plus_random:.6f} (real-valued by construction since Re Tr ∈ R)",
-    )
-
-    # Build a time-symmetric configuration
-    U_sym = _build_time_symmetric_config()
-    Theta_U_sym = _reflect_config(U_sym)
-
-    # Verify C_sym membership: spatial links satisfy U_i(t, x⃗) = U_i(L-1-t, x⃗)
+def _max_polyakov_identity_deviation(u: np.ndarray) -> float:
+    identity = np.eye(N_C, dtype=DTYPE)
     deviation = 0.0
-    for t in range(L):
-        t_reflected = (L - 1 - t) % L
-        for x1 in range(L):
-            for x2 in range(L):
-                for x3 in range(L):
+    for x1 in range(L_S):
+        for x2 in range(L_S):
+            for x3 in range(L_S):
+                deviation = max(
+                    deviation,
+                    float(np.linalg.norm(_polyakov_holonomy(u, x1, x2, x3) - identity)),
+                )
+    return deviation
+
+
+def _random_periodic_gauge(seed: int = SEED + 7) -> np.ndarray:
+    rng = np.random.default_rng(seed)
+    g = np.zeros((L_T, L_S, L_S, L_S, N_C, N_C), dtype=DTYPE)
+    for site in _all_sites():
+        g[site] = _random_su3(rng)
+    return g
+
+
+def _gauge_transform(u: np.ndarray, g: np.ndarray) -> np.ndarray:
+    transformed = np.zeros_like(u)
+    for site in _all_sites():
+        for mu in range(4):
+            endpoint = _shift(site, mu)
+            transformed[site + (mu,)] = (
+                g[site] @ u[site + (mu,)] @ g[endpoint].conj().T
+            )
+    return transformed
+
+
+def _construct_complete_temporal_gauge(u: np.ndarray) -> tuple[np.ndarray, np.ndarray, float]:
+    """Construct g(t+1)=g(t)U_0(t); valid only when every P is I."""
+    if _max_polyakov_identity_deviation(u) >= TOL:
+        raise ValueError("complete periodic temporal gauge requires P(x)=I")
+    identity = np.eye(N_C, dtype=DTYPE)
+    g = np.zeros((L_T, L_S, L_S, L_S, N_C, N_C), dtype=DTYPE)
+    closure_deviation = 0.0
+    for x1 in range(L_S):
+        for x2 in range(L_S):
+            for x3 in range(L_S):
+                g[0, x1, x2, x3] = identity
+                for t in range(L_T - 1):
+                    g[t + 1, x1, x2, x3] = (
+                        g[t, x1, x2, x3] @ u[t, x1, x2, x3, 0]
+                    )
+                endpoint = (
+                    g[L_T - 1, x1, x2, x3]
+                    @ u[L_T - 1, x1, x2, x3, 0]
+                )
+                closure_deviation = max(
+                    closure_deviation,
+                    float(np.linalg.norm(endpoint - identity)),
+                )
+    return _gauge_transform(u, g), g, closure_deviation
+
+
+def _max_temporal_identity_deviation(u: np.ndarray) -> float:
+    identity = np.eye(N_C, dtype=DTYPE)
+    return max(
+        float(np.linalg.norm(u[site + (0,)] - identity))
+        for site in _all_sites()
+    )
+
+
+def _build_time_symmetric_config(seed: int = SEED + 2) -> np.ndarray:
+    u = _complete_temporal_gauge_config(seed)
+    for t in range(L_T):
+        t_ref = _reflected_time_index(t)
+        if t > t_ref:
+            continue
+        for x1 in range(L_S):
+            for x2 in range(L_S):
+                for x3 in range(L_S):
                     for i in range(1, 4):
-                        deviation = max(
-                            deviation,
-                            float(np.linalg.norm(U_sym[t, x1, x2, x3, i] - U_sym[t_reflected, x1, x2, x3, i])),
-                        )
+                        u[t_ref, x1, x2, x3, i] = u[t, x1, x2, x3, i]
+    return u
+
+
+def _plaquette_support(p: Plaquette) -> set[LinkKey]:
+    t, x1, x2, x3, mu, nu = p
+    site = (t, x1, x2, x3)
+    return {
+        site + (mu,),
+        _shift(site, mu) + (nu,),
+        _shift(site, nu) + (mu,),
+        site + (nu,),
+    }
+
+
+def _is_plus_dynamical_key(key: LinkKey) -> bool:
+    t, _, _, _, mu = key
+    return mu in (1, 2, 3) and _physical_time(t) >= 0
+
+
+def _reflect_spatial_key(key: LinkKey) -> LinkKey:
+    t, x1, x2, x3, mu = key
+    if mu == 0:
+        raise ValueError("the declared observable support contains only spatial links")
+    return (_reflected_time_index(t), x1, x2, x3, mu)
+
+
+P_PLUS: Plaquette = (L_T // 2, 0, 0, 0, 1, 2)
+P_MINUS: Plaquette = (_reflected_time_index(L_T // 2), 0, 0, 0, 1, 2)
+SUPPORT_F = _plaquette_support(P_PLUS)
+SUPPORT_THETA_F = {_reflect_spatial_key(key) for key in SUPPORT_F}
+
+
+def _f_plus(u: np.ndarray) -> complex:
+    return complex(np.trace(_plaquette_holonomy(u, P_PLUS)) / N_C)
+
+
+def _f_minus(u: np.ndarray) -> complex:
+    return complex(np.trace(_plaquette_holonomy(u, P_MINUS)) / N_C)
+
+
+def _theta_observable(f: Observable, u: np.ndarray) -> complex:
+    return f(_reflect_config(u)).conjugate()
+
+
+def _symmetrized_f(u: np.ndarray) -> complex:
+    return _f_plus(u) + _theta_observable(_f_plus, u)
+
+
+def _mutate_link(u: np.ndarray, key: LinkKey) -> np.ndarray:
+    mutated = u.copy()
+    h = np.diag([-1.0, -1.0, 1.0]).astype(DTYPE)
+    mutated[key] = h @ mutated[key]
+    return mutated
+
+
+def part_a_carrier_and_decomposition() -> None:
+    print("\n=== Part A: finite carrier, reflection, and Wilson decomposition ===")
+    plaquettes = _all_plaquettes()
+    parts = _partition(plaquettes)
+    p_plus = parts["plus"]
+    p_minus = parts["minus"]
+    p_plane = parts["mixed_plane"]
+    p_wrap = parts["mixed_wrap"]
+    p_mixed = p_plane + p_wrap
+
+    expected_total = 6 * L_T * L_S**3
     record(
-        "B.csym.membership: configuration satisfies U_i(t, x⃗) = U_i(Θ(t), x⃗) (spatial-link symmetry)",
-        deviation < 1e-14,
-        f"max ‖U_i(t) - U_i(Θ(t))‖ = {deviation:.2e}",
+        "A.carrier.plaquette_count",
+        len(plaquettes) == expected_total == 192,
+        f"count={len(plaquettes)}, formula=6*{L_T}*{L_S}^3={expected_total}",
+    )
+    record(
+        "A.partition.exact_counts",
+        (len(p_plus), len(p_minus), len(p_plane), len(p_wrap)) == (72, 72, 24, 24),
+        (
+            f"|P+|={len(p_plus)}, |P-|={len(p_minus)}, "
+            f"|plane|={len(p_plane)}, |wrap|={len(p_wrap)}"
+        ),
+    )
+    partition_sets = [set(p_plus), set(p_minus), set(p_plane), set(p_wrap)]
+    union = set().union(*partition_sets)
+    pairwise_disjoint = all(
+        not (partition_sets[i] & partition_sets[j])
+        for i in range(len(partition_sets))
+        for j in range(i + 1, len(partition_sets))
+    )
+    record(
+        "A.partition.disjoint_exhaustive",
+        pairwise_disjoint and union == set(plaquettes),
+        f"union={len(union)}, total={len(plaquettes)}, disjoint={pairwise_disjoint}",
+    )
+    class_map_ok = (
+        all(_reflected_plaquette_class(p) == "minus" for p in p_plus)
+        and all(_reflected_plaquette_class(p) == "plus" for p in p_minus)
+        and all(_reflected_plaquette_class(p) == "mixed_plane" for p in p_plane)
+        and all(_reflected_plaquette_class(p) == "mixed_wrap" for p in p_wrap)
+    )
+    record(
+        "A.partition.theta_class_bijection",
+        class_map_ok,
+        "P+<->P-; reflection-plane and periodic-wrap families fixed setwise",
     )
 
-    # On C_sym: (ΘU) should equal U on spatial links
-    spatial_diff = 0.0
-    for t in range(L):
-        for x1 in range(L):
-            for x2 in range(L):
-                for x3 in range(L):
-                    for i in range(1, 4):
-                        spatial_diff = max(
-                            spatial_diff,
-                            float(np.linalg.norm(U_sym[t, x1, x2, x3, i] - Theta_U_sym[t, x1, x2, x3, i])),
-                        )
+    u = _complete_temporal_gauge_config()
+    theta_u = _reflect_config(u)
+    s_full = _wilson_action(u, plaquettes)
+    s_plus = _wilson_action(u, p_plus)
+    s_minus = _wilson_action(u, p_minus)
+    s_mixed = _wilson_action(u, p_mixed)
+    s_plus_theta = _wilson_action(theta_u, p_plus)
     record(
-        "B.theta.action_csym: on C_sym, (ΘU)_i = U_i on spatial links",
-        spatial_diff < 1e-14,
-        f"max ‖(ΘU)_i - U_i‖ on spatial links = {spatial_diff:.2e}",
+        "A.theta.complete_temporal_gauge_sector_stable",
+        _max_temporal_identity_deviation(theta_u) < TOL,
+        f"max ||(Theta U)_0-I||={_max_temporal_identity_deviation(theta_u):.3e}",
+    )
+    record(
+        "A.action.disjoint_sum",
+        abs(s_full - (s_plus + s_minus + s_mixed)) < TOL,
+        f"diff={abs(s_full - (s_plus + s_minus + s_mixed)):.3e}",
+    )
+    record(
+        "A.action.reflected_half",
+        abs(s_minus - s_plus_theta) < TOL,
+        f"|S--S+(Theta U)|={abs(s_minus - s_plus_theta):.3e}",
+    )
+    record(
+        "A.action.decomposition",
+        abs(s_full - (s_plus + s_plus_theta + s_mixed)) < TOL,
+        f"diff={abs(s_full - (s_plus + s_plus_theta + s_mixed)):.3e}",
+    )
+    record(
+        "A.action.half_reality",
+        all(np.isreal(value) for value in (s_plus, s_minus, s_mixed)),
+        f"S+={s_plus:.8f}, S-={s_minus:.8f}, Smixed={s_mixed:.8f}",
     )
 
-    # Θ-invariance: S_+(ΘU) = S_+(U)
-    S_plus_sym = _wilson_action(U_sym, P_plus)
-    S_plus_Theta_sym = _wilson_action(Theta_U_sym, P_plus)
+    generic = _random_config(SEED + 3)
+    generic_theta = _reflect_config(generic)
+    generic_theta2 = _reflect_config(generic_theta)
+    full_generic = _wilson_action(generic, plaquettes)
+    full_generic_theta = _wilson_action(generic_theta, plaquettes)
     record(
-        "B.theta.invariance: S_+(ΘU) = S_+(U) on C_sym (substep D2 conclusion)",
-        abs(S_plus_sym - S_plus_Theta_sym) < 1e-10,
-        f"S_+(U_sym) = {S_plus_sym:.6f}, S_+(ΘU_sym) = {S_plus_Theta_sym:.6f}, diff = {abs(S_plus_sym - S_plus_Theta_sym):.2e}",
+        "A.theta.involution_generic",
+        _max_link_difference(generic_theta2, generic) < TOL,
+        f"max_link_diff={_max_link_difference(generic_theta2, generic):.3e}",
+    )
+    record(
+        "A.action.full_theta_invariance_generic",
+        abs(full_generic - full_generic_theta) < TOL,
+        f"|S(Theta U)-S(U)|={abs(full_generic_theta-full_generic):.3e}",
     )
 
-
-# -----------------------------------------------------------------------
-# Part C: Reflection-Hermiticity of Wilson loops (D3)
-# -----------------------------------------------------------------------
-
-def _wilson_loop_plaquette(U: np.ndarray, site: tuple[int, int, int, int], mu: int, nu: int) -> complex:
-    """Single-plaquette Wilson loop F(U) = Tr U_p."""
-    U_p = _plaquette_holonomy(U, site, mu, nu)
-    return complex(np.trace(U_p))
-
-
-def part_C_reflection_hermiticity() -> None:
-    """Verify substep (D3): the OS-Hermitian observable class.
-
-    The textbook OS Step 1 reflection-Hermiticity statement is a hypothesis
-    that the *test observable* satisfies F(ΘU) = conj(F(U)). This is not an
-    automatic property of arbitrary Wilson loops localized in t ≥ 0; instead,
-    it CHARACTERIZES the class of reflection-Hermitian observables.
-
-    The standard construction: for any complex Wilson-loop observable
-    f(U) = Tr(U_γ) with γ ⊂ {t ≥ 0}, the OS-Hermitian symmetrization
-        F(U) := f(U) + conj( f(ΘU) )
-    satisfies F(ΘU) = conj(F(U)) BY CONSTRUCTION, because
-        F(ΘU) = f(ΘU) + conj( f(Θ²U) ) = f(ΘU) + conj( f(U) ),
-    and conj( F(U) ) = conj(f(U)) + f(ΘU) (using conj(conj(z)) = z),
-    which is the same expression. We verify this identity on the runner.
-
-    We also verify on a TIME-SYMMETRIC configuration (where f(ΘU) = f(U) for
-    purely-spatial loops at the symmetric slice), the direct identity
-    f(ΘU) = conj(f(U)) becomes f(U) = conj(f(U)), i.e. f(U) ∈ R — which
-    holds iff f(U) was already real, e.g. for f(U) = Re Tr U_p. We check that
-    Re Tr U_p satisfies F(ΘU) = conj(F(U)) trivially because it's real.
-    """
-    print("\n=== Part C: reflection-Hermiticity of OS-Hermitian observables (D3) ===")
-    U = _temporal_gauge_fix(_build_random_config(seed=SEED + 2))
-    Theta_U = _reflect_config(U)
-
-    # ---- Test C.1: symmetrized observable F(U) = f(U) + conj(f(ΘU)) ----
-    # f localized in t ≥ 0: take f(U) = Tr(U_p) for a spatial plaquette at slice t = 1 (t_phys = 0)
-    site_plus = (1, 0, 0, 0)  # t = 1 → t_phys = 0 ∈ t ≥ 0
-    f_U = _wilson_loop_plaquette(U, site_plus, 1, 2)
-    f_Theta_U = _wilson_loop_plaquette(Theta_U, site_plus, 1, 2)
-
-    # OS-Hermitian symmetrization: F(U) := f(U) + conj(f(ΘU))
-    F_U = f_U + f_Theta_U.conjugate()
-
-    # Apply Θ a second time and form F(ΘU)
-    # f(Θ²U) = f(U) since Θ² = id; need to verify Θ²U = U at machine precision
-    Theta2_U = _reflect_config(Theta_U)
-    diff_Theta2 = 0.0
-    for t in range(L):
-        for x1 in range(L):
-            for x2 in range(L):
-                for x3 in range(L):
-                    for mu in range(4):
-                        diff_Theta2 = max(
-                            diff_Theta2,
-                            float(np.linalg.norm(U[t, x1, x2, x3, mu] - Theta2_U[t, x1, x2, x3, mu])),
-                        )
+    symmetric = _build_time_symmetric_config()
+    symmetric_theta = _reflect_config(symmetric)
     record(
-        "C.theta_squared: Θ² = id on link configurations (involution)",
-        diff_Theta2 < 1e-14,
-        f"max ‖Θ²U - U‖ over all links = {diff_Theta2:.2e}",
-    )
-
-    f_Theta2_U = _wilson_loop_plaquette(Theta2_U, site_plus, 1, 2)
-    F_Theta_U = f_Theta_U + f_Theta2_U.conjugate()  # = f(ΘU) + conj(f(U))
-    conj_F_U = F_U.conjugate()  # = conj(f(U)) + f(ΘU)
-
-    record(
-        "C.symmetrized.hermiticity: F(U) := f(U) + conj(f(ΘU)) satisfies F(ΘU) = conj(F(U))",
-        abs(F_Theta_U - conj_F_U) < 1e-10,
-        f"|F(ΘU) - conj(F(U))| = {abs(F_Theta_U - conj_F_U):.2e}; F(U) = {F_U}, F(ΘU) = {F_Theta_U}",
-    )
-
-    # ---- Test C.2: real-valued observable Re Tr U_p ----
-    # F(U) = Re Tr U_p is manifestly real, so conj(F(U)) = F(U), and
-    # the identity F(ΘU) = conj(F(U)) reduces to F(ΘU) = F(U).
-    # On time-symmetric configurations this is automatic by (D2);
-    # on random configurations the identity F(ΘU) = F(U) does NOT hold,
-    # but the symmetrized real observable G(U) := Re Tr U_p + Re Tr (ΘU)_p
-    # does satisfy G(ΘU) = G(U) by construction.
-    site_plus_2 = (1, 1, 0, 0)
-    f2_U = _wilson_loop_plaquette(U, site_plus_2, 2, 3)
-    f2_Theta_U = _wilson_loop_plaquette(Theta_U, site_plus_2, 2, 3)
-    G_U = f2_U.real + f2_Theta_U.real
-    G_Theta_U = f2_Theta_U.real + _wilson_loop_plaquette(Theta2_U, site_plus_2, 2, 3).real
-    # G(U) is a sum of .real attributes, so it's a Python float (already real)
-    is_real = not hasattr(G_U, 'imag') or abs(getattr(G_U, 'imag', 0.0)) < 1e-14
-    record(
-        "C.symmetrized_real.hermiticity: G(U) := Re f(U) + Re f(ΘU) satisfies G(ΘU) = G(U) = conj(G(U))",
-        abs(G_Theta_U - G_U) < 1e-10 and is_real,
-        f"|G(ΘU) - G(U)| = {abs(G_Theta_U - G_U):.2e}; G(U) = {float(G_U):.6f} (real); is_real={is_real}",
-    )
-
-    # ---- Test C.3: on time-symmetric configurations, ANY observable f localized in t ≥ 0 ----
-    # has f(ΘU) = f(U) since the configuration itself satisfies ΘU = U.
-    # This is the special case where (D3) becomes f(U) = conj(f(U)) iff f(U) ∈ R.
-    U_sym = _build_time_symmetric_config(seed=SEED + 1)
-    Theta_U_sym = _reflect_config(U_sym)
-    f3_U_sym = _wilson_loop_plaquette(U_sym, site_plus, 1, 2)
-    f3_Theta_U_sym = _wilson_loop_plaquette(Theta_U_sym, site_plus, 1, 2)
-    record(
-        "C.csym.direct: on time-symmetric U, f(ΘU) = f(U) for any spatial-loop observable f",
-        abs(f3_Theta_U_sym - f3_U_sym) < 1e-10,
-        f"f(U_sym) = {f3_U_sym}, f(ΘU_sym) = {f3_Theta_U_sym}, diff = {abs(f3_Theta_U_sym - f3_U_sym):.2e}",
-    )
-
-    # ---- Test C.4: explicit orientation-reversal identity ----
-    # For F(U) = Tr(W) with W = U_1 · U_2 · ... · U_n (a closed loop),
-    # conj(Tr(W)) = Tr(W^†) = Tr(U_n^† · ... · U_1^†) — the reverse-oriented loop.
-    # This is the linear-algebra fact that grounds (D3) for symmetric/anti-symmetric
-    # observables. Verify on a random SU(3) matrix product.
-    A = U[0, 0, 0, 0, 1]
-    B = U[0, 1, 0, 0, 2]
-    C = U[1, 0, 0, 0, 1].conj().T
-    D_mat = U[0, 0, 0, 0, 2].conj().T
-    W = A @ B @ C @ D_mat
-    W_dag = D_mat.conj().T @ C.conj().T @ B.conj().T @ A.conj().T
-    record(
-        "C.trace_reversal: Tr(W^†) = conj(Tr(W)) (linear-algebra basis for orientation-reversal under Θ)",
-        abs(np.trace(W_dag) - np.trace(W).conjugate()) < 1e-12,
-        f"Tr(W) = {complex(np.trace(W))}, Tr(W^†) = {complex(np.trace(W_dag))}, |diff| = {abs(np.trace(W_dag) - np.trace(W).conjugate()):.2e}",
+        "A.action.theta_fixed_consistency",
+        (
+            _max_link_difference(symmetric, symmetric_theta) < TOL
+            and abs(
+                _wilson_action(symmetric, p_plus)
+                - _wilson_action(symmetric_theta, p_plus)
+            )
+            < TOL
+        ),
+        f"max_link_diff={_max_link_difference(symmetric, symmetric_theta):.3e}",
     )
 
 
-# -----------------------------------------------------------------------
-# Part D: cited retained authorities present on main
-# -----------------------------------------------------------------------
+def part_b_temporal_holonomy() -> None:
+    print("\n=== Part B: periodic complete temporal gauge criterion ===")
+    plaquettes = _all_plaquettes()
+    u = _trivial_holonomy_config()
+    holonomy_deviation = _max_polyakov_identity_deviation(u)
+    s_before = _wilson_action(u, plaquettes)
+    gauge_fixed, _, closure_deviation = _construct_complete_temporal_gauge(u)
+    s_after = _wilson_action(gauge_fixed, plaquettes)
+    record(
+        "B.trivial_holonomy.constructed",
+        holonomy_deviation < TOL,
+        f"max ||P-I||={holonomy_deviation:.3e}",
+    )
+    record(
+        "B.periodic_recursion.closes",
+        closure_deviation < TOL,
+        f"max endpoint mismatch={closure_deviation:.3e}",
+    )
+    record(
+        "B.complete_temporal_gauge.constructed",
+        _max_temporal_identity_deviation(gauge_fixed) < TOL,
+        f"max ||U0^g-I||={_max_temporal_identity_deviation(gauge_fixed):.3e}",
+    )
+    record(
+        "B.gauge_transform.wilson_invariance",
+        abs(s_before - s_after) < TOL,
+        f"|S(U^g)-S(U)|={abs(s_after-s_before):.3e}",
+    )
 
-CITED_DEPS = [
-    # (filename, role, load-bearing?)
-    ("GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md",
-     "retained mixed-kernel factorization (load-bearing for S_mixed)", True),
-    ("REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md",
-     "retained_bounded abstract Cauchy-Schwarz lemma (downstream context)", False),
-    ("RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md",
-     "audited_conditional parent (companion target, plain-text citation)", False),
-    ("RP_TWO_STEP_TRANSFER_MATRIX_GRASSMANN_BEREZIN_BRIDGE_NARROW_NOTE_2026-06-02.md",
-     "parallel fermion-half companion (sibling note, may be in flight)", False),
-]
-
-
-def _check_dep_on_main(name: str) -> bool:
+    control, h = _nontrivial_holonomy_control()
+    p_control = _polyakov_holonomy(control, 0, 0, 0)
+    trace_obstruction = abs(np.trace(p_control) - np.trace(np.eye(N_C))) > 1.0
+    rejected = False
     try:
-        result = subprocess.run(
-            ["git", "ls-tree", "origin/main", f"docs/{name}"],
-            capture_output=True, text=True, check=False, timeout=10,
-        )
-        return result.returncode == 0 and result.stdout.strip() != ""
-    except Exception:
-        return False
+        _construct_complete_temporal_gauge(control)
+    except ValueError:
+        rejected = True
+    record(
+        "B.hostile.nontrivial_holonomy",
+        np.linalg.norm(p_control - h) < TOL and trace_obstruction and rejected,
+        (
+            f"P=diag(-1,-1,1), Tr(P)={np.trace(p_control).real:.1f}, "
+            f"Tr(I)={N_C}, constructor_rejected={rejected}"
+        ),
+    )
 
-
-def part_D_deps() -> None:
-    print("\n=== Part D: cited retained authorities present on main ===")
-    for name, role, load_bearing in CITED_DEPS:
-        ok = _check_dep_on_main(name)
-        short = name[:50] + "..." if len(name) > 50 else name
-        # Load-bearing deps MUST be present; informational deps (parallel
-        # companions in flight on other PRs) are reported but not failing.
-        if load_bearing:
-            record(
-                f"D.{short}: {role[:60]} [load-bearing]",
-                ok,
-                "present on main (verified via git ls-tree)" if ok else f"MISSING: docs/{name}",
-            )
-        else:
-            record(
-                f"D.{short}: {role[:60]} [informational, not required]",
-                True,  # informational: do not fail on missing
-                "present on main" if ok else "not on main yet (sibling PR in flight; not required for this note)",
-            )
-
-
-# -----------------------------------------------------------------------
-# Part E: hostile-audit checks
-# -----------------------------------------------------------------------
-
-def part_E_hostile_audit() -> None:
-    print("\n=== Part E: hostile-audit checks ===")
+    periodic_g = _random_periodic_gauge()
+    transformed_control = _gauge_transform(control, periodic_g)
+    p_transformed = _polyakov_holonomy(transformed_control, 0, 0, 0)
+    expected_conjugate = periodic_g[0, 0, 0, 0] @ h @ periodic_g[0, 0, 0, 0].conj().T
     record(
-        "E.no_parent_mod: does NOT modify the parent RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE",
-        True,
-        "this is a companion narrow note; parent text unchanged",
-    )
-    record(
-        "E.no_lift_claim: does NOT claim parent audited_conditional now lifts",
-        True,
-        "that's an audit-lane re-audit decision after this companion lands",
-    )
-    record(
-        "E.no_new_admission: no new admission beyond cited retained authorities",
-        True,
-        "mixed-kernel (retained), Cauchy-Schwarz lemma (retained_bounded), no new convention/axiom/import",
-    )
-    record(
-        "E.no_no_go_weakening: no retained no_go retired or weakened",
-        True,
-        "substeps (D1)-(D3) are positive lattice combinatorics + character algebra",
-    )
-    record(
-        "E.no_p2_closure: does NOT close P2 phase-blindness residual",
-        True,
-        "P2 row has its own surface, not consumed here",
-    )
-    record(
-        "E.no_acphi_closure: does NOT close AC_phi_lambda or substep (1)+(2)+(4) realization residuals",
-        True,
-        "AC_phi_lambda + realization gates have their own surfaces, not consumed here",
-    )
-    record(
-        "E.pure_gauge_only: scope limited to pure-gauge Wilson plaquette action",
-        True,
-        "staggered-Dirac fermion-half is the parallel companion's scope, not this note's",
-    )
-    record(
-        "E.three_substeps_inline: all three substeps (D1)-(D3) proved inline, not just cited from textbook",
-        True,
-        "explicit plaquette enumeration + decomposition + reflection-Hermiticity, with 2x2x2x2 SU(3) machine-precision exhibit",
-    )
-    record(
-        "E.no_axiom_extension: no new axiom or theory-language extension",
-        True,
-        "uses the pre-existing one-qubit/Z^3 baseline plus retained mixed-kernel context; no new premise",
-    )
-    record(
-        "E.no_continuum_claim: does NOT claim continuum / OS reconstruction RP",
-        True,
-        "lattice setup only; continuum-limit results out of scope",
+        "B.holonomy.periodic_gauge_conjugacy",
+        (
+            np.linalg.norm(p_transformed - expected_conjugate) < TOL
+            and abs(np.trace(p_transformed) - np.trace(h)) < TOL
+        ),
+        (
+            f"conjugacy_diff={np.linalg.norm(p_transformed-expected_conjugate):.3e}, "
+            f"trace_diff={abs(np.trace(p_transformed)-np.trace(h)):.3e}"
+        ),
     )
 
 
-# -----------------------------------------------------------------------
-# Main
-# -----------------------------------------------------------------------
+def part_c_localization_and_hermiticity() -> None:
+    print("\n=== Part C: plus-local f versus two-half reflection-Hermitian F ===")
+    u = _complete_temporal_gauge_config(SEED + 4)
+    theta_u = _reflect_config(u)
+    support_f_plus = all(_is_plus_dynamical_key(key) for key in SUPPORT_F)
+    support_theta_negative = all(
+        not _is_plus_dynamical_key(key) for key in SUPPORT_THETA_F
+    )
+    record(
+        "C.f.structural_plus_support",
+        len(SUPPORT_F) == 4 and support_f_plus,
+        f"supp(f)={sorted(SUPPORT_F)}",
+    )
+    record(
+        "C.theta_f.structural_negative_support",
+        len(SUPPORT_THETA_F) == 4 and support_theta_negative,
+        f"supp(Theta f)={sorted(SUPPORT_THETA_F)}",
+    )
+
+    negative_key = sorted(SUPPORT_THETA_F)[0]
+    mutated = _mutate_link(u, negative_key)
+    f_before = _f_plus(u)
+    f_after = _f_plus(mutated)
+    record(
+        "C.f.negative_mutation_independence",
+        abs(f_after - f_before) < TOL,
+        f"|f(U_mut)-f(U)|={abs(f_after-f_before):.3e}",
+    )
+
+    theta_f_u = _theta_observable(_f_plus, u)
+    os_product = theta_f_u * f_before
+    reflected_plaquette_product = _f_minus(u).conjugate() * f_before
+    record(
+        "C.os_form.independent_reflected_plaquette",
+        abs(os_product - reflected_plaquette_product) < TOL,
+        (
+            "|Theta(f)f-conj(f_minus(U))f|="
+            f"{abs(os_product-reflected_plaquette_product):.3e}"
+        ),
+    )
+
+    f_full = _symmetrized_f(u)
+    f_full_theta = _symmetrized_f(theta_u)
+    record(
+        "C.F.reflection_hermiticity",
+        abs(f_full_theta - f_full.conjugate()) < TOL,
+        f"|F(Theta U)-conj(F(U))|={abs(f_full_theta-f_full.conjugate()):.3e}",
+    )
+    wrong_full_product = f_full.conjugate() * f_full
+    record(
+        "C.hostile.F_product_is_not_OS_f_product",
+        abs(wrong_full_product - os_product) > 1.0e-8,
+        f"|conj(F)F-Theta(f)f|={abs(wrong_full_product-os_product):.3e}",
+    )
+
+    support_f_full = SUPPORT_F | SUPPORT_THETA_F
+    f_full_plus_local = all(_is_plus_dynamical_key(key) for key in support_f_full)
+    f_full_mutated = _symmetrized_f(mutated)
+    record(
+        "C.hostile.F_is_not_plus_local",
+        (
+            not f_full_plus_local
+            and bool(SUPPORT_THETA_F)
+            and abs(f_full_mutated - f_full) > 1.0e-8
+        ),
+        (
+            f"structural_plus_local={f_full_plus_local}, "
+            f"|F(U_mut)-F(U)|={abs(f_full_mutated-f_full):.3e}"
+        ),
+    )
+
+    support_bad = SUPPORT_F | SUPPORT_THETA_F
+
+    def f_bad(config: np.ndarray) -> complex:
+        return _f_plus(config) + 0.25 * _f_minus(config)
+
+    bad_plus_local = all(_is_plus_dynamical_key(key) for key in support_bad)
+    bad_before = f_bad(u)
+    bad_after = f_bad(mutated)
+    record(
+        "C.hostile.negative_half_leak_rejected",
+        not bad_plus_local and abs(bad_after - bad_before) > 1.0e-8,
+        (
+            f"structural_plus_local={bad_plus_local}, "
+            f"|f_bad(U_mut)-f_bad(U)|={abs(bad_after-bad_before):.3e}"
+        ),
+    )
+
+
+def part_d_hostile_partition_and_orientation() -> None:
+    print("\n=== Part D: hostile partition and reflection-orientation controls ===")
+    plaquettes = _all_plaquettes()
+    parts = _partition(plaquettes)
+    omitted_wrap = parts["plus"] + parts["minus"] + parts["mixed_plane"]
+    missing = set(plaquettes) - set(omitted_wrap)
+    u = _complete_temporal_gauge_config(SEED + 5)
+    correct_action = _wilson_action(u, plaquettes)
+    wrong_action = _wilson_action(u, omitted_wrap)
+    record(
+        "D.hostile.omitted_wrap_partition_fails",
+        len(missing) == 24 and abs(correct_action - wrong_action) > 1.0e-8,
+        f"missing={len(missing)}, |S_full-S_wrong|={abs(correct_action-wrong_action):.3e}",
+    )
+
+    generic = _random_config(SEED + 6)
+    correct_theta = _reflect_config(generic)
+    wrong_theta = _reflect_config_wrong_temporal_orientation(generic)
+    s_generic = _wilson_action(generic, plaquettes)
+    correct_diff = abs(_wilson_action(correct_theta, plaquettes) - s_generic)
+    wrong_diff = abs(_wilson_action(wrong_theta, plaquettes) - s_generic)
+    record(
+        "D.hostile.wrong_temporal_orientation_fails",
+        correct_diff < TOL and wrong_diff > 1.0e-8,
+        f"correct_diff={correct_diff:.3e}, wrong_diff={wrong_diff:.3e}",
+    )
+
+
+NOTE = Path(
+    "docs/"
+    "GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_"
+    "REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md"
+)
+
+
+def _dependency_on_main(filename: str) -> bool:
+    result = subprocess.run(
+        ["git", "ls-tree", "origin/main", f"docs/{filename}"],
+        capture_output=True,
+        text=True,
+        check=False,
+        timeout=10,
+    )
+    return result.returncode == 0 and bool(result.stdout.strip())
+
+
+def part_e_scope_firewall() -> None:
+    print("\n=== Part E: source-scope and dependency firewall ===")
+    text = NOTE.read_text(encoding="utf-8")
+    required = [
+        "trivial temporal Polyakov-holonomy sector",
+        "if and only if",
+        "supp(f)⊂E_+",
+        "F` is not an admissible positive-half test observable",
+        "does not treat residual\nPolyakov links",
+        "This source repair does not edit any audit ledger",
+    ]
+    forbidden = [
+        "gauge orbit representative choice",
+        "F(U)` is exactly the test-function class",
+        "· |F(U)|²",
+        "Temporal gauge fixing `U_0(x) = I` | gauge orbit representative choice",
+    ]
+    missing = [marker for marker in required if marker not in text]
+    stale = [marker for marker in forbidden if marker in text]
+    record(
+        "E.note.required_scope_markers",
+        not missing,
+        "all present" if not missing else f"missing={missing}",
+    )
+    record(
+        "E.note.stale_bridge_language_absent",
+        not stale,
+        "none present" if not stale else f"stale={stale}",
+    )
+
+    dep = (
+        "GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_"
+        "NARROW_THEOREM_NOTE_2026-05-10.md"
+    )
+    record(
+        "E.load_bearing_dependency.present_on_main",
+        _dependency_on_main(dep),
+        dep,
+    )
+
 
 def main() -> int:
-    print("=" * 70)
-    print("OS Step 1 Wilson plaquette decomposition + Θ-invariance + reflection-Hermiticity")
-    print("=" * 70)
-    print()
-    print("Scope: bounded_theorem narrow companion to RP_P2_GAUGE_EXTENSION_AND_REALIZATION")
-    print("       RESIDUAL_NOTE_2026-05-28 (audited_conditional). Supplies the in-packet OS")
-    print("       Step 1 Wilson plaquette decomposition the parent cites in plain text as")
-    print("       'the standard lattice-gauge Osterwalder-Seiler picture'. All three")
-    print("       substeps (D1), (D2), (D3) proved inline and verified on a 2^4 SU(3)")
-    print("       lattice with explicit random link variables.")
-    print()
-    print(f"Lattice: {L}^4 (= {L**4} sites), SU({N_C}), β = {BETA}, seed = {SEED}")
-    print()
+    print("=" * 78)
+    print("Gauge OS Step 1: trivial-holonomy temporal gauge + plus-local f")
+    print("=" * 78)
+    print(
+        f"Carrier: (Z/{L_T}) x (Z/{L_S})^3, {L_T*L_S**3} sites, "
+        f"SU({N_C}), beta={BETA}, seed={SEED}"
+    )
+    print("Scope: pure Wilson action; P(x)=I sector; no full RP or residual Polyakov claim.")
 
-    part_A_decomposition()
-    part_B_theta_invariance()
-    part_C_reflection_hermiticity()
-    part_D_deps()
-    part_E_hostile_audit()
+    part_a_carrier_and_decomposition()
+    part_b_temporal_holonomy()
+    part_c_localization_and_hermiticity()
+    part_d_hostile_partition_and_orientation()
+    part_e_scope_firewall()
 
-    print("\n" + "=" * 70)
+    print("\n" + "=" * 78)
     for line in LOG:
         print(line)
-    print()
-    print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
+    print(f"\nSCORECARD: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
-        print("All OS Step 1 Wilson plaquette decomposition checks PASSED.")
-        print("Audit lane decides status; this runner proposes no effective status.")
+        print("All narrowed finite-sector and hostile-control checks PASSED.")
+        print("Independent audit alone decides effective status.")
         return 0
-    print("Some checks FAILED — see log above.")
+    print("One or more checks FAILED.")
     return 1
 
 

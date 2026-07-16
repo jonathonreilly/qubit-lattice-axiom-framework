@@ -1,73 +1,63 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py
-runner_sha256: 07034b2204117dd0dabcc26225a3fa55985c85beb54214071b75b2d40a5f730f
+runner_sha256: e74456f0f07792208c630fdd37a94fe2c9ac05f0f439d0dc8788adf67176f803
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
-======================================================================
-OS Step 1 Wilson plaquette decomposition + Θ-invariance + reflection-Hermiticity
-======================================================================
+==============================================================================
+Gauge OS Step 1: trivial-holonomy temporal gauge + plus-local f
+==============================================================================
+Carrier: (Z/4) x (Z/2)^3, 32 sites, SU(3), beta=1.75, seed=20260602
+Scope: pure Wilson action; P(x)=I sector; no full RP or residual Polyakov claim.
 
-Scope: bounded_theorem narrow companion to RP_P2_GAUGE_EXTENSION_AND_REALIZATION
-       RESIDUAL_NOTE_2026-05-28 (audited_conditional). Supplies the in-packet OS
-       Step 1 Wilson plaquette decomposition the parent cites in plain text as
-       'the standard lattice-gauge Osterwalder-Seiler picture'. All three
-       substeps (D1), (D2), (D3) proved inline and verified on a 2^4 SU(3)
-       lattice with explicit random link variables.
+=== Part A: finite carrier, reflection, and Wilson decomposition ===
 
-Lattice: 2^4 (= 16 sites), SU(3), β = 6.0, seed = 20260602
+=== Part B: periodic complete temporal gauge criterion ===
 
+=== Part C: plus-local f versus two-half reflection-Hermitian F ===
 
-=== Part A: plaquette enumeration + S_W decomposition (D1) ===
+=== Part D: hostile partition and reflection-orientation controls ===
 
-=== Part B: Θ-invariance of S_+ on time-symmetric configurations (D2) ===
+=== Part E: source-scope and dependency firewall ===
 
-=== Part C: reflection-Hermiticity of OS-Hermitian observables (D3) ===
+==============================================================================
+[PASS] A.carrier.plaquette_count  (count=192, formula=6*4*2^3=192)
+[PASS] A.partition.exact_counts  (|P+|=72, |P-|=72, |plane|=24, |wrap|=24)
+[PASS] A.partition.disjoint_exhaustive  (union=192, total=192, disjoint=True)
+[PASS] A.partition.theta_class_bijection  (P+<->P-; reflection-plane and periodic-wrap families fixed setwise)
+[PASS] A.theta.complete_temporal_gauge_sector_stable  (max ||(Theta U)_0-I||=0.000e+00)
+[PASS] A.action.disjoint_sum  (diff=0.000e+00)
+[PASS] A.action.reflected_half  (|S--S+(Theta U)|=0.000e+00)
+[PASS] A.action.decomposition  (diff=0.000e+00)
+[PASS] A.action.half_reality  (S+=-5.65924981, S-=-4.06268767, Smixed=-1.00748818)
+[PASS] A.theta.involution_generic  (max_link_diff=0.000e+00)
+[PASS] A.action.full_theta_invariance_generic  (|S(Theta U)-S(U)|=8.882e-16)
+[PASS] A.action.theta_fixed_consistency  (max_link_diff=0.000e+00)
+[PASS] B.trivial_holonomy.constructed  (max ||P-I||=1.548e-15)
+[PASS] B.periodic_recursion.closes  (max endpoint mismatch=1.548e-15)
+[PASS] B.complete_temporal_gauge.constructed  (max ||U0^g-I||=1.548e-15)
+[PASS] B.gauge_transform.wilson_invariance  (|S(U^g)-S(U)|=4.219e-15)
+[PASS] B.hostile.nontrivial_holonomy  (P=diag(-1,-1,1), Tr(P)=-1.0, Tr(I)=3, constructor_rejected=True)
+[PASS] B.holonomy.periodic_gauge_conjugacy  (conjugacy_diff=1.573e-15, trace_diff=4.506e-16)
+[PASS] C.f.structural_plus_support  (supp(f)=[(2, 0, 0, 0, 1), (2, 0, 0, 0, 2), (2, 0, 1, 0, 1), (2, 1, 0, 0, 2)])
+[PASS] C.theta_f.structural_negative_support  (supp(Theta f)=[(1, 0, 0, 0, 1), (1, 0, 0, 0, 2), (1, 0, 1, 0, 1), (1, 1, 0, 0, 2)])
+[PASS] C.f.negative_mutation_independence  (|f(U_mut)-f(U)|=0.000e+00)
+[PASS] C.os_form.independent_reflected_plaquette  (|Theta(f)f-conj(f_minus(U))f|=0.000e+00)
+[PASS] C.F.reflection_hermiticity  (|F(Theta U)-conj(F(U))|=0.000e+00)
+[PASS] C.hostile.F_product_is_not_OS_f_product  (|conj(F)F-Theta(f)f|=7.659e-03)
+[PASS] C.hostile.F_is_not_plus_local  (structural_plus_local=False, |F(U_mut)-F(U)|=2.907e-01)
+[PASS] C.hostile.negative_half_leak_rejected  (structural_plus_local=False, |f_bad(U_mut)-f_bad(U)|=7.266e-02)
+[PASS] D.hostile.omitted_wrap_partition_fails  (missing=24, |S_full-S_wrong|=2.564e+00)
+[PASS] D.hostile.wrong_temporal_orientation_fails  (correct_diff=1.332e-15, wrong_diff=4.167e-01)
+[PASS] E.note.required_scope_markers  (all present)
+[PASS] E.note.stale_bridge_language_absent  (none present)
+[PASS] E.load_bearing_dependency.present_on_main  (GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md)
 
-=== Part D: cited retained authorities present on main ===
-
-=== Part E: hostile-audit checks ===
-
-======================================================================
-[PASS] A.enum.count: 96 plaquettes enumerated on 2^4 lattice  (got 96 plaquettes (expected 96))
-[PASS] A.partition.exhaustive: P_+ ∪ P_- ∪ P_mixed = P  (|P_+| + |P_-| + |P_mixed| = 24 + 24 + 48 = 96, total = 96)
-[PASS] A.partition.disjoint: P_+ ∩ P_- = ∅  (explicit set intersection check)
-[PASS] A.partition.disjoint_mixed: P_+ ∩ P_mixed = ∅, P_- ∩ P_mixed = ∅  (explicit set intersection check)
-[PASS] A.partition.mixed_reflection_plane_count: finite-periodic reflection-plane family exposed  (|P_mixed,reflection| = 24, expected 3 * L^3 = 24)
-[PASS] A.partition.mixed_wraparound_count: finite-periodic wraparound family exposed  (|P_mixed,wrap| = 24, expected 3 * L^3 = 24)
-[PASS] A.partition.bijection: |P_+| = |P_-| (Θ bijection on plaquette set)  (|P_+| = 24, |P_-| = 24)
-[PASS] A.action.decomposition: S_W[U] = S_+(U) + S_-(U) + S_mixed(U) exactly  (S_W = -16.890012, S_+ + S_- + S_mixed = -16.890012, diff = 0.00e+00)
-[PASS] A.action.theta_image: S_-(U) = S_+(ΘU) (identification S_- = Θ S_+)  (S_-(U) = -3.546046, S_+(ΘU) = -3.546046, diff = 0.00e+00)
-[PASS] A.action.eq15: S_W[U] = S_+(U) + Θ(S_+)(U) + S_mixed(U) exactly  (S_W = -16.890012, eq (15) RHS = -16.890012, diff = 0.00e+00)
-[PASS] B.reality: S_+(U) ∈ R for arbitrary configuration  (S_+(random U) = -7.422372 (real-valued by construction since Re Tr ∈ R))
-[PASS] B.csym.membership: configuration satisfies U_i(t, x⃗) = U_i(Θ(t), x⃗) (spatial-link symmetry)  (max ‖U_i(t) - U_i(Θ(t))‖ = 0.00e+00)
-[PASS] B.theta.action_csym: on C_sym, (ΘU)_i = U_i on spatial links  (max ‖(ΘU)_i - U_i‖ on spatial links = 0.00e+00)
-[PASS] B.theta.invariance: S_+(ΘU) = S_+(U) on C_sym (substep D2 conclusion)  (S_+(U_sym) = -1.560801, S_+(ΘU_sym) = -1.560801, diff = 0.00e+00)
-[PASS] C.theta_squared: Θ² = id on link configurations (involution)  (max ‖Θ²U - U‖ over all links = 0.00e+00)
-[PASS] C.symmetrized.hermiticity: F(U) := f(U) + conj(f(ΘU)) satisfies F(ΘU) = conj(F(U))  (|F(ΘU) - conj(F(U))| = 0.00e+00; F(U) = (0.3288980200847782+1.1060548289624708j), F(ΘU) = (0.3288980200847782-1.1060548289624708j))
-[PASS] C.symmetrized_real.hermiticity: G(U) := Re f(U) + Re f(ΘU) satisfies G(ΘU) = G(U) = conj(G(U))  (|G(ΘU) - G(U)| = 0.00e+00; G(U) = 0.095260 (real); is_real=True)
-[PASS] C.csym.direct: on time-symmetric U, f(ΘU) = f(U) for any spatial-loop observable f  (f(U_sym) = (0.3512513871972502+0.6365991353295651j), f(ΘU_sym) = (0.3512513871972502+0.6365991353295651j), diff = 0.00e+00)
-[PASS] C.trace_reversal: Tr(W^†) = conj(Tr(W)) (linear-algebra basis for orientation-reversal under Θ)  (Tr(W) = (-0.012130339939001394-0.9832792878363354j), Tr(W^†) = (-0.012130339939001172+0.9832792878363356j), |diff| = 2.48e-16)
-[PASS] D.GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FAC...: retained mixed-kernel factorization (load-bearing for S_mixe [load-bearing]  (present on main (verified via git ls-tree))
-[PASS] D.REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NA...: retained_bounded abstract Cauchy-Schwarz lemma (downstream c [informational, not required]  (present on main)
-[PASS] D.RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOT...: audited_conditional parent (companion target, plain-text cit [informational, not required]  (present on main)
-[PASS] D.RP_TWO_STEP_TRANSFER_MATRIX_GRASSMANN_BEREZIN_BRID...: parallel fermion-half companion (sibling note, may be in fli [informational, not required]  (not on main yet (sibling PR in flight; not required for this note))
-[PASS] E.no_parent_mod: does NOT modify the parent RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE  (this is a companion narrow note; parent text unchanged)
-[PASS] E.no_lift_claim: does NOT claim parent audited_conditional now lifts  (that's an audit-lane re-audit decision after this companion lands)
-[PASS] E.no_new_admission: no new admission beyond cited retained authorities  (mixed-kernel (retained), Cauchy-Schwarz lemma (retained_bounded), no new convention/axiom/import)
-[PASS] E.no_no_go_weakening: no retained no_go retired or weakened  (substeps (D1)-(D3) are positive lattice combinatorics + character algebra)
-[PASS] E.no_p2_closure: does NOT close P2 phase-blindness residual  (P2 row has its own surface, not consumed here)
-[PASS] E.no_acphi_closure: does NOT close AC_phi_lambda or substep (1)+(2)+(4) realization residuals  (AC_phi_lambda + realization gates have their own surfaces, not consumed here)
-[PASS] E.pure_gauge_only: scope limited to pure-gauge Wilson plaquette action  (staggered-Dirac fermion-half is the parallel companion's scope, not this note's)
-[PASS] E.three_substeps_inline: all three substeps (D1)-(D3) proved inline, not just cited from textbook  (explicit plaquette enumeration + decomposition + reflection-Hermiticity, with 2x2x2x2 SU(3) machine-precision exhibit)
-[PASS] E.no_axiom_extension: no new axiom or theory-language extension  (uses the pre-existing one-qubit/Z^3 baseline plus retained mixed-kernel context; no new premise)
-[PASS] E.no_continuum_claim: does NOT claim continuum / OS reconstruction RP  (lattice setup only; continuum-limit results out of scope)
-
-SCORECARD: PASS=33 FAIL=0
-All OS Step 1 Wilson plaquette decomposition checks PASSED.
-Audit lane decides status; this runner proposes no effective status.
+SCORECARD: PASS=31 FAIL=0
+All narrowed finite-sector and hostile-control checks PASSED.
+Independent audit alone decides effective status.
 
 ----- stderr -----
 

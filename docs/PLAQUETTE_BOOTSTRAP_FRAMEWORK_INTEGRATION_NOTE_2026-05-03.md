@@ -58,8 +58,13 @@ Retained framework primitives:
 | A1-A4 | local algebra `Cl(3)`, substrate `Z³`, finite Grassmann/staggered-Dirac, canonical Wilson normalization `g_bare = 1` (β = 6) |
 | A7 | closed-form determinant on minimal `L_s = 2` APBC block |
 | **A11** | **retained-bounded 2-step blocked/factorized reflection positivity on `A_+^(2)`** |
-| **Gauge OS Step 1 companion** | retained-bounded Wilson plaquette decomposition and reflection-Hermiticity for Wilson-loop observables localized in `t >= 0` |
 | **Mixed-cumulant onset theorem** | retained exact first-nonlinear coefficient on the accepted Wilson `3 spatial + 1 derived-time` surface |
+
+Scoped source companion whose status remains solely independent-audit-derived:
+
+| Source | Narrow role |
+|---|---|
+| **Gauge OS Step 1 companion** | finite-periodic Wilson plaquette decomposition in the trivial-temporal-holonomy `U_0=I` sector, plus an exact link-support criterion separating plus-local `f` from the two-half reflection-Hermitian symmetrization |
 
 Newly proved/narrowed support in this note:
 
@@ -90,10 +95,11 @@ Comparators (admitted-context only):
 
 **Lemma.** Let `{W_A}` be any finite set of Wilson-loop observables already
 proved to belong to the factorized 2-step blocked A11 observable algebra
-`A_+^(2)` on the positive-time side. In particular, this includes
-Wilson-loop observables whose temporal-gauge plaquette decomposition and
-reflection-Hermiticity are supplied by
-`GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md`.
+`A_+^(2)` on the positive-time side. The finite-carrier support test in
+`GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md`
+may verify link-level plus-locality for a declared `f`, but it does not
+by itself prove membership in the separate blocked algebra `A_+^(2)`.
+That membership remains an explicit hypothesis of this lemma.
 Then the Gram matrix
 
 ```text
@@ -105,12 +111,12 @@ reflection of A11.
 
 **Proof.** The current retained-bounded A11 route states the PSD
 sesquilinear form on the factorized 2-step blocked observable surface
-`A_+^(2)`. Therefore, for Wilson-loop observables whose membership in
-that surface is supplied by the Wilson plaquette decomposition /
-reflection-Hermiticity companion, restricting the bilinear form to the
-finite span of `{W_A}` gives `G_{AB}`. Restriction of a PSD Hermitian
-sesquilinear form to a finite-dimensional subspace gives a PSD
-Hermitian matrix. ∎
+`A_+^(2)`. Therefore, once each `W_A` has independently established
+membership in that surface, restricting the bilinear form to the finite
+span of `{W_A}` gives `G_{AB}`. Restriction of a PSD Hermitian
+sesquilinear form to a finite-dimensional subspace gives a PSD Hermitian
+matrix. The Gauge OS Step 1 companion supplies neither this blocked
+membership nor the PSD conclusion. ∎
 
 **Consequence.** All leading principal minors of `G_{AB}` are non-negative.
 For any `α ∈ ℂ^{|A|}`, `∑_{AB} α_A^* α_B G_{AB} ≥ 0`.
@@ -120,10 +126,11 @@ For any `α ∈ ℂ^{|A|}`, `∑_{AB} α_A^* α_B G_{AB} ≥ 0`.
 Let `1` denote the identity (constant observable). Let `P` denote the
 Wilson plaquette `(1/N_c) Re tr U_p` for one specific spatial plaquette
 `p` localized entirely on the A11-positive, factorized `A_+^(2)` side.
-The Gauge OS Step 1 companion supplies the source-level reason this
-plaquette observable is reflection-Hermitian in the Wilson surface:
-`Θ(1) = 1`, `Θ(P) = P_-`, where `P_-` is the reflected plaquette in the
-negative half.
+The Gauge OS Step 1 companion verifies at link-support level that the
+declared positive plaquette is plus-local in its trivial-holonomy
+complete-temporal-gauge sector and that reflection sends its support to
+the negative plaquette `P_-`. The separate A11 `A_+^(2)` membership
+assumed in this paragraph is not supplied by that companion.
 
 The 2x2 Gram matrix is:
 
@@ -322,7 +329,7 @@ proposal_allowed_reason: |
 ## 11. Cross-references
 
 - A11 source: [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
-- A11 Wilson-loop membership/source companion:
+- Gauge OS finite-split and link-support companion (not an `A_+^(2)` membership theorem):
   [`GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md`](GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md)
 - Verdict-named obstruction: [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
 - Mixed-cumulant onset theorem:

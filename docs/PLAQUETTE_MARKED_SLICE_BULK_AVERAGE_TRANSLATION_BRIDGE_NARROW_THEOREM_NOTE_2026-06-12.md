@@ -35,15 +35,12 @@ That same authority records the directional consequence:
 
 and hence `a_x = a_y = a_z = a_t = 3w`.
 
-The class split is real and must be tracked. The OS companion writes:
-
-> "spatial plaquettes ... three per site"
-
-and
-
-> "temporal plaquettes ... three per site"
-
-on `Lambda = (Z/L)^4`, with total count `6 * L^4`, in [GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md](GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md).
+The class split is real and must be tracked. The repaired OS companion
+enumerates, at each site, the three spatial pairs `1 <= i < j <= 3`
+and the three temporal pairs `(0,i)`, `i=1,2,3`. Its finite carrier has
+`6 L_t L_s^3` plaquettes, reducing to `6L^4` on the isotropic
+`Lambda=(Z/L)^4` surface, in
+[GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md](GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md).
 
 The licensed thermodynamic object is:
 

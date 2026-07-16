@@ -81,13 +81,13 @@ narrow theorem below.
   chamber margin at the PDG-central anchor. The certificate's scope is
   exactly this anchor-side sign; it does not state anything about
   s_23^2-sweeps off the anchor.
-- **(X2) Forward-cycle channel value law.**
+- **(X2) Bounded forward-cycle coordinate extraction.**
   [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  supplies that, for an active 3 by 3 Hermitian block on the
-  hw = 1 carrier, the projected forward-cycle coefficients are the
-  diagonal of `A C^dagger` in the standard cycle basis. Its role here is
-  to keep the chamber chart `H(m, delta, q_+) = H_base + m T_m + delta
-  T_delta + q_+ T_q` aligned with the retained projected cycle structure
+  supplies that, for an explicitly supplied `3 x 3` block, the projected
+  forward-cycle coordinates are the diagonal of `A C^dagger` in the displayed
+  cycle basis. Its role here is limited to algebra on the separately supplied
+  chamber chart `H(m, delta, q_+) = H_base + m T_m + delta T_delta + q_+ T_q`
+  and does not derive a physical `hw=1` carrier or readout
   on the active block, so that the chamber chart used in the prediction
   is the same chart the audit lane already retains.
 - **(X3) NuFit 5.3 NO 3-sigma box on (s_12^2, s_13^2, s_23^2).**
@@ -122,8 +122,8 @@ Given
 - **(X1)** the Krawczyk-certified chamber-margin lower bound at the
   PDG-central Basin 1 anchor,
   `q + delta - sqrt(8/3) >= +1.5849 * 10^-2 > 0`;
-- **(X2)** the forward-cycle channel value law fixing the active hw = 1
-  chamber chart;
+- **(X2)** the bounded coordinate identity on the separately supplied chamber
+  chart;
 - **(X3)** the NuFit 5.3 NO 3-sigma rectangle as named external admission
   on `(s_12^2, s_13^2, s_23^2)`;
 - **(X4)** the distinct translation-character algebra on the hw = 1
@@ -285,8 +285,8 @@ What remains conditional (out of scope for this narrow note):
   — (X1) Krawczyk-interval chamber-margin certificate at the PDG-central
   Basin 1 anchor.
 - [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  — (X2) projected forward-cycle coefficients on the active 3 by 3 hw=1
-  block.
+  — (X2) bounded coordinates on an explicitly supplied `3 x 3` block; no
+  physical carrier/readout or chart-selection bridge.
 - [`THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md`](THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md)
   — (X4) distinct-character diagonal involutions and rank-1 sector
   projectors on the hw=1 triplet.
@@ -304,9 +304,9 @@ import path):
 
 ## 9. Forbidden-imports check
 
-- No new repo-wide axiom introduced; the Krawczyk
-  certificate and the cycle-channel value law are existing retained
-  authorities.
+- No new repo-wide axiom introduced. The Krawczyk certificate is a cited
+  authority; X2 is only bounded supplied-block coordinate algebra and is not
+  treated here as a retained physical value/readout law.
 - No new repo vocabulary introduced; "chamber margin," "chamber-boundary
   line," and "upper-octant prediction" are taken directly from the
   parent prediction note's terminology.

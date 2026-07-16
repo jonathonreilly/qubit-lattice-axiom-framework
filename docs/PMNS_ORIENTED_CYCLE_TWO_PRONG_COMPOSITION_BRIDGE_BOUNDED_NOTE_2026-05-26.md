@@ -56,7 +56,7 @@ selected-axis route induces the P23 swap-conjugation antiunitary").
 | Step | Statement | Load-bearing input |
 |---|---|---|
 | (B1) | On the graph-first selected-axis route, `A_fwd = P_23 A_fwd^dagger P_23` (residual antiunitary condition on the oriented forward-cycle channel `A_fwd = c_1 E_12 + c_2 E_23 + c_3 E_31`) | Retained antiunitary sibling narrow theorem |
-| (B2) | At the sole-axiom free point of the active-operator construction `A_act(x, y, delta)`, `A_act((1,1,1), (0,0,0), delta) = I_3` | Audited-decoration free-point sibling under the retained channel-value parent |
+| (B2) | For the displayed active-operator construction at the specified input, `A_act((1,1,1), (0,0,0), delta) = I_3` | Free-point sibling's bounded finite-matrix identity |
 | (B3) | The parent's "admitted premise" set `{(B1), (B2)}` is now supplied by the cited sibling authorities; the parent's class-A matrix identities (cyclic covariance, zero cycle coefficients on `I_3`, prescribed swap-conjugation examples) hold by direct algebra | (B1) + (B2) + standard linear algebra |
 
 The proof-walk does not cite the Wilson plaquette action, staggered
@@ -102,8 +102,9 @@ examples on `I_3` (the parent's class-A content) are then standard
   — audited-decoration sibling narrow theorem supplying the
   sole-axiom free-point active block `A_act = I_3`.
 - [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  — retained parent of the free-point sibling's decoration status;
-  anchors the decoration under a retained parent.
+  — bounded algebraic coordinate-extraction lemma for a supplied `3 x 3`
+  block. It supplies no physical carrier, Record-compatible readout, or
+  retained decoration anchor.
 
 These are imported authorities for a bounded theorem. The row remains
 unaudited until the independent audit lane reviews this note, its

@@ -359,7 +359,7 @@ def part9_claim_discipline():
         "status authority: independent audit lane only",
         "no audit_status promotion language",
         "Krawczyk certificate cited as X1 (retained_bounded)",
-        "forward-cycle channel value law cited for X2 (retained)",
+        "bounded supplied-block coordinate lemma cited for X2; status not pinned",
         "hw=1 three-character algebra cited for X4 (retained_bounded)",
         "parent prediction note cited as multistart-evidence source only",
         "Jacobian J_Phi invertibility at anchor as X5 (new content)",

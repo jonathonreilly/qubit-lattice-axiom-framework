@@ -1,116 +1,124 @@
-# PMNS Oriented Cycle Channel Value Law
+# Oriented-Cycle Coordinate-Extraction Lemma
 
 **Date:** 2026-04-16  
-**Status:** support - structural or confirmatory support note
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only
+**Status:** bounded finite-dimensional algebra lemma
+**Stable claim id:** `pmns_oriented_cycle_channel_value_law_note`
 **Script:** `scripts/frontier_pmns_oriented_cycle_channel_value_law.py`
 
-## Question
+## Claim scope
 
-Can the remaining positive carrier on the retained PMNS active class be
-equipped with an exact axiom-native observable/value law?
+This row proves a finite-dimensional algebra statement for an explicitly
+supplied complex `3 x 3` matrix `A`, an explicitly supplied triplet embedding,
+and the displayed finite cycle representation.
 
-## Answer
+It proves only:
 
-Yes.
+1. the exact projected-cycle and coordinate-projector identities;
+2. the ordered basis identity
+   `(P_1 C, P_2 C, P_3 C) = (E_12, E_23, E_31)`;
+3. the exact coordinate extraction
+   `c = diag(A C^dagger)`;
+4. the exact reconstruction of the orthogonal forward-cycle projection of
+   `A` from those coordinates.
 
-On the `hw=1` triplet:
+The title, theorem, and runner do not interpret `c` as a physical observable
+or as a value law.
 
-- the exact coordinate-cycle unitary projects to the forward cycle operator
-  `C`
-- the projected scalar site projectors give the diagonal matrix units
-  `E_11, E_22, E_33`
-- their products give the canonical forward-cycle edge basis
-  `E_12, E_23, E_31`
+## Supplied finite matrices
 
-Therefore any canonical active block has the exact native oriented-cycle
-decomposition
+Let
 
-`A_fwd = c_1 E_12 + c_2 E_23 + c_3 E_31`
+`C = E_12 + E_23 + E_31`
 
-with coefficient law
+and let
 
-`(c_1, c_2, c_3) = diag(A C^dagger)`.
+- `P_1 = E_11`;
+- `P_2 = E_22`;
+- `P_3 = E_33`.
 
-Equivalently,
+The runner also displays an explicit `8 x 8` finite cycle representation `U`
+and an explicit isometric triplet embedding `V`. Direct multiplication gives
 
-`c_i = Tr((P_i C)^dagger A)`,
+`V^dagger U^2 V = C`
 
-where `P_i` are the projected scalar triplet projectors.
+and the displayed site projectors compress to `P_1, P_2, P_3`.
 
-## Exact chain
+These are exact identities of the supplied matrices. They are not a derivation
+of a retained `hw=1` taste carrier.
 
-### 1. Native forward cycle operator
+## Lemma
 
-Let `U_C3` be the exact coordinate-cycle unitary on the taste space. On the
-`hw=1` triplet,
+Define the ordered forward-cycle basis
 
-`P_hw1^dag U_C3^2 P_hw1 = C`.
+`B_i = P_i C`.
 
-So the forward cycle operator is not introduced by hand. It is projected from
-the exact coordinate-cycle symmetry.
+Then
 
-### 2. Native edge basis
+- `B_1 = E_12`;
+- `B_2 = E_23`;
+- `B_3 = E_31`.
 
-The projected scalar site projectors are exactly
+The three matrices are orthonormal for the Hilbert--Schmidt inner product
 
-- `P_1 = E_11`
-- `P_2 = E_22`
-- `P_3 = E_33`
+`<X,Y> = Tr(X^dagger Y)`.
 
-Multiplying by the native forward cycle gives
+For every supplied `A in M_3(C)`, define
 
-- `P_1 C = E_12`
-- `P_2 C = E_23`
-- `P_3 C = E_31`
+`c_i = <B_i,A>`.
 
-So the whole forward-cycle channel has an exact native basis.
+Direct multiplication gives
 
-### 3. Exact coefficient law
+`c_i = Tr((P_i C)^dagger A)`
 
-For any canonical active block `A`, the forward-cycle coefficients are
+and therefore
 
-`c = diag(A C^dagger)`.
+`(c_1,c_2,c_3) = diag(A C^dagger) = (A_12,A_23,A_31)`.
 
-That reproduces exactly the three oriented cycle entries:
+Consequently the Hilbert--Schmidt projection of `A` onto
+`span{E_12,E_23,E_31}` is exactly
 
-- `c_1 = A_12`
-- `c_2 = A_23`
-- `c_3 = A_31`
+`Pi_fwd(A) = c_1 E_12 + c_2 E_23 + c_3 E_31`.
 
-The channel mean
+Equivalently, the residual `A - Pi_fwd(A)` is orthogonal to all three displayed
+basis matrices.
 
-`sigma = (c_1 + c_2 + c_3) / 3`
+## What the runner establishes
 
-matches the already-derived odd transport mode.
+The runner verifies the lemma on multiple deterministic generic complex
+`3 x 3` matrices, not on an `active_operator` or a target-derived response
+fixture. It checks:
 
-### 4. Lower-level response profile version
+- the supplied embedding and projected-cycle identity;
+- projector orthogonality, completeness, and the edge-basis identities;
+- Hilbert--Schmidt orthonormality of the edge basis;
+- exact extraction by both `diag(A C^dagger)` and trace coordinates;
+- exact reconstruction and residual orthogonality;
+- linearity and idempotence of the forward-cycle projection;
+- hostile wrong-cycle and wrong-basis negative controls;
+- the source-scope firewall and truthful nonzero failure exit.
 
-If the active lower-level response columns are given, first derive the active
-block `A`, then apply the same formula above.
+## Consistency-only boundary
 
-So the oriented-cycle values are read exactly from the lower-level active
-response profile as well.
+The former lower-level response-profile round trip was constructed from the
+target block and then inverted back to that block. That construction is
+consistency-only and is not part of the load-bearing theorem or runner. It is
+not independent evidence for a physical PMNS carrier, observable, or readout.
 
-## Consequence
+## Open bridges
 
-This is not a full sole-axiom closure theorem. It does **not** say the sole
-axiom selects the values `(c_1,c_2,c_3)`.
+The remaining `missing_bridge_theorem` is explicit. This row does not supply:
 
-What it does say is stronger than a vague carrier statement:
+1. a retained derivation identifying the displayed triplet embedding with a
+   physical `hw=1` taste carrier;
+2. a Record-compatible physical observable/readout map from record content to
+   the complex coordinate tuple `(c_1,c_2,c_3)`;
+3. a framework derivation or selection of the supplied matrix `A`;
+4. a framework law selecting numerical values of its cycle coordinates.
 
-> the remaining positive carrier now has an exact native observable/value law.
-
-So the unresolved question is no longer “what is the right non-scalar object?”
-It is only:
-
-> what law, if any, selects the oriented-cycle values from the sole axiom or a
-> further admitted extension?
-
-## Boundary
-
-This note equips the oriented cycle channel with a native observable law.
-
-It does **not** derive the values from `Cl(3)` on `Z^3` alone.
+Until those bridges are separately derived and retained, this row is only the
+bounded algebraic coordinate-extraction lemma above.
 
 ## Command
 

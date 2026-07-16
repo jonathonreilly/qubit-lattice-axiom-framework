@@ -6,22 +6,22 @@
 
 ## Question
 
-Does the exact coordinate-cycle symmetry already furnish a native three-mode
-holonomy family on the retained `hw=1` triplet, so that the reduced PMNS cycle
-values close without admitting an external generic three-flux family?
+For the explicitly supplied forward-cycle matrix `C`, do its three character
+phases give an invertible coordinate map on the supplied reduced cycle family?
 
 ## Answer
 
 Yes.
 
-On the retained `hw=1` triplet, the exact coordinate-cycle unitary projects to
-the forward-cycle matrix `C`, whose characters are exactly:
+For the supplied finite matrices, the stable-path coordinate lemma verifies
+that the displayed compression equals `C`. The characters of this supplied
+`C` are exactly:
 
 - `1`
 - `omega = exp(2 pi i / 3)`
 - `omega^2 = exp(4 pi i / 3)`
 
-So the native character phases are:
+So the supplied character phases are:
 
 - `0`
 - `2 pi / 3`
@@ -44,8 +44,8 @@ those canonical phases. Their design matrix is
 
 and has nonzero determinant.
 
-Therefore `(u,v,w)` are reconstructed exactly from the exact `C3` character
-triple itself.
+Therefore `(u,v,w)` are reconstructed exactly from the supplied `C3`
+character-functional triple.
 
 ## Consequence
 
@@ -54,21 +54,21 @@ This strengthens the earlier three-flux theorem.
 Before:
 - a generic three-flux family was admitted and shown to close `(u,v,w)`
 
-Now:
-- the exact coordinate-cycle symmetry already supplies a canonical native
-  three-mode holonomy family
-- so the reduced PMNS cycle values close on an exact native `C3`-character
-  route
+Now, algebraically:
+- the supplied cycle matrix provides the canonical three character phases;
+- the resulting `3 x 3` coordinate map is invertible on the supplied reduced
+  matrix family.
 
 ## What It Does Not Claim
 
 This still does **not** give full sole-axiom positive neutrino closure.
 
-What remains blocked is not the reduced-cycle readout family anymore. It is the
-sole-axiom production of **nontrivial values** on that native character family.
+This note does not promote those functionals to a physical readout. The
+retained carrier, Record-compatible observable map, and selection of the
+matrix/coordinate values remain open.
 
-The sole axiom still yields only the trivial free retained response profiles,
-and those do not realize the PMNS-active lane.
+The stable-path parent supplies only bounded coordinate algebra for a supplied
+block; it does not close any of those physical bridges.
 
 ## Verification
 

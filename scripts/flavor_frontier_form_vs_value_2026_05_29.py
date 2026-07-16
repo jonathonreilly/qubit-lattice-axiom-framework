@@ -40,7 +40,6 @@ def main() -> int:
         "ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10",
         "wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10",
         "ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26",
-        "pmns_oriented_cycle_channel_value_law_note",
         "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
         "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
         "quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28",
@@ -50,6 +49,14 @@ def main() -> int:
         row = rows.get(claim_id)
         detail = "missing" if row is None else f"effective_status={row.get('effective_status')}"
         check(f"{claim_id} is retained-grade", row is not None and row.get("effective_status") in RETAINED_GRADES, detail)
+
+    cycle_note = Path("docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md").read_text(encoding="utf-8")
+    check(
+        "PMNS cycle-coordinate row is scoped as bounded supplied-block algebra",
+        "**Claim type:** bounded_theorem" in cycle_note
+        and "Record-compatible physical observable/readout map" in cycle_note
+        and "framework derivation or selection of the supplied matrix `A`" in cycle_note,
+    )
 
     open_row = rows.get("quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26")
     detail = "missing" if open_row is None else f"effective_status={open_row.get('effective_status')}"
@@ -66,7 +73,7 @@ def main() -> int:
     check("CKM perpendicular weight is distinct from 2/3", abs(ckm_perp_weight - 2 / 3) > 1e-6, f"2/9={ckm_perp_weight:.6f}")
 
     print(f"\nPASS={PASS} FAIL={FAIL}")
-    print("Form support is retained-grade; continuous flavor values remain separate inputs/open gates.")
+    print("Retained form support and bounded PMNS coordinate algebra remain distinct from physical value/readout bridges.")
     return 1 if FAIL else 0
 
 

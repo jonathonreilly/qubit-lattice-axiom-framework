@@ -17,11 +17,11 @@ The current exact bank now closes the retained PMNS lane negatively:
   response profiles on the retained lepton triplets
 - the retained scalar deformation routes stay diagonal/scalar and are rejected
   by the one-sided PMNS closure stack
-- the only surviving positive carrier is the graph-first reduced oriented
-  forward-cycle channel
-- that reduced channel has an exact native observable law
-- every point of that reduced channel is realized exactly on the lower-level
-  active response chain
+- graph-first residual symmetry restricts an explicitly supplied candidate
+  block to a reduced oriented forward-cycle family
+- a bounded algebraic lemma extracts cycle coordinates from a supplied block
+- target-constructed response fixtures round-trip supplied reduced blocks as
+  consistency checks only
 
 Therefore the current exact bank does **not** contain a positive
 value-selection law on that reduced channel.
@@ -39,28 +39,36 @@ The current exact bank proves:
 
 1. The sole axiom gives only the trivial free response profiles.
 2. The retained local scalar routes never leave the diagonal/scalar sector.
-3. The graph-first selected-axis route reduces the surviving positive carrier
-   to the reduced `3`-real oriented-cycle family above.
-4. The native oriented-cycle observable law reads `(u,v,w)` exactly.
-5. Every point of that reduced family is realized on the lower-level active
-   response chain.
+3. On an explicitly supplied candidate block, the graph-first residual
+   symmetry restricts the forward-cycle entries to the reduced `3`-real family
+   above.
+4. The bounded oriented-cycle coordinate lemma reads `(u,v,w)` exactly from a
+   supplied block.
+5. The response-profile examples are constructed from target reduced blocks
+   and invert back to them; they are consistency-only.
 
-So the current exact bank fixes:
+So, after a candidate block is supplied, the current exact bank fixes:
 
-- the carrier,
-- the observable law,
+- its reduced matrix support,
+- the algebraic coordinate chart,
 - and the exact residual symmetry,
 
 but not a unique value.
 
+These checks do not derive the physical carrier, a Record-compatible readout,
+or an independent lower-level source of the reduced blocks. The stable-path
+coordinate lemma must not be used as evidence for any of those bridges.
+
 ## Consequence
 
-The retained PMNS lane is now closed at the current-bank boundary.
+The current-bank value-selection attempt closes negatively at this boundary.
 
 Any further positive value-selection law would require:
 
 - genuinely new dynamics, or
 - a further admitted extension.
+
+It would also require separate retained carrier and physical-readout bridges.
 
 ## Verification
 

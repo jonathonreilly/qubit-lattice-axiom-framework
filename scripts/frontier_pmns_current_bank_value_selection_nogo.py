@@ -3,7 +3,7 @@
 
 Question:
   After the sole-axiom free-point theorem, the scalar deformation boundaries,
-  the graph-first selector reduction, and the oriented-cycle observable law,
+  the graph-first selector reduction, and the oriented-cycle coordinate map,
   does the current exact bank contain a positive value-selection law for the
   retained PMNS lane?
 
@@ -16,11 +16,11 @@ Answer:
        profiles on the retained lepton triplets
     2. the admitted local scalar routes stay diagonal/scalar and are rejected
        by the retained one-sided PMNS closure stack
-    3. the only surviving positive carrier is the graph-first reduced oriented
-       forward-cycle channel
-    4. that reduced channel has an exact native observable law
-    5. every point of that reduced channel is realized on the lower-level
-       active response chain
+    3. graph-first residual symmetry restricts an explicitly supplied
+       candidate block to a reduced oriented forward-cycle family
+    4. a bounded algebraic lemma extracts coordinates from a supplied block
+    5. target-constructed response fixtures round-trip supplied reduced blocks,
+       but are consistency-only rather than independent physical evidence
 
   Therefore the current exact bank does not contain a positive value-selection
   law on that reduced channel. Any further positive law would require genuinely
@@ -34,7 +34,7 @@ import sys
 import numpy as np
 
 from frontier_pmns_lower_level_end_to_end_closure import close_from_lower_level_observables
-from frontier_pmns_oriented_cycle_channel_value_law import oriented_cycle_coeffs_from_response_columns
+from frontier_pmns_oriented_cycle_channel_value_law import oriented_cycle_coeffs_from_block
 from frontier_pmns_oriented_cycle_reduced_channel_nonselection import (
     active_block_with_reduced_cycle,
     reduced_cycle_coordinates,
@@ -113,9 +113,9 @@ def part1_free_and_scalar_routes_are_too_small() -> None:
     check("The retained PMNS closure stack rejects the diagonal/scalar route as well", ok_diag, detail_diag)
 
 
-def part2_graph_first_reduces_the_only_surviving_positive_carrier() -> None:
+def part2_graph_first_restricts_a_supplied_candidate_family() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: GRAPH-FIRST REDUCES THE ONLY SURVIVING POSITIVE CARRIER")
+    print("PART 2: GRAPH-FIRST RESTRICTS A SUPPLIED CANDIDATE FAMILY")
     print("=" * 88)
 
     u, v, w = 0.41, 0.32, 0.28
@@ -128,13 +128,13 @@ def part2_graph_first_reduces_the_only_surviving_positive_carrier() -> None:
     check("The reduced oriented-cycle coordinates are read exactly as (u,v,w)",
           np.linalg.norm(coords - np.array([u, v, w], dtype=float)) < 1e-12,
           f"coords={np.round(coords, 6)}")
-    check("The surviving positive carrier has the retained canonical diagonal-plus-forward-cycle support",
+    check("The supplied candidate block has the specified diagonal-plus-forward-cycle support",
           np.array_equal(support_mask(block), TARGET_SUPPORT))
 
 
-def part3_every_reduced_channel_point_is_realized_but_not_selected() -> None:
+def part3_target_constructed_round_trips_do_not_select_a_value() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: EVERY REDUCED-CHANNEL POINT IS REALIZED BUT NOT SELECTED")
+    print("PART 3: TARGET-CONSTRUCTED FIXTURES ARE CONSISTENCY-ONLY")
     print("=" * 88)
 
     lam = 0.31
@@ -147,21 +147,22 @@ def part3_every_reduced_channel_point_is_realized_but_not_selected() -> None:
     _ref_b, cols_b = active_response_columns_from_sector_operator(sector_b, lam)
     _ker_a, rec_a = derive_active_block_from_response_columns(cols_a, lam)
     _ker_b, rec_b = derive_active_block_from_response_columns(cols_b, lam)
-    coeffs_a = oriented_cycle_coeffs_from_response_columns(cols_a, lam)
-    coeffs_b = oriented_cycle_coeffs_from_response_columns(cols_b, lam)
+    coeffs_a = oriented_cycle_coeffs_from_block(rec_a)
+    coeffs_b = oriented_cycle_coeffs_from_block(rec_b)
     coords_a = reduced_cycle_coordinates(rec_a)
     coords_b = reduced_cycle_coordinates(rec_b)
 
-    check("Two distinct reduced-channel points are both realized exactly on the lower-level active response chain",
+    check("Two target-constructed fixtures round-trip two distinct supplied reduced-channel points",
           np.linalg.norm(rec_a - a) < 1e-12 and np.linalg.norm(rec_b - b) < 1e-12 and np.linalg.norm(a - b) > 1e-6,
           f"|A-B|={np.linalg.norm(a - b):.6f}")
-    check("The native oriented-cycle observable law separates those realized points exactly",
+    check("The bounded algebraic coordinate map separates the round-tripped blocks",
           np.linalg.norm(coeffs_a - coeffs_b) > 1e-6 and np.linalg.norm(coords_a - coords_b) > 1e-6,
           f"|Δcoords|={np.linalg.norm(coords_a - coords_b):.6f}")
-    check("Both realized points satisfy the same graph-first residual antiunitary symmetry",
+    check("Both round-tripped blocks satisfy the same graph-first residual antiunitary symmetry",
           np.linalg.norm(residual_swap_conjugate(rec_a) - rec_a) < 1e-12
           and np.linalg.norm(residual_swap_conjugate(rec_b) - rec_b) < 1e-12)
-    print("  [INFO] The current exact bank fixes the carrier and observable law, but not a unique value")
+    print("  [INFO] These fixtures were constructed from the supplied targets and are consistency-only.")
+    print("  [INFO] They do not establish a physical carrier, readout, or value-selection law.")
 
 
 def part4_circularity_guard() -> None:
@@ -170,9 +171,9 @@ def part4_circularity_guard() -> None:
     print("=" * 88)
 
     ok_active, bad_active = circularity_guard(active_response_columns_from_sector_operator, {"x", "y", "delta", "tau", "q"})
-    ok_cycle, bad_cycle = circularity_guard(oriented_cycle_coeffs_from_response_columns, {"u", "v", "w", "sigma"})
+    ok_cycle, bad_cycle = circularity_guard(oriented_cycle_coeffs_from_block, {"u", "v", "w", "sigma"})
     check("The lower-level active response derivation does not take PMNS-side value targets as inputs", ok_active, f"bad={bad_active}")
-    check("The native oriented-cycle readout does not take reduced-channel coordinates as inputs", ok_cycle, f"bad={bad_cycle}")
+    check("The algebraic coordinate extractor does not take reduced-channel coordinate names as inputs", ok_cycle, f"bad={bad_cycle}")
 
 
 def main() -> int:
@@ -185,8 +186,8 @@ def main() -> int:
     print("  the retained PMNS lane?")
 
     part1_free_and_scalar_routes_are_too_small()
-    part2_graph_first_reduces_the_only_surviving_positive_carrier()
-    part3_every_reduced_channel_point_is_realized_but_not_selected()
+    part2_graph_first_restricts_a_supplied_candidate_family()
+    part3_target_constructed_round_trips_do_not_select_a_value()
     part4_circularity_guard()
 
     print("\n" + "=" * 88)
@@ -195,15 +196,16 @@ def main() -> int:
     print("  Exact current-bank closeout:")
     print("    - the sole axiom gives only the trivial free response profiles")
     print("    - the retained scalar deformation routes stay too small")
-    print("    - the only surviving positive carrier is the graph-first reduced")
-    print("      oriented forward-cycle channel")
-    print("    - every point of that reduced channel is realized exactly on the")
-    print("      lower-level active response chain")
+    print("    - graph-first residual symmetry restricts a supplied candidate")
+    print("      block to the reduced oriented forward-cycle family")
+    print("    - target-constructed response fixtures round-trip supplied reduced")
+    print("      blocks as consistency checks only")
     print("    - the current exact bank therefore does not select a unique value")
     print()
     print("  So the retained PMNS lane closes negatively on the current exact bank.")
     print("  Any further positive value-selection law would require genuinely new")
-    print("  dynamics or a further admitted extension.")
+    print("  dynamics or a further admitted extension. The physical carrier and")
+    print("  Record-compatible readout bridges also remain open.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

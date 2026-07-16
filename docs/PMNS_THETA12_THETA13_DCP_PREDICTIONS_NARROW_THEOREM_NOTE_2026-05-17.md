@@ -84,12 +84,12 @@ statuses verified against `docs/audit/data/audit_ledger.json`
   `chain_closes: True`). Role: supplies the rigorous Krawczyk apparatus
   (200-bit mpmath interval arithmetic + interval Newton on the cubic
   characteristic polynomial + adjugate-based interval projectors).
-- **(X2) Forward-cycle channel value law.**
+- **(X2) Bounded forward-cycle coordinate extraction.**
   [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  (`effective_status: retained`, `claim_type: positive_theorem`,
-  `chain_closes: True`). Role: keeps the chamber chart `H(m, δ, q) =
-  H_BASE + m T_M + δ T_D + q T_Q` aligned with the retained projected
-  cycle structure (same chart used by Cycles 5a / 6a / 7).
+  (`claim_type: bounded_theorem`; status authority remains the independent
+  audit lane). Role: once the displayed chamber chart matrix is supplied,
+  extract its `E_12,E_23,E_31` coordinates exactly. It does not derive the
+  `hw=1` carrier, physically identify the chart, or provide a readout law.
 - **(X3) NuFit 5.3 NO 3-σ rectangle on `(s_12^2, s_13^2)`.**
   NAMED EXTERNAL ADMISSION: `s_12^2 ∈ [0.270, 0.341]`, `s_13^2 ∈
   [0.02029, 0.02391]`.
@@ -156,8 +156,8 @@ Given
 - **(X1)** the retained Krawczyk apparatus (200-bit mpmath interval
   arithmetic + interval Newton on the cubic char-poly + adjugate-based
   interval projectors);
-- **(X2)** the forward-cycle channel value law fixing the chamber chart
-  `H(m, δ, q) = H_BASE + m T_M + δ T_D + q T_Q`;
+- **(X2)** the bounded coordinate identity on the separately supplied chamber
+  chart `H(m, δ, q) = H_BASE + m T_M + δ T_D + q T_Q`;
 - **(X3)** the NuFit 5.3 NO 3-σ rectangle on `(s_12^2, s_13^2)` as
   named external admission;
 - **(X3\*)** the NuFit 5.3 NO 3-σ band on δ_CP as named external
@@ -435,8 +435,8 @@ bisection (analogous to X5\*).
   — (X1) Krawczyk-interval chamber-margin certificate at PDG-central anchor
   (`retained_bounded`).
 - [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  — (X2) projected forward-cycle coefficients on the active 3 × 3 hw=1
-  block (`retained`).
+  — (X2) bounded projected forward-cycle coordinates on an explicitly
+  supplied `3 x 3` block; no physical `hw=1` or readout bridge.
 - [`THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md`](THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md)
   — (X4) distinct-character diagonal involutions and rank-1 sector
   projectors on the hw=1 triplet (`retained_bounded`).

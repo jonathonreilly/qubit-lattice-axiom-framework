@@ -19,10 +19,10 @@ On the retained Dirac/PMNS side:
 - even the canonical sole-axiom `hw=1` source-inserted / graph-first-
   transferred pack stays trivial
 - retained scalar deformation routes remain too small
-- the only surviving positive carrier is the graph-first reduced oriented
-  forward-cycle channel
-- every point of that reduced channel is realized on the lower-level active
-  response chain
+- graph-first residual symmetry restricts an explicitly supplied candidate
+  block to a reduced oriented forward-cycle family
+- target-constructed response fixtures round-trip supplied reduced blocks as
+  consistency checks, not independent physical realization evidence
 - but the current exact bank does **not** select a unique value on that
   reduced channel
 
@@ -45,13 +45,14 @@ closeout:
    trivial and is rejected by the retained PMNS closure stack.
 3. Retained scalar deformation routes stay diagonal/scalar and are rejected by
    the one-sided PMNS closure stack.
-4. The graph-first reduced oriented-cycle carrier is real and exact, but the
-   current exact bank does not furnish a value-selection law on it.
+4. On a supplied reduced oriented-cycle block, the stable-path parent supplies
+   only algebraic coordinate extraction. It does not furnish the physical
+   carrier, a Record-compatible readout, or a value-selection law.
 5. The retained lower-level charge-preserving Majorana response layer has zero
    anomalous block.
-6. More sharply, the full remaining last mile is now exactly the pair
-   `(J_chi, mu)`, where `J_chi` is the native PMNS nontrivial `C3` current and
-   `mu` is the rephasing-reduced Majorana charge-`2` amplitude.
+6. Remaining positive closure requires the open PMNS carrier/readout/block-
+   selection bridges as well as a nonzero rephasing-reduced Majorana charge-`2`
+   amplitude.
 
 ## Consequence
 
@@ -63,12 +64,14 @@ question:
 - but the sole axiom itself does not supply a full positive retained-neutrino
   realization
 
+The target-constructed response fixtures in the runner are consistency-only
+and are not used as independent evidence for a physical PMNS realization.
+
 Any further positive closure would require:
 
-- genuinely new dynamics selecting nonzero nontrivial `C3` character
-  amplitude on the retained `hw=1` PMNS response family and generating a
-  genuinely off-diagonal charge-`2` Nambu primitive on the doubled `nu_R`
-  line, or
+- genuinely new dynamics deriving a retained PMNS carrier, a Record-compatible
+  readout, the candidate block and its values, and a genuinely off-diagonal
+  charge-`2` Nambu primitive on the doubled `nu_R` line, or
 - a further admitted extension beyond the current exact bank
 
 ## Verification

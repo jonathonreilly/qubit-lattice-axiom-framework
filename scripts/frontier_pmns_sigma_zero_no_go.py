@@ -76,9 +76,9 @@ def pure_retained_pmns_blocks(lam_act: float = 0.31) -> dict[str, np.ndarray]:
     }
 
 
-def part1_sigma_is_a_native_pmns_observable_and_the_candidate_source_for_jchi() -> None:
+def part1_sigma_is_the_algebraic_cycle_coordinate_mean() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: SIGMA IS A NATIVE PMNS OBSERVABLE AND THE CANDIDATE SOURCE FOR J_chi")
+    print("PART 1: SIGMA IS THE ALGEBRAIC CYCLE-COORDINATE MEAN")
     print("=" * 88)
 
     block = sigma_slice_block(sigma=0.23, u=0.23, v=0.0, xbar=1.0)
@@ -86,9 +86,9 @@ def part1_sigma_is_a_native_pmns_observable_and_the_candidate_source_for_jchi() 
     sigma_cycle = sigma_from_block(block)
     jchi = nontrivial_character_current(block)
 
-    check("Sigma is exactly the native active transport mean on the PMNS block", abs(sigma_cycle - sigma_transport) < 1.0e-12, f"xbar={xbar:.6f}, sigma={sigma_cycle:.6f}")
-    check("At the C3-covariant point the native nontrivial current equals sigma", abs(jchi - sigma_cycle) < 1.0e-12, f"J_chi={jchi:.6f}, sigma={sigma_cycle:.6f}")
-    check("So nonzero sigma would already be a pure-PMNS source of nonzero J_chi", True)
+    check("The algebraic cycle-coordinate mean equals the supplied block's transport mean", abs(sigma_cycle - sigma_transport) < 1.0e-12, f"xbar={xbar:.6f}, sigma={sigma_cycle:.6f}")
+    check("At the supplied C3-covariant point the nontrivial character functional equals sigma", abs(jchi - sigma_cycle) < 1.0e-12, f"J_chi={jchi:.6f}, sigma={sigma_cycle:.6f}")
+    check("This is a matrix identity, not a physical observable/readout bridge", True)
 
 
 def part2_every_current_pure_retained_source_route_has_sigma_zero() -> None:
@@ -154,7 +154,7 @@ def main() -> int:
     print("  On the current pure-retained sole-axiom PMNS bank, can the retained")
     print("  native sources/readouts/selectors force nonzero sigma?")
 
-    part1_sigma_is_a_native_pmns_observable_and_the_candidate_source_for_jchi()
+    part1_sigma_is_the_algebraic_cycle_coordinate_mean()
     part2_every_current_pure_retained_source_route_has_sigma_zero()
     part3_every_current_pure_retained_readout_of_those_routes_has_jchi_zero()
     part4_the_only_current_native_selector_without_extra_constraint_also_selects_sigma_zero()
@@ -164,14 +164,15 @@ def main() -> int:
     print("RESULT")
     print("=" * 88)
     print("  Pure-retained PMNS closeout:")
-    print("    - sigma is the native PMNS cycle/transport mean")
+    print("    - sigma is the algebraic cycle-coordinate/transport mean on the")
+    print("      supplied blocks")
     print("    - every current pure-retained PMNS source route sets sigma = 0")
     print("    - every current pure-retained PMNS readout then has J_chi = 0")
     print("    - the current unconstrained native selector also stays at sigma = 0")
     print()
     print("  Therefore sigma = 0 on the current pure-retained sole-axiom PMNS")
-    print("  lane. Any nonzero sigma requires a genuinely new pure-PMNS source or")
-    print("  constraint law beyond the current retained bank.")
+    print("  lane within the checked routes. The coordinate lemma itself supplies")
+    print("  no physical carrier, Record readout, or value-selection bridge.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

@@ -84,8 +84,10 @@ statuses verified against `docs/audit/data/audit_ledger.json`
   cubic characteristic polynomial used to bracket eigenvalues sign-
   strictly over every sub-box of `B`.
 - **(X2)** [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  (`retained`, `positive_theorem`). Role: chamber chart `H(m, δ, q) =
-  H_base + m T_m + δ T_δ + q T_q`.
+  (`bounded_theorem`; audit status owned by the independent audit lane).
+  Role: for the explicitly supplied chart matrix, extract its
+  `E_12,E_23,E_31` coordinates as `diag(A C^dagger)`. X2 does not derive or
+  physically identify the chart, carrier, or readout.
 - **(X3) NuFit 5.3 NO 3-σ rectangle on `(s_12^2, s_13^2)`.** NAMED
   EXTERNAL ADMISSION: `s_12^2 ∈ [0.270, 0.341]`, `s_13^2 ∈ [0.02029,
   0.02391]`.
@@ -337,7 +339,8 @@ Majorana-placement chain) is out of scope here.
 - [`DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md`](DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md)
   — (X1) Krawczyk certificate (`retained_bounded`).
 - [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  — (X2) forward-cycle value law (`retained`).
+  — (X2) bounded supplied-block forward-cycle coordinate extraction; no
+  physical carrier/readout or chart-selection bridge.
 - [`THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md`](THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md)
   — (X4) hw=1 distinct-character algebra (`retained_bounded`).
 - [`NEUTRINO_LANE4_4F_SIGMA_M_NU_FUNCTIONAL_FORM_THEOREM_NOTE_2026-04-28.md`](NEUTRINO_LANE4_4F_SIGMA_M_NU_FUNCTIONAL_FORM_THEOREM_NOTE_2026-04-28.md)

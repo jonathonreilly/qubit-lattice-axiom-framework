@@ -365,8 +365,9 @@ Retained authorities shared across the campaign (ledger-verified
   arithmetic + interval Newton on the cubic char-poly + adjugate
   projectors reused by Cycles 5a / 6a / 7 / 8 / 9.
 - [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
-  — `retained / positive_theorem`. Forward-cycle coefficients fixing
-  the chamber chart `H(m, δ, q) = H_base + m T_m + δ T_δ + q T_q`.
+  — `bounded_theorem`; audit status not pinned here. For the separately
+  supplied chamber matrix, extracts the forward-cycle coordinates exactly.
+  It does not derive/fix the chart, carrier, or physical readout.
 - [`THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md`](THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md)
   — `retained_bounded / bounded_theorem`. Distinct-character algebra on
   the hw=1 triplet.

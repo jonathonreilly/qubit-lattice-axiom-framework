@@ -13,8 +13,8 @@ It is a curated boundary/support packet:
 
 - exact lower-level PMNS closure once the retained source/transfer pack is
   supplied
-- exact native PMNS subtools for value-law, selection-structure, transport,
-  and graph/commutant reduction
+- bounded PMNS coordinate algebra plus separate selection-structure,
+  transport, and graph/commutant tools
 - exact current-stack Majorana zero law and exact mass-lane reduction to the
   Dirac Yukawa object
 - exact negative closeout of the full single-Higgs lepton PMNS route and exact
@@ -51,7 +51,7 @@ Primary package entry points:
   [PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md](./PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md)
 - uniform scalar / Coleman-Weinberg route boundary:
   [PMNS_UNIFORM_SCALAR_DEFORMATION_BOUNDARY_NOTE.md](./PMNS_UNIFORM_SCALAR_DEFORMATION_BOUNDARY_NOTE.md)
-- exact oriented-cycle value law and residual selection structure:
+- bounded oriented-cycle coordinate extraction and residual matrix structure:
   [PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md](./PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md),
   [PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md](./PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md)
 - exact reduced-channel nonselection closeout on the current bank:
@@ -106,6 +106,8 @@ This packet does **not** claim:
 - a full positive neutrino closure on the sole-axiom surface
 - a positive neutrino Dirac Yukawa activation law
 - a theorem-grade PMNS value-selection law from the current exact bank
+- a retained physical `hw=1` carrier or Record-compatible observable/readout
+  bridge for the oriented-cycle coordinate tuple
 - a positive retained Majorana realization
 - robust point predictions for `m_1`, `m_2`, `m_β`, `m_ββ`, `Σm_ν`, or
   `Δm²_21` beyond the retained-package inequality bounds

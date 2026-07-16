@@ -466,7 +466,7 @@ def part11():
         "structural reliance on (X5) only via two declarations",
         "interval arithmetic at 200-bit mpmath precision",
         "inherits Krawczyk apparatus from (X1)",
-        "inherits chart from (X2) forward-cycle value law",
+        "uses (X2) only as supplied-block forward-cycle coordinate algebra",
         "inherits hw=1 three-character algebra (X4)",
         "inherits retained Sigma m_nu functional form (X6) structurally",
         "Cycles 5a, 6a, 7, 8 cited as cascade partners",

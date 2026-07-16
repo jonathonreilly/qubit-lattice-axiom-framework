@@ -11,9 +11,9 @@ sources, readouts, or selectors force nonzero `sigma`?
 ## Answer
 No.
 
-The exact remaining positive PMNS source had already been sharpened to the
-native cycle/transport mean `sigma`, with nonzero `sigma` giving a concrete
-route to nonzero `J_chi` on the `C_3`-covariant slice.
+For a supplied block, `sigma` is the algebraic mean of the three extracted
+forward-cycle coordinates. On the displayed `C_3`-covariant slice it agrees
+with the separately defined transport mean and character functional.
 
 But on the current pure-retained bank:
 
@@ -31,13 +31,16 @@ Therefore the current pure-retained PMNS bank does **not** force nonzero
 
 The theorem packages four exact points:
 
-1. `sigma` is already a native PMNS observable: the cycle mean and transport
-   mean agree exactly.
+1. `sigma` is an algebraic supplied-block coordinate: the cycle mean and the
+   displayed transport mean agree exactly.
 2. On the `C_3`-covariant fixed-`sigma` point, `J_chi = sigma`, so `sigma`
    is a genuine positive PMNS candidate source.
 3. Every currently retained PMNS source route still lands at `sigma = 0`.
 4. The current unconstrained native selector also stays at the seed rather
    than lifting `sigma` away from zero.
+
+The stable-path coordinate lemma does not identify `sigma` as a physical
+observable, derive a Record-compatible readout, or select the supplied block.
 
 ## Consequence
 

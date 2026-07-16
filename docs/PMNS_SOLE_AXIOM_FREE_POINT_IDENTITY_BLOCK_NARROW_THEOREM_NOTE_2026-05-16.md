@@ -89,13 +89,16 @@ The second term vanishes because `diag(0, 0, 0)` is the zero matrix
 independent of the multiplicative phase `exp(i * delta)` applied to its
 third entry. The result is independent of `delta` for the same reason.
 
-The oriented forward-cycle coefficient law (see
+The bounded oriented forward-cycle coordinate-extraction lemma (see
 [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md))
 is
 
 ```text
 c_i = (A_act @ C^dagger)_{i, i}.
 ```
+
+Only this supplied-block matrix identity is consumed here. The cited lemma
+does not supply a physical carrier or Record-compatible readout.
 
 For `A_act = I_3` we have `A_act @ C^dagger = C^dagger`, and the diagonal
 entries of `C^dagger` are all zero because `C` is a strict permutation

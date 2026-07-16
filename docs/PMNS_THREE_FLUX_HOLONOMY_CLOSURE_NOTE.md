@@ -68,13 +68,12 @@ native three-mode holonomy family. So the result below can now be read in two
 ways:
 
 - as a generic three-flux closure theorem, and
-- more strongly, as a native `C3`-character closure theorem on the retained
-  graph-first cycle frame.
+- as a bounded `C3`-character inversion on a supplied reduced matrix family.
 
 It does **not** by itself prove full sole-axiom neutrino closure from
 `Cl(3)` on `Z^3` alone. What remains blocked after the stronger `C3`-character
-upgrade is no longer the readout family itself, but the sole-axiom production
-of **nontrivial values** on that native family.
+upgrade still includes the physical carrier, Record-compatible readout, and
+selection of the supplied matrix and its values.
 
 ## Verification
 
@@ -144,13 +143,12 @@ One-hop authority candidates cited:
 - [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
   — audit row:
   `pmns_oriented_cycle_channel_value_law_note`. Sibling source
-  authority on the exact axiom-native oriented-cycle decomposition
+  authority only on the bounded algebraic oriented-cycle decomposition
   `A_fwd = c_1 E_12 + c_2 E_23 + c_3 E_31` with coefficient law
-  `(c_1, c_2, c_3) = diag(A C^dagger)` on the `hw=1` triplet, supplying
-  the cycle-frame substrate the present note's reduced family
-  `(u, v, w)` lives in. This supplies cited one-hop support on the
-  oriented-cycle channel value law while independent audit decides
-  chain impact.
+  `(c_1, c_2, c_3) = diag(A C^dagger)` for an explicitly supplied `3 x 3`
+  block. It does not supply a physical `hw=1` carrier or Record-compatible
+  readout. This supplies only the finite coordinate substrate for the present
+  reduced family while independent audit decides chain impact.
 - [`PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md`](PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md)
   — audit row:
   `pmns_graph_first_cycle_frame_support_note`. Sibling

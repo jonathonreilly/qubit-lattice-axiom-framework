@@ -39,25 +39,22 @@ files under `.github/workflows/`.
 After install (one-time), `.github/workflows/audit.yml` runs
 `bash docs/audit/scripts/run_pipeline.sh` on:
 
-- every pull request that touches `docs/**/*.md`, `docs/audit/scripts/**`,
-  `scripts/**/*.py`, `scripts/**/*.sh`, or the workflow file itself,
 - a nightly cron at `06:00 UTC` on `main`,
 - manual `workflow_dispatch`.
 
-The trigger set is deliberately narrow because this repo has very high
-commit volume (hundreds of pushes per day). The nightly cron keeps
-`main` refreshed. PR checks are advisory because science PRs may stay
-open while `main` moves; review-loop is the pre-merge gate that applies
-the source delta to current `main`, reruns the pipeline, regenerates
-runner caches, and verifies the result before landing.
+There is deliberately no pull-request trigger on the audit workflow: this
+repo has very high commit volume, and science PRs may stay open while
+`main` moves. Review-loop is the pre-merge gate — it applies the source
+delta to current `main`, reruns the pipeline and strict lint in a clean
+worktree, and strips generated audit outputs before landing. A separate
+lightweight `pr-smoke` workflow (byte-compile of changed Python plus the
+audit-tooling unit tests when `docs/audit/scripts/**` changes) provides
+PR-time breakage signal; it is not the audit pipeline and applies no
+verdicts.
 
 On `schedule` and `workflow_dispatch` runs the workflow auto-commits the
 regenerated audit-data and publication-facing effective-status views back
 to `main` (as `audit-bot`, with `[skip ci]` to prevent feedback loops).
-PR runs report stale runner caches and generated audit-data diffs as
-warnings and job-summary advisories rather than red failures. This keeps
-GitHub notification noise low while preserving the signal for the
-landing reviewer.
 
 The full pipeline adds:
 

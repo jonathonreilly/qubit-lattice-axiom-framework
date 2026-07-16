@@ -294,13 +294,18 @@ progressive partial closure, not repeated evidence for a no-go.
 ## Files and verification
 
 - [Cycle 173 runner](../../../../scripts/shared_ancestry_dual_context_peres_mermin_cycle173_2026_07_16.py)
+- [focused cable-fed port-contract verifier](../../../../scripts/shared_ancestry_dual_context_cycle173_port_contract_check_2026_07_16.py)
 - [Cycle 168 reference note](PERES_MERMIN_FACTORIZED_REFERENCE_CENSUS_CYCLE168_NOTE_2026-07-16.md)
 - [frozen Cycle 169 membership note](PHYSICAL_ROW_NATIVE_SIGNED_MEMBERSHIP_CYCLE169_NOTE_2026-07-16.md)
 
 ```text
 python3 -m py_compile \
-  scripts/shared_ancestry_dual_context_peres_mermin_cycle173_2026_07_16.py
+  scripts/shared_ancestry_dual_context_peres_mermin_cycle173_2026_07_16.py \
+  scripts/shared_ancestry_dual_context_cycle173_port_contract_check_2026_07_16.py
 
 PYTHONPATH=scripts python3 -u \
   scripts/shared_ancestry_dual_context_peres_mermin_cycle173_2026_07_16.py
+
+PYTHONPATH=scripts python3 -u \
+  scripts/shared_ancestry_dual_context_cycle173_port_contract_check_2026_07_16.py
 ```

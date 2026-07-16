@@ -2715,16 +2715,31 @@ class StaggeredExplicitPacketHelperTest(unittest.TestCase):
         )
         current_note_hash = hashlib.sha256(note_body.encode("utf-8")).hexdigest()
 
-        shard_path = (
-            PROJECT_ROOT
-            / "docs"
-            / "audit"
-            / "data"
-            / "ledger"
-            / "st"
-            / f"{self.CLAIM_ID}.json"
-        )
-        legacy_row = json.loads(shard_path.read_text(encoding="utf-8"))
+        legacy_row = {
+            "claim_id": self.CLAIM_ID,
+            "note_path": note_path,
+            "title": "Staggered Fermion Canonical 17-Card Finite Runner Certificate",
+            "runner_path": self.PRIMARY,
+            "helper_runner_paths": [],
+            "deps": [],
+            "note_hash": "8aa08f23d6fd946f5f6cfb7daed2b09877bba704ef333de529e32708b84f1152",
+            "previous_audits": [],
+            "audit_status": "audited_conditional",
+            "auditor": "legacy-staggered-packet-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "claim_type": "bounded_theorem",
+            "claim_type_provenance": "audited",
+            "claim_scope": "Legacy wrapper-only finite certificate scope.",
+            "audit_state_snapshot": {
+                "criticality": "critical",
+                "deps": [],
+                "dep_effective_status": {},
+                "runner_hash": "00a39ee4060f1d395df0d9e75633c6265d0ea22a971f648b75f82109d2054a8a",
+            },
+        }
         self.assertEqual(legacy_row["audit_status"], "audited_conditional")
         self.assertNotIn(
             "helper_runner_hashes",

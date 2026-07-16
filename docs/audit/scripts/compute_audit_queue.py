@@ -34,6 +34,9 @@ LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 CYCLE_INVENTORY_PATH = DATA_DIR / "cycle_inventory.json"
 QUEUE_JSON = DATA_DIR / "audit_queue.json"
 QUEUE_MD = REPO_ROOT / "docs" / "audit" / "AUDIT_QUEUE.md"
+PUBLICATION_GAP_PATH = DATA_DIR / "publication_gap.json"
+LANE_MANIFEST_PATH = DATA_DIR / "publication_lane_manifest.json"
+LANE_JSON = DATA_DIR / "audit_publication_lane.json"
 
 CRITICALITY_RANK = {"critical": 3, "high": 2, "medium": 1, "leaf": 0}
 
@@ -153,6 +156,89 @@ def cycle_break_targets(rows: dict[str, dict]) -> list[dict]:
     return targets
 
 
+def _live_conditional_would_park(row: dict, rows: dict[str, dict]) -> tuple[bool, str]:
+    """Shadow-only would-park verdict for a LIVE audited_conditional /
+    non-archived audited_failed row (dispatch-retarget design note,
+    2026-07-16). Lifecycle projection: live rows carry their verdict-time
+    snapshot at the row's top-level audit_state_snapshot. Fail-open: no or
+    empty snapshot dependency map -> not parked. Affects no dispatch
+    decision; reporting only."""
+    snapshot = row.get("audit_state_snapshot") or {}
+    deps_then = snapshot.get("dep_effective_status") or {}
+    if not deps_then:
+        return False, "fail_open_no_snapshot_dep_map"
+    for dep, then_status in deps_then.items():
+        now = (rows.get(dep) or {}).get("effective_status", "MISSING")
+        if now != then_status:
+            return False, f"dep_effective_status_changed:{dep}"
+    for field, snap_field in (
+        ("claim_type", "dep_claim_type"),
+        ("claim_scope", "dep_claim_scope"),
+        ("note_hash", "dep_axiom_premise_note_hash"),
+    ):
+        then_values = snapshot.get(snap_field) or {}
+        for dep, then_value in then_values.items():
+            if dep in rows and rows[dep].get(field) != then_value:
+                return False, f"{snap_field}_changed:{dep}"
+    return True, "no_recorded_blocker_movement"
+
+
+def _load_json_or_none(path: Path):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+def build_publication_lane(pending: list[dict], cycle_targets: list[dict]) -> dict:
+    """Shadow-only publication lane (dispatch-retarget design note,
+    2026-07-16). Lane = pending ∩ (publication gap ∪ primary cycle-break
+    targets), eligibility validated against the tracked manifest, ordered by
+    the FULL main-queue key. The gap file is produced later in the same
+    pipeline pass (publication renderer), so the lane consumes the PREVIOUS
+    pass's gap — a one-pass lag, labeled here. Generated, gitignored,
+    affects no dispatch decision."""
+    gap = _load_json_or_none(PUBLICATION_GAP_PATH)
+    manifest = _load_json_or_none(LANE_MANIFEST_PATH)
+    gap_ids = {e["claim_id"] for e in (gap or {}).get("entries", []) if e.get("claim_id")}
+    target_ids = {t["claim_id"] for t in cycle_targets if t.get("claim_id")}
+    candidate_ids = gap_ids | target_ids
+    admitted = set((manifest or {}).get("admitted", []))
+    lane = [
+        {
+            "claim_id": e["claim_id"],
+            "criticality": e["criticality"],
+            "ready": e["ready"],
+            "transitive_descendants": e["transitive_descendants"],
+            "load_bearing_score": e["load_bearing_score"],
+            "in_publication_gap": e["claim_id"] in gap_ids,
+            "is_primary_cycle_break_target": e["claim_id"] in target_ids,
+            "manifest_admitted": e["claim_id"] in admitted,
+            "would_park": e.get("would_park"),
+        }
+        for e in pending
+        if e["claim_id"] in candidate_ids
+    ]
+    # pending is already sorted by the full main-queue key; lane inherits it.
+    return {
+        "schema_version": 1,
+        "shadow_only": True,
+        "gap_source_lag": "previous pipeline pass (renderer runs after queue)",
+        "gap_available": gap is not None,
+        "manifest_available": manifest is not None,
+        "manifest_frozen_commit": (manifest or {}).get("frozen_commit"),
+        "lane_size": len(lane),
+        "admitted_in_lane": sum(1 for e in lane if e["manifest_admitted"]),
+        "pending_admission": sorted(
+            e["claim_id"] for e in lane if not e["manifest_admitted"]
+        ),
+        "admitted_absent_from_candidates": sorted(
+            admitted - candidate_ids
+        ),
+        "lane": lane,
+    }
+
+
 def main() -> int:
     ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
@@ -196,6 +282,10 @@ def main() -> int:
                 else "any_non_self"
             ),
         }
+        if queue_reason in ("non_terminal_conditional", "non_terminal_failed"):
+            parked, park_reason = _live_conditional_would_park(row, rows)
+            entry["would_park"] = parked
+            entry["would_park_reason"] = park_reason
         pending.append(entry)
 
     pending.sort(
@@ -209,9 +299,22 @@ def main() -> int:
 
     cycle_targets = cycle_break_targets(rows)
 
+    lane_shadow = build_publication_lane(pending, cycle_targets)
+    LANE_JSON.write_text(json.dumps(lane_shadow, indent=1, sort_keys=True) + "\n")
+
     queue = {
         "total_pending": len(pending),
         "ready_count": sum(1 for e in pending if e["ready"]),
+        "shadow_would_park_count": sum(
+            1 for e in pending if e.get("would_park") is True
+        ),
+        "shadow_conditional_fail_open_count": sum(
+            1
+            for e in pending
+            if e.get("would_park") is False
+            and e.get("would_park_reason") == "fail_open_no_snapshot_dep_map"
+        ),
+        "shadow_publication_lane_size": lane_shadow["lane_size"],
         "by_criticality": {
             c: sum(1 for e in pending if e["criticality"] == c)
             for c in ("critical", "high", "medium", "leaf")

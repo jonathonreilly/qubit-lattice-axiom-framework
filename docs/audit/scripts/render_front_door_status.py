@@ -232,6 +232,39 @@ def main() -> None:
                 lines.append(f"| {criticality} | `{status}` | {count} |")
     else:
         lines.append("- Divergence report unavailable.")
+    # Dispatch shadow report (dispatch-retarget design note, 2026-07-16).
+    # Reporting only: nothing here affects any dispatch decision.
+    lane_shadow = load_json(DATA_DIR / "audit_publication_lane.json")
+    queue_summary = load_json(DATA_DIR / "audit_queue.json")
+    lines.extend(["", "## Dispatch Shadow Report (no dispatch effect)", ""])
+    if lane_shadow:
+        lines.append(
+            table(
+                [
+                    ("Publication-lane size (shadow)", lane_shadow.get("lane_size", 0)),
+                    ("Lane rows admitted by manifest", lane_shadow.get("admitted_in_lane", 0)),
+                    ("Lane rows pending admission", len(lane_shadow.get("pending_admission", []))),
+                    ("Live conditional/failed rows that would park", queue_summary.get("shadow_would_park_count", 0)),
+                    ("Live rows fail-open (no snapshot dep map)", queue_summary.get("shadow_conditional_fail_open_count", 0)),
+                ]
+            )
+        )
+        lines.append("")
+        pending_admission = lane_shadow.get("pending_admission", [])
+        if pending_admission:
+            lines.append("Pending manifest admission (visible gaming surface):")
+            for cid in pending_admission[:10]:
+                lines.append(f"- `{cid}`")
+            if len(pending_admission) > 10:
+                lines.append(f"- … and {len(pending_admission) - 10} more")
+            lines.append("")
+        lines.append(
+            "Lane consumes the previous pipeline pass's publication gap "
+            "(renderer runs after the queue). Cutover flags remain OFF; see the "
+            "dispatch-retarget design note's Ratification Log."
+        )
+    else:
+        lines.append("- Shadow lane file unavailable (first pass after landing).")
     lines.extend(
         [
             "",

@@ -1,0 +1,9 @@
+PASS A concrete compact parameter packet has a strict uniform Dobrushin margin: alphas=0.194392,0.374392,0.430719,0.790719, epsilon=0.209281
+PASS One positive exponential weight keeps the full packet influence row below one: weighted alphas=0.204054,0.387690,0.441243,0.808515, lambda=0.010
+PASS Fixed-physical-separation correlations vanish as lattice distance diverges: bounds=7.788008e-01,6.065307e-01,3.678794e-01,1.353353e-01
+PASS Exponential separation beats every tested power-law field normalization: coarse=1.901e+08,9.477e+09,3.679e+11,8.661e+12; asymptotic=1.319e+11,3.014e+00,3.720e-20
+PASS A sampled subexponential normalization cannot cancel the mixing exponential: bounds=5.449e+10,9.875e+08,1.000e+00
+PASS A uniform transfer radius below one gives an inverse-spacing OS gap lower bound: gap lower bounds=1.317006,2.634013,5.268026,10.536052
+PASS The compact-wedge dimensionful bare mass parameter diverges: m/a=145.226,290.453,580.906,1161.812
+PASS Source-note narrow no-go and N1-N8 contract: missing=[]; missing N2 pairs=[]; attempted=8; independent pairs=9
+SCORECARD PASS=8 FAIL=0

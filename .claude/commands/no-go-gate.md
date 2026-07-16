@@ -24,9 +24,10 @@ routes fail; this gate makes that gap explicit.
 1. Read the skill file above before acting, and perform the skill freshness
    check in `docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`.
 2. Walk N1–N8 in writing against the actual claim text: alternative-route
-   enumeration (≥5 distinct routes), wall-independence audit, hidden-wall
-   scan, residual matching, rhetoric audit, partial-closure path scan,
-   steelman, cross-cycle echo.
+   enumeration (≥5 normalized mathematical approach families),
+   wall-independence audit, hidden-wall scan, residual matching, rhetoric
+   audit, partial-closure path scan, concrete-mechanism steelman, cross-cycle
+   echo.
 3. Run the primitive registry check
    (`docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`) before writing
    "no retained primitive supplies this" or any equivalent wall language.

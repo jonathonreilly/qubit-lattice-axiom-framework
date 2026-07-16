@@ -4,6 +4,12 @@ Use route portfolios to avoid tunnel vision and excessive small iteration.
 Generate several routes, then choose the route most likely to move the claim
 state.
 
+For theorem-heavy or multi-step bridge work, also read
+[`proof-search-governance.md`](proof-search-governance.md). This file classifies
+deliverable route types and scores likely value; the proof-search reference
+normalizes mathematical approach families and detects target-equivalent
+terminal obligations. Do not treat artifact type as approach-family diversity.
+
 ## Route Types
 
 - `constructive theorem`: prove the missing bridge on the retained surface.
@@ -59,7 +65,8 @@ After two cycles scoring `0-1`, the next cycle must target a `2-3` route even
 if the expected deliverable is partial progress rather than closure.
 
 Before declaring no route viable, run stuck fan-out across 3-5 orthogonal
-attack frames. Examples:
+attack frames. Use neutral route-local briefs for independent early passes and
+record the normalized families in `APPROACH_REGISTRY.md`. Examples:
 
 - derive from the smallest algebraic surface, with all phenomenological values
   forbidden;
@@ -69,7 +76,8 @@ attack frames. Examples:
 - prove the strongest impossibility theorem for a full route family;
 - build a falsifier that distinguishes two live interpretations.
 
-Record the fan-out in `ROUTE_PORTFOLIO.md` and synthesize why the selected
+Record the fan-out in `ROUTE_PORTFOLIO.md`, record family coverage and
+target-strength gaps in `APPROACH_REGISTRY.md`, and synthesize why the selected
 next route is best.
 
 ## Successful Patterns From This Repo

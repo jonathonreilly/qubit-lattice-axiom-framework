@@ -427,6 +427,9 @@ For the selected claim, read only:
 - `docs/audit/README.md`, `FRESH_LOOK_REQUIREMENTS.md`, `AUDIT_AGENT_PROMPT_TEMPLATE.md`, and `ALGEBRAIC_DECORATION_POLICY.md`.
 
 When writing the verdict, also load `references/nature-grade-rubric.md` from this skill.
+For theorem, proof, or nontrivial reduction claims, also load
+[`../physics-loop/references/proof-search-governance.md`](../physics-loop/references/proof-search-governance.md)
+as audit procedure.
 
 Do not use `CLAIMS_TABLE.md`, `PUBLICATION_MATRIX.md`, `ARXIV_DRAFT.md`, or earlier review summaries to bias the verdict.
 
@@ -448,6 +451,12 @@ Answer these before choosing a verdict:
   second implementation catch the class of error the runner could otherwise
   hide?
 - Is this an independent theorem, or algebraic decoration of an upstream claim?
+- Does the proof match the exact target statement, quantifiers, and required
+  edge cases?
+- Does the proof-obligation graph close without cycles, lost hypotheses, or
+  inadmissible constructed objects?
+- What is the strongest unresolved lemma, and is it weaker than,
+  target-equivalent to, or stronger than the headline claim?
 - Are numerical values current with the runner and the source note?
 - Would a hostile specialist be able to reject the conclusion without making a mistake?
 - If the claim is a `no_go`, a wall-naming `bounded_theorem`, or its rationale would cite walls: have at least 5 distinct attack routes against the no-go been considered (N1)? Are the named walls actually independent (N2)? Are any hidden in "bridge context" / "we assume" / "standard QFT" / "registered" prose (N3)? Do cited witness residuals match the claim's residual (N4)? Are "X is not a Y-fact" phrases verified at every named resolution (N5)? Is the "needs new axiom" framing actually a convention-reframe / labeling ratification (N6)? Can a steelman against the no-go be made convincing (N7)? Has a structurally similar prior wall been retired by a mechanism not considered here (N8)? See `no-go-discipline` skill.
@@ -496,6 +505,13 @@ current claim relies on the wrong expression; use `audited_conditional` with
 may still be true but the artifact is not reliable enough to judge it.
 
 When in doubt, choose the more conservative non-clean verdict.
+
+If a proof or reduction terminates at a target-equivalent or stronger missing
+lemma, do not grant `audited_clean`. Use `audited_conditional`, normally with
+`notes_for_re_audit_if_any: missing_bridge_theorem`, and name both the exact
+terminal obligation and why its strength is comparable to or greater than the
+headline target. If a clean narrow lemma survives independently, state that
+narrow boundary in `claim_scope`.
 
 For claims with `claim_type: no_go`, `bounded_theorem` whose source note names walls/open conditions, or any verdict that would record walls in `verdict_rationale`, apply the No-Go Discipline gate (`no-go-discipline` skill, N1-N8) before recording. Any FAIL forbids `audited_clean`; instead, choose the non-clean verdict whose `verdict_rationale` reflects the corrected narrower claim scope. Specifically:
 

@@ -31,7 +31,10 @@ Examples:
    vocabulary directly.
 4. If subagents are used, require every subagent to perform the same framework
    refresher read and state which refresher surfaces it read before giving
-   conclusions.
+   conclusions. For proof-search fan-out, use neutral route-local briefs,
+   withhold the favored approach and other agents' conclusions during early
+   passes, and require a concrete lemma, construction, equation, falsifier, or
+   exact missing obligation.
 5. State the wall neutrally before proposing routes.
 6. Build the assumptions ledger from approved axioms/primitives upward through
    every explicit and implicit premise used by the stuck lane.
@@ -47,8 +50,9 @@ Examples:
 11. Run the reframing exercise, especially across pre-record/recorded,
    selector/dial, dynamics/kinematics, and central-sector/within-sector
    boundaries.
-12. Synthesize a ranked attack-vector portfolio with first artifacts and stop
-    conditions.
+12. Synthesize a ranked attack-vector portfolio with normalized mathematical
+    approach families, terminal obligations, target-strength relations, first
+    artifacts, and stop/reopen conditions.
 13. If `--artifact` is supplied, write the durable packet under
     `.claude/science/exercises/<slug>/`; otherwise return the structured
     exercise in the response.

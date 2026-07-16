@@ -41,10 +41,12 @@ execution requests even when the user says only `run`.
    `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` and enumerate
    approved primitives from `docs/audit/data/axiom_premise_nodes.json` before
    naming imports, walls, or bounded-status sources.
-7. Generate and score a route portfolio; execute only a route that can move
-   claim state, retire an import, close a blocker, prove a no-go, create a
-   decisive artifact, or make a recorded first-principles stretch attempt on a
-   named hard residual.
+7. Generate and score a route portfolio; for theorem or multi-step bridge
+   targets, also write the exact target contract and maintain
+   `APPROACH_REGISTRY.md` using the skill's proof-search governance reference.
+   Execute only a route that can move claim state, retire an import, close a
+   blocker, prove a no-go, create a decisive artifact, or make a recorded
+   first-principles stretch attempt on a named hard residual.
 8. Apply the skill's pre-PR gates in writing: the V1-V5 Promotion Value Gate
    for any retained-positive proposal, and the N1-N8 No-Go Discipline Gate
    (`no-go-discipline` skill) for any negative claim. Record both in the
@@ -67,8 +69,10 @@ execution requests even when the user says only `run`.
 12. Checkpoint `STATE.yaml`, `TRACE_GATE.md`, and `HANDOFF.md` throughout
    unattended work.
 13. After two audit/no-go/blocker cycles in a row, run a stretch attempt before
-   declaring a route blocked. If stuck, fan out 3-5 orthogonal premises before
-   declaring global queue exhaustion.
+   declaring a route blocked. If stuck, fan out 3-5 orthogonal premises with
+   neutral early briefs, concrete-return requirements, and delayed
+   cross-pollination. Mark routes ending at target-equivalent missing lemmas
+   `blocked-equivalent` until a materially new mechanism appears.
 14. Run `review-loop` after each major artifact unless explicitly disabled.
    Treat review demotions/blockers as block-level demotion/pivot events, not
    campaign stops.

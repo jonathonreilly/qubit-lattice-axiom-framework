@@ -165,6 +165,7 @@ Create or update a durable pack under:
   GOAL.md
   ASSUMPTIONS_AND_IMPORTS.md
   ROUTE_PORTFOLIO.md
+  APPROACH_REGISTRY.md
   OPPORTUNITY_QUEUE.md
   NO_GO_LEDGER.md
   LITERATURE_BRIDGES.md
@@ -180,9 +181,16 @@ Legacy packs under `.claude/science/frontier-workstreams/<slug>/` may be read
 for resume/migration, but new loop state should use `physics-loops`.
 
 Use `STATE.yaml` as the resume surface: current goal, target status, runtime,
-cycle/block count, active route, hard residual being attacked, files touched,
-open imports, no-go routes, trace-gate classification, review findings, PR
-status, next exact action, and stop condition.
+cycle/block count, active route, approach-family coverage, strongest unresolved
+proof obligation, hard residual being attacked, files touched, open imports,
+no-go routes, trace-gate classification, review findings, PR status, next exact
+action, and stop condition.
+
+For theorem, multi-step bridge, or hard-reduction targets, write the exact
+target contract in `GOAL.md` and maintain `APPROACH_REGISTRY.md` using
+[`references/proof-search-governance.md`](references/proof-search-governance.md).
+Keep mathematical approach families separate from artifact types recorded in
+`ROUTE_PORTFOLIO.md`.
 
 Use `OPPORTUNITY_QUEUE.md` in campaign mode. It must rank candidate science
 targets by:
@@ -453,6 +461,11 @@ For publication-facing or quantitative work, also inspect
 5. **Generate route portfolio.** Produce several independent routes and score
    them by likely claim-state movement. See
    [`references/route-patterns.md`](references/route-patterns.md).
+   For theorem, multi-step bridge, or hard-reduction targets, also apply
+   [`references/proof-search-governance.md`](references/proof-search-governance.md):
+   freeze the exact target contract, normalize routes into mathematical
+   approach families, preserve early-round independence, and classify every
+   terminal missing lemma by strength relative to the target.
    When a route will produce a new source note and companion runner,
    use the abstract-algebraic core extraction reference to separate the
    provable algebraic core from imports, numerical checks, and parent
@@ -621,8 +634,16 @@ routes are risky.
 - **Stuck fan-out:** before declaring "no route passes the gate", generate
   3-5 orthogonal premises/attack frames. If the active tool policy and user
   authorization allow parallel agents, run them in parallel; otherwise emulate
-  the fan-out sequentially in separate notes/sections. Synthesize agreements,
-  contradictions, and the best remaining attack.
+  the fan-out sequentially in separate notes/sections. Give early passes
+  neutral route-local briefs without the favored approach or other passes'
+  conclusions. Require concrete lemmas, constructions, equations, falsifiers,
+  or exact missing obligations; synthesize only after the independent passes
+  expose their real strengths and gaps.
+- **Equivalent-obligation block:** when a route terminates at a missing lemma
+  equivalent to or stronger than the target, mark its approach family
+  `blocked-equivalent` in `APPROACH_REGISTRY.md`. Do not keep assigning work to
+  that family until a new invariant, construction, decomposition, premise, or
+  proof mechanism changes the obligation map.
 - **Longer cadence:** checkpoint every `--checkpoint-interval`, but do not turn
   every checkpoint into a polished artifact. Sustained 90-120 minute hard
   attempts are preferred over several shallow audit cycles.
@@ -763,8 +784,9 @@ In short:
 Stop and write a clear `HANDOFF.md` when:
 
 - runtime or max cycles is reached;
-- no route in the refreshed opportunity queue passes the dramatic-step gate
-  **after** the Deep Work Rules have been satisfied for the active target;
+- no route in the refreshed opportunity queue or active approach-family
+  registry passes the dramatic-step gate **after** the Deep Work Rules and any
+  applicable theorem-strength gap tests have been satisfied for the target;
 - **corollary exhaustion**: every remaining ranked opportunity would produce
   only a one-step algebraic corollary of an already-landed campaign cycle
   with no new load-bearing premise. This is a real stop condition, not a
@@ -822,6 +844,9 @@ Report:
 - trace-gate classification and whether the artifact reaches a known blocker
   or is frontier-only;
 - imports retired or newly exposed;
+- mathematical approach families explored and underexplored;
+- strongest rigorously proved lemma plus the exact remaining proof obligation
+  and its strength relation to the target;
 - artifacts created and checks run;
 - review-loop findings and disposition;
 - commits and PRs created, if any;

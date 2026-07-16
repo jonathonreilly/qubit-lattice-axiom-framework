@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/fermion_parity_z2_grading_check.py
-runner_sha256: 0dd5e09c1717b499f24e6b0d12f41510cdbf5649d2193f6613a7bbf75a0f11f4
+runner_sha256: 5f79a73cde6ff6d3be87ce88598566eb6284a094c815aedacd829b6fc5d30027
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================
@@ -58,6 +58,31 @@ TEST 7: [(-1)^Q̂, a_x^† a_y] = 0  (bilinears are Z_2-even)
   max ||[F, a_x^† a_y]|| = 0.000e+00
   STATUS: PASS
 
+------------------------------------------------------------------------
+TEST 8: [H_dyn, Q̂] = 0 implies [H_dyn, F] = 0
+------------------------------------------------------------------------
+  ||[H_number, Q̂]|| = 0.000e+00
+  ||[H_number, F]|| = 0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 9: converse is false (pair dynamics preserves F but not Q̂)
+------------------------------------------------------------------------
+  ||H_pair - H_pair†|| = 0.000e+00
+  ||[H_pair, F]|| = 0.000e+00
+  ||[H_pair, Q̂]|| = 5.657e+00  (nonzero)
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 10: [H_dyn, F] = 0 iff parity-mixing blocks vanish
+------------------------------------------------------------------------
+  commutator/block identity deviation = 0.000e+00
+  parity-projected cross-block norm = 0.000e+00
+  parity-projected ||[H, F]|| = 0.000e+00
+  generic cross-block norm = 1.201e+01  (nonzero)
+  generic ||dF/dt|| = ||i[H, F]|| = 2.403e+01
+  STATUS: PASS
+
 ========================================================================
   Test 1 ((-1)^Q̂ Hermitian):                       PASS
   Test 2 (((-1)^Q̂)² = I involution):                PASS
@@ -66,6 +91,9 @@ TEST 7: [(-1)^Q̂, a_x^† a_y] = 0  (bilinears are Z_2-even)
   Test 5 (Z_2 grading dim balance):                 PASS
   Test 6 (ladder operator is Z_2-odd: {F, a_x} = 0): PASS
   Test 7 (bilinear a_x^† a_y is Z_2-even):           PASS
+  Test 8 (number conservation implies parity):         PASS
+  Test 9 (parity does not imply number conservation):  PASS
+  Test 10 ([H, F] iff no parity-mixing blocks):         PASS
   OVERALL: PASS
 
 ----- stderr -----

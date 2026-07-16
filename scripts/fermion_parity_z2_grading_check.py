@@ -9,7 +9,8 @@ acting on the framework's N-site Fock space H = ⊗_{x=1}^N C².
 
 Then:
   (P1) (-1)^Q̂ is unitary and Hermitian (its own inverse): ((-1)^Q̂)² = I
-  (P2) (-1)^Q̂ commutes with any Z_2-even Hamiltonian (conditional dynamics)
+  (P2) [H_dyn, F] = 0 is necessary and sufficient for parity conservation;
+       [H_dyn, Q̂] = 0 is a sufficient, but not necessary, stronger condition
   (P3) Spec((-1)^Q̂) = {+1, -1}
   (P4) Z_2 grading: H = H_even ⊕ H_odd with dim H_even = dim H_odd = 2^{N-1}
   (P5) Local ladder operator a_x is Z_2-odd: (-1)^Q̂ a_x (-1)^Q̂ = -a_x
@@ -26,6 +27,9 @@ Tests:
   (T5) Z_2-grading dim balance: dim H_even = dim H_odd = 2^{N-1}
   (T6) Z_2-odd action on a_x: {(-1)^Q̂, a_x} = 0
   (T7) Z_2-even action on bilinears: [(-1)^Q̂, a_x^† a_y] = 0
+  (T8) [H_dyn, Q̂] = 0 implies [H_dyn, F] = 0 on a number-conserving H
+  (T9) converse negative control: a pair Hamiltonian commutes with F, not Q̂
+  (T10) [H_dyn, F] = 0 iff the parity-mixing blocks (and dF/dt) vanish
 """
 from __future__ import annotations
 
@@ -185,6 +189,77 @@ def main() -> None:
     print(f"  STATUS: {'PASS' if t7_ok else 'FAIL'}")
     print()
 
+    # ----- Test 8: number conservation is sufficient for parity conservation -----
+    print("-" * 72)
+    print("TEST 8: [H_dyn, Q̂] = 0 implies [H_dyn, F] = 0")
+    print("-" * 72)
+    a_at = [at_site(a_op, x) for x in range(N)]
+    a_dag_at = [at_site(a_dag, x) for x in range(N)]
+    H_number = a_dag_at[0] @ a_at[1] + a_dag_at[1] @ a_at[0]
+    number_q_comm = np.linalg.norm(H_number @ Q_total - Q_total @ H_number)
+    number_f_comm = np.linalg.norm(H_number @ F - F @ H_number)
+    print(f"  ||[H_number, Q̂]|| = {number_q_comm:.3e}")
+    print(f"  ||[H_number, F]|| = {number_f_comm:.3e}")
+    t8_ok = number_q_comm < 1e-12 and number_f_comm < 1e-12
+    print(f"  STATUS: {'PASS' if t8_ok else 'FAIL'}")
+    print()
+
+    # ----- Test 9: parity conservation does not imply number conservation -----
+    print("-" * 72)
+    print("TEST 9: converse is false (pair dynamics preserves F but not Q̂)")
+    print("-" * 72)
+    H_pair = a_dag_at[0] @ a_dag_at[1] + a_at[1] @ a_at[0]
+    pair_f_comm = np.linalg.norm(H_pair @ F - F @ H_pair)
+    pair_q_comm = np.linalg.norm(H_pair @ Q_total - Q_total @ H_pair)
+    pair_herm_dev = np.linalg.norm(H_pair - H_pair.conj().T)
+    print(f"  ||H_pair - H_pair†|| = {pair_herm_dev:.3e}")
+    print(f"  ||[H_pair, F]|| = {pair_f_comm:.3e}")
+    print(f"  ||[H_pair, Q̂]|| = {pair_q_comm:.3e}  (nonzero)")
+    t9_ok = (
+        pair_herm_dev < 1e-12
+        and pair_f_comm < 1e-12
+        and pair_q_comm > 1e-10
+    )
+    print(f"  STATUS: {'PASS' if t9_ok else 'FAIL'}")
+    print()
+
+    # ----- Test 10: exact necessary-and-sufficient parity criterion -----
+    print("-" * 72)
+    print("TEST 10: [H_dyn, F] = 0 iff parity-mixing blocks vanish")
+    print("-" * 72)
+    P_even = 0.5 * (Iden + F)
+    P_odd = 0.5 * (Iden - F)
+    rng = np.random.default_rng(20260715)
+    raw = rng.standard_normal((dim, dim)) + 1j * rng.standard_normal((dim, dim))
+    H_trial = 0.5 * (raw + raw.conj().T)
+    even_to_odd = P_even @ H_trial @ P_odd
+    odd_to_even = P_odd @ H_trial @ P_even
+    trial_comm = H_trial @ F - F @ H_trial
+    block_identity_dev = np.linalg.norm(
+        trial_comm - 2.0 * (odd_to_even - even_to_odd)
+    )
+    H_parity = P_even @ H_trial @ P_even + P_odd @ H_trial @ P_odd
+    projected_cross_norm = np.linalg.norm(
+        P_even @ H_parity @ P_odd + P_odd @ H_parity @ P_even
+    )
+    projected_comm_norm = np.linalg.norm(H_parity @ F - F @ H_parity)
+    trial_cross_norm = np.linalg.norm(even_to_odd + odd_to_even)
+    heisenberg_derivative_norm = np.linalg.norm(1j * trial_comm)
+    print(f"  commutator/block identity deviation = {block_identity_dev:.3e}")
+    print(f"  parity-projected cross-block norm = {projected_cross_norm:.3e}")
+    print(f"  parity-projected ||[H, F]|| = {projected_comm_norm:.3e}")
+    print(f"  generic cross-block norm = {trial_cross_norm:.3e}  (nonzero)")
+    print(f"  generic ||dF/dt|| = ||i[H, F]|| = {heisenberg_derivative_norm:.3e}")
+    t10_ok = (
+        block_identity_dev < 1e-12
+        and projected_cross_norm < 1e-12
+        and projected_comm_norm < 1e-12
+        and trial_cross_norm > 1e-10
+        and heisenberg_derivative_norm > 1e-10
+    )
+    print(f"  STATUS: {'PASS' if t10_ok else 'FAIL'}")
+    print()
+
     print("=" * 72)
     print(f"  Test 1 ((-1)^Q̂ Hermitian):                       {'PASS' if t1_ok else 'FAIL'}")
     print(f"  Test 2 (((-1)^Q̂)² = I involution):                {'PASS' if t2_ok else 'FAIL'}")
@@ -193,7 +268,21 @@ def main() -> None:
     print(f"  Test 5 (Z_2 grading dim balance):                 {'PASS' if t5_ok else 'FAIL'}")
     print(f"  Test 6 (ladder operator is Z_2-odd: {{F, a_x}} = 0): {'PASS' if t6_ok else 'FAIL'}")
     print(f"  Test 7 (bilinear a_x^† a_y is Z_2-even):           {'PASS' if t7_ok else 'FAIL'}")
-    all_ok = all([t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok, t7_ok])
+    print(f"  Test 8 (number conservation implies parity):         {'PASS' if t8_ok else 'FAIL'}")
+    print(f"  Test 9 (parity does not imply number conservation):  {'PASS' if t9_ok else 'FAIL'}")
+    print(f"  Test 10 ([H, F] iff no parity-mixing blocks):         {'PASS' if t10_ok else 'FAIL'}")
+    all_ok = all([
+        t1_ok,
+        t2_ok,
+        t3_ok,
+        t4_ok,
+        t5_ok,
+        t6_ok,
+        t7_ok,
+        t8_ok,
+        t9_ok,
+        t10_ok,
+    ])
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     if not all_ok:
         raise SystemExit(1)

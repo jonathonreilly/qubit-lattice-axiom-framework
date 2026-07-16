@@ -2,8 +2,8 @@
 
 **Date:** 2026-05-02
 **Type:** positive_theorem
-**Claim scope:** given a finite occupation/Fock representation built from
-one-qubit factors,
+**Claim scope:** given a finite `N >= 1` occupation/Fock representation built
+from one-qubit factors,
 `H = tensor_x C^2`, define the total number operator directly by
 `Q_hat_total = sum_x n_hat_x` with `n_hat_x = a_x^dagger a_x`, and define
 the occupation-parity operator
@@ -13,6 +13,10 @@ unitary involution that gives the Fock space a `Z_2` grading
 Single-site ladder operators `a_x`, `a_x^dagger` are
 `Z_2`-odd (`{F, a_x} = 0`); bilinears `a_x^dagger a_y` and the
 number operators `n_hat_x` are `Z_2`-even (`[F, a_x^dagger a_y] = 0`).
+For time-independent dynamics, `[H_dyn, F] = 0` is necessary and sufficient
+for occupation-parity conservation. Total-number conservation is a stronger
+sufficient condition: `[H_dyn, Q_hat_total] = 0` implies `[H_dyn, F] = 0`,
+but the converse is false in general.
 This algebraic grading is independent of the lattice-Noether current row and
 does not by itself prove a physical fermion-statistics selector or
 superselection rule.
@@ -23,7 +27,7 @@ audit pipeline after independent review.
 **Cycle:** 1 (Block 1)
 **Branch:** `physics-loop/positive-only-r8-block01-fermion-parity-20260502`
 **Runner:** `scripts/fermion_parity_z2_grading_check.py`
-**Log:** `outputs/fermion_parity_z2_grading_check_2026-05-02.txt`
+**Log:** `logs/runner-cache/fermion_parity_z2_grading_check.txt`
 
 ## Cited authorities (one hop)
 
@@ -95,11 +99,19 @@ Equivalently F a_x F^{-1} = -a_x.
 
 In particular [F, n̂_x] = 0 and [F, Q̂_total] = 0.
 
-**(F8) Conditional conservation by `Z_2`-even dynamics.** If a Hamiltonian
-`H_dyn` is built only from `Z_2`-even monomials, equivalently
-`[H_dyn, Q_hat_total] = 0` or directly `[H_dyn, F] = 0`, then occupation parity
-is conserved. This branch does not use the lattice-Noether row to prove the
-dynamical premise.
+**(F8) Exact parity-conservation criterion and a sufficient stronger
+condition.** For a time-independent Hamiltonian `H_dyn`, occupation parity is
+conserved if and only if `[H_dyn, F] = 0`. In particular, a Hamiltonian built
+only from `Z_2`-even monomials commutes with `F`. If a separate dynamics theorem
+instead supplies total-number conservation, then
+
+```text
+    [H_dyn, Q_hat_total] = 0  implies  [H_dyn, F] = 0.                       (5)
+```
+
+The converse implication is false: parity-preserving dynamics may change
+`Q_hat_total` by an even integer. This branch does not use the lattice-Noether
+row to supply either dynamical premise.
 
 ## Proof
 
@@ -181,10 +193,37 @@ In particular n̂_x = a_x^† a_x and Q̂_total = Σ n̂_x are Z_2-even.
 
 If a Hamiltonian `H_dyn` is a sum of `Z_2`-even local monomials, then every
 term commutes with `F` by Step 7 and multiplicativity of the parity action.
-Equivalently, if a separate dynamics theorem supplies `[H_dyn, Q_hat_total] =
-0`, then `[H_dyn, F] = 0` because `F` is a function of `Q_hat_total`.
-Thus conservation of `F` follows from a Z_2-even dynamics premise, while the
-Z_2 grading itself is already established by Steps 1-7. ∎
+
+More generally, for time-independent `H_dyn` and
+`U(t) = exp(-i t H_dyn)`, parity conservation means
+`U(t)^dagger F U(t) = F` for every `t`. If `[H_dyn, F] = 0`, then `U(t)`
+commutes with `F`, so parity is conserved. Conversely, differentiating the
+conservation identity at `t = 0` gives
+
+```text
+    d/dt (U(t)^dagger F U(t)) |_(t=0)  =  i [H_dyn, F]  =  0,              (6)
+```
+
+so `[H_dyn, F] = 0` is also necessary.
+
+If a separate dynamics theorem supplies `[H_dyn, Q_hat_total] = 0`, then
+`H_dyn` commutes with every power of `Q_hat_total` and hence with
+`F = exp(i pi Q_hat_total)`. Therefore
+`[H_dyn, Q_hat_total] = 0` implies `[H_dyn, F] = 0`.
+
+The reverse implication does not hold. For `N >= 2`, define
+
+```text
+    H_pair := a_1^dagger a_2^dagger + a_2 a_1 .                            (7)
+```
+
+Both terms contain two `Z_2`-odd ladder operators, so `[H_pair, F] = 0`.
+But `H_pair` connects occupation sectors whose `Q_hat_total` eigenvalues
+differ by two; explicitly
+`[Q_hat_total, H_pair] = 2 a_1^dagger a_2^dagger - 2 a_2 a_1 != 0`.
+Thus total-number conservation is sufficient but not necessary for parity
+conservation. The grading itself remains established by Steps 1-7, independent
+of any supplied dynamics or carrier identification. ∎
 
 ## Hypothesis set used
 
@@ -202,26 +241,31 @@ C1. **Algebraic parity grading.** `Z_2`-even operators preserve parity sectors;
 even subalgebra is a separate superselection or statistics premise, not proved
 by this row.
 
-C2. **Hamiltonian parity test.** A framework Hamiltonian that is built from
-Z_2-even local terms preserves occupation parity (`[F, H] = 0`). Single
-ladder terms `a_x` or `a_x^dagger` alone are Z_2-odd and fail this algebraic
-test.
+C2. **Hamiltonian parity test.** For time-independent dynamics, a framework
+Hamiltonian preserves occupation parity if and only if `[F, H] = 0`. A
+Hamiltonian built from `Z_2`-even local terms passes this test. Single ladder
+terms `a_x` or `a_x^dagger` alone are `Z_2`-odd and fail it.
 
-C3. **Relation to a Bose/Fermi grading.** If a separate retained physical
+C3. **Number conservation is stronger than parity conservation.**
+`[H, Q_hat_total] = 0` guarantees `[H, F] = 0`, but pair terms such as
+`a_1^dagger a_2^dagger + a_2 a_1` preserve `F` while changing
+`Q_hat_total` by two.
+
+C4. **Relation to a Bose/Fermi grading.** If a separate retained physical
 statistics rule identifies this algebraic `Z_2` grading with fermion parity,
 then even operators are bosonic under that rule and odd operators are
 fermionic. This row proves only the algebraic grading.
 
-C4. **Connection to spin-statistics remains conditional.** A future retained
+C5. **Connection to spin-statistics remains conditional.** A future retained
 spin-statistics, graded-locality, or fermion-parity superselection theorem
 could use this `Z_2` grading as its algebraic carrier. This note does not
 derive that physical selector.
 
-C5. **Half-and-half decomposition.** Of the 2^N Fock-space states, exactly
+C6. **Half-and-half decomposition.** Of the 2^N Fock-space states, exactly
 half (2^{N-1}) are in each parity sector. This is the maximally balanced
 splitting, reflecting the `Z_2` parity freedom of the occupation algebra.
 
-C6. **Algebraic transition rule.** Any matrix element ⟨Ψ|O|Φ⟩ where
+C7. **Algebraic transition rule.** Any matrix element ⟨Ψ|O|Φ⟩ where
 Ψ ∈ H_even and Φ ∈ H_odd vanishes when `O` is `Z_2`-even; odd operators can
 connect opposite parity sectors. A physical transition-selection rule requires
 an additional dynamics/observable premise.
@@ -233,11 +277,13 @@ elementary spectral functional calculus and Pauli-anticommutation algebra on
 the finite occupation/Fock space. The runner exhibits hermiticity,
 involution F² = I, spectrum {+1, -1}, dimension balance 2^{N-1}, the
 σ_3-product formula F = tensor_x σ_{3, x}, and the Z_2-odd / Z_2-even action
-on ladder operators / bilinears — all at machine precision.
+on ladder operators / bilinears, the sufficient implication from total-number
+conservation, the exact parity-conservation criterion, and a counterexample to
+the converse implication — all at machine precision.
 
 ```yaml
 claim_type_author_hint: positive_theorem
-claim_scope: "F = (-1)^Q_hat_total is Hermitian unitary involution; H = H_even direct_sum H_odd Z_2 grading; ladder operators are Z_2-odd; bilinears Z_2-even; conservation is conditional on Z_2-even dynamics; no physical fermion-statistics selector or superselection rule is proved."
+claim_scope: "For finite N >= 1, F = (-1)^Q_hat_total is a Hermitian unitary involution; H = H_even direct_sum H_odd is a balanced Z_2 grading; ladder operators are Z_2-odd and bilinears Z_2-even; for time-independent dynamics [H_dyn,F] = 0 is necessary and sufficient for parity conservation, while [H_dyn,Q_hat_total] = 0 is sufficient but not necessary; no physical fermion-statistics selector or superselection rule is proved."
 upstream_dependencies: []
 admitted_context_inputs:
   - spectral functional calculus (basic finite-dim spectral theorem)

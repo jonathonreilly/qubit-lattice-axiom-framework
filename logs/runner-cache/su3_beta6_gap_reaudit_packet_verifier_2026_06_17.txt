@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.py
-runner_sha256: b2fef5622432d13298c6c39339060da63e7044d5fff1891603bc45ae1df2b6a1
+runner_sha256: 7a4b4cc30f9e4bbc5fcc54dac57af4c1a8d352ddbc51d2b9ce6ee057256f7051
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 SU(3) beta=6 conditional gap restricted packet verifier
@@ -41,11 +41,11 @@ PASS Wilson transfer note records 'positive semidefinite'
 PASS Wilson transfer note records 'reflection-positivity theorem for the full interacting'
 PASS Wilson transfer note records 'does NOT close the full interacting reflection positivity'
 PASS Wilson transfer note records 'gauge kernel alone'
-PASS RP bridge records 'Wilson Plaquette Temporal-Gauge Bridge'
-PASS RP bridge records "does not set the target row's status"
-PASS RP bridge records 'does **not** mean a full interacting `SU(N)` proof'
-PASS RP bridge records 'bosonic half'
-PASS RP bridge records 'plane-kernel positivity'
+PASS RP bridge records 'finite-volume `SU(N)` Wilson temporal-gauge bridge'
+PASS RP bridge records 'does not set, apply, or predict an audit outcome'
+PASS RP bridge records 'does not include the fermionic generators'
+PASS RP bridge records 'finite-volume, two-slice, pure-gauge Wilson plane'
+PASS RP bridge records 'Positive plane kernel'
 PASS RP sign repair records 'Sign Repair'
 PASS RP sign repair records 'sign** of the weight'
 PASS RP sign repair records 'antilinearity'
@@ -82,8 +82,8 @@ PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gau
 PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt records runner path -- runner=scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
 PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt exits zero -- exit_code=0
 PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt status ok -- status=ok
-PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt sha matches source -- cache=e577d695e122c88f8fc6ef8cccae52110cae196c2a76a181af3a40366642e1d0, live=e577d695e122c88f8fc6ef8cccae52110cae196c2a76a181af3a40366642e1d0
-PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt contains 'TOTAL: 16 PASS / 0 FAIL'
+PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt sha matches source -- cache=90c5a959f72e4ee9f6236af0c6305fa4a803671acb75bce2388e22cd2919193c, live=90c5a959f72e4ee9f6236af0c6305fa4a803671acb75bce2388e22cd2919193c
+PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt contains 'TOTAL: 25 PASS / 0 FAIL'
 PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt contains 'integrated three-factor RP Gram PSD'
 PASS scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py exists
 PASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt exists

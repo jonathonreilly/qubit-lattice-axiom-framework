@@ -1,27 +1,22 @@
 # Artifact Plan
 
-## Block 01 — landed
-
-The finite-volume gauge transfer positivity repair landed through PR 5398 at
-science commit `fe6586b0985956a245ba9eb93a93912373abb55d`.
-
-## Block 02 — active
-
-1. Rewrite the Wilson temporal-gauge bridge around the exact `SU(N)`
-   representation-ring coefficient proof.
-2. Add the independent real-Gram/Schur-power positive-type proof.
-3. Extend the paired runner with:
-   - nonnegative Wilson exponential scalar weights;
-   - exact `SU(3)` `(3 ⊕ 3bar)^tensor n` multiplicities;
-   - exact dimension sums `6^n`;
-   - exact order-two decomposition;
-   - nonnegative truncated coefficient sums;
-   - deterministic positive- and negative-coupling `SU(3)` kernel controls.
-4. Refresh the runner cache and verify its SHA.
-5. Run independent manual/second-implementation checks.
-6. Run review-loop fan-out, apply only narrow fixes, and re-review changed
+1. Rewrite
+   `docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`
+   with the exact positive-type, gauge-projector, transfer-trace, spatial
+   insertion, repeated-source, and source-algebra intertwiner proofs.
+2. Replace the paired runner with discriminating checks of:
+   - low-order exact `SU(3)` tensor-power multiplicities;
+   - sampled `SU(3)` Wilson Gram positivity and a negative-coupling control;
+   - exhaustive nonabelian finite-group gauge projection and `M Q M`
+     positivity;
+   - exact finite-group transfer trace and spatial insertion;
+   - symmetric repeated-source sandwich;
+   - plaquette-holonomy pullback isometry;
+   - pointwise-positive symmetric non-PSD counterexample.
+3. Refresh the runner cache.
+4. Run independent manual/second-implementation math checks.
+5. Run review-loop reviewer fan-out, fix or demote, and re-review only changed
    files.
-7. Run disposable pipeline/lint compatibility checks, then remove every
-   generated audit/ledger/queue/effective-status output.
-8. Commit, push, and open one block-02 review PR. Never merge it from this
-   campaign worker.
+6. Run disposable pipeline/lint compatibility validation, then restore all
+   generated audit surfaces from `origin/main`.
+7. Commit, push, and open one block-01 review PR. Do not merge.

@@ -248,13 +248,16 @@ def u1_rp_gram(beta: float, Ls: int = 2, K: int = 24):
     return ev, herm_err
 
 
-def bessel_i_positive_series_interval(beta: float, n: int, terms: int = 36):
-    """Return a rigorous positive-series interval for I_n(beta).
+def bessel_i_positive_series_estimate(beta: float, n: int, terms: int = 36):
+    """Return floating partial-sum and tail estimates for I_n(beta).
 
     I_n(beta) = sum_{k>=0} (beta/2)^{2k+n}/(k!(k+n)!).
     All summands are nonnegative for beta >= 0, so any finite partial sum is
     a positive lower bound.  The remaining positive tail is bounded by a
-    geometric majorant once the next-term ratio is < 1.
+    geometric majorant once the next-term ratio is < 1. The returned values
+    are ordinary binary-float estimates, not directed-rounding enclosures;
+    the exact positivity statement comes from the displayed positive-term
+    series itself.
     """
     if beta < 0:
         raise ValueError("positive-series certificate assumes beta >= 0")
@@ -268,9 +271,14 @@ def bessel_i_positive_series_interval(beta: float, n: int, terms: int = 36):
 
     ratio = (half * half) / ((terms + 1) * (terms + n + 1))
     if ratio >= 1.0:
-        raise ValueError("increase terms for a rigorous Bessel tail bound")
+        raise ValueError("increase terms for a convergent Bessel tail estimate")
     tail = term / (1.0 - ratio)
     return lower, lower + tail, tail
+
+
+# Backward-compatible import name used by the composed-Gram diagnostic. The
+# returned tuple is a floating estimate, not a directed-rounding enclosure.
+bessel_i_positive_series_interval = bessel_i_positive_series_estimate
 
 
 def u1_plane_kernel_bessel_coeffs(beta: float, nmax: int = 8, terms: int = 36):
@@ -282,7 +290,7 @@ def u1_plane_kernel_bessel_coeffs(beta: float, nmax: int = 8, terms: int = 36):
     series and an explicit positive tail bound.
     """
     return {
-        n: bessel_i_positive_series_interval(beta, n, terms=terms)
+        n: bessel_i_positive_series_estimate(beta, n, terms=terms)
         for n in range(-nmax, nmax + 1)
     }
 
@@ -549,14 +557,14 @@ def main() -> int:
     min_lo = min(bounds[0] for bounds in co.values())
     max_tail = max(bounds[2] for bounds in co.values())
     check(
-        "(B4) U(1) plane-kernel coeffs c_n=I_n(beta) have positive lower bounds",
+        "(B4) U(1) positive-term series gives positive coefficient partial sums",
         min_lo > 0.0,
-        detail=f"min lower bound for n in [-8,8] = {min_lo:.6e}",
+        detail=f"min floating partial sum for n in [-8,8] = {min_lo:.6e}",
     )
     check(
-        "(B5) U(1) Bessel certificate has tiny positive tail intervals",
+        "(B5) U(1) Bessel floating tail estimates are tiny",
         max_tail < 1e-60,
-        detail=f"max positive tail bound for n in [-8,8] = {max_tail:.2e}",
+        detail=f"max floating tail estimate for n in [-8,8] = {max_tail:.2e}",
     )
     # symmetry c_n = c_{-n} follows from the absolute-index positive series.
     sym_cn = max(abs(co[n][0] - co[-n][0]) for n in range(1, 9))

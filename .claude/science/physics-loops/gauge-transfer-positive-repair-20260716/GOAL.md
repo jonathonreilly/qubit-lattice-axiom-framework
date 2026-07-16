@@ -1,40 +1,26 @@
 # Goal
 
-The campaign's primary gauge-transfer repair landed through
-[PR 5398](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5398).
+Repair the post-audit failure of
+`gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` without
+touching audit authority surfaces.
 
-Block 02 addresses:
+The exact current repair target is:
 
-`axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05`.
+> Re-audit after adding a finite-lattice positive-type or reflection-positivity derivation for the stated kernel and verifying the marked spatial-plaquette insertion formula on that positive transfer operator.
 
-The exact prior conditional audit instruction was:
+The coherent block aims to prove, self-containedly on the finite periodic
+pure-gauge `SU(3)` Wilson surface:
 
-> scope_too_broad: clean finite/abelian bounded core exists for Z_N and the
-> U(1) plane kernel, with a U(1) quadrature cross-check and SU(2) numeric
-> sample, but the source also relies on a general SU(N)/SU(3) Wilson-plane
-> character-coefficient positivity step not proved or retained in this packet.
-> Re-audit would require either narrowing the claim to the runner-witnessed
-> tractable surface or adding a retained theorem proving the needed SU(N)
-> Wilson-plane positive character-kernel/integrated Gram statement.
+1. the one-link Wilson weight has nonnegative character coefficients;
+2. the product convolution commutes with the spatial gauge projector;
+3. the gauge-integrated mixed kernel is positive semidefinite;
+4. the full transfer operator has the exact Gram factorization
+   `T_beta = M_beta Q_beta M_beta`;
+5. a marked spatial plaquette is a bounded multiplication insertion;
+6. the plaquette-holonomy pullback is an isometric intertwiner for the
+   multiplication/character-recurrence algebra;
+7. no transfer-invariant source-sector or mixed-plaquette multiplication claim
+   is made without a separate theorem.
 
-The active review queue gives the constructive repair:
-
-> expanding `exp[(beta/2N)(chi_R + chi_Rbar)]` gives positive powers of
-> `R direct-sum Rbar`, and tensor-power decomposition has nonnegative integer
-> irrep multiplicities.
-
-Block 02 proves self-containedly:
-
-1. `exp(alpha Re chi_R)` has nonnegative character coefficients given by
-   tensor-power multiplicities;
-2. the `SU(N)` fundamental Wilson plane kernel is positive semidefinite for
-   every `N>=2` and `beta>=0`;
-3. an independent real-Gram/Schur-power proof reaches the same positive type;
-4. the finite product-link plane kernel and half weights give the exact
-   integrated Gram for bounded gauge-link plus-slice observables, including
-   the source-local pure-gauge `A_+^(2)` surface but not the mixed
-   gauge--fermion parent algebra;
-5. the result remains a finite open-slab pure-gauge theorem with no fermion,
-   multislice, transfer-reconstruction, or continuum claim.
-
-No durable audit, ledger, queue-outcome, or effective-status surface is edited.
+No numeric `P(6)`, Perron state, thermodynamic limit, or repo-wide status
+weaving is in scope.

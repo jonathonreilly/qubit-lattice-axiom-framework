@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_wigner_intertwiner_engine.py
-runner_sha256: 23db94b78c85f167b7a0daebe428c61643d441c4532cdca8bd6826ddac034d6e
+runner_sha256: cb1f049a06ee6fe767cabebbb3839350b9d032342bac5b8b6649282a05d42d99
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -13,66 +13,87 @@ SU(3) Wigner Intertwiner Engine — Block 1: (1,1) ⊗ (1,1) CG
 --- Section A: Gell-Mann basis + structure constants ---
   f antisymmetry error: 0.000e+00
   d symmetry error:     0.000e+00
-  PASS: structure constants satisfy expected symmetries.
-
   Standard structure constant values:
     f[123] = 1.000000  (expected 1.000000)  [OK]
     f[345] = 0.500000  (expected 0.500000)  [OK]
     f[458] = 0.866025  (expected 0.866025)  [OK]
-  PASS: standard nonzero f_abc spot checks match.
+  PASS: structure constants have the required permutation symmetries and normalization.
 
---- Section B: adjoint generators + quadratic Casimir ---
-  T^a Hermiticity error: 0.000e+00
+--- Section B: adjoint generators + canonical Casimir convention ---
+  T^a Hermiticity error:       0.000e+00
   Lie algebra commutator error: 3.331e-16
-  PASS: adjoint generators satisfy Hermiticity + Lie algebra.
-  C_2 on (1,1) adjoint eigenvalues: [3.0]
-  PASS: all C_2 eigenvalues = 3 (matches SU(3) (1,1) Casimir).
+  PASS: adjoint generators are Hermitian and satisfy [T^a,T^b]=i f_abc T^c.
+  C_2((1,1)) scalar error from 3: 1.332e-15
+  C_3((1,1)) scalar error from 0: 2.776e-16
+  PASS: adjoint Casimirs match C2(1,1)=3 and C3(1,1)=0.
 
---- Section C: tensor product Casimir + exchange operator ---
-  Exchange E^2 - I error: 0.000e+00
-  PASS: exchange operator satisfies E^2 = I.
+  Independent cubic-Casimir sign anchor:
+    Formula: C3(p,q)=(p-q)(2p+q+3)(p+2q+3)/18
+    direct fundamental matrices:     C3(1,0)  = +10/9
+    direct antifundamental matrices: C3(0,1)  = -10/9
+    formula decuplet:     (C2,C3)=(6,9)
+    formula antidecuplet: (C2,C3)=(6,-9)
+  PASS: fundamental matrices anchor the formula sign, so (3,0) has C3=+9 and (0,3) has C3=-9.
+
+--- Section C: tensor-product commuting operators ---
+  max Hermiticity error:             1.332e-15
+  exchange involution ||E²-I||_max:  0.000e+00
+  max pairwise commutator error:      8.882e-15
+  PASS: C2, exchange, and C3 are numerically Hermitian commuting operators with E²=I.
 
 --- Section D: CG decomposition via simultaneous diagonalization ---
   Diagonalizing H = C_2_total + α E + β C_3_total
   α = sqrt(2) = 1.414214, β = sqrt(3)/7 = 0.247436
-  Number of unique eigenvalue clusters: 6
-  (eigenvalue, multiplicity) pairs:
-    H =      1.4142  multiplicity   1
-    H =      1.5858  multiplicity   8
-    H =      2.3589  multiplicity  10
-    H =      4.4142  multiplicity   8
-    H =      6.8127  multiplicity  10
-    H =      9.4142  multiplicity  27
+  six matched dimensions: [1, 8, 8, 10, 10, 27]; total=64
+  eigensolver orthonormality ||V†V-I||_max: 1.776e-15
+  PASS: floating-point H spectrum has six separated clusters with ranks 1,8,8,10,10,27.
+  PASS: the returned floating-point CG eigenbasis is orthonormal within tolerance.
 
-  Total dimension: 64  (expected 64)
-  PASS: dimensions sum to 64 = 8 × 8.
+--- Section E: simultaneous-channel spectral projectors ---
+      1 (0,0) rank= 1: H= 1.4142136, observed (C2,E,C3)=(-0.00000000,+1.00000000,-0.00000000); expected=(0,+1,+0)
+    8_a (1,1) rank= 8: H= 1.5857864, observed (C2,E,C3)=( 3.00000000,-1.00000000,-0.00000000); expected=(3,-1,+0)
+  10bar (0,3) rank=10: H= 2.3588640, observed (C2,E,C3)=( 6.00000000,-1.00000000,-9.00000000); expected=(6,-1,-9)
+    8_s (1,1) rank= 8: H= 4.4142136, observed (C2,E,C3)=( 3.00000000,+1.00000000,-0.00000000); expected=(3,+1,+0)
+     10 (3,0) rank=10: H= 6.8127089, observed (C2,E,C3)=( 6.00000000,-1.00000000,+9.00000000); expected=(6,-1,+9)
+     27 (2,2) rank=27: H= 9.4142136, observed (C2,E,C3)=( 8.00000000,+1.00000000,-0.00000000); expected=(8,+1,+0)
+  PASS: all six spectral projectors are Hermitian, idempotent, have the expected ranks, and carry the expected scalar (C2,E,C3) data.
+  max pairwise projector product: 1.141e-16
+  completeness ||ΣP-I||_max:      7.772e-16
+  PASS: the six projectors are pairwise orthogonal and complete.
 
---- Section F: verify (1,1) ⊗ (1,1) = 1 + 8 + 8 + 10 + 10̄ + 27 ---
-  Expected dimensions (sorted): [1, 8, 8, 10, 10, 27]
-  Actual dimensions (sorted):   [1, 8, 8, 10, 10, 27]
-  PASS: 6 channels with correct dimensions.
+--- Section F: independent invariant-polynomial projectors ---
+  max |P_polynomial-P_eigensolver|: 1.554e-15
+  polynomial completeness error:    2.442e-15
+  PASS: independent commuting-operator polynomials reproduce all six eigensolver projectors.
 
---- Section G: orthonormality of CG eigenbasis ---
-  ||V^† V - I|| = 1.998e-15
-  PASS: CG basis is orthonormal.
+--- Section G: hostile controls ---
+  old swapped-label residuals: 10→C3=-9 gives 18.0; 10bar→C3=+9 gives 18.0
+  C2+E-only decuplet projector: rank=20, C3 range=[-9.00000000,9.00000000], total clusters=5
+  PASS: hostile controls reject the old swapped labels and reject C2+E as a six-channel identifier.
 
---- Section H: SU(3) equivariance of channel decomposition ---
-  ||[D⊗D, C_total]|| = 1.333e-15
-  ||[D⊗D, E]|| = 3.081e-33
-  PASS: D⊗D commutes with both Casimir and exchange.
+--- Section H: deterministic SU(3) equivariance witnesses ---
+  seed= 11: C2=1.34e-15 E=3.08e-33 C3=1.56e-15; 1=3.00e-16 8_a=1.06e-15 8_s=5.06e-16 10=5.99e-16 10bar=1.01e-15 27=7.72e-16
+  seed= 29: C2=1.33e-15 E=3.08e-33 C3=1.55e-15; 1=4.55e-16 8_a=8.80e-16 8_s=5.01e-16 10=7.64e-16 10bar=1.01e-15 27=6.71e-16
+  seed= 47: C2=1.11e-15 E=3.08e-33 C3=1.55e-15; 1=4.55e-16 8_a=1.07e-15 8_s=4.89e-16 10=6.97e-16 10bar=1.14e-15 27=7.08e-16
+  seed= 83: C2=1.33e-15 E=3.08e-33 C3=1.40e-15; 1=3.23e-16 8_a=1.40e-15 8_s=5.21e-16 10=6.30e-16 10bar=1.33e-15 27=8.03e-16
+  seed=101: C2=1.33e-15 E=6.16e-33 C3=1.33e-15; 1=5.01e-16 8_a=1.18e-15 8_s=5.59e-16 10=6.21e-16 10bar=1.19e-15 27=7.03e-16
+  PASS: five independently seeded deterministic SU(3) samples commute with C2, E, C3, and every channel projector within the explicit tolerance.
+  equivariance tolerance: 1.0e-10
+  Boundary: these are finite floating-point implementation witnesses; the all-g statement follows analytically from Casimir invariance, factor-swap invariance, and spectral-polynomial functional calculus.
 
 ==============================================================================
-SUMMARY: THEOREM PASS=8 FAIL=0
+SUMMARY: THEOREM PASS=12 FAIL=0
 ==============================================================================
 
 Headline:
   SU(3) (1,1) ⊗ (1,1) decomposed into 6 fusion channels
   with dimensions [1, 8, 8, 10, 10, 27] = 64 total.
-  Expected: 1 + 8 + 8 + 10 + 10̄ + 27 = 64. Match: True
+  Correct cubic convention: 10=(3,0) has C3=+9 and H≈6.8127;
+                            10bar=(0,3) has C3=-9 and H≈2.3589.
 
-Block 1 deliverable: SU(3) (1,1) ⊗ (1,1) CG basis (64 orthonormal
-vectors organized into 6 irrep blocks). Available as `eigvecs` array
-and importable for Block 2 (4-fold Haar projector).
+Block 1 deliverable: six executable spectral projectors plus a
+floating-point orthonormal CG basis. Exact block invariance is supplied
+by the analytic commuting-operator identities, not by numerical precision.
 
 ----- stderr -----
 

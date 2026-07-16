@@ -1,192 +1,230 @@
-# SU(3) Wigner Intertwiner Engine — Block 1: (1,1) ⊗ (1,1) CG decomposition
+# SU(3) Wigner Intertwiner Engine — Block 1: (1,1) ⊗ (1,1)
 
 **Date:** 2026-05-03
+
 **Claim type:** positive_theorem
-**Status:** unaudited positive theorem candidate — pure SU(3) representation
-theory; all checks pass to machine precision (1e-15). Effective retained
-status is audit-lane authority only.
-**Primary runner:** `scripts/frontier_su3_wigner_intertwiner_engine.py`
-**Block in campaign:** 1 of N (cube-closure campaign for gauge-scalar bridge
-no-go #477)
 
-## 0. Headline
+**Status:** unaudited positive-theorem candidate. The representation-theoretic
+decomposition and all-\(g\) equivariance statement are exact mathematical
+claims; the supplied matrices, diagonalization, and residual checks are finite
+`complex128` numerical witnesses.
 
-Block 1 deliverable: explicit Clebsch-Gordan decomposition of the SU(3)
-adjoint tensor product
+**Primary runner:**
+[`frontier_su3_wigner_intertwiner_engine.py`](../scripts/frontier_su3_wigner_intertwiner_engine.py)
 
-```text
-(1,1) ⊗ (1,1) = (0,0) ⊕ 2·(1,1) ⊕ (3,0) ⊕ (0,3) ⊕ (2,2)
-              = 1   ⊕ 8   ⊕ 8    ⊕ 10    ⊕ 10̄  ⊕ 27
-                (dimensions: 1 + 8 + 8 + 10 + 10 + 27 = 64 ✓)
-```
+**Pinned output:**
+[`frontier_su3_wigner_intertwiner_engine.txt`](../logs/runner-cache/frontier_su3_wigner_intertwiner_engine.txt)
 
-via simultaneous diagonalization of the **quadratic Casimir + exchange +
-cubic Casimir** on `V_(1,1) ⊗ V_(1,1) = C^8 ⊗ C^8`. Validated to machine
-precision against:
+**Block in campaign:** 1 of N; later cube/tensor-network blocks are out of
+scope here.
 
-- 6 distinct fusion channels with correct dimensions
-- orthonormality of CG basis
-- SU(3) equivariance: `D(g)⊗D(g)` commutes with all 3 operators
-- canonical SU(3) Casimir eigenvalues
-- antisymmetry of `f_abc` and symmetry of `d_abc` structure constants
+## 1. Exact statement
 
-## 1. Algorithm
-
-### 1.1 Building blocks
-
-- **Gell-Mann basis** `{λ_a, a=1..8}`: standard 3x3 traceless Hermitian
-  matrices, normalized `Tr[λ_a λ_b] = 2 δ_(ab)`.
-- **Structure constants:**
-  ```text
-  f_abc = (1/(4i)) Tr[λ_c [λ_a, λ_b]]   (antisymmetric)
-  d_abc = (1/4)   Tr[λ_c {λ_a, λ_b}]    (symmetric, traceless part)
-  ```
-  Computed numerically; verified `f` antisymmetric, `d` symmetric to
-  machine zero.
-- **Adjoint generators:** `T^a_(b,c) = -i f_(abc)` as 8x8 Hermitian matrices.
-  Satisfy `[T^a, T^b] = i f_abc T^c` to machine precision.
-
-### 1.2 Casimirs and exchange
-
-- **Quadratic Casimir on (1,1):**
-  ```text
-  C_2 = Σ_a (T^a)^2
-  ```
-  All eigenvalues = 3 on `V_(1,1)` (matches canonical SU(3) value).
-
-- **Quadratic Casimir on V_(1,1) ⊗ V_(1,1):**
-  ```text
-  C_2_total = C ⊗ I + 2 Σ_a (T^a ⊗ T^a) + I ⊗ C
-            = Σ_a (T^a ⊗ I + I ⊗ T^a)^2
-  ```
-
-- **Cubic Casimir on V_(1,1) ⊗ V_(1,1):**
-  ```text
-  C_3_total = Σ_(abc) d_(abc) (T^a ⊗ I + I ⊗ T^a)
-                                (T^b ⊗ I + I ⊗ T^b)
-                                (T^c ⊗ I + I ⊗ T^c)
-  ```
-  Distinguishes conjugate irreps `(p, q)` and `(q, p)` (e.g., (3,0) vs (0,3))
-  by sign.
-
-- **Exchange operator** `E` swaps the two factors of `V ⊗ V`:
-  ```text
-  E |i⟩ ⊗ |j⟩ = |j⟩ ⊗ |i⟩
-  ```
-  Satisfies `E^2 = I` exactly.
-
-### 1.3 Simultaneous diagonalization
-
-Diagonalize
+The SU(3) adjoint tensor square decomposes as
 
 ```text
-H = C_2_total + α E + β C_3_total
+V_(1,1) ⊗ V_(1,1)
+  ≅ V_(0,0) ⊕ V_(1,1)_s ⊕ V_(1,1)_a
+    ⊕ V_(3,0) ⊕ V_(0,3) ⊕ V_(2,2)
+  ≅ 1 ⊕ 8_s ⊕ 8_a ⊕ 10 ⊕ 10bar ⊕ 27.
 ```
 
-with irrational coefficients `α = sqrt(2), β = sqrt(3)/7` chosen to lift
-all degeneracies. The 6 distinct eigenvalues correspond to the 6 fusion
-channels:
-
-| Eigenvalue | Multiplicity | Identification |
-|---|---|---|
-| 1.4142 | 1 | (0,0) trivial, exchange-symmetric |
-| 1.5858 | 8 | (1,1)_a antisymmetric adjoint copy |
-| 2.3589 | 10 | (3,0) decuplet (10), antisymmetric |
-| 4.4142 | 8 | (1,1)_s symmetric adjoint copy |
-| 6.8127 | 10 | (0,3) antidecuplet (10̄), antisymmetric |
-| 9.4142 | 27 | (2,2) symmetric traceless rank-2 |
-
-The eigenvectors form an orthonormal CG basis on `V_(1,1) ⊗ V_(1,1)`.
-
-## 2. Validation results
-
-`SUMMARY: THEOREM PASS=8 FAIL=0`
-
-| # | Check | Result |
-|---|---|---|
-| V1 | f_abc antisymmetry, d_abc symmetry | machine zero |
-| V2 | adjoint generators Hermitian | machine zero |
-| V3 | Lie algebra `[T^a, T^b] = i f_abc T^c` | 3.3e-16 |
-| V4 | C_2 on (1,1) = 3 (all eigenvalues) | exact |
-| V5 | E^2 = I | machine zero |
-| V6 | dimensions sum to 64 | exact |
-| V7 | 6 channels with dims {1, 8, 8, 10, 10, 27} | exact |
-| V8 | CG basis orthonormal | 2.0e-15 |
-| V9 | SU(3) equivariance of decomposition | 1.3e-15 |
-
-All validation checks pass at machine precision. The CG basis is
-ready for use in Block 2 (4-fold Haar projector).
-
-## 3. Theorem statement
-
-**Theorem (SU(3) (1,1) ⊗ (1,1) CG decomposition, Block 1).**
-The tensor product of two SU(3) adjoint representations decomposes as
+The dimensions are
 
 ```text
-V_(1,1) ⊗ V_(1,1) = V_(0,0) ⊕ V_(1,1)_s ⊕ V_(1,1)_a ⊕ V_(3,0) ⊕ V_(0,3) ⊕ V_(2,2)
+1 + 8 + 8 + 10 + 10 + 27 = 64 = 8 × 8.
 ```
 
-with dimensions 1 + 8 + 8 + 10 + 10 + 27 = 64. The runner
-`scripts/frontier_su3_wigner_intertwiner_engine.py` constructs an
-explicit orthonormal Clebsch-Gordan basis via simultaneous
-diagonalization of the quadratic Casimir, the cubic Casimir, and the
-exchange operator, and validates the construction to machine precision
-against 9 independent identities.
+The Littlewood–Richardson decomposition gives the displayed irreducible
+summands. Exchange of the two adjoint factors splits them as
 
-The CG basis (returned as `eigvecs` from `cg_decomposition()`) is
-SU(3)-equivariant: each fusion-channel block transforms as the
-corresponding irreducible representation under `D(g) ⊗ D(g)` for any
-`g ∈ SU(3)`.
+```text
+Sym²(8) = 1 ⊕ 8_s ⊕ 27,       dimensions 1 + 8 + 27 = 36,
+Λ²(8)   = 8_a ⊕ 10 ⊕ 10bar,   dimensions 8 + 10 + 10 = 28.
+```
 
-**Proof sketch.** The Casimir + exchange + cubic Casimir form a
-maximal commuting set on `V_(1,1) ⊗ V_(1,1)` whose simultaneous
-eigenvalues uniquely label the 6 fusion channels. Numerical
-diagonalization is exact in finite-dimensional linear algebra (no
-truncation, no approximation), with eigenvalues separated by O(1)
-gaps. ∎
+## 2. Casimir convention and corrected channel labels
 
-## 4. Block 1 API (importable for Block 2 and beyond)
+The runner uses the standard Gell-Mann normalization
 
-The runner exposes:
+```text
+t_a = λ_a/2,     Tr(t_a t_b) = δ_ab/2.
+```
 
-| Function | Returns | Used by |
-|---|---|---|
-| `gellmann_basis()` | List of 8 Gell-Mann matrices | All blocks |
-| `structure_constants()` | (f_abc, d_abc) | Blocks 2-5 |
-| `adjoint_generators(f)` | List of 8 adjoint generators | Blocks 2-5 |
-| `adjoint_matrix(g, lam)` | D^(1,1)(g) matrix | Blocks 2-5 |
-| `random_su3(seed)` | Random SU(3) element | All blocks |
-| `adjoint_casimir(T)` | C_2 on (1,1) | Blocks 2-5 |
-| `cubic_casimir(T, d)` | C_3 on (1,1) | Blocks 2-5 |
-| `tensor_product_casimir(T)` | C_2_total on V⊗V | Block 2 |
-| `tensor_product_cubic_casimir(T, d)` | C_3_total on V⊗V | Block 2 |
-| `exchange_operator(dim)` | Exchange E | Block 2 |
-| `cg_decomposition(C, E, C3)` | CG basis | Block 2 |
+For Dynkin label \((p,q)\), the canonical eigenvalues in this convention are
 
-## 5. Scope
+```text
+C2(p,q) = (p² + q² + pq + 3p + 3q)/3,
+C3(p,q) = (p-q)(2p+q+3)(p+2q+3)/18.
+```
 
-### In scope (this Block)
+The sign is anchored independently of the tensor-product eigensolver by
+directly contracting \(d_{abc}t_at_bt_c\) in the fundamental and
+antifundamental representations:
 
-- Pure SU(3) (1,1) ⊗ (1,1) CG decomposition
-- Validated to machine precision against representation-theory identities
+```text
+C3(1,0) = +10/9,       C3(0,1) = -10/9.
+```
 
-### Out of scope (deferred to subsequent Blocks)
+Consequently,
 
-- **Block 2:** 4-fold Haar projector `∫dU [D(U)]⊗4` via CG contraction
-  on the L=3 cube's 4-link incidence structure
-- **Block 3:** L_s=3 cube geometry encoder + tensor-network setup
-- **Block 4:** Cube partition function computation; `P_cube(L=3, β=6)`
-- **Block 5:** Final P_cube vs ε_witness verdict; ship as PR
+```text
+C3(3,0) = +9  for the decuplet 10,
+C3(0,3) = -9  for the antidecuplet 10bar.
+```
 
-### Cluster classification
+With
 
-This is **SU(3) representation theory**, NOT in the
-`gauge_vacuum_plaquette_*` family. It serves as foundational
-infrastructure for downstream lattice gauge work but is itself a
-purely algebraic deliverable. Cluster cap for the gauge-vacuum-plaquette
-family does not apply to this Block.
+```text
+H = C2_total + α E + β C3_total,
+α = √2,        β = √3/7,
+```
 
-## 6. Audit consequence
+the executable channel table is:
+
+| Channel | Dynkin label | Rank | Exchange | C2 | C3 | H |
+|---|---:|---:|---:|---:|---:|---:|
+| `1` | (0,0) | 1 | +1 | 0 | 0 | 1.4142136 |
+| `8_a` | (1,1) | 8 | -1 | 3 | 0 | 1.5857864 |
+| `8_s` | (1,1) | 8 | +1 | 3 | 0 | 4.4142136 |
+| `10` | (3,0) | 10 | -1 | +6 | **+9** | **6.8127089** |
+| `10bar` | (0,3) | 10 | -1 | +6 | **-9** | **2.3588640** |
+| `27` | (2,2) | 27 | +1 | 8 | 0 | 9.4142136 |
+
+This corrects the former reversal of the `10` and `10bar` rows.
+
+## 3. Exact projectors and numerical construction
+
+Let the exact \(C_2\) spectrum on \(8\otimes8\) be
+\(\{0,3,6,8\}\), and define its Lagrange spectral polynomials
+
+```text
+L_c(C2) = ∏_(c'≠c) (C2-c'I)/(c-c').
+```
+
+Let \(S_\pm=(I\pm E)/2\). The six exact joint spectral projectors can be
+written as
+
+```text
+P_1     = L_0(C2) S_+,
+P_8a    = L_3(C2) S_-,
+P_8s    = L_3(C2) S_+,
+P_10    = L_6(C2) S_- (I + C3/9)/2,
+P_10bar = L_6(C2) S_- (I - C3/9)/2,
+P_27    = L_8(C2) S_+.
+```
+
+These expressions are exact on \(8\otimes8\). The quadratic and cubic
+Casimirs commute with the diagonal SU(3) action because they arise from
+central invariant tensors, and exchange commutes with the equal action on
+the two factors. Functional calculus therefore gives
+
+```text
+[D(g)⊗D(g), P_channel] = 0
+```
+
+for every \(g\in SU(3)\), exactly.
+
+The runner also diagonalizes the finite `complex128` matrix \(H\), groups its
+eigenvectors by the six expected eigenvalues, and forms numerical projectors
+\(P=VV^\dagger\). Floating-point diagonalization supplies reproducible
+matrix witnesses and an orthonormal CG basis; it is not described as
+numerically exact and numerical residual size is not the proof of the
+arbitrary-\(g\) statement.
+
+## 4. Executable validation
+
+The runner reports
+
+```text
+SUMMARY: THEOREM PASS=12 FAIL=0
+```
+
+with explicit tolerances
+
+```text
+operator/projector tolerance = 1e-10,
+eigenvalue matching tolerance = 1e-8,
+equivariance witness tolerance = 1e-10.
+```
+
+The checks include:
+
+1. Gell-Mann structure-constant symmetry and normalization.
+2. Hermitian adjoint generators and the SU(3) Lie algebra.
+3. \(C_2(1,1)=3\) and \(C_3(1,1)=0\).
+4. Independent fundamental/antifundamental confirmation of the canonical
+   cubic-Casimir sign.
+5. Hermiticity and pairwise commutation of \(C_2\), \(E\), and \(C_3\).
+6. Six separated \(H\) clusters with ranks `1,8,8,10,10,27`.
+7. Orthonormality of the returned numerical eigenbasis.
+8. For every channel projector: Hermiticity, idempotence, rank, and the
+   expected scalar \(C_2,E,C_3\) actions.
+9. Pairwise projector orthogonality and completeness.
+10. Agreement between the eigensolver projectors and the independent
+    invariant-polynomial construction.
+11. Hostile controls:
+    - the former swapped `10`/`10bar` labels miss the observed \(C_3\) values
+      by 18;
+    - omitting \(C_3\) leaves only five clusters and one rank-20
+      \(C_2=6,E=-1\) projector whose restricted \(C_3\) spectrum is
+      \([-9,+9]\).
+12. For deterministic seeds `11,29,47,83,101`,
+    \(D(g)\otimes D(g)\) commutes numerically with \(C_2\), \(E\), \(C_3\),
+    and each of the six projectors.
+
+The observed decuplet blocks printed by the runner are
+
+```text
+10bar (0,3): H=2.3588640, (C2,E,C3)=(6,-1,-9),
+10    (3,0): H=6.8127089, (C2,E,C3)=(6,-1,+9).
+```
+
+## 5. Importable API
+
+The runner preserves the original primitive API and adds executable channel
+projectors:
+
+| Function | Result |
+|---|---|
+| `gellmann_basis()` | eight standard Gell-Mann matrices |
+| `structure_constants()` | numerical `f_abc, d_abc` arrays |
+| `adjoint_generators(f)` | eight adjoint generators |
+| `adjoint_matrix(g, lam)` | adjoint representation matrix \(D(g)\) |
+| `random_su3(seed)` | deterministic seeded SU(3) element |
+| `adjoint_casimir(T)` | adjoint quadratic Casimir |
+| `cubic_casimir(T, d)` | cubic Casimir for supplied generators |
+| `tensor_product_casimir(T)` | total \(C_2\) on \(8\otimes8\) |
+| `tensor_product_cubic_casimir(T, d)` | total \(C_3\) on \(8\otimes8\) |
+| `exchange_operator(dim)` | tensor-factor exchange |
+| `cg_decomposition(C2, E, C3)` | numerical \(H\) eigenvalues/eigenbasis |
+| `spectral_channel_projectors(...)` | six eigensolver spectral projectors |
+| `invariant_polynomial_projectors(...)` | independent exact-polynomial projectors evaluated numerically |
+| `canonical_su3_casimirs(p, q)` | exact rational \(C_2,C_3\) formula values |
+
+## 6. Downstream boundary
+
+The [Block 2 note](SU3_WIGNER_INTERTWINER_BLOCK2_THEOREM_NOTE_2026-05-03.md)
+uses only the unordered conjugate pair `10 + 10bar` in its fusion-counting
+rank calculation, and its runner re-bundles its own primitives rather than
+importing this runner. The label correction therefore changes no Block 2
+formula, rank, or API call. Block 3 and later cube/tensor-network blocks
+carry only dependency references and do not pin either corrected
+eigenvalue label. No downstream source changes are needed.
+
+## 7. Scope and audit handoff
+
+In scope:
+
+- the exact SU(3) decomposition of \(8\otimes8\);
+- exact joint channel identification by \(C_2,E,C_3\);
+- finite numerical construction and validation of matrix representatives.
+
+Out of scope:
+
+- the four-fold Haar projector beyond its use as a downstream consumer;
+- cube geometry, tensor-network contractions, and plaquette values;
+- any audit verdict or retained-grade assignment.
 
 ```yaml
 claim_id: su3_wigner_intertwiner_block1_theorem_note_2026-05-03
@@ -194,34 +232,15 @@ note_path: docs/SU3_WIGNER_INTERTWINER_BLOCK1_THEOREM_NOTE_2026-05-03.md
 runner_path: scripts/frontier_su3_wigner_intertwiner_engine.py
 claim_type: positive_theorem
 intrinsic_status: unaudited
-deps: []   # self-contained; pure SU(3) rep theory
-verdict_rationale_template: |
-  Block 1 of the cube-closure campaign. Constructs explicit Clebsch-Gordan
-  decomposition of SU(3) (1,1) ⊗ (1,1) = 1 + 8 + 8 + 10 + 10̄ + 27 = 64
-  via simultaneous diagonalization of quadratic + cubic Casimirs +
-  exchange operator on V ⊗ V. All 9 validation identities (structure
-  constant symmetries, Lie algebra, Casimir eigenvalues, exchange E^2=I,
-  dimensional decomposition, orthonormality, SU(3) equivariance) pass at
-  machine precision (≤ 2e-15). Self-contained; no lattice-gauge
-  dependencies. Importable API for Block 2 (4-fold Haar projector).
+deps: []
+audit_authority: independent audit lane only
 ```
 
-## 7. Cross-references
-
-- Continued: future Block 2 (4-fold Haar projector via CG)
-- Eventual target context, not a load-bearing dependency:
-  `GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md`
-- L_s=2 cube derivation (P_cube = 0.4291): commit e7365f2d2 + PR #492
-- K-Z external lift: PR #484
-
-## 8. Command
+## 8. Reproduction
 
 ```bash
 python3 scripts/frontier_su3_wigner_intertwiner_engine.py
 ```
 
-Expected summary:
-
-```text
-SUMMARY: THEOREM PASS=8 FAIL=0
-```
+The SHA-pinned cache linked above is regenerated from the runner and must
+match its live stdout byte for byte after the cache header.

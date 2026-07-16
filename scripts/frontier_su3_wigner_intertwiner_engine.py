@@ -7,7 +7,8 @@ adjoint tensor product
                   = 1   ⊕ 8   ⊕ 8    ⊕ 10    ⊕ 10̄  ⊕ 27
                     (dimensions: 1 + 8 + 8 + 10 + 10 + 27 = 64 ✓)
 
-via Casimir + exchange diagonalization on V_(1,1) ⊗ V_(1,1) = C^8 ⊗ C^8.
+via quadratic-Casimir + exchange + cubic-Casimir diagonalization on
+V_(1,1) ⊗ V_(1,1) = C^8 ⊗ C^8.
 
 This is Block 1 of the multi-block plan to build the full SU(3) Wigner-
 Racah machinery needed for the L_s=3 cube tensor-network contraction.
@@ -22,21 +23,26 @@ Algorithm:
      V_(1,1) ⊗ V_(1,1):
        C_2_total = (Σ_a (T^a ⊗ I + I ⊗ T^a)^2)
   5. Compute exchange operator E swapping the two factors of V ⊗ V.
-  6. Diagonalize H = C_2 + α E (for some α distinguishing the two adjoint
-     copies in (1,1)⊗(1,1) by symmetry under exchange).
-  7. Group eigenvectors by (C_2, E) eigenvalue → CG basis blocks for each
-     fusion channel.
-  8. Identify each block with an irrep by Casimir eigenvalue and
-     dimensionality.
+  6. Construct C_3_total and diagonalize
+       H = C_2_total + α E + β C_3_total.
+  7. Construct spectral projectors for all six simultaneous
+     (C_2, E, C_3) clusters.
+  8. Independently reconstruct the same projectors as invariant
+     polynomials in C_2, E, and C_3.
 
 Validation:
   V1: 6 distinct fusion channels with dimensions {1, 8, 8, 10, 10, 27}.
   V2: total dimension 64.
   V3: orthonormal basis: <e_i, e_j> = δ_ij.
-  V4: SU(3) equivariance: D(g)⊗D(g) preserves each channel block.
-  V5: Casimir eigenvalues match canonical SU(3) values.
-  V6: exchange eigenvalues distinguish two (1,1) copies (one symmetric,
-      one antisymmetric).
+  V4: projectors are Hermitian, idempotent, pairwise orthogonal, complete,
+      and have ranks 1,8,8,10,10,27.
+  V5: each projector has the expected scalar (C_2,E,C_3) data.
+  V6: the canonical cubic-Casimir convention is anchored independently on
+      fundamental and antifundamental matrices.
+  V7: D(g)⊗D(g) commutes with C_3 and every channel projector for multiple
+      deterministic independently seeded SU(3) elements.
+  V8: hostile controls reject swapped 10/10bar labels and a C_2+E-only
+      rank-20 decuplet-pair projector.
 
 Cluster note: this is SU(3) representation theory, NOT in the
 gauge_vacuum_plaquette family. It is a new infrastructure deliverable
@@ -52,9 +58,43 @@ from __future__ import annotations
 
 import math
 import sys
+from dataclasses import dataclass
+from fractions import Fraction
 from typing import Dict, List, Tuple
 
 import numpy as np
+
+
+OPERATOR_TOL = 1.0e-10
+EIGENVALUE_TOL = 1.0e-8
+EQUIVARIANCE_TOL = 1.0e-10
+SU3_TEST_SEEDS = (11, 29, 47, 83, 101)
+
+
+@dataclass(frozen=True)
+class ChannelSpec:
+    """Exact simultaneous (C2, exchange, C3) data for one 8⊗8 channel."""
+
+    key: str
+    dynkin: Tuple[int, int]
+    name: str
+    dimension: int
+    c2: float
+    exchange: float
+    c3: float
+
+    def h_eigenvalue(self, alpha: float, beta: float) -> float:
+        return self.c2 + alpha * self.exchange + beta * self.c3
+
+
+CHANNEL_SPECS = (
+    ChannelSpec("1", (0, 0), "singlet", 1, 0.0, +1.0, 0.0),
+    ChannelSpec("8_a", (1, 1), "antisymmetric adjoint", 8, 3.0, -1.0, 0.0),
+    ChannelSpec("8_s", (1, 1), "symmetric adjoint", 8, 3.0, +1.0, 0.0),
+    ChannelSpec("10", (3, 0), "decuplet", 10, 6.0, -1.0, +9.0),
+    ChannelSpec("10bar", (0, 3), "antidecuplet", 10, 6.0, -1.0, -9.0),
+    ChannelSpec("27", (2, 2), "27-plet", 27, 8.0, +1.0, 0.0),
+)
 
 
 # ===========================================================================
@@ -143,19 +183,19 @@ def adjoint_casimir(T: List[np.ndarray]) -> np.ndarray:
 
 
 def cubic_casimir(T: List[np.ndarray], d: np.ndarray) -> np.ndarray:
-    """Cubic Casimir on (1,1) adjoint: C_3 = Σ_(abc) d_(abc) T^a T^b T^c.
+    """Cubic Casimir C_3 = Σ_(abc) d_(abc) T^a T^b T^c.
 
     For SU(3), C_3 takes opposite signs on conjugate irreps: e.g.,
     C_3((3,0)) = -C_3((0,3)) (decuplet vs antidecuplet).
 
-    On self-conjugate irreps (e.g., (0,0), (1,1), (2,2)): C_3 may vanish
-    or take symmetric values.
+    On self-conjugate irreps (e.g., (0,0), (1,1), (2,2)), C_3 vanishes.
     """
-    n = 8
-    C = np.zeros((n, n), dtype=complex)
-    for a in range(n):
-        for b in range(n):
-            for c in range(n):
+    n_generators = len(T)
+    dim = T[0].shape[0]
+    C = np.zeros((dim, dim), dtype=complex)
+    for a in range(n_generators):
+        for b in range(n_generators):
+            for c in range(n_generators):
                 if d[a, b, c] != 0:
                     C = C + d[a, b, c] * T[a] @ T[b] @ T[c]
     return C
@@ -270,23 +310,113 @@ def cg_decomposition(C_total: np.ndarray, E: np.ndarray,
     return eigvals, eigvecs, (alpha, beta)
 
 
-def identify_channels(eigvals: np.ndarray, alpha: float
-                       ) -> List[Tuple[float, float, int, int]]:
-    """Group eigenvalues by (C_2, E) eigenvalue and identify channels.
+def canonical_su3_casimirs(p: int, q: int) -> Tuple[Fraction, Fraction]:
+    """Canonical SU(3) Casimirs for Dynkin label (p,q).
 
-    Each unique (C_2, E_eig) pair corresponds to a fusion channel with
-    a specific dimension.
+    The generators use t_a = λ_a/2, with Tr(t_a t_b) = δ_ab/2:
 
-    Returns list of (c2, e_eig, multiplicity_count, irrep_dim).
+      C2(p,q) = (p² + q² + pq + 3p + 3q) / 3
+      C3(p,q) = (p-q)(2p+q+3)(p+2q+3) / 18.
+
+    This convention gives C3(1,0)=+10/9 and C3(3,0)=+9.
     """
-    n = len(eigvals)
-    # Group by eigenvalues with tolerance
-    tol = 1e-6
-    groups: Dict[float, int] = {}
-    for ev in eigvals:
-        key = round(float(ev), 5)
-        groups[key] = groups.get(key, 0) + 1
-    return sorted(groups.items())
+    c2 = Fraction(p * p + q * q + p * q + 3 * p + 3 * q, 3)
+    c3 = Fraction(
+        (p - q) * (2 * p + q + 3) * (p + 2 * q + 3),
+        18,
+    )
+    return c2, c3
+
+
+def spectral_channel_projectors(
+    eigvals: np.ndarray,
+    eigvecs: np.ndarray,
+    alpha: float,
+    beta: float,
+    tol: float = EIGENVALUE_TOL,
+) -> Dict[str, np.ndarray]:
+    """Build the six H-spectral projectors and match them to exact channels."""
+    projectors: Dict[str, np.ndarray] = {}
+    claimed_indices: set[int] = set()
+    for spec in CHANNEL_SPECS:
+        target = spec.h_eigenvalue(alpha, beta)
+        indices = np.where(np.abs(eigvals - target) < tol)[0]
+        if len(indices) != spec.dimension:
+            raise ValueError(
+                f"{spec.key}: expected {spec.dimension} H eigenvectors near "
+                f"{target:.12f}, found {len(indices)}"
+            )
+        overlap = claimed_indices.intersection(int(i) for i in indices)
+        if overlap:
+            raise ValueError(f"{spec.key}: overlapping H cluster indices {overlap}")
+        claimed_indices.update(int(i) for i in indices)
+        basis = eigvecs[:, indices]
+        projectors[spec.key] = basis @ basis.conj().T
+    if len(claimed_indices) != len(eigvals):
+        raise ValueError(
+            f"channel matching covered {len(claimed_indices)} of {len(eigvals)} vectors"
+        )
+    return projectors
+
+
+def lagrange_spectral_projector(
+    operator: np.ndarray,
+    target: float,
+    spectrum: Tuple[float, ...],
+) -> np.ndarray:
+    """Evaluate the Lagrange polynomial selecting one exact eigenvalue."""
+    ident = np.eye(operator.shape[0], dtype=complex)
+    projector = ident.copy()
+    for other in spectrum:
+        if other == target:
+            continue
+        projector = projector @ ((operator - other * ident) / (target - other))
+    return (projector + projector.conj().T) / 2.0
+
+
+def invariant_polynomial_projectors(
+    C_total: np.ndarray,
+    E: np.ndarray,
+    C3_total: np.ndarray,
+) -> Dict[str, np.ndarray]:
+    """Independent channel projectors as exact commuting-operator polynomials.
+
+    This construction does not use H or its eigenvectors.  It uses the exact
+    C2 spectrum {0,3,6,8}, exchange parity, and the C3=±9 split inside C2=6.
+    """
+    ident = np.eye(C_total.shape[0], dtype=complex)
+    c2_spectrum = (0.0, 3.0, 6.0, 8.0)
+    p_c2 = {
+        value: lagrange_spectral_projector(C_total, value, c2_spectrum)
+        for value in c2_spectrum
+    }
+    p_sym = (ident + E) / 2.0
+    p_asym = (ident - E) / 2.0
+    p_c3_plus = (ident + C3_total / 9.0) / 2.0
+    p_c3_minus = (ident - C3_total / 9.0) / 2.0
+    raw = {
+        "1": p_c2[0.0] @ p_sym,
+        "8_a": p_c2[3.0] @ p_asym,
+        "8_s": p_c2[3.0] @ p_sym,
+        "10": p_c2[6.0] @ p_asym @ p_c3_plus,
+        "10bar": p_c2[6.0] @ p_asym @ p_c3_minus,
+        "27": p_c2[8.0] @ p_sym,
+    }
+    return {
+        key: (projector + projector.conj().T) / 2.0
+        for key, projector in raw.items()
+    }
+
+
+def observed_scalar(
+    projector: np.ndarray,
+    operator: np.ndarray,
+    dimension: int,
+) -> Tuple[float, float]:
+    """Return the block trace-average and scalar-action residual."""
+    scalar = float(np.real(np.trace(projector @ operator)) / dimension)
+    residual = float(np.max(np.abs(operator @ projector - scalar * projector)))
+    return scalar, residual
 
 
 def expected_su3_casimirs() -> Dict[Tuple[int, int], float]:
@@ -301,7 +431,7 @@ def expected_su3_casimirs() -> Dict[Tuple[int, int], float]:
       C_2((0,3)) = 6
       C_2((2,2)) = 8
     """
-    return {(p, q): (p ** 2 + q ** 2 + p * q) / 3.0 + p + q
+    return {(p, q): float(canonical_su3_casimirs(p, q)[0])
             for p in range(5) for q in range(5)}
 
 
@@ -318,166 +448,340 @@ def driver() -> int:
     pass_count = 0
     fail_count = 0
 
+    def record(label: str, passed: bool) -> None:
+        nonlocal pass_count, fail_count
+        marker = "PASS" if passed else "FAIL"
+        print(f"  {marker}: {label}")
+        if passed:
+            pass_count += 1
+        else:
+            fail_count += 1
+
     # ===== Section A: build basis + structure constants =====
     print("--- Section A: Gell-Mann basis + structure constants ---")
     lam = gellmann_basis()
     f, d = structure_constants()
-    # Verify f is fully antisymmetric, d is fully symmetric
-    f_asym = np.max(np.abs(f + np.transpose(f, (1, 0, 2))))
-    d_sym = np.max(np.abs(d - np.transpose(d, (1, 0, 2))))
+    f_asym = max(
+        float(np.max(np.abs(f + np.transpose(f, axes))))
+        for axes in ((1, 0, 2), (2, 1, 0), (0, 2, 1))
+    )
+    d_sym = max(
+        float(np.max(np.abs(d - np.transpose(d, axes))))
+        for axes in ((1, 0, 2), (2, 1, 0), (0, 2, 1))
+    )
     print(f"  f antisymmetry error: {f_asym:.3e}")
     print(f"  d symmetry error:     {d_sym:.3e}")
-    if f_asym < 1e-10 and d_sym < 1e-10:
-        print("  PASS: structure constants satisfy expected symmetries.")
-        pass_count += 1
-    else:
-        print("  FAIL: structure constants malformed.")
-        fail_count += 1
-    print()
-
-    # Verify a few standard nonzero constants in 1-based Gell-Mann notation.
-    print("  Standard structure constant values:")
     expected_f = {(0, 1, 2): 1.0,
                   (2, 3, 4): 0.5,  # f_345 = 1/2
                   (3, 4, 7): math.sqrt(3) / 2.0}  # f_458 = sqrt(3)/2
     max_standard_delta = 0.0
+    print("  Standard structure constant values:")
     for (a, b, c), expected in expected_f.items():
         actual = f[a, b, c]
         delta = abs(actual - expected)
         max_standard_delta = max(max_standard_delta, delta)
         marker = "OK" if delta < 1e-10 else "BAD"
         print(f"    f[{a+1}{b+1}{c+1}] = {actual:.6f}  (expected {expected:.6f})  [{marker}]")
-    if max_standard_delta < 1e-10:
-        print("  PASS: standard nonzero f_abc spot checks match.")
-    else:
-        print("  FAIL: standard nonzero f_abc spot checks do not match.")
-        fail_count += 1
+    record(
+        "structure constants have the required permutation symmetries and normalization.",
+        f_asym < OPERATOR_TOL
+        and d_sym < OPERATOR_TOL
+        and max_standard_delta < OPERATOR_TOL,
+    )
     print()
 
     # ===== Section B: adjoint generators + Casimir =====
-    print("--- Section B: adjoint generators + quadratic Casimir ---")
+    print("--- Section B: adjoint generators + canonical Casimir convention ---")
     T = adjoint_generators(f)
-    # Verify Hermiticity
     herm_errors = max(np.max(np.abs(Ta - Ta.conj().T)) for Ta in T)
-    print(f"  T^a Hermiticity error: {herm_errors:.3e}")
-    # Verify [T^a, T^b] = i f_abc T^c
     comm_errors = 0.0
     for a in range(8):
         for b in range(8):
             comm = T[a] @ T[b] - T[b] @ T[a]
             expected = sum(1j * f[a, b, c] * T[c] for c in range(8))
             comm_errors = max(comm_errors, np.max(np.abs(comm - expected)))
+    print(f"  T^a Hermiticity error:       {herm_errors:.3e}")
     print(f"  Lie algebra commutator error: {comm_errors:.3e}")
-    if herm_errors < 1e-10 and comm_errors < 1e-10:
-        print("  PASS: adjoint generators satisfy Hermiticity + Lie algebra.")
-        pass_count += 1
-    else:
-        print("  FAIL: adjoint generator construction broken.")
-        fail_count += 1
+    record(
+        "adjoint generators are Hermitian and satisfy [T^a,T^b]=i f_abc T^c.",
+        herm_errors < OPERATOR_TOL and comm_errors < OPERATOR_TOL,
+    )
 
     C2_adj = adjoint_casimir(T)
     eigvals_C2 = np.linalg.eigvalsh((C2_adj + C2_adj.conj().T) / 2.0)
-    print(f"  C_2 on (1,1) adjoint eigenvalues: {sorted(set(round(float(ev), 4) for ev in eigvals_C2))}")
-    expected_C2_adj = 3.0  # SU(3) (1,1) Casimir
-    if all(abs(float(ev) - expected_C2_adj) < 1e-10 for ev in eigvals_C2):
-        print(f"  PASS: all C_2 eigenvalues = 3 (matches SU(3) (1,1) Casimir).")
-        pass_count += 1
-    else:
-        print(f"  FAIL: C_2 not constant on (1,1).")
-        fail_count += 1
+    c2_adj_err = float(np.max(np.abs(eigvals_C2 - 3.0)))
+    c3_adj = cubic_casimir(T, d)
+    c3_adj_err = float(np.max(np.abs(c3_adj)))
+    print(f"  C_2((1,1)) scalar error from 3: {c2_adj_err:.3e}")
+    print(f"  C_3((1,1)) scalar error from 0: {c3_adj_err:.3e}")
+    record(
+        "adjoint Casimirs match C2(1,1)=3 and C3(1,1)=0.",
+        c2_adj_err < OPERATOR_TOL and c3_adj_err < OPERATOR_TOL,
+    )
     print()
 
-    # ===== Section C: tensor product Casimir + exchange =====
-    print("--- Section C: tensor product Casimir + exchange operator ---")
+    print("  Independent cubic-Casimir sign anchor:")
+    fundamental = [matrix / 2.0 for matrix in lam]
+    antifundamental = [-matrix.conj() for matrix in fundamental]
+    c2_fund = sum(matrix @ matrix for matrix in fundamental)
+    c2_antifund = sum(matrix @ matrix for matrix in antifundamental)
+    c3_fund = cubic_casimir(fundamental, d)
+    c3_antifund = cubic_casimir(antifundamental, d)
+    c2_10, c3_10 = canonical_su3_casimirs(3, 0)
+    c2_10bar, c3_10bar = canonical_su3_casimirs(0, 3)
+    formula_err = max(
+        float(np.max(np.abs(c2_fund - (4.0 / 3.0) * np.eye(3)))),
+        float(np.max(np.abs(c2_antifund - (4.0 / 3.0) * np.eye(3)))),
+        float(np.max(np.abs(c3_fund - (10.0 / 9.0) * np.eye(3)))),
+        float(np.max(np.abs(c3_antifund + (10.0 / 9.0) * np.eye(3)))),
+    )
+    print("    Formula: C3(p,q)=(p-q)(2p+q+3)(p+2q+3)/18")
+    print("    direct fundamental matrices:     C3(1,0)  = +10/9")
+    print("    direct antifundamental matrices: C3(0,1)  = -10/9")
+    print(f"    formula decuplet:     (C2,C3)=({c2_10},{c3_10})")
+    print(f"    formula antidecuplet: (C2,C3)=({c2_10bar},{c3_10bar})")
+    record(
+        "fundamental matrices anchor the formula sign, so (3,0) has C3=+9 and (0,3) has C3=-9.",
+        formula_err < OPERATOR_TOL
+        and c2_10 == 6
+        and c2_10bar == 6
+        and c3_10 == 9
+        and c3_10bar == -9,
+    )
+    print()
+
+    # ===== Section C: tensor product commuting operators =====
+    print("--- Section C: tensor-product commuting operators ---")
     C_total = tensor_product_casimir(T)
     E = exchange_operator(8)
-    # Verify E^2 = I
-    E_sq = E @ E
-    e_err = np.max(np.abs(E_sq - np.eye(64)))
-    print(f"  Exchange E^2 - I error: {e_err:.3e}")
-    if e_err < 1e-10:
-        print("  PASS: exchange operator satisfies E^2 = I.")
-        pass_count += 1
-    else:
-        print("  FAIL: exchange operator broken.")
-        fail_count += 1
+    C3_total = tensor_product_cubic_casimir(T, d)
+    ident64 = np.eye(64, dtype=complex)
+    hermitian_err = max(
+        float(np.max(np.abs(operator - operator.conj().T)))
+        for operator in (C_total, E, C3_total)
+    )
+    e_err = float(np.max(np.abs(E @ E - ident64)))
+    operator_comm_err = max(
+        float(np.max(np.abs(C_total @ E - E @ C_total))),
+        float(np.max(np.abs(C_total @ C3_total - C3_total @ C_total))),
+        float(np.max(np.abs(E @ C3_total - C3_total @ E))),
+    )
+    print(f"  max Hermiticity error:             {hermitian_err:.3e}")
+    print(f"  exchange involution ||E²-I||_max:  {e_err:.3e}")
+    print(f"  max pairwise commutator error:      {operator_comm_err:.3e}")
+    record(
+        "C2, exchange, and C3 are numerically Hermitian commuting operators with E²=I.",
+        hermitian_err < OPERATOR_TOL
+        and e_err < OPERATOR_TOL
+        and operator_comm_err < OPERATOR_TOL,
+    )
     print()
 
     # ===== Section D: CG decomposition via diagonalization =====
     print("--- Section D: CG decomposition via simultaneous diagonalization ---")
-    C3_total = tensor_product_cubic_casimir(T, d)
     eigvals, eigvecs, (alpha, beta) = cg_decomposition(C_total, E, C3_total)
-    print(f"  Diagonalizing H = C_2_total + α E + β C_3_total")
+    projectors = spectral_channel_projectors(eigvals, eigvecs, alpha, beta)
+    print("  Diagonalizing H = C_2_total + α E + β C_3_total")
     print(f"  α = sqrt(2) = {alpha:.6f}, β = sqrt(3)/7 = {beta:.6f}")
-    # Group eigenvalues by clusters
-    rounded = sorted([round(float(ev), 4) for ev in eigvals])
-    unique_vals = sorted(set(rounded))
-    print(f"  Number of unique eigenvalue clusters: {len(unique_vals)}")
-    multiplicities = [(v, rounded.count(v)) for v in unique_vals]
-    print(f"  (eigenvalue, multiplicity) pairs:")
-    for v, m in multiplicities:
-        print(f"    H = {v:>11.4f}  multiplicity {m:>3}")
-    print()
-
-    # ===== Section E: verify dimensions sum to 64 =====
-    total_dim = sum(m for v, m in multiplicities)
-    expected_total = 64
-    print(f"  Total dimension: {total_dim}  (expected {expected_total})")
-    if total_dim == expected_total:
-        print(f"  PASS: dimensions sum to 64 = 8 × 8.")
-        pass_count += 1
-    else:
-        print(f"  FAIL: dimensions don't match.")
-        fail_count += 1
-    print()
-
-    # ===== Section F: verify expected fusion channel pattern =====
-    print("--- Section F: verify (1,1) ⊗ (1,1) = 1 + 8 + 8 + 10 + 10̄ + 27 ---")
-    expected_pattern = sorted([1, 8, 8, 10, 10, 27])
-    actual_pattern = sorted([m for v, m in multiplicities])
-    print(f"  Expected dimensions (sorted): {expected_pattern}")
-    print(f"  Actual dimensions (sorted):   {actual_pattern}")
-    if actual_pattern == expected_pattern:
-        print(f"  PASS: 6 channels with correct dimensions.")
-        pass_count += 1
-    else:
-        print(f"  FAIL: channel pattern mismatch.")
-        fail_count += 1
-    print()
-
-    # ===== Section G: orthogonality of CG basis =====
-    print("--- Section G: orthonormality of CG eigenbasis ---")
     overlap = eigvecs.conj().T @ eigvecs
-    overlap_err = np.max(np.abs(overlap - np.eye(64)))
-    print(f"  ||V^† V - I|| = {overlap_err:.3e}")
-    if overlap_err < 1e-10:
-        print(f"  PASS: CG basis is orthonormal.")
-        pass_count += 1
-    else:
-        print(f"  FAIL: CG basis not orthonormal.")
-        fail_count += 1
+    overlap_err = float(np.max(np.abs(overlap - ident64)))
+    actual_pattern = sorted(spec.dimension for spec in CHANNEL_SPECS)
+    expected_pattern = [1, 8, 8, 10, 10, 27]
+    print(f"  six matched dimensions: {actual_pattern}; total={sum(actual_pattern)}")
+    print(f"  eigensolver orthonormality ||V†V-I||_max: {overlap_err:.3e}")
+    record(
+        "floating-point H spectrum has six separated clusters with ranks 1,8,8,10,10,27.",
+        actual_pattern == expected_pattern and sum(actual_pattern) == 64,
+    )
+    record(
+        "the returned floating-point CG eigenbasis is orthonormal within tolerance.",
+        overlap_err < OPERATOR_TOL,
+    )
     print()
 
-    # ===== Section H: SU(3) equivariance =====
-    print("--- Section H: SU(3) equivariance of channel decomposition ---")
-    # For random g, D⊗D should commute with C_total and preserve channel blocks
-    g = random_su3(seed=11)
-    D = adjoint_matrix(g, lam)
-    DD = np.kron(D, D)
-    # Check [D⊗D, C_total] = 0
-    commutator = DD @ C_total - C_total @ DD
-    comm_err = np.max(np.abs(commutator))
-    print(f"  ||[D⊗D, C_total]|| = {comm_err:.3e}")
-    # Check D⊗D commutes with E
-    EE_comm = DD @ E - E @ DD
-    EE_err = np.max(np.abs(EE_comm))
-    print(f"  ||[D⊗D, E]|| = {EE_err:.3e}")
-    if comm_err < 1e-8 and EE_err < 1e-8:
-        print(f"  PASS: D⊗D commutes with both Casimir and exchange.")
-        pass_count += 1
-    else:
-        print(f"  FAIL: SU(3) equivariance broken.")
-        fail_count += 1
+    # ===== Section E: executable six-channel identification =====
+    print("--- Section E: simultaneous-channel spectral projectors ---")
+    max_projector_herm = 0.0
+    max_projector_idem = 0.0
+    max_scalar_residual = 0.0
+    computed_ranks = []
+    observed_c3: Dict[str, float] = {}
+    for spec in sorted(CHANNEL_SPECS, key=lambda item: item.h_eigenvalue(alpha, beta)):
+        projector = projectors[spec.key]
+        rank = int(np.linalg.matrix_rank(projector, tol=EIGENVALUE_TOL))
+        computed_ranks.append(rank)
+        herm_err = float(np.max(np.abs(projector - projector.conj().T)))
+        idem_err = float(np.max(np.abs(projector @ projector - projector)))
+        c2_obs, c2_res = observed_scalar(projector, C_total, spec.dimension)
+        e_obs, e_res = observed_scalar(projector, E, spec.dimension)
+        c3_obs, c3_res = observed_scalar(projector, C3_total, spec.dimension)
+        observed_c3[spec.key] = c3_obs
+        expected_residual = max(
+            float(np.max(np.abs(C_total @ projector - spec.c2 * projector))),
+            float(np.max(np.abs(E @ projector - spec.exchange * projector))),
+            float(np.max(np.abs(C3_total @ projector - spec.c3 * projector))),
+        )
+        max_projector_herm = max(max_projector_herm, herm_err)
+        max_projector_idem = max(max_projector_idem, idem_err)
+        max_scalar_residual = max(
+            max_scalar_residual,
+            c2_res,
+            e_res,
+            c3_res,
+            expected_residual,
+        )
+        h_observed = c2_obs + alpha * e_obs + beta * c3_obs
+        print(
+            f"  {spec.key:>5} ({spec.dynkin[0]},{spec.dynkin[1]}) "
+            f"rank={rank:>2}: H={h_observed: .7f}, "
+            f"observed (C2,E,C3)=({c2_obs: .8f},{e_obs:+.8f},{c3_obs:+.8f}); "
+            f"expected=({spec.c2:g},{spec.exchange:+g},{spec.c3:+g})"
+        )
+    record(
+        "all six spectral projectors are Hermitian, idempotent, have the expected ranks, and carry the expected scalar (C2,E,C3) data.",
+        sorted(computed_ranks) == expected_pattern
+        and max_projector_herm < OPERATOR_TOL
+        and max_projector_idem < OPERATOR_TOL
+        and max_scalar_residual < OPERATOR_TOL,
+    )
+
+    pairwise_orth_err = 0.0
+    for i, left in enumerate(CHANNEL_SPECS):
+        for right in CHANNEL_SPECS[i + 1:]:
+            pairwise_orth_err = max(
+                pairwise_orth_err,
+                float(np.max(np.abs(projectors[left.key] @ projectors[right.key]))),
+            )
+    completeness_err = float(
+        np.max(
+            np.abs(
+                sum((projectors[spec.key] for spec in CHANNEL_SPECS), np.zeros_like(E))
+                - ident64
+            )
+        )
+    )
+    print(f"  max pairwise projector product: {pairwise_orth_err:.3e}")
+    print(f"  completeness ||ΣP-I||_max:      {completeness_err:.3e}")
+    record(
+        "the six projectors are pairwise orthogonal and complete.",
+        pairwise_orth_err < OPERATOR_TOL and completeness_err < OPERATOR_TOL,
+    )
+    print()
+
+    # ===== Section F: independent invariant-polynomial construction =====
+    print("--- Section F: independent invariant-polynomial projectors ---")
+    polynomial_projectors = invariant_polynomial_projectors(C_total, E, C3_total)
+    polynomial_match_err = max(
+        float(np.max(np.abs(polynomial_projectors[spec.key] - projectors[spec.key])))
+        for spec in CHANNEL_SPECS
+    )
+    polynomial_complete_err = float(
+        np.max(
+            np.abs(
+                sum(
+                    (polynomial_projectors[spec.key] for spec in CHANNEL_SPECS),
+                    np.zeros_like(E),
+                )
+                - ident64
+            )
+        )
+    )
+    print(f"  max |P_polynomial-P_eigensolver|: {polynomial_match_err:.3e}")
+    print(f"  polynomial completeness error:    {polynomial_complete_err:.3e}")
+    record(
+        "independent commuting-operator polynomials reproduce all six eigensolver projectors.",
+        polynomial_match_err < OPERATOR_TOL
+        and polynomial_complete_err < OPERATOR_TOL,
+    )
+    print()
+
+    # ===== Section G: hostile controls =====
+    print("--- Section G: hostile controls ---")
+    swapped_10_error = abs(observed_c3["10"] - (-9.0))
+    swapped_10bar_error = abs(observed_c3["10bar"] - (+9.0))
+    coarse_eigvals, coarse_eigvecs, _ = cg_decomposition(C_total, E, None)
+    coarse_target = 6.0 - alpha
+    coarse_indices = np.where(np.abs(coarse_eigvals - coarse_target) < EIGENVALUE_TOL)[0]
+    coarse_basis = coarse_eigvecs[:, coarse_indices]
+    coarse_projector = coarse_basis @ coarse_basis.conj().T
+    coarse_rank = int(np.linalg.matrix_rank(coarse_projector, tol=EIGENVALUE_TOL))
+    coarse_c3_eigenvalues = np.linalg.eigvalsh(
+        (coarse_basis.conj().T @ C3_total @ coarse_basis
+         + (coarse_basis.conj().T @ C3_total @ coarse_basis).conj().T)
+        / 2.0
+    )
+    coarse_unique_clusters = len(set(np.round(coarse_eigvals, 8)))
+    coarse_c3_min = float(np.min(coarse_c3_eigenvalues))
+    coarse_c3_max = float(np.max(coarse_c3_eigenvalues))
+    print(
+        "  old swapped-label residuals: "
+        f"10→C3=-9 gives {swapped_10_error:.1f}; "
+        f"10bar→C3=+9 gives {swapped_10bar_error:.1f}"
+    )
+    print(
+        "  C2+E-only decuplet projector: "
+        f"rank={coarse_rank}, C3 range=[{coarse_c3_min:.8f},{coarse_c3_max:.8f}], "
+        f"total clusters={coarse_unique_clusters}"
+    )
+    record(
+        "hostile controls reject the old swapped labels and reject C2+E as a six-channel identifier.",
+        swapped_10_error > 17.0
+        and swapped_10bar_error > 17.0
+        and coarse_rank == 20
+        and abs(coarse_c3_min + 9.0) < OPERATOR_TOL
+        and abs(coarse_c3_max - 9.0) < OPERATOR_TOL
+        and coarse_unique_clusters == 5,
+    )
+    print()
+
+    # ===== Section H: deterministic numerical equivariance witnesses =====
+    print("--- Section H: deterministic SU(3) equivariance witnesses ---")
+    max_group_definition_err = 0.0
+    max_operator_equivariance_err = 0.0
+    max_projector_equivariance_err = 0.0
+    for seed in SU3_TEST_SEEDS:
+        g = random_su3(seed=seed)
+        group_err = max(
+            float(np.max(np.abs(g.conj().T @ g - np.eye(3)))),
+            abs(np.linalg.det(g) - 1.0),
+        )
+        D = adjoint_matrix(g, lam)
+        DD = np.kron(D, D)
+        c2_comm = float(np.max(np.abs(DD @ C_total - C_total @ DD)))
+        e_comm = float(np.max(np.abs(DD @ E - E @ DD)))
+        c3_comm = float(np.max(np.abs(DD @ C3_total - C3_total @ DD)))
+        channel_comm = {
+            spec.key: float(
+                np.max(np.abs(DD @ projectors[spec.key] - projectors[spec.key] @ DD))
+            )
+            for spec in CHANNEL_SPECS
+        }
+        max_group_definition_err = max(max_group_definition_err, group_err)
+        max_operator_equivariance_err = max(
+            max_operator_equivariance_err, c2_comm, e_comm, c3_comm
+        )
+        max_projector_equivariance_err = max(
+            max_projector_equivariance_err, *channel_comm.values()
+        )
+        channel_text = " ".join(
+            f"{spec.key}={channel_comm[spec.key]:.2e}" for spec in CHANNEL_SPECS
+        )
+        print(
+            f"  seed={seed:>3}: C2={c2_comm:.2e} E={e_comm:.2e} "
+            f"C3={c3_comm:.2e}; {channel_text}"
+        )
+    record(
+        "five independently seeded deterministic SU(3) samples commute with C2, E, C3, and every channel projector within the explicit tolerance.",
+        max_group_definition_err < EQUIVARIANCE_TOL
+        and max_operator_equivariance_err < EQUIVARIANCE_TOL
+        and max_projector_equivariance_err < EQUIVARIANCE_TOL,
+    )
+    print(f"  equivariance tolerance: {EQUIVARIANCE_TOL:.1e}")
+    print(
+        "  Boundary: these are finite floating-point implementation witnesses; "
+        "the all-g statement follows analytically from Casimir invariance, "
+        "factor-swap invariance, and spectral-polynomial functional calculus."
+    )
     print()
 
     # ===== Summary =====
@@ -486,14 +790,14 @@ def driver() -> int:
     print("=" * 78)
     print()
     print("Headline:")
-    print(f"  SU(3) (1,1) ⊗ (1,1) decomposed into {len(unique_vals)} fusion channels")
+    print(f"  SU(3) (1,1) ⊗ (1,1) decomposed into {len(CHANNEL_SPECS)} fusion channels")
     print(f"  with dimensions {actual_pattern} = {sum(actual_pattern)} total.")
-    print(f"  Expected: 1 + 8 + 8 + 10 + 10̄ + 27 = 64. Match: "
-          f"{actual_pattern == sorted([1, 8, 8, 10, 10, 27])}")
+    print("  Correct cubic convention: 10=(3,0) has C3=+9 and H≈6.8127;")
+    print("                            10bar=(0,3) has C3=-9 and H≈2.3589.")
     print()
-    print("Block 1 deliverable: SU(3) (1,1) ⊗ (1,1) CG basis (64 orthonormal")
-    print("vectors organized into 6 irrep blocks). Available as `eigvecs` array")
-    print("and importable for Block 2 (4-fold Haar projector).")
+    print("Block 1 deliverable: six executable spectral projectors plus a")
+    print("floating-point orthonormal CG basis. Exact block invariance is supplied")
+    print("by the analytic commuting-operator identities, not by numerical precision.")
     return 0 if fail_count == 0 else 1
 
 

@@ -656,54 +656,82 @@ class RoundSixProbes(unittest.TestCase):
 
 
 class RoundSevenProbes(unittest.TestCase):
-    def test_tracked_symlink_target_is_a_violation_end_to_end(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(os.path.realpath(tmp))
-            subprocess.run(["git", "init", "-q", str(root)], check=True)
-            for rel, payload in ((ric.PREMISE_NODES, {"nodes": {}}),
-                                 (ric.OBLIGATIONS, {"nodes": {}})):
-                p = root / rel
-                p.parent.mkdir(parents=True, exist_ok=True)
-                p.write_text(json.dumps(payload))
-            (root / "README.md").write_text("[t](docs/TARGET.md)")
-            (root / "docs").mkdir(exist_ok=True)
+    def _mk_repo(self, tmp, target_is_symlink):
+        root = Path(os.path.realpath(tmp))
+        subprocess.run(["git", "init", "-q", str(root)], check=True)
+        for rel, payload in ((ric.PREMISE_NODES, {"nodes": {}}),
+                             (ric.OBLIGATIONS, {"nodes": {}})):
+            p = root / rel
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(json.dumps(payload))
+        (root / "README.md").write_text("[t](docs/TARGET.md)")
+        (root / "docs").mkdir(exist_ok=True)
+        if target_is_symlink:
             (root / "docs" / "TARGET.md").symlink_to("/nonexistent/outside.md")
-            subprocess.run(["git", "-C", str(root), "add", "-A"], check=True)
+        else:
+            (root / "docs" / "TARGET.md").write_text("x")
+        subprocess.run(["git", "-C", str(root), "add", "-A"], check=True)
+        return root
+
+    def _check(self, root, enforce):
+        old = ric.REPO_ROOT
+        ric.REPO_ROOT = str(root)
+        try:
+            out = io.StringIO()
+            with redirect_stdout(out):
+                return ric.run_check(enforce), out.getvalue()
+        finally:
+            ric.REPO_ROOT = old
+
+    def _snapshot(self, root):
+        old = ric.REPO_ROOT
+        ric.REPO_ROOT = str(root)
+        try:
+            return json.dumps(ric.build_snapshot(), indent=1, sort_keys=True)
+        finally:
+            ric.REPO_ROOT = old
+
+    def test_tracked_symlink_target_decisive_both_modes_and_snapshot(self):
+        with tempfile.TemporaryDirectory() as tmp_bad, \
+                tempfile.TemporaryDirectory() as tmp_good:
+            bad = self._mk_repo(tmp_bad, target_is_symlink=True)
+            good = self._mk_repo(tmp_good, target_is_symlink=False)
+
+            # violation surface
             old = ric.REPO_ROOT
-            ric.REPO_ROOT = str(root)
+            ric.REPO_ROOT = str(bad)
             try:
                 links = ric.collect_authority_links(
                     ["README.md", "docs/TARGET.md",
                      ric.PREMISE_NODES, ric.OBLIGATIONS])
-                self.assertEqual(
-                    [(v["target"], v["reason"]) for v in links["violations"]],
-                    [("docs/TARGET.md", "irregular-target")],
-                )
-                for enforce in (False, True):
-                    out = io.StringIO()
-                    with redirect_stdout(out):
-                        code = ric.run_check(enforce)
-                    if enforce:
-                        self.assertEqual(code, 1)
-                        self.assertIn("irregular-target", out.getvalue())
             finally:
                 ric.REPO_ROOT = old
+            self.assertEqual(
+                [(v["target"], v["reason"]) for v in links["violations"]],
+                [("docs/TARGET.md", "irregular-target")],
+            )
 
-    def test_regular_tracked_target_still_clean(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(os.path.realpath(tmp))
-            subprocess.run(["git", "init", "-q", str(root)], check=True)
-            (root / "README.md").write_text("[t](docs/TARGET.md)")
-            (root / "docs").mkdir()
-            (root / "docs" / "TARGET.md").write_text("x")
-            subprocess.run(["git", "-C", str(root), "add", "-A"], check=True)
-            old = ric.REPO_ROOT
-            ric.REPO_ROOT = str(root)
-            try:
-                links = ric.collect_authority_links(["README.md", "docs/TARGET.md"])
-                self.assertEqual(links["violations"], [])
-            finally:
-                ric.REPO_ROOT = old
+            # warn-only: exit 0 with an explicit irregular-target WARN
+            code, out = self._check(bad, False)
+            self.assertEqual(code, 0)
+            self.assertIn("irregular-target", out)
+            self.assertIn("WARN", out)
+
+            # enforced: exit 1 naming the violation
+            code, out = self._check(bad, True)
+            self.assertEqual(code, 1)
+            self.assertIn("irregular-target", out)
+
+            # regular-target control is clean in BOTH modes
+            for enforce in (False, True):
+                code, out = self._check(good, enforce)
+                self.assertEqual(code, 0, enforce)
+                self.assertNotIn("irregular-target", out)
+
+            # the ruler sees the target-kind change: full serialized
+            # snapshots must differ (authority_links only; ledger empty in
+            # both fixtures)
+            self.assertNotEqual(self._snapshot(bad), self._snapshot(good))
 
 
 if __name__ == "__main__":

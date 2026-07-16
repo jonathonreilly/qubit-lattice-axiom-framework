@@ -1,0 +1,29 @@
+PASS G01: the six matching labels have exactly 6!=720 schedules
+PASS G02: each L=6 layer is a perfect matching
+PASS G03: the six layers partition every undirected nearest-neighbor edge
+PASS G04: the 720 schedules split into eight axis-pair orientations with 90 interleavings each
+PASS I01: the full iSWAP qubit unitaries collapse exactly to eight products, each realized by 90 schedules
+PASS I02: axis-pair orientation is a complete invariant of the iSWAP schedule product
+PASS I03: all complete iSWAP matching layers on distinct axes commute exactly
+PASS I04: the two parity layers on every common axis fail to commute at L=6
+PASS I05: the signed coordinate action contains exactly the 24 proper cubic rotations
+PASS I06: all 24 proper cubic rotations already make the eight iSWAP ticks one orbit; translations preserve that space-group orbit
+PASS I07: no fixed iSWAP macro-tick is invariant under all one-site translations
+PASS I08: one-step cyclic shifts change the exact iSWAP product and generate one finite-depth-conjugacy orbit of all eight products
+PASS I09: every iSWAP macro-tick moves a computational-basis local Z support by exact graph distance six
+PASS I10: reversing all six layers with the same iSWAP gate gives the exact inverse because the six global parity factors cancel
+PASS I11: reversing the schedule with gatewise iSWAP-dagger is the general adjoint construction and also gives the inverse
+PASS I12: L=4 collapses all eight orientations and is an explicit finite-size artifact
+PASS Z01: all 720 CZ schedules are the same exact qubit unitary
+PASS Z02: omitting one CZ layer fails the all-edge product mutation control
+PASS Z03: the all-edge CZ circuit is invariant under unit translations
+PASS Z04: the all-edge CZ circuit is invariant under all 24 proper cubic rotations
+PASS Z05: CZ conjugates a local X only onto its radius-one neighbor star
+PASS N01: source note exists
+PASS N02: source contains boundary marker: genuine one-qubit-site circuit
+PASS N03: source contains boundary marker: does not select iSWAP or CZ
+PASS N04: source contains boundary marker: does not classify arbitrary qubit QCAs
+PASS N05: source contains boundary marker: does not establish that an axiom update is necessary
+BOUNDARY: the six-layer macro-tick, gate choice, even periodic torus, supplied quasi-local extension, and schedule semantics are conditional inputs.
+BOUNDARY: CZ closes schedule dependence conditionally; iSWAP leaves eight symmetry-related ticks and no one-site-invariant member.
+TOTAL: PASS=26 FAIL=0

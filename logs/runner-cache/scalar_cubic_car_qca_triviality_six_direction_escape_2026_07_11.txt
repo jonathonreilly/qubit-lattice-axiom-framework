@@ -1,0 +1,37 @@
+PASS G01: the proper cubic rotation group has 24 exact signed-permutation matrices
+PASS G02: every generated cubic matrix has determinant +1
+PASS G03: the only vector fixed by every proper cubic rotation is zero
+PASS G04: the nearest-neighbor direction orbit has exactly six elements
+PASS G05: nonzero cubic displacement orbits in the exhaustive radius-two box have sizes 6, 8, 12, or 24
+PASS S01A: the general one-variable extreme autocorrelation coefficient is the unique endpoint product
+PASS S01B: the full radius-one three-variable support has the same unique extreme-pair certificate
+PASS S01C: a nonsymmetric sparse three-variable support is also collapsed by the generic-extrema proof
+PASS S01: a two-direction scalar Laurent blend fails torus unitarity
+PASS S02: scalar Laurent monomials are exactly unimodular on the torus
+PASS S03: a nonzero scalar monomial winding is moved by proper cubic rotations
+PASS S04: zero winding is proper-cubic invariant
+PASS S05: dropping cubic invariance admits six symmetry-related scalar nearest-neighbor shifts
+PASS L01: a non-diagonal 2x2 Laurent family satisfies every U-dagger-U Fourier coefficient identity
+PASS L02: the same family satisfies every U-U-dagger coisometry identity
+PASS L03: the coefficient formula V_h=U_(-h)^dagger is an exact left inverse
+PASS L04: the same finite coefficient family is an exact right inverse
+PASS L05: the nontrivial Laurent tick and its inverse have equal finite range
+PASS L06: the matrix-valued Laurent symbols multiply to identity exactly
+PASS C01: the six-direction one-particle update is a unitary permutation
+PASS C02: the inverse update is exact and finite-range
+PASS C03: the direction update commutes with all unit translations
+PASS C04: the six-direction update is covariant under all 24 proper cubic rotations
+PASS C05: both the tick and inverse have exact graph radius one
+PASS C06: the six dispersive direction bands have zero total determinant winding
+PASS C07: every direction band transports despite zero total determinant winding
+PASS C08: six fermionic modes require local Fock dimension 64 in this explicit escape
+PASS C09: the finite-torus coefficient matrix preserves the CAR anticommutator exactly
+PASS C10: opposite-moving bands have determinant one while remaining dispersive
+PASS N01: source note exists
+PASS N02: source contains boundary marker: supplied CAR realization
+PASS N03: source contains boundary marker: does not classify all qubit QCAs
+PASS N04: source contains boundary marker: does not derive the physical tick
+PASS N05: source contains boundary marker: does not establish that an axiom update is necessary
+BOUNDARY: the CAR algebra, linear number-preserving update, finite Laurent range, and cubic action are explicit conditional inputs.
+BOUNDARY: the one-mode theorem is exhaustive only for scalar Gaussian/CAR ticks; interacting and general qubit QCAs remain open.
+TOTAL: PASS=34 FAIL=0

@@ -1,0 +1,26 @@
+PASS G01: H, S, and CNOT generate all 11,520 projective two-qubit Clifford automorphisms
+PASS G02: exactly 192 projective Clifford automorphisms commute with endpoint SWAP
+PASS G03: uniform onsite Clifford basis changes form the 24-element one-qubit projective Clifford group
+PASS G04: the 192 gates form 26 uniform-onsite-Clifford conjugacy classes
+PASS C01: the 26 basis classes split as 10 unique-product, 10 eight-product, and 6 fully order-faithful classes
+PASS C02: the 192 gates split as 48/48/96 across 1, 8, and 720 exact schedule products
+PASS C03: 24 product gates give schedule-independent onsite automorphisms of graph radius zero
+PASS C04: 24 entangling gates give schedule-independent graph-radius-one automorphisms
+PASS C05: every schedule-independent product is separately translation- and proper-cubic-invariant
+PASS C06: 48 gates, split 24 SWAP-product/24 entangling, give the eight-by-90 axis-orientation quotient
+PASS C07: every eight-product class is one spatial and cyclic orbit with no member fixed by the full translation or proper-cubic group
+PASS C08: all eight-product automorphisms have exact graph radius six and l-infinity radius two
+PASS C09: 96 entangling gates make all 720 schedules distinct
+PASS C10: fully order-faithful classes have 15 spatial and 120 cyclic orbits and no member fixed by the full translation or proper-cubic group
+PASS C11: all fully order-faithful automorphisms have exact graph radius six and l-infinity radius two
+PASS C12: reversed schedules with the inverse gate give exact inverse tableaus with matching forward/inverse radii
+PASS C13: local overlap commutation is sufficient and holds for 36 schedule-independent gates
+PASS C14: 12 further gates are schedule-independent only after complete perfect-matching layers are assembled
+PASS N01: source note exists
+PASS N02: source contains boundary marker: Clifford-group automorphism, not the static Clifford algebra
+PASS N03: source contains boundary marker: does not classify arbitrary qubit QCAs
+PASS N04: source contains boundary marker: does not establish a common Hamiltonian
+PASS N05: source contains boundary marker: does not establish that an axiom update is necessary
+BOUNDARY: tensor carrier, symmetric Clifford gate class, parity matchings, exactly-once grammar, and macro-tick are supplied.
+BOUNDARY: the exhaustive result is projective-automorphism level; global unitary phase and physical process selection remain open.
+TOTAL: PASS=23 FAIL=0

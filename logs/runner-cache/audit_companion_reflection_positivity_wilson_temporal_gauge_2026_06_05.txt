@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
-runner_sha256: a14afbd3eb1c55eb69e85ecfc66ae8259f9da7dae0973e1d32277bbfd3ce0058
+runner_sha256: 67bd9ae2dd364f6a3b8b7574c5b4f5c8652da0729902ba81cd592724e647c2c5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 81.06
+elapsed_sec: 80.56
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -11,7 +11,8 @@ Audit companion for the Wilson-plaquette temporal-gauge RP bridge
 AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05
 Reprove: B_-=Theta B_+, plane norm-square factorization, integrated
 three-factor RP Gram PSD for A_+^(2) observables
-(Z_N exact, U(1) Bessel-certified, SU(N) representation-ring route,
+(Z_N exhaustive finite-Haar, U(1) Bessel-certified,
+ SU(N) representation-ring route,
  SU(2)/SU(3) deterministic or Monte Carlo cross-checks).
 ========================================================================================
 
@@ -58,7 +59,7 @@ Part C: integrated three-factor RP Gram PSD for A_+^(2) observables
 Part D: manifest factorization G = W diag(kappa) W^dag, kappa >= 0
 ----------------------------------------------------------------------------------------
   [PASS] (D1) plane-kernel matrix spectrum kappa >= 0 (positive Gram kernel)  (min kappa = 0.137589)
-  [PASS] (D2) G = W diag(kappa) W^dag exactly (manifest Osterwalder-Seiler Gram = A^dag A)  (||G - W diag(kappa) W^dag|| = 1.42e-13)
+  [PASS] (D2) numerical evaluation agrees with the exact G = W diag(kappa) W^dag factorization  (||G - W diag(kappa) W^dag|| = 1.42e-13)
   [PASS] (D3) integrated three-factor Gram is PSD (eigenvalues >= 0)  (min_eig = +2.594098e+01)
 
 ----------------------------------------------------------------------------------------
@@ -66,7 +67,7 @@ Part E: SU(2) numeric sample (Haar Monte Carlo)
 ----------------------------------------------------------------------------------------
   [PASS] (E1) SU(2) link-reflection Gram is PSD within MC error (min_eig > -MC noise)  (min_eig = +0.08134, herm/MC-noise = 0.0072)
      SU(2) eigenvalues: [0.08134 0.18961 0.21888 0.43915 0.56473 1.00004]
-     (numeric sample only; finite exact statements above are Z_N,
+     (numeric sample only; exhaustive finite-Haar checks above are Z_N,
       with U(1) and SU(N) plane positivity certified analytically)
 
 ----------------------------------------------------------------------------------------
@@ -87,7 +88,7 @@ Summary
    B  plane Boltzmann weight = positive (norm-square) character kernel
       (Z_N: DFT; U(1): Bessel series; SU(N): representation ring)
    C  integrated three-factor reflected Gram PSD for A_+^(2) observables
-      (Z_N exact finite-Haar; U(1) quadrature cross-check; wrong reflection control)
+      (Z_N exhaustive finite-Haar; U(1) quadrature; wrong-reflection control)
    D  manifest G = W diag(kappa) W^dag with kappa >= 0 (OS Gram = A^dag A)
    E  SU(2) numeric sample PSD (link-reflection structure carries over)
    F  SU(3) exact tensor multiplicities and deterministic kernel controls

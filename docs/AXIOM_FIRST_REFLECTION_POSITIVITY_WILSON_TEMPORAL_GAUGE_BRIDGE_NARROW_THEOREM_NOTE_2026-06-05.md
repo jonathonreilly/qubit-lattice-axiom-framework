@@ -268,7 +268,7 @@ The repair was tested against several logically distinct frames.
 | representation ring | Computes the character coefficients as tensor-power multiplicities. | Exact proof; adopted. |
 | finite Gram / matrix coefficients | Proves kernel positivity directly from representation matrix entries. | Exact proof; agrees with the coefficient route. |
 | integrated feature factorization | Converts the multi-link plane kernel and half-weights into `W diag(κ) W^dagger`. | Exact proof for bounded observables. |
-| `Z_N` and `U(1)` reductions | Checks the construction against discrete Fourier and positive Bessel-series coefficients. | Exact or interval-certified checks. |
+| `Z_N` and `U(1)` reductions | Checks the construction against discrete Fourier and positive Bessel-series coefficients. | Exhaustive finite enumeration with floating transcendental evaluation for `Z_N`; positive-series interval certificate for `U(1)`. |
 | `SU(3)` fusion recurrence | Builds `(3 ⊕ 3bar)^tensor n` through order eight and checks `sum M dim=6^n`. | Exact runner gate. |
 | wrong-sign / wrong-reflection controls | Tests whether the sign and antilinearity are load-bearing. | Negative coupling or dropped conjugation produces a non-PSD control. |
 
@@ -296,7 +296,8 @@ The runner checks:
 - the normalization map `alpha=beta/N`; legacy abelian and `SU(2)` diagnostic
   function arguments named `beta` are explicitly identified as the effective
   plane coupling `alpha`;
-- exact finite `Z_N` coefficient reconstruction and reflected Grams;
+- exhaustive finite-Haar `Z_N` coefficient reconstruction and reflected Grams
+  with floating evaluation of the transcendental weights;
 - positive-series interval certificates for the `U(1)` coefficients;
 - the manifest finite-carrier factorization `G=W diag(κ)W^dagger`;
 - a sampled `SU(2)` reflected Gram, labeled numerical support;

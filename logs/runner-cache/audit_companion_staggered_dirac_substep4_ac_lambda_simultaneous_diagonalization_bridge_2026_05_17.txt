@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_2026_05_17.py
-runner_sha256: b59ec10482b86719df4bd17508a2982bb27557a189586b10798252f370829733
+runner_sha256: 3705418d985d0b6097cd94a80b42d7460ef9a6447a292cb8ffdb8f6897d9932b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 === Substep-4 AC_lambda simultaneous-diagonalization bridge ===
 
-[setup] commuting unitaries
+[setup] explicit commuting unitary triple
   PASS  T_1 unitary: T_1^dagger T_1 = I
   PASS  T_2 unitary: T_2^dagger T_2 = I
   PASS  T_3 unitary: T_3^dagger T_3 = I
@@ -22,49 +22,86 @@ status: ok
   PASS  [T_3, T_2] = 0
   PASS  [T_3, T_3] = 0
 
-[L1] pairwise distinctness of joint eigenvalue triples
-  PASS  pair (alpha,beta) = (1,2) distinguished by some T_mu :: distinguishing mus = [1, 2]
-  PASS  pair (alpha,beta) = (1,3) distinguished by some T_mu :: distinguishing mus = [1, 3]
-  PASS  pair (alpha,beta) = (2,1) distinguished by some T_mu :: distinguishing mus = [1, 2]
-  PASS  pair (alpha,beta) = (2,3) distinguished by some T_mu :: distinguishing mus = [2, 3]
-  PASS  pair (alpha,beta) = (3,1) distinguished by some T_mu :: distinguishing mus = [1, 3]
-  PASS  pair (alpha,beta) = (3,2) distinguished by some T_mu :: distinguishing mus = [2, 3]
+[L1] pairwise-distinct joint signatures are load-bearing
+  PASS  the three joint eigenvalue signatures are pairwise distinct :: signatures = {1: (-1, 1, 1), 2: (1, -1, 1), 3: (1, 1, -1)}
+  PASS  ordered pair (1,2) has nonzero exact separation :: deltas = (2, -2, 0); distinguishing mus = [1, 2]; weight = 8
+  PASS  ordered pair (1,3) has nonzero exact separation :: deltas = (2, 0, -2); distinguishing mus = [1, 3]; weight = 8
+  PASS  ordered pair (2,1) has nonzero exact separation :: deltas = (-2, 2, 0); distinguishing mus = [1, 2]; weight = 8
+  PASS  ordered pair (2,3) has nonzero exact separation :: deltas = (0, 2, -2); distinguishing mus = [2, 3]; weight = 8
+  PASS  ordered pair (3,1) has nonzero exact separation :: deltas = (-2, 0, 2); distinguishing mus = [1, 3]; weight = 8
+  PASS  ordered pair (3,2) has nonzero exact separation :: deltas = (0, -2, 2); distinguishing mus = [2, 3]; weight = 8
 
-[L3] commutator identity <e_alpha|[K,T_mu]|e_beta> = (tau_mu^(beta) - tau_mu^(alpha)) <e_alpha|K|e_beta>
-  PASS  generic K Hermitian
-  PASS  L3 identity at (alpha,beta,mu) = (1,2,1): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b> :: lhs - rhs = 0
-  PASS  L3 identity at (alpha,beta,mu) = (1,3,1): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b> :: lhs - rhs = 0
-  PASS  L3 identity at (alpha,beta,mu) = (2,1,1): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b> :: lhs - rhs = 0
-  PASS  L3 identity at (alpha,beta,mu) = (2,3,2): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b> :: lhs - rhs = 0
-  PASS  L3 identity at (alpha,beta,mu) = (3,1,1): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b> :: lhs - rhs = 0
-  PASS  L3 identity at (alpha,beta,mu) = (3,2,2): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b> :: lhs - rhs = 0
+[generic complex K] no Hermiticity or other specialization
+  PASS  K contains 18 independent real coordinates for nine complex entries :: coordinate count = 18
+  PASS  opposite off-diagonal entries have disjoint coordinate sets :: no K_ba = conjugate(K_ab) or K_ba = K_ab constraint
+  PASS  generic K is not identically Hermitian
 
-[L2] simultaneous diagonalization: [K, T_mu] = 0 for mu = 1,2,3 -> K diagonal
-  PASS  system [K, T_mu] = 0 has unique solution :: #solutions = 1
-  PASS  L2 solution forces u12 = 0 :: u12 -> 0
-  PASS  L2 solution forces v12 = 0 :: v12 -> 0
-  PASS  L2 solution forces u13 = 0 :: u13 -> 0
-  PASS  L2 solution forces v13 = 0 :: v13 -> 0
-  PASS  L2 solution forces u23 = 0 :: u23 -> 0
-  PASS  L2 solution forces v23 = 0 :: v23 -> 0
+[L3] exact commutator-entry and reconstruction identities
+  PASS  full entry identity for [K,T_1]
+  PASS  full entry identity for [K,T_2]
+  PASS  full entry identity for [K,T_3]
+  PASS  reconstruct K_12 from all three commutators :: sum_mu Delta_mu [K,T_mu]_12 = 8 K_12
+  PASS  reconstruct K_13 from all three commutators :: sum_mu Delta_mu [K,T_mu]_13 = 8 K_13
+  PASS  reconstruct K_21 from all three commutators :: sum_mu Delta_mu [K,T_mu]_21 = 8 K_21
+  PASS  reconstruct K_23 from all three commutators :: sum_mu Delta_mu [K,T_mu]_23 = 8 K_23
+  PASS  reconstruct K_31 from all three commutators :: sum_mu Delta_mu [K,T_mu]_31 = 8 K_31
+  PASS  reconstruct K_32 from all three commutators :: sum_mu Delta_mu [K,T_mu]_32 = 8 K_32
 
-[L4] diagonal class commutes
+[L2] generic complex commutator solve
+  PASS  three commutator systems expose all 12 off-diagonal real coordinates :: equations = 24; off-diagonal coordinates = 12
+  PASS  all six diagonal real coordinates remain absent and free
+  PASS  generic complex system has one off-diagonal solution :: #solutions = 1
+  PASS  generic solve forces a12 = 0 :: a12 -> 0
+  PASS  generic solve forces b12 = 0 :: b12 -> 0
+  PASS  generic solve forces a13 = 0 :: a13 -> 0
+  PASS  generic solve forces b13 = 0 :: b13 -> 0
+  PASS  generic solve forces a21 = 0 :: a21 -> 0
+  PASS  generic solve forces b21 = 0 :: b21 -> 0
+  PASS  generic solve forces a23 = 0 :: a23 -> 0
+  PASS  generic solve forces b23 = 0 :: b23 -> 0
+  PASS  generic solve forces a31 = 0 :: a31 -> 0
+  PASS  generic solve forces b31 = 0 :: b31 -> 0
+  PASS  generic solve forces a32 = 0 :: a32 -> 0
+  PASS  generic solve forces b32 = 0 :: b32 -> 0
+  PASS  commuting with the triple implies every off-diagonal complex entry vanishes
+  PASS  vanishing off-diagonal entries implies commuting with the triple
+
+[independent certificate] rank and kernel of the commutator map
+  PASS  commutator map has exact shape 27x9
+  PASS  commutator map has exact complex rank 6 :: rank = 6
+  PASS  the six pivot directions are exactly the off-diagonal E_ab :: pivot labels = [(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]
+  PASS  commutator-map nullity is exactly 3 :: nullity = 3
+  PASS  each diagonal matrix unit lies in the kernel
+  PASS  the computed kernel equals span(E_11,E_22,E_33)
+
+[continuity check] original generic Hermitian specialization
+  PASS  generic Hermitian specialization is Hermitian
+  PASS  Hermitian specialization has one off-diagonal solution :: #solutions = 1
+  PASS  Hermitian specialization forces all six off-diagonal real components to zero
+
+[L4] exact diagonal commutant
   PASS  diag(k1,k2,k3) commutes with T_1
   PASS  diag(k1,k2,k3) commutes with T_2
   PASS  diag(k1,k2,k3) commutes with T_3
-  PASS  commuting algebra complex dim = 3 :: three independent complex diagonal parameters
-
-[worked numerical instance]
+  PASS  commuting algebra has complex dimension 3
+  PASS  complex diagonal positive control is non-Hermitian
+  PASS  complex diagonal non-Hermitian control commutes with the full triple
   PASS  [diag(1,2,5), T_1] = 0
   PASS  [diag(1,2,5), T_2] = 0
   PASS  [diag(1,2,5), T_3] = 0
 
-[counter-examples]
-  PASS  off-diagonal K (entries (1,2)/(2,1)) breaks [K, T_1] = 0 :: [K_offdiag, T_1] = [[0, 2, 0], [-2, 0, 0], [0, 0, 0]]
-  PASS  T_mu = I trivial: any K commutes (off-diagonal K still commutes) :: [K_offdiag, I] = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+[hostile complex controls]
+  PASS  dense hostile K is complex, non-Hermitian, and has all six off-diagonal entries nonzero
+  PASS  every dense hostile off-diagonal entry is detected by the triple
+  PASS  dense hostile K fails all three commutator equations :: nonzero counts = {1: 4, 2: 4, 3: 4}
+  PASS  one-unitary-blind control is non-Hermitian
+  PASS  mixing inside the degenerate +1 eigenspace commutes with T_1
+  PASS  the same mixing is detected by T_2 and T_3
+  PASS  coincident identity signatures let dense non-diagonal complex K commute
+  PASS  coincident signatures have zero separation weight
 
 === Summary ===
-PASS=41 FAIL=0
+PASS=74 FAIL=0
 
 ----- stderr -----
 

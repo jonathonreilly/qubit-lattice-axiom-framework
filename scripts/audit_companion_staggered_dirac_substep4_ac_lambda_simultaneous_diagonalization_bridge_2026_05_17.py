@@ -1,31 +1,43 @@
 """Audit companion runner for the substep-4 AC_lambda simultaneous-
 diagonalization bridge narrow theorem (2026-05-17).
 
-Verifies via sympy exact symbolic arithmetic that, for the explicit
-triple of commuting diagonal unitary 3x3 matrices T_1, T_2, T_3 with
-joint eigenvalue triples
+Verifies with exact SymPy arithmetic that, for the explicit triple of
+commuting diagonal unitary 3x3 matrices T_1, T_2, T_3 with joint
+eigenvalue signatures
 
   tau^(1) = (-1, +1, +1),
   tau^(2) = (+1, -1, +1),
   tau^(3) = (+1, +1, -1),
 
-the simultaneous-diagonalization corollary forces any operator K on
-V_3 = C^3 commuting with all three T_mu to be diagonal in the standard
-basis.
+the following statements are equivalent for a fully generic complex
+operator K on V_3 = C^3:
 
-  (setup) [T_mu, T_nu] = 0 and T_mu unitary;
-  (L1)    pairwise distinctness of joint eigenvalue triples;
-  (L3)    identity <e_alpha|[K, T_mu]|e_beta> = (tau_mu^(beta) - tau_mu^(alpha))
-                                              * <e_alpha|K|e_beta>;
-  (L2)    [K, T_mu] = 0 for mu = 1, 2, 3 forces all 6 off-diagonal
-          real parameters of K to zero;
-  (L4)    diagonal class: K = diag(k_1, k_2, k_3) commutes with each T_mu;
-          the commuting algebra has complex dim 3.
-  (counter-examples) non-diagonal K with one off-diagonal entry breaks
-          [K, T_1] = 0; trivial all-equal eigenvalue triples (e.g.,
-          T_mu = I) fail the distinctness condition.
+  (i)  [K, T_mu] = 0 for mu = 1, 2, 3;
+  (ii) all six ordered off-diagonal entries of K vanish.
 
-Expected output: PASS=N FAIL=0 with N >= 14.
+The generic K has 18 independent real coordinates: independent real and
+imaginary parts for all nine matrix entries.  No reality, Hermiticity,
+normality, diagonality, sparsity, or relation between K_ab and K_ba is
+assumed.
+
+The equivalence is checked in two independent exact ways:
+
+  1. solve the real and imaginary parts of all three commutator systems;
+  2. build the 27x9 complex-linear commutator map
+         K -> ([K,T_1], [K,T_2], [K,T_3])
+     and verify rank 6 with kernel exactly span(E_11,E_22,E_33).
+
+Pairwise distinctness is load-bearing.  For every alpha != beta, the exact
+separation weight
+
+  sum_mu (tau_mu^(beta) - tau_mu^(alpha))^2
+
+equals 8, giving an entrywise reconstruction identity for K_ab from the
+three commutators.  Dense and one-unitary-blind non-Hermitian complex
+controls verify the intended failure modes.  The original generic
+Hermitian specialization is retained as a secondary continuity check.
+
+Expected output: PASS=N FAIL=0 with N >= 50.
 """
 
 from __future__ import annotations
@@ -33,236 +45,481 @@ from __future__ import annotations
 import sympy as sp
 
 
+INDICES = range(3)
+MUS = (1, 2, 3)
+
+
+def is_zero_matrix(matrix: sp.MatrixBase) -> bool:
+    return all(sp.simplify(entry) == 0 for entry in matrix)
+
+
+def dagger(matrix: sp.MatrixBase) -> sp.Matrix:
+    return sp.Matrix(matrix).conjugate().T
+
+
 def main() -> int:
     fails: list[str] = []
     passes: list[str] = []
 
     def check(label: str, ok: bool, detail: str = "") -> None:
-        if ok:
+        if bool(ok):
             passes.append(label)
             print(f"  PASS  {label}" + (f" :: {detail}" if detail else ""))
         else:
             fails.append(label)
             print(f"  FAIL  {label}" + (f" :: {detail}" if detail else ""))
 
-    # ----- Setup: explicit commuting-unitary triple -----
-    # tau^(alpha) = joint eigenvalue triple on basis vector e_alpha
+    # tau^(alpha) is the joint eigenvalue signature on basis vector e_alpha.
     tau = {
         1: {1: -1, 2: +1, 3: +1},
         2: {1: +1, 2: -1, 3: +1},
         3: {1: +1, 2: +1, 3: -1},
     }
-    # T_mu: 3x3 diagonal matrix with diagonal entries (tau_mu^(1), tau_mu^(2), tau_mu^(3))
-    T = {}
-    for mu in [1, 2, 3]:
-        T[mu] = sp.diag(tau[1][mu], tau[2][mu], tau[3][mu])
-
+    signatures = {
+        alpha: tuple(tau[alpha][mu] for mu in MUS)
+        for alpha in (1, 2, 3)
+    }
+    T = {
+        mu: sp.diag(*(tau[alpha][mu] for alpha in (1, 2, 3)))
+        for mu in MUS
+    }
     I3 = sp.eye(3)
 
     print("=== Substep-4 AC_lambda simultaneous-diagonalization bridge ===")
 
-    # ----- (setup) unitarity and commutation -----
-    print("\n[setup] commuting unitaries")
-    for mu in [1, 2, 3]:
-        # unitarity: T_mu^dagger T_mu = I
-        unit = (T[mu].T.conjugate() * T[mu] - I3)
+    # ----- Setup: explicit commuting-unitary triple -----
+    print("\n[setup] explicit commuting unitary triple")
+    for mu in MUS:
         check(
             f"T_{mu} unitary: T_{mu}^dagger T_{mu} = I",
-            unit == sp.zeros(3, 3),
+            is_zero_matrix(dagger(T[mu]) * T[mu] - I3),
         )
-    for mu in [1, 2, 3]:
-        for nu in [1, 2, 3]:
-            comm = T[mu] * T[nu] - T[nu] * T[mu]
+    for mu in MUS:
+        for nu in MUS:
             check(
                 f"[T_{mu}, T_{nu}] = 0",
-                comm == sp.zeros(3, 3),
+                is_zero_matrix(T[mu] * T[nu] - T[nu] * T[mu]),
             )
 
-    # ----- (L1) pairwise distinctness -----
-    print("\n[L1] pairwise distinctness of joint eigenvalue triples")
-    for alpha in [1, 2, 3]:
-        for beta in [1, 2, 3]:
+    # ----- (L1) pairwise-distinct signatures and exact separation -----
+    print("\n[L1] pairwise-distinct joint signatures are load-bearing")
+    check(
+        "the three joint eigenvalue signatures are pairwise distinct",
+        len(set(signatures.values())) == 3,
+        detail=f"signatures = {signatures}",
+    )
+    separation_weights: dict[tuple[int, int], int] = {}
+    for alpha in (1, 2, 3):
+        for beta in (1, 2, 3):
             if alpha == beta:
                 continue
-            distinguishing_mus = [mu for mu in [1, 2, 3] if tau[alpha][mu] != tau[beta][mu]]
+            deltas = tuple(tau[beta][mu] - tau[alpha][mu] for mu in MUS)
+            distinguishing_mus = [
+                mu for mu, delta in zip(MUS, deltas, strict=True) if delta != 0
+            ]
+            weight = sum(delta * delta for delta in deltas)
+            separation_weights[(alpha, beta)] = weight
             check(
-                f"pair (alpha,beta) = ({alpha},{beta}) distinguished by some T_mu",
-                len(distinguishing_mus) >= 1,
-                detail=f"distinguishing mus = {distinguishing_mus}",
+                f"ordered pair ({alpha},{beta}) has nonzero exact separation",
+                bool(distinguishing_mus) and weight == 8,
+                detail=(
+                    f"deltas = {deltas}; distinguishing mus = "
+                    f"{distinguishing_mus}; weight = {weight}"
+                ),
             )
 
-    # ----- (L3) commutator identity -----
-    print("\n[L3] commutator identity <e_alpha|[K,T_mu]|e_beta> = (tau_mu^(beta) - tau_mu^(alpha)) <e_alpha|K|e_beta>")
-    # Build a generic Hermitian K with 6 real free parameters: 3 diagonal d_1, d_2, d_3 (real),
-    # 3 complex off-diagonals e12 = u12 + I*v12, e13 = u13 + I*v13, e23 = u23 + I*v23.
-    d1, d2, d3 = sp.symbols("d1 d2 d3", real=True)
-    u12, v12, u13, v13, u23, v23 = sp.symbols("u12 v12 u13 v13 u23 v23", real=True)
-    e12 = u12 + sp.I * v12
-    e13 = u13 + sp.I * v13
-    e23 = u23 + sp.I * v23
-
+    # ----- Fully generic complex K: 18 independent real coordinates -----
+    print("\n[generic complex K] no Hermiticity or other specialization")
+    real_names = " ".join(
+        f"a{i + 1}{j + 1}" for i in INDICES for j in INDICES
+    )
+    imag_names = " ".join(
+        f"b{i + 1}{j + 1}" for i in INDICES for j in INDICES
+    )
+    real_coordinates = sp.symbols(real_names, real=True)
+    imag_coordinates = sp.symbols(imag_names, real=True)
     K = sp.Matrix(
+        3,
+        3,
+        lambda i, j: (
+            real_coordinates[3 * i + j] + sp.I * imag_coordinates[3 * i + j]
+        ),
+    )
+    all_coordinates = set(real_coordinates) | set(imag_coordinates)
+    check(
+        "K contains 18 independent real coordinates for nine complex entries",
+        len(all_coordinates) == 18 and K.free_symbols == all_coordinates,
+        detail=f"coordinate count = {len(K.free_symbols)}",
+    )
+    check(
+        "opposite off-diagonal entries have disjoint coordinate sets",
+        all(
+            K[i, j].free_symbols.isdisjoint(K[j, i].free_symbols)
+            for i in INDICES
+            for j in INDICES
+            if i < j
+        ),
+        detail="no K_ba = conjugate(K_ab) or K_ba = K_ab constraint",
+    )
+    check(
+        "generic K is not identically Hermitian",
+        not is_zero_matrix(K - dagger(K)),
+    )
+
+    commutators = {
+        mu: sp.simplify(K * T[mu] - T[mu] * K)
+        for mu in MUS
+    }
+
+    # ----- (L3) exact entry identities and signature-weight reconstruction -----
+    print("\n[L3] exact commutator-entry and reconstruction identities")
+    for mu in MUS:
+        expected = sp.Matrix(
+            3,
+            3,
+            lambda i, j: (
+                (tau[j + 1][mu] - tau[i + 1][mu]) * K[i, j]
+            ),
+        )
+        check(
+            f"full entry identity for [K,T_{mu}]",
+            is_zero_matrix(commutators[mu] - expected),
+        )
+
+    for alpha in (1, 2, 3):
+        for beta in (1, 2, 3):
+            if alpha == beta:
+                continue
+            i = alpha - 1
+            j = beta - 1
+            weighted_commutator_entry = sp.expand(
+                sum(
+                    (tau[beta][mu] - tau[alpha][mu])
+                    * commutators[mu][i, j]
+                    for mu in MUS
+                )
+            )
+            weight = separation_weights[(alpha, beta)]
+            check(
+                f"reconstruct K_{alpha}{beta} from all three commutators",
+                sp.simplify(weighted_commutator_entry - weight * K[i, j]) == 0
+                and weight != 0,
+                detail=f"sum_mu Delta_mu [K,T_mu]_{alpha}{beta} = {weight} K_{alpha}{beta}",
+            )
+
+    # ----- (L2) solve all three systems over independent real/imag parts -----
+    print("\n[L2] generic complex commutator solve")
+    off_diagonal_coordinates: list[sp.Symbol] = []
+    diagonal_coordinates: set[sp.Symbol] = set()
+    for i in INDICES:
+        for j in INDICES:
+            coords = (
+                real_coordinates[3 * i + j],
+                imag_coordinates[3 * i + j],
+            )
+            if i == j:
+                diagonal_coordinates.update(coords)
+            else:
+                off_diagonal_coordinates.extend(coords)
+
+    real_equations: list[sp.Expr] = []
+    for mu in MUS:
+        for entry in commutators[mu]:
+            real_part, imag_part = sp.expand_complex(entry).as_real_imag()
+            real_equations.extend((sp.expand(real_part), sp.expand(imag_part)))
+    nonzero_real_equations = [
+        equation for equation in real_equations if equation != 0
+    ]
+    equation_symbols = set().union(
+        *(equation.free_symbols for equation in nonzero_real_equations)
+    )
+
+    check(
+        "three commutator systems expose all 12 off-diagonal real coordinates",
+        set(off_diagonal_coordinates) == equation_symbols
+        and len(off_diagonal_coordinates) == 12,
+        detail=(
+            f"equations = {len(nonzero_real_equations)}; "
+            f"off-diagonal coordinates = {len(off_diagonal_coordinates)}"
+        ),
+    )
+    check(
+        "all six diagonal real coordinates remain absent and free",
+        diagonal_coordinates.isdisjoint(equation_symbols)
+        and len(diagonal_coordinates) == 6,
+    )
+
+    solution = sp.solve(
+        nonzero_real_equations,
+        off_diagonal_coordinates,
+        dict=True,
+    )
+    check(
+        "generic complex system has one off-diagonal solution",
+        isinstance(solution, list) and len(solution) == 1,
+        detail=f"#solutions = {len(solution) if isinstance(solution, list) else 'non-list'}",
+    )
+    generic_solution = solution[0] if len(solution) == 1 else {}
+    for coordinate in off_diagonal_coordinates:
+        check(
+            f"generic solve forces {coordinate} = 0",
+            sp.simplify(generic_solution.get(coordinate, coordinate)) == 0,
+            detail=f"{coordinate} -> {generic_solution.get(coordinate)}",
+        )
+
+    solved_commutators = {
+        mu: commutators[mu].subs(generic_solution)
+        for mu in MUS
+    }
+    off_diagonal_zero_substitution = {
+        coordinate: 0 for coordinate in off_diagonal_coordinates
+    }
+    check(
+        "commuting with the triple implies every off-diagonal complex entry vanishes",
+        len(generic_solution) == 12
+        and all(is_zero_matrix(matrix) for matrix in solved_commutators.values()),
+    )
+    check(
+        "vanishing off-diagonal entries implies commuting with the triple",
+        all(
+            is_zero_matrix(commutators[mu].subs(off_diagonal_zero_substitution))
+            for mu in MUS
+        ),
+    )
+
+    # ----- Independent exact linear-map rank/kernel certificate -----
+    print("\n[independent certificate] rank and kernel of the commutator map")
+    basis_labels: list[tuple[int, int]] = []
+    image_columns: list[sp.Matrix] = []
+    for i in INDICES:
+        for j in INDICES:
+            basis_labels.append((i + 1, j + 1))
+            E_ij = sp.zeros(3, 3)
+            E_ij[i, j] = 1
+            image_entries: list[sp.Expr] = []
+            for mu in MUS:
+                image_entries.extend(list(E_ij * T[mu] - T[mu] * E_ij))
+            image_columns.append(sp.Matrix(image_entries))
+    commutator_map = sp.Matrix.hstack(*image_columns)
+    rank = commutator_map.rank()
+    nullspace = commutator_map.nullspace()
+    pivot_columns = commutator_map.rref()[1]
+    pivot_labels = {basis_labels[index] for index in pivot_columns}
+    expected_off_diagonal_labels = {
+        (i + 1, j + 1)
+        for i in INDICES
+        for j in INDICES
+        if i != j
+    }
+    diagonal_coordinate_vectors = []
+    for index in (0, 4, 8):
+        vector = sp.zeros(9, 1)
+        vector[index, 0] = 1
+        diagonal_coordinate_vectors.append(vector)
+    diagonal_kernel_basis = sp.Matrix.hstack(*diagonal_coordinate_vectors)
+    computed_kernel_basis = sp.Matrix.hstack(*nullspace)
+
+    check(
+        "commutator map has exact shape 27x9",
+        commutator_map.shape == (27, 9),
+    )
+    check(
+        "commutator map has exact complex rank 6",
+        rank == 6,
+        detail=f"rank = {rank}",
+    )
+    check(
+        "the six pivot directions are exactly the off-diagonal E_ab",
+        pivot_labels == expected_off_diagonal_labels,
+        detail=f"pivot labels = {sorted(pivot_labels)}",
+    )
+    check(
+        "commutator-map nullity is exactly 3",
+        len(nullspace) == 3,
+        detail=f"nullity = {len(nullspace)}",
+    )
+    check(
+        "each diagonal matrix unit lies in the kernel",
+        all(
+            is_zero_matrix(commutator_map * vector)
+            for vector in diagonal_coordinate_vectors
+        ),
+    )
+    check(
+        "the computed kernel equals span(E_11,E_22,E_33)",
+        computed_kernel_basis.rank() == 3
+        and diagonal_kernel_basis.rank() == 3
+        and sp.Matrix.hstack(
+            computed_kernel_basis,
+            diagonal_kernel_basis,
+        ).rank() == 3,
+    )
+
+    # ----- Original Hermitian specialization retained as a continuity check -----
+    print("\n[continuity check] original generic Hermitian specialization")
+    d1, d2, d3 = sp.symbols("d1 d2 d3", real=True)
+    u12, v12, u13, v13, u23, v23 = sp.symbols(
+        "u12 v12 u13 v13 u23 v23",
+        real=True,
+    )
+    K_hermitian = sp.Matrix(
         [
-            [d1, e12, e13],
-            [sp.conjugate(e12), d2, e23],
-            [sp.conjugate(e13), sp.conjugate(e23), d3],
+            [d1, u12 + sp.I * v12, u13 + sp.I * v13],
+            [u12 - sp.I * v12, d2, u23 + sp.I * v23],
+            [u13 - sp.I * v13, u23 - sp.I * v23, d3],
         ]
     )
-    # replace conjugates using known real components
-    K = K.subs(
-        {
-            sp.conjugate(u12): u12,
-            sp.conjugate(v12): v12,
-            sp.conjugate(u13): u13,
-            sp.conjugate(v13): v13,
-            sp.conjugate(u23): u23,
-            sp.conjugate(v23): v23,
-        }
-    )
-
-    # Verify K is Hermitian symbolically
-    Kdagger = sp.Matrix(
-        [[sp.conjugate(K[j, i]) for j in range(3)] for i in range(3)]
-    ).subs(
-        {
-            sp.conjugate(d1): d1,
-            sp.conjugate(d2): d2,
-            sp.conjugate(d3): d3,
-            sp.conjugate(u12): u12,
-            sp.conjugate(v12): v12,
-            sp.conjugate(u13): u13,
-            sp.conjugate(v13): v13,
-            sp.conjugate(u23): u23,
-            sp.conjugate(v23): v23,
-        }
-    )
-    check("generic K Hermitian", sp.simplify(K - Kdagger) == sp.zeros(3, 3))
-
-    # For each off-diagonal pair (alpha, beta) with alpha != beta, verify L3 identity for some mu
-    for alpha in [1, 2, 3]:
-        for beta in [1, 2, 3]:
-            if alpha == beta:
-                continue
-            # Pick lowest-index mu with distinguishing eigenvalues
-            mu = next(mm for mm in [1, 2, 3] if tau[alpha][mm] != tau[beta][mm])
-            comm = K * T[mu] - T[mu] * K
-            lhs = comm[alpha - 1, beta - 1]
-            # Expected: (tau_mu^(beta) - tau_mu^(alpha)) * K[alpha-1, beta-1]
-            rhs = (tau[beta][mu] - tau[alpha][mu]) * K[alpha - 1, beta - 1]
-            diff = sp.simplify(lhs - rhs)
-            check(
-                f"L3 identity at (alpha,beta,mu) = ({alpha},{beta},{mu}): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b>",
-                diff == 0,
-                detail=f"lhs - rhs = {diff}",
-            )
-
-    # ----- (L2) simultaneous diagonalization corollary -----
-    print("\n[L2] simultaneous diagonalization: [K, T_mu] = 0 for mu = 1,2,3 -> K diagonal")
-    # Set up the system [K, T_mu] = 0 for mu = 1, 2, 3 and solve for the 6 off-diag real params
-    equations = []
-    for mu in [1, 2, 3]:
-        comm = K * T[mu] - T[mu] * K
-        for i in range(3):
-            for j in range(3):
-                if i == j:
-                    continue
-                equations.append(sp.simplify(comm[i, j]))
-
-    # Solve for u12, v12, u13, v13, u23, v23
-    sol = sp.solve(equations, [u12, v12, u13, v13, u23, v23], dict=True)
     check(
-        "system [K, T_mu] = 0 has unique solution",
-        isinstance(sol, list) and len(sol) == 1,
-        detail=f"#solutions = {len(sol) if isinstance(sol, list) else 'non-list'}",
+        "generic Hermitian specialization is Hermitian",
+        is_zero_matrix(K_hermitian - dagger(K_hermitian)),
+    )
+    hermitian_off_diagonal = [u12, v12, u13, v13, u23, v23]
+    hermitian_equations: list[sp.Expr] = []
+    for mu in MUS:
+        commutator = K_hermitian * T[mu] - T[mu] * K_hermitian
+        for entry in commutator:
+            real_part, imag_part = sp.expand_complex(entry).as_real_imag()
+            hermitian_equations.extend((sp.expand(real_part), sp.expand(imag_part)))
+    hermitian_solution = sp.solve(
+        [equation for equation in hermitian_equations if equation != 0],
+        hermitian_off_diagonal,
+        dict=True,
+    )
+    check(
+        "Hermitian specialization has one off-diagonal solution",
+        len(hermitian_solution) == 1,
+        detail=f"#solutions = {len(hermitian_solution)}",
+    )
+    check(
+        "Hermitian specialization forces all six off-diagonal real components to zero",
+        len(hermitian_solution) == 1
+        and all(
+            sp.simplify(hermitian_solution[0].get(variable, variable)) == 0
+            for variable in hermitian_off_diagonal
+        ),
     )
 
-    if isinstance(sol, list) and len(sol) == 1:
-        s = sol[0]
-        check(
-            "L2 solution forces u12 = 0",
-            sp.simplify(s.get(u12, u12)) == 0,
-            detail=f"u12 -> {s.get(u12)}",
-        )
-        check(
-            "L2 solution forces v12 = 0",
-            sp.simplify(s.get(v12, v12)) == 0,
-            detail=f"v12 -> {s.get(v12)}",
-        )
-        check(
-            "L2 solution forces u13 = 0",
-            sp.simplify(s.get(u13, u13)) == 0,
-            detail=f"u13 -> {s.get(u13)}",
-        )
-        check(
-            "L2 solution forces v13 = 0",
-            sp.simplify(s.get(v13, v13)) == 0,
-            detail=f"v13 -> {s.get(v13)}",
-        )
-        check(
-            "L2 solution forces u23 = 0",
-            sp.simplify(s.get(u23, u23)) == 0,
-            detail=f"u23 -> {s.get(u23)}",
-        )
-        check(
-            "L2 solution forces v23 = 0",
-            sp.simplify(s.get(v23, v23)) == 0,
-            detail=f"v23 -> {s.get(v23)}",
-        )
-
-    # ----- (L4) diagonal class commutes -----
-    print("\n[L4] diagonal class commutes")
+    # ----- (L4) diagonal class and complex positive controls -----
+    print("\n[L4] exact diagonal commutant")
     k1, k2, k3 = sp.symbols("k1 k2 k3", complex=True)
-    K_diag = sp.diag(k1, k2, k3)
-    for mu in [1, 2, 3]:
-        comm = K_diag * T[mu] - T[mu] * K_diag
+    K_diagonal = sp.diag(k1, k2, k3)
+    for mu in MUS:
         check(
             f"diag(k1,k2,k3) commutes with T_{mu}",
-            comm == sp.zeros(3, 3),
+            is_zero_matrix(K_diagonal * T[mu] - T[mu] * K_diagonal),
         )
-
-    # Commuting algebra has complex dim 3 (three independent diagonal entries)
-    # Verify: the algebra is generated by I, T_1, T_1*T_2 say, or simply
-    # parametrized by k1, k2, k3 in C
     check(
-        "commuting algebra complex dim = 3",
-        len([k1, k2, k3]) == 3,
-        detail="three independent complex diagonal parameters",
+        "commuting algebra has complex dimension 3",
+        rank == 6 and len(nullspace) == 3,
     )
 
-    # ----- worked numerical instance -----
-    print("\n[worked numerical instance]")
-    K_num = sp.diag(1, 2, 5)
-    for mu in [1, 2, 3]:
-        comm = K_num * T[mu] - T[mu] * K_num
+    K_complex_diagonal = sp.diag(
+        1 + 2 * sp.I,
+        -3 + sp.I,
+        4 - 5 * sp.I,
+    )
+    check(
+        "complex diagonal positive control is non-Hermitian",
+        not is_zero_matrix(K_complex_diagonal - dagger(K_complex_diagonal)),
+    )
+    check(
+        "complex diagonal non-Hermitian control commutes with the full triple",
+        all(
+            is_zero_matrix(K_complex_diagonal * T[mu] - T[mu] * K_complex_diagonal)
+            for mu in MUS
+        ),
+    )
+
+    K_worked = sp.diag(1, 2, 5)
+    for mu in MUS:
         check(
             f"[diag(1,2,5), T_{mu}] = 0",
-            comm == sp.zeros(3, 3),
+            is_zero_matrix(K_worked * T[mu] - T[mu] * K_worked),
         )
 
-    # ----- counter-example: off-diagonal entry breaks T_1 commutation -----
-    print("\n[counter-examples]")
-    K_offdiag = sp.Matrix(
+    # ----- Hostile deterministic complex controls -----
+    print("\n[hostile complex controls]")
+    K_dense_hostile = sp.Matrix(
         [
-            [1, 1, 0],
-            [1, 2, 0],
-            [0, 0, 5],
+            [1 + 2 * sp.I, 2 - sp.I, -3 + 4 * sp.I],
+            [5 + 7 * sp.I, -2 + sp.I, 6 - 5 * sp.I],
+            [4 - 3 * sp.I, -8 + 2 * sp.I, 9 - sp.I],
         ]
     )
-    comm_offdiag_T1 = K_offdiag * T[1] - T[1] * K_offdiag
+    dense_commutators = {
+        mu: K_dense_hostile * T[mu] - T[mu] * K_dense_hostile
+        for mu in MUS
+    }
     check(
-        "off-diagonal K (entries (1,2)/(2,1)) breaks [K, T_1] = 0",
-        comm_offdiag_T1 != sp.zeros(3, 3),
-        detail=f"[K_offdiag, T_1] = {comm_offdiag_T1.tolist()}",
+        "dense hostile K is complex, non-Hermitian, and has all six off-diagonal entries nonzero",
+        not is_zero_matrix(K_dense_hostile - dagger(K_dense_hostile))
+        and all(
+            K_dense_hostile[i, j] != 0
+            for i in INDICES
+            for j in INDICES
+            if i != j
+        ),
+    )
+    check(
+        "every dense hostile off-diagonal entry is detected by the triple",
+        all(
+            any(dense_commutators[mu][i, j] != 0 for mu in MUS)
+            for i in INDICES
+            for j in INDICES
+            if i != j
+        ),
+    )
+    check(
+        "dense hostile K fails all three commutator equations",
+        all(not is_zero_matrix(dense_commutators[mu]) for mu in MUS),
+        detail=(
+            f"nonzero counts = "
+            f"{ {mu: sum(entry != 0 for entry in dense_commutators[mu]) for mu in MUS} }"
+        ),
     )
 
-    # ----- counter-example: T_mu = I trivializes the distinctness condition -----
-    T_trivial = I3
-    # Any matrix commutes with I, including the off-diagonal K_offdiag
-    comm_trivial = K_offdiag * T_trivial - T_trivial * K_offdiag
+    # T_1 has a +1 eigenspace span(e_2,e_3), so it cannot alone detect
+    # mixing inside that block.  T_2 and T_3 do detect it.
+    K_T1_blind = sp.diag(1 + sp.I, 2 - sp.I, 3 + 2 * sp.I)
+    K_T1_blind[1, 2] = 2 + 3 * sp.I
+    K_T1_blind[2, 1] = -4 + sp.I
+    blind_commutators = {
+        mu: K_T1_blind * T[mu] - T[mu] * K_T1_blind
+        for mu in MUS
+    }
     check(
-        "T_mu = I trivial: any K commutes (off-diagonal K still commutes)",
-        comm_trivial == sp.zeros(3, 3),
-        detail=f"[K_offdiag, I] = {comm_trivial.tolist()}",
+        "one-unitary-blind control is non-Hermitian",
+        not is_zero_matrix(K_T1_blind - dagger(K_T1_blind)),
+    )
+    check(
+        "mixing inside the degenerate +1 eigenspace commutes with T_1",
+        is_zero_matrix(blind_commutators[1]),
+    )
+    check(
+        "the same mixing is detected by T_2 and T_3",
+        not is_zero_matrix(blind_commutators[2])
+        and not is_zero_matrix(blind_commutators[3]),
+    )
+
+    # If the signatures coincide, the separation weights vanish and the
+    # diagonal-commutant conclusion fails: even the dense hostile K commutes.
+    trivial_commutators = {
+        mu: K_dense_hostile * I3 - I3 * K_dense_hostile
+        for mu in MUS
+    }
+    check(
+        "coincident identity signatures let dense non-diagonal complex K commute",
+        all(is_zero_matrix(matrix) for matrix in trivial_commutators.values())
+        and K_dense_hostile != sp.diag(*K_dense_hostile.diagonal()),
+    )
+    check(
+        "coincident signatures have zero separation weight",
+        all(
+            sum((1 - 1) ** 2 for _mu in MUS) == 0
+            for _alpha in (1, 2, 3)
+            for _beta in (1, 2, 3)
+            if _alpha != _beta
+        ),
     )
 
     # ----- Summary -----
@@ -270,8 +527,8 @@ def main() -> int:
     print(f"PASS={len(passes)} FAIL={len(fails)}")
     if fails:
         print("Failures:")
-        for f in fails:
-            print(f"  - {f}")
+        for failure in fails:
+            print(f"  - {failure}")
         return 1
     return 0
 

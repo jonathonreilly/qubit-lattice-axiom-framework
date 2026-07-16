@@ -52,7 +52,11 @@ full unmarked spatial Wilson environment tensor-transfer problem.
 
 from __future__ import annotations
 
+import platform
+import sys
+
 import numpy as np
+import scipy
 from scipy.special import iv
 
 
@@ -275,8 +279,14 @@ def main() -> int:
     )
 
     # Cross-check
-    cross_abs = float(np.max(np.abs(rho_bessel - rho_weyl)))
-    cross_rel = float(np.max(np.abs(rho_bessel - rho_weyl) / np.maximum(np.abs(rho_bessel), 1.0e-30)))
+    cross_abs_values = np.abs(rho_bessel - rho_weyl)
+    cross_rel_values = cross_abs_values / np.maximum(np.abs(rho_bessel), 1.0e-30)
+    cross_abs_index = int(np.argmax(cross_abs_values))
+    cross_rel_index = int(np.argmax(cross_rel_values))
+    cross_abs = float(cross_abs_values[cross_abs_index])
+    cross_rel = float(cross_rel_values[cross_rel_index])
+    cross_abs_weight = weights[cross_abs_index]
+    cross_rel_weight = weights[cross_rel_index]
 
     # Computed environment coefficient sequence (use Bessel as the canonical
     # closed-form value; Weyl is the independent quadrature cross-check).
@@ -333,6 +343,15 @@ def main() -> int:
     print("GAUGE-VACUUM PLAQUETTE rho_(p,q)(6) WILSON-ENVIRONMENT COMPUTATION")
     print("=" * 78)
     print()
+    print("Deterministic inputs / current execution environment")
+    print(f"  beta={BETA:.1f}, argument=beta/3={ARG:.1f}, box=0<=p,q<={NMAX}")
+    print(f"  Bessel mode sum=-{MODE_MAX}..{MODE_MAX}, Weyl grid={WEYL_GRID}x{WEYL_GRID}")
+    print(
+        f"  arithmetic=float64, Python={platform.python_version()}, "
+        f"NumPy={np.__version__}, SciPy={scipy.__version__}"
+    )
+    print(f"  platform={platform.platform()}, mantissa bits={sys.float_info.mant_dig}")
+    print()
     print("Computed boundary character coefficients rho_(p,q)(6) (closed form, Bessel-det)")
     for pq in [(0, 0), (1, 0), (0, 1), (1, 1), (2, 0), (0, 2), (2, 1), (1, 2), (3, 0), (0, 3), (2, 2)]:
         if pq in index:
@@ -343,8 +362,16 @@ def main() -> int:
             )
     print()
     print("Cross-check Bessel-det (Method A) vs Weyl integration (Method B)")
-    print(f"  max |rho_A - rho_B| (absolute)        = {cross_abs:.3e}")
-    print(f"  max |rho_A - rho_B| / |rho_A|         = {cross_rel:.3e}")
+    print(
+        f"  max |rho_A - rho_B| (absolute)        = {cross_abs:.3e} "
+        f"at (p,q)={cross_abs_weight}"
+    )
+    print(
+        f"  max |rho_A - rho_B| / |rho_A|         = {cross_rel:.3e} "
+        f"at (p,q)={cross_rel_weight}"
+    )
+    print(f"  raw absolute maximum (float64)        = {cross_abs:.16e}")
+    print(f"  raw relative maximum (float64)        = {cross_rel:.16e}")
     print()
     print("Symmetry / positivity / structural gates")
     print(f"  rho_(p,q)(6) min/max                  = {rho_min:.12e}, {rho_max:.12f}")

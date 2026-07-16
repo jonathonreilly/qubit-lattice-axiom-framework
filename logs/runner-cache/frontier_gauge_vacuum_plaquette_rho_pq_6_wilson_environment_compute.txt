@@ -1,14 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py
-runner_sha256: ce277f8e5bb136966debeb6ceb0fa38eb4205c971e9deb31cc8245ab7acb4c6a
+runner_sha256: 259124f691938ca3106d35f979bd587322f5cb5fcfca18672b5aac1e8e795ec4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.77
+elapsed_sec: 4.68
 status: ok
 ----- stdout -----
 ==============================================================================
 GAUGE-VACUUM PLAQUETTE rho_(p,q)(6) WILSON-ENVIRONMENT COMPUTATION
 ==============================================================================
+
+Deterministic inputs / current execution environment
+  beta=6.0, argument=beta/3=2.0, box=0<=p,q<=4
+  Bessel mode sum=-80..80, Weyl grid=160x160
+  arithmetic=float64, Python=3.12.8, NumPy=2.4.1, SciPy=1.17.0
+  platform=macOS-26.5.2-arm64-arm-64bit, mantissa bits=53
 
 Computed boundary character coefficients rho_(p,q)(6) (closed form, Bessel-det)
   rho_(0,0)(6) = 1.000000000000e+00   (Weyl quadrature: 1.000000000000e+00)
@@ -24,8 +30,10 @@ Computed boundary character coefficients rho_(p,q)(6) (closed form, Bessel-det)
   rho_(2,2)(6) = 1.350507888830e-02   (Weyl quadrature: 1.350507888829e-02)
 
 Cross-check Bessel-det (Method A) vs Weyl integration (Method B)
-  max |rho_A - rho_B| (absolute)        = 4.136e-15
-  max |rho_A - rho_B| / |rho_A|         = 7.952e-14
+  max |rho_A - rho_B| (absolute)        = 4.136e-15 at (p,q)=(2, 0)
+  max |rho_A - rho_B| / |rho_A|         = 8.205e-14 at (p,q)=(4, 4)
+  raw absolute maximum (float64)        = 4.1355807667287081e-15
+  raw relative maximum (float64)        = 8.2051681014240727e-14
 
 Symmetry / positivity / structural gates
   rho_(p,q)(6) min/max                  = 2.275225312476e-05, 1.000000000000
@@ -47,7 +55,7 @@ Resulting factorized transfer witness (with computed rho_env)
   Z(beta=6) = c_(0,0)(6)                = 3.441440354988
 
   [PASS] [THEOREM] Method A (Bessel-determinant) and Method B (Weyl integration on the Cartan torus) compute c_(p,q)(6) to machine precision on the finite 0 <= p,q <= 4 box
-         max abs=4.136e-15, max rel=7.952e-14; two independent integrators agree
+         max abs=4.136e-15, max rel=8.205e-14; two independent integrators agree
   [PASS] [THEOREM] the boundary character coefficients rho_(p,q)(6) satisfy rho_(0,0)(6) = 1 exactly (normalized Wilson character measure)
          |rho_(0,0)(6) - 1| = 0.000e+00
   [PASS] [THEOREM] rho_(p,q)(6) is conjugation-symmetric: rho_(p,q)(6) = rho_(q,p)(6) on the finite marked-plaquette class-function box

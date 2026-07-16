@@ -145,16 +145,16 @@ unitary triple (2a)-(2c) — is carried by the in-flight substep-3 note
 `STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md` and is
 out of scope here.
 
-## 4. Admitted-context inputs
+## 4. Mathematical inputs
 
 - **Standard finite-dim complex linear algebra.** Diagonal operators
   commuting in a common eigenbasis; commutator identity; matrix
-  entries via inner products on a chosen basis. Admitted-context
-  mathematical infrastructure on the framework's accepted surface.
+  entries via inner products on a chosen basis. This is standard
+  mathematical infrastructure, not a supplied physics premise.
 - **Exact arithmetic on `3 × 3` complex matrices.** Verified by the
   companion runner via sympy.
 
-No physics conventions admitted beyond the abstract algebraic framing.
+No physics convention is used beyond the abstract algebraic framing.
 No PDG value consumed. No staggered-Dirac / lattice-action / `g_bare` /
 framework-instance-specific input.
 
@@ -246,10 +246,10 @@ dimension `3`. ∎
   `STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`
   records the joint eigenvalue triples
   `((-1, +1, +1), (+1, -1, +1), (+1, +1, -1))` for the framework's
-  three lattice translations on hw=1 corners on `Z^3` APBC, but is
-  in-flight and not yet retained; this narrow theorem treats the
-  joint-eigenvalue triples (2a)-(2c) as the abstract input, not as a
-  forced consequence of the framework's substrate.
+  three lattice translations on hw=1 corners on `Z^3` APBC. Its
+  audit-pipeline status is not consumed here; this narrow theorem
+  treats the joint-eigenvalue triples (2a)-(2c) as the abstract input,
+  not as a forced consequence of the framework's substrate.
 - Does **not** derive the substep-2 Kawamoto-Smit kinetic operator
   form or its translation-invariance. Those are carried by separate
   in-flight notes (substep-2 packaging).
@@ -270,7 +270,7 @@ dimension `3`. ∎
 - No PDG observed values consumed.
 - No literature numerical comparators consumed.
 - No fitted selectors consumed.
-- No admitted unit conventions load-bearing on the claim.
+- No unit convention is load-bearing on the claim.
 - No same-surface family arguments.
 - No staggered-Dirac realization gate output consumed (the open gate
   is named in plain text only as the parent identity that contextualizes
@@ -390,9 +390,9 @@ edges:
 - `STAGGERED_DIRAC_SUBSTEP4_AC_PHI_TRACE_EQUIPARTITION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`
   — sibling AC_φ narrow theorem shipped same date.
 - `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
-  — sister substep-1 narrow bridge (audited_clean).
+  — sister substep-1 narrow bridge; its status remains audit-pipeline-derived.
 - `STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
-  — sister substep-3 narrow bridge (audited_clean).
+  — sister substep-3 narrow bridge; its status remains audit-pipeline-derived.
 - `STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`
   — pre-existing in-flight substep-3 packaging carrying the
   `Z^3`-substrate hw=1 carrier identification with the explicit
@@ -402,7 +402,7 @@ edges:
   — pre-existing in-flight substep-2 packaging carrying the
   Kawamoto-Smit kinetic operator form whose translation-invariance is
   the bridge to (b) above.
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-06-29.md`
   — framework baseline memo for the physical Cl(3) local algebra and
   Z^3 spatial substrate; the narrow theorem does not consume its
   effective status.

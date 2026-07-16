@@ -1,14 +1,15 @@
 trace_class: direct_blocker_closure
-target_claim_id: gauge_vacuum_plaquette_transfer_operator_character_recurrence_note
-target_blocker_text: "Pointwise positivity and symmetry establish a positivity-preserving self-adjoint integral operator, not positive-semidefinite quadratic-form positivity. The packet supplies neither a positive-type or reflection-positivity proof for T nor a runner check establishing the positive transfer state required by Theorem 2."
-source_of_blocker_text: audit_ledger
+target_claim_id: axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05
+current_ledger_status: unaudited
+current_effective_status: unaudited
+target_blocker_text: "scope_too_broad: clean finite/abelian bounded core exists for Z_N and the U(1) plane kernel, with a U(1) quadrature cross-check and SU(2) numeric sample, but the source also relies on a general SU(N)/SU(3) Wilson-plane character-coefficient positivity step not proved or retained in this packet. Re-audit would require either narrowing the claim to the runner-witnessed tractable surface or adding a retained theorem proving the needed SU(N) Wilson-plane positive character-kernel/integrated Gram statement."
+source_of_blocker_text: "archived 2026-07-07 audited_conditional result in target ledger"
+active_review_finding: "the SU(N>=3) boundary omits a direct representation-ring proof: expanding exp[(beta/2N)(chi_R + chi_Rbar)] gives positive powers of R direct-sum Rbar, and tensor-power decomposition has nonnegative integer irrep multiplicities. Replace the group-dependent obstruction language and add a runner gate for this analytic route."
+source_of_active_review_finding: docs/repo/ACTIVE_REVIEW_QUEUE.md
 reachability_to_target: closes
-artifact_role: theorem
-next_trace_action: "Prove and independently review the one-link positive-type expansion, gauge-projected mixed kernel, M Q M Gram factorization, and marked spatial-plaquette insertion/state formula."
+artifact_role: bounded_theorem
+next_trace_action: "Run disposable pipeline compatibility, then open the reviewed source repair for independent integration and later audit."
 
-The same block also addresses the exact re-audit instruction:
-
-> Re-audit after adding a finite-lattice positive-type or reflection-positivity derivation for the stated kernel and verifying the marked spatial-plaquette insertion formula on that positive transfer operator.
-
-The trace is direct. No downstream numeric `P(6)` or Perron-state claim is
-needed for this repair.
+The trace is direct: the source formerly made `SU(N>=3)` comparator-only; the
+repair proves the missing signs and propagates them through the finite
+open-slab Gram construction.

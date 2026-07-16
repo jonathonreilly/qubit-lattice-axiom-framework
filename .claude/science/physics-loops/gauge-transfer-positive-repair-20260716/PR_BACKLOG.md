@@ -3,29 +3,25 @@
 ## Block 01
 
 [PR 5398](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5398)
-landed on `main` at science commit `fe6586b098...`. The PR is merged and its
-remote source branch is removed after the landing checkpoint.
+landed on `main` at science commit `fe6586b098...`. The supervising landing
+process merged it and removed the remote source branch.
 
-Title:
-
-`[physics-loop] gauge transfer positive repair block 01`
-
-Local disposition: `pass`. Branch-local claim status:
-`candidate-retained-grade`. Independent audit remains required; the
-review-loop landing does not grant audit-ratified status.
-
-Intended branch:
-
-`physics-loop/gauge-transfer-positive-repair-block01-20260716`
-
-Intended base:
-
-`main`
-
-The PR body quotes the audit repair target verbatim, links the loop pack and
-paired artifacts, lists verification results, states that independent audit
-remains required, and carries no audit verdict prediction.
+Local disposition: `pass`. Branch-local source status:
+`candidate-retained-grade`. Independent audit remains required.
 
 ## Block 02
 
-Pending. The next candidate is opportunity 2 in `OPPORTUNITY_QUEUE.md`.
+Branch:
+`physics-loop/gauge-transfer-positive-repair-block02-20260716`.
+
+Proposed title:
+
+`[physics-loop] Wilson plane SU(N) positivity repair block 02`
+
+Status: implementation, cache, independent checks, and review-loop pass.
+Disposable pipeline validation, final rebase metadata, push, and PR remain.
+
+The PR body must quote the archived conditional blocker, identify the active
+review-queue route, report exact runner and independent-check results, state
+the finite open-slab pure-gauge boundary, and leave audit ratification to the
+independent pipeline.

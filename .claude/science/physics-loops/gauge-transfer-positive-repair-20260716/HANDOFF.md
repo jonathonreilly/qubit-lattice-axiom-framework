@@ -1,42 +1,59 @@
 # Handoff
 
-Campaign block 01 is complete and landed on `main`.
-
-The exact current audit repair target is quoted in `GOAL.md` and
-`TRACE_GATE.md`. The target note and runner now implement the direct `SU(3)`
-representation-ring sign proof, finite-volume gauge projector, exact
-temporal-link kernel, `M Q M` Gram factorization, transfer trace, spatial
-insertion, repeated source, and source-algebra isometry. The refreshed runner
-passes `THEOREM PASS=6 SUPPORT=10 FAIL=0`.
-
-All required review-loop seats passed after the requested narrow fixes. A
-disposable audit-pipeline run completed with zero strict-lint errors and placed
-the changed target in the generated queue as a ready, critical, unaudited
-positive theorem; every generated audit/ledger/queue/effective-status output
-was then destroyed with the disposable worktree. The landing review refreshed
-the branch onto `49bd740942...`; the stale-base overlap guard found no shared
-changed paths.
+The campaign is active on
+`physics-loop/gauge-transfer-positive-repair-block02-20260716`.
 
 Block 01 landed through
 [PR 5398](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5398)
-at science commit `fe6586b098...`. The PR is merged and the remote source
-branch is removed after this landing checkpoint. This review-loop disposition
-is not an audit verdict: the primary claim remains candidate-retained-grade
-pending a fresh independent audit.
+at science commit `fe6586b0985956a245ba9eb93a93912373abb55d`.
+The supervising landing process, not this worker, merged it. It remains pending
+independent audit.
 
-Current next action if the campaign continues:
+Block 02 repairs
+`axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05`.
+The exact archived conditional blocker and active review-queue finding are in
+`GOAL.md` and `TRACE_GATE.md`.
 
-1. allow the independent audit pipeline to re-evaluate the landed primary
-   claim in a fresh audit context;
-2. separately create
-   `physics-loop/gauge-transfer-positive-repair-block02-20260716`
-   from current `origin/main`;
-3. acquire a new block-local supervisor lock;
-4. ground opportunity 2 from `OPPORTUNITY_QUEUE.md`, recovering its exact
-   current audit blocker before editing.
+Current block-02 implementation:
 
-No 120-minute deep block has been claimed: this first residual closed and
-passed review before that interval elapsed. A future related block carries the
-campaign's deep-block obligation. Read `STATE.yaml` and this file before any
-broad search. This landing worker did not run `audit-loop`, an audit worker,
-`codex_audit_runner.py`, or `apply_audit.py`.
+- exact representation-ring multiplicity series for `SU(N)`;
+- uniform absolute convergence and nonnegative irrep coefficients;
+- independent real-Gram/Schur-power positive-type proof;
+- open temporal slab with temporal gauge as carrier data;
+- genuine exact `1+1D` runner carrier with `B_+=B_-=0`;
+- product-link kernel and integrated bounded-observable
+  `W diag(kappa) W^dagger` factorization;
+- exact `SU(3)` fusion/dimension/coefficient runner gates and sign controls.
+
+Verification:
+
+- final cache: `23 PASS / 0 FAIL`, `82.11s`;
+- runner/cache SHA:
+  `7a621de2eb8c703dea44bd42845a8aa30fabf0213500828c63baee32bd1c2fdc`;
+- independent `SU(2)` through `SU(5)` real-Gram/Schur reconstruction, maximum
+  error `8.882e-16`;
+- review-loop mathematics, runner independence, and governance/scope lanes:
+  `PASS` after narrow fixes;
+- sibling pin runners pass.
+
+Exact next action:
+
+1. complete the current rebase conflict resolution by preserving landed
+   block-01 history and this block-02 active state;
+2. run disposable `docs/audit/scripts/run_pipeline.sh` plus strict lint;
+3. restore/delete every generated audit/ledger/queue/effective-status output;
+4. update final base/checkpoint metadata, push, and open the block-02 PR.
+
+The 120-minute deep block began at `2026-07-16T12:48:12Z` and remains in
+progress. Do not claim it complete before `2026-07-16T14:48:12Z`.
+
+If this worker must be resumed immediately:
+
+```bash
+cd /private/tmp/physics-loop-gauge-transfer-positive-repair-20260716
+codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 5h --target best-honest-status"
+```
+
+Read `STATE.yaml`, `HANDOFF.md`, and `TRACE_GATE.md`. Do not run `audit-loop`,
+an audit worker, `codex_audit_runner.py`, `apply_audit.py`, or write an audit
+verdict.

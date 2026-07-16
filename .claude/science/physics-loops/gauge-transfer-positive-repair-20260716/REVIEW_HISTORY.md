@@ -1,53 +1,58 @@
 # Review History
 
-## Block-01 review cycle 1
+## Block 01
 
-Three parallel review-loop lanes ran on the target note, runner, cache, and
-campaign pack.
+Three parallel lanes reviewed the gauge-transfer repair. Mathematics and runner
+independence passed initially; governance requested narrow taxonomy, status,
+orthogonality, parameter-inventory, and rebase fixes. Fix-only rereview passed
+all lanes.
 
-- operator/physics lane: `PASS`; no mathematical blocker
-- runner-independence lane: `PASS`; separate `D_3` implementation reproduced
-  convolution Fourier eigenvalues, projector commutation, kernel
-  normalization, positivity, factorization, trace, marked source, and repeated
-  source
-- governance/import lane: `FIX`; requested support-bucket demotion, canonical
-  author-side status wording, runner-only parameter inventory, displayed Schur
-  orthogonality, state refresh, and rebase
+Independent root work used a `220 x 220` Weyl-grid Haar quadrature with a
+Jacobi-Trudi implementation. Haar normalization was
+`0.999999999999989`; coefficients for `0<=p,q<=4` at `beta=1.7` were positive,
+with minimum `1.086151242685e-07`.
 
-Independent root check used a `220 x 220` Weyl-grid Haar quadrature with a
-Jacobi-Trudi character implementation independent of the runner. Haar
-normalization was `0.999999999999989`; all coefficients for
-`0 <= p,q <= 4` at `beta=1.7` were positive, with minimum
-`1.086151242685e-07` and maximum imaginary residue `7.048e-16`.
+Final runner: `THEOREM PASS=6 SUPPORT=10 FAIL=0`. Disposable pipeline and
+strict lint passed. PR 5398 landed at `fe6586b098...`; independent audit remains
+required.
 
-## Fix cycle
+## Block-02 pre-review
 
-Applied the requested narrow changes:
+- companion runner: `23 PASS / 0 FAIL`;
+- exact `SU(3)` fusion tables through order eight obey `sum M dim=6^n`;
+- independent real-Gram/Schur restrictions for `SU(2)` through `SU(5)`;
+- maximum exponential reconstruction error `8.882e-16`;
+- positive-coupling restrictions PSD and wrong-sign control non-PSD.
 
-- source status changed to `proposed_retained` with independent-audit caveat;
-- sampled `SU(3)` Gram and exhaustive finite-model checks demoted to
-  `SUPPORT`;
-- all runner-only constants inventoried as nonphysical diagnostics;
-- displayed Schur-orthogonality and independent finite-Gram positive-type
-  calculations added;
-- campaign state, certificate, and handoff refreshed.
+## Block-02 review cycle 1
 
-## Block-01 final local disposition
+Initial lanes:
 
-The fix-only re-review passed in all affected lanes:
+- mathematics: `FIX` — explicit feature-series domination, open temporal slab,
+  genuine `1+1D` Wilson half action, and complete reducibility;
+- runner independence: `PASS`;
+- governance/import/scope: `FIX` — remove false dependency edges, exact status,
+  unambiguous `alpha`, and narrow the sign-control label.
 
-- operator/physics: `PASS`
-- runner independence and cache taxonomy: `PASS`
-- governance/import/scope: `PASS`
+Applied fixes:
 
-The final runner summary is `THEOREM PASS=6 SUPPORT=10 FAIL=0`. The cache SHA
-matches the runner. Both sibling pin runners pass.
+- open nonperiodic temporal slab; temporal gauge as carrier data;
+- `B_+=B_-=0` on the exact runner's one-spatial-dimensional Wilson carrier;
+- explicit `sum c_lambda |D D*| <= exp(alpha d_R)` domination;
+- unitary complete reducibility from invariant orthogonal complements;
+- no load-bearing repository dependency links;
+- exact `proposed_retained` source status;
+- `alpha` helper naming and restriction-specific negative control.
 
-A disposable full audit pipeline and `audit_lint.py --strict` completed with
-zero errors. The generated validation state put the target in the unaudited
-queue at rank `34`, as required for later independent evaluation. No generated
-audit result, ledger, queue, effective-status view, or front-door snapshot is
-part of the branch diff.
+Fix-only results:
 
-Local disposition: `pass`; branch-local status:
-`candidate-retained-grade`; independent audit still required.
+- mathematics: `PASS`;
+- runner independence: `PASS`;
+- governance/import/scope: `PASS`.
+
+Final cache: `23 PASS / 0 FAIL`, SHA
+`7a621de2eb8c703dea44bd42845a8aa30fabf0213500828c63baee32bd1c2fdc`,
+elapsed `82.11s`.
+
+Final local disposition: `pass`. Branch-local source classification:
+`candidate-retained-grade`. This is not an audit verdict.

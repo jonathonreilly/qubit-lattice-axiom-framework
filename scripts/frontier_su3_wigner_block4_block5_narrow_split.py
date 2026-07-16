@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import ast
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -24,6 +25,23 @@ from pathlib import Path
 AUDIT_TIMEOUT_SEC = 180
 
 ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = (
+    ROOT
+    / "docs"
+    / "SU3_WIGNER_BLOCK4_STAGING_BLOCK5_ORIENTATION_DIAGNOSTICS_NARROW_THEOREM_NOTE_2026-05-10.md"
+)
+
+STATUS_PIN_RE = re.compile(
+    r"\b(?:retained(?:_[a-z]+)?|unaudited|audited_[a-z_]+|"
+    r"audit_in_progress|"
+    r"(?:effective|intrinsic|audit)_status)\b",
+    re.IGNORECASE,
+)
+REQUIRED_STATUS_BOUNDARIES = (
+    "Current dependency status is pipeline-derived.",
+    "This consumer does not inherit audit status from Blocks 1-3.",
+    "It does not consume Block 1's corrected `H` values or channel ordering.",
+)
 
 RUNNERS = [
     (
@@ -71,6 +89,31 @@ def imported_modules(path: Path) -> set[str]:
     return out
 
 
+def check_note_status_firewall() -> None:
+    check("consumer note exists", NOTE_PATH.exists(), str(NOTE_PATH.relative_to(ROOT)))
+    if not NOTE_PATH.exists():
+        return
+
+    note = NOTE_PATH.read_text(encoding="utf-8", errors="replace")
+    normalized_note = " ".join(note.split())
+    pinned = sorted({match.group(0) for match in STATUS_PIN_RE.finditer(note)})
+    check(
+        "consumer note contains no authored audit-status pins",
+        not pinned,
+        ", ".join(pinned),
+    )
+    check(
+        "consumer note requires pipeline-derived current status",
+        REQUIRED_STATUS_BOUNDARIES[0] in normalized_note,
+        REQUIRED_STATUS_BOUNDARIES[0],
+    )
+    check(
+        "consumer note states no-inheritance and H/order boundaries",
+        all(marker in normalized_note for marker in REQUIRED_STATUS_BOUNDARIES[1:]),
+        " | ".join(REQUIRED_STATUS_BOUNDARIES[1:]),
+    )
+
+
 def run_runner(label: str, rel_path: str, expected_summary: str) -> None:
     path = ROOT / rel_path
     check(f"{label} runner exists", path.exists(), rel_path)
@@ -113,6 +156,7 @@ def run_runner(label: str, rel_path: str, expected_summary: str) -> None:
 def main() -> int:
     print("SU(3) Wigner Block 4/5 narrow split primary runner")
     print("=" * 72)
+    check_note_status_firewall()
     for label, rel_path, expected_summary in RUNNERS:
         run_runner(label, rel_path, expected_summary)
 

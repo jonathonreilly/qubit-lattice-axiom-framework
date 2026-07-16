@@ -33,8 +33,10 @@ Run:
 from __future__ import annotations
 
 import math
+import re
 import sys
 import time
+from pathlib import Path
 from typing import Dict, List, Tuple
 
 import numpy as np
@@ -44,6 +46,66 @@ from scipy.special import iv
 BETA = 6.0
 NMAX_DEFAULT = 5
 MODE_MAX_DEFAULT = 200
+ROOT = Path(__file__).resolve().parents[1]
+CONSUMER_NOTE_PATH = (
+    ROOT
+    / "docs"
+    / "SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md"
+)
+STATUS_PIN_RE = re.compile(
+    r"\b(?:retained(?:_[a-z]+)?|unaudited|audited_[a-z_]+|"
+    r"audit_in_progress|"
+    r"(?:effective|intrinsic|audit)_status)\b",
+    re.IGNORECASE,
+)
+REQUIRED_STATUS_BOUNDARIES = (
+    "Current dependency status is pipeline-derived.",
+    "This consumer does not inherit audit status from Blocks 1-3.",
+    "It does not consume Block 1's corrected `H` values or channel ordering.",
+)
+
+
+def consumer_note_status_firewall() -> Tuple[int, int]:
+    """Reject source-authored status snapshots in the paired consumer note."""
+    pass_count = 0
+    fail_count = 0
+
+    def gate(label: str, ok: bool, detail: str = "") -> None:
+        nonlocal pass_count, fail_count
+        tag = "PASS" if ok else "FAIL"
+        pass_count += int(ok)
+        fail_count += int(not ok)
+        suffix = f" ({detail})" if detail else ""
+        print(f"  [{tag}] {label}{suffix}")
+
+    print("--- Prose firewall: pipeline status and no-inheritance boundary ---")
+    gate(
+        "paired consumer note exists",
+        CONSUMER_NOTE_PATH.exists(),
+        str(CONSUMER_NOTE_PATH.relative_to(ROOT)),
+    )
+    if not CONSUMER_NOTE_PATH.exists():
+        return pass_count, fail_count
+
+    note = CONSUMER_NOTE_PATH.read_text(encoding="utf-8", errors="replace")
+    normalized_note = " ".join(note.split())
+    pinned = sorted({match.group(0) for match in STATUS_PIN_RE.finditer(note)})
+    gate(
+        "paired consumer note contains no authored audit-status pins",
+        not pinned,
+        ", ".join(pinned),
+    )
+    gate(
+        "paired consumer note requires pipeline-derived current status",
+        REQUIRED_STATUS_BOUNDARIES[0] in normalized_note,
+        REQUIRED_STATUS_BOUNDARIES[0],
+    )
+    gate(
+        "paired consumer note states no-inheritance and H/order boundaries",
+        all(marker in normalized_note for marker in REQUIRED_STATUS_BOUNDARIES[1:]),
+        " | ".join(REQUIRED_STATUS_BOUNDARIES[1:]),
+    )
+    return pass_count, fail_count
 
 
 # ===========================================================================
@@ -347,6 +409,12 @@ def driver() -> int:
     print("=" * 78)
     print()
 
+    prose_pass, prose_fail = consumer_note_status_firewall()
+    print()
+    if prose_fail:
+        print(f"PROSE FIREWALL: PASS={prose_pass} FAIL={prose_fail}")
+        return 1
+
     pass_count = 0
     fail_count = 0
 
@@ -481,7 +549,9 @@ def driver() -> int:
     print(f"    Per-plaquette tensor: (8,8,8,8) cyclical-trace structure")
     print(f"  FULL 81-link contraction deferred to Block 5 (honest scope:")
     print(f"  multi-day engineering OR optimized-library-assisted execution).")
-    return 0 if fail_count == 0 else 1
+    print()
+    print(f"PROSE FIREWALL: PASS={prose_pass} FAIL={prose_fail}")
+    return 0 if fail_count == 0 and prose_fail == 0 else 1
 
 
 if __name__ == "__main__":

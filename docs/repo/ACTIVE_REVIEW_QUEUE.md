@@ -27,17 +27,6 @@ them.
 
 Current science/open-lane follow-ups:
 
-- `2026-07-16-su3-wigner-downstream-status-prose-drift`
-  Scope:
-  `SU3_WIGNER_BLOCK4_STAGING_BLOCK5_ORIENTATION_DIAGNOSTICS_NARROW_THEOREM_NOTE_2026-05-10.md`
-  and `SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md`.
-  Finding: these pre-existing consumer notes literally describe the Block
-  1-3 dependency packet as retained and pin historical effective statuses,
-  while current claim strength is audit-pipeline-derived and Block 1 is
-  awaiting re-audit after its cubic-Casimir label/equivariance repair. The
-  consumer formulas do not pin the corrected H values or channel ordering,
-  so widening PR #5407 into consumer claim-note hash churn is not justified.
-  Disposition: `fix on main`.
 - `2026-07-10-pr5123-tick-admissibility-physical-realization-bridge`
   Scope:
   `TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md`
@@ -227,6 +216,16 @@ Record each new finding as one bullet:
   conditional canonical arithmetic is linked to its currently unaudited bounded
   source, and unsupported selector/transport inputs are explicit open
   conditions. Changed source rows remain subject to independent re-audit.
+
+- `2026-07-16-su3-wigner-downstream-status-prose-drift`
+  Resolved the two named SU(3) Wigner consumer notes by removing every
+  source-authored audit-status snapshot, directing readers to pipeline-derived
+  current status, and adding explicit no-inheritance boundaries. The consumer
+  formulas remain unchanged and do not consume Block 1's corrected `H` values
+  or channel ordering; Block 1's cubic-Casimir label/equivariance repair
+  remains subject to independent re-audit. The paired runners now fail on any
+  return of literal status pins or removal of those boundaries, and their
+  canonical caches were refreshed.
 
 - `2026-06-12-pr3511-theta-retirement-gate`
   PR #3511 preserved a review of the former admission-era theta treatment.

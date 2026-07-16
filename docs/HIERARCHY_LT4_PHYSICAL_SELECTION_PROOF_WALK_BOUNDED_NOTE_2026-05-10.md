@@ -3,8 +3,8 @@
 **Current premise authority (2026-07-16):** the legacy “admission”
 terminology in earlier versions is normalized here to three explicit
 conditional inputs. None of those inputs is an axiom or approved primitive
-in `axiom_premise_nodes.json`, so none chain-satisfies a dependency. Their
-current live-ledger rows are `unaudited`.
+in `axiom_premise_nodes.json`, and their current live-ledger rows are
+`unaudited`; consequently none currently chain-satisfies a dependency.
 
 **Date:** 2026-05-10
 **Claim type:** bounded_theorem
@@ -316,9 +316,10 @@ The runner verifies the finite algebraic content:
    (finite context check only; non-uniform at `L_t = 6`).
 6. **T6.** Conditional-input catalogue: the proof-walk has exactly
    three explicit inputs, each tied to a live upstream authority row
-   and absent from the approved axiom/primitive registry. The runner
-   reads both governance files so the non-chain-satisfying conditional
-   shape is checked at runtime.
+   that is neither retained-grade nor present in the approved
+   axiom/primitive registry. The runner reads tracked governance shards
+   so the non-chain-satisfying conditional shape is checked at runtime
+   without pinning one exact mutable audit status.
 7. **T7.** Forbidden-imports check: the runner re-derives T1-T5
    from `cmath` / `math` only, with **no** import of PDG values,
    `M_Pl`, `α_LM`, `u_0`, or any framework numerical constant.

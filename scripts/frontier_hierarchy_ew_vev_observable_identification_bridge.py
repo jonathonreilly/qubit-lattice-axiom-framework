@@ -8,7 +8,7 @@ Under supplied explicit context inputs C1-C4:
   C1 (= hierarchy primitive P1)  M_Pl import (non-reduced, via Wald-Noether matching)
   C2 (= hierarchy primitive P2)  Wick-rotated Z^3 -> Z^4 taste count (2^4 = 16)
   C3 (= hierarchy primitive P3)  u_0^16 -> alpha_LM^16 substitution
-  C4                   observable-principle scalar-additivity premise
+  C4                   observable-principle scalar-additivity condition
 
 the dimension-one hierarchy-formula output
 
@@ -89,11 +89,17 @@ def s1_alpha_one_over_d() -> bool:
 
 def s1_unique_at_d4() -> bool:
     # The map d -> 1/d is injective on positive integers, so 1/d = 1/4 has
-    # the unique integer solution d = 4.
-    for d in range(1, 10):
-        if Fraction(1, d) == Fraction(1, 4) and d != 4:
-            return False
-    return Fraction(1, 4) == Fraction(1, 4)  # trivial sanity
+    # the unique integer solution d = 4. Cross-multiplication gives the
+    # linear numerator 4-d, so this certificate is not a finite scan.
+    d = sp.symbols("d", integer=True, positive=True)
+    numerator, denominator = sp.fraction(
+        sp.together(1 / d - sp.Rational(1, 4))
+    )
+    return (
+        sp.expand(numerator) == 4 - d
+        and denominator == 4 * d
+        and sp.solve(sp.Eq(numerator, 0), d) == [4]
+    )
 
 check("(B1) alpha = 1/d solves [C_M * f^alpha] = 1 given [f] = d",
       s1_alpha_one_over_d,

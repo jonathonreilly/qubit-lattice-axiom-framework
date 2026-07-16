@@ -164,14 +164,11 @@ def part6_conditional_inputs_governance_check() -> None:
     data_dir = (
         pathlib.Path(__file__).resolve().parent.parent / "docs" / "audit" / "data"
     )
-    ledger_path = data_dir / "audit_ledger.json"
     axiom_registry_path = data_dir / "axiom_premise_nodes.json"
-    with ledger_path.open() as f:
-        ledger = json.load(f)
     with axiom_registry_path.open() as f:
         axiom_registry = json.load(f)
-    rows = ledger.get("rows", {})
     approved_ids = set(axiom_registry.get("canonical_ids", []))
+    retained_grade_statuses = {"retained", "retained_bounded", "retained_no_go"}
 
     conditional_inputs = [
         (
@@ -190,24 +187,32 @@ def part6_conditional_inputs_governance_check() -> None:
 
     all_registered_and_conditional = True
     for label, row_id in conditional_inputs:
-        row = rows.get(row_id, {})
+        shard_path = data_dir / "ledger" / row_id[:2] / f"{row_id}.json"
+        row = (
+            json.loads(shard_path.read_text(encoding="utf-8"))
+            if shard_path.exists()
+            else {}
+        )
         actual_status = row.get("effective_status", "<missing>")
         exists = bool(row)
         is_approved_premise = row_id in approved_ids
-        ok = exists and not is_approved_premise
+        is_retained_grade = actual_status in retained_grade_statuses
+        ok = exists and not is_approved_premise and not is_retained_grade
         all_registered_and_conditional = all_registered_and_conditional and ok
         marker = "[OK]" if ok else "[MISMATCH]"
         print(f"  {marker} {label}")
         print(f"      row_id={row_id}")
         print(
             f"      current_effective_status={actual_status} "
-            f"approved_axiom_or_primitive={is_approved_premise}"
+            f"approved_axiom_or_primitive={is_approved_premise} "
+            f"retained_grade={is_retained_grade}"
         )
 
     check(
         "T6: all three explicit inputs have live rows and do not chain-satisfy as approved premises",
         all_registered_and_conditional,
-        "The runner reports current statuses without pinning mutable audit outcomes.",
+        "The runner rejects approved-premise or retained-grade inputs without "
+        "pinning one exact mutable audit status.",
     )
 
 

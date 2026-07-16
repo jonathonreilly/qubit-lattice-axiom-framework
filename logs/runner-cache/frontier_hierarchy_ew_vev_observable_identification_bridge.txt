@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_ew_vev_observable_identification_bridge.py
-runner_sha256: a571f3e636553683d3f15464a2ee4f8c4502029e434301f33a97e2ffea055372
+runner_sha256: 1d839125eaefe8a8f01d03da3508f2e8726bc6e30292df5845800849b7113875
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 Section 1: Dimensional fourth-root compression (retained dependency)

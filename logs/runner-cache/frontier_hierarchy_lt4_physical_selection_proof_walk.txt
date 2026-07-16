@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_lt4_physical_selection_proof_walk.py
-runner_sha256: 3d1278894fc3082f0d89c0984d2885fd20d484686ccd403b32e6070f02fd5d46
+runner_sha256: 33dd500325c7abb3ffa5b2c8bf7c603c973ccc972734c3d403e06848ea556f7e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Hierarchy L_t = 4 physical-selection proof-walk
@@ -58,15 +58,15 @@ PART 6: Conditional-input catalogue (live governance check)
 ==============================================================================
   [OK] staggered-Dirac realization gate
       row_id=staggered_dirac_realization_gate_note_2026-05-03
-      current_effective_status=unaudited approved_axiom_or_primitive=False
+      current_effective_status=unaudited approved_axiom_or_primitive=False retained_grade=False
   [OK] scalar-additivity P1 conditional input
       row_id=observable_principle_from_axiom_note
-      current_effective_status=unaudited approved_axiom_or_primitive=False
+      current_effective_status=unaudited approved_axiom_or_primitive=False retained_grade=False
   [OK] CPT-even phase blindness
       row_id=cpt_exact_note
-      current_effective_status=unaudited approved_axiom_or_primitive=False
+      current_effective_status=unaudited approved_axiom_or_primitive=False retained_grade=False
   [PASS] T6: all three explicit inputs have live rows and do not chain-satisfy as approved premises
-         The runner reports current statuses without pinning mutable audit outcomes.
+         The runner rejects approved-premise or retained-grade inputs without pinning one exact mutable audit status.
 
 ==============================================================================
 PART 7: Forbidden-imports self-check

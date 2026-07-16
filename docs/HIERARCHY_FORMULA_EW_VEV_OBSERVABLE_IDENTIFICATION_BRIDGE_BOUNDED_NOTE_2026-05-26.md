@@ -71,7 +71,8 @@ conditional inputs so that the bridge's scope is auditable.
   [`NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md`](NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md);
   the staggered-Dirac realization gate
   [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-  is `audited_renaming`. C2 is the **exponent** input.
+  remains a non-chain-satisfying conditional input. C2 is the
+  **exponent** input.
 - **C3 (= hierarchy P3) — `u_0^16 → α_LM^16` substitution.** Algebraic
   identity `α_LM^16 = α_bare^16 / u_0^16` carries the bare-coupling
   prefactor `α_bare^16 = (1/4π)^16 ≈ 2.59 × 10^(-18)`. The retained
@@ -86,11 +87,11 @@ conditional inputs so that the bridge's scope is auditable.
   `≈ 2.59 × 10^(-18)`. The downstream `α_LM^16 ≈ 2.09 × 10^(-17)` and
   the `v_hierarchy ≈ 246.28 GeV` arithmetic are unaffected because the
   `u_0^(-16) ≈ 8.07` factor multiplies through correctly.)
-- **C4 — Observable-principle scalar-additivity premise.** The
-  historically recorded conditional premise of
+- **C4 — Observable-principle scalar-additivity conditional input.** The
+  historically recorded condition from
   [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
   (scalar additivity over
-  independent subsystems plus its phase-blind scalar-generator premise). This
+  independent subsystems plus its phase-blind scalar-generator condition). This
   fixes the readout map from the framework's mean-field output to a
   scalar observable. Distinct from hierarchy P1-P4.
 
@@ -148,7 +149,7 @@ primitives remain explicit context inputs:
 | Primitive | Bridge slot | Open work |
 |---|---|---|
 | P1 (M_Pl import) | C1 | Wald-Noether algebraic skeleton retained; metric-compatible coframe response + gravitational boundary density bridge premises unaudited/conditional |
-| P2 (Wick `Z^3 → Z^4`) | C2 | Six retained substep theorems; staggered-Dirac realization gate `audited_renaming` (open) |
+| P2 (Wick `Z^3 → Z^4`) | C2 | Six retained substep theorems; staggered-Dirac realization gate remains a non-chain-satisfying conditional input |
 | P3 (`u_0^16 → α_LM^16`) | C3 | Regulator-dependence no-go row records the substrate-regulator boundary; bare-coupling `(4π)^(-16)` prefactor is continuum Fourier-measure inheritance, not Cl(3) derived |
 | P4 (observable identification, **this bridge**) | bounded_theorem here | The retained EW diagonalization + retained dimensional compression + Riemann-Dirichlet source theorem pending re-audit + retained `α_LM` identity make the assignment internally consistent GIVEN C1-C4 |
 
@@ -248,7 +249,7 @@ and from the independent audit lane.
   — C3 regulator-dependence boundary for the species-count to
   hierarchy-exponent bridge.
 - [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
-  — C4 scalar readout premise.
+  — C4 scalar readout conditional input.
 
 ## 8. Non-Load-Bearing Context
 
@@ -263,7 +264,7 @@ and from the independent audit lane.
   selector note (unaudited), discussed in the curve-fit defense §5.1.
 - `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` (unaudited) —
   supplies C4 scalar-additivity / phase-blind scalar-generator
-  premise as historical provenance, not as a chain-satisfying class.
+  condition as historical provenance, not as a chain-satisfying class.
 - `BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`
   (retained) — algebraic skeleton for C1 (M_Pl import via Wald-Noether).
 - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` — historical

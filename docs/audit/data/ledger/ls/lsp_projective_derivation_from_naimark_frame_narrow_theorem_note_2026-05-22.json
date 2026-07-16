@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem candidate",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1721,6 +1721,69 @@
         "total_pass": 0
       },
       "verdict_rationale": "The explicit isometry and Kraus contraction correctly establish the narrow canonical L\u00fcders result without requiring a runner. Step 3 is overbroad: with fixed apparatus readout, arbitrary V_A mixes outcome labels and generally gives K_r=U_sys \u03a3_s\u27e8r|V_A|s\u27e9P_s, whose effect need not equal P_r. The clean core survives after restricting to V_A=\ud835\udfd9_A or explicitly rotating the apparatus readout basis."
+    },
+    {
+      "archived_at": "2026-07-16T01:42:22.084117+00:00",
+      "audit_date": "2026-07-16T01:42:08.027425+00:00",
+      "audit_invocation_history": [
+        "8f4691d3bf984da4bd7b0faa222b328a"
+      ],
+      "audit_invocation_id": "8f4691d3bf984da4bd7b0faa222b328a",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 13.99,
+        "runner_hash": null,
+        "transitive_descendants": 718
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-lsp_projective_derivatio-100",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The canonical K_r=P_r and P_r E P_r clauses close algebraically. The apparatus-twist clause does not: with the original readout basis, V_A gives K_r=U_sys \u03a3_s\u27e8r|V_A|s\u27e9P_s and generally K_r\u2020K_r=\u03a3_s|\u27e8r|V_A|s\u27e9|\u00b2P_s rather than P_r; the note neither performs nor states the required co-rotation of the readout basis.",
+      "claim_scope": "The canonical finite-dimensional construction yields K_r=P_r and P_r E P_r; an arbitrary apparatus-unitary twist preserves the labeled POVM only if the apparatus readout basis is correspondingly rotated.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-16T01:42:08.027425+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substituting the explicitly constructed isometry U_int(\u03c8\u2297|0\u27e9)=\u03a3_r P_r\u03c8\u2297|r\u27e9 into K_r=\u27e8r|U_int(\ud835\udfd9\u2297|0\u27e9) gives K_r=P_r.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Correct Step 3 by deriving the mixed Kraus operators and either co-rotating the apparatus readout basis or restricting V_A to transformations that preserve the labeled projections, then re-audit the same scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The self-contained canonical construction is a valid class-(A) calculation and needs no missing runner to judge. Step 3 nevertheless incorrectly says that an arbitrary apparatus unitary V_A, with the readout basis left as written, implements the same labeled POVM. For the embedded derived negative boundary, N1/N4 are supplied by the explicit U_sys P_r counterfamily; N2 has only the fixed-later-effect boundary, N3 exposes the canonical convention rather than hiding it, and N5 supports nonuniqueness rather than exhaustive impossibility. The N6/N8 candidates are unrelated to this measurement calculation and no independent N7 execution is supplied, but those limitations do not cure the explicit V_A error."
     }
   ],
   "prose_corrections": [],

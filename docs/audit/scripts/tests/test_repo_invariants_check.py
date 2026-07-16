@@ -63,13 +63,14 @@ class CollectLedgerSchemaTest(unittest.TestCase):
         self._old_root = ric.REPO_ROOT
         ric.REPO_ROOT = self._tmp.name
         self.addCleanup(self._restore)
-        shard_dir = Path(self._tmp.name) / ric.LEDGER_PREFIX / "aa"
-        shard_dir.mkdir(parents=True)
-        (shard_dir / "good_note.json").write_text(json.dumps(
+        base = Path(self._tmp.name) / ric.LEDGER_PREFIX
+        (base / "go").mkdir(parents=True)
+        (base / "aa").mkdir(parents=True)
+        (base / "go" / "good_note.json").write_text(json.dumps(
             {"claim_id": "good_note", "effective_status": "unaudited",
              "note_path": "docs/GOOD_NOTE.md"}))
-        (shard_dir / "list_shard.json").write_text("[]")
-        (shard_dir / "null_claim.json").write_text(json.dumps(
+        (base / "aa" / "list_shard.json").write_text("[]")
+        (base / "aa" / "null_claim.json").write_text(json.dumps(
             {"claim_id": None, "effective_status": "retained"}))
 
     def _restore(self):
@@ -78,7 +79,7 @@ class CollectLedgerSchemaTest(unittest.TestCase):
 
     def test_schema_invalid_shards_recorded_not_crashed(self):
         tracked = [
-            ric.LEDGER_PREFIX + "aa/good_note.json",
+            ric.LEDGER_PREFIX + "go/good_note.json",
             ric.LEDGER_PREFIX + "aa/list_shard.json",
             ric.LEDGER_PREFIX + "aa/null_claim.json",
             "docs/GOOD_NOTE.md",
@@ -96,7 +97,7 @@ class CollectLedgerSchemaTest(unittest.TestCase):
         # An extra shard exists on disk but is not in the tracked list.
         extra = Path(self._tmp.name) / ric.LEDGER_PREFIX / "aa" / "scratch.json"
         extra.write_text(json.dumps({"claim_id": "scratch"}))
-        tracked = [ric.LEDGER_PREFIX + "aa/good_note.json", "docs/GOOD_NOTE.md"]
+        tracked = [ric.LEDGER_PREFIX + "go/good_note.json", "docs/GOOD_NOTE.md"]
         result = ric.collect_ledger(tracked)
         self.assertEqual(result["shard_count"], 1)
         self.assertNotIn("scratch", json.dumps(result))
@@ -272,14 +273,15 @@ class ShardSchemaRoundTwoProbes(unittest.TestCase):
             old = ric.REPO_ROOT
             ric.REPO_ROOT = tmp
             try:
-                d = Path(tmp) / ric.LEDGER_PREFIX / "aa"
-                d.mkdir(parents=True)
-                (d / "liststatus.json").write_text(
+                base = Path(tmp) / ric.LEDGER_PREFIX
+                (base / "li").mkdir(parents=True)
+                (base / "aa").mkdir(parents=True)
+                (base / "li" / "liststatus.json").write_text(
                     json.dumps({"claim_id": "liststatus", "effective_status": ["retained"]})
                 )
-                (d / "badbytes.json").write_bytes(b'\xff\xfe{"claim_id"')
+                (base / "aa" / "badbytes.json").write_bytes(b'\xff\xfe{"claim_id"')
                 tracked = [
-                    ric.LEDGER_PREFIX + "aa/liststatus.json",
+                    ric.LEDGER_PREFIX + "li/liststatus.json",
                     ric.LEDGER_PREFIX + "aa/badbytes.json",
                 ]
                 result = ric.collect_ledger(tracked)
@@ -408,15 +410,16 @@ class RoundThreeLedgerProbes(unittest.TestCase):
             old = ric.REPO_ROOT
             ric.REPO_ROOT = tmp
             try:
-                d = Path(tmp) / ric.LEDGER_PREFIX / "aa"
-                d.mkdir(parents=True)
-                (d / "alpha.json").write_text(json.dumps(
+                base = Path(tmp) / ric.LEDGER_PREFIX
+                (base / "aa").mkdir(parents=True)
+                (base / "ty").mkdir(parents=True)
+                (base / "aa" / "alpha.json").write_text(json.dumps(
                     {"claim_id": "beta", "effective_status": "unaudited"}))
-                (d / "typo.json").write_text(json.dumps(
+                (base / "ty" / "typo.json").write_text(json.dumps(
                     {"claim_id": "typo", "effective_status": "retianed"}))
                 result = ric.collect_ledger([
                     ric.LEDGER_PREFIX + "aa/alpha.json",
-                    ric.LEDGER_PREFIX + "aa/typo.json",
+                    ric.LEDGER_PREFIX + "ty/typo.json",
                 ])
                 errors = " ".join(result["shard_parse_errors"])
                 self.assertIn("!= filename stem", errors)
@@ -465,16 +468,17 @@ class RoundFourProbes(unittest.TestCase):
             old = ric.REPO_ROOT
             ric.REPO_ROOT = tmp
             try:
-                d = Path(tmp) / ric.LEDGER_PREFIX / "aa"
-                d.mkdir(parents=True)
-                (d / "noname.json").write_text(json.dumps(
+                base = Path(tmp) / ric.LEDGER_PREFIX
+                (base / "no").mkdir(parents=True)
+                (base / "em").mkdir(parents=True)
+                (base / "no" / "noname.json").write_text(json.dumps(
                     {"claim_id": "noname", "effective_status": "unaudited"}))
-                (d / "empty.json").write_text(json.dumps(
+                (base / "em" / "empty.json").write_text(json.dumps(
                     {"claim_id": "empty", "effective_status": "unaudited",
                      "note_path": ""}))
                 result = ric.collect_ledger([
-                    ric.LEDGER_PREFIX + "aa/noname.json",
-                    ric.LEDGER_PREFIX + "aa/empty.json",
+                    ric.LEDGER_PREFIX + "no/noname.json",
+                    ric.LEDGER_PREFIX + "em/empty.json",
                 ])
                 self.assertEqual(len(result["shard_parse_errors"]), 2)
             finally:
@@ -515,6 +519,53 @@ class RoundFourProbes(unittest.TestCase):
                 second = ric.collect_authority_links(["README.md"])
                 self.assertEqual(first["violations"], second["violations"])
                 self.assertEqual(first["violations"][0]["reason"], "not-tracked")
+            finally:
+                ric.REPO_ROOT = old
+
+
+
+
+class RoundFiveProbes(unittest.TestCase):
+    def test_wrong_fanout_is_a_schema_error(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old = ric.REPO_ROOT
+            ric.REPO_ROOT = tmp
+            try:
+                base = Path(tmp) / ric.LEDGER_PREFIX
+                (base / "zz").mkdir(parents=True)
+                (base / "zz" / "alpha.json").write_text(json.dumps(
+                    {"claim_id": "alpha", "effective_status": "unaudited",
+                     "note_path": "docs/A.md"}))
+                result = ric.collect_ledger(
+                    [ric.LEDGER_PREFIX + "zz/alpha.json", "docs/A.md"])
+                self.assertIn("not at canonical shard path",
+                              " ".join(result["shard_parse_errors"]))
+            finally:
+                ric.REPO_ROOT = old
+
+    def test_irregular_authority_surface_fails_check(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(os.path.realpath(tmp))
+            subprocess.run(["git", "init", "-q", str(root)], check=True)
+            target = root / "REAL.md"
+            target.write_text("[authority](docs/MISSING.md)")
+            (root / "README.md").symlink_to(target)
+            subprocess.run(["git", "-C", str(root), "add", "-A"], check=True)
+            # minimal registries so build_snapshot parses
+            for rel, payload in ((ric.PREMISE_NODES, {"nodes": {}}),
+                                 (ric.OBLIGATIONS, {"nodes": {}})):
+                p = root / rel
+                p.parent.mkdir(parents=True, exist_ok=True)
+                p.write_text(json.dumps(payload))
+            subprocess.run(["git", "-C", str(root), "add", "-A"], check=True)
+            old = ric.REPO_ROOT
+            ric.REPO_ROOT = str(root)
+            try:
+                out = io.StringIO()
+                with redirect_stdout(out):
+                    code = ric.run_check(False)
+                self.assertEqual(code, 1)
+                self.assertIn("not regular files", out.getvalue())
             finally:
                 ric.REPO_ROOT = old
 

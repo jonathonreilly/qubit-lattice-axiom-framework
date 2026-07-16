@@ -86,6 +86,7 @@ RETAINED_GRADE_EXACT = {"retained", "retained_bounded", "retained_no_go"}
 # two tools cannot drift (BUG-17).
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from audit_lint import ALLOWED_EFFECTIVE_STATUSES  # noqa: E402
+from ledger_io import shard_path as _canonical_shard_path  # noqa: E402
 
 _MISSING = object()
 
@@ -306,21 +307,6 @@ def _git_tracked_files() -> list:
     return sorted(p for p in proc.stdout.split("\0") if p)
 
 
-def _gitignored(paths: list) -> set:
-    """Return the subset of repo-relative paths that are gitignored."""
-    if not paths:
-        return set()
-    proc = subprocess.run(
-        ["git", "-C", REPO_ROOT, "check-ignore", "--stdin"],
-        input="\n".join(paths),
-        capture_output=True,
-        text=True,
-    )
-    # exit 0: some ignored; 1: none ignored; >1: real error
-    if proc.returncode > 1:
-        raise RuntimeError(f"git check-ignore failed: {proc.stderr.strip()}")
-    return set(proc.stdout.splitlines())
-
 
 def collect_ledger(tracked: list) -> dict:
     shard_paths = [p for p in tracked if p.startswith(LEDGER_PREFIX) and p.endswith(".json")]
@@ -351,6 +337,22 @@ def collect_ledger(tracked: list) -> dict:
             # Canonical shard identity (ledger_io): claim_id must match the
             # shard filename stem (BUG-17).
             parse_errors.append(f"{shard}: claim_id {claim_id!r} != filename stem {stem!r}")
+        else:
+            # Canonical placement (ledger_io.shard_path): shard-safe id at
+            # exactly ledger/<id[:2]>/<id>.json — a moved or mis-fanned shard
+            # is unreadable by the canonical loader (BUG-23).
+            try:
+                # ledger_io owns the shard-safe id rule and the fanout rule;
+                # anchor its fanout under our tracked prefix so the check is
+                # REPO_ROOT-independent.
+                canonical = _canonical_shard_path(claim_id)
+                canonical_rel = f"{LEDGER_PREFIX}{canonical.parent.name}/{canonical.name}"
+                if shard != canonical_rel:
+                    parse_errors.append(
+                        f"{shard}: not at canonical shard path {canonical_rel}"
+                    )
+            except ValueError as exc:
+                parse_errors.append(f"{shard}: {exc}")
         claim_ids.append(claim_id)
         status = row.get("effective_status")
         if status is None:
@@ -595,6 +597,12 @@ def run_check(enforce_links: bool) -> int:
     if unexpected:
         failures.append(f"unexpected duplicate doc basenames: {unexpected}")
 
+    irregular = snapshot["authority_links"].get("irregular_surfaces", [])
+    if irregular:
+        failures.append(
+            "authority surfaces are not regular files (unscannable, refusing "
+            f"to certify): {irregular}"
+        )
     link_violations = snapshot["authority_links"]["violations"]
     if link_violations:
         lines = [

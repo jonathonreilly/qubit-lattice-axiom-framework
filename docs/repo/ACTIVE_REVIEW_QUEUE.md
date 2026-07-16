@@ -27,6 +27,16 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-07-16-uv-gauge-yukawa-direct-consumer-scope-drift`
+  Scope: the seven unaudited direct consumers of
+  `UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`.
+  Finding: several consumers still cite that bridge for retired
+  governing-expansion selection, canonical-surface `alpha_LM`, or historical
+  `delta_PT`/NLO prose that the bridge no longer contains. PR #5414 does not
+  change the public `C_strong = 1/N_c^2` convention, so synchronized claim-note
+  hash churn is not justified in that narrow projector repair; the stale
+  citations remain unaudited and must not inherit authority from it.
+  Disposition: `fix on main`.
 - `2026-07-16-su3-wigner-downstream-status-prose-drift`
   Scope:
   `SU3_WIGNER_BLOCK4_STAGING_BLOCK5_ORIENTATION_DIAGNOSTICS_NARROW_THEOREM_NOTE_2026-05-10.md`

@@ -8,11 +8,17 @@ shared Ward runner, because that runner is load-bearing for other audited rows.
 It checks only the repaired bounded surface:
 
 * C_pert = 1/(2*N_c) from finite SU(3) Fierz algebra;
-* C_strong = 1/N_c^2 from the leading one-link Haar contraction;
+* the normalized singlet S_ab = delta_ab/sqrt(N_c);
+* the rank-one projector Pi_1(ab;cd) = delta_ab delta_cd/N_c;
+* the exact pair-space contraction Pi_1 H Pi_1 = (1/N_c) Pi_1;
+* C_strong = 1/N_c^2 as the coefficient of delta_ab delta_cd, derived rather
+  than hard-coded;
 * the two coefficients differ;
 * the Dirac scalar/pseudoscalar Fierz channels are nonzero and tensor vanishes;
 * the Q_L singlet overlap is 1/sqrt(6);
 * the source note excludes the old expansion-domain selector claim.
+
+The pair ordering is (ab);(cd), and U^dag_cd means conjugate(U_dc).
 """
 
 from __future__ import annotations
@@ -22,6 +28,7 @@ from itertools import product
 from pathlib import Path
 
 import numpy as np
+import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md"
@@ -55,6 +62,8 @@ def source_firewall() -> None:
         "This row does not prove perturbative convergence",
         "No new axiom is introduced",
         "bounded coefficient support/comparison note",
+        "normalized-projector coefficient is",
+        "coefficient of the unnormalized tensor",
     ]
     forbidden = [
         "the perturbative expansion is convergent",
@@ -80,7 +89,7 @@ def su3_generators() -> list[np.ndarray]:
     return [lam / 2.0 for lam in (l1, l2, l3, l4, l5, l6, l7, l8)]
 
 
-def check_su3_fierz() -> float:
+def check_su3_fierz() -> sp.Rational:
     print("\n" + "=" * 78)
     print("PART 1: SU(3) FIERZ AND PERTURBATIVE COEFFICIENT")
     print("=" * 78)
@@ -100,9 +109,9 @@ def check_su3_fierz() -> float:
             - (1.0 / N_c) * (1.0 if a == b else 0.0) * (1.0 if c == d else 0.0)
         )
         fierz_err = max(fierz_err, abs(lhs - rhs))
-    c_pert = 1.0 / (2.0 * N_c)
+    c_pert = sp.Rational(1, 2 * N_c)
     check("SU(3) Fierz identity holds entrywise", fierz_err < 1e-14, f"max err={fierz_err:.2e}")
-    check("C_pert = 1/(2*N_c) = 1/6", abs(c_pert - 1.0 / 6.0) < 1e-15)
+    check("C_pert = 1/(2*N_c) = 1/6", c_pert == sp.Rational(1, 6))
     return c_pert
 
 
@@ -115,27 +124,171 @@ def random_sun_haar(n: int, rng: np.random.Generator) -> np.ndarray:
     return q * (det_q.conj()) ** (1.0 / n)
 
 
-def check_strong_coupling(c_pert: float) -> None:
+def pair_operator(n: int, entry) -> sp.Matrix:
+    """Flatten a rank-four tensor with pair ordering (ab);(cd)."""
+    pairs = list(product(range(n), repeat=2))
+    return sp.Matrix(n * n, n * n, lambda i, j: entry(*pairs[i], *pairs[j]))
+
+
+def hs_inner(left: sp.Matrix, right: sp.Matrix) -> sp.Expr:
+    """Exact Hilbert-Schmidt inner product for equal-size pair operators."""
+    return sp.simplify(
+        sum(
+            sp.conjugate(left[i, j]) * right[i, j]
+            for i in range(left.rows)
+            for j in range(left.cols)
+        )
+    )
+
+
+def coefficient_along(basis: sp.Matrix, tensor: sp.Matrix) -> sp.Expr:
+    return sp.simplify(hs_inner(basis, tensor) / hs_inner(basis, basis))
+
+
+def check_strong_coupling(c_pert: sp.Rational) -> None:
     print("\n" + "=" * 78)
-    print("PART 2: ONE-LINK HAAR CONTRACTION AND STRONG COEFFICIENT")
+    print("PART 2: EXACT SINGLET PROJECTOR AND STRONG COEFFICIENT")
     print("=" * 78)
+
+    n = N_c
+    pairs = list(product(range(n), repeat=2))
+
+    def delta(i: int, j: int) -> sp.Integer:
+        return sp.Integer(i == j)
+
+    def haar_entry(a: int, b: int, c: int, d: int) -> sp.Expr:
+        return sp.Rational(1, n) * delta(a, d) * delta(b, c)
+
+    singlet = sp.Matrix([delta(a, b) / sp.sqrt(n) for a, b in pairs])
+    unnormalized_singlet = pair_operator(
+        n, lambda a, b, c, d: delta(a, b) * delta(c, d)
+    )
+    projector = sp.simplify(singlet * singlet.H)
+    expected_projector = unnormalized_singlet / n
+    haar = pair_operator(n, haar_entry)
+
+    singlet_norm = sp.simplify((singlet.H * singlet)[0])
+    check("S_ab = delta_ab/sqrt(N_c) has unit norm", singlet_norm == 1)
+    check("Pi_1 = S S^dag = delta_ab delta_cd/N_c entrywise", projector == expected_projector)
+    check("Pi_1 is Hermitian", projector.H == projector)
+    check("Pi_1 is idempotent", projector * projector == projector)
+    check("Pi_1 has rank one", projector.rank() == 1)
+    check("Tr(Pi_1) = 1", sp.trace(projector) == 1)
+    check("||Pi_1||_HS^2 = 1", hs_inner(projector, projector) == 1)
+
+    expected_eigenvector = singlet / n
+    check("H S = (1/N_c) S", haar * singlet == expected_eigenvector)
+    sandwich = sp.simplify(projector * haar * projector)
+    check("Pi_1 H Pi_1 = (1/N_c) Pi_1", sandwich == projector / n)
+
+    projector_coeff = coefficient_along(projector, haar)
+    projected_component = sp.simplify(projector_coeff * projector)
+    check(
+        "normalized-projector coefficient is 1/N_c",
+        projector_coeff == sp.Rational(1, n),
+        f"alpha_1={projector_coeff}",
+    )
+    check(
+        "singlet component reconstructs delta_ab delta_cd/N_c^2",
+        projected_component == unnormalized_singlet / (n * n),
+    )
+
+    c_strong_direct = coefficient_along(unnormalized_singlet, haar)
+    c_strong_reconstructed = coefficient_along(
+        unnormalized_singlet, projected_component
+    )
+    check("<D,H>_HS = 1", hs_inner(unnormalized_singlet, haar) == 1)
+    check(
+        "||D||_HS^2 = N_c^2",
+        hs_inner(unnormalized_singlet, unnormalized_singlet) == n * n,
+    )
+    check(
+        "unnormalized-tensor coefficient is C_strong = 1/N_c^2",
+        c_strong_direct == sp.Rational(1, n * n),
+        f"C_strong={c_strong_direct}",
+    )
+    check(
+        "direct and reconstructed C_strong agree",
+        c_strong_reconstructed == c_strong_direct,
+    )
+    check(
+        "C_strong times delta_ab delta_cd reconstructs the singlet component",
+        c_strong_direct * unnormalized_singlet == projected_component,
+    )
+    check("N_c=3 gives C_strong = 1/9", c_strong_direct == sp.Rational(1, 9))
+
+    # Conjugation/index convention: U^dag_cd = conjugate(U_dc).  Using
+    # conjugate(U_cd) instead gives a different rank-four tensor.
+    wrong_conjugation_order = pair_operator(
+        n,
+        lambda a, b, c, d: sp.Rational(1, n) * delta(a, c) * delta(b, d),
+    )
+    check(
+        "U^dag_cd ordering is distinct from conjugate(U_cd) ordering",
+        wrong_conjugation_order != haar,
+    )
+
+    # Hostile control 1: one of the two 1/sqrt(N_c) factors is omitted.
+    half_normalized_projector = unnormalized_singlet / sp.sqrt(n)
+    check(
+        "HOSTILE: omitting one projector normalization factor breaks idempotence",
+        half_normalized_projector * half_normalized_projector
+        != half_normalized_projector,
+    )
+    check(
+        "HOSTILE: one-factor projector has trace sqrt(N_c), not one",
+        sp.trace(half_normalized_projector) == sp.sqrt(n),
+    )
+
+    # Hostile control 2: 1/N_c is the Pi_1 coefficient, not the D coefficient.
+    confused_reconstruction = sp.simplify(projector_coeff * unnormalized_singlet)
+    check(
+        "HOSTILE: normalized-projector and unnormalized-tensor coefficients differ",
+        projector_coeff != c_strong_direct,
+    )
+    check(
+        "HOSTILE: using 1/N_c on delta_ab delta_cd is too large by N_c",
+        confused_reconstruction != projected_component
+        and confused_reconstruction == n * projected_component,
+    )
+
+    # Hostile control 3: exchanging b and d changes H into Pi_1 and changes
+    # the projected channel coefficient from 1/N_c to 1.
+    permuted_haar = pair_operator(
+        n, lambda a, b, c, d: haar_entry(a, d, c, b)
+    )
+    permuted_projector_coeff = coefficient_along(projector, permuted_haar)
+    permuted_unnormalized_coeff = coefficient_along(
+        unnormalized_singlet, permuted_haar
+    )
+    check("HOSTILE: b<->d permutation changes H into Pi_1", permuted_haar == projector)
+    check(
+        "HOSTILE: permuted channel has normalized-projector coefficient 1",
+        permuted_projector_coeff == 1 and permuted_projector_coeff != projector_coeff,
+    )
+    check(
+        "HOSTILE: permuted channel has D coefficient 1/N_c, not 1/N_c^2",
+        permuted_unnormalized_coeff == sp.Rational(1, n)
+        and permuted_unnormalized_coeff != c_strong_direct,
+    )
+
+    print("\n  Numerical support for the starting Haar identity:")
     rng = np.random.default_rng(20260529)
     n_samples = 20_000
-    sample = np.zeros((N_c, N_c, N_c, N_c), dtype=complex)
+    sample = np.zeros((n, n, n, n), dtype=complex)
     for _ in range(n_samples):
-        u = random_sun_haar(N_c, rng)
+        u = random_sun_haar(n, rng)
+        # einsum label dc implements U^dag_cd = conjugate(U_dc).
         sample += np.einsum("ab,dc->abcd", u, u.conj()) / n_samples
     expected = np.zeros_like(sample)
-    for a, b, c, d in product(range(N_c), repeat=4):
-        expected[a, b, c, d] = (1.0 / N_c) if (a == d and b == c) else 0.0
+    for a, b, c, d in product(range(n), repeat=4):
+        expected[a, b, c, d] = (1.0 / n) if (a == d and b == c) else 0.0
     mc_err = float(np.max(np.abs(sample - expected)))
-    c_strong = 1.0 / (N_c * N_c)
     check("Haar witness for integral dU U_ab U^dag_cd", mc_err < 0.02, f"max err={mc_err:.3f}")
-    check("C_strong = 1/N_c^2 = 1/9", abs(c_strong - 1.0 / 9.0) < 1e-15)
     check(
         "C_pert and C_strong are distinct coefficients",
-        abs(c_pert - c_strong) > 0.01,
-        f"delta={abs(c_pert - c_strong):.4f}; selector out of scope",
+        c_pert != c_strong_direct,
+        f"delta={float(abs(c_pert - c_strong_direct)):.4f}; selector out of scope",
     )
 
 

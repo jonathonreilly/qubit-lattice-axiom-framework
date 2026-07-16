@@ -2,21 +2,27 @@
 """Finite SU(3) verifier for the repaired Gauge OS Step 1 narrow theorem.
 
 The tested theorem is deliberately restricted to the trivial temporal
-Polyakov-holonomy sector.  It separates:
+Polyakov-holonomy, U_0=I sector.  It separates:
 
 * the exact Wilson-action split on a finite even periodic carrier;
 * the criterion and construction for periodic complete temporal gauge;
-* positive-half support of a declared observable f;
-* reflection-Hermiticity, but not plus-locality, of
+* a worked raw-link support witness for one declared f from the still-open
+  downstream positive-half admissibility bridge;
+* reflection-Hermiticity only for the explicitly symmetrized class
   F = f + conj(f o Theta).
 
 Hostile controls are computational: nontrivial temporal holonomy, a missing
 periodic-wrap plaquette family, a wrong temporal reflection orientation, a
-negative-half leak into f, and the attempted classification of F as plus-local.
+negative-half leak into f, an unsymmetrized reflection-Hermiticity overclaim,
+and the attempted classification of F as plus-local.  The source-scope gate
+parses an exact export contract and discovers direct consumers from the tracked
+sharded ledger without reading or pinning audit outcomes.
 """
 
 from __future__ import annotations
 
+import json
+import re
 import sys
 from pathlib import Path
 from typing import Callable, Iterable
@@ -27,6 +33,12 @@ import numpy as np
 PASS = 0
 FAIL = 0
 LOG: list[str] = []
+
+ROOT = Path(__file__).resolve().parents[1]
+CLAIM_ID = (
+    "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_"
+    "reflection_hermiticity_narrow_theorem_note_2026-06-02"
+)
 
 L_T = 4
 L_S = 2
@@ -40,6 +52,37 @@ Site = tuple[int, int, int, int]
 Plaquette = tuple[int, int, int, int, int, int]
 LinkKey = tuple[int, int, int, int, int]
 Observable = Callable[[np.ndarray], complex]
+
+EXPECTED_EXPORT_CONTRACT = {
+    "carrier": "finite periodic L_t=2n>=4 and L_s>=2",
+    "group_and_action": "pure-gauge SU(N_c) Wilson plaquette action",
+    "sector": (
+        "configurations already satisfying U_0=I; periodic construction from "
+        "an unfixed configuration requires P(x)=I at every spatial site"
+    ),
+    "proved": [
+        (
+            "P_+, P_-, and the two-boundary P_mixed form a disjoint exhaustive "
+            "plaquette partition and "
+            "S_W(U)=S_+(U)+S_+(Theta U)+S_mixed(U)"
+        ),
+        (
+            "the half-actions are real and S_+(Theta U)=S_+(U) on Theta-fixed "
+            "configurations"
+        ),
+        (
+            "F_f=f+conj(f o Theta) is reflection-Hermitian for the explicitly "
+            "symmetrized observable class"
+        ),
+    ],
+    "worked_witness_only": (
+        "one declared spatial plaquette has raw link support contained in E_+"
+    ),
+    "open_downstream_bridge": (
+        "positive-half localization and admissibility of the actual observable "
+        "consumed by any downstream OS argument"
+    ),
+}
 
 
 def record(name: str, ok: bool, detail: str = "") -> None:
@@ -187,6 +230,68 @@ def _partition(plaquettes: Iterable[Plaquette]) -> dict[str, list[Plaquette]]:
     for p in plaquettes:
         parts[_classify_plaquette(p)].append(p)
     return parts
+
+
+def _classify_shape(t_index: int, mu: int, l_t: int) -> str:
+    """Plaquette class for an arbitrary even temporal extent."""
+    t_phys = t_index - l_t // 2
+    if mu != 0:
+        return "plus" if t_phys >= 0 else "minus"
+    if t_phys == -1:
+        return "mixed_plane"
+    if t_phys == l_t // 2 - 1:
+        return "mixed_wrap"
+    return "plus" if t_phys >= 0 else "minus"
+
+
+def _reflected_shape_class(t_index: int, mu: int, l_t: int) -> str:
+    reflected_t = (l_t - 1 - t_index) % l_t
+    if mu == 0:
+        reflected_t = (reflected_t - 1) % l_t
+    return _classify_shape(reflected_t, mu, l_t)
+
+
+def _shape_partition_certificate(l_t: int, l_s: int) -> tuple[bool, str]:
+    """Check the general count formulas and reflection classes by enumeration."""
+    if l_t < 4 or l_t % 2:
+        return False, f"invalid l_t={l_t}"
+    counts = {
+        "plus": 0,
+        "minus": 0,
+        "mixed_plane": 0,
+        "mixed_wrap": 0,
+    }
+    class_map_ok = True
+    for t in range(l_t):
+        for _ in range(l_s**3):
+            for mu in range(4):
+                for _nu in range(mu + 1, 4):
+                    cls = _classify_shape(t, mu, l_t)
+                    counts[cls] += 1
+                    reflected = _reflected_shape_class(t, mu, l_t)
+                    expected = {
+                        "plus": "minus",
+                        "minus": "plus",
+                        "mixed_plane": "mixed_plane",
+                        "mixed_wrap": "mixed_wrap",
+                    }[cls]
+                    class_map_ok = class_map_ok and reflected == expected
+    n = l_t // 2
+    expected = {
+        "plus": 3 * (2 * n - 1) * l_s**3,
+        "minus": 3 * (2 * n - 1) * l_s**3,
+        "mixed_plane": 3 * l_s**3,
+        "mixed_wrap": 3 * l_s**3,
+    }
+    total_ok = sum(counts.values()) == 6 * l_t * l_s**3
+    ok = counts == expected and total_ok and class_map_ok
+    return (
+        ok,
+        (
+            f"L_t={l_t}, L_s={l_s}, counts={counts}, "
+            f"total_ok={total_ok}, theta_map={class_map_ok}"
+        ),
+    )
 
 
 def _reflected_plaquette_class(p: Plaquette) -> str:
@@ -420,6 +525,16 @@ def part_a_carrier_and_decomposition() -> None:
         class_map_ok,
         "P+<->P-; reflection-plane and periodic-wrap families fixed setwise",
     )
+    shape_certificates = [
+        _shape_partition_certificate(l_t, l_s)
+        for l_t in (4, 6, 8, 10)
+        for l_s in (2, 3)
+    ]
+    record(
+        "A.partition.even_periodic_formula_sweep",
+        all(ok for ok, _ in shape_certificates),
+        "; ".join(detail for _, detail in shape_certificates),
+    )
 
     u = _complete_temporal_gauge_config()
     theta_u = _reflect_config(u)
@@ -454,33 +569,42 @@ def part_a_carrier_and_decomposition() -> None:
         f"S+={s_plus:.8f}, S-={s_minus:.8f}, Smixed={s_mixed:.8f}",
     )
 
-    generic = _random_config(SEED + 3)
-    generic_theta = _reflect_config(generic)
-    generic_theta2 = _reflect_config(generic_theta)
-    full_generic = _wilson_action(generic, plaquettes)
-    full_generic_theta = _wilson_action(generic_theta, plaquettes)
+    sector_generic = _complete_temporal_gauge_config(SEED + 3)
+    sector_generic_theta = _reflect_config(sector_generic)
+    sector_generic_theta2 = _reflect_config(sector_generic_theta)
+    full_sector_generic = _wilson_action(sector_generic, plaquettes)
+    full_sector_generic_theta = _wilson_action(sector_generic_theta, plaquettes)
     record(
-        "A.theta.involution_generic",
-        _max_link_difference(generic_theta2, generic) < TOL,
-        f"max_link_diff={_max_link_difference(generic_theta2, generic):.3e}",
+        "A.theta.involution_u0_identity_sector",
+        _max_link_difference(sector_generic_theta2, sector_generic) < TOL,
+        (
+            "max_link_diff="
+            f"{_max_link_difference(sector_generic_theta2, sector_generic):.3e}"
+        ),
     )
     record(
-        "A.action.full_theta_invariance_generic",
-        abs(full_generic - full_generic_theta) < TOL,
-        f"|S(Theta U)-S(U)|={abs(full_generic_theta-full_generic):.3e}",
+        "A.action.full_theta_invariance_u0_identity_sector",
+        abs(full_sector_generic - full_sector_generic_theta) < TOL,
+        (
+            "|S(Theta U)-S(U)|="
+            f"{abs(full_sector_generic_theta-full_sector_generic):.3e}"
+        ),
     )
 
     symmetric = _build_time_symmetric_config()
     symmetric_theta = _reflect_config(symmetric)
+    symmetric_s_plus = _wilson_action(symmetric, p_plus)
+    symmetric_theta_s_plus = _wilson_action(symmetric_theta, p_plus)
     record(
-        "A.action.theta_fixed_consistency",
+        "A.action.theta_fixed_half_reality",
+        np.isreal(symmetric_s_plus),
+        f"S+={symmetric_s_plus:.8f}",
+    )
+    record(
+        "A.action.theta_fixed_half_invariance",
         (
             _max_link_difference(symmetric, symmetric_theta) < TOL
-            and abs(
-                _wilson_action(symmetric, p_plus)
-                - _wilson_action(symmetric_theta, p_plus)
-            )
-            < TOL
+            and abs(symmetric_s_plus - symmetric_theta_s_plus) < TOL
         ),
         f"max_link_diff={_max_link_difference(symmetric, symmetric_theta):.3e}",
     )
@@ -550,7 +674,7 @@ def part_b_temporal_holonomy() -> None:
 
 
 def part_c_localization_and_hermiticity() -> None:
-    print("\n=== Part C: plus-local f versus two-half reflection-Hermitian F ===")
+    print("\n=== Part C: raw-link f witness versus symmetrized F ===")
     u = _complete_temporal_gauge_config(SEED + 4)
     theta_u = _reflect_config(u)
     support_f_plus = all(_is_plus_dynamical_key(key) for key in SUPPORT_F)
@@ -596,6 +720,12 @@ def part_c_localization_and_hermiticity() -> None:
         "C.F.reflection_hermiticity",
         abs(f_full_theta - f_full.conjugate()) < TOL,
         f"|F(Theta U)-conj(F(U))|={abs(f_full_theta-f_full.conjugate()):.3e}",
+    )
+    unsymmetrized_gap = abs(_f_plus(theta_u) - _f_plus(u).conjugate())
+    record(
+        "C.hostile.unsymmetrized_f_not_reflection_hermitian",
+        unsymmetrized_gap > 1.0e-8,
+        f"|f(Theta U)-conj(f(U))|={unsymmetrized_gap:.3e}",
     )
     wrong_full_product = f_full.conjugate() * f_full
     record(
@@ -666,45 +796,140 @@ def part_d_hostile_partition_and_orientation() -> None:
     )
 
 
-NOTE = Path(
+NOTE = ROOT / (
     "docs/"
     "GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_"
     "REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md"
 )
+LEDGER_DIR = ROOT / "docs" / "audit" / "data" / "ledger"
 
 
 def _dependency_in_worktree(filename: str) -> bool:
-    return (Path("docs") / filename).is_file()
+    return (ROOT / "docs" / filename).is_file()
+
+
+def _parse_export_contract(text: str) -> dict | None:
+    start = "<!-- gauge-os-step1-export-contract:start -->"
+    end = "<!-- gauge-os-step1-export-contract:end -->"
+    pattern = re.compile(
+        re.escape(start) + r"\s*```json\s*(\{.*?\})\s*```\s*" + re.escape(end),
+        re.DOTALL,
+    )
+    match = pattern.search(text)
+    if match is None:
+        return None
+    try:
+        parsed = json.loads(match.group(1))
+    except json.JSONDecodeError:
+        return None
+    return parsed if isinstance(parsed, dict) else None
+
+
+def _direct_consumers_from_shards() -> list[tuple[str, Path]]:
+    """Discover direct consumers without consulting status/cache fields."""
+    consumers: list[tuple[str, Path]] = []
+    for shard in sorted(LEDGER_DIR.glob("*/*.json")):
+        raw = shard.read_text(encoding="utf-8")
+        if CLAIM_ID not in raw:
+            continue
+        row = json.loads(raw)
+        if CLAIM_ID not in row.get("deps", []):
+            continue
+        claim_id = row.get("claim_id")
+        note_path = row.get("note_path")
+        if isinstance(claim_id, str) and isinstance(note_path, str):
+            consumers.append((claim_id, ROOT / note_path))
+    return consumers
+
+
+def _consumer_has_noninheritance_firewall(text: str) -> bool:
+    flat = " ".join(text.split())
+    reference_needles = (CLAIM_ID, NOTE.name, NOTE.stem)
+    markers = (
+        "non-load-bearing",
+        "does not by itself prove membership",
+        "supplies neither this blocked membership",
+        "graph-bookkeeping section",
+    )
+    reference_positions: list[int] = []
+    for needle in reference_needles:
+        start = 0
+        while True:
+            position = flat.find(needle, start)
+            if position < 0:
+                break
+            reference_positions.append(position)
+            start = position + len(needle)
+    radius = 600
+    return any(
+        marker in flat[max(0, position - radius) : position + radius]
+        for position in reference_positions
+        for marker in markers
+    )
 
 
 def part_e_scope_firewall() -> None:
-    print("\n=== Part E: source-scope and dependency firewall ===")
+    print("\n=== Part E: source contract and sharded-ledger consumer firewall ===")
     text = NOTE.read_text(encoding="utf-8")
+    contract = _parse_export_contract(text)
+    record(
+        "E.note.export_contract_exact",
+        contract == EXPECTED_EXPORT_CONTRACT,
+        "exact match" if contract == EXPECTED_EXPORT_CONTRACT else repr(contract),
+    )
     required = [
         "trivial temporal Polyakov-holonomy sector",
         "if and only if",
         "supp(f)⊂E_+",
-        "F` is not an admissible positive-half test observable",
-        "does not treat residual\nPolyakov links",
+        "open downstream\nbridge",
+        "No such\nidentity is asserted for an arbitrary unsymmetrized Wilson loop",
         "This source repair does not edit any audit ledger",
     ]
-    forbidden = [
-        "gauge orbit representative choice",
-        "F(U)` is exactly the test-function class",
-        "· |F(U)|²",
-        "Temporal gauge fixing `U_0(x) = I` | gauge orbit representative choice",
+    forbidden_patterns = [
+        r"gauge orbit representative choice",
+        r"representative of (?:a|any|every) (?:general )?periodic gauge orbit",
+        r"every periodic gauge orbit",
+        r"arbitrary periodic gauge orbit",
+        r"symmetrized Wilson-loop observables satisfy reflection-Hermiticity",
+        r"F\(U\)` is exactly the test-function class",
+        r"· \|F\(U\)\|²",
+        r"structural positive-half localization of an explicitly consumed observable",
+        r"`F` is an admissible positive-half test observable",
     ]
     missing = [marker for marker in required if marker not in text]
-    stale = [marker for marker in forbidden if marker in text]
+    stale = [
+        pattern
+        for pattern in forbidden_patterns
+        if re.search(pattern, text, flags=re.IGNORECASE)
+    ]
     record(
         "E.note.required_scope_markers",
         not missing,
         "all present" if not missing else f"missing={missing}",
     )
     record(
-        "E.note.stale_bridge_language_absent",
+        "E.note.unsupported_exports_absent",
         not stale,
         "none present" if not stale else f"stale={stale}",
+    )
+
+    consumers = _direct_consumers_from_shards()
+    consumer_failures: list[str] = []
+    for consumer_id, note_path in consumers:
+        if not note_path.is_file():
+            consumer_failures.append(f"{consumer_id}:missing:{note_path}")
+            continue
+        consumer_text = note_path.read_text(encoding="utf-8")
+        if not _consumer_has_noninheritance_firewall(consumer_text):
+            consumer_failures.append(f"{consumer_id}:missing_noninheritance_firewall")
+    record(
+        "E.direct_consumers.sharded_ledger_noninheritance",
+        bool(consumers) and not consumer_failures,
+        (
+            ", ".join(consumer_id for consumer_id, _ in consumers)
+            if not consumer_failures
+            else "; ".join(consumer_failures)
+        ),
     )
 
     dep = (
@@ -720,13 +945,16 @@ def part_e_scope_firewall() -> None:
 
 def main() -> int:
     print("=" * 78)
-    print("Gauge OS Step 1: trivial-holonomy temporal gauge + plus-local f")
+    print("Gauge OS Step 1: U_0=I sector + symmetrized reflection-Hermiticity")
     print("=" * 78)
     print(
         f"Carrier: (Z/{L_T}) x (Z/{L_S})^3, {L_T*L_S**3} sites, "
         f"SU({N_C}), beta={BETA}, seed={SEED}"
     )
-    print("Scope: pure Wilson action; P(x)=I sector; no full RP or residual Polyakov claim.")
+    print(
+        "Scope: pure Wilson action; P(x)=I/U_0=I sector; raw-link f is a "
+        "worked witness only; downstream OS admissibility remains open."
+    )
 
     part_a_carrier_and_decomposition()
     part_b_temporal_holonomy()

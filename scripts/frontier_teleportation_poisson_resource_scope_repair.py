@@ -65,7 +65,10 @@ def main() -> int:
     print("-" * 72)
     check("note declares open_gate type", "**Type:** open_gate" in note)
     check("note declares open_gate claim type", "**Claim type:** open_gate" in note)
-    check("note has no source-side status authority", "Status authority" not in note)
+    check(
+        "note routes status through the independent audit lane (does not set status itself)",
+        "independent audit lane only" in note and "does not set status" in note,
+    )
     check(
         "note says this is not a deterministic-resource theorem",
         has_phrase(note, "not as a deterministic-resource theorem"),
@@ -158,18 +161,18 @@ def main() -> int:
     )
     check(
         "original runner exposes helper source packet",
-        "Source packet: scripts/frontier_bell_inequality.py" in output
-        and "required_symbols=11 PASS" in output,
+        "poisson_chsh_helper_source scripts/frontier_bell_inequality.py" in output
+        and "required_symbols=11" in output,
     )
     check(
         "original runner verifies last-taste carrier checks",
-        "Last-taste carrier checks:" in output
-        and "X=xi_last/logical-flip PASS" in output
-        and "Z_last Pauli PASS" in output,
+        "last_taste_carrier[" in output
+        and "X=xi_last/logical-flip" in output
+        and "Z_last Pauli" in output,
     )
     check(
         "original runner verifies retained-axis source guard",
-        "Retained-axis source: docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md" in output
+        "retained_axis_finite_operator_algebra docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md" in output
         and "ledger=retained_bounded" in output,
     )
     check(
@@ -179,7 +182,7 @@ def main() -> int:
     )
     check(
         "original runner does not promote the result",
-        "independent hardening before promotion" in output
+        "This is the bounded finite extraction core only" in output
         and "not by itself a teleportation resource derivation" in output,
     )
 

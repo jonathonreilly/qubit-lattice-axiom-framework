@@ -135,7 +135,12 @@ def main() -> int:
     check("zero-valued records do not generate unbounded readout", zero_values == [0, 0, 0, 0, 0, 0], str(zero_values))
     finite_occupancy_cap = 4
     check("an added finite occupancy cap would re-bound the family", max(readout(unit_records(n)) for n in range(finite_occupancy_cap + 1)) == finite_occupancy_cap)
-    check("therefore unboundedness is conditional on nonzero records and no fixed finite cap", True)
+    unbounded_needs_nonzero = all(readout(unit_records(b + 1)) > b for b in (0, 1, 5, 12, 99))
+    zero_records_stay_bounded = [readout(unit_records(n, value=0)) for n in range(6)] == [0, 0, 0, 0, 0, 0]
+    finite_cap_rebounds = max(readout(unit_records(n)) for n in range(finite_occupancy_cap + 1)) == finite_occupancy_cap
+    check("therefore unboundedness is conditional on nonzero records and no fixed finite cap",
+          unbounded_needs_nonzero and zero_records_stay_bounded and finite_cap_rebounds,
+          "unbounded only with nonzero records and no fixed cap; zero records and a finite cap both re-bound")
 
     print("\nC. self-contained finite word/count construction")
     alphabet = ("0", "1")
@@ -178,7 +183,15 @@ def main() -> int:
     check("frequencies are normalized readouts from realized counts", abs(freqs["0"] - 1 / 3) < 1e-12 and abs(freqs["1"] - 2 / 3) < 1e-12, str(freqs))
     alternate_history = ["1", "1", "1", "1", "0", "0"]
     check("different histories can have the same count/frequency readout", count_vector(alternate_history, alphabet) == counts)
-    check("counts alone do not specify a future production kernel", True)
+    kernel_emit_0 = lambda _hist: "0"
+    kernel_emit_1 = lambda _hist: "1"
+    counts_underdetermine_kernel = (
+        count_vector(alternate_history, alphabet) == counts
+        and kernel_emit_0(alternate_history) != kernel_emit_1(alternate_history)
+    )
+    check("counts alone do not specify a future production kernel",
+          counts_underdetermine_kernel,
+          "two future kernels (constant-0 vs constant-1) are both consistent with the same realized counts")
     try:
         frequencies({"0": 0, "1": 0})
         empty_normalization_failed = False
@@ -198,19 +211,14 @@ def main() -> int:
         "clock_rate": "open",
         "dial_selection": "open",
     }
-    check("fixed finite prefix additivity is exact", gate_status["fixed_finite_prefix"] == "exact")
-    check(
-        "unbounded schema carries local-availability and supplied-record boundary",
-        gate_status["arbitrary_finite_prefix_schema"] == "requires_local_readout_atom_availability_and_supplied_realized_records",
-    )
-    check("local readout-atom availability remains a separate dependency", gate_status["local_readout_atom_availability"] == "external_dependency")
-    check("record-history monoid is parallel context only", gate_status["record_history_monoid_parent"] == "parallel_context_only")
-    check("unbounded schema is not a production claim", gate_status["production_kernel"] == "open")
-    check("production kernel remains open", gate_status["production_kernel"] == "open")
-    check("probability law remains open", gate_status["probability_law"] == "open")
-    check("IID typicality remains open", gate_status["iid_typicality"] == "open")
-    check("clock/rate remains open", gate_status["clock_rate"] == "open")
-    check("dial selection remains open", gate_status["dial_selection"] == "open")
+    # Local audit-lane classification summary (narration, not scored): this is a
+    # fixed local dictionary, so asserting each entry equals its own literal
+    # value proves nothing independently. Dependency standing is owned by the
+    # canonical ledger; the load-bearing openness facts are established by the
+    # computed checks in sections A-D and F above.
+    print("E-classification (narration, not scored):")
+    for _k, _v in gate_status.items():
+        print(f"    {_k}: {_v}")
 
     print("\nF. dependency-edge and supplied-context firewall")
     note = NOTE.read_text(encoding="utf-8")
@@ -223,7 +231,7 @@ def main() -> int:
     check("source note states open_gate / conditional-support status", "**Claim type:** open_gate" in note and "actual_current_surface_status: conditional-support" in note)
     check("source note has post-audit claim-type repair", "2026-06-16 Post-Audit Claim-Type Repair" in note)
     check("source note has dependency-edge firewall", "Dependency-Edge Repair And Supplied-Context Firewall" in note)
-    check("source note cites the minimal axiom memo current at its writing (note is CONTENT-FLIP-queued; re-key follows its rework)", "MINIMAL_AXIOMS_2026-06-05.md" in note)
+    check("source note cites a minimal-axioms memo (all such paths alias the stable minimal_axioms premise node)", "MINIMAL_AXIOMS_2026-06-05.md" in note or "MINIMAL_AXIOMS_2026-06-29.md" in note)
     check("source note cites local finite readout-atom availability theorem", "RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md" in note)
     monoid_name = "RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md"
     forbidden_dependency_markers = [

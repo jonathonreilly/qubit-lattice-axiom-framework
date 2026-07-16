@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py
-runner_sha256: 4bc13140fec7c2a48cf683a1792daf610a1c8c185d8fbd11a240aa95410e9932
+runner_sha256: 9f686597872e188b0c42848e26a8824be29e391766d3c4a4f2b1aea4b81e8923
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -34,7 +34,7 @@ B. bounded finite prefixes versus unbounded schema
 [PASS] no global bound B=99 across arbitrary finite n -- n=100, I=100
 [PASS] zero-valued records do not generate unbounded readout -- [0, 0, 0, 0, 0, 0]
 [PASS] an added finite occupancy cap would re-bound the family
-[PASS] therefore unboundedness is conditional on nonzero records and no fixed finite cap
+[PASS] therefore unboundedness is conditional on nonzero records and no fixed finite cap -- unbounded only with nonzero records and no fixed cap; zero records and a finite cap both re-bound
 
 C. self-contained finite word/count construction
 [PASS] finite words concatenate associatively
@@ -56,32 +56,32 @@ C. self-contained finite word/count construction
 D. post-record information is not a probability law
 [PASS] frequencies are normalized readouts from realized counts -- {'0': 0.3333333333333333, '1': 0.6666666666666666}
 [PASS] different histories can have the same count/frequency readout
-[PASS] counts alone do not specify a future production kernel
+[PASS] counts alone do not specify a future production kernel -- two future kernels (constant-0 vs constant-1) are both consistent with the same realized counts
 [PASS] normalization is undefined before any realized record
 
 E. audit-lane classifier consequences
-[PASS] fixed finite prefix additivity is exact
-[PASS] unbounded schema carries local-availability and supplied-record boundary
-[PASS] local readout-atom availability remains a separate dependency
-[PASS] record-history monoid is parallel context only
-[PASS] unbounded schema is not a production claim
-[PASS] production kernel remains open
-[PASS] probability law remains open
-[PASS] IID typicality remains open
-[PASS] clock/rate remains open
-[PASS] dial selection remains open
+E-classification (narration, not scored):
+    fixed_finite_prefix: exact
+    arbitrary_finite_prefix_schema: requires_local_readout_atom_availability_and_supplied_realized_records
+    local_readout_atom_availability: external_dependency
+    record_history_monoid_parent: parallel_context_only
+    production_kernel: open
+    probability_law: open
+    iid_typicality: open
+    clock_rate: open
+    dial_selection: open
 
 F. dependency-edge and supplied-context firewall
 [PASS] source note states open_gate / conditional-support status
 [PASS] source note has post-audit claim-type repair
 [PASS] source note has dependency-edge firewall
-[PASS] source note cites current minimal axiom memo
+[PASS] source note cites a minimal-axioms memo (all such paths alias the stable minimal_axioms premise node)
 [PASS] source note cites local finite readout-atom availability theorem
 [PASS] record-history monoid parent is not a markdown/YAML dependency -- forbidden dependency markers absent
 [PASS] record-history monoid is named as parallel context only
 [PASS] downstream citation rule is explicit
-[PASS] minimal Record language supplies durable realized outcome
-[PASS] minimal Record language withholds readout context and dynamics
+[PASS] minimal Record language supplies permanence, content-only readout, and finite additivity
+[PASS] minimal Record boundary leaves readout contexts and dynamics downstream
 [PASS] source note locally proves finite word/count surface
 [PASS] source note locally proves arbitrary finite Z^3 slots
 [PASS] local availability theorem supplies nonzero readout atoms
@@ -91,7 +91,7 @@ F. dependency-edge and supplied-context firewall
 [PASS] source note says production is not inferred from slots/readout atoms
 [PASS] downstream retained-authority firewall is explicit
 
-SCORECARD: PASS=63 FAIL=0
+SCORECARD: PASS=53 FAIL=0
 VERDICT: Record finite additivity gives exact finite-prefix readout. The finite word/count and Z^3 arbitrary finite-slot surface is proved locally here, so the record-history monoid parent is not load-bearing. The schema uses the local finite readout-atom availability theorem and still requires supplied realized records; this runner does not derive production, probability, IID, rates, or a dial.
 
 ----- stderr -----

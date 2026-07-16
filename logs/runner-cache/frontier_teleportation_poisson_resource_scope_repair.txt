@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_poisson_resource_scope_repair.py
-runner_sha256: f7c89916e3fec6a887e55f806f16a0127af63dc67e9a8600bf61618a73c3320b
+runner_sha256: a4b0b02cfaeea81025f54d39fa42571e212696bde4e12796fd6ea676b6311e5c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.64
+elapsed_sec: 0.78
 status: ok
 ----- stdout -----
 Teleportation Poisson resource scope repair
@@ -13,7 +13,7 @@ A. Boundary wording
 ------------------------------------------------------------------------
 PASS: note declares open_gate type
 PASS: note declares open_gate claim type
-PASS: note has no source-side status authority
+PASS: note routes status through the independent audit lane (does not set status itself)
 PASS: note says this is not a deterministic-resource theorem
 PASS: note preserves small-surface diagnostic value
 PASS: note leaves native carrier derivation open

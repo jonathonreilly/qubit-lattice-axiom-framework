@@ -130,3 +130,5 @@ check("d_s=3 + (d_s+d_t even) => d_t odd", all(((3+dt)%2==0)==(dt%2==1) for dt i
 print("SCOPE: bridge yields d_t in {odd positives}; the d_t=1 pin is the one-time-dimension open gate, NOT claimed here.")
 print()
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+if FAIL != 0:
+    raise SystemExit(1)

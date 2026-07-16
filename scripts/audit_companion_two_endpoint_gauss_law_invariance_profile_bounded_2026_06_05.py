@@ -142,14 +142,18 @@ def main() -> int:
     record("SU2 double-singlet observable is nonzero", nonzero(double_singlet))
 
     text = NOTE.read_text(encoding="utf-8")
+    # Normalize whitespace so multi-line firewall sentences match, and require
+    # the COMPLETE four-axiom sentence (a bare "Lattice + Qubit +" prefix would
+    # pass even if Admissibility or Record were absent, reordered, or replaced).
+    text_norm = " ".join(text.split())
     for phrase in [
         "does not derive gauge invariance of observables from the Record axiom",
         "does not identify all gauge-invariant algebra elements with physical observables",
-        "does not derive the endpoint Gauss generators from Lattice + Qubit +",
+        "does not derive the endpoint Gauss generators from Lattice + Qubit + Admissibility + Record",
         "does not derive gauge dynamics",
         "does not require or establish a repo-wide quantum-link ontology",
     ]:
-        record(f"source-note firewall present: {phrase}", phrase in text)
+        record(f"source-note firewall present: {phrase}", phrase in text_norm)
 
     print("=" * 72)
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")

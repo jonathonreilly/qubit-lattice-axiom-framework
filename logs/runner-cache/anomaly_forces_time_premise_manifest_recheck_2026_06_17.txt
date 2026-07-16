@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/anomaly_forces_time_premise_manifest_recheck_2026_06_17.py
-runner_sha256: 54b22d17336a4ace2d4b1fa129c53a80e093ba3eeb0d2c66c78e4295ec543cd4
+runner_sha256: d87f26ecdd7cb4ff5d0b1225973c52970dd371008bbe1193c2cd984c9c465cd5
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.14

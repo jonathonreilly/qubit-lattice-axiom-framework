@@ -129,7 +129,7 @@ def main() -> int:
     check("q(A+B) is not q(A)+q(B)", q_sum != q_a + q_b)
     check("q(A+B) is a shell-weighted average", q_sum == weighted_average)
     check("q(A+B) does not preserve target raw scaling", q_sum != lam * q_a)
-    check("forming q requires division by the shell scalar", True)
+    print("note: forming q requires division by the shell scalar (see q() above; narration, not scored)")
 
     banner("4. Record-linear operations leave the selector external")
     rho_values = [F(-1), F(0), F(1), F(21, 4)]
@@ -141,7 +141,7 @@ def main() -> int:
     check("tested rho values give distinct q values", len({q(pair) for pair in pairs}) == len(pairs))
     check("rho=0 remains Record-compatible after context is supplied", q(pairs[1]) == 1)
     check("rho=21/4 remains Record-compatible after context is supplied", q(pairs[3]) == F(15, 8))
-    check("finite additivity alone does not distinguish rho=0 from rho=21/4 as a rule", True)
+    print("note: finite additivity alone does not distinguish rho=0 from rho=21/4 as a rule (narration, not scored)")
     check(
         "Record positivity no-go already classifies rho_E as direction not norm",
         "rho_E` is the readout direction" in record_no_go,
@@ -159,9 +159,18 @@ def main() -> int:
         "normalization" in premise_nodes.lower()
         and "downstream theory consequence" in premise_nodes.lower(),
     )
-    check("no observed endpoint value is used as proof input", True)
-    check("current result is a no-go for Record-additivity-derived raw q scaling", True)
-    check("positive target is a normalized-quotient readout theorem or alternate bridge", True)
+    print("note: no observed endpoint value is used as a proof input (narration, not scored)")
+    raw_q_nonadditive = (q_sum != q_a + q_b) and (q_sum == weighted_average) and (q_sum != lam * q_a)
+    current_bank_excludes = (
+        "raw q record selector" not in current_bank
+        and "record selects q_x" not in current_bank
+    )
+    check(
+        "current result is a no-go for Record-additivity-derived raw q scaling",
+        raw_q_nonadditive and current_bank_excludes,
+        "computed: q(A+B) is a nonadditive shell-weighted average AND the current bank names no raw-q Record selector",
+    )
+    print("note: positive target is a normalized-quotient readout theorem or alternate bridge (narration, not scored)")
 
     banner("Summary")
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")

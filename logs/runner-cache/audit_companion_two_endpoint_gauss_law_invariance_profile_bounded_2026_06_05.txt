@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_two_endpoint_gauss_law_invariance_profile_bounded_2026_06_05.py
-runner_sha256: 317d6bf12ee7a0d9398e6d9cf2e4acea1c0b03b0edca3c1d244d0df8b950faee
+runner_sha256: 82ff31db3f54bff8e2cf34029cf187e4c4db8c964f71d824d32a7cde2d905faa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.06
+elapsed_sec: 0.99
 status: ok
 ----- stdout -----
 ========================================================================
@@ -24,7 +24,7 @@ PASS SU2 double-singlet Wilson-type observable is invariant at both endpoints
 PASS SU2 double-singlet observable is nonzero
 PASS source-note firewall present: does not derive gauge invariance of observables from the Record axiom
 PASS source-note firewall present: does not identify all gauge-invariant algebra elements with physical observables
-PASS source-note firewall present: does not derive the endpoint Gauss generators from Lattice + Quantum +
+PASS source-note firewall present: does not derive the endpoint Gauss generators from Lattice + Qubit + Admissibility + Record
 PASS source-note firewall present: does not derive gauge dynamics
 PASS source-note firewall present: does not require or establish a repo-wide quantum-link ontology
 ========================================================================

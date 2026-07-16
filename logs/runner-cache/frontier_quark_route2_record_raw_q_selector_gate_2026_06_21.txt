@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_record_raw_q_selector_gate_2026_06_21.py
-runner_sha256: 601929708d1f7758b9827bda275e7406f341de26bf062c4c550a7857dcc60f42
+runner_sha256: 683f4ff1cec66a559f08e2e2542a459efb3d9ab44f2ee015eb9e9a0ac1802c50
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -12,9 +12,9 @@ Route-2 Record raw-q selector gate
 ----------------------------------------------------------------------------------------
 1. Current-surface Record boundaries
 ----------------------------------------------------------------------------------------
-PASS: minimal axioms define Record as durable realized-outcome registration
-PASS: minimal axioms say scalar readout is finitely additive
-PASS: minimal axioms say Record supplies no readout context or normalization
+PASS: minimal axioms make each Record an admissible lock, unique per site and permanent
+PASS: minimal axioms make Record readout content-determined and finitely additive
+PASS: minimal axioms leave extra quotient normalization downstream
 PASS: premise registry repeats no downstream readout bridge from Record
 PASS: Record positivity no-go says Record is not used to supply P_R
 PASS: parent S3 note still leaves endpoint triple open
@@ -39,7 +39,7 @@ PASS: additive sum has q=65/48
 PASS: q(A+B) is not q(A)+q(B)
 PASS: q(A+B) is a shell-weighted average
 PASS: q(A+B) does not preserve target raw scaling
-PASS: forming q requires division by the shell scalar
+note: forming q requires division by the shell scalar (see q() above; narration, not scored)
 
 ----------------------------------------------------------------------------------------
 4. Record-linear operations leave the selector external
@@ -52,7 +52,7 @@ PASS: all tested rho values share shell scalar 1
 PASS: tested rho values give distinct q values
 PASS: rho=0 remains Record-compatible after context is supplied
 PASS: rho=21/4 remains Record-compatible after context is supplied
-PASS: finite additivity alone does not distinguish rho=0 from rho=21/4 as a rule
+note: finite additivity alone does not distinguish rho=0 from rho=21/4 as a rule (narration, not scored)
 PASS: Record positivity no-go already classifies rho_E as direction not norm
 PASS: naturality no-go says extra source/readout primitive is required
 
@@ -62,14 +62,15 @@ PASS: naturality no-go says extra source/readout primitive is required
 PASS: current bank does not name a raw q Record selector theorem
 PASS: current bank does not say Record selects q_X as scaled coordinate
 PASS: current bank explicitly withholds Record normalization
-PASS: no observed endpoint value is used as proof input
+note: no observed endpoint value is used as a proof input (narration, not scored)
 PASS: current result is a no-go for Record-additivity-derived raw q scaling
-PASS: positive target is a normalized-quotient readout theorem or alternate bridge
+       computed: q(A+B) is a nonadditive shell-weighted average AND the current bank names no raw-q Record selector
+note: positive target is a normalized-quotient readout theorem or alternate bridge (narration, not scored)
 
 ----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
-TOTAL: PASS=31, FAIL=0
+TOTAL: PASS=27, FAIL=0
 VERDICT: no-go / Record-quotient selector boundary. Record finite additivity does not select raw q as the inverse-square-scaled coordinate; q requires an extra quotient normalization/readout theorem.
 
 ----- stderr -----

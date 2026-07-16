@@ -152,18 +152,39 @@ def helper_source_certificate() -> dict[str, object]:
 
 
 def ledger_status(claim_id: str) -> str | None:
-    if not LEDGER_PATH.exists():
-        return None
-    ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
-    rows = ledger.get("rows", ledger)
-    if isinstance(rows, dict):
-        iterable = rows.values()
-    else:
-        iterable = rows
-    for row in iterable:
-        if row.get("claim_id") == claim_id:
+    """Read a row's effective_status from the canonical sharded ledger.
+
+    Uses docs/audit/scripts/ledger_io.py (the shard reader) so the guard works
+    on a fresh clone / audit lane / CI where the monolithic audit_ledger.json
+    read cache has not been materialized. Falls back to the legacy monolith
+    only when the sharded reader is unavailable.
+    """
+    try:
+        ledger_scripts = ROOT / "docs" / "audit" / "scripts"
+        if str(ledger_scripts) not in sys.path:
+            sys.path.insert(0, str(ledger_scripts))
+        import ledger_io  # type: ignore
+
+        rows = ledger_io.load_ledger().get("rows", {})
+        row = rows.get(claim_id) if isinstance(rows, dict) else None
+        if row is None and isinstance(rows, dict):
+            for candidate in rows.values():
+                if isinstance(candidate, dict) and candidate.get("claim_id") == claim_id:
+                    row = candidate
+                    break
+        if isinstance(row, dict):
             return row.get("effective_status")
-    return None
+        return None
+    except Exception:
+        if not LEDGER_PATH.exists():
+            return None
+        ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+        rows = ledger.get("rows", ledger)
+        iterable = rows.values() if isinstance(rows, dict) else rows
+        for row in iterable:
+            if isinstance(row, dict) and row.get("claim_id") == claim_id:
+                return row.get("effective_status")
+        return None
 
 
 def retained_axis_source_certificate() -> dict[str, object]:

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_resource_from_poisson.py
-runner_sha256: 492fa01d612342594bbb73c105071200db3cdce6b82a757e6c584082266de7c6
+runner_sha256: 3535f2d33e0abe98f2f921ab66dc0288a0293c8370a763189cc00708ac599ace
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 POISSON/CHSH TELEPORTATION RESOURCE AUDIT
@@ -27,7 +27,7 @@ Case: 1d_null
   traced Bell max-label tie: Phi+, Psi+ (deterministic report uses Phi+)
   standard teleportation with traced resource: mean fidelity=0.669817, min=0.500038, max=0.987949, max trace error=0.000e+00
   best fixed-env postselected branch: Bell overlap=0.500000 (Phi+), probability=6.250000e-02, CHSH=2.000000, negativity=0.000000
-    env A=((0,), ()) env B=((3,), ())
+    env A=((1,), ()) env B=((3,), ())
   deterministic high-fidelity Bell resource (threshold 0.900): NO
 
 Case: 1d_poisson_chsh
@@ -37,7 +37,7 @@ Case: 1d_poisson_chsh
   traced logical taste-qubit resource: best Bell overlap=0.997963 (Phi+), CHSH=2.822668, purity=0.997967, negativity=0.497963
   standard teleportation with traced resource: mean fidelity=0.998621, min=0.997964, max=0.999470, max trace error=0.000e+00
   best fixed-env postselected branch: Bell overlap=0.998981 (Phi+), probability=2.497454e-01, CHSH=2.825546, negativity=0.498981
-    env A=((1,), ()) env B=((3,), ())
+    env A=((0,), ()) env B=((2,), ())
   deterministic high-fidelity Bell resource (threshold 0.900): YES
 
 Case: 2d_poisson_chsh
@@ -47,7 +47,7 @@ Case: 2d_poisson_chsh
   traced logical taste-qubit resource: best Bell overlap=0.970283 (Phi+), CHSH=2.745662, purity=0.971783, negativity=0.470283
   standard teleportation with traced resource: mean fidelity=0.979360, min=0.970287, max=0.999810, max trace error=0.000e+00
   best fixed-env postselected branch: Bell overlap=0.999428 (Psi+), probability=5.854540e-08, CHSH=2.826809, negativity=0.499428
-    env A=((0, 1), (1,)) env B=((0, 1), (1,))
+    env A=((0, 0), (1,)) env B=((0, 0), (1,))
   deterministic high-fidelity Bell resource (threshold 0.900): YES
 
 PASS: null_control_no_resource[1d_null] best Bell overlap=0.500000 negativity=0.000000

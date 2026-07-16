@@ -45,5 +45,6 @@ docs/audit/data/audit_queue.json
 # publication_lane_manifest.json.
 docs/audit/data/publication_gap.json
 docs/audit/data/audit_publication_lane.json
+docs/audit/data/dispatch_shadow_prior.json
 docs/audit/data/runner_classification.json
 docs/audit/AUDIT_LEDGER.md

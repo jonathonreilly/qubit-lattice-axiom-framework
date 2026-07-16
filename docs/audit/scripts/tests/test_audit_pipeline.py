@@ -601,9 +601,14 @@ class PublicationEffectiveStatusRenderTest(unittest.TestCase):
                     },
                 ]
             }
-            with mock.patch.object(m, "PUB_DIR", pub):
+            data_dir = pub / "data"
+            data_dir.mkdir(exist_ok=True)
+            with mock.patch.object(m, "PUB_DIR", pub), \
+                    mock.patch.object(m, "DATA_DIR", data_dir):
                 out = m.render_divergence(lookups, "test")
             rendered = out.read_text(encoding="utf-8")
+            # hermeticity: the gap emitter must write inside the temp root
+            self.assertTrue((data_dir / "publication_gap.json").exists())
             self.assertIn("`unresolved:docs/MISSING_A.md`", rendered)
             self.assertIn("`unresolved:docs/MISSING_B.md`", rendered)
             self.assertIn("`known-row`", rendered)

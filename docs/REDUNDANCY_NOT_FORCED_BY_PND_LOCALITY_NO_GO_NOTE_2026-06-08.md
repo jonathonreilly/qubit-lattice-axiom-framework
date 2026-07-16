@@ -73,9 +73,9 @@ runner, not imported.
    information `chi = 0`. Quantum mutual information is **not** the
    quantum-Darwinism record measure; the Holevo deficit is.
 2. **The broadcast is fine-tuned in time.** The pure single-site-sum monitoring
-   `Sum_k Z_S (x) X_k` gives `R_delta = N` only at the CNOT point `g t = pi/4`;
-   at `g t = pi/6` the same coupling gives `chi = 0.811 < 0.9 H_S` (trace distance
-   `0.866`) per fragment, so `R_delta = 0`.
+   `Sum_k Z_S (x) X_k` gives `R_delta = N` at and near the CNOT point `g t = pi/4`
+   but drops to `R_delta = 0` by `g t = pi/6` (`chi = 0.811 < 0.9 H_S`, trace
+   distance `0.866` per fragment) -- broadcast is time-sensitive, at fixed times.
 3. **The broadcast is rare under the sampled coupling family.** Over the
    pointer-non-demolition family `H = c_0 Z_S X_1 + c_1 Z_S X_2 + c_2 Z_S X_1 X_2`
    (random Gaussian `c`), `R_delta = N` (both single fragments reach the deficit)

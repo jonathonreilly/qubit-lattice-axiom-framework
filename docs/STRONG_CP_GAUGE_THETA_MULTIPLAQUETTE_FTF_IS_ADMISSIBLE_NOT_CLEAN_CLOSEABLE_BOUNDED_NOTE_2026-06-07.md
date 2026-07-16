@@ -12,7 +12,7 @@
 The single-plaquette gauge action class is `F̃F`-free (a real class function `f` gives `O(a^6)`, no leading `F̃F`;
 [`NEWPHYSICS_NP_STRONG_CP_THETA_NOTE_2026-05-10_npCP.md`](./NEWPHYSICS_NP_STRONG_CP_THETA_NOTE_2026-05-10_npCP.md)), with **multi-plaquette (two-field-strength)
 operators** named as the open boundary. This note presses that boundary to a definite answer: **the boundary does
-not close `θ_gauge = 0`** — the `F̃F` slot is realizable by an operator that no clean framework principle excludes.
+not close `θ_gauge = 0`** — the `F̃F` slot is realizable by an operator that the tested reality / RP-no-go / CPT / locality / gauge-invariance principles do not exclude (other action-selection principles remain open).
 
 **Computed (exact, runner (1)–(3))** — the `F̃F` algebra, plus the leading-order reduction under the *standard
 clover model* `Q_{μν} ~ i a² F_{μν} + O(a^4)`:

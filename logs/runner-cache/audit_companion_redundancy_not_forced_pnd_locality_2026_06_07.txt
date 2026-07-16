@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_redundancy_not_forced_pnd_locality_2026_06_07.py
-runner_sha256: 9a4edc5b8a5e7cecad05b55e7e3cd41d1eefbc99a3b83f702c7397cb35b9f220
+runner_sha256: f684807642279be6d0367ce5f64156d4b56a80dcde4dfcb473b74a7ceaecb513
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 REDUNDANCY IS NOT FORCED BY {DURABILITY/PND + Z^3-LOCALITY + LEADING-RANGE}  (NO-GO)

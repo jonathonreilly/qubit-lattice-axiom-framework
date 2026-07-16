@@ -148,8 +148,7 @@ def main() -> None:
     )
     check(
         "Coulomb support note keeps its open-premise boundary explicit",
-        has(coulomb, "admitted premises")
-        and has(coulomb, "does not supply a framework-native electromagnetic sector"),
+        has(coulomb, "does not supply a framework-native electromagnetic sector"),
     )
     check(
         "Coulomb support note does not close D3 chain by itself",

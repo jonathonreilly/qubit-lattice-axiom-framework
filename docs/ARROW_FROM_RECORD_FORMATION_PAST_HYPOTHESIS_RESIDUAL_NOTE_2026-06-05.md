@@ -93,7 +93,7 @@ record-forming dynamics realized as redundant pointer broadcast:
 	  residual.
 - **Not** a statement about all possible record dynamics; it is the explicit
   redundant-broadcast model. The structural conclusion (symmetric map ⇒ arrow
-  sign comes from the boundary) is, however, generic to any time-symmetric
+  sign comes from the boundary) is, however, paralleled in standard time-symmetric
   microdynamics.
 
 ## Reconciliation With The Time-Symmetry Of T (#2701)

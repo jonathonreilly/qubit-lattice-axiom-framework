@@ -129,8 +129,8 @@ def order_param(rho):
 
 
 # ======================================================================
-# GROUP 1 -- COLLAPSE STEP 1a: the twirl's uniform weight is Quantum-supplied
-#            (unitarity => doubly stochastic => uniform stationary).
+# GROUP 1 -- COLLAPSE STEP 1a: the twirl's uniform weight comes from the assumed
+#            unitary map (unitarity => doubly stochastic => uniform stationary).
 # ======================================================================
 rng = np.random.default_rng(20260609)
 

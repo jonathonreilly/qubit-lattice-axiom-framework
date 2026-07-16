@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_color_depolarization_adm2_admission_collapse_2026_06_09.py
-runner_sha256: ceac4cbb5831fe25dda495259fd06c2ec9013a678362b35b3c4c6168a8bfa6dd
+runner_sha256: 6365034cbed9594e1968322b6b83d8a20b8f65872246e8ed7c3c71d166ed5990
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.14

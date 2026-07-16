@@ -185,7 +185,7 @@ def main() -> int:
     print(f"\nSCORECARD PASS={PASS} FAIL={FAIL}")
     print(
         "VERDICT: GIVEN the anchor content (native_gauge_closure/graph_first_su3 retained; hypercharge_identification/three_generation currently unaudited, per ledger) ("
-        "graph_first_su3), N_c=3 and n_gen=3 (retained), and the EXPLICIT minimal SU(2)-singlet RH "
+        "graph_first_su3), N_c=3 (retained) and n_gen=3 (currently unaudited per ledger), and the EXPLICIT minimal SU(2)-singlet RH "
         "completion ansatz, the RH hypercharges are uniquely forced (+4/3,-2/3,-2) and all six "
         "gauge-anomaly conditions cancel exactly. The matter CONTENT itself (RH ansatz, nu_R branch) and "
         "the absolute Y-SCALE are conditional model choices / conventions, not anomaly consequences. This reproves the "

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_d3_upper_bound_import_scope_gate_2026_06_06.py
-runner_sha256: 1a41c73ab5b0e9a3829122812bc023f4b2a71d59512b313efae83f5a8535ee2d
+runner_sha256: 1dd6dcf6f38490a18f0567d4f294bb967478a51aad046ca5c99bb1a120d94843
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 D3 upper-bound native-stable-edge gate

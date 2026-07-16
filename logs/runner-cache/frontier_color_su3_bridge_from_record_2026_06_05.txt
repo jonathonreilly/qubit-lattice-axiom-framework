@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_color_su3_bridge_from_record_2026_06_05.py
-runner_sha256: ee8df9cd1f25a99d49b263754f93b1948fdefcf004e81a8970516e2af08a3092
+runner_sha256: 8d8805b60d7e7886e3a0152638480f9d5509a2a8dcc960ad90b763e4f51a0e24
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 ====================================================================================
@@ -147,7 +147,7 @@ is the residual (b); #2667 reduces the bridge to it but does not close it.
 ------------------------------------------------------------------------------------
 SELF-CHECK SUMMARY
 ------------------------------------------------------------------------------------
-  peak RSS (best-effort): 68.0 MB  (cap 2048 MB)
+  peak RSS (best-effort): 68.1 MB  (cap 2048 MB)
   SUMMARY: PASS=21 FAIL=0
 
 ----- stderr -----

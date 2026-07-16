@@ -70,7 +70,7 @@ This note does not promote that row and does not use it as retained authority.
 
 - **N1 — Alternative routes.** Five routes were separated and tested or left
   open: Record arrow as T-violation (closed by the time-symmetric generator and
-  boundary-state reversal); CPT as CP source (closed by determinant reality);
+  boundary-state reversal); CPT as CP source (closed on the imposed K-real/Hermitian route by determinant reality);
   orientation/chirality as a coefficient source (closed to a sign-only `Z_2`
   datum); real readout as a CP prohibition (closed by the real CP-odd Jarlskog
   scalar); and form-class symmetry constraints fixing `(r, delta, theta)`
@@ -125,7 +125,7 @@ Load-bearing:
   coupling, weighting, probability, dynamics, source/action, or arbitrary observable
   identification.
 - [`ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`](ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md)
-  — retained-bounded arrow-as-boundary context; the runner also reproves the
+  — arrow-as-boundary context (currently unaudited per ledger); the runner also reproves the
   local time-symmetry check used here.
 - `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   — historical target registry (historical only; carries no current status

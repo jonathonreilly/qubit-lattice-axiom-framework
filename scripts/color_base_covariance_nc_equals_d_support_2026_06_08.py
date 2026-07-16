@@ -15,7 +15,7 @@ REMAINING d-1 axes form the base (C^2)^{(x)(d-1)}; the residual permutation grou
 fully-symmetric (trivial-isotype) block carries color. So the base is Sym^{d-1}(C^2), NOT a fixed Sym^2.
 
 PREDICTION if the construction is d-COVARIANT (campaign WRONG, note RIGHT):
-  dim(symmetric block) = dim Sym^{d-1}(C^2) = (d-1)+1 = d   -> N_c = d = dim Z^d  (genuine covariation)
+  dim(symmetric block) = dim Sym^{d-1}(C^2) = (d-1)+1 = d   -> candidate color-carrier dim = d = dim Z^d  (covariation)
   commutant of S_{d-1} on the symmetric isotype = gl(d) (dim d^2), semisimple su(d) (dim d^2-1).
 
 VERIFIES, for d = 2,3,4,5,6:
@@ -23,13 +23,13 @@ VERIFIES, for d = 2,3,4,5,6:
   2. The fully-symmetric block (common +1 eigenspace of every base-axis transposition) has dim = d
       (NOT fixed at 3) -> it IS Sym^{d-1}(C^2), and d-1 (the exponent) varies with d.
   3. The commutant of the residual S_{d-1} action, restricted to the symmetric isotype, is gl(d):
-      so the colour group on the symmetric block is su(d), N_c = d.  d=3 -> su(3), d=4 -> su(4), ...
+      so the candidate color-carrier (traceless part of End(Sym^{d-1}C^2)=gl(d)) is su(d); physical-color N_c=d is NOT forced here.  d=3 -> su(3), d=4 -> su(4), ...
   4. The campaign's "Sym^2(C^2) = 3 for all d" is the d=3 SPECIAL CASE only; Sym^2 has a FIXED exponent
       2, whereas the construction's exponent is d-1. They coincide ONLY at d=3.
   5. d=3 cross-check vs the landed note: base dim 4, joint commutant dim 10 = gl(3)+gl(1), symmetric/
       antisymmetric block dims 3/1.
 
-If the checks hold, N_c=d co-varies with the supplied lattice dimension in
+If the checks hold, the candidate color-carrier dim co-varies with the supplied lattice dimension in
 this counterfactual family. At the live Z^3 baseline it supports consistency
 with N_c=3; it is not an axiom-level derivation.
 

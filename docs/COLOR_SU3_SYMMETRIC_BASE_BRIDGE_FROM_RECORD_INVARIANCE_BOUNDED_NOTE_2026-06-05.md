@@ -65,12 +65,10 @@ algebraic facts (all verified by the primary runner, 23/23 PASS):
    identity conditional on the antecedent; it is the "half" the
    record-invariance structure supplies.
 
-3. **The crux: the antecedent is not forced.** On the same two-endpoint
-   link carrier, a fiber-SU(2) Gauss law and a base-SU(3) Gauss law can
-   both be written, and both exhibit the identical `0 -> 1 -> 2`
-   endpoint-invariance profile of the two-endpoint note (bare transport
-   variant at both ends; dressed Wilson-type observable invariant at
-   both ends). Records, locality, and the link/Gauss-law structure do
+3. **The crux: the antecedent is not forced.** On their own link carriers (a two-endpoint qubit carrier for fiber-SU(2);
+   an endpoint-`C^3`/link-end-`C^3` carrier for base-SU(3)), each admits the
+   tested `0 -> 1 -> 2` variant/invariant structure (the SU(3) case verified at
+   the matched endpoint; the two carriers are not identified). Records, locality, and the link/Gauss-law structure do
    not discriminate which symmetry is gauged. The selector that fixes
    the antecedent — which subsystem the quarks occupy and which symmetry
    index the link connection carries — is a separate input.

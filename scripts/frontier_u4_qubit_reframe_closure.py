@@ -2,9 +2,11 @@
 """Verify the U4 qubit-reframe closure note on the current axiom surface.
 
 The target note is an axiom-unpacking support note: the current Qubit axiom
-already says that each site carries one qubit, equivalently M_2(C), equivalently
-Cl(3,0) in its real-algebra reading. This runner checks that source boundary
-and verifies the concrete Pauli/M_2(C) realization used by the note.
+names the one-site possibility domain by its algebraic presentation M_2(C)
+(equivalently Cl(3,0)); the one-qubit-per-site (multiplicity-one) reading is
+carried by the note as an explicit named condition, not read off the memo
+verbatim. This runner checks that source boundary and the concrete
+Pauli/M_2(C) realization used by the note.
 """
 
 from __future__ import annotations

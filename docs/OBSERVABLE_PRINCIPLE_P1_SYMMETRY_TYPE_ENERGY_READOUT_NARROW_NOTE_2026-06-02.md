@@ -325,7 +325,7 @@ defines its free energy by the log-det convention.
   **independent** class (interacting `H` does not add, runner T6 — and that
   class is P1's own hypothesis), and **(b)** through the additive generator,
   which the framework **builds** as `Ĥ = −log(T̂²)/(2a_τ)` with `{(T̂²)^s}` a
-  single `{r ↦ r^s}` orbit whose additive member is `log` (runner T5). So the
+  single `{r ↦ r^s}` orbit whose additive generator is `log` (the normalized `s → 0` derivative; runner T5). So the
   additive readout is the **`log` generator of the orbit** — face ADD — not a prior
   structure. The remaining leg, "`W` **is** the free energy," is defined by the
   log-det convention (runner T7) and is content (II.b) `⇔` P1. **P1-equivalent.**

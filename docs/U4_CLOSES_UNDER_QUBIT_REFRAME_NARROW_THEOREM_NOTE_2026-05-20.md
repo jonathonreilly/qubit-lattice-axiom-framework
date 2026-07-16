@@ -24,7 +24,8 @@ This is source-side routing context only; it does not assert an
 
 **Boundary:** axiom-unpacking / renaming support only. The load-bearing move
 is the identification of the older U4 bridge with the one-qubit-per-site
-baseline already supplied by the accepted axiom wording.
+(multiplicity-one) reading of the accepted Qubit axiom, carried here as an
+explicit named condition on top of the supplied `M_2(C)` algebra wording.
 
 This note may be cited only as a compatibility/alias map: under the qubit
 baseline, the older U4 open bridge is no longer a separate input. It may not

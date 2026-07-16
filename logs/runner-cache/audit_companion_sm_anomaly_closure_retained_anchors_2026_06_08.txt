@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_sm_anomaly_closure_retained_anchors_2026_06_08.py
-runner_sha256: ecaf635ee65fbb0fbee7a06f343fdabe3622e2c468b5f13228ea759017f96751
+runner_sha256: 3519db179dead2e381328bcb948ee7ee64ca5409966fa2a16319fd41116e0e30
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.03
@@ -33,7 +33,7 @@ SM ONE-GENERATION ANOMALY CLOSURE FROM RETAINED ANCHORS (decoupled from anomaly_
        t=1/2: (y_u,y_d,y_e,y_nu)=(11/6,-7/6,-5/2,1/2); SU(3)^2Y=0, Tr[Y]=0, Tr[Y^3]=0
 
 SCORECARD PASS=11 FAIL=0
-VERDICT: GIVEN the anchor content (native_gauge_closure/graph_first_su3 retained; hypercharge_identification/three_generation currently unaudited, per ledger) (graph_first_su3), N_c=3 and n_gen=3 (retained), and the EXPLICIT minimal SU(2)-singlet RH completion ansatz, the RH hypercharges are uniquely forced (+4/3,-2/3,-2) and all six gauge-anomaly conditions cancel exactly. The matter CONTENT itself (RH ansatz, nu_R branch) and the absolute Y-SCALE are conditional model choices / conventions, not anomaly consequences. This reproves the load-bearing arithmetic of the matter-content chain, decoupled from the unaudited anomaly_forces_time_theorem. Audit lane sets the verdict.
+VERDICT: GIVEN the anchor content (native_gauge_closure/graph_first_su3 retained; hypercharge_identification/three_generation currently unaudited, per ledger) (graph_first_su3), N_c=3 (retained) and n_gen=3 (currently unaudited per ledger), and the EXPLICIT minimal SU(2)-singlet RH completion ansatz, the RH hypercharges are uniquely forced (+4/3,-2/3,-2) and all six gauge-anomaly conditions cancel exactly. The matter CONTENT itself (RH ansatz, nu_R branch) and the absolute Y-SCALE are conditional model choices / conventions, not anomaly consequences. This reproves the load-bearing arithmetic of the matter-content chain, decoupled from the unaudited anomaly_forces_time_theorem. Audit lane sets the verdict.
 
 ----- stderr -----
 

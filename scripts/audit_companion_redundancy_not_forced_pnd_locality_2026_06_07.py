@@ -17,7 +17,7 @@ HONEST RESULT.
       g t = pi/4. At g t = pi/6 the SAME coupling gives Holevo chi = 0.811 < 0.9*H_S per fragment, so
       R_delta = 0. The broadcast is fine-tuned in BOTH the coupling form and the time.
   (B) A GENUINELY generic pointer-non-demolition coupling H = c0 Z_S X_1 + c1 Z_S X_2 + c2 Z_S X_1 X_2
-      (random Gaussian c) gives R_delta = N in ~0/300 samples (delta=0.1). Generic PND is non-redundant.
+      (random Gaussian c) gives R_delta = N in ~0/300 samples (delta=0.1). A randomly sampled PND coupling is non-redundant under this seed/threshold.
       The range-2 monitoring being present does NOT rescue redundancy: H = 0.5(Z_S X_1 + Z_S X_2)
       + Z_S X_1 X_2 has the range-2 term present yet yields R_delta = 0.
   (C) Therefore PND ([H, Z_S]=0, taken here as an explicit conditional input -- the pointer-non-demolition

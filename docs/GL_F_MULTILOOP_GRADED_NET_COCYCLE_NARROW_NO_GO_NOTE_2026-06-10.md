@@ -343,7 +343,7 @@ row, not all conceivable future principles. Any "irreducible" wording below is
 route-portfolio irreducibility, not a claim against future principles outside
 the exercised route classes.
 
-**N6 — Partial-closure path scan.** Remaining non-axiom paths: (1) Tier-A
+**N6 — Partial-closure path scan.** Remaining non-axiom paths: (1) open-premise
 admission of `GL(F)`/FS (a governance decision, not science produced here);
 (2) emergent-continuum migration (OS→Wightman + standard spin-statistics);
 (3) a future retained principle outside the loop-consistency class (none
@@ -380,7 +380,7 @@ the 06-06 exercise portfolio have all been exercised and neutralized
 rotation-exchange — retained no-gos — and multi-loop graded-net cocycle
 consistency — this note). This is route-portfolio irreducibility, not a proof
 against future principles outside the enumerated route classes. The remaining
-paths are Tier-A admission (governance) or migration off the static baseline
+paths are a future open-premise registration (governance) or migration off the static baseline
 (emergent-Lorentz frontier). The spine's full premise surface for statistics
 selection stays exactly P-FLUX (one bit) + `GL(F)` (one predicate), with
 `GL(F)` now needing new structure relative to the exercised route portfolio,

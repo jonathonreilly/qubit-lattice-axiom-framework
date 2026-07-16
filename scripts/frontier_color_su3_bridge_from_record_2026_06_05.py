@@ -41,7 +41,7 @@ and tests four things, mapped to the four task parts:
           0 -> 1 -> 2 endpoint-invariance profile; nothing in
           {records, locality, links} prefers one over the other. The choice
           is the assignment "quarks occupy the 3D symmetric base in the
-          fundamental 3" = the matter realization (AC_phi_lambda family).
+          fundamental 3" = the matter-realization residual (which subsystem the matter occupies).
 
   PART 4  Residual ledger. Decompose the bridge into
             (a) the #2667 half: gauge-group = commutant of the record-

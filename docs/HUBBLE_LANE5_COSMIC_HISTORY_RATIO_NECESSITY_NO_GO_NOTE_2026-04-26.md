@@ -178,11 +178,13 @@ landed AND one route from `(C2)`-or-`(C3)`-class landed.
 
 **Closes.**
 
-- The "no fourth class of derivation" program-bounding statement made
-  informally in `COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md`
-  §3.2.
-- A precise classification of Lane 5 closure routes into the three
-  classes `(C1), (C2), (C3)`.
+- The `(C1)/(C2)/(C3)` bookkeeping taxonomy of the currently reviewed Lane 5
+  closure routes (from the program-bounding notes in
+  `COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md` §3.2); this is
+  **not** an exhaustive proof that no other route (e.g. a direct or joint
+  dimensionless relation) exists.
+- A precise statement of how the currently reviewed routes decompose into the
+  three classes `(C1), (C2), (C3)`.
 - A precise statement of why the current baseline plus the scale-reference
   primitive is insufficient.
 

@@ -22,8 +22,10 @@ site (the qubit; `σ_i` generate the **internal** `su(2)`), Admissibility, Recor
 internal `su(2)` to be the **external** spatial-rotation `su(2)` (the qubit doublet = physical
 spin-½)?
 
-**Verdict: no.** The double-use is neither an unconditional theorem nor a no-go.
-It reduces to one index-pairing condition:
+**Verdict: no** (established on the tested lattice-hop / qubit spectator
+structure; no full Admissibility/Record model is constructed, so the four-axiom
+baseline is not claimed exhausted). The double-use is neither an unconditional
+theorem nor a no-go. It reduces to one index-pairing condition:
 
 ```text
 The Clifford/derivative index μ of the dynamical (Kähler-/staggered-)Dirac

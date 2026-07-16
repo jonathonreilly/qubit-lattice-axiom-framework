@@ -126,6 +126,152 @@ def table(rows: list[tuple[str, str | int]]) -> str:
     return "\n".join(out)
 
 
+SHADOW_PRIOR_PATH = DATA_DIR / "dispatch_shadow_prior.json"
+SHADOW_TOP_N = 10  # 'top segment' size; a stated assumption, not a rate claim
+
+
+def _banded_interleave(queue_entries: list, lane_ids: set) -> list:
+    """OFF-ONLY simulation of the design note's banded interleave: within
+    each (criticality_rank, ready) band of the READY-filtered pending queue,
+    alternate lane / non-lane starting lane-first; sub-order within each
+    stream is the main-queue order. Selection assumptions: ready-only rows,
+    top-N segment reported, no re-queue dynamics modeled."""
+    ready = [e for e in queue_entries if e.get("ready")]
+    out: list = []
+    band_key = lambda e: (-e.get("criticality_rank", 0),)
+    idx = 0
+    while idx < len(ready):
+        band_rank = band_key(ready[idx])
+        band = []
+        while idx < len(ready) and band_key(ready[idx]) == band_rank:
+            band.append(ready[idx])
+            idx += 1
+        lane_stream = [e for e in band if e["claim_id"] in lane_ids]
+        other_stream = [e for e in band if e["claim_id"] not in lane_ids]
+        li = oi = 0
+        take_lane = True
+        while li < len(lane_stream) or oi < len(other_stream):
+            if take_lane and li < len(lane_stream):
+                out.append(lane_stream[li]); li += 1
+            elif oi < len(other_stream):
+                out.append(other_stream[oi]); oi += 1
+            elif li < len(lane_stream):
+                out.append(lane_stream[li]); li += 1
+            take_lane = not take_lane
+    return out
+
+
+def shadow_report_lines() -> list:
+    """The design note's nightly Dispatch Shadow Report: lane/admission and
+    would-park counts, named membership churn vs the prior pass, top-segment
+    overlap, hypothetical banded-interleave top segment vs actual, and
+    displacement metrics. Persists a gitignored prior snapshot for diffs.
+    Reporting only; no dispatch effect."""
+    lane_path = DATA_DIR / "audit_publication_lane.json"
+    queue_path = DATA_DIR / "audit_queue.json"
+    lane_shadow = load_json(lane_path) if lane_path.exists() else None
+    queue_summary = (load_json(queue_path) if queue_path.exists() else {}) or {}
+    lines = ["", "## Dispatch Shadow Report (no dispatch effect)", ""]
+    if not lane_shadow:
+        lines.append("- Shadow lane file unavailable (first pass after landing).")
+        return lines
+
+    lane_entries = lane_shadow.get("lane", [])
+    lane_ids = {e["claim_id"] for e in lane_entries}
+    pending_admission = lane_shadow.get("pending_admission", [])
+    absent = lane_shadow.get("admitted_absent_from_candidates", [])
+    queue_entries = queue_summary.get("queue", [])
+
+    # membership churn vs prior pass
+    prior = (load_json(SHADOW_PRIOR_PATH)
+             if SHADOW_PRIOR_PATH.exists() else {}) or {}
+    prior_ids = set(prior.get("lane_ids", []))
+    added = sorted(lane_ids - prior_ids)
+    removed = sorted(prior_ids - lane_ids)
+    try:
+        SHADOW_PRIOR_PATH.write_text(
+            json.dumps({"lane_ids": sorted(lane_ids)}, indent=1) + "\n"
+        )
+    except OSError:
+        pass
+
+    # top-segment overlap + simulated interleave + displacement
+    actual_ready = [e for e in queue_entries if e.get("ready")]
+    actual_top = [e["claim_id"] for e in actual_ready[:SHADOW_TOP_N]]
+    overlap = sum(1 for cid in actual_top if cid in lane_ids)
+    simulated = _banded_interleave(queue_entries, lane_ids)
+    sim_top = [e["claim_id"] for e in simulated[:SHADOW_TOP_N]]
+    actual_pos = {e["claim_id"]: i for i, e in enumerate(actual_ready)}
+    displacements = []
+    for i, cid in enumerate(sim_top):
+        if cid in lane_ids:
+            moved = actual_pos.get(cid, i) - i
+            if moved > 0:
+                displacements.append((cid, moved))
+
+    lines.append(
+        table(
+            [
+                ("Publication-lane size (shadow, admitted only)",
+                 lane_shadow.get("lane_size", 0)),
+                ("Candidates pending manifest admission", len(pending_admission)),
+                ("Admitted ids absent from current candidates", len(absent)),
+                ("Manifest state", lane_shadow.get("manifest_state", "?")),
+                ("Live conditional/failed rows that would park",
+                 queue_summary.get("shadow_would_park_count", 0)),
+                ("Live rows fail-open (no snapshot dep map)",
+                 queue_summary.get("shadow_conditional_fail_open_count", 0)),
+                (f"Lane rows already in actual ready top-{SHADOW_TOP_N}", overlap),
+                ("Lane rows added since prior pass", len(added)),
+                ("Lane rows removed since prior pass", len(removed)),
+            ]
+        )
+    )
+    lines.append("")
+    if added or removed:
+        lines.append("Named lane membership churn since the prior pass:")
+        for cid in added[:10]:
+            lines.append(f"- added: `{cid}`")
+        for cid in removed[:10]:
+            lines.append(f"- removed: `{cid}`")
+        if len(added) > 10 or len(removed) > 10:
+            lines.append(
+                f"- … and {max(len(added) - 10, 0) + max(len(removed) - 10, 0)} more"
+            )
+        lines.append("")
+    if pending_admission:
+        lines.append("Pending manifest admission (visible gaming surface):")
+        for cid in pending_admission[:10]:
+            lines.append(f"- `{cid}`")
+        if len(pending_admission) > 10:
+            lines.append(f"- … and {len(pending_admission) - 10} more")
+        lines.append("")
+    lines.append(
+        f"Hypothetical next dispatch top-{SHADOW_TOP_N} under OFF-ONLY banded "
+        f"interleave (ready rows, lane-first within equal criticality bands) "
+        f"vs actual queue order:"
+    )
+    for i in range(SHADOW_TOP_N):
+        sim = f"`{sim_top[i]}`" if i < len(sim_top) else "—"
+        act = f"`{actual_top[i]}`" if i < len(actual_top) else "—"
+        marker = "" if (i < len(sim_top) and i < len(actual_top) and sim_top[i] == actual_top[i]) else " ← differs"
+        lines.append(f"- {i + 1}. sim {sim} / actual {act}{marker}")
+    if displacements:
+        lines.append("")
+        lines.append("Lane rows advanced by the simulated interleave (positions gained):")
+        for cid, moved in displacements[:10]:
+            lines.append(f"- `{cid}`: +{moved}")
+    lines.append("")
+    lines.append(
+        "Simulation assumptions: ready-only rows, banded lane-first 1:1 "
+        "alternation, no re-queue dynamics. The candidate set consumes the "
+        "previous pipeline pass's publication gap (renderer runs after the "
+        "queue). Cutover flags remain OFF; see the dispatch-retarget design "
+        "note's Ratification Log."
+    )
+    return lines
+
+
 def main() -> None:
     ledger_io.ensure_cache()
     counts, boxed_decorations, retained_grade = status_counts()
@@ -234,37 +380,7 @@ def main() -> None:
         lines.append("- Divergence report unavailable.")
     # Dispatch shadow report (dispatch-retarget design note, 2026-07-16).
     # Reporting only: nothing here affects any dispatch decision.
-    lane_shadow = load_json(DATA_DIR / "audit_publication_lane.json")
-    queue_summary = load_json(DATA_DIR / "audit_queue.json")
-    lines.extend(["", "## Dispatch Shadow Report (no dispatch effect)", ""])
-    if lane_shadow:
-        lines.append(
-            table(
-                [
-                    ("Publication-lane size (shadow)", lane_shadow.get("lane_size", 0)),
-                    ("Lane rows admitted by manifest", lane_shadow.get("admitted_in_lane", 0)),
-                    ("Lane rows pending admission", len(lane_shadow.get("pending_admission", []))),
-                    ("Live conditional/failed rows that would park", queue_summary.get("shadow_would_park_count", 0)),
-                    ("Live rows fail-open (no snapshot dep map)", queue_summary.get("shadow_conditional_fail_open_count", 0)),
-                ]
-            )
-        )
-        lines.append("")
-        pending_admission = lane_shadow.get("pending_admission", [])
-        if pending_admission:
-            lines.append("Pending manifest admission (visible gaming surface):")
-            for cid in pending_admission[:10]:
-                lines.append(f"- `{cid}`")
-            if len(pending_admission) > 10:
-                lines.append(f"- … and {len(pending_admission) - 10} more")
-            lines.append("")
-        lines.append(
-            "Lane consumes the previous pipeline pass's publication gap "
-            "(renderer runs after the queue). Cutover flags remain OFF; see the "
-            "dispatch-retarget design note's Ratification Log."
-        )
-    else:
-        lines.append("- Shadow lane file unavailable (first pass after landing).")
+    lines.extend(shadow_report_lines())
     lines.extend(
         [
             "",

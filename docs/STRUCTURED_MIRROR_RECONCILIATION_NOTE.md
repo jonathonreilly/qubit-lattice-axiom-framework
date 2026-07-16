@@ -2,6 +2,8 @@
 
 **Date:** 2026-04-03  
 **Status:** support / historical pre-correction comparison only
+**Claim type:** meta
+**Status authority:** independent audit lane only.
 **Current corrected authority:** [`STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md`](STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md)
 **Historical runner:** [`scripts/structured_mirror_reconciliation.py`](../scripts/structured_mirror_reconciliation.py)
 
@@ -53,8 +55,8 @@ geometry using the same defective detectorwise seven-term aggregation:
 
 The pre-correction values were harness-sensitive:
 
-- the structured-growth geometry itself is physically interesting and retains
-  positive gravity plus nontrivial decoherence
+- the historical finite cards report positive gravity and `pur_cl` below one;
+  these are harness diagnostics, not derived coexistence or acceptance criteria
 - the legacy detectorwise seven-term value changes with the aperture and field
   choices
 - that sensitivity is not evidence about the corrected eight-term statistic

@@ -1,65 +1,79 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py
-runner_sha256: 16014dbd75f2d84c242fcb369baf51ae06f7ef3e7cbf382a1ffe7bb46d834412
+runner_sha256: 670fe6be455cf02954127ec6f5ccd917164799b0359179ec6c8e37f7e7f75ec4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
-GAUGE-VACUUM PLAQUETTE TRANSFER-OPERATOR / CHARACTER-RECURRENCE
+GAUGE-VACUUM POSITIVE TRANSFER / CHARACTER-RECURRENCE REPAIR
 ==============================================================================
 
-Sample plaquette-source values on the SU(3) torus
-  sample 1: (theta1, theta2)=(+0.37, -0.91)
-            X(trace)                    = 0.801260592152890
-            X(characters)               = 0.801260592152890-5.99e-16i
-  sample 2: (theta1, theta2)=(+1.11, +0.43)
-            X(trace)                    = 0.461472908499686
-            X(characters)               = 0.461472908499686-9.25e-17i
-  sample 3: (theta1, theta2)=(-0.64, +1.27)
-            X(trace)                    = 0.635468046373921
-            X(characters)               = 0.635468046373914-5.84e-15i
-  sample 4: (theta1, theta2)=(+0.82, -1.44)
-            X(trace)                    = 0.542174457562764
-            X(characters)               = 0.542174457562764+9.25e-18i
+SU(3) representation-ring witnesses
+  tensor levels checked                 = 0..8
+  dimension sums                        = [1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616]
+  expected dimensions                   = [1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616]
+  minimum truncated coefficient         = 1.030056e-09
+  sampled Wilson Gram minimum eigenvalue= 1.665696e+00
+  negative-beta Gram minimum eigenvalue = -4.483740e+00
 
-Character-recurrence witnesses
-  max chi_(1,0) recurrence error        = 1.358e-13
-  max chi_(0,1) recurrence error        = 1.206e-13
-  max combined X recurrence error       = 3.983e-14
+SU(3) marked-plaquette recurrence witnesses
+  chi_(1,0) recurrence error            = 1.361e-13
+  chi_(0,1) recurrence error            = 1.616e-13
+  combined source recurrence error      = 4.775e-14
+  compressed recurrence symmetry error  = 0.000e+00
+  compressed recurrence spectrum        = [-0.439488, 0.877072]
 
-Truncated dominant-weight recurrence operator
-  box size                              = 5 x 5 = 25 states
-  Hermitian symmetry error              = 0.000e+00
-  compressed eigenvalue range           = [-0.419884520091398, 0.834698682485701]
+Exhaustive S3 transfer-factorization witness
+  convolution minimum eigenvalue        = 2.456482e-01
+  gauge-projector idempotence error      = 1.110e-16
+  convolution/projector commutator      = 2.776e-17
+  Q minimum eigenvalue                  = -5.807866e-17
+  transfer minimum eigenvalue           = -2.282425e-17
+  sourced transfer minimum eigenvalue   = -2.214515e-17
+  transfer Gram-factorization error     = 5.551e-16
+  projected mixed-kernel error          = 8.882e-16
+  transfer trace / path sum             = 2.787811478905 / 2.787811478905
+  marked trace / path sum               = 2.853220273574 / 2.853220273574
+  repeated source trace / path sum      = 1.899393076592 / 1.899393076592
+  four-link pullback isometry error      = 3.175e-14
 
-3+1 slice decomposition witness
-  spatial plaquettes per slice          = 24
-  mixed plaquettes per time step        = 24
-  total plaquettes per one-clock step   = 48
-
-  [PASS] [THEOREM] the plaquette source is exactly the real class function (chi_(1,0)+chi_(0,1))/6
-         sample torus evaluations of Re Tr / 3 and the character formula agree
-  [PASS] [THEOREM] multiplication by chi_(1,0) obeys the exact SU(3) dominant-weight recurrence
-         max recurrence error = 1.358e-13
-  [PASS] [THEOREM] multiplication by chi_(0,1) obeys the exact conjugate dominant-weight recurrence
-         max recurrence error = 1.206e-13
-  [PASS] [THEOREM] the plaquette source therefore obeys one exact six-neighbor character recurrence
-         max combined recurrence error = 3.983e-14
-  [PASS] [THEOREM] the character-recurrence operator is self-adjoint
-         Hermitian symmetry error = 0.000e+00
-  [PASS] [THEOREM] the accepted one-clock split is exactly 3 spatial plus 3 mixed plaquette orientations per step
-         spatial=24, mixed=24, total=48
-  [PASS] [THEOREM] the operator-level plaquette generating object is therefore explicit on the accepted 3+1 surface
-         the remaining unknown is the transfer state at beta=6, not the local source operator
-  [PASS] [SUPPORT] the truncated recurrence spectrum stays inside the expected plaquette support window
-         compressed eigenvalues lie in [-0.419885, 0.834699]
-  [PASS] [SUPPORT] the remaining framework-point gap is transfer-state identification rather than source-operator ambiguity
-         the exact source operator is explicit; what remains is the beta=6 transfer/Perron state
+  [PASS] [THEOREM] tensor powers of 3 direct-sum 3bar have exact nonnegative integer multiplicities
+         checked all dominant weights through tensor level 8
+  [PASS] [THEOREM] the representation-ring decomposition preserves dimension 6^n
+         dimension sums = [1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616]
+  [PASS] [THEOREM] positive Taylor weights give nonnegative truncated Wilson coefficients
+         minimum checked partial coefficient = 1.030056e-09
+  [PASS] [SUPPORT] sampled SU(3) Wilson positive-type Gram matrices are positive semidefinite
+         minimum eigenvalue = 1.665696e+00
+  [PASS] [THEOREM] multiplication by chi_(1,0) obeys the exact SU(3) recurrence
+         maximum error = 1.361e-13
+  [PASS] [THEOREM] multiplication by chi_(0,1) obeys the exact conjugate recurrence
+         maximum error = 1.616e-13
+  [PASS] [THEOREM] the real plaquette source obeys the exact six-neighbor recurrence
+         combined error = 4.775e-14, symmetry error = 0.000e+00
+  [PASS] [SUPPORT] finite nonabelian character-exponential convolution is positive and commutes with gauge projection
+         lambda_min(C)=2.456e-01, ||[C,P]||_max=2.776e-17
+  [PASS] [SUPPORT] finite-model gauge-projected Q and half-weight transfer are positive
+         lambda_min(Q)=-5.808e-17, lambda_min(T)=-2.282e-17
+  [PASS] [SUPPORT] the finite-model transfer equals its explicit Gram factorization
+         maximum entry error = 5.551e-16
+  [PASS] [SUPPORT] the finite-model periodic transfer trace equals the exhaustive path sum
+         |trace-path|=7.105e-15, kernel error=8.882e-16
+  [PASS] [SUPPORT] finite-model marked and repeated sources match path sums and preserve positivity
+         marked error=1.421e-14, repeated error=1.021e-14
+  [PASS] [SUPPORT] negative beta is detected outside the nonnegative-coefficient theorem
+         sampled minimum eigenvalue = -4.483740e+00
+  [PASS] [SUPPORT] pointwise positive symmetry alone does not imply quadratic-form positivity
+         counterexample minimum eigenvalue = -1.0
+  [PASS] [SUPPORT] the compressed recurrence spectrum stays inside the plaquette support interval
+         spectrum=[-0.439488, 0.877072]
+  [PASS] [SUPPORT] the four-link plaquette pullback preserves class-character inner products
+         maximum Gram error = 3.175e-14
 
 ==============================================================================
-SUMMARY: THEOREM PASS=7 SUPPORT=2 FAIL=0
+SUMMARY: THEOREM PASS=6 SUPPORT=10 FAIL=0
 ==============================================================================
 
 ----- stderr -----

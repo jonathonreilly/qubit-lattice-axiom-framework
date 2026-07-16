@@ -1,0 +1,68 @@
+loop_slug: gauge-transfer-positive-repair-20260716
+mode: campaign
+model_posture: "Sol xhigh"
+primary_target_claim_id: gauge_vacuum_plaquette_transfer_operator_character_recurrence_note
+target_status: best-honest-status
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: positive_theorem
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+started_at_utc: "2026-07-16T12:16:29Z"
+runtime_budget: "6h"
+target_stop_at_utc: "2026-07-16T18:16:29Z"
+checkpoint_interval: "30m"
+deep_block: "120m"
+cycle_count: 2
+block_count: 1
+current_branch: physics-loop/gauge-transfer-positive-repair-block01-20260716
+base_ref: origin/main
+base_commit: abd65e73c5dca383da777d646e1663b42dfabbe9
+lock_mode: branch-local-supervisor
+lock_note: "Global automation lock path returned permission denied; custom worktree-local lock acquired."
+active_route: "finite-volume Peter-Weyl positivity, commuting gauge projection, exact transfer Gram factorization, and spatial-source algebra intertwiner"
+hard_residual: "Prove the displayed Wilson one-step operator is positive semidefinite and prove the marked spatial-plaquette insertion/state formula without asserting a mixed-plaquette multiplication operator or a transfer-invariant source sector."
+a_min:
+  - Lattice
+  - Qubit
+  - Admissibility
+  - Record
+approved_primitives_checked:
+  - minimal_axioms
+  - scale_reference_primitive
+  - kinetic_isotropy_primitive
+  - realized_state_primitive
+approved_primitives_load_bearing: []
+forbidden_imports:
+  - observed or fitted plaquette values
+  - beta=6 Perron or thermal data
+  - literature-only reflection-positivity theorem
+  - strict positivity of every Wilson character coefficient
+  - mixed-temporal-plaquette identification as one-slice multiplication
+  - transfer-invariance or eigenvalue preservation of the plaquette source subspace
+files_touched:
+  - .claude/science/physics-loops/gauge-transfer-positive-repair-20260716/
+  - docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md
+  - scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.txt
+open_imports: []
+no_go_routes:
+  - "Pointwise-positive plus symmetric kernel is insufficient for operator positive semidefiniteness."
+  - "A mixed temporal plaquette is not automatically a one-slice multiplication insertion."
+  - "Simultaneous conjugation invariance does not make an arbitrary source compression character-diagonal."
+  - "The source-cyclic multiplication algebra need not be invariant under the full transfer operator."
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+review_disposition: pass
+pr_status: pending
+last_checkpoint_at_utc: "2026-07-16T12:41:13Z"
+origin_main_seen_at_checkpoint: abd65e73c5dca383da777d646e1663b42dfabbe9
+rebase_required_before_pr: false
+pipeline_validation:
+  status: pass
+  strict_lint_errors: 0
+  target_generated_state: unaudited
+  target_queue_rank: 34
+  generated_outputs_removed: true
+deep_block_status: "not yet consumed; the primary residual closed and passed review before a 120m interval elapsed; use the next related block for the campaign deep block if this turn does not continue"
+next_exact_action: "Run vocab_lint --fix and final checks, remove the branch-local supervisor lock files, commit, push, open the block-01 review PR, then checkpoint the PR and pivot opportunity 2 if campaign execution continues."
+stop_condition: "Runtime exhaustion, a clean reviewed PR for the coherent repair block followed by queue pivot, or documented global opportunity/value-gate exhaustion."

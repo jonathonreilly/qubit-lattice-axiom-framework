@@ -20,8 +20,8 @@ The finite card is fixed to:
 
 - outer seed labels `0..3`, mapped to generator RNG seeds `7`, `26`, `45`,
   and `64` by `19 * seed + 7`
-- `16` layers: one source node at layer zero and `24` nodes in every later
-  layer, sampled uniformly in `y,z in [-10,10]`
+- `16` layers: one source node at `(0,0,0)` in layer zero and `24` nodes in
+  every later layer, sampled uniformly in `y,z in [-10,10]`
 - generated edges from either of the two preceding layers when Euclidean
   distance is at most `connect_radius = 3.2`
 - baseline control: the generated adjacency augmented by the `k = 3`
@@ -29,9 +29,11 @@ The finite card is fixed to:
 - repair candidate: preserve that input adjacency in stable order, then union
   the nearest representative in each adaptive `3 x 3` next-layer `y/z`
   sector and nearest-node backfill of the candidate list to floor `9`
-- four equally weighted source nodes selected from the middle layer around
-  `global mean y + 3`, within `|Delta y| <= 2.5` when four are available and
-  otherwise by the same nearest-four ranking
+- four equally weighted field-source nodes selected from the middle layer:
+  set `target_y = global mean y + 3`, rank by
+  `((y - target_y)^2 + z^2, |y - target_y|)`, take the first four ranked nodes
+  satisfying `|y - target_y| <= 2.5` when at least four do, and otherwise take
+  the first four overall
 - static Green field
   `f_i(s) = g_seed (1/4) sum_m [(s/4) exp(-0.08 rho_im) / rho_im]`,
   `rho_im = r_im + 0.5`, at imposed source strengths
@@ -43,8 +45,10 @@ The finite card is fixed to:
   `dL = L[1 + (f_i + f_j)/2]` and
   `a = dL - sqrt(max(dL^2 - L^2, 0))`
 - exact zero-source shift; TOWARD means positive detector-centroid shift
-- detector `N_eff = exp[-sum p_i log p_i]`; support fraction is the fraction
-  of positive detector probabilities at least `1%` of the detector peak
+- the detector is the final layer, with normalized probabilities
+  `p_i = |A_i|^2 / sum_j |A_j|^2`; detector
+  `N_eff = exp[-sum p_i log p_i]`, and support fraction is the fraction of
+  positive detector probabilities at least `1%` of the detector peak
 - `alpha` is the ordinary-least-squares slope of
   `log |centroid shift|` against `log(source strength)`, not a derived physical
   mass exponent

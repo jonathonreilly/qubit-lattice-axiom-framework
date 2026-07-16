@@ -14,27 +14,30 @@ This is a synthesis over four finite generated-family bridge probes:
 
 ## Adversarial question
 
-Do any of the four named finite variants recover the tracked weak-field
-sign, source-strength response, and support diagnostics on their declared
-cards?
+Do any of the four named finite probes meet their own declared weak-field
+diagnostic or transfer target on their stated cards?
 
 ## Synthesis
 
-On their declared cards, none of the four named variants recovers the full
-tracked diagnostic package.
+On their declared cards, none of the four named probes meets its stated
+target.
 
 Why:
 
-- the discriminator says the bridge is geometry-limited, not field-rule-limited
+- the discriminator's sign/support comparison says the bridge is
+  geometry-limited, not field-rule-limited; that probe does not fit `alpha`
 - the `z`-spread transfer variant does not widen support or rescue the wavefield
 - the additive sector-fan geometry repair worsens the sign count, loses
   aggregate support, and moves the source-strength exponent farther from `1`
 - the radical downstream-reach fan moves support around, but it also fails to
   make the wavefield update matter on the generated family
 
-Taken together, these are four finite negative results for four stated
-variants. They do not exhaust nearby geometry rules, generated families,
-field architectures, or aggregation choices.
+The discriminator supplies the separate geometry-vs-field sign/support
+diagnostic. The three geometry-change probes that fit a source-strength
+exponent fail their own simultaneous sign, support, and response criteria.
+Taken together, these are four finite negative results for four stated probes.
+They do not exhaust nearby geometry rules, generated families, field
+architectures, or aggregation choices.
 
 ## Untested nearby routes
 
@@ -49,7 +52,7 @@ The following remain outside this synthesis:
 
 ## Bounded conclusion
 
-The four named variants are negative on their exact finite cards. This note
+The four named probes are negative on their exact finite cards. This note
 does not rule out another sector fan, another geometry rule, another generated
 family, or another field architecture. Independent audit owns any later
 ratification of this finite synthesis.

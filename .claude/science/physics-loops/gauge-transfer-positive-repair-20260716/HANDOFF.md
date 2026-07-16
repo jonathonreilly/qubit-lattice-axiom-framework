@@ -58,6 +58,16 @@ Verification:
 - runner now exposes a dedicated `sympy` prerequisite line, making B8
   availability explicit; the pre-existing Part-A fallback also fails
   nonzero when `sympy` is missing;
+- the final terminology pressure pass distinguishes this source's pure-gauge
+  `A_+^(2)` observable surface from the mixed gauge--fermion algebra denoted by
+  the same symbol in parent notes; matrix-entry observables remain covered, so
+  the source says "gauge-link observables" rather than only "characters";
+- fix-only mathematics, runner/source consistency, and governance rereviews
+  passed after that scope clarification; no runner/cache rerun was required
+  because the executable did not change;
+- an independent two-link test with arbitrary complex gauge-link observables
+  and nonconstant half weights on `SU(2)` through `SU(5)` reproduced the
+  spectral feature factorization with maximum relative error `1.53e-15`;
 - sibling pin runners pass.
 - disposable audit compatibility pipeline completed;
 - strict audit lint: zero errors;
@@ -85,7 +95,7 @@ If this worker must be resumed immediately:
 
 ```bash
 cd /private/tmp/physics-loop-gauge-transfer-positive-repair-20260716
-codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 4h11m --target best-honest-status"
+codex "/physics-loop --mode resume --loop gauge-transfer-positive-repair-20260716 --runtime 3h56m --target best-honest-status"
 ```
 
 Read `STATE.yaml`, `HANDOFF.md`, and `TRACE_GATE.md`. Do not run `audit-loop`,

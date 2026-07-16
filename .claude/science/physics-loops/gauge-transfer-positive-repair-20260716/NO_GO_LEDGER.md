@@ -11,6 +11,7 @@
 | temporal-gauge carrier proves global gauge fixing | separate theorem | carrier data only |
 | a periodic 1D spatial loop is a local plaquette term | false | exact runner uses `B_+=B_-=0` |
 | pure-gauge two-slice RP supplies fermion/full interacting RP | separate factors | explicitly excluded |
+| local pure-gauge `A_+^(2)` notation silently imports the mixed gauge--fermion parent algebra | false scope bridge | define the local gauge-link observable surface and exclude fermionic generators |
 | bounded-observable integration requires only `A_+^(2)` | too narrow | feature proof covers finite bounded families |
 
 Active constructive routes: representation-ring coefficients, real finite

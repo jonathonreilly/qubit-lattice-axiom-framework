@@ -56,8 +56,9 @@ The following finite-volume statements hold.
    matrix `[k_beta(U_i,U_j)]` is positive semidefinite. Products of these
    kernels over finitely many spatial links are positive semidefinite.
 4. **Integrated reflected Gram.** For every finite family of bounded measurable
-   plus-slice observables `{F_i}`, including the named `A_+^(2)` algebra, the
-   normalized two-slice pure-gauge form
+   pure-gauge plus-slice observables `{F_i}`, including the pure-gauge observable
+   surface denoted `A_+^(2)` in this source and runner, the normalized two-slice
+   pure-gauge form
 
    ```text
    G_ij = Z^(-1) ∫ exp(B) overline(F_i(c_0)) F_j(c_1) dc_0 dc_1
@@ -67,8 +68,10 @@ The following finite-volume statements hold.
 
 Thus the Wilson-plane gauge-half norm-square bridge is proved directly for the
 fundamental `SU(N)` Wilson weight on this finite two-slice carrier. The theorem
-is stronger than the old `A_+^(2)`-only formulation in observable algebra, but
-it remains deliberately bounded in time extent, volume, and sector.
+is stronger than the old pure-gauge `A_+^(2)` observable-surface formulation in
+its gauge-observable class, but it remains deliberately bounded in time
+extent, volume, and sector. It does not include the fermionic generators that
+some parent notes also place under the repository-wide `A_+^(2)` notation.
 
 ## 1. Reflection split and sign
 
@@ -257,13 +260,14 @@ On the compact finite-link configuration space, the Wilson half-weight and
 every bounded `F_i` are integrable. The pointwise Boltzmann weight is strictly
 positive, so `0<Z<∞`. Normalization preserves positive semidefiniteness.
 
-When the finite spatial slice contains spatial plaquettes, its named
-`A_+^(2)` spatial-plaquette and degree-at-most-two observables are bounded
-continuous functions and therefore lie inside this proved observable algebra.
-The exact `1+1`-dimensional runner carrier has no spatial plaquette; its
-degree-at-most-two link-character basis is a diagnostic restriction of the
-same bounded-observable theorem, not a claim that a spatial plaquette exists
-in one spatial dimension.
+When the finite spatial slice contains spatial plaquettes, the pure-gauge
+spatial-plaquette and degree-at-most-two gauge-link observables denoted
+`A_+^(2)` here are bounded continuous functions and therefore lie inside this
+proved observable class. The exact `1+1`-dimensional runner carrier has no
+spatial plaquette; its degree-at-most-two gauge-link basis is a diagnostic
+restriction of the same bounded-observable theorem, not a claim that a spatial
+plaquette exists in one spatial dimension. No fermionic observable is included
+in this notation or theorem.
 
 ## 4. Independent proof frames and controls
 
@@ -320,6 +324,8 @@ The runner prints `TOTAL: <N> PASS / <M> FAIL` and exits nonzero exactly when
 This theorem does not:
 
 - add the fermion determinant or fermion-sector two-step transfer factor;
+- prove positivity on the mixed gauge--fermion `A_+^(2)` algebra used by parent
+  interacting notes;
 - prove reflection positivity on an arbitrary multi-slice lattice;
 - construct a transfer matrix or Hamiltonian;
 - prove a continuum, thermodynamic, or Osterwalder-Schrader reconstruction

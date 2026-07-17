@@ -2,14 +2,16 @@
 
 **Date:** 2026-04-12 (originally); 2026-05-10 (audit-narrowing refresh:
 explicit class-E definitional-compression framing under named admitted
-inputs); 2026-06-17 (runner/source drift repair for Test 4 and synthesis).
+inputs); 2026-06-17 (runner/source drift repair for Test 4 and synthesis);
+2026-07-17 (Test 4 common-outcome-space and Hamiltonian-scale repair).
 **Status:** scope-narrowed bounded operational note. The runner numerically
 verifies four consequences (Hamiltonian-support graph recovery, Born-rule
-`I_3 = 0` at machine precision, unitarity-vs-Lindblad behaviour, tensor-
-product locality) **after** the named inputs `(local d, local Hermitian H,
-Born readout)` are supplied. The "single axiom" framing is a definitional
-compression of those inputs into the phrase "local tensor product Hilbert
-space"; this note **does not** derive the local-Hamiltonian, the locality
+`I_3 = 0` at machine precision, unitarity-vs-Lindblad behaviour, and a
+matched-scale local-H localization contrast) **after** the named inputs
+`(local d, local Hermitian H, Born readout)` are supplied. The "single axiom"
+framing is a definitional compression of those inputs into the phrase
+"local tensor product Hilbert space"; this note **does not** derive the
+local-Hamiltonian, the locality
 restriction, or the Born readout from the bare tensor-product Hilbert
 space alone.
 **Claim type (in-note framing):** bounded operational note —
@@ -32,15 +34,17 @@ for the current paper package remains the Lattice + Quantum + Record
 front-door surface in `docs/MINIMAL_AXIOMS_2026-06-05.md`.
 **Runner:** `scripts/frontier_single_axiom_hilbert.py`
 
-**2026-06-17 runner/source drift repair:** the executable runner and this
-source note now agree that Test 4 does **not** prove monotone distance-decay
-with graph distance. The current fixed-seed Test 4 output reports
-`Locality gradient (near > far): False`; the bounded support is only the
-spread/localization contrast between the supplied tensor-product local
-Hamiltonian and an unfactored random Hamiltonian of the same dimension. The
-runner synthesis has therefore been demoted from the old "single axiom
-reduction" language to the admitted-input operational-support boundary already
-stated in this note.
+**2026-07-17 Test 4 repair:** the executable runner and this source note compare
+both propagators on the same 64 mutually exclusive computational-basis
+outcomes. Both probability distributions are normalized. Before propagation,
+each Hamiltonian is shifted by its trace (which changes only a global phase)
+and rescaled to centered RMS energy
+`sqrt(Tr(H_c^2)/64) = 1`. The fixed seed, initial state `|000000>`,
+dimensionless time `t=1`, and existing twofold spread-contrast criterion are
+unchanged. The control is now described accurately as a dense nonlocal
+Hamiltonian on the same factorized Hilbert space, rather than as an
+"unfactored" space. Test 4 remains a fixed-seed bounded localization contrast;
+it does not prove monotone distance decay or a general localization theorem.
 
 **Audit-dispatch parent candidate:** If a future independent audit
 evaluates whether this Hilbert-surface wrapper is a non-chain-closing
@@ -67,8 +71,8 @@ Hermiticity/locality restriction, Born rule, graph support extraction, or the
 current accepted-input ledger.
 
 Promotion beyond renaming support requires deriving those inputs from a
-strictly smaller retained framework surface, and repairing the Test 4
-source/runner drift before any stronger use.
+strictly smaller retained framework surface. The repaired Test 4 remains only
+a common-space, matched-scale fixed-seed contrast and supplies no stronger use.
 
 ## Audit boundary (2026-05-10 refresh of 2026-05-05 verdict; prior 2026-05-11 re-audit confirmed `audited_renaming` and updated `claim_type` to `bounded_theorem`)
 
@@ -127,7 +131,7 @@ consequences`, evaluated mechanically by the runner.
 Given the named admitted inputs `(local d, local Hermitian H, Born
 readout, "support = edges" extraction rule)`, do the four numerical
 consequences (graph recovery, `I_3 = 0`, unitarity vs. Lindblad,
-tensor-product locality) follow mechanically?
+matched-scale local-H localization) follow mechanically?
 
 **Definitional compression (class-E):** packaging the four admitted
 inputs together gives the phrase "a finite Hilbert space with local
@@ -202,27 +206,39 @@ instead of migrating toward the potential minimum. The Hermiticity
 restriction is therefore a real admitted input: replacing it with
 non-Hermitian Lindblad dynamics changes the consequence.
 
-### Test 4: Tensor-product/local-H packet gives bounded localization support
+### Test 4: Matched-scale local-H packet gives bounded localization support
 
-Compared a 6-qubit chain (tensor product, local Hamiltonian) to a random
-64x64 Hamiltonian (same dimension, no factorization).
+Compared a 6-qubit chain-local Hamiltonian with a dense nonlocal random
+Hamiltonian on the same 64-dimensional factorized Hilbert space. Both start
+from `|000000>` and are read in the same mutually exclusive computational
+basis. For each raw Hamiltonian `H`, the runner removes the energy origin and
+matches the generator scale by
 
-| Metric               | Tensor product | Unfactored |
-|----------------------|---------------|------------|
-| Participation ratio  | 1.0 / 6 sites | 30.2 / 64 states |
-| Distance dependence  | No monotone decay claim; fixed-seed gradient check is false | No graph-distance notion |
-| Spread ratio         | 29x more localized | baseline |
+`H_c = H - Tr(H) I / 64`,
 
-Without the admitted tensor-product factorization, there is no notion
-of locality, distance, or spatial structure: the propagator spreads
-uniformly rather than respecting any supplied factorization. The runner's
-valid Test 4 support is the participation-ratio/spread contrast. It does not
-establish that the fixed-seed amplitudes decay monotonically with graph
-distance; the runner prints that monotone-gradient diagnostic as false.
-The tensor-product factorization plus the admitted local Hamiltonian
-(inputs 1+2) jointly give the bounded localization contrast. Neither input
-alone suffices: an unfactored same-dimension Hamiltonian gives much broader
-spread.
+`sigma_H = sqrt(Tr(H_c^2) / 64)`, and `H_matched = H_c / sigma_H`.
+
+Thus both evolutions use `sigma_H = 1` at the same dimensionless time `t=1`.
+The shift has no observable effect because it contributes only a global phase;
+the RMS normalization matches the mean-square spectral generator scale. This
+is an explicit comparison convention, not a derived physical energy scale.
+
+| Metric | Chain-local Hamiltonian | Dense nonlocal control |
+|---|---:|---:|
+| Outcome space | 64 basis outcomes | same 64 basis outcomes |
+| Probability sum | 1.000000 | 1.000000 |
+| Centered RMS energy after matching | 1.000000 | 1.000000 |
+| Participation ratio `1/sum_z p(z)^2` | 3.2706 / 64 outcomes | 13.1853 / 64 outcomes |
+| Spread ratio | 4.0314x more localized | baseline |
+
+The participation ratios are now like-for-like: each is computed from one
+normalized distribution over the same 64 mutually exclusive outcomes. The
+comparison isolates the supplied chain-local support restriction by holding
+the factorization, readout basis, initial state, evolution time, and centered
+RMS energy fixed. The dense control does not respect the chain-local support
+restriction and is broader in this fixed sample. Test 4 does not establish
+monotone decay with graph distance. The result is not an ensemble statement
+and does not show that tensor-product factorization alone causes localization.
 
 ## Conclusion (scope-narrowed)
 
@@ -240,10 +256,11 @@ consequences follow mechanically as evaluated by the runner:
 - Unitary toy evolution follows from the admitted Hermitian generator
   (Test 3); a non-Hermitian Lindblad replacement breaks the toy attraction
   profile, confirming the Hermiticity restriction is a real input.
-- The admitted tensor-product factorization gives a bounded localization
-  contrast by participation ratio; an unfactored same-dimension Hamiltonian
-  is much broader. The runner does not claim monotone distance-decay in the
-  fixed Test 4 sample (Test 4).
+- On the admitted factorized Hilbert space, the chain-local Hamiltonian gives a
+  bounded fixed-seed localization contrast against a dense nonlocal control.
+  Both participation ratios use the same normalized 64-outcome space and
+  matched centered RMS energy. The runner does not claim monotone
+  distance-decay or an ensemble theorem (Test 4).
 
 **Definitional-compression framing.** The four admitted inputs
 `(local d, local H, Born readout, "support = edges" rule)` can be

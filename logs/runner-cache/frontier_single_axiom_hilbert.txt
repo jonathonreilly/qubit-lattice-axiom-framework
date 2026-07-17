@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_single_axiom_hilbert.py
-runner_sha256: 7ea5ad4c646799e8c7a6a511efd4a37d15b534a99894288174f7ee6b42c1093c
+runner_sha256: cdfa7098e788c596acdd5f8a51bb8d94a82b8a1edc7030ff4b20a5dab13ebbd9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 SCOPE-NARROWED LOCAL TENSOR PRODUCT HILBERT SUPPORT
@@ -59,39 +59,26 @@ TEST 3: Hermitian generator gives unitary evolution; Lindblad control breaks it
   PASS: Hermitian/unitary control is load-bearing for the toy profile
 
 ======================================================================
-TEST 4: Tensor product factorization gives bounded localization support
+TEST 4: Matched-scale local H gives bounded localization support
 ======================================================================
 
-  (a) Tensor product space (6-qubit chain):
-    Site probabilities: [0.6348, 0.3284, 0.2628, 0.2339, 0.4075, 0.4001]
-    Locality gradient (near > far): False
-    Diagnostic only: the fixed-seed amplitudes are not claimed to decay monotonically.
+  Common comparison contract:
+    Outcome space: 64 mutually exclusive computational-basis outcomes
+    Initial state: |000000>; dimensionless time: 1.0
+    Centered RMS energy before matching: local=2.425855, dense=7.982713
+    Centered RMS energy after matching:  local=1.000000000000, dense=1.000000000000
+    Probability normalization error:    local=2.220e-16, dense=3.331e-16
 
-  (b) Unfactored space (random 64x64 Hamiltonian):
-    Probability spread (std): 1.6543e-02
-    Max probability: 6.2129e-02
-    Min probability: 5.2271e-05
+  Participation ratio on the common outcome space:
+    Chain-local Hamiltonian: PR = 3.2706 / 64 outcomes
+    Dense nonlocal control:  PR = 13.1853 / 64 outcomes
 
-  Participation ratio (how spread is the propagator):
-    Local Hamiltonian:  PR = 1.0 / 6 sites
-    Random Hamiltonian: PR = 30.2 / 64 states
-
-  Distance dependence of propagation:
-    Local (tensor product):
-      distance 0: |G| = 0.279140
-      distance 1: |G| = 0.115061
-      distance 2: |G| = 0.181217
-      distance 3: |G| = 0.104496
-      distance 4: |G| = 0.202841
-      distance 5: |G| = 0.202112
-    Random (unfactored):
-      Top 5 amplitudes: [0.249257, 0.247233, 0.239206, 0.236498, 0.233064]
-      Bottom 5: [0.025534, 0.013398, 0.012560, 0.010231, 0.007230]
-      Ratio top/median: 2.51
-
-  Spread ratio (random/local): 29.0x
-  Tensor-product/local-H packet is more localized by spread ratio: True
-  PASS: bounded localization contrast
+  Spread ratio (dense/local): 4.0314x
+  Same 64-outcome space: True
+  Both distributions normalized: True
+  Centered RMS energies matched: True
+  Existing >2x spread criterion: True
+  PASS: bounded matched-scale localization contrast
 
 ======================================================================
 SYNTHESIS: What the admitted-input packet supports
@@ -114,9 +101,9 @@ SYNTHESIS: What the admitted-input packet supports
     destroys the toy attraction profile.
 
   Test 4 — Bounded localization contrast:       PASS
-    The supplied tensor-product/local-H packet is far less spread than an
-    unfactored random Hamiltonian of the same dimension. The fixed sample
-    does not prove monotone graph-distance decay.
+    On the same normalized 64-outcome space and at matched centered RMS
+    energy, the supplied chain-local H is less spread than a dense nonlocal
+    control. The fixed sample does not prove monotone graph-distance decay.
 
   Conclusion:
     The runner supports the bounded operational consequences of the admitted
@@ -125,6 +112,7 @@ SYNTHESIS: What the admitted-input packet supports
     and it does not reduce the current framework axiom ledger.
 
 Total runtime: 0.1s
+OVERALL: PASS
 
 ----- stderr -----
 

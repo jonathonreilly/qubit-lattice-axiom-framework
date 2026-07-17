@@ -1488,6 +1488,7 @@ AUDIT_DATA_FILES = [
     "docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md",
     "docs/publication/ci3_z3/ARXIV_DRAFT_EFFECTIVE_STATUS.md",
     "docs/repo/FRONT_DOOR_STATUS.md",
+    "docs/repo/RETAINED_BACKBONE.md",
 ]
 
 

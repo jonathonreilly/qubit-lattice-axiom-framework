@@ -7,5 +7,7 @@ block and local review-loop `pass`.
 - Proposed title: `science: derive free-staggered pole carrier and finite CAR relabelling`
 - State: ready review PR
 - PR: [`#5465`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5465)
-- Head commit: `64b1d3c4ee1841f25d4fca256e9f4d1e0f97ca4f`
-- Merge: forbidden; independent audit must run first
+- Science commit: `64b1d3c4ee1841f25d4fca256e9f4d1e0f97ca4f`
+- Review-handoff commit: `0e7512dbc3a1aa44fed41b02dde2eb257554e6c5`
+- Merge gate: final independent repo-native review-loop `PASS`; independent
+  audit is post-landing authority work

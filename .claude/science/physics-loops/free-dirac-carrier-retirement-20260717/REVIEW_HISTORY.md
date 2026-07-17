@@ -43,10 +43,11 @@ Review disposition: `pending`; narrow fixes required.
 - `LABELING_CONVENTION`: the Pauli ladder convention could be inferred in two
   ways. Fixed by displaying `sigma_+` and the associated occupation matrix.
 - `BUG / SEMANTIC_BRIDGE`: the first finite CAR draft used `omega_a` as the
-  many-body weight even though the discrete-time transfer pole is `E_a`. The
-  projectors still use the exact `+/-omega_a` spectral split, but the raw and
-  normal-ordered finite-mode Hamiltonians now use the pole energy `E_a`; the
-  runner checks that corrected identity.
+  occupation weight even though the analytically continued pole location is
+  `E_a`. The projectors still use the exact `+/-omega_a` spectral split, while
+  the raw and normal-ordered finite-mode occupation operators use the pole
+  weight `E_a`; the runner checks that corrected identity without promoting it
+  to physical Hamiltonian energy.
 - `SEMANTIC_BRIDGE`: the target note's old trailing methodology paragraph
   still listed the invariant measure and CAR relabelling as free textbook
   inputs. Fixed so those objects are sourced only from the new candidate edge;
@@ -88,10 +89,10 @@ The graph has exactly two load-bearing parents: the `retained_bounded` ABJ
 finite Clifford core and the registered kinetic-isotropy primitive. The final
 review found and fixed a possible custody ambiguity: the ABJ parent supplies
 the symmetric four-label Euclidean formula as a finite algebraic surface,
-while the primitive alone licenses identifying its `mu=0` label with emergent
-physical time in the same kinetic normalization as `Z^3`. The minimal axioms
-and parity theorem remain boundary/comparison context, not decorative graph
-dependencies.
+while the primitive alone licenses temporal graining in the same kinetic
+normalization as `Z^3`; it does not turn the analytic pole parameter into
+physically reconstructed transfer energy. The minimal axioms and parity theorem
+remain boundary/comparison context, not decorative graph dependencies.
 
 ### Nature retention — BOUNDED
 
@@ -102,14 +103,16 @@ continuum identity packet nor a Pattern-A rescope.
 
 ### No-go discipline — NOT APPLICABLE
 
-No negative theorem or named universal wall is proposed. The starting auditor
-explicitly classified the negative sentences as scope exclusions and negative
-controls, so N1-N8 is not substantively triggered.
+No negative theorem or named universal wall is proposed. The temporal-coefficient
+and string-omission checks perturb only the displayed constructions and do not
+foreclose alternative parametrizations or equivalent CAR presentations, so
+N1-N8 is not substantively triggered on the narrowed source surface.
 
 ### Labeling convention — PASS
 
 The Pauli ladder convention, occupation projector, positive/negative spectral
-labels, pole energy, taste multiplicity, and principal time patch are explicit.
+labels, distinction between `omega_a` and the pole weight `E_a`, taste
+multiplicity, and principal time patch are explicit.
 
 ### Repository governance — PASS
 
@@ -134,9 +137,12 @@ the science worktree.
 - 200 random pole/frame cases have worst residuals below `5e-15`;
 - compact-convergence ratios approach four under halving of `a`;
 - the anisotropic temporal coefficient changes the target shell;
-- the Jordan-Wigner and hole-shift identities close exactly; and
+- the Jordan-Wigner and hole-shift identities close exactly;
 - 200 independent standard-boost/Wigner tests give cocycle, rest-fixing, and
-  Lorentz residuals below `1.3e-14`.
+  Lorentz residuals below `1.3e-14`; and
+- an independent cover check confirms that the spin-one-half action must be
+  stated on `Spin^+(1,3) ~= SL(2,C)`, not as an ordinary representation of
+  `SO^+(1,3)`.
 
 Overall local review-loop disposition: `pass`. Independent audit remains
 required and no effective status is authored here.

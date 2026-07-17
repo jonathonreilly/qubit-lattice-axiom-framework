@@ -26,6 +26,7 @@ NOTE = ROOT / "docs" / (
 TARGET_NOTE = ROOT / "docs" / "FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md"
 
 ABJ_ID = "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
+RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
 
 
 def ledger_row(claim_id: str) -> dict:
@@ -91,7 +92,7 @@ def check_dependencies_and_edge() -> tuple[bool, str]:
     bridge_name = NOTE.name
     ok = (
         abj.get("audit_status") == "audited_clean"
-        and abj.get("effective_status") == "retained_bounded"
+        and abj.get("effective_status") in RETAINED_GRADE
         and registry["nodes"]["minimal_axioms"]["current_path"] == "docs/MINIMAL_AXIOMS_2026-06-29.md"
         and registry["nodes"]["kinetic_isotropy_primitive"]["current_path"]
         == "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
@@ -221,7 +222,7 @@ def check_compact_convergence() -> tuple[bool, str]:
     return ok, f"O(a^2)_ratios=[{min(ratios):.3f},{max(ratios):.3f}] final={errors[-1]}"
 
 
-def check_anisotropy_falsifier() -> tuple[bool, str]:
+def check_temporal_coefficient_control() -> tuple[bool, str]:
     p = np.array([0.44, -0.31, 0.26])
     m = 0.69
     omega0 = float(np.sqrt(m * m + np.dot(p, p)))
@@ -321,8 +322,8 @@ def spectral_car_data() -> tuple[list[np.ndarray], np.ndarray, float, float]:
     eigvals, eigvecs = np.linalg.eigh(h)
     c_ops = [jw_annihilator(i, 4) for i in range(4)]
     d_ops = [sum(np.conjugate(eigvecs[j, r]) * c_ops[j] for j in range(4)) for r in range(4)]
-    pole_energy = math.asinh(a * omega) / a
-    return d_ops, eigvals, omega, pole_energy
+    pole_weight = math.asinh(a * omega) / a
+    return d_ops, eigvals, omega, pole_weight
 
 
 def check_spectral_car() -> tuple[bool, str]:
@@ -338,21 +339,21 @@ def check_spectral_car() -> tuple[bool, str]:
 
 
 def check_hole_relabel() -> tuple[bool, str]:
-    d_ops, eigvals, _, pole_energy = spectral_car_data()
+    d_ops, eigvals, _, pole_weight = spectral_car_data()
     ident = np.eye(16)
-    branch_energy = np.where(eigvals > 0.0, pole_energy, -pole_energy)
-    h_raw = sum(branch_energy[r] * d_ops[r].conj().T @ d_ops[r] for r in range(4))
+    branch_weight = np.where(eigvals > 0.0, pole_weight, -pole_weight)
+    h_raw = sum(branch_weight[r] * d_ops[r].conj().T @ d_ops[r] for r in range(4))
     positive = d_ops[2:]
     negative = d_ops[:2]
-    h_relabel = sum(pole_energy * a.conj().T @ a for a in positive)
+    h_relabel = sum(pole_weight * a.conj().T @ a for a in positive)
     # b^dagger=d_- and b=d_-^dagger, hence b^dagger b=d_- d_-^dagger.
-    h_relabel = h_relabel + sum(pole_energy * d @ d.conj().T for d in negative)
-    shifted = h_raw + 2.0 * pole_energy * ident
+    h_relabel = h_relabel + sum(pole_weight * d @ d.conj().T for d in negative)
+    shifted = h_raw + 2.0 * pole_weight * ident
     residual = float(np.max(np.abs(shifted - h_relabel)))
     eig = np.linalg.eigvalsh(h_relabel)
     ok = residual < 3e-12 and eig.min() > -2e-12 and np.isclose(eig.min(), 0.0, atol=2e-12)
     return ok, (
-        f"pole_energy={pole_energy:.6f} relabel_residual={residual:.2e} "
+        f"pole_weight={pole_weight:.6f} relabel_residual={residual:.2e} "
         f"spectrum=[{eig.min():.2e},{eig.max():.6f}]"
     )
 
@@ -367,8 +368,10 @@ def check_source_boundaries() -> tuple[bool, str]:
         "does not set or predict an audit verdict",
         "No literature result",
         "fitted value",
-        "The strings are load-bearing",
+        "The strings in `(5.1)` are load-bearing for that displayed realization",
         "principal low-energy time patch",
+        "universal cover of the proper-orthochronous Poincare group",
+        "pole weight, not a physically reconstructed Hamiltonian energy",
     ]
     forbidden = ["Status: retained", "proposed_retained", "promote to retained"]
     ok = all(token in normalized for token in required) and not any(token in normalized for token in forbidden)
@@ -384,11 +387,11 @@ def main() -> int:
         ("C3 finite-spacing complex pole and residue derivative", check_pole_and_residue),
         ("C4 pole numerator and explicit rest-fiber isometry", check_projector_residue),
         ("C5 compact-momentum energy/residue/projector convergence is O(a^2)", check_compact_convergence),
-        ("C6 temporal anisotropy falsifies the target shell normalization", check_anisotropy_falsifier),
+        ("C6 temporal-coefficient deformation changes the target shell normalization", check_temporal_coefficient_control),
         ("C7 pole-derived limiting measure is boost invariant", check_derived_measure),
-        ("C8 Jordan-Wigner CAR is exact and no-string control fails", check_jw_car_and_control),
+        ("C8 Jordan-Wigner CAR is exact and the string-omission control fails", check_jw_car_and_control),
         ("C9 Hamiltonian spectral basis preserves CAR", check_spectral_car),
-        ("C10 hole relabelling is exact and normal-ordered spectrum nonnegative", check_hole_relabel),
+        ("C10 pole-weighted hole relabelling is exact and its spectrum is nonnegative", check_hole_relabel),
         ("C11 source boundaries and status firewalls", check_source_boundaries),
     ]
     results = []

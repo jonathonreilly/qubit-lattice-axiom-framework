@@ -55,8 +55,9 @@ such one-hop authority or synthesis.
 
 Pass. The marginal content is the pole-residue derivation of both the carrier
 and `d^3p/(2E)` measure from a finite lattice symbol, with a projector identity
-and two load-bearing falsifiers. It is not a restatement of the target's
-continuum commutators, boosts, or CAR occupation enumeration.
+and two discriminating controls limited to the displayed deformation and
+finite tensor realization. It is not a restatement of the target's continuum
+commutators, boosts, or CAR occupation enumeration.
 
 ### V5
 

@@ -34,10 +34,11 @@ established by the retained bounded Clifford-core authority,
 
 and derives the continuum carrier from its complex-energy pole, its pole
 residue, and its Hamiltonian spectral projectors. The registered
-kinetic-isotropy primitive is load-bearing: it identifies the temporal kinetic
-coefficient with the already normalized spatial coefficient. The invariant
-mass-shell density is therefore an output of the residue calculation rather
-than an imported continuum convention.
+kinetic-isotropy primitive is load-bearing only in fixing the temporal kinetic
+coefficient relative to the already normalized spatial coefficient. The
+mass-shell pole density is therefore an output of the residue calculation
+rather than an imported continuum convention. Calling that pole a physically
+reconstructed energy would require the separately excluded OS/Wightman bridge.
 
 The last step constructs the finite CAR representation and the negative-branch
 hole relabelling explicitly. That construction supplies the *given-CAR* finite
@@ -60,13 +61,15 @@ Load-bearing one-hop authorities are:
 
 These roles do not duplicate one another. The retained parent displays the
 symmetric four-label Euclidean formula as a finite algebraic free surface, but
-its audit boundary does not identify the `mu=0` regulator label with the
-framework's emergent physical-time normalization. All finite Clifford and
-projector identities below use the parent alone. The registered primitive is
-consumed only when `q_0` is continued as the physical energy coordinate and
-its coefficient is compared with the three `Z^3` spatial coefficients. Without
-that identification the allowed replacement is the `lambda`-deformed temporal
-term in Section 6.1, and the target mass shell does not follow.
+its audit boundary does not normalize the `mu=0` regulator label against the
+framework's emergent temporal tick. All finite Clifford and projector
+identities below use the parent alone. The registered primitive is consumed
+only to put that temporal regulator coordinate in the same kinetic
+normalization as the three `Z^3` spatial coordinates before the mathematical
+continuation `q_0=iE`. It does not turn `E` into a physically reconstructed
+transfer energy. Without the normalization, the allowed replacement is the
+`lambda`-deformed temporal term in Section 6.1, and the displayed target mass
+shell does not follow.
 
 Non-graph comparison:
 `FERMION_PARITY_PAULI_TENSOR_INVOLUTION_NARROW_THEOREM_NOTE_2026-05-10.md`
@@ -219,7 +222,7 @@ Each `J_i` commutes with the taste commutant as well. Hence its restriction to
 carrier; this is derived from the retained Clifford block rather than attached
 as an external spin label.
 
-## 4. Continuum carrier and Poincare action
+## 4. Continuum carrier and universal-cover Poincare action
 
 For any fixed compact momentum set `K subset R^3`, Taylor expansion is uniform
 on `K`. With `S_4(p)=sum_i p_i^4`, the first two scalar expansions are
@@ -260,8 +263,8 @@ spectral fibers in `(3.3)`. Its base is the positive sheet
 
 The measure in `(4.3)` was not chosen by covariance. It is the `a -> 0` limit
 of the finite-spacing residue `(2.3)`. Once this pole-derived quadratic form
-and positive sheet are present, their connected linear stabilizer is the
-proper orthochronous Lorentz group. A boost in direction `i` has tangent field
+and positive sheet are present, the identity component of their linear
+stabilizer is `SO^+(1,3)`. A boost in direction `i` has tangent field
 `E partial_(p_i)`, and
 
 ```text
@@ -281,34 +284,48 @@ map from rest to `p` is fixed algebraically by
 ```
 
 Direct multiplication gives `L(p)^T eta L(p)=eta` and
-`L(p)(m,0)=(E,p)`; no boost matrix is imported before the shell is derived.
-For a Lorentz transformation `Lambda`,
+`L(p)(m,0)=(E,p)`; no boost matrix is inserted before the shell is derived.
+For `Lambda in SO^+(1,3)`,
 
 ```text
-    W(Lambda,p) = L(Lambda p)^(-1) Lambda L(p)
+    W(Lambda,p) = L(Lambda p)^(-1) Lambda L(p) in SO(3).
 ```
 
-fixes `(m,0)` and is a spatial rotation. The `SU(2)` lift derived in
-`(3.7)`-`(3.8)`, transported from `Ran Q_0` by `T(p)`, carries that Wigner
-rotation while the taste commutant is a spectator. Thus the pole-derived
-carrier supports the induced action
+This map fixes `(m,0)` and is a spatial rotation. A spin-one-half action is not
+an ordinary representation of `SO^+(1,3)`: it is a representation of the
+double cover `Spin^+(1,3) ~= SL(2,C)`. Choose the continuous standard-boost
+lift and write `W_tilde(Lambda_tilde,p) in SU(2)` for the corresponding lift of
+`W`. The `SU(2)` carrier derived in `(3.7)`-`(3.8)`, transported from `Ran Q_0`
+by `T(p)`, carries `W_tilde` while the taste commutant is a spectator. Thus the
+pole-derived carrier supports the induced action of the universal cover of the
+proper-orthochronous Poincare group,
 
 ```text
-    (U(y,Lambda) psi)(p)
-      = exp(i y.p) D^(1/2)(W(Lambda,Lambda^(-1)p))
+    (U(y,Lambda_tilde) psi)(p)
+      = exp(i y.hat(p)) D^(1/2)(W_tilde(Lambda_tilde,Lambda^(-1)p))
         psi(Lambda^(-1)p),                                 (4.6)
 ```
 
-diagonally on taste. Measure invariance gives unitarity. Direct cancellation
-of the adjacent standard boosts gives
+diagonally on taste, where `hat(p)=(E(p),p)` and
+`y.hat(p)=y^0 E(p)-y_vec.p` is the Minkowski pairing. Here and below,
+`Lambda^(-1)p` denotes the spatial part of `Lambda^(-1)hat(p)`. Measure
+invariance gives unitarity. Direct cancellation of the adjacent lifted
+standard boosts gives
 
 ```text
-    W(Lambda_2 Lambda_1,p)
-      = W(Lambda_2,Lambda_1 p) W(Lambda_1,p),               (4.7)
+    W_tilde(Lambda_tilde_2 Lambda_tilde_1,p)
+      = W_tilde(Lambda_tilde_2,Lambda_1 p)
+        W_tilde(Lambda_tilde_1,p),                          (4.7)
 ```
 
-which gives the group law. Equations `(4.6)`-`(4.7)` are consequences on the
-derived carrier, not the starting point of the derivation.
+which gives the group law without the `2 pi` sign ambiguity that would occur if
+one incorrectly treated the spin carrier as an ordinary `SO(3)` representation.
+The phase in `(4.6)` supplies the translation part because
+`(Lambda_2^(-1)hat(p)).y_1=hat(p).(Lambda_2 y_1)`; hence
+`U(y_2,Lambda_tilde_2)U(y_1,Lambda_tilde_1)` has parameters
+`(y_2+Lambda_2 y_1,Lambda_tilde_2 Lambda_tilde_1)`.
+Equations `(4.6)`-`(4.7)` are consequences on the derived carrier, not the
+starting point of the derivation.
 
 This bounded statement does not claim essential self-adjointness of
 infinitesimal generators, a common analytic core, or OS/Wightman
@@ -338,16 +355,21 @@ Direct Pauli multiplication gives
     {c_r,c_s^dagger}=delta_(rs) I.                          (5.2)
 ```
 
-The strings are load-bearing: without them, distinct-factor ladders commute
-and the off-site anticommutator is twice their nonzero product.
+The strings in `(5.1)` are load-bearing for that displayed realization:
+without them, distinct-factor ladders commute and the off-site anticommutator
+is twice their nonzero product.
 
 Any unitary spectral/Fourier change of basis `d=V^dagger c` preserves `(5.2)`.
 The `+omega_a/-omega_a` eigenspaces label the two branches, while the positive
-transfer-energy weight of each pair is the pole value `E_(a,r)` from `(2.1)`.
-The diagonal finite-mode Hamiltonian before the hole relabelling is therefore
+weight assigned to each pair is the principal-pole parameter `E_(a,r)` from
+`(2.1)`. This distinction is essential: `omega_a` fixes the projectors, whereas
+`E_a` is the analytically continued pole location. Without a transfer/OS
+theorem the latter is a pole weight, not a physically reconstructed Hamiltonian
+energy. The diagonal finite-mode pole-weighted occupation operator before the
+hole relabelling is
 
 ```text
-    H_raw = sum_r E_(a,r)
+    K_raw = sum_r E_(a,r)
               (d_(+,r)^dagger d_(+,r)
                - d_(-,r)^dagger d_(-,r)).                  (5.3)
 ```
@@ -366,11 +388,11 @@ Then `(5.2)` implies
     d_-^dagger d_- = b b^dagger = I-b^dagger b.
 ```
 
-After subtracting the filled-negative-branch vacuum energy, equivalently
-adding `sum_r E_(a,r)` to `(5.3)`, the normal-ordered Hamiltonian is
+After subtracting the filled-negative-branch constant, equivalently adding
+`sum_r E_(a,r)` to `(5.3)`, the normal-ordered occupation operator is
 
 ```text
-    H_N = sum_r E_(a,r)
+    K_N = sum_r E_(a,r)
             (a_r^dagger a_r + b_r^dagger b_r) >= 0.         (5.5)
 ```
 
@@ -385,9 +407,9 @@ supplies a concrete given-CAR carrier for the bounded free-mode calculation; it
 does not claim that Qubit alone forces CAR over commuting hard-core
 alternatives.
 
-## 6. Load-bearing falsifiers
+## 6. Discriminating controls
 
-### 6.1 Temporal kinetic anisotropy
+### 6.1 Temporal-coefficient deformation
 
 For `lambda>0`, replace the temporal term by
 `i lambda alpha_0 sin(aq_0)/a` while keeping the
@@ -405,11 +427,12 @@ For `lambda != 1`, the limiting shell is
 ```
 
 not the target quadratic form in the registered space-time normalization. The
-residue also gains the corresponding `1/lambda` factor. Therefore the
-kinetic-isotropy primitive is necessary for this exact bridge; it is not
-decorative.
+residue also gains the corresponding `1/lambda` factor. This one-parameter
+control shows that `c_t=c_s` is load-bearing for obtaining the displayed shell
+in the fixed normalization. It is not a no-go for all anisotropic or
+reparametrized theories, and it does not promote the primitive into dynamics.
 
-### 6.2 Missing Jordan-Wigner strings
+### 6.2 String-omission control
 
 With `c_r=sigma_+^(r)` on disjoint tensor factors,
 
@@ -417,8 +440,9 @@ With `c_r=sigma_+^(r)` on disjoint tensor factors,
     {c_r,c_s}=2 sigma_+^(r) sigma_+^(s) != 0,   r != s.
 ```
 
-Thus local qubit ladders and parity alone do not supply CAR. The string/exterior
-construction in Section 5 is necessary for the relabelling theorem.
+Thus replacing `(5.1)` by these raw ladders breaks CAR. This is a discriminating
+wrong-construction control: it neither proves uniqueness of the Jordan-Wigner
+presentation nor excludes equivalent graded/exterior CAR implementations.
 
 ### 6.3 Noncompact momentum scaling
 
@@ -440,11 +464,13 @@ This note claims only:
 2. compact-momentum `O(a^2)` convergence to the free massive Dirac positive
    mass shell, the measure `d^3p/(2E)`, and its rank-two-times-four-taste
    spectral fiber;
-3. the induced free one-particle Poincare carrier on that pole-derived limit;
+3. the induced free one-particle carrier of the universal cover of the
+   proper-orthochronous Poincare group on that pole-derived limit;
 4. an explicit finite Jordan-Wigner CAR realization and exact
    particle/antiparticle hole relabelling on finite mode truncations;
-5. the temporal-anisotropy and no-string falsifiers showing that kinetic
-   isotropy and the CAR construction are load-bearing.
+5. the temporal-coefficient and string-omission controls showing that the two
+   displayed inputs are load-bearing in the displayed constructions, without
+   foreclosing alternative parametrizations or equivalent CAR presentations.
 
 It does **not** claim:
 
@@ -483,11 +509,12 @@ The runner checks:
 4. the pole-numerator/projector identity and explicit rest-fiber partial
    isometry;
 5. `O(a^2)` compact-momentum convergence of energy, residue, and projector;
-6. the anisotropic-temporal falsifier;
+6. the temporal-coefficient deformation control;
 7. invariance of the pole-derived limiting measure and failure of flat measure;
-8. exact finite Jordan-Wigner CAR plus the no-string counterexample;
+8. exact finite Jordan-Wigner CAR plus the string-omission control;
 9. CAR preservation under Hamiltonian spectral diagonalization;
-10. exact hole relabelling and nonnegative normal-ordered spectrum;
+10. exact pole-weighted hole relabelling and nonnegative normal-ordered
+    spectrum;
 11. source boundary and dependency-edge guardrails.
 
 Expected summary: `SCORECARD PASS=11 FAIL=0`.

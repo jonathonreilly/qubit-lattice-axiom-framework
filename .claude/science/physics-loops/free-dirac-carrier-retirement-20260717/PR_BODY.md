@@ -4,9 +4,9 @@
   fibers, explicit rest-fiber isometry, and four-taste spin carrier from the
   retained finite blocked free-staggered symbol;
 - make the registered kinetic-isotropy primitive load-bearing only at the
-  physical time-versus-space normalization step and include an anisotropic
-  falsifier;
-- construct finite Jordan-Wigner CAR and the exact pole-energy
+  temporal-versus-spatial kinetic-normalization step and include a
+  one-parameter deformation control;
+- construct finite Jordan-Wigner CAR and the exact pole-weighted
   particle/antiparticle hole relabelling used by the downstream runner; and
 - add the candidate one-hop dependency to the audited-conditional free-Dirac
   target without authoring any audit verdict or effective status.
@@ -35,8 +35,9 @@ existing runner. Local review-loop disposition is `pass`.
 The claim remains bounded. It does not select the free action, physical global
 composition, CAR statistics, a single taste, OS/Wightman reconstruction,
 interacting covariance, or generator domains. N1-N8 is not triggered because
-no negative theorem is proposed; the negative language is limited to scope
-exclusions and explicit controls.
+no negative theorem is proposed: the two controls perturb only the displayed
+temporal coefficient and Jordan-Wigner construction and do not foreclose
+alternative parametrizations or equivalent CAR presentations.
 
 ## Validation
 
@@ -45,7 +46,7 @@ exclusions and explicit controls.
 - retained ABJ Clifford-parent runner: `12/12`
 - non-graph parity comparison: `47/47`
 - runner cache SHA-256:
-  `2df622445a8d5c592de4b375a19982bf14fd21215dc2f6b2845642471fc09ba1`
+  `998219a53e122ae631fb910d31b418e4e6c01601e7f83bb50a1c623a4a9a15b2`
 - independent symbolic expansions and random pole/frame tests: pass
 - independent 200-case standard-boost/Wigner cocycle test: residuals below
   `1.3e-14`

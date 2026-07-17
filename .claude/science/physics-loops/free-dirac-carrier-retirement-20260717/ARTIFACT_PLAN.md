@@ -8,7 +8,7 @@ Only if the deep route passes V1-V5:
    and mass-shell residue measure from the retained blocked staggered symbol and
    the registered kinetic-isotropy primitive;
 2. a deterministic runner with exact/symbolic Clifford and CAR checks plus
-   numerical convergence/falsifier checks;
+   numerical convergence and deformation-control checks;
 3. a tracked runner cache;
 4. the minimum source dependency edge needed by
    `FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`;

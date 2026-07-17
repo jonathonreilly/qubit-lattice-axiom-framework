@@ -37,14 +37,16 @@ The required 90-minute deep block remains active through at least
 ## Checkpoint 3 — deep block complete and review passed
 
 The timing gate crossed at `2026-07-17T12:20:59Z`. Focused sequential review
-closed every finding and assigned local disposition `pass`. V1-V5 pass; N1-N8
-is not triggered because no negative theorem is proposed and the starting
-auditor explicitly classified the boundary language as exclusions/controls.
+closed every finding and assigned local disposition `pass`. V1-V5 pass. N1-N8
+is not triggered on the narrowed source surface because the two discriminating
+controls perturb only the displayed constructions and make no route-foreclosing
+claim.
 
 The final late review tightened the distinct custody of the two load-bearing
 inputs: finite Clifford/projector algebra comes from the retained ABJ parent,
-while the kinetic-isotropy primitive licenses the physical-time normalization
-used in the pole continuation. An independent 200-case Wigner-cocycle check
+while the kinetic-isotropy primitive licenses only temporal-versus-spatial
+kinetic normalization before the mathematical pole continuation. An independent
+200-case Wigner-cocycle check
 also passed below `1.3e-14`. The staged branch remains free of audit-owned and
 publication-generated outputs.
 
@@ -63,6 +65,7 @@ The reviewed block was rebased without conflict onto
 
 Ready review PR
 [`#5465`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5465)
-is open and non-draft. It has not been merged. Independent audit of the new
-parent and subsequent re-audit of the target remain the exact authority-side
-resume action.
+is open and non-draft. It has not been merged. Independent repo-native review is
+the landing gate; on a final pass the PR may merge, after which independent audit
+of the new parent and subsequent re-audit of the target remain separate
+authority-side work.

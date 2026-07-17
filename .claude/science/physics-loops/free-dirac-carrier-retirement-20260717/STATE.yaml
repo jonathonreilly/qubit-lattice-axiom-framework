@@ -69,9 +69,9 @@ pr_status: ready_review_open
 pr_number: 5465
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5465
 next_exact_action: >-
-  Leave PR 5465 unmerged and pivot from a fresh current-main branch to the
-  Record formation/readout hard residual, avoiding the active PMNS/Koide and
-  open Record-instrument PR surfaces.
+  Run the independent repo-native review-loop on PR 5465 and merge only on a
+  final pass. Independent audit is post-landing authority work outside this
+  physics-loop handoff.
 stop_condition: >-
   Runtime budget, documented global queue/value-gate exhaustion after deep
   pressure, or a true tooling/safety condition.

@@ -19,7 +19,8 @@ The route passes the dramatic-step gate only if it produces at least one of:
 
 - an exact finite-`a` pole/residue formula whose continuum limit supplies the
   previously imported mass-shell carrier and measure;
-- a machine-checked falsifier showing why kinetic isotropy is load-bearing;
+- a machine-checked deformation control showing how the displayed pole shell
+  changes when its temporal coefficient is varied;
 - a precise CAR-composition theorem on authorities already retained; or
 - an honest hard-premise isolation showing exactly why the actual Qubit/Lattice
   surface cannot instantiate the CAR relabelling.

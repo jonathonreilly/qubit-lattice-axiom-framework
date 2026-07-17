@@ -11,7 +11,7 @@ measure are residues rather than conventions.
 
 Result: success. The positive pole is
 `E_a=asinh(a omega_a)/a`; differentiating the scalar denominator gives
-`rho_a=1/(2 omega_a cosh(aE_a))`. On compact physical-momentum sets both
+`rho_a=1/(2 omega_a cosh(aE_a))`. On compact momentum sets both
 converge at `O(a^2)` to `E=sqrt(m^2+p^2)` and `1/(2E)`. This is the new bridge's
 main derivation.
 
@@ -33,7 +33,7 @@ by the target runner.
 Result: mixed but usable at the target's bounded scope. Bare distinct-factor
 ladders commute and fail CAR; Jordan-Wigner strings give exact CAR, unitary
 spectral diagonalization preserves it, and the negative branch relabels exactly
-to a nonnegative normal-ordered Hamiltonian. The construction supplies a
+to a nonnegative pole-weighted occupation operator. The construction supplies a
 *given-CAR finite-mode carrier*. It does not show that the four axioms select
 this global composition or statistics over the hard-core alternative.
 
@@ -51,10 +51,12 @@ reconstruction, so importing OS would enlarge rather than repair that row.
 
 Attack: vary the two load-bearing structures.
 
-Result: two exact falsifiers. A temporal coefficient `lambda!=1` gives the
-limiting shell `lambda^2(p0)^2-p^2=m^2`, so registered kinetic isotropy is
-necessary in the target normalization. Removing Jordan-Wigner strings gives a
-nonzero off-site anticommutator. Separately, prior minimal-surface countermodels
+Result: two discriminating controls. A temporal coefficient `lambda!=1` gives
+the limiting shell `lambda^2(p0)^2-p^2=m^2`, so registered kinetic isotropy is
+load-bearing in the target normalization. Removing Jordan-Wigner strings from
+the displayed construction gives a nonzero off-site anticommutator; this does
+not exclude equivalent graded/exterior CAR presentations. Separately, prior
+minimal-surface countermodels
 show that the four axioms do not select the free-staggered action; the new note
 therefore uses the retained bounded free-sector authority and does not claim
 minimal-axiom dynamics selection.

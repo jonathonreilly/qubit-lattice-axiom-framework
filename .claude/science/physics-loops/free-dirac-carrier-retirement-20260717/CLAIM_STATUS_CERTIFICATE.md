@@ -14,6 +14,7 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass
 no_go_discipline_status: not_triggered
+no_go_discipline_reason: "The two discriminating controls perturb only the displayed constructions and make no route-foreclosing claim."
 ---
 
 # Claim Status Certificate
@@ -31,6 +32,11 @@ projectors, compact continuum carrier, and finite given-CAR relabelling are all
 derived or constructed. Stronger physical action selection, global composition
 selection, statistics selection, single-taste selection, OS reconstruction,
 and domain/exponentiation statements remain explicitly outside the claim.
+
+The temporal-coefficient and string-omission checks perturb only the displayed
+constructions and make no route-foreclosing claim. They are discriminating
+controls, not a no-go or a bounded-with-named-walls result; N1-N8 is therefore
+not triggered on this narrowed source surface.
 
 The candidate is eligible for a bounded positive review PR because V1-V5,
 review-loop, and audit-compatibility validation pass. That eligibility is

@@ -35,20 +35,21 @@ else. `scale_reference_primitive` and `realized_state_primitive` are not needed.
 | observed/fitted/literature value | empirical or external proof input | forbidden | no | no | absent |
 
 The retained ABJ parent already writes a symmetric four-label Euclidean
-formula, but only as a finite algebraic free surface. It does not identify its
-`mu=0` label with the emergent physical-time normalization. The primitive's
-nonduplicative role is precisely that identification when the pole coordinate
-is continued as physical energy; the parent alone carries all finite matrix
+formula, but only as a finite algebraic free surface. It does not normalize its
+`mu=0` label against the emergent temporal tick. The primitive's nonduplicative
+role is precisely that kinetic-form normalization before the mathematical pole
+continuation; it does not by itself turn the pole parameter into physically
+reconstructed transfer energy. The parent alone carries all finite matrix
 identities.
 
 ## Counterfactual pass
 
 | Assumption under test | If false | Alternative direction opened | Current classification |
 |---|---|---|---|
-| `c_t=c_s` | temporal coefficient differs | ellipsoidal pole shell and non-Lorentz residue survive the continuum limit | explicit falsifier for primitive necessity |
+| `c_t=c_s` | temporal coefficient differs | the displayed deformed pole shell and residue differ in the continuum limit | discriminating control for this coefficient family only |
 | finite staggered Clifford symbol is the analyzed free sector | another admissible kinetic law is selected | pole geometry and species content change | physical-action bridge remains open |
 | ordered tensor product is available | only local one-site algebras are supplied | JW strings cannot be defined as physical cross-site operators | live CAR-composition wall |
-| JW string is omitted | raw disjoint ladders commute | off-site CAR anticommutators are nonzero | exact load-bearing falsifier |
+| JW string is omitted | raw disjoint ladders commute | off-site CAR anticommutators are nonzero | exact control in the chosen ordered tensor realization |
 | positive-pole projector is used | negative branch is not separated | one-particle positive carrier and antiparticle relabelling are undefined | explicit sector choice within the given free symbol |
 | compact momentum is held fixed as `a -> 0` | momenta scale to a BZ edge | doublers/taste corners remain rather than one continuum patch | bounded convergence domain must be stated |
 

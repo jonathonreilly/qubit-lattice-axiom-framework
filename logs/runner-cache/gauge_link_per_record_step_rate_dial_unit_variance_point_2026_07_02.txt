@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py
-runner_sha256: 1fc63ab201f7bf7de4c70c4ea5d8f9225fc2cee2c7ea2d40650b134886288c4f
+runner_sha256: be8039dee94b247c96e08d236992ef3464bc83798bdd7eeeaec5ee57a294f106
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 12.65
+elapsed_sec: 15.49
 status: ok
 ----- stdout -----
 Gauge-link per-record-step rate dial: blindness and the unit-variance point
@@ -19,7 +19,7 @@ SECTION A: canonical anchors and machinery guards
 [PASS] beta=0: nontrivial coefficients = 0 (Haar orthogonality)
 [PASS] grid-doubling agreement at beta=48 (fund) (rel dev=8.98e-16)
 
-SECTION B: Lemma R0 — Wilson kernel in-class, rate tau_eff = N_c/beta
+SECTION B: Lemma R0 — Wilson kernel in-class, leading rate tau_lead = N_c/beta
 ------------------------------------------------------------------------------
 [PASS] Wilson kernel character coefficients positive at beta in {6,12,24,48,96}
 [PASS] rate map fund(1,0,0): |beta*eps/(N_c C2) - 1| strictly decreasing (f(96)=1.01859)
@@ -64,12 +64,12 @@ SECTION E: Theorem R3 — per-direction moment 2 tau; unit point tau = 1/2
 [PASS] Wilson second-moment Richardson(48,96) hits 1 (R1=0.999731)
 [PASS] constructed per-direction moment matches 2 tau_eff at beta=96 within 2% (per-direction=0.063160, 2 tau=0.062500)
 
-SECTION F: exact layer — unit-variance point = the (SD)/beta=6 point
+SECTION F: exact formal layer — unit variance and the leading beta map
 ------------------------------------------------------------------------------
 [PASS] tau = 1/2 gives per-direction moment 1 (unit variance per step)
 [PASS] tau = 1/2 maps to beta = N_c / tau = 6
-[PASS] consistency with the magnetic identity: g^2(beta(tau)) = 2 N_c / beta = 2 tau
-[PASS] coincidence at tau = 1/2: g^2 = 1 = s^2 (the same-slot point)
+[PASS] consistency with the formal identity: g_formal^2(beta(tau)) = 2 N_c / beta = 2 tau
+[PASS] formal coincidence at tau = 1/2: g_formal^2 = 1
 [PASS] mismatched family: tau = 1/8 -> beta = 24, moment 1/4; tau = 3 -> beta = 1, moment 6
 [PASS] off-point coincidence failure: moments != 1 exactly at tau in {1/8, 3}
 
@@ -89,7 +89,8 @@ SECTION G: source-boundary guards
 [PASS] note contains marker: rate-blind
 [PASS] note contains marker: complete surviving invariant
 [PASS] note contains marker: unit-variance
-[PASS] note contains marker: distinguished setting
+[PASS] note contains marker: tau_lead(beta):=N_c/beta
+[PASS] note contains marker: distinguished heat-kernel setting
 [PASS] note contains marker: zero dimensionless content
 [PASS] note contains marker: not a citation-graph dependency
 [PASS] note contains marker: does not claim:
@@ -98,7 +99,8 @@ SECTION G: source-boundary guards
 [PASS] note omits forbidden marker: audit_status:
 [PASS] rigidity contains marker: no independent scalar-normalization freedom
 [PASS] rigidity contains marker: Tr(T_a T_b) = delta_ab / 2
-[PASS] Wilson contains marker: beta * g_bare^2 = 2 N_c
+[PASS] Wilson contains marker: beta g^2 = 2n
+[PASS] Wilson contains marker: authority for an action surface
 [PASS] RP bridge contains marker: temporal gauge
 [PASS] RP bridge contains marker: plane positive kernel
 [PASS] semigroup boundary contains marker: continuous Markov semigroups live on the probability/ensemble
@@ -106,7 +108,7 @@ SECTION G: source-boundary guards
 
 Summary
 ------------------------------------------------------------------------------
-TOTAL: PASS=74 FAIL=0
+TOTAL: PASS=76 FAIL=0
 Rate-dial check passed.
 
 ----- stderr -----

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
-runner_sha256: ff333e3ce0cb7ca90c12a7c0f14dbc3cbe947d96ee3bf0c2d22ac8c86790da29
+runner_sha256: 4cb124435205929dac938359b8fe7d81361e859643aaa33329429415a60ac219
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 G_BARE finite-link/Wilson split-redundancy theorem check
@@ -23,17 +23,17 @@ SECTION B: Theorem 1 — plaquette exponent = a^2 F[C;1] + O(a^3)
 [PASS] draw 0: Richardson exponent matches F[C;1] (rel err=1.71e-04)
 [PASS] draw 0: remainder is O(a) after /a^2 (ratio ~ 2) (ratio=2.001)
 [PASS] draw 0: canonical T_a coefficients of exponent match F^a[C] (rel err=1.71e-04)
-[PASS] draw 0: exponent lies in canonical generator span (residual=3.55e-12)
+[PASS] draw 0: exponent lies in canonical generator span (residual=3.81e-12)
 [PASS] draw 1: plaquette exponent Hermitian traceless
 [PASS] draw 1: Richardson exponent matches F[C;1] (rel err=1.69e-04)
 [PASS] draw 1: remainder is O(a) after /a^2 (ratio ~ 2) (ratio=2.001)
 [PASS] draw 1: canonical T_a coefficients of exponent match F^a[C] (rel err=1.69e-04)
-[PASS] draw 1: exponent lies in canonical generator span (residual=7.39e-13)
+[PASS] draw 1: exponent lies in canonical generator span (residual=1.30e-12)
 [PASS] draw 2: plaquette exponent Hermitian traceless
 [PASS] draw 2: Richardson exponent matches F[C;1] (rel err=3.39e-04)
 [PASS] draw 2: remainder is O(a) after /a^2 (ratio ~ 2) (ratio=2.005)
 [PASS] draw 2: canonical T_a coefficients of exponent match F^a[C] (rel err=3.39e-04)
-[PASS] draw 2: exponent lies in canonical generator span (residual=3.56e-12)
+[PASS] draw 2: exponent lies in canonical generator span (residual=8.78e-13)
 
 SECTION C: Theorem 2 — exact split redundancy (gamma, C/gamma)
 ------------------------------------------------------------------------------
@@ -56,40 +56,40 @@ SECTION C: Theorem 2 — exact split redundancy (gamma, C/gamma)
 [PASS] genuine dilation s=2 changes the link matrix (dev=1.45e-01)
 [PASS] genuine dilation s=2 changes the Wilson action value (dev=3.07e-03)
 
-SECTION D: Theorem 3 — matched slot gamma*(beta)^2 = 2 N_c / beta
+SECTION D: Theorem 3 — W-PHYS-conditional matched slot
 ------------------------------------------------------------------------------
 [PASS] tested Wilson matching domain has beta > 0
-[PASS] beta=6.0: constructed action coefficient k -> beta/(4 N_c) (k=0.500170, pred=0.500000)
-[PASS] beta=6.0: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.999660, pred=1.000000)
-[PASS] beta=6.0: gamma* is the positive matched-coupling root (gamma*=0.999830)
-[PASS] beta=6.0: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.997959)
-[PASS] beta=24.0: constructed action coefficient k -> beta/(4 N_c) (k=2.000681, pred=2.000000)
-[PASS] beta=24.0: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.249915, pred=0.250000)
-[PASS] beta=24.0: gamma* is the positive matched-coupling root (gamma*=0.499915)
-[PASS] beta=24.0: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.997959)
-[PASS] beta=1.5: constructed action coefficient k -> beta/(4 N_c) (k=0.125043, pred=0.125000)
-[PASS] beta=1.5: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=3.998639, pred=4.000000)
-[PASS] beta=1.5: gamma* is the positive matched-coupling root (gamma*=1.999660)
-[PASS] beta=1.5: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.997959)
-[PASS] beta=12.0: constructed action coefficient k -> beta/(4 N_c) (k=1.000340, pred=1.000000)
-[PASS] beta=12.0: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.499830, pred=0.500000)
-[PASS] beta=12.0: gamma* is the positive matched-coupling root (gamma*=0.706987)
-[PASS] beta=12.0: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.997959)
-[PASS] matched-slot construction converges as a -> 0 (error ratio=9.661)
-[PASS] matched-slot construction accurate at a = 1e-3 (|gamma*^2 - 1|=3.52e-05)
+[PASS] beta=6.0: constructed action coefficient k -> beta/(4 N_c) (k=0.500163, pred=0.500000)
+[PASS] beta=6.0: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.999675, pred=1.000000)
+[PASS] beta=6.0: gamma* is the positive matched-coupling root (gamma*=0.999838)
+[PASS] beta=6.0: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.998050)
+[PASS] beta=24.0: constructed action coefficient k -> beta/(4 N_c) (k=2.000650, pred=2.000000)
+[PASS] beta=24.0: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.249919, pred=0.250000)
+[PASS] beta=24.0: gamma* is the positive matched-coupling root (gamma*=0.499919)
+[PASS] beta=24.0: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.998050)
+[PASS] beta=1.5: constructed action coefficient k -> beta/(4 N_c) (k=0.125041, pred=0.125000)
+[PASS] beta=1.5: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=3.998700, pred=4.000000)
+[PASS] beta=1.5: gamma* is the positive matched-coupling root (gamma*=1.999675)
+[PASS] beta=1.5: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.998050)
+[PASS] beta=12.0: constructed action coefficient k -> beta/(4 N_c) (k=1.000325, pred=1.000000)
+[PASS] beta=12.0: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.499838, pred=0.500000)
+[PASS] beta=12.0: gamma* is the positive matched-coupling root (gamma*=0.706992)
+[PASS] beta=12.0: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.998050)
+[PASS] matched-slot construction converges as a -> 0 (error ratio=4.220)
+[PASS] matched-slot construction accurate at a = 1e-3 (|gamma*^2 - 1|=7.70e-05)
 
 SECTION E: link slot readback and slot COMPARISON (never assigned)
 ------------------------------------------------------------------------------
-[PASS] draw 0: canonical readback log(U)/(i a) reproduces C (rel err=1.21e-14)
+[PASS] draw 0: canonical readback log(U)/(i a) reproduces C (rel err=1.16e-14)
 [PASS] draw 0: constructed link-canonical slot s = 1 (s=1.000000000000)
-[PASS] draw 1: canonical readback log(U)/(i a) reproduces C (rel err=1.67e-14)
+[PASS] draw 1: canonical readback log(U)/(i a) reproduces C (rel err=2.15e-14)
 [PASS] draw 1: constructed link-canonical slot s = 1 (s=1.000000000000)
-[PASS] draw 2: canonical readback log(U)/(i a) reproduces C (rel err=2.14e-14)
+[PASS] draw 2: canonical readback log(U)/(i a) reproduces C (rel err=1.13e-14)
 [PASS] draw 2: constructed link-canonical slot s = 1 (s=1.000000000000)
-[PASS] positive slots agree at the algebraic pin beta = 2 N_c (gamma*=0.999830, s=1.000000)
-[PASS] mismatched-slot exhibit at beta = 24: gamma*(24) != s on identical data (gamma*=0.499915 vs s=1.000000)
-[PASS] mismatched-slot exhibit at beta = 3/2: gamma*(3/2) != s (gamma*=1.999660)
-[PASS] mismatched-slot exhibit at beta = 12: gamma*(12) != s (gamma*=0.706987)
+[PASS] positive slots agree at the algebraic pin beta = 2 N_c (gamma*=0.999838, s=1.000000)
+[PASS] mismatched-slot exhibit at beta = 24: gamma*(24) != s on identical data (gamma*=0.499919 vs s=1.000000)
+[PASS] mismatched-slot exhibit at beta = 3/2: gamma*(3/2) != s (gamma*=1.999675)
+[PASS] mismatched-slot exhibit at beta = 12: gamma*(12) != s (gamma*=0.706992)
 
 SECTION G: source-boundary guards
 ------------------------------------------------------------------------------
@@ -97,12 +97,13 @@ SECTION G: source-boundary guards
 [PASS] parent note exists (docs/G_BARE_DERIVATION_NOTE.md)
 [PASS] finite-link rigidity note exists (docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
 [PASS] Wilson small-a note exists (docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-[PASS] theorem contains marker: set only by the independent audit lane
+[PASS] theorem contains marker: Status authority:** independent audit lane only
 [PASS] theorem contains marker: non-load-bearing convention context
 [PASS] theorem contains marker: This theorem locates the pin but does not choose it
 [PASS] theorem contains marker: gamma*(beta) := +sqrt(2 N_c / beta) > 0
 [PASS] theorem contains marker: equality of the squares is equivalent to equality of the slots themselve
 [PASS] bridge contains marker: mismatched-slot
+[PASS] bridge contains marker: explicit non-satisfying condition `W-PHYS`
 [PASS] bridge contains marker: does not claim:
 [PASS] bridge contains marker: Wilson plaquette action-surface selection
 [PASS] bridge contains marker: global logarithm-branch selection
@@ -126,13 +127,13 @@ SECTION G: source-boundary guards
 [PASS] parent omits forbidden marker: beta_canonical
 [PASS] rigidity contains marker: finite-link
 [PASS] rigidity contains marker: no independent scalar-normalization freedom
-[PASS] Wilson contains marker: beta * g_bare^2 = 2 N_c
-[PASS] Wilson contains marker: beta = 2 N_c / g_bare^2
-[PASS] Wilson contains marker: does not derive that the framework must select the Wilson action surface
+[PASS] Wilson contains marker: beta g^2 = 2n
+[PASS] Wilson contains marker: C_left = C_right
+[PASS] Wilson contains marker: They may not cite it as authority for an action surface
 
 Summary
 ------------------------------------------------------------------------------
-TOTAL: PASS=102 FAIL=0
+TOTAL: PASS=103 FAIL=0
 Bridge check passed.
 
 ----- stderr -----

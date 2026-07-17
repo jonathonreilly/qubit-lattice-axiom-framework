@@ -20,14 +20,14 @@ side of the same supplied surface supplies an independent reading of the
 normalization. This note lands the first theorem package on that route.
 
 What is proved here: the temporal-gauge one-step kernel of the supplied
-Wilson action carries the **same single dial** as the plaquette (magnetic)
-side, in Casimir form; the identity `beta * g^2 = 2 N_c` holds on the
-kernel/generator side exactly as it does on the small-`a` matching side;
-and `beta = 2 N_c` is precisely the point where the per-step generator is
-the unit-coefficient canonical kinetic form. One dial, read on three
-surfaces (coordinate slot, magnetic slot, kernel/generator slot), with all
-three canonical normalizations coinciding at the single point
-`beta = 2 N_c`.
+Wilson action has a Casimir asymptotic coefficient with the formal shape
+`beta * g_E^2 -> 2 N_c`. The cited matrix theorem has the same algebraic
+shape but supplies no plaquette/magnetic dictionary. Therefore no physical
+same-dial identification between those two packets is claimed; and
+`beta = 2 N_c` is precisely the point where the per-step generator is
+the unit-coefficient canonical kinetic form. This is a kernel-side statement
+plus a formal algebraic comparison, not a three-surface physical
+identification.
 
 What is **not** proved here: this note does not derive `beta = 2 N_c` and
 does not remove or replace the surface definition recorded by the bridge
@@ -44,8 +44,9 @@ equivalent to on the operator side.
    cite. This fixes the normalization in which the Casimir values below
    (`4/3`, `3`, `10/3`) are stated.
 2. [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-   — the magnetic-side coefficient identity `beta g_bare^2 = 2 N_c` inside
-   the supplied standard Wilson plaquette action.
+   — the defined matrix-trace Taylor coefficient and formal identity
+   `beta g^2 = 2n`. It is used only for algebraic comparison and supplies no
+   magnetic-side, plaquette, or physical coupling authority.
 3. [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
    — the temporal-gauge reduction of the supplied Wilson action, in which
    the straddling temporal plaquette on a link reduces to the per-link
@@ -109,7 +110,7 @@ fixes the canonical coordinates. Mechanism companions with their exact
 constants: `U(1)` with kernel `e^{beta cos theta}` has
 `2 beta eps_n -> n^2`; `SU(2)` has `beta eps_j / 2 -> j(j+1)`.
 
-**Theorem K3 (dial transport).** Define the kernel-side coupling `g_E^2`
+**Theorem K3 (kernel coefficient).** Define the kernel-side label `g_E^2`
 by the unit-mass-normalized reading
 `eps_R = (g_E^2 / 2) C_2(R) (1 + O(1/beta))`. Then
 
@@ -117,11 +118,9 @@ by the unit-mass-normalized reading
 beta * g_E^2  ->  2 N_c,
 ```
 
-the same identity the magnetic-side small-`a` matching carries. The
-supplied surface has **one dial**: it appears as `beta` on the action,
-as `g_bare^2 = 2 N_c / beta` in the magnetic matching, and as
-`g_E^2 = 2 N_c / beta` in the kernel generator; the temporal-gauge
-construction transports it intact. No new dial appears; none is removed.
+the same algebraic form as the defined matrix theorem. This packet proves
+the kernel-side coefficient only. Calling it the same physical dial as a
+magnetic `g_bare` would require a separate dictionary not supplied here.
 At leading order the extracted dial is `R`-independent (the generator is a
 multiple of the canonical Laplacian, not of a representation-dependent
 deformation).
@@ -130,11 +129,10 @@ deformation).
 `g_lead^2(beta) = 2 N_c / beta` takes the value `1` exactly at
 `beta = 2 N_c` (`= 6` at `N_c = 3`), where the leading per-step generator
 is the unit-coefficient canonical kinetic form `(1/2) Delta`. At that
-point — and only there — the three canonical normalizations coincide:
+point — and only there — the kernel coefficient equals the formal label:
 
 ```text
-coordinate slot   s^2         = 1     (canonical finite-link coordinates),
-magnetic slot     g_bare^2    = 1     (small-a matching at beta = 2 N_c),
+formal coefficient label      = 1     (defined matrix equality at beta=2n),
 kernel slot       g_E,lead^2  = 1     (per-step generator = Delta / 2).
 ```
 
@@ -142,11 +140,10 @@ Mismatched reading, exhibited on the same construction: at `beta = 24` the
 leading generator is `(1/8) Delta` (coefficient `1/4 != 1`); the
 coincidence fails off the point.
 
-This packet does not derive `beta = 2 N_c`. What it proves is the
-coincidence structure: the same-scalar-slot identification recorded by the
-beta=6 bridge row is equivalent, on the operator side of the same supplied
-surface, to the statement that the per-step kernel generator carries the
-unit-coefficient canonical normalization `(1/2) Delta`.
+This packet does not derive selection of `beta = 2 N_c`. It locates the point
+where its kernel coefficient is one and notes the exact formal algebraic
+coincidence with the defined matrix theorem. It does not identify that
+formal label with a magnetic or coordinate coupling.
 
 ## Proof
 
@@ -179,8 +176,8 @@ constants (`tau_eff = 1/(2 beta)` for the `U(1)` kernel `e^{beta cos}`,
 
 **K3.** Substituting K2 into the definition of `g_E^2` gives
 `g_E^2 = 2 eps_R / C_2(R) -> 2 N_c / beta`, i.e. `beta g_E^2 -> 2 N_c`,
-identical in content to the magnetic-side identity
-`beta g_bare^2 = 2 N_c` of the cited small-`a` matching theorem.
+algebraically identical to the formal relation `beta g^2=2n` under `n=N_c`.
+No magnetic interpretation is inherited from that formal relation.
 `R`-independence at leading order is K2's statement that `eps_R` is
 proportional to `C_2(R)` with an `R`-independent coefficient.
 
@@ -189,15 +186,14 @@ proportional to `C_2(R)` with an `R`-independent coefficient.
 `N_c = 3` this is `beta = 6`, where the generator's leading form is
 `(1/2) Delta`; at `beta = 24` it is `(1/8) Delta`. The coordinate-slot
 value `s = 1` is the canonical-coordinate statement of the rigidity chain;
-the magnetic-slot value at `beta = 2 N_c` is the cited matching identity.
+the formal-label value at `beta = 2 N_c` is the cited matrix identity.
 
 ## Boundary
 
 This note does not claim:
 
 - a derivation of `beta = 2 N_c`, of `g_bare = 1`, or of the
-  same-scalar-slot identification — the bridge row's declared surface
-  definition is characterized, not derived or replaced;
+  same-scalar-slot or magnetic/kernel coupling identification;
 - Wilson plaquette action-surface selection from framework axioms;
 - exclusion of improved or non-Wilson gauge actions;
 - construction of a continuum Hamiltonian, a transfer-matrix spectral gap,
@@ -209,6 +205,8 @@ This note does not claim:
   `beta -> infinity` leading-coefficient theorems, verified by
   Richardson-extrapolated numeric character integrals at finite `beta`;
 - a continuum running-coupling value or a phenomenological coupling;
+- a dictionary identifying the formal `g` of the matrix theorem with
+  `g_E`, `g_bare`, or any physical coupling;
 - an audit verdict or any effective-status promotion.
 
 The forward surface this opens: the declared normalization bit now has the
@@ -234,7 +232,7 @@ The packet would fail if any of the following were true:
 - the leading dial map failed `g_lead^2(2 N_c) = 1`, or the mismatched
   reading at `beta = 24` failed to give coefficient `1/4` on the same
   construction (K4);
-- the three-normalization coincidence at `beta = 2 N_c` failed in exact
+- the kernel/formal-label coincidence at `beta = 2 N_c` failed in exact
   arithmetic.
 
 The runner checks these as source-boundary and construction checks rather

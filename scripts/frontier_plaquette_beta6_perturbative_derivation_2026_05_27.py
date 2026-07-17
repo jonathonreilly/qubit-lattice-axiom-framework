@@ -1,34 +1,35 @@
 #!/usr/bin/env python3
 """Pattern A runner-local diagnostic for the beta=6 perturbative packet note.
 
-The runner exercises the algebraic content of the admitted SU(3)
+The runner exercises the algebraic content of the explicit runner-local SU(3)
 Wilson-plaquette perturbative expansion at beta=6 GIVEN the source-wired
-Wilson coefficient relation plus runner-local admitted inputs, and tests
+formal coefficient algebra, explicit non-satisfying runner-local W-PHYS condition, and
+other explicit runner-local inputs, and tests
 whether tadpole-improvement plus finite-order truncation plus a Pade [m/n]
-resummation reaches the admitted MC comparator <P>_MC = 0.5934 to any
+resummation reaches the explicit runner-local MC comparator <P>_MC = 0.5934 to any
 controlled accuracy.
 
-This is a RUNNER-LOCAL DIAGNOSTIC: the Wilson coefficient relation
-beta = 2 N_c / g_bare^2 is dependency-wired to the retained-bounded Wilson
-small-a matching theorem, while the NSPT coefficient packet, MC comparator,
-and F2 comparator remain admitted for this diagnostic only. The beta=6
+This is a RUNNER-LOCAL DIAGNOSTIC: only the formal relation
+beta = 2 n / g^2 is dependency-wired to the defined matrix theorem. The
+physical Wilson dictionary W-PHYS, NSPT coefficient packet, MC comparator,
+and F2 comparator remain explicit runner-local for this diagnostic only. The beta=6
 diagnostic specialization, g_bare=1 specialization, and alpha_bare scale
 notation are not downstream-licensed physical authorities. The runner reports
 the resulting numerical landscape and a scale diagnostic. The verdict the
 runner outputs is:
 
     (i) at beta=6 the listed truncations through n=16 saturate near
-        <P>_PT = 0.919331, missing the admitted comparator by about 54.9%;
+        <P>_PT = 0.919331, missing the explicit runner-local comparator by about 54.9%;
     (ii) Pade [m/n] resummations with m+n <= 12 remain in the same band;
     (iii) tadpole-improved truncations and tadpole-improved Pade grids
-          saturate near <P> = 0.910550, missing the admitted comparator by
+          saturate near <P> = 0.910550, missing the explicit runner-local comparator by
           about 53.4%;
     (iv) the result is conditional only for this finite weak-coupling /
-         tadpole / Pade envelope over admitted inputs, not for the actual
+         tadpole / Pade envelope over explicit runner-local inputs, not for the actual
          beta=6 plaquette surface or non-perturbative routes.
 
 No new axiom, primitive, or repo vocabulary is proposed. No external
-numerical target is consumed as a derivation input. The admitted MC comparator
+numerical target is consumed as a derivation input. The explicit runner-local MC comparator
 <P>_MC = 0.5934 enters only as a diagnostic comparator.
 """
 
@@ -73,13 +74,13 @@ N_C = 3
 BETA = 6.0
 G2_BARE = 2.0 * N_C / BETA   # = 1 at beta=6
 ALPHA_BARE = G2_BARE / (4.0 * math.pi)   # = 1/(4*pi)
-MC_REFERENCE = 0.5934   # admitted comparator only; not a derivation input
-F2_SCALE_PERCENT = 0.0833   # admitted F2 comparator; not reusable
+MC_REFERENCE = 0.5934   # explicit runner-local comparator only; not a derivation input
+F2_SCALE_PERCENT = 0.0833   # explicit runner-local F2 comparator; not reusable
 
-# Runner-local admitted NSPT coefficient packet for the Wilson plaquette in
+# Explicit runner-local NSPT coefficient packet for the Wilson plaquette in
 # SU(3) pure gauge theory, in the convention
 #   <P>(beta) = 1 - sum_{n>=1} w_n * (1/beta)^n .
-# These values are admitted for this diagnostic only. They are NOT framework
+# These values are explicit runner-local for this diagnostic only. They are NOT framework
 # primitives, new axioms, retained-grade authorities, empirical selectors, or
 # downstream-licensed values.
 #
@@ -110,10 +111,10 @@ W_COEFFS_NSPT_SU3 = [
 
 
 def test_framework_constants() -> None:
-    section("C1: source-wired Wilson-normalization edge")
+    section("C1: source-wired formal coefficient edge + explicit W-PHYS condition")
     if not WILSON_NOTE.exists():
         check(
-            f"Wilson small-a matching note {WILSON_NOTE.name} exists",
+            f"defined matrix coefficient note {WILSON_NOTE.name} exists",
             False,
             f"path={WILSON_NOTE}",
         )
@@ -121,28 +122,26 @@ def test_framework_constants() -> None:
     wilson_body = WILSON_NOTE.read_text()
     wilson_flat = " ".join(wilson_body.split())
     check(
-        "Wilson theorem supplies beta = 2 N_c / g_bare^2",
-        "beta = 2 N_c / g_bare^2" in wilson_flat
-        and "beta * g_bare^2 = 2 N_c" in wilson_flat,
-        "coefficient-matching identity is present in the retained-bounded source note",
+        "matrix theorem supplies beta=2n/g^2 only as formal coefficient algebra",
+        "beta = 2n/g^2" in wilson_flat
+        and "C_left = C_right" in wilson_flat,
+        "formal identity is present in the dependency source",
     )
     check(
-        "Wilson theorem includes the beta=6 specialization only with supplied g_bare^2=1",
-        "For `N_c = 3` and `g_bare^2 = 1`, this gives `beta = 6`." in wilson_flat,
-        "specialization remains conditional on N_c=3 and g_bare^2=1",
+        "matrix theorem does not contain a beta=6/g_bare specialization",
+        "g_bare^2 = 1" not in wilson_flat and "beta = 6" not in wilson_flat,
+        "physical specialization remains runner-local",
     )
     check(
-        "Wilson theorem keeps action-surface and g_bare boundaries explicit",
-        "does not derive that the framework must select the Wilson action surface" in wilson_flat
-        and "does not derive a physical value of `g_bare`" in wilson_flat
-        and "Wilson plaquette action-surface selection" in wilson_body
-        and "`g_bare = 1`" in wilson_body,
-        "the dependency supplies coefficient matching, not physical surface selection",
+        "matrix theorem explicitly forbids action/coupling inference",
+        "They may not cite it as authority for an action surface" in wilson_flat
+        and "a physical meaning or value for `beta` or `g`" in wilson_flat,
+        "the dependency supplies formal algebra, not W-PHYS",
     )
     # beta = 2 N_c / g_bare^2; with g_bare = 1, beta = 6 at N_c = 3.
     beta_from_axiom = 2.0 * N_C / 1.0
     check(
-        "supplied beta = 2 N_c / g_bare^2 = 6 at N_c=3, g_bare=1",
+        "explicit W-PHYS condition gives beta=6 at N_c=3, g_bare=1",
         math.isclose(beta_from_axiom, 6.0, rel_tol=1e-15),
         f"beta = {beta_from_axiom}",
     )
@@ -163,9 +162,9 @@ def test_framework_constants() -> None:
 
 
 def test_source_boundary_manifest() -> None:
-    section("T0: admitted-input runner-local diagnostic license")
+    section("T0: explicit-input runner-local diagnostic license")
     if not NOTE.exists():
-        check(f"note file {NOTE.name} exists for admitted-input checks", False, f"path={NOTE}")
+        check(f"note file {NOTE.name} exists for explicit-input checks", False, f"path={NOTE}")
         return
     body = NOTE.read_text()
     flat = " ".join(body.split())
@@ -173,31 +172,33 @@ def test_source_boundary_manifest() -> None:
     check(
         "note records 2026-06-12 source-boundary demotion",
         "2026-06-12 Source-Boundary Demotion" in body
-        and "Admitted Inputs (runner-local diagnostic license)" in body,
-        "demotion and admitted-input sections present",
+        and "Explicit Runner-Local Inputs (runner-local diagnostic license)" in body,
+        "demotion and explicit-input sections present",
     )
     check(
-        "note records admitted finite packet I_PT",
-        "I_PT = (source-wired beta*g_bare^2 = 2 N_c relation, diagnostic specialization N_c = 3 and beta = 6, admitted w_1..w_16, admitted <P>_MC = 0.5934, admitted F2_SCALE_PERCENT = 0.0833%)." in flat,
-        "packet names source-wired Wilson relation, beta specialization, coefficient list, MC comparator, and F2 comparator",
+        "note records explicit runner-local finite packet I_PT",
+        "source-wired formal beta*g^2 = 2 n algebra" in flat
+        and "explicit non-satisfying runner-local W-PHYS condition" in flat
+        and "explicit runner-local w_1..w_16" in flat,
+        "packet separates formal algebra, W-PHYS, and runner-local values",
     )
     check(
-        "note records Wilson small-a matching as an explicit dependency",
-        "## 2026-06-17 source-side edge repair: Wilson coefficient relation is wired" in body
+        "note records only formal coefficient algebra as the explicit dependency",
+        "## 2026-07-16 source-side correction: only formal coefficient algebra is wired" in body
         and "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md" in body
         and "Depends on" in body,
-        "Wilson coefficient relation is dependency-wired, not re-admitted",
+        "W-PHYS remains an explicit non-satisfying condition rather than dependency-laundered",
     )
     check(
         "note licenses unresolved NSPT/MC/F2 inputs for this diagnostic only",
         "nspt coefficient packet" in flat_lower
         and "mc comparator" in flat_lower
         and "f2 comparator" in flat_lower
-        and flat_lower.count("admitted for this diagnostic only") >= 3
+        and flat_lower.count("explicit runner-local for this diagnostic only") >= 3
         and flat_lower.count("not licensed for downstream reuse") >= 3
         and "does not derive wilson action-surface selection" in flat_lower
         and "or a reusable `alpha_bare` authority" in flat_lower,
-        "remaining admitted inputs and alpha/beta boundaries carry no downstream license",
+        "remaining explicit runner-local inputs and alpha/beta boundaries carry no downstream license",
     )
     check(
         "note excludes actual beta=6 surface and non-perturbative route claims",
@@ -217,11 +218,11 @@ def test_source_boundary_manifest() -> None:
         "source repair remains diagnostic-only after the Wilson edge is wired",
     )
     check(
-        "note explicitly elects admitted-input diagnostic option",
+        "note explicitly elects explicit-input diagnostic option",
         "## 2026-06-15 source-boundary repair: second option elected" in body
-        and "keep the row as\nan admitted-input runner-local diagnostic only" in body
+        and "keep the row as\nan explicit-input runner-local diagnostic only" in body
         and "not a retained or\neffective-bounded authority" in body
-        and "Wilson coefficient\nrelation is sourced only within the Wilson small-a theorem's stated boundary" in body,
+        and "Only the formal coefficient\nalgebra is sourced; the Wilson dictionary is runner-local `W-PHYS`." in body,
         "source-boundary second option is source-locked",
     )
     check(
@@ -229,7 +230,7 @@ def test_source_boundary_manifest() -> None:
         "## 2026-06-20 source-boundary repair: non-downstream-licensed scoping" in body
         and "non-downstream-licensed runner-local diagnostic only." in flat
         and "No downstream row may cite this row as a retained or effective-bounded bridge or as a derivation" in flat
-        and "Wilson coefficient relation" in flat,
+        and "formal coefficient algebra" in flat,
         "source-boundary non-downstream-licensed scoping present; not a citeable bridge/derivation",
     )
     check(
@@ -253,8 +254,8 @@ def test_source_boundary_manifest() -> None:
         "MC value stays a fenced comparator, never a derivation/proof input",
     )
     check(
-        "note blocks downstream reuse of admitted beta=6 inputs",
-        "cannot cite this row for anything beyond the runner-local\ndiagnostic over the supplied packet" in body
+        "note blocks downstream reuse of explicit runner-local beta=6 inputs",
+        "cannot cite this row for anything beyond the runner-local\ndiagnostic over the explicit runner-local packet" in body
         and "Downstream rows that need a beta=6 Wilson/Haar plaquette value" in body,
         "downstream authority must come from a separate retained/effective-bounded row",
     )
@@ -271,7 +272,7 @@ def test_source_boundary_manifest() -> None:
 
 
 def test_one_loop_value() -> None:
-    section("T2: 1-loop weak-coupling value over admitted packet")
+    section("T2: 1-loop weak-coupling value over explicit runner-local packet")
     # M5: <P>_WC = 1 - (N^2-1)/(8 N^2) * 4/beta = 1 - (8)/(8*9) * 4/6
     #            = 1 - (1/9) * (4/6) = 1 - 4/54 = 1 - 0.07407 = 0.92593
     p_wc_m5 = 1.0 - (N_C * N_C - 1) / (8.0 * N_C * N_C) * 4.0 / BETA
@@ -287,11 +288,11 @@ def test_one_loop_value() -> None:
         math.isclose(p_wc_m5, p_w1, rel_tol=1e-12),
         f"<P>_w1 = {p_w1:.6f}, |diff| = {abs(p_wc_m5 - p_w1):.3e}",
     )
-    # Distance to the admitted MC comparator at 1-loop.
+    # Distance to the explicit runner-local MC comparator at 1-loop.
     gap_1l = abs(p_wc_m5 - MC_REFERENCE)
     pct_1l = 100.0 * gap_1l / MC_REFERENCE
     check(
-        "1-loop overshoots admitted MC comparator by ~56%",
+        "1-loop overshoots explicit runner-local MC comparator by ~56%",
         gap_1l > 0.3,
         f"gap = {gap_1l:.4f}, pct = {pct_1l:.2f}%",
     )
@@ -306,9 +307,9 @@ def truncated_series(coeffs, N: int, beta_val: float) -> float:
 
 
 def test_truncated_series_convergence() -> None:
-    section("T3: truncated perturbative series at beta=6 (admitted coefficient packet)")
+    section("T3: truncated perturbative series at beta=6 (explicit runner-local coefficient packet)")
     # Walk the truncation order N from 1 to 16 and record <P>_PT(N).
-    print(f"  admitted coefficient packet:")
+    print(f"  explicit runner-local coefficient packet:")
     print(f"    w_1={W_COEFFS_NSPT_SU3[1]:.5f}  w_2={W_COEFFS_NSPT_SU3[2]:.5f}  w_3={W_COEFFS_NSPT_SU3[3]:.5f}")
     print(f"    w_4={W_COEFFS_NSPT_SU3[4]:.5f}  w_5={W_COEFFS_NSPT_SU3[5]:.5f}  w_6={W_COEFFS_NSPT_SU3[6]:.5f}")
     print(f"    w_7={W_COEFFS_NSPT_SU3[7]:.5f}  w_8={W_COEFFS_NSPT_SU3[8]:.5f}  w_9={W_COEFFS_NSPT_SU3[9]:.5f}")
@@ -322,21 +323,21 @@ def test_truncated_series_convergence() -> None:
         pct = 100.0 * gap / MC_REFERENCE
         print(f"    N={N:2d}:  <P>_PT = {P_PT:.6f},  gap = {gap:+.5f},  pct = {pct:+.3f}%")
 
-    # Find the closest-to-admitted-comparator truncation N* and report it.
+    # Find the closest-to-explicit runner-local-comparator truncation N* and report it.
     best_N = min(range(1, 17), key=lambda N: abs(P_PT_values[N-1] - MC_REFERENCE))
     best_P = P_PT_values[best_N - 1]
     best_gap = best_P - MC_REFERENCE
     best_pct = 100.0 * abs(best_gap) / MC_REFERENCE
     print(f"  best truncation: N*={best_N}, <P>_PT(N*) = {best_P:.6f}, pct = {best_pct:.3f}%")
-    # The admitted-input diagnostic says this listed finite truncation walk
-    # does not reach within 5% of the admitted MC comparator.
+    # The explicit-input diagnostic says this listed finite truncation walk
+    # does not reach within 5% of the explicit runner-local MC comparator.
     check(
-        "OBSTRUCTION: truncated series at beta=6 saturates at >40% gap from admitted comparator",
+        "OBSTRUCTION: truncated series at beta=6 saturates at >40% gap from explicit runner-local comparator",
         best_pct > 40.0,
-        f"<P>_PT(N*={best_N}) = {best_P:.6f}, admitted comparator = {MC_REFERENCE:.4f}, "
-        f"pct = {best_pct:.3f}%; residual exceeds 40% inside the admitted coefficient packet",
+        f"<P>_PT(N*={best_N}) = {best_P:.6f}, explicit runner-local comparator = {MC_REFERENCE:.4f}, "
+        f"pct = {best_pct:.3f}%; residual exceeds 40% inside the explicit runner-local coefficient packet",
     )
-    # Coefficient-growth diagnostic over the admitted packet.
+    # Coefficient-growth diagnostic over the explicit runner-local packet.
     ratios = [W_COEFFS_NSPT_SU3[n+1]/W_COEFFS_NSPT_SU3[n] for n in range(1, 16)]
     print(f"  coefficient ratios w_(n+1)/w_n:")
     for n, r in enumerate(ratios, start=1):
@@ -350,12 +351,12 @@ def test_truncated_series_convergence() -> None:
 
 
 def test_tadpole_improvement_signature() -> None:
-    section("T4: tadpole-improvement signature over admitted packet")
+    section("T4: tadpole-improvement signature over explicit runner-local packet")
     # Tadpole-improved coupling: u_0 = <P>^(1/4)
-    # If <P> equals the admitted comparator, then u_0 = 0.5934^(1/4).
+    # If <P> equals the explicit runner-local comparator, then u_0 = 0.5934^(1/4).
     u_0_mc = MC_REFERENCE ** 0.25
     check(
-        "u_0 = <P>_MC^(1/4) at admitted comparator gives u_0 = 0.87768",
+        "u_0 = <P>_MC^(1/4) at explicit runner-local comparator gives u_0 = 0.87768",
         math.isclose(u_0_mc, 0.87768, abs_tol=1e-4),
         f"u_0 = {u_0_mc:.6f}",
     )
@@ -387,11 +388,11 @@ def test_tadpole_improvement_signature() -> None:
     gap_ti = P_iter - MC_REFERENCE
     pct_ti = 100.0 * abs(gap_ti) / MC_REFERENCE
     # OBSTRUCTION: tadpole improvement saturates around the same residual
-    # inside this admitted coefficient packet.
+    # inside this explicit runner-local coefficient packet.
     check(
         "OBSTRUCTION: tadpole-improved self-consistent <P>_TI(4-loop) saturates >40% gap",
         pct_ti > 40.0,
-        f"<P>_TI = {P_iter:.6f}, admitted comparator = {MC_REFERENCE:.4f}, "
+        f"<P>_TI = {P_iter:.6f}, explicit runner-local comparator = {MC_REFERENCE:.4f}, "
         f"gap = {gap_ti:+.5f}, pct = {pct_ti:.3f}%",
     )
 
@@ -498,7 +499,7 @@ def test_pade_resummation() -> None:
     check(
         f"OBSTRUCTION: best Pade [{best_mn[0]}/{best_mn[1]}] resummation has |pct| > 40%",
         best_pct > 40.0,
-        f"<P>_Pade = {best_val:.6f}, admitted comparator = {MC_REFERENCE:.4f}, pct = {best_pct:.3f}%",
+        f"<P>_Pade = {best_val:.6f}, explicit runner-local comparator = {MC_REFERENCE:.4f}, pct = {best_pct:.3f}%",
     )
     return best_val, best_pct, best_mn
 
@@ -537,14 +538,14 @@ def test_tadpole_pade_combo() -> None:
     check(
         f"OBSTRUCTION: best tadpole-improved Pade combination has |pct| > 40%",
         best_pct > 40.0,
-        f"<P>_TI-Pade = {best_P:.6f}, admitted comparator = {MC_REFERENCE:.4f}, pct = {best_pct:.3f}%",
+        f"<P>_TI-Pade = {best_P:.6f}, explicit runner-local comparator = {MC_REFERENCE:.4f}, pct = {best_pct:.3f}%",
     )
     return best_P, best_pct, best_mn
 
 
 def test_scale_diagnostic() -> None:
-    section("T7: finite-route residual and admitted scale diagnostic")
-    # Runner-local scale diagnostic over admitted constants. This does not
+    section("T7: finite-route residual and explicit runner-local scale diagnostic")
+    # Runner-local scale diagnostic over explicit runner-local constants. This does not
     # license any matrix-element or comparator value downstream.
     b0_pure_gauge = 11.0 * N_C / 3.0   # = 11 for SU(3)
     alpha_lat = ALPHA_BARE
@@ -558,8 +559,8 @@ def test_scale_diagnostic() -> None:
         f"n* = {n_star:.2f}",
     )
     # In the truncated series the contribution at order n is w_n/beta^n.
-    # Within the admitted truncation used here the series remains numerically
-    # Cauchy-convergent to a value different from the admitted comparator.
+    # Within the explicit runner-local truncation used here the series remains numerically
+    # Cauchy-convergent to a value different from the explicit runner-local comparator.
     # This runner records that finite-route residual; it does not identify the
     # residual with a particular matrix element.
     contributions = [W_COEFFS_NSPT_SU3[n] / BETA**n for n in range(1, 17)]
@@ -572,16 +573,16 @@ def test_scale_diagnostic() -> None:
     pct_non_pert = 100.0 * abs(non_pert_gap) / MC_REFERENCE
     print(f"  perturbative summed value (N=16): {P_PT_summed:.6f}")
     print(f"  finite-route gap to comparator:   {non_pert_gap:+.5f} ({pct_non_pert:.3f}%)")
-    print(f"  admitted F2 comparator:           {F2_SCALE_PERCENT:.4f}%")
+    print(f"  explicit runner-local F2 comparator:           {F2_SCALE_PERCENT:.4f}%")
     check(
-        "finite-route gap to admitted comparator dominates over "
+        "finite-route gap to explicit runner-local comparator dominates over "
         "minimum-term residual",
         abs(non_pert_gap) > 100 * min_contrib,
         f"non_pert_gap = {non_pert_gap:+.5f}, min_term = {min_contrib:.3e}, ratio = "
         f"{abs(non_pert_gap)/min_contrib:.2e}",
     )
     check(
-        "finite-route gap exceeds admitted F2 comparator (tested route does not reach admitted MC comparator)",
+        "finite-route gap exceeds explicit runner-local F2 comparator (tested route does not reach explicit runner-local MC comparator)",
         pct_non_pert > F2_SCALE_PERCENT,
         f"gap = {pct_non_pert:.4f}%, F2 = {F2_SCALE_PERCENT:.4f}%, ratio = "
         f"{pct_non_pert/F2_SCALE_PERCENT:.1f}x",
@@ -589,7 +590,7 @@ def test_scale_diagnostic() -> None:
 
 
 def test_honest_verdict() -> None:
-    section("T8: honest verdict on the admitted-input diagnostic")
+    section("T8: honest verdict on the explicit-input diagnostic")
     # Compute the best result we got and emit the final residual.
     # Use the tadpole-improved Pade since that's the best combined method.
     best = float("inf")
@@ -654,12 +655,12 @@ def test_honest_verdict() -> None:
 
     print(f"  HONEST best tested value: method = {best_method}")
     print(f"                            <P>_tested = {best_val:.6f}")
-    print(f"                            admitted <P>_MC comparator = {MC_REFERENCE:.4f}")
+    print(f"                            explicit runner-local <P>_MC comparator = {MC_REFERENCE:.4f}")
     print(f"                            residual = {best_val - MC_REFERENCE:+.5f}")
     print(f"                            residual % = {best:.3f}%")
-    print(f"                            admitted F2 comparator = {F2_SCALE_PERCENT:.4f}%")
+    print(f"                            explicit runner-local F2 comparator = {F2_SCALE_PERCENT:.4f}%")
     print(f"  Verdict: best tested residual ({best:.2f}%) "
-          f"{'<' if best < F2_SCALE_PERCENT else '>'} admitted F2 comparator ({F2_SCALE_PERCENT:.4f}%)")
+          f"{'<' if best < F2_SCALE_PERCENT else '>'} explicit runner-local F2 comparator ({F2_SCALE_PERCENT:.4f}%)")
     if best < 5.0:
         verdict_label = "PARTIAL_DERIVATION_<5pct"
     elif best < 10.0:
@@ -668,10 +669,10 @@ def test_honest_verdict() -> None:
         verdict_label = "RUNNER_LOCAL_OBSTRUCTION_>10pct"
     print(f"  Verdict label: {verdict_label}")
 
-    # The admitted-input diagnostic: even the best tested finite-route
-    # resummation does not reduce the residual below the admitted F2 comparator.
+    # The explicit-input diagnostic: even the best tested finite-route
+    # resummation does not reduce the residual below the explicit runner-local F2 comparator.
     check(
-        "HONEST VERDICT: best tested value has residual > admitted F2 comparator",
+        "HONEST VERDICT: best tested value has residual > explicit runner-local F2 comparator",
         best > F2_SCALE_PERCENT,
         f"best tested = {best_val:.6f}, residual = {best:.4f}% > F2 = {F2_SCALE_PERCENT:.4f}%",
     )
@@ -682,7 +683,7 @@ def test_no_axiom_extension() -> None:
     body_lower = NOTE.read_text().lower() if NOTE.exists() else ""
     plain_body = body_lower.replace("*", "")
     # The perturbative coefficients, MC comparator, and F2 comparator remain
-    # admitted for this runner-local diagnostic only; the Wilson coefficient
+    # explicit runner-local for this runner-local diagnostic only; the Wilson coefficient
     # relation is dependency-wired without promoting the beta=6 surface.
     check(
         "no new axiom or primitive introduced (Lattice/Qubit/Admissibility/Record baseline unchanged)",
@@ -695,8 +696,8 @@ def test_no_axiom_extension() -> None:
         "paired note uses existing labels: <P>, beta, w_n, alpha_bare, u_0, tadpole improvement, Pade",
     )
     check(
-        "admitted MC comparator 0.5934 enters only as comparator (not derivation input)",
-        "admitted mc comparator" in plain_body
+        "explicit runner-local MC comparator 0.5934 enters only as comparator (not derivation input)",
+        "explicit runner-local mc comparator" in plain_body
         and "only a comparator" in plain_body
         and "not licensed for downstream reuse" in plain_body,
         "<P>_MC = 0.5934 used only in residual computation, never as authority or downstream license",
@@ -711,7 +712,7 @@ def test_note_exists() -> None:
     body = NOTE.read_text()
     check(
         f"note file {NOTE.name} exists",
-        True,
+        len(body) > 0,
         f"length = {len(body)} chars",
     )
     check(
@@ -726,9 +727,9 @@ def test_note_exists() -> None:
         "audit-discipline disclaimers present",
     )
     check(
-        "note declares admitted MC comparator 0.5934 as comparator only",
-        "admitted comparator" in body.lower() and "not licensed for downstream reuse" in body.lower(),
-        "admitted comparator pattern present",
+        "note declares explicit runner-local MC comparator 0.5934 as comparator only",
+        "explicit runner-local comparator" in body.lower() and "not licensed for downstream reuse" in body.lower(),
+        "explicit runner-local comparator pattern present",
     )
 
 

@@ -23,7 +23,8 @@ surface:
       dilation exp(i a s C) with s != 1 CHANGES the link — that is the
       freedom the rigidity theorem removes; choosing the split freedom is
       outside this theorem.
-  T3  matched slot, constructed: the Wilson small-a matching demand
+  T3  matched slot, constructed conditional on explicit non-satisfying W-PHYS: the Wilson
+      matching demand (not derived by the stable-path matrix theorem)
       applied to the constructed plaquette action yields
       gamma*(beta)^2 = 2 N_c / beta for each tested beta (never assigned).
   T4  link slot, constructed: the canonical-coordinate readback of the
@@ -321,7 +322,7 @@ def matched_slot_sq(cfg: FieldConfig, beta: float, a: float, FF: float) -> float
 
     k(beta, a) = beta (1 - Re Tr U_P / N_c) / (a^4 F^a[C] F^a[C]) is the
     constructed coefficient of the canonical-coordinate quadratic form;
-    the Wilson matching demand (coefficient 1/2 per unordered plane for
+    the explicit W-PHYS matching condition (coefficient 1/2 per unordered plane for
     the matched field A = C/gamma) fixes k * gamma*^2 = 1/2.
     """
     UP = cfg.plaquette(a)
@@ -331,7 +332,7 @@ def matched_slot_sq(cfg: FieldConfig, beta: float, a: float, FF: float) -> float
 
 
 def section_D(cfg: FieldConfig, F_lat: np.ndarray) -> dict[float, float]:
-    print("\nSECTION D: Theorem 3 — matched slot gamma*(beta)^2 = 2 N_c / beta")
+    print("\nSECTION D: Theorem 3 — W-PHYS-conditional matched slot")
     print("-" * 78)
     Fa = coeffs_from_herm(F_lat)
     FF = float(Fa @ Fa)
@@ -474,12 +475,13 @@ def section_G() -> None:
     rigidity_flat = flat(rigidity_text)
     wilson_flat = flat(wilson_text)
 
-    require_contains("theorem", bridge_flat, "set only by the independent audit lane")
+    require_contains("theorem", bridge_flat, "Status authority:** independent audit lane only")
     require_contains("theorem", bridge_flat, "non-load-bearing convention context")
     require_contains("theorem", bridge_flat, "This theorem locates the pin but does not choose it")
     require_contains("theorem", bridge_text, "gamma*(beta) := +sqrt(2 N_c / beta) > 0")
     require_contains("theorem", bridge_flat, "equality of the squares is equivalent to equality of the slots themselves")
     require_contains("bridge", bridge_flat, "mismatched-slot")
+    require_contains("bridge", bridge_flat, "explicit non-satisfying condition `W-PHYS`")
     require_contains("bridge", bridge_flat, "does not claim:")
     require_contains("bridge", bridge_flat, "Wilson plaquette action-surface selection")
     require_contains("bridge", bridge_flat, "global logarithm-branch selection")
@@ -521,10 +523,10 @@ def section_G() -> None:
 
     require_contains("rigidity", rigidity_flat, "finite-link")
     require_contains("rigidity", rigidity_flat, "no independent scalar-normalization freedom")
-    require_contains("Wilson", wilson_text, "beta * g_bare^2 = 2 N_c")
-    require_contains("Wilson", wilson_text, "beta = 2 N_c / g_bare^2")
+    require_contains("Wilson", wilson_text, "beta g^2 = 2n")
+    require_contains("Wilson", wilson_text, "C_left = C_right")
     require_contains(
-        "Wilson", wilson_flat, "does not derive that the framework must select the Wilson action surface"
+        "Wilson", wilson_flat, "They may not cite it as authority for an action surface"
     )
 
 

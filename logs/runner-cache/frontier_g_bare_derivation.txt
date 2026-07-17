@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_derivation.py
-runner_sha256: 6f64216345cfe9a1ea73e36517afb706b33c0f23fe0e2c326f6154012dcec5ac
+runner_sha256: 8fcc3596d25467fdcca45b57b28af110e02175227454b81529afcc769dca0081
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
 G_BARE FINITE-LINK/WILSON BRIDGE RUNNER
-one-qubit operator algebra -> su(3) basis -> finite-link slot -> Wilson beta
+one-qubit operator algebra -> su(3) basis -> finite-link slot -> conditional W-PHYS read
 ========================================================================================
 
 ========================================================================================
@@ -39,91 +39,97 @@ SECTION B: canonical orthonormal su(3) generators on canonical triplet
   [PASS] quadratic Casimir sum_a T_a T_a = (4/3) I_3 in fundamental  (||casimir - C_F I|| = 2.22e-16)
 
 ========================================================================================
-SECTION C: Wilson plaquette small-a expansion forces beta = 2 N_c / g^2
+SECTION C: conditional Wilson read under supplied W-PHYS
 ========================================================================================
   [PASS] deterministic F is a Hermitian su(3) element
   [PASS] trace normalization gives Tr(F^2) = (1/2) sum_a F_a^2  (Tr(F^2)=1.200000000000; component_norm/2=1.200000000000)
   [PASS] Wilson plaquette deficit coefficient is F_a F_a/(4 N_c)  (component=0.200000000000; trace=0.200000000000)
-  [PASS] matching: beta = 2 N_c / g^2 at g^2 = 0.5 gives beta = 12.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
-  [PASS] matching: beta = 2 N_c / g^2 at g^2 = 1.0 gives beta = 6.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
-  [PASS] matching: beta = 2 N_c / g^2 at g^2 = 1.5 gives beta = 4.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
-  [PASS] matching: beta = 2 N_c / g^2 at g^2 = 2.0 gives beta = 3.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
-  [PASS] with finite-link scalar slot g^2=1, Wilson matching gives beta=6 at N_c=3  (finite-link slot supplies g^2 = 1; Wilson matching gives beta = 6)
+  [PASS] W-PHYS conditional: beta = 2 N_c / g^2 at g^2 = 0.5 gives beta = 12.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
+  [PASS] W-PHYS conditional: beta = 2 N_c / g^2 at g^2 = 1.0 gives beta = 6.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
+  [PASS] W-PHYS conditional: beta = 2 N_c / g^2 at g^2 = 1.5 gives beta = 4.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
+  [PASS] W-PHYS conditional: beta = 2 N_c / g^2 at g^2 = 2.0 gives beta = 3.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
+  [PASS] with W-PHYS and finite-link slot g^2=1, the conditional read gives beta=6  (finite-link slot plus W-PHYS gives conditional beta = 6)
 
 ========================================================================================
-SECTION D: rescaling A -> c * A shifts beta by c^2, not g_bare
+SECTION D: formal paired rescaling T -> cT, g -> g/c, beta -> c^2 beta
 ========================================================================================
   [PASS] rescale T -> c T at c = 0.5000: Gram = c^2 * delta/2  (||Gram_scaled - c^2 delta/2|| = 2.78e-17)
   [PASS] rescale T -> c T at c = 0.5000: Gram NOT equal to canonical delta/2  (non-canonical normalization (forbidden by canonical Cl(3) basis))
-  [PASS] rescale shifts beta by c^2 = 0.2500: beta_new = 1.5000  (beta_old * c^2 = 1.5000, beta_new (matched) = 1.5000, no shift to g_bare)
+  [PASS] paired labels at c=0.5000: beta'=c^2 beta, g'=g/c, product invariant  (beta'=1.5000, g'=2.0000, beta'g'^2=6.0000)
   [PASS] rescale T -> c T at c = 1.4142: Gram = c^2 * delta/2  (||Gram_scaled - c^2 delta/2|| = 0.00e+00)
   [PASS] rescale T -> c T at c = 1.4142: Gram NOT equal to canonical delta/2  (non-canonical normalization (forbidden by canonical Cl(3) basis))
-  [PASS] rescale shifts beta by c^2 = 2.0000: beta_new = 12.0000  (beta_old * c^2 = 12.0000, beta_new (matched) = 12.0000, no shift to g_bare)
+  [PASS] paired labels at c=1.4142: beta'=c^2 beta, g'=g/c, product invariant  (beta'=12.0000, g'=0.7071, beta'g'^2=6.0000)
   [PASS] rescale T -> c T at c = 2.0000: Gram = c^2 * delta/2  (||Gram_scaled - c^2 delta/2|| = 4.44e-16)
   [PASS] rescale T -> c T at c = 2.0000: Gram NOT equal to canonical delta/2  (non-canonical normalization (forbidden by canonical Cl(3) basis))
-  [PASS] rescale shifts beta by c^2 = 4.0000: beta_new = 24.0000  (beta_old * c^2 = 24.0000, beta_new (matched) = 24.0000, no shift to g_bare)
+  [PASS] paired labels at c=2.0000: beta'=c^2 beta, g'=g/c, product invariant  (beta'=24.0000, g'=0.5000, beta'g'^2=6.0000)
   [PASS] rescale T -> c T at c = 3.0000: Gram = c^2 * delta/2  (||Gram_scaled - c^2 delta/2|| = 1.78e-15)
   [PASS] rescale T -> c T at c = 3.0000: Gram NOT equal to canonical delta/2  (non-canonical normalization (forbidden by canonical Cl(3) basis))
-  [PASS] rescale shifts beta by c^2 = 9.0000: beta_new = 54.0000  (beta_old * c^2 = 54.0000, beta_new (matched) = 54.0000, no shift to g_bare)
+  [PASS] paired labels at c=3.0000: beta'=c^2 beta, g'=g/c, product invariant  (beta'=54.0000, g'=0.3333, beta'g'^2=6.0000)
 
   Conclusion: under canonical Tr(T_a T_b) = delta_ab / 2,
-  the rescaling A -> c * A shifts the matched beta by c^2, NOT g_bare.
-  The continuum rescaling freedom is removed by the canonical normalization.
+  a nontrivial paired label rescaling changes the Gram convention,
+  with beta -> c^2 beta and g -> g/c while beta*g^2 stays fixed.
+  A physical interpretation remains conditional on W-PHYS.
 
 ========================================================================================
 SECTION E: constraint-vs-convention disambiguation
 ========================================================================================
-  [PASS] finite-link scalar slot plus Wilson matching gives beta = 2 N_c = 6 for SU(3) (exact)  (g_bare^2 = 1; beta = 6)
-  [PASS] Wilson identity is satisfied on the finite-link scalar slot (exact)  (beta * g_bare^2 = 6 = 2 N_c)
+  [PASS] finite-link slot plus W-PHYS and SLOT-ID gives conditional beta=6 (exact)  (SLOT-ID: g_bare^2=s^2=1; beta=6)
+  [PASS] W-PHYS-conditional identity is satisfied on the finite-link slot (exact)  (beta * g_bare^2 = 6 = 2 N_c)
   [PASS] alternative g^2 = 1/2 requires beta = 12 != 6  (outside the canonical finite-link scalar slot used by the parent)
   [PASS] alternative g^2 = 2 requires beta = 3 != 6  (outside the canonical finite-link scalar slot used by the parent)
   [PASS] alternative g^2 = 4 requires beta = 3/2 != 6  (outside the canonical finite-link scalar slot used by the parent)
-  [PASS] finite-link layer: canonical T_a basis carries no extra scalar multiplier  (source supplied by G_BARE_RIGIDITY_THEOREM_NOTE.md)
-  [PASS] Wilson layer: beta*g_bare^2=2N_c is a coefficient theorem on the supplied action surface  (source supplied by WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-  [PASS] [BOUNDED] bounded boundary: Wilson action form itself remains a convention-layer input  (see G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18 Claim 3 caveat)
+  [PASS] finite-link layer: canonical T_a basis carries no extra scalar multiplier  (source-checked in G_BARE_RIGIDITY_THEOREM_NOTE.md)
+  [PASS] formal layer: beta*g^2=2n is exact; a Wilson read additionally requires W-PHYS  (formal source: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+  [PASS] [BOUNDED] bounded boundary: W-PHYS and SLOT-ID are explicit non-satisfying conditions  (parent source keeps both conditions outside theorem authority)
 
 ========================================================================================
 SECTION F: end-to-end derivation chain (no circular use of g_bare = 1)
 ========================================================================================
   [PASS] Step 1: one-qubit operator algebra -> End(V=C^8) chiral rep built without g_bare input  ({G_mu, G_nu} = 2 delta_munu I_8 verified in Section A)
   [PASS] Step 2: canonical orthonormal su(3) Gram = delta/2 (no g_bare input)  (||Gram - delta/2|| = 1.11e-16)
-  [PASS] Step 3: Wilson matching gives beta = 2 N_c / g^2 (symbolic, no g_bare input)  (verified in Section C across g^2 in {0.5, 1.0, 1.5, 2.0})
-  [PASS] Step 4: finite-link scalar slot + Wilson matching -> beta=6 and g_bare^2=1  (finite-link slot supplies g_bare^2 = 1.0; Wilson matching gives beta = 6.0)
+  [PASS] Step 3: W-PHYS conditional read gives beta = 2 N_c / g^2  (formal identity verified; physical dictionary remains an explicit condition)
+  [PASS] Step 4: finite-link slot + W-PHYS + SLOT-ID -> conditional beta=6  (SLOT-ID maps s^2=1.0 to g_bare^2; conditional beta=6.0)
 
   Circularity audit:
   - Step 1 uses the Quantum axiom's one-site operator algebra; no beta or g input.
-  - Step 2 uses canonical Gell-Mann basis; Tr normalization is structural.
-  - Step 3 uses Wilson plaquette form + small-a expansion; symbolic beta, g.
-  - Step 4 uses the finite-link rigidity theorem for the canonical scalar slot.
-  - Final beta = 6 follows from Wilson matching after g_bare^2=1 is supplied.
-  [PASS] no circular use of g_bare = 1 or beta = 6 as input in the chain  (beta=6 is downstream of finite-link rigidity plus Wilson matching)
+  - Step 2 uses the explicit canonical Gell-Mann basis and checks its half-trace Gram.
+  - Step 3 uses the formal coefficient identity plus supplied W-PHYS.
+  - Step 4 uses rigidity for s^2=1 and explicit SLOT-ID for g_bare^2=s^2.
+  - Final beta = 6 follows only under both W-PHYS and SLOT-ID.
+  [PASS] conditional arithmetic does not use beta=6 to compute g_bare^2=1  (W-PHYS remains an explicit antecedent, not a derived bridge)
 
 ========================================================================================
 SECTION G: source-side finite-link/Wilson bridge visibility
 ========================================================================================
-  [PASS] [BOUNDED] parent note exists  (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/G_BARE_DERIVATION_NOTE.md)
-  [PASS] [BOUNDED] bridge note exists  (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
-  [PASS] [BOUNDED] finite-link rigidity note exists  (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
-  [PASS] [BOUNDED] Wilson small-a note exists  (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+  [PASS] [BOUNDED] parent note exists  (/private/tmp/science-fix-wilson-formal-taylor-20260716/docs/G_BARE_DERIVATION_NOTE.md)
+  [PASS] [BOUNDED] bridge note exists  (/private/tmp/science-fix-wilson-formal-taylor-20260716/docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
+  [PASS] [BOUNDED] finite-link rigidity note exists  (/private/tmp/science-fix-wilson-formal-taylor-20260716/docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
+  [PASS] [BOUNDED] Wilson small-a note exists  (/private/tmp/science-fix-wilson-formal-taylor-20260716/docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
   [PASS] [BOUNDED] source marker present: No step uses `beta = 6` as a premise for `g_bare = 1`.
   [PASS] [BOUNDED] source marker present: G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06
   [PASS] [BOUNDED] source marker present: same scalar slot
   [PASS] [BOUNDED] source marker present: an audit verdict or any effective-status promotion
   [PASS] [BOUNDED] source marker present: no independent scalar-normalization freedom
-  [PASS] [BOUNDED] source marker present: beta * g_bare^2 = 2 N_c
+  [PASS] [BOUNDED] source marker present: This note derives neither `W-PHYS`
+  [PASS] [BOUNDED] source marker present: `SLOT-ID`
+  [PASS] [BOUNDED] source marker present: neither condition chain-satisfies a dependency
+  [PASS] [BOUNDED] source marker present: beta g^2 = 2n
+  [PASS] [BOUNDED] source marker present: They may not cite it as authority for an action surface
   [PASS] [BOUNDED] parent source no longer contains stale beta back-solving symbol
 
 ========================================================================================
 SUMMARY
 ========================================================================================
   EXACT   : PASS = 51,   FAIL = 0
-  BOUNDED : PASS = 12, FAIL = 0
-  TOTAL   : PASS = 63, FAIL = 0
+  BOUNDED : PASS = 16, FAIL = 0
+  TOTAL   : PASS = 67, FAIL = 0
 
   All exact checks passed.
-  The repaired parent chain composes finite-link rigidity with Wilson matching.
-  The beta=6 surface is downstream of g_bare^2=1 on the canonical scalar slot,
-  not an input used to derive g_bare=1.
+  The repaired parent chain composes finite-link rigidity with a formal coefficient theorem.
+  A Wilson interpretation remains conditional on explicit W-PHYS and SLOT-ID.
+  Conditional on both, beta=6 follows after the canonical scalar-slot input;
+  neither condition is derived by this runner.
 
   Wilson action-form selection, continuum/global gauge-field limits,
   and audit/effective-status promotion remain outside this runner.

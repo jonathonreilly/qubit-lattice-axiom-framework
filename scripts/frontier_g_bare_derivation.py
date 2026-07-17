@@ -11,19 +11,22 @@ and for the two new theorem notes
 Goal
 ----
 
-Numerically exhibit the framework's `g_bare = 1` derivation chain end to end:
+Numerically exhibit a conditional `g_bare = 1` composition end to end:
 
   (1) Cl(3) -> End(V=C^8) chiral representation built explicitly.
   (2) Canonical orthonormal su(3) Gell-Mann basis on the canonical triplet,
       verified to satisfy Tr(T_a T_b) = delta_ab / 2.
-  (3) Wilson plaquette small-a expansion: matching to the (1/g^2) F^2
-      continuum kinetic term forces beta = 2 N_c / g^2.
+  (3) W-PHYS (an explicit, not-derived dictionary) identifies the defined
+      matrix coefficient with a Wilson coefficient and a target kinetic
+      coefficient; only under W-PHYS does beta = 2 N_c / g^2 get a Wilson read.
   (4) The finite-link rigidity theorem supplies the canonical scalar slot
       g_link^2 = 1 in the fixed T_a basis.
-  (5) The Wilson small-a theorem supplies beta * g_bare^2 = 2 N_c.
-  (6) The parent bridge checks that these are the same scalar slot on the
-      supplied Wilson surface, so beta = 6 follows for N_c = 3 without using
-      beta = 6 as an input to derive g_bare = 1.
+  (5) The defined matrix theorem supplies only the formal coefficient
+      equivalence beta * g^2 = 2 n.
+  (6) The parent bridge locates the same-slot point but does not choose it.
+      The explicit non-satisfying condition SLOT-ID identifies g_bare with
+      the finite-link slot, so beta = 6 follows conditionally for N_c = 3
+      without using beta = 6 as an input to derive g_bare = 1.
 
 Honest scoping
 --------------
@@ -32,13 +35,17 @@ This runner certifies the repaired parent source surface:
 
   - finite-link rigidity supplies the canonical scalar slot in the fixed
     generator basis;
-  - Wilson small-a matching supplies the coefficient identity;
-  - the 2026-06-18 bridge supplies same-slot compatibility for the parent.
+  - the matrix theorem supplies the formal coefficient identity;
+  - W-PHYS supplies the Wilson/continuum dictionary as an explicit condition;
+  - the 2026-06-18 bridge locates same-slot compatibility, while SLOT-ID is a
+    separate explicit condition.
 
 This runner does NOT close:
 
   - The choice of the Wilson plaquette action form per se (Symanzik / improved
     actions remain outside this scope).
+  - W-PHYS, the physical dictionary from the theorem's defined coefficients
+    and formal symbols to the Wilson action and target kinetic coefficient.
   - The deeper question of whether the canonical Cl(3) connection normalization
     is itself unique (see the existing
     `G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md`,
@@ -257,11 +264,11 @@ def section_B_canonical_trace_normalization(T_triplet):
 
 
 # ---------------------------------------------------------------------------
-# Section C: Wilson plaquette small-a expansion forces beta = 2 N_c / g^2
+# Section C: supplied W-PHYS dictionary plus exact trace expansion
 # ---------------------------------------------------------------------------
 
 def section_C_wilson_small_a(T_triplet, N_c: int = 3):
-    section("SECTION C: Wilson plaquette small-a expansion forces beta = 2 N_c / g^2")
+    section("SECTION C: conditional Wilson read under supplied W-PHYS")
 
     coeffs = np.array([1, -2, 3, -1, 2, -3, 4, -4], dtype=float) / 5.0
     F = sum(coeffs[a] * T_triplet[a] for a in range(8))
@@ -290,7 +297,8 @@ def section_C_wilson_small_a(T_triplet, N_c: int = 3):
         f"component={predicted_component_coeff:.12f}; trace={predicted_trace_coeff:.12f}",
     )
 
-    # Matching the lattice plaquette to the continuum (1/(2 g^2)) Tr(F^2)
+    # W-PHYS supplies the physical identification of these two coefficients.
+    # Conditional on that dictionary, matching to (1/(2 g^2)) Tr(F^2)
     # kinetic term gives:
     #     beta / (2 N_c) = 1 / g^2,   i.e.  beta = 2 N_c / g^2.
     # Verify the algebraic relation at several g^2 values (no input on either
@@ -299,38 +307,35 @@ def section_C_wilson_small_a(T_triplet, N_c: int = 3):
         beta = 2 * N_c / g2
         match_err = abs(beta * g2 - 2 * N_c)
         check(
-            f"matching: beta = 2 N_c / g^2 at g^2 = {g2} gives beta = {beta:.4f}",
+            f"W-PHYS conditional: beta = 2 N_c / g^2 at g^2 = {g2} gives beta = {beta:.4f}",
             match_err < 1e-12,
             f"beta * g^2 = {beta * g2:.6f} = 2 N_c = {2 * N_c}",
         )
 
     # The finite-link/Wilson bridge supplies g^2 = 1 as the canonical
-    # scalar slot. The Wilson coefficient theorem then gives beta=2N_c.
+    # scalar slot. The formal identity plus W-PHYS then gives beta=2N_c.
     beta_from_wilson_match = 2 * N_c
     check(
-        "with finite-link scalar slot g^2=1, Wilson matching gives beta=6 at N_c=3",
+        "with W-PHYS and finite-link slot g^2=1, the conditional read gives beta=6",
         abs(beta_from_wilson_match - 6.0) < 1e-12
         and abs(beta_from_wilson_match * 1.0 - 2 * N_c) < 1e-12,
-        f"finite-link slot supplies g^2 = 1; Wilson matching gives beta = {beta_from_wilson_match}",
+        f"finite-link slot plus W-PHYS gives conditional beta = {beta_from_wilson_match}",
     )
 
 
 # ---------------------------------------------------------------------------
-# Section D: Rescaling freedom A -> c * A shifts beta, NOT g_bare
+# Section D: formal paired generator/coupling-label rescaling
 # ---------------------------------------------------------------------------
 
 def section_D_rescaling_freedom(T_triplet, N_c: int = 3):
-    section("SECTION D: rescaling A -> c * A shifts beta by c^2, not g_bare")
+    section("SECTION D: formal paired rescaling T -> cT, g -> g/c, beta -> c^2 beta")
 
     # If we rescale T_a -> c * T_a, the canonical Tr(T_a T_b) = delta_ab/2
     # becomes Tr((c T_a)(c T_b)) = c^2 delta_ab/2. The matching condition
-    # then reads
-    #     beta_new / (2 N_c) = (c^2) * (1/g^2),   i.e.   beta_new = c^2 * beta.
-    # The canonical normalization is the c = 1 surface; any c != 1 violates
-    # the canonical Tr(T_a T_b) = delta/2 identity and shifts beta, leaving
-    # g_bare alone. The rescaling is therefore not a free reparametrization
-    # of g_bare; it is a violation of the canonical normalization that
-    # changes the action coefficient beta.
+    # formal coefficient labels transform as g_new=g/c and
+    # beta_new=c^2 beta, keeping beta*g^2 invariant. The canonical
+    # normalization is the c=1 surface; c != 1 changes the half-trace Gram.
+    # No physical Wilson interpretation follows from this label algebra.
 
     target = 0.5 * np.eye(8)
     for c in [0.5, np.sqrt(2.0), 2.0, 3.0]:
@@ -350,34 +355,24 @@ def section_D_rescaling_freedom(T_triplet, N_c: int = 3):
             "non-canonical normalization (forbidden by canonical Cl(3) basis)",
         )
 
-        # Show that the matched beta shifts by exactly c^2 (and not g_bare).
-        # Suppose physical action requires fixed coefficient (1/g^2) Tr(F^2).
-        # In the rescaled basis F_new = c F, Tr(F_new^2) = c^2 Tr(F^2). To
-        # keep the action coefficient invariant, beta_new must absorb the c^2:
-        #     beta_new = beta * c^2.
-        # We verify the algebraic identity directly.
+        # Verify the complete paired formal transformation rather than
+        # silently holding the coupling label fixed.
         beta_old = 2 * N_c  # at g^2 = 1
+        g_old = 1.0
         beta_new = beta_old * (c ** 2)
-        # Algebraic verification: rescaling removes coordinate freedom from
-        # g_bare and routes it into beta.
+        g_new = g_old / c
         check(
-            f"rescale shifts beta by c^2 = {c ** 2:.4f}: beta_new = {beta_new:.4f}",
-            abs(beta_new - beta_old * c ** 2) < 1e-12,
-            f"beta_old * c^2 = {beta_old * c ** 2:.4f}, "
-            f"beta_new (matched) = {beta_new:.4f}, no shift to g_bare",
+            f"paired labels at c={c:.4f}: beta'=c^2 beta, g'=g/c, product invariant",
+            abs(beta_new - beta_old * c ** 2) < 1e-12
+            and abs(g_new - g_old / c) < 1e-12
+            and abs(beta_new * g_new**2 - beta_old * g_old**2) < 1e-12,
+            f"beta'={beta_new:.4f}, g'={g_new:.4f}, beta'g'^2={beta_new * g_new**2:.4f}",
         )
 
-    # Conclusion: with Tr(T_a T_b) = delta/2 held fixed (the canonical
-    # normalization), there is NO freedom in g_bare. The continuum-gauge-
-    # theory rescaling A -> A/g either (i) violates the canonical Tr
-    # normalization by introducing a c != 1 generator dilation, or
-    # (ii) reduces to a coordinate change on the same operator A_op, leaving
-    # the physical content invariant. In both cases, g_bare is not a free
-    # parameter.
-
     print("\n  Conclusion: under canonical Tr(T_a T_b) = delta_ab / 2,")
-    print("  the rescaling A -> c * A shifts the matched beta by c^2, NOT g_bare.")
-    print("  The continuum rescaling freedom is removed by the canonical normalization.")
+    print("  a nontrivial paired label rescaling changes the Gram convention,")
+    print("  with beta -> c^2 beta and g -> g/c while beta*g^2 stays fixed.")
+    print("  A physical interpretation remains conditional on W-PHYS.")
 
 
 # ---------------------------------------------------------------------------
@@ -387,23 +382,33 @@ def section_D_rescaling_freedom(T_triplet, N_c: int = 3):
 def section_E_constraint_vs_convention(N_c: int = 3):
     section("SECTION E: constraint-vs-convention disambiguation")
 
-    # Algebraic statement: finite-link rigidity supplies g_bare^2=1 for the
-    # canonical scalar slot in the fixed T_a basis. Wilson matching then gives
-    # beta=2N_c. Noncanonical scalar slots are outside the repaired parent.
+    root = Path(__file__).resolve().parent.parent
+    parent_text = (root / "docs" / "G_BARE_DERIVATION_NOTE.md").read_text(
+        encoding="utf-8"
+    )
+    rigidity_text = (
+        root / "docs" / "G_BARE_RIGIDITY_THEOREM_NOTE.md"
+    ).read_text(encoding="utf-8")
+    parent_flat = " ".join(parent_text.split())
+    rigidity_flat = " ".join(rigidity_text.split())
+
+    # Finite-link rigidity supplies s^2=1. Only the explicit SLOT-ID condition
+    # identifies that slot with the Wilson label g_bare.
 
     # Use exact rational arithmetic to make the constraint statement crisp.
     N = Fraction(N_c)
     beta_on_canonical_slot = Fraction(2) * N  # = 6 at N_c = 3
-    g_bare_sq = Fraction(1)
+    g_link_sq = Fraction(1)
+    g_bare_sq = g_link_sq  # conditional substitution under SLOT-ID
     check(
-        "finite-link scalar slot plus Wilson matching gives beta = 2 N_c = 6 for SU(3) (exact)",
+        "finite-link slot plus W-PHYS and SLOT-ID gives conditional beta=6 (exact)",
         beta_on_canonical_slot == Fraction(6)
         and beta_on_canonical_slot * g_bare_sq == Fraction(2) * N,
-        f"g_bare^2 = {g_bare_sq}; beta = {beta_on_canonical_slot}",
+        f"SLOT-ID: g_bare^2=s^2={g_bare_sq}; beta={beta_on_canonical_slot}",
     )
 
     check(
-        "Wilson identity is satisfied on the finite-link scalar slot (exact)",
+        "W-PHYS-conditional identity is satisfied on the finite-link slot (exact)",
         g_bare_sq == Fraction(1),
         f"beta * g_bare^2 = {beta_on_canonical_slot * g_bare_sq} = 2 N_c",
     )
@@ -421,20 +426,23 @@ def section_E_constraint_vs_convention(N_c: int = 3):
 
     check(
         "finite-link layer: canonical T_a basis carries no extra scalar multiplier",
-        True,
-        "source supplied by G_BARE_RIGIDITY_THEOREM_NOTE.md",
+        "no independent scalar-normalization freedom" in rigidity_flat,
+        "source-checked in G_BARE_RIGIDITY_THEOREM_NOTE.md",
     )
+    formal_residual = Fraction(2) * Fraction(N_c) - Fraction(2) * Fraction(N_c)
     check(
-        "Wilson layer: beta*g_bare^2=2N_c is a coefficient theorem on the supplied action surface",
-        True,
-        "source supplied by WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md",
+        "formal layer: beta*g^2=2n is exact; a Wilson read additionally requires W-PHYS",
+        formal_residual == 0,
+        "formal source: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md",
     )
 
     # Bounded boundary statement
     check(
-        "bounded boundary: Wilson action form itself remains a convention-layer input",
-        True,
-        "see G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18 Claim 3 caveat",
+        "bounded boundary: W-PHYS and SLOT-ID are explicit non-satisfying conditions",
+        "This note derives neither `W-PHYS`" in parent_flat
+        and "`SLOT-ID`; neither condition" in parent_flat
+        and "neither condition chain-satisfies a dependency" in parent_flat,
+        "parent source keeps both conditions outside theorem authority",
         kind="BOUNDED",
     )
 
@@ -464,35 +472,44 @@ def section_F_no_circular_input(T_triplet, N_c: int = 3):
         f"||Gram - delta/2|| = {np.linalg.norm(Gram - 0.5 * np.eye(8)):.2e}",
     )
 
-    # Step 3: small-a Wilson matching -> beta = 2 N_c / g^2 (no g_bare input,
-    # both beta and g symbolic).
+    # Step 3: formal coefficient equality plus supplied W-PHYS dictionary.
     check(
-        "Step 3: Wilson matching gives beta = 2 N_c / g^2 (symbolic, no g_bare input)",
-        True,
-        "verified in Section C across g^2 in {0.5, 1.0, 1.5, 2.0}",
+        "Step 3: W-PHYS conditional read gives beta = 2 N_c / g^2",
+        all(abs((2 * N_c / g2) * g2 - 2 * N_c) < 1e-12 for g2 in (0.5, 1.0, 1.5, 2.0)),
+        "formal identity verified; physical dictionary remains an explicit condition",
     )
 
-    # Step 4: finite-link rigidity supplies the canonical scalar slot
-    # g_bare^2=1. Wilson matching then gives beta=2N_c.
-    g_bare_sq = 1.0
+    # Step 4: finite-link rigidity supplies s^2=1. SLOT-ID conditionally maps
+    # that slot to g_bare; the formal identity plus W-PHYS then gives beta=2N_c.
+    root = Path(__file__).resolve().parent.parent
+    parent_flat = " ".join(
+        (root / "docs" / "G_BARE_DERIVATION_NOTE.md")
+        .read_text(encoding="utf-8")
+        .split()
+    )
+    g_link_sq = 1.0
+    slot_id_declared = "`SLOT-ID` identifies that Wilson label `g_bare`" in parent_flat
+    g_bare_sq = g_link_sq
     beta_at_canonical = 2 * N_c / g_bare_sq
     check(
-        "Step 4: finite-link scalar slot + Wilson matching -> beta=6 and g_bare^2=1",
-        abs(g_bare_sq - 1.0) < 1e-12 and abs(beta_at_canonical - 6.0) < 1e-12,
-        f"finite-link slot supplies g_bare^2 = {g_bare_sq}; Wilson matching gives beta = {beta_at_canonical}",
+        "Step 4: finite-link slot + W-PHYS + SLOT-ID -> conditional beta=6",
+        slot_id_declared
+        and abs(g_bare_sq - 1.0) < 1e-12
+        and abs(beta_at_canonical - 6.0) < 1e-12,
+        f"SLOT-ID maps s^2={g_link_sq} to g_bare^2; conditional beta={beta_at_canonical}",
     )
 
     # Audit of circularity
     print("\n  Circularity audit:")
     print("  - Step 1 uses the Quantum axiom's one-site operator algebra; no beta or g input.")
-    print("  - Step 2 uses canonical Gell-Mann basis; Tr normalization is structural.")
-    print("  - Step 3 uses Wilson plaquette form + small-a expansion; symbolic beta, g.")
-    print("  - Step 4 uses the finite-link rigidity theorem for the canonical scalar slot.")
-    print("  - Final beta = 6 follows from Wilson matching after g_bare^2=1 is supplied.")
+    print("  - Step 2 uses the explicit canonical Gell-Mann basis and checks its half-trace Gram.")
+    print("  - Step 3 uses the formal coefficient identity plus supplied W-PHYS.")
+    print("  - Step 4 uses rigidity for s^2=1 and explicit SLOT-ID for g_bare^2=s^2.")
+    print("  - Final beta = 6 follows only under both W-PHYS and SLOT-ID.")
     check(
-        "no circular use of g_bare = 1 or beta = 6 as input in the chain",
-        True,
-        "beta=6 is downstream of finite-link rigidity plus Wilson matching",
+        "conditional arithmetic does not use beta=6 to compute g_bare^2=1",
+        abs((2 * N_c / 1.0) - 6.0) < 1e-12,
+        "W-PHYS remains an explicit antecedent, not a derived bridge",
     )
 
 
@@ -532,7 +549,11 @@ def section_G_source_bridge_visibility():
         (bridge_flat, "same scalar slot"),
         (bridge_flat, "an audit verdict or any effective-status promotion"),
         (rigidity_flat, "no independent scalar-normalization freedom"),
-        (wilson_text, "beta * g_bare^2 = 2 N_c"),
+        (parent_flat, "This note derives neither `W-PHYS`"),
+        (parent_text, "`SLOT-ID`"),
+        (parent_flat, "neither condition chain-satisfies a dependency"),
+        (wilson_text, "beta g^2 = 2n"),
+        (wilson_flat, "They may not cite it as authority for an action surface"),
     ]
     for text, marker in markers:
         check(f"source marker present: {marker[:58]}", marker in text, kind="BOUNDED")
@@ -551,7 +572,7 @@ def section_G_source_bridge_visibility():
 def main() -> int:
     print("=" * 88)
     print("G_BARE FINITE-LINK/WILSON BRIDGE RUNNER")
-    print("one-qubit operator algebra -> su(3) basis -> finite-link slot -> Wilson beta")
+    print("one-qubit operator algebra -> su(3) basis -> finite-link slot -> conditional W-PHYS read")
     print("=" * 88)
 
     section_A_cl3_to_endv()
@@ -573,18 +594,22 @@ def main() -> int:
     print(f"  BOUNDED : PASS = {BOUNDED_PASS}, FAIL = {BOUNDED_FAIL}")
     print(f"  TOTAL   : PASS = {PASS + BOUNDED_PASS}, FAIL = {FAIL + BOUNDED_FAIL}")
     print()
-    if FAIL == 0:
+    if FAIL == 0 and BOUNDED_FAIL == 0:
         print("  All exact checks passed.")
-        print("  The repaired parent chain composes finite-link rigidity with Wilson matching.")
-        print("  The beta=6 surface is downstream of g_bare^2=1 on the canonical scalar slot,")
-        print("  not an input used to derive g_bare=1.")
+        print("  The repaired parent chain composes finite-link rigidity with a formal coefficient theorem.")
+        print("  A Wilson interpretation remains conditional on explicit W-PHYS and SLOT-ID.")
+        print("  Conditional on both, beta=6 follows after the canonical scalar-slot input;")
+        print("  neither condition is derived by this runner.")
         print()
         print("  Wilson action-form selection, continuum/global gauge-field limits,")
         print("  and audit/effective-status promotion remain outside this runner.")
     else:
-        print(f"  {FAIL} exact check(s) failed; investigate before using this candidate.")
+        print(
+            f"  {FAIL + BOUNDED_FAIL} check(s) failed "
+            f"({FAIL} exact, {BOUNDED_FAIL} bounded); investigate before use."
+        )
 
-    return 0 if FAIL == 0 else 1
+    return 0 if FAIL == 0 and BOUNDED_FAIL == 0 else 1
 
 
 if __name__ == "__main__":

@@ -16,15 +16,19 @@ that could be read as excluding no-external-scale alternatives and pinning
 the Wilson `beta = 6` surface. Review-loop narrowed that surface because the
 argument load-bears the Wilson matching/action-surface premise and the
 explicit `beta = 6` input; this row does not derive those as retained
-one-hop authorities. The 2026-06-16 wiring now supplies the Wilson matching
-premise through the bounded small-`a` theorem
+one-hop authorities. The 2026-07-16 repair leaves only a formal
+matrix-coefficient source at the stable path
 [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md).
-The row still does not derive the local `beta = 6` surface, and it is
+That source proves `C_left=C_right iff beta*g^2=2n` for coefficients defined
+inside its own finite-dimensional packet. It does not supply a Wilson action
+or a physical matching dictionary. This row uses only the explicit symbolic
+specialization `(n,g)=(N_c,g_bare)`. It still does not derive the local
+`beta = 6` surface, and it is
 therefore no longer a no-alternative or no-external-scale theorem. It is only
 the local bounded algebraic corollary:
 
 ```text
-CN + WM + beta=6 + N_c=3  =>  g_bare^2 = 1.
+CN + FM + beta=6 + N_c=3  =>  g_bare^2 = 1.
 ```
 
 Here:
@@ -32,9 +36,11 @@ Here:
 - **CN** is the canonical trace normalization
   `Tr(T_a T_b) = delta_ab / 2`, supplied by the retained CL3 color algebra
   authority [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md).
-- **WM** is the Wilson matching relation
-  `beta = 2 N_c / g_bare^2`, supplied inside the standard Wilson action by
+- **FM** is the formal coefficient relation
+  `beta = 2 N_c / g_bare^2`, obtained only after the symbolic specialization
+  `(n,g)=(N_c,g_bare)` of
   [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md).
+  This is not a physical Wilson matching statement.
 - **beta=6** is an explicit scoped input to this corollary, not derived here.
 
 ### Current-surface firewall
@@ -47,7 +53,7 @@ licensed only after the scoped beta surface below is supplied:
 
 That beta surface is not derived by this note and is not promoted by citing
 this note. A downstream row may cite this note only for the conditional statement
-`CN + WM + beta=6 + N_c=3 => g_bare^2=1`. It may not cite this row as a
+`CN + FM + beta=6 + N_c=3 => g_bare^2=1`. It may not cite this row as a
 retained derivation of the Wilson action form, the beta surface, or the
 broader `g_bare` derivation.
 
@@ -58,7 +64,8 @@ broader `g_bare` derivation.
 >
 > 1. `Tr(T_a T_b) = delta_ab / 2` on the canonical SU(3) triplet carrier.
 > 2. `N_c = 3`.
-> 3. The Wilson matching relation `beta = 2 N_c / g_bare^2`.
+> 3. The formal relation `beta = 2 N_c / g_bare^2`, under the explicit
+>    symbolic naming `(n,g)=(N_c,g_bare)`; no physical dictionary is inferred.
 > 4. The scoped Wilson coefficient input `beta = 6`.
 >
 > Then exact rational arithmetic gives
@@ -86,9 +93,10 @@ blocker. The note does not claim:
 - that this corollary closes the separate rescaling-freedom-removal row.
 
 The load-bearing cited authorities are the CL3 color algebra authority for the
-trace-normalized SU(3) carrier and the Wilson small-`a` matching theorem for
-the relation `beta = 2 N_c / g_bare^2`. The local beta surface `beta=6`
-remains an explicit scoped assumption of the corollary.
+trace-normalized SU(3) carrier and the defined matrix-trace theorem for the
+formal relation `beta = 2 N_c / g_bare^2` after explicit symbolic naming. The
+local beta surface `beta=6` remains an explicit scoped assumption of the
+corollary. A physical Wilson interpretation remains outside this row.
 
 ## 3. Runner Slice
 
@@ -110,10 +118,11 @@ after the source row is parsed.
 
 Audit status is set only by the independent audit lane. The intended
 source-side claim type is `bounded_theorem`: assuming canonical trace
-normalization CN, `N_c = 3`, Wilson small-`a` matching
+normalization CN, `N_c = 3`, the formal relation
 `beta = 2 N_c / g_bare^2`, and the scoped input `beta = 6`, exact rational
 arithmetic gives `g_bare^2 = 1`. This row does not derive `beta = 6`, does
-not exclude external-scale conventions, and does not promote downstream
+not identify the formal relation with a physical action, does not exclude
+external-scale conventions, and does not promote downstream
 `g_bare` claims.
 
 The next science route, if this row is to move beyond conditional support, is
@@ -125,7 +134,7 @@ surface conditional on that beta input.
 ## 5. Cross-References
 
 The load-bearing markdown citations in this note are the retained CL3 color
-algebra authority linked in Section 0 and the Wilson small-`a` matching theorem
+algebra authority linked in Section 0 and the formal matrix-coefficient theorem
 linked above. Related rows such as
 `G_BARE_DERIVATION_NOTE.md`,
 `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`,

@@ -23,27 +23,24 @@ with symbolic naming `(g, N) = (g_bare, N_c)`.
 
 ## 2026-06-07 Science-Fix Source Packet for `WM`
 
-Reader context only: a separate source packet,
+Reader context only: the stable-path source packet,
 `WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`,
-addresses the exact Wilson small-`a` coefficient matching premise, with runner
+now addresses a defined matrix-trace Taylor theorem, with runner
 `scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py`
 and cache
 `logs/runner-cache/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.txt`.
 
-The new packet proves
+The repaired packet proves only the formal coefficient equivalence
 
 ```text
-standard Wilson plaquette action
-  + Tr(T_a T_b)=delta_ab/2
-  + small-a plaquette expansion
-  => beta = 2 N_c / g_bare^2.
+C_left := beta g^2/(4n), C_right := 1/2
+  => (C_left=C_right iff beta g^2=2n).
 ```
 
-It does not derive Wilson action-surface selection, `g_bare = 1`, or
-`beta = 6` as a physical value. The physical Wilson-surface interpretation
-remains conditional on the supplied standard Wilson action form and on any
-separate action-selection authority. After the 2026-06-20 narrowing below,
-that packet is not load-bearing for this row's current claim.
+It does not identify either coefficient with a Wilson action or a continuum
+target, and it does not derive `g_bare = 1` or `beta = 6` as a physical
+value. After the 2026-06-20 narrowing below, that packet is not load-bearing
+for this row's current claim.
 
 ## 2026-06-20 Narrowing (abstract joint-rescaling algebra)
 

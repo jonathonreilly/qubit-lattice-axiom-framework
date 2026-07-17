@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-18; algebra/convention split completed 2026-07-11.
 **Claim type:** bounded_theorem
-**Audit status:** set only by the independent audit lane. This source note
+**Status authority:** independent audit lane only. This source note
 does not set, predict, or apply an audit verdict.
 **Primary runner:**
 [`scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py`](../scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py)
@@ -21,12 +21,18 @@ contains only the following algebraic ingredients:
   canonical finite-link coordinates this is the `s = 1` slot
   (`g_link^2 = 1`).
 - [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-  (theorem, cited at its audited scope) supplies the Wilson coefficient
-  identity inside the supplied standard Wilson plaquette action:
+  supplies only the defined matrix-trace Taylor coefficient and formal
+  coefficient identity:
 
 ```text
-beta g_bare^2 = 2 N_c.
+beta g^2 = 2 n.
 ```
+
+  It does not supply a Wilson action or physical coefficient dictionary. In
+  this note, the identification `(n,g)=(N_c,g_bare)` and the interpretation
+  of its two formal coefficients as Wilson/target coefficients are a named
+  explicit non-satisfying condition `W-PHYS`, not a conclusion of the cited
+  theorem and not a chain-satisfying premise.
 
 - Theorems 1–3 below prove the plaquette exponent construction, the exact
   split redundancy, and the pin equivalence
@@ -58,11 +64,13 @@ Setup (supplied surfaces, cited at audited scope):
    `U = exp(i s C^a T_a a)` with `s != 1` changes the link; it is not a
    redundancy of the data.
 
-2. Standard Wilson plaquette surface (Wilson small-a note): `beta > 0` and action
+2. Standard Wilson plaquette surface plus `W-PHYS` (explicit conditions, not
+   derived or chain-satisfying): `beta > 0` and action
    `S_W = beta sum (1 - (1/N_c) Re Tr U_P)` with canonical trace
    normalization, and the small-a matching demand that the matched gauge
    field carry the continuum kinetic normalization
-   `(1/4) F^a_{mu nu} F^a_{mu nu}`. Inside that surface,
+   `(1/4) F^a_{mu nu} F^a_{mu nu}`. `W-PHYS` maps the cited theorem's formal
+   coefficient equality onto this surface, yielding the conditional relation
    `beta g_bare^2 = 2 N_c`.
 
 **Audited claim-surface statement.**
@@ -103,8 +111,8 @@ identification convention. (Contrast with Setup item 1: the dilation
 rigidity theorem removes the first freedom. The second remains outside this
 theorem.)
 
-**Theorem 3 (positive matched-slot family and pin equivalence).** The Wilson
-matching demand applied at action parameter `beta` to the constructed
+**Theorem 3 (positive matched-slot family and pin equivalence, conditional on
+`W-PHYS`).** The explicit Wilson matching condition applied at action parameter `beta` to the constructed
 plaquette action determines the squared matched scalar. For `beta > 0`,
 define `gamma*(beta)` to be the positive square root, so
 
@@ -156,7 +164,8 @@ Since every constructed object is invariant under the split
 reparametrization, no functional of the constructed data separates
 `(gamma, C/gamma)` from `(1, C)`.
 
-**Theorem 3.** By Theorem 1 and the canonical trace normalization, the
+**Theorem 3.** By Theorem 1, the canonical trace normalization, and the
+explicit `W-PHYS` coefficient dictionary, the
 constructed per-plaquette action is
 
 ```text
@@ -169,7 +178,9 @@ For a candidate split `A = C/gamma` the same value reads
 Theorem 2's identity componentwise, `F^a[C] = gamma F^a[A]`). The Wilson
 note's matching demand fixes the coefficient per unordered plaquette
 plane at `1/2`, i.e. `beta gamma*^2 / (4 N_c) = 1/2`, hence
-`gamma*(beta)^2 = 2 N_c / beta`. On the declared Wilson domain
+`gamma*(beta)^2 = 2 N_c / beta`. The matrix-trace theorem supplies only the
+formal equality used in this algebra; `W-PHYS` supplies its physical reading.
+On the declared Wilson domain
 `beta > 0`, the positive-root definition gives
 `gamma*(beta)=+sqrt(2 N_c/beta)>0`. Because the constructed
 link-canonical slot is `s = 1 > 0`, equality of the squares is equivalent
@@ -200,6 +211,8 @@ This note does not claim:
 
 - that the Wilson field coordinate and finite-link canonical coordinate
   occupy the same scalar slot; that convention is outside this theorem;
+- the `W-PHYS` dictionary from the defined matrix coefficients to a Wilson
+  action and target kinetic coefficient;
 - Wilson plaquette action-surface selection from framework axioms;
 - exclusion of improved or non-Wilson gauge actions;
 - a continuum running-coupling value;
@@ -223,7 +236,8 @@ the named open target. This dated line itself moves the note hash so the row
 re-enters for re-audit.
 
 The bounded theorem surface internal to the finite-link canonical Wilson
-surface is exactly Theorems 1–3 plus the mismatched-slot exhibit.
+surface is exactly Theorems 1–3 plus the mismatched-slot exhibit, with Theorem
+3 explicitly conditional on `W-PHYS`.
 
 ## Falsifiers
 
@@ -255,7 +269,7 @@ python3 scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
 Expected after the 2026-07-11 algebra/convention split:
 
 ```text
-TOTAL: PASS=102 FAIL=0
+TOTAL: PASS=103 FAIL=0
 ```
 
 ## Repair Note

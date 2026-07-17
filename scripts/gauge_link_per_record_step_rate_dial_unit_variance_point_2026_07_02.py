@@ -26,12 +26,13 @@ Checked content (all constructed, nothing assigned):
       (breaks the covariant-channel premise — the premise that fails is
       named, and it is not the rate); a metric dilation changes the fixed
       trace form (the freedom rigidity removes — also not the rate).
-  R3  variance law and the unit point: the per-direction second moment
+  R3  variance law and the formal leading-map unit point: the per-direction second moment
       per step is 2 tau (Gaussian generator identity + constructed Wilson
       second moments -> 8 tau_eff over dim = 8); hence tau = 1/2 is
-      exactly the unit-variance-per-step setting, and via tau = N_c/beta
-      it is exactly beta = 2 N_c = 6 — the same-slot/(SD) point of the
-      g_bare chain. Exact rational layer for the equivalences and the
+      exactly the unit-variance-per-step setting. Under the defined leading
+      map tau_lead=N_c/beta it corresponds to beta = 2 N_c = 6. The stable-path matrix theorem
+      supplies only a formal coefficient identity; no magnetic/physical
+      g_bare dictionary is inferred. Exact rational layer for the equivalences and the
       mismatched family (tau = 1/8 <-> beta = 24, per-direction moment
       1/4; tau = 3 <-> beta = 1, moment 6).
 
@@ -212,7 +213,7 @@ def section_A(T1, T2) -> None:
 # ---------------------------------------------------------------------------
 
 def section_B(T1, T2) -> None:
-    print("\nSECTION B: Lemma R0 — Wilson kernel in-class, rate tau_eff = N_c/beta")
+    print("\nSECTION B: Lemma R0 — Wilson kernel in-class, leading rate tau_lead = N_c/beta")
     print("-" * 78)
     check(
         "Wilson kernel character coefficients positive at beta in {6,12,24,48,96}",
@@ -414,7 +415,7 @@ def section_E(T1, T2) -> None:
 # ---------------------------------------------------------------------------
 
 def section_F() -> None:
-    print("\nSECTION F: exact layer — unit-variance point = the (SD)/beta=6 point")
+    print("\nSECTION F: exact formal layer — unit variance and the leading beta map")
     print("-" * 78)
     n_c = Fraction(3)
 
@@ -427,11 +428,11 @@ def section_F() -> None:
     check("tau = 1/2 gives per-direction moment 1 (unit variance per step)", per_direction_moment(Fraction(1, 2)) == 1)
     check("tau = 1/2 maps to beta = N_c / tau = 6", beta_of(Fraction(1, 2)) == 6)
     check(
-        "consistency with the magnetic identity: g^2(beta(tau)) = 2 N_c / beta = 2 tau",
+        "consistency with the formal identity: g_formal^2(beta(tau)) = 2 N_c / beta = 2 tau",
         all(2 * n_c / beta_of(t) == 2 * t for t in (Fraction(1, 8), Fraction(1, 2), Fraction(3))),
     )
     check(
-        "coincidence at tau = 1/2: g^2 = 1 = s^2 (the same-slot point)",
+        "formal coincidence at tau = 1/2: g_formal^2 = 1",
         2 * n_c / beta_of(Fraction(1, 2)) == 1,
     )
     check(
@@ -481,7 +482,8 @@ def section_G() -> None:
     require_contains("note", note_flat, "rate-blind")
     require_contains("note", note_flat, "complete surviving invariant")
     require_contains("note", note_flat, "unit-variance")
-    require_contains("note", note_flat, "distinguished setting")
+    require_contains("note", note_flat, "tau_lead(beta):=N_c/beta")
+    require_contains("note", note_flat, "distinguished heat-kernel setting")
     require_contains("note", note_flat, "zero dimensionless content")
     require_contains("note", note_flat, "not a citation-graph dependency")
     require_contains("note", note_flat, "does not claim:")
@@ -491,7 +493,8 @@ def section_G() -> None:
 
     require_contains("rigidity", rigidity_flat, "no independent scalar-normalization freedom")
     require_contains("rigidity", rigidity_flat, "Tr(T_a T_b) = delta_ab / 2")
-    require_contains("Wilson", wilson_text, "beta * g_bare^2 = 2 N_c")
+    require_contains("Wilson", wilson_text, "beta g^2 = 2n")
+    require_contains("Wilson", wilson_text, "authority for an action surface")
     require_contains("RP bridge", rp_flat, "temporal gauge")
     require_contains("RP bridge", rp_flat, "plane positive kernel")
     require_contains(

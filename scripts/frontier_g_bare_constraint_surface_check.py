@@ -8,7 +8,8 @@ frontier_g_bare_derivation.py runner used by retained upstream rows. It checks
 only the repaired constraint-vs-convention surface:
 
   CN: canonical trace normalization.
-  WM: Wilson small-a matching relation beta = 2 N_c / g_bare^2.
+  FM: formal coefficient relation beta = 2 N_c / g_bare^2 after the
+      explicit symbolic naming (n,g)=(N_c,g_bare).
   B6: explicit local Wilson surface N_c = 3, beta = 2 N_c = 6.
 
 It does not derive beta = 6 from the one-qubit operator algebra plus the
@@ -27,7 +28,7 @@ PASS = 0
 FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md"
-WM_NOTE = ROOT / "docs" / "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md"
+FORMAL_NOTE = ROOT / "docs" / "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md"
 
 
 def check(name: str, cond: bool, detail: str = "") -> bool:
@@ -51,6 +52,7 @@ def main() -> int:
     boundary_markers = [
         "conditional-support / bounded algebraic surface only",
         "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md",
+        "This is not a physical Wilson matching statement",
         "the local Wilson coefficient surface `beta = 6` at `N_c = 3`",
         "It may not cite this row as a retained derivation of the Wilson action form",
         "conditional on that beta input",
@@ -60,15 +62,17 @@ def main() -> int:
             f"source boundary marker present: {marker[:54]}",
             marker in normalized_note,
         )
-    wm_text = WM_NOTE.read_text(encoding="utf-8")
-    wm_flat = " ".join(wm_text.split())
+    formal_text = FORMAL_NOTE.read_text(encoding="utf-8")
+    formal_flat = " ".join(formal_text.split())
     check(
-        "Wilson small-a theorem contains beta = 2 N_c / g_bare^2",
-        "beta = 2 N_c / g_bare^2" in wm_text,
+        "formal theorem contains beta=2n/g^2 coefficient equivalence",
+        "beta = 2n/g^2" in formal_text
+        and "C_left = C_right" in formal_text,
     )
     check(
-        "Wilson small-a theorem keeps action-surface selection outside scope",
-        "does not derive that the framework must select the Wilson action surface" in wm_flat,
+        "formal theorem forbids physical action/coupling inference",
+        "They may not cite it as authority for an action surface" in formal_flat
+        and "a physical meaning or value for `beta` or `g`" in formal_flat,
     )
 
     N_c = Fraction(3)
@@ -81,7 +85,7 @@ def main() -> int:
 
     g_bare_sq = Fraction(2) * N_c / beta_local
     check(
-        "given CN + scoped WM + local beta = 6, g_bare^2 = 1 (exact)",
+        "given CN + formal FM + local beta = 6, g_bare^2 = 1 (exact)",
         g_bare_sq == Fraction(1),
         f"g_bare^2 = 2 N_c / beta = {g_bare_sq}",
     )
@@ -95,8 +99,9 @@ def main() -> int:
         )
 
     print(
-        "INFO scoped inputs: CN and WM are sourced by cited bounded surfaces; "
-        "beta=6 remains the explicit local input. Dependency closure is owned "
+        "INFO scoped inputs: CN and the formal relation FM are sourced by "
+        "cited algebraic surfaces; beta=6 remains the explicit local input. "
+        "No physical Wilson dictionary is inferred. Dependency closure is owned "
         "by the audit pipeline. The source firewall forbids treating this row "
         "as a beta=6 derivation."
     )

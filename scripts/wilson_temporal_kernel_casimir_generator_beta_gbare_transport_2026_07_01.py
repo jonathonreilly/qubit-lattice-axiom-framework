@@ -18,10 +18,10 @@ Checked content (all constructed, nothing assigned):
       generator basis carries (anchored here by sum_a T_a T_a = (4/3) I_3
       at the fundamental). Mechanism companions: U(1) with kernel
       e^{beta cos}: 2 beta eps_n -> n^2; SU(2): beta eps_j / 2 -> j(j+1).
-  K3  dial transport: defining the conjugate-slot coupling by
+  K3  kernel coefficient: defining the conjugate-slot label by
       eps_R = (g_E^2 / 2) C_2(R) (1 + O(1/beta)), the constructed values
-      satisfy beta * g_E^2 -> 2 N_c — the same identity the magnetic-side
-      small-a matching carries, now read on the kernel/generator side.
+      satisfy beta * g_E^2 -> 2 N_c. The stable-path matrix theorem has the
+      same formal algebraic shape but supplies no magnetic-side dictionary.
       The generator is a function of C_2 alone at leading order
       (R-independence of the extracted dial).
   K4  normalization-point coincidence (exact rational layer): the leading
@@ -30,8 +30,8 @@ Checked content (all constructed, nothing assigned):
       unit-coefficient canonical kinetic form (1/2) C_2(R); at beta = 24
       the leading generator is (1/8) C_2(R) (coefficient 1/4 != 1) on the
       same construction — the mismatched reading, exhibited not assigned.
-      This packet does NOT derive beta = 2 N_c; it proves the coincidence
-      structure of the single transported dial.
+      This packet does NOT select beta = 2 N_c or identify its kernel label
+      with a magnetic or physical coupling.
 """
 
 from __future__ import annotations
@@ -367,16 +367,13 @@ def section_G() -> None:
         "coincidence backward: g_lead^2 = 1 gives beta = 2 N_c = 6",
         two_n_c / Fraction(1) == Fraction(6),
     )
-    # The three canonical normalizations meet at the single point beta = 2 N_c:
-    # coordinate slot s^2 = 1 (rigidity surface), magnetic slot g^2 = 2 N_c/beta
-    # (retained small-a matching), kernel/generator slot g_E,lead^2 = 2 N_c/beta
-    # (this packet). Their equality at beta = 6 is exact.
-    s_sq = Fraction(1)
-    g_mag_sq_at_6 = two_n_c / Fraction(6)
+    # The kernel label and the separately defined formal coefficient label
+    # have the same value at beta=2n. No physical dictionary is inferred.
+    g_formal_sq_at_6 = two_n_c / Fraction(6)
     g_ker_sq_at_6 = g_lead_sq(Fraction(6))
     check(
-        "three-normalization coincidence at beta=6: s^2 = g_mag^2 = g_E,lead^2 = 1",
-        s_sq == g_mag_sq_at_6 == g_ker_sq_at_6 == 1,
+        "kernel/formal-label coincidence at beta=6 is exact",
+        g_formal_sq_at_6 == g_ker_sq_at_6 == 1,
     )
 
 
@@ -407,7 +404,7 @@ def section_H() -> None:
     require_contains("note", note_flat, "does not derive `beta = 2 N_c`")
     require_contains("note", note_flat, "unit-coefficient")
     require_contains("note", note_flat, "half-trace")
-    require_contains("note", note_flat, "one dial")
+    require_contains("note", note_flat, "formal algebraic comparison")
     require_contains("note", note_flat, "does not claim:")
     require_contains("note", note_flat, "Wilson plaquette action-surface selection")
     require_contains("note", note_flat, "an audit verdict or any effective-status promotion")
@@ -418,11 +415,11 @@ def section_H() -> None:
 
     require_contains("rigidity", rigidity_flat, "no independent scalar-normalization freedom")
     require_contains("rigidity", rigidity_flat, "Tr(T_a T_b) = delta_ab / 2")
-    require_contains("Wilson", wilson_text, "beta * g_bare^2 = 2 N_c")
+    require_contains("Wilson", wilson_text, "beta g^2 = 2n")
     require_contains(
         "Wilson",
         flat(wilson_text),
-        "does not derive that the framework must select the Wilson action surface",
+        "They may not cite it as authority for an action surface",
     )
     require_contains("RP bridge", rp_flat, "temporal gauge")
     require_contains("RP bridge", rp_flat, "plane positive kernel")

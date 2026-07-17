@@ -22,8 +22,8 @@ are **not a citation-graph dependency** of this note.
 The question this note answers: within the bi-invariant diffusive class,
 what does the dynamics lane do to the per-step **rate** — the one
 dimensionless parameter the class carries, whose value `tau = 1/2` per
-step is (via `tau = N_c / beta`, re-derived in-packet) exactly the
-`beta = 2 N_c` normalization point of the `g_bare` chain?
+step coincides, under the explicitly defined leading map
+`tau_lead(beta)=N_c/beta`, with the formal point `beta = 2 N_c`?
 
 Answer, proved below: composition conserves the rate exactly; the rate is
 the **complete surviving invariant** of step composition (two different
@@ -33,8 +33,8 @@ every named structural premise of the lane is **rate-blind**; the rate is
 dimensionless, so the approved scale-reference primitive — which by its
 own declaration carries "zero dimensionless content" — does not cover it;
 and `tau = 1/2` is located exactly as the **unit-variance-per-step
-setting**, the distinguished setting of the dial at which the `g_bare`
-chain's normalizations coincide. The rate is exhibited as a
+setting**, the distinguished heat-kernel setting where the formal coefficient
+label and leading Wilson-kernel label both equal one. The rate is exhibited as a
 registered-dial-shaped residual: this note does not derive `tau = 1/2`,
 and forcing a dial value would be overreach; locating it sharply is the
 theorem content.
@@ -47,8 +47,9 @@ theorem content.
    normalization used throughout are this fixed form's (no scalar
    freedom, so the rate cannot be absorbed into a metric rescale).
 2. [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-   — the supplied standard Wilson surface and its magnetic-side identity
-   `beta g_bare^2 = 2 N_c`, used in the exact coincidence layer.
+   — the defined matrix-trace Taylor coefficient and formal identity
+   `beta g^2 = 2n`, used only as algebra in the exact coincidence layer. It
+   supplies no magnetic-side or Wilson dictionary.
 3. [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
    — the temporal-gauge per-link plane kernel of the supplied Wilson
    surface, the concrete in-class member used by Lemma R0.
@@ -83,7 +84,7 @@ is a sharp dimensionless number, not a units artifact.
 
 ## Claim
 
-**Lemma R0 (the supplied surface's member and its rate).** The supplied
+**Lemma R0 (the supplied temporal surface's member and its rate).** The supplied
 Wilson temporal-gauge per-link kernel `exp((beta/N_c) Re Tr M)` lies in
 the class, with per-step rate
 
@@ -91,9 +92,10 @@ the class, with per-step rate
 tau_eff(beta) = (N_c / beta) (1 + O(1/beta)),
 ```
 
-constructed from its character data (Richardson-verified). The map
-`tau = N_c / beta` is used by the exact layer below; nothing is imported
-from the transport row.
+constructed from its character data (Richardson-verified). Define the leading
+map `tau_lead(beta):=N_c/beta`. The exact arithmetic layer below concerns this
+defined leading map, not an exact finite-`beta` equality
+`tau_eff=tau_lead`; nothing is imported from the transport row.
 
 **Theorem R1 (the rate is the complete surviving invariant).**
 (i) Composition adds rates exactly: `w_R(tau_1) w_R(tau_2) =
@@ -118,23 +120,29 @@ covariant-channel premise (non-scalar fundamental Fourier block); a
 metric dilation changes the fixed trace form (the freedom the rigidity
 theorem removes).
 
-**Theorem R3 (variance law and the unit point).** The per-direction
+**Theorem R3 (variance law and the formal unit point).** The per-direction
 second moment per step is `2 tau` (Gaussian generator identity; and the
 constructed Wilson member's second moment satisfies
 `<sum_j theta_j^2> -> 8 tau_eff` over `dim su(3) = 8` directions,
-Richardson-verified). Hence, exactly:
+Richardson-verified). Hence the heat-kernel identity is exact, and the
+leading-map comparison is exact algebra:
 
 ```text
 tau = 1/2
-  <=>  per-direction second moment per record step = 1   (unit variance)
-  <=>  beta = N_c / tau = 2 N_c = 6                       (via R0)
-  <=>  g^2 = 2 N_c / beta = 1 = s^2                       (the same-slot point).
+  <=>  per-direction second moment per record step = 1.  (unit variance)
+
+tau_lead(beta) := N_c / beta,
+tau_lead(beta) = 1/2
+  <=>  beta = 2 N_c = 6
+  <=>  g_formal^2 = 2 N_c / beta = 1.                    (defined coefficient label)
 ```
 
-The mismatched family on the same construction: `tau = 1/8 <=> beta = 24`
-with per-direction moment `1/4`; `tau = 3 <=> beta = 1` with moment `6`.
-The coincidence holds at the unit-variance setting and fails everywhere
-else.
+The mismatched leading-map family: `tau_lead = 1/8 <=> beta = 24`
+with formal per-direction moment `1/4`; `tau_lead = 3 <=> beta = 1` with
+formal moment `6`.
+The formal coincidence holds at the unit-variance setting and fails everywhere
+else. Identifying `g_formal` with a magnetic or physical coupling is outside
+this theorem.
 
 **Coverage verdict (scale-reference primitive).** The rate is
 dimensionless. The approved scale-reference primitive declares, in its own
@@ -144,10 +152,9 @@ is supplied by it." Therefore the primitive does **not** cover the rate:
 `tau` is not a units conversion, and identifying `tau = 1/2` is not
 discharged by the approved dimensionful reference. The rate is a genuine
 dimensionless residual of the dynamics lane — a dial with `tau = 1/2` as
-its distinguished setting (unit variance per record step; the point where
-the `g_bare` chain's coordinate, magnetic, and kernel normalizations
-coincide), registered by the parent surface's declaration rather than
-forced by the lane's premises.
+its distinguished heat-kernel setting (unit variance per record step). The
+formal and leading-kernel labels coincide there; no coordinate, magnetic, or
+physical-coupling identification is inferred or forced by the lane's premises.
 
 ## Proof
 
@@ -181,16 +188,17 @@ witnesses fail the named non-rate premises as stated.
 **R3.** The Gaussian identity `<x^2> = 2 tau` per direction is exact for
 the generator model; the group-level statement is verified on the
 constructed Wilson member: `<sum theta_j^2> / (8 tau_eff) -> 1`
-(Richardson), i.e. `8` directions at `2 tau` each. The equivalences in
-the display are exact rational arithmetic given R0's map, and the
-`g^2 = 2 tau` consistency line is the cited magnetic identity
-`beta g_bare^2 = 2 N_c` evaluated on `beta = N_c / tau`.
+(Richardson), i.e. `8` directions at `2 tau` each. The leading-map equivalences
+in the display are exact rational arithmetic by definition of `tau_lead`, and the
+`g^2 = 2 tau` consistency line is the cited formal identity
+`beta g^2 = 2n` evaluated under the explicit symbolic naming `n=N_c` and
+`beta=N_c/tau`. No physical coupling dictionary is used.
 
 ## Boundary
 
 This note does not claim:
 
-- a derivation of `tau = 1/2`, of `beta = 2 N_c`, of `g_bare = 1`, or of
+- a derivation of `tau = 1/2`, of `beta = 2 N_c`, of a physical `g_bare = 1`, or of
   the beta=6 bridge row's declared surface definition — the unit-variance
   point is located, not forced; forcing a dial value is overreach;
 - existence of the per-step link dynamics — the retained record/semigroup
@@ -205,6 +213,8 @@ This note does not claim:
 - coverage of the rate by the scale-reference primitive — the opposite is
   proved from the primitive's own quoted text;
 - Wilson plaquette action-surface selection from framework axioms;
+- a dictionary identifying the formal `g` of the matrix coefficient theorem
+  with a Wilson magnetic or physical coupling;
 - a continuum Hamiltonian, spectral gap, or continuum-limit existence;
 - a continuum running-coupling value or phenomenological coupling;
 - an audit verdict or any effective-status promotion.
@@ -225,8 +235,8 @@ remaining derivation surface of this program; it is outside this row.
 
 The packet would fail if any of the following were true:
 
-- the supplied Wilson member's constructed rate deviated from
-  `tau_eff = N_c / beta` (R0);
+- the supplied Wilson member's constructed rate failed the asymptotic law
+  `tau_eff/(N_c/beta) -> 1` (R0);
 - composition failed to add rates exactly, or the cross-kernel collapse
   failed (deviations not shrinking, or a single calibrated rate failing
   to predict the other blocks) — the rate would then not be the complete
@@ -253,5 +263,5 @@ python3 scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07
 Expected:
 
 ```text
-TOTAL: PASS=74 FAIL=0
+TOTAL: PASS=76 FAIL=0
 ```

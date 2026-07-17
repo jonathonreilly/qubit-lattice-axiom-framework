@@ -1,9 +1,7 @@
-# Wilson Small-a Matching for beta and g_bare
+# Defined Matrix-Trace Taylor and Formal Coefficient-Matching Theorem
 
-**Date:** 2026-06-07
-**Claim type:** bounded_theorem
-**Type:** exact-support source theorem under the supplied standard Wilson
-plaquette action surface
+**Date:** 2026-06-07. Dependency-free scope repair: 2026-07-16.
+**Claim type:** positive_theorem
 **Status authority:** independent audit lane only. This source note does not
 set, predict, or apply an audit verdict.
 **Primary runner:**
@@ -11,167 +9,178 @@ set, predict, or apply an audit verdict.
 **Cached log:**
 [`logs/runner-cache/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.txt`](../logs/runner-cache/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.txt)
 
-```yaml
-actual_current_surface_status: exact-support
-trace_class: direct_blocker_closure
-target_claim_id: beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08
-target_blocker_text: "derive or register retained-grade authority for the Wilson action-surface matching premise WM"
-source_of_blocker_text: audit_ledger
-reachability_to_target: closes
-artifact_role: theorem
-conditional_surface_status: "WM is exact inside the supplied standard Wilson plaquette action with canonical trace normalization; selection of that action surface remains outside this note."
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: true_for_exact_support_only
-proposal_allowed_reason: "This note derives only the coefficient matching inside a supplied Wilson action form; it does not derive action-surface selection or g_bare=1."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
+## Purpose and repair
 
-## Purpose
+The earlier version started from a supplied action, a supplied exponential
+dictionary, and a supplied continuum coefficient. Its algebra was correct
+inside that packet, but those inputs were not derived by the note. This repair
+removes every physical identification from the theorem. The stable filename is
+kept so existing citations can be repaired without changing claim identity.
 
-The row
-`BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md`
-was audited conditional because its arithmetic assumed the Wilson
-action-surface matching premise
+The result below is an ordinary finite-dimensional matrix theorem. The symbols
+`beta` and `g` are formal positive real parameters. They are not a lattice
+action coefficient or a physical coupling unless a separate authority proves
+such a dictionary.
 
-```text
-WM: beta = 2 N_c / g_bare^2.
-```
+## Definitions
 
-This note supplies the missing coefficient-matching theorem. It proves `WM`
-from the supplied standard Wilson plaquette action form and canonical
-`su(N_c)` trace normalization. It does not derive that the framework must
-select the Wilson action surface, and it does not derive a physical value of
-`g_bare`.
-
-## Claim
-
-Let `T_a` be Hermitian `su(N_c)` generators with
+Let `n >= 2` and let `T_1,...,T_m` be Hermitian traceless matrices in
+`M_n(C)` satisfying the explicitly supplied algebraic hypotheses
 
 ```text
 Tr(T_a T_b) = delta_ab / 2.
 ```
 
-Let the plaquette be represented in the standard small-lattice-spacing form
+For real coefficients `f_a`, set
 
 ```text
-U_P = exp(i a^2 g_bare F^a_{mu nu} T_a + O(a^3)).
+A = sum_a f_a T_a,
+F2 = sum_a f_a^2,
+D(x) = 1 - (1/n) Re Tr exp(i x A),          x real.
 ```
 
-Use the standard Wilson plaquette action
+For formal parameters `beta > 0` and `g > 0`, define two scalar coefficients
 
 ```text
-S_W = beta sum_{x, mu<nu} (1 - (1/N_c) Re Tr U_{mu nu}(x)).
+C_left(beta,g,n) = beta g^2 / (4 n),
+C_right           = 1/2.
 ```
 
-Then its leading small-`a` continuum term is
+These definitions are all the data used by the theorem. In particular, the
+labels do not carry an action, plaquette, continuum, gauge-field, or coupling
+interpretation.
 
-```text
-S_W = [beta g_bare^2 / (4 N_c)]
-      sum_{x, mu<nu} a^4 F^a_{mu nu}(x) F^a_{mu nu}(x) + higher order.
-```
+## Theorem
 
-The continuum Yang-Mills kinetic term is
+Under the definitions above:
 
-```text
-S_YM = (1/4) int d^4x F^a_{mu nu} F^a_{mu nu}
-     = (1/2) int d^4x sum_{mu<nu} F^a_{mu nu} F^a_{mu nu}.
-```
+1. `D(0) = 0` and `D'(0) = 0`.
+2. `D''(0) = Tr(A^2)/n = F2/(2n)`.
+3. The even Taylor coefficient is therefore
 
-Matching the coefficient of each unordered plaquette plane gives
+   ```text
+   [x^2] D(x) = D''(0)/2 = F2/(4n).
+   ```
 
-```text
-beta g_bare^2 / (4 N_c) = 1/2,
-```
+4. For every real `x`, the second-order remainder obeys
 
-hence
+   ```text
+   |D(x) - x^2 Tr(A^2)/(2n)|
+       <= |x|^4 Tr(A^4)/(24n).
+   ```
 
-```text
-beta = 2 N_c / g_bare^2
-```
+5. Consequently the coefficient of `x^2 F2` in the **defined** expression
+   `beta D(gx)` is `C_left = beta g^2/(4n)`. Equality with the separately
+   **defined** coefficient `C_right = 1/2` holds exactly when
 
-and equivalently
+   ```text
+   C_left = C_right
+       <=> beta g^2/(4n) = 1/2
+       <=> beta g^2 = 2n
+       <=> beta = 2n/g^2.
+   ```
 
-```text
-beta * g_bare^2 = 2 N_c.
-```
-
-For `N_c = 3` and `g_bare^2 = 1`, this gives `beta = 6`.
+This last line is a formal coefficient equivalence between two defined
+quadratic expressions. It is not a derivation of a physical normalization.
 
 ## Proof
 
-Set
+Because `A` is Hermitian, the spectral theorem gives real eigenvalues
+`lambda_1,...,lambda_n` and
 
 ```text
-X = a^2 g_bare F^a_{mu nu} T_a.
+D(x) = (1/n) sum_j (1 - cos(x lambda_j)).
 ```
 
-Since the generators are traceless, `Tr X = 0`. The second-order expansion is
+Differentiating this finite sum gives `D(0)=D'(0)=0` and
 
 ```text
-Re Tr exp(iX) = N_c - (1/2) Tr(X^2) + O(X^3).
+D''(0) = (1/n) sum_j lambda_j^2 = Tr(A^2)/n.
 ```
 
-The trace normalization gives
+The supplied Gram relation gives
 
 ```text
-Tr(X^2)
-  = a^4 g_bare^2 F^a F^b Tr(T_a T_b)
-  = (a^4 g_bare^2 / 2) F^a F^a.
+Tr(A^2)
+  = sum_ab f_a f_b Tr(T_a T_b)
+  = (1/2) sum_a f_a^2
+  = F2/2,
 ```
 
-Therefore
+which proves items 1--3. Taylor's theorem for the real scalar function
+`1-cos y` has fourth derivative `-cos y`, whose absolute value is at most
+one. Thus
 
 ```text
-1 - (1/N_c) Re Tr U_P
-  = a^4 g_bare^2 F^a F^a / (4 N_c) + higher order.
+|1 - cos y - y^2/2| <= |y|^4/24.
 ```
 
-Multiplying by `beta` and summing over unordered plaquette planes gives the
-coefficient `beta g_bare^2/(4N_c)` in front of
-`sum_{mu<nu} F^a_{mu nu}F^a_{mu nu}`. The continuum action
-`(1/4) F^a_{mu nu}F^a_{mu nu}` counts both `(mu,nu)` and `(nu,mu)`, so over
-unordered planes the coefficient is `1/2`. Equating the coefficients gives
-`beta = 2N_c/g_bare^2`.
+Apply this inequality to every `y=x lambda_j`, sum, divide by `n`, and use
+`sum_j lambda_j^4 = Tr(A^4)` to obtain item 4. Substituting `gx` for `x`
+and multiplying by `beta` gives item 5 by exact scalar algebra.
 
-## Boundary
+### Tracelessness and the linear term
 
-This note does not claim:
+The real-part deficit has `D'(0)=0` for **every Hermitian** `A`, even if
+`Tr(A) != 0`, because `Re(i Tr A)=0`. Tracelessness instead removes the
+linear term of the complex deficit
 
-- Wilson plaquette action-surface selection from the four framework axioms
-  (Lattice, Qubit, Admissibility, Record);
-- exclusion of Symanzik, heat-kernel, Manton, tadpole-improved, or other
-  action surfaces;
-- a physical value for `g_bare`;
-- `g_bare = 1`;
-- `beta = 6` unless the additional supplied specialization
-  `N_c = 3`, `g_bare^2 = 1` is also supplied;
-- a continuum-limit existence theorem beyond this coefficient matching;
-- an audit verdict or direct status promotion for any row.
+```text
+Z(x) = 1 - (1/n) Tr exp(i x A),
+Z'(0) = -(i/n) Tr(A).
+```
 
-The theorem is exactly the small-`a` coefficient matching inside the supplied
-standard Wilson plaquette action with canonical generator trace normalization.
+The runner tests this distinction explicitly. It rejects a nontraceless
+fixture because it violates the theorem hypotheses and produces a nonzero
+complex linear term; it does not falsely claim that nontracelessness makes
+`D'(0)` nonzero.
 
-## Downstream Use
+## Independent executable routes
 
-If independently retained, this row supplies a one-hop source authority for
-the `WM` premise in
-`BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md`.
-That downstream row's rescaling product identity remains ordinary algebra.
-Any broader physical claim still needs its own action-surface and
-normalization authorities.
+The runner provides four selectable modes:
+
+- `normal`: exact Gram-contraction and matrix-derivative checks;
+- `independent`: a separate spectral/power-series reconstruction;
+- `hostile`: mutations of the hypotheses, derivative normalization, and
+  formal coefficient equation, plus a physical-inference firewall;
+- `intentional-failure`: promotes one rejected hostile mutation to a primary
+  assertion and must exit nonzero.
+
+The hostile set covers wrong trace normalization, a nontraceless complex
+linear term, omission of `1/n`, confusion of `D''(0)` with its half-sized
+Taylor coefficient, replacement of `C_right=1/2` by `1/4`, the wrong product
+`beta g^2=n`, the wrong solve `beta=2n/g`, a false `1/48` fourth-order
+remainder constant, and an illicit physical interpretation. The independent
+route also checks a complex off-diagonal `n=4` basis, while the normal route
+checks the zero-matrix edge case and the exact fourth-derivative mechanism.
+
+## Boundary and downstream citation rule
+
+This theorem does **not** derive or select:
+
+- a Wilson or any other lattice action;
+- a plaquette/exponential dictionary for a gauge field;
+- a Yang--Mills or other continuum coefficient;
+- a trace convention as a framework fact (the Gram relation is an explicit
+  finite-dimensional hypothesis here);
+- a physical meaning or value for `beta` or `g`;
+- a continuum limit, running coupling, observable, or comparator;
+- an audit verdict or effective-status promotion.
+
+Downstream notes may cite this row for the matrix Taylor identities and the
+formal equivalence `C_left=C_right <=> beta g^2=2n`. They may not cite it as
+authority for an action surface, a physical matching demand, a coupling
+dictionary, or a value such as a chosen normalization point. Any such bridge
+must be supplied and audited separately.
 
 ## Verification
 
-Run:
-
 ```text
-PYTHONPATH=scripts python3 scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py
+python3 scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py --mode normal
+python3 scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py --mode independent
+python3 scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py --mode hostile
 ```
 
-Expected:
-
-```text
-TOTAL: PASS=57 FAIL=0
-```
+Every hostile fixture may also be promoted with
+`--mode intentional-failure --inject-failure <fixture>`; each such run is
+expected to exit nonzero.

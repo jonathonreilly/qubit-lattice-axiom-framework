@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_2026_07_01.py
-runner_sha256: 341f2a783666f4d0dcb44e139f8306add54909fa85c535e40fb95d35a2baa2f8
+runner_sha256: fe772b17b937329fdf2502b31aeb66f21157a88c7a69cda8dc4f671c12874c76
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.56
+elapsed_sec: 1.64
 status: ok
 ----- stdout -----
 Wilson temporal-kernel Casimir generator / beta-g_bare dial transport check
@@ -79,7 +79,7 @@ SECTION G: exact leading-dial layer — coincidence at beta = 2 N_c
 [PASS] beta=12 != 2 N_c gives g_lead^2 = 1/2 != 1 (coincidence fails off the point)
 [PASS] coincidence forward: beta = 2 N_c gives g_lead^2 = 1
 [PASS] coincidence backward: g_lead^2 = 1 gives beta = 2 N_c = 6
-[PASS] three-normalization coincidence at beta=6: s^2 = g_mag^2 = g_E,lead^2 = 1
+[PASS] kernel/formal-label coincidence at beta=6 is exact
 
 SECTION H: source-boundary guards
 ------------------------------------------------------------------------------
@@ -91,7 +91,7 @@ SECTION H: source-boundary guards
 [PASS] note contains marker: does not derive `beta = 2 N_c`
 [PASS] note contains marker: unit-coefficient
 [PASS] note contains marker: half-trace
-[PASS] note contains marker: one dial
+[PASS] note contains marker: formal algebraic comparison
 [PASS] note contains marker: does not claim:
 [PASS] note contains marker: Wilson plaquette action-surface selection
 [PASS] note contains marker: an audit verdict or any effective-status promotion
@@ -101,8 +101,8 @@ SECTION H: source-boundary guards
 [PASS] note omits forbidden marker: **Audit status:**
 [PASS] rigidity contains marker: no independent scalar-normalization freedom
 [PASS] rigidity contains marker: Tr(T_a T_b) = delta_ab / 2
-[PASS] Wilson contains marker: beta * g_bare^2 = 2 N_c
-[PASS] Wilson contains marker: does not derive that the framework must select the Wilson action surface
+[PASS] Wilson contains marker: beta g^2 = 2n
+[PASS] Wilson contains marker: They may not cite it as authority for an action surface
 [PASS] RP bridge contains marker: temporal gauge
 [PASS] RP bridge contains marker: plane positive kernel
 

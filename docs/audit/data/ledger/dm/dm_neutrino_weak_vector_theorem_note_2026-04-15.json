@@ -5039,6 +5039,61 @@
         "total_pass": 18
       },
       "verdict_rationale": "The explicit matrices and runner substantively compute all 18 advertised algebraic checks, so the SU(2), vector, Casimir, orthogonality, and rescaling identities close without a hard-coded contested input or external comparator. However, the artifact also asserts a derived negative boundary with separate base-normalization and second-order-suppression walls: N1 supplies only the homogeneous-rescaling mechanism, N2 does not collapse those walls, N3 finds authenticated normalization, obstruction, and sector rhetoric, and N4 has no retained prior witness. N5 lacks live per-element, per-site, per-mode, per-block, and lattice-wide resolution checks; N6 is not exhaustively dispositioned, N7 lacks an independent steelman-resolution surface, and N8 is not completely dispositioned. Thus the exact algebraic theorem is supported, but the broader wall-cementing scope remains conditional."
+    },
+    {
+      "archived_at": "2026-07-17T21:28:52.202788+00:00",
+      "audit_date": "2026-07-17T21:28:42.330770+00:00",
+      "audit_invocation_history": [
+        "6e65c88090fc45d1a4ccf32d0d545143"
+      ],
+      "audit_invocation_id": "6e65c88090fc45d1a4ccf32d0d545143",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 10.716,
+        "runner_hash": "3da2fa02ce2b619ebf408dbfa0d1b4f9617d9c04fd313de2acc865d5bdf4d121",
+        "transitive_descendants": 840
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-9083e2ae578e46a6b508e00066215e59-dm_neutrino_weak_vector_-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The explicit matrices and runner close the SU(2) identities and demonstrate rescaling invariance of covariance. They do not audit the separate normalization input or establish that the downstream second-order suppression law is unfixed by every allowed physical supplier.",
+      "claim_scope": "The finite-matrix SU(2) vector identities and the claim that their homogeneity leaves the physical bridge coefficient and second-order suppression law unfixed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-17T21:28:42.330770+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For any scalar lambda, [B_a, lambda Y_b] = i eps_abc lambda Y_c, so weak-vector covariance is homogeneous and does not fix absolute normalization.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: split the audit scope so the clean row covers only the finite-matrix SU(2) identities and covariance rescaling; place the physical-coefficient and second-order non-closure claim in a separately evidenced negative-boundary row, and add a dated downstream-hygiene line to this note's own boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue (N1/N5/N7): covariance rescaling, Casimir, trace-norm, and C8/C16 carrier checks support the narrow homogeneity result, but stdout contains neither five distinct physical attack routes nor per-element, per-site, per-mode, per-block, and lattice-wide tests, and its strongest steelman resolves covariance only. Why this blocks (N2-N4): the single supported wall is that covariance does not fix absolute normalization; the normalization, obstruction, and sector phrases disclose scope rather than a hidden premise, and there is no one-hop residual witness, but none of this establishes the separate second-order-law boundary. Repair target (N6/N8): separate the clean finite-matrix theorem from the physical-coefficient and second-order boundary and provide a retained bridge or exhaustive negative packet; the indexed premises, open gates, reframes, and cross-cycle echoes do not independently certify that broader boundary. Claim boundary until fixed: the explicit matrices satisfy the stated SU(2), vector, Casimir, orthogonality, and rescaling identities, while the broader physical non-fixing claim remains conditional."
     }
   ],
   "prose_corrections": [],

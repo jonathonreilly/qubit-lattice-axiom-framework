@@ -178,6 +178,59 @@
         "total_pass": 7
       },
       "verdict_rationale": "The distinct-support enumeration is a genuine class-C finite computation, but its result does not establish the advertised full mixed-cumulant coefficient. For N1-N2, the distinct-support balance scan and tree leaf-peeling leave the separate repeated, leafless-support route untested, so their two mechanisms do not close the same residual. For N3-N5, the note's boundary and canonical language is mostly scope hygiene rather than a hidden premise, no prior residual witness is cited, and the negative vanishing statements lack live checks across the required five resolution classes. For N6-N8, the indexed premises, partial closures, and cross-cycle echoes do not repair this internal enumeration gap, while the strongest N7 steelman\u2014exhaustion after leaf peeling\u2014remains unresolved by the supplied runner."
+    },
+    {
+      "archived_at": "2026-07-17T22:26:17.910486+00:00",
+      "audit_date": "2026-07-17T22:26:08.202502+00:00",
+      "audit_invocation_history": [
+        "a6d6516aca87431e8725572b5e1d90cb"
+      ],
+      "audit_invocation_id": "a6d6516aca87431e8725572b5e1d90cb",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 16.115,
+        "runner_hash": "ee013ee9d87ca89cbda5fd6c7229d4d31cdb9c1eba027aeb7881f31f4d6a4fdc",
+        "transitive_descendants": 783
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-1f209712df2a46d0833260a3350ba53e-gauge_vacuum_plaquette_m-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner enumerates only distinct action-plaquette supports; it does not classify multisets containing repeated non-leaf plaquettes or copies of the observed plaquette. The leaf-factorization lemma eliminates tree-shaped distinct supports but does not establish that every omitted repeated support is a tree or has zero cumulant.",
+      "claim_scope": "Small-beta beta^5 coefficient of P_full-P_1plaq and the induced beta_eff coefficient on the stated Wilson surface.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-17T22:26:08.202502+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "After leaf peeling, the exhaustive local-support search leaves exactly four order-beta^5 cube shells, each contributing 1/18^5.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after enumerating every order-at-most-five plaquette multiset, including copies of the observed plaquette and repeated non-leaf faces, and after deriving the cube-shell Haar contraction independently.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The distinct-support enumeration is substantive, but it cannot establish the claimed full mixed-cumulant coefficient without an exhaustive argument for repeated non-tree supports. The per-shell routine also inserts the two-orientation and 3^(V-E) contraction factors rather than independently evaluating them, while the repeated-support support check is an unconditional True. Because the note asserts a derived negative boundary through beta^4, the discipline check is triggered: N1 lacks five distinct attack routes; N2 lacks independence checks; N3 lacks a hidden-premise scan; N4 lacks residual matching; N5 lacks five-resolution live tests; N6 leaves indexed candidates undispositioned; N7 lacks a resolved steelman; and N8 leaves cross-cycle echoes undispositioned."
     }
   ],
   "prose_corrections": [],

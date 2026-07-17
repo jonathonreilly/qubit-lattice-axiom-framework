@@ -2,7 +2,7 @@
 
 Date: 2026-07-16
 
-Status: campaign synthesis through source-grade Cycle 198; audit unset; no
+Status: campaign synthesis through source-grade Cycle 199; audit unset; no
 axiom edit proposed
 
 Authority: none
@@ -74,8 +74,9 @@ different permanent facts. The missing layer is now concrete: an exact
 physical process must define interventions, contact, and occurrence—not merely
 availability.
 
-Cycle 189 then supplies the first exact finite positive process witness across
-that seam. A preparation record and one of six context records control a
+Cycle 189 then supplies this campaign's first exact finite positive process
+witness across that seam. A preparation record and one of six context records
+control a
 two-qubit/two-pointer unitary before pointer and terminal records form. The
 model has exact identity containment, measure-and-forget, interference,
 normalized multi-time weights, contextual parity support, and complete
@@ -130,15 +131,16 @@ remaining execution seam is no longer “choose a context in Python.” It is a
 microscopic law that gives the selected `H0/H1`, `CX01`, and `CX10` tokens
 their coherent gate meanings on one encoded system and pointer.
 
-Cycle 196 supplies the first designed two-carrier payload interaction. One
-selected literal from each compact bundle exits through the typed Cycle-190
-fork; each input remains independently readable while the other branch from
-each writes one exact XOR record with ancestry from both inputs. All four
-values, 32 deletion controls, four flips, 20,640 rotated local formations, and
-96 rotated terminal corpora close with zero new rows or roles. This is a
-classical two-record interaction, not whole-object or quantum scattering: the
-two all-five membership trees are not parents of the joint record, and no
-phase, momentum, energy, force, or particle identity is represented.
+Cycle 196 supplies this campaign's first designed two-carrier payload
+interaction. One selected literal from each compact bundle exits through the
+typed Cycle-190 fork; each input remains independently readable while the
+other branch from each writes one exact XOR record with ancestry from both
+inputs. All four values, 32 deletion controls, four flips, 20,640 rotated
+local formations, and 96 rotated terminal corpora close with zero new rows or
+roles. This is a classical two-record interaction, not whole-object or quantum
+scattering: the two all-five membership trees are not parents of the joint
+record, and no phase, momentum, energy, force, or particle identity is
+represented.
 
 Cycle 197A diagnoses the apparent law-union collision between that interaction
 branch and the physical dispatcher. Their literal raw-table union has 1,032
@@ -178,6 +180,29 @@ This is simultaneous coexistence, not cross-lane physics. The open layer
 guarantees that no local signature contains records from both apparatuses.
 Quantum execution, matter-control interaction, and arbitrary many-apparatus
 composition remain open.
+
+Cycle 199 locates the exact boundary beyond that result. Closing the bounding
+slab gap at x-offset 132 still leaves the occupied supports four lattice
+steps apart. At offset 130, one open site first sees both apparatuses:
+`R_A13` at `-x` and `MARK` at `+x`. The 102,398-row table has no row for that
+mixed signature, so both apparatuses still close transparently and
+independently. First occupied-record contact occurs at offset 129. This is a
+contact census and a concrete missing-law target, not an interaction,
+scattering result, or no-go.
+
+This also exposes an important architectural fork. Every tested lattice
+runner propagates only permanent record labels, but the axioms do not say
+that all interaction must be record-mediated. Qubit supplies possibilities
+at an unrecorded site and Admissibility makes their availability depend on
+neighbour conditions. A coherent working layer could therefore propagate
+constraints or amplitudes through unrecorded sites and write only sparse
+boundary records. That would be a better candidate for interference,
+propagation, and storage economy than recording every intermediate step.
+However, it is not already derived: Qualification currently defines a state
+as a record configuration, and the axiom memo explicitly says Admissibility
+is not dynamics. The framework still needs an exact process law or theorem
+that turns changing nonrecord possibility constraints into physical
+propagation.
 
 ## What is now established
 
@@ -599,6 +624,13 @@ compatibility as the only evidence. It does not test a cross-apparatus local
 signature or interaction. Arbitrary-boundary reachability of the 43 replaced
 row orbits and full-domain confluence remain open.
 
+Cycle 199 removes the layer in controlled steps. The first mixed local premise
+appears before occupied records touch and is exactly the two-neighbour
+`R_A13/MARK` signature. No current row acts there. This identifies where new
+cross-lane law content would first have to earn its keep, but it does not show
+what that content should be or that a different geometry could not use
+existing rows.
+
 The family is still not a compact natural rule, a unique consequence of the
 foundation, or an empirically selected equivalence class.
 
@@ -956,7 +988,8 @@ several or all of them.
    apparent compiler states are excluded by a proved invariant.
 2. **Occurrence/process semantics.** Whether enabled events form
    asynchronously, synchronously, by priority, by a normalized instrument, as
-   a weighted set of histories, or through a unique-extension theorem.
+   a weighted set of histories, through coherent propagation of unrecorded
+   possibility constraints, or through a unique-extension theorem.
 3. **Intervention and interaction composition.** How preparations, omitted
    operations, measurements, memory, carrier contact, scattering, and
    coarse-graining compose without a host-selected answer.
@@ -991,6 +1024,10 @@ What the campaign currently favours:
   code claims are unconditional;
 - an exact-law identification remains a more important Admissibility issue
   than polishing a two-witness sentence;
+- the current record-only runners do not prove that interaction is record-only;
+  a coherent nonrecord possibility layer is live, but current Admissibility
+  supplies availability rather than dynamics and Qualification supplies only
+  record configurations as states;
 - the exact law must include or derive its lawful state domain and occurrence
   semantics; raw deterministic row outputs are insufficient;
 - Qualification's phrase “at every state ... exactly one answer” must
@@ -1055,10 +1092,12 @@ Any foundation edit should wait until these remaining tests are complete.
 Generated all-five membership and physical context dispatch are now closed
 bounded constructions rather than items on this list.
 
-1. remove Cycle-198's separating layer and make one physically selected
-   Cycle-193 token a load-bearing parent of a phase-sensitive `H/CNOT`
-   operation on an encoded system/pointer, reproducing at least one Cycle-189
-   interference/instrument relation with no host gate semantics;
+1. compare two exact routes at Cycle 199's first mixed boundary: a
+   record-mediated row and a coherent process over the available
+   possibilities of unrecorded sites; require the physically selected
+   Cycle-193 token to become a load-bearing control of a phase-sensitive
+   `H/CNOT` operation on an encoded system/pointer, reproducing at least one
+   Cycle-189 interference/instrument relation with no host gate semantics;
 2. extend that microscopic interpreter into a normalized effect-complete
    repeated process and prove the Cycle-194 component-mean condition, while
    pursuing an autonomous smaller-law implementation and exact-law

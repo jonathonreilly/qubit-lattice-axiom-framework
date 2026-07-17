@@ -9,8 +9,9 @@ Authority: none
 Companion runner:
 `scripts/disjoint_mixed_product_coexistence_cycle198_2026_07_16.py`
 
-No foundation, axiom, primitive, registry, policy, audit, queue, predecessor,
-commit, push, or PR surface is changed. No commit or push is performed.
+This note and companion runner are committed only on the draft parking branch
+and referenced by draft PR #5389; no foundation, axiom, primitive, registry,
+policy, audit, or queue surface is changed.
 
 ## Result up front
 

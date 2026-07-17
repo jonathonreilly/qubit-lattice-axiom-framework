@@ -457,7 +457,7 @@ def main() -> int:
             "one open lattice layer",
             "zero new rows and zero onsite roles",
             "no axiom conclusion follows",
-            "no commit or push",
+            "draft parking branch",
         )
         missing = tuple(phrase for phrase in required if phrase not in normalized_note)
         check(

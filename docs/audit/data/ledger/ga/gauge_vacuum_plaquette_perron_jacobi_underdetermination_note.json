@@ -190,6 +190,62 @@
         "total_pass": 8
       },
       "verdict_rationale": "Issue: the runner genuinely computes differing moments and Jacobi data, but only after choosing arbitrary residual profiles on a 36-state truncation; the note's expected THEOREM PASS=4 count is also stale against the supplied PASS=5 execution. Why this blocks: no cited authority or runner calculation establishes that these profiles are realizable residual environments of the exact untruncated beta=6 source-sector operator. Repair target: prove the exact-sector admissibility and finite-box lift of both witnesses, or explicitly narrow the theorem to the sampled box and correct the expected pass count. Claim boundary until fixed: N1 supplies only the finite numerical residual-choice route; N2 leaves independent admissibility and truncation-lift gaps; N3 finds boundary, obstruction, sector, and canonical language unsupported by a cited authority; N4 has no prior residual witness; N5 lacks live tests at all five resolutions; N6's residual-environment and tensor-transfer candidates are not supplied as authorities; N7's exact-sector steelman remains unresolved; and N8's related echoes close neither gap."
+    },
+    {
+      "archived_at": "2026-07-17T22:09:08.692681+00:00",
+      "audit_date": "2026-07-17T22:08:58.998516+00:00",
+      "audit_invocation_history": [
+        "14d0f50429664288a0e68ae1f64c2196"
+      ],
+      "audit_invocation_id": "14d0f50429664288a0e68ae1f64c2196",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 12.631,
+        "runner_hash": "f136ebb829b1241ae891a26b1b8061cbbdb297669d110925f303d38085c4aa5f",
+        "transitive_descendants": 792
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-94f6e3fd276a4655877946dacfba9d3f-gauge_vacuum_plaquette_p-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely verifies the narrowed finite-box claim without hard-coding the resulting moments. The note supplies no argument that this truncated witness defines admissible operators on the full source-cyclic sector or survives removal of the NMAX=5 cutoff.",
+      "claim_scope": "On the runner's 36-state NMAX=5 box, its two chosen residual matrices produce different first two Perron moments for the same truncated recurrence matrix J.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-17T22:08:58.998516+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The runner exhibits two explicit admissible positive residual source-sector environment operators with m_1^(A) != m_1^(B).",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the source theorem to the 36-state NMAX=5 witness or add an analytic cutoff-removal theorem, and add a dated downstream-hygiene line to this note's own boundary stating that full-sector and physical-Wilson non-uniqueness remain open until that lift is proved.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the runner proves only a 36-state NMAX=5 truncation, while the note presents its witnesses as operators on the full source sector and calls the resulting non-uniqueness exact. Why this blocks: positivity and differing moments for a non-invariant finite truncation do not establish the corresponding full-sector obstruction without an analytic lift or cutoff-stability theorem. N1-N8 gate: N1 tests local-factor, symmetry, residual-sector, Perron-state, and sampled finite-case routes only at finite size; N2 identifies the physical compression and residual-diagonality walls; N3 finds those admissions explicit rather than hidden; N4 supplies no retained prior witness for the lift; N5 lacks the required five-resolution execution; N6 finds no indexed premise closing the lift; N7 leaves the finite-box steelman unresolved at full-sector scope; and N8 supplies related echoes but no independent closure. Repair target and claim boundary until fixed: add an analytic untruncated counterexample or narrow the theorem explicitly to the NMAX=5 witness, while retaining the physical Wilson and full-sector conclusions as open."
     }
   ],
   "prose_corrections": [],

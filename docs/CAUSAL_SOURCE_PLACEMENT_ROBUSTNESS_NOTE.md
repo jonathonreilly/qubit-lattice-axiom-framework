@@ -1,6 +1,7 @@
 # Causal Source Placement Robustness Note
 
 **Date:** 2026-04-06  
+**Type:** no_go
 **Status:** diagnosed deeper boundary: family-aware source placement changes the causal ratios, but it does not restore a clean portable causal-field signal across all three families
 
 ## Artifact Chain

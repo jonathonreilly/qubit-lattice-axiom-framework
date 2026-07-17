@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17.py
-runner_sha256: eba613a278230f0be1d6292b96b156f9e5dbe6d9518afbc450752041cc92c37b
-timeout_sec: 600
+runner_sha256: 64da3770eb12519be968a7b62e99806a820e219c0a7c6920627f0decce14fe87
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.85
+elapsed_sec: 1.17
 status: ok
 ----- stdout -----
 B1.1 PASS anticommutation e1e2 + e2e1 = 0 and nilpotency e1^2 = 0
@@ -28,8 +28,9 @@ B4.2 PASS constant block-preserving kernel substitution M -> B^T M A at held mea
 B4.3 PASS no constant kappa with kappa*det3 = det3^2: witness kappas clash [kappa witnesses 1 vs 8]
 B4.4 PASS uniform rescale: once -> rho*once with rho = u^3, twice -> |rho|^2*twice (horns split, neither converted; instance of B4.2)
 B4.5 PASS coupling-dependent conversion witness A(W) = W, B = I at held measure: kernel route det(W*W) = det3^2 = count-twice on the real locus; generator-substitution route theta -> W theta agrees
-B4.6 PASS constant odd-mixing substitution (fixed integer S mixing barred/unbarred, det S = 3) acts by det(S) at held measure; block-form substitution reproduces the B4.2 kernel value
-B4.7 PASS constant cross-copy mixing on the 12-generator joint (swap generators 0 and 6 across copies, scale generator 1 by 2; det S = -2) acts by det(S) at held measure
+B4.6 PASS generic constant odd-linear substitution on four generators acts on the zero-source integral by det(S) at held measure
+B4.7 PASS constant odd-mixing substitution (fixed integer S mixing barred/unbarred, det S = 3) acts by det(S) at held measure; block-form substitution reproduces the B4.2 kernel value
+B4.8 PASS constant cross-copy mixing on the 12-generator joint (swap generators 0 and 6 across copies, scale generator 1 by 2; det S = -2) acts by det(S) at held measure
 B5.1 PASS Hermitian real-intersection control: lam1 = lam2 = a - b, det3 = lam0 * lam1^2 (all real)
 B5.2 PASS off-locus (1,i,0): gap = sqrt(3) - i, det3 = 1 - i, grouped form differs from det3
 B5.3 PASS pairing-without-reality (i,1+i,i): count-once integral = 1 + 3i, not real
@@ -64,7 +65,9 @@ B7.4 PASS ledger shard file exists: koide_convention_invariant_scalar_selector_d
 B7.5 PASS ledger shard file exists: acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04
 B7.6 PASS ledger shard file exists: acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12
 B7.7 PASS ledger shard file exists: koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04
-B7.8 PASS ledger shard file exists: ac_orbit_occupancy_statistical_grain_derivation_obligation
+B7.8 PASS ledger shard file exists: occupancy_readout_exponent_berezin_subsumption_bounded_theorem_note_2026-06-09
+B7.9 PASS ledger shard file exists: koide_generation_channel_space_holomorphy_channel_independence_bounded_theorem_note_2026-06-11
+B7.10 PASS ledger shard file exists: ac_orbit_occupancy_statistical_grain_derivation_obligation
 B8.1 PASS note carries: ## Purpose
 B8.2 PASS note carries: ## Supplied objects and consumed readings
 B8.3 PASS note carries: ### Berezin conventions (pinned)
@@ -72,7 +75,7 @@ B8.4 PASS note carries: ## Claims
 B8.5 PASS note carries: ### Berezin realization exactness under the pinned convention (T1, exact)
 B8.6 PASS note carries: ### Sector-selective realization on entrywise-real triples (T2, bounded)
 B8.7 PASS note carries: ### The count binary as a generator-count binary (T3, declared reading)
-B8.8 PASS note carries: ### Constant-substitution measure collapse on the finite probe surface (T4, bounded negative)
+B8.8 PASS note carries: ### Held-measure constant-substitution scalar action on the zero-source integral (T4, bounded negative)
 B8.9 PASS note carries: ## Gated controls
 B8.10 PASS note carries: ## Negative controls
 B8.11 PASS note carries: ## No-Go Discipline Gate
@@ -121,12 +124,14 @@ B8.53 PASS non-citation context handle is backticked and unlinked: AC_ORBIT_OCCU
 B8.54 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md
 B8.55 PASS non-citation context handle is backticked and unlinked: KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md
 B8.56 PASS non-citation context handle is backticked and unlinked: KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md
-B8.57 PASS every cited or handled doc path exists
+B8.57 PASS non-citation context handle is backticked and unlinked: OCCUPANCY_READOUT_EXPONENT_BEREZIN_SUBSUMPTION_BOUNDED_THEOREM_NOTE_2026-06-09.md
+B8.58 PASS non-citation context handle is backticked and unlinked: KOIDE_GENERATION_CHANNEL_SPACE_HOLOMORPHY_CHANNEL_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+B8.59 PASS every cited or handled doc path exists
 PATH note=docs/KCPT_COUPLING_TRIPLE_BEREZIN_COUNT_BINARY_MEASURE_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-17.md
 PATH runner=scripts/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17.py
 PATH cache=logs/runner-cache/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17.txt
-FLAGS: R1b supplied corner surface; R2b consumed pairing license with source-side premise weight (row status pipeline-derived); R3b probe, not derived form; R4b declared Berezin probe surface, not the physical action or measure; R5b declared count-binary reading, not an equivalence; T4 scoped to constant coupling-independent linear substitutions at held integration order and normalization (coupling-dependent substitutions convert the horns and sit outside the claim; passive coordinate changes invariant by the quoted realification law); B5 endpoint arithmetic conditional on supplied granularity laws; r remains a dial (0, 1/2, 1); no graining horn selected
-TOTAL: PASS=116 FAIL=0
+FLAGS: R1b supplied corner surface; R2b consumed pairing license with source-side premise weight (row status pipeline-derived); R3b probe, not derived form; R4b declared Berezin probe surface, not the physical action or measure; R5b declared count-binary reading, not an equivalence; T4 scoped to the zero-source integral output under active constant coupling-independent homogeneous linear substitutions with central Grassmann-even coefficients at fixed generator count and held integration order and normalization (coupling-dependent substitutions convert the horns and sit outside the claim; passive coordinate changes invariant by the quoted realification law); B5 endpoint arithmetic conditional on supplied granularity laws; r remains a dial (0, 1/2, 1); no graining horn selected
+TOTAL: PASS=121 FAIL=0
 
 ----- stderr -----
 

@@ -38,8 +38,9 @@ Invariants measured (tracked state only)
                                target cannot resolve for a fresh clone or
                                GitHub reader; reasons: not-tracked (missing,
                                untracked, or gitignored alike — derived from
-                               the tracked set only), absolute-path, and
-                               outside-repository. Code spans and fenced code
+                               the tracked set only), absolute-path,
+                               outside-repository, irregular-target, and
+                               directory-target. Code spans and fenced code
                                blocks are masked before link extraction.
   authority_links.irregular_surfaces  authority files that are not regular
                                files (never dereferenced)
@@ -642,9 +643,7 @@ CLASS_F_REQUIRED_PHRASES = (
     "no premise or interpretive weight",
     "citable for orientation and scope discipline only",
 )
-CITATION_GRAPH_CACHE = os.path.join(
-    REPO_ROOT, "docs", "audit", "data", "citation_graph.json"
-)
+CITATION_GRAPH_CACHE_REL = "docs/audit/data/citation_graph.json"
 GRAPH_MANIFEST_REL = "docs/audit/data/citation_graph_manifest.json"
 
 
@@ -723,11 +722,14 @@ def collect_graph_manifest_check() -> dict | None:
     criticality. Returns None (skip) when no in-pass graph cache exists —
     the check is only meaningful inside a pipeline run.
     """
-    if not os.path.isfile(CITATION_GRAPH_CACHE):
+    # Resolve from REPO_ROOT at call time like every other collector, so
+    # fixture repos (tests overriding REPO_ROOT) never read this repo's cache.
+    cache_path = os.path.join(REPO_ROOT, CITATION_GRAPH_CACHE_REL)
+    if not os.path.isfile(cache_path):
         return None
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from write_citation_graph_manifest import compute_manifest
-    with open(CITATION_GRAPH_CACHE, "r", encoding="utf-8") as fh:
+    with open(cache_path, "r", encoding="utf-8") as fh:
         graph = json.load(fh)
     computed = compute_manifest(graph)
     proc = subprocess.run(

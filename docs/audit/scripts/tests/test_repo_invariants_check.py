@@ -138,6 +138,9 @@ class AuthorityLinksTrackedSetTest(unittest.TestCase):
             {
                 "docs/PRESENT_UNTRACKED.md": "not-tracked",
                 "docs/MISSING.md": "not-tracked",
+                # Directory targets render as file listings, not authority
+                # documents (authoring gates, 2026-07-17).
+                "docs/repo": "directory-target",
             },
         )
 
@@ -660,7 +663,8 @@ class RoundSevenProbes(unittest.TestCase):
         root = Path(os.path.realpath(tmp))
         subprocess.run(["git", "init", "-q", str(root)], check=True)
         for rel, payload in ((ric.PREMISE_NODES, {"nodes": {}}),
-                             (ric.OBLIGATIONS, {"nodes": {}})):
+                             (ric.OBLIGATIONS, {"nodes": {}}),
+                             (ric.DOC_AUTHORITY_REGISTRY_REL, {"rows": []})):
             p = root / rel
             p.parent.mkdir(parents=True, exist_ok=True)
             p.write_text(json.dumps(payload))

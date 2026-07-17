@@ -53,3 +53,16 @@ publication-generated outputs.
 Commit, rebase onto current `origin/main`, rerun the exact post-rebase science
 and cache gates, push, and open the eligible ready review PR without merging.
 Then start the next non-overlapping hard residual from fresh current main.
+
+## Checkpoint 4 — ready review PR opened
+
+The reviewed block was rebased without conflict onto
+`origin/main=1932972cb7d9d21693d70b7c74c3a206b77d1211`, producing commit
+`64b1d3c4ee1841f25d4fca256e9f4d1e0f97ca4f`. Post-rebase runs again passed
+`11/11`, `8/8`, and `12/12`, with the cache SHA unchanged.
+
+Ready review PR
+[`#5465`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5465)
+is open and non-draft. It has not been merged. Independent audit of the new
+parent and subsequent re-audit of the target remain the exact authority-side
+resume action.

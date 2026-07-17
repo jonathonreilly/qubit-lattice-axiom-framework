@@ -15,19 +15,19 @@ to a sign `e_4^2 = ε I` with `ε ∈ {+1, -1}` are
 
 Among these two extensions, the cell `(p, q) = (3, 1)` is the **unique**
 real-Clifford-algebra extension of `Cl(3, 0)` to total dimension
-`n = 4` whose Cartan-Bott classification target is a single real matrix
+`n = 4` whose derived real-algebra target is a single real matrix
 algebra `M_k(R)` (rather than a quaternionic matrix algebra). The
 `(3, 0)` subalgebra is preserved as the spacelike subalgebra in both
 cases; only the sign `ε = e_4^2` distinguishes the two real
 classifications.
 
 These are purely statements about finite-dimensional real Clifford
-algebras and the Cartan-Bott classification cells at `n = 4`. No
+algebras and their real-algebra identifications at `n = 4`. No
 single-clock evolution input, no anomaly content, no Wick-rotation
-admission beyond the explicit pair-of-signs branch, no chirality-
+input beyond the explicit pair-of-signs branch, no chirality-
 existence claim, no Yang-Mills action, no gauge group, and no `d_t > 1`
 exclusion enter. This narrow theorem does **not** close P2 (the
-hierarchy-formula admission `Z^3 → Z^4`); it isolates the Wick-rotation
+hierarchy-formula open condition `Z^3 → Z^4`); it isolates the Wick-rotation
 signature choice into a single binary algebraic question: the sign
 `ε = e_4^2`.
 
@@ -41,19 +41,19 @@ independent audit lane.
 **Authority role:** narrow class-(A) Clifford-algebra identity that
 isolates the unique real-matrix-algebra classification cell among the
 two sign-extension choices of `Cl(3, 0)` to total dimension `n = 4`.
-This is a **stand-alone algebraic fact**, not an axiom, an admission,
+This is a **stand-alone algebraic fact**, not an axiom, a supplied premise,
 or a forcing chain on the framework's primitives. Its load-bearing
 content is the universal-property characterization of generator
 extension of a Clifford algebra by a single anticommuting generator,
-combined with the Cartan-Bott classification cells at `n = 4`.
+combined with the explicit real-algebra maps and commutants below.
 
 ## 1. Claim scope
 
 Let `Cl(p, q)` denote the real Clifford algebra on `n = p + q`
 generators with `p` generators of square `+1` and `q` of square `-1`,
 all pairwise anticommuting. Let `Cl(3, 0)` be the framework's per-site
-one-qubit operator algebra as stated in `MINIMAL_AXIOMS_2026-05-20.md`
-(Axiom 1), used here only as the source of the three generators
+one-qubit operator algebra as stated by the Qubit axiom in
+`MINIMAL_AXIOMS_2026-06-29.md`, used here only as the source of the three generators
 `e_1, e_2, e_3` satisfying
 
 ```text
@@ -81,13 +81,12 @@ nilpotent of square zero, which is not the Clifford-extension
 condition).
 
 **(S2) `ε = +1` cell.** With `e_4^2 = +I`, the resulting real Clifford
-algebra is `Cl(4, 0)`. By Cartan-Bott (Lawson-Michelsohn, *Spin
-Geometry*, Theorem I.4.3), `Cl(4, 0) ≅ M_2(H)`, the real 2x2 matrix
-algebra over the quaternions `H`.
+algebra is `Cl(4, 0)`. The explicit map in §5.2 identifies it with
+`M_2(H)`, the real 2x2 matrix algebra over the quaternions `H`.
 
 **(S3) `ε = -1` cell.** With `e_4^2 = -I`, the resulting real Clifford
-algebra is `Cl(3, 1)`. By Cartan-Bott, `Cl(3, 1) ≅ M_4(R)`, the real
-4x4 matrix algebra.
+algebra is `Cl(3, 1)`. The explicit spanning representation in §5.3
+identifies it with `M_4(R)`, the real 4x4 matrix algebra.
 
 **(S4) Uniqueness within the n = 4 single-`M_k(R)` cells preserving
 the `Cl(3, 0)` subalgebra.** Among the two extensions (S2)-(S3), the
@@ -108,21 +107,20 @@ The claim (S1)-(S5) is an abstract finite-dimensional real Clifford-
 algebra classification statement. It makes **no** claim that the
 framework's spatial substrate is `Z^4`, that spacetime is `R^{3,1}`,
 that the framework's gauge group is one of the building blocks of
-`Cl(3, 1)`, that the Wick-rotation `Z^3 → Z^4` admission P2 is closed,
+`Cl(3, 1)`, that the Wick-rotation `Z^3 → Z^4` open condition P2 is closed,
 or that the sign-`ε` choice itself is derived from any framework
 primitive. The sign-`ε` choice is the precise content of the P2
-Wick-rotation admission expressed in pure Clifford-algebra language.
+Wick-rotation condition expressed in pure Clifford-algebra language.
 
 ## 2. Why this note exists
 
 The hierarchy-formula honest-status note
 `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md` names the
-Wick-rotation `Z^3 → Z^4` admitted convention (P2) as one of four open
-primitives. The present note does not rely on a separate internal
-theorem for the `Cl(3, 1) ≅ M_4(R)` cell; it records the needed
-Cartan-Bott `n = 4` cells directly as standard mathematical
-infrastructure and then isolates the algebraic step that selects
-`(3, 1)` over the other `Cl(3, 0)` one-generator extensions.
+Wick-rotation `Z^3 → Z^4` condition (P2) as open work. The present
+note does not rely on a separate internal theorem for either real-
+algebra cell; it constructs both cells directly and isolates the
+algebraic step that selects `(3, 1)` over the other `Cl(3, 0)` one-
+generator extension.
 
 The present narrow theorem isolates that algebraic step:
 
@@ -133,9 +131,9 @@ The present narrow theorem isolates that algebraic step:
 > unique single-`M_k(R)` real-matrix-algebra cell, and it is
 > `Cl(3, 1) ≅ M_4(R)`.
 
-This **does not close** the hierarchy-formula Wick-rotation admission
-(P2). That admission treats `Z^3 → Z^4` as a convention. After this
-narrow, the admission is restated as:
+This **does not close** the hierarchy-formula Wick-rotation condition
+(P2). That open condition treats `Z^3 → Z^4` as a convention. After
+this narrow, the condition is restated as:
 
 > Among the two extensions `Cl(3, 0) ↪ Cl(p, q)` with `p + q = 4` and
 > `p ≥ 3, q ≥ 0` preserving the `Cl(3, 0)` subalgebra, the cell `(3, 1)`
@@ -153,32 +151,29 @@ load-bearing on the present narrow.
 
 The narrow theorem's payoff is structural: every real Clifford-algebra
 extension `Cl(3, 0) → Cl(p, q)` at total dimension `n = 4` is in one
-of exactly two cells classified by Cartan-Bott, and the `ε = -1`
-cell is the unique single-real-matrix-algebra cell. This is a sharper
-algebraic statement than just recording the isolated Cartan-Bott
-identity `Cl(3, 1) ≅ M_4(R)`.
+of exactly two sign cells, and the `ε = -1` cell is the unique
+single-real-matrix-algebra cell. The proof below derives both target
+algebras rather than accepting their shared real dimension as a
+classification test.
 
 ## 3. Cited authorities (one hop)
 
 No internal note is load-bearing for (S1)-(S5). The load-bearing
-mathematical infrastructure is standard finite-dimensional real
-Clifford-algebra theory: the universal property of `Cl(p, q)`, real
-quadratic-form sign normalization, and the Cartan-Bott classification
-table at `n = 4`. Textbook references are Lawson-Michelsohn, *Spin
-Geometry*, Theorem I.4.3; Atiyah-Bott-Shapiro, "Clifford Modules",
-*Topology* 3 (1964) Suppl. 1, 3-38; and Porteous, *Clifford Algebras
-and the Classical Groups*, Chs. 15-16.
+mathematical infrastructure is the universal property and dimension
+formula for finite-dimensional real Clifford algebras, real quadratic-
+form sign normalization, Hamilton's quaternion multiplication law, and
+elementary real matrix algebra. The `M_2(H)` and `M_4(R)`
+identifications are constructed in §5 and checked by the runner.
+Lawson-Michelsohn, Atiyah-Bott-Shapiro, and Porteous are non-load-bearing
+external cross-checks of the resulting standard classifications.
 
-## 4. Admitted-context inputs
+## 4. Supplied mathematical conditions and imports
 
 - **Standard finite-dimensional real Clifford-algebra theory.** The
-  universal-property dimension formula `dim_R Cl(p, q) = 2^{p+q}`,
-  the Cartan-Bott classification of `Cl(p, q)` for all signatures at
-  `n ≤ 8`, and the specific identifications
-  `Cl(4, 0) ≅ M_2(H)`, `Cl(3, 1) ≅ M_4(R)` are admitted-context
-  mathematical infrastructure on the framework's accepted surface
-  (per `MINIMAL_AXIOMS_2026-05-20.md` ordinary mathematical
-  infrastructure).
+  universal property and dimension formula
+  `dim_R Cl(p, q) = 2^{p+q}` are standard mathematical inputs. No
+  Clifford-classification table or expected classification string is
+  imported as a proof check.
 
 - **Universal property of generator extension.** Given a real Clifford
   algebra `Cl(p, q)` and a new generator `e_{n+1}` with prescribed
@@ -194,11 +189,16 @@ and the Classical Groups*, Chs. 15-16.
   is excluded because it would make `e_4` nilpotent and the algebra
   is not the Clifford extension.
 
-- **Explicit matrix realizations.** The companion runner constructs
-  a faithful `8 × 8` real matrix realization of `Cl(4, 0) ≅ M_2(H)`
-  on `H^2 ≅ R^8` and a faithful `4 × 4` real matrix realization of
-  `Cl(3, 1) ≅ M_4(R)` on `R^4`. This size difference is part of the
-  checked quaternionic-vs-real classification boundary.
+- **Hamilton quaternion algebra.** The multiplication rules
+  `i^2 = j^2 = k^2 = ijk = -1` define `H`. The runner constructs left
+  and right multiplication matrices from this rule; it does not import
+  pre-labelled quaternion matrices.
+
+- **Explicit real-algebra realizations.** The companion runner constructs
+  `Phi: M_2(H) → M_8(R)` from left multiplication on `H^2`, proves
+  that its image is exactly the displayed `Cl(4, 0)` image, and solves
+  its quaternionic commutant. It separately proves that the displayed
+  `Cl(3, 1)` monomials span every matrix unit of `M_4(R)`.
 
 No PDG values consumed. No literature numerical comparators consumed.
 No fitted selectors consumed. No framework-substrate-instance-specific
@@ -235,16 +235,54 @@ e_i^2 = +I,          i ∈ {1, 2, 3, 4},
 {e_i, e_j} = 0,       i ≠ j.
 ```
 
-This is the defining relation set of `Cl(4, 0)`. By Cartan-Bott
-(Lawson-Michelsohn Theorem I.4.3),
+This is the defining relation set of `Cl(4, 0)`. To identify the real
+algebra constructively, write `H = span_R{1,i,j,k}` with Hamilton
+multiplication, and define four matrices in `M_2(H)`:
 
 ```text
-Cl(4, 0)  ≅  M_2(H),                                          (★_{(4,0)})
+g_1 = [ 0   1 ],        g_u = [ 0   u ],    u in {i,j,k}.
+      [ 1   0 ]               [-u   0 ]
 ```
 
-the real 2x2 matrix algebra over the quaternions `H`. Its real
-dimension is `4 · 2 · 2 = 16`, consistent with `dim_R Cl(4, 0) = 2^4 = 16`
-from the universal-property dimension formula.
+Each `g_a` squares to `+I_2`. The first matrix anticommutes with each
+`g_u`; distinct `g_u,g_v` anticommute because `uv = -vu`. The universal
+property therefore gives a real-algebra homomorphism
+
+```text
+rho_+ : Cl(4,0) -> M_2(H).
+```
+
+Now let `L_q` be the real `4 × 4` matrix for left multiplication by
+`q ∈ H`. Entrywise left multiplication gives the explicit map
+
+```text
+Phi : M_2(H) -> M_8(R),       [q_ab] |-> [L_(q_ab)].
+```
+
+The runner constructs `Phi` from Hamilton multiplication, checks all
+`16 × 16` standard-basis products, and finds real rank 16 for the
+images of the 16 basis elements `E_ab q`, so `Phi` is an injective
+real-algebra map. The 16 Clifford monomials in the displayed `g_a`
+also have rank 16, their union with the `Phi(E_ab q)` basis still has
+rank 16, and the exact change-of-basis determinant is `256`. Thus
+`rho_+` is onto `M_2(H)` and, since both sides have real dimension 16,
+
+```text
+Cl(4, 0)  ≅  M_2(H).                                          (★_{(4,0)})
+```
+
+There is a second, independent type check. Solving `X Phi(g_a) =
+Phi(g_a) X` for all real `8 × 8` matrices gives a four-dimensional
+commutant. It is exactly the diagonal right-`H` action. For its basis
+`1,I,J,K`, the runner derives
+
+```text
+I^2 = J^2 = K^2 = -1,       IJ = K = -JI,
+q q_bar = q_bar q = (a^2+b^2+c^2+d^2) I_8.
+```
+
+So the commutant is quaternionic and division; rank 16 alone is not
+being used as the classification test.
 
 ### 5.3 (S3) `ε = -1` extension: `Cl(3, 1)`
 
@@ -256,36 +294,44 @@ e_4^2 = -I,
 {e_i, e_j} = 0,       i ≠ j.
 ```
 
-This is the defining relation set of `Cl(3, 1)`. By Cartan-Bott,
+This is the defining relation set of `Cl(3, 1)`. The runner displays
+four real `4 × 4` matrices satisfying these relations. Their 16
+Clifford monomials have real rank 16 in the 16-dimensional ambient
+space `M_4(R)`; adjoining the 16 standard matrix units does not
+increase that rank. Hence the generated image is all of `M_4(R)`.
+The universal-property map is faithful because `dim_R Cl(3,1)=16`, so
 
 ```text
-Cl(3, 1)  ≅  M_4(R),                                          (★_{(3,1)})
+Cl(3, 1)  ≅  M_4(R).                                          (★_{(3,1)})
 ```
 
-the real 4x4 matrix algebra. Its real dimension is `4 · 4 = 16`,
-consistent with `dim_R Cl(3, 1) = 2^4 = 16`.
+The independently solved commutant is one-dimensional, exactly
+`R I_4`, which is the real-type counterpart of the quaternionic
+commutant above.
 
 ### 5.4 (S4) Uniqueness within single-`M_k(R)` cells
 
-The Cartan-Bott table at `n = 4` reads
+By §5.1 a one-generator extension of the fixed three positive-square
+generators reaches only `(4,0)` or `(3,1)`. Sections 5.2 and 5.3
+identify those two images directly with `M_2(H)` and `M_4(R)`.
 
-```text
-n = 4:   Cl(4, 0) ≅ M_2(H)
-         Cl(3, 1) ≅ M_4(R)
-         Cl(2, 2) ≅ M_4(R)
-         Cl(1, 3) ≅ M_2(H)
-         Cl(0, 4) ≅ M_2(H)
-```
+For completeness, the two 16-dimensional algebras are not being
+distinguished by their labels. Let `e = E_11`. In `M_2(H)`,
+`e M_2(H) e ≅ H`, a four-dimensional division algebra, so `e` is
+primitive. In a real full matrix algebra every primitive idempotent has
+rank one and its corner is `R`, of real dimension one. Since a
+real-algebra isomorphism preserves primitive idempotents and their
+corners, `M_2(H)` is not isomorphic to `M_4(R)` (and real dimension 16
+forces `k=4` for any candidate `M_k(R)`). The runner computes both
+corner dimensions and the quaternion norm identity.
 
-Among the five `n = 4` cells, the two that yield a **single real
-matrix algebra** `M_k(R)` (not a quaternionic algebra) are
-`(p, q) = (3, 1)` and `(p, q) = (2, 2)`. Among extensions of
-`Cl(3, 0)` (i.e., those preserving `e_1^2 = e_2^2 = e_3^2 = +I`),
-only the cell `(p, q) = (3, 1)` is reached, because `(2, 2)` requires
-two negative-square generators while `Cl(3, 0)` has exactly three
-positive-square generators by hypothesis. Hence (S4) holds: among
-extensions of `Cl(3, 0)`, the cell `(p, q) = (3, 1)` is the unique
-real-Clifford-algebra extension landing on a single `M_k(R)`. ∎
+The runner also tests a mutation control: a duplicated action of
+`M_4(R)` on `R^8` has the same algebra rank 16 and the same commutant
+dimension four as the plus branch, but its commutant is `M_2(R)` and
+contains nonzero zero divisors. It therefore fails the quaternion
+division-norm gate. Hence (S4) follows without a literal classification
+table: among the two reachable extensions, `(3,1)` is the unique one
+landing on a single `M_k(R)`. ∎
 
 ### 5.5 (S5) `Cl(3, 0)` subalgebra preservation
 
@@ -357,7 +403,7 @@ cross-references and are not load-bearing on the present narrow.
 
 ## 8. What this does NOT claim
 
-- Does **not** close P2 (the Wick-rotation admission `Z^3 → Z^4` of
+- Does **not** close P2 (the Wick-rotation condition `Z^3 → Z^4` of
   `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`).
   The narrow restates P2 as the sign-`ε` question
   `ε = e_4^2 ∈ {+1, -1}`, but does not derive `ε = -1` from any
@@ -453,7 +499,7 @@ extension identity. The references to existing
 framework narrow theorems in §9 are informational cross-references
 for the multi-witness reading and are not load-bearing imports. The
 references to
-`MINIMAL_AXIOMS_2026-05-20.md` and
+`MINIMAL_AXIOMS_2026-06-29.md` and
 `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`
 are framework-baseline citations explaining motivation, not
 load-bearing imports.
@@ -463,7 +509,7 @@ load-bearing imports.
 - No PDG observed values consumed.
 - No literature numerical comparators consumed.
 - No fitted selectors consumed.
-- No admitted unit conventions load-bearing on the claim.
+- No supplied unit conventions load-bearing on the claim.
 - No same-surface family arguments.
 - No `Z^3 → Z^4` Wick-rotation closure claimed — the narrow restates
   P2 as the sign-`ε` question, not closes it.
@@ -482,39 +528,38 @@ verifies, at exact rational precision via sympy:
    for every real `ε ≠ 0`, the rescaled generator `e'_4 = e_4 / sqrt(|ε|)`
    satisfies `(e'_4)^2 = sign(ε) I`, so `ε ∈ {+1, -1}` exhausts the
    real-algebra-isomorphism classes.
-2. (S2) Explicit faithful `8 × 8` real-matrix realization of
-   `Cl(4, 0)` generators `Γ_1, Γ_2, Γ_3, Γ_4` satisfying
-   `Γ_i Γ_j + Γ_j Γ_i = 2 δ_{ij} I_8` (all positive-square).
-3. (S2) Sympy verification that the 16 standard monomials of the
-   `(4, 0)` generators are real-linearly independent on that
-   `8 × 8` real representation matching the faithful `M_2(H)` action
-   on `H^2 ≅ R^8`.
-4. (S3) Explicit `4 × 4` real-matrix realization of `Cl(3, 1)`
+2. (S2) Construction of Hamilton multiplication and the explicit
+   real-algebra map `Phi: M_2(H) → M_8(R)` from left multiplication
+   on `H^2`, including all 256 standard-basis products and injective
+   rank 16.
+3. (S2) Four displayed elements of `M_2(H)` satisfy the `Cl(4,0)`
+   relations; their 16 monomials have exactly the same real span as
+   `Phi(M_2(H))`. The exact change-of-basis determinant is `256`.
+4. (S2) The commutant, solved from the matrix equations rather than
+   assumed, has dimension four and equals diagonal right-`H`
+   multiplication. Its quaternion relations and symbolic division-
+   norm identity are checked.
+5. (S3) Explicit `4 × 4` real-matrix realization of `Cl(3, 1)`
    generators `Γ_1, Γ_2, Γ_3, Γ_4` satisfying
    `Γ_i Γ_j + Γ_j Γ_i = 2 η_{ij} I_4` with `η = diag(+1, +1, +1, -1)`.
-5. (S3) Sympy verification that the 16 standard monomials of the
+6. (S3) Sympy verification that the 16 standard monomials of the
    `(3, 1)` generators are real-linearly independent and span all
-   of `M_4(R)`.
-6. (S2)-(S3) Side-by-side check: with the same first three
-   generators `Γ_1, Γ_2, Γ_3` (squaring to `+I_4` in both realizations
-   above), the fourth generator `Γ_4` differs only in the sign of
-   its square (`+I_4` vs `-I_4`), demonstrating that the sign-`ε`
-   branch is the only algebraic input distinguishing the two cells.
-7. (S4) Cartan-Bott uniqueness at `n = 4`: enumerate the five cells
-   `(4, 0)`, `(3, 1)`, `(2, 2)`, `(1, 3)`, `(0, 4)` and verify that
-   only `(3, 1)` and `(2, 2)` land on a single `M_k(R)` real-matrix
-   algebra, with the others landing on quaternionic algebras.
-8. (S4) Restriction to `Cl(3, 0)`-extensions: of the cells reachable
-   by `Cl(3, 0) → Cl(p, q)` with `p + q = 4` and `p ≥ 3`, only
-   `(3, 1)` is a single `M_k(R)` cell; `(4, 0)` lands on `M_2(H)`.
+   of `M_4(R)`, together with a solved one-dimensional real
+   commutant.
+7. (S4) Primitive-corner dimensions `4` and `1` distinguish the
+   quaternionic and real branches. A duplicated `M_4(R)` action gives
+   a same-rank, same-commutant-dimension decoy whose zero divisors fail
+   the quaternion division-norm gate.
+8. (S4) Signature arithmetic from the computed fourth-generator square
+   signs gives exactly `(4,0)` and `(3,1)`, with only the latter's
+   image equal to a single `M_k(R)`.
 9. (S5) `Cl(3, 0)` subalgebra preservation: the 8 monomials
    `{1, Γ_1, Γ_2, Γ_3, Γ_1 Γ_2, Γ_1 Γ_3, Γ_2 Γ_3, Γ_1 Γ_2 Γ_3}` in
    both the `(4, 0)` and the `(3, 1)` realizations span a real
    subalgebra of dimension exactly 8, matching
-   `dim_R Cl(3, 0) = 8`, and the structure constants on this
-   subspace are identical between the two realizations.
+   `dim_R Cl(3, 0) = 8`; all 64 multiplication-table entries agree.
 
-Expected runner result: `PASS = 63`, `FAIL = 0` (exact-symbolic sympy
+Expected runner result: `PASS = 60`, `FAIL = 0` (exact-symbolic sympy
 verification).
 
 ## 14. Cross-references (non-load-bearing)
@@ -536,10 +581,10 @@ verification).
   — companion single-clock codimension-1 evolution theorem; not
   load-bearing on the present narrow.
 - `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`
-  — package-level honest-status note naming the Wick-rotation admission
-  (P2) as an open primitive; the present narrow restates P2 as the
+  — historical package-level note naming the Wick-rotation condition
+  (P2) as open work; the present narrow restates P2 as the
   sign-`ε` question but does not close it.
-- `MINIMAL_AXIOMS_2026-05-20.md`
+- `MINIMAL_AXIOMS_2026-06-29.md`
   — current framework baseline; the narrow operates on the abstract
   real-Clifford-algebra structure associated with the one-qubit
   operator algebra / `Cl(3, 0)` per-site content without modifying the

@@ -1,51 +1,54 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.py
-runner_sha256: b6c56bc7cb6a0264061e2ce4b85e6df8c19468b481e9ba892a58c0a472f08ded
-timeout_sec: 120
+runner_sha256: 8e500287a2ffee47288242aed70ab3ebddee9e3e6493dee9e07883cfbf265777
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
-=== Source-boundary checks ===
-[PASS] note declares boundary: **Claim type:** bounded_theorem
-[PASS] note declares boundary: leading-order continuity matching kernel
-[PASS] note declares boundary: explicit conditional matching input here
-[PASS] note declares boundary: This note does not derive the LO heavy-threshold no-jump condition
-[PASS] note declares boundary: This note does not derive physical threshold masses.
-[PASS] note declares boundary: This note does not supply higher-loop MSbar decoupling constants.
-[PASS] note declares boundary: This note does not promote any downstream alpha_s(M_Z) value to retained status.
-[PASS] parent QCD-low bridge points to this threshold kernel
+=== Source and scope ===
+[PASS] claim type is positive_theorem
+[PASS] defined affine map is stated exactly
+[PASS] note declares dependency-free exact arithmetic
+[PASS] identity carry is explicitly a definition
+[PASS] physical semantics are absent from the theorem surface
+[PASS] QCD context denies physical authority from the formal lemma
 
-=== SU(3) beta0 algebra ===
-[PASS] b0(n_f=6) = 7
-[PASS] b0(n_f=5) = 23/3
-[PASS] b0(n_f=4) = 25/3
-[PASS] b0(n_f=3) = 9
-[PASS] one flavor changes b0 by -2/3
-[PASS] asymptotic-freedom slopes positive through n_f=16
+=== Defined coefficient sequence ===
+[PASS] c(6) = 7
+[PASS] c(5) = 23/3
+[PASS] c(4) = 25/3
+[PASS] c(3) = 9
+[PASS] c(n-1) - c(n) = 2/3 on the full adjacent domain
+[PASS] positive domain is exactly indices 0 through 16
+[PASS] every admissible coefficient is a positive exact Fraction
 
-=== Segment and semigroup checks ===
-[PASS] fixed-n_f affine inverse-coupling segment equals integrated beta equation
-[PASS] fixed-n_f segments compose as a semigroup
-[PASS] upward and downward maps invert on the same segment
+=== Fixed-coefficient affine identities ===
+[PASS] segment formula is exact
+[PASS] U after T is the identity
+[PASS] T after U is the identity
+[PASS] same-coefficient intervals concatenate
+[PASS] three-step composition is associative
+[PASS] segment validation preserves an exact supplied triple
 
-=== Lambda transition checks ===
-[PASS] Lambda reconstructed from alpha inverts the one-loop solution
-[PASS] threshold Lambda transition preserves alpha_s continuity
-[PASS] 5-to-4 flavor sample raises Lambda below the threshold
+=== Finite marked paths ===
+[PASS] one segment realizes the empty marker list
+[PASS] two segments emit one identity marker
+[PASS] four segments emit three ordered markers
+[PASS] every marker carries its value exactly
+[PASS] sequential path equals exact summed closed form
+[PASS] reverse inverse maps recover the initial value
+[PASS] path output has exact Fraction type
+[PASS] prefix then suffix grouping equals the full path
 
-=== Multi-threshold kernel checks ===
-[PASS] three threshold events are emitted
-[PASS] every threshold event is exactly continuous in inverse coupling
-[PASS] piecewise threshold kernel equals the summed-log closed form
+=== Marker-jump counterexamples ===
+[PASS] empty marker list accepts an empty jump tuple
+[PASS] zero-jump realization equals defined identity carries
+[PASS] one nonzero jump changes the result by exactly that jump
+[PASS] arbitrary jumps change the result by their exact sum
+[PASS] nonzero cancelling jumps can preserve only the final value
 
-=== Domain guards and falsifiers ===
-[PASS] domain guard rejects non-descending thresholds
-[PASS] domain guard rejects thresholds outside the running interval
-[PASS] domain guard rejects skipped flavor crossings
-[PASS] falsifier detects a non-continuous threshold jump
-
-SUMMARY: PASS=27 FAIL=0
+SUMMARY: PASS=32 FAIL=0
 
 ----- stderr -----
 

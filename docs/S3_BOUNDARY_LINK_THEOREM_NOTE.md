@@ -615,7 +615,7 @@ R = 2..6 have link(v, B_R) coinciding with the simplicial closure
 K_simp(P).
 
 Total runner output (current revision): 121 PASS / 0 FAIL
-(120 EXACT, 1 BOUNDED).
+(119 EXACT, 2 BOUNDED).
 
 The new finite combinatorial checks are:
 

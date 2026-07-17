@@ -1,24 +1,47 @@
 #!/usr/bin/env python3
-"""Finite character/path/channel weight prototype under supplied rules."""
+"""Exact finite normalization and supplied-edge path-product theorem."""
 
 from __future__ import annotations
 
-from collections import Counter, defaultdict
+import argparse
+from dataclasses import dataclass
 from fractions import Fraction
+from math import gcd
 from pathlib import Path
-import hashlib
-import json
+import re
 import sys
+from typing import Callable, TypeAlias
 
-import frontier_post_record_measure_weight_normalization_subdivision_2026_06_06 as measure
 
 ROOT = Path(__file__).resolve().parents[1]
-LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
-SLICE = ROOT / "outputs/post_record_character_path_channel_weight_slice_2026_06_07.json"
+NOTE = ROOT / "docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md"
+
+Label: TypeAlias = str
+WeightPacket: TypeAlias = tuple[tuple[Label, Fraction], ...]
+Rows: TypeAlias = tuple[tuple[Label, WeightPacket], ...]
+
 PASS = 0
 FAIL = 0
 
-EXPECTED_ROWS = 21
+
+@dataclass(frozen=True)
+class Edge:
+    edge_id: str
+    source: str
+    target: str
+    weight: Fraction
+
+
+@dataclass(frozen=True)
+class PathWord:
+    start: str
+    edge_ids: tuple[str, ...]
+
+
+@dataclass(frozen=True)
+class PathValue:
+    end: str
+    weight: Fraction
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -34,256 +57,724 @@ def report(label: str, ok: bool, detail: str = "") -> None:
 
 
 def section(title: str) -> None:
-    print()
-    print("-" * 78)
-    print(title)
-    print("-" * 78)
+    print(f"\n{'-' * 78}\n{title}\n{'-' * 78}")
 
 
-def digest(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+def exact_fraction(value: object, context: str) -> Fraction:
+    if type(value) is not Fraction:
+        raise TypeError(f"{context} must be an exact Fraction")
+    return value
 
 
-def read_rel(path: str) -> str:
-    return (ROOT / path).read_text(encoding="utf-8")
-
-
-def require_text(path: str, needles: list[str]) -> None:
-    text = read_rel(path)
-    report(f"{path} exists", True)
-    for needle in needles:
-        report(f"{path} contains: {needle}", needle in text)
-
-
-def normalize(weights: dict[str, Fraction]) -> dict[str, Fraction]:
-    if any(value < 0 for value in weights.values()):
-        raise ValueError("negative supplied weight")
-    total = sum(weights.values(), Fraction(0))
+def validate_packet(packet: WeightPacket) -> Fraction:
+    if type(packet) is not tuple or not packet:
+        raise ValueError("weight carrier must be a nonempty finite tuple")
+    labels: set[str] = set()
+    total = Fraction(0)
+    for item in packet:
+        if type(item) is not tuple or len(item) != 2:
+            raise TypeError("each weight entry must be a (label, Fraction) tuple")
+        label, raw_weight = item
+        if type(label) is not str or not label:
+            raise TypeError("weight labels must be nonempty strings")
+        if label in labels:
+            raise ValueError(f"duplicate carrier label: {label}")
+        labels.add(label)
+        weight = exact_fraction(raw_weight, f"weight for {label}")
+        if weight < 0:
+            raise ValueError(f"negative weight for {label}")
+        total += weight
     if total <= 0:
-        raise ValueError("nonpositive supplied total")
-    return {key: value / total for key, value in weights.items()}
+        raise ValueError("weight total must be positive")
+    return total
 
 
-def normalize_channel(rows: dict[str, dict[str, Fraction]]) -> dict[str, dict[str, Fraction]]:
-    return {source: normalize(targets) for source, targets in rows.items()}
+def normalize_exact(packet: WeightPacket) -> WeightPacket:
+    total = validate_packet(packet)
+    return tuple((label, weight / total) for label, weight in packet)
 
 
-def path_product(path: tuple[str, ...], edge_weights: dict[tuple[str, str], Fraction]) -> Fraction:
-    product = Fraction(1)
-    for edge in zip(path, path[1:]):
-        product *= edge_weights[edge]
-    return product
-
-
-def selected_measure_status(has_normalized_packet: bool, has_physical_selector: bool) -> str:
-    if has_normalized_packet and has_physical_selector:
-        return "conditional_selector_ready"
-    return "blocked_missing_selector"
-
-
-def source_anchor_checks() -> None:
-    section("Source-anchor checks")
-    require_text(
-        "docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md",
-        [
-            "character_path_channel_weight",
-            "supplied-normalization witness",
-            "normalized finite path/channel/character weight packet",
-            "Does not derive a directional path parameter",
-            "Does not select or force a generation/Koide dial location.",
-            "outputs/post_record_character_path_channel_weight_slice_2026_06_07.json",
-        ],
-    )
-    require_text(
-        "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
-        [
-            "`character_path_channel_weight` | 21",
-            "character/path/channel weight rows need a supplied weight rule and carrier",
-            "Does not derive a prior, measure, source unit, trace state, or weight rule",
-        ],
-    )
-    require_text(
-        "docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md",
-        [
-            "Directional Path Measure",
-            "Beta-derivation status",
-            "tuned support",
-        ],
-    )
-    require_text(
-        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md",
-        [
-            "finite character-measure coefficient packet",
-            "normalized central character-measure packet",
-            "What This Does Not Close",
-        ],
-    )
-    require_text(
-        "docs/WILSON_REAL_POSITIVE_MEASURE_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md",
-        [
-            "Wilson real-positive measure surface",
-            "not derived here",
-            "real-positive Wilson measure surface premise",
-        ],
-    )
-
-
-def certificate_checks() -> None:
-    section("Finite character/path/channel checks")
-    path_weights = normalize({"straight": Fraction(4), "bend": Fraction(1)})
-    report("finite supplied path weights normalize", path_weights == {"straight": Fraction(4, 5), "bend": Fraction(1, 5)}, str(path_weights))
-    report("path weights sum to one", sum(path_weights.values(), Fraction(0)) == 1)
-
-    channel = normalize_channel(
-        {
-            "A": {"A": Fraction(3), "B": Fraction(1)},
-            "B": {"A": Fraction(1), "B": Fraction(1)},
-        }
-    )
-    rows_sum = all(sum(row.values(), Fraction(0)) == 1 for row in channel.values())
-    report("finite supplied channel rows normalize", rows_sum, str(channel))
-    report("channel transition A->A is exact", channel["A"]["A"] == Fraction(3, 4), str(channel["A"]))
-
-    edge_weights = {("s", "m"): Fraction(2), ("m", "t"): Fraction(3), ("s", "t"): Fraction(1)}
-    raw_paths = {
-        "two_step": path_product(("s", "m", "t"), edge_weights),
-        "direct": path_product(("s", "t"), edge_weights),
-    }
-    normalized_paths = normalize(raw_paths)
-    report("path product weights compose exactly", raw_paths == {"two_step": Fraction(6), "direct": Fraction(1)}, str(raw_paths))
-    report("composed path weights normalize exactly", normalized_paths == {"two_step": Fraction(6, 7), "direct": Fraction(1, 7)}, str(normalized_paths))
-
-    character_packet = normalize({"trivial": Fraction(6), "fundamental": Fraction(3), "adjoint": Fraction(1)})
-    report("finite supplied character coefficients normalize", character_packet == {"trivial": Fraction(3, 5), "fundamental": Fraction(3, 10), "adjoint": Fraction(1, 10)}, str(character_packet))
-    report(
-        "normalized packet without selector does not select physical measure",
-        selected_measure_status(True, False) == "blocked_missing_selector",
-    )
-    report(
-        "physical selector rule is still needed",
-        selected_measure_status(True, True) == "conditional_selector_ready",
-    )
-
+def verify_normalized(source: WeightPacket, candidate: WeightPacket) -> bool:
     try:
-        normalize({"bad": Fraction(-1)})
-        negative_rejected = False
-    except ValueError:
-        negative_rejected = True
-    report("negative supplied weights are rejected", negative_rejected)
+        expected = normalize_exact(source)
+        validate_packet(candidate)
+    except (TypeError, ValueError):
+        return False
+    return (
+        candidate == expected
+        and all(weight >= 0 for _, weight in candidate)
+        and sum((weight for _, weight in candidate), Fraction(0)) == 1
+    )
 
 
-def character_rows() -> list[dict]:
-    return [
-        row
-        for row in measure.measure_rows()
-        if measure.measure_lane(row) == "character_path_channel_weight"
-    ]
-
-
-def export_row(row: dict) -> dict:
-    return {
-        "claim_id": row.get("claim_id"),
-        "audit_status": row.get("audit_status"),
-        "effective_status": row.get("effective_status"),
-        "claim_type": row.get("claim_type"),
-        "note_path": row.get("note_path"),
-        "runner_path": row.get("runner_path"),
-        "measure_lane": "character_path_channel_weight",
-    }
-
-
-def expected_export_rows(rows: list[dict]) -> list[dict]:
-    return [export_row(row) for row in sorted(rows, key=lambda item: item.get("claim_id") or "")]
-
-
-def row_checks() -> list[dict]:
-    section("Character/path/channel row checks")
-    before = digest(LEDGER)
-    rows = character_rows()
-    report("character/path/channel row count is current snapshot", len(rows) == EXPECTED_ROWS, str(len(rows)))
-    representative_ids = {
-        "architecture_note_directional_measure",
-        "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
-        "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
-    }
-    ids = {row.get("claim_id") for row in rows}
-    for claim_id in sorted(representative_ids):
-        report(f"representative row present: {claim_id}", claim_id in ids)
-    after = digest(LEDGER)
-    report("audit ledger hash is unchanged", before == after, before)
-
-    print()
-    print("Character/path/channel rows:")
-    for row in rows:
-        print(
-            "  "
-            + f"{row.get('claim_id')} | {row.get('audit_status')} | "
-            + f"{row.get('effective_status')} | {row.get('claim_type')} | "
-            + f"{row.get('note_path')}"
+def normalize_rows(rows: Rows) -> Rows:
+    if type(rows) is not tuple or not rows:
+        raise ValueError("row carrier must be a nonempty finite tuple")
+    row_labels: set[str] = set()
+    expected_columns: tuple[str, ...] | None = None
+    expected_column_set: frozenset[str] | None = None
+    normalized: list[tuple[str, WeightPacket]] = []
+    for item in rows:
+        if type(item) is not tuple or len(item) != 2:
+            raise TypeError("each row entry must be a (row, packet) tuple")
+        row_label, packet = item
+        if type(row_label) is not str or not row_label:
+            raise TypeError("row labels must be nonempty strings")
+        if row_label in row_labels:
+            raise ValueError(f"duplicate row label: {row_label}")
+        row_labels.add(row_label)
+        normalized_packet = normalize_exact(packet)
+        columns = tuple(label for label, _ in normalized_packet)
+        column_set = frozenset(columns)
+        if expected_columns is None:
+            expected_columns = columns
+            expected_column_set = column_set
+        elif column_set != expected_column_set:
+            raise ValueError("every row must use the same column-label set")
+        by_column = dict(normalized_packet)
+        normalized.append(
+            (
+                row_label,
+                tuple((column, by_column[column]) for column in expected_columns),
+            )
         )
-    export_checks(rows, before)
-    return rows
+    return tuple(normalized)
 
 
-def export_checks(rows: list[dict], ledger_sha: str) -> None:
-    section("Bounded ledger-row export checks")
-    report("bounded character/path/channel row export exists", SLICE.exists(), str(SLICE.relative_to(ROOT)))
-    if not SLICE.exists():
-        return
+def compile_edges(definitions: tuple[Edge, ...]) -> dict[str, Edge]:
+    if type(definitions) is not tuple:
+        raise TypeError("edge definitions must be a finite tuple")
+    compiled: dict[str, Edge] = {}
+    for edge in definitions:
+        if type(edge) is not Edge:
+            raise TypeError("every edge definition must be an Edge")
+        if any(
+            type(value) is not str or not value
+            for value in (edge.edge_id, edge.source, edge.target)
+        ):
+            raise TypeError("edge identifiers and endpoints must be nonempty strings")
+        if edge.edge_id in compiled:
+            raise ValueError(f"duplicate edge definition: {edge.edge_id}")
+        exact_fraction(edge.weight, f"edge weight for {edge.edge_id}")
+        if edge.weight < 0:
+            raise ValueError(f"negative edge weight for {edge.edge_id}")
+        compiled[edge.edge_id] = edge
+    return compiled
 
-    data = json.loads(SLICE.read_text(encoding="utf-8"))
-    expected_rows = expected_export_rows(rows)
-    report("slice export is for the character/path/channel bucket", data.get("bucket") == "character_path_channel_weight")
-    report("slice export records current ledger sha", data.get("ledger_sha256") == ledger_sha, data.get("ledger_sha256", ""))
-    report("slice export row count matches current split", data.get("row_count") == EXPECTED_ROWS, str(data.get("row_count")))
-    report("slice export rows match independently enumerated measure split", data.get("rows") == expected_rows)
+
+def evaluate_path(path: PathWord, edges: dict[str, Edge]) -> PathValue:
+    if type(path) is not PathWord or type(path.start) is not str or not path.start:
+        raise TypeError("path must have a nonempty supplied start vertex")
+    if type(path.edge_ids) is not tuple or any(
+        type(edge_id) is not str or not edge_id for edge_id in path.edge_ids
+    ):
+        raise TypeError("path edge identifiers must be a finite tuple of strings")
+    current = path.start
+    product = Fraction(1)
+    for edge_id in path.edge_ids:
+        edge = edges.get(edge_id)
+        if edge is None:
+            raise KeyError(f"missing edge definition: {edge_id}")
+        if edge.source != current:
+            raise ValueError(
+                f"broken path incidence at {edge_id}: expected source {current}"
+            )
+        product *= edge.weight
+        current = edge.target
+    return PathValue(current, product)
 
 
-def firewall_checks() -> None:
-    section("Firewall flags")
-    audit_data_written = False
-    audit_verdict_applied = False
-    promoted_or_retained_claim = False
-    physical_measure_selected = False
-    path_rule_derived_from_record = False
-    character_packet_derived_from_record = False
-    channel_rule_derived_from_record = False
-    generation_or_koide_dial_selected = False
-    born_law_derived_from_record = False
-    production_dynamics_derived = False
-    physical_arrow_derived_from_record = False
+def compose_paths(
+    left: PathWord, right: PathWord, edges: dict[str, Edge]
+) -> PathWord:
+    left_value = evaluate_path(left, edges)
+    evaluate_path(right, edges)
+    if left_value.end != right.start:
+        raise ValueError("paths are not composable")
+    return PathWord(left.start, left.edge_ids + right.edge_ids)
 
-    report("audit data written flag is false", not audit_data_written)
-    report("audit verdict applied flag is false", not audit_verdict_applied)
-    report("promoted/retained claim flag is false", not promoted_or_retained_claim)
-    report("physical measure selected flag is false", not physical_measure_selected)
-    report("Record-derived path rule flag is false", not path_rule_derived_from_record)
-    report("Record-derived character packet flag is false", not character_packet_derived_from_record)
-    report("Record-derived channel rule flag is false", not channel_rule_derived_from_record)
-    report("generation/Koide dial selected flag is false", not generation_or_koide_dial_selected)
-    report("Record-derived Born law flag is false", not born_law_derived_from_record)
-    report("production dynamics derived flag is false", not production_dynamics_derived)
-    report("Record-derived physical arrow flag is false", not physical_arrow_derived_from_record)
+
+def lcm(a: int, b: int) -> int:
+    return abs(a * b) // gcd(a, b) if a and b else 0
+
+
+def normalize_independently(packet: WeightPacket) -> WeightPacket:
+    """Independent construction through common-denominator integer counts."""
+    if type(packet) is not tuple or not packet:
+        raise ValueError("independent carrier must be a nonempty tuple")
+    labels: set[str] = set()
+    denominator = 1
+    for label, raw_weight in packet:
+        if type(label) is not str or not label or label in labels:
+            raise ValueError("independent labels must be nonempty and unique")
+        labels.add(label)
+        weight = exact_fraction(raw_weight, f"independent weight for {label}")
+        if weight < 0:
+            raise ValueError("independent weights must be nonnegative")
+        denominator = lcm(denominator, weight.denominator)
+    counts = tuple(
+        weight.numerator * (denominator // weight.denominator)
+        for _, weight in packet
+    )
+    total_count = sum(counts)
+    if total_count <= 0:
+        raise ValueError("independent total must be positive")
+    return tuple(
+        (packet[index][0], Fraction(count, total_count))
+        for index, count in enumerate(counts)
+    )
+
+
+def path_product_independently(path: PathWord, edges: dict[str, Edge]) -> PathValue:
+    if type(path) is not PathWord or type(path.start) is not str or not path.start:
+        raise TypeError("independent path must have a supplied string start vertex")
+    if type(path.edge_ids) is not tuple or any(
+        type(edge_id) is not str or not edge_id for edge_id in path.edge_ids
+    ):
+        raise TypeError("independent edge identifiers must be a finite string tuple")
+    current = path.start
+    numerator = 1
+    denominator = 1
+    for edge_id in path.edge_ids:
+        if edge_id not in edges:
+            raise KeyError(f"independent missing edge: {edge_id}")
+        edge = edges[edge_id]
+        if edge.source != current:
+            raise ValueError("independent incidence mismatch")
+        numerator *= edge.weight.numerator
+        denominator *= edge.weight.denominator
+        current = edge.target
+    return PathValue(current, Fraction(numerator, denominator))
+
+
+def expect_raises(
+    error_types: type[Exception] | tuple[type[Exception], ...],
+    operation: Callable[[], object],
+) -> bool:
+    try:
+        operation()
+    except error_types:
+        return True
+    except Exception:
+        return False
+    return False
+
+
+REQUIRED_SOURCE_PHRASES = (
+    "**Claim type:** positive_theorem",
+    "**Dependencies:** none.",
+    "p_i = w_i/W",
+    "sum_{c in C} P_(r,c) = 1",
+    "A(P Q) = A(P) A(Q)",
+    "Repeated traversal is counted once per occurrence",
+    "Column order is representation only",
+    "compared by exact string equality",
+    "normalization cannot choose its own inputs",
+    "The theorem has no audit-census, ledger, queue, export, or row-count premise.",
+)
+
+FORBIDDEN_SOURCE_PATTERNS = (
+    r"\bRecord (?:derives|supplies|selects|fixes)\b",
+    r"\bthe normalized packet (?:is|selects) the physical\b",
+    r"\bBorn (?:law|rule) follows\b",
+    r"\ball \d+ character_path_channel_weight rows\b",
+    r"post_record_character_path_channel_weight_slice_2026_06_07\.json",
+    r"frontier_post_record_measure_weight_normalization_subdivision_2026_06_06\.py",
+    r"docs/audit/data/",
+    r"\baudit_status\s*:",
+    r"\beffective_status\s*:",
+)
+
+
+def source_contract_valid(text: str) -> bool:
+    flat = " ".join(text.split())
+    return all(phrase in flat for phrase in REQUIRED_SOURCE_PHRASES) and all(
+        re.search(pattern, flat, flags=re.IGNORECASE) is None
+        for pattern in FORBIDDEN_SOURCE_PATTERNS
+    )
+
+
+def source_scope_checks() -> None:
+    section("Source theorem and semantic scope checks")
+    text = NOTE.read_text(encoding="utf-8")
+    flat = " ".join(text.split())
+    report("source note exists", NOTE.is_file())
+    for phrase in REQUIRED_SOURCE_PHRASES:
+        report(f"source contains theorem anchor: {phrase}", phrase in flat)
+
+    for pattern in FORBIDDEN_SOURCE_PATTERNS:
+        report(
+            f"source excludes volatile or physical overclaim: {pattern}",
+            re.search(pattern, flat, flags=re.IGNORECASE) is None,
+        )
+
+
+def theorem_examples() -> None:
+    section("Exact finite normalization theorem")
+    path_packet = (("straight", Fraction(4)), ("bend", Fraction(1)))
+    normalized = normalize_exact(path_packet)
+    report(
+        "4:1 packet normalizes exactly",
+        normalized == (("straight", Fraction(4, 5)), ("bend", Fraction(1, 5))),
+        str(normalized),
+    )
+    report("normalized entries are nonnegative", all(w >= 0 for _, w in normalized))
+    report(
+        "normalized packet sums exactly to one",
+        sum((w for _, w in normalized), Fraction(0)) == 1,
+    )
+    with_zero = normalize_exact((("zero", Fraction(0)), ("positive", Fraction(5, 7))))
+    report(
+        "zero entries are allowed with positive total",
+        with_zero == (("zero", Fraction(0)), ("positive", Fraction(1))),
+    )
+    character = normalize_exact(
+        (("trivial", Fraction(6)), ("fundamental", Fraction(3)), ("adjoint", Fraction(1)))
+    )
+    report(
+        "6:3:1 packet normalizes exactly",
+        character
+        == (
+            ("trivial", Fraction(3, 5)),
+            ("fundamental", Fraction(3, 10)),
+            ("adjoint", Fraction(1, 10)),
+        ),
+        str(character),
+    )
+
+    section("Exact row-stochastic corollary")
+    rows = (
+        ("A", (("A", Fraction(3)), ("B", Fraction(1)))),
+        ("B", (("A", Fraction(1)), ("B", Fraction(1)))),
+        ("C", (("A", Fraction(0)), ("B", Fraction(5, 2)))),
+    )
+    stochastic = normalize_rows(rows)
+    report("three supplied rows normalize", len(stochastic) == 3, str(stochastic))
+    report(
+        "every row sums exactly to one",
+        all(sum((w for _, w in row), Fraction(0)) == 1 for _, row in stochastic),
+    )
+    report(
+        "A row is exactly (3/4,1/4)",
+        stochastic[0][1] == (("A", Fraction(3, 4)), ("B", Fraction(1, 4))),
+    )
+    report(
+        "B row is exactly (1/2,1/2)",
+        stochastic[1][1] == (("A", Fraction(1, 2)), ("B", Fraction(1, 2))),
+    )
+    permuted = normalize_rows(
+        (
+            ("A", (("left", Fraction(3)), ("right", Fraction(1)))),
+            ("B", (("right", Fraction(1)), ("left", Fraction(1)))),
+        )
+    )
+    report(
+        "common column carrier is independent of row tuple order",
+        permuted[1][1]
+        == (("left", Fraction(1, 2)), ("right", Fraction(1, 2))),
+    )
+
+    section("Supplied-edge path-product theorem")
+    edges = compile_edges(
+        (
+            Edge("s_m", "s", "m", Fraction(2)),
+            Edge("m_t", "m", "t", Fraction(3)),
+            Edge("s_t", "s", "t", Fraction(1)),
+            Edge("loop", "m", "m", Fraction(2, 3)),
+        )
+    )
+    first = PathWord("s", ("s_m",))
+    second = PathWord("m", ("m_t",))
+    two_step = compose_paths(first, second, edges)
+    direct = PathWord("s", ("s_t",))
+    report("first path has exact weight 2", evaluate_path(first, edges) == PathValue("m", Fraction(2)))
+    report("second path has exact weight 3", evaluate_path(second, edges) == PathValue("t", Fraction(3)))
+    report("composed path has exact weight 6", evaluate_path(two_step, edges) == PathValue("t", Fraction(6)))
+    report(
+        "path concatenation is multiplicative",
+        evaluate_path(two_step, edges).weight
+        == evaluate_path(first, edges).weight * evaluate_path(second, edges).weight,
+    )
+    empty = PathWord("m", ())
+    report("empty path is the exact identity", evaluate_path(empty, edges) == PathValue("m", Fraction(1)))
+    loop_twice = PathWord("m", ("loop", "loop"))
+    report("repeated loop traversal counts twice", evaluate_path(loop_twice, edges) == PathValue("m", Fraction(4, 9)))
+    raw_paths = (
+        ("two_step", evaluate_path(two_step, edges).weight),
+        ("direct", evaluate_path(direct, edges).weight),
+    )
+    report(
+        "6:1 path carrier normalizes exactly",
+        normalize_exact(raw_paths)
+        == (("two_step", Fraction(6, 7)), ("direct", Fraction(1, 7))),
+    )
+
+
+def independent_checks() -> None:
+    section("Independent exact reconstruction")
+    packets = (
+        (("a", Fraction(4)), ("b", Fraction(1))),
+        (("a", Fraction(1, 2)), ("b", Fraction(1, 3)), ("c", Fraction(1, 6))),
+        (("a", Fraction(0)), ("b", Fraction(7, 11))),
+        (("a", Fraction(6)), ("b", Fraction(3)), ("c", Fraction(1))),
+    )
+    for index, packet in enumerate(packets, start=1):
+        rebuilt = normalize_independently(packet)
+        report(
+            f"packet {index}: common-denominator reconstruction agrees",
+            rebuilt == normalize_exact(packet),
+            str(rebuilt),
+        )
+        report(
+            f"packet {index}: independent sum is exactly one",
+            sum((weight for _, weight in rebuilt), Fraction(0)) == 1,
+        )
+
+    rows = (
+        ("r0", (("c0", Fraction(2, 5)), ("c1", Fraction(3, 5)))),
+        ("r1", (("c0", Fraction(7, 9)), ("c1", Fraction(2, 9)))),
+    )
+    primary_rows = normalize_rows(rows)
+    independent_rows = tuple(
+        (row_label, normalize_independently(packet)) for row_label, packet in rows
+    )
+    report("multiple rows agree by independent construction", independent_rows == primary_rows)
+
+    edges = compile_edges(
+        (
+            Edge("a", "u", "v", Fraction(2, 3)),
+            Edge("b", "v", "w", Fraction(5, 7)),
+            Edge("c", "w", "x", Fraction(11, 13)),
+            Edge("loop", "x", "x", Fraction(3, 4)),
+        )
+    )
+    paths = (
+        PathWord("u", ()),
+        PathWord("u", ("a",)),
+        PathWord("u", ("a", "b", "c")),
+        PathWord("x", ("loop", "loop", "loop")),
+    )
+    for index, path in enumerate(paths, start=1):
+        independent = path_product_independently(path, edges)
+        report(
+            f"path {index}: numerator/denominator product agrees",
+            independent == evaluate_path(path, edges),
+            str(independent),
+        )
+    left = PathWord("u", ("a", "b"))
+    right = PathWord("w", ("c",))
+    composed = compose_paths(left, right, edges)
+    report(
+        "independent composition example is multiplicative",
+        path_product_independently(composed, edges).weight
+        == path_product_independently(left, edges).weight
+        * path_product_independently(right, edges).weight,
+    )
+
+    section("Independent malformed-input reconstruction")
+    report(
+        "independent route rejects an empty carrier",
+        expect_raises(ValueError, lambda: normalize_independently(())),
+    )
+    report(
+        "independent route rejects zero total",
+        expect_raises(
+            ValueError,
+            lambda: normalize_independently(
+                (("a", Fraction(0)), ("b", Fraction(0)))
+            ),
+        ),
+    )
+    report(
+        "independent route rejects a negative weight",
+        expect_raises(
+            ValueError,
+            lambda: normalize_independently(
+                (("a", Fraction(2)), ("b", Fraction(-1)))
+            ),
+        ),
+    )
+    inexact = (("a", Fraction(1)), ("b", 0.5))
+    report(
+        "independent route rejects a float weight",
+        expect_raises(
+            TypeError,
+            lambda: normalize_independently(inexact),  # type: ignore[arg-type]
+        ),
+    )
+    report(
+        "independent route rejects duplicate labels",
+        expect_raises(
+            ValueError,
+            lambda: normalize_independently(
+                (("a", Fraction(1)), ("a", Fraction(2)))
+            ),
+        ),
+    )
+    report(
+        "independent route rejects a missing edge",
+        expect_raises(
+            KeyError,
+            lambda: path_product_independently(
+                PathWord("u", ("missing",)), edges
+            ),
+        ),
+    )
+    report(
+        "independent route rejects broken incidence",
+        expect_raises(
+            ValueError,
+            lambda: path_product_independently(PathWord("v", ("a",)), edges),
+        ),
+    )
+
+
+def hostile_mutation_acceptance(name: str) -> bool:
+    """Return whether a false or malformed mutation incorrectly passes."""
+    if name == "empty-carrier":
+        return not expect_raises(ValueError, lambda: normalize_exact(()))
+    if name == "zero-total":
+        return not expect_raises(
+            ValueError,
+            lambda: normalize_exact((("a", Fraction(0)), ("b", Fraction(0)))),
+        )
+    if name == "negative-weight":
+        return not expect_raises(
+            ValueError,
+            lambda: normalize_exact((("a", Fraction(2)), ("b", Fraction(-1)))),
+        )
+    if name == "float-weight":
+        malformed = (("a", Fraction(1)), ("b", 0.5))
+        return not expect_raises(TypeError, lambda: normalize_exact(malformed))  # type: ignore[arg-type]
+    if name == "integer-weight":
+        malformed = (("a", Fraction(1)), ("b", 1))
+        return not expect_raises(TypeError, lambda: normalize_exact(malformed))  # type: ignore[arg-type]
+    if name == "duplicate-carrier-label":
+        return not expect_raises(
+            ValueError,
+            lambda: normalize_exact((("a", Fraction(1)), ("a", Fraction(2)))),
+        )
+    if name == "wrong-total-normalization":
+        source = (("a", Fraction(4)), ("b", Fraction(1)))
+        mutated = (("a", Fraction(2, 3)), ("b", Fraction(1, 6)))
+        return verify_normalized(source, mutated)
+    if name == "mismatched-row-carrier":
+        rows = (
+            ("r0", (("a", Fraction(1)), ("b", Fraction(1)))),
+            ("r1", (("a", Fraction(1)), ("c", Fraction(1)))),
+        )
+        return not expect_raises(ValueError, lambda: normalize_rows(rows))
+    if name == "duplicate-edge-definition":
+        definitions = (
+            Edge("e", "s", "t", Fraction(1)),
+            Edge("e", "s", "u", Fraction(2)),
+        )
+        return not expect_raises(ValueError, lambda: compile_edges(definitions))
+    if name == "negative-edge-weight":
+        definitions = (Edge("e", "s", "t", Fraction(-1)),)
+        return not expect_raises(ValueError, lambda: compile_edges(definitions))
+    if name == "float-edge-weight":
+        definitions = (Edge("e", "s", "t", 0.5),)
+        return not expect_raises(
+            TypeError,
+            lambda: compile_edges(definitions),  # type: ignore[arg-type]
+        )
+    if name == "missing-path-edge":
+        edges = compile_edges((Edge("e", "s", "t", Fraction(1)),))
+        return not expect_raises(KeyError, lambda: evaluate_path(PathWord("s", ("missing",)), edges))
+    if name == "broken-incidence":
+        edges = compile_edges((Edge("e", "s", "t", Fraction(1)),))
+        return not expect_raises(ValueError, lambda: evaluate_path(PathWord("u", ("e",)), edges))
+    if name == "noncomposable-paths":
+        edges = compile_edges(
+            (
+                Edge("e", "s", "t", Fraction(2)),
+                Edge("f", "u", "v", Fraction(3)),
+            )
+        )
+        return not expect_raises(
+            ValueError,
+            lambda: compose_paths(PathWord("s", ("e",)), PathWord("u", ("f",)), edges),
+        )
+    if name == "sum-instead-of-product":
+        mutated_path_weight = Fraction(2) + Fraction(3)
+        exact_path_weight = Fraction(2) * Fraction(3)
+        return mutated_path_weight == exact_path_weight
+    if name == "drop-repeated-traversal":
+        edges = compile_edges((Edge("loop", "m", "m", Fraction(2, 3)),))
+        actual = evaluate_path(PathWord("m", ("loop", "loop")), edges).weight
+        mutated = edges["loop"].weight
+        return mutated == actual
+    if name == "physical-selection-inference":
+        mutated = NOTE.read_text(encoding="utf-8") + (
+            "\nThe normalized packet is the physical measure selected.\n"
+        )
+        return source_contract_valid(mutated)
+    raise KeyError(f"unknown hostile fixture: {name}")
+
+
+HOSTILE_FIXTURES = (
+    "empty-carrier",
+    "zero-total",
+    "negative-weight",
+    "float-weight",
+    "integer-weight",
+    "duplicate-carrier-label",
+    "wrong-total-normalization",
+    "mismatched-row-carrier",
+    "duplicate-edge-definition",
+    "negative-edge-weight",
+    "float-edge-weight",
+    "missing-path-edge",
+    "broken-incidence",
+    "noncomposable-paths",
+    "sum-instead-of-product",
+    "drop-repeated-traversal",
+    "physical-selection-inference",
+)
+
+
+def hostile_checks() -> None:
+    section("Hostile mutation rejection")
+    for name in HOSTILE_FIXTURES:
+        accepted = hostile_mutation_acceptance(name)
+        report(f"hostile mutation rejected: {name}", not accepted)
+
+    class FractionSubclass(Fraction):
+        pass
+
+    class StringSubclass(str):
+        pass
+
+    strict_packet_mutations = (
+        ("boolean weight", (("a", True),)),
+        ("Fraction subclass weight", (("a", FractionSubclass(1, 2)),)),
+        ("string subclass label", ((StringSubclass("a"), Fraction(1)),)),
+        ("list entry", (["a", Fraction(1)],)),
+        ("one-field entry", (("a",),)),
+        ("three-field entry", (("a", Fraction(1), "extra"),)),
+    )
+    for label, malformed in strict_packet_mutations:
+        report(
+            f"strict packet domain rejects {label}",
+            expect_raises(
+                (TypeError, ValueError),
+                lambda malformed=malformed: normalize_exact(malformed),  # type: ignore[arg-type]
+            ),
+        )
+
+    duplicate_rows = (
+        ("row", (("a", Fraction(1)),)),
+        ("row", (("a", Fraction(2)),)),
+    )
+    report(
+        "duplicate row identifiers are rejected",
+        expect_raises(ValueError, lambda: normalize_rows(duplicate_rows)),
+    )
+    permuted_rows = (
+        ("r0", (("a", Fraction(1)), ("b", Fraction(2)))),
+        ("r1", (("b", Fraction(3)), ("a", Fraction(4)))),
+    )
+    report(
+        "a permuted row with the same column set is canonicalized",
+        normalize_rows(permuted_rows)[1][1]
+        == (("a", Fraction(4, 7)), ("b", Fraction(3, 7))),
+    )
+
+    unicode_packet = (("é", Fraction(1)), ("e\u0301", Fraction(1)))
+    report(
+        "distinct Unicode strings remain distinct identifiers",
+        normalize_exact(unicode_packet)
+        == (("é", Fraction(1, 2)), ("e\u0301", Fraction(1, 2))),
+    )
+    report(
+        "an exact repeated Unicode identifier is rejected",
+        expect_raises(
+            ValueError,
+            lambda: normalize_exact((("λ", Fraction(1)), ("λ", Fraction(2)))),
+        ),
+    )
+
+    empty_edges = compile_edges(())
+    report(
+        "empty path over an empty edge set has identity weight",
+        evaluate_path(PathWord("v", ()), empty_edges)
+        == PathValue("v", Fraction(1)),
+    )
+    zero_edges = compile_edges((Edge("zero", "s", "t", Fraction(0)),))
+    report(
+        "a zero-weight edge gives a zero path product",
+        evaluate_path(PathWord("s", ("zero",)), zero_edges)
+        == PathValue("t", Fraction(0)),
+    )
+    report(
+        "integer edge weights are rejected rather than coerced",
+        expect_raises(
+            TypeError,
+            lambda: compile_edges((Edge("e", "s", "t", 1),)),  # type: ignore[arg-type]
+        ),
+    )
+    report(
+        "Fraction-subclass edge weights are rejected rather than coerced",
+        expect_raises(
+            TypeError,
+            lambda: compile_edges(
+                (Edge("e", "s", "t", FractionSubclass(1, 2)),)
+            ),
+        ),
+    )
+
+
+def intentional_failure_checks(fixture: str) -> None:
+    section("Intentional hostile failure controls")
+    selected = HOSTILE_FIXTURES if fixture == "all" else (fixture,)
+    for name in selected:
+        accepted = hostile_mutation_acceptance(name)
+        report(
+            f"intentional false acceptance must fail: {name}",
+            accepted,
+            "mutation did not satisfy the exact theorem contract",
+        )
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--mode",
+        choices=("normal", "independent", "hostile", "intentional-failure"),
+        default="normal",
+    )
+    aliases = parser.add_mutually_exclusive_group()
+    aliases.add_argument("--independent", action="store_true", help="alias for --mode independent")
+    aliases.add_argument("--hostile", action="store_true", help="alias for --mode hostile")
+    parser.add_argument("--fixture", choices=("all",) + HOSTILE_FIXTURES, default="all")
+    args = parser.parse_args()
+    if args.independent:
+        if args.mode != "normal":
+            parser.error("--independent cannot be combined with an explicit non-normal --mode")
+        args.mode = "independent"
+    if args.hostile:
+        if args.mode != "normal":
+            parser.error("--hostile cannot be combined with an explicit non-normal --mode")
+        args.mode = "hostile"
+    if args.fixture != "all" and args.mode != "intentional-failure":
+        parser.error("--fixture requires --mode intentional-failure")
+    return args
 
 
 def main() -> int:
-    source_anchor_checks()
-    certificate_checks()
-    rows = row_checks()
-    firewall_checks()
-    print()
-    print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
-    print(f"CHARACTER_PATH_CHANNEL_WEIGHT_ROWS={len(rows)}")
-    print("AUDIT_LEDGER_WRITTEN=FALSE")
-    print("AUDIT_VERDICT_APPLIED=FALSE")
-    print("PHYSICAL_MEASURE_SELECTED=FALSE")
-    print("PATH_RULE_DERIVED_FROM_RECORD=FALSE")
-    print("CHARACTER_PACKET_DERIVED_FROM_RECORD=FALSE")
-    print("CHANNEL_RULE_DERIVED_FROM_RECORD=FALSE")
-    print("GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE")
-    print("BORN_LAW_DERIVED_FROM_RECORD=FALSE")
-    print("PRODUCTION_DYNAMICS_DERIVED=FALSE")
-    print("PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE")
+    args = parse_args()
+    source_scope_checks()
+    if args.mode == "normal":
+        theorem_examples()
+    elif args.mode == "independent":
+        independent_checks()
+    elif args.mode == "hostile":
+        hostile_checks()
+    else:
+        intentional_failure_checks(args.fixture)
+    print(f"\nSUMMARY: MODE={args.mode} PASS={PASS} FAIL={FAIL}")
+    print("THEOREM_SCOPE=EXACT_FINITE_RATIONAL_NORMALIZATION_ROW_STOCHASTICITY_AND_SUPPLIED_EDGE_PATH_PRODUCTS")
     return 0 if FAIL == 0 else 1
 
 

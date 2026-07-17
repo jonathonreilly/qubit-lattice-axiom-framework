@@ -1,164 +1,170 @@
-# Alpha_s Universal Two-Loop Beta-Kernel Theorem Note (2026-06-18)
+# Defined Two-Coefficient Polynomial Vector-Field Algebra Theorem Note (2026-06-18)
 
-**Type:** bounded_theorem
-**Claim type:** bounded_theorem
-**Status:** bounded algebra/convention kernel conditional on supplied universal
-`beta_0`/`beta_1` coefficient templates
+**Type:** positive_theorem
 **Primary runner:** `scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py`
-**Runner summary:** `SUMMARY: PASS=30 FAIL=0`
-**Parent audit pressure:** `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02`
+**Runner cache:**
+`logs/runner-cache/frontier_alpha_s_universal_beta_kernel_2026_06_18.txt`
+**Dependencies:** none. All symbols and coefficient polynomials used below are
+defined theorem data.
 
-## 1. Purpose
+## 1. Exact theorem data
 
-The alpha_s direct Wilson-loop audit names "4-loop QCD running" as one of the
-load-bearing imported corrections. This note carves out the part that can be
-proved on the framework's existing SU(3) active-flavor surface without
-adopting MSbar higher-loop counterterm machinery: exact substitution and
-coupling-convention normalization for supplied universal `beta_0` and
-`beta_1` coefficient templates.
-
-The theorem is intentionally narrower than a physical alpha_s(M_Z) running
-claim. It is a bounded algebra/convention kernel conditional on those supplied
-one- and two-loop coefficient templates, not a derivation of the loop
-coefficients from first principles.
-
-## 2. Boundary Clauses
-
-This note does not derive the universal `beta_0` or `beta_1` loop coefficient
-formulas. They are supplied coefficient templates for this bounded row.
-
-This note proves the exact SU(3) substitution, active-flavor specialization,
-and coupling-convention consequences conditional on those supplied templates.
-
-This note does not derive beta_2, beta_3, MSbar counterterms, or four-loop running.
-
-This note does not derive physical threshold masses.
-
-This note does not promote any downstream alpha_s(M_Z) value to retained status.
-
-This note does not derive the Sommer scale, a physical Wilson-loop scale
-anchor, pure-gauge-to-full-QCD sea-quark transfer, or current `g_bare`
-normalization.
-
-## 3. Native Surface
-
-Use the framework's SU(3) Gell-Mann-normalized active-flavor surface:
+Work over exact rational arithmetic and let `n` be a rational parameter. Set
 
 ```text
-N = 3
-C_F = (N^2 - 1) / (2N) = 4/3
-C_A = N = 3
-T_F = 1/2
+N = 3,
+C_A = N = 3,
+C_F = (N^2 - 1)/(2N) = 4/3,
+T_F = 1/2.
 ```
 
-The active-flavor parameter `n_f` is left symbolic. Physical threshold
-placement is not used.
+These equalities are definitions inside this theorem packet. They are not
+claims that a physical colour carrier, a gauge theory, or a matter spectrum
+has been selected.
 
-## 4. Supplied Universal Coefficient Templates
-
-The supplied one-loop and two-loop QCD coefficient templates are the
-scheme-independent universal terms:
+Define two affine coefficient polynomials by
 
 ```text
-beta_0(n_f) = (11/3) C_A - (4/3) T_F n_f
+b0(n) = (11/3) C_A - (4/3) T_F n,
 
-beta_1(n_f) =
-  (34/3) C_A^2
-  - 4 C_F T_F n_f
-  - (20/3) C_A T_F n_f
+b1(n) = (34/3) C_A^2
+        - 4 C_F T_F n
+        - (20/3) C_A T_F n.
 ```
 
-Conditional on those templates, substituting the SU(3) surface gives exact
-rational functions:
+No QFT calculation, universality statement, or physical beta-function
+interpretation is part of these definitions.
+
+## 2. Formal coefficient theorem
+
+Direct exact substitution gives
 
 ```text
-beta_0(n_f) = 11 - 2 n_f / 3
-beta_1(n_f) = 102 - 38 n_f / 3
+b0(n) = 11 - 2n/3,
+b1(n) = 102 - 38n/3.
 ```
 
-The runner verifies these exact substitution forms and the active-flavor
-values:
+Consequently, for every rational `n`,
 
 ```text
-beta_0(6) = 7
-beta_0(5) = 23/3
-beta_1(6) = 26
-beta_1(5) = 116/3
-beta_1(4) = 154/3
-beta_1(3) = 64
+b0(n + 1) - b0(n) = -2/3,
+b1(n + 1) - b1(n) = -38/3.
 ```
 
-## 5. Coupling Conventions
-
-For the gauge coupling convention
+The exact listed specializations are
 
 ```text
-dg / d ln(mu) =
-  - beta_0 g^3 / (16 pi^2)
-  - beta_1 g^5 / (16 pi^2)^2
+b0(6) = 7,       b0(5) = 23/3,
+b1(6) = 26,      b1(5) = 116/3,
+b1(4) = 154/3,   b1(3) = 64.
 ```
 
-and `alpha_s = g^2 / (4 pi)`, the runner verifies the induced alpha_s
-convention:
+The roots are `b0(33/2) = 0` and `b1(153/19) = 0`. Thus, on
+nonnegative integers,
 
 ```text
-d alpha_s / d ln(mu) =
-  - beta_0 alpha_s^2 / (2 pi)
-  - beta_1 alpha_s^3 / (8 pi^2).
+b0(n) > 0 for 0 <= n <= 16 and b0(n) < 0 for n >= 17,
+b1(n) > 0 for 0 <= n <= 8  and b1(n) < 0 for n >= 9.
 ```
 
-For `a = alpha_s / (4 pi)`, it verifies
+These are sign facts about the defined affine polynomials only. Terms such as
+"active flavour" and "asymptotic freedom" would add physical semantics that
+this theorem does not supply.
+
+## 3. Defined vector field and induced variables
+
+Let `pi` denote the exact positive constant and let `g` be a real formal
+coordinate. Define the polynomial vector field
 
 ```text
-d a / d ln(mu) = -2 beta_0 a^2 - 2 beta_1 a^3.
+V_g(g,n) = -b0(n) g^3/(16 pi^2)
+           -b1(n) g^5/(16 pi^2)^2.
 ```
 
-These checks prevent coefficient-normalization drift from masquerading as a
-science result.
+For any differentiable real trajectory `g(s)` satisfying
+`dg/ds = V_g(g,n)`, define the induced variables
 
-## 6. Falsifiers
+```text
+alpha = g^2/(4 pi),
+a = alpha/(4 pi),
+```
 
-The runner includes deliberate wrong kernels:
+Because `pi > 0` and `g` is real, the induced variables satisfy
+`alpha >= 0` and `a >= 0`. The square map is many-to-one, so this is not a
+global invertible coordinate change on the real line. The chain rule gives,
+on the induced nonnegative half-lines,
 
-- omitting the `C_F` term in `beta_1`;
-- drifting the trace normalization from `T_F = 1/2` to `T_F = 1`;
-- using generation count as active quark flavor count.
+```text
+V_alpha(alpha,n)
+  = -b0(n) alpha^2/(2 pi)
+    -b1(n) alpha^3/(8 pi^2),
 
-Each produces a different coefficient, so the theorem checks a real
-normalization/substitution dependency class rather than only printing known
-comparator values.
+V_a(a,n)
+  = -2 b0(n) a^2 - 2 b1(n) a^3.
+```
 
-## 7. Audit Implication
+The first identity follows from `d alpha/dg = g/(2 pi)` and the exact
+substitutions `g^4 = 16 pi^2 alpha^2` and
+`g^6 = 64 pi^3 alpha^3`. The second follows from
+`d a/d alpha = 1/(4 pi)` and `alpha = 4 pi a`. Their polynomial right-hand
+sides have unique algebraic extensions to arbitrary real `alpha` and `a`, but
+only the nonnegative values are induced by a real `g`. The trajectory
+parameter `s` is untyped formal data; no physical scale interpretation is
+used. No numerical coupling value, small-coupling estimate, convergence
+statement, or running solution is used.
 
-If accepted, this theorem partially retires the SU(3) substitution and
-coupling-convention part of the "4-loop QCD running" import. It does not retire
-the origin of the universal `beta_0`/`beta_1` coefficient formulas themselves.
+## 4. Exact scope firewall
 
-It does not close the full alpha_s running bridge. The remaining residuals are:
+The theorem proves only algebra about explicitly defined polynomials and their
+explicitly defined vector field. In particular, it does not establish that
 
-- retained/native derivation or approved-premise registration of the supplied
-  universal `beta_0` and `beta_1` coefficient templates;
-- `beta_2` and `beta_3` in an MSbar or other specified scheme;
-- dimensional-regularization/counterterm machinery for those scheme-dependent
-  coefficients;
-- physical threshold placement and decoupling beyond the abstract kernel;
-- Sommer-scale or alternate physical scale setting;
-- pure-gauge-to-full-QCD transfer;
-- current normalization authority for the Wilson surface.
+- `b0` or `b1` is a QCD, gauge-theory, loop, or scheme-independent
+  coefficient;
+- `N=3`, `C_F`, `C_A`, or `T_F` describes a physical colour sector;
+- `n` counts physical or active flavours, or that any threshold selects a
+  value of `n`;
+- `g`, `alpha`, or `a` is a physical coupling, `s` is `ln(mu)` or any other
+  physical scale variable, or the vector field governs physical running;
+- the displayed coefficient templates follow from the framework axioms,
+  approved primitives, Casimirs, a matter carrier, or QFT;
+- higher coefficients, counterterms, a renormalization scheme, threshold
+  matching, `alpha_s(M_Z)`, a Wilson action, scale setting, sea-quark
+  transfer, or `g_bare` normalization have been supplied.
 
-## 8. Reproducibility
+Those physical and QFT identifications remain separate inputs or open bridges.
+They are not dependencies of this formal theorem because none is used in its
+proof.
+
+## 5. Falsification and reproducibility
+
+The runner uses exact `Fraction` and SymPy identities. It provides:
+
+- a normal derivation of the coefficient, slope, root, sign, and induced-variable
+  identities;
+- an independent symbolic reconstruction and multiple rational `(n,g)`
+  examples;
+- hostile controls that must reject changed coefficients, signs, convention
+  factors, and physical-semantics requests; and
+- individually selectable intentional-failure fixtures. Every individual
+  fixture and the aggregate fixture exit nonzero when the mutation is
+  detected.
 
 Run:
 
 ```bash
-python3 scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py
+python3 scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py --mode normal
+python3 scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py --mode independent
+python3 scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py --mode hostile
+python3 scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py --mode intentional-failure --fixture all
 ```
 
-Expected summary:
+The default mode is `normal`. The cached output records that default run.
 
-```text
-SUMMARY: PASS=30 FAIL=0
-```
+## 6. Direct-consumer boundary
 
-The cached output is recorded at
-`logs/runner-cache/frontier_alpha_s_universal_beta_kernel_2026_06_18.txt`.
+The direct consumer
+`ALPHA_S_4LOOP_RUNNING_DERIVATION_PARTIAL_NOTE_2026-05-10_4loop.md` may consume
+the exact formal identities above only after keeping the QFT
+coefficient templates and every physical interpretation explicit. This row
+cannot be cited as authority for physical QCD coefficients, universality,
+scheme independence, active-flavour selection, or physical running.

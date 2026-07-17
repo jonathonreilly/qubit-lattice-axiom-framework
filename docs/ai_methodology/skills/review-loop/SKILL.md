@@ -191,9 +191,9 @@ Authors are expected to run [`PREFLIGHT.md`](PREFLIGHT.md) before requesting
 review. The pre-flight is authoring discipline, not a gate: it grants no
 standing, replaces no reviewer lens, and its absence blocks nothing by
 itself — but a reviewer may cite a skipped pre-flight item as a finding when
-the defect it would have caught is present, and repeated pre-flight-class
-findings in one PR are grounds to return the PR to its author wholesale
-rather than fix-and-iterate.
+the defect it would have caught is present. Whether such findings are fixed
+in place or the branch is rejected follows the existing Fix Policy and
+close-with-reason path; the checklist adds no new disposition.
 
 ## Arguments
 

@@ -301,7 +301,7 @@
         },
         {
           "claim_id": "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "ac_phi_lambda_preserved_c3_structural_foreclosure_bounded_theorem_note_2026-05-10",
@@ -2935,6 +2935,6 @@
       "uncertified_count": 669
     }
   ],
-  "repo_head": "de9d4f2b2ab2363cda210a03e1dae7d8857ffac8",
+  "repo_head": "935f25c61abeb61dfcc219903b64570908b04e7f",
   "schema": "lane_certification_v2"
 }

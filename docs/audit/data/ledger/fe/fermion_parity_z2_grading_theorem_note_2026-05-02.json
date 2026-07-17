@@ -1281,6 +1281,59 @@
         "total_pass": 7
       },
       "verdict_rationale": "The finite-dimensional parity identities F1-F7 follow from the occupation basis and Pauli anticommutation, and the runner genuinely verifies those identities for N=4. The runner does not test F8. A Hamiltonian such as a_1^dagger a_2^dagger + a_2 a_1 is Z_2-even and commutes with F but has a nonzero commutator with Q_hat_total, disproving the claimed equivalence and preventing the stated scope from closing."
+    },
+    {
+      "archived_at": "2026-07-17T19:00:57.945363+00:00",
+      "audit_date": "2026-07-17T19:00:48.268236+00:00",
+      "audit_invocation_history": [
+        "36e7ab8edaa141128cb49d653e6e939e"
+      ],
+      "audit_invocation_id": "36e7ab8edaa141128cb49d653e6e939e",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 19.12,
+        "runner_hash": "ff0ed6563e57c41b967e7775facd14c0e20f43b55d0e25b9a2596daca2e83c51",
+        "transitive_descendants": 1573
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-58e4c08c1468496b97e6370ca585e6f7-fermion_parity_z2_gradin-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The mathematical derivation is internally closed, but the clean audit chain is not: the supplied stdout lacks the mandatory resolution-stratified N5 and independent N7 evidence for the derived negative boundary.",
+      "claim_scope": "Exact finite-dimensional Jordan-Wigner CAR and parity grading on a supplied ordered N-mode occupation space, including the parity-conservation criterion and the N>=2 pair-Hamiltonian separation from number conservation.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-17T19:00:48.268236+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The exact pair Hamiltonian H_pair=|00><11|+|11><00| commutes with F while [Q,H_pair]=2a_1^dagger a_2^dagger-2a_2a_1 is nonzero.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add current-cycle N1 route lines, five-resolution N5 lines, and an independent N7 steelman-resolution line to the runner stdout, then re-audit the unchanged note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The source proof and exact runner support the algebraic core and explicit pair counterexample; no hidden dependency, external comparator, or tuning appears. However, the note asserts a derived negative boundary, and clean certification requires the N1-N8 discipline: N1 lacks five compliant route/attempt/outcome execution lines, N5 lacks the five required resolution-specific live strings, and consequently N7 cannot be formed on the required independent surfaces. N2 contains the single parity-versus-number wall; N3 is boundary prose, N4 has no prior-authority witness, and the N6/N8 candidates are unrelated to this finite-dimensional result. This is a runner-artifact conditional rather than evidence of a mathematical counterexample."
     }
   ],
   "prose_corrections": [],

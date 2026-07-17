@@ -2101,7 +2101,7 @@
         },
         {
           "claim_id": "qcd_low_energy_running_bridge_note_2026-05-01",
-          "effective_status": "unaudited"
+          "effective_status": "audited_failed"
         },
         {
           "claim_id": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
@@ -2935,6 +2935,6 @@
       "uncertified_count": 669
     }
   ],
-  "repo_head": "f433ddbe8bd530b2052c0b23c88248d7007682eb",
+  "repo_head": "638edd19de5214c6b549a7bbe85208054b2da8a5",
   "schema": "lane_certification_v2"
 }

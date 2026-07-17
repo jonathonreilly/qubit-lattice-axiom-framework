@@ -5,7 +5,7 @@ notes and runners. For current claim strength, read the generated
 [claims](./CLAIMS_TABLE_EFFECTIVE_STATUS.md),
 [quantitative](./QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md), and
 [derivation-atlas](./DERIVATION_ATLAS_EFFECTIVE_STATUS.md) views together with
-the row-level [sharded audit ledger](../../audit/data/ledger/) (the rendered
+the row-level sharded audit ledger (`docs/audit/data/ledger/`) (the rendered
 `AUDIT_LEDGER.md` is a local pipeline-materialized cache, not tracked).
 
 Package appearance, a passing runner, and source-note words such as

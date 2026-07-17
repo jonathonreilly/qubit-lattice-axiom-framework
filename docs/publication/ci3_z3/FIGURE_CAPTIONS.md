@@ -3,7 +3,7 @@
 These are publication captions aligned to
 [FIGURE_PLAN.md](./FIGURE_PLAN.md). They are intentionally claim-disciplined.
 The current arXiv figure set now exists as live manuscript assets in
-[`./figures/`](./figures/).
+`./figures/`.
 
 ## Core arXiv draft
 

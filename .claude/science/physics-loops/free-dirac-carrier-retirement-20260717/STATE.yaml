@@ -1,0 +1,77 @@
+loop_slug: free-dirac-carrier-retirement-20260717
+mode: campaign
+reasoning_profile: sol_xhigh
+date_started: 2026-07-17
+started_at_utc: 2026-07-17T10:50:46Z
+runtime_budget: 18h
+target_end_utc: 2026-07-18T04:47:00Z
+checkpoint_interval: 30m
+deep_block: 90m
+last_checkpoint_utc: 2026-07-17T12:20:59Z
+deep_block_status: completed_90m
+target: best-honest-status
+branch: physics-loop/free-dirac-carrier-retirement-block01-20260717
+base_commit_at_start: fdb599edf8aaab375a719cd6d726e7120b5e9c57
+base_ref: origin/main
+current_goal: >-
+  Attempt a direct, retained-authority-grounded bridge from the current
+  Lattice+Qubit+Admissibility+Record surface and kinetic-isotropy primitive,
+  through the free staggered Clifford core, to the continuum free-Dirac
+  one-particle carrier, pole-residue measure, and finite CAR relabelling.
+starting_claim_id: free_dirac_poincare_representation_bounded_note_2026-05-30
+starting_effective_status: audited_conditional
+exact_starting_blocker: >-
+  missing_dependency_edge: add a one-hop retained-grade authority supplying
+  the continuum free-Dirac/Poincare carrier and CAR relabelling used by the
+  runner, then re-audit.
+cycle_count: 1
+block_count: 1
+active_route: staggered_pole_residue_plus_finite_jw_car
+hard_residual: >-
+  Can the retained blocked free-staggered Clifford symbol plus approved
+  kinetic isotropy derive the positive-mass-shell carrier and measure, and can
+  the actual Qubit/Lattice surface supply the inter-site composition needed
+  for CAR relabelling without importing statistics or composition?
+lock_status: >-
+  Shared automation lock failed with permission denied at /Users/jonreilly.
+  Branch-local supervisor lock acquired at SUPERVISOR_LOCK.json and refreshed
+  at 2026-07-17T11:48:28Z; this is not a campaign stop.
+worker_policy: >-
+  No additional Codex/subagent workers; sequential stuck fan-out only. No
+  audit worker or audit-verdict tooling.
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - .claude/science/physics-loops/free-dirac-carrier-retirement-20260717/
+  - docs/FREE_STAGGERED_POLE_RESIDUE_DIRAC_CARRIER_CAR_RELABELING_BOUNDED_THEOREM_NOTE_2026-07-17.md
+  - docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+  - scripts/free_staggered_pole_residue_dirac_carrier_car_relabeling_2026_07_17.py
+  - logs/runner-cache/free_staggered_pole_residue_dirac_carrier_car_relabeling_2026_07_17.txt
+  - docs/CANONICAL_HARNESS_INDEX.md
+open_imports:
+  - physical selection of the canonical free-staggered action from the four axioms
+  - inter-site physical tensor/CAR composition if required by the finite relabelling
+  - continuum existence or OS reconstruction if the claim exceeds a pole-carrier limit
+no_go_routes:
+  - textbook-only Poincare/Dirac/CAR restatement
+  - Pattern-A rescope of the existing eight runner checks
+  - ledger/status retagging from the science branch
+trace_gate_classification: direct_blocker_closure
+review_disposition: pass
+pr_status: ready_review_open
+pr_number: 5465
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5465
+next_exact_action: >-
+  Run the independent repo-native review-loop on PR 5465 and merge only on a
+  final pass. Independent audit is post-landing authority work outside this
+  physics-loop handoff.
+stop_condition: >-
+  Runtime budget, documented global queue/value-gate exhaustion after deep
+  pressure, or a true tooling/safety condition.

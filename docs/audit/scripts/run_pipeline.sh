@@ -50,6 +50,9 @@ python3 scripts/audit_model_family_normalization_guard.py
 echo "==> 1/18 build_citation_graph.py"
 python3 docs/audit/scripts/build_citation_graph.py
 
+echo "==> 1b/18 write_citation_graph_manifest.py (tracked graph-topology acknowledgment)"
+python3 docs/audit/scripts/write_citation_graph_manifest.py
+
 echo "==> 2/18 seed_audit_ledger.py"
 python3 docs/audit/scripts/seed_audit_ledger.py
 

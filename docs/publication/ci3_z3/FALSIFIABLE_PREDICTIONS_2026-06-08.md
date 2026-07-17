@@ -7,7 +7,7 @@ thresholds, bucket assignments, and named external comparison bands stand as
 stated; its per-row status words and source-note standings are as of
 2026-06-08 and are **not** current `effective_status` — the live authority is
 the tracked audit ledger
-([`docs/audit/data/ledger/`](../../audit/data/ledger/)), summarized in
+(`docs/audit/data/ledger/`), summarized in
 [`docs/repo/RETAINED_BACKBONE.md`](../../repo/RETAINED_BACKBONE.md). Where this
 catalog quotes three-axiom-era framing, read it as historical; the current
 baseline is the four named axioms in

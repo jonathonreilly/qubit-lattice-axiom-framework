@@ -185,6 +185,16 @@ or `docs/audit/data/audit_dispatch_queue.json`. The dispatch manifest is
 target-selection metadata only; it must not be passed to auditors as evidence
 and must not apply audit verdicts.
 
+## Author Pre-Flight (input hygiene)
+
+Authors are expected to run [`PREFLIGHT.md`](PREFLIGHT.md) before requesting
+review. The pre-flight is authoring discipline, not a gate: it grants no
+standing, replaces no reviewer lens, and its absence blocks nothing by
+itself — but a reviewer may cite a skipped pre-flight item as a finding when
+the defect it would have caught is present. Whether such findings are fixed
+in place or the branch is rejected follows the existing Fix Policy and
+close-with-reason path; the checklist adds no new disposition.
+
 ## Arguments
 
 Parse:

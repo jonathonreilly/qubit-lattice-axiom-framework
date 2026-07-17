@@ -38,8 +38,9 @@ Invariants measured (tracked state only)
                                target cannot resolve for a fresh clone or
                                GitHub reader; reasons: not-tracked (missing,
                                untracked, or gitignored alike — derived from
-                               the tracked set only), absolute-path, and
-                               outside-repository. Code spans and fenced code
+                               the tracked set only), absolute-path,
+                               outside-repository, irregular-target, and
+                               directory-target. Code spans and fenced code
                                blocks are masked before link extraction.
   authority_links.irregular_surfaces  authority files that are not regular
                                files (never dereferenced)
@@ -542,6 +543,14 @@ def collect_authority_links(tracked: list) -> dict:
                 })
             continue
         if is_dir_link:
+            # A directory target renders as a file listing, not an authority
+            # document; every authority citation must dereference to one
+            # reviewable tracked file (front-door campaign, 2026-07-17).
+            violations.append({
+                "target": rel,
+                "reason": "directory-target",
+                "sources": sorted(candidates[rel]),
+            })
             continue
         # The single reason derives from the tracked set ONLY: local ignore
         # rules and untracked scratch files can never change the serialized
@@ -629,6 +638,123 @@ def run_diff(path_a: str, path_b: str, allow: set) -> int:
     return 0
 
 
+DOC_AUTHORITY_REGISTRY_REL = "docs/audit/data/doc_authority_registry.json"
+CLASS_F_REQUIRED_PHRASES = (
+    "no premise or interpretive weight",
+    "citable for orientation and scope discipline only",
+)
+CITATION_GRAPH_CACHE_REL = "docs/audit/data/citation_graph.json"
+GRAPH_MANIFEST_REL = "docs/audit/data/citation_graph_manifest.json"
+
+
+def class_f_violations_from(registry: dict, tracked_set: set, read_text) -> list:
+    """Pure core of the class-F header check (callers supply IO).
+
+    Class F = orientation memo with no premise or interpretive weight
+    (DOCUMENT_AUTHORITY_AND_CITATION_POLICY, 'The Class F header formula').
+    Judged on tracked files only; a registered path that is missing or
+    untracked is itself a violation.
+    """
+    violations = []
+    for row in registry.get("rows", []):
+        if row.get("class") != "F":
+            continue
+        path = row.get("path")
+        if not isinstance(path, str):
+            violations.append({"path": repr(path), "problem": "class-F row has no path"})
+            continue
+        if path not in tracked_set:
+            violations.append({"path": path, "problem": "registered class-F doc is not tracked"})
+            continue
+        try:
+            text = read_text(path)
+        except OSError as exc:
+            violations.append({"path": path, "problem": f"unreadable: {exc}"})
+            continue
+        missing = [p for p in CLASS_F_REQUIRED_PHRASES if p not in text]
+        if missing:
+            violations.append({
+                "path": path,
+                "problem": "missing required class-F header phrase(s): "
+                           + "; ".join(repr(m) for m in missing),
+            })
+    return violations
+
+
+def collect_class_f_violations(tracked: list) -> list:
+    registry_path = os.path.join(REPO_ROOT, DOC_AUTHORITY_REGISTRY_REL)
+    try:
+        with open(registry_path, "r", encoding="utf-8") as fh:
+            registry = json.load(fh)
+    except (json.JSONDecodeError, OSError, UnicodeDecodeError) as exc:
+        return [{"path": DOC_AUTHORITY_REGISTRY_REL, "problem": f"registry unreadable: {exc}"}]
+
+    def read_text(path: str) -> str:
+        with open(os.path.join(REPO_ROOT, path), "r", encoding="utf-8") as fh:
+            return fh.read()
+
+    return class_f_violations_from(registry, set(tracked), read_text)
+
+
+def graph_manifest_delta(computed: dict, indexed: dict) -> dict | None:
+    """Named delta between the computed manifest and the index-tracked one.
+
+    Returns None when identical. Pure function; callers supply both sides.
+    """
+    if computed == indexed:
+        return None
+    comp_nodes = computed.get("nodes", {})
+    idx_nodes = indexed.get("nodes", {})
+    added = sorted(set(comp_nodes) - set(idx_nodes))
+    removed = sorted(set(idx_nodes) - set(comp_nodes))
+    changed = sorted(
+        n for n in set(comp_nodes) & set(idx_nodes) if comp_nodes[n] != idx_nodes[n]
+    )
+    return {"added": added, "removed": removed, "changed": changed}
+
+
+def collect_graph_manifest_check() -> dict | None:
+    """Compare the in-pass citation graph against the index-tracked manifest.
+
+    The tracked manifest is the acknowledgment surface: any change that adds,
+    removes, or rewires graph nodes must ship the refreshed manifest, so the
+    delta is visible in the diff instead of silently reshaping audit-lane
+    criticality. Returns None (skip) when no in-pass graph cache exists —
+    the check is only meaningful inside a pipeline run.
+    """
+    # Resolve from REPO_ROOT at call time like every other collector, so
+    # fixture repos (tests overriding REPO_ROOT) never read this repo's cache.
+    cache_path = os.path.join(REPO_ROOT, CITATION_GRAPH_CACHE_REL)
+    if not os.path.isfile(cache_path):
+        return None
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from write_citation_graph_manifest import compute_manifest
+    with open(cache_path, "r", encoding="utf-8") as fh:
+        graph = json.load(fh)
+    computed = compute_manifest(graph)
+    proc = subprocess.run(
+        ["git", "show", f":{GRAPH_MANIFEST_REL}"],
+        cwd=REPO_ROOT, capture_output=True, text=True,
+    )
+    if proc.returncode != 0:
+        return {"missing_from_index": True, "delta": None}
+    try:
+        indexed = json.loads(proc.stdout)
+    except json.JSONDecodeError:
+        return {"missing_from_index": False, "unparseable": True, "delta": None}
+    return {"missing_from_index": False, "delta": graph_manifest_delta(computed, indexed)}
+
+
+def _format_graph_delta(delta: dict) -> str:
+    parts = []
+    for key in ("added", "removed", "changed"):
+        items = delta.get(key, [])
+        if items:
+            shown = ", ".join(items[:20]) + (" ..." if len(items) > 20 else "")
+            parts.append(f"{len(items)} {key} ({shown})")
+    return "; ".join(parts) or "content drift"
+
+
 def run_check(enforce_links: bool) -> int:
     snapshot = build_snapshot()
     failures = []
@@ -668,6 +794,39 @@ def run_check(enforce_links: bool) -> int:
         else:
             warnings.append(message)
 
+    class_f_violations = collect_class_f_violations(_git_tracked_files())
+    if class_f_violations:
+        lines = [f"  {item['path']}: {item['problem']}" for item in class_f_violations]
+        message = "class-F registry/header violations:\n" + "\n".join(lines)
+        (failures if enforce_links else warnings).append(message)
+
+    graph_check = collect_graph_manifest_check()
+    graph_delta_note = "skipped (no in-pass graph cache)"
+    if graph_check is not None:
+        remedy = (
+            "acknowledge by refreshing and staging the manifest: "
+            "python3 docs/audit/scripts/write_citation_graph_manifest.py "
+            f"&& git add {GRAPH_MANIFEST_REL}"
+        )
+        if graph_check.get("missing_from_index"):
+            message = f"citation-graph manifest missing from the index; {remedy}"
+            (failures if enforce_links else warnings).append(message)
+            graph_delta_note = "manifest-missing"
+        elif graph_check.get("unparseable"):
+            message = f"citation-graph manifest in the index is not valid JSON; {remedy}"
+            (failures if enforce_links else warnings).append(message)
+            graph_delta_note = "manifest-unparseable"
+        elif graph_check.get("delta") is not None:
+            message = (
+                "citation-graph delta not acknowledged in the index: "
+                + _format_graph_delta(graph_check["delta"])
+                + f"; {remedy}"
+            )
+            (failures if enforce_links else warnings).append(message)
+            graph_delta_note = "delta-unacknowledged"
+        else:
+            graph_delta_note = "acknowledged"
+
     for warning in warnings:
         print(f"WARN: {warning}")
     for failure in failures:
@@ -675,6 +834,8 @@ def run_check(enforce_links: bool) -> int:
     summary = (
         f"rows={ledger['shard_count']} retained_grade={ledger['retained_grade_total']} "
         f"link_violations={len(link_violations)} "
+        f"class_f_violations={len(class_f_violations)} "
+        f"graph_delta={graph_delta_note} "
         f"({'enforced' if enforce_links else 'warn-only'})"
     )
     print(("FAIL " if failures else "PASS ") + summary)

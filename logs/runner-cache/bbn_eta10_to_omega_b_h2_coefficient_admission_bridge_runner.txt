@@ -1,66 +1,83 @@
 ===== runner cache v1 =====
 runner: scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py
-runner_sha256: f2e6995090ed12f70b7da111309afba915d47719b9f423b59c8a21345a1cfaaf
+runner_sha256: cf90d92d9db0a5ffe9a5356a9f52e92f5ada80b53448560e72131a14cc048c02
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
-BBN COEFFICIENT 3.6515e-3 ADMISSION BRIDGE
+========================================================================================
+Cubic-reciprocal series bounds and rational normalization
+MODE=normal
+MUTATIONS=none
+========================================================================================
 
-== Part 0: source firewall ==
-PASS: source contains boundary phrase: Supplied premise packet (not axioms)
-PASS: source contains boundary phrase: P1 proton rest mass
-PASS: source contains boundary phrase: P2 present-day CMB temperature
-PASS: source contains boundary phrase: P3 critical-density unit
-PASS: source contains boundary phrase: 2026-06-12 P3 critical-density unit decomposition
-PASS: source contains boundary phrase: P4 Cyburt conversion convention
-PASS: source contains boundary phrase: does not derive P1-P4
-PASS: source contains boundary phrase: not registry accepted premises
-PASS: source contains boundary phrase: new repo-wide axiom
-PASS: source contains boundary phrase: Cyburt
-PASS: source contains boundary phrase: 2 zeta(3)
-PASS: source contains boundary phrase: Planck distribution
-PASS: source contains boundary phrase: scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py
-PASS: source excludes forbidden phrase: Tier-B partial-derivation
-PASS: source excludes forbidden phrase: Tier B partial derivation
-PASS: source excludes forbidden phrase: framework derives m_p
-PASS: source excludes forbidden phrase: framework derives T_CMB
-PASS: source excludes forbidden phrase: **Status:** retained
-PASS: source excludes forbidden phrase: audited_clean
+----------------------------------------------------------------------------------------
+Source theorem and authority boundary
+----------------------------------------------------------------------------------------
+  [PASS] explicit positive-theorem typing
+  [PASS] dependencies are explicitly empty
+  [PASS] T1 universal integer domain is written
+  [PASS] T2 positive-rational domain is written
+  [PASS] historical premise packet removed
+  [PASS] historical comparator name removed
+  [PASS] historical distribution setup removed
+  [PASS] historical CMB symbol removed
+  [PASS] historical residual symbol removed
+  [PASS] historical admission heading removed
+  [PASS] physical/comparator/framework overclaims are absent
 
-== Part 1: analytic factor 2 zeta(3) / pi^2 ==
-PASS: zeta(3) reference is certified by the p-series tail interval (N=20000, width <= 1.250e-09)
-PASS: Planck integral identity is internally certified: integral = 2 zeta(3) (2*zeta(3) in [2.404113803819, 2.404113806319])
-PASS: factor reduces to 2 zeta(3)/pi^2 with photon polarization count g_gamma = 2 (factor = 0.243587656467)
-PASS: factor numerically equals 0.24359... (standard) (factor = 0.243588)
+----------------------------------------------------------------------------------------
+Strict public API
+----------------------------------------------------------------------------------------
+  [PASS] coefficient rejects integer scalar
+  [PASS] coefficient rejects boolean scalar
+  [PASS] coefficient rejects float scalar
+  [PASS] coefficient rejects Fraction subclass
+  [PASS] partial sum rejects boolean index
+  [PASS] partial sum rejects integer subclass
 
-== Part 2: present-day photon number density from P2 import ==
-PASS: present-day n_gamma is approximately 410 photons / cm^3 (standard textbook) (n_gamma = 410.5008 per cm^3)
+----------------------------------------------------------------------------------------
+T1 exact rational series brackets
+----------------------------------------------------------------------------------------
+  [PASS] S_1=1
+  [PASS] S_2=9/8
+  [PASS] S_3=251/216
+  [PASS] partial-sum recurrence holds through N=180
+  [PASS] lower bracket has the stated endpoint
+  [PASS] upper bracket has the stated endpoint
+  [PASS] exact width formula holds through N=180
+  [PASS] doubled bracket is exactly twice the original
+  [PASS] lower endpoints strictly increase
+  [PASS] upper endpoints strictly decrease
+  [PASS] every bracket is ordered
+  [PASS] bracket widths strictly decrease
 
-== Part 3: recover Cyburt+ 2016 coefficient by deterministic arithmetic ==
-PASS: raw S=1 coefficient within 0.2% of published Cyburt+ 2016 value 3.6515e-3 (raw_coeff = 3.655419801e-03 vs Cyburt+2016 = 3.651500000e-03)
-PASS: exact Cyburt residual factor is explicit and sub-percent (S_Cyburt_exact = 0.998927674264154)
-PASS: raw coefficient times admitted S_Cyburt residual equals comparator exactly (exact_coeff = 3.651500000e-03)
+----------------------------------------------------------------------------------------
+T2 exact monomial scaling and normalization
+----------------------------------------------------------------------------------------
+  [PASS] coefficient is positive on the finite domain
+  [PASS] a scaling law
+  [PASS] t cubic scaling law
+  [PASS] m scaling law
+  [PASS] r inverse scaling law
+  [PASS] s scaling law
+  [PASS] complete ratio identity
+  [PASS] raw example coefficient is 270/7
+  [PASS] normalization reaches every tested target
+  [PASS] normalization is the direct rational solution
+  [PASS] normalization displacement identity
+  [PASS] named example normalization is 7/5
+  [PASS] named example reaches 54 exactly
 
-== Part 4: named premise packet remains imported on this row ==
-PASS: P1 proton rest mass admitted as textbook import (not derived here) (m_p = 1.6726219236e-24 g)
-PASS: P2 CMB temperature admitted as textbook import (not derived here) (T_CMB = 2.725 K)
-PASS: P3 critical-density unit computed from admitted H_100 and G (rho_crit/h^2 = 1.878342e-29 g/cm^3)
-PASS: P3 formula is rho_crit/h^2 = 3 H_100^2 / (8 pi G) with SI-to-cgs conversion (H100=100.0 km/s/Mpc, G=6.674300e-11 SI)
-PASS: P4 raw Cyburt convention baseline is S=1 (S_raw = 1.0 for the raw unit-conversion baseline)
-PASS: P4 exact Cyburt residual is admitted as a separate comparator convention (S_Cyburt_exact = 0.998927674264154)
-
-== Part 5: retention scorecard ==
-PASS: source records the 2026-06-18 analytic-factor import retirement
-PASS: source separates analytic proof from physical admissions
-PASS: source says critical-density unit is formula-expanded instead of black-boxed
-PASS: source keeps four admitted premise classes P1-P4
-PASS: source records exact S_Cyburt residual as admitted comparator, not derivation
-PASS: bridge does not promote the parent cosmology cascade row
-
-TOTAL: PASS=39 FAIL=0
-VERDICT: bounded admission bridge passes; the textbook coefficient 3.6515e-3 is split into a raw unit-conversion baseline from one analytic factor (2 zeta(3)/pi^2 from the Planck distribution) and admitted physical premises (P1 m_p, P2 T_CMB, P3 H_100/G critical-density unit), plus explicit admitted P4 residual S_Cyburt_exact = 0.9989276742641543. The raw baseline is within 0.107% of the Cyburt+ 2016 published value; exact equality uses the admitted residual comparator.
+========================================================================================
+SUMMARY: PASS=42 FAIL=0
+PASSED: 42/42
+========================================================================================
+RATIONAL_SERIES_NORMALIZATION_POSITIVE_THEOREM=TRUE
+EXACT_ARITHMETIC=TRUE
+DEPENDENCIES=NONE
+PHYSICAL_INTERPRETATION_ASSERTED=FALSE
 
 ----- stderr -----
 

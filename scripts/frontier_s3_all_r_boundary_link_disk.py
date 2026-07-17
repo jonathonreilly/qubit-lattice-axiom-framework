@@ -13,8 +13,9 @@ cubical ball B_R, with NO finite-radius truncation.
 PURPOSE:
   The finite certificates in S3_BOUNDARY_LINK_THEOREM_NOTE.md verify the
   disk property for R = 2..10 (5,778 boundary vertices) and verify the
-  bridge lemma empirically only for R = 2..6 (1,162 vertices, the lone
-  [BOUNDED] check there).  Properties 2/2a (present = connected downset,
+  bridge lemma empirically only for R = 2..6 (1,162 vertices, one of the
+  two [BOUNDED] checks there; observed-type enumeration is the other).
+  Properties 2/2a (present = connected downset,
   absent = connected upset) and Proposition Z (every Q_3-both-connected
   subset closure K_simp(P) is a PL 2-disk) are already EXACT / all-R.
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_all_r_boundary_link_disk.py
-runner_sha256: 4353e81c5d65ea2555bd024d59e2dfe112982ee2139b0f7523b4048f0c928fc3
+runner_sha256: f8cbde1c044ab756fd52556199b479df9af1b6da95b0b014d296eb284b9d5ed0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 19.66
+elapsed_sec: 17.18
 status: ok
 ----- stdout -----
 ======================================================================
@@ -109,7 +109,7 @@ status: ok
 ======================================================================
   PASS: 13   FAIL: 0
   EXACT: 13   BOUNDED: 0
-  Time: 19.5s
+  Time: 17.0s
 
   RESULT: ALL CHECKS PASS
 

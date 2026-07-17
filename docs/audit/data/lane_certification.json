@@ -2498,7 +2498,7 @@
         },
         {
           "claim_id": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "su3_cube_full_rho_perron_2026-05-04",
@@ -2935,6 +2935,6 @@
       "uncertified_count": 669
     }
   ],
-  "repo_head": "ebeae5fac2b9f0bcc8c806acfcbd5c239b367e5f",
+  "repo_head": "3554cdc2c619d669ce0f6cfbd64b1b987c6c6733",
   "schema": "lane_certification_v2"
 }

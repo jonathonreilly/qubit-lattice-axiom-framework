@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/fermion_parity_z2_grading_check.py
-runner_sha256: ff0ed6563e57c41b967e7775facd14c0e20f43b55d0e25b9a2596daca2e83c51
+runner_sha256: c9bcb762764e28f44754f7e4c8b78469b1cad23528938c7a9cd3a905ffb573fa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.74
+elapsed_sec: 1.55
 status: ok
 ----- stdout -----
 ORDERED FINITE-MODE FERMION PARITY — NORMAL EXACT MODE
@@ -24,7 +24,20 @@ ORDERED FINITE-MODE FERMION PARITY — NORMAL EXACT MODE
 [PASS] [H,F]=0 iff parity-mixing blocks vanish: generic block identity plus a complete matrix-unit basis check
 [PASS] Heisenberg derivative i[H,F] detects parity conservation: self-adjoint parity-even and parity-odd Hamiltonians separate exactly
 [PASS] number commutant is strictly smaller than parity commutant for N=3: dimensions=(20,32)
-TOTAL: PASS=17 FAIL=0
+[PASS] current-cycle N1/N5/N7 evidence is computed before emission: five routes, five resolutions, independent steelman, and hostile kills agree
+N1_ROUTE route_id=spectral-product; route_class=algebraic_rearrangement; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=algebraic spectral-product identity; attempt=construct exp(i*pi*Q), spectral signs, and tensor Z separately; outcome=all three exact matrices agree
+N1_ROUTE route_id=car-grading; route_class=symmetry_or_representation; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=symmetry commutator and CAR grading; attempt=check every CAR relation and every generator monomial through degree four; outcome=CAR holds and F conjugation gives the computed degree sign
+N1_ROUTE route_id=sector-enumeration; route_class=numerical_or_finite_case; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=finite exact matrix-unit scan; attempt=enumerate Q and F supports independently for N=1 through N=6; outcome=Q support is contained throughout and strict exactly for every tested N>=2
+N1_ROUTE route_id=direct-pair-carrier; route_class=alternate_carrier_or_sector; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=alternate carrier direct occupation-basis matrix calculation; attempt=replace Jordan-Wigner operators with Q,F,H_pair matrices and inject the wrong-order sign mutation; outcome=the pair preserves F, changes Q, and the wrong-order mutation is non-self-adjoint
+N1_ROUTE route_id=hostile-converse; route_class=dynamical_or_effective_action; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=dynamical conservation-law mutation test; attempt=promote parity conservation to number conservation for the live pair Hamiltonian; outcome=the promoted converse is killed by the nonzero exact Q commutator
+N5_RESOLUTION per_element: direct |00><11| commutes with F but not Q, so one exact matrix element already witnesses the bounded separation.
+N5_RESOLUTION per_site: the pair commutes with global F but not with either of its first two formal local Z factors; these factors are tensor labels, not physical sites.
+N5_RESOLUTION per_mode: complete N=1 matrix-unit supports for Q and F are equal, so strict separation begins only at N>=2 rather than for each individual mode.
+N5_RESOLUTION per_block: H_pair stays inside the even parity block while linking Q=0 and Q=2 charge blocks, proving the exact commutant inclusion is strict.
+N5_RESOLUTION lattice_wide: exact finite extensions H_pair tensor I preserve F and change Q for N=2..6, observed=((2, True, True), (3, True, True), (4, True, True), (5, True, True), (6, True, True)); this is not a lattice-wide or continuum result because no physical embedding, locality, or limit is supplied.
+N7_STEELMAN_ARGUMENT mechanism=alternate carrier direct occupation-basis matrix calculation; attempt=replace Jordan-Wigner operators with Q,F,H_pair matrices and inject the wrong-order sign mutation; argument=the parity-versus-number counterexample might be only a Jordan-Wigner ordering or sign artifact, so a direct carrier calculation and the strongest wrong-order hostile mutation must resolve it.
+N7_STEELMAN_RESOLUTION parity-conservation-versus-number-conservation wall resolved on the stated finite ordered carrier: independent direct occupation-basis matrices give [H_pair,F]=0 and [H_pair,Q]!=0, while the wrong-order hostile mutation is non-self-adjoint; this removes the Jordan-Wigner-order objection without selecting physical statistics, superselection, locality, or lattice dynamics.
+TOTAL: PASS=18 FAIL=0
 
 ----- stderr -----
 

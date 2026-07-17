@@ -21,6 +21,11 @@ from pathlib import Path
 
 import sympy as sp
 
+from fermion_parity_z2_grading_n7_independent_check import (
+    compute_steelman_evidence,
+    steelman_resolution_line,
+)
+
 
 SOURCE_PATH = Path(__file__).resolve()
 FIXTURES = (
@@ -31,6 +36,8 @@ FIXTURES = (
     "wrong-sector-dimension",
     "even-means-number-conserving",
     "wrong-pair-order",
+    "single-mode-strictness",
+    "local-factor-parity",
 )
 
 
@@ -68,6 +75,28 @@ class JWData:
     f_exponential: sp.Matrix
     f_spectral: sp.Matrix
     f_product: sp.Matrix
+
+
+@dataclass(frozen=True)
+class ResolutionEvidence:
+    per_element: bool
+    per_site: bool
+    per_mode: bool
+    per_block: bool
+    lattice_wide: bool
+    finite_extension_summaries: tuple[tuple[int, bool, bool], ...]
+
+    @property
+    def resolved(self) -> bool:
+        return all(
+            (
+                self.per_element,
+                self.per_site,
+                self.per_mode,
+                self.per_block,
+                self.lattice_wide,
+            )
+        )
 
 
 def matrix_zero(matrix: sp.Matrix) -> bool:
@@ -188,6 +217,7 @@ def source_firewall_violations() -> list[str]:
         "argparse",
         "ast",
         "dataclasses",
+        "fermion_parity_z2_grading_n7_independent_check",
         "itertools",
         "pathlib",
         "sympy",
@@ -235,6 +265,205 @@ def source_firewall_violations() -> list[str]:
         if forbidden in source:
             violations.append(f"forbidden source marker: {forbidden}")
     return violations
+
+
+def independent_sector_summaries() -> tuple[
+    tuple[tuple[int, int, int, int, int], ...], bool, bool
+]:
+    """Classify matrix-unit supports using basis bits, not JW operators."""
+
+    summaries: list[tuple[int, int, int, int, int]] = []
+    subset_all = True
+    strict_all = True
+    for n_modes in range(1, 7):
+        charges = tuple(
+            sum(occupation_tuple(index, n_modes)) for index in range(2**n_modes)
+        )
+        parities = tuple((-1) ** charge for charge in charges)
+        q_support = {
+            (row, column)
+            for row in range(2**n_modes)
+            for column in range(2**n_modes)
+            if charges[row] == charges[column]
+        }
+        f_support = {
+            (row, column)
+            for row in range(2**n_modes)
+            for column in range(2**n_modes)
+            if parities[row] == parities[column]
+        }
+        subset_all = subset_all and q_support <= f_support
+        if n_modes >= 2:
+            strict_all = strict_all and q_support < f_support
+        summaries.append(
+            (
+                n_modes,
+                parities.count(1),
+                parities.count(-1),
+                len(q_support),
+                len(f_support),
+            )
+        )
+    return tuple(summaries), subset_all, strict_all
+
+
+def compute_resolution_evidence(data: JWData, pair: sp.Matrix) -> ResolutionEvidence:
+    """Test the five required N5 resolutions at their honest finite scopes."""
+
+    two_mode = build_jordan_wigner(2)
+    two_pair = direct_pair_hamiltonian(2)
+    element_00_11 = matrix_unit(4, 0, 3)
+    per_element = matrix_zero(commutator(element_00_11, two_mode.f_product)) and not matrix_zero(
+        commutator(element_00_11, two_mode.q_total)
+    )
+
+    local_z_commutators = tuple(
+        matrix_zero(commutator(pair, at_site(data.z_local, site, data.n_modes)))
+        for site in range(data.n_modes)
+    )
+    per_site = (
+        local_z_commutators == (False, False, True)
+        and matrix_zero(commutator(pair, data.f_product))
+    )
+
+    one_mode = build_jordan_wigner(1)
+    one_mode_q_support = {
+        (row, column)
+        for row in range(2)
+        for column in range(2)
+        if one_mode.q_values[row] == one_mode.q_values[column]
+    }
+    one_mode_f_support = {
+        (row, column)
+        for row in range(2)
+        for column in range(2)
+        if one_mode.parity_values[row] == one_mode.parity_values[column]
+    }
+    per_mode = one_mode_q_support == one_mode_f_support
+
+    p_even_two = (two_mode.identity + two_mode.f_product) / 2
+    p_odd_two = (two_mode.identity - two_mode.f_product) / 2
+    per_block = (
+        matrix_equal(two_pair, p_even_two * two_pair * p_even_two)
+        and matrix_zero(p_odd_two * two_pair)
+        and not matrix_zero(commutator(two_pair, two_mode.q_total))
+    )
+
+    finite_extension_summaries: list[tuple[int, bool, bool]] = []
+    for n_modes in range(2, 7):
+        dimension = 2**n_modes
+        charges = tuple(
+            sum(occupation_tuple(index, n_modes)) for index in range(dimension)
+        )
+        q_finite = sp.diag(*charges)
+        f_finite = sp.diag(*((-1) ** charge for charge in charges))
+        pair_finite = direct_pair_hamiltonian(n_modes)
+        parity_preserved = matrix_zero(commutator(pair_finite, f_finite))
+        number_changed = not matrix_zero(commutator(pair_finite, q_finite))
+        finite_extension_summaries.append(
+            (n_modes, parity_preserved, number_changed)
+        )
+    lattice_wide = all(
+        parity_preserved and number_changed
+        for _, parity_preserved, number_changed in finite_extension_summaries
+    )
+
+    return ResolutionEvidence(
+        per_element=per_element,
+        per_site=per_site,
+        per_mode=per_mode,
+        per_block=per_block,
+        lattice_wide=lattice_wide,
+        finite_extension_summaries=tuple(finite_extension_summaries),
+    )
+
+
+def emit_current_cycle_no_go_evidence(
+    *,
+    algebraic_route: bool,
+    symmetry_route: bool,
+    finite_route: bool,
+    alternate_carrier_route: bool,
+    dynamical_route: bool,
+    resolutions: ResolutionEvidence,
+) -> None:
+    """Emit authenticated N1/N5/N7 lines only after live calculations pass."""
+
+    route_results = {
+        "spectral-product": algebraic_route,
+        "car-grading": symmetry_route,
+        "sector-enumeration": finite_route,
+        "direct-pair-carrier": alternate_carrier_route,
+        "hostile-converse": dynamical_route,
+    }
+    assert all(route_results.values()), f"N1 live route failure: {route_results}"
+    assert resolutions.resolved, f"N5 live resolution failure: {resolutions}"
+
+    print(
+        "N1_ROUTE route_id=spectral-product; "
+        "route_class=algebraic_rearrangement; honesty_marker=ATTEMPTED; "
+        "disposition=CLOSED; mechanism=algebraic spectral-product identity; "
+        "attempt=construct exp(i*pi*Q), spectral signs, and tensor Z separately; "
+        "outcome=all three exact matrices agree"
+    )
+    print(
+        "N1_ROUTE route_id=car-grading; "
+        "route_class=symmetry_or_representation; honesty_marker=ATTEMPTED; "
+        "disposition=CLOSED; mechanism=symmetry commutator and CAR grading; "
+        "attempt=check every CAR relation and every generator monomial through degree four; "
+        "outcome=CAR holds and F conjugation gives the computed degree sign"
+    )
+    print(
+        "N1_ROUTE route_id=sector-enumeration; "
+        "route_class=numerical_or_finite_case; honesty_marker=ATTEMPTED; "
+        "disposition=CLOSED; mechanism=finite exact matrix-unit scan; "
+        "attempt=enumerate Q and F supports independently for N=1 through N=6; "
+        "outcome=Q support is contained throughout and strict exactly for every tested N>=2"
+    )
+    print(
+        "N1_ROUTE route_id=direct-pair-carrier; "
+        "route_class=alternate_carrier_or_sector; honesty_marker=ATTEMPTED; "
+        "disposition=CLOSED; mechanism=alternate carrier direct occupation-basis matrix calculation; "
+        "attempt=replace Jordan-Wigner operators with Q,F,H_pair matrices and inject the wrong-order sign mutation; "
+        "outcome=the pair preserves F, changes Q, and the wrong-order mutation is non-self-adjoint"
+    )
+    print(
+        "N1_ROUTE route_id=hostile-converse; "
+        "route_class=dynamical_or_effective_action; honesty_marker=ATTEMPTED; "
+        "disposition=CLOSED; mechanism=dynamical conservation-law mutation test; "
+        "attempt=promote parity conservation to number conservation for the live pair Hamiltonian; "
+        "outcome=the promoted converse is killed by the nonzero exact Q commutator"
+    )
+
+    print(
+        "N5_RESOLUTION per_element: direct |00><11| commutes with F but not Q, "
+        "so one exact matrix element already witnesses the bounded separation."
+    )
+    print(
+        "N5_RESOLUTION per_site: the pair commutes with global F but not with either "
+        "of its first two formal local Z factors; these factors are tensor labels, not physical sites."
+    )
+    print(
+        "N5_RESOLUTION per_mode: complete N=1 matrix-unit supports for Q and F are equal, "
+        "so strict separation begins only at N>=2 rather than for each individual mode."
+    )
+    print(
+        "N5_RESOLUTION per_block: H_pair stays inside the even parity block while linking "
+        "Q=0 and Q=2 charge blocks, proving the exact commutant inclusion is strict."
+    )
+    print(
+        "N5_RESOLUTION lattice_wide: exact finite extensions H_pair tensor I preserve F and "
+        f"change Q for N=2..6, observed={resolutions.finite_extension_summaries}; this is not "
+        "a lattice-wide or continuum result because no physical embedding, locality, or limit is supplied."
+    )
+
+    print(
+        "N7_STEELMAN_ARGUMENT mechanism=alternate carrier direct occupation-basis matrix calculation; "
+        "attempt=replace Jordan-Wigner operators with Q,F,H_pair matrices and inject the wrong-order sign mutation; "
+        "argument=the parity-versus-number counterexample might be only a Jordan-Wigner ordering or sign artifact, "
+        "so a direct carrier calculation and the strongest wrong-order hostile mutation must resolve it."
+    )
+    print(steelman_resolution_line())
 
 
 def run_normal() -> int:
@@ -494,41 +723,64 @@ def run_normal() -> int:
         f"dimensions=({q_commutant_dimension},{f_commutant_dimension})",
     )
 
+    independent_summaries, independent_subset, independent_strict = (
+        independent_sector_summaries()
+    )
+    independent_balanced = all(
+        even == odd == 2 ** (n_modes - 1)
+        for n_modes, even, odd, _, _ in independent_summaries
+    )
+    independent_formulas = all(
+        q_dimension == sp.binomial(2 * n_modes, n_modes)
+        and f_dimension == 2 ** (2 * n_modes - 1)
+        for n_modes, _, _, q_dimension, f_dimension in independent_summaries
+    )
+    steelman = compute_steelman_evidence()
+    resolutions = compute_resolution_evidence(data, pair_from_car)
+    mutation_survivals = hostile_survivals()
+    live_packet_ok = (
+        independent_balanced
+        and independent_subset
+        and independent_strict
+        and independent_formulas
+        and steelman.resolved
+        and resolutions.resolved
+        and not mutation_survivals["false-converse"]
+        and not mutation_survivals["wrong-pair-order"]
+    )
+    checks.record(
+        "current-cycle N1/N5/N7 evidence is computed before emission",
+        live_packet_ok,
+        "five routes, five resolutions, independent steelman, and hostile kills agree",
+    )
+    assert steelman.resolved, f"independent N7 steelman failed: {steelman}"
+    assert not mutation_survivals["wrong-pair-order"], (
+        "N7 wrong-order hostile mutation unexpectedly survived"
+    )
+    emit_current_cycle_no_go_evidence(
+        algebraic_route=matrix_equal(data.f_exponential, data.f_spectral)
+        and matrix_equal(data.f_spectral, data.f_product),
+        symmetry_route=annihilator_car
+        and creator_car
+        and mixed_car
+        and monomial_grading_ok,
+        finite_route=independent_balanced
+        and independent_subset
+        and independent_strict
+        and independent_formulas,
+        alternate_carrier_route=steelman.resolved,
+        dynamical_route=pair_ok
+        and not mutation_survivals["false-converse"],
+        resolutions=resolutions,
+    )
+
     return checks.finish()
 
 
 def run_independent() -> int:
     checks = Checks()
     print("ORDERED FINITE-MODE FERMION PARITY — INDEPENDENT SECTOR MODE")
-    summaries: list[tuple[int, int, int, int, int]] = []
-    subset_all = True
-    strict_all = True
-
-    for n_modes in range(1, 7):
-        charges = tuple(
-            sum(occupation_tuple(index, n_modes)) for index in range(2**n_modes)
-        )
-        parities = tuple((-1) ** charge for charge in charges)
-        even_dimension = parities.count(1)
-        odd_dimension = parities.count(-1)
-        q_support = {
-            (row, column)
-            for row in range(2**n_modes)
-            for column in range(2**n_modes)
-            if charges[row] == charges[column]
-        }
-        f_support = {
-            (row, column)
-            for row in range(2**n_modes)
-            for column in range(2**n_modes)
-            if parities[row] == parities[column]
-        }
-        subset_all = subset_all and q_support <= f_support
-        if n_modes >= 2:
-            strict_all = strict_all and q_support < f_support
-        summaries.append(
-            (n_modes, even_dimension, odd_dimension, len(q_support), len(f_support))
-        )
+    summaries, subset_all, strict_all = independent_sector_summaries()
 
     checks.record(
         "basis-bit flip independently balances the parity sectors",
@@ -595,11 +847,20 @@ def run_independent() -> int:
         ),
         "complete two-by-two matrix-unit classification",
     )
+    steelman = compute_steelman_evidence()
+    checks.record(
+        "independent helper path kills the Jordan-Wigner-order steelman",
+        steelman.resolved,
+        "direct Q,F,H_pair matrices plus a non-self-adjoint wrong-order mutation",
+    )
+    assert steelman.resolved, f"independent N7 steelman failed: {steelman}"
+    print(steelman_resolution_line())
     return checks.finish()
 
 
 def hostile_survivals() -> dict[str, bool]:
     data = build_jordan_wigner(3)
+    one_mode = build_jordan_wigner(1)
     pair = data.adag[0] * data.adag[1] + data.a[1] * data.a[0]
     odd_hamiltonian = data.a[0] + data.adag[0]
     bare_zero = at_site(data.lower, 0, data.n_modes)
@@ -609,6 +870,18 @@ def hostile_survivals() -> dict[str, bool]:
     parity_antecedent = matrix_zero(commutator(pair, data.f_product))
     number_conclusion = matrix_zero(commutator(pair, data.q_total))
     false_converse_survives = (not parity_antecedent) or number_conclusion
+    one_mode_q_support = {
+        (row, column)
+        for row in range(2)
+        for column in range(2)
+        if one_mode.q_values[row] == one_mode.q_values[column]
+    }
+    one_mode_f_support = {
+        (row, column)
+        for row in range(2)
+        for column in range(2)
+        if one_mode.parity_values[row] == one_mode.parity_values[column]
+    }
 
     return {
         "false-converse": false_converse_survives,
@@ -621,6 +894,11 @@ def hostile_survivals() -> dict[str, bool]:
         "wrong-sector-dimension": data.parity_values.count(1) == 2 ** (data.n_modes - 1) + 1,
         "even-means-number-conserving": matrix_zero(commutator(pair, data.q_total)),
         "wrong-pair-order": matrix_equal(wrong_pair.H, wrong_pair),
+        "single-mode-strictness": one_mode_q_support < one_mode_f_support,
+        "local-factor-parity": all(
+            matrix_zero(commutator(pair, at_site(data.z_local, site, data.n_modes)))
+            for site in range(2)
+        ),
     }
 
 
@@ -639,6 +917,14 @@ def run_hostile(fixture: str) -> int:
             not survivals[name],
             f"mutated claim survives={survivals[name]}",
         )
+    steelman = compute_steelman_evidence()
+    checks.record(
+        "independent hostile steelman resolution",
+        steelman.resolved and not survivals["wrong-pair-order"],
+        "direct-matrix resolution and primary wrong-order fixture both kill the objection",
+    )
+    assert steelman.resolved, f"independent N7 steelman failed: {steelman}"
+    print(steelman_resolution_line())
     return checks.finish()
 
 

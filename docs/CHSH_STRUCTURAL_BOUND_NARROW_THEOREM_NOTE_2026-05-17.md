@@ -1,6 +1,7 @@
 # Structural CHSH Bound — Narrow Theorem (Classical 2, Tsirelson 2√2)
 
 **Date:** 2026-05-17
+**Type:** positive_theorem
 **Class:** `positive_theorem` (Class A — pure algebra over retained primitives)
 **Lane:** bell / foundational QM
 **Block:** physics-loop / block09 / 2026-05-17 / bell-inequality-derivation

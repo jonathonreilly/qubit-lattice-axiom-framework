@@ -195,8 +195,9 @@ Final disposition:
 
 The cleanup removed 120 net lines from the dependency-unrelated surfaces and
 removed ten runner needles whose only purpose was to force irrelevant
-Thirring prose into later notes. Current literal occurrences are confined to
-Cycles 205–209 and the single Cycle-230 prior-art section.
+Thirring prose into later notes. Outside this provenance handoff, scientific
+references are confined to Cycles 205–209 and the single Cycle-230 prior-art
+section (plus its note-contract needle).
 
 The primary attribution is now precise:
 

@@ -27,7 +27,7 @@ The note is currently at `proposed_retained, unaudited` (per
 `audit_ledger.json`). Transitive descendants: 259. Load-bearing score: 9.52.
 
 This review packet does **not** challenge the runner result or the algebra —
-both are verified at PASS=20/0 strict mode. It applies the **seven
+both are verified at PASS=22/0 strict mode. It applies the **seven
 retained-proposal certificate criteria** to the note's actual current
 authority surface and recommends an honest status.
 
@@ -118,10 +118,12 @@ the corresponding dependency surface. That baseline is useful because it says
 what the axioms do and do not provide. It does not supply `g_bare = 1`.
 `MINIMAL_AXIOMS_2026-04-11.md` is historical only for this route and should not
 be used as an authority that would close the Wilson normalization dependency.
-The small-`a` Wilson matching theorem
-`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md` supplies
-the relation `beta = 2 N_c / g_bare^2` inside a supplied Wilson action surface;
-it does not select `g_bare = 1`.
+The stable-path theorem
+`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`
+now supplies only a defined matrix-trace Taylor coefficient and the formal
+equivalence `beta*g^2=2n`. It supplies no Wilson action, gauge-field
+dictionary, or physical matching demand and therefore cannot close this
+route's `g_bare = 1` / `beta = 6` normalization gate.
 
 Until at least one of these is closed, the current bounded support status
 is honest.
@@ -177,7 +179,7 @@ certificate.
 - `MINIMAL_AXIOMS_2026-04-11.md` — historical-only older memo; context
   handle only, not a citation-graph dependency and not a live normalization
   authority for this route
-- [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md) — Wilson matching relation inside a supplied action surface; does not select `g_bare = 1`
+- [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md) — defined matrix-trace Taylor theorem and formal coefficient equivalence only; no Wilson or physical normalization authority
 - [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) — retained Wilson SU(3) gauge surface
 - Sommer, "A New Way to Set the Energy Scale" — arXiv:hep-lat/9310022
 - FLAG Review 2021, Eur. Phys. J. C 82, 869 (2022)

@@ -30,8 +30,9 @@ Checked content (all constructed, nothing assigned):
       per step is 2 tau (Gaussian generator identity + constructed Wilson
       second moments -> 8 tau_eff over dim = 8); hence tau = 1/2 is
       exactly the unit-variance-per-step setting, and via tau = N_c/beta
-      it is exactly beta = 2 N_c = 6 — the same-slot/(SD) point of the
-      g_bare chain. Exact rational layer for the equivalences and the
+      it is exactly beta = 2 N_c = 6. The stable-path matrix theorem
+      supplies only a formal coefficient identity; no magnetic/physical
+      g_bare dictionary is inferred. Exact rational layer for the equivalences and the
       mismatched family (tau = 1/8 <-> beta = 24, per-direction moment
       1/4; tau = 3 <-> beta = 1, moment 6).
 
@@ -427,11 +428,11 @@ def section_F() -> None:
     check("tau = 1/2 gives per-direction moment 1 (unit variance per step)", per_direction_moment(Fraction(1, 2)) == 1)
     check("tau = 1/2 maps to beta = N_c / tau = 6", beta_of(Fraction(1, 2)) == 6)
     check(
-        "consistency with the magnetic identity: g^2(beta(tau)) = 2 N_c / beta = 2 tau",
+        "consistency with the formal identity: g_formal^2(beta(tau)) = 2 N_c / beta = 2 tau",
         all(2 * n_c / beta_of(t) == 2 * t for t in (Fraction(1, 8), Fraction(1, 2), Fraction(3))),
     )
     check(
-        "coincidence at tau = 1/2: g^2 = 1 = s^2 (the same-slot point)",
+        "formal coincidence at tau = 1/2: g_formal^2 = 1",
         2 * n_c / beta_of(Fraction(1, 2)) == 1,
     )
     check(
@@ -491,7 +492,8 @@ def section_G() -> None:
 
     require_contains("rigidity", rigidity_flat, "no independent scalar-normalization freedom")
     require_contains("rigidity", rigidity_flat, "Tr(T_a T_b) = delta_ab / 2")
-    require_contains("Wilson", wilson_text, "beta * g_bare^2 = 2 N_c")
+    require_contains("Wilson", wilson_text, "beta g^2 = 2n")
+    require_contains("Wilson", wilson_text, "authority for an action surface")
     require_contains("RP bridge", rp_flat, "temporal gauge")
     require_contains("RP bridge", rp_flat, "plane positive kernel")
     require_contains(

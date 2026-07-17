@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
-runner_sha256: 7fbf43985e4530dbba529fdcda2cbed88281a932b69be142db42ecdf2b0f559f
+runner_sha256: e45cb3ada0e1d5d49476a11a4831612477cdceff7fdbf4a1caa9ec54374a8514
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 Plaquette beta=6 perturbative-derivation repaired diagnostic runner
@@ -16,9 +16,9 @@ T0: admitted-input runner-local diagnostic license
 PASS: note records 2026-06-12 source-boundary demotion
       demotion and admitted-input sections present
 PASS: note records admitted finite packet I_PT
-      packet names source-wired Wilson relation, beta specialization, coefficient list, MC comparator, and F2 comparator
-PASS: note records Wilson small-a matching as an explicit dependency
-      Wilson coefficient relation is dependency-wired, not re-admitted
+      packet separates formal algebra, W-PHYS, and runner-local values
+PASS: note records only formal coefficient algebra as the explicit dependency
+      W-PHYS remains admitted rather than dependency-laundered
 PASS: note licenses unresolved NSPT/MC/F2 inputs for this diagnostic only
       remaining admitted inputs and alpha/beta boundaries carry no downstream license
 PASS: note excludes actual beta=6 surface and non-perturbative route claims
@@ -39,15 +39,15 @@ PASS: note keeps non-perturbative routes open
       finite perturbative route only
 
 ==============================================================================
-C1: source-wired Wilson-normalization edge
+C1: source-wired formal coefficient edge + admitted W-PHYS
 ==============================================================================
-PASS: Wilson theorem supplies beta = 2 N_c / g_bare^2
-      coefficient-matching identity is present in the retained-bounded source note
-PASS: Wilson theorem includes the beta=6 specialization only with supplied g_bare^2=1
-      specialization remains conditional on N_c=3 and g_bare^2=1
-PASS: Wilson theorem keeps action-surface and g_bare boundaries explicit
-      the dependency supplies coefficient matching, not physical surface selection
-PASS: supplied beta = 2 N_c / g_bare^2 = 6 at N_c=3, g_bare=1
+PASS: matrix theorem supplies beta=2n/g^2 only as formal coefficient algebra
+      formal identity is present in the dependency source
+PASS: matrix theorem does not contain a beta=6/g_bare specialization
+      physical specialization remains runner-local
+PASS: matrix theorem explicitly forbids action/coupling inference
+      the dependency supplies formal algebra, not W-PHYS
+PASS: admitted W-PHYS specialization gives beta=6 at N_c=3, g_bare=1
       beta = 6.0
 PASS: g_bare^2 = 2 N_c / beta = 1 at beta=6
       g^2 = 1.0
@@ -275,7 +275,7 @@ PASS: HONEST VERDICT: best tested value has residual > admitted F2 comparator
 ==============================================================================
 T9: scope (no new axioms / primitives / vocabulary)
 ==============================================================================
-PASS: no new axiom or primitive introduced (Lattice/Quantum/Record baseline unchanged)
+PASS: no new axiom or primitive introduced (Lattice/Qubit/Admissibility/Record baseline unchanged)
       paired note refuses new axiom/primitive authority
 PASS: no new repo vocabulary introduced
       paired note uses existing labels: <P>, beta, w_n, alpha_bare, u_0, tadpole improvement, Pade
@@ -286,7 +286,7 @@ PASS: admitted MC comparator 0.5934 enters only as comparator (not derivation in
 T10: paired note exists with matching status authority disclaimer
 ==============================================================================
 PASS: note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
-      length = 23701 chars
+      length = 24169 chars
 PASS: note declares Status authority: independent audit lane only
       audit-lane authority pattern present
 PASS: note declares no new axioms / no new primitives

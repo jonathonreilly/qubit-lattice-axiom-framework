@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py
-runner_sha256: 1fc63ab201f7bf7de4c70c4ea5d8f9225fc2cee2c7ea2d40650b134886288c4f
+runner_sha256: e59230a123e9d76ad1e782ffbd31e328fc8c9209e895610ad854e90064db4b13
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 12.65
+elapsed_sec: 12.43
 status: ok
 ----- stdout -----
 Gauge-link per-record-step rate dial: blindness and the unit-variance point
@@ -68,8 +68,8 @@ SECTION F: exact layer — unit-variance point = the (SD)/beta=6 point
 ------------------------------------------------------------------------------
 [PASS] tau = 1/2 gives per-direction moment 1 (unit variance per step)
 [PASS] tau = 1/2 maps to beta = N_c / tau = 6
-[PASS] consistency with the magnetic identity: g^2(beta(tau)) = 2 N_c / beta = 2 tau
-[PASS] coincidence at tau = 1/2: g^2 = 1 = s^2 (the same-slot point)
+[PASS] consistency with the formal identity: g_formal^2(beta(tau)) = 2 N_c / beta = 2 tau
+[PASS] formal coincidence at tau = 1/2: g_formal^2 = 1
 [PASS] mismatched family: tau = 1/8 -> beta = 24, moment 1/4; tau = 3 -> beta = 1, moment 6
 [PASS] off-point coincidence failure: moments != 1 exactly at tau in {1/8, 3}
 
@@ -98,7 +98,8 @@ SECTION G: source-boundary guards
 [PASS] note omits forbidden marker: audit_status:
 [PASS] rigidity contains marker: no independent scalar-normalization freedom
 [PASS] rigidity contains marker: Tr(T_a T_b) = delta_ab / 2
-[PASS] Wilson contains marker: beta * g_bare^2 = 2 N_c
+[PASS] Wilson contains marker: beta g^2 = 2n
+[PASS] Wilson contains marker: authority for an action surface
 [PASS] RP bridge contains marker: temporal gauge
 [PASS] RP bridge contains marker: plane positive kernel
 [PASS] semigroup boundary contains marker: continuous Markov semigroups live on the probability/ensemble
@@ -106,7 +107,7 @@ SECTION G: source-boundary guards
 
 Summary
 ------------------------------------------------------------------------------
-TOTAL: PASS=74 FAIL=0
+TOTAL: PASS=75 FAIL=0
 Rate-dial check passed.
 
 ----- stderr -----

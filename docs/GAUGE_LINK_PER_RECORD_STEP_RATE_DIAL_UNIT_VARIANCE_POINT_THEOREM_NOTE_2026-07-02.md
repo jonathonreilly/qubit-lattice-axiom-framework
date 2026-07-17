@@ -47,8 +47,9 @@ theorem content.
    normalization used throughout are this fixed form's (no scalar
    freedom, so the rate cannot be absorbed into a metric rescale).
 2. [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-   — the supplied standard Wilson surface and its magnetic-side identity
-   `beta g_bare^2 = 2 N_c`, used in the exact coincidence layer.
+   — the defined matrix-trace Taylor coefficient and formal identity
+   `beta g^2 = 2n`, used only as algebra in the exact coincidence layer. It
+   supplies no magnetic-side or Wilson dictionary.
 3. [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
    — the temporal-gauge per-link plane kernel of the supplied Wilson
    surface, the concrete in-class member used by Lemma R0.
@@ -83,7 +84,7 @@ is a sharp dimensionless number, not a units artifact.
 
 ## Claim
 
-**Lemma R0 (the supplied surface's member and its rate).** The supplied
+**Lemma R0 (the supplied temporal surface's member and its rate).** The supplied
 Wilson temporal-gauge per-link kernel `exp((beta/N_c) Re Tr M)` lies in
 the class, with per-step rate
 
@@ -118,7 +119,7 @@ covariant-channel premise (non-scalar fundamental Fourier block); a
 metric dilation changes the fixed trace form (the freedom the rigidity
 theorem removes).
 
-**Theorem R3 (variance law and the unit point).** The per-direction
+**Theorem R3 (variance law and the formal unit point).** The per-direction
 second moment per step is `2 tau` (Gaussian generator identity; and the
 constructed Wilson member's second moment satisfies
 `<sum_j theta_j^2> -> 8 tau_eff` over `dim su(3) = 8` directions,
@@ -128,13 +129,14 @@ Richardson-verified). Hence, exactly:
 tau = 1/2
   <=>  per-direction second moment per record step = 1   (unit variance)
   <=>  beta = N_c / tau = 2 N_c = 6                       (via R0)
-  <=>  g^2 = 2 N_c / beta = 1 = s^2                       (the same-slot point).
+  <=>  g_formal^2 = 2 N_c / beta = 1                      (defined coefficient label).
 ```
 
 The mismatched family on the same construction: `tau = 1/8 <=> beta = 24`
 with per-direction moment `1/4`; `tau = 3 <=> beta = 1` with moment `6`.
-The coincidence holds at the unit-variance setting and fails everywhere
-else.
+The formal coincidence holds at the unit-variance setting and fails everywhere
+else. Identifying `g_formal` with a magnetic or physical coupling is outside
+this theorem.
 
 **Coverage verdict (scale-reference primitive).** The rate is
 dimensionless. The approved scale-reference primitive declares, in its own
@@ -183,14 +185,15 @@ the generator model; the group-level statement is verified on the
 constructed Wilson member: `<sum theta_j^2> / (8 tau_eff) -> 1`
 (Richardson), i.e. `8` directions at `2 tau` each. The equivalences in
 the display are exact rational arithmetic given R0's map, and the
-`g^2 = 2 tau` consistency line is the cited magnetic identity
-`beta g_bare^2 = 2 N_c` evaluated on `beta = N_c / tau`.
+`g^2 = 2 tau` consistency line is the cited formal identity
+`beta g^2 = 2n` evaluated under the explicit symbolic naming `n=N_c` and
+`beta=N_c/tau`. No physical coupling dictionary is used.
 
 ## Boundary
 
 This note does not claim:
 
-- a derivation of `tau = 1/2`, of `beta = 2 N_c`, of `g_bare = 1`, or of
+- a derivation of `tau = 1/2`, of `beta = 2 N_c`, of a physical `g_bare = 1`, or of
   the beta=6 bridge row's declared surface definition — the unit-variance
   point is located, not forced; forcing a dial value is overreach;
 - existence of the per-step link dynamics — the retained record/semigroup
@@ -205,6 +208,8 @@ This note does not claim:
 - coverage of the rate by the scale-reference primitive — the opposite is
   proved from the primitive's own quoted text;
 - Wilson plaquette action-surface selection from framework axioms;
+- a dictionary identifying the formal `g` of the matrix coefficient theorem
+  with a Wilson magnetic or physical coupling;
 - a continuum Hamiltonian, spectral gap, or continuum-limit existence;
 - a continuum running-coupling value or phenomenological coupling;
 - an audit verdict or any effective-status promotion.
@@ -253,5 +258,5 @@ python3 scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07
 Expected:
 
 ```text
-TOTAL: PASS=74 FAIL=0
+TOTAL: PASS=75 FAIL=0
 ```

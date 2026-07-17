@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Wilson generator-rescaling beta transformation bridge.
+"""Formal generator/coupling label-rescaling coefficient theorem.
 
 This runner checks the finite algebra behind the scoped bridge:
 
-  supplied Wilson small-a matching beta = 2 N_c / g^2
+  defined coefficient equality beta = 2 n / g^2
   + compensating generator rescaling T' = c T, g' = g / c
     => beta' = c^2 beta
     => beta' g'^2 = beta g^2 = 2 N_c.
 
-It does not derive Wilson action-surface selection, beta=6, g_bare=1, or any
-audit verdict.
+It does not infer an action, physical coupling, normalization point, or audit
+verdict.
 """
 
 from __future__ import annotations
@@ -50,23 +50,19 @@ def gram_diag(c_sq: Fraction) -> Fraction:
 def part0_source_boundaries() -> None:
     print("Part 0: source boundaries")
     check("bridge note exists", NOTE.exists(), NOTE.relative_to(ROOT).as_posix())
-    check("Wilson small-a matching note exists", WM_NOTE.exists(), WM_NOTE.relative_to(ROOT).as_posix())
+    check("defined matrix coefficient note exists", WM_NOTE.exists(), WM_NOTE.relative_to(ROOT).as_posix())
     check("g_bare rescaling consumer note exists", GBARE_RESCALING_NOTE.exists(), GBARE_RESCALING_NOTE.relative_to(ROOT).as_posix())
     text = NOTE.read_text(encoding="utf-8")
     required = [
-        "actual_current_surface_status: exact-support",
-        "trace_class: support_component_for_prior_blocker",
-        "target_claim_id: g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "reachability_to_target: supplies_component_only",
+        "**Claim type:** positive_theorem",
+        "No Wilson action or physical coupling is part of the theorem",
         "T'_a = c T_a",
-        "g'^2 = g^2 / c^2",
+        "g'   = g/c",
         "beta' = c^2 beta",
-        "beta' g'^2 = beta g^2 = 2 N_c",
-        "does not derive Wilson action-surface selection",
-        "does not derive beta=6",
-        "does not derive g_bare=1",
-        "does not by itself reclassify, close, or promote",
-        "bare_retained_allowed: false",
+        "beta' g'^2 = beta g^2 = 2n",
+        "does not claim:",
+        "the paired label transformation is induced on any Wilson",
+        "A downstream physical use must separately prove the dictionary",
     ]
     flat = " ".join(text.split())
     for marker in required:
@@ -85,17 +81,17 @@ def part0_source_boundaries() -> None:
 
 def part1_wilson_matching_note() -> None:
     print()
-    print("Part 1: Wilson matching authority surface")
+    print("Part 1: formal coefficient authority surface")
     text = WM_NOTE.read_text(encoding="utf-8")
     required = [
-        "beta = 2 N_c / g_bare^2",
-        "beta * g_bare^2 = 2 N_c",
-        "does not derive that the framework must select the Wilson action surface",
-        "The theorem is exactly the small-`a` coefficient matching inside the supplied",
+        "beta = 2n/g^2",
+        "beta g^2 = 2n",
+        "C_left = C_right",
+        "They may not cite it as authority for an action surface",
     ]
     flat = " ".join(text.split())
     for marker in required:
-        check(f"WM note contains marker: {marker[:60]}", marker in text or marker in flat)
+        check(f"formal note contains marker: {marker[:60]}", marker in text or marker in flat)
 
 
 def part2_exact_transform() -> None:
@@ -110,7 +106,7 @@ def part2_exact_transform() -> None:
     c_values = [Fraction(1, 3), Fraction(1, 2), Fraction(1), Fraction(2), Fraction(5, 2), Fraction(3)]
     for n_c, g_sq in samples:
         beta_old = beta(n_c, g_sq)
-        check(f"WM product before rescaling N={n_c}, g^2={g_sq}", beta_old * g_sq == 2 * n_c, f"beta={beta_old}")
+        check(f"formal product before rescaling n={n_c}, g^2={g_sq}", beta_old * g_sq == 2 * n_c, f"beta={beta_old}")
         for c in c_values:
             c_sq = c * c
             g_sq_new = g_sq / c_sq
@@ -128,7 +124,7 @@ def part2_exact_transform() -> None:
 
 def part3_canonical_surface_exclusion() -> None:
     print()
-    print("Part 3: fixed-beta canonical surface excludes nontrivial c")
+    print("Part 3: fixed-beta and half-trace definitions change for nontrivial c")
     beta_old = Fraction(6)
     g_sq = Fraction(1)
     n_c = Fraction(3)
@@ -137,7 +133,7 @@ def part3_canonical_surface_exclusion() -> None:
         c_sq = c * c
         beta_new = c_sq * beta_old
         check(
-            f"nontrivial c={c} changes beta on the same Wilson-matching surface",
+            f"nontrivial c={c} changes the defined beta label",
             beta_new != beta_old,
             f"beta'={beta_new}; beta={beta_old}",
         )
@@ -149,7 +145,7 @@ def part3_canonical_surface_exclusion() -> None:
 
 
 def main() -> int:
-    print("Wilson generator-rescaling beta transformation bridge")
+    print("Formal generator/coupling label-rescaling coefficient theorem")
     print("=" * 72)
     part0_source_boundaries()
     part1_wilson_matching_note()

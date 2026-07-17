@@ -3,14 +3,15 @@
 
 The runner exercises the algebraic content of the admitted SU(3)
 Wilson-plaquette perturbative expansion at beta=6 GIVEN the source-wired
-Wilson coefficient relation plus runner-local admitted inputs, and tests
+formal coefficient algebra, runner-local admitted W-PHYS dictionary, and
+other runner-local admitted inputs, and tests
 whether tadpole-improvement plus finite-order truncation plus a Pade [m/n]
 resummation reaches the admitted MC comparator <P>_MC = 0.5934 to any
 controlled accuracy.
 
-This is a RUNNER-LOCAL DIAGNOSTIC: the Wilson coefficient relation
-beta = 2 N_c / g_bare^2 is dependency-wired to the retained-bounded Wilson
-small-a matching theorem, while the NSPT coefficient packet, MC comparator,
+This is a RUNNER-LOCAL DIAGNOSTIC: only the formal relation
+beta = 2 n / g^2 is dependency-wired to the defined matrix theorem. The
+physical Wilson dictionary W-PHYS, NSPT coefficient packet, MC comparator,
 and F2 comparator remain admitted for this diagnostic only. The beta=6
 diagnostic specialization, g_bare=1 specialization, and alpha_bare scale
 notation are not downstream-licensed physical authorities. The runner reports
@@ -110,10 +111,10 @@ W_COEFFS_NSPT_SU3 = [
 
 
 def test_framework_constants() -> None:
-    section("C1: source-wired Wilson-normalization edge")
+    section("C1: source-wired formal coefficient edge + admitted W-PHYS")
     if not WILSON_NOTE.exists():
         check(
-            f"Wilson small-a matching note {WILSON_NOTE.name} exists",
+            f"defined matrix coefficient note {WILSON_NOTE.name} exists",
             False,
             f"path={WILSON_NOTE}",
         )
@@ -121,28 +122,26 @@ def test_framework_constants() -> None:
     wilson_body = WILSON_NOTE.read_text()
     wilson_flat = " ".join(wilson_body.split())
     check(
-        "Wilson theorem supplies beta = 2 N_c / g_bare^2",
-        "beta = 2 N_c / g_bare^2" in wilson_flat
-        and "beta * g_bare^2 = 2 N_c" in wilson_flat,
-        "coefficient-matching identity is present in the retained-bounded source note",
+        "matrix theorem supplies beta=2n/g^2 only as formal coefficient algebra",
+        "beta = 2n/g^2" in wilson_flat
+        and "C_left = C_right" in wilson_flat,
+        "formal identity is present in the dependency source",
     )
     check(
-        "Wilson theorem includes the beta=6 specialization only with supplied g_bare^2=1",
-        "For `N_c = 3` and `g_bare^2 = 1`, this gives `beta = 6`." in wilson_flat,
-        "specialization remains conditional on N_c=3 and g_bare^2=1",
+        "matrix theorem does not contain a beta=6/g_bare specialization",
+        "g_bare^2 = 1" not in wilson_flat and "beta = 6" not in wilson_flat,
+        "physical specialization remains runner-local",
     )
     check(
-        "Wilson theorem keeps action-surface and g_bare boundaries explicit",
-        "does not derive that the framework must select the Wilson action surface" in wilson_flat
-        and "does not derive a physical value of `g_bare`" in wilson_flat
-        and "Wilson plaquette action-surface selection" in wilson_body
-        and "`g_bare = 1`" in wilson_body,
-        "the dependency supplies coefficient matching, not physical surface selection",
+        "matrix theorem explicitly forbids action/coupling inference",
+        "They may not cite it as authority for an action surface" in wilson_flat
+        and "a physical meaning or value for `beta` or `g`" in wilson_flat,
+        "the dependency supplies formal algebra, not W-PHYS",
     )
     # beta = 2 N_c / g_bare^2; with g_bare = 1, beta = 6 at N_c = 3.
     beta_from_axiom = 2.0 * N_C / 1.0
     check(
-        "supplied beta = 2 N_c / g_bare^2 = 6 at N_c=3, g_bare=1",
+        "admitted W-PHYS specialization gives beta=6 at N_c=3, g_bare=1",
         math.isclose(beta_from_axiom, 6.0, rel_tol=1e-15),
         f"beta = {beta_from_axiom}",
     )
@@ -178,15 +177,17 @@ def test_source_boundary_manifest() -> None:
     )
     check(
         "note records admitted finite packet I_PT",
-        "I_PT = (source-wired beta*g_bare^2 = 2 N_c relation, diagnostic specialization N_c = 3 and beta = 6, admitted w_1..w_16, admitted <P>_MC = 0.5934, admitted F2_SCALE_PERCENT = 0.0833%)." in flat,
-        "packet names source-wired Wilson relation, beta specialization, coefficient list, MC comparator, and F2 comparator",
+        "source-wired formal beta*g^2 = 2 n algebra" in flat
+        and "admitted runner-local W-PHYS dictionary" in flat
+        and "admitted w_1..w_16" in flat,
+        "packet separates formal algebra, W-PHYS, and runner-local values",
     )
     check(
-        "note records Wilson small-a matching as an explicit dependency",
-        "## 2026-06-17 source-side edge repair: Wilson coefficient relation is wired" in body
+        "note records only formal coefficient algebra as the explicit dependency",
+        "## 2026-07-16 source-side correction: only formal coefficient algebra is wired" in body
         and "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md" in body
         and "Depends on" in body,
-        "Wilson coefficient relation is dependency-wired, not re-admitted",
+        "W-PHYS remains admitted rather than dependency-laundered",
     )
     check(
         "note licenses unresolved NSPT/MC/F2 inputs for this diagnostic only",
@@ -221,7 +222,7 @@ def test_source_boundary_manifest() -> None:
         "## 2026-06-15 source-boundary repair: second option elected" in body
         and "keep the row as\nan admitted-input runner-local diagnostic only" in body
         and "not a retained or\neffective-bounded authority" in body
-        and "Wilson coefficient\nrelation is sourced only within the Wilson small-a theorem's stated boundary" in body,
+        and "Only the formal coefficient\nalgebra is sourced; the Wilson dictionary is runner-local `W-PHYS`." in body,
         "source-boundary second option is source-locked",
     )
     check(
@@ -229,7 +230,7 @@ def test_source_boundary_manifest() -> None:
         "## 2026-06-20 source-boundary repair: non-downstream-licensed scoping" in body
         and "non-downstream-licensed runner-local diagnostic only." in flat
         and "No downstream row may cite this row as a retained or effective-bounded bridge or as a derivation" in flat
-        and "Wilson coefficient relation" in flat,
+        and "formal coefficient algebra" in flat,
         "source-boundary non-downstream-licensed scoping present; not a citeable bridge/derivation",
     )
     check(

@@ -6,16 +6,16 @@
 **Date of Wilson-normalization edge repair:** 2026-06-17
 **Date of source-boundary non-downstream-licensed scoping:** 2026-06-20
 **Type:** no_go source-row label; non-downstream-licensed runner-local
-diagnostic only with one source-wired Wilson coefficient edge (no downstream
+diagnostic only with one source-wired formal coefficient edge (no downstream
 row may cite this row as a retained or effective-bounded bridge/derivation)
 **Claim type:** no_go
 **Claim scope:** non-downstream-licensed admitted-input runner-local diagnostic
 only (no downstream row may cite this as a retained/effective-bounded
-bridge/derivation; the Wilson coefficient relation is dependency-wired, while
-the NSPT packet, beta=6 action-surface/physical-selection and `g_bare = 1`
+bridge/derivation; the formal coefficient algebra is dependency-wired, while
+the Wilson coefficient dictionary, NSPT packet, beta=6 action-surface/physical-selection and `g_bare = 1`
 specialization, MC comparator, and F2 comparator required for any promotion
-remain unsupplied/open). Given exactly the source-wired Wilson coefficient
-relation, the runner-local diagnostic specialization, and the three
+remain unsupplied/open). Given exactly the source-wired formal coefficient
+algebra, a runner-local admitted `W-PHYS` dictionary, the diagnostic specialization, and the three
 runner-local admitted inputs listed below, finite truncations `N <= 16`,
 tadpole-improved fixed points `N <= 8`, Pade `[m/n]` resummations with
 `m+n <= 12`, and tadpole-improved Pade fixed points with `m+n <= 8` land in
@@ -33,21 +33,22 @@ set or predict downstream status.
 
 **Depends on:** [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
 
-## 2026-06-17 source-side edge repair: Wilson coefficient relation is wired
+## 2026-07-16 source-side correction: only formal coefficient algebra is wired
 
-The Wilson coefficient-matching identity
+The cited theorem proves only the formal identity
 
 ```text
-beta = 2 N_c / g_bare^2
+beta = 2 n / g^2
 ```
 
 is now sourced from
 [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md),
-which derives it inside the supplied standard Wilson plaquette action with
-canonical `su(N_c)` trace normalization.
+after equality of two coefficients defined inside its own matrix packet. It
+does not derive a Wilson action or identify `(n,g)` with `(N_c,g_bare)`.
 
-This closes only the coefficient-relation sub-edge. It does not derive Wilson
-action-surface selection, physical selection of `beta = 6`, `g_bare = 1`, the
+This closes only the formal-algebra sub-edge. A physical Wilson coefficient
+dictionary remains a runner-local admitted input `W-PHYS`. Nothing here
+derives Wilson action-surface selection, physical selection of `beta = 6`, `g_bare = 1`, the
 NSPT packet, the MC comparator, the F2 comparator, or a reusable
 `alpha_bare` authority. The row remains a non-downstream-licensed
 runner-local diagnostic.
@@ -78,8 +79,8 @@ bridge or as a derivation of any quantity. The remaining authorities required
 
 - the **NSPT coefficient packet** `w_1..w_16` is admitted runner-local only;
   no retained/effective-bounded authority for it is supplied (open);
-- the **Wilson coefficient relation** `beta = 2 N_c/g_bare^2` is now
-  source-wired to the Wilson small-a theorem, but **Wilson action-surface
+- the **formal coefficient relation** `beta = 2 n/g^2` is source-wired to
+  the defined matrix theorem, but `W-PHYS` and **Wilson action-surface
   selection**, physical `beta = 6`, `g_bare = 1`, and reusable `alpha_bare`
   authority are not supplied (open);
 - the **MC comparator** `<P>_MC = 0.5934` is admitted runner-local only and is
@@ -91,8 +92,8 @@ bridge or as a derivation of any quantity. The remaining authorities required
 Because the remaining promotion authorities are open, this row is **not
 promotable** and is **not licensed as a citeable bridge/derivation** for any
 downstream row. The only load-bearing content remains the conditional
-runner-local diagnostic: given the source-wired Wilson coefficient relation,
-the diagnostic specialization, and the admitted local inputs, the tested
+runner-local diagnostic: given the source-wired formal coefficient algebra,
+runner-local `W-PHYS`, the diagnostic specialization, and the admitted local inputs, the tested
 finite weak-coupling/tadpole/Pade envelope stays in the `~0.91` band and does
 not reach the admitted MC comparator. This conditional arithmetic is not a
 `beta = 6` derivation and says nothing about the actual `beta = 6` plaquette
@@ -107,12 +108,12 @@ This row explicitly elects the second source-boundary option: keep the row as
 an admitted-input runner-local diagnostic only. It is not a retained or
 effective-bounded authority for the NSPT coefficient packet, beta=6
 action-surface/physical-selection claim, `g_bare = 1`, MC comparator, F2
-comparator, or the actual beta=6 plaquette surface. The Wilson coefficient
-relation is sourced only within the Wilson small-a theorem's stated boundary.
+comparator, or the actual beta=6 plaquette surface. Only the formal coefficient
+algebra is sourced; the Wilson dictionary is runner-local `W-PHYS`.
 
 The only load-bearing statement is the conditional runner-local diagnostic:
-given the source-wired Wilson coefficient relation plus the local inputs in
-`I_PT`, the tested finite weak-coupling/tadpole/Pade envelope stays in the
+given the source-wired formal coefficient algebra plus `W-PHYS` and the local
+inputs in `I_PT`, the tested finite weak-coupling/tadpole/Pade envelope stays in the
 `0.91` band and does not hit the admitted MC comparator. That conditional
 negative result prunes this finite perturbative route only. It does not rule
 out strong-coupling,
@@ -140,8 +141,8 @@ only.
 ```
 
 The 2026-06-12 repair took the second option. The 2026-06-17 edge repair then
-wired one named sub-edge, the Wilson coefficient relation, to a retained
-bounded source theorem. No authority is claimed for the remaining NSPT, beta=6
+wired one named sub-edge, the formal coefficient algebra, to a source theorem.
+No authority is claimed for `W-PHYS` or the remaining NSPT, beta=6
 surface-selection, `g_bare = 1`, MC, or F2 inputs; no new import, axiom,
 comparator, or audit-status change is introduced. The row remains
 source-demoted to the runner-local diagnostic license below.
@@ -164,7 +165,8 @@ comparator authority, or downstream status is introduced here.
 The runner-local packet is:
 
 ```text
-I_PT = (source-wired beta*g_bare^2 = 2 N_c relation,
+I_PT = (source-wired formal beta*g^2 = 2 n algebra,
+        admitted runner-local W-PHYS dictionary,
         diagnostic specialization N_c = 3 and beta = 6,
         admitted w_1..w_16, admitted <P>_MC = 0.5934,
         admitted F2_SCALE_PERCENT = 0.0833%).
@@ -176,10 +178,11 @@ I_PT = (source-wired beta*g_bare^2 = 2 N_c relation,
   0.806, 1.30, 2.14, 3.59, 6.13, 10.65, 18.78, 33.51, 60.50)`.
   This packet is admitted for THIS diagnostic only, carries no derivation
   weight, and is not licensed for downstream reuse.
-- **Wilson normalization edge and beta=6 diagnostic specialization:** the
-  runner consumes the relation `beta = 2 N_C / g_bare^2` from
+- **Formal coefficient edge, admitted `W-PHYS`, and beta=6 diagnostic specialization:** the
+  runner consumes the formal relation `beta = 2 n / g^2` from
   [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md).
-  With the diagnostic specialization `N_C = 3` and `BETA = 6.0`, the runner
+  and separately admits `W-PHYS` to name `(n,g)=(N_C,g_bare)` for this
+  diagnostic only. With the diagnostic specialization `N_C = 3` and `BETA = 6.0`, the runner
   obtains `g_bare^2 = 2 N_C / BETA = 1.0` and, under the standard
   `alpha = g^2/(4 pi)` convention, `alpha_bare = 1/(4 pi)`. This does not
   derive Wilson action-surface selection, physical `beta = 6`, `g_bare = 1`,
@@ -217,7 +220,7 @@ not evaluated or excluded by this diagnostic.
 
 Let `BETA = 6` and `N_c = 3` be the diagnostic specialization. The relation
 `g_bare^2 = 2 N_c / BETA = 1` is the algebraic specialization of the
-source-wired Wilson coefficient matching theorem, while
+source-wired formal coefficient theorem together with admitted `W-PHYS`, while
 `alpha_bare = g_bare^2 / (4 pi) = 1/(4 pi)` uses only the standard alpha
 notation for the runner's scale diagnostic. This note does not derive the
 physical selection of `BETA = 6`, `g_bare = 1`, or a reusable alpha authority.
@@ -342,11 +345,11 @@ close the full non-perturbative derivation problem.
   derivation input. The admitted MC comparator enters only in the residual
   computation, never as authority on the analytic computation or as a
   downstream-licensed value.
-- Does **not** provide retained/effective bounded authority for the NSPT
+- Does **not** provide retained/effective bounded authority for `W-PHYS`, the NSPT
   coefficient packet, beta=6 action-surface/physical-selection claim,
   `g_bare = 1`, F2 scale comparator, or MC comparator. The Wilson
-  coefficient relation is dependency-wired to the retained-bounded small-a
-  theorem only inside its stated Wilson-action boundary.
+  formal coefficient relation is dependency-wired only as algebra; the
+  Wilson-action dictionary is admitted runner-local and not downstream licensed.
 - Does **not** claim a fresh derivation of `<P> = 0.5934`. The
   admitted comparator remains runner-local here.
 - Does **not** claim that ALL non-perturbative methods fail. The
@@ -403,8 +406,8 @@ Lepage-Mackenzie tadpole fixed points `N = 1..8` (best `0.910550`,
 Wigner-Racah, exact finite-volume, and Monte Carlo routes are named as
 out of scope rather than ruled out.
 
-**N2 wall independence.** After the 2026-06-17 edge repair, W2 splits into a
-source-wired Wilson coefficient relation and the still-open physical
+**N2 wall independence.** After the 2026-07-16 correction, W2 splits into a
+source-wired formal coefficient identity, runner-local admitted `W-PHYS`, and the still-open physical
 specialization/surface-selection boundary. W1 the NSPT coefficient packet, W3
 the MC comparator, and W4 the F2 comparator remain admitted for this diagnostic
 only. The finite method grid is the runner operation over those inputs.
@@ -414,8 +417,8 @@ W4 would change only the reported comparison target, not the method values.
 **N3 hidden-wall scan.** Phrases such as "standard", "canonical", and
 "framework's existing" are treated as context unless they are the listed
 coefficient packet, beta=6 specialization/surface-selection boundary, F2
-scale, or MC comparator. The Wilson coefficient relation is the one wired
-edge; the remaining inputs are explicitly admitted for this diagnostic only.
+scale, or MC comparator. The formal coefficient algebra is the one wired
+edge; the remaining inputs, including `W-PHYS`, are explicitly admitted for this diagnostic only.
 The MC and F2 values are comparator-only and not licensed for downstream reuse.
 
 **N4 residual matching.** The residual attacked here is only the

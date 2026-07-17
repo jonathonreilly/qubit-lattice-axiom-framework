@@ -11,6 +11,14 @@
 > or apply an audit verdict. The parent row must be independently re-audited
 > before downstream rows may cite it as retained-grade closure.
 
+> **2026-07-16 dependency correction.** The stable-path matrix theorem cited
+> below now proves only a defined trace-Taylor coefficient equivalence. It does
+> **not** supply a Wilson action or a physical matching dictionary. Every
+> Wilson reading in this note is therefore conditional on the separately
+> named input `W-PHYS`: identify the theorem's defined `beta D(gx)` coefficient
+> with the Wilson action coefficient and its defined `1/2` coefficient with
+> the target kinetic coefficient. This note does not derive `W-PHYS`.
+
 The 2026-06-18 repair removes the circular-looking step in the older source
 where the `beta = 2 N_c = 6` surface was effectively hard-coded and then used
 to solve for `g_bare = 1`. The repaired parent now sources the two distinct
@@ -19,38 +27,40 @@ ingredients separately:
 1. Finite-link canonical generator normalization supplies the scalar slot
    `g_link^2 = 1` inside the fixed `SU(3)` generator basis, from
    [`G_BARE_RIGIDITY_THEOREM_NOTE.md`](G_BARE_RIGIDITY_THEOREM_NOTE.md).
-2. The standard Wilson small-`a` coefficient theorem supplies
-   `beta g_bare^2 = 2 N_c`, from
+2. The defined matrix-trace coefficient theorem supplies the formal identity
+   `beta g^2 = 2 n` after equality of its two internally defined
+   coefficients, from
    [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md).
 3. The scalar-slot compatibility is recorded and checked by
    [`G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md`](G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md).
 
-Together these give `beta = 2 N_c = 6` for `N_c = 3` on the supplied
-standard Wilson action surface, without using `beta = 6` as an input to
-derive `g_bare = 1`.
+Together with the explicit `W-PHYS` dictionary these give the conditional
+readout `beta = 2 N_c = 6` for `N_c = 3`. Without `W-PHYS`, they give only
+the formal coefficient identity; no physical Wilson conclusion follows.
 
 ---
 
 ## Status
 
 **source-side repair candidate; parent re-audit required.** On the
-finite-link canonical Wilson surface, the parent proof now composes a
-canonical scalar-slot theorem with a Wilson coefficient theorem. The claim is
+finite-link canonical surface and conditional on `W-PHYS`, the parent proof
+composes a canonical scalar-slot theorem with a formal coefficient theorem.
+The claim is
 not a dynamical calculation, not a fit, not a running-coupling fixed point,
 and not a derivation of the Wilson action form itself.
 
 The canonical finite-link statement is bounded: it says that, once the
 concrete `SU(3)` operator algebra and fixed trace form are in place, the
 finite link is written in canonical generator coordinates with no additional
-scalar multiplier. The Wilson theorem is also bounded: it gives the
-coefficient relation inside the supplied standard Wilson plaquette action.
+scalar multiplier. The matrix theorem is dependency-free but formal: it gives
+a coefficient relation only between expressions defined inside its packet.
 
 The parent claim after this repair is:
 
-> On the supplied standard Wilson plaquette surface with the canonical
+> Conditional on `W-PHYS`, on the supplied standard Wilson plaquette surface with the canonical
 > finite-link `SU(3)` generator basis, the Wilson coefficient scalar is the
 > same scalar slot eliminated by finite-link rigidity. Hence
-> `g_bare^2 = 1`, and the Wilson small-`a` theorem gives
+> `g_bare^2 = 1`, and `W-PHYS` maps the formal matrix identity to
 > `beta = 2 N_c / g_bare^2 = 6` for `N_c = 3`.
 
 ---
@@ -66,11 +76,13 @@ Assume:
 2. In that basis, the finite-link rigidity theorem removes any independent
    scalar-normalization multiplier: the canonical link coordinate is the
    `g_link^2 = 1` slot.
-3. The supplied standard Wilson plaquette small-`a` theorem gives
-   `beta g_bare^2 = 2 N_c`.
-4. The Wilson theorem's `g_bare` is the scalar multiplying the same canonical
+3. The defined matrix-trace theorem gives `beta g^2 = 2n` only as a formal
+   coefficient equality.
+4. `W-PHYS` identifies `(n,g)` with `(N_c,g_bare)` and identifies the two
+   formal coefficients with the Wilson and target kinetic coefficients.
+5. Under `W-PHYS`, `g_bare` is the scalar multiplying the same canonical
    `T_a` slot in the link/plaquette exponent.
-5. `N_c = 3`, and the positive-coupling branch is used.
+6. `N_c = 3`, and the positive-coupling branch is used.
 
 Then exact rational arithmetic gives
 
@@ -79,7 +91,8 @@ g_bare^2 = g_link^2 = 1,
 beta = 2 N_c / g_bare^2 = 2 * 3 / 1 = 6.
 ```
 
-This is a finite-link/Wilson-surface theorem. It does not assert a continuum
+This is a conditional finite-link/Wilson-surface implication. It does not
+derive `W-PHYS` and does not assert a continuum
 running coupling, a global logarithm branch, Wilson action-surface selection,
 or a phenomenological fitted value.
 
@@ -91,15 +104,14 @@ or a phenomenological fitted value.
   canonical `SU(3)` generator basis is not an allowed normalization ambiguity.
   In canonical finite-link coordinates, standard notation writes this as
   `g_link = 1`.
-- The Wilson small-`a` theorem defines its `g_bare` as the scalar multiplying
-  the canonical generators in the standard Wilson plaquette exponent and
-  derives `beta g_bare^2 = 2 N_c`.
+- The matrix-trace theorem derives only its formal coefficient equivalence.
+  `W-PHYS`, not that theorem, performs the Wilson/gauge-field dictionary.
 - The 2026-06-18 bridge note checks that these are the same scalar slot on
   the parent surface: a scalar multiplying the fixed `T_a` basis in the
   finite link/plaquette exponent.
 - Therefore the Wilson scalar slot has `g_bare^2 = 1` on the canonical
   finite-link surface.
-- Substituting `N_c = 3` into the Wilson coefficient identity gives
+- Substituting `N_c = 3` into the `W-PHYS`-supplied Wilson reading gives
   `beta = 6`.
 
 No step uses `beta = 6` as a premise for `g_bare = 1`.
@@ -112,13 +124,14 @@ No step uses `beta = 6` as a premise for `g_bare = 1`.
    canonical `SU(3)` generator basis and finite-link logarithm surface cited
    through
    [`G_BARE_RIGIDITY_THEOREM_NOTE.md`](G_BARE_RIGIDITY_THEOREM_NOTE.md).
-2. **Wilson matching surface:** the coefficient theorem
-   `beta g_bare^2 = 2 N_c` inside the supplied standard Wilson plaquette
-   action, cited through
+2. **Formal coefficient surface:** the defined theorem
+   `beta g^2 = 2 n`, cited through
    [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md).
-3. **Scalar-slot compatibility:** the 2026-06-18 bridge note that identifies
+3. **Physical dictionary `W-PHYS`:** the supplied, not-derived identification
+   of those formal coefficients and symbols with the Wilson matching surface.
+4. **Scalar-slot compatibility:** the 2026-06-18 bridge note that identifies
    the Wilson scalar slot with the finite-link canonical scalar slot.
-4. **Group rank:** `N_c = 3`.
+5. **Group rank:** `N_c = 3`.
 
 These inputs are not new axioms. They are existing source surfaces plus the
 new explicit compatibility bridge. Independent audit decides whether the
@@ -128,11 +141,11 @@ composition is sufficient for the parent row.
 
 ## What Is Actually Proved
 
-**Exact finite-link/Wilson-surface result if the bridge is accepted:**
+**Exact conditional result if both the bridge and `W-PHYS` are supplied:**
 
 - The finite-link canonical scalar slot is `g_link^2 = 1`.
-- The Wilson small-`a` coefficient identity gives
-  `beta g_bare^2 = 2 N_c`.
+- The formal matrix coefficient identity becomes
+  `beta g_bare^2 = 2 N_c` only through `W-PHYS`.
 - The bridge identifies `g_bare` and `g_link` as the same scalar slot on this
   supplied Wilson surface.
 - Therefore `g_bare^2 = 1` and `beta = 6` for `N_c = 3`.
@@ -183,13 +196,15 @@ composition is sufficient for the parent row.
 
 ## Paper-Safe Wording
 
-After independent re-audit accepts this parent composition, safe wording is:
+If `W-PHYS` is supplied and independent re-audit accepts the conditional
+composition, safe wording is:
 
 > On the supplied standard Wilson plaquette surface, the scalar multiplying
 > the canonical finite-link `SU(3)` generator basis is the same scalar slot
 > removed by finite-link gauge-normalization rigidity. Thus the canonical
-> finite-link normalization gives `g_bare^2 = 1`, and the Wilson small-`a`
-> coefficient theorem gives `beta = 2 N_c = 6` for `N_c = 3`.
+> finite-link normalization gives `g_bare^2 = 1`; conditional on the supplied
+> Wilson coefficient dictionary, the formal matrix theorem then gives
+> `beta = 2 N_c = 6` for `N_c = 3`.
 
 What the paper should not say:
 
@@ -212,12 +227,12 @@ Expected summaries:
 
 ```text
 g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
-TOTAL: PASS=37 FAIL=0
+TOTAL: PASS=103 FAIL=0
 
 frontier_g_bare_derivation.py
 EXACT   : PASS = 51, FAIL = 0
-BOUNDED : PASS = 12, FAIL = 0
-TOTAL   : PASS = 63, FAIL = 0
+BOUNDED : PASS = 14, FAIL = 0
+TOTAL   : PASS = 65, FAIL = 0
 ```
 
 These runners do not inspect or edit audit ledgers, audit queues,
@@ -230,7 +245,7 @@ publication matrices, or effective-status surfaces.
 | Input | Value | Source-side status before repair | Source-side status after repair |
 |---|---:|---|---|
 | finite-link canonical scalar slot | `g_link^2 = 1` | cited as context only | load-bearing via finite-link rigidity |
-| Wilson coefficient identity | `beta g_bare^2 = 2 N_c` | cited but not composed with finite-link scalar slot | load-bearing via Wilson small-`a` theorem |
+| formal coefficient identity | `beta g^2 = 2 n` | cited but not composed with finite-link scalar slot | load-bearing as formal algebra only; Wilson use additionally requires `W-PHYS` |
 | beta surface | `beta = 6` at `N_c = 3` | effectively hard-coded in parent runner | exact consequence of the bridge composition |
 | `sigma_v = pi*alpha^2/m^2` | -- | imported | imported, unchanged |
 | `V(r) = -alpha/r` | -- | imported | imported, unchanged |
@@ -243,6 +258,6 @@ publication matrices, or effective-status surfaces.
 |---|---|---|
 | Unitarity bound | `g=1` makes `U` unitary, but so does any real `g` | Not selecting |
 | Strong-coupling fixed point | `SU(3)` has no nontrivial fixed point | Does not work |
-| Finite-link rigidity + Wilson small-`a` matching | `g_bare^2=1`, `beta=6` on supplied Wilson surface | Source-side repair candidate; re-audit required |
+| Finite-link rigidity + formal coefficient identity + `W-PHYS` | conditional `g_bare^2=1`, `beta=6` on supplied Wilson surface | Source-side conditional candidate; re-audit required |
 | Maximum entropy | Selects `g -> infinity` | Does not work |
 | Staggered Dirac normalization | Consistent with `g = 1` | Supporting, not standalone |

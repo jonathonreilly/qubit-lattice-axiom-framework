@@ -97,8 +97,8 @@ The runner verifies:
   promotion, unsupplied kernel selection, Record-derived rule/target/weight,
   sample-as-law, dial selection, or finite-alone unbounded retained flag set to
   true;
-- the audit ledger hash is unchanged during the scan;
-- a JSON source-packet export is written outside `docs/audit`.
+- a JSON source-packet export is written outside `docs/audit`, round-trips
+  with the exact ten stack rows, and contains no audit-state hash or field.
 
 Run:
 

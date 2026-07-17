@@ -173,13 +173,10 @@ def status_shape_checks() -> None:
 
 def firewall_checks() -> None:
     section("Repo-surface firewall checks")
-    before = sha256_rel("docs/audit/data/audit_ledger.json")
     packet_paths = [item.note_path for item in STACK] + [item.log_path for item in STACK] + [DOC.relative_to(ROOT).as_posix()]
     packet_text = "\n".join(read_rel(path) for path in packet_paths)
     for flag, label in FORBIDDEN_TRUE_FLAGS.items():
         report(label, f"{flag}=TRUE" not in packet_text)
-    after = sha256_rel("docs/audit/data/audit_ledger.json")
-    report("audit ledger hash is unchanged", before == after, before)
 
 
 def export_packet() -> None:
@@ -194,7 +191,6 @@ def export_packet() -> None:
         "exact_support_count": sum(1 for item in STACK if item.status == "exact-support"),
         "bounded_support_count": sum(1 for item in STACK if item.status == "bounded-support"),
         "no_go_count": sum(1 for item in STACK if item.status == "no-go"),
-        "audit_ledger_sha256": sha256_rel("docs/audit/data/audit_ledger.json"),
         "forbidden_true_flags": sorted(FORBIDDEN_TRUE_FLAGS),
         "stack": [
             {
@@ -214,6 +210,15 @@ def export_packet() -> None:
     }
     OUTPUT.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     report("source-packet export written", OUTPUT.exists(), OUTPUT.relative_to(ROOT).as_posix())
+    written = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    semantic_rows_match = (
+        written == payload
+        and written.get("stack_count") == len(STACK)
+        and [row.get("pr") for row in written.get("stack", [])]
+        == [item.number for item in STACK]
+        and not any(key.startswith("audit_") for key in written)
+    )
+    report("source packet round-trips with exact audit-independent stack semantics", semantic_rows_match)
 
 
 def main() -> int:

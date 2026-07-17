@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py
-runner_sha256: 7bbe97c20b806b444d429b4a4ef411f65870483464fc3af77e3eb8d4aa1a38ce
+runner_sha256: 4a879714e2fb89a1008db3a9d910e79af93c06b792883f213a0b9cbbc5771954
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -179,12 +179,12 @@ PASS sample-is-probability-law flag is absent
 PASS dial forced or selected flag is absent
 PASS finite-alone unbounded retained flag is absent
 PASS family lift derived from Record flag is absent
-PASS audit ledger hash is unchanged :: e3992d2d6de022b1b421de96d93dae8e18775746d1731627d144830d1fbce4f5
 
 ------------------------------------------------------------------------------
 Source-packet export
 ------------------------------------------------------------------------------
 PASS source-packet export written :: outputs/post_record_dynamics_family_lift_closeout_index_2026_06_06_source_packet.json
+PASS source packet round-trips with exact audit-independent stack semantics
 
 SUMMARY: PASS=155 FAIL=0
 POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX=TRUE

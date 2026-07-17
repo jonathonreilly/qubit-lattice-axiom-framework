@@ -1,0 +1,168 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_2026_07_16.py
+runner_sha256: 6cbfaffde3bb6181c7d8d54ddafdb87a829e4e2d9d1d8fada1f539c8012ad1da
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.39
+status: ok
+----- stdout -----
+V1.1 PASS C is a real 0/1 integer matrix
+V1.2 PASS C^3 = I
+V1.3 PASS C^T = C^2
+V1.4 PASS entrywise K: conj(W(a,b,c)) = W(conj a, conj b, conj c)
+V1.5 PASS adjoint: W(a,b,c)^dagger = W(conj a, conj c, conj b)
+V1.6 PASS involutions differ generically at witness (a,b,c)=(0,1,2)
+V1.7 PASS involutions agree exactly at b = c
+V1.8 PASS K-residual identity: conj(W) - W = -2i(Im a*I + Im b*C + Im c*C^2)
+V1.9 PASS K-residual entries separate: (0,0) = -2i Im a, (0,1) = -2i Im b, (0,2) = -2i Im c; vanishing pins entrywise-real exactly
+V1.10 PASS adjoint-residual entries: (0,0) = -2i Im a, (0,1) = conj(c) - b, (0,2) = conj(b) - c; vanishing pins a real and c = conj(b) exactly
+V1.11 PASS involution-difference residual: conj(W) - W^dagger = (conj(b) - conj(c))*(C - C^2); vanishing pins b = c exactly
+V2.1 PASS det W = lam0*lam1*lam2
+V2.2 PASS det W = a^3 + b^3 + c^3 - 3abc
+V2.3 PASS character projectors resolve the identity
+V2.4 PASS K fixes the singlet projector P_1
+V2.5 PASS K swaps P_w <-> P_conj(w)
+V2.6 PASS integer-cycle basis {I, C, C^2} is presentation-shared
+V2.7 PASS projector idempotence and mutual orthogonality
+V2.8 PASS channel-eigenvalue association: W*P_(w^k) = lam_k*P_(w^k) for k = 0, 1, 2
+V3.1 PASS lam0 = a+b+c is real on entrywise-real triples
+V3.2 PASS lam2 = conj(lam1) on entrywise-real triples
+V3.3 PASS det3 = lam0*|lam1|^2 exactly on entrywise-real triples
+V3.4 PASS negative control (1,i,0): exact values computed, pairing fails and det3 is not real [lam2-conj(lam1)=sqrt(3)-i, det3=1-i]
+V3.5 PASS |det3|^2 = lam0^2*|lam1|^4 on entrywise-real triples (r-neutral)
+V3.6 PASS pairing-gap closed form: lam2 - conj(lam1) = 2i(Im a + Im b*w^2 + Im c*w) = sqrt(3)(Im b - Im c) + i(2 Im a - Im b - Im c)
+V3.7 PASS gap real/imag parts separate: Re = sqrt(3)(Im b - Im c), Im = 2 Im a - Im b - Im c; linear solving pins Im a = Im b = Im c exactly
+V3.8 PASS on the equal-imaginary-parts locus the pairing holds and det3 = lam0*|lam1|^2
+V3.9 PASS Im lam0 = Im a + Im b + Im c = 3*Im a on the pairing locus: singlet reality cuts the pairing locus exactly to the entrywise-real triples
+V3.10 PASS witness (i,1+i,i): pairing holds off the entrywise-real locus with non-real grouped det3 = 1+3i [lam0=1+3i, det3=1+3i]
+V4.1 PASS Brannen spectrum lam_0 = a + 2R cos(delta + 2*pi*0/3)
+V4.2 PASS Brannen spectrum lam_1 = a + 2R cos(delta + 2*pi*1/3)
+V4.3 PASS Brannen spectrum lam_2 = a + 2R cos(delta + 2*pi*2/3)
+V4.4 PASS K on the Hermitian section acts as delta -> -delta
+V4.5 PASS lam0 is delta-even on the section
+V4.6 PASS lam1(-delta) = lam2(delta)
+V4.7 PASS lam2(-delta) = lam1(delta)
+V4.8 PASS det3 is delta-even on the section (class function on unordered pairs)
+V4.9 PASS permutation identity lam_k(-delta) = lam_{(3-k) mod 3}(delta)
+V4.10 PASS support-only trial comparator delta=2/9 at R>0: K maps W(2/9) to W(-2/9), a different matrix; the unordered pair {2/9, -2/9} is the K-orbit
+V4.11 PASS for R>0, exact residual -2i R sin(delta)(C-C^2) pins the section fixed set to delta = 0 mod pi; the trial comparator is not fixed
+V5.1 PASS (1,i,-i) is on the Hermitian section but not entrywise-real
+V5.2 PASS (1,2,3) is entrywise-real but off the Hermitian section
+V5.3 PASS exact intersection residual conj(b)-b = -2i Im(b) pins the Hermitian/entrywise-real intersection to real b = c
+V5.4 PASS Wirtinger d^2 det3 / dbs dbbs = -3a on the section coordinates
+V5.5 PASS realified section Laplacian = -12a
+V5.6 PASS holomorphic surface (b,c independent) is harmonic in (Re b, Im b)
+V6.1 PASS per-outcome-cell law gives r = 1/2 (conditional)
+V6.2 PASS per-real-mode law gives r = 1 (conditional)
+V6.3 PASS Q(1/2) = 2/3
+V6.4 PASS Q(1) = 1
+V7.1 PASS source text carries: KCPT L-K2 comparison opening
+V7.2 PASS note blockquotes verbatim: KCPT L-K2 comparison opening
+V7.3 PASS source text carries: KCPT L-K2 two-presentation sentence
+V7.4 PASS note blockquotes verbatim: KCPT L-K2 two-presentation sentence
+V7.5 PASS source text carries: KCPT L-K2 sign-non-selectability conclusion
+V7.6 PASS note blockquotes verbatim: KCPT L-K2 sign-non-selectability conclusion
+V7.7 PASS source text carries: KCPT declared reading R2 with FLAG
+V7.8 PASS note blockquotes verbatim: KCPT declared reading R2 with FLAG
+V7.9 PASS source text carries: KCPT supplied corner carrier
+V7.10 PASS note blockquotes verbatim: KCPT supplied corner carrier
+V7.11 PASS source text carries: KCPT entrywise-conjugation convention
+V7.12 PASS note blockquotes verbatim: KCPT entrywise-conjugation convention
+V7.13 PASS source text carries: axiom-memo Qualification clause
+V7.14 PASS note blockquotes verbatim: axiom-memo Qualification clause
+V7.15 PASS source text carries: section-tie weight-stage definition
+V7.16 PASS note blockquotes verbatim: section-tie weight-stage definition
+V7.17 PASS source text carries: section-tie outcome-stage definition
+V7.18 PASS note blockquotes verbatim: section-tie outcome-stage definition
+V7.19 PASS source text carries: section-tie residual independence
+V7.20 PASS note blockquotes verbatim: section-tie residual independence
+V7.21 PASS source text carries: section-tie Osterwalder–Schrader sentence
+V7.22 PASS note blockquotes verbatim: section-tie Osterwalder–Schrader sentence
+V7.23 PASS source text carries: section-tie preserved N6 route
+V7.24 PASS note blockquotes verbatim: section-tie preserved N6 route
+V7.25 PASS source text carries: obligation closure criterion
+V7.26 PASS note blockquotes verbatim: obligation closure criterion
+V7.27 PASS source text carries: staggered Fact-3 Wirtinger control
+V7.28 PASS note blockquotes verbatim: staggered Fact-3 Wirtinger control
+V7.29 PASS source text carries: selector unordered-PVM counterexample sentence
+V7.30 PASS note blockquotes verbatim: selector unordered-PVM counterexample sentence
+V7.31 PASS W1b declaration in W1b note quote-group
+V7.32 PASS W1b declaration in KCPT note quote-group
+V7.33 PASS W1b declaration blockquoted in this note
+V8.1 PASS ledger shard file exists: kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12
+V8.2 PASS ledger shard file exists: koide_first_order_section_tie_vs_outcome_label_residual_localization_bounded_theorem_note_2026-07-11
+V8.3 PASS ledger shard file exists: koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11
+V8.4 PASS ledger shard file exists: koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12
+V8.5 PASS ledger shard file exists: acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11
+V8.6 PASS ledger shard file exists: kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04
+V8.7 PASS ledger shard file exists: acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04
+V8.8 PASS ledger shard file exists: acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04
+V8.9 PASS ledger shard file exists: acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12
+V8.10 PASS ledger shard file exists: ac_orbit_occupancy_statistical_grain_derivation_obligation
+V9.1 PASS note carries: ## Purpose
+V9.2 PASS note carries: ## Supplied objects and consumed readings
+V9.3 PASS note carries: ### Involution conventions (pinned)
+V9.4 PASS note carries: ## Claims
+V9.5 PASS note carries: ### Presentation-swap action on the coupling triple (T1, exact)
+V9.6 PASS note carries: ### Entrywise-conjugation stability dichotomy on the coupling triple (T2, bounded)
+V9.7 PASS note carries: ### Real-triple spectral pairing licenses sector-selective modulus grouping (T3, exact)
+V9.8 PASS note carries: ### Power-ratio neutrality and the underived graining binary (T4)
+V9.9 PASS note carries: ## Gated controls
+V9.10 PASS note carries: ## Negative controls
+V9.11 PASS note carries: ## No-Go Discipline Gate
+V9.12 PASS note carries: ### N1 —
+V9.13 PASS note carries: ### N2 —
+V9.14 PASS note carries: ### N3 —
+V9.15 PASS note carries: ### N4 —
+V9.16 PASS note carries: ### N5 —
+V9.17 PASS note carries: ### N6 —
+V9.18 PASS note carries: ### N7 —
+V9.19 PASS note carries: ### N8 —
+V9.20 PASS note carries: ## Non-claims
+V9.21 PASS note carries: ## Dependency roles and status boundary
+V9.22 PASS note carries: ## Dependencies
+V9.23 PASS note carries: ### Non-citation context handles
+V9.24 PASS note carries: ## Verification
+V9.25 PASS note carries: **No check passes by literal stipulation.**
+V9.26 PASS note carries: **Status authority:** independent audit lane only.
+V9.27 PASS forbidden phrase absent: 'exhaust'
+V9.28 PASS forbidden phrase absent: 'only route'
+V9.29 PASS forbidden phrase absent: 'last route'
+V9.30 PASS forbidden phrase absent: 'closes the'
+V9.31 PASS forbidden phrase absent: 'bijection'
+V9.32 PASS forbidden phrase absent: 'fiber'
+V9.33 PASS forbidden phrase absent: 'multiplicity bit'
+V9.34 PASS forbidden phrase absent: 'grain bit'
+V9.35 PASS forbidden phrase absent: 'final'
+V9.36 PASS forbidden phrase absent: 'decides m'
+V9.37 PASS forbidden phrase absent: 'derives the physical action'
+V9.38 PASS forbidden phrase absent: 'forces r'
+V9.39 PASS forbidden phrase absent: 'derives r'
+V9.40 PASS forbidden phrase absent: 'selects r'
+V9.41 PASS source-authored status/value snapshot absent: 'unaudited at writing'
+V9.42 PASS source-authored status/value snapshot absent: 'citation grades at writing'
+V9.43 PASS source-authored status/value snapshot absent: 'audited_renaming'
+V9.44 PASS source-authored status/value snapshot absent: 'honest auditor read'
+V9.45 PASS source-authored status/value snapshot absent: 'registered point'
+V9.46 PASS no bare decimal literals in the note
+V9.47 PASS markdown dependency link present: MINIMAL_AXIOMS_2026-06-29.md
+V9.48 PASS markdown dependency link present: KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md
+V9.49 PASS markdown dependency link present: KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md
+V9.50 PASS markdown dependency link present: KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md
+V9.51 PASS markdown dependency link present: KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md
+V9.52 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md
+V9.53 PASS non-citation context handle is backticked and unlinked: KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md
+V9.54 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+V9.55 PASS non-citation context handle is backticked and unlinked: AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md
+V9.56 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md
+V9.57 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md
+V9.58 PASS non-citation context handle is backticked and unlinked: LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md
+V9.59 PASS non-citation context handle is backticked and unlinked: RECORDS_ONLY_OS_RECONSTRUCTION_UNTIED_FIRST_ORDER_MEASURE_BOUNDED_THEOREM_NOTE_2026-07-11.md
+PATH note=docs/KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md
+PATH runner=scripts/kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_2026_07_16.py
+PATH cache=logs/runner-cache/kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_2026_07_16.txt
+TOTAL: PASS=152 FAIL=0
+FLAGS: R1c supplied corner surface; R2c consumed mechanism reading; R4c declared coupling-slot extension; T2 conditional on the compound R2c-to-R4c hierarchy; V6 assumes epsilon>0 and both endpoints remain conditional on their granularity laws; r remains a dial (0, 1/2, 1); delta=2/9 is a support-only trial bare-radian comparator, not derived
+
+----- stderr -----
+

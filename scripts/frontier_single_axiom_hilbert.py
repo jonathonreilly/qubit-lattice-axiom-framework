@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Scope-narrowed operational checks for a local tensor-product Hilbert packet.
 
-This runner verifies consequences after four inputs are supplied:
+This runner verifies consequences after four explicit conditions are supplied:
 
 1. local factor dimensions;
 2. a Hermitian Hamiltonian with stipulated local support;
@@ -11,8 +11,10 @@ This runner verifies consequences after four inputs are supplied:
 It does not derive those inputs from a bare Hilbert-space axiom, reduce the
 current framework axiom ledger, or prove a monotone graph-distance decay law.
 Test 4's valid support is the participation-ratio/spread contrast between a
-supplied local tensor-product Hamiltonian and an unfactored random Hamiltonian
-of the same dimension.
+supplied chain-local Hamiltonian and a dense nonlocal control on the same
+factorized Hilbert space and normalized computational-basis outcome space. The
+two generators are
+centered and matched to the same RMS energy before propagation.
 
 PStack experiment: single-axiom-hilbert
 """
@@ -94,6 +96,62 @@ def random_local_hamiltonian(n_sites: int, d: int, edges: list[tuple[int, int]],
                 H += h_pair[row, col] * kron_list(ops)
 
     return H
+
+
+def match_centered_rms_energy(
+    H: np.ndarray, target_rms_energy: float = 1.0
+) -> tuple[np.ndarray, float]:
+    """Remove the global energy origin and match the RMS generator scale.
+
+    For dimension ``D``, the centered RMS energy is
+
+        sqrt(Tr(H_c^dagger H_c) / D),
+        H_c = H - Tr(H) I / D.
+
+    The trace shift changes only the propagator's global phase.  Dividing by
+    this RMS energy gives local and dense Hamiltonians the same typical
+    dimensionless evolution scale without matching either matrix entrywise.
+    """
+    D = H.shape[0]
+    if H.shape != (D, D):
+        raise ValueError("Hamiltonian must be square")
+    if target_rms_energy <= 0.0:
+        raise ValueError("target_rms_energy must be positive")
+
+    hermiticity_residual = np.linalg.norm(H - H.conj().T, ord="fro")
+    if hermiticity_residual > 1e-10:
+        raise ValueError(f"Hamiltonian is not Hermitian: residual={hermiticity_residual}")
+
+    H_centered = H - (np.trace(H) / D) * np.eye(D, dtype=complex)
+    rms_energy = float(np.linalg.norm(H_centered, ord="fro") / np.sqrt(D))
+    if not np.isfinite(rms_energy) or rms_energy <= 0.0:
+        raise ValueError("Hamiltonian has no finite nonzero centered RMS energy")
+
+    return H_centered * (target_rms_energy / rms_energy), rms_energy
+
+
+def normalized_basis_probabilities(
+    H: np.ndarray, source_state: np.ndarray, t: float
+) -> tuple[np.ndarray, float]:
+    """Propagate and return one normalized distribution over basis outcomes."""
+    amplitudes = expm(-1j * H * t) @ source_state
+    probabilities = np.abs(amplitudes) ** 2
+    total = float(np.sum(probabilities))
+    normalization_error = abs(total - 1.0)
+    if normalization_error > 1e-10:
+        raise ValueError(f"Unitary outcome probabilities are not normalized: sum={total}")
+    return probabilities / total, normalization_error
+
+
+def participation_ratio(probabilities: np.ndarray) -> float:
+    """Effective number of populated mutually exclusive outcomes."""
+    if probabilities.ndim != 1:
+        raise ValueError("Participation-ratio input must be one-dimensional")
+    if np.min(probabilities) < -1e-15:
+        raise ValueError("Participation-ratio input contains negative probabilities")
+    if abs(float(np.sum(probabilities)) - 1.0) > 1e-10:
+        raise ValueError("Participation-ratio input must be normalized")
+    return float(1.0 / np.sum(probabilities ** 2))
 
 
 # ============================================================================
@@ -232,13 +290,13 @@ def test_graph_emergence():
 
     success_rate = sum(results) / len(results)
     print(f"\n  Graph recovery rate: {success_rate:.0%} ({sum(results)}/{len(results)})")
-    print(f"  PASS: graph support is recovered under the admitted extraction rule" if success_rate == 1.0
+    print(f"  PASS: graph support is recovered under the supplied extraction rule" if success_rate == 1.0
           else f"  PARTIAL: {success_rate:.0%} exact recovery")
     return success_rate
 
 
 # ============================================================================
-# Test 2: admitted Born p=2 readout gives I_3 = 0.
+# Test 2: supplied Born p=2 readout gives I_3 = 0.
 # ============================================================================
 
 def compute_I3_hilbert(dim: int, n_trials: int, rng: np.random.Generator) -> list[float]:
@@ -329,9 +387,9 @@ def compute_I3_pnorm(p: float, dim: int, n_trials: int,
 
 
 def test_born_rule():
-    """Test 2: Born p=2 readout and p != 2 controls."""
+    """Test 2: Born p=2 readout and three tested nonquadratic controls."""
     print("\n" + "=" * 70)
-    print("TEST 2: Born p=2 readout gives I_3 = 0; p != 2 controls fail")
+    print("TEST 2: Born p=2 readout gives I_3 = 0; tested nonquadratic controls are nonzero")
     print("=" * 70)
 
     rng = np.random.default_rng(123)
@@ -364,13 +422,13 @@ def test_born_rule():
     all_nonzero = all(v > 1e-6 for v in p_norm_results.values())
     born_auto = max_hilbert < 1e-10
 
-    print(f"\n  Summary: admitted Born p=2 readout gives I_3 = 0: {born_auto}")
-    print(f"  Summary: p != 2 violates Born rule: {all_nonzero}")
+    print(f"\n  Summary: supplied Born p=2 readout gives I_3 = 0: {born_auto}")
+    print(f"  Summary: tested p in {{1.5, 3, 4}} gives nonzero sampled I_3: {all_nonzero}")
     return born_auto and all_nonzero
 
 
 # ============================================================================
-# Test 3: Hermitian/unitary toy evolution versus Lindblad replacement.
+# Test 3: Hermitian/unitary toy evolution versus fixed dephasing control.
 # ============================================================================
 
 def propagator_unitary(H: np.ndarray, source: int, t: float) -> np.ndarray:
@@ -424,9 +482,9 @@ def propagator_lindblad(H: np.ndarray, source: int, t: float,
 
 
 def test_unitarity():
-    """Test 3: Hermitian/unitary evolution versus Lindblad replacement."""
+    """Test 3: Hermitian/unitary evolution versus fixed dephasing control."""
     print("\n" + "=" * 70)
-    print("TEST 3: Hermitian generator gives unitary evolution; Lindblad control breaks it")
+    print("TEST 3: Hermitian generator is unitary; fixed strong-dephasing control changes the profile")
     print("=" * 70)
 
     if not HAS_SCIPY:
@@ -467,7 +525,7 @@ def test_unitarity():
     print(f"    Probability at center > edges: {attracted}")
 
     # Lindblad (non-unitary) propagator at various damping rates
-    print(f"\n  Lindblad (non-unitary) evolution:")
+    print(f"\n  Lindblad dephasing control (non-unitary open-system evolution):")
     gammas = [0.0, 0.1, 0.5, 1.0, 2.0]
     for gamma in gammas:
         prob_lindblad = propagator_lindblad(H, source, t, gamma, n_steps=200)
@@ -486,33 +544,41 @@ def test_unitarity():
 
     print(f"\n  Unitary: probability migrates toward toy attraction center: "
           f"{attraction_works_unitary}")
-    print(f"  Strong Lindblad: probability stuck at source (toy attraction broken): "
+    print(f"  Fixed gamma=2 control: source probability > toy-center probability: "
           f"{attraction_broken_lindblad}")
-    print(f"  PASS: Hermitian/unitary control is load-bearing for the toy profile" if attraction_broken_lindblad
-          else f"  NOTE: Lindblad still shows some attraction (weaker test)")
+    probability_conserved = abs(norm_unitary - 1.0) < 1e-10
+    passed = (
+        probability_conserved
+        and attraction_works_unitary
+        and attraction_broken_lindblad
+    )
+    print("  PASS: fixed unitary/strong-dephasing toy contrast" if passed
+          else "  FAIL: fixed unitary/strong-dephasing control semantics")
 
-    return True
+    return passed
 
 
 # ============================================================================
-# Test 4: tensor-product/local-H packet gives bounded localization support.
+# Test 4: matched-scale local-H versus dense-control localization support.
 # ============================================================================
 
-def test_tensor_product_essential():
-    """Test 4: tensor-product factorization gives bounded localization support.
+def test_matched_scale_localization():
+    """Test 4: local support gives a bounded fixed-seed localization contrast.
 
     Compare:
-    (a) Tensor product space H = H_1 x H_2 x ... x H_N with local Hamiltonian
-        -> supplies a graph and localized propagator support
-    (b) Single unfactored Hilbert space of the same dimension with a random
-        Hamiltonian -> no supplied graph-distance notion
+    (a) the factorized space H_space = H_1 x H_2 x ... x H_N with a
+        chain-local Hamiltonian;
+    (b) the same factorized 64-dimensional space with a dense random
+        Hamiltonian that does not respect the chain-local support restriction.
 
-    The pass criterion is the participation-ratio/spread contrast. The
-    fixed-seed local amplitudes are printed as a diagnostic only and are not
-    required to decay monotonically with graph distance.
+    Both propagators start from the same state, use centered generators with
+    identical RMS energy, and are represented by normalized distributions on
+    the same 64 mutually exclusive computational-basis outcomes.  The pass
+    criterion retains the existing 2x participation-ratio contrast.  No
+    monotone graph-distance claim is made.
     """
     print("\n" + "=" * 70)
-    print("TEST 4: Tensor product factorization gives bounded localization support")
+    print("TEST 4: Matched-scale local H gives bounded localization support")
     print("=" * 70)
 
     if not HAS_SCIPY:
@@ -528,127 +594,118 @@ def test_tensor_product_essential():
 
     # Local Hamiltonian on 1D chain
     edges_chain = [(i, i+1) for i in range(n_sites - 1)]
-    H_local = random_local_hamiltonian(n_sites, d, edges_chain, rng, coupling_strength=0.5)
+    H_local_raw = random_local_hamiltonian(
+        n_sites, d, edges_chain, rng, coupling_strength=0.5
+    )
 
-    # Propagator from site 0
+    # Dense control on the same C^64 outcome space.  It shares the supplied
+    # factor labels for a like-for-like readout, but not the chain-local
+    # Hamiltonian support restriction.
+    H_dense_raw = random_hermitian(D, rng)
+
+    target_rms_energy = 1.0
+    H_local, local_rms_before = match_centered_rms_energy(
+        H_local_raw, target_rms_energy
+    )
+    H_dense, dense_rms_before = match_centered_rms_energy(
+        H_dense_raw, target_rms_energy
+    )
+    local_rms_after = float(np.linalg.norm(H_local, ord="fro") / np.sqrt(D))
+    dense_rms_after = float(np.linalg.norm(H_dense, ord="fro") / np.sqrt(D))
+
+    # Same initial outcome and same dimensionless evolution time.
     source_state = np.zeros(D, dtype=complex)
-    source_state[0] = 1.0  # |000000> = site 0 in computational basis
+    source_state[0] = 1.0  # |000000>
     t = 1.0
-    G_local = expm(-1j * H_local * t) @ source_state
+    probs_local, local_normalization_error = normalized_basis_probabilities(
+        H_local, source_state, t
+    )
+    probs_dense, dense_normalization_error = normalized_basis_probabilities(
+        H_dense, source_state, t
+    )
 
-    # Measure probability at each site (trace over other qubits)
-    probs_local = []
-    for site in range(n_sites):
-        # Probability of finding excitation at site `site`
-        # = sum over all basis states with qubit `site` = 1
-        p = 0.0
-        for basis in range(D):
-            # Check if bit `site` is set (using big-endian convention)
-            bit = (basis >> (n_sites - 1 - site)) & 1
-            if bit == 1:
-                p += abs(G_local[basis]) ** 2
-        probs_local.append(p)
+    print("\n  Common comparison contract:")
+    print(f"    Outcome space: {D} mutually exclusive computational-basis outcomes")
+    print(f"    Initial state: |{'0' * n_sites}>; dimensionless time: {t:.1f}")
+    print(
+        "    Centered RMS energy before matching: "
+        f"local={local_rms_before:.6f}, dense={dense_rms_before:.6f}"
+    )
+    print(
+        "    Centered RMS energy after matching:  "
+        f"local={local_rms_after:.12f}, dense={dense_rms_after:.12f}"
+    )
+    print(
+        "    Probability normalization error:    "
+        f"local={local_normalization_error:.3e}, dense={dense_normalization_error:.3e}"
+    )
 
-    print(f"\n  (a) Tensor product space (6-qubit chain):")
-    print(f"    Site probabilities: [{', '.join(f'{p:.4f}' for p in probs_local)}]")
+    # PR = 1 / sum_z p(z)^2 on the same normalized 64-outcome space.
+    PR_local = participation_ratio(probs_local)
+    PR_dense = participation_ratio(probs_dense)
 
-    # Check locality: nearby sites have higher probability than far sites
-    local_gradient = all(probs_local[i] >= probs_local[i+1] - 0.05
-                        for i in range(n_sites - 1))
-    print(f"    Locality gradient (near > far): {local_gradient}")
-    print("    Diagnostic only: the fixed-seed amplitudes are not claimed to decay monotonically.")
-
-    # --- (b) Unfactored space: random Hamiltonian, same dimension ---
-    H_random = random_hermitian(D, rng)
-
-    G_random = expm(-1j * H_random * t) @ source_state
-    probs_random = np.abs(G_random) ** 2
-
-    # In the unfactored space, there's no meaningful "site" decomposition
-    # So we just look at the probability distribution
-    print(f"\n  (b) Unfactored space (random 64x64 Hamiltonian):")
-    print(f"    Probability spread (std): {np.std(probs_random):.4e}")
-    print(f"    Max probability: {np.max(probs_random):.4e}")
-    print(f"    Min probability: {np.min(probs_random):.4e}")
-
-    # Key comparison: measure the "effective locality" via participation ratio
-    # PR = 1 / sum(p_i^2) -- measures how many states are populated
-    PR_local = 1.0 / np.sum(np.array(probs_local) ** 2) if sum(probs_local) > 0 else D
-    PR_random = 1.0 / np.sum(probs_random ** 2)
-
-    print(f"\n  Participation ratio (how spread is the propagator):")
-    print(f"    Local Hamiltonian:  PR = {PR_local:.1f} / {n_sites} sites")
-    print(f"    Random Hamiltonian: PR = {PR_random:.1f} / {D} states")
-
-    # --- (c) Distance-dependent propagation test ---
-    # In the tensor product space, graph-distance amplitudes are inspectable.
-    # This fixed-seed sample is not used as a monotone-decay proof. In the
-    # unfactored space, there is no graph-distance notion to inspect.
-
-    print(f"\n  Distance dependence of propagation:")
-
-    # For local H: compute |G| at graph distances 0, 1, 2, ...
-    print(f"    Local (tensor product):")
-    for dist in range(n_sites):
-        # Target state: single excitation at site `dist`
-        target = np.zeros(D, dtype=complex)
-        target[1 << (n_sites - 1 - dist)] = 1.0
-        amp = abs(target.conj() @ G_local)
-        print(f"      distance {dist}: |G| = {amp:.6f}")
-
-    # For random H: no notion of distance, check spread
-    # Sort amplitudes and compare decay
-    amps_sorted = sorted(np.abs(G_random), reverse=True)
-    print(f"    Random (unfactored):")
-    print(f"      Top 5 amplitudes: [{', '.join(f'{a:.6f}' for a in amps_sorted[:5])}]")
-    print(f"      Bottom 5: [{', '.join(f'{a:.6f}' for a in amps_sorted[-5:])}]")
-    print(f"      Ratio top/median: {amps_sorted[0] / amps_sorted[D//2]:.2f}")
+    print("\n  Participation ratio on the common outcome space:")
+    print(f"    Chain-local Hamiltonian: PR = {PR_local:.4f} / {D} outcomes")
+    print(f"    Dense nonlocal control:  PR = {PR_dense:.4f} / {D} outcomes")
 
     # --- Summary ---
-    spread_ratio = PR_random / PR_local
-    print(f"\n  Spread ratio (random/local): {spread_ratio:.1f}x")
-    print(f"  Tensor-product/local-H packet is more localized by spread ratio: {spread_ratio > 2.0}")
-    print(f"  PASS: bounded localization contrast" if spread_ratio > 2.0
-          else f"  MARGINAL: ratio only {spread_ratio:.1f}x")
+    same_outcome_space = probs_local.shape == probs_dense.shape == (D,)
+    normalized = max(local_normalization_error, dense_normalization_error) < 1e-10
+    scale_matched = max(
+        abs(local_rms_after - target_rms_energy),
+        abs(dense_rms_after - target_rms_energy),
+        abs(local_rms_after - dense_rms_after),
+    ) < 1e-12
+    spread_ratio = PR_dense / PR_local
+    contrast_pass = spread_ratio > 2.0
+    passed = same_outcome_space and normalized and scale_matched and contrast_pass
 
-    return spread_ratio > 2.0
+    print(f"\n  Spread ratio (dense/local): {spread_ratio:.4f}x")
+    print(f"  Same 64-outcome space: {same_outcome_space}")
+    print(f"  Both distributions normalized: {normalized}")
+    print(f"  Centered RMS energies matched: {scale_matched}")
+    print(f"  Existing >2x spread criterion: {contrast_pass}")
+    print("  PASS: bounded matched-scale localization contrast" if passed
+          else "  FAIL: common-space matched-scale localization contract")
+
+    return passed
 
 
 # ============================================================================
-# Synthesis: admitted-input operational support.
+# Synthesis: explicit-condition operational support.
 # ============================================================================
 
 def synthesis(t1: float, t2: bool, t3: bool, t4: bool):
-    """Print the admitted-input synthesis of all four tests."""
+    """Print the explicit-condition synthesis of all four tests."""
     print("\n" + "=" * 70)
-    print("SYNTHESIS: What the admitted-input packet supports")
+    print("SYNTHESIS: What the explicit-condition packet supports")
     print("=" * 70)
 
     print(f"""
-  Admitted packet:
+  Supplied packet:
     local factor dimensions + Hermitian local H + Born p=2 readout
     + support-as-edges extraction rule
 
   Test 1 — Support graph recovered:            {'PASS' if t1 == 1.0 else 'PARTIAL'}
     The adjacency graph is recovered from the supplied Hamiltonian support
-    under the admitted extraction rule.
+    under the supplied extraction rule.
 
   Test 2 — Born p=2 readout check:              {'PASS' if t2 else 'FAIL'}
-    I_3 = 0 under the admitted p=2 readout.
-    p != 2 theories violate Born rule (I_3 != 0).
+    I_3 = 0 under the supplied p=2 readout.
+    The tested p in {{1.5, 3, 4}} controls give nonzero sampled I_3.
 
   Test 3 — Hermitian/unitary control:           {'PASS' if t3 else 'FAIL'}
-    The supplied Hermitian H gives unitary evolution; a Lindblad replacement
-    destroys the toy attraction profile.
+    The supplied Hermitian H gives unitary evolution; the fixed gamma=2
+    dephasing control leaves more probability at the source than at the center.
 
   Test 4 — Bounded localization contrast:       {'PASS' if t4 else 'FAIL'}
-    The supplied tensor-product/local-H packet is far less spread than an
-    unfactored random Hamiltonian of the same dimension. The fixed sample
-    does not prove monotone graph-distance decay.
+    On the same normalized 64-outcome space and at matched centered RMS
+    energy, the supplied chain-local H is less spread than a dense nonlocal
+    control. The fixed sample does not prove monotone graph-distance decay.
 
   Conclusion:
-    The runner supports the bounded operational consequences of the admitted
-    packet. It does not derive the local Hamiltonian, locality restriction,
+    The runner supports the bounded operational consequences of the explicit
+    conditions. It does not derive the local Hamiltonian, locality restriction,
     Born readout, or support-as-edges rule from a bare Hilbert-space axiom,
     and it does not reduce the current framework axiom ledger.
 """)
@@ -658,22 +715,25 @@ def synthesis(t1: float, t2: bool, t3: bool, t4: bool):
 # Main
 # ============================================================================
 
-def main():
+def main() -> int:
     print("SCOPE-NARROWED LOCAL TENSOR PRODUCT HILBERT SUPPORT")
-    print("Bounded operational checks under admitted inputs.\n")
+    print("Bounded operational checks under explicit conditions.\n")
 
     t0 = time.time()
 
     t1 = test_graph_emergence()
     t2 = test_born_rule()
     t3 = test_unitarity()
-    t4 = test_tensor_product_essential()
+    t4 = test_matched_scale_localization()
 
     synthesis(t1, t2, t3, t4)
 
     elapsed = time.time() - t0
     print(f"Total runtime: {elapsed:.1f}s")
+    all_pass = t1 == 1.0 and t2 and t3 and t4
+    print(f"OVERALL: {'PASS' if all_pass else 'FAIL'}")
+    return 0 if all_pass else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

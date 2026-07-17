@@ -69,11 +69,12 @@ For every nonzero lattice momentum,
 ```
 
 Thus the scalar-source block of the finite-coin stiffness inverse is exactly
-`3 L^+`, with no long-wavelength approximation.  Cycle 215's four flat modes
-are zero modes of `K`, but the scalar source is exactly orthogonal to them.
-Only the ordinary constant acoustic mode remains; on the finite torus the
-same uniform background subtraction used in Cycles 211 and 213 removes it.
-In plain text: the scalar block is exactly 3 L^+.
+`3 L^+`, with no long-wavelength approximation. Cycle 215's two `U=+1` flat
+modes are zero modes of `K`; its two `U=-1` flat modes instead have `K=4`.
+The scalar source is exactly orthogonal to all four flat modes. Only the
+ordinary constant acoustic mode remains; on the finite torus the same uniform
+background subtraction used in Cycles 211 and 213 removes it. In plain text:
+the scalar block is exactly 3 L^+.
 
 The runner checks the identity over 64 held-out momenta, solves the complete
 coin-valued position-space equation, and verifies

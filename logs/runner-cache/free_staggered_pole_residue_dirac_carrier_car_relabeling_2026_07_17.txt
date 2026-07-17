@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/free_staggered_pole_residue_dirac_carrier_car_relabeling_2026_07_17.py
+runner_sha256: 998219a53e122ae631fb910d31b418e4e6c01601e7f83bb50a1c623a4a9a15b2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+FREE-STAGGERED POLE/RESIDUE DIRAC CARRIER + FINITE CAR RELABELLING
+[PASS] C1 dependency classes and one-hop target edge: ABJ=retained_bounded graph_links=2 minimal_context_only=True edge=True
+[PASS] C2 blocked Clifford, spin-half rest carrier, and taste multiplicity: clifford_residual=0.0e+00 spin=0.0e+00 spectrum=8x(+/-omega)
+[PASS] C3 finite-spacing complex pole and residue derivative: pole=1.55e-15 derivative=4.44e-16
+[PASS] C4 pole numerator and explicit rest-fiber isometry: numerator_residual=2.78e-17 frame=1.39e-17 rank=8
+[PASS] C5 compact-momentum energy/residue/projector convergence is O(a^2): O(a^2)_ratios=[3.893,4.001] final=(0.0005829788457671903, 0.0006550430930915563, 3.726473453541289e-05)
+[PASS] C6 temporal-coefficient deformation changes the target shell normalization: lambda=1.37 target_residual=-0.389 deformed=0.0e+00
+[PASS] C7 pole-derived limiting measure is boost invariant: div(rho V)=0.0e+00 flat_nonzero>=1.29e-01 measure_jac=2.2e-16 shell=1.4e-15 L(p)=8.9e-16
+[PASS] C8 Jordan-Wigner CAR is exact and the string-omission control fails: CAR_residual=0.0e+00 no_string_norm=4.0
+[PASS] C9 Hamiltonian spectral basis preserves CAR: unitary_CAR_residual=3.33e-16 eig=[-0.903818, -0.903818, 0.903818, 0.903818]
+[PASS] C10 pole-weighted hole relabelling is exact and its spectrum is nonnegative: pole_weight=0.902335 relabel_residual=4.44e-16 spectrum=[3.71e-17,3.609341]
+[PASS] C11 source boundaries and status firewalls: required=10/10 forbidden=0
+SCORECARD PASS=11 FAIL=0
+
+----- stderr -----

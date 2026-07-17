@@ -69,7 +69,6 @@ def note_contract() -> None:
         "apadula",
         "zych",
         "ahlbrecht",
-        "thirring-qca",
         "draft parking branch",
     )
     missing = tuple(phrase for phrase in required if phrase not in text)

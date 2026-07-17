@@ -429,7 +429,6 @@ def document_contract() -> None:
         "static green sector",
         "not a uniqueness theorem over all qcas",
         "no axiom conclusion",
-        "thirring-qca",
         "draft parking branch",
     )
     required_checklist = tuple(f"n{index}" for index in range(1, 9)) + (

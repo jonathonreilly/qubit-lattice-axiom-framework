@@ -455,14 +455,9 @@ def predecessor_controls() -> None:
         ROOT
         / "docs/work_history/repo/review_feedback/"
         "LOCAL_CLICK_STRENGTH_RESOLUTION_INERTIA_CYCLE225_NOTE_2026-07-17.md",
-        ROOT
-        / "scripts/coherent_causal_close_detector_compiler_cycle209_2026_07_16.py",
-        ROOT
-        / "docs/work_history/repo/review_feedback/"
-        "COHERENT_CAUSAL_CLOSE_DETECTOR_COMPILER_CYCLE209_NOTE_2026-07-16.md",
     )
     check(
-        "the resolution and causal-uncompute predecessors remain present",
+        "the resolution predecessor remains present",
         all(path.is_file() for path in predecessors),
         [path.name for path in predecessors],
     )

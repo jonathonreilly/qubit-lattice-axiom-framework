@@ -60,7 +60,6 @@ def note_contract() -> None:
         "not uniqueness over all local actions",
         "vacuum-relative mass scalar",
         "no axiom conclusion",
-        "thirring-qca",
         "draft parking branch",
     )
     missing = tuple(phrase for phrase in required if phrase not in text)

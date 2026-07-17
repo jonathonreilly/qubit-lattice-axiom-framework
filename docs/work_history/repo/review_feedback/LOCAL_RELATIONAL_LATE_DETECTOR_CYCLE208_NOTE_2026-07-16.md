@@ -15,7 +15,7 @@ surface.
 
 ## Attribution boundary
 
-The molecular two-fermion engine remains prior work of Bisio, D'Ariano,
+The two-particle bound-state engine remains prior work of Bisio, D'Ariano,
 Perinotti, and Tosini:
 
 <https://doi.org/10.1103/PhysRevA.97.032132>
@@ -25,10 +25,11 @@ D'Ariano, Mosco, Perinotti, and Tosini:
 
 <https://doi.org/10.3390/e20060435>
 
-The cited papers supply and solve the two-particle Thirring walk. The third
-carrier, fixed-total-momentum scattering extension, and this detector
-tournament are additions relative to those papers. No broader novelty claim is
-made.
+The cited papers supply and solve the two-particle Thirring walk and its bound
+states. This repository calls the selected localized bound-state packet a
+“molecule.” The third carrier, fixed-total-momentum scattering extension, and
+this detector tournament are additions relative to those papers. No broader
+novelty claim is made.
 
 ## Result up front
 

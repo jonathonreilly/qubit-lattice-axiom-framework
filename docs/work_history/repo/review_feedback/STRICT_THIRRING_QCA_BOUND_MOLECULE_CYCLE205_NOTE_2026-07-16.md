@@ -23,16 +23,21 @@ quantum cellular automaton,” *Physical Review A* 97, 032132 (2018):
 
 <https://doi.org/10.1103/PhysRevA.97.032132>
 
+Primary preprint: <https://arxiv.org/abs/1711.03920>
+
 Bisio, D'Ariano, Mosco, Perinotti, and Tosini give a simplified derivation and
 simulations in “Solutions of a Two-Particle Interacting Quantum Walk,”
 *Entropy* 20, 435 (2018):
 
 <https://doi.org/10.3390/e20060435>
 
+Primary preprint: <https://arxiv.org/abs/1804.08508>
+
 Those papers supply the strict one-dimensional Dirac walk, the onsite
 number-preserving interaction phase, and the two-particle scattering and
-molecular bound solutions. Cycle 205 claims no novelty for that automaton,
-its analytic solution, or the existence of the bound molecule.
+bound-state solutions. This repository calls the selected localized
+bound-state packet a “molecule.” Cycle 205 claims no novelty for that
+automaton, its analytic solution, or the existence of its bound states.
 
 Our narrower extension is an operational tournament. We independently build
 the finite two-particle update and ask whether one selected molecular branch

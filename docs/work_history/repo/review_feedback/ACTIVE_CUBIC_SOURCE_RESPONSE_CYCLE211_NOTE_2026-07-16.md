@@ -153,14 +153,8 @@ prediction.
 ## Attribution and scope
 
 The local relaxation is inherited from the internal Cycle-9 candidate and
-the body from Cycle 210.  Cycle 211 claims their new conditional composition,
-not global literature novelty.  The one-dimensional Thirring-QCA molecule
-used in Cycles 205–209 remains cited prior work of Bisio, D'Ariano, Mosco,
-Perinotti, and Tosini:
-
-<https://arxiv.org/abs/1804.08508>
-
-It is not used as the cubic active-source mechanism here.
+the body from Cycle 210. Cycle 211 claims their new conditional composition,
+not global literature novelty.
 
 This is a finite weak scalar construction on the draft parking branch.  It
 makes no axiom conclusion and changes no foundation, primitive, registry,

@@ -344,7 +344,6 @@ def note_contract() -> None:
         "scalar-lapse source",
         "source map remains supplied",
         "spectator records",
-        "one-dimensional thirring engine is prior work",
         "global novelty has not been established",
         "record formation remains open",
         "no axiom conclusion",

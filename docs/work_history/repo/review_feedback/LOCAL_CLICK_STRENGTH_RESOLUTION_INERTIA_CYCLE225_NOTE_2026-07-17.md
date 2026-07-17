@@ -299,14 +299,6 @@ predecessor is T. Heine, E. Barkai, K. Ziegler, and S. Tornow, “Quantum walks:
 First hitting times with weak measurements,” *Physical Review A* 113, 052426
 (2026), <https://doi.org/10.1103/j2yb-fmw1>.
 
-The one-dimensional interacting two-particle engine used only in Cycles
-205–209 is prior work: Bisio, D'Ariano, Perinotti, and Tosini, “Thirring
-quantum cellular automaton,” <https://doi.org/10.1103/PhysRevA.97.032132>, and
-Bisio, D'Ariano, Mosco, Perinotti, and Tosini, “Solutions of a Two-Particle
-Interacting Quantum Walk,” <https://doi.org/10.3390/e20060435>. Cycle 225 uses
-the separate supplied Cycle-222 proper-cubic candidate and does not modify the
-Thirring QCA.
-
 The repository contribution is the combined regression fixture connecting
 the exact fixed scalar-Kraus projector identity to the Cycle-222 internal-sector, band, and
 force-response controls at reference and held-out scales. Global novelty has

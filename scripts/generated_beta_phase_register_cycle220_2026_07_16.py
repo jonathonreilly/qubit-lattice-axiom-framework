@@ -116,7 +116,6 @@ def note_contract() -> None:
         "not an observed mass spectrum",
         "positive-mass sector",
         "no axiom conclusion",
-        "thirring-qca",
         "apadula",
         "draft parking branch",
     )

@@ -310,9 +310,6 @@ carrier ledger. A targeted literature search found no exact prior for that
 repository-specific regression design, but global novelty has not been
 established.
 
-The one-dimensional Thirring-QCA engine used in Cycles 205–209 is unrelated to
-this cubic carrier calculation and is not used here.
-
 ## No-go discipline gate
 
 The broad claims “records necessarily gravitate,” “information has mass,”

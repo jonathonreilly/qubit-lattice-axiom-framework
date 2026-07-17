@@ -269,10 +269,6 @@ the coarse-versus-fine channel distinction to the Cycle-222 proper-cubic
 mass-sector, packet-band, held-out-scale, and axis controls. Global novelty has
 not been established.
 
-The Thirring-QCA molecule remains prior work used only in Cycles 205–209. Cycle
-226 uses the separate supplied Cycle-222 proper-cubic candidate and neither
-rederives nor modifies the published Thirring automaton.
-
 ## No-go discipline gate — FAIL for broad locking claims
 
 Only the exact channel identity and sampled Cycle-222 discriminator are

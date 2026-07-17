@@ -334,21 +334,8 @@ axiom conclusion.
 
 ## Prior art and novelty boundary
 
-Bisio, D'Ariano, Perinotti, and Tosini define and analytically diagonalize a
-one-dimensional onsite-interacting fermionic QCA in its two-particle sector in
-“Thirring quantum cellular automaton,” *Physical Review A* 97, 032132 (2018):
-
-<https://doi.org/10.1103/PhysRevA.97.032132>
-
-Bisio, D'Ariano, Mosco, Perinotti, and Tosini give a simplified derivation and
-simulations in “Solutions of a Two-Particle Interacting Quantum Walk,”
-*Entropy* 20, 435 (2018):
-
-<https://doi.org/10.3390/e20060435>
-
-Cycles 205–209 use that published engine. Cycle 224 neither rederives nor
-modifies it. Its matter input is the separate supplied Cycle-222 proper-cubic
-six-direction candidate restricted to an oriented cardinal slice. Cycle 224's
+Cycle 224's matter input is the supplied Cycle-222 proper-cubic six-direction
+candidate restricted to an oriented cardinal slice. Cycle 224's
 repository contribution is the combined regression fixture on that supplied
 candidate: phase retention, deletion, apparatus covariance, finite history
 capacity, mass-sector retention, and remote-inertia controls. No novelty is

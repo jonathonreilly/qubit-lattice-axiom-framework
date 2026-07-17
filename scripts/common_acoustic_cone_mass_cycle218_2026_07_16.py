@@ -120,7 +120,6 @@ def note_contract() -> None:
         "condition remains supplied",
         "not an empirical lorentz theorem",
         "no axiom conclusion",
-        "thirring-qca",
         "draft parking branch",
     )
     missing = tuple(phrase for phrase in required if phrase not in text)

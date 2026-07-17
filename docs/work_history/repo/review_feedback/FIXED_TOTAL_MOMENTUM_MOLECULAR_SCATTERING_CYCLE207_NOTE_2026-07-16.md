@@ -26,8 +26,9 @@ D'Ariano, Mosco, Perinotti, and Tosini:
 <https://doi.org/10.3390/e20060435>
 
 Those papers supply and solve the two-particle Thirring automaton, including
-its scattering and molecular bound states. Cycle 207 does not claim those
-mechanisms, their spectrum, or their analytic solution as new. The
+its scattering and bound states. This repository calls the selected localized
+bound-state packet a “molecule.” Cycle 207 does not claim those mechanisms,
+their spectrum, or their analytic solution as new. The
 distinguishable third carrier, its onsite coupling to both constituents, the
 fixed-total-momentum three-body reduction, and the operational late-record
 tournament are extensions relative to those papers. Broader literature novelty

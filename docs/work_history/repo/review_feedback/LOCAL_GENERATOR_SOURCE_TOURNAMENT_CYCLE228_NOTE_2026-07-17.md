@@ -537,13 +537,6 @@ source coverage has substantial prior-adjacent literature. The executable
 regression across this repository's exact Cycle-215/219 fixtures is new
 relative to those internal cycles; global novelty has not been established.
 
-The one-dimensional Thirring-QCA engine used in Cycles 205–209 is not used in
-this Cycle-228 calculation. Its walk, interaction, scattering states, bound
-states, and bound-state dispersion remain prior work of Bisio et al.:
-
-- <https://doi.org/10.1103/PhysRevA.97.032132>
-- <https://doi.org/10.3390/e20060435>
-
 ## No-go discipline gate
 
 The broad claims “no local energy exists,” “a Hamiltonian axiom is required,”

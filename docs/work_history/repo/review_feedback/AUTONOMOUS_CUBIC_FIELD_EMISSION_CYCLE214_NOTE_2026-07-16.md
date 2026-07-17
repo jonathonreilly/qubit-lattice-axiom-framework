@@ -150,14 +150,6 @@ Number-changing quantum-walk and quantum-optical emission constructions are
 broad prior-art classes; the present bounded composition makes no global
 novelty claim.  Global novelty has not been established.
 
-The one-dimensional Thirring-QCA molecule used in Cycles 205–209 is published
-prior work of Bisio, D'Ariano, Mosco, Perinotti, and Tosini:
-
-<https://arxiv.org/abs/1804.08508>
-
-Cycle 214 uses the internal proper-cubic object from Cycle 210, not the
-Thirring-QCA as its cubic field mechanism.
-
 This work remains on the draft parking branch.  It changes no foundation,
 axiom, primitive, registry, policy, queue, or audit surface.
 

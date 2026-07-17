@@ -509,7 +509,7 @@ def random_causal_schedule(
 def note_contract() -> None:
     text = " ".join(NOTE.read_text(encoding="utf-8").lower().split())
     required = (
-        "https://arxiv.org/abs/1804.08508",
+        "https://doi.org/10.3390/e20060435",
         "bisio, d'ariano, mosco, perinotti, and tosini",
         "prior work",
         "coherent",

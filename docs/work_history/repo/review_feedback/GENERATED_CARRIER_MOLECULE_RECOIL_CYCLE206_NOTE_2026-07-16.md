@@ -15,8 +15,9 @@ surface.
 
 ## Attribution boundary
 
-The two-fermion molecule is inherited from the Thirring quantum cellular
-automaton introduced and solved by Bisio, D'Ariano, Perinotti, and Tosini:
+The two-particle bound-state engine is inherited from the Thirring quantum
+cellular automaton introduced and solved by Bisio, D'Ariano, Perinotti, and
+Tosini:
 
 <https://doi.org/10.1103/PhysRevA.97.032132>
 
@@ -26,11 +27,12 @@ two-particle derivation and simulations:
 <https://doi.org/10.3390/e20060435>
 
 The strict Dirac walk, its onsite two-particle phase, and the existence and
-solution of molecular bound states are prior work from those papers. Cycle 206 adds a
-distinguishable third carrier and a candidate onsite collision phase between
-that carrier and either molecule constituent. The three-body extension and
-its operational tournament are exploratory framework work; they are not
-attributed to the cited paper.
+solution of its two-particle bound states are prior work from those papers.
+This repository calls the selected localized bound-state packet a “molecule.”
+Cycle 206 adds a distinguishable third carrier and a candidate onsite collision
+phase between that carrier and either constituent. The three-body extension
+and its operational tournament are exploratory framework work; they are not
+attributed to the cited papers.
 
 ## Result up front
 

@@ -21,12 +21,6 @@ scripts/proper_cubic_generated_recoil_cycle212_2026_07_16.py
 
 ## Attribution boundary
 
-The one-dimensional Thirring engine is prior work of Bisio, D'Ariano, Mosco,
-Perinotti, and Tosini:
-
-<https://arxiv.org/abs/1804.08508>
-
-It supplies the molecule reproduced in Cycle 205, not this cubic collision.
 Cycle 212 extends the internal Cycle-210 six-direction invariant object with a
 third carrier and an onsite partial-SWAP tournament.  Global novelty has not
 been established; no literature-wide novelty claim is made.

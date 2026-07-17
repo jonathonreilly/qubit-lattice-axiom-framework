@@ -221,12 +221,6 @@ prediction.  There is no axiom conclusion.
 
 ## Attribution and novelty boundary
 
-The one-dimensional Thirring-QCA interaction, scattering solutions, and
-molecular bound states used in Cycles 205–209 are published prior work of
-Bisio, D'Ariano, Mosco, Perinotti, and Tosini:
-
-<https://arxiv.org/abs/1804.08508>
-
 Interacting-walk bound molecules have broader prior art, including Ahlbrecht,
 Alberti, Meschede, Scholz, Werner, and Werner:
 

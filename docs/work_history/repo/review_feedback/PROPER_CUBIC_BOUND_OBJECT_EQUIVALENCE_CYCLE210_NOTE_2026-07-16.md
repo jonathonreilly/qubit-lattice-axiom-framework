@@ -21,14 +21,8 @@ scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py
 
 ## Attribution boundary
 
-Cycle 205's one-dimensional Thirring engine is prior work of Bisio,
-D'Ariano, Mosco, Perinotti, and Tosini:
-
-<https://arxiv.org/abs/1804.08508>
-
-It supplies the earlier strict fermionic molecule, not the construction in
-this note.  The general isotropic-quantum-walk background includes D'Ariano,
-Erba, and Perinotti:
+The general isotropic-quantum-walk background includes D'Ariano, Erba, and
+Perinotti:
 
 <https://arxiv.org/abs/1708.00826>
 
@@ -80,11 +74,11 @@ with simultaneous rotation of the two direction registers.  Its binding
 projector and phases are supplied candidate law content; they are not derived
 from the axioms.
 
-This is exact invariant-sector, or kinematic, binding.  The construction does
+This is exact invariant-sector, or kinematic, binding. The construction does
 not yet prove a protective quasienergy gap against every symmetry-allowed
-perturbation.  In that precise sense it is more engineered than the published
-Thirring molecule, whose bound state arises from the solved two-particle
-spectrum.
+perturbation. In that precise sense it is more engineered than the internal
+Cycle-205 spectral bound-state fixture, which comes from solving a complete
+two-particle spectrum.
 
 ## Result up front
 
@@ -229,11 +223,10 @@ The construction deliberately leaves visible:
 
 ## Scope
 
-This is a finite candidate-law result on the draft parking branch.  It does
-not replace or extend the cited Thirring solution, establish global novelty,
-derive a mass value, select a microscopic law, prove gravity, or complete a
-TOE.  It makes no axiom conclusion and changes no foundation, primitive,
-registry, policy, queue, or audit surface.
+This is a finite candidate-law result on the draft parking branch. It does not
+establish global novelty, derive a mass value, select a microscopic law, prove
+gravity, or complete a TOE. It makes no axiom conclusion and changes no
+foundation, primitive, registry, policy, queue, or audit surface.
 
 ## Verification
 

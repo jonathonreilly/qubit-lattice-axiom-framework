@@ -161,13 +161,6 @@ no novelty is claimed for them.  The result here is the internal correction
 and exact composition across the selected cubic matter and field candidates.
 Global novelty has not been established.
 
-The one-dimensional Thirring-QCA molecule used in Cycles 205–209 is published
-prior work of Bisio, D'Ariano, Mosco, Perinotti, and Tosini:
-
-<https://arxiv.org/abs/1804.08508>
-
-The Thirring-QCA is not the proper-cubic common-cone mechanism used here.
-
 This work remains on the draft parking branch and changes no foundation,
 axiom, primitive, registry, policy, queue, or audit surface.
 

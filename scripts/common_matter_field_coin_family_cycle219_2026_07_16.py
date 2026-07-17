@@ -74,7 +74,6 @@ def note_contract() -> None:
         "beta selection remains open",
         "det c=1 is not retained",
         "no axiom conclusion",
-        "thirring-qca",
         "draft parking branch",
     )
     missing = tuple(phrase for phrase in required if phrase not in text)

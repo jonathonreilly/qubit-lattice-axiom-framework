@@ -178,11 +178,6 @@ Cycles 210 and 212.  The Green-field comparison is internal Cycle 211.  The
 centered finite-difference wave equation and its discrete energy identity are
 standard numerical-analysis structures; no novelty is claimed for them.
 
-The one-dimensional Thirring-QCA molecule used in Cycles 205–209 is published
-prior work of Bisio, D'Ariano, Mosco, Perinotti, and Tosini:
-
-<https://arxiv.org/abs/1804.08508>
-
 Cycle 213 claims only the bounded conditional composition and diagnostics
 described here.  Global novelty has not been established.
 

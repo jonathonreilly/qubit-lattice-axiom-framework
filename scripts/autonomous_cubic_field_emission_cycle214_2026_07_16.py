@@ -307,7 +307,6 @@ def note_contract() -> None:
         "vacuum-relative mass scalar",
         "body recoil",
         "static green sector remains open",
-        "thirring-qca",
         "global novelty has not been established",
         "no axiom conclusion",
         "draft parking branch",

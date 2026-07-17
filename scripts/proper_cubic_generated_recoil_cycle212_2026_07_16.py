@@ -304,7 +304,6 @@ def note_contract() -> None:
         "relational branch",
         "supplied late partition",
         "finite pre-asymptotic",
-        "one-dimensional thirring engine is prior work",
         "global novelty has not been established",
         "record formation remains open",
         "no axiom conclusion",

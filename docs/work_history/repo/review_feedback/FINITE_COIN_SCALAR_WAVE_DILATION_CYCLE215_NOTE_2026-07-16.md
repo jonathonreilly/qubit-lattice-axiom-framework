@@ -181,13 +181,6 @@ Coined quantum walks and unitary dilations are broad prior-art classes.  The
 factorization and bounded composition here are derived directly, but global
 novelty has not been established.
 
-The one-dimensional Thirring-QCA molecule used in Cycles 205–209 is published
-prior work of Bisio, D'Ariano, Mosco, Perinotti, and Tosini:
-
-<https://arxiv.org/abs/1804.08508>
-
-The Thirring-QCA is not the cubic field carrier used here.
-
 This work remains on the draft parking branch and changes no foundation,
 axiom, primitive, registry, policy, queue, or audit surface.
 

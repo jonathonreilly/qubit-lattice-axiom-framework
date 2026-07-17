@@ -141,13 +141,6 @@ Cayley transforms, phase estimation/registers, and block-diagonal conserved
 sectors are standard mathematical structures.  No global novelty is claimed;
 global novelty has not been established.
 
-The one-dimensional Thirring-QCA molecule used in Cycles 205–209 is published
-prior work of Bisio, D'Ariano, Mosco, Perinotti, and Tosini:
-
-<https://arxiv.org/abs/1804.08508>
-
-The Thirring-QCA is not the phase-register spectrum mechanism used here.
-
 Apadula, Bisio, D'Ariano, and Perinotti already introduced a Dirac quantum
 walk containing all masses as an extra degree of freedom:
 

@@ -1,8 +1,8 @@
 {
-  "audit_ledger_sha256": "15efee196a7b3738ec370120bc338105f64b4c82d0b236c80b0c47b5d5b7b95f",
+  "audit_ledger_sha256": "08526abca9d51274b1a50859b725dbe8da5685d9681d1b5db9835ec17b6790b7",
   "bounded_support_count": 1,
   "claim_id": "post_record_dynamics_family_lift_closeout_index_2026-06-06",
-  "exact_support_count": 6,
+  "exact_support_count": 5,
   "forbidden_true_flags": [
     "AUDIT_DATA_WRITTEN",
     "AUDIT_VERDICT_APPLIED",
@@ -15,18 +15,19 @@
     "SELECTION_RULE_DERIVED_FROM_RECORD",
     "TARGET_VECTOR_DERIVED_FROM_RECORD"
   ],
+  "formal_theorem_proposal_count": 1,
   "no_go_count": 3,
   "stack": [
     {
       "cache_path": "logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt",
-      "cache_sha256": "af1aa0d1148cf1a21344392a05be7c1306d9fe95445c49de6ad91988275ae99d",
+      "cache_sha256": "a4eacbed4e804013f992f4371393b272d3d31157a0349be7f4762a6678a9dfaf",
       "note_path": "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md",
-      "note_sha256": "4bc59a75b4f416f7b696914441092990d1bb178afed9aba8f1c633715a1345ce",
+      "note_sha256": "da691a8a1d29fea51048f4a93628cea70599b3dfb31f0f8deaed8a56cda31f8a",
       "pr": 2850,
       "runner_path": "scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py",
-      "runner_sha256": "31cdaed1b271dc15e2485f4a6fe3fce9bc41c5d4b6c8bc1f293560f8f1635b01",
+      "runner_sha256": "64a167b145224bfc817b1cb596ee4f8631e8397dde4f94cd42c0457355c9c40b",
       "runner_summary": "SUMMARY: PASS=64 FAIL=0",
-      "status": "exact-support",
+      "status": "formal theorem proposal",
       "title_fragment": "directed certificate examples"
     },
     {
@@ -79,13 +80,13 @@
     },
     {
       "cache_path": "logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt",
-      "cache_sha256": "f61b4e8f7e9106fea632d287545fa52587268685c9f9d1bcfd192c70cdb603b3",
+      "cache_sha256": "c789c4d9658194af6f4748d29d20adf480f20c35920c79d099d49c3fba7a56b9",
       "note_path": "docs/POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md",
-      "note_sha256": "a458c882cfd6eaabe7d666fe558289eb0295400e331b6b5aa68364720ec03fef",
+      "note_sha256": "fc0f6f184bf7bf3f74d883a562b22d8d639efd20a1821ff6822edff674ca94fa",
       "pr": 2864,
       "runner_path": "scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py",
-      "runner_sha256": "0e676f6cfbe05acadb8c4e7fc420cdac2734e878f4a9473de50e51ffc9b023d9",
-      "runner_summary": "SUMMARY: PASS=52 FAIL=0",
+      "runner_sha256": "45459e1a89f436370b012c21f992514f3645d84b98c2c77e9554450eaeb45dc7",
+      "runner_summary": "SUMMARY: PASS=53 FAIL=0",
       "status": "exact-support",
       "title_fragment": "dynamics authority stack map"
     },

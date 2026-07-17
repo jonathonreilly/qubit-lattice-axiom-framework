@@ -1,122 +1,188 @@
-# Post-Record Directed Certificate Examples
+# Finite Directed-Reversal Certificates — Exact Rational Theorem
 
 **Date:** 2026-06-06
-**Type:** exact support / supplied dynamics examples
-**Claim type:** methodology / positive examples
-**Status:** exact-support branch-local for supplied directed-certificate
-examples; audit_required_before_effective_retained=true;
-bare_retained_allowed=false.
+**Claim type:** positive_theorem
+**Status authority:** independent audit lane only. This source note proposes a
+narrow formal theorem and does not set or predict an audit verdict.
 **Primary runner:**
 [`scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py`](../scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt)
-**Load-bearing row-bucket helper:**
-[`scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py`](../scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py)
-with cache
-[`logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.txt)
 
-## Result
+## Claim scope
 
-The supplied-orientation bridge interface admits concrete finite examples:
+> **Theorem (finite rational reversal identities).** Let `W` be a finite set
+> of finite words closed under reversal, and let `mu: W -> Q_{≥0}` have
+> total mass one. Write `rho(w)` for reversal of a word and define the
+> reversed law by
+>
+> ```text
+> mu_rev(w) = mu(rho(w)).
+> ```
+>
+> For every rational-valued statistic `f`,
+>
+> ```text
+> E_mu_rev[f] = E_mu[f o rho].                              (1)
+> ```
+>
+> Consequently, every reversal-invariant statistic has the same pushforward
+> under `mu` and `mu_rev`. In particular, the complete vector of letter counts
+> is reversal-invariant.
+>
+> For the three explicit rational laws below, direct enumeration gives:
+>
+> ```text
+> signed-transition drift:   -1/2 forward,  1/2 reversed;
+> marker lag:                  7/6 forward, 11/6 reversed;
+> low-to-high boundary event:  1/2 forward,  1/6 reversed.
+> ```
+>
+> In all three examples, the letter-count pushforward is unchanged by
+> reversal while the displayed directed statistic changes.
+
+This is a theorem about explicitly defined finite probability spaces. The
+words `forward`, `reversed`, `marker`, and `boundary` are mathematical labels
+inside those examples. They are not physical identifications.
+
+## Definitions and exact examples
+
+For a word `w=(w_0,...,w_{n-1})`, set
 
 ```text
-supplied finite law plus supplied orientation bridge
-  + supplied clock/order id
-  + supplied kernel/transfer/instrument id when dynamics language is used
-  + supplied directed statistic
-  + exact enumeration
-  => law-scoped directed finite certificate
+rho(w) = (w_{n-1},...,w_0).
 ```
 
-The law carries probability; the post-record words carry realized markers and
-counts. This matches the pre-record/post-record split: probability lives in the
-supplied law or production model, while a post-record site is a realized
-information object.
+The reversed law is the pushforward `rho_* mu`. For each example, `W` is the
+reversal closure of the displayed support and unlisted words have mass zero.
+Since `rho` is a bijective involution, `mu_rev` is again normalized and
+nonnegative.
 
-The examples do not derive an arrow, clock, kernel, or selected dial. They show
-what becomes exactly checkable after those bridge data are supplied.
+### Example 1: signed transition drift
 
-## Examples
+Take equal mass `1/4` on
 
-The runner instantiates three exact finite examples:
+```text
+ABC, ACB, BAC, CBA.
+```
 
-| Example | Supplied directed statistic | Exact check |
-|---|---|---:|
-| Signed transition drift | antisymmetric edge score along oriented words | forward expectation `-1/2`, reverse expectation `1/2` |
-| Realized marker lag | first index of a realized marker `M` | forward expectation `7/6`, reverse expectation `11/6` |
-| Low-to-high boundary event | first atom `L` and last atom `H` | forward probability `1/2`, reverse probability `1/6` |
+Give directed edges `AB` and `BC` score `+1`, their reverses score `-1`,
+and all other adjacent pairs score zero. Summing adjacent-edge scores gives
+the exact forward distribution
 
-In all three cases, the count pushforward is invariant under reversal while
-the directed statistic changes under the supplied orientation.
+```text
+{-2: 1/4, -1: 1/2, 2: 1/4}
+```
 
-## Dynamics meaning
+and the exact reversed distribution
 
-This is a positive companion to the arrow-orientation firewall. Counts alone
-cannot orient a physical arrow, but directed certificates are available after a
-row supplies the missing bridge data:
+```text
+{-2: 1/4, 1: 1/2, 2: 1/4}.
+```
 
-- finite law id;
-- orientation convention;
-- clock/order id;
-- kernel, transfer, Hamiltonian, instrument, rate, or boundary bridge when the
-  row uses dynamics language;
-- directed statistic or event.
+Their expectations are `-1/2` and `1/2`, respectively.
 
-The certificate is scoped to those inputs. It does not transport across laws,
-bridges, or statistics without rechecking.
+### Example 2: marker lag
 
-## Status certificate
+Take masses `1/2`, `1/3`, and `1/6` on
+
+```text
+AMBB, ABMC, MCAB.
+```
+
+Let marker lag be the zero-based index of `M`. The forward and reversed
+distributions are
+
+```text
+forward:  {0: 1/6, 1: 1/2, 2: 1/3},
+reversed: {1: 1/3, 2: 1/2, 3: 1/6},
+```
+
+with expectations `7/6` and `11/6`.
+
+### Example 3: low-to-high boundary event
+
+Take masses `1/2`, `1/6`, and `1/3` on
+
+```text
+LAH, HAL, LBA.
+```
+
+Let the statistic be one exactly when the first letter is `L` and the last is
+`H`, and zero otherwise. Its expectation, equivalently its event
+probability, is `1/2` forward and `1/6` after reversal.
+
+## Proof
+
+For any statistic `f`, use the bijection `u=rho(w)` and `rho^2=id`:
+
+```text
+E_mu_rev[f]
+  = sum_w f(w) mu(rho(w))
+  = sum_u f(rho(u)) mu(u)
+  = E_mu[f o rho].
+```
+
+If `g o rho = g`, equation (1) gives equality of every point mass in the
+pushforward distribution of `g`. Letter counts are unchanged by reversing a
+word, so their pushforward is equal. The three displayed values then follow
+from the finite Fraction enumerations written above and reproduced by the
+runner. No limiting, floating-point, or fitted step enters the proof.
+
+## Load-bearing boundary
+
+The load-bearing inputs are only the displayed rational masses, word lists,
+reversal map, and statistics. They are definitions of finite mathematical
+objects, not framework premises or physical data.
+
+This theorem does **not** derive or identify:
+
+- a physical orientation or arrow;
+- a clock, rate, Hamiltonian, transfer operator, instrument, or production
+  kernel;
+- a physical probability law from Record or any other framework axiom;
+- a map from the example words or letters to physical records;
+- a selected dial, target vector, observable, or unbounded dynamics law.
+
+Any physical use requires separate retained-grade bridge theorems. The
+current repository census of arrow/dynamics rows is non-load-bearing metadata
+and is deliberately absent from this theorem and its runner.
+
+## Verification
+
+The runner uses exact `fractions.Fraction` arithmetic and has four modes:
+
+```bash
+python3 scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py --mode normal
+python3 scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py --mode independent
+python3 scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py --mode hostile
+python3 scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py --mode intentional-failure --mutation all
+```
+
+Normal mode reconstructs the theorem and all three examples. Independent mode
+re-enters the fixtures through a separate direct-summation implementation.
+Hostile mode rejects malformed probability laws, wrong certificate values,
+scope mismatches, and missing orientation labels. Intentional-failure mode
+offers five selectable mutations; the aggregate and every individual mutation
+must exit nonzero.
+
+The runner also checks source shape: the formal scope and open physical
+bridges must be stated, and physical-selection overclaims are forbidden. Those
+guards police the claim boundary; the positive theorem itself is established
+by exact enumeration and the displayed change-of-variable proof.
+
+## Independent audit handoff
 
 ```yaml
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
-conditional_surface_status: "directed finite certificates are exactly checkable under supplied law/orientation/clock/kernel bridges"
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "This branch gives supplied-bridge examples and does not derive or select the bridge data."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
-
-## Boundaries
-
-- Does not edit `docs/audit/data`.
-- Does not apply or predict audit verdicts.
-- Does not promote any row.
-- Does not derive a physical arrow from Record.
-- Does not derive or select a production kernel.
-- Does not derive a clock, rate, Hamiltonian, transfer operator, or instrument.
-- Does not derive a Born law from Record.
-- Does not select or force a generation/Koide dial location.
-- Does not turn stable settings into selected dials.
-
-## Runner certificate
-
-The runner verifies:
-
-- source anchors in this note, the supplied orientation bridge, the
-  arrow-orientation firewall, and the stability/dynamics subdivision;
-- the stability/dynamics helper source used to obtain the
-  `arrow_or_dynamics_bridge` bucket is included in the packet;
-- the current `arrow_or_dynamics_bridge` bucket remains `34` rows;
-- signed transition drift has exact orientation-sensitive expectations and
-  tails;
-- realized marker lag keeps probabilities in the law and markers in
-  post-record tuples;
-- low-to-high boundary events are exact under supplied forward/reverse
-  bridges;
-- missing orientation, wrong law scope, wrong values, and missing dynamics
-  kernel inputs are rejected;
-- count pushforwards remain invariant under reversal in all examples;
-- no audit verdict, audit-data write, retained/promoted claim,
-  Record-derived physical arrow, production-kernel selection, clock/rate
-  derivation, Born-law derivation, stable-setting dial selection, or
-  generation/Koide selection flag is set.
-
-Run:
-
-```text
-python3 scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
+proposed_claim_type: positive_theorem
+proposed_claim_scope: |
+  For each of three explicitly defined finite rational laws, word reversal
+  preserves the complete letter-count pushforward and gives the exact stated
+  directed-statistic expectations. More generally,
+  E_{rho_*mu}[f] = E_mu[f o rho] on every finite rational word law.
+  No physical orientation, clock, kernel, Record bridge, or dynamics law is
+  derived or identified.
+proposed_load_bearing_step_class: A
+declared_one_hop_deps: []
+status_authority: independent audit lane only
 ```

@@ -22,7 +22,7 @@ class AuthorityLayer:
 
 
 LAYERS = (
-    AuthorityLayer("directed examples", "exact-support", "supplied law/orientation/clock/kernel", "SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE"),
+    AuthorityLayer("directed examples", "formal-theorem-proposal", "finite rational law/reversal identities; physical bridges open", "FORMAL_DIRECTED_REVERSAL_THEOREM=TRUE"),
     AuthorityLayer("kernel selection firewall", "no-go", "blocked Record-derived kernel selection", "DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL=TRUE"),
     AuthorityLayer("supplied kernel selection rule", "exact-support", "supplied candidate family and rule", "SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE=TRUE"),
     AuthorityLayer("target vector firewall", "no-go", "blocked Record-derived targets/weights", "SELECTION_RULE_TARGET_VECTOR_FIREWALL=TRUE"),
@@ -31,8 +31,8 @@ LAYERS = (
 
 DOC_CHECKS = {
     "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md": [
-        "supplied finite law plus supplied orientation bridge",
-        "examples do not derive an arrow, clock, kernel, or selected dial",
+        "Theorem (finite rational reversal identities)",
+        "Any physical use requires separate retained-grade bridge theorems.",
     ],
     "docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md": [
         "Directed certificates do not select a production kernel",
@@ -55,7 +55,8 @@ DOC_CHECKS = {
 LOG_CHECKS = {
     "logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt": [
         "SUMMARY: PASS=64 FAIL=0",
-        "SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE",
+        "FORMAL_DIRECTED_REVERSAL_THEOREM=TRUE",
+        "PHYSICAL_ORIENTATION_BRIDGE=OPEN",
     ],
     "logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt": [
         "SUMMARY: PASS=52 FAIL=0",
@@ -103,12 +104,12 @@ def source_anchor_checks() -> None:
     section("Source-anchor checks")
     for path, needles in DOC_CHECKS.items():
         text = read_rel(path)
-        report(f"{path} exists", True)
+        report(f"{path} exists", (ROOT / path).is_file())
         for needle in needles:
             report(f"{path} contains: {needle}", needle in text)
     require_self = read_rel("docs/POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md")
     for needle in [
-        "supplied, admitted, and blocked authority classes",
+        "blocked source-side classes",
         "stable location is not selected dial",
         "post-record samples are realized information, not probability laws",
         "Cited authority/cache packet",
@@ -124,7 +125,7 @@ def cached_log_checks() -> None:
     section("Cached log checks")
     for path, needles in LOG_CHECKS.items():
         text = read_rel(path)
-        report(f"{path} exists", True)
+        report(f"{path} exists", (ROOT / path).is_file())
         for needle in needles:
             report(f"{path} contains: {needle}", needle in text)
 
@@ -132,7 +133,11 @@ def cached_log_checks() -> None:
 def authority_layer_checks() -> None:
     section("Authority layer checks")
     report("five dynamics layers are mapped", len(LAYERS) == 5)
-    report("no-go and exact-support statuses both appear", {layer.status for layer in LAYERS} == {"exact-support", "no-go"})
+    report(
+        "formal, exact-support, and no-go source-side labels all appear",
+        {layer.status for layer in LAYERS}
+        == {"formal-theorem-proposal", "exact-support", "no-go"},
+    )
     report("every layer has an authority class", all(layer.authority_class for layer in LAYERS))
     report("every layer has a summary flag", all(layer.summary_flag for layer in LAYERS))
     for layer in LAYERS:
@@ -140,28 +145,22 @@ def authority_layer_checks() -> None:
 
 
 def firewall_checks() -> None:
-    section("Firewall flags")
-    audit_data_written = False
-    audit_verdict_applied = False
-    promoted_or_retained_claim = False
-    physical_arrow_derived_from_record = False
-    production_kernel_selected_without_rule = False
-    selection_rule_derived_from_record = False
-    target_vector_derived_from_record = False
-    sample_is_probability_law = False
-    generation_or_koide_dial_selected = False
-    stable_setting_selects_dial = False
-
-    report("audit data written flag is false", not audit_data_written)
-    report("audit verdict applied flag is false", not audit_verdict_applied)
-    report("promoted/retained claim flag is false", not promoted_or_retained_claim)
-    report("Record-derived physical arrow flag is false", not physical_arrow_derived_from_record)
-    report("kernel selected without supplied rule flag is false", not production_kernel_selected_without_rule)
-    report("selection rule derived from Record flag is false", not selection_rule_derived_from_record)
-    report("target vector derived from Record flag is false", not target_vector_derived_from_record)
-    report("sample-is-probability-law flag is false", not sample_is_probability_law)
-    report("generation/Koide dial selected flag is false", not generation_or_koide_dial_selected)
-    report("stable setting selects dial flag is false", not stable_setting_selects_dial)
+    section("Executable source-boundary guards")
+    packet = "\n".join(read_rel(path) for path in DOC_CHECKS)
+    forbidden_overclaims = (
+        "Record derives the orientation",
+        "Record supplies the probability law",
+        "the examples select a physical arrow",
+        "physical orientation bridge is closed",
+        "production kernel selected without a supplied rule",
+        "selection rule derived from Record",
+        "target vector derived from Record",
+        "sample is a probability law",
+        "generation/Koide dial is selected",
+        "stable setting selects a dial",
+    )
+    for phrase in forbidden_overclaims:
+        report(f"packet excludes overclaim: {phrase}", phrase not in packet)
 
 
 def main() -> int:

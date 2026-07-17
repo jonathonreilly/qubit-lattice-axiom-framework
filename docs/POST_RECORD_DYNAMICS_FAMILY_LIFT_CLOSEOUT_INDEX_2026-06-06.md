@@ -20,7 +20,7 @@ retained/unbounded and family-lift campaign push.
 
 | PR | Status | Stack layer |
 |---:|---|---|
-| [#2850](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2850) | exact-support | directed certificate examples |
+| [#2850](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2850) | formal theorem proposal | directed certificate examples |
 | [#2853](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2853) | no-go | directed certificate kernel-selection firewall |
 | [#2856](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2856) | exact-support | supplied kernel selection rule |
 | [#2858](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2858) | no-go | selection-rule target-vector firewall |
@@ -31,15 +31,18 @@ retained/unbounded and family-lift campaign push.
 | [#2874](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2874) | no-go | finite-to-unbounded family-lift no-go |
 | [#2875](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2875) | bounded-support | supplied family-lift certificate interface |
 
-The extended stack has six `exact-support` layers, one `bounded-support` layer,
-and three `no-go` layers.
+The extended stack has one formal theorem proposal, five `exact-support`
+layers, one `bounded-support` layer, and three `no-go` layers. These are
+source-side inventory labels, not audit verdicts.
 
 ## Meaning
 
 The campaign now has both sides of the bounded/unbounded story:
 
-- finite post-record certificates and directed dynamics examples are exact over
-  supplied finite laws, rules, bridges, statistics, and samples;
+- the directed-example row proves only finite rational law/reversal identities;
+  a physical orientation, clock, kernel, or Record bridge remains open;
+- other finite certificates are exact over their explicitly supplied laws,
+  rules, bridges, statistics, and samples;
 - finite certificates alone cannot determine an unbounded law;
 - supplied family-lift rules can be made mechanically checkable through a
   projective finite ladder interface;
@@ -85,10 +88,10 @@ The runner verifies:
 - each stack layer has an upstream source note, runner source, SHA-fresh cache,
   and the source note names its primary runner;
 - the extended index consumes the repaired directed-certificate
-  `SUMMARY: PASS=64 FAIL=0`, repaired stack-map `SUMMARY: PASS=52 FAIL=0`,
+  `SUMMARY: PASS=64 FAIL=0`, repaired stack-map `SUMMARY: PASS=53 FAIL=0`,
   and repaired campaign-closeout `SUMMARY: PASS=46 FAIL=0` certificates;
-- the stack has six `exact-support` entries, one `bounded-support` entry, and
-  three `no-go` entries;
+- the stack has one formal theorem proposal, five `exact-support` entries,
+  one `bounded-support` entry, and three `no-go` entries;
 - the extended family-lift trio #2871/#2874/#2875 is present;
 - repo-surface scans find no audit verdict, audit-data write, retained
   promotion, unsupplied kernel selection, Record-derived rule/target/weight,

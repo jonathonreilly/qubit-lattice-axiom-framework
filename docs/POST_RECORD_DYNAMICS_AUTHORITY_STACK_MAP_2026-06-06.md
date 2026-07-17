@@ -13,12 +13,13 @@ bare_retained_allowed=false.
 
 ## Result
 
-This branch maps the current post-record dynamics stack into derived,
-supplied, admitted, and blocked authority classes.
+This branch maps the current post-record dynamics stack into formal,
+supplied, admitted, and blocked source-side classes. Audit authority remains
+with the independent audit lane.
 
 | Layer | Status | Authority class |
 |---|---|---|
-| Directed certificate examples | exact-support | supplied law/orientation/clock/kernel |
+| Directed certificate examples | formal theorem proposal | finite rational law/reversal identities; physical bridges open |
 | Kernel-selection firewall | no-go | blocked Record-derived kernel selection |
 | Supplied kernel selection rule | exact-support | supplied candidate family and rule |
 | Target-vector firewall | no-go | blocked Record-derived targets/weights |
@@ -31,7 +32,7 @@ their cached runner outputs:
 
 | Layer | Authority note | Cached runner | Branch-local status |
 |---|---|---|---|
-| Directed certificate examples | [`docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md`](POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt) | exact-support |
+| Directed certificate examples | [`docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md`](POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt) | formal theorem proposal |
 | Kernel-selection firewall | [`docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md`](POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt) | no-go |
 | Supplied kernel selection rule | [`docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md`](POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt) | exact-support |
 | Target-vector firewall | [`docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md`](POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt) | no-go |
@@ -39,11 +40,13 @@ their cached runner outputs:
 
 ## Meaning
 
-Post-record words, counts, and samples are realized information. The stack
-allows exact finite certificates and admitted empirical vectors, but it keeps
-physical dynamics authority explicit:
+The directed-examples row supplies only exact finite rational law/reversal
+identities. Its words and labels have no physical meaning by themselves. The
+rest of the stack records where additional physical inputs are supplied,
+blocked, or observational, keeping dynamics authority explicit:
 
-- orientation, clock, law, and kernel bridges are supplied;
+- physical orientation, clock, law, and kernel bridges remain separate open
+  inputs for any physical use of the formal theorem;
 - candidate families and selection rules are supplied;
 - target vectors and weights are supplied unless explicitly admitted as
   observation inputs;
@@ -56,7 +59,7 @@ physical dynamics authority explicit:
 actual_current_surface_status: exact-support
 trace_class: upstream_support
 reachability_to_target: supports
-conditional_surface_status: "current dynamics stack is mapped into supplied, admitted, exact-support, and no-go authority classes"
+conditional_surface_status: "current dynamics stack is mapped into formal, supplied, observational, and blocked source-side classes"
 hypothetical_axiom_status: null
 admitted_observation_status: "sample-vector layer remains admitted observation data"
 proposal_allowed: false
@@ -83,8 +86,9 @@ The runner verifies:
 
 - source anchors in each note in the current dynamics stack;
 - cached runner summaries for each layer;
-- the directed-certificate examples cache summary from the current stacked
-  upstream repair (`SUMMARY: PASS=60 FAIL=0`);
+- the directed-reversal theorem cache summary and explicit open-bridge flag
+  from the current upstream repair (`SUMMARY: PASS=64 FAIL=0`,
+  `PHYSICAL_ORIENTATION_BRIDGE=OPEN`);
 - the five authority layers and their statuses;
 - no audit verdict, audit-data write, retained/promoted claim,
   Record-derived arrow, unsupplied kernel selection, Record-derived rule,

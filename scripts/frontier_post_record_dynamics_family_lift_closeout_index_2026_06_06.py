@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 import hashlib
@@ -28,12 +29,12 @@ class StackPr:
 
 
 STACK = (
-    StackPr(2850, "directed certificate examples", "exact-support", "SUMMARY: PASS=64 FAIL=0", "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md", "scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py", "logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt"),
+    StackPr(2850, "directed certificate examples", "formal theorem proposal", "SUMMARY: PASS=64 FAIL=0", "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md", "scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py", "logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt"),
     StackPr(2853, "kernel-selection firewall", "no-go", "SUMMARY: PASS=52 FAIL=0", "docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md", "scripts/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.py", "logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt"),
     StackPr(2856, "supplied kernel selection rule", "exact-support", "SUMMARY: PASS=39 FAIL=0", "docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md", "scripts/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.py", "logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt"),
     StackPr(2858, "target-vector firewall", "no-go", "SUMMARY: PASS=36 FAIL=0", "docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md", "scripts/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.py", "logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt"),
     StackPr(2861, "admitted sample target-vector", "exact-support", "SUMMARY: PASS=30 FAIL=0", "docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md", "scripts/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.py", "logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt"),
-    StackPr(2864, "dynamics authority stack map", "exact-support", "SUMMARY: PASS=52 FAIL=0", "docs/POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md", "scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py", "logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt"),
+    StackPr(2864, "dynamics authority stack map", "exact-support", "SUMMARY: PASS=53 FAIL=0", "docs/POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md", "scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py", "logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt"),
     StackPr(2868, "dynamics campaign closeout index", "exact-support", "SUMMARY: PASS=53 FAIL=0", "docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md", "scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py", "logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt"),
     StackPr(2871, "retained/unbounded dynamics gate", "exact-support", "SUMMARY: PASS=54 FAIL=0", "docs/POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md", "scripts/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.py", "logs/runner-cache/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.txt"),
     StackPr(2874, "finite-to-unbounded family-lift no-go", "no-go", "SUMMARY: PASS=43 FAIL=0", "docs/POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md", "scripts/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py", "logs/runner-cache/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.txt"),
@@ -112,7 +113,7 @@ def cached_summary_checks() -> None:
     section("Cached summary checks")
     for item in STACK:
         text = read_rel(item.log_path)
-        report(f"{item.log_path} exists", True)
+        report(f"{item.log_path} exists", (ROOT / item.log_path).is_file())
         report(f"{item.log_path} has summary for PR #{item.number}", item.runner_summary in text)
 
 
@@ -125,8 +126,16 @@ def source_packet_checks() -> None:
         report(f"PR #{item.number} source note exists", note.exists(), item.note_path)
         if note.exists():
             note_text = note.read_text(encoding="utf-8", errors="replace")
-            status_names = {item.status, item.status.replace("-", " ")}
-            report(f"PR #{item.number} source note names status", any(status in note_text for status in status_names), item.status)
+            declared_surface = (
+                "**Claim type:** positive_theorem"
+                if item.number == 2850
+                else item.status
+            )
+            report(
+                f"PR #{item.number} source note names declared surface",
+                declared_surface in note_text,
+                declared_surface,
+            )
             report(f"PR #{item.number} source note names primary runner", item.runner_path in note_text, item.runner_path)
         report(f"PR #{item.number} runner source exists", runner.exists(), item.runner_path)
         report(f"PR #{item.number} runner cache exists", cache.exists(), item.log_path)
@@ -142,12 +151,24 @@ def source_packet_checks() -> None:
 def status_shape_checks() -> None:
     section("Status shape checks")
     statuses = {item.status for item in STACK}
+    report("stack has a formal theorem proposal", "formal theorem proposal" in statuses)
     report("stack has exact-support entries", "exact-support" in statuses)
     report("stack has bounded-support entries", "bounded-support" in statuses)
     report("stack has no-go entries", "no-go" in statuses)
-    report("exact-support count is six", sum(1 for item in STACK if item.status == "exact-support") == 6)
-    report("bounded-support count is one", sum(1 for item in STACK if item.status == "bounded-support") == 1)
-    report("no-go count is three", sum(1 for item in STACK if item.status == "no-go") == 3)
+    counts = Counter(item.status for item in STACK)
+    report(
+        "source-side label counts are 1 formal, 5 exact, 1 bounded, 3 no-go",
+        counts
+        == Counter(
+            {
+                "formal theorem proposal": 1,
+                "exact-support": 5,
+                "bounded-support": 1,
+                "no-go": 3,
+            }
+        ),
+    )
+    report("source-side stack still has ten entries", sum(counts.values()) == 10)
 
 
 def firewall_checks() -> None:
@@ -167,6 +188,9 @@ def export_packet() -> None:
     payload = {
         "claim_id": "post_record_dynamics_family_lift_closeout_index_2026-06-06",
         "stack_count": len(STACK),
+        "formal_theorem_proposal_count": sum(
+            1 for item in STACK if item.status == "formal theorem proposal"
+        ),
         "exact_support_count": sum(1 for item in STACK if item.status == "exact-support"),
         "bounded_support_count": sum(1 for item in STACK if item.status == "bounded-support"),
         "no_go_count": sum(1 for item in STACK if item.status == "no-go"),
@@ -203,7 +227,8 @@ def main() -> int:
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX=TRUE")
     print("EXTENDED_STACK_PRS=10")
-    print("EXTENDED_STACK_EXACT_SUPPORT=6")
+    print("EXTENDED_STACK_FORMAL_THEOREM_PROPOSALS=1")
+    print("EXTENDED_STACK_EXACT_SUPPORT=5")
     print("EXTENDED_STACK_BOUNDED_SUPPORT=1")
     print("EXTENDED_STACK_NO_GO=3")
     print("FAMILY_LIFT_EXTENSION_PRS=3")

@@ -20,8 +20,10 @@ runner outputs is:
 
     (i) at beta=6 the listed truncations through n=16 saturate near
         <P>_PT = 0.919331, missing the explicit runner-local comparator by about 54.9%;
-    (ii) Pade [m/n] resummations with m+n <= 12 remain in the same band;
-    (iii) tadpole-improved truncations and tadpole-improved Pade grids
+    (ii) Pade [m/n] resummations with m,n >= 1 and m+n <= 12 remain in the
+         same band;
+    (iii) tadpole-improved truncations (N <= 8, high branch) and
+          tadpole-improved Pade grids (m,n >= 1, 3 <= m+n <= 8, high branch)
           saturate near <P> = 0.910550, missing the explicit runner-local comparator by
           about 53.4%;
     (iv) the result is conditional only for this finite weak-coupling /
@@ -76,6 +78,11 @@ G2_BARE = 2.0 * N_C / BETA   # = 1 at beta=6
 ALPHA_BARE = G2_BARE / (4.0 * math.pi)   # = 1/(4*pi)
 MC_REFERENCE = 0.5934   # explicit runner-local comparator only; not a derivation input
 F2_SCALE_PERCENT = 0.0833   # explicit runner-local F2 comparator; not reusable
+
+# Census pins for the executed method grids (mutation-decisive against
+# silent grid shrinkage or acceptance-filter drift).
+PADE_EVALUATED_COUNT = 66
+TI_PADE_CONVERGED_COUNT = 27
 
 # Explicit runner-local NSPT coefficient packet for the Wilson plaquette in
 # SU(3) pure gauge theory, in the convention
@@ -288,6 +295,14 @@ def test_one_loop_value() -> None:
         math.isclose(p_wc_m5, p_w1, rel_tol=1e-12),
         f"<P>_w1 = {p_w1:.6f}, |diff| = {abs(p_wc_m5 - p_w1):.3e}",
     )
+    # Exact-value pin: the plain one-loop value is the rational 25/27.
+    # This pin is mutation-decisive against sign/series-form errors
+    # (e.g. 1 + sum instead of 1 - sum).
+    check(
+        "pin: plain one-loop value equals 25/27 = 0.925926 exactly",
+        abs(p_wc_m5 - 25.0 / 27.0) < 1e-12 and round(p_w1, 6) == 0.925926,
+        f"<P>_1loop = {p_w1:.9f}, 25/27 = {25.0/27.0:.9f}",
+    )
     # Distance to the explicit runner-local MC comparator at 1-loop.
     gap_1l = abs(p_wc_m5 - MC_REFERENCE)
     pct_1l = 100.0 * gap_1l / MC_REFERENCE
@@ -337,6 +352,17 @@ def test_truncated_series_convergence() -> None:
         f"<P>_PT(N*={best_N}) = {best_P:.6f}, explicit runner-local comparator = {MC_REFERENCE:.4f}, "
         f"pct = {best_pct:.3f}%; residual exceeds 40% inside the explicit runner-local coefficient packet",
     )
+    # Exact-value pins: mutation-decisive against packet/series/engine errors.
+    check(
+        "pin: <P>_PT(N=16) = 0.919331 to six decimals",
+        round(P_PT_values[15], 6) == 0.919331,
+        f"<P>_PT(16) = {P_PT_values[15]:.9f}",
+    )
+    check(
+        "pin: saturation |<P>_PT(N) - <P>_PT(16)| < 1e-4 for all N >= 6",
+        all(abs(P_PT_values[N - 1] - P_PT_values[15]) < 1e-4 for N in range(6, 17)),
+        "matches the note's stated saturation window",
+    )
     # Coefficient-growth diagnostic over the explicit runner-local packet.
     ratios = [W_COEFFS_NSPT_SU3[n+1]/W_COEFFS_NSPT_SU3[n] for n in range(1, 16)]
     print(f"  coefficient ratios w_(n+1)/w_n:")
@@ -344,14 +370,39 @@ def test_truncated_series_convergence() -> None:
         print(f"    n={n:2d} -> n+1={n+1:2d}: ratio = {r:.4f}")
     growing = sum(1 for r in ratios[5:] if r > 1.5)
     check(
-        "scale diagnostic: coefficient ratios > 1.5 for n>=6",
-        growing >= 5,
-        f"{growing}/10 ratios exceed 1.5 starting at n=6",
+        "scale diagnostic: every coefficient ratio > 1.5 for n>=6",
+        growing == len(ratios[5:]),
+        f"{growing}/{len(ratios[5:])} ratios exceed 1.5 starting at n=6",
     )
 
 
+def tadpole_fixed_point(
+    N: int,
+    seed: float = 0.5,
+    damping: float = 0.5,
+    tol: float = 1e-13,
+    max_iter: int = 2000,
+) -> tuple[float, bool]:
+    """High-branch fixed point of P = 1 - sum_{n<=N} w_n / (BETA*P)^n.
+
+    This is the runner-local mean-plaquette self-consistent substitution
+    beta -> beta*P (a tadpole-improvement-type substitution; the coefficients
+    w_n are consumed unchanged).  The damped iteration from the high seed
+    tracks the weak-coupling (high-<P>) branch only; callers must assert the
+    returned convergence flag and the branch location.
+    """
+    P_it = seed
+    for _ in range(max_iter):
+        beta_eff = BETA * P_it
+        P_new = truncated_series(W_COEFFS_NSPT_SU3, N, beta_eff)
+        if abs(P_new - P_it) < tol:
+            return P_new, True
+        P_it = damping * P_it + (1.0 - damping) * P_new
+    return P_it, False
+
+
 def test_tadpole_improvement_signature() -> None:
-    section("T4: tadpole-improvement signature over explicit runner-local packet")
+    section("T4: tadpole-substitution signature over explicit runner-local packet")
     # Tadpole-improved coupling: u_0 = <P>^(1/4)
     # If <P> equals the explicit runner-local comparator, then u_0 = 0.5934^(1/4).
     u_0_mc = MC_REFERENCE ** 0.25
@@ -360,66 +411,83 @@ def test_tadpole_improvement_signature() -> None:
         math.isclose(u_0_mc, 0.87768, abs_tol=1e-4),
         f"u_0 = {u_0_mc:.6f}",
     )
-    # Self-consistency: <P>_TI = 1 - 4/(3 beta_TI) where beta_TI = beta * u_0^4
-    # At fixed beta=6 the leading tadpole improvement absorbs u_0^4 = <P>
-    # into the LO coefficient, giving the implicit equation
-    #   <P> = 1 - (1/3 + corrections) / (beta <P>)
-    # Iterate the self-consistent tadpole equation at LO:
-    P = 0.5
-    for _ in range(50):
-        P_new = 1.0 - (4.0 / 9.0) / (BETA * P**0.0)  # plain 1-loop check
-        P = P_new
-    # Now do the tadpole-improved self-consistent fixed point:
-    # Lepage-Mackenzie: divide each link by u_0 = <P>^(1/4).
-    # The renormalized link expansion has w_1^TI = w_1 - 4*log(u_0) factor
-    # absorbed; in practice the iteration is
-    #     <P>_n+1 = 1 - sum w_n^TI / (beta_TI)^n
-    # with beta_TI = beta * <P>_n.
-    # Implement as fixed-point iteration on the 4-loop truncated series.
-    N_trunc = 4
-    P_iter = 0.5
-    for it in range(500):
-        beta_eff = BETA * P_iter   # tadpole-improved beta from u_0^4 = <P>
-        P_new = truncated_series(W_COEFFS_NSPT_SU3, N_trunc, beta_eff)
-        if abs(P_new - P_iter) < 1e-12:
-            break
-        P_iter = P_new
-    print(f"  tadpole-improved self-consistent <P>_TI (4-loop) = {P_iter:.6f}")
-    gap_ti = P_iter - MC_REFERENCE
-    pct_ti = 100.0 * abs(gap_ti) / MC_REFERENCE
-    # OBSTRUCTION: tadpole improvement saturates around the same residual
-    # inside this explicit runner-local coefficient packet.
+    # Runner-local mean-plaquette self-consistent substitution beta -> beta*P
+    # applied to the unchanged coefficient packet.  The literature name
+    # "tadpole improvement" is a naming comparator only; this runner proves
+    # properties of the locally defined substitution, nothing about the
+    # literature prescription itself.
+    P_4, converged_4 = tadpole_fixed_point(4)
     check(
-        "OBSTRUCTION: tadpole-improved self-consistent <P>_TI(4-loop) saturates >40% gap",
+        "fixed-point iteration (N=4) converged",
+        converged_4,
+        f"<P>_TI(4) = {P_4:.9f}",
+    )
+    print(f"  self-consistent substitution <P>_TI (4-loop) = {P_4:.6f}")
+    gap_ti = P_4 - MC_REFERENCE
+    pct_ti = 100.0 * abs(gap_ti) / MC_REFERENCE
+    check(
+        "OBSTRUCTION: self-consistent <P>_TI(4-loop) saturates >40% gap",
         pct_ti > 40.0,
-        f"<P>_TI = {P_iter:.6f}, explicit runner-local comparator = {MC_REFERENCE:.4f}, "
+        f"<P>_TI = {P_4:.6f}, explicit runner-local comparator = {MC_REFERENCE:.4f}, "
         f"gap = {gap_ti:+.5f}, pct = {pct_ti:.3f}%",
     )
 
-    # Higher-order tadpole-improved iteration: walk N from 1 to 8
-    print(f"  tadpole-improved self-consistent <P>_TI(N) for N=1..8:")
+    # Higher-order self-consistent substitution: walk N from 1 to 8.
+    print(f"  self-consistent substitution <P>_TI(N) for N=1..8:")
     best_pct = 1e9
     best_N = 0
     best_P = 0.0
+    ti_values: dict[int, float] = {}
+    all_converged = True
+    max_equation_residual = 0.0
     for N in range(1, 9):
-        P_it = 0.5
-        for it in range(2000):
-            beta_eff = BETA * P_it
-            P_new = truncated_series(W_COEFFS_NSPT_SU3, N, beta_eff)
-            if abs(P_new - P_it) < 1e-13:
-                break
-            P_it = 0.5 * P_it + 0.5 * P_new  # damped iteration
+        P_it, converged = tadpole_fixed_point(N)
+        ti_values[N] = P_it
+        all_converged = all_converged and converged
+        equation_residual = abs(
+            P_it - truncated_series(W_COEFFS_NSPT_SU3, N, BETA * P_it)
+        )
+        max_equation_residual = max(max_equation_residual, equation_residual)
         gap = P_it - MC_REFERENCE
         pct = 100.0 * abs(gap) / MC_REFERENCE
-        print(f"    N={N}: <P>_TI = {P_it:.6f}, gap = {gap:+.5f}, pct = {pct:.3f}%")
+        print(
+            f"    N={N}: <P>_TI = {P_it:.6f}, gap = {gap:+.5f}, pct = {pct:.3f}%, "
+            f"eq-residual = {equation_residual:.2e}"
+        )
         if pct < best_pct:
             best_pct = pct
             best_N = N
             best_P = P_it
 
-    print(f"  best tadpole-improved truncation: N*={best_N}, <P>_TI = {best_P:.6f}, pct = {best_pct:.3f}%")
     check(
-        f"OBSTRUCTION: best tadpole-improved truncation has |pct| > 40%",
+        "all fixed-point iterations N=1..8 converged (no silent last-iterate use)",
+        all_converged,
+        "every walk terminated by tolerance, not by iteration cap",
+    )
+    check(
+        "every reported value satisfies its fixed-point equation to 1e-9",
+        max_equation_residual < 1e-9,
+        f"max |P - series(N, beta*P)| = {max_equation_residual:.2e}",
+    )
+    check(
+        "branch scope: every selected fixed point exceeds 0.5 (high branch)",
+        all(value > 0.5 for value in ti_values.values()),
+        "the diagnostic tracks only the weak-coupling branch from seed 0.5",
+    )
+    check(
+        "pin: <P>_TI(N=1) = 0.919435 to six decimals",
+        round(ti_values[1], 6) == 0.919435,
+        f"<P>_TI(1) = {ti_values[1]:.9f}",
+    )
+    check(
+        "pin: <P>_TI(N=8) = 0.910550 to six decimals",
+        round(ti_values[8], 6) == 0.910550,
+        f"<P>_TI(8) = {ti_values[8]:.9f}",
+    )
+
+    print(f"  best self-consistent truncation: N*={best_N}, <P>_TI = {best_P:.6f}, pct = {best_pct:.3f}%")
+    check(
+        f"OBSTRUCTION: best tadpole-substitution truncation has |pct| > 40%",
         best_pct > 40.0,
         f"<P>_TI(N*={best_N}) = {best_P:.6f}, pct = {best_pct:.3f}%",
     )
@@ -477,17 +545,20 @@ def pade(coeffs, m, n, beta_val):
 
 def test_pade_resummation() -> None:
     section("T5: Pade [m/n] resummation of the perturbative series")
-    # Try Pade [m/n] for m+n up to 12 and report best approximant
+    # Executed grid: m, n >= 1 with 2 <= m+n <= 12 (the [m/0] and [0/n]
+    # edge families are NOT executed; the note scopes its claim to this grid).
     print(f"  Pade [m/n] for the truncated perturbative series at beta=6:")
     best_pct = 1e9
     best_mn = (0, 0)
     best_val = 0.0
+    evaluated: list[tuple[int, int, float]] = []
     for total in range(2, 13):
         for m in range(1, total):
             n = total - m
             val = pade(W_COEFFS_NSPT_SU3, m, n, BETA)
             if val is None or math.isnan(val) or abs(val) > 5.0:
                 continue
+            evaluated.append((m, n, val))
             gap = val - MC_REFERENCE
             pct = 100.0 * abs(gap) / MC_REFERENCE
             print(f"    [{m}/{n}] (order {total}): <P>_Pade = {val:.6f}, gap = {gap:+.5f}, pct = {pct:.3f}%")
@@ -501,16 +572,44 @@ def test_pade_resummation() -> None:
         best_pct > 40.0,
         f"<P>_Pade = {best_val:.6f}, explicit runner-local comparator = {MC_REFERENCE:.4f}, pct = {best_pct:.3f}%",
     )
+    # Mutation-decisive pins on the executed grid.
+    check(
+        "pin: best ordinary Pade approximant is [3/2]",
+        best_mn == (3, 2),
+        f"best_mn = {best_mn}",
+    )
+    check(
+        "pin: best ordinary Pade value = 0.919330 to six decimals",
+        round(best_val, 6) == 0.919330,
+        f"best value = {best_val:.9f}",
+    )
+    p16 = truncated_series(W_COEFFS_NSPT_SU3, 16, BETA)
+    high_order = [val for m, n, val in evaluated if m + n >= 6 and abs(val - 0.5) < 0.5]
+    check(
+        "pin: every accepted approximant with m+n>=6 lies within 1e-5 of <P>_PT(16)",
+        bool(high_order)
+        and all(abs(val - p16) < 1e-5 for val in high_order),
+        f"{len(high_order)} accepted high-order approximants",
+    )
+    check(
+        "grid census: executed ordinary grid produced the expected evaluation count",
+        len(evaluated) == PADE_EVALUATED_COUNT,
+        f"evaluated = {len(evaluated)}, expected = {PADE_EVALUATED_COUNT}",
+    )
     return best_val, best_pct, best_mn
 
 
 def test_tadpole_pade_combo() -> None:
-    section("T6: tadpole-improved Pade resummation (best combined attempt)")
-    # Self-consistent: <P> = Pade[m/n] evaluated at beta_eff = beta * <P>
-    print(f"  Pade [m/n] self-consistent with tadpole improvement (beta_eff = beta * <P>):")
+    section("T6: tadpole-substitution Pade resummation (best combined attempt)")
+    # Self-consistent: <P> = Pade[m/n] evaluated at beta_eff = beta * <P>.
+    # Executed grid: m, n >= 1 with 3 <= m+n <= 8; the note scopes its claim
+    # to this grid.  Iterations that leave the acceptance window or fail to
+    # converge are recorded and excluded, never silently consumed.
+    print(f"  Pade [m/n] self-consistent with tadpole substitution (beta_eff = beta * <P>):")
     best_pct = 1e9
     best_mn = (0, 0)
     best_P = 0.0
+    converged_entries: list[tuple[int, int, float]] = []
     for total in range(3, 9):
         for m in range(1, total):
             n = total - m
@@ -523,10 +622,12 @@ def test_tadpole_pade_combo() -> None:
                     break
                 if abs(val - P_it) < 1e-12:
                     converged = True
+                    P_it = val
                     break
                 P_it = 0.5 * P_it + 0.5 * val
             if not converged:
                 continue
+            converged_entries.append((m, n, P_it))
             gap = P_it - MC_REFERENCE
             pct = 100.0 * abs(gap) / MC_REFERENCE
             print(f"    [{m}/{n}]_TI: <P>_TI-Pade = {P_it:.6f}, gap = {gap:+.5f}, pct = {pct:.3f}%")
@@ -534,11 +635,38 @@ def test_tadpole_pade_combo() -> None:
                 best_pct = pct
                 best_mn = (m, n)
                 best_P = P_it
-    print(f"  best tadpole-improved Pade: [{best_mn[0]}/{best_mn[1]}], <P> = {best_P:.6f}, pct = {best_pct:.3f}%")
+    print(f"  best tadpole-substitution Pade: [{best_mn[0]}/{best_mn[1]}], <P> = {best_P:.6f}, pct = {best_pct:.3f}%")
     check(
-        f"OBSTRUCTION: best tadpole-improved Pade combination has |pct| > 40%",
+        f"OBSTRUCTION: best tadpole-substitution Pade combination has |pct| > 40%",
         best_pct > 40.0,
         f"<P>_TI-Pade = {best_P:.6f}, explicit runner-local comparator = {MC_REFERENCE:.4f}, pct = {best_pct:.3f}%",
+    )
+    # Mutation-decisive pins on the executed combined grid.
+    check(
+        "pin: best tadpole-substitution Pade approximant is [3/2]",
+        best_mn == (3, 2),
+        f"best_mn = {best_mn}",
+    )
+    check(
+        "pin: best tadpole-substitution Pade value = 0.910550 to six decimals",
+        round(best_P, 6) == 0.910550,
+        f"best value = {best_P:.9f}",
+    )
+    check(
+        "branch scope: every converged combined value exceeds 0.5 (high branch)",
+        all(value > 0.5 for _, _, value in converged_entries),
+        "the combined walk tracks only the weak-coupling branch from seed 0.6",
+    )
+    check(
+        "pin: every converged combined value lies within 2e-4 of 0.910550",
+        bool(converged_entries)
+        and all(abs(value - 0.910550) < 2e-4 for _, _, value in converged_entries),
+        f"{len(converged_entries)} converged entries in the ~0.9106 band",
+    )
+    check(
+        "grid census: combined grid produced the expected converged count",
+        len(converged_entries) == TI_PADE_CONVERGED_COUNT,
+        f"converged = {len(converged_entries)}, expected = {TI_PADE_CONVERGED_COUNT}",
     )
     return best_P, best_pct, best_mn
 
@@ -559,8 +687,8 @@ def test_scale_diagnostic() -> None:
         f"n* = {n_star:.2f}",
     )
     # In the truncated series the contribution at order n is w_n/beta^n.
-    # Within the explicit runner-local truncation used here the series remains numerically
-    # Cauchy-convergent to a value different from the explicit runner-local comparator.
+    # Within the explicit runner-local truncation used here the series remains
+    # finite-range stabilized at a value different from the explicit runner-local comparator.
     # This runner records that finite-route residual; it does not identify the
     # residual with a particular matrix element.
     contributions = [W_COEFFS_NSPT_SU3[n] / BETA**n for n in range(1, 17)]
@@ -587,6 +715,24 @@ def test_scale_diagnostic() -> None:
         f"gap = {pct_non_pert:.4f}%, F2 = {F2_SCALE_PERCENT:.4f}%, ratio = "
         f"{pct_non_pert/F2_SCALE_PERCENT:.1f}x",
     )
+    # Input-integrity pins: the declared comparator constants themselves.
+    # These are mutation-decisive against silent comparator drift (a broad
+    # ">" inequality alone would stay green under large comparator changes).
+    check(
+        "input integrity: MC comparator constant is exactly 0.5934",
+        MC_REFERENCE == 0.5934,
+        f"MC_REFERENCE = {MC_REFERENCE}",
+    )
+    check(
+        "input integrity: F2 comparator constant is exactly 0.0833",
+        F2_SCALE_PERCENT == 0.0833,
+        f"F2_SCALE_PERCENT = {F2_SCALE_PERCENT}",
+    )
+    check(
+        "pin: N=16 route residual is ~659x the F2 comparator (in [655, 665])",
+        655.0 < pct_non_pert / F2_SCALE_PERCENT < 665.0,
+        f"ratio = {pct_non_pert/F2_SCALE_PERCENT:.1f}x",
+    )
 
 
 def test_honest_verdict() -> None:
@@ -609,13 +755,11 @@ def test_honest_verdict() -> None:
         pct = 100.0 * gap / MC_REFERENCE
         if pct < best:
             best, best_method, best_val = pct, f"truncated_PT_N={N}", p
-    # Tadpole-improved truncated PT
+    # Tadpole-substitution truncated PT (converged fixed points only)
     for N in range(1, 9):
-        P_it = 0.5
-        for it in range(2000):
-            beta_eff = BETA * P_it
-            P_new = truncated_series(W_COEFFS_NSPT_SU3, N, beta_eff)
-            P_it = 0.5 * P_it + 0.5 * P_new
+        P_it, converged = tadpole_fixed_point(N)
+        if not converged:
+            continue
         gap = abs(P_it - MC_REFERENCE)
         pct = 100.0 * gap / MC_REFERENCE
         if pct < best:
@@ -675,6 +819,22 @@ def test_honest_verdict() -> None:
         "HONEST VERDICT: best tested value has residual > explicit runner-local F2 comparator",
         best > F2_SCALE_PERCENT,
         f"best tested = {best_val:.6f}, residual = {best:.4f}% > F2 = {F2_SCALE_PERCENT:.4f}%",
+    )
+    # Mutation-decisive pins on the winner of the whole tested envelope.
+    check(
+        "pin: best tested method is tadpole+Pade[3/2]",
+        best_method == "tadpole+Pade[3/2]",
+        f"best method = {best_method}",
+    )
+    check(
+        "pin: best tested value = 0.910550 to six decimals",
+        round(best_val, 6) == 0.910550,
+        f"best value = {best_val:.9f}",
+    )
+    check(
+        "pin: best residual is ~641x the F2 comparator (in [635, 650])",
+        635.0 < best / F2_SCALE_PERCENT < 650.0,
+        f"ratio = {best/F2_SCALE_PERCENT:.1f}x",
     )
 
 

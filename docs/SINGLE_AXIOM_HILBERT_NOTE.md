@@ -1,12 +1,14 @@
 # Local Tensor Product Hilbert Space + Local Hamiltonian + Born Readout: Operational Reduction Note
 
 **Date:** 2026-04-12 (originally); 2026-05-10 (audit-narrowing refresh:
-explicit class-E definitional-compression framing under named admitted
+explicit class-E definitional-compression framing under named conditional
 inputs); 2026-06-17 (runner/source drift repair for Test 4 and synthesis);
 2026-07-17 (Test 4 common-outcome-space and Hamiltonian-scale repair).
+**Type:** bounded_theorem
 **Status:** scope-narrowed bounded operational note. The runner numerically
 verifies four consequences (Hamiltonian-support graph recovery, Born-rule
-`I_3 = 0` at machine precision, unitarity-vs-Lindblad behaviour, and a
+`I_3 = 0` at machine precision, fixed unitary/strong-dephasing toy behaviour,
+and a
 matched-scale local-H localization contrast) **after** the named inputs
 `(local d, local Hermitian H, Born readout)` are supplied. The "single axiom"
 framing is a definitional compression of those inputs into the phrase
@@ -25,21 +27,22 @@ earlier 2026-05-05 audit row recorded `claim_type: positive_theorem`; the
 2026-05-11 re-audit moved the row to `bounded_theorem`, matching this note's
 scope-narrowed framing. After this source refresh, independent re-audit owns
 the current status.
-**Status authority:** independent audit lane only.
+**Audit-status authority:** independent audit lane only.
 **Authority role:** records that the four numerical consequences follow
-from `(H = ⊗_i H_i, local Hermitian H, Born readout)` as a class-E
+from `(\mathcal H = ⊗_i \mathcal H_i, local Hermitian H, Born readout,
+"support = edges" rule)` as a class-E
 definitional substitution. **Does not** propose retained, positive-
-theorem, or framework-reduction promotion. The accepted-input ledger
-for the current paper package remains the Lattice + Quantum + Record
-front-door surface in `docs/MINIMAL_AXIOMS_2026-06-05.md`.
+theorem, or framework-reduction promotion. The current framework baseline
+remains Lattice + Qubit + Admissibility + Record in
+`docs/MINIMAL_AXIOMS_2026-06-29.md`.
 **Runner:** `scripts/frontier_single_axiom_hilbert.py`
 
 **2026-07-17 Test 4 repair:** the executable runner and this source note compare
 both propagators on the same 64 mutually exclusive computational-basis
 outcomes. Both probability distributions are normalized. Before propagation,
-each Hamiltonian is shifted by its trace (which changes only a global phase)
-and rescaled to centered RMS energy
-`sqrt(Tr(H_c^2)/64) = 1`. The fixed seed, initial state `|000000>`,
+the mean energy `Tr(H)/64` is subtracted from each Hamiltonian (which changes
+only a global phase) and the result is rescaled to centered RMS energy
+`sqrt(Tr(H_c^\dagger H_c)/64) = 1`. The fixed seed, initial state `|000000>`,
 dimensionless time `t=1`, and existing twofold spread-contrast criterion are
 unchanged. The control is now described accurately as a dense nonlocal
 Hamiltonian on the same factorized Hilbert space, rather than as an
@@ -49,14 +52,14 @@ it does not prove monotone distance decay or a general localization theorem.
 **Audit-dispatch parent candidate:** If a future independent audit
 evaluates whether this Hilbert-surface wrapper is a non-chain-closing
 alias/decorative handle, the current framework parent candidate is
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md).
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md).
 This is source-side routing context only; it does not assert an
 `audit_status` or `effective_status`.
 
 **Scope note:** this is an operational support note for Hilbert-surface
-scoping. It is not the load-bearing accepted-input ledger for the current
-paper package, whose framework statement is the Lattice + Quantum + Record
-front-door surface recorded in `docs/MINIMAL_AXIOMS_2026-06-05.md`.
+scoping. It is not the load-bearing framework baseline for the current paper
+package, whose framework statement is the Lattice + Qubit + Admissibility +
+Record surface recorded in `docs/MINIMAL_AXIOMS_2026-06-29.md`.
 
 ## Source boundary (2026-06-12)
 
@@ -102,42 +105,45 @@ The audit's `verdict_rationale`:
 > a first-principles derivation from the stated axiom.*
 
 This note adopts the explicit class-E definitional-compression framing.
-The four named admitted inputs are listed in §"Admitted-context inputs"
-below; each is a real upstream gap, not an import-redirect. The
+The four named conditional inputs are listed in §"Explicit conditional
+inputs" below; each is a real upstream gap, not an import-redirect. The
 load-bearing step is `(local d, local H, Born readout) ⇒ four numerical
 consequences`, evaluated mechanically by the runner.
 
-**Admitted-context inputs (not derived in this note):**
+**Explicit conditional inputs (not derived in this note):**
 
-1. The local Hilbert dimension `d` for each tensor factor `H_i`.
-2. A Hermitian, local-support Hamiltonian `H` on `⊗_i H_i` (the
+1. The local Hilbert dimension `d` for each tensor factor `\mathcal H_i`.
+2. A Hermitian, local-support Hamiltonian `H` on
+   `\mathcal H = ⊗_i \mathcal H_i` (the
    restriction to neighbour-only support is part of the input, not a
    consequence of the tensor-product structure).
 3. The Born readout convention `P(outcome) = |<outcome | psi>|^2`
-   (chosen, not derived; replaced by `p`-norm in Test 2 to confirm
-   `I_3 ≠ 0` for `p ≠ 2`).
+   (chosen, not derived; replaced by the three tested `p`-norm controls in
+   Test 2, which give nonzero sampled `I_3`).
 4. The rule "interaction support of `H` on tensor factors **defines**
    the graph edges" (a graph-extraction convention used by Test 1).
 
 **Cited authorities (cited as related, not as authority closure):**
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — the
-  current Lattice + Quantum + Record front-door surface. Cited as related,
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — the current
+  Lattice + Qubit + Admissibility + Record framework baseline. Cited as related,
   not as authority closure for the local-Hamiltonian or Born-readout inputs
-  imported above.
+  specified above.
 
 ## Question (scope-narrowed)
 
-Given the named admitted inputs `(local d, local Hermitian H, Born
+Given the named conditional inputs `(local d, local Hermitian H, Born
 readout, "support = edges" extraction rule)`, do the four numerical
-consequences (graph recovery, `I_3 = 0`, unitarity vs. Lindblad,
+consequences (graph recovery, `I_3 = 0`, fixed unitary/strong-dephasing toy
+behaviour,
 matched-scale local-H localization) follow mechanically?
 
-**Definitional compression (class-E):** packaging the four admitted
+**Definitional compression (class-E):** packaging the four conditional
 inputs together gives the phrase "a finite Hilbert space with local
-tensor product structure, `H = H_1 ⊗ H_2 ⊗ ... ⊗ H_N`". The
+tensor product structure,
+`\mathcal H = \mathcal H_1 ⊗ \mathcal H_2 ⊗ ... ⊗ \mathcal H_N`". The
 load-bearing step is the mechanical evaluation of the four consequences
-under those admitted inputs. **This is not** a first-principles
+under those conditional inputs. **This is not** a first-principles
 derivation of the inputs themselves from a strictly smaller axiom set.
 
 ## Tests and Results
@@ -157,14 +163,14 @@ components.
 | 4     | 8          | 8               | yes   |
 | 5     | 5          | 5               | yes   |
 
-Recovery rate: 100% **under the admitted "support = edges" extraction
+Recovery rate: 100% **under the supplied "support = edges" extraction
 rule (input 4 above)**. The graph in this test is the support of the
-admitted local `H` on the tensor factors, read out under the admitted
+supplied local `H` on the tensor factors, read out under the supplied
 extraction convention. The graph is not derived from the bare tensor-
 product Hilbert space; it is the runner-verified consequence of the
-admitted local `H` and the admitted extraction rule.
+supplied local `H` and the supplied extraction rule.
 
-### Test 2: Admitted Born readout gives `I_3 = 0`
+### Test 2: Supplied Born readout gives `I_3 = 0`
 
 Third-order interference I_3 computed for 200 random state pairs in
 dimension-8 Hilbert space.
@@ -176,16 +182,16 @@ dimension-8 Hilbert space.
 | p-norm p=3.0      | 2.0 x 10^-3  | 2.9 x 10^-2  |
 | p-norm p=4.0      | 1.0 x 10^-3  | 3.6 x 10^-2  |
 
-Under the admitted Born readout `P = |<·|·>|^2` (input 3 above),
-`I_3 = 0` to machine precision. Replacing the admitted Born readout
-with any `p`-norm at `p ≠ 2` gives `I_3 ≠ 0`. This confirms the Born
-readout is a real admitted input: the bare Hilbert tensor-product
-structure does not by itself force `p = 2`. The standard reading
+Under the supplied Born readout `P = |<·|·>|^2` (input 3 above),
+`I_3 = 0` to machine precision. In the same fixed-seed packet, the tested
+controls `p ∈ {1.5, 3, 4}` give nonzero sampled `I_3`. This confirms the Born
+readout is a real conditional input to this packet: the bare Hilbert
+tensor-product structure does not by itself force `p = 2`. The standard reading
 "the inner product forces the Born rule" is a definitional
 substitution: choosing the inner-product convention for readout is
 equivalent to choosing the `p = 2` norm.
 
-### Test 3: Hermitian generator gives unitary toy evolution; Lindblad control breaks it
+### Test 3: Hermitian generator gives unitary toy evolution; fixed strong-dephasing control changes the profile
 
 8-site chain with 1/r gravitational potential. Unitary evolution concentrates
 probability at the gravitational center. Lindblad (non-unitary) evolution with
@@ -199,12 +205,12 @@ increasing dephasing rate gamma:
 | 1.0   | -0.078        | Stuck near source                |
 | 2.0   | -0.167        | Localized at source              |
 
-Unitarity follows from the admitted Hermitian Hamiltonian (input 2
-above). Non-unitary evolution (open systems, Lindblad channels)
-destroys gravitational attraction — particles freeze at their source
-instead of migrating toward the potential minimum. The Hermiticity
-restriction is therefore a real admitted input: replacing it with
-non-Hermitian Lindblad dynamics changes the consequence.
+Unitarity follows from the supplied Hermitian Hamiltonian (input 2 above).
+For this fixed Euler-integrated toy control, adding computational-basis
+dephasing at `gamma = 2` leaves more probability at the source than at the toy
+potential center. This establishes only the stated unitary-versus-strong-
+dephasing profile contrast; it is not a general claim about Lindblad dynamics
+or gravitational attraction.
 
 ### Test 4: Matched-scale local-H packet gives bounded localization support
 
@@ -221,7 +227,8 @@ matches the generator scale by
 Thus both evolutions use `sigma_H = 1` at the same dimensionless time `t=1`.
 The shift has no observable effect because it contributes only a global phase;
 the RMS normalization matches the mean-square spectral generator scale. This
-is an explicit comparison convention, not a derived physical energy scale.
+is an explicit comparison convention, not a derived physical energy scale. It
+does not match bandwidths, higher spectral moments, or entrywise matrix scales.
 
 | Metric | Chain-local Hamiltonian | Dense nonlocal control |
 |---|---:|---:|
@@ -232,37 +239,37 @@ is an explicit comparison convention, not a derived physical energy scale.
 | Spread ratio | 4.0314x more localized | baseline |
 
 The participation ratios are now like-for-like: each is computed from one
-normalized distribution over the same 64 mutually exclusive outcomes. The
-comparison isolates the supplied chain-local support restriction by holding
-the factorization, readout basis, initial state, evolution time, and centered
-RMS energy fixed. The dense control does not respect the chain-local support
-restriction and is broader in this fixed sample. Test 4 does not establish
-monotone decay with graph distance. The result is not an ensemble statement
-and does not show that tensor-product factorization alone causes localization.
+normalized distribution over the same 64 mutually exclusive outcomes. Within
+this fixed construction, the comparison holds the factorization, readout
+basis, initial state, evolution time, and centered RMS energy fixed while
+changing the Hamiltonian support class. The dense control does not respect the
+chain-local support restriction and is broader in this fixed sample. Test 4
+does not establish monotone decay with graph distance. The result is not an
+ensemble statement and does not show that tensor-product factorization alone
+causes localization.
 
 ## Conclusion (scope-narrowed)
 
-Under the four named admitted inputs (local `d`, local Hermitian `H`,
+Under the four named conditional inputs (local `d`, local Hermitian `H`,
 Born readout, "support = edges" extraction rule), the four numerical
 consequences follow mechanically as evaluated by the runner:
 
 - The graph **is recovered** as the interaction support of the
-  admitted local `H` under the admitted "support = edges" extraction
+  supplied local `H` under the supplied "support = edges" extraction
   rule (Test 1).
 - The Born rule `I_3 = 0` **holds** at machine precision under the
-  admitted Born readout (Test 2). Replacing the readout with a
-  `p`-norm for `p ≠ 2` gives `I_3 ≠ 0`, confirming the readout is a
-  real input.
-- Unitary toy evolution follows from the admitted Hermitian generator
-  (Test 3); a non-Hermitian Lindblad replacement breaks the toy attraction
-  profile, confirming the Hermiticity restriction is a real input.
-- On the admitted factorized Hilbert space, the chain-local Hamiltonian gives a
+  supplied Born readout (Test 2). The three tested nonquadratic controls give
+  nonzero sampled `I_3`, confirming the readout is a real conditional input.
+- Unitary toy evolution follows from the supplied Hermitian generator
+  (Test 3); the fixed `gamma = 2` dephasing control leaves more probability at
+  the source than at the toy center. No broader Lindblad claim is made.
+- On the supplied factorized Hilbert space, the chain-local Hamiltonian gives a
   bounded fixed-seed localization contrast against a dense nonlocal control.
   Both participation ratios use the same normalized 64-outcome space and
   matched centered RMS energy. The runner does not claim monotone
   distance-decay or an ensemble theorem (Test 4).
 
-**Definitional-compression framing.** The four admitted inputs
+**Definitional-compression framing.** The four conditional inputs
 `(local d, local H, Born readout, "support = edges" rule)` can be
 packaged together under the phrase "a finite Hilbert space with local
 tensor product structure". This packaging is a class-E definitional
@@ -274,29 +281,27 @@ recorded.
 ## Honest scope limits (explicit, not import-redirect)
 
 1. **The local Hermitian `H` and its locality restriction are real
-   admitted inputs**, not consequences of the bare tensor-product
+   conditional inputs**, not consequences of the bare tensor-product
    Hilbert space. A tensor-product space with all-to-all interactions
    would not give spatial locality; the restriction is part of the
-   admitted package.
+   supplied packet.
 
-2. **The Born readout is a real admitted input.** Test 2 confirms this
-   by demonstrating `I_3 ≠ 0` under any `p`-norm with `p ≠ 2`. The
+2. **The Born readout is a real conditional input.** Test 2 shows nonzero
+   sampled `I_3` for `p ∈ {1.5, 3, 4}`; it does not test every `p ≠ 2`. The
    tensor-product structure does not by itself force `p = 2`.
 
-3. **The "support = edges" graph-extraction rule is a real admitted
+3. **The "support = edges" graph-extraction rule is a real conditional
    input.** Without it, Test 1's recovery procedure is not defined.
    The graph is not a consequence of the tensor-product structure
-   alone; it is the support of the admitted local `H` under the
-   admitted extraction rule.
+   alone; it is the support of the supplied local `H` under the
+   supplied extraction rule.
 
-4. **These are small-system demonstrations (5--8 sites).** The
-   argument is structural and holds at any scale, but large-scale
-   gravitational physics tests (distance law, etc.) use the 3D
-   lattice infrastructure in other frontier scripts.
+4. **These are fixed-seed small-system demonstrations (5--8 sites).** They do
+   not establish large-system scaling, an ensemble result, or a distance law.
 
-5. **Authority surface unchanged.** The accepted-input ledger for the
-   current paper package remains the Lattice + Quantum + Record front-door
-   surface in `docs/MINIMAL_AXIOMS_2026-06-05.md`. This note is a Hilbert-surface
+5. **Authority surface unchanged.** The current framework baseline remains the
+   Lattice + Qubit + Admissibility + Record surface in
+   `docs/MINIMAL_AXIOMS_2026-06-29.md`. This note is a Hilbert-surface
    operational support note; it does not propose framework-reduction
    promotion, nor does it claim to be a smaller axiom set than the
    recorded minimal-axioms surface.

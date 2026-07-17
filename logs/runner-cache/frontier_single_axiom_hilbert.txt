@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_single_axiom_hilbert.py
-runner_sha256: cdfa7098e788c596acdd5f8a51bb8d94a82b8a1edc7030ff4b20a5dab13ebbd9
+runner_sha256: 859d096bc264f5a09e9f46ec10b18dd077f7a05a15fa1d42cc7133c109608bdd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 SCOPE-NARROWED LOCAL TENSOR PRODUCT HILBERT SUPPORT
-Bounded operational checks under admitted inputs.
+Bounded operational checks under explicit conditions.
 
 ======================================================================
 TEST 1: Graph support recovery under the supplied extraction rule
@@ -19,10 +19,10 @@ TEST 1: Graph support recovery under the supplied extraction rule
   Trial 5: 5 input edges, 5 recovered, match=True
 
   Graph recovery rate: 100% (5/5)
-  PASS: graph support is recovered under the admitted extraction rule
+  PASS: graph support is recovered under the supplied extraction rule
 
 ======================================================================
-TEST 2: Born p=2 readout gives I_3 = 0; p != 2 controls fail
+TEST 2: Born p=2 readout gives I_3 = 0; tested nonquadratic controls are nonzero
 ======================================================================
 
   Hilbert space (Born rule, p=2):
@@ -35,11 +35,11 @@ TEST 2: Born p=2 readout gives I_3 = 0; p != 2 controls fail
     p=3.0: mean |I_3| = 1.9955e-03, max = 2.8700e-02  PASS (nonzero)
     p=4.0: mean |I_3| = 9.9409e-04, max = 3.6208e-02  PASS (nonzero)
 
-  Summary: admitted Born p=2 readout gives I_3 = 0: True
-  Summary: p != 2 violates Born rule: True
+  Summary: supplied Born p=2 readout gives I_3 = 0: True
+  Summary: tested p in {1.5, 3, 4} gives nonzero sampled I_3: True
 
 ======================================================================
-TEST 3: Hermitian generator gives unitary evolution; Lindblad control breaks it
+TEST 3: Hermitian generator is unitary; fixed strong-dephasing control changes the profile
 ======================================================================
 
   Unitary evolution:
@@ -47,7 +47,7 @@ TEST 3: Hermitian generator gives unitary evolution; Lindblad control breaks it
     Probability profile: [0.0012, 0.1316, 0.4253, 0.3107, 0.1069, 0.0212, 0.0028, 0.0003]
     Probability at center > edges: True
 
-  Lindblad (non-unitary) evolution:
+  Lindblad dephasing control (non-unitary open-system evolution):
     gamma=0.0: norm=1.0000, center_excess=+0.1036, profile=[-0.001, 0.123, 0.438, 0.316, 0.103, 0.019, 0.002, 0.000]
     gamma=0.1: norm=1.0000, center_excess=+0.0778, profile=[0.030, 0.151, 0.418, 0.289, 0.093, 0.017, 0.002, 0.000]
     gamma=0.5: norm=1.0000, center_excess=-0.0052, profile=[0.134, 0.233, 0.351, 0.208, 0.062, 0.011, 0.001, 0.000]
@@ -55,8 +55,8 @@ TEST 3: Hermitian generator gives unitary evolution; Lindblad control breaks it
     gamma=2.0: norm=1.0000, center_excess=-0.1669, profile=[0.367, 0.334, 0.205, 0.075, 0.017, 0.002, 0.000, 0.000]
 
   Unitary: probability migrates toward toy attraction center: True
-  Strong Lindblad: probability stuck at source (toy attraction broken): True
-  PASS: Hermitian/unitary control is load-bearing for the toy profile
+  Fixed gamma=2 control: source probability > toy-center probability: True
+  PASS: fixed unitary/strong-dephasing toy contrast
 
 ======================================================================
 TEST 4: Matched-scale local H gives bounded localization support
@@ -81,24 +81,24 @@ TEST 4: Matched-scale local H gives bounded localization support
   PASS: bounded matched-scale localization contrast
 
 ======================================================================
-SYNTHESIS: What the admitted-input packet supports
+SYNTHESIS: What the explicit-condition packet supports
 ======================================================================
 
-  Admitted packet:
+  Supplied packet:
     local factor dimensions + Hermitian local H + Born p=2 readout
     + support-as-edges extraction rule
 
   Test 1 — Support graph recovered:            PASS
     The adjacency graph is recovered from the supplied Hamiltonian support
-    under the admitted extraction rule.
+    under the supplied extraction rule.
 
   Test 2 — Born p=2 readout check:              PASS
-    I_3 = 0 under the admitted p=2 readout.
-    p != 2 theories violate Born rule (I_3 != 0).
+    I_3 = 0 under the supplied p=2 readout.
+    The tested p in {1.5, 3, 4} controls give nonzero sampled I_3.
 
   Test 3 — Hermitian/unitary control:           PASS
-    The supplied Hermitian H gives unitary evolution; a Lindblad replacement
-    destroys the toy attraction profile.
+    The supplied Hermitian H gives unitary evolution; the fixed gamma=2
+    dephasing control leaves more probability at the source than at the center.
 
   Test 4 — Bounded localization contrast:       PASS
     On the same normalized 64-outcome space and at matched centered RMS
@@ -106,8 +106,8 @@ SYNTHESIS: What the admitted-input packet supports
     control. The fixed sample does not prove monotone graph-distance decay.
 
   Conclusion:
-    The runner supports the bounded operational consequences of the admitted
-    packet. It does not derive the local Hamiltonian, locality restriction,
+    The runner supports the bounded operational consequences of the explicit
+    conditions. It does not derive the local Hamiltonian, locality restriction,
     Born readout, or support-as-edges rule from a bare Hilbert-space axiom,
     and it does not reduce the current framework axiom ledger.
 

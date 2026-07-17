@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Scope-narrowed operational checks for a local tensor-product Hilbert packet.
 
-This runner verifies consequences after four inputs are supplied:
+This runner verifies consequences after four explicit conditions are supplied:
 
 1. local factor dimensions;
 2. a Hermitian Hamiltonian with stipulated local support;
@@ -11,8 +11,9 @@ This runner verifies consequences after four inputs are supplied:
 It does not derive those inputs from a bare Hilbert-space axiom, reduce the
 current framework axiom ledger, or prove a monotone graph-distance decay law.
 Test 4's valid support is the participation-ratio/spread contrast between a
-supplied local tensor-product Hamiltonian and a dense nonlocal control on the
-same normalized computational-basis outcome space.  The two generators are
+supplied chain-local Hamiltonian and a dense nonlocal control on the same
+factorized Hilbert space and normalized computational-basis outcome space. The
+two generators are
 centered and matched to the same RMS energy before propagation.
 
 PStack experiment: single-axiom-hilbert
@@ -289,13 +290,13 @@ def test_graph_emergence():
 
     success_rate = sum(results) / len(results)
     print(f"\n  Graph recovery rate: {success_rate:.0%} ({sum(results)}/{len(results)})")
-    print(f"  PASS: graph support is recovered under the admitted extraction rule" if success_rate == 1.0
+    print(f"  PASS: graph support is recovered under the supplied extraction rule" if success_rate == 1.0
           else f"  PARTIAL: {success_rate:.0%} exact recovery")
     return success_rate
 
 
 # ============================================================================
-# Test 2: admitted Born p=2 readout gives I_3 = 0.
+# Test 2: supplied Born p=2 readout gives I_3 = 0.
 # ============================================================================
 
 def compute_I3_hilbert(dim: int, n_trials: int, rng: np.random.Generator) -> list[float]:
@@ -386,9 +387,9 @@ def compute_I3_pnorm(p: float, dim: int, n_trials: int,
 
 
 def test_born_rule():
-    """Test 2: Born p=2 readout and p != 2 controls."""
+    """Test 2: Born p=2 readout and three tested nonquadratic controls."""
     print("\n" + "=" * 70)
-    print("TEST 2: Born p=2 readout gives I_3 = 0; p != 2 controls fail")
+    print("TEST 2: Born p=2 readout gives I_3 = 0; tested nonquadratic controls are nonzero")
     print("=" * 70)
 
     rng = np.random.default_rng(123)
@@ -421,13 +422,13 @@ def test_born_rule():
     all_nonzero = all(v > 1e-6 for v in p_norm_results.values())
     born_auto = max_hilbert < 1e-10
 
-    print(f"\n  Summary: admitted Born p=2 readout gives I_3 = 0: {born_auto}")
-    print(f"  Summary: p != 2 violates Born rule: {all_nonzero}")
+    print(f"\n  Summary: supplied Born p=2 readout gives I_3 = 0: {born_auto}")
+    print(f"  Summary: tested p in {{1.5, 3, 4}} gives nonzero sampled I_3: {all_nonzero}")
     return born_auto and all_nonzero
 
 
 # ============================================================================
-# Test 3: Hermitian/unitary toy evolution versus Lindblad replacement.
+# Test 3: Hermitian/unitary toy evolution versus fixed dephasing control.
 # ============================================================================
 
 def propagator_unitary(H: np.ndarray, source: int, t: float) -> np.ndarray:
@@ -481,9 +482,9 @@ def propagator_lindblad(H: np.ndarray, source: int, t: float,
 
 
 def test_unitarity():
-    """Test 3: Hermitian/unitary evolution versus Lindblad replacement."""
+    """Test 3: Hermitian/unitary evolution versus fixed dephasing control."""
     print("\n" + "=" * 70)
-    print("TEST 3: Hermitian generator gives unitary evolution; Lindblad control breaks it")
+    print("TEST 3: Hermitian generator is unitary; fixed strong-dephasing control changes the profile")
     print("=" * 70)
 
     if not HAS_SCIPY:
@@ -524,7 +525,7 @@ def test_unitarity():
     print(f"    Probability at center > edges: {attracted}")
 
     # Lindblad (non-unitary) propagator at various damping rates
-    print(f"\n  Lindblad (non-unitary) evolution:")
+    print(f"\n  Lindblad dephasing control (non-unitary open-system evolution):")
     gammas = [0.0, 0.1, 0.5, 1.0, 2.0]
     for gamma in gammas:
         prob_lindblad = propagator_lindblad(H, source, t, gamma, n_steps=200)
@@ -543,7 +544,7 @@ def test_unitarity():
 
     print(f"\n  Unitary: probability migrates toward toy attraction center: "
           f"{attraction_works_unitary}")
-    print(f"  Strong Lindblad: probability stuck at source (toy attraction broken): "
+    print(f"  Fixed gamma=2 control: source probability > toy-center probability: "
           f"{attraction_broken_lindblad}")
     probability_conserved = abs(norm_unitary - 1.0) < 1e-10
     passed = (
@@ -551,8 +552,8 @@ def test_unitarity():
         and attraction_works_unitary
         and attraction_broken_lindblad
     )
-    print("  PASS: Hermitian/unitary control is load-bearing for the toy profile" if passed
-          else "  FAIL: fixed unitary/Lindblad control semantics")
+    print("  PASS: fixed unitary/strong-dephasing toy contrast" if passed
+          else "  FAIL: fixed unitary/strong-dephasing control semantics")
 
     return passed
 
@@ -565,7 +566,8 @@ def test_matched_scale_localization():
     """Test 4: local support gives a bounded fixed-seed localization contrast.
 
     Compare:
-    (a) H = H_1 x H_2 x ... x H_N with a chain-local Hamiltonian;
+    (a) the factorized space H_space = H_1 x H_2 x ... x H_N with a
+        chain-local Hamiltonian;
     (b) the same factorized 64-dimensional space with a dense random
         Hamiltonian that does not respect the chain-local support restriction.
 
@@ -670,31 +672,31 @@ def test_matched_scale_localization():
 
 
 # ============================================================================
-# Synthesis: admitted-input operational support.
+# Synthesis: explicit-condition operational support.
 # ============================================================================
 
 def synthesis(t1: float, t2: bool, t3: bool, t4: bool):
-    """Print the admitted-input synthesis of all four tests."""
+    """Print the explicit-condition synthesis of all four tests."""
     print("\n" + "=" * 70)
-    print("SYNTHESIS: What the admitted-input packet supports")
+    print("SYNTHESIS: What the explicit-condition packet supports")
     print("=" * 70)
 
     print(f"""
-  Admitted packet:
+  Supplied packet:
     local factor dimensions + Hermitian local H + Born p=2 readout
     + support-as-edges extraction rule
 
   Test 1 — Support graph recovered:            {'PASS' if t1 == 1.0 else 'PARTIAL'}
     The adjacency graph is recovered from the supplied Hamiltonian support
-    under the admitted extraction rule.
+    under the supplied extraction rule.
 
   Test 2 — Born p=2 readout check:              {'PASS' if t2 else 'FAIL'}
-    I_3 = 0 under the admitted p=2 readout.
-    p != 2 theories violate Born rule (I_3 != 0).
+    I_3 = 0 under the supplied p=2 readout.
+    The tested p in {{1.5, 3, 4}} controls give nonzero sampled I_3.
 
   Test 3 — Hermitian/unitary control:           {'PASS' if t3 else 'FAIL'}
-    The supplied Hermitian H gives unitary evolution; a Lindblad replacement
-    destroys the toy attraction profile.
+    The supplied Hermitian H gives unitary evolution; the fixed gamma=2
+    dephasing control leaves more probability at the source than at the center.
 
   Test 4 — Bounded localization contrast:       {'PASS' if t4 else 'FAIL'}
     On the same normalized 64-outcome space and at matched centered RMS
@@ -702,8 +704,8 @@ def synthesis(t1: float, t2: bool, t3: bool, t4: bool):
     control. The fixed sample does not prove monotone graph-distance decay.
 
   Conclusion:
-    The runner supports the bounded operational consequences of the admitted
-    packet. It does not derive the local Hamiltonian, locality restriction,
+    The runner supports the bounded operational consequences of the explicit
+    conditions. It does not derive the local Hamiltonian, locality restriction,
     Born readout, or support-as-edges rule from a bare Hilbert-space axiom,
     and it does not reduce the current framework axiom ledger.
 """)
@@ -715,7 +717,7 @@ def synthesis(t1: float, t2: bool, t3: bool, t4: bool):
 
 def main() -> int:
     print("SCOPE-NARROWED LOCAL TENSOR PRODUCT HILBERT SUPPORT")
-    print("Bounded operational checks under admitted inputs.\n")
+    print("Bounded operational checks under explicit conditions.\n")
 
     t0 = time.time()
 

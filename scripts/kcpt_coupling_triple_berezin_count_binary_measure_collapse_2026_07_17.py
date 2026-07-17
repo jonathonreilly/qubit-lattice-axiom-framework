@@ -14,12 +14,17 @@ Blocks:
      spectral-pairing note's K-orbit pairing license: count-once integral
      = det3 = lam0*|lam1|^2, count-twice via the K-conjugate partner copy
      = |det3|^2 = lam0^2*|lam1|^4, direct 12-generator witness, r-neutral
-     doubling with non-constant ratio det3
+     doubling with multiplier det3 (count_twice = count_once * det3)
   B3 declared-reading generator-count bookkeeping (horn m uses 6m
      generators; a declared translation, never an equivalence)
-  B4 linear measure collapse: diagonal rescale scalar, general linear
-     redefinition scalar det(B)det(A), no-constant-kappa witness clash,
-     uniform-rescale horn split rho versus |rho|^2
+  B4 constant-substitution measure collapse and its scope boundary:
+     diagonal rescale scalar, general block-preserving kernel substitution
+     scalar det(B)det(A), no-constant-kappa witness clash, uniform-rescale
+     horn split rho versus |rho|^2, coupling-dependent conversion witness
+     A(W) = W turning count-once into count-twice (kernel route and
+     generator-substitution route agree), constant odd-mixing substitution
+     scalar det(S) with block-form consistency, constant cross-copy mixing
+     scalar on the 12-generator joint
   B5 controls: Hermitian real-intersection, off-locus negative (1,i,0),
      pairing-without-reality witness (i,1+i,i), neither-horn-forced witness
      (3,1,1), section-tie endpoint arithmetic (both conditional laws)
@@ -67,6 +72,10 @@ STAG = (
 )
 OBLIG = "docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md"
 AXIOMS = "docs/MINIMAL_AXIOMS_2026-06-29.md"
+PFAFF = (
+    "docs/ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_"
+    "NARROW_THEOREM_NOTE_2026-07-12.md"
+)
 
 PASS = 0
 FAIL = 0
@@ -358,7 +367,8 @@ check("B2.6", "direct symbolic 12-generator joint integral = det3^2 on the "
       is_zero(val12_sym - det3(ar, br, cr) ** 2))
 
 check("B2.7", "r-neutral doubling: exponent pairs (1,1)->(2,2) together; "
-      "ratio twice/once = det3, not constant",
+      "count_twice = count_once * det3 identically (multiplier det3, not a "
+      "constant; quotient reading valid only on det3 != 0)",
       is_zero(l0r ** 2 * (l1r * conjugate(l1r)) ** 2
               - (l0r * l1r * conjugate(l1r)) ** 2)
       and is_zero(count_twice_sym - count_once * det3(ar, br, cr)))
@@ -369,7 +379,36 @@ check("B3.1", "generator-count bookkeeping: horn m uses 6m generators, read "
       len(th3 + tb3) == 6 and len(order12) == 12
       and len(order12) == 2 * len(th3 + tb3))
 
-# --------------------------------------------- B4: linear measure collapse
+# ---------------- B4: constant-substitution measure collapse + scope boundary
+
+
+def gsubs_linear(F, images):
+    """Substitute generator i -> images[i] (an engine element) into F.
+
+    F's monomials are canonical ascending products; replacing each factor
+    by its image and multiplying in order is the algebra-map substitution.
+    """
+    out = {}
+    for s, coeff in F.items():
+        term = {frozenset(): sp.sympify(coeff)}
+        for g in sorted(s):
+            term = gmul(term, images[g])
+        out = gadd(out, term)
+    return out
+
+
+def images_from_matrix(S, n):
+    """Row i of S gives the image of generator i: g_i -> sum_j S[i,j] g_j."""
+    ims = []
+    for i in range(n):
+        im = {}
+        for j in range(n):
+            if S[i, j] != 0:
+                im[frozenset((j,))] = sp.sympify(S[i, j])
+        ims.append(im)
+    return ims
+
+
 d1, d2, c1, c2 = sp.symbols("d1 d2 c1 c2")
 Dm = Matrix([[d1, 0], [0, d2]])
 Cm = Matrix([[c1, 0], [0, c2]])
@@ -382,8 +421,9 @@ b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
 Am = Matrix([[a11, a12], [a21, a22]])
 Bm = Matrix([[b11, b12], [b21, b22]])
 val_gl = holo_integral(Bm.T * M2 * Am, th2, tb2)
-check("B4.2", "general linear redefinition: integral = det(B) det(A) det(M) "
-      "(n=2 symbolic scalar action)",
+check("B4.2", "constant block-preserving kernel substitution M -> B^T M A at "
+      "held measure: integral = det(B) det(A) det(M) (n=2 symbolic scalar "
+      "action; diagonal B4.1 is an instance)",
       is_zero(val_gl - Bm.det() * Am.det() * M2.det()))
 
 k1 = det3(1, 0, 0) ** 2 / det3(1, 0, 0)
@@ -397,10 +437,60 @@ rho = u ** 3
 val_twice_scaled = val_once_scaled * holo_integral(
     (conjugate(u) * eye(3)) * partner_real, th3, tb3)
 check("B4.4", "uniform rescale: once -> rho*once with rho = u^3, "
-      "twice -> |rho|^2*twice (horns split, neither converted)",
+      "twice -> |rho|^2*twice (horns split, neither converted; "
+      "instance of B4.2)",
       is_zero(val_once_scaled - rho * det3(ar, br, cr))
       and is_zero(val_twice_scaled
                   - rho * conjugate(rho) * det3(ar, br, cr) ** 2))
+
+val_conv = holo_integral(Wr * Wr, th3, tb3)
+F6 = gexp_product(minus_action_terms(Wr, th3, tb3))
+ims_conv = [gen(i) for i in range(6)]
+for jpos, j in enumerate(th3):
+    ims_conv[j] = {frozenset((th3[jp],)): sp.sympify(Wr[jpos, jp])
+                   for jp in range(3) if Wr[jpos, jp] != 0}
+order6 = [0, 1, 2, 3, 4, 5]
+val_conv_sub = berezin(gsubs_linear(F6, ims_conv), order6)
+check("B4.5", "coupling-dependent conversion witness A(W) = W, B = I at held "
+      "measure: kernel route det(W*W) = det3^2 = count-twice on the real "
+      "locus; generator-substitution route theta -> W theta agrees",
+      is_zero(val_conv - det3(ar, br, cr) ** 2)
+      and is_zero(val_conv - count_twice_sym)
+      and is_zero(val_conv_sub - val_conv))
+
+F4 = gexp_product(minus_action_terms(M2, th2, tb2))
+order4 = [0, 1, 2, 3]
+S4 = Matrix([[1, 1, 0, 0],
+             [0, 1, 0, 0],
+             [0, 0, 3, 0],
+             [0, 1, 1, 1]])
+val_mix = berezin(gsubs_linear(F4, images_from_matrix(S4, 4)), order4)
+base4 = berezin(F4, order4)
+ims_blk = [gen(i) for i in range(4)]
+for jpos, j in enumerate(th2):
+    ims_blk[j] = {frozenset((th2[jp],)): sp.sympify(Am[jpos, jp])
+                  for jp in range(2)}
+for ipos, i in enumerate(tb2):
+    ims_blk[i] = {frozenset((tb2[ip],)): sp.sympify(Bm[ipos, ip])
+                  for ip in range(2)}
+val_blk_sub = berezin(gsubs_linear(F4, ims_blk), order4)
+check("B4.6", "constant odd-mixing substitution (fixed integer S mixing "
+      "barred/unbarred, det S = 3) acts by det(S) at held measure; "
+      "block-form substitution reproduces the B4.2 kernel value",
+      S4.det() == 3
+      and is_zero(val_mix - S4.det() * base4)
+      and is_zero(base4 - M2.det())
+      and is_zero(val_blk_sub - val_gl))
+
+ims_cross = [gen(i) for i in range(12)]
+ims_cross[0] = gen(6)
+ims_cross[6] = gen(0)
+ims_cross[1] = gen(1, 2)
+val_cross = berezin(gsubs_linear(F12, ims_cross), order12)
+check("B4.7", "constant cross-copy mixing on the 12-generator joint "
+      "(swap generators 0 and 6 across copies, scale generator 1 by 2; "
+      "det S = -2) acts by det(S) at held measure",
+      is_zero(val_cross - (-2) * val12))
 
 # ----------------------------------------------------------- B5: controls
 l0h = lam(0, ar, br, br)
@@ -456,6 +546,7 @@ BLOCK05_FLAT = flattened(BLOCK05)
 SECTIE_FLAT = flattened(SECTIE)
 OBLIG_FLAT = flattened(OBLIG)
 AXIOMS_FLAT = flattened(AXIOMS)
+PFAFF_FLAT = flattened(PFAFF)
 
 B6_N = 0
 
@@ -525,6 +616,23 @@ gate(
     "the physical action imposes K-reality.",
     src_flat=SECTIE_FLAT,
 )
+gate(
+    "realification passive coordinate-change setup",
+    "For an invertible coordinate change `Psi=M Xi`, the kernel becomes "
+    "`M^T A_K M`. Pfaffians and Berezin measures transform as",
+    src_flat=PFAFF_FLAT,
+)
+gate(
+    "realification Pfaffian and measure transform factors",
+    "Pf(M^T A_K M) = det(M) Pf(A_K), D(Psi) = det(M)^(-1) D(Xi)",
+    src_flat=PFAFF_FLAT,
+)
+gate(
+    "realification passive-invariance conclusion",
+    "for the paired orientation convention. The factors cancel in the "
+    "Gaussian.",
+    src_flat=PFAFF_FLAT,
+)
 
 # ------------------------------------- B7: ledger shard filename gates
 ROWS = [
@@ -534,6 +642,7 @@ ROWS = [
     "koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12",
     "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
     "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12",
+    "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04",
     "ac_orbit_occupancy_statistical_grain_derivation_obligation",
 ]
 for i, rid in enumerate(ROWS, 1):
@@ -552,7 +661,7 @@ SECTIONS = [
     "### Berezin realization exactness under the pinned convention (T1, exact)",
     "### Sector-selective realization on entrywise-real triples (T2, bounded)",
     "### The count binary as a generator-count binary (T3, declared reading)",
-    "### Linear measure collapse on the finite probe surface (T4, bounded negative)",
+    "### Constant-substitution measure collapse on the finite probe surface (T4, bounded negative)",
     "## Gated controls",
     "## Negative controls",
     "## No-Go Discipline Gate",
@@ -625,6 +734,7 @@ DEPS = [
     "KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md",
     "KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md",
     "KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+    "ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md",
 ]
 for dep in DEPS:
     B8_N += 1
@@ -633,8 +743,8 @@ for dep in DEPS:
 CONTEXT_HANDLES = [
     "AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md",
     "ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md",
-    "ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md",
     "KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md",
+    "KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md",
 ]
 for handle in CONTEXT_HANDLES:
     B8_N += 1
@@ -649,7 +759,7 @@ check(
     f"B8.{B8_N}",
     "every cited or handled doc path exists",
     all((ROOT / p).is_file() for p in [NOTE, RUNNER, BLOCK05, SECTIE, STAG,
-                                       OBLIG, AXIOMS])
+                                       OBLIG, AXIOMS, PFAFF])
     and all((ROOT / "docs" / h).is_file() for h in CONTEXT_HANDLES)
     and all((ROOT / "docs" / d).is_file() for d in DEPS),
 )
@@ -663,9 +773,13 @@ print(
     "source-side premise weight (row status pipeline-derived); R3b probe, "
     "not derived form; R4b declared Berezin probe surface, not the physical "
     "action or measure; R5b declared count-binary reading, not an "
-    "equivalence; T4 scoped to linear generator redefinitions; B5 endpoint "
-    "arithmetic conditional on supplied granularity laws; r remains a dial "
-    "(0, 1/2, 1); no graining horn selected"
+    "equivalence; T4 scoped to constant coupling-independent linear "
+    "substitutions at held integration order and normalization "
+    "(coupling-dependent substitutions convert the horns and sit outside "
+    "the claim; passive coordinate changes invariant by the quoted "
+    "realification law); B5 endpoint arithmetic conditional on supplied "
+    "granularity laws; r remains a dial (0, 1/2, 1); no graining horn "
+    "selected"
 )
 if FAILURES:
     print("FAILED CHECKS: " + ", ".join(FAILURES))

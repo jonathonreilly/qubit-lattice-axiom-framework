@@ -18,13 +18,13 @@ exist inside the single-site one-qubit operator algebra.
 
 [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) supplies
 Axiom 1: a qubit at every lattice site, equivalently the primitive local
-operator algebra `A_x ≅ M_2(C)`. The retained
+operator algebra `A_x ≅ M_2(C)`. The
 [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
-supplies the algebraic uniqueness of the Pauli irreducible representation
-of the complexified Cl(3) relations. The proof below is only a single-site
-matrix no-go; it does not derive a temporal direction, a spacetime Clifford
-algebra, Standard Model left/right assignments, or a physical chirality
-mechanism.
+supplies the two simple-module classes of the complexification and the
+fixed-sign uniqueness of the selected Pauli quotient. The proof below is only
+a single-site matrix no-go; it does not derive a temporal direction, a
+spacetime Clifford algebra, Standard Model left/right assignments, or a
+physical chirality mechanism.
 
 ## Admitted-Context Inputs
 
@@ -124,7 +124,7 @@ one-qubit operator algebra — establishing (N4). ∎
 - `minimal_axioms_2026-05-20`: Axiom 1 supplies the one-qubit operator
   algebra `A_x ≅ M_2(C)`.
 - `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`:
-  retained Pauli irrep uniqueness for the complexified Cl(3) relations.
+  two-class complexified classification and fixed-sign Pauli uniqueness.
 - Standard Clifford volume-element identity (mathematical, admitted-context).
 - Pauli matrices span M_2(C) (mathematical, admitted-context).
 
@@ -164,7 +164,7 @@ exhausting the Pauli basis decomposition.
   `M ∈ M_2(C)` anticommutes with all three Pauli generators. The larger
   routes are scoped alternatives, not additional walls.
 - **N3 hidden-wall scan:** the note uses only Axiom 1 local algebra,
-  retained Pauli-irrep uniqueness, and finite-dimensional Pauli arithmetic;
+  fixed-sign Pauli-irrep uniqueness, and finite-dimensional Pauli arithmetic;
   temporal, gauge, and multi-site mechanisms are explicitly outside scope.
 - **N4 residual matching:** the residual attacked is exactly "single-site
   γ_5 inside `M_2(C)`"; no claim is made against larger spacetime Clifford

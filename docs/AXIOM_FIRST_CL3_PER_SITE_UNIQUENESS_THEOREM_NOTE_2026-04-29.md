@@ -174,15 +174,17 @@ representation of Cl(3) on a 2-dim complex vector space.
 representation `ρ : Cl(3) → End(V)` on a finite-dim complex vector
 space `V` satisfies `dim_C V = 2`, and the central pseudoscalar
 `ω = γ_1 γ_2 γ_3` acts as a scalar `ω(ρ) = ε i` on `V` with
-`ε ∈ {+1, -1}` fixed by `ρ`. Up to unitary equivalence there are
+`ε ∈ {+1, -1}` fixed by `ρ`. Up to complex-linear equivalence there are
 exactly two such irreps:
 
 - the positive-chirality irrep `ρ_+(γ_i) = σ_i` (so `ω → +i`);
 - the negative-chirality irrep `ρ_-(γ_i) = -σ_i` (so `ω → -i`).
 
-Within each chirality summand, there is a unitary `U ∈ U(2)` such
-that `U^{-1} ρ(γ_i) U = ε σ_i` for all `i`. The two chiralities are
-**not** unitarily equivalent (they have different `ω`-eigenvalues).
+Within each chirality summand, there is an invertible complex intertwiner
+`T` such that `T^{-1} ρ(γ_i) T = ε σ_i` for all `i`. If the generator
+images are Hermitian for compatible inner products, `T` can be normalized
+to a unitary intertwiner. The two chiralities are **not** even
+complex-linearly equivalent (they have different `ω`-eigenvalues).
 The canonical convention adopted in the package is the
 positive-chirality summand `ρ_+`.
 
@@ -299,11 +301,10 @@ Any faithful irreducible complex representation of `Cl(3)` factors
 through one and only one of the two summands (since the central
 pseudoscalar `ω` acts as a scalar on any irrep by Schur, and that
 scalar is `+i` or `-i`). Within the chosen chirality summand,
-uniqueness up to unitary equivalence follows from Schur as before:
-choose any intertwiner `U : V_1 → V_2` between two faithful irreps
-of the same chirality, and adjust `U` to intertwine the Hermitian
-inner products (which exist uniquely up to positive scalar by the
-Hermiticity of `γ_i`).
+uniqueness up to complex-linear equivalence follows from the explicit
+matrix-unit classification in the cited narrow theorem. Under the additional
+Hermitian-generator hypothesis, an intertwiner `T` has `T^dagger T` in the
+scalar commutant and normalizes to a unitary intertwiner.
 
 ### Step 5 — decomposition (U3)
 
@@ -410,12 +411,12 @@ of the staggered-Dirac realization gate.
 ## Load-bearing Dependencies
 
 The U1–U3 physical-Cl(3)-only content of this note is supported by
-**two retained / retained_bounded narrow theorems** that
+**two narrow algebra theorems** that
 collectively establish the qubit/`M_2(ℂ)` identification underlying
 A1 of the 2026-05-20 qubit-reframe axiom set:
 
 - [CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained`, positive_theorem) — establishes `Cl(3,0) ⊗_ℝ ℂ ≅ M_2(ℂ) ⊕ M_2(ℂ)` (§(K3); Step 3 of this note's U1–U3 derivation) and the two-dim irrep dimensional readout (§(K4); load-bearing for U2: every faithful complex irreducible representation of `Cl(3,0)` has `dim_ℂ V = 2`).
-- [CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained_bounded`, bounded_theorem) — establishes Pauli-irrep uniqueness (load-bearing for U2's canonical convention `γ_i = σ_i`).
+- [CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) — establishes the two complex irrep classes of the real algebra, their faithful real restrictions, and uniqueness within each sign (load-bearing for U2's canonical convention `γ_i = σ_i`).
 
 The decoration sibling `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
 records the same dim-two readout content separately but is not itself

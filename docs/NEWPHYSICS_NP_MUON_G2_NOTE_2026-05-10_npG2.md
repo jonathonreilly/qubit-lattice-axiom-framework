@@ -6,7 +6,7 @@
 **Scope.** New-physics probe `npG2`. Tests whether retained `Cl(3)/Z^3`
 content + retained `α_EM` admits a derivation of the muon anomalous
 magnetic moment `a_μ = (g_μ − 2) / 2`. **Verdict.** The framework's
-retained Pauli/Cl(3) irrep + retained `α_EM(M_Z)` is structurally
+cited Pauli/Cl(3) irrep + retained `α_EM(M_Z)` is structurally
 compatible with the standard Schwinger one-loop universal result
 `a_l = α/(2π)`, but the **Schwinger 1-loop integral itself is admitted
 from standard QED**, not derived on the Cl(3)/Z^3 surface. The
@@ -66,8 +66,9 @@ the 3–5σ tension a long-standing target of new-physics interpretations.
 
 Concretely:
 
-1. **(P1, Pauli structural anchor.)** The retained `Cl(3)` algebra
-   contains the Pauli matrices `σ_i` as a 2-dim faithful irrep (per
+1. **(P1, Pauli structural anchor.)** The real `Cl(3)` algebra has two
+   faithful 2-dim complex irrep classes; the selected class uses the Pauli
+   matrices `σ_i` (per
    `CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10`). The
    anomalous-moment vertex factor `σ^{μν} F_{μν}` in the Schwinger
    amplitude is constructed from products of these generators. So the
@@ -148,7 +149,7 @@ Concretely:
 |---|---|---|
 | BASE-CL3 | Physical `Cl(3)` local algebra | repo baseline; see `MINIMAL_AXIOMS_2026-05-03.md` |
 | BASE-Z3 | `Z^3` spatial substrate | repo baseline; same source |
-| Cl3-Pauli | `Cl(3,0)` has a unique faithful 2-dim Pauli irrep (`σ_1, σ_2, σ_3`) up to chirality | narrow theorem: `CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md` |
+| Cl3-Pauli | `Cl(3,0)` has exactly two faithful 2-dim complex irrep classes, distinguished by chirality; the positive class uses (`σ_1, σ_2, σ_3`) | narrow theorem: `CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md` |
 | Alpha-MZ | retained `α_EM(M_Z) ≈ 1/127.67` | retained chain: `COMPLETE_PREDICTION_CHAIN_2026_04_15.md` |
 | Lep-Bounded | charged-lepton masses bounded observational pin | bounded package: `CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md` |
 | QEDRun-Open | `α_EM(M_Z) → α(0)` running has three open sub-residuals R-Lep, R-Q-Heavy, R-Had-NP | open firewall: `ATOMIC_LANE2_QED_RUNNING_DEPENDENCY_FIREWALL_NOTE_2026-04-30.md` |
@@ -180,8 +181,8 @@ magnetic moment of any charged lepton is
 a_l^(1)  =  α / (2π).                                                   (NPG2.1)
 ```
 
-(Schwinger 1948 universal one-loop result.) The Pauli/Cl(3) vertex
-algebra underlying the calculation is retained content (Cl3-Pauli). The
+(Schwinger 1948 universal one-loop result.) The selected Pauli/Cl(3) vertex
+algebra underlying the calculation is cited content (Cl3-Pauli). The
 numerical comparator at the retained `α_EM(M_Z) ≈ 1/127.67` is
 
 ```text
@@ -220,10 +221,10 @@ named open lane on the current retained surface.**
 ### (P1) Pauli structural anchor
 
 By `CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10`, the
-real Clifford algebra `Cl(3,0)` has a unique faithful complex
-irreducible representation of complex dimension 2, given by
-`γ_i ↦ σ_i` with `σ_i` the Pauli matrices (up to a sign / chirality
-choice). The QED vertex correction kernel contains
+real Clifford algebra `Cl(3,0)` has exactly two faithful complex
+irreducible representation classes of complex dimension 2. They are
+distinguished by `ω ↦ ±i`; the selected positive class is given by
+`γ_i ↦ σ_i`. The QED vertex correction kernel contains
 `σ^{μν} = (i/2) [γ^μ, γ^ν]` (4-d Dirac structure) and the relevant
 non-relativistic projection to the Pauli structure
 `σ^{ij} → ε^{ijk} σ_k` lives in this 2-dim irrep. So the
@@ -360,7 +361,7 @@ predicted. ∎
 
 The retained `Cl(3)/Z^3` surface is **structurally compatible** with
 the Schwinger one-loop universal anomalous moment `a_l = α/(2π)`
-through the retained Pauli irrep (vertex algebra) and retained
+through the selected Pauli irrep (vertex algebra) and retained
 `α_EM(M_Z)` (coupling), but the **Schwinger 1-loop integral itself is
 admitted** from standard QED and not framework-derived. Every other
 SM contribution to `a_μ` (2-loop QED, ≥3-loop QED, HVP, HLbL, EW) is
@@ -376,7 +377,7 @@ those admissions is closed by this note.
 
 ## What this supports
 
-- **Pauli structural anchor.** The retained Cl(3) Pauli irrep is
+- **Pauli structural anchor.** The selected Cl(3) Pauli irrep is
   identified as the algebraic content underlying the QED vertex
   factor `σ^{μν}` in the Schwinger amplitude. (Narrow structural
   observation, not a derivation of `a_l`.)
@@ -438,7 +439,7 @@ prediction for `a_μ` is on the retained surface today**.
 
 This note proposes `claim_type: bounded_theorem` for the independent
 audit lane: bounded structural compatibility with the 1-loop universal
-`α/(2π)` piece via retained Pauli/Cl(3) + retained `α_EM(M_Z)`, with
+`α/(2π)` piece via the cited Pauli/Cl(3) classification + retained `α_EM(M_Z)`, with
 a complete enumeration of the named open admissions blocking a full
 `a_μ` prediction. The proposal does NOT promote any retained content
 and does NOT close any of the named open lanes.
@@ -495,7 +496,7 @@ python3 scripts/cl3_newphysics_np_muon_g2_2026_05_10_npG2.py
 ```
 
 Expected output: structural verification of
-(i) retained Cl(3) Pauli irrep + Pauli-algebra closure of `σ^{ij} =
+(i) selected Cl(3) Pauli irrep + Pauli-algebra closure of `σ^{ij} =
 i ε^{ijk} σ_k`,
 (ii) Schwinger 1-loop arithmetic `a_l = α/(2π)` at retained `α_EM(M_Z)`
 and at standard `α(0)` comparator, showing the `~99.6%` recovery of

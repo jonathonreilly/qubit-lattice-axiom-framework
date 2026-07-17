@@ -361,7 +361,7 @@ Load-bearing markdown-link dependencies:
   load-bear on the Cl(3) algebra itself; this citation is for the
   framing of "real structure" and "isotype" vocabulary.
 - [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
-  (retained_bounded per ledger as of 2026-05-17) — context citation for
+  — context citation for
   the Pauli irrep representation theory used in NCG real-structure
   framing.
 
@@ -465,7 +465,7 @@ in the PR body as required.
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
   — retained Cl(3) representation theory.
 - [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — retained_bounded Pauli irrep uniqueness.
+  — two-class Pauli irrep classification for the real algebra.
 - [`KOIDE_U_BAE_NCG_SPECTRAL_TRIPLE_NOTE_2026-05-08_probeU_bae_ncg.md`](KOIDE_U_BAE_NCG_SPECTRAL_TRIPLE_NOTE_2026-05-08_probeU_bae_ncg.md)
   — prior Probe U NCG-spectral-action route.
 - [`KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md`](KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md)

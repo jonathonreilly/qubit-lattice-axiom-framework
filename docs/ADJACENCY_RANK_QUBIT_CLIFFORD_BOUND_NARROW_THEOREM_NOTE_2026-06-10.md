@@ -58,7 +58,7 @@ sigma_2)/sqrt(2)` — itself a self-adjoint unitary — grows cross terms
 
 **(T3) The bound.** Hence on the one-qubit-per-site lattice, a Dirac-square
 NN carrier exists iff `d <= 3`. `Z^3` is the **saturating** case, and the
-saturating family is the Pauli frame up to the retained uniqueness
+saturating family is the Pauli frame up to the fixed-sign uniqueness
 ([`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)).
 
 **(T4) Realization tie.** The `d = 3` matrix carrier is unitarily equivalent,

@@ -4,7 +4,7 @@
 **Type:** bounded_theorem (sharpened obstruction; no positive closure)
 **Claim type:** bounded_theorem
 **Claim scope:** the standalone algebraic implication that, given the
-retained Cl(3) Pauli irrep structure on the dim-2 spinor space and the
+cited Cl(3) Pauli irrep structure on the dim-2 spinor space and the
 retained block-total Frobenius algebraic identities on `Herm_circ(3)`,
 the Cl(3) bivector grading on `Lambda^2 V_3 ≅ R^3` does **not** force
 the F1 multiplicity-weighted log-functional `log E_+ + log E_perp` over
@@ -58,7 +58,7 @@ canonicality without supplying a closure mechanism, leaving the
 {F1, F3} 2-candidate ambiguity as the campaign's terminal residue.
 
 **Question:** Does the Cl(3) bivector grading on the dim-2 spinor
-irrep (retained:
+irrep (classification:
 [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md))
 supply a closure mechanism for F1 over F3 by collapsing the doublet
 basis pair `(B_1, B_2)` on `Herm_circ(3)` to a single bivector mode
@@ -91,7 +91,7 @@ B_1 B_2 = B_2 B_1 = -B_2.                                                (Comm4)
 Verified by the runner Part 3, exact sympy.
 
 By contrast, the Cl(3) bivector basis on the dim-2 spinor irrep, given
-in Pauli realization (retained:
+in Pauli realization (classification:
 [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
 Conclusion U1) by `e_i = sigma_i` for `i in {1, 2, 3}`, has bivectors
 
@@ -112,7 +112,7 @@ Verified by the runner Part 1, exact sympy.
 Pairwise commuting `(B_1, B_2)` cannot map to a pairwise anticommuting
 Cl(3) bivector pair under any algebra homomorphism into Cl(3)
 realized on `M_2(C)`. Hence `(B_1, B_2)` is **not** a Cl(3) 2-blade
-in any retained Pauli realization. The proposed identification
+in either Pauli realization. The proposed identification
 `B_1 ↔ e_1 e_2 + e_2 e_3`, `B_2 ↔ e_1 e_3` (or any linear variant)
 is forbidden by the algebraic structure.
 
@@ -178,7 +178,7 @@ proposed.
 |---|---|---|
 | physical Cl(3) local algebra | `Cl(3)` local algebra | repo baseline; see `MINIMAL_AXIOMS_2026-05-03.md` |
 | Z^3 spatial substrate | `Z^3` spatial substrate | repo baseline; same source |
-| Cl3Pauli | Cl(3) Pauli irrep `e_i = sigma_i` on dim-2 spinor space `C^2` | retained_bounded; see [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) |
+| Cl3Pauli | Selected Cl(3) Pauli irrep `e_i = sigma_i` on dim-2 spinor space `C^2` | one of two faithful real-algebra classes; see [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) |
 | Cl3Dim2 | `dim_C V = 2` for any faithful irrep of Cl(3) | retained; see [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md) |
 | Cl3Split | `Cl(3) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` | retained; see [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) |
 | KKappa | `E_+ = 3 a^2`, `E_perp = 6 |b|^2`, F1 extremum at `kappa = 2 = BAE` | retained; see [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md) |
@@ -201,7 +201,7 @@ proposed.
 ## Statement
 
 Let `sigma_1, sigma_2, sigma_3` denote the Pauli matrices on `C^2`
-(retained: Cl3Pauli), so the Cl(3) bivector basis on the dim-2
+(selected Cl3Pauli), so the Cl(3) bivector basis on the dim-2
 spinor irrep is
 
 ```text
@@ -333,7 +333,7 @@ the same U(1) ambiguity as Probes 13, 16. ∎
 ## Theorem (Probe AV8 sharpened bounded obstruction)
 
 **Theorem.** On the physical Cl(3) local algebra plus Z^3 spatial
-substrate baseline + retained Cl(3) Pauli irrep + retained Cl(3)
+substrate baseline + cited Cl(3) Pauli irrep + retained Cl(3)
 faithful-irrep-dim-2 + retained complexification split + retained
 block-total Frobenius algebraic + retained BAE duality + Probes 12,
 13, 16, 18 (campaign-context, source-note proposals):
@@ -410,7 +410,7 @@ promotion. The V1-V5 gate is recorded here for transparency.
 
 | # | Question | Answer |
 |---|---|---|
-| V1 | What SPECIFIC verdict-identified obstruction does this PR close? | The F1-vs-F3 weighting selection on `Herm_circ(3)`, recorded as the campaign-residue Open derivation gap by [`BAE_BLOCK_TOTAL_FROBENIUS_DERIVATION_NARROW_THEOREM_NOTE_2026-05-16.md`](../BAE_BLOCK_TOTAL_FROBENIUS_DERIVATION_NARROW_THEOREM_NOTE_2026-05-16.md): "The F1 hypothesis itself is the unclosed atom: the retained authorities prove the algebraic equivalence but do not select F1 over the rank-weighted alternative F3." This probe does **not** close that gap; it closes one attack vector (AV8) against closing it. |
+| V1 | What SPECIFIC verdict-identified obstruction does this PR close? | The F1-vs-F3 weighting selection on `Herm_circ(3)`, recorded as the campaign-residue Open derivation gap by [`BAE_BLOCK_TOTAL_FROBENIUS_DERIVATION_NARROW_THEOREM_NOTE_2026-05-16.md`](BAE_BLOCK_TOTAL_FROBENIUS_DERIVATION_NARROW_THEOREM_NOTE_2026-05-16.md): "The F1 hypothesis itself is the unclosed atom: the retained authorities prove the algebraic equivalence but do not select F1 over the rank-weighted alternative F3." This probe does **not** close that gap; it closes one attack vector (AV8) against closing it. |
 | V2 | What NEW derivation does this PR contain that the audit lane doesn't already have? | The runner provides exact-sympy verification of (i) the commutativity `[B_1, B_2] = 0` and quadratic identities (Comm1)-(Comm4) for the `Herm_circ(3)` doublet basis, (ii) the pairwise anticommutation `{e_i e_j, e_j e_k} = 0` of Cl(3) bivectors in the Pauli realization, (iii) the Z_3 eigenvalue structure of `Lambda^2 V_3`, and (iv) the measure-counting argument that Lebesgue on the doublet 2-plane gives F3-like weighting. None of these specific computations appears in any prior probe or retained authority. |
 | V3 | Could the audit lane already complete this derivation from existing retained primitives + standard math machinery? | Items (i)-(ii) are mechanical computation, but the connecting structural argument — that algebraic commutativity of `(B_1, B_2)` together with anticommutativity of Cl(3) bivectors forbids the proposed identification — has not appeared in any retained authority. The audit lane could reproduce (i)-(iv) given the prompt to do so, but the specific composition that closes AV8 was open prior to this cycle. |
 | V4 | Is the marginal content non-trivial (not a textbook identity, not a definition restated)? | Yes. The non-trivial content is the explicit demonstration that the C_3-doublet basis on `Herm_circ(3)` and the Cl(3) bivector pair on `M_2(C)` belong to algebraically incompatible structures (commutative vs anticommutative), combined with the observation that the only rep-theory-level embedding sends the doublet to a 2-plane whose natural measure is F3-like. This composition rules out the Cl(3) bivector route as a closure mechanism. |
@@ -461,7 +461,7 @@ Re-read the proof. Phrases checked:
   used in KKappa block-total Frobenius work.
 - "standard" — appears in algebraic computation contexts (standard
   Clifford-algebra relations); these are cited to
-  CL3_PAULI_IRREP_UNIQUENESS retained authority.
+  the cited CL3_PAULI_IRREP_UNIQUENESS theorem.
 
 No hidden admissions promoted.
 
@@ -497,7 +497,7 @@ No over-broad phrasing.
 
 Could the F1 vs F3 selection be closed via convention/reframe rather
 than new physics? The Cl(3) bivector route specifically explored
-whether the existing retained Cl(3) Pauli irrep authority supplies
+whether the existing Cl(3) Pauli irrep theorem supplies
 the missing convention. It does not: the bivector grading is
 intrinsic to Cl(3), not to `Herm_circ(3)`, and the only rep-theory-
 level embedding gives a 2-plane whose natural measure is F3-like.
@@ -562,7 +562,7 @@ measure-level F3 return). The F1-vs-F3 residue itself remains open.
 This probe was given the F1-vs-F3 framing identified by Probes 16-18
 as the campaign's terminal residue at the Q-functional level. The
 hypothesis (pre-closure probability ~14%) was that the Cl(3) bivector
-grading on the dim-2 spinor irrep, retained as
+grading on the dim-2 spinor irrep, classified in
 [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md),
 might collapse the doublet `(B_1, B_2)` to a single bivector mode,
 giving F1 isotype counting.
@@ -641,15 +641,16 @@ verifies symbolically (PASS=40 / FAIL=0):
    UNCHANGED.
 9. Part 8 — Review hygiene: note declares audit-lane-only status,
    bounded_theorem type, no positive closure claimed, no new admission,
-   citations to retained Cl(3) Pauli irrep authority and koide_kappa
+   citations to the Cl(3) Pauli irrep theorem and koide_kappa
    Frobenius algebraic narrow, citation to Probe 18.
 
 ## Cross-references
 
-### Cl(3) retained dependencies
+### Cl(3) dependencies
 
 - [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — retained_bounded: Cl(3) Pauli irrep on dim-2 spinor space, U1-U3.
+  — two faithful real-algebra classes; this probe uses the positive Pauli
+  class on a dim-2 spinor space.
 - [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
   — retained: `dim_C V = 2` for faithful irrep.
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)

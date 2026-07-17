@@ -358,8 +358,8 @@ are the retained per-site `Cl(3,0)` primitives:
   — retained per-site `Cl(3,0)` operator-algebra primitive on which the
   cubic double cover acts.
 - [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — retained uniqueness of the Pauli irrep of `Cl(3,0)` on `C²`, the
-  concrete `C²` carrier of the spin-½ representation of `2O`.
+  — the two Pauli sign classes of the real `Cl(3,0)` algebra and the selected
+  `C²` module used here for the spin-½ representation of `2O`.
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
   — retained `Cl(3,0) ⊗_ℝ C ≅ M₂(C) ⊕ M₂(C)` split, fixing the complex
   `2 × 2` matrix structure underlying the defining `SU(2)` realization.

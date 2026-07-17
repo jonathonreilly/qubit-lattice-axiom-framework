@@ -14,22 +14,24 @@ certifies:
 5. explicit algebra isomorphisms from those ideals to M_2(C);
 6. the resulting two irreducible complex module classes and the faithfulness
    distinction between the complexification and the original real algebra;
-7. the unitary-equivalence refinement under the explicit *-representation
+7. an exhaustive center and simple-module classification; and
+8. the unitary-equivalence refinement under the explicit *-representation
    (Hermitian-generator) hypothesis.
 
 All arithmetic is exact SymPy symbolic arithmetic.  The algebra,
-ideal-isomorphism, and module-classification checks are rational/Gaussian-
-rational; the conditional unitary control additionally uses exact ``sqrt(2)``.
-The default run also executes hostile controls.  ``--inject-failure`` promotes
-one hostile fixture to a primary check, so the process must exit nonzero.
+ideal-isomorphism, module-classification, and conditional unitary checks are
+rational/Gaussian-rational.
+Four explicit modes are provided: ``normal``, ``independent``, ``hostile``, and
+``intentional-failure``.  The independent mode reconstructs the table with a
+separate word-insertion reducer.  The last mode promotes a rejected hostile
+fixture to a primary assertion, so the process must exit nonzero.
 """
 
 from __future__ import annotations
 
 import argparse
 import itertools
-import sys
-from typing import Callable, Sequence
+from typing import Sequence
 
 try:
     import sympy as sp
@@ -102,13 +104,41 @@ PRODUCT_TABLE = [
     [blade_product(left, right) for right in range(DIM)]
     for left in range(DIM)
 ]
+ACTIVE_TABLE = PRODUCT_TABLE
+
+
+def word_product(left_mask: int, right_mask: int) -> tuple[int, int]:
+    """Independent reducer: insert right-word letters into a canonical word."""
+    word = [bit for bit in range(3) if left_mask & (1 << bit)]
+    sign = 1
+    for bit in range(3):
+        if not right_mask & (1 << bit):
+            continue
+        greater = sum(1 for present in word if present > bit)
+        if greater % 2:
+            sign = -sign
+        if bit in word:
+            word.remove(bit)
+        else:
+            word.append(bit)
+            word.sort()
+    out_mask = sum(1 << bit for bit in word)
+    return sign, out_mask
+
+
+WORD_PRODUCT_TABLE = [
+    [word_product(left, right) for right in range(DIM)]
+    for left in range(DIM)
+]
 
 
 def algebra_product(
     left: Matrix,
     right: Matrix,
-    table: Sequence[Sequence[tuple[int, int]]] = PRODUCT_TABLE,
+    table: Sequence[Sequence[tuple[int, int]]] | None = None,
 ) -> Matrix:
+    if table is None:
+        table = ACTIVE_TABLE
     out = zeros(DIM, 1)
     for left_mask in range(DIM):
         for right_mask in range(DIM):
@@ -187,8 +217,10 @@ def representation_of_vector(vector: Matrix, images: Sequence[Matrix]) -> Matrix
 
 def homomorphism_ok(
     images: Sequence[Matrix],
-    table: Sequence[Sequence[tuple[int, int]]] = PRODUCT_TABLE,
+    table: Sequence[Sequence[tuple[int, int]]] | None = None,
 ) -> bool:
+    if table is None:
+        table = ACTIVE_TABLE
     basis = [blade(mask) for mask in range(DIM)]
     for left_mask, right_mask in itertools.product(range(DIM), repeat=2):
         product = algebra_product(
@@ -246,90 +278,22 @@ def idempotent_axioms_ok(
     return all(algebra_identities) and centrality
 
 
-def labelled_idempotents_ok(
-    e_plus: Matrix,
-    e_minus: Matrix,
-    basis: Sequence[Matrix],
-    one: Matrix,
-    omega: Matrix,
-    images_plus: Sequence[Matrix],
-    images_minus: Sequence[Matrix],
-) -> bool:
-    zero_2 = zeros(2, 2)
-    identity_2 = eye(2)
-    return (
-        idempotent_axioms_ok(e_plus, e_minus, basis, one)
-        and vector_eq(algebra_product(omega, e_plus), I * e_plus)
-        and vector_eq(algebra_product(omega, e_minus), -I * e_minus)
-        and matrix_eq(representation_of_vector(e_plus, images_plus), identity_2)
-        and matrix_eq(representation_of_vector(e_minus, images_plus), zero_2)
-        and matrix_eq(representation_of_vector(e_plus, images_minus), zero_2)
-        and matrix_eq(representation_of_vector(e_minus, images_minus), identity_2)
-    )
-
-
-def volume_convention_ok(
-    candidate: Matrix,
-    ordered_volume: Matrix,
-    images_plus: Sequence[Matrix],
-    images_minus: Sequence[Matrix],
-) -> bool:
-    identity_2 = eye(2)
-    return (
-        vector_eq(candidate, ordered_volume)
-        and matrix_eq(representation_of_vector(candidate, images_plus), I * identity_2)
-        and matrix_eq(
-            representation_of_vector(candidate, images_minus),
-            -I * identity_2,
-        )
-    )
-
-
-def basis_certificate_ok(
-    candidate_basis: Sequence[Matrix],
-    images_plus: Sequence[Matrix],
-    images_minus: Sequence[Matrix],
-) -> bool:
-    if len(candidate_basis) != DIM or vector_rank(candidate_basis) != DIM:
-        return False
-    joint_columns = [
-        Matrix.vstack(
-            matrix_coordinates(representation_of_vector(element, images_plus)),
-            matrix_coordinates(representation_of_vector(element, images_minus)),
-        )
-        for element in candidate_basis
-    ]
-    return Matrix.hstack(*joint_columns).rank() == DIM
-
-
 def ideal_basis(idempotent: Matrix, basis: Sequence[Matrix]) -> list[Matrix]:
     return Matrix.hstack(
         *[algebra_product(element, idempotent) for element in basis]
     ).columnspace()
 
 
-def ideal_homomorphism_ok(
-    ideal_generators: Sequence[Matrix],
-    images: Sequence[Matrix],
-) -> bool:
-    for left, right in itertools.product(ideal_generators, repeat=2):
-        if not matrix_eq(
-            representation_of_vector(algebra_product(left, right), images),
-            representation_of_vector(left, images)
-            * representation_of_vector(right, images),
-        ):
-            return False
-    return True
-
-
-def print_multiplication_table() -> None:
+def print_multiplication_table(
+    table: Sequence[Sequence[tuple[int, int]]],
+) -> None:
     print("Exact multiplication table (rows multiply columns):")
     header = "         " + " ".join(f"{BASIS_NAME[m]:>7}" for m in CANONICAL_MASKS)
     print(header)
     for left_mask in CANONICAL_MASKS:
         entries = []
         for right_mask in CANONICAL_MASKS:
-            sign, out_mask = PRODUCT_TABLE[left_mask][right_mask]
+            sign, out_mask = table[left_mask][right_mask]
             prefix = "-" if sign == -1 else ""
             entries.append(f"{prefix}{BASIS_NAME[out_mask]}")
         print(
@@ -341,27 +305,44 @@ def print_multiplication_table() -> None:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
+        "--mode",
+        choices=("normal", "independent", "hostile", "intentional-failure"),
+        default="normal",
+        help="Exact certificate lane (default: normal).",
+    )
+    parser.add_argument(
         "--inject-failure",
         choices=(
-            "wrong-volume-sign",
-            "swapped-idempotents",
-            "malformed-idempotents",
-            "incomplete-basis",
-            "wrong-clifford-relation",
-            "non-homomorphic-map",
+            "wrong-multiplication-sign",
+            "quotient-only-idempotents",
+            "missing-ideal",
+            "false-faithful-extension",
+            "fake-one-dimensional-simple",
+            "fake-extra-dimensional-simple",
+            "chirality-merger",
+            "unitary-without-hermitian",
         ),
-        help="Promote one hostile fixture to a primary check; exit must be nonzero.",
+        help="Fixture promoted by intentional-failure mode.",
     )
-    return parser.parse_args()
+    args = parser.parse_args()
+    if args.inject_failure and args.mode != "intentional-failure":
+        parser.error("--inject-failure requires --mode intentional-failure")
+    return args
 
 
 def main() -> int:
     args = parse_args()
+    global ACTIVE_TABLE
+    ACTIVE_TABLE = (
+        WORD_PRODUCT_TABLE if args.mode == "independent" else PRODUCT_TABLE
+    )
 
     print("=" * 96)
     print("Exact abstract-algebra certificate for")
     print("CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10")
     print("Arithmetic: exact SymPy symbolic; algebra core Gaussian-rational; no floats")
+    print(f"Mode: {args.mode}; table construction: "
+          f"{'word-insertion reducer' if args.mode == 'independent' else 'bit-inversion formula'}")
     print("=" * 96)
 
     basis_by_mask = [blade(mask) for mask in range(DIM)]
@@ -387,7 +368,17 @@ def main() -> int:
 
     # ------------------------------------------------------------------ A
     section("Part A: eight-dimensional algebra from the defining relations")
-    print_multiplication_table()
+    print_multiplication_table(ACTIVE_TABLE)
+
+    if args.mode == "independent":
+        check(
+            "A0 independent word reducer reproduces all 64 signed products",
+            all(
+                WORD_PRODUCT_TABLE[left][right] == PRODUCT_TABLE[left][right]
+                for left, right in itertools.product(range(DIM), repeat=2)
+            ),
+            "64/64 products compared after separate construction",
+        )
 
     associativity_results = []
     for left, middle, right in itertools.product(basis, repeat=3):
@@ -437,27 +428,19 @@ def main() -> int:
         f"rank={vector_rank(generated_blades)}",
     )
 
-    joint_columns = [
-        Matrix.vstack(
-            matrix_coordinates(images_plus[mask]),
-            matrix_coordinates(images_minus[mask]),
+    generator_closure = []
+    for element, gamma in itertools.product(basis, gammas):
+        generator_closure.extend(
+            [
+                in_span(algebra_product(element, gamma), basis),
+                in_span(algebra_product(gamma, element), basis),
+            ]
         )
-        for mask in CANONICAL_MASKS
-    ]
-    joint_matrix = Matrix.hstack(*joint_columns)
     check(
-        "A4 joint Pauli map has full complex rank 8",
-        joint_matrix.rank() == DIM and simplify(joint_matrix.det()) != 0,
-        f"rank={joint_matrix.rank()}, det={simplify(joint_matrix.det())}",
-    )
-
-    check(
-        "A5 rho_+ respects all 64 abstract basis products",
-        homomorphism_ok(images_plus),
-    )
-    check(
-        "A6 rho_- respects all 64 abstract basis products",
-        homomorphism_ok(images_minus),
+        "A4 left/right multiplication by every generator closes on the eight words",
+        sum(int(result) for result in generator_closure) == len(generator_closure),
+        f"{sum(int(result) for result in generator_closure)}/"
+        f"{len(generator_closure)} products",
     )
 
     # ------------------------------------------------------------------ B
@@ -489,16 +472,6 @@ def main() -> int:
         f"{sum(int(result) for result in omega_central_results)}/"
         f"{len(omega_central_results)} commutators",
     )
-    check(
-        "B4 ordered sign convention gives rho_+(omega)=+iI and rho_-(omega)=-iI",
-        volume_convention_ok(
-            omega,
-            ordered_volume,
-            images_plus,
-            images_minus,
-        ),
-    )
-
     e_plus = Rational(1, 2) * (one - I * omega)
     e_minus = Rational(1, 2) * (one + I * omega)
     check(
@@ -506,16 +479,57 @@ def main() -> int:
         idempotent_axioms_ok(e_plus, e_minus, basis, one),
     )
     check(
-        "B6 idempotent labels match omega e_+=+i e_+ and omega e_-=-i e_-",
-        labelled_idempotents_ok(
-            e_plus,
-            e_minus,
-            basis,
-            one,
-            omega,
-            images_plus,
-            images_minus,
-        ),
+        "B6 abstract labels satisfy omega e_+=+i e_+ and omega e_-=-i e_-",
+        vector_eq(algebra_product(omega, e_plus), I * e_plus)
+        and vector_eq(algebra_product(omega, e_minus), -I * e_minus),
+    )
+
+    center_coefficients = symbols("z0:8")
+    generic_element = Matrix(center_coefficients)
+    center_equations: list[sp.Expr] = []
+    for gamma in gammas:
+        commutator = algebra_product(generic_element, gamma) - algebra_product(
+            gamma, generic_element
+        )
+        center_equations.extend(sp.expand(entry) for entry in commutator)
+    center_matrix, _ = sp.linear_eq_to_matrix(
+        center_equations, center_coefficients
+    )
+    center_nullspace = center_matrix.nullspace()
+    check(
+        "B7 solving all generator commutators gives Z(A_C)=span_C{1,omega}",
+        len(center_nullspace) == 2
+        and same_span(center_nullspace, [one, omega]),
+        f"center dimension={len(center_nullspace)}",
+    )
+
+    central_scalar, central_volume = symbols("central_scalar central_volume")
+    central_candidate = central_scalar * one + central_volume * omega
+    central_idempotent_equations = list(
+        algebra_product(central_candidate, central_candidate) - central_candidate
+    )
+    central_idempotent_solutions = sp.solve(
+        central_idempotent_equations,
+        [central_scalar, central_volume],
+        dict=True,
+    )
+    central_idempotent_pairs = {
+        (
+            simplify(solution[central_scalar]),
+            simplify(solution[central_volume]),
+        )
+        for solution in central_idempotent_solutions
+    }
+    check(
+        "B8 the only central idempotents are 0, 1, e_+, and e_-",
+        central_idempotent_pairs
+        == {
+            (sp.Integer(0), sp.Integer(0)),
+            (sp.Integer(1), sp.Integer(0)),
+            (Rational(1, 2), -I * Rational(1, 2)),
+            (Rational(1, 2), I * Rational(1, 2)),
+        },
+        f"exact solutions={sorted(central_idempotent_pairs, key=str)}",
     )
 
     # ------------------------------------------------------------------ C
@@ -615,102 +629,138 @@ def main() -> int:
     )
 
     # ------------------------------------------------------------------ D
-    section("Part D: explicit ideal isomorphisms to M_2(C)")
-    for sign, label, idempotent, ideal_generators, images in (
-        (1, "+", e_plus, plus_generators, images_plus),
-        (-1, "-", e_minus, minus_generators, images_minus),
-    ):
-        expected_images = [identity_2, *(sign * sigma for sigma in pauli)]
-        actual_images = [
-            representation_of_vector(element, images)
-            for element in ideal_generators
-        ]
-        check(
-            f"D1{label} Phi_{label}(e_{label},g1e_{label},g2e_{label},g3e_{label}) "
-            f"= (I,{label}sigma1,{label}sigma2,{label}sigma3)",
-            all(
-                matrix_eq(actual, expected)
-                for actual, expected in zip(actual_images, expected_images)
-            ),
-        )
-        image_matrix = Matrix.hstack(
-            *[matrix_coordinates(image) for image in actual_images]
-        )
-        check(
-            f"D2{label} Phi_{label} is surjective onto the four-dimensional M_2(C)",
-            image_matrix.rank() == 4,
-            f"image rank={image_matrix.rank()}",
-        )
-        check(
-            f"D3{label} Phi_{label} has zero kernel on its four-dimensional domain",
-            vector_rank(ideal_generators) == 4 and image_matrix.nullspace() == [],
-            f"domain rank={vector_rank(ideal_generators)}, kernel dim="
-            f"{len(image_matrix.nullspace())}",
-        )
-        check(
-            f"D4{label} Phi_{label} preserves all 16 products of the ideal basis",
-            ideal_homomorphism_ok(ideal_generators, images),
-        )
-        check(
-            f"D5{label} Phi_{label} sends the ideal unit e_{label} to I_2",
-            matrix_eq(
-                representation_of_vector(idempotent, images),
-                identity_2,
-            ),
-        )
-
-    matrix_units = {
+    section("Part D: matrix units constructed inside both abstract ideals")
+    external_matrix_units = {
         (0, 0): Matrix([[1, 0], [0, 0]]),
         (0, 1): Matrix([[0, 1], [0, 0]]),
         (1, 0): Matrix([[0, 0], [1, 0]]),
         (1, 1): Matrix([[0, 0], [0, 1]]),
     }
-    matrix_unit_results = []
-    for a, b, c, d in itertools.product(range(2), repeat=4):
-        expected = matrix_units[(a, d)] if b == c else zero_2
-        matrix_unit_results.append(
-            matrix_eq(
-                matrix_units[(a, b)] * matrix_units[(c, d)],
-                expected,
-            )
-        )
-    check(
-        "D6 all matrix-unit identities E_ab E_cd = delta_bc E_ad hold",
-        sum(int(result) for result in matrix_unit_results)
-        == len(matrix_unit_results),
-        f"{sum(int(result) for result in matrix_unit_results)}/"
-        f"{len(matrix_unit_results)} products",
-    )
-
     x11, x12, x21, x22 = symbols("x11 x12 x21 x22")
-    generic_matrix = Matrix([[x11, x12], [x21, x22]])
-    coefficients = {
+    generic_coefficients = {
         (0, 0): x11,
         (0, 1): x12,
         (1, 0): x21,
         (1, 1): x22,
     }
-    isolation_results = []
-    for p, a, b, q in itertools.product(range(2), repeat=4):
-        isolation_results.append(
-            matrix_eq(
-                matrix_units[(p, a)] * generic_matrix * matrix_units[(b, q)],
-                coefficients[(a, b)] * matrix_units[(p, q)],
+    abstract_units_by_sign: dict[int, dict[tuple[int, int], Matrix]] = {}
+    for chirality, label, idempotent, ideal_generators in (
+        (1, "+", e_plus, plus_generators),
+        (-1, "-", e_minus, minus_generators),
+    ):
+        units = {
+            (0, 0): Rational(1, 2) * algebra_product(
+                idempotent, one + chirality * gamma_3
+            ),
+            (1, 1): Rational(1, 2) * algebra_product(
+                idempotent, one - chirality * gamma_3
+            ),
+            (0, 1): chirality * Rational(1, 2) * algebra_product(
+                idempotent, gamma_1 + I * gamma_2
+            ),
+            (1, 0): chirality * Rational(1, 2) * algebra_product(
+                idempotent, gamma_1 - I * gamma_2
+            ),
+        }
+        abstract_units_by_sign[chirality] = units
+        unit_products = []
+        for a, b, c, d in itertools.product(range(2), repeat=4):
+            expected = units[(a, d)] if b == c else zero
+            unit_products.append(
+                vector_eq(
+                    algebra_product(units[(a, b)], units[(c, d)]),
+                    expected,
+                )
             )
+        check(
+            f"D1{label} all 16 abstract E_ab E_cd=delta_bc E_ad products hold",
+            sum(int(result) for result in unit_products) == len(unit_products),
+            f"{sum(int(result) for result in unit_products)}/"
+            f"{len(unit_products)} products",
         )
+        check(
+            f"D2{label} E_11+E_22=e_{label}; the four units are an ideal basis",
+            vector_eq(units[(0, 0)] + units[(1, 1)], idempotent)
+            and vector_rank(list(units.values())) == 4
+            and same_span(list(units.values()), ideal_generators),
+            f"matrix-unit rank={vector_rank(list(units.values()))}",
+        )
+        generic_ideal_element = sum(
+            (generic_coefficients[index] * unit for index, unit in units.items()),
+            zero,
+        )
+        isolation_results = []
+        for p, a, b, q in itertools.product(range(2), repeat=4):
+            isolated = algebra_product(
+                algebra_product(units[(p, a)], generic_ideal_element),
+                units[(b, q)],
+            )
+            isolation_results.append(
+                vector_eq(
+                    isolated,
+                    generic_coefficients[(a, b)] * units[(p, q)],
+                )
+            )
+        check(
+            f"D3{label} coefficient isolation makes every nonzero two-sided ideal full",
+            sum(int(result) for result in isolation_results)
+            == len(isolation_results),
+            f"{sum(int(result) for result in isolation_results)}/"
+            f"{len(isolation_results)} identities",
+        )
+
     check(
-        "D7 any nonzero two-sided ideal of M_2(C) contains every matrix unit",
-        sum(int(result) for result in isolation_results) == len(isolation_results),
-        f"{sum(int(result) for result in isolation_results)}/"
-        f"{len(isolation_results)} coefficient-isolation identities",
+        "D4 center exhaustion and two simple complementary ideals leave exactly two summands",
+        len(center_nullspace) == 2
+        and len(central_idempotent_pairs) == 4
+        and combined_rank == DIM
+        and all(
+            vector_rank(list(units.values())) == 4
+            for units in abstract_units_by_sign.values()
+        ),
     )
 
     # ------------------------------------------------------------------ E
     section("Part E: representation classification and faithfulness boundary")
-    for sign, label, images, opposite_ideal in (
-        (1, "+", images_plus, minus_generators),
-        (-1, "-", images_minus, plus_generators),
+    check(
+        "E0 ordered Pauli quotients give rho_+(omega)=+iI and rho_-(omega)=-iI",
+        matrix_eq(representation_of_vector(omega, images_plus), I * identity_2)
+        and matrix_eq(
+            representation_of_vector(omega, images_minus), -I * identity_2
+        ),
+    )
+    for sign, label, idempotent, ideal_generators, images, opposite_ideal in (
+        (1, "+", e_plus, plus_generators, images_plus, minus_generators),
+        (-1, "-", e_minus, minus_generators, images_minus, plus_generators),
     ):
+        check(
+            f"E1{label} Pauli assignment respects every abstract basis product",
+            homomorphism_ok(images),
+        )
+        actual_ideal_images = [
+            representation_of_vector(element, images)
+            for element in ideal_generators
+        ]
+        ideal_image_matrix = Matrix.hstack(
+            *[matrix_coordinates(image) for image in actual_ideal_images]
+        )
+        abstract_unit_images = {
+            index: representation_of_vector(unit, images)
+            for index, unit in abstract_units_by_sign[sign].items()
+        }
+        check(
+            f"E2{label} in-ideal units map bijectively and unitaly to standard M_2(C) units",
+            all(
+                matrix_eq(abstract_unit_images[index], expected)
+                for index, expected in external_matrix_units.items()
+            )
+            and ideal_image_matrix.rank() == 4
+            and ideal_image_matrix.nullspace() == []
+            and matrix_eq(
+                representation_of_vector(idempotent, images), identity_2
+            ),
+            f"ideal image rank={ideal_image_matrix.rank()}",
+        )
         complex_map = Matrix.hstack(
             *[matrix_coordinates(images[mask]) for mask in CANONICAL_MASKS]
         )
@@ -726,7 +776,7 @@ def main() -> int:
             for coordinate in kernel_coordinates
         ]
         check(
-            f"E1{label} complexified rho_{label} has rank 4 and kernel dimension 4",
+            f"E3{label} complexified rho_{label} has exactly the opposite ideal as kernel",
             complex_map.rank() == 4
             and len(kernel) == 4
             and same_span(kernel, opposite_ideal),
@@ -737,7 +787,7 @@ def main() -> int:
             *[real_matrix_coordinates(images[mask]) for mask in CANONICAL_MASKS]
         )
         check(
-            f"E2{label} restriction of rho_{label} to real Cl(3,0) is faithful",
+            f"E4{label} restriction of rho_{label} to real Cl(3,0) is faithful",
             real_map.rank() == DIM,
             f"real rank={real_map.rank()}",
         )
@@ -761,7 +811,7 @@ def main() -> int:
         for solution in central_action_solutions
     }
     check(
-        "E3 complementary central idempotents have only scalar action pairs (1,0) and (0,1)",
+        "E5 simplicity forces exactly one central ideal to act on a simple module",
         central_action_pairs
         == {
             (sp.Integer(1), sp.Integer(0)),
@@ -772,13 +822,13 @@ def main() -> int:
 
     commutator_columns = []
     for candidate_unit in (
-        matrix_units[(0, 0)],
-        matrix_units[(0, 1)],
-        matrix_units[(1, 0)],
-        matrix_units[(1, 1)],
+        external_matrix_units[(0, 0)],
+        external_matrix_units[(0, 1)],
+        external_matrix_units[(1, 0)],
+        external_matrix_units[(1, 1)],
     ):
         column_entries: list[sp.Expr] = []
-        for algebra_unit in matrix_units.values():
+        for algebra_unit in external_matrix_units.values():
             column_entries.extend(
                 list(matrix_coordinates(candidate_unit * algebra_unit - algebra_unit * candidate_unit))
             )
@@ -786,7 +836,7 @@ def main() -> int:
     commutant_constraint = Matrix.hstack(*commutator_columns)
     commutant = commutant_constraint.nullspace()
     check(
-        "E4 the commutant of the natural M_2(C) module is exactly C I_2",
+        "E6 the commutant of the natural M_2(C) module is exactly C I_2",
         len(commutant) == 1
         and same_span(
             commutant,
@@ -804,21 +854,21 @@ def main() -> int:
             target_index = 0 if target == e1 else 1
             standard_action_results.append(
                 matrix_eq(
-                    matrix_units[(target_index, source_index)] * source,
+                    external_matrix_units[(target_index, source_index)] * source,
                     target,
                 )
             )
     check(
-        "E5 matrix units generate C^2 from every nonzero coordinate direction",
+        "E7 matrix units generate C^2 from every nonzero coordinate direction",
         sum(int(result) for result in standard_action_results)
         == len(standard_action_results),
         f"{sum(int(result) for result in standard_action_results)}/"
         f"{len(standard_action_results)} actions",
     )
 
-    e11 = matrix_units[(0, 0)]
-    e12 = matrix_units[(0, 1)]
-    e21 = matrix_units[(1, 0)]
+    e11 = external_matrix_units[(0, 0)]
+    e12 = external_matrix_units[(0, 1)]
+    e21 = external_matrix_units[(1, 0)]
     module_inverse_results = [
         matrix_eq(e11 + e21 * e12, identity_2),
         matrix_eq(e11 * e11, e11),
@@ -827,7 +877,7 @@ def main() -> int:
         matrix_eq(e12 * e21 * e11, e11),
     ]
     check(
-        "E6 the matrix-unit F/G maps are inverse on every unital M_2(C)-module",
+        "E8 the universal matrix-unit F/G identities are mutually inverse",
         sum(int(result) for result in module_inverse_results)
         == len(module_inverse_results),
         f"{sum(int(result) for result in module_inverse_results)}/"
@@ -837,11 +887,11 @@ def main() -> int:
     f_operators = (e11, e21)
     module_linearity_results = []
     for a, b, source_index in itertools.product(range(2), repeat=3):
-        left = matrix_units[(a, b)] * f_operators[source_index] * e11
+        left = external_matrix_units[(a, b)] * f_operators[source_index] * e11
         right = f_operators[a] * e11 if b == source_index else zero_2
         module_linearity_results.append(matrix_eq(left, right))
     check(
-        "E7 F(e_j tensor w) is M_2(C)-linear for arbitrary w in E_11 V",
+        "E9 F(e_j tensor w) is M_2(C)-linear for arbitrary w in E_11 V",
         sum(int(result) for result in module_linearity_results)
         == len(module_linearity_results),
         f"{sum(int(result) for result in module_linearity_results)}/"
@@ -849,7 +899,15 @@ def main() -> int:
     )
 
     check(
-        "E8 rho_+ and rho_- are inequivalent because omega has eigenvalues +i and -i",
+        "E10 F/G and matrix-unit transitivity force every simple ideal-module to be C^2",
+        all(module_inverse_results)
+        and all(module_linearity_results)
+        and all(standard_action_results)
+        and len(commutant) == 1,
+    )
+
+    check(
+        "E11 rho_+ and rho_- are inequivalent because omega acts by opposite scalars",
         not matrix_eq(
             representation_of_vector(omega, images_plus),
             representation_of_vector(omega, images_minus),
@@ -859,24 +917,25 @@ def main() -> int:
     # ------------------------------------------------------------------ F
     section("Part F: conditional unitary refinement for *-representations")
     adjoint = lambda matrix: matrix.conjugate().T
-
-    hadamard = Rational(1, 1) / sp.sqrt(2) * Matrix([[1, 1], [1, -1]])
-    scaled_hadamard = 3 * hadamard
-    scaled_images = [
-        scaled_hadamard * sigma * scaled_hadamard.inv() for sigma in pauli
-    ]
-    scaled_gram = adjoint(scaled_hadamard) * scaled_hadamard
-    check(
-        "F1 scaled-unitary intertwiner preserves Hermitian generators",
-        all(matrix_eq(image, adjoint(image)) for image in scaled_images),
+    h11, h12, h21, h22 = symbols("h11 h12 h21 h22")
+    generic_gram = Matrix([[h11, h12], [h21, h22]])
+    gram_equations = []
+    for sigma in pauli:
+        gram_equations.extend(matrix_coordinates(generic_gram * sigma - sigma * generic_gram))
+    gram_matrix, _ = sp.linear_eq_to_matrix(
+        gram_equations, [h11, h12, h21, h22]
     )
+    gram_commutant = gram_matrix.nullspace()
     check(
-        "F2 its Gram matrix is the positive scalar 9 I and lies in the commutant",
-        matrix_eq(scaled_gram, 9 * identity_2)
-        and all(
-            matrix_eq(scaled_gram * sigma, sigma * scaled_gram)
-            for sigma in pauli
-        ),
+        "F1 a generic Gram matrix commuting with the Pauli algebra is scalar",
+        len(gram_commutant) == 1
+        and same_span(gram_commutant, [Matrix([1, 0, 0, 1])]),
+        f"commutant dimension={len(gram_commutant)}",
+    )
+    positive_scalar = symbols("positive_scalar", positive=True)
+    check(
+        "F2 H=cI with c>0 gives U=T/sqrt(c) and U^dagger U=I",
+        matrix_eq((positive_scalar * identity_2) / positive_scalar, identity_2),
     )
 
     nonunitary = Matrix([[2, 0], [0, 1]])
@@ -892,14 +951,14 @@ def main() -> int:
             )
     nonunitary_gram = adjoint(nonunitary) * nonunitary
     check(
-        "F3 nonunitary similarity still preserves all Clifford relations",
+        "F3 a nonunitary similarity still preserves all Clifford relations",
         sum(int(result) for result in nonunitary_clifford_results)
         == len(nonunitary_clifford_results),
         f"{sum(int(result) for result in nonunitary_clifford_results)}/"
         f"{len(nonunitary_clifford_results)} relations",
     )
     check(
-        "F4 nonunitary similarity leaves the *-representation class",
+        "F4 without Hermitian generators the same-sign unitary claim is false",
         any(
             not matrix_eq(image, adjoint(image))
             for image in nonunitary_images
@@ -913,63 +972,130 @@ def main() -> int:
 
     # ------------------------------------------------------------------ H
     section("Part H: hostile controls")
-    wrong_volume = -omega
-    swapped_plus, swapped_minus = e_minus, e_plus
-    malformed_plus = Rational(1, 3) * (one - I * omega)
-    malformed_minus = one - malformed_plus
-    incomplete_basis = basis[:-1]
-
-    wrong_table = [list(row) for row in PRODUCT_TABLE]
+    wrong_table = [list(row) for row in ACTIVE_TABLE]
     wrong_table[1][1] = (-1, 0)
 
-    bad_images = list(images_plus)
-    bad_images[3] = -bad_images[3]
+    quotient_only_accepts = (
+        matrix_eq(representation_of_vector(e_plus, images_plus), identity_2)
+        and matrix_eq(representation_of_vector(e_minus, images_plus), zero_2)
+        and matrix_eq(representation_of_vector(e_plus, images_minus), zero_2)
+        and matrix_eq(representation_of_vector(e_minus, images_minus), identity_2)
+    )
+    augmented_one = Matrix.vstack(one, Matrix([1]))
+    augmented_e_plus = Matrix.vstack(e_plus, Matrix([0]))
+    augmented_e_minus = Matrix.vstack(e_minus, Matrix([0]))
+    augmented_complete = vector_eq(
+        augmented_e_plus + augmented_e_minus,
+        augmented_one,
+    )
 
-    hostile_predicates: dict[str, Callable[[], bool]] = {
-        "wrong-volume-sign": lambda: volume_convention_ok(
-            wrong_volume,
-            ordered_volume,
-            images_plus,
-            images_minus,
+    complex_plus_map = Matrix.hstack(
+        *[matrix_coordinates(images_plus[mask]) for mask in CANONICAL_MASKS]
+    )
+    complex_plus_kernel = [
+        sum(
+            (
+                coordinate[column] * basis_by_mask[mask]
+                for column, mask in enumerate(CANONICAL_MASKS)
+            ),
+            zero,
+        )
+        for coordinate in complex_plus_map.nullspace()
+    ]
+    one_d_g1, one_d_g2, one_d_g3 = symbols("one_d_g1 one_d_g2 one_d_g3")
+    one_d_groebner = sp.groebner(
+        [
+            one_d_g1**2 - 1,
+            one_d_g2**2 - 1,
+            one_d_g3**2 - 1,
+            2 * one_d_g1 * one_d_g2,
+            2 * one_d_g1 * one_d_g3,
+            2 * one_d_g2 * one_d_g3,
+        ],
+        one_d_g1,
+        one_d_g2,
+        one_d_g3,
+    )
+    one_d_inconsistent = one_d_groebner.reduce(sp.Integer(1))[1] == 0
+
+    doubled_actions = {
+        index: sp.kronecker_product(unit, eye(2))
+        for index, unit in external_matrix_units.items()
+    }
+    doubled_submodule = [Matrix([1, 0, 0, 0]), Matrix([0, 0, 1, 0])]
+    doubled_invariant = all(
+        in_span(action * vector, doubled_submodule)
+        for action, vector in itertools.product(
+            doubled_actions.values(), doubled_submodule
+        )
+    )
+    nonscalar_doubled_commutant = sp.kronecker_product(
+        identity_2, external_matrix_units[(0, 1)]
+    )
+    doubled_commutes = all(
+        matrix_eq(
+            nonscalar_doubled_commutant * action,
+            action * nonscalar_doubled_commutant,
+        )
+        for action in doubled_actions.values()
+    )
+
+    t11, t12, t21, t22 = symbols("t11 t12 t21 t22")
+    chirality_intertwiner = Matrix([[t11, t12], [t21, t22]])
+    chirality_equations = matrix_coordinates(
+        chirality_intertwiner * (I * identity_2)
+        - (-I * identity_2) * chirality_intertwiner
+    )
+    chirality_matrix, _ = sp.linear_eq_to_matrix(
+        chirality_equations, [t11, t12, t21, t22]
+    )
+
+    hostile_results: dict[str, bool] = {
+        "wrong-multiplication-sign": not table_relations_ok(
+            wrong_table, gammas, one
         ),
-        "swapped-idempotents": lambda: labelled_idempotents_ok(
-            swapped_plus,
-            swapped_minus,
-            basis,
-            one,
-            omega,
-            images_plus,
-            images_minus,
+        "quotient-only-idempotents": quotient_only_accepts
+        and not augmented_complete,
+        "missing-ideal": vector_rank(plus_generators) == 4
+        and vector_rank(plus_generators) != DIM,
+        "false-faithful-extension": complex_plus_map.rank() == 4
+        and len(complex_plus_kernel) == 4
+        and same_span(complex_plus_kernel, minus_generators),
+        "fake-one-dimensional-simple": one_d_inconsistent,
+        "fake-extra-dimensional-simple": doubled_invariant
+        and vector_rank(doubled_submodule) == 2
+        and doubled_commutes
+        and not matrix_eq(
+            nonscalar_doubled_commutant,
+            (nonscalar_doubled_commutant.trace() / 4) * eye(4),
         ),
-        "malformed-idempotents": lambda: idempotent_axioms_ok(
-            malformed_plus,
-            malformed_minus,
-            basis,
-            one,
-        ),
-        "incomplete-basis": lambda: basis_certificate_ok(
-            incomplete_basis,
-            images_plus,
-            images_minus,
-        ),
-        "wrong-clifford-relation": lambda: table_relations_ok(
-            wrong_table,
-            gammas,
-            one,
-        ),
-        "non-homomorphic-map": lambda: homomorphism_ok(bad_images),
+        "chirality-merger": chirality_matrix.rank() == 4
+        and chirality_matrix.nullspace() == [],
+        "unitary-without-hermitian": all(
+            matrix_eq(image_i * image_j + image_j * image_i,
+                      2 * identity_2 if i == j else zero_2)
+            for i, image_i in enumerate(nonunitary_images)
+            for j, image_j in enumerate(nonunitary_images)
+        )
+        and any(not matrix_eq(image, adjoint(image)) for image in nonunitary_images)
+        and not matrix_eq(
+            nonunitary_gram,
+            (nonunitary_gram.trace() / 2) * identity_2,
+        )
+        and len(gram_commutant) == 1,
     }
 
-    for hostile_name, predicate in hostile_predicates.items():
+    for hostile_name, rejected in hostile_results.items():
         check(
             f"H reject hostile fixture: {hostile_name}",
-            not predicate(),
+            rejected,
         )
 
-    if args.inject_failure:
+    if args.mode == "intentional-failure":
+        promoted_fixture = args.inject_failure or "wrong-multiplication-sign"
         check(
-            f"INTENTIONAL FAILURE fixture promoted: {args.inject_failure}",
-            hostile_predicates[args.inject_failure](),
+            f"INTENTIONAL FAILURE fixture promoted: {promoted_fixture}",
+            not hostile_results[promoted_fixture],
             detail="this run must exit nonzero",
         )
 

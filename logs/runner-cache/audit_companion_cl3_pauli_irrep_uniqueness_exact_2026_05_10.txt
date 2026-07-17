@@ -1,15 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py
-runner_sha256: dde127d28ae8b54f82cc56223ad57ae54e8a6d6ae122131b497a132551edd7f9
+runner_sha256: 108f91a92f78997109b88af77a779f88535331f3dc30625d97dd8510bfb0cbb5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.13
+elapsed_sec: 1.21
 status: ok
 ----- stdout -----
 ================================================================================================
 Exact abstract-algebra certificate for
 CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10
 Arithmetic: exact SymPy symbolic; algebra core Gaussian-rational; no floats
+Mode: normal; table construction: bit-inversion formula
 ================================================================================================
 
 ------------------------------------------------------------------------------------------------
@@ -28,9 +29,7 @@ Exact multiplication table (rows multiply columns):
   [PASS (A)] A1 complete 8^3 basis associativity table  (512/512 products)
   [PASS (A)] A2 all defining Clifford relations hold in the abstract table  (9/9 relations)
   [PASS (A)] A3 ordered generator monomials give the complete canonical basis  (rank=8)
-  [PASS (A)] A4 joint Pauli map has full complex rank 8  (rank=8, det=-256)
-  [PASS (A)] A5 rho_+ respects all 64 abstract basis products
-  [PASS (A)] A6 rho_- respects all 64 abstract basis products
+  [PASS (A)] A4 left/right multiplication by every generator closes on the eight words  (48/48 products)
 
 ------------------------------------------------------------------------------------------------
 Part B: ordered volume element and central idempotents
@@ -38,9 +37,10 @@ Part B: ordered volume element and central idempotents
   [PASS (A)] B1 omega is the ordered product gamma_1 gamma_2 gamma_3
   [PASS (A)] B2 omega^2 = -1 in the abstract algebra
   [PASS (A)] B3 omega commutes with the complete eight-element basis  (8/8 commutators)
-  [PASS (A)] B4 ordered sign convention gives rho_+(omega)=+iI and rho_-(omega)=-iI
   [PASS (A)] B5 e_+=(1-i omega)/2 and e_-=(1+i omega)/2 are central orthogonal idempotents
-  [PASS (A)] B6 idempotent labels match omega e_+=+i e_+ and omega e_-=-i e_-
+  [PASS (A)] B6 abstract labels satisfy omega e_+=+i e_+ and omega e_-=-i e_-
+  [PASS (A)] B7 solving all generator commutators gives Z(A_C)=span_C{1,omega}  (center dimension=2)
+  [PASS (A)] B8 the only central idempotents are 0, 1, e_+, and e_-  (exact solutions=[(0, 0), (1, 0), (1/2, -I/2), (1/2, I/2)])
 
 ------------------------------------------------------------------------------------------------
 Part C: complementary four-dimensional two-sided ideals
@@ -52,52 +52,55 @@ Part C: complementary four-dimensional two-sided ideals
   [PASS (A)] C5 A e_+ and A e_- annihilate each other and form an 8-dimensional direct sum  (cross products=32/32, combined rank=8)
 
 ------------------------------------------------------------------------------------------------
-Part D: explicit ideal isomorphisms to M_2(C)
+Part D: matrix units constructed inside both abstract ideals
 ------------------------------------------------------------------------------------------------
-  [PASS (A)] D1+ Phi_+(e_+,g1e_+,g2e_+,g3e_+) = (I,+sigma1,+sigma2,+sigma3)
-  [PASS (A)] D2+ Phi_+ is surjective onto the four-dimensional M_2(C)  (image rank=4)
-  [PASS (A)] D3+ Phi_+ has zero kernel on its four-dimensional domain  (domain rank=4, kernel dim=0)
-  [PASS (A)] D4+ Phi_+ preserves all 16 products of the ideal basis
-  [PASS (A)] D5+ Phi_+ sends the ideal unit e_+ to I_2
-  [PASS (A)] D1- Phi_-(e_-,g1e_-,g2e_-,g3e_-) = (I,-sigma1,-sigma2,-sigma3)
-  [PASS (A)] D2- Phi_- is surjective onto the four-dimensional M_2(C)  (image rank=4)
-  [PASS (A)] D3- Phi_- has zero kernel on its four-dimensional domain  (domain rank=4, kernel dim=0)
-  [PASS (A)] D4- Phi_- preserves all 16 products of the ideal basis
-  [PASS (A)] D5- Phi_- sends the ideal unit e_- to I_2
-  [PASS (A)] D6 all matrix-unit identities E_ab E_cd = delta_bc E_ad hold  (16/16 products)
-  [PASS (A)] D7 any nonzero two-sided ideal of M_2(C) contains every matrix unit  (16/16 coefficient-isolation identities)
+  [PASS (A)] D1+ all 16 abstract E_ab E_cd=delta_bc E_ad products hold  (16/16 products)
+  [PASS (A)] D2+ E_11+E_22=e_+; the four units are an ideal basis  (matrix-unit rank=4)
+  [PASS (A)] D3+ coefficient isolation makes every nonzero two-sided ideal full  (16/16 identities)
+  [PASS (A)] D1- all 16 abstract E_ab E_cd=delta_bc E_ad products hold  (16/16 products)
+  [PASS (A)] D2- E_11+E_22=e_-; the four units are an ideal basis  (matrix-unit rank=4)
+  [PASS (A)] D3- coefficient isolation makes every nonzero two-sided ideal full  (16/16 identities)
+  [PASS (A)] D4 center exhaustion and two simple complementary ideals leave exactly two summands
 
 ------------------------------------------------------------------------------------------------
 Part E: representation classification and faithfulness boundary
 ------------------------------------------------------------------------------------------------
-  [PASS (A)] E1+ complexified rho_+ has rank 4 and kernel dimension 4  (rank=4, kernel dim=4)
-  [PASS (A)] E2+ restriction of rho_+ to real Cl(3,0) is faithful  (real rank=8)
-  [PASS (A)] E1- complexified rho_- has rank 4 and kernel dimension 4  (rank=4, kernel dim=4)
-  [PASS (A)] E2- restriction of rho_- to real Cl(3,0) is faithful  (real rank=8)
-  [PASS (A)] E3 complementary central idempotents have only scalar action pairs (1,0) and (0,1)  (solutions=[(0, 1), (1, 0)])
-  [PASS (A)] E4 the commutant of the natural M_2(C) module is exactly C I_2  (commutant dimension=1)
-  [PASS (A)] E5 matrix units generate C^2 from every nonzero coordinate direction  (4/4 actions)
-  [PASS (A)] E6 the matrix-unit F/G maps are inverse on every unital M_2(C)-module  (5/5 universal identities)
-  [PASS (A)] E7 F(e_j tensor w) is M_2(C)-linear for arbitrary w in E_11 V  (8/8 matrix-unit actions)
-  [PASS (A)] E8 rho_+ and rho_- are inequivalent because omega has eigenvalues +i and -i
+  [PASS (A)] E0 ordered Pauli quotients give rho_+(omega)=+iI and rho_-(omega)=-iI
+  [PASS (A)] E1+ Pauli assignment respects every abstract basis product
+  [PASS (A)] E2+ in-ideal units map bijectively and unitaly to standard M_2(C) units  (ideal image rank=4)
+  [PASS (A)] E3+ complexified rho_+ has exactly the opposite ideal as kernel  (rank=4, kernel dim=4)
+  [PASS (A)] E4+ restriction of rho_+ to real Cl(3,0) is faithful  (real rank=8)
+  [PASS (A)] E1- Pauli assignment respects every abstract basis product
+  [PASS (A)] E2- in-ideal units map bijectively and unitaly to standard M_2(C) units  (ideal image rank=4)
+  [PASS (A)] E3- complexified rho_- has exactly the opposite ideal as kernel  (rank=4, kernel dim=4)
+  [PASS (A)] E4- restriction of rho_- to real Cl(3,0) is faithful  (real rank=8)
+  [PASS (A)] E5 simplicity forces exactly one central ideal to act on a simple module  (solutions=[(0, 1), (1, 0)])
+  [PASS (A)] E6 the commutant of the natural M_2(C) module is exactly C I_2  (commutant dimension=1)
+  [PASS (A)] E7 matrix units generate C^2 from every nonzero coordinate direction  (4/4 actions)
+  [PASS (A)] E8 the universal matrix-unit F/G identities are mutually inverse  (5/5 universal identities)
+  [PASS (A)] E9 F(e_j tensor w) is M_2(C)-linear for arbitrary w in E_11 V  (8/8 matrix-unit actions)
+  [PASS (A)] E10 F/G and matrix-unit transitivity force every simple ideal-module to be C^2
+  [PASS (A)] E11 rho_+ and rho_- are inequivalent because omega acts by opposite scalars
 
 ------------------------------------------------------------------------------------------------
 Part F: conditional unitary refinement for *-representations
 ------------------------------------------------------------------------------------------------
-  [PASS (A)] F1 scaled-unitary intertwiner preserves Hermitian generators
-  [PASS (A)] F2 its Gram matrix is the positive scalar 9 I and lies in the commutant
-  [PASS (A)] F3 nonunitary similarity still preserves all Clifford relations  (9/9 relations)
-  [PASS (A)] F4 nonunitary similarity leaves the *-representation class  (T^dagger T=[[4, 0], [0, 1]])
+  [PASS (A)] F1 a generic Gram matrix commuting with the Pauli algebra is scalar  (commutant dimension=1)
+  [PASS (A)] F2 H=cI with c>0 gives U=T/sqrt(c) and U^dagger U=I
+  [PASS (A)] F3 a nonunitary similarity still preserves all Clifford relations  (9/9 relations)
+  [PASS (A)] F4 without Hermitian generators the same-sign unitary claim is false  (T^dagger T=[[4, 0], [0, 1]])
 
 ------------------------------------------------------------------------------------------------
 Part H: hostile controls
 ------------------------------------------------------------------------------------------------
-  [PASS (A)] H reject hostile fixture: wrong-volume-sign
-  [PASS (A)] H reject hostile fixture: swapped-idempotents
-  [PASS (A)] H reject hostile fixture: malformed-idempotents
-  [PASS (A)] H reject hostile fixture: incomplete-basis
-  [PASS (A)] H reject hostile fixture: wrong-clifford-relation
-  [PASS (A)] H reject hostile fixture: non-homomorphic-map
+  [PASS (A)] H reject hostile fixture: wrong-multiplication-sign
+  [PASS (A)] H reject hostile fixture: quotient-only-idempotents
+  [PASS (A)] H reject hostile fixture: missing-ideal
+  [PASS (A)] H reject hostile fixture: false-faithful-extension
+  [PASS (A)] H reject hostile fixture: fake-one-dimensional-simple
+  [PASS (A)] H reject hostile fixture: fake-extra-dimensional-simple
+  [PASS (A)] H reject hostile fixture: chirality-merger
+  [PASS (A)] H reject hostile fixture: unitary-without-hermitian
 
 ------------------------------------------------------------------------------------------------
 Summary
@@ -112,7 +115,7 @@ Summary
     restrictions are faithful. No lattice carrier or physical selection is inferred.
 
 ================================================================================================
-TOTAL: PASS=49, FAIL=0
+TOTAL: PASS=51, FAIL=0
 ================================================================================================
 
 ----- stderr -----

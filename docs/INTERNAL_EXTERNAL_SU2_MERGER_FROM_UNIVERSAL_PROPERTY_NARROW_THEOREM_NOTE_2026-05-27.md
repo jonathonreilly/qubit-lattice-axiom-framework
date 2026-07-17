@@ -43,7 +43,7 @@ infinitesimal generators are exactly `S_i = sigma_i / 2`.
 
 The bounded theorem is therefore an operator-level identification:
 the two `su(2)` descriptions are not separate framework primitives.
-They are the same generator data in the retained Pauli realization.
+They are the same generator data in the selected Pauli realization.
 
 ## Load-bearing Inputs
 
@@ -51,7 +51,8 @@ They are the same generator data in the retained Pauli realization.
   current qubit-on-`Z^3` framework memo; records the one-qubit
   operator algebra equivalently as `M_2(C)` and physical `Cl(3,0)`.
 - [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) -
-  retained Pauli realization of `Cl(3,0)` on `C^2`.
+  two-class real-algebra classification and the selected Pauli realization
+  on `C^2`.
 - [`PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`](PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md) -
   retained per-site `j = 1/2` `su(2)` representation with
   `S_i = sigma_i / 2`.

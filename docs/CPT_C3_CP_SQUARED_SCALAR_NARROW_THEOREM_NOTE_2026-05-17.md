@@ -127,7 +127,7 @@ required.
 The proof is direct matrix algebra on the explicit C, P factorisations,
 using only:
 
-- The retained Pauli-irrep relations `σ_i σ_j = δ_{ij} I + i ε_{ijk} σ_k`
+- The selected Pauli-irrep relations `σ_i σ_j = δ_{ij} I + i ε_{ijk} σ_k`
   on `V_int = C^2` per
   [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md).
 - The retained dim-2 conclusion per
@@ -151,7 +151,7 @@ For the alternative choice `G_P = -σ_3`:
 ```
 
 In both choices, `(G_C G_P)^2 = +I_int`. The dim-2 reduction follows
-from the retained Pauli-irrep classification: any Cl(3)-grading-compatible
+from the Pauli-irrep classification: any Cl(3)-grading-compatible
 involution on `V_int` is `±σ_3` up to similarity in the chirality
 summand, and both square to `+I` in the product. ∎
 
@@ -235,7 +235,7 @@ assertion identified by the audit verdict.
 
 - (S1): On the dim-2 internal Cl(3) factor, `(G_C G_P)^2 = +I_int` for
   both candidate Cl(3) grading automorphisms `G_P = ±σ_3` (conditional
-  on the retained dim-2 Pauli-irrep classification).
+  on the exact dim-2 Pauli-irrep classification).
 - (S2): On the orbital `Z^3 mod L` factor with even `L`,
   `(C_lat P_lat)^2 = ε_lat · I_lat` is a scalar, with `ε_lat ∈ {+1, -1}`
   explicitly determined by the lattice-inversion convention.
@@ -313,7 +313,8 @@ Load-bearing markdown-link upstream:
   — currently retained in the audit ledger. Supplies
   `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` and the chirality split.
 - [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — currently retained_bounded in the audit ledger.
+  — exact two-class classification for complex representations of the real
+  algebra; this note selects the positive Pauli class.
   Supplies the explicit Pauli realisation `γ_i = σ_i` with `ω = i · I`,
   and the central pseudoscalar relations needed for grading
   automorphism algebra.
@@ -386,8 +387,8 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 20`.
 
 ## Cross-references
 
-Load-bearing markdown-link upstream (three one-hop dependencies, all
-retained-grade per the live ledger on 2026-05-17):
+Load-bearing markdown-link upstream (three link entries to two algebra notes;
+their audit statuses remain pipeline-derived and are not asserted here):
 
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) §(K4)
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
@@ -406,8 +407,8 @@ Plain-text (non-load-bearing) reader pointers:
 
 ## Citation-graph note
 
-Three load-bearing markdown-link upstream dependencies, all
-retained-grade. Cross-references to the failed parent and broad CPT
+Three load-bearing markdown-link entries to two algebra notes.
+Cross-references to the failed parent and broad CPT
 note are plain-text reader pointers (not markdown links) so the
 citation-graph builder does not pick them up as load-bearing
 dependencies on `audited_failed` content.

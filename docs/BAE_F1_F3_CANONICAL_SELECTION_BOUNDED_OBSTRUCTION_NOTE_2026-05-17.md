@@ -53,8 +53,8 @@ as of 2026-05-17):
   duality `E_+(H) = E_perp(H) ⇔ |b|^2 / a^2 = 1/2`, i.e. the BAE
   locus identification.
 - **(X3)** [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — `retained_bounded / bounded_theorem`. Supplies the unique (up to
-  similarity) Pauli realization of `Cl(3)` on `M_2(C)`; load-bearing
+  — Supplies two sign classes and the selected Pauli realization of `Cl(3)`
+  on `M_2(C)`, unique within its sign up to similarity; load-bearing
   for AV8.
 
 Companion retained narrow [`KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md`](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md)

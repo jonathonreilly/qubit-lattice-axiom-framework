@@ -45,8 +45,8 @@ Statuses verified on `docs/audit/data/audit_ledger.json` as of
   — `retained / positive_theorem`. Supplies `H = a I + b C + b̄ C^2`,
   `E_+(H) = 3 a^2`, `E_perp(H) = 6 |b|^2`.
 - **(X2)** [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — `retained_bounded / bounded_theorem`. Pauli realisation of `Cl(3)`
-  on `M_2(C)`; load-bearing for R3.
+  — Selected Pauli realisation among the two sign classes of `Cl(3)` on
+  `M_2(C)`; load-bearing for R3.
 - **(X3)** [`CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
   — `retained / positive_theorem`. Specific `γ`-involution
   `γ(M) = σ_2 M^T σ_2` on `M_2(C)`; grade action `+id` on

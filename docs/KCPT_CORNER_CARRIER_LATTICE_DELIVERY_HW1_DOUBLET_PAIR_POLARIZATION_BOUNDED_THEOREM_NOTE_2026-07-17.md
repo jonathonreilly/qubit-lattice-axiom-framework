@@ -2,7 +2,7 @@
 
 - **Registry id:** `kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_bounded_theorem_note_2026-07-17`
 - **Date:** 2026-07-17
-- **Claim type:** `bounded_theorem`
+**Claim type:** bounded_theorem
 - **Paired runner:** [kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_2026_07_17.py](../scripts/kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_2026_07_17.py)
 - **Runner cache:** `logs/runner-cache/kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_2026_07_17.txt`
 
@@ -18,12 +18,13 @@ pairs the two doublet channels into a single 2-orbit (T2); the spectral-pairing
 license instantiates exactly, negative control included (T3). The bounded negative
 (T4): the Hermitian, K-real members of the equivariant class are exactly the
 two-parameter real family `a*I + b*(C + C^2)`, whose doublet channel values are
-exactly equal; doublet separation is identically the K-odd component of the
-observable. Under the mechanism note's R2 reading (derivable initial data is K-real
-— a reading that note itself leaves conditional), no derivable equivariant Hermitian
-observable in the named classes separates the doublet pair: the doublet enters as one
-paired channel with one free dial. Nothing here forces or derives a value of that
-dial; `r` in `{0, 1/2, 1}` remains a registered, sector-dependent setting.
+exactly equal; separation is nonzero exactly when the observable has a nonzero K-odd
+component. This is a classification of explicitly K-real carrier observables, not a
+nonderivability statement. The mechanism note itself constructs the unlabeled spectral
+PVM of a K-odd separator and calls that PVM derivable and registrable; this note
+reproduces the separator exactly. The classification
+leaves the singlet and shared-doublet channel values free, so nothing here forces,
+derives, or prefers any value of `r`.
 
 ## Purpose
 
@@ -33,14 +34,15 @@ since 2026-05-03, a composed lattice surface whose hw=1 kernel triplet has exact
 the required shape. This note joins the two: it computes the identification exactly
 (so the pairing results now live on a lattice-delivered carrier at the gate note's
 declared premise set), and then asks the polarization question one level down — which
-channels of the delivered carrier can K-real data distinguish? The answer (none
-within the named classes, without K-odd data) is the doublet-pair analogue of the
-gate note's own corner-labeling result, and it gives the paired-channel reading of
-the doublet dial a computed footing.
+channels of the delivered carrier can explicitly K-real Hermitian observables
+distinguish? The answer is that their expectations on the two conjugate doublet lines
+are equal, even without equivariance. K-odd observables do separate the lines. The
+result is therefore a carrier-algebra boundary, not a restriction on which observables
+are derivable or registrable.
 
 ## Supplied objects and consumed readings
 
-Four sentences are consumed verbatim; the runner (block B6) gates each against its
+Four source passages are consumed verbatim; the runner (block B6) gates each against its
 source text and against the blockquotes below.
 
 From the spectral-pairing note, the supplied carrier (R1c):
@@ -54,13 +56,12 @@ From the same note, the supplied-surface FLAG this note addresses:
 > **FLAG — supplied surface:** this is the mechanism note's declared corner surface,
 > not a derived physical carrier.
 
-From the mechanism note, the derivability reading consumed conditionally by T4,
-together with that note's own qualification:
+From the mechanism note, the observable-face boundary that limits T4:
 
-> **R2 — K-real derivable initial data.** Derivable initial data is K-real.
-> **FLAG — two-model mechanism:** the entrywise-conjugate presentations in L-K2
-> satisfy the same named clauses and exchange every K-odd seed. The memo's live
-> Qualification leaves the unfixed choice conditional/open.
+> The observable face is not closed. Doublet-resolving PVMs and registrations are
+> derivable and registrable: the unlabeled spectral PVM of `i(C-C^2)` and the joint
+> witness `W` are explicit examples. Nothing here forecloses them. The theorem is
+> about registered **weights**.
 
 From the gate note, the species-surface clause naming the parent surface on which
 delivery happens:
@@ -125,7 +126,7 @@ permutation matrix with `U_R^3 = I` conjugating the translations cyclically.
 2. The pairing is a property of the entrywise-real locus, not of the carrier: the
    negative control below reproduces the spectral-pairing note's failure witness.
 
-### Doublet-pair separation is K-gated on the delivered carrier (T4, bounded negative)
+### Doublet-pair separation is K-gated on the delivered carrier (T4, exact negative boundary)
 
 1. The commutant of `C` in the full complex matrix algebra has dimension exactly
    three and is spanned by `{I, C, C^2}` (exact rank computations).
@@ -138,40 +139,43 @@ permutation matrix with `U_R^3 = I` conjugating the translations cyclically.
    on the family.
 4. The general equivariant Hermitian is `alpha*P_1 + beta*P_w + gamma*P_wbar` with
    `alpha, beta, gamma` real, and satisfies the identity
-   `H - K H K = (beta - gamma) * (P_w - P_wbar)`: doublet separation IS the K-odd
-   component of the observable, exactly.
+   `H - K H K = (beta - gamma) * (P_w - P_wbar)`. Thus its K-odd component is
+   `(H - K H K)/2 = ((beta - gamma)/2) * (P_w - P_wbar)`, and doublet separation
+   is nonzero exactly when that component is nonzero.
 5. The canonical separator `P_w - P_wbar` is Hermitian, equivariant, and K-odd,
    and separates the channels with difference two.
 6. Hardening: dropping equivariance entirely, every real symmetric operator has
    exactly equal expectation values on the two conjugate doublet lines.
-7. Therefore, UNDER the consumed R2 reading (derivable initial data is K-real), no
-   derivable Hermitian observable in the named classes — equivariant or, at the
-   expectation level, general real symmetric — separates the two doublet channels.
-   The doublet pair enters as one paired channel.
-8. **Conditionality.** Item 7 is conditional on R2, which the mechanism note
-   itself leaves conditional (two-model FLAG, quoted above). The unconditional
-   content of T4 is items 1 through 6: exact linear algebra on the delivered
-   carrier.
+7. Therefore every explicitly K-real Hermitian observable on the bare carrier has
+   equal expectations on the two conjugate doublet lines; in the equivariant class
+   this equality is also the exact doublet eigenvalue degeneracy of item 3.
+8. **Scope.** This is not an observable nonderivability claim. The mechanism note's
+   `A_odd = i(C-C^2)` is a doublet resolver and calls its unlabeled spectral PVM
+   derivable and registrable; on the delivered carrier
+   `A_odd = -sqrt(3) * (P_w - P_wbar)` exactly. Its R2 reading concerns initial data
+   and is not consumed as an observable restriction here.
 
 **Physics reading (bounded).** The delivered carrier polarizes into a K-fixed
-singlet channel and one K-paired doublet channel. Any K-real registered pattern on
-this carrier carries one singlet value and one doublet value: the doublet enters
-through one dial, not two. The classification leaves that dial completely free
+singlet channel and one K-paired doublet orbit. An explicitly K-real Hermitian
+carrier observable has one singlet channel value and one shared doublet channel
+value. The classification leaves those two values completely free
 (runner block B5): the map `(a, b) -> (a + 2b, a - b)` has determinant `-3`, so the
 K-real family realizes every (singlet, doublet) channel-value pair exactly once, and
 exact witnesses with doublet-to-singlet ratios `1`, `1/2`, and `1/4` are computed.
-Nothing here forces or derives a value of the dial; `r = 0`, `r = 1/2`, `r = 1`
-remain distinguished settings registered per sector (guardrail G3: weights are
-registered by the realized state, never delivered by the partition).
+No physical readout bridge identifies these witness ratios with `r`; the algebra
+neither forces nor derives an `r` value.
 
 ## Gated controls
 
 - The K-odd separator `P_w - P_wbar` exists inside the equivariant Hermitian class
-  and separates (channel difference two): the wall in T4 is the K-parity gate, not
-  matrix algebra.
+  and separates (channel difference two): the boundary in T4 is the explicit K-real
+  class, not matrix algebra or observable derivability.
+- The mechanism note's derivable/registrable PVM is generated by the same carrier
+  separator up to exact normalization:
+  `i(C-C^2) = -sqrt(3) * (P_w - P_wbar)`.
 - The witness `P_w` (Hermitian, with nonzero K-odd part) separates the two doublet
-  lines with expectations one and zero: once K-odd data is admitted, separation is
-  immediate.
+  lines with expectations one and zero: once a K-odd carrier observable is allowed,
+  separation is immediate.
 - The determinant `-3` computation above: the K-real family pins no channel values
   and no ratio — the classification constrains the shape of the pattern (one
   singlet value, one doublet value), never its magnitudes.
@@ -186,116 +190,129 @@ registered by the realized state, never delivered by the partition).
 
 ## No-Go Discipline Gate
 
-The gate applies to the bounded negative T4.
+The gate applies to T4's exact negative boundary on explicitly K-real bare-carrier
+Hermitian observables.
 
-### N1 — Alternative-route enumeration (non-closing)
+### N1 — Alternative-route enumeration
 
-Named routes to doublet separation:
+| Route | Marker | Result |
+|---|---|---|
+| K-real, `C`-equivariant carrier Hermitians | ATTEMPTED | The commutant classification gives `a*I+b*(C+C^2)` and equal doublet eigenvalues (T4 items 1 through 3; runner B4 items 1 through 5). |
+| K-real, non-equivariant carrier Hermitians | ATTEMPTED | Every real symmetric matrix has equal expectations on the conjugate lines (T4 item 6; runner B4 item 8). |
+| Spectral functions of the K-real equivariant family | ATTEMPTED | Equal doublet eigenvalues remain equal under functional calculus; this is a corollary of the computed characteristic polynomial. |
+| K-odd equivariant carrier Hermitians | ATTEMPTED | They separate: `P_w-P_wbar` is the exact boundary witness (runner B4 item 7). This route lies outside the explicitly K-real class. |
+| General complex carrier Hermitians, equivariance not required | ATTEMPTED | They separate: `P_w` gives expectations one and zero (runner B4 item 9). This is a second explicit escape from the scoped class. |
+| Unordered three-atom PVM registration | ATTEMPTED | It resolves the two atoms and is derivable/registrable in the mechanism note; T4 makes no PVM-availability claim. |
+| Joint qubit/corner observables | ATTEMPTED | The mechanism note's jointly K-even witness `W` resolves the doublet on its larger supplied surface; T4 is only a bare-carrier statement. |
 
-1. K-real equivariant Hermitian observables — classified (T4 items 1 through 3);
-   cannot separate. Computed.
-2. K-odd equivariant Hermitian observables — separate (`P_w - P_wbar`); excluded
-   from the derivable class conditionally by the consumed R2 reading, not by
-   algebra. Computed as a gated control.
-3. Non-equivariant Hermitian observables — a general real symmetric operator still
-   cannot separate the conjugate lines at the expectation level (T4 item 6,
-   computed); complex Hermitian operators with K-odd part can. Same K-parity gate.
-4. Antilinear or non-Hermitian readout functionals — declared untested; outside
-   the named classes.
-5. Spectral functions of the K-real family — cannot separate: the doublet
-   eigenvalues are equal, and any function of the operator preserves that
-   equality.
-
-The enumeration names routes; it does not assert the list is complete.
+Antilinear and non-Hermitian functionals, interacting extensions, and lattice-wide
+readouts are untested and outside the claim. The list is deliberately non-complete.
 
 ### N2 — Wall-independence audit
 
-T4 rests on two walls of different kinds, and needs both: (i) the algebraic
-classification (unconditional, computed on the three-dimensional carrier,
-independent of the lattice construction — the lattice enters through T1 delivery
-alone); (ii) the R2 derivability reading (conditional, consumed from the mechanism
-note). Neither wall substitutes for the other, and the note keeps them separate:
-items 1 through 6 stand without R2; item 7 does not.
+T4 has two explicit scope boundaries rather than a claim that a physical route is
+closed:
+
+| Boundary pair | Does the first imply the second? | Does the second imply the first? | Disposition |
+|---|---|---|---|
+| explicitly K-real / bare-carrier observable surface | no: K-reality does not exclude joint factors or permuted PVM labels | no: the bare carrier contains K-odd separators | independent and stated |
+
+Equivariance is not a hidden third wall because item 6 drops it. R2 is not a wall
+for this claim and supplies no observable restriction.
 
 ### N3 — Hidden-wall scan
 
-Declared load-bearing premises: the four gate-note residuals inherited below; the
-corner-basis ordering convention (slot `mu` carries character `-1` in direction
-`mu`) — computed exact and, per the gate note's labeling clause, a convention; the
-periodic-sector choice (the boundary-holonomy residual). No other premises are
-consumed.
+The scan covers "we assume", "by construction", "as is standard", "the framework
+provides", "bridge context", "background", "naturally", "obviously", "standard
+QFT", "registered", and "canonical". The canonical hits either fix the stated
+entrywise-conjugation presentation or describe an explicit escape. The registered
+hits occur in the verbatim mechanism boundary and the preserved PVM escape; none is
+imported as a readout theorem. The periodic
+sector, bare-carrier surface, explicit K-real class, and corner-basis ordering are
+all stated. The corner ordering is a presentation convention distinct from the
+gate note's physical species-labeling convention.
 
 ### N4 — Residual matching
 
-The four gate-note residuals are inherited verbatim and printed as RESIDUAL lines
-by the runner: the kinetic-class / P-FLUX supply line; the spin-statistics support
-tier; the boundary-holonomy convention (this runner computes the periodic sector);
-the species labeling convention (whose derivability negative is the gate runner's
-own computation). Because of these inherited residuals and the R2 conditionality,
-the claim type is `bounded_theorem`.
+| Cited source | Source residual or role | Residual addressed here | Match? |
+|---|---|---|---|
+| spectral-pairing note | supplied abstract corner carrier | lattice delivery at the gate note's premise set | yes; T1 computes the identification without erasing the origin FLAG |
+| mechanism note | observable face remains open; the unordered PVM of the K-odd generator resolves | escape boundary for the K-real carrier classification | yes; the same separator is reproduced exactly |
+| gate note | kinetic, spin-statistics, holonomy, and species-label residuals | inherited bounds on the delivered parent surface | yes for T1's bounded carrier; they are not evidence for T4's algebra |
+
+No prior no-go is used as proof of the carrier classification. The four gate-note
+residuals remain visible in runner stdout. They and the supplied parent surfaces,
+not R2, keep the overall claim type `bounded_theorem`.
 
 ### N5 — Rhetoric audit
 
-The negative is scoped: "no derivable equivariant Hermitian separates" is asserted
-under the R2 reading and for the named classes. The note nowhere asserts that the
-doublet channels are physically indistinguishable, that K-odd data is underivable
-in every extension of the framework, or that the corner surface is underivable at
-the mechanism-note origin.
+The negative is at the operator/expectation resolution on the delivered
+three-dimensional carrier. It covers equivariant K-real Hermitians and general
+real-symmetric carrier expectations. It does not cover K-odd observables, unordered
+PVM atoms, equivariant labels, joint-factor observables, antilinear or non-Hermitian
+functionals, interacting surfaces, or lattice-wide readouts. It makes no physical
+indistinguishability or observable-nonderivability claim.
 
 ### N6 — Partial-closure path scan
 
-Live openings, each of which would move this note's boundary: derive R2 (item 7
-becomes unconditional); derive the corner surface on the mechanism-note side (the
-FLAG dissolves at its origin, not merely at the gate note's premise set); classify
-antilinear and non-Hermitian functionals (route 4 becomes computed); extend beyond
-the free composed kernel to an interacting surface.
+Existing partial closures are preserved rather than relabeled as new axioms:
+K-odd carrier observables and the unordered PVM already resolve the doublet;
+the joint witness resolves it on the larger supplied qubit/corner surface. Further
+paths include classifying antilinear and non-Hermitian functionals, extending beyond
+the free composed kernel, and deriving the corner surface at the mechanism-note
+origin. No approved primitive supplies an observable K-reality restriction, and no
+new primitive is proposed.
 
 ### N7 — Steelman
 
-Strongest objection: "the separator `P_w - P_wbar` is algebraically constructible
-from the delivered data, so the doublet channels ARE distinguishable." Granted —
-constructible. The claim concerns derivable initial data under R2:
-constructibility of an operator is not derivability of a K-odd registered seed.
-The objection is incorporated as the first gated control (the wall is K-parity,
-not existence).
+Strongest objection: "the separator `P_w - P_wbar` is not merely constructible;
+the mechanism note's `i(C-C^2)` is the same operator up to `-sqrt(3)`, and that note
+calls its PVM derivable and registrable. Therefore the doublet is resolvable." Granted.
+That objection defeats an observable-nonderivability claim, so this note does not
+make one. It leaves only the exact statement that explicitly K-real bare-carrier
+Hermitian expectations are doublet-constant.
 
 Second steelman: "the hw=1 ordering was chosen so the restriction comes out as `C`;
-T1 is a convention." The ordering is a labeling convention (the gate note's
-residual), and the delivered content is ordering-independent: `U_R` permutes the
+T1 is a presentation convention." The delivered invariant content is ordering-independent:
+`U_R` permutes the
 three corner states in a single 3-cycle with `+1` coefficients, and any relabeling
 of a 3-cycle on three slots yields `C` or `C^T = C^2` — the same supplied triple,
 since `K` exchanges the `w` and `wbar` channels.
 
 ### N8 — Cross-cycle echo
 
-The gate note's own labeling negative (no canonical map from the hw=1 triplet to a
-labeled SM-generation 3-set is derivable from the minimal axiom baseline; labels
-enter only via the labeling-convention external premise) is this mechanism one
-level up: there the rotation 3-orbit blocks deriving a labeling of the triplet;
-here the conjugation 2-orbit blocks splitting the doublet with K-real data.
-Consistent echo of one structure, not a new wall.
+The closest prior echo is the mechanism note itself: K-real initial states give
+orbit-constant ensemble weights while its K-odd observable and unordered PVM still
+resolve branches. That precedent is applied here by separating K-real carrier
+expectation constancy from observable availability. The spectral-pairing note also
+required a separately declared extension before moving R2 to a new coupling slot;
+this note makes no such slot move. The gate note's three-cycle labeling result is a
+more distant symmetry-orbit echo, not evidence for the T4 negative.
 
 ## Non-claims
 
 - No species-labeling derivation: the gate note's labeling residual is untouched.
-- No value of `r` is forced, derived, or preferred. The dial stays free per sector,
-  and the runner computes distinct-ratio witnesses to keep it so.
-- No measure, weighting, or probability content: guardrail G3 untouched.
+- No value of `r` is forced, derived, or preferred. The runner's distinct channel-
+  ratio witnesses are algebraic nonselection checks, not a physical `r` dictionary.
+- No record/write/readout bridge, measure, weighting, or probability content.
+- No claim that K-odd observables or doublet-resolving PVMs are underivable; the
+  mechanism note's explicit positive examples are preserved.
 - No claim that the mechanism note's surface is derived at its origin: the FLAG
   stands there; this note supplies a lattice realization at the gate note's bounded
   premise set.
 - No interacting-theory claim: everything lives on the free composed kernel of the
   gate note's surface.
-- No claim about antilinear or non-Hermitian readout functionals (declared
-  untested, route 4 of N1).
+- No claim about antilinear or non-Hermitian readout functionals (explicitly listed
+  as untested after the N1 table).
 
 ## Dependency roles and status boundary
 
 Roles: the gate note is the parent surface (construction consumed verbatim and
 recomputed exactly); the spectral-pairing note supplies the carrier specification
 (R1c), the FLAG this note addresses, and the T3 pairing license; the mechanism note
-supplies the R2 reading (consumed conditionally, with its own qualification
-quoted); the minimal-axioms note is the framework foundation. Statuses of all
+supplies the explicit observable-face boundary and doublet-resolving escape quoted
+above; R2 is not consumed as an observable restriction. The minimal-axioms note is
+the framework foundation. Statuses of all
 dependencies are set by the independent audit lane; this note asserts no dependency
 status and consumes no status-dependent content.
 
@@ -325,7 +342,7 @@ B3 pairing instantiation with negative control, B4 classification and K-gate, B5
 r-neutrality guard, B6 verbatim quote gates, B7 ledger shard existence gates
 (timeless, no status pins), B8 note hygiene. Cached output:
 `logs/runner-cache/kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_2026_07_17.txt`
-ends `TOTAL: PASS=99 FAIL=0`.
+ends with the current exact PASS/FAIL total printed by the runner.
 
 **No check passes by literal stipulation.** Every equality is computed from the
 constructed objects; the quote gates compare source text to this note's blockquotes

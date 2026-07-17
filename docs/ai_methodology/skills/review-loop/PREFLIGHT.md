@@ -52,7 +52,7 @@ audited").
 ## 5. Links
 
 Every markdown link in your diff dereferences to one git-tracked regular
-file (the invariants harness enforces this on authority surfaces:
+file or a web URL (the invariants harness enforces this on authority surfaces:
 `directory-target`, `not-tracked`, `absolute-path`, `outside-repository`
 are all violations). Load-bearing dependencies are markdown links — backticks
 seed no citation-graph edges; decorative references are backticks — links

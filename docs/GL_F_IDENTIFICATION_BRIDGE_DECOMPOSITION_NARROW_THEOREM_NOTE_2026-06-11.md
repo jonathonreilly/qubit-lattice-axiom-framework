@@ -23,8 +23,9 @@ operator-dictionary identification) are checked as exact finite facts on the
 declared functional surface: any realization of the declared Berezin/RP
 measure's OS correlation functional with cyclic vacuum is unitarily equivalent
 to the reconstruction via an intertwiner unique up to one scalar (exact Schur
-nullity-1 certificate), transports reconstructed parity onto the retained
-`F = ⊗σ₃` automatically, and makes GL(F) functional-level once that OS
+nullity-1 certificate), transports reconstructed parity onto the formal
+`F = ⊗σ₃` on the supplied ordered occupation carrier automatically, and makes
+GL(F) functional-level once that OS
 functional is supplied. What survives is a strictly smaller, named pin: the
 **matter-functional clause** — that the framework's physical matter
 correlation functional is the declared Berezin/RP measure's OS functional. This
@@ -39,7 +40,7 @@ reachability_to_target: partially_closes
 conditional_surface_status: "Identification bridge decomposed: carrier, parity, and dictionary clauses have exact finite support after the declared Berezin/RP OS functional is supplied as the physical matter functional; residual = the matter-functional clause (I-4), strictly smaller than the declared bridge; consumed chain grades unchanged"
 hypothetical_new_premise_status: null
 admitted_observation_status: null
-claim_type_reason: "The declared Berezin/RP measure's OS correlation functional has cyclic vacuum (word vectors span the full 2^N-dim space, exact rank) and annihilates every word-sandwiched anticommutator insertion, so {psi_x, psi_y} = 0 and {psi_x, psi_y^dag} = delta_xy I hold as operator identities in EVERY realization of the functional with cyclic vacuum -- GL(F) is functional-level and identification-independent. The reconstructed words span the full matrix algebra (unique CAR_N irrep, pure state), so the intertwiner onto the explicit qubit-net Jordan-Wigner realization is unique up to one scalar (Schur nullity 1, exact), unitary after exact rational rescaling (lambda = 1 on the certified kernels), and transports the reconstructed parity F-hat = prod(1 - 2 psi^dag psi) -- a WORD in the fields -- onto the retained F = (x)sigma_3 with no separate parity choice. The hard-core frame admits intertwiner space exactly 0 (it violates only the functional clause). Conditional, not unconditional: the matter-functional clause (I-4) and the consumed chain's audit grades remain declared inputs."
+claim_type_reason: "The declared Berezin/RP measure's OS correlation functional has cyclic vacuum (word vectors span the full 2^N-dim space, exact rank) and annihilates every word-sandwiched anticommutator insertion, so {psi_x, psi_y} = 0 and {psi_x, psi_y^dag} = delta_xy I hold as operator identities in EVERY realization of the functional with cyclic vacuum -- GL(F) is functional-level and identification-independent. The reconstructed words span the full matrix algebra (unique CAR_N irrep, pure state), so the intertwiner onto the explicit qubit-net Jordan-Wigner realization is unique up to one scalar (Schur nullity 1, exact), unitary after exact rational rescaling (lambda = 1 on the certified kernels), and transports the reconstructed parity F-hat = prod(1 - 2 psi^dag psi) -- a WORD in the fields -- onto the formal F = (x)sigma_3 on the supplied ordered occupation carrier with no separate parity choice. The hard-core frame admits intertwiner space exactly 0 (it violates only the functional clause). Conditional, not unconditional: the matter-functional clause (I-4) and the consumed chain's audit grades remain declared inputs."
 proposal_allowed: false
 proposal_allowed_reason: "The post-audit source boundary is conditional support only: it shrinks the parent GL(F) bridge to one named matter-functional clause but does not derive or admit that clause as retained authority. Registers no Tier-A admission, edits no ledger data, changes no row's status; independent audit must judge any later composed claim."
 audit_required_before_effective_retained: true
@@ -74,8 +75,9 @@ declares, in its reconstruction-identification boundary:
 > `GL(F)` for the OS-reconstructed operator theory of the retained measure.
 > Identifying the framework's physical operator theory with that
 > reconstruction is a bridge: it is supported here by (R-a) (dimensions match
-> the qubit net exactly) and (R-e) (the reconstructed parity equals the
-> retained `F`), but it is an identification, analogous to the
+> the qubit net exactly) and (R-e) (the reconstructed parity equals the formal
+> `F` after that ordered carrier is supplied), but it is an identification,
+> analogous to the
 > readout-identification boundary of the observable-principle lane, and is
 > left to the audit lane to grade.
 
@@ -103,18 +105,20 @@ The bridge, read literally, is the conjunction of four clauses:
   makes a unitary identification exist trivially; *which* unitary is the
   content of (I-3), where it is forced, not chosen.
 
-- **(I-2) Parity clause.** The physical grading is the retained
-  `F = ⊗σ₃ = (−1)^Q` and the reconstructed grading `F̂` corresponds to it.
-  **Supplier status: discharged — upgraded here from a supported observation
-  to a theorem.** The retained parity rows supply `F`, its `⊗σ₃` form (F5),
-  and the balanced multiplicities `2^{N−1}/2^{N−1}` (F4) (recomputed, runner
+- **(I-2) Parity clause.** On the carrier supplied by (I-1), the formal
+  comparison grading is `F = ⊗σ₃ = (−1)^Q` and the reconstructed grading `F̂`
+  corresponds to it. Calling that grading physical remains conditional on the
+  matter-functional clause (I-4). **Algebraic clause: discharged — upgraded
+  here from a supported observation to a theorem.** The parity theorem supplies
+  `F`, its `⊗σ₃` form,
+  and the balanced multiplicities `2^{N−1}/2^{N−1}` (recomputed, runner
   [A]). The parent's (R-e) showed `F̂ = ⊗σ₃` *under the occupation
   identification* — i.e., conditional on a chosen map. The upgrade (runner
   [B], [C]): `F̂` equals the **word** `∏_x (1 − 2 ψ_x^† ψ_x)` in the
   reconstructed fields exactly, and number operators are dressing-invariant
   (`n_x` is the same operator for the Pauli and Jordan-Wigner multiplets,
   runner [A]); therefore EVERY intertwiner that transports the fields
-  transports `F̂` onto the retained `F` automatically. No separate parity
+  transports `F̂` onto the formal `F` automatically. No separate parity
   identification exists to be assumed. The unique intertwiner of (I-3)
   satisfies `S F̂ = F S` exactly (runner [C]).
 
@@ -224,8 +228,8 @@ violating exactly one retained input escapes:
   while reconstructing cross-site-commuting operators — the machinery is
   branch-sensitive, mirror-symmetric to the hard-core escape;
 - an involution with **unbalanced multiplicities** can never be unitarily
-  aligned with `F̂` (trace invariant) — the retained balanced-multiplicity
-  fact (parity row (F4)) is load-bearing for the parity clause;
+  aligned with `F̂` (trace invariant) — the formal balanced-multiplicity fact
+  from the parity theorem is load-bearing for the parity clause;
 - restricting to the **even word subalgebra**, the vacuum is no longer
   cyclic (span `2^{N−1} < 2^N`) — the cyclicity hypothesis of T1 is
   load-bearing (see boundary 4).
@@ -240,8 +244,8 @@ first-principles finite reconstruction they are computed on.
 
 ## 4. Proof notes (mapping to the runner)
 
-- **[A] retained suppliers recomputed.** Per-site irreducible carrier
-  (Pauli span rank 4, commutant = scalars); retained parity row
+- **[A] algebraic suppliers recomputed.** Per-site irreducible carrier
+  (Pauli span rank 4, commutant = scalars); formal parity theorem
   (`F = ⊗σ₃ = ∏(1 − 2n_x)`, involution, balanced multiplicities); the static
   tie (Pauli vs Jordan-Wigner multiplets: identical `n_x`, both `F`-odd, one
   commuting, one CAR) — establishing that carrier + parity + occupation data
@@ -282,8 +286,9 @@ Load-bearing (markdown links):
    anticommutation — exactly the frame-blindness this note's [A] tie
    recomputes).
 3. [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
-   — retained. License used: `F = (−1)^Q`, the `⊗σ₃` product formula (F5),
-   and the balanced multiplicities (F4) — the multiplicity fact is
+   — current grade is pipeline-derived. License used only after (I-1) supplies
+   the ordered occupation carrier: `F = (−1)^Q`, the `⊗σ₃` product formula,
+   and the balanced multiplicities — the multiplicity fact is
    load-bearing for the parity clause (runner [D] parity escape). Its
    selector disclaimer is preserved: the grading is consumed as a carrier
    comparison target, not as a statistics selector.
@@ -429,13 +434,13 @@ including, among others, the load-bearing lines (verbatim):
 ```text
 [C] PASS: N = 3: FUNCTIONAL-LEVEL GL(F) -- every word-sandwiched value omega(w^dag ({psi_x, psi_y}) w') and omega(w^dag ({psi_x, psi_y^dag} - delta_xy I) w') vanishes exactly (all 64 x 64 word pairs, all x, y); combined with cyclicity, the exchange relations hold as OPERATOR IDENTITIES in EVERY realization of the functional with cyclic vacuum -- GL(F) is a property of the functional, invariant under the choice of identification
 [C] PASS: N = 3: UNIQUE INTERTWINER -- the space of operators S with S psi_x = c_x S and S psi_x^dag = c_x^T S (c = qubit-net Jordan-Wigner multiplet) has dimension EXACTLY 1 (Schur), S is invertible, and S^T S = lambda Gp with rational lambda > 0: the identification of the reconstruction with the qubit net is FORCED up to one overall scalar, i.e., W = S/sqrt(lambda) is the unique-up-to-sign unitary identification  (lambda = 1)
-[C] PASS: N = 3: PARITY AUTO-ALIGNMENT -- the unique intertwiner transports F-hat onto the retained F = (x)sigma_3 exactly (S F-hat = F S), with no separate parity identification choice: F-hat is the word prod(1 - 2 psi^dag psi) and number operators are dressing-invariant, so clause (I-2) is a theorem, not an input
+[C] PASS: N = 3: PARITY AUTO-ALIGNMENT -- the unique intertwiner transports F-hat onto the formal F = (x)sigma_3 on the supplied ordered carrier exactly (S F-hat = F S), with no separate parity identification choice: F-hat is the word prod(1 - 2 psi^dag psi) and number operators are dressing-invariant, so the algebraic part of clause (I-2) is a theorem, not an input
 [D] PASS: N = 3: HARD-CORE ESCAPE -- the intertwiner space onto the cross-site-commuting Pauli (hard-core) multiplet is EXACTLY 0: no identification of the reconstruction with the hard-core frame exists at all (the frame violates the functional clause I-4, and only that clause -- it carries the same carrier, the same parity-oddness, the same number operators)  (kernel dim = 0)
 ```
 
 ```yaml
 claim_type_author_hint: bounded_theorem
-claim_scope: "Conditional narrow theorem: the GL(F) reconstruction note's declared reconstruction-identification bridge decomposes into carrier, parity, dictionary, and matter-functional clauses. On the recomputed two-slice Theta-symmetric RP Berezin surface (exact, N = 2, 3): the OS vacuum is cyclic for field words, every word-sandwiched anticommutator-insertion value of the OS functional vanishes (GL(F) is functional-level, holding as an operator identity in every cyclic realization), the words span the full matrix algebra (unique CAR_N irrep, pure state), the intertwiner onto the explicit qubit-net Jordan-Wigner realization is unique up to one scalar (Schur nullity 1) and unitary after exact rescaling, and it transports F-hat = prod(1 - 2 psi^dag psi) onto the retained (x)sigma_3 automatically. Hence clauses (I-1)-(I-3) are theorems given (I-4); the bridge residual is exactly the matter-functional clause (I-4), strictly smaller than declared and arguably co-extensive with the parent's action-surface conditionality. Falsification: the hard-core frame has intertwiner space exactly 0; the ungraded-integrand reconstruction mirrors it; unbalanced parity multiplicities and even-subalgebra restriction escape. Conditional on (I-4) and the consumed chain's audit grades; no retained no-go contradicted."
+claim_scope: "Conditional narrow theorem: the GL(F) reconstruction note's declared reconstruction-identification bridge decomposes into carrier, parity, dictionary, and matter-functional clauses. On the recomputed two-slice Theta-symmetric RP Berezin surface (exact, N = 2, 3): the OS vacuum is cyclic for field words, every word-sandwiched anticommutator-insertion value of the OS functional vanishes (GL(F) is functional-level, holding as an operator identity in every cyclic realization), the words span the full matrix algebra (unique CAR_N irrep, pure state), the intertwiner onto the explicit qubit-net Jordan-Wigner realization is unique up to one scalar (Schur nullity 1) and unitary after exact rescaling, and it transports F-hat = prod(1 - 2 psi^dag psi) onto the formal (x)sigma_3 on the supplied ordered carrier automatically. Hence clauses (I-1)-(I-3) are theorems given (I-4); the bridge residual is exactly the matter-functional clause (I-4), strictly smaller than declared and arguably co-extensive with the parent's action-surface conditionality. Falsification: the hard-core frame has intertwiner space exactly 0; the ungraded-integrand reconstruction mirrors it; unbalanced parity multiplicities and even-subalgebra restriction escape. Conditional on (I-4) and the consumed chain's audit grades; no retained no-go contradicted."
 upstream_dependencies:
   - minimal_axioms
   - tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25

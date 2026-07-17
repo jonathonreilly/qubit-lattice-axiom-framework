@@ -24,7 +24,8 @@ matter-functional clause or close the parent bridge.
         retained tensor-product bridge; GNS dimension matches.   EXACT SUPPORT.
   (I-2) parity clause      -- the reconstructed grading F-hat is a WORD in the
         reconstructed fields, F-hat = prod_x (1 - 2 psi_x^dag psi_x), so EVERY
-        intertwiner transports it onto the retained F = (x)sigma_3
+        intertwiner transports it onto the formal F = (x)sigma_3 on the
+        supplied ordered occupation carrier
         automatically (number operators are dressing-invariant). EXACT SUPPORT.
   (I-3) dictionary clause  -- the field dictionary is FORCED: the OS functional
         of the declared Berezin/RP measure has cyclic vacuum, its word values vanish on
@@ -570,7 +571,7 @@ def main():
         mult_plus = sum(1 for i in range(dim) if Fq[i][i] == 1)
         odd_p = all(is_zero(anticomm(Fq, pauli[x])) for x in range(N))
         odd_j = all(is_zero(anticomm(Fq, jw[x])) for x in range(N))
-        check("A", "N = %d: retained parity row recomputed: F = (x)sigma_3 = "
+        check("A", "N = %d: formal parity theorem recomputed: F = (x)sigma_3 = "
                    "prod_x (1 - 2 n_x), F^2 = I, balanced multiplicities "
                    "(2^{N-1} = %d each)" % (N, dim // 2),
               Fprod == Fq and invol and mult_plus == dim // 2)
@@ -805,10 +806,11 @@ def main():
               ok_null and ok_inv and ok_unit,
               "lambda = %s" % lam)
 
-        # C5: the forced identification transports the parity onto the RETAINED F
+        # C5: the forced identification transports parity onto the formal F.
         ok_par = ok_inv and mat_mul(S0, Fhat) == mat_mul(Fq, S0)
         check("C", "N = %d: PARITY AUTO-ALIGNMENT -- the unique intertwiner "
-                   "transports F-hat onto the retained F = (x)sigma_3 exactly "
+                   "transports F-hat onto the formal F = (x)sigma_3 on the "
+                   "supplied ordered carrier exactly "
                    "(S F-hat = F S), with no separate parity identification "
                    "choice: F-hat is the word prod(1 - 2 psi^dag psi) and number "
                    "operators are dressing-invariant, so clause (I-2) is a "
@@ -931,7 +933,7 @@ def main():
     check("D", "N = 3: PARITY ESCAPE -- an involution with unbalanced "
                "multiplicities (trace 2^N - 2 = %d) can never be unitarily "
                "aligned with F-hat (trace %d): conjugation preserves the trace, "
-               "so the retained balanced-multiplicity fact (parity row (F4)) is "
+               "so the formal balanced-multiplicity fact from the parity theorem is "
                "load-bearing for the parity clause" % (G_bad_tr, tr_F),
           tr_F == 0 and G_bad_tr != 0)
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py
-runner_sha256: 074624d9d587cad730972355ea14d4370f88f0330f60187f23d893f33fcd1f15
+runner_sha256: 52dd68b5b9d71ec6d40bd452516b6448ca798ec8ee865d8502e58b8b8562ad7b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.61
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 
@@ -13,14 +13,14 @@ status: ok
 [A] PASS: per-site Fock dim: hard-core = 2 and Grassmann pair = 2 (equal)  (dimension readout is constant across the two frames)
 [A] PASS: ungraded algebra: <sigma_+^(x), sigma_3^(x)> spans dim 64 = 4^3 = full M_{2^3}(C)
 [A] PASS: ungraded algebra: <c_x, c_x^+> spans dim 64 = 4^3 = same full matrix algebra  (identical ungraded algebra: statistics is a frame choice (no-go (C)))
-[A] PASS: retained grading: F^2 = I and Spec(F) = {+1, -1}
+[A] PASS: formal grading: F^2 = I and Spec(F) = {+1, -1}
 [A] PASS: F-oddness of the hard-core fields: {F, sigma_+^(x)} = 0 for all x
-[A] PASS: F-oddness of the JW fields: {F, c_x} = 0 for all x  (BOTH frames are F-odd: the retained Z2-grading row is frame-blind)
+[A] PASS: F-oddness of the JW fields: {F, c_x} = 0 for all x  (BOTH frames are F-odd: the formal Z2 grading is frame-blind)
 [A] PASS: F-evenness of bilinears in both frames: [F, a_x^+ a_y] = [F, c_x^+ c_y] = 0
 [A] PASS: open-chain L=4 nearest-neighbour hopping: H_hard_core == H_JW exactly  (T = exp(-tau H) identical => transfer positivity sees no frame difference)
 
 ========================================================================================
-[B] The discriminator GL(F): cross-site graded locality relative to the retained parity grading
+[B] The discriminator GL(F): cross-site graded locality relative to the formal parity grading on the supplied carrier
 ========================================================================================
 [B] PASS: JW/Grassmann frame PASSES GL(F): {c_x, c_y} = {c_x, c_y^+} = 0 for x != y
 [B] PASS: JW/Grassmann frame on-site CAR: {c_x, c_x^+} = I, c_x^2 = 0
@@ -40,24 +40,24 @@ status: ok
 ========================================================================================
 [D] PASS: hard-core ladders VIOLATE the 04-29 S2 hypothesis on-site: [a, a^+] = 1 - 2n != I (defect norm = 2)  (boundary diagnostic only: this note does not consume 04-29 as a GL(F) supplier)
 [D] PASS: so the 04-29 bosonic exclusion is scoped to the FREE (CCR) boson only -- it re-proves the retained dimensional half, not the tie-breaker
-[D] PASS: retained Z2-grading row is carrier, not selector (frame-blindness computed in [A])
+[D] PASS: formal Z2 grading is a comparison object, not a physical carrier or selector (frame-blindness computed in [A])
 [D] PASS: retained positivity surface is frame-blind (H_hard_core == H_JW computed in [A])  (consistent with retained car_from_positivity_neutrality no-go)
 
 ========================================================================================
-[E] Source-packet freshness: one-hop authorities match current main
+[E] Source-packet firewall: live grades stay pipeline-owned
 ========================================================================================
-[E] PASS: source packet status: 04-29 spin-statistics row is retained_bounded and consumed only for CCR/free-boson exclusion
-[E] PASS: source packet status: 05-16 Grassmann/free-CCR bridge is retained
-[E] PASS: source packet status: retained no-go and retained parity-grading rows remain the baseline/non-supplier inputs
+[E] PASS: formal parity theorem is consumed only after an ordered carrier is supplied
+[E] PASS: formal parity theorem contributes no physical carrier, selector, or dynamics
+[E] PASS: live audit grades are not hard-pinned in current dependency licenses
 [E] PASS: stale missing-dependency language removed: the note no longer treats 04-29 spin-statistics as unaudited or the 05-16 bridge as pending
 
 ========================================================================================
 Summary
 ========================================================================================
   Verified (numpy, tol 1e-12, exact integer-entry constructions):
-    [A] dim, ungraded algebra, retained Z2 grading F, and transfer
+    [A] dim, ungraded algebra, formal Z2 grading F, and transfer
         positivity are each CONSTANT across the two tied frames;
-    [B] GL(F) (cross-site graded locality w.r.t. retained F) is
+    [B] GL(F) (cross-site graded locality w.r.t. formal F) is
         NON-constant: Grassmann/CAR passes, hard-core fails; with the
         retained dim-2 readout, exactly one candidate survives;
     [C] removing GL(F) restores the tie (retained no-go reproduced);
@@ -66,8 +66,8 @@ Summary
         note's S2 hypothesis is the canonical CCR, which the hard-core
         boson violates on-site, so this row does not consume 04-29 as
         a GL(F) supplier;
-    [E] the source packet consumes current retained/retained_bounded
-        one-hop authorities and carries no stale missing-dependency text.
+    [E] dependency grades remain pipeline-owned; the formal parity
+        theorem is consumed without importing a physical selector.
   BOUNDARY (declared, not claimed): GL(F) is NOT retained and NOT a
   Tier-A admission. This runner proves a CONDITIONAL selection only;
   unconditionally, the retained 2026-05-25 no-go stands.

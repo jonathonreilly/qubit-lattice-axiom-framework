@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_probe_retained_u1_hunt_2026_05_09_probe14.py
-runner_sha256: 465124e46c1427e53f2b8b5ef1e8f5d2245cee7214351ef8fa78736faf747bc2
+runner_sha256: 7e5867f28b34805ac91eefebbd3e780621fbca85700e7732d7bbb06c1a7b8c57
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 
@@ -48,7 +48,9 @@ Section 2: Candidate 1 — Q̂_total (fermion-number U(1))
 ======================================================================
 
 Source: AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29 (N2)
-        FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02 (F7-F8)
+        FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02
+        (formal ordered occupation-space algebra only; the Noether row
+         separately supplies any physical charge/conservation reading)
 Action: chi_x -> e^{i alpha} chi_x for all sites x simultaneously.
         Q̂_total = sum_x n̂_x is the conserved Noether charge.
 
@@ -84,7 +86,7 @@ Test 5 (closure of A1): Q̂_total invariance is automatic for
   PASS  2.8 Different |b|^2/a^2 ratios all Q̂-invariant — Q̂_total does NOT pin |b|^2/a^2 = 1/2
 
 VERDICT (Candidate 1, Q̂_total):
-    Test 1: PASS (retained)
+    Test 1: PASS only through the separately cited lattice-Noether source
     Test 2: PASS (acts as IDENTITY on M_3(C) — non-trivial in F4 sense, but
             trivial on bilinears)
     Test 3: PASS (trivially commutes)

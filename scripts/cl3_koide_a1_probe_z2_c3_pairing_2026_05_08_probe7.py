@@ -599,66 +599,62 @@ def section4_z2_fermion_parity():
     """Z_2 candidate (4): fermion parity F = (-1)^{Q̂_total}.
 
     Per FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02 (positive_theorem):
-    F is the framework's retained fermion-parity superselection operator.
+    F is a formal grading on a supplied ordered occupation carrier. The theorem
+    selects neither a physical carrier nor a superselection rule.
 
     Properties (cited):
-      - F = ⊗_x σ_{3,x} on Fock space (F5)
-      - {F, a_x} = 0 (Z_2-odd on single fermions, F6)
-      - [F, a_x^† a_y] = 0 (Z_2-EVEN on bilinears, F7)
-      - [F, H] = 0 for any Hamiltonian Z_2-even (F8)
+      - F = ⊗_x σ_{3,x} on the ordered occupation space
+      - {F, a_x} = 0 (Z_2-odd ladder operators)
+      - [F, a_x^† a_y] = 0 (Z_2-even bilinears)
+      - [F, H] = 0 for sums of even monomials
 
-    Test 1 (existence): retained as positive_theorem.
+    Test 1 (formal construction): exact on the supplied carrier.
     Test 2 (commutation): F is Z_2-even on bilinears (corollary F7),
                           so on the hw=1 generation triplet (which lives
                           in the 1-fermion-bilinear sector), F commutes
                           with all C_3-equivariant operators.
                           Generates Z_6 = Z_2 × C_3, but trivially.
-    Test 3 (eigenmode): on the bilinear sector, F acts as +I_{bilinear}
-                          (since bilinears have Z_2 charge 0). So F
-                          imposes NO non-trivial constraint on the
-                          circulant (a, b).
+    Test 3 (adjoint action): conditional on the separate bridge from the hw=1
+                          operators to even occupation monomials, conjugation
+                          by F is the identity. This is not a physical selector.
     Test 4 (normalization): no Frobenius weight, no ratio constraint.
     Test 5 (convention): n/a.
     """
     print("Section 4 — Z_2 Candidate (4): Fermion parity F = (-1)^Q̂_total")
     results = []
 
-    # 4.T1 — Existence: F retained as positive_theorem per FERMION_PARITY note
-    # Demonstrate F = ⊗ σ_3 on N=3 sites Fock (toy-size proxy)
+    # 4.T1 — Exact formal construction on a supplied N=3 occupation space.
     F_3site = np.kron(np.kron(SIGMA_3, SIGMA_3), SIGMA_3)
     F_3site_sq = F_3site @ F_3site
     results.append(passfail(
-        "Test 1 (existence): F = ⊗ σ_3 satisfies F^2 = I (per FERMION_PARITY F2)",
+        "Test 1 (formal construction): F = ⊗ sigma_3 satisfies F^2 = I",
         np.allclose(F_3site_sq, np.eye(8), atol=ATOL),
     ))
 
-    # 4.T1.b — F has spectrum {±1} (per F3)
+    # 4.T1.b — F has spectrum {±1}.
     eigs_F = np.linalg.eigvalsh(F_3site)
     results.append(passfail(
-        "F has spectrum {+1, -1} (per F3)",
+        "F has spectrum {+1, -1}",
         all(abs(abs(e) - 1) < ATOL for e in eigs_F),
     ))
 
-    # 4.T2 — F is Z_2-even on bilinears: [F, a_x^† a_y] = 0 (per F7)
+    # 4.T2 — F is Z_2-even on bilinears: [F, a_x^† a_y] = 0.
     # Toy: a_1 = σ_+ on site 1
     a1 = np.kron(np.kron(np.array([[0, 1], [0, 0]], dtype=complex), I2), I2)
     a1_dagger = np.conjugate(a1.T)
     bilinear_11 = a1_dagger @ a1  # number op n_1
     F_bilinear_commute = commutes(F_3site, bilinear_11)
     results.append(passfail(
-        "Test 2 (commutation): [F, a_x^† a_y] = 0 (Z_2-EVEN on bilinears, F7)",
+        "Test 2 (commutation): [F, a_x^dagger a_y] = 0 on the formal carrier",
         F_bilinear_commute,
     ))
 
-    # 4.T2.b — On the bilinear sector (where the hw=1 generation triplet
-    # lives, since hw=1 corresponds to occupation patterns of fermion
-    # bilinears via the staggered-Dirac realization), F acts trivially
-    # (as identity, since bilinears have F-charge 0).
-    # Model: F on bilinear sector = +I
+    # 4.T2.b — Conditional on the separate staggered-realization bridge from
+    # hw=1 operators to even monomials, the adjoint action is the identity.
     F_on_bilinear = np.eye(3, dtype=complex)
     f_commutes_C3 = commutes(F_on_bilinear, U_C3)
     results.append(passfail(
-        "F acts trivially on bilinear sector hw=1 — commutes with C_3 trivially",
+        "conditional formal F adjoint action is trivial on hw=1 bilinears",
         f_commutes_C3,
         "Generates Z_6, but Z_2 acts as identity (degenerate Z_2 × C_3 = C_3)",
     ))
@@ -1204,11 +1200,11 @@ def section11_theorem_statement():
     Theorem (Probe 7 bounded obstruction).
 
     On A1+A2 + retained CL3_SM_EMBEDDING + retained C_3-equivariance on
-    hw=1 + retained CIRCULANT_PARITY_CP_TENSOR Z_2 algebra + retained
-    FERMION_PARITY_Z_2_GRADING + retained APBC convention + retained
+    hw=1 + retained CIRCULANT_PARITY_CP_TENSOR Z_2 algebra + the formal
+    FERMION_PARITY_Z_2_GRADING after a separate occupation-carrier bridge + retained APBC convention + retained
     Z2_HW1_MASS_MATRIX parametrization + admissible standard math:
 
-      None of the 5 retained-grade Z_2 candidates {inversion, axis-
+      None of the 5 inventoried Z_2 candidates {inversion, axis-
       transposition, pseudoscalar ω-flip, fermion parity F, APBC twist}
       paired with C_3 produces a Z_2-equivariance constraint that
       canonically forces |b|²/a² = 1/2 on C_3-equivariant Hermitian

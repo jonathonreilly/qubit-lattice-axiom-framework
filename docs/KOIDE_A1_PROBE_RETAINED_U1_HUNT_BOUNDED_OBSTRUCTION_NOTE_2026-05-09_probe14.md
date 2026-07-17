@@ -109,7 +109,7 @@ Nine retained U(1) candidates examined. Each tested for:
 
 | # | Candidate | T1 | T2 | T3 | T4 | T5 | Reason for failure |
 |---|---|---|---|---|---|---|---|
-| 1 | `Q̂_total` (fermion number) | ✓ | trivial on bilinears | trivially | ✗ | ✗ | acts as identity on M_3(C); no projection |
+| 1 | `Q̂_total` (formal occupation generator; physical Noether reading comes from the separate lattice-Noether row) | ✓ via that separate row | trivial on number-preserving bilinears | trivially | ✗ | ✗ | the parity theorem alone selects neither the physical carrier nor number-conserving dynamics; on the supplied surface the action is identity on M_3(C), so there is no projection |
 | 2 | `U(1)_Y` hypercharge | ✓ | non-trivial on full Cl(3) | ✓ | ✗ | ✗ | Y commutes with circulants → conjugation trivial on `A^{C_3}` |
 | 3 | `e^{iθω}` (pseudoscalar) | ✓ | non-trivial on Cl(3) | ✓ | ✗ | ✗ | ω is central in Cl(3); conjugation by e^{iθω} is identity |
 | 4 | `U(1)_em` electromagnetic | ✓ | non-trivial | ✓ | ✗ | ✗ | same structure as U(1)_Y; projects to identity on `A^{C_3}` |
@@ -146,8 +146,10 @@ The 9 candidates inventory the campaign's currently cited retained
 continuous-symmetry surface; this note does not certify global
 exhaustiveness outside those cited surfaces:
 
-- **Internal symmetries**: Q̂_total (fermion #), U(1)_Y (hypercharge),
-  U(1)_em (electromagnetic) — all act on Cl(3) as conjugation
+- **Internal symmetries**: the separately supplied lattice-Noether `Q̂_total`
+  reading (the parity theorem contributes only its formal occupation-space
+  algebra), U(1)_Y (hypercharge), and U(1)_em (electromagnetic) — all act on
+  the tested surface as conjugation
 - **Discrete-symmetry continuous extensions**: e^{iθω} (pseudoscalar),
   Z_3 ⊂ U(1) (C_3 character grading) — pseudoscalar is central → trivial
   conjugation; Z_3 has no retained continuous extension
@@ -214,10 +216,15 @@ retained framework symmetry supplies.
   (PR #755),
   [`KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md`](KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md)
   (PR #763)
-- **Retained continuous-symmetry sources**:
+- **Continuous-symmetry sources**:
   [`CL3_SM_EMBEDDING_THEOREM.md`](CL3_SM_EMBEDDING_THEOREM.md),
-  [`STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md),
-  [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
+  and
+  [`STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
+- **Formal occupation-space algebra used for the `Q̂_total` diagnostic**:
+  [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md).
+  Its current grade is pipeline-derived, and it supplies no physical Noether
+  charge or dynamics; those come, if available, from the separate
+  lattice-Noether source named in the runner.
 - **Retained no-go**:
   [`KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_*.md`](KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE.md)
   — every retained radian is rational × π

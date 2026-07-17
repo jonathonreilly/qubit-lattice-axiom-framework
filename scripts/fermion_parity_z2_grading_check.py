@@ -1,302 +1,702 @@
-"""Total occupation parity (-1)^Q_hat on framework Fock space.
+#!/usr/bin/env python3
+"""Exact evidence for the ordered finite-mode fermion-parity theorem.
 
-Define the total occupation-number operator directly on the finite
-occupation/Fock space and define the occupation-parity operator
+The runner uses only finite matrices and exact SymPy arithmetic. It neither
+reads the theorem note, audit data, prose/status files, nor external data.
 
-    (-1)^Q̂  :=  exp(i π Q̂)
-
-acting on the framework's N-site Fock space H = ⊗_{x=1}^N C².
-
-Then:
-  (P1) (-1)^Q̂ is unitary and Hermitian (its own inverse): ((-1)^Q̂)² = I
-  (P2) [H_dyn, F] = 0 is necessary and sufficient for parity conservation;
-       [H_dyn, Q̂] = 0 is sufficient and, for N >= 2, not necessary in
-       general; at N = 1 the two commutation conditions are equivalent
-  (P3) Spec((-1)^Q̂) = {+1, -1}
-  (P4) Z_2 grading: H = H_even ⊕ H_odd with dim H_even = dim H_odd = 2^{N-1}
-  (P5) Local ladder operator a_x is Z_2-odd: (-1)^Q̂ a_x (-1)^Q̂ = -a_x
-  (P6) Local bilinear a_x^† a_y is Z_2-even: invariant under (-1)^Q̂
-
-This is the framework's algebraic occupation-parity grading: the proved
-Z_2-even bilinears and number operators preserve parity sectors.
-
-Tests:
-  (T1) (-1)^Q̂ is Hermitian
-  (T2) ((-1)^Q̂)² = I
-  (T3) [(-1)^Q̂, n̂_x] = 0 for all x (since n̂ is Z_2-even)
-  (T4) Spec((-1)^Q̂) = {+1, -1}
-  (T5) Z_2-grading dim balance: dim H_even = dim H_odd = 2^{N-1}
-  (T6) Z_2-odd action on a_x: {(-1)^Q̂, a_x} = 0
-  (T7) Z_2-even action on bilinears: [(-1)^Q̂, a_x^† a_y] = 0
-  (T8) [H_dyn, Q̂] = 0 implies [H_dyn, F] = 0 on a number-conserving H
-  (T9) N = 1 equivalence and N >= 2 negative-converse pair control
-  (T10) [H_dyn, F] = 0 iff the parity-mixing blocks (and dF/dt) vanish
+Modes:
+  normal               construct Jordan-Wigner operators and verify the theorem
+  independent          classify Q and F commutants from occupation sectors
+  hostile              require every named scientific mutation to be rejected
+  intentional-failure  promote selected hostile fixtures and exit nonzero
 """
+
 from __future__ import annotations
 
-import numpy as np
+import argparse
+import ast
+from dataclasses import dataclass
+from itertools import product
+from pathlib import Path
+
+import sympy as sp
 
 
-def kron_chain(matrices: list[np.ndarray]) -> np.ndarray:
-    result = matrices[0]
-    for M in matrices[1:]:
-        result = np.kron(result, M)
+SOURCE_PATH = Path(__file__).resolve()
+FIXTURES = (
+    "false-converse",
+    "odd-number-change",
+    "wrong-product-phase",
+    "bare-local-car",
+    "wrong-sector-dimension",
+    "even-means-number-conserving",
+    "wrong-pair-order",
+)
+
+
+class Checks:
+    def __init__(self) -> None:
+        self.passes = 0
+        self.failures = 0
+
+    def record(self, label: str, condition: bool, detail: str) -> None:
+        status = "PASS" if condition else "FAIL"
+        if condition:
+            self.passes += 1
+        else:
+            self.failures += 1
+        print(f"[{status}] {label}: {detail}")
+
+    def finish(self) -> int:
+        print(f"TOTAL: PASS={self.passes} FAIL={self.failures}")
+        return 0 if self.failures == 0 else 1
+
+
+@dataclass(frozen=True)
+class JWData:
+    n_modes: int
+    identity: sp.Matrix
+    lower: sp.Matrix
+    z_local: sp.Matrix
+    a: tuple[sp.Matrix, ...]
+    adag: tuple[sp.Matrix, ...]
+    n_ops: tuple[sp.Matrix, ...]
+    q_total: sp.Matrix
+    q_values: tuple[int, ...]
+    parity_values: tuple[int, ...]
+    projectors: tuple[sp.Matrix, ...]
+    f_exponential: sp.Matrix
+    f_spectral: sp.Matrix
+    f_product: sp.Matrix
+
+
+def matrix_zero(matrix: sp.Matrix) -> bool:
+    return all(sp.simplify(entry) == 0 for entry in matrix)
+
+
+def matrix_equal(left: sp.Matrix, right: sp.Matrix) -> bool:
+    return left.shape == right.shape and matrix_zero(left - right)
+
+
+def commutator(left: sp.Matrix, right: sp.Matrix) -> sp.Matrix:
+    return left * right - right * left
+
+
+def anticommutator(left: sp.Matrix, right: sp.Matrix) -> sp.Matrix:
+    return left * right + right * left
+
+
+def kron_all(factors: list[sp.Matrix]) -> sp.Matrix:
+    if not factors:
+        return sp.ones(1, 1)
+    result = factors[0]
+    for factor in factors[1:]:
+        result = sp.kronecker_product(result, factor)
     return result
 
 
-def main() -> None:
-    print("=" * 72)
-    print("FRAMEWORK OCCUPATION PARITY (-1)^Q̂ AND Z_2 GRADING")
-    print("=" * 72)
-    print()
-
-    N = 4  # 4-site Fock space
-    dim = 2 ** N
-    print(f"  Toy model: N = {N} sites, dim = {dim}")
-    print()
-
-    a_op = np.array([[0, 1], [0, 0]], dtype=complex)  # σ_+
-    a_dag = a_op.conj().T  # σ_-
-    n_local = a_dag @ a_op  # diag(0, 1)
-    sigma_3 = np.array([[1, 0], [0, -1]], dtype=complex)
-    I2 = np.eye(2, dtype=complex)
-
-    def at_site(local_op: np.ndarray, x: int) -> np.ndarray:
-        factors = [local_op if i == x else I2 for i in range(N)]
-        return kron_chain(factors)
-
-    # Build Q̂_total
-    Q_total = sum(at_site(n_local, x) for x in range(N))
-    Iden = np.eye(dim, dtype=complex)
-
-    # Build (-1)^Q̂ via spectral decomposition (since Q̂ is diagonal in Fock basis)
-    # Easier: use σ_3-formula. n = (I - σ_3)/2, so Q = N/2 - (1/2) Σ σ_3,x
-    # Then (-1)^Q = (-1)^{N/2 - (1/2) Σ σ_3} = (-1)^{N/2} · (-1)^{-(1/2) Σ σ_3}
-    # = (-1)^{N/2} · ∏_x (-1)^{-σ_3,x / 2}
-    # Hmm, easier: (-1)^Q is diagonal in Fock basis with value (-1)^{|ν|} on |ν⟩
-    # = ∏_x (-1)^{ν_x} = ∏_x σ_3,x (with appropriate convention)
-    # Specifically: ν_x = 0 ↔ σ_3 = +1, ν_x = 1 ↔ σ_3 = -1
-    # So (-1)^{ν_x} = +1 if ν_x = 0 (σ_3 = +1), and -1 if ν_x = 1 (σ_3 = -1)
-    # i.e. (-1)^{ν_x} = σ_3,x as an eigenvalue
-    # So (-1)^Q = ∏_x σ_3,x (tensor product of σ_3's)
-    F = kron_chain([sigma_3] * N)  # = ⊗ σ_3
-
-    # Verify F = (-1)^Q on the diagonal
-    print(f"  Computing (-1)^Q̂ via product of σ_3 over all sites")
-    diag_Q = np.diag(Q_total).real.astype(int)
-    diag_F = np.diag(F).real.astype(int)
-    expected_F_diag = (-1) ** diag_Q
-    formula_dev = np.linalg.norm(diag_F - expected_F_diag)
-    print(f"  ||diag((-1)^Q̂) - diag(⊗ σ_3)|| = {formula_dev:.3e}")
-    if formula_dev > 1e-10:
-        # If formula doesn't match, build directly via spectral decomposition
-        print("  (Falling back to direct construction via diag.)")
-        F = np.diag((-1.0) ** diag_Q).astype(complex)
-    print()
-
-    # ----- Test 1: (-1)^Q̂ is Hermitian -----
-    print("-" * 72)
-    print("TEST 1: (-1)^Q̂ is Hermitian")
-    print("-" * 72)
-    dev1 = np.linalg.norm(F - F.conj().T)
-    print(f"  ||F - F†|| = {dev1:.3e}")
-    t1_ok = dev1 < 1e-12
-    print(f"  STATUS: {'PASS' if t1_ok else 'FAIL'}")
-    print()
-
-    # ----- Test 2: F² = I (involution) -----
-    print("-" * 72)
-    print("TEST 2: ((-1)^Q̂)² = I  (involution)")
-    print("-" * 72)
-    F_sq = F @ F
-    dev2 = np.linalg.norm(F_sq - Iden)
-    print(f"  ||F² - I|| = {dev2:.3e}")
-    t2_ok = dev2 < 1e-12
-    print(f"  STATUS: {'PASS' if t2_ok else 'FAIL'}")
-    print()
-
-    # ----- Test 3: [F, n̂_x] = 0 (since n̂ is Z_2-even) -----
-    print("-" * 72)
-    print("TEST 3: [(-1)^Q̂, n̂_x] = 0  for all x  (n̂ is Z_2-even)")
-    print("-" * 72)
-    max_comm = 0.0
-    for x in range(N):
-        n_x = at_site(n_local, x)
-        comm = F @ n_x - n_x @ F
-        d = np.linalg.norm(comm)
-        max_comm = max(max_comm, d)
-    print(f"  max ||[F, n̂_x]|| = {max_comm:.3e}")
-    t3_ok = max_comm < 1e-12
-    print(f"  STATUS: {'PASS' if t3_ok else 'FAIL'}")
-    print()
-
-    # ----- Test 4: Spec(F) = {+1, -1} -----
-    print("-" * 72)
-    print("TEST 4: Spec((-1)^Q̂) = {+1, -1}")
-    print("-" * 72)
-    eigs = sorted(set(np.round(np.linalg.eigvalsh(F).real, 8)))
-    print(f"  Distinct eigenvalues: {eigs}")
-    t4_ok = eigs == [-1.0, 1.0]
-    print(f"  STATUS: {'PASS' if t4_ok else 'FAIL'}")
-    print()
-
-    # ----- Test 5: Z_2 grading dim balance -----
-    print("-" * 72)
-    print(f"TEST 5: dim H_even = dim H_odd = 2^{{N-1}} = {2 ** (N - 1)}")
-    print("-" * 72)
-    eigvals = np.linalg.eigvalsh(F).real
-    n_pos = sum(1 for e in eigvals if e > 0)
-    n_neg = sum(1 for e in eigvals if e < 0)
-    print(f"  dim H_even (eigenvalue +1) = {n_pos}")
-    print(f"  dim H_odd  (eigenvalue -1) = {n_neg}")
-    t5_ok = n_pos == 2 ** (N - 1) and n_neg == 2 ** (N - 1)
-    print(f"  STATUS: {'PASS' if t5_ok else 'FAIL'}")
-    print()
-
-    # ----- Test 6: {F, a_x} = 0 (a_x is Z_2-odd) -----
-    print("-" * 72)
-    print("TEST 6: {(-1)^Q̂, a_x} = 0  for all x  (ladder operator is Z_2-odd)")
-    print("-" * 72)
-    max_anti = 0.0
-    for x in range(N):
-        # On a tensor product, a_x acting at site x might need Jordan-Wigner-like
-        # phases for a true CAR. But the σ_+ at site x without JW string is what
-        # we use here (matches the per-site occupation convention; Q̂ is built from
-        # n̂_x = a_x^† a_x without JW).
-        a_x_op = at_site(a_op, x)
-        anti = F @ a_x_op + a_x_op @ F
-        d = np.linalg.norm(anti)
-        max_anti = max(max_anti, d)
-    print(f"  max ||{{F, a_x}}|| = {max_anti:.3e}")
-    t6_ok = max_anti < 1e-12
-    print(f"  STATUS: {'PASS' if t6_ok else 'FAIL'}")
-    print()
-
-    # ----- Test 7: [F, a_x^† a_y] = 0 (bilinears are Z_2-even) -----
-    print("-" * 72)
-    print("TEST 7: [(-1)^Q̂, a_x^† a_y] = 0  (bilinears are Z_2-even)")
-    print("-" * 72)
-    max_comm_bil = 0.0
-    for x in range(N):
-        for y in range(N):
-            a_x_dag = at_site(a_dag, x)
-            a_y = at_site(a_op, y)
-            bil = a_x_dag @ a_y
-            comm = F @ bil - bil @ F
-            d = np.linalg.norm(comm)
-            max_comm_bil = max(max_comm_bil, d)
-    print(f"  max ||[F, a_x^† a_y]|| = {max_comm_bil:.3e}")
-    t7_ok = max_comm_bil < 1e-12
-    print(f"  STATUS: {'PASS' if t7_ok else 'FAIL'}")
-    print()
-
-    # ----- Test 8: number conservation is sufficient for parity conservation -----
-    print("-" * 72)
-    print("TEST 8: [H_dyn, Q̂] = 0 implies [H_dyn, F] = 0")
-    print("-" * 72)
-    a_at = [at_site(a_op, x) for x in range(N)]
-    a_dag_at = [at_site(a_dag, x) for x in range(N)]
-    H_number = a_dag_at[0] @ a_at[1] + a_dag_at[1] @ a_at[0]
-    number_q_comm = np.linalg.norm(H_number @ Q_total - Q_total @ H_number)
-    number_f_comm = np.linalg.norm(H_number @ F - F @ H_number)
-    print(f"  ||[H_number, Q̂]|| = {number_q_comm:.3e}")
-    print(f"  ||[H_number, F]|| = {number_f_comm:.3e}")
-    t8_ok = number_q_comm < 1e-12 and number_f_comm < 1e-12
-    print(f"  STATUS: {'PASS' if t8_ok else 'FAIL'}")
-    print()
-
-    # ----- Test 9: parity conservation does not imply number conservation -----
-    print("-" * 72)
-    print("TEST 9: N = 1 equivalence; N >= 2 converse counterexample")
-    print("-" * 72)
-    H_one = a_op + a_dag
-    one_q_comm = H_one @ n_local - n_local @ H_one
-    one_f_comm = H_one @ sigma_3 - sigma_3 @ H_one
-    one_affine_dev = np.linalg.norm(sigma_3 - (I2 - 2.0 * n_local))
-    one_comm_relation_dev = np.linalg.norm(one_f_comm + 2.0 * one_q_comm)
-    print(f"  N = 1 ||F - (I - 2 Q̂)|| = {one_affine_dev:.3e}")
-    print(f"  N = 1 ||[H, F] + 2[H, Q̂]|| = {one_comm_relation_dev:.3e}")
-    H_pair = a_dag_at[0] @ a_dag_at[1] + a_at[1] @ a_at[0]
-    pair_f_comm = np.linalg.norm(H_pair @ F - F @ H_pair)
-    pair_q_comm = np.linalg.norm(H_pair @ Q_total - Q_total @ H_pair)
-    pair_herm_dev = np.linalg.norm(H_pair - H_pair.conj().T)
-    print(f"  ||H_pair - H_pair†|| = {pair_herm_dev:.3e}")
-    print(f"  ||[H_pair, F]|| = {pair_f_comm:.3e}")
-    print(f"  ||[H_pair, Q̂]|| = {pair_q_comm:.3e}  (nonzero)")
-    t9_ok = (
-        one_affine_dev < 1e-12
-        and one_comm_relation_dev < 1e-12
-        and pair_herm_dev < 1e-12
-        and pair_f_comm < 1e-12
-        and pair_q_comm > 1e-10
+def at_site(local: sp.Matrix, site: int, n_modes: int) -> sp.Matrix:
+    identity_two = sp.eye(2)
+    return kron_all(
+        [local if position == site else identity_two for position in range(n_modes)]
     )
-    print(f"  STATUS: {'PASS' if t9_ok else 'FAIL'}")
-    print()
 
-    # ----- Test 10: exact necessary-and-sufficient parity criterion -----
-    print("-" * 72)
-    print("TEST 10: [H_dyn, F] = 0 iff parity-mixing blocks vanish")
-    print("-" * 72)
-    P_even = 0.5 * (Iden + F)
-    P_odd = 0.5 * (Iden - F)
-    rng = np.random.default_rng(20260715)
-    raw = rng.standard_normal((dim, dim)) + 1j * rng.standard_normal((dim, dim))
-    H_trial = 0.5 * (raw + raw.conj().T)
-    even_to_odd = P_even @ H_trial @ P_odd
-    odd_to_even = P_odd @ H_trial @ P_even
-    trial_comm = H_trial @ F - F @ H_trial
-    block_identity_dev = np.linalg.norm(
-        trial_comm - 2.0 * (odd_to_even - even_to_odd)
-    )
-    H_parity = P_even @ H_trial @ P_even + P_odd @ H_trial @ P_odd
-    projected_cross_norm = np.linalg.norm(
-        P_even @ H_parity @ P_odd + P_odd @ H_parity @ P_even
-    )
-    projected_comm_norm = np.linalg.norm(H_parity @ F - F @ H_parity)
-    trial_cross_norm = np.linalg.norm(even_to_odd + odd_to_even)
-    heisenberg_derivative_norm = np.linalg.norm(1j * trial_comm)
-    print(f"  commutator/block identity deviation = {block_identity_dev:.3e}")
-    print(f"  parity-projected cross-block norm = {projected_cross_norm:.3e}")
-    print(f"  parity-projected ||[H, F]|| = {projected_comm_norm:.3e}")
-    print(f"  generic cross-block norm = {trial_cross_norm:.3e}  (nonzero)")
-    print(f"  generic ||dF/dt|| = ||i[H, F]|| = {heisenberg_derivative_norm:.3e}")
-    t10_ok = (
-        block_identity_dev < 1e-12
-        and projected_cross_norm < 1e-12
-        and projected_comm_norm < 1e-12
-        and trial_cross_norm > 1e-10
-        and heisenberg_derivative_norm > 1e-10
-    )
-    print(f"  STATUS: {'PASS' if t10_ok else 'FAIL'}")
-    print()
 
-    print("=" * 72)
-    print(f"  Test 1 ((-1)^Q̂ Hermitian):                       {'PASS' if t1_ok else 'FAIL'}")
-    print(f"  Test 2 (((-1)^Q̂)² = I involution):                {'PASS' if t2_ok else 'FAIL'}")
-    print(f"  Test 3 ([F, n̂_x] = 0):                            {'PASS' if t3_ok else 'FAIL'}")
-    print(f"  Test 4 (Spec = {{+1, -1}}):                         {'PASS' if t4_ok else 'FAIL'}")
-    print(f"  Test 5 (Z_2 grading dim balance):                 {'PASS' if t5_ok else 'FAIL'}")
-    print(f"  Test 6 (ladder operator is Z_2-odd: {{F, a_x}} = 0): {'PASS' if t6_ok else 'FAIL'}")
-    print(f"  Test 7 (bilinear a_x^† a_y is Z_2-even):           {'PASS' if t7_ok else 'FAIL'}")
-    print(f"  Test 8 (number conservation implies parity):         {'PASS' if t8_ok else 'FAIL'}")
-    print(f"  Test 9 (N=1 equivalence; N>=2 converse false):        {'PASS' if t9_ok else 'FAIL'}")
-    print(f"  Test 10 ([H, F] iff no parity-mixing blocks):         {'PASS' if t10_ok else 'FAIL'}")
-    all_ok = all([
-        t1_ok,
-        t2_ok,
-        t3_ok,
-        t4_ok,
-        t5_ok,
-        t6_ok,
-        t7_ok,
-        t8_ok,
-        t9_ok,
-        t10_ok,
-    ])
-    print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
-    if not all_ok:
-        raise SystemExit(1)
+def occupation_tuple(index: int, n_modes: int) -> tuple[int, ...]:
+    return tuple((index >> (n_modes - 1 - site)) & 1 for site in range(n_modes))
+
+
+def matrix_unit(dimension: int, row: int, column: int) -> sp.Matrix:
+    result = sp.zeros(dimension)
+    result[row, column] = 1
+    return result
+
+
+def build_jordan_wigner(n_modes: int) -> JWData:
+    if n_modes < 1:
+        raise ValueError("n_modes must be at least one")
+
+    identity_two = sp.eye(2)
+    lower = sp.Matrix([[0, 1], [0, 0]])
+    z_local = sp.diag(1, -1)
+    dimension = 2**n_modes
+
+    annihilators: list[sp.Matrix] = []
+    for site in range(n_modes):
+        factors = [z_local] * site + [lower] + [identity_two] * (n_modes - site - 1)
+        annihilators.append(kron_all(factors))
+    creators = [operator.H for operator in annihilators]
+    number_ops = [creators[site] * annihilators[site] for site in range(n_modes)]
+    q_total = sp.zeros(dimension)
+    for number_op in number_ops:
+        q_total += number_op
+
+    occupations = tuple(occupation_tuple(index, n_modes) for index in range(dimension))
+    q_values = tuple(sum(bits) for bits in occupations)
+    parity_values = tuple((-1) ** value for value in q_values)
+
+    projectors: list[sp.Matrix] = []
+    for charge in range(n_modes + 1):
+        projector = sp.zeros(dimension)
+        for index, value in enumerate(q_values):
+            if value == charge:
+                projector[index, index] = 1
+        projectors.append(projector)
+
+    f_exponential = sp.zeros(dimension)
+    f_spectral = sp.zeros(dimension)
+    for charge, projector in enumerate(projectors):
+        f_exponential += sp.exp(sp.I * sp.pi * charge) * projector
+        f_spectral += ((-1) ** charge) * projector
+    f_product = kron_all([z_local] * n_modes)
+
+    return JWData(
+        n_modes=n_modes,
+        identity=sp.eye(dimension),
+        lower=lower,
+        z_local=z_local,
+        a=tuple(annihilators),
+        adag=tuple(creators),
+        n_ops=tuple(number_ops),
+        q_total=q_total,
+        q_values=q_values,
+        parity_values=parity_values,
+        projectors=tuple(projectors),
+        f_exponential=f_exponential,
+        f_spectral=f_spectral,
+        f_product=f_product,
+    )
+
+
+def direct_pair_hamiltonian(n_modes: int) -> sp.Matrix:
+    if n_modes < 2:
+        raise ValueError("the pair Hamiltonian requires at least two modes")
+    pair = sp.zeros(4)
+    pair[0, 3] = 1
+    pair[3, 0] = 1
+    return kron_all([pair] + [sp.eye(2)] * (n_modes - 2))
+
+
+def source_firewall_violations() -> list[str]:
+    """Reject evidence hazards without reading any theorem or status surface."""
+
+    source = SOURCE_PATH.read_text(encoding="utf-8")
+    tree = ast.parse(source)
+    violations: list[str] = []
+    allowed_imports = {
+        "__future__",
+        "argparse",
+        "ast",
+        "dataclasses",
+        "itertools",
+        "pathlib",
+        "sympy",
+    }
+    imported_roots: set[str] = set()
+    read_calls = 0
+
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Import):
+            imported_roots.update(alias.name.split(".")[0] for alias in node.names)
+        elif isinstance(node, ast.ImportFrom) and node.module:
+            imported_roots.add(node.module.split(".")[0])
+        elif isinstance(node, ast.Call):
+            if isinstance(node.func, ast.Name) and node.func.id in {"eval", "exec", "open"}:
+                violations.append(f"forbidden call: {node.func.id}")
+            if isinstance(node.func, ast.Attribute) and node.func.attr in {
+                "read_text",
+                "read_bytes",
+                "open",
+            }:
+                read_calls += 1
+            if (
+                isinstance(node.func, ast.Attribute)
+                and node.func.attr == "record"
+                and len(node.args) >= 2
+                and isinstance(node.args[1], ast.Constant)
+                and node.args[1].value is True
+            ):
+                violations.append("literal-True evidence conclusion")
+
+    unexpected_imports = imported_roots - allowed_imports
+    if unexpected_imports:
+        violations.append(f"unexpected imports: {sorted(unexpected_imports)}")
+    if read_calls != 1:
+        violations.append(f"unexpected file-read count: {read_calls}")
+    forbidden_markers = (
+        "docs/" + "audit",
+        "AUDIT_" + "LEDGER",
+        "effective_" + "status",
+        "http" + "://",
+        "https" + "://",
+        "REFERENCE_" + "ANSWER",
+    )
+    for forbidden in forbidden_markers:
+        if forbidden in source:
+            violations.append(f"forbidden source marker: {forbidden}")
+    return violations
+
+
+def run_normal() -> int:
+    checks = Checks()
+    data = build_jordan_wigner(3)
+    dimension = data.identity.rows
+    print("ORDERED FINITE-MODE FERMION PARITY — NORMAL EXACT MODE")
+
+    firewall = source_firewall_violations()
+    checks.record(
+        "source/import firewall",
+        not firewall,
+        f"violations={firewall}",
+    )
+
+    expected_q = sp.diag(*data.q_values)
+    local_number_ok = all(
+        matrix_equal(
+            data.n_ops[site],
+            at_site(sp.diag(0, 1), site, data.n_modes),
+        )
+        for site in range(data.n_modes)
+    )
+    checks.record(
+        "ordered occupation basis and exact n_x/Q action",
+        local_number_ok and matrix_equal(data.q_total, expected_q),
+        f"Q diagonal={data.q_values}",
+    )
+
+    annihilator_car = all(
+        matrix_zero(anticommutator(data.a[x], data.a[y]))
+        for x in range(data.n_modes)
+        for y in range(data.n_modes)
+    )
+    creator_car = all(
+        matrix_zero(anticommutator(data.adag[x], data.adag[y]))
+        for x in range(data.n_modes)
+        for y in range(data.n_modes)
+    )
+    mixed_car = all(
+        matrix_equal(
+            anticommutator(data.a[x], data.adag[y]),
+            data.identity if x == y else sp.zeros(dimension),
+        )
+        for x in range(data.n_modes)
+        for y in range(data.n_modes)
+    )
+    checks.record(
+        "Jordan-Wigner construction realizes the full CAR",
+        annihilator_car and creator_car and mixed_car,
+        f"checked {3 * data.n_modes**2} exact anticommutators",
+    )
+
+    spectral_projectors_ok = (
+        matrix_equal(sum(data.projectors, sp.zeros(dimension)), data.identity)
+        and all(matrix_equal(projector * projector, projector) for projector in data.projectors)
+        and all(
+            matrix_zero(data.projectors[left] * data.projectors[right])
+            for left in range(len(data.projectors))
+            for right in range(len(data.projectors))
+            if left != right
+        )
+    )
+    checks.record(
+        "integer Q spectral decomposition",
+        spectral_projectors_ok
+        and set(data.q_values) == set(range(data.n_modes + 1)),
+        f"spectrum={sorted(set(data.q_values))}",
+    )
+
+    checks.record(
+        "F=exp(i*pi*Q) equals spectral signs and tensor-product Z",
+        matrix_equal(data.f_exponential, data.f_spectral)
+        and matrix_equal(data.f_spectral, data.f_product),
+        "three independently constructed exact matrices agree",
+    )
+
+    f_properties = (
+        matrix_equal(data.f_product.H, data.f_product)
+        and matrix_equal(data.f_product.H * data.f_product, data.identity)
+        and matrix_equal(data.f_product * data.f_product, data.identity)
+    )
+    checks.record(
+        "F is Hermitian, unitary, and involutive",
+        f_properties,
+        "F^dagger=F and F^2=I exactly",
+    )
+
+    dimension_checks: list[tuple[int, int, int]] = []
+    for n_modes in range(1, 7):
+        parities = [(-1) ** sum(occupation_tuple(index, n_modes)) for index in range(2**n_modes)]
+        dimension_checks.append((n_modes, parities.count(1), parities.count(-1)))
+    balanced = all(even == odd == 2 ** (n_modes - 1) for n_modes, even, odd in dimension_checks)
+    checks.record(
+        "both parity eigenvalues occur with dimensions 2^(N-1)",
+        balanced,
+        f"sector dimensions={dimension_checks}",
+    )
+
+    p_even = (data.identity + data.f_product) / 2
+    p_odd = (data.identity - data.f_product) / 2
+    grading_ok = (
+        matrix_equal(p_even + p_odd, data.identity)
+        and matrix_zero(p_even * p_odd)
+        and p_even.rank() == p_odd.rank() == 2 ** (data.n_modes - 1)
+    )
+    checks.record(
+        "H_N is the direct sum of exact even/odd projectors",
+        grading_ok,
+        f"ranks=({p_even.rank()},{p_odd.rank()})",
+    )
+
+    odd_action = all(
+        matrix_equal(data.f_product * operator * data.f_product, -operator)
+        for operator in data.a + data.adag
+    )
+    checks.record(
+        "every a_x and a_x^dagger is parity odd",
+        odd_action,
+        f"checked {2 * data.n_modes} generators",
+    )
+
+    generators = data.a + data.adag
+    monomial_total = 0
+    nonzero_total = 0
+    monomial_grading_ok = True
+    for degree in range(5):
+        for indices in product(range(len(generators)), repeat=degree):
+            monomial = data.identity
+            for index in indices:
+                monomial *= generators[index]
+            monomial_total += 1
+            if not matrix_zero(monomial):
+                nonzero_total += 1
+            expected = ((-1) ** degree) * monomial
+            if not matrix_equal(data.f_product * monomial * data.f_product, expected):
+                monomial_grading_ok = False
+    checks.record(
+        "monomials acquire (-1)^degree under F conjugation",
+        monomial_grading_ok,
+        f"checked={monomial_total}, nonzero={nonzero_total}, degrees=0..4",
+    )
+
+    hopping = data.adag[0] * data.a[1] + data.adag[1] * data.a[0]
+    checks.record(
+        "number-conserving hopping also conserves parity",
+        matrix_zero(commutator(hopping, data.q_total))
+        and matrix_zero(commutator(hopping, data.f_product)),
+        "both exact commutators vanish",
+    )
+
+    pair_from_car = data.adag[0] * data.adag[1] + data.a[1] * data.a[0]
+    pair_direct = direct_pair_hamiltonian(data.n_modes)
+    expected_pair_q_comm = (
+        2 * data.adag[0] * data.adag[1] - 2 * data.a[1] * data.a[0]
+    )
+    pair_ok = (
+        matrix_equal(pair_from_car, pair_direct)
+        and matrix_equal(pair_from_car.H, pair_from_car)
+        and matrix_zero(commutator(pair_from_car, data.f_product))
+        and matrix_equal(
+            commutator(data.q_total, pair_from_car),
+            expected_pair_q_comm,
+        )
+        and not matrix_zero(commutator(pair_from_car, data.q_total))
+    )
+    checks.record(
+        "exact pair Hamiltonian preserves parity but not number",
+        pair_ok,
+        "H_pair=|00><11|+|11><00| and [Q,H_pair]=2create-2annihilate",
+    )
+
+    q_commuting_units = {
+        (row, column)
+        for row in range(dimension)
+        for column in range(dimension)
+        if data.q_values[row] == data.q_values[column]
+    }
+    f_commuting_units = {
+        (row, column)
+        for row in range(dimension)
+        for column in range(dimension)
+        if data.parity_values[row] == data.parity_values[column]
+    }
+    checks.record(
+        "[H,Q]=0 implies [H,F]=0 for the full matrix-unit basis",
+        q_commuting_units <= f_commuting_units,
+        f"number support={len(q_commuting_units)}, parity support={len(f_commuting_units)}",
+    )
+
+    one_mode = build_jordan_wigner(1)
+    one_mode_support_equal = {
+        (row, column)
+        for row in range(2)
+        for column in range(2)
+        if one_mode.q_values[row] == one_mode.q_values[column]
+    } == {
+        (row, column)
+        for row in range(2)
+        for column in range(2)
+        if one_mode.parity_values[row] == one_mode.parity_values[column]
+    }
+    checks.record(
+        "N=1 has F=I-2Q and equal commutants",
+        matrix_equal(one_mode.f_product, one_mode.identity - 2 * one_mode.q_total)
+        and one_mode_support_equal,
+        "the two eigenspace decompositions coincide",
+    )
+
+    generic_symbols = sp.symbols("h0:16")
+    generic_h = sp.Matrix(4, 4, generic_symbols)
+    two_mode = build_jordan_wigner(2)
+    two_even = (two_mode.identity + two_mode.f_product) / 2
+    two_odd = (two_mode.identity - two_mode.f_product) / 2
+    block_identity = matrix_equal(
+        commutator(generic_h, two_mode.f_product),
+        2 * (two_odd * generic_h * two_even - two_even * generic_h * two_odd),
+    )
+    matrix_unit_iff = all(
+        matrix_zero(
+            commutator(matrix_unit(4, row, column), two_mode.f_product)
+        )
+        == (
+            matrix_zero(two_even * matrix_unit(4, row, column) * two_odd)
+            and matrix_zero(two_odd * matrix_unit(4, row, column) * two_even)
+        )
+        for row in range(4)
+        for column in range(4)
+    )
+    checks.record(
+        "[H,F]=0 iff parity-mixing blocks vanish",
+        block_identity and matrix_unit_iff,
+        "generic block identity plus a complete matrix-unit basis check",
+    )
+
+    h_good = data.q_total + pair_from_car
+    h_bad = data.a[0] + data.adag[0]
+    dynamics_boundary = (
+        matrix_equal(h_good.H, h_good)
+        and matrix_zero(sp.I * commutator(h_good, data.f_product))
+        and matrix_equal(h_bad.H, h_bad)
+        and not matrix_zero(sp.I * commutator(h_bad, data.f_product))
+    )
+    checks.record(
+        "Heisenberg derivative i[H,F] detects parity conservation",
+        dynamics_boundary,
+        "self-adjoint parity-even and parity-odd Hamiltonians separate exactly",
+    )
+
+    q_commutant_dimension = sum(sp.binomial(data.n_modes, charge) ** 2 for charge in range(data.n_modes + 1))
+    f_commutant_dimension = 2 ** (2 * data.n_modes - 1)
+    checks.record(
+        "number commutant is strictly smaller than parity commutant for N=3",
+        q_commutant_dimension == len(q_commuting_units)
+        and f_commutant_dimension == len(f_commuting_units)
+        and q_commutant_dimension < f_commutant_dimension,
+        f"dimensions=({q_commutant_dimension},{f_commutant_dimension})",
+    )
+
+    return checks.finish()
+
+
+def run_independent() -> int:
+    checks = Checks()
+    print("ORDERED FINITE-MODE FERMION PARITY — INDEPENDENT SECTOR MODE")
+    summaries: list[tuple[int, int, int, int, int]] = []
+    subset_all = True
+    strict_all = True
+
+    for n_modes in range(1, 7):
+        charges = tuple(
+            sum(occupation_tuple(index, n_modes)) for index in range(2**n_modes)
+        )
+        parities = tuple((-1) ** charge for charge in charges)
+        even_dimension = parities.count(1)
+        odd_dimension = parities.count(-1)
+        q_support = {
+            (row, column)
+            for row in range(2**n_modes)
+            for column in range(2**n_modes)
+            if charges[row] == charges[column]
+        }
+        f_support = {
+            (row, column)
+            for row in range(2**n_modes)
+            for column in range(2**n_modes)
+            if parities[row] == parities[column]
+        }
+        subset_all = subset_all and q_support <= f_support
+        if n_modes >= 2:
+            strict_all = strict_all and q_support < f_support
+        summaries.append(
+            (n_modes, even_dimension, odd_dimension, len(q_support), len(f_support))
+        )
+
+    checks.record(
+        "basis-bit flip independently balances the parity sectors",
+        all(even == odd == 2 ** (n_modes - 1) for n_modes, even, odd, _, _ in summaries),
+        f"summaries={summaries}",
+    )
+    checks.record(
+        "Q-commuting support is contained in F-commuting support",
+        subset_all,
+        "classified every matrix unit for N=1..6",
+    )
+    checks.record(
+        "the support inclusion is strict for every N>=2 tested",
+        strict_all,
+        "a same-parity/different-number matrix unit always exists",
+    )
+
+    q_dimension_formula = all(
+        q_dimension == sp.binomial(2 * n_modes, n_modes)
+        for n_modes, _, _, q_dimension, _ in summaries
+    )
+    f_dimension_formula = all(
+        f_dimension == 2 ** (2 * n_modes - 1)
+        for n_modes, _, _, _, f_dimension in summaries
+    )
+    checks.record(
+        "independent commutant dimensions match closed formulas",
+        q_dimension_formula and f_dimension_formula,
+        "dim{Q}'=binomial(2N,N), dim{F}'=2^(2N-1)",
+    )
+
+    q_two = sp.diag(0, 1, 1, 2)
+    f_two = sp.diag(1, -1, -1, 1)
+    pair = sp.zeros(4)
+    pair[0, 3] = 1
+    pair[3, 0] = 1
+    checks.record(
+        "occupation-basis counterexample is exact and self-adjoint",
+        matrix_equal(pair.H, pair)
+        and matrix_zero(commutator(pair, f_two))
+        and not matrix_zero(commutator(pair, q_two)),
+        "direct |00><11|+|11><00| construction; no Jordan-Wigner identities used",
+    )
+
+    odd_change = sp.zeros(4)
+    odd_change[0, 1] = 1
+    odd_change[1, 0] = 1
+    checks.record(
+        "odd number change fails the parity-conservation criterion",
+        matrix_equal(odd_change.H, odd_change)
+        and not matrix_zero(commutator(odd_change, f_two)),
+        "direct Q=0<->Q=1 transition mixes parity blocks",
+    )
+
+    q_one = sp.diag(0, 1)
+    f_one = sp.diag(1, -1)
+    checks.record(
+        "independent N=1 classification gives equivalent commutators",
+        all(
+            matrix_zero(commutator(matrix_unit(2, row, column), q_one))
+            == matrix_zero(commutator(matrix_unit(2, row, column), f_one))
+            for row in range(2)
+            for column in range(2)
+        ),
+        "complete two-by-two matrix-unit classification",
+    )
+    return checks.finish()
+
+
+def hostile_survivals() -> dict[str, bool]:
+    data = build_jordan_wigner(3)
+    pair = data.adag[0] * data.adag[1] + data.a[1] * data.a[0]
+    odd_hamiltonian = data.a[0] + data.adag[0]
+    bare_zero = at_site(data.lower, 0, data.n_modes)
+    bare_one = at_site(data.lower, 1, data.n_modes)
+    wrong_pair = data.adag[0] * data.adag[1] + data.a[0] * data.a[1]
+
+    parity_antecedent = matrix_zero(commutator(pair, data.f_product))
+    number_conclusion = matrix_zero(commutator(pair, data.q_total))
+    false_converse_survives = (not parity_antecedent) or number_conclusion
+
+    return {
+        "false-converse": false_converse_survives,
+        "odd-number-change": (
+            not matrix_zero(commutator(odd_hamiltonian, data.q_total))
+            and matrix_zero(commutator(odd_hamiltonian, data.f_product))
+        ),
+        "wrong-product-phase": matrix_equal(-data.f_product, data.f_exponential),
+        "bare-local-car": matrix_zero(anticommutator(bare_zero, bare_one)),
+        "wrong-sector-dimension": data.parity_values.count(1) == 2 ** (data.n_modes - 1) + 1,
+        "even-means-number-conserving": matrix_zero(commutator(pair, data.q_total)),
+        "wrong-pair-order": matrix_equal(wrong_pair.H, wrong_pair),
+    }
+
+
+def selected_fixtures(fixture: str) -> tuple[str, ...]:
+    return FIXTURES if fixture == "all" else (fixture,)
+
+
+def run_hostile(fixture: str) -> int:
+    checks = Checks()
+    survivals = hostile_survivals()
+    print("ORDERED FINITE-MODE FERMION PARITY — HOSTILE MUTATION MODE")
+    print("Each PASS means exact object-level evidence rejected the mutation.")
+    for name in selected_fixtures(fixture):
+        checks.record(
+            f"reject hostile fixture {name}",
+            not survivals[name],
+            f"mutated claim survives={survivals[name]}",
+        )
+    return checks.finish()
+
+
+def run_intentional_failure(fixture: str) -> int:
+    checks = Checks()
+    survivals = hostile_survivals()
+    print("ORDERED FINITE-MODE FERMION PARITY — INTENTIONAL FAILURE MODE")
+    print("Selected hostile claims are promoted; every installed fixture must fail.")
+    for name in selected_fixtures(fixture):
+        checks.record(
+            f"promoted hostile claim {name}",
+            survivals[name],
+            "intentional failure: mutation installed as the theorem conclusion",
+        )
+    return checks.finish()
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--mode",
+        choices=("normal", "independent", "hostile", "intentional-failure"),
+        help="evidence mode (default: normal)",
+    )
+    aliases = parser.add_mutually_exclusive_group()
+    aliases.add_argument("--independent", action="store_const", const="independent", dest="alias_mode")
+    aliases.add_argument("--hostile", action="store_const", const="hostile", dest="alias_mode")
+    aliases.add_argument(
+        "--intentional-failure",
+        action="store_const",
+        const="intentional-failure",
+        dest="alias_mode",
+    )
+    parser.add_argument(
+        "--fixture",
+        choices=("all",) + FIXTURES,
+        default="all",
+        help="hostile fixture selector (hostile/intentional-failure modes only)",
+    )
+    args = parser.parse_args()
+    if args.mode and args.alias_mode:
+        parser.error("use either --mode or a mode alias, not both")
+    args.mode = args.mode or args.alias_mode or "normal"
+    if args.mode not in {"hostile", "intentional-failure"} and args.fixture != "all":
+        parser.error("--fixture is valid only in hostile or intentional-failure mode")
+    return args
+
+
+def main() -> int:
+    args = parse_args()
+    if args.mode == "normal":
+        return run_normal()
+    if args.mode == "independent":
+        return run_independent()
+    if args.mode == "hostile":
+        return run_hostile(args.fixture)
+    return run_intentional_failure(args.fixture)
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

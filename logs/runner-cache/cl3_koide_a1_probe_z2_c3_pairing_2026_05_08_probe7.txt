@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_probe_z2_c3_pairing_2026_05_08_probe7.py
-runner_sha256: 1d540423d29057b4b6580246c5d4304802e8d9562a6135abdb2e8fd5e41fa296
+runner_sha256: 563bd6df62cf1500375fcadb9419e8bae91791f53362fdea1cc647737a6282e4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Section 0 — Baseline: retained C_3 + circulant primitives on hw=1
@@ -46,10 +46,10 @@ Section 3 — Z_2 Candidate (3): Pseudoscalar ω-flip orientation Z_2
   PASS : Test 5 (convention): N/A — ω-flip does not produce 1/2
 
 Section 4 — Z_2 Candidate (4): Fermion parity F = (-1)^Q̂_total
-  PASS : Test 1 (existence): F = ⊗ σ_3 satisfies F^2 = I (per FERMION_PARITY F2)
-  PASS : F has spectrum {+1, -1} (per F3)
-  PASS : Test 2 (commutation): [F, a_x^† a_y] = 0 (Z_2-EVEN on bilinears, F7)
-  PASS : F acts trivially on bilinear sector hw=1 — commutes with C_3 trivially | Generates Z_6, but Z_2 acts as identity (degenerate Z_2 × C_3 = C_3)
+  PASS : Test 1 (formal construction): F = ⊗ sigma_3 satisfies F^2 = I
+  PASS : F has spectrum {+1, -1}
+  PASS : Test 2 (commutation): [F, a_x^dagger a_y] = 0 on the formal carrier
+  PASS : conditional formal F adjoint action is trivial on hw=1 bilinears | Generates Z_6, but Z_2 acts as identity (degenerate Z_2 × C_3 = C_3)
   PASS : Test 3 (constraint): F acts trivially, no (a, b) constraint
   PASS : Test 3 (continued): all ratios F-equivariant — F gives NO constraint | ratios sampled: [0.0, 0.25, 1.0, 4.0, np.float64(0.5)]
   PASS : Test 4 (normalization): no Frobenius weight from F (trivial action)

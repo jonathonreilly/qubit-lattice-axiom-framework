@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py
-runner_sha256: 704ae9e5248b15949a1c53a8ff66c8c3df91069cd664a678d4cef1056bdf07a6
+runner_sha256: dd26b20194bde1ac0d95e496efbc85e55b232668a868f5485076725986153eef
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -21,8 +21,8 @@ status: ok
   [PASS] configuration-space/topology route is guarded as dichotomy-only, not sign-selection  --  source boundary must not claim topology forces -1
   [PASS] 3x3x2 Z3 witness remains explicitly flagged for re-verification  --  fan-out witness is not used as retained theorem output
 
-[BLOCK 3] PRECISE LOCATION: retained central grading, Record silent on sign
-  [PASS] Z2 fermion-parity grading F=(-1)^Q is recorded as central-sector datum  --  retained central datum is distinguished from exchange sign
+[BLOCK 3] PRECISE LOCATION: formal grading, Record silent on sign
+  [PASS] source requires a separate bridge from formal F=(-1)^Q to a physical central-sector datum  --  formal grading and physical central-sector interpretation are distinguished
   [PASS] exchange sign is guarded as within-sector data; Record supplies no within-sector data
   [PASS] source states this is a location theorem/boundary, not global route closure  --  prevents runner from hard-coding global FS closure
 

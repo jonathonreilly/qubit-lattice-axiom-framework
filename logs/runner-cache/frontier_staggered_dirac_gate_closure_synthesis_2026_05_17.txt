@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py
-runner_sha256: e049996ec33a438ef532e79cb1b11a305ab30af5d61026271295fe9a2e800257
+runner_sha256: 24b049302b1adfefdf463745d374fc6d6a7c9cbfb46109283446f62fc2954407
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================

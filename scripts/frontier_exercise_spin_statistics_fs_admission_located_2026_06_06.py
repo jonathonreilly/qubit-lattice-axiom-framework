@@ -8,9 +8,10 @@ Output of the repo's /exercise skill, 5-subagent fan-out (assumptions ledger /
 Elon reduction / literature / mathematics-sector / reframing, each with a
 framework-refresher read) on the spin-statistics / FS wall.
 
-WALL (neutral).  The per-site Z2 fermion-parity grading, Pauli exclusion, and the
-Berezin determinant are RETAINED; the CROSS-SITE fermion exchange statistics (CAR /
-the -1 exchange sign) is NOT forced from {Lattice, Quantum, Record}.  A hard-core
+WALL (neutral).  The cited parity theorem gives a formal Z2 grading only after
+an ordered occupation carrier is supplied; it selects neither that physical
+carrier nor a superselection rule. The CROSS-SITE fermion exchange statistics (CAR /
+the -1 exchange sign) is NOT forced from {Lattice, Quantum, Record}. A hard-core
 boson has the SAME per-site dim 2 / Z2 grading / Pauli exclusion; only the cross-site
 exchange sign (CCR vs CAR) differs.
 
@@ -31,10 +32,11 @@ global spin-statistics closure theorem:
       (Sharper Z3 witness from the fan-out: the 3x3x2 box has H1(UD2) = Z^16 (+) Z2
       -- the smallest concrete Z3 graph where the exchange Z2 appears; to be
       independently re-verified.  The dichotomy itself is retained_bounded.)
-  (3) PRECISE LOCATION (the sharpest reframe).  The Z2 fermion-parity grading
-      F = (-1)^Q is the retained CENTRAL-sector datum from
-      `fermion_parity_z2_grading_theorem`, identical in the boson and fermion
-      frames.  Record registers a supplied/derived central-sector label and
+  (3) PRECISE LOCATION (the sharpest reframe).  After a common ordered
+      occupation carrier is supplied, the formal Z2 grading F = (-1)^Q from
+      `fermion_parity_z2_grading_theorem` is identical in the boson and fermion
+      frames. A separate bridge is required to make it a physical central-sector
+      datum. Record registers a supplied/derived central-sector label and
       explicitly "supplies no within-sector data."  The exchange SIGN is
       WITHIN-sector data.  So this packet locates the residual: Record is silent
       on the sign once the central grading is in place; it does not derive CAR.
@@ -118,10 +120,10 @@ def block2_topology_dichotomy():
 
 
 def block3_record_location():
-    print("\n[BLOCK 3] PRECISE LOCATION: retained central grading, Record silent on sign")
-    check("Z2 fermion-parity grading F=(-1)^Q is recorded as central-sector datum",
+    print("\n[BLOCK 3] PRECISE LOCATION: formal grading, Record silent on sign")
+    check("source requires a separate bridge from formal F=(-1)^Q to a physical central-sector datum",
           "central-sector datum" in NOTE_FLAT and "fermion_parity_z2_grading_theorem" in NOTE_TEXT,
-          "retained central datum is distinguished from exchange sign")
+          "formal grading and physical central-sector interpretation are distinguished")
     check("exchange sign is guarded as within-sector data; Record supplies no within-sector data",
           "within-sector exchange sign" in NOTE_FLAT
           and "supplies no within-sector data" in NOTE_FLAT)

@@ -226,7 +226,7 @@ dependency (S2 spin-statistics re-audit).
 | U2 | Cl(3) per-site uniqueness (chirality-aware): exactly two non-isomorphic complex spinor irreps, each dim 2 | retained | [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md) |
 | U4 | Per-site Hilbert dim = 2 (chirality-independent) | retained | [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md) |
 | S2 | Spin-statistics: bosonic 2nd-quantization on Cl(3) site → infinite-dim Fock incompatible with U4 | support | [`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) |
-| F1 | Z₂ fermion-parity grading | retained | [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) |
+| F1 | Formal `Z₂` occupation-parity grading on a supplied ordered carrier; no physical carrier, statistics rule, or dynamics selected | current grade is pipeline-derived | [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) |
 | NR | No proper Cl(3)-preserving taste projection on irreducible C⁸ | retained | `scripts/frontier_generation_rooting_undefined.py` |
 | BPG | Bipartite-graph parity: Z³ has natural Z₂ sublattice structure | admissible standard math | graph theory |
 | RP | A11 RP + OS reconstruction → H_phys with unique vacuum Ω | retained | [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) |
@@ -300,11 +300,17 @@ cross-site CAR realization for this substep. It is cited as a separate
 bounded source so the synthesis does not silently treat tensor-product
 Pauli ladders as already anticommuting across sites.
 
+Accordingly, F1 is consumed only after T2 and its Jordan-Wigner bridge supply
+the ordered occupation carrier. F1 contributes the formal grading identities
+on that carrier; it supplies no independent physical-carrier, statistics,
+number-conservation, Hamiltonian, or dynamics selection.
+
 ### Theorem T3 (substep 2 — Kawamoto-Smit phase forcing)
 
 (Recited from [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md).)
 
-On the repo baseline + T2 + U2 + F1 + NR + BPG:
+On the repo baseline + T2 + U2 + the formal F1 grading on T2's supplied
+carrier + NR + BPG:
 
 > The staggered-Dirac kinetic operator on Z³ has the unique form
 >
@@ -371,8 +377,9 @@ Bounded tier inherited from T4 + substep 4 partial note.
 
 ### Theorem T6 (closure synthesis on the kinetic-and-algebra surface)
 
-**Bounded theorem (synthesis).** On the repo baseline + the named retained /
-support authorities (U2, U4, S2, F1, NR, BPG, RP, RS, CD, LR, LN, SC,
+**Bounded theorem (synthesis).** On the repo baseline + the named authorities
+at their own current grades (U2, U4, S2, formal F1 after the T2 carrier bridge,
+NR, BPG, RP, RS, CD, LR, LN, SC,
 FP, M3, NQ, S3T, SPI, APBC) + admissible standard mathematical
 infrastructure (finite Grassmann calculus, Pauli algebra, bipartite-
 graph parity, simultaneous-diagonalization theorem for commuting
@@ -424,7 +431,8 @@ with named upstream support).
 
 - T2 forces single-mode Grassmann from the repo baseline + U2+U4+S2.
 - T3 takes T2's single-mode-Grassmann input and forces the KS phases
-  from the repo baseline + T2+U2+F1+NR+BPG.
+  from the repo baseline + T2+U2+the formal F1 grading on that supplied
+  carrier+NR+BPG.
 - T4 takes T3's KS kinetic operator on Z³ and forces the 1+1+3+3
   BZ-corner decomposition with hw=1 M_3(C) from the repo baseline + T3+FP+M3+NQ+S3T+SPI+APBC.
 - T5 takes T4's hw=1 M_3(C) triplet and characterizes its three
@@ -435,8 +443,8 @@ Each step's proof is in its substep note (T2 step §1-§6 plus the
 T2_JW cross-site CAR bridge; T3 step §1-§6; T4 step §1-§6; T5 step
 §1-§6). The synthesis adds (i) the explicit
 chaining structure T2 → T3 → T4 → T5, (ii) the joint enumeration of
-the 20 cited authorities (repo baseline + 18 retained/support/admissible
-entries spanning U2, U4, S2, F1, NR, BPG, RP, RS, CD, LR, LN, SC, FP,
+the 20 cited authorities (repo baseline + 18 individually graded/support/admissible
+entries spanning U2, U4, S2, formal F1, NR, BPG, RP, RS, CD, LR, LN, SC, FP,
 M3, NQ, S3T, SPI, APBC), (iii) the explicit carrying-forward of
 substep-4 residual atoms AC_φ and AC_φλ as named admitted context,
 (iv) counterexample probes (verified in the runner) testing that

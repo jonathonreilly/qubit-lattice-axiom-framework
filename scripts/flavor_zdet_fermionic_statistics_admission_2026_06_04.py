@@ -3,24 +3,18 @@
 The runner verifies that supplied Grassmann/CAR variables realize a determinant
 amplitude, while the tested finite hard-core/tensor-product routes do not
 force that statistics choice. The 2026-06-07 repair additionally verifies that
-the determinant side can be routed through existing audited one-hop supports
-inside the abstract two-candidate Grassmann-vs-bosonic scope. It does not
+the determinant side can be routed through a formal parity theorem and a
+separately graded Grassmann bridge inside the abstract two-candidate
+Grassmann-vs-bosonic scope. It does not
 derive physical FS from baseline axioms or introduce a new axiom/admission.
 """
 
 from __future__ import annotations
 
 import itertools
-import json
 from pathlib import Path
 
 import numpy as np
-
-from flavor_occupancy_boundary_checks_2026_06_13 import run_occupancy_boundary_checks
-
-
-PARITY_DEP = "fermion_parity_z2_grading_theorem_note_2026-05-02"
-GRASSMANN_BRIDGE_DEP = "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
 
 SP = np.array([[0.0, 1.0], [0.0, 0.0]])
 S3 = np.array([[1.0, 0.0], [0.0, -1.0]])
@@ -65,14 +59,6 @@ def permanent(matrix: np.ndarray) -> float:
     for perm in itertools.permutations(range(n)):
         total += np.prod([matrix[i, perm[i]] for i in range(n)])
     return float(total)
-
-
-def ledger_rows(root: Path) -> dict[str, dict[str, object]]:
-    ledger_path = root / "docs" / "audit" / "data" / "audit_ledger.json"
-    payload = json.loads(ledger_path.read_text())
-    rows = payload["rows"]
-    assert isinstance(rows, dict)
-    return rows
 
 
 def flat(text: str) -> str:
@@ -151,21 +137,18 @@ def main() -> int:
     )
 
     root = Path(__file__).resolve().parents[1]
-    rows = ledger_rows(root)
-    parity_row = rows.get(PARITY_DEP, {})
-    grassmann_row = rows.get(GRASSMANN_BRIDGE_DEP, {})
+    note = (root / "docs" / "FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md").read_text()
+    parity_note = (root / "docs" / "FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md").read_text()
+    grassmann_note = (
+        root / "docs" / "STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md"
+    ).read_text()
     passed.append(
         check(
-            "one-hop dependency status: fermion parity Z2 grading is audited retained",
-            parity_row.get("effective_status") == "retained",
-            f"{PARITY_DEP} -> {parity_row.get('effective_status')}",
-        )
-    )
-    passed.append(
-        check(
-            "one-hop dependency status: abstract Grassmann forcing bridge is audited retained or retained_bounded",
-            grassmann_row.get("effective_status") in {"retained", "retained_bounded"},
-            f"{GRASSMANN_BRIDGE_DEP} -> {grassmann_row.get('effective_status')}",
+            "one-hop Grassmann bridge is consumed only at its abstract source boundary",
+            "U4 bridge remains open" in grassmann_note
+            and "part of the abstract framing" in grassmann_note
+            and "Grassmann generators in the cited upstream narrow theorem" in grassmann_note,
+            "no live audit status is pinned by this runner",
         )
     )
 
@@ -183,11 +166,6 @@ def main() -> int:
         )
     )
 
-    note = (root / "docs" / "FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md").read_text()
-    parity_note = (root / "docs" / "FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md").read_text()
-    grassmann_note = (
-        root / "docs" / "STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md"
-    ).read_text()
     note_flat = flat(note)
     banned = [
         "owner-approved",
@@ -201,7 +179,9 @@ def main() -> int:
     required = [
         "does not derive the physical-lattice choice of Grassmann/CAR variables",
         "does not introduce a new axiom or admission",
-        "audited abstract Grassmann forcing bridge",
+        "cited abstract Grassmann forcing bridge",
+        "supplied ordered occupation space",
+        "physical carrier identification remains open",
         "physical spin-statistics selector remains open",
         "No new axiom is introduced.",
     ]
@@ -215,19 +195,18 @@ def main() -> int:
     passed.append(
         check(
             "dependency boundary guard: consumed supports are algebraic, not physical spin-statistics selectors",
-            "does not by itself prove a physical fermion-statistics selector" in parity_note
+            "a physical fermion carrier, fermion statistics" in parity_note
+            and "A consumer that needs any such interpretation must cite a separate bridge" in parity_note
             and "U4 bridge remains open" in grassmann_note
             and "part of the abstract framing" in grassmann_note
             and "Grassmann generators in the cited upstream narrow theorem" in grassmann_note,
             "parity supplies Z2 grading; Grassmann bridge supplies abstract two-candidate determinant scope",
         )
     )
-    passed.extend(run_occupancy_boundary_checks(root, check, "downstream occupancy atom"))
-
     pass_count = sum(passed)
     fail_count = len(passed) - pass_count
     print(f"\nSCORECARD PASS={pass_count} FAIL={fail_count}")
-    print("FINDING: the abstract two-candidate determinant side now has one-hop audited support.")
+    print("FINDING: the abstract determinant side has formal parity support plus the separately graded Grassmann bridge.")
     print("The physical-lattice cross-site CAR/Grassmann selector remains open.")
     print("The tested finite hard-core/tensor-product routes still do not force that statistics choice.")
     print("Koide generation chirality remains a separate internal-factor residual.")

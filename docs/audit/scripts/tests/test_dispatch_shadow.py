@@ -24,6 +24,9 @@ def _row(status="audited_conditional", snapshot=None, previous=None):
         "audit_status": status,
         "effective_status": status,
         "audit_state_snapshot": snapshot or {},
+        # dep membership defaults aligned with the snapshot's recorded deps
+        "deps": sorted((snapshot or {}).get("dep_effective_status") or {}),
+        "helper_runner_paths": sorted((snapshot or {}).get("helper_runner_hashes") or {}),
     }
     if previous is not None:
         row["previous_audits"] = previous
@@ -74,10 +77,42 @@ class LiveWouldParkTest(unittest.TestCase):
         snap = dict(V1_SNAPSHOT)
         snap["helper_runner_hashes"] = {"scripts/h.py": "old"}
         row = _row(snapshot=snap)
+        row["helper_runner_paths"] = ["scripts/h.py"]
         row["helper_runner_hashes_current"] = {"scripts/h.py": "new"}
         parked, reason = caq._live_conditional_would_park(row, dict(DEP_UNCHANGED))
         self.assertFalse(parked)
         self.assertIn("helper_runner_hash_changed", reason)
+
+    def test_v1_unparks_on_helper_membership_change(self):
+        snap = dict(V1_SNAPSHOT)
+        snap["helper_runner_hashes"] = {"scripts/h.py": "old"}
+        row = _row(snapshot=snap)
+        row["helper_runner_paths"] = []  # helper removed
+        parked, reason = caq._live_conditional_would_park(row, dict(DEP_UNCHANGED))
+        self.assertFalse(parked)
+        self.assertEqual(reason, "helper_runner_membership_changed")
+
+    def test_v1_unparks_on_dep_membership_change(self):
+        row = _row(snapshot=dict(V1_SNAPSHOT))
+        row["deps"] = ["dep_a", "dep_new"]  # dependency added
+        parked, reason = caq._live_conditional_would_park(row, dict(DEP_UNCHANGED))
+        self.assertFalse(parked)
+        self.assertEqual(reason, "dep_membership_changed")
+
+    def test_v1_unparks_on_each_opaque_channel(self):
+        for snap_key, current_key in caq.FINGERPRINT_V1_OPAQUE_CHANNELS:
+            row = _row(snapshot=dict(V1_SNAPSHOT))
+            row["deps"] = ["dep_a"]
+            row[current_key] = {"changed": True} if snap_key != "premise_registry_epoch" else 2
+            parked, reason = caq._live_conditional_would_park(row, dict(DEP_UNCHANGED))
+            self.assertFalse(parked, snap_key)
+            self.assertEqual(reason, f"{snap_key}_changed")
+
+    def test_v1_null_baseline_is_structurally_invalid(self):
+        snap = dict(V1_SNAPSHOT)
+        snap["policy_versions"] = None
+        with self.assertRaises(caq.FingerprintV1Invalid):
+            caq._live_conditional_would_park(_row(snapshot=snap), {})
 
     def test_legacy_unversioned_always_dispatch_open(self):
         parked, reason = caq._live_conditional_would_park(

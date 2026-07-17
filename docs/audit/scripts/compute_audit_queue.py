@@ -158,16 +158,29 @@ BLOCKER_FINGERPRINT_V1 = "blocker_fingerprint_v1"
 # The design note's v1 channel baselines. A snapshot carrying the v1 marker
 # must have every one of these keys present (fail LOUDLY otherwise); a
 # snapshot without the marker is legacy and always dispatch-open.
-FINGERPRINT_V1_REQUIRED_KEYS = (
-    "dep_effective_status",
-    "dep_claim_type",
-    "dep_claim_scope",
-    "dep_axiom_premise_note_hash",
-    "helper_runner_hashes",
-    "runner_cache_state",
-    "artifact_classifier_state",
-    "policy_versions",
-    "premise_registry_epoch",
+FINGERPRINT_V1_REQUIRED_KEYS = {
+    # key -> required type(s); every key must be present AND well-typed,
+    # otherwise the v1 snapshot is structurally invalid (loud failure).
+    "dep_effective_status": dict,
+    "dep_claim_type": dict,
+    "dep_claim_scope": dict,
+    "dep_axiom_premise_note_hash": dict,
+    "helper_runner_hashes": dict,
+    "runner_cache_state": dict,
+    "artifact_classifier_state": dict,
+    "policy_versions": dict,
+    "premise_registry_epoch": (int, str),
+}
+# Opaque v1 channels compared by equality against the row's CURRENT
+# projection field (populated by the v1-stamping implementation phase;
+# synthetic fixtures populate it in tests). An absent current projection
+# compares as unchanged — the stamping writer and these projections mature
+# together, and the comparator itself is complete and mutation-testable now.
+FINGERPRINT_V1_OPAQUE_CHANNELS = (
+    ("runner_cache_state", "runner_cache_state_current"),
+    ("artifact_classifier_state", "artifact_classifier_state_current"),
+    ("policy_versions", "policy_versions_current"),
+    ("premise_registry_epoch", "premise_registry_epoch_current"),
 )
 
 
@@ -199,13 +212,20 @@ def _live_conditional_would_park(row: dict, rows: dict[str, dict]) -> tuple[bool
     version = snapshot.get("schema")
     if version != BLOCKER_FINGERPRINT_V1:
         return False, "fail_open_legacy_unversioned"
-    missing = [k for k in FINGERPRINT_V1_REQUIRED_KEYS if k not in snapshot]
-    if missing:
+    problems = [
+        k for k, typ in FINGERPRINT_V1_REQUIRED_KEYS.items()
+        if k not in snapshot or not isinstance(snapshot.get(k), typ)
+    ]
+    if problems:
         raise FingerprintV1Invalid(
-            f"v1 snapshot missing required baselines {missing} on "
+            f"v1 snapshot missing/ill-typed required baselines {problems} on "
             f"{row.get('note_path') or row.get('claim_id')}"
         )
-    deps_then = snapshot.get("dep_effective_status") or {}
+    # dependency MEMBERSHIP: an added or removed dependency is movement
+    deps_then = snapshot["dep_effective_status"]
+    deps_now = set(row.get("deps") or [])
+    if set(deps_then) != deps_now:
+        return False, "dep_membership_changed"
     for dep, then_status in deps_then.items():
         now = (rows.get(dep) or {}).get("effective_status", "MISSING")
         if now != then_status:
@@ -215,20 +235,23 @@ def _live_conditional_would_park(row: dict, rows: dict[str, dict]) -> tuple[bool
         ("claim_scope", "dep_claim_scope"),
         ("note_hash", "dep_axiom_premise_note_hash"),
     ):
-        then_values = snapshot.get(snap_field) or {}
-        for dep, then_value in then_values.items():
+        for dep, then_value in snapshot[snap_field].items():
             if dep in rows and rows[dep].get(field) != then_value:
                 return False, f"{snap_field}_changed:{dep}"
-    # Channels recorded as opaque v1 baselines: compared by equality against
-    # the row's CURRENT recorded values where the ledger carries them; a
-    # channel the ledger does not carry yet compares as unchanged (the v1
-    # writer and these comparisons mature together in the implementation
-    # phase — this is the SHADOW reading of the same matrix).
-    then_helpers = snapshot.get("helper_runner_hashes") or {}
+    # helper-runner MEMBERSHIP and hashes: path add/remove is movement;
+    # hash values compare against the current projection when present
+    then_helpers = snapshot["helper_runner_hashes"]
+    now_helper_paths = set(row.get("helper_runner_paths") or [])
+    if set(then_helpers) != now_helper_paths:
+        return False, "helper_runner_membership_changed"
     now_helpers = row.get("helper_runner_hashes_current") or {}
     for path, then_hash in then_helpers.items():
         if path in now_helpers and now_helpers[path] != then_hash:
             return False, f"helper_runner_hash_changed:{path}"
+    # opaque v1 channels vs current projections
+    for snap_key, current_key in FINGERPRINT_V1_OPAQUE_CHANNELS:
+        if current_key in row and row[current_key] != snapshot[snap_key]:
+            return False, f"{snap_key}_changed"
     return True, "no_recorded_blocker_movement"
 
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py
-runner_sha256: 08b6edadfb13f3d0e2fad96639579bee78fe993b2c3e94f91d4c30328b0e238d
+runner_sha256: 552d7bd8f6086c4355df50e1a2363e4ee3e2f7a530100a14d9985d213bcf4dc9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 2.06
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -61,6 +61,8 @@ Part 4: structural certificate for the arbitrary-n coefficient rule
   [PASS (A)] coefficient is nonzero exactly when |S|-delta is even  (table={(0, 0): True, (1, 0): False, (1, 1): True, (2, 0): True, (2, 1): False, (3, 1): True})
   [PASS (A)] S -> S symmetric-difference {mu} is a per-generator bijection/involution  (all masks at n=1..7)
   [PASS (A)] exact coefficient sign agrees with direct matrix multiplication  (all (n,S,mu) at n=1..7)
+  [PASS (A)] signed generators realize every tested diagonal signature exactly  (42 signatures; exhaustive through n=4)
+  [PASS (A)] metric and reordering signs agree with direct signed-matrix multiplication  (all (signature,S,mu) in 42 signature cases)
   [PASS (A)] generic odd-n witness selector constrains every Clifford coefficient  (43690 masks checked through n=15; branch proof is parity-generic)
 
 ----------------------------------------------------------------------------------------
@@ -92,15 +94,28 @@ Part 6: independent exact matrix-vectorization cross-check
   [PASS (A)] n=5: independent matrix route gives nullity 0  (matrix-system shape=320x32)
 
 ----------------------------------------------------------------------------------------
-Part 7: mutation falsifiers
+Part 7: live alternative routes and external-matrix steelman
+----------------------------------------------------------------------------------------
+  [PASS (A)] external ambient-matrix chirality exists but lies outside the faithful internal span  (odd n=[1, 3, 5])
+  N1_ROUTE route_id=coefficient_cancellation; route_class=algebraic_rearrangement; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=arbitrary coefficient cancellation in the simultaneous anticommutator algebra; attempt=solve the exact stacked coefficient kernel rather than inspect basis vectors separately; outcome=CLOSED: odd nullity is zero and fixed-mu symmetric difference prevents cross-slot cancellation
+  N1_ROUTE route_id=zero_square_normalization; route_class=normalization_or_units; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=square normalization could hide the zero element inside the common kernel; attempt=evaluate the zero coefficient vector in both anticommutation and x squared equals identity tests; outcome=CLOSED: zero anticommutes but fails square normalization, while the odd internal kernel is exactly zero
+  N1_ROUTE route_id=central_volume; route_class=symmetry_or_representation; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=central invertible volume representation could permit a non-monomial internal anticommuter; attempt=check centrality and invertibility and compare x omega with omega x for every tested odd dimension; outcome=CLOSED: odd centrality plus invertibility forces every internal simultaneous anticommuter to zero
+  N1_ROUTE route_id=finite_dimension_gap; route_class=numerical_or_finite_case; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=finite sample computations could miss the arbitrary odd-dimensional parity mechanism; attempt=compute exact kernels at n 1 3 5 7 and exhaust the generic coefficient witness through n 15; outcome=CLOSED: finite solves include n=1 and the parity-generic witness covers every coefficient symbolically
+  N1_ROUTE route_id=external_matrix_carrier; route_class=alternate_carrier_or_sector; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=an alternate ambient matrix carrier may contain chirality outside the internal Clifford algebra; attempt=construct gamma n plus one on each faithful odd-dimensional representation and test span membership; outcome=CLOSED FOR STATED SCOPE: the external operator exists and squares to identity but is outside the internal span
+  N7_STEELMAN_ARGUMENT mechanism=an alternate ambient matrix carrier may contain chirality outside the internal Clifford algebra; attempt=construct gamma n plus one on each faithful odd-dimensional representation and test span membership; a hostile reviewer can therefore refute any claim about all ambient matrix operators, because a square-normalized external anticommuter exists in every tested faithful odd representation.
+  N7_STEELMAN_RESOLUTION internal Clifford-algebra kernel wall resolved: faithfulness is certified before vectorized evidence is used, the external anticommuter raises the matrix-span rank and is therefore not an algebra element, and the exact internal coefficient kernel remains zero; the source makes no ambient-operator claim.
+
+----------------------------------------------------------------------------------------
+Part 8: mutation falsifiers
 ----------------------------------------------------------------------------------------
   [PASS (A)] full-kernel mutation: basis scan misses a cancelling linear combination  ([1,1] has kernel span((-1,1)) although neither basis vector is in it)
   [PASS (A)] zero-exclusion mutation: zero solves anticommutation but fails x^2=I
   [PASS (A)] sign mutation: dropping the (-1)^r reordering sign is rejected  (correct=-2, mutated=2)
+  [PASS (A)] metric mutation: dropping eta_mu_mu^delta is rejected  (correct=-2, mutated=2)
   [PASS (A)] parity mutation: odd/even activation reversal is rejected  (correct=2, mutated=0)
 
 ----------------------------------------------------------------------------------------
-Part 8: d_s=3 application and note boundary
+Part 9: d_s=3 application, rhetoric resolutions, and note boundary
 ----------------------------------------------------------------------------------------
   [PASS (A)] at d_s=3, chirality-allowed d_t in [1,7] are {1,3,5,7}  (got [1, 3, 5, 7])
   [PASS (A)] note contains: 'Clifford Volume-Element Chirality Forces Even Total Dimension Narrow Theorem'
@@ -113,6 +128,16 @@ Part 8: d_s=3 application and note boundary
   [PASS (A)] note contains: 'Forbidden imports check'
   [PASS (A)] note avoids: 'promotes the parent to positive_theorem'
   [PASS (A)] touched note uses no retired premise-class wording
+  [PASS (A)] N5 per_element rhetoric resolution is explicit
+  N5_RESOLUTION per_element: per_element resolution tested by the exact full kernel for arbitrary internal algebra elements
+  [PASS (A)] N5 per_site rhetoric resolution is explicit
+  N5_RESOLUTION per_site: per_site resolution tested as an explicit scope exclusion because no physical site realization is claimed
+  [PASS (A)] N5 per_mode rhetoric resolution is explicit
+  N5_RESOLUTION per_mode: per_mode resolution tested as outside scope because the claim is only one finite Clifford algebra element
+  [PASS (A)] N5 per_block rhetoric resolution is explicit
+  N5_RESOLUTION per_block: per_block resolution tested as outside scope because no block decomposition enters the theorem or runner
+  [PASS (A)] N5 lattice_wide rhetoric resolution is explicit
+  N5_RESOLUTION lattice_wide: lattice_wide resolution tested as outside scope because the note excludes a physical staggered realization
 
 ----------------------------------------------------------------------------------------
 Summary
@@ -123,11 +148,13 @@ Summary
       even nullity 1=span(omega) at n=2,4,6
     Arbitrary-n structure: symmetric-difference bijection, exact sign,
       and parity-generic odd-n coefficient witness
-    Independent explicit-matrix kernel solve: n=1..5
-    Mutations caught: basis-scan/full-kernel, zero, sign, and parity
+    Independent explicit-matrix kernel solve: n=1..5, after faithfulness checks
+    Arbitrary signatures: exact metric/reordering signs checked on signed matrices
+    Live N1 routes and N7 external-matrix steelman: executed and resolved
+    Mutations caught: basis-scan/full-kernel, zero, reordering, metric, and parity
 
 ========================================================================================
-TOTAL: PASS=70, FAIL=0
+TOTAL: PASS=79, FAIL=0
 ========================================================================================
 
 ----- stderr -----

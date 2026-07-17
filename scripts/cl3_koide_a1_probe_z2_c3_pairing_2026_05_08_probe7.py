@@ -1216,7 +1216,8 @@ def section11_theorem_statement():
     print("Section 11 — Probe 7 bounded obstruction theorem")
     results = []
     print(
-        "  THEOREM (Probe 7): no retained-grade Z_2 paired with C_3 forces |b|²/a² = 1/2"
+        "  THEOREM (Probe 7): none of the five inventoried Z_2 candidates "
+        "paired with C_3 forces |b|²/a² = 1/2"
     )
     print(
         "  Structural barriers per candidate: trivial action / scale-invariance / S_3 not Z_6"

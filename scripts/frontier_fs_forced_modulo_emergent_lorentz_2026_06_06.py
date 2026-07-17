@@ -119,8 +119,17 @@ def block4_cheapest_principle():
     print("\n[BLOCK 4] If ever forced: cheapest principle is WEAKER than an axiom")
     # On a supplied ordered occupation carrier, the formal grading constructs
     # two Z2 sectors. It does not select that carrier or a physical rule.
+    z_local = np.diag([1.0, -1.0])
+    formal_parity = np.kron(z_local, z_local)
+    eigenvalues = np.linalg.eigvalsh(formal_parity)
+    note_flat = " ".join(NOTE.read_text(encoding="utf-8").split())
     check("formal fermion-parity theorem constructs two sectors on its supplied carrier",
-          True)
+          np.allclose(formal_parity @ formal_parity, np.eye(4))
+          and np.count_nonzero(np.isclose(eigenvalues, 1.0)) == 2
+          and np.count_nonzero(np.isclose(eigenvalues, -1.0)) == 2
+          and "after an ordered occupation carrier is supplied" in note_flat
+          and "selects neither that physical carrier nor the superselection rule" in note_flat,
+          "exact two-mode matrix check plus source-boundary guard")
     check("cheapest fallback = graded locality / parity-superselection = a SIGN-SELECTION between 2 existing sectors",
           True, "not supplied by Record; would be an extra theory principle if ever invoked")
     check("NOT currently forced: the continuum/R route remains open => do not invoke it prematurely", True)

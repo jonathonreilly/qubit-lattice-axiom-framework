@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_probe_z2_c3_pairing_2026_05_08_probe7.py
-runner_sha256: 563bd6df62cf1500375fcadb9419e8bae91791f53362fdea1cc647737a6282e4
+runner_sha256: 78f9239876e9d9c0b0fc0dee6feed6dca723cf7d4af46608af611386fd00c3e4
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -98,7 +98,7 @@ Section 10 — Falsifiability anchor (PDG charged-lepton masses)
   PASS : Anchor: shows A1 condition holds empirically — but NOT derived from Z_2/C_3 | Anchor only; this probe is structurally bounded
 
 Section 11 — Probe 7 bounded obstruction theorem
-  THEOREM (Probe 7): no retained-grade Z_2 paired with C_3 forces |b|²/a² = 1/2
+  THEOREM (Probe 7): none of the five inventoried Z_2 candidates paired with C_3 forces |b|²/a² = 1/2
   Structural barriers per candidate: trivial action / scale-invariance / S_3 not Z_6
   PASS : Theorem statement printed
 

@@ -1,101 +1,170 @@
-# Post-Record Source-Measure Trace Normalization Prototype
+# Exact Finite Rational Normalization and Radon–Nikodym Theorem
 
 **Date:** 2026-06-06
-**Type:** exact support / supplied source-measure trace prototype
-**Claim type:** bounded_theorem
-**Status:** bounded-support interface for supplied finite source-measure and
-trace-normalization semantics; audit_required_before_effective_retained=true;
-bare_retained_allowed=false.
+**Type:** positive_theorem
+**Claim type:** positive_theorem
 **Primary runner:**
 [`scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py`](../scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.txt)
+**Dependencies:** none. Every carrier, weight, and observable below is a
+universally quantified mathematical argument, not a framework premise.
 
-## Result
+## 1. Exact finite normalization
 
-This block gives the source-measure and trace-normalization lanes a finite
-prototype:
+Let `I` be a nonempty finite set. For exact rational weights
 
 ```text
-supplied finite carrier
-  + supplied positive reference trace measure
-  + supplied nonnegative source weights with positive total
-  + exact Radon-Nikodym density
-  => normalized source measure and trace/RN expectation identity
+u : I -> Q_{>=0},                   U = sum_i u_i > 0,
+v : I -> Q_{>=0},                   V = sum_i v_i > 0,
 ```
 
-The prototype covers the `16` `source_measure_or_rn_bridge` rows and the `10`
-`trace_normalization_reference` rows from the measure/weight subdivision.
+define
 
-Total source/trace prototype rows indexed here: `26`.
-
-## Meaning
-
-The prototype can certify:
-
-- supplied weights normalize to a finite source measure;
-- a source measure absolutely continuous with respect to a supplied trace
-  reference has an exact RN density;
-- expectations agree exactly:
-  `E_mu[f] = E_tau[(dmu/dtau) f]`;
-- RN densities compose by multiplication under finite change of measure.
-
-It cannot certify:
-
-- the trace reference is physically selected as the pre-record reference;
-- a Born law, prior, or source law is derived from Record;
-- a normalized measure selects a generation/Koide dial;
-- an audit verdict or retained status follows.
-
-## Status certificate
-
-```yaml
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
-conditional_surface_status: "source-measure and trace-normalization rows get a finite supplied RN/trace prototype; physical reference-state and selector authority remain open"
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "This branch supplies finite measure/RN semantics and does not derive the physical measure, Born law, or selector."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
+```text
+P_i = u_i/U,                        R_i = v_i/V.
 ```
 
-## Boundaries
+Then `P_i,R_i >= 0` and `sum_i P_i = sum_i R_i = 1`. This follows
+immediately from positivity of `U,V` and exact finite distributivity:
+`sum_i u_i/U = U/U = 1`, and similarly for `R`.
 
-- Does not edit `docs/audit/data`.
-- Does not apply or predict audit verdicts.
-- Does not promote any row.
-- Does not identify the unique tracial state with the physical pre-record
-  reference state.
-- Does not derive a measure, prior, source law, Born law, or selector from
-  Record.
-- Does not select or force a generation/Koide dial location.
-- Does not derive production dynamics, a kernel, Hamiltonian, instrument,
-  clock/rate, or physical arrow.
+The executable representation is an ordered tuple of `(label, Fraction)`
+pairs. Labels are unique. Every number must have exact runtime type `Fraction`;
+integers, booleans, floats, subclasses, and coercion are rejected. Input order
+is preserved for display, but carrier compatibility means equality of label
+sets. All algebra aligns entries by label, never by tuple position.
 
-## Runner certificate
+## 2. Finite Radon–Nikodym density and expectation identity
 
-The runner verifies:
+Say that `P` is absolutely continuous with respect to `R`, written `P << R`,
+when
 
-- source anchors in this note, the measure/weight subdivision, source-measure
-  RN/cumulant notes, and the pre-record tracial note;
-- supplied finite trace/reference weights and source weights normalize exactly;
-- RN densities are positive, normalized over the reference, and recover source
-  expectations;
-- unsupported source measures are rejected;
-- RN densities compose exactly;
-- the `16` source-measure/RN rows and `10` trace-normalization rows are present;
-- the combined source/trace prototype row count is `26`;
-- the audit ledger hash is unchanged after the scan;
-- no audit verdict, audit-data write, retained/promoted claim,
-  normalized-measure selector, generation/Koide selection, physical-reference
-  identification, Record-derived measure/prior/Born law, or production-dynamics
-  derivation flag is set.
+```text
+R_i = 0  implies  P_i = 0.
+```
+
+Define the finite density label by label by
+
+```text
+                P_i/R_i,   if R_i > 0,
+(dP/dR)_i  =
+                0,         if R_i = 0.
+```
+
+The second branch is a declared `0/0 := 0` convention. It is used only after
+`P << R` has established that the numerator is also zero. Thus the density is
+nonnegative and
+
+```text
+sum_i R_i (dP/dR)_i = sum_{R_i>0} P_i = sum_i P_i = 1.
+```
+
+For every exact rational observable `f : I -> Q`, including signed values,
+
+```text
+sum_i P_i f_i = sum_i R_i (dP/dR)_i f_i.
+```
+
+On indices with `R_i>0`, the right summand reduces to `P_i f_i`. On indices
+with `R_i=0`, absolute continuity makes both sides zero. This proves the
+identity without a positivity assumption on `f`.
+
+Example: raw reference weights `(1,1,0)` and raw source weights `(1,3,0)`
+normalize to
+
+```text
+R = (1/2, 1/2, 0),
+P = (1/4, 3/4, 0),
+dP/dR = (1/2, 3/2, 0).
+```
+
+For `f=(-1,1,7)`, both expectation formulas equal `1/2`; the value at the
+zero-reference label contributes zero.
+
+## 3. Exact density cocycle, including zeros
+
+Let `P,Q,R` be probability packets on the same finite label carrier and assume
+
+```text
+P << Q,                             Q << R.
+```
+
+Then `P << R`, and with the same zero-denominator convention,
+
+```text
+dP/dR = (dP/dQ)(dQ/dR)
+```
+
+pointwise on every label. There are three exhaustive cases:
+
+1. If `R_i>0` and `Q_i>0`, ordinary cancellation gives
+   `(P_i/Q_i)(Q_i/R_i)=P_i/R_i`.
+2. If `R_i>0` and `Q_i=0`, then `P_i=0`; both sides are zero.
+3. If `R_i=0`, then `Q_i=P_i=0`; every density in the displayed identity is
+   zero by convention.
+
+This proves the cocycle on the full carrier, not merely on its common positive
+support.
+
+## 4. Ordering and permutation semantics
+
+Normalization preserves the order of its input tuple. A density is emitted in
+the numerator packet's order. Expectations and cocycles compare label maps, so
+independent permutations of compatible input tuples do not change any scalar
+identity or label-to-density assignment. A positional zip of differently
+ordered packets is not an allowed implementation and is tested as a hostile
+counterexample.
+
+## 5. Exact scope
+
+This theorem is finite rational algebra only. The words “source,” “reference,”
+“measure,” “probability,” “trace/reference,” and “density” name the displayed
+finite arrays and sums. Its conclusion consists exactly of normalization,
+absolute continuity, the expectation identity, and the density cocycle.
+
+The carrier, both weight packets, and the observable are supplied theorem
+arguments. A physical application therefore carries separate premises for
+its interpretation and for any physical measure, matrix trace, tracial
+functional, trace state, reference state, prior, source law, Born rule,
+character/channel/path rule, selector, generation or Koide dial, source unit,
+production kernel, Hamiltonian, instrument, dynamics, clock, rate, or arrow.
+Record and any physical framework enter only through such a separately stated
+application, rather than through the finite algebra proved here.
+
+Audit censuses, ledgers, queues, exports, helper runners, and row counts are
+repository metadata outside the theorem arguments. The statement and proof
+are invariant under changes to those inventories.
+
+## 6. Falsification and reproducibility
+
+The standard-library runner supplies:
+
+- a normal exact derivation with reference zeros, zero source entries, signed
+  observables, label permutations, and both positive-support and zero-support
+  cocycle examples;
+- an independent normalization through common-denominator integer counts and
+  independently coded density, expectation, and cocycle calculations; and
+- hostile controls for malformed carriers/types/support, false densities,
+  unsafe zero conventions, positional alignment, false expectations, broken
+  cocycles, and unsupported physical selection.
+
+Selectable intentional-failure fixtures promote each hostile mutation to a
+claimed success. Every individual fixture and the aggregate must exit nonzero.
 
 Run:
 
-```text
+```bash
 python3 scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py
+python3 scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py --independent
+python3 scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py --hostile
+python3 scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py --mode intentional-failure --fixture all
 ```
+
+The cached log records the default normal run.
+
+## 7. Consumer boundary
+
+The fresh citation graph has no direct claim consumer of this note. A future
+consumer may use only the exact finite identities above and must keep every
+physical input and interpretation explicit.

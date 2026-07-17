@@ -18,7 +18,7 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | critical | `unaudited` | 247 |
-| high | `unaudited` | 174 |
+| high | `unaudited` | 173 |
 | medium | `unaudited` | 131 |
 | ? | `unresolved` | 4 |
 | critical | `audit_in_progress` | 4 |
@@ -30,7 +30,7 @@ publication tables phrase it.
 | high | `audited_numerical_match` | 1 |
 | medium | `audited_conditional` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 569
+**Total non-retained-grade rows in publication tables:** 568
 
 ## Per-row breakdown
 
@@ -436,7 +436,6 @@ publication tables phrase it.
 | high | `restricted_strong_field_closure_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `scalar_harmonic_tower_theorem_note_2026-04-24` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `shapiro_delay_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| high | `shapiro_static_discriminator_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `sigma_hier_uniqueness_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `signed_gravity_response_lane_status_note_2026-04-26` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `single_axiom_hilbert_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |

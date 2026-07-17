@@ -1,0 +1,31 @@
+loop_slug: alpha-heavy-piecewise-affine-formal-20260716
+mode: campaign_science_block
+block: 1
+cycle: 1
+goal: "Repair alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18 by removing the unsupported physical no-jump premise and proving only a dependency-free exact affine theorem."
+target_status: proposed_retained
+actual_current_surface_status: proposed_retained
+runtime_budget: "one block within the parent 12h campaign"
+checkpoint_interval: 30m
+active_route: defined_exact_rational_piecewise_affine_map
+hard_residual: "none inside the formal theorem; every physical identification is excluded"
+phase: delivery_pending
+files_touched:
+  - docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md
+  - scripts/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.py
+  - logs/runner-cache/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.txt
+  - docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md
+  - .claude/science/physics-loops/ckm-down-scale-covariance-20260712/CLAIM_STATUS_CERTIFICATE.md
+open_imports: []
+no_go_routes:
+  - "Do not revive the closed, unmerged physical no-jump derivation route from PR #5224."
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+review_findings: "two maintenance findings fixed: remove author-status self-confirmation from the runner; refresh its SHA-pinned cache"
+review_loop_disposition: pass
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+pr_status: ready_to_open
+automation_lock: "global lock unavailable because the configured lock path resolved under /Users/jonreilly; isolated worktree and dedicated branch used"
+next_exact_action: "Commit, push, and open one ready PR for independent review."
+stop_condition: "One coherent PR is open and ready for independent review; the parent campaign owns further target selection."

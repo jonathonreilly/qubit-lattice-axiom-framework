@@ -38,7 +38,7 @@ bare_retained_allowed: false
 | Rank-`1+5` determinant | Derive `R^(5/6)` from a normalized determinant | Algebra closes only after the multiplicity is built into `X_R`; target note (3.1), (4.1)-(4.2) | ATTEMPTED; parent bridge remains open |
 | NNI/GST | Extract mixing from mass hierarchy | Target note Section 4 gives fixed-spectrum models with different `V_cb`; runner `orientation_countermodel` | ATTEMPTED; spectra-only route closed |
 | QCD anomalous dimension | Derive `5/6` from running | Target note (5.5) and runner checks show common-ratio derivative zero and individual-mass power `12/25` | ATTEMPTED; pure-running exponent route closed |
-| Threshold matching | Select `2 GeV` from charm/bottom thresholds | The bounded kernel `docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md:23-35,72-92` assumes a threshold scale and no-jump condition; the approved scale primitive supplies units only (`docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md:15-43`) | ATTEMPTED; threshold-location selector route closed |
+| Threshold matching | Select `2 GeV` from charm/bottom thresholds | The exact formal lemma `docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md` supplies only defined rational affine-map algebra and explicitly supplies no physical threshold location or no-jump condition; the approved scale primitive supplies units only (`docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md:15-43`) | ATTEMPTED; threshold-location selector route closed |
 | RGI masses | Remove scale convention | Shared-transport theorem (5.2) reduces the comparison to the common ratio and preserves its mismatch | ATTEMPTED; scale-rescue route closed, RGI bridge remains open |
 | Fitted scale | Solve for the scale where the match is best | Equation (5.4) shows the target can tune `T`; fitted selectors are forbidden proof inputs | ATTEMPTED; fitted route closed |
 
@@ -95,10 +95,10 @@ does not say that `5/6` is globally “not a framework fact.”
   primitive. It closes units conversion only and does not select a
   dimensionless ratio or `2 GeV`.
 - Heavy-threshold kernel — source/status:
-  `docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md:23-35,72-92`,
-  bounded algebra conditional on an explicit no-jump matching input. It closes
-  the Lambda-parameter transition after a threshold is supplied; it does not
-  derive a physical threshold location or the composite CKM/mass bridge.
+  `docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md`,
+  proposed-retained exact algebra for a defined rational piecewise-affine map.
+  It supplies no physical threshold, no-jump condition, Lambda-parameter
+  transition, or composite CKM/mass bridge.
 - No new axiom or primitive is requested.
 
 ### N7 — steelman

@@ -697,7 +697,7 @@
         },
         {
           "claim_id": "dm_neutrino_cascade_geometry_note_2026-04-14",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "dm_neutrino_ckm_texture_transfer_no_go_note_2026-04-15",
@@ -2935,6 +2935,6 @@
       "uncertified_count": 669
     }
   ],
-  "repo_head": "f757231704c8f90e1c814702a95b5f1c6348967f",
+  "repo_head": "6e04c16faa6a4fb4541ca2a30a6182e0091a6256",
   "schema": "lane_certification_v2"
 }

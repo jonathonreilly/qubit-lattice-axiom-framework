@@ -109,7 +109,7 @@
         },
         {
           "claim_id": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "three_generation_observable_count_corollary_note_2026-05-03",
@@ -2389,7 +2389,7 @@
         },
         {
           "claim_id": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
@@ -2935,6 +2935,6 @@
       "uncertified_count": 669
     }
   ],
-  "repo_head": "a32cdc2777d39bc6ac3e07fff019b678ec4b4285",
+  "repo_head": "451a1a568f1ce99f8196701d3d80b28a7f32b617",
   "schema": "lane_certification_v2"
 }

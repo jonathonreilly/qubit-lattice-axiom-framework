@@ -50,6 +50,12 @@ therefore treats three-dimensional space as axiomatic input and causal or
 metric time as downstream bridge content; it does not try to rederive the
 spatial dimension or turn the spatial compiler into a clock.
 
+The Record axiom already supplies the generic statements that Records form,
+lock one admissible local possibility, and are permanent. It does not identify
+a syndrome outcome, pointer copy, detector branch, compiler update, or commit
+candidate as a Record. The open arrow below is that physical identification
+and formation rule, not a proposal to redefine Record or add permanence.
+
 ## Scope and source boundary
 
 This contract consumes only the relevant retained surfaces:

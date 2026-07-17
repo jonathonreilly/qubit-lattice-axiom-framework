@@ -920,6 +920,96 @@ def main():
         and pair_forced_u != product_rogue_u,
     )
 
+    g1a_w, g2b_w = sp.symbols("g1a_w g2b_w", real=True)
+    within_split_residual = sp.simplify(
+        g1a_w * g2b_w + g1a_w * (1 - g2b_w) - g1a_w
+    )
+    within_rank2_residual = sp.simplify(g1a_w + (1 - g1a_w) - 1)
+    split_operator_identity = matrix_is_zero(
+        sp.Matrix(sp.kronecker_product(
+            bloch_projector((ax, ay, az)), bloch_projector((bx, by, bz))
+        ))
+        + sp.Matrix(sp.kronecker_product(
+            bloch_projector((ax, ay, az)),
+            bloch_projector((-bx, -by, -bz)),
+        ))
+        - sp.Matrix(sp.kronecker_product(bloch_projector((ax, ay, az)), I2))
+    )
+    rank2_operator_identity = matrix_is_zero(
+        sp.Matrix(sp.kronecker_product(bloch_projector((ax, ay, az)), I2))
+        + sp.Matrix(sp.kronecker_product(bloch_projector((-ax, -ay, -az)), I2))
+        - sp.eye(4)
+    )
+    runner.check(
+        "T3j",
+        "the extension is additive on within-family product merges (both classified cases)",
+        within_split_residual == 0
+        and within_rank2_residual == 0
+        and split_operator_identity
+        and rank2_operator_identity,
+    )
+
+    ket00 = sp.Matrix([1, 0, 0, 0])
+    ket01 = sp.Matrix([0, 1, 0, 0])
+    ket10 = sp.Matrix([0, 0, 1, 0])
+    projector_00 = ket00 * ket00.H
+    psi_plus = (ket01 + ket10) / sp.sqrt(2)
+    projector_psi_plus = psi_plus * psi_plus.H
+    q_sum = projector_00 + projector_psi_plus
+
+    def eigenvalue_multiset(matrix):
+        values = []
+        for value, multiplicity in matrix.eigenvals().items():
+            values.extend([sp.simplify(value)] * multiplicity)
+        return tuple(sorted(values, key=sp.default_sort_key))
+
+    def multisets_equal(left, right):
+        return len(left) == len(right) and all(
+            sp.simplify(a - b) == 0 for a, b in zip(left, right)
+        )
+
+    def pair_partial_trace_eigenvalues(matrix, over_second):
+        if over_second:
+            reduced = sp.Matrix(
+                2, 2,
+                lambda i, j: matrix[2 * i, 2 * j] + matrix[2 * i + 1, 2 * j + 1],
+            )
+        else:
+            reduced = sp.Matrix(
+                2, 2, lambda i, j: matrix[i, j] + matrix[i + 2, j + 2]
+            )
+        return eigenvalue_multiset(reduced)
+
+    q_partial_eigs_2 = pair_partial_trace_eigenvalues(q_sum, True)
+    q_partial_eigs_1 = pair_partial_trace_eigenvalues(q_sum, False)
+    product_rank2_partial_eigs = pair_partial_trace_eigenvalues(
+        sp.Matrix(sp.kronecker_product(bloch_projector((0, 0, 1)), I2)), True
+    )
+    hemisphere_e_z = hemisphere_weight((0, 0, 1))
+    extension_value = sp.Rational(1, 2)
+    global_additivity_defect = sp.simplify(
+        extension_value
+        - hemisphere_e_z * hemisphere_e_z
+        - extension_value
+    )
+    runner.check(
+        "T3k",
+        "the reviewer witness shows the extension is not globally additive (defect minus one)",
+        matrix_is_zero(projector_00 * projector_psi_plus)
+        and q_sum.rank() == 2
+        and multisets_equal(
+            q_partial_eigs_2, (sp.Rational(1, 2), sp.Rational(3, 2))
+        )
+        and multisets_equal(
+            q_partial_eigs_1, (sp.Rational(1, 2), sp.Rational(3, 2))
+        )
+        and multisets_equal(
+            product_rank2_partial_eigs, (sp.Integer(0), sp.Integer(2))
+        )
+        and hemisphere_e_z == 1
+        and global_additivity_defect == -1,
+    )
+
     bell_vector = sp.Matrix([1, 0, 0, 1]) / sp.sqrt(2)
     bell_projector = bell_vector * bell_vector.H
     bell_coefficient_matrix = sp.Matrix(

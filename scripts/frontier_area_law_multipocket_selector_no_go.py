@@ -150,7 +150,7 @@ def main() -> int:
         f"mu={mu_star:.12f}, c(mu)={c_star:.12f}",
     )
     check(
-        "no extra pocket recovers the retained simple value 1/6",
+        "no extra pocket recovers the baseline simple-fiber value 1/6",
         math.isclose(multipocket_coefficient(0.0), 1.0 / 6.0, abs_tol=1e-15),
         f"c(0)={multipocket_coefficient(0.0):.12f}",
     )

@@ -132,7 +132,7 @@ This note does not rule out a future positive result. It narrows what such a
 result must prove:
 
 1. derive a multipocket transverse-measure law, such as `mu = 1/2`, from the
-   retained `Cl(3)/Z^3` primitive structure; or
+   supplied `Cl(3)/Z^3` framework structure; or
 2. derive a Schur/edge sector-weight law fixing the required convex average;
    or
 3. construct a gapped horizon carrier whose leading area coefficient is
@@ -167,8 +167,8 @@ rather than Markdown authority links.
 Safe wording:
 
 > Multi-pocket Widom carriers can be calibrated to `c_Widom = 1/4`, but only by
-> imposing an additional pocket-measure or sector-weight selector. The retained
-> `Cl(3)/Z^3` primitive boundary count does not yet derive that selector, so
+> imposing an additional pocket-measure or sector-weight selector. The supplied
+> `Cl(3)/Z^3` framework structure does not yet derive that selector, so
 > the multipocket route remains open only as a sharply specified residual
 > target.
 

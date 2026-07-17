@@ -18,7 +18,7 @@
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1381,6 +1381,59 @@
         "total_pass": 9
       },
       "verdict_rationale": "The local character identity and six-neighbor recurrence are sound, and the runner provides numerical algebraic checks of them. However, the runner never constructs the Wilson transfer operator or tests its quadratic-form positivity; a pointwise positive symmetric kernel need not be positive semidefinite. Consequently the normalized trace is not shown to induce the asserted positive state, so the full transfer-operator realization does not follow even though the narrower recurrence survives."
+    },
+    {
+      "archived_at": "2026-07-17T21:20:23.741182+00:00",
+      "audit_date": "2026-07-17T21:20:12.866240+00:00",
+      "audit_invocation_history": [
+        "f30552c45c0c40c2a4b569cac5744796"
+      ],
+      "audit_invocation_id": "f30552c45c0c40c2a4b569cac5744796",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 26.241,
+        "runner_hash": "75a5135ee1509542ca1db2311b475dd81826322df0a56b562c2103f5f084502a",
+        "transitive_descendants": 855
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-e53439e6cbde4cb29b3c54c7ce86fc06-gauge_vacuum_plaquette_t-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The positive-transfer, trace, source-kernel, pullback, and SU(3) recurrence results close analytically. The full chain does not close because general mixed-source non-representability is asserted for the SU(N) setting, whereas the supplied discriminator establishes it only on the finite S3 support model.",
+      "claim_scope": "Finite-volume SU(N) Wilson transfer positivity, periodic trace and marked-source formulas, the SU(3) character recurrence, and the asserted mixed-source one-slice non-representability.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-17T21:20:12.866240+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The tensor-power expansion of w_beta has nonnegative irreducible multiplicities, so C_beta and Q_beta are positive and T_beta = M_beta Q_beta M_beta is a positive Gram operator.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the non-representability statement to the demonstrated finite S3 support witness, or add an analytic SU(N) nonseparability counterexample before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 15,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The central positive-type expansion and ensuing operator construction are self-contained, and the runner genuinely computes 21 algebraic or finite-case support checks without importing an external comparator or hard-coding the contested conclusion. However, a two-slice kernel form alone does not prove that the resulting SU(N) operator cannot equal a one-slice multiplication placement, and the runner's S3 counterexample lies outside the stated SU(N) domain. Under the development-tier N1\u2013N8 judgment, N1/N7 leave that SU(N) discriminator untested, N2 isolates this single wall, N3/N5 classify the remaining negative clauses as scope firewalls, N4 provides no retained prior witness, and N6/N8 provide no applicable premise or cross-cycle result closing the gap."
     }
   ],
   "prose_corrections": [],

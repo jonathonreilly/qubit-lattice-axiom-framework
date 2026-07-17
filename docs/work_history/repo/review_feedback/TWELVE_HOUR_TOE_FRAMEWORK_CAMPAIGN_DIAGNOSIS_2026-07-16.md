@@ -1134,6 +1134,27 @@ phase. Conversely, a failed implementation does not by itself force widening;
 the failure must persist across the direct-kernel, record-derived, and
 spatial-code routes.
 
+## Where constitutional pressure could eventually land
+
+The remaining physics gaps do not all belong in the axioms. Their present
+typing is:
+
+| missing content | first scientific home | constitutional pressure only if |
+|---|---|---|
+| compact exact law and lawful domain | Admissibility law construction plus invariant-domain theorem | no candidate law/equivalence class can be identified without further primitive structure |
+| future-relevant coherent working state | local process and record-fibre theorem | the exact state discriminator finds different future records inside one record configuration |
+| occurrence, outcome, and rate | normalized local process, unique-extension theorem, or actual-history law | no lawful-domain theorem or process construction can supply them |
+| finite multi-site composition | generated local-algebra theorem and operational reconstruction | required composite sectors cannot be derived from the one-site algebra and law |
+| event algebra and probabilities | effect-complete operational process and repeated-history theorem | an irreducible normalized pairing survives the constructive routes |
+| permanence and renewal | carrier/export/resource law | exact recurrent physics requires revocation, re-encoding, or identity migration incompatible with the present Record sentence |
+| boundary and first records | one cosmological boundary/process construction | no homogeneous relational or generated-boundary route closes |
+| continuum, matter, and gravity | scaling, scattering, conserved-current, and response theorems | a common independent obstruction points to missing substrate structure rather than an unfinished model |
+
+This table prevents one final prose edit from becoming a container for every
+unfinished lane. At present, the strongest live constitutional discriminator
+is state sufficiency; the strongest live law discriminator is
+phase-sensitive local execution. Neither has yet failed.
+
 ## Decision gate before any final edit
 
 Any foundation edit should wait until these remaining tests are complete.

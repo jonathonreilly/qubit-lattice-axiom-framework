@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=52efc0e707a89b2770070e3b0844ea9df4f25622d10bc5049d8eb62d96829460 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=dc02750e482ab935590058a2194f976ba8fba24eb54d6abde65acc594de73d05 -->
 # Controlled Vocabulary
 
 > **Front-door lookup:** Looking up a single term? Go to
@@ -484,7 +484,7 @@ language to the audit-lane propose / ratify vocabulary. Source-note
 - `proposed_promoted` — author proposes promoted-grade; awaits audit ratification
 
 The canonical audit-ratified surface is the tracked sharded ledger
-[docs/audit/data/ledger/](../audit/data/ledger/); the rendered
+`docs/audit/data/ledger/`; the rendered
 `docs/audit/AUDIT_LEDGER.md` is a local pipeline-materialized cache.
 Legacy publication summaries may still use manuscript shorthand, but
 those rows should be read as proposed until the audit ledger marks

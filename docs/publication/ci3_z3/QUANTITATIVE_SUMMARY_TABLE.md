@@ -11,7 +11,7 @@ bridges, and delayed-observability rows, pair it with
 
 Audit-transition note: `Claim-strength status` is the package-facing
 quantitative classification. Ratified claim strength is controlled by
-the [sharded audit ledger](../../audit/data/ledger/); until an audit row is clean,
+the sharded audit ledger (`docs/audit/data/ledger/`); until an audit row is clean,
 legacy `retained` / `promoted` wording here should be read as proposed
 package status.
 

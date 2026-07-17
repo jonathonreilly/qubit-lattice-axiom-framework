@@ -12,7 +12,7 @@ If the matrix and this ledger ever disagree, the matrix wins until this ledger
 is updated.
 
 Audit-transition note: this ledger is narrative package bookkeeping. The
-canonical ratification surface is the [sharded audit ledger](../../audit/data/ledger/).
+canonical ratification surface is the sharded audit ledger (`docs/audit/data/ledger/`).
 Legacy wording such as `retained core` or `promoted` in this file describes
 intended manuscript placement unless the audit ledger gives the row a clean
 `effective_status`.

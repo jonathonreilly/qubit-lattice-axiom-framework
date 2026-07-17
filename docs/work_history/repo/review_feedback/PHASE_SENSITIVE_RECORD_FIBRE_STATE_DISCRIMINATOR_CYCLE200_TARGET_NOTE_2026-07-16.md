@@ -89,6 +89,12 @@ candidate coherent microstates `omega+` and `omega-` above `R`, apply the
 physically generated effect-complete future tester repertoire and compare
 every later-record distribution.
 
+Both candidates must belong to the candidate law's physical domain and be
+reachable from its admitted boundary class. An arbitrary off-domain
+microstate is not evidence against record sufficiency. Conversely, merely
+declaring one candidate unreachable is not a closure unless the invariant
+domain or boundary theorem proves it.
+
 ```text
 same R + same fixed law + different future records
     => the candidates are distinct predictive states
@@ -114,6 +120,8 @@ The retained-grade construction must include:
 - no parasitic record formation;
 - exact ancestry from context record through token and operation to output;
 - normalization and positivity;
+- generation of the interference term rather than storage of a permanent
+  “phase answer” followed by classical lookup;
 - predecessor coexistence; and
 - explicit record, role, law-row, and working-state costs.
 
@@ -129,6 +137,10 @@ No axiom edit follows from failure of one implementation.
   the quantum-process gap remains.
 - If all routes fail at the same local interface, isolate the common residual
   before proposing constitutional language.
+
+The effect-complete statement is bounded to the declared generated tester
+repertoire until a local-to-global theorem is proved. It must not be promoted
+to lattice-wide record sufficiency from one finite fixture.
 
 Record wording is not the target of this discriminator. Formation,
 permanence, and readout remain separate until the successful process says when

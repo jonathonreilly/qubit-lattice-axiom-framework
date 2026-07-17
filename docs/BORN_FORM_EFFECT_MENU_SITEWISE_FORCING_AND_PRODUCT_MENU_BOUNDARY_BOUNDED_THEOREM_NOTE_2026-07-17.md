@@ -1,7 +1,7 @@
 ---
 claim_id: born_form_effect_menu_sitewise_forcing_and_product_menu_boundary_bounded_theorem_note_2026-07-17
 claim_type: bounded_theorem
-claim_scope: "Bridge-conditional two-sided statement on the menu grade of the graded-constraint hypothesis surface, with the projective and effect grades treated as the two poles and intermediate menu families named untested. Effect horn: if the assumed grading is defined on the effect algebra of a finite region with finite effect-partition menus eligible, the Born trace form is forced sitewise at every finite dimension >= 2, reproved from finite operator algebra with no literature bridge input; the landed one-site projective rogue extends to no such grading. Projective horn boundary: on a bonded pair, grading hypotheses whose eligible menus are the product-projector resolutions do not force the Born trace form (constructive witness; exhaustive product-menu classification), so the landed composite route's menu family cannot be weakened all the way to product-projector menus at 2x2; no claim is made that full H4 or any particular entangled-menu family is minimal. The menu grade itself is underived; no horn is selected; the grading primitive is assumed here, not adopted."
+claim_scope: "Bridge-conditional two-sided statement on the menu grade of the graded-constraint hypothesis surface, with the projective and effect grades treated as the two poles and intermediate menu families named untested. Effect horn: if the assumed grading is defined on the effect algebra of a finite region with finite effect-partition menus eligible, the Born trace form is forced sitewise at every finite dimension >= 2, reproved from finite operator algebra with no literature bridge input; the landed one-site projective rogue extends to no such grading. Projective horn boundary: on a bonded pair, grading hypotheses whose eligible menus are the product-projector resolutions, and whose additivity is the normalization carried by those menus (global orthogonal additivity over arbitrary projection pairs is not retained: it alone rebuilds full frame-function strength, where the landed Gleason route forces the form regardless of menu restriction), do not force the Born trace form (constructive witness; exhaustive product-menu classification), so the landed composite route's menu family cannot be weakened all the way to product-projector menus at 2x2 with menu-carried additivity; no claim is made that full H4 or any particular entangled-menu family is minimal. The menu grade itself is underived; no horn is selected; the grading primitive is assumed here, not adopted."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py
@@ -46,13 +46,16 @@ one exact statement on each side of it:
   grading of this kind, so the dimension-2 loophole is a feature of the
   projective grade, not of the site dimension.
 - **Projective horn boundary.** On the bonded pair, the projective-grade
-  hypotheses restricted to product-projector menus do not force the Born
-  trace form: a constructive product-form rogue normalizes every
-  product-projector menu (classified exhaustively) while restricting on one
-  site to the landed non-quadratic assignment. H4's menu family therefore
-  cannot be weakened all the way to product-projector menus at `2 x 2`;
-  whether full H4 or some intermediate entangled-menu family is minimal is
-  not established here.
+  hypotheses restricted to product-projector menus — with additivity
+  carried by those menus, since retaining global orthogonal additivity by
+  itself rebuilds full frame-function strength and the landed Gleason
+  route then forces the form regardless of menu restriction — do not force
+  the Born trace form: a constructive product-form rogue normalizes every
+  product-projector menu (classified exhaustively) while restricting on
+  one site to the landed non-quadratic assignment. H4's menu family
+  therefore cannot be weakened all the way to product-projector menus at
+  `2 x 2` with menu-carried additivity; whether full H4 or some
+  intermediate entangled-menu family is minimal is not established here.
 
 Neither horn is selected. The axioms supply no menus at all; which resolutions
 of the identity are menus, and at which grade, is exactly the registration
@@ -176,10 +179,23 @@ Born form on the bonded pair).** Work on a bonded nearest-neighbor pair,
 `d = 4`, at projective grade, but with the eligible menus restricted to
 product-projector resolutions: finite families of nonzero projectors of the
 form `A ⊗ B` (`A`, `B` one-site projectors) summing to the pair identity.
-The weight domain remains all pair projections, as in the landed H1; with
-the menu family so restricted, values on non-product projections are
-constrained by no eligible menu, and the witness below is completed to the
-full domain by an explicit arbitrary extension. Then:
+The hypothesis surface at this restriction is stated exactly: the weight
+domain remains all pair projections and the weight is a function of the
+projection alone (the landed H1/H3 shape), but additivity enters only as
+the normalization carried by the eligible product-projector menus and
+their within-family coarse-grainings (merging orthogonal product elements
+whose sum is again a product projector). The landed H2 read as global
+orthogonal additivity over arbitrary projection pairs is not retained
+here, and cannot be: any globally additive normalized weight is already a
+frame function on the full projection lattice (finite induction over
+orthogonal sums), where the landed note's Gleason bridge input forces the
+trace form at `d = 4` regardless of which menus are eligible — global
+additivity by itself restores exactly the "full projection-measure
+strength" of the landed refutation-seat finding, and the menu-family dial
+is meaningful only with menu-carried additivity. Values on non-product
+projections are then constrained by no eligible menu, and the witness
+below is completed to the full domain by an explicit arbitrary extension.
+Then:
 
 - **(T3a) Classification.** Every product-projector menu is a tree menu: up
   to swapping the two sites, it is `{1}`, or `{P(a)⊗1, P(−a)⊗1}`, or
@@ -203,7 +219,20 @@ full domain by an explicit arbitrary extension. Then:
   arbitrary choice that no product-projector menu constrains, so the
   extended `W` is defined on the full projection domain of the landed H1
   while every menu-normalization obligation of the restricted family falls
-  on the product values alone. Using `g_i(n) + g_i(−n) = 1` (which the
+  on the product values alone. The extension satisfies within-family
+  additivity — for orthogonal product pairs whose sum is again a product
+  projector, which the T3a machinery classifies as same-first-slot second
+  -site merges `P(a)⊗P(b) + P(a)⊗P(−b) = P(a)⊗1` and antipodal rank-2
+  merges `P(a)⊗1 + P(−a)⊗1 = 1` (and site-swaps), the product rule is
+  exactly additive — and it is not globally additive, witnessed exactly:
+  for `R = P(e_z)⊗P(e_z)`, `P` the projector onto `(|01⟩ + |10⟩)/√2`, and
+  `Q = R + P` (orthogonal, with `Q` non-product by its partial-trace
+  spectrum `{3/2, 1/2}`), the extension gives
+  `W(Q) − W(R) − W(P) = 1/2 − 1 − 1/2 = −1`. That failure is forced by the
+  boundary itself, not a defect of the witness: a globally additive
+  completion cannot exist, since global additivity would make `W` a frame
+  function and the landed Gleason input would force the trace form,
+  contradicting the non-Born product restriction. Using `g_i(n) + g_i(−n) = 1` (which the
   hemisphere rule satisfies exactly, including on its tie set), `W` sums to
   1 on every tree menu of either rooting, hence on every product-projector
   menu by T3a. Its one-site restriction `W(A ⊗ 1) = g_1(A)` is the landed
@@ -211,8 +240,11 @@ full domain by an explicit arbitrary extension. Then:
   `E ↦ Tr(ρ(E ⊗ 1))` is trace-affine for every pair state `ρ`, no density
   matrix on the pair represents `W`.
 - **(T3c) Consequence.** At `2 x 2`, projective-grade hypotheses whose menu
-  family contains only product-projector resolutions do not force the Born
-  form. The landed composite route's H4 clause — menu-eligibility for
+  family contains only product-projector resolutions, with additivity
+  carried by that family, do not force the Born form; and the restriction
+  is meaningful only in that menu-carried reading, since global orthogonal
+  additivity alone is frame-function strength and the landed bridge input
+  then forces the form at `d = 4` whatever the menus. The landed composite route's H4 clause — menu-eligibility for
   resolutions "that contain entangled projections", with the landed
   refutation-seat finding "Without this full projection-measure strength a
   partial menu assignment is not a frame function and Gleason does not
@@ -297,14 +329,16 @@ for it:
   pair.
 - **N2 wall independence:** T3 names one wall (product-menu insufficiency at
   `2 x 2`); no second wall is presented.
-- **N3 hidden-wall scan:** T3 assumes the projective-grade hypotheses of the
-  landed note restricted to a smaller menu family; the restriction is the
-  claim, not a hidden condition, and the witness is completed to the full
-  projection domain by the explicit arbitrary extension stated in T3b (the
-  restricted menu family constrains no non-product value, which is exactly
-  the content of the restriction). The tie-set convention inside the
-  hemisphere rule is inherited verbatim from the landed R1 construction and
-  gated.
+- **N3 hidden-wall scan:** T3's hypothesis surface is stated exactly in
+  its preamble: menu-carried additivity only, with the global-additivity
+  reading excluded and shown to trivialize the restriction (it alone
+  rebuilds frame-function strength). The witness is completed to the full
+  projection domain by the explicit arbitrary extension stated in T3b,
+  which satisfies within-family additivity and provably cannot be globally
+  additive (the exact `W(Q) − W(R) − W(P) = −1` gate; a reviewer-supplied
+  reconciliation finding adopted here). The tie-set convention inside the
+  hemisphere rule is inherited verbatim from the landed R1 construction
+  and gated.
 - **N4 residual matching:** the only cited prior negative is the landed R1
   rogue existence, reused at the same resolution (one-site binary menus and
   their product refinements).
@@ -360,4 +394,4 @@ above. Mutation checks (one load-bearing mutation per check family,
 reverted) are recorded in the review history and PR body.
 
 Measured runner total after final verification:
-`TOTAL: PASS=54 FAIL=0`.
+`TOTAL: PASS=56 FAIL=0`.

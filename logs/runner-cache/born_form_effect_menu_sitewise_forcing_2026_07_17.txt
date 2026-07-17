@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py
-runner_sha256: 140c32696e6834f87e02639b8d4cfb9ab94f980df4b0c5a6b9f9c367c404ed71
+runner_sha256: 2bb29c0d1e27dc155af449c2cf76177d49a20933739eb6429aba06577ff1ef24
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.06
+elapsed_sec: 0.95
 status: ok
 ----- stdout -----
 PASS: A1 two menu normalizations eliminate to partial additivity
@@ -47,6 +47,8 @@ PASS: T3g-tree4 complement identities normalize both rooted four-leaf tree menus
 PASS: T3g-211 complement identities normalize both site-swapped 2-1-1 menus
 PASS: T3g-coarse complement identities normalize both 2-2 menus and the identity menu
 PASS: T3h pair-state restriction is affine and conflicts with the product rogue
+PASS: T3j the extension is additive on within-family product merges (both classified cases)
+PASS: T3k the reviewer witness shows the extension is not globally additive (defect minus one)
 PASS: T3i Bell projection is entangled and therefore outside product menus
 PASS: T5a Pauli-conjugation invariance forces a symbolic Hermitian matrix scalar
 PASS: T5b trace normalization gives I/2 and uniform embedded binary weights
@@ -60,7 +62,7 @@ PASS: N7 effect bridge pins the landed Bloch coefficient with exact Unicode minu
 PASS: N8-claim source note pins its exact claim identifier
 PASS: N8-hypotheses source note contains both effect-grade hypothesis labels
 PASS: N8-no-bridge source note pins the no-literature-bridge-input scope
-TOTAL: PASS=54 FAIL=0
+TOTAL: PASS=56 FAIL=0
 
 ----- stderr -----
 

@@ -105,3 +105,48 @@ Finding from the first B probe: the original `nonnegative_between` was
 vacuously true on an empty interval; supervisor hardened the gate with an
 interval-nonemptiness guard (runner edit after worker delivery), after which
 both B probes fail correctly. Unmutated runner: `TOTAL: PASS=54 FAIL=0`.
+
+## Round 2 (block01) — external reviewer reconciliation finding: REPAIRED
+
+Finding (reviewer, via owner): block01's T3 witness was extended to
+non-product projections by the constant 1/2 while the note's framing left
+the landed H2 readable as GLOBAL orthogonal additivity; under that reading
+the extension violates additivity exactly — for `R = |00><00|`,
+`P = |psi+><psi+|`, `Q = R + P`: `W(Q) − W(R) − W(P) = 1/2 − 1 − 1/2 = −1`
+— and the 54/0 runner never tested the extension against global
+additivity. Supervisor verification: exact (R ⊥ P; Q rank 2, non-product
+by partial-trace spectrum {3/2, 1/2}; defect −1). Deeper consequence
+identified during repair: under the global-additivity reading the T3
+boundary is not merely unwitnessed but FALSE — global additivity plus
+normalization makes any weight a frame function on Proj(M_4) (finite
+induction over orthogonal sums), where the landed Gleason bridge input
+forces the trace form regardless of menu eligibility. The menu-family
+restriction is meaningful only with menu-carried additivity.
+
+Repair (this round, on the block01 branch / PR #5472):
+- T3's hypothesis surface stated exactly: menu-carried additivity
+  (normalization over eligible product menus plus within-family
+  coarse-grainings whose merged element is again a product projector);
+  global orthogonal additivity explicitly not retained, with the
+  trivialization argument in the note (preamble + T3c) and claim_scope.
+- T3b now states the extension's exact status: within-family additive
+  (both classified merge cases gated, T3j) and provably not globally
+  additive (the reviewer witness gated exactly, T3k, including the
+  non-product status of Q via partial-trace spectrum {3/2,1/2} vs the
+  product rank-2 spectrum {2,0}); a globally additive completion cannot
+  exist, by the frame-function argument.
+- Runner: +2 gates (T3j, T3k); mutations for both families FAIL correctly
+  (within-family residual perturbed; psi+ degraded to a product vector,
+  which kills the non-product gate); total 54 -> 56; cache re-pinned;
+  note verification inventory and measured total synced.
+- Block02 (#5476) audited for reliance: it reuses only block01's ONE-SITE
+  rogue (R1 lineage) and T1-side text, never pair-level T3; its own
+  boundary carries the self-contained cubic witness. No mathematical
+  change needed; the stack is merged forward so its branch carries the
+  corrected parent. Block03 likewise does not lean on block01-T3.
+
+Lesson recorded for memory: when a panel demands a witness be extended to
+a larger domain, RE-CHECK every remaining hypothesis against the extended
+object — the extension satisfied the domain demand and silently broke a
+differently-read hypothesis; and state additivity's carrier (menus vs
+global) explicitly whenever restricting menu families.

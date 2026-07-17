@@ -17,8 +17,8 @@ surface.
 ## Attribution boundary
 
 The microscopic construction and the existence of its two-particle bound
-states are prior work. The primary source is Bisio, D'Ariano, Perinotti, and
-Tosini, *Solutions of a Two-Particle Interacting Quantum Walk*:
+states are prior work. The primary source is Bisio, D'Ariano, Mosco,
+Perinotti, and Tosini, *Solutions of a Two-Particle Interacting Quantum Walk*:
 
 <https://arxiv.org/abs/1804.08508>
 

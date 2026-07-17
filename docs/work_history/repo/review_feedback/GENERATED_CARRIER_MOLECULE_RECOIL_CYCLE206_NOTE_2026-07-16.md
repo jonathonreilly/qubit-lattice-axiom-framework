@@ -16,7 +16,7 @@ surface.
 ## Attribution boundary
 
 The two-fermion molecule is inherited from the Thirring quantum walk studied
-by Bisio, D'Ariano, Perinotti, and Tosini:
+by Bisio, D'Ariano, Mosco, Perinotti, and Tosini:
 
 <https://arxiv.org/abs/1804.08508>
 

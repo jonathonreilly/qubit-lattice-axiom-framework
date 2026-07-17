@@ -6,9 +6,9 @@
 
 ## Artifact Chain
 
-- [`scripts/ALT_CONNECTIVITY_FAMILY_COMPLEX_SWEEP.py`](/Users/jonreilly/Projects/Physics/scripts/ALT_CONNECTIVITY_FAMILY_COMPLEX_SWEEP.py)
-- [`logs/2026-04-06-alt-connectivity-family-complex-sweep.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-alt-connectivity-family-complex-sweep.txt)
-- [`docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md)
+- [`scripts/ALT_CONNECTIVITY_FAMILY_COMPLEX_SWEEP.py`](../scripts/ALT_CONNECTIVITY_FAMILY_COMPLEX_SWEEP.py)
+- [`logs/2026-04-06-alt-connectivity-family-complex-sweep.txt`](../logs/2026-04-06-alt-connectivity-family-complex-sweep.txt)
+- [`docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md`](ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md)
 
 ## Question
 

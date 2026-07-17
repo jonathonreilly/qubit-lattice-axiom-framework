@@ -1445,6 +1445,61 @@
         "total_pass": 49
       },
       "verdict_rationale": "The exact algebraic classification is correct on the stated singlet template, and the supplied runner performs symbolic identity checks and exact rational examples without external comparators. The artifact also asserts two negative boundaries: removing n=0 destroys uniqueness, while omitting the two color-triplet slots leaves the SU(3)^3 anomaly uncancelled; it further names physical existence and minimality of that surface as the remaining P-COMP wall. Those negative assertions lack the full N1-N8 stress packet required for a clean artifact-level verdict, so the correctly scoped positive chain remains conditional at the whole-note level."
+    },
+    {
+      "archived_at": "2026-07-17T19:42:16.255353+00:00",
+      "audit_date": "2026-07-17T19:42:05.882605+00:00",
+      "audit_invocation_history": [
+        "bcf7a3c2649a42c6a295bac92db1a257"
+      ],
+      "audit_invocation_id": "bcf7a3c2649a42c6a295bac92db1a257",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 10.878,
+        "runner_hash": "502da3a16e58ff4a86e448946ab3bec2da14829e83cb976774b4ba6409a3a3ee",
+        "transitive_descendants": 1330
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-18e0f4b2cc7e4f8b93db46c015ffe73f-abj_p_comp_scale_free_si-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "On the supplied surface, x+y=2a and z=-6a reduce the cubic equation to xy=-8a^2, whose quadratic has roots 4a and -2a. This closure remains conditional on the supplied completion surface.",
+      "claim_scope": "Given the stated left-handed surface, two opposite-chirality color-triplet singlets, one charged colorless singlet, and n=0, exact cancellation of the listed anomalies forces {x,y,z,n}={4a,-2a,-6a,0} up to exchanging x and y.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-17T19:42:05.882605+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Using x^3+y^3=(x+y)^3-3xy(x+y) with x+y=2a forces xy=-8a^2, so x and y are the roots 4a and -2a.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the framework-native physical existence/minimality theorem for the opposite-chirality singlet completion surface, including n=0, then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 18,
+        "C": 0,
+        "D": 0,
+        "total_pass": 49
+      },
+      "verdict_rationale": "Issue: The exact A-class algebra is correct, but the completion-slot template, opposite chirality, and n=0 are explicit physical premises not supplied by any cited retained or approved authority. Why this blocks: the runner proves only the implication on that surface, so physical P-COMP remains conditional even though the scoped implication closes. No-go discipline N1-N8: N1 tests only removal of n=0 and removal of a color slot; N2 keeps their uniqueness and SU(3)^3 residuals distinct; N3 identifies the stated chirality convention and normalization, N4 has no prior witness, N5 lacks the prescribed five-resolution execution, N6 supplies no closing candidate, N7 leaves the explicit non-neutral counterexample intact, and N8 contains no applicable echo establishing the physical completion premise. Repair target: derive or register a retained framework theorem supplying the opposite-chirality singlet surface and neutral singlet; Claim boundary until fixed: the exact conditional charge classification stated in claim_scope."
     }
   ],
   "prose_corrections": [],

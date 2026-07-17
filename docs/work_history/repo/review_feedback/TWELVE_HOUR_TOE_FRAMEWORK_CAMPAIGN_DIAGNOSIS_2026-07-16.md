@@ -2,7 +2,7 @@
 
 Date: 2026-07-16
 
-Status: campaign synthesis through source-grade Cycle 197B; audit unset; no
+Status: campaign synthesis through source-grade Cycle 198; audit unset; no
 axiom edit proposed
 
 Authority: none
@@ -40,8 +40,9 @@ support a large, compositional causal computer without a hidden scheduler.
 They do not yet show that one final microscopic table simultaneously realizes
 every listed apparatus. Cycle 197B gives one 102,398-row candidate table that
 separately hosts the latest bounded membership/interaction and dispatcher
-corpora; simultaneous mixed spatial composition, complete lawful domain, and
-law selection remain open.
+corpora, and Cycle 198 places the membership and R2 dispatcher apparatuses in
+one disjoint spatial product. Mixed contact, complete lawful domain, and law
+selection remain open.
 
 The same work also exposed the decisive limitation. The large compiler uses
 many exact onsite role labels. Distinct elements of one `M_2(C)` possibility
@@ -162,6 +163,21 @@ This is bounded raw-table compatibility, not law selection. The replacement
 codebook is an offline global compiler choice, not a physically selected
 runtime branch. A simultaneous mixed apparatus, arbitrary boundaries,
 compactness, uniqueness, and empirical selection remain open.
+
+Cycle 198 closes the simultaneous-disjoint caveat. One Cycle-190 hard
+finite-membership apparatus and one Cycle-193 R2 dispatcher occupy one record
+configuration with exactly one open lattice layer between their complete
+supports. Under the same 102,398-row candidate table, the merged history has
+6,676 dynamic records and 8,615 load-bearing edges; its dependency graph is
+the exact disjoint union of the two source graphs, both schedule projections
+are valid, and there are no cross edges, parasitic firings, or adjacent
+unordered writes. All 160,224 rotated local checks pass at zero row or role
+cost.
+
+This is simultaneous coexistence, not cross-lane physics. The open layer
+guarantees that no local signature contains records from both apparatuses.
+Quantum execution, matter-control interaction, and arbitrary many-apparatus
+composition remain open.
 
 ## What is now established
 
@@ -441,7 +457,7 @@ a cellular computer and demonstrating a quantum physical law.
 | Lattice | `Z^3` and proper-cubic covariance support exact local compilation | useful hypothesis; continuum rotations, boosts, Lorentz recovery, and empirical lattice effects remain untested |
 | Qubit | one-site `M_2(C)` is enough for an orthogonal binary record pair | the 153-role Cycle-185 alphabet, and the 155-role Cycle-190/197B extension, are extensional labels rather than a physical one-site classical register; spatial binary encoding remains live, so no larger onsite algebra is yet forced |
 | Finite composition | five sites can host 32 binary codewords in the ordinary generated tensor algebra | generated finite composition is a theorem condition, not current axiom content; silent global sectors remain unless the law domain or an operational theorem removes them |
-| Admissibility | one deterministic 102,398-row replacement-base raw table separately hosts the mapped Cycle-179 formation fixture and the tested finite-membership, classical-interaction, and physical-dispatch corpora | this is bounded candidate-table compatibility, not a selected microscopic law; simultaneous mixed geometry, complete lawful domain, compactness, the still-unpriced proper-cubic quotient of this table, and unrestricted occurrence/confluence remain open |
+| Admissibility | one deterministic 102,398-row replacement-base raw table hosts the mapped Cycle-179 formation fixture, the tested finite-membership/classical-interaction/physical-dispatch corpora, and one simultaneous disjoint membership-dispatch product | this is bounded candidate-table compatibility, not a selected microscopic law; mixed cross-contact, complete lawful domain, compactness, the still-unpriced proper-cubic quotient of this table, and unrestricted occurrence/confluence remain open |
 | Record | append-only records support stable ancestry and form-before-read; two witnesses give one-erasure redundancy in the coherent lift | universal occurrence, content selection, rate, first seed, and storage renewal remain absent; witness count does not supply actuality; absolute permanence may create downstream capacity pressure |
 | Qualification | states are record configurations | Cycle 189 reconstructs one complete two-qubit density calculator from complete record fibres and fixed law; lattice-wide sufficiency, environments, and microscopic phase transport remain open |
 
@@ -503,7 +519,7 @@ The lanes are not equally far from closure.
 | matter | recurrent localized ancestry, generated finite membership, exact shell coexistence for all 1,024 word pairs, and one two-bundle classical XOR interaction | large gap: whole-object interaction, dynamical binding, nontrivial quantum scattering, coherent propagation, statistics, charges, spectrum, masses |
 | gravity/resource | exact record cost and append-only trail accounting | very large gap: conserved source, universal tensor response, equivalence principle, continuum dynamics |
 | cosmology/boundary | named finite seeds and relational-boundary candidates | large gap: first records, one physical boundary/state, multi-carrier generation, observed large-scale state |
-| law selection | one deterministic 102,398-row common-base candidate table for the newest classical interaction and dispatch bridges | foundational gap: simultaneous mixed composition, compact microscopic law/equivalence class, complete domain, and independent prediction |
+| law selection | one deterministic 102,398-row common-base candidate table for the newest classical-interaction and dispatch bridges, including one disjoint simultaneous product | foundational gap: interacting mixed composition, compact microscopic law/equivalence class, complete domain, and independent prediction |
 
 “Close” here means close to a sharply stated conditional theorem, not close
 to experimental confirmation or a finished TOE.
@@ -574,10 +590,14 @@ This closes bounded raw-table compatibility for the newest information/matter
 and quantum-control bridges. It does not make the table a complete predictive
 law or select it as natural or unique. The old and replacement bases are
 indistinguishable on Cycle 197A's Cycle-190/196/193 target corpus; that
-statement does not include the mapped Cycle-179 replay. No simultaneous
-spatially mixed Cycle-190/Cycle-193 apparatus has yet been run.
-Arbitrary-boundary reachability of the 43 replaced row orbits and full-domain
-confluence remain open.
+statement does not include the mapped Cycle-179 replay.
+
+Cycle 198 adds one simultaneous spatial test: the Cycle-190 hard membership
+apparatus and Cycle-193 R2 dispatcher close as an exact disjoint graph product
+with one open separating lattice layer. That retires separate-run
+compatibility as the only evidence. It does not test a cross-apparatus local
+signature or interaction. Arbitrary-boundary reachability of the 43 replaced
+row orbits and full-domain confluence remain open.
 
 The family is still not a compact natural rule, a unique consequence of the
 foundation, or an empirically selected equivalence class.
@@ -1038,10 +1058,10 @@ bounded constructions rather than items on this list.
 1. microscopically implement the common Cycle-191 interpreter, derive a
    normalized effect-complete operational law so trace form follows, and
    prove the Cycle-194 component-mean condition for its repeated process;
-2. simultaneous mixed Cycle-190/Cycle-193 geometry under the Cycle-197 common
-   base, then one autonomous full-law binary interpreter macrocell or a
-   decisive smaller-law alternative, followed by exact-law
-   compression/selection;
+2. move beyond Cycle-198's disjoint product to one load-bearing
+   matter/dispatcher cross-contact under the common base, then construct one
+   autonomous full-law binary interpreter macrocell or a decisive smaller-law
+   alternative, followed by exact-law compression/selection;
 3. lift Cycle-196's classical one-lane XOR contact to a covariant,
    whole-object coherent interaction/scattering kernel with conserved
    incoming/outgoing content;

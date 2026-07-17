@@ -42,11 +42,11 @@ records the work that still needs to be done.
 
 | # | Lane | Science priority | Approachability | Status today |
 |---|---|---|---|---|
-| 1 | Hadron mass program (m_p, m_π, hadron spectroscopy) | HIGHEST | Tier B-C | confinement T=0 ratified pre-reset (re-audit pending); √σ ≈ 465 MeV graded bounded pre-reset; m_p, m_π not derived |
+| 1 | Hadron mass program (m_p, m_π, hadron spectroscopy) | HIGHEST | Tier B-C | confinement row audited_conditional pre-reset (never ratified; conditioned on imported SU(3) Yang-Mills/lattice inputs), unaudited today; √σ ≈ 465 MeV graded bounded pre-reset, unaudited today; m_p, m_π not derived |
 | 2 | Atomic-scale predictions (Rydberg, Lamb shift, fine structure) | HIGH-VISCERAL | Tier A (post-Koide) / B (pre-Koide) | scaffold uses textbook inputs |
 | 3 | Quark masses retention (5 quark masses) | HIGHEST | Tier B-C | bounded companion via threshold-local + up-type extension |
 | 4 | Neutrino quantitative closure (m_ν, Δm², Majorana phases) | HIGH | Tier B-C | "different carriers"; bounded |
-| 5 | Hubble constant H_0 derivation (cosmology matter bridge) | HIGH | Tier B | external input; structural identities landed pre-reset (re-audit pending) |
+| 5 | Hubble constant H_0 derivation (cosmology matter bridge) | HIGH | Tier B | external input; structural identities landed pre-reset (audit/re-audit pending; principal rows never audited) |
 | 6 | Charged-lepton mass retention (full closure: ratios + V_0) | HIGHEST | Tier A-B | Koide flagship lane in flight (ratios); V_0 absolute scale separately open |
 
 Per-lane open-lane documents:
@@ -114,7 +114,7 @@ gated by Lane 2.
 
 | # | Lane | Science priority | Approachability | Status today |
 |---|---|---|---|---|
-| 7 | Thermalization / kinetic theory (equilibrium, `T`, H-theorem, pressure) | HIGH-FOUNDATIONAL | Tier B-C (core) / Tier C gated by Lane 2 (gas) | thermal structure imported, not derived; arrow + generalized-2nd-law + classicalization-firewall scaffolding graded retained_bounded pre-reset; past-hypothesis residual remains open and is not an accepted premise |
+| 7 | Thermalization / kinetic theory (equilibrium, `T`, H-theorem, pressure) | HIGH-FOUNDATIONAL | Tier B-C (core) / Tier C gated by Lane 2 (gas) | thermal structure imported, not derived; arrow row audited_conditional pre-reset; generalized-2nd-law and classicalization-firewall scaffolds never audited; all three unaudited today; past-hypothesis residual remains open and is not an accepted premise |
 
 Per-lane document:
 [`07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md`](./07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md).

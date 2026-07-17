@@ -1,116 +1,104 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
-runner_sha256: 31cdaed1b271dc15e2485f4a6fe3fce9bc41c5d4b6c8bc1f293560f8f1635b01
+runner_sha256: 9d57b383188b264571aba4ee13645952b036b875fded413436e00a7fe1ef364d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.47
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
 ------------------------------------------------------------------------------
-Source-anchor checks
+Source theorem and scope guards
 ------------------------------------------------------------------------------
-PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md exists
-PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: supplied finite law plus supplied orientation bridge
-PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: The law carries probability; the post-record words carry realized markers
-PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: examples do not derive an arrow, clock, kernel, or selected dial
-PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
-PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md exists
-PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: supplied orientation bridge
-PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: does not derive an orientation
-PASS docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md contains: directed post-record certificates are available only under supplied orientation/law/clock/kernel bridges
-PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md exists
-PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md contains: count pushforward is invariant under reversal
-PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md contains: post-record counts do not orient a physical arrow
-PASS docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md contains: An oriented law, boundary condition, clock, or production kernel
-PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: arrow_or_dynamics_bridge
-PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: Total: `169` stability/dynamics selector rows.
-PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: stable setting is not selected dial
-PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py exists
-PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py contains: def stability_subbucket
-PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py contains: EXPECTED_SUBCOUNTS
-PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py contains: arrow_or_dynamics_bridge
+PASS source note exists
+PASS source contains: **Claim type:** positive_theorem
+PASS source contains: E_mu_rev[f] = E_mu[f o rho]
+PASS source contains: signed-transition drift: -1/2 forward, 1/2 reversed
+PASS source contains: marker lag: 7/6 forward, 11/6 reversed
+PASS source contains: low-to-high boundary event: 1/2 forward, 1/6 reversed
+PASS source contains: a physical orientation or arrow
+PASS source contains: Any physical claim using this theorem requires separately supported bridge inputs
+PASS source excludes overclaim: Record derives the orientation
+PASS source excludes overclaim: Record supplies the probability law
+PASS source excludes overclaim: the examples select a physical arrow
+PASS source excludes overclaim: arrow_or_dynamics_bridge bucket remains
 
 ------------------------------------------------------------------------------
-Arrow/dynamics row-bucket checks
+General reversal identities on all three laws
 ------------------------------------------------------------------------------
-PASS stability/dynamics selector row count remains 169 :: 169
-PASS arrow/dynamics bridge row count remains 63 :: Counter({'flow_or_thermal_stability': 106, 'arrow_or_dynamics_bridge': 63})
-PASS flow/thermal stability row count remains 106 :: Counter({'flow_or_thermal_stability': 106, 'arrow_or_dynamics_bridge': 63})
+PASS transition: law is normalized
+PASS transition: all masses are nonnegative
+PASS transition: reversed law is normalized
+PASS transition: reversal is involutive
+PASS transition: expectation transport identity
+PASS transition: letter-count pushforward is reversal invariant
+PASS marker: law is normalized
+PASS marker: all masses are nonnegative
+PASS marker: reversed law is normalized
+PASS marker: reversal is involutive
+PASS marker: expectation transport identity
+PASS marker: letter-count pushforward is reversal invariant
+PASS boundary: law is normalized
+PASS boundary: all masses are nonnegative
+PASS boundary: reversed law is normalized
+PASS boundary: reversal is involutive
+PASS boundary: expectation transport identity
+PASS boundary: letter-count pushforward is reversal invariant
 
 ------------------------------------------------------------------------------
 Example 1: signed transition drift
 ------------------------------------------------------------------------------
-PASS transition law normalizes
-PASS forward signed drift expectation is exact :: {-2: Fraction(1, 4), -1: Fraction(1, 2), 2: Fraction(1, 4)}
-PASS reverse signed drift expectation flips sign :: {-2: Fraction(1, 4), 1: Fraction(1, 2), 2: Fraction(1, 4)}
-PASS forward positive drift tail is exact
-PASS reverse positive drift tail is exact
-PASS count pushforward is invariant for transition example :: {(1, 1, 1): Fraction(1, 1)}
-PASS forward transition certificate verifies
-PASS reverse transition certificate verifies
-PASS positive-tail transition certificate verifies
-PASS missing orientation blocks transition certificate
-PASS wrong law scope blocks transition certificate
-PASS wrong value is rejected for transition certificate
+PASS transition forward distribution is exact
+PASS transition reversed distribution is exact
+PASS transition forward expectation is -1/2
+PASS transition reversed expectation is 1/2
+PASS transition forward positive tail is 1/4
+PASS transition reversed positive tail is 3/4
+PASS transition count pushforwards agree
+PASS transition forward certificate verifies
+PASS transition reversed certificate verifies
+PASS transition wrong value is rejected
+PASS transition wrong law id is rejected
+PASS transition missing orientation is rejected
 
 ------------------------------------------------------------------------------
-Example 2: realized marker lag
+Example 2: marker lag
 ------------------------------------------------------------------------------
-PASS marker law normalizes
-PASS law carries probabilities outside realized record words
-PASS forward marker lag expectation is exact :: {0: Fraction(1, 6), 1: Fraction(1, 2), 2: Fraction(1, 3)}
-PASS reverse marker lag expectation is exact :: {1: Fraction(1, 3), 2: Fraction(1, 2), 3: Fraction(1, 6)}
-PASS forward marker lag tail is exact
-PASS reverse marker lag tail is exact
-PASS count pushforward is invariant for marker example :: {(1, 2, 0, 1): Fraction(1, 2), (1, 1, 1, 1): Fraction(1, 2)}
+PASS marker forward distribution is exact
+PASS marker reversed distribution is exact
+PASS marker forward expectation is 7/6
+PASS marker reversed expectation is 11/6
+PASS marker forward lag<=1 probability is 2/3
+PASS marker reversed lag<=1 probability is 1/3
+PASS marker count pushforwards agree
 PASS marker expectation certificate verifies
 PASS marker tail certificate verifies
+PASS marker wrong tail value is rejected
 
 ------------------------------------------------------------------------------
-Example 3: supplied low-to-high boundary event
+Example 3: low-to-high boundary event
 ------------------------------------------------------------------------------
-PASS boundary law normalizes
-PASS forward low-to-high boundary probability is exact
-PASS reverse low-to-high boundary probability is exact
-PASS boundary event is orientation-sensitive
-PASS count pushforward is invariant for boundary example :: {(1, 0, 1, 1): Fraction(2, 3), (1, 1, 0, 1): Fraction(1, 3)}
+PASS boundary forward distribution is exact
+PASS boundary reversed distribution is exact
+PASS boundary forward probability is 1/2
+PASS boundary reversed probability is 1/6
+PASS boundary event is reversal sensitive
+PASS boundary count pushforwards agree
 PASS boundary forward certificate verifies
-PASS boundary reverse certificate verifies
-PASS missing kernel blocks dynamics-language boundary certificate
+PASS boundary reversed certificate verifies
+PASS boundary missing orientation is rejected
 
 ------------------------------------------------------------------------------
-Firewall flags
+Malformed-law rejection
 ------------------------------------------------------------------------------
-PASS audit data written flag is false
-PASS audit verdict applied flag is false
-PASS promoted/retained claim flag is false
-PASS Record-derived orientation flag is false
-PASS Record-derived physical arrow flag is false
-PASS production-kernel selected flag is false
-PASS clock/rate derived flag is false
-PASS Born law derived from Record flag is false
-PASS generation/Koide dial selected flag is false
-PASS stable setting selects dial flag is false
-PASS selected dial derived from stability flag is false
+PASS empty law is rejected
+PASS negative-mass law is rejected
+PASS unnormalized law is rejected
 
 SUMMARY: PASS=64 FAIL=0
-SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE
-ARROW_OR_DYNAMICS_BRIDGE_ROWS=63
-PRE_RECORD_LAW_CARRIES_PROBABILITY=TRUE
-POST_RECORD_SITE_CARRIES_REALIZED_INFORMATION=TRUE
-DIRECTED_STATISTICS_REQUIRE_SUPPLIED_ORIENTATION=TRUE
-ORIENTATION_DERIVED_FROM_RECORD=FALSE
-PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE
-PRODUCTION_KERNEL_SELECTED=FALSE
-CLOCK_OR_RATE_DERIVED=FALSE
-BORN_LAW_DERIVED_FROM_RECORD=FALSE
-GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
-STABLE_SETTING_SELECTS_DIAL=FALSE
-SELECTED_DIAL_DERIVED_FROM_STABILITY=FALSE
-AUDIT_LEDGER_WRITTEN=FALSE
-AUDIT_VERDICT_APPLIED=FALSE
+FORMAL_DIRECTED_REVERSAL_THEOREM=TRUE
+PHYSICAL_ORIENTATION_BRIDGE=OPEN
+CLOCK_KERNEL_RECORD_DYNAMICS_BRIDGES=OPEN
 
 ----- stderr -----
 

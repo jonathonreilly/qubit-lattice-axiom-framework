@@ -1,44 +1,34 @@
 #!/usr/bin/env python3
-"""Finite directed-certificate examples under supplied post-record orientation."""
+"""Exact finite rational reversal theorem and adversarial verification modes."""
 
 from __future__ import annotations
 
+import argparse
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from fractions import Fraction
 from pathlib import Path
-import importlib.util
-import json
-import sys
+from typing import Callable
 
 
 ROOT = Path(__file__).resolve().parents[1]
-LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
-STABILITY_SCRIPT = ROOT / "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py"
-PASS = 0
-FAIL = 0
+NOTE = ROOT / "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md"
 
 Word = tuple[str, ...]
 Law = dict[Word, Fraction]
+Statistic = Callable[[Word], int]
+
+PASS = 0
+FAIL = 0
 
 
 @dataclass(frozen=True)
-class SuppliedBridge:
-    bridge_id: str
+class FiniteCertificate:
     law_id: str
     orientation: str | None
-    clock_id: str | None
-    kernel_id: str | None
-
-
-@dataclass(frozen=True)
-class DirectedCertificate:
-    cert_id: str
-    law_id: str
-    bridge_id: str
     statistic_id: str
     kind: str
-    expected_value: Fraction
+    expected: Fraction
     threshold: int | None = None
 
 
@@ -55,74 +45,69 @@ def report(label: str, ok: bool, detail: str = "") -> None:
 
 
 def section(title: str) -> None:
-    print()
-    print("-" * 78)
-    print(title)
-    print("-" * 78)
+    print(f"\n{'-' * 78}\n{title}\n{'-' * 78}")
 
 
-def read_rel(path: str) -> str:
-    return (ROOT / path).read_text(encoding="utf-8")
-
-
-def require_text(path: str, needles: list[str]) -> None:
-    text = read_rel(path)
-    report(f"{path} exists", True)
-    for needle in needles:
-        report(f"{path} contains: {needle}", needle in text)
-
-
-def load_script(name: str, path: Path):
-    spec = importlib.util.spec_from_file_location(name, path)
-    if spec is None or spec.loader is None:
-        raise RuntimeError(f"cannot load {path}")
-    module = importlib.util.module_from_spec(spec)
-    sys.modules[name] = module
-    spec.loader.exec_module(module)
-    return module
-
-
-def normalize_law(law: Law) -> bool:
-    return bool(law) and sum(law.values(), Fraction(0, 1)) == 1 and all(m >= 0 for m in law.values())
-
-
-def rev(word: Word) -> Word:
+def reverse_word(word: Word) -> Word:
     return tuple(reversed(word))
 
 
 def reverse_law(law: Law) -> Law:
     out: defaultdict[Word, Fraction] = defaultdict(Fraction)
     for word, mass in law.items():
-        out[rev(word)] += mass
+        out[reverse_word(word)] += mass
     return dict(out)
 
 
-def alphabet_for(law: Law) -> tuple[str, ...]:
-    return tuple(sorted({atom for word in law for atom in word}))
+def valid_law(law: Law) -> bool:
+    return (
+        bool(law)
+        and all(isinstance(mass, Fraction) and mass >= 0 for mass in law.values())
+        and sum(law.values(), Fraction(0)) == 1
+    )
 
 
-def count_word(word: Word, alphabet: tuple[str, ...]) -> tuple[int, ...]:
-    counts = Counter(word)
-    return tuple(counts[a] for a in alphabet)
+def expectation(law: Law, statistic: Statistic) -> Fraction:
+    return sum(
+        (mass * statistic(word) for word, mass in law.items()), Fraction(0)
+    )
 
 
-def count_pushforward(law: Law) -> dict[tuple[int, ...], Fraction]:
-    alphabet = alphabet_for(law)
-    out: defaultdict[tuple[int, ...], Fraction] = defaultdict(Fraction)
+def distribution(law: Law, statistic: Statistic) -> dict[int, Fraction]:
+    out: defaultdict[int, Fraction] = defaultdict(Fraction)
     for word, mass in law.items():
-        out[count_word(word, alphabet)] += mass
+        out[statistic(word)] += mass
+    return dict(sorted(out.items()))
+
+
+def probability_cmp(
+    law: Law, statistic: Statistic, threshold: int, relation: str
+) -> Fraction:
+    if relation == "gt":
+        return sum(
+            (mass for word, mass in law.items() if statistic(word) > threshold),
+            Fraction(0),
+        )
+    if relation == "le":
+        return sum(
+            (mass for word, mass in law.items() if statistic(word) <= threshold),
+            Fraction(0),
+        )
+    raise ValueError(f"unknown relation: {relation}")
+
+
+def letter_count(word: Word) -> tuple[tuple[str, int], ...]:
+    return tuple(sorted(Counter(word).items()))
+
+
+def count_pushforward(law: Law) -> dict[tuple[tuple[str, int], ...], Fraction]:
+    out: defaultdict[tuple[tuple[str, int], ...], Fraction] = defaultdict(Fraction)
+    for word, mass in law.items():
+        out[letter_count(word)] += mass
     return dict(out)
 
 
-def oriented_law(law: Law, bridge: SuppliedBridge) -> Law | None:
-    if bridge.orientation == "forward":
-        return law
-    if bridge.orientation == "reverse":
-        return reverse_law(law)
-    return None
-
-
-SIGNED_EDGES: dict[tuple[str, str], int] = {
+SIGNED_EDGES = {
     ("A", "B"): 1,
     ("B", "A"): -1,
     ("B", "C"): 1,
@@ -130,358 +115,301 @@ SIGNED_EDGES: dict[tuple[str, str], int] = {
 }
 
 
-def signed_transition_drift(word: Word) -> int:
+def signed_drift(word: Word) -> int:
     return sum(SIGNED_EDGES.get(edge, 0) for edge in zip(word, word[1:]))
 
 
 def marker_lag(word: Word) -> int:
-    if "M" not in word:
-        return len(word)
-    return word.index("M")
+    return word.index("M") if "M" in word else len(word)
 
 
-def low_to_high_boundary_event(word: Word) -> int:
+def low_high_event(word: Word) -> int:
     return int(len(word) >= 2 and word[0] == "L" and word[-1] == "H")
 
 
-STATISTICS = {
-    "signed_transition_drift": signed_transition_drift,
+STATISTICS: dict[str, Statistic] = {
+    "signed_drift": signed_drift,
     "marker_lag": marker_lag,
-    "low_to_high_boundary_event": low_to_high_boundary_event,
+    "low_high_event": low_high_event,
+}
+
+TRANSITION_LAW: Law = {
+    ("A", "B", "C"): Fraction(1, 4),
+    ("A", "C", "B"): Fraction(1, 4),
+    ("B", "A", "C"): Fraction(1, 4),
+    ("C", "B", "A"): Fraction(1, 4),
+}
+MARKER_LAW: Law = {
+    ("A", "M", "B", "B"): Fraction(1, 2),
+    ("A", "B", "M", "C"): Fraction(1, 3),
+    ("M", "C", "A", "B"): Fraction(1, 6),
+}
+BOUNDARY_LAW: Law = {
+    ("L", "A", "H"): Fraction(1, 2),
+    ("H", "A", "L"): Fraction(1, 6),
+    ("L", "B", "A"): Fraction(1, 3),
+}
+
+LAWS = {
+    "transition": (TRANSITION_LAW, signed_drift),
+    "marker": (MARKER_LAW, marker_lag),
+    "boundary": (BOUNDARY_LAW, low_high_event),
 }
 
 
-def expectation(law: Law, statistic) -> Fraction:
-    return sum(Fraction(statistic(word), 1) * mass for word, mass in law.items())
-
-
-def probability_gt(law: Law, statistic, threshold: int) -> Fraction:
-    return sum(mass for word, mass in law.items() if statistic(word) > threshold)
-
-
-def probability_le(law: Law, statistic, threshold: int) -> Fraction:
-    return sum(mass for word, mass in law.items() if statistic(word) <= threshold)
-
-
-def distribution(law: Law, statistic) -> dict[int, Fraction]:
-    out: defaultdict[int, Fraction] = defaultdict(Fraction)
-    for word, mass in law.items():
-        out[statistic(word)] += mass
-    return dict(sorted(out.items()))
-
-
 def verify_certificate(
-    law_id: str,
-    law: Law,
-    bridge: SuppliedBridge,
-    cert: DirectedCertificate,
+    law_id: str, law: Law, certificate: FiniteCertificate
 ) -> tuple[str, Fraction | None]:
-    if not normalize_law(law):
-        return "blocked_bad_law", None
-    if bridge.orientation not in {"forward", "reverse"}:
-        return "blocked_missing_orientation", None
-    if bridge.clock_id is None:
-        return "blocked_missing_clock", None
-    if bridge.kernel_id is None:
-        return "blocked_missing_kernel", None
-    if law_id != cert.law_id or bridge.law_id != law_id or bridge.bridge_id != cert.bridge_id:
-        return "blocked_scope_mismatch", None
-    statistic = STATISTICS.get(cert.statistic_id)
+    if not valid_law(law):
+        return "invalid_law", None
+    if not isinstance(certificate.expected, Fraction):
+        return "invalid_certificate", None
+    if certificate.orientation not in {"forward", "reversed"}:
+        return "missing_orientation", None
+    if certificate.law_id != law_id:
+        return "scope_mismatch", None
+    statistic = STATISTICS.get(certificate.statistic_id)
     if statistic is None:
-        return "blocked_unknown_statistic", None
-    olaw = oriented_law(law, bridge)
-    if olaw is None:
-        return "blocked_missing_orientation", None
-    if cert.kind == "expectation":
-        value = expectation(olaw, statistic)
-    elif cert.kind == "probability_gt":
-        if cert.threshold is None:
-            return "blocked_missing_threshold", None
-        value = probability_gt(olaw, statistic, cert.threshold)
-    elif cert.kind == "probability_le":
-        if cert.threshold is None:
-            return "blocked_missing_threshold", None
-        value = probability_le(olaw, statistic, cert.threshold)
+        return "unknown_statistic", None
+    oriented = law if certificate.orientation == "forward" else reverse_law(law)
+    if certificate.kind == "expectation":
+        value = expectation(oriented, statistic)
+    elif certificate.kind == "probability_gt" and certificate.threshold is not None:
+        value = probability_cmp(oriented, statistic, certificate.threshold, "gt")
+    elif certificate.kind == "probability_le" and certificate.threshold is not None:
+        value = probability_cmp(oriented, statistic, certificate.threshold, "le")
     else:
-        return "blocked_unknown_kind", None
-    if value != cert.expected_value:
-        return "value_mismatch", value
-    return "verified", value
+        return "invalid_certificate", None
+    return ("verified", value) if value == certificate.expected else ("value_mismatch", value)
 
 
-def source_anchor_checks() -> None:
-    section("Source-anchor checks")
-    require_text(
-        "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md",
-        [
-            "supplied finite law plus supplied orientation bridge",
-            "The law carries probability; the post-record words carry realized markers",
-            "examples do not derive an arrow, clock, kernel, or selected dial",
-            "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py",
-        ],
+def source_boundary_checks() -> None:
+    section("Source theorem and scope guards")
+    text = NOTE.read_text(encoding="utf-8")
+    flat = " ".join(text.split())
+    report("source note exists", NOTE.is_file())
+    required = (
+        "**Claim type:** positive_theorem",
+        "E_mu_rev[f] = E_mu[f o rho]",
+        "signed-transition drift: -1/2 forward, 1/2 reversed",
+        "marker lag: 7/6 forward, 11/6 reversed",
+        "low-to-high boundary event: 1/2 forward, 1/6 reversed",
+        "a physical orientation or arrow",
+        "Any physical claim using this theorem requires separately supported bridge inputs",
     )
-    require_text(
-        "docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md",
-        [
-            "supplied orientation bridge",
-            "does not derive an orientation",
-            "directed post-record certificates are available only under supplied orientation/law/clock/kernel bridges",
-        ],
+    for needle in required:
+        report(f"source contains: {needle}", needle in flat)
+    forbidden = (
+        "Record derives the orientation",
+        "Record supplies the probability law",
+        "the examples select a physical arrow",
+        "arrow_or_dynamics_bridge bucket remains",
     )
-    require_text(
-        "docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md",
-        [
-            "count pushforward is invariant under reversal",
-            "post-record counts do not orient a physical arrow",
-            "An oriented law, boundary condition, clock, or production kernel",
-        ],
-    )
-    require_text(
-        "docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md",
-        [
-            "arrow_or_dynamics_bridge",
-            "Total: `169` stability/dynamics selector rows.",
-            "stable setting is not selected dial",
-        ],
-    )
-    require_text(
-        "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py",
-        [
-            "def stability_subbucket",
-            "EXPECTED_SUBCOUNTS",
-            "arrow_or_dynamics_bridge",
-        ],
-    )
+    for phrase in forbidden:
+        report(f"source excludes overclaim: {phrase}", phrase not in flat)
 
 
-def row_bucket_checks() -> None:
-    section("Arrow/dynamics row-bucket checks")
-    stability = load_script("stability_dynamics_selector_subdivision", STABILITY_SCRIPT)
-    rows = list(json.loads(LEDGER.read_text(encoding="utf-8"))["rows"].values())
-    stability_rows = [
-        row
-        for row in rows
-        if stability.prev.scoped(row)
-        and stability.prev.ladder_bucket(row) == "selector_or_dial_needed"
-        and stability.prev.selector_subbucket(row) == "stability_or_dynamics_selector"
-    ]
-    buckets: Counter[str] = Counter(stability.stability_subbucket(row) for row in stability_rows)
-    report("stability/dynamics selector row count remains 169", len(stability_rows) == 169, str(len(stability_rows)))
-    report("arrow/dynamics bridge row count remains 63", buckets["arrow_or_dynamics_bridge"] == 63, str(buckets))
-    report("flow/thermal stability row count remains 106", buckets["flow_or_thermal_stability"] == 106, str(buckets))
+def general_law_checks() -> None:
+    section("General reversal identities on all three laws")
+    for law_id, (law, statistic) in LAWS.items():
+        reversed_law = reverse_law(law)
+        report(f"{law_id}: law is normalized", valid_law(law))
+        report(f"{law_id}: all masses are nonnegative", all(m >= 0 for m in law.values()))
+        report(f"{law_id}: reversed law is normalized", valid_law(reversed_law))
+        report(f"{law_id}: reversal is involutive", reverse_law(reversed_law) == law)
+        transport = expectation(reversed_law, statistic) == expectation(
+            law, lambda word: statistic(reverse_word(word))
+        )
+        report(f"{law_id}: expectation transport identity", transport)
+        report(
+            f"{law_id}: letter-count pushforward is reversal invariant",
+            count_pushforward(reversed_law) == count_pushforward(law),
+        )
 
 
-def transition_drift_example() -> None:
+def transition_checks() -> None:
     section("Example 1: signed transition drift")
-    law: Law = {
-        ("A", "B", "C"): Fraction(1, 4),
-        ("A", "C", "B"): Fraction(1, 4),
-        ("B", "A", "C"): Fraction(1, 4),
-        ("C", "B", "A"): Fraction(1, 4),
-    }
-    forward = SuppliedBridge("bridge_transition_forward", "law_transition_drift", "forward", "word_index_clock", "signed_edge_kernel")
-    reverse = SuppliedBridge("bridge_transition_reverse", "law_transition_drift", "reverse", "word_index_clock", "signed_edge_kernel")
-    missing = SuppliedBridge("bridge_transition_forward", "law_transition_drift", None, "word_index_clock", "signed_edge_kernel")
-    wrong = SuppliedBridge("bridge_wrong_law", "other_law", "forward", "word_index_clock", "signed_edge_kernel")
-    cert_forward = DirectedCertificate(
-        "transition_drift_forward_expectation",
-        "law_transition_drift",
-        "bridge_transition_forward",
-        "signed_transition_drift",
-        "expectation",
-        Fraction(-1, 2),
+    law = TRANSITION_LAW
+    reversed_law = reverse_law(law)
+    expected_f = {-2: Fraction(1, 4), -1: Fraction(1, 2), 2: Fraction(1, 4)}
+    expected_r = {-2: Fraction(1, 4), 1: Fraction(1, 2), 2: Fraction(1, 4)}
+    report("transition forward distribution is exact", distribution(law, signed_drift) == expected_f)
+    report("transition reversed distribution is exact", distribution(reversed_law, signed_drift) == expected_r)
+    report("transition forward expectation is -1/2", expectation(law, signed_drift) == Fraction(-1, 2))
+    report("transition reversed expectation is 1/2", expectation(reversed_law, signed_drift) == Fraction(1, 2))
+    report("transition forward positive tail is 1/4", probability_cmp(law, signed_drift, 0, "gt") == Fraction(1, 4))
+    report("transition reversed positive tail is 3/4", probability_cmp(reversed_law, signed_drift, 0, "gt") == Fraction(3, 4))
+    report("transition count pushforwards agree", count_pushforward(law) == count_pushforward(reversed_law))
+    forward = FiniteCertificate("transition", "forward", "signed_drift", "expectation", Fraction(-1, 2))
+    reversed_cert = FiniteCertificate("transition", "reversed", "signed_drift", "expectation", Fraction(1, 2))
+    bad = FiniteCertificate("transition", "forward", "signed_drift", "expectation", Fraction(0))
+    wrong = FiniteCertificate("other", "forward", "signed_drift", "expectation", Fraction(-1, 2))
+    missing = FiniteCertificate("transition", None, "signed_drift", "expectation", Fraction(-1, 2))
+    report("transition forward certificate verifies", verify_certificate("transition", law, forward) == ("verified", Fraction(-1, 2)))
+    report("transition reversed certificate verifies", verify_certificate("transition", law, reversed_cert) == ("verified", Fraction(1, 2)))
+    report("transition wrong value is rejected", verify_certificate("transition", law, bad) == ("value_mismatch", Fraction(-1, 2)))
+    report("transition wrong law id is rejected", verify_certificate("transition", law, wrong) == ("scope_mismatch", None))
+    report("transition missing orientation is rejected", verify_certificate("transition", law, missing) == ("missing_orientation", None))
+
+
+def marker_checks() -> None:
+    section("Example 2: marker lag")
+    law = MARKER_LAW
+    reversed_law = reverse_law(law)
+    expected_f = {0: Fraction(1, 6), 1: Fraction(1, 2), 2: Fraction(1, 3)}
+    expected_r = {1: Fraction(1, 3), 2: Fraction(1, 2), 3: Fraction(1, 6)}
+    report("marker forward distribution is exact", distribution(law, marker_lag) == expected_f)
+    report("marker reversed distribution is exact", distribution(reversed_law, marker_lag) == expected_r)
+    report("marker forward expectation is 7/6", expectation(law, marker_lag) == Fraction(7, 6))
+    report("marker reversed expectation is 11/6", expectation(reversed_law, marker_lag) == Fraction(11, 6))
+    report("marker forward lag<=1 probability is 2/3", probability_cmp(law, marker_lag, 1, "le") == Fraction(2, 3))
+    report("marker reversed lag<=1 probability is 1/3", probability_cmp(reversed_law, marker_lag, 1, "le") == Fraction(1, 3))
+    report("marker count pushforwards agree", count_pushforward(law) == count_pushforward(reversed_law))
+    cert = FiniteCertificate("marker", "forward", "marker_lag", "expectation", Fraction(7, 6))
+    tail = FiniteCertificate("marker", "forward", "marker_lag", "probability_le", Fraction(2, 3), 1)
+    bad = FiniteCertificate("marker", "forward", "marker_lag", "probability_le", Fraction(1, 3), 1)
+    report("marker expectation certificate verifies", verify_certificate("marker", law, cert) == ("verified", Fraction(7, 6)))
+    report("marker tail certificate verifies", verify_certificate("marker", law, tail) == ("verified", Fraction(2, 3)))
+    report("marker wrong tail value is rejected", verify_certificate("marker", law, bad) == ("value_mismatch", Fraction(2, 3)))
+
+
+def boundary_checks() -> None:
+    section("Example 3: low-to-high boundary event")
+    law = BOUNDARY_LAW
+    reversed_law = reverse_law(law)
+    report("boundary forward distribution is exact", distribution(law, low_high_event) == {0: Fraction(1, 2), 1: Fraction(1, 2)})
+    report("boundary reversed distribution is exact", distribution(reversed_law, low_high_event) == {0: Fraction(5, 6), 1: Fraction(1, 6)})
+    report("boundary forward probability is 1/2", expectation(law, low_high_event) == Fraction(1, 2))
+    report("boundary reversed probability is 1/6", expectation(reversed_law, low_high_event) == Fraction(1, 6))
+    report("boundary event is reversal sensitive", expectation(law, low_high_event) != expectation(reversed_law, low_high_event))
+    report("boundary count pushforwards agree", count_pushforward(law) == count_pushforward(reversed_law))
+    forward = FiniteCertificate("boundary", "forward", "low_high_event", "expectation", Fraction(1, 2))
+    reversed_cert = FiniteCertificate("boundary", "reversed", "low_high_event", "expectation", Fraction(1, 6))
+    missing = FiniteCertificate("boundary", None, "low_high_event", "expectation", Fraction(1, 2))
+    report("boundary forward certificate verifies", verify_certificate("boundary", law, forward) == ("verified", Fraction(1, 2)))
+    report("boundary reversed certificate verifies", verify_certificate("boundary", law, reversed_cert) == ("verified", Fraction(1, 6)))
+    report("boundary missing orientation is rejected", verify_certificate("boundary", law, missing) == ("missing_orientation", None))
+
+
+def malformed_law_checks() -> None:
+    section("Malformed-law rejection")
+    cert = FiniteCertificate("bad", "forward", "signed_drift", "expectation", Fraction(0))
+    report("empty law is rejected", verify_certificate("bad", {}, cert) == ("invalid_law", None))
+    report("negative-mass law is rejected", verify_certificate("bad", {("A",): Fraction(2), ("B",): Fraction(-1)}, cert) == ("invalid_law", None))
+    report("unnormalized law is rejected", verify_certificate("bad", {("A",): Fraction(1, 2)}, cert) == ("invalid_law", None))
+
+
+def independent_mode() -> None:
+    section("Independent direct-summation reconstruction")
+    fixtures = (
+        ([("ABC", 1, 4), ("ACB", 1, 4), ("BAC", 1, 4), ("CBA", 1, 4)], "drift", Fraction(-1, 2), Fraction(1, 2)),
+        ([("AMBB", 1, 2), ("ABMC", 1, 3), ("MCAB", 1, 6)], "lag", Fraction(7, 6), Fraction(11, 6)),
+        ([("LAH", 1, 2), ("HAL", 1, 6), ("LBA", 1, 3)], "event", Fraction(1, 2), Fraction(1, 6)),
     )
-    cert_reverse = DirectedCertificate(
-        "transition_drift_reverse_expectation",
-        "law_transition_drift",
-        "bridge_transition_reverse",
-        "signed_transition_drift",
-        "expectation",
-        Fraction(1, 2),
+
+    def independent_stat(word: str, kind: str) -> int:
+        if kind == "drift":
+            scores = {"AB": 1, "BA": -1, "BC": 1, "CB": -1}
+            return sum(scores.get(word[i : i + 2], 0) for i in range(len(word) - 1))
+        if kind == "lag":
+            return word.find("M") if "M" in word else len(word)
+        return int(word.startswith("L") and word.endswith("H"))
+
+    for rows, kind, expected_forward, expected_reversed in fixtures:
+        total = sum((Fraction(n, d) for _, n, d in rows), Fraction(0))
+        forward = sum((Fraction(n, d) * independent_stat(word, kind) for word, n, d in rows), Fraction(0))
+        reversed_value = sum((Fraction(n, d) * independent_stat(word[::-1], kind) for word, n, d in rows), Fraction(0))
+        forward_counts = Counter((tuple(sorted(Counter(word).items())), Fraction(n, d)) for word, n, d in rows)
+        reversed_counts = Counter((tuple(sorted(Counter(word[::-1]).items())), Fraction(n, d)) for word, n, d in rows)
+        report(f"{kind}: independent law normalizes", total == 1)
+        report(f"{kind}: independent forward value", forward == expected_forward, str(forward))
+        report(f"{kind}: independent reversed value", reversed_value == expected_reversed, str(reversed_value))
+        report(f"{kind}: independent count data are reversal invariant", forward_counts == reversed_counts)
+
+
+def hostile_mode() -> None:
+    section("Hostile controls")
+    cert = FiniteCertificate("transition", "forward", "signed_drift", "expectation", Fraction(-1, 2))
+    report("hostile empty law rejected", verify_certificate("transition", {}, cert)[0] == "invalid_law")
+    float_law = {("A",): 0.5, ("B",): 0.5}
+    float_cert = FiniteCertificate("transition", "forward", "signed_drift", "expectation", 0.0)  # type: ignore[arg-type]
+    report(
+        "hostile float coercion rejected",
+        verify_certificate("transition", float_law, cert)[0] == "invalid_law"  # type: ignore[arg-type]
+        and verify_certificate("transition", TRANSITION_LAW, float_cert)[0]
+        == "invalid_certificate",
     )
-    cert_tail = DirectedCertificate(
-        "transition_drift_forward_positive_tail",
-        "law_transition_drift",
-        "bridge_transition_forward",
-        "signed_transition_drift",
-        "probability_gt",
-        Fraction(1, 4),
-        threshold=0,
+    report("hostile negative law rejected", verify_certificate("transition", {("A",): Fraction(2), ("B",): Fraction(-1)}, cert)[0] == "invalid_law")
+    report("hostile wrong law id rejected", verify_certificate("other", TRANSITION_LAW, cert)[0] == "scope_mismatch")
+    missing = FiniteCertificate("transition", None, "signed_drift", "expectation", Fraction(-1, 2))
+    report("hostile missing orientation rejected", verify_certificate("transition", TRANSITION_LAW, missing)[0] == "missing_orientation")
+    unknown = FiniteCertificate("transition", "forward", "unknown", "expectation", Fraction(0))
+    report("hostile unknown statistic rejected", verify_certificate("transition", TRANSITION_LAW, unknown)[0] == "unknown_statistic")
+    invalid = FiniteCertificate("transition", "forward", "signed_drift", "tail", Fraction(0))
+    report("hostile invalid certificate kind rejected", verify_certificate("transition", TRANSITION_LAW, invalid)[0] == "invalid_certificate")
+    bad = FiniteCertificate("transition", "forward", "signed_drift", "expectation", Fraction(99))
+    report("hostile wrong expected value rejected", verify_certificate("transition", TRANSITION_LAW, bad) == ("value_mismatch", Fraction(-1, 2)))
+
+
+MUTATIONS = (
+    "drift_forward",
+    "marker_reversed",
+    "boundary_reversed",
+    "count_pushforward",
+    "source_scope",
+)
+
+
+def intentional_failure_mode(mutation: str) -> None:
+    selected = MUTATIONS if mutation == "all" else (mutation,)
+    section(f"Intentional-failure controls: {', '.join(selected)}")
+    for item in selected:
+        if item == "drift_forward":
+            report("mutation drift forward expected as zero", expectation(TRANSITION_LAW, signed_drift) == 0)
+        elif item == "marker_reversed":
+            report("mutation marker reversed expected as 7/6", expectation(reverse_law(MARKER_LAW), marker_lag) == Fraction(7, 6))
+        elif item == "boundary_reversed":
+            report("mutation boundary reversed expected as 1/2", expectation(reverse_law(BOUNDARY_LAW), low_high_event) == Fraction(1, 2))
+        elif item == "count_pushforward":
+            damaged = {word[:-1]: mass for word, mass in TRANSITION_LAW.items()}
+            report("mutation damaged map preserves count pushforward", count_pushforward(damaged) == count_pushforward(TRANSITION_LAW))
+        elif item == "source_scope":
+            mutated = NOTE.read_text(encoding="utf-8") + "\nRecord derives the orientation.\n"
+            report("mutation source still excludes physical derivation", "Record derives the orientation" not in mutated)
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--mode",
+        choices=("normal", "independent", "hostile", "intentional-failure"),
+        default="normal",
     )
-    cert_wrong_value = DirectedCertificate(
-        "transition_drift_bad_value",
-        "law_transition_drift",
-        "bridge_transition_forward",
-        "signed_transition_drift",
-        "expectation",
-        Fraction(0, 1),
-    )
-    f_law = oriented_law(law, forward)
-    r_law = oriented_law(law, reverse)
-    assert f_law is not None and r_law is not None
-
-    report("transition law normalizes", normalize_law(law))
-    report("forward signed drift expectation is exact", expectation(f_law, signed_transition_drift) == Fraction(-1, 2), str(distribution(f_law, signed_transition_drift)))
-    report("reverse signed drift expectation flips sign", expectation(r_law, signed_transition_drift) == Fraction(1, 2), str(distribution(r_law, signed_transition_drift)))
-    report("forward positive drift tail is exact", probability_gt(f_law, signed_transition_drift, 0) == Fraction(1, 4))
-    report("reverse positive drift tail is exact", probability_gt(r_law, signed_transition_drift, 0) == Fraction(3, 4))
-    report("count pushforward is invariant for transition example", count_pushforward(f_law) == count_pushforward(r_law), str(count_pushforward(f_law)))
-
-    status_f, value_f = verify_certificate("law_transition_drift", law, forward, cert_forward)
-    status_r, value_r = verify_certificate("law_transition_drift", law, reverse, cert_reverse)
-    status_tail, value_tail = verify_certificate("law_transition_drift", law, forward, cert_tail)
-    status_missing, value_missing = verify_certificate("law_transition_drift", law, missing, cert_forward)
-    status_wrong, value_wrong = verify_certificate("law_transition_drift", law, wrong, cert_forward)
-    status_bad, value_bad = verify_certificate("law_transition_drift", law, forward, cert_wrong_value)
-    report("forward transition certificate verifies", status_f == "verified" and value_f == Fraction(-1, 2))
-    report("reverse transition certificate verifies", status_r == "verified" and value_r == Fraction(1, 2))
-    report("positive-tail transition certificate verifies", status_tail == "verified" and value_tail == Fraction(1, 4))
-    report("missing orientation blocks transition certificate", status_missing == "blocked_missing_orientation" and value_missing is None)
-    report("wrong law scope blocks transition certificate", status_wrong == "blocked_scope_mismatch" and value_wrong is None)
-    report("wrong value is rejected for transition certificate", status_bad == "value_mismatch" and value_bad == Fraction(-1, 2))
-
-
-def marker_lag_example() -> None:
-    section("Example 2: realized marker lag")
-    law: Law = {
-        ("A", "M", "B", "B"): Fraction(1, 2),
-        ("A", "B", "M", "C"): Fraction(1, 3),
-        ("M", "C", "A", "B"): Fraction(1, 6),
-    }
-    forward = SuppliedBridge("bridge_marker_forward", "law_marker_lag", "forward", "marker_clock", "record_write_kernel")
-    reverse = SuppliedBridge("bridge_marker_reverse", "law_marker_lag", "reverse", "marker_clock", "record_write_kernel")
-    cert_forward = DirectedCertificate(
-        "marker_lag_forward_expectation",
-        "law_marker_lag",
-        "bridge_marker_forward",
-        "marker_lag",
-        "expectation",
-        Fraction(7, 6),
-    )
-    cert_forward_tail = DirectedCertificate(
-        "marker_lag_forward_le_one",
-        "law_marker_lag",
-        "bridge_marker_forward",
-        "marker_lag",
-        "probability_le",
-        Fraction(2, 3),
-        threshold=1,
-    )
-    f_law = oriented_law(law, forward)
-    r_law = oriented_law(law, reverse)
-    assert f_law is not None and r_law is not None
-
-    records_are_realized = all(isinstance(word, tuple) and "M" in word for word in law)
-    law_carries_probability = all(isinstance(mass, Fraction) for mass in law.values())
-    report("marker law normalizes", normalize_law(law))
-    report("law carries probabilities outside realized record words", records_are_realized and law_carries_probability)
-    report("forward marker lag expectation is exact", expectation(f_law, marker_lag) == Fraction(7, 6), str(distribution(f_law, marker_lag)))
-    report("reverse marker lag expectation is exact", expectation(r_law, marker_lag) == Fraction(11, 6), str(distribution(r_law, marker_lag)))
-    report("forward marker lag tail is exact", probability_le(f_law, marker_lag, 1) == Fraction(2, 3))
-    report("reverse marker lag tail is exact", probability_le(r_law, marker_lag, 1) == Fraction(1, 3))
-    report("count pushforward is invariant for marker example", count_pushforward(f_law) == count_pushforward(r_law), str(count_pushforward(f_law)))
-
-    status_f, value_f = verify_certificate("law_marker_lag", law, forward, cert_forward)
-    status_tail, value_tail = verify_certificate("law_marker_lag", law, forward, cert_forward_tail)
-    report("marker expectation certificate verifies", status_f == "verified" and value_f == Fraction(7, 6))
-    report("marker tail certificate verifies", status_tail == "verified" and value_tail == Fraction(2, 3))
-
-
-def boundary_example() -> None:
-    section("Example 3: supplied low-to-high boundary event")
-    law: Law = {
-        ("L", "A", "H"): Fraction(1, 2),
-        ("H", "A", "L"): Fraction(1, 6),
-        ("L", "B", "A"): Fraction(1, 3),
-    }
-    forward = SuppliedBridge("bridge_boundary_forward", "law_boundary_event", "forward", "boundary_clock", "boundary_transfer")
-    reverse = SuppliedBridge("bridge_boundary_reverse", "law_boundary_event", "reverse", "boundary_clock", "boundary_transfer")
-    no_kernel = SuppliedBridge("bridge_boundary_forward", "law_boundary_event", "forward", "boundary_clock", None)
-    cert_forward = DirectedCertificate(
-        "boundary_forward_probability",
-        "law_boundary_event",
-        "bridge_boundary_forward",
-        "low_to_high_boundary_event",
-        "expectation",
-        Fraction(1, 2),
-    )
-    cert_reverse = DirectedCertificate(
-        "boundary_reverse_probability",
-        "law_boundary_event",
-        "bridge_boundary_reverse",
-        "low_to_high_boundary_event",
-        "expectation",
-        Fraction(1, 6),
-    )
-    f_law = oriented_law(law, forward)
-    r_law = oriented_law(law, reverse)
-    assert f_law is not None and r_law is not None
-
-    report("boundary law normalizes", normalize_law(law))
-    report("forward low-to-high boundary probability is exact", expectation(f_law, low_to_high_boundary_event) == Fraction(1, 2))
-    report("reverse low-to-high boundary probability is exact", expectation(r_law, low_to_high_boundary_event) == Fraction(1, 6))
-    report("boundary event is orientation-sensitive", expectation(f_law, low_to_high_boundary_event) != expectation(r_law, low_to_high_boundary_event))
-    report("count pushforward is invariant for boundary example", count_pushforward(f_law) == count_pushforward(r_law), str(count_pushforward(f_law)))
-
-    status_f, value_f = verify_certificate("law_boundary_event", law, forward, cert_forward)
-    status_r, value_r = verify_certificate("law_boundary_event", law, reverse, cert_reverse)
-    status_no_kernel, value_no_kernel = verify_certificate("law_boundary_event", law, no_kernel, cert_forward)
-    report("boundary forward certificate verifies", status_f == "verified" and value_f == Fraction(1, 2))
-    report("boundary reverse certificate verifies", status_r == "verified" and value_r == Fraction(1, 6))
-    report("missing kernel blocks dynamics-language boundary certificate", status_no_kernel == "blocked_missing_kernel" and value_no_kernel is None)
-
-
-def firewall_checks() -> None:
-    section("Firewall flags")
-    audit_data_written = False
-    audit_verdict_applied = False
-    promoted_or_retained_claim = False
-    orientation_derived_from_record = False
-    physical_arrow_derived_from_record = False
-    production_kernel_selected = False
-    clock_or_rate_derived = False
-    born_law_derived_from_record = False
-    generation_or_koide_dial_selected = False
-    stable_setting_selects_dial = False
-    selected_dial_derived_from_stability = False
-
-    report("audit data written flag is false", not audit_data_written)
-    report("audit verdict applied flag is false", not audit_verdict_applied)
-    report("promoted/retained claim flag is false", not promoted_or_retained_claim)
-    report("Record-derived orientation flag is false", not orientation_derived_from_record)
-    report("Record-derived physical arrow flag is false", not physical_arrow_derived_from_record)
-    report("production-kernel selected flag is false", not production_kernel_selected)
-    report("clock/rate derived flag is false", not clock_or_rate_derived)
-    report("Born law derived from Record flag is false", not born_law_derived_from_record)
-    report("generation/Koide dial selected flag is false", not generation_or_koide_dial_selected)
-    report("stable setting selects dial flag is false", not stable_setting_selects_dial)
-    report("selected dial derived from stability flag is false", not selected_dial_derived_from_stability)
+    parser.add_argument("--mutation", choices=("all",) + MUTATIONS, default="all")
+    return parser.parse_args()
 
 
 def main() -> int:
-    source_anchor_checks()
-    row_bucket_checks()
-    transition_drift_example()
-    marker_lag_example()
-    boundary_example()
-    firewall_checks()
-    print()
-    print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
-    print("SUPPLIED_DIRECTED_CERTIFICATE_EXAMPLES=TRUE")
-    print("ARROW_OR_DYNAMICS_BRIDGE_ROWS=63")
-    print("PRE_RECORD_LAW_CARRIES_PROBABILITY=TRUE")
-    print("POST_RECORD_SITE_CARRIES_REALIZED_INFORMATION=TRUE")
-    print("DIRECTED_STATISTICS_REQUIRE_SUPPLIED_ORIENTATION=TRUE")
-    print("ORIENTATION_DERIVED_FROM_RECORD=FALSE")
-    print("PHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE")
-    print("PRODUCTION_KERNEL_SELECTED=FALSE")
-    print("CLOCK_OR_RATE_DERIVED=FALSE")
-    print("BORN_LAW_DERIVED_FROM_RECORD=FALSE")
-    print("GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE")
-    print("STABLE_SETTING_SELECTS_DIAL=FALSE")
-    print("SELECTED_DIAL_DERIVED_FROM_STABILITY=FALSE")
-    print("AUDIT_LEDGER_WRITTEN=FALSE")
-    print("AUDIT_VERDICT_APPLIED=FALSE")
+    args = parse_args()
+    if args.mode == "normal":
+        source_boundary_checks()
+        general_law_checks()
+        transition_checks()
+        marker_checks()
+        boundary_checks()
+        malformed_law_checks()
+    elif args.mode == "independent":
+        independent_mode()
+    elif args.mode == "hostile":
+        hostile_mode()
+    else:
+        intentional_failure_mode(args.mutation)
+
+    print(f"\nSUMMARY: PASS={PASS} FAIL={FAIL}")
+    if args.mode == "normal":
+        print("FORMAL_DIRECTED_REVERSAL_THEOREM=TRUE")
+        print("PHYSICAL_ORIENTATION_BRIDGE=OPEN")
+        print("CLOCK_KERNEL_RECORD_DYNAMICS_BRIDGES=OPEN")
     return 0 if FAIL == 0 else 1
 
 

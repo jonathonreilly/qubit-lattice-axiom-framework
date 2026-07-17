@@ -90,6 +90,26 @@ class ClassFHeaderTest(unittest.TestCase):
         )
 
 
+class ClassFRegistryUnreadableTest(unittest.TestCase):
+    def test_invalid_utf8_registry_yields_structured_violation(self):
+        # An invalid-UTF-8 registry must surface as the structured
+        # "registry unreadable" violation, not a raw UnicodeDecodeError.
+        import tempfile
+        from unittest import mock
+
+        import repo_invariants_check as ric
+
+        with tempfile.TemporaryDirectory() as tmp:
+            reg = Path(tmp) / ric.DOC_AUTHORITY_REGISTRY_REL
+            reg.parent.mkdir(parents=True)
+            reg.write_bytes(b'{"rows": [\xff\xfe]}')
+            with mock.patch.object(ric, "REPO_ROOT", tmp):
+                violations = ric.collect_class_f_violations([])
+        self.assertEqual(len(violations), 1)
+        self.assertEqual(violations[0]["path"], ric.DOC_AUTHORITY_REGISTRY_REL)
+        self.assertIn("registry unreadable", violations[0]["problem"])
+
+
 class DirectoryTargetIntegrationTest(unittest.TestCase):
     def test_no_directory_targets_survive_on_authority_surfaces(self):
         # Integration: after the campaign's link fixes, no authority-surface

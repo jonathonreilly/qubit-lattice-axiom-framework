@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/fermion_parity_z2_grading_n7_independent_check.py
+runner_sha256: 7b41d68aff81cd68021ec0249d689d8a1941ec4afdae8ad9ba2f4017451d6bff
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+FERMION PARITY N7 — INDEPENDENT DIRECT-MATRIX MODE
+[PASS] direct pair steelman: self_adjoint=True, parity_commutator_zero=True, number_commutator_nonzero=True
+[PASS] wrong-order hostile mutation killed: non_self_adjoint=True
+N7_STEELMAN_RESOLUTION parity-conservation-versus-number-conservation wall resolved on the stated finite ordered carrier: independent direct occupation-basis matrices give [H_pair,F]=0 and [H_pair,Q]!=0, while the wrong-order hostile mutation is non-self-adjoint; this removes the Jordan-Wigner-order objection without selecting physical statistics, superselection, locality, or lattice dynamics.
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

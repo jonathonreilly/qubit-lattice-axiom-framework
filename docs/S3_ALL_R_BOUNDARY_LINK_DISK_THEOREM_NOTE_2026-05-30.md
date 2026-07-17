@@ -27,7 +27,8 @@ The existing boundary-link disk certificates are finite-radius. The runner
 `scripts/frontier_s3_boundary_link_theorem.py` verifies the disk property
 directly for `R = 2..10` (5,778 boundary vertices) and verifies its bridge
 lemma `link(v, B_R) = K_simp(P)` empirically only for `R = 2..6` (1,162
-vertices, the lone `[BOUNDED]` check there). Two ingredients are already
+vertices, one of the two `[BOUNDED]` checks there; the observed-type
+enumeration is the other). Two ingredients are already
 unconditional:
 
 - **Property 2 / 2a** (present cube set = connected downset, absent set =
@@ -205,7 +206,7 @@ residual large-coordinate case. ∎
 `Phi(W) <= max_q B(q)` as a universal integer fact over the lattice box
 `|coord| <= 20` for all simplex types, 0 violations, and confirms the
 assembled end-to-end equality `link(v, B_R) = K_simp(P)` for every boundary
-vertex over `R = 2..24` — 95,304 vertices, 0 mismatches — far beyond the
+vertex over `R = 2..24` — 84,238 vertices, 0 mismatches — far beyond the
 note's `R = 2..6`.)
 
 ---
@@ -338,7 +339,7 @@ Expected: 13 PASS / 0 FAIL, all EXACT. The runner reproves Lemma H
 `min_s Phi` over `31^3`), Lemma FORCED (`|v_a| <= 500`, both directions, as a
 strict equality), the forced-witness domination inequality (all simplex types,
 `|coord| <= 20`), the assembled bridge `link(v, B_R) = K_simp(P)`
-(`R = 2..24`, 95,304 boundary vertices, 0 mismatches), Proposition Z
+(`R = 2..24`, 84,238 boundary vertices, 0 mismatches), Proposition Z
 (126 / 126 disks), Property 2 / 2a consistency (every realized present set is
 `Q_3`-both-connected), the assembled all-R disk theorem, type stabilization
 (`R_0 = 6`, frozen `R = 6..25`), the 8 `O_h` orbits, and the interior-link

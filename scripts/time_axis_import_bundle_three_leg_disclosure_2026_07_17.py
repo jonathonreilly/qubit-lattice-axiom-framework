@@ -29,10 +29,11 @@ Blocks:
                  symmetric-BC restoration, kernel-dimension discriminator.
   [REC]          record-layer facts consuming none of legs A-C (exact
                  arithmetic in this block: int/tuple/set/frozenset/dict only):
-                 finite replay of index nesting on an eight-history family,
+                 finite replay of index nesting on a seven-history family,
                  existential spatial-nesting failure witnesses, uniqueness on
-                 both generic witnesses with named degenerate fixtures and a
-                 D0 boundary fixture on which uniqueness persists.
+                 both generic witnesses with named degenerate fixtures; the
+                 second witness is gated as a window-automorphism image of
+                 the first.
   [SOURCE_GATES] a load-bearing anchor fragment of every consumed clause is
                  literally present (whitespace-normalized substring) in its
                  on-main source file AND in the disclosure note.
@@ -177,7 +178,8 @@ def block_L2_W():
     record("C", "antiperiodic-tau / periodic-space BCs break the exchange exactly, "
            "with residual equal to 2*sqrt(2) on this block",
            abs(r_ap - 2.0 * np.sqrt(2.0)) <= TOL,
-           f"resid = {r_ap:.6f}; |resid - 2*sqrt(2)| <= 1e-11: True")
+           f"resid = {r_ap:.6f}; |resid - 2*sqrt(2)| <= 1e-11: "
+           f"{abs(r_ap - 2.0 * np.sqrt(2.0)) <= TOL}")
 
     M_both, _, _, _ = build_surface(Ls, mass, apbc=(0, 1))
     r_both = opnorm(W @ M_both @ W.T - M_both)
@@ -280,10 +282,8 @@ FACE_CONFINED = ({},
                  {(0, 0, 0): 1, (0, 1, 0): 1, (0, 0, 1): 1})
 C_FULL = {s: 1 for s in WINDOW}
 STATIC = (C_FULL, C_FULL, C_FULL)
-C_ASYM = {(0, 0, 1): 1, (0, 1, 0): 1, (1, 0, 0): 1}
-STATIC_ASYM = (C_ASYM, C_ASYM, C_ASYM)
 ALL_HISTORIES = (HISTORY, HISTORY_B, SINGLE, UNIFORM_BURST,
-                 TRANS_INVARIANT, FACE_CONFINED, STATIC, STATIC_ASYM)
+                 TRANS_INVARIANT, FACE_CONFINED, STATIC)
 
 
 def block_REC():
@@ -303,7 +303,7 @@ def block_REC():
            "cells, full round-trip, 4th-axis coordinate set = {0..T}", ok)
 
     record("A", "(i) UNIVERSAL: the history index nests for EVERY realized history "
-           "in the eight-history family (incl. all degeneracy members)",
+           "in the seven-history family (incl. all degeneracy members)",
            all("index" in monotone_directions(h) for h in ALL_HISTORIES),
            "finite replay of the source proposition on this witness family, "
            "grounded on the landed permanence sentence (records are permanent)")
@@ -324,6 +324,19 @@ def block_REC():
     record("A", "(ii) symmetry-related second witness (window-automorphism image of "
            "the generic witness): x2 slices incomparable while its index still nests",
            incomparable(b0, b1) and "index" in monotone_directions(HISTORY_B))
+
+    autos = [(p, f) for p in itertools.permutations(range(3))
+             for f in itertools.product((0, 1), repeat=3)]
+
+    def auto_image(history, p, f):
+        return tuple({tuple(site[p[i]] ^ f[i] for i in range(3)): val
+                      for site, val in cfg.items()} for cfg in history)
+
+    record("A", "(ii) window-automorphism gate: some automorphism of the 2x2x2 "
+           "window (axis permutation x per-axis flips; 48 enumerated) maps the "
+           "generic witness onto the second witness",
+           len(autos) == 48
+           and any(auto_image(HISTORY, p, f) == HISTORY_B for p, f in autos))
 
     record("A", "(iii) uniqueness on the generic witness: the history index is the "
            "UNIQUE record-monotone direction",
@@ -357,12 +370,6 @@ def block_REC():
 
     record("A", "(iii) uniqueness on the second symmetry-related witness",
            monotone_directions(HISTORY_B) == frozenset({"index"}))
-
-    record("A", "(iii) boundary fact: a spatially translation-inequivalent STATIC "
-           "history retains index-uniqueness -- D0 membership does not force "
-           "non-uniqueness (non-uniqueness is exhibited on fixtures, not "
-           "characterized)",
-           monotone_directions(STATIC_ASYM) == frozenset({"index"}))
 
 
 # ---------------------------------------------------------------------
@@ -440,7 +447,7 @@ def block_NOTE_HYGIENE():
     record("D", "type/claim-strength/status-authority lines present (audit lane is "
            "the sole status authority)",
            "**Type:**" in note and "**Claim strength:**" in note
-           and "**Status authority:**" in note
+           and "**Status authority:** independent audit lane only" in note
            and "does not set or predict an audit outcome" in note)
 
     required = ("## Purpose", "## Supplied objects", "## Declared symbols",

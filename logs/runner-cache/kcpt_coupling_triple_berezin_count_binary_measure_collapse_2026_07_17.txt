@@ -1,0 +1,120 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17.py
+runner_sha256: ea02dc9ab63633bc7c627efcd4160db047273bcaf6aa6bc3eec198f97ef152a8
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+B1.1 PASS anticommutation e1e2 + e2e1 = 0 and nilpotency e1^2 = 0
+B1.2 PASS product-formula exp == power-series exp (n=2 symbolic)
+B1.3 PASS n=1 integral = det M = m (pinned ordering, computed sign +1)
+B1.4 PASS n=2 generic integral = det M (pinned ordering)
+B1.5 PASS n=3 generic integral = det M (pinned ordering)
+B1.6 PASS reversed measure ordering = (-1)^n det M at n=1,2,3
+B1.7 PASS disjoint-copy factorization: joint integral = det M * det N
+B1.8 PASS det W = a^3+b^3+c^3-3abc = lam0*lam1*lam2 (generic symbolic)
+B1.9 PASS K-copy identity det3(conj entries) = conj(det3) (generic)
+B2.1 PASS entrywise-real: lam2 = conj(lam1) and lam0 real (license re-derived)
+B2.2 PASS channel association W P_(w^k) = lam_k P_(w^k), k=0,1,2 (generic)
+B2.3 PASS count-once integral = det3 = lam0*|lam1|^2 on real triples
+B2.4 PASS count-twice = |det3|^2 = lam0^2*|lam1|^4 via K-partner copy; partner coincides with original on the real locus
+B2.5 PASS direct 12-generator joint integral = |det3|^2 at witness (2,1+i,-i)
+B2.6 PASS r-neutral doubling: exponent pairs (1,1)->(2,2) together; ratio twice/once = det3, not constant
+B3.1 PASS generator-count bookkeeping: horn m uses 6m generators (m=1: 6; m=2: 12), tied to the constructed integrals
+B4.1 PASS diagonal rescale: integral -> (d1 d2 c1 c2) * det M (n=2 symbolic)
+B4.2 PASS general linear redefinition: integral = det(B) det(A) det(M) (n=2 symbolic scalar action)
+B4.3 PASS no constant kappa with kappa*det3 = det3^2: witness kappas clash [kappa witnesses 1 vs 8]
+B4.4 PASS uniform rescale: once -> rho*once with rho = u^3, twice -> |rho|^2*twice (horns split, neither converted)
+B5.1 PASS Hermitian real-intersection control: lam1 = lam2 = a - b, det3 = lam0 * lam1^2 (all real)
+B5.2 PASS off-locus (1,i,0): gap = sqrt(3) - i, det3 = 1 - i, grouped form differs from det3
+B5.3 PASS pairing-without-reality (i,1+i,i): count-once integral = 1 + 3i, not real
+B5.4 PASS neither horn forced at (3,1,1): once = 20, twice = 400, both nonzero
+B5.5 PASS endpoint arithmetic: cell law (r,Q) = (1/2, 2/3); mode law (r,Q) = (1, 1); both conditional on supplied laws
+B6.1 PASS source text carries: spectral-pairing T3 three-part pairing statement
+B6.2 PASS note blockquotes verbatim: spectral-pairing T3 three-part pairing statement
+B6.3 PASS source text carries: spectral-pairing license sentence
+B6.4 PASS note blockquotes verbatim: spectral-pairing license sentence
+B6.5 PASS source text carries: spectral-pairing underived graining binary
+B6.6 PASS note blockquotes verbatim: spectral-pairing underived graining binary
+B6.7 PASS source text carries: spectral-pairing dial sentence
+B6.8 PASS note blockquotes verbatim: spectral-pairing dial sentence
+B6.9 PASS source text carries: spectral-pairing probe-status FLAG clause
+B6.10 PASS note blockquotes verbatim: spectral-pairing probe-status FLAG clause
+B6.11 PASS source text carries: axiom-memo Qualification clause
+B6.12 PASS note blockquotes verbatim: axiom-memo Qualification clause
+B6.13 PASS source text carries: obligation closure criterion
+B6.14 PASS note blockquotes verbatim: obligation closure criterion
+B6.15 PASS source text carries: section-tie residual independence
+B6.16 PASS note blockquotes verbatim: section-tie residual independence
+B7.1 PASS ledger shard file exists: kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_bounded_theorem_note_2026-07-16
+B7.2 PASS ledger shard file exists: koide_first_order_section_tie_vs_outcome_label_residual_localization_bounded_theorem_note_2026-07-11
+B7.3 PASS ledger shard file exists: koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11
+B7.4 PASS ledger shard file exists: koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12
+B7.5 PASS ledger shard file exists: acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04
+B7.6 PASS ledger shard file exists: acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12
+B7.7 PASS ledger shard file exists: ac_orbit_occupancy_statistical_grain_derivation_obligation
+B8.1 PASS note carries: ## Purpose
+B8.2 PASS note carries: ## Supplied objects and consumed readings
+B8.3 PASS note carries: ### Berezin conventions (pinned)
+B8.4 PASS note carries: ## Claims
+B8.5 PASS note carries: ### Berezin realization exactness under the pinned convention (T1, exact)
+B8.6 PASS note carries: ### Sector-selective realization on entrywise-real triples (T2, bounded)
+B8.7 PASS note carries: ### The count binary as a generator-count binary (T3, declared reading)
+B8.8 PASS note carries: ### Linear measure collapse on the finite probe surface (T4, bounded negative)
+B8.9 PASS note carries: ## Gated controls
+B8.10 PASS note carries: ## Negative controls
+B8.11 PASS note carries: ## No-Go Discipline Gate
+B8.12 PASS note carries: ### N1 —
+B8.13 PASS note carries: ### N2 —
+B8.14 PASS note carries: ### N3 —
+B8.15 PASS note carries: ### N4 —
+B8.16 PASS note carries: ### N5 —
+B8.17 PASS note carries: ### N6 —
+B8.18 PASS note carries: ### N7 —
+B8.19 PASS note carries: ### N8 —
+B8.20 PASS note carries: ## Non-claims
+B8.21 PASS note carries: ## Dependency roles and status boundary
+B8.22 PASS note carries: ## Dependencies
+B8.23 PASS note carries: ### Non-citation context handles
+B8.24 PASS note carries: ## Verification
+B8.25 PASS note carries: **No check passes by literal stipulation.**
+B8.26 PASS note carries: **Status authority:** independent audit lane only.
+B8.27 PASS forbidden phrase absent: 'exhaust'
+B8.28 PASS forbidden phrase absent: 'only route'
+B8.29 PASS forbidden phrase absent: 'last route'
+B8.30 PASS forbidden phrase absent: 'closes the'
+B8.31 PASS forbidden phrase absent: 'bijection'
+B8.32 PASS forbidden phrase absent: 'fiber'
+B8.33 PASS forbidden phrase absent: 'multiplicity bit'
+B8.34 PASS forbidden phrase absent: 'grain bit'
+B8.35 PASS forbidden phrase absent: 'final'
+B8.36 PASS forbidden phrase absent: 'decides m'
+B8.37 PASS forbidden phrase absent: 'derives the physical action'
+B8.38 PASS forbidden phrase absent: 'forces r'
+B8.39 PASS forbidden phrase absent: 'derives r'
+B8.40 PASS forbidden phrase absent: 'selects r'
+B8.41 PASS forbidden phrase absent: 'retained'
+B8.42 PASS source-authored status/value snapshot absent: 'unaudited at writing'
+B8.43 PASS source-authored status/value snapshot absent: 'citation grades at writing'
+B8.44 PASS source-authored status/value snapshot absent: 'audited_renaming'
+B8.45 PASS source-authored status/value snapshot absent: 'honest auditor read'
+B8.46 PASS source-authored status/value snapshot absent: 'registered point'
+B8.47 PASS no bare decimal literals in the note
+B8.48 PASS markdown dependency link present: MINIMAL_AXIOMS_2026-06-29.md
+B8.49 PASS markdown dependency link present: KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md
+B8.50 PASS markdown dependency link present: KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md
+B8.51 PASS markdown dependency link present: KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md
+B8.52 PASS non-citation context handle is backticked and unlinked: AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md
+B8.53 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md
+B8.54 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md
+B8.55 PASS non-citation context handle is backticked and unlinked: KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md
+B8.56 PASS every cited or handled doc path exists
+PATH note=docs/KCPT_COUPLING_TRIPLE_BEREZIN_COUNT_BINARY_MEASURE_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-17.md
+PATH runner=scripts/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17.py
+PATH cache=logs/runner-cache/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17.txt
+FLAGS: R1b supplied corner surface; R2b consumed pairing license with source-side premise weight (row status pipeline-derived); R3b probe, not derived form; R4b declared Berezin probe surface, not the physical action or measure; R5b declared count-binary reading, not an equivalence; T4 scoped to linear generator redefinitions; B5 endpoint arithmetic conditional on supplied granularity laws; r remains a dial (0, 1/2, 1); no graining horn selected
+TOTAL: PASS=104 FAIL=0
+
+----- stderr -----
+

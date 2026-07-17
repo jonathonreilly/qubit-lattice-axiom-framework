@@ -62,7 +62,12 @@ Supply this additional bridge:
 Then `b != 0`. If `b=0`, equation (1) is proportional to `I` for every input
 and has only the full two-dimensional eigenspace, never a nontrivial rank-one
 spectral projector. A nonzero vector response on `M_2(C)` has two simple
-rank-one spectral projectors. Within the separately supplied standard
+rank-one spectral projectors. The runner derives this dichotomy from the
+classified response itself: the characteristic discriminant of `F(c)` is
+exactly `4 b^2 sum_mu (c_(+mu)-c_(-mu))^2`, which vanishes identically iff
+`b=0` or the directed difference vanishes, and the two rank-one spectral
+projectors at a directed witness input are constructed from `F(c)` rather
+than assumed. Within the separately supplied standard
 spatial-vector action on traceless `Herm(2)`, the trace metric is invariant;
 after one common normalization its coefficients may be chosen to obey
 
@@ -97,8 +102,12 @@ on this separately supplied oriented-link Hermitian symbol surface. Only with
 that response-to-symbol realization does it have a first-order Dirac infrared
 reading. The cubic graph Laplacian is exactly the scalar-even point
 `(m,a,b)=(6,-1,0)` in (4), so it cannot be the complete response under both
-supplied bridges. It may still occur as an `O(k^2)` scalar correction alongside
-a nonzero vector term; this theorem does not forbid Wilson-like corrections.
+supplied bridges. (The edge-exchange completion `sum_edges lambda(I-SWAP)`
+reproduces this scalar-even point only through its one-excitation-sector
+restriction; the Laplacian identification is sector-restricted, not an
+operator identity on the full qubit carrier.) It may still occur as an
+`O(k^2)` scalar correction alongside a nonzero vector term; this theorem does
+not forbid Wilson-like corrections.
 
 ## Why this moves the open lane
 
@@ -133,7 +142,7 @@ internal `M_2` value; it does not implement the directed spatial-vector
 locking of (1). Identifying its availability projectors with coefficients in
 a kinetic symbol would add the missing bridge.
 
-The next campaign block must therefore derive or falsify a basis-free
+The remaining open derivation target is a basis-free
 record-formation influence functor. A weak requirement that "the law varies
 when Admissibility varies" is insufficient: a covariant scalar function of
 the availability projectors multiplying `I-SWAP` remains record-sensitive and
@@ -210,7 +219,7 @@ python3 scripts/record_faithful_cubic_neighbor_response_2026_07_11.py
 Expected deterministic result:
 
 ```text
-TOTAL: PASS=23 FAIL=0
+TOTAL: PASS=27 FAIL=0
 ```
 
 ## Dependencies

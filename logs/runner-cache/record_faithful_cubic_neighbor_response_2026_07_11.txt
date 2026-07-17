@@ -5,7 +5,9 @@ PASS I01: constraint rank=22
 PASS I02: intertwiner nullity=2
 PASS I03: scalar sum is equivariant
 PASS I04: directed vector difference is equivariant
-PASS I05: the displayed maps span the full nullspace
+PASS I05a: the two displayed maps are linearly independent
+PASS I05b: adjoining the computed nullspace does not enlarge the displayed span, so the displayed maps span the full nullspace
+PASS I05c: an axis-mismatched directed map fails equivariance
 PASS I06: first even anisotropy mode is killed
 PASS I07: second even anisotropy mode is killed
 PASS C01: Pauli response coefficients satisfy Cl(3) exactly
@@ -18,10 +20,12 @@ PASS K02: graph Laplacian has one null corner
 PASS K03: oriented links obey A_minus=A_plus^dagger
 PASS K04: oriented links reconstruct the Hermitian cosine-plus-sine symbol
 PASS K05: reconstructed nearest-neighbor symbol is Hermitian
-PASS K06: I-SWAP/Laplacian is the b=0 scalar-even normal form
-PASS F01: scalar response has no nontrivial rank-one spectral projector
-PASS F02: nonzero vector response has simple rank-one spectral projectors
-BOUNDARY: F01-F02 exclude b=0 only if spectral record-faithfulness is separately supplied.
+PASS K06: the one-excitation-sector I-SWAP restriction (cubic graph Laplacian) is the b=0 scalar-even normal form
+PASS F01a: the response eigenvalue-gap discriminant is exactly 4 b^2 |directed difference|^2
+PASS F01b: at b=0 the response is degenerate for every input, so no nontrivial rank-one spectral projector exists
+PASS F02: a nonzero vector response has two simple rank-one spectral projectors, constructed from the response itself
+PASS F03: the discriminant separates balanced inputs from directed inputs at nonzero b
+BOUNDARY: F01-F03 exclude b=0 only if spectral record-faithfulness is separately supplied.
 BOUNDARY: K03-K06 use a separately supplied oriented-link response-to-symbol realization.
 BOUNDARY: current Admissibility does not identify availability projectors with these response coefficients.
-TOTAL: PASS=23 FAIL=0
+TOTAL: PASS=27 FAIL=0

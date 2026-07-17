@@ -106,6 +106,14 @@ def classification_checks() -> None:
     check("C09", sp.simplify(neutral_weights[0] / sum(neutral_weights)) == sp.trace(p0 * rho), "permutation-neutral event efficiency restores Born-form conditional weights")
     check("C10", sp.eye(2) - sum(neutral_effects, sp.zeros(2)) == sp.Rational(1, 3) * sp.eye(2), "permutation neutrality makes the no-record effect scalar")
 
+    # Positive-conditioning guard at the admitted boundary: with every
+    # e_i=0 (equivalently q=1) the conditioning weight vanishes, so the
+    # conditional selection formulas are undefined there and carry an
+    # explicit guard in the note.
+    boundary_effects = [0 * p0, 0 * p1]
+    boundary_weight = sum(sp.trace(item * rho) for item in boundary_effects)
+    check("C11", boundary_weight == 0, "at the admitted e_i=0 boundary the conditioning weight vanishes, so conditional formulas require the positive-conditioning guard")
+
 
 def autonomous_hostile_checks() -> None:
     dimension = 2
@@ -145,12 +153,31 @@ def autonomous_hostile_checks() -> None:
     )
     check("A04", cross_probability == sp.Rational(1, 4), "the hostile blank sector has nonzero cross-label formation weight")
 
+    # Locked-sector reset for ARBITRARY locked-sector inputs, not only the
+    # consistent fixed point: the channel maps rho_sys tensor |i><i| to
+    # Tr(rho_sys) P_i tensor |i><i| for a fully generic symbolic system input
+    # and for an off-menu coherent input.
+    r_diag, x_off, y_off = sp.symbols("r_diag x_off y_off", real=True)
+    generic_system = sp.Matrix(
+        [[r_diag, x_off + sp.I * y_off], [x_off - sp.I * y_off, 1 - r_diag]]
+    )
+    plus_vector = sp.Matrix([1, 1]) / sp.sqrt(2)
+    coherent_system = plus_vector * plus_vector.H
     for label in range(dimension):
-        locked_state = sp.kronecker_product(menu[label], locked_registers[label])
-        once = channel(kraus, locked_state)
-        twice = channel(kraus, once)
-        check(f"A05i{label}", once == locked_state, "the consistent locked-register state is fixed by one channel use")
-        check(f"A06i{label}", twice == once, "same-map reuse preserves locked-register-sector absorption")
+        target = sp.kronecker_product(menu[label], locked_registers[label])
+        once_fixed = channel(kraus, target)
+        check(f"A05i{label}", once_fixed == target, "the consistent locked-register state is fixed by one channel use")
+
+        generic_locked = sp.kronecker_product(generic_system, locked_registers[label])
+        once_generic = channel(kraus, generic_locked)
+        check(f"A05g{label}", sp.simplify(once_generic - target) == sp.zeros(target.rows), "an arbitrary generic symbolic locked-sector input is reset to P_i tensor the locked register")
+
+        coherent_locked = sp.kronecker_product(coherent_system, locked_registers[label])
+        once_coherent = channel(kraus, coherent_locked)
+        check(f"A05c{label}", sp.simplify(once_coherent - target) == sp.zeros(target.rows), "an off-menu coherent locked-sector input is also reset to P_i tensor the locked register")
+
+        twice_generic = channel(kraus, once_generic)
+        check(f"A06i{label}", sp.simplify(twice_generic - once_generic) == sp.zeros(target.rows), "same-map reuse preserves locked-register-sector absorption on the reset output")
 
     calibrated, _, calibrated_formation, _ = autonomous_kraus(dimension, sp.Integer(1), empty_weight)
     calibrated_complete = sum((item.H * item for item in calibrated), sp.zeros(extended_dimension))

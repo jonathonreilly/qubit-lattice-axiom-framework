@@ -47,9 +47,10 @@ This note proves two exact facts:
 2. exhaustive rank-one menu normalization plus repeat certainty collapses the
    effect menu to `E_i=P_i`.
 
-Within a named conditional effect/probability surface, the final algebraic selector is
-readout-to-formation calibration. Framework-Record realization, readout
-probability semantics, and repeat certainty remain separate physical bridges.
+Within a named conditional effect/probability surface, the final algebraic
+selector is the repeat-certainty condition of equation (11). Framework-Record
+realization, readout probability semantics, and repeat certainty remain
+separate physical bridges.
 
 ## Existing-science reading gate
 
@@ -74,7 +75,9 @@ These replayed rows are non-load-bearing comparators whose statuses may change;
 the present nonselection, duality, and collapse proofs are self-contained.
 The Busch comparator is
 `BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`.
-The arbitrary locked-output effect is derived under Block03's named conditions in
+The arbitrary locked-output effect is derived, under that note's own named
+conditions, in the record-observable quotient and rank-one formation-outcome
+normal-form theorem
 [`RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md`](RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md).
 
 ## 1. Exact covariant nonselection family
@@ -196,9 +199,9 @@ J_i(rho)=Tr(P_i rho)P_i.                                  (10)
 
 This is the rank-one projective measure-and-prepare/Lueders instrument with
 Born-form trace weights, conditional on the named CP/trace interpretation,
-menu normalization, repeat certainty, and calibration hypotheses. Those
-hypotheses carry zero framework-premise weight here. This is not a derivation
-of probability semantics from the framework axioms.
+menu-normalization, and repeat-certainty hypotheses. Those hypotheses carry
+zero framework-premise weight here. This is not a derivation of probability
+semantics from the framework axioms.
 
 ## 4. Physical residual
 
@@ -210,9 +213,9 @@ permanence. For the algebraic theorem the exact missing condition is simply
 RC_i: Tr(P_i E_i)=1  for every i.                           (11)
 ```
 
-Call a physical derivation of (11) for the formation effects the
-**readout-to-formation calibration bridge**. The name records one gap; it is
-not an approved primitive, and it carries zero premise weight. Before equation
+A physical derivation of (11) for the formation effects remains open. No repo
+name is coined for that gap here; repeat certainty is not an approved
+primitive, and it carries zero premise weight until derived. Before equation
 (10) can be framework-native, three additional interfaces remain explicit: realize the
 output as a framework Record on `Z^3`, identify a same-carrier readout as an
 effect/probability functional, and derive deterministic repeat readout. Record
@@ -234,7 +237,8 @@ the depolarizing family (1) remains a hostile alternative.
   eligibility, or the physical menu from Admissibility or Record.
 - The theorem does not derive repeat certainty from Record permanence.
 - The theorem does not identify an outcome label as a framework Record.
-- The theorem fixes the formation-effect assignment after calibration; it does not derive event
+- The theorem fixes the formation-effect assignment only after the
+  repeat-certainty condition (11) is supplied; it does not derive event
   occurrence, site/order/rate, reset/IID structure, a clock, or a continuum
   law.
 - Counts and empirical frequencies are not used as predictive probabilities.
@@ -247,12 +251,13 @@ the depolarizing family (1) remains a hostile alternative.
 ## 6. No-Go Discipline summary
 
 - **N1:** projective-only Gleason, composite Gleason, qubit POVM/Busch,
-  covariance, and repeat-calibration routes are separated.
+  covariance, and repeat-certainty routes are separated.
 - **N2:** the exhaustive normalized menu and `RC_i` are the two independent
   algebraic walls. Record realization, readout probability semantics,
-  deterministic repeat readout, calibration, and `RC_i` form a physical
+  deterministic repeat readout, and the repeat-certainty condition `RC_i`
+  form a physical
   dependency chain; event/rate and continuum are downstream out-of-scope gates.
-- **N3:** every effect, menu, normalization, covariance, and calibration
+- **N3:** every effect, menu, normalization, covariance, and repeat-certainty
   hypothesis is explicit.
 - **N4:** the result attacks effect identification, not the different count,
   frequency, reference-state, event-rate, or continuum residuals.

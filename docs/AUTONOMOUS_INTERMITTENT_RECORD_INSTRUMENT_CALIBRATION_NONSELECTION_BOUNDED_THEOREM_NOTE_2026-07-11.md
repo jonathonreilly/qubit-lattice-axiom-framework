@@ -42,7 +42,7 @@ and absorbing auxiliary locked-register sectors derive the needed calibration.
 ## Existing-science reading gate
 
 The actual instrument stack was read and its runners replayed before this
-attack:
+theorem:
 
 - the approved
   [`minimal axioms`](MINIMAL_AXIOMS_2026-06-29.md) supply Lattice, Qubit,
@@ -81,7 +81,7 @@ J_i(rho)=Tr(E_i rho) P_i,       E_i>=0.                    (1)
 ```
 
 Apart from the named finite Kraus-representation authority, all algebra below
-is proved directly. Earlier intermittent and raw-menu campaign blocks are
+is proved directly. Earlier intermittent and raw-menu results are
 comparators, not additional proof authority.
 
 ## 1. Full intermittent effect classification
@@ -132,7 +132,11 @@ so each zero diagonal kills its full row and column. Hence `E_i=e_iP_i` with
 `e_i<=1`. QED.
 
 For input `P_j`, the no-record probability is `q_j=1-e_j`; conditional on a
-nonempty outcome, the label is exactly `j` whenever `e_j>0`. Thus conditional
+nonempty outcome, the label is exactly `j` whenever `e_j>0`. At the admitted
+boundary `e_j=0` (equivalently `q_j=1`) the conditioning event has weight
+zero and the conditional label distribution is undefined; every conditional
+statement in this note therefore carries an explicit positive-conditioning
+guard. Thus conditional
 cross-label exclusion fixes the direction of each formation effect but not its
 event efficiency.
 
@@ -148,7 +152,7 @@ then
 E_i=(1-q)P_i,       F=qI.                                  (8)
 ```
 
-For an arbitrary input density operator,
+For an arbitrary input density operator and `q<1`,
 
 ```text
 p(empty)=q,
@@ -156,7 +160,10 @@ p(i)=(1-q)Tr(P_i rho),
 p(i | nonempty)=Tr(P_i rho).                               (9)
 ```
 
-The last equality is Born-form conditional weighting under the named CP/trace
+The conditional formula in (9) is defined because the conditioning weight
+`1-q` is positive; at the admitted `q=1` boundary no nonempty outcome occurs
+and the conditional is undefined. The last equality is Born-form conditional
+weighting under the named CP/trace
 and probability interpretation. This note does not derive probability
 semantics from the four axioms.
 
@@ -164,8 +171,13 @@ Without (7), conditional selection is detection-biased:
 
 ```text
 p(i | nonempty)
-  = e_i Tr(P_i rho) / sum_j e_j Tr(P_j rho).                (10)
+  = e_i Tr(P_i rho) / sum_j e_j Tr(P_j rho),                (10)
 ```
+
+defined whenever the conditioning event has positive weight,
+`sum_j e_j Tr(P_j rho) > 0`; when every `e_j Tr(P_j rho)` vanishes, no
+nonempty outcome occurs and (10) is undefined rather than silently
+normalized.
 
 Permutation-neutral event gating, not normalization alone, removes that bias.
 
@@ -254,8 +266,13 @@ carrier. Its blank-sector formation effects are
 E_i=(1-q)[aP_i+(1-a)I/d],       F=qI.                       (19)
 ```
 
-For every locked label `i`, equation (17) resets the system to `P_i`, keeps
-the auxiliary register in `|i>`, and is idempotent under reuse. These are
+For every locked label `i`, equation (17) resets an **arbitrary** system
+input on that locked register sector to `P_i` (the channel maps
+`rho_sys tensor |i><i|` to `Tr(rho_sys) P_i tensor |i><i|` for every system
+operator `rho_sys`, not only for the fixed point `P_i`), keeps
+the auxiliary register in `|i>`, and is idempotent under reuse. The runner
+verifies the reset on a fully generic symbolic system input and on an
+off-menu coherent input, not only on the consistent fixed point. These are
 absorbing register-label/system-reset statements; no physical readout map or
 framework-Record realization has been constructed. Yet for `a<1`, a blank
 input `P_j` has nonzero cross-label formation weight for `i!=j`.
@@ -306,7 +323,8 @@ following remain separate:
 6. composing overlapping local instruments into one simultaneous lattice law;
 7. selecting event order, physical time, and rate.
 
-The last two items are the next campaign seams. Disjoint tensor composition is
+The last two items remain separate open composition/order questions. Disjoint
+tensor composition is
 exact, but overlapping instruments need not commute and are not classified by
 the classical record-composition semigroup lane.
 

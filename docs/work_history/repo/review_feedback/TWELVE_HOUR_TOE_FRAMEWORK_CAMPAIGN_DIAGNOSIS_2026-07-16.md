@@ -1102,6 +1102,38 @@ additivity derives atom-count weights. Until then, the `r=1/2` and Koide
 branch remains conditional on the tied event quotient plus separate energy
 and mass bridges.
 
+## Exact state discriminator for the next campaign
+
+The record-versus-working-state fork has one operational test.
+
+1. Hold one complete physical record configuration `R` fixed.
+2. Construct two candidate microscopic continuations that differ only in a
+   proposed coherent variable at unrecorded sites.
+3. Let the physically generated Cycle-193 program drive an effect-complete
+   future tester, including the Cycle-189 omission, disturbing R1, and
+   nondisturbing R2 controls.
+4. Compare the complete distributions of later records.
+
+There are only three typed outcomes:
+
+| result | framework meaning |
+|---|---|
+| the coherent variable is uniquely calculated from `R` and the fixed law | derived representation; no state widening |
+| every physically allowed future record law is constant across the two candidates | operational gauge; no state widening |
+| some future record distribution differs | future-relevant state is missing from Qualification; append a sufficient physical record or widen the state ontology |
+
+A direct local process kernel on record configurations is a fourth
+implementation route but not a fourth logical outcome: it succeeds only if it
+reproduces the phase-sensitive Cycle-189 relation while remaining normalized,
+local, covariant, compositional, and fibre-constant by construction.
+
+This test must be run at the local microscopic level. Cycle 189 proves finite
+record sufficiency after its process is supplied; it does not prove that a
+homogeneous nearest-neighbour realization has no hidden future-sensitive
+phase. Conversely, a failed implementation does not by itself force widening;
+the failure must persist across the direct-kernel, record-derived, and
+spatial-code routes.
+
 ## Decision gate before any final edit
 
 Any foundation edit should wait until these remaining tests are complete.

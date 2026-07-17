@@ -422,9 +422,9 @@ Load-bearing arithmetic / support authorities:
   D17 single-composite-`H_unit` `(1,1)` uniqueness on `Q_L`
   (retained_bounded). This is support for the native bridge, not a complete
   retained proof that `H_unit` is one complex EWSB doublet in the thermal census.
-- [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  — one-`SU(2)_L`-doublet EW bookkeeping and neutral-vacuum convention
-  (retained), used as compatible one-doublet bookkeeping.
+- `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`
+  — historical context only: its current theorem is defined `C^2` matrix
+  algebra and supplies neither a physical doublet nor a thermal field count.
 - [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
   — the finite declared-inventory arithmetic certificate whose declared
   inventory includes one complex Higgs doublet as four real scalar components;

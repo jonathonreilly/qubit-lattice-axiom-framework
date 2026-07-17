@@ -221,9 +221,12 @@ named context inputs.
 
 ## 6. Declared source dependencies and current boundary
 
-- [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  — supplies the unique dimension-one scalar VEV `v` carrying the
-  `(T_3 = -1/2, Y = +1/2)` doublet gauge transformation.
+- a supplied physical identification of the dimension-one coordinate `v` as
+  a scalar VEV carrying the stated doublet transformation. The defined
+  algebra at
+  `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md` supplies
+  only a positive scalar and a vector in `C^2`; it does not supply uniqueness,
+  a physical VEV, or a gauge transformation.
 - [`HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md)
   — supplies `α = 1/d` uniquely at `d = 4`.
 - [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md)

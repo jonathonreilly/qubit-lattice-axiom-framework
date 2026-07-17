@@ -142,10 +142,11 @@ On retained-tier authorities of current `main`:
         SU(2) Weyl doublets per generation; multiplied by retained N_gen = 3.
         For SM (N_color = 3): N_W = 4 × 3 = 12.
 
-(P5)  Higgs scalar content (retained EW Higgs gauge-mass diagonalization):
-        1 complex SU(2)_L Higgs doublet (`Y_H = 1/2`); 2 complex
+(P5)  Supplied scalar content (declared SM inventory):
+        1 complex SU(2)_L scalar doublet; 2 complex
         components, T(F_H) = 1/2.
-        Source: EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md
+        Source: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md.
+        This is a supplied physical inventory, not framework-derived content.
 
 (P6)  Companion forms (derived inline here, not imported from unmerged branches):
         b_3   =  (11 N_color − 2 N_quark)/3 = 7   [QCD companion form]
@@ -235,7 +236,7 @@ running.
 | `N_gen = 3` | [`THREE_GENERATION_STRUCTURE_NOTE.md`](THREE_GENERATION_STRUCTURE_NOTE.md) | **retained** | P2 |
 | Standard SU(2)_L 1-loop β-function definition | textbook QFT (Peskin-Schroeder) | external (math) | P3 |
 | LH SU(2)_L Weyl-doublet content (1 Q_L per N_color colors + 1 L_L per gen) | [`LEFT_HANDED_CHARGE_MATCHING_NOTE.md`](LEFT_HANDED_CHARGE_MATCHING_NOTE.md), [`ONE_GENERATION_MATTER_CLOSURE_NOTE.md`](ONE_GENERATION_MATTER_CLOSURE_NOTE.md) | **retained** | P4 |
-| 1 Higgs doublet (Y_H = 1/2) | [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md) | **retained** tree theorem | P5 |
+| 1 complex scalar doublet | [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md) | declared SM inventory; supplied, not derived | P5 |
 | `g_2² = 1/(d+1) = 1/4` (lattice anchor, gives 1/α_2|_lattice = 16π) | [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md) | **retained** (DERIVED) | P7 |
 | Companion `b_3 = (11 N_color − 2 N_quark)/3 = 7` (QCD) | derived inline in this note from retained S1 counts | inline companion | T3 cross-coupling ratio b_3/b_2 |
 | Companion `b_QED = (2/3)(N_color+1)² = 32/3` (QED) | derived inline from retained FRACTIONAL_CHARGE_DENOMINATOR + retained N_gen = 3 | inline companion | T3 cross-coupling ratio b_2/b_QED |
@@ -522,8 +523,9 @@ The runner:
   — retained S1 Identification Source Theorem.
 - [`THREE_GENERATION_STRUCTURE_NOTE.md`](THREE_GENERATION_STRUCTURE_NOTE.md)
   — retained physical three-generation matter structure (`N_gen = 3`).
-- [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  — retained tree theorem; pins 1 Higgs doublet `Y_H = 1/2`.
+- [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
+  — declared-inventory source for one complex scalar doublet; this is supplied
+  physical content and is not derived by the formal mass-algebra note.
 - [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md)
   — retained DERIVED; bare lattice coupling `g_2² = 1/(d+1)` for the
   lattice anchor `1/α_2|_lattice = 16π`.

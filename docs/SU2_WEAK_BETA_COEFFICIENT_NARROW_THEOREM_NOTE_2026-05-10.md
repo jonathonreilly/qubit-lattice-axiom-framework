@@ -92,17 +92,18 @@ N_gen  =  3.                                                              (X2)
 Source: [`THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md`](THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md)
 (effective_status: `retained`).
 
-**(X3) One-Higgs-doublet content.** The retained tree-level EW
-gauge-mass diagonalization admits exactly one complex `SU(2)_L` Higgs
-doublet with `Y_H = 1/2`, so the complex-scalar component count
-contributing to the β-coefficient is
+**(X3) Supplied one-Higgs-doublet content.** The declared SM inventory
+supplies one complex `SU(2)_L` scalar doublet, so the complex-scalar component
+count contributing to the beta-coefficient is
 
 ```text
 n_S^complex_components  =  2.                                              (X3)
 ```
 
-Source: [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-(effective_status: `retained_bounded`).
+Source: [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md), as a declared physical
+inventory input rather than a framework derivation. The historical
+`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md` path supplies
+no physical field content.
 
 **(X4a) Four-dimensional Yang-Mills tangent surface.** The one-loop
 coefficient is a logarithmic local counterterm on the four-dimensional
@@ -351,9 +352,9 @@ Markdown-link upstream (load-bearing):
   `N_W = (N_color + 1) * N_gen` per generation.
 - [`THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md`](THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md)
   — retained; supplies `(X2)` `N_gen = 3` observable-stable count.
-- [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  — retained_bounded; supplies `(X3)` one-Higgs-doublet content with
-  `n_S^complex_components = 2`.
+- [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
+  — declared-inventory source for `(X3)` one complex scalar doublet and
+  `n_S^complex_components = 2`; this is supplied physical content.
 - [`YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`](YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md)
   — retained; supplies `(X4a)` the four-dimensional marginal Yang-Mills
   tangent on which the local one-loop logarithmic coefficient is evaluated.

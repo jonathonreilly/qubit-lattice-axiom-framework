@@ -18,12 +18,10 @@ This source note does not set or predict an audit outcome.
 This packet has two clearly separated layers, following the 2026-06-19/20
 audit-scope split.
 
-1. **Clean EW derivative corollary (standalone exact-support scope).** Given a
-   stipulated local neutral one-Higgs EW radial coordinate `s`, this packet
-   differentiates the retained EW gauge-boson mass formulas to obtain the strict
-   tree-level W/Z response rows and their source-coordinate-independent ratio.
-   This is exact algebra over a retained authority; it does not depend on what
-   physical object `s` is.
+1. **Defined-readout derivative corollary.** Given a positive coordinate
+   `v(s)`, this packet differentiates the formal readouts `MW2` and `MZ2` of a
+   defined quadratic form. The resulting square-root identities are exact
+   algebra, but they are not physical W/Z response rows.
 
 2. **Carrier-source identification (CONDITIONAL).** The further reading that the
    signed-record / qubit `P_-` source ray *is* that physical EW neutral radial
@@ -32,24 +30,25 @@ audit-scope split.
    neutral radial source. That bridge is **not supplied or audited in this note**;
    it is an open bridge.
 
-This closes only the W/Z denominator derivative support (layer 1). It does not
-supply the top numerator row, retained physical-scale `g_2(v)`, positive `y_t`,
-or the carrier-source identification of layer 2.
+This closes only the formal-readout derivative algebra (layer 1). It does not
+supply the top numerator row, physical-scale `g_2(v)`, positive `y_t`, the
+identification of those readouts with W/Z masses, or the carrier-source
+identification of layer 2.
 
 ## Cited Authority Surface
 
 ### Load-bearing for the clean EW derivative corollary (layer 1)
 
 - [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  is audited clean and retained.  It gives
-  `M_W = g_2 v / 2` and `M_Z = sqrt(g_2^2 + g_Y^2) v / 2` on a one-Higgs
-  neutral doublet surface.
+  defines scalar readouts whose positive square roots are
+  `MW = g v / 2` and `MZ = sqrt(g^2 + gY^2) v / 2`. It does not identify
+  them as particle masses or supply a one-Higgs neutral surface.
 - [`YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`](YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md)
   gives exact support that a common top/W response ratio is invariant under
   local source reparameterization.
 
-These two authorities are sufficient for the clean EW derivative corollary,
-which treats `s` as an arbitrary stipulated local neutral radial coordinate.
+These two authorities are sufficient only for the formal derivative
+corollary. A physical EW/W/Z interpretation requires additional premises.
 
 ### Cited only for the conditional carrier-source layer (layer 2)
 
@@ -63,19 +62,17 @@ which treats `s` as an arbitrary stipulated local neutral radial coordinate.
 
 ## Layer 1: Clean EW Derivative Corollary (Strict W/Z Response Rows)
 
-This is the standalone exact-support scope. It assumes only that `s` is
-a stipulated local scalar coordinate on the retained one-Higgs neutral EW
-radial ray. It makes no claim that `s` is the signed-record / qubit source
-coordinate; that identification is deferred to the conditional layer 2 below.
+This is the standalone exact algebraic scope. Let `s` be a local real
+coordinate and let `v(s)>0`; no physical radial ray is inferred.
 
-Let `s` be any local scalar coordinate on the retained one-Higgs neutral EW
-radial ray and write the retained EW Higgs radial background as
+Write the defined lower-coordinate vector as
 
 ```text
 H(s) = (0, v(s)/sqrt(2))^T,
 ```
 
-with `v'(s_0) != 0`.  The retained EW Higgs theorem gives
+with `v'(s_0) != 0`. The defined quadratic-form theorem gives the positive
+square roots of its formal scalar readouts:
 
 ```text
 M_W(s) = g_2 v(s) / 2,
@@ -106,9 +103,9 @@ For any local reparameterization `s = f(r)`, both derivatives acquire the same
 factor `f'(r)`, so the W/Z response ratio is invariant and the same unknown
 Jacobian is the only remaining denominator-scale factor.
 
-All of the above holds for `s` as a stipulated local neutral EW radial
-coordinate. Nothing in layer 1 asserts that `s` is the signed-record/qubit
-source coordinate.
+All of the above is formal differentiation. Layer 1 asserts neither that `s`
+is a signed-record/qubit source coordinate nor that `MW` and `MZ` are physical
+W/Z masses.
 
 ## Layer 2: Carrier-Source Identification (CONDITIONAL — Open Bridge)
 
@@ -140,12 +137,12 @@ note.
 
 ## What This Closes
 
-This packet's standalone (layer 1) result is the strict W/Z denominator
-derivative support row on a stipulated local neutral EW radial coordinate:
+This packet's standalone (layer 1) result is the derivative identity for two
+formal scalar readouts:
 
 ```text
-stipulated local neutral EW radial coordinate s
-  -> W/Z response rows on the retained one-Higgs EW surface.
+positive scalar coordinate v(s)
+  -> derivatives of the formal labels MW and MZ.
 ```
 
 It is stricter than a route inventory: the runner checks the derivative rows,
@@ -187,9 +184,9 @@ still open:
 
 ## Why This Is Not A Renaming
 
-This packet differentiates the retained EW gauge-boson mass formulas with
-respect to an arbitrary neutral radial source coordinate.  It does not call a
-source matrix element `y_t`, does not use `H_unit`, does not define
+This packet differentiates the defined scalar readout formulas with respect to
+an arbitrary coordinate. It does not call the result a physical mass response
+or call a source matrix element `y_t`; it does not use `H_unit` or define
 `y_t_bare`, and does not use the old Ward chain.
 
 ## Review Boundary Certificate
@@ -197,9 +194,9 @@ source matrix element `y_t`, does not use `H_unit`, does not define
 ```yaml
 actual_current_surface_status: exact-support
 actual_current_surface_status_scope: |
-  Layer 1 only: the clean EW derivative corollary (W/Z response rows, ratio,
-  reparameterization invariance, radial-Jacobian recovery) on a stipulated
-  local neutral one-Higgs EW radial coordinate.
+  Layer 1 only: derivatives, ratio, reparameterization invariance, and
+  coordinate-Jacobian recovery for the formal MW/MZ scalar labels. Physical
+  W/Z masses and a one-Higgs radial coordinate are not identified.
 conditional_surface_status: |
   Layer 2: the carrier-source identification (qubit P_- source ray = physical EW
   neutral radial coordinate) is conditional on an unsupplied, unaudited

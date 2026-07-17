@@ -30,9 +30,10 @@ needs a physical electroweak order-parameter/readout bridge identifying the
 fixed positive D=4 density with the EW Higgs order-parameter coordinate and
 the relevant endpoint coefficient surface.
 
-This note closes the first half of that blocker: on the retained one-Higgs
-neutral surface, the EW order-parameter coordinate `v` is exactly the positive
-fourth-root coordinate of any positive quartic D=4 density
+This note proves a conditional algebraic first half only: once a physical
+one-Higgs neutral surface and its order-parameter interpretation are supplied,
+the coordinate `v` is the positive fourth-root coordinate of any positive
+quartic D=4 density
 
 ```text
 rho_* = A(L) v(L)^4,       A(L) > 0.
@@ -44,7 +45,7 @@ not derive the absolute EW scale, and does not use an observed EW value.
 
 ## Theorem
 
-On the one-Higgs electroweak surface used by the retained
+Using only the vector normalization in the defined algebra of
 [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md),
 take the neutral representative
 
@@ -52,7 +53,7 @@ take the neutral representative
 H(v) = (0, v/sqrt(2))^T,       v > 0.
 ```
 
-Then the gauge-invariant neutral order-parameter norm
+Then the defined Hermitian-norm readout
 
 ```text
 q(H) := 2 H^dagger H
@@ -75,6 +76,11 @@ is exactly
 ```text
 rho_* = A(L) v(L)^4.
 ```
+
+The cited theorem supplies only this vector identity. It does not make `H` a
+physical Higgs carrier, make `v` a vacuum expectation value, establish gauge
+invariance, or identify `rho_*` with a physical density. Those are precisely
+the still-open physical bridge hypotheses of this note.
 
 For two endpoints with the same fixed density,
 

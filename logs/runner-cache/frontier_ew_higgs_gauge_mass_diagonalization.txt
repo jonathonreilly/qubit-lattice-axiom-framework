@@ -1,80 +1,76 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ew_higgs_gauge_mass_diagonalization.py
-runner_sha256: ca8bfb43674b77c14cd96d020437df24cc63f50bb03623767290703ef7b757fa
+runner_sha256: c97e6311cf19447267eaccddae4d0d961bb9dad3c4db86e41593f7f967021615
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.31
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
-=== EW Higgs gauge-mass diagonalization verifier ===
+=== Defined C2 quadratic-form diagonalization verifier ===
+MODE: normal
 
-=== Authority surface and scope ===
-PASS: theorem note exists :: docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md
-PASS: status extracted :: bounded support theorem / exact symbolic verifier over a declared EW-Higgs input boundary. Given one `SU(2)_L` Higgs doublet of hypercharge 
-PASS: status is bounded support over declared EW-Higgs inputs
-PASS: claim type metadata is bounded_theorem
-PASS: status authority belongs to independent audit lane
-PASS: status is scoped to one-doublet EW/Higgs gauge-mass theorem
-PASS: status limits theorem to tree-level gauge-boson spectrum
-PASS: note does not promote Higgs/top/CKM lanes
-PASS: primary runner is named in note
-PASS: claim-boundary section present
-PASS: EW gauge group is declared input
-PASS: Higgs hypercharge is declared input
-PASS: neutral vacuum is declared input
-PASS: covariant derivative is declared input
-PASS: what-this-does-not-claim section present
-PASS: minimal-framework derivation is not claimed
-PASS: no pole-mass derivation claimed
-PASS: bounded W mass lane not promoted
-PASS: package surface exists: docs/CANONICAL_HARNESS_INDEX.md
-PASS: package surface carries EW Higgs gauge-mass row: docs/CANONICAL_HARNESS_INDEX.md
-PASS: package surface exists: docs/publication/ci3_z3/PUBLICATION_MATRIX.md
-PASS: package surface carries EW Higgs gauge-mass row: docs/publication/ci3_z3/PUBLICATION_MATRIX.md
-PASS: package surface exists: docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md
-PASS: package surface carries EW Higgs gauge-mass row: docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md
-PASS: package surface exists: docs/publication/ci3_z3/DERIVATION_ATLAS.md
-PASS: package surface carries EW Higgs gauge-mass row: docs/publication/ci3_z3/DERIVATION_ATLAS.md
-PASS: package surface exists: docs/publication/ci3_z3/RESULTS_INDEX.md
-PASS: package surface carries EW Higgs gauge-mass row: docs/publication/ci3_z3/RESULTS_INDEX.md
+=== Executable-evidence firewall ===
+PASS: no network or external-data imports :: imports=['Callable', 'Path', 'annotations', 'argparse', 'ast', 'dataclass', 'sympy']
+PASS: no literal-True evidence checks :: lines=[]
+PASS: no dynamic eval or exec :: calls=[]
 
-=== Pauli actions and unbroken charge ===
-PASS: T1 H0 action
-PASS: T2 H0 action
-PASS: T3 H0 action
-PASS: Y H0 action
-PASS: T3 H0 = -Y H0
-PASS: Q H0 = 0 for Q=T3+Y
-PASS: unbroken generator condition is alpha=beta
+=== Defined matrix actions and linear map ===
+PASS: T1 h0 :: Matrix([[sqrt(2)*v/4], [0]])
+PASS: T2 h0 :: Matrix([[-sqrt(2)*I*v/4], [0]])
+PASS: T3 h0 :: Matrix([[0], [-sqrt(2)*v/4]])
+PASS: Y h0 :: Matrix([[0], [sqrt(2)*v/4]])
+PASS: full L coordinate vector :: Matrix([[sqrt(2)*g*v*(-I*W1 - W2)/4], [sqrt(2)*I*v*(-B*gY + W3*g)/4]])
+PASS: L is real-linear in four coefficients
+PASS: full Hermitian-norm quadratic form :: v**2*(B**2*gY**2 - 2*B*W3*g*gY + W1**2*g**2 + W2**2*g**2 + W3**2*g**2)/8
 
-=== Gauge mass matrix diagonalization ===
-PASS: charged vacuum kinetic coefficient :: g**2*v**2*(W1**2 + W2**2)/8
-PASS: charged complex-field identity W+W- = (W1^2+W2^2)/2
-PASS: M_W^2 = g^2 v^2 / 4
-PASS: neutral vacuum kinetic coefficient :: v**2*(B*g_Y - W3*g)**2/8
-PASS: neutral matrix determinant vanishes
-PASS: neutral matrix trace gives M_Z^2
-PASS: photon eigenvector has zero eigenvalue
-PASS: Z eigenvector has M_Z^2 eigenvalue
-PASS: photon and Z eigenvectors are orthogonal
-PASS: Weinberg rotation diagonalizes neutral mass matrix
-PASS: rho_tree = 1
+=== Full Gram matrix and charged block ===
+PASS: Hessian constructs the unique symmetric matrix M :: Matrix([[g**2*v**2/4, 0, 0, 0], [0, g**2*v**2/4, 0, 0], [0, 0, g**2*v**2/4, -g*gY*v**2/4], [0, 0, -g*gY*v**2/4, gY**2*v**2/4]])
+PASS: M is symmetric
+PASS: Q reconstructs as one-half x^T M x
+PASS: charged block has two equal directions :: Matrix([[g**2*v**2/4, 0], [0, g**2*v**2/4]])
+PASS: charged basis product identity
+PASS: charged Q coefficient after basis rotation
 
-=== Electric coupling and normalization dictionary ===
-PASS: sin^2 + cos^2 = 1
-PASS: e = g sin(theta_W)
-PASS: e = g_Y cos(theta_W)
-PASS: inverse electric coupling sum rule
-PASS: GUT-normalized dictionary g_Y^2 = (3/5) g1^2
+=== Neutral rank-one matrix ===
+PASS: neutral entry (0,0) :: g**2*v**2/4
+PASS: neutral entry (0,1) :: -g*gY*v**2/4
+PASS: neutral entry (1,0) :: -g*gY*v**2/4
+PASS: neutral entry (1,1) :: gY**2*v**2/4
+PASS: neutral determinant :: 0
+PASS: neutral rank :: 1
+PASS: neutral trace :: g**2*v**2/4 + gY**2*v**2/4
+PASS: neutral characteristic polynomial :: -lambda*(g**2*v**2 + gY**2*v**2 - 4*lambda)/4
+PASS: neutral kernel vector
+PASS: neutral nonzero eigenvector
+PASS: neutral kernel is one-dimensional
+PASS: neutral range is one-dimensional
+PASS: neutral eigenvectors are orthogonal
 
-=== Scalar Hessian companion ===
-PASS: stationary condition is mu^2 = lambda v^2
-PASS: radial Higgs Hessian m_h^2 = 2 lambda v^2
-PASS: scalar cubic coefficient is lambda v
-PASS: scalar quartic coefficient is lambda/4
+=== Normalized orthogonal rotation and scalar readouts ===
+PASS: rotation is orthogonal
+PASS: rotation determinant is one
+PASS: rotation diagonalizes M0
+PASS: rotation reconstructs neutral Q :: Z**2*v**2*(g**2 + gY**2)/8
+PASS: c squared plus s squared
+PASS: formal MA2 label
+PASS: formal e equals g times s
+PASS: formal e equals gY times c
+PASS: inverse-e identity
+PASS: formal rho identity :: 1
 
-TOTAL: PASS=55, FAIL=0
-VERDICT: BOUNDED_SUPPORT
+=== Full annihilator classification ===
+PASS: generic annihilator action :: Matrix([[0], [sqrt(2)*v*(-alpha + beta)/4]])
+PASS: annihilator coefficient rank :: 1
+PASS: annihilator is one-dimensional :: [Matrix([
+[1],
+[1]])]
+PASS: T3 plus Y kills h0
+PASS: annihilator basis has equal coefficients :: [Matrix([
+[1],
+[1]])]
+
+TOTAL: PASS=44, FAIL=0
+VERDICT: FORMAL_THEOREM_VERIFIED
 
 ----- stderr -----
 

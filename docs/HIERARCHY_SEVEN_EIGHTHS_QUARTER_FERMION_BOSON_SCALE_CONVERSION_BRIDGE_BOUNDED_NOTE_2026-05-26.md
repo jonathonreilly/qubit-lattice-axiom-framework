@@ -42,8 +42,11 @@ in the radiation-energy ratio becomes a dimension-one prefactor.
 
 The bridge uses these inputs:
 
-- (T1) [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  identifies the EW VEV `v` with a bosonic-doublet scalar VEV.
+- (T1) a supplied identification of the hierarchy coordinate `v` with a
+  physical bosonic-doublet scalar VEV. This bridge remains open because the
+  defined algebra at
+  `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md` does not
+  provide that physical identification.
 - (T2) [`AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`](AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md)
   proposes the bounded per-degree-of-freedom fermionic
   Stefan-Boltzmann ratio `u_F / u_B = η(4)/ζ(4) = 7/8` at
@@ -185,8 +188,9 @@ factor in the checked neighborhood.
 The audit lane owns all status labels. The current source dependency
 surface is:
 
-- (T1) [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  — bosonic-doublet EW VEV identification.
+- (T1) supplied bosonic-doublet EW VEV identification — still an open
+  physical bridge, not a dependency furnished by the historical
+  `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md` path.
 - (T2) [`AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`](AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md)
   — fermionic Stefan-Boltzmann source row on `Z^3 × S^1_β`.
 - (T3) [`HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md)

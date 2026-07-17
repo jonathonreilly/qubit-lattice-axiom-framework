@@ -1,25 +1,23 @@
 #!/usr/bin/env python3
-"""Object-level verifier for the EW Higgs gauge-mass diagonalization theorem.
+"""Exact evidence for the defined C2 quadratic-form theorem.
 
-This runner verifies the bounded algebra in
-docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md.
-It does not use numerical electroweak pole masses, RGE inputs, or Higgs-mass
-fits.  The checks are exact symbolic checks of the one-doublet tree-level
-mass matrix, charge generator, coupling dictionary, and scalar Hessian
-bookkeeping.
+The stable filename is historical.  This runner constructs the theorem's
+finite-dimensional objects directly and does not read audit state, source-note
+prose, network resources, external data, or physical inputs.
 """
 
 from __future__ import annotations
 
-import re
+import argparse
+import ast
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Callable
 
 import sympy as sp
 
 
-ROOT = Path(__file__).resolve().parents[1]
-NOTE = ROOT / "docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md"
+SOURCE = Path(__file__).resolve()
 
 
 @dataclass
@@ -27,8 +25,8 @@ class Audit:
     passed: int = 0
     failed: int = 0
 
-    def check(self, label: str, condition: bool, detail: str = "") -> None:
-        if condition:
+    def check(self, label: str, condition: object, detail: str = "") -> None:
+        if bool(condition):
             self.passed += 1
             print(f"PASS: {label}" + (f" :: {detail}" if detail else ""))
         else:
@@ -36,205 +34,400 @@ class Audit:
             print(f"FAIL: {label}" + (f" :: {detail}" if detail else ""))
 
 
+@dataclass(frozen=True)
+class Algebra:
+    g: sp.Symbol
+    gy: sp.Symbol
+    v: sp.Symbol
+    w1: sp.Symbol
+    w2: sp.Symbol
+    w3: sp.Symbol
+    b: sp.Symbol
+    t1: sp.Matrix
+    t2: sp.Matrix
+    t3: sp.Matrix
+    y: sp.Matrix
+    h0: sp.Matrix
+    lvec: sp.Matrix
+    q: sp.Expr
+    full_matrix: sp.Matrix
+    neutral_matrix: sp.Matrix
+
+
+Residual = sp.Expr | sp.Matrix
+
+
 def banner(title: str) -> None:
     print()
     print(f"=== {title} ===")
 
 
-def read(path: Path) -> str:
-    return path.read_text(encoding="utf-8")
-
-
 def is_zero(expr: sp.Expr) -> bool:
-    return sp.simplify(expr) == 0
+    return sp.simplify(sp.expand(expr)) == 0
 
 
 def matrix_is_zero(matrix: sp.Matrix) -> bool:
     return all(is_zero(entry) for entry in matrix)
 
 
-def audit_note_surface(audit: Audit) -> None:
-    banner("Authority surface and scope")
-    audit.check("theorem note exists", NOTE.exists(), str(NOTE.relative_to(ROOT)))
-
-    text = read(NOTE)
-    flat_text = " ".join(text.split())
-    status_match = re.search(r"\*\*Status:\*\*\s*(.+?)\n\n", text, re.S)
-    status = status_match.group(1).replace("\n", " ") if status_match else ""
-
-    audit.check("status extracted", bool(status), status[:140])
-    audit.check(
-        "status is bounded support over declared EW-Higgs inputs",
-        "bounded support theorem" in status
-        and "declared EW-Higgs input boundary" in status
-        and "not retained or proposed_retained" in status,
-    )
-    audit.check("claim type metadata is bounded_theorem", "**Claim type:** bounded_theorem" in text)
-    audit.check("status authority belongs to independent audit lane", "**Status authority:** independent audit lane only" in text)
-    audit.check(
-        "status is scoped to one-doublet EW/Higgs gauge-mass theorem",
-        "one `SU(2)_L` Higgs doublet" in status
-        and "tree-level gauge-boson mass spectrum and charge normalization" in status,
-    )
-    audit.check("status limits theorem to tree-level gauge-boson spectrum", "tree-level gauge-boson mass spectrum" in status)
-    audit.check("note does not promote Higgs/top/CKM lanes", "does not modify, promote, or close" in flat_text)
-    audit.check("primary runner is named in note", "frontier_ew_higgs_gauge_mass_diagonalization.py" in text)
-    audit.check("claim-boundary section present", "## 0. Claim Boundary" in text)
-    audit.check("EW gauge group is declared input", "the electroweak gauge group `SU(2)_L x U(1)_Y`" in text)
-    audit.check("Higgs hypercharge is declared input", "the hypercharge assignment `Y_H = 1/2`" in text)
-    audit.check("neutral vacuum is declared input", "the neutral vacuum `<H> = (0, v/sqrt(2))^T`" in text)
-    audit.check("covariant derivative is declared input", "the standard covariant derivative" in text)
-    audit.check("what-this-does-not-claim section present", "## 10. What This Does Not Claim" in text)
-    audit.check("minimal-framework derivation is not claimed", "does not derive the EW gauge group" in text)
-    audit.check("no pole-mass derivation claimed", "It does not compute pole masses" in text)
-    audit.check("bounded W mass lane not promoted", "does not promote the bounded `M_W`" in text)
-
-    for rel in (
-        "docs/CANONICAL_HARNESS_INDEX.md",
-        "docs/publication/ci3_z3/PUBLICATION_MATRIX.md",
-        "docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md",
-        "docs/publication/ci3_z3/DERIVATION_ATLAS.md",
-        "docs/publication/ci3_z3/RESULTS_INDEX.md",
-    ):
-        path = ROOT / rel
-        audit.check(f"package surface exists: {rel}", path.exists())
-        if path.exists():
-            package_text = read(path)
-            audit.check(
-                f"package surface carries EW Higgs gauge-mass row: {rel}",
-                "EW Higgs gauge-mass diagonalization" in package_text,
-            )
+def residual_is_zero(residual: Residual) -> bool:
+    if isinstance(residual, sp.MatrixBase):
+        return matrix_is_zero(sp.Matrix(residual))
+    return is_zero(residual)
 
 
-def audit_pauli_and_vacuum(audit: Audit) -> None:
-    banner("Pauli actions and unbroken charge")
-    v = sp.symbols("v", positive=True, real=True)
-    i = sp.I
-
-    h0 = sp.Matrix([0, v / sp.sqrt(2)])
-    tau1 = sp.Matrix([[0, 1], [1, 0]])
-    tau2 = sp.Matrix([[0, -i], [i, 0]])
-    tau3 = sp.Matrix([[1, 0], [0, -1]])
-    t1, t2, t3 = tau1 / 2, tau2 / 2, tau3 / 2
-    y = sp.Rational(1, 2) * sp.eye(2)
-
-    audit.check("T1 H0 action", matrix_is_zero(t1 * h0 - sp.Matrix([v / (2 * sp.sqrt(2)), 0])))
-    audit.check("T2 H0 action", matrix_is_zero(t2 * h0 - sp.Matrix([-i * v / (2 * sp.sqrt(2)), 0])))
-    audit.check("T3 H0 action", matrix_is_zero(t3 * h0 - sp.Matrix([0, -v / (2 * sp.sqrt(2))])))
-    audit.check("Y H0 action", matrix_is_zero(y * h0 - sp.Matrix([0, v / (2 * sp.sqrt(2))])))
-    audit.check("T3 H0 = -Y H0", matrix_is_zero(t3 * h0 + y * h0))
-    audit.check("Q H0 = 0 for Q=T3+Y", matrix_is_zero((t3 + y) * h0))
-
-    alpha, beta = sp.symbols("alpha beta")
-    xh0 = (alpha * t3 + beta * y) * h0
-    audit.check("unbroken generator condition is alpha=beta", is_zero(xh0[1] - (beta - alpha) * v / (2 * sp.sqrt(2))))
+def render_residual(residual: Residual) -> str:
+    if isinstance(residual, sp.MatrixBase):
+        return str(sp.simplify(residual))
+    return str(sp.factor(residual))
 
 
-def audit_mass_matrices(audit: Audit) -> None:
-    banner("Gauge mass matrix diagonalization")
-    g, gy, v = sp.symbols("g g_Y v", positive=True, real=True)
+def hermitian_norm_squared(vector: sp.Matrix) -> sp.Expr:
+    return sp.simplify((sp.conjugate(vector).T * vector)[0])
+
+
+def construct() -> Algebra:
+    g, gy, v = sp.symbols("g gY v", positive=True, real=True)
     w1, w2, w3, b = sp.symbols("W1 W2 W3 B", real=True)
-    i = sp.I
 
+    sigma1 = sp.Matrix([[0, 1], [1, 0]])
+    sigma2 = sp.Matrix([[0, -sp.I], [sp.I, 0]])
+    sigma3 = sp.Matrix([[1, 0], [0, -1]])
+    t1, t2, t3 = sigma1 / 2, sigma2 / 2, sigma3 / 2
+    y = sp.eye(2) / 2
     h0 = sp.Matrix([0, v / sp.sqrt(2)])
-    tau1 = sp.Matrix([[0, 1], [1, 0]])
-    tau2 = sp.Matrix([[0, -i], [i, 0]])
-    tau3 = sp.Matrix([[1, 0], [0, -1]])
-    t1, t2, t3 = tau1 / 2, tau2 / 2, tau3 / 2
-    y = sp.Rational(1, 2) * sp.eye(2)
 
-    charged_vec = g * w1 * t1 * h0 + g * w2 * t2 * h0
-    charged_norm = sp.simplify((charged_vec.conjugate().T * charged_vec)[0])
+    operator = g * (w1 * t1 + w2 * t2 + w3 * t3) + gy * b * y
+    lvec = sp.simplify(-sp.I * operator * h0)
+    q = hermitian_norm_squared(lvec)
+    variables = sp.Matrix([w1, w2, w3, b])
+    full_matrix = sp.hessian(q, tuple(variables))
+    neutral_matrix = full_matrix.extract([2, 3], [2, 3])
+
+    return Algebra(
+        g=g,
+        gy=gy,
+        v=v,
+        w1=w1,
+        w2=w2,
+        w3=w3,
+        b=b,
+        t1=t1,
+        t2=t2,
+        t3=t3,
+        y=y,
+        h0=h0,
+        lvec=lvec,
+        q=q,
+        full_matrix=full_matrix,
+        neutral_matrix=neutral_matrix,
+    )
+
+
+def expected_full_matrix(a: Algebra) -> sp.Matrix:
+    g, gy, v = a.g, a.gy, a.v
+    return v**2 / 4 * sp.Matrix(
+        [
+            [g**2, 0, 0, 0],
+            [0, g**2, 0, 0],
+            [0, 0, g**2, -g * gy],
+            [0, 0, -g * gy, gy**2],
+        ]
+    )
+
+
+def audit_source_firewall(audit: Audit) -> None:
+    """Check only hazards that could substitute metadata for mathematics."""
+
+    banner("Executable-evidence firewall")
+    tree = ast.parse(SOURCE.read_text(encoding="utf-8"), filename=str(SOURCE))
+    imports = {
+        alias.name.split(".")[0]
+        for node in ast.walk(tree)
+        if isinstance(node, (ast.Import, ast.ImportFrom))
+        for alias in node.names
+    }
+    literal_true_checks = []
+    forbidden_calls = []
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Call):
+            name = ""
+            if isinstance(node.func, ast.Name):
+                name = node.func.id
+            elif isinstance(node.func, ast.Attribute):
+                name = node.func.attr
+            if name == "check" and len(node.args) >= 2:
+                condition = node.args[1]
+                if isinstance(condition, ast.Constant) and condition.value is True:
+                    literal_true_checks.append(node.lineno)
+            if name in {"eval", "exec"}:
+                forbidden_calls.append((name, node.lineno))
+
     audit.check(
-        "charged vacuum kinetic coefficient",
-        is_zero(charged_norm - g**2 * v**2 * (w1**2 + w2**2) / 8),
-        str(charged_norm),
+        "no network or external-data imports",
+        imports.isdisjoint({"requests", "urllib", "http", "socket", "pandas"}),
+        f"imports={sorted(imports)}",
     )
     audit.check(
-        "charged complex-field identity W+W- = (W1^2+W2^2)/2",
-        is_zero(((w1 - i * w2) / sp.sqrt(2)) * ((w1 + i * w2) / sp.sqrt(2)) - (w1**2 + w2**2) / 2),
+        "no literal-True evidence checks",
+        len(literal_true_checks) == 0,
+        f"lines={literal_true_checks}",
     )
+    audit.check(
+        "no dynamic eval or exec",
+        len(forbidden_calls) == 0,
+        f"calls={forbidden_calls}",
+    )
+
+
+def audit_normal(audit: Audit, a: Algebra) -> None:
+    g, gy, v = a.g, a.gy, a.v
+    w1, w2, w3, b = a.w1, a.w2, a.w3, a.b
+    root2 = sp.sqrt(2)
+
+    banner("Defined matrix actions and linear map")
+    action_targets = (
+        ("T1 h0", a.t1 * a.h0, sp.Matrix([v / (2 * root2), 0])),
+        ("T2 h0", a.t2 * a.h0, sp.Matrix([-sp.I * v / (2 * root2), 0])),
+        ("T3 h0", a.t3 * a.h0, sp.Matrix([0, -v / (2 * root2)])),
+        ("Y h0", a.y * a.h0, sp.Matrix([0, v / (2 * root2)])),
+    )
+    for label, actual, expected in action_targets:
+        audit.check(label, matrix_is_zero(actual - expected), str(actual))
+
+    expected_l = -sp.I * v / (2 * root2) * sp.Matrix(
+        [g * (w1 - sp.I * w2), -g * w3 + gy * b]
+    )
+    audit.check("full L coordinate vector", matrix_is_zero(a.lvec - expected_l), str(a.lvec))
+    audit.check("L is real-linear in four coefficients", all(sp.diff(a.lvec, x, 2) == sp.zeros(2, 1) for x in (w1, w2, w3, b)))
+
+    expected_q = v**2 / 8 * (g**2 * (w1**2 + w2**2) + (g * w3 - gy * b) ** 2)
+    audit.check("full Hermitian-norm quadratic form", is_zero(a.q - expected_q), str(sp.factor(a.q)))
+
+    banner("Full Gram matrix and charged block")
+    expected_m = expected_full_matrix(a)
+    audit.check("Hessian constructs the unique symmetric matrix M", matrix_is_zero(a.full_matrix - expected_m), str(a.full_matrix))
+    audit.check("M is symmetric", matrix_is_zero(a.full_matrix - a.full_matrix.T))
+    x = sp.Matrix([w1, w2, w3, b])
+    audit.check("Q reconstructs as one-half x^T M x", is_zero(a.q - (x.T * a.full_matrix * x)[0] / 2))
+    charged = a.full_matrix.extract([0, 1], [0, 1])
     mw2 = g**2 * v**2 / 4
-    audit.check("M_W^2 = g^2 v^2 / 4", is_zero(mw2 - g**2 * v**2 / 4))
+    audit.check("charged block has two equal directions", matrix_is_zero(charged - mw2 * sp.eye(2)), str(charged))
+    wplus = (w1 - sp.I * w2) / root2
+    wminus = (w1 + sp.I * w2) / root2
+    audit.check("charged basis product identity", is_zero(wplus * wminus - (w1**2 + w2**2) / 2))
+    q_charged = g**2 * v**2 * (w1**2 + w2**2) / 8
+    audit.check("charged Q coefficient after basis rotation", is_zero(q_charged - mw2 * wplus * wminus))
 
-    neutral_vec = g * w3 * t3 * h0 + gy * b * y * h0
-    neutral_norm = sp.simplify((neutral_vec.conjugate().T * neutral_vec)[0])
+    banner("Neutral rank-one matrix")
+    m0 = a.neutral_matrix
+    expected_m0 = v**2 / 4 * sp.Matrix([[g**2, -g * gy], [-g * gy, gy**2]])
+    for row in range(2):
+        for col in range(2):
+            audit.check(
+                f"neutral entry ({row},{col})",
+                is_zero(m0[row, col] - expected_m0[row, col]),
+                str(m0[row, col]),
+            )
+    mz2 = (g**2 + gy**2) * v**2 / 4
+    lam = sp.symbols("lambda")
+    audit.check("neutral determinant", is_zero(m0.det()), str(sp.factor(m0.det())))
+    audit.check("neutral rank", m0.rank() == 1, str(m0.rank()))
+    audit.check("neutral trace", is_zero(sp.trace(m0) - mz2), str(sp.trace(m0)))
     audit.check(
-        "neutral vacuum kinetic coefficient",
-        is_zero(neutral_norm - v**2 * (g * w3 - gy * b) ** 2 / 8),
-        str(neutral_norm),
+        "neutral characteristic polynomial",
+        is_zero(m0.charpoly(lam).as_expr() - lam * (lam - mz2)),
+        str(sp.factor(m0.charpoly(lam).as_expr())),
+    )
+    kernel = sp.Matrix([gy, g])
+    eigen = sp.Matrix([g, -gy])
+    audit.check("neutral kernel vector", matrix_is_zero(m0 * kernel))
+    audit.check("neutral nonzero eigenvector", matrix_is_zero(m0 * eigen - mz2 * eigen))
+    audit.check("neutral kernel is one-dimensional", len(m0.nullspace()) == 1)
+    audit.check("neutral range is one-dimensional", len(m0.columnspace()) == 1)
+    audit.check("neutral eigenvectors are orthogonal", is_zero((kernel.T * eigen)[0]))
+
+    banner("Normalized orthogonal rotation and scalar readouts")
+    total = sp.sqrt(g**2 + gy**2)
+    c, s = g / total, gy / total
+    rotation = sp.Matrix([[c, -s], [s, c]])
+    audit.check("rotation is orthogonal", matrix_is_zero(rotation * rotation.T - sp.eye(2)))
+    audit.check("rotation determinant is one", is_zero(rotation.det() - 1))
+    audit.check("rotation diagonalizes M0", matrix_is_zero(rotation * m0 * rotation.T - sp.diag(mz2, 0)))
+    z, photon_label = sp.symbols("Z A", real=True)
+    neutral_old = rotation.T * sp.Matrix([z, photon_label])
+    q_neutral = (sp.Matrix([w3, b]).T * m0 * sp.Matrix([w3, b]))[0] / 2
+    q_rotated = sp.expand(q_neutral.subs({w3: neutral_old[0], b: neutral_old[1]}, simultaneous=True))
+    audit.check("rotation reconstructs neutral Q", is_zero(q_rotated - mz2 * z**2 / 2), str(sp.factor(q_rotated)))
+
+    ma2 = sp.Integer(0)
+    e = g * gy / total
+    rho = sp.simplify(mw2 / (mz2 * c**2))
+    audit.check("c squared plus s squared", is_zero(c**2 + s**2 - 1))
+    audit.check("formal MA2 label", is_zero(ma2))
+    audit.check("formal e equals g times s", is_zero(e - g * s))
+    audit.check("formal e equals gY times c", is_zero(e - gy * c))
+    audit.check("inverse-e identity", is_zero(1 / e**2 - 1 / g**2 - 1 / gy**2))
+    audit.check("formal rho identity", is_zero(rho - 1), str(rho))
+
+    banner("Full annihilator classification")
+    alpha, beta = sp.symbols("alpha beta")
+    annihilator_action = sp.simplify((alpha * a.t3 + beta * a.y) * a.h0)
+    target_action = v / (2 * root2) * sp.Matrix([0, beta - alpha])
+    audit.check("generic annihilator action", matrix_is_zero(annihilator_action - target_action), str(annihilator_action))
+    coefficient = sp.Matrix.hstack(a.t3 * a.h0, a.y * a.h0)
+    nullspace = coefficient.nullspace()
+    audit.check("annihilator coefficient rank", coefficient.rank() == 1, str(coefficient.rank()))
+    audit.check("annihilator is one-dimensional", len(nullspace) == 1, str(nullspace))
+    audit.check("T3 plus Y kills h0", matrix_is_zero((a.t3 + a.y) * a.h0))
+    audit.check(
+        "annihilator basis has equal coefficients",
+        len(nullspace) == 1 and is_zero(nullspace[0][0] - nullspace[0][1]),
+        str(nullspace),
     )
 
-    mass = v**2 / 4 * sp.Matrix([[g**2, -g * gy], [-g * gy, gy**2]])
-    gtot = sp.sqrt(g**2 + gy**2)
-    photon_vec = sp.Matrix([gy / gtot, g / gtot])
-    z_vec = sp.Matrix([g / gtot, -gy / gtot])
+
+def audit_independent(audit: Audit, a: Algebra) -> None:
+    """Rebuild the result from coordinate columns and solved subspaces."""
+
+    banner("Independent coordinate-Gram construction")
+    variables = sp.Matrix([a.w1, a.w2, a.w3, a.b])
+    coordinate_columns = a.lvec.jacobian(variables)
+    complex_gram = sp.conjugate(coordinate_columns).T * coordinate_columns
+    coordinate_matrix = 2 * complex_gram.applyfunc(lambda entry: sp.simplify(sp.re(entry)))
+    coordinate_matrix = coordinate_matrix.applyfunc(sp.simplify)
+    audit.check("coordinate columns are constant", all(not entry.has(*variables) for entry in coordinate_columns))
+    audit.check("coordinate Gram is real", all(sp.im(entry).simplify() == 0 for entry in coordinate_matrix))
+    audit.check("coordinate Gram independently reproduces M", matrix_is_zero(coordinate_matrix - a.full_matrix), str(coordinate_matrix))
+    reconstructed = (variables.T * coordinate_matrix * variables)[0] / 2
+    audit.check("coordinate Gram independently reconstructs Q", is_zero(reconstructed - a.q), str(sp.factor(reconstructed)))
+
+    banner("Independent solved neutral subspaces")
+    solved_m0 = coordinate_matrix.extract([2, 3], [2, 3])
+    nullspace = solved_m0.nullspace()
+    columnspace = solved_m0.columnspace()
+    audit.check("solver finds one null direction", len(nullspace) == 1, str(nullspace))
+    audit.check("solver finds one range direction", len(columnspace) == 1, str(columnspace))
+    null = nullspace[0]
+    image = columnspace[0]
+    audit.check("solved directions are orthogonal", is_zero((null.T * image)[0]))
+    null_unit = sp.simplify(null / sp.sqrt((null.T * null)[0]))
+    image_unit = sp.simplify(image / sp.sqrt((image.T * image)[0]))
+    solved_rotation = sp.Matrix.vstack(image_unit.T, null_unit.T)
+    audit.check("solver-derived rows are normalized", matrix_is_zero(solved_rotation * solved_rotation.T - sp.eye(2)), str(solved_rotation))
+    solved_diagonal = sp.simplify(solved_rotation * solved_m0 * solved_rotation.T)
+    audit.check("solver-derived rotation is diagonal", is_zero(solved_diagonal[0, 1]) and is_zero(solved_diagonal[1, 0]), str(solved_diagonal))
+    audit.check("solver-derived null eigenvalue", is_zero(solved_diagonal[1, 1]))
+    audit.check("solver-derived nonzero eigenvalue equals trace", is_zero(solved_diagonal[0, 0] - sp.trace(solved_m0)))
+    neutral_variables = sp.Matrix([a.w3, a.b])
+    solved_coordinates = solved_rotation * neutral_variables
+    reconstruction = solved_coordinates[0] ** 2 * solved_diagonal[0, 0] / 2
+    original_neutral_q = (neutral_variables.T * solved_m0 * neutral_variables)[0] / 2
+    audit.check("solved eigenspaces independently reconstruct neutral Q", is_zero(reconstruction - original_neutral_q))
+
+    banner("Independent annihilator solve")
+    action_columns = sp.Matrix.hstack(a.t3 * a.h0, a.y * a.h0)
+    solved_annihilator = action_columns.nullspace()
+    audit.check("generic coefficient solve has nullity one", len(solved_annihilator) == 1, str(solved_annihilator))
+    basis = solved_annihilator[0]
+    audit.check("solved annihilator acts as zero", matrix_is_zero(action_columns * basis))
+    audit.check("no second annihilator direction", action_columns.rank() == 1)
+
+
+def hostile_residuals(a: Algebra) -> list[tuple[str, Residual]]:
+    """Return propagated residuals for concrete installed mutations."""
+
+    g, gy, v = a.g, a.gy, a.v
+    w1, w2, w3, b = a.w1, a.w2, a.w3, a.b
+    operator_base = g * (w1 * a.t1 + w2 * a.t2 + w3 * a.t3)
+
+    wrong_y = -sp.eye(2) / 2
+    wrong_y_l = -sp.I * (operator_base + gy * b * wrong_y) * a.h0
+    wrong_y_q = hermitian_norm_squared(wrong_y_l)
+
+    wrong_h0 = sp.Matrix([v / sp.sqrt(2), 0])
+    wrong_carrier_l = -sp.I * (operator_base + gy * b * a.y) * wrong_h0
+    wrong_carrier_q = hermitian_norm_squared(wrong_carrier_l)
+
+    missing_cross_q = v**2 / 8 * (
+        g**2 * (w1**2 + w2**2 + w3**2) + gy**2 * b**2
+    )
+    wrong_charged_q = a.q + g**2 * v**2 * (w1**2 + w2**2) / 8
+
+    total = sp.sqrt(g**2 + gy**2)
+    c, s = g / total, gy / total
     mz2 = (g**2 + gy**2) * v**2 / 4
+    wrong_rotation = sp.Matrix([[c, s], [-s, c]])
+    swapped_rotation = sp.Matrix([[s, c], [c, -s]])
+    expected_diagonal = sp.diag(mz2, 0)
 
-    audit.check("neutral matrix determinant vanishes", is_zero(mass.det()))
-    audit.check("neutral matrix trace gives M_Z^2", is_zero(sp.trace(mass) - mz2))
-    audit.check("photon eigenvector has zero eigenvalue", matrix_is_zero(mass * photon_vec))
-    audit.check("Z eigenvector has M_Z^2 eigenvalue", matrix_is_zero(mass * z_vec - mz2 * z_vec))
-    audit.check("photon and Z eigenvectors are orthogonal", is_zero((photon_vec.T * z_vec)[0]))
+    rank_two_matrix = a.neutral_matrix + v**2 / 4 * sp.Matrix([[0, 0], [0, 1]])
+    wrong_annihilator = (a.t3 - a.y) * a.h0
 
-    rot = sp.Matrix([[g / gtot, -gy / gtot], [gy / gtot, g / gtot]])
-    diag = sp.simplify(rot * mass * rot.T)
-    audit.check("Weinberg rotation diagonalizes neutral mass matrix", matrix_is_zero(diag - sp.diag(mz2, 0)))
-
-    cos2 = g**2 / (g**2 + gy**2)
-    rho_tree = sp.simplify(mw2 / (mz2 * cos2))
-    audit.check("rho_tree = 1", is_zero(rho_tree - 1))
-
-
-def audit_electric_coupling(audit: Audit) -> None:
-    banner("Electric coupling and normalization dictionary")
-    g, gy, g1 = sp.symbols("g g_Y g1_GUT", positive=True, real=True)
-    gtot = sp.sqrt(g**2 + gy**2)
-    sinw = gy / gtot
-    cosw = g / gtot
-    e = g * gy / gtot
-
-    audit.check("sin^2 + cos^2 = 1", is_zero(sinw**2 + cosw**2 - 1))
-    audit.check("e = g sin(theta_W)", is_zero(e - g * sinw))
-    audit.check("e = g_Y cos(theta_W)", is_zero(e - gy * cosw))
-    audit.check("inverse electric coupling sum rule", is_zero(1 / e**2 - (1 / g**2 + 1 / gy**2)))
-
-    gy_from_gut = sp.sqrt(sp.Rational(3, 5)) * g1
-    audit.check("GUT-normalized dictionary g_Y^2 = (3/5) g1^2", is_zero(gy_from_gut**2 - sp.Rational(3, 5) * g1**2))
+    return [
+        ("wrong Y sign changes the full quadratic form", sp.expand(wrong_y_q - a.q)),
+        ("upper carrier vector changes the full quadratic form", sp.expand(wrong_carrier_q - a.q)),
+        ("missing neutral cross term changes Q", sp.expand(missing_cross_q - a.q)),
+        ("wrong charged normalization changes Q", sp.expand(wrong_charged_q - a.q)),
+        ("incorrect-sign rotation fails diagonalization", sp.simplify(wrong_rotation * a.neutral_matrix * wrong_rotation.T - expected_diagonal)),
+        ("swapped rotation fails the claimed eigenvalue order", sp.simplify(swapped_rotation * a.neutral_matrix * swapped_rotation.T - expected_diagonal)),
+        ("rank-two perturbation destroys zero determinant", sp.factor(rank_two_matrix.det())),
+        ("T3 minus Y fails to annihilate h0", sp.simplify(wrong_annihilator)),
+    ]
 
 
-def audit_scalar_hessian(audit: Audit) -> None:
-    banner("Scalar Hessian companion")
-    h, mu, lam, v = sp.symbols("h mu lambda v", positive=True, real=True)
-    hdagh = (v + h) ** 2 / 2
-    potential = -mu**2 * hdagh + lam * hdagh**2
-    stationary = sp.diff(potential, h).subs(h, 0)
-    audit.check("stationary condition is mu^2 = lambda v^2", is_zero(stationary.subs(mu**2, lam * v**2)))
+def audit_hostile(audit: Audit, a: Algebra) -> None:
+    banner("Hostile mutation rejection")
+    for label, residual in hostile_residuals(a):
+        audit.check(label, not residual_is_zero(residual), render_residual(residual))
 
-    expanded = sp.expand(potential.subs(mu**2, lam * v**2))
-    m_h2 = sp.diff(expanded, h, 2).subs(h, 0)
-    cubic = sp.expand(expanded).coeff(h, 3)
-    quartic = sp.expand(expanded).coeff(h, 4)
-    audit.check("radial Higgs Hessian m_h^2 = 2 lambda v^2", is_zero(m_h2 - 2 * lam * v**2))
-    audit.check("scalar cubic coefficient is lambda v", is_zero(cubic - lam * v))
-    audit.check("scalar quartic coefficient is lambda/4", is_zero(quartic - lam / 4))
+
+def audit_intentional_failure(audit: Audit, a: Algebra) -> None:
+    banner("Promoted hostile claims (expected failures)")
+    for label, residual in hostile_residuals(a):
+        audit.check(
+            f"promoted claim: {label}",
+            residual_is_zero(residual),
+            f"nonzero residual={render_residual(residual)}",
+        )
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Exact verifier for the defined C2 quadratic-form theorem."
+    )
+    parser.add_argument(
+        "--mode",
+        choices=("normal", "independent", "hostile", "intentional-failure"),
+        default="normal",
+        help="evidence route (default: normal)",
+    )
+    return parser.parse_args()
 
 
 def main() -> int:
+    args = parse_args()
     audit = Audit()
-    print("=== EW Higgs gauge-mass diagonalization verifier ===")
-    audit_note_surface(audit)
-    audit_pauli_and_vacuum(audit)
-    audit_mass_matrices(audit)
-    audit_electric_coupling(audit)
-    audit_scalar_hessian(audit)
+    algebra = construct()
+    routes: dict[str, Callable[[Audit, Algebra], None]] = {
+        "normal": audit_normal,
+        "independent": audit_independent,
+        "hostile": audit_hostile,
+        "intentional-failure": audit_intentional_failure,
+    }
+
+    print("=== Defined C2 quadratic-form diagonalization verifier ===")
+    print(f"MODE: {args.mode}")
+    if args.mode != "intentional-failure":
+        audit_source_firewall(audit)
+    routes[args.mode](audit, algebra)
 
     print()
     print(f"TOTAL: PASS={audit.passed}, FAIL={audit.failed}")
     if audit.failed:
         print("VERDICT: FAIL")
         return 1
-    print("VERDICT: BOUNDED_SUPPORT")
+    print("VERDICT: FORMAL_THEOREM_VERIFIED")
     return 0
 
 

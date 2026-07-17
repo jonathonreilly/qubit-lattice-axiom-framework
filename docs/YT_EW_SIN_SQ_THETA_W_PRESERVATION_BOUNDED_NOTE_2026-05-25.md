@@ -28,9 +28,13 @@ This bounded proof-walk uses only:
   `g_Y`, `g_1`, and `g_2`, cited from the parent theorem);
 - cancellation of a common non-zero multiplicative factor in the
   numerator and denominator of a ratio;
-- the standard SM definition `sin^2(theta_W) = g_Y^2 / (g_Y^2 + g_2^2)`
-  from the retained
+- the formal scalar ratio `s^2 = g_Y^2 / (g_Y^2 + g_2^2)` from the
+  defined finite-dimensional algebra in
   [`ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md).
+
+The cited theorem does not identify this ratio with a physical weak angle or
+select electroweak couplings. Such an identification is an additional premise
+of this note's SM interpretation and is not supplied by the algebraic ratio.
 
 This note isolates the `kappa_EW`-independent multiplicative-universality
 consequence of
@@ -50,7 +54,7 @@ claim.
 | Step | Load-bearing input | New axiom? |
 |---|---|---|
 | State the parent correction: `g_a -> K_EW(kappa_EW) * g_a` for `a` in `{Y, 1, 2}` | parent theorem `yt_ew_color_projection_theorem` (audited_conditional) — multiplicative universality across EW couplings | no |
-| State the SM Weinberg-angle ratio `sin^2(theta_W) = g_Y^2 / (g_Y^2 + g_2^2)` | retained `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | no |
+| State the formal ratio `s^2 = g_Y^2 / (g_Y^2 + g_2^2)` | defined `C^2` quadratic-form theorem; physical weak-angle interpretation remains separate | no |
 | Substitute the parent correction into the ratio | `sin^2(theta_W)' = (K_EW g_Y)^2 / ((K_EW g_Y)^2 + (K_EW g_2)^2)` | no |
 | Factor `K_EW^2` from numerator and denominator | exact-rational algebra; `K_EW(kappa_EW) = 1 / (8/9 + kappa_EW/9)` is non-zero for all real `kappa_EW` not equal to `-8`, in particular for `kappa_EW = 0` (the named matching condition) | no |
 | Cancel the common `K_EW^2` factor | `sin^2(theta_W)' = g_Y^2 / (g_Y^2 + g_2^2) = sin^2(theta_W)` | no |
@@ -90,7 +94,8 @@ single value.
   `audited_conditional`; the `K_EW` algebraic form is exact rational
   arithmetic at `N_c = 3`).
 - [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  for the SM definition `sin^2(theta_W) = g_Y^2 / (g_Y^2 + g_2^2)`.
+  for the formal identity `s^2 = g_Y^2 / (g_Y^2 + g_2^2)` only. It does not
+  supply the physical SM or weak-angle identification used conditionally here.
 - [`EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
   for the open gate that `kappa_EW = 0` is not derived in the parent
   theorem; this note does not close that gate.

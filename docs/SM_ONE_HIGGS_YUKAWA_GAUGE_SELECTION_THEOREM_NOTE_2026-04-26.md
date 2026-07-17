@@ -355,9 +355,11 @@ outside this renormalizable one-Higgs Dirac classification.
 
 - `STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md` supplies
   the hypercharge table used here.
-- `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md` supplies
-  the one-Higgs-doublet EW bookkeeping and neutral vacuum convention, using
-  the equivalent SM-normalized hypercharge convention `Y_EW=Y/2`.
+- The one-Higgs-doublet carrier and its hypercharge are explicit hypotheses of
+  this classification. The historical
+  `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md` path now
+  proves only defined `C^2` matrix algebra and supplies no physical carrier,
+  hypercharge assignment, or vacuum convention.
 - `YUKAWA_COLOR_PROJECTION_THEOREM.md` concerns a downstream normalization
   factor for the top-Yukawa lane; this note only proves the gauge-allowed
   operator skeleton.
@@ -370,4 +372,3 @@ outside this renormalizable one-Higgs Dirac classification.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [standard_model_hypercharge_uniqueness_theorem_note_2026-04-24](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
-- [ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)

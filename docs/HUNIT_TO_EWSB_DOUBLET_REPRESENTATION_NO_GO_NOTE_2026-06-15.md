@@ -50,10 +50,10 @@ surface:
 - [YT_WARD_IDENTITY_DERIVATION_THEOREM.md](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
   for the scalar-singlet
   `H_unit` structure on `Q_L`.
-- [EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  for the
-  one-doublet electroweak bookkeeping surface: `H = (H^+, H^0)^T`,
-  `Y_H = 1/2`, `Q = T_3 + Y`, and the neutral ray.
+- a supplied comparator `V_2=C^2` carrying the fundamental `SU(2)` action.
+  Its physical EWSB-doublet interpretation is an explicit hypothesis here,
+  not a consequence of the similarly named defined-matrix theorem at
+  `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`.
 - [YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md](YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md)
   for the support claim that a signed-record source aligns with the neutral
   ray once the one-doublet surface is supplied.

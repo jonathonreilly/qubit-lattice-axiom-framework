@@ -1,4 +1,4 @@
-# The C3 Corner Probe-Coupling Triple: Presentation-Swap Action, Derivable-Class K-Stability, and Sector-Selective Spectral Pairing (Bounded Theorem)
+# The C_3[111] Corner Probe-Coupling Triple: Presentation-Swap Action, Entrywise-Conjugation Stability, and Sector-Selective Spectral Pairing (Bounded Theorem)
 
 **Date:** 2026-07-16
 **Type:** bounded_theorem
@@ -16,21 +16,21 @@ pipeline after independent review.
 The protocol-class note
 [`KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md`](KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md)
 proved, under its declared reading R2, that derivable initial-state data is
-K-real, by the L-K2 two-presentation comparison: the supplied presentation
+K-real, by its two-presentation comparison (source alias L-K2): the supplied presentation
 and its entrywise-conjugate presentation satisfy the same named clauses, so a
 K-odd datum cannot be fixed by presentation-symmetric named clauses and
 remains, under the live Qualification of
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md), a named
 conditional or open dependency.
 
-This note moves the same mechanism, under the declared extension reading
-R4c stated below, from the initial-state slot to the C3 corner
+This note moves the same mechanism, under the declared coupling-slot
+extension (R4c) stated below, from the initial-state slot to the `C_3[111]` corner
 probe-coupling triple `(a,b,c)`
 of `W(a,b,c) = a*I + b*C + c*C^2`, and proves the exact spectral-pairing
-structure on the mechanism's fixed locus. An earlier draft of this step was
-rejected for grouping `lam1*lam2` into `|lam1|^2` without exhibiting a
-license; T3 below supplies the exact license (K-fixed singlet channel versus
-K-2-orbit doublet channel pair) together with a negative control point where
+structure on the mechanism's fixed locus. Grouping `lam1*lam2` into
+`|lam1|^2` requires an explicit license; the spectral-pairing claim T3 below
+supplies it through a K-fixed singlet channel and a two-element K-orbit
+doublet channel pair, together with a negative control point where
 the grouping is unavailable. Every claim is finite exact linear algebra plus
 verbatim-quoted consumed readings; nothing here derives `r`, `delta`, an
 occupancy law, or a stage selection.
@@ -43,14 +43,14 @@ The corner surface is the one used by the mechanism note:
 > permutation `C`, `C^3=I_3`. [...] In the canonical joint basis, `K` is
 > entrywise conjugation.
 
-- **R1c — supplied corner carrier.** The real cyclic `C` with `C^3 = I_3`
+- **Supplied corner carrier (R1c).** The real cyclic `C` with `C^3 = I_3`
   and `C^T = C^2`, the character projectors
   `P_chi = (I + conj(chi)*C + conj(chi)^2*C^2)/3` for
   `chi in {1, w, conj(w)}`, `w = -1/2 + (sqrt(3)/2)*i`, and entrywise
   conjugation `K` in the canonical basis. **FLAG — supplied surface:** this
   is the mechanism note's declared corner surface, not a derived physical
   carrier.
-- **R2c — consumed derivability reading.** The mechanism note's declared
+- **Consumed derivability reading (R2c).** The mechanism note's declared
   reading R2 is consumed verbatim:
 
   > **R2 — K-real derivable initial data.** Derivable initial data is K-real.
@@ -58,7 +58,7 @@ The corner surface is the one used by the mechanism note:
   > L-K2 satisfy the same named clauses and exchange every K-odd seed. The
   > memo's live Qualification leaves the unfixed choice conditional/open.
 
-  Its L-K2 engine, also consumed verbatim:
+  Its two-presentation engine (source alias L-K2), also consumed verbatim:
 
   > Hold that record data and every other named clause fixed, and compare the
   > supplied Pauli/corner presentation with its entrywise-conjugate
@@ -77,14 +77,14 @@ The corner surface is the one used by the mechanism note:
   > A choice not fixed by the supplied structure remains a named conditional
   > or open dependency.
 
-  **FLAG — consumed grade:** the mechanism note is unaudited at writing; T2
-  below inherits that premise weight and cannot exceed it.
-- **R3c — probe status of the coupling triple.** `W(a,b,c)` is the corner
+  **FLAG — consumed dependency:** T2 below inherits the mechanism row's
+  source-side premise weight; its current status is pipeline-derived.
+- **Probe status of the coupling triple (R3c).** `W(a,b,c)` is the corner
   probe coupling of the staggered realization surface in
   [`KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md`](KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md).
   **FLAG — probe, not derived form:** no Yukawa identification, physical
   action, or measure is derived for it, there or here.
-- **R4c — declared extension reading (coupling slot).** This note applies
+- **Declared extension reading at the coupling slot (R4c).** This note applies
   the quoted L-K2 comparison at the coupling slot: hold the record data and
   every other named clause fixed, compare the supplied presentation with its
   entrywise-conjugate presentation, and track the induced action on the
@@ -92,12 +92,12 @@ The corner surface is the one used by the mechanism note:
   below means coupling data fixable by presentation-symmetric named clauses
   under this comparison. **FLAG — declared reading:** the axiom memo names
   no coupling; this is a reading of the same mechanism at a different slot,
-  not a memo clause and not an audited extension.
+  not a memo clause.
 
 ### Involution conventions (pinned)
 
-Two distinct involutions act on the triple space; conflating them is the
-known near-miss, so both are pinned:
+Two distinct involutions act on the triple space, so both are pinned
+separately:
 
 | involution | action on `(a,b,c)` | action on `W` | fixed locus |
 |---|---|---|---|
@@ -112,7 +112,7 @@ no-go-gated subclaim below turns on keeping `K` and the adjoint distinct.
 
 ## Claims
 
-### T1 — presentation-swap action on the coupling triple (exact)
+### Presentation-swap action on the coupling triple (T1, exact)
 
 `K(W(a,b,c)) = W(conj(a),conj(b),conj(c))`. The carrier `C` is
 presentation-shared (`K(C) = C`, real), and the integer-cycle basis
@@ -122,20 +122,22 @@ The swap is the content: the real integer-cycle basis is presentation-fixed,
 the character-projector basis is presentation-swapped, and the coupling
 triple transforms entrywise. (Runner V1, V2.)
 
-### T2 — derivable-class K-stability dichotomy on the coupling triple (bounded)
+### Entrywise-conjugation stability dichotomy on the coupling triple (T2, bounded)
 
 Under the consumed reading R2c and the declared extension reading R4c:
 
 1. A derivable singleton triple is entrywise-real: the fixed locus of the
    presentation swap on the full triple space is exactly the entrywise-real
    triples (runner V1, V5).
-2. On the Hermitian section (`a` real, `b = R*exp(i*delta)`,
+2. On the Hermitian section (`a` real, `R > 0`, `b = R*exp(i*delta)`,
    `c = conj(b)`), the swap restricts to `delta -> -delta`. Derivable
    classes there are unions of unordered pairs `{delta, -delta}`; by the
-   quoted L-K2 sentence, no presentation-symmetric named clause selects one
-   sign. The charged-lepton registered point `delta = 2/9` is not K-fixed,
-   so it is not a derivable singleton under this reading — consistent with
-   the standing position that `delta` is registered, not derived. The
+   quoted two-presentation sentence, no presentation-symmetric named clause
+   selects one sign. The support-only trial charged-lepton comparator
+   `delta = 2/9` (in bare radians) is not K-fixed when `R > 0`, so it is not
+   a derivable singleton under this reading. This comparison is
+   non-load-bearing: no framework premise supplies that value or its
+   carrier/radian bridge. The
    spectrum obeys the permutation identity
    `lam_k(-delta) = lam_{(3-k) mod 3}(delta)` with the `k = 0` channel fixed
    (runner V4).
@@ -145,13 +147,13 @@ Under the consumed reading R2c and the declared extension reading R4c:
 The dichotomy carries exactly the premise weight of R2c plus R4c: exact
 algebra on the swap action, conditional force on "derivable".
 
-### T3 — real-triple spectral pairing licenses sector-selective modulus grouping (exact)
+### Real-triple spectral pairing licenses sector-selective modulus grouping (T3, exact)
 
 On entrywise-real triples, with `lam_k = a + b*w^k + c*w^(2k)`:
 
 1. `lam_0 = a + b + c` is real, and its channel `P_1` is K-fixed;
 2. `lam_2 = conj(lam_1)`, and the channels `{P_w, P_conj(w)}` form one
-   K-2-orbit;
+   two-element K orbit;
 3. therefore `det3 = lam_0 * |lam_1|^2` exactly, with a real singlet factor.
 
 The channel-eigenvalue association is computed, not assumed:
@@ -175,21 +177,20 @@ carries the pairing off the entrywise-real locus with a non-real grouped
 value `det3 = lam_0 * |lam_1|^2 = 1 + 3i` (runner V3); at the negative
 control `(a,b,c) = (1,i,0)` the pairing itself fails, with exact values
 `lam_2 - conj(lam_1) = sqrt(3) - i` and `det3 = 1 - i` (runner V3). The
-sector-selective reading — a real K-fixed singlet factor times a K-2-orbit
+sector-selective reading — a real K-fixed singlet factor times a two-element K-orbit
 modulus factor — therefore holds on, and is cut out by, the entrywise-real
-triples through computed residuals rather than stipulation. This answers
-the licensing objection that rejected the earlier grouping step.
+triples through computed residuals rather than stipulation.
 
-### T4 — r-neutrality positive control and the underived graining binary
+### Power-ratio neutrality and the underived graining binary (T4)
 
 1. **Positive control (exact).** On entrywise-real triples
    `|det3|^2 = lam_0^2 * |lam_1|^4`: passing from `det3` to `|det3|^2`
    doubles the singlet exponent and the doublet exponent together, so every
    doublet-to-singlet power ratio is unchanged. The pairing statement is
-   r-neutral (runner V3), consistent with the retained power-split row
-   [`ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md`](ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md)
-   and the retained realification row
-   [`ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md`](ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md).
+   r-neutral (runner V3), consistent with the contextual power-split support
+   row `ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md`
+   and realification support row
+   `ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md`.
 2. **Underived graining binary.** What remains underived is the slot-count
    graining: one occupancy slot per K-orbit versus one slot per channel
    atom. The selector note
@@ -239,7 +240,7 @@ the licensing objection that rejected the earlier grouping step.
   On the holomorphic surface (`b,c` independent) the same cubic is harmonic
   in `(Re b, Im b)`; the `-12a` Laplacian appears on the realified section
   coordinates.
-- **Section-tie endpoint arithmetic** (runner V6): the per-outcome-cell law
+- **Section-tie endpoint arithmetic** (runner V6), for `epsilon > 0`: the per-outcome-cell law
   `3a^2 = epsilon`, `6|b|^2 = epsilon` gives `r = |b|^2/a^2 = 1/2` and
   `Q = (1+2r)/3 = 2/3`; the per-real-mode law `3a^2 = epsilon`,
   `6|b|^2 = 2*epsilon` gives `r = 1` and `Q = 1`. Both are conditional on
@@ -247,7 +248,7 @@ the licensing objection that rejected the earlier grouping step.
 - **Brannen spectrum** (runner V4): on the Hermitian section,
   `lam_k = a + 2R*cos(delta + 2*pi*k/3)`.
 
-The W1b sibling's supplied occupancy context is carried for wording only:
+The occupancy-context sibling (source alias W1b) is carried for wording only:
 
 > The charged-lepton 2-sector occupancy surface is the K/CPT-orbit partition
 > `{singlet sector, doublet orbit}` with occupancy distribution `(p_s,p_d)`,
@@ -274,9 +275,11 @@ authority here.
    its grouped determinant `det3 = 1 + 3i` is not real: the pairing alone
    does not supply the real singlet factor (runner V3).
 
-## No-Go Discipline Gate (narrow subclaim only)
+## No-Go Discipline Gate
 
-This gate covers the note's one negative claim and nothing else:
+This gate covers the note's bounded negative content: the narrow
+section-nonentailment subclaim, the compound R2c-to-R4c premise boundary on
+T2, and the stage/granularity nonselection boundary in T4.
 
 **Subclaim.** The two-presentation derivability mechanism alone does not
 entail the Hermitian-section restriction (weight-stage K-reality
@@ -297,15 +300,32 @@ at real `b = c` (runner V1, V5).
 | adjoint-conflation route: identify `K` with the adjoint | ATTEMPTED | distinct involutions; generic disagreement witness `(0,1,2)`; agreement exactly at `b = c` (V1) |
 | determinant route: derive the section from delta-evenness of `det3` | ATTEMPTED | evenness is a class-function statement on unordered pairs and holds without selecting any locus (V4) |
 
+The distinct routes toward selecting a graining horn or stage were also
+tested:
+
+| Route toward a graining or stage selection | Marker | Result and check |
+|---|---|---|
+| determinant-first-power route | ATTEMPTED | `det3` supplies one singlet factor and one paired doublet factor, but a factorization is not a slot-count rule (V3) |
+| modulus-square power-doubling route | ATTEMPTED | `|det3|^2` doubles both exponents and leaves their ratio unchanged, so it does not select a graining horn (V3) |
+| spectral-pairing route | ATTEMPTED | the K-orbit grouping licenses a modulus square but does not choose one slot per orbit rather than one per channel atom (V2, V3) |
+| convention-free projector route | ATTEMPTED | the unordered three-atom PVM is convention-stable and keeps the per-channel alternative alive (T4) |
+| endpoint-arithmetic route | ATTEMPTED | `r = 1/2` and `r = 1` follow only after distinct positive-energy laws are supplied; the arithmetic does not choose either law (V6) |
+
 No prior negative row is used as evidence for the subclaim.
 
 ### N2 — wall independence
 
-The subclaim names one wall: the stage-selection residual (when K-reality is
-imposed on the coupling) is not supplied by the presentation-swap mechanism.
-This wall is independent of the equipartition-granularity wall, per the
-section-tie residual-independence sentence quoted in T4. Neither wall is
-retired here.
+R2c and R4c are not advertised as independent walls: R4c applies the R2c
+mechanism downstream at a different slot, so T2 has one explicit compound
+dependency hierarchy. The negative walls are checked separately:
+
+| Wall pair | Does the first retire the second? | Does the second retire the first? | Disposition |
+|---|---|---|---|
+| stage selection / equipartition granularity | no: fixing when K-reality acts supplies no energy law | no: supplying an energy law does not fix when K-reality acts | independent, as quoted in T4 |
+| compound R2c-to-R4c reading / stage selection | no: the swap computes an entrywise fixed locus, not the adjoint-fixed section | no: a stage clause would be extra input, not a derivation of the presentation comparison | distinct premise boundary and residual |
+| compound R2c-to-R4c reading / equipartition granularity | no: validating the presentation hierarchy supplies no slot-count law | no: supplying a slot-count law does not validate the presentation hierarchy | distinct premise boundary and residual |
+
+Neither negative wall is retired here.
 
 ### N3 — hidden-wall scan
 
@@ -315,7 +335,7 @@ framework provides", "bridge context", "background", "naturally",
 
 | Hit | Classification |
 |---|---|
-| "registered" (delta = 2/9, registered data) | framework record-ontology vocabulary; the standing registered-not-derived position, not a proof step |
+| "registered" (quoted source wording about registered data) | framework record-ontology vocabulary inside a verbatim quotation, not a proof step |
 | "canonical" (canonical joint basis) | quoted convention line from the mechanism note, pinned in R1c |
 | scan terms appearing in this checklist sentence | audit metadata, not proof steps |
 
@@ -324,24 +344,29 @@ walls. No hidden action, measure, weighting, or carrier selector is used.
 
 ### N4 — residual matching
 
-| Prior negative witness | Witness residual | Current residual | Match/disposition |
-|---|---|---|---|
-| section-tie residual localization (unaudited at writing) | stage-selection residual left undecided by the determinant algebra | stage-selection residual left undecided by the two-presentation mechanism | same residual; this subclaim adds one more route that does not decide it; no witness citation dropped |
+No prior negative witness is used as evidence. The section-tie source supplies
+the names and independence statement for the two residuals; it is context
+for residual localization, not a matching witness for the present fixed-locus
+countermodel. The current residuals are computed directly in V1 and V5.
 
 ### N5 — rhetoric and resolution audit
 
-The subclaim is existential-witness algebra on exact finite triples: a fixed
-locus computed, two witness points, and intersection arithmetic. It says
-"does not entail", not "cannot be entailed by any future theorem". No
-universal negative is asserted, and no enumeration of future theorems is
-claimed.
+The section subclaim is existential-witness algebra on exact finite triples:
+a fixed locus computed, two witness points, and intersection arithmetic. It
+says "does not entail", not "cannot be entailed by any future theorem". The
+graining boundary tests the determinant factor, character channel, and
+two-element K orbit on the finite `C_3[111]` triple. It makes no per-site,
+per-block, lattice-wide, or physical-action nonselection claim. No universal
+negative is asserted, and no enumeration of future theorems is claimed.
 
 ### N6 — partial-closure paths
 
 | Candidate path | Current status | What it would address |
 |---|---|---|
+| direct coupling-slot theorem or parent-mechanism audit | open | could validate or retire the compound R2c-to-R4c premise hierarchy |
 | framework-native theorem for the full first-order action (section-tie route, quoted below) | open | could decide the K-reality stage; a separate graining law would still be needed for a value |
 | Osterwalder-Schrader-type theorem (section-tie residual sentence, quoted in T4) | open | could close the stage residual while leaving the graining residual open |
+| time-homogeneous two-slice OS reconstruction under explicit H/O/R clauses | partially closed contextual route | restricts the weight to two real branches under those added clauses; dropping time-homogeneity leaves the exact alternating `W^dagger,W` escape |
 | the obligation's closure criterion (quoted below) | open target | an action-and-measure derivation distinguishing count-once from count-twice without inserting the desired value |
 
 The section-tie note's own preserved route, verbatim:
@@ -351,19 +376,23 @@ The section-tie note's own preserved route, verbatim:
 > derivation of the weighting/equipartition law would still be needed to
 > select the value.
 
-The obligation's closure criterion, verbatim, from
-[`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md):
+The obligation's closure criterion, verbatim, from the context-only handle
+`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`:
 
 > A closing theorem must derive the physical matter action and its measure,
 > then distinguish the count-once `det_C`/holomorphic realization from the
 > count-twice `|det_C|^2`/realified realization without inserting the
 > desired charged-lepton value or readout dictionary.
 
-These paths are preserved; no new axiom or primitive is proposed.
+The partial OS closure is recorded by the context-only handle
+`RECORDS_ONLY_OS_RECONSTRUCTION_UNTIED_FIRST_ORDER_MEASURE_BOUNDED_THEOREM_NOTE_2026-07-11.md`.
+It does not defeat the mechanism-alone subclaim because its H/O/R clauses are
+additional conditions and its alternating escape remains live. These paths
+are preserved; no new axiom or primitive is proposed.
 
 ### N7 — steelman
 
-Strongest objection: a physical transfer or coupling structure plausibly
+Strongest section objection: a physical transfer or coupling structure plausibly
 carries an adjoint (Hermiticity) requirement, the Hermitian section is
 exactly the adjoint-fixed locus, and so the mechanism together with
 Hermiticity would land on the section. Reply: granted — but Hermiticity of
@@ -375,91 +404,91 @@ bounds the subclaim, and the action-level path that would supply the adjoint
 structure is preserved in N6. The runner keeps the two involutions separate
 and exhibits the generic disagreement witness (V1).
 
+Strongest graining objection: an independently derived physical action and
+measure, or a record-content theorem, could select count-once-per-orbit or
+per-channel slots. Granted — that would defeat a universal nonselection
+claim. It does not defeat the present algebra-alone boundary because none of
+those selectors is supplied by the determinant factorization, character
+projectors, or two-presentation comparison. N6 preserves those closure paths.
+
 ### N8 — cross-cycle echo
 
 | Similar mechanism | Was its wall retired? | Applicability here |
 |---|---|---|
-| L-K2 at the initial-state slot (mechanism note, unaudited) | no; the K-odd seed remains conditional/open there | same comparison at a different slot; direct |
-| record-outcome orbit-occupancy non-supply packet (unaudited) | no; its occupancy-supply wall is outside this scope | packet-structure exemplar only; different wall |
-| staggered Fact-3 localization (unaudited) | no; the count-twice structure enters via the section restriction there | consistent with the third-locus separation; not a witness dependency |
+| two-presentation comparison at the initial-state slot (source alias L-K2) | no; the K-odd seed remains conditional/open there | same comparison at a different slot; direct |
+| record-outcome orbit-occupancy non-supply packet | no; its occupancy-supply wall is outside this scope | packet-structure exemplar only; different wall |
+| staggered Fact-3 localization | no; the count-twice structure enters via the section restriction there | consistent with the third-locus separation; not a witness dependency |
+| time-homogeneous two-slice OS reconstruction | partly, under explicit H/O/R clauses; the alternating `W^dagger,W` escape survives without time-homogeneity | a partial closure path, not a counterexample to a mechanism-alone claim |
 
-**Gate result: PASS.** N1-N8 support the narrow non-entailment subclaim with
-the stage-selection residual kept open and both section-tie residuals
-preserved.
+**Gate result: PASS.** N1-N8 support the narrow non-entailment subclaim, the
+compound premise boundary, and the stage/granularity nonselection boundary,
+with the two section-tie residuals kept distinct and the known OS partial
+closure recorded.
 
 ## Non-claims
 
 1. No derivation of `r`. `r` remains a dial with settings `0`, `1/2`, and
    `1`; no setting is preferred, and no equipartition or graining law is
    selected.
-2. No derivation of `delta = 2/9`. The point enters as registered data; T2
-   records that it is not a derivable singleton under the declared reading,
-   which is consistency, not derivation.
+2. No derivation of `delta = 2/9`. It enters only as a support-only trial
+   charged-lepton comparator in bare radians; T2 records that, for `R > 0`,
+   it is not a derivable singleton under the declared reading. The value,
+   carrier identification, and rational-to-radian bridge remain unsupplied.
 3. No stage selection: neither weight-stage nor outcome-stage K-reality is
    derived; the third locus of T4 does not decide between them.
-4. No derivation of ORBIT-INDEXING, occupancy weights, probability, measure,
+4. No derivation of an orbit-indexed occupancy rule (source alias
+   ORBIT-INDEXING), occupancy weights, probability, measure,
    record-formation rule, or a physical charged-lepton carrier
    identification.
 5. No discharge, narrowing, or reframing of
    `ac_orbit_occupancy_statistical_grain_derivation_obligation`: the grain
    obligation remains the open target, quoted only for its closure
    criterion.
-6. No Tier-A, registry, primitive, or audit-status change; grades are set
-   only by the independent audit lane.
+6. No historical premise-class, registry, primitive, or audit-status change;
+   current grades are set only by the independent audit lane.
 7. The probe coupling remains a declared probe; no Yukawa form, physical
    matter action, or its measure is derived.
 
-## Citation grades at writing
-
-Grades below are point-in-time at authoring; the live ledger on
-`origin/main` is authoritative, and nothing in this note upgrades any
-unaudited row.
-
-| Row (ledger id) | Grade at writing | Role here |
-|---|---|---|
-| `kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12` | unaudited | mechanism owner; R2c consumed reading |
-| `koide_first_order_section_tie_vs_outcome_label_residual_localization_bounded_theorem_note_2026-07-11` | unaudited | stage fork definitions and residual independence |
-| `koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11` | unaudited | probe coupling surface and Wirtinger control |
-| `koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12` | unaudited | unordered-PVM counterexample for the graining binary |
-| `acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11` | unaudited | W1b supplied occupancy context (wording only) |
-| `kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04` | unaudited | ORBIT-INDEXING supplied-context handle (context only) |
-| `acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04` | unaudited | N-gate packet-structure exemplar (context only) |
-| `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | retained | power-split support for the T4 positive control |
-| `acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12` | retained | realification power identity support for the T4 positive control |
-| `ac_orbit_occupancy_statistical_grain_derivation_obligation` | audited_renaming | open target under test, not a premise |
-
-## Honest auditor read
+## Dependency roles and status boundary
 
 The unconditional content is small and exact: T1 and T3 are finite linear
 algebra on a supplied 3-by-3 surface, checked symbolically, with explicit
-negative-control and pairing-locus witnesses. T2 is the note's reach, and it is conditional twice over:
-it consumes R2 from a mechanism note that is unaudited at writing, and it
-extends that reading to the coupling slot by R4c, a declared reading the
-axiom memo does not name. An auditor should grade T2 no higher than the
-mechanism row plus the declared extension. T4's positive control is exact
-but its physical force is bounded by the retained power-split rows it
-matches; T4's third-locus observation separates loci without narrowing any
-residual. The one negative subclaim is deliberately minimal — a
-non-entailment with explicit witnesses — and the N7 steelman names the exact
-added clause (coupling Hermiticity) that would change its landscape. The
-supplied-context quotes carry wording, not premise authority. Nothing here
-moves `r`, `delta`, the stage fork, or the graining binary.
+negative-control and pairing-locus witnesses. T2 is the note's reach: it
+consumes R2 from the mechanism note and extends that reading to the coupling
+slot by R4c, a declared reading the axiom memo does not name. T2 therefore
+carries that compound premise weight. T4's positive control is exact but its
+physical force remains bounded; its third-locus observation separates loci
+without narrowing either residual. The negative subclaim is a bounded
+non-entailment with explicit witnesses, and the N7 steelman names the exact
+added clause (coupling Hermiticity) that would change its landscape. Current
+audit and effective statuses are pipeline-derived; this source contains no
+status snapshots. Nothing here moves `r`, `delta`, the stage fork, or the
+graining binary.
 
 ## Dependencies
 
 | dependency | consumed content |
 |---|---|
 | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | live Qualification clause; named-content burden; no admission class |
-| [`KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md`](KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md) | L-K2 two-presentation mechanism and declared reading R2 (quoted) |
+| [`KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md`](KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md) | two-presentation mechanism (source alias L-K2) and declared reading R2 (quoted) |
 | [`KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md`](KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md) | stage definitions, residual independence, preserved route (quoted) |
 | [`KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md`](KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md) | probe coupling; Fact-3 Wirtinger control (quoted) |
 | [`KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md`](KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md) | unordered-PVM counterexample sentence (quoted) |
-| [`ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md`](ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md) | supplied occupancy-context declaration (wording only) |
-| [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md) | ORBIT-INDEXING supplied-context handle (context only) |
-| [`ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md) | N1-N8 packet structure mirrored (context only) |
-| [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md) | closure criterion (quoted); open target, not a premise |
-| [`ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md`](ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md) | retained power-split identity matched by the T4 control |
-| [`ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md`](ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md) | retained realification power identity matched by the T4 control |
+
+### Non-citation context handles
+
+These backticked handles carry wording, corroboration, an open target, or
+cross-cycle context only. They are deliberately not Markdown links and do
+not seed citation-graph dependencies:
+
+- `ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md` — W1b supplied occupancy wording.
+- `KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md` — supplied orbit-indexed occupancy context (source alias ORBIT-INDEXING).
+- `ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md` — packet-structure exemplar.
+- `AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md` — open target and quoted closure criterion.
+- `ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md` — corroborative power-split identity.
+- `ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md` — corroborative realification identity.
+- `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` — support-only trial bare-radian comparator and its open bridge.
+- `RECORDS_ONLY_OS_RECONSTRUCTION_UNTIED_FIRST_ORDER_MEASURE_BOUNDED_THEOREM_NOTE_2026-07-11.md` — partial OS closure with explicit extra clauses and an alternating escape.
 
 ## Verification
 
@@ -468,7 +497,7 @@ python3 scripts/kcpt_coupling_triple_two_presentation_derivable_class_spectral_p
 ```
 
 ```text
-TOTAL: PASS=145 FAIL=0
+TOTAL: PASS=152 FAIL=0
 ```
 
 **No check passes by literal stipulation.**

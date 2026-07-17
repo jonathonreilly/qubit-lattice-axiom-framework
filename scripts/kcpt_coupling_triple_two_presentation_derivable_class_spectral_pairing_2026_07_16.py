@@ -12,9 +12,9 @@ Blocks:
   V3 real-triple spectral pairing, exact pairing-gap closed form and
      equal-imaginary-parts locus, sector-selective modulus grouping,
      negative control with exact values, r-neutral positive control
-  V4 Hermitian section: Brannen spectrum, delta -> -delta action,
-     permutation identity, delta-evenness, fixed set delta = 0 mod pi,
-     registered-point non-fixedness
+  V4 Hermitian section for R > 0: Brannen spectrum, delta -> -delta action,
+     permutation identity, delta-evenness, exact fixed set delta = 0 mod pi,
+     support-only trial-comparator non-fixedness
   V5 locus separation witnesses, intersection arithmetic, Wirtinger and
      Laplacian controls, holomorphic-surface harmonicity
   V6 section-tie endpoint arithmetic (both conditional laws, neither derived)
@@ -291,9 +291,12 @@ check(
 check(
     "V3.7",
     "gap real/imag parts separate: Re = sqrt(3)(Im b - Im c), "
-    "Im = 2 Im a - Im b - Im c; vanishing pins Im a = Im b = Im c exactly",
+    "Im = 2 Im a - Im b - Im c; linear solving pins Im a = Im b = Im c exactly",
     is_zero(sp.re(gap_full) - sp.sqrt(3) * (bi_ - ci_))
-    and is_zero(sp.im(gap_full) - (2 * ai_ - bi_ - ci_)),
+    and is_zero(sp.im(gap_full) - (2 * ai_ - bi_ - ci_))
+    and sp.linsolve(
+        [sp.re(gap_full), sp.im(gap_full)], (ai_, bi_, ci_)
+    ) == sp.FiniteSet((ci_, ci_, ci_)),
 )
 eq_locus = {bi_: ai_, ci_: ai_}
 check(
@@ -310,7 +313,11 @@ check(
     "Im lam0 = Im a + Im b + Im c = 3*Im a on the pairing locus: singlet "
     "reality cuts the pairing locus exactly to the entrywise-real triples",
     is_zero(sp.im(lams[0]) - (ai_ + bi_ + ci_))
-    and is_zero(sp.im(lams[0]).subs(eq_locus) - 3 * ai_),
+    and is_zero(sp.im(lams[0]).subs(eq_locus) - 3 * ai_)
+    and sp.linsolve(
+        [sp.re(gap_full), sp.im(gap_full), sp.im(lams[0])],
+        (ai_, bi_, ci_),
+    ) == sp.FiniteSet((0, 0, 0)),
 )
 wa_, wb_, wc2_ = sp.I, 1 + sp.I, sp.I
 wlam = [sp.expand_complex(wa_ + wb_ * w ** k + wc2_ * w ** (2 * k)) for k in range(3)]
@@ -326,7 +333,8 @@ check(
 )
 
 # --------------------------------- V4: Hermitian section and delta action
-aH, R_, d_ = sp.symbols("aH R delta", real=True)
+aH, d_ = sp.symbols("aH delta", real=True)
+R_ = sp.symbols("R", positive=True)
 bH = R_ * sp.exp(sp.I * d_)
 cH = R_ * sp.exp(-sp.I * d_)
 lamsH = [sp.expand(aH + bH * w ** k + cH * w ** (2 * k)) for k in range(3)]
@@ -340,6 +348,7 @@ for k in range(3):
     )
 
 WH = Wf(aH, bH, cH)
+section_k_residual = sp.expand_complex(WH.conjugate() - WH)
 check(
     "V4.4",
     "K on the Hermitian section acts as delta -> -delta",
@@ -361,18 +370,21 @@ WH_p = WH.subs(d_, d0)
 WH_m = WH.subs(d_, -d0)
 check(
     "V4.10",
-    "registered point delta=2/9: K maps W(2/9) to W(-2/9), a different "
-    "matrix; the point is not K-fixed and the unordered pair {2/9, -2/9} "
-    "is the K-orbit",
+    "support-only trial comparator delta=2/9 at R>0: K maps W(2/9) to "
+    "W(-2/9), a different matrix; the unordered pair {2/9, -2/9} is "
+    "the K-orbit",
     mat_zero(WH_p.conjugate() - WH_m) and not mat_zero(WH_p - WH_m),
+)
+fixed_fundamental = sp.solveset(
+    sp.sin(d_), d_, domain=sp.Interval.Ropen(0, 2 * sp.pi)
 )
 check(
     "V4.11",
-    "section fixed set is delta = 0 mod pi: W is K-fixed at delta in "
-    "{0, pi}, not at the registered point",
-    mat_zero(WH.subs(d_, 0).conjugate() - WH.subs(d_, 0))
-    and mat_zero(WH.subs(d_, sp.pi).conjugate() - WH.subs(d_, sp.pi))
-    and not mat_zero(WH_p.conjugate() - WH_p),
+    "for R>0, exact residual -2i R sin(delta)(C-C^2) pins the section "
+    "fixed set to delta = 0 mod pi; the trial comparator is not fixed",
+    mat_zero(section_k_residual + 2 * sp.I * R_ * sp.sin(d_) * (C - C2))
+    and fixed_fundamental == sp.FiniteSet(0, sp.pi)
+    and not mat_zero(section_k_residual.subs(d_, d0)),
 )
 
 # ------------------------- V5: locus separation, Wirtinger, harmonicity
@@ -394,8 +406,10 @@ bS = br_ + sp.I * bi_
 gap = sp.expand_complex(sp.conjugate(bS) - bS)
 check(
     "V5.3",
-    "intersection (c = conj(b) and entrywise-real) yields real b = c",
-    is_zero(gap.subs(bi_, 0)) and sp.simplify(gap.subs(bi_, 1)) != 0,
+    "exact intersection residual conj(b)-b = -2i Im(b) pins the "
+    "Hermitian/entrywise-real intersection to real b = c",
+    is_zero(gap + 2 * sp.I * bi_)
+    and sp.linsolve([sp.re(gap), sp.im(gap)], (bi_,)) == sp.FiniteSet((0,)),
 )
 ars, bs, bbs, cs = sp.symbols("ars bs bbs cs")
 F = ars ** 3 + bs ** 3 + bbs ** 3 - 3 * ars * bs * bbs
@@ -618,10 +632,10 @@ SECTIONS = [
     "## Supplied objects and consumed readings",
     "### Involution conventions (pinned)",
     "## Claims",
-    "### T1 —",
-    "### T2 —",
-    "### T3 —",
-    "### T4 —",
+    "### Presentation-swap action on the coupling triple (T1, exact)",
+    "### Entrywise-conjugation stability dichotomy on the coupling triple (T2, bounded)",
+    "### Real-triple spectral pairing licenses sector-selective modulus grouping (T3, exact)",
+    "### Power-ratio neutrality and the underived graining binary (T4)",
     "## Gated controls",
     "## Negative controls",
     "## No-Go Discipline Gate",
@@ -634,9 +648,9 @@ SECTIONS = [
     "### N7 —",
     "### N8 —",
     "## Non-claims",
-    "## Citation grades at writing",
-    "## Honest auditor read",
+    "## Dependency roles and status boundary",
     "## Dependencies",
+    "### Non-citation context handles",
     "## Verification",
     "**No check passes by literal stipulation.**",
     "**Status authority:** independent audit lane only.",
@@ -666,6 +680,21 @@ for phrase in FORBIDDEN:
     V9_N += 1
     check(f"V9.{V9_N}", f"forbidden phrase absent: '{phrase}'", phrase not in RAW_LOW)
 
+STATUS_SNAPSHOTS = [
+    "unaudited at writing",
+    "citation grades at writing",
+    "audited_renaming",
+    "honest auditor read",
+    "registered point",
+]
+for phrase in STATUS_SNAPSHOTS:
+    V9_N += 1
+    check(
+        f"V9.{V9_N}",
+        f"source-authored status/value snapshot absent: '{phrase}'",
+        phrase not in RAW_LOW,
+    )
+
 V9_N += 1
 check(
     f"V9.{V9_N}",
@@ -679,16 +708,28 @@ DEPS = [
     "KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
     "KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md",
     "KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md",
+]
+for dep in DEPS:
+    V9_N += 1
+    check(f"V9.{V9_N}", f"markdown dependency link present: {dep}", f"]({dep})" in RAW)
+
+CONTEXT_HANDLES = [
     "ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md",
     "KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
     "ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
     "AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md",
     "ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md",
     "ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md",
+    "LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md",
+    "RECORDS_ONLY_OS_RECONSTRUCTION_UNTIED_FIRST_ORDER_MEASURE_BOUNDED_THEOREM_NOTE_2026-07-11.md",
 ]
-for dep in DEPS:
+for handle in CONTEXT_HANDLES:
     V9_N += 1
-    check(f"V9.{V9_N}", f"markdown dependency link present: {dep}", f"]({dep})" in RAW)
+    check(
+        f"V9.{V9_N}",
+        f"non-citation context handle is backticked and unlinked: {handle}",
+        f"`{handle}`" in RAW and f"]({handle})" not in RAW,
+    )
 
 # ------------------------------------------------------------------ summary
 print(f"PATH note={NOTE}")
@@ -696,10 +737,11 @@ print(f"PATH runner={RUNNER}")
 print(f"PATH cache={CACHE}")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print(
-    "FLAGS: R1c supplied corner surface; R2c consumed unaudited reading; "
-    "R4c declared extension reading (coupling slot); T2 conditional on "
-    "R2c+R4c; V6 endpoints conditional on their granularity laws; r remains "
-    "a dial (0, 1/2, 1); delta=2/9 registered, not derived"
+    "FLAGS: R1c supplied corner surface; R2c consumed mechanism reading; "
+    "R4c declared coupling-slot extension; T2 conditional on the compound "
+    "R2c-to-R4c hierarchy; V6 assumes epsilon>0 and both endpoints remain "
+    "conditional on their granularity laws; r remains a dial (0, 1/2, 1); "
+    "delta=2/9 is a support-only trial bare-radian comparator, not derived"
 )
 if FAILURES:
     print("FAILED CHECKS: " + ", ".join(FAILURES))

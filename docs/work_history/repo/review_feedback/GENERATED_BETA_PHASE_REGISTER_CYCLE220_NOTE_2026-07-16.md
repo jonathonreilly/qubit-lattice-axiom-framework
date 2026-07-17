@@ -78,10 +78,11 @@ The one fixed local phase-register law succeeds conditionally.
   mixing or switching laws.  The mass operator supplies the exchange charge
   in each sector.
 - A register-controlled contact coin acts on the equal-direction contact
-  sector.  Binding consumes the mass operator through the common coin rather
-  than consulting a selected beta number.  This test preserves norm and
-  contact-sector support; the dynamical binding theorem remains inherited
-  from the Cycle-210 construction rather than being re-proved here.
+  sector without consulting a selected beta number.  This test preserves norm
+  and contact-sector support.  The Cycle-221 ablations sharpen its meaning:
+  **equal-direction contact support does not show that mass causes binding**.
+  The kinematic sector remains coincident after every mass-dependent contact
+  datum is deleted; deleting the complete contact replacement releases it.
 - Spectator records do not duplicate mass or source charge.
 
 Thus beta is no longer necessarily a law knob: it can be a conserved quantum
@@ -146,6 +147,16 @@ prior work of Bisio, D'Ariano, Mosco, Perinotti, and Tosini:
 <https://arxiv.org/abs/1804.08508>
 
 The Thirring-QCA is not the phase-register spectrum mechanism used here.
+
+Apadula, Bisio, D'Ariano, and Perinotti already introduced a Dirac quantum
+walk containing all masses as an extra degree of freedom:
+
+<https://arxiv.org/abs/1806.03940>
+
+Consequently, turning mass from a walk parameter into an internal degree of
+freedom is prior in broad concept.  The bounded Cycle-220 contribution is the
+specific finite nine-state Cayley realization inside the supplied
+proper-cubic Cycle-219 coin family; global novelty is not established.
 
 This work remains on the draft parking branch and changes no foundation,
 axiom, primitive, registry, policy, queue, or audit surface.

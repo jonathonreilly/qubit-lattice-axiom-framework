@@ -5,8 +5,8 @@ Given one fixed odd-dimensional onsite unitary S, define the Hermitian Cayley
 mass operator M=3 i (S-I)(S+I)^-1 and one common direction/register coin.
 Each eigenstate S|beta>=e^{i beta}|beta> then carries the Cycle-219 coin and
 mass -3 tan(beta/2), while beta=0 is the field coin.  Verify one-law sector
-coexistence, covariance, representation invariance, binding, and exchange
-charge without a per-species lookup.
+coexistence, covariance, representation invariance, contact-sector support,
+and exchange charge without a per-species lookup.
 
 The register S, its dimension, positive-sector interpretation, and physical
 block encoding remain supplied.  No observed mass spectrum is claimed.
@@ -111,12 +111,13 @@ def note_contract() -> None:
         "massive object sectors",
         "no per-species lookup",
         "representation invariant",
-        "binding consumes the mass operator",
+        "equal-direction contact support does not show that mass causes binding",
         "register selection remains supplied",
         "not an observed mass spectrum",
         "positive-mass sector",
         "no axiom conclusion",
         "thirring-qca",
+        "apadula",
         "draft parking branch",
     )
     missing = tuple(phrase for phrase in required if phrase not in text)
@@ -282,7 +283,7 @@ def propagation_and_coexistence_controls(
         pair[:, direction, direction] = label_state / np.sqrt(6)
     moved = apply_contact_coin(pair, coin)
     check(
-        "register-controlled contact binding consumes the mass coin without beta lookup",
+        "register-controlled contact coin preserves equal-direction support without beta lookup",
         abs(np.linalg.norm(moved) - 1) < 3e-12
         and np.linalg.norm(
             moved

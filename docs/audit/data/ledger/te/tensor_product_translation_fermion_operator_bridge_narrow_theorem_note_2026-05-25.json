@@ -1,44 +1,68 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-17T19:47:34.769279+00:00",
+  "audit_invocation_history": [
+    "f3b4b1c8002141ad81de820c22c4986b"
+  ],
+  "audit_invocation_id": "f3b4b1c8002141ad81de820c22c4986b",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 18.766,
+    "runner_hash": "7317595b4122c5af3b202ab824925731336962b0d4d8cdbfc1ebad1c76bb4c99",
+    "transitive_descendants": 1230
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-loop-recovery-12h-20260717-6aa17d097e1e4f649828d6583fcb00b6-tensor_product_translati-001",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "On the stipulated tensor product, T_a is an orthonormal-basis permutation; conjugation moves a local factor from x to x+a, and reindexing the finite sum proves charge conservation. Cross-site CAR is neither used nor established.",
   "claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-  "claim_scope": null,
-  "claim_type": "positive_theorem",
+  "claim_scope": "On a finite periodic tensor product H_Lambda = tensor_x C^2_x with stipulated per-site Pauli ladder operators and tensor-permutation translations, T_a is unitary, obeys the translation group law, covariantly translates the ladder operators, and commutes with Q_total.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-17T19:47:34.769279+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "minimal_axioms",
   "deps": [
     "minimal_axioms"
   ],
   "direct_in_degree": 17,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained_pending_chain",
+  "effective_status_reason": "decoration_waiting_on:minimal_axioms",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "retained_pending_chain",
   "load_bearing_score": 18.766,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Writing the post-a_x state as a tensor with contents c_y, the rule T_a maps c_y to c_{y-a}, moving the sole sigma-minus action from x to x+a and proving T_a a_x T_a^dagger = a_{x+a}.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "e3f4ce0a0b208757225d718d12be839c1f2fbf3e67e072db64935025da37fd0a",
   "note_path": "docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-check the classification only if a downstream claim uses these commuting per-site Pauli operators as cross-site CAR fermions, which this note explicitly excludes.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -804,14 +828,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 131,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 131
   },
   "runner_path": "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py",
   "title": "Tensor-Product Translation / Fermion Operator Bridge Narrow Theorem",
   "transitive_descendants": 1230,
-  "verdict_rationale": null
+  "verdict_rationale": "The general proof correctly derives T1-T4 from the supplied operator definitions and periodic factor permutation. The runner genuinely constructs the matrices and reports 131 exact passes, but these are class-(A) identity checks rather than class-(C) first-principles computations because T_a, a_x, and the tensor-product representation are stipulated inputs. With one upstream framework premise and standard tensor-product algebra, the result is an exact algebraic bridge/decoration, not an independent physical fermion-construction theorem."
 }

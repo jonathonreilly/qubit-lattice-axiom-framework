@@ -2550,7 +2550,7 @@
         },
         {
           "claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-          "effective_status": "unaudited"
+          "effective_status": "retained_pending_chain"
         },
         {
           "claim_id": "tensor_support_center_excess_law_note",
@@ -2935,6 +2935,6 @@
       "uncertified_count": 669
     }
   ],
-  "repo_head": "935f25c61abeb61dfcc219903b64570908b04e7f",
+  "repo_head": "a32cdc2777d39bc6ac3e07fff019b678ec4b4285",
   "schema": "lane_certification_v2"
 }

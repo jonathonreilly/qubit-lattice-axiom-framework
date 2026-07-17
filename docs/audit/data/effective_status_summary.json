@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 2066,
-    "decoration": 20,
+    "decoration": 21,
     "meta": 360,
     "no_go": 441,
     "open_gate": 202,
-    "positive_theorem": 678
+    "positive_theorem": 677
   },
   "cycle_examples": [
     [
@@ -95,13 +95,14 @@
     "open_gate": 2,
     "retained": 76,
     "retained_bounded": 304,
-    "retained_pending_chain": 3,
-    "unaudited": 2953
+    "retained_pending_chain": 4,
+    "unaudited": 2952
   },
-  "retained_pending_chain_count": 3,
+  "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "cl3_taste_generation_theorem",
-    "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+    "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
   ]
 }

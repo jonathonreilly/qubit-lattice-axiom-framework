@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py
-runner_sha256: 347ac2f8c56c4c27a280e3d0e7bc8aa5875c80603e07e334de531717aeb5714a
+runner_sha256: 29a91620fab4659d9af691fb0ff9c74c2ac18af86ee245076d2e89b97227fd97
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05

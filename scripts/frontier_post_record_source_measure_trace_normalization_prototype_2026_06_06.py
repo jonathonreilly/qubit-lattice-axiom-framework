@@ -604,19 +604,6 @@ def independent_checks() -> None:
     )
 
 
-def scope_authorizes(conclusion: str) -> bool:
-    capabilities = frozenset(
-        {
-            "exact_finite_normalization",
-            "finite_rn_density",
-            "finite_expectation_identity",
-            "finite_density_cocycle",
-            "label_permutation_equivariance",
-        }
-    )
-    return conclusion in capabilities
-
-
 def hostile_mutation_acceptance(name: str) -> bool:
     """Return whether a false or malformed mutation incorrectly passes."""
     if name == "empty-carrier":
@@ -714,7 +701,12 @@ def hostile_mutation_acceptance(name: str) -> bool:
         mutated = tuple((label, first[label] + second[label]) for label in first)
         return equal_by_label(mutated, rn_density(source, reference))
     if name == "physical-selection-inference":
-        return scope_authorizes("physical_reference_selected")
+        weights = (("a", Fraction(1)),)
+        operation = lambda: normalize_exact(  # type: ignore[call-arg]
+            weights,
+            physical_reference="selected",
+        )
+        return not expect_raises(TypeError, operation)
     raise KeyError(f"unknown hostile fixture: {name}")
 
 

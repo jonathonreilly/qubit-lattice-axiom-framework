@@ -188,13 +188,14 @@ def shadow_report_lines() -> list:
     if not lane_shadow.get("prior_state_available"):
         lines.append(
             "NOTE: no prior shadow state was available (first pass, or state "
-            "file absent) — churn below treats the whole lane as new and "
-            "removals cannot be detected.")
+            "file absent) — added/removed churn is empty by definition this "
+            "pass and removals cannot be detected until state exists.")
         lines.append("")
 
     added = lane_shadow.get("added_since_prior", [])
     removed = lane_shadow.get("removed_since_prior", [])
-    manifest_pending = lane_shadow.get("manifest_pending", [])
+    pending_adds = lane_shadow.get("pending_adds", [])
+    pending_removes = lane_shadow.get("pending_removes", [])
     unmanifested = lane_shadow.get("unmanifested_candidates", [])
     absent = lane_shadow.get("admitted_absent_from_lane_candidates", [])
 
@@ -224,7 +225,8 @@ def shadow_report_lines() -> list:
                 ("Publication-lane size (shadow, admitted only)",
                  lane_shadow.get("lane_size", 0)),
                 ("Manifest state", lane_shadow.get("manifest_state", "?")),
-                ("Manifest pending entries", len(manifest_pending)),
+                ("Manifest pending additions", len(pending_adds)),
+                ("Manifest pending removals", len(pending_removes)),
                 ("Unmanifested candidates (need pending entries)",
                  len(unmanifested)),
                 ("Admitted ids absent from lane candidates", len(absent)),
@@ -247,9 +249,15 @@ def shadow_report_lines() -> list:
         for cid in removed:
             lines.append(f"- removed: `{cid}`")
         lines.append("")
-    if manifest_pending:
-        lines.append("Manifest pending admissions (objection window open):")
-        for p in manifest_pending:
+    if pending_adds:
+        lines.append("Manifest pending ADDITIONS (objection window open):")
+        for p in pending_adds:
+            lines.append(f"- `{p['claim_id']}` (first report {p['first_report_date']})")
+        lines.append("")
+    if pending_removes:
+        lines.append("Manifest pending REMOVALS (objection window open; row "
+                     "stays laned until the removal is review-landed):")
+        for p in pending_removes:
             lines.append(f"- `{p['claim_id']}` (first report {p['first_report_date']})")
         lines.append("")
     if unmanifested:
@@ -274,13 +282,15 @@ def shadow_report_lines() -> list:
         lines.append(f"- {i + 1}. sim {sim} / actual {act}{marker}")
     if advanced:
         lines.append("")
-        lines.append("Lane rows advanced by the simulated interleave (positions gained):")
-        for cid, moved in advanced[:10]:
+        lines.append("Lane rows advanced by the simulated interleave "
+                     "(positions gained; complete list):")
+        for cid, moved in advanced:
             lines.append(f"- `{cid}`: +{moved}")
     if deferred:
         lines.append("")
-        lines.append("Non-lane rows deferred by the simulated interleave (positions lost):")
-        for cid, moved in deferred[:10]:
+        lines.append("Non-lane rows deferred by the simulated interleave "
+                     "(positions lost; complete list):")
+        for cid, moved in deferred:
             lines.append(f"- `{cid}`: -{moved}")
     lines.append("")
     lines.append(

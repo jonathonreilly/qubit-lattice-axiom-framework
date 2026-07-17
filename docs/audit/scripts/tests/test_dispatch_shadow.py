@@ -30,24 +30,33 @@ def _row(status="audited_conditional", snapshot=None, previous=None):
     return row
 
 
-FULL_SNAPSHOT = {
+V1_SNAPSHOT = {
+    "schema": "blocker_fingerprint_v1",
     "dep_effective_status": {"dep_a": "unaudited"},
     "dep_claim_type": {"dep_a": "no_go"},
     "dep_claim_scope": {"dep_a": "s"},
     "dep_axiom_premise_note_hash": {"dep_a": "h1"},
+    "helper_runner_hashes": {},
+    "runner_cache_state": {},
+    "artifact_classifier_state": {},
+    "policy_versions": {},
+    "premise_registry_epoch": 1,
+}
+LEGACY_SNAPSHOT = {  # no schema marker: legacy, always dispatch-open
+    "dep_effective_status": {"dep_a": "unaudited"},
 }
 DEP_UNCHANGED = {"dep_a": {"effective_status": "unaudited", "claim_type": "no_go",
                            "claim_scope": "s", "note_hash": "h1"}}
 
 
 class LiveWouldParkTest(unittest.TestCase):
-    def test_parks_when_no_recorded_blocker_moved(self):
+    def test_v1_complete_parks_when_nothing_moved(self):
         parked, reason = caq._live_conditional_would_park(
-            _row(snapshot=FULL_SNAPSHOT), dict(DEP_UNCHANGED))
+            _row(snapshot=dict(V1_SNAPSHOT)), dict(DEP_UNCHANGED))
         self.assertTrue(parked)
         self.assertEqual(reason, "no_recorded_blocker_movement")
 
-    def test_unparks_on_each_channel(self):
+    def test_v1_unparks_on_each_dependency_channel(self):
         for field, changed in (
             ("effective_status", "retained"),
             ("claim_type", "bounded_theorem"),
@@ -57,23 +66,42 @@ class LiveWouldParkTest(unittest.TestCase):
             rows = {"dep_a": dict(DEP_UNCHANGED["dep_a"])}
             rows["dep_a"][field] = changed
             parked, reason = caq._live_conditional_would_park(
-                _row(snapshot=FULL_SNAPSHOT), rows)
+                _row(snapshot=dict(V1_SNAPSHOT)), rows)
             self.assertFalse(parked, field)
             self.assertIn("changed", reason)
 
-    def test_fail_open_without_snapshot_dep_map(self):
+    def test_v1_unparks_on_helper_hash_change(self):
+        snap = dict(V1_SNAPSHOT)
+        snap["helper_runner_hashes"] = {"scripts/h.py": "old"}
+        row = _row(snapshot=snap)
+        row["helper_runner_hashes_current"] = {"scripts/h.py": "new"}
+        parked, reason = caq._live_conditional_would_park(row, dict(DEP_UNCHANGED))
+        self.assertFalse(parked)
+        self.assertIn("helper_runner_hash_changed", reason)
+
+    def test_legacy_unversioned_always_dispatch_open(self):
+        parked, reason = caq._live_conditional_would_park(
+            _row(snapshot=dict(LEGACY_SNAPSHOT)), dict(DEP_UNCHANGED))
+        self.assertFalse(parked)
+        self.assertEqual(reason, "fail_open_legacy_unversioned")
+
+    def test_absent_snapshot_dispatch_open(self):
         parked, reason = caq._live_conditional_would_park(_row(), {})
         self.assertFalse(parked)
-        self.assertEqual(reason, "fail_open_no_snapshot_dep_map")
+        self.assertEqual(reason, "fail_open_no_snapshot")
+
+    def test_v1_incomplete_fails_loudly(self):
+        snap = dict(V1_SNAPSHOT)
+        del snap["policy_versions"]
+        with self.assertRaises(caq.FingerprintV1Invalid):
+            caq._live_conditional_would_park(_row(snapshot=snap), {})
 
     def test_live_projection_ignores_archived_decoy(self):
-        # An archived verdict with CHANGED deps must not override the live
-        # top-level snapshot (lifecycle projection: live rows read live).
         decoy = [{"audit_status": "audited_conditional",
                   "audit_state_snapshot": {
                       "dep_effective_status": {"dep_a": "retained"}}}]
         parked, reason = caq._live_conditional_would_park(
-            _row(snapshot=FULL_SNAPSHOT, previous=decoy), dict(DEP_UNCHANGED))
+            _row(snapshot=dict(V1_SNAPSHOT), previous=decoy), dict(DEP_UNCHANGED))
         self.assertTrue(parked)
         self.assertEqual(reason, "no_recorded_blocker_movement")
 
@@ -121,15 +149,36 @@ class PublicationLaneTest(unittest.TestCase):
                          ["cited_row", "break_target"])
         self.assertTrue(lane["lane"][1]["is_primary_cycle_break_target"])
 
-    def test_manifest_pending_entries_reported_not_laned(self):
+    def test_manifest_pending_add_reported_not_laned(self):
         lane = cds.build_lane(
             self._queue(), self._gap(),
             self._manifest(["cited_row"],
                            pending=[{"claim_id": "pending_row",
-                                     "first_report_date": "2026-07-16"}]))
+                                     "first_report_date": "2026-07-16",
+                                     "action": "add"}]))
         self.assertEqual([e["claim_id"] for e in lane["lane"]], ["cited_row"])
-        self.assertEqual(lane["manifest_pending"][0]["claim_id"], "pending_row")
+        self.assertEqual(lane["pending_adds"][0]["claim_id"], "pending_row")
         self.assertNotIn("pending_row", lane["unmanifested_candidates"])
+
+    def test_manifest_pending_removal_stays_laned_but_named(self):
+        lane = cds.build_lane(
+            self._queue(), self._gap(),
+            self._manifest(["cited_row"],
+                           pending=[{"claim_id": "cited_row",
+                                     "first_report_date": "2026-07-16",
+                                     "action": "remove"}]))
+        row = next(e for e in lane["lane"] if e["claim_id"] == "cited_row")
+        self.assertTrue(row["pending_removal"])
+        self.assertEqual(lane["pending_removes"][0]["claim_id"], "cited_row")
+
+    def test_pending_entry_without_action_is_malformed(self):
+        lane = cds.build_lane(
+            self._queue(), self._gap(),
+            self._manifest(["cited_row"],
+                           pending=[{"claim_id": "x",
+                                     "first_report_date": "2026-07-16"}]))
+        self.assertEqual(lane["manifest_state"], "manifest_pending_entry_malformed")
+        self.assertEqual(lane["lane_size"], 0)
 
     def test_missing_manifest_yields_empty_lane_with_state(self):
         lane = cds.build_lane(self._queue(), self._gap(), None)
@@ -141,7 +190,7 @@ class PublicationLaneTest(unittest.TestCase):
             self._queue(), self._gap(),
             {"schema_version": 1, "frozen_commit": "abc",
              "admitted": ["cited_row"],
-             "pending": [{"claim_id": "x"}]})  # missing first_report_date
+             "pending": [{"claim_id": "x", "action": "add"}]})  # no date
         self.assertEqual(lane["lane_size"], 0)
         self.assertEqual(lane["manifest_state"], "manifest_pending_entry_malformed")
 
@@ -180,7 +229,16 @@ class GoldenQueueInvarianceTest(unittest.TestCase):
                                 "load_bearing_score": 0.5,
                                 "note_path": "docs/B.md",
                                 "audit_state_snapshot": {
-                                    "dep_effective_status": {}}},
+                                    "schema": "blocker_fingerprint_v1",
+                                    "dep_effective_status": {},
+                                    "dep_claim_type": {},
+                                    "dep_claim_scope": {},
+                                    "dep_axiom_premise_note_hash": {},
+                                    "helper_runner_hashes": {},
+                                    "runner_cache_state": {},
+                                    "artifact_classifier_state": {},
+                                    "policy_versions": {},
+                                    "premise_registry_epoch": 1}},
                 "plain_high": {"audit_status": "unaudited",
                                "criticality": "high", "deps": [],
                                "transitive_descendants": 2,
@@ -228,7 +286,7 @@ class GoldenQueueInvarianceTest(unittest.TestCase):
             )
             self.assertEqual({g[0] for g in got}, set(rows))
             cond = next(e for e in queue["queue"] if e["claim_id"] == "cond_parked")
-            self.assertIn("would_park", cond)
+            self.assertTrue(cond["would_park"])  # v1-complete + unmoved dep
 
 
 if __name__ == "__main__":

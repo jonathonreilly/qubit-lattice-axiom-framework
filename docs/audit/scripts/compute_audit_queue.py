@@ -154,18 +154,58 @@ def cycle_break_targets(rows: dict[str, dict]) -> list[dict]:
     return targets
 
 
+BLOCKER_FINGERPRINT_V1 = "blocker_fingerprint_v1"
+# The design note's v1 channel baselines. A snapshot carrying the v1 marker
+# must have every one of these keys present (fail LOUDLY otherwise); a
+# snapshot without the marker is legacy and always dispatch-open.
+FINGERPRINT_V1_REQUIRED_KEYS = (
+    "dep_effective_status",
+    "dep_claim_type",
+    "dep_claim_scope",
+    "dep_axiom_premise_note_hash",
+    "helper_runner_hashes",
+    "runner_cache_state",
+    "artifact_classifier_state",
+    "policy_versions",
+    "premise_registry_epoch",
+)
+
+
+class FingerprintV1Invalid(ValueError):
+    """A snapshot marked blocker_fingerprint_v1 is incomplete or malformed.
+    Per the design note's validation matrix this fails LOUDLY (a v1 writer
+    that omits a required baseline is a bug, never a silent fail-open)."""
+
+
 def _live_conditional_would_park(row: dict, rows: dict[str, dict]) -> tuple[bool, str]:
     """Shadow-only would-park CLASSIFICATION for a LIVE audited_conditional /
     non-archived audited_failed row (dispatch-retarget design note,
     2026-07-16); it carries no audit-verdict authority of any kind.
-    Lifecycle projection: live rows carry their verdict-time snapshot at the
-    row's top-level audit_state_snapshot (never previous_audits). Fail-open:
-    no or empty snapshot dependency map -> not parked. Affects no dispatch
-    decision; reporting only."""
+
+    Version matrix (the note's rule, one branch per case):
+    - snapshot absent OR without the blocker_fingerprint_v1 marker: LEGACY —
+      always dispatch-open (would_park False, reason legacy_unversioned);
+      its next verdict stamps a complete v1 snapshot.
+    - snapshot marked v1 but missing any required baseline: raise
+      FingerprintV1Invalid (loud pipeline failure).
+    - snapshot marked v1 and complete: compare every recorded channel
+      against current state; park only when nothing moved.
+
+    Lifecycle projection: live rows read the row's top-level
+    audit_state_snapshot (never previous_audits)."""
     snapshot = row.get("audit_state_snapshot") or {}
+    if not snapshot:
+        return False, "fail_open_no_snapshot"
+    version = snapshot.get("schema")
+    if version != BLOCKER_FINGERPRINT_V1:
+        return False, "fail_open_legacy_unversioned"
+    missing = [k for k in FINGERPRINT_V1_REQUIRED_KEYS if k not in snapshot]
+    if missing:
+        raise FingerprintV1Invalid(
+            f"v1 snapshot missing required baselines {missing} on "
+            f"{row.get('note_path') or row.get('claim_id')}"
+        )
     deps_then = snapshot.get("dep_effective_status") or {}
-    if not deps_then:
-        return False, "fail_open_no_snapshot_dep_map"
     for dep, then_status in deps_then.items():
         now = (rows.get(dep) or {}).get("effective_status", "MISSING")
         if now != then_status:
@@ -179,6 +219,16 @@ def _live_conditional_would_park(row: dict, rows: dict[str, dict]) -> tuple[bool
         for dep, then_value in then_values.items():
             if dep in rows and rows[dep].get(field) != then_value:
                 return False, f"{snap_field}_changed:{dep}"
+    # Channels recorded as opaque v1 baselines: compared by equality against
+    # the row's CURRENT recorded values where the ledger carries them; a
+    # channel the ledger does not carry yet compares as unchanged (the v1
+    # writer and these comparisons mature together in the implementation
+    # phase — this is the SHADOW reading of the same matrix).
+    then_helpers = snapshot.get("helper_runner_hashes") or {}
+    now_helpers = row.get("helper_runner_hashes_current") or {}
+    for path, then_hash in then_helpers.items():
+        if path in now_helpers and now_helpers[path] != then_hash:
+            return False, f"helper_runner_hash_changed:{path}"
     return True, "no_recorded_blocker_movement"
 
 
@@ -252,7 +302,7 @@ def main() -> int:
             1
             for e in pending
             if e.get("would_park") is False
-            and e.get("would_park_reason") == "fail_open_no_snapshot_dep_map"
+            and str(e.get("would_park_reason", "")).startswith("fail_open")
         ),
 
         "by_criticality": {

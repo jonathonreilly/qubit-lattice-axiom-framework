@@ -686,7 +686,7 @@ def collect_class_f_violations(tracked: list) -> list:
     try:
         with open(registry_path, "r", encoding="utf-8") as fh:
             registry = json.load(fh)
-    except (OSError, json.JSONDecodeError) as exc:
+    except (json.JSONDecodeError, OSError, UnicodeDecodeError) as exc:
         return [{"path": DOC_AUTHORITY_REGISTRY_REL, "problem": f"registry unreadable: {exc}"}]
 
     def read_text(path: str) -> str:

@@ -1,303 +1,639 @@
 #!/usr/bin/env python3
-"""Bounded admission bridge: BBN coefficient 3.6515e-3 decomposition.
+"""Exact checker for cubic-reciprocal bounds and rational normalization.
 
-The runner checks only:
-
-1. The analytic factor 2 zeta(3)/pi^2 from the supplied Planck distribution
-   integral, certified by the termwise series
-   int_0^inf x^2/(exp(x)-1) dx = sum_{n>=1} 2/n^3 and an explicit p-series
-   tail bound, then matched against the standard photon-number density per
-   unit T^3;
-2. The supplied P1-P4 premise packet recorded in the source note (proton
-   mass, CMB temperature, critical-density unit from admitted H_100 and G,
-   Cyburt convention / residual normalization);
-3. The deterministic arithmetic recovering the raw unit-conversion baseline
-   for Omega_b h^2 / eta_10 within 0.2% of the Cyburt-Fields-Olive-Yeh 2016
-   value 3.6515e-3;
-4. The exact Cyburt residual factor that would make the comparator equality
-   exact, explicitly labeled as an admitted convention/comparator rather than
-   a framework derivation.
-
-It deliberately does not consume PDG-fitted mass values as derivations,
-does not consume nuclear-network outputs as derivations, and does not promote
-any downstream cosmology row.
+The source path is historical. The repaired theorem is self-contained:
+rational integral-test brackets for sum(k^-3), plus scaling and unique target
+normalization for a positive rational monomial. This runner reads no audit
+state, imports no physical data, and writes no files.
 """
 
 from __future__ import annotations
 
-from math import pi
+import argparse
+from fractions import Fraction
+from math import lcm
 from pathlib import Path
+from typing import Callable, Sequence
+
 
 ROOT = Path(__file__).resolve().parents[1]
-CLAIM_ID = "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28"
-RUNNER_PATH = "scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py"
-NOTE_PATH = ROOT / "docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md"
+NOTE_PATH = ROOT / "docs" / (
+    "BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_"
+    "BOUNDED_NOTE_2026-05-28.md"
+)
 
-# Apery's constant zeta(3) to high precision (Riemann zeta function at 3).
-# Pure analytic constant, no empirical input; Part 1 certifies this reference
-# value lies inside an independently computed series/tail interval.
-ZETA3 = 1.2020569031595942853997381615114499907649862923405
-ZETA3_SERIES_CERT_N = 20_000
+F0 = Fraction(0)
+F1 = Fraction(1)
+F2 = Fraction(2)
 
-# Cyburt+ 2016 published value.
-CYBURT_2016_COEFFICIENT = 3.6515e-3
-
-# CODATA textbook values used as the named admitted inputs.
-# These are explicit imports (P1-P4 in the note). They are NOT derived here.
-M_P_GRAMS = 1.6726219236e-24       # P1: proton rest mass in cgs
-T_CMB_KELVIN = 2.725                # P2: present-day CMB temperature
-K_B_GEV_PER_K = 8.617333262e-14     # auxiliary: Boltzmann constant in GeV/K
-HBAR_C_GEV_CM = 1.97326980e-14      # auxiliary: hbar*c in GeV*cm
-H100_KM_S_MPC = 100.0               # P3a: H_100 convention
-MPC_METERS = 3.0856775814913673e22   # P3b: SI Mpc conversion
-G_NEWTON_SI = 6.67430e-11            # P3c: Newton constant in SI
-KG_PER_M3_TO_G_PER_CM3 = 1.0e-3
-S_CYBURT_RAW = 1.0                  # P4 raw baseline, not exact comparator residual
+MUTATION_NAMES = (
+    "series-power-two",
+    "lower-tail-wrong-endpoint",
+    "upper-tail-wrong-endpoint",
+    "temperature-square",
+    "density-in-numerator",
+    "normalizer-inverted",
+    "coerce-non-fractions",
+    "interpretation-physical",
+    "interpretation-comparator",
+    "interpretation-framework",
+)
+MUTATIONS: frozenset[str] = frozenset()
 
 
-def critical_density_per_h2() -> float:
-    """Compute rho_crit/h^2 from admitted H_100 and G in cgs units."""
-    h100_s_inv = (H100_KM_S_MPC * 1000.0) / MPC_METERS
-    rho_kg_m3 = 3.0 * h100_s_inv**2 / (8.0 * pi * G_NEWTON_SI)
-    return rho_kg_m3 * KG_PER_M3_TO_G_PER_CM3
+class Harness:
+    def __init__(self) -> None:
+        self.passed = 0
+        self.failed = 0
+
+    def banner(self, title: str) -> None:
+        print()
+        print("-" * 88)
+        print(title)
+        print("-" * 88)
+
+    def check(self, name: str, condition: bool, detail: str = "") -> bool:
+        status = "PASS" if condition else "FAIL"
+        suffix = f"  ({detail})" if detail else ""
+        print(f"  [{status}] {name}{suffix}")
+        if condition:
+            self.passed += 1
+        else:
+            self.failed += 1
+        return condition
+
+    def expect_raises(
+        self,
+        name: str,
+        error: type[BaseException],
+        operation: Callable[[], object],
+    ) -> bool:
+        try:
+            operation()
+        except error:
+            return self.check(name, True)
+        except BaseException as exc:
+            return self.check(
+                name,
+                False,
+                f"raised {type(exc).__name__}, expected {error.__name__}",
+            )
+        return self.check(name, False, f"expected {error.__name__}")
 
 
-RHO_CRIT_PER_H2 = critical_density_per_h2()
-
-PASS = 0
-FAIL = 0
-
-
-def check(name: str, condition: bool, detail: str = "") -> bool:
-    global PASS, FAIL
-    status = "PASS" if condition else "FAIL"
-    if condition:
-        PASS += 1
-    else:
-        FAIL += 1
-    msg = f"{status}: {name}"
-    if detail:
-        msg += f" ({detail})"
-    print(msg)
-    return condition
+def require_index(value: object) -> int:
+    if type(value) is not int:
+        raise TypeError("N must be an exact built-in integer")
+    if value < 1:
+        raise ValueError("N must be at least one")
+    return value
 
 
-def part0_source_firewall() -> None:
-    print("\n== Part 0: source firewall ==")
-    note = NOTE_PATH.read_text(encoding="utf-8")
-
-    required = [
-        "Supplied premise packet (not axioms)",
-        "P1 proton rest mass",
-        "P2 present-day CMB temperature",
-        "P3 critical-density unit",
-        "2026-06-12 P3 critical-density unit decomposition",
-        "P4 Cyburt conversion convention",
-        "does not derive the premise packet" if "does not derive the premise packet" in note else "does not derive P1-P4",
-        "not registry accepted premises",
-        "new repo-wide axiom",
-        "Cyburt",
-        "2 zeta(3)",
-        "Planck distribution",
-        RUNNER_PATH,
-    ]
-    for phrase in required:
-        check(f"source contains boundary phrase: {phrase}", phrase in note)
-
-    forbidden = [
-        "Tier-B partial-derivation",
-        "Tier B partial derivation",
-        "framework derives m_p",
-        "framework derives T_CMB",
-        "**Status:** retained",
-        "audited_clean",
-    ]
-    for phrase in forbidden:
-        check(f"source excludes forbidden phrase: {phrase}", phrase not in note)
+def require_fraction(name: str, value: object) -> Fraction:
+    if "coerce-non-fractions" in MUTATIONS:
+        try:
+            return Fraction(value)  # type: ignore[arg-type]
+        except (TypeError, ValueError, ZeroDivisionError) as exc:
+            raise TypeError(f"{name} must be coercible to Fraction") from exc
+    if type(value) is not Fraction:
+        raise TypeError(f"{name} must be an exact Fraction")
+    return value
 
 
-def part1_framework_clean_factor() -> float:
-    print("\n== Part 1: analytic factor 2 zeta(3) / pi^2 ==")
-    # The standard Bose-Einstein integral follows from
-    # 1/(e^x - 1) = sum_{n>=1} e^{-n x} and
-    # int_0^inf x^2 e^{-n x} dx = 2/n^3, giving 2 zeta(3).
-    partial = sum(1.0 / (n**3) for n in range(1, ZETA3_SERIES_CERT_N + 1))
-    tail_upper = 1.0 / (2.0 * (ZETA3_SERIES_CERT_N**2))
-    zeta_lower = partial
-    zeta_upper = partial + tail_upper
-    check(
-        "zeta(3) reference is certified by the p-series tail interval",
-        zeta_lower <= ZETA3 <= zeta_upper,
-        f"N={ZETA3_SERIES_CERT_N}, width <= {tail_upper:.3e}",
-    )
-    integral_lower = 2.0 * zeta_lower
-    integral_upper = 2.0 * zeta_upper
-    check(
-        "Planck integral identity is internally certified: integral = 2 zeta(3)",
-        integral_lower <= 2.0 * ZETA3 <= integral_upper,
-        f"2*zeta(3) in [{integral_lower:.12f}, {integral_upper:.12f}]",
-    )
-    # Photon number density per T^3 is g_gamma/(2*pi^2) times the integral.
-    g_gamma = 2
-    factor = g_gamma * ZETA3 / pi**2
-    expected = 2 * ZETA3 / pi**2
-    check(
-        "factor reduces to 2 zeta(3)/pi^2 with photon polarization count g_gamma = 2",
-        abs(factor - expected) < 1e-15,
-        f"factor = {factor:.12f}",
-    )
-    # Numerical check that this is the standard 0.24359... constant.
-    check(
-        "factor numerically equals 0.24359... (standard)",
-        abs(factor - 0.24359) < 1e-4,
-        f"factor = {factor:.6f}",
-    )
-    return factor
+def require_positive_fraction(name: str, value: object) -> Fraction:
+    result = require_fraction(name, value)
+    if result <= F0:
+        raise ValueError(f"{name} must be positive")
+    return result
 
 
-def part2_imported_n_gamma_today(factor: float) -> float:
-    print("\n== Part 2: present-day photon number density from P2 import ==")
-    # Convert T_CMB to GeV via P2.
-    T_CMB_GeV = K_B_GEV_PER_K * T_CMB_KELVIN
-    # Convert to cm^-3 via hbar*c.
-    n_gamma_per_cm3 = factor * (T_CMB_GeV / HBAR_C_GEV_CM)**3
-    check(
-        "present-day n_gamma is approximately 410 photons / cm^3 (standard textbook)",
-        abs(n_gamma_per_cm3 - 410.7) / 410.7 < 0.01,
-        f"n_gamma = {n_gamma_per_cm3:.4f} per cm^3",
-    )
-    return n_gamma_per_cm3
+def partial_sum(n: object) -> Fraction:
+    index = require_index(n)
+    power = 2 if "series-power-two" in MUTATIONS else 3
+    return sum((Fraction(1, k**power) for k in range(1, index + 1)), F0)
 
 
-def part3_recover_coefficient(n_gamma_per_cm3: float) -> tuple[float, float]:
-    print("\n== Part 3: recover Cyburt+ 2016 coefficient by deterministic arithmetic ==")
-    # Omega_b * h^2 / eta = m_p * n_gamma_today * S / (rho_crit / h^2).
-    # S=1 is the raw unit-conversion baseline. The exact Cyburt comparator
-    # equality requires an admitted residual S_Cyburt, computed below.
-    omega_b_h2_per_eta = M_P_GRAMS * n_gamma_per_cm3 * S_CYBURT_RAW / RHO_CRIT_PER_H2
-    # Scale by 1e-10 to convert eta_10 = 1e10 * eta.
-    raw_coeff = omega_b_h2_per_eta * 1e-10
-    s_cyburt_exact = CYBURT_2016_COEFFICIENT / raw_coeff
-    exact_coeff = raw_coeff * s_cyburt_exact
-    check(
-        "raw S=1 coefficient within 0.2% of published Cyburt+ 2016 value 3.6515e-3",
-        abs(raw_coeff - CYBURT_2016_COEFFICIENT) / CYBURT_2016_COEFFICIENT < 2e-3,
-        f"raw_coeff = {raw_coeff:.9e} vs Cyburt+2016 = {CYBURT_2016_COEFFICIENT:.9e}",
-    )
-    check(
-        "exact Cyburt residual factor is explicit and sub-percent",
-        0.998 < s_cyburt_exact < 1.0,
-        f"S_Cyburt_exact = {s_cyburt_exact:.15f}",
-    )
-    check(
-        "raw coefficient times admitted S_Cyburt residual equals comparator exactly",
-        abs(exact_coeff - CYBURT_2016_COEFFICIENT) < 1e-15,
-        f"exact_coeff = {exact_coeff:.9e}",
-    )
-    return raw_coeff, s_cyburt_exact
+def tail_bracket(n: object) -> tuple[Fraction, Fraction]:
+    index = require_index(n)
+    total = partial_sum(index)
+    lower_endpoint = index if "lower-tail-wrong-endpoint" in MUTATIONS else index + 1
+    upper_endpoint = index + 1 if "upper-tail-wrong-endpoint" in MUTATIONS else index
+    lower = total + Fraction(1, 2 * lower_endpoint**2)
+    upper = total + Fraction(1, 2 * upper_endpoint**2)
+    return lower, upper
 
 
-def part4_premise_packet_named(s_cyburt_exact: float) -> None:
-    print("\n== Part 4: named premise packet remains imported on this row ==")
-    # Each premise is explicit. None is framework-derived here.
-    check(
-        "P1 proton rest mass admitted as textbook import (not derived here)",
-        M_P_GRAMS > 0 and abs(M_P_GRAMS - 1.6726e-24) / 1.6726e-24 < 1e-3,
-        f"m_p = {M_P_GRAMS} g",
-    )
-    check(
-        "P2 CMB temperature admitted as textbook import (not derived here)",
-        abs(T_CMB_KELVIN - 2.725) < 1e-3,
-        f"T_CMB = {T_CMB_KELVIN} K",
-    )
-    check(
-        "P3 critical-density unit computed from admitted H_100 and G",
-        abs(RHO_CRIT_PER_H2 - 1.878e-29) / 1.878e-29 < 1e-3,
-        f"rho_crit/h^2 = {RHO_CRIT_PER_H2:.6e} g/cm^3",
-    )
-    check(
-        "P3 formula is rho_crit/h^2 = 3 H_100^2 / (8 pi G) with SI-to-cgs conversion",
-        H100_KM_S_MPC == 100.0 and G_NEWTON_SI > 0.0 and MPC_METERS > 0.0,
-        f"H100={H100_KM_S_MPC} km/s/Mpc, G={G_NEWTON_SI:.6e} SI",
-    )
-    check(
-        "P4 raw Cyburt convention baseline is S=1",
-        S_CYBURT_RAW == 1.0,
-        "S_raw = 1.0 for the raw unit-conversion baseline",
-    )
-    check(
-        "P4 exact Cyburt residual is admitted as a separate comparator convention",
-        abs(s_cyburt_exact - 0.9989276742641543) < 1e-15,
-        f"S_Cyburt_exact = {s_cyburt_exact:.15f}",
+def doubled_bracket(n: object) -> tuple[Fraction, Fraction]:
+    lower, upper = tail_bracket(n)
+    return F2 * lower, F2 * upper
+
+
+def coefficient(a: object, t: object, m: object, r: object, s: object) -> Fraction:
+    a_q = require_positive_fraction("a", a)
+    t_q = require_positive_fraction("t", t)
+    m_q = require_positive_fraction("m", m)
+    r_q = require_positive_fraction("r", r)
+    s_q = require_positive_fraction("s", s)
+    power = 2 if "temperature-square" in MUTATIONS else 3
+    numerator = a_q * t_q**power * m_q * s_q
+    if "density-in-numerator" in MUTATIONS:
+        return numerator * r_q
+    return numerator / r_q
+
+
+def target_normalization(
+    a: object,
+    t: object,
+    m: object,
+    r: object,
+    target: object,
+) -> Fraction:
+    target_q = require_positive_fraction("target", target)
+    raw = coefficient(a, t, m, r, F1)
+    if "normalizer-inverted" in MUTATIONS:
+        return raw / target_q
+    return target_q / raw
+
+
+def rational_grid() -> tuple[Fraction, ...]:
+    return tuple(
+        sorted(
+            {
+                Fraction(numerator, denominator)
+                for denominator in range(1, 6)
+                for numerator in range(1, 7)
+            }
+        )
     )
 
 
-def part5_retention_scorecard(coeff: float) -> None:
-    print("\n== Part 5: retention scorecard ==")
-    note = NOTE_PATH.read_text(encoding="utf-8")
-    check(
-        "source records the 2026-06-18 analytic-factor import retirement",
-        "2026-06-18 Analytic Factor Import Retirement" in note
-        and "p-series tail bound" in note
-        and "N=20000" in note,
+def effective_note_text() -> str:
+    text = NOTE_PATH.read_text(encoding="utf-8")
+    if "interpretation-physical" in MUTATIONS:
+        text += "\nThis theorem derives the physical baryon density coefficient.\n"
+    if "interpretation-comparator" in MUTATIONS:
+        text += "\nThe rational example is the published Cyburt coefficient.\n"
+    if "interpretation-framework" in MUTATIONS:
+        text += "\nThe normalization is selected by the framework.\n"
+    return text
+
+
+def source_boundary_checks(h: Harness) -> None:
+    h.banner("Source theorem and authority boundary")
+    text = effective_note_text()
+    flattened = " ".join(text.split())
+    h.check(
+        "explicit positive-theorem typing",
+        "**Type:** positive_theorem" in text
+        and "**Claim type:** positive_theorem" in text,
     )
-    check(
-        "source separates analytic proof from physical admissions",
-        "internal math certificate for the analytic Planck-distribution factor only" in " ".join(note.split())
-        and "P1-P4 admitted physical/comparator premises" in " ".join(note.split()),
+    h.check("dependencies are explicitly empty", "**Dependencies:** none" in text)
+    h.check("T1 universal integer domain is written", "every integer `N >= 1`" in text)
+    h.check("T2 positive-rational domain is written", "positive rationals `a,t,m,r,s`" in text)
+    h.check("historical premise packet removed", "P1-P4" not in text)
+    h.check("historical comparator name removed", "Cyburt" not in text)
+    h.check("historical distribution setup removed", "Planck distribution" not in text)
+    h.check("historical CMB symbol removed", "T_CMB" not in text)
+    h.check("historical residual symbol removed", "S_Cyburt" not in text)
+    h.check("historical admission heading removed", "Supplied premise packet" not in text)
+
+    forbidden_overclaims = (
+        "derives the physical baryon density coefficient",
+        "rational example is the published Cyburt coefficient",
+        "normalization is selected by the framework",
     )
-    check(
-        "source says critical-density unit is formula-expanded instead of black-boxed",
-        "critical-density unit is formula-expanded instead of black-boxed" in note,
+    hits = [phrase for phrase in forbidden_overclaims if phrase in flattened]
+    h.check(
+        "physical/comparator/framework overclaims are absent",
+        not hits,
+        f"hits={hits}" if hits else "",
     )
-    check(
-        "source keeps four admitted premise classes P1-P4",
+
+
+class FractionSubclass(Fraction):
+    pass
+
+
+class IntSubclass(int):
+    pass
+
+
+def common_api_checks(h: Harness) -> None:
+    h.banner("Strict public API")
+    h.expect_raises(
+        "coefficient rejects integer scalar",
+        TypeError,
+        lambda: coefficient(1, F1, F1, F1, F1),
+    )
+    h.expect_raises(
+        "coefficient rejects boolean scalar",
+        TypeError,
+        lambda: coefficient(True, F1, F1, F1, F1),
+    )
+    h.expect_raises(
+        "coefficient rejects float scalar",
+        TypeError,
+        lambda: coefficient(1.0, F1, F1, F1, F1),
+    )
+    h.expect_raises(
+        "coefficient rejects Fraction subclass",
+        TypeError,
+        lambda: coefficient(FractionSubclass(1), F1, F1, F1, F1),
+    )
+    h.expect_raises(
+        "partial sum rejects boolean index",
+        TypeError,
+        lambda: partial_sum(True),
+    )
+    h.expect_raises(
+        "partial sum rejects integer subclass",
+        TypeError,
+        lambda: partial_sum(IntSubclass(2)),
+    )
+
+
+def normal_checks(h: Harness) -> None:
+    source_boundary_checks(h)
+    common_api_checks(h)
+
+    h.banner("T1 exact rational series brackets")
+    indices = tuple(range(1, 181))
+    h.check("S_1=1", partial_sum(1) == F1)
+    h.check("S_2=9/8", partial_sum(2) == Fraction(9, 8))
+    h.check("S_3=251/216", partial_sum(3) == Fraction(251, 216))
+    h.check(
+        "partial-sum recurrence holds through N=180",
+        all(partial_sum(n + 1) - partial_sum(n) == Fraction(1, (n + 1) ** 3) for n in indices[:-1]),
+    )
+    h.check(
+        "lower bracket has the stated endpoint",
+        all(tail_bracket(n)[0] == partial_sum(n) + Fraction(1, 2 * (n + 1) ** 2) for n in indices),
+    )
+    h.check(
+        "upper bracket has the stated endpoint",
+        all(tail_bracket(n)[1] == partial_sum(n) + Fraction(1, 2 * n**2) for n in indices),
+    )
+    h.check(
+        "exact width formula holds through N=180",
         all(
-            marker in note
-            for marker in [
-                "imported (P1)",
-                "imported (P2)",
-                "computed unit conversion from admitted `H_100` and `G`",
-                "P4's comparator residual are still supplied",
-            ]
+            tail_bracket(n)[1] - tail_bracket(n)[0]
+            == Fraction(2 * n + 1, 2 * n**2 * (n + 1) ** 2)
+            for n in indices
         ),
     )
-    check(
-        "source records exact S_Cyburt residual as admitted comparator, not derivation",
-        "S_Cyburt_exact = 0.9989276742641543" in note
-        and "does not derive `S_Cyburt_exact`" in note,
+    h.check(
+        "doubled bracket is exactly twice the original",
+        all(
+            doubled_bracket(n)
+            == (
+                F2 * partial_sum(n) + Fraction(1, (n + 1) ** 2),
+                F2 * partial_sum(n) + Fraction(1, n**2),
+            )
+            for n in indices
+        ),
     )
-    check(
-        "bridge does not promote the parent cosmology cascade row",
-        "does not promote any downstream cosmology row" in note
-        or "does not promote the cosmology cascade" in note
-        or "does not promote the parent cosmology cascade" in note,
+    h.check(
+        "lower endpoints strictly increase",
+        all(tail_bracket(n + 1)[0] > tail_bracket(n)[0] for n in indices[:-1]),
+    )
+    h.check(
+        "upper endpoints strictly decrease",
+        all(tail_bracket(n + 1)[1] < tail_bracket(n)[1] for n in indices[:-1]),
+    )
+    h.check(
+        "every bracket is ordered",
+        all(tail_bracket(n)[0] < tail_bracket(n)[1] for n in indices),
+    )
+    h.check(
+        "bracket widths strictly decrease",
+        all(
+            tail_bracket(n + 1)[1] - tail_bracket(n + 1)[0]
+            < tail_bracket(n)[1] - tail_bracket(n)[0]
+            for n in indices[:-1]
+        ),
+    )
+
+    h.banner("T2 exact monomial scaling and normalization")
+    grid = rational_grid()
+    samples = grid[::4]
+    h.check(
+        "coefficient is positive on the finite domain",
+        all(coefficient(a, t, m, r, s) > F0 for a in samples for t in samples for m in samples for r in samples for s in samples),
+    )
+    base = (Fraction(2, 3), Fraction(3, 5), Fraction(5, 7), Fraction(7, 11), Fraction(11, 13))
+    base_value = coefficient(*base)
+    h.check(
+        "a scaling law",
+        all(coefficient(scale * base[0], *base[1:]) == scale * base_value for scale in grid),
+    )
+    h.check(
+        "t cubic scaling law",
+        all(
+            coefficient(base[0], scale * base[1], base[2], base[3], base[4])
+            == scale**3 * base_value
+            for scale in grid
+        ),
+    )
+    h.check(
+        "m scaling law",
+        all(
+            coefficient(base[0], base[1], scale * base[2], base[3], base[4])
+            == scale * base_value
+            for scale in grid
+        ),
+    )
+    h.check(
+        "r inverse scaling law",
+        all(
+            coefficient(base[0], base[1], base[2], scale * base[3], base[4])
+            == base_value / scale
+            for scale in grid
+        ),
+    )
+    h.check(
+        "s scaling law",
+        all(
+            coefficient(base[0], base[1], base[2], base[3], scale * base[4])
+            == scale * base_value
+            for scale in grid
+        ),
+    )
+
+    second = (Fraction(3, 2), Fraction(5, 3), Fraction(7, 5), Fraction(11, 7), Fraction(13, 11))
+    expected_ratio = (
+        (second[0] / base[0])
+        * (second[1] / base[1]) ** 3
+        * (second[2] / base[2])
+        * (base[3] / second[3])
+        * (second[4] / base[4])
+    )
+    h.check("complete ratio identity", coefficient(*second) / base_value == expected_ratio)
+
+    fixed = (Fraction(2), Fraction(3), Fraction(5), Fraction(7))
+    raw = coefficient(*fixed, F1)
+    targets = grid
+    normalizations = [target_normalization(*fixed, target) for target in targets]
+    h.check("raw example coefficient is 270/7", raw == Fraction(270, 7))
+    h.check(
+        "normalization reaches every tested target",
+        all(coefficient(*fixed, norm) == target for norm, target in zip(normalizations, targets)),
+    )
+    h.check(
+        "normalization is the direct rational solution",
+        all(norm == target * fixed[3] / (fixed[0] * fixed[1] ** 3 * fixed[2]) for norm, target in zip(normalizations, targets)),
+    )
+    h.check(
+        "normalization displacement identity",
+        all(norm - F1 == (target - raw) / raw for norm, target in zip(normalizations, targets)),
+    )
+    example_norm = target_normalization(*fixed, Fraction(54))
+    h.check("named example normalization is 7/5", example_norm == Fraction(7, 5))
+    h.check("named example reaches 54 exactly", coefficient(*fixed, example_norm) == Fraction(54))
+
+
+def independent_partial_sum(n: int) -> Fraction:
+    """Reconstruct S_N through one integer common denominator."""
+    index = require_index(n)
+    denominator = 1
+    for k in range(1, index + 1):
+        denominator = lcm(denominator, k**3)
+    numerator = sum(denominator // (k**3) for k in range(1, index + 1))
+    return Fraction(numerator, denominator)
+
+
+def integral_x_minus_3(left: int, right: int) -> Fraction:
+    if type(left) is not int or type(right) is not int or left < 1 or right <= left:
+        raise ValueError("integral endpoints must be integers with 1 <= left < right")
+    return Fraction(1, 2 * left**2) - Fraction(1, 2 * right**2)
+
+
+def independent_checks(h: Harness) -> None:
+    source_boundary_checks(h)
+    common_api_checks(h)
+
+    h.banner("Independent series reconstruction and integral cells")
+    indices = tuple(range(1, 61))
+    h.check(
+        "primary sums match common-denominator reconstruction",
+        all(partial_sum(n) == independent_partial_sum(n) for n in indices),
+    )
+    h.check(
+        "decreasing-cell lower inequalities hold exactly",
+        all(integral_x_minus_3(k, k + 1) < Fraction(1, k**3) for k in range(1, 401)),
+    )
+    h.check(
+        "decreasing-cell upper inequalities hold exactly",
+        all(Fraction(1, k**3) < integral_x_minus_3(k - 1, k) for k in range(2, 401)),
+    )
+    finite_pairs = tuple((n, n + offset) for n in range(1, 31) for offset in (1, 5, 30))
+    h.check(
+        "finite tails dominate telescoped lower integrals",
+        all(
+            partial_sum(m) - partial_sum(n)
+            >= integral_x_minus_3(n + 1, m + 1)
+            for n, m in finite_pairs
+        ),
+    )
+    h.check(
+        "finite tails are bounded by telescoped upper integrals",
+        all(
+            partial_sum(m) - partial_sum(n)
+            <= integral_x_minus_3(n, m)
+            for n, m in finite_pairs
+        ),
+    )
+    h.check(
+        "independent lower-tail endpoint formula",
+        all(tail_bracket(n)[0] - partial_sum(n) == Fraction(1, 2 * (n + 1) ** 2) for n in indices),
+    )
+    h.check(
+        "independent upper-tail endpoint formula",
+        all(tail_bracket(n)[1] - partial_sum(n) == Fraction(1, 2 * n**2) for n in indices),
+    )
+    h.check(
+        "lower nesting numerator is 3N+5",
+        all(
+            (tail_bracket(n + 1)[0] - tail_bracket(n)[0])
+            * (2 * (n + 1) ** 3 * (n + 2) ** 2)
+            == 3 * n + 5
+            for n in indices
+        ),
+    )
+    h.check(
+        "upper nesting numerator is 3N+1",
+        all(
+            (tail_bracket(n)[1] - tail_bracket(n + 1)[1])
+            * (2 * n**2 * (n + 1) ** 3)
+            == 3 * n + 1
+            for n in indices
+        ),
+    )
+
+    h.banner("Independent cleared-denominator monomial checks")
+    grid = rational_grid()[::4]
+    tuples = tuple((a, t, m, r, s) for a in grid for t in grid for m in grid for r in grid for s in grid)
+    h.check(
+        "coefficient satisfies the cleared defining equation",
+        all(coefficient(a, t, m, r, s) * r == a * t**3 * m * s for a, t, m, r, s in tuples),
+        f"tuples={len(tuples)}",
+    )
+    ratio_samples = tuples[::257]
+    h.check(
+        "independent ratio identity by cross-products",
+        all(
+            coefficient(*right)
+            * left[0]
+            * left[1] ** 3
+            * left[2]
+            * right[3]
+            * left[4]
+            == coefficient(*left)
+            * right[0]
+            * right[1] ** 3
+            * right[2]
+            * left[3]
+            * right[4]
+            for left, right in zip(ratio_samples, reversed(ratio_samples))
+        ),
+    )
+    fixed = (Fraction(2), Fraction(3), Fraction(5), Fraction(7))
+    raw_direct = fixed[0] * fixed[1] ** 3 * fixed[2] / fixed[3]
+    h.check("independent raw coefficient", coefficient(*fixed, F1) == raw_direct)
+    h.check(
+        "normalizer matches direct equation solution",
+        all(
+            target_normalization(*fixed, target)
+            == target * fixed[3] / (fixed[0] * fixed[1] ** 3 * fixed[2])
+            for target in rational_grid()
+        ),
+    )
+    h.check(
+        "substitution of direct normalizer clears to target",
+        all(
+            fixed[0]
+            * fixed[1] ** 3
+            * fixed[2]
+            * target_normalization(*fixed, target)
+            == target * fixed[3]
+            for target in rational_grid()
+        ),
     )
 
 
-def main() -> int:
-    print("BBN COEFFICIENT 3.6515e-3 ADMISSION BRIDGE")
-    part0_source_firewall()
-    factor = part1_framework_clean_factor()
-    n_gamma = part2_imported_n_gamma_today(factor)
-    coeff, s_cyburt_exact = part3_recover_coefficient(n_gamma)
-    part4_premise_packet_named(s_cyburt_exact)
-    part5_retention_scorecard(coeff)
-    print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
-    if FAIL == 0:
-        print(
-            "VERDICT: bounded admission bridge passes; the textbook coefficient "
-            "3.6515e-3 is split into a raw unit-conversion baseline from one "
-            "analytic factor (2 zeta(3)/pi^2 from the Planck distribution) and "
-            "admitted physical premises (P1 m_p, P2 T_CMB, P3 H_100/G "
-            "critical-density unit), plus explicit admitted P4 residual "
-            "S_Cyburt_exact = 0.9989276742641543. The raw baseline is within "
-            "0.107% of the Cyburt+ 2016 published value; exact equality uses "
-            "the admitted residual comparator."
+def hostile_checks(h: Harness) -> None:
+    source_boundary_checks(h)
+    common_api_checks(h)
+
+    h.banner("Hostile index and scalar domains")
+    for bad in (0, -1):
+        h.expect_raises(
+            f"partial sum rejects nonpositive index {bad}",
+            ValueError,
+            lambda bad=bad: partial_sum(bad),
         )
+    for bad in (1.0, Fraction(1), "1", None):
+        h.expect_raises(
+            f"partial sum rejects {type(bad).__name__}",
+            TypeError,
+            lambda bad=bad: partial_sum(bad),
+        )
+
+    bad_scalars: tuple[object, ...] = (0, True, 1.0, "1", None, FractionSubclass(1))
+    for index, bad in enumerate(bad_scalars):
+        for position in range(5):
+            values: list[object] = [F1, F1, F1, F1, F1]
+            values[position] = bad
+            h.expect_raises(
+                f"coefficient rejects malformed scalar #{index} at position {position}",
+                TypeError,
+                lambda values=values: coefficient(*values),
+            )
+
+    for bad in (F0, -F1):
+        for position in range(5):
+            values = [F1, F1, F1, F1, F1]
+            values[position] = bad
+            h.expect_raises(
+                f"coefficient rejects nonpositive scalar {bad} at position {position}",
+                ValueError,
+                lambda values=values: coefficient(*values),
+            )
+        h.expect_raises(
+            f"normalizer rejects nonpositive target {bad}",
+            ValueError,
+            lambda bad=bad: target_normalization(F1, F1, F1, F1, bad),
+        )
+
+    h.banner("Hostile theorem spot checks")
+    h.check("hostile S_3 exact value", partial_sum(3) == Fraction(251, 216))
+    h.check(
+        "hostile N=2 exact bracket",
+        tail_bracket(2) == (Fraction(9, 8) + Fraction(1, 18), Fraction(9, 8) + Fraction(1, 8)),
+    )
+    fixed = (Fraction(2), Fraction(3), Fraction(5), Fraction(7))
+    h.check("hostile coefficient example", coefficient(*fixed, F1) == Fraction(270, 7))
+    h.check("hostile normalizer example", target_normalization(*fixed, Fraction(54)) == Fraction(7, 5))
+    h.check(
+        "hostile normalized coefficient reaches target",
+        coefficient(*fixed, target_normalization(*fixed, Fraction(54))) == Fraction(54),
+    )
+
+
+def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--independent", action="store_true", help="use independent exact reconstructions")
+    mode.add_argument("--hostile", action="store_true", help="exercise hostile input and scope guards")
+    parser.add_argument(
+        "--mutate",
+        action="append",
+        default=[],
+        choices=(*MUTATION_NAMES, "all"),
+        help="activate a fail-closed mutation fixture (repeatable)",
+    )
+    parser.add_argument("--list-mutations", action="store_true", help="print mutation names and exit")
+    return parser.parse_args(argv)
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    global MUTATIONS
+    args = parse_args(argv)
+    if args.list_mutations:
+        print("\n".join(MUTATION_NAMES))
         return 0
-    print("VERDICT: bounded admission bridge FAILED.")
-    return 1
+    selected = set(args.mutate)
+    if "all" in selected:
+        selected = set(MUTATION_NAMES)
+    MUTATIONS = frozenset(selected)
+
+    mode = "hostile" if args.hostile else "independent" if args.independent else "normal"
+    print("=" * 88)
+    print("Cubic-reciprocal series bounds and rational normalization")
+    print(f"MODE={mode}")
+    print(f"MUTATIONS={','.join(sorted(MUTATIONS)) if MUTATIONS else 'none'}")
+    print("=" * 88)
+
+    h = Harness()
+    if args.hostile:
+        hostile_checks(h)
+    elif args.independent:
+        independent_checks(h)
+    else:
+        normal_checks(h)
+
+    print()
+    print("=" * 88)
+    print(f"SUMMARY: PASS={h.passed} FAIL={h.failed}")
+    print(f"PASSED: {h.passed}/{h.passed + h.failed}")
+    print("=" * 88)
+    if h.failed:
+        print("RATIONAL_SERIES_NORMALIZATION_POSITIVE_THEOREM=FALSE")
+        return 1
+    print("RATIONAL_SERIES_NORMALIZATION_POSITIVE_THEOREM=TRUE")
+    print("EXACT_ARITHMETIC=TRUE")
+    print("DEPENDENCIES=NONE")
+    print("PHYSICAL_INTERPRETATION_ASSERTED=FALSE")
+    return 0
 
 
 if __name__ == "__main__":

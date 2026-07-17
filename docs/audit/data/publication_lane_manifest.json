@@ -259,7 +259,6 @@
   "higher_order_structural_theorems_note",
   "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
   "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26",
-  "hubble_lane5_workstream_status_note_2026-04-27",
   "hubble_tension_structural_lock_theorem_note_2026-04-26",
   "hw1_second_order_return_shape_theorem_note",
   "hypercharge_identification_note",
@@ -593,8 +592,8 @@
   "z2_hw1_mass_matrix_parametrization_note",
   "z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02"
  ],
- "description": "Tracked eligibility manifest for the shadow publication lane (dispatch-retarget design note 2026-07-16). The admitted set is the exact union of the resolved publication gap and the primary cycle-break targets computed by the same pipeline pass recorded at frozen_commit. New candidates enter via 'pending' entries ({claim_id, first_report_date}) named in the nightly shadow report, and move to 'admitted' only by a review-landed edit after at least one report with no reviewer/owner objection. This file governs shadow REPORTING eligibility only; no dispatch decision reads it while cutover flags are off.",
- "frozen_commit": "fda3461a0063d6eedef3e5bb4468ac8c98e27c10",
+ "description": "Tracked eligibility manifest for the shadow publication lane (dispatch-retarget design note 2026-07-16). The admitted set is the exact union of the resolved publication gap and the primary cycle-break targets computed by a pipeline pass on frozen_commit plus exactly this PR's code. New candidates enter via 'pending' entries ({claim_id, first_report_date, action: add|remove}) named in the nightly shadow report, and admissions/removals are review-landed only after at least one report with no reviewer/owner objection. This file governs shadow REPORTING eligibility only; no dispatch decision reads it while cutover flags are off.",
+ "frozen_commit": "cd51e48fd8073d2d251584db088183cf17983272",
  "pending": [],
  "schema_version": 1
 }

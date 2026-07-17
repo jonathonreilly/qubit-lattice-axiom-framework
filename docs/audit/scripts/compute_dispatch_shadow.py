@@ -63,7 +63,8 @@ def validate_manifest(manifest) -> tuple[bool, str]:
         return False, "manifest_pending_malformed"
     for item in pending:
         if not (isinstance(item, dict) and isinstance(item.get("claim_id"), str)
-                and isinstance(item.get("first_report_date"), str)):
+                and isinstance(item.get("first_report_date"), str)
+                and item.get("action") in ("add", "remove")):
             return False, "manifest_pending_entry_malformed"
     return True, "ok"
 
@@ -86,7 +87,8 @@ def build_lane(queue: dict, gap, manifest) -> dict:
     candidate_ids = gap_ids | target_ids
     admitted = set(manifest.get("admitted", [])) if manifest_ok else set()
     manifest_pending = manifest.get("pending", []) if manifest_ok else []
-    pending_by_id = {p["claim_id"]: p for p in manifest_pending}
+    pending_adds = {p["claim_id"]: p for p in manifest_pending if p["action"] == "add"}
+    pending_removes = {p["claim_id"]: p for p in manifest_pending if p["action"] == "remove"}
 
     lane = []
     unmanifested = []
@@ -97,6 +99,9 @@ def build_lane(queue: dict, gap, manifest) -> dict:
             continue
         lane_candidate_ids.add(cid)
         if cid in admitted:
+            # a pending REMOVAL keeps the row laned during its objection
+            # window but is named in the report (both membership directions
+            # get the same visible window)
             lane.append({
                 "claim_id": cid,
                 "criticality": e["criticality"],
@@ -106,9 +111,10 @@ def build_lane(queue: dict, gap, manifest) -> dict:
                 "in_publication_gap": cid in gap_ids,
                 "is_primary_cycle_break_target": cid in target_ids,
                 "would_park": e.get("would_park"),
+                "pending_removal": cid in pending_removes,
             })
-        elif cid in pending_by_id:
-            pass  # reported via manifest_pending below
+        elif cid in pending_adds:
+            pass  # reported via pending_adds below
         else:
             unmanifested.append(cid)
 
@@ -121,7 +127,8 @@ def build_lane(queue: dict, gap, manifest) -> dict:
         "manifest_frozen_commit": (manifest or {}).get("frozen_commit")
         if isinstance(manifest, dict) else None,
         "lane_size": len(lane),
-        "manifest_pending": manifest_pending,
+        "pending_adds": sorted(pending_adds.values(), key=lambda p: p["claim_id"]),
+        "pending_removes": sorted(pending_removes.values(), key=lambda p: p["claim_id"]),
         "unmanifested_candidates": sorted(unmanifested),
         "admitted_absent_from_lane_candidates": sorted(
             admitted - lane_candidate_ids
@@ -147,12 +154,18 @@ def main() -> int:
         lane_shadow["added_since_prior"] = []
         lane_shadow["removed_since_prior"] = []
         lane_shadow["prior_state_available"] = False
+    lane_shadow["prior_state_date"] = prior.get("as_of_date")
 
     LANE_JSON.write_text(json.dumps(lane_shadow, indent=1, sort_keys=True) + "\n")
-    SHADOW_STATE_PATH.write_text(json.dumps(
-        {"schema_version": 1, "lane_ids": lane_ids,
-         "as_of_utc": datetime.now(timezone.utc).isoformat(timespec="seconds")},
-        indent=1, sort_keys=True) + "\n")
+    # DAY-KEYED update: the tracked state advances at most once per UTC day
+    # (whichever pass runs first). Per-verdict pipeline runs later the same
+    # day leave it untouched, so audit-batch commits that stage all of
+    # docs/audit/data cannot consume churn between nightly reports.
+    today = datetime.now(timezone.utc).date().isoformat()
+    if prior.get("as_of_date") != today:
+        SHADOW_STATE_PATH.write_text(json.dumps(
+            {"schema_version": 2, "lane_ids": lane_ids, "as_of_date": today},
+            indent=1, sort_keys=True) + "\n")
     print(f"dispatch shadow: lane={lane_shadow['lane_size']} "
           f"gap_available={lane_shadow['gap_available']} "
           f"manifest={lane_shadow['manifest_state']} "

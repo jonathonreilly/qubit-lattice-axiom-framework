@@ -45,6 +45,12 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # This positive-theorem packet names the irreducible-faithful boundary.
+    # Its independently implemented direct-sum steelman is not imported by
+    # the primary runner, so register that exact N7 surface claim-scoped.
+    "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": [
+        "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py",
+    ],
     "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18": [
         "scripts/frontier_atomic_hydrogen_lattice_companion.py",
         "scripts/frontier_atomic_helium_hartree_companion.py",

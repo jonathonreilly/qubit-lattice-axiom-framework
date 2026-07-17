@@ -1,6 +1,6 @@
 {
- "edge_count": 14476,
- "node_count": 3964,
+ "edge_count": 14479,
+ "node_count": 3965,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1381,6 +1381,10 @@
   "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "born_form_scaled_projector_menu_family_sitewise_forcing_and_paired_menu_boundary_bounded_theorem_note_2026-07-17": {
+   "deps_hash": "c0417a427332",
+   "out_degree": 3
   },
   "born_lane_comparison_note": {
    "deps_hash": "e3b0c44298fc",

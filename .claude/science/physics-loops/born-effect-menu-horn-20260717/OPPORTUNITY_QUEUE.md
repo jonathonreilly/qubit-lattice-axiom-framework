@@ -2,11 +2,10 @@
 
 This run executes one block. Parked, ranked, for future campaigns:
 
-1. **Premise thinning on the effect horn** — translate the
-   intermediate-menu-family forcing (comparator: Wright-Weigert 2019,
-   mixtures of projective menus at d=2) into repo-native objects with its own
-   exact runner; would weaken E2 toward the projective side and shrink the
-   underived binary's gap. Runner-friendly; medium block.
+1. **Premise thinning on the effect horn** — EXECUTED as block02
+   (2026-07-17): native scaled-projector family theorem (forcing + paired
+   boundary). Remaining slice parked: exact native translation of the
+   Wright-Weigert mixture class and any minimal-family classification.
 2. **Additivity-failure boundary** — exact statement of what survives if E2/H2
    additivity is dropped (higher-order interference measure classes); turns
    the strategy's global hidden premise into a named boundary. Larger block;

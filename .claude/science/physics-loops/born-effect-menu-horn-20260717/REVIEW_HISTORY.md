@@ -105,3 +105,104 @@ Finding from the first B probe: the original `nonnegative_between` was
 vacuously true on an empty interval; supervisor hardened the gate with an
 interval-nonemptiness guard (runner edit after worker delivery), after which
 both B probes fail correctly. Unmutated runner: `TOTAL: PASS=54 FAIL=0`.
+
+# Block02 review history
+
+## Round 0 — supervisor independent verification (before worker completion)
+
+Independent sympy battery from the note text alone, 9/9: axis-cancellation
+menu sums to identity (symbolic positive octant); affinity elimination
+g(n) = (1 + n·s)/2; the T1 characterization identity; paired-menu rogue
+normalization; the coplanar three-element menu; octant witness coefficients
+in (0,1] and menu identity; ray-additivity elimination; the zero-component
+axis menu.
+
+## Mutation checks (block02) — executed, all FAIL as required
+
+| Family | Mutation | Result |
+|---|---|---|
+| D | traceless recovery /2 -> /3 | FAIL D1 (56/1) |
+| T1a | scalar condition /2 -> /3 | FAIL T1a (56/1) |
+| T1c | c0 = 2/(1+L) -> 1/(1+L) | FAIL T1c-generic + T2d-generic (55/2) |
+| T2a | second split normalization = 2 | FAIL T2a (56/1) |
+| T2b | squeeze scaling sign flip | FAIL T2b-squeeze + T2e-squeeze (55/2) |
+| T2d | complement equation = 2 | FAIL T2d-generic (56/1) |
+| T2f | sigma sign flip | FAIL T2f-representation (56/1) |
+| T3a | paired scalar condition = 2 | FAIL T3a + T3d (55/2) |
+| T3b | lex tuple order flipped | FAIL T3b-hemisphere + T3d (55/2) |
+| N | needle string perturbed | FAIL N2 (56/1) |
+| T3a-ind (post-panel) | cubic exponent 3 -> 2 | FAIL T3a-ind-complement (59/1) |
+
+Unmutated runner at worker delivery: `TOTAL: PASS=57 FAIL=0`; after the
+panel-adopted cubic-witness gates and sign-hardening: `TOTAL: PASS=60
+FAIL=0` (supervisor re-runs).
+Cache SHA-pinned and verified equal to the committed runner SHA. The note's
+`__TOTAL__` placeholder was resolved to 57 only after the runner was final
+(block01 placeholder lesson applied).
+
+
+## Round 1 — block02 five-lens adversarial panel (delivered; synthesized)
+
+### Verdicts (raw outputs in lens{1..5}_b02_out.txt; synthesis supervisor-owned)
+
+- Lens 1 (convention/sign): 0/0/1 — all load-bearing conventions verified
+  including the (L^2-1) = 2(ab+ac+bc) and (3-L^2) sum-of-squares
+  certificates; minor: the axis helpers silently defaulted undecidable
+  component signs to negative (no current call site affected).
+- Lens 2 (licensing/quotes): clean on quotes/links/characterizations; one
+  finding: claim_scope's "forcing runs on scaled rank-1 menus alone /
+  no genuinely unsharp effect" was stronger than the body (coins determine
+  the identity ray of the representation).
+- Lens 3 (independent algebra, note-only): PASS — independently re-proved
+  T1, T2 (ray additivity, squeeze, axis-cancellation validity incl. octant
+  and zero-component handling, positivity, uniqueness), T3a for arbitrary
+  finite paired menus; three non-affine attack candidates all failed at an
+  identified menu; contributed an independent smooth witness
+  g_c(n) = (1 + n_z^3)/2 refuting its unique trace candidate at
+  m = (sqrt(3)/2, 0, 1/2) (9/16 vs 3/4).
+- Lens 4 (governance): three findings — the parent note is a load-bearing
+  dependency missing from frontmatter upstream_dependencies; one backticked
+  class-word in TRACE_GATE_BLOCK02 prose; certificate disposition
+  procedurally unfinished. Confirmed the note's descriptive names are not
+  coined governance tiers and N1-N8 is complete.
+- Lens 5 (overclaim): runner total confirmed by its own execution; six
+  narrowings — "rank-1 menus alone" (full-domain false), "no bridge input"
+  heading vs bridge-conditional scope, Verification "re-derives every
+  load-bearing identity" overstated runner coverage, T3b universal wording,
+  "exactly such menus" vs degenerate instances, "exactly witnessed line"
+  vs necessary-not-sufficient.
+
+### Dispositions (all applied before commit)
+
+1. Rank-1-alone family (L2, L5-1): FIXED — claim_scope, Purpose, and T4
+   wording now state: scaled rank-1 menus carry the form-forcing; coin
+   menus determine only the identity ray; "genuinely unsharp" replaced by
+   "effect with two distinct nonzero eigenvalues".
+2. "No bridge input" heading (L5-2): FIXED to "without an imported
+   literature theorem" (T2 heading) and "With No Literature Bridge Input"
+   (title); the established phrase "no literature bridge input" retained.
+3. Verification coverage (L5-3): FIXED to "exactly checks the listed
+   algebraic reductions and representative witnesses; the
+   arbitrary-finite-family and all-real-parameter steps are carried by the
+   written proof".
+4. T3b universal wording (L5-4): FIXED to the family-level statement (any
+   eligible family contained in the paired subfamily admits the witness;
+   forcing families must contain an unpaired menu).
+5. "Exactly such menus" / "exactly witnessed line" (L5-5, L5-6): FIXED to
+   nontrivial/non-axis instances and to "witnessed necessary condition …
+   no sufficiency boundary established".
+6. Missing dependency (L4-1): FIXED — parent claim_id added to
+   upstream_dependencies; TRACE_GATE_BLOCK02 lineage note added; T3a made
+   additionally self-contained by adopting the lens-3 cubic witness with
+   three new runner gates (T3a-ind-*), so the negative no longer rests on
+   the parent's construction alone.
+7. Backticked class-word in trace-gate prose (L4-2): FIXED to descriptive
+   prose.
+8. Sign-defaulting helpers (L1-1): FIXED — both axis helpers now raise on
+   undecidable signs; runner re-run.
+
+Post-fix: runner `TOTAL: PASS=60 FAIL=0` (57 + 3 cubic-witness gates); new
+mutation probe (cubic exponent 3 -> 2) FAILS correctly; cache regenerated
+and SHA-verified; note total synced to 60.
+
+### Round 1 disposition after fixes: pass

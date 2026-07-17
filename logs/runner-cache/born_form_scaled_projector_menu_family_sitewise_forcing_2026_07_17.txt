@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py
+runner_sha256: 05fd738e28d4c6c8969758b6bc89bad22d94215dc1387427b7cc5f500c511136
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.88
+status: ok
+----- stdout -----
+PASS: D1 trace and traceless coefficients recover c and c*n/2
+PASS: D2-types rank-one and identity rays have incompatible exact eigenvalue multisets
+PASS: D2-projectors equal nonzero scaled projectors force equal scale and direction
+PASS: T1a generic three-ray plus one-coin residual vanishes iff scalar and vector conditions do
+PASS: T1b-projective symbolic antipodal projective menu sums to identity
+PASS: T1b-coin symbolic two-outcome identity coin sums to identity
+PASS: T1b-split symbolic same-direction split menu sums to identity under l+m+r=1
+PASS: T1b-coplanar exact three-element coplanar scaled-projector menu sums to identity
+PASS: T1c-generic generic positive-octant axis cancellation is a menu with coefficients in (0,1]
+PASS: T1c-octant-1 rational octant witness is an exact axis-cancellation menu
+PASS: T1c-octant-2 rational octant witness is an exact axis-cancellation menu
+PASS: T1c-octant-3 rational octant witness is an exact axis-cancellation menu
+PASS: T1c-octant-4 rational octant witness is an exact axis-cancellation menu
+PASS: T1c-octant-5 rational octant witness is an exact axis-cancellation menu
+PASS: T1c-octant-6 rational octant witness is an exact axis-cancellation menu
+PASS: T1c-octant-7 rational octant witness is an exact axis-cancellation menu
+PASS: T1c-octant-8 rational octant witness is an exact axis-cancellation menu
+PASS: T1c-zero-component zero-component axis menu omits the zero-weight element and sums exactly
+PASS: T1c-axis axis cancellation degenerates to the antipodal projective menu
+PASS: T1d menu checker rejects an axis family with a vector-cancelling element dropped
+PASS: T1e effect with two distinct nonzero eigenvalues is outside S
+PASS: T2a two valid split-menu normalizations eliminate to ray additivity
+PASS: T2b-rational ray additivity gives exact homogeneity at one-half and two-thirds
+PASS: T2b-monotone nonnegative ray increments force monotonicity
+PASS: T2b-squeeze hardened nonempty-interval guard and formal squeeze hold between one-half and two-thirds
+PASS: T2b-rejector checker detects a non-monotone toy assignment on one ray
+PASS: T2c projective-menu normalization formally gives the complement identity
+PASS: T2d-generic complements and the symbolic positive-octant axis menu eliminate to Bloch affinity
+PASS: T2d-octant-1 rational octant axis normalization gives the same affine value
+PASS: T2d-octant-2 rational octant axis normalization gives the same affine value
+PASS: T2d-octant-3 rational octant axis normalization gives the same affine value
+PASS: T2d-octant-4 rational octant axis normalization gives the same affine value
+PASS: T2d-octant-5 rational octant axis normalization gives the same affine value
+PASS: T2d-octant-6 rational octant axis normalization gives the same affine value
+PASS: T2d-octant-7 rational octant axis normalization gives the same affine value
+PASS: T2d-octant-8 rational octant axis normalization gives the same affine value
+PASS: T2d-zero-component zero-component axis normalization gives the same affine value
+PASS: T2e-additivity two coin-menu normalizations eliminate to identity-ray additivity
+PASS: T2e-rational coin additivity and f(1)=1 give f(p/r)=p/r
+PASS: T2e-squeeze coin continuity uses the same hardened rational-squeeze scaffolding
+PASS: T2f-state the antipodal minimum forces norm at most one and sigma is a density matrix
+PASS: T2f-representation sigma represents every symbolic scaled projector and identity multiple
+PASS: T2f-uniqueness four trace values determine a Hermitian M2 representative uniquely
+PASS: T3a two-pair plus one-coin rogue normalization reduces to the T1 scalar condition
+PASS: T3b-hemisphere lexicographic hemisphere rogue has the required tie-aware values
+PASS: T3b-conflict normalization and two rogue values force trace value one-half at u
+PASS: T3b-control affine Bloch control remains consistent and is not falsely detected
+PASS: T3c-split exact split witness has no equal-weight antipodal perfect matching
+PASS: T3c-axis positive-octant axis menu has four pairwise non-antipodal directions
+PASS: T3a-ind-complement cubic witness obeys the complement law and stays inside [0,1]
+PASS: T3a-ind-nontrace cubic witness refutes its unique trace-form candidate at an exact direction
+PASS: T3a-ind-paired cubic witness normalizes an exact paired menu with a coin
+PASS: T3d-corollary corollary: paired rogue survives, so forcing uses split and axis-cancellation schemas
+PASS: N1 axiom memo pins record readability to record content alone
+PASS: N2 parent note names intermediate classical mixtures as untested
+PASS: N3 parent note pins the menu-grade hypothesis surface as underived
+PASS: N4-claim source note pins its exact claim identifier
+PASS: N4-labels source note contains both scaled-projector hypothesis labels
+PASS: N4-no-bridge source note pins the no-literature-bridge-input scope
+PASS: N4-paired source note states that the paired subfamily does not force
+TOTAL: PASS=60 FAIL=0
+
+----- stderr -----
+

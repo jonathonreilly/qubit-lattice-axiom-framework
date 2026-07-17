@@ -55,3 +55,26 @@ measured TOTAL; run the five-lens panel; fix findings; clean-state pipeline
 validation with derived-surface restore + stage-18 manifest staging;
 vocab_lint + audit_lint --strict; commit; push; open the PR; hand off to
 owner-operated review/audit lanes.
+
+## Checkpoint 3 — block02 (premise thinning, stacked on block01)
+
+User authorized the next batch; OPPORTUNITY_QUEUE item 1 executed as a
+native theorem rather than a literature translation. Planning found a direct
+forcing construction: the axis-cancellation menu
+`{c0 P(n)} ∪ {c0 |n_a| P(−sign(n_a) e_a)}`, `c0 = 2/(1+L)`, which forces
+`g(n) = (1 + n·s)/2` in one elimination once ray additivity (same-direction
+splits) and the complement law are in hand. Resulting two-sided block02
+statement on the scaled-projector family (multiples of rank-1 projectors and
+identity): forcing with zero imports at one site, running on scaled rank-1
+menus alone (T2); the paired subfamily (equal-weight antipodal pairs +
+coins — unsplit classical mixing) does not force, by an explicit rogue
+extension (T3a); so some unpaired menu is necessary (T3b). Family strictly
+between projective and effect poles (T1 characterization: vector-zero +
+scalar-two). Prior-art grep clean (repo's only "trine" is a broken-trine
+rejector in the 2026-06-05 bridge runner). Supervisor battery 9/9 before
+worker completion. Wright-Weigert stays comparator-only; exact translation
++ minimal-family classification re-parked in OPPORTUNITY_QUEUE item 1.
+
+Note placeholder discipline (block01 lesson applied): the Verification total
+is the literal `__TOTAL__` until the runner is final; the worker spec
+forbids matching it.

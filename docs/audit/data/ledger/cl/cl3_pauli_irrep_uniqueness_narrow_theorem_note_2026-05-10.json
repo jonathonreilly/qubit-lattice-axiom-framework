@@ -18,7 +18,7 @@
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1349,6 +1349,60 @@
         "total_pass": 94
       },
       "verdict_rationale": "The asserted representation-theory result is consistent with the displayed canonical examples, and the runner validates the Clifford relations, pseudoscalar identities, chirality distinction, and Hermitian-intertwiner refinement exactly. However, those finite matrix checks do not prove that the abstract complexification has no additional simple summands or irreducible modules; evaluating the central idempotents after passing to the two proposed irreps is not an algebra-level proof of the invoked decomposition. The universal dimension-two and exactly-two conclusions therefore depend on an unproved standard-classification input in the restricted packet."
+    },
+    {
+      "archived_at": "2026-07-17T18:54:29.199395+00:00",
+      "audit_date": "2026-07-17T18:54:19.389283+00:00",
+      "audit_invocation_history": [
+        "3475a0b0ac004a8eb4193f16f5f60ca7"
+      ],
+      "audit_invocation_id": "3475a0b0ac004a8eb4193f16f5f60ca7",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 18.234,
+        "runner_hash": "108f91a92f78997109b88af77a779f88535331f3dc30625d97dd8510bfb0cbb5",
+        "transitive_descendants": 1702
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-796c60c0ccf84d05a5d8d216cd1e73e6-cl3_pauli_irrep_uniquene-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact algebraic argument itself closes from the defining Clifford relations. The binding clean-verdict gate nevertheless cannot be completed because the runner supplies hostile controls but not the required live per-element, per-site, per-mode, per-block, and lattice-wide N5 resolution evidence or a complete N1-N8 disposition.",
+      "claim_scope": "The Pauli realization, central-pseudoscalar decomposition, exhaustive two-class dimension-two classification, real-algebra faithfulness boundary, and conditional unitary refinement.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-17T18:54:19.389283+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The explicit matrix units identify each central ideal with M_2(C), and the F/G module isomorphism then forces every irreducible summand to be two-dimensional.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add live per_element, per_site, per_mode, per_block, and lattice_wide resolution lines plus a complete development-tier N1-N8 disposition, then rerun the restricted audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 51,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 51
+      },
+      "verdict_rationale": "The source and exact runner substantively establish the basis, central idempotents, two M_2(C) ideals, irreducible-module classification, real-versus-complex faithfulness distinction, and Hermitian conditional unitary refinement without imported premises. The artifact also asserts two derived negative boundaries: an irreducible complexified representation cannot be faithful, and bare complex-linear equivalence does not imply unitary equivalence without the Hermitian condition. Its hostile fixtures cover several N1 routes and the two boundaries are mathematically independent, with no hidden admission or prior residual witness apparent, but N5 lacks the mandated five-resolution live evidence and N6-N8 are not fully dispositioned in a valid clean-verdict packet."
     }
   ],
   "prose_corrections": [],

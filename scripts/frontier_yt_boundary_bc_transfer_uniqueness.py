@@ -1,747 +1,645 @@
 #!/usr/bin/env python3
-"""Bounded finite-grid diagnostic runner for
-`YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17`.
+"""Exact verifier for the universal scalar boundary-transfer theorem.
 
-Verifies the bounded numerical diagnostic that the backward-RGE map
-`Phi : y_t(v) -> y_t(M_Pl)` used in claim (iv) of `YT_BOUNDARY_THEOREM.md`
-is finite on sampled trajectories, increasing on the runner's finite X-grid,
-has finite observed grid slopes, and has a stable bracketed root of the
-runner's imported Ward boundary target
+The load-bearing equation is
 
-    Phi(X*) = g_lattice / sqrt(6) = 0.43577
+    y'(t) = a(t) y(t) + b y(t)^3,
 
-near `X* = 0.97267`.
+with continuous real ``a`` on a finite interval and ``b > 0``.  This runner
+checks the exact solution, maximal endpoint domain, monotonicity, range, and
+inverse without importing any physical boundary values.  Its independent mode
+uses synthetic numerical functions only; those computations are corroboration,
+not proof.
 
-The scan interval is below the empirically observed Yukawa blow-up-like onset
-at X_pole ~ 1.27 in Section 6 (T5).
+Modes:
+  default / --mode exact       symbolic identities, source firewall, strict API
+  --independent                independent synthetic numerical oracles
+  --hostile                    adversarial formula/source/API mutations
+  --mode intentional-failure   install one named mutation and exit nonzero
 
-This is not a continuum strict-monotonicity proof and not an exact unique-root
-theorem over every point in [0.5, 1.2]. It does NOT claim that the SM EFT is
-physical at M_Pl. It does NOT claim that the lattice Ward identity holds in
-the SM. It does NOT close the parent yt_boundary_theorem row.
-
-The runner uses the SAME 2-loop SM RGE (`beta_2loop`) and threshold
-machinery (`run_with_thresholds`) as `frontier_yt_boundary_consistency.py`.
-The two runners are independent: the parent runner finds the root and
-exhibits Options A / B / C; this runner verifies finite-grid root stability
-and sampled well-behavior (grid monotonicity, finite-difference slopes,
-no-blow-up) on the working scan interval.
-
-CHECKS:
-  Section 0: source-boundary checks
-  Section 1: setup + imported numeric inputs
-  Section 2: (T1) globalness / max|y_t| bounded on [0.5, 1.2]
-  Section 3: (T2) finite-grid monotonicity on 33-point grid
-  Section 4: (T3) Lipschitz constant L from finite differences
-  Section 5: (T4) bracketed root stability via sign-change + brentq
-  Section 6: (T5) Yukawa-Landau onset at X_pole ~ 1.27
-  Section 7: stability of X* under integrator step size
-  Section 8: SCORECARD
-
-Self-contained: numpy + scipy only.
+The one-loop Yukawa specialization in the companion note is conditional
+symbolic context and is deliberately absent from every numerical test here.
 """
 
 from __future__ import annotations
 
+import argparse
 import math
+import re
 import sys
-import time
+from dataclasses import dataclass
 from pathlib import Path
+from typing import Callable
 
-import numpy as np
-from canonical_plaquette_surface import (
-    CANONICAL_ALPHA_BARE,
-    CANONICAL_ALPHA_LM,
-    CANONICAL_ALPHA_S_V,
-    CANONICAL_PLAQUETTE,
-    CANONICAL_U0,
-)
+import sympy as sp
 
-try:
-    from scipy.integrate import solve_ivp
-    from scipy.optimize import brentq
-except ImportError:
-    print("ERROR: scipy required. pip install scipy")
-    sys.exit(1)
 
-np.set_printoptions(precision=10, linewidth=120)
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md"
+RUNNER = Path(__file__).resolve()
 
-# ── Physical constants (same as parent runner; only used as RGE seeds) ─────
-
-PI = np.pi
-N_C = 3
-M_PL = 1.2209e19           # GeV, unreduced Planck mass
-M_Z = 91.1876               # GeV
-M_T_POLE = 172.69           # GeV (PDG 2024); used ONLY as threshold scale, not as fit target
-M_B_MSBAR = 4.18            # GeV
-M_C_MSBAR = 1.27            # GeV
-
-# Imported implementation constants for the bounded diagnostic.
-PLAQ = CANONICAL_PLAQUETTE
-U0 = CANONICAL_U0
-ALPHA_BARE = CANONICAL_ALPHA_BARE
-ALPHA_LM = CANONICAL_ALPHA_LM
-ALPHA_S_V = ALPHA_BARE / U0**2
-C_APBC = (7.0 / 8.0) ** 0.25
-V_DERIVED = M_PL * C_APBC * ALPHA_LM ** 16
-
-# Lattice couplings
-G_LATTICE = np.sqrt(4 * PI * ALPHA_LM)
-G_S_V = np.sqrt(4 * PI * ALPHA_S_V)
-
-# Ward target
-WARD_TARGET = G_LATTICE / np.sqrt(6.0)
-
-# EW couplings at v (1-loop from M_Z; subdominant, treated as fixed
-# initial-condition surface)
-ALPHA_EM_MZ = 1.0 / 127.951
-SIN2_TW_MZ = 0.23122
-ALPHA_1_MZ_GUT = (5.0 / 3.0) * ALPHA_EM_MZ / (1.0 - SIN2_TW_MZ)
-ALPHA_2_MZ = ALPHA_EM_MZ / SIN2_TW_MZ
-
-b1_ew_dn = -41.0 / 10.0
-b2_ew_dn = 19.0 / 6.0
-L_v_MZ = np.log(V_DERIVED / M_Z)
-inv_a1_v = 1.0 / ALPHA_1_MZ_GUT + b1_ew_dn / (2.0 * PI) * L_v_MZ
-inv_a2_v = 1.0 / ALPHA_2_MZ + b2_ew_dn / (2.0 * PI) * L_v_MZ
-G1_V = np.sqrt(4 * PI / inv_a1_v)
-G2_V = np.sqrt(4 * PI / inv_a2_v)
-LAMBDA_V = 0.129
-
-# Working scan interval, below the sampled Yukawa blow-up-like onset.
-X_LOW = 0.5
-X_HIGH = 1.2
-
-# Extension scan (for T5: locate Yukawa-Landau onset)
-X_EXT_LOW = 1.20
-X_EXT_HIGH = 1.30
-
-# Lipschitz upper-bound claim
-L_BOUND_GLOBAL = 10.0
-L_BOUND_NEAR_ROOT = 1.5
-
-# ── Logging ────────────────────────────────────────────────────────────
-
-results_log = []
-COUNTS = {"PASS": 0, "FAIL": 0}
+FORMULA_MUTATIONS = (
+    "formula_denominator_sign",
+    "formula_j_integrand",
+    "formula_inverse_sign",
+    "formula_derivative_power",
+)
+SOURCE_MUTATIONS = (
+    "source_numeric_import",
+    "source_helper_import",
+    "source_physical_closure",
+    "source_independent_audit_deletion",
+)
+API_MUTATIONS = (
+    "api_nonpositive_b",
+    "api_nonpositive_j",
+    "api_nonpositive_x",
+    "api_nonpositive_y",
+    "api_nonfinite",
+    "api_supercritical_x",
+)
+ALL_MUTATIONS = FORMULA_MUTATIONS + SOURCE_MUTATIONS + API_MUTATIONS
+ACTIVE_MUTATION: str | None = None
 
 
-def log(msg=""):
-    results_log.append(msg)
-    print(msg)
+@dataclass
+class Check:
+    name: str
+    passed: bool
+    detail: str
 
 
-def check(name, condition, detail="", cls="D"):
-    status = "PASS" if condition else "FAIL"
-    COUNTS[status] += 1
-    log(f"  [{status} ({cls})] {name}")
-    if detail:
-        log(f"         {detail}")
+class Recorder:
+    def __init__(self) -> None:
+        self.checks: list[Check] = []
+
+    def add(self, name: str, passed: bool, detail: str) -> None:
+        self.checks.append(Check(name, bool(passed), detail))
+        label = "PASS" if passed else "FAIL"
+        print(f"  [{label}] {name}")
+        print(f"         {detail}")
+
+    @property
+    def failures(self) -> list[Check]:
+        return [check for check in self.checks if not check.passed]
+
+    def finish(self, mode: str) -> int:
+        print("\n" + "=" * 78)
+        print(f"SCORECARD: {mode}")
+        print("=" * 78)
+        print(f"  checks: {len(self.checks)}")
+        print(f"  pass:   {len(self.checks) - len(self.failures)}")
+        print(f"  fail:   {len(self.failures)}")
+        if self.failures:
+            print("RESULT: FAIL")
+            return 1
+        print("RESULT: PASS")
+        return 0
 
 
-# =====================================================================
-# 2-LOOP SM BETA FUNCTIONS (verbatim from frontier_yt_boundary_consistency.py)
-# =====================================================================
+def banner(title: str) -> None:
+    print("\n" + "=" * 78)
+    print(title)
+    print("=" * 78)
 
-def beta_2loop(t, y, n_f=6):
-    """Full 2-loop SM RGEs for (g1, g2, g3, yt, lambda)."""
-    g1, g2, g3, yt, lam = y
-    fac = 1.0 / (16.0 * PI**2)
-    fac2 = fac**2
 
-    g1sq, g2sq, g3sq, ytsq = g1**2, g2**2, g3**2, yt**2
+def _finite_real(name: str, value: float, mutation_key: str | None = None) -> float:
+    if ACTIVE_MUTATION == mutation_key:
+        return float(value)
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        raise TypeError(f"{name} must be a finite real number")
+    converted = float(value)
+    if not math.isfinite(converted):
+        raise ValueError(f"{name} must be finite")
+    return converted
 
-    # 1-loop gauge
-    b1_1 = 41.0 / 10.0
-    b2_1 = -(19.0 / 6.0)
-    b3_1 = -(11.0 - 2.0 * n_f / 3.0)
 
-    beta_g1_1 = b1_1 * g1**3
-    beta_g2_1 = b2_1 * g2**3
-    beta_g3_1 = b3_1 * g3**3
+def _positive(name: str, value: float, mutation_key: str | None = None) -> float:
+    converted = _finite_real(name, value, mutation_key)
+    if ACTIVE_MUTATION != mutation_key and converted <= 0.0:
+        raise ValueError(f"{name} must be positive")
+    return converted
 
-    # 1-loop Yukawa
-    beta_yt_1 = yt * (9.0/2.0 * ytsq
-                      - 17.0/20.0 * g1sq
-                      - 9.0/4.0 * g2sq
-                      - 8.0 * g3sq)
 
-    # 1-loop Higgs quartic
-    lamsq = lam**2
-    beta_lam_1 = (24.0 * lamsq
-                  + 12.0 * lam * ytsq - 6.0 * ytsq**2
-                  - 3.0 * lam * (3.0 * g2sq + g1sq)
-                  + 3.0/8.0 * (2.0 * g2sq**2 + (g2sq + g1sq)**2))
+def endpoint_from_integrals(A_T: float, J_T: float, b: float, X: float) -> float:
+    """Evaluate the exact endpoint on its strict finite-solution domain."""
 
-    # 2-loop gauge
-    beta_g1_2 = g1**3 * (199.0/50.0 * g1sq + 27.0/10.0 * g2sq
-                         + 44.0/5.0 * g3sq - 17.0/10.0 * ytsq)
-    beta_g2_2 = g2**3 * (9.0/10.0 * g1sq + 35.0/6.0 * g2sq
-                         + 12.0 * g3sq - 3.0/2.0 * ytsq)
-    beta_g3_2 = g3**3 * (11.0/10.0 * g1sq + 9.0/2.0 * g2sq
-                         - 26.0 * g3sq - 2.0 * ytsq)
+    A_T = _finite_real("A_T", A_T, "api_nonfinite")
+    J_T = _positive("J_T", J_T, "api_nonpositive_j")
+    b = _positive("b", b, "api_nonpositive_b")
+    X = _positive("X", X, "api_nonpositive_x")
+    if ACTIVE_MUTATION == "api_nonpositive_b" and b <= 0.0:
+        return X * math.exp(A_T)
+    if ACTIVE_MUTATION == "api_nonpositive_j" and J_T <= 0.0:
+        return X * math.exp(A_T)
+    xcrit = 1.0 / math.sqrt(2.0 * b * J_T)
+    if ACTIVE_MUTATION != "api_supercritical_x" and not X < xcrit:
+        raise ValueError("X lies outside the finite endpoint domain")
+    denominator = 1.0 - 2.0 * b * X * X * J_T
+    if ACTIVE_MUTATION == "formula_denominator_sign":
+        denominator = 1.0 + 2.0 * b * X * X * J_T
+    if ACTIVE_MUTATION != "api_supercritical_x" and denominator <= 0.0:
+        raise ValueError("X lies outside the finite endpoint domain")
+    return X * math.exp(A_T) / math.sqrt(abs(denominator))
 
-    # 2-loop Yukawa
-    beta_yt_2 = yt * (
-        -12.0 * ytsq**2
-        + ytsq * (36.0 * g3sq + 225.0/16.0 * g2sq + 131.0/80.0 * g1sq)
-        + 1187.0/216.0 * g1sq**2
-        - 23.0/4.0 * g2sq**2
-        - 108.0 * g3sq**2
-        + 19.0/15.0 * g1sq * g3sq
-        + 9.0/4.0 * g2sq * g3sq
-        + 6.0 * lamsq - 6.0 * lam * ytsq
+
+def inverse_from_integrals(A_T: float, J_T: float, b: float, Y: float) -> float:
+    """Evaluate the exact inverse for a positive endpoint target."""
+
+    A_T = _finite_real("A_T", A_T, "api_nonfinite")
+    J_T = _positive("J_T", J_T, "api_nonpositive_j")
+    b = _positive("b", b, "api_nonpositive_b")
+    Y = _positive("Y", Y, "api_nonpositive_y")
+    sign = -1.0 if ACTIVE_MUTATION == "formula_inverse_sign" else 1.0
+    radicand = math.exp(2.0 * A_T) + sign * 2.0 * b * J_T * Y * Y
+    if radicand <= 0.0:
+        raise ValueError("inverse radicand must be positive")
+    return Y / math.sqrt(radicand)
+
+
+def symbolic_identities(rec: Recorder) -> None:
+    banner("SECTION 1: exact symbolic theorem")
+    t = sp.symbols("t", real=True)
+    X, b, J, Y = sp.symbols("X b J Y", positive=True)
+    A = sp.symbols("A", real=True)
+    a_fun = sp.Function("a")(t)
+    A_fun = sp.Function("A")(t)
+    J_fun = sp.Function("J")(t)
+
+    sign = 1 if ACTIVE_MUTATION == "formula_denominator_sign" else -1
+    D_fun = 1 + sign * 2 * b * X**2 * J_fun
+    y_fun = X * sp.exp(A_fun) / sp.sqrt(D_fun)
+    j_prime = sp.exp(A_fun) if ACTIVE_MUTATION == "formula_j_integrand" else sp.exp(2 * A_fun)
+    residual = sp.diff(y_fun, t) - a_fun * y_fun - b * y_fun**3
+    residual = residual.subs(
+        {
+            sp.diff(A_fun, t): a_fun,
+            sp.diff(J_fun, t): j_prime,
+        }
+    )
+    residual = sp.factor(sp.simplify(residual))
+    rec.add(
+        "exact_ode_residual",
+        residual == 0,
+        f"closed-form substitution leaves residual {residual}",
     )
 
-    dg1 = fac * beta_g1_1 + fac2 * beta_g1_2
-    dg2 = fac * beta_g2_1 + fac2 * beta_g2_2
-    dg3 = fac * beta_g3_1 + fac2 * beta_g3_2
-    dyt = fac * beta_yt_1 + fac2 * beta_yt_2
-    dlam = fac * beta_lam_1
-
-    return [dg1, dg2, dg3, dyt, dlam]
-
-
-def run_rge(y0, t_start, t_end, n_f=6, max_step=0.5):
-    def rhs(t, y):
-        return beta_2loop(t, y, n_f=n_f)
-    sol = solve_ivp(
-        rhs, [t_start, t_end], y0,
-        method='RK45', rtol=1e-9, atol=1e-11,
-        max_step=max_step, dense_output=False
+    z_fun = sp.exp(-2 * A_fun) * (X**-2 - 2 * b * J_fun)
+    z_residual = sp.diff(z_fun, t) + 2 * a_fun * z_fun + 2 * b
+    z_residual = z_residual.subs(
+        {
+            sp.diff(A_fun, t): a_fun,
+            sp.diff(J_fun, t): sp.exp(2 * A_fun),
+        }
     )
-    if not sol.success:
-        raise RuntimeError(f"RGE failed: {sol.message}")
-    return sol
+    z_residual = sp.simplify(z_residual)
+    rec.add(
+        "linearized_z_equation",
+        z_residual == 0,
+        f"z=y^(-2) satisfies z'+2az=-2b exactly; residual {z_residual}",
+    )
+
+    initial = sp.simplify(y_fun.subs({A_fun: 0, J_fun: 0}) - X)
+    rec.add("exact_initial_value", initial == 0, f"y(t0)-X simplifies to {initial}")
+
+    D = 1 + sign * 2 * b * J * X**2
+    phi = X * sp.exp(A) / sp.sqrt(D)
+    derivative_claim = sp.exp(A) * D ** (
+        -sp.Rational(1, 2) if ACTIVE_MUTATION == "formula_derivative_power" else -sp.Rational(3, 2)
+    )
+    derivative_residual = sp.factor(sp.simplify(sp.diff(phi, X) - derivative_claim))
+    rec.add(
+        "exact_positive_derivative",
+        derivative_residual == 0 and sign == -1,
+        f"dPhi/dX matches exp(A) D^(-3/2); residual {derivative_residual}",
+    )
+
+    q = sp.symbols("q", positive=True)
+    e2A = sp.exp(2 * A)
+    transfer_squared = q * e2A / (1 - 2 * b * J * q)
+    inverse_sign = -1 if ACTIVE_MUTATION == "formula_inverse_sign" else 1
+    inverse_squared = Y**2 / (e2A + inverse_sign * 2 * b * J * Y**2)
+    right_inverse = sp.factor(sp.simplify(transfer_squared.subs(q, inverse_squared) - Y**2))
+    rec.add(
+        "exact_right_inverse",
+        right_inverse == 0,
+        f"Phi(X*(Y))^2-Y^2 simplifies to {right_inverse}",
+    )
+    inverse_of_transfer = sp.factor(
+        sp.simplify(
+            inverse_squared.subs(Y**2, transfer_squared) - q,
+        )
+    )
+    rec.add(
+        "exact_left_inverse",
+        inverse_of_transfer == 0,
+        f"X*(Phi(X))^2-X^2 simplifies to {inverse_of_transfer}",
+    )
+
+    xcrit_squared = 1 / (2 * b * J)
+    inverse_gap = sp.factor(sp.simplify(xcrit_squared - inverse_squared))
+    expected_gap = e2A / (2 * b * J * (e2A + 2 * b * J * Y**2))
+    gap_residual = sp.factor(sp.simplify(inverse_gap - expected_gap))
+    rec.add(
+        "inverse_inside_exact_domain",
+        gap_residual == 0,
+        f"Xcrit^2-X*(Y)^2 equals a manifestly positive expression; residual {gap_residual}",
+    )
+
+    epsilon = sp.symbols("epsilon", positive=True)
+    lower_limit = sp.simplify(sp.limit(X * sp.exp(A) / sp.sqrt(1 - 2 * b * J * X**2), X, 0, dir="+"))
+    # Set X^2=(1-epsilon)Xcrit^2.  The positive endpoint's square is then
+    # manifestly positive, avoiding an ambiguous complex square-root branch.
+    upper_squared = sp.exp(2 * A) * (1 - epsilon) / (2 * b * J * epsilon)
+    upper_limit_squared = sp.limit(upper_squared, epsilon, 0, dir="+")
+    rec.add(
+        "exact_range_limits",
+        lower_limit == 0 and upper_limit_squared == sp.oo,
+        f"lower endpoint limit is {lower_limit}; positive endpoint square tends to {upper_limit_squared}",
+    )
+
+    fixture_subcritical = sp.simplify(
+        endpoint_symbolic(sp.Integer(0), sp.Integer(1), sp.Integer(1), sp.Rational(1, 2))
+        - 1 / sp.sqrt(2)
+    )
+    rec.add(
+        "exact_subcritical_fixture",
+        fixture_subcritical == 0,
+        f"a=0, b=1, interval length 1 gives the exact subcritical endpoint; residual {fixture_subcritical}",
+    )
+    rec.add(
+        "exact_critical_and_supercritical_boundary",
+        (1 - 2 * sp.Rational(1, 2)) == 0 and (1 - 2 * sp.Rational(4, 5)) < 0,
+        "the denominator is zero at X=1/sqrt(2) and negative at X=sqrt(4/5)",
+    )
+    negative_b_limit = sp.limit(X / sp.sqrt(1 + 2 * X**2), X, sp.oo)
+    rec.add(
+        "sign_boundary_counterfixture",
+        negative_b_limit == 1 / sp.sqrt(2),
+        f"for b=-1 the increasing transfer has finite limiting range {negative_b_limit}, so b>0 is load-bearing",
+    )
 
 
-def run_with_thresholds(y0, t_start, t_end, max_step=0.5):
-    """Backward (or forward) run with SM threshold matching."""
-    running_down = t_start > t_end
+def endpoint_symbolic(A_T: sp.Expr, J_T: sp.Expr, b: sp.Expr, X: sp.Expr) -> sp.Expr:
+    sign = 1 if ACTIVE_MUTATION == "formula_denominator_sign" else -1
+    return X * sp.exp(A_T) / sp.sqrt(1 + sign * 2 * b * X**2 * J_T)
 
-    thresholds = [
-        (np.log(M_T_POLE), 6, 5),
-        (np.log(M_B_MSBAR), 5, 4),
-        (np.log(M_C_MSBAR), 4, 3),
+
+def _forbidden_source_tokens() -> tuple[str, ...]:
+    # Split literals keep the runner itself from matching its hostile fixtures.
+    numeric_imports = (
+        "0.59" + "34",
+        "0.43" + "577",
+        "0.97" + "267",
+        "246" + "." + "28",
+        "1.2209" + "e19",
+        "91." + "1876",
+        "172" + "." + "69",
+        "127" + "." + "951",
+        "0.231" + "22",
+    )
+    helper_imports = (
+        "canonical" + "_" + "plaquette_surface",
+        "WARD" + "_" + "TARGET",
+        "M" + "_" + "PL",
+        "run" + "_" + "with_thresholds",
+        "beta" + "_" + "2loop",
+    )
+    physical_overclaims = (
+        "closes the parent " + "YT boundary theorem",
+        "proves the " + "Standard Model boundary condition",
+        "derives the " + "Ward target",
+    )
+    return numeric_imports + helper_imports + physical_overclaims
+
+
+def source_firewall_violations(note_text: str, runner_text: str) -> list[str]:
+    combined = note_text + "\n" + runner_text
+    violations = [token for token in _forbidden_source_tokens() if token in combined]
+    normalized_note = " ".join(note_text.split())
+    required_note_phrases = (
+        "independent review and independent audit are required",
+        "This theorem supplies no Planck-scale, Ward-target, Standard-Model, or parent-lane closure.",
+        "conditional symbolic context only",
+        "strictly increasing bijection",
+        "X_crit",
+    )
+    violations.extend(f"missing:{phrase}" for phrase in required_note_phrases if phrase not in normalized_note)
+    return violations
+
+
+def mutated_sources(fixture: str, note_text: str, runner_text: str) -> tuple[str, str]:
+    if fixture == "source_numeric_import":
+        note_text += "\nimported benchmark = " + ("0.43" + "577")
+    elif fixture == "source_helper_import":
+        runner_text += "\nfrom " + ("canonical" + "_" + "plaquette_surface") + " import value"
+    elif fixture == "source_physical_closure":
+        note_text += "\n" + ("closes the parent " + "YT boundary theorem")
+    elif fixture == "source_independent_audit_deletion":
+        note_text = re.sub(
+            r"independent review and independent audit are\s+required",
+            "review pending",
+            note_text,
+            count=1,
+        )
+    return note_text, runner_text
+
+
+def source_firewall(rec: Recorder) -> None:
+    banner("SECTION 2: source and import firewall")
+    note_text = NOTE.read_text(encoding="utf-8")
+    runner_text = RUNNER.read_text(encoding="utf-8")
+    if ACTIVE_MUTATION in SOURCE_MUTATIONS:
+        note_text, runner_text = mutated_sources(ACTIVE_MUTATION, note_text, runner_text)
+    violations = source_firewall_violations(note_text, runner_text)
+    rec.add(
+        "source_firewall",
+        not violations,
+        "no physical boundary values/helpers/closure claims enter the theorem source"
+        if not violations
+        else "violations: " + ", ".join(violations),
+    )
+    rec.add(
+        "source_graph_is_self_contained",
+        ("canonical" + "_" + "plaquette_surface") not in runner_text
+        and ("frontier" + "_" + "yt_boundary_consistency") not in runner_text,
+        "runner imports no parent or physical-value helper",
+    )
+
+
+def strict_api_checks(rec: Recorder) -> None:
+    banner("SECTION 3: strict theorem API")
+    endpoint = endpoint_from_integrals(0.2, 0.7, 0.4, 0.5)
+    inverse = inverse_from_integrals(0.2, 0.7, 0.4, endpoint)
+    rec.add(
+        "api_roundtrip",
+        math.isclose(inverse, 0.5, rel_tol=2e-14, abs_tol=2e-14),
+        f"valid endpoint/inverse roundtrip error {abs(inverse - 0.5):.3e}",
+    )
+
+    invalid_calls: list[tuple[str, Callable[[], float]]] = [
+        ("nonpositive_b", lambda: endpoint_from_integrals(0.0, 1.0, 0.0, 0.2)),
+        ("nonpositive_j", lambda: endpoint_from_integrals(0.0, 0.0, 1.0, 0.2)),
+        ("nonpositive_x", lambda: endpoint_from_integrals(0.0, 1.0, 1.0, 0.0)),
+        ("nonpositive_y", lambda: inverse_from_integrals(0.0, 1.0, 1.0, 0.0)),
+        ("nonfinite", lambda: endpoint_from_integrals(math.nan, 1.0, 1.0, 0.2)),
+        ("boolean", lambda: endpoint_from_integrals(0.0, 1.0, True, 0.2)),
+        ("outside_domain", lambda: endpoint_from_integrals(0.0, 1.0, 1.0, 1.0)),
     ]
-    if running_down:
-        thresholds.sort(key=lambda x: -x[0])
-    else:
-        thresholds.sort(key=lambda x: x[0])
-
-    active_thresholds = []
-    for t_th, nf_above, nf_below in thresholds:
-        if running_down:
-            if t_end < t_th < t_start:
-                active_thresholds.append((t_th, nf_above, nf_below))
-        else:
-            if t_start < t_th < t_end:
-                active_thresholds.append((t_th, nf_above, nf_below))
-
-    mu_start = np.exp(t_start)
-    if mu_start > M_T_POLE:
-        nf_current = 6
-    elif mu_start > M_B_MSBAR:
-        nf_current = 5
-    elif mu_start > M_C_MSBAR:
-        nf_current = 4
-    else:
-        nf_current = 3
-
-    segments = []
-    current_t = t_start
-    for t_th, nf_above, nf_below in active_thresholds:
-        segments.append((current_t, t_th, nf_current))
-        current_t = t_th
-        nf_current = nf_below if running_down else nf_above
-    segments.append((current_t, t_end, nf_current))
-
-    y_current = list(y0)
-    for t_s, t_e, nf in segments:
-        if abs(t_s - t_e) < 1e-10:
-            continue
-        sol = run_rge(y_current, t_s, t_e, n_f=nf, max_step=max_step)
-        y_current = list(sol.y[:, -1])
-    return np.array(y_current)
+    for name, call in invalid_calls:
+        rejected = False
+        try:
+            call()
+        except (TypeError, ValueError):
+            rejected = True
+        rec.add(
+            f"api_rejects_{name}",
+            rejected,
+            "invalid input rejected before theorem evaluation" if rejected else "invalid input was accepted",
+        )
 
 
-# =====================================================================
-# The map Phi : X -> y_t(M_Pl) (backward run from t_v to t_Pl)
-# =====================================================================
+def independent_numerical_oracles(rec: Recorder) -> None:
+    banner("SECTION 4: independent synthetic numerical oracles")
+    try:
+        from scipy.integrate import quad, solve_ivp
+    except ImportError as exc:  # pragma: no cover - dependency failure is explicit
+        rec.add("scipy_available", False, str(exc))
+        return
 
-t_v = np.log(V_DERIVED)
-t_Pl = np.log(M_PL)
-
-
-def Phi(X, max_step=1.0):
-    """Backward-RGE map y_t(v) = X -> y_t(M_Pl)."""
-    y0 = [G1_V, G2_V, G_S_V, float(X), LAMBDA_V]
-    y_Pl = run_with_thresholds(y0, t_v, t_Pl, max_step=max_step)
-    return float(y_Pl[3])
-
-
-def max_yt_on_trajectory(X, max_step=1.0):
-    """Return max |y_t| on the trajectory from t_v to t_Pl."""
-    y0 = [G1_V, G2_V, G_S_V, float(X), LAMBDA_V]
-    def rhs(t, y):
-        return beta_2loop(t, y, n_f=6)
-    sol = solve_ivp(
-        rhs, [t_v, t_Pl], y0,
-        method='RK45', rtol=1e-9, atol=1e-11,
-        max_step=max_step, dense_output=False
+    profiles: tuple[tuple[str, Callable[[float], float], float, float, float], ...] = (
+        ("affine", lambda t: 0.12 - 0.08 * t, 0.0, 1.3, 0.45),
+        ("oscillatory", lambda t: -0.17 + 0.09 * math.sin(2.3 * t), -0.4, 0.9, 0.7),
+        ("quadratic", lambda t: 0.05 + 0.04 * t * t, 0.2, 1.1, 0.35),
     )
-    if not sol.success:
-        return float('inf')
-    return float(np.max(np.abs(sol.y[3])))
+    for label, a_function, t0, T, b_value in profiles:
+        A_T = quad(a_function, t0, T, epsabs=2e-13, epsrel=2e-13, limit=200)[0]
+
+        def A_at(s: float) -> float:
+            return quad(a_function, t0, s, epsabs=3e-13, epsrel=3e-13, limit=200)[0]
+
+        J_T = quad(lambda s: math.exp(2.0 * A_at(s)), t0, T, epsabs=3e-12, epsrel=3e-12, limit=200)[0]
+        xcrit = 1.0 / math.sqrt(2.0 * b_value * J_T)
+        fractions = (0.12, 0.31, 0.57, 0.79)
+        formula_values: list[float] = []
+        max_error = 0.0
+        for fraction in fractions:
+            X = fraction * xcrit
+            direct = solve_ivp(
+                lambda t, state: [a_function(t) * state[0] + b_value * state[0] ** 3],
+                (t0, T),
+                [X],
+                method="DOP853",
+                rtol=2e-12,
+                atol=2e-14,
+            )
+            if not direct.success:
+                max_error = math.inf
+                break
+            formula = endpoint_from_integrals(A_T, J_T, b_value, X)
+            formula_values.append(formula)
+            max_error = max(max_error, abs(direct.y[0, -1] - formula))
+        rec.add(
+            f"numeric_direct_ode_{label}",
+            max_error < 2e-9,
+            f"independent solve_ivp versus quadrature formula max error {max_error:.3e}",
+        )
+        rec.add(
+            f"numeric_monotonicity_{label}",
+            len(formula_values) == len(fractions)
+            and all(left < right for left, right in zip(formula_values, formula_values[1:])),
+            "synthetic endpoint values increase across the independent grid",
+        )
+
+        X = 0.43 * xcrit
+        step = 2e-6 * xcrit
+        finite_difference = (
+            endpoint_from_integrals(A_T, J_T, b_value, X + step)
+            - endpoint_from_integrals(A_T, J_T, b_value, X - step)
+        ) / (2.0 * step)
+        derivative = math.exp(A_T) / (1.0 - 2.0 * b_value * J_T * X * X) ** 1.5
+        rec.add(
+            f"numeric_derivative_{label}",
+            math.isclose(finite_difference, derivative, rel_tol=2e-9, abs_tol=2e-9),
+            f"finite-difference versus exact derivative relative error {abs(finite_difference / derivative - 1.0):.3e}",
+        )
+
+        targets = (0.08, 0.6, 2.4, 9.0)
+        roundtrip_error = 0.0
+        for target in targets:
+            preimage = inverse_from_integrals(A_T, J_T, b_value, target)
+            roundtrip_error = max(
+                roundtrip_error,
+                abs(endpoint_from_integrals(A_T, J_T, b_value, preimage) - target),
+            )
+        rec.add(
+            f"numeric_inverse_{label}",
+            roundtrip_error < 2e-12,
+            f"positive-target inverse roundtrip max error {roundtrip_error:.3e}",
+        )
 
 
-# =====================================================================
-print("=" * 78)
-print("BOUNDARY BC-TRANSFER FINITE-GRID DIAGNOSTIC")
-print("=" * 78)
-print()
-t0 = time.time()
-
-# =====================================================================
-log("=" * 78)
-log("SECTION 0: Source-boundary checks")
-log("=" * 78)
-log()
-note_text = NOTE.read_text(encoding="utf-8")
-note_flat = " ".join(note_text.split())
-check(
-    "section0_2026_06_07_boundary_present",
-    "2026-06-07 Implementation-Input Boundary Retargeting" in note_text,
-    "source note carries the implementation-input retargeting section",
-)
-check(
-    "section0_source_status_is_conditional_support",
-    "**Claim type:** bounded_theorem" in note_text
-    and "**Type:** bounded_theorem" in note_text
-    and "conditional finite-grid implementation diagnostic only" in note_flat
-    and "not a continuum uniqueness theorem, physical BC-transfer theorem" in note_flat
-    and "No new axiom, retained bridge, downstream status, ledger tag, or publication" in note_flat,
-    "source type/status matches the finite-grid implementation boundary",
-)
-check(
-    "section0_imports_are_implementation_inputs",
-    "visible" in note_text
-    and "declared implementation inputs" in note_text
-    and "declared/admitted implementation inputs for this bounded" in note_text,
-    "canonical plaquette and Ward target are not proof authorities for this row",
-)
-check(
-    "section0_continuum_claims_excluded",
-    "does not assert continuum" in note_text
-    and "unique-root closure" in note_text
-    and "does not claim continuum monotonicity, exact continuum uniqueness" in note_text,
-    "finite grid diagnostic only",
-)
-check(
-    "section0_declared_inputs_enumerated",
-    all(token in note_text for token in ("**I1:**", "**I2:**", "**I3:**", "**I4:**", "**I5:**")),
-    "plaquette, Ward target, RGE, thresholds, and EW initial conditions are enumerated",
-)
-check(
-    "section0_inputs_admitted_not_retained",
-    "2026-06-20 Source-Boundary Repair" in note_text
-    and "None of `I1`–`I5` carries a retained-grade dependency edge" in note_flat
-    and "supplied/" in note_flat and "admitted inputs" in note_flat
-    and "finite-grid numerical diagnostic conditional on `I1`–`I5`" in note_flat
-    and "not a retained-grade theorem" in note_flat,
-    "I1-I5 are admitted (not retained-grade, not self-contained-derived); result is conditional finite-grid diagnostic",
-)
-check(
-    "section0_runner_count_updated",
-    "Counts: 31 PASS, 0 FAIL" in note_text,
-    "note scorecard matches source-boundary runner",
-)
-check(
-    "section0_no_retained_input_overclaim",
-    "cited as retained inputs" not in note_text,
-    "old retained-input wording removed",
-)
-log()
-
-# =====================================================================
-log("=" * 78)
-log("SECTION 1: Imported numeric inputs")
-log("=" * 78)
-log()
-log(f"  alpha_LM             = {ALPHA_LM:.6f}     (imported from canonical_plaquette_surface)")
-log(f"  alpha_s(v) = CMT     = {ALPHA_S_V:.6f}     (block 10 narrow, alpha_bare/u_0^2)")
-log(f"  g_lattice(M_Pl)      = {G_LATTICE:.6f}     (sqrt(4 pi alpha_LM))")
-log(f"  Ward target y_t(M_Pl) = g_lattice/sqrt(6)  = {WARD_TARGET:.6f}")
-log(f"  v_derived             = {V_DERIVED:.4e} GeV (hierarchy theorem)")
-log(f"  ln(M_Pl / v_derived)  = {t_Pl - t_v:.3f}   (17-decade segment)")
-log()
-log(f"  Scan interval X = y_t(v) in [{X_LOW}, {X_HIGH}]")
-log(f"  Chosen below Yukawa-Landau-like onset at X_pole ~ 1.27 (see (T5))")
-log()
-
-check(
-    "section1_v_derived_matches_canonical",
-    abs(V_DERIVED - 246.28) / 246.28 < 0.01,
-    f"v_derived = {V_DERIVED:.2f} GeV matches canonical 246.28 GeV",
-)
-check(
-    "section1_ward_target_value",
-    abs(WARD_TARGET - 0.43577) < 5e-4,
-    f"WARD_TARGET = {WARD_TARGET:.6f} matches 0.43577 to 5e-4",
-)
-check(
-    "section1_gv_ordering",
-    G_S_V > G2_V > G1_V,
-    f"g3(v)={G_S_V:.4f} > g2(v)={G2_V:.4f} > g1(v)={G1_V:.4f}  (expected SM ordering)",
-)
-log()
+def hostile_formula_checks(rec: Recorder) -> None:
+    banner("SECTION 5: hostile formula mutations")
+    X, b, J, Y = sp.symbols("X b J Y", positive=True)
+    A = sp.symbols("A", real=True)
+    e2A = sp.exp(2 * A)
+    exact_squared = X**2 * e2A / (1 - 2 * b * J * X**2)
+    mutations = {
+        "denominator_plus_sign": X**2 * e2A / (1 + 2 * b * J * X**2),
+        "missing_factor_two_in_J": X**2 * e2A / (1 - b * J * X**2),
+        "wrong_inverse_sign": Y**2 / (e2A - 2 * b * J * Y**2),
+        "wrong_derivative_power": sp.exp(A) / sp.sqrt(1 - 2 * b * J * X**2),
+    }
+    exact_derivative = sp.diff(sp.sqrt(exact_squared), X)
+    for name, mutation in mutations.items():
+        if name == "wrong_inverse_sign":
+            composed = sp.factor(sp.simplify(exact_squared.subs(X**2, mutation) - Y**2))
+            detected = composed != 0
+            detail = f"wrong inverse leaves composition residual {composed}"
+        elif name == "wrong_derivative_power":
+            residual = sp.factor(sp.simplify(exact_derivative - mutation))
+            detected = residual != 0
+            detail = f"wrong derivative leaves residual {residual}"
+        else:
+            residual = sp.factor(sp.simplify(exact_squared - mutation))
+            detected = residual != 0
+            detail = f"mutated transfer differs exactly; residual {residual}"
+        rec.add(f"rejects_{name}", detected, detail)
 
 
-# =====================================================================
-log("=" * 78)
-log("SECTION 2: (T1) Globalness / max|y_t| bounded on [0.5, 1.2]")
-log("=" * 78)
-log()
-log("  Sample max|y_t| on trajectory across X grid; verify bounded.")
-log()
-
-X_grid_coarse = np.linspace(X_LOW, X_HIGH, 8)
-max_yt_arr = []
-for X in X_grid_coarse:
-    m_yt = max_yt_on_trajectory(X, max_step=1.0)
-    max_yt_arr.append(m_yt)
-    log(f"    X = {X:.3f}:  max|y_t on trajectory| = {m_yt:.4f}")
-
-max_yt_arr = np.array(max_yt_arr)
-log()
-log(f"  Max-of-max|y_t| across grid: {max_yt_arr.max():.4f}")
-log()
-
-check(
-    "T1_all_trajectories_finite",
-    np.all(np.isfinite(max_yt_arr)),
-    "All trajectories finite (no integrator blow-up) across the scan grid",
-)
-check(
-    "T1_max_yt_bounded_by_X_HIGH_plus_eps",
-    max_yt_arr.max() < X_HIGH + 0.05,
-    f"max|y_t| = {max_yt_arr.max():.4f} < {X_HIGH + 0.05} across [0.5, 1.2] (no upward amplification)",
-)
-check(
-    "T1_max_yt_no_amplification",
-    bool(np.all(max_yt_arr <= np.array(X_grid_coarse) + 0.03)),
-    f"max|y_t| on trajectory <= X + 0.03 across the grid (trajectory does NOT exceed initial value within tolerance)",
-)
-check(
-    "T1_max_yt_starts_at_X",
-    abs(max_yt_arr[0] - X_LOW) < 0.02 and abs(max_yt_arr[-1] - X_HIGH) < 0.04,
-    f"max|y_t| at endpoints tracks X (no spurious amplification at low X)",
-)
-log()
+def hostile_source_checks(rec: Recorder) -> None:
+    banner("SECTION 6: hostile source mutations")
+    note_text = NOTE.read_text(encoding="utf-8")
+    runner_text = RUNNER.read_text(encoding="utf-8")
+    for fixture in SOURCE_MUTATIONS:
+        changed_note, changed_runner = mutated_sources(fixture, note_text, runner_text)
+        violations = source_firewall_violations(changed_note, changed_runner)
+        rec.add(
+            f"rejects_{fixture}",
+            bool(violations),
+            "source firewall reports: " + ", ".join(violations),
+        )
 
 
-# =====================================================================
-log("=" * 78)
-log("SECTION 3: (T2) Finite-grid monotonicity on 33-point grid")
-log("=" * 78)
-log()
-log("  Compute Phi on a finite X-grid; verify all sampled forward differences are positive.")
-log()
-
-X_grid_fine = np.linspace(X_LOW, X_HIGH, 33)
-Phi_vals = np.array([Phi(X, max_step=1.0) for X in X_grid_fine])
-
-log(f"  Sample of (X, Phi(X)):")
-for i in range(0, len(X_grid_fine), 4):
-    log(f"    X = {X_grid_fine[i]:.4f}  ->  Phi = {Phi_vals[i]:.6f}")
-log(f"    X = {X_grid_fine[-1]:.4f}  ->  Phi = {Phi_vals[-1]:.6f}")
-log()
-
-diffs = np.diff(Phi_vals)
-n_increasing = int(np.sum(diffs > 0))
-n_decreasing = int(np.sum(diffs <= 0))
-
-log(f"  Of {len(diffs)} forward differences:")
-log(f"    {n_increasing} positive forward differences")
-log(f"    {n_decreasing} non-increasing")
-log()
-
-check(
-    "T2_grid_monotonicity",
-    n_decreasing == 0 and n_increasing == len(diffs),
-    f"All {len(diffs)} sampled forward differences > 0 on the 33-point grid",
-)
-check(
-    "T2_endpoint_ordering",
-    Phi_vals[0] < Phi_vals[-1],
-    f"Phi({X_LOW}) = {Phi_vals[0]:.6f} < Phi({X_HIGH}) = {Phi_vals[-1]:.6f}",
-)
-check(
-    "T2_min_forward_diff_positive",
-    diffs.min() > 0,
-    f"min forward diff = {diffs.min():.6e} > 0",
-)
-log()
+def hostile_api_checks(rec: Recorder) -> None:
+    banner("SECTION 7: hostile API mutations")
+    calls: tuple[tuple[str, Callable[[], float]], ...] = (
+        ("zero_b", lambda: endpoint_from_integrals(0.0, 1.0, 0.0, 0.2)),
+        ("negative_b", lambda: endpoint_from_integrals(0.0, 1.0, -1.0, 0.2)),
+        ("zero_j", lambda: endpoint_from_integrals(0.0, 0.0, 1.0, 0.2)),
+        ("zero_x", lambda: endpoint_from_integrals(0.0, 1.0, 1.0, 0.0)),
+        ("zero_y", lambda: inverse_from_integrals(0.0, 1.0, 1.0, 0.0)),
+        ("nan", lambda: endpoint_from_integrals(math.nan, 1.0, 1.0, 0.2)),
+        ("infinity", lambda: inverse_from_integrals(0.0, math.inf, 1.0, 0.2)),
+        ("boolean", lambda: endpoint_from_integrals(0.0, 1.0, True, 0.2)),
+        ("critical", lambda: endpoint_from_integrals(0.0, 1.0, 1.0, 1.0 / math.sqrt(2.0))),
+        ("supercritical", lambda: endpoint_from_integrals(0.0, 1.0, 1.0, 1.0)),
+    )
+    for name, call in calls:
+        rejected = False
+        try:
+            call()
+        except (TypeError, ValueError):
+            rejected = True
+        rec.add(
+            f"rejects_api_{name}",
+            rejected,
+            "invalid theorem input rejected" if rejected else "invalid theorem input was accepted",
+        )
 
 
-# =====================================================================
-log("=" * 78)
-log("SECTION 4: (T3) Lipschitz constant L from finite differences")
-log("=" * 78)
-log()
-log("  L_observed = max |Phi(X1) - Phi(X2)| / |X1 - X2| over the working grid.")
-log()
-
-# Global Lipschitz on fine grid
-dX = X_grid_fine[1] - X_grid_fine[0]
-local_L_global = np.abs(diffs) / dX
-L_observed_global = float(local_L_global.max())
-L_observed_global_min = float(local_L_global.min())
-
-log(f"  Global samples on [{X_LOW}, {X_HIGH}]:")
-log(f"    max local L  = {L_observed_global:.4f}")
-log(f"    min local L  = {L_observed_global_min:.4f}")
-log(f"    mean local L = {local_L_global.mean():.4f}")
-log()
-
-# Near-root tight sample on [0.9, 1.0]
-X_near = np.linspace(0.9, 1.0, 21)
-Phi_near = np.array([Phi(X, max_step=1.0) for X in X_near])
-local_L_near = np.diff(Phi_near) / np.diff(X_near)
-L_observed_near = float(local_L_near.max())
-L_observed_near_min = float(local_L_near.min())
-
-log(f"  Near-root samples on [0.9, 1.0]:")
-log(f"    max local L  = {L_observed_near:.4f}")
-log(f"    min local L  = {L_observed_near_min:.4f}")
-log(f"    mean local L = {local_L_near.mean():.4f}")
-log()
-log(f"  Interpretation: near the root, a 1% perturbation in y_t(M_Pl)")
-log(f"                  corresponds to ~ 1/L_observed_near = {1.0/L_observed_near:.3f}")
-log(f"                  sensitivity in y_t(v).")
-log()
-
-check(
-    "T3_lipschitz_finite_global",
-    np.isfinite(L_observed_global) and L_observed_global > 0,
-    f"L_observed_global = {L_observed_global:.4f} (finite, positive)",
-)
-check(
-    "T3_lipschitz_global_below_bound",
-    L_observed_global < L_BOUND_GLOBAL,
-    f"L_observed_global = {L_observed_global:.4f} < {L_BOUND_GLOBAL} (declared diagnostic bound)",
-)
-check(
-    "T3_lipschitz_lower_bound_positive",
-    L_observed_global_min > 0,
-    f"min local L = {L_observed_global_min:.4f} > 0 (no zero-derivative points)",
-)
-check(
-    "T3_lipschitz_near_root_below_bound",
-    L_observed_near < L_BOUND_NEAR_ROOT,
-    f"L_observed_near = {L_observed_near:.4f} < {L_BOUND_NEAR_ROOT} (declared near-root diagnostic bound)",
-)
-log()
+def run_exact() -> int:
+    rec = Recorder()
+    banner("UNIVERSAL SCALAR BOUNDARY-TRANSFER EXACT VERIFIER")
+    symbolic_identities(rec)
+    source_firewall(rec)
+    strict_api_checks(rec)
+    return rec.finish("exact")
 
 
-# =====================================================================
-log("=" * 78)
-log("SECTION 5: (T4) Bracketed root stability via sign-change + brentq")
-log("=" * 78)
-log()
-log("  Sign change: verify Phi(X_LOW) < WARD_TARGET < Phi(X_HIGH)")
-log()
-log(f"    Phi({X_LOW}) = {Phi_vals[0]:.6f}")
-log(f"    WARD_TARGET = {WARD_TARGET:.6f}")
-log(f"    Phi({X_HIGH}) = {Phi_vals[-1]:.6f}")
-log()
-
-sign_change = (Phi_vals[0] < WARD_TARGET < Phi_vals[-1])
-check(
-    "T4_sign_change_in_interval",
-    sign_change,
-    f"Sign change Phi(X_LOW)={Phi_vals[0]:.4f} < {WARD_TARGET:.4f} < Phi(X_HIGH)={Phi_vals[-1]:.4f}",
-)
-
-# Find root via brentq on full interval
-def residual(X):
-    return Phi(X) - WARD_TARGET
-
-X_star_full = brentq(residual, X_LOW, X_HIGH, xtol=1e-10)
-log(f"  brentq on [{X_LOW}, {X_HIGH}]:  X* = {X_star_full:.10f}")
-log(f"                                  Phi(X*) = {Phi(X_star_full):.10f}")
-log(f"                                  residual = {Phi(X_star_full) - WARD_TARGET:.2e}")
-log()
-
-# Check root stability by also finding the bracketed root on three different
-# sign-changing subintervals that each contain X*:
-subintervals = [
-    (X_LOW, 1.1),
-    (0.7, X_HIGH),
-    (0.85, 1.1),
-]
-sub_roots = []
-log("  Independence-of-subinterval check:")
-for lo, hi in subintervals:
-    res_lo = Phi(lo) - WARD_TARGET
-    res_hi = Phi(hi) - WARD_TARGET
-    if res_lo * res_hi < 0:
-        X_sub = brentq(residual, lo, hi, xtol=1e-10)
-        sub_roots.append(X_sub)
-        log(f"    [{lo}, {hi}]:  X* = {X_sub:.10f}")
-    else:
-        log(f"    [{lo}, {hi}]:  no sign change in subinterval (SKIPPED)")
-
-sub_roots_arr = np.array(sub_roots)
-max_root_spread = float(np.max(sub_roots_arr) - np.min(sub_roots_arr)) if len(sub_roots) > 1 else 0.0
-log()
-log(f"  Max spread across subinterval roots: {max_root_spread:.2e}")
-log()
-
-check(
-    "T4_all_subintervals_with_signchange_agree",
-    max_root_spread < 1e-7,
-    f"All {len(sub_roots)} sub-roots agree to {max_root_spread:.2e}",
-)
-
-root_stability_claim = (n_decreasing == 0) and sign_change and max_root_spread < 1e-7
-check(
-    "T4_grid_root_bracketed_by_sampled_monotonicity",
-    root_stability_claim,
-    "Sampled monotonicity + sign change + subinterval agreement support a stable bracketed root; not a continuum uniqueness proof",
-)
-
-# Numerical value of X*
-check(
-    "T4_X_star_value_near_0p973",
-    abs(X_star_full - 0.973) < 5e-3,
-    f"X* = {X_star_full:.6f} matches parent runner value 0.973 (to 5e-3)",
-)
-log()
+def run_independent() -> int:
+    rec = Recorder()
+    banner("INDEPENDENT SYNTHETIC NUMERICAL ORACLES")
+    independent_numerical_oracles(rec)
+    return rec.finish("independent")
 
 
-# =====================================================================
-log("=" * 78)
-log("SECTION 6: (T5) Yukawa-Landau onset at X_pole ~ 1.27")
-log("=" * 78)
-log()
-log("  Extend the scan into [1.20, 1.30] and locate the Yukawa-Landau-like")
-log("  onset to verify that the chosen scan interval [0.5, 1.2] lies below")
-log("  the sampled blow-up-like region.")
-log()
-
-X_ext = np.arange(X_EXT_LOW, X_EXT_HIGH + 0.001, 0.01)
-Phi_ext = np.array([Phi(X, max_step=1.0) for X in X_ext])
-max_yt_ext = np.array([max_yt_on_trajectory(X, max_step=1.0) for X in X_ext])
-
-log(f"  Extension scan in [{X_EXT_LOW}, {X_EXT_HIGH}]:")
-for i, X in enumerate(X_ext):
-    log(f"    X = {X:.3f}:  Phi = {Phi_ext[i]:8.3f}    max|y_t| = {max_yt_ext[i]:9.3f}")
-log()
-
-# Locate "pole" as the first X where Phi exceeds 5 (well above the working
-# range and clearly into Landau-pole-like blow-up)
-pole_idx = int(np.argmax(Phi_ext > 5.0))
-if Phi_ext[pole_idx] > 5.0:
-    X_pole = float(X_ext[pole_idx])
-    log(f"  First X in extension with Phi > 5:  X_pole ~ {X_pole:.3f}")
-    log(f"  Phi(X_pole)                          = {Phi_ext[pole_idx]:.3f}")
-else:
-    X_pole = float('inf')
-    log(f"  No Phi > 5 in extension scan (no Landau onset detected up to {X_EXT_HIGH})")
-log()
-
-check(
-    "T5_phi_at_X12_bounded",
-    Phi_ext[0] < 2.0,
-    f"Phi({X_EXT_LOW}) = {Phi_ext[0]:.4f} < 2.0 (chosen scan boundary still well-behaved)",
-)
-check(
-    "T5_yukawa_landau_pole_exists_in_extension",
-    np.isfinite(X_pole) and X_pole > X_HIGH,
-    f"Yukawa-Landau onset detected at X_pole = {X_pole:.3f} > X_HIGH = {X_HIGH} (extension shows blow-up)",
-)
-check(
-    "T5_scan_interval_strictly_below_pole",
-    X_pole > X_HIGH,
-    f"Scan interval [0.5, {X_HIGH}] strictly below X_pole = {X_pole:.3f}",
-)
-check(
-    "T5_root_well_inside_well_defined_region",
-    X_pole - X_star_full > 0.25,
-    f"X_pole - X* = {X_pole - X_star_full:.3f} > 0.25 (root sits well inside well-defined region)",
-)
-log()
+def run_hostile() -> int:
+    rec = Recorder()
+    banner("HOSTILE MUTATION SUITE")
+    hostile_formula_checks(rec)
+    hostile_source_checks(rec)
+    hostile_api_checks(rec)
+    return rec.finish("hostile")
 
 
-# =====================================================================
-log("=" * 78)
-log("SECTION 7: Stability of X* under integrator step size")
-log("=" * 78)
-log()
-log("  Refine integrator max_step; X* should be stable to <= 1e-5.")
-log()
+def run_intentional_failure(fixture: str) -> int:
+    global ACTIVE_MUTATION
+    fixtures = ALL_MUTATIONS if fixture == "all" else (fixture,)
+    detected = 0
+    banner("INTENTIONAL-FAILURE MUTATION INSTALLER")
+    for installed in fixtures:
+        ACTIVE_MUTATION = installed
+        rec = Recorder()
+        if installed in FORMULA_MUTATIONS:
+            symbolic_identities(rec)
+        elif installed in SOURCE_MUTATIONS:
+            source_firewall(rec)
+        else:
+            strict_api_checks(rec)
+        if rec.failures:
+            detected += 1
+            print(f"  [DETECTED] {installed}: {len(rec.failures)} theorem check(s) failed")
+        else:
+            print(f"  [UNDETECTED] {installed}: mutation escaped all theorem checks")
+        ACTIVE_MUTATION = None
+    print(f"\nmutations installed: {len(fixtures)}; detected: {detected}")
+    if detected != len(fixtures):
+        print("RESULT: MUTATION ESCAPED")
+        return 2
+    print("RESULT: INTENTIONAL FAILURE (all installed mutations detected)")
+    return 1
 
-X_star_by_step = []
-for max_s in [2.0, 1.0, 0.5, 0.2]:
-    def residual_s(X, ms=max_s):
-        return Phi(X, max_step=ms) - WARD_TARGET
-    X_s = brentq(residual_s, X_LOW, X_HIGH, xtol=1e-10)
-    X_star_by_step.append((max_s, X_s))
-    log(f"    max_step = {max_s:.2f}:  X* = {X_s:.10f}")
 
-X_values = np.array([xs for _, xs in X_star_by_step])
-X_spread = float(np.max(X_values) - np.min(X_values))
-log()
-log(f"  Spread across step sizes: {X_spread:.2e}")
-log()
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--mode",
+        choices=("exact", "independent", "hostile", "intentional-failure"),
+        default="exact",
+    )
+    parser.add_argument("--independent", action="store_true", help="alias for --mode independent")
+    parser.add_argument("--hostile", action="store_true", help="alias for --mode hostile")
+    parser.add_argument(
+        "--fixture",
+        choices=("all",) + ALL_MUTATIONS,
+        default="all",
+        help="mutation fixture for intentional-failure mode",
+    )
+    args = parser.parse_args()
+    aliases = int(args.independent) + int(args.hostile)
+    if aliases > 1:
+        parser.error("choose at most one mode alias")
+    if args.independent:
+        args.mode = "independent"
+    if args.hostile:
+        args.mode = "hostile"
+    if args.fixture != "all" and args.mode != "intentional-failure":
+        parser.error("--fixture requires --mode intentional-failure")
+    return args
 
-check(
-    "step_size_stability",
-    X_spread < 1e-5,
-    f"X* stable to {X_spread:.2e} across integrator step sizes",
-)
+
+def main() -> int:
+    args = parse_args()
+    if args.mode == "exact":
+        return run_exact()
+    if args.mode == "independent":
+        return run_independent()
+    if args.mode == "hostile":
+        return run_hostile()
+    return run_intentional_failure(args.fixture)
 
 
-# =====================================================================
-log()
-log("=" * 78)
-log("SECTION 8: SCORECARD")
-log("=" * 78)
-log()
-log(f"  Backward-RGE map Phi : X = y_t(v) -> y_t(M_Pl)")
-log(f"  on segment [ln v_derived, ln M_Pl] (Delta t = {t_Pl - t_v:.3f} natural-log units, ~17 decades).")
-log()
-log(f"  Verified properties on scan interval X in [{X_LOW}, {X_HIGH}]:")
-log()
-log(f"    (T1) Globalness:        YES  (max|y_t| <= {max_yt_arr.max():.4f})")
-log(f"    (T2) Grid monotonicity: YES  (positive on 33-point grid; min diff > 0)")
-log(f"    (T3) Lipschitz global:  L_observed = {L_observed_global:.4f}")
-log(f"    (T3) Lipschitz near root: L_observed_near = {L_observed_near:.4f}")
-log(f"    (T4) Root diagnostic:   X* = {X_star_full:.6f}")
-log(f"                             Phi(X*) = {Phi(X_star_full):.6f}")
-log(f"    (T5) Yukawa-Landau:     X_pole ~ {X_pole:.3f} (extension scan)")
-log()
-log(f"  This supports the bounded finite-grid diagnostic for the BC-transfer map.")
-log(f"  It does NOT prove continuum uniqueness or close YT_BOUNDARY_THEOREM.md.")
-log()
-log(f"  Does NOT touch:")
-log(f"    - parent claim (i)  domain separation        (interpretive)")
-log(f"    - parent claim (iii) Ward-identity domain     (interpretive)")
-log(f"    - parent claim (v)  non-perturbative bridge  (interpretive)")
-log()
-
-elapsed = time.time() - t0
-log(f"  Elapsed: {elapsed:.1f}s")
-log()
-
-log(f"  Counts: {COUNTS['PASS']} PASS, {COUNTS['FAIL']} FAIL")
-log()
-if COUNTS["FAIL"] > 0:
-    log(f"  *** {COUNTS['FAIL']} FAILURES ***")
-    sys.exit(1)
-else:
-    log(f"  All {COUNTS['PASS']} checks passed.")
-    sys.exit(0)
+if __name__ == "__main__":
+    raise SystemExit(main())

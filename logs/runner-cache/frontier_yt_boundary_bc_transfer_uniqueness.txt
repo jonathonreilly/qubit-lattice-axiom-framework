@@ -1,250 +1,77 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
-runner_sha256: d2d0d484ca8e940a35cf073b5d80c9c4aba87161de35f6f70d3cf0a34c666028
+runner_sha256: 00baeba3de6686880eb63d6f6a117e33c1a85f541ce01d168675adb4c90ee3a7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.14
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
-==============================================================================
-BOUNDARY BC-TRANSFER FINITE-GRID DIAGNOSTIC
-==============================================================================
 
 ==============================================================================
-SECTION 0: Source-boundary checks
+UNIVERSAL SCALAR BOUNDARY-TRANSFER EXACT VERIFIER
 ==============================================================================
 
-  [PASS (D)] section0_2026_06_07_boundary_present
-         source note carries the implementation-input retargeting section
-  [PASS (D)] section0_source_status_is_conditional_support
-         source type/status matches the finite-grid implementation boundary
-  [PASS (D)] section0_imports_are_implementation_inputs
-         canonical plaquette and Ward target are not proof authorities for this row
-  [PASS (D)] section0_continuum_claims_excluded
-         finite grid diagnostic only
-  [PASS (D)] section0_declared_inputs_enumerated
-         plaquette, Ward target, RGE, thresholds, and EW initial conditions are enumerated
-  [PASS (D)] section0_inputs_admitted_not_retained
-         I1-I5 are admitted (not retained-grade, not self-contained-derived); result is conditional finite-grid diagnostic
-  [PASS (D)] section0_runner_count_updated
-         note scorecard matches source-boundary runner
-  [PASS (D)] section0_no_retained_input_overclaim
-         old retained-input wording removed
+==============================================================================
+SECTION 1: exact symbolic theorem
+==============================================================================
+  [PASS] exact_ode_residual
+         closed-form substitution leaves residual 0
+  [PASS] linearized_z_equation
+         z=y^(-2) satisfies z'+2az=-2b exactly; residual 0
+  [PASS] exact_initial_value
+         y(t0)-X simplifies to 0
+  [PASS] exact_positive_derivative
+         dPhi/dX matches exp(A) D^(-3/2); residual 0
+  [PASS] exact_right_inverse
+         Phi(X*(Y))^2-Y^2 simplifies to 0
+  [PASS] exact_left_inverse
+         X*(Phi(X))^2-X^2 simplifies to 0
+  [PASS] inverse_inside_exact_domain
+         Xcrit^2-X*(Y)^2 equals a manifestly positive expression; residual 0
+  [PASS] exact_range_limits
+         lower endpoint limit is 0; positive endpoint square tends to oo
+  [PASS] exact_subcritical_fixture
+         a=0, b=1, interval length 1 gives the exact subcritical endpoint; residual 0
+  [PASS] exact_critical_and_supercritical_boundary
+         the denominator is zero at X=1/sqrt(2) and negative at X=sqrt(4/5)
+  [PASS] sign_boundary_counterfixture
+         for b=-1 the increasing transfer has finite limiting range sqrt(2)/2, so b>0 is load-bearing
 
 ==============================================================================
-SECTION 1: Imported numeric inputs
+SECTION 2: source and import firewall
 ==============================================================================
-
-  alpha_LM             = 0.090668     (imported from canonical_plaquette_surface)
-  alpha_s(v) = CMT     = 0.103304     (block 10 narrow, alpha_bare/u_0^2)
-  g_lattice(M_Pl)      = 1.067411     (sqrt(4 pi alpha_LM))
-  Ward target y_t(M_Pl) = g_lattice/sqrt(6)  = 0.435769
-  v_derived             = 2.4628e+02 GeV (hierarchy theorem)
-  ln(M_Pl / v_derived)  = 38.442   (17-decade segment)
-
-  Scan interval X = y_t(v) in [0.5, 1.2]
-  Chosen below Yukawa-Landau-like onset at X_pole ~ 1.27 (see (T5))
-
-  [PASS (D)] section1_v_derived_matches_canonical
-         v_derived = 246.28 GeV matches canonical 246.28 GeV
-  [PASS (D)] section1_ward_target_value
-         WARD_TARGET = 0.435769 matches 0.43577 to 5e-4
-  [PASS (D)] section1_gv_ordering
-         g3(v)=1.1394 > g2(v)=0.6463 > g1(v)=0.4640  (expected SM ordering)
+  [PASS] source_firewall
+         no physical boundary values/helpers/closure claims enter the theorem source
+  [PASS] source_graph_is_self_contained
+         runner imports no parent or physical-value helper
 
 ==============================================================================
-SECTION 2: (T1) Globalness / max|y_t| bounded on [0.5, 1.2]
+SECTION 3: strict theorem API
 ==============================================================================
-
-  Sample max|y_t| on trajectory across X grid; verify bounded.
-
-    X = 0.500:  max|y_t on trajectory| = 0.5000
-    X = 0.600:  max|y_t on trajectory| = 0.6000
-    X = 0.700:  max|y_t on trajectory| = 0.7000
-    X = 0.800:  max|y_t on trajectory| = 0.8000
-    X = 0.900:  max|y_t on trajectory| = 0.9000
-    X = 1.000:  max|y_t on trajectory| = 1.0000
-    X = 1.100:  max|y_t on trajectory| = 1.1000
-    X = 1.200:  max|y_t on trajectory| = 1.2000
-
-  Max-of-max|y_t| across grid: 1.2000
-
-  [PASS (D)] T1_all_trajectories_finite
-         All trajectories finite (no integrator blow-up) across the scan grid
-  [PASS (D)] T1_max_yt_bounded_by_X_HIGH_plus_eps
-         max|y_t| = 1.2000 < 1.25 across [0.5, 1.2] (no upward amplification)
-  [PASS (D)] T1_max_yt_no_amplification
-         max|y_t| on trajectory <= X + 0.03 across the grid (trajectory does NOT exceed initial value within tolerance)
-  [PASS (D)] T1_max_yt_starts_at_X
-         max|y_t| at endpoints tracks X (no spurious amplification at low X)
+  [PASS] api_roundtrip
+         valid endpoint/inverse roundtrip error 0.000e+00
+  [PASS] api_rejects_nonpositive_b
+         invalid input rejected before theorem evaluation
+  [PASS] api_rejects_nonpositive_j
+         invalid input rejected before theorem evaluation
+  [PASS] api_rejects_nonpositive_x
+         invalid input rejected before theorem evaluation
+  [PASS] api_rejects_nonpositive_y
+         invalid input rejected before theorem evaluation
+  [PASS] api_rejects_nonfinite
+         invalid input rejected before theorem evaluation
+  [PASS] api_rejects_boolean
+         invalid input rejected before theorem evaluation
+  [PASS] api_rejects_outside_domain
+         invalid input rejected before theorem evaluation
 
 ==============================================================================
-SECTION 3: (T2) Finite-grid monotonicity on 33-point grid
+SCORECARD: exact
 ==============================================================================
-
-  Compute Phi on a finite X-grid; verify all sampled forward differences are positive.
-
-  Sample of (X, Phi(X)):
-    X = 0.5000  ->  Phi = 0.156803
-    X = 0.5875  ->  Phi = 0.191064
-    X = 0.6750  ->  Phi = 0.229783
-    X = 0.7625  ->  Phi = 0.274942
-    X = 0.8500  ->  Phi = 0.329828
-    X = 0.9375  ->  Phi = 0.400472
-    X = 1.0250  ->  Phi = 0.499649
-    X = 1.1125  ->  Phi = 0.661491
-    X = 1.2000  ->  Phi = 1.033817
-    X = 1.2000  ->  Phi = 1.033817
-
-  Of 32 forward differences:
-    32 positive forward differences
-    0 non-increasing
-
-  [PASS (D)] T2_grid_monotonicity
-         All 32 sampled forward differences > 0 on the 33-point grid
-  [PASS (D)] T2_endpoint_ordering
-         Phi(0.5) = 0.156803 < Phi(1.2) = 1.033817
-  [PASS (D)] T2_min_forward_diff_positive
-         min forward diff = 8.225962e-03 > 0
-
-==============================================================================
-SECTION 4: (T3) Lipschitz constant L from finite differences
-==============================================================================
-
-  L_observed = max |Phi(X1) - Phi(X2)| / |X1 - X2| over the working grid.
-
-  Global samples on [0.5, 1.2]:
-    max local L  = 6.2692
-    min local L  = 0.3760
-    mean local L = 1.2529
-
-  Near-root samples on [0.9, 1.0]:
-    max local L  = 1.2071
-    min local L  = 0.8254
-    mean local L = 0.9943
-
-  Interpretation: near the root, a 1% perturbation in y_t(M_Pl)
-                  corresponds to ~ 1/L_observed_near = 0.828
-                  sensitivity in y_t(v).
-
-  [PASS (D)] T3_lipschitz_finite_global
-         L_observed_global = 6.2692 (finite, positive)
-  [PASS (D)] T3_lipschitz_global_below_bound
-         L_observed_global = 6.2692 < 10.0 (declared diagnostic bound)
-  [PASS (D)] T3_lipschitz_lower_bound_positive
-         min local L = 0.3760 > 0 (no zero-derivative points)
-  [PASS (D)] T3_lipschitz_near_root_below_bound
-         L_observed_near = 1.2071 < 1.5 (declared near-root diagnostic bound)
-
-==============================================================================
-SECTION 5: (T4) Bracketed root stability via sign-change + brentq
-==============================================================================
-
-  Sign change: verify Phi(X_LOW) < WARD_TARGET < Phi(X_HIGH)
-
-    Phi(0.5) = 0.156803
-    WARD_TARGET = 0.435769
-    Phi(1.2) = 1.033817
-
-  [PASS (D)] T4_sign_change_in_interval
-         Sign change Phi(X_LOW)=0.1568 < 0.4358 < Phi(X_HIGH)=1.0338
-  brentq on [0.5, 1.2]:  X* = 0.9726721479
-                                  Phi(X*) = 0.4357685988
-                                  residual = -5.55e-17
-
-  Independence-of-subinterval check:
-    [0.5, 1.1]:  X* = 0.9726721479
-    [0.7, 1.2]:  X* = 0.9726721479
-    [0.85, 1.1]:  X* = 0.9726721479
-
-  Max spread across subinterval roots: 5.31e-13
-
-  [PASS (D)] T4_all_subintervals_with_signchange_agree
-         All 3 sub-roots agree to 5.31e-13
-  [PASS (D)] T4_grid_root_bracketed_by_sampled_monotonicity
-         Sampled monotonicity + sign change + subinterval agreement support a stable bracketed root; not a continuum uniqueness proof
-  [PASS (D)] T4_X_star_value_near_0p973
-         X* = 0.972672 matches parent runner value 0.973 (to 5e-3)
-
-==============================================================================
-SECTION 6: (T5) Yukawa-Landau onset at X_pole ~ 1.27
-==============================================================================
-
-  Extend the scan into [1.20, 1.30] and locate the Yukawa-Landau-like
-  onset to verify that the chosen scan interval [0.5, 1.2] lies below
-  the sampled blow-up-like region.
-
-  Extension scan in [1.2, 1.3]:
-    X = 1.200:  Phi =    1.034    max|y_t| =     1.200
-    X = 1.210:  Phi =    1.117    max|y_t| =     1.210
-    X = 1.220:  Phi =    1.222    max|y_t| =     1.222
-    X = 1.230:  Phi =    1.358    max|y_t| =     1.358
-    X = 1.240:  Phi =    1.546    max|y_t| =     1.546
-    X = 1.250:  Phi =    1.829    max|y_t| =     1.829
-    X = 1.260:  Phi =    2.333    max|y_t| =     2.333
-    X = 1.270:  Phi =    3.625    max|y_t| =     3.625
-    X = 1.280:  Phi =   13.127    max|y_t| =    13.127
-    X = 1.290:  Phi =   14.952    max|y_t| =    14.952
-    X = 1.300:  Phi =   14.951    max|y_t| =    14.955
-
-  First X in extension with Phi > 5:  X_pole ~ 1.280
-  Phi(X_pole)                          = 13.127
-
-  [PASS (D)] T5_phi_at_X12_bounded
-         Phi(1.2) = 1.0338 < 2.0 (chosen scan boundary still well-behaved)
-  [PASS (D)] T5_yukawa_landau_pole_exists_in_extension
-         Yukawa-Landau onset detected at X_pole = 1.280 > X_HIGH = 1.2 (extension shows blow-up)
-  [PASS (D)] T5_scan_interval_strictly_below_pole
-         Scan interval [0.5, 1.2] strictly below X_pole = 1.280
-  [PASS (D)] T5_root_well_inside_well_defined_region
-         X_pole - X* = 0.307 > 0.25 (root sits well inside well-defined region)
-
-==============================================================================
-SECTION 7: Stability of X* under integrator step size
-==============================================================================
-
-  Refine integrator max_step; X* should be stable to <= 1e-5.
-
-    max_step = 2.00:  X* = 0.9726721479
-    max_step = 1.00:  X* = 0.9726721479
-    max_step = 0.50:  X* = 0.9726721479
-    max_step = 0.20:  X* = 0.9726721479
-
-  Spread across step sizes: 2.28e-11
-
-  [PASS (D)] step_size_stability
-         X* stable to 2.28e-11 across integrator step sizes
-
-==============================================================================
-SECTION 8: SCORECARD
-==============================================================================
-
-  Backward-RGE map Phi : X = y_t(v) -> y_t(M_Pl)
-  on segment [ln v_derived, ln M_Pl] (Delta t = 38.442 natural-log units, ~17 decades).
-
-  Verified properties on scan interval X in [0.5, 1.2]:
-
-    (T1) Globalness:        YES  (max|y_t| <= 1.2000)
-    (T2) Grid monotonicity: YES  (positive on 33-point grid; min diff > 0)
-    (T3) Lipschitz global:  L_observed = 6.2692
-    (T3) Lipschitz near root: L_observed_near = 1.2071
-    (T4) Root diagnostic:   X* = 0.972672
-                             Phi(X*) = 0.435769
-    (T5) Yukawa-Landau:     X_pole ~ 1.280 (extension scan)
-
-  This supports the bounded finite-grid diagnostic for the BC-transfer map.
-  It does NOT prove continuum uniqueness or close YT_BOUNDARY_THEOREM.md.
-
-  Does NOT touch:
-    - parent claim (i)  domain separation        (interpretive)
-    - parent claim (iii) Ward-identity domain     (interpretive)
-    - parent claim (v)  non-perturbative bridge  (interpretive)
-
-  Elapsed: 0.5s
-
-  Counts: 31 PASS, 0 FAIL
-
-  All 31 checks passed.
+  checks: 21
+  pass:   21
+  fail:   0
+RESULT: PASS
 
 ----- stderr -----
 

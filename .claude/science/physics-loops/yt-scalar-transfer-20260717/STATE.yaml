@@ -1,0 +1,32 @@
+loop: yt-scalar-transfer-20260717
+date: 2026-07-17
+mode: run
+target: proposed_retained
+cycle: 1
+block: 1
+branch: physics-loop/yt-scalar-transfer-block01-20260717
+base_ref: origin/main
+base_commit: 2d8e350f969e9b18543bd5f8be10506823703947
+lock_status: branch-local supervisor lock
+lock_note: scripts/automation_lock.py cannot access its hard-coded /Users/jonreilly path; this dedicated worktree has no concurrent writer
+active_route: universal_scalar_one_loop_transfer_bijection
+hard_residual: retire admitted implementation inputs I1-I5 without relabeling them as definitions
+actual_current_surface_status: exact-support
+conditional_surface_status: null
+files_touched:
+  - docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md
+  - scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
+  - logs/runner-cache/frontier_yt_boundary_bc_transfer_uniqueness.txt
+  - .claude/science/physics-loops/yt-scalar-transfer-20260717/
+forbidden_imports:
+  - canonical plaquette constants
+  - a fixed boundary target
+  - coupled multi-loop coefficients or threshold procedure
+  - fixed threshold scales
+  - electroweak initial-condition values
+  - any Planck-scale, Ward-target, Standard-Model, or parent-lane closure
+open_imports: []
+review_disposition: pending
+pr_status: pending
+next_exact_action: run independent review-loop against the candidate commit
+stop_condition: coherent block reviewed, validated, pushed, and opened as a ready PR

@@ -14,11 +14,11 @@
   "chain_closure_explanation": null,
   "claim_id": "record_classical_semigroup_boundary_2026-06-06",
   "claim_scope": null,
-  "claim_type": "positive_theorem",
+  "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": "exact-support / negative-route-pruning boundary",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "default_positive_theorem",
+  "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -1326,6 +1326,60 @@
         "total_pass": 0
       },
       "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-17T17:54:01.630784+00:00",
+      "audit_date": "2026-07-17T17:53:47.700751+00:00",
+      "audit_invocation_history": [
+        "a6f68104807e415487c1bd328f66bd00"
+      ],
+      "audit_invocation_id": "a6f68104807e415487c1bd328f66bd00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 14.115,
+        "runner_hash": "b891830b12262a53cc5fc6bb88dd814f9aafcb93da18582cf4be79673371e263",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-68779aafe4f2484ba376c73ce2b2bad9-record_classical_semigro-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic conclusions follow under the stated finite-alphabet model, but the restricted framework premises do not derive the finite alphabet O or the identification of the post-record event algebra with A=C^O.",
+      "claim_scope": "Conditional on a supplied finite alphabet O and the standard unital complex-linear interpretation of A=C^O, the finite record algebra has permutation automorphisms and zero derivations; nonzero append/count updates are irreversible, while Markov rates and stationary points require supplied ensemble dynamics.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-17T17:53:47.700751+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For A=C^O, Aut(A)=Sym(O) and Der(A)=0; nonzero count translations on N^O are not surjective, while stationary points vary with the supplied Markov generator.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge deriving the supplied finite record alphabet and the standard unital complex-linear A=C^O representation from accepted framework content, then rerun the audit with resolution-complete negative-discipline evidence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The runner and proof sketch correctly establish the finite-algebra, derivation, count-translation, and supplied-generator facts as class-A mathematics. For N1-N4, the packet does not supply five distinct alternative attack-route classes or retained prior witnesses, although its reversible-flow, append-surjectivity, rate-input, and stationary-selection walls are distinguishable and its finite-carrier premise is explicit rather than hidden. For N5-N8, the live output lacks the required five-resolution rhetoric tests, an independent steelman resolution, and complete dispositions of the supplied partial-closure and cross-cycle candidates, so the negative-discipline gate cannot pass. Most importantly, the Record premise does not itself supply the finite alphabet or the complex function-algebra carrier, leaving the result conditional on those inputs."
     }
   ],
   "prose_corrections": [],

@@ -12,12 +12,13 @@ satisfying
 (C2)  { gamma_5, gamma_mu } = 0  for all  mu = 1, ..., n,
 ```
 
-**exists** iff `n` is even; equivalently, no element of the complexified
-Clifford algebra can anticommute with every generator when `n` is odd.
+**exists** iff `n` is even; equivalently, when `n` is odd the common
+anticommutant of all generators inside the complexified Clifford algebra is
+exactly `{0}`, so no nonzero square-normalized chirality element exists.
 As a consequence, with `d_s = 3` spatial dimensions, the time-direction
 count `d_t` must be **odd**: `d_t in { 1, 3, 5, ... }`. This is purely a
 statement about finite-rank Clifford algebra structure; no anomaly
-content, no single-clock evolution input, no ABJ admission, no
+content, no single-clock evolution input, no ABJ premise, no
 left-handed content, no gauge group, and no `d_t > 1` exclusion enter.
 The exclusion of `d_t > 1` to fix `d_t = 1` is **out of scope** of this
 narrow theorem and remains delegated to the parent.
@@ -56,14 +57,12 @@ where `eta = diag(+1, ..., +1, -1, ..., -1)` has signature `(p, q)`. Let
 2. (**Even/odd dichotomy.**)
    - If `n` is even, `omega` **anticommutes** with every generator.
      Suitable scalar rescaling (phase) yields a candidate `gamma_5 = c
-     omega` with `gamma_5^2 = +I` (when `c` is chosen as the unique
-     positive real or unit complex scalar making `(c omega)^2 = +I`),
+     omega` with `gamma_5^2 = +I` (choose any nonzero complex scalar
+     `c` making `(c omega)^2 = +I`),
      and `{ gamma_5, gamma_mu } = 0` for every `mu`.
    - If `n` is odd, `omega` **commutes** with every generator (i.e.
-     `omega` is central in `Cl_C(p, q)`), so no scalar multiple of `omega`
-     can anticommute with even one generator. Moreover **no algebra
-     element at all** can anticommute with every generator
-     simultaneously when `n` is odd.
+     `omega` is central in `Cl_C(p, q)`). The common anticommutant kernel
+     inside `Cl_C(p, q)` is exactly `{0}`.
 
 3. (**Chirality existence theorem.**) An element `gamma_5 in Cl_C(p, q)`
    satisfying both (C1) `gamma_5^2 = +I` and (C2) `{ gamma_5, gamma_mu }
@@ -126,43 +125,54 @@ square of the volume element is always a real scalar in `Cl(p, q)`).
 
 Either way, a chirality operator exists. ∎ even
 
-### Step 3. Odd-dimension half: `n` odd ⟹ no algebra element anticommutes with every generator.
+### Step 3. Odd-dimension half: `n` odd ⟹ only zero lies in the common anticommutant.
 
-When `n` is odd, `(-1)^{n-1} = +1`. So (V) becomes
-`omega gamma_mu = +gamma_mu omega`, i.e. `omega` commutes with every
-generator. Since the generators generate the whole algebra, `omega` lies
-in the **center** of `Cl(p, q)`. No scalar multiple of a central element
-can anticommute with even one non-central element (a non-central
-generator), so no rescaling of `omega` works.
-
-To extend to **arbitrary** algebra elements (not just rescalings of
-`omega`), use the following standard structure result: when `n` is odd,
-the center `Z(Cl(p, q))` is two-dimensional, spanned by `{ I, omega }`,
-and any algebra element decomposes as `x = a + b omega + (off-center
-piece)`. The off-center piece is itself a sum of products of fewer than
-`n` generators; for any such product `pi = gamma_{i_1} ... gamma_{i_k}`
-with `0 < k < n`, the (V)-type identity gives
+When `n` is odd, `(-1)^{n-1} = +1`. Thus (V) makes `omega` central.
+It is also invertible because every generator is invertible. If an
+arbitrary `x in Cl_C(p, q)` anticommutes with every generator, moving
+`x` through all `n` factors gives
 
 ```text
-pi gamma_mu  =  (-1)^{k - delta} gamma_mu pi,
+x omega = (-1)^n omega x = -omega x.
 ```
 
-where `delta = 1` if `mu in {i_1, ..., i_k}` and `delta = 0` otherwise.
-In particular, if we pick `gamma_mu` with index **not** among
-`{i_1, ..., i_k}` (which always exists when `k < n`), then
-`pi gamma_mu = (-1)^k gamma_mu pi`. For `pi` to anticommute with all
-generators we need `pi gamma_mu = -gamma_mu pi` for every choice of
-`mu`. Picking `mu` outside `{i_1, ..., i_k}` requires `k` odd; picking
-`mu` inside requires `k - 1` odd, hence `k` even. These two conditions
-cannot both hold (since `k < n` and `k` exists in `{0, ..., n-1}`), so
-no off-center monomial anticommutes with every generator.
+Centrality independently gives `x omega = omega x`. Hence
+`2 omega x = 0`; over `C`, invertibility of `omega` yields `x = 0`.
+This proves that the simultaneous anticommutator kernel is exactly
+`{0}`. In particular, there is no nonzero square-normalized element in
+this kernel.
 
-Hence no linear combination, including any algebra element of the form
-`x = a I + b omega + sum c_pi pi`, can anticommute with every
-`gamma_mu`: the central part `a I + b omega` commutes with everything
-(it is central), and each off-center monomial fails to anticommute with
-at least one generator, so the anticommutator
-`{ x, gamma_mu }` cannot vanish simultaneously for every `mu`. ∎ odd
+Here is the same result at coefficient level, making cancellation between
+arbitrary linear-combination terms explicit. For
+
+```text
+x = sum_{S subseteq {1, ..., n}} a_S e_S,
+e_S = gamma_{s_1} ... gamma_{s_k}  (s_1 < ... < s_k),
+```
+
+fix `mu`, put `delta = 1` when `mu in S` and `delta = 0` otherwise, and
+let `r = |{s in S : s < mu}|`. Direct reordering with
+`gamma_mu^2 = eta_{mu mu} I` gives the exact rule
+
+```text
+{e_S, gamma_mu}
+  = (-1)^r eta_{mu mu}^delta [1 + (-1)^(|S|-delta)]
+    e_{S symmetric-difference {mu}}.                         (K)
+```
+
+For fixed `mu`, the map `S -> S symmetric-difference {mu}` is an
+involution and therefore a bijection. Distinct input coefficients `a_S`
+land in distinct Clifford-basis slots, so they cannot cancel in
+`{x, gamma_mu}`. The coefficient in (K) is nonzero exactly when
+`|S| - delta` is even.
+
+Now take odd `n`. If `|S|` is odd, then `S` is nonempty; choose
+`mu in S`, so `delta = 1` and `|S| - delta` is even. If `|S|` is even,
+then `S` cannot be the full odd-cardinality index set; choose
+`mu notin S`, so `delta = 0` and `|S| - delta` is even. Thus every `S`
+has at least one generator whose anticommutator gives a nonzero,
+uncancellable constraint on `a_S`. The simultaneous system therefore
+forces every `a_S = 0`, again proving that its kernel is `{0}`. ∎ odd
 
 ### Step 4. Combine.
 
@@ -183,7 +193,7 @@ QED.
 - **Chirality grading at even `n`.** When `n` is even, `gamma_5` (as
   constructed in Step 2) is an involution that splits the spinor module
   `S` into `gamma_5`-eigenspaces of eigenvalues `±1`; these are the
-  retained Weyl spinors. The exact construction of `S = S_+ \oplus S_-`
+  Weyl spinor subspaces. The exact construction of `S = S_+ \oplus S_-`
   follows by elementary projection.
 
 Both corollaries are pure Clifford-algebra consequences of (V).
@@ -211,18 +221,16 @@ Both corollaries are pure Clifford-algebra consequences of (V).
 - Does **not** consume the parent's Step 1-2 (left-handed content has
   ABJ anomaly traces; RH SU(2)-singlet completion required for
   cancellation). Steps 1-2 of the parent are out of scope.
-- Does **not** consume the parent's admission (i) (the ABJ
-  anomaly-to-inconsistency implication on the lattice), which remains
-  the parent's open external admission.
+- Does **not** consume the parent's open ABJ anomaly-to-inconsistency
+  premise on the lattice.
 - Does **not** consume the gauge group `SU(2) x SU(3) x U(1)` or the
   left-handed content `(2, 3)_{+1/3} + (2, 1)_{-1}`.
 - Does **not** identify the volume-element chirality with any physical
   staggered-sublattice realization (e.g. `epsilon(x)` of
   `CPT_EXACT_NOTE.md`); that identification is a separate downstream
   realization step.
-- Does **not** claim positive-theorem promotion for the parent. The
-  parent retains its bounded_theorem (B-class) status with open
-  admission (i).
+- Does **not** change the parent claim or close its open ABJ and
+  `d_t > 1` inputs.
 
 ## Relation to the parent anomaly-forces-time theorem
 
@@ -237,12 +245,11 @@ separable pieces:
 3. Step 3: chirality requires `n = d_s + d_t` even. (**Carried here.**)
 4. Step 4: the B-AXIS boundary gives the conditional cap `d_t <= 1`
    by supplying one blocked time step, one evolution axis/transfer
-   construction, and no admitted independent commuting transfer factor.
+   construction, and no supplied independent commuting transfer factor.
    (Out of scope; routed to the single-clock theorem note; not derived
    from RP uniqueness.)
-5. Admission (i): ABJ anomaly-to-inconsistency on the lattice (open
-   external admission). (Out of scope; remains the parent's open
-   admission.)
+5. ABJ anomaly-to-inconsistency on the lattice (open external premise).
+   (Out of scope; remains open on the parent surface.)
 
 This narrow rescope keeps **only Step 3** as a standalone Clifford-algebra
 identity. The other parent pieces remain on the parent surface; this
@@ -250,13 +257,13 @@ narrow does not narrow them.
 
 ## Honest open items
 
-The narrow rescope leaves the following parent admissions intact:
+The narrow rescope leaves the following parent open items intact:
 
-- The parent's admission (i) (ABJ anomaly-to-inconsistency on the
-  lattice) is **not closed** by this narrow. PR 402 was closed
-  without merge; no successor companion note for admission (i) lands
+- The parent's ABJ anomaly-to-inconsistency premise on the
+  lattice is **not closed** by this narrow. PR 402 was closed
+  without merge; no successor companion note for that premise lands
   on `main`. The narrow scope here deliberately decouples from
-  admission (i) by carrying only the Clifford-classification step.
+  that premise by carrying only the Clifford-classification step.
 - The `d_t > 1` exclusion (parent Step 4) is **not closed** by this
   narrow; it remains delegated to the parent's single-clock
   codimension-1 evolution citation.
@@ -276,29 +283,28 @@ authorities.
 - No PDG observed values consumed.
 - No literature numerical comparators consumed.
 - No fitted selectors consumed.
-- No admitted unit conventions load-bearing on the claim.
+- No unit conventions are load-bearing on the claim.
 - No same-surface family arguments.
 - No `d_t = 1` claim; `d_t` is only restricted to odd values.
 
 ## Validation
 
 Primary runner: [`scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py`](./../scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py)
-verifies, at exact rational precision via sympy:
+verifies, at exact symbolic precision via SymPy:
 
-1. The (V) parity rule for any small explicit example via
-   anticommutator counting on a representative `Cl_C(p, q)` matrix
-   realization for `n = 2, 3, 4, 5, 6`.
-2. Even-`n` case: `n in {2, 4, 6}`: omega anticommutes with every
-   generator, and a candidate `gamma_5 = c omega` satisfying (C1)+(C2)
-   is exhibited as an explicit matrix at each `n`.
-3. Odd-`n` case: `n in {3, 5}`: omega is central, no scalar multiple
-   of omega anticommutes with any generator, and an exhaustive
-   monomial scan over basis elements of `Cl_C(p, q)` confirms no
-   algebra element anticommutes with all generators.
-4. Application: at `d_s = 3`, the chirality-allowed `d_t` is exactly
-   `{1, 3, 5, 7}` in the tested range, consistent with `d_t` odd.
-5. Counterfactual: for `d_t = 2` (so `n = 5`), an explicit
-   anticommutator scan shows no `gamma_5` exists.
+1. Explicit matrix realizations satisfy the CAR and (V) for
+   `n in {1, 2, 3, 4, 5, 6, 7}`.
+2. The full simultaneous coefficient matrix from (K) is constructed and
+   solved exactly. Its nullity is zero for `n in {1, 3, 5, 7}` and one,
+   spanned by the volume element, for `n in {2, 4, 6}`.
+3. An implementation-level structural certificate checks the
+   symmetric-difference bijection, the exact sign/parity rule, and the
+   odd-`n` witness selecting a nonzero constraint for every coefficient.
+4. A separate exact matrix-vectorization route recomputes the kernel on
+   explicit faithful Clifford-algebra spans without using (K).
+5. Even-dimensional square-normalized constructions, the `d_s = 3`
+   application, and mutations targeting basis-scan, zero, sign, and
+   parity errors supply positive controls and falsifiers.
 
 ## Cross-references
 

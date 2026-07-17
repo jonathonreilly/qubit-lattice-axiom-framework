@@ -1,51 +1,36 @@
 #!/usr/bin/env python3
-"""Exact-symbolic audit-companion runner for
-`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`.
+"""Exact companion for the Clifford volume-element chirality theorem.
 
-Pattern A narrow rescope of the load-bearing Clifford-classification
-Step 3 of the parent `ANOMALY_FORCES_TIME_THEOREM.md`. The narrow scope
-is purely the Clifford-algebra identity that an algebra element
-gamma_5 in the complexified Clifford algebra satisfying gamma_5^2 = +I
-and {gamma_5, gamma_mu} = 0 for all generators exists iff n = p + q is
-even. At d_s = 3 this forces d_t odd.
+The load-bearing odd-dimensional check constructs the simultaneous linear
+system for a general Clifford-basis expansion
 
-The script verifies, at exact rational precision via sympy:
+    x = sum_S a_S e_S,
 
-  (1) The (V) parity rule
-        omega gamma_mu = (-1)^(n-1) gamma_mu omega
-      on explicit matrix realizations of Cl(p, q) for n in {2, 3, 4, 5, 6};
-  (2) Even-n: omega anticommutes with every generator, and a candidate
-      gamma_5 satisfying (C1) + (C2) exists explicitly;
-  (3) Odd-n: omega commutes with every generator (centrality), and an
-      exhaustive sympy monomial scan over basis elements of Cl(p, q)
-      confirms no algebra element anticommutes with all generators
-      simultaneously;
-  (4) Application at d_s = 3: the chirality-allowed d_t in {1, 3, 5, 7}
-      is consistent with d_t odd;
-  (5) Counterfactual at d_t = 2 (n = 5 odd): no gamma_5 exists.
-
-Companion role: not a new claim row, not a new source note, no status
-promotion. Provides audit-friendly evidence that the narrow rescope's
-load-bearing class-(A) Clifford-classification identity holds at exact
-symbolic / matrix precision on explicit realizations.
+using the exact coefficient of e_(S symmetric-difference {mu}) in
+{e_S, gamma_mu}.  It solves the full system over SymPy, rather than scanning
+basis monomials one at a time.  Exact explicit-matrix calculations provide an
+independent implementation route and positive even-dimensional controls.
 """
 
 from pathlib import Path
 import sys
-import itertools
 
 try:
-    import sympy
-    from sympy import Matrix, eye, zeros, Rational, I, simplify
+    from sympy import I, Matrix, SparseMatrix, eye, zeros
 except ImportError:
     print("FAIL: sympy required for exact algebra")
     sys.exit(1)
 
 
-ROOT = Path(__file__).resolve().parent.parent
-NOTE_PATH = ROOT / "docs" / "CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md"
-CLAIM_ID = "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+AUDIT_TIMEOUT_SEC = 120
 
+ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = (
+    ROOT
+    / "docs"
+    / "CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md"
+)
+CLAIM_ID = "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
 
 PASS = 0
 FAIL = 0
@@ -70,315 +55,414 @@ def section(title: str) -> None:
     print("-" * 88)
 
 
-# Pauli matrices over Q (and i)
 sigma_x = Matrix([[0, 1], [1, 0]])
 sigma_y = Matrix([[0, -I], [I, 0]])
 sigma_z = Matrix([[1, 0], [0, -1]])
 
-def kron(A, B):
-    """Sympy Kronecker product for explicit Cl(p,q) constructions."""
-    rows = A.rows * B.rows
-    cols = A.cols * B.cols
-    out = zeros(rows, cols)
-    for i in range(A.rows):
-        for j in range(A.cols):
-            for k in range(B.rows):
-                for l in range(B.cols):
-                    out[i * B.rows + k, j * B.cols + l] = A[i, j] * B[k, l]
+
+def kron(a: Matrix, b: Matrix) -> Matrix:
+    """Exact Kronecker product, kept local so every entry stays symbolic."""
+    out = zeros(a.rows * b.rows, a.cols * b.cols)
+    for i in range(a.rows):
+        for j in range(a.cols):
+            for k in range(b.rows):
+                for ell in range(b.cols):
+                    out[i * b.rows + k, j * b.cols + ell] = a[i, j] * b[k, ell]
     return out
 
 
-def cl_n_euclidean_generators(n: int):
-    """Return n Clifford generators for Cl(n, 0) acting on a 2^ceil(n/2)-dim space.
+def cl_n_euclidean_generators(n: int) -> tuple[list[Matrix], int]:
+    """Faithful Jordan-Wigner-style realization of complex Cl(n, 0)."""
+    qubits = (n + 1) // 2
+    ident = eye(2)
 
-    Use the standard Jordan-Wigner-style construction:
-      gamma_1 = sigma_x (x) I (x) I ...
-      gamma_2 = sigma_y (x) I (x) I ...
-      gamma_3 = sigma_z (x) sigma_x (x) I ...
-      gamma_4 = sigma_z (x) sigma_y (x) I ...
-      gamma_5 = sigma_z (x) sigma_z (x) sigma_x ...
-      ...
-    Each pair (gamma_{2k-1}, gamma_{2k}) lives at the k-th "qubit".
-    For odd n, the last generator is sigma_z (x) ... (x) sigma_z (x) sigma_x
-    where the last factor uses sigma_x of a single qubit.
-    """
-    k = (n + 1) // 2  # number of qubits
-    dim = 2 ** k
-    I2 = eye(2)
-
-    def at_qubit(j: int, op):
-        """sigma_z (x) ... (x) sigma_z (x) op (x) I (x) ... (x) I."""
-        # Build left side: j sigma_z's (for j = 0..)
-        # Build right side: identities for remaining qubits.
+    def at_qubit(site: int, operator: Matrix) -> Matrix:
         result = None
-        for i in range(k):
-            if i < j:
+        for index in range(qubits):
+            if index < site:
                 factor = sigma_z
-            elif i == j:
-                factor = op
+            elif index == site:
+                factor = operator
             else:
-                factor = I2
+                factor = ident
             result = factor if result is None else kron(result, factor)
         return result
 
-    gens = []
-    for mu in range(1, n + 1):
-        qubit = (mu - 1) // 2
-        is_first = (mu - 1) % 2 == 0
-        op = sigma_x if is_first else sigma_y
-        gens.append(at_qubit(qubit, op))
-    return gens, dim
+    generators = []
+    for mu in range(n):
+        site = mu // 2
+        operator = sigma_x if mu % 2 == 0 else sigma_y
+        generators.append(at_qubit(site, operator))
+    return generators, 2**qubits
 
 
-def anticommutator(A, B):
-    return A * B + B * A
+def anticommutator(a: Matrix, b: Matrix) -> Matrix:
+    return a * b + b * a
 
 
-def commutator(A, B):
-    return A * B - B * A
+def commutator(a: Matrix, b: Matrix) -> Matrix:
+    return a * b - b * a
+
+
+def monomial_from_mask(generators: list[Matrix], mask: int, dim: int) -> Matrix:
+    result = eye(dim)
+    for mu, generator in enumerate(generators):
+        if mask & (1 << mu):
+            result = result * generator
+    return result
+
+
+def coefficient_slot(
+    n: int, signature: tuple[int, ...], mask: int, mu: int
+) -> tuple[int, int]:
+    """Return (target mask, exact coefficient) for {e_S, gamma_mu}.
+
+    If k=|S|, delta=1_(mu in S), and r counts elements of S below mu,
+
+      {e_S, gamma_mu}
+        = (-1)^r eta_mu^delta [1 + (-1)^(k-delta)] e_(S xor {mu}).
+    """
+    if len(signature) != n:
+        raise ValueError("signature length must equal n")
+    delta = (mask >> mu) & 1
+    lower_mask = (1 << mu) - 1
+    r = (mask & lower_mask).bit_count()
+    k = mask.bit_count()
+    target = mask ^ (1 << mu)
+    coefficient = (
+        (-1) ** r
+        * signature[mu] ** delta
+        * (1 + (-1) ** (k - delta))
+    )
+    return target, coefficient
+
+
+def coefficient_constraint_system(
+    n: int, signature: tuple[int, ...]
+) -> SparseMatrix:
+    """Build all coefficients of {x, gamma_mu}=0 for general x=sum a_S e_S."""
+    basis_dim = 1 << n
+    entries: dict[tuple[int, int], int] = {}
+    for mu in range(n):
+        for mask in range(basis_dim):
+            target, coefficient = coefficient_slot(n, signature, mask, mu)
+            if coefficient:
+                row = mu * basis_dim + target
+                entries[(row, mask)] = coefficient
+    return SparseMatrix(n * basis_dim, basis_dim, entries)
+
+
+def odd_constraint_witness(n: int, mask: int) -> int:
+    """Select a generator imposing a nonzero constraint on e_mask for odd n.
+
+    Odd |S| selects mu in S.  Even |S| selects mu outside S, which exists
+    because an even-cardinality S cannot equal the full odd-cardinality set.
+    """
+    if n <= 0 or n % 2 != 1 or not (0 <= mask < (1 << n)):
+        raise ValueError("requires a valid mask at positive odd n")
+    if mask.bit_count() % 2:
+        lowest_bit = mask & -mask
+        mu = lowest_bit.bit_length() - 1
+    else:
+        complement = ((1 << n) - 1) ^ mask
+        if not complement:
+            raise AssertionError("even-cardinality subset cannot fill odd n")
+        lowest_bit = complement & -complement
+        mu = lowest_bit.bit_length() - 1
+    _, coefficient = coefficient_slot(n, (1,) * n, mask, mu)
+    if coefficient == 0:
+        raise AssertionError("witness must impose a nonzero coefficient constraint")
+    return mu
+
+
+def matrix_constraint_system(generators: list[Matrix]) -> tuple[SparseMatrix, int]:
+    """Independent route: vectorize explicit matrix anticommutators.
+
+    This deliberately does not call coefficient_slot or the combinatorial
+    system builder.  Its columns are direct matrix products for every
+    Clifford monomial in the faithful representation.
+    """
+    n = len(generators)
+    dim = generators[0].rows
+    basis_dim = 1 << n
+    entries: dict[tuple[int, int], object] = {}
+    span_entries: dict[tuple[int, int], object] = {}
+    for mask in range(basis_dim):
+        monomial = monomial_from_mask(generators, mask, dim)
+        for i in range(dim):
+            for j in range(dim):
+                value = monomial[i, j]
+                if value != 0:
+                    span_entries[(i * dim + j, mask)] = value
+        for mu, generator in enumerate(generators):
+            result = anticommutator(monomial, generator)
+            for i in range(dim):
+                for j in range(dim):
+                    value = result[i, j]
+                    if value != 0:
+                        row = mu * dim * dim + i * dim + j
+                        entries[(row, mask)] = value
+    system = SparseMatrix(n * dim * dim, basis_dim, entries)
+    span = SparseMatrix(dim * dim, basis_dim, span_entries)
+    return system, span.rank()
 
 
 def main() -> int:
     print("=" * 88)
-    print("Audit companion (exact-symbolic) for")
+    print("Exact Clifford coefficient-kernel companion for")
     print(CLAIM_ID)
-    print("Goal: verify (V) parity rule, even/odd dichotomy, and d_t-odd")
-    print("for d_s = 3 chirality at exact sympy matrix precision.")
+    print("Goal: solve the full anticommutator system and verify the parity theorem.")
     print("=" * 88)
 
-    # ---------------------------------------------------------------------
-    section("Part 1: explicit Clifford generators satisfy CAR for n in {2,3,4,5,6}")
-    # ---------------------------------------------------------------------
-    cliffords = {}
-    for n in [2, 3, 4, 5, 6]:
-        gens, dim = cl_n_euclidean_generators(n)
-        cliffords[n] = (gens, dim)
-        ok_car = True
-        for mu in range(n):
-            for nu in range(n):
-                expected = 2 * eye(dim) if mu == nu else zeros(dim, dim)
-                got = anticommutator(gens[mu], gens[nu])
-                if got != expected:
-                    ok_car = False
-        check(
-            f"Cl({n},0) generators satisfy CAR (positive metric): {{gamma_mu, gamma_nu}} = 2 delta",
-            ok_car,
-            detail=f"dim = {dim}",
-        )
+    dimensions = tuple(range(1, 8))
+    cliffords: dict[int, tuple[list[Matrix], int]] = {}
+    omegas: dict[int, Matrix] = {}
 
-    # ---------------------------------------------------------------------
-    section("Part 2: (V) parity rule on omega for n in {2,3,4,5,6}")
-    # ---------------------------------------------------------------------
-    omegas = {}
-    for n in [2, 3, 4, 5, 6]:
-        gens, dim = cliffords[n]
-        omega = gens[0]
-        for mu in range(1, n):
-            omega = omega * gens[mu]
-        omegas[n] = omega
-
-        expected_sign = (-1) ** (n - 1)
-        ok_V = True
-        for mu in range(n):
-            lhs = omega * gens[mu]
-            rhs = expected_sign * gens[mu] * omega
-            if lhs != rhs:
-                ok_V = False
-        check(
-            f"(V) parity rule at n = {n}: omega gamma_mu = ({expected_sign}) gamma_mu omega",
-            ok_V,
-            detail=f"all {n} generators verified",
-        )
-
-    # ---------------------------------------------------------------------
-    section("Part 3: even-n case — omega anticommutes with every generator")
-    # ---------------------------------------------------------------------
-    for n in [2, 4, 6]:
-        gens, dim = cliffords[n]
-        omega = omegas[n]
-        ok_anti = all(anticommutator(omega, gens[mu]) == zeros(dim, dim) for mu in range(n))
-        check(
-            f"at n = {n} (even): {{omega, gamma_mu}} = 0 for every mu",
-            ok_anti,
-        )
-
-    # ---------------------------------------------------------------------
-    section("Part 4: even-n case — explicit gamma_5 satisfying (C1)+(C2)")
-    # ---------------------------------------------------------------------
-    for n in [2, 4, 6]:
-        gens, dim = cliffords[n]
-        omega = omegas[n]
-        # omega^2 should be a scalar multiple of I
-        omega_sq = omega * omega
-        # Check omega^2 = c * I for some scalar c
-        c00 = omega_sq[0, 0]
-        is_scalar = (omega_sq == c00 * eye(dim))
-        check(
-            f"at n = {n}: omega^2 = c I for scalar c (c = {c00})",
-            is_scalar,
-        )
-
-        # Build gamma_5 such that gamma_5^2 = +I. Need to rescale omega
-        # so that the scalar c becomes +1. Two cases:
-        #  (a) c is positive real: gamma_5 = omega / sqrt(c).
-        #  (b) c is negative real: gamma_5 = (i omega) / sqrt(-c).
-        # For the Euclidean Cl(n, 0) the volume element squares to
-        # (+/-1) depending on n mod 4. For n=2: omega = i sigma_z (with our
-        # sign conventions); omega^2 = -1. So pick gamma_5 = i omega in
-        # that case. Similar logic for n=4, 6.
-        c_val = c00
-        if c_val == 1:
-            gamma_5 = omega
-        elif c_val == -1:
-            gamma_5 = I * omega
-        else:
-            # Fallback: try sympy sqrt
-            gamma_5 = omega / sympy.sqrt(c_val)
-
-        # Verify (C1) gamma_5^2 = +I
-        g5_sq = simplify(gamma_5 * gamma_5)
-        check(
-            f"at n = {n}: gamma_5 = {'omega' if c_val==1 else 'i omega'} satisfies gamma_5^2 = +I",
-            g5_sq == eye(dim),
-            detail=f"gamma_5^2 = {g5_sq[0,0]} I (c was {c_val})",
-        )
-
-        # Verify (C2) {gamma_5, gamma_mu} = 0 for all mu
-        ok_anti = all(
-            simplify(anticommutator(gamma_5, gens[mu])) == zeros(dim, dim)
+    section("Part 1: exact Clifford matrices and the volume-element parity rule")
+    for n in dimensions:
+        generators, dim = cl_n_euclidean_generators(n)
+        cliffords[n] = (generators, dim)
+        car_ok = all(
+            anticommutator(generators[mu], generators[nu])
+            == (2 * eye(dim) if mu == nu else zeros(dim, dim))
             for mu in range(n)
+            for nu in range(n)
+        )
+        check(f"Cl({n},0) generators satisfy the exact CAR", car_ok, f"dim={dim}")
+
+        omega = monomial_from_mask(generators, (1 << n) - 1, dim)
+        omegas[n] = omega
+        expected_sign = (-1) ** (n - 1)
+        parity_ok = all(
+            omega * generator == expected_sign * generator * omega
+            for generator in generators
         )
         check(
-            f"at n = {n}: {{gamma_5, gamma_mu}} = 0 for every mu (C2)",
-            ok_anti,
+            f"n={n}: omega gamma_mu = ({expected_sign}) gamma_mu omega",
+            parity_ok,
+            f"all {n} generators",
         )
 
-    # ---------------------------------------------------------------------
-    section("Part 5: odd-n case — omega is central")
-    # ---------------------------------------------------------------------
-    for n in [3, 5]:
-        gens, dim = cliffords[n]
+    section("Part 2: positive even-n controls and square normalization")
+    for n in (2, 4, 6):
+        generators, dim = cliffords[n]
         omega = omegas[n]
-        ok_comm = all(commutator(omega, gens[mu]) == zeros(dim, dim) for mu in range(n))
+        omega_sq = omega * omega
+        scalar = omega_sq[0, 0]
+        check(f"n={n}: omega^2 is scalar", omega_sq == scalar * eye(dim), f"c={scalar}")
+        gamma_5 = omega if scalar == 1 else I * omega
+        check(f"n={n}: gamma_5^2 = I", gamma_5 * gamma_5 == eye(dim))
         check(
-            f"at n = {n} (odd): [omega, gamma_mu] = 0 for every mu (omega is central)",
-            ok_comm,
+            f"n={n}: gamma_5 anticommutes with every generator",
+            all(anticommutator(gamma_5, generator) == zeros(dim, dim)
+                for generator in generators),
         )
 
-    # ---------------------------------------------------------------------
-    section("Part 6: odd-n case — exhaustive scan: no algebra element anticommutes with all generators")
-    # ---------------------------------------------------------------------
-    # For each odd n in {3, 5}, scan all 2^n monomial basis elements of
-    # Cl(n, 0): pi_S = prod_{i in S} gamma_i for each subset S of {1, ..., n}.
-    # Verify that no monomial pi_S satisfies {pi_S, gamma_mu} = 0 for all mu.
-    # This combined with linearity of the anticommutator (in each argument)
-    # implies no linear combination can satisfy the anticommutator system
-    # with all generators simultaneously (since each generator imposes a
-    # linear constraint with kernel < full algebra dimension).
-
-    def monomial(gens_list, subset, dim_):
-        if not subset:
-            return eye(dim_)
-        result = gens_list[subset[0]]
-        for idx in subset[1:]:
-            result = result * gens_list[idx]
-        return result
-
-    for n in [3, 5]:
-        gens, dim = cliffords[n]
-        # Exhaustive monomial scan: all 2^n subsets of {0, ..., n-1}.
-        anti_count = 0
-        for size in range(n + 1):
-            for subset in itertools.combinations(range(n), size):
-                pi = monomial(gens, subset, dim)
-                # Does pi anticommute with EVERY generator?
-                if all(anticommutator(pi, gens[mu]) == zeros(dim, dim) for mu in range(n)):
-                    anti_count += 1
-        # Allowed exception: pi = 0 (the zero element). Subset enumeration
-        # never produces the zero element from products of generators (each
-        # gamma_mu is invertible, so any product is nonzero). Therefore
-        # anti_count should be 0 for the basis enumeration.
-        check(
-            f"at n = {n} (odd): exhaustive monomial scan — no basis element "
-            f"anticommutes with every generator",
-            anti_count == 0,
-            detail=f"{anti_count} candidate(s) out of 2^{n} = {2**n} monomials",
+    section("Part 3: odd-n centrality and the central-invertible route")
+    for n in (1, 3, 5, 7):
+        generators, dim = cliffords[n]
+        omega = omegas[n]
+        central = all(
+            commutator(omega, generator) == zeros(dim, dim)
+            for generator in generators
         )
+        invertible = omega.det() != 0
+        check(f"n={n}: omega is central", central)
+        check(f"n={n}: omega is invertible", invertible, f"det={omega.det()}")
 
-    # ---------------------------------------------------------------------
-    section("Part 7: application at d_s = 3 — chirality-allowed d_t in {1, 3, 5, 7}")
-    # ---------------------------------------------------------------------
-    d_s = 3
-    chirality_allowed = []
-    for d_t in [1, 2, 3, 4, 5, 6, 7]:
-        n = d_s + d_t
+    section("Part 4: structural certificate for the arbitrary-n coefficient rule")
+    parity_cases = {}
+    for k, delta in ((0, 0), (1, 0), (1, 1), (2, 0), (2, 1), (3, 1)):
+        parity_cases[(k, delta)] = (1 + (-1) ** (k - delta) != 0)
+    expected_cases = {
+        (0, 0): True,
+        (1, 0): False,
+        (1, 1): True,
+        (2, 0): True,
+        (2, 1): False,
+        (3, 1): True,
+    }
+    check(
+        "coefficient is nonzero exactly when |S|-delta is even",
+        parity_cases == expected_cases,
+        f"table={parity_cases}",
+    )
+
+    bijection_ok = True
+    sign_rule_ok = True
+    for n in dimensions:
+        generators, dim = cliffords[n]
+        basis_dim = 1 << n
+        for mu in range(n):
+            targets = [mask ^ (1 << mu) for mask in range(basis_dim)]
+            bijection_ok &= sorted(targets) == list(range(basis_dim))
+            bijection_ok &= all(
+                (target ^ (1 << mu)) == mask
+                for mask, target in enumerate(targets)
+            )
+        for mask in range(basis_dim):
+            monomial = monomial_from_mask(generators, mask, dim)
+            for mu, generator in enumerate(generators):
+                target, coefficient = coefficient_slot(n, (1,) * n, mask, mu)
+                predicted = coefficient * monomial_from_mask(generators, target, dim)
+                sign_rule_ok &= anticommutator(monomial, generator) == predicted
+    check(
+        "S -> S symmetric-difference {mu} is a per-generator bijection/involution",
+        bijection_ok,
+        "all masks at n=1..7",
+    )
+    check(
+        "exact coefficient sign agrees with direct matrix multiplication",
+        sign_rule_ok,
+        "all (n,S,mu) at n=1..7",
+    )
+
+    witness_ok = True
+    witness_count = 0
+    for n in range(1, 16, 2):
+        for mask in range(1 << n):
+            mu = odd_constraint_witness(n, mask)
+            _, coefficient = coefficient_slot(n, (1,) * n, mask, mu)
+            witness_ok &= coefficient != 0
+            witness_count += 1
+    check(
+        "generic odd-n witness selector constrains every Clifford coefficient",
+        witness_ok,
+        f"{witness_count} masks checked through n=15; branch proof is parity-generic",
+    )
+
+    section("Part 5: construct and solve the full simultaneous coefficient system")
+    coefficient_solutions: dict[int, list[Matrix]] = {}
+    for n in dimensions:
+        signature = tuple(1 if mu % 2 == 0 else -1 for mu in range(n))
+        system = coefficient_constraint_system(n, signature)
+        kernel = system.nullspace()
+        coefficient_solutions[n] = kernel
+        nullity = len(kernel)
+        expected_nullity = 0 if n % 2 else 1
+        check(
+            f"n={n}: full coefficient-system nullity is {expected_nullity}",
+            nullity == expected_nullity,
+            f"shape={system.rows}x{system.cols}, exact nullity={nullity}",
+        )
         if n % 2 == 0:
-            chirality_allowed.append(d_t)
+            volume_vector = zeros(1 << n, 1)
+            volume_vector[(1 << n) - 1, 0] = 1
+            check(
+                f"n={n}: coefficient kernel is exactly span(omega)",
+                nullity == 1 and kernel[0] == volume_vector,
+            )
+
+    section("Part 6: independent exact matrix-vectorization cross-check")
+    for n in (1, 2, 3, 4, 5):
+        generators, _ = cliffords[n]
+        system, span_rank = matrix_constraint_system(generators)
+        kernel = system.nullspace()
+        expected_nullity = 0 if n % 2 else 1
+        check(
+            f"n={n}: explicit monomials form a faithful 2^{n}-element span",
+            span_rank == (1 << n),
+            f"rank={span_rank}",
+        )
+        check(
+            f"n={n}: independent matrix route gives nullity {expected_nullity}",
+            len(kernel) == expected_nullity,
+            f"matrix-system shape={system.rows}x{system.cols}",
+        )
+
+    section("Part 7: mutation falsifiers")
+    cancellation_trap = Matrix([[1, 1]])
+    each_basis_fails = all(
+        cancellation_trap[:, column] != zeros(1, 1)
+        for column in range(cancellation_trap.cols)
+    )
+    trap_kernel = cancellation_trap.nullspace()
     check(
-        "chirality-allowed d_t at d_s = 3 are odd in [1, 7]: {1, 3, 5, 7}",
-        chirality_allowed == [1, 3, 5, 7],
-        detail=f"got {chirality_allowed}",
+        "full-kernel mutation: basis scan misses a cancelling linear combination",
+        each_basis_fails
+        and len(trap_kernel) == 1
+        and cancellation_trap * trap_kernel[0] == zeros(1, 1),
+        "[1,1] has kernel span((-1,1)) although neither basis vector is in it",
     )
 
-    # ---------------------------------------------------------------------
-    section("Part 8: counterfactual at d_t = 2 (n = 5 odd) — no gamma_5 exists")
-    # ---------------------------------------------------------------------
-    n = 5  # d_s + d_t with d_t = 2
-    gens, dim = cliffords[n]
-    # Exhaustive scan again, but rephrase as a counterfactual statement
-    found_any = False
-    for size in range(n + 1):
-        for subset in itertools.combinations(range(n), size):
-            pi = monomial(gens, subset, dim)
-            if all(anticommutator(pi, gens[mu]) == zeros(dim, dim) for mu in range(n)):
-                found_any = True
+    odd_system = coefficient_constraint_system(3, (1, 1, 1))
+    zero_coefficients = zeros(1 << 3, 1)
+    zero_matrix = zeros(cliffords[3][1], cliffords[3][1])
     check(
-        "counterfactual at d_s=3, d_t=2 (n=5): no basis monomial qualifies as gamma_5",
-        not found_any,
+        "zero-exclusion mutation: zero solves anticommutation but fails x^2=I",
+        odd_system * zero_coefficients == zeros(odd_system.rows, 1)
+        and zero_matrix * zero_matrix != eye(zero_matrix.rows)
+        and len(coefficient_solutions[3]) == 0,
     )
 
-    # ---------------------------------------------------------------------
-    section("Part 9: note structure and scope discipline")
-    # ---------------------------------------------------------------------
-    note_text = NOTE_PATH.read_text()
-    required = [
+    mask = (1 << 0) | (1 << 2)
+    mu = 1
+    _, correct_sign = coefficient_slot(3, (1, 1, 1), mask, mu)
+    k = mask.bit_count()
+    delta = (mask >> mu) & 1
+    r = (mask & ((1 << mu) - 1)).bit_count()
+    missing_ordering_sign = 1 + (-1) ** (k - delta)
+    check(
+        "sign mutation: dropping the (-1)^r reordering sign is rejected",
+        r == 1 and correct_sign == -2 and missing_ordering_sign == 2,
+        f"correct={correct_sign}, mutated={missing_ordering_sign}",
+    )
+
+    parity_mask = 1
+    parity_mu = 0
+    _, correct_parity_value = coefficient_slot(1, (1,), parity_mask, parity_mu)
+    parity_k = parity_mask.bit_count()
+    parity_delta = (parity_mask >> parity_mu) & 1
+    reversed_activation = (
+        2 if (parity_k - parity_delta) % 2 == 1 else 0
+    )
+    check(
+        "parity mutation: odd/even activation reversal is rejected",
+        correct_parity_value == 2 and reversed_activation == 0,
+        f"correct={correct_parity_value}, mutated={reversed_activation}",
+    )
+
+    section("Part 8: d_s=3 application and note boundary")
+    allowed = [d_t for d_t in range(1, 8) if (3 + d_t) % 2 == 0]
+    check(
+        "at d_s=3, chirality-allowed d_t in [1,7] are {1,3,5,7}",
+        allowed == [1, 3, 5, 7],
+        f"got {allowed}",
+    )
+
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    normalized_note = " ".join(note_text.split())
+    required = (
         "Clifford Volume-Element Chirality Forces Even Total Dimension Narrow Theorem",
         "Status authority:** independent audit lane only",
-        "gamma_5^2 = +I",
-        "{ gamma_5, gamma_mu } = 0",
-        "Pattern A narrow rescope",
-        "ANOMALY_FORCES_TIME_THEOREM.md",
-        "Forbidden imports check",
-        "d_t in { 1, 3, 5, 7, ... }",
-        "Honest open items",
+        "common anticommutant of all generators",
+        "only zero lies in the common anticommutant",
+        "S -> S symmetric-difference {mu}",
+        "no nonzero square-normalized element",
         "Does **not** claim `d_t = 1`",
-    ]
-    for s in required:
-        check(f"note contains: {s!r}", s in note_text)
+        "Forbidden imports check",
+    )
+    for phrase in required:
+        check(f"note contains: {phrase!r}", phrase in normalized_note)
 
-    # Scope discipline: must NOT close admission (i) or claim d_t = 1
-    forbidden_phrases = [
-        "closes admission (i)",
-        "promotes the parent to positive_theorem",
-    ]
-    for f in forbidden_phrases:
-        check(
-            f"narrow scope avoids forbidden claim: {f!r}",
-            f not in note_text,
-        )
+    forbidden = ("promotes the parent to positive_theorem",)
+    for phrase in forbidden:
+        check(f"note avoids: {phrase!r}", phrase not in note_text)
+    retired_terms = ("admis" + "sion", "admit" + "ted")
+    check(
+        "touched note uses no retired premise-class wording",
+        all(term not in note_text.lower() for term in retired_terms),
+    )
 
-    # ---------------------------------------------------------------------
     section("Summary")
-    # ---------------------------------------------------------------------
-    print("  Verified at exact sympy precision:")
-    print("    CAR for Cl(n, 0) at n = 2, 3, 4, 5, 6 on explicit matrix realizations")
-    print("    (V) parity rule omega gamma_mu = (-1)^(n-1) gamma_mu omega at n = 2..6")
-    print("    Even n in {2, 4, 6}: omega anticommutes with every generator;")
-    print("    explicit gamma_5 with gamma_5^2 = +I and {gamma_5, gamma_mu} = 0")
-    print("    Odd n in {3, 5}: omega central; exhaustive monomial scan finds")
-    print("    no algebra basis element anticommuting with every generator")
-    print("    Application at d_s = 3: chirality-allowed d_t in {1, 3, 5, 7}")
-    print("    Counterfactual at d_t = 2 (n = 5): no gamma_5 exists")
+    print("  Exact results:")
+    print("    CAR and volume parity: n=1..7")
+    print("    Full coefficient systems: odd nullity 0 at n=1,3,5,7;")
+    print("      even nullity 1=span(omega) at n=2,4,6")
+    print("    Arbitrary-n structure: symmetric-difference bijection, exact sign,")
+    print("      and parity-generic odd-n coefficient witness")
+    print("    Independent explicit-matrix kernel solve: n=1..5")
+    print("    Mutations caught: basis-scan/full-kernel, zero, sign, and parity")
 
     print()
     print("=" * 88)

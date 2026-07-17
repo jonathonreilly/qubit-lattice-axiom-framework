@@ -1,4 +1,4 @@
-# The C_3[111] Coupling Triple on a Finite Berezin Probe Surface: Exact Determinant Realization, Count-Binary Generator Translation, and Constant-Substitution Measure Collapse (Bounded Theorem)
+# The C_3[111] Coupling Triple on a Finite Berezin Probe Surface: Exact Determinant Realization, Count-Binary Generator Translation, and Held-Measure Constant-Substitution Scalar Action (Bounded Theorem)
 
 **Date:** 2026-07-17
 **Type:** bounded_theorem
@@ -36,11 +36,13 @@ of the same two-presentation mechanism. T3 (declared reading): the graining
 count binary translates into a generator-count binary — horn `m` uses `6m`
 generators, with singlet/doublet exponent pair `(1,1)` versus `(2,2)` — a
 fourth exact translation of the same underived binary, with no horn
-selected. T4 (bounded negative): on this finite probe surface, constant
-(coupling-independent) linear generator substitutions at the held
-integration order and normalization act on the integral by a constant
-overall scalar, and no constant scalar converts the count-once value into
-the count-twice value; within that class the horn stays a discrete choice.
+selected. T4 (bounded negative): on this finite probe surface, active
+constant (coupling-independent) homogeneous linear substitutions of the
+Grassmann generators, with ordinary central Grassmann-even scalar
+coefficients and with generator count, integration order, and normalization
+held fixed, act on the zero-source integral output by a constant overall
+scalar. No such scalar converts the count-once value into the count-twice
+value; within that output class the horn stays a discrete choice.
 The class boundary is computed, not asserted: a coupling-dependent
 substitution converts the horns, and a passive coordinate change that
 transforms the measure alongside the kernel leaves the integral invariant
@@ -204,13 +206,16 @@ the live Qualification of
 
 The unfixed binary remains exactly that.
 
-### Constant-substitution measure collapse on the finite probe surface (T4, bounded negative)
+### Held-measure constant-substitution scalar action on the zero-source integral (T4, bounded negative)
 
 On the declared finite surface, with the pinned convention of T1, the
-substitution class under test is: constant (coupling-independent) linear
-generator substitutions, applied at the held integration order and held
-normalization — the measure factors are not transformed alongside the
-generators.
+substitution class under test is: active constant (coupling-independent)
+homogeneous linear generator substitutions with ordinary central
+Grassmann-even scalar coefficients, applied at fixed generator count and
+held integration order and normalization. The measure factors are not
+transformed alongside the generators. The claim concerns the zero-source
+integral value, not equality of the transformed kernels, source-deformed
+generating functionals, or correlation functions.
 
 1. **Constant diagonal rescale.** `theta_j -> c_j * theta_j`,
    `thetabar_i -> d_i * thetabar_i` with constant `c_j, d_i` multiplies the
@@ -223,22 +228,33 @@ generators.
    symbolically at `n = 2`; runner B4): for invertible constant `A, B` the
    value changes by the constant `det(B) * det(A)`; the diagonal rescale is
    an instance.
-3. **Constant odd-mixing substitution.** A fixed integer substitution `S`
-   mixing barred and unbarred generators within one copy multiplies the
-   integral by the constant `det S` (witness `det S = 3`), and its
-   block-form reproduces the item-2 kernel value (runner B4).
-4. **Constant cross-copy mixing.** A fixed swap-plus-rescale substitution
+3. **General constant odd-linear top-form law.** Put all `2n` generators in
+   the pinned ordered column `xi`. Under `xi = S xi'`, homogeneous linearity
+   preserves Grassmann degree, while the unique top monomial transforms by
+   the top exterior power,
+   `xi_1 ... xi_(2n) = det(S) xi'_1 ... xi'_(2n)`. Since the held-order
+   Berezin integral extracts exactly that coefficient,
+   `Integral F(S xi') = det(S) Integral F(xi)` for every constant `2n` by
+   `2n` matrix `S`, including singular `S`. This is the class proof for
+   arbitrary barred/unbarred and cross-copy mixing; the runner verifies the
+   generic symbolic four-generator identity independently of the
+   block-preserving kernel route (runner B4).
+4. **Constant within-copy odd-mixing witness.** A fixed integer substitution
+   `S` mixing barred and unbarred generators within one copy realizes the
+   general law with `det S = 3`, and its block-form reproduces the item-2
+   kernel value (runner B4).
+5. **Constant cross-copy mixing witness.** A fixed swap-plus-rescale substitution
    on the 12-generator joint surface multiplies the joint integral by the
    constant `det S` (witness `det S = -2`; runner B4).
-5. **No constant-scalar conversion.** No constant `kappa` satisfies
+6. **No constant-scalar conversion.** No constant `kappa` satisfies
    `kappa * det3 = det3^2` identically on entrywise-real triples: the
    forced values at the exact witnesses `(1,0,0)` and `(2,0,0)` are `1` and
    `8` (runner B4).
-6. **Uniform rescale splits the horns.** `W -> u * W` on the count-once
+7. **Uniform rescale splits the horns.** `W -> u * W` on the count-once
    copy, with `conj(u)` on the partner copy, sends the count-once value to
    `rho * det3` with `rho = u^3` and the count-twice value to
    `|rho|^2 * det3^2` on entrywise-real triples (runner B4).
-7. **Scope boundary: coupling-dependent substitution converts.** Dropping
+8. **Scope boundary: coupling-dependent substitution converts.** Dropping
    the constant (coupling-independent) requirement dissolves the collapse:
    the coupling-dependent substitution `A(W) = W`, `B = I` at held measure
    sends the count-once kernel `W` to `W * W`, whose integral is `det3^2` —
@@ -247,7 +263,7 @@ generators.
    value (runner B4). The count binary is therefore discrete relative to
    the constant substitution class, not absolutely: the claim scoped below
    excludes coupling-dependent substitutions by construction.
-8. **Scope boundary: passive coordinate change is horn-invariant by a
+9. **Scope boundary: passive coordinate change is horn-invariant by a
    quoted prior.** A passive Berezin change of variables transforms the
    measure alongside the kernel, and the transform law is consumed verbatim
    from
@@ -265,19 +281,20 @@ generators.
    convert nothing.
 
 Bounded negative (N-gated below): on this finite Berezin probe surface,
-every constant (coupling-independent) linear generator substitution at the
-held integration order and normalization multiplies the quadratic integral
-by a constant overall scalar, and no constant scalar converts the
-count-once polynomial family `det3` into the count-twice polynomial family
-`det3^2`. Within the constant substitution class, the surface's own free
-parameters collapse to (i) the discrete count binary and (ii) a supplied
-constant overall normalization. The boundary of the class is computed, not
-asserted: a coupling-dependent linear substitution converts the horns, and
-a passive coordinate change that transforms the measure is horn-invariant
-by the quoted realification law — so the collapse statement neither extends
-beyond constant substitutions nor needs to. This is a statement about the
-probe surface's own parameter freedom. It does not derive the physical
-action or its measure, and it does not touch the closure criterion's
+every active constant (coupling-independent) homogeneous linear generator
+substitution in the declared class multiplies the zero-source quadratic
+integral output by a constant overall scalar, and no constant scalar
+converts the count-once polynomial family `det3` into the count-twice
+polynomial family `det3^2`. Thus the zero-source output freedom supplied by
+that class reduces to constant normalization and leaves the two polynomial
+families distinct. This does not quotient or identify the full quadratic
+kernels, source-deformed generating functionals, or correlation functions.
+The boundary of the class is computed, not asserted: a coupling-dependent
+linear substitution converts the horns, and a passive coordinate change
+that transforms the measure is horn-invariant by the quoted realification
+law. The statement does not extend beyond the declared active constant
+class. It does not derive the physical action or its measure, and it does
+not touch the closure criterion's
 "action and its measure" unknowns or narrow the grain obligation — the
 criterion targets the physical matter action and measure, not this probe.
 Nonlinear and nilpotent-shifted substitutions — changes of variables whose
@@ -326,47 +343,63 @@ surface freedom, named in N6.
 
 ## No-Go Discipline Gate
 
-This gate covers the note's bounded negative content: the T4
-constant-substitution measure collapse with its computed scope boundaries,
-and the T3 nonselection boundary.
+This gate covers the note's bounded negative content: the T4 held-measure
+constant-substitution scalar action on the zero-source integral with its
+computed scope boundaries, and the T3 nonselection boundary.
 
 **Subclaim.** On the finite Berezin probe surface of R4b, with the pinned
-convention of T1, no constant (coupling-independent) linear generator
-substitution at the held integration order and normalization, and no
-constant scalar normalization, converts the count-once realization into the
-count-twice realization; every substitution in that class acts by a
-constant overall scalar, and within that class the count binary stays a
-discrete choice. Coupling-dependent substitutions are outside the class and
-do convert (computed); passive coordinate changes that transform the
-measure are horn-invariant (quoted prior).
+convention of T1, no active constant (coupling-independent) homogeneous
+linear generator substitution in the declared fixed-count, held-measure
+class, and no constant scalar normalization, converts the count-once
+zero-source integral output into the count-twice output. Every substitution
+in that class acts on that output by the top-form factor `det S`, so the two
+polynomial families remain distinct. Coupling-dependent substitutions are
+outside the class and do convert (computed); passive coordinate changes that
+transform the measure are horn-invariant (quoted prior). No claim about
+kernel equivalence or source/correlation data is made.
 
-**Witness.** The constant block-preserving scalar action
-`det(B) * det(A)` (runner B4), the constant odd-mixing and cross-copy
-scalar actions `det S` (runner B4), the constant-scalar witness clash `1`
-versus `8` (runner B4), the uniform-rescale split `rho` versus `|rho|^2`
-with multiplier `det3` (runner B2, B4), and the coupling-dependent
-conversion witness `A(W) = W` (runner B4).
+**Proof and witnesses.** The dimension-independent top-exterior-power proof
+in T4 gives the arbitrary constant odd-linear scalar action `det S`; runner
+B4 verifies it for a fully generic symbolic four-generator matrix and then
+checks within-copy and cross-copy witnesses with `det S = 3` and `det S =
+-2`. The block-preserving specialization gives `det(B) * det(A)`, the
+constant-scalar witnesses clash at `1` versus `8`, the uniform rescale splits
+as `rho` versus `|rho|^2`, and the coupling-dependent conversion witness is
+`A(W) = W` (runner B2, B4).
 
 ### N1 — alternative route enumeration
 
 | Route toward converting one horn into the other by measure freedom | Marker | Result and check |
 |---|---|---|
 | constant block-preserving kernel substitution (`theta = A theta'`, `thetabar = B thetabar'`; diagonal, uniform, and scalar rescales as instances) | ATTEMPTED | multiplies the integral by the constant `det(B) det(A)`; a uniform rescale splits the horns (`rho` versus `|rho|^2`); no constant converts `det3` to `det3^2` — exact witnesses give `1` versus `8` (runner B2, B4) |
-| constant odd-linear substitution mixing barred and unbarred generators within one copy | ATTEMPTED | multiplies the integral by the constant `det S` (fixed integer witness, `det S = 3`); a constant scalar, so the same witness clash applies (runner B4) |
-| constant cross-copy mixing on the 12-generator joint surface | ATTEMPTED | multiplies the joint integral by the constant `det S` (swap-plus-rescale witness, `det S = -2`); a constant scalar (runner B4) |
+| constant odd-linear substitution mixing barred and unbarred generators within one copy | ATTEMPTED | the top-form proof gives the general `det S` law; a generic symbolic four-generator gate and fixed `det S = 3` witness check the route (runner B4) |
+| constant cross-copy mixing on the 12-generator joint surface | ATTEMPTED | the same dimension-independent top-form law applies; the swap-plus-rescale witness has `det S = -2` (runner B4) |
 | passive Berezin coordinate change (substitution plus transformed measure) | RULED OUT BY PRIOR | the quoted realification law: kernel and measure factors cancel, the integral is invariant, nothing converts (runner B6) |
 | coupling-dependent linear substitution | ATTEMPTED, CONVERTS — OUTSIDE CLAIM SCOPE | `A(W) = W`, `B = I` sends count-once to `det3^2` = count-twice on the real locus; the subclaim therefore excludes coupling-dependent substitutions by construction (runner B4) |
 
 ### N2 — wall independence
 
+T4 has one compound **domain definition**, not a list of independent walls:
+active held-measure substitution, constant central Grassmann-even
+coefficients, homogeneous linearity, and fixed generator count. Relaxing the
+constant-coefficient clause gives the computed `A(W)=W` conversion; changing
+to a passive transformed-measure coordinate map gives the quoted invariance
+law; nonlinear maps remain outside the theorem. These are domain boundaries,
+not an inflated wall count.
+
+The downstream residual set is conservatively collapsed to two walls. The
+count-binary question and the equipartition-granularity question are treated
+as one compound **graining/horn-selection residual** because this note does
+not prove them independent and a suitable occupancy/graining law could
+select a horn. The other wall is **stage selection**. Their complete pairwise
+audit is therefore one row:
+
 | Wall pair | Does the first retire the second? | Does the second retire the first? | Disposition |
 |---|---|---|---|
-| constant-substitution measure collapse (T4) / count-binary selection | no: the constant-scalar action leaves both horns available | no: selecting a horn would not make constant substitutions act non-scalarly | independent; neither retired |
-| constant-substitution measure collapse (T4) / stage selection | no: the constant-scalar action says nothing about when K-reality acts | no: a stage clause would not change the constant-substitution scalar | independent; neither retired |
-| constant-substitution measure collapse (T4) / equipartition granularity | no: constant scalars supply no slot-count law | no: a granularity law would not alter the scalar action | independent; neither retired |
-| constant-substitution measure collapse (T4) / held-versus-transformed measure | no: the collapse is stated at held measure; transforming the measure gives the invariance law instead | no: the passive invariance law does not make held-measure substitutions non-scalar | independent scope wall; both sides computed or quoted |
-| constant-substitution measure collapse (T4) / constant-versus-coupling-dependent coefficients | no: the collapse holds only for constant coefficients; a coupling-dependent substitution converts | no: the conversion witness does not alter any constant substitution's scalar action | independent scope wall; boundary computed |
-| constant-substitution measure collapse (T4) / block-preserving-versus-general odd-linear mixing | no: odd-mixing and cross-copy substitutions are computed and stay scalar; nonlinear mixing stays untested | no: the untested nonlinear class does not change the computed constant-linear scalars | scope wall; constant-linear side computed, nonlinear side open (N6) |
+| stage selection / compound graining-and-horn selection | no: fixing when K-reality acts supplies no graining law or horn | no: choosing a graining law or horn does not determine when the physical action imposes K-reality | independent, exactly as the section-tie source states |
+
+The physical action-and-measure derivation is a superseding path that could
+address either or both walls, not a third independent wall.
 
 ### N3 — hidden-wall scan
 
@@ -377,14 +410,18 @@ framework provides", "bridge context", "background", "naturally",
 | Hit | Classification |
 |---|---|
 | "canonical" (canonical basis; ascending monomial order) | quoted carrier convention pinned in R1b, and a pinned bookkeeping order whose sign consequences are computed both ways (B1) |
+| "by construction" (coupling-dependent route excluded from the constant class, twice) | explicit domain statement, not a proof shortcut; the excluded route is computed to convert in B4 and remains live in N6 |
 | scan terms appearing in this checklist sentence | audit metadata, not proof steps |
 
-Two scope premises are load-bearing and declared, not hidden: (i) the
-substitution class holds the integration order and normalization fixed
-(held measure) — transformed-measure changes of variables are governed by
-the quoted realification law instead; (ii) the substitution coefficients
-are constant (coupling-independent) — the coupling-dependent boundary is
-computed as a conversion, not assumed away. The declared readings R1b-R5b
+The scope premises are load-bearing and declared, not hidden: (i) the
+substitution class holds generator count, integration order, and
+normalization fixed (held measure) — transformed-measure changes of variables
+are governed by the quoted realification law instead; (ii) substitution
+coefficients are ordinary central Grassmann-even scalars and are constant
+(coupling-independent) — the coupling-dependent boundary is computed as a
+conversion, not assumed away; and (iii) substitutions are homogeneous and
+linear — nonlinear generator-dependent Berezinians remain outside the
+claim. The declared readings R1b-R5b
 are explicit FLAGged suppliers, not hidden walls. No hidden action,
 measure, weighting, occupancy law, or carrier selector is used.
 
@@ -397,17 +434,18 @@ consumed as context and boundary, not as matching witnesses.
 
 ### N5 — rhetoric and resolution audit
 
-The subclaim is existential-witness algebra on a declared finite surface:
-two symbolic Jacobian identities at `n = 2`, two computed odd-mixing and
-cross-copy scalar actions, one constant-scalar clash with exact witnesses,
-one rescale split, and one computed conversion witness at the class
-boundary. It says the constant coupling-independent substitution class acts
-by constant scalars at held measure; it does not say that a future theorem
-cannot select a horn, and it makes no claim about coupling-dependent or
-nonlinear substitutions beyond the computed boundary witnesses, infinite
-surfaces, per-site or lattice-wide structure, or the physical action and
-measure. No universal negative is asserted, and no enumeration of future
-theorems is claimed.
+The subclaim is a **scoped universal top-form theorem**, not merely
+existential-witness algebra: the exterior-power proof covers every constant
+homogeneous odd-linear map at fixed generator count, while the runner checks
+a generic symbolic four-generator matrix and the stated six- and
+twelve-generator witnesses. The resolution actually tested is the
+zero-source integral output. The result does not identify full kernels,
+source-deformed generating functionals, correlations, per-site or
+lattice-wide structures, or the physical action and measure. It does not say
+that a future theorem cannot select a horn, and it makes no claim about
+coupling-dependent or nonlinear substitutions beyond the computed boundary
+witnesses, or about infinite surfaces. No unbounded or physical universal
+negative is asserted, and no enumeration of future theorems is claimed.
 
 ### N6 — partial-closure paths
 
@@ -468,13 +506,15 @@ in N6 is preserved as the route that would supersede it.
 | determinant power-split identity (context handle) | no; it is a corroborative identity, not a selection | consistent exponent bookkeeping |
 | realification Pfaffian power identity (quoted dependency) | no; its transform law is consumed here as the passive-invariance prior | direct: rules the transformed-measure route out of the conversion search |
 | section-tie stage/granularity residuals | no; both residuals survive unchanged | boundary context for the endpoint control |
+| `OCCUPANCY_READOUT_EXPONENT_BEREZIN_SUBSUMPTION_BOUNDED_THEOREM_NOTE_2026-06-09.md` measure-freedom boundary | no source-side retirement is claimed; it remains conditional on its realization/registration conditions and its ledger status is pipeline-derived | direct warning: restrict the present statement to its declared zero-source output class and do not promote it to physical horn selection |
+| staggered and channel-holomorphy predecessors (`KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md`; `KOIDE_GENERATION_CHANNEL_SPACE_HOLOMORPHY_CHANNEL_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-06-11.md`) | neither source claims physical selection; both keep interacting, normalization, or off-class routes open, with ledger status pipeline-derived | direct scope precedent: a universal statement is safe only over a proved finite-dimensional class; it does not turn output-scalar covariance into full-surface equivalence |
 | `KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md` route-enumeration demotion (four routes listed where the discipline requires five) | the demotion stands; it is the enumeration-discipline precedent | direct: N1 above supplies five distinct routes, each computed here or governed by a quoted prior |
 
-**Gate result: PASS.** N1-N8 support the constant-substitution
-measure-collapse subclaim at its declared scope, with the count binary, the
-stage residual, and the granularity residual all left standing, the
-coupling-dependent conversion carried as a computed boundary, and the
-nonlinear boundary named.
+**Gate result: PASS.** N1-N8 support the held-measure
+constant-substitution scalar-action subclaim at its declared zero-source
+output scope, with the stage residual and the collapsed graining/horn
+residual left standing, the coupling-dependent conversion carried as a
+computed boundary, and the nonlinear boundary named.
 
 ## Non-claims
 
@@ -502,6 +542,9 @@ nonlinear boundary named.
    physically preferred: the class is a declared probe scope, and the
    coupling-dependent conversion is computed precisely to mark its
    boundary.
+9. No claim that constant substitutions identify full kernels or preserve
+   source-deformed generating functionals or correlations; T4 concerns only
+   the zero-source integral output.
 
 ## Dependency roles and status boundary
 
@@ -510,9 +553,12 @@ declared probe surface, checked symbolically with computed-sign and witness
 controls. T2 consumes the spectral-pairing license R2b and carries that
 row's source-side premise weight, which is pipeline-derived. T3 adds the
 declared reading R5b on top: exact bookkeeping plus a nonselection
-boundary. T4's negative is bounded to constant (coupling-independent)
-linear substitutions at held measure on the finite surface, with the
-coupling-dependent conversion computed as its boundary, the
+boundary. T4's negative is bounded to active constant
+(coupling-independent) homogeneous linear substitutions with ordinary
+central Grassmann-even coefficients at fixed generator count and held
+measure on the finite surface. It concerns the zero-source integral output,
+not full kernel or correlation equivalence, with the coupling-dependent
+conversion computed as its boundary, the
 passive-invariance law consumed from the realification note, the nonlinear
 boundary named in N6 and N7, and the action-and-measure path preserved in
 N6. Current audit and effective statuses are
@@ -543,6 +589,10 @@ not seed citation-graph dependencies:
   — the per-channel-atom alternative kept alive.
 - `KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md` — the
   route-enumeration demotion precedent consulted in N8.
+- `OCCUPANCY_READOUT_EXPONENT_BEREZIN_SUBSUMPTION_BOUNDED_THEOREM_NOTE_2026-06-09.md`
+  — the earlier conditional measure-freedom boundary consulted in N8.
+- `KOIDE_GENERATION_CHANNEL_SPACE_HOLOMORPHY_CHANNEL_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-06-11.md`
+  — the finite-dimensional channel-class scope precedent consulted in N8.
 
 ## Verification
 
@@ -551,7 +601,7 @@ python3 scripts/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_
 ```
 
 ```text
-TOTAL: PASS=116 FAIL=0
+TOTAL: PASS=121 FAIL=0
 ```
 
 **No check passes by literal stipulation.**

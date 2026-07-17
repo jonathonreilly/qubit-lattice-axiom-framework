@@ -17,14 +17,15 @@ Blocks:
      doubling with multiplier det3 (count_twice = count_once * det3)
   B3 declared-reading generator-count bookkeeping (horn m uses 6m
      generators; a declared translation, never an equivalence)
-  B4 constant-substitution measure collapse and its scope boundary:
+  B4 held-measure constant-substitution scalar action on the zero-source
+     integral and its scope boundary:
      diagonal rescale scalar, general block-preserving kernel substitution
      scalar det(B)det(A), no-constant-kappa witness clash, uniform-rescale
      horn split rho versus |rho|^2, coupling-dependent conversion witness
      A(W) = W turning count-once into count-twice (kernel route and
-     generator-substitution route agree), constant odd-mixing substitution
-     scalar det(S) with block-form consistency, constant cross-copy mixing
-     scalar on the 12-generator joint
+     generator-substitution route agree), generic constant odd-linear
+     substitution scalar det(S), fixed within-copy witness with block-form
+     consistency, constant cross-copy mixing scalar on the 12-generator joint
   B5 controls: Hermitian real-intersection, off-locus negative (1,i,0),
      pairing-without-reality witness (i,1+i,i), neither-horn-forced witness
      (3,1,1), section-tie endpoint arithmetic (both conditional laws)
@@ -379,7 +380,7 @@ check("B3.1", "generator-count bookkeeping: horn m uses 6m generators, read "
       len(th3 + tb3) == 6 and len(order12) == 12
       and len(order12) == 2 * len(th3 + tb3))
 
-# ---------------- B4: constant-substitution measure collapse + scope boundary
+# -------- B4: held-measure constant-substitution scalar action + scope boundary
 
 
 def gsubs_linear(F, images):
@@ -460,12 +461,20 @@ check("B4.5", "coupling-dependent conversion witness A(W) = W, B = I at held "
 
 F4 = gexp_product(minus_action_terms(M2, th2, tb2))
 order4 = [0, 1, 2, 3]
+s4_entries = sp.symbols("s0:16")
+S4_generic = Matrix(4, 4, s4_entries)
+val_mix_generic = berezin(
+    gsubs_linear(F4, images_from_matrix(S4_generic, 4)), order4)
+base4 = berezin(F4, order4)
+check("B4.6", "generic constant odd-linear substitution on four generators "
+      "acts on the zero-source integral by det(S) at held measure",
+      is_zero(val_mix_generic - S4_generic.det() * base4))
+
 S4 = Matrix([[1, 1, 0, 0],
              [0, 1, 0, 0],
              [0, 0, 3, 0],
              [0, 1, 1, 1]])
 val_mix = berezin(gsubs_linear(F4, images_from_matrix(S4, 4)), order4)
-base4 = berezin(F4, order4)
 ims_blk = [gen(i) for i in range(4)]
 for jpos, j in enumerate(th2):
     ims_blk[j] = {frozenset((th2[jp],)): sp.sympify(Am[jpos, jp])
@@ -474,7 +483,7 @@ for ipos, i in enumerate(tb2):
     ims_blk[i] = {frozenset((tb2[ip],)): sp.sympify(Bm[ipos, ip])
                   for ip in range(2)}
 val_blk_sub = berezin(gsubs_linear(F4, ims_blk), order4)
-check("B4.6", "constant odd-mixing substitution (fixed integer S mixing "
+check("B4.7", "constant odd-mixing substitution (fixed integer S mixing "
       "barred/unbarred, det S = 3) acts by det(S) at held measure; "
       "block-form substitution reproduces the B4.2 kernel value",
       S4.det() == 3
@@ -487,7 +496,7 @@ ims_cross[0] = gen(6)
 ims_cross[6] = gen(0)
 ims_cross[1] = gen(1, 2)
 val_cross = berezin(gsubs_linear(F12, ims_cross), order12)
-check("B4.7", "constant cross-copy mixing on the 12-generator joint "
+check("B4.8", "constant cross-copy mixing on the 12-generator joint "
       "(swap generators 0 and 6 across copies, scale generator 1 by 2; "
       "det S = -2) acts by det(S) at held measure",
       is_zero(val_cross - (-2) * val12))
@@ -643,6 +652,8 @@ ROWS = [
     "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
     "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12",
     "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04",
+    "occupancy_readout_exponent_berezin_subsumption_bounded_theorem_note_2026-06-09",
+    "koide_generation_channel_space_holomorphy_channel_independence_bounded_theorem_note_2026-06-11",
     "ac_orbit_occupancy_statistical_grain_derivation_obligation",
 ]
 for i, rid in enumerate(ROWS, 1):
@@ -661,7 +672,7 @@ SECTIONS = [
     "### Berezin realization exactness under the pinned convention (T1, exact)",
     "### Sector-selective realization on entrywise-real triples (T2, bounded)",
     "### The count binary as a generator-count binary (T3, declared reading)",
-    "### Constant-substitution measure collapse on the finite probe surface (T4, bounded negative)",
+    "### Held-measure constant-substitution scalar action on the zero-source integral (T4, bounded negative)",
     "## Gated controls",
     "## Negative controls",
     "## No-Go Discipline Gate",
@@ -745,6 +756,8 @@ CONTEXT_HANDLES = [
     "ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md",
     "KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md",
     "KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md",
+    "OCCUPANCY_READOUT_EXPONENT_BEREZIN_SUBSUMPTION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+    "KOIDE_GENERATION_CHANNEL_SPACE_HOLOMORPHY_CHANNEL_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
 ]
 for handle in CONTEXT_HANDLES:
     B8_N += 1
@@ -773,8 +786,10 @@ print(
     "source-side premise weight (row status pipeline-derived); R3b probe, "
     "not derived form; R4b declared Berezin probe surface, not the physical "
     "action or measure; R5b declared count-binary reading, not an "
-    "equivalence; T4 scoped to constant coupling-independent linear "
-    "substitutions at held integration order and normalization "
+    "equivalence; T4 scoped to the zero-source integral output under active "
+    "constant coupling-independent homogeneous linear substitutions with "
+    "central Grassmann-even coefficients at fixed generator count and held "
+    "integration order and normalization "
     "(coupling-dependent substitutions convert the horns and sit outside "
     "the claim; passive coordinate changes invariant by the quoted "
     "realification law); B5 endpoint arithmetic conditional on supplied "

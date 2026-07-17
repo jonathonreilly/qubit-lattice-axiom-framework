@@ -232,7 +232,7 @@ def shadow_report_lines() -> list:
                 ("Admitted ids absent from lane candidates", len(absent)),
                 ("Live conditional/failed rows that would park",
                  queue_summary.get("shadow_would_park_count", 0)),
-                ("Live rows fail-open (no snapshot dep map)",
+                ("Live rows fail-open (legacy/unversioned snapshot)",
                  queue_summary.get("shadow_conditional_fail_open_count", 0)),
                 (f"Lane rows already in actual ready top-{SHADOW_TOP_N}", overlap),
                 ("Lane rows added since prior pass", len(added)),

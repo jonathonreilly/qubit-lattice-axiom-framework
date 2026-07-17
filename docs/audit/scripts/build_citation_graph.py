@@ -36,6 +36,12 @@ OUTPUT_PATH = AUDIT_DATA_DIR / "citation_graph.json"
 SKIP_PREFIXES = ("audit/",)
 GENERATED_PUBLICATION_FILES = {"PUBLICATION_AUDIT_DIVERGENCE.md"}
 GENERATED_PUBLICATION_SUFFIXES = ("_EFFECTIVE_STATUS.md",)
+# Generated repo status surfaces: pure projections of ledger state. Their
+# links are report output, not citations — if they fed the graph they would
+# add in-degree/score to exactly the rows they report on (a generated index
+# of N retained rows would bump all N criticality inputs), so they must
+# contribute no nodes or edges.
+GENERATED_REPO_FILES = {"FRONT_DOOR_STATUS.md", "RETAINED_BACKBONE.md"}
 
 # Legacy Status-line normalization is used only as a temporary migration hint
 # for seeding claim_type on rows that predate Type: metadata. It is not emitted
@@ -578,6 +584,8 @@ def is_skipped(rel_path: Path) -> bool:
             return True
         if rel_path.name.endswith(GENERATED_PUBLICATION_SUFFIXES):
             return True
+    if rel_path.parts[:1] == ("repo",) and rel_path.name in GENERATED_REPO_FILES:
+        return True
     return False
 
 

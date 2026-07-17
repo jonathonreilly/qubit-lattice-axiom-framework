@@ -356,9 +356,10 @@ def retained_backbone_lines(rows: dict) -> list[str]:
         "independent audit lane; this file adds no status of its own and is not a",
         "physics claim surface. Retained-grade values are `retained`,",
         "`retained_bounded`, and `retained_no_go`; boxed `decoration_under_*` rows",
-        "are decorations under a retained parent, not independent retained rows.",
-        "Authority: tracked shards in [`docs/audit/data/ledger/`](../audit/data/ledger/),",
-        "summarized in",
+        "are decorations under a retained-grade parent (directly, or through a",
+        "decoration chain), not independent retained rows.",
+        "Authority: the tracked shards under `docs/audit/data/ledger/` (one JSON",
+        "file per claim), summarized in",
         "[`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).",
         "",
         table(

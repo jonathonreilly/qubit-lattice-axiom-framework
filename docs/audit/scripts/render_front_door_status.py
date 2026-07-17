@@ -446,7 +446,7 @@ def main() -> None:
             ]
         ),
         "",
-        "Source: tracked shards in [`docs/audit/data/ledger/`](../audit/data/ledger/) and",
+        "Source: tracked shards under `docs/audit/data/ledger/` and",
         "[`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).",
         "Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBONE.md) (generated).",
         "",

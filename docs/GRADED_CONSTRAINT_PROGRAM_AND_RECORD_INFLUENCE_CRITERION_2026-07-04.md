@@ -12,7 +12,7 @@ targets, it says so.
 **Status authority:** none. Independent audit lane and owner channels are
 untouched.
 **Premise weight:** none — the policy log's retired-reading-notes formula
-applies to this entire memo: no premise or interpretive weight. Per the
+applies to this entire memo: no premise or interpretive weight. Per the This memo is citable for orientation and scope discipline only.
 Qualification, nothing here is usable as a premise. Every load-bearing item
 below either points at its owning channel (policy entry, bounded note,
 registry, or landed Class D proposal) or is marked OPEN or CANDIDATE. Worker

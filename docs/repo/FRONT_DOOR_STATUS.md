@@ -46,7 +46,7 @@ Owner-approval history for axioms and primitives:
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 62 |
 
-Source: tracked shards in [`docs/audit/data/ledger/`](../audit/data/ledger/) and
+Source: tracked shards under `docs/audit/data/ledger/` and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
 
 ## Audit Queue

@@ -15,7 +15,7 @@ branches should appear here exactly once with one of five dispositions:
 - `frozen-out`
 
 Audit-transition rule: these are manuscript-capture dispositions. The audit
-lane's [sharded ledger](../../audit/data/ledger/) is the canonical source
+lane's sharded ledger (`docs/audit/data/ledger/`) is the canonical source
 for ratified `effective_status`. Until the ledger records a clean verdict, read
 `retained` / `promoted` capture labels in this matrix as proposed package
 placement rather than audit-ratified status.

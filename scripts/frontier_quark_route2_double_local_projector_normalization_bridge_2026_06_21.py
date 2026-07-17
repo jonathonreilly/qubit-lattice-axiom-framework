@@ -604,31 +604,6 @@ def independent_affine_endpoint(
     return q_prime, rho
 
 
-FORMAL_PREMISES = frozenset(
-    {
-        "defined_signed_axis_carrier",
-        "defined_signed_permutation_action",
-        "finite_rational_linear_algebra",
-        "positive_rational_arguments",
-        "integer_exponent_argument",
-    }
-)
-PHYSICAL_REQUIREMENTS = {
-    "physical exponent selection": frozenset({"physical_weight_law"}),
-    "physical normalization selection": frozenset({"physical_normalization_rule"}),
-    "physical source/readout identification": frozenset({"physical_source_readout_bridge"}),
-    "physical endpoint prediction": frozenset({"physical_endpoint_identification"}),
-}
-
-
-def inference_authorized(conclusion: object, premises: object) -> bool:
-    if type(conclusion) is not str or conclusion not in PHYSICAL_REQUIREMENTS:
-        raise ValueError("unknown physical conclusion")
-    if type(premises) is not frozenset or any(type(item) is not str for item in premises):
-        raise TypeError("premises must be a strict frozenset of strings")
-    return PHYSICAL_REQUIREMENTS[conclusion].issubset(premises)
-
-
 FORBIDDEN_AFFIRMATIVE_SOURCE_PHRASES = (
     "the theorem selects the physical exponent",
     "the theorem supplies the physical normalization",
@@ -674,8 +649,20 @@ def source_scope_checks() -> None:
         and ("d" + "type=float") not in runner_text,
     )
     report(
-        "formal inputs alone authorize no physical application claim",
-        all(not inference_authorized(claim, FORMAL_PREMISES) for claim in PHYSICAL_REQUIREMENTS),
+        "formal APIs expose no physical selection inputs",
+        not call_succeeds(
+            lambda: monomial_lambda(
+                Fraction(1, 3),
+                Fraction(1, 2),
+                -2,
+                physical_source="selected",  # type: ignore[call-arg]
+            )
+        )
+        and not call_succeeds(
+            lambda: direct_projectors(
+                physical_normalization="selected"  # type: ignore[call-arg]
+            )
+        ),
     )
 
 
@@ -923,9 +910,20 @@ def hostile_mutation_acceptance(name: str) -> bool:
     if name == "integer-affine-coercion":
         return call_succeeds(lambda: affine_endpoint(Fraction(9, 4), Fraction(5, 6), 6))
     if name == "physical-source-selects-exponent":
-        return inference_authorized("physical exponent selection", FORMAL_PREMISES)
+        return call_succeeds(
+            lambda: monomial_lambda(
+                Fraction(1, 3),
+                Fraction(1, 2),
+                -2,
+                physical_source="selected",  # type: ignore[call-arg]
+            )
+        )
     if name == "physical-source-selects-normalization":
-        return inference_authorized("physical normalization selection", FORMAL_PREMISES)
+        return call_succeeds(
+            lambda: direct_projectors(
+                physical_normalization="selected"  # type: ignore[call-arg]
+            )
+        )
     if name == "affirmative-physical-source-mutation":
         mutant = NOTE.read_text() + "\nThe theorem derives the physical source.\n"
         return source_boundary_clean_text(mutant)

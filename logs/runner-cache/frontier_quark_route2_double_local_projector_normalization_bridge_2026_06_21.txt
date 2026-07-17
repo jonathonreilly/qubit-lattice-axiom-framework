@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21.py
-runner_sha256: 0776c74f094d4bccabc21401292dab9be391f52c7a76ea456b3f721ed4965f16
+runner_sha256: 7769aafcb309fe2ac7dc1ccbc14690f3fd5ef20a46fd490bc5027c64f5678c34
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.54
 status: ok
 ----- stdout -----
 Exact signed-axis projector decomposition and integer-monomial theorem
@@ -15,7 +15,7 @@ Source and implementation boundary
 PASS source note declares a dependency-free positive theorem
 PASS source note denies exponent, normalization, source, and endpoint selection
 PASS implementation uses no numerical-array or float-recovery path
-PASS formal inputs alone authorize no physical application claim
+PASS formal APIs expose no physical selection inputs
 
 ------------------------------------------------------------------------------
 Exact signed-axis group and representation

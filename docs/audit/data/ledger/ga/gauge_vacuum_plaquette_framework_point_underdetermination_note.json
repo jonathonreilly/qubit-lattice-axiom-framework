@@ -1363,6 +1363,66 @@
         "total_pass": 7
       },
       "verdict_rationale": "The polynomial witnesses correctly prove the narrower finite-jet-plus-monotonicity result. They are not demonstrated to arise from admissible connected hierarchies or compact spectral measures, so they are not countermodels to the broader current-stack claim. The N1-N8 negative-claim stress test consequently fails at N1, N4, and N7: imposing those additional constraints remains an untested attack route, while the other checks do not supply or retire the missing compatibility step."
+    },
+    {
+      "archived_at": "2026-07-17T22:14:26.790301+00:00",
+      "audit_date": "2026-07-17T22:14:16.299251+00:00",
+      "audit_invocation_history": [
+        "4a4e7232e40b48dd913c938da628020c"
+      ],
+      "audit_invocation_id": "4a4e7232e40b48dd913c938da628020c",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+          "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py": "96cfa9c6348eeeae32929f3c1fa5109d1c4aa48987120cbfa64656e390ff3d45",
+          "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py": "ee013ee9d87ca89cbda5fd6c7229d4d31cdb9c1eba027aeb7881f31f4d6a4fdc",
+          "scripts/frontier_scalar_3plus1_temporal_ratio.py": "dba67f913ce7daa6ddfd894860d9429fd6fa26e6a6abac9bc6312c30cbaf04e2"
+        },
+        "load_bearing_score": 14.12,
+        "runner_hash": "80bcb543583d1df6f747db1328fa9c7e72fa2886517318b4ec6020db146b2a41",
+        "transitive_descendants": 786
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-1a23a6abc80e47de86c4652f56074a4e-gauge_vacuum_plaquette_f-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The witnesses are shown to satisfy only the finite onset jet, analyticity, and monotonicity; neither the note nor runner proves that they satisfy the invoked connected-hierarchy, compact spectral-measure, and finite-Wilson-surface constraints. Compatibility with that full stack is the missing step.",
+      "claim_scope": "Whether the current exact plaquette stack, including connected-hierarchy and compact spectral-measure constraints, fails to determine beta_eff(6) and analytic P(6).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-17T22:14:16.299251+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "There exist distinct real-analytic strictly increasing witness laws on [0,6] that share the exact closed onset jet through order beta^5 but produce different framework-point values.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the conclusion to the finite onset jet plus analyticity and monotonicity, and add a dated downstream-hygiene line to this note's own boundary barring full-stack citations until a witness-compatibility theorem is supplied.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The explicit c beta^6 witness establishes underdetermination by the finite jet and monotonicity, but it does not establish underdetermination by the advertised full exact stack; the numerical two-point plaquette comparison also does not prove the imported global monotonicity theorem. N1 tests only one witness-family route, N2 leaves full-stack witness compatibility as the distinct wall, N3 finds the obstruction language load-bearing rather than an accepted premise, and N4 has no retained prior witness authority. N5 lacks per-element, per-site, per-mode, per-block, and lattice-wide resolution tests; N6's indexed primitives and reframes do not supply witness admissibility; N7's strongest c beta^6 steelman closes only the reduced regularity surface; and N8's similar plaquette records cannot substitute for a restricted-packet proof. The broad conclusion therefore remains conditional on a theorem showing that at least two distinct witnesses satisfy every claimed full-stack constraint."
     }
   ],
   "prose_corrections": [],

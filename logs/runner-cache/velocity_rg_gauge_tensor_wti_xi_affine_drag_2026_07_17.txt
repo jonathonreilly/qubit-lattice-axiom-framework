@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py
-runner_sha256: 2766d16e725783d50d99036d64ff32cf9149ee0f93970ac8588aa4877ab3b1b9
-timeout_sec: 900
+runner_sha256: 9dc85b36f29387b47f644252701bd4bf24543ab94100b79dbdb0fc357a328553
+timeout_sec: 280
 exit_code: 0
 elapsed_sec: 1.14
 status: ok
@@ -33,32 +33,33 @@ V3: rainbow a(xi) exactly affine; tadpole closed form; WTI slope
 [PASS] sign of the TOTAL drag a_rb(xi) + a_tad(xi) is xi-ROBUST across the covariant family xi in [0, 1.7]  ::  totals -0.00131, -0.00128, -0.00126, -0.00122
 
 ==========================================================================
-V4: delta->0 gauge-line limit; IR-finite (C_s - C_t) split
+V4: small-probe gauge-line constant; IR-finite (C_s - C_t) split
 ==========================================================================
-[PASS] delta->0: RAINBOW xi-slope -> +(C_s - C_t), a PURE GAUGE-LINE integral (no fermion line; delta=0.05, N=10)  ::  slope(0.05)=+0.000798 vs +(C_s-C_t)=+0.000797 (rel bound 5e-3 holds)
+[PASS] small probe delta=0.05: RAINBOW xi-slope within rel 5e-3 of +(C_s - C_t), a PURE GAUGE-LINE integral (no fermion line; N=10; finite-probe witness, no delta -> 0 limit claim)  ::  slope(0.05)=+0.000798 vs +(C_s-C_t)=+0.000797 (rel bound 5e-3 holds)
 [PASS] C_s, C_t individually still GROWING at N=24 (log-divergent pieces; last increment > 10x the difference increment)  ::  dC_s(20->24)=+0.00221, dDiff(20->24)=+0.000002
 [PASS] (C_s - C_t) increments SHRINK through N=24 (strictly; last < 5% of value): finite-grid convergence witness for the split (no continuum claim)  ::  (C_s-C_t)(N=24)=+0.000823, |dDiff_last|/|value|=0.0029
 
 ==========================================================================
-V5: xi-shift constant-dominated; TOTAL xi-slope -> 0 as delta -> 0
+V5: xi-shift constant-dominated (fit diagnostic); TOTAL xi-slope decreasing through the probe ladder
 ==========================================================================
   xi=0.0: A_F(log)=+0.00020  B_F(const)=-0.00236  raw=-0.00223, -0.00214, -0.00207, -0.00203
   xi=1.0: A_F(log)=+0.00009  B_F(const)=-0.00137  raw=-0.00131, -0.00127, -0.00124, -0.00121
-[PASS] xi-shift of the RAINBOW response CONSTANT-DOMINATED over the fit window: log-coefficient shift |A(1)-A(0)| < 20% of the constant shift |B(1)-B(0)| (delta in [0.18, 0.5]; A_F itself is subdominant to B_F at both xi)  ::  A(0)=+0.00020 A(1)=+0.00009 B(1)-B(0)=+0.00099 ratio=0.11
-[PASS] per-delta RAINBOW xi-slope a_rb(1)-a_rb(0) approaches +(C_s - C_t) MONOTONICALLY as delta -> 0 (deviations strictly shrinking; worst < 30%; V4 witnesses the delta=0.05 proximity at rel 5e-3)  ::  slopes +0.000923, +0.000864, +0.000832, +0.000815 vs +0.000797
-[PASS] TOTAL xi-slope (rainbow + tadpole) SHRINKS toward zero as delta -> 0 (strictly; final < 10% of C_s - C_t): the physical drag loses its xi-dependence in the small-probe limit  ::  total slopes +0.000127, +0.000067, +0.000035, +0.000018; scale C_s-C_t = +0.000797
+[PASS] xi-shift of the RAINBOW response CONSTANT-DOMINATED over the fit window: log-coefficient shift |A(1)-A(0)| < 20% of the constant shift |B(1)-B(0)| (delta in [0.18, 0.5]; A_F itself is subdominant to B_F at both xi; the (A, B) split is a FIT-PIVOT-DEPENDENT diagnostic, not an extracted RG coefficient)  ::  A(0)=+0.00020 A(1)=+0.00009 B(1)-B(0)=+0.00099 ratio=0.11
+[PASS] per-delta RAINBOW xi-slope a_rb(1)-a_rb(0) approaches +(C_s - C_t) MONOTONICALLY through the sampled probe ladder (deviations strictly shrinking; worst < 30%; V4 witnesses delta=0.05 at rel 5e-3; finite samples, no delta -> 0 limit claim)  ::  slopes +0.000923, +0.000864, +0.000832, +0.000815 vs +0.000797
+[PASS] TOTAL xi-slope (rainbow + tadpole) decreases STRICTLY through the four sampled probes (final < 10% of C_s - C_t): a xi-robustness TREND witness for the declared family (no delta -> 0 limit claim)  ::  total slopes +0.000127, +0.000067, +0.000035, +0.000018; scale C_s-C_t = +0.000797
 
 ==========================================================================
 V6: drag directions, BOTH sectors in ONE functional-integral convention
 ==========================================================================
+[PASS] C_F discharged from the SU(2) fundamental generator algebra: sum_a T^a T^a = (3/4) I exactly (no hard-coded Casimir)  ::  casimir sum is C_F*I with C_F = 3/4 (exact rational check)
   Convention (single Euclidean bookkeeping; sign chain in the note):
     fermion: S^-1 = S0^-1 - Sigma (rainbow + tadpole); kinetic coeffs v_mu -> v_mu - g^2 C_F out_mu (linear in v)
     gauge:   Gamma_2 = M/g^2 + Pi (Pi = second variation of -tr log Dslash); c_mu -> w_mu + g^2 Pi_T/qhat^2
-[PASS] gauge sector FASTER (dv_B=+0.05) => fermion velocity response POSITIVE (rainbow + tadpole TOTAL): fermion dragged TOWARD the gauge speed  ::  dv_F response = -C_F*(out_s-out_t)_total = +0.00098 per g^2 (rainbow -0.00210 + tadpole +0.00080; C_F=3/4; N=10, delta=0.30)
+[PASS] gauge sector FASTER (exact dv_B=+0.05131) => fermion velocity STATIC response POSITIVE (rainbow + tadpole TOTAL): fermion dragged TOWARD the gauge speed  ::  dv_F response = -C_F*(out_s-out_t)_total = +0.00098 per g^2 (rainbow -0.00210 + tadpole +0.00080; C_F discharged above; N=10, delta=0.30)
 [PASS] deformed-kernel Pi stays TRANSVERSE at both probes (the sign chain consumes the -tr log assembly this certifies)  ::  normalized Ward residuals (0.0169, 0.0305) < 0.05 (N=12)
-[PASS] fermion sector FASTER (dv_F=+0.105) => induced gauge transverse anisotropy POSITIVE: gauge dragged TOWARD the fermion speed  ::  dv_B response = (piT_s - piT_t)/2 = +0.03017 per g^2 (T_F=1/2 inside Pi; N=12, probe q=0.3, spatial polarization both)
-[PASS] exchange-matrix coefficients: a-proxy > 0 AND b-proxy > 0 (finite-grid witnesses for the named open input of the exchange-matrix support note)  ::  a-proxy=+0.0196 b-proxy=+0.2866 per g^2 (magnitudes are labeled finite-grid scheme proxies; the signs are the witnessed content)
-[PASS] 2x2 exchange algebra: eigenvalues {0, -(a+b)}; null direction (1,1) (common speed); the DIFFERENCE mode contracts  ::  contraction rate a+b = +0.3062 per g^2
+[PASS] fermion sector FASTER (dv_F=+0.10526) => induced gauge transverse anisotropy STATIC response POSITIVE: gauge dragged TOWARD the fermion speed  ::  dv_B response = (piT_s - piT_t)/2 = +0.03017 per g^2 (T_F=1/2 inside Pi; N=12, probe q=0.3, spatial polarization both)
+[PASS] exchange-matrix coefficients: a-proxy > 0 AND b-proxy > 0 (finite-grid STATIC-RESPONSE sign witnesses for the named open input of the exchange-matrix support note; NOT RG beta-function coefficients -- no shell derivative or log-coefficient extraction)  ::  a-proxy=+0.0191 b-proxy=+0.2866 per g^2 (magnitudes are labeled finite-grid scheme proxies; the signs are the witnessed content)
+[PASS] 2x2 exchange algebra: eigenvalues {0, -(a+b)}; null direction (1,1) (common speed); the DIFFERENCE mode contracts  ::  contraction rate a+b = +0.3057 per g^2
 
 ==========================================================================
 V7: finite-grid robustness proxies (labeled; no continuum claim)
@@ -69,7 +70,7 @@ V7: finite-grid robustness proxies (labeled; no continuum claim)
 ==========================================================================
 SCORECARD
 ==========================================================================
-TOTAL: PASS=24 FAIL=0
+TOTAL: PASS=25 FAIL=0
 
 ----- stderr -----
 

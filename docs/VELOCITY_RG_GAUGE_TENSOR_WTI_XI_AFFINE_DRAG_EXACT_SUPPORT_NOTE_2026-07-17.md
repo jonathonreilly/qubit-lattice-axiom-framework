@@ -14,7 +14,7 @@ set or predict an audit outcome.
 actual_current_surface_status: exact-support
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
-conditional_surface_status: "Exact gauge tensor block, exact lattice WTI, exact xi-affinity of the one-loop rainbow drag, and the exact tadpole closed form (1 - xi)(C_s - C_t); finite-grid one-loop witnesses for BOTH positive mutual-drag signs (a,b > 0) in one functional-integral convention, with the total xi-slope witnessed shrinking toward zero in the small-probe limit. Continuum limits, physical magnitudes, the spatial mixing coefficient, and LV sufficiency remain open."
+conditional_surface_status: "Exact gauge tensor block, exact lattice WTI, exact xi-affinity of the one-loop rainbow drag over a DECLARED gauge-line family D_w(xi), and the exact tadpole closed form (1 - xi)(C_s - C_t); finite-grid one-loop STATIC-RESPONSE sign witnesses for BOTH positive mutual-drag proxies (a,b > 0) in one functional-integral convention, with the total xi-slope witnessed decreasing strictly through the sampled probe ladder (family-internal trend; no limit claim). The anisotropic-inverse gauge line, RG-coefficient extraction, continuum limits, physical magnitudes, the spatial mixing coefficient, and LV sufficiency remain open."
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
@@ -45,16 +45,20 @@ adjacent chain surfaces are
 internally).
 
 This note supplies: (exact tier) the gauge quadratic form, its xi-family
-closed inverse, the lattice Ward-Takahashi identity with anisotropic
-velocities, the exact xi-affinity of the one-loop rainbow drag response
-with a WTI-derived slope, and the exact tadpole closed form
+closed inverse (isotropic weights), the lattice Ward-Takahashi identity
+with anisotropic velocities, the exact xi-affinity of the one-loop
+rainbow drag response over a DECLARED anisotropic gauge-line family
+`D_w(xi)` with a WTI-derived slope, and the exact tadpole closed form
 `(out_s - out_t)_tad = (1 - xi)(C_s - C_t)`; (witness tier) finite-grid
-one-loop witnesses that BOTH mutual-drag coefficients are positive in ONE
-Euclidean functional-integral convention, so the exchange-matrix
-difference mode contracts, plus a witness that the TOTAL drag's xi-slope
-shrinks toward zero in the small-probe limit. It does not derive
-continuum coefficients, the spatial-only power-divergent mixing
-coefficient, the fixed-point anomalous dimension, or LV-bound sufficiency.
+one-loop STATIC-RESPONSE sign witnesses that BOTH mutual-drag proxies are
+positive in ONE Euclidean functional-integral convention, so the
+exchange-matrix difference mode contracts in the proxy algebra, plus a
+witness that the TOTAL drag's xi-slope decreases strictly through the
+sampled probe ladder (family-internal trend; no limit claim). It does
+not derive the anisotropic-inverse gauge line, RG beta-function
+coefficients, continuum coefficients, the spatial-only power-divergent
+mixing coefficient, the fixed-point anomalous dimension, or LV-bound
+sufficiency.
 
 ## Statement
 
@@ -65,41 +69,55 @@ coefficient, the fixed-point anomalous dimension, or LV-bound sufficiency.
    `tr(T^a T^b) = delta^{ab}/2`.
 2. Exact lattice WTI with anisotropic velocities; midpoint vertex is the
    Ward-exact vertex (control violates).
-3. The one-loop RAINBOW drag response `a_rb(xi)` is EXACTLY affine in the
-   covariant gauge parameter over `xi in {0, 0.5, 1.0, 1.7}` (deviation
-   < 1e-11), and its xi-slope equals a WTI-derived longitudinal closed
-   form assembled WITHOUT vertex functions (< 1e-10). The same-order
+3. The drag integrals use the DECLARED anisotropic gauge-line family
+   `D_w(xi)_munu = (delta_munu - (1 - xi) qhat_mu qhat_nu / K_w) / K_w`,
+   `K_w = sum_mu w_mu qhat_mu^2`: equal to the item-1 closed inverse at
+   `w = 1`, but for `w != 1` NOT transverse (`qhat^T D_w(0) != 0`) and
+   NOT the inverse of an anisotropic Wilson tensor — a declared
+   definition, disclosed in the import ledger. Over this family the
+   one-loop RAINBOW drag response `a_rb(xi)` is EXACTLY affine in the
+   gauge parameter over `xi in {0, 0.5, 1.0, 1.7}` (deviation < 1e-11),
+   and its xi-slope equals a WTI-derived longitudinal closed form
+   assembled WITHOUT vertex functions (< 1e-10). The same-order
    fermion-line seagull TADPOLE has the exact closed form
    `(out_s - out_t)_tad = (1 - xi)(C_s - C_t)` (probe-independent;
    deviation < 1e-11), so its xi-slope is `-(C_s - C_t)`. The sign of the
-   TOTAL drag `a_rb(xi) + a_tad(xi)` is xi-robust across the family.
+   TOTAL drag `a_rb(xi) + a_tad(xi)` is xi-robust across the family
+   (family-internal statement).
 
 **Witness tier (labeled finite-grid one-loop witnesses; no continuum
 claim):**
 
-4. As the probe momentum `delta -> 0`, the RAINBOW xi-slope approaches
-   `+(C_s - C_t)`, a PURE gauge-line integral (rel. 5e-3 at
-   `delta = 0.05`); `C_s`, `C_t` individually still grow at `N = 24`
+4. At the smallest sampled probe `delta = 0.05`, the RAINBOW xi-slope is
+   within rel. `5e-3` of `+(C_s - C_t)`, a PURE gauge-line integral (no
+   `delta -> 0` limit claim); `C_s`, `C_t` individually still grow at `N = 24`
    (log-divergent pieces) while the difference's increments shrink
    through `N = 24` (`+0.000823`, last increment 0.3% of the value) — a
    finite-grid convergence witness for the split.
 5. The xi-shift of the rainbow response is constant-dominated over the
    log/const fit window (log-coefficient shift 11% of the constant
-   shift), the per-delta rainbow xi-slopes approach the V4 constant
-   monotonically, and the TOTAL xi-slope (rainbow plus tadpole) shrinks
-   toward zero through the probe ladder (`+0.000127 -> +0.000018`
-   against the scale `C_s - C_t = +0.000797`): the physical drag loses
-   its xi-dependence in the small-probe limit.
-6. Drag directions, both sectors, one convention:
-   gauge sector faster (`dv_B = +0.05`) gives fermion response
+   shift; the log/const split is a fit-pivot-dependent diagnostic, not
+   an extracted RG coefficient), the per-delta rainbow xi-slopes
+   approach the V4 constant monotonically through the sampled ladder,
+   and the TOTAL xi-slope (rainbow plus tadpole) decreases strictly
+   through the four sampled probes (`+0.000127 -> +0.000018` against
+   the scale `C_s - C_t = +0.000797`): a family-internal xi-robustness
+   TREND witness (finite samples; no `delta -> 0` limit claim).
+6. Drag directions, both sectors, one convention (finite-grid STATIC
+   self-energy responses at fixed probes — direction proxies, NOT RG
+   beta-function coefficients; no shell derivative, counterterm split,
+   or log-coefficient extraction is performed):
+   gauge sector faster (exact offset
+   `dv_B = sqrt(1.05/0.95) - 1 = +0.05131`) gives fermion response
    `dv_F = +0.00098 g^2` (POSITIVE: dragged toward the gauge speed;
    kinetic split: rainbow `-0.00210`, tadpole `+0.00080`, total
-   `-0.00131`, and `dv_F = -g^2 C_F` times the total);
-   fermion sector faster (`dv_F = +0.105`) gives gauge response
+   `-0.00131`, and `dv_F = -g^2 C_F` times the total; `C_F = 3/4`
+   discharged in-runner from the su(2) generator algebra);
+   fermion sector faster (`dv_F = +0.10526`) gives gauge response
    `dv_B = +0.03017 g^2` (POSITIVE: dragged toward the fermion speed).
    In the exchange-matrix convention this witnesses `a > 0` AND `b > 0`:
-   `a`-proxy `= +0.0196 g^2`, `b`-proxy `= +0.2866 g^2`, difference-mode
-   contraction rate `a + b = +0.3062 g^2` (eigenstructure
+   `a`-proxy `= +0.0191 g^2`, `b`-proxy `= +0.2866 g^2`, difference-mode
+   contraction rate `a + b = +0.3057 g^2` (eigenstructure
    `{0, -(a+b)}` with common-speed null direction `(1,1)` checked
    exactly). Magnitudes are finite-grid scheme proxies (probe and
    deformation conventions stated in the runner); the SIGNS are the
@@ -127,7 +145,9 @@ Everything downstream is mechanical:
 
 - **Gauge quadratic form (exact, V1).** The plaquette action on the mode
   `A_mu(x) = Re[eps_mu e^{i q.(x + e_mu/2)}]` equals
-  `(1/2) eps M eps` with `M = K delta - qhat qhat^T`, `qhat = 2 sin(q/2)`,
+  `(V/4) eps^T M eps` (with `V = N^4` the site count; the `V/4` carries
+  the quadratic-expansion `1/2` times the `Re[]` mode-average `V/2`, as
+  coded in the runner) with `M = K delta - qhat qhat^T`, `qhat = 2 sin(q/2)`,
   `K = sum qhat^2` — EXACTLY, by direct lattice sum (link-midpoint
   convention; the site-centered half-shift candidate misses the closed
   form at the 5.6e-2 level, so between the two stated candidates the
@@ -140,13 +160,19 @@ Everything downstream is mechanical:
 - **Fermion sector sign.** Expanding the interacting propagator gives, at
   the same second order, TWO connected insertions: the RAINBOW (one-gluon
   exchange) and the fermion-line seagull TADPOLE, `S^-1 = S0^-1 - Sigma`
-  with `Sigma = Sigma_rb + Sigma_tad`. The tadpole's kinetic split has
+  with `Sigma = Sigma_rb + Sigma_tad`. The gauge line inside both is the
+  DECLARED family `D_w(xi)` of the Statement (item 3): at the deformed
+  weights `w != 1` it is a declared definition, NOT the inverse of an
+  anisotropic Wilson tensor, so every xi-statement in this chain is
+  family-internal. The tadpole's kinetic split has
   the exact closed form `(out_s - out_t)_tad = (1 - xi)(C_s - C_t)`
   (probe-independent; V3), so its xi-slope `-(C_s - C_t)` cancels the
-  rainbow's small-probe xi-slope `+(C_s - C_t)` (V4/V5). Near the probe
+  rainbow's smallest-sampled-probe xi-slope `+(C_s - C_t)` (V4/V5).
+  Near the probe
   the kinetic coefficients read `v_mu -> v_mu - g^2 C_F out_mu` (linear
   in `v`), so with `v_F = v_s/v_t` the drag response is
-  `dv_F = -g^2 C_F (out_s - out_t)`, `C_F = 3/4` (su(2) fundamental).
+  `dv_F = -g^2 C_F (out_s - out_t)`, `C_F = 3/4` (su(2) fundamental,
+  discharged in-runner from the generator algebra).
 - **Gauge sector sign.** Integrating the fermions exactly:
   `det Dslash = e^{+tr log Dslash}`, so
   `S_eff[A] = S_G[A] - tr log Dslash[A]`. The second variation of
@@ -161,35 +187,45 @@ Everything downstream is mechanical:
   which is what licenses reading a single transverse coefficient at this
   grid size.
 
-Both sector signs therefore come from the SAME integral. The gauge
-quadratic form is positive on the transverse sector, so the weight
-orientation is not a free dial; the remaining naming freedoms — the
-joint rephasing `A -> -A`, `g -> -g`, and where the minus sign is placed
-in the definition of `Sigma` — leave every O(g^2) observable, in
-particular both relative drag signs, invariant. The drag DIRECTIONS
-(toward each other or away from each other) are the physical content.
+Both sector SIGN conventions therefore come from the SAME Euclidean
+weight: the fermion-sector sign from the expansion of `e^{-S}` and the
+gauge-sector sign from `-tr log Dslash` under that weight. (This is a
+shared-convention statement, not a claim that the deformed drag
+propagator `D_w(xi)` is derived from `S_G` — at `w != 1` it is the
+declared family of the Statement.) The gauge quadratic form is positive
+on the transverse sector, so the weight orientation is not a free dial;
+the remaining naming freedoms — the joint rephasing `A -> -A`,
+`g -> -g`, and where the minus sign is placed in the definition of
+`Sigma` — leave every O(g^2) observable, in particular both relative
+drag signs, invariant. The drag DIRECTIONS (toward each other or away
+from each other) are the witnessed content at the stated finite grids.
 
 ## What This Supplies
 
 The exchange-matrix note states: for ANY positive pair `a, b > 0` the
 speed-difference mode contracts at rate `a + b`. Its named residual was
 the positivity itself — "open physical loop input." This note supplies
-finite-grid one-loop witnesses for both signs from the chain's own
-reconstruction objects (midpoint-gauged anisotropic kernel, Wilson
-quadratic form — the unaudited action surface restated and re-certified
-here), in one functional-integral convention whose residual naming
-freedoms are checked drag-sign-invariant, plus the exact algebraic
-scaffolding (tensor block, WTI, rainbow xi-affinity, tadpole closed form)
-that makes the witness gauge-parameter-robust rather than a single-gauge
-accident.
+finite-grid one-loop STATIC-RESPONSE sign witnesses for both proxies
+from the chain's own reconstruction objects (midpoint-gauged anisotropic
+kernel, Wilson quadratic form — the unaudited action surface restated
+and re-certified here), in one functional-integral convention whose
+residual naming freedoms are checked drag-sign-invariant, plus the exact
+algebraic scaffolding (tensor block, WTI, rainbow xi-affinity over the
+declared gauge-line family, tadpole closed form) that makes the witness
+xi-robust WITHIN that declared family rather than a single-gauge
+accident. Physical gauge independence proper (the anisotropic-inverse
+gauge line) is named open below.
 
-The next path this opens: with both signs witnessed and the TOTAL drag's
-xi-slope witnessed shrinking toward zero in the small-probe limit
-(gauge-parameter independence of the physical drag, at finite grid), the
-remaining physical inputs for the parent row are magnitude-level
-(continuum extrapolation of `a, b`, the spatial-only power-divergent
-mixing coefficient, the fixed-point anomalous dimension, and the LV-bound
-sufficiency comparison).
+The next path this opens: with both static-response signs witnessed and
+the TOTAL drag's xi-slope witnessed decreasing strictly through the
+sampled probe ladder (a family-internal xi-robustness trend at finite
+grid), the remaining physical inputs for the parent row are (i) the
+anisotropic-inverse gauge line (replacing the declared family with the
+true inverse of the deformed Wilson tensor), (ii) RG-coefficient
+extraction (shell derivative / log-coefficient), and (iii)
+magnitude-level items (continuum extrapolation of `a, b`, the
+spatial-only power-divergent mixing coefficient, the fixed-point
+anomalous dimension, and the LV-bound sufficiency comparison).
 
 ## What Remains Open
 
@@ -197,6 +233,15 @@ sufficiency comparison).
   (`N <= 12` fermion-loop, `N <= 24` gauge-line); magnitudes are scheme
   proxies at stated probes (`delta = 0.30`, `q = 0.3`,
   `eps in {0.05, 0.10}`). No continuum coefficient is claimed.
+- The anisotropic gauge line is the DECLARED family `D_w(xi)` (isotropic
+  projector over `K_w`): for `w != 1` it is not transverse and not the
+  inverse of an anisotropic Wilson tensor. Re-deriving the drag from the
+  true deformed-tensor inverse — and hence physical gauge independence
+  proper — is open.
+- The V6 witnesses are STATIC self-energy responses at fixed probes, not
+  RG beta-function coefficients; no shell derivative, counterterm split,
+  or log-coefficient extraction is performed. The V5 log/const split is
+  a fit-pivot-dependent diagnostic.
 - One-loop (rainbow plus fermion-line tadpole) at quadratic (abelianized)
   gauge level with su(2) color factors; full nonabelian self-interactions
   are not included.
@@ -216,7 +261,9 @@ sufficiency comparison).
 |---|---|---|---|
 | Euclidean weight `e^{-S}` on the finite lattice | fixes BOTH sector signs at once | reconstruction-calculus definition (no new axiom) | disclosed |
 | Wilson quadratic level + midpoint gauging | action surface of the chain under test | stated by unaudited chain rows; restated and re-certified internally here (no chain row consumed as an authority; deps intentionally empty) | disclosed |
-| su(2) factors `C_F = 3/4`, `T_F = 1/2` | group normalization | exact arithmetic | discharged by runner |
+| su(2) factors `C_F = 3/4`, `T_F = 1/2` | group normalization | exact arithmetic; `C_F` computed in-runner from `sum_a T^a T^a = C_F I` | discharged by runner |
+| Anisotropic gauge-line family `D_w(xi)` (isotropic projector over `K_w`) | drag propagator in all V3-V7 integrals | declared definition; equals the exact closed inverse at `w = 1`; NOT the deformed-tensor inverse for `w != 1` | disclosed; anisotropic-inverse route named open |
+| Half-integer BZ grid `k = ((n + 1/2)/N) 2 pi - pi` | zero-mode-avoiding loop discretization | stated sampling convention | disclosed |
 | Positive mutual drag `a, b > 0` | the exchange-matrix note's named residual | finite-grid one-loop sign witnesses, both sectors (rainbow plus tadpole totals) | not discharged; finite-grid sign witnesses only; continuum and framework-level positivity open |
 | Physical magnitudes of `a, b` | downstream quantitative input | finite-grid scheme proxies only | named residual |
 | Spatial mixing coefficient; anomalous dimension; LV sufficiency | parent-row remaining items | open bridge | not addressed |
@@ -232,7 +279,7 @@ python3 scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py
 Expected final line:
 
 ```text
-TOTAL: PASS=24 FAIL=0
+TOTAL: PASS=25 FAIL=0
 ```
 
 ## Audit Boundary

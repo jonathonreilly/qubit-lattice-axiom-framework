@@ -1055,13 +1055,14 @@ Any foundation edit should wait until these remaining tests are complete.
 Generated all-five membership and physical context dispatch are now closed
 bounded constructions rather than items on this list.
 
-1. microscopically implement the common Cycle-191 interpreter, derive a
-   normalized effect-complete operational law so trace form follows, and
-   prove the Cycle-194 component-mean condition for its repeated process;
-2. move beyond Cycle-198's disjoint product to one load-bearing
-   matter/dispatcher cross-contact under the common base, then construct one
-   autonomous full-law binary interpreter macrocell or a decisive smaller-law
-   alternative, followed by exact-law compression/selection;
+1. remove Cycle-198's separating layer and make one physically selected
+   Cycle-193 token a load-bearing parent of a phase-sensitive `H/CNOT`
+   operation on an encoded system/pointer, reproducing at least one Cycle-189
+   interference/instrument relation with no host gate semantics;
+2. extend that microscopic interpreter into a normalized effect-complete
+   repeated process and prove the Cycle-194 component-mean condition, while
+   pursuing an autonomous smaller-law implementation and exact-law
+   compression/selection;
 3. lift Cycle-196's classical one-lane XOR contact to a covariant,
    whole-object coherent interaction/scattering kernel with conserved
    incoming/outgoing content;
@@ -1108,3 +1109,7 @@ do require the eventual law to define or derive
 Whether those requirements become polished axiom text or remain theorems of a
 better exact substrate cannot be decided until the remaining constructive
 routes are run.
+
+The next campaign should therefore cross the grade-2-to-grade-3 boundary
+rather than add more disjoint compiler coexistence: physical program token
+`->` coherent operation `->` phase-sensitive record prediction.

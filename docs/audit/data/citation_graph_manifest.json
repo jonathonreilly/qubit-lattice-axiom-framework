@@ -1,5 +1,5 @@
 {
- "edge_count": 14473,
+ "edge_count": 14474,
  "node_count": 3964,
  "nodes": {
   "3d_correction_master_note": {
@@ -6835,8 +6835,8 @@
    "out_degree": 0
   },
   "kcpt_coupling_triple_berezin_count_binary_measure_collapse_bounded_theorem_note_2026-07-17": {
-   "deps_hash": "36fbc5687fce",
-   "out_degree": 4
+   "deps_hash": "79fc309444f4",
+   "out_degree": 5
   },
   "kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_bounded_theorem_note_2026-07-16": {
    "deps_hash": "2e8f0e7f8554",

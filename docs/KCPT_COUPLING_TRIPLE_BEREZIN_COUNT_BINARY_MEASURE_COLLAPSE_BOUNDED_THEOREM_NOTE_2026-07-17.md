@@ -160,7 +160,9 @@ On entrywise-real triples `(a,b,c)`, under the consumed license R2b:
    the entrywise-conjugate presentation of the two-presentation mechanism —
    gives the 12-generator integral
    `det3 * conj(det3) = |det3|^2 = lam_0^2 * |lam_1|^4` on entrywise-real
-   triples (runner B2). A direct 12-generator computation at the exact
+   triples (runner B2). The direct symbolic 12-generator joint integral
+   equals `det3^2` on the entrywise-real locus (runner B2), and a direct
+   12-generator computation at the exact
    generic witness `(a,b,c) = (2, 1+i, -i)` equals `|det3|^2` there,
    confirming the partner-copy realization off the real locus (runner B2).
    On the entrywise-real locus the partner copy coincides with the
@@ -215,22 +217,24 @@ On the declared finite surface, with the pinned convention of T1:
 4. **Uniform rescale splits the horns.** `W -> u * W` on the count-once
    copy, with `conj(u)` on the partner copy, sends the count-once value to
    `rho * det3` with `rho = u^3` and the count-twice value to
-   `|rho|^2 * det3^2` (runner B4).
+   `|rho|^2 * det3^2` on entrywise-real triples (runner B4).
 
 Bounded negative (N-gated below): on this finite Berezin probe surface,
 every linear generator redefinition acts on the quadratic integral by an
 overall scalar, and no constant scalar converts the count-once polynomial
 into the count-twice polynomial. The continuous linear freedom available on
 the surface therefore cannot convert one horn into the other: on this probe
-surface, the closure criterion's "action and its measure" unknowns
-concentrate into (i) the discrete count binary and (ii) a supplied overall
-scalar normalization. This is a statement about the probe surface's own
-parameter freedom. It does not derive the physical action or its measure,
-and it does not narrow the grain obligation — whose criterion targets the
-physical matter action and measure, not this probe. The negative claim is
-scoped to linear generator redefinitions: nonlinear and odd-mixing
-redefinitions (Berezinian changes of variables) are an untested boundary,
-named in N6 and N7.
+surface, the surface's own free parameters — restricted to its linear
+redefinition freedom — collapse to (i) the discrete count binary and (ii) a
+supplied overall scalar normalization. This is a statement about the probe
+surface's own parameter freedom. It does not derive the physical action or
+its measure, and it does not touch the closure criterion's "action and its
+measure" unknowns or narrow the grain obligation — the criterion targets
+the physical matter action and measure, not this probe. The negative claim
+is scoped to linear generator redefinitions: nonlinear and odd-mixing
+redefinitions — changes of variables whose Jacobian factors can depend on
+the generators — are an untested third class of surface freedom, named in
+N6 and N7.
 
 ## Gated controls (cited, exact)
 
@@ -265,9 +269,9 @@ named in N6 and N7.
    not real: the license's K-fixed-channel reality clause is doing work;
    the pairing alone does not supply a real singlet factor.
 3. **Neither horn forced** (runner B5): at the entrywise-real witness
-   `(3,1,1)` the count-once value is `20` and the count-twice value is
-   `400`; both are nonzero and well-defined, and nothing on the surface
-   prefers either.
+   `(3,1,1)` the count-once Berezin integral is `20` and the count-twice
+   12-generator Berezin integral is `400`; both are nonzero and
+   well-defined, and nothing on the surface prefers either.
 4. **Reversed-ordering sign control** (runner B1): the reversed measure
    ordering multiplies the integral by `(-1)^n`, an exact computed
    convention residual, kept separate from the pinned primary ordering.
@@ -343,15 +347,16 @@ theorems is claimed.
 
 | Candidate path | Current status | What it would address |
 |---|---|---|
-| nonlinear / odd-mixing Berezinian change of variables on the probe surface | open (untested boundary) | could test whether non-scalar Jacobian structure changes the collapse statement |
+| nonlinear / odd-mixing change of variables on the probe surface (generator-dependent Jacobian factors) | open (untested boundary) | could test whether non-scalar Jacobian structure changes the collapse statement |
 | derivation of the physical matter action and its measure (the criterion's target) | open target | would supersede the declared probe surface and could settle both the normalization and the horn |
 | record-content or occupancy-law theorem | open | could supply the slot-count law that the surface arithmetic cannot |
 | framework-native first-order-action or OS-type route (section-tie) | open | could settle the stage residual; a graining law would still be needed |
 
 The next path this opens: with the linear freedom collapsed to overall
 scalars, a future action-and-measure derivation on this surface would face
-the count binary directly — the surface's remaining discrete content —
-rather than a continuum of measure choices. The obligation's closure
+the count binary directly — the surface's remaining discrete content within
+the linear class — rather than the linear continuum of measure choices; the
+nonlinear row above stays open. The obligation's closure
 criterion, verbatim, from the context-only handle
 `AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`:
 
@@ -366,7 +371,7 @@ These paths are preserved; no new axiom or primitive is proposed.
 
 Strongest scope objection: Berezin changes of variables are not restricted
 to linear maps — nilpotent-shifted and odd-mixing redefinitions carry
-Berezinian factors that can depend on the generators, and a
+Jacobian factors that can depend on the generators, and a
 generator-dependent Jacobian is not an overall scalar. Granted: the
 subclaim is scoped to linear redefinitions, the nonlinear boundary is named
 untested in N6, and nothing here asserts collapse beyond the linear class.
@@ -458,7 +463,7 @@ python3 scripts/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_
 ```
 
 ```text
-TOTAL: PASS=104 FAIL=0
+TOTAL: PASS=105 FAIL=0
 ```
 
 **No check passes by literal stipulation.**

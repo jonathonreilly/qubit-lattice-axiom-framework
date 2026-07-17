@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17.py
-runner_sha256: ea02dc9ab63633bc7c627efcd4160db047273bcaf6aa6bc3eec198f97ef152a8
-timeout_sec: 300
+runner_sha256: 89c0ab78d62737c70568d872ead2496950ce4fbc0f306ed0b34f4116cac20faa
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 B1.1 PASS anticommutation e1e2 + e2e1 = 0 and nilpotency e1^2 = 0
@@ -20,8 +20,9 @@ B2.2 PASS channel association W P_(w^k) = lam_k P_(w^k), k=0,1,2 (generic)
 B2.3 PASS count-once integral = det3 = lam0*|lam1|^2 on real triples
 B2.4 PASS count-twice = |det3|^2 = lam0^2*|lam1|^4 via K-partner copy; partner coincides with original on the real locus
 B2.5 PASS direct 12-generator joint integral = |det3|^2 at witness (2,1+i,-i)
-B2.6 PASS r-neutral doubling: exponent pairs (1,1)->(2,2) together; ratio twice/once = det3, not constant
-B3.1 PASS generator-count bookkeeping: horn m uses 6m generators (m=1: 6; m=2: 12), tied to the constructed integrals
+B2.6 PASS direct symbolic 12-generator joint integral = det3^2 on the entrywise-real locus
+B2.7 PASS r-neutral doubling: exponent pairs (1,1)->(2,2) together; ratio twice/once = det3, not constant
+B3.1 PASS generator-count bookkeeping: horn m uses 6m generators, read off the constructed integration orders (m=1: 6; m=2: 12)
 B4.1 PASS diagonal rescale: integral -> (d1 d2 c1 c2) * det M (n=2 symbolic)
 B4.2 PASS general linear redefinition: integral = det(B) det(A) det(M) (n=2 symbolic scalar action)
 B4.3 PASS no constant kappa with kappa*det3 = det3^2: witness kappas clash [kappa witnesses 1 vs 8]
@@ -29,7 +30,7 @@ B4.4 PASS uniform rescale: once -> rho*once with rho = u^3, twice -> |rho|^2*twi
 B5.1 PASS Hermitian real-intersection control: lam1 = lam2 = a - b, det3 = lam0 * lam1^2 (all real)
 B5.2 PASS off-locus (1,i,0): gap = sqrt(3) - i, det3 = 1 - i, grouped form differs from det3
 B5.3 PASS pairing-without-reality (i,1+i,i): count-once integral = 1 + 3i, not real
-B5.4 PASS neither horn forced at (3,1,1): once = 20, twice = 400, both nonzero
+B5.4 PASS neither horn forced at (3,1,1): Berezin once = 20, 12-generator twice = 400, both nonzero
 B5.5 PASS endpoint arithmetic: cell law (r,Q) = (1/2, 2/3); mode law (r,Q) = (1, 1); both conditional on supplied laws
 B6.1 PASS source text carries: spectral-pairing T3 three-part pairing statement
 B6.2 PASS note blockquotes verbatim: spectral-pairing T3 three-part pairing statement
@@ -114,7 +115,7 @@ PATH note=docs/KCPT_COUPLING_TRIPLE_BEREZIN_COUNT_BINARY_MEASURE_COLLAPSE_BOUNDE
 PATH runner=scripts/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17.py
 PATH cache=logs/runner-cache/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17.txt
 FLAGS: R1b supplied corner surface; R2b consumed pairing license with source-side premise weight (row status pipeline-derived); R3b probe, not derived form; R4b declared Berezin probe surface, not the physical action or measure; R5b declared count-binary reading, not an equivalence; T4 scoped to linear generator redefinitions; B5 endpoint arithmetic conditional on supplied granularity laws; r remains a dial (0, 1/2, 1); no graining horn selected
-TOTAL: PASS=104 FAIL=0
+TOTAL: PASS=105 FAIL=0
 
 ----- stderr -----
 

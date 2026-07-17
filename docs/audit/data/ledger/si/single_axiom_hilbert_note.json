@@ -1,24 +1,47 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-17T18:15:12.850544+00:00",
+  "audit_invocation_history": [
+    "82d9701af3e54a15956c08fbe0c6cb4b"
+  ],
+  "audit_invocation_id": "82d9701af3e54a15956c08fbe0c6cb4b",
+  "audit_state_snapshot": {
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 9.875,
+    "runner_hash": "7ea5ad4c646799e8c7a6a511efd4a37d15b534a99894288174f7ee6b42c1093c",
+    "transitive_descendants": 82
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-loop-recovery-12h-20260717-ede76629e4794c9cb5a985797e68dfe6-single_axiom_hilbert_not-001",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Tests 1 through 3 compute the scoped graph-recovery, interference, and toy evolution checks from the stipulated inputs. Test 4 lacks a like-for-like localization calculation: its local participation ratio uses six nonexclusive qubit marginals, while its control participation ratio uses a normalized distribution over 64 mutually exclusive basis states.",
   "claim_id": "single_axiom_hilbert_note",
-  "claim_scope": null,
+  "claim_scope": "The four fixed-seed operational checks under an admitted local factorization, local Hermitian Hamiltonian, Born p=2 readout, and support-as-edges convention, without deriving those inputs or reducing the framework axioms.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-17T18:15:12.850544+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +49,20 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 7,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 9.875,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Under the four named admitted inputs, the four numerical consequences follow mechanically as evaluated by the runner.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "ad65f3183c8d8ae1d9a206a0b688b04481f38eb40b96ce36f201b203cb09f191",
   "note_path": "docs/SINGLE_AXIOM_HILBERT_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Recompute Test 4 with both propagators represented in the same normalized outcome space and with comparable Hamiltonian scaling, then rerun the fixed-seed packet.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -694,14 +718,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 3,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 3
   },
   "runner_path": "scripts/frontier_single_axiom_hilbert.py",
   "title": "Local Tensor Product Hilbert Space + Local Hamiltonian + Born Readout: Operational Reduction Note",
   "transitive_descendants": 82,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner performs substantive calculations rather than merely printing expected results, and the first three fixed-seed checks support their narrowly stated operational observations. The Test 4 spread ratio compares participation ratios defined on different, differently normalized outcome spaces, so the reported factor of 29 is not evidence that the local tensor-product propagator is more localized. Because one of the four claimed consequences fails on its own verification method, the complete bounded claim does not close."
 }

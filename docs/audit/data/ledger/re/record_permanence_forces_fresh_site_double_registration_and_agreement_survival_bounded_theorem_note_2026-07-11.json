@@ -58,7 +58,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 2.085,
   "load_bearing_step": "For events already represented as formation of new site-tagged records, coexistence at a reused site violates one-record-per-site while overwrite violates permanence; the supplied map then has constant orbits exactly at its fixed points.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -265,6 +265,6 @@
   },
   "runner_path": "scripts/frontier_record_permanence_double_registration_2026_07_11.py",
   "title": "Record Permanence Forces Fresh-Site Double Registration, and Persistence Equals Agreement-Conditioned Survival (Bounded Theorem Note)",
-  "transitive_descendants": 1,
+  "transitive_descendants": 2,
   "verdict_rationale": "Issue: the site-history theorem and exact map/escape algebra are correct, but the agreement-conditioned parent is unaudited and the physical formation, common-readout, outcome-independence, and flow-class conditions have no retained law-domain certificates. Why this blocks: the exact local implications cannot be promoted into a physical durability/self-composition bridge. Repair target: retain the anatomy parent and derive the supplied formation/readout/filter conditions with lattice-motion-covariant, record-decidable certificates. Claim boundary until fixed: only the explicit site-tagged monotone histories and the supplied scalar map have the stated necessary and finite-horizon consequences."
 }

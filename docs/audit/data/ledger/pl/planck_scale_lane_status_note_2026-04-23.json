@@ -48,12 +48,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 12.0,
+  "load_bearing_score": 12.044,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "7111d321b57e6efaca580fe6335725cf3330750a2fc64efeca099a16a79d0a53",
+  "note_hash": "62ce35478fdf475b24b983a1769091125e5f7ea55e686e71ed60d12b1d6f1f99",
   "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -186,6 +186,6 @@
   },
   "runner_path": null,
   "title": "Planck-Scale Lane Status Note",
-  "transitive_descendants": 63,
+  "transitive_descendants": 65,
   "verdict_rationale": null
 }

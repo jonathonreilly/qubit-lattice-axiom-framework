@@ -44,7 +44,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8b0501d4b95f7c12b3bae935bbc3d074e2ea2dfbb037406bbc09ec2503915b47",
+  "note_hash": "33a8da1a891c95f2bbf2212480bb7b4edb260e9b219f979329e6619b0f5a893a",
   "note_path": "docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -182,7 +182,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

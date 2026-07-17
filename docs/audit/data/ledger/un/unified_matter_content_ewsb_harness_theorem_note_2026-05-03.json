@@ -28,8 +28,7 @@
     "native_gauge_closure_note",
     "su3_anomaly_forced_3bar_completion_theorem_note_2026-05-02",
     "sm_hypercharge_uniqueness_without_nu_r_input_theorem_note_2026-05-02",
-    "neutrino_majorana_operator_axiom_first_note",
-    "higgs_mechanism_note"
+    "neutrino_majorana_operator_axiom_first_note"
   ],
   "direct_in_degree": 3,
   "effective_status": "unaudited",
@@ -37,12 +36,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.974,
+  "load_bearing_score": 10.901,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e6df8c9cc0a7ff7acb883fd832887f6a4a9aca144800acc7f5e1f2fce8299be4",
+  "note_hash": "c39992a519622b17790a4f6ae2f86c842642723fa0cccc69c882c85215d55511",
   "note_path": "docs/UNIFIED_MATTER_CONTENT_EWSB_HARNESS_THEOREM_NOTE_2026-05-03.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -58,6 +57,6 @@
   },
   "runner_path": "scripts/frontier_unified_matter_content_ewsb_harness.py",
   "title": "Unified End-to-End Matter-Content + EWSB Harness \u2014 Synthesis Closing Derivation",
-  "transitive_descendants": 710,
+  "transitive_descendants": 675,
   "verdict_rationale": null
 }

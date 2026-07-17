@@ -25,13 +25,13 @@
   "deps": [
     "cl3_color_automorphism_theorem"
   ],
-  "direct_in_degree": 10,
+  "direct_in_degree": 9,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.17,
+  "load_bearing_score": 8.587,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -496,7 +496,7 @@
   },
   "runner_path": "scripts/su3_adjoint_casimir_check.py",
   "title": "SU(3) Quadratic Casimir on Adjoint Equals N = 3",
-  "transitive_descendants": 17,
+  "transitive_descendants": 16,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

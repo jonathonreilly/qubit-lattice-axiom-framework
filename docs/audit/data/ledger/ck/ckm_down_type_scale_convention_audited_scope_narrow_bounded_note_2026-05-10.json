@@ -40,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "ef6ff6d68462ae39a960598118f8a75663acc47f8519cf7faee36b89e6277a8e",
+  "note_hash": "8db312bbcba041245a4dac5ff74e455d92684f3d330ae3b36ff83ced7e23da49",
   "note_path": "docs/CKM_DOWN_TYPE_SCALE_CONVENTION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -54,7 +54,7 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": "scripts/frontier_ckm_down_type_scale_convention_support.py",
+  "runner_path": null,
   "title": "CKM Down-Type Scale-Convention Audited-Scope Narrowing Bounded Note",
   "transitive_descendants": 0,
   "verdict_rationale": null

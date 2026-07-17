@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "42ef31260e602d1fb743c7fe58864e3a75085110f788f56152e18afe1a33b9c4",
+  "note_hash": "ca3d8ba7437b665709ebae4dbfa6122d5654c101604e70004274d549665b1361",
   "note_path": "docs/YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -220,7 +220,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

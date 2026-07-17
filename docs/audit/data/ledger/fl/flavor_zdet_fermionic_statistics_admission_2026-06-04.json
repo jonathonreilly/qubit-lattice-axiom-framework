@@ -30,9 +30,7 @@
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [
-    "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
-  ],
+  "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
@@ -40,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "165b885f75c4b42481fcf006c9fc7b75f47671abb6c2b490ae931cc8ccefc564",
+  "note_hash": "d57b21a2a98386da3efa8fb754f28856ac61d8721b0598c28656e2c9a3959f83",
   "note_path": "docs/FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

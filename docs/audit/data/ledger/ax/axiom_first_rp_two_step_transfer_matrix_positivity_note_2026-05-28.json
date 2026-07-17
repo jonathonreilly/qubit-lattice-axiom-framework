@@ -29,12 +29,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 22.137,
+  "load_bearing_score": 22.115,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c518109a463ca79fdcd77b6346ef30b93a864df40f4341a018fbb1d137404f83",
+  "note_hash": "c0c15d84f5e8d52d00884977a428149364895ca76460ad4c12241f82bbe2f26d",
   "note_path": "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -620,7 +620,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -630,6 +630,6 @@
   },
   "runner_path": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
   "title": "Free Staggered 2-Step Blocked Transfer-Matrix Positivity (In-Repo Derivation)",
-  "transitive_descendants": 795,
+  "transitive_descendants": 783,
   "verdict_rationale": null
 }

@@ -24,7 +24,6 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
     "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
   ],
   "direct_in_degree": 5,
@@ -40,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "2c3a2bf70ea6dae0a22a3a498ffc49e3c9a2bc7313787a3362889e66b5098254",
+  "note_hash": "e4079471e5c32604f1aa04edf7fbf0d071ddfaebbd5a2cbe686fd190a268e540",
   "note_path": "docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -166,7 +165,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

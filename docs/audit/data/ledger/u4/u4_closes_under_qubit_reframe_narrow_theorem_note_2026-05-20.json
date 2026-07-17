@@ -37,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4c8057a3902558a11442fc52f1dd78cbbf4071d825a242c3929c3d77133d0b45",
+  "note_hash": "2d5fee13dd27012e19a377358bdac78bc0f9d8a68c986618670e76f65679a0fc",
   "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -818,7 +818,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

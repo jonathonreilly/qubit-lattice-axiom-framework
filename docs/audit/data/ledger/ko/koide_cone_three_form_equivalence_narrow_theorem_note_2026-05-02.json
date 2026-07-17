@@ -54,7 +54,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 12.468,
+  "load_bearing_score": 12.394,
   "load_bearing_step": "Direct expansion shows 2 r0^2 - r1^2 - r2^2 = 2 [4(uv + uw + vw) - (u^2 + v^2 + w^2)], and 3(u^2+v^2+w^2)-2(u+v+w)^2 = -F_orbit.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -115,6 +115,6 @@
   },
   "runner_path": "scripts/frontier_koide_cone_three_form_equivalence_narrow.py",
   "title": "Koide-Cone Three-Form Equivalence Narrow Theorem",
-  "transitive_descendants": 707,
+  "transitive_descendants": 672,
   "verdict_rationale": "The load-bearing step is exact polynomial expansion under an explicit linear definition of r0, r1, and r2. The cached runner completes and independently checks the symbolic identities, the ratio restriction, non-empty cone examples, and the off-cone uniform triple, all as class A algebra. Residual risk is only scope creep if downstream users treat this as a physical charged-lepton theorem, which this note explicitly does not claim."
 }

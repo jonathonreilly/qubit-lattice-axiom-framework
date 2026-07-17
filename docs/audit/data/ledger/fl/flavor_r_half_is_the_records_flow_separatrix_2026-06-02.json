@@ -23,13 +23,13 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
-  "direct_in_degree": 17,
+  "direct_in_degree": 18,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.709,
+  "load_bearing_score": 15.267,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -1429,6 +1429,6 @@
   },
   "runner_path": "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py",
   "title": "Flavor \u2014 stipulated records map: `r=1/2` is the unstable separatrix of `r\u21922r\u00b2`.",
-  "transitive_descendants": 73,
+  "transitive_descendants": 76,
   "verdict_rationale": null
 }

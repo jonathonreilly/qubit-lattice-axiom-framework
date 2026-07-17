@@ -37,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5f6c71008734822bfc7d370a95758a933f8e9f6b148416f60ef7c926c8d7e206",
+  "note_hash": "ae59f37845e5a7bafce015891a296060e38f3e1ba30f62920c89244d883e199d",
   "note_path": "docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -41,7 +41,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 15.502,
+  "load_bearing_score": 15.43,
   "load_bearing_step": "Substituting the Fourier eigenvalues gives a_0 = sqrt(3)a and z = sqrt(3)b, hence a_0^2 - 2|z|^2 = 3(a^2 - 2|b|^2).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -5210,6 +5210,6 @@
   },
   "runner_path": "scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py",
   "title": "Koide kappa Spectrum-Operator Bridge Theorem",
-  "transitive_descendants": 724,
+  "transitive_descendants": 689,
   "verdict_rationale": "Issue: the exact Fourier algebra is sound, but the physical Koide/MRU identification uses the uncited P1 assignment lambda_k = sqrt(m_k) and assumes the cyclic-compression carrier rather than deriving those identifications in this packet. Why this blocks: the runner proves coordinate identities after those objects are chosen, so it cannot establish that charged-lepton masses occupy that operator spectrum. Repair target: provide retained one-hop theorems deriving the P1 mass-spectrum map and physical Herm_circ(3) carrier, or narrow the claim to the abstract polynomial identity. Claim boundary until fixed: the identity a_0^2 - 2|z|^2 = 3(a^2 - 2|b|^2) and its zero-set equivalence on an assumed Herm_circ(3) surface are verified, with kappa defined only when |b| is nonzero."
 }

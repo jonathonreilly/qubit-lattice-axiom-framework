@@ -41,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5ceb08b59f9b833ccc127363ae7cf3cbfcaa5879883843da3b657011a85201a2",
+  "note_hash": "f08578db668436377d94614761331453d0947ebf4bbae763fcc0112313e7df02",
   "note_path": "docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -194,7 +194,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

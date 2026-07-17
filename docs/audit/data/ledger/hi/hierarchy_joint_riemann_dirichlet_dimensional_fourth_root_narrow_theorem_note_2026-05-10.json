@@ -29,12 +29,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.0,
+  "load_bearing_score": 9.928,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "21245ae46dc13e2e71bc371c0c627451de44d9348c9ab805115fca24d864eb3a",
+  "note_hash": "6de58cfdc53afbf090908dace83e91cf28ceb36f8aac98838cc092600f295e42",
   "note_path": "docs/HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -4167,7 +4167,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -4177,6 +4177,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow.py",
   "title": "Hierarchy Joint Riemann-Dirichlet / Dimensional Fourth-Root \u2014 Narrow Theorem",
-  "transitive_descendants": 723,
+  "transitive_descendants": 688,
   "verdict_rationale": null
 }

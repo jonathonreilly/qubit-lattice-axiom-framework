@@ -31,12 +31,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.974,
+  "load_bearing_score": 9.901,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "6f4cbb48c0b6aefff35e9482345f1720e1cb439414dc0338f0d0d0ca730a01f8",
+  "note_hash": "7cc69a28027684d1eee6a5a0bf0aabec2d8cf9a5a04765eb9cfd331a49d27ab9",
   "note_path": "docs/STAGGERED_SCALAR_MASS_CLASS_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -208,7 +208,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -218,6 +218,6 @@
   },
   "runner_path": "scripts/staggered_scalar_mass_class_bounded_premise_runner.py",
   "title": "Staggered Scalar-Mass Action Class Bounded-Premise Bridge",
-  "transitive_descendants": 710,
+  "transitive_descendants": 675,
   "verdict_rationale": null
 }

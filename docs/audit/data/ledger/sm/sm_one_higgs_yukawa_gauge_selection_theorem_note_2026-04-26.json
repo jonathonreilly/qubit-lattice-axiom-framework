@@ -23,8 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
-    "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+    "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24"
   ],
   "direct_in_degree": 26,
   "effective_status": "unaudited",
@@ -32,12 +31,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 22.558,
+  "load_bearing_score": 22.49,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c0f42bc7c4fe60eb81e1e3bb21af790880d1718c0c9c0903e85993aea8f6ef34",
+  "note_hash": "76b48f09ad3e8109d740daa134791ebb18ab0f13822a040f3e2aecc8c0e23219",
   "note_path": "docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -112,6 +111,6 @@
   },
   "runner_path": "scripts/frontier_sm_one_higgs_yukawa_gauge_selection.py",
   "title": "Standard Model One-Higgs Yukawa Gauge-Selection Theorem",
-  "transitive_descendants": 753,
+  "transitive_descendants": 718,
   "verdict_rationale": null
 }

@@ -64,7 +64,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 9.968,
+  "load_bearing_score": 9.894,
   "load_bearing_step": "At shared H = 0.35 with fixed beam PW = 6.0, enlarging only the field/static solve box from about 6.0 to 9.0 moves dS by 26.21% and rel_MS by 46.52% while dM moves only 0.57%.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -191,6 +191,6 @@
   },
   "runner_path": "scripts/wave_static_matrixfree_fixed_beam_boundary.py",
   "title": "Wave Static Matrix-Free Fixed-Beam Boundary Probe",
-  "transitive_descendants": 707,
+  "transitive_descendants": 672,
   "verdict_rationale": "The load-bearing result is a bounded first-principles computation over the provided discrete runner, not a definition, renaming, or external comparator match. The source code does not hard-code the quoted dM, dS, or rel_MS values; it computes them from the configured lattice parameters and solver path, and the cached stdout matches the note. The conclusion is scoped only to the stated H = 0.35 run, which the note explicitly acknowledges."
 }

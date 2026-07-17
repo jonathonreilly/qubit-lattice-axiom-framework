@@ -25,8 +25,7 @@
   "deps": [
     "pmns_selector_unique_amplitude_slot_note",
     "neutrino_two_amplitude_last_mile_reduction_note",
-    "neutrino_dirac_two_higgs_canonical_reduction_note",
-    "charged_lepton_two_higgs_canonical_reduction_note"
+    "neutrino_dirac_two_higgs_canonical_reduction_note"
   ],
   "direct_in_degree": 7,
   "effective_status": "unaudited",
@@ -34,12 +33,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.047,
+  "load_bearing_score": 12.978,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4975d346f47fadec566954e926ddd3740743f336d8af277135d17261a7a862e2",
+  "note_hash": "f5c8a4ce5531af8c7b1635189a92371b3efb6acad088bbf8bdd3783426a25cb2",
   "note_path": "docs/PMNS_SELECTOR_SIGN_TO_BRANCH_REDUCTION_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -148,6 +147,6 @@
   },
   "runner_path": "scripts/frontier_pmns_selector_sign_to_branch_reduction.py",
   "title": "PMNS Selector Sign-To-Branch Reduction",
-  "transitive_descendants": 747,
+  "transitive_descendants": 712,
   "verdict_rationale": null
 }

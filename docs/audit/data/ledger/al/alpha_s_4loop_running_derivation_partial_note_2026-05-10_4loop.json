@@ -16,33 +16,21 @@
   "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem (per-loop-order accounting of a sharpened import structure)",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18",
-    "bridge_lanes_promotion_proposal_note_2026-05-10_lanes",
-    "su2_weak_beta_coefficient_structural_closed_form_theorem_note_2026-04-26",
-    "minimal_axioms_2026-05-03",
-    "su3_casimir_fundamental_theorem_note_2026-05-02",
-    "su3_adjoint_casimir_theorem_note_2026-05-02",
-    "ckm_a_squared_below_w2_y_quantum_closure_theorem_note_2026-04-25",
-    "three_generation_structure_note",
-    "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
-    "g_bare_derivation_note",
-    "qcd_low_energy_running_bridge_note_2026-05-01",
-    "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
-    "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02",
-    "lattice_physical_matching_theorem_bounded_obstruction_note_2026-05-10_match",
-    "complete_prediction_chain_2026_04_15"
+    "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18"
   ],
   "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 1.5,
@@ -50,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "80cb784c5b71155bde59f0c731fa8382f386188bb4530fe14ee8272dbafe9672",
+  "note_hash": "ec700fd0700ebd809ea085bab29b20d6687106ff65e29de99f9c0d31c03f0dc3",
   "note_path": "docs/ALPHA_S_4LOOP_RUNNING_DERIVATION_PARTIAL_NOTE_2026-05-10_4loop.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -65,7 +53,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/cl3_alpha_s_4loop_running_derivation_2026_05_10_4loop.py",
-  "title": "\u03b1_s 4-Loop QCD Running \u2014 Per-Loop-Order Derivation Status Note",
+  "title": "Alpha_s Four-Order Running \u2014 Formal-Algebra and Physical-Input Accounting Note",
   "transitive_descendants": 1,
   "verdict_rationale": null
 }

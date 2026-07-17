@@ -37,12 +37,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 61.601,
+  "load_bearing_score": 61.557,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5e609e99b06509acab3c6cb73a88f48230e5dba64f95c23a95c3ad9d7f77c139",
+  "note_hash": "65b0d8817cdb6da0d84e66c84bf118a4e4c4a9425a518a78edbb43fcffc10d79",
   "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1005,7 +1005,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -1015,6 +1015,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
   "title": "Observable Principle Finite Readout-Boundary Note",
-  "transitive_descendants": 1097,
+  "transitive_descendants": 1064,
   "verdict_rationale": null
 }

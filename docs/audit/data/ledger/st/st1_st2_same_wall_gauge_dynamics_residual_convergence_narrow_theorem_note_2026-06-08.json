@@ -37,7 +37,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.248,
+  "load_bearing_score": 5.322,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -127,6 +127,6 @@
   },
   "runner_path": "scripts/frontier_st1_st2_same_wall_gauge_dynamics_residual_2026_06_08.py",
   "title": "ST1 and ST2 Sit at the Same Wall: One Undelivered Continuous-Time Gauge-Link Dynamics",
-  "transitive_descendants": 18,
+  "transitive_descendants": 19,
   "verdict_rationale": null
 }

@@ -37,12 +37,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.466,
+  "load_bearing_score": 10.392,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5f102d7a7c4ee738c18e5b8bcf8a892a8e4b44e79936fe3751bc827100bd7a19",
+  "note_hash": "23dcd6b14825157969ccc5d89db3f69316e3c7a27ea44d0079959fae21e66e07",
   "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -139,6 +139,6 @@
   },
   "runner_path": "scripts/observable_principle_p1_exponent_attack_2026_06_10.py",
   "title": "Observable-Principle P1 Exponent \u2014 Barrier-Parameter Selector Narrow Theorem (+ Irreducible-Class Extension)",
-  "transitive_descendants": 706,
+  "transitive_descendants": 671,
   "verdict_rationale": null
 }

@@ -47,12 +47,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.055,
+  "load_bearing_score": 10.986,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8acd457a0e8d29619ab2b12253c5d50136e170690ed8d249e018dfd31da71cb3",
+  "note_hash": "d3997646ffa609600304af31c1918c03c7d0e855bfb30366ae97aa41e639679f",
   "note_path": "docs/PMNS_C3_CHARACTER_MODE_REDUCTION_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -171,7 +171,7 @@
   },
   "runner_path": "scripts/frontier_pmns_c3_character_mode_reduction.py",
   "title": "PMNS `C3` Character-Mode Reduction",
-  "transitive_descendants": 751,
+  "transitive_descendants": 716,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

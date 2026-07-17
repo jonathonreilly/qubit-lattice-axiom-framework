@@ -23,7 +23,6 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
     "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
     "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
@@ -40,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c41a2f9b22ba6f8461713c78fb1af412d5e15d0999e22d545838b384a690ddbe",
+  "note_hash": "b8be278ee4e1d3a56ee3fb594cae10a03c91b9b8ece3aab4f47527b8afa3b019",
   "note_path": "docs/HIERARCHY_SEVEN_EIGHTHS_QUARTER_FERMION_BOSON_SCALE_CONVERSION_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

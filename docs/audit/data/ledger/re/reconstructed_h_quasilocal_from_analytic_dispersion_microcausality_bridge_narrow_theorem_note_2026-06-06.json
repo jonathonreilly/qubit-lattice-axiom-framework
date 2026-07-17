@@ -16,7 +16,7 @@
   "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem (free `U=1` surface; the quasi-locality of the reconstructed Hamiltonian)",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "critical",
@@ -24,7 +24,7 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12",
-    "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
   ],
   "direct_in_degree": 2,
   "effective_status": "unaudited",
@@ -32,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.468,
+  "load_bearing_score": 10.47,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "237b425af63f39c6662624aaa173d5df58ed05dfbca62023e83890eb1d9d9383",
+  "note_hash": "b0325e261f430f365a5c9a9eb645953eb4d373dbb57d606ef93a75e2a655b3d9",
   "note_path": "docs/RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -226,7 +226,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -235,8 +235,8 @@
     "total_pass": 0
   },
   "runner_path": "scripts/reconstructed_h_quasilocal_microcausality_bridge_runner.py",
-  "title": "The Reconstructed Free Hamiltonian `H = \u2212log(T\u0302\u00b2)/(2a_\u03c4)` is Quasi-Local: the Analytic-Dispersion Quasilocal-H Step for the Microcausality / Lieb-Robinson Bridge \u2014 Narrow Theorem",
-  "transitive_descendants": 707,
+  "title": "Fixed-Mass One-Particle Log-Transfer Kernel: One-Coordinate Contour Bound",
+  "transitive_descendants": 708,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

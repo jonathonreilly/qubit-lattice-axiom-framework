@@ -37,7 +37,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 6.307,
+  "load_bearing_score": 6.085,
   "load_bearing_step": "Near k=0, E_k ~ |k|^2, so I_d(L) has the continuum scaling proxy integral_{1/L}^1 r^{d-3} dr, giving linear/log divergences for d=1,2 and finite behavior for d>=3.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -239,6 +239,6 @@
   },
   "runner_path": "scripts/axiom_first_coleman_mermin_wagner_check.py",
   "title": "Axiom-First Coleman-Mermin-Wagner IR-Sum Threshold Packet",
-  "transitive_descendants": 13,
+  "transitive_descendants": 11,
   "verdict_rationale": "The narrowed claim is a mathematical IR-sum scaling statement from the displayed lattice dispersion and standard integral comparison, not an external Coleman-Mermin-Wagner theorem. The runner source enumerates the lattice sums rather than printing constants, and its E0-E3 checks all pass. The formula inventory check finds the displayed small-k scaling, radial exponent, divergence classes, and quantitative table entries consistent with the note's definitions. The explicit non-claims prevent the earlier Ward/SSB/D9/substrate-minimality gaps from being load-bearing here."
 }

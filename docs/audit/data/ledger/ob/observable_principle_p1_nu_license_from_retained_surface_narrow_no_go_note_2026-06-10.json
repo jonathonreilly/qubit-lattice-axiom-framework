@@ -38,12 +38,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.466,
+  "load_bearing_score": 10.392,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "12473408cee91c7555fd63405adc0017eac73ff272840f9289c08bc936141121",
+  "note_hash": "3bfb4f719f531efe68e6945be4b2c1515d093b429f36b6fbf7ec05c5aa59dc51",
   "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_NU_LICENSE_FROM_RETAINED_SURFACE_NARROW_NO_GO_NOTE_2026-06-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -59,6 +59,6 @@
   },
   "runner_path": "scripts/observable_principle_p1_nu_license_check_2026_06_10.py",
   "title": "Observable-Principle P1 NU License Narrowing No-Go",
-  "transitive_descendants": 706,
+  "transitive_descendants": 671,
   "verdict_rationale": null
 }

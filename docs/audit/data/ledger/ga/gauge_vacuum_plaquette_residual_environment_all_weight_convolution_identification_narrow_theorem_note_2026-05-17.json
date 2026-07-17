@@ -23,25 +23,20 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
-    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-    "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
-    "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
-    "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
-    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+    "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
   ],
-  "direct_in_degree": 8,
+  "direct_in_degree": 7,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.718,
+  "load_bearing_score": 13.118,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "7e57db4b1362db9efa14800577448a948c470a0fe0c1b8ad29c6704725a5aa23",
+  "note_hash": "d147d6af316c99dd28f9c454128239decf33bb5348af86f06a73af774363ee2e",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -784,7 +779,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py",
-  "title": "Gauge-Vacuum Plaquette Residual-Environment All-Weight Convolution Identification Narrow Theorem",
-  "transitive_descendants": 841,
+  "title": "Gauge-Vacuum Plaquette Supplied-D Residual Quotient and Formal Convolution Packaging",
+  "transitive_descendants": 785,
   "verdict_rationale": null
 }

@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem \u2014 theorem (conditional on the supplied readout context \u2014 see Scope).",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "critical",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.06,
+  "load_bearing_score": 11.294,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/record_generation_readout_two_sectors_2026_06_05.py",
   "title": "Record Generation Readout Resolves Two K/CPT-Orbit Sectors (Singlet + Doublet)",
-  "transitive_descendants": 754,
+  "transitive_descendants": 110,
   "verdict_rationale": null
 }

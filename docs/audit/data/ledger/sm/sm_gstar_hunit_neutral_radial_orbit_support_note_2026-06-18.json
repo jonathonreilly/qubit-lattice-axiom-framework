@@ -24,7 +24,6 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "yt_ward_identity_derivation_theorem",
-    "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
     "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
   ],
   "direct_in_degree": 1,
@@ -38,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5937154a87cbd23a0f23371d2d8b0162f60544e440d41520d5ad1f127f94679b",
+  "note_hash": "08845e5bf7deb9adce3d30cbc37b400f12b1cf8a9bd0a4b12f38601036abf5d4",
   "note_path": "docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -105,7 +104,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

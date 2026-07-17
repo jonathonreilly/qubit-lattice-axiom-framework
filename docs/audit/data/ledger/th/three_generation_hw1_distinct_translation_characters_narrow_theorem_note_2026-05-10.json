@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 17.617,
+  "load_bearing_score": 17.551,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -148,6 +148,6 @@
   },
   "runner_path": "scripts/audit_companion_three_generation_hw1_distinct_characters_exact.py",
   "title": "Three-Generation `hw=1` Distinct Translation Characters Narrow Theorem",
-  "transitive_descendants": 784,
+  "transitive_descendants": 749,
   "verdict_rationale": null
 }

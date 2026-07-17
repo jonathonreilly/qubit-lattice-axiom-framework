@@ -46,7 +46,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "bdb16a4c85a41e6000705434de9969a7db08477eedb840ff47473a8d7f1802ba",
+  "note_hash": "a318ee6b909e182fcc9fcee9680b42ccca5edd36e55e33aa1b03a7ea24445b54",
   "note_path": "docs/KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17_probeCl3bivector.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.5,
+  "load_bearing_score": 3.67,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/frontier_local_frame_orbit_flat_sector_converse_holonomy_residual_2026_06_10.py",
   "title": "Local-Frame Orbit Flat-Sector Converse and Holonomy Residual Bounded Theorem",
-  "transitive_descendants": 7,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

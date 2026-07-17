@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.17,
+  "load_bearing_score": 4.322,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/frontier_color_einselection_matter_unitary_primitivity_2026_06_09.py",
   "title": "Named Hopping Matter-Unitary Primitivity Requires a Presupposed Background Connection",
-  "transitive_descendants": 8,
+  "transitive_descendants": 9,
   "verdict_rationale": null
 }

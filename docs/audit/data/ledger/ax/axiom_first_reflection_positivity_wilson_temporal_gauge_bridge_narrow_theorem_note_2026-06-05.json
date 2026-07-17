@@ -22,24 +22,19 @@
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
-    "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-    "staggered_only_det_positivity_case_a_note_2026-05-17",
-    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
-  ],
+  "deps": [],
   "direct_in_degree": 10,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.617,
+  "load_bearing_score": 14.618,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "78600c1733c1dca17b7169fe494267b3690bfb30bcc51cfb3466c52392cda22e",
+  "note_hash": "34e6cb000f93f9309071a51a52cb0986cfab7ffba9242284e75db457576362a7",
   "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -352,7 +347,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -361,7 +356,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
-  "title": "Reflection Positivity \u2014 Wilson Plaquette Temporal-Gauge Bridge: The Gauge-Half Norm-Square Hypotheses Yield the Integrated Three-Factor RP Form for A_+^(2) Observables (Narrow Bounded Theorem Note)",
-  "transitive_descendants": 784,
+  "title": "Reflection positivity \u2014 finite-volume `SU(N)` Wilson temporal-gauge bridge by a direct representation-ring proof",
+  "transitive_descendants": 785,
   "verdict_rationale": null
 }

@@ -47,7 +47,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 3.67,
+  "load_bearing_score": 3.822,
   "load_bearing_step": "Trace cyclicity makes all tested record consequences invariant under the simultaneous rotation (rho,u)->(g rho g\u2020,g u), and the rank/tomography check shows the only nontrivial absolute-orientation quotient is the 8-dimensional diagonal SU(3) direction, with the remaining kernel directions being the 2 state stabilizers.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -68,6 +68,6 @@
   },
   "runner_path": "scripts/frontier_relative_orientation_fusion_state_frame_quotient_2026_06_10.py",
   "title": "Relative-Orientation Fusion: the Open-Shell State Selection and the Instrument-Frame Orientation Share One Vacuous Global Quotient",
-  "transitive_descendants": 8,
+  "transitive_descendants": 9,
   "verdict_rationale": "The runner source performs actual finite-dimensional linear algebra and Fock-space computation rather than printing constants or importing a contested premise. The cited graph-first SU(3) authority is marked retained, and the claim does not rely on an unretained one-hop dependency. The theorem is properly bounded to the supplied carrier, named instruments, and global rotations; it explicitly avoids discharging the local frame root or assigning weights."
 }

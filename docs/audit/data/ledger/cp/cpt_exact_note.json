@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 31.775,
+  "load_bearing_score": 31.757,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -1871,6 +1871,6 @@
   },
   "runner_path": "scripts/frontier_cpt_exact.py",
   "title": "Exact antiunitary symmetry of the free staggered Hermitian lift",
-  "transitive_descendants": 875,
+  "transitive_descendants": 864,
   "verdict_rationale": null
 }

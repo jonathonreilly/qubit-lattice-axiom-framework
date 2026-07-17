@@ -35,12 +35,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.502,
+  "load_bearing_score": 11.43,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "535ff8214eb1ce01d527031e4c62561f6819562e4e70233e422378b2f546715d",
+  "note_hash": "ffcaca747d1e1b98a33a11e8b825fe6798aaf48b75e16d924d4858d8d2292ffd",
   "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -506,7 +506,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -516,7 +516,7 @@
   },
   "runner_path": "scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py",
   "title": "Staggered-Dirac Substep 1 \u2014 Statistics Selection: GL(F) Conditional Discriminator, No Unconditional Closure",
-  "transitive_descendants": 724,
+  "transitive_descendants": 689,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

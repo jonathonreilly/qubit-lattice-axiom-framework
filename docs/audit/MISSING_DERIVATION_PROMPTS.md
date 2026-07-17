@@ -33,7 +33,7 @@ _34 rows in this category._
 
 ### `planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30`
 
-**Note:** [docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)  |  **Descendants:** 435  |  **Class:** F
+**Note:** [docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](../PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md)  |  **Descendants:** 435  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md.
@@ -59,7 +59,7 @@ drive.
 
 ### `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note`
 
-**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md](docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md)  |  **Descendants:** 428  |  **Class:** F
+**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md](../GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md)  |  **Descendants:** 428  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md.
@@ -85,7 +85,7 @@ drive.
 
 ### `gauge_vacuum_plaquette_residual_environment_identification_theorem_note`
 
-**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md](docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md)  |  **Descendants:** 426  |  **Class:** F
+**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md](../GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md)  |  **Descendants:** 426  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md.
@@ -111,7 +111,7 @@ drive.
 
 ### `universal_qg_optional_textbook_comparison_note`
 
-**Note:** [docs/UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md](docs/UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md)  |  **Descendants:** 342  |  **Class:** E
+**Note:** [docs/UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md](../UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md)  |  **Descendants:** 342  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md.
@@ -137,7 +137,7 @@ drive.
 
 ### `hypercharge_identification_note`
 
-**Note:** [docs/HYPERCHARGE_IDENTIFICATION_NOTE.md](docs/HYPERCHARGE_IDENTIFICATION_NOTE.md)  |  **Descendants:** 324  |  **Class:** F
+**Note:** [docs/HYPERCHARGE_IDENTIFICATION_NOTE.md](../HYPERCHARGE_IDENTIFICATION_NOTE.md)  |  **Descendants:** 324  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/HYPERCHARGE_IDENTIFICATION_NOTE.md.
@@ -163,7 +163,7 @@ drive.
 
 ### `s3_time_bilinear_tensor_primitive_note`
 
-**Note:** [docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)  |  **Descendants:** 321  |  **Class:** E
+**Note:** [docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](../S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)  |  **Descendants:** 321  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md.
@@ -189,7 +189,7 @@ drive.
 
 ### `yt_color_projection_correction_note`
 
-**Note:** [docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md](docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md)  |  **Descendants:** 319  |  **Class:** F
+**Note:** [docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md](../YT_COLOR_PROJECTION_CORRECTION_NOTE.md)  |  **Descendants:** 319  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md.
@@ -215,7 +215,7 @@ drive.
 
 ### `s3_time_bilinear_tensor_action_note`
 
-**Note:** [docs/S3_TIME_BILINEAR_TENSOR_ACTION_NOTE.md](docs/S3_TIME_BILINEAR_TENSOR_ACTION_NOTE.md)  |  **Descendants:** 316  |  **Class:** E
+**Note:** [docs/S3_TIME_BILINEAR_TENSOR_ACTION_NOTE.md](../S3_TIME_BILINEAR_TENSOR_ACTION_NOTE.md)  |  **Descendants:** 316  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/S3_TIME_BILINEAR_TENSOR_ACTION_NOTE.md.
@@ -241,7 +241,7 @@ drive.
 
 ### `single_axiom_hilbert_note`
 
-**Note:** [docs/SINGLE_AXIOM_HILBERT_NOTE.md](docs/SINGLE_AXIOM_HILBERT_NOTE.md)  |  **Descendants:** 304  |  **Class:** E
+**Note:** [docs/SINGLE_AXIOM_HILBERT_NOTE.md](../SINGLE_AXIOM_HILBERT_NOTE.md)  |  **Descendants:** 304  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/SINGLE_AXIOM_HILBERT_NOTE.md.
@@ -267,7 +267,7 @@ drive.
 
 ### `dark_energy_eos_note`
 
-**Note:** [docs/DARK_ENERGY_EOS_NOTE.md](docs/DARK_ENERGY_EOS_NOTE.md)  |  **Descendants:** 295  |  **Class:** F
+**Note:** [docs/DARK_ENERGY_EOS_NOTE.md](../DARK_ENERGY_EOS_NOTE.md)  |  **Descendants:** 295  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DARK_ENERGY_EOS_NOTE.md.
@@ -293,7 +293,7 @@ drive.
 
 ### `graviton_mass_derived_note`
 
-**Note:** [docs/GRAVITON_MASS_DERIVED_NOTE.md](docs/GRAVITON_MASS_DERIVED_NOTE.md)  |  **Descendants:** 295  |  **Class:** F
+**Note:** [docs/GRAVITON_MASS_DERIVED_NOTE.md](../GRAVITON_MASS_DERIVED_NOTE.md)  |  **Descendants:** 295  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/GRAVITON_MASS_DERIVED_NOTE.md.
@@ -319,7 +319,7 @@ drive.
 
 ### `rconn_derived_note`
 
-**Note:** [docs/RCONN_DERIVED_NOTE.md](docs/RCONN_DERIVED_NOTE.md)  |  **Descendants:** 288  |  **Class:** F
+**Note:** [docs/RCONN_DERIVED_NOTE.md](../RCONN_DERIVED_NOTE.md)  |  **Descendants:** 288  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/RCONN_DERIVED_NOTE.md.
@@ -345,7 +345,7 @@ drive.
 
 ### `universal_gr_tensor_action_blocker_note`
 
-**Note:** [docs/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md](docs/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md)  |  **Descendants:** 287  |  **Class:** E
+**Note:** [docs/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md](../UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md)  |  **Descendants:** 287  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md.
@@ -371,7 +371,7 @@ drive.
 
 ### `restricted_strong_field_closure_note`
 
-**Note:** [docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md](docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md)  |  **Descendants:** 286  |  **Class:** E
+**Note:** [docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md](../RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md)  |  **Descendants:** 286  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md.
@@ -397,7 +397,7 @@ drive.
 
 ### `gravity_full_self_consistency_note`
 
-**Note:** [docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md](docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)  |  **Descendants:** 285  |  **Class:** F
+**Note:** [docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md](../GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)  |  **Descendants:** 285  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md.
@@ -423,7 +423,7 @@ drive.
 
 ### `s3_time_constructed_support_tensor_primitive_note`
 
-**Note:** [docs/S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md](docs/S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md)  |  **Descendants:** 285  |  **Class:** E
+**Note:** [docs/S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md](../S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md)  |  **Descendants:** 285  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md.
@@ -449,7 +449,7 @@ drive.
 
 ### `s3_time_tensor_primitive_prototype_note`
 
-**Note:** [docs/S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md](docs/S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md)  |  **Descendants:** 285  |  **Class:** E
+**Note:** [docs/S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md](../S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md)  |  **Descendants:** 285  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md.
@@ -475,7 +475,7 @@ drive.
 
 ### `dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)  |  **Descendants:** 284  |  **Class:** E
+**Note:** [docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)  |  **Descendants:** 284  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md.
@@ -501,7 +501,7 @@ drive.
 
 ### `dm_leptogenesis_exact_kernel_closure_note_2026-04-15`
 
-**Note:** [docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md](docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md)  |  **Descendants:** 283  |  **Class:** E
+**Note:** [docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md](../DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md)  |  **Descendants:** 283  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md.
@@ -527,7 +527,7 @@ drive.
 
 ### `dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15`
 
-**Note:** [docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md](docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md)  |  **Descendants:** 283  |  **Class:** F
+**Note:** [docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md](../DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md)  |  **Descendants:** 283  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md.
@@ -553,7 +553,7 @@ drive.
 
 ### `pmns_sole_axiom_hw1_source_transfer_boundary_note`
 
-**Note:** [docs/PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md](docs/PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md)  |  **Descendants:** 283  |  **Class:** E
+**Note:** [docs/PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md](../PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md)  |  **Descendants:** 283  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md.
@@ -579,7 +579,7 @@ drive.
 
 ### `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)  |  **Descendants:** 282  |  **Class:** E
+**Note:** [docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)  |  **Descendants:** 282  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md.
@@ -605,7 +605,7 @@ drive.
 
 ### `koide_mru_weight_class_obstruction_theorem_note_2026-04-19`
 
-**Note:** [docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md](docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)  |  **Descendants:** 282  |  **Class:** E
+**Note:** [docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md](../KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)  |  **Descendants:** 282  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md.
@@ -631,7 +631,7 @@ drive.
 
 ### `pmns_commutant_eigenoperator_selector_note`
 
-**Note:** [docs/PMNS_COMMUTANT_EIGENOPERATOR_SELECTOR_NOTE.md](docs/PMNS_COMMUTANT_EIGENOPERATOR_SELECTOR_NOTE.md)  |  **Descendants:** 282  |  **Class:** F
+**Note:** [docs/PMNS_COMMUTANT_EIGENOPERATOR_SELECTOR_NOTE.md](../PMNS_COMMUTANT_EIGENOPERATOR_SELECTOR_NOTE.md)  |  **Descendants:** 282  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/PMNS_COMMUTANT_EIGENOPERATOR_SELECTOR_NOTE.md.
@@ -657,7 +657,7 @@ drive.
 
 ### `single_axiom_information_note`
 
-**Note:** [docs/SINGLE_AXIOM_INFORMATION_NOTE.md](docs/SINGLE_AXIOM_INFORMATION_NOTE.md)  |  **Descendants:** 282  |  **Class:** F
+**Note:** [docs/SINGLE_AXIOM_INFORMATION_NOTE.md](../SINGLE_AXIOM_INFORMATION_NOTE.md)  |  **Descendants:** 282  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/SINGLE_AXIOM_INFORMATION_NOTE.md.
@@ -683,7 +683,7 @@ drive.
 
 ### `dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 281  |  **Class:** E
+**Note:** [docs/DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 281  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md.
@@ -709,7 +709,7 @@ drive.
 
 ### `pmns_corner_transport_active_block_note`
 
-**Note:** [docs/PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md](docs/PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md)  |  **Descendants:** 281  |  **Class:** E
+**Note:** [docs/PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md](../PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md)  |  **Descendants:** 281  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md.
@@ -735,7 +735,7 @@ drive.
 
 ### `pmns_transfer_operator_dominant_mode_note`
 
-**Note:** [docs/PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md](docs/PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md)  |  **Descendants:** 281  |  **Class:** E
+**Note:** [docs/PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md](../PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md)  |  **Descendants:** 281  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md.
@@ -761,7 +761,7 @@ drive.
 
 ### `teleportation_conclusion_boundary_note`
 
-**Note:** [docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md](docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md)  |  **Descendants:** 281  |  **Class:** E
+**Note:** [docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md](../TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md)  |  **Descendants:** 281  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md.
@@ -787,7 +787,7 @@ drive.
 
 ### `universal_gr_casimir_block_localization_note`
 
-**Note:** [docs/UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_NOTE.md](docs/UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_NOTE.md)  |  **Descendants:** 281  |  **Class:** E
+**Note:** [docs/UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_NOTE.md](../UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_NOTE.md)  |  **Descendants:** 281  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_NOTE.md.
@@ -813,7 +813,7 @@ drive.
 
 ### `universal_gr_supermetric_normal_form_note`
 
-**Note:** [docs/UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md](docs/UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md)  |  **Descendants:** 281  |  **Class:** F
+**Note:** [docs/UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md](../UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md)  |  **Descendants:** 281  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md.
@@ -839,7 +839,7 @@ drive.
 
 ### `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17`
 
-**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md](docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md)  |  **Descendants:** 12  |  **Class:** E
+**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md](../GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md)  |  **Descendants:** 12  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md.
@@ -865,7 +865,7 @@ drive.
 
 ### `lattice_nn_light_cone_note`
 
-**Note:** [docs/LATTICE_NN_LIGHT_CONE_NOTE.md](docs/LATTICE_NN_LIGHT_CONE_NOTE.md)  |  **Descendants:** 0  |  **Class:** F
+**Note:** [docs/LATTICE_NN_LIGHT_CONE_NOTE.md](../LATTICE_NN_LIGHT_CONE_NOTE.md)  |  **Descendants:** 0  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/LATTICE_NN_LIGHT_CONE_NOTE.md.
@@ -891,7 +891,7 @@ drive.
 
 ### `yt_ssb_matching_gap_analysis_note_2026-04-18`
 
-**Note:** [docs/YT_SSB_MATCHING_GAP_ANALYSIS_NOTE_2026-04-18.md](docs/YT_SSB_MATCHING_GAP_ANALYSIS_NOTE_2026-04-18.md)  |  **Descendants:** 0  |  **Class:** F
+**Note:** [docs/YT_SSB_MATCHING_GAP_ANALYSIS_NOTE_2026-04-18.md](../YT_SSB_MATCHING_GAP_ANALYSIS_NOTE_2026-04-18.md)  |  **Descendants:** 0  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/YT_SSB_MATCHING_GAP_ANALYSIS_NOTE_2026-04-18.md.
@@ -923,7 +923,7 @@ _16 rows in this category._
 
 ### `shapiro_static_discriminator_note`
 
-**Note:** [docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md](docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md)  |  **Descendants:** 307  |  **Class:** A
+**Note:** [docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md](../SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md)  |  **Descendants:** 307  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md.
@@ -949,7 +949,7 @@ drive.
 
 ### `dm_neutrino_weak_vector_theorem_note_2026-04-15`
 
-**Note:** [docs/DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md](docs/DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md)  |  **Descendants:** 293  |  **Class:** A
+**Note:** [docs/DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md](../DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md)  |  **Descendants:** 293  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md.
@@ -975,7 +975,7 @@ drive.
 
 ### `persistent_object_multistage_floor_sweep_note_2026-04-16`
 
-**Note:** [docs/PERSISTENT_OBJECT_MULTISTAGE_FLOOR_SWEEP_NOTE_2026-04-16.md](docs/PERSISTENT_OBJECT_MULTISTAGE_FLOOR_SWEEP_NOTE_2026-04-16.md)  |  **Descendants:** 282  |  **Class:** C
+**Note:** [docs/PERSISTENT_OBJECT_MULTISTAGE_FLOOR_SWEEP_NOTE_2026-04-16.md](../PERSISTENT_OBJECT_MULTISTAGE_FLOOR_SWEEP_NOTE_2026-04-16.md)  |  **Descendants:** 282  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/PERSISTENT_OBJECT_MULTISTAGE_FLOOR_SWEEP_NOTE_2026-04-16.md.
@@ -1001,7 +1001,7 @@ drive.
 
 ### `ckm_schur_complement_theorem`
 
-**Note:** [docs/CKM_SCHUR_COMPLEMENT_THEOREM.md](docs/CKM_SCHUR_COMPLEMENT_THEOREM.md)  |  **Descendants:** 281  |  **Class:** A
+**Note:** [docs/CKM_SCHUR_COMPLEMENT_THEOREM.md](../CKM_SCHUR_COMPLEMENT_THEOREM.md)  |  **Descendants:** 281  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/CKM_SCHUR_COMPLEMENT_THEOREM.md.
@@ -1027,7 +1027,7 @@ drive.
 
 ### `equivalence_principle_note`
 
-**Note:** [docs/EQUIVALENCE_PRINCIPLE_NOTE.md](docs/EQUIVALENCE_PRINCIPLE_NOTE.md)  |  **Descendants:** 281  |  **Class:** G
+**Note:** [docs/EQUIVALENCE_PRINCIPLE_NOTE.md](../EQUIVALENCE_PRINCIPLE_NOTE.md)  |  **Descendants:** 281  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/EQUIVALENCE_PRINCIPLE_NOTE.md.
@@ -1053,7 +1053,7 @@ drive.
 
 ### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19`
 
-**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md](docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md)  |  **Descendants:** 281  |  **Class:** A
+**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md](../GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md)  |  **Descendants:** 281  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md.
@@ -1079,7 +1079,7 @@ drive.
 
 ### `koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24`
 
-**Note:** [docs/KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24.md](docs/KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24.md)  |  **Descendants:** 281  |  **Class:** C
+**Note:** [docs/KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24.md](../KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24.md)  |  **Descendants:** 281  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24.md.
@@ -1105,7 +1105,7 @@ drive.
 
 ### `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`
 
-**Note:** [docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md](docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)  |  **Descendants:** 281  |  **Class:** A
+**Note:** [docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md](../KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)  |  **Descendants:** 281  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md.
@@ -1131,7 +1131,7 @@ drive.
 
 ### `koide_hostile_review_guard_note_2026-04-24`
 
-**Note:** [docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md](docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md)  |  **Descendants:** 281  |  **Class:** A
+**Note:** [docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md](../KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md)  |  **Descendants:** 281  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md.
@@ -1157,7 +1157,7 @@ drive.
 
 ### `nonlinear_born_gravity_note`
 
-**Note:** [docs/NONLINEAR_BORN_GRAVITY_NOTE.md](docs/NONLINEAR_BORN_GRAVITY_NOTE.md)  |  **Descendants:** 281  |  **Class:** G
+**Note:** [docs/NONLINEAR_BORN_GRAVITY_NOTE.md](../NONLINEAR_BORN_GRAVITY_NOTE.md)  |  **Descendants:** 281  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/NONLINEAR_BORN_GRAVITY_NOTE.md.
@@ -1183,7 +1183,7 @@ drive.
 
 ### `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02`
 
-**Note:** [docs/RADIAL_SCALING_PROTECTED_ANGLE_NARROW_THEOREM_NOTE_2026-05-02.md](docs/RADIAL_SCALING_PROTECTED_ANGLE_NARROW_THEOREM_NOTE_2026-05-02.md)  |  **Descendants:** 281  |  **Class:** A
+**Note:** [docs/RADIAL_SCALING_PROTECTED_ANGLE_NARROW_THEOREM_NOTE_2026-05-02.md](../RADIAL_SCALING_PROTECTED_ANGLE_NARROW_THEOREM_NOTE_2026-05-02.md)  |  **Descendants:** 281  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/RADIAL_SCALING_PROTECTED_ANGLE_NARROW_THEOREM_NOTE_2026-05-02.md.
@@ -1209,7 +1209,7 @@ drive.
 
 ### `teleportation_acceptance_suite_note`
 
-**Note:** [docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md](docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md)  |  **Descendants:** 281  |  **Class:** A
+**Note:** [docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md](../TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md)  |  **Descendants:** 281  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md.
@@ -1235,7 +1235,7 @@ drive.
 
 ### `mesoscopic_surrogate_threshold_2d_note`
 
-**Note:** [docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md](docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md)  |  **Descendants:** 35  |  **Class:** C
+**Note:** [docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md](../MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md)  |  **Descendants:** 35  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md.
@@ -1261,7 +1261,7 @@ drive.
 
 ### `higher_symmetry_gravity_probe_note`
 
-**Note:** [docs/HIGHER_SYMMETRY_GRAVITY_PROBE_NOTE.md](docs/HIGHER_SYMMETRY_GRAVITY_PROBE_NOTE.md)  |  **Descendants:** 11  |  **Class:** C
+**Note:** [docs/HIGHER_SYMMETRY_GRAVITY_PROBE_NOTE.md](../HIGHER_SYMMETRY_GRAVITY_PROBE_NOTE.md)  |  **Descendants:** 11  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/HIGHER_SYMMETRY_GRAVITY_PROBE_NOTE.md.
@@ -1287,7 +1287,7 @@ drive.
 
 ### `lattice_nn_deterministic_rescale_note`
 
-**Note:** [docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md](docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md)  |  **Descendants:** 3  |  **Class:** C
+**Note:** [docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md](../LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md)  |  **Descendants:** 3  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md.
@@ -1313,7 +1313,7 @@ drive.
 
 ### `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19`
 
-**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md](docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md)  |  **Descendants:** 0  |  **Class:** C
+**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md](../GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md)  |  **Descendants:** 0  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md.
@@ -1345,7 +1345,7 @@ _22 rows in this category._
 
 ### `born_scattering_comparison_note`
 
-**Note:** [docs/BORN_SCATTERING_COMPARISON_NOTE.md](docs/BORN_SCATTERING_COMPARISON_NOTE.md)  |  **Descendants:** 439  |  **Class:** G
+**Note:** [docs/BORN_SCATTERING_COMPARISON_NOTE.md](../BORN_SCATTERING_COMPARISON_NOTE.md)  |  **Descendants:** 439  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/BORN_SCATTERING_COMPARISON_NOTE.md.
@@ -1371,7 +1371,7 @@ drive.
 
 ### `yt_constructive_uv_bridge_note`
 
-**Note:** [docs/YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md](docs/YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md)  |  **Descendants:** 326  |  **Class:** G
+**Note:** [docs/YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md](../YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md)  |  **Descendants:** 326  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md.
@@ -1397,7 +1397,7 @@ drive.
 
 ### `yt_bridge_nonlocal_corrections_note`
 
-**Note:** [docs/YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md](docs/YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md)  |  **Descendants:** 324  |  **Class:** G
+**Note:** [docs/YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md](../YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md)  |  **Descendants:** 324  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md.
@@ -1423,7 +1423,7 @@ drive.
 
 ### `quark_cp_carrier_completion_note_2026-04-18`
 
-**Note:** [docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md](docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md)  |  **Descendants:** 304  |  **Class:** G
+**Note:** [docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md](../QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md)  |  **Descendants:** 304  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md.
@@ -1449,7 +1449,7 @@ drive.
 
 ### `dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md)  |  **Descendants:** 287  |  **Class:** G
+**Note:** [docs/DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md)  |  **Descendants:** 287  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md.
@@ -1475,7 +1475,7 @@ drive.
 
 ### `ckm_down_type_scale_convention_support_note_2026-04-22`
 
-**Note:** [docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md](docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md)  |  **Descendants:** 286  |  **Class:** G
+**Note:** [docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md](../CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md)  |  **Descendants:** 286  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md.
@@ -1501,7 +1501,7 @@ drive.
 
 ### `work_history.ckm.ckm_mass_basis_nni_note`
 
-**Note:** [docs/work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md](docs/work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md)  |  **Descendants:** 286  |  **Class:** G
+**Note:** [docs/work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md](../work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md)  |  **Descendants:** 286  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md.
@@ -1527,7 +1527,7 @@ drive.
 
 ### `yt_bridge_action_invariant_note`
 
-**Note:** [docs/YT_BRIDGE_ACTION_INVARIANT_NOTE.md](docs/YT_BRIDGE_ACTION_INVARIANT_NOTE.md)  |  **Descendants:** 282  |  **Class:** G
+**Note:** [docs/YT_BRIDGE_ACTION_INVARIANT_NOTE.md](../YT_BRIDGE_ACTION_INVARIANT_NOTE.md)  |  **Descendants:** 282  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/YT_BRIDGE_ACTION_INVARIANT_NOTE.md.
@@ -1553,7 +1553,7 @@ drive.
 
 ### `yt_bridge_moment_closure_note`
 
-**Note:** [docs/YT_BRIDGE_MOMENT_CLOSURE_NOTE.md](docs/YT_BRIDGE_MOMENT_CLOSURE_NOTE.md)  |  **Descendants:** 282  |  **Class:** G
+**Note:** [docs/YT_BRIDGE_MOMENT_CLOSURE_NOTE.md](../YT_BRIDGE_MOMENT_CLOSURE_NOTE.md)  |  **Descendants:** 282  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/YT_BRIDGE_MOMENT_CLOSURE_NOTE.md.
@@ -1579,7 +1579,7 @@ drive.
 
 ### `yt_ew_coupling_bridge_note`
 
-**Note:** [docs/YT_EW_COUPLING_BRIDGE_NOTE.md](docs/YT_EW_COUPLING_BRIDGE_NOTE.md)  |  **Descendants:** 282  |  **Class:** G
+**Note:** [docs/YT_EW_COUPLING_BRIDGE_NOTE.md](../YT_EW_COUPLING_BRIDGE_NOTE.md)  |  **Descendants:** 282  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/YT_EW_COUPLING_BRIDGE_NOTE.md.
@@ -1605,7 +1605,7 @@ drive.
 
 ### `dm_leptogenesis_full_microscopic_reduction_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_FULL_MICROSCOPIC_REDUCTION_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_FULL_MICROSCOPIC_REDUCTION_NOTE_2026-04-16.md)  |  **Descendants:** 281  |  **Class:** G
+**Note:** [docs/DM_LEPTOGENESIS_FULL_MICROSCOPIC_REDUCTION_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_FULL_MICROSCOPIC_REDUCTION_NOTE_2026-04-16.md)  |  **Descendants:** 281  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_LEPTOGENESIS_FULL_MICROSCOPIC_REDUCTION_NOTE_2026-04-16.md.
@@ -1631,7 +1631,7 @@ drive.
 
 ### `dm_leptogenesis_transport_integral_theorem_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_TRANSPORT_INTEGRAL_THEOREM_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_TRANSPORT_INTEGRAL_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 281  |  **Class:** G
+**Note:** [docs/DM_LEPTOGENESIS_TRANSPORT_INTEGRAL_THEOREM_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_TRANSPORT_INTEGRAL_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 281  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_LEPTOGENESIS_TRANSPORT_INTEGRAL_THEOREM_NOTE_2026-04-16.md.
@@ -1657,7 +1657,7 @@ drive.
 
 ### `dm_pmns_chamber_spectral_completeness_theorem_note_2026-04-20`
 
-**Note:** [docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md](docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md)  |  **Descendants:** 281  |  **Class:** G
+**Note:** [docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md](../DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md)  |  **Descendants:** 281  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md.
@@ -1683,7 +1683,7 @@ drive.
 
 ### `dm_pmns_ne_seed_surface_exact_source_manifold_theorem_note_2026-04-20`
 
-**Note:** [docs/DM_PMNS_NE_SEED_SURFACE_EXACT_SOURCE_MANIFOLD_THEOREM_NOTE_2026-04-20.md](docs/DM_PMNS_NE_SEED_SURFACE_EXACT_SOURCE_MANIFOLD_THEOREM_NOTE_2026-04-20.md)  |  **Descendants:** 281  |  **Class:** G
+**Note:** [docs/DM_PMNS_NE_SEED_SURFACE_EXACT_SOURCE_MANIFOLD_THEOREM_NOTE_2026-04-20.md](../DM_PMNS_NE_SEED_SURFACE_EXACT_SOURCE_MANIFOLD_THEOREM_NOTE_2026-04-20.md)  |  **Descendants:** 281  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_PMNS_NE_SEED_SURFACE_EXACT_SOURCE_MANIFOLD_THEOREM_NOTE_2026-04-20.md.
@@ -1709,7 +1709,7 @@ drive.
 
 ### `hierarchy_dimensional_compression_note`
 
-**Note:** [docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md](docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)  |  **Descendants:** 281  |  **Class:** G
+**Note:** [docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md](../HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)  |  **Descendants:** 281  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md.
@@ -1735,7 +1735,7 @@ drive.
 
 ### `monopole_derived_note`
 
-**Note:** [docs/MONOPOLE_DERIVED_NOTE.md](docs/MONOPOLE_DERIVED_NOTE.md)  |  **Descendants:** 281  |  **Class:** G
+**Note:** [docs/MONOPOLE_DERIVED_NOTE.md](../MONOPOLE_DERIVED_NOTE.md)  |  **Descendants:** 281  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/MONOPOLE_DERIVED_NOTE.md.
@@ -1761,7 +1761,7 @@ drive.
 
 ### `quark_e_channel_endpoint_quotient_law_note_2026-04-19`
 
-**Note:** [docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md](docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md)  |  **Descendants:** 281  |  **Class:** G
+**Note:** [docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md](../QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md)  |  **Descendants:** 281  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md.
@@ -1787,7 +1787,7 @@ drive.
 
 ### `quark_endpoint_ratio_chain_law_note_2026-04-19`
 
-**Note:** [docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md](docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md)  |  **Descendants:** 281  |  **Class:** G
+**Note:** [docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md](../QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md)  |  **Descendants:** 281  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md.
@@ -1813,7 +1813,7 @@ drive.
 
 ### `mirror_chokepoint_boundary_fit_note`
 
-**Note:** [docs/MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md](docs/MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md)  |  **Descendants:** 16  |  **Class:** G
+**Note:** [docs/MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md](../MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md)  |  **Descendants:** 16  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md.
@@ -1839,7 +1839,7 @@ drive.
 
 ### `lattice_distance_law_note`
 
-**Note:** [docs/LATTICE_DISTANCE_LAW_NOTE.md](docs/LATTICE_DISTANCE_LAW_NOTE.md)  |  **Descendants:** 10  |  **Class:** G
+**Note:** [docs/LATTICE_DISTANCE_LAW_NOTE.md](../LATTICE_DISTANCE_LAW_NOTE.md)  |  **Descendants:** 10  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/LATTICE_DISTANCE_LAW_NOTE.md.
@@ -1865,7 +1865,7 @@ drive.
 
 ### `wave_direct_dm_h025_seed0_crossfamily_note`
 
-**Note:** [docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md](docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md)  |  **Descendants:** 8  |  **Class:** G
+**Note:** [docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md](../WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md)  |  **Descendants:** 8  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md.
@@ -1891,7 +1891,7 @@ drive.
 
 ### `source_resolved_exact_green_self_consistent_note`
 
-**Note:** [docs/SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md](docs/SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md)  |  **Descendants:** 0  |  **Class:** D
+**Note:** [docs/SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md](../SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md)  |  **Descendants:** 0  |  **Class:** D
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md.
@@ -1923,7 +1923,7 @@ _19 rows in this category._
 
 ### `staggered_dirac_realization_gate_note_2026-05-03`
 
-**Note:** [docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md](docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)  |  **Descendants:** 567  |  **Class:** E
+**Note:** [docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md](../STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)  |  **Descendants:** 567  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md.
@@ -1949,7 +1949,7 @@ drive.
 
 ### `dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21`
 
-**Note:** [docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md](docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md)  |  **Descendants:** 283  |  **Class:** A
+**Note:** [docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md](../DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md)  |  **Descendants:** 283  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md.
@@ -1975,7 +1975,7 @@ drive.
 
 ### `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25`
 
-**Note:** [docs/DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md](docs/DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md)  |  **Descendants:** 281  |  **Class:** A
+**Note:** [docs/DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md](../DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md)  |  **Descendants:** 281  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/DM_WILSON_DIRECT_DESCENDANT_SCHUR_FESHBACH_BOUNDARY_VARIATIONAL_THEOREM_NOTE_2026-04-25.md.
@@ -2001,7 +2001,7 @@ drive.
 
 ### `newton_derivation_note`
 
-**Note:** [docs/NEWTON_DERIVATION_NOTE.md](docs/NEWTON_DERIVATION_NOTE.md)  |  **Descendants:** 24  |  **Class:** A
+**Note:** [docs/NEWTON_DERIVATION_NOTE.md](../NEWTON_DERIVATION_NOTE.md)  |  **Descendants:** 24  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/NEWTON_DERIVATION_NOTE.md.
@@ -2027,7 +2027,7 @@ drive.
 
 ### `gauge_wilson_isotropy_boundary_note_2026-05-04`
 
-**Note:** [docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md](docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md)  |  **Descendants:** 18  |  **Class:** A
+**Note:** [docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md](../GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md)  |  **Descendants:** 18  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md.
@@ -2053,7 +2053,7 @@ drive.
 
 ### `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02`
 
-**Note:** [docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md](docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md)  |  **Descendants:** 7  |  **Class:** A
+**Note:** [docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md](../GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md)  |  **Descendants:** 7  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md.
@@ -2079,7 +2079,7 @@ drive.
 
 ### `lattice_nn_continuum_note`
 
-**Note:** [docs/LATTICE_NN_CONTINUUM_NOTE.md](docs/LATTICE_NN_CONTINUUM_NOTE.md)  |  **Descendants:** 4  |  **Class:** C
+**Note:** [docs/LATTICE_NN_CONTINUUM_NOTE.md](../LATTICE_NN_CONTINUUM_NOTE.md)  |  **Descendants:** 4  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/LATTICE_NN_CONTINUUM_NOTE.md.
@@ -2105,7 +2105,7 @@ drive.
 
 ### `lattice_nn_high_precision_note`
 
-**Note:** [docs/LATTICE_NN_HIGH_PRECISION_NOTE.md](docs/LATTICE_NN_HIGH_PRECISION_NOTE.md)  |  **Descendants:** 2  |  **Class:** C
+**Note:** [docs/LATTICE_NN_HIGH_PRECISION_NOTE.md](../LATTICE_NN_HIGH_PRECISION_NOTE.md)  |  **Descendants:** 2  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/LATTICE_NN_HIGH_PRECISION_NOTE.md.
@@ -2131,7 +2131,7 @@ drive.
 
 ### `teleportation_taste_readout_operator_model_note`
 
-**Note:** [docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md](docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md)  |  **Descendants:** 2  |  **Class:** A
+**Note:** [docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md](../TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md)  |  **Descendants:** 2  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md.
@@ -2157,7 +2157,7 @@ drive.
 
 ### `teleportation_bell_measurement_circuit_note`
 
-**Note:** [docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md](docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md)  |  **Descendants:** 1  |  **Class:** B
+**Note:** [docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md](../TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md)  |  **Descendants:** 1  |  **Class:** B
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md.
@@ -2183,7 +2183,7 @@ drive.
 
 ### `teleportation_encoding_portability_note`
 
-**Note:** [docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md](docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md)  |  **Descendants:** 1  |  **Class:** C
+**Note:** [docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md](../TELEPORTATION_ENCODING_PORTABILITY_NOTE.md)  |  **Descendants:** 1  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md.
@@ -2209,7 +2209,7 @@ drive.
 
 ### `teleportation_logical_readout_audit`
 
-**Note:** [docs/TELEPORTATION_LOGICAL_READOUT_AUDIT.md](docs/TELEPORTATION_LOGICAL_READOUT_AUDIT.md)  |  **Descendants:** 1  |  **Class:** B
+**Note:** [docs/TELEPORTATION_LOGICAL_READOUT_AUDIT.md](../TELEPORTATION_LOGICAL_READOUT_AUDIT.md)  |  **Descendants:** 1  |  **Class:** B
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/TELEPORTATION_LOGICAL_READOUT_AUDIT.md.
@@ -2235,7 +2235,7 @@ drive.
 
 ### `teleportation_resource_fidelity_note`
 
-**Note:** [docs/TELEPORTATION_RESOURCE_FIDELITY_NOTE.md](docs/TELEPORTATION_RESOURCE_FIDELITY_NOTE.md)  |  **Descendants:** 1  |  **Class:** C
+**Note:** [docs/TELEPORTATION_RESOURCE_FIDELITY_NOTE.md](../TELEPORTATION_RESOURCE_FIDELITY_NOTE.md)  |  **Descendants:** 1  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/TELEPORTATION_RESOURCE_FIDELITY_NOTE.md.
@@ -2261,7 +2261,7 @@ drive.
 
 ### `carrier_orbit_invariance_stretch_attempt_note_2026-05-03`
 
-**Note:** [docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md](docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md)  |  **Descendants:** 0  |  **Class:** A
+**Note:** [docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md](../CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md)  |  **Descendants:** 0  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md.
@@ -2287,7 +2287,7 @@ drive.
 
 ### `teleportation_3d1_causal_record_channel_note`
 
-**Note:** [docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md](docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md)  |  **Descendants:** 0  |  **Class:** A
+**Note:** [docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md](../TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md)  |  **Descendants:** 0  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md.
@@ -2313,7 +2313,7 @@ drive.
 
 ### `teleportation_3d_initial_ramp_probe_note`
 
-**Note:** [docs/TELEPORTATION_3D_INITIAL_RAMP_PROBE_NOTE.md](docs/TELEPORTATION_3D_INITIAL_RAMP_PROBE_NOTE.md)  |  **Descendants:** 0  |  **Class:** C
+**Note:** [docs/TELEPORTATION_3D_INITIAL_RAMP_PROBE_NOTE.md](../TELEPORTATION_3D_INITIAL_RAMP_PROBE_NOTE.md)  |  **Descendants:** 0  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/TELEPORTATION_3D_INITIAL_RAMP_PROBE_NOTE.md.
@@ -2339,7 +2339,7 @@ drive.
 
 ### `teleportation_initial_state_preparation_probe_note`
 
-**Note:** [docs/TELEPORTATION_INITIAL_STATE_PREPARATION_PROBE_NOTE.md](docs/TELEPORTATION_INITIAL_STATE_PREPARATION_PROBE_NOTE.md)  |  **Descendants:** 0  |  **Class:** C
+**Note:** [docs/TELEPORTATION_INITIAL_STATE_PREPARATION_PROBE_NOTE.md](../TELEPORTATION_INITIAL_STATE_PREPARATION_PROBE_NOTE.md)  |  **Descendants:** 0  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/TELEPORTATION_INITIAL_STATE_PREPARATION_PROBE_NOTE.md.
@@ -2365,7 +2365,7 @@ drive.
 
 ### `teleportation_native_transport_theory_note`
 
-**Note:** [docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md](docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md)  |  **Descendants:** 0  |  **Class:** C
+**Note:** [docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md](../TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md)  |  **Descendants:** 0  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md.
@@ -2391,7 +2391,7 @@ drive.
 
 ### `teleportation_three_register_cross_encoding_note`
 
-**Note:** [docs/TELEPORTATION_THREE_REGISTER_CROSS_ENCODING_NOTE.md](docs/TELEPORTATION_THREE_REGISTER_CROSS_ENCODING_NOTE.md)  |  **Descendants:** 0  |  **Class:** C
+**Note:** [docs/TELEPORTATION_THREE_REGISTER_CROSS_ENCODING_NOTE.md](../TELEPORTATION_THREE_REGISTER_CROSS_ENCODING_NOTE.md)  |  **Descendants:** 0  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the missing derivation in docs/TELEPORTATION_THREE_REGISTER_CROSS_ENCODING_NOTE.md.
@@ -2418,70 +2418,12 @@ drive.
 
 Auditor judged the load-bearing step blocked by a runner, log, classifier, threshold, import, or pass/fail accounting problem. To close: repair the runner per the auditor's repair_target sentence and rerun, or replace the runner with a self-contained certificate.
 
-_4 rows in this category._
-
-
-### `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17`
-
-**Note:** [docs/STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md](docs/STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)  |  **Descendants:** 1257  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: positive_theorem
-- load_bearing_step_class: A
-- claim_scope: Audited only the abstract finite-dimensional statement that every linear operator on V_3 commuting with the explicit diagonal unitary triple is diagonal in the stated joint eigenbasis.
-
-Auditor's verdict_rationale:
-Issue: the primary runner restricts K to Hermitian matrices while the audited theorem quantifies over every linear operator. Why this blocks: the completed stdout verifies only that restricted specialization, even though the note's hand proof presents the broader algebraic argument. Repair target: parameterize a fully generic complex 3-by-3 matrix and solve the three commutator systems without Hermiticity. Claim boundary until fixed: the supplied executable certificate supports the Hermitian specialization.
-
-Auditor-quoted load-bearing step:
-For each alpha != beta, choose a distinguishing T_mu; then 0 = <e_alpha|[K,T_mu]|e_beta> = (tau_mu^(beta) - tau_mu^(alpha))<e_alpha|K|e_beta>, forcing the off-diagonal matrix element to vanish.
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue: extend the runner to a fully generic complex K, rerun it, and re-audit the unchanged abstract theorem.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`
-
-**Note:** [docs/SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md](docs/SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md)  |  **Descendants:** 856  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: positive_theorem
-- load_bearing_step_class: A
-- claim_scope: The finite-truncation SU(3) character-convolution identity and its coefficient-uniqueness, positivity, self-adjointness, and conjugation-symmetry consequences for an abstract normalized sequence, excluding any Wilson-environment identification.
-
-Auditor's verdict_rationale:
-Issue: the runner’s T2 checks presuppose the contested convolution reduction by returning rho_seq[INDEX[target)] directly, despite describing it as an exact algebraic verification. Why this blocks: the T2 PASS lines therefore do not independently test identity (9), while the note only sketches the required matrix-index contraction from (7). Repair target: implement that contraction symbolically or evaluate the nontrivial convolution matrix for representative V and irreps before applying the coefficients. Claim boundary until fixed: sampled T1 orthogonality and the T3/T4 properties of the separately defined diagonal operator remain supported; the physical non-identification sentences are scope exclusions rather than negative scientific assertions.
-
-Auditor-quoted load-bearing step:
-The identity ∫χ_(p,q)(VW^{-1})χ_(p',q')(W)dW = δ_((p,q),(p',q'))χ_(p',q')(V)/d_(p,q) makes convolution by Z act with eigenvalue ρ_(p',q').
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue: replace the tautological reduce_convolution check with a symbolic matrix-element derivation or independent nontrivial numerical verification of identity (9), then rerun the audit.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
+_1 rows in this category._
 
 
 ### `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27`
 
-**Note:** [docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md](docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md)  |  **Descendants:** 717  |  **Class:** A
+**Note:** [docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md](../CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md)  |  **Descendants:** 35  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md.
@@ -2508,35 +2450,6 @@ drive.
 ```
 
 
-### `post_record_source_measure_trace_normalization_prototype_2026-06-06`
-
-**Note:** [docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md](docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Supplied finite source weights and positive finite trace/reference weights normalize to exact RN densities satisfying finite expectation and composition identities, with the claimed 16/10/26 source/trace row coverage also in scope.
-
-Auditor's verdict_rationale:
-Issue: the primary runner dynamically imports the measure-weight subdivision runner for row enumeration and lane classification, but that helper source is not included while the packet says no helper imports were detected. Why this blocks: stdout alone is not authoritative for the claimed 16 source-measure/RN rows, 10 trace-normalization rows, and total 26-row coverage. Repair target: include the helper runner source and SHA-pinned cache, or inline an independently auditable row enumeration in the packet. Claim boundary until fixed: the supplied finite RN/trace normalization identity is exact, but row-coverage certification remains runner-artifact-conditional.
-
-Auditor-quoted load-bearing step:
-supplied finite carrier + supplied positive reference trace measure + supplied nonnegative source weights with positive total + exact Radon-Nikodym density => normalized source measure and trace/RN expectation identity
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue: include `scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py` and its SHA-pinned cache in the restricted packet, then re-audit the row coverage claim.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
 ## audited_conditional_scope_too_broad
 
 Auditor judged that a clean bounded core exists inside a claim whose current scope includes an unclosed extension. To close: split the clean bounded core out as its own retained-grade claim and demote the extension to bounded or open scope.
@@ -2548,331 +2461,12 @@ _0 rows in this category._
 
 Auditor judged that the chain needs a new theorem for a physical carrier, readout, unit map, boundary condition, sector choice, normalization, or observable bridge. To close: derive the missing bridge from retained primitives so the audited claim no longer asserts it.
 
-_24 rows in this category._
-
-
-### `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11`
-
-**Note:** [docs/STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md](docs/STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md)  |  **Descendants:** 1155  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Conditional on the explicitly supplied free one-component Kogut-Susskind action and canonical phases, exact blocking gives the displayed 16-component reduced operator, a Cl_4(C) representation, and four Dirac-spin taste modules; no physical-carrier identification is audited.
-
-Auditor's verdict_rationale:
-The runner genuinely constructs the blocked directional operators, verifies the rephasing and Clifford relations exactly, and establishes the fourfold module multiplicity using standard complex Clifford classification. However, the action and canonical phases are an explicit supplied physical premise rather than content derived from an accepted premise or retained authority. The internal theorem is sound on that premise, while physical-carrier identification remains outside the audited closure.
-
-Auditor-quoted load-bearing step:
-Since the blocked alpha_mu form a 16-dimensional Cl_4(C)=M_4(C) module whose unique irreducible module has dimension four, the blocked carrier decomposes into four Dirac-spin modules.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add and directly cite a retained theorem deriving or identifying the supplied Kogut-Susskind action and canonical phases from accepted framework premises.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`
-
-**Note:** [docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md](docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)  |  **Descendants:** 1104  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: L1 and L2 establish finite-dimensional determinant positivity; L3 establishes c log det only conditional on a determinant-only readout and source-block-to-record bridge, with continuity and c=1 conventional.
-
-Auditor's verdict_rationale:
-The determinant-positivity arguments are correct, and the runner provides consistent finite checks of them. Record additivity alone does not place the readout on the multiplicative group of positive determinants: the runner assumes a logarithmic candidate and verifies one instance of log(xy)=log(x)+log(y), without constructing the determinant-only readout or the source-block-to-record identification. Consequently, the logarithmic readout conclusion remains conditional even though the continuous Cauchy classification is correct once that bridge is supplied.
-
-Auditor-quoted load-bearing step:
-Record finite scalar additivity over disjoint records, together with continuity on the positive determinant branch, forces the readout to be W_c = c log det.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add and cite a theorem establishing determinant-only readout and the source-block-to-disjoint-record correspondence, then make the runner test that bridge rather than only the logarithmic candidate.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`
-
-**Note:** [docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md](docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)  |  **Descendants:** 901  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Exact tree-level gauge-mass diagonalization, unbroken charge, electric-coupling identity, rho_tree=1, GUT-normalized dictionary, and optional scalar Hessian for the declared one-doublet EW-Higgs inputs with nonzero gauge couplings.
-
-Auditor's verdict_rationale:
-The runner genuinely constructs the Pauli-generator actions, charged and neutral quadratic forms, eigenvectors, coupling identities, and scalar Hessian with exact symbolic algebra; it is not a print-only runner, renaming, tuned numerical match, or external comparison. The algebra is correct within the declared one-doublet tree-level boundary. Under the rubric, the result remains conditional because the EW gauge group, Higgs carrier and hypercharge, neutral vacuum, covariant derivative, coupling-normalization convention, and optional potential are explicit imported premises rather than retained-grade or accepted-premise derivations in this restricted packet.
-
-Auditor-quoted load-bearing step:
-Substituting the neutral vacuum into the Higgs kinetic term gives the charged coefficient g^2 v^2[(W^1)^2+(W^2)^2]/8 and the neutral quadratic form v^2(gW^3-g_YB)^2/8, whose exact diagonalization yields the stated gauge masses and Weinberg rotation.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: To seek an unconditional framework result, add retained-grade one-hop derivations closing the EW gauge group, Higgs carrier and hypercharge, neutral vacuum, covariant derivative, and normalization inputs, then rerun the exact symbolic verifier.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`
-
-**Note:** [docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md](docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)  |  **Descendants:** 887  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Inside the supplied standard Wilson plaquette action with Tr(T_a T_b)=delta_ab/2, the leading small-a coefficient matching gives beta g_bare^2=2 N_c; action-surface selection and any physical value of g_bare are excluded.
-
-Auditor's verdict_rationale:
-Issue: The Wilson action form, small-a plaquette convention, and canonical trace normalization are explicit supplied inputs, but no cited retained-grade or accepted-premise authority is provided for them. Why this blocks: The exact algebra verifies beta g_bare^2=2N_c conditionally, but the restricted authority chain cannot promote those inputs into framework premises. Repair target: Add a direct retained-grade authority deriving or registering the Wilson action and plaquette-normalization surface, then rerun this audit. Claim boundary until fixed: The coefficient-matching implication inside the supplied convention remains supported, while action-surface selection and any physical value of g_bare remain outside scope.
-
-Auditor-quoted load-bearing step:
-Expanding the plaquette gives 1-(1/N_c) Re Tr U_P = a^4 g_bare^2 F^a F^a/(4N_c)+higher order, so matching the unordered-plane continuum coefficient 1/2 yields beta g_bare^2=2N_c.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add and directly cite retained-grade authority for the supplied Wilson action, plaquette convention, and canonical trace normalization, then rerun the restricted audit.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`
-
-**Note:** [docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md](docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md)  |  **Descendants:** 874  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Audited the N_c=3 SU(3) Fierz coefficient 1/6, the one-link Haar tensor-contraction witness, the Dirac-channel checks, and the six-component H_unit overlap; identifying the Haar tensor with C_strong=1/9 remains conditional on an explicit singlet-projection normalization.
-
-Auditor's verdict_rationale:
-The SU(3) generator normalization and Fierz identity, Dirac-channel algebra, Haar tensor witness, and H_unit overlap are genuinely checked. However, the runner hard-codes C_strong = 1/N_c^2 after verifying only the 1/N_c Haar tensor and does not instantiate the relevant color-singlet projector, its normalization, or the required index contraction. The claimed strong-coupling singlet coefficient therefore remains conditional even though the narrower tensor identity is supported.
-
-Auditor-quoted load-bearing step:
-The leading one-link Haar contraction gives the corresponding strong-coupling color-singlet coefficient C_strong = 1/N_c^2.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add the explicitly normalized color-singlet projector and its complete index contraction to both the source note and runner, demonstrating how the Haar factor 1/N_c yields C_strong = 1/N_c^2.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07`
-
-**Note:** [docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md](docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md)  |  **Descendants:** 843  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: positive_theorem
-- load_bearing_step_class: A
-- claim_scope: For SU(3), all Wilson one-link character coefficients and the stated normalized eigenvalues are positive for beta > 0, while arbitrary all-weight sequences have the stated formal finite-character convolution action.
-
-Auditor's verdict_rationale:
-The positivity conclusion is mathematically plausible, but its decisive representation-theoretic occurrence is asserted rather than derived from the restricted packet. The runner hard-codes the consequence of that assertion and therefore does not independently test the contested multiplicity claim. The formal convolution portion is principally a coefficientwise definition supplemented by an unproved Schur/Peter-Weyl normalization rule.
-
-Auditor-quoted load-bearing step:
-For every dominant weight (p,q), the irrep V_(p,q) occurs in Sym^p(3) tensor Sym^q(3bar), hence in V^{tensor (p+q)}, as its Cartan highest-weight component.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add a self-contained SU(3) highest-weight-vector proof of the Cartan-component occurrence, justify termwise coefficient extraction, and make the runner verify tensor-product multiplicity rather than assuming witness_length(p,q)=p+q.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `higgs_mechanism_note`
-
-**Note:** [docs/HIGGS_MECHANISM_NOTE.md](docs/HIGGS_MECHANISM_NOTE.md)  |  **Descendants:** 835  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/HIGGS_MECHANISM_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Finite-dimensional global-minimum and radial-curvature algebra for the stated quartic potential on r >= 0 with lambda > 0, excluding any physical Higgs or framework-native scalar interpretation.
-
-Auditor's verdict_rationale:
-The runner genuinely differentiates, factorizes, substitutes, and checks finite numerical samples; it neither imports external comparators nor hard-codes a contested physical result. The scoped algebra is correct on its own terms. However, the quartic potential is an explicit supplied hypothesis with no cited retained-grade authority, so this is not class-(A) closure over independent retained-grade inputs and remains conditional under the rubric.
-
-Auditor-quoted load-bearing step:
-For m2 < 0, solving r(m2 + lambda r^2) = 0 gives v^2 = -m2/lambda, and substitution gives V(v) = -m2^2/(4 lambda) and V''(v) = -2m2 > 0.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: supply and cite a retained-grade theorem deriving the quartic potential from accepted framework premises if promotion beyond the formal conditional result is sought; the algebra itself needs no repair.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`
-
-**Note:** [docs/DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md](docs/DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md)  |  **Descendants:** 785  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: positive_theorem
-- load_bearing_step_class: A
-- claim_scope: The unique P_23-odd coefficient, the identity Im[(K_01)^2] = 2 c_even c_odd, the displayed U_Z3 1+2 zero-odd slice, and the note's leptogenesis interpretation were audited on the defined 3x3 Hermitian circulant family.
-
-Auditor's verdict_rationale:
-Issue: the residual-Z2 algebra is correct, but the packet supplies no authority deriving Im[(K_01)^2] as the relevant leptogenesis observable. Why this blocks: the ten runner checks validate matrix algebra and a chosen 1+2 example, not the physical bridge behind the claim that c_odd must be activated. Repair target: provide a retained one-hop theorem constructing the leptogenesis kernel from the right-Gram carrier and make the runner test that bridge independently. Claim boundary until fixed: c_odd is the unique odd coefficient and controls the displayed entrywise invariant, while physical activation and leptogenesis interpretation remain conditional.
-
-Auditor-quoted load-bearing step:
-The standard leptogenesis CP kernel on this family is Im[(K_01)^2] = 2 c_even c_odd, so c_odd is the CP-supporting slot that must be activated.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add a retained one-hop derivation mapping the relevant leptogenesis observable to Im[(K_01)^2] on this right-Gram carrier, and replace the runner's definitional cp_tensor bridge with an independent check.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02`
-
-**Note:** [docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md](docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md)  |  **Descendants:** 774  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Pure-gauge Wilson plaquette configurations already restricted to U_0=I on a finite even periodic lattice: the two-boundary P_+/P_-/P_mixed decomposition, reality and Θ-invariance of S_+ on Θ-fixed configurations, and reflection-Hermiticity of the explicitly symmetrized observable class.
-
-Auditor's verdict_rationale:
-The scoped decomposition and reflection identities are genuine class-A results, and the runner computes their finite SU(3) instances rather than merely printing expected numerical constants. However, complete temporal gauge U_0=I is treated as a general periodic-lattice gauge representative without addressing temporal holonomy, and F=f+conj(f∘Θ) depends on both reflected halves, so its advertised use as an OS positive-half test observable is not established. The note is therefore valid only on its explicitly restricted algebraic surface, not yet as the claimed load-bearing bridge to the full OS argument.
-
-Auditor-quoted load-bearing step:
-The disjoint reflection-related partition gives S_W(U) = S_+(U) + S_+(ΘU) + S_mixed(U), while Θ² = id makes F(U) := f(U) + conj(f(ΘU)) satisfy F(ΘU) = conj(F(U)).
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: either narrow the note explicitly to the trivial-temporal-holonomy U_0=I sector and remove the general gauge-orbit-representative language, or supply the residual Polyakov-link treatment; separately prove positive-half localization/admissibility for the observable consumed by the OS argument.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `pmns_oriented_cycle_channel_value_law_note`
-
-**Note:** [docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md](docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)  |  **Descendants:** 760  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: positive_theorem
-- load_bearing_step_class: A
-- claim_scope: For a supplied canonical 3x3 active block A, the runner verifies the projected-cycle basis identities and the coordinate extraction diag(A C^dagger); it does not derive a physical observable/readout map or select A or its coefficients from the framework premises.
-
-Auditor's verdict_rationale:
-The runner genuinely computes the projected matrix identities and coefficient extraction, but all ten checks are algebraic checks on locally constructed inputs. The response-profile check is also a round trip through a sector fixture constructed from the target active block, not an independent lower-level physical derivation. Calling these coordinates an axiom-native observable/value law therefore requires an unprovided carrier and readout bridge, although the narrower matrix identity is correct.
-
-Auditor-quoted load-bearing step:
-For any canonical active block A, the forward-cycle coefficients are c = diag(A C^dagger), reproducing A_12, A_23, and A_31.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: cite and verify a retained derivation of the hw=1 taste carrier and a Record-compatible physical observable/readout map, or narrow the note throughout to an algebraic coordinate-extraction lemma for a supplied 3x3 block.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`
-
-**Note:** [docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 744  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Given the supplied one-source flavored transport equations, common source and washout profiles, and canonical N_e active packet, the transport factor is the stated scalar column functional and selects the packet's middle column.
-
-Auditor's verdict_rationale:
-Issue: The functional follows only after the flavored transport equation and common profiles are supplied, while the runner constructs them using hard-coded model and phenomenological constants and a chosen canonical sample rather than a cited retained authority. Why this blocks: With no cited authorities, the restricted chain does not derive those physical inputs from the framework baseline; additionally, the finite q-grid check does not prove the claimed uniqueness of the channel maximum. Repair target: Supply retained one-hop derivations for the transport law, profiles, and canonical packet, and replace the grid-only uniqueness check with an analytic or certified numerical argument. Claim boundary until fixed: Conditional on the supplied equations, profiles, and packet, the integrating-factor functional and middle-column ordering are supported.
-
-Auditor-quoted load-bearing step:
-Because the common source profile and washout profile are fixed, the integrating-factor solution gives Y_alpha(∞) = Psi_K(P_alpha), hence F_K(P) = Σ_alpha Psi_K(P_alpha).
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add retained one-hop authorities deriving the one-source flavored transport law, common profiles, and canonical packet, then rerun with a certified uniqueness test.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
+_3 rows in this category._
 
 
 ### `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 728  |  **Class:** A
+**Note:** [docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 693  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md.
@@ -2901,7 +2495,7 @@ drive.
 
 ### `koide_cyclic_wilson_descendant_law_note_2026-04-18`
 
-**Note:** [docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md](docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)  |  **Descendants:** 715  |  **Class:** A
+**Note:** [docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md](../KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)  |  **Descendants:** 680  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md.
@@ -2928,67 +2522,9 @@ drive.
 ```
 
 
-### `area_law_native_car_semantics_tightening_note_2026-04-25`
-
-**Note:** [docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md](docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md)  |  **Descendants:** 106  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: positive_theorem
-- load_bearing_step_class: A
-- claim_scope: Audited the conditional algebraic equivalence between an irreducible local Cl_4(C)/Majorana edge algebra on the rank-four primitive block and the two-mode complex CAR carrier, plus the claim that rank four alone underdetermines the carrier semantics.
-
-Auditor's verdict_rationale:
-The runner performs genuine finite-dimensional algebra checks of CAR, Majorana/Clifford relations, full M_4(C) generation, parity, and rank-alone underdetermination. However, the load-bearing Clifford-Majorana response is an explicit premise rather than a consequence of retained substrate content, and the cited upstream authority is marked unaudited/audited_renaming with the same missing substrate-to-packet forcing step. Therefore the note is audit-clean only as a conditional algebraic tightening, not as an unconditional positive theorem deriving native CAR horizon physics.
-
-Auditor-quoted load-bearing step:
-Assume the rank-four active block is generated by four Hermitian odd Clifford-Majorana operators obeying {gamma_i,gamma_j}=2 delta_ij I_K; then c_1=(gamma_1+i gamma_2)/2 and c_2=(gamma_3+i gamma_4)/2 obey the two-mode CAR.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: supply an audit-clean theorem deriving invariant P_A preservation and induced Cl_4(C) generators from the retained substrate/coframe content, or narrow the claim title/status to the conditional algebraic equivalence only.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `area_law_primitive_car_edge_identification_theorem_note_2026-04-25`
-
-**Note:** [docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md](docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)  |  **Descendants:** 105  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: positive_theorem
-- load_bearing_step_class: A
-- claim_scope: Audited the conditional primitive-CAR carrier claim: assuming a rank-four minimal complex CAR edge block with one normal channel and the self-dual tangent-Laplacian response, the Widom coefficient equals the primitive trace, c_Widom=c_cell=1/4.
-
-Auditor's verdict_rationale:
-Issue: the runner verifies exact algebra and finite-grid half-zone checks after the primitive-CAR carrier, normal channel, and tangent-response selector are already assumed. Why this blocks: the cited authorities are unaudited or explicitly conditional, and the 2026-04-30 authority says the substrate action has not been shown to preserve P_A and induce the Cl_4/CAR carrier. Repair target: prove or retain a substrate-to-P_A/first-order boundary theorem that forces the primitive Clifford/CAR coframe response without adding it as a carrier premise. Claim boundary until fixed: the 1/4 result is valid as a conditional theorem inside the primitive-CAR edge axioms.
-
-Auditor-quoted load-bearing step:
-The self-dual tangent Laplacian sheet has Haar measure exactly 1/2, so the required normal mode plus the tangent-gated mode gives <N_x>=2+2*(1/2)=3 and c_Widom=3/12=1/4.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: derive and audit the primitive Clifford/CAR coframe response, including substrate-to-P_A forcing or an equivalent intrinsic active-block theorem, before re-auditing for clean closure.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
 ### `ac_reta_hclass_hunit_readout_derivation_obligation`
 
-**Note:** [docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md](docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)  |  **Descendants:** 98  |  **Class:** F
+**Note:** [docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md](../AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)  |  **Descendants:** 102  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md.
@@ -3007,238 +2543,6 @@ The physical charged-lepton readout is the fixed-locus density class h, identity
 
 Auditor's repair target (canonical class + action):
 missing_bridge_theorem: add and independently audit the carrier/source-action and density-to-angle normalization theorem, then cite it directly from this obligation before re-audit.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `lorentz_violation_derived_note`
-
-**Note:** [docs/LORENTZ_VIOLATION_DERIVED_NOTE.md](docs/LORENTZ_VIOLATION_DERIVED_NOTE.md)  |  **Descendants:** 47  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/LORENTZ_VIOLATION_DERIVED_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Conditional Taylor expansion, normalized cubic-harmonic decomposition, and directional anisotropy of the supplied nearest-neighbor cubic kinetic symbol.
-
-Auditor's verdict_rationale:
-Issue: the Taylor and normalized cubic-harmonic identities are mathematically consistent, but the kinetic action and carrier interpretation are supplied rather than derived; the note also says the runner constructs all 48 O_h elements although the included code contains no such group construction. Why this blocks: the computation verifies a selected model surface, not a consequence of the accepted framework premises, and part of the advertised runner coverage is absent. Repair target: add a retained theorem selecting the kinetic operator and carrier and add executable O_h order/invariance assertions. Claim boundary until fixed: the p_i^4 coefficient, normalized l=4 identity, and factor-of-three anisotropy remain valid conditional algebra for the explicitly supplied symbol.
-
-Auditor-quoted load-bearing step:
-Expanding the supplied symbol K_i = (4/a^2) sin^2(p_i a/2) gives K_i = p_i^2 - (a^2/12)p_i^4 + O(a^4p_i^6), and summing over spatial directions yields the stated cubic-anisotropic dispersion correction.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: derive or cite a retained theorem selecting the nearest-neighbor kinetic operator and relativistic carrier, then make the runner actually construct and test the 48-element O_h action.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `post_record_directed_certificate_examples_2026-06-06`
-
-**Note:** [docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md](docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md)  |  **Descendants:** 2  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: positive_theorem
-- load_bearing_step_class: A
-- claim_scope: Three finite directed-certificate examples under stipulated law, orientation, clock, and kernel data, including their exact expectations, probabilities, reversal-invariant count pushforwards, and accompanying row-bucket certificate.
-
-Auditor's verdict_rationale:
-Issue: the directed-certificate arithmetic is exact, but its physical bridge inputs are stipulated, and the note's 34-row certificate contradicts the completed 63-row result. Why this blocks: the packet establishes conditional finite examples, not an axiom-derived orientation or dynamics bridge, and one stated runner certificate is stale. Repair target: derive the required bridge data in a retained theorem and correct the source-note count to 63 before rerunning. Claim boundary until fixed: the three supplied-input examples remain valid, while the eleven firewall PASS lines merely test locally initialized false flags and provide no derivation.
-
-Auditor-quoted load-bearing step:
-Exact enumeration of three explicitly supplied finite laws under forward and reverse orientations yields orientation-sensitive directed statistics while leaving count pushforwards invariant.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add and retain an authority deriving the law/orientation/clock/kernel bridge inputs from accepted premises, wire it as a direct dependency, correct the stale 34-to-63 row count, and rerun the audit.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`
-
-**Note:** [docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md](docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: The one-loop SU(3) Lambda-parameter transition and finite multi-threshold inverse-coupling composition, conditional on coupling continuity at each abstract one-flavor threshold.
-
-Auditor's verdict_rationale:
-Issue: The runner sets x_below equal to x_above at every threshold, so it assumes rather than derives the load-bearing LO no-jump matching condition. Why this blocks: The Lambda transition and piecewise map are valid algebraic consequences, but the restricted packet provides no retained or accepted-premise authority for physical threshold continuity. Repair target: Supply and cite a retained derivation or explicitly approved-premise registration of alpha_s^hi(M) = alpha_s^lo(M). Claim boundary until fixed: Only the conditional one-loop algebraic kernel, not an unconditional heavy-threshold matching theorem or downstream alpha_s(M_Z), is supported.
-
-Auditor-quoted load-bearing step:
-Imposing x_hi(M) = x_lo(M) on the one-loop solutions yields Lambda_lo = M * (Lambda_hi / M) ** [b0(n_f_hi) / b0(n_f_lo)].
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: derive and cite the LO heavy-threshold no-jump condition, or register it explicitly as an approved premise, then rerun this restricted-packet audit.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16`
-
-**Note:** [docs/DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Whether, on the stated current branch, the sole axiom and native seed pair fail to determine a unique active five-real off-seed source and PMNS-assisted eta value.
-
-Auditor's verdict_rationale:
-Issue: the runner proves only that two hand-chosen arrays have equal means but different source coordinates and transport outputs. Why this blocks: several decisive conclusions are checked with literal True, while the transport chain imports chosen physical constants and a hard-coded canonical eta target, so it does not establish the claimed sole-axiom boundary. Repair target: derive the admissible active-source family from Cl(3) on Z^3 and exhibit two axiom-compatible points, or restrict the claim to the finite supplied-sample map. Claim boundary until fixed: the examples support algebraic seed-map nonuniqueness and differing downstream numerical outputs conditional on the imported model.
-
-Auditor-quoted load-bearing step:
-Two exact active microscopic points can share the same native seed pair while carrying different off-seed five-real source data.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add an explicit derivation from Cl(3) on Z^3 to an admissible active-source family containing two equal-seed, unequal-source points, then replace the literal-True conclusion checks with executable assertions.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`
-
-**Note:** [docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md](docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: open_gate
-- load_bearing_step_class: A
-- claim_scope: Conditional exact rational identities T1-T9 inside A_TOY=(A1,A2,A3,A4,A5), including the in-toy Q and delta admission-counting statements, with no retained-grade propagation.
-
-Auditor's verdict_rationale:
-Issue: The source note explicitly admits A1-A5, including the two-channel carrier, central Z label, endpoint algebra/section, and eta_APS=2/9. Why this blocks: the algebraic checks are correct under those assumptions, but no cited retained authority in the restricted packet derives the admissions. Repair target: provide a bridge theorem deriving or citing retained-grade support for A1-A5, or keep the row as a conditional toy certificate. Claim boundary until fixed: T1-T9 hold only as exact in-toy rational identities under the named admissions, with no retained Koide, delta, or no-go propagation.
-
-Auditor-quoted load-bearing step:
-Each identity has the strict form '(A_subset) entails (T_k)' and reduces, under that subset, to direct rational arithmetic in Q.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: derive or cite retained-grade support for admissions A1-A5; otherwise keep the row explicitly conditional at algebraic-checks tier.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `post_record_character_path_channel_weight_prototype_2026-06-06`
-
-**Note:** [docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md](docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Exact normalization and multiplicative composition of finite hand-supplied path, channel, and character weights, together with a read-only scan reporting 21 current character/path/channel ledger rows.
-
-Auditor's verdict_rationale:
-The Fraction-based normalization and path-product calculations are genuine class-A checks, not a first-principles framework computation. The carrier and weights are supplied inputs, while the firewall conclusions are hard-coded false flags and do not derive a physical measure or rule. The 10-versus-21 row-count mismatch is additional evidence that the source certificate is stale, although the bounded finite arithmetic remains valid.
-
-Auditor-quoted load-bearing step:
-A supplied finite carrier with nonnegative local weights of positive total can be normalized exactly, with path weights composing multiplicatively, to form a finite path/channel/character weight packet.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add a cited retained-grade bridge deriving the relevant carrier and local weights from Record, and reconcile every 10-row assertion with the runner's completed 21-row certificate before re-audit.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `post_record_persistent_record_production_bridge_prototype_2026-06-06`
-
-**Note:** [docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md](docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Finite supplied pre-record/post-record bridge prototype for the three persistent_record_production_overlap rows, including exact pushforward and overlap arithmetic, not a derivation of the production law or kernel.
-
-Auditor's verdict_rationale:
-Issue: the finite pushforward and overlap arithmetic are valid for the runner's supplied word law, update, persistence rule, and kernel, but those bridge inputs are assumed rather than derived from the axiom packet. Why this blocks: with no cited retained authority or primitive supplying those inputs, the claim cannot close as a production-record bridge beyond the supplied finite witness. Repair target: a retained theorem deriving or explicitly admitting the record-writing law, persistence/readout rule, and overlap-kernel/production-time bridge. Claim boundary until fixed: the safe result is an exact finite supplied-bridge prototype with law-scoped expected overlap 169/320 and no internal probability field in realized post-record tuples.
-
-Auditor-quoted load-bearing step:
-supplied pre-record word law + supplied record-writing update + supplied persistence rule + supplied overlap kernel on post-record states + exact pushforward/enumeration => law-scoped post-record distribution and overlap certificate
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: derive or cite retained record-writing law, persistence rule, and overlap-kernel/production-time bridge, then rerun the finite pushforward certificate.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21`
-
-**Note:** [docs/QUARK_ROUTE2_DOUBLE_LOCAL_PROJECTOR_NORMALIZATION_BRIDGE_CONDITIONAL_NOTE_2026-06-21.md](docs/QUARK_ROUTE2_DOUBLE_LOCAL_PROJECTOR_NORMALIZATION_BRIDGE_CONDITIONAL_NOTE_2026-06-21.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/QUARK_ROUTE2_DOUBLE_LOCAL_PROJECTOR_NORMALIZATION_BRIDGE_CONDITIONAL_NOTE_2026-06-21.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Conditional bounded bridge: if q_X is supplied as proportional to w_X^-2, then lambda=9/4, q_E=15/8, rho_E=21/4, and nearby monomial laws fail.
-
-Auditor's verdict_rationale:
-Issue: the double reciprocal local projector-normalization law q_X proportional to w_X^-2 is not derived from packet inputs; it is the named missing primitive. Why this blocks: the endpoint rho_E=21/4 follows only after that normalization bridge is admitted. Repair target: derive the double-local normalization from Route-2 source/tensor/readout structure, with a runner that computes the bridge rather than selecting p=-2 against lambda=9/4. Claim boundary until fixed: the note cleanly isolates the conditional algebra and falsifies nearby monomial laws, but it is not a current-surface derivation.
-
-Auditor-quoted load-bearing step:
-If a future proof derives the double-local projector normalization, then lambda=(w_E/w_T1)^-2=9/4 and the endpoint chain closes.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add or prove a retained bridge theorem deriving q_X proportional to w_X^-2 from named Route-2 structure, then re-audit this conditional endpoint bridge.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.

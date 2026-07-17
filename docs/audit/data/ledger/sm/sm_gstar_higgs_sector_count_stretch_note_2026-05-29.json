@@ -26,9 +26,7 @@
     "sm_relativistic_dof_count_import_note_2026-05-17",
     "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
     "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18",
-    "yt_ward_identity_derivation_theorem",
-    "charged_lepton_two_higgs_canonical_reduction_note",
-    "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+    "yt_ward_identity_derivation_theorem"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
@@ -41,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "56977dd387d2248788700752eea759e76f4138d77d698ce7d8061dc9ec7d36f5",
+  "note_hash": "44a7ff38cfc671d402252faa07232cbf96ba581c9eb343942abf4bb1e2235d96",
   "note_path": "docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -444,7 +442,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

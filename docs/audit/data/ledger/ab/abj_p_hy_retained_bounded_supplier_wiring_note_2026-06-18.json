@@ -22,23 +22,19 @@
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "hypercharge_identification_note",
-    "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
-    "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
-  ],
+  "deps": [],
   "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.907,
+  "load_bearing_score": 10.878,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "556f05f47bb5d3f26238745824a45ea39b5ba0f2cea545ea45fc0c4a95425ef8",
+  "note_hash": "04aeaa32c949756b64da09d62bdca0740b5b6b525310aff462bf7d0283a77c89",
   "note_path": "docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -224,7 +220,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
-  "title": "ABJ P-HY Retained-Bounded Supplier Wiring",
-  "transitive_descendants": 1357,
+  "title": "ABJ Left-Handed Formal Trace Arithmetic Boundary",
+  "transitive_descendants": 1330,
   "verdict_rationale": null
 }

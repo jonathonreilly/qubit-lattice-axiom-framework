@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.307,
+  "load_bearing_score": 4.407,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/frontier_flavor_per_sector_orientation_gauge_cp_relative.py",
   "title": "Per-Sector Flavor Orientations Are Gauge; the Physical CP Content Is the Inter-Sector Jarlskog",
-  "transitive_descendants": 13,
+  "transitive_descendants": 14,
   "verdict_rationale": null
 }

@@ -63,7 +63,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 12.0,
+  "load_bearing_score": 11.951,
   "load_bearing_step": "Direct substitution gives \u03b2(g/c,N)=2N/(g/c)^2=2Nc^2/g^2=c^2\u03b2(g,N).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "unknown",
@@ -84,6 +84,6 @@
   },
   "runner_path": "scripts/frontier_beta_gbare_rescaling_abstract_identity_narrow.py",
   "title": "\u03b2\u2013g_bare Rescaling Abstract Identity Narrow Theorem",
-  "transitive_descendants": 1023,
+  "transitive_descendants": 989,
   "verdict_rationale": "The load-bearing step is a genuine class A algebraic identity over the stated variables, with no cited upstream authority or physical import needed. The runner source actually computes the symbolic residuals with sympy and exact rational checks rather than merely printing expected results. The note\u2019s Wilson, Cl(3), SU(Nc), and g_bare language is explicitly non-load-bearing for this narrow claim."
 }

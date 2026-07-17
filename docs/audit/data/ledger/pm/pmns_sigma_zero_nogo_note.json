@@ -56,7 +56,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "84b4394b49b6b1771ba121392d3210046d8c8c770e2b1a42919919da4d0c6829",
+  "note_hash": "bb0d9a3053c99c9e527bb4bf8aacd0b6e8b0503282f91e7507477239e9771a42",
   "note_path": "docs/PMNS_SIGMA_ZERO_NOGO_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

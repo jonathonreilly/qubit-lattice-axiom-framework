@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem (per-step accounting of a sharpened obstruction)",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "high",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -44,13 +44,13 @@
     "c_iso_derived_theorem_note_2026-05-07_w3",
     "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08"
   ],
-  "direct_in_degree": 5,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.5,
+  "load_bearing_score": 4.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -71,6 +71,6 @@
   },
   "runner_path": "scripts/cl3_lattice_physical_matching_2026_05_10_match.py",
   "title": "Lattice-Curvature \u2192 Physical (m_H/v)\u00b2 Matching Theorem \u2014 Bounded Per-Step Obstruction Note",
-  "transitive_descendants": 7,
+  "transitive_descendants": 5,
   "verdict_rationale": null
 }

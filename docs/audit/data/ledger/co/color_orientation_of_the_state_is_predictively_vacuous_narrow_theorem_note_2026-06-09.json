@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.7,
+  "load_bearing_score": 5.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/frontier_color_orientation_predictive_equivalence_2026_06_09.py",
   "title": "Global-Color Orientation Of The Matter State Is Predictively Vacuous",
-  "transitive_descendants": 12,
+  "transitive_descendants": 13,
   "verdict_rationale": null
 }

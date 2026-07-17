@@ -25,8 +25,7 @@
   "deps": [
     "flavor_logdet_generator_three_factor_provenance_2026-06-04",
     "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04",
-    "yt_source_action_support_packet_note_2026-05-22",
-    "charged_lepton_two_higgs_canonical_reduction_note"
+    "yt_source_action_support_packet_note_2026-05-22"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
@@ -39,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "7f61d6639bcb771ca5cebba211f86225457a8498fadbfc109263a5ccec197d35",
+  "note_hash": "253c21e717de977dbeee65b21b7dc399d21bf71c05a8e7ba38bbd2163acf651d",
   "note_path": "docs/FLAVOR_LOGDET_FACTOR_4A_SOURCE_ACTION_IDENTIFICATION_NARROW_COMPANION_NOTE_2026-06-04.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

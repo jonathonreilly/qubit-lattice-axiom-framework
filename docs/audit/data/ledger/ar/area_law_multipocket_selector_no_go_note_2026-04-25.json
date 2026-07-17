@@ -1,24 +1,37 @@
 {
-  "audit_date": null,
+  "audit_date": "2026-05-05T23:06:03.797096+00:00",
   "audit_invocation_history": [],
   "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_effective_status": {
+      "area_law_primitive_car_edge_identification_theorem_note_2026-04-25": "unaudited",
+      "area_law_primitive_parity_gate_carrier_theorem_note_2026-04-25": "unaudited"
+    },
+    "deps": [
+      "area_law_primitive_car_edge_identification_theorem_note_2026-04-25",
+      "area_law_primitive_parity_gate_carrier_theorem_note_2026-04-25"
+    ],
+    "load_bearing_score": 13.778,
+    "runner_hash": "68f7e6f9d4bac383c24b89c57429458a995d280c4ad2d56c73037a024868c872",
+    "transitive_descendants": 438
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-area_law_multipocket_sel-018",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
   "auditor_model": null,
   "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Within the restricted packet, the no-go follows algebraically from c_Widom=<N_x>/12, even scalar interval crossing counts, and the parametrized multipocket/sector-weight averages. The note does not prove an absolute impossibility of future selector derivations, only the narrower selector-free no-go it states.",
   "claim_id": "area_law_multipocket_selector_no_go_note_2026-04-25",
-  "claim_scope": null,
+  "claim_scope": "Audited the restricted claim that multipocket Widom carriers can hit c_Widom=1/4 only after imposing an additional transverse-measure or sector-weight selector, and that the primitive 4/16 trace alone is not that selector.",
   "claim_type": "no_go",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-05-05T23:06:03.797096+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,20 +40,25 @@
     "area_law_primitive_car_edge_identification_theorem_note_2026-04-25"
   ],
   "direct_in_degree": 9,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.522,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
+  "load_bearing_score": 10.566,
+  "load_bearing_step": "The minimal multipocket calibration gives c_Widom(mu)=(1+mu)/6, so c_Widom=1/4 requires the extra selector mu=1/2 rather than following from multipockets alone.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": null,
+  "no_go_discipline": null,
   "note_hash": "0d7d462312cfbc505098e78938faaa1b886726cda12db899a6abcc2f1baea0c9",
   "note_path": "docs/AREA_LAW_MULTIPOCKET_SELECTOR_NO_GO_NOTE_2026-04-25.md",
-  "notes_for_re_audit_if_any": null,
-  "open_dependency_paths": [],
+  "notes_for_re_audit_if_any": "dependency_not_retained: audit or mark non-load-bearing the two cited conditional carrier notes, then re-audit whether the no-go can stand as a self-contained selector-free algebraic claim.",
+  "open_dependency_paths": [
+    "docs/AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md",
+    "docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md"
+  ],
   "previous_audits": [
     {
       "archived_at": "2026-05-05T23:07:58.855897+00:00",
@@ -154,17 +172,24 @@
       "invalidation_reason": "dep_weakened:area_law_primitive_car_edge_identification_theorem_note_2026-04-25:unaudited->audited_conditional",
       "restoration_policy": "restore_overaggressive_invalidation.v2",
       "restored_at": "2026-07-13T00:45:14.504516+00:00"
+    },
+    {
+      "archived_at": "2026-07-13T00:45:15.943024+00:00",
+      "archived_audit_sha256": "0efc73934dbf78c1d7b5c9fca39cce43e29ccf9225fdfce4f9b714ad53a5efdc",
+      "invalidation_reason": "dep_weakened:area_law_primitive_car_edge_identification_theorem_note_2026-04-25:unaudited->audited_conditional",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-07-17T07:57:07.435742+00:00"
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 22,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 22
   },
   "runner_path": "scripts/frontier_area_law_multipocket_selector_no_go.py",
   "title": "Area-Law Multipocket Selector No-Go Note",
-  "transitive_descendants": 64,
-  "verdict_rationale": null
+  "transitive_descendants": 66,
+  "verdict_rationale": "The load-bearing calculation is a straightforward class A algebraic closure for the selector-dependence claim, and the runner source actually computes the advertised averages, perturbations, and weighted-sector checks rather than merely printing constants. However, the restricted packet includes cited authorities marked unaudited and explicitly conditional/support, and the source note itself frames later positive carrier notes as supplying an additional conditional selector premise. Under the rubric, retained clean status does not propagate through those open cited dependencies, even though they are not needed to validate the local algebraic no-go."
 }

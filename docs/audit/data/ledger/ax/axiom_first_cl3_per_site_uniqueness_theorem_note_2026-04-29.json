@@ -32,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 20.232,
+  "load_bearing_score": 20.218,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "49ffa714c8d8ecc8575864ccba7b8a755ccabe24d7aa221c2c4c58bfbde256a0",
+  "note_hash": "46c7ad383b079227c30fc12ba424a45852c3525b2d8f4975d08c8aa8efd95fc0",
   "note_path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -646,7 +646,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -656,6 +656,6 @@
   },
   "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
   "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module",
-  "transitive_descendants": 1700,
+  "transitive_descendants": 1683,
   "verdict_rationale": null
 }

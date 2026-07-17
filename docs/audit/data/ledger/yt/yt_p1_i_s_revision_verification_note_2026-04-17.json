@@ -23,8 +23,8 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
+    "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16",
     "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
-    "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
     "yt_ward_identity_derivation_theorem"
   ],
   "direct_in_degree": 2,
@@ -35,12 +35,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.76,
+  "load_bearing_score": 10.7,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "67b8c60b7d92ff391605471c00e67f11ee3f3d7958aa0ac5904d441159139340",
+  "note_hash": "aa88e81105e13fb03cb183688b80ee020deb27156f8be7ac1de562c5ae4ab15e",
   "note_path": "docs/YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -120,6 +120,6 @@
   },
   "runner_path": "scripts/frontier_yt_p1_i_s_revision_verification.py",
   "title": "P1 I_S Revision Verification Note (Critical Review of the 3x Upward Revision Claim)",
-  "transitive_descendants": 866,
+  "transitive_descendants": 831,
   "verdict_rationale": null
 }

@@ -25,8 +25,7 @@
   "deps": [
     "yt_p1_delta_r_fermion_regulator_dependence_and_scalar_ntaste_resolution_note_2026-06-16",
     "yt_ward_identity_derivation_theorem",
-    "plaquette_self_consistency_note",
-    "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+    "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16",
     "yt_p1_i_s_lattice_pt_citation_note_2026-04-17"
   ],
   "direct_in_degree": 7,
@@ -37,12 +36,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.045,
+  "load_bearing_score": 12.976,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8fbef5f4bec8cd95f8827e64708f024a2293ab6a15e688a522511f28e5bb233d",
+  "note_hash": "63f3a3a155f22e5b163a1988a482d709ce920ba7be51c016a71bea3f61f9782c",
   "note_path": "docs/YT_P1_DELTA_R_MASTER_ASSEMBLY_THEOREM_NOTE_2026-04-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -188,6 +187,6 @@
   },
   "runner_path": "scripts/frontier_yt_p1_delta_r_master_assembly.py",
   "title": "P1 \u0394_R Master Assembly Theorem Note (Three-Channel Ratio Correction Roll-Up)",
-  "transitive_descendants": 746,
+  "transitive_descendants": 711,
   "verdict_rationale": null
 }

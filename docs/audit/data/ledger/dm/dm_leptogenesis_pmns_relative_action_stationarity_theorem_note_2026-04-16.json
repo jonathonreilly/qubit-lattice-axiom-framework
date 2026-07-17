@@ -39,12 +39,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.48,
+  "load_bearing_score": 11.407,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "776d5423579af9386090ae17e464196ee7e686f31439d4e90ab4cce7a71be4fe",
+  "note_hash": "eabf386f4da021630b68921989e9486c71402a750b5da3355f171da699cca635",
   "note_path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -355,8 +355,8 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py",
-  "title": "DM Leptogenesis PMNS Relative-Action Stationarity Theorem",
-  "transitive_descendants": 713,
+  "title": "DM Leptogenesis PMNS Relative-Action Identity and Stationarity Diagnostic",
+  "transitive_descendants": 678,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

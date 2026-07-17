@@ -43,12 +43,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.966,
+  "load_bearing_score": 10.892,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f117ee3d8baf5df62d0d93ad9f2f728a0156b67a8eb41f835211e9fce8e4ab0f",
+  "note_hash": "5fae749c808148c25c5ec2f3a5b3b50a5f9fe8caa9b29238903a2a314aed495a",
   "note_path": "docs/KOIDE_A1_PROBE_Z2_C3_PAIRING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe7.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -64,6 +64,6 @@
   },
   "runner_path": "scripts/cl3_koide_a1_probe_z2_c3_pairing_2026_05_08_probe7.py",
   "title": "Koide A1 Probe 7 \u2014 Retained Z_2 \u00d7 C_3 Pairing Bounded Obstruction",
-  "transitive_descendants": 706,
+  "transitive_descendants": 671,
   "verdict_rationale": null
 }

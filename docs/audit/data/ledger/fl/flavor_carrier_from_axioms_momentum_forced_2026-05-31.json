@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "open_gate / conditional integration map",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "critical",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.566,
+  "load_bearing_score": 7.833,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -555,6 +555,6 @@
   },
   "runner_path": "scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py",
   "title": "Flavor carrier from framework baseline up: the momentum-factor carrier TYPE is FORCED; the hw=1 triplet LOCUS reduces to the one chiral operator-class import (the framework's recurring chirality gate); r=1/2 stays a separate input",
-  "transitive_descendants": 757,
+  "transitive_descendants": 113,
   "verdict_rationale": null
 }

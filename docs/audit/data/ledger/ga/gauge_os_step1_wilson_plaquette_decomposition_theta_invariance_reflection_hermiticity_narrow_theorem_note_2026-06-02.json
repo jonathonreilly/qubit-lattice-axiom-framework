@@ -1,65 +1,44 @@
 {
-  "audit_date": "2026-07-15T21:06:06.105980+00:00",
-  "audit_invocation_history": [
-    "56b1c80be2ba42d6b1e12e55528fc4b8"
-  ],
-  "audit_invocation_id": "56b1c80be2ba42d6b1e12e55528fc4b8",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors."
-    },
-    "dep_claim_type": {
-      "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained"
-    },
-    "deps": [
-      "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
-    ],
-    "load_bearing_score": 11.598,
-    "runner_hash": "07034b2204117dd0dabcc26225a3fa55985c85beb54214071b75b2d40a5f730f",
-    "transitive_descendants": 774
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-gauge_os_step1_wilson_pl-060",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "On the explicitly restricted U_0=I configuration space, the partition, \u0398-fixed invariance, and symmetrization identity follow algebraically. This closure does not establish that every periodic gauge orbit admits U_0=I or that the symmetrized observable belongs to the positive-half-localized OS test algebra.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
-  "claim_scope": "Pure-gauge Wilson plaquette configurations already restricted to U_0=I on a finite even periodic lattice: the two-boundary P_+/P_-/P_mixed decomposition, reality and \u0398-invariance of S_+ on \u0398-fixed configurations, and reflection-Hermiticity of the explicitly symmetrized observable class.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-15T21:06:06.105980+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
   ],
-  "direct_in_degree": 4,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 11.598,
-  "load_bearing_step": "The disjoint reflection-related partition gives S_W(U) = S_+(U) + S_+(\u0398U) + S_mixed(U), while \u0398\u00b2 = id makes F(U) := f(U) + conj(f(\u0398U)) satisfy F(\u0398U) = conj(F(U)).",
-  "load_bearing_step_class": "A",
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.092,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
-  "note_hash": "7d47bf0043f133145cdfb40853175905aae3b7af2dc0b470a462e18decd97045",
+  "note_hash": "132a5dba055101dab8bac3c253b83e0dc55a0d65886ccdaf0585e567aeed5694",
   "note_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
-  "notes_for_re_audit_if_any": "missing_bridge_theorem: either narrow the note explicitly to the trivial-temporal-holonomy U_0=I sector and remove the general gauge-orbit-representative language, or supply the residual Polyakov-link treatment; separately prove positive-half localization/admissibility for the observable consumed by the OS argument.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1408,19 +1387,77 @@
         "total_pass": 0
       },
       "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-17T07:50:56.884586+00:00",
+      "archived_for_note_hash": "7d47bf0043f133145cdfb40853175905aae3b7af2dc0b470a462e18decd97045",
+      "audit_date": "2026-07-15T21:06:06.105980+00:00",
+      "audit_invocation_history": [
+        "56b1c80be2ba42d6b1e12e55528fc4b8"
+      ],
+      "audit_invocation_id": "56b1c80be2ba42d6b1e12e55528fc4b8",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 11.598,
+        "runner_hash": "07034b2204117dd0dabcc26225a3fa55985c85beb54214071b75b2d40a5f730f",
+        "transitive_descendants": 774
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-gauge_os_step1_wilson_pl-060",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "On the explicitly restricted U_0=I configuration space, the partition, \u0398-fixed invariance, and symmetrization identity follow algebraically. This closure does not establish that every periodic gauge orbit admits U_0=I or that the symmetrized observable belongs to the positive-half-localized OS test algebra.",
+      "claim_scope": "Pure-gauge Wilson plaquette configurations already restricted to U_0=I on a finite even periodic lattice: the two-boundary P_+/P_-/P_mixed decomposition, reality and \u0398-invariance of S_+ on \u0398-fixed configurations, and reflection-Hermiticity of the explicitly symmetrized observable class.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T21:06:06.105980+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The disjoint reflection-related partition gives S_W(U) = S_+(U) + S_+(\u0398U) + S_mixed(U), while \u0398\u00b2 = id makes F(U) := f(U) + conj(f(\u0398U)) satisfy F(\u0398U) = conj(F(U)).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: either narrow the note explicitly to the trivial-temporal-holonomy U_0=I sector and remove the general gauge-orbit-representative language, or supply the residual Polyakov-link treatment; separately prove positive-half localization/admissibility for the observable consumed by the OS argument.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 29,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The scoped decomposition and reflection identities are genuine class-A results, and the runner computes their finite SU(3) instances rather than merely printing expected numerical constants. However, complete temporal gauge U_0=I is treated as a general periodic-lattice gauge representative without addressing temporal holonomy, and F=f+conj(f\u2218\u0398) depends on both reflected halves, so its advertised use as an OS positive-half test observable is not established. The note is therefore valid only on its explicitly restricted algebraic surface, not yet as the claimed load-bearing bridge to the full OS argument."
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 29,
-    "B": 4,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 33
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py",
-  "title": "Gauge OS Step 1 \u2014 Wilson Plaquette Action Decomposition, \u0398-Invariance, and Reflection-Hermiticity (Narrow Companion Theorem)",
-  "transitive_descendants": 774,
-  "verdict_rationale": "The scoped decomposition and reflection identities are genuine class-A results, and the runner computes their finite SU(3) instances rather than merely printing expected numerical constants. However, complete temporal gauge U_0=I is treated as a general periodic-lattice gauge representative without addressing temporal holonomy, and F=f+conj(f\u2218\u0398) depends on both reflected halves, so its advertised use as an OS positive-half test observable is not established. The note is therefore valid only on its explicitly restricted algebraic surface, not yet as the claimed load-bearing bridge to the full OS argument."
+  "title": "Gauge OS Step 1 \u2014 Wilson Plaquette Decomposition and Symmetrized Reflection-Hermiticity in the Trivial-Holonomy `U_0=I` Sector (Narrow Theorem)",
+  "transitive_descendants": 771,
+  "verdict_rationale": null
 }

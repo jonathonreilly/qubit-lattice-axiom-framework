@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem \u2014 conditional-support assembly over exact finite subclaims",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "critical",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -34,12 +34,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.486,
+  "load_bearing_score": 8.755,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "613c8132adbfacc300ea16e242eb7aeed3df8dd080524370a2a8d064761c3831",
+  "note_hash": "52eca4b5068efe3752be29cce30b4e8544ae8273ada950556f0f92a52c6bcf03",
   "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -642,7 +642,7 @@
   },
   "runner_path": "scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py",
   "title": "L\u00fcders Rule from Compositional Bayesian Consistency",
-  "transitive_descendants": 716,
+  "transitive_descendants": 53,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

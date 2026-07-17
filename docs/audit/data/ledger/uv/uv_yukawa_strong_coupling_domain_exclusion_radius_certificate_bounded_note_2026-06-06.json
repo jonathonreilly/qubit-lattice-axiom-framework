@@ -40,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "b5260745336c6525ab9c974561a7320de5ba287f7ce1bcd216dfb77b1a6f75e4",
+  "note_hash": "558a85d807c67d22a150b2be1d6517feabb49d141f3933438149ef85f2108df7",
   "note_path": "docs/UV_YUKAWA_STRONG_COUPLING_DOMAIN_EXCLUSION_RADIUS_CERTIFICATE_BOUNDED_NOTE_2026-06-06.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -55,7 +55,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_uv_yukawa_sc_exclusion_certificate_2026_06_06.py",
-  "title": "UV Gauge-to-Yukawa Coefficient Selection: Strong-Coupling Domain Exclusion at beta=6",
+  "title": "UV Gauge-to-Yukawa Coefficient Comparison: Plaquette-Series Radius Evidence Does Not Select an Expansion at beta=6",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

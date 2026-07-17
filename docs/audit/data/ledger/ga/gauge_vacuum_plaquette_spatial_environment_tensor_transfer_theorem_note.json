@@ -26,13 +26,13 @@
     "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
     "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
   ],
-  "direct_in_degree": 35,
+  "direct_in_degree": 32,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 27.221,
+  "load_bearing_score": 25.658,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -449,6 +449,6 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
   "title": "Gauge-Vacuum Plaquette Spatial Environment Tensor-Transfer Bounded Packet",
-  "transitive_descendants": 843,
+  "transitive_descendants": 807,
   "verdict_rationale": null
 }

@@ -24,7 +24,6 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "hierarchy_matsubara_decomposition_note",
-    "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
     "hierarchy_spatial_bc_and_u0_scaling_note",
     "staggered_dirac_realization_gate_note_2026-05-03",
     "hierarchy_bosonic_bilinear_selector_note",
@@ -43,7 +42,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "fd2b1fc2fa666ee149636e62b0ecd81a1043aceeb2aec39cce8ce5b6884a01e4",
+  "note_hash": "5f41bc32d2eeee86971bee6b5f03b2dc03168bcbeb1a3f3b8a6f346df3ab99b6",
   "note_path": "docs/HIERARCHY_LT4_PHYSICAL_SELECTION_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -24,7 +24,6 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
-    "hypercharge_identification_note",
     "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
     "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
     "abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18",
@@ -40,12 +39,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.406,
+  "load_bearing_score": 12.377,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "08851fa1e1efdbdae26433efea1f3a5e465e90109e0c611721f14e43d4525a6f",
+  "note_hash": "cc8e02256b5161382b7e0472e70c5f74f8de4ce8df6138b2c4d6704fd55b0295",
   "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -195,7 +194,7 @@
   },
   "runner_path": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py",
   "title": "Anomaly-Forces-Time ABJ-Inconsistency Accepted-Premise Bridge",
-  "transitive_descendants": 1356,
+  "transitive_descendants": 1329,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

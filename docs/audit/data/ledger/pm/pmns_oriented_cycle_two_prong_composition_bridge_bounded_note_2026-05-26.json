@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "227ce63592f31e67c5960b0c40e554a7a6a63633db78b9035c3e2d85ddc69c7d",
+  "note_hash": "7e28458fcdace150587c43348c57a2b5e7840f3f1f50a925b5293cd7a1853672",
   "note_path": "docs/PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -226,7 +226,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

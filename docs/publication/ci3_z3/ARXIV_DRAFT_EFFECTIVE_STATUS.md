@@ -8,6 +8,8 @@
 
 **Retained-grade values:** `retained`, `retained_bounded`, `retained_no_go`. Anything else means the audit lane has NOT confirmed the claim, regardless of the author-side status text in the row.
 
+**Redaction legend:** every row marked `AUDIT-NONRETAINED ROW` (a row citing any non-retained authority, or citing no linked authority at all — the check fails closed) has author-side status words replaced by the token `(unratified-source-label)` so it cannot be read or scraped as retained prose. Each `[audit:...]` badge gives the ledger-derived status of its adjacent linked authority; the absence of a badge is never retention.
+
 ---
 
 ## Current audit-derived manuscript gateway

@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "dd868fa6b7294ec68298e349a82542c7b8bde495122637fe08ef19c765f495be",
+  "note_hash": "4adf2bb55fe4f6f2e6286ccfe585ada40f05c927ac3e602bff498a222e561c77",
   "note_path": "docs/BINARY_OCTAHEDRAL_DISCRETE_SPINOR_SIGN_NARROW_THEOREM_NOTE_2026-05-28.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -106,7 +106,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

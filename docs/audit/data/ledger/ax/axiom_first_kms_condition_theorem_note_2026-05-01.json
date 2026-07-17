@@ -35,12 +35,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.466,
+  "load_bearing_score": 13.392,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "7063970d98e78c6584f49133a4bd11f8a5e2cb09539fdcf0fcf857ea15190f87",
+  "note_hash": "a8d1c28248f5a33c8e7af91a2e30fe9b4af7e33d067ae83190d8074bc0b45c7c",
   "note_path": "docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -438,7 +438,7 @@
   },
   "runner_path": "scripts/axiom_first_kms_condition_check.py",
   "title": "Axiom-First KMS Condition for the Reconstructed Gibbs State",
-  "transitive_descendants": 706,
+  "transitive_descendants": 671,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

@@ -32,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.607,
+  "load_bearing_score": 13.563,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "af316fe69239328a5692baa30a9b1cb505eef5964546134c2acdb8793f3557d6",
+  "note_hash": "1961b4f77cd2859a1d9b63139a32b0339808815834535973a54ccb06d8b9889f",
   "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -621,7 +621,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -631,6 +631,6 @@
   },
   "runner_path": "scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py",
   "title": "Observable-Principle T1-d Determinant-Readout Independence No-Go",
-  "transitive_descendants": 1102,
+  "transitive_descendants": 1069,
   "verdict_rationale": null
 }

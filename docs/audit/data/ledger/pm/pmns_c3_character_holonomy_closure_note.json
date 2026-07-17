@@ -38,12 +38,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.557,
+  "load_bearing_score": 11.488,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "2659e2a6dd4d916edd50e1ddf7e7d3402bc6e7e37cef580ab7da0b07eb96be22",
+  "note_hash": "38d5ae81b1c01b702e5c8519e6c99fc352fc0787fab89c308ddf9b9a0a940c1a",
   "note_path": "docs/PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -198,7 +198,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -208,6 +208,6 @@
   },
   "runner_path": "scripts/frontier_pmns_c3_character_holonomy_closure.py",
   "title": "PMNS `C3` Character Holonomy Closure",
-  "transitive_descendants": 752,
+  "transitive_descendants": 717,
   "verdict_rationale": null
 }

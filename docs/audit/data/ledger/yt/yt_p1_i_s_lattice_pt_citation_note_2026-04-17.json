@@ -29,8 +29,7 @@
     "plaquette_self_consistency_note",
     "yt_p1_shared_fierz_no_go_sub_theorem_note_2026-04-17",
     "yt_p1_color_factor_retention_note_2026-04-17",
-    "yt_ward_identity_derivation_theorem",
-    "uv_gauge_to_yukawa_bridge_sc_vs_pert_note"
+    "yt_ward_identity_derivation_theorem"
   ],
   "direct_in_degree": 6,
   "effective_status": "unaudited",
@@ -40,12 +39,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.767,
+  "load_bearing_score": 12.707,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "90b182fb457a5550ecfeec4d1730e733708b69d965371d74ee5c59f4b1382e6c",
+  "note_hash": "acad7ed60563d0eb5137d3d92557b7a9a2601c5e62db9e6f3b07b27651b2156a",
   "note_path": "docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -470,7 +469,7 @@
   },
   "runner_path": "scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py",
   "title": "P1 I_S Lattice-PT Citation and Bound Note (Composite H_unit Scalar-Bilinear Matching)",
-  "transitive_descendants": 870,
+  "transitive_descendants": 835,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

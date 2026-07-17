@@ -24,21 +24,20 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-    "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
-    "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
+    "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
   ],
-  "direct_in_degree": 23,
+  "direct_in_degree": 21,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 21.915,
+  "load_bearing_score": 20.447,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "16aa1e0bda291fee9840f15aa9ed2f93c3b5ef6240970e7a174d1e797caa220d",
+  "note_hash": "942b53aba1d79a9e98e98f7a96001d287058a2672c21f94ccd473fc63e0d3a28",
   "note_path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -661,6 +660,6 @@
   },
   "runner_path": "scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py",
   "title": "Name-Free U(1) Two-Block Algebra",
-  "transitive_descendants": 1364,
+  "transitive_descendants": 986,
   "verdict_rationale": null
 }

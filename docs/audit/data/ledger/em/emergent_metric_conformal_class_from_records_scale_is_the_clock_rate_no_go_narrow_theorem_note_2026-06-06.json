@@ -14,9 +14,9 @@
   "chain_closure_explanation": null,
   "claim_id": "emergent_metric_conformal_class_from_records_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06",
   "claim_scope": null,
-  "claim_type": "bounded_theorem",
-  "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem (conditional conformal-rigidity assembly + retained conformal-factor boundary)",
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "critical",
@@ -24,13 +24,7 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "record_history_order_time_rate_firewall_2026-06-05",
-    "post_record_clock_rate_interface_2026-06-06",
-    "record_clock_rate_normalization_gate_2026-06-06",
-    "lattice_nn_light_cone_note",
-    "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
-    "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06",
-    "lorentz_boost_covariance_3plus1d_theorem_note",
-    "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07"
+    "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06"
   ],
   "direct_in_degree": 5,
   "effective_status": "unaudited",
@@ -38,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.966,
+  "load_bearing_score": 11.968,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5ac4a240edc0a639065e6a1a0adeeaef7ff2fcac982c30fbceb8261e0100a603",
+  "note_hash": "7e33cbd4c501a0b37ad3150e8705657c295b464e0a76288114dfb9ba6e067722",
   "note_path": "docs/EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -115,7 +109,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/emergent_metric_conformal_class_from_records_runner.py",
-  "title": "Emergent Lorentzian Metric: Conditional Conformal-Class Assembly and Clock-Rate Boundary",
-  "transitive_descendants": 706,
+  "title": "Emergent Lorentzian Conformal Class: Open Causal-Source Bridge Ledger",
+  "transitive_descendants": 707,
   "verdict_rationale": null
 }

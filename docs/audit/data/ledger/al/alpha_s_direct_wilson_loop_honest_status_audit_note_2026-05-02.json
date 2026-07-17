@@ -28,18 +28,18 @@
     "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
     "graph_first_su3_integration_note"
   ],
-  "direct_in_degree": 4,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.585,
+  "load_bearing_score": 4.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "823cb4cbb58bc034ec4be1d31b92da28664daee7818897276c77a91130eb7b11",
+  "note_hash": "4c1d0f844c3bbd51560393a7775a08406b090ca6803549285173b6ac68d54c2d",
   "note_path": "docs/ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -392,7 +392,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -402,6 +402,6 @@
   },
   "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop.py",
   "title": "\u03b1_s Direct Wilson-Loop Honest-Status Audit",
-  "transitive_descendants": 11,
+  "transitive_descendants": 9,
   "verdict_rationale": null
 }

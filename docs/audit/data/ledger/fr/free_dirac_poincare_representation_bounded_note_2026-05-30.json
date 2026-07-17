@@ -32,7 +32,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": "2026-07-16T03:22:52.640137+00:00",
   "claim_type_provenance": "audited",
-  "criticality": "critical",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 11.974,
+  "load_bearing_score": 6.307,
   "load_bearing_step": "With the displayed gamma-matrix and mass-shell operator definitions, the boost-containing Poincare brackets close, including [K^i,K^j] = -i eps^{ijk} J^k.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -4783,6 +4783,6 @@
   },
   "runner_path": "scripts/free_dirac_poincare_representation_2026-05-30.py",
   "title": "Free Dirac Poincare Algebra and Positive-Energy Support (Bounded)",
-  "transitive_descendants": 710,
+  "transitive_descendants": 13,
   "verdict_rationale": "The runner performs eight genuine class-(A) checks covering explicit commutators, analytic test-function identities, Lorentz-orbit and measure preservation, spectral enumeration, and bispinor covariance; it neither hard-codes a comparator value nor relies on opaque helpers. However, the continuum Dirac/Poincare carrier, standard boosts, invariant measure, and CAR particle/antiparticle relabelling are introduced as textbook methodology rather than supplied by a cited retained or accepted authority or derived from the framework premises. The negative sentences are scope exclusions and negative controls, not a no-go result or named wall, so the N1-N8 discipline is not substantively triggered."
 }

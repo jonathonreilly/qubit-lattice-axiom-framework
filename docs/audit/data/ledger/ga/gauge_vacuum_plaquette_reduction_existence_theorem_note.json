@@ -23,7 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
-  "direct_in_degree": 9,
+  "direct_in_degree": 8,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -35,7 +35,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.587,
+  "load_bearing_score": 10.087,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",

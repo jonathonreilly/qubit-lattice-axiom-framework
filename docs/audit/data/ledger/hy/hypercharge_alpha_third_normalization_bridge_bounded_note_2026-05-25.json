@@ -1,70 +1,42 @@
 {
-  "audit_date": "2026-07-15T16:33:49.239389+00:00",
-  "audit_invocation_history": [
-    "52ae9dcb247847fc80039f116e1f7022"
-  ],
-  "audit_invocation_id": "52ae9dcb247847fc80039f116e1f7022",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
-      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
-    },
-    "dep_claim_type": {
-      "graph_first_selector_derivation_note": "positive_theorem",
-      "graph_first_su3_integration_note": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "graph_first_selector_derivation_note": "retained",
-      "graph_first_su3_integration_note": "retained"
-    },
-    "deps": [
-      "graph_first_selector_derivation_note",
-      "graph_first_su3_integration_note"
-    ],
-    "load_bearing_score": 11.92,
-    "runner_hash": "0a23b98fb7c88e29b5662817313e6542671d4e4dd18d4c7bf49a4242d81ad26e",
-    "transitive_descendants": 1369
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-hypercharge_alpha_third_-006",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The rational implication is correct, but the repository-level chain does not close because P1-P4\u2014especially the Anti\u00b2-as-L_L readout identification\u2014are supplied conventions rather than retained derivations or registered axioms/approved primitives.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
-  "claim_scope": "Conditional arithmetic only: given the retained 6+2 traceless ratio and supplied P1-P4 readout, electroweak, isospin, and charge conventions, \u03b1 = 1/3 and Y(L_L) = -1 follow; no derivation or physical normalization of P1-P4 is audited.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-15T16:33:49.239389+00:00",
-  "claim_type_provenance": "audited",
-  "criticality": "critical",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "graph_first_su3_integration_note",
-    "graph_first_selector_derivation_note"
-  ],
-  "direct_in_degree": 3,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "deps": [],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 11.92,
-  "load_bearing_step": "Substituting P1-P4 and \u03b2 = -3\u03b1 gives -1 = -1/2 + (-3\u03b1)/2, hence \u03b1 = 1/3.",
-  "load_bearing_step_class": "A",
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.172,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
-  "note_hash": "8f765fdeb725fa953fc57c9aba04e939fff506a76f6a021205feb239ffd891bb",
+  "note_hash": "6132d6bd84a6283adb3e93162a343d97238e8b757dc5f53b921d1ba52023f352",
   "note_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
-  "notes_for_re_audit_if_any": "dependency_not_retained: supply retained-grade derivations or approved-premise registrations for P1-P4, especially the Anti\u00b2-to-L_L physical readout bridge, then rerun the audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1473,19 +1445,81 @@
         "total_pass": 15
       },
       "verdict_rationale": "The runner genuinely computes the 6+2 traceless ratio and exact Fraction solution rather than merely printing the result. Nevertheless, \u03b1 = 1/3 follows only after importing P1-P4, which the note explicitly says are neither derived nor registry-accepted. The registry also classifies absolute hypercharge normalization as a vacuous Y\u2194g\u2032 rescaling convention, so this packet does not establish an independently selected physical U(1) normalization."
+    },
+    {
+      "archived_at": "2026-07-17T07:51:37.637401+00:00",
+      "archived_for_note_hash": "8f765fdeb725fa953fc57c9aba04e939fff506a76f6a021205feb239ffd891bb",
+      "audit_date": "2026-07-15T16:33:49.239389+00:00",
+      "audit_invocation_history": [
+        "52ae9dcb247847fc80039f116e1f7022"
+      ],
+      "audit_invocation_id": "52ae9dcb247847fc80039f116e1f7022",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 11.92,
+        "runner_hash": "0a23b98fb7c88e29b5662817313e6542671d4e4dd18d4c7bf49a4242d81ad26e",
+        "transitive_descendants": 1369
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-hypercharge_alpha_third_-006",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The rational implication is correct, but the repository-level chain does not close because P1-P4\u2014especially the Anti\u00b2-as-L_L readout identification\u2014are supplied conventions rather than retained derivations or registered axioms/approved primitives.",
+      "claim_scope": "Conditional arithmetic only: given the retained 6+2 traceless ratio and supplied P1-P4 readout, electroweak, isospin, and charge conventions, \u03b1 = 1/3 and Y(L_L) = -1 follow; no derivation or physical normalization of P1-P4 is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-15T16:33:49.239389+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substituting P1-P4 and \u03b2 = -3\u03b1 gives -1 = -1/2 + (-3\u03b1)/2, hence \u03b1 = 1/3.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "dependency_not_retained: supply retained-grade derivations or approved-premise registrations for P1-P4, especially the Anti\u00b2-to-L_L physical readout bridge, then rerun the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 12,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner genuinely performs the exact rational calculation and confirms \u03b1 = 1/3 and Y(L_L) = -1 from the stated inputs; it does not merely print the result. However, it hard-codes the charge and isospin values and assumes the P1/P2 readout relations, while the source explicitly says P1-P4 are not registry-accepted premises and that the admission remains. Thus the bounded conditional implication is sound, but it is not an unconditional retained-grade normalization derivation."
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 3,
-    "B": 12,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 15
+    "total_pass": 0
   },
   "runner_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
-  "title": "Hypercharge \u03b1 = 1/3 Normalization Bridge",
-  "transitive_descendants": 1369,
-  "verdict_rationale": "The runner genuinely performs the exact rational calculation and confirms \u03b1 = 1/3 and Y(L_L) = -1 from the stated inputs; it does not merely print the result. However, it hard-codes the charge and isospin values and assumes the P1/P2 readout relations, while the source explicitly says P1-P4 are not registry-accepted premises and that the admission remains. Thus the bounded conditional implication is sound, but it is not an unconditional retained-grade normalization derivation."
+  "title": "Exact Formal Two-Equation Normalization Arithmetic",
+  "transitive_descendants": 50,
+  "verdict_rationale": null
 }

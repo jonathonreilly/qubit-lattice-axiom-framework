@@ -39,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5ba1218e1439fc0168c5cdaf2874df4e1aa04f0a219af22c940c6e20d5816760",
+  "note_hash": "e96b51e3bdb3fe1d95e65c7d08e1dba0e2e1e93ec2411e93fe29b11ebe2449e3",
   "note_path": "docs/TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -114,7 +114,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

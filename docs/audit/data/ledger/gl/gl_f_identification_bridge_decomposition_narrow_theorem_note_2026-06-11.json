@@ -41,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8aea88d2deb21a3e196b4829b592ef7bff0b1e4007c4203208211b2d27b01a26",
+  "note_hash": "b19e1e7ec93d43339989b24040dadcbb5bba475d5a3a87174ed93365b3c0fba0",
   "note_path": "docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -264,7 +264,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

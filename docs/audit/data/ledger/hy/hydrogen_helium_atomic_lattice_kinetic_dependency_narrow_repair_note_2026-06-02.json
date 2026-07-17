@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "3cea9a81868a0b57da45fab5c60a8dc98b99d6d9f43398a2ea63eec65e70493c",
+  "note_hash": "4654ecdf405e098faa4961d819b8b98e04699a79f5661550a85ddb932662127c",
   "note_path": "docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -288,7 +288,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

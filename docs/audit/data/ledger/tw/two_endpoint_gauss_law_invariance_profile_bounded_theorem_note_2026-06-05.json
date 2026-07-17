@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "critical",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -33,12 +33,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.577,
+  "load_bearing_score": 11.833,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "bbb37d2322851510e01b73f60c77017a3fb504738b17220a4b9b63eed10d2b56",
+  "note_hash": "d44390d200d310219158044e1e27b4afe925be9ba52e6b319a8aa1db8de2bbf4",
   "note_path": "docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -314,7 +314,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -324,6 +324,6 @@
   },
   "runner_path": "scripts/audit_companion_two_endpoint_gauss_law_invariance_profile_bounded_2026_06_05.py",
   "title": "Two-Endpoint Gauss-Law Invariance Profile (Bounded Theorem)",
-  "transitive_descendants": 763,
+  "transitive_descendants": 113,
   "verdict_rationale": null
 }

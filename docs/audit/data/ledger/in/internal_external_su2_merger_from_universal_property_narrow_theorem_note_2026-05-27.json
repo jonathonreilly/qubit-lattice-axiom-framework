@@ -35,12 +35,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.649,
+  "load_bearing_score": 14.589,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8ac6fa4f47253278c93f9d2b04e683615b879b5ce0f28fdee255a02855455414",
+  "note_hash": "419da83414e8e5e3b44e9867c587454c5c9d4775eed4bcb7ddf7f5a64becf22e",
   "note_path": "docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -624,7 +624,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -634,6 +634,6 @@
   },
   "runner_path": "scripts/internal_external_su2_merger_runner.py",
   "title": "Internal-External SU(2) Operator Identification",
-  "transitive_descendants": 802,
+  "transitive_descendants": 769,
   "verdict_rationale": null
 }

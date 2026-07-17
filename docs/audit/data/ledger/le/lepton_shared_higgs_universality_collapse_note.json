@@ -24,8 +24,7 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "lepton_single_higgs_pmns_triviality_note",
-    "neutrino_dirac_two_higgs_canonical_reduction_note",
-    "charged_lepton_two_higgs_canonical_reduction_note"
+    "neutrino_dirac_two_higgs_canonical_reduction_note"
   ],
   "direct_in_degree": 4,
   "effective_status": "unaudited",
@@ -33,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.564,
+  "load_bearing_score": 11.496,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "3787ef0385dff87bb3263253c772b32b2e6badac0df2515e56e2213ef38f5eb9",
+  "note_hash": "061f6113983291245e7335da40830af08ed3e1dd734223239a23d4456bfe8a14",
   "note_path": "docs/LEPTON_SHARED_HIGGS_UNIVERSALITY_COLLAPSE_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -116,6 +115,6 @@
   },
   "runner_path": "scripts/frontier_lepton_shared_higgs_universality_collapse.py",
   "title": "Lepton Shared-Higgs Universality Collapse",
-  "transitive_descendants": 756,
+  "transitive_descendants": 721,
   "verdict_rationale": null
 }

@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "critical",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -34,12 +34,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.079,
+  "load_bearing_score": 10.345,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c8fe86f247e7fef6242b304596a10fe206a9c23e26121221c573c27875c6315c",
+  "note_hash": "44eb3dc0d58dedb72d9e34b95c2bcf75ece68adaac39c440d50a3c7ba9949ac8",
   "note_path": "docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -467,7 +467,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -477,6 +477,6 @@
   },
   "runner_path": "scripts/audit_companion_qubit_link_u2_connection_algebra_bounded_2026_06_04.py",
   "title": "Qubit-Link U(2) Connection Algebra (Bounded Theorem)",
-  "transitive_descendants": 764,
+  "transitive_descendants": 114,
   "verdict_rationale": null
 }

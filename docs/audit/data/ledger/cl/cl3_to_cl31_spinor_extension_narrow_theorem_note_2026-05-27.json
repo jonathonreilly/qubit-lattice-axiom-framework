@@ -32,7 +32,7 @@
   "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": "2026-07-16T01:52:42.883137+00:00",
   "claim_type_provenance": "audited",
-  "criticality": "critical",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 15.988,
+  "load_bearing_score": 11.67,
   "load_bearing_step": "By Cartan-Bott, Cl(4,0) \u2245 M_2(H) and Cl(3,1) \u2245 M_4(R), so among the two sign extensions only (3,1) lands on a single M_k(R).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -139,6 +139,6 @@
   },
   "runner_path": "scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py",
   "title": "Cl(3) \u2192 Cl(3,1) Spinor Extension Narrow Theorem",
-  "transitive_descendants": 717,
+  "transitive_descendants": 35,
   "verdict_rationale": "The sign branches and the M_4(R) branch receive genuine exact algebraic checks. However, rank 16 for the displayed 8\u00d78 Cl(4,0) representation does not distinguish M_2(H) from another 16-dimensional real algebra, while the runner simply embeds the desired classification strings in a dictionary. The theorem is therefore not cleanly established by this restricted packet even though the missing step is a standard classification result."
 }

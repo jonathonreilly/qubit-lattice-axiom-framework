@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.5,
+  "load_bearing_score": 4.67,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/frontier_slow_variables_derived_one_body_closure_2026_06_09.py",
   "title": "The \"Added Slow Variables\" Premise Discharges in Its Chosen-Enlargement Form: the Closing Set Is Derived, and the Link Is a Coordinate",
-  "transitive_descendants": 7,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

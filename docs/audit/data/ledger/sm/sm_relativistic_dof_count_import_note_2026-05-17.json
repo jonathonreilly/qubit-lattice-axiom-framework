@@ -25,13 +25,13 @@
   "deps": [
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
   ],
-  "direct_in_degree": 9,
+  "direct_in_degree": 12,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.982,
+  "load_bearing_score": 15.664,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -184,6 +184,6 @@
   },
   "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py",
   "title": "Standard-Model Relativistic Degrees-of-Freedom Count \u2014 Finite Inventory Arithmetic",
-  "transitive_descendants": 714,
+  "transitive_descendants": 810,
   "verdict_rationale": null
 }

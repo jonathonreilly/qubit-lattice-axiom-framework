@@ -23,6 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
+    "beta6_plaquette_closure_note_2026-05-29",
     "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
     "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
     "su3_wigner_l3_treewidth_infeasible_2026-05-04",
@@ -46,7 +47,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "6c008b4e573bba0baeabc9ee0bf032b419a07458a1f3d5e1e5936bf0a03f2d27",
+  "note_hash": "dbae6ed95e8f8add3d21f61cc9de258b77e3a2c408fe44b0a72674a85bddce92",
   "note_path": "docs/BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

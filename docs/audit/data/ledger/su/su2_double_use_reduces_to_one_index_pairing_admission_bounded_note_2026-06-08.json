@@ -40,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8e7c1e4f177ae7f46b461a1fa86f00f1f9d724e8f81530c308eb90197d338e78",
+  "note_hash": "6090f42f4c9fb6f44d72fbb2c978e2a0639cd672e4d6a71c466c9f3a6e48fa1e",
   "note_path": "docs/SU2_DOUBLE_USE_REDUCES_TO_ONE_INDEX_PAIRING_ADMISSION_BOUNDED_NOTE_2026-06-08.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -55,7 +55,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_su2_double_use_reduces_to_pairing_admission_2026_06_08.py",
-  "title": "Internal/External su(2) Double-Use Reduces to One Index-Pairing Admission",
+  "title": "Internal/External su(2) Double-Use Reduces to One Index-Pairing Condition",
   "transitive_descendants": 1,
   "verdict_rationale": null
 }

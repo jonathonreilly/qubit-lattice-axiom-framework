@@ -14,28 +14,29 @@
   "chain_closure_explanation": null,
   "claim_id": "gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19",
   "claim_scope": null,
-  "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-    "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19"
+    "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19",
+    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+    "gauge_vacuum_plaquette_local_environment_factorization_theorem_note"
   ],
   "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
-    "scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py",
     "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
     "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
+    "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
     "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
-    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py"
+    "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
@@ -44,7 +45,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "a094a0961cf33216a8c055be4570f841c62c767e1be6445dffce5510d027d07d",
+  "note_hash": "62ab6feaabdf49e5415cd8c2b494763b4140e38ef3ca8f1cf1a871ed48396c98",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -342,7 +343,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -351,7 +352,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
-  "title": "Gauge-Vacuum Plaquette First-Sector Zero-Extension Factorized-Class Theorem",
+  "title": "Gauge-Vacuum Plaquette First-Sector Supplied Zero-Extension Packet",
   "transitive_descendants": 48,
   "unattributed_audit_provenance": [
     {

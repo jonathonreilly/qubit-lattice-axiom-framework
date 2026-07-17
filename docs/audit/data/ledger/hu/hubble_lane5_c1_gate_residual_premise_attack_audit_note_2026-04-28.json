@@ -22,7 +22,13 @@
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [],
+  "deps": [
+    "hubble_lane5_planck_c1_gate_audit_note_2026-04-26",
+    "minimal_axioms",
+    "area_law_native_car_semantics_tightening_note_2026-04-25",
+    "area_law_primitive_car_edge_identification_theorem_note_2026-04-25",
+    "planck_source_unit_normalization_support_theorem_note_2026-04-25"
+  ],
   "direct_in_degree": 1,
   "effective_status": "meta",
   "effective_status_reason": "metadata",
@@ -34,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "1b4d7ccd3ecc467701aab5dba3187a22f983614a0f7087c43cd8809ccb364b42",
+  "note_hash": "8d313bda3ca5e2356c7efcf0573b9dee1053279a108fa7338138d9a618611e5b",
   "note_path": "docs/HUBBLE_LANE5_C1_GATE_RESIDUAL_PREMISE_ATTACK_AUDIT_NOTE_2026-04-28.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -130,7 +136,7 @@
     "total_pass": 0
   },
   "runner_path": null,
-  "title": "Lane 5 `(C1)` Absolute-Scale Gate \u2014 Residual-Premise Attack Audit",
+  "title": "Lane 5 `(C1)` Coupled Residual-Packet Research Inventory",
   "transitive_descendants": 2,
   "unattributed_audit_provenance": [
     {

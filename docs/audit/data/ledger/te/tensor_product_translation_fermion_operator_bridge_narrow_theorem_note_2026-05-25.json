@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 18.76,
+  "load_bearing_score": 18.766,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -812,6 +812,6 @@
   },
   "runner_path": "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py",
   "title": "Tensor-Product Translation / Fermion Operator Bridge Narrow Theorem",
-  "transitive_descendants": 1225,
+  "transitive_descendants": 1230,
   "verdict_rationale": null
 }

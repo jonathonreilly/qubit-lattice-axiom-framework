@@ -39,12 +39,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.807,
+  "load_bearing_score": 5.858,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "a694d7797211766251f741fece8a382ba9f233f1e0c448de89e4229ddc275baf",
+  "note_hash": "5d5628145a06da6cf28535cd32940f1563b33f80876033e1af039ffc97d51441",
   "note_path": "docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -372,7 +372,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -382,7 +382,7 @@
   },
   "runner_path": "scripts/gauge_algebra_supplied_carrier_2026_06_08.py",
   "title": "Gauge Algebra on a Supplied Color Carrier and the Gauging-Selection Open Gate",
-  "transitive_descendants": 27,
+  "transitive_descendants": 28,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

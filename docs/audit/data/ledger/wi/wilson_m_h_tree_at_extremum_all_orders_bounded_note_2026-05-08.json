@@ -43,7 +43,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f31a805dea9622f4a6f6d597c21486586432f8dc4f92547a2e28a727b39bbf21",
+  "note_hash": "0d48241f11997c591869105679274e9f670ecb13a762c88516c5953d02c791fd",
   "note_path": "docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -367,7 +367,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

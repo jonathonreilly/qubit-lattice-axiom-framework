@@ -23,6 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
+    "per_plaquette_license_one_tick_reachability_derivation_narrow_theorem_note_2026-07-12",
     "lattice_nn_light_cone_note",
     "kinetic_isotropy_primitive"
   ],
@@ -32,12 +33,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.972,
+  "load_bearing_score": 11.903,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "137bdd40af24dc07f75d4218fda91ec123deb94755b5e47dbc088b4c762c891a",
+  "note_hash": "6450b9e661075d9afd9727c750b9fcc762ed231781a50bea5ce9479a9082d6c6",
   "note_path": "docs/PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -220,7 +221,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -230,6 +231,6 @@
   },
   "runner_path": "scripts/frontier_per_plaquette_from_adjacency_license_2026_06_09.py",
   "title": "Per-Plaquette Link-License Finite Enumeration Support",
-  "transitive_descendants": 709,
+  "transitive_descendants": 676,
   "verdict_rationale": null
 }

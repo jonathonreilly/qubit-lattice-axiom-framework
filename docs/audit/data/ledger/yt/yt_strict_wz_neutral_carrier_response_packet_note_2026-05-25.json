@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "572cec8171e297f01eb086002d2732c643e5798df4aa77e0ba337c4b8879d6a7",
+  "note_hash": "4557678b5fe70e7faac45a664d336edf8c13dbb16a5aba9e3abd71531d82acc4",
   "note_path": "docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -397,7 +397,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

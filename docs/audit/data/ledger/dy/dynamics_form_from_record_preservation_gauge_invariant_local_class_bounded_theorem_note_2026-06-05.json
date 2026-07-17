@@ -35,12 +35,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.524,
+  "load_bearing_score": 7.555,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "013fecd475464ebb53fb2f8eb2484ad249108ee07da31a234665bc60bb05e7fe",
+  "note_hash": "64460fa531adfbc0197eb364587111f94ec5b26305a7264c3ef287fbcd6dc1d9",
   "note_path": "docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/frontier_dynamics_form_from_record_preservation_2026_06_05.py",
   "title": "Dynamics-Form From Record-Preservation: the Gauge-Invariant-Local (Wilson) Class (Bounded Theorem)",
-  "transitive_descendants": 45,
+  "transitive_descendants": 46,
   "verdict_rationale": null
 }

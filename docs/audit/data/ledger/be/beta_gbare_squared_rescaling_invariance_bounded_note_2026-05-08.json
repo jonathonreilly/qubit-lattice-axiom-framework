@@ -1,60 +1,44 @@
 {
-  "audit_date": "2026-06-21T16:20:10.128850+00:00",
-  "audit_state_snapshot": {
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "The standalone rational-function algebra identity \u03b2(g,N)=2N/g^2 under g\u21a6g/c, the invariant product \u03b2g^2=2N, and the associated positive-rational orbit/injectivity statements for \u03b2-values in the image."
-    },
-    "dep_claim_type": {
-      "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "retained"
-    },
-    "deps": [
-      "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
-    ],
-    "load_bearing_score": 4.5,
-    "runner_hash": "3a9bb4ac56a0ee7804c5329bf82c601c76b3e4803ddb4d21ce7229104d04a110",
-    "transitive_descendants": 15
-  },
-  "audit_status": "audited_decoration",
-  "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08-first",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The product cancellation follows directly from the retained upstream abstract identity and ordinary rational algebra. The row adds symbolic naming and boundary clauses, so it closes only as an algebraic corollary of the parent, not as an independent Wilson-surface result.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
-  "claim_scope": "Pure algebraic invariance of beta(g,N) g^2 = 2N under the abstract joint rescaling (g,beta)->(g/c,c^2 beta), specialized only by the symbolic names (g,N)=(g_bare,N_c).",
-  "claim_type": "decoration",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-06-21T16:20:10.128850+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+  "decoration_parent_claim_id": null,
   "deps": [
     "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 0,
-  "effective_status": "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
-  "effective_status_reason": "decoration_parent_retained",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Under the abstract joint rescaling (g, beta) -> (g/c, c^2 beta), (c^2 beta)(g^2/c^2)=beta g^2=2N, with (g,N) only symbolically relabeled as (g_bare,N_c).",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "d9753b786e4c8f6331dfdd2a14bf47a7e0dc2f77428f913f3c636581cf9a4668",
+  "note_hash": "79649428d20cb09246f853f66363111f21ac68b4d3a2a220351625b4aef28adf",
   "note_path": "docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md",
-  "notes_for_re_audit_if_any": "Second auditor should re-check the inferred canonical parent claim_id from the cited authority path.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -461,19 +445,75 @@
         "total_pass": 154
       },
       "verdict_rationale": "The exact Fraction arithmetic and the displayed cancellation are correct as pure algebra under the joint-rescaling premise. But the cited G_BARE authority is only a canonical Gram-scaling decoration and explicitly says beta-routing or beta_new/beta_old under T_a -> c T_a is separate work not supplied there. The runner cache is also stale relative to the provided packet: the included runner would reject the current bounded_theorem marker and expects rescaling-note beta-routing markers absent from the cited authority. Thus the row closes only as abstract conditional algebra, not as the stated generator-basis/Wilson-surface routing from the cited inputs."
+    },
+    {
+      "archived_at": "2026-07-17T07:50:14.685760+00:00",
+      "archived_for_note_hash": "d9753b786e4c8f6331dfdd2a14bf47a7e0dc2f77428f913f3c636581cf9a4668",
+      "audit_date": "2026-06-21T16:20:10.128850+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "The standalone rational-function algebra identity \u03b2(g,N)=2N/g^2 under g\u21a6g/c, the invariant product \u03b2g^2=2N, and the associated positive-rational orbit/injectivity statements for \u03b2-values in the image."
+        },
+        "dep_claim_type": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "3a9bb4ac56a0ee7804c5329bf82c601c76b3e4803ddb4d21ce7229104d04a110",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The product cancellation follows directly from the retained upstream abstract identity and ordinary rational algebra. The row adds symbolic naming and boundary clauses, so it closes only as an algebraic corollary of the parent, not as an independent Wilson-surface result.",
+      "claim_scope": "Pure algebraic invariance of beta(g,N) g^2 = 2N under the abstract joint rescaling (g,beta)->(g/c,c^2 beta), specialized only by the symbolic names (g,N)=(g_bare,N_c).",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-21T16:20:10.128850+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+      "independence": "cross_family",
+      "load_bearing_step": "Under the abstract joint rescaling (g, beta) -> (g/c, c^2 beta), (c^2 beta)(g^2/c^2)=beta g^2=2N, with (g,N) only symbolically relabeled as (g_bare,N_c).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the inferred canonical parent claim_id from the cited authority path.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 155,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 155
+      },
+      "verdict_rationale": "The cited upstream authority is retained and already proves the abstract beta(g/c,N)=c^2 beta(g,N) identity and product invariance. The present note repeats that exact algebra with the variable names (g_bare,N_c) and expressly keeps any physical Wilson action-surface interpretation outside the audited scope. With zero comparator checks and no independent physical computation, the row is an algebraic decoration of the retained parent rather than an independent clean theorem."
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 155,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 155
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_beta_gbare_squared_rescaling_invariance.py",
   "title": "\u03b2\u00b7g_bare\u00b2 = 2 N_c Abstract Joint-Rescaling Algebra Lemma",
   "transitive_descendants": 0,
-  "verdict_rationale": "The cited upstream authority is retained and already proves the abstract beta(g/c,N)=c^2 beta(g,N) identity and product invariance. The present note repeats that exact algebra with the variable names (g_bare,N_c) and expressly keeps any physical Wilson action-surface interpretation outside the audited scope. With zero comparator checks and no independent physical computation, the row is an algebraic decoration of the retained parent rather than an independent clean theorem."
+  "verdict_rationale": null
 }

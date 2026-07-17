@@ -40,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f6f3bd078fabf3a803f5d6a8d713c0c853275a453fd0d96c34ee766e66c25d9e",
+  "note_hash": "3d2c8c6decf392c2ef067dc5fe117c223ff6eb03695434382bb41ee56b8c1ec3",
   "note_path": "docs/REDUNDANCY_NOT_FORCED_BY_PND_LOCALITY_NO_GO_NOTE_2026-06-08.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

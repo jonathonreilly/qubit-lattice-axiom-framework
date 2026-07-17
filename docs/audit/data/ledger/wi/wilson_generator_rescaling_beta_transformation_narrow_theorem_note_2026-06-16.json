@@ -14,9 +14,9 @@
   "chain_closure_explanation": null,
   "claim_id": "wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16",
   "claim_scope": null,
-  "claim_type": "bounded_theorem",
-  "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "leaf",
@@ -36,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8859924cae88cb292d7762c5ed861c95a622b710fe0b62a2747b8019c4c97089",
+  "note_hash": "f6cf1520a7b7350fca5e99964027acfe60ac5505213fd685e2f28ace9b83da03",
   "note_path": "docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -96,7 +96,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -105,7 +105,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py",
-  "title": "Wilson Generator-Rescaling Beta Transformation",
+  "title": "Formal Generator/Coupling Label Rescaling and Coefficient Transformation",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

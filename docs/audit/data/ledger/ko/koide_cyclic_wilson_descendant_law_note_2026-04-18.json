@@ -58,7 +58,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 12.484,
+  "load_bearing_score": 12.412,
   "load_bearing_step": "Any local Wilson first variation on the adjacent-chain image descends canonically, after cyclic projection, to exactly three real cyclic responses that reconstruct the unique cyclic charged-lepton target.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -226,6 +226,6 @@
   },
   "runner_path": "scripts/frontier_koide_cyclic_wilson_descendant_law.py",
   "title": "Koide Cyclic Wilson-Descendant Law",
-  "transitive_descendants": 715,
+  "transitive_descendants": 680,
   "verdict_rationale": "The runner correctly verifies the cyclic basis, projector, trace Gram matrix, three-response reconstruction, and Koide response equation as finite linear algebra. Its four class-D checks only compare the constructed circulant matrix with embedded charged-lepton masses. The retained one-hop authority establishes compression after H_e is supplied but explicitly leaves the microscopic Wilson/lattice source law open, so calling the construction the actual Wilson-descendant law exceeds the closed packet."
 }

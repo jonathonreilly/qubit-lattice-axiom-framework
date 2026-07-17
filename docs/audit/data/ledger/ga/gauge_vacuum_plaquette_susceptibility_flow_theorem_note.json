@@ -26,7 +26,7 @@
     "gauge_vacuum_plaquette_reduction_existence_theorem_note",
     "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
   ],
-  "direct_in_degree": 4,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -35,7 +35,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.555,
+  "load_bearing_score": 7.055,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",

@@ -31,12 +31,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.064,
+  "load_bearing_score": 12.066,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "252c4d38ff8b8c3f64a7210aa3fd2a6478d0b01910fe4ec4e14a24c954639650",
+  "note_hash": "cd70a77223e778b7c4d34e5aeba95b8972bf4295f9835cea9280979fc5e609f0",
   "note_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1490,7 +1490,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -1500,6 +1500,6 @@
   },
   "runner_path": "scripts/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.py",
   "title": "Spectrum-Condition Blocked-Time-Spacing Normalization Bridge Narrow Theorem",
-  "transitive_descendants": 756,
+  "transitive_descendants": 757,
   "verdict_rationale": null
 }

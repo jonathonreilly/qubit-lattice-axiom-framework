@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "critical",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.004,
+  "load_bearing_score": 9.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -1879,6 +1879,6 @@
   },
   "runner_path": "scripts/kraus_choi_normalization_convention_check_2026_06_05.py",
   "title": "Kraus\u2013Choi Representation on the Qubit-Lattice CPTP Map Algebra (Narrow)",
-  "transitive_descendants": 725,
+  "transitive_descendants": 63,
   "verdict_rationale": null
 }

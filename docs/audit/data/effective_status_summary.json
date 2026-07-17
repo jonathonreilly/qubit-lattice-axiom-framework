@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2061,
-    "decoration": 21,
-    "meta": 358,
-    "no_go": 440,
-    "open_gate": 201,
-    "positive_theorem": 673
+    "bounded_theorem": 2065,
+    "decoration": 20,
+    "meta": 360,
+    "no_go": 441,
+    "open_gate": 202,
+    "positive_theorem": 679
   },
   "cycle_examples": [
     [
@@ -78,14 +78,12 @@
       "a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1"
     ]
   ],
-  "cycles_detected": 63,
+  "cycles_detected": 62,
   "effective_status_counts": {
     "audit_in_progress": 18,
-    "audited_conditional": 46,
-    "audited_failed": 8,
+    "audited_conditional": 16,
     "audited_numerical_match": 6,
     "audited_renaming": 16,
-    "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
     "decoration_under_graph_first_su3_integration_note": 8,
@@ -93,12 +91,12 @@
     "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
-    "meta": 351,
+    "meta": 353,
     "open_gate": 2,
     "retained": 76,
-    "retained_bounded": 304,
+    "retained_bounded": 302,
     "retained_pending_chain": 3,
-    "unaudited": 2909
+    "unaudited": 2961
   },
   "retained_pending_chain_count": 3,
   "retained_pending_chain_examples": [

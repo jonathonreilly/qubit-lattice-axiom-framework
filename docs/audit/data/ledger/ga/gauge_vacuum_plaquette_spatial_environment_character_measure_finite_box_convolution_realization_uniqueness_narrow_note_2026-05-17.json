@@ -23,7 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17",
+    "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
     "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
   ],
   "direct_in_degree": 1,
@@ -37,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "85d3f40f0c380ecebbb79f29d13baf5d2876a705f06ea68b4e03a31b20d7afa6",
+  "note_hash": "c0f1daa4463ae8baa5c35dc6c8b9b08172ed30b49fab5590c2efaa4619ecb3aa",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -100,7 +100,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -109,7 +109,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py",
-  "title": "Gauge-Vacuum Plaquette Spatial-Environment Character-Measure Finite-Box Convolution-Realization Uniqueness Narrow Note",
+  "title": "Supplied-Diagonal Finite-Box Convolution-Realization Uniqueness",
   "transitive_descendants": 70,
   "verdict_rationale": null
 }

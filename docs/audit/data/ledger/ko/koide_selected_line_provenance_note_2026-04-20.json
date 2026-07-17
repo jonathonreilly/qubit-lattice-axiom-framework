@@ -41,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c56fab5151eae71b0edfa5a508f81acddc9430267f17bc67677209486affef74",
+  "note_hash": "4b8e5fedabe41887ba78f09fa97ba6a7b90a7d639a9dafab9c49364a819ce4a7",
   "note_path": "docs/KOIDE_SELECTED_LINE_PROVENANCE_NOTE_2026-04-20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

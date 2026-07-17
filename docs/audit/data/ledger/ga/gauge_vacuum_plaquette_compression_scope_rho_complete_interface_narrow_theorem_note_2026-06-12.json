@@ -14,24 +14,23 @@
   "chain_closure_explanation": null,
   "claim_id": "gauge_vacuum_plaquette_compression_scope_rho_complete_interface_narrow_theorem_note_2026-06-12",
   "claim_scope": null,
-  "claim_type": "positive_theorem",
-  "claim_type_author_hint": "positive_theorem",
-  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
     "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-    "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
-    "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note"
+    "gauge_vacuum_plaquette_local_environment_factorization_theorem_note"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
     "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
     "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
     "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"
@@ -43,7 +42,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8fa2f31cdef8a19c3e068b54e9adcd1de71f622ce4624b51b82eafe698890da8",
+  "note_hash": "f6ef60625c3caa181f15b02d5535af53c939d0d95337c544893ed5415ef16eda",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSION_SCOPE_RHO_COMPLETE_INTERFACE_NARROW_THEOREM_NOTE_2026-06-12.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -58,7 +57,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/gauge_vacuum_plaquette_compression_scope_rho_complete_interface_narrow_2026_06_12.py",
-  "title": "Gauge-Vacuum Plaquette Compression-Scope Rho Complete Interface Narrow Theorem",
+  "title": "Gauge-Vacuum Plaquette Supplied-Rho Interface Conditional Theorem",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

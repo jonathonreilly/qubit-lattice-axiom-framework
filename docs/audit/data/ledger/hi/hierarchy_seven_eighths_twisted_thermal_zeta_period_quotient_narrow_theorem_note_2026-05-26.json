@@ -34,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "841f0aacc6e81a4793b7488cbe7b06f1d9fb0424a9e7ab64a219073753c0d4a2",
+  "note_hash": "d8295138efc6242784420df596f8564382b5ad52b98625bc7860c2f41266bfff",
   "note_path": "docs/HIERARCHY_SEVEN_EIGHTHS_TWISTED_THERMAL_ZETA_PERIOD_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -133,7 +133,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

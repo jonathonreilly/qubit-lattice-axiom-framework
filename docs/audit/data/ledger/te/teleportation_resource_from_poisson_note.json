@@ -47,7 +47,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f7a6d9f6723cfc3066d332b523727e8e874743cc1c4f8c26c5db6af6d294dadb",
+  "note_hash": "2cacec194a1efa2a0c4c28f2b57342ca328afd7c928e89579f84c084260d4907",
   "note_path": "docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1243,7 +1243,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

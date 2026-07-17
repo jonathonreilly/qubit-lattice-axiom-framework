@@ -25,11 +25,9 @@
   "deps": [
     "plaquette_4d_mc_support_note_2026-05-04",
     "gauge_scalar_temporal_completion_theorem_note",
-    "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
     "plaquette_value_derivation_program_specification_and_bracket_reduction_narrow_theorem_note_2026-06-10",
     "gauge_wilson_isotropy_boundary_note_2026-05-04",
-    "plaquette_observable_uniqueness_bounded_note_2026-05-25",
-    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
+    "plaquette_observable_uniqueness_bounded_note_2026-05-25"
   ],
   "direct_in_degree": 1,
   "effective_status": "unaudited",
@@ -42,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "39cd2c483c3e11e463a0bfd4895ea654549d4f06066388f50eb38575b5524761",
+  "note_hash": "36ed702e2c9fcbf4be450c4655888fdfa0ec9f98c2685ddd33a358c0ae52b60e",
   "note_path": "docs/PLAQUETTE_MARKED_SLICE_BULK_AVERAGE_TRANSLATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

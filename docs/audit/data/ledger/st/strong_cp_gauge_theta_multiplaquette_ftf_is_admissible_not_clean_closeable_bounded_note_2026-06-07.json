@@ -35,12 +35,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.966,
+  "load_bearing_score": 10.892,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "303533b3bc4958480bdb8e24c60d14ce93f969d6298db47604f53f0d2b40a40e",
+  "note_hash": "56a709cc10e33383011c38a232f7d1227b11392e67192d72fa3b9abe5a4dd63e",
   "note_path": "docs/STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_IS_ADMISSIBLE_NOT_CLEAN_CLOSEABLE_BOUNDED_NOTE_2026-06-07.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/audit_companion_strong_cp_multiplaquette_ftf_admissible_not_clean_closeable_exact.py",
   "title": "Strong-CP: the Multi-Plaquette F\u0303F (Clover) Is Admissible \u2014 the Open Action-Class Boundary Is Not Clean-Closeable (Action-Side Complement)",
-  "transitive_descendants": 706,
+  "transitive_descendants": 671,
   "verdict_rationale": null
 }

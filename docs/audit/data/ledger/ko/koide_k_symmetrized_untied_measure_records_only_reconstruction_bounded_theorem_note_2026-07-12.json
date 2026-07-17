@@ -27,13 +27,13 @@
     "koide_quasi_hermitian_metric_operator_escape_closure_bounded_theorem_note_2026-07-12",
     "minimal_axioms"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/frontier_k_symmetrized_untied_measure_2026_07_12.py",
   "title": "K-Symmetrized Untied Measure Records-Only Reconstruction \u2014 \u03b8-Invariance Restores Hermiticity for Every Untied Coupling; Positivity Holds on a Nonempty Open Domain and Fails on Another; K-to-Measure Licensing and Many-Slice Transfer Remain Open; the Ordinary Doubled Gaussian Does Not Realize the Orbit Sum, and Uniform Doubling Preserves the Count-Once Comparator (Bounded Theorem)",
-  "transitive_descendants": 0,
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

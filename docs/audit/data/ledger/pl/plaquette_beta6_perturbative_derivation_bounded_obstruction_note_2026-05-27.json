@@ -36,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "22ab206fc589762005384cd9ec7628497f22e2bc167371023e55eff70c970f67",
+  "note_hash": "cde83e1e3a6f272294077fba5f96d0be48cc5a03095edb7478b3b54d96a81aea",
   "note_path": "docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -479,7 +479,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -488,7 +488,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py",
-  "title": "Plaquette beta=6 Perturbative-Derivation Admitted-Input Runner-Local Diagnostic",
+  "title": "Plaquette beta=6 Perturbative-Derivation Explicit-Input Runner-Local Diagnostic",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

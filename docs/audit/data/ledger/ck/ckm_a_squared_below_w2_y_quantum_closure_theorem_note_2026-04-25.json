@@ -31,13 +31,13 @@
     "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
     "cl3_taste_generation_theorem"
   ],
-  "direct_in_degree": 22,
+  "direct_in_degree": 21,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 20.73,
+  "load_bearing_score": 20.169,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -147,6 +147,6 @@
   },
   "runner_path": "scripts/frontier_ckm_a_squared_below_w2_y_quantum_closure.py",
   "title": "A\u00b2 Closure Below W2 via Retained Quark-Doublet Identification Source Theorem",
-  "transitive_descendants": 848,
+  "transitive_descendants": 813,
   "verdict_rationale": null
 }

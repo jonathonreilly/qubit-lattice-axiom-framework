@@ -25,7 +25,6 @@
   "deps": [
     "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12",
     "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
     "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
   ],
   "direct_in_degree": 0,
@@ -41,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "adae38f5b3c98395161ff9d79a51c857108f20e4d2ceb81e8c0c39d22f4c1d9c",
+  "note_hash": "f413f4c089018a6ae97652d714e769a71c3a1b2a05e2851ba4c9d5ceba6d11a4",
   "note_path": "docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_TWO_BOUNDED_NOTE_2026-06-12.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -175,7 +174,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

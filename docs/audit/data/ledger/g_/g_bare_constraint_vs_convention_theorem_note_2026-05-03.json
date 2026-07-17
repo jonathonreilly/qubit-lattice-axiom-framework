@@ -32,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.998,
+  "load_bearing_score": 11.926,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "58c15958842f8e79c64cfe3b5f925508bc4cf089f2490c65ee61f3ea93bc2e39",
+  "note_hash": "26f75ddfcaa8dfd48d9da8c26a9d0d592259662caa2ef7819943ebc2b7e92424",
   "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -811,7 +811,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "relabel_date": "2026-05-06T17:45:26.976865+00:00",
   "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
   "runner_check_breakdown": {
@@ -823,7 +823,7 @@
   },
   "runner_path": "scripts/frontier_g_bare_constraint_surface_check.py",
   "title": "g_bare Conditional Algebra Corollary",
-  "transitive_descendants": 722,
+  "transitive_descendants": 687,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

@@ -26,7 +26,7 @@
     "gauge_vacuum_plaquette_reduction_existence_theorem_note",
     "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10"
   ],
-  "direct_in_degree": 10,
+  "direct_in_degree": 9,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -36,7 +36,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.977,
+  "load_bearing_score": 10.477,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",

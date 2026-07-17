@@ -34,12 +34,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.954,
+  "load_bearing_score": 8.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e6ea772977c288134e5d8c48dd986fe8d16d8d5257a54857af6a4e21c293188d",
+  "note_hash": "a6933792cd4af329b91bf9a6740526fa94ebeb022a262ff942d6aee84db95079",
   "note_path": "docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -290,7 +290,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -300,7 +300,7 @@
   },
   "runner_path": "scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py",
   "title": "Matter-Gauge Minimal Coupling from Local Fibre-Frame Redundancy",
-  "transitive_descendants": 30,
+  "transitive_descendants": 31,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

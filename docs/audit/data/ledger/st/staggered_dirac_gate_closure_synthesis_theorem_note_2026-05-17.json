@@ -59,12 +59,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.992,
+  "load_bearing_score": 8.085,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4bde37ec3cd69a4c257642561a8e6a3266981d60e862b0fb384317870436aa5e",
+  "note_hash": "17e3cbec382025482f73104350102fc33c416bbe86d66f5f92a2de54f07c3985",
   "note_path": "docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -80,6 +80,6 @@
   },
   "runner_path": "scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py",
   "title": "Staggered-Dirac Realization Gate \u2014 Closure Synthesis (Block 01, 2026-05-17)",
-  "transitive_descendants": 44,
+  "transitive_descendants": 47,
   "verdict_rationale": null
 }

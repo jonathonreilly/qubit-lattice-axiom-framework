@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "critical",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.466,
+  "load_bearing_score": 5.322,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/osterwalder_schrader_from_framework_runner_2026_05_27.py",
   "title": "Finite-Dimensional Spectral Wick-Rotation Bridge from Framework Companions Narrow Theorem",
-  "transitive_descendants": 706,
+  "transitive_descendants": 19,
   "verdict_rationale": null
 }

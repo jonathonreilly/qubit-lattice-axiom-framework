@@ -41,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "794e39a7a093723a16e5a8d48a0023c42adb8356513769eaf89fa647a0d50b11",
+  "note_hash": "0c8ed375211d3cb5f53755c745cc0f305eed0c6addfb42077dbbdd4428b96185",
   "note_path": "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -530,7 +530,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

@@ -37,12 +37,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.07,
+  "load_bearing_score": 10.383,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "91158f04a69cb2777a0e7f2a9cc7a6fc68f487c5c12602431793e3e617a321a1",
+  "note_hash": "3ca7d486b5cf48cce8370dc5774ce9943d91ec358a8220c64260a7ca55520024",
   "note_path": "docs/PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -169,6 +169,6 @@
   },
   "runner_path": "scripts/frontier_planck_link_local_first_variation_p_a_forcing.py",
   "title": "Planck Link-Local First-Variation P_A Forcing Theorem",
-  "transitive_descendants": 94,
+  "transitive_descendants": 117,
   "verdict_rationale": null
 }

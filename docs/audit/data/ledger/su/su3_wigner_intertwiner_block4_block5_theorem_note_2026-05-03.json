@@ -33,12 +33,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.591,
+  "load_bearing_score": 12.524,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "b0639aafd017107edd674df985861b5748db8a819d51f0e92e6ee809a1ce143f",
+  "note_hash": "6e5f7d12eee8e00115b32270ec25209c8498f99af97f2c05ba450c631829efe1",
   "note_path": "docs/SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -425,7 +425,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "relabel_date": "2026-05-06T17:45:26.977035+00:00",
   "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
   "runner_check_breakdown": {
@@ -437,6 +437,6 @@
   },
   "runner_path": "scripts/frontier_su3_wigner_l3_cube_partition.py",
   "title": "SU(3) Wigner Engine Block 4: L_s=3 PBC Cube Partition-Function Staging",
-  "transitive_descendants": 770,
+  "transitive_descendants": 735,
   "verdict_rationale": null
 }

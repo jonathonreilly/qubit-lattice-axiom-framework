@@ -43,7 +43,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "84d7a39ebf6622d88ebaa49c5810b24cd0e44d2f32bf1b652f720e59d78ec2ee",
+  "note_hash": "7453c1ff154de76474f544d024a4eba2544f1e48d9a23c5ea59a59afeabbfb9d",
   "note_path": "docs/GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -210,7 +210,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

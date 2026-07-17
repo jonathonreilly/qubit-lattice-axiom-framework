@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.285,
+  "load_bearing_score": 8.322,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -6215,6 +6215,6 @@
   },
   "runner_path": "scripts/frontier_staggered_axis_symmetry_s3_discriminator.py",
   "title": "Physical Staggered Axis-Symmetry on the hw=1 Triplet is the Full S_3",
-  "transitive_descendants": 38,
+  "transitive_descendants": 39,
   "verdict_rationale": null
 }

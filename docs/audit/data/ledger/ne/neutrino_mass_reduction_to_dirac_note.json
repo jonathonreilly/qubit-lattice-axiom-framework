@@ -23,7 +23,6 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "charged_lepton_two_higgs_canonical_reduction_note",
     "higgs_vacuum_explicit_systematic_note",
     "higgs_mass_derived_note"
   ],
@@ -33,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 16.162,
+  "load_bearing_score": 16.098,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "7055a5cfb4223e80468508edb5a526063dc9164cbe9fda2d15cce82f2c61eb1b",
+  "note_hash": "112a6c0bef50e923f4bc0956ef559baec26f505f0a043662aa24554e3efef5b5",
   "note_path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -351,7 +350,7 @@
   },
   "runner_path": "scripts/frontier_neutrino_mass_reduction_to_dirac.py",
   "title": "Neutrino Mass Reduction To The Dirac Lane",
-  "transitive_descendants": 809,
+  "transitive_descendants": 774,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

@@ -27,8 +27,7 @@
     "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
     "yt_p1_i_s_revision_verification_note_2026-04-17",
     "yt_p1_loop_geometric_bound_note_2026-04-17",
-    "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
-    "plaquette_self_consistency_note",
+    "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16",
     "yt_ward_identity_derivation_theorem"
   ],
   "direct_in_degree": 4,
@@ -39,12 +38,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.757,
+  "load_bearing_score": 11.697,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5a03706c858ccf8eb5a8021c887a90f5b778364e1de373b887e9a6e8309ca018",
+  "note_hash": "7df829939fa52d11175c01ea041f462cd93098def6801fba3cd583ad90116eb3",
   "note_path": "docs/YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -183,6 +182,6 @@
   },
   "runner_path": "scripts/frontier_yt_p1_delta_2_bz.py",
   "title": "P1 \u0394_2 (C_A Channel) BZ Computation Note",
-  "transitive_descendants": 864,
+  "transitive_descendants": 829,
   "verdict_rationale": null
 }

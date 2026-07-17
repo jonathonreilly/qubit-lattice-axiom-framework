@@ -48,7 +48,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 16.16,
+  "load_bearing_score": 16.17,
   "load_bearing_step": "Once the barycentric-dyadic refinement maps are chosen geometrically, they induce canonical coarse/fine splittings, so the exact Schur pushforward applies directly on the same canonical discrete net.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -285,6 +285,6 @@
   },
   "runner_path": "scripts/frontier_universal_qg_canonical_refinement_net.py",
   "title": "Universal QG Canonical Geometric Refinement Net on `PL S^3 x R`",
-  "transitive_descendants": 142,
+  "transitive_descendants": 143,
   "verdict_rationale": "The source note's main step is an algebraic/geometric compatibility assertion over cited inputs, not a first-principles computation. However, the cited Lorentzian global atlas authority is explicitly audited_conditional, while the UV-finite partition and projective Schur closure authorities are unaudited. In addition, the restricted packet asserts rather than proves the bridge from barycentric-dyadic refinement maps to canonical Schur coarse/fine splittings. Under the rubric, those open dependencies force audited_conditional rather than audited_clean."
 }

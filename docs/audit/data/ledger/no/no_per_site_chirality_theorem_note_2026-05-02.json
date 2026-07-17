@@ -32,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 15.922,
+  "load_bearing_score": 15.893,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "67ca56045cd5462723734592b727d1c307be42f533eedb2394115b930b003cb2",
+  "note_hash": "03747906f5b5b63ae6e4c0d26f017893b95fc23c3df56974c595292f6d8706ef",
   "note_path": "docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -985,7 +985,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -995,6 +995,6 @@
   },
   "runner_path": "scripts/no_per_site_chirality_check.py",
   "title": "No \u03b3_5 Chirality Operator in the One-Qubit Operator Algebra",
-  "transitive_descendants": 1371,
+  "transitive_descendants": 1344,
   "verdict_rationale": null
 }

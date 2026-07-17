@@ -29,12 +29,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 19.145,
+  "load_bearing_score": 19.12,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4d2b9c8ca5a883eb1f4b2d0b95ceac365b61de74e842390257ec646adfdf8235",
+  "note_hash": "156c1a468ccece4ebe0fdbb6cdd416fd76dc8b046565b53f9e19781609d27614",
   "note_path": "docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1293,7 +1293,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/fermion_parity_z2_grading_check.py",
-  "title": "Fermion Parity (-1)^Q\u0302 and Z_2 Grading on Framework Fock Space",
-  "transitive_descendants": 1600,
+  "title": "Fermion-Parity Grading on an Ordered Finite Occupation Space",
+  "transitive_descendants": 1573,
   "verdict_rationale": null
 }

@@ -31,13 +31,13 @@
     "time_axis_is_the_history_index_record_monotone_direction_bounded_note_2026-07-03",
     "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
   ],
-  "direct_in_degree": 6,
+  "direct_in_degree": 7,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.17,
+  "load_bearing_score": 6.959,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -342,6 +342,6 @@
   },
   "runner_path": "scripts/frontier_records_only_os_reconstruction_2026_07_11.py",
   "title": "Records-Only OS Reconstruction on a Time-Homogeneous Untied First-Order Measure",
-  "transitive_descendants": 8,
+  "transitive_descendants": 10,
   "verdict_rationale": null
 }

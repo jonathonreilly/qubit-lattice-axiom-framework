@@ -39,12 +39,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.322,
+  "load_bearing_score": 7.358,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e31fe4b43a3f887d7de6bc7d30582557686cab1c2ed94a2d2d2b2448ba044d22",
+  "note_hash": "87a7ae1be0adfbd34caea9a5dc4b5589a231227a7e4ea764e89e5a12fe5e022b",
   "note_path": "docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -219,7 +219,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -229,7 +229,7 @@
   },
   "runner_path": "scripts/frontier_color_su3_bridge_from_record_2026_06_05.py",
   "title": "Color SU(3) Symmetric-Base Bridge from Record-Invariance (Bounded Theorem)",
-  "transitive_descendants": 39,
+  "transitive_descendants": 40,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

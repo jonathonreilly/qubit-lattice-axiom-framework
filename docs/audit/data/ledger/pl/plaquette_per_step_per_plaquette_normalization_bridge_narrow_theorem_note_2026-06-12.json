@@ -26,8 +26,7 @@
     "plaquette_observable_uniqueness_bounded_note_2026-05-25",
     "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
     "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
-    "plaquette_marked_slice_bulk_average_translation_bridge_narrow_theorem_note_2026-06-12",
-    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
+    "plaquette_marked_slice_bulk_average_translation_bridge_narrow_theorem_note_2026-06-12"
   ],
   "direct_in_degree": 1,
   "effective_status": "unaudited",
@@ -42,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "68a936cffe48340a13dd3c8a026fcf7b53e34266bb75018474b6680fa13d82e5",
+  "note_hash": "6a55828eb55020ac1b5ec5b392f202dca79c4a5e4ac1580180c11b6a1372b9e5",
   "note_path": "docs/PLAQUETTE_PER_STEP_PER_PLAQUETTE_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

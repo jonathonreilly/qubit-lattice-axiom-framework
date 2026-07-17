@@ -40,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "a0fde48a0986e09109e45880a1c2fd961ea7e2ab72378a3daa1401128b9c3b47",
+  "note_hash": "337502b6828ce7a54860d50993b01b9d5ed68f83796094a181cca13b6c29fdbc",
   "note_path": "docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -326,7 +326,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

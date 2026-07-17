@@ -15,15 +15,14 @@
   "claim_id": "ew_lattice_cos_sq_theta_w_complement_bridge_theorem_note_2026-04-26",
   "claim_scope": null,
   "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "yt_ew_color_projection_theorem",
     "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
     "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",
     "left_handed_charge_matching_note",
@@ -46,7 +45,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5d9e76abaeda450ceeceda6d73aeaee03f7fcef285ad6f9688a7e26c92f8b4c6",
+  "note_hash": "5c6879cedabec5b644ab91c1b4fb75ebdf7bf8b45ce392bce348d6c04c9e1d38",
   "note_path": "docs/EW_LATTICE_COS_SQ_THETA_W_COMPLEMENT_BRIDGE_THEOREM_NOTE_2026-04-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -87,7 +86,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_ew_lattice_cos_sq_theta_w_complement_bridge.py",
-  "title": "EW-CKM Lattice cos\u00b2(\u03b8_W) Complement Bridge: Four-Way Retained Identity, Support-Tier F5 Companion, and M_W/M_Z Closed Form",
+  "title": "EW-CKM Lattice cos\u00b2(\u03b8_W) Complement Bridge (Historical Title; Defined-Readout Scope)",
   "transitive_descendants": 49,
   "verdict_rationale": null
 }

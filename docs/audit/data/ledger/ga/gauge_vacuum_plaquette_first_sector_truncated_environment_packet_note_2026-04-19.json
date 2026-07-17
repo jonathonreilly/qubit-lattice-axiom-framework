@@ -15,17 +15,15 @@
   "claim_id": "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19",
   "claim_scope": null,
   "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19",
-    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-    "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
+    "gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19"
   ],
   "direct_in_degree": 2,
   "effective_status": "unaudited",
@@ -34,7 +32,8 @@
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
     "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
     "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
-    "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py"
+    "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
+    "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
@@ -43,7 +42,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4e30d12f617c58d6f68034977c54518349794509c5ffab5f8056b44847834d51",
+  "note_hash": "f111ee433284c148d9d50d294e70c13d596bbf4032b697d8dee0572349a7f557",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -309,7 +308,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -318,7 +317,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py",
-  "title": "Gauge-Vacuum Plaquette First-Sector Truncated Environment Packet",
+  "title": "Gauge-Vacuum Plaquette First-Sector Supplied Coefficient Packet",
   "transitive_descendants": 49,
   "unattributed_audit_provenance": [
     {

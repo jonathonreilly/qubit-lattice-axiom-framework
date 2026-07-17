@@ -31,12 +31,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.598,
+  "load_bearing_score": 11.531,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "34d95cba7bb0f40e9ea7c110661ae6b3cbbea9a7c46b16360a3d3382c652151f",
+  "note_hash": "c02281e5cba1ad6edb8257e978ca8426583ac920169fe947922521a71aaad52e",
   "note_path": "docs/PMNS_MINIMAL_BRANCH_NONSELECTION_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -138,6 +138,6 @@
   },
   "runner_path": "scripts/frontier_pmns_minimal_branch_nonselection.py",
   "title": "PMNS Minimal-Branch Current-Atlas Nonselection Theorem",
-  "transitive_descendants": 774,
+  "transitive_descendants": 739,
   "verdict_rationale": null
 }

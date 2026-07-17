@@ -1,88 +1,43 @@
 {
-  "audit_date": "2026-07-07T19:43:27.544975+00:00",
+  "audit_date": null,
   "audit_invocation_history": [],
   "audit_invocation_id": null,
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06": null,
-      "bridge_gap_hk_plaquette_closed_form_note_2026-05-06": null,
-      "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06": null,
-      "su3_casimir_fundamental_theorem_note_2026-05-02": null,
-      "su3_cube_full_rho_perron_2026-05-04": null
-    },
-    "dep_claim_type": {
-      "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06": "no_go",
-      "bridge_gap_hk_plaquette_closed_form_note_2026-05-06": "bounded_theorem",
-      "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06": "open_gate",
-      "su3_casimir_fundamental_theorem_note_2026-05-02": "bounded_theorem",
-      "su3_cube_full_rho_perron_2026-05-04": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06": "unaudited",
-      "bridge_gap_hk_plaquette_closed_form_note_2026-05-06": "unaudited",
-      "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06": "unaudited",
-      "su3_casimir_fundamental_theorem_note_2026-05-02": "unaudited",
-      "su3_cube_full_rho_perron_2026-05-04": "unaudited"
-    },
-    "deps": [
-      "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
-      "bridge_gap_hk_plaquette_closed_form_note_2026-05-06",
-      "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
-      "su3_casimir_fundamental_theorem_note_2026-05-02",
-      "su3_cube_full_rho_perron_2026-05-04"
-    ],
-    "load_bearing_score": 8.753,
-    "runner_hash": "6de88717f28d9e1967a1c3c81776756c2a7b338d3c4998c8feb52692560d5447",
-    "transitive_descendants": 304
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-bridge_gap_hk_cube_perron_note_2-03",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.5",
-  "auditor_model": "gpt-5.5",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The runner genuinely computes the stated finite Perron value from the provided formulas, but the candidate-rho/Perron machinery and Casimir/time/action premises are imported from cited authorities that are not retained-grade in this packet. The co-cycle citation bridge_gap_hk_thermodynamic_stretch_note_2026-05-06 is treated as informational and not used as chain support.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "bridge_gap_hk_cube_perron_note_2026-05-06",
-  "claim_scope": "Fixed L_s=2 heat-kernel cube Perron computation at t=1 using the stated candidate-rho ansatz and finite NMAX convergence, not a thermodynamic-limit or action-uniqueness claim.",
-  "claim_type": "bounded_theorem",
-  "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-07T19:43:27.544975+00:00",
-  "claim_type_provenance": "audited",
-  "criticality": "critical",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
-    "su3_cube_full_rho_perron_2026-05-04",
-    "bridge_gap_hk_plaquette_closed_form_note_2026-05-06",
-    "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
-    "su3_casimir_fundamental_theorem_note_2026-05-02"
-  ],
-  "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "deps": [],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.043,
-  "load_bearing_step": "Substituting heat-kernel character coefficients into the L_s=2 candidate-rho Perron transfer operator gives P_cube_HK(L_s=2,t=1)=0.5223243151, stable across NMAX.",
-  "load_bearing_step_class": "C",
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "0ba44bdaa6279ca68194fd1b3f33a583fa62b4a518550c8731e72d04a34e5c17",
+  "note_hash": "9731b6a715878d2abf01c8792bece4cad7fa8e9cde9779d7e7a87373490d46e6",
   "note_path": "docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md",
-  "notes_for_re_audit_if_any": "missing_dependency_edge promote su3_cube_full_rho_perron_2026-05-04, bridge_gap_hk_plaquette_closed_form_note_2026-05-06, and su3_casimir_fundamental_theorem_note_2026-05-02 to retained-grade or inline their required premises; also add a dated downstream-hygiene line to this note's own boundary and repair the non-load-bearing co-cycle markdown links to bridge_gap_hk_thermodynamic_stretch_note_2026-05-06.",
-  "open_dependency_paths": [
-    "docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md",
-    "docs/BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md",
-    "docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md",
-    "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md"
-  ],
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
   "previous_audits": [
     {
       "archived_at": "2026-07-07T19:46:03.068806+00:00",
@@ -156,10 +111,87 @@
         "total_pass": 9
       },
       "verdict_rationale": "The primary runner source is substantive: it defines SU(3) dimensions, Casimirs, HK coefficients, candidate rho, the recurrence operator, local HK factor, and symmetric Perron solve, and its cached output matches the note's numerical claim. However, the load-bearing candidate-rho/Perron ansatz is inherited from docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md and the Casimir/HK premises are cited through unaudited authorities, so the chain is conditional under the rubric. The co-cycle link docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md is non-load-bearing/informational for this re-audit, but source-graph repair is still needed to strip or rewrite those markdown links before effective_status can leave retained_pending_chain."
+    },
+    {
+      "archived_at": "2026-07-17T07:50:16.638653+00:00",
+      "archived_for_note_hash": "0ba44bdaa6279ca68194fd1b3f33a583fa62b4a518550c8731e72d04a34e5c17",
+      "audit_date": "2026-07-07T19:43:27.544975+00:00",
+      "audit_invocation_history": [],
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06": null,
+          "bridge_gap_hk_plaquette_closed_form_note_2026-05-06": null,
+          "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06": null,
+          "su3_casimir_fundamental_theorem_note_2026-05-02": null,
+          "su3_cube_full_rho_perron_2026-05-04": null
+        },
+        "dep_claim_type": {
+          "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06": "no_go",
+          "bridge_gap_hk_plaquette_closed_form_note_2026-05-06": "bounded_theorem",
+          "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06": "open_gate",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "bounded_theorem",
+          "su3_cube_full_rho_perron_2026-05-04": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06": "unaudited",
+          "bridge_gap_hk_plaquette_closed_form_note_2026-05-06": "unaudited",
+          "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06": "unaudited",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "unaudited",
+          "su3_cube_full_rho_perron_2026-05-04": "unaudited"
+        },
+        "deps": [
+          "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
+          "bridge_gap_hk_plaquette_closed_form_note_2026-05-06",
+          "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
+          "su3_casimir_fundamental_theorem_note_2026-05-02",
+          "su3_cube_full_rho_perron_2026-05-04"
+        ],
+        "load_bearing_score": 8.753,
+        "runner_hash": "6de88717f28d9e1967a1c3c81776756c2a7b338d3c4998c8feb52692560d5447",
+        "transitive_descendants": 304
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-bridge_gap_hk_cube_perron_note_2-03",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely computes the stated finite Perron value from the provided formulas, but the candidate-rho/Perron machinery and Casimir/time/action premises are imported from cited authorities that are not retained-grade in this packet. The co-cycle citation bridge_gap_hk_thermodynamic_stretch_note_2026-05-06 is treated as informational and not used as chain support.",
+      "claim_scope": "Fixed L_s=2 heat-kernel cube Perron computation at t=1 using the stated candidate-rho ansatz and finite NMAX convergence, not a thermodynamic-limit or action-uniqueness claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T19:43:27.544975+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substituting heat-kernel character coefficients into the L_s=2 candidate-rho Perron transfer operator gives P_cube_HK(L_s=2,t=1)=0.5223243151, stable across NMAX.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge promote su3_cube_full_rho_perron_2026-05-04, bridge_gap_hk_plaquette_closed_form_note_2026-05-06, and su3_casimir_fundamental_theorem_note_2026-05-02 to retained-grade or inline their required premises; also add a dated downstream-hygiene line to this note's own boundary and repair the non-load-bearing co-cycle markdown links to bridge_gap_hk_thermodynamic_stretch_note_2026-05-06.",
+      "open_dependency_paths": [
+        "docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md",
+        "docs/BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md",
+        "docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md",
+        "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 2,
+        "D": 4,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The primary runner source is substantive: it defines SU(3) dimensions, Casimirs, HK coefficients, candidate rho, the recurrence operator, local HK factor, and symmetric Perron solve, and its cached output matches the note's numerical claim. However, the load-bearing candidate-rho/Perron ansatz is inherited from docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md and the Casimir/HK premises are cited through unaudited authorities, so the chain is conditional under the rubric. The co-cycle link docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md is non-load-bearing/informational for this re-audit, but source-graph repair is still needed to strip or rewrite those markdown links before effective_status can leave retained_pending_chain."
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "restoration_history": [
     {
       "archived_at": "2026-07-07T19:46:03.068806+00:00",
@@ -170,14 +202,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 3,
+    "A": 0,
     "B": 0,
-    "C": 2,
-    "D": 4,
-    "total_pass": 9
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
   },
   "runner_path": "scripts/probe_hk_cube_perron_l2_2026_05_06.py",
-  "title": "Bridge Gap \u2014 HK Cube Perron L_s=2 (Block 06)",
-  "transitive_descendants": 745,
-  "verdict_rationale": "The primary runner source is substantive: it defines SU(3) dimensions, Casimirs, HK coefficients, candidate rho, the recurrence operator, local HK factor, and symmetric Perron solve, and its cached output matches the note's numerical claim. However, the load-bearing candidate-rho/Perron ansatz is inherited from docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md and the Casimir/HK premises are cited through unaudited authorities, so the chain is conditional under the rubric. The co-cycle link docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md is non-load-bearing/informational for this re-audit, but source-graph repair is still needed to strip or rewrite those markdown links before effective_status can leave retained_pending_chain."
+  "title": "Bridge Gap \u2014 HK Cube Perron (Legacy Identity): Finite Weighted-Transfer Theorem",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
 }

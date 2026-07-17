@@ -37,12 +37,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.062,
+  "load_bearing_score": 11.994,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "9ab5a05cfce00689c21c63cb994b65aa8812bb89c56cda5e44f3f4b033dbedc9",
+  "note_hash": "02adccf291e06fc0cf2f9dc57a8ac68e65fc7f2ae10e304f984eaa6ac239bdc6",
   "note_path": "docs/PMNS_ORIENTED_CYCLE_REDUCED_CHANNEL_NONSELECTION_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -168,6 +168,6 @@
   },
   "runner_path": "scripts/frontier_pmns_oriented_cycle_reduced_channel_nonselection.py",
   "title": "PMNS Oriented Cycle Reduced-Channel Nonselection",
-  "transitive_descendants": 755,
+  "transitive_descendants": 720,
   "verdict_rationale": null
 }

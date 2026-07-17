@@ -36,12 +36,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.47,
+  "load_bearing_score": 10.397,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5438bef21c63d87425155517e1c5931abe14a71009edca979c7d6c6f77f0bfc5",
+  "note_hash": "48b1fc0a0aff1847e3d0fec09eae5c0b90df4e216f8fc0f1d734d8d8297b70cc",
   "note_path": "docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -307,7 +307,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -317,7 +317,7 @@
   },
   "runner_path": "scripts/magnitude_reads_minimal_record_block_2026_06_06.py",
   "title": "Record Does Not Select the Magnitude Minimal Block",
-  "transitive_descendants": 708,
+  "transitive_descendants": 673,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

@@ -37,12 +37,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 26.176,
+  "load_bearing_score": 26.113,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f18f408729c5d106b23809d4718d9ff8b5dd4d64a372fa0bc4bd70bdc0db74cf",
+  "note_hash": "aa888e4fdffe397dde23fd6737d4d69c862746f74506d2c3cf3f3d5754fdb908",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -662,7 +662,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -672,7 +672,7 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
   "title": "Gauge-Vacuum Plaquette Source-Sector Reference Perron Solve",
-  "transitive_descendants": 817,
+  "transitive_descendants": 782,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

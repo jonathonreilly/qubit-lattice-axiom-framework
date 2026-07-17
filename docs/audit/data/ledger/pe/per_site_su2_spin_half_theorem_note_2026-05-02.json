@@ -32,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 15.669,
+  "load_bearing_score": 15.609,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "cbc3b65d854de30136ea77b06438b730a737ef372fee5455aba3b9e7df6c704d",
+  "note_hash": "3c5a263ea55cb9409cfb8ef8bc54f4329a7b0d933115311d4e65768a251ad178",
   "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -588,7 +588,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -598,6 +598,6 @@
   },
   "runner_path": "scripts/per_site_su2_spin_half_check.py",
   "title": "Per-Site Pauli Action Carries the Unique j = 1/2 su(2) Module",
-  "transitive_descendants": 813,
+  "transitive_descendants": 780,
   "verdict_rationale": null
 }

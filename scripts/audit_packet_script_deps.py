@@ -45,6 +45,12 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # This theorem note's N7 steelman is the faithful-but-reducible direct sum
+    # of the two complexified simple-sector modules.  The independent helper is
+    # not imported by the primary stress runner, so expose it only to this row.
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10": [
+        "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py",
+    ],
     # This positive-theorem packet names the irreducible-faithful boundary.
     # Its independently implemented direct-sum steelman is not imported by
     # the primary runner, so register that exact N7 surface claim-scoped.

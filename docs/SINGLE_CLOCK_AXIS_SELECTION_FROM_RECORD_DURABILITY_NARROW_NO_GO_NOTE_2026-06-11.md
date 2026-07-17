@@ -113,8 +113,8 @@ Quoted verbatim from the retained boundaries (one hop):
 |---|---|---|
 | The exchange certificate `W M_KS W^T = M_KS` (residual 0) and the declared (B-AXIS.1–3) | the structure under attack; baseline recomputed in runner block [S] | [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) — bounded_theorem, same-lane re-scope; certificate recomputed, not cited blind |
 | N2/N4/N5 reopening clauses; transfer-/τ-relativity | Section 2; runner [D] verbatim checks | `SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md` — retained_no_go |
-| Record axiom text: durable registration; supplies no "time metric" | route A; runner [RT-REC] | [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — approved axiom memo |
-| Record formation not unconditionally forced | route A ("at least one record exists" is not free) | [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) — retained_no_go |
+| Record axiom text: record permanence; supplies no "time metric" | route A; runner [RT-REC] | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — current axiom memo |
+| Record formation rule/process/state/site/weight/rate not forced (occurrence axiom-supplied) | route A (occurrence alone carries no axis label) | [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) — no_go source note (narrowed 2026-07-05) |
 | Clock map supplied, never derived from counts | route A; the record-shaped pin | [`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md) — retained_no_go |
 | (CAP-K) registration cone: (REG-dyn) consumes the framework `H`, (REG-tau) consumes a supplied window | route A circularity check | [`OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md`](OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md) — bounded_theorem (conditional realization class) |
 | Anomaly chain constrains the count `d_t`, "not which axis is temporal" | route B | [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) — bounded_theorem (downstream consumer; its own non-circularity text is the kill) |
@@ -164,8 +164,8 @@ chosen, and `W` transports the entire package.
 
 ### 4.2 Route A2 — record/durability does not anchor the axis
 
-The Record axiom's durability clause is intrinsically ordered ("Durable
-means fixed once registered"). The hostile question: is "the axis along
+The Record axiom's permanence clause is intrinsically ordered ("records
+are permanent"). The hostile question: is "the axis along
 which records are durable" pinned to the transfer direction by any
 retained record row, so that B-AXIS would reduce to "at least one record
 exists"? Three kills, one computed and two textual, all at one hop:
@@ -181,10 +181,12 @@ exists"? Three kills, one computed and two textual, all at one hop:
    structure. Durability cannot distinguish W-related axes.
 2. **The record rows are axis-blind by their own text (one hop).** The
    Record axiom supplies no "time metric" (verbatim exclusion);
-   record formation "does **not** hold unconditionally" (retained
-   no-go), so "at least one record exists" is itself a premise, and even
-   granting it, the clock/rate interface (retained_no_go) proves the
-   event order carries no metric and — a fortiori — no lattice-axis
+   record occurrence is axiom-supplied ("Records form.") while the
+   narrowed record-formation no-go keeps the formation
+   rule/process/state/site/weight/rate unforced, so occurrence carries
+   no site/axis datum, and even granting records, the clock/rate
+   interface proves the event order carries no metric and — a fortiori
+   — no lattice-axis
    label: "Without the supplied `tau`, the same record history supports
    many inequivalent rates." The post-record surface supplies order,
    counts, and prefixes; the association of that order with a lattice
@@ -242,9 +244,9 @@ What WOULD break the exchange? The runner computes the boundary:
   event order is parametrized by lattice axis `μ`". By Section 4.2 this
   is exactly the bridge the clock/rate interface leaves to be supplied;
   given it, the axis label follows trivially. It is record-adjacent but
-  **not** an axiom consequence (record formation is not forced; the
-  axiom supplies no time metric), so it is a declared input, not an
-  axiom change.
+  **not** an axiom consequence (the axiom supplies record occurrence but
+  no formation rule/site/rate and no time metric), so it is a declared
+  input, not an axiom change.
 - **(PIN-EXT) — weaker, regulator-level.** Asymmetric extents
   `L_τ ≠ L_1` also discriminate (computed: sector spectral radii differ
   on `(6,4,2,2)`), but extents are finite-block regulator data; this
@@ -275,8 +277,10 @@ for any future axis-selection row.
 - **Clock/rate interface:** respected and consumed — no rate, no clock,
   no axis is derived from record counts; the pin's record-shaped form is
   the *supplied-bridge* opening that the no-go itself names.
-- **Record-formation no-go:** respected — nothing here asserts records
-  form; route A2 is conditional on records existing and fails anyway.
+- **Record-formation no-go (narrowed 2026-07-05):** respected —
+  occurrence is axiom-supplied ("Records form."); nothing here derives a
+  formation rule/process/state/site/weight/rate, and route A2 fails even
+  granting records.
 
 ## 7. No-Go Discipline Gate
 
@@ -443,8 +447,8 @@ Z_2 datum (BC asymmetry) or an equivalent registration-direction bridge.
 ------------------------------------------------------------------------
 [RT-REC] ROUTE A2: does record durability anchor the axis? (textual + computed: NO)
 ------------------------------------------------------------------------
-  [PASS][B] Record axiom is axis-blind by its own text: a record supplies no 'time metric' (verbatim in the exclusion list)  -- MINIMAL_AXIOMS_2026-06-05.md
-  [PASS][B] record formation is not forced (retained_no_go): 'at least one record exists' is NOT an axiom consequence, so no axis can be derived from it unconditionally  -- record-formation no-go quoted
+  [PASS][B] Record axiom is axis-blind by its own text: 'time metric' sits in the open-gates exclusion list and record permanence carries no axis label  -- MINIMAL_AXIOMS_2026-06-29.md
+  [PASS][B] record formation supplies no axis datum: occurrence is axiom-supplied ('Records form.') and the narrowed no-go keeps the formation rule/process/state/site/weight/rate unforced, so no axis label can be derived from record formation  -- narrowed record-formation no-go quoted
   [PASS][B] the clock map is supplied, never derived from records (retained_no_go): 'Without the supplied `tau`, the same record history supports many inequivalent rates' — the event ORDER carries no lattice-axis label  -- clock/rate interface quoted
   [PASS][B] the CAP-K registration cone is axis-CONDITIONAL, not axis-selecting: its dynamics clause (REG-dyn) consumes the framework H and its window (REG-tau) consumes a supplied clock — both downstream of B-AXIS, so citing it for axis selection would be circular  -- CAP-K note clauses present
   [PASS][A] durability ('fixed once registered, never un-registered') is operator-order monotonicity of the record counter, and operator order is unitary-transport invariant: the conjugated counter is monotone with the same increment spectra — durability CANNOT distinguish W-related axes  -- monotone before/after = True/True, max increment-spec diff = 8.9e-16
@@ -497,7 +501,7 @@ promote any row.
   [`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md),
   [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md)
 - record surface consulted:
-  [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md),
+  [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md),
   [`OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md`](OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md),
   [`SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md`](SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md)
 - anomaly consumer (cross-reference; its own text is the route-B kill):

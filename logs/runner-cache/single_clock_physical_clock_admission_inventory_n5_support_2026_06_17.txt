@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py
-runner_sha256: a05b41d7cc0b376b421019858f0a0b61a3f0fcc1f00800a61d6fdbd739e6d2ba
+runner_sha256: 5e4d113d9c977a8fab2216cfff90efede62546fb78dfb3e560981d47e5b9457d
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -14,7 +14,7 @@ PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'Does not add an axiom'
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains '**Claim boundary:** source-inventory support'
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'No second physical-clock transfer is currently admitted.'
-PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains '## Admission Manifest (2026-07-10)'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains '## Admission Manifest (2026-07-16)'
 PASS: note states why the support is source-inventory, not algebraic exclusion
 PASS: single-clock source names B-AXIS.3
 PASS: B-AXIS.3 is phrased as an admission statement
@@ -30,15 +30,15 @@ PASS: registry lists minimal_axioms as a canonical premise node
 PASS: registry current path for minimal_axioms is the 2026-06-29 memo
 PASS: registry aliases the 2026-06-05 path to the same premise node
 PASS: note carries exactly one fenced JSON manifest block -- found=1
-PASS: manifest is explicitly dated 2026-07-10
+PASS: manifest is explicitly dated 2026-07-16
 PASS: manifest packet is the parent theorem note plus this inventory note
 PASS: manifest axiom authority matches the registry premise node
-PASS: manifest enumerates 19 packet documents -- got=19
+PASS: manifest enumerates 18 packet documents -- got=18
 PASS: manifest entry paths are unique
 PASS: closed enumeration: manifest entries equal the live packet link union -- missing=[] stale=[]
 PASS: per-entry linked_by matches live link provenance and every role is stated -- mismatches=[]
 PASS: per-entry h1 titles match the live document headers -- mismatches=[]
-PASS: exactly the two minimal-axiom paths are marked as aliases of minimal_axioms
+PASS: exactly the current minimal-axiom path is marked as an alias of minimal_axioms
 PASS: every manifest alias row resolves inside the registry premise node
 PASS: manifest proposes exactly one physical-clock candidate
 PASS: candidate T_hat^2 evaluates as admitted from source evidence -- all four criteria evidenced in packet sources

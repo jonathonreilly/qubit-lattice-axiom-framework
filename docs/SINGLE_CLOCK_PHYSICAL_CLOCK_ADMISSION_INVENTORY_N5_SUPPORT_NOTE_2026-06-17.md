@@ -71,7 +71,7 @@ current admitted physical-clock transfers = { (T_hat^2, 2 a_tau) }
 
 No second physical-clock transfer is currently admitted.
 
-## Admission Manifest (2026-07-10)
+## Admission Manifest (2026-07-16)
 
 The inventory above is pinned to the explicit dated manifest below instead of
 a runner-preset list. The manifest is carried in this note as a fenced JSON
@@ -87,9 +87,12 @@ recomputes its content from source text:
   direction, so the enumeration cannot silently go stale.
 - **Axiom authority.** The axiom leg reads the current 2026-06-29
   minimal-axiom memo through the stable `minimal_axioms` premise node in
-  `docs/audit/data/axiom_premise_nodes.json`; the 2026-06-05 path cited by
-  the parent packet is a registered alias of the same node, not a second
-  authority.
+  `docs/audit/data/axiom_premise_nodes.json`. The parent packet now cites
+  the 2026-06-29 memo directly; the historical 2026-06-05 path remains a
+  registered alias of the same premise node in the registry, not a second
+  authority. (Manifest refreshed 2026-07-16 after the parent packet
+  re-keyed its axiom citation from the aliased 2026-06-05 path to the
+  current 2026-06-29 memo.)
 - **Computed admission.** `candidates` names each proposed physical-clock
   transfer with per-criterion source evidence (file plus exact anchor) for
   the four-part admission definition above. The runner evaluates the four
@@ -110,7 +113,7 @@ recomputes its content from source text:
 
 ```json
 {
-  "manifest_date": "2026-07-10",
+  "manifest_date": "2026-07-16",
   "surface": "single-clock clock/evolution source packet",
   "packet_notes": [
     "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
@@ -177,16 +180,9 @@ recomputes its content from source text:
       "role": "equal-time tensor-locality input; supplies no transfer"
     },
     {
-      "path": "docs/MINIMAL_AXIOMS_2026-06-05.md",
-      "h1": "Minimal Framework Axioms (Lattice, Quantum, Record)",
-      "linked_by": ["parent"],
-      "role": "aliased historical path of the stable minimal_axioms premise node",
-      "alias_of": "minimal_axioms"
-    },
-    {
       "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "h1": "Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)",
-      "linked_by": ["n5"],
+      "linked_by": ["parent", "n5"],
       "role": "current minimal-axiom memo; axiom authority for this manifest; supplies no clock",
       "alias_of": "minimal_axioms"
     },

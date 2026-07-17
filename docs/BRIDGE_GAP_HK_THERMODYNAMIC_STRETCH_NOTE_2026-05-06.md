@@ -1,6 +1,6 @@
 # Bridge Gap — Heat-Kernel Thermodynamic ⟨P⟩(6) Stretch Attempt (Block 03)
 
-**Date:** 2026-05-06
+**Date:** 2026-05-06; 2026-07-16 direct-consumer correction
 **Type:** stretch attempt + named obstruction
 **Claim type:** open_gate
 **Status:** stretch-attempt note + named obstruction packet on the
@@ -18,8 +18,10 @@ Primary cache: `logs/runner-cache/frontier_hk_thermodynamic_stretch_source_packe
 
 The runner checks this note as a source-level open-gate packet: Block 01's
 `t(6)=1`, Block 02's exact single-plaquette `exp(-2/3)`, the Block 03
-multi-plaquette factorization/obstruction, and the later Block 06 finite-cube
-HK Perron comparator. It does not assign an audit verdict or retained status.
+multi-plaquette factorization/obstruction, and the 2026-07-16 correction that
+the historical Block 06 row is now a formal finite-matrix theorem rather than
+a physical finite-cube comparator. It does not assign an audit verdict or
+retained status.
 
 ## Question
 
@@ -141,15 +143,18 @@ combinatorial complexity of `F_Λ` grows exponentially.
 
 For Wilson on the L_s=2 cube,
 [`SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md`](SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md)
-established a finite character-truncated computation giving 0.4291.
-The same machinery adapted to HK weights (`d_λ exp(-t·C_2/2)` instead
-of `c_λ(β)`) would give an analogous L_s=2 finite result.
+records a finite character-truncated computation. A historical follow-up
+instantiated a formally similar weighted-transfer matrix, but its 2026-07-16
+repair no longer identifies the defined dimension polynomial, quadratic,
+recurrence, weights, transfer, or scalar with an HK lattice cube. Therefore it
+does not provide the analogous physical finite result asserted by the older
+version of this paragraph.
 
-But L_s=2 is structurally insufficient — per the exhausted-routes
-consolidation (route 1.2), even with Wilson the L_s=2 cube gives gap
-~543× ε_witness. HK at L_s=2 would similarly be insufficient for
-ε_witness precision; **the thermodynamic limit `L → ∞` requires
-controlled extrapolation**.
+Path A remains open on this source surface. Reusing the formal finite-matrix
+number would first require an independently audited bridge from the proposed
+physical measure and geometry to every defined matrix factor. Even after such
+a bridge, **the thermodynamic limit `L → ∞` would require controlled
+extrapolation**.
 
 For HK, the controlled extrapolation has structural support that Wilson
 lacks: each L_s contributes a Casimir-suppressed term, and the Casimir
@@ -239,13 +244,11 @@ heat-kernel expression. It does not derive a thermodynamic value.
 
 - A specific closed-form value for `⟨P⟩_HK(6)` in the thermodynamic
   limit. The factorization (T3.a) is exact but uncomputed.
-- The L_s=2 finite-cube computation analogous to the Wilson case has now
-  been done in
-  [`BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md):
-  `P_cube_HK(L_s=2,t=1)=0.5223243151`. This closes Path A as a
-  finite-volume comparator only; Block 03's named obstruction stands because
-  the result remains fixed-volume and still needs an `L_s -> infinity`
-  cluster-decomposition / exponential-clustering estimate.
+- The physical L_s=2 finite-cube computation analogous to the Wilson case.
+  The legacy row `BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md` now proves only
+  a self-contained finite weighted-transfer theorem about defined matrices.
+  It supplies neither the physical identification bridge nor a finite-volume
+  comparator for this open gate.
 - The cluster-decomposition / exponential-clustering estimate that
   bounds `|⟨P⟩_HK(6) - ⟨P⟩_HK,Λ_finite(6)|`.
 - Block 04's action-form uniqueness question — Wilson vs HK uniqueness
@@ -255,16 +258,12 @@ heat-kernel expression. It does not derive a thermodynamic value.
 
 Two paths from here:
 
-**Path A (computational, finite-cube):** adapt the existing L_s=2
-cube full-ρ Perron runner to HK weights. Compute `⟨P⟩_HK,L_s=2(6)`
-and compare to:
-- Wilson L_s=2 cube: 0.4291
-- Wilson 1-plaq: 0.4225
-- HK 1-plaq (Block 02): 0.5134
-- Lattice MC thermo: ≈ 0.5934
-
-A clean L_s=2 HK computation should close to a specific value via the
-same character-truncation machinery.
+**Path A (computational, finite-cube):** first derive or cite a retained-grade
+bridge identifying a finite weighted-transfer construction with the proposed
+L_s=2 HK measure, geometry, local insertion, normalized state, and observable.
+Only then compute `⟨P⟩_HK,L_s=2(6)` and assess it as a physical finite-volume
+quantity. The legacy formal theorem does not discharge any of those bridge
+clauses.
 
 **Path B (analytic, thermodynamic):** derive the cluster-decomposition
 / exponential-clustering estimate from approved premises (reflection
@@ -282,6 +281,7 @@ Both paths are next-cycle work, scoped beyond this stretch attempt's
 - Sister Wilson L_s=2: [`SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md`](SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md) (Wilson L_s=2 = 0.4291)
 - Wilson β⁶-completion freedom: [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md`](GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md)
 - Existing cube Perron infra: [`scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py`](../scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py)
-- Completed Path A comparator: [`BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md)
+- Historical Block 06 identity (formal-only after the 2026-07-16 repair):
+  `BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md`.
 - Casimir authority: [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md)
 - Standard methodology: same as Block 01-02 (Drouffe-Zuber 1983 "Strong coupling and mean field methods in lattice gauge theories" Phys Rep 102 contains the heat-kernel multi-plaquette character expansion in detail)

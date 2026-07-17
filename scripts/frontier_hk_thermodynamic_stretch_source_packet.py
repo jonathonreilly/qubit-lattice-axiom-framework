@@ -5,9 +5,11 @@ Authority note:
     docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md
 
 This runner checks Block 03 as an open-gate packet: the heat-kernel
-multi-plaquette factorization is explicit, the single-plaquette and L_s=2
-finite-cube artifacts are runner-backed, and the thermodynamic-limit blocker
-remains the missing cluster-decomposition / exponential-clustering estimate.
+multi-plaquette factorization is explicit, the single-plaquette artifact is
+runner-backed, and the thermodynamic-limit blocker remains the missing
+cluster-decomposition / exponential-clustering estimate.  It also enforces the
+2026-07-16 downstream firewall: the legacy Block 06 row is formal finite
+linear algebra and is not evidence for a physical L_s=2 HK cube.
 It does not assign an audit verdict.
 
 Exit code: 0 on full PASS, 1 on any FAIL.
@@ -109,8 +111,8 @@ def main() -> int:
     print("HK THERMODYNAMIC STRETCH SOURCE PACKET")
     print("=" * 78)
     print()
-    print("Question: is Block 03 now runner-backed as an open gate, with")
-    print("the later L_s=2 HK cube result included but not overclaimed?")
+    print("Question: is Block 03 runner-backed as an open gate, with the")
+    print("legacy Block 06 formal theorem excluded from physical Path A?")
     print()
 
     note_path = "docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md"
@@ -129,24 +131,24 @@ def main() -> int:
     require_fragment("lambda-sum obstruction is named", note, "Obstruction (O3.2): convergence of the (λ_p)-sum at t=1")
     require_fragment("cluster estimate is the open premise blocker", note, "cluster-decomposition / exponential-clustering estimate")
     require_fragment("current premises do not contain the cluster estimate", note, "current approved primitive or\nretained-premise surface")
-    require_fragment("Block 06 update is cited", note, "BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md")
-    require_fragment("Block 06 finite cube value is cited", note, "0.5223243151")
-    require_fragment("Block 06 still leaves the named obstruction open", note, "Block 03's named obstruction stands")
+    require_fragment("Block 06 formal-only correction is recorded", note, "formal finite-matrix theorem rather than")
+    require_fragment("physical Path A is explicitly still open", note, "Path A remains open on this source surface")
+    require_fragment("physical identification bridge is required", note, "independently audited bridge from the proposed")
+    require_fragment("legacy row no longer supplies a finite-volume comparator", note, "supplies neither the physical identification bridge nor a finite-volume")
+    check(
+        "Block 06 is no longer a citation-graph dependency",
+        "[BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md](" not in note,
+        "target appears only as code-formatted historical identity",
+    )
 
     t_at_beta_6 = 1.0
     hk_single = math.exp(-2.0 / 3.0)
-    hk_cube = 0.5223243151
-    mc_comparator = 0.5934
     check("canonical HK Brownian time at beta=6 is one", math.isclose(t_at_beta_6, 1.0), "t(6)=1")
     check("single-plaquette HK value matches exp(-2/3)", math.isclose(hk_single, 0.513417119032592, rel_tol=0, abs_tol=5e-16), f"exp(-2/3)={hk_single:.15f}")
-    check("L_s=2 HK cube improves over single plaquette", hk_cube > hk_single, f"{hk_cube:.10f} > {hk_single:.10f}")
-    check("L_s=2 HK cube remains below thermodynamic comparator", hk_cube < mc_comparator, f"{hk_cube:.10f} < {mc_comparator:.4f}")
-    check("finite cube gap remains far from epsilon-witness scale", (mc_comparator - hk_cube) > 0.07, f"gap={mc_comparator - hk_cube:.10f}")
 
     deps = [
         "docs/BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md",
         "docs/BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md",
-        "docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md",
         "docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md",
         "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md",
         "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md",
@@ -156,9 +158,16 @@ def main() -> int:
         check(f"{dep_name} exists", (REPO_ROOT / dep).exists(), dep)
         require_fragment(f"{dep_name} cited by Block 03 note", note, dep_name)
 
-    require_fragment("cube note names finite value", cube_note, "P_cube_HK(L_s=2, t=1) = 0.5223243151")
-    require_fragment("cube note states thermodynamic limit remains open", cube_note, "does not\nestablish the thermodynamic limit")
-    require_fragment("cube note preserves Block 03 blocker", cube_note, "Block 03's named obstruction stands")
+    require_fragment("cube note is a finite weighted-transfer theorem", cube_note, "Finite Weighted-Transfer Theorem")
+    require_fragment("cube note class is positive theorem", cube_note, "**Claim type:** positive_theorem")
+    require_fragment("cube note makes legacy names identity-only", cube_note, "identity only")
+    require_fragment("cube note requires a separate downstream physical bridge", cube_note, "Any downstream physical reuse must add a separate, explicit bridge")
+    require_fragment("cube note declares no source-note dependencies", cube_note, "## Dependencies\n\nNone.")
+    check(
+        "cube theorem does not retain the old physical scalar symbol",
+        "P_cube_HK" not in cube_note,
+        "P_cube_HK absent from repaired source",
+    )
 
     check_cache(
         runner="scripts/probe_hk_time_derivation.py",
@@ -172,17 +181,6 @@ def main() -> int:
         expected_pass=8,
         required_fragments=["exp(-2/3)", "SUMMARY: PASS=8 FAIL=0"],
     )
-    check_cache(
-        runner="scripts/probe_hk_cube_perron_l2_2026_05_06.py",
-        cache="logs/runner-cache/probe_hk_cube_perron_l2_2026_05_06.txt",
-        expected_pass=None,
-        required_fragments=[
-            "P_cube_HK(L_s=2, t=1) ≈ 0.5223243151",
-            "Block 03's named obstruction",
-            "thermodynamic-limit closure",
-        ],
-    )
-
     print()
     print("=" * 78)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
@@ -192,8 +190,8 @@ def main() -> int:
         print("Verdict: FAIL; HK thermodynamic stretch packet is not audit-ready.")
         return 1
     print("Verdict: bounded source-packet support. Block 03 is runner-backed")
-    print("as an open gate; Block 06 closes the finite-cube comparator path,")
-    print("but thermodynamic closure still needs the named clustering estimate.")
+    print("as an open gate; Block 06 is formal-only and does not close physical")
+    print("Path A; thermodynamic closure still needs the named clustering estimate.")
     print("No audit verdict or retained status is assigned.")
     return 0
 

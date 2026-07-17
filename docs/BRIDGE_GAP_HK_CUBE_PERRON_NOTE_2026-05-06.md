@@ -14,8 +14,8 @@ are set only by the independent audit lane.
 ## Exact scope
 
 This note defines finite functions and matrices and proves their elementary
-spectral properties. It then gives independently reconstructed numerical
-enclosures for three separate finite matrices, at `N = 6, 7, 8`.
+spectral properties. It then gives independently reconstructed high-precision
+estimates for three separate finite matrices, at `N = 6, 7, 8`.
 
 The definitions are stipulations inside this theorem. They are not derived
 from, or identified with, an SU(3) heat-kernel action, a lattice-cube measure,
@@ -75,26 +75,33 @@ matrices
 ```text
 L_N := diag(a_1(p,q)^4) = diag(exp(-2c(p,q))),                           (8)
 R_N := diag(rho_1(p,q)),                                                 (9)
+D_N := L_N R_N = diag(d(p,q)^8 exp(-8c(p,q))),                           (10)
 ```
 
 and define
 
 ```text
 M_N := exp(3J_N),
-T_N := M_N L_N R_N M_N.                                                 (10)
+T_N := M_N D_N M_N.                                                     (11)
 ```
+
+The constants `3` in `M_N`, `4` in `a_1^4`, `8` on `d`, and `6` in
+`rho_1` are parts of these definitions. In particular, the powers `4` and `8`
+and the exponential factors `2`, `6`, and their combined value `8` do not
+inherit a topology, dimension, incidence count, or other interpretation from
+the stable legacy name.
 
 Let `lambda_N` be the largest eigenvalue of `T_N`. Let `v_N` be its real
 eigenvector normalized by
 
 ```text
-v_N^T v_N = 1,       sum_x (v_N)_x > 0,                                 (11)
+v_N^T v_N = 1,       sum_x (v_N)_x > 0,                                 (12)
 ```
 
 and define the scalar
 
 ```text
-P_N := v_N^T J_N v_N.                                                    (12)
+P_N := v_N^T J_N v_N.                                                    (13)
 ```
 
 ## Finite-matrix theorem
@@ -102,19 +109,25 @@ P_N := v_N^T J_N v_N.                                                    (12)
 For every nonnegative integer `N`:
 
 1. `J_N` is real symmetric and entrywise nonnegative.
-2. `M_N` is real symmetric positive definite and entrywise strictly positive.
-3. `T_N` is real symmetric positive definite and entrywise strictly positive.
-4. The largest eigenvalue `lambda_N` is positive and simple. Its eigenvector
-   is entrywise strictly positive up to an overall sign, so convention (11)
+2. Under the actual finite-box truncation, `||J_N||_2 <= 1`.
+3. `M_N` is real symmetric positive definite and entrywise strictly positive.
+4. `D_N` is positive diagonal, while `T_N` is real symmetric positive
+   definite and entrywise strictly positive.
+5. The largest eigenvalue `lambda_N` is positive and simple. Its eigenvector
+   is entrywise strictly positive up to an overall sign, so convention (12)
    determines `v_N` uniquely.
-5. `P_N` is well-defined and unchanged by either sign or nonzero scaling of a
+6. `P_N` is well-defined and unchanged by either sign or nonzero scaling of a
    representative top eigenvector when written as the normalized quadratic
    expectation `(v^T J_N v)/(v^T v)`.
 
 **Proof.** The move set is inverse-closed: `S = -S`. Therefore (4) gives
 `(J_N)_(x,y) = (J_N)_(y,x)` even at the boundary, because both entries are
 deleted together whenever one endpoint is outside `W_N`. Horizontal and
-vertical moves alone connect the square box.
+vertical moves alone connect the square box for `N >= 1`; the one-vertex
+`N=0` graph is connected as well. Each truncated row has at most six entries,
+each equal to `1/6`, so `||J_N||_infinity <= 1`. Symmetry gives
+`||J_N||_1 = ||J_N||_infinity`, and therefore
+`||J_N||_2 <= sqrt(||J_N||_1 ||J_N||_infinity) <= 1`.
 
 Since `J_N` is real symmetric, `M_N = exp(3J_N)` is real symmetric positive
 definite. For any two indices, connectedness supplies a path of some length
@@ -122,11 +135,12 @@ definite. For any two indices, connectedness supplies a path of some length
 matrix exponential has nonnegative terms and a positive `k`-th term, so every
 entry of `M_N` is strictly positive.
 
-Equations (8) and (9) are positive diagonal matrices and commute. Hence
+Equations (8)-(10) give the explicitly combined positive diagonal `D_N`.
+Hence
 
 ```text
-T_N^T = M_N (L_N R_N) M_N = T_N,
-x^T T_N x = (M_N x)^T (L_N R_N) (M_N x) > 0
+T_N^T = M_N D_N M_N = T_N,
+x^T T_N x = (M_N x)^T D_N (M_N x) > 0
 ```
 
 for nonzero `x`. Every entry of `T_N` is a sum of strictly positive terms.
@@ -135,80 +149,61 @@ simple largest eigenvalue and an entrywise-positive eigenvector. The final
 claim follows because both numerator and denominator are quadratic in the
 chosen representative. ∎
 
-## Certified numerical statement
+## High-precision numerical estimates
 
-An independent `mpmath` implementation reconstructs `J_N`, `M_N`, `L_N`,
-`R_N`, and `T_N` directly from (1)-(10) at 90 decimal digits. It does not call
-the NumPy implementation or read the stored regression centers during matrix
-construction, eigenvector selection, or evaluation of `P_N`.
+An independent `mpmath` implementation reconstructs `J_N`, `M_N`, `D_N`, and
+`T_N` from (1)-(11) at 90 decimal digits and repeats the computation at 110
+digits. This execution path has no module-scope NumPy dependency and does not
+read the stored regression centers, directly or through a reachable helper,
+during matrix construction, eigenvector selection, or evaluation of `P_N`.
 
-For the full computed symmetric eigensystem, write its eigenvector matrix and
-diagonal eigenvalue matrix as `Q_N` and `D_N`. Define the Frobenius residual
-and Gram defect
+The two working precisions agree on the following conservative displays:
 
-```text
-r_N   := ||T_N Q_N - Q_N D_N||_F,
-eta_N := ||Q_N^T Q_N - I||_F.
-```
+| `N` | high-precision estimate of `P_N` | observed top eigengap |
+|---:|---:|---:|
+| 6 | `0.52232431153736166937673139714738059168179320929492` | `4.95928143865115310329935689152` |
+| 7 | `0.52232431507569191793302322384788552461547732886213` | `4.95928144134063313074991808640` |
+| 8 | `0.52232431510373892886326294344235423776746771078887` | `4.95928144135451144353469487140` |
 
-The runner verifies `eta_N < 1` and uses the declared 90-digit
-working-arithmetic guard `g = 10^-60` to form
+At 90 digits the runner reports full-basis residuals, Gram defects, and top
+residuals of order `10^-89` to `10^-90`. These residuals are computed against
+the `mpmath` matrix actually constructed at that working precision. They do
+not bound the difference between that matrix and the exact matrix in (11):
+`mpmath` supplies neither directed rounding for these operations nor an
+analytic operator-norm bound for accumulated rounding in `exp(3J_N)`,
+`exp(-2c)`, and `exp(-6c)`.
 
-```text
-delta_N := r_N/sqrt(1-eta_N) + g.                                       (13)
-```
-
-Indeed, `||Q_N^(-1)||_2 <= 1/sqrt(1-eta_N)`. Thus
-`Q_N^(-1) T_N Q_N = D_N + Q_N^(-1)(T_N Q_N-Q_N D_N)`, and the normal-matrix
-perturbation bound places the exact eigenvalues in the corresponding
-`delta_N` neighborhoods. The top neighborhood is isolated from all the
-others, so it contains exactly one eigenvalue.
-
-If `lambda_hat_1 >= lambda_hat_2` are the two largest computed eigenvalues,
-the runner verifies
+For orientation only, if `Q` and its reported Gram defect `eta` were treated
+as exact stored arrays, `eta < 1` would imply
+`sigma_min(Q)^2 >= 1-eta`, so `Q` would be invertible and
 
 ```text
-gamma_N := lambda_hat_1 - lambda_hat_2 - 2 delta_N > 4.95.               (14)
+||Q^(-1)(TQ-Q Lambda)||_2 <= ||TQ-Q Lambda||_F/sqrt(1-eta).
 ```
 
-Let `tau_N := ||T_N v_hat_N-lambda_hat_1 v_hat_N||_2`. The symmetric
-eigenvector residual-angle bound, the isolated interval above, and the exact
-row-sum bound `||J_N||_2 <= ||J_N||_infinity <= 1` give
+Likewise, for a genuinely bounded perturbation of a symmetric matrix, the
+top-eigenvector residual-angle estimate combined with the exact
+`||J_N||_2 <= 1` bound would change the quadratic expectation by at most
+`2 sin(theta)`: the factor `2` follows from the nuclear norm of the difference
+of the two rank-one projectors. The runner reports these quantities as
+diagnostics only. It does not turn them into an enclosure by adding an
+unproved decimal guard. Nor does it assert that the small-eigenvalue portion
+of the full computed spectrum is pairwise isolated; only the large observed
+top gap is used as a numerical stability diagnostic.
+
+The estimated differences are
 
 ```text
-|P_N - P_hat_N|
-  <= g + 2(tau_N+g)/(lambda_hat_1-lambda_hat_2-delta_N)
-  < 2 x 10^-60.                                                         (15)
+P_7 - P_6 = 3.53833024855629182670050493293e-9,
+P_8 - P_7 = 2.80470109302397195944687131520e-11.
 ```
 
-The independently reconstructed centers and the guarded enclosures are:
-
-| `N` | `P_hat_N` | guarded enclosure `I_N` | lower top-eigenvalue gap |
-|---:|---:|---:|---:|
-| 6 | `0.522324311537361669376731397147380591681793209294921543147251767405388996516` | `P_hat_6 +/- 2e-60` | `> 4.95` |
-| 7 | `0.522324315075691917933023223847885524615477328862129075311171521855593496815` | `P_hat_7 +/- 2e-60` | `> 4.95` |
-| 8 | `0.522324315103738928863262943442354237767467710788871114561329778403325241798` | `P_hat_8 +/- 2e-60` | `> 4.95` |
-
-The raw 90-digit basis residual and Gram-defect norms are reported by the
-runner; the guard, rather than those raw errors, controls the displayed
-enclosure. A 110-digit rerun reproduces every displayed center digit. This is
-an independently reconstructed, guarded a-posteriori certificate, not a
-directed-rounding Arb/ball proof.
-
-The interval differences are also certified:
-
-```text
-P_7 - P_6 = 3.5383302485562918267005049329336841195672075321639e-9
-              +/- 4e-60,
-P_8 - P_7 = 2.8047010930239719594468713151990381926742039250158e-11
-              +/- 4e-60.                                                  (16)
-```
-
-Thus `I_6`, `I_7`, and `I_8` are pairwise disjoint. The three enclosures share
-seven rounded decimal places; `I_7` and `I_8` share ten. They do not certify
-twelve-decimal finite-`N` stability. In particular, `0.5223243151` is only the
-common ten-place rounded display of the `N=7` and `N=8` values. It is not a
-single cutoff-independent value.
+Their signs and displayed digits are stable between 90 and 110 digits, but
+this agreement is numerical evidence, not an outward-rounded proof of exact
+ordering. The three estimates share only seven rounded decimal places; the
+`N=7` and `N=8` estimates share ten, not twelve. In particular,
+`0.5223243151` is only the common ten-place rounded display of the latter two
+estimates, not a cutoff-independent value.
 
 No monotonicity theorem, tail bound in `N`, or `N -> infinity` result is
 claimed.
@@ -227,22 +222,24 @@ python3 scripts/probe_hk_cube_perron_l2_2026_05_06.py --mode intentional-failure
 Normal, high-precision, and hostile modes exit zero only after all checks pass.
 Intentional-failure mode injects an asymmetric recurrence edge, reports a
 failure, and exits nonzero. Hostile mode requires rejection of an asymmetric
-recurrence, a wrong `c` polynomial, wrong `rho` exponential and dimension
-exponents, a missing local factor, a non-dominant eigenvector, a sign/scale
-dependent scalar, an uncertifiable residual-to-gap ratio, false stability
-digits, a wrong reference value, answer-key-fed construction, and illicit
+recurrence, a wrong multiplier exponential, a wrong `c` polynomial, wrong
+local and `rho` exponential factors, a wrong defined dimension exponent, a
+missing local factor, a non-dominant eigenvector, a sign/scale-dependent
+scalar, an insufficient residual-to-gap ratio, false stability digits, a wrong
+reference value, helper-mediated answer-key-fed construction, and illicit
 physical or limiting conclusion tags.
 
 The stored centers are used only after reconstruction as regression checks.
-Static source/import checks reject a reconstruction function that reads those
-centers, repo-local helper imports, literal `True` as check evidence, or
-source-note dependency links.
+An AST call-graph check follows reachable local helpers from both reconstruction
+roots and rejects any answer-key read. Static checks also reject a
+module-scope NumPy import, repo-local helper imports, literal `True` as check
+evidence, or source-note dependency links.
 
 ## Legacy identity and non-claims
 
 The old HK/cube/Perron vocabulary remains in the stable claim id, filename,
 runner filename, and title solely so repository history and citations can find
-this repaired row. Equations (1)-(12) do not supply or inherit their former
+this repaired row. Equations (1)-(13) do not supply or inherit their former
 physical interpretation.
 
 This theorem does not establish any of the following:
@@ -266,6 +263,6 @@ Path A or supplies a physical comparator.
 
 ## Dependencies
 
-None. The integrality, symmetry, positivity, Perron-Frobenius, normalization,
-and residual/gap arguments needed for the theorem are stated here. The primary
-runner is executable evidence, not a source-note premise.
+None. The integrality, symmetry, norm, positivity, Perron-Frobenius, and
+normalization arguments needed for the exact theorem are stated here. The
+primary runner is executable numerical evidence, not a source-note premise.

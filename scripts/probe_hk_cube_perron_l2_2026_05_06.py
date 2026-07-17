@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Finite weighted-transfer theorem and numerical certificate.
+"""Finite weighted-transfer theorem and high-precision numerical evidence.
 
 The historical filename is retained as a stable identity.  This module defines
 only finite functions and matrices.  It does not construct a heat-kernel
@@ -8,7 +8,7 @@ thermodynamic observable.
 
 Modes:
   normal              NumPy reconstruction plus algebraic/invariant checks.
-  high-precision      independent mpmath reconstruction and residual/gap bound.
+  high-precision      independent mpmath reconstruction and precision checks.
   hostile             require every named mutation to be rejected.
   intentional-failure run a known asymmetric mutation and exit nonzero.
 """
@@ -23,13 +23,11 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable, Iterable, Sequence
 
-import numpy as np
-
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = REPO_ROOT / "docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md"
 FORMAL_T = 1.0
-CERTIFIED_N = (6, 7, 8)
+CHECKED_N = (6, 7, 8)
 MOVES = ((1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (-1, 0))
 
 # These centers are answer keys only for post-computation regression checks.
@@ -40,7 +38,6 @@ REFERENCE_CENTERS = {
     7: "0.522324315075691917933023223847885524615477328862129075311171521855593496815",
     8: "0.522324315103738928863262943442354237767467710788871114561329778403325241798",
 }
-REFERENCE_RADIUS_TEXT = "2e-60"
 
 
 class Checks:
@@ -69,9 +66,11 @@ class SymmetryGateError(ValueError):
 @dataclass(frozen=True)
 class Mutation:
     asymmetric_recurrence: bool = False
+    multiplier_exponential_factor: int = 3
     quadratic_denominator: int = 3
     rho_exponential_factor: int = 6
     rho_dimension_power: int = 8
+    local_exponential_factor: int = 2
     omit_local_factor: bool = False
     eigenvector_rank_from_top: int = 0
 
@@ -100,9 +99,9 @@ class HighPrecisionCase:
     top_residual: object
     basis_residual_frobenius: object
     gram_defect_frobenius: object
-    basis_delta: object
-    gap_lower: object
-    scalar_radius: object
+    computed_matrix_delta: object
+    residual_angle_indicator: object
+    minimum_adjacent_gap: object
     symmetry_defect: object
     min_top_vector_entry: object
     min_multiplier_entry: object
@@ -131,6 +130,8 @@ def square_box(nmax: int) -> list[tuple[int, int]]:
 
 
 def normalized_scalar(vector: np.ndarray, matrix: np.ndarray) -> float:
+    import numpy as np
+
     denominator = float(vector @ vector)
     if not denominator > 0.0:
         raise ValueError("the vector must be nonzero")
@@ -139,6 +140,8 @@ def normalized_scalar(vector: np.ndarray, matrix: np.ndarray) -> float:
 
 def _build_numpy_case(nmax: int, mutation: Mutation = Mutation()) -> NumpyCase:
     """Binary64 construction; deliberately independent of answer keys."""
+    import numpy as np
+
     weights = [(p, q) for p in range(nmax + 1) for q in range(nmax + 1)]
     index = {weight: i for i, weight in enumerate(weights)}
     size = len(weights)
@@ -155,11 +158,13 @@ def _build_numpy_case(nmax: int, mutation: Mutation = Mutation()) -> NumpyCase:
     if not np.array_equal(j_matrix, j_matrix.T):
         raise SymmetryGateError("J_N failed exact binary64 symmetry gate")
     j_values, j_vectors = np.linalg.eigh(j_matrix)
-    multiplier_raw = (j_vectors * np.exp(3.0 * j_values)) @ j_vectors.T
+    multiplier_raw = (
+        j_vectors * np.exp(float(mutation.multiplier_exponential_factor) * j_values)
+    ) @ j_vectors.T
     multiplier_defect = float(np.max(np.abs(multiplier_raw - multiplier_raw.T)))
     if multiplier_defect > 2e-14:
         raise SymmetryGateError(
-            f"M_N symmetry defect {multiplier_defect:.3e} exceeds binary64 guard"
+            f"M_N symmetry defect {multiplier_defect:.3e} exceeds binary64 tolerance"
         )
     multiplier = 0.5 * (multiplier_raw + multiplier_raw.T)
 
@@ -178,7 +183,9 @@ def _build_numpy_case(nmax: int, mutation: Mutation = Mutation()) -> NumpyCase:
     if mutation.omit_local_factor:
         local_values = np.ones(size, dtype=float)
     else:
-        local_values = np.exp(-2.0 * FORMAL_T * c_used)
+        local_values = np.exp(
+            -float(mutation.local_exponential_factor) * FORMAL_T * c_used
+        )
     rho_values = (dims ** mutation.rho_dimension_power) * np.exp(
         -float(mutation.rho_exponential_factor) * FORMAL_T * c_used
     )
@@ -186,7 +193,7 @@ def _build_numpy_case(nmax: int, mutation: Mutation = Mutation()) -> NumpyCase:
     transfer_defect = float(np.max(np.abs(transfer_raw - transfer_raw.T)))
     if transfer_defect > 2e-13:
         raise SymmetryGateError(
-            f"T_N symmetry defect {transfer_defect:.3e} exceeds binary64 guard"
+            f"T_N symmetry defect {transfer_defect:.3e} exceeds binary64 tolerance"
         )
     transfer = 0.5 * (transfer_raw + transfer_raw.T)
     eigenvalues, eigenvectors = np.linalg.eigh(transfer)
@@ -213,6 +220,8 @@ def _build_numpy_case(nmax: int, mutation: Mutation = Mutation()) -> NumpyCase:
 
 
 def _expected_recurrence(weights: Sequence[tuple[int, int]]) -> np.ndarray:
+    import numpy as np
+
     index = {weight: i for i, weight in enumerate(weights)}
     result = np.zeros((len(weights), len(weights)), dtype=float)
     inverse_closed_moves = {(1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (-1, 0)}
@@ -225,12 +234,32 @@ def _expected_recurrence(weights: Sequence[tuple[int, int]]) -> np.ndarray:
 
 def numpy_case_violations(case: NumpyCase) -> list[str]:
     """Definition and spectral checks, recomputed outside the builder."""
+    import numpy as np
+
     violations: list[str] = []
+    if case.weights != square_box(case.nmax):
+        violations.append("finite square-box definition")
     expected_j = _expected_recurrence(case.weights)
     if not np.array_equal(case.j_matrix, expected_j):
         violations.append("recurrence definition")
     if not np.array_equal(case.j_matrix, case.j_matrix.T):
         violations.append("recurrence symmetry")
+    row_sums = np.sum(case.j_matrix, axis=1)
+    if float(np.max(row_sums)) > 1.0:
+        violations.append("truncated recurrence row-sum bound")
+    if float(np.max(np.abs(np.linalg.eigvalsh(case.j_matrix)))) > 1.0 + 2e-15:
+        violations.append("recurrence operator-norm bound")
+    reached = {0}
+    frontier = [0]
+    while frontier:
+        source = frontier.pop()
+        for target in np.flatnonzero(case.j_matrix[:, source]):
+            target_int = int(target)
+            if target_int not in reached:
+                reached.add(target_int)
+                frontier.append(target_int)
+    if len(reached) != len(case.weights):
+        violations.append("finite-box graph connectivity")
 
     expected_c = np.array(
         [
@@ -246,12 +275,24 @@ def numpy_case_violations(case: NumpyCase) -> list[str]:
     )
     expected_local = np.exp(-2.0 * expected_c)
     expected_rho = expected_d**8 * np.exp(-6.0 * expected_c)
+    expected_combined = expected_d**8 * np.exp(-8.0 * expected_c)
+    j_values, j_vectors = np.linalg.eigh(expected_j)
+    expected_multiplier = (j_vectors * np.exp(3.0 * j_values)) @ j_vectors.T
     if not np.allclose(case.local_values, expected_local, rtol=2e-15, atol=0.0):
         violations.append("local diagonal definition")
     if not np.allclose(case.rho_values, expected_rho, rtol=4e-15, atol=0.0):
         violations.append("rho definition")
+    if not np.allclose(
+        case.local_values * case.rho_values,
+        expected_combined,
+        rtol=5e-14,
+        atol=0.0,
+    ):
+        violations.append("combined diagonal definition")
     if not np.allclose(case.multiplier, case.multiplier.T, rtol=0.0, atol=2e-14):
         violations.append("multiplier symmetry")
+    if not np.allclose(case.multiplier, expected_multiplier, rtol=3e-15, atol=2e-15):
+        violations.append("multiplier exponential definition")
     if not np.all(case.multiplier > 0.0):
         violations.append("multiplier strict positivity")
     if not np.allclose(case.transfer, case.transfer.T, rtol=0.0, atol=2e-13):
@@ -290,7 +331,7 @@ def _high_precision_reconstruction(nmax: int, dps: int) -> HighPrecisionCase:
     import mpmath as mp
 
     mp.mp.dps = dps
-    guard = mp.power(10, -(dps - 30))
+    arithmetic_tolerance = mp.power(10, -(dps - 25))
     weights = [(p, q) for p in range(nmax + 1) for q in range(nmax + 1)]
     index = {weight: i for i, weight in enumerate(weights)}
     size = len(weights)
@@ -322,8 +363,8 @@ def _high_precision_reconstruction(nmax: int, dps: int) -> HighPrecisionCase:
         for row in range(size)
         for col in range(size)
     )
-    if multiplier_symmetry_defect > guard:
-        raise SymmetryGateError("M_N high-precision symmetry defect exceeds guard")
+    if multiplier_symmetry_defect > arithmetic_tolerance:
+        raise SymmetryGateError("M_N high-precision symmetry defect exceeds tolerance")
     multiplier = (multiplier_raw + multiplier_raw.T) / 2
 
     local_values = []
@@ -341,8 +382,8 @@ def _high_precision_reconstruction(nmax: int, dps: int) -> HighPrecisionCase:
         for row in range(size)
         for col in range(size)
     )
-    if transfer_symmetry_defect > guard:
-        raise SymmetryGateError("T_N high-precision symmetry defect exceeds guard")
+    if transfer_symmetry_defect > arithmetic_tolerance:
+        raise SymmetryGateError("T_N high-precision symmetry defect exceeds tolerance")
     transfer = (transfer_raw + transfer_raw.T) / 2
     symmetry_defect = max(
         recurrence_symmetry_defect,
@@ -375,30 +416,30 @@ def _high_precision_reconstruction(nmax: int, dps: int) -> HighPrecisionCase:
         )
     )
     if gram_defect_frobenius >= 1:
-        basis_delta = mp.inf
+        computed_matrix_delta = mp.inf
     else:
-        # With Q formed from the computed eigenvectors and D from their
-        # eigenvalues, TQ-QD=R and Q^TQ=I+E.  Therefore
-        # ||Q^{-1}R||_2 <= ||R||_F/sqrt(1-||E||_F).  Bauer-Fike plus the
-        # isolated top interval gives the ordered top-eigenvalue enclosure.
-        basis_delta = (
+        # In exact arithmetic for the *stored computed matrix*, eta < 1 would
+        # imply sigma_min(Q)^2 >= 1-eta and hence the following residual
+        # perturbation scale.  mpmath does not outward-round eta, R, or the
+        # transcendental matrix entries, so this is only a diagnostic.
+        computed_matrix_delta = (
             basis_residual_frobenius / mp.sqrt(1 - gram_defect_frobenius)
-            + guard
         )
     observed_gap = approximate_top - eigenvalues[size - 2]
-    gap_lower = observed_gap - 2 * basis_delta
-    separation_from_non_top = observed_gap - basis_delta
-    if gap_lower <= 0 or separation_from_non_top <= 0:
-        scalar_radius = mp.inf
+    separation_from_non_top = observed_gap - computed_matrix_delta
+    if separation_from_non_top <= 0:
+        residual_angle_indicator = mp.inf
     else:
-        # The top interval is isolated.  The symmetric residual angle bound
-        # gives sin(theta) <= (top_residual+guard)/separation_from_non_top.
-        # For rank-one projectors and ||J_N||_2 <= 1, the two quadratic
-        # expectations differ by at most 2 sin(theta), plus the guard.
-        scalar_radius = (
-            guard
-            + 2 * (top_residual + guard) / separation_from_non_top
+        # Conditional on the stored computed symmetric matrix, the residual
+        # angle scale is tau/separation.  The factor two comes from
+        # ||vv^T-uu^T||_* = 2 sin(theta) and the exact ||J_N||_2 <= 1.
+        residual_angle_indicator = (
+            2 * top_residual / separation_from_non_top
         )
+    minimum_adjacent_gap = min(
+        eigenvalues[index + 1] - eigenvalues[index]
+        for index in range(size - 1)
+    )
 
     return HighPrecisionCase(
         nmax=nmax,
@@ -408,9 +449,9 @@ def _high_precision_reconstruction(nmax: int, dps: int) -> HighPrecisionCase:
         top_residual=top_residual,
         basis_residual_frobenius=basis_residual_frobenius,
         gram_defect_frobenius=gram_defect_frobenius,
-        basis_delta=basis_delta,
-        gap_lower=gap_lower,
-        scalar_radius=scalar_radius,
+        computed_matrix_delta=computed_matrix_delta,
+        residual_angle_indicator=residual_angle_indicator,
+        minimum_adjacent_gap=minimum_adjacent_gap,
         symmetry_defect=symmetry_defect,
         min_top_vector_entry=min(vector),
         min_multiplier_entry=min(multiplier),
@@ -418,8 +459,53 @@ def _high_precision_reconstruction(nmax: int, dps: int) -> HighPrecisionCase:
     )
 
 
-def _function_reads_answer_key(function: Callable[..., object]) -> bool:
-    return "REFERENCE_CENTERS" in function.__code__.co_names
+def _functions_reaching_answer_key(root_names: Sequence[str]) -> list[str]:
+    """Return reachable functions that directly read a stored answer key."""
+    tree = ast.parse(Path(__file__).read_text(encoding="utf-8"))
+    functions = {
+        node.name: node
+        for node in tree.body
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+    }
+    visited: set[str] = set()
+    readers: set[str] = set()
+
+    def visit(name: str) -> None:
+        if name in visited or name not in functions:
+            return
+        visited.add(name)
+        node = functions[name]
+        if any(
+            isinstance(child, ast.Name) and child.id == "REFERENCE_CENTERS"
+            for child in ast.walk(node)
+        ):
+            readers.add(name)
+        for child in ast.walk(node):
+            if isinstance(child, ast.Call) and isinstance(child.func, ast.Name):
+                visit(child.func.id)
+
+    for root_name in root_names:
+        visit(root_name)
+    return sorted(readers)
+
+
+def _hostile_answer_key_helper() -> float:
+    return float(REFERENCE_CENTERS[8])
+
+
+def _hostile_answer_key_fed_builder(_: int) -> float:
+    return _hostile_answer_key_helper()
+
+
+def _module_scope_numpy_import_lines() -> list[int]:
+    tree = ast.parse(Path(__file__).read_text(encoding="utf-8"))
+    result: list[int] = []
+    for node in tree.body:
+        if isinstance(node, ast.Import) and any(alias.name == "numpy" for alias in node.names):
+            result.append(node.lineno)
+        if isinstance(node, ast.ImportFrom) and node.module == "numpy":
+            result.append(node.lineno)
+    return result
 
 
 def _literal_true_evidence_calls() -> list[int]:
@@ -463,7 +549,7 @@ def _note_source_dependencies() -> list[str]:
 def _theorem_physical_terms() -> list[str]:
     text = NOTE_PATH.read_text(encoding="utf-8")
     start = text.index("## Finite-matrix theorem")
-    end = text.index("## Certified numerical statement")
+    end = text.index("## High-precision numerical estimates")
     theorem = text[start:end].lower()
     forbidden = (
         "su(3)",
@@ -479,24 +565,16 @@ def _theorem_physical_terms() -> list[str]:
     return [term for term in forbidden if term in theorem]
 
 
-def _common_certified_rounding_digits(cases: Sequence[HighPrecisionCase]) -> int:
+def _common_rounding_digits(cases: Sequence[HighPrecisionCase]) -> int:
     import mpmath as mp
 
     common = 0
     for digits in range(0, 30):
         scale = mp.power(10, digits)
         rounded: list[int] = []
-        valid = True
         for case in cases:
-            low = case.scalar - case.scalar_radius
-            high = case.scalar + case.scalar_radius
-            low_round = int(mp.floor(low * scale + mp.mpf("0.5")))
-            high_round = int(mp.floor(high * scale + mp.mpf("0.5")))
-            if low_round != high_round:
-                valid = False
-                break
-            rounded.append(low_round)
-        if valid and len(set(rounded)) == 1:
+            rounded.append(int(mp.floor(case.scalar * scale + mp.mpf("0.5"))))
+        if len(set(rounded)) == 1:
             common = digits
         else:
             break
@@ -504,11 +582,18 @@ def _common_certified_rounding_digits(cases: Sequence[HighPrecisionCase]) -> int
 
 
 def _claim_surface_allowed(tags: Iterable[str]) -> bool:
-    allowed = {"finite_linear_algebra", "defined_functions", "defined_matrices", "finite_n_enclosures"}
+    allowed = {
+        "finite_linear_algebra",
+        "defined_functions",
+        "defined_matrices",
+        "high_precision_estimates",
+    }
     return set(tags).issubset(allowed)
 
 
 def _bad_scalar(vector: np.ndarray, matrix: np.ndarray) -> float:
+    import numpy as np
+
     return float(np.sum(vector) + vector @ (matrix @ vector))
 
 
@@ -536,7 +621,7 @@ def run_normal() -> int:
             and dimension_polynomial(p, q) >= 1
             for p, q in square_box(8)
         ),
-        "parity proof checked on the largest certified box",
+        "parity proof checked on the largest tested box",
     )
     checks.record(
         "recurrence move set is inverse-closed",
@@ -544,7 +629,7 @@ def run_normal() -> int:
         str(MOVES),
     )
     cases: list[NumpyCase] = []
-    for nmax in CERTIFIED_N:
+    for nmax in CHECKED_N:
         case = _build_numpy_case(nmax)
         cases.append(case)
         violations = numpy_case_violations(case)
@@ -555,7 +640,7 @@ def run_normal() -> int:
         )
         center = float(REFERENCE_CENTERS[nmax])
         checks.record(
-            f"N={nmax} binary64 agrees with independent certificate",
+            f"N={nmax} binary64 agrees with stored high-precision estimate",
             abs(case.scalar - center) < 8e-15,
             f"P_N={case.scalar:.16f}; residual={case.residual:.3e}; gap={case.eigenvalues[-1]-case.eigenvalues[-2]:.12f}",
         )
@@ -573,8 +658,14 @@ def run_normal() -> int:
     )
     checks.record(
         "normal reconstruction cannot read answer keys",
-        not _function_reads_answer_key(_build_numpy_case),
-        "REFERENCE_CENTERS absent from reconstruction bytecode",
+        not _functions_reaching_answer_key(("_build_numpy_case",)),
+        f"reachable readers={_functions_reaching_answer_key(('_build_numpy_case',))}",
+    )
+    module_numpy_imports = _module_scope_numpy_import_lines()
+    checks.record(
+        "high-precision import path has no module-scope NumPy dependency",
+        not module_numpy_imports,
+        f"module-scope NumPy import lines={module_numpy_imports}",
     )
     local_imports = _repo_local_imports()
     checks.record(
@@ -603,7 +694,7 @@ def run_normal() -> int:
     checks.record(
         "claim-surface tags are formal only",
         _claim_surface_allowed(
-            {"finite_linear_algebra", "defined_functions", "defined_matrices", "finite_n_enclosures"}
+            {"finite_linear_algebra", "defined_functions", "defined_matrices", "high_precision_estimates"}
         ),
         "no action, topology, or limiting tag supplied",
     )
@@ -617,63 +708,72 @@ def run_high_precision(dps: int) -> int:
     print("FINITE WEIGHTED-TRANSFER THEOREM — INDEPENDENT HIGH-PRECISION MODE")
     print(f"library=mpmath; decimal precision={dps}; formal parameter t=1")
     print()
-    cases = [_high_precision_reconstruction(nmax, dps) for nmax in CERTIFIED_N]
-    reference_radius = mp.mpf(REFERENCE_RADIUS_TEXT)
-    for case in cases:
+    cases = [_high_precision_reconstruction(nmax, dps) for nmax in CHECKED_N]
+    comparison_dps = dps + 20
+    comparison_cases = [
+        _high_precision_reconstruction(nmax, comparison_dps) for nmax in CHECKED_N
+    ]
+    working_tolerance = mp.power(10, -(dps - 20))
+    for case, comparison in zip(cases, comparison_cases):
         center = mp.mpf(REFERENCE_CENTERS[case.nmax])
         checks.record(
-            f"N={case.nmax} positive matrices and certified simple top eigenvalue",
+            f"N={case.nmax} positive entries and well-separated computed top eigenvalue",
             case.symmetry_defect < mp.power(10, -(dps - 30))
             and case.min_top_vector_entry > 0
             and case.min_multiplier_entry > 0
             and case.min_transfer_entry > 0
-            and case.gap_lower > mp.mpf("4.95"),
+            and case.observed_gap > mp.mpf("4.95"),
             f"symmetry_defect={mp.nstr(case.symmetry_defect, 5)}; "
-            f"gap_lower={mp.nstr(case.gap_lower, 18)}; "
+            f"observed_gap={mp.nstr(case.observed_gap, 18)}; "
             f"min(v)={mp.nstr(case.min_top_vector_entry, 5)}; "
             f"min(M)={mp.nstr(case.min_multiplier_entry, 5)}; "
             f"min(T)={mp.nstr(case.min_transfer_entry, 5)}",
         )
         checks.record(
-            f"N={case.nmax} residual/gap scalar radius",
-            case.basis_delta < reference_radius
-            and case.scalar_radius < reference_radius,
+            f"N={case.nmax} residual and Gram diagnostics are small at working precision",
+            case.gram_defect_frobenius < working_tolerance
+            and case.computed_matrix_delta < working_tolerance
+            and case.residual_angle_indicator < working_tolerance,
             f"basis_residual_F={mp.nstr(case.basis_residual_frobenius, 6)}; "
             f"gram_defect_F={mp.nstr(case.gram_defect_frobenius, 6)}; "
             f"top_residual={mp.nstr(case.top_residual, 6)}; "
-            f"delta={mp.nstr(case.basis_delta, 6)}; "
-            f"P_radius={mp.nstr(case.scalar_radius, 6)}",
+            f"computed_matrix_delta={mp.nstr(case.computed_matrix_delta, 6)}; "
+            f"angle_indicator={mp.nstr(case.residual_angle_indicator, 6)}; "
+            f"minimum_full_gap={mp.nstr(case.minimum_adjacent_gap, 6)}",
         )
         checks.record(
-            f"N={case.nmax} enclosure agrees with stored regression interval",
-            abs(case.scalar - center) + case.scalar_radius < reference_radius,
-            f"P_N={mp.nstr(case.scalar, 76)} +/- {mp.nstr(case.scalar_radius, 6)}",
+            f"N={case.nmax} estimate agrees across precisions and with regression center",
+            abs(case.scalar - comparison.scalar) < working_tolerance
+            and abs(comparison.scalar - center) < working_tolerance,
+            f"P_N={mp.nstr(comparison.scalar, 55)}; "
+            f"|P({dps})-P({comparison_dps})|={mp.nstr(abs(case.scalar-comparison.scalar), 6)}",
         )
 
     checks.record(
         "high-precision reconstruction cannot read answer keys",
-        not _function_reads_answer_key(_high_precision_reconstruction),
-        "REFERENCE_CENTERS absent from reconstruction bytecode",
+        not _functions_reaching_answer_key(("_high_precision_reconstruction",)),
+        f"reachable readers={_functions_reaching_answer_key(('_high_precision_reconstruction',))}",
     )
-    all_digits = _common_certified_rounding_digits(cases)
-    last_two_digits = _common_certified_rounding_digits(cases[1:])
+    all_digits = _common_rounding_digits(comparison_cases)
+    last_two_digits = _common_rounding_digits(comparison_cases[1:])
     checks.record(
-        "certified N=6,7,8 common rounding is seven decimals",
+        "estimated N=6,7,8 common rounding is seven decimals",
         all_digits == 7,
         f"common rounded decimal places={all_digits}",
     )
     checks.record(
-        "certified N=7,8 common rounding is ten decimals",
+        "estimated N=7,8 common rounding is ten decimals",
         last_two_digits == 10,
         f"common rounded decimal places={last_two_digits}",
     )
-    for left, right in zip(cases, cases[1:]):
+    for index, (left, right) in enumerate(zip(comparison_cases, comparison_cases[1:])):
         difference = right.scalar - left.scalar
-        radius = right.scalar_radius + left.scalar_radius
+        low_precision_difference = cases[index + 1].scalar - cases[index].scalar
         checks.record(
-            f"I_{left.nmax} and I_{right.nmax} are disjoint",
-            difference > radius,
-            f"P_{right.nmax}-P_{left.nmax}={mp.nstr(difference, 40)} +/- {mp.nstr(radius, 6)}",
+            f"P_{right.nmax}-P_{left.nmax} is a stable positive estimate",
+            difference > 0 and abs(difference - low_precision_difference) < working_tolerance,
+            f"P_{right.nmax}-P_{left.nmax}={mp.nstr(difference, 40)}; "
+            f"cross-precision change={mp.nstr(abs(difference-low_precision_difference), 6)}",
         )
     return checks.finish()
 
@@ -698,9 +798,11 @@ def run_hostile() -> int:
     )
 
     mutation_cases = (
+        ("wrong multiplier exponential factor", Mutation(multiplier_exponential_factor=2), "multiplier exponential definition"),
         ("wrong c (legacy Casimir) polynomial", Mutation(quadratic_denominator=2), "local diagonal definition"),
         ("wrong rho exponential factor", Mutation(rho_exponential_factor=5), "rho definition"),
         ("wrong legacy topology/dimension exponent", Mutation(rho_dimension_power=7), "rho definition"),
+        ("wrong local c exponent", Mutation(local_exponential_factor=3), "local diagonal definition"),
         ("missing local factor", Mutation(omit_local_factor=True), "local diagonal definition"),
         ("incorrect dominant eigenvector", Mutation(eigenvector_rank_from_top=1), "dominant eigenvector selection"),
     )
@@ -716,17 +818,17 @@ def run_hostile() -> int:
         "linear contamination changes under sign or scale",
     )
 
-    # An observed gap smaller than twice the residual cannot certify a simple
-    # numerical eigenpair, even if a floating solver returns two numbers.
+    # An observed gap smaller than twice the residual is insufficient evidence
+    # for a numerically isolated eigenpair.
     hostile_residual = 1e-10
     hostile_observed_gap = 1e-12
     checks.record(
-        "insufficient precision/gap certificate",
+        "insufficient residual-to-gap evidence",
         hostile_observed_gap - 2 * hostile_residual <= 0.0,
         f"observed_gap={hostile_observed_gap:.1e}; 2*residual={2*hostile_residual:.1e}",
     )
 
-    normal_cases = [_build_numpy_case(nmax) for nmax in CERTIFIED_N]
+    normal_cases = [_build_numpy_case(nmax) for nmax in CHECKED_N]
     false_twelve_digit_claim = len({round(case.scalar, 12) for case in normal_cases}) == 1
     checks.record(
         "false N-stability digits",
@@ -740,13 +842,11 @@ def run_hostile() -> int:
         f"computed={normal_cases[-1].scalar:.16f}; hostile_reference={wrong_reference:.16f}",
     )
 
-    def answer_key_builder(_: int) -> float:
-        return float(REFERENCE_CENTERS[8])
-
+    hostile_readers = _functions_reaching_answer_key(("_hostile_answer_key_fed_builder",))
     checks.record(
-        "answer-key-fed computation",
-        _function_reads_answer_key(answer_key_builder),
-        "hostile builder bytecode reads REFERENCE_CENTERS",
+        "helper-mediated answer-key-fed computation",
+        "_hostile_answer_key_helper" in hostile_readers,
+        f"reachable readers={hostile_readers}",
     )
     checks.record(
         "illicit physical-action/thermodynamic inference",

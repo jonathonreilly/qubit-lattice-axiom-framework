@@ -18,14 +18,14 @@ remains a configuration of records?
 
 This is not the question whether an open site has possible contents. Qubit and
 Admissibility already supply a possibility domain and neighbour-conditioned
-availability. The question is whether a future-sensitive coherent value at an
-unrecorded site is:
+availability. The question is whether future-sensitive information absent
+from the records is:
 
-1. calculated from the records and fixed law;
-2. operational gauge;
-3. additional physical state; or
-4. unnecessary because a direct process kernel maps records to later-record
-   statistics.
+1. represented by a record-factorized process;
+2. a locally and compositionally derived representation of the records;
+3. operationally indistinguishable relative to the declared tester
+   repertoire; or
+4. additional predictive state.
 
 ## Common physical fixture
 
@@ -43,85 +43,134 @@ The fixture must contain:
 No host context dictionary, host gate call, or supplied terminal answer may
 sit between the selected tape token and the output record.
 
-## Four routes to compare
+## Named routes to compare
+
+These routes are not exhaustive. Relational link/plaquette variables,
+boundary or global-sector memory, and non-Markovian history/process-tensor
+memory remain separate alternatives unless included explicitly.
 
 ### A. Record-mediated row
 
-Add only record-to-record local content at the first mixed boundary. This is
-the classical control route and a negative control for phase sensitivity.
+Add only record-to-record local content at the first mixed boundary, including
+a fully costed stabilizer/tableau working summary if needed. This is the
+classical null class, not automatically a negative control: a classical
+tableau can reproduce real-Clifford `H/CNOT` regressions. Protocol-specific
+answer rows and undeclared context-to-terminal lookup are forbidden;
+operationally equivalent preparations and effects must share representations.
 
 ### B. Direct record-process kernel
 
-Define one normalized local instrument or history kernel directly on complete
-record configurations. Intermediate amplitudes may be calculation variables,
-but not independently contingent physical state.
+Construct one normalized local instrument or history kernel directly on
+complete record configurations from the same homogeneous, covariant
+nearest-neighbour law, with explicit composition and occurrence semantics.
+Otherwise the kernel is a named imported candidate law rather than a
+law-derived result. Intermediate amplitudes may be calculation variables, but
+not independently contingent physical state.
 
 ### C. Record-derived coherent decoder
 
-At every law-evaluation surface, reconstruct the coherent working object
-uniquely from the complete records and the fixed law. Equal record
-configurations must decode identically.
+At every law-evaluation surface, reconstruct one future-predictive operational
+equivalence class locally and compositionally from the complete records and
+fixed law. Gauge-related Hilbert representatives need not be unique.
+
+This is a constructive factorization of route B, not a distinct operational
+theory, unless an additional locality, complexity, or minimality criterion
+separates them.
 
 ### D. Explicit coherent working sector
 
-Enlarge the candidate state to include coherent variables at unrecorded sites.
-This route must state their local algebra, composition, evolution, relation to
-Admissibility, and record-deposition map. It is a candidate ontology widening,
-not an interpretation of existing words.
+Enlarge the candidate state to include onsite or relational coherent variables
+not determined by records. This route must state their local algebra,
+composition, evolution, relation to Admissibility, and record-deposition map.
+It is a candidate ontology widening, not an interpretation of existing words.
 
-## Minimum quantum observation
+## Minimum phase-sensitive regression
 
 Each successful route must reproduce at least one Cycle-189
 phase-sensitive intervention relation:
 
 - `prep:X+X+` followed by omitted intervention gives sharp `XX`;
-- an R1/Z-context intervention followed by forgotten pointer records gives
-  the exact mixed `XX` future; and
+- an R1/Z-context intervention followed by marginalization over the unread
+  pointer outcome gives the exact mixed `XX` future; and
 - an R2/X-context intervention is physically present yet preserves the sharp
   `XX` future.
 
 Computational-basis XOR alone does not pass this gate.
 
+These three relations also do not exclude a contextual classical lookup or
+stabilizer/tableau model. A decisive quantum-execution result additionally
+requires one token-local gate implementation to:
+
+- act correctly on a tomographically complete input set;
+- satisfy inverse and composition identities;
+- predict held-out token sequences with no new preparation-, context-, or
+  sequence-specific rows; and
+- separate from an explicit noncontextual or separable classical null class.
+
+Because `H/CNOT` alone is real Clifford, the campaign must either physically
+generate a complex-phase/non-Clifford-sensitive tester such as a
+`Y`/`S`/`T` extension, or explicitly scope the result to rebit/stabilizer phase
+bookkeeping with no Qualification conclusion.
+
 ## Record-fibre test
 
-Hold one complete record configuration `R` fixed. Where a route admits two
-candidate coherent microstates `omega+` and `omega-` above `R`, apply the
-physically generated effect-complete future tester repertoire and compare
-every later-record distribution.
+Hold one complete record configuration `R` fixed, including every causally
+relevant preparation, context, boundary, and environment record. Hold the
+process semantics and future intervention fixed as well. Where a route admits
+two candidate microstates `omega+` and `omega-` above `R`, apply the physically
+generated tester repertoire and compare the conditional later-record
+distributions.
 
 Both candidates must belong to the candidate law's physical domain and be
-reachable from its admitted boundary class. An arbitrary off-domain
-microstate is not evidence against record sufficiency. Conversely, merely
-declaring one candidate unreachable is not a closure unless the invariant
-domain or boundary theorem proves it.
+reachable from the same admitted boundary class and invariant domain. The same
+generated tester or continuation must be physically admissible for both. If
+their admissible-continuation sets differ, that difference is itself
+predictive. An arbitrary off-domain microstate is not evidence against record
+sufficiency. Conversely, merely declaring one candidate unreachable is not a
+closure unless the invariant-domain or boundary theorem proves it.
 
 ```text
-same R + same fixed law + different future records
-    => the candidates are distinct predictive states
-    => current record-state Qualification is insufficient for that route.
+same R + same fixed law
+    + one common physically allowed tester
+    + different conditional later-record distributions
+    => the candidates are distinct predictive states in the tested domain
+    => current record-state Qualification is insufficient for that route
+       on that domain.
 ```
 
-If the candidates give identical future records for every physically allowed
-continuation, their difference is operational gauge. If only one candidate is
-decoded from `R`, coherent state is derived. A direct kernel passes by
-constructing one fibre-constant future law and reproducing the quantum
-relation without hidden contingent memory.
+If the candidates give identical conditional distributions for every
+continuation in the declared tester repertoire, their difference is
+operationally indistinguishable relative to that repertoire. Record sufficiency
+survives through a decoder only if one fixed local, compositional decoder
+assigns every reachable record fibre in the declared domain one
+future-predictive equivalence class and evolution preserves that domain. A
+direct kernel passes by constructing a record-factorized future law and
+reproducing the quantum relation without hidden contingent memory; it has no
+underlying microstate projection unless one is separately defined.
+
+Different conditional distributions prove additional predictive state, not
+specifically coherent state. Coherence additionally requires a phase algebra,
+reversible phase action, composition rule, and interference certificate.
 
 ## Mandatory controls
 
-The retained-grade construction must include:
+Any proposed construction must include:
 
 - selected-token deletion and flip controls;
 - preparation and context deletion controls;
 - omission versus intervention identity containment;
-- pointer-outcome erasure;
-- minimum/maximum schedule or process-composition agreement;
+- marginalization over an ignored pointer outcome, with no revocation of a
+  formed record;
+- minimum/maximum schedule agreement for deterministic append routes, or
+  normalized terminal-distribution and spacelike-composition agreement for
+  stochastic or weighted routes;
 - all 24 proper-cubic presentations of the completed local coupling;
 - no parasitic record formation;
 - exact ancestry from context record through token and operation to output;
 - normalization and positivity;
-- generation of the interference term rather than storage of a permanent
-  “phase answer” followed by classical lookup;
+- a shared local gate kernel, held-out compositions, and no stored
+  protocol-output table; explicitly costed preparation/control phase records
+  and dynamic state/tableau summaries remain allowed;
 - predecessor coexistence; and
 - explicit record, role, law-row, and working-state costs.
 
@@ -129,18 +178,23 @@ The retained-grade construction must include:
 
 No axiom edit follows from failure of one implementation.
 
-- If route B or C closes, coherent propagation can remain law-derived and no
-  state widening is needed.
-- If route D closes while B and C fail for independent, route-complete
-  reasons, Qualification receives substantive pressure.
-- If route A alone closes, the framework has another classical compiler and
-  the quantum-process gap remains.
+- If route B/C closes, record sufficiency survives on the tested fixture and
+  domain; this does not prove lattice-wide sufficiency or ontic coherent
+  propagation.
+- Route D closing while record-sufficient routes remain open creates no axiom
+  pressure. Substantive Qualification pressure requires route-complete
+  negatives across record-only, relational, boundary, and history-memory
+  alternatives, plus an independently selected successful widened model.
+- If route A/tableau alone closes, the framework has phase bookkeeping in
+  another classical compiler; the quantum-process gap remains.
 - If all routes fail at the same local interface, isolate the common residual
   before proposing constitutional language.
+- Otherwise the result is bounded or inconclusive: record which routes remain
+  open, failed, or incomparable, with no Qualification or axiom pressure.
 
-The effect-complete statement is bounded to the declared generated tester
-repertoire until a local-to-global theorem is proved. It must not be promoted
-to lattice-wide record sufficiency from one finite fixture.
+Tester completeness is bounded to the declared generated repertoire until a
+completeness and local-to-global theorem is proved. It must not be promoted to
+lattice-wide record sufficiency from one finite fixture.
 
 Record wording is not the target of this discriminator. Formation,
 permanence, and readout remain separate until the successful process says when

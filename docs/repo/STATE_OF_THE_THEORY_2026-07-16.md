@@ -4,7 +4,7 @@
 [`docs/audit/data/doc_authority_registry.json`](../audit/data/doc_authority_registry.json).
 This memo is citable for orientation and scope discipline only.
 **Status discipline:** every status word in this memo was read from the audit
-ledger on 2026-07-16 and goes stale from that moment. The live authorities are
+ledger's 2026-07-17 nightly state and goes stale from that moment. The live authorities are
 the tracked ledger shards ([`docs/audit/data/ledger/`](../audit/data/ledger/)),
 the generated [`RETAINED_BACKBONE.md`](RETAINED_BACKBONE.md), and
 [`FRONT_DOOR_STATUS.md`](FRONT_DOOR_STATUS.md). Where this memo and the ledger
@@ -22,11 +22,12 @@ records as the only readable content (**Record**) — plus three narrow approved
 primitives (a units-only scale reference, structural kinetic isotropy
 `c_t = c_s`, and a realized-state interface that supplies no state selection)?
 
-The repository is the experiment, not just its write-up. Every claim must be
-re-proved from the axioms by a machine-checked runner, reviewed adversarially
-before landing, and then ratified by an **independent audit lane** that assigns
-the only status words that count. Nothing an author writes — including this
-memo — grants a claim any standing.
+The repository is the experiment, not just its write-up. Claims land through
+adversarial review — most carrying machine-checked runners that re-prove
+their mathematics, though the repository also holds conditional,
+import-bearing, and standalone mathematical rows without runners — and only
+the **independent audit lane** assigns the status words that count. Nothing
+an author writes — including this memo — grants a claim any standing.
 
 Two consequences of that discipline shape everything below:
 
@@ -34,9 +35,9 @@ Two consequences of that discipline shape everything below:
    base to the current four-axiom base. The reset invalidated every audit that
    rested directly on the old axiom text. Ratification is being re-earned row
    by row; the audit lane, not the authors' confidence, sets the pace.
-2. **"Landed on main" and "established" are different tiers.** Most of the
-   program's newest and most ambitious chains are landed through review but
-   not yet audited. This memo keeps the two tiers separate everywhere.
+2. **Landing is not ratification.** Most of the program's newest and most
+   ambitious chains are landed through review but not yet audited; this memo
+   always says which of the two applies.
 
 ## How to read a status word
 
@@ -92,9 +93,10 @@ Its shape, grouped informally:
   [`OLLIVIER_EINSTEIN_PROXY_NOTE_2026-04-11.md`](../OLLIVIER_EINSTEIN_PROXY_NOTE_2026-04-11.md)).
 - **Taste/staggered structure**, e.g. taste-scalar isotropy
   ([`TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md`](../TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md)).
-- **302 retained bounded rows** — the largest ratified tier: results of the
-  form "given these named supplied inputs, this follows," each carrying its
-  boundary in the note itself.
+- **302 retained bounded rows** — the largest ratified group: audited
+  scope-bounded theorems, each ratified with the boundary stated in its own
+  note (some carry named supplied inputs; many are exact zero-dependency
+  results whose bound is their stated scope).
 
 ## The frontier: landed, not yet audited
 
@@ -164,17 +166,19 @@ What the framework, on its own record, does **not** claim:
   The sharpest conditional forecasts (PMNS `delta_CP`, `theta_23` octant) are
   currently leaning *against* the framework under NuFit-6.1 — stated there
   plainly.
-- **The publication surface is ahead of the audit.** 571 rows cited by
-  publication tables are not retained-grade; the generated divergence report
+- **The publication surface is ahead of the audit.** At the quoted ledger
+  state, 569 rows cited by publication tables are not retained-grade; the
+  generated divergence report
   ([`PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md))
   tracks this gap instead of hiding it.
 
 ## The map
 
-A navigation map, not a derivation graph: the boxes group the areas described
-above by tier, and the arrows-free layout is deliberate — the citation graph
-inside the ledger is the only dependency authority in this repository, and no
-edge here should be read as a derivation claim.
+An orientation map, not a derivation graph: the boxes group the areas
+described above by their ledger standing, and the arrows-free layout is
+deliberate — the citation graph inside the ledger is the only dependency
+authority in this repository, and nothing here should be read as a derivation
+claim.
 
 ```mermaid
 flowchart TB

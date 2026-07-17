@@ -43,6 +43,43 @@ GENERATED_PUBLICATION_SUFFIXES = ("_EFFECTIVE_STATUS.md",)
 # contribute no nodes or edges.
 GENERATED_REPO_FILES = {"FRONT_DOOR_STATUS.md", "RETAINED_BACKBONE.md"}
 
+DOC_AUTHORITY_REGISTRY_PATH = AUDIT_DATA_DIR / "doc_authority_registry.json"
+
+
+def _class_f_paths() -> set[str]:
+    """Class-F orientation memos, resolved from the doc-authority registry.
+
+    Class F carries no premise or interpretive weight, and criticality is
+    graph topology only (FRESH_LOOK_REQUIREMENTS section 4: author framing
+    must not set audit cost) — so class-F links must seed no nodes or edges.
+    Paths are stored repo-relative in the registry; the graph works
+    docs-relative.
+    """
+    try:
+        registry = json.loads(
+            DOC_AUTHORITY_REGISTRY_PATH.read_text(encoding="utf-8")
+        )
+    except (OSError, json.JSONDecodeError):
+        return set()
+    paths: set[str] = set()
+    for row in registry.get("rows", []):
+        path = row.get("path")
+        # Scope: docs/repo/ class-F memos only. Their ledger-row creation is
+        # already gated (excluded_source_patterns), so the skip removes edges
+        # without touching any existing ledger row. A registered class-F doc
+        # elsewhere under docs/ may already carry a ledger row; removing that
+        # row is an audit-data change the graph builder must not make.
+        if (
+            row.get("class") == "F"
+            and isinstance(path, str)
+            and path.startswith("docs/repo/")
+        ):
+            paths.add(path[len("docs/"):])
+    return paths
+
+
+CLASS_F_PATHS = _class_f_paths()
+
 # Legacy Status-line normalization is used only as a temporary migration hint
 # for seeding claim_type on rows that predate Type: metadata. It is not emitted
 # as an audit authority field.
@@ -585,6 +622,8 @@ def is_skipped(rel_path: Path) -> bool:
         if rel_path.name.endswith(GENERATED_PUBLICATION_SUFFIXES):
             return True
     if rel_path.parts[:1] == ("repo",) and rel_path.name in GENERATED_REPO_FILES:
+        return True
+    if rel_path.as_posix() in CLASS_F_PATHS:
         return True
     return False
 

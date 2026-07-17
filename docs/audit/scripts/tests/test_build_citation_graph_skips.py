@@ -22,7 +22,22 @@ class GeneratedSurfaceSkipTest(unittest.TestCase):
 
     def test_authored_repo_docs_not_skipped(self):
         self.assertFalse(is_skipped(Path("repo/CONTROLLED_VOCABULARY.md")))
-        self.assertFalse(is_skipped(Path("repo/STATE_OF_THE_THEORY_2026-07-16.md")))
+
+    def test_class_f_repo_orientation_memos_skipped(self):
+        # Class F = no premise or interpretive weight; author framing must not
+        # set audit cost (FRESH_LOOK_REQUIREMENTS section 4). Scope is
+        # docs/repo/ class-F memos: their row creation is already gated, so
+        # the skip removes edges without deleting any existing ledger row.
+        self.assertTrue(is_skipped(Path("repo/STATE_OF_THE_THEORY_2026-07-16.md")))
+
+    def test_row_bearing_class_f_doc_outside_repo_dir_not_skipped(self):
+        # This registered class-F doc already carries a ledger row; skipping
+        # it would delete audit data, which the graph builder must not do.
+        self.assertFalse(
+            is_skipped(
+                Path("GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md")
+            )
+        )
 
     def test_same_names_outside_repo_dir_not_skipped(self):
         self.assertFalse(is_skipped(Path("RETAINED_BACKBONE.md")))

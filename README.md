@@ -58,7 +58,7 @@ Use these entrypoints in order:
 
 1. [State of the theory (plain language)](docs/repo/STATE_OF_THE_THEORY_2026-07-16.md)
    — what is audit-ratified, what has landed but still awaits audit, what is
-   open, and the tier map
+   open, and the orientation map
 2. [Generated front-door status snapshot](docs/repo/FRONT_DOOR_STATUS.md)
 3. [Minimal axiom memo](docs/MINIMAL_AXIOMS_2026-06-29.md)
 4. [Retained backbone — every audit-ratified row](docs/repo/RETAINED_BACKBONE.md)

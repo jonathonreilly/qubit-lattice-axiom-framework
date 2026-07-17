@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/free_staggered_3plus1_same_action_transfer_gaussian_continuum_2026_07_12.py
+runner_sha256: 6cd0e4414172cf537145c14ad420064e06de4ff623cf601c45af9805b382feea
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
 FREE STAGGERED 3+1 SAME-ACTION SCALAR-SPECTRAL TRANSFER / COVARIANCE CONTINUUM
 Deterministic bounded-theorem checks; free CAR/quasi-free branch only.
 PASS: source guardrails pin one family, CAR/taste/SM/GR boundaries, N1--N8, and no axiom stop (N1--N8 schema 10/10)
@@ -8,7 +16,7 @@ PASS: same action's folded spatial hop squares to -sum sin^2(k) (worst residual 
 PASS: exact blocked-time covariance denominator is M^2+lambda^2+sin^2(q0) (worst residual 8.97e-16)
 PASS: pole--transfer identity: z=e^{2iq0}=e^{-2E} is exactly the stable T2 eigenvalue (eig 7.1e-15, pole 1.3e-15, det 7.2e-16)
 PASS: T2=T_even^dag T_even is Hermitian positive, so stable positivity is not inferred from eigenvalues alone (Herm 0.0e+00, factor 0.0e+00, min eig 7.159e-02)
-PASS: the time-cell map diag(I,z^-1 I) sends the 8D covariance-pole nullspace onto the 8D stable T2 eigenspace (nullity 8, stable multiplicity 8, residual 5.4e-15)
+PASS: the time-cell map diag(I,z^-1 I) sends the 8D covariance-pole nullspace onto the 8D stable T2 eigenspace (nullity 8, stable multiplicity 8, residual 5.8e-15)
 PASS: alternating transfer recurrence is algebraically identical to D_lat chi=0 (worst residual 4.44e-16)
 PASS: within M(a)=m a^alpha, alpha=1 uniquely gives a finite nonzero rest-energy limit (alpha .6/1/1.4 endpoints 4.604/0.730/0.116)
 PASS: physical one-particle energy converges uniformly on a compact momentum band at O(a^2) (errors [0.06341957718137525, 0.016694904520686116, 0.004231150815751539, 0.0010614624919627058], ratios [3.7987385374258418, 3.945712466342507, 3.986151981619148])
@@ -24,3 +32,6 @@ PASS: physical inverse quasilocal scale asinh(am)/a converges to m at O(a^2) (ra
 PASS: finite-a D^dag D scalar spectrum has the full 16-component multiplicity used by the separate Cl4 commutant test
 PASS: one-step decay is a negative control: the action-derived blocked transfer is e^{-2E}, not e^{-E}
 SCORECARD: PASS=23 FAIL=0
+
+----- stderr -----
+

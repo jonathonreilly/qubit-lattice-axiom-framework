@@ -342,7 +342,7 @@ nearest-neighbor scalar one-mode ordinary proper-cubic BdG class.
 
 | attack route | marker | test and outcome | proof/authority surface |
 |---|---|---|---|
-| hide momentum dependence in `tr H` while making the determinant finite Laurent | `ATTEMPTED` | scalar Laurent unitarity plus the global logarithm makes every determinant winding zero and fixes `tr H` | current source equations (8)--(9), lines 152--171; runner `B01--B03` |
+| hide momentum dependence in `tr H` while making the determinant finite Laurent | `ATTEMPTED` | scalar Laurent unitarity plus the global logarithm makes every determinant winding zero and fixes `tr H` | current source equations (8)--(9), lines 152--171 (prose winding argument; runner `B01--B03` cover the adjacent Cayley--Hamilton and converse steps, not this step) |
 | keep constant trace but a nonconstant band splitting | `ATTEMPTED` | a generic monomial slice turns nonconstant `s` into a pole, and nonpolynomial-entire `F(s)` into an essential singularity | current source equations (10)--(11), lines 173--196; runner `B04--B06` |
 | tune one exceptional time so the sine coefficient cancels transport | `ATTEMPTED` | finite support at that time already forces flat spectrum; sine-zero times then collapse a flat family onsite rather than create an isolated dispersive point | current source equation (12), lines 198--211; runner `M01` |
 | use the literal parity-even two-qubit pairing directions as local cubic BdG terms | `ATTEMPTED` | the six spin directions are classified, but no local `Z^3` spin-to-CAR bridge is supplied; this route remains outside the BdG theorem rather than being falsely ruled out | current source equations (4)--(5), lines 99--130; runner `A01--A07` |

@@ -4,9 +4,14 @@
 For the infinite temporal lattice at fixed spacing and a finite even 3D
 spatial torus, derive the reflected two-slice Berezin Gram from the same
 blocked covariance used by the action-derived transfer.  Mode by mode the
-Gram is rank one with nonzero eigenvalue 2 exp(-2E).  The induced partial
-isometry W obeys K_n = 2 W^dag C^n W, and exterior powers turn the Gaussian
-Wick determinants into CAR-Fock matrix elements of Gamma(C)^n.
+Gram is rank one with nonzero eigenvalue 2 exp(-2E).  Read as an operator
+kernel, the reflected Gram binds each mode Gram to the conjugate carrier
+eigenline, so its support frame is the pole frame Upole (containing B); the
+induced coisometry W = Upole^dag obeys K_n = 2 W^dag C^n W, and exterior
+powers turn the Gaussian Wick determinants into CAR-Fock matrix elements of
+Gamma(C)^n.  A dense inverse of the actual 3+1 chain operator checks the
+operator identities directly, with the parity-image frame as a decisive
+mutation control.
 
 Free U=1 and supplied CAR/Grassmann branch only.
 """
@@ -289,14 +294,6 @@ def test_full_3d_modal_lift() -> None:
     check("full 3D reflected Gram obeys K=2 W^dag C W with W a coisometry", partial < 2e-13 and representation < 2e-13, f"WWdag {partial:.1e}, representation {representation:.1e}")
     check("full 3D positive Gram spectrum is exactly twice the stable transfer spectrum", eig_match < 2e-13, f"eigenvalue residual {eig_match:.1e}")
 
-    # Position-basis conjugation: both independently transformed objects still agree.
-    Ub = np.kron(U, np.eye(2))
-    Kpos = Ub @ K @ Ub.conj().T
-    Cpos = U @ C @ U.conj().T
-    Wpos = U @ W @ Ub.conj().T
-    pos_res = float(np.linalg.norm(Kpos - 2.0 * Wpos.conj().T @ Cpos @ Wpos, ord=np.inf))
-    check("the representation equality survives the full position-basis transform with all cross-mode contractions", pos_res < 5e-13, f"position residual {pos_res:.1e}")
-
 
 def test_basis_independent_operator_formula() -> None:
     L = 4
@@ -314,16 +311,20 @@ def test_basis_independent_operator_formula() -> None:
     V = np.vstack([np.eye(n), sqrtZ @ B.conj().T]) @ invsqrt1pZ
     Upole = np.vstack([np.eye(n), sqrtZ @ B]) @ invsqrt1pZ
     Wstable = np.vstack([sqrtZ, B]) @ invsqrt1pZ
-    Kclosed = 2.0 * V @ Z @ V.conj().T
+    Kclosed = 2.0 * Upole @ Z @ Upole.conj().T
 
-    # Convert the independent mode-major construction to component-first position order.
+    # Convert the independent mode-major construction to component-first position
+    # order.  Reading the reflected Gram as an operator kernel dresses the mode
+    # Gram K_lambda with the CONJUGATED mode (eigenline H=-i lambda), so the
+    # position-basis dressing uses conj(U).
     Kmode, _, _ = modal_representation(M, lambdas)
     perm = np.zeros((2 * n, 2 * n))
     for j in range(n):
         for s in range(2):
             perm[s * n + j, 2 * j + s] = 1.0
-    U2 = np.block([[U, np.zeros_like(U)], [np.zeros_like(U), U]])
-    Kindependent = U2 @ perm @ Kmode @ perm.T @ U2.conj().T
+    Uc = U.conj()
+    U2c = np.block([[Uc, np.zeros_like(Uc)], [np.zeros_like(Uc), Uc]])
+    Kindependent = U2c @ perm @ Kmode @ perm.T @ U2c.conj().T
 
     I = np.eye(n, dtype=complex)
     Z0 = np.zeros_like(I)
@@ -332,9 +333,10 @@ def test_basis_independent_operator_formula() -> None:
     J = np.block([[I, Z0], [Z0, np.linalg.inv(Z)]])
     Pi = parity_involution_3d(L)
     Pi2 = np.block([[Pi, Z0], [Z0, Pi]])
-    Lmap = Wstable @ Pi @ V.conj().T
+    Lmap = Wstable @ Upole.conj().T
 
     formula_res = float(np.linalg.norm(Kclosed - Kindependent, ord=np.inf))
+    flipped_res = float(np.linalg.norm(2.0 * V @ Z @ V.conj().T - Kindependent, ord=np.inf))
     isometry_res = max(
         float(np.linalg.norm(B.conj().T @ B - I, ord=np.inf)),
         float(np.linalg.norm(V.conj().T @ V - I, ord=np.inf)),
@@ -349,11 +351,86 @@ def test_basis_independent_operator_formula() -> None:
     )
     intertwine_res = float(np.linalg.norm(Lmap @ (Kclosed / 2.0) - T2 @ Lmap, ord=np.inf))
 
-    check("basis-independent formula K=2 V Z V^dag matches the independent full 3D modal residue construction", formula_res < 2e-12, f"residual {formula_res:.1e}")
-    check("pole, OS, and stable frames are exact isometries and T2 Wstable=Wstable Z", isometry_res < 2e-12 and stable_res < 2e-12, f"isometry {isometry_res:.1e}, stable {stable_res:.1e}")
-    check("Block13 map has exact polar form J_Z Upole=Wstable Z^-1/2", polar_res < 5e-12, f"residual {polar_res:.1e}")
-    check("canonical staggered parity flips H and conjugates the pole frame into the OS frame", parity_res < 3e-12, f"residual {parity_res:.1e}")
-    check("partial unitary L=Wstable Pi V^dag intertwines K/2 with the positive transfer T2", intertwine_res < 5e-12, f"residual {intertwine_res:.1e}")
+    check("basis-independent formula K=2 Upole Z Upole^dag matches the conjugate-dressed full 3D modal residue construction", formula_res < 2e-12, f"residual {formula_res:.1e}")
+    check("parity-image mutation control: K=2 V Z V^dag fails on the conjugate-dressed construction", flipped_res > 1e-3, f"flipped-frame residual {flipped_res:.1e}")
+    check("pole, parity-image, and stable frames are exact isometries and T2 Wstable=Wstable Z", isometry_res < 2e-12 and stable_res < 2e-12, f"isometry {isometry_res:.1e}, stable {stable_res:.1e}")
+    check("the preceding block's time-cell map has exact polar form J_Z Upole=Wstable Z^-1/2", polar_res < 5e-12, f"residual {polar_res:.1e}")
+    check("canonical staggered parity flips H and conjugates the OS/pole frame into the parity-image frame", parity_res < 3e-12, f"residual {parity_res:.1e}")
+    check("partial unitary L=Wstable Upole^dag intertwines K/2 with the positive transfer T2", intertwine_res < 5e-12, f"residual {intertwine_res:.1e}")
+
+
+def test_actual_chain_operator_gram() -> None:
+    """Invert the actual 3+1 staggered chain operator and test the bridge.
+
+    This is the load-bearing check: the reflected two-slice Gram extracted
+    from a dense inverse of the actual (temporally open, exponentially
+    converged) 3+1 chain must equal 2 Upole Z^n Upole^dag, and must NOT
+    equal the parity-image variant 2 V Z^n V^dag.
+    """
+    L, M, Nt = 4, 1.0, 24
+    H = spatial_hop_3d(L)
+    n3 = H.shape[0]
+    lambdas, U = np.linalg.eigh(-1j * H)
+    r = np.sqrt(M * M + lambdas * lambdas)
+    z = np.exp(-2.0 * np.arcsinh(r))
+    Rinv = U @ np.diag(1.0 / r) @ U.conj().T
+    Z = U @ np.diag(z) @ U.conj().T
+    sqrtZ = U @ np.diag(np.sqrt(z)) @ U.conj().T
+    invsqrt1pZ = U @ np.diag(1.0 / np.sqrt(1.0 + z)) @ U.conj().T
+    B = (M * np.eye(n3) + H) @ Rinv
+    V = np.vstack([np.eye(n3), sqrtZ @ B.conj().T]) @ invsqrt1pZ
+    Upole = np.vstack([np.eye(n3), sqrtZ @ B]) @ invsqrt1pZ
+    Wstable = np.vstack([sqrtZ, B]) @ invsqrt1pZ
+
+    # Dense open chain D[(t,x),(s,y)] = (M I + (-1)^t H) delta_ts
+    #                                  + 0.5 (delta_{s,t+1} - delta_{s,t-1}) I.
+    Lt = 2 * Nt
+    D = np.zeros((Lt * n3, Lt * n3), dtype=complex)
+    I3 = np.eye(n3, dtype=complex)
+    for t in range(-Nt, Nt):
+        i = t + Nt
+        D[i * n3 : (i + 1) * n3, i * n3 : (i + 1) * n3] = M * I3 + ((-1) ** t) * H
+        if t + 1 < Nt:
+            D[i * n3 : (i + 1) * n3, (i + 1) * n3 : (i + 2) * n3] += 0.5 * I3
+        if t - 1 >= -Nt:
+            D[i * n3 : (i + 1) * n3, (i - 1) * n3 : i * n3] -= 0.5 * I3
+
+    # Only the source columns at reflected times theta(0)=-1 and theta(1)=-2
+    # are needed: K_n[(a,x),(b,y)] = G[(2(n-1)+t_b, y), (-1-t_a, x)].
+    rhs = np.zeros((Lt * n3, 2 * n3), dtype=complex)
+    for a, ta in enumerate((0, 1)):
+        src_row = (-1 - ta) + Nt
+        for x in range(n3):
+            rhs[src_row * n3 + x, a * n3 + x] = 1.0
+    X = np.linalg.solve(D, rhs)
+
+    def chain_gram(n: int) -> np.ndarray:
+        K = np.zeros((2 * n3, 2 * n3), dtype=complex)
+        for b, tb in enumerate((0, 1)):
+            tgt_row = (2 * (n - 1) + tb) + Nt
+            K[:, b * n3 : (b + 1) * n3] = X[tgt_row * n3 : (tgt_row + 1) * n3, :].T
+        return K
+
+    K1 = chain_gram(1)
+    K2 = chain_gram(2)
+    res_upole = max(
+        float(np.linalg.norm(K1 - 2.0 * Upole @ Z @ Upole.conj().T, ord=np.inf)),
+        float(np.linalg.norm(K2 - 2.0 * Upole @ Z @ Z @ Upole.conj().T, ord=np.inf)),
+    )
+    res_flip = float(np.linalg.norm(K1 - 2.0 * V @ Z @ V.conj().T, ord=np.inf))
+    P_U = Upole @ Upole.conj().T
+    P_V = V @ V.conj().T
+    support_upole = float(np.linalg.norm(P_U @ K1 @ P_U - K1, ord=np.inf))
+    support_flip = float(np.linalg.norm(P_V @ K1 @ P_V - K1, ord=np.inf))
+    Lmap = Wstable @ Upole.conj().T
+    Teven = np.block([[-2.0 * (M * I3 + H), I3], [I3, np.zeros_like(I3)]])
+    T2 = Teven.conj().T @ Teven
+    intertwine_res = float(np.linalg.norm(Lmap @ (K1 / 2.0) - T2 @ Lmap, ord=np.inf))
+
+    check("actual 3+1 chain-inverse Grams equal 2 Upole Z^n Upole^dag for n=1,2", res_upole < 1e-10, f"worst residual {res_upole:.1e}")
+    check("parity-image mutation control: the actual chain Gram is NOT 2 V Z V^dag", res_flip > 1e-3, f"flipped-frame residual {res_flip:.1e}")
+    check("actual chain Gram is supported on the Upole frame and not on the parity-image frame", support_upole < 1e-10 and support_flip > 1e-3, f"Upole {support_upole:.1e}, parity-image {support_flip:.1e}")
+    check("L=Wstable Upole^dag intertwines the actual chain Gram with the positive transfer T2", intertwine_res < 1e-10, f"residual {intertwine_res:.1e}")
 
 
 def test_os_quotient_factorization() -> None:
@@ -469,6 +546,7 @@ def main() -> int:
     test_open_chain_limit()
     test_full_3d_modal_lift()
     test_basis_independent_operator_formula()
+    test_actual_chain_operator_gram()
     test_os_quotient_factorization()
     test_semigroup_grams()
     test_wick_to_fock_exterior_powers()

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/two_seam_forest_gauge_polyakov_holonomy_2026_07_12.py
+runner_sha256: 59a19a21ec198cd5ab9592c30b377f2059a6350f54ed81a74915b6cce07b35ad
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
 PASS Two-seam matchings have exact unimodular reduced incidence: L=4,j=0:det=1,components=6; L=4,j=1:det=-1,components=6; L=6,j=0:det=1,components=12; L=6,j=1:det=1,components=12; L=8,j=0:det=1,components=18; L=8,j=1:det=1,components=18; L=10,j=0:det=1,components=24; L=10,j=1:det=1,components=24
 PASS SU3 forest Faddeev--Popov factor is configuration-independent one: |det B_red|^dim(SU3)=1^8=1 per temporal fiber; normalized Haar proof remains analytic
 PASS One reflection-invariant identity-link forest cannot fix all four adjacent-plane seams: required=[0, 1, 3, 4], closure=[0, 1, 2, 3, 4, 5], cycle_rank=1
@@ -36,3 +44,6 @@ PASS Wilson tensor fermion seam crossing remains positive: minimum tensor eigenv
 PASS Dropped orientation conjugation breaks seam positivity: minimum sampled eigenvalue=-9.972e-01
 PASS Source-note boundary and N1-N8 contract: schema present; attempted routes=8
 SCORECARD PASS=37 FAIL=0
+
+----- stderr -----
+

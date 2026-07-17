@@ -5,9 +5,9 @@
 **Status authority:** independent audit lane only. This source note proposes a
 bounded claim and neither sets nor predicts an audit verdict.  
 **Primary runner:**
-[`scripts/free_staggered_3plus1_same_object_transfer_gaussian_continuum_2026_07_12.py`](../scripts/free_staggered_3plus1_same_object_transfer_gaussian_continuum_2026_07_12.py)  
+[`scripts/free_staggered_3plus1_same_action_transfer_gaussian_continuum_2026_07_12.py`](../scripts/free_staggered_3plus1_same_action_transfer_gaussian_continuum_2026_07_12.py)  
 **Cached output:**
-[`logs/runner-cache/free_staggered_3plus1_same_object_transfer_gaussian_continuum_2026_07_12.txt`](../logs/runner-cache/free_staggered_3plus1_same_object_transfer_gaussian_continuum_2026_07_12.txt)
+[`logs/runner-cache/free_staggered_3plus1_same_action_transfer_gaussian_continuum_2026_07_12.txt`](../logs/runner-cache/free_staggered_3plus1_same_action_transfer_gaussian_continuum_2026_07_12.txt)
 
 ## Purpose and exact scope
 
@@ -491,7 +491,7 @@ limit. The theorem is narrowed accordingly.
 
 | prior path | live status | later escape/change mechanism | implication here |
 |---|---|---|---|
-| `docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md` | retained-bounded historical anchor | later `d`-dimensional phase algebra removed the `1+1` arena restriction | do not cite `1+1` alone as `3+1` authority |
+| `docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md` | `unaudited` historical anchor | later `d`-dimensional phase algebra removed the `1+1` arena restriction | do not cite `1+1` alone as `3+1` authority |
 | `docs/FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md` | `unaudited` | current blocked-time calculation adds the missing pole link | keep the new claim scalar-spectral |
 | `docs/FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION_CONDITIONAL_THEOREM_NOTE_2026-05-30.md` | `unaudited` | its gap `G1` exposed the false lattice/continuum assembly | do not rename a conditional continuum theorem as finite-`a` equality |
 | `docs/MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md` | `unaudited` | finite-carrier Berezin/operator computation supplies a stronger next route | attack residue/Gram equality next rather than infer it |
@@ -529,7 +529,7 @@ The deterministic runner checks:
 Reproduction:
 
 ```bash
-python3 scripts/free_staggered_3plus1_same_object_transfer_gaussian_continuum_2026_07_12.py
+python3 scripts/free_staggered_3plus1_same_action_transfer_gaussian_continuum_2026_07_12.py
 ```
 
 Expected final line: `SCORECARD: PASS=23 FAIL=0`.

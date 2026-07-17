@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/free_staggered_3plus1_reflected_gram_car_fock_representation_2026_07_12.py
+runner_sha256: ea14120b3c8b13058615477cae179f66c01c5f156128b4a43efdec492add3de7
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.71
+status: ok
+----- stdout -----
 FREE STAGGERED 3+1 REFLECTED GRAM / CAR-FOCK REPRESENTATION
 Infinite temporal lattice, finite even 3D spatial torus, free supplied CAR/Grassmann branch.
 PASS: source scope and full N1--N8 schema are pinned (schema 8/8)
@@ -5,21 +13,28 @@ PASS: blocked covariance inside pole and positive T2 stable eigenvalue are the s
 PASS: covariance residue with theta(t)=-1-t gives the closed reflected two-slice Gram (worst residual 0.0e+00)
 PASS: mode Gram is Hermitian PSD rank one with eigenvalues {0,2z} (Herm 0.0e+00, eig 4.4e-16)
 PASS: K/(2z) is the exact orthogonal positive-time OS support projector (projector residual 3.3e-16)
-PASS: raw finite open-chain Grams are Hermitian and converge exponentially to the exact infinite-time Gram (raw Herm 9.0e-17, worst Nt=32 7.0e-14)
+PASS: raw finite open-chain Grams are Hermitian and converge exponentially to the exact infinite-time Gram (raw Herm 1.2e-16, worst Nt=32 7.0e-14)
 PASS: canonical finite 3D spatial hop is anti-Hermitian and unitarily mode-decomposable (anti residual 0.0e+00)
-PASS: full 3D reflected Gram obeys K=2 W^dag C W with W a coisometry (WWdag 2.2e-16, representation 2.8e-16)
+PASS: full 3D reflected Gram obeys K=2 W^dag C W with W a coisometry (WWdag 4.4e-16, representation 2.8e-16)
 PASS: full 3D positive Gram spectrum is exactly twice the stable transfer spectrum (eigenvalue residual 5.6e-17)
-PASS: the representation equality survives the full position-basis transform with all cross-mode contractions (position residual 8.5e-15)
-PASS: basis-independent formula K=2 V Z V^dag matches the independent full 3D modal residue construction (residual 1.1e-14)
-PASS: pole, OS, and stable frames are exact isometries and T2 Wstable=Wstable Z (isometry 4.0e-14, stable 1.9e-14)
-PASS: Block13 map has exact polar form J_Z Upole=Wstable Z^-1/2 (residual 4.0e-14)
-PASS: canonical staggered parity flips H and conjugates the pole frame into the OS frame (residual 1.5e-14)
-PASS: partial unitary L=Wstable Pi V^dag intertwines K/2 with the positive transfer T2 (residual 2.5e-14)
+PASS: basis-independent formula K=2 Upole Z Upole^dag matches the conjugate-dressed full 3D modal residue construction (residual 1.7e-14)
+PASS: parity-image mutation control: K=2 V Z V^dag fails on the conjugate-dressed construction (flipped-frame residual 6.0e-01)
+PASS: pole, parity-image, and stable frames are exact isometries and T2 Wstable=Wstable Z (isometry 4.1e-14, stable 2.0e-14)
+PASS: the preceding block's time-cell map has exact polar form J_Z Upole=Wstable Z^-1/2 (residual 4.4e-14)
+PASS: canonical staggered parity flips H and conjugates the OS/pole frame into the parity-image frame (residual 1.6e-14)
+PASS: partial unitary L=Wstable Upole^dag intertwines K/2 with the positive transfer T2 (residual 2.9e-14)
+PASS: actual 3+1 chain-inverse Grams equal 2 Upole Z^n Upole^dag for n=1,2 (worst residual 7.6e-15)
+PASS: parity-image mutation control: the actual chain Gram is NOT 2 V Z V^dag (flipped-frame residual 2.5e-01)
+PASS: actual chain Gram is supported on the Upole frame and not on the parity-image frame (Upole 1.0e-14, parity-image 2.8e-01)
+PASS: L=Wstable Upole^dag intertwines the actual chain Gram with the positive transfer T2 (residual 1.6e-14)
 PASS: K=A^dag A gives the exact positive OS quotient map with rank equal to the spatial one-particle space (factor 2.2e-16, min singular 5.183e-01)
-PASS: all blocked-time reflected two-point Grams obey K_n=2 W^dag C^n W (operator 1.8e-16, independent open-chain n=1..4 3.2e-16)
+PASS: all blocked-time reflected two-point Grams obey K_n=2 W^dag C^n W (operator 1.8e-16, independent open-chain n=1..4 2.6e-16)
 PASS: one-particle Berezin pairings equal CAR transfer pairings for multiple block separations (worst pairing residual 2.0e-15)
 PASS: canonical OS quotient and boundary-insertion factorizations agree for common and arbitrary positive block times (worst residual 2.8e-15)
 PASS: all tested common-time and multitime Wick determinants equal CAR-Fock exterior inner products (det 1.6e-14, common wedge 1.4e-14, multitime 8.0e-16)
 PASS: the orthogonal block-field combination is exactly OS-null while the physical combination has norm 2z (null 7.9e-18, physical 0.421101)
 PASS: single-step decay e^-E fails the reflected-Gram normalization control (mutation residual 0.497)
-SCORECARD: PASS=22 FAIL=0
+SCORECARD: PASS=26 FAIL=0
+
+----- stderr -----
+

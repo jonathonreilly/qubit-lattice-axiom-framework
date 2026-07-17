@@ -11,7 +11,7 @@ bounded claim and neither sets nor predicts an audit verdict.
 
 ## Purpose and scope
 
-The preceding [same-action scalar spectral continuum block](FREE_STAGGERED_3PLUS1_SAME_OBJECT_TRANSFER_GAUSSIAN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-07-12.md)
+The preceding [same-action scalar spectral continuum block](FREE_STAGGERED_3PLUS1_SAME_ACTION_TRANSFER_GAUSSIAN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-07-12.md)
 proved that the blocked Euclidean covariance pole and the stable positive
 two-step transfer eigenvalue are the same `z=e^{-2E}`, and mapped their
 solution spaces. It deliberately left the pole residue, reflected OS support
@@ -38,7 +38,7 @@ remain separate.
 |---|---|---|
 | preceding same-action scalar spectral block | exact `z_pole=z_stable`, positive `T_2`, eight-dimensional solution-space map, and controlled scalar continuum limit | sole markdown dependency; this note resolves its named finite-`a` representation residual |
 | `docs/MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md:1-223` | numerical finite-carrier Berezin/operator eigenvalue equality, hard-coded `c_block=2`, predominantly one-spatial-axis language | question provenance and numerical cross-check only; the analytic proof below is self-contained and applies to arbitrary finite-dimensional anti-Hermitian spatial hop |
-| `scripts/mixed_os_transfer_representation_2026-05-30.py:216-430` | open temporal-chain inverse, two-slice reflected Gram, full position-basis numerical check | replayed to confirm signs; its finite-boundary equality is asymptotic rather than exact |
+| `scripts/mixed_os_transfer_representation_2026-05-30.py:216-430` | open temporal-chain inverse, two-slice reflected Gram, full position-basis numerical check | sign conventions re-verified by the current runner's dense chain-inverse check; its finite-boundary equality is asymptotic rather than exact |
 | `docs/FREE_FIELD_LATTICE_TO_CONTINUUM_GAUSSIAN_MEASURE_BOUNDED_NOTE_2026-05-30.md:43-119` | covariance-to-fixed-finite-Wick polynomial continuity in a supplied Gaussian branch | compatible downstream context; not used to prove the fixed-`a` representation identity |
 | `docs/FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION_CONDITIONAL_THEOREM_NOTE_2026-05-30.md:367-390` | continuum OS reconstruction with a named lattice representation gap | this note closes the free positive-time block-algebra part of that gap, not the interacting or full continuum theorem |
 
@@ -134,23 +134,29 @@ K_lambda,n=2 z^n P_OS,lambda.
 
 ### 2. Basis-independent OS quotient and positive transfer
 
-Define the isometry from the physical one-particle space into the two-slice
-block space
+Reading the reflected Gram as an operator kernel (row index = reflected
+first argument) places each mode Gram `K_lambda` on the **conjugate**
+carrier eigenline: the staggered hop is real, so complex conjugation maps
+an `H=i lambda` eigenvector to an `H=-i lambda` eigenvector, and
+`K((a,x),(b,y)) = G((t_b,y),(theta(t_a),x))` dresses `K_lambda` with the
+conjugated mode. On the eigenline `H=-i lambda` the unitary `B` acts as
+`b*`, so the support column `[1, sqrt(z) b*]^T` of `K_lambda` is exactly
+the value of the pole-frame isometry
 
 ```text
-V = [ I ; Z^(1/2) B^dag ] (I+Z)^(-1/2),
-V^dag V=I.
+U_pole = [ I ; Z^(1/2) B ] (I+Z)^(-1/2),
+U_pole^dag U_pole=I.
 ```
 
 Then the full reflected Grams are
 
 ```text
-P_OS=V V^dag,
-K_n=2 V Z^n V^dag.
+P_OS=U_pole U_pole^dag,
+K_n=2 U_pole Z^n U_pole^dag.
 ```
 
-Equivalently, with the coisometry `W=V^dag` and one-particle contraction
-`C=Z`,
+Equivalently, with the coisometry `W=U_pole^dag` and one-particle
+contraction `C=Z`,
 
 ```text
 K_n = 2 W^dag C^n W.
@@ -159,7 +165,7 @@ K_n = 2 W^dag C^n W.
 The positive OS quotient map at one block is
 
 ```text
-A=sqrt(2) Z^(1/2) V^dag,
+A=sqrt(2) Z^(1/2) U_pole^dag,
 K_1=A^dag A.
 ```
 
@@ -171,13 +177,13 @@ its rank equals `dim h`. The quotient isometrically identifies with `h` through
 K_n=A^dag Z^(n-1) A.
 ```
 
-Separately, `V` is an orthonormal frame for the support of `K_1`, and the
-unweighted boundary-insertion frame `sqrt(2)V^dag` sees the one-block transfer
-`Z`:
+Separately, `U_pole` is an orthonormal frame for the support of `K_1`, and
+the unweighted boundary-insertion frame `sqrt(2)U_pole^dag` sees the
+one-block transfer `Z`:
 
 ```text
-V^dag P_OS V=I,
-V^dag (K_1/2) V=Z.
+U_pole^dag P_OS U_pole=I,
+U_pole^dag (K_1/2) U_pole=Z.
 ```
 
 Thus the residue is not merely spectrally compatible with the transfer: it
@@ -186,12 +192,12 @@ projector of the reflected Gram, not a derivation of the original lattice
 fields' equal-time CAR anticommutator; that stronger claim requires the barred
 fields and contact terms left open below.
 
-### 3. Pole, OS, and stable-transfer frames on the canonical 3D carrier
+### 3. Pole, parity-image, and stable-transfer frames on the canonical 3D carrier
 
-The unreflected pole frame and normalized stable-transfer frame are
+The parity-image frame and normalized stable-transfer frame are
 
 ```text
-U_pole = [ I ; Z^(1/2) B ] (I+Z)^(-1/2),
+V = [ I ; Z^(1/2) B^dag ] (I+Z)^(-1/2),
 W_stable = [ Z^(1/2) ; B ] (I+Z)^(-1/2).
 ```
 
@@ -208,8 +214,10 @@ J_Z=diag(I,Z^(-1)),
 J_Z U_pole = W_stable Z^(-1/2).
 ```
 
-Reflection changes `H` to `-H`, which is why `V` contains `B^dag` while
-`U_pole` contains `B`. On the canonical even staggered torus the parity
+The operator reading of the reflected Gram conjugates the mode dressing
+(`H` to `-H` on mode labels), which is why the OS support frame is the
+pole frame `U_pole` containing `B`, while the parity-image frame `V`
+contains `B^dag`. On the canonical even staggered torus the parity
 involution
 
 ```text
@@ -220,13 +228,16 @@ obeys `Pi H Pi=-H`, `Pi Z Pi=Z`, and `Pi B Pi=B^dag`. With
 `boldPi=diag(Pi,Pi)`,
 
 ```text
-V=boldPi U_pole Pi.
+V=boldPi U_pole Pi,
 ```
+
+so `V` is the OS support frame of the parity-transformed carrier, not of
+the carrier itself.
 
 The partial unitary
 
 ```text
-L=W_stable Pi V^dag
+L=W_stable U_pole^dag
 ```
 
 maps the OS quotient onto the stable transfer space and intertwines
@@ -237,7 +248,10 @@ L (K_1/2) = T_2 L.
 
 This is the exact finite-`a` reflected-Gram/OS-quotient/stable-transfer
 identification on the actual free 3D staggered carrier, conditional on the CAR
-branch.
+branch. The paired runner verifies these operator identities directly against
+a dense inverse of the actual 3+1 chain operator, where the conjugate-eigenline
+binding is decisive: the `V`-frame variant of the same formulas fails on the
+actual carrier by an order-`10^-2` residual.
 
 ### 4. Multitime Gaussian Wick hierarchy equals CAR-Fock exterior products
 
@@ -247,7 +261,7 @@ Reflection makes the cell separation of the `(i,j)` pair
 `r_i+s_j+1`, so
 
 ```text
-K_ij=2 V Z^(r_i+s_j+1) V^dag
+K_ij=2 U_pole Z^(r_i+s_j+1) U_pole^dag
     =A^dag Z^(r_i+s_j) A.
 ```
 
@@ -264,6 +278,9 @@ Then
 <f_i,K_ij g_j>=<xi_i,eta_j>.
 ```
 
+Here reflection acts antimultiplicatively on Grassmann generators with the
+Osterwalder--Seiler sign convention `Theta(chi_t)=-bar-chi_(theta(t))`, as
+displayed in `scripts/mixed_os_transfer_representation_2026-05-30.py:241-263`.
 The free Grassmann reflected `2q`-field Gram is therefore
 
 ```text
@@ -278,8 +295,8 @@ of `Gamma(Z)^(r+s)`. There is also a distinct but algebraically equivalent
 boundary-insertion normalization
 
 ```text
-phi_i=sqrt(2)V^dag f_i,
-psi_j=sqrt(2)V^dag g_j,
+phi_i=sqrt(2)U_pole^dag f_i,
+psi_j=sqrt(2)U_pole^dag g_j,
 <f_i,K_ij g_j>=<phi_i,Z^(r_i+s_j+1)psi_j>.
 ```
 
@@ -292,9 +309,12 @@ runner.
 ### 5. Full 3D lift and multiplicity
 
 The canonical 3D spatial hop is normal and anti-Hermitian, so a unitary modal
-transform diagonalizes it. Applying the preceding identities per mode and
+transform diagonalizes it. Applying the preceding identities per mode — with
+each mode Gram bound to the conjugate eigenline as in Theorem 2 — and
 conjugating back proves the full position-basis statement, including every
-cross-mode contraction. No one-spatial-axis assumption remains.
+cross-mode contraction. No one-spatial-axis assumption remains. The paired
+runner checks this lift both analytically and against a dense inverse of the
+actual 3+1 chain operator.
 
 For each reduced spatial momentum the staggered cell has dimension `8`; the
 OS projector, pole projector, and stable transfer projector therefore each
@@ -323,7 +343,8 @@ Established at bounded-theorem strength for the displayed free family:
 - exact analytic pole residue and reflected two-slice Gram;
 - exact derivation of `c_block=2` as block-field normalization;
 - OS support projector, null quotient, and positive transfer contraction;
-- canonical parity bridge among pole, reflected, and stable frames;
+- identification of the OS support frame with the pole frame `U_pole`, its
+  parity-image bridge `V=boldPi U_pole Pi`, and the stable-frame intertwiner;
 - `K_n=2 W^dag C^n W` for every positive block separation;
 - equality of every finite multitime positive-time unbarred Grassmann Wick
   Gram with the corresponding CAR-Fock exterior inner product;
@@ -359,7 +380,7 @@ supply the remaining structures, not that the framework cannot supply them.
 | compute the inside-pole residue analytically | `ATTEMPTED` | succeeds and fixes the exact reflected Gram | current Theorem 1; runner residue check |
 | use only equality of the pole and stable eigenvalue | `ATTEMPTED` | insufficient: it does not fix residue, null direction, or OS quotient/boundary-insertion normalization | preceding dependency boundary; current rank-one projector check |
 | normalize the rank-one residue into the OS projector and quotient | `ATTEMPTED` | succeeds: `K/(2z)` is an orthogonal projector and `K=A^dag A` | current Theorem 2; runner projector/quotient checks |
-| lift the mode formula to the full 3D position carrier | `ATTEMPTED` | succeeds for arbitrary finite-dimensional anti-Hermitian `H`; canonical parity supplies the reflection map | current Theorems 3 and 5; runner modal/operator/position checks |
+| lift the mode formula to the full 3D position carrier | `ATTEMPTED` | succeeds for arbitrary finite-dimensional anti-Hermitian `H` once the operator reading binds each mode Gram to the conjugate eigenline | current Theorems 2, 3, and 5; runner dense chain-inverse and operator checks |
 | extend the two-point identity to all finite multitime Gaussian polynomials | `ATTEMPTED` | succeeds on the positive-time unbarred OS algebra by Wick determinants and exterior products | current Theorem 4; runner degrees `1..3`, common and nonuniform-time controls |
 | demand exact equality on a finite temporal open chain | `ATTEMPTED` | fails without boundary-image terms; the exact theorem is vacuum/infinite-time and finite open chains converge to it | current arena boundary; runner `N=8,16,32` control |
 
@@ -411,7 +432,7 @@ an independent wall. The theorem closes the representation statement under
 | `infinite temporal lattice` / `vacuum` | arena condition | open-chain corrections are tested; circle thermal images are named and left open |
 | `finite even 3D spatial torus` | arena condition | infinite-volume uniformity remains open |
 | `positive-time unbarred` | algebra restriction | reciprocal barred/contact terms stay open |
-| `reflection changes H to -H` | load-bearing convention | explicit parity involution proves it on the canonical carrier |
+| `operator reading conjugates the mode dressing` | load-bearing kernel convention | dense chain-inverse check pins the OS support frame to `U_pole`; the parity involution displays the conjugate frame `V` |
 | `full 3D` | finite-torus resolution only | does not mean infinite spatial volume or interacting spacetime |
 
 The scan also checked `we assume`, `by construction`, `as is standard`,
@@ -422,7 +443,7 @@ unclassified occurrence carries theorem weight.
 
 | witness | witness residual | residual claimed closed here | match? |
 |---|---|---|---|
-| `docs/FREE_STAGGERED_3PLUS1_SAME_OBJECT_TRANSFER_GAUSSIAN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-07-12.md:82-266` (Sections 1--4) | pole/eigenvalue and solution-space match; reflected OS support/quotient plus broader equal-time-CAR/coherent-state bridge open | positive-time unbarred reflected-Gram/OS-quotient/Fock-exterior subbridge | partial: this subbridge closes; original-field CAR/contact/all-field residual stays open; sole markdown dependency is the Purpose link |
+| `docs/FREE_STAGGERED_3PLUS1_SAME_ACTION_TRANSFER_GAUSSIAN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-07-12.md:82-266` (Sections 1--4) | pole/eigenvalue and solution-space match; reflected OS support/quotient plus broader equal-time-CAR/coherent-state bridge open | positive-time unbarred reflected-Gram/OS-quotient/Fock-exterior subbridge | partial: this subbridge closes; original-field CAR/contact/all-field residual stays open; sole markdown dependency is the Purpose link |
 | `docs/MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md:1-72` | numerical finite-carrier positive eigenvalue `2z`; analytic normalization absent | exact infinite-time reflected Gram | question provenance only; current proof replaces it |
 | `docs/MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md:273-288` | finite carrier only; continuum open | current fixed-`a` representation boundary | yes as a boundary witness, not proof |
 | `docs/FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION_CONDITIONAL_THEOREM_NOTE_2026-05-30.md:367-390` | lattice representation and continuum boost gaps | positive-time free representation subgap | partial match; broader continuum gap remains |
@@ -488,7 +509,7 @@ accordingly.
 
 | prior path | live status | later escape/change mechanism | implication here |
 |---|---|---|---|
-| old `1+1` RP/two-step source | retained-bounded historical anchor | `d=3` phase algebra removed the arena restriction | prove the 3D lift explicitly |
+| old `1+1` RP/two-step source | `unaudited` historical anchor | `d=3` phase algebra removed the arena restriction | prove the 3D lift explicitly |
 | old mixed-OS finite-carrier source | `unaudited` | analytic residue removes fitted/hard-coded normalization and boundary ambiguity | state vacuum/infinite-time arena exactly |
 | preceding scalar spectral block / PR #5262 | branch-local, audit pending | current residue and projector close its named representation residual | do not stop at pole location |
 | conditional OS/Wightman source | `unaudited` | current theorem closes only its free positive-time lattice representation subgap | keep continuum boosts and interactions conditional |
@@ -504,13 +525,18 @@ interacting SM, GR, joint TOE, or axiom-update conclusions; none is shipped.
 
 ## Runner coverage
 
-The deterministic runner checks:
+The runner (deterministic up to floating-point rounding in reported
+residuals) checks:
 
 - the common covariance pole and positive transfer eigenvalue;
 - the exact residue-to-reflected-Gram slice reordering;
 - Hermiticity, rank-one positivity, eigenvalue `2z`, and projector identity;
 - convergence of finite open temporal chains to the vacuum Gram;
-- full canonical 3D anti-Hermitian modal and position-basis lifts;
+- the full canonical 3D anti-Hermitian modal lift;
+- a dense inverse of the actual 3+1 chain operator confirming
+  `K_n=2 U_pole Z^n U_pole^dag`, the intertwiner, and the OS support frame
+  directly on the actual carrier, with the conjugate-frame (`V`) variant as
+  a decisive mutation control;
 - the basis-independent `B,Z,V,U_pole,W_stable` formulas;
 - staggered parity, the polar `J_Z` relation, and the partial-unitary
   intertwiner;
@@ -518,7 +544,9 @@ The deterministic runner checks:
 - `K_n=2 W^dag C^n W` across multiple separations;
 - canonical quotient and boundary-insertion normalizations, including the
   `n-1` versus `n` transfer-power distinction;
-- multitime Wick determinant/CAR-Fock exterior equality across multiple grades;
+- multitime Wick-determinant/CAR-Fock exterior bookkeeping consistency across
+  multiple grades (the Berezin-to-Wick step is the standard finite Grassmann
+  Gaussian theorem with the displayed OS sign convention);
 - a wrong single-step decay mutation control;
 - source scope and full N1--N8 schema.
 
@@ -528,7 +556,7 @@ Reproduction:
 python3 scripts/free_staggered_3plus1_reflected_gram_car_fock_representation_2026_07_12.py
 ```
 
-Expected final line: `SCORECARD: PASS=22 FAIL=0`.
+Expected final line: `SCORECARD: PASS=26 FAIL=0`.
 
 ## Honest status
 

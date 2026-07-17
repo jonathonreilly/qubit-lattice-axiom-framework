@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/coupled_periodic_two_seam_su3_wilson_staggered_reflected_gram_2026_07_12.py
+runner_sha256: 272e50e3de063ec28556d63bc8758a070ce2234a8f11b07a37e8e8982ae9c419
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 42.35
+status: ok
+----- stdout -----
 PASS SU3 Wilson character channels are positive: minimum checked channel=4.859375e-05
 PASS Each sampled SU3 Wilson seam kernel is positive: minimum eigenvalue=1.544816e-01
 PASS The combined two-seam Wilson-times-fermion coefficient is positive: minimum tensor eigenvalue proxy=1.491536e-03
@@ -5,9 +13,9 @@ PASS Exact Z3 Wilson seam kernel has positive Fourier coefficients: spectrum=[0.
 PASS Both exact Z3 reflections preserve the AP staggered action: maximum entrywise-matrix residual=0.000e+00
 PASS Both exact Z3 reflections preserve the full Wilson side action: maximum action residual=4.441e-16
 PASS Every exact finite-group probe is locally Z3 gauge invariant: maximum residual vertex charge mod 3=0
-PASS Exact Z3 coupled theta0 Gram is Hermitian positive: Hermiticity=4.130e-14, minimum=5.492398e-03
-PASS Exact Z3 coupled adjacent-plane Gram is Hermitian positive: Hermiticity=3.660e-14, minimum=2.479470e-03
-PASS Exact coupled adjacent-plane correlation identity: identity=1.652e-15, Hermiticity=3.602e-14, minimum=2.479470e-03
+PASS Exact Z3 coupled theta0 Gram is Hermitian positive: Hermiticity=4.131e-14, minimum=5.492398e-03
+PASS Exact Z3 coupled adjacent-plane Gram is Hermitian positive: Hermiticity=3.661e-14, minimum=2.479470e-03
+PASS Exact coupled adjacent-plane correlation identity: identity=1.661e-15, Hermiticity=3.602e-14, minimum=2.479470e-03
 PASS Exact Z3 coupled normalization is real and strictly positive: Z0=41.620439019223, Z1=41.620439019223
 PASS Antiperiodic staggered matrices are anti-Hermitian off mass with positive determinant: maximum anti-Hermitian residual=0.000e+00, minimum det=3.078125e+00
 PASS Uniform reflection is rejected on gauge-invariant baryon probes: Hermiticity residual=5.192190e+01, minimum Hermitian-part eigenvalue=-4.212168e+00
@@ -15,3 +23,6 @@ PASS Positive adjacent forms alone do not imply OS-null descent: G0=diag(1,0), G
 PASS Positive adjacent forms alone do not imply contraction: G0=I, G2=diag(2,1/2) is the exact countermodel
 PASS Source-note boundary and N1-N8 contract: schema present; attempted routes=8
 SCORECARD PASS=16 FAIL=0
+
+----- stderr -----
+

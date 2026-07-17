@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/two_band_bdg_strict_time_flat_spectrum_2026_07_12.py
+runner_sha256: c5d5073fda25a95b4cb4f20b037b80167cf49f508b2abbf47fcc04a9002c60b4
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.66
+status: ok
+----- stdout -----
 PASS A01: the endpoint-symmetric parity-even spin-density basis has six independent real directions
 PASS A02: all six directions are endpoint-SWAP symmetric
 PASS A03: all six directions conserve total fermion parity
@@ -32,3 +40,6 @@ PASS F04: doubling the Clifford chirality supplies a unitary intertwiner for eac
 PASS F05: the 24 intertwiners close projectively, so conjugation is an honest action on the even/quadratic algebra
 PASS F06: commuting pi rotations anticommute on odd CAR generators, exposing the nontrivial spinorial cocycle
 SUMMARY PASS=33 FAIL=0
+
+----- stderr -----
+

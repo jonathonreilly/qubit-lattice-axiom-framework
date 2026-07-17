@@ -1,0 +1,119 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_2026_07_17.py
+runner_sha256: 9b8ccfba9cf2cdf0d15ab6aeee25ebf6f28e22188929aa7e6ace2a8c37b9b13a
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 4.73
+status: ok
+----- stdout -----
+A.1 PASS 2D is integer antisymmetric with entries in {-1,0,1}
+A.2 PASS exact rank(D) = 56, so dim ker D = 8
+A.3 PASS all eight corner plane waves are exact null vectors of D
+A.4 PASS corner waves orthogonal (V8^T V8 = 64*I), hence they span ker D exactly
+A.5 PASS translations are commuting permutation matrices of order 4
+A.6 PASS hw=1 joint translation characters are exactly (-1,+1,+1), (+1,-1,+1), (+1,+1,-1)
+A.7 PASS U_R is a permutation matrix with U_R^3 = I
+A.8 PASS U_R conjugates translations cyclically: U_R T_mu U_R^T = T_{mu+1 mod 3}
+B1.1 PASS U_R V = V C exactly (columnwise: U_R v1 = v2, U_R v2 = v3, U_R v3 = v1)
+B1.2 PASS delivered c3 = (V^T U_R V)/64 has entries exactly {0,1} and equals C
+B1.3 PASS C^3 = I exactly
+B1.4 PASS C^T = C^2 exactly
+B1.5 PASS U_R maps corner 1 to corner 2 with coefficient +1 (no sign)
+B1.6 PASS conj(V z) = V conj(z): ambient conjugation = entrywise K in corner basis
+B1.7 PASS delivered projectors Hermitian, idempotent, orthogonal, sum = I, trace 1
+B1.8 PASS channel-eigenvalue association: C P_chi = chi P_chi for all three channels
+B2.1 PASS K P_1 K = P_1: singlet channel K-fixed
+B2.2 PASS K P_w K = P_wbar and K P_wbar K = P_w: doublet channels one K 2-orbit
+B2.3 PASS democratic direction is entrywise real and P_1-fixed (K-fixed vector)
+B2.4 PASS vw = (1, wbar, wbar^2)/sqrt(3) satisfies C vw = w vw
+B2.5 PASS K maps the omega eigenline to the omegabar eigenline: C conj(vw) = wbar conj(vw)
+B2.6 PASS P_w = vw vw^dagger exactly (doublet line projector identification)
+B3.1 PASS real-triple channel eigenvalues: Wc P_chi = lam_chi P_chi; lam0 real; lam2 = conj(lam1)
+B3.2 PASS det(Wc) = lam0 * |lam1|^2 exactly on entrywise-real triples
+B3.3 PASS negative control (1,i,0): lam2 - conj(lam1) = sqrt(3) - i and det = 1 - i
+B4.1 PASS commutant of C has dimension exactly 3 (rank of ad_C = 6)
+B4.2 PASS {I, C, C^2} are linearly independent commuting elements, so they span the commutant
+B4.3 PASS Hermitian + K-real commutant member forced to a*I + b*(C + C^2): constraint rank 4, kernel spanned by I and C+C^2, and b=c is enforced
+B4.4 PASS K-real class spectrum: charpoly = (x-(a+2b)) * (x-(a-b))^2, doublet eigenvalues exactly equal
+B4.5 PASS channel values on the K-real class: tr(P_1 H) = a+2b, tr(P_w H) = tr(P_wbar H) = a-b; separation identically zero
+B4.6 PASS equivariant Hermitian class: H - K H K = (be-ga)*(P_w - P_wbar) identically, so doublet separation iff nonzero K-odd component
+B4.7 PASS canonical separator P_w - P_wbar: Hermitian, equivariant, K-ODD, and separates (channel difference 2)
+B4.8 PASS hardening: a GENERAL real symmetric operator (equivariance dropped) has exactly equal expectations on the two conjugate doublet lines
+B4.9 PASS boundary witness: P_w (Hermitian, K-odd in part) separates the lines with expectations 1 and 0
+B5.1 PASS the K-real class realizes every (singlet, doublet) channel-value pair exactly once: (a,b) -> (a+2b, a-b) has determinant -3
+B5.2 PASS three exact witnesses give distinct doublet-to-singlet ratios {1, 1/2, 1/4}: the classification pins no ratio value
+B6.1 PASS block-05 carries the R1c supplied-carrier sentence
+B6.2 PASS note blockquotes the R1c supplied-carrier sentence
+B6.3 PASS block-05 carries the supplied-surface FLAG sentence
+B6.4 PASS note blockquotes the supplied-surface FLAG sentence
+B6.5 PASS mechanism note carries the R2 derivability sentence
+B6.6 PASS note blockquotes the R2 derivability sentence
+B6.7 PASS gate note carries the species-surface algebraic clause
+B6.8 PASS note blockquotes the species-surface algebraic clause
+B7.1 PASS ledger shard file exists: minimal_axioms
+B7.2 PASS ledger shard file exists: staggered_dirac_realization_gate_note_2026-05-03
+B7.3 PASS ledger shard file exists: kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_bounded_theorem_note_2026-07-16
+B7.4 PASS ledger shard file exists: kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12
+B7.5 PASS ledger shard file exists: acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12
+B7.6 PASS ledger shard file exists: acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12
+B8.1 PASS note carries: ## Purpose
+B8.2 PASS note carries: ## Supplied objects and consumed readings
+B8.3 PASS note carries: ## Claims
+B8.4 PASS note carries: ### Lattice delivery of the supplied corner carrier (T1, exact)
+B8.5 PASS note carries: ### K-polarization of the delivered channels (T2, exact)
+B8.6 PASS note carries: ### Spectral-pairing license instantiated on the delivered carrier (T3, exact)
+B8.7 PASS note carries: ### Doublet-pair separation is K-gated on the delivered carrier (T4, bounded negative)
+B8.8 PASS note carries: ## Gated controls
+B8.9 PASS note carries: ## Negative controls
+B8.10 PASS note carries: ## No-Go Discipline Gate
+B8.11 PASS note carries: ### N1 —
+B8.12 PASS note carries: ### N2 —
+B8.13 PASS note carries: ### N3 —
+B8.14 PASS note carries: ### N4 —
+B8.15 PASS note carries: ### N5 —
+B8.16 PASS note carries: ### N6 —
+B8.17 PASS note carries: ### N7 —
+B8.18 PASS note carries: ### N8 —
+B8.19 PASS note carries: ## Non-claims
+B8.20 PASS note carries: ## Dependency roles and status boundary
+B8.21 PASS note carries: ## Dependencies
+B8.22 PASS note carries: ### Non-citation context handles
+B8.23 PASS note carries: ## Verification
+B8.24 PASS note carries: **No check passes by literal stipulation.**
+B8.25 PASS note carries: **Status authority:** independent audit lane only.
+B8.26 PASS forbidden phrase absent: 'exhaust'
+B8.27 PASS forbidden phrase absent: 'only route'
+B8.28 PASS forbidden phrase absent: 'last route'
+B8.29 PASS forbidden phrase absent: 'closes the'
+B8.30 PASS forbidden phrase absent: 'bijection'
+B8.31 PASS forbidden phrase absent: 'final'
+B8.32 PASS forbidden phrase absent: 'forces r'
+B8.33 PASS forbidden phrase absent: 'derives r'
+B8.34 PASS forbidden phrase absent: 'selects r'
+B8.35 PASS forbidden phrase absent: 'retained'
+B8.36 PASS forbidden phrase absent: 'discharge'
+B8.37 PASS forbidden phrase absent: 'derived carrier'
+B8.38 PASS source-authored status/value snapshot absent: 'unaudited at writing'
+B8.39 PASS source-authored status/value snapshot absent: 'citation grades at writing'
+B8.40 PASS source-authored status/value snapshot absent: 'audited_renaming'
+B8.41 PASS source-authored status/value snapshot absent: 'honest auditor read'
+B8.42 PASS no bare decimal literals in the note
+B8.43 PASS markdown dependency link present: MINIMAL_AXIOMS_2026-06-29.md
+B8.44 PASS markdown dependency link present: STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
+B8.45 PASS markdown dependency link present: KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md
+B8.46 PASS markdown dependency link present: KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md
+B8.47 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md
+B8.48 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md
+B8.49 PASS every cited or handled doc path exists
+PATH note=docs/KCPT_CORNER_CARRIER_LATTICE_DELIVERY_HW1_DOUBLET_PAIR_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md
+PATH runner=scripts/kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_2026_07_17.py
+PATH cache=logs/runner-cache/kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_2026_07_17.txt
+FLAGS: T1 delivers a lattice realization of block-05's flagged supplied corner surface at the gate note's declared premise set (the surface remains supplied on the mechanism-note side); T4 is conditional on the consumed R2 derivability reading and scoped to expectation/channel separation by Hermitian observables (antilinear and non-Hermitian functionals declared untested); the K-real classification leaves the doublet-to-singlet channel ratio a free two-parameter dial -- r remains a dial (0, 1/2, 1), nothing here pins it; species labeling enters only as convention per the gate note's labeling clause
+RESIDUAL (declared-open, inherited from the gate note): kinetic-class / P-FLUX supply line
+RESIDUAL (declared-open, inherited from the gate note): spin-statistics support tier
+RESIDUAL (declared-open, inherited from the gate note): boundary-holonomy convention (this runner computes the periodic sector)
+RESIDUAL (declared-open, inherited from the gate note): species labeling convention (derivability no-go computed by the gate runner)
+TOTAL: PASS=99 FAIL=0
+
+----- stderr -----
+

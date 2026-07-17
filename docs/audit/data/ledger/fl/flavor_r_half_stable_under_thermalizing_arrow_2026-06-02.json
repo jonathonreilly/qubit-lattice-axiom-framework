@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -125,6 +125,60 @@
         "total_pass": 5
       },
       "verdict_rationale": "The source and runner prove a scoped mathematical statement about a supplied map, not a framework-derived thermalizing arrow. Independent checks of the displayed formulas agree: S'(1/2)=2, g'(1/2)=1/2, HS equipartition gives 3a^2=6|b|^2 iff |b|^2/a^2=1/2, endpoint spectra match, and Q=1/3+(2/3)r gives Q=2/3 at r=1/2. Because the physical-arrow and partition-selection gates are explicitly excluded from the claim scope, they do not prevent the bounded theorem from closing."
+    },
+    {
+      "archived_at": "2026-07-17T18:38:18.399802+00:00",
+      "audit_date": "2026-07-17T18:38:08.123188+00:00",
+      "audit_invocation_history": [
+        "f0e0f77dfe60490a8adef67709893f49"
+      ],
+      "audit_invocation_id": "f0e0f77dfe60490a8adef67709893f49",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 11.129,
+        "runner_hash": "85c0d8a5eb226af022773118b3f5b0e0b246095a154258f799c35083d98e9f70",
+        "transitive_descendants": 69
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-8829947c12d1498daccbbaf3f1b56500-flavor_r_half_stable_und-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic chain closes for the explicitly supplied map and coarse-graining. It does not derive their physical selection.",
+      "claim_scope": "The conditional algebraic result that r=1/2 is stable for the supplied map g(r)=sqrt(r/2), together with HS equipartition, the Q identity, and the exact endpoint spectra; physical-arrow and partition selection are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-17T18:38:08.123188+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For g(r)=sqrt(r/2), g(1/2)=1/2 and g'(1/2)=1/2<1, so r=1/2 is a stable fixed point.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation selecting the 2-isotype coarse-graining and physical r-flow; until then retain the conditional scope and replace the endpoint-to-(0,1) inference with only the computed spectra unless an admissible-domain premise is cited.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The fixed-point and multiplier calculation is correct, and the matrix and entropy checks are algebraic computations on explicitly chosen inputs. The result remains conditional because neither g nor the 2-isotype coarse-graining is selected by the provided framework premises; moreover, the endpoint spectra alone do not establish that every admissible charged-lepton configuration lies in (0,1). N1/N7 present no closed attack-route set or independently resolved steelman; N2/N3 expose two distinct explicit conditions rather than hidden premises; N4 supplies no prior residual witness; N5 supplies no five-resolution negative test; and N6/N8 provide no accepted premise or indexed echo closing either condition. Thus the named-wall rhetoric cannot support a clean physical-selection verdict, although the scoped map theorem itself is sound."
     }
   ],
   "prose_corrections": [],

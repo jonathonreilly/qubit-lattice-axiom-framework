@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -647,6 +647,73 @@
         "total_pass": 28
       },
       "verdict_rationale": "The scoped bounded theorem closes as an algebraic assembly over retained-grade one-hop inputs: the ratio and matter assignment select the sectors, the retained-bounded normalization bridge fixes alpha=1/3, and the retained-bounded GMN lemma supplies Q=T3+Y/2. The runner does not perform an external PDG-style comparator check and the source firewall quarantines downstream GUT/sin^2/full-spectrum claims. Residual risk is bounded to the upstream premise packets and conventions already owned by the cited authority rows, not to this chain-assembly step."
+    },
+    {
+      "archived_at": "2026-07-17T20:46:45.718150+00:00",
+      "audit_date": "2026-07-17T20:46:35.361040+00:00",
+      "audit_invocation_history": [
+        "001df4d707ec4056a78ecbd66bac1570"
+      ],
+      "audit_invocation_id": "001df4d707ec4056a78ecbd66bac1570",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym\u00b2 and Anti\u00b2 LH-doublet sub-decompositions under the graph-first selected-axis commutant decomposition, excluding normalization, SM hypercharge identification, charge formula, and anomaly claims.",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Algebraic corollary that the graph-first selected-axis SU(3) representation content splits the LH-doublet sector into an SU(3)-fundamental (2,3) block and SU(3)-singlet (2,1) block, with quark/lepton names applied only by the stated SM-definition convention."
+        },
+        "dep_claim_type": {
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 20.447,
+        "runner_hash": "e5e642e0963dffb3c35fc16f3e58985f48ca004c890d7111d46c9767cdce89ae",
+        "transitive_descendants": 986
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-e13af2e5b2bc4242a4aee78819a56e65-hypercharge_identificati-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The projector, multiplicity, tracelessness, and substitution algebra closes exactly. The restricted packet does not derive or provide a retained or accepted premise fixing the dimensionless scale alpha=1/3.",
+      "claim_scope": "Conditional name-free two-block algebra: projector ranks 6 and 2, the unique traceless block-scalar ratio +1:(-3), and the (+1/3,-1) spectrum only when alpha=1/3 is supplied.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-17T20:46:35.361040+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Tracelessness gives 6 alpha + 2 beta = 0, hence beta = -3 alpha; substituting the supplied alpha = 1/3 then gives eigenvalues (+1/3,-1).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "conditional_wall_rationale"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained or accepted-premise authority that derives or fixes alpha=1/3, cite it directly in this note, and rerun the audit.",
+      "open_dependency_paths": [
+        "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner genuinely constructs the swap projectors and verifies their ranks, the one-dimensional trace-zero kernel, spectra, and commutators; it is not a print-only certificate. The +1:(-3) result is exact class-A algebra, but the normalized (+1/3,-1) result merely substitutes the explicitly supplied alpha=1/3, whose selection is not closed by the packet. For N1-N8, the note asserts no impossibility result: its exclusions are scope hygiene, while the only load-bearing conditional issue is the unclosed normalization, and none of the supplied partial-closure or cross-cycle candidates supplies that scale."
     }
   ],
   "prose_corrections": [],

@@ -123,7 +123,7 @@
       "path": "docs/repo/STATE_OF_THE_THEORY_2026-07-16.md",
       "class": "F",
       "status": "landed",
-      "note": "Plain-language orientation memo: ratified backbone vs review-gated frontier vs open walls, with the axioms-to-results map. No premise or interpretive weight; status words dated 2026-07-16; ledger is authoritative."
+      "note": "Plain-language orientation memo: ratified backbone vs landed-but-unaudited frontier vs open walls, with a tier navigation map (no derivation edges). No premise or interpretive weight; citable for orientation and scope discipline only; status words dated to the ledger state they quote; the ledger is authoritative."
     }
   ]
 }

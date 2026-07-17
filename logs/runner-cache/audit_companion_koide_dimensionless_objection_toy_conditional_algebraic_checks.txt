@@ -1,106 +1,85 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py
-runner_sha256: 33dc9a9428b58aa81ab8ed07e53a628177bd980888f93517e6d3219ea76dc380
+runner_sha256: 23945fc051ddb0a24118b4b0602bd54794e18072f0fc55e4635392de1ec875e0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
-Koide dimensionless objection - toy conditional algebraic checks
-(Pattern A narrow companion runner)
+Two-channel rational functions and exact projectors
+MODE=normal
+MUTATIONS=none
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-(T0) source-boundary manifest
+Source theorem and interpretation boundary
 ----------------------------------------------------------------------------------------
-  [PASS] note records 2026-06-07 source-boundary manifest
-  [PASS] note claim type is open-gate conditional-support, not bounded_theorem
-  [PASS] note records the 2026-06-12 in-toy algebra firewall
-  [PASS] note records local toy admission packet A_TOY
-  [PASS] note says A1-A5 are not framework-native facts
-  [PASS] note forbids retained propagation without a bridge theorem
-  [PASS] note records the 2026-06-20 conditional-in-toy-algebra-only scoping
+  [PASS] explicit positive-theorem typing
+  [PASS] zero dependencies are explicit
+  [PASS] domain is explicit
+  [PASS] eta is universally quantified
+  [PASS] eta=2/9 is marked as an example
+  [PASS] historical admission packet removed
+  [PASS] legacy admission labels removed
+  [PASS] legacy eta label removed
+  [PASS] legacy observable-completeness rhetoric removed
+  [PASS] legacy bridge demand removed
+  [PASS] physical/Koide/APS interpretation overclaims are absent
 
 ----------------------------------------------------------------------------------------
-(T1) Q zero-background identity under (A1)
+T1 exact reduction, fiber, and constructive witnesses
 ----------------------------------------------------------------------------------------
-  [PASS] Q(0, 0) = 2/3  (Q=2/3)
+  [PASS] finite rational grid is nontrivial  (points=1464)
+  [PASS] channel definition equals reduced formula on the full grid
+  [PASS] difference identity holds on the full grid
+  [PASS] the 2/3 fiber is exactly z=0 on the full grid
+  [PASS] plus pole excluded
+  [PASS] minus pole excluded
+  [PASS] double pole excluded
+  [PASS] R(0,1/4)=8/9
+  [PASS] R(0,-1/4)=8/15
+  [PASS] the two witnesses establish nonconstancy
 
 ----------------------------------------------------------------------------------------
-(T2) Q common-source invariance under (A1)
+T2 exact affine coordinate
 ----------------------------------------------------------------------------------------
-  [PASS] Q(s, 0) = 2/3 at s = 1/5  (Q=2/3)
-  [PASS] Q(s, 0) = 2/3 at s = 3/7  (Q=2/3)
-  [PASS] Q(s, 0) = 2/3 at s = -1/11  (Q=2/3)
+  [PASS] zeta inverse holds on the full grid
+  [PASS] zeta has the unique stated zero
+  [PASS] zeta difference law holds on all grid pairs
 
 ----------------------------------------------------------------------------------------
-(T3) Q traceless-background departure under (A1)
+T3 exact matrices and derived dimensions
 ----------------------------------------------------------------------------------------
-  [PASS] Q(0, z) != 2/3 at z = 1/3  (Q=1)
-  [PASS] Q(0, z) != 2/3 at z = 2/5  (Q=10/9)
-  [PASS] Q(0, z) != 2/3 at z = -1/7  (Q=7/12)
-  [PASS] Q(0, 1/4) = 8/9 (exact)  (Q=8/9)
-  [PASS] Q(0, -1/4) = 8/15 (exact)  (Q=8/15)
+  [PASS] P is the defined matrix  (P=((Fraction(1, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1))))
+  [PASS] J is the defined matrix  (J=((Fraction(1, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-1, 1))))
+  [PASS] P^2=P
+  [PASS] J^2=I
+  [PASS] JP=PJ=P
+  [PASS] P fixes e1
+  [PASS] P kills e2
+  [PASS] rank(P)=1 by exact elimination
+  [PASS] four matrix units independently span End(Q^2)
+  [PASS] one scalar unit spans End(L)
 
 ----------------------------------------------------------------------------------------
-(T4) Z survives under (A2)
+T4 arbitrary-parameter affine family
 ----------------------------------------------------------------------------------------
-  [PASS] Z^2 = I componentwise  (Z^2=(1, 1))
-  [PASS] <Z>(w) = 2 w - 1 at w = 1/3  (<Z>=-1/3)
-  [PASS] <Z>(w) = 2 w - 1 at w = 2/7  (<Z>=-3/7)
-  [PASS] <Z>(w) = 2 w - 1 at w = 4/5  (<Z>=3/5)
-  [PASS] <Z>(1/2) = 0  (<Z>=0)
-
-----------------------------------------------------------------------------------------
-(T5) Selected-line endpoint dimensionality under (A3)
-----------------------------------------------------------------------------------------
-  [PASS] dim End(L_chi) = 1
-  [PASS] dim End(V) = 4
-  [PASS] P_chi^2 = P_chi  (P_chi^2=(1, 0))
-  [PASS] selected channel weight = 1
-  [PASS] spectator channel weight = 0
-
-----------------------------------------------------------------------------------------
-(T6) delta selected-line conditional value under (A3)+(A4)+(A5)
-----------------------------------------------------------------------------------------
-  [PASS] delta(0, 0) = 2/9  (delta=2/9)
-
-----------------------------------------------------------------------------------------
-(T7) delta ambient countermodels under (A5)
-----------------------------------------------------------------------------------------
-  [PASS] closing endpoint (s_chi=0, c=0) -> delta = 2/9  (delta=2/9)
-  [PASS] spectator endpoint (s_chi=1, c=0) -> delta = 0  (delta=0)
-  [PASS] mixed endpoint (s_chi=1/2, c=0) -> delta = 1/9  (delta=1/9)
-  [PASS] shifted endpoint (s_chi=0, c=1/9) -> delta = 1/3  (delta=1/3)
-
-----------------------------------------------------------------------------------------
-(T8) Q admission-blocker in-toy under (A1)+(A2)
-----------------------------------------------------------------------------------------
-  [PASS] exists z != 0 with Q(0, z) != 2/3  (Q=8/9)
-  [PASS] exists non-midpoint w with <Z>(w) != 0  (<Z>=1/3)
-  [PASS] in-toy: '[observable completeness on (A1)+(A2)] => Q = 2/3' fails
-
-----------------------------------------------------------------------------------------
-(T9) delta admission-blocker in-toy under (A5)
-----------------------------------------------------------------------------------------
-  [PASS] at least two distinct delta values reachable from (A5) alone  (|values|=4, values=[Fraction(0, 1), Fraction(1, 9), Fraction(2, 9), Fraction(1, 3)])
-  [PASS] in-toy: '(A5) alone => delta = 2/9' fails
+  [PASS] inverse construction reaches every tested target uniquely
+  [PASS] d_eta(0,0)=eta universally
+  [PASS] d_eta(1,0)=0 universally
+  [PASS] d_eta(1/2,0)=eta/2 universally
+  [PASS] d_eta(0,eta/2)=3eta/2 universally
+  [PASS] eta=2/9 example is exact  (values=(Fraction(2, 9), Fraction(0, 1), Fraction(1, 9), Fraction(1, 3)))
 
 ========================================================================================
-SUMMARY: PASS=36 FAIL=0
-PASSED: 36/36
+SUMMARY: PASS=40 FAIL=0
+PASSED: 40/40
 ========================================================================================
-KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS=TRUE
-ADMISSIONS_USED=A1_A2_A3_A4_A5
-ETA_APS_ADMITTED=2/9
-IF_A1_THEN_Q_AT_ZERO_BACKGROUND_EQUALS_2_OVER_3=TRUE
-IF_A1_AND_Z_NONZERO_THEN_Q_NOT_EQUAL_2_OVER_3=TRUE
-IF_A2_THEN_Z_LABEL_SURVIVES_OBSERVABLE_COMPLETENESS=TRUE
-IF_A3_A4_A5_AND_SELECTED_LINE_LOCAL_THEN_DELTA_EQUALS_2_OVER_9=TRUE
-IF_A5_ALONE_THEN_DELTA_NOT_PINNED_TO_2_OVER_9=TRUE
-RETAINED_GRADE_CLOSURE_ASSERTED=FALSE
-RETAINED_GRADE_NO_GO_ASSERTED=FALSE
+TWO_CHANNEL_RATIONAL_POSITIVE_THEOREM=TRUE
+EXACT_ARITHMETIC=TRUE
+DEPENDENCIES=NONE
+PHYSICAL_INTERPRETATION_ASSERTED=FALSE
 
 ----- stderr -----
 

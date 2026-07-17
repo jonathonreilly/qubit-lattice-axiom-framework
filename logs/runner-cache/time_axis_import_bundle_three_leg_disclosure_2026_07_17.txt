@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/time_axis_import_bundle_three_leg_disclosure_2026_07_17.py
+runner_sha256: ca654ae47895a4d8cbf3db3993fe432d4822bed5ea7e4d6bd5938613e5ba4f1f
+timeout_sec: 280
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+========================================================================
+TIME-AXIS IMPORT BUNDLE: THREE-LEG DISCLOSURE RUNNER (2026-07-17)
+========================================================================
+
+Discloses at least three supplied legs consumed by 'the Z^4 operator
+block with OS time': leg A (axis existence/compactification, OPEN),
+leg B (axis label, sufficient supplier shape computed), leg C
+(rate/spacing, supplied). Re-runs the computable witnesses and gates
+a load-bearing anchor fragment of every consumed clause.
+
+------------------------------------------------------------------------
+[L2-W] LEG B WITNESSES (re-run from scratch on the explicit block)
+------------------------------------------------------------------------
+  [PASS][C] W = P_{tau<->1} diag((-1)^{x_tau x_1}) is orthogonal  -- N = 64 sites; bound resid <= 1e-11: True
+  [PASS][C] exact exchange invariance under periodic BCs: W M_KS W^T = M_KS  -- bound resid <= 1e-11: True
+  [PASS][D] falsifier: the plain axis swap WITHOUT the sign field fails, with residual equal to 4*sqrt(2) on this block  -- resid = 5.6569; |resid - 4*sqrt(2)| <= 1e-11: True
+  [PASS][C] antiperiodic-tau / periodic-space BCs break the exchange exactly, with residual equal to 2*sqrt(2) on this block  -- resid = 2.828427; |resid - 2*sqrt(2)| <= 1e-11: True
+  [PASS][C] falsification leg: antiperiodic in BOTH tau and x_1 restores the exact exchange symmetry -- the selecting datum is the BC ASYMMETRY  -- bound resid <= 1e-11: True
+  [PASS][C] relabeling-invariant kernel discriminator: temporal(apbc) kernel dimension 0, x_1(pbc) kernel dimension 32  -- dim ker: temporal(apbc) = 0, x_1(pbc) = 32
+
+------------------------------------------------------------------------
+[REC] RECORD-LAYER FACTS CONSUMING NONE OF LEGS A-C (exact arithmetic)
+------------------------------------------------------------------------
+  [PASS][A] stacked representation exact: S[(x,t)] = h_t at x, no phantom cells, full round-trip, 4th-axis coordinate set = {0..T}
+  [PASS][A] (i) UNIVERSAL: the history index nests for EVERY realized history in the eight-history family (incl. all degeneracy members)  -- finite replay of the source proposition on this witness family, grounded on the landed permanence sentence (records are permanent)
+  [PASS][A] generic witness is event-bearing: at least one strict record inclusion step
+  [PASS][A] (ii) EXISTENTIAL: generic witness -- x1 translation-identified opposite slices incomparable (spatial nesting fails)
+  [PASS][A] (ii) EXISTENTIAL: generic witness -- x2 translation-identified opposite slices incomparable (spatial nesting fails)
+  [PASS][A] (ii) EXISTENTIAL: generic witness -- x3 translation-identified opposite slices incomparable (spatial nesting fails)
+  [PASS][A] (ii) symmetry-related second witness (window-automorphism image of the generic witness): x2 slices incomparable while its index still nests
+  [PASS][A] (iii) uniqueness on the generic witness: the history index is the UNIQUE record-monotone direction
+  [PASS][A] (iii) degeneracy D1 single-record: NOT unique (empty opposite slices comparable by convention)
+  [PASS][A] (iii) degeneracy D1 uniform-burst: NOT unique (x1 slices translation-identified EQUAL)
+  [PASS][A] (iii) degeneracy D1 translation-invariant growth: NOT unique (x1 slices EQUAL at every step)
+  [PASS][A] (iii) degeneracy D1 face-confined: NOT unique (records confined to the x1=0 face; x1=1 slice empty)
+  [PASS][A] (iii) degeneracy D0 static (event-free): every stack direction trivially monotone (marking non-unique)
+  [PASS][A] (iii) uniqueness on the second symmetry-related witness
+  [PASS][A] (iii) boundary fact: a spatially translation-inequivalent STATIC history retains index-uniqueness -- D0 membership does not force non-uniqueness (non-uniqueness is exhibited on fixtures, not characterized)
+
+------------------------------------------------------------------------
+[SOURCE_GATES] anchor fragments of consumed clauses present in source AND in the note
+------------------------------------------------------------------------
+  [PASS][B] gate (leg A header): anchor fragment present in `TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md` AND in the disclosure note  -- in source: True, in note: True
+  [PASS][B] gate (leg A both sub-legs): anchor fragment present in `TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md` AND in the disclosure note  -- in source: True, in note: True
+  [PASS][B] gate (leg C firewall): anchor fragment present in `TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md` AND in the disclosure note  -- in source: True, in note: True
+  [PASS][B] gate (leg B narrow no-go): anchor fragment present in `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md` AND in the disclosure note  -- in source: True, in note: True
+  [PASS][B] gate (leg B pin datum): anchor fragment present in `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md` AND in the disclosure note  -- in source: True, in note: True
+  [PASS][B] gate (leg B record-shaped supplier): anchor fragment present in `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md` AND in the disclosure note  -- in source: True, in note: True
+  [PASS][B] gate (B-AXIS.1 clause): anchor fragment present in `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md` AND in the disclosure note  -- in source: True, in note: True
+  [PASS][B] gate (B-AXIS.2 clause): anchor fragment present in `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md` AND in the disclosure note  -- in source: True, in note: True
+  [PASS][B] gate (B-AXIS.3 clause): anchor fragment present in `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md` AND in the disclosure note  -- in source: True, in note: True
+  [PASS][B] gate (Record permanence sentence): anchor fragment present in `MINIMAL_AXIOMS_2026-06-29.md` AND in the disclosure note  -- in source: True, in note: True
+
+------------------------------------------------------------------------
+[NOTE_HYGIENE] structural guards on the note
+------------------------------------------------------------------------
+  [PASS][D] type/claim-strength/status-authority lines present (audit lane is the sole status authority)
+  [PASS][D] required sections present  -- missing: none
+  [PASS][D] pinned closing/derivation phrases absent  -- hits: none
+  [PASS][D] no prose decimals outside code fences/backticks  -- first hit: none
+
+========================================================================
+TOTAL: PASS=35 FAIL=0
+========================================================================
+
+----- stderr -----
+

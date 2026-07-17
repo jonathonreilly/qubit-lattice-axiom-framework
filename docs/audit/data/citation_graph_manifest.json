@@ -1,6 +1,6 @@
 {
- "edge_count": 14469,
- "node_count": 3963,
+ "edge_count": 14473,
+ "node_count": 3964,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14217,6 +14217,10 @@
   "tier_a_residual_owner_adoption_retirement_2026-07-04": {
    "deps_hash": "fc99f259bdfe",
    "out_degree": 2
+  },
+  "time_axis_import_bundle_three_leg_disclosure_bounded_note_2026-07-17": {
+   "deps_hash": "6aa55fd9a51b",
+   "out_degree": 4
   },
   "time_axis_is_the_history_index_record_monotone_direction_bounded_note_2026-07-03": {
    "deps_hash": "1f65fcda86e7",

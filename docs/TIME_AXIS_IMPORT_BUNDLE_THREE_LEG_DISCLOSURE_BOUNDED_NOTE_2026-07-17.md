@@ -71,7 +71,7 @@ runner):
 - **(i) universal (source (1)'s proposition)** — the history index nests
   (record-monotone) for every realized history, grounded by source (1) on the
   landed Record-axiom permanence sentence; the runner replays this on an
-  explicit eight-history witness family (finite replay, not a universal
+  explicit seven-history witness family (finite replay, not a universal
   recomputation);
 - **(ii) existential (witnessed)** — for each spatial axis there exist
   event-bearing histories whose translation-identified opposite slices are
@@ -80,9 +80,9 @@ runner):
   history index is the unique record-monotone stack direction on both generic
   witnesses; non-uniqueness is exhibited on named degenerate fixtures
   (full-window static, single-record, uniform-burst, translation-invariant
-  growth, face-confined) and does NOT extend to all of `D0`: a spatially
-  translation-inequivalent static fixture retains uniqueness. Membership in
-  `D0`/`D1` is not claimed to force non-uniqueness.
+  growth, face-confined). Membership in `D0`/`D1` is not claimed to force
+  non-uniqueness; no characterization of the degeneracy classes is attempted
+  here.
 
 These three facts give the index a distinguished record-theoretic role; they
 neither supply nor evidence leg A, leg B, or leg C.
@@ -180,8 +180,7 @@ vocabulary, and none creates a registry object.
   histories (`D0`) and translation-degenerate histories (`D1`: single-record,
   uniform-burst, translation-invariant growth, face-confined members).
   Membership is used here to LABEL fixtures; non-uniqueness is exhibited on
-  the named fixtures, not derived from class membership (the runner exhibits
-  a `D0` member on which uniqueness persists).
+  the named fixtures, not derived from class membership.
 
 ## Theorems (bounded; disclosure-grade)
 
@@ -218,17 +217,18 @@ values copied from source (2)); bound residuals printed as booleans at
 tolerance `1e-11`.
 
 > **T3 (record-layer facts on the witness family; exact arithmetic).** Under
-> the declared comparability criterion, on an eight-history witness family
+> the declared comparability criterion, on a seven-history witness family
 > containing the named degenerate fixtures: (i) the history index nests for
 > EVERY member (finite replay of source (1)'s universal proposition); (ii) for
 > each spatial axis `x1`, `x2`, `x3` the generic witness has
 > translation-identified opposite slices that are incomparable, with a second
-> symmetry-related witness covering `x2` (existential); (iii) the history
-> index is the UNIQUE record-monotone stack direction on both generic
-> witnesses; uniqueness FAILS on each named degenerate fixture (four `D1`
-> members and the full-window static `D0` member) and PERSISTS on a spatially
-> translation-inequivalent static `D0` fixture (bounded uniqueness, witnessed;
-> class membership does not force non-uniqueness).
+> symmetry-related witness covering `x2` (existential), gated as the image of
+> the generic witness under an explicitly enumerated window automorphism;
+> (iii) the history index is the UNIQUE record-monotone stack direction on
+> both generic witnesses; uniqueness FAILS on each named degenerate fixture
+> (four `D1` members and the full-window static `D0` member) (bounded
+> uniqueness, witnessed on the family only; the degeneracy classes are not
+> characterized).
 
 Runner: block `[REC]` — exact arithmetic only (int/tuple/set/frozenset/dict);
 includes the stacked-representation round-trip and the per-member failure
@@ -249,13 +249,14 @@ Runner: blocks `[SOURCE_GATES]` and `[NOTE_HYGIENE]`.
   phases `eta(mu, x) = (-1)^(x_0 + ... + x_{mu-1})`, antisymmetrized hop with
   per-axis wraparound sign flags, mass term `0.3 * I`.
 - Record-layer window: the `2x2x2` corner of `Z^3`; histories are tuples of
-  configurations (site -> record value). The eight fixtures, listed
-  extensionally: a diagonal-growth generic witness; a second, symmetry-related
-  witness (its image under a window automorphism exchanging the corner roles;
-  covers the `x2` existential check); single-record, uniform-burst,
-  translation-invariant growth, and face-confined members (`D1`); the
-  full-window static history (`D0`); and a spatially translation-inequivalent
-  static history (`D0` boundary fixture on which uniqueness persists).
+  configurations (site -> record value). The seven fixtures, defined
+  extensionally in the paired runner and described here: a diagonal-growth
+  generic witness; a second, symmetry-related witness (gated in the runner as
+  the image of the generic witness under a window automorphism, with all `48`
+  automorphisms — axis permutations times per-axis flips — enumerated; covers
+  the `x2` existential check); single-record, uniform-burst,
+  translation-invariant growth, and face-confined members (`D1`); and the
+  full-window static history (`D0`).
 
 ## Bounded consequence
 
@@ -295,7 +296,7 @@ disclosed bundle with their supplied-vs-derived boundary pinned in advance.
   are three questions about one supplied structure and may overlap (leg A's
   transfer-direction sub-leg already refers to the labeled axis of leg B); no
   independence or non-overlap is claimed.
-- **The computed `[REC]` block is a finite witness replay** on eight explicit
+- **The computed `[REC]` block is a finite witness replay** on seven explicit
   fixtures, not a universal recomputation; the universal propositions are
   source (1)'s, consumed at its live grade.
 - **All three source notes are `unaudited` post-reset.** Their content is
@@ -362,7 +363,7 @@ note's premise weight is conditional accordingly.
 | Block | Checks | Content |
 |---|---|---|
 | `[L2-W]` | `6` | leg-B witnesses re-run from scratch: `W` orthogonality; exact exchange invariance (periodic); plain-swap falsifier equal to `4*sqrt(2)` (`5.6569`); BC-asymmetry break equal to `2*sqrt(2)` (`2.828427`); both-axes-antiperiodic restoration; kernel-dimension discriminator (temporal dimension `0` vs spatial dimension `32`) |
-| `[REC]` | `15` | exact-arithmetic record-layer facts: stack round-trip; (i) replayed over the eight-history family; event-bearing strictness; existential (ii) on `x1`/`x2`/`x3` plus the symmetry-related second witness; uniqueness (iii) on both generic witnesses, its failure on each named degenerate fixture, and the static boundary fixture on which uniqueness persists |
+| `[REC]` | `15` | exact-arithmetic record-layer facts: stack round-trip; (i) replayed over the seven-history family; event-bearing strictness; existential (ii) on `x1`/`x2`/`x3` plus the symmetry-related second witness and its window-automorphism gate (`48` automorphisms enumerated); uniqueness (iii) on both generic witnesses and its failure on each named degenerate fixture |
 | `[SOURCE_GATES]` | `10` | a load-bearing anchor fragment of every consumed clause present (whitespace-normalized substring) in its source file AND in this note |
 | `[NOTE_HYGIENE]` | `4` | lexical guards: type/claim-strength/status-authority lines; required sections; pinned closing/derivation phrases absent; no prose decimals outside code fences/backticks |
 

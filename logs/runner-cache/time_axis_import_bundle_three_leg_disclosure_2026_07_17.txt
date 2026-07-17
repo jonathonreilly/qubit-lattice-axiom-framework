@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/time_axis_import_bundle_three_leg_disclosure_2026_07_17.py
-runner_sha256: ca654ae47895a4d8cbf3db3993fe432d4822bed5ea7e4d6bd5938613e5ba4f1f
+runner_sha256: 749f150901d6d7349473cc81c8d2d2865ab913996a2c4aa95c5af6bdbdb33a7f
 timeout_sec: 280
 exit_code: 0
 elapsed_sec: 0.09
@@ -30,12 +30,13 @@ a load-bearing anchor fragment of every consumed clause.
 [REC] RECORD-LAYER FACTS CONSUMING NONE OF LEGS A-C (exact arithmetic)
 ------------------------------------------------------------------------
   [PASS][A] stacked representation exact: S[(x,t)] = h_t at x, no phantom cells, full round-trip, 4th-axis coordinate set = {0..T}
-  [PASS][A] (i) UNIVERSAL: the history index nests for EVERY realized history in the eight-history family (incl. all degeneracy members)  -- finite replay of the source proposition on this witness family, grounded on the landed permanence sentence (records are permanent)
+  [PASS][A] (i) UNIVERSAL: the history index nests for EVERY realized history in the seven-history family (incl. all degeneracy members)  -- finite replay of the source proposition on this witness family, grounded on the landed permanence sentence (records are permanent)
   [PASS][A] generic witness is event-bearing: at least one strict record inclusion step
   [PASS][A] (ii) EXISTENTIAL: generic witness -- x1 translation-identified opposite slices incomparable (spatial nesting fails)
   [PASS][A] (ii) EXISTENTIAL: generic witness -- x2 translation-identified opposite slices incomparable (spatial nesting fails)
   [PASS][A] (ii) EXISTENTIAL: generic witness -- x3 translation-identified opposite slices incomparable (spatial nesting fails)
   [PASS][A] (ii) symmetry-related second witness (window-automorphism image of the generic witness): x2 slices incomparable while its index still nests
+  [PASS][A] (ii) window-automorphism gate: some automorphism of the 2x2x2 window (axis permutation x per-axis flips; 48 enumerated) maps the generic witness onto the second witness
   [PASS][A] (iii) uniqueness on the generic witness: the history index is the UNIQUE record-monotone direction
   [PASS][A] (iii) degeneracy D1 single-record: NOT unique (empty opposite slices comparable by convention)
   [PASS][A] (iii) degeneracy D1 uniform-burst: NOT unique (x1 slices translation-identified EQUAL)
@@ -43,7 +44,6 @@ a load-bearing anchor fragment of every consumed clause.
   [PASS][A] (iii) degeneracy D1 face-confined: NOT unique (records confined to the x1=0 face; x1=1 slice empty)
   [PASS][A] (iii) degeneracy D0 static (event-free): every stack direction trivially monotone (marking non-unique)
   [PASS][A] (iii) uniqueness on the second symmetry-related witness
-  [PASS][A] (iii) boundary fact: a spatially translation-inequivalent STATIC history retains index-uniqueness -- D0 membership does not force non-uniqueness (non-uniqueness is exhibited on fixtures, not characterized)
 
 ------------------------------------------------------------------------
 [SOURCE_GATES] anchor fragments of consumed clauses present in source AND in the note

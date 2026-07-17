@@ -22,6 +22,7 @@ import io
 import json
 import os
 import re
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -2803,6 +2804,81 @@ class StaggeredExplicitPacketHelperTest(unittest.TestCase):
             ),
             ("first", "cross_family"),
         )
+
+
+class Cl3PauliIndependentN7HelperTest(unittest.TestCase):
+    CLAIM_ID = "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+    PRIMARY = (
+        "scripts/"
+        "audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py"
+    )
+    HELPER = (
+        "scripts/"
+        "cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
+    )
+
+    def test_both_packet_consumers_return_the_claim_scoped_helper(self):
+        citation_graph = _import("build_citation_graph")
+        packet_deps = _import_repo_script("audit_packet_script_deps.py")
+        expected = [self.HELPER]
+
+        self.assertEqual(
+            citation_graph.helper_runner_paths_for_claim(
+                self.CLAIM_ID, self.PRIMARY
+            ),
+            expected,
+        )
+        self.assertEqual(
+            packet_deps.helper_runner_paths_for_claim(
+                self.CLAIM_ID, Path(self.PRIMARY).stem
+            ),
+            expected,
+        )
+
+        control_claim = f"{self.CLAIM_ID}-unregistered-control"
+        self.assertEqual(
+            citation_graph.helper_runner_paths_for_claim(
+                control_claim, self.PRIMARY
+            ),
+            [],
+        )
+        self.assertEqual(
+            packet_deps.helper_runner_paths_for_claim(
+                control_claim, Path(self.PRIMARY).stem
+            ),
+            [],
+        )
+
+    def test_helper_accepts_exact_steelman_and_rejects_both_mutations(self):
+        helper_path = PROJECT_ROOT / self.HELPER
+        normal = subprocess.run(
+            [sys.executable, str(helper_path)],
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(normal.returncode, 0, normal.stdout + normal.stderr)
+        self.assertIn("N7_STEELMAN_RESOLUTION", normal.stdout)
+
+        for mutation in ("wrong-order", "false-reducibility"):
+            with self.subTest(mutation=mutation):
+                hostile = subprocess.run(
+                    [
+                        sys.executable,
+                        str(helper_path),
+                        "--inject-failure",
+                        mutation,
+                    ],
+                    check=False,
+                    capture_output=True,
+                    text=True,
+                )
+                self.assertEqual(
+                    hostile.returncode,
+                    1,
+                    hostile.stdout + hostile.stderr,
+                )
+                self.assertNotIn("N7_STEELMAN_RESOLUTION", hostile.stdout)
 
 
 class SeedLedgerTest(unittest.TestCase):
@@ -8529,6 +8605,58 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             self.assertIn("selector wall resolved", manifest[independent_path]["text"])
             self.assertIn(independent_path, prompt)
 
+    def test_n7_marker_helper_runs_live_for_positive_theorem_boundary(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            note_path = root / "docs" / "target.md"
+            runner_path = root / "scripts" / "runner.py"
+            helper_path = root / "scripts" / "helper.py"
+            note_path.parent.mkdir(parents=True, exist_ok=True)
+            runner_path.parent.mkdir(parents=True, exist_ok=True)
+            note_path.write_text(_no_go_evidence_text(), encoding="utf-8")
+            runner_path.write_text("print('primary')\n", encoding="utf-8")
+            helper_path.write_text(
+                "print('N7_STEELMAN_RESOLUTION boundary resolved')\n",
+                encoding="utf-8",
+            )
+            row = {
+                "claim_id": "target",
+                "note_path": "docs/target.md",
+                "runner_path": "scripts/runner.py",
+                "helper_runner_paths": ["scripts/helper.py"],
+                "claim_type": "positive_theorem",
+                "deps": [],
+            }
+            manifest: dict[str, dict] = {}
+            with (
+                mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}),
+                mock.patch.object(
+                    m,
+                    "get_runner_stdout",
+                    return_value=_no_go_evidence_text(),
+                ),
+            ):
+                m.render_prompt(
+                    row,
+                    {"target": row},
+                    "{{RUNNER_STDOUT}}\n{{HELPER_RUNNER_SOURCES}}",
+                    1,
+                    use_cache=False,
+                    evidence_manifest_out=manifest,
+                )
+            independent_path = (
+                m.no_go_discipline_gate.independent_runner_stdout_evidence_path(
+                    "target", "scripts/helper.py"
+                )
+            )
+            self.assertEqual(
+                manifest[independent_path]["roles"],
+                ["runner_stdout_independent"],
+            )
+            self.assertIn("boundary resolved", manifest[independent_path]["text"])
+
     def test_no_runner_mode_cannot_authenticate_independent_helper_stdout(self):
         m = _import_codex_audit_runner()
         with tempfile.TemporaryDirectory() as tmp:
@@ -8772,10 +8900,6 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             helper_path = root / "scripts" / "helper.py"
             note_path.parent.mkdir(parents=True, exist_ok=True)
             runner_path.parent.mkdir(parents=True, exist_ok=True)
-            note_path.write_text(
-                "Claim type: positive_theorem\nThe selector wall remains unresolved.\n",
-                encoding="utf-8",
-            )
             runner_path.write_text("print('primary')\n", encoding="utf-8")
             helper_path.write_text(
                 "print('N7_STEELMAN_RESOLUTION selector wall resolved')\n",
@@ -8789,33 +8913,45 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "claim_type": "positive_theorem",
                 "deps": [],
             }
-            manifest: dict[str, dict] = {}
-            with (
-                mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}),
-                mock.patch.object(
-                    m,
-                    "get_runner_stdout",
-                    return_value=_no_go_evidence_text("PRIMARY_STDOUT"),
-                ),
-                mock.patch.object(
-                    m, "get_independent_runner_stdout"
-                ) as independent_stdout,
-            ):
-                m.render_prompt(
-                    row,
-                    {"positive": row},
-                    "{{HELPER_RUNNER_SOURCES}}\n{{FRAMEWORK_PREMISE_CONTEXT}}\n"
-                    "{{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
-                    "{{NO_GO_CROSS_CYCLE_INDEX}}\n"
-                    "{{NO_GO_EVIDENCE_MANIFEST}}",
-                    1,
-                    use_cache=False,
-                    evidence_manifest_out=manifest,
-                )
-            independent_stdout.assert_not_called()
-            self.assertFalse(any(
-                "runner-stdout-independent" in path for path in manifest
-            ))
+            note_bodies = (
+                "Claim type: positive_theorem\n"
+                "The selector wall remains unresolved.\n",
+                "Claim type: positive_theorem\n"
+                "The finite positive identity is exact.\n",
+            )
+            for note_body in note_bodies:
+                with self.subTest(note_body=note_body):
+                    note_path.write_text(note_body, encoding="utf-8")
+                    manifest: dict[str, dict] = {}
+                    with (
+                        mock.patch.dict(
+                            os.environ, {"AUDIT_FORENSIC_MODE": "1"}
+                        ),
+                        mock.patch.object(
+                            m,
+                            "get_runner_stdout",
+                            return_value=_no_go_evidence_text("PRIMARY_STDOUT"),
+                        ),
+                        mock.patch.object(
+                            m, "get_independent_runner_stdout"
+                        ) as independent_stdout,
+                    ):
+                        m.render_prompt(
+                            row,
+                            {"positive": row},
+                            "{{HELPER_RUNNER_SOURCES}}\n"
+                            "{{FRAMEWORK_PREMISE_CONTEXT}}\n"
+                            "{{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
+                            "{{NO_GO_CROSS_CYCLE_INDEX}}\n"
+                            "{{NO_GO_EVIDENCE_MANIFEST}}",
+                            1,
+                            use_cache=False,
+                            evidence_manifest_out=manifest,
+                        )
+                    independent_stdout.assert_not_called()
+                    self.assertFalse(any(
+                        "runner-stdout-independent" in path for path in manifest
+                    ))
 
     def test_nonmarker_helper_does_not_run_as_independent_certificate(self):
         m = _import_codex_audit_runner()

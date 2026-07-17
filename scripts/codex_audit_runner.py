@@ -1146,7 +1146,12 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
                     f"{tail}"
                 )
             independent_stdout_block = ""
-            if no_go_artifact and helper_declares_independent_resolution:
+            # The explicit marker opts into live independent N7 evidence for
+            # no-go artifacts and supplied development-tier packets.  A
+            # forensic positive row remains unable to self-certify this way.
+            if helper_declares_independent_resolution and (
+                no_go_artifact or not no_go_discipline_gate.forensic_mode()
+            ):
                 independent_stdout_path = (
                     no_go_discipline_gate.independent_runner_stdout_evidence_path(
                         cid, hp

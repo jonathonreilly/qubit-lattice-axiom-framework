@@ -976,17 +976,6 @@ def independent_checks() -> None:
     )
 
 
-def scope_authorizes(conclusion: str) -> bool:
-    return conclusion in frozenset(
-        {
-            "finite_deterministic_pushforward",
-            "finite_observable_pullback",
-            "finite_product_kernel_transport",
-            "defined_count_update_monotonicity",
-        }
-    )
-
-
 def hostile_mutation_acceptance(name: str) -> bool:
     probability, targets, mapping, observable, kernel = simple_example()
     if name == "empty-law":
@@ -1108,7 +1097,15 @@ def hostile_mutation_acceptance(name: str) -> bool:
     if name == "nonself-kernel-certified":
         return kernel_properties(targets, kernel)["self_one"]
     if name == "physical-selection-inference":
-        return scope_authorizes("physical_record_production_selected")
+        return not expect_raises(
+            TypeError,
+            lambda: pushforward(
+                probability,
+                targets,
+                mapping,
+                physical_record_production="selected",  # type: ignore[call-arg]
+            ),
+        )
     raise KeyError(f"unknown hostile fixture: {name}")
 
 

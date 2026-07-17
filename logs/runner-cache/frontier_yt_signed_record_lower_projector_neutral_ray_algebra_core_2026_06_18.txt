@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py
-runner_sha256: ee1f93ecda02965e2d865d90ab2ecf01778219b1767dabb01ecab51aed2bf144
+runner_sha256: b8ee7e66cd0f4b085348c677ed82ab547465af7b2ca24dff379a75e1e9c7c133
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 # Y_T signed-record lower-projector neutral-ray algebra core
@@ -44,7 +44,7 @@ T1: signed-record lower-projector algebra
 [PASS] affine source coordinate is j=-2h
 
 ==============================================================================
-T2: EW lower ray is neutral in the one-Higgs bookkeeping
+T2: defined lower ray is the kernel in stipulated C^2
 ==============================================================================
 [PASS] P_- H_0 = H_0: Matrix([[0], [sqrt(2)*v/2]])
 [PASS] P_+ H_0 = 0: Matrix([[0], [0]])
@@ -57,8 +57,8 @@ T2: EW lower ray is neutral in the one-Higgs bookkeeping
 ==============================================================================
 T3: conditional radial tangent and response-ratio compatibility
 ==============================================================================
-[PASS] H(s) lies on EW lower ray: Matrix([[0], [sqrt(2)*v(s)/2]])
-[PASS] dH/ds lies on EW lower ray: Matrix([[0], [sqrt(2)*Derivative(v(s), s)/2]])
+[PASS] H(s) lies on defined lower ray: Matrix([[0], [sqrt(2)*v(s)/2]])
+[PASS] dH/ds lies on defined lower ray: Matrix([[0], [sqrt(2)*Derivative(v(s), s)/2]])
 [PASS] dH/ds is neutral: Matrix([[0], [0]])
 [PASS] top/W response-ratio shape cancels the common Jacobian: sqrt(2)*y_t/g_2
 

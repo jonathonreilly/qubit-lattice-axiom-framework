@@ -74,8 +74,13 @@ def part1_source_surface() -> None:
     check(
         "load-bearing authorities are markdown links",
         "[YT_WARD_IDENTITY_DERIVATION_THEOREM.md](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)" in note
-        and "[EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)" in note
         and "[YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md](YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md)" in note,
+    )
+    check(
+        "physical comparator is explicitly supplied, not cited from defined algebra",
+        "a supplied comparator `V_2=C^2`" in note
+        and "Its physical EWSB-doublet interpretation is an explicit hypothesis here" in note
+        and "`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`" in note,
     )
     check("no-go discipline gate covers N1-N8", all(f"N{i} -" in note for i in range(1, 9)))
     for phrase in (
@@ -84,7 +89,7 @@ def part1_source_surface() -> None:
         "H_unit scalar-singlet structure",
         "one complex SU(2)_L EWSB doublet",
         "does not close R-HIGGS positively",
-        "does not add an axiom or accepted premise",
+        "does not add an axiom or approved primitive",
     ):
         check(f"note records boundary phrase: {phrase}", phrase in note)
     check("note verification section names expected total", "TOTAL: PASS=39 FAIL=0" in note)
@@ -96,10 +101,11 @@ def part1_source_surface() -> None:
 
     ew = read(EW)
     check(
-        "EW note supplies one-Higgs doublet bookkeeping",
-        "`SU(2)_L` Higgs doublet" in ew and "H = (H^+, H^0)^T" in ew,
+        "defined matrix note declines physical EWSB authority",
+        "No covariant derivative, field, action, or physical system is being defined" in ew
+        and "a physical Higgs carrier" in ew
+        and "a physical vacuum or vacuum expectation value" in ew,
     )
-    check("EW note contains neutral vev", "(0, v/sqrt(2))" in ew or "(0, v/√2)" in ew)
 
 
 def part2_hunit_is_su2_scalar() -> None:

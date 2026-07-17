@@ -92,27 +92,29 @@ def part1_anchors() -> dict[str, Any]:
     ):
         check(f"support note contains section: {section}", section in note)
 
-    sm_dof = ledger_row("sm_relativistic_dof_count_import_note_2026-05-17")
-    gstar = ledger_row("sm_gstar_higgs_sector_count_stretch_note_2026-05-29")
-    ward = ledger_row("yt_ward_identity_derivation_theorem")
-    ew = ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26")
-    no_go = ledger_row("hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15")
+    sm_dof_text = read(SM_DOF)
+    gstar_text = read(SM_GSTAR)
+    ward_text = read(WARD)
+    ew_text = read(EW_MASS)
+    no_go_text = read(HUNIT_NO_GO)
 
-    check("SM finite inventory premise is retained_bounded", sm_dof.get("effective_status") == "retained_bounded")
-    check("downstream gstar row is not promoted by this branch", gstar.get("effective_status") != "retained")
-    check("Ward H_unit theorem is retained_bounded support", ward.get("effective_status") == "retained_bounded")
-    check("EW one-doublet bookkeeping is retained", ew.get("effective_status") == "retained")
-    check(
-        "H_unit no-go remains audit-lane scoped",
-        no_go.get("effective_status") in {"unaudited", "audited_conditional", "retained_no_go"},
-    )
+    check("SM finite inventory explicitly supplies four scalar components",
+          "complex Higgs doublet" in sm_dof_text
+          and "4 real scalar components" in sm_dof_text)
+    check("downstream gstar row remains a bounded supplied-inventory theorem",
+          "**Claim type:** bounded_theorem" in gstar_text
+          and "explicit declared-inventory assumption" in gstar_text)
+    check("Ward source supplies H_unit scalar-singlet support",
+          "H_unit" in ward_text and "scalar-singlet" in ward_text)
+    check("defined matrix theorem supplies no physical doublet authority",
+          "a physical Higgs carrier" in ew_text
+          and "a physical vacuum or vacuum expectation value" in ew_text)
+    check("H_unit no-go remains audit-lane scoped",
+          "**Status authority:** independent audit lane only" in no_go_text)
 
     return {
-        "sm_dof_status": sm_dof.get("effective_status"),
-        "gstar_status": gstar.get("effective_status"),
-        "ward_status": ward.get("effective_status"),
-        "ew_mass_status": ew.get("effective_status"),
-        "hunit_no_go_status": no_go.get("effective_status"),
+        "audit_status_consumed_as_science_evidence": False,
+        "physical_doublet_source": "supplied comparator/inventory only",
     }
 
 

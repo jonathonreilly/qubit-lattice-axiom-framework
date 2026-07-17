@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py
-runner_sha256: a633888c4a6568f02154b9722c3cfbf4ddcf011ebf70a6b94ff37355ab57c4f9
+runner_sha256: 2e6ca95bbb9567620a868c0717e7cb602dbf21ba66b0426ee4eb95c248136daa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Hierarchy EW order-parameter D=4 density readout bridge
@@ -27,11 +27,11 @@ Section 2: endpoint coefficient ratio
   [PASS] D=4 fourth-root readout is distinct from D=16 readout
          D4=0.967168210134, D16=0.991689016736, separation=0.024726
 
-Section 3: retained EW gauge-mass dictionary compatibility
-  [PASS] EW tree rho relation stays one for the neutral order parameter
+Section 3: defined scalar-readout compatibility
+  [PASS] formal rho readout stays one
          rho_tree=1
-  [PASS] fixed-gauge-coupling mass ratios follow the same v ratio
-         (M_W,L/M_W,ref)^4 = (v_L/v_ref)^4 = A_ref/A_L
+  [PASS] fixed-coupling formal readout ratios follow the same v ratio
+         (sqrt(MW2_L)/sqrt(MW2_ref))^4 = (v_L/v_ref)^4
 
 Section 4: source firewalls
   [PASS] new bridge carries bounded-support status fields and no retained claim

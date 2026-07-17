@@ -45,9 +45,11 @@ Load-bearing source surfaces:
 
 - [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
   for the `H_unit` scalar-singlet structure on the `Q_L=(2,3)` block.
-- [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  for the one-doublet electroweak bookkeeping surface, `Y_H=1/2`, and the
-  neutral representative.
+- a supplied nonzero vector `H in C^2` with the fundamental `SU(2)` action.
+  Calling this comparator an electroweak or Higgs doublet is an additional
+  physical hypothesis; the historical defined-matrix note
+  `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md` does not
+  provide that identification.
 - [`HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md`](HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md)
   for the route-pruning boundary that no nonzero equivariant bridge exists
   from the `SU(2)_L` singlet to the fundamental doublet.
@@ -157,7 +159,7 @@ representative on the supplied `SU(2)_L` doublet orbit.
   `H_unit`.
 - It does not promote the `g_*` Higgs-sector row, retag the ledger, or set an
   audit verdict.
-- It does not introduce a new axiom, Tier-A admission, fitted selector, or
+- It does not introduce a new axiom, registered approved primitive, fitted selector, or
   observed-value input.
 - It does not prove Higgs potential dynamics, thermal equilibrium, hypercharge
   uniqueness, or physical-scale `g_2(v)`.

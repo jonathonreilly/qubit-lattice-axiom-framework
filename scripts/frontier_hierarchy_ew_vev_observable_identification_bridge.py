@@ -4,7 +4,7 @@ Hierarchy Formula -> EW Higgs VEV Observable Identification Bridge Runner
 Verifies the bounded bridge theorem in
 docs/HIERARCHY_FORMULA_EW_VEV_OBSERVABLE_IDENTIFICATION_BRIDGE_BOUNDED_NOTE_2026-05-26.md
 
-Under supplied explicit context inputs C1-C4:
+Under supplied explicit context inputs C1-C4 and H_EW:
   C1 (= hierarchy primitive P1)  M_Pl import (non-reduced, via Wald-Noether matching)
   C2 (= hierarchy primitive P2)  Wick-rotated Z^3 -> Z^4 taste count (2^4 = 16)
   C3 (= hierarchy primitive P3)  u_0^16 -> alpha_LM^16 substitution
@@ -14,8 +14,9 @@ the dimension-one hierarchy-formula output
 
   v_hierarchy := M_Pl * (7/8)^(1/4) * alpha_LM^16
 
-is consistently assigned to the EW Higgs VEV parameter `v` of the cited
-EW gauge-mass diagonalization source statement on the canonical surface.
+is consistently assigned to a physical EW VEV coordinate only when H_EW
+supplies that physical identification. The cited defined-matrix theorem
+supplies algebraic normalization and formal scalar readouts only.
 
 This runner verifies the bridge's algebraic and dimensional content at
 exact-rational and high-precision-decimal levels. It does not derive a
@@ -195,10 +196,9 @@ check("(B4) alpha_LM/alpha_bare = alpha_s(v)/alpha_LM = 1/u_0",
 
 
 # ----------------------------------------------------------------------
-# Section 4: EW gauge-mass diagonalization source statement
-# Tree-level: M_W = g*v/2, M_Z = sqrt(g^2 + g_Y^2)*v/2, rho_tree = 1
+# Section 4: defined quadratic-form scalar readouts
 # ----------------------------------------------------------------------
-print("\nSection 4: EW gauge-mass diagonalization (cited source)")
+print("\nSection 4: defined quadratic-form scalar readouts")
 
 def s4_W_mass_formula() -> bool:
     g, v = sp.symbols("g v", positive=True)
@@ -230,14 +230,14 @@ def s4_charge_relation() -> bool:
     e2 = g_Y * cos_thetaW
     return sp.simplify(e1 - e2) == 0 and sp.simplify(e1 - g * g_Y / sp.sqrt(g**2 + g_Y**2)) == 0
 
-check("(B6) M_W = g v / 2 from |D_mu H|^2 at <H>", s4_W_mass_formula,
-      "neutral Higgs vacuum, Y_H=1/2 doublet")
-check("(B6) M_Z = sqrt(g^2 + g_Y^2) v / 2", s4_Z_mass_formula,
-      "diagonalization gives Z mass")
-check("(B6) rho_tree = M_W^2 / (M_Z^2 cos^2(theta_W)) = 1",
-      s4_rho_tree_one, "custodial tree relation")
-check("(B6) e = g sin(theta_W) = g_Y cos(theta_W) algebraically",
-      s4_charge_relation, "charge fixed by diagonalization")
+check("(B6) sqrt(MW2) = g v / 2 for defined MW2", s4_W_mass_formula,
+      "formal positive scalar readout")
+check("(B6) sqrt(MZ2) = sqrt(g^2 + g_Y^2) v / 2", s4_Z_mass_formula,
+      "formal positive scalar readout")
+check("(B6) formal rho readout equals 1", s4_rho_tree_one,
+      "identity among defined scalars")
+check("(B6) formal e readout has two equal algebraic forms",
+      s4_charge_relation, "identity among defined scalars")
 
 
 # ----------------------------------------------------------------------
@@ -441,7 +441,7 @@ if FAIL:
     sys.exit(1)
 else:
     print(
-        "VERDICT: bridge passes; under C1-C4, the dimension-one "
+        "VERDICT: bridge passes; under C1-C4 plus supplied H_EW, the dimension-one "
         "hierarchy-formula output is consistently assigned to the EW "
         "Higgs VEV parameter on the canonical surface; package-level "
         "closure remains bounded by the four named explicit context inputs; "

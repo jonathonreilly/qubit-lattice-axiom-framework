@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_yt_qubit_neutral_higgs_carrier_ray_bridge_record_axiom_invariance_2026_06_04.py
-runner_sha256: f7940ff34e053f800387405a69c69cced40ee6cfbd7f61ac217ffb454254cef2
+runner_sha256: da8a6fb1334683a02a3e04dba62d90c5b09885a648d441b4d19d87840320d1ea
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.72
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 YT Qubit Neutral-Higgs Carrier-Ray Bridge
 Record-Axiom Invariance Companion Runner
 ========================================================================
-Repo root: /private/tmp/cl3-review-open-20260604
-Parent note: /private/tmp/cl3-review-open-20260604/docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md
+Repo root: /private/tmp/science-fix-ew-defined-mass-algebra-20260716
+Parent note: /private/tmp/science-fix-ew-defined-mass-algebra-20260716/docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md
 Companion source note:
   docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
 
@@ -55,7 +55,7 @@ BLOCK 3: normalized weight equivalence cancels exp(h)
   PASS normalized_family_identical_h_+2.000 :: normalized diff = 3.469e-18
 
 ========================================================================
-BLOCK 4: retained EW one-Higgs doublet bookkeeping
+BLOCK 4: defined C^2 matrix bookkeeping
 ========================================================================
   PASS T3_equals_sigma_z_over_2 :: T_3 = diag(1/2, -1/2)
   PASS Y_H_equals_half_I :: Y_H = (1/2) * I
@@ -71,7 +71,7 @@ BLOCK 5: neutral-ray annihilation
   PASS Q_H_upper_equals_upper :: Q_H (1,0)^T = [1.+0.j 0.+0.j]
 
 ========================================================================
-BLOCK 6: neutral ray uniqueness inside one-Higgs doublet
+BLOCK 6: neutral ray uniqueness inside stipulated C^2
 ========================================================================
   PASS rank_Q_H_equals_1 :: rank(Q_H) = 1
   PASS nullspace_dim_equals_1 :: nullspace dim = 1
@@ -98,9 +98,9 @@ BLOCK 8: top/W response-ratio Jacobian cancellation
 ========================================================================
 BLOCK 9: parent-note static scan for Record-axiom usage
 ========================================================================
-  PASS parent_note_present :: /private/tmp/cl3-review-open-20260604/docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md
-  PASS structural_section_start_found :: start index = 2180
-  PASS structural_section_end_found :: end index = 4289
+  PASS parent_note_present :: /private/tmp/science-fix-ew-defined-mass-algebra-20260716/docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md
+  PASS structural_section_start_found :: start index = 3492
+  PASS structural_section_end_found :: end index = 6262
   PASS zero_record_axiom_content_tokens_in_load_bearing_section :: matches in load-bearing section = []
   PASS structural_load_bearing_tokens_present :: matches >= 6 of 7: ['sigma_z', 'P_+', 'P_-', 'T_3', 'Y_H', 'H_0', 'Q']
 
@@ -118,8 +118,8 @@ BLOCK 10: Record-axiom counterfactual
 ========================================================================
 BLOCK 11: Quantum / Lattice content preserved across memos
 ========================================================================
-  PASS old_memo_present :: /private/tmp/cl3-review-open-20260604/docs/MINIMAL_AXIOMS_2026-05-20.md
-  PASS new_memo_present :: /private/tmp/cl3-review-open-20260604/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_present :: /private/tmp/science-fix-ew-defined-mass-algebra-20260716/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/science-fix-ew-defined-mass-algebra-20260716/docs/MINIMAL_AXIOMS_2026-06-04.md
   PASS old_memo_has_qubit_content :: historical qubit local-algebra content present
   PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
   PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
@@ -148,7 +148,7 @@ Companion conclusion (audit-friendly evidence only):
   (sigma_z = P_+ - P_-; sigma_z source <-> P_- occupation source;
    P_- H_0 = H_0; Q_H H_0 = 0; radial tangent neutral;
    sqrt(2) y_t / g_2 cancels v'(s)) uses ONLY one-qubit Pauli
-  content (Quantum axiom), retained EW Higgs bookkeeping, and
+  content (Quantum axiom), stipulated C^2/lower-ray bookkeeping, and
   elementary calculus. The Record axiom (additive scalar
   record-readout functional) is neither used nor invoked.
   Numeric output is bit-identical under both 'Record axiom

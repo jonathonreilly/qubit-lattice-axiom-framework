@@ -41,6 +41,11 @@ class A; load-bearing score 6.322) on the narrowed scope:
 > neutral ray and is annihilated by Q_H. No physical Y_T coefficient,
 > Yukawa value, or g_2(v) closure is audited.
 
+That quoted audit history describes the earlier source content; it is not
+current physical authority. After the defined-algebra repair, the cited
+diagonalization theorem supplies only matrices and a kernel ray in an abstract
+`C^2`, so the physical qubit/EW/Higgs same-carrier step remains open.
+
 The 2026-06-04 framework axiom update from `MINIMAL_AXIOMS_2026-05-20.md`
 to `MINIMAL_AXIOMS_2026-06-04.md` (Lattice + Quantum + Record;
 explicit-owner-approved per `docs/audit/AXIOM_MINIMALITY_POLICY.md`
@@ -52,10 +57,13 @@ returning the row to unaudited effective status.
 
 This companion records, for the audit lane, that the parent's
 load-bearing carrier-ray identification is **independent of the
-Record axiom**: it uses only the Quantum-axiom content (one-qubit
-local algebra at each site; equivalently `M_2(C) ~= Cl(3,0)`) plus the
-retained one-Higgs electroweak-doublet bookkeeping (T_3, Y_H, Q_H, H_0
-from `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26`).
+Record axiom**: its finite-dimensional calculation uses the Quantum-axiom
+content (one-qubit local algebra at each site; equivalently
+`M_2(C) ~= Cl(3,0)`) plus separately defined matrices `T_3`, `Y`, `T_3+Y`,
+and `h0` from the historical
+`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26` path.
+That cited theorem no longer supplies a physical one-Higgs/electroweak
+carrier, so the parent's physical carrier-ray identification remains open.
 Adopting the Record axiom adds a strictly additive scalar
 record-readout statement that is neither used nor invoked anywhere in
 the carrier-ray identification. The projector-algebra identity
@@ -85,9 +93,9 @@ projector and neutral-ray steps) depends only on:
 2. the affine source-coordinate identity
    `exp(h sigma_z) = exp(h) * exp(-2 h P_-)`, which is elementary
    matrix-exponential algebra on a diagonal Pauli generator;
-3. the retained one-Higgs EW bookkeeping
-   `T_3 = sigma_z / 2`, `Y_H = (1/2) I`, `Q_H = T_3 + Y_H`,
-   `H_0 = (0, v/sqrt(2))^T`
+3. the defined `C^2` bookkeeping
+   `T_3 = sigma_z / 2`, `Y = (1/2) I`, `Q = T_3 + Y`,
+   `h0 = (0, v/sqrt(2))^T`
    (cited authority
    `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`);
 4. one-dimensional radial calculus on H(s) = (0, v(s)/sqrt(2))^T.
@@ -95,8 +103,9 @@ projector and neutral-ray steps) depends only on:
 None of items 1-4 use the Record axiom's additive scalar
 record-readout content. They use only the Quantum axiom (one-qubit /
 `Cl(3,0)` local algebra), the Lattice axiom (`Z^3` site set; only as
-the carrier of the qubit), the retained EW Higgs theorem, and
-elementary finite-dimensional linear algebra.
+the carrier of the qubit), the separately defined `C^2` matrix theorem, and
+elementary finite-dimensional linear algebra. None of these facts identifies
+the two algebraic carriers as the same physical surface.
 
 **(C1) is the only auditable companion observation.** The bridge from
 the carrier-ray identification to a physical Y_T coefficient, the
@@ -185,7 +194,7 @@ change.
 
 This invariance is what the companion runner verifies block-by-block:
 every load-bearing algebraic check passes using only Quantum-axiom
-(one-qubit Pauli) content, retained EW Higgs content, and elementary
+(one-qubit Pauli) content, defined C^2 matrix content, and elementary
 calculus, and a "Record-axiom counterfactual" block confirms that the
 output is unchanged whether or not a Record-axiom statement is
 appended.
@@ -217,7 +226,7 @@ weight vector `(exp(h), exp(-h))^T` from `exp(h sigma_z)` equals
 `exp(h) * (1, exp(-2h))^T` from the `exp(-2 h P_-)` reading, so the
 common factor `exp(h)` cancels in the normalized source family.
 
-Block 4 — Retained EW Higgs doublet bookkeeping. Verifies
+Block 4 — Defined C^2 matrix bookkeeping. Verifies
 `T_3 = sigma_z / 2`, `Y_H = (1/2) I`, `Q_H = T_3 + Y_H` equals
 `diag(1, 0)`. Loads explicit retained doublet vacuum
 `H_0 = (0, v / sqrt(2))^T`.
@@ -226,9 +235,9 @@ Block 5 — Neutral-ray annihilation. Verifies `P_- H_0 = H_0`,
 `P_+ H_0 = 0`, `Q_H H_0 = 0`. Verifies `Q_H` acts as identity on the
 charged upper component `(1, 0)^T`.
 
-Block 6 — Neutral ray uniqueness inside one-Higgs doublet. Verifies
+Block 6 — Neutral ray uniqueness inside stipulated C^2. Verifies
 `rank(Q_H) = 1` and that `nullspace(Q_H) = span((0, 1)^T)` (a single
-ray, the neutral-Higgs ray). Confirms parent's "neutral ray is unique
+ray, the defined lower ray). Confirms parent's "neutral ray is unique
 in the one-Higgs doublet" line.
 
 Block 7 — Radial tangent stays neutral. Verifies symbolically that
@@ -332,7 +341,7 @@ reading of `MINIMAL_AXIOMS_2026-06-04.md` §"Record".
   [`YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`](YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md)
 - Parent runner:
   `scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py`
-- Cited retained authority for the EW doublet bookkeeping:
+- Cited defined-algebra source for the `C^2` matrix bookkeeping only:
   [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
 - Predecessor support packet (signed-record naming source, non-load-bearing
   reader pointer):

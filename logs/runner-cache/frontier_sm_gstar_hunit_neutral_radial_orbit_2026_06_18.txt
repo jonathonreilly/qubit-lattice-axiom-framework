@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18.py
-runner_sha256: 8866f15862d269cd6818751d56f56953a18be695df3569fab0b836f5ef4cac1f
+runner_sha256: cb70b94599a2d7e84b940e6f262d3493db5fccc4ae4db5682538827e2f0abc01
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.45
+elapsed_sec: 0.23
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -25,10 +25,10 @@ Part 1: source anchors and status scope
 [PASS] support note contains section: What This Closes
 [PASS] support note contains section: What This Does Not Close
 [PASS] support note contains section: Review Boundary Certificate
-[PASS] SM finite inventory premise is retained_bounded
-[PASS] downstream gstar row is not promoted by this branch
-[PASS] Ward H_unit theorem is retained_bounded support
-[PASS] EW one-doublet bookkeeping is retained
+[PASS] SM finite inventory explicitly supplies four scalar components
+[PASS] downstream gstar row remains a bounded supplied-inventory theorem
+[PASS] Ward source supplies H_unit scalar-singlet support
+[PASS] defined matrix theorem supplies no physical doublet authority
 [PASS] H_unit no-go remains audit-lane scoped
 
 Part 2: nonzero supplied doublet gauges to the neutral ray

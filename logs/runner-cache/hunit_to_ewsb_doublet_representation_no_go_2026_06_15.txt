@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.py
-runner_sha256: b714b80e78601909bc83eb63ea041da93e86f230fa8332e197996734c6bd0bf8
+runner_sha256: f3cf4941207839bd4c573c1e17fcdd5164c741b015e2ab4bdc1437476a658ab9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -19,19 +19,19 @@ Part 1: source surfaces
 [PASS] note declares no-go claim type
 [PASS] note names portable runner and cache links
 [PASS] load-bearing authorities are markdown links
+[PASS] physical comparator is explicitly supplied, not cited from defined algebra
 [PASS] no-go discipline gate covers N1-N8
 [PASS] note records boundary phrase: Hom_SU(2)(1, 2) = 0
 [PASS] note records boundary phrase: does not exist as an equivariant derivation
 [PASS] note records boundary phrase: H_unit scalar-singlet structure
 [PASS] note records boundary phrase: one complex SU(2)_L EWSB doublet
 [PASS] note records boundary phrase: does not close R-HIGGS positively
-[PASS] note records boundary phrase: does not add an axiom or accepted premise
+[PASS] note records boundary phrase: does not add an axiom or approved primitive
 [PASS] note verification section names expected total
 [PASS] Ward note defines H_unit
 [PASS] Ward note identifies scalar-singlet content
 [PASS] Ward note says no SM Yukawa readout
-[PASS] EW note supplies one-Higgs doublet bookkeeping
-[PASS] EW note contains neutral vev
+[PASS] defined matrix note declines physical EWSB authority
 
 Part 2: H_unit is an SU(2) scalar on Q_L
 [PASS] H_unit has 6x6 Q_L operator shape -- (6, 6)

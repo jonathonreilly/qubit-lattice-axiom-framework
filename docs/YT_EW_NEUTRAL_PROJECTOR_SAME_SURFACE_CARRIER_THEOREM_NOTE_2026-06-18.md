@@ -9,22 +9,20 @@ direct_effective_status_change_allowed_from_this_note: false
 
 **Date:** 2026-06-18
 **Claim type:** bounded_theorem
-**Role:** exact support theorem for the Y_T neutral-Higgs carrier bridge.
+**Role:** exact defined-projector algebra; physical carrier bridge remains open.
 **Status:** exact support; no positive Y_T closure.
 **Primary runner:**
 `scripts/frontier_yt_ew_neutral_projector_same_surface_carrier.py`
 **Generated output:**
 `outputs/yt_ew_neutral_projector_same_surface_carrier_2026-06-18.json`
 
-This is a same-surface spectral-projector theorem: it identifies the neutral
-EW Higgs carrier ray by functional calculus of `Q_H`, not by a discretionary
-basis label.
+This is a spectral-projector theorem on one explicitly defined copy of `C^2`.
+It identifies a lower coordinate ray by functional calculus of `Q_H`; it does
+not identify that vector space with a physical EW, Higgs, or Y_T carrier.
 
 ## Claim
 
-On the retained one-Higgs electroweak gauge-mass surface, the neutral
-Higgs source ray is not an extra basis convention. It is the zero-eigenvalue
-spectral projector of the electroweak charge operator
+On the defined `C^2` surface, introduce the endomorphism
 
 ```text
 Q_H = T_3 + Y_H,
@@ -41,7 +39,7 @@ P_neut = 1_{0}(Q_H) = I - Q_H.
 ```
 
 The two projectors are orthogonal, rank-one, sum to `I`, and live on the same
-two-dimensional Higgs doublet carrier. With the qubit notation
+defined two-dimensional vector space. With the qubit-shaped notation
 
 ```text
 P_+ = (I + sigma_z) / 2,
@@ -55,10 +53,11 @@ P_+ = P_ch,
 P_- = P_neut.
 ```
 
-This is a same-surface carrier statement: the `P_-` source ray used by the
-Y_T signed-record source is the neutral electroweak Higgs ray because both are
-the same spectral projector `P_neut = 1_0(Q_H)` on the same retained
-one-Higgs doublet carrier.
+This proves only that the two displayed projector formulas coincide after both
+are placed on the same defined basis. It does not prove that a Y_T
+signed-record source and an electroweak/Higgs ray are the same physical
+carrier. That same-surface physical identification remains an unsupplied
+bridge.
 
 Equivalently, the signed two-outcome generator on this carrier is
 
@@ -81,8 +80,9 @@ source-coordinate change is `j = -2h`.
 ## Cited Authority Surface
 
 - [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  supplies the one-Higgs electroweak doublet, the operator
-  `Q_H = T_3 + Y_H`, and the neutral vacuum `H_0 = (0, v/sqrt(2))^T`.
+  supplies the defined matrices `T_3`, `Y`, their sum, and the lower vector
+  `h0 = (0,v/sqrt(2))^T`. It supplies no physical carrier, hypercharge,
+  vacuum, or charge operator.
 - [`YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`](YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md)
   supplies the signed-record source-action support packet.
 - [`YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`](YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md)
@@ -90,12 +90,12 @@ source-coordinate change is `j = -2h`.
   local source-coordinate reparameterization.
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
   supplies only the one-qubit algebraic carrier language. It does not derive
-  gauge group, particle content, or the Higgs sector; those inputs come from
-  the EW Higgs theorem above.
+  a gauge group, particle content, the Higgs sector, or a physical
+  identification with the separately defined `C^2` above.
 
 ## Proof
 
-The exact matrices on the EW doublet carrier are
+The exact matrices on the defined `C^2` carrier are
 
 ```text
 I = [[1, 0], [0, 1]],
@@ -119,8 +119,8 @@ P_ch = Q_H,
 P_neut = I - Q_H = [[0, 0], [0, 1]].
 ```
 
-These are also the Pauli projectors `P_+` and `P_-`. The neutral Higgs vacuum
-and any radial tangent along that ray obey
+These are also the Pauli projectors `P_+` and `P_-`. The defined lower vector
+and any scalar multiple along that ray obey
 
 ```text
 P_neut H_0 = H_0,
@@ -150,12 +150,13 @@ exp(h epsilon_H)
   = exp(h) exp(-2h P_neut).
 ```
 
-After normalization, the scalar factor `exp(h)` cancels. This is exactly the
-affine source-coordinate equivalence used by the neutral-Higgs carrier bridge.
+After normalization, the scalar factor `exp(h)` cancels. This is an affine
+source-coordinate identity once both expressions are stipulated on the same
+defined carrier; it does not supply that physical stipulation.
 
 ## Frame Invariance
 
-If a unitary frame change `U` is applied to the EW doublet carrier, then
+If a unitary frame change `U` is applied to the defined carrier, then
 
 ```text
 Q_H' = U Q_H U^dagger,
@@ -167,17 +168,14 @@ All projector identities above are preserved. The theorem is therefore not a
 coordinate naming trick; it is a spectral-projector identity on the same
 two-dimensional carrier.
 
-## What This Closes
+## Exact Boundary Of The Result
 
-This note supplies the missing same-surface carrier theorem requested by the
-conditional audit of
-`yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25`: the qubit `P_-`
-source ray and the neutral EW Higgs doublet ray are the same spectral
-projector `1_0(Q_H)` on the one-Higgs EW carrier.
-
-Independent audit still decides whether this source-side repair moves the
-existing row. This note does not edit any audit ledger, queue, publication
-effective-status file, or front-door status surface.
+This note supplies the exact projector equality
+`P_- = 1_0(T_3+Y)` on a single defined `C^2`. It does not supply the missing
+physical same-surface theorem requested for
+`yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25`. In particular,
+equality of two formulas after a shared-basis stipulation cannot establish
+that the qubit source and a physical EW/Higgs carrier are the same object.
 
 ## What This Does Not Close
 
@@ -207,5 +205,5 @@ Expected result:
 SUMMARY: PASS=... FAIL=0
 ```
 
-The green result means the same-surface neutral-projector carrier theorem is
-internally checked. It does not mean the physical Y_T lane has closed.
+The green result means the defined neutral-projector algebra is internally
+checked. It does not prove a physical same-surface carrier identification.

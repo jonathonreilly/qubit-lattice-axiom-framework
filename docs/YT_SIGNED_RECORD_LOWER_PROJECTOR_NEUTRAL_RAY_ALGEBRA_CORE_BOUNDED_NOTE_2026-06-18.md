@@ -22,8 +22,8 @@ neutral-Higgs carrier packet:
 1. inside the one-site signed-record qubit algebra,
    `epsilon = sigma_z = P_+ - P_- = I - 2P_-`, so the signed source is
    affinely equivalent to lower-projector occupation;
-2. inside the retained one-Higgs electroweak bookkeeping, the lower doublet ray
-   is the neutral ray: `P_- H_0 = H_0` and `Q H_0 = 0`;
+2. inside the defined `C^2` comparator, the lower coordinate ray obeys
+   `P_- h0 = h0` and `(T_3+Y)h0 = 0`;
 3. these facts are bounded support only.  They do not identify the qubit
    readout basis with the EW Higgs doublet basis as the same physical carrier
    surface.
@@ -38,7 +38,8 @@ Load-bearing one-hop authorities:
   supplies the signed-record source-action support packet that uses the
   `epsilon` source coordinate.
 - [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  supplies the one-Higgs electroweak doublet bookkeeping and neutral lower ray.
+  supplies only the defined `C^2` matrices and lower coordinate ray. It does
+  not identify them as a physical Higgs carrier or electroweak neutral ray.
 
 ## Signed-Record Algebra
 
@@ -65,9 +66,9 @@ The factor `exp(h)` is record-independent and cancels in the normalized source
 family, so the normalized signed-record source is the lower-projector
 occupation source with affine coordinate `j = -2h`.
 
-## EW Neutral-Ray Bookkeeping
+## Defined Lower-Ray Bookkeeping
 
-In the retained one-Higgs EW doublet bookkeeping,
+In the defined `C^2` comparator,
 
 ```text
 T_3 = diag(1/2, -1/2),
@@ -85,7 +86,8 @@ Q H_0 = 0.
 ```
 
 The upper basis ray is charged, `Q(1,0)^T = (1,0)^T`, so the lower doublet ray
-is the neutral one-Higgs ray in this bookkeeping.
+is the defined lower ray in this stipulated `C^2` bookkeeping. A physical
+one-Higgs interpretation is not inferred.
 
 ## Boundary
 

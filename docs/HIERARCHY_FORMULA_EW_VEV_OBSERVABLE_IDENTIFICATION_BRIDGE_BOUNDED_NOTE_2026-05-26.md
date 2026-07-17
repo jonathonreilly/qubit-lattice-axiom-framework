@@ -17,10 +17,11 @@ audit lane.
 ## 1. Claim
 
 Given:
-- the cited EW Higgs gauge-mass diagonalization source statement (one-doublet,
-  `Y_H = 1/2`, neutral vacuum) supplying the unique gauge-mass dictionary
-  `M_W = g v / 2`, `M_Z = sqrt(g^2 + g_Y^2) v / 2`, `ρ_tree = 1`,
-  `e = g sin θ_W = g_Y cos θ_W`;
+- **H_EW**, a supplied physical hypothesis identifying a positive scalar `v`
+  as the VEV coordinate of a specified one-doublet EW carrier. The defined
+  quadratic-form theorem with the historical EW/Higgs filename supplies only
+  the normalization `h0=(0,v/sqrt(2))` and formal scalar readouts; it does not
+  supply H_EW, a gauge representation, or physical masses;
 - the cited dimensional fourth-root compression source statement fixing
   `α = 1/d` uniquely at `d = 4` for any simple-power extraction to
   mass dimension one;
@@ -37,9 +38,8 @@ the framework's dimension-one hierarchy-formula output
 v_hierarchy  :=  M_Pl × (7/8)^(1/4) × α_LM^16
 ```
 
-is consistently **assigned** to the EW Higgs vacuum expectation value
-parameter `v` of the cited EW gauge-mass diagonalization source on the
-canonical surface.
+is consistently **assigned**, conditional on H_EW, to that supplied physical
+VEV coordinate `v` on the canonical surface.
 
 This is a **bounded** consistency/identification bridge. It does **not**
 derive the physical observable identification from the cited framework sources
@@ -95,7 +95,7 @@ conditional inputs so that the bridge's scope is auditable.
   fixes the readout map from the framework's mean-field output to a
   scalar observable. Distinct from hierarchy P1-P4.
 
-Under C1-C4, the bridge verifies the observable-identification step as
+Under C1-C4 and H_EW, the bridge verifies the observable-identification step as
 an internally consistent assignment: `v_hierarchy` has mass dimension one
 and may be read as the EW Higgs VEV parameter `v` in the cited
 gauge-mass dictionary. This bridge does not derive a Higgs doublet gauge
@@ -110,8 +110,8 @@ representation for the hierarchy output.
 | (B3) | On the explicitly supplied `d = 4` surface, composing (B1) + (B2) gives the dimensionless factor `(7/8)^(1/4)` | (B1) + (B2), conditional on the source theorem's future audit status | no |
 | (B4) | The cited `α_LM` geometric-mean identity `α_LM^2 = α_bare · α_s(v)` exhibits `α_LM` as a single dimensionless positive scalar | Cited `α_LM` geometric-mean identity source | no |
 | (B5) | Under C1, `[M_Pl] = 1` in mass units; under (B3) and (B4), `[(7/8)^(1/4)] = [α_LM^16] = 0`; therefore `[v_hierarchy] = 1` | C1 + (B3) + (B4) | no |
-| (B6) | The cited EW gauge-mass diagonalization source fixes the dimension-one EW Higgs VEV `v` as the unique scalar VEV carrying the `(T_3 = -1/2, Y = +1/2)` gauge transformation of a single `SU(2)_L` Higgs doublet, with `M_W = g v / 2` and `ρ_tree = 1` | Cited EW gauge-mass diagonalization source; audit-owned status | no |
-| (B7) | Under C4, the framework's mean-field readout selects a scalar (additive, phase-blind) observable; under C2 + C3, the canonical-surface evaluation of `v_hierarchy` is dimension-one; therefore the dimension-one scalar output is consistently assigned to the EW VEV parameter `v` of (B6). The Higgs gauge representation is supplied by the cited EW dictionary, not derived by this bridge | (B5) + (B6) + C2 + C3 + C4 | no |
+| (B6) | In the defined `C^2` algebra, `h0=(0,v/sqrt(2))` and the formal readouts `MW2=g^2v^2/4`, `MZ2=(g^2+gY^2)v^2/4`, `rho=1` follow. H_EW separately stipulates that this coordinate is a physical one-doublet EW VEV | Defined quadratic-form algebra + supplied H_EW | no |
+| (B7) | Under C4, the framework's mean-field readout selects a scalar (additive, phase-blind) observable; under C2 + C3, the canonical-surface evaluation of `v_hierarchy` is dimension-one; therefore, conditional on H_EW, the dimension-one scalar output is consistently assigned to its VEV coordinate. No physical carrier is derived | (B5) + (B6) + C2 + C3 + C4 + H_EW | no |
 
 The bridge does not cite the Wilson plaquette action, staggered phases,
 Brillouin-zone labels, link unitaries, lattice scale `u_0`, a Monte
@@ -151,7 +151,7 @@ primitives remain explicit context inputs:
 | P1 (M_Pl import) | C1 | Cited Wald-Noether algebraic skeleton; metric-compatible coframe response + gravitational boundary density bridge conditions remain open |
 | P2 (Wick `Z^3 → Z^4`) | C2 | Six cited substep theorems; staggered-Dirac realization gate remains a non-chain-satisfying conditional input |
 | P3 (`u_0^16 → α_LM^16`) | C3 | Regulator-dependence no-go row records the substrate-regulator boundary; bare-coupling `(4π)^(-16)` prefactor is continuum Fourier-measure inheritance, not Cl(3) derived |
-| P4 (observable identification, **this bridge**) | bounded_theorem here | The cited EW diagonalization + cited dimensional compression + Riemann-Dirichlet source theorem pending re-audit + cited `α_LM` identity make the assignment internally consistent GIVEN C1-C4; each source keeps its audit-owned status |
+| P4 (observable identification, **this bridge**) | bounded_theorem here | The defined algebra + supplied H_EW + dimensional compression + Riemann-Dirichlet source theorem pending re-audit + cited `α_LM` identity make the assignment internally consistent given C1-C4 and H_EW; each source keeps its audit-owned status |
 
 ### 5.1 Curve-fit defense (honest framing of the 0.0255 % match)
 
@@ -221,9 +221,11 @@ named context inputs.
 
 ## 6. Declared source dependencies and current boundary
 
-- [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
-  — supplies the unique dimension-one scalar VEV `v` carrying the
-  `(T_3 = -1/2, Y = +1/2)` doublet gauge transformation.
+- a supplied physical identification of the dimension-one coordinate `v` as
+  a scalar VEV carrying the stated doublet transformation. The
+  [defined `C^2` algebra](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
+  supplies only a positive scalar, a vector, and formal quadratic readouts; it
+  does not supply uniqueness, a physical VEV, or a gauge transformation.
 - [`HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md)
   — supplies `α = 1/d` uniquely at `d = 4`.
 - [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md)
@@ -301,5 +303,6 @@ The runner verifies:
 6. The `+3.42%` overshoot at integer `N = 16` without the prefactor.
 7. The three curve-fit selection-knob magnitudes (M_red factor; the
    three-coupling factor-67 spread; the `1/4` vs `1/16` shift).
-8. The EW gauge-mass diagonalization arithmetic at canonical inputs.
+8. The defined quadratic-form scalar-readout arithmetic at symbolic inputs;
+   no physical EW interpretation is inferred.
 9. The `α_LM` geometric-mean identity `α_LM^2 = α_bare · α_s(v)`.

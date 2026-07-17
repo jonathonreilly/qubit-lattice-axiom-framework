@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_ew_neutral_projector_same_surface_carrier.py
-runner_sha256: bbe0032655d273f14abba4b6fd2bf766e35a77f100682a4d05fd075c4028d4f9
+runner_sha256: 75acb9c2cc0853fa29e3fce90e299072aad3838381a0cba683a35dcc0a695da9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -20,11 +20,11 @@ Part 1: authority surface and source boundary
 [PASS] note contains required marker: Claim
 [PASS] note contains required marker: Cited Authority Surface
 [PASS] note contains required marker: Frame Invariance
-[PASS] note contains required marker: What This Closes
+[PASS] note contains required marker: Exact Boundary Of The Result
 [PASS] note contains required marker: What This Does Not Close
-[PASS] EW Higgs source contains marker: Y_H = 1/2
-[PASS] EW Higgs source contains marker: H_0 = (0, v/sqrt(2))^T
-[PASS] EW Higgs source contains marker: Q = T_3 + Y
+[PASS] EW Higgs source contains marker: Y = I2 / 2
+[PASS] EW Higgs source contains marker: h0 = (0, v/sqrt(2))^T
+[PASS] EW Higgs source contains marker: T3+Y
 [PASS] source-action packet contains marker: epsilon_x in {-1, +1}
 [PASS] source-action packet contains marker: source-coupled site-diagonal local action
 [PASS] source-action packet contains marker: support only
@@ -80,7 +80,7 @@ Part 5: unitary frame invariance
 
 Part 6: target bridge wiring and firewalls
 [PASS] target bridge cites the new same-surface theorem
-[PASS] target bridge names the spectral-projector repair
+[PASS] target bridge names the stipulated spectral-projector equality
 [PASS] target bridge keeps no-positive-Y_T boundary
 [PASS] new theorem avoids overclaim: 'This note derives y_t'
 [PASS] new theorem avoids overclaim: 'retained Y_T closure has been obtained'

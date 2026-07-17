@@ -86,7 +86,7 @@ framework-derived).
 | SU(2)_L weak sector: `dim adj(SU(2)) = 3` generators | 3 | [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md) (Cl(3) bivector su(2)) | retained | DERIVED |
 | U(1)_Y hypercharge sector: `1` B boson | 1 | [`STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md) | unaudited | RESIDUAL (R-U1Y) |
 | transverse polarizations per massless vector | 2 | `MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md` (rank arithmetic `4-1-1=2`) | unaudited | RESIDUAL (R-POL) |
-| single complex SU(2)_L Higgs doublet -> real scalar dof | 4 | `SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md`; `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md` (one-doublet bookkeeping) | one-Higgs-Yukawa unaudited; doublet *count* assumed | RESIDUAL (R-HIGGS) |
+| single complex SU(2)_L Higgs doublet -> real scalar dof | 4 | `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md` (declared physical inventory); the historical EW/Higgs diagonalization path supplies no field content | declared-inventory input; native doublet derivation open | RESIDUAL (R-HIGGS) |
 
 ```text
 gluon dof    = dim adj(SU(3)) * 2 = 8 * 2 = 16

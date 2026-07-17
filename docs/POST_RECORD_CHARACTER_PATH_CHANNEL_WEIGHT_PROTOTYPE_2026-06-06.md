@@ -1,98 +1,163 @@
-# Post-Record Character/Path/Channel Weight Prototype
+# Exact Finite Weight Normalization and Path-Product Theorem
 
 **Date:** 2026-06-06
-**Type:** bounded support / finite supplied-normalization witness
-**Claim type:** bounded_theorem
-**Status:** bounded-support source-side for supplied finite
-character/path/channel normalization; audit_required_before_effective_retained=true;
-bare_retained_allowed=false.
+**Type:** positive_theorem
+**Claim type:** positive_theorem
 **Primary runner:**
 [`scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py`](../scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.txt)
-**Bounded row export:**
-[`outputs/post_record_character_path_channel_weight_slice_2026_06_07.json`](../outputs/post_record_character_path_channel_weight_slice_2026_06_07.json)
+**Dependencies:** none. The finite carriers and rational weights below are
+universally quantified mathematical arguments, not framework-supplied premises.
 
-## Result
+## 1. Exact normalization theorem
 
-This block gives the `character_path_channel_weight` lane a bounded finite
-supplied-normalization witness:
+Let `I` be a nonempty finite set and let
 
 ```text
-supplied finite carrier of paths, characters, or channels
-  + supplied nonnegative local weights with positive totals
-  + exact normalization
-  + exact product/composition check
-  => normalized finite path/channel/character weight packet
+w : I -> Q_{>=0},                 W = sum_{i in I} w_i > 0.
 ```
 
-The prototype covers all `10` `character_path_channel_weight` rows from the
-measure/weight subdivision.
+Define `p_i = w_i/W`. Then, exactly in `Q`,
 
-## Meaning
-
-The prototype can certify:
-
-- finite path weights normalize exactly;
-- finite channel rows normalize to a row-stochastic kernel;
-- finite path weights compose multiplicatively under supplied edge weights;
-- finite character coefficients can be packaged as a normalized positive
-  finite packet.
-
-It cannot certify:
-
-- the directional path parameter, character packet, Wilson surface, or channel
-  rule is derived from Record;
-- the finite weight packet is the physical measure;
-- a normalized weight selects a dial;
-- a Born law, prior, source law, production kernel, or physical arrow follows.
-
-## Status certificate
-
-```yaml
-actual_current_surface_status: bounded-support
-trace_class: upstream_support
-reachability_to_target: supports
-conditional_surface_status: "character/path/channel rows get finite supplied normalization semantics; physical selection and derivation remain open"
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "This branch supplies finite normalization semantics and does not derive the path/channel/character rule or physical measure."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
+```text
+p_i >= 0,                           sum_{i in I} p_i = 1.
 ```
 
-## Boundaries
+Indeed, `W` is positive, so division preserves nonnegativity, and
 
-- Does not edit `docs/audit/data`.
-- Does not apply or predict audit verdicts.
-- Does not promote any row.
-- Does not derive a directional path parameter, character packet, Wilson
-  surface, channel rule, path measure, source law, or Born law from Record.
-- Does not select or force a generation/Koide dial location.
-- Does not derive production dynamics, a kernel, Hamiltonian, instrument,
-  clock/rate, or physical arrow.
+```text
+sum_i p_i = (sum_i w_i)/W = W/W = 1.
+```
 
-## Runner certificate
+This is a positive theorem about every finite rational packet satisfying the
+displayed hypotheses. The carrier and weights are variables of the theorem;
+no physical carrier or weight rule is asserted.
 
-The runner verifies:
+The executable representation is an ordered finite tuple of `(label, weight)`
+pairs. Labels must be unique, every weight must be an actual `Fraction`, and
+the tuple must be nonempty. Zero entries are allowed, but a zero total is not.
+Floats, integers masquerading as exact weights, duplicate labels, negative
+weights, empty carriers, and nonpositive totals are rejected rather than
+coerced.
 
-- source anchors in this note, the measure/weight subdivision, the directional
-  path-measure note, the character-measure packet note, and the Wilson
-  real-positive measure bridge;
-- finite supplied path weights normalize exactly;
-- finite supplied channel weights normalize to row-stochastic rows;
-- path product weights compose exactly under supplied edge weights;
-- finite supplied character coefficients normalize to a positive packet;
-- bounded ledger-row export exists for the selected character/path/channel rows;
-- the `10` `character_path_channel_weight` rows are present;
-- the audit ledger hash is unchanged after the scan;
-- no audit verdict, audit-data write, retained/promoted claim,
-  physical-measure selection, generated path rule, generation/Koide selection,
-  Born-law derivation, or production-dynamics derivation flag is set.
+For example,
+
+```text
+(4, 1)       -> (4/5, 1/5),
+(6, 3, 1)    -> (3/5, 3/10, 1/10).
+```
+
+## 2. Row-stochastic corollary
+
+Let `R` and `C` be nonempty finite row and column carriers. For every `r in R`,
+let `w_(r,c) in Q_{>=0}` have positive row total
+`W_r = sum_c w_(r,c)`. Applying the theorem separately to each row gives
+
+```text
+P_(r,c) = w_(r,c)/W_r >= 0,          sum_{c in C} P_(r,c) = 1.
+```
+
+Thus `P` is row-stochastic in the exact algebraic sense. Every row uses the
+same explicitly supplied column carrier; a missing or extra column is rejected.
+For the two-row example
+
+```text
+A: (3, 1) -> (3/4, 1/4),
+B: (1, 1) -> (1/2, 1/2).
+```
+
+both row sums are exactly one. Calling this array row-stochastic adds no claim
+that it is a physical transition kernel.
+
+## 3. Supplied-edge path-product theorem
+
+Let `E` be a finite collection of directed edges with unique edge identifiers,
+explicit source and target vertices, and exact nonnegative rational weights
+`a_e`. A path is an ordered word of edge identifiers with a supplied start
+vertex. It is valid only when each edge exists and its source is the current
+vertex. Define
+
+```text
+A(empty path at v) = 1,
+A(e_1 ... e_n)     = product_{k=1}^n a_(e_k).
+```
+
+Repeated traversal is counted once per occurrence; edge definitions themselves
+must be unique. If `P` ends where `Q` starts, concatenation is defined and
+
+```text
+A(P Q) = A(P) A(Q).
+```
+
+This follows from associativity of finite rational multiplication: the factors
+on the left are exactly the factors of `P` followed by those of `Q`. Missing
+edges, duplicate edge definitions, inexact or negative edge weights, broken
+incidence, and noncomposable concatenations are rejected.
+
+For edges of weights `2` from `s` to `m`, `3` from `m` to `t`, and `1`
+directly from `s` to `t`, the two path products are `6` and `1`. Normalizing
+that explicitly supplied two-path carrier gives `(6/7, 1/7)`. A loop of weight
+`2/3` traversed twice has weight `4/9`, not `2/3`; this fixes duplicate-traversal
+semantics.
+
+## 4. Exact scope boundary
+
+The theorem proves only finite rational normalization, rowwise stochasticity,
+and multiplicative composition under the definitions above. It does not derive
+or select
+
+- a carrier of paths, characters, channels, rows, columns, vertices, or edges;
+- any local weight, measure, prior, character coefficient, channel rule, path
+  rule, or probability law;
+- a physical selector, Born rule, source law, production kernel, Hamiltonian,
+  instrument, clock, rate, or arrow;
+- a directional parameter, Wilson surface, generation/Koide dial, or any
+  physical interpretation of a normalized packet; or
+- any of those data from Record, the minimal axioms, or the approved
+  primitives.
+
+In particular, normalization cannot choose its own inputs. A later physical
+claim must separately derive or explicitly premise the relevant carrier,
+weights, interpretation, and selector. None is a dependency of this formal
+theorem because none is used in its proof.
+
+The theorem has no audit-census, ledger, queue, export, or row-count premise.
+Those mutable repository inventories are not mathematical evidence and are not
+part of this certificate.
+
+## 5. Falsification and reproducibility
+
+The runner uses only standard-library exact `Fraction` arithmetic. Its normal
+mode checks the theorem, both displayed normalizations, multiple stochastic
+rows, empty-path identity, repeated traversal, path concatenation, and the
+`6:1` path normalization. Its independent mode reconstructs normalization via
+common-denominator integer counts and path products via separate numerator and
+denominator products.
+
+Hostile mode verifies rejection of empty and zero-total carriers, negative and
+inexact weights, duplicate labels and edge definitions, mismatched row
+carriers, missing and incidence-broken edges, noncomposable paths, wrong-total
+normalization, additive path weights, dropped repeated traversals, and an
+unsupported physical-selection request. Individually selectable intentional
+failure fixtures promote each hostile mutation to a claimed success; every
+individual fixture and their aggregate must exit nonzero.
 
 Run:
 
-```text
+```bash
 python3 scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py
+python3 scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py --independent
+python3 scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py --hostile
+python3 scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py --mode intentional-failure --fixture all
 ```
+
+The cached log records the default normal run.
+
+## 6. Consumer boundary
+
+The fresh citation graph has no direct claim consumer of this note. Repository
+exports that merely record its path or runner are inventory snapshots, not
+scientific consumers. Any future consumer may use only the three exact
+algebraic conclusions above and must keep every physical input and
+interpretation explicit.

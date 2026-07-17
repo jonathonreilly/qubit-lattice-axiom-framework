@@ -24,6 +24,12 @@ EXACT TIER (machine-precision identities on the stated finite objects):
       same-order TADPOLE (fermion-line seagull contracted with the gauge
       line) has the EXACT closed form (1 - xi)(C_s - C_t), whose xi-slope
       -(C_s - C_t) cancels the rainbow's small-probe slope.
+      All xi-statements are exact properties of the DECLARED gauge-line
+      family D_w(xi) (isotropic projector numerator over the anisotropic
+      scalar K_w = sum_mu w_mu khat_mu^2): equal to the V1 covariant-gauge
+      closed inverse at w = 1, NOT the inverse of an anisotropic Wilson
+      tensor for w != 1 (khat^T D_w(0) != 0). No anisotropic-inverse
+      derivation is claimed.
 
 WITNESS TIER (labeled finite-grid one-loop witnesses; no continuum claim):
   V4  As the probe momentum delta -> 0 the rainbow xi-slope approaches the
@@ -35,8 +41,10 @@ WITNESS TIER (labeled finite-grid one-loop witnesses; no continuum claim):
       log/const fit window (the log-coefficient shift is a small
       finite-delta transient, bounded by 20% of the constant shift), and
       the per-delta xi-slopes approach the pure gauge-line constant of V4
-      MONOTONICALLY as delta -> 0 -- equivalently the TOTAL xi-slope
-      (rainbow + tadpole) shrinks toward zero in the small-probe limit.
+      MONOTONICALLY through the sampled probe ladder -- and the TOTAL
+      xi-slope (rainbow + tadpole) decreases strictly through the four
+      sampled probes. Finite samples certify a TREND, not a delta -> 0
+      physical limit; the log/const fit split is a diagnostic only.
   V6  Drag-direction convention table, BOTH sectors in ONE Euclidean
       functional-integral convention (see note for the sign derivation):
         fermion two-point: S^-1 = S0^-1 - Sigma, Sigma the standard
@@ -48,8 +56,11 @@ WITNESS TIER (labeled finite-grid one-loop witnesses; no continuum claim):
       Witnesses: gauge sector faster => fermion velocity response POSITIVE
       (dragged toward the gauge speed); fermion sector faster => induced
       gauge transverse anisotropy POSITIVE (gauge dragged toward the fermion
-      speed). Both drag coefficients positive => the exchange-matrix
-      difference mode contracts (2x2 eigenstructure checked exactly).
+      speed). These are finite-grid STATIC self-energy responses at fixed
+      probes (no shell derivative, counterterm split, or log-coefficient
+      extraction): direction PROXIES, not RG beta coefficients. In the 2x2
+      exchange algebra built from the proxies the difference mode contracts
+      (eigenstructure checked exactly).
   V7  Finite-grid robustness proxies: A_F sign stable N=10 -> N=12; fermion
       drag sign stable and monotone under halving the deformation.
 
@@ -289,7 +300,13 @@ def sigma_kin_aniso(Ng, xi, dlt, eps=0.10, chunk=40000):
     second-order connected insertion Sigma; the vertices are coded as
     gamma*cos WITHOUT the explicit i, and the (i)(i) = -1 of the i-full
     vertices is carried by the overall minus (see note, sign chain).  The
-    same-order fermion-line seagull TADPOLE is sigma_tad_split below."""
+    same-order fermion-line seagull TADPOLE is sigma_tad_split below.
+    Gauge line: the DECLARED family
+    D_w(xi)_munu = (delta_munu - (1 - xi) khat_mu khat_nu / K_w) / K_w,
+    K_w = sum_mu w_mu khat_mu^2 -- isotropic projector numerator over the
+    anisotropic scalar denominator. At w = 1 this is the V1 covariant-gauge
+    closed inverse; for w != 1 it is NOT the inverse of an anisotropic
+    Wilson tensor (khat^T D_w(0) != 0), and no such derivation is claimed."""
     ax = make_bz_grid(Ng)
     w = np.array([1 - eps / 2, 1 + eps / 2, 1 + eps / 2, 1 + eps / 2])
     out = {}
@@ -461,15 +478,16 @@ def part_3() -> dict:
 # V4 -- delta->0 pure gauge-line limit and IR-finite split
 # ---------------------------------------------------------------------------
 def part_4() -> dict:
-    hr("V4: delta->0 gauge-line limit; IR-finite (C_s - C_t) split")
+    hr("V4: small-probe gauge-line constant; IR-finite (C_s - C_t) split")
     Ng = 10
     Cs10, Ct10 = C_split_detail(Ng)
     cs = Cs10 - Ct10
     sp_small = slope_pred(Ng, 0.05)
     ok = abs(sp_small - cs) < 5e-3 * max(abs(cs), 1e-6)
     check(
-        "delta->0: RAINBOW xi-slope -> +(C_s - C_t), a PURE GAUGE-LINE "
-        "integral (no fermion line; delta=0.05, N=10)",
+        "small probe delta=0.05: RAINBOW xi-slope within rel 5e-3 of "
+        "+(C_s - C_t), a PURE GAUGE-LINE integral (no fermion line; N=10; "
+        "finite-probe witness, no delta -> 0 limit claim)",
         ok,
         f"slope(0.05)={sp_small:+.6f} vs +(C_s-C_t)={cs:+.6f} "
         f"(rel bound 5e-3 {'holds' if ok else 'VIOLATED'})",
@@ -512,7 +530,8 @@ def part_4() -> dict:
 # V5 -- gauge invariance of the log coefficient
 # ---------------------------------------------------------------------------
 def part_5(p4: dict) -> dict:
-    hr("V5: xi-shift constant-dominated; TOTAL xi-slope -> 0 as delta -> 0")
+    hr("V5: xi-shift constant-dominated (fit diagnostic); TOTAL xi-slope "
+       "decreasing through the probe ladder")
     Ng = 10
     dls = [0.5, 0.35, 0.25, 0.18]
     X = np.array([math.log(1 / d) for d in dls])
@@ -534,7 +553,8 @@ def part_5(p4: dict) -> dict:
         "xi-shift of the RAINBOW response CONSTANT-DOMINATED over the fit "
         "window: log-coefficient shift |A(1)-A(0)| < 20% of the constant "
         "shift |B(1)-B(0)| (delta in [0.18, 0.5]; A_F itself is "
-        "subdominant to B_F at both xi)",
+        "subdominant to B_F at both xi; the (A, B) split is a "
+        "FIT-PIVOT-DEPENDENT diagnostic, not an extracted RG coefficient)",
         ok,
         f"A(0)={A0:+.5f} A(1)={A1:+.5f} B(1)-B(0)={B1 - B0:+.5f} "
         f"ratio={abs(A1 - A0) / max(abs(B1 - B0), 1e-30):.2f}",
@@ -547,8 +567,9 @@ def part_5(p4: dict) -> dict:
     ok = mono and devs[0] < 0.30 * abs(cs)
     check(
         "per-delta RAINBOW xi-slope a_rb(1)-a_rb(0) approaches +(C_s - C_t) "
-        "MONOTONICALLY as delta -> 0 (deviations strictly shrinking; worst "
-        "< 30%; V4 witnesses the delta=0.05 proximity at rel 5e-3)",
+        "MONOTONICALLY through the sampled probe ladder (deviations "
+        "strictly shrinking; worst < 30%; V4 witnesses delta=0.05 at rel "
+        "5e-3; finite samples, no delta -> 0 limit claim)",
         ok,
         "slopes " + ", ".join(f"{s:+.6f}" for s in slopes) + f" vs {cs:+.6f}",
     )
@@ -561,9 +582,9 @@ def part_5(p4: dict) -> dict:
     )
     ok = mono_t and abs(tot_slopes[-1]) < 0.10 * abs(cs)
     check(
-        "TOTAL xi-slope (rainbow + tadpole) SHRINKS toward zero as delta "
-        "-> 0 (strictly; final < 10% of C_s - C_t): the physical drag "
-        "loses its xi-dependence in the small-probe limit",
+        "TOTAL xi-slope (rainbow + tadpole) decreases STRICTLY through the "
+        "four sampled probes (final < 10% of C_s - C_t): a xi-robustness "
+        "TREND witness for the declared family (no delta -> 0 limit claim)",
         ok,
         "total slopes " + ", ".join(f"{s:+.6f}" for s in tot_slopes)
         + f"; scale C_s-C_t = {cs:+.6f}",
@@ -625,7 +646,25 @@ def ward(Pi, qv):
 # ---------------------------------------------------------------------------
 def part_6() -> dict:
     hr("V6: drag directions, BOTH sectors in ONE functional-integral convention")
-    C_F = 3.0 / 4.0
+    # Discharge C_F from the SU(2) fundamental generator algebra (no import):
+    # T^a = sigma^a/2, sum_a T^a T^a = C_F * I.
+    paulis = [
+        np.array([[0, 1], [1, 0]], dtype=complex),
+        np.array([[0, -1j], [1j, 0]], dtype=complex),
+        np.array([[1, 0], [0, -1]], dtype=complex),
+    ]
+    casimir = sum((p / 2) @ (p / 2) for p in paulis)
+    C_F = float(np.real(casimir[0, 0]))
+    ok = (
+        np.max(np.abs(casimir - C_F * np.eye(2))) < 1e-15
+        and abs(C_F - 3.0 / 4.0) < 1e-15
+    )
+    check(
+        "C_F discharged from the SU(2) fundamental generator algebra: "
+        "sum_a T^a T^a = (3/4) I exactly (no hard-coded Casimir)",
+        ok,
+        "casimir sum is C_F*I with C_F = 3/4 (exact rational check)",
+    )
 
     print("  Convention (single Euclidean bookkeeping; sign chain in the "
           "note):")
@@ -635,22 +674,24 @@ def part_6() -> dict:
           "-tr log Dslash); c_mu -> w_mu + g^2 Pi_T/qhat^2")
 
     # Fermion response to a FASTER gauge sector: weights w = (1-e/2, 1+e/2,..)
-    # give gauge speed sqrt(w_s/w_t) => offset dv_B = +eps/2.
+    # give gauge speed sqrt(w_s/w_t) => EXACT offset dv_B = sqrt(w_s/w_t) - 1
+    # (the eps/2 linearization is NOT used; for eps=0.10 the exact offset is
+    # sqrt(1.05/0.95) - 1, about 2.6% larger than eps/2).
     eps = 0.10
     sig_rb = sigma_kin_aniso(10, 0.0, 0.30, eps=eps)
     sig_tad = sigma_tad_split(10, 0.0, eps=eps)
     sig = sig_rb + sig_tad
-    dvB_off = eps / 2
+    dvB_off = float(np.sqrt((1 + eps / 2) / (1 - eps / 2)) - 1.0)
     dvF_resp = -C_F * sig
     ok = dvF_resp > 0
     check(
-        "gauge sector FASTER (dv_B=+0.05) => fermion velocity response "
-        "POSITIVE (rainbow + tadpole TOTAL): fermion dragged TOWARD the "
-        "gauge speed",
+        f"gauge sector FASTER (exact dv_B={dvB_off:+.5f}) => fermion "
+        "velocity STATIC response POSITIVE (rainbow + tadpole TOTAL): "
+        "fermion dragged TOWARD the gauge speed",
         ok,
         f"dv_F response = -C_F*(out_s-out_t)_total = {dvF_resp:+.5f} per "
-        f"g^2 (rainbow {sig_rb:+.5f} + tadpole {sig_tad:+.5f}; C_F=3/4; "
-        f"N=10, delta=0.30)",
+        f"g^2 (rainbow {sig_rb:+.5f} + tadpole {sig_tad:+.5f}; C_F "
+        f"discharged above; N=10, delta=0.30)",
     )
 
     # Gauge response to a FASTER fermion sector: v = (1-e/2, 1+e/2, ...)
@@ -676,8 +717,9 @@ def part_6() -> dict:
     dvB_resp = ind / 2
     ok = dvB_resp > 0
     check(
-        "fermion sector FASTER (dv_F=+0.105) => induced gauge transverse "
-        "anisotropy POSITIVE: gauge dragged TOWARD the fermion speed",
+        "fermion sector FASTER (dv_F=+0.10526) => induced gauge transverse "
+        "anisotropy STATIC response POSITIVE: gauge dragged TOWARD the "
+        "fermion speed",
         ok,
         f"dv_B response = (piT_s - piT_t)/2 = {dvB_resp:+.5f} per g^2 "
         f"(T_F=1/2 inside Pi; N=12, probe q=0.3, spatial polarization both)",
@@ -688,8 +730,9 @@ def part_6() -> dict:
     ok = a_proxy > 0 and b_proxy > 0
     check(
         "exchange-matrix coefficients: a-proxy > 0 AND b-proxy > 0 "
-        "(finite-grid witnesses for the named open input of the "
-        "exchange-matrix support note)",
+        "(finite-grid STATIC-RESPONSE sign witnesses for the named open "
+        "input of the exchange-matrix support note; NOT RG beta-function "
+        "coefficients -- no shell derivative or log-coefficient extraction)",
         ok,
         f"a-proxy={a_proxy:+.4f} b-proxy={b_proxy:+.4f} per g^2 "
         "(magnitudes are labeled finite-grid scheme proxies; the signs are "

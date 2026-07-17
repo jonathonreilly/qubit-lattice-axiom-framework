@@ -1,0 +1,28 @@
+loop: born-effect-menu-horn-20260717
+mode: single-block interactive (user-directed: pick critical TOE item, work to solution)
+goal: see GOAL.md — effect-menu horn forcing + product-menu boundary on the Born wall
+target_status: best-honest-status (bounded_theorem landing; audit later)
+branch: physics-loop/born-effect-menu-horn-block01-20260717
+base: origin/main @ 3ad141be24
+block: 01
+cycle: 1
+active_route: ROUTE_PORTFOLIO rank 1
+hard_residual_attacked: >
+  Born-weights honest wall W3; the landed frontier's Gleason bridge input and
+  H4 entangled-menu clause, sharpened via the menu-grade dial.
+files_touched:
+  - docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md
+  - scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py (worker drafting)
+  - logs/runner-cache/born_form_effect_menu_sitewise_forcing_2026_07_17.txt (pending)
+  - .claude/science/physics-loops/born-effect-menu-horn-20260717/* (loop pack)
+open_imports: none in this block's results; Gleason 1957 remains the landed projective-horn input (untouched)
+no_go_routes: see NO_GO_LEDGER.md
+trace: see TRACE_GATE.md (upstream_support; negative slice = negative_route_pruning)
+review: pass (round 1 five-lens panel; all substantive findings fixed; see REVIEW_HISTORY.md)
+pr: pending
+next_exact_action: >
+  Commit staged block; push; open PR; hand off to owner-operated
+  review/audit lanes. Post-landing: parked follow-ons in
+  OPPORTUNITY_QUEUE.md (premise thinning; additivity boundary).
+stop_condition: single block lands as one PR (or PR_BACKLOG on delivery failure)
+checkpoint: 2026-07-17 block complete — runner 54/0 + mutations + panel pass; landing

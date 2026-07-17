@@ -1,6 +1,6 @@
 {
- "edge_count": 14464,
- "node_count": 3962,
+ "edge_count": 14469,
+ "node_count": 3963,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1567,8 +1567,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "be70ed3a0072",
-   "out_degree": 299
+   "deps_hash": "1703eb28f7c7",
+   "out_degree": 301
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -4831,8 +4831,8 @@
    "out_degree": 2
   },
   "free_dirac_poincare_representation_bounded_note_2026-05-30": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "b9ec29c7fff9",
+   "out_degree": 1
   },
   "free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08": {
    "deps_hash": "df81d1e90c93",
@@ -4861,6 +4861,10 @@
   "free_sector_spin_statistics_level1_mechanism_and_reconstruction_reduction_bounded_note_2026-05-30": {
    "deps_hash": "d1d61e252dcd",
    "out_degree": 6
+  },
+  "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17": {
+   "deps_hash": "02cde96f4a48",
+   "out_degree": 2
   },
   "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12": {
    "deps_hash": "d1da2f9855ac",

@@ -29,11 +29,11 @@ class StackPr:
 
 
 STACK = (
-    StackPr(2850, "directed certificate examples", "formal theorem proposal", "SUMMARY: PASS=64 FAIL=0", "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md", "scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py", "logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt"),
+    StackPr(2850, "directed certificate examples", "proposed_retained exact structural theorem", "SUMMARY: PASS=64 FAIL=0", "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md", "scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py", "logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt"),
     StackPr(2853, "kernel-selection firewall", "no-go", "SUMMARY: PASS=52 FAIL=0", "docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md", "scripts/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.py", "logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt"),
     StackPr(2856, "supplied kernel selection rule", "exact-support", "SUMMARY: PASS=39 FAIL=0", "docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md", "scripts/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.py", "logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt"),
     StackPr(2858, "target-vector firewall", "no-go", "SUMMARY: PASS=36 FAIL=0", "docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md", "scripts/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.py", "logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt"),
-    StackPr(2861, "admitted sample target-vector", "exact-support", "SUMMARY: PASS=30 FAIL=0", "docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md", "scripts/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.py", "logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt"),
+    StackPr(2861, "supplied observational sample target-vector", "exact-support", "SUMMARY: PASS=30 FAIL=0", "docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md", "scripts/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.py", "logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt"),
     StackPr(2864, "dynamics authority stack map", "exact-support", "SUMMARY: PASS=53 FAIL=0", "docs/POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP_2026-06-06.md", "scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py", "logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt"),
     StackPr(2868, "dynamics campaign closeout index", "exact-support", "SUMMARY: PASS=53 FAIL=0", "docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md", "scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py", "logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt"),
     StackPr(2871, "retained/unbounded dynamics gate", "exact-support", "SUMMARY: PASS=54 FAIL=0", "docs/POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md", "scripts/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.py", "logs/runner-cache/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.txt"),
@@ -104,8 +104,8 @@ def index_checks() -> None:
         report(f"index contains status for #{item.number}", item.status in text)
     for pr in (2871, 2874, 2875):
         report(f"family-lift extension PR #{pr} is present", f"/pull/{pr}" in text)
-    report("index states pre-record law carries probabilities", "pre-record law carries probabilities" in text)
-    report("index states post-record records carry realized information", "post-record records carry realized information" in text)
+    report("index assigns probabilities only to stipulated laws", "probabilities belong to the" in text and "stipulated laws" in text)
+    report("index keeps physical record meaning behind separate bridges", "only under their separately stated bridges" in text)
     report("index states no audit verdicts are applied", "does not apply audit verdicts" in text)
 
 
@@ -151,17 +151,17 @@ def source_packet_checks() -> None:
 def status_shape_checks() -> None:
     section("Status shape checks")
     statuses = {item.status for item in STACK}
-    report("stack has a formal theorem proposal", "formal theorem proposal" in statuses)
+    report("stack has a proposed-retained exact structural theorem", "proposed_retained exact structural theorem" in statuses)
     report("stack has exact-support entries", "exact-support" in statuses)
     report("stack has bounded-support entries", "bounded-support" in statuses)
     report("stack has no-go entries", "no-go" in statuses)
     counts = Counter(item.status for item in STACK)
     report(
-        "source-side label counts are 1 formal, 5 exact, 1 bounded, 3 no-go",
+        "source-side label counts are 1 proposed-retained exact structural, 5 exact, 1 bounded, 3 no-go",
         counts
         == Counter(
             {
-                "formal theorem proposal": 1,
+                "proposed_retained exact structural theorem": 1,
                 "exact-support": 5,
                 "bounded-support": 1,
                 "no-go": 3,
@@ -185,8 +185,10 @@ def export_packet() -> None:
     payload = {
         "claim_id": "post_record_dynamics_family_lift_closeout_index_2026-06-06",
         "stack_count": len(STACK),
-        "formal_theorem_proposal_count": sum(
-            1 for item in STACK if item.status == "formal theorem proposal"
+        "proposed_retained_exact_structural_theorem_count": sum(
+            1
+            for item in STACK
+            if item.status == "proposed_retained exact structural theorem"
         ),
         "exact_support_count": sum(1 for item in STACK if item.status == "exact-support"),
         "bounded_support_count": sum(1 for item in STACK if item.status == "bounded-support"),
@@ -232,7 +234,7 @@ def main() -> int:
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
     print("POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX=TRUE")
     print("EXTENDED_STACK_PRS=10")
-    print("EXTENDED_STACK_FORMAL_THEOREM_PROPOSALS=1")
+    print("EXTENDED_STACK_PROPOSED_RETAINED_EXACT_STRUCTURAL_THEOREMS=1")
     print("EXTENDED_STACK_EXACT_SUPPORT=5")
     print("EXTENDED_STACK_BOUNDED_SUPPORT=1")
     print("EXTENDED_STACK_NO_GO=3")

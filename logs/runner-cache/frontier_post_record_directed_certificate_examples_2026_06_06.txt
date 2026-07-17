@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
-runner_sha256: 64a167b145224bfc817b1cb596ee4f8631e8397dde4f94cd42c0457355c9c40b
+runner_sha256: 9d57b383188b264571aba4ee13645952b036b875fded413436e00a7fe1ef364d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -17,7 +17,7 @@ PASS source contains: signed-transition drift: -1/2 forward, 1/2 reversed
 PASS source contains: marker lag: 7/6 forward, 11/6 reversed
 PASS source contains: low-to-high boundary event: 1/2 forward, 1/6 reversed
 PASS source contains: a physical orientation or arrow
-PASS source contains: Any physical use requires separate retained-grade bridge theorems.
+PASS source contains: Any physical claim using this theorem requires separately supported bridge inputs
 PASS source excludes overclaim: Record derives the orientation
 PASS source excludes overclaim: Record supplies the probability law
 PASS source excludes overclaim: the examples select a physical arrow

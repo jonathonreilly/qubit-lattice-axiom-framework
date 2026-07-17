@@ -13,30 +13,30 @@ bare_retained_allowed=false.
 
 ## Result
 
-This branch maps the current post-record dynamics stack into formal,
-supplied, admitted, and blocked source-side classes. Audit authority remains
-with the independent audit lane.
+This note maps the current post-record dynamics stack into formal, supplied,
+observational, and blocked source-side classes. Audit authority remains with
+the independent audit lane.
 
 | Layer | Status | Authority class |
 |---|---|---|
-| Directed certificate examples | formal theorem proposal | finite rational law/reversal identities; physical bridges open |
+| Directed certificate examples | proposed_retained exact structural theorem | finite rational law/reversal identities; physical bridges open |
 | Kernel-selection firewall | no-go | blocked Record-derived kernel selection |
 | Supplied kernel selection rule | exact-support | supplied candidate family and rule |
 | Target-vector firewall | no-go | blocked Record-derived targets/weights |
-| Admitted sample vector | exact-support | admitted observation sample |
+| Supplied observational sample vector | exact-support | observational comparator with zero premise weight |
 
 ## Cited authority/cache packet
 
 The stack map is only a synthesis over the following one-hop authorities and
 their cached runner outputs:
 
-| Layer | Authority note | Cached runner | Branch-local status |
+| Layer | Authority note | Cached runner | Source-side label |
 |---|---|---|---|
-| Directed certificate examples | [`docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md`](POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt) | formal theorem proposal |
+| Directed certificate examples | [`docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md`](POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt) | proposed_retained exact structural theorem |
 | Kernel-selection firewall | [`docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md`](POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt) | no-go |
 | Supplied kernel selection rule | [`docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md`](POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt) | exact-support |
 | Target-vector firewall | [`docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md`](POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt) | no-go |
-| Admitted sample vector | [`docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md`](POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt) | exact-support |
+| Supplied observational sample vector | [`docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md`](POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md) | [`logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt) | exact-support |
 
 ## Meaning
 
@@ -48,8 +48,8 @@ blocked, or observational, keeping dynamics authority explicit:
 - physical orientation, clock, law, and kernel bridges remain separate open
   inputs for any physical use of the formal theorem;
 - candidate families and selection rules are supplied;
-- target vectors and weights are supplied unless explicitly admitted as
-  observation inputs;
+- target vectors and weights remain supplied inputs; observational samples
+  are explicit comparators and carry zero premise weight;
 - post-record samples are realized information, not probability laws;
 - stable location is not selected dial.
 
@@ -61,9 +61,9 @@ trace_class: upstream_support
 reachability_to_target: supports
 conditional_surface_status: "current dynamics stack is mapped into formal, supplied, observational, and blocked source-side classes"
 hypothetical_axiom_status: null
-admitted_observation_status: "sample-vector layer remains admitted observation data"
+import_class: "observational comparator; zero premise weight"
 proposal_allowed: false
-proposal_allowed_reason: "This branch is a read-only synthesis map and does not promote or apply verdicts."
+proposal_allowed_reason: "This read-only synthesis map does not promote or apply verdicts."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```

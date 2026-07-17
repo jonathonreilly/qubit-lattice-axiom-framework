@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py
-runner_sha256: 4a879714e2fb89a1008db3a9d910e79af93c06b792883f213a0b9cbbc5771954
+runner_sha256: fcb04609c8cbb5a79cac021ebed55d58f57bd011b3442bf53ec08e7b1c2aba76
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -44,8 +44,8 @@ PASS index contains status for #2875
 PASS family-lift extension PR #2871 is present
 PASS family-lift extension PR #2874 is present
 PASS family-lift extension PR #2875 is present
-PASS index states pre-record law carries probabilities
-PASS index states post-record records carry realized information
+PASS index assigns probabilities only to stipulated laws
+PASS index keeps physical record meaning behind separate bridges
 PASS index states no audit verdicts are applied
 
 ------------------------------------------------------------------------------
@@ -81,8 +81,8 @@ PASS PR #2850 source note names primary runner :: scripts/frontier_post_record_d
 PASS PR #2850 runner source exists :: scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
 PASS PR #2850 runner cache exists :: logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt
 PASS PR #2850 cache runner matches source :: scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
-PASS PR #2850 cache SHA is fresh :: 64a167b145224bfc817b1cb596ee4f8631e8397dde4f94cd42c0457355c9c40b
-PASS PR #2850 cache status ok :: {'runner': 'scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py', 'runner_sha256': '64a167b145224bfc817b1cb596ee4f8631e8397dde4f94cd42c0457355c9c40b', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.08', 'status': 'ok'}
+PASS PR #2850 cache SHA is fresh :: 9d57b383188b264571aba4ee13645952b036b875fded413436e00a7fe1ef364d
+PASS PR #2850 cache status ok :: {'runner': 'scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py', 'runner_sha256': '9d57b383188b264571aba4ee13645952b036b875fded413436e00a7fe1ef364d', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.05', 'status': 'ok'}
 PASS PR #2853 source note exists :: docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md
 PASS PR #2853 source note names declared surface :: no-go
 PASS PR #2853 source note names primary runner :: scripts/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.py
@@ -121,8 +121,8 @@ PASS PR #2864 source note names primary runner :: scripts/frontier_post_record_d
 PASS PR #2864 runner source exists :: scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py
 PASS PR #2864 runner cache exists :: logs/runner-cache/frontier_post_record_dynamics_authority_stack_map_2026_06_06.txt
 PASS PR #2864 cache runner matches source :: scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py
-PASS PR #2864 cache SHA is fresh :: 45459e1a89f436370b012c21f992514f3645d84b98c2c77e9554450eaeb45dc7
-PASS PR #2864 cache status ok :: {'runner': 'scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py', 'runner_sha256': '45459e1a89f436370b012c21f992514f3645d84b98c2c77e9554450eaeb45dc7', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.04', 'status': 'ok'}
+PASS PR #2864 cache SHA is fresh :: a9d5a1a8e8ae67ae6e7bfb3ee5a7a9224b6f169a646487bfbfc067ba2633cfa8
+PASS PR #2864 cache status ok :: {'runner': 'scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py', 'runner_sha256': 'a9d5a1a8e8ae67ae6e7bfb3ee5a7a9224b6f169a646487bfbfc067ba2633cfa8', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.05', 'status': 'ok'}
 PASS PR #2868 source note exists :: docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md
 PASS PR #2868 source note names declared surface :: exact-support
 PASS PR #2868 source note names primary runner :: scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
@@ -159,11 +159,11 @@ PASS PR #2875 cache status ok :: {'runner': 'scripts/frontier_post_record_suppli
 ------------------------------------------------------------------------------
 Status shape checks
 ------------------------------------------------------------------------------
-PASS stack has a formal theorem proposal
+PASS stack has a proposed-retained exact structural theorem
 PASS stack has exact-support entries
 PASS stack has bounded-support entries
 PASS stack has no-go entries
-PASS source-side label counts are 1 formal, 5 exact, 1 bounded, 3 no-go
+PASS source-side label counts are 1 proposed-retained exact structural, 5 exact, 1 bounded, 3 no-go
 PASS source-side stack still has ten entries
 
 ------------------------------------------------------------------------------
@@ -189,7 +189,7 @@ PASS source packet round-trips with exact audit-independent stack semantics
 SUMMARY: PASS=155 FAIL=0
 POST_RECORD_DYNAMICS_FAMILY_LIFT_CLOSEOUT_INDEX=TRUE
 EXTENDED_STACK_PRS=10
-EXTENDED_STACK_FORMAL_THEOREM_PROPOSALS=1
+EXTENDED_STACK_PROPOSED_RETAINED_EXACT_STRUCTURAL_THEOREMS=1
 EXTENDED_STACK_EXACT_SUPPORT=5
 EXTENDED_STACK_BOUNDED_SUPPORT=1
 EXTENDED_STACK_NO_GO=3

@@ -15,29 +15,29 @@ bare_retained_allowed=false.
 
 ## Result
 
-This branch indexes the extended post-record dynamics stack after the
-retained/unbounded and family-lift campaign push.
+This index records the extended post-record dynamics and family-lift source
+stack.
 
 | PR | Status | Stack layer |
 |---:|---|---|
-| [#2850](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2850) | formal theorem proposal | directed certificate examples |
+| [#2850](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2850) | proposed_retained exact structural theorem | directed certificate examples |
 | [#2853](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2853) | no-go | directed certificate kernel-selection firewall |
 | [#2856](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2856) | exact-support | supplied kernel selection rule |
 | [#2858](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2858) | no-go | selection-rule target-vector firewall |
-| [#2861](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2861) | exact-support | admitted sample target-vector |
+| [#2861](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2861) | exact-support | supplied observational sample target-vector |
 | [#2864](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2864) | exact-support | dynamics authority stack map |
 | [#2868](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2868) | exact-support | dynamics campaign closeout index |
 | [#2871](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2871) | exact-support | retained/unbounded dynamics gate |
 | [#2874](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2874) | no-go | finite-to-unbounded family-lift no-go |
 | [#2875](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2875) | bounded-support | supplied family-lift certificate interface |
 
-The extended stack has one formal theorem proposal, five `exact-support`
-layers, one `bounded-support` layer, and three `no-go` layers. These are
-source-side inventory labels, not audit verdicts.
+The extended stack has one `proposed_retained exact structural theorem`, five
+`exact-support` layers, one `bounded-support` layer, and three `no-go` layers.
+These are source-side inventory labels, not audit verdicts.
 
 ## Meaning
 
-The campaign now has both sides of the bounded/unbounded story:
+The index records both sides of the bounded/unbounded story:
 
 - the directed-example row proves only finite rational law/reversal identities;
   a physical orientation, clock, kernel, or Record bridge remains open;
@@ -46,8 +46,10 @@ The campaign now has both sides of the bounded/unbounded story:
 - finite certificates alone cannot determine an unbounded law;
 - supplied family-lift rules can be made mechanically checkable through a
   projective finite ladder interface;
-- pre-record law carries probabilities;
-- post-record records carry realized information, counts, and markers.
+- in the separate supplied-input layers, probabilities belong to the
+  stipulated laws;
+- physical post-record records carry realized information, counts, and markers
+  only under their separately stated bridges.
 
 This index does not apply audit verdicts. It is a source-side handoff map for
 review.
@@ -72,9 +74,9 @@ trace_class: upstream_support
 reachability_to_target: supports
 conditional_surface_status: "extended dynamics plus family-lift stack is indexed for handoff"
 hypothetical_axiom_status: "family-lift rule may be supplied or derived elsewhere and still needs audit"
-admitted_observation_status: "post-record observations remain realized records, not probability laws"
+import_class: "observational comparator; zero premise weight"
 proposal_allowed: false
-proposal_allowed_reason: "This branch is a closeout index and does not apply verdicts, promote claims, or select a dial."
+proposal_allowed_reason: "This closeout index does not apply verdicts, promote claims, or select a dial."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -90,8 +92,9 @@ The runner verifies:
 - the extended index consumes the repaired directed-certificate
   `SUMMARY: PASS=64 FAIL=0`, repaired stack-map `SUMMARY: PASS=53 FAIL=0`,
   and repaired campaign-closeout `SUMMARY: PASS=46 FAIL=0` certificates;
-- the stack has one formal theorem proposal, five `exact-support` entries,
-  one `bounded-support` entry, and three `no-go` entries;
+- the stack has one `proposed_retained exact structural theorem`, five
+  `exact-support` entries, one `bounded-support` entry, and three `no-go`
+  entries;
 - the extended family-lift trio #2871/#2874/#2875 is present;
 - repo-surface scans find no audit verdict, audit-data write, retained
   promotion, unsupplied kernel selection, Record-derived rule/target/weight,

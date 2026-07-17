@@ -2,6 +2,8 @@
 
 **Date:** 2026-06-06
 **Claim type:** positive_theorem
+**Status:** proposed_retained exact structural theorem over explicitly defined
+finite probability spaces; physical bridges remain open.
 **Status authority:** independent audit lane only. This source note proposes a
 narrow formal theorem and does not set or predict an audit verdict.
 **Primary runner:**
@@ -144,9 +146,9 @@ This theorem does **not** derive or identify:
 - a map from the example words or letters to physical records;
 - a selected dial, target vector, observable, or unbounded dynamics law.
 
-Any physical use requires separate retained-grade bridge theorems. The
-current repository census of arrow/dynamics rows is non-load-bearing metadata
-and is deliberately absent from this theorem and its runner.
+Any physical claim using this theorem requires separately supported bridge
+inputs; this theorem supplies none. No repository-row census enters the
+theorem or runner.
 
 ## Verification
 
@@ -161,8 +163,9 @@ python3 scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py
 
 Normal mode reconstructs the theorem and all three examples. Independent mode
 re-enters the fixtures through a separate direct-summation implementation.
-Hostile mode rejects malformed probability laws, wrong certificate values,
-scope mismatches, and missing orientation labels. Intentional-failure mode
+Hostile mode rejects malformed or floating-point probability laws,
+floating-point or wrong certificate values, scope mismatches, and missing
+orientation labels. Intentional-failure mode
 offers five selectable mutations; the aggregate and every individual mutation
 must exit nonzero.
 

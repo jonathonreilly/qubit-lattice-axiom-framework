@@ -60,9 +60,11 @@ def reverse_law(law: Law) -> Law:
 
 
 def valid_law(law: Law) -> bool:
-    return bool(law) and all(mass >= 0 for mass in law.values()) and sum(
-        law.values(), Fraction(0)
-    ) == 1
+    return (
+        bool(law)
+        and all(isinstance(mass, Fraction) and mass >= 0 for mass in law.values())
+        and sum(law.values(), Fraction(0)) == 1
+    )
 
 
 def expectation(law: Law, statistic: Statistic) -> Fraction:
@@ -160,6 +162,8 @@ def verify_certificate(
 ) -> tuple[str, Fraction | None]:
     if not valid_law(law):
         return "invalid_law", None
+    if not isinstance(certificate.expected, Fraction):
+        return "invalid_certificate", None
     if certificate.orientation not in {"forward", "reversed"}:
         return "missing_orientation", None
     if certificate.law_id != law_id:
@@ -191,7 +195,7 @@ def source_boundary_checks() -> None:
         "marker lag: 7/6 forward, 11/6 reversed",
         "low-to-high boundary event: 1/2 forward, 1/6 reversed",
         "a physical orientation or arrow",
-        "Any physical use requires separate retained-grade bridge theorems.",
+        "Any physical claim using this theorem requires separately supported bridge inputs",
     )
     for needle in required:
         report(f"source contains: {needle}", needle in flat)
@@ -327,7 +331,14 @@ def hostile_mode() -> None:
     section("Hostile controls")
     cert = FiniteCertificate("transition", "forward", "signed_drift", "expectation", Fraction(-1, 2))
     report("hostile empty law rejected", verify_certificate("transition", {}, cert)[0] == "invalid_law")
-    report("hostile unnormalized law rejected", verify_certificate("transition", {("A",): Fraction(2)}, cert)[0] == "invalid_law")
+    float_law = {("A",): 0.5, ("B",): 0.5}
+    float_cert = FiniteCertificate("transition", "forward", "signed_drift", "expectation", 0.0)  # type: ignore[arg-type]
+    report(
+        "hostile float coercion rejected",
+        verify_certificate("transition", float_law, cert)[0] == "invalid_law"  # type: ignore[arg-type]
+        and verify_certificate("transition", TRANSITION_LAW, float_cert)[0]
+        == "invalid_certificate",
+    )
     report("hostile negative law rejected", verify_certificate("transition", {("A",): Fraction(2), ("B",): Fraction(-1)}, cert)[0] == "invalid_law")
     report("hostile wrong law id rejected", verify_certificate("other", TRANSITION_LAW, cert)[0] == "scope_mismatch")
     missing = FiniteCertificate("transition", None, "signed_drift", "expectation", Fraction(-1, 2))

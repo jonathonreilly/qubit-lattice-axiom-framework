@@ -22,17 +22,17 @@ class AuthorityLayer:
 
 
 LAYERS = (
-    AuthorityLayer("directed examples", "formal-theorem-proposal", "finite rational law/reversal identities; physical bridges open", "FORMAL_DIRECTED_REVERSAL_THEOREM=TRUE"),
+    AuthorityLayer("directed examples", "proposed_retained exact structural theorem", "finite rational law/reversal identities; physical bridges open", "FORMAL_DIRECTED_REVERSAL_THEOREM=TRUE"),
     AuthorityLayer("kernel selection firewall", "no-go", "blocked Record-derived kernel selection", "DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL=TRUE"),
     AuthorityLayer("supplied kernel selection rule", "exact-support", "supplied candidate family and rule", "SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE=TRUE"),
     AuthorityLayer("target vector firewall", "no-go", "blocked Record-derived targets/weights", "SELECTION_RULE_TARGET_VECTOR_FIREWALL=TRUE"),
-    AuthorityLayer("admitted sample vector", "exact-support", "admitted observation sample", "ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE=TRUE"),
+    AuthorityLayer("supplied observational sample vector", "exact-support", "observational comparator with zero premise weight", "ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE=TRUE"),
 )
 
 DOC_CHECKS = {
     "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md": [
         "Theorem (finite rational reversal identities)",
-        "Any physical use requires separate retained-grade bridge theorems.",
+        "requires separately supported bridge",
     ],
     "docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md": [
         "Directed certificates do not select a production kernel",
@@ -48,7 +48,7 @@ DOC_CHECKS = {
     ],
     "docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md": [
         "supplied finite post-record sample plus supplied statistic set",
-        "The sample is admitted observation data, not a probability law",
+        "not a probability law",
     ],
 }
 
@@ -134,9 +134,9 @@ def authority_layer_checks() -> None:
     section("Authority layer checks")
     report("five dynamics layers are mapped", len(LAYERS) == 5)
     report(
-        "formal, exact-support, and no-go source-side labels all appear",
+        "proposed-retained, exact-support, and no-go source-side labels all appear",
         {layer.status for layer in LAYERS}
-        == {"formal-theorem-proposal", "exact-support", "no-go"},
+        == {"proposed_retained exact structural theorem", "exact-support", "no-go"},
     )
     report("every layer has an authority class", all(layer.authority_class for layer in LAYERS))
     report("every layer has a summary flag", all(layer.summary_flag for layer in LAYERS))

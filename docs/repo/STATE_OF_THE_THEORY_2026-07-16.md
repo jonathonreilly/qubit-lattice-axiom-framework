@@ -5,7 +5,7 @@
 This memo is citable for orientation and scope discipline only.
 **Status discipline:** every status word in this memo was read from the audit
 ledger's 2026-07-17 nightly state and goes stale from that moment. The live authorities are
-the tracked ledger shards ([`docs/audit/data/ledger/`](../audit/data/ledger/)),
+the tracked ledger shards (`docs/audit/data/ledger/`),
 the generated [`RETAINED_BACKBONE.md`](RETAINED_BACKBONE.md), and
 [`FRONT_DOOR_STATUS.md`](FRONT_DOOR_STATUS.md). Where this memo and the ledger
 disagree, the ledger is right. This memo sets no audit verdict and promotes
@@ -223,5 +223,5 @@ authority-link guard. Then:
 3. [`EXTERNAL_REVIEWER_GUIDE.md`](../publication/ci3_z3/EXTERNAL_REVIEWER_GUIDE.md)
    — the referee's path through the package.
 4. Any claim: open its ledger shard under
-   [`docs/audit/data/ledger/`](../audit/data/ledger/) and read
+   `docs/audit/data/ledger/` and read
    `effective_status`, its dependencies, and the audit rationale.

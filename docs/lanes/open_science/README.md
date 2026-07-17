@@ -14,7 +14,7 @@ and the associated audit-ledger reset; read them as the lane authors'
 pre-reset scoping language, **not** as current `effective_status`. Most
 pre-reset ratifications are `unaudited` today pending post-reset re-audit.
 The live authorities are the tracked ledger
-([`docs/audit/data/ledger/`](../../audit/data/ledger/)) and the generated
+(`docs/audit/data/ledger/`) and the generated
 [`docs/repo/RETAINED_BACKBONE.md`](../../repo/RETAINED_BACKBONE.md); check a
 row's shard before citing any grade word from this package.
 

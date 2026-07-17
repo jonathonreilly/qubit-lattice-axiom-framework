@@ -71,7 +71,7 @@ Use these entrypoints in order:
     and [reproduce guide](docs/publication/ci3_z3/REPRODUCE.md)
 11. [Science map by domain](docs/publication/ci3_z3/SCIENCE_MAP.md)
 12. [Open science lanes](docs/lanes/open_science/README.md)
-13. [Full audit ledger (tracked shards)](docs/audit/data/ledger/), summarized in
+13. Full audit ledger: tracked shards under `docs/audit/data/ledger/`, summarized in
     [`effective_status_summary.json`](docs/audit/data/effective_status_summary.json)
 
 ## Current Status
@@ -90,7 +90,7 @@ the current counts, refreshed by `bash docs/audit/scripts/run_pipeline.sh`.
 Source notes and publication tables still contain legacy `retained` /
 `promoted` wording, but the publication-facing authority is the audit-derived
 `effective_status` in the tracked sharded audit ledger
-([`docs/audit/data/ledger/`](docs/audit/data/ledger/), one JSON shard per claim,
+(`docs/audit/data/ledger/`, one JSON shard per claim,
 summarized in
 [`docs/audit/data/effective_status_summary.json`](docs/audit/data/effective_status_summary.json)).
 The monolithic `docs/audit/AUDIT_LEDGER.md` is a local pipeline-materialized

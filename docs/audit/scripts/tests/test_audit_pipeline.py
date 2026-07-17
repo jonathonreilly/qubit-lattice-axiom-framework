@@ -2881,6 +2881,146 @@ class Cl3PauliIndependentN7HelperTest(unittest.TestCase):
                 self.assertNotIn("N7_STEELMAN_RESOLUTION", hostile.stdout)
 
 
+class Cl3ComplexificationIndependentN7HelperTest(unittest.TestCase):
+    CLAIM_ID = "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    NOTE = "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md"
+    PRIMARY = "scripts/cl3_complexification_exclusion_stress_2026_07_13.py"
+    COMPANION = (
+        "scripts/"
+        "audit_companion_cl3_complexification_split_exact_2026_05_10.py"
+    )
+    HELPER = (
+        "scripts/"
+        "cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
+    )
+
+    def test_every_packet_consumer_returns_only_the_claim_scoped_helper(self):
+        citation_graph = _import("build_citation_graph")
+        packet_deps = _import_repo_script("audit_packet_script_deps.py")
+        expected = [self.HELPER]
+
+        for primary in (self.PRIMARY, self.COMPANION):
+            with self.subTest(primary=primary):
+                self.assertEqual(
+                    citation_graph.helper_runner_paths_for_claim(
+                        self.CLAIM_ID, primary
+                    ),
+                    expected,
+                )
+                self.assertEqual(
+                    packet_deps.helper_runner_paths_for_claim(
+                        self.CLAIM_ID, Path(primary).stem
+                    ),
+                    expected,
+                )
+
+        control_claim = f"{self.CLAIM_ID}-unregistered-control"
+        self.assertEqual(
+            citation_graph.helper_runner_paths_for_claim(
+                control_claim, self.PRIMARY
+            ),
+            [],
+        )
+        self.assertEqual(
+            packet_deps.helper_runner_paths_for_claim(
+                control_claim, Path(self.PRIMARY).stem
+            ),
+            [],
+        )
+
+    def test_development_packet_hash_binds_source_and_authenticates_live_stdout(self):
+        runner = _import_codex_audit_runner()
+        row = {
+            "claim_id": self.CLAIM_ID,
+            "note_path": self.NOTE,
+            "runner_path": self.PRIMARY,
+            "helper_runner_paths": [self.HELPER],
+            "deps": [],
+            "claim_type": "positive_theorem",
+        }
+        manifest: dict[str, dict] = {}
+        with (
+            mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}),
+            mock.patch.object(
+                runner,
+                "get_runner_stdout",
+                return_value="PRIMARY_STDOUT",
+            ),
+        ):
+            prompt = runner.render_prompt(
+                row,
+                {self.CLAIM_ID: row},
+                "{{HELPER_RUNNER_SOURCES}}\n{{NO_GO_EVIDENCE_MANIFEST}}",
+                runner_timeout_sec=20,
+                use_cache=False,
+                evidence_manifest_out=manifest,
+            )
+
+        helper_sha256 = hashlib.sha256(
+            (PROJECT_ROOT / self.HELPER).read_bytes()
+        ).hexdigest()
+        self.assertEqual(
+            manifest[self.HELPER]["full_content_sha256"], helper_sha256
+        )
+        self.assertEqual(manifest[self.HELPER]["roles"], ["helper"])
+        independent_path = (
+            runner.no_go_discipline_gate.independent_runner_stdout_evidence_path(
+                self.CLAIM_ID, self.HELPER
+            )
+        )
+        self.assertEqual(
+            manifest[independent_path]["roles"],
+            ["runner_stdout_independent"],
+        )
+        for certificate in (
+            "N7_STEELMAN_RESOLUTION",
+            "combined_complex_rank=8",
+            "faithful=true",
+            "reducible=true",
+            "invariant_summand_dims_complex=2,2",
+        ):
+            self.assertIn(certificate, manifest[independent_path]["text"])
+            self.assertIn(certificate, prompt)
+        self.assertIn(helper_sha256, prompt)
+
+    def test_forensic_positive_packet_cannot_self_certify_with_target_helper(self):
+        runner = _import_codex_audit_runner()
+        row = {
+            "claim_id": self.CLAIM_ID,
+            "note_path": self.NOTE,
+            "runner_path": self.PRIMARY,
+            "helper_runner_paths": [self.HELPER],
+            "deps": [],
+            "claim_type": "positive_theorem",
+        }
+        manifest: dict[str, dict] = {}
+        with (
+            mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}),
+            mock.patch.object(
+                runner,
+                "get_runner_stdout",
+                return_value="PRIMARY_STDOUT",
+            ),
+            mock.patch.object(
+                runner, "get_independent_runner_stdout"
+            ) as independent_stdout,
+        ):
+            runner.render_prompt(
+                row,
+                {self.CLAIM_ID: row},
+                "{{HELPER_RUNNER_SOURCES}}\n{{NO_GO_EVIDENCE_MANIFEST}}",
+                runner_timeout_sec=20,
+                use_cache=False,
+                evidence_manifest_out=manifest,
+            )
+
+        independent_stdout.assert_not_called()
+        self.assertFalse(any(
+            path.startswith("audit-packet://runner-stdout-independent/")
+            for path in manifest
+        ))
+
+
 class SeedLedgerTest(unittest.TestCase):
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()

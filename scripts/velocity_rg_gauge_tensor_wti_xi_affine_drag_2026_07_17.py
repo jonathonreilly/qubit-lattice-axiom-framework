@@ -23,17 +23,22 @@ EXACT TIER (machine-precision identities on the stated finite objects):
       longitudinal closed form assembled WITHOUT vertex functions; the
       same-order TADPOLE (fermion-line seagull contracted with the gauge
       line) has the EXACT closed form (1 - xi)(C_s - C_t), whose xi-slope
-      -(C_s - C_t) cancels the rainbow's small-probe slope.
+      -(C_s - C_t) matches the rainbow's smallest-sampled-probe slope
+      within rel 5e-3 (finite-probe near-cancellation; no delta -> 0
+      cancellation claim).
       All xi-statements are exact properties of the DECLARED gauge-line
-      family D_w(xi) (isotropic projector numerator over the anisotropic
-      scalar K_w = sum_mu w_mu khat_mu^2): equal to the V1 covariant-gauge
-      closed inverse at w = 1, NOT the inverse of an anisotropic Wilson
-      tensor for w != 1 (khat^T D_w(0) != 0). No anisotropic-inverse
-      derivation is claimed.
+      family D_w(xi) (isotropic transverse-tensor-SHAPED numerator over
+      the anisotropic scalar K_w = sum_mu w_mu khat_mu^2; not a projector
+      for w != 1): equal to the V1 covariant-gauge closed inverse at
+      w = 1 for xi > 0 (at xi = 0 it is the Landau-limit pseudoinverse
+      P_T/K), NOT the inverse of an anisotropic Wilson tensor for w != 1
+      (khat^T D_w(0) != 0). No anisotropic-inverse derivation is claimed.
 
 WITNESS TIER (labeled finite-grid one-loop witnesses; no continuum claim):
-  V4  As the probe momentum delta -> 0 the rainbow xi-slope approaches the
-      PURE GAUGE-LINE integral +(C_s - C_t), C_mu = mean_BZ cos(k_mu)/K_w^2;
+  V4  At the smallest sampled probe delta = 0.05 the rainbow xi-slope is
+      within rel 5e-3 of the PURE GAUGE-LINE integral +(C_s - C_t),
+      C_mu = mean_BZ cos(k_mu)/K_w^2 (finite-probe witness; no
+      delta -> 0 limit claim);
       C_s and C_t individually grow with N (log-divergent pieces) while the
       difference's increments shrink through N=24 (finite-grid convergence
       witness for the split).
@@ -45,8 +50,9 @@ WITNESS TIER (labeled finite-grid one-loop witnesses; no continuum claim):
       xi-slope (rainbow + tadpole) decreases strictly through the four
       sampled probes. Finite samples certify a TREND, not a delta -> 0
       physical limit; the log/const fit split is a diagnostic only.
-  V6  Drag-direction convention table, BOTH sectors in ONE Euclidean
-      functional-integral convention (see note for the sign derivation):
+  V6  Drag-direction convention table, BOTH sectors in one shared
+      Euclidean sign-bookkeeping convention (two proxy reconstructions;
+      see note for the sign bookkeeping):
         fermion two-point: S^-1 = S0^-1 - Sigma, Sigma the standard
           second-order connected insertion, rainbow (the coded -Sig/tot)
           PLUS tadpole (sigma_tad_split);
@@ -181,6 +187,8 @@ def plaquette_mode(N, qidx, eps, midpoint: bool):
     K = float(np.sum(qh**2))
     M = K * np.eye(4) - np.outer(qh, qh)
     V = N**4
+    # V/4 = (quadratic-expansion 1/2) * (Re[] mode-average V/2); valid for
+    # non-self-conjugate modes q != -q mod 2pi (self-conjugate modes double it)
     s_pred = 0.5 * V * 0.5 * (eps @ M @ eps)
     return s_lat, s_pred
 
@@ -198,7 +206,8 @@ def part_1(rng) -> None:
         good &= abs(a - b) <= 1e-9 * max(abs(b), 1.0)
     check(
         "plaquette quadratic form == K*delta - qhat qhat^T EXACTLY "
-        "(link-midpoint modes, direct lattice sum, 3 modes)",
+        "(link-midpoint modes, direct lattice sum, 3 non-self-conjugate "
+        "modes; V/4 normalization applies to q != -q mod 2pi)",
         good,
         bd("worst rel err", "1e-9", good, worst),
     )
@@ -303,10 +312,11 @@ def sigma_kin_aniso(Ng, xi, dlt, eps=0.10, chunk=40000):
     same-order fermion-line seagull TADPOLE is sigma_tad_split below.
     Gauge line: the DECLARED family
     D_w(xi)_munu = (delta_munu - (1 - xi) khat_mu khat_nu / K_w) / K_w,
-    K_w = sum_mu w_mu khat_mu^2 -- isotropic projector numerator over the
-    anisotropic scalar denominator. At w = 1 this is the V1 covariant-gauge
-    closed inverse; for w != 1 it is NOT the inverse of an anisotropic
-    Wilson tensor (khat^T D_w(0) != 0), and no such derivation is claimed."""
+    K_w = sum_mu w_mu khat_mu^2 -- isotropic transverse-tensor-SHAPED
+    numerator (not a projector for w != 1) over the anisotropic scalar
+    denominator. At w = 1 this is the V1 covariant-gauge closed inverse for
+    xi > 0; for w != 1 it is NOT the inverse of an anisotropic Wilson
+    tensor (khat^T D_w(0) != 0), and no such derivation is claimed."""
     ax = make_bz_grid(Ng)
     w = np.array([1 - eps / 2, 1 + eps / 2, 1 + eps / 2, 1 + eps / 2])
     out = {}
@@ -464,18 +474,27 @@ def part_3() -> dict:
     )
 
     tots = [vals[i] + tads[i] for i in range(len(xis))]
-    ok = all((t < 0) == (tots[0] < 0) for t in tots)
+    same_sign = all((t < 0) == (tots[0] < 0) for t in tots)
+    # the total is affine in xi; locate its zero crossing from the endpoints
+    # and require it to sit OUTSIDE the sampled window (no all-xi claim)
+    xi_cross = xis[0] - tots[0] * (xis[-1] - xis[0]) / (tots[-1] - tots[0])
+    ok = same_sign and xi_cross > xis[-1]
     check(
         "sign of the TOTAL drag a_rb(xi) + a_tad(xi) is xi-ROBUST across "
-        "the covariant family xi in [0, 1.7]",
+        "the SAMPLED WINDOW xi in [0, 1.7] of the declared family, with "
+        "the affine zero crossing outside the window (no all-xi claim)",
         ok,
-        "totals " + ", ".join(f"{t:+.5f}" for t in tots),
+        "totals "
+        + ", ".join(f"{t:+.5f}" for t in tots)
+        + f"; affine zero crossing xi ~ {xi_cross:.1f} "
+        + ("outside" if xi_cross > xis[-1] else "INSIDE")
+        + " sampled window",
     )
     return {"slope": sl, "vals": vals, "xis": xis}
 
 
 # ---------------------------------------------------------------------------
-# V4 -- delta->0 pure gauge-line limit and IR-finite split
+# V4 -- smallest-sampled-probe gauge-line constant and IR-finite split
 # ---------------------------------------------------------------------------
 def part_4() -> dict:
     hr("V4: small-probe gauge-line constant; IR-finite (C_s - C_t) split")
@@ -527,7 +546,7 @@ def part_4() -> dict:
 
 
 # ---------------------------------------------------------------------------
-# V5 -- gauge invariance of the log coefficient
+# V5 -- xi-shift constant-dominated diagnostic; total-slope trend
 # ---------------------------------------------------------------------------
 def part_5(p4: dict) -> dict:
     hr("V5: xi-shift constant-dominated (fit diagnostic); TOTAL xi-slope "
@@ -548,7 +567,8 @@ def part_5(p4: dict) -> dict:
         )
     A0, B0 = fits[0.0]
     A1, B1 = fits[1.0]
-    ok = abs(A1 - A0) < 0.20 * abs(B1 - B0)
+    # second and third conjuncts gate the printed "A_F subdominant to B_F"
+    ok = abs(A1 - A0) < 0.20 * abs(B1 - B0) and abs(A0) < abs(B0) and abs(A1) < abs(B1)
     check(
         "xi-shift of the RAINBOW response CONSTANT-DOMINATED over the fit "
         "window: log-coefficient shift |A(1)-A(0)| < 20% of the constant "
@@ -642,10 +662,11 @@ def ward(Pi, qv):
 
 
 # ---------------------------------------------------------------------------
-# V6 -- drag-direction convention table (both sectors, one convention)
+# V6 -- drag-direction convention table (both sectors, shared bookkeeping)
 # ---------------------------------------------------------------------------
 def part_6() -> dict:
-    hr("V6: drag directions, BOTH sectors in ONE functional-integral convention")
+    hr("V6: drag directions, BOTH sectors, one shared sign-bookkeeping "
+       "convention (two proxy reconstructions)")
     # Discharge C_F from the SU(2) fundamental generator algebra (no import):
     # T^a = sigma^a/2, sum_a T^a T^a = C_F * I.
     paulis = [
@@ -666,8 +687,8 @@ def part_6() -> dict:
         "casimir sum is C_F*I with C_F = 3/4 (exact rational check)",
     )
 
-    print("  Convention (single Euclidean bookkeeping; sign chain in the "
-          "note):")
+    print("  Convention (shared Euclidean sign bookkeeping, two proxy "
+          "reconstructions; sign chain in the note):")
     print("    fermion: S^-1 = S0^-1 - Sigma (rainbow + tadpole); kinetic "
           "coeffs v_mu -> v_mu - g^2 C_F out_mu (linear in v)")
     print("    gauge:   Gamma_2 = M/g^2 + Pi (Pi = second variation of "
@@ -732,7 +753,8 @@ def part_6() -> dict:
         "exchange-matrix coefficients: a-proxy > 0 AND b-proxy > 0 "
         "(finite-grid STATIC-RESPONSE sign witnesses for the named open "
         "input of the exchange-matrix support note; NOT RG beta-function "
-        "coefficients -- no shell derivative or log-coefficient extraction)",
+        "coefficients -- no shell derivative or log-coefficient "
+        "extraction; physical-coefficient signs remain open)",
         ok,
         f"a-proxy={a_proxy:+.4f} b-proxy={b_proxy:+.4f} per g^2 "
         "(magnitudes are labeled finite-grid scheme proxies; the signs are "

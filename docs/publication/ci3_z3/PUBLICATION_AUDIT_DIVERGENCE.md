@@ -17,10 +17,10 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 246 |
+| critical | `unaudited` | 245 |
 | high | `unaudited` | 172 |
 | medium | `unaudited` | 131 |
-| critical | `audit_in_progress` | 5 |
+| critical | `audit_in_progress` | 6 |
 | ? | `unresolved` | 4 |
 | critical | `audited_conditional` | 2 |
 | critical | `audited_renaming` | 2 |
@@ -249,7 +249,7 @@ publication tables phrase it.
 | critical | `su2_weak_beta_coefficient_structural_closed_form_theorem_note_2026-04-26` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `su2_witten_z2_anomaly_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `su3_cubic_anomaly_cancellation_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| critical | `tensor_support_center_excess_law_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| critical | `tensor_support_center_excess_law_note` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md |
 | critical | `three_generation_observable_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `three_generation_structure_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `unified_matter_content_ewsb_harness_theorem_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

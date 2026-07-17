@@ -180,8 +180,10 @@ Everything downstream is mechanical:
   for `w != 1`), so every xi-statement in this chain is
   family-internal. The tadpole's kinetic split has
   the exact closed form `(out_s - out_t)_tad = (1 - xi)(C_s - C_t)`
-  (probe-independent; V3), so its xi-slope `-(C_s - C_t)` cancels the
-  rainbow's smallest-sampled-probe xi-slope `+(C_s - C_t)` (V4/V5).
+  (probe-independent; V3), so its xi-slope `-(C_s - C_t)` near-cancels
+  the rainbow's smallest-sampled-probe xi-slope, gated in-runner within
+  rel. `5e-3` of `+(C_s - C_t)` at probe `delta = 0.05` (V4/V5;
+  finite-probe witness, no `delta -> 0` limit claim).
   Near the probe
   the kinetic coefficients read `v_mu -> v_mu - g^2 C_F out_mu` (linear
   in `v`), so with `v_F = v_s/v_t` the drag response is

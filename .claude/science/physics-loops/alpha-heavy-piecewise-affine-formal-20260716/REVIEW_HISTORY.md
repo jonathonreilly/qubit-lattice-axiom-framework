@@ -60,14 +60,23 @@ and marker count.
 
 ### Matched repository validation
 
-Both worktrees were pinned to `origin/main` commit `ec65701599d45313d6dba18b91a09f027c9ad6c0`.
+Both final worktrees were pinned to `origin/main` commit
+`a606ea3664391ac9e80b2ff1e49ce440345766d2` after the latest sibling repair
+landed with zero source overlap.
 
 | Surface | Pipeline | Strict lint | Warnings | Notices | Errors |
 |---|---:|---:|---:|---:|---:|
-| Base | 18/18 | pass | 31 | 469 | 0 |
-| Candidate | 18/18 | pass | 31 | 467 | 0 |
+| Base | 18/18 | pass | 31 | 468 | 0 |
+| Candidate | 18/18 | pass | 31 | 466 | 0 |
 
 The candidate seeds the target as `positive_theorem`, `unaudited`, `deps=[]`,
 with its runner attached and a ready queue entry.  The QCD context correction
 also requeues that existing bounded row for independent re-ratification.  No
 generated audit artifact is part of this branch.
+
+Relative to the matched base, source-hash re-audit targets increase by exactly
+two (35 to 37), pending/ready queue counts increase by exactly one (2994/620 to
+2995/621), and retained-grade count temporarily decreases by one (393 to 392)
+because the critical QCD context row is honestly requeued after its stale
+characterization is corrected.  The target and QCD context rows are both
+ready; no hard invalidation or graph/link error occurs.

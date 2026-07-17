@@ -19,7 +19,8 @@ placement, no-jump condition, decoupling relation, Lambda transition,
 - Target runner/cache: refreshed.
 - Local review-loop: pass after one iteration; two maintenance findings fixed.
 - Matched base/candidate validation pipeline: 18/18 on each; strict lint zero
-  errors on each (same 31 baseline warnings, notices 469 base / 467 candidate).
+  errors on each at exact base `a606ea3664` (same 31 baseline warnings,
+  notices 468 base / 466 candidate).
 - Candidate target row: `positive_theorem`, `unaudited`, `deps=[]`, ready for
   independent re-audit.
 - Candidate QCD context row: requeued because its stale characterization was

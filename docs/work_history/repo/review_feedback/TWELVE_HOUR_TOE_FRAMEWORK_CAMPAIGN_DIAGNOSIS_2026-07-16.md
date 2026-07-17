@@ -191,18 +191,24 @@ contact census and a concrete missing-law target, not an interaction,
 scattering result, or no-go.
 
 This also exposes an important architectural fork. Every tested lattice
-runner propagates only permanent record labels, but the axioms do not say
-that all interaction must be record-mediated. Qubit supplies possibilities
+runner propagates only permanent record labels. Qubit supplies possibilities
 at an unrecorded site and Admissibility makes their availability depend on
-neighbour conditions. A coherent working layer could therefore propagate
-constraints or amplitudes through unrecorded sites and write only sparse
-boundary records. That would be a better candidate for interference,
-propagation, and storage economy than recording every intermediate step.
-However, it is not already derived: Qualification currently defines a state
-as a record configuration, and the axiom memo explicitly says Admissibility
-is not dynamics. The framework still needs an exact process law or theorem
-that turns changing nonrecord possibility constraints into physical
-propagation.
+neighbour conditions, but neither sentence supplies an actual evolving
+possibility at that site. Qualification defines a state as a record
+configuration, and the axiom memo explicitly says Admissibility is not
+dynamics.
+
+Cycle 26 already gives the exact typing test. An unrecorded coherent working
+variable is compatible with the current foundation only if it is uniquely
+reconstructed from the record configuration or all differences inside one
+record fibre give identical future record predictions. Otherwise it is
+future-relevant physical state omitted by Qualification. The live routes are
+therefore: a direct process kernel whose coherent calculation is law-side; a
+record-derived coherent decoder; or a substantive widening to records plus an
+unrecorded coherent working sector. The latter could propagate amplitudes
+without permanently recording every intermediate step and would relieve the
+storage pressure, but it cannot be smuggled in as “an open site's
+possibility.”
 
 ## What is now established
 
@@ -1025,9 +1031,9 @@ What the campaign currently favours:
 - an exact-law identification remains a more important Admissibility issue
   than polishing a two-witness sentence;
 - the current record-only runners do not prove that interaction is record-only;
-  a coherent nonrecord possibility layer is live, but current Admissibility
-  supplies availability rather than dynamics and Qualification supplies only
-  record configurations as states;
+  a coherent nonrecord possibility layer is live, but Cycle 26 shows that
+  future-sensitive state in a record fibre conflicts with current
+  Qualification unless it is record-derived or operational gauge;
 - the exact law must include or derive its lawful state domain and occurrence
   semantics; raw deterministic row outputs are insufficient;
 - Qualification's phrase “at every state ... exactly one answer” must
@@ -1092,12 +1098,13 @@ Any foundation edit should wait until these remaining tests are complete.
 Generated all-five membership and physical context dispatch are now closed
 bounded constructions rather than items on this list.
 
-1. compare two exact routes at Cycle 199's first mixed boundary: a
-   record-mediated row and a coherent process over the available
-   possibilities of unrecorded sites; require the physically selected
-   Cycle-193 token to become a load-bearing control of a phase-sensitive
-   `H/CNOT` operation on an encoded system/pointer, reproducing at least one
-   Cycle-189 interference/instrument relation with no host gate semantics;
+1. compare the record-mediated row, direct record-process kernel,
+   record-derived coherent decoder, and explicitly widened coherent-working-
+   sector routes at Cycle 199's first mixed boundary; require the physically
+   selected Cycle-193 token to become a load-bearing control of a
+   phase-sensitive `H/CNOT` operation on an encoded system/pointer,
+   reproducing at least one Cycle-189 interference/instrument relation with no
+   host gate semantics;
 2. extend that microscopic interpreter into a normalized effect-complete
    repeated process and prove the Cycle-194 component-mean condition, while
    pursuing an autonomous smaller-law implementation and exact-law

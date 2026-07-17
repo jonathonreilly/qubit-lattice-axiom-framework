@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -204,6 +204,71 @@
         "total_pass": 33
       },
       "verdict_rationale": "The note correctly confines ORBIT-INDEXING, K/CPT action, sector factorization, and the determinant-character boundary to supplied hypotheses rather than attributing them to Record. Its load-bearing even-plus-odd argument is an exact algebraic closure, and the negative controls correctly show why K-evenness alone does not erase non-homomorphic phase dependence. The runner completes 33 checks and substantively tests the finite algebra and scope guards; its illustrative fixed family is not used to derive a stronger physical claim."
+    },
+    {
+      "archived_at": "2026-07-17T18:24:33.692739+00:00",
+      "audit_date": "2026-07-17T18:24:24.054130+00:00",
+      "audit_invocation_history": [
+        "198d051a40b7430490f5dec7c9d545bb"
+      ],
+      "audit_invocation_id": "198d051a40b7430490f5dec7c9d545bb",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 11.209,
+        "runner_hash": "3b48cf2a03e62264d284d481ddbd750440215725dfbe80da3b0a90f0bba689cd",
+        "transitive_descendants": 73
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-957e3d7c516f4e408ce15d33f5527917-kcpt_orbit_constancy_and-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes after assuming ORBIT-INDEXING and the determinant-character/log-character homomorphism boundary. The restricted packet does not derive or provide retained one-hop authority for either supplied context premise.",
+      "claim_scope": "Within the explicitly supplied finite readout context, ORBIT-INDEXING plus Record content-determination gives K/CPT-orbit constancy, and a supplied R-valued determinant-character homomorphism vanishes while K-even log-modulus data remains allowed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-17T18:24:24.054130+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The homomorphic phase functional is odd, while T1 orbit constancy makes it K-even, so evenness and oddness together force it to vanish identically.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: make the named ORBIT-INDEXING and determinant-character/log-character context suppliers direct citation-graph dependencies, include their full retained-status evidence in the restricted packet, and re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 1,
+        "C": 3,
+        "D": 10,
+        "total_pass": 33
+      },
+      "verdict_rationale": "Issue: ORBIT-INDEXING and the R-valued determinant-character/log-character homomorphism are introduced as supplied context, but neither is a cited accepted or retained authority in this packet. Why this blocks: the runner correctly verifies the elementary implication and its negative controls, but it does not derive either supplied premise from Record. Repair target: wire retained one-hop authorities establishing those premises and include them in a fresh restricted audit packet. Claim boundary until fixed: conditional on those premises, Record content-determination gives orbit constancy and even-plus-odd algebra annihilates the homomorphic phase functional while allowing log-modulus data."
     }
   ],
   "prose_corrections": [],

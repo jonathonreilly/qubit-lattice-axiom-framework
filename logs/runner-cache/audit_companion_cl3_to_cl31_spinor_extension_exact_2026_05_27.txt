@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py
-runner_sha256: 65cb0569bc6972a8b6d315eab519aab3cd74bb3737db5d18f7cdc3e509ade156
+runner_sha256: 65207afdbdb691a6f93af047aa89cd02d7f1688e016cfc534e3a426322e897a0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.96
+elapsed_sec: 0.68
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -121,7 +121,7 @@ Part 9: Final sign-extension classification summary
 ----------------------------------------------------------------------------------------
 Final result
 ----------------------------------------------------------------------------------------
-  Note path: /private/tmp/science-fix-cl3-cl31-m2h-explicit-20260717/docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md
+  Note path: docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md
   Claim id:  cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27
   PASS = 60
   FAIL = 0

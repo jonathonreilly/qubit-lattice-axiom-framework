@@ -33,7 +33,8 @@ except ImportError:
 
 
 ROOT = Path(__file__).resolve().parent.parent
-NOTE_PATH = ROOT / "docs" / "CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md"
+NOTE_REL_PATH = Path("docs") / "CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md"
+NOTE_PATH = ROOT / NOTE_REL_PATH
 CLAIM_ID = "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27"
 
 
@@ -758,7 +759,7 @@ def main() -> int:
     # =========================================================================
     section("Final result")
     # =========================================================================
-    print(f"  Note path: {NOTE_PATH}")
+    print(f"  Note path: {NOTE_REL_PATH.as_posix()}")
     print(f"  Claim id:  {CLAIM_ID}")
     print(f"  PASS = {PASS}")
     print(f"  FAIL = {FAIL}")

@@ -5,9 +5,10 @@
 **Claim scope:** the standalone Clifford-algebra structural identity that,
 given the real Clifford algebra `Cl(3, 0)` with three generators
 `e_1, e_2, e_3` satisfying `{e_i, e_j} = 2 δ_{ij} I`, the only two
-real-Clifford-algebra extensions `A'` obtained by adjoining a single
-new generator `e_4` that anticommutes with `e_1, e_2, e_3` and squares
-to a sign `e_4^2 = ε I` with `ε ∈ {+1, -1}` are
+nondegenerate real-Clifford-algebra extensions `A'` obtained by
+adjoining a single new generator `e_4` that anticommutes with
+`e_1, e_2, e_3` and squares to a sign `e_4^2 = ε I` with
+`ε ∈ {+1, -1}` are
 
 1. `ε = +1`: `A' ≅ Cl(4, 0) ≅ M_2(H)` (real quaternionic 2x2 matrix
    algebra), and
@@ -71,14 +72,14 @@ imposing
 e_4^2 = ε I,                 ε ∈ {+1, -1},
 ```
 
-only two distinct real-Clifford-algebra extensions exist, classified
-by the sign `ε`.
+only two distinct nondegenerate real-Clifford-algebra extensions in
+this `Cl(p, q)` scope exist, classified by the sign `ε`.
 
 **(S1) Sign branch.** `ε ∈ {+1, -1}` exhausts the real-quadratic-form
-extension choices (any real `ε > 0` rescales to `+1`; any real `ε < 0`
-rescales to `-1`; `ε = 0` is excluded because it would make `e_4`
-nilpotent of square zero, which is not the Clifford-extension
-condition).
+nondegenerate extension choices (any real `ε > 0` rescales to `+1`;
+any real `ε < 0` rescales to `-1`; `ε = 0` defines a degenerate
+Clifford algebra and lies outside the nondegenerate `Cl(p, q)`
+extension class considered here).
 
 **(S2) `ε = +1` cell.** With `e_4^2 = +I`, the resulting real Clifford
 algebra is `Cl(4, 0)`. The explicit map in §5.2 identifies it with
@@ -126,8 +127,9 @@ The present narrow theorem isolates that algebraic step:
 
 > Among extensions of the framework's per-site `Cl(3, 0)` algebra by a
 > single additional anticommuting generator `e_4`, only two
-> real-Clifford-algebra extensions exist, and they are distinguished
-> exactly by the sign `ε = e_4^2 ∈ {+1, -1}`. The `ε = -1` cell is the
+> nondegenerate real-Clifford-algebra extensions in this `Cl(p, q)`
+> scope exist, and they are distinguished exactly by the sign
+> `ε = e_4^2 ∈ {+1, -1}`. The `ε = -1` cell is the
 > unique single-`M_k(R)` real-matrix-algebra cell, and it is
 > `Cl(3, 1) ≅ M_4(R)`.
 
@@ -167,7 +169,7 @@ identifications are constructed in §5 and checked by the runner.
 Lawson-Michelsohn, Atiyah-Bott-Shapiro, and Porteous are non-load-bearing
 external cross-checks of the resulting standard classifications.
 
-## 4. Supplied mathematical conditions and imports
+## 4. Mathematical conditions and imports
 
 - **Standard finite-dimensional real Clifford-algebra theory.** The
   universal property and dimension formula
@@ -186,8 +188,8 @@ external cross-checks of the resulting standard classifications.
 - **Real quadratic-form normalization.** Any nonzero real `ε ∈ R`
   rescales to `±1` by `e'_4 := e_4 / sqrt(|ε|)` (real, well-defined
   for `ε ≠ 0`); only the sign of `ε` is real-algebra-invariant. `ε = 0`
-  is excluded because it would make `e_4` nilpotent and the algebra
-  is not the Clifford extension.
+  makes `e_4` nilpotent and defines a degenerate Clifford algebra,
+  outside the nondegenerate `Cl(p, q)` extension class considered here.
 
 - **Hamilton quaternion algebra.** The multiplication rules
   `i^2 = j^2 = k^2 = ijk = -1` define `H`. The runner constructs left
@@ -219,12 +221,12 @@ e_i e_j = -e_j e_i  for  i ≠ j.
 
 With the existing assignments `q_1 = q_2 = q_3 = +1` (the `Cl(3, 0)`
 subalgebra) and `q_4 = ε`, only `ε ≠ 0` gives a nondegenerate Clifford
-algebra (the `ε = 0` case yields a degenerate quadratic form whose
-classification is not the Clifford-algebra classification). By
+algebra in the `Cl(p, q)` class (the `ε = 0` case instead defines the
+Clifford algebra of a degenerate quadratic form). By
 real-quadratic-form-rescaling of `e_4 → e_4 / sqrt(|ε|)`, any nonzero
 real `ε` is real-algebra-isomorphic to `ε ∈ {+1, -1}`. Hence the
-sign-`ε` branch exhausts all real-Clifford-algebra extensions up to
-isomorphism. ∎
+sign-`ε` branch exhausts all nondegenerate one-generator `Cl(p, q)`
+extensions in scope, up to isomorphism. ∎
 
 ### 5.2 (S2) `ε = +1` extension: `Cl(4, 0)`
 
@@ -336,7 +338,8 @@ landing on a single `M_k(R)`. ∎
 ### 5.5 (S5) `Cl(3, 0)` subalgebra preservation
 
 By the universal property of generator extension of Clifford algebras
-(Lawson-Michelsohn, Ch. I §1), the inclusion
+(Lawson-Michelsohn, Ch. I §1, with signature labels translated as in
+§10), the inclusion
 `{e_1, e_2, e_3} ↪ {e_1, e_2, e_3, e_4}` of generator sets induces an
 injective real-algebra homomorphism
 
@@ -362,7 +365,8 @@ This completes the proof of (S1)-(S5).
   faithful irreducible real module is the standard `R^4` action of
   `M_4(R)`, of real dimension 4. This is the abstract algebraic
   underpinning for the Majorana spinor representation at Lorentzian
-  signature `(3, 1)` (Lawson-Michelsohn, Ch. I §5).
+  signature `(3, 1)` (Lawson-Michelsohn, Ch. I §5, with signature
+  labels translated as in §10).
 
 - **Quaternionic-vs-real classification gap.** The `ε = +1` cell
   `Cl(4, 0) ≅ M_2(H)` has irreducible real module of real dimension 8
@@ -378,8 +382,9 @@ This completes the proof of (S1)-(S5).
   complexification. The present narrow records that the real
   classifications, however, are distinct.
 
-- **`Spin(3, 1) ≅ SL(2, C)`.** At the Lie-group level, the spin
-  group `Spin(3, 1)` arising from the even-graded subalgebra of
+- **`Spin^+(3, 1) ≅ SL(2, C)`.** At the Lie-group level, the
+  identity-component spin group `Spin^+(3, 1)` arising from the
+  even-graded subalgebra of
   `Cl(3, 1)` is isomorphic to `SL(2, C)`, the standard universal
   cover of `SO^+(3, 1)`. The corresponding group for the `(4, 0)`
   cell is `Spin(4) ≅ SU(2) × SU(2)` (compact). The qualitative
@@ -409,7 +414,8 @@ cross-references and are not load-bearing on the present narrow.
   `ε = e_4^2 ∈ {+1, -1}`, but does not derive `ε = -1` from any
   framework primitive.
 - Does **not** claim that the sign-`ε` choice itself is forced by
-  any retained primitive on the framework's accepted surface. The
+  any framework axiom or explicitly approved framework primitive on
+  the framework's accepted surface. The
   choice between `Cl(4, 0)` (Euclidean) and `Cl(3, 1)` (Lorentzian)
   is delegated to the existing conditional-3+1 chain
   (`ANOMALY_FORCES_TIME_THEOREM.md`,
@@ -442,7 +448,7 @@ cross-references and are not load-bearing on the present narrow.
   is undetermined; the resulting signatures are exactly `(4, 0)` or
   `(3, 1)`, never `(2, 2)`.
 
-## 9. Relation to existing framework primitives
+## 9. Relation to existing framework Clifford-algebra theorems
 
 The framework's existing narrow theorems on Clifford-algebra structure
 each carry a different algebraic content:
@@ -472,21 +478,19 @@ on the single-`M_k(R)` real-matrix-algebra criterion.
 
 - The narrow theorem does not close P2 from the hierarchy honest-
   status note. The sign-`ε` choice remains the open content of P2.
-- The narrow theorem does not resolve the `Cl(3, 1)` vs `Cl(1, 3)`
-  convention. The Lawson-Michelsohn convention is `(+, +, +, -)`
-  yielding `Cl(3, 1) ≅ M_4(R)`; the opposite convention `(-, -, -, +)`
-  yields `Cl(1, 3) ≅ M_2(H)`. The narrow only operates at the
-  `Cl(3, 0) → Cl(3, 1)` extension under the Lawson-Michelsohn
-  convention; under the opposite convention, the extension of the
-  framework's three positive-square generators would land on
-  `Cl(3, 1)` regardless of convention naming (the framework's
-  one-qubit operator algebra / `Cl(3, 0)` framework baseline fixes the
-  spacelike-generators-square-to-`+1` convention).
+- The narrow fixes its convention in §1: `p` counts positive-square
+  generators and `q` counts negative-square generators. Thus
+  `(+,+,+,-)` is `Cl(3, 1) ≅ M_4(R)` here, while `(-,-,-,+)` is
+  `Cl(1, 3) ≅ M_2(H)`. Lawson-Michelsohn instead impose
+  `v w + w v = -2 q(v, w)`, so their signature labels require the
+  translation `p ↔ q` relative to this note. The runner and theorem
+  use only the explicit generator relations fixed in §1, independent
+  of literature naming conventions.
 - The narrow theorem does not address the `(2, 2)` cell because that
-  cell is not reachable by `Cl(3, 0)`-extension. The general
-  Cartan-Bott classification table records that `Cl(2, 2) ≅ M_4(R)`
-  is also a single-`M_k(R)` cell at `n = 4`; that cell would arise
-  from a `Cl(2, 1)` (or `Cl(1, 2)`) extension, not from `Cl(3, 0)`.
+  signature is not reachable by the one-generator `Cl(3, 0)` extension:
+  the derived sign branches are exactly `(4, 0)` and `(3, 1)`. No
+  algebra classification for the unreachable `(2, 2)` signature is
+  needed or asserted here.
 - The narrow theorem does not address `d_t > 1` exclusion; that is
   delegated to the single-clock codimension-1 evolution theorem
   (`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`),
@@ -591,9 +595,9 @@ verification).
   baseline.
 - Lawson, H. B. and Michelsohn, M.-L., *Spin Geometry* (Princeton
   Mathematical Series 38), Princeton University Press, 1989,
-  Theorem I.4.3 and Table I (textbook reference for the
-  Cartan-Bott classification of `Cl(p, q)` with Bott eightfold
-  periodicity).
+  Theorem I.4.3 and Table I (non-load-bearing textbook cross-check of
+  the Cartan-Bott classification, after translating their
+  `v^2 = -q(v)` sign convention by `p ↔ q`).
 - Atiyah, M. F., Bott, R., and Shapiro, A., "Clifford Modules",
   *Topology* 3 (1964), Supplement 1, 3-38 (original reference for
   the classification table and the connection to topological

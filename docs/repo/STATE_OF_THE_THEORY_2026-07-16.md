@@ -52,9 +52,10 @@ Two consequences of that discipline shape everything below:
 - Counts for all of these, refreshed nightly, live in
   [`FRONT_DOOR_STATUS.md`](FRONT_DOOR_STATUS.md).
 
-As of the 2026-07-16 ledger state, the ledger holds **3,754 rows**, of which
-**395 are retained-grade** (76 retained positive rows, 304 retained bounded
-rows, 0 retained no-go rows, 15 boxed decorations) and **~2,900 are unaudited** —
+As of the 2026-07-17 nightly ledger state, the ledger holds **3,767 rows**, of
+which **392 are retained-grade** (76 retained positive rows, 302 retained
+bounded rows, 0 retained no-go rows, 14 boxed decorations) and **~2,960 are
+unaudited** —
 mostly pre-reset work awaiting re-ratification. That ratio is the honest
 headline: the program's ambition is far ahead of its ratified core, on purpose,
 and the machinery exists precisely to close that gap without inflating it.
@@ -91,15 +92,14 @@ Its shape, grouped informally:
   [`OLLIVIER_EINSTEIN_PROXY_NOTE_2026-04-11.md`](../OLLIVIER_EINSTEIN_PROXY_NOTE_2026-04-11.md)).
 - **Taste/staggered structure**, e.g. taste-scalar isotropy
   ([`TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md`](../TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md)).
-- **304 retained bounded rows** — the largest ratified tier: results of the
+- **302 retained bounded rows** — the largest ratified tier: results of the
   form "given these named supplied inputs, this follows," each carrying its
   boundary in the note itself.
 
 ## The frontier: landed, not yet audited
 
 These are the chains the program is best known for internally. Each named row
-below is `unaudited` in the current ledger (the newest notes, landed
-2026-07-16, enter the ledger at the next pipeline seeding) — stated plainly
+below is `unaudited` in the current ledger — stated plainly
 because a reader who skips this distinction will overestimate the theory, and
 one who reads only the retained list will underestimate it.
 
@@ -141,8 +141,7 @@ one who reads only the retained list will underestimate it.
   which dynamics are compatible with the Record axiom (for example the cubic
   matching-product qubit-QCA schedule orbit and the endpoint-symmetric
   common-Hamiltonian dichotomy) landed through review on 2026-07-16, with
-  further slices in review; these rows enter the ledger at the next pipeline
-  seeding.
+  further slices in review; their ledger rows are seeded and `unaudited`.
 
 ## The honest walls
 

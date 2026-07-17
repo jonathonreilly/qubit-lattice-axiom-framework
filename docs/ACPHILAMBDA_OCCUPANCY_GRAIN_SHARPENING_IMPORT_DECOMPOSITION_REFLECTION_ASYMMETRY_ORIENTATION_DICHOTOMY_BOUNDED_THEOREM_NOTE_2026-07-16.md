@@ -35,9 +35,9 @@ dichotomy `A = A+ ⊔ A-` on top of it (T2, T5(ii)). Two exact
 piecewise-linear witnesses make the separation load-bearing: an amplifying
 member with a non-monotone per-weight influence profile that sits in `A+` but
 not in the monotone-profile subclass `M`, and a reflection-symmetry-broken
-boundary member outside `A` that carries an extra off-center fixed point at
-`q = 17/22`. The identity member `f(q) = q` is the non-recording control with
-`T_f = q` identically.
+boundary member outside `A` that carries an extra reflected pair of off-center
+fixed points at `q = 5/22` and `q = 17/22`. The identity member `f(q) = q` is
+the non-recording control with `T_f = q` identically.
 
 The four framework axioms (Lattice, Qubit, Admissibility, Record) supply
 neither content: a choice not fixed by the supplied structure remains a named
@@ -218,8 +218,9 @@ limit extensions `T_f(0) = 0`, `T_f(1) = 1`.
 > `sign(T_f(q) - q) = sign(h(q))`. Consequently `A = A+ ⊔ A-` disjointly:
 > a reflection-asymmetric profile is either majority-amplifying (`T_f(q) > q`
 > for `q > 1/2`) or majority-attenuating (`T_f(q) < q` for `q > 1/2`), never
-> both. The class also satisfies the exchange symmetry `T_f(1-q) = 1 - T_f(q)`
-> and the central slope `T_f'(1/2) = f'(1/2) / (2 f(1/2))`; for the power
+> both. Every member also satisfies the exchange symmetry
+> `T_f(1-q) = 1 - T_f(q)`. If `f` is differentiable at `q = 1/2`, then
+> `T_f'(1/2) = f'(1/2) / (2 f(1/2))`; for the differentiable-at-center power
 > member `f = q^k` the central slope is exactly `k`.
 
 *Reading.* The sign bridge is what turns the parent note's L3 inequality into a
@@ -232,9 +233,9 @@ of the L3 import.
 Runner: block `T2_SIGN_BRIDGE` proves the full-quotient identity symbolically,
 checks strict positivity of the denominator at a rational sample for two
 members (the class-level positivity is the one-line `f > 0` fact in the box),
-proves the exchange symmetry and the central-slope formula symbolically, and
-confirms the central slope equals `k` for `k = 1/2`, `k = 2`, and symbolic
-`k > 0`.
+proves the exchange symmetry and, under the stated differentiability condition,
+the central-slope formula symbolically, and confirms the central slope equals
+`k` for `k = 1/2`, `k = 2`, and symbolic `k > 0`.
 
 ## T3 (off-center orientation horn) and orbit behaviour
 
@@ -259,13 +260,13 @@ orbit is strictly decreasing and stays above `1/2`, so its limit is `1/2`.
 *Reading.* Orientation is what selects which side of the central weight the
 recording update pushes toward. This is the stability/selection-mode content of
 the L3 import; the interior fixed set is the same `{0, 1/2, 1}` in both
-orientations. Durability throughout is stationarity, not attraction: the horn
-statements describe the one-step and iterated direction and its limit, and the
-selection mode is a distinguished stationary weight in the sense of the
-stationary-point-not-forced anchor (`retained_bounded`).
+orientations. Durability throughout is fixed-point stationarity under the
+declared update, not attraction: the horn statements describe the one-step and
+iterated direction and its limit. This is distinct from stationarity of an
+entropy or balance functional.
 
 Runner: block `T3_HORN` checks off-center amplification `T_f(q) > q` at
-`q = 3/5` for four `A+` members (`q^2`, `q^3`, `q^4`, `q + q^2`) and the mirror
+`q = 3/5` for four `A+` members (`q^2`, `q^3`, `q^4`, `(q + q^2)/2`) and the mirror
 minority attenuation `T_f(2/5) < 2/5` for `q^2`. Block `ORBITS` iterates the
 `A+` exemplar `f = q^2` from `q_0 = 3/5` (six exact-rational steps, strictly
 increasing, staying in `(1/2,1)`, closing gap to `1` below `1/1000`) and the
@@ -290,8 +291,8 @@ N0 witness (`g(1/2) < g(1/4)`) together with `h > 0` at interior samples of
 `(1/2,1)`; the exact derivative `g'(x) = -x^(-3/2)/2 < 0` for `f = sqrt(q)`
 (not in `M`) with an exact conjugate certificate that `h < 0` on `(1/2,1)`
 (in `A-`); the identically-zero `h` of the identity member (in `F`, not in
-`A`); and witness `B`'s exact off-center zero `h(17/22) = 0` (in `F`, not in
-`A`).
+`A`); and witness `B`'s exact reflected off-center zeros
+`h(5/22) = h(17/22) = 0` (in `F`, not in `A`).
 
 ## T5 (sharpening-import decomposition)
 
@@ -312,8 +313,8 @@ N0 witness (`g(1/2) < g(1/4)`) together with `h > 0` at interior samples of
 
 The two contents are made load-bearing by exact witnesses in the following
 sections (N0–N2): the N0 member exhibits `A+` without `M`, a sign-mixed
-boundary member outside `A` (N1) shows (i) is load-bearing (an extra
-off-center fixed point appears), and the amplifying/attenuating split shows
+boundary member outside `A` (N1) shows (i) is load-bearing (an extra reflected
+pair of off-center fixed points appears), and the amplifying/attenuating split shows
 (ii) is not implied by (i).
 
 ## N0 (amplifying witness, in `A+` but not in `M`)
@@ -352,7 +353,7 @@ profile. Amplification is controlled by the reflection asymmetry `h` alone,
 which compares `g` across the reflection `q <-> 1-q` and is insensitive to
 `g`'s behaviour within a side.
 
-## N1 (sign-mixed boundary witness `B`, extra fixed point `q = 17/22`)
+## N1 (sign-mixed boundary witness `B`, extra fixed-point pair `{5/22, 17/22}`)
 
 Define `g` piecewise linear on `[0,1]` with node values
 
@@ -378,17 +379,22 @@ and set `f(x) = x g(x)`. Exact facts, all re-proven by runner block
 
   so `h(3/4) = -1/20 < 0` while `h(21/22) = 2/5 > 0`: `h` changes sign on
   `(1/2,1)`, hence has an interior zero there, so `B` is outside `A`.
-- **The extra off-center fixed point is `q = 17/22`.** Solving `h(q) = 0` on
-  `(3/4,1)` gives exactly `q = 17/22`, and back-substitution gives
-  `T_B(17/22) = 17/22` exactly (`g(17/22) = 15/22`, `f(17/22) = 255/484`,
-  `g(5/22) = 15/22`, `f(5/22) = 75/484`, `T_B = 255/330 = 17/22`). This is a
-  durable weight strictly off the center. Below it `T_B(7/10) < 7/10` and above
-  it `T_B(9/10) > 9/10`, so `q = 17/22` sits between an attenuation region and
-  an amplification region.
+- **The extra off-center fixed points are the reflected pair
+  `{5/22, 17/22}`.** Solving `h(q) = 0` on `(3/4,1)` gives exactly
+  `q = 17/22`; reflection oddness gives the paired zero `q = 5/22`.
+  Back-substitution gives both fixed points exactly:
+  `g(17/22) = g(5/22) = 15/22`,
+  `f(17/22) = 255/484`, `f(5/22) = 75/484`, and hence
+  `T_B(17/22) = 255/330 = 17/22` while
+  `T_B(5/22) = 75/330 = 5/22`. Thus the closed-cell fixed set of `B` is
+  `{0, 5/22, 1/2, 17/22, 1}`. Below the upper point
+  `T_B(7/10) < 7/10` and above it `T_B(9/10) > 9/10`, so `q = 17/22`
+  sits between an attenuation region and an amplification region.
 
 Reading: reflection asymmetry (`A`-membership) is exactly what forbids an
 off-center durable weight. Drop it — keep only continuity, strict increase, and
-`f(0) = 0` — and an extra off-center fixed point appears. This witness plays the
+`f(0) = 0` — and an extra reflected pair of off-center fixed points appears.
+This witness plays the
 same load-bearing negative-control role for content (i) that the parent note's
 N1/N2 controls play for its L2/L3.
 
@@ -420,12 +426,11 @@ permanence-to-stationarity reading, the strict-sharpening import consumed at the
 parent note's L3 is exactly the conjunction of two separate contents:
 reflection asymmetry (`A`-membership), which by T1 is exactly the condition for
 the interior durable weight to be the single central weight `q = 1/2`; and the
-amplifying orientation (`A+`), a disjoint binary that fixes only the
-stability/selection mode. Through the parent note's supplied translation
+amplifying orientation (`A+`), a disjoint binary that fixes the direction and
+limit of the declared abstract iteration. Through the parent note's supplied translation
 `p_d = 2r/(1+2r)`, the central weight `q = 1/2` corresponds to the dial setting
-`r = 1/2`; this note forces, derives, and prefers no dial setting, and the
-distinguished dial settings remain settings of a dial per the
-stationary-point-not-forced anchor.
+`r = 1/2`; this note forces, derives, and prefers no dial setting. The
+translation supplies no physical lane assignment.
 
 The grain derivation obligation's closure criterion is, verbatim:
 
@@ -458,7 +463,8 @@ influence forms, and non-stationarity selection modes are out of scope.
   exhibits, not a choice of record rule.
 - **The two contents are genuinely separate, and each is load-bearing.** Content
   (i) is load-bearing by witness `B`: a member of `F` outside `A` acquires an
-  extra off-center durable weight at `q = 17/22`. Content (ii) is not implied by
+  extra reflected pair of off-center durable weights at `q = 5/22` and
+  `q = 17/22`. Content (ii) is not implied by
   (i): `A = A+ ⊔ A-` is a disjoint dichotomy, and the attenuating member
   `f = sqrt(q)` sits in `A-`, sharing the interior fixed set `{0, 1/2, 1}` with
   every `A+` member while pushing orbits the other way. The amplifying witness
@@ -470,15 +476,15 @@ influence forms, and non-stationarity selection modes are out of scope.
   status; depending on Record here is only the consumed permanence-to-
   stationarity reading, declared, not a source of bounded status. Both contents
   (i) and (ii) are named conditionals in exactly this sense.
-- **Durability is stationarity, not attraction.** The horn and orbit statements
+- **Durability is fixed-point stationarity under the declared update, not
+  attraction.** The horn and orbit statements
   describe the direction and limit of the abstract continued-registration
-  iteration; the selection mode is a distinguished stationary weight, matching
-  the stationary-point-not-forced anchor (`retained_bounded`). No attractor or
-  convergence claim about a physical state is made.
+  iteration. This is distinct from stationarity of an entropy or balance
+  functional. No attractor or convergence claim about a physical state is made.
 - **Conditional premises at live grades.** The consumed sources enter at exactly
   the grades listed in Load-bearing dependencies: one unaudited `bounded_theorem`
-  parent, one `meta` axiom memo, one `retained_bounded` anchor, and one open
-  obligation shown at `open_gate` with its ledger row `audited_renaming`. Every
+  parent, one `meta` axiom memo, and one open obligation shown at `open_gate`
+  with its ledger row `audited_renaming`. Every
   claim here is conditional on them at those grades; none is upgraded by
   consumption.
 
@@ -487,9 +493,8 @@ influence forms, and non-stationarity selection modes are out of scope.
 This note selects no horn, no grain, no orientation, no `r` value, no `Q`
 value, no mass, no mixing angle, no probability rule, no species map, and no
 sector weight. The decomposition in T5 is an exact statement about the declared
-class, not a selection among its members. The dial settings `r = 0`, `r = 1/2`,
-and `r = 1` remain distinguished settings of a dial, per the
-stationary-point-not-forced anchor; nothing here forces or prefers any of them.
+class, not a selection among its members. Nothing here forces or prefers any
+dial setting.
 The note adds no axiom, no primitive, no literature comparator, and no supplied
 physical binding, and it coins no framework vocabulary: `A`, `A+`, `A-`, `M`,
 `g`, and `h` are note-local descriptors declared in D1 and proposed for no
@@ -515,20 +520,19 @@ parent record-influence family. It is named here for orientation only.
 |---|---|---|
 | [`ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md`](ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md) | unaudited `bounded_theorem` | The declared 2-cell record-influence family `T_f` (L2); the strict-sharpening majority-amplification meaning decomposed here (L3); the scope-boundary sentence that bare influence-odds monotonicity is insufficient; the influence-odds definition itself (the parent's own object, distinguished from this note's per-weight profile); the `p_d = 2r/(1+2r)` weight-to-dial translation; the N1/N2 negative-control pattern. Verbatim clauses are quoted above and gated in runner block `SOURCE_GATES`. |
 | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | `meta` (doc-header type; framework axiom memo; confers no bounded status; not a graded ledger row) | The verbatim Record clauses (permanence, record-only readability) read as the permanence-to-stationarity discipline, and the qualification clause that an unfixed choice remains a named conditional or open dependency. Depending on the Record axiom is not treated as a source of bounded status. Quoted above and gated in `SOURCE_GATES`. |
-| [`FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md`](FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md) | `retained_bounded` | The stationary-point-not-forced framing (distinguished dial settings, durability as stationarity not attraction), consumed in T3, the Bounded consequence, and Non-claims. |
 | [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md) | `open_gate` (ledger row: `audited_renaming`) | The open grain derivation obligation. Its closure criterion is quoted verbatim in Bounded consequence and gated in runner block `SOURCE_GATES`. This note uses it only to state the boundary and engages no physical-action step. |
 
 ## Runner verification map
 
 | Block | Content | Result |
 |---|---|---|
-| `TEXT_INTEGRITY` | Paired note exists; claim id present; each of the four load-bearing dependency filenames appears in the note | PASS=6 FAIL=0 |
+| `TEXT_INTEGRITY` | Paired note exists; claim id present; each of the three load-bearing dependency filenames appears in the note | PASS=5 FAIL=0 |
 | `T1_FIXED_POINT` | Reflection-asymmetry fixed-point identity, numerator match, exact interior solves for `q^2` and `q^3`, endpoint-limit extensions, reflection-oddness of `h` | PASS=7 FAIL=0 |
-| `T2_SIGN_BRIDGE` | Full-quotient sign-bridge identity, denominator positivity, exchange symmetry, central-slope formula, power-member central slopes including symbolic `k` | PASS=9 FAIL=0 |
-| `T3_HORN` | Off-center amplification `T_f(3/5) > 3/5` for four `A+` members and the mirror attenuation `T_f(2/5) < 2/5` | PASS=5 FAIL=0 |
+| `T2_SIGN_BRIDGE` | Full-quotient sign-bridge identity, denominator positivity, exchange symmetry, differentiability-qualified central-slope formula, power-member central slopes including symbolic `k` | PASS=9 FAIL=0 |
+| `T3_HORN` | Declared-family gate for the normalized polynomial member, off-center amplification `T_f(3/5) > 3/5` for four `A+` members, and the mirror attenuation `T_f(2/5) < 2/5` | PASS=6 FAIL=0 |
 | `ORBITS` | `A+` orbit rising toward `1` (exact rationals); `A-` orbit falling toward `1/2` (exact radicals); monotone, in-band, and gap certificates; exact interior fixed-set solve for the `A-` exemplar | PASS=7 FAIL=0 |
 | `WITNESS_A` | `A+` witness of N0: node table gated in note text, continuity, `f(0)=0`/`f(1)<=1`, strict increase, `h` values and the affine side formula `h = 4q/5 - 2/5` with collinearity and slope certificates, non-monotone per-weight profile, one-step amplification | PASS=13 FAIL=0 |
-| `WITNESS_B` | Sign-mixed boundary witness of N1: node table gated in note text, continuity, `f(0)=0`/`f(1)=1`, strict increase, sign-mixed `h`, symbolic side formulas, exact solve `h=0 -> q=17/22`, back-substituted fixed point, below/above sign check | PASS=13 FAIL=0 |
+| `WITNESS_B` | Sign-mixed boundary witness of N1: node table gated in note text, continuity, `f(0)=0`/`f(1)=1`, strict increase, sign-mixed `h`, symbolic side formulas, exact upper-half solve `h=0 -> q=17/22`, reflected pair `{5/22,17/22}`, back-substituted fixed points, complete closed-cell fixed set, below/above sign check | PASS=14 FAIL=0 |
 | `IDENTITY` | N2 identity member: `T_f = q` identically, all rational samples fixed, `h` identically zero | PASS=3 FAIL=0 |
 | `LADDER` | Strict ladder `M ( A+ ( A ( F`: affine mechanism identity, N0 witness in `A+` not `M`, `sqrt` in `A-` not `M` with conjugate certificate, identity member in `F` not `A`, witness `B` off-center zero | PASS=7 FAIL=0 |
 | `SOURCE_GATES` | Verbatim quote gates: each consumed clause present in its source note AND in this note (flattened substring), including the parent's influence-odds definition | PASS=10 FAIL=0 |
@@ -543,7 +547,7 @@ python3 scripts/acphilambda_sharpening_import_decomposition_2026_07_16.py
 Cached run result:
 
 ```text
-TOTAL: PASS=85 FAIL=0
+TOTAL: PASS=86 FAIL=0
 ```
 
 **No check passes by literal stipulation.**

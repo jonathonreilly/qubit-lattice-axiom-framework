@@ -3,6 +3,11 @@ PASS L02A: edge A no-record effect is q I
 PASS L01B: edge B is a complete five-outcome CPTP instrument
 PASS L02B: edge B no-record effect is q I
 PASS L03: overlapping SWAP no-record branches have commutator rank four
+PASS L04A: every edge-A Kraus operator is an edge operator tensor the spectator identity
+PASS L04B: every edge-B Kraus operator is the spectator identity tensor an edge operator
+PASS L05: the correlated witness has a maximally mixed spectator marginal
+PASS L06: a selective edge outcome changes the reduced spectator state of the correlated input
+PASS L07: the unconditional edge channel leaves the spectator marginal invariant
 PASS O01: A-then-B layered schedule is CPTP
 PASS O02: B-then-A layered schedule is CPTP
 PASS O03: A-then-B layered output has the exact witness diagonal
@@ -18,6 +23,9 @@ PASS O12: A-priority terminal stage weights normalize exactly
 PASS O13: B-priority terminal stage weights normalize exactly
 PASS O14: A-then-B double-empty branch ends at |001>
 PASS O15: B-then-A double-empty branch ends at |010>
+PASS O16: the diagonal |100> witness cannot separate layered A-then-B from A-priority stopping, so it is only a three-class discriminator
+PASS O17: the coherent witness separates all five schedule channels pairwise (both layered orders, both stopping priorities, and the symmetrized rule)
+PASS O18: the symmetrized rule is gated against both first-nonempty stopping channels and differs from each
 PASS K01: disjoint-edge layered schedules commute on an exact coherent control
 PASS K01U: disjoint-edge layered schedules are equal as channels on the full matrix-unit basis
 PASS K02: identity no-record mutation removes the overlapping order ambiguity on the coherent fixture
@@ -47,4 +55,4 @@ PASS S04: source contains boundary marker: does not classify all overlapping ins
 PASS S05: source contains boundary marker: does not establish that the axioms require amendment
 BOUNDARY: the finite edge Kraus rule, overlapping-support schedules, first-nonempty stopping, and clock maps are explicit conditional inputs.
 BOUNDARY: separate edge normalization and identical edge rules do not select overlap composition or order; event order does not select metric time or rate.
-TOTAL: PASS=47 FAIL=0
+TOTAL: PASS=55 FAIL=0

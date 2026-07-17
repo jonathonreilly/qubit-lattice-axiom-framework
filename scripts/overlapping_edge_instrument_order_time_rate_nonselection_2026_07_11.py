@@ -166,6 +166,40 @@ def local_and_order_checks() -> None:
 
     check("L03", (b_empty * a_empty - a_empty * b_empty).rank() == 4, "overlapping SWAP no-record branches have commutator rank four")
 
+    # Operator-support statement: every Kraus operator acts trivially, as the
+    # identity factor, on the spectator tensor factor.
+    def factors_off_spectator_site_two(operator: sp.Matrix) -> bool:
+        edge_block = sp.zeros(4, 4)
+        for row in range(4):
+            for column in range(4):
+                edge_block[row, column] = operator[2 * row, 2 * column]
+        return sp.simplify(operator - sp.kronecker_product(edge_block, sp.eye(2))) == sp.zeros(8)
+
+    def factors_off_spectator_site_zero(operator: sp.Matrix) -> bool:
+        edge_block = operator[0:4, 0:4]
+        return sp.simplify(operator - sp.kronecker_product(sp.eye(2), edge_block)) == sp.zeros(8)
+
+    check("L04A", all(factors_off_spectator_site_two(item) for item in a_records + [a_empty]), "every edge-A Kraus operator is an edge operator tensor the spectator identity")
+    check("L04B", all(factors_off_spectator_site_zero(item) for item in b_records + [b_empty]), "every edge-B Kraus operator is the spectator identity tensor an edge operator")
+
+    # The operator-support statement is NOT spectator-state invariance: for a
+    # correlated input, a selective outcome changes the reduced spectator
+    # state, while the unconditional trace-preserving channel leaves the
+    # spectator marginal invariant.
+    def spectator_reduction(rho_full: sp.Matrix) -> sp.Matrix:
+        reduced = sp.zeros(2, 2)
+        for row in range(2):
+            for column in range(2):
+                reduced[row, column] = sum(rho_full[2 * k + row, 2 * k + column] for k in range(4))
+        return sp.simplify(reduced)
+
+    correlated = projector((basis_state(sites, "000") + basis_state(sites, "011")) / sp.sqrt(2))
+    check("L05", spectator_reduction(correlated) == sp.eye(2) / 2, "the correlated witness has a maximally mixed spectator marginal")
+    selected = a_records[1] * correlated * a_records[1].H
+    selected_weight = sp.trace(selected)
+    check("L06", spectator_reduction(selected / selected_weight) == sp.diag(0, 1), "a selective edge outcome changes the reduced spectator state of the correlated input")
+    check("L07", spectator_reduction(channel(a_records + [a_empty], correlated)) == spectator_reduction(correlated), "the unconditional edge channel leaves the spectator marginal invariant")
+
     rho = projector(basis_state(sites, "100"))
     a_full = a_records + [a_empty]
     b_full = b_records + [b_empty]
@@ -196,6 +230,37 @@ def local_and_order_checks() -> None:
     check("O13", group_weights_ba == (sp.Rational(2, 3), sp.Rational(2, 9), sp.Rational(1, 9)), "B-priority terminal stage weights normalize exactly")
     check("O14", b_empty * a_empty * basis_state(sites, "100") == sp.Rational(1, 3) * basis_state(sites, "001"), "A-then-B double-empty branch ends at |001>")
     check("O15", a_empty * b_empty * basis_state(sites, "100") == sp.Rational(1, 3) * basis_state(sites, "010"), "B-then-A double-empty branch ends at |010>")
+
+    # Decisive five-class schedule discriminator.  The diagonal witness |100>
+    # is degenerate: it cannot separate the raw A-then-B layered channel from
+    # the A-priority stopping channel (O16 documents that coincidence).  The
+    # coherent witness below separates all five schedule channels pairwise,
+    # and in particular gates symmetrized-versus-first-nonempty explicitly.
+    check("O16", channel(layered_ab, rho) == channel(stopping_ab, rho), "the diagonal |100> witness cannot separate layered A-then-B from A-priority stopping, so it is only a three-class discriminator")
+
+    symmetrized_schedule = [item / sp.sqrt(2) for item in layered_ab + layered_ba]
+    witness = projector(
+        (basis_state(sites, "100") + basis_state(sites, "011") + basis_state(sites, "001")) / sp.sqrt(3)
+    )
+    schedule_channels = (
+        ("layered_ab", layered_ab),
+        ("layered_ba", layered_ba),
+        ("stopping_ab", stopping_ab),
+        ("stopping_ba", stopping_ba),
+        ("symmetrized", symmetrized_schedule),
+    )
+    witness_outputs = {name: channel(kraus, witness) for name, kraus in schedule_channels}
+    distinct_pairs = True
+    for index_left in range(len(schedule_channels)):
+        for index_right in range(index_left + 1, len(schedule_channels)):
+            name_left = schedule_channels[index_left][0]
+            name_right = schedule_channels[index_right][0]
+            distinct_pairs &= (
+                sp.simplify(witness_outputs[name_left] - witness_outputs[name_right])
+                != sp.zeros(dimension)
+            )
+    check("O17", distinct_pairs, "the coherent witness separates all five schedule channels pairwise (both layered orders, both stopping priorities, and the symmetrized rule)")
+    check("O18", witness_outputs["symmetrized"] != witness_outputs["stopping_ab"] and witness_outputs["symmetrized"] != witness_outputs["stopping_ba"], "the symmetrized rule is gated against both first-nonempty stopping channels and differs from each")
 
 
 def controls_and_clock_checks() -> None:

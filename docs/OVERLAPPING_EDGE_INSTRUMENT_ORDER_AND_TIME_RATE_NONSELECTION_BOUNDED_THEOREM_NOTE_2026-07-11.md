@@ -41,7 +41,7 @@ overlap composition/order
 
 ## Existing-science reading gate
 
-The actual order/time stack and its runners were read before this attack.
+The actual order/time stack and its runners were read before this derivation.
 
 - The approved
   [`minimal axioms`](MINIMAL_AXIOMS_2026-06-29.md) supply generic Record
@@ -87,7 +87,13 @@ sum_xy (K_xy^e)^dag K_xy^e=(1-q)I,                         (2)
 
 so every edge carries the same complete five-outcome CPTP instrument. Each
 nonempty branch locks the two-qubit edge output to the matching computational
-possibility; the spectator sites remain untouched. Equation (1) is the
+possibility; every Kraus operator in (1) acts trivially, as the identity
+factor, on the spectator tensor factor. That is an operator-support statement
+only: for correlated inputs the reduced spectator state can change under a
+selective outcome, so no spectator-state invariance is claimed. (The
+unconditional channel, being trace-preserving on the edge factor, does leave
+the spectator marginal invariant; the runner checks both sides of this
+distinction on a correlated witness.) Equation (1) is the
 `d=4`, menu-neutral specialization of the preceding intermittent normal form.
 
 The terminal outcome names used below are mathematical labels. This note does
@@ -188,6 +194,14 @@ but they attach those weights to different edge/label histories and different
 system outputs. A supplied priority resolves the process even when the local
 maps do not commute; it does not derive that priority.
 
+The diagonal witness `|100>` is deliberately not the discriminator for the
+full schedule fork: comparing (5) with (11) shows the raw `A then B` layered
+channel and the `A`-priority stopping channel produce the same diagonal on
+that input, so `|100>` separates only three of the five schedule channels.
+The runner therefore gates all five channels (two raw layered, two
+first-nonempty stopping, and the symmetrized rule of section 4) pairwise on a
+coherent discriminating witness on which every pair differs.
+
 Stopping priority is distinct from coherent overlap order. Replacing the
 no-record SWAP by identity makes the raw overlapping channels commute, yet
 first-nonempty schedules can still differ on coherence because the first edge
@@ -217,7 +231,10 @@ The runner also constructs the equal symmetrized schedule
 Phi_sym = (Phi_(A then B)+Phi_(B then A))/2,                (13)
 ```
 
-which is CPTP but differs from either ordered raw channel. Symmetrization is a
+which is CPTP but differs from either ordered raw channel and from both
+first-nonempty stopping channels; the symmetrized-versus-stopping comparison
+is gated explicitly on the coherent discriminating witness, not assumed.
+Symmetrization is a
 valid extra composition rule, not a consequence of separate edge normalization.
 
 The exact finite fork is therefore:
@@ -251,8 +268,8 @@ exhibits a symmetry-stable family but no first layer or layer ordering. When ove
 layer channels fail (7), an ordering is physical process content.
 
 Equation (15) is only a finite combinatorial schedule family. This note does
-not construct or classify a simultaneous cubic QCA; that is the next coherent
-tick campaign.
+not construct or classify a simultaneous cubic QCA; that remains a separate
+open strict-tick classification question.
 
 ## 6. Event order still does not supply time or rate
 

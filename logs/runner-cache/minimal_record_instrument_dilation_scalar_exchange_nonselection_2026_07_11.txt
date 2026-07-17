@@ -2,6 +2,11 @@ PASS C01: U_theta is unitary for real theta
 PASS C02: theta=pi/2 is exactly the edge SWAP
 PASS C03a: full two-qubit SWAP commutes with all common-frame su(2) generators
 PASS C03b: I-SWAP is even under reversal of the unoriented edge
+PASS C03c: the full SWAP leaves the one-excitation sector invariant and restricts to the edge SWAP
+PASS C03d: the spectral form solves dU/dtheta=-i(I-SWAP)U with U(0)=I, so it is exactly exp[-i theta (I-SWAP)] on the full carrier
+PASS C03e: the full-carrier exchange family is unitary for real theta
+PASS C03f: the full-carrier exchange family commutes with all common-frame su(2) generators at symbolic theta
+PASS C03g: the one-excitation restriction of the full-carrier family is exactly the instrument's U_theta
 PASS C04a: full three-outcome instrument is normalized at theta=pi/4
 PASS C05a: block-column dilation is an isometry at theta=pi/4
 PASS C06a: K_empty,K_left,K_right are linearly independent at theta=pi/4
@@ -13,6 +18,8 @@ PASS C07b: outcome-forgotten channel has minimal Kraus/Stinespring rank three at
 PASS C08: normalization fixes the no-record effect to qI
 PASS C09a: K_empty=sqrt(q)U realizes the complete one-Kraus polar family
 PASS C09b: K_empty=sqrt(q)U realizes the complete one-Kraus polar family
+PASS C10: theta in pi Z has Kraus span and Choi rank two: the exchange-free points minimize rank across the family
+PASS C11: an across-family minimal-rank selector prefers the exchange-free points, not a nontrivial exchange angle
 PASS E01: one-step empty effect is theta-independent
 PASS E02: one-step left effect is theta-independent
 PASS E03: one-step right effect is theta-independent
@@ -36,13 +43,15 @@ PASS H11: exchange angle changes the eventual absorbing label distribution
 PASS H12: eventual first-nonempty-outcome labels normalize at theta=pi/4
 PASS H13: eventual first-nonempty-outcome labels normalize at theta=pi/2
 PASS S01: source note exists
-PASS S02: source contains boundary marker: one-excitation sector of one unoriented edge
+PASS S02: source contains boundary marker: invariant one-excitation sector
 PASS S03: source contains boundary marker: fresh append-only outcome register
 PASS S04: source contains boundary marker: does not construct a simultaneous translation-covariant cubic QCA
 PASS S05: source contains boundary marker: does not derive the Born rule
 PASS S06: source contains boundary marker: does not establish that the axioms require amendment
-PASS S07: source contains boundary marker: Minimal outcome-forgotten-channel rank does not select the exchange angle
+PASS S07: source contains boundary marker: per-fixed-channel Stinespring/Kraus minimality
+PASS S08: source contains boundary marker: prefer the exchange-free points
+PASS S09: source contains boundary marker: zero framework premise weight
 BOUNDARY: minimality is relative to the supplied finite CP instrument/channel, not a derivation of that instrument from the axioms.
 BOUNDARY: absorbing label histories use a fresh append-only register that is not derived as a framework Record.
 BOUNDARY: the witness is a supplied one-excitation edge sector, not the full edge algebra, a cubic QCA, or a continuum theory.
-TOTAL: PASS=44 FAIL=0
+TOTAL: PASS=53 FAIL=0

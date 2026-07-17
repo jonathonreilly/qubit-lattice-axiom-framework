@@ -22,18 +22,23 @@ PASS F05d2: orthogonal additivity holds on every coordinate-projector pair
 PASS F03d4: E_0=0
 PASS F04d4: E_I=I
 PASS F05d4: orthogonal additivity holds on every coordinate-projector pair
+PASS F05x: orthogonal additivity holds on a rotated non-coordinate qubit pair
+PASS F05y: orthogonal additivity holds on a mixed-rank orthogonal pair in d=4
 PASS F06: two exact noncommuting witnesses satisfy unitary covariance
+PASS F06g: unitary covariance holds for a fully symbolic Hermitian effect
 PASS F07: the rational three-outcome input is a nonprojective POVM
 PASS F08: the hostile map preserves full POVM normalization
 PASS F09: transformed nonprojective POVM elements remain effects
-PASS F10: rejector detects a menu-length-dependent mutation on one shared projection
+PASS F10a: the two menus are normalized and share one projection
+PASS F10b: the hostile family assigns the shared projection one effect across both embedding menus
+PASS F10c: a menu-length-dependent contextual mutation assigns the shared projection different effects and is detected by the same comparison
 PASS N01: a=1/3 gives a nonprojective effect
 PASS N02: noisy self-weight is 1/2 rather than one
 PASS N03: eight exact fixtures show trace form can return the depolarized state instead of the input state
 PASS N04: rank-one repeat weight has the exact affine form
 PASS N05: repeat certainty selects a=1 inside the hostile family
 PASS C01: a PSD zero-diagonal 2x2 principal minor forces its off-diagonal entry to vanish
-PASS C02: finite exact control agrees that a real sum of two squares vanishes only at zero
+PASS C02: zero diagonal with nonzero off-diagonal forces a negative eigenvalue, so PSD is load-bearing
 PASS C03: generic d=2 Hermitian menu is jointly normalized
 PASS C04: the two repeat weights isolate the remaining diagonal b
 PASS C05: second repeat certainty forces b=0
@@ -44,11 +49,11 @@ PASS C09d2: the repeat-only hostile family fails joint normalization
 PASS C08d4: repeat certainty alone admits E_i=I
 PASS C09d4: the repeat-only hostile family fails joint normalization
 PASS S01: source note exists
-PASS S02: source contains boundary marker: readout-to-formation calibration
+PASS S02: source contains boundary marker: A physical derivation of (11) for the formation effects remains open
 PASS S03: source contains boundary marker: does not derive POVM additivity
 PASS S04: source contains boundary marker: does not derive repeat certainty from Record permanence
 PASS S05: source contains boundary marker: does not identify an outcome label as a framework Record
 PASS S06: source contains boundary marker: does not establish that the axioms require amendment
 BOUNDARY: additivity, menu normalization, effects, and repeat certainty are named conditional hypotheses with zero premise weight.
 BOUNDARY: the collapse theorem selects E_i=P_i only after the named condition RC_i=Tr(P_i E_i)=1.
-TOTAL: PASS=51 FAIL=0
+TOTAL: PASS=56 FAIL=0

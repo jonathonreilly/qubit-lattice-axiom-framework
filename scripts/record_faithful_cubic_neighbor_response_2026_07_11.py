@@ -114,8 +114,15 @@ def main() -> int:
     vector_v = flattened(vector)
     check("I03", constraints * scalar_v == sp.zeros(constraints.rows, 1), "scalar sum is equivariant")
     check("I04", constraints * vector_v == sp.zeros(constraints.rows, 1), "directed vector difference is equivariant")
+    check("I05a", sp.Matrix.hstack(scalar_v, vector_v).rank() == 2, "the two displayed maps are linearly independent")
     basis_rank = sp.Matrix.hstack(scalar_v, vector_v, *nullspace).rank()
-    check("I05", basis_rank == 2, "the displayed maps span the full nullspace")
+    check("I05b", basis_rank == 2, "adjoining the computed nullspace does not enlarge the displayed span, so the displayed maps span the full nullspace")
+    # Mutation control: a plausible but non-equivariant map (directed
+    # difference of axis 1 written into the axis-2 output slot) is rejected
+    # by the same constraint system, so the equivariance test is decisive.
+    mismatched = sp.zeros(4, 6)
+    mismatched[2, 0], mismatched[2, 1] = 1, -1
+    check("I05c", constraints * flattened(mismatched) != sp.zeros(constraints.rows, 1), "an axis-mismatched directed map fails equivariance")
 
     even_doublet_1 = sp.Matrix([1, 1, -1, -1, 0, 0])
     even_doublet_2 = sp.Matrix([1, 1, 1, 1, -2, -2])
@@ -217,24 +224,65 @@ def main() -> int:
     check("K04", symbol_reconstruction_ok, "oriented links reconstruct the Hermitian cosine-plus-sine symbol")
     check("K05", symbol_hermitian_ok, "reconstructed nearest-neighbor symbol is Hermitian")
 
-    # The exchange/Laplacian completion is exactly (m,a,b)=(6,-1,0)
-    # on the separately supplied oriented-link surface.
+    # The one-excitation-sector restriction of the edge-exchange (I-SWAP)
+    # completion, i.e. the cubic graph Laplacian on that sector, is exactly
+    # (m,a,b)=(6,-1,0) on the separately supplied oriented-link surface.
     normal_form_ok = True
     for momentum in samples:
         laplacian = 6 - 2 * sum(np.cos(value) for value in momentum)
         normal_form = (6 + 2 * (-1) * sum(np.cos(value) for value in momentum)) * identity
         normal_form_ok &= np.allclose(normal_form, laplacian * identity)
-    check("K06", normal_form_ok, "I-SWAP/Laplacian is the b=0 scalar-even normal form")
+    check("K06", normal_form_ok, "the one-excitation-sector I-SWAP restriction (cubic graph Laplacian) is the b=0 scalar-even normal form")
 
-    nontrivial_scalar_has_rank_one_spectrum = False
-    for coefficient in (-3.0, -0.5, 0.0, 2.0):
-        eigenvalues = np.linalg.eigvalsh(coefficient * identity)
-        nontrivial_scalar_has_rank_one_spectrum |= abs(eigenvalues[1] - eigenvalues[0]) > 1.0e-12
-    check("F01", not nontrivial_scalar_has_rank_one_spectrum, "scalar response has no nontrivial rank-one spectral projector")
+    # Decisive spectral-faithfulness dichotomy computed from the classified
+    # response itself.  The characteristic discriminant of
+    # F(c)=a(sum c)I + b sum_mu (c_+mu - c_-mu) Gamma_mu is derived, not
+    # assumed, so the b=0 exclusion check reads the actual response family.
+    a_sym, b_sym = sp.symbols("a_resp b_resp", real=True)
+    c_sym = sp.symbols("c1p c1m c2p c2m c3p c3m", real=True)
+    differences = (c_sym[0] - c_sym[1], c_sym[2] - c_sym[3], c_sym[4] - c_sym[5])
+    response = a_sym * sum(c_sym) * identity_s + b_sym * sum(
+        (differences[mu] * paulis_s[mu] for mu in range(3)), sp.zeros(2, 2)
+    )
+    characteristic_response = sp.expand((lam * identity_s - response).det())
+    discriminant = sp.expand(sp.discriminant(characteristic_response, lam))
+    expected_discriminant = sp.expand(4 * b_sym**2 * sum(term**2 for term in differences))
+    check("F01a", discriminant == expected_discriminant, "the response eigenvalue-gap discriminant is exactly 4 b^2 |directed difference|^2")
+    check("F01b", discriminant.subs(b_sym, 0) == 0, "at b=0 the response is degenerate for every input, so no nontrivial rank-one spectral projector exists")
 
-    check("F02", projector_ok, "nonzero vector response has simple rank-one spectral projectors")
+    # For b nonzero and a nonvanishing directed difference, the spectral
+    # projectors constructed FROM the response are simple and rank one.
+    witness_subs = {
+        a_sym: sp.Rational(1, 2),
+        b_sym: sp.Rational(1, 7),
+        c_sym[0]: 2, c_sym[1]: 0,
+        c_sym[2]: 0, c_sym[3]: 3,
+        c_sym[4]: 6, c_sym[5]: 0,
+    }
+    witness_response = response.subs(witness_subs)
+    scalar_witness = sp.Rational(1, 2) * 11
+    eig_plus, eig_minus = scalar_witness + 1, scalar_witness - 1
+    projector_plus = (witness_response - eig_minus * identity_s) / (eig_plus - eig_minus)
+    projector_minus = (witness_response - eig_plus * identity_s) / (eig_minus - eig_plus)
+    spectral_ok = (
+        sp.simplify(projector_plus**2 - projector_plus) == sp.zeros(2, 2)
+        and sp.simplify(projector_minus**2 - projector_minus) == sp.zeros(2, 2)
+        and sp.simplify(projector_plus * projector_minus) == sp.zeros(2, 2)
+        and sp.simplify(projector_plus + projector_minus - identity_s) == sp.zeros(2, 2)
+        and projector_plus.trace() == 1
+        and projector_minus.trace() == 1
+        and sp.simplify(witness_response * projector_plus - eig_plus * projector_plus) == sp.zeros(2, 2)
+        and sp.simplify(witness_response * projector_minus - eig_minus * projector_minus) == sp.zeros(2, 2)
+    )
+    check("F02", spectral_ok, "a nonzero vector response has two simple rank-one spectral projectors, constructed from the response itself")
 
-    print("BOUNDARY: F01-F02 exclude b=0 only if spectral record-faithfulness is separately supplied.")
+    # Two-sided mutation control: the discriminant vanishes for b nonzero
+    # exactly when the directed difference vanishes, so the dichotomy check
+    # reads the input as well as the coefficient.
+    balanced = {c_sym[0]: 5, c_sym[1]: 5, c_sym[2]: -2, c_sym[3]: -2, c_sym[4]: 1, c_sym[5]: 1}
+    check("F03", discriminant.subs(balanced) == 0 and discriminant.subs(witness_subs) != 0, "the discriminant separates balanced inputs from directed inputs at nonzero b")
+
+    print("BOUNDARY: F01-F03 exclude b=0 only if spectral record-faithfulness is separately supplied.")
     print("BOUNDARY: K03-K06 use a separately supplied oriented-link response-to-symbol realization.")
     print("BOUNDARY: current Admissibility does not identify availability projectors with these response coefficients.")
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

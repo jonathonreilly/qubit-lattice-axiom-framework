@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import itertools
 from pathlib import Path
 
 import sympy as sp
@@ -88,6 +87,26 @@ def structural_family_checks() -> None:
                 )
         check(f"F05d{dimension}", additive, "orthogonal additivity holds on every coordinate-projector pair")
 
+    # Coverage beyond coordinate menus: a rotated orthogonal qubit pair and a
+    # mixed-rank orthogonal resolution in d=4 are also additive under the
+    # hostile family.
+    rotated_plus = sp.Matrix([[1, 1], [1, 1]]) / 2
+    rotated_minus = sp.Matrix([[1, -1], [-1, 1]]) / 2
+    mixing = sp.Rational(2, 5)
+    check(
+        "F05x",
+        depolarized_effect(rotated_plus + rotated_minus, mixing)
+        == depolarized_effect(rotated_plus, mixing) + depolarized_effect(rotated_minus, mixing),
+        "orthogonal additivity holds on a rotated non-coordinate qubit pair",
+    )
+    rank_two = basis_menu(4)[0] + basis_menu(4)[1]
+    check(
+        "F05y",
+        depolarized_effect(rank_two + basis_menu(4)[2], mixing)
+        == depolarized_effect(rank_two, mixing) + depolarized_effect(basis_menu(4)[2], mixing),
+        "orthogonal additivity holds on a mixed-rank orthogonal pair in d=4",
+    )
+
     hadamard = sp.Matrix([[1, 1], [1, -1]]) / sp.sqrt(2)
     swap = sp.Matrix(
         [[1, 0, 0, 0], [0, 0, 1, 0], [0, 1, 0, 0], [0, 0, 0, 1]]
@@ -105,6 +124,23 @@ def structural_family_checks() -> None:
     )
     check("F06", covariant, "two exact noncommuting witnesses satisfy unitary covariance")
 
+    # Generic-input coverage: covariance holds for a fully symbolic Hermitian
+    # effect, not only for the Bell-projection witness, because the trace is
+    # unitary invariant.
+    hermitian_symbols = sp.symbols("g00 g11 gr gi", real=True)
+    generic_effect = sp.Matrix(
+        [
+            [hermitian_symbols[0], hermitian_symbols[2] + sp.I * hermitian_symbols[3]],
+            [hermitian_symbols[2] - sp.I * hermitian_symbols[3], hermitian_symbols[1]],
+        ]
+    )
+    qubit_unitary = sp.Matrix([[1, sp.I], [sp.I, 1]]) / sp.sqrt(2)
+    generic_covariant = sp.simplify(
+        depolarized_effect(qubit_unitary * generic_effect * qubit_unitary.H, mixing)
+        - qubit_unitary * depolarized_effect(generic_effect, mixing) * qubit_unitary.H
+    ) == sp.zeros(2)
+    check("F06g", generic_covariant, "unitary covariance holds for a fully symbolic Hermitian effect")
+
     povm = (
         sp.diag(sp.Rational(1, 2), 0),
         sp.diag(sp.Rational(1, 2), sp.Rational(1, 3)),
@@ -114,6 +150,11 @@ def structural_family_checks() -> None:
     check("F07", sum(povm, sp.zeros(2)) == sp.eye(2), "the rational three-outcome input is a nonprojective POVM")
     check("F08", sum(transformed, sp.zeros(2)) == sp.eye(2), "the hostile map preserves full POVM normalization")
     check("F09", all(item.is_positive_semidefinite and (sp.eye(2) - item).is_positive_semidefinite for item in transformed), "transformed nonprojective POVM elements remain effects")
+    # Noncontextuality gate.  The hostile assignment is a function of the
+    # effect alone, so one shared projection must receive one effect in every
+    # menu that contains it.  A deliberately contextual mutation whose mixing
+    # parameter depends on the menu length is detected by the same comparison,
+    # so the gate is decisive rather than self-confirming.
     shared_projection = basis_menu(2)[0]
     two_outcome_context = (shared_projection, basis_menu(2)[1])
     three_outcome_context = (
@@ -121,14 +162,30 @@ def structural_family_checks() -> None:
         basis_menu(2)[1] / 2,
         basis_menu(2)[1] / 2,
     )
-    context_mutation = (
+    contexts_valid = (
         two_outcome_context[0] == three_outcome_context[0]
         and sum(two_outcome_context, sp.zeros(2)) == sp.eye(2)
         and sum(three_outcome_context, sp.zeros(2)) == sp.eye(2)
-        and depolarized_effect(two_outcome_context[0], sp.Rational(1, 3))
-        != depolarized_effect(three_outcome_context[0], sp.Rational(2, 3))
     )
-    check("F10", context_mutation, "rejector detects a menu-length-dependent mutation on one shared projection")
+    check("F10a", contexts_valid, "the two menus are normalized and share one projection")
+
+    base_mixing = sp.Rational(1, 3)
+
+    def noncontextual_assignment(effect_input: sp.Matrix, menu: tuple) -> sp.Matrix:
+        del menu  # a function of the effect alone
+        return depolarized_effect(effect_input, base_mixing)
+
+    def contextual_mutation(effect_input: sp.Matrix, menu: tuple) -> sp.Matrix:
+        return depolarized_effect(effect_input, base_mixing / len(menu))
+
+    noncontextual_ok = noncontextual_assignment(
+        shared_projection, two_outcome_context
+    ) == noncontextual_assignment(shared_projection, three_outcome_context)
+    check("F10b", noncontextual_ok, "the hostile family assigns the shared projection one effect across both embedding menus")
+    mutation_detected = contextual_mutation(shared_projection, two_outcome_context) != contextual_mutation(
+        shared_projection, three_outcome_context
+    )
+    check("F10c", mutation_detected, "a menu-length-dependent contextual mutation assigns the shared projection different effects and is detected by the same comparison")
 
 
 def nonselection_and_duality_checks() -> None:
@@ -168,8 +225,12 @@ def general_collapse_checks() -> None:
     u, v, diagonal = sp.symbols("u v diagonal", real=True, nonnegative=True)
     principal_minor = sp.Matrix([[0, u + sp.I * v], [u - sp.I * v, diagonal]])
     check("C01", sp.expand(principal_minor.det()) == -(u**2 + v**2), "a PSD zero-diagonal 2x2 principal minor forces its off-diagonal entry to vanish")
-    rational_grid = range(-5, 6)
-    check("C02", all((x, y) == (0, 0) for x, y in itertools.product(rational_grid, repeat=2) if x * x + y * y == 0), "finite exact control agrees that a real sum of two squares vanishes only at zero")
+    # Mutation control for the PSD step: a Hermitian matrix with a zero
+    # diagonal entry and a nonzero off-diagonal entry has a negative
+    # eigenvalue, so positivity is the load-bearing hypothesis in the minor
+    # argument.
+    violating = sp.Matrix([[0, sp.Rational(1, 2)], [sp.Rational(1, 2), 1]])
+    check("C02", min(violating.eigenvals()) < 0, "zero diagonal with nonzero off-diagonal forces a negative eigenvalue, so PSD is load-bearing")
 
     # Generic d=2 Hermitian certificate. Repeat certainty for E0 fixes its
     # first diagonal to one. With E1=I-E0, repeat certainty for E1 fixes the
@@ -197,7 +258,7 @@ def source_checks() -> None:
     check("S01", path.exists(), "source note exists")
     text = path.read_text() if path.exists() else ""
     markers = (
-        "readout-to-formation calibration",
+        "A physical derivation of (11) for the formation effects remains open",
         "does not derive POVM additivity",
         "does not derive repeat certainty from Record permanence",
         "does not identify an outcome label as a framework Record",

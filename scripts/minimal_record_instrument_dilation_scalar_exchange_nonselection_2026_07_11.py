@@ -120,6 +120,37 @@ def classification_checks() -> None:
     check("C03a", common_frame_ok, "full two-qubit SWAP commutes with all common-frame su(2) generators")
     check("C03b", sp.simplify(SWAP_FULL * (I4 - SWAP_FULL) - (I4 - SWAP_FULL) * SWAP_FULL) == sp.zeros(4), "I-SWAP is even under reversal of the unoriented edge")
 
+    # Carrier bookkeeping: the common-frame invariance lives on the full
+    # two-qubit edge carrier, and the instrument's 2-D exchange branch is the
+    # exact restriction of the full-carrier family to the invariant
+    # one-excitation sector.  Basis order |00>,|01>,|10>,|11>; the sector
+    # embedding maps |L>=|10>, |R>=|01>.
+    embedding = sp.zeros(4, 2)
+    embedding[2, 0] = 1
+    embedding[1, 1] = 1
+    check("C03c", sp.simplify(SWAP_FULL * embedding - embedding * SWAP_EDGE) == sp.zeros(4, 2), "the full SWAP leaves the one-excitation sector invariant and restricts to the edge SWAP")
+
+    symmetric_projector = (I4 + SWAP_FULL) / 2
+    antisymmetric_projector = (I4 - SWAP_FULL) / 2
+    full_unitary = symmetric_projector + sp.exp(-2 * sp.I * theta) * antisymmetric_projector
+    generator_ok = (
+        sp.simplify(sp.diff(full_unitary, theta) + sp.I * (I4 - SWAP_FULL) * full_unitary) == sp.zeros(4)
+        and full_unitary.subs(theta, 0) == I4
+    )
+    check("C03d", generator_ok, "the spectral form solves dU/dtheta=-i(I-SWAP)U with U(0)=I, so it is exactly exp[-i theta (I-SWAP)] on the full carrier")
+    check("C03e", sp.simplify(full_unitary.H * full_unitary - I4) == sp.zeros(4), "the full-carrier exchange family is unitary for real theta")
+    full_frame_ok = all(
+        sp.simplify(
+            full_unitary * (sp.kronecker_product(axis, I2) + sp.kronecker_product(I2, axis))
+            - (sp.kronecker_product(axis, I2) + sp.kronecker_product(I2, axis)) * full_unitary
+        )
+        == sp.zeros(4)
+        for axis in pauli
+    )
+    check("C03f", full_frame_ok, "the full-carrier exchange family commutes with all common-frame su(2) generators at symbolic theta")
+    restriction_gap = sp.simplify(sp.expand_complex(full_unitary * embedding - embedding * scalar_exchange(theta)))
+    check("C03g", restriction_gap == sp.zeros(4, 2), "the one-excitation restriction of the full-carrier family is exactly the instrument's U_theta")
+
     for suffix, angle in (("a", sp.pi / 4), ("b", sp.pi / 2)):
         kraus = kraus_family(angle)
         resolution = sum((operator.H * operator for operator in kraus), sp.zeros(2))
@@ -138,6 +169,21 @@ def classification_checks() -> None:
     for suffix, angle in (("a", sp.pi / 4), ("b", sp.pi / 2)):
         k_empty = kraus_family(angle)[0]
         check(f"C09{suffix}", sp.simplify(k_empty.H * k_empty - Q * I2) == sp.zeros(2), "K_empty=sqrt(q)U realizes the complete one-Kraus polar family")
+
+    # Across-family control: at the exchange-free points theta in pi Z the
+    # no-record unitary is proportional to the identity, the Kraus span drops
+    # into span{P_L,P_R}, and the Choi rank is two.  A hypothetical
+    # across-family minimal-rank selector therefore prefers theta in pi Z; the
+    # nonselection headline is scoped to per-fixed-channel minimality and the
+    # equal-rank sin(theta)!=0 subfamily.
+    degenerate_ranks = []
+    for angle in (sp.Integer(0), sp.pi):
+        kraus = kraus_family(angle)
+        span_rank = sp.Matrix.hstack(*(vec(operator) for operator in kraus)).rank()
+        choi_rank = outcome_forgotten_choi(kraus).rank()
+        degenerate_ranks.append((span_rank, choi_rank))
+    check("C10", degenerate_ranks == [(2, 2), (2, 2)], "theta in pi Z has Kraus span and Choi rank two: the exchange-free points minimize rank across the family")
+    check("C11", all(rank < 3 for _, rank in degenerate_ranks), "an across-family minimal-rank selector prefers the exchange-free points, not a nontrivial exchange angle")
 
 
 def one_step_and_history_checks() -> None:
@@ -222,12 +268,14 @@ def source_boundary_checks() -> None:
     check("S01", note.exists(), "source note exists")
     text = note.read_text() if note.exists() else ""
     required = (
-        "one-excitation sector of one unoriented edge",
+        "invariant one-excitation sector",
         "fresh append-only outcome register",
         "does not construct a simultaneous translation-covariant cubic QCA",
         "does not derive the Born rule",
         "does not establish that the axioms require amendment",
-        "Minimal outcome-forgotten-channel rank does not select the exchange angle",
+        "per-fixed-channel Stinespring/Kraus minimality",
+        "prefer the exchange-free points",
+        "zero framework premise weight",
     )
     for index, marker in enumerate(required, 1):
         check(f"S{index + 1:02d}", marker in text, f"source contains boundary marker: {marker}")

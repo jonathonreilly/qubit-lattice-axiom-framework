@@ -1,7 +1,7 @@
 ---
 claim_id: minimal_record_instrument_dilation_scalar_exchange_nonselection_bounded_theorem_note_2026-07-11
 claim_type: bounded_theorem
-claim_scope: "Exact classification of one-Kraus no-record completions of a supplied two-outcome rank-one instrument on a one-excitation edge sector, plus a counterexample in which a common-frame-invariant I-SWAP branch changes eventual absorbing outcome-label weights while the outcome-forgotten channel has minimal Kraus/Choi rank three. The result uses supplied CP-instrument composition and trace weights; it does not realize the labels as framework Records, construct a cubic QCA, derive time or the Born rule, or establish that the axioms require amendment."
+claim_scope: "Exact classification of one-Kraus no-record completions of a supplied two-outcome rank-one instrument on a one-excitation edge sector, plus a counterexample in which a common-frame-invariant I-SWAP branch (invariance stated on the full two-qubit edge carrier and restricted exactly to the invariant one-excitation sector) changes eventual absorbing outcome-label weights while the outcome-forgotten channel has minimal Kraus/Choi rank three. Minimality claims are per fixed channel: rank ties at three across the sin(theta)!=0 subfamily and cannot discriminate there, while an across-family minimal-rank selector would instead prefer the exchange-free points theta in pi Z (Choi rank two), checked as a control. All inputs are supplied conditions with zero framework premise weight; the result does not realize the labels as framework Records, construct a cubic QCA, derive time or the Born rule, or establish that the axioms require amendment."
 upstream_dependencies:
   - minimal_axioms
   - record_observable_quotient_and_rank_one_formation_outcome_operation_normal_form_bounded_theorem_note_2026-07-11
@@ -34,16 +34,37 @@ common-frame-invariant `I-SWAP` family survives that classification, gives
 distinct outcome-forgotten channels of minimal Kraus/Choi rank three, is not
 dilation gauge, and changes later and eventual absorbing outcome-label weights.
 
-Therefore:
+The minimality claim must be read per fixed channel, and the two readings are
+kept separate:
 
-> minimal outcome-forgotten-channel rank does not select the exchange angle and
-> does not by itself exclude an `I-SWAP` coherent branch from the supplied
-> normalized outcome-resolved instrument class.
+> per-fixed-channel Stinespring/Kraus minimality removes representation
+> redundancy of each fixed outcome-forgotten channel and cannot compare
+> distinct channels; the minimal rank ties at three across the whole
+> `sin(theta) != 0` subfamily, so within that subfamily rank does not select
+> the exchange angle and does not by itself exclude an `I-SWAP` coherent
+> branch from the supplied normalized outcome-resolved instrument class.
 
-Minimal outcome-forgotten-channel rank does not select the exchange angle.
+An across-family minimal-rank selector is a different, additional principle,
+not a consequence of dilation minimality. On this family it would instead
+prefer the exchange-free points `theta in pi Z`, where the no-record unitary
+is proportional to the identity and the Choi rank drops to two. The runner
+checks that degenerate control exactly. Neither reading selects a nontrivial
+exchange angle: per-fixed-channel minimality cannot discriminate at all, and
+across-family rank minimization selects the exchange-free completion.
 
 This is a bounded one-excitation-sector nonselection theorem. It is not a
 framework-Record theorem or lattice-wide dynamics no-go.
+
+## Supplied conditions
+
+Every physical input below is a supplied condition carrying zero framework
+premise weight, and none acquires premise authority from this note: the finite
+CP-instrument interpretation and trace weight rule; the finite-dimensional
+Kraus/Choi representation authority; the value `q` with `0<q<1`; the pointer
+projectors `P_L, P_R` and the `L/R` label readout; the full two-qubit edge
+carrier and its one-excitation sector; sequential discrete composition; the
+fresh append-only outcome register; the stop-at-first-nonempty rule; and the
+witness initial state. The theorem discharges none of these conditions.
 
 ## Repo-science reconciliation
 
@@ -136,31 +157,46 @@ unitary outside the projector span.
 
 ## 2. Common-frame-invariant nearest-neighbor witness
 
-Take the one-excitation sector of one unoriented edge,
+The common-frame-invariance statement lives on the full two-qubit edge
+carrier `C^2 tensor C^2`, and the instrument lives on its invariant
+one-excitation sector; the two carriers are kept explicit and connected by an
+exact restriction, never exchanged mid-proof.
+
+On the full edge carrier, the full two-qubit `SWAP` commutes with every
+common-frame generator `sigma_i tensor I + I tensor sigma_i`, and the full
+exchange family
 
 ```text
-H_edge = span{|L>, |R>}.
+U_theta^full = exp[-i theta (I_4 - SWAP)]                  (6a)
 ```
 
-On this sector the site exchange is
+therefore commutes with every common one-site frame rotation `G tensor G` and
+is even under reversal of the unoriented edge.
+
+The one-excitation sector
 
 ```text
-SWAP |L> = |R>,      SWAP |R> = |L>,
+H_edge = span{|L>, |R>},      |L>=|10>,  |R>=|01>,
 ```
 
-and the exchange/Laplacian family is
+is invariant under the full `SWAP` (which acts on it as the sector exchange
+`SWAP|L>=|R>`, `SWAP|R>=|L>`) and hence under every `U_theta^full`. The
+restriction of (6a) to `H_edge` is exactly
 
 ```text
 U_theta = exp[-i theta (I-SWAP)]
         = exp(-i theta)[cos(theta) I + i sin(theta) SWAP]. (6)
 ```
 
+The runner checks the generator equation and the intertwining
+`U_theta^full V = V U_theta` for the sector embedding `V` symbolically, so
+the instrument's two-dimensional exchange branch is the exact restriction of
+the common-frame-invariant full-carrier family, not a separate object.
+
 Here `scalar-exchange` means invariant under a common one-site frame rotation
 `G tensor G` and even under reversal of the unoriented edge; it does **not**
-mean proportional to identity on the two-dimensional sector. The full
-two-qubit `SWAP` commutes with every common-frame generator
-`sigma_i tensor I + I tensor sigma_i`, and `I-SWAP` is also edge-reversal
-even. At `theta=pi/2`, `U_theta=SWAP` exactly. Choose `q=1/3` and outcome projectors
+mean proportional to identity on the two-dimensional sector. At `theta=pi/2`,
+`U_theta=SWAP` exactly on the sector. Choose `q=1/3` and outcome projectors
 `P_L=|L><L|`, `P_R=|R><R|`.
 
 At both `theta=pi/4` and `theta=pi/2`:
@@ -241,7 +277,10 @@ fixed nonempty outcome branches
 
 Implication (11) is false on the supplied finite edge. Minimality removes
 redundant dilations of each fixed channel but cannot choose among the distinct
-minimal channels labeled here by `theta`.
+minimal channels labeled here by `theta`. Reading "minimal rank" instead as an
+across-family selection principle does not rescue (11): that added principle
+selects the exchange-free points `theta in pi Z` (Choi rank two), i.e. the
+scalar completion, not a unique nonscalar coherent carrier.
 
 This result is stronger than tensoring an outcome-null SWAP spectator onto an
 instrument: the exchange acts on the same pre-outcome carrier and changes the
@@ -266,8 +305,9 @@ selectors remain live:
 - select the continuum scaling and test whether scalar branches fail the
   relativistic/unitary limit.
 
-Those are the ordered effect, instrument, time, cubic-tick, and continuum
-campaigns. This finite witness cannot prejudge them.
+Those remain separate open derivation targets: effect selection, instrument
+composition, event order/time, the strict cubic tick, and continuum scaling.
+This finite witness cannot prejudge them.
 
 ## 6. Axiom-set implication
 
@@ -281,16 +321,15 @@ primitive, a strict cubic-tick classification, or the continuum consistency
 conditions. None is equivalent to changing an axiom merely because it is not
 yet derived.
 
-Accordingly the campaign continues to effect selection/Born. The owner stop
-condition is not triggered.
-
 ## Boundaries
 
 - CP structure, the trace weight rule, the finite-dimensional Kraus/Choi
   theorem, `q`, and sequential composition are supplied mathematical/physical
-  hypotheses; this note does not derive the Born rule.
-- The pointer projectors and the `L/R` readout are supplied. Their selection is
-  the next campaign.
+  hypotheses; this note does not derive the Born rule. The full list of
+  supplied conditions and their collective zero-premise-weight custody is in
+  the Supplied conditions section above.
+- The pointer projectors and the `L/R` readout are supplied. Their selection
+  remains a separate open derivation target.
 - The witness initial state `rho=|L><L|` and the rule to repeat only while the
   outcome is empty and stop at the first `L/R` outcome are supplied. They are
   not state-selection or event-order derivations.
@@ -301,7 +340,12 @@ condition is not triggered.
   one-excitation sector. No instrument on the full two-qubit edge algebra, full
   cubic-lattice, per-mode, infinite-volume, or continuum result is asserted.
 - `theta=0 mod pi` is a rank-degenerate special case for the
-  outcome-forgotten channel; the two tested nonzero angles have rank three.
+  outcome-forgotten channel (Choi rank two); the two tested nonzero angles
+  have rank three. The runner checks the degenerate points as the
+  across-family control: a hypothetical across-family minimal-rank selector
+  would prefer these exchange-free points, so the nonselection headline is
+  scoped to per-fixed-channel minimality and to the equal-rank
+  `sin(theta) != 0` subfamily.
 - `q=0` removes the coherent no-record branch and `q=1` removes nonempty
   formation; the theorem assumes `0<q<1`.
 - Outcome-side coarse graining can erase the distinction. The witness uses the
@@ -314,5 +358,7 @@ python3 scripts/minimal_record_instrument_dilation_scalar_exchange_nonselection_
 ```
 
 The runner checks exact unitarity, normalization, isometry, Kraus/Choi rank,
-effect equality, nonempty-outcome-branch equality, two-step weights, eventual
-absorbing label weights, channel inequivalence, and source-boundary markers.
+the full-carrier common-frame invariance and its exact one-excitation-sector
+restriction, the `theta in pi Z` across-family rank control, effect equality,
+nonempty-outcome-branch equality, two-step weights, eventual absorbing label
+weights, channel inequivalence, and source-boundary markers.

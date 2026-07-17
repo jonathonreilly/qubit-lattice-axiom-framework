@@ -1,7 +1,7 @@
 ---
 claim_id: born_form_menu_outcome_threshold_and_mixed_projective_forcing_bounded_theorem_note_2026-07-17
 claim_type: bounded_theorem
-claim_scope: "Bridge-conditional completion of the menu-family map at one site, three exact slices. Outcome threshold: two-outcome effect menus force nothing beyond the complement law (an exact smooth non-Born witness satisfies every binary normalization), while adding three-outcome effect menus restores partial additivity and with it the landed effect-grade forcing chain at every finite dimension — the outcome-count threshold for the effect-grade forcing is exactly three. Mixture forcing: the mixed-projective menu family (finite classical mixtures of binary projective measurements and coins with exact outcome splitting and merging) forces the Born trace form on its element domain at one site, with no imported literature theorem, through a decomposition-invariance lemma. Incomparability: the mixed-projective and scaled-projector forcing families are inclusion-incomparable (a merged two-direction element lies outside the scaled family; the coplanar three-element menu admits no mixture presentation), so the witnessed forcing families form no chain and no unique inclusion-minimal forcing family exists among them. No menu family is selected; no minimality within any chain is claimed; the grading primitive is assumed here, not adopted."
+claim_scope: "Bridge-conditional execution of the lane's two remaining planned slices plus a family-map corollary. Outcome threshold: two-outcome effect menus do not force the Born trace form (an exact smooth non-Born witness satisfies every binary normalization on the full effect domain; the complement law is all the normalization the binary surface states), while adding three-outcome effect menus restores partial additivity, which iterates to the homogeneity the landed chain needs with no menu of arity above three — the outcome-count threshold for the effect-grade forcing is exactly three, at one site as witnessed and at every finite region dimension once the hypotheses are stated on that region's effect algebra. Mixture forcing: the mixed-projective menu family (finite classical mixtures of binary projective measurements and coins with exact outcome splitting and merging) forces the Born trace form on its element domain at one site, with no imported literature theorem, through a decomposition-invariance lemma. Incomparability: the mixed-projective and scaled-projector forcing families are inclusion-incomparable (a merged two-direction element lies outside the scaled family; the coplanar three-element menu admits no mixture presentation), so the witnessed forcing families form no chain and no unique inclusion-minimal forcing family exists among them. No menu family is selected; no minimality within any chain is claimed; the grading primitive is assumed here, not adopted."
 upstream_dependencies:
   - minimal_axioms
   - born_form_effect_menu_sitewise_forcing_and_product_menu_boundary_bounded_theorem_note_2026-07-17
@@ -38,14 +38,16 @@ Two named slices remained: the normalization ingredient itself (what
 happens when menu additivity is weakened by outcome count — the lane's
 parked additivity boundary), and a native rendering of the comparator
 mixture class (projective measurements plus classical randomness and
-processing). This note takes both, and closes the map with an
-incomparability statement:
+processing). This note takes both, and adds a family-map corollary; the
+full classification of forcing families stays open:
 
 - **Outcome threshold.** Two-outcome menus, on the full effect domain,
-  force nothing beyond the complement law: an exact smooth witness
-  satisfies every binary normalization and is no trace form. Adding
-  three-outcome menus restores partial additivity and with it the parent
-  forcing chain. The threshold is exactly three.
+  do not force the Born trace form: an exact smooth witness satisfies
+  every binary normalization and is no trace form (its value on the coin
+  `(1/4)1` is `1/28`, where every normalized trace form gives `1/4`).
+  Adding three-outcome menus restores partial additivity, which iterates
+  to the homogeneity the parent chain needs. The threshold is exactly
+  three.
 - **Mixed-projective forcing.** The family of menus presentable as finite
   classical mixtures of binary projective measurements and coins, with
   exact outcome splitting and merging, forces the Born form on its element
@@ -82,12 +84,14 @@ supplies.
 
 ## Hypotheses
 
-Let `E(H)` be the effect algebra of one site (`H = C^2`). Throughout, `w`
+Let `H_Λ` be the Hilbert space of a finite region (`d = 2^{|Λ|} ≥ 2`) and
+`E(H_Λ)` its effect algebra; the witnesses of T1 and the mixture family of
+X1 live at one site (`H = C^2`), and are so labeled. Throughout, `w`
 is a weight with `w(0) = 0`, `w(1) = 1`, `0 ≤ w ≤ 1`, defined on the stated
 domain, and a function of the effect alone (its value does not depend on
 which eligible menu embeds the effect).
 
-**(G1) two-outcome eligibility.** `w` is defined on all of `E(H)`; every
+**(G1) two-outcome eligibility.** `w` is defined on all of `E(H_Λ)`; every
 binary effect menu `{E, 1 − E}` (and the trivial menu `{1}`) is eligible
 and normalized: `w(E) + w(1 − E) = 1`.
 
@@ -125,10 +129,13 @@ alone the Born form is not forced. Witness: with
   `w_0` is a function of the effect alone, `w_0(0) = 0`, `w_0(1) = 1`,
   `0 ≤ w_0 ≤ 1`, and `w_0(E) + w_0(1−E) = 1` for every effect `E` — every
   binary normalization holds.
-- `w_0` is no trace form: on the `z`-axis projector family,
-  `w_0(P(n)) = f((2 + n_z)/4)`, and the three exact values
-  `n_z ∈ {0, 1/2, 1}` give `1/2`, `125/152`, `27/28`, while any trace form
-  is affine in `n_z` and would give `41/56 ≠ 125/152` at the midpoint.
+- `w_0` is no trace form, by one exact coin value: every normalized trace
+  form gives `Tr(ρ (1/4)1) = 1/4`, while `w_0((1/4)1) = f(1/4) = 1/28`.
+  As a secondary exhibit, `w_0(P(n)) = f((2 + n_z)/4)` depends on `n_z`
+  alone, so a matching trace form would need vanishing `x, y` Bloch
+  coefficients and affinity in `n_z`, while the exact values at
+  `n_z ∈ {0, 1/2, 1}` are `1/2`, `125/152`, `27/28` and the affine
+  midpoint prediction is `41/56 ≠ 125/152`.
 - The parent chains fail on this surface at their first step: partial
   additivity is unavailable, and indeed `w_0` violates the ternary menu
   `{(1/4)1, (1/4)1, (1/2)1}` exactly:
@@ -141,13 +148,17 @@ insufficiency as folklore, and the witness here is native and gated.
 **T2 (three-outcome threshold).** Under G1 + G2, for effects with
 `E_1 + E_2 ≤ 1`, the ternary menu `{E_1, E_2, 1 − E_1 − E_2}` and the
 binary menu `{E_1 + E_2, 1 − E_1 − E_2}` eliminate to partial additivity
-`w(E_1 + E_2) = w(E_1) + w(E_2)` — the parent block's step (A) verbatim,
-with its only ternary input now supplied by G2. The parent steps (B)-(E)
-then apply unchanged, so the Born trace form is forced on the effect
-algebra at every finite dimension. Combined with T1: **the outcome-count
-threshold for the effect-grade forcing is exactly three** — binary
-normalization admits the T1 witness, ternary normalization kills it (the
-exact violation above) and forces the form. No claim is made about
+`w(E_1 + E_2) = w(E_1) + w(E_2)` — the parent block's step (A), with its
+only ternary input now supplied by G2. Partial additivity then iterates
+pairwise to `w(kE') = k·w(E')` for integer scalings inside the effect
+interval, giving the parent step (B)'s rational homogeneity, monotonicity,
+and squeeze with no menu of arity above three; the parent steps (C)-(E)
+apply as written. The Born trace form is therefore forced on `E(H_Λ)` at
+every finite region dimension, with G1-G2 stated on that region's effect
+algebra. Combined with T1: **the outcome-count threshold for the
+effect-grade forcing is exactly three** — binary normalization admits the
+T1 one-site witness (so no universal forcing holds), ternary
+normalization kills it (the exact violation above) and forces the form. No claim is made about
 families between (binary plus some proper subset of ternary menus), and
 none about minimality within the ternary surface. The two-versus-three
 step is structurally reminiscent of the pairwise-versus-triple level in
@@ -182,17 +193,23 @@ imported literature theorem:
   axis-cancellation identity gives two admissible decompositions of one
   operator:
 
-  > `(c_0/2) P(n) + Σ_a (c_0 |n_a|/2) P(−sign(n_a) e_a)
+  > `(c_0/2) P(n) + Σ_{a : n_a ≠ 0} (c_0 |n_a|/2) P(−sign(n_a) e_a)
   >  = (1/2) 1 = (1/2) P(m) + (1/2) P(−m)`,
 
   with `c_0 = 2/(1+L)`, `L = Σ_a |n_a|`, and total coefficient mass `1` on
   each side. The merge lemma and the complement law then eliminate to the
   parent's affinity equation, so `g(n) = (1 + n·s)/2` with
   `s_a = 2 g(e_a) − 1`; positivity gives `|s| ≤ 1` as in the parent, and
-  `σ = (1 + s·σ)/2` represents `w` on every element of `D_mix` (each
-  element is a sum of pieces, and its value is the matching sum by the
-  merge lemma, which is `Tr(σ ·)` of the element). Uniqueness follows from
-  the axis values.
+  `σ = (1 + s·σ)/2` represents `w` on every element of `D_mix`: for any
+  element `E` of a presentation, refine the presentation so that `E` stays
+  merged while every piece not assigned to `E` is a separate outcome; each
+  separate outcome is a single piece with value fixed by ray homogeneity
+  or the coin values, so normalization gives `w(E)` as one minus their
+  sum, which is the matching sum of `E`'s own piece values, i.e.
+  `Tr(σE)`. This covers elements of arbitrary trace (the merge-lemma menu
+  of (b) is the special case where the complement pieces are single
+  outcomes and a coin); the runner gates a trace-exceeding-one instance
+  exactly. Uniqueness follows from the axis values.
 
 The comparator statement (Wright-Weigert 2019) reaches a Born-forcing
 conclusion for their mixture class; T3 is the native theorem for this
@@ -224,7 +241,8 @@ maps the witnessed ones only.
 **T5 (scaled-grade two-outcome corollary).** A binary menu `{E, 1−E}`
 inside the scaled-projector family forces `E ∈ {cP(n) : c = 1}` or
 `E = c1` (the complement `1 − cP(n)` has eigenvalues `{1−c, 1}`, which
-match a scaled-projector or identity pattern only at `c = 1`), so binary
+match a scaled rank-1 pattern only at `c = 1` and an identity pattern
+only at the excluded endpoint `c = 0`), so binary
 scaled menus are exactly the projective menus and coins — a subfamily of
 the parent block's paired subfamily, whose non-forcing is already
 witnessed there twice. The outcome-count threshold is thus consistent
@@ -253,17 +271,26 @@ jointly:
   properties are gated; the T4 argument's parallelism step is stated and
   gated as the rank-1 piece condition.
 - **N4 residual matching:** the cited prior negatives are the parent
-  blocks' rogue-existence results, reused at the same resolutions.
+  blocks' rogue-existence results, reused at the same resolutions; the T4
+  obstruction cites no prior wall — its witness basis is the exact
+  parallelism and coin gates of this note's own runner.
 - **N5 rhetoric audit:** "forces nothing beyond the complement law" is
   scoped to G1 on the effect domain at one site; "no mixture
   presentation" is scoped to the exact X1 presentation form; "no unique
   inclusion-minimal forcing family" is scoped to the witnessed families.
 - **N6 partial-closure scan:** closure paths named — G2 (ternary), X1
   (mixtures), the parent families; none is foreclosed.
-- **N7 steelman:** "binary menus are the physical case, so the boundary
-  kills the program." Reply: T2 shows one added outcome restores the full
-  forcing; which menus record formation supplies is exactly the underived
-  registration question, and the note selects nothing.
+- **N7 steelman (T1):** "binary menus are the physical case, so the
+  boundary kills the program." Reply: T2 shows one added outcome restores
+  the full forcing; which menus record formation supplies is exactly the
+  underived registration question, and the note selects nothing.
+- **N7 steelman (T4):** "sub-splitting pieces or adding extra components
+  could evade the parallelism obstruction." Reply: every piece is
+  positive semidefinite, so pieces cannot cancel; a nonzero PSD summand
+  below a rank-1 element is supported on that element's ray (gated), so
+  sub-splitting only multiplies parallel pieces, extra components'
+  opposite outcomes still need parallel homes that the coplanar menu does
+  not contain, and coin pieces are full-rank; the obstruction stands.
 - **N8 cross-cycle echo:** the parent walls were crossed by enlarging the
   menu family; T2 records the same mechanism (ternary menus), and T4
   shows two enlargements that force are mutually non-substitutable.
@@ -292,7 +319,10 @@ all-real-parameter steps are carried by the written proof, with the runner
 gating their load-bearing identities: the `f`-identities (complement,
 endpoints, denominator lower bound) symbolically; the T1 witness values
 and the exact three-point non-affinity; the exact ternary violation
-`4/7 ≠ 1`; the step-(A) elimination with its ternary input flagged; the
+`4/7 ≠ 1`; the one-line coin refutation (`1/28` versus the trace-form
+`1/4`, with the trace value derived on a generic normalized state); the
+trace-exceeding-one merged element `(4/5)P(n) + (3/5)P(−n)` taking its
+matching sum by the separate-outcomes route; the step-(A) elimination with its ternary input flagged; the
 merge-lemma elimination; the halved axis-cancellation identity as two
 decompositions of `(1/2)1` and the resulting affinity equation; the
 presentation gates for the menus T3 uses (splits, coins, merge menus);
@@ -305,4 +335,4 @@ and both parent notes. Mutation checks (one load-bearing mutation per
 check family, reverted) are recorded in the review history and PR body.
 
 Measured runner total after final verification:
-`TOTAL: PASS=42 FAIL=0`.
+`TOTAL: PASS=44 FAIL=0`.

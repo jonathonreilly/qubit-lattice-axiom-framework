@@ -629,6 +629,71 @@ def main():
         sp.simplify(merged_trace - merged_target) == 0,
     )
 
+    rho_a, rho_d, rho_x, rho_y = sp.symbols(
+        "rho_a rho_d rho_x rho_y", real=True
+    )
+    generic_state = sp.Matrix(
+        [[rho_a, rho_x - sp.I * rho_y], [rho_x + sp.I * rho_y, rho_d]]
+    )
+    coin_trace_value = sp.simplify(
+        sp.trace(generic_state * sp.Rational(1, 4) * I2).subs(
+            rho_d, 1 - rho_a
+        )
+    )
+    runner.check(
+        "T1f-coin-refutation",
+        "every normalized trace form gives 1/4 on the quarter coin while the witness gives 1/28",
+        coin_trace_value == sp.Rational(1, 4)
+        and witness_f(sp.Rational(1, 4)) == sp.Rational(1, 28)
+        and sp.Rational(1, 28) != sp.Rational(1, 4),
+    )
+
+    heavy_a, heavy_b = sp.Rational(4, 5), sp.Rational(3, 5)
+    heavy_element = heavy_a * bloch_projector(e_z) + heavy_b * bloch_projector(
+        tuple(-entry for entry in e_z)
+    )
+    heavy_menu = (
+        heavy_element,
+        (1 - heavy_a) * bloch_projector(e_z),
+        (1 - heavy_b) * bloch_projector(tuple(-entry for entry in e_z)),
+    )
+    g_heavy, w_heavy = sp.symbols("g_heavy w_heavy", real=True)
+    heavy_solution = sp.solve(
+        [
+            sp.Eq(
+                w_heavy
+                + (1 - heavy_a) * g_heavy
+                + (1 - heavy_b) * (1 - g_heavy),
+                1,
+            )
+        ],
+        w_heavy,
+        dict=True,
+    )
+    heavy_matching_sum = sp.simplify(
+        heavy_a * g_heavy + heavy_b * (1 - g_heavy)
+    )
+    s_z_only = sp.symbols("s_z_only", real=True)
+    sigma_z_only = (I2 + s_z_only * sz) / 2
+    heavy_trace = sp.simplify(sp.trace(sigma_z_only * heavy_element))
+    heavy_affine = sp.simplify(
+        heavy_a * (1 + s_z_only) / 2 + heavy_b * (1 - s_z_only) / 2
+    )
+    runner.check(
+        "T3f-heavy-element",
+        "a trace-exceeding-one merged element takes its matching sum by the separate-outcomes route",
+        sp.simplify(sp.trace(heavy_element) - sp.Rational(7, 5)) == 0
+        and matrix_is_zero(sum(heavy_menu, sp.zeros(2)) - I2)
+        and len(heavy_solution) == 1
+        and sp.simplify(heavy_solution[0][w_heavy] - heavy_matching_sum) == 0
+        and sp.simplify(
+            heavy_matching_sum.subs(g_heavy, (1 + s_z_only) / 2)
+            - heavy_trace
+        )
+        == 0
+        and sp.simplify(heavy_trace - heavy_affine) == 0,
+    )
+
     # Group T4 - incomparability
     merged_element = (
         sp.Rational(1, 2) * bloch_projector(e_z)

@@ -25,7 +25,11 @@ next_trace_action: >
   from a physics loop).
 ```
 
-Notes: the negative slices (T1 binary boundary; T4 non-presentability)
+Notes: the structured `target_claim_id` field carries the primary target
+(block01's E2 surface); the block02 open-increment text quoted in
+`target_blocker_text` is the secondary support surface, named there
+because the schema carries a single structured target. The negative
+slices (T1 binary boundary; T4 non-presentability)
 prune, at the sub-claim level, the routes "force from binary menus alone"
 and "present the coplanar menu as a mixture", each with reopen conditions
 named (add ternary menus; change the presentation form). Lineage: both

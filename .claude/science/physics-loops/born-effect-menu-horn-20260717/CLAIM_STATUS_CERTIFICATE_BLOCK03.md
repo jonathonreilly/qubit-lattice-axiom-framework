@@ -52,7 +52,8 @@ bare_retained_allowed: false
   ingredient itself (outcome count) and adds a presentation-defined family
   with a different forcing mechanism (decomposition invariance, not
   spanning/Riesz and not the direct axis menu). The incomparability
-  corollary is a new claim kind in the lane (classification).
+  corollary is a new content kind in the lane (a family-map corollary;
+  its audit claim_type is bounded_theorem like the rest).
 
 ## No-Go Discipline Gate (N1-N8)
 
@@ -69,22 +70,25 @@ Run per the physics-loop skill's evaluator brief before opening this PR:
    normalization (G1/G2), the presentation-defined mixture family (X1),
    the merge lemma, the smooth binary witness, and the incomparability
    argument are all absent from PRs #5472/#5476.
-2. Distinct claim type: YES — this block contains the lane's first
-   normalization-ingredient boundary and its first classification
-   statement (no-chain/no-unique-minimal), alongside a forcing theorem
-   with a new mechanism.
+2. Distinct artifact kind (content sense; the audit claim_type remains
+   bounded_theorem): YES — the lane's first normalization-ingredient
+   boundary and its first family-map corollary (no-chain /
+   no-unique-minimal), alongside a forcing theorem with a new mechanism.
 3. Independent reviewability: YES — the note is self-contained modulo the
    two declared parent dependencies, with its own runner and witnesses;
    it does not restate the parents' content.
 4. Marginal review value: YES — it closes both remaining parked queue
    slices in one review surface rather than two.
 
-Verdict: OPEN.
+Cluster-cap evaluator outcome: OPEN-the-PR (the skill's open-vs-backlog
+decision only; not an audit outcome, status word, or verdict prediction).
 
 ## Review-loop disposition
 
-pending — to be replaced with the actual block03 panel outcome in
-`REVIEW_HISTORY.md` before the PR opens.
+pass — four-lens panel: lens 1 clean; lens 3 no-counterexample with four
+adopted repairs; lens 4 governance corrections all applied; lens 5
+convergent narrowings applied. Post-fix runner 44/0; 12 mutation families
+FAIL correctly; details in REVIEW_HISTORY.md.
 
 Independent audit remains required before any effective-status change; this
 certificate predicts no verdict. Bare retained status is never set by this

@@ -11,7 +11,7 @@ Block 03 completes the lane's menu-family map at session scale, taking both
 remaining executable queue slices in one block:
 
 - **T1/T2 — The outcome-count threshold is exactly three.** Two-outcome
-  effect menus force nothing beyond the complement law: the smooth witness
+  effect menus do not force the Born trace form: the smooth witness
   `w0 = f(Tr(sigma0 ·))`, `f(t) = t^3/(t^3+(1-t)^3)`, satisfies every
   binary normalization exactly and refutes every trace form (exact
   three-point non-affinity), while violating the ternary menu
@@ -44,7 +44,7 @@ remaining executable queue slices in one block:
 ## Changes
 
 - `docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md`
-- `scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py` (NN gates)
+- `scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py` (44 gates)
 - `logs/runner-cache/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.txt` (SHA-pinned)
 - `docs/audit/data/citation_graph_manifest.json` (stage-18 refresh: 1 added node relative to block02)
 - Loop pack block03 files under `.claude/science/physics-loops/born-effect-menu-horn-20260717/`
@@ -58,21 +58,33 @@ and T4 negatives inline in the note.
 ## Review rounds applied
 
 Supervisor pre-battery (10/10) before authoring. Four-lens adversarial
-panel (convention/sign, independent algebra on the note alone,
-governance/status, overclaim-with-parent-characterization): (to fill).
+panel: lens 1 clean (0/0/0, incl. flip-sign self-test); lens 3 found no
+counterexample and contributed four adopted repairs (coin-primary T1
+refutation gated on a generic normalized state; region-general
+hypothesis restatement; separate-outcomes representation route for
+trace>1 merged elements, gated at trace 7/5; sign(0) and c=0 endpoint
+fixes); lens 4 governance corrections all applied (T4's own N4/N6/N7
+including a PSD-parallelism steelman; "force nothing" narrowed;
+dimension scoping; trace-gate target clarity; cluster-cap wording
+de-collided); lens 5 convergent narrowings applied (iterated-pairwise
+homogeneity wording; planned-slices completion instead of map
+completion). Synthesis in REVIEW_HISTORY.md.
 
 ## Mutation checks
 
-(to fill)
+Twelve families (F, T1, T1f, T2, T3b, T3c, T3d, T3f, T4a, T4c-parallel,
+T5, N), one load-bearing mutation each, all FAIL correctly — including
+the T4c probe whose parallel degradation fails exactly per the
+parallelism lemma. Table in REVIEW_HISTORY.md.
 
 ## Test plan
 
-- [ ] Runner `TOTAL: PASS=NN FAIL=0`; cache SHA-pinned and verified
-- [ ] Pipeline clean on stacked branch; derived churn restored to the
+- [x] Runner `TOTAL: PASS=44 FAIL=0`; cache SHA-pinned and verified
+- [x] Pipeline clean on stacked branch; derived churn restored to the
       block02 branch state; locally seeded shards dropped; only the
       manifest delta staged
-- [ ] audit_lint --strict OK; vocab_lint clean
-- [ ] Quotes machine-verified bidirectionally (both parents + axiom memo)
+- [x] audit_lint --strict OK; vocab_lint clean
+- [x] Quotes machine-verified bidirectionally (both parents + axiom memo)
 
 Independent audit remains required; landing is not ratification; retention
 is the audit lane's decision alone.

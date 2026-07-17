@@ -235,7 +235,45 @@ Unmutated runner: `TOTAL: PASS=42 FAIL=0` (worker + supervisor re-runs);
 cache SHA-pinned and verified; `__TOTAL__` resolved to 42 only after the
 runner was final.
 
-## Round 1 — block03 four-lens adversarial panel (pending)
+## Round 1 — block03 four-lens adversarial panel (delivered; synthesized)
+
+- Lens 1 (convention/sign): 0/0/0 — recomputed sigma0, merge/axis signs
+  (incl. a flip-sign self-test), T4c eigenvalues, T5 spectra.
+- Lens 3 (independent algebra): no counterexample vs T1-T5; four repairs:
+  cleaner coin-based T1 refutation; region-general G1-G2 restatement;
+  merge-lemma coverage for trace>1 elements (separate-outcomes route);
+  sign(0) omission clause; T5 c=0 endpoint mention.
+- Lens 4 (governance): FAIL as written — T4 lacked its own N4/N6/N7
+  entries; "force nothing beyond the complement law" overbroad; dimension
+  mismatch; trace-gate single-target ambiguity; "classification"/"OPEN"
+  collided with controlled vocabulary. All corrected.
+- Lens 5 (overclaim + parent characterization): runner total confirmed;
+  parent quotes accurate; converged with lens 3 on the T1 refutation
+  route, the step-(B) iterated-pairwise-homogeneity wording, the D_mix
+  representation route, and "map completion" softened to planned-slices
+  completion.
+
+### Dispositions (all applied before the PR)
+
+1. T1 refutation now coin-primary (`w0((1/4)1) = 1/28` vs trace `1/4`,
+   gated T1f with a generic-state derivation) with the three-point exhibit
+   corrected (azimuth clause). 2. "Force nothing beyond the complement
+   law" narrowed to "do not force the Born trace form" everywhere.
+3. G1-G2 stated on finite-region effect algebras; witnesses labeled
+   one-site; T2 forcing claim scoped accordingly with iterated-pairwise
+   homogeneity replacing "steps (B)-(E) apply unchanged". 4. D_mix
+   representation argued by the separate-outcomes refinement, gated on a
+   trace-7/5 element (T3f). 5. sign(0) qualifier added to the halved axis
+   display. 6. T5 endpoint parenthetical fixed. 7. N4/N6/N7 completed for
+   T4 (PSD-parallelism steelman). 8. Certificate cluster-cap wording
+   de-collided ("distinct artifact kind (content sense)"; "OPEN-the-PR");
+   trace-gate primary/secondary target note added.
+
+Post-fix: runner `TOTAL: PASS=44 FAIL=0` (42 + T1f + T3f); both new
+families mutation-probed FAIL correctly; cache re-pinned; note total
+synced to 44.
+
+### Round 1 disposition after fixes: pass
 
 ## Round 2 (block01) — external reviewer reconciliation finding: REPAIRED
 

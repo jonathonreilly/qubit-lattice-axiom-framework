@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py
-runner_sha256: a90756fe56e93db7c5398594b281b994b12875ac827908e01ffa31073d90e04b
+runner_sha256: 6f6e75bb73a13a18bcfadf22a35bb16d0c29e464162dd140aee4549f8b7b87e7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.54
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 PASS: F1-complement f(t)+f(1-t)=1 identically
@@ -31,6 +31,8 @@ PASS: T3c-antipodal-witness the rational antipodal comparison is the same I/2 wi
 PASS: T3d-positive the merge equation and complements eliminate to positive-octant affinity
 PASS: T3d-other-octant explicit sign branches give the same affinity in a mixed-sign octant
 PASS: T3e the trace form on a merged element is the matching sum of affine values
+PASS: T1f-coin-refutation every normalized trace form gives 1/4 on the quarter coin while the witness gives 1/28
+PASS: T3f-heavy-element a trace-exceeding-one merged element takes its matching sum by the separate-outcomes route
 PASS: T4a-spectrum the merged two-direction element has the two exact distinct nonzero eigenvalues
 PASS: T4a-membership the merged spectrum matches neither a rank-one scaled ray nor an identity ray
 PASS: T4b-menu the exact coplanar scaled-projector menu sums to identity
@@ -48,7 +50,7 @@ PASS: N3 the scaled-projector parent states the paired-subfamily boundary
 PASS: N4-claim the source note pins its exact claim identifier
 PASS: N4-labels the source note contains all three grading hypothesis labels
 PASS: N4-threshold the source note states the exact three-outcome threshold
-TOTAL: PASS=42 FAIL=0
+TOTAL: PASS=44 FAIL=0
 
 ----- stderr -----
 

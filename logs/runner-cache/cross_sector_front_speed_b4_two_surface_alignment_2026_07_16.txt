@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cross_sector_front_speed_b4_two_surface_alignment_2026_07_16.py
-runner_sha256: 904cc8aace891264849568b19327660e1f76c5be366aee19ae9f7fa9d784754f
-timeout_sec: 3600
+runner_sha256: 463b17b1537811a1ed0c7c7dfedf1ae5f9a06b516a3d6c2f39c699735c37daa5
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 5.93
+elapsed_sec: 6.42
 status: ok
 ----- stdout -----
 Cross-sector front-speed B4 two-surface alignment -- bounded-theorem runner
@@ -11,7 +11,7 @@ Cross-sector front-speed B4 two-surface alignment -- bounded-theorem runner
  `taste_orbit_summed_front_speed_readout_context`; see companion note)
 
 ==============================================================================
-V1 -- Clifford (both sets), W_B conjugation, cos-vertex taste covariance
+Clifford (both sets), W_B conjugation, cos-vertex taste covariance (V1)
 ==============================================================================
 [PASS] Clifford {g,g}=2delta (taste kron set)  ::  |max dev| < 1e-12 (bound holds; residual suppressed)
 [PASS] Clifford {g,g}=2delta (seagull block set)  ::  |max dev| < 1e-12 (bound holds; residual suppressed)
@@ -19,15 +19,16 @@ V1 -- Clifford (both sets), W_B conjugation, cos-vertex taste covariance
 [PASS] gauged cos vertex taste-covariant: cos(p+piB-q/2)=(-1)^B cos(p-q/2)  ::  |worst dev (all 16 B, 5 random p,q)| < 1e-12 (bound holds; residual suppressed)
 
 ==============================================================================
-V2 -- gauge sector: seagull-completed transverse Pi, B4 isotropy, eta=1
+Gauge sector: seagull-completed transverse Pi, B4 isotropy, eta=1 (V2)
 ==============================================================================
-[PASS] Ward khat_mu Pi_munu transverse < 5% WITH seagull (N=12)  ::  worst violation=0.0169 < 0.05
-[PASS] bubble (no seagull) Ward violation is LARGE (seagull is load-bearing)  ::  bubble min=0.3123 > 0.05 and > 3x seagull worst
+[PASS] normalized Ward residual |khat.Pi|/(|khat||Pi|) < 5% WITH seagull (N=12)  ::  worst residual=0.0426 < 0.05
+[PASS] bubble (no seagull) Ward residual is LARGE (seagull is load-bearing)  ::  bubble min=0.7390 > 0.25 and > 3x seagull worst
+[PASS] DEFORMED-kernel Pi stays transverse (v_mu in propagators, vertices, seagull; eps=0.10)  ::  worst residual=0.0447 < 0.05
 [PASS] B4 isotropy at v=1: piT(temporal)==piT(spatial) (< 1e-8)  ::  |max piT diff (q in {0.5,0.3,0.18})| < 1e-8 (bound holds; residual suppressed)
 [PASS] eta=1 fixed point: induced Pi anisotropy vanishes at eps=0  ::  |induced(0)| < 1e-8 (bound holds; residual suppressed)
 
 ==============================================================================
-V3 -- fermion sector: three kernels (rainbow; gauged Feynman; gauged Landau)
+Fermion sector: three kernels -- rainbow, gauged Feynman, gauged Landau (V3)
 ==============================================================================
 [PASS] NON-DEGENERACY: Sigma(B=0) != Sigma(B_rep) (taste shift visible)  ::  ||dSigma||=0.0139 > 1e-4
 [PASS] rainbow PER-TASTE anisotropy A(B_rep) ~ -0.2 (NONZERO, negative)  ::  A=-0.1950 curv=[1.8551, 2.1476, 2.1476, 1.8551]
@@ -42,26 +43,31 @@ V3 -- fermion sector: three kernels (rainbow; gauged Feynman; gauged Landau)
 [PASS] PER-TASTE value KERNEL-DEPENDENT at matched N=10 (3 kernels, signs differ)  ::  A(rainbow)=-0.1808 A(Feynman)=+0.2471 A(Landau)=-0.0624 min pairwise sep=0.1184 > 0.03
 
 ==============================================================================
-V4 -- off-surface controls, mutual unconstraint, tadpole direction test
+Off-surface controls, deformation-response witness, tadpole direction test (V4)
 ==============================================================================
 [PASS] rainbow xi=0.7 orbit anisotropy NONZERO off-surface  ::  A(xi=0.7)=+0.0009, |A| > 1e-4
 [PASS] rainbow xi=1.3 orbit anisotropy NONZERO off-surface  ::  A(xi=1.3)=-0.0013, |A| > 1e-4
-[PASS] xi<1 / xi>1 STRADDLE in sign (xi=1 isolated zero)  ::  sign(0.7)=+1 sign(1.3)=-1, both |A| > 1e-4
+[PASS] xi<1 / xi>1 STRADDLE in sign across xi=1 (two samples; no isolated-zero claim)  ::  sign(0.7)=+1 sign(1.3)=-1, both |A| > 1e-4
 [PASS] GAUGED-VERTEX orbit anisotropy NONZERO off-surface (xi=1.3)  ::  A_g(xi=1.3)=-0.0003, |A_g| > 1e-4
-[PASS] Pi FEELS the fermion deformation (induced anisotropy at eps=0.10 nonzero)  ::  induced(0.10)=+0.0547; Pi has no internal gluon line by construction
+[PASS] Pi FEELS the fermion deformation (induced anisotropy at eps=0.10 nonzero)  ::  induced(0.10)=+0.0603; Pi has no internal gluon line by construction
 [PASS] tadpole T_mu DIRECTION-BLIND on-surface (relative spread < 1e-10)  ::  |rel spread| < 1e-10 (bound holds; residual suppressed)
 [PASS] tadpole T_mu DIRECTION-SENSITIVE off-surface (xi=1.3)  ::  rel |T_t - T_s|=0.0630 > 1e-3
 
 ==============================================================================
-V5 -- exact invariant counting (sympy Reynolds): B4 rank 1 vs O_h rank 2
+Exact invariant counting + joint (hw2 taste, axis) representation lemma (V5)
 ==============================================================================
 [PASS] B4 (S4 quotient) Reynolds rank on {c_mu} = 1 (single marginal invariant)  ::  rank=1
 [PASS] B4 projection of c=(1,0,0,0) is ISOTROPIC (all entries equal 1/4)  ::  image=[1/4, 1/4, 1/4, 1/4]
 [PASS] O_h (time-fixing S3) Reynolds rank on {c_mu} = 2 (c_t independent of c_s)  ::  rank=2
 [PASS] O_h projection keeps c_t != c_s (image (1,0,0,0) survives)  ::  image=[1, 0, 0, 0]
+[PASS] JOINT S4 invariant rank on c_{B,mu} = 2 (orbit indicators {mu in B}, {mu not in B})  ::  rank=2; both orbit indicators are fixed vectors
+[PASS] each axis lies in EXACTLY 3 of the 6 hw2 tastes  ::  counts=[3, 3, 3, 3]
+[PASS] UNIFORM hw2 averaging o S4 Reynolds: rank 1, image ISOTROPIC (the V3 orbit-sum zero is this representation-forced projection)  ::  rank=1; all rows equal
+[PASS] JOINT time-fixing S3 invariant rank = 6 (six (taste-type, axis-role) orbits)  ::  rank=6
+[PASS] uniform hw2 averaging o time-fixing S3 Reynolds: rank 2 -- time-fixing symmetry alone does NOT force c_t = c_s (symmetry counting only)  ::  rank=2
 
 ==============================================================================
-V6 -- speed arithmetic: Z cancellation, pinned ratio = 1, broken freedom
+Speed arithmetic: Z cancellation, pinned ratio = 1, broken freedom (V6)
 ==============================================================================
 [PASS] overall kinetic normalizations Z_F, Z_G CANCEL in v_F/v_G (exact)  ::  v_F/v_G = sqrt(c_sF c_tG / (c_tF c_sG)) -- no Z dependence
 [PASS] on the B4-pinned surface (c_t=c_s per sector) v_F/v_G = 1 IDENTICALLY  ::  residual=0
@@ -72,7 +78,7 @@ V6 -- speed arithmetic: Z cancellation, pinned ratio = 1, broken freedom
 ==============================================================================
 SCORECARD
 ==============================================================================
-TOTAL: PASS=35 FAIL=0
+TOTAL: PASS=41 FAIL=0
 
 ----- stderr -----
 

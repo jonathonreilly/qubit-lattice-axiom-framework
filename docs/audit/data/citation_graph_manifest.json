@@ -1,6 +1,6 @@
 {
  "edge_count": 14469,
- "node_count": 3963,
+ "node_count": 3964,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14741,6 +14741,10 @@
   "velocity_rg_gauge_seagull_transverse_vacuum_polarization_2026-06-22": {
    "deps_hash": "ba165747f24b",
    "out_degree": 2
+  },
+  "velocity_rg_gauge_tensor_wti_xi_affine_drag_exact_support_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "velocity_rg_logflow_framework_internal_2026-06-21": {
    "deps_hash": "a30145e2e616",

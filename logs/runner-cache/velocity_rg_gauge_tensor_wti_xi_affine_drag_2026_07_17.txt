@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py
-runner_sha256: 9dc85b36f29387b47f644252701bd4bf24543ab94100b79dbdb0fc357a328553
+runner_sha256: b86594b67b77ec2900e95cab587c8dcdcfe72d00c66bf9312b04f8bc1f4e5927
 timeout_sec: 280
 exit_code: 0
-elapsed_sec: 1.14
+elapsed_sec: 1.60
 status: ok
 ----- stdout -----
 Velocity-RG gauge tensor block, exact WTI, xi-affine drag -- exact-support runner
@@ -12,7 +12,7 @@ Velocity-RG gauge tensor block, exact WTI, xi-affine drag -- exact-support runne
 ==========================================================================
 V1: exact gauge tensor block (plaquette form, zero mode, xi-inverse)
 ==========================================================================
-[PASS] plaquette quadratic form == K*delta - qhat qhat^T EXACTLY (link-midpoint modes, direct lattice sum, 3 modes)  ::  worst rel err within bound 1e-9 (residual suppressed)
+[PASS] plaquette quadratic form == K*delta - qhat qhat^T EXACTLY (link-midpoint modes, direct lattice sum, 3 non-self-conjugate modes; V/4 normalization applies to q != -q mod 2pi)  ::  worst rel err within bound 1e-9 (residual suppressed)
 [PASS] CONTROL: site-centered modes (no half-shift) MISS the closed form (link-midpoint is the exact convention)  ::  site-centered rel mismatch = 0.0562 > 1e-3
 [PASS] color normalization tr(T^a T^b) = delta^{ab}/2 (su(2) fundamental)
 [PASS] exact gauge-orbit zero mode: M qhat = 0 (6 seeded momenta)  ::  max |M qhat| / max(K,1) within bound 1e-11 (residual suppressed)
@@ -30,7 +30,7 @@ V3: rainbow a(xi) exactly affine; tadpole closed form; WTI slope
 [PASS] RAINBOW a_rb(xi) EXACTLY affine in xi over xi in {0, 0.5, 1.0, 1.7} (N=10, delta=0.30)  ::  max dev from line within bound 1e-11 (residual suppressed); a_rb(1)=-0.00126, slope=+0.00085
 [PASS] rainbow xi-slope == WTI-derived longitudinal closed form (assembled WITHOUT vertex functions)  ::  |pred - measured| within bound 1e-10 (residual suppressed); pred=+0.00085
 [PASS] TADPOLE split == (1 - xi)(C_s - C_t) EXACTLY (same-order fermion-line seagull; probe-independent; xi-slope = -(C_s - C_t))  ::  max dev from closed form within bound 1e-11 (residual suppressed); tad(0)=+0.000797, C_s-C_t=+0.000797
-[PASS] sign of the TOTAL drag a_rb(xi) + a_tad(xi) is xi-ROBUST across the covariant family xi in [0, 1.7]  ::  totals -0.00131, -0.00128, -0.00126, -0.00122
+[PASS] sign of the TOTAL drag a_rb(xi) + a_tad(xi) is xi-ROBUST across the SAMPLED WINDOW xi in [0, 1.7] of the declared family, with the affine zero crossing outside the window (no all-xi claim)  ::  totals -0.00131, -0.00128, -0.00126, -0.00122; affine zero crossing xi ~ 26.2 outside sampled window
 
 ==========================================================================
 V4: small-probe gauge-line constant; IR-finite (C_s - C_t) split
@@ -49,16 +49,16 @@ V5: xi-shift constant-dominated (fit diagnostic); TOTAL xi-slope decreasing thro
 [PASS] TOTAL xi-slope (rainbow + tadpole) decreases STRICTLY through the four sampled probes (final < 10% of C_s - C_t): a xi-robustness TREND witness for the declared family (no delta -> 0 limit claim)  ::  total slopes +0.000127, +0.000067, +0.000035, +0.000018; scale C_s-C_t = +0.000797
 
 ==========================================================================
-V6: drag directions, BOTH sectors in ONE functional-integral convention
+V6: drag directions, BOTH sectors, one shared sign-bookkeeping convention (two proxy reconstructions)
 ==========================================================================
 [PASS] C_F discharged from the SU(2) fundamental generator algebra: sum_a T^a T^a = (3/4) I exactly (no hard-coded Casimir)  ::  casimir sum is C_F*I with C_F = 3/4 (exact rational check)
-  Convention (single Euclidean bookkeeping; sign chain in the note):
+  Convention (shared Euclidean sign bookkeeping, two proxy reconstructions; sign chain in the note):
     fermion: S^-1 = S0^-1 - Sigma (rainbow + tadpole); kinetic coeffs v_mu -> v_mu - g^2 C_F out_mu (linear in v)
     gauge:   Gamma_2 = M/g^2 + Pi (Pi = second variation of -tr log Dslash); c_mu -> w_mu + g^2 Pi_T/qhat^2
 [PASS] gauge sector FASTER (exact dv_B=+0.05131) => fermion velocity STATIC response POSITIVE (rainbow + tadpole TOTAL): fermion dragged TOWARD the gauge speed  ::  dv_F response = -C_F*(out_s-out_t)_total = +0.00098 per g^2 (rainbow -0.00210 + tadpole +0.00080; C_F discharged above; N=10, delta=0.30)
 [PASS] deformed-kernel Pi stays TRANSVERSE at both probes (the sign chain consumes the -tr log assembly this certifies)  ::  normalized Ward residuals (0.0169, 0.0305) < 0.05 (N=12)
 [PASS] fermion sector FASTER (dv_F=+0.10526) => induced gauge transverse anisotropy STATIC response POSITIVE: gauge dragged TOWARD the fermion speed  ::  dv_B response = (piT_s - piT_t)/2 = +0.03017 per g^2 (T_F=1/2 inside Pi; N=12, probe q=0.3, spatial polarization both)
-[PASS] exchange-matrix coefficients: a-proxy > 0 AND b-proxy > 0 (finite-grid STATIC-RESPONSE sign witnesses for the named open input of the exchange-matrix support note; NOT RG beta-function coefficients -- no shell derivative or log-coefficient extraction)  ::  a-proxy=+0.0191 b-proxy=+0.2866 per g^2 (magnitudes are labeled finite-grid scheme proxies; the signs are the witnessed content)
+[PASS] exchange-matrix coefficients: a-proxy > 0 AND b-proxy > 0 (finite-grid STATIC-RESPONSE sign witnesses for the named open input of the exchange-matrix support note; NOT RG beta-function coefficients -- no shell derivative or log-coefficient extraction; physical-coefficient signs remain open)  ::  a-proxy=+0.0191 b-proxy=+0.2866 per g^2 (magnitudes are labeled finite-grid scheme proxies; the signs are the witnessed content)
 [PASS] 2x2 exchange algebra: eigenvalues {0, -(a+b)}; null direction (1,1) (common speed); the DIFFERENCE mode contracts  ::  contraction rate a+b = +0.3057 per g^2
 
 ==========================================================================

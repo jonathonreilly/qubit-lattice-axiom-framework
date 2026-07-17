@@ -5,9 +5,9 @@ Residual multipocket selector no-go for the area-law quarter target.
 Authority note:
     docs/AREA_LAW_MULTIPOCKET_SELECTOR_NO_GO_NOTE_2026-04-25.md
 
-The retained Widom no-go leaves a real loophole: invented multipocket Fermi
-surfaces can make the projected-width integral equal the value required for
-c_Widom = 1/4. This runner checks that the loophole is selector-dependent:
+Within the stated flat-cut Widom candidate-class normalization, multipocket
+Fermi surfaces can make the projected-width integral equal the value required
+for c_Widom = 1/4. This runner checks that the equality is selector-dependent:
 the exact quarter is equivalent to an extra transverse-measure or sector-weight
 condition, not to the existing Cl(3)/Z^3 primitive trace c_cell = 4/16.
 
@@ -19,11 +19,27 @@ PStack experiment: frontier-area-law-multipocket-selector-no-go
 from __future__ import annotations
 
 import math
+import re
 import sys
+from pathlib import Path
 
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = (
+    REPO_ROOT
+    / "docs"
+    / "AREA_LAW_MULTIPOCKET_SELECTOR_NO_GO_NOTE_2026-04-25.md"
+)
+DOWNSTREAM_CONTEXT_NOTES = (
+    "AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md",
+    "AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md",
+)
+MARKDOWN_NOTE_LINK_RE = re.compile(
+    r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)"
+)
 
 
 def check(name: str, passed: bool, detail: str) -> bool:
@@ -134,7 +150,7 @@ def main() -> int:
         f"mu={mu_star:.12f}, c(mu)={c_star:.12f}",
     )
     check(
-        "no extra pocket recovers the retained simple value 1/6",
+        "no extra pocket recovers the baseline simple-fiber value 1/6",
         math.isclose(multipocket_coefficient(0.0), 1.0 / 6.0, abs_tol=1e-15),
         f"c(0)={multipocket_coefficient(0.0):.12f}",
     )
@@ -209,13 +225,24 @@ def main() -> int:
     # Residual theorem assembly.
     check(
         "residual multipocket Widom route is selector-dependent",
-        True,
+        math.isclose(widom_from_average_crossings(3.0), c_cell, abs_tol=1e-15)
+        and math.isclose(required_extra_measure_for_quarter(), 0.5, abs_tol=1e-15)
+        and math.isclose(
+            weighted_average([c_simple, c_two_interval], [1.0, 1.0]),
+            c_cell,
+            abs_tol=1e-15,
+        ),
         "c=1/4 iff <N_x>=3, implemented here by mu=1/2 or equal sector weights",
     )
+
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    markdown_note_targets = MARKDOWN_NOTE_LINK_RE.findall(note_text)
     check(
-        "Target 2 remains open without a selector/bridge theorem",
-        True,
-        "need to derive pocket measure, sector weight, or gapped edge entropy from Cl(3)/Z^3",
+        "downstream carrier comparisons are non-load-bearing context",
+        not markdown_note_targets
+        and "Downstream context comparisons (non-load-bearing)" in note_text
+        and all(f"`docs/{name}`" in note_text for name in DOWNSTREAM_CONTEXT_NOTES),
+        "target note has no Markdown authority edges; both later carriers are backticked context handles",
     )
 
     print()

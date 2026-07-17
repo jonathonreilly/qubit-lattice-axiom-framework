@@ -6,19 +6,22 @@
 
 ## Purpose
 
-The retained Widom no-go already says the current half-filled NN carrier gives
-`c_Widom = 1/6`, not `1/4`. It also notes that one can invent a multi-pocket
-Fermi surface whose projected-width integral gives `1/4`.
+This note isolates a selector-free algebraic claim inside the standard
+flat-cut Widom candidate class. Starting from the stated normalization
+`c_Widom = <N_x>/12`, a multi-pocket carrier can be calibrated to `1/4`, but
+the calibration is equivalent to adding a pocket-measure or sector-weight
+selector. The `Cl(3)/Z^3` primitive boundary count, represented here
+by the separate trace `4/16`, does not by itself supply that selector.
 
-This note closes that residual loophole as a framework claim. A multi-pocket
-carrier can be calibrated to `1/4`, but the calibration is equivalent to adding
-a new pocket-measure or sector-weight selector. The retained `Cl(3)/Z^3`
-primitive boundary count does not supply that selector.
+All load-bearing premises and calculations for this no-go are displayed in
+this note. It does not consume an earlier finite-size carrier conclusion or
+either of the later conditional carrier comparisons as scientific authority.
 
 ## Safe statement
 
-For a straight cut normal to `e_x`, the free-fermion Widom coefficient can be
-written as
+The claim is conditional only on the candidate-class Widom normalization and
+ordinary scalar interval-fiber semantics stated here. For a straight cut
+normal to `e_x`, write the free-fermion Widom coefficient as
 
 ```text
 c_Widom = <N_x> / 12,
@@ -95,8 +98,7 @@ rank is counted consistently.
 
 ## Why this is not Target 2 closure
 
-The Planck conditional packet derives `1/4` from a specific finite primitive
-trace:
+The comparison primitive quantity is the specific finite trace
 
 ```text
 H_cell ~= C^16,
@@ -115,9 +117,10 @@ crossing-number or sector-weight selector from the same primitive boundary
 semantics. Without that theorem, the multipocket construction is only a tuned
 comparison carrier.
 
-## Relation to gapped carriers
+## Non-load-bearing comparison to gapped carriers
 
-The same caution applies to the gapped route. Brandao-Horodecki-style
+This comparison is not used by the selector-free algebraic no-go. The same
+caution applies to the gapped route. Brandao-Horodecki-style
 mass-gap or exponential-correlation results can justify an area law, but they
 do not determine the exact ultraviolet entropy per primitive face. A gapped
 horizon/edge carrier would still need a separate theorem deriving its
@@ -129,7 +132,7 @@ This note does not rule out a future positive result. It narrows what such a
 result must prove:
 
 1. derive a multipocket transverse-measure law, such as `mu = 1/2`, from the
-   retained `Cl(3)/Z^3` primitive structure; or
+   supplied `Cl(3)/Z^3` framework structure; or
 2. derive a Schur/edge sector-weight law fixing the required convex average;
    or
 3. construct a gapped horizon carrier whose leading area coefficient is
@@ -139,28 +142,33 @@ Absent one of those selector laws, the residual multipocket Widom route is not
 a physical derivation of Bekenstein-Hawking. It is a parameterized family that
 can be made to contain the desired number.
 
-## Subsequent conditional positive carrier
+## Downstream context comparisons (non-load-bearing)
 
-[AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md](./AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md)
-supplies one such selector conditionally: a residual primitive `Z_2` parity
-gate, equivalently the self-dual low sheet of the transverse nearest-neighbor
-Laplacian, selects a transverse half-zone `mu=1/2`, giving average crossing
-count `3` and `c_Widom=1/4`. This does not invalidate the no-go above; it
-identifies the exact additional carrier premise that the no-go said was
-missing.
+The following later notes are reader orientation only. Their conclusions are
+not premises, witnesses, or scientific authorities for the selector-free
+algebra above, so their filenames are deliberately plain-text context handles
+rather than Markdown authority links.
 
-[AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md](./AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
-sharpens the premise: in the minimal local complex-CAR edge class supported
-exactly on the rank-four primitive packet, the normal-plus-self-dual-tangent
-carrier is the unique minimal two-mode option that gives `1/4`.
+- `docs/AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md`
+  conditionally supplies a residual primitive `Z_2` parity gate, equivalently
+  the self-dual low sheet of the transverse nearest-neighbor Laplacian. Under
+  that added carrier premise, it selects a transverse half-zone `mu=1/2`,
+  giving average crossing count `3` and `c_Widom=1/4`. This is a downstream
+  comparison showing how an extra selector can leave the selector-free class;
+  it is not support for the no-go.
+- `docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md`
+  conditionally analyzes the same coefficient inside supplied rank-four CAR,
+  normal-channel, and self-dual tangent-channel conditions. It is a downstream
+  comparison of an explicitly selector-bearing class, not authority for any
+  step above.
 
 ## Package wording
 
 Safe wording:
 
 > Multi-pocket Widom carriers can be calibrated to `c_Widom = 1/4`, but only by
-> imposing an additional pocket-measure or sector-weight selector. The retained
-> `Cl(3)/Z^3` primitive boundary count does not yet derive that selector, so
+> imposing an additional pocket-measure or sector-weight selector. The supplied
+> `Cl(3)/Z^3` framework structure does not yet derive that selector, so
 > the multipocket route remains open only as a sharply specified residual
 > target.
 

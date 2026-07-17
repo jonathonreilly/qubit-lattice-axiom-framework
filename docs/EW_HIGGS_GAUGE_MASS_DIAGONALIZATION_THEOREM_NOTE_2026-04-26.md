@@ -1,8 +1,8 @@
-# Defined C2 Quadratic-Form Diagonalization Theorem
+# Defined `C^2` Quadratic-Form Diagonalization Theorem
 
 **Date:** 2026-04-26; 2026-07-16 defined-algebra repair
 
-**Type:** positive theorem
+**Type:** positive_theorem
 **Claim type:** positive_theorem
 
 **Stable claim ID:**
@@ -169,6 +169,8 @@ For the definitions above:
    ```
 
 The symbols `MW2`, `MZ2`, `MA2`, `e`, and `rho` are formal labels only.
+Likewise, `Z` and `A` are only names for the two rotated real coordinates;
+they do not denote particles or fields.
 
 ## 3. Proof
 
@@ -217,9 +219,11 @@ This theorem proves only identities among explicitly defined matrices,
 vectors, a real-linear map, a real quadratic form, and scalar abbreviations.
 It has no dependency on the framework's minimal axioms, primitive registry,
 premise history, experimental values, physical carrier choices, or any
-downstream claim status. No scalar potential or Hessian theorem is included;
-a supplied polynomial potential is a separate problem and gives this claim
-no additional authority.
+downstream claim status. No scalar potential, vacuum-stationarity condition,
+or scalar-sector Hessian is included. The Hessian of `Q` used in item 3 is
+only an algebraic way to collect the coefficients of the already defined
+quadratic form. A supplied polynomial potential is a separate problem and
+gives this claim no additional authority.
 
 The notation is intentionally compatible with older graph consumers, but
 notation is not an identification. In particular, a downstream note may use

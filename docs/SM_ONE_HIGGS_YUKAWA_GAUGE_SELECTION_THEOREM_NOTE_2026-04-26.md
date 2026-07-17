@@ -5,9 +5,9 @@
 **Date:** 2026-04-26
 
 **Status authority:** independent audit lane only. This source note states the
-exact gauge-selection rule for renormalizable Dirac Yukawa monomials in
-the one-Higgs-doublet Standard Model matter surface carried by the hypercharge
-and EW notes. It does not derive any Yukawa eigenvalue, mixing
+exact gauge-selection rule conditional on the explicitly supplied one-Higgs
+carrier and charge table below. The cited hypercharge and defined-matrix notes
+do not derive those physical inputs. It does not derive any Yukawa eigenvalue, mixing
 angle, CKM/PMNS entry, neutrino Majorana scale, Higgs mass, top-Yukawa
 normalization, time-travel, teleportation, or antigravity claim.
 
@@ -21,15 +21,16 @@ Use the doubled-hypercharge convention of the hypercharge/anomaly notes:
 Q_em = T_3 + Y/2.
 ```
 
-The EW Higgs gauge-mass note uses the SM-normalized convention
-`Q_em = T_3 + Y_EW`. The dictionary is
+For this theorem, separately stipulate the SM-normalized convention
+`Q_em = T_3 + Y_EW`. The notation dictionary is
 
 ```text
 Y = 2 Y_EW.
 ```
 
-Thus its `Y_EW(H)=1/2` one-doublet Higgs is the same field as the
-`Y(H)=+1` Higgs used here.
+Thus the supplied `Y_EW(H)=1/2` is equivalent to doubled `Y(H)=+1`.
+This is a hypothesis of this classification, not a conclusion of the
+historically named diagonalization theorem.
 
 One generation has
 
@@ -77,7 +78,7 @@ L_Y = - bar Q_L Y_d H d_R
       + h.c.
 ```
 
-After electroweak symmetry breaking,
+Under the separately supplied physical vacuum interpretation,
 
 ```text
 <H> = (0, v/sqrt(2))^T,
@@ -98,10 +99,9 @@ matrices.
 
 ## 2. Why This Adds Value
 
-The hypercharge theorem fixes the one-generation charge table, and the EW Higgs
-gauge-mass theorem fixes the one-doublet Higgs
-bookkeeping. What remains useful as a separate proof is the exact bridge from
-those charges to the allowed Dirac mass operators.
+Given the supplied one-generation charge table and one-doublet carrier, the
+useful result is the exact bridge from those inputs to the allowed Dirac mass
+operators.
 
 This theorem supplies that bridge:
 
@@ -261,7 +261,7 @@ Every quark-lepton crossed candidate is already excluded by the `SU(3)` color
 condition. This exhausts all one-left-doublet, one-right-singlet, one-Higgs
 Dirac Yukawa monomials.
 
-## 6. Post-EWSB Mass Readout
+## 6. Conditional post-EWSB mass readout
 
 Write
 

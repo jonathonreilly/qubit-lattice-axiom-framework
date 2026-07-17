@@ -2,11 +2,11 @@
 
 **Date:** 2026-04-26
 
-**Status:** proposed_retained EW-CKM lattice-scale identity theorem; NEW
-COMPLEMENT to the retained `sin²(θ_W)|_lattice = A^4 = 4/9` bridge.
-This note derives a **NEW retained FOUR-way equality at lattice scale
-plus a SUPPORT-TIER F5 COMPANION reading**, plus a NEW closed form
-for the lattice-scale W/Z mass-squared ratio.
+**Type:** positive_theorem
+**Status authority:** independent audit lane only. This source note does not
+set an audit verdict or effective status. It proves exact equalities among
+defined scalar readouts and separately supplied count/coupling values; any
+physical weak-angle or particle-mass interpretation remains an open premise.
 
 **Reviewer correction (2026-04-26)**: an earlier draft of this note
 claimed a "five-way retained identity" that included F5 from the
@@ -17,13 +17,13 @@ a FOUR-way EW/CKM equality at retained tier, plus a SEPARATE
 support-tier F5 companion reading that is auxiliary corroboration
 only (not load-bearing for the bridge).
 
-**Explicitly not a below-Wn closure**: like its retained sister bridge
+**Explicitly not a below-Wn or physical-EW closure**: like its historical sister bridge
 `CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY_NOTE_2026-04-25.md`, this
 note is a retained cross-surface lattice-scale identity, not a
 below-Wn derivation closure. The labeling follows the lesson from
 `CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md`:
-consistency equalities at retained values are valid retained identity
-theorems but not load-bearing below-Wn closures.
+consistency equalities at supplied values are algebraically valid but are not
+load-bearing below-Wn or physical-observable closures.
 
 **Primary runner:**
 `scripts/frontier_ew_lattice_cos_sq_theta_w_complement_bridge.py`
@@ -38,26 +38,26 @@ algebra after the separate coupling values are supplied. Its lattice-EW,
 W/Z-mass, and physical interpretation remains an open bridge not furnished by
 this note or the diagonalization theorem.
 
-## Headline Identities (NEW)
+## Headline identities
 
 ```text
 (C1)  c²|_assigned couplings  =  MW2 / MZ2
                           =  1 - A^4
                           =  (N_color² - N_pair²) / N_color²
                           =  (N_quark - 1) / N_color²
-                          =  5/9                                  [FOUR-WAY RETAINED EQUALITY]
+                          =  5/9                                  [FOUR-WAY FORMAL EQUALITY]
 
 (C1.aux) Support-tier companion reading (NOT part of the retained
          four-way equality; auxiliary corroboration only):
             F5 (CKM n/9 family, support-tier) = 5/9.
          The matching value 5/9 is a NUMERICAL coincidence with the
-         four-way retained equality, not a fifth retained route.
+         four-way formal equality, not a fifth retained route.
 
 (C2)  sqrt(MW2/MZ2) =  √(N_quark - 1) / N_color
                           =  √5 / 3
                           ≈  0.7454                                [NEW closed form]
 
-(C3)  tan²(θ_W)|_lattice  =  N_pair² / (N_quark - 1)
+(C3)  s²/c² at the assigned couplings = N_pair² / (N_quark - 1)
                           =  4/5                                   [NEW closed form]
 
 (C4)  Structural-integer readings of YT_EW retained bare couplings (NEW
@@ -82,11 +82,11 @@ This note explicitly:
   `MW2/MZ2`, `1 - A^4`, or any physical weak-angle/mass ratio. Each algebraic side has
   its own retained authority, and their numerical coincidence at `5/9` is
   a CONSISTENCY EQUALITY at retained values.
-- **Does claim**: a NEW retained FOUR-way EW/CKM identity at lattice
-  scale (cos²(θ_W) = 1 - A^4 = (N_color² - N_pair²)/N_color² = (N_quark - 1)/N_color²,
-  all named source tiers), a NEW closed form for the formal scalar-readout
-  ratio, NEW structural-integer interpretations of YT_EW
-  bare couplings via S1, and a NEW SM-specific structural identity
+- **Does claim**: an exact four-way formal equality
+  (`c² = 1 - A^4 = (N_color² - N_pair²)/N_color² =
+  (N_quark - 1)/N_color²`) after the named values are supplied, a closed form
+  for the formal scalar-readout ratio, structural-integer readings of the
+  supplied couplings, and the SM-specific structural identity
   `N_color² - N_pair² = N_quark - 1`.
 - **Auxiliary support reading**: F5 = 5/9 from the support-tier
   `CKM_N9_STRUCTURAL_FAMILY_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md`
@@ -100,14 +100,14 @@ latter — exactly like the retained sister bridge for the `4/9` side.
 
 ## Statement
 
-On retained-tier authorities of current `main`:
+Given the following cited algebraic/count inputs:
 
 ```text
-(P1)  YT_EW retains bare lattice couplings as a lattice-scale identity
-      (not the v-scale `K_EW(kappa_EW)` matching rule):
+(P1)  Supply the numerical coupling assignment for this formal theorem:
         g_2² = 1/(d+1) = 1/4,   g_Y² = 1/(d+2) = 1/5,    d = dim(Z³) = 3.
+      No physical scale or electroweak interpretation is inferred.
 
-(P2)  Defined C2 quadratic-form diagonalization:
+(P2)  Defined C^2 quadratic-form diagonalization:
         c² = g_2² / (g_2² + g_Y²),
         MW2 / MZ2 = c²,  rho = 1.
       These are formal labels, not a physical weak angle or mass relation.
@@ -133,12 +133,12 @@ On retained-tier authorities of current `main`:
 ### Headline conclusions
 
 ```text
-(T1)  cos²(θ_W)|_lattice  =  g_2²/(g_2² + g_Y²)   [from P1, P2]
+(T1)  c²|_assigned couplings  =  g_2²/(g_2² + g_Y²)   [from P1, P2]
                           =  (1/(d+1)) / [(1/(d+1)) + (1/(d+2))]
                           =  (d+2) / (2d + 3)
                           =  5/9                  [at retained d = 3].
 
-(T2)  cos²(θ_W)|_lattice  =  1 - sin²(θ_W)|_lattice
+(T2)  c²|_assigned couplings  =  1 - s²|_assigned couplings
                           =  1 - A^4               [from retained S5: sin²(θ_W) = A^4]
                           =  1 - 4/9
                           =  5/9                   [consistency at retained values].
@@ -147,8 +147,8 @@ On retained-tier authorities of current `main`:
       (N_color² - N_pair²) / N_color² = (9 - 4)/9 = 5/9.
       (N_quark - 1) / N_color²        = 5/9.
 
-(T4)  FOUR-way RETAINED equality at 5/9:
-        cos²(θ_W)|_lattice  =  1 - A^4
+(T4)  FOUR-way FORMAL equality at 5/9:
+        c²|_assigned couplings  =  1 - A^4
                             =  (N_color² - N_pair²)/N_color²
                             =  (N_quark - 1)/N_color²
                             =  5/9.
@@ -158,10 +158,10 @@ On retained-tier authorities of current `main`:
           This is numerically compatible with T4 but is NOT a fifth
           retained route inside the load-bearing equality.
 
-(T5)  M_W²/M_Z² |_lattice = cos²(θ_W)|_lattice = 5/9.
-      ⇒ M_W/M_Z |_lattice = √5/3 = √(N_quark-1)/N_color ≈ 0.7454.
+(T5)  MW2/MZ2 = c² = 5/9.
+      Therefore sqrt(MW2/MZ2) = √5/3 = √(N_quark-1)/N_color.
 
-(T6)  tan²(θ_W)|_lattice  =  sin²/cos² = (4/9)/(5/9) = 4/5
+(T6)  s²/c² at the assigned couplings = (4/9)/(5/9) = 4/5
                           =  N_pair²/(N_quark - 1).
 
 (T7)  Structural-integer readings of YT_EW couplings at retained values
@@ -185,11 +185,11 @@ On retained-tier authorities of current `main`:
 
 | Input | Authority on `main` | Tier | Role |
 | --- | --- | --- | --- |
-| `g_2² = 1/(d+1)`, `g_Y² = 1/(d+2)`, `d = 3` | [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md) | **retained** (DERIVED) | T1, T7 source |
+| `g_2² = 1/(d+1)`, `g_Y² = 1/(d+2)`, `d = 3` | explicit assignment in this note; `YT_EW_COLOR_PROJECTION_THEOREM.md` is historical context only | supplied, not derived | T1, T7 input |
 | formal `c² = g²/(g²+g_Y²)`, `MW2/MZ2 = c²`, `rho = 1` | [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md) | defined finite-dimensional algebra; no physical identification | T1, T5 algebra |
 | `(W2)` `A² = N_pair/N_color = 2/3` | [`WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md`](WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md) | **retained** | T2, T3 source |
 | `Q_L : (2,3)_{+1/3}` (S1 source); `u_R, d_R : (1,3)` cross-check | [`LEFT_HANDED_CHARGE_MATCHING_NOTE.md`](LEFT_HANDED_CHARGE_MATCHING_NOTE.md), [`ONE_GENERATION_MATTER_CLOSURE_NOTE.md`](ONE_GENERATION_MATTER_CLOSURE_NOTE.md) | **retained corollary**, **retained** | S1 / P4 source for N_pair, N_color |
-| `sin²(θ_W)|_lattice = A^4 = 4/9` (sister bridge) | [`CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY_NOTE_2026-04-25.md`](CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY_NOTE_2026-04-25.md) | **retained** | T2 complement source |
+| `s²|_assigned couplings = A^4 = 4/9` (sister bridge) | [`CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY_NOTE_2026-04-25.md`](CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY_NOTE_2026-04-25.md) | **retained** | T2 complement source |
 | `N_pair = N_color - 1`; `N_pair = 2`, `N_color = 3` | [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md`](CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md) | **retained** | T8 derivation |
 | Z³ spatial substrate; SU(3)_c via graph-first integration | [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md), [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) | **retained** framework + **bounded-retained** | P6: ties d = N_color via graph-first construction |
 
@@ -197,10 +197,11 @@ On retained-tier authorities of current `main`:
 
 | Input | Authority on `main` | Tier | Role |
 | --- | --- | --- | --- |
-| F5 = 5/9 = (N_quark-1)/N_color² = 1 - A^4 | [`CKM_N9_STRUCTURAL_FAMILY_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md`](CKM_N9_STRUCTURAL_FAMILY_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md) | **support-tier** | T4-aux: companion numerical reading; NOT counted in retained four-way equality |
+| F5 = 5/9 = (N_quark-1)/N_color² = 1 - A^4 | [`CKM_N9_STRUCTURAL_FAMILY_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md`](CKM_N9_STRUCTURAL_FAMILY_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md) | **support-tier** | T4-aux: companion numerical reading; NOT counted in formal four-way equality |
 
-The retained FOUR-way equality uses ONLY retained-tier authorities
-(T1, T2, T3a, T3b — the four routes are EW Higgs+YT_EW, sister A^4
+The formal four-way equality uses cited supplied values plus the defined
+quadratic-form theorem
+(T1, T2, T3a, T3b — the four routes are defined ratio + assigned couplings, sister A^4
 complement, S1-derived (N_color²-N_pair²)/N_color², S1-derived
 (N_quark-1)/N_color²). The F5 reading is reported as a SEPARATE
 support-tier auxiliary companion at the same numerical value — NOT a
@@ -220,24 +221,24 @@ c² = g² / (g² + g_Y²)
 MW2 / MZ2 = c²  (with formal rho = 1).
 ```
 
-Substituting retained YT_EW bare couplings (`g_2² = 1/(d+1)`,
+Substituting the supplied coupling assignment (`g_2² = 1/(d+1)`,
 `g_Y² = 1/(d+2)`, `d = 3`):
 
 ```text
-cos²(θ_W)|_lattice = (1/(d+1)) / [(1/(d+1)) + (1/(d+2))]
+c²|_assigned couplings = (1/(d+1)) / [(1/(d+1)) + (1/(d+2))]
                    = (d+2) / [(d+2) + (d+1)]
                    = (d+2) / (2d+3).
 ```
 
-At `d = 3`: `cos²(θ_W)|_lattice = 5/9`.
+At `d = 3`: the defined readout is `c² = 5/9`.
 
-### T2: Pythagorean complement to retained `A^4 = sin²(θ_W)|_lattice`
+### T2: Pythagorean complement to retained `A^4 = s²|_assigned couplings`
 
 The retained sister bridge `CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY_NOTE_2026-04-25.md`
-retains `sin²(θ_W)|_lattice = A^4 = 4/9` at lattice scale. Trivially:
+retains `s²|_assigned couplings = A^4 = 4/9` at lattice scale. Trivially:
 
 ```text
-cos²(θ_W)|_lattice = 1 - sin²(θ_W)|_lattice = 1 - A^4 = 1 - 4/9 = 5/9.
+c²|_assigned couplings = 1 - s²|_assigned couplings = 1 - A^4 = 1 - 4/9 = 5/9.
 ```
 
 This consistency equality holds at retained values.
@@ -253,13 +254,13 @@ S1 (Identification Source Theorem) gives `N_pair = 2`, `N_color = 3`,
 (N_quark - 1) / N_color²        = (6 - 1)/9 = 5/9.
 ```
 
-These match `cos²(θ_W)|_lattice = 5/9` from T1 and `1 - A^4 = 5/9` from
-T2 at retained values, completing the **FOUR-WAY RETAINED EQUALITY**:
+These match `c²|_assigned couplings = 5/9` from T1 and `1 - A^4 = 5/9` from
+T2 at retained values, completing the **FOUR-WAY FORMAL EQUALITY**:
 
 ```text
-cos²(θ_W)|_lattice  =  1 - A^4  =  (N_color² - N_pair²)/N_color²
+c²|_assigned couplings  =  1 - A^4  =  (N_color² - N_pair²)/N_color²
                                 =  (N_quark - 1)/N_color²
-                                =  5/9                    [FOUR-WAY RETAINED].
+                                =  5/9                    [FOUR-WAY FORMAL].
 ```
 
 A SEPARATE support-tier numerical companion reading at the same value:
@@ -282,14 +283,14 @@ MW2/MZ2 = (N_quark - 1)/N_color² = 5/9.
 sqrt(MW2/MZ2) = √(N_quark - 1)/N_color = √5/3 ≈ 0.7454.
 ```
 
-This is a NEW closed form for the W/Z mass-squared ratio at lattice scale,
-derived from the cited count/coupling sources plus defined matrix algebra. No
-physical W/Z mass ratio follows without a separate physical identification.
+This is a closed form for the defined scalar-readout ratio, derived from the
+cited count/coupling sources plus defined matrix algebra. No physical W/Z mass
+ratio follows without a separate physical identification.
 
-### T6: tan²(θ_W)|_lattice closed form (NEW)
+### T6: (s²/c²)|_assigned couplings closed form (NEW)
 
 ```text
-tan²(θ_W)|_lattice = sin²/cos² = (4/9)/(5/9) = 4/5
+(s²/c²)|_assigned couplings = sin²/cos² = (4/9)/(5/9) = 4/5
                    = N_pair²/(N_quark - 1).
 ```
 
@@ -351,11 +352,11 @@ All identities verified to **exact integer/Fraction arithmetic** in the runner.
 | T2: formal c² = 1 - A^4 | sister bridge + W2 | 5/9 | ✓ |
 | T3a: (N_color² - N_pair²)/N_color² | S1 (retained) | 5/9 | ✓ |
 | T3b: (N_quark - 1)/N_color² | S1 (retained) | 5/9 | ✓ |
-| T4: FOUR-WAY RETAINED equality at 5/9 | T1 ∧ T2 ∧ T3a ∧ T3b (all retained) | 5/9 | ✓ |
+| T4: FOUR-WAY FORMAL equality at 5/9 | T1 ∧ T2 ∧ T3a ∧ T3b (all retained) | 5/9 | ✓ |
 | T4-aux: F5 support-tier companion at 5/9 | CKM_N9_FAMILY (support, NOT load-bearing) | 5/9 | ✓ (auxiliary only) |
 | T5: formal MW2/MZ2 | T1 + defined matrix algebra | 5/9 | ✓ |
 | T5b: formal sqrt(MW2/MZ2) | positive square root of T5 | √5/3 ≈ 0.7454 | ✓ |
-| T6: tan²(θ_W)|_lattice | sin²/cos² | 4/5 | ✓ |
+| T6: (s²/c²)|_assigned couplings | sin²/cos² | 4/5 | ✓ |
 | T7a: g_2² = 1/N_pair² (consistency) | YT_EW + S1 | 1/4 | ✓ |
 | T7b: g_Y² = 1/(N_quark - 1) (consistency) | YT_EW + S1 | 1/5 | ✓ |
 | T8: N_color² - N_pair² = N_quark - 1 (SM) | W2 primitive + N_color = 3 | 5 = 5 | ✓ |
@@ -365,7 +366,7 @@ All identities verified to **exact integer/Fraction arithmetic** in the runner.
 
 ### What this lets the framework state cleanly
 
-Previously the retained `A^4 = sin²(θ_W)|_lattice = 4/9` bridge
+Previously the retained `A^4 = s²|_assigned couplings = 4/9` bridge
 (`CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY_NOTE_2026-04-25.md`) tied
 the EW Weinberg angle (lattice) and the Wolfenstein A parameter via a
 retained two-way consistency equality.
@@ -373,9 +374,9 @@ retained two-way consistency equality.
 This complement bridge tightens that to:
 
 1. **Four-way retained equality + support-tier F5 companion**:
-   `cos²(θ_W)|_lattice = 1 - A^4 = (N_color² - N_pair²)/N_color² = (N_quark - 1)/N_color² = 5/9`
+   `c²|_assigned couplings = 1 - A^4 = (N_color² - N_pair²)/N_color² = (N_quark - 1)/N_color² = 5/9`
    ties the EW gauge sector, Wolfenstein A, and S1 structural integers
-   in a four-way RETAINED-tier equality. The support-tier F5 = 5/9
+   in a four-way formal equality. The support-tier F5 = 5/9
    reading from the CKM n/9 family is a SEPARATE numerical companion
    at the same value, NOT a load-bearing fifth route inside the
    retained equality.
@@ -417,20 +418,18 @@ structural-integer readings of YT_EW retained couplings are valid
 **interpretations at retained values** but cannot load-bear a
 below-Wn closure on their own.
 
-Here we use them honestly: the structural readings T7a, T7b are
-labeled "consistency at retained values", and the bridge T1 (the
-load-bearing route to `cos²(θ_W) = 5/9`) uses YT_EW directly via the
-EW Higgs diagonalization, not via the structural reading.
+Here the structural readings T7a and T7b are labeled "consistency at supplied
+values". T1 uses the separately supplied coupling values and the defined
+quadratic-form identity, not a physical electroweak interpretation.
 
 ### What this does NOT claim
 
-- Does NOT claim below-Wn closure for `cos²(θ_W)|_lattice`,
-  `1 - A^4 = 5/9`, or `M_W²/M_Z²|_lattice`. Each is retained on main
-  via its own retained authority; their numerical coincidence is a
-  CONSISTENCY EQUALITY at retained values.
+- Does NOT claim below-Wn closure for `c²`, `1 - A^4 = 5/9`, or
+  `MW2/MZ2`. Their numerical coincidence is a formal consistency equality
+  after the cited values are supplied.
 - Does NOT promote any support-tier theorem to retained.
-- Does NOT predict physical `M_W/M_Z` at the M_Z scale (the lattice
-  ratio `√5/3` runs to PDG `≈ 0.8815` via separate framework running).
+- Does NOT predict physical `M_W/M_Z` at any scale and does not make a PDG or
+  running comparison.
 - Does NOT modify the retained sister bridge `A^4 = sin²(θ_W) = 4/9`;
   this note COMPLEMENTS it.
 - Does NOT derive `g_2² = 1/N_pair²` or `g_Y² = 1/(N_quark - 1)` as a
@@ -444,14 +443,14 @@ EW Higgs diagonalization, not via the structural reading.
    `sqrt(MW2/MZ2) = √5/3`; neither is a direct W/Z prediction.
 3. `N_color² - N_pair² = N_quark - 1` (SM-specific structural identity;
    FAILS for any other N_color consistent with W2 primitive).
-4. Four-way RETAINED equality `cos²(θ_W)|_lattice = 1 - A^4 = (N_color² - N_pair²)/N_color²
+4. Four-way formal equality `c²|_assigned couplings = 1 - A^4 = (N_color² - N_pair²)/N_color²
    = (N_quark - 1)/N_color² = 5/9` at retained values (NEW unification),
    plus a separate support-tier F5 = 5/9 numerical companion that is
    auxiliary, not a fifth retained route.
 
 ### Why this counts as pushing the science forward
 
-1. **NEW unified FOUR-WAY RETAINED equality at lattice scale (plus
+1. **Unified four-way formal equality at the assigned values (plus
    support-tier F5 companion)**: previously only `4/9` had been
    bridged across EW-CKM. Now the COMPLEMENT `5/9` is bridged across
    four algebraic surfaces (the formal coupling ratio, Wolfenstein A,
@@ -470,11 +469,8 @@ EW Higgs diagonalization, not via the structural reading.
    value of N_color, making it a structural fingerprint of the framework's
    SM closure.
 
-4. **Honest framing**: explicit non-promotion of consistency equalities
-   to closure status (per the rejected A²-below-W2 lesson). The bridge
-   is labeled as a retained lattice-scale identity theorem, NOT a
-   below-Wn closure. This preserves the framework's integrity while
-   landing the new content honestly.
+4. **Claim boundary**: consistency equalities are not promoted to physical or
+   below-Wn closure claims. Audit status remains external to this note.
 
 ## What This Claims
 
@@ -508,20 +504,21 @@ M_W_M_Z_LATTICE_RATIO_DERIVED = TRUE
 SM_STRUCTURAL_IDENTITY_N_COLOR_3_DERIVED = TRUE
 ```
 
-The runner:
+The legacy runner performs exact arithmetic and source-shape checks. Its
+results certify the formal identities only; prose/status tokens are not
+scientific evidence. It:
 
-1. Reads each cited authority file from disk, extracting Status: line
-   for ground-up tier verification.
+1. Reads the cited source files to confirm the named algebraic inputs.
 2. Extracts retained YT_EW closed forms `g_2² = 1/(d+1)`, `g_Y² = 1/(d+2)`
    from `YT_EW_COLOR_PROJECTION_THEOREM.md`.
 3. Extracts retained Q_L representation literal `(2,3)` from
    `LEFT_HANDED_CHARGE_MATCHING_NOTE.md` (S1 source).
-4. Derives `cos²(θ_W)|_lattice` via T1 (EW Higgs + YT_EW) and verifies
+4. Derives the formal `c²` via T1 and verifies
    it equals 5/9 by exact Fraction arithmetic.
 5. Cross-checks via T2 (1 - A^4), T3 (S1 structural integers), and T8
    (SM-specific identity).
-6. Derives `M_W/M_Z|_lattice = √5/3` via T5.
-7. Derives `tan²(θ_W)|_lattice = 4/5` via T6.
+6. Derives `sqrt(MW2/MZ2) = √5/3` via T5.
+7. Derives `s²/c² = 4/5` via T6.
 8. Verifies T8: `N_color² - N_pair² = N_quark - 1` at retained values,
    AND solves the algebraic constraint to confirm `N_color = 3` is the
    unique positive solution given W2 primitive.
@@ -530,8 +527,8 @@ The runner:
 
 **Retained-tier authorities used in T1-T6 (load-bearing for the bridge):**
 
-- [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md)
-  — retained DERIVED; bare lattice couplings `g_2² = 1/(d+1)`, `g_Y² = 1/(d+2)`.
+- `YT_EW_COLOR_PROJECTION_THEOREM.md` — historical context only; it is not
+  cited as authority for the supplied coupling assignment used here.
 - [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
   — defined `C^2` algebra only: `c² = g²/(g² + g_Y²)` and
   `MW2/MZ2 = c²`; no physical weak-angle or mass identification.
@@ -546,7 +543,7 @@ The runner:
 - [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) — retained
   framework primitives (Z³ axiom 2; SU(2), SU(3) current consequences).
 - [`CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY_NOTE_2026-04-25.md`](CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY_NOTE_2026-04-25.md)
-  — sister bridge; `sin²(θ_W)|_lattice = A^4 = 4/9` (T2 complement source).
+  — sister bridge; `s²|_assigned couplings = A^4 = 4/9` (T2 complement source).
 - [`CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md`](CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md)
   — preceding branch; S1 Identification Source Theorem.
 

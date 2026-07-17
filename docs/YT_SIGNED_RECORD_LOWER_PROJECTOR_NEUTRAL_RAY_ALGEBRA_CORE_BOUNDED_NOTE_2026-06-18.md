@@ -86,7 +86,8 @@ Q H_0 = 0.
 ```
 
 The upper basis ray is charged, `Q(1,0)^T = (1,0)^T`, so the lower doublet ray
-is the neutral one-Higgs ray in this bookkeeping.
+is the defined lower ray in this stipulated `C^2` bookkeeping. A physical
+one-Higgs interpretation is not inferred.
 
 ## Boundary
 

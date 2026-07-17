@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ew_higgs_gauge_mass_diagonalization.py
-runner_sha256: c97e6311cf19447267eaccddae4d0d961bb9dad3c4db86e41593f7f967021615
+runner_sha256: 68fc546624d49651bb2092fa6efed81dbbc56716247ac226f2f9d3267110ccbf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
-=== Defined C2 quadratic-form diagonalization verifier ===
+=== Defined C^2 quadratic-form diagonalization verifier ===
 MODE: normal
 
 === Executable-evidence firewall ===
@@ -50,7 +50,7 @@ PASS: neutral eigenvectors are orthogonal
 PASS: rotation is orthogonal
 PASS: rotation determinant is one
 PASS: rotation diagonalizes M0
-PASS: rotation reconstructs neutral Q :: Z**2*v**2*(g**2 + gY**2)/8
+PASS: rotation reconstructs neutral Q :: Zcoord**2*v**2*(g**2 + gY**2)/8
 PASS: c squared plus s squared
 PASS: formal MA2 label
 PASS: formal e equals g times s

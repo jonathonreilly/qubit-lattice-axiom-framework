@@ -2,12 +2,11 @@
 
 **Date:** 2026-04-26
 
-**Status:** proposed_retained SU(2)_L-running structural corollary on the recently-landed
-S1 Identification Source Theorem, the retained three-generation matter
-structure (`N_gen = 3`), and retained 1-Higgs-doublet EW content. This note
-derives a NEW retained structural closed form for the SU(2)_L 1-loop
-β-function coefficient entirely in terms of S1 structural integers +
-retained generation/Higgs content:
+**Claim type:** positive_theorem
+**Status authority:** independent audit lane only. This source note does not
+set an audit verdict or effective status. Conditional on the cited count
+inputs, the supplied one-doublet inventory, and the named textbook one-loop
+kernel, it derives the exact structural closed form for the `SU(2)` coefficient:
 
 ```text
 (C1)  b_2  =  (11 N_pair − N_color (N_color + 1)) / 3  −  1/6
@@ -69,7 +68,7 @@ via S1 + 1-Higgs-doublet, NOT a derivation of any open-lane closure target.
                        =  1 / α_2(Q_0)  +  (19 / (12π)) × ln(Q / Q_0)         [SM]
 
 (C5)  Lattice-scale α_2 anchor `1/α_2|_lattice = 16π`:
-         Derivable on retained main from YT_EW retained `g_2² = 1/(d+1)`
+         Conditional on the supplied assignment `g_2² = 1/(d+1)`
          (with d = 3): `α_2(bare) = g_2²/(4π) = 1/(16π)` and hence
          `1/α_2|_lattice = 16π = 4π × N_pair²` (with N_pair = 2 = √(d+1) at
          d = 3; see also retained EW-CKM trinity bridge for the
@@ -91,18 +90,17 @@ via S1 + 1-Higgs-doublet, NOT a derivation of any open-lane closure target.
 This note explicitly:
 
 - **Does NOT claim** below-Wn closure for `b_2`. The structural closed
-  form `(11 N_pair − N_color(N_color + 1))/3 − 1/6` is a NEW retained-tier
-  algebraic re-expression of the standard SM `b_2 = 19/6` via the
-  freshly-landed S1 Identification Source Theorem, retained physical
-  `N_gen = 3`, and the standard SM one-Higgs-doublet content.
+  form `(11 N_pair − N_color(N_color + 1))/3 − 1/6` is an exact
+  algebraic re-expression conditional on the cited count inputs, supplied
+  physical inventory, and textbook kernel.
 - **Does NOT claim** to close any open Science Lane. The structural
   closed forms (this note + inline QED and QCD companion forms) contribute
   to multiple lanes by providing structural forms for the gauge
   β-coefficients, but full lane closures (m_p, m_e, etc.) still depend on
   additional retained open-lane content.
-- **Does claim**: a NEW retained structural closed form for `b_2`
+- **Does claim**: an exact conditional structural closed form for `b_2`
   expressible as `(22 N_pair − 2 N_color(N_color + 1) − 1)/6` via S1
-  + retained `N_gen = 3` + retained one-Higgs-doublet content; the runner
+  + cited `N_gen = 3` + supplied one-Higgs-doublet content; the runner
   derives companion `b_3` and `b_QED` forms inline for ratio checks.
 
 Per the lessons in `feedback_retained_tier_purity_and_package_wiring.md`
@@ -111,7 +109,7 @@ structural reading at retained values, not a closure.
 
 ## Statement
 
-On retained-tier authorities of current `main`:
+Given the following cited or supplied inputs:
 
 ```text
 (P1)  S1 Identification Source Theorem (retained on main):
@@ -154,10 +152,11 @@ On retained-tier authorities of current `main`:
         These are derived inline from retained main via S1, retained
         FRACTIONAL_CHARGE_DENOMINATOR quark charges, and retained N_gen = 3.
 
-(P7)  Lattice-scale α_2 anchor (derivable on retained main):
-        Retained YT_EW: g_2² = 1/(d+1) = 1/4 with d = dim(Z³) = 3.
+(P7)  Supplied lattice-scale α_2 anchor:
+        g_2² = 1/(d+1) = 1/4 with d = 3 is an explicit assignment here.
         Hence α_2(bare) = g_2²/(4π) = 1/(16π) and 1/α_2|_lattice = 16π.
-        Source: YT_EW_COLOR_PROJECTION_THEOREM.md.
+        `YT_EW_COLOR_PROJECTION_THEOREM.md` is historical context only and
+        does not currently supply this anchor.
 ```
 
 ### Headline conclusions
@@ -237,13 +236,13 @@ running.
 | Standard SU(2)_L 1-loop β-function definition | textbook QFT (Peskin-Schroeder) | external (math) | P3 |
 | LH SU(2)_L Weyl-doublet content (1 Q_L per N_color colors + 1 L_L per gen) | [`LEFT_HANDED_CHARGE_MATCHING_NOTE.md`](LEFT_HANDED_CHARGE_MATCHING_NOTE.md), [`ONE_GENERATION_MATTER_CLOSURE_NOTE.md`](ONE_GENERATION_MATTER_CLOSURE_NOTE.md) | **retained** | P4 |
 | 1 complex scalar doublet | [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md) | declared SM inventory; supplied, not derived | P5 |
-| `g_2² = 1/(d+1) = 1/4` (lattice anchor, gives 1/α_2|_lattice = 16π) | [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md) | **retained** (DERIVED) | P7 |
+| `g_2² = 1/(d+1) = 1/4` (lattice anchor, gives 1/α_2|_lattice = 16π) | explicit assignment in this note | supplied, not derived | P7 |
 | Companion `b_3 = (11 N_color − 2 N_quark)/3 = 7` (QCD) | derived inline in this note from retained S1 counts | inline companion | T3 cross-coupling ratio b_3/b_2 |
 | Companion `b_QED = (2/3)(N_color+1)² = 32/3` (QED) | derived inline from retained FRACTIONAL_CHARGE_DENOMINATOR + retained N_gen = 3 | inline companion | T3 cross-coupling ratio b_2/b_QED |
 
-The structural closed form (T1) uses ONLY retained-tier authorities
-(plus textbook QFT for the β-function definition). P3 is a standard
-QFT identity, not a framework input. The companion cross-coupling ratios
+The structural closed form (T1) uses cited count authorities, the explicitly
+supplied scalar inventory, and the textbook QFT coefficient kernel. The
+companion cross-coupling ratios
 in T3 use structural forms that are themselves derived inline from
 retained main, so the runner derives them inline.
 
@@ -258,7 +257,7 @@ main as a derived SM result:
 The numeric value `19/6` is therefore well-known on main. The NEW
 content of the present note is the **explicit S1 structural decomposition
 `b_2 = (11 N_pair − N_color(N_color + 1))/3 − 1/6`** via the recently-landed
-S1 source theorem + retained `N_gen = 3` + retained one-Higgs-doublet
+S1 source theorem + cited `N_gen = 3` + supplied one-Higgs-doublet
 content, giving the SM gauge β-coefficient trio (with inline b_3 and
 b_QED structural forms).
 
@@ -340,7 +339,7 @@ Standard 1-loop running:
             =  1/α_2(Q_0)  +  (19 / (12π)) × ln(Q / Q_0)         [SM].
 ```
 
-Combined with retained lattice-scale anchor (P7: `1/α_2|_lattice = 16π = 4π × N_pair²`):
+Combined with the supplied lattice-scale anchor (P7: `1/α_2|_lattice = 16π = 4π × N_pair²`):
 
 ```text
 1/α_2(Q)  =  16π  +  ((22 N_pair − 2 N_color(N_color+1) − 1) / (12π)) × ln(Q / Q_lattice)
@@ -395,7 +394,7 @@ The standard SM `b_2 = 19/6` was previously a numerical fact computed
 from the explicit fermion content (`n_W = 12` Weyl doublets) plus the
 1 Higgs doublet contribution.
 
-This note **promotes the structural decomposition** to retained tier via:
+This note records the structural decomposition conditional on:
 
 1. **S1 Identification Source Theorem** (recently landed): sources
    `N_pair = dim_SU2(Q_L) = 2` and `N_color = dim_SU3(Q_L) = 3`.
@@ -404,8 +403,9 @@ This note **promotes the structural decomposition** to retained tier via:
    the LH Weyl-doublet count `N_W = (N_color + 1) × N_gen = 4 × 3 = 12`
    at the retained SM point.
 
-3. **EW Higgs gauge-mass diagonalization** (retained tree theorem):
-   pins the Higgs content as 1 SU(2) doublet with `Y_H = 1/2`.
+3. **Declared SM inventory**: explicitly supplies one complex `SU(2)` scalar
+   doublet. The historical EW/Higgs diagonalization path supplies no physical
+   multiplicity or hypercharge authority.
 
 4. **Standard SM β-function definition**: textbook QFT, providing the
    `(11/3) C_2(adj) − (2/3) T(F^Weyl) N_W − (1/6) T(F^S) N_S^complex`
@@ -416,7 +416,7 @@ is now a retained structural closed form via S1.
 
 ### Why this counts as pushing the science forward
 
-1. **NEW retained structural closed form for b_2**: previously the
+1. **Exact conditional structural closed form for b_2**: previously the
    numeric value `b_2 = 19/6` was implicit in the SM fermion + Higgs
    content; now it has an exact closed form via S1 + retained
    `N_gen = 3` + 1 Higgs doublet.
@@ -468,7 +468,8 @@ is now a retained structural closed form via S1.
 ## What This Claims
 
 - `(C1)`: `b_2 = (22 N_pair − 2 N_color(N_color + 1) − 1)/6 = 19/6`
-  (NEW structural closed form via S1 + retained N_gen = 3 + 1 Higgs).
+  (exact conditional closed form via S1 + cited `N_gen = 3` + supplied
+  scalar inventory).
 - `(C3)`: three-way companion-coupling ratios `b_3/b_2 = 42/19`,
   `b_2/b_QED = 19/64`, `b_3/b_QED = 21/32` (NEW S1-structural ratios).
 - `(C7)`: SM gauge β-coefficient trio in S1-structural form, with `b_3`
@@ -508,7 +509,7 @@ The runner:
    - companion `b_3` and `b_QED` structural forms inline (P6).
    - three-way ratios (T3).
 6. Verifies lattice-scale anchor `1/α_2|_lattice = 16π` via retained
-   `g_2² = 1/(d+1) = 1/4` from YT_EW.
+   the supplied assignment `g_2² = 1/(d+1) = 1/4`.
 7. Cross-checks against PDG/COMPLETE_PREDICTION_CHAIN comparator
    readings as auxiliary numerical agreement (NOT load-bearing).
 
@@ -526,9 +527,8 @@ The runner:
 - [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
   — declared-inventory source for one complex scalar doublet; this is supplied
   physical content and is not derived by the formal mass-algebra note.
-- [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md)
-  — retained DERIVED; bare lattice coupling `g_2² = 1/(d+1)` for the
-  lattice anchor `1/α_2|_lattice = 16π`.
+- `YT_EW_COLOR_PROJECTION_THEOREM.md` — historical context only; not authority
+  for the supplied P7 lattice anchor.
 - [`ONE_GENERATION_MATTER_CLOSURE_NOTE.md`](ONE_GENERATION_MATTER_CLOSURE_NOTE.md)
   — retained `u_R, d_R : (1,3)` cross-check on N_color via S1; LH content.
 

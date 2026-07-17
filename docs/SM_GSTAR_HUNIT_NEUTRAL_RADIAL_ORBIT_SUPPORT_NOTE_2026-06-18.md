@@ -159,7 +159,7 @@ representative on the supplied `SU(2)_L` doublet orbit.
   `H_unit`.
 - It does not promote the `g_*` Higgs-sector row, retag the ledger, or set an
   audit verdict.
-- It does not introduce a new axiom, Tier-A admission, fitted selector, or
+- It does not introduce a new axiom, registered approved primitive, fitted selector, or
   observed-value input.
 - It does not prove Higgs potential dynamics, thermal equilibrium, hypercharge
   uniqueness, or physical-scale `g_2(v)`.

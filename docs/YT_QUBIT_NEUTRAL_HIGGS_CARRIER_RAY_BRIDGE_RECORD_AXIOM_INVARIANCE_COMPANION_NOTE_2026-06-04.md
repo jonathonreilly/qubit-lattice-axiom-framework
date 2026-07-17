@@ -194,7 +194,7 @@ change.
 
 This invariance is what the companion runner verifies block-by-block:
 every load-bearing algebraic check passes using only Quantum-axiom
-(one-qubit Pauli) content, retained EW Higgs content, and elementary
+(one-qubit Pauli) content, defined C^2 matrix content, and elementary
 calculus, and a "Record-axiom counterfactual" block confirms that the
 output is unchanged whether or not a Record-axiom statement is
 appended.
@@ -226,7 +226,7 @@ weight vector `(exp(h), exp(-h))^T` from `exp(h sigma_z)` equals
 `exp(h) * (1, exp(-2h))^T` from the `exp(-2 h P_-)` reading, so the
 common factor `exp(h)` cancels in the normalized source family.
 
-Block 4 — Retained EW Higgs doublet bookkeeping. Verifies
+Block 4 — Defined C^2 matrix bookkeeping. Verifies
 `T_3 = sigma_z / 2`, `Y_H = (1/2) I`, `Q_H = T_3 + Y_H` equals
 `diag(1, 0)`. Loads explicit retained doublet vacuum
 `H_0 = (0, v / sqrt(2))^T`.
@@ -235,9 +235,9 @@ Block 5 — Neutral-ray annihilation. Verifies `P_- H_0 = H_0`,
 `P_+ H_0 = 0`, `Q_H H_0 = 0`. Verifies `Q_H` acts as identity on the
 charged upper component `(1, 0)^T`.
 
-Block 6 — Neutral ray uniqueness inside one-Higgs doublet. Verifies
+Block 6 — Neutral ray uniqueness inside stipulated C^2. Verifies
 `rank(Q_H) = 1` and that `nullspace(Q_H) = span((0, 1)^T)` (a single
-ray, the neutral-Higgs ray). Confirms parent's "neutral ray is unique
+ray, the defined lower ray). Confirms parent's "neutral ray is unique
 in the one-Higgs doublet" line.
 
 Block 7 — Radial tangent stays neutral. Verifies symbolically that

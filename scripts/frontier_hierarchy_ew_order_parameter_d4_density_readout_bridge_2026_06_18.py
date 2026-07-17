@@ -3,7 +3,7 @@
 
 This runner verifies a narrow source-side bridge for the hierarchy
 dimensional-compression blocker. It proves only the finite algebra that the
-retained one-Higgs neutral order-parameter coordinate v is the positive
+defined neutral vector coordinate v is the positive
 fourth-root coordinate of a positive quartic D=4 density.
 
 It does not derive the hierarchy endpoint coefficient surface, the absolute
@@ -105,25 +105,24 @@ def main() -> int:
         f"D4={d4:.12f}, D16={d16:.12f}, separation={abs(d4 / d16 - 1.0):.6f}",
     )
 
-    print("\nSection 3: retained EW gauge-mass dictionary compatibility")
+    print("\nSection 3: defined scalar-readout compatibility")
     g = Fraction(3, 1)
     g_y = Fraction(4, 1)
     v_ref = Fraction(5, 1)
-    # If g is fixed, M_W and M_Z scale linearly with v, so the fourth-root
-    # order-parameter readout is also the gauge-mass scale readout.
+    # These are formal scalar labels from the defined quadratic form.
     mw_ref_sq = g * g * v_ref * v_ref / 4
     mz_ref_sq = (g * g + g_y * g_y) * v_ref * v_ref / 4
     cos2 = g * g / (g * g + g_y * g_y)
     rho_tree = mw_ref_sq / (mz_ref_sq * cos2)
     check(
-        "EW tree rho relation stays one for the neutral order parameter",
+        "formal rho readout stays one",
         rho_tree == 1,
         f"rho_tree={rho_tree}",
     )
     check(
-        "fixed-gauge-coupling mass ratios follow the same v ratio",
+        "fixed-coupling formal readout ratios follow the same v ratio",
         coeff_ratio == Fraction(7, 8),
-        "(M_W,L/M_W,ref)^4 = (v_L/v_ref)^4 = A_ref/A_L",
+        "(sqrt(MW2_L)/sqrt(MW2_ref))^4 = (v_L/v_ref)^4",
     )
 
     print("\nSection 4: source firewalls")

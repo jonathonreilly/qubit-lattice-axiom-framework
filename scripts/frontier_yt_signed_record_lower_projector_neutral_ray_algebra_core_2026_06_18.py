@@ -77,7 +77,7 @@ def check_source_boundaries() -> None:
     check("parent records 2026-06-18 audit-scope repair", "2026-06-18 audit-scope repair" in parent)
     check(
         "parent leaves same-surface carrier theorem open",
-        "physical same-surface carrier theorem" in parent
+        "physical same-surface premise is still open" in parent
         and "same-surface source theorem" in parent,
     )
 
@@ -116,7 +116,7 @@ def check_signed_record_algebra() -> None:
 
 
 def check_ew_neutral_ray_bookkeeping() -> None:
-    section("T2: EW lower ray is neutral in the one-Higgs bookkeeping")
+    section("T2: defined lower ray is the kernel in stipulated C^2")
     v = sp.symbols("v", positive=True, real=True)
     z = sp.Matrix([[1, 0], [0, -1]])
     ident = sp.eye(2)
@@ -146,8 +146,8 @@ def check_radial_tangent_and_ratio_shape() -> None:
     h_s = sp.Matrix([0, v / sp.sqrt(2)])
     tangent = sp.diff(h_s, s)
 
-    check("H(s) lies on EW lower ray", matrix_is_zero(p_minus * h_s - h_s), p_minus * h_s)
-    check("dH/ds lies on EW lower ray", matrix_is_zero(p_minus * tangent - tangent), tangent)
+    check("H(s) lies on defined lower ray", matrix_is_zero(p_minus * h_s - h_s), p_minus * h_s)
+    check("dH/ds lies on defined lower ray", matrix_is_zero(p_minus * tangent - tangent), tangent)
     check("dH/ds is neutral", matrix_is_zero(q * tangent), q * tangent)
 
     y_t, g_2 = sp.symbols("y_t g_2", nonzero=True)

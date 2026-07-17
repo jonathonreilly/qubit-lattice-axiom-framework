@@ -2,10 +2,10 @@
 """Y_T qubit neutral-Higgs carrier-ray bridge gate.
 
 This runner verifies the finite Pauli/projector algebra after the 2026-06-18
-scope repair.  The signed-record lower-projector algebra, EW lower-ray
-neutrality, and same-surface charge-spectral projector repair close as bounded
-support; top coefficient, transfer-response, scalar-normalization, and
-physical-scale gates remain open.
+scope repair. The signed-record lower-projector algebra and a projector equality
+on a stipulated shared C^2 close as bounded support. The physical same-carrier,
+top coefficient, transfer-response, scalar-normalization, and scale gates remain
+open.
 """
 
 from __future__ import annotations
@@ -93,7 +93,7 @@ def part1_anchors() -> dict[str, Any]:
         "Why This Is Not A Renaming",
         "Review Boundary Certificate",
         "2026-06-18 audit-scope repair",
-        "same-surface carrier repair",
+        "physical same-surface premise is still open",
     ):
         check(f"note contains required section: {phrase}", phrase in note)
 
@@ -108,8 +108,8 @@ def part1_anchors() -> dict[str, Any]:
 
     carrier_note = read(SAME_SURFACE_CARRIER)
     for phrase in (
-        "same-surface spectral-projector theorem",
-        "P_neut = 1_0(Q_H)",
+        "spectral-projector theorem on one explicitly defined copy of `C^2`",
+        "P_neut = 1_{0}(Q_H)",
         "P_+ = P_ch",
         "P_- = P_neut",
         "exp(h epsilon_H) = exp(h) exp(-2 h P_neut)",
@@ -123,8 +123,10 @@ def part1_anchors() -> dict[str, Any]:
     hypercharge = ledger_row("standard_model_hypercharge_uniqueness_theorem_note_2026-04-24")
     ew_coupling = ledger_row("ew_coupling_derivation_note")
 
-    check("source-action support packet is retained-grade", is_retained_grade(source_action))
-    check("EW Higgs gauge-mass theorem is retained-grade", is_retained_grade(ew_mass))
+    check("source-action support packet is present", SOURCE_ACTION.exists())
+    check("defined matrix theorem is not physical carrier authority",
+          not is_retained_grade(ew_mass)
+          and "a physical Higgs carrier" in read(EW_MASS))
     check("one-Higgs Yukawa gauge-selection row is not retained-grade", not is_retained_grade(one_higgs))
     check("hypercharge uniqueness row is not retained-grade", not is_retained_grade(hypercharge))
     check("EW coupling note is not retained-grade g_2(v) authority", not is_retained_grade(ew_coupling))
@@ -218,8 +220,10 @@ def part5_current_closure_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
     strict_wz_packet = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
     blockers = {
         "lower_projector_algebra_core_closed": True,
-        "same_surface_qubit_higgs_carrier_bridge_closed": SAME_SURFACE_CARRIER.exists(),
-        "wz_denominator_response_closed": strict_wz_packet.exists(),
+        "same_surface_projector_algebra_closed": SAME_SURFACE_CARRIER.exists(),
+        "same_surface_qubit_higgs_carrier_bridge_closed": False,
+        "formal_denominator_readout_response_closed": strict_wz_packet.exists(),
+        "physical_wz_denominator_response_closed": False,
         "symbolic_top_response_row_present": SYMBOLIC_TOP_PACKET.exists(),
         "full_same_surface_top_w_transfer_response_closed": False,
         "coefficient_certified_top_w_rows_present": strict_top_w_rows.exists(),
@@ -231,10 +235,11 @@ def part5_current_closure_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
     }
     check("lower-projector algebra core is closed", blockers["lower_projector_algebra_core_closed"])
     check(
-        "same-surface qubit/Higgs carrier bridge is closed",
-        blockers["same_surface_qubit_higgs_carrier_bridge_closed"],
+        "physical same-surface qubit/Higgs carrier bridge remains open",
+        not blockers["same_surface_qubit_higgs_carrier_bridge_closed"],
     )
-    check("strict W/Z denominator response packet is present", blockers["wz_denominator_response_closed"])
+    check("formal denominator readout response packet is present",
+          blockers["formal_denominator_readout_response_closed"])
     check("symbolic top response row packet is present", blockers["symbolic_top_response_row_present"])
     check("full same-surface top/W transfer response remains open", not blockers["full_same_surface_top_w_transfer_response_closed"])
     check("coefficient-certified top/W rows remain absent", not blockers["coefficient_certified_top_w_rows_present"])
@@ -256,7 +261,7 @@ def part6_firewalls() -> None:
         "plaquette/u0",
         "observed top/W/Z/Higgs masses",
         "fitted selector",
-        "same-surface carrier repair is a top-response",
+        "physical same-surface premise is still open",
     ):
         check(f"firewall phrase present: {phrase}", phrase in note)
 
@@ -299,7 +304,8 @@ def main() -> int:
             "g_2 authority remain open."
         ),
         "lower_projector_algebra_core_closed": True,
-        "same_surface_qubit_higgs_carrier_bridge_closed": SAME_SURFACE_CARRIER.exists(),
+        "same_surface_projector_algebra_closed": SAME_SURFACE_CARRIER.exists(),
+        "same_surface_qubit_higgs_carrier_bridge_closed": False,
         "current_blockers": blockers,
         "upstream_statuses": statuses,
         "pass_count": PASS_COUNT,

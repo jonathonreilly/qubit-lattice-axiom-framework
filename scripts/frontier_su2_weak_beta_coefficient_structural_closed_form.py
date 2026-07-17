@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""SU(2)_L Weak 1-Loop beta-Function Coefficient Structural Closed Form via S1.
+"""Conditional exact SU(2) one-loop coefficient structural closed form.
 
-Derives a NEW retained structural closed form for the SU(2)_L 1-loop
-beta-function coefficient entirely in terms of S1 structural integers
-+ retained three-generation matter structure + retained 1 Higgs doublet:
+Given cited count data, a supplied scalar-doublet inventory, and the named
+textbook kernel, derives the structural closed form:
 
   b_2  =  (11 N_pair - N_color (N_color + 1)) / 3  -  1/6
         =  (22 N_pair - 2 N_color (N_color + 1) - 1) / 6
@@ -22,15 +21,12 @@ Plus three-way companion-coupling ratios in S1-structural form:
 
 Plus joint asymptotic running closed forms via S1 lattice anchors.
 
-Status: retained SU(2)_L-running structural corollary; explicitly NOT a
-closure of any open Science Lane. Contributes one structural ingredient
-toward Lane 1 (Hadron Mass), Lane 2 (Atomic-Scale), Lane 3 (Quark masses),
-Lane 4 (Neutrino), and Lane 6 (Charged-lepton mass) via EW running.
+No audit status, physical scalar multiplicity, or lattice coupling anchor is
+derived by this runner.
 """
 
 from __future__ import annotations
 
-import json
 import re
 import sys
 from fractions import Fraction
@@ -60,7 +56,6 @@ def banner(title: str) -> None:
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 
 def read_authority(rel_path: str) -> str:
@@ -68,66 +63,6 @@ def read_authority(rel_path: str) -> str:
     if not path.exists():
         return ""
     return path.read_text()
-
-
-def extract_status_line(content: str) -> str:
-    """Extract the first 'Status:' line from a markdown document.
-
-    Retained for transparency / display only. After the 2026-05-07 audit-pipeline
-    retag, author-side prose deliberately does NOT carry the audit verdict
-    (e.g. it now reads `**Status authority:** independent audit lane only`).
-    The load-bearing status check is `ledger_effective_status` against the
-    canonical `audit_ledger.json` row; this helper is no longer load-bearing.
-    """
-    if not content:
-        return ""
-    for line in content.splitlines()[:30]:
-        stripped = line.strip()
-        if stripped.lower().startswith("**status:**") or stripped.lower().startswith("status:"):
-            text = stripped
-            for prefix in ("**Status:**", "**status:**", "Status:", "status:"):
-                if text.lower().startswith(prefix.lower()):
-                    text = text[len(prefix):].strip()
-                    break
-            return text
-    return ""
-
-
-_LEDGER_CACHE: dict | None = None
-
-
-def _load_ledger() -> dict:
-    global _LEDGER_CACHE
-    if _LEDGER_CACHE is None:
-        try:
-            _LEDGER_CACHE = json.loads(LEDGER_PATH.read_text())
-        except OSError:
-            _LEDGER_CACHE = {"rows": {}}
-    return _LEDGER_CACHE
-
-
-def _claim_id_from_rel_path(rel_path: str) -> str:
-    """Mirror docs/audit/scripts/build_citation_graph.py::claim_id_from_path."""
-    s = rel_path
-    if s.startswith("docs/"):
-        s = s[len("docs/"):]
-    if s.endswith(".md"):
-        s = s[:-3]
-    parts = s.split("/")
-    return ".".join(parts).lower()
-
-
-def ledger_effective_status(rel_path: str, ledger: dict | None = None) -> str:
-    rows = (ledger or _load_ledger()).get("rows", {})
-    cid = _claim_id_from_rel_path(rel_path)
-    row = rows.get(cid)
-    if row is None:
-        return ""
-    return row.get("effective_status") or row.get("audit_status") or ""
-
-
-def _retained_grade(eff_status: str) -> bool:
-    return eff_status in {"retained", "retained_bounded", "retained_no_go"}
 
 
 def extract_rep_literal(content: str, field_name: str) -> tuple[int, int] | None:
@@ -144,77 +79,24 @@ def extract_rep_literal(content: str, field_name: str) -> tuple[int, int] | None
 
 
 def audit_authority_status_lines() -> None:
-    banner("Ground-up verification of cited authorities (ledger effective_status)")
-
-    print("  Status check is now structural: the runner looks up the canonical")
-    print("  `effective_status` for each authority in")
-    print("  docs/audit/data/audit_ledger.json (the per-row audit verdict).")
-    print("  Author-side note prose is shown for transparency only.")
-    print()
-    print("  T1-T6 LOAD-BEARING retained-tier authorities:")
-    print()
-
-    ledger = _load_ledger()
-
-    retained_authorities = (
-        ("docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
-         "S1 P1: Q_L : (2,3) source for N_pair, N_color, plus LH Weyl doublet content (P4)",
-         ("retained",)),
-        ("docs/CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md",
-         "S1 Identification Source Theorem",
-         ("retained",)),
-        ("docs/THREE_GENERATION_STRUCTURE_NOTE.md",
-         "P2: retained physical three-generation matter structure, N_gen = 3",
-         ("retained",)),
-        ("docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md",
-         "P2 cross-check: retained CKM structural N_color = 3",
-         ("retained",)),
-        ("docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md",
-         "P5: 1 Higgs doublet Y_H = 1/2 retained tree theorem",
-         ("standalone", "positive")),
-        ("docs/YT_EW_COLOR_PROJECTION_THEOREM.md",
-         "P7: g_2^2 = 1/(d+1) lattice coupling (1/alpha_2|_lattice = 16 pi)",
-         ("derived", "retained")),
-        ("docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md",
-         "S1 cross-check: u_R, d_R : (1,3) on N_color",
-         ("retained",)),
-        ("docs/FRACTIONAL_CHARGE_DENOMINATOR_FROM_N_C_THEOREM_NOTE_2026-04-24.md",
-         "Inline companion b_QED: Q_u, Q_d structural forms",
-         ("retained",)),
+    """Check source-file presence; audit status is not theorem evidence."""
+    banner("Cited source-file presence (status is not scientific evidence)")
+    cited = (
+        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
+        "docs/CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md",
+        "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
+        "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md",
+        "docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md",
+        "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
+        "docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md",
+        "docs/FRACTIONAL_CHARGE_DENOMINATOR_FROM_N_C_THEOREM_NOTE_2026-04-24.md",
     )
-
-    for rel_path, role, _kws in retained_authorities:
-        content = read_authority(rel_path)
-        status_text = extract_status_line(content)
-        eff_status = ledger_effective_status(rel_path, ledger)
-        ok = bool(content) and _retained_grade(eff_status)
-        print(f"    [{rel_path.split('/')[-1]}]")
-        print(f"      Role:                {role}")
-        print(f"      Status (note prose): {status_text!r}")
-        print(f"      Effective status:    {eff_status!r}")
-        print(f"      Verified retained?   {ok}")
-        check(f"Retained-tier verified for {rel_path.split('/')[-1]}", ok)
-        print()
-
-    print("  Comparators (NOT load-bearing; numerical cross-checks only):")
-    print()
-    comparator_authorities = (
-        ("docs/COMPLETE_PREDICTION_CHAIN_2026_04_15.md",
-         "Comparator: lists 'b_2 = -19/6' as DERIVED (sign-convention coincidence)",
-         (".",)),
+    for rel_path in cited:
+        check(f"cited source exists: {Path(rel_path).name}", bool(read_authority(rel_path)))
+    check(
+        "comparator file exists",
+        bool(read_authority("docs/COMPLETE_PREDICTION_CHAIN_2026_04_15.md")),
     )
-    for rel_path, role, _kws in comparator_authorities:
-        content = read_authority(rel_path)
-        status_text = extract_status_line(content)
-        eff_status = ledger_effective_status(rel_path, ledger)
-        ok = bool(content)
-        print(f"    [{rel_path.split('/')[-1]}]")
-        print(f"      Role:                {role}")
-        print(f"      Status (note prose): {status_text!r}")
-        print(f"      Effective status:    {eff_status!r}")
-        print(f"      File exists?         {ok}")
-        check(f"Comparator file present for {rel_path.split('/')[-1]}", ok)
-        print()
 
 
 def audit_s1_qL_extraction() -> tuple[int, int, int]:
@@ -245,71 +127,31 @@ def audit_s1_qL_extraction() -> tuple[int, int, int]:
 
 
 def audit_p2_retained_n_gen() -> int:
-    """P2: N_gen = 3 from retained three-generation matter structure."""
-    banner("P2: N_gen = 3 from retained three-generation matter structure")
-
-    gen_rel = "docs/THREE_GENERATION_STRUCTURE_NOTE.md"
-    gen_content = read_authority(gen_rel)
-    gen_status_text = extract_status_line(gen_content)
-    gen_eff_status = ledger_effective_status(gen_rel)
-    has_retained_status = _retained_grade(gen_eff_status)
-    has_three_gen = bool(re.search(r"three[\-\s]generation", gen_content, re.IGNORECASE))
-    has_physical_species = (
-        "physically distinct" in gen_content.lower()
-        and "species" in gen_content.lower()
-    )
-    print("  Reading THREE_GENERATION_STRUCTURE_NOTE.md")
-    print(f"    Status (note prose):  {gen_status_text!r}")
-    print(f"    Effective status:     {gen_eff_status!r}")
-    print(f"    Verified retained?    {has_retained_status}")
-    print(f"    Contains three-generation matter structure? {has_three_gen}")
-    print(f"    Contains physically distinct species language? {has_physical_species}")
-    check("P2: THREE_GENERATION_STRUCTURE_NOTE status is retained (ledger)", has_retained_status)
-    check("P2: retained note establishes three-generation matter structure", has_three_gen)
-    check("P2: retained note establishes physically distinct species structure", has_physical_species)
-
-    N_gen = 3  # retained value
-    print(f"  N_gen = {N_gen} (retained three-generation matter structure)")
-    return N_gen
+    """Read the cited three-generation source without consuming its status."""
+    banner("P2: cited three-generation count")
+    content = read_authority("docs/THREE_GENERATION_STRUCTURE_NOTE.md")
+    has_three_gen = bool(re.search(r"three[\-\s]generation", content, re.IGNORECASE))
+    check("P2: three-generation source exists", bool(content))
+    check("P2: source states three-generation structure", has_three_gen)
+    check("P2: theorem uses the cited integer N_gen=3", has_three_gen and 3 > 0)
+    return 3
 
 
 def audit_p5_higgs_one_doublet() -> tuple[int, Fraction]:
-    """P5: 1 Higgs doublet (Y_H = 1/2) from retained EW Higgs diag."""
-    banner("P5: 1 Higgs doublet (Y_H = 1/2) retained on EW Higgs diag tree theorem")
-
-    higgs_content = read_authority(
-        "docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md"
-    )
-    has_one_higgs = "Y_H = 1/2" in higgs_content or "Y_H=1/2" in higgs_content
-    print(f"  Searching EW_HIGGS_GAUGE_MASS_DIAGONALIZATION for 'Y_H = 1/2':")
-    print(f"    Found? {has_one_higgs}")
-    check("P5: 1 Higgs doublet (Y_H = 1/2) retained",
-          has_one_higgs)
-
-    N_H = 1  # number of Higgs doublets
-    T_F_H = Fraction(1, 2)  # T(F) for fundamental of SU(2)
-    print(f"  N_H_doublets = {N_H}")
-    print(f"  T(F_H^scalar) for fundamental of SU(2) = {T_F_H}")
-
-    return N_H, T_F_H
+    """Consume the explicitly supplied declared inventory, not EW algebra."""
+    banner("P5: supplied one-doublet scalar inventory")
+    inventory = read_authority("docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md")
+    has_one_doublet = "complex Higgs doublet" in inventory and "4 real scalar components" in inventory
+    check("P5: declared inventory supplies one complex doublet", has_one_doublet)
+    return 1, Fraction(1, 2)
 
 
 def audit_p7_lattice_alpha_2_anchor() -> Fraction:
-    """P7: 1/alpha_2|_lattice = 16 pi from retained YT_EW g_2^2 = 1/(d+1)."""
-    banner("P7: 1/alpha_2|_lattice = 16 pi from retained YT_EW lattice anchor")
-
-    yt_content = read_authority("docs/YT_EW_COLOR_PROJECTION_THEOREM.md")
-    has_g2_form = "g_2^2 = 1/(d+1)" in yt_content
-    print(f"  Searching YT_EW_COLOR_PROJECTION for 'g_2^2 = 1/(d+1)':")
-    print(f"    Found? {has_g2_form}")
-    check("P7: g_2^2 = 1/(d+1) retained YT_EW",
-          has_g2_form)
-
-    inv_alpha_2_lattice_over_pi = Fraction(16, 1)  # 16 pi
-    print(f"  At d = 3 (Z^3 axiom): g_2^2 = 1/4")
-    print(f"  alpha_2(bare) = g_2^2 / (4 pi) = 1 / (16 pi)")
-    print(f"  1/alpha_2|_lattice = 16 pi = 4 pi * N_pair^2 (with N_pair = 2)")
-
+    """Use the theorem's explicit conditional P7 assignment."""
+    banner("P7: supplied lattice anchor")
+    inv_alpha_2_lattice_over_pi = Fraction(16, 1)
+    check("P7: supplied g_2^2=1/4 gives 1/alpha_2=16 pi",
+          Fraction(1, 4) * inv_alpha_2_lattice_over_pi == 4)
     return inv_alpha_2_lattice_over_pi
 
 

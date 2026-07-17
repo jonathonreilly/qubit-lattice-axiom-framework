@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py
-runner_sha256: d5f879ca58ae209a4d7f5ada21868242f91831878fb0690c7f1da6c5c6d1cc76
+runner_sha256: 0fd3efe5209fdd3cf1f12315fb61da93065ee60aadc06be458c6df1c3290e636
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.89
+elapsed_sec: 1.00
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -25,19 +25,19 @@ Part 1: anchors and authority scope
 [PASS] note contains required section: Why This Is Not A Renaming
 [PASS] note contains required section: Review Boundary Certificate
 [PASS] note contains required section: 2026-06-18 audit-scope repair
-[PASS] note contains required section: same-surface carrier repair
+[PASS] note contains required section: physical same-surface premise is still open
 [PASS] core note contains boundary phrase: Actual current-surface status:** bounded-support
 [PASS] core note contains boundary phrase: Trace class:** upstream_support
 [PASS] core note contains boundary phrase: not a same-surface physical carrier theorem
 [PASS] core note contains boundary phrase: bare_retained_allowed: false
-[PASS] same-surface carrier theorem contains marker: same-surface spectral-projector theorem
-[PASS] same-surface carrier theorem contains marker: P_neut = 1_0(Q_H)
+[PASS] same-surface carrier theorem contains marker: spectral-projector theorem on one explicitly defined copy of `C^2`
+[PASS] same-surface carrier theorem contains marker: P_neut = 1_{0}(Q_H)
 [PASS] same-surface carrier theorem contains marker: P_+ = P_ch
 [PASS] same-surface carrier theorem contains marker: P_- = P_neut
 [PASS] same-surface carrier theorem contains marker: exp(h epsilon_H) = exp(h) exp(-2 h P_neut)
 [PASS] same-surface carrier theorem contains marker: does not derive positive Y_T closure
-[PASS] source-action support packet is retained-grade
-[PASS] EW Higgs gauge-mass theorem is retained-grade
+[PASS] source-action support packet is present
+[PASS] defined matrix theorem is not physical carrier authority
 [PASS] one-Higgs Yukawa gauge-selection row is not retained-grade
 [PASS] hypercharge uniqueness row is not retained-grade
 [PASS] EW coupling note is not retained-grade g_2(v) authority
@@ -72,8 +72,8 @@ Part 4: radial tangent stays on the same neutral ray
 
 Part 5: current closure boundary
 [PASS] lower-projector algebra core is closed
-[PASS] same-surface qubit/Higgs carrier bridge is closed
-[PASS] strict W/Z denominator response packet is present
+[PASS] physical same-surface qubit/Higgs carrier bridge remains open
+[PASS] formal denominator readout response packet is present
 [PASS] symbolic top response row packet is present
 [PASS] full same-surface top/W transfer response remains open
 [PASS] coefficient-certified top/W rows remain absent
@@ -90,7 +90,7 @@ Part 6: firewalls
 [PASS] firewall phrase present: plaquette/u0
 [PASS] firewall phrase present: observed top/W/Z/Higgs masses
 [PASS] firewall phrase present: fitted selector
-[PASS] firewall phrase present: same-surface carrier repair is a top-response
+[PASS] firewall phrase present: physical same-surface premise is still open
 [PASS] forbidden overclaim absent: Status:** retained
 [PASS] forbidden overclaim absent: proposed_retained
 [PASS] forbidden overclaim absent: This note derives `y_t`

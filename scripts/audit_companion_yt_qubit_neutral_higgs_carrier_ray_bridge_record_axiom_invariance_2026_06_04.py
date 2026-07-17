@@ -34,7 +34,7 @@ confirm zero Record-axiom usage in the auditable core.
 Every load-bearing algebraic check uses only:
   (i)   one-qubit Pauli/projector content
         (Quantum-axiom: A_x ~= M_2(C) ~= Cl(3,0));
-  (ii)  retained EW one-Higgs doublet bookkeeping
+  (ii)  defined C^2 matrix bookkeeping
         (T_3, Y_H, Q_H, H_0 from
         EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md);
   (iii) elementary finite-dimensional matrix-exponential algebra and
@@ -53,7 +53,7 @@ Block plan:
              exp(h sigma_z) = exp(h) * exp(-2 h P_-) at sampled h.
   Block 3  : Normalized weight equivalence
              (common exp(h) factor cancels).
-  Block 4  : Retained EW doublet bookkeeping
+  Block 4  : Defined C^2 matrix bookkeeping
              (T_3 = sigma_z/2; Y_H = (1/2) I; Q_H = diag(1, 0);
              H_0 = (0, v/sqrt(2))^T).
   Block 5  : Neutral-ray annihilation
@@ -241,11 +241,11 @@ def block3() -> None:
 
 
 # -----------------------------------------------------------
-# Block 4: Retained EW doublet bookkeeping
+# Block 4: Defined C^2 matrix bookkeeping
 # -----------------------------------------------------------
 
 def block4() -> None:
-    header("BLOCK 4: retained EW one-Higgs doublet bookkeeping")
+    header("BLOCK 4: defined C^2 matrix bookkeeping")
     z = pauli_z()
     I2 = identity2()
     T3 = z / 2.0
@@ -308,7 +308,7 @@ def block5() -> None:
 # -----------------------------------------------------------
 
 def block6() -> None:
-    header("BLOCK 6: neutral ray uniqueness inside one-Higgs doublet")
+    header("BLOCK 6: neutral ray uniqueness inside stipulated C^2")
     # Use sympy for exact rank / nullspace.
     z = sp.Matrix([[1, 0], [0, -1]])
     ident = sp.eye(2)
@@ -724,7 +724,7 @@ def main() -> int:
     log("  (sigma_z = P_+ - P_-; sigma_z source <-> P_- occupation source;")
     log("   P_- H_0 = H_0; Q_H H_0 = 0; radial tangent neutral;")
     log("   sqrt(2) y_t / g_2 cancels v'(s)) uses ONLY one-qubit Pauli")
-    log("  content (Quantum axiom), retained EW Higgs bookkeeping, and")
+    log("  content (Quantum axiom), stipulated C^2/lower-ray bookkeeping, and")
     log("  elementary calculus. The Record axiom (additive scalar")
     log("  record-readout functional) is neither used nor invoked.")
     log("  Numeric output is bit-identical under both 'Record axiom")

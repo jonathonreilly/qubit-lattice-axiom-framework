@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-"""EW neutral-projector same-surface carrier theorem for the Y_T lane.
+"""Defined lower-projector algebra on a stipulated shared C^2.
 
-This runner proves that the neutral Higgs carrier ray is the zero-eigenvalue
-spectral projector of Q_H = T_3 + Y_H on the retained one-Higgs EW doublet.
-It does not derive the Higgs sector from the minimal axioms and does not close
-Y_T; it supplies the exact same-surface carrier bridge requested by audit.
+This runner proves equality of two projector formulas after one shared C^2 is
+stipulated. It does not identify the qubit and physical EW/Higgs carriers.
 """
 
 from __future__ import annotations
@@ -65,13 +63,13 @@ def part1_authority_surface() -> dict[str, Any]:
         "Claim",
         "Cited Authority Surface",
         "Frame Invariance",
-        "What This Closes",
+        "Exact Boundary Of The Result",
         "What This Does Not Close",
     ):
         check(f"note contains required marker: {marker}", marker in note)
 
     ew = read(EW_MASS)
-    for phrase in ("Y_H = 1/2", "H_0 = (0, v/sqrt(2))^T", "Q = T_3 + Y"):
+    for phrase in ("Y = I2 / 2", "h0 = (0, v/sqrt(2))^T", "T3+Y"):
         check(f"EW Higgs source contains marker: {phrase}", phrase in ew)
 
     source_action = read(SOURCE_ACTION)
@@ -87,10 +85,10 @@ def part1_authority_surface() -> dict[str, Any]:
     check("minimal axioms do not supply particle content", "particle content" in minimal)
     check("minimal axioms do not supply gauge group", "gauge group" in minimal)
     note_flat = " ".join(note.split()).lower()
-    check("note contains independent-audit boundary", "independent audit" in note_flat)
+    check("note contains independent-audit boundary", "independent_audit_lane_only" in note_flat)
     check(
         "new theorem explicitly does not derive the Higgs sector from minimal axioms",
-        "does not derive gauge group, particle content, or the higgs sector" in note_flat,
+        "does not derive a gauge group, particle content, the higgs sector" in note_flat,
     )
 
     return {
@@ -209,7 +207,8 @@ def part6_target_bridge_wiring() -> None:
     note_flat = " ".join(note.split())
     new_note_name = NOTE.name
     check("target bridge cites the new same-surface theorem", new_note_name in target)
-    check("target bridge names the spectral-projector repair", "same-surface spectral-projector theorem" in target)
+    check("target bridge names the stipulated spectral-projector equality",
+          "supplies the spectral-projector equality" in target)
     check("target bridge keeps no-positive-Y_T boundary", "does not mean the physical Y_T lane has closed" in target)
 
     for forbidden in (

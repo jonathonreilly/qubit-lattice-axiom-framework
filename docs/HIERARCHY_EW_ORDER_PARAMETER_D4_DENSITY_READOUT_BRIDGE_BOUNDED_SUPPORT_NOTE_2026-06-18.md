@@ -96,29 +96,31 @@ v(L) / v_ref = (A_ref / A(L))^(1/4).
 
 This is the same fourth-root readout as the fixed-density bridge
 [`HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md),
-now tied to the retained EW neutral order-parameter coordinate rather than an
-anonymous positive scalar `v`.
+now tied to the defined neutral vector coordinate rather than an anonymous
+positive scalar `v`. A physical EW order-parameter interpretation remains an
+additional hypothesis.
 
-## Compatibility With The EW Gauge-Mass Dictionary
+## Compatibility with the defined scalar readouts
 
-The retained EW diagonalization theorem gives, on the same neutral surface,
-
-```text
-M_W = g v / 2,
-M_Z = sqrt(g^2 + g_Y^2) v / 2,
-rho_tree = 1.
-```
-
-Thus at fixed gauge couplings the W/Z masses scale linearly with the same
-positive coordinate `v`. The fourth-root density readout is therefore also the
-fixed-coupling EW gauge-mass scale readout:
+The defined quadratic-form theorem gives the formal scalar readouts
 
 ```text
-(M_W(L) / M_W(ref))^4 = (v(L) / v_ref)^4 = A_ref / A(L),
+MW2 = g^2 v^2 / 4,
+MZ2 = (g^2 + gY^2) v^2 / 4,
+rho = 1.
 ```
 
-and similarly for `M_Z`. The tree-level rho relation remains one because the
-same `v^2` factor cancels.
+Thus at fixed `g,gY` the positive square roots of the formal readouts scale
+linearly with `v`:
+
+```text
+(sqrt(MW2(L)) / sqrt(MW2(ref)))^4
+  = (v(L) / v_ref)^4 = A_ref / A(L),
+```
+
+and similarly for `MZ2`. This is formal algebra only. Calling the readouts W/Z
+masses or `v` a physical VEV still requires the open physical bridge stated
+above.
 
 ## Endpoint Application Boundary
 
@@ -149,7 +151,7 @@ coefficient surface with the physical Higgs density surface.
 - A D=16 root is not the same readout. It fails the D=4 density equation
   unless the endpoint ratio is trivial.
 - The theorem uses no observed EW value, no PDG comparator, no fitted selector,
-  no new axiom, and no Tier-A admission.
+  no new axiom, and no registered approved primitive.
 
 ## Verification
 

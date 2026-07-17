@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py
-runner_sha256: 57366f88877698b0eb3f94b65f12a0949d64119c03aef7ad6ac18ced0dadd911
+runner_sha256: b76df7428e2c38caf150d612af186299e94f44c670020b1ffe63526a439f9f03
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.83
+elapsed_sec: 1.00
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -24,8 +24,8 @@ Part 1: anchors and authority scope
 [PASS] note contains required section: What This Still Does Not Close
 [PASS] note contains required section: Why This Is Not A Renaming
 [PASS] note contains required section: Review Boundary Certificate
-[PASS] EW Higgs gauge-mass theorem is retained
-[PASS] source-action support packet is retained_bounded
+[PASS] defined matrix theorem is not physical W/Z authority
+[PASS] source-action support packet is present
 [PASS] one-Higgs top carrier is not retained authority yet
 [PASS] hypercharge uniqueness is not retained authority yet
 [PASS] EW coupling note is not retained g_2(v) authority
@@ -48,7 +48,7 @@ Part 4 (layer-1 clean EW derivative corollary): source-coordinate reparameteriza
 [PASS] W/Z response ratio invariant under s=f(r): g_2/sqrt(g_2**2 + g_Y**2)
 
 Part 5: current Y_T closure boundary
-[PASS] strict W/Z denominator response is closed
+[PASS] formal denominator readout response is closed
 [PASS] symbolic top response row is present
 [PASS] coefficient-certified top response remains absent
 [PASS] one-Higgs top carrier is not retained authority yet

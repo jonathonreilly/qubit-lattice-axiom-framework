@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Strict W/Z neutral-carrier response packet for the Y_T top/W route.
+"""Strict formal neutral-readout response packet for the Y_T route.
 
-The runner verifies exact W/Z response rows on the retained one-Higgs EW
-surface.  It keeps the result denominator-side support only: no top numerator
-response row or numerical Y_T closure is certified here.
+The runner differentiates the defined `MW` and `MZ` scalar labels on a
+stipulated coordinate. It does not identify them as physical W/Z responses.
 
 2026-06-19/2026-06-20 audit-scope repair: the checks are segregated into two
 layers, matching the note split.
@@ -105,8 +104,11 @@ def part1_anchors() -> dict[str, Any]:
     hypercharge = ledger_row("standard_model_hypercharge_uniqueness_theorem_note_2026-04-24")
     ew_coupling = ledger_row("ew_coupling_derivation_note")
 
-    check("EW Higgs gauge-mass theorem is retained", ew_mass.get("effective_status") == "retained")
-    check("source-action support packet is retained_bounded", source_action.get("effective_status") == "retained_bounded")
+    check("defined matrix theorem is not physical W/Z authority",
+          ew_mass.get("effective_status") != "retained"
+          and "formal labels only" in read(EW_MASS)
+          and "not claims of an unbroken physical generator" in read(EW_MASS))
+    check("source-action support packet is present", NEUTRAL_RAY.exists())
     check("one-Higgs top carrier is not retained authority yet", one_higgs.get("effective_status") != "retained")
     check("hypercharge uniqueness is not retained authority yet", hypercharge.get("effective_status") != "retained")
     check("EW coupling note is not retained g_2(v) authority", ew_coupling.get("effective_status") != "retained")
@@ -187,7 +189,8 @@ def part5_current_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
     print("\nPart 5: current Y_T closure boundary")
     strict_top_w_rows = ROOT / "outputs" / "yt_fh_top_w_strict_response_rows_2026-05-25.json"
     blockers = {
-        "strict_wz_denominator_response_closed": True,
+        "formal_denominator_readout_response_closed": True,
+        "physical_wz_denominator_response_closed": False,
         "symbolic_top_response_row_present": SYMBOLIC_TOP_PACKET.exists(),
         "coefficient_certified_top_response_present": strict_top_w_rows.exists(),
         "one_higgs_yukawa_selection_retained": statuses["one_higgs_yukawa_selection_status"] == "retained",
@@ -195,7 +198,8 @@ def part5_current_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
         "physical_scale_g2_retained": statuses["ew_coupling_status"] == "retained",
         "retained_closure_allowed": False,
     }
-    check("strict W/Z denominator response is closed", blockers["strict_wz_denominator_response_closed"])
+    check("formal denominator readout response is closed",
+          blockers["formal_denominator_readout_response_closed"])
     check("symbolic top response row is present", blockers["symbolic_top_response_row_present"])
     check("coefficient-certified top response remains absent", not blockers["coefficient_certified_top_response_present"])
     check("one-Higgs top carrier is not retained authority yet", not blockers["one_higgs_yukawa_selection_retained"])
@@ -260,7 +264,8 @@ def main() -> int:
             "unsupplied same-surface bridge, and the top coefficient, retained "
             "one-Higgs/hypercharge authority, and physical-scale g_2 authority remain open."
         ),
-        "strict_wz_denominator_response_closed": True,
+        "formal_denominator_readout_response_closed": True,
+        "physical_wz_denominator_response_closed": False,
         "current_blockers": blockers,
         "upstream_statuses": statuses,
         "pass_count": PASS_COUNT,

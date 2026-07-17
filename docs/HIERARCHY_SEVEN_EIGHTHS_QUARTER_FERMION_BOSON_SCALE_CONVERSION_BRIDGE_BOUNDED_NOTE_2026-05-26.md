@@ -112,8 +112,8 @@ support pattern, not a universal no-alternative theorem.
 | (B3) | (T2): per degree of freedom on `Z^3 × S^1_β` with APBC fermion / PBC boson Matsubara modes, `u_F / u_B = η(4)/ζ(4) = 7/8` at `d_spacetime = 4` | Bounded fermionic Stefan-Boltzmann source row | no |
 | (B4) | Apply (B2) to ratio of energy densities at equal temperature: scale-conversion factor between fermionic and bosonic radiation in 3+1 is `(u_F/u_B)^(1/4) = (7/8)^(1/4)` | (B2) + (B3) | no |
 | (B5) | (T4): the rational base `7/8` is also the d=4 Riemann-Dirichlet anchor value | Riemann-Dirichlet anchor theorem | no |
-| (B6) | (T1): the EW Higgs VEV `v` is a bosonic-doublet scalar VEV (`Y_H = 1/2`, neutral vacuum) | EW gauge-mass diagonalization theorem | no |
-| (B7) | If the framework's `v_no_pref = M_Pl · α_LM^16` is later justified as a dimension-one readout of a fermion-condensate energy density, then under (B4)+(B6) the conversion to the bosonic-Higgs scale would use `(7/8)^(1/4)` | (B4) + (B6) + the separate hierarchy readout admission recorded in `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md` | no |
+| (B6) | (T1) supplies, rather than derives, the physical identification of `v` as a bosonic-doublet scalar VEV. The historical EW/Higgs theorem supplies no such carrier authority | supplied T1 physical bridge | no |
+| (B7) | If the framework's `v_no_pref = M_Pl · α_LM^16` is later justified as a dimension-one readout of a fermion-condensate energy density, then under (B4) and supplied T1 the conversion to the bosonic scale would use `(7/8)^(1/4)` | (B4) + supplied T1 + the separate open hierarchy readout bridge | no |
 
 The bridge does not cite the Wilson plaquette action, staggered phases,
 Brillouin-zone labels, link unitaries, lattice scale `u_0`, a Monte
@@ -148,12 +148,12 @@ not compute that correction.
 This bridge supplies bounded support for the `7/8` prefactor. It does
 not close:
 
-- The hierarchy formula's other admitted primitives: Planck-scale input,
+- The hierarchy formula's other supplied/open inputs: Planck-scale input,
   Wick-rotation/species-count input, and the `u_0^16 → α_LM^16`
   substitution carrying the `(4π)^-16` factor.
 - The `L_t = 4` selector that fixes `d = 4` in the physical readout
   (`hierarchy_bosonic_bilinear_selector_note`, unaudited).
-- The "Higgs = taste-condensate" admission itself.
+- The supplied "Higgs = taste-condensate" physical identification itself.
 - The 0.0255% residual.
 - A universal exclusion theorem for all numerical-fit alternatives.
 
@@ -202,8 +202,8 @@ surface is:
 
 ## 8. Non-Load-Bearing Context
 
-- `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md` — canonical
-  status note enumerating the historical hierarchy admitted primitives.
+- `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md` — historical
+  status context enumerating the supplied/open hierarchy inputs.
 - `HIERARCHY_FORMULA_EW_VEV_OBSERVABLE_IDENTIFICATION_BRIDGE_BOUNDED_NOTE_2026-05-26.md`
   — companion observable-identification bridge.
 - `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md` — uses

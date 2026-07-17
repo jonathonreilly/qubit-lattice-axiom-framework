@@ -11,16 +11,12 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from fractions import Fraction
-import json
 from pathlib import Path
 import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
-LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
-
-
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
@@ -42,15 +38,6 @@ def status_line(path: Path) -> str:
         if line.startswith("**Status:**"):
             return line
     return ""
-
-
-def ledger_row(claim_id: str) -> dict | None:
-    rows = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
-    iterable = rows.values() if isinstance(rows, dict) else rows
-    for row in iterable:
-        if isinstance(row, dict) and row.get("claim_id") == claim_id:
-            return row
-    return None
 
 
 @dataclass(frozen=True)
@@ -112,35 +99,22 @@ def main() -> int:
     check("hypercharge authority note exists", hypercharge_note.exists(), str(hypercharge_note.relative_to(ROOT)))
     check("EW Higgs authority exists", ew_higgs_note.exists(), str(ew_higgs_note.relative_to(ROOT)))
 
-    hypercharge_row = ledger_row("standard_model_hypercharge_uniqueness_theorem_note_2026-04-24")
-    ew_higgs_row = ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26")
+    theorem_text = theorem_note.read_text(encoding="utf-8")
     check(
-        "hypercharge authority row is present and pending audit",
-        hypercharge_row is not None and hypercharge_row.get("effective_status") != "retained",
-        "" if hypercharge_row is None else str(
-            {
-                "effective_status": hypercharge_row.get("effective_status"),
-                "audit_status": hypercharge_row.get("audit_status"),
-            }
-        ),
+        "physical carrier and charge table are explicit supplied hypotheses",
+        "explicitly supplied one-Higgs" in theorem_text
+        and "One generation has" in theorem_text,
     )
     check(
-        "EW Higgs authority is retained/audited_clean in ledger",
-        ew_higgs_row is not None
-        and ew_higgs_row.get("effective_status") == "retained"
-        and ew_higgs_row.get("audit_status") == "audited_clean",
-        "" if ew_higgs_row is None else str(
-            {
-                "effective_status": ew_higgs_row.get("effective_status"),
-                "audit_status": ew_higgs_row.get("audit_status"),
-            }
-        ),
+        "defined matrix theorem declines physical carrier authority",
+        "a physical Higgs carrier"
+        in ew_higgs_note.read_text(encoding="utf-8"),
     )
 
     hypercharge_text = hypercharge_note.read_text(encoding="utf-8")
     ew_text = ew_higgs_note.read_text(encoding="utf-8")
     check("doubled-hypercharge convention present", "Q = T_3 + Y/2" in hypercharge_text)
-    check("EW-normalized convention present", "Q = T_3 + Y" in ew_text)
+    check("formal annihilator T3+Y is present", "T3 + Y" in ew_text)
     check("EW Higgs normalized Y_H maps to doubled Y(H)", 2 * Fraction(1, 2) == SCALARS["H"].y_doubled)
     check("conjugate Higgs has opposite doubled hypercharge", SCALARS["tilde H"].y_doubled == -SCALARS["H"].y_doubled)
 

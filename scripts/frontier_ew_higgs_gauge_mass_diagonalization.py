@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact evidence for the defined C2 quadratic-form theorem.
+"""Exact evidence for the defined C^2 quadratic-form theorem.
 
 The stable filename is historical.  This runner constructs the theorem's
 finite-dimensional objects directly and does not read audit state, source-note
@@ -254,11 +254,11 @@ def audit_normal(audit: Audit, a: Algebra) -> None:
     audit.check("rotation is orthogonal", matrix_is_zero(rotation * rotation.T - sp.eye(2)))
     audit.check("rotation determinant is one", is_zero(rotation.det() - 1))
     audit.check("rotation diagonalizes M0", matrix_is_zero(rotation * m0 * rotation.T - sp.diag(mz2, 0)))
-    z, photon_label = sp.symbols("Z A", real=True)
-    neutral_old = rotation.T * sp.Matrix([z, photon_label])
+    z_coord, a_coord = sp.symbols("Zcoord Acoord", real=True)
+    neutral_old = rotation.T * sp.Matrix([z_coord, a_coord])
     q_neutral = (sp.Matrix([w3, b]).T * m0 * sp.Matrix([w3, b]))[0] / 2
     q_rotated = sp.expand(q_neutral.subs({w3: neutral_old[0], b: neutral_old[1]}, simultaneous=True))
-    audit.check("rotation reconstructs neutral Q", is_zero(q_rotated - mz2 * z**2 / 2), str(sp.factor(q_rotated)))
+    audit.check("rotation reconstructs neutral Q", is_zero(q_rotated - mz2 * z_coord**2 / 2), str(sp.factor(q_rotated)))
 
     ma2 = sp.Integer(0)
     e = g * gy / total
@@ -394,7 +394,7 @@ def audit_intentional_failure(audit: Audit, a: Algebra) -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Exact verifier for the defined C2 quadratic-form theorem."
+        description="Exact verifier for the defined C^2 quadratic-form theorem."
     )
     parser.add_argument(
         "--mode",
@@ -416,7 +416,7 @@ def main() -> int:
         "intentional-failure": audit_intentional_failure,
     }
 
-    print("=== Defined C2 quadratic-form diagonalization verifier ===")
+    print("=== Defined C^2 quadratic-form diagonalization verifier ===")
     print(f"MODE: {args.mode}")
     if args.mode != "intentional-failure":
         audit_source_firewall(audit)

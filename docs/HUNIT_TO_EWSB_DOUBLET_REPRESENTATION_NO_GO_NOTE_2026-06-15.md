@@ -59,7 +59,7 @@ surface:
   ray once the one-doublet surface is supplied.
 
 No observed Higgs count, Standard Model census value, PDG number, fitted
-selector, new axiom, or accepted-premise registration is used.
+selector, new axiom, or registered approved primitive is used.
 
 ## Proof
 
@@ -100,8 +100,8 @@ This no-go sharpens the remaining blocker in
 
 The viable routes are:
 
-1. supply a separate retained-grade or accepted-premise authority for the
-   one-complex-`SU(2)_L` thermal EWSB doublet field content; or
+1. supply a separate retained derivation or registered approved primitive for
+   the one-complex-`SU(2)_L` thermal EWSB doublet field content; or
 2. keep the `g_* = 106.75` Higgs-sector row conditional on that named
    field-content bridge.
 
@@ -123,7 +123,7 @@ as a full thermal-doublet derivation.
 - It does not prove a two-Higgs-doublet model or `g_* = 110.75`.
 - It does not derive hypercharge, physical Higgs potential dynamics, or
   thermal equilibrium.
-- It does not add an axiom or accepted premise.
+- It does not add an axiom or approved primitive.
 
 ## No-Go Discipline Gate
 
@@ -141,9 +141,9 @@ N1 - Alternative route enumeration:
 4. Thermal-census route from scalar/radial support. ATTEMPTED. A scalar
    singlet or neutral radial direction has one real carrier direction, not the
    four real components of one complex `SU(2)_L` doublet.
-5. Premise-registration route. ATTEMPTED. A separate retained-grade or
-   accepted-premise authority for one-doublet thermal field content would close
-   the positive bridge, but this note neither supplies nor registers one.
+5. Primitive-registration route. ATTEMPTED. A separate retained derivation or
+   registered approved primitive for one-doublet thermal field content would
+   close the positive bridge, but this note neither supplies nor registers one.
 
 N2 - Wall-independence audit:
 
@@ -175,10 +175,10 @@ No lattice-wide "no Higgs" or "no EWSB" claim is made.
 
 N6 - Partial-closure path scan:
 
-The legitimate positive path remains open: supply a separate retained-grade or
-accepted-premise authority for the one-complex `SU(2)_L` thermal EWSB doublet
-field content, or keep the `g_*` row conditional on that bridge. This no-go
-does not classify the residual as a new-axiom requirement.
+The legitimate positive path remains open: supply a separate retained
+derivation or registered approved primitive for the one-complex `SU(2)_L`
+thermal EWSB doublet field content, or keep the `g_*` row conditional on that
+bridge. This no-go does not classify the residual as a new-axiom requirement.
 
 N7 - Steelman:
 

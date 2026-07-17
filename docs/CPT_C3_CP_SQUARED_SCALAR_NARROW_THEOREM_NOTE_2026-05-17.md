@@ -387,8 +387,8 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 20`.
 
 ## Cross-references
 
-Load-bearing markdown-link upstream (three one-hop dependencies, all
-retained-grade per the live ledger on 2026-05-17):
+Load-bearing markdown-link upstream (three link entries to two algebra notes;
+their audit statuses remain pipeline-derived and are not asserted here):
 
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) §(K4)
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
@@ -407,8 +407,8 @@ Plain-text (non-load-bearing) reader pointers:
 
 ## Citation-graph note
 
-Three load-bearing markdown-link upstream dependencies, all
-retained-grade. Cross-references to the failed parent and broad CPT
+Three load-bearing markdown-link entries to two algebra notes.
+Cross-references to the failed parent and broad CPT
 note are plain-text reader pointers (not markdown links) so the
 citation-graph builder does not pick them up as load-bearing
 dependencies on `audited_failed` content.

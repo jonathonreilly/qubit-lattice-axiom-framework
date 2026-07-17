@@ -62,10 +62,13 @@ This repair:
   by the central character `ω = ±i`.
 - Restates U2 as uniqueness-within-chirality: any faithful irreducible
   complex representation of `Cl(3)` has dimension exactly 2 and is
-  unitarily equivalent **either** to the canonical positive-chirality
+  complex-linearly equivalent **either** to the canonical positive-chirality
   Pauli irrep `ρ_+(γ_i) = σ_i` (`ω → +i`) **or** to its
   parity-conjugate negative-chirality irrep
-  `ρ_-(γ_i) = -σ_i` (`ω → -i`). The two are not unitarily equivalent.
+  `ρ_-(γ_i) = -σ_i` (`ω → -i`). If the generator images are
+  Hermitian for compatible positive-definite inner products, the equivalence
+  within either sign class can be chosen unitary. The two sign classes are not
+  even complex-linearly equivalent.
 - Restates U3 to allow either chirality in the decomposition:
   every finite-dim complex Cl(3) representation is a direct sum
   of `n_+` copies of `ρ_+` and `n_-` copies of `ρ_-`, with total
@@ -144,8 +147,11 @@ note discharges the "minimal complex spinor irrep is dim 2" step
 into an explicit Stone–von Neumann–style uniqueness theorem for
 Cl(3) representations: any faithful irreducible representation of
 Cl(3) on a finite-dimensional complex vector space has dimension
-exactly 2 and is unitarily equivalent to the canonical Pauli
-representation `γ_i = σ_i`.
+exactly 2 and is complex-linearly equivalent, within one of the two
+pseudoscalar-sign classes, to the corresponding Pauli representation
+`γ_i = ±σ_i`. Under the additional Hermitian-generator hypothesis for
+compatible positive-definite inner products, that equivalence can be chosen
+unitary.
 
 After this note, Cycle 1's Step 2 argument is closed at the
 representation-theoretic level: per-site Hilbert dim = 2 is a
@@ -366,9 +372,11 @@ modulo the chirality convention.
 
 C3. *No-go for "alternative" Cl(3) site algebras within the chosen
 chirality.* Anyone proposing an alternative spinor representation
-on the explicit framework baseline must produce one that is unitarily equivalent to
+on the explicit framework baseline must produce one that is complex-linearly
+equivalent to
 `ρ_+ = (σ_1, σ_2, σ_3)` or, with an explicit parity flip, to
-`ρ_- = (-σ_1, -σ_2, -σ_3)`. There are exactly two non-isomorphic
+`ρ_- = (-σ_1, -σ_2, -σ_3)`. For Hermitian generator images the
+equivalence can be chosen unitary. There are exactly two non-isomorphic
 finite-dim faithful Cl(3) irreps and no others.
 
 C4. *Compatibility with downstream cycles.* All downstream
@@ -390,7 +398,8 @@ summand. The runner exhibits the load-bearing facts:
 anticommutation relations of Pauli; central-pseudoscalar identity
 `ω² = -1` and centrality; chirality eigenvalue assignments
 `ω → ±i` on `ρ_±`; non-existence of an odd-dim faithful complex
-rep; and unitarity of intertwiners within each chirality summand.
+rep; complex-linear equivalence within each chirality summand; and the
+conditional unitary normalization when the generator images are Hermitian.
 The 2026-05-08 narrowing dropped U4 (per-site Hilbert dim = 2 on
 the explicit framework baseline) from this note's scope; that
 staggered-Dirac/Grassmann bridge content is now carried by substep 1
@@ -428,7 +437,9 @@ Framework-baseline surfaces (meta, not load-bearing for the
 narrow-theorem chain above, but explicitly authorising the U1–U3
 scope):
 
-- `MINIMAL_AXIOMS_2026-05-20.md` — current public framework memo (qubit reframe), explicitly identifies this note's U1–U3 content as supported by the three retained narrow theorems above (see § "What this note does" of `MINIMAL_AXIOMS_2026-05-20.md`).
+- `MINIMAL_AXIOMS_2026-05-20.md` — framework memo (qubit reframe),
+  identifying this note's U1–U3 content with the narrow algebra inputs above
+  (see § "What this note does" of `MINIMAL_AXIOMS_2026-05-20.md`).
 - `MINIMAL_AXIOMS_2026-04-11.md` — original two-axiom framing (preserved as historical baseline).
 
 ## Audit dependency scoping (2026-05-20 qubit-reframe repair)
@@ -438,7 +449,7 @@ U1–U3 content + the 2026-05-10 `audited_conditional` repair
 instruction (`dependency_not_retained: mark the current minimal-axiom
 authority as retained-grade or exempt framework meta authorities
 from the retained-grade dependency rule`), this revision wires the
-**three retained narrow theorems** above as the load-bearing one-hop
+**two narrow algebra theorems** above as the load-bearing one-hop
 dependency chain. The narrow-theorem chain replaces the prior
 meta-axiom dependency:
 
@@ -447,15 +458,16 @@ meta-axiom dependency:
   rows by convention are not promoted to retained). Instead, this
   revision takes the second branch ("exempt framework meta
   authorities from the retained-grade dependency rule") by **routing
-  the load-bearing dependency through the three retained narrow
+  the load-bearing dependency through the two narrow algebra
   theorems** rather than through the meta surface. The meta
   `MINIMAL_AXIOMS_2026-05-20.md` and `MINIMAL_AXIOMS_2026-04-11.md`
   rows are cited as framework-baseline context (defining the A1+A2
   scope), not as load-bearing one-hop authorities for the U1–U3
   algebraic content.
 - Under the qubit reframe of A1 (qubit at every site ≡ `M_2(ℂ)` ≡
-  `Cl(3,0)` per site), the three narrow theorems collectively establish
-  the U1–U3 physical-`Cl(3)`-only content from retained primitives.
+  `Cl(3,0)` per site), the two narrow algebra theorems collectively establish
+  the stated U1–U3 physical-`Cl(3)`-only implication. Their audit statuses
+  remain pipeline-derived and are not asserted by this note.
   No new axiom is added; the qubit reframe sharpens the statement of
   A1 without changing content (per `MINIMAL_AXIOMS_2026-05-20.md`
   § "What this note does").
@@ -472,7 +484,7 @@ dependencies):
   content; consumed by downstream notes directly, not via this note.
 
 The load-bearing one-hop dependency chain of the U1–U3 physical-`Cl(3)`-only
-audit packet is now **the three retained narrow theorems above**,
+audit packet is **the two narrow algebra theorems above**,
 with `MINIMAL_AXIOMS_2026-05-20.md` cited as framework-baseline
 context only.
 

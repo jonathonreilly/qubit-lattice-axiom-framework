@@ -350,12 +350,12 @@ The narrow's core statements (C1)–(C6) are **standard finite-group /
 character-theory facts about `2O`** and require no internal note as a
 load-bearing import; the binary octahedral group and its character table
 are classical mathematical infrastructure (see §11). The only internal
-authorities load-bearing on the **bridge** of §6 — that the framework's
-per-site spin-½ matter is the relevant spinorial representation of `2O` —
-are the retained per-site `Cl(3,0)` primitives:
+inputs load-bearing on the **bridge** of §6 — that the framework's per-site
+spin-½ matter is the relevant spinorial representation of `2O` — are the
+following `Cl(3,0)` results:
 
 - [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
-  — retained per-site `Cl(3,0)` operator-algebra primitive on which the
+  — per-site `Cl(3,0)` operator-algebra result on which the
   cubic double cover acts.
 - [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
   — the two Pauli sign classes of the real `Cl(3,0)` algebra and the selected
@@ -364,10 +364,10 @@ are the retained per-site `Cl(3,0)` primitives:
   — retained `Cl(3,0) ⊗_ℝ C ≅ M₂(C) ⊕ M₂(C)` split, fixing the complex
   `2 × 2` matrix structure underlying the defining `SU(2)` realization.
 
-These three are cited in markdown-link form because their effective
-status on `origin/main` is `retained`. The bridge of §6 uses them only
-to name the carrier on which `2O` acts; the certified facts (C1)–(C6)
-hold for `2O` as an abstract finite group regardless.
+These three are cited in markdown-link form because the bridge of §6 uses
+their mathematical content to name the carrier on which `2O` acts. Their
+audit statuses remain pipeline-derived and are not asserted here. The
+certified facts (C1)–(C6) hold for `2O` as an abstract finite group regardless.
 
 ## 8. Cross-references (non-load-bearing, context only)
 

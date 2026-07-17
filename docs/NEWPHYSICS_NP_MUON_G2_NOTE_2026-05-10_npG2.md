@@ -72,7 +72,8 @@ Concretely:
    `CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10`). The
    anomalous-moment vertex factor `σ^{μν} F_{μν}` in the Schwinger
    amplitude is constructed from products of these generators. So the
-   *vertex structure* underlying `a_l` is in retained content.
+   *vertex structure* underlying `a_l` is supplied by the cited algebraic
+   classification; this statement does not assign that source an audit status.
 
 2. **(P2, retained α_EM coupling.)** The framework's retained
    `α_EM(M_Z) ≈ 1/127.67` (per `COMPLETE_PREDICTION_CHAIN_2026_04_15`)
@@ -228,8 +229,8 @@ distinguished by `ω ↦ ±i`; the selected positive class is given by
 `σ^{μν} = (i/2) [γ^μ, γ^ν]` (4-d Dirac structure) and the relevant
 non-relativistic projection to the Pauli structure
 `σ^{ij} → ε^{ijk} σ_k` lives in this 2-dim irrep. So the
-vertex-algebra ingredient of the Schwinger amplitude is retained
-content. ∎
+vertex-algebra ingredient of the Schwinger amplitude is supplied by the cited
+classification, without assigning that source an audit status. ∎
 
 ### (P2) Retained α_EM coupling
 
@@ -456,7 +457,7 @@ The independent audit lane may retag, narrow, or reject this proposal.
 | # | Question | Answer |
 |---|---|---|
 | V1 | Verdict-identified obstruction closed? | No — none of the named SM admissions (ADM-Schw, ADM-2loop, ADM-3loop+, ADM-HVP, ADM-HLbL, ADM-EW, ADM-α(0)) is closed by this note. |
-| V2 | New bounded support? | Yes — a structurally new mapping of `a_μ^SM` decomposition onto retained content (P1, P2) vs. named open admissions (ADM-*) parallel to the existing `α_EM` running firewall. The Pauli-anchor framing of the vertex factor `σ^{μν}` is structurally new in the muon-g-2 context. |
+| V2 | New bounded support? | Yes — a structurally new mapping of `a_μ^SM` decomposition onto the cited Pauli classification (P1), the retained coupling input (P2), and the named open admissions (ADM-*), parallel to the existing `α_EM` running firewall. The Pauli-anchor framing of the vertex factor `σ^{μν}` is structurally new in the muon-g-2 context. |
 | V3 | Audit lane could complete? | Yes — the audit lane can review (i) the citation of `CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10` as the source of the Pauli vertex algebra, (ii) the citation of `COMPLETE_PREDICTION_CHAIN_2026_04_15` for retained `α_EM(M_Z)`, (iii) the parallel between the named open admissions (ADM-HVP, ADM-HLbL) and the existing dependency firewall, (iv) the numerical comparators (NPG2.2a, NPG2.2b) against `a_μ^exp` and the SM decomposition (NPG2.3). |
 | V4 | Marginal content non-trivial? | Yes — explicitly recording that the framework today does NOT predict `a_μ` is non-trivial: it prevents future review loops from accidentally promoting an anomaly-explanation route as retained, and it maps each blocking lane to an existing open admission. |
 | V5 | One-step variant? | No — this is not a relabel of any prior note. The muon-g-2 specific admission inventory (`ADM-Schw`, `ADM-2loop`, `ADM-3loop+`, `ADM-HVP`, `ADM-HLbL`, `ADM-EW`, `ADM-α(0)`) is structurally distinct from the `α_EM(M_Z) → α(0)` running firewall (which uses `R-Lep`, `R-Q-Heavy`, `R-Had-NP`). The probe question (is `a_μ` predictable?) is new. |

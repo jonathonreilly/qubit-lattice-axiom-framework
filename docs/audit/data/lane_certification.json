@@ -2738,7 +2738,7 @@
         },
         {
           "claim_id": "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "yt_eft_bridge_theorem",
@@ -2935,6 +2935,6 @@
       "uncertified_count": 669
     }
   ],
-  "repo_head": "0175ae5a5bbbe459c63e82d848af3b809bcb6522",
+  "repo_head": "63b2e585cc7bfb83557b2fa549f1a22fb63c8905",
   "schema": "lane_certification_v2"
 }

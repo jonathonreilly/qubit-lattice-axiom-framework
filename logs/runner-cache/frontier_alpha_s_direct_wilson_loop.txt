@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_alpha_s_direct_wilson_loop.py
-runner_sha256: 45b4945dfcc3ac8fe96027997e063ff9574c34bafa7273ad1c6ed07644cf6d48
+runner_sha256: 331f3a8f2a23824a37c31546a7db8e9bbfff2a520fc182288ba435914f1403ef
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================

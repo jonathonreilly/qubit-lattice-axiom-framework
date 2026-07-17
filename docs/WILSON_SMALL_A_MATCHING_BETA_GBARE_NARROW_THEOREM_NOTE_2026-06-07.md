@@ -149,8 +149,10 @@ The runner provides four selectable modes:
 The hostile set covers wrong trace normalization, a nontraceless complex
 linear term, omission of `1/n`, confusion of `D''(0)` with its half-sized
 Taylor coefficient, replacement of `C_right=1/2` by `1/4`, the wrong product
-`beta g^2=n`, the wrong solve `beta=2n/g`, and an illicit physical
-interpretation.
+`beta g^2=n`, the wrong solve `beta=2n/g`, a false `1/48` fourth-order
+remainder constant, and an illicit physical interpretation. The independent
+route also checks a complex off-diagonal `n=4` basis, while the normal route
+checks the zero-matrix edge case and the exact fourth-derivative mechanism.
 
 ## Boundary and downstream citation rule
 

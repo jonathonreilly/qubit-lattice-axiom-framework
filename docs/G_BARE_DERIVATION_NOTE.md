@@ -17,7 +17,10 @@
 > Wilson reading in this note is therefore conditional on the separately
 > named input `W-PHYS`: identify the theorem's defined `beta D(gx)` coefficient
 > with the Wilson action coefficient and its defined `1/2` coefficient with
-> the target kinetic coefficient. This note does not derive `W-PHYS`.
+> the target kinetic coefficient. A second, logically independent condition,
+> `SLOT-ID`, identifies the resulting Wilson label `g_bare` with the
+> finite-link canonical slot `s`. This note derives neither `W-PHYS` nor
+> `SLOT-ID`; neither condition chain-satisfies a dependency.
 
 The 2026-06-18 repair removes the circular-looking step in the older source
 where the `beta = 2 N_c = 6` surface was effectively hard-coded and then used
@@ -31,19 +34,23 @@ ingredients separately:
    `beta g^2 = 2 n` after equality of its two internally defined
    coefficients, from
    [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md).
-3. The scalar-slot compatibility is recorded and checked by
+3. The bridge theorem locates exactly when the two scalar slots coincide but
+   does not choose their identification:
    [`G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md`](G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md).
 
-Together with the explicit `W-PHYS` dictionary these give the conditional
+Together with the explicit non-satisfying conditions `W-PHYS` and `SLOT-ID`,
+these give the conditional
 readout `beta = 2 N_c = 6` for `N_c = 3`. Without `W-PHYS`, they give only
-the formal coefficient identity; no physical Wilson conclusion follows.
+the formal coefficient identity. Without `SLOT-ID`, finite-link rigidity does
+not set `g_bare`. No physical Wilson conclusion follows from the cited
+theorems alone.
 
 ---
 
 ## Status
 
 **source-side repair candidate; parent re-audit required.** On the
-finite-link canonical surface and conditional on `W-PHYS`, the parent proof
+finite-link canonical surface and conditional on `W-PHYS` and `SLOT-ID`, the parent proof
 composes a canonical scalar-slot theorem with a formal coefficient theorem.
 The claim is
 not a dynamical calculation, not a fit, not a running-coupling fixed point,
@@ -57,7 +64,7 @@ a coefficient relation only between expressions defined inside its packet.
 
 The parent claim after this repair is:
 
-> Conditional on `W-PHYS`, on the supplied standard Wilson plaquette surface with the canonical
+> Conditional on `W-PHYS` and `SLOT-ID`, on the explicit standard Wilson plaquette surface with the canonical
 > finite-link `SU(3)` generator basis, the Wilson coefficient scalar is the
 > same scalar slot eliminated by finite-link rigidity. Hence
 > `g_bare^2 = 1`, and `W-PHYS` maps the formal matrix identity to
@@ -80,8 +87,9 @@ Assume:
    coefficient equality.
 4. `W-PHYS` identifies `(n,g)` with `(N_c,g_bare)` and identifies the two
    formal coefficients with the Wilson and target kinetic coefficients.
-5. Under `W-PHYS`, `g_bare` is the scalar multiplying the same canonical
-   `T_a` slot in the link/plaquette exponent.
+5. `SLOT-ID` identifies that Wilson label `g_bare` with the finite-link
+   canonical scalar slot `s=1`. This is a separate condition, not a theorem
+   output of the bridge row.
 6. `N_c = 3`, and the positive-coupling branch is used.
 
 Then exact rational arithmetic gives
@@ -92,7 +100,7 @@ beta = 2 N_c / g_bare^2 = 2 * 3 / 1 = 6.
 ```
 
 This is a conditional finite-link/Wilson-surface implication. It does not
-derive `W-PHYS` and does not assert a continuum
+derive `W-PHYS` or `SLOT-ID` and does not assert a continuum
 running coupling, a global logarithm branch, Wilson action-surface selection,
 or a phenomenological fitted value.
 
@@ -106,12 +114,12 @@ or a phenomenological fitted value.
   `g_link = 1`.
 - The matrix-trace theorem derives only its formal coefficient equivalence.
   `W-PHYS`, not that theorem, performs the Wilson/gauge-field dictionary.
-- The 2026-06-18 bridge note checks that these are the same scalar slot on
-  the parent surface: a scalar multiplying the fixed `T_a` basis in the
-  finite link/plaquette exponent.
-- Therefore the Wilson scalar slot has `g_bare^2 = 1` on the canonical
-  finite-link surface.
-- Substituting `N_c = 3` into the `W-PHYS`-supplied Wilson reading gives
+- The 2026-06-18 bridge note proves the exact split redundancy and locates the
+  equality point of the two slots; it explicitly does not choose the
+  same-slot identification.
+- Conditional on `SLOT-ID`, the Wilson label has `g_bare^2=s^2=1` on the
+  canonical finite-link surface.
+- Conditional on `W-PHYS`, substituting `N_c = 3` into that Wilson reading gives
   `beta = 6`.
 
 No step uses `beta = 6` as a premise for `g_bare = 1`.
@@ -127,27 +135,31 @@ No step uses `beta = 6` as a premise for `g_bare = 1`.
 2. **Formal coefficient surface:** the defined theorem
    `beta g^2 = 2 n`, cited through
    [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md).
-3. **Physical dictionary `W-PHYS`:** the supplied, not-derived identification
-   of those formal coefficients and symbols with the Wilson matching surface.
-4. **Scalar-slot compatibility:** the 2026-06-18 bridge note that identifies
-   the Wilson scalar slot with the finite-link canonical scalar slot.
-5. **Group rank:** `N_c = 3`.
+3. **Physical dictionary `W-PHYS`:** the explicit, not-derived,
+   non-chain-satisfying identification of those formal coefficients and
+   symbols with the Wilson matching surface.
+4. **Same-slot condition `SLOT-ID`:** the explicit, not-derived,
+   non-chain-satisfying identification `g_bare=s`.
+5. **Pin-equivalence bridge:** the 2026-06-18 theorem that locates when the
+   two slots agree without choosing their identification.
+6. **Group rank:** `N_c = 3`.
 
-These inputs are not new axioms. They are existing source surfaces plus the
-new explicit compatibility bridge. Independent audit decides whether the
-composition is sufficient for the parent row.
+These conditions are not new axioms or approved primitives. They do not
+chain-satisfy dependencies. Independent audit decides the bounded scope of
+the conditional composition.
 
 ---
 
 ## What Is Actually Proved
 
-**Exact conditional result if both the bridge and `W-PHYS` are supplied:**
+**Exact conditional result if the bridge, `W-PHYS`, and `SLOT-ID` are all
+explicitly imposed:**
 
 - The finite-link canonical scalar slot is `g_link^2 = 1`.
 - The formal matrix coefficient identity becomes
   `beta g_bare^2 = 2 N_c` only through `W-PHYS`.
-- The bridge identifies `g_bare` and `g_link` as the same scalar slot on this
-  supplied Wilson surface.
+- `SLOT-ID`, not the bridge, identifies `g_bare` and `g_link` as the same
+  scalar slot on this explicit Wilson surface.
 - Therefore `g_bare^2 = 1` and `beta = 6` for `N_c = 3`.
 
 **Bounded results (supporting but not standalone derivations):**
@@ -196,7 +208,7 @@ composition is sufficient for the parent row.
 
 ## Paper-Safe Wording
 
-If `W-PHYS` is supplied and independent re-audit accepts the conditional
+If `W-PHYS` and `SLOT-ID` are explicitly imposed and independent re-audit accepts the conditional
 composition, safe wording is:
 
 > On the supplied standard Wilson plaquette surface, the scalar multiplying
@@ -231,8 +243,8 @@ TOTAL: PASS=103 FAIL=0
 
 frontier_g_bare_derivation.py
 EXACT   : PASS = 51, FAIL = 0
-BOUNDED : PASS = 14, FAIL = 0
-TOTAL   : PASS = 65, FAIL = 0
+BOUNDED : PASS = 16, FAIL = 0
+TOTAL   : PASS = 67, FAIL = 0
 ```
 
 These runners do not inspect or edit audit ledgers, audit queues,
@@ -246,7 +258,7 @@ publication matrices, or effective-status surfaces.
 |---|---:|---|---|
 | finite-link canonical scalar slot | `g_link^2 = 1` | cited as context only | load-bearing via finite-link rigidity |
 | formal coefficient identity | `beta g^2 = 2 n` | cited but not composed with finite-link scalar slot | load-bearing as formal algebra only; Wilson use additionally requires `W-PHYS` |
-| beta surface | `beta = 6` at `N_c = 3` | effectively hard-coded in parent runner | exact consequence of the bridge composition |
+| beta surface | `beta = 6` at `N_c = 3` | effectively hard-coded in parent runner | exact consequence only under `W-PHYS` and `SLOT-ID` |
 | `sigma_v = pi*alpha^2/m^2` | -- | imported | imported, unchanged |
 | `V(r) = -alpha/r` | -- | imported | imported, unchanged |
 
@@ -258,6 +270,6 @@ publication matrices, or effective-status surfaces.
 |---|---|---|
 | Unitarity bound | `g=1` makes `U` unitary, but so does any real `g` | Not selecting |
 | Strong-coupling fixed point | `SU(3)` has no nontrivial fixed point | Does not work |
-| Finite-link rigidity + formal coefficient identity + `W-PHYS` | conditional `g_bare^2=1`, `beta=6` on supplied Wilson surface | Source-side conditional candidate; re-audit required |
+| Finite-link rigidity + formal coefficient identity + `W-PHYS` + `SLOT-ID` | conditional `g_bare^2=1`, `beta=6` on explicit Wilson surface | Source-side conditional candidate; re-audit required |
 | Maximum entropy | Selects `g -> infinity` | Does not work |
 | Staggered Dirac normalization | Consistent with `g = 1` | Supporting, not standalone |

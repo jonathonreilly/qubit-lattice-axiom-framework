@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
-runner_sha256: 18b24da3a5f2e74cc4a1c6001442220669c1738906d2ad4e1c18ce66ba7f9aba
+runner_sha256: 4cb124435205929dac938359b8fe7d81361e859643aaa33329429415a60ac219
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 G_BARE finite-link/Wilson split-redundancy theorem check
@@ -97,13 +97,13 @@ SECTION G: source-boundary guards
 [PASS] parent note exists (docs/G_BARE_DERIVATION_NOTE.md)
 [PASS] finite-link rigidity note exists (docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
 [PASS] Wilson small-a note exists (docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-[PASS] theorem contains marker: set only by the independent audit lane
+[PASS] theorem contains marker: Status authority:** independent audit lane only
 [PASS] theorem contains marker: non-load-bearing convention context
 [PASS] theorem contains marker: This theorem locates the pin but does not choose it
 [PASS] theorem contains marker: gamma*(beta) := +sqrt(2 N_c / beta) > 0
 [PASS] theorem contains marker: equality of the squares is equivalent to equality of the slots themselve
 [PASS] bridge contains marker: mismatched-slot
-[PASS] bridge contains marker: explicit `W-PHYS` coefficient dictionary
+[PASS] bridge contains marker: explicit non-satisfying condition `W-PHYS`
 [PASS] bridge contains marker: does not claim:
 [PASS] bridge contains marker: Wilson plaquette action-surface selection
 [PASS] bridge contains marker: global logarithm-branch selection

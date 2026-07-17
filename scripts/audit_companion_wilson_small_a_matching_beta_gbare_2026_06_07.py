@@ -71,6 +71,7 @@ FIXTURES = (
     "wrong-quarter-vs-half",
     "beta-g2-equals-n",
     "beta-equals-2n-over-g",
+    "wrong-remainder-constant",
     "illicit-physical-inference",
 )
 
@@ -120,6 +121,16 @@ def diagonal_independent_packet() -> MatrixPacket:
     """A separate n=3 spectral fixture, not constructed from Pauli matrices."""
     generator = sp.diag(sp.Rational(1, 2), sp.Rational(-1, 2), 0)
     return MatrixPacket(3, (generator,), (sp.Integer(1),))
+
+
+def complex_offdiagonal_packet() -> MatrixPacket:
+    """An independent n=4 packet with two complex off-diagonal generators."""
+    real = sp.zeros(4)
+    real[0, 3] = real[3, 0] = sp.Rational(1, 2)
+    imag = sp.zeros(4)
+    imag[0, 3] = -sp.I / 2
+    imag[3, 0] = sp.I / 2
+    return MatrixPacket(4, (real, imag), (sp.Integer(2), sp.Integer(-3)))
 
 
 def validate_packet(packet: MatrixPacket) -> None:
@@ -287,16 +298,51 @@ def normal_route() -> None:
         certificate.complex_linear_coefficient == 0,
     )
 
+    y = sp.symbols("y", real=True)
+    scalar_deficit = 1 - sp.cos(y)
+    check(
+        "A10 the scalar deficit has fourth derivative -cos(y)",
+        sp.diff(scalar_deficit, y, 4) == -sp.cos(y),
+    )
+    check(
+        "A11 the fourth derivative has absolute value at most one for real y",
+        y.is_real is True
+        and sp.trigsimp(1 - sp.cos(y) ** 2) == sp.sin(y) ** 2,
+        "1-cos(y)^2=sin(y)^2>=0",
+    )
+    matrix_a = matrix_from_packet(packet)
+    eigenvalue_fourth_sum = sum(
+        eigenvalue**4 * multiplicity
+        for eigenvalue, multiplicity in matrix_a.eigenvals().items()
+    )
+    check(
+        "A12 spectral fourth moment equals Tr(A^4)",
+        sp.simplify(eigenvalue_fourth_sum - sp.trace(matrix_a**4)) == 0,
+    )
+
+    zero_packet = MatrixPacket(
+        packet.dimension,
+        packet.generators,
+        tuple(sp.Integer(0) for _ in packet.coefficients),
+    )
+    zero_certificate = certify_by_derivatives(zero_packet)
+    check(
+        "A13 zero A has zero derivative, quadratic coefficient, and fourth moment",
+        zero_certificate.d2 == 0
+        and zero_certificate.quadratic_coefficient == 0
+        and sp.trace(matrix_from_packet(zero_packet) ** 4) == 0,
+    )
+
     beta, g, dimension = sp.symbols("beta g n", positive=True)
     residual = formal_coefficient_residual(beta, g, dimension)
     check(
-        "A10 coefficient residual factors as (beta*g^2-2n)/(4n)",
+        "A14 coefficient residual factors as (beta*g^2-2n)/(4n)",
         sp.simplify(residual - (beta * g**2 - 2 * dimension) / (4 * dimension)) == 0,
         str(residual),
     )
     solved = sp.solve(sp.Eq(residual, 0), beta)
     check(
-        "A11 coefficient equality solves uniquely to beta=2n/g^2",
+        "A15 coefficient equality solves uniquely to beta=2n/g^2",
         len(solved) == 1 and sp.simplify(solved[0] - 2 * dimension / g**2) == 0,
         str(solved),
     )
@@ -311,7 +357,7 @@ def normal_route() -> None:
         2 * dimension / g**2, g, dimension
     )
     check(
-        "A12 canonical coefficient packet has zero exact residual",
+        "A16 canonical coefficient packet has zero exact residual",
         sp.simplify(canonical_residual) == 0,
         str(canonical_residual),
     )
@@ -359,6 +405,40 @@ def independent_route() -> None:
     matrix_a = matrix_from_packet(packet)
     remainder_x4 = -sp.trace(matrix_a**4) / (24 * packet.dimension)
     check("B10 x^4 coefficient equals -Tr(A^4)/(24n)", x4 == remainder_x4)
+
+    complex_packet = complex_offdiagonal_packet()
+    validate_packet(complex_packet)
+    complex_a = matrix_from_packet(complex_packet)
+    complex_spectrum = complex_a.eigenvals()
+    check(
+        "B11 independent n=4 complex off-diagonal packet satisfies all hypotheses",
+        packet_hypotheses_hold(complex_packet),
+    )
+    check(
+        "B12 n=4 packet spectrum is {+sqrt(13)/2,-sqrt(13)/2,0,0}",
+        complex_spectrum
+        == {
+            sp.sqrt(13) / 2: 1,
+            -sp.sqrt(13) / 2: 1,
+            sp.Integer(0): 2,
+        },
+        str(complex_spectrum),
+    )
+    complex_spectral_d = sp.Rational(1, 2) * (
+        1 - sp.cos(sp.sqrt(13) * x / 2)
+    )
+    complex_series = sp.series(complex_spectral_d, x, 0, 6).removeO().expand()
+    complex_certificate = certify_by_derivatives(complex_packet)
+    check(
+        "B13 n=4 spectral route gives D''(0)=13/8",
+        sp.diff(complex_spectral_d, x, 2).subs(x, 0) == sp.Rational(13, 8)
+        and complex_certificate.d2 == sp.Rational(13, 8),
+    )
+    check(
+        "B14 n=4 spectral route gives [x^2]D=13/16",
+        complex_series.coeff(x, 2) == sp.Rational(13, 16)
+        and complex_certificate.quadratic_coefficient == sp.Rational(13, 16),
+    )
 
 
 def hostile_rejections(record_checks: bool = True) -> dict[str, tuple[bool, str]]:
@@ -462,6 +542,26 @@ def hostile_rejections(record_checks: bool = True) -> dict[str, tuple[bool, str]
             proposed_product=2 * n,
             proposed_beta=2 * n / g,
         ),
+    )
+
+    def reject_wrong_remainder_constant() -> None:
+        y = sp.symbols("y", real=True)
+        # Near zero the absolute scalar residual has leading coefficient 1/24,
+        # so replacing the theorem's 1/24 by 1/48 is decisively false.
+        leading = sp.limit(
+            (sp.cos(y) - 1 + y**2 / 2) / y**4,
+            y,
+            0,
+        )
+        if leading > sp.Rational(1, 48):
+            raise CoefficientMismatch(
+                "the proposed 1/48 remainder constant is below the exact 1/24 limit"
+            )
+
+    record(
+        "wrong-remainder-constant",
+        CoefficientMismatch,
+        reject_wrong_remainder_constant,
     )
     record(
         "illicit-physical-inference",

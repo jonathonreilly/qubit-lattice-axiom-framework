@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-18; algebra/convention split completed 2026-07-11.
 **Claim type:** bounded_theorem
-**Audit status:** set only by the independent audit lane. This source note
+**Status authority:** independent audit lane only. This source note
 does not set, predict, or apply an audit verdict.
 **Primary runner:**
 [`scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py`](../scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py)
@@ -31,7 +31,8 @@ beta g^2 = 2 n.
   It does not supply a Wilson action or physical coefficient dictionary. In
   this note, the identification `(n,g)=(N_c,g_bare)` and the interpretation
   of its two formal coefficients as Wilson/target coefficients are a named
-  supplied input `W-PHYS`, not a conclusion of the cited theorem.
+  explicit non-satisfying condition `W-PHYS`, not a conclusion of the cited
+  theorem and not a chain-satisfying premise.
 
 - Theorems 1–3 below prove the plaquette exponent construction, the exact
   split redundancy, and the pin equivalence
@@ -63,7 +64,8 @@ Setup (supplied surfaces, cited at audited scope):
    `U = exp(i s C^a T_a a)` with `s != 1` changes the link; it is not a
    redundancy of the data.
 
-2. Standard Wilson plaquette surface plus `W-PHYS` (supplied here, not derived): `beta > 0` and action
+2. Standard Wilson plaquette surface plus `W-PHYS` (explicit conditions, not
+   derived or chain-satisfying): `beta > 0` and action
    `S_W = beta sum (1 - (1/N_c) Re Tr U_P)` with canonical trace
    normalization, and the small-a matching demand that the matched gauge
    field carry the continuum kinetic normalization
@@ -110,7 +112,7 @@ rigidity theorem removes the first freedom. The second remains outside this
 theorem.)
 
 **Theorem 3 (positive matched-slot family and pin equivalence, conditional on
-`W-PHYS`).** The supplied Wilson matching demand applied at action parameter `beta` to the constructed
+`W-PHYS`).** The explicit Wilson matching condition applied at action parameter `beta` to the constructed
 plaquette action determines the squared matched scalar. For `beta > 0`,
 define `gamma*(beta)` to be the positive square root, so
 

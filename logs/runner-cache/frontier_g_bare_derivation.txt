@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_derivation.py
-runner_sha256: d6288f2cbc2e6272152637ceac84d7d7f047876dc2f4c3f37d73c2e4f768af36
+runner_sha256: 8fcc3596d25467fdcca45b57b28af110e02175227454b81529afcc769dca0081
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -51,51 +51,52 @@ SECTION C: conditional Wilson read under supplied W-PHYS
   [PASS] with W-PHYS and finite-link slot g^2=1, the conditional read gives beta=6  (finite-link slot plus W-PHYS gives conditional beta = 6)
 
 ========================================================================================
-SECTION D: rescaling A -> c * A shifts beta by c^2, not g_bare
+SECTION D: formal paired rescaling T -> cT, g -> g/c, beta -> c^2 beta
 ========================================================================================
   [PASS] rescale T -> c T at c = 0.5000: Gram = c^2 * delta/2  (||Gram_scaled - c^2 delta/2|| = 2.78e-17)
   [PASS] rescale T -> c T at c = 0.5000: Gram NOT equal to canonical delta/2  (non-canonical normalization (forbidden by canonical Cl(3) basis))
-  [PASS] rescale shifts beta by c^2 = 0.2500: beta_new = 1.5000  (beta_old * c^2 = 1.5000, beta_new (matched) = 1.5000, no shift to g_bare)
+  [PASS] paired labels at c=0.5000: beta'=c^2 beta, g'=g/c, product invariant  (beta'=1.5000, g'=2.0000, beta'g'^2=6.0000)
   [PASS] rescale T -> c T at c = 1.4142: Gram = c^2 * delta/2  (||Gram_scaled - c^2 delta/2|| = 0.00e+00)
   [PASS] rescale T -> c T at c = 1.4142: Gram NOT equal to canonical delta/2  (non-canonical normalization (forbidden by canonical Cl(3) basis))
-  [PASS] rescale shifts beta by c^2 = 2.0000: beta_new = 12.0000  (beta_old * c^2 = 12.0000, beta_new (matched) = 12.0000, no shift to g_bare)
+  [PASS] paired labels at c=1.4142: beta'=c^2 beta, g'=g/c, product invariant  (beta'=12.0000, g'=0.7071, beta'g'^2=6.0000)
   [PASS] rescale T -> c T at c = 2.0000: Gram = c^2 * delta/2  (||Gram_scaled - c^2 delta/2|| = 4.44e-16)
   [PASS] rescale T -> c T at c = 2.0000: Gram NOT equal to canonical delta/2  (non-canonical normalization (forbidden by canonical Cl(3) basis))
-  [PASS] rescale shifts beta by c^2 = 4.0000: beta_new = 24.0000  (beta_old * c^2 = 24.0000, beta_new (matched) = 24.0000, no shift to g_bare)
+  [PASS] paired labels at c=2.0000: beta'=c^2 beta, g'=g/c, product invariant  (beta'=24.0000, g'=0.5000, beta'g'^2=6.0000)
   [PASS] rescale T -> c T at c = 3.0000: Gram = c^2 * delta/2  (||Gram_scaled - c^2 delta/2|| = 1.78e-15)
   [PASS] rescale T -> c T at c = 3.0000: Gram NOT equal to canonical delta/2  (non-canonical normalization (forbidden by canonical Cl(3) basis))
-  [PASS] rescale shifts beta by c^2 = 9.0000: beta_new = 54.0000  (beta_old * c^2 = 54.0000, beta_new (matched) = 54.0000, no shift to g_bare)
+  [PASS] paired labels at c=3.0000: beta'=c^2 beta, g'=g/c, product invariant  (beta'=54.0000, g'=0.3333, beta'g'^2=6.0000)
 
   Conclusion: under canonical Tr(T_a T_b) = delta_ab / 2,
-  the defined paired rescaling shifts beta by c^2.
+  a nontrivial paired label rescaling changes the Gram convention,
+  with beta -> c^2 beta and g -> g/c while beta*g^2 stays fixed.
   A physical interpretation remains conditional on W-PHYS.
 
 ========================================================================================
 SECTION E: constraint-vs-convention disambiguation
 ========================================================================================
-  [PASS] finite-link slot plus W-PHYS gives conditional beta = 2 N_c = 6 (exact)  (g_bare^2 = 1; beta = 6)
+  [PASS] finite-link slot plus W-PHYS and SLOT-ID gives conditional beta=6 (exact)  (SLOT-ID: g_bare^2=s^2=1; beta=6)
   [PASS] W-PHYS-conditional identity is satisfied on the finite-link slot (exact)  (beta * g_bare^2 = 6 = 2 N_c)
   [PASS] alternative g^2 = 1/2 requires beta = 12 != 6  (outside the canonical finite-link scalar slot used by the parent)
   [PASS] alternative g^2 = 2 requires beta = 3 != 6  (outside the canonical finite-link scalar slot used by the parent)
   [PASS] alternative g^2 = 4 requires beta = 3/2 != 6  (outside the canonical finite-link scalar slot used by the parent)
-  [PASS] finite-link layer: canonical T_a basis carries no extra scalar multiplier  (source supplied by G_BARE_RIGIDITY_THEOREM_NOTE.md)
+  [PASS] finite-link layer: canonical T_a basis carries no extra scalar multiplier  (source-checked in G_BARE_RIGIDITY_THEOREM_NOTE.md)
   [PASS] formal layer: beta*g^2=2n is exact; a Wilson read additionally requires W-PHYS  (formal source: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-  [PASS] [BOUNDED] bounded boundary: Wilson action form itself remains a convention-layer input  (see G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18 Claim 3 caveat)
+  [PASS] [BOUNDED] bounded boundary: W-PHYS and SLOT-ID are explicit non-satisfying conditions  (parent source keeps both conditions outside theorem authority)
 
 ========================================================================================
 SECTION F: end-to-end derivation chain (no circular use of g_bare = 1)
 ========================================================================================
   [PASS] Step 1: one-qubit operator algebra -> End(V=C^8) chiral rep built without g_bare input  ({G_mu, G_nu} = 2 delta_munu I_8 verified in Section A)
   [PASS] Step 2: canonical orthonormal su(3) Gram = delta/2 (no g_bare input)  (||Gram - delta/2|| = 1.11e-16)
-  [PASS] Step 3: W-PHYS conditional read gives beta = 2 N_c / g^2  (formal identity verified; physical dictionary remains supplied)
-  [PASS] Step 4: finite-link slot + W-PHYS -> conditional beta=6 and g_bare^2=1  (finite-link slot plus W-PHYS gives conditional beta = 6.0)
+  [PASS] Step 3: W-PHYS conditional read gives beta = 2 N_c / g^2  (formal identity verified; physical dictionary remains an explicit condition)
+  [PASS] Step 4: finite-link slot + W-PHYS + SLOT-ID -> conditional beta=6  (SLOT-ID maps s^2=1.0 to g_bare^2; conditional beta=6.0)
 
   Circularity audit:
   - Step 1 uses the Quantum axiom's one-site operator algebra; no beta or g input.
-  - Step 2 uses canonical Gell-Mann basis; Tr normalization is structural.
+  - Step 2 uses the explicit canonical Gell-Mann basis and checks its half-trace Gram.
   - Step 3 uses the formal coefficient identity plus supplied W-PHYS.
-  - Step 4 uses the finite-link rigidity theorem for the canonical scalar slot.
-  - Final beta = 6 follows conditionally from W-PHYS after g_bare^2=1 is supplied.
+  - Step 4 uses rigidity for s^2=1 and explicit SLOT-ID for g_bare^2=s^2.
+  - Final beta = 6 follows only under both W-PHYS and SLOT-ID.
   [PASS] conditional arithmetic does not use beta=6 to compute g_bare^2=1  (W-PHYS remains an explicit antecedent, not a derived bridge)
 
 ========================================================================================
@@ -110,7 +111,9 @@ SECTION G: source-side finite-link/Wilson bridge visibility
   [PASS] [BOUNDED] source marker present: same scalar slot
   [PASS] [BOUNDED] source marker present: an audit verdict or any effective-status promotion
   [PASS] [BOUNDED] source marker present: no independent scalar-normalization freedom
-  [PASS] [BOUNDED] source marker present: This note does not derive `W-PHYS`.
+  [PASS] [BOUNDED] source marker present: This note derives neither `W-PHYS`
+  [PASS] [BOUNDED] source marker present: `SLOT-ID`
+  [PASS] [BOUNDED] source marker present: neither condition chain-satisfies a dependency
   [PASS] [BOUNDED] source marker present: beta g^2 = 2n
   [PASS] [BOUNDED] source marker present: They may not cite it as authority for an action surface
   [PASS] [BOUNDED] parent source no longer contains stale beta back-solving symbol
@@ -119,14 +122,14 @@ SECTION G: source-side finite-link/Wilson bridge visibility
 SUMMARY
 ========================================================================================
   EXACT   : PASS = 51,   FAIL = 0
-  BOUNDED : PASS = 14, FAIL = 0
-  TOTAL   : PASS = 65, FAIL = 0
+  BOUNDED : PASS = 16, FAIL = 0
+  TOTAL   : PASS = 67, FAIL = 0
 
   All exact checks passed.
   The repaired parent chain composes finite-link rigidity with a formal coefficient theorem.
-  A Wilson interpretation remains conditional on the explicit W-PHYS dictionary.
-  Conditional on W-PHYS, beta=6 follows after the canonical scalar-slot input;
-  W-PHYS itself is not derived by this runner.
+  A Wilson interpretation remains conditional on explicit W-PHYS and SLOT-ID.
+  Conditional on both, beta=6 follows after the canonical scalar-slot input;
+  neither condition is derived by this runner.
 
   Wilson action-form selection, continuum/global gauge-field limits,
   and audit/effective-status promotion remain outside this runner.

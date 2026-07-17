@@ -23,7 +23,7 @@ surface:
       dilation exp(i a s C) with s != 1 CHANGES the link — that is the
       freedom the rigidity theorem removes; choosing the split freedom is
       outside this theorem.
-  T3  matched slot, constructed conditional on supplied W-PHYS: the Wilson
+  T3  matched slot, constructed conditional on explicit non-satisfying W-PHYS: the Wilson
       matching demand (not derived by the stable-path matrix theorem)
       applied to the constructed plaquette action yields
       gamma*(beta)^2 = 2 N_c / beta for each tested beta (never assigned).
@@ -322,7 +322,7 @@ def matched_slot_sq(cfg: FieldConfig, beta: float, a: float, FF: float) -> float
 
     k(beta, a) = beta (1 - Re Tr U_P / N_c) / (a^4 F^a[C] F^a[C]) is the
     constructed coefficient of the canonical-coordinate quadratic form;
-    the supplied W-PHYS matching demand (coefficient 1/2 per unordered plane for
+    the explicit W-PHYS matching condition (coefficient 1/2 per unordered plane for
     the matched field A = C/gamma) fixes k * gamma*^2 = 1/2.
     """
     UP = cfg.plaquette(a)
@@ -475,13 +475,13 @@ def section_G() -> None:
     rigidity_flat = flat(rigidity_text)
     wilson_flat = flat(wilson_text)
 
-    require_contains("theorem", bridge_flat, "set only by the independent audit lane")
+    require_contains("theorem", bridge_flat, "Status authority:** independent audit lane only")
     require_contains("theorem", bridge_flat, "non-load-bearing convention context")
     require_contains("theorem", bridge_flat, "This theorem locates the pin but does not choose it")
     require_contains("theorem", bridge_text, "gamma*(beta) := +sqrt(2 N_c / beta) > 0")
     require_contains("theorem", bridge_flat, "equality of the squares is equivalent to equality of the slots themselves")
     require_contains("bridge", bridge_flat, "mismatched-slot")
-    require_contains("bridge", bridge_flat, "explicit `W-PHYS` coefficient dictionary")
+    require_contains("bridge", bridge_flat, "explicit non-satisfying condition `W-PHYS`")
     require_contains("bridge", bridge_flat, "does not claim:")
     require_contains("bridge", bridge_flat, "Wilson plaquette action-surface selection")
     require_contains("bridge", bridge_flat, "global logarithm-branch selection")

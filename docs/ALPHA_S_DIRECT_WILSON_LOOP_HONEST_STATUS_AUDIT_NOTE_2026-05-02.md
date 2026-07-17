@@ -1,14 +1,16 @@
 # α_s Direct Wilson-Loop Honest-Status Audit
 
-**Date:** 2026-05-02
+**Date:** 2026-05-02. Source-boundary refresh: 2026-07-16.
 **Claim type:** open_gate
+**Status authority:** independent audit lane only. The historical review
+language below carries no present audit verdict or effective-status authority.
 **Status:** demotion / status-correction packet for
 [`ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md`](ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md)
-which is currently `proposed_retained, unaudited` in the audit ledger. This
-audit applies the seven retained-proposal certificate criteria honestly and
-recommends demotion to **bounded support theorem on retained graph-first
-surface with admitted Sommer-scale and standard QCD-running imports**.
-**Primary runner:** unchanged — `scripts/frontier_alpha_s_direct_wilson_loop.py`
+which this packet recorded as `proposed_retained, unaudited` in its 2026-05-02
+snapshot. The historical review applied the seven retained-proposal
+certificate criteria and recommended **bounded support theorem on retained graph-first
+surface with explicit external Sommer-scale and standard QCD-running imports**.
+**Primary runner:** `scripts/frontier_alpha_s_direct_wilson_loop.py`
 PASS=22 FAIL=0 after the current-normalization source-boundary refresh.
 
 ## 0. Audit context
@@ -23,8 +25,9 @@ on the Cl(3)/Z³ graph-first surface with `g_bare = 1`, β = 6, giving:
 
 This is consistent with PDG world average `0.1180 ± 0.0009` within 1σ.
 
-The note is currently at `proposed_retained, unaudited` (per
-`audit_ledger.json`). Transitive descendants: 259. Load-bearing score: 9.52.
+At the 2026-05-02 review snapshot, the note was recorded as
+`proposed_retained, unaudited`. The current audit lane, not this historical
+packet, owns all later status and graph metrics.
 
 This review packet does **not** challenge the runner result or the algebra —
 both are verified at PASS=22/0 strict mode. It applies the **seven
@@ -36,9 +39,9 @@ authority surface and recommends an honest status.
 | # | Criterion | Pass? | Notes |
 |---|---|---|---|
 | 1 | `proposal_allowed: true` | **NO** | Review recommends false. |
-| 2 | No open imports for the claimed target | **NO** | Sommer scale `r_0 = 0.5 fm` is an external matching number. The QCD running bridge to `M_Z` (4-loop β-function, threshold matching) is an external standard correction. Both are admitted, not derived. |
-| 3 | No observed values, fitted selectors, **admitted unit conventions, or literature values** are load-bearing proof inputs | **NO** | The Sommer scale `r_0 = 0.5 fm` is a literature value — it is the standard convention adopted in Sommer (1993) and FLAG. The α_s(M_Z) extraction depends on it as a load-bearing scale-setting input. The QCD running bridge uses literature 4-loop β-function. Both are admitted standard corrections, but the retention claim depends on them. |
-| 4 | Every dependency is retained, retained corollary, or explicitly allowed exact support | **PARTIAL** | `graph_first_su3_integration_note` is retained (provides Wilson SU(3) gauge surface). The current framework baseline is `MINIMAL_AXIOMS_2026-06-05.md` / the stable `minimal_axioms` premise node, and that baseline explicitly does not supply `g_bare = 1` convention handling. The older `MINIMAL_AXIOMS_2026-04-11.md` citation is historical only and is not a normalization authority for this route. The open normalization dependency is therefore the separate `g_bare = 1` / beta=6 Wilson-surface gate, not the current minimal axiom memo. |
+| 2 | No open imports for the claimed target | **NO** | Sommer scale `r_0 = 0.5 fm` is an external matching number. The QCD running bridge to `M_Z` (4-loop β-function, threshold matching) is an external standard correction. Both are explicit external inputs, not derived. |
+| 3 | No observed values, fitted selectors, **external unit conventions, or literature values** are load-bearing proof inputs | **NO** | The Sommer scale `r_0 = 0.5 fm` is a literature value — it is the standard convention adopted in Sommer (1993) and FLAG. The α_s(M_Z) extraction depends on it as a load-bearing scale-setting input. The QCD running bridge uses literature 4-loop β-function. Both are explicit external corrections, and the retention claim depends on them. |
+| 4 | Every dependency is retained, retained corollary, or explicitly allowed exact support | **PARTIAL** | `graph_first_su3_integration_note` is retained (provides Wilson SU(3) gauge surface). The current framework baseline is `MINIMAL_AXIOMS_2026-06-29.md` / the stable `minimal_axioms` premise node, and that baseline explicitly does not supply `g_bare = 1` convention handling. The older `MINIMAL_AXIOMS_2026-04-11.md` citation is historical only and is not a normalization authority for this route. The open normalization dependency is therefore the separate `g_bare = 1` / beta=6 Wilson-surface gate, not the current minimal axiom memo. |
 | 5 | Runner or proof artifact checks dependency classes, not only numerical output | **YES** | The strict runner (`scripts/frontier_alpha_s_direct_wilson_loop.py`) explicitly verifies **forbidden authority key avoidance** (no `u_0`, `alpha_lm`, `alpha_bare_over_u0_squared`, `mean_link`, `plaquette_authority`, `alpha_s_v_definition`). It enforces `used_as_authority = false` for the existing α_LM/u_0 chain and checks that the source-boundary note does not use the historical April minimal-axioms memo as current normalization authority. PASS=22 FAIL=0 verified 2026-06-18. |
 | 6 | Review-loop disposition is `pass` | **PENDING** | This review packet is the branch-local self-review. Independent audit recommended. |
 | 7 | PR body explicitly says independent audit is still required | **YES** | The note itself states "It remains `proposed_retained`: the audit ledger, not this note, decides whether the theorem is ratified." |
@@ -52,8 +55,8 @@ current authority surface.
 ```yaml
 actual_current_surface_status: bounded support theorem
 conditional_surface_status: |
-  bounded by admitted Sommer-scale matching and standard QCD-running bridge.
-  Admitted external imports:
+  bounded by explicit external Sommer-scale matching and a standard
+  QCD-running bridge. External imports:
     - Sommer scale r_0 = 0.5 fm
     - 4-loop QCD beta function
     - threshold matching at quark mass thresholds
@@ -75,7 +78,7 @@ bare_retained_allowed: false
 Non-authoritative review recommendation for the independent audit lane:
 - classify the route as bounded support unless retained bridge theorems close
   the named imports;
-- mark the Sommer-scale and QCD-running-bridge as admitted standard
+- mark the Sommer-scale and QCD-running bridge as explicit external
   corrections in the assumption/import ledger if the audit lane agrees;
 - do not route the `g_bare = 1` normalization dependency through
   `MINIMAL_AXIOMS_2026-04-11.md`; that memo is historical-only for this
@@ -110,9 +113,9 @@ For the note to lift from `bounded support` to a retained-grade theorem:
 |---|---|
 | Retire `r_0 = 0.5 fm` Sommer-scale dependency via a framework-derived scale anchor | hard — would need a Cl(3)/Z³ native scale-setting theorem independent of literature |
 | Retire 4-loop QCD running bridge dependency | hard — requires framework-native running theorem |
-| Supply current retained or approved premise authority for the `g_bare = 1` / beta=6 Wilson normalization gate | very hard — the 2026-06-05 minimal axiom memo explicitly does not supply this convention |
+| Supply current retained or approved premise authority for the `g_bare = 1` / beta=6 Wilson normalization gate | very hard — the 2026-06-29 minimal axiom memo explicitly does not supply this convention |
 
-Current normalization citation repair: `MINIMAL_AXIOMS_2026-06-05.md` is the
+Current normalization citation repair: `MINIMAL_AXIOMS_2026-06-29.md` is the
 current minimal-axiom baseline and the stable `minimal_axioms` premise node is
 the corresponding dependency surface. That baseline is useful because it says
 what the axioms do and do not provide. It does not supply `g_bare = 1`.
@@ -125,13 +128,13 @@ equivalence `beta*g^2=2n`. It supplies no Wilson action, gauge-field
 dictionary, or physical matching demand and therefore cannot close this
 route's `g_bare = 1` / `beta = 6` normalization gate.
 
-Until at least one of these is closed, the current bounded support status
-is honest.
+Until at least one of these is closed, only the bounded-support source wording
+is justified; independent audit owns any status conclusion.
 
 ## 6. Effect on downstream rows
 
 The 259 transitive descendants under `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30`
-should treat the α_s(M_Z) value as a **bounded support input with admitted
+should treat the α_s(M_Z) value as a **bounded support input with explicit external
 Sommer-scale and QCD-running-bridge corrections**, not as a retained-grade
 zero-input derivation. Equivalently, downstream rows may cite the value only
 as bounded support input, not as a retained-grade zero-input derivation.
@@ -161,7 +164,7 @@ Forbidden downstream uses without new retained bridge theorems:
 - do not cite `MINIMAL_AXIOMS_2026-04-11.md` as a live `g_bare = 1`
   normalization authority;
 - do not cite the current minimal axiom memo as a source of `g_bare = 1`;
-  `MINIMAL_AXIOMS_2026-06-05.md` explicitly does not supply `g_bare = 1`
+  `MINIMAL_AXIOMS_2026-06-29.md` explicitly does not supply `g_bare = 1`
   convention handling.
 
 The broad physical α_s(M_Z) lane can be re-audited only after retained bridge
@@ -175,7 +178,7 @@ certificate.
 
 - [`ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md`](ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md) — parent note being audited
 - [`scripts/frontier_alpha_s_direct_wilson_loop.py`](../scripts/frontier_alpha_s_direct_wilson_loop.py) — strict runner (PASS=22/0)
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — current minimal-axiom baseline; explicitly does not supply `g_bare = 1`
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — current minimal-axiom baseline; explicitly does not supply `g_bare = 1`
 - `MINIMAL_AXIOMS_2026-04-11.md` — historical-only older memo; context
   handle only, not a citation-graph dependency and not a live normalization
   authority for this route

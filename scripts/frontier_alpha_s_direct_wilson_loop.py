@@ -57,7 +57,7 @@ SOURCE_BOUNDARY_REQUIRED_PHRASES = {
     "retained alpha_s(M_Z) theorem",
     "PDG agreement as proof",
     "current axiom-surface normalization",
-    "MINIMAL_AXIOMS_2026-06-05.md",
+    "MINIMAL_AXIOMS_2026-06-29.md",
     "stable `minimal_axioms` premise node",
     "MINIMAL_AXIOMS_2026-04-11.md` is historical only",
     "does not supply `g_bare = 1`",
@@ -361,7 +361,7 @@ def validate_source_boundary_note(gate: Gate) -> None:
     )
     gate.check(
         "source-boundary firewall retires the stale April minimal-axioms normalization citation",
-        "minimal_axioms_2026-06-05.md" in normalized
+        "minimal_axioms_2026-06-29.md" in normalized
         and "stable `minimal_axioms` premise node" in normalized
         and "minimal_axioms_2026-04-11.md` is historical only" in normalized
         and "does not supply `g_bare = 1`" in normalized

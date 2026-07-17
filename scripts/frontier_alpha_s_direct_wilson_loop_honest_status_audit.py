@@ -58,7 +58,7 @@ required = [
     "4-loop QCD beta function",
     "bounded support theorem",
     "proposal_allowed: false",
-    "MINIMAL_AXIOMS_2026-06-05.md",
+    "MINIMAL_AXIOMS_2026-06-29.md",
     "stable `minimal_axioms` premise node",
     "MINIMAL_AXIOMS_2026-04-11.md` is historical only",
     "does not supply `g_bare = 1`",

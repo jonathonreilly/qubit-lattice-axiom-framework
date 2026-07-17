@@ -26,11 +26,11 @@ Checked content (all constructed, nothing assigned):
       (breaks the covariant-channel premise — the premise that fails is
       named, and it is not the rate); a metric dilation changes the fixed
       trace form (the freedom rigidity removes — also not the rate).
-  R3  variance law and the unit point: the per-direction second moment
+  R3  variance law and the formal leading-map unit point: the per-direction second moment
       per step is 2 tau (Gaussian generator identity + constructed Wilson
       second moments -> 8 tau_eff over dim = 8); hence tau = 1/2 is
-      exactly the unit-variance-per-step setting, and via tau = N_c/beta
-      it is exactly beta = 2 N_c = 6. The stable-path matrix theorem
+      exactly the unit-variance-per-step setting. Under the defined leading
+      map tau_lead=N_c/beta it corresponds to beta = 2 N_c = 6. The stable-path matrix theorem
       supplies only a formal coefficient identity; no magnetic/physical
       g_bare dictionary is inferred. Exact rational layer for the equivalences and the
       mismatched family (tau = 1/8 <-> beta = 24, per-direction moment
@@ -213,7 +213,7 @@ def section_A(T1, T2) -> None:
 # ---------------------------------------------------------------------------
 
 def section_B(T1, T2) -> None:
-    print("\nSECTION B: Lemma R0 — Wilson kernel in-class, rate tau_eff = N_c/beta")
+    print("\nSECTION B: Lemma R0 — Wilson kernel in-class, leading rate tau_lead = N_c/beta")
     print("-" * 78)
     check(
         "Wilson kernel character coefficients positive at beta in {6,12,24,48,96}",
@@ -415,7 +415,7 @@ def section_E(T1, T2) -> None:
 # ---------------------------------------------------------------------------
 
 def section_F() -> None:
-    print("\nSECTION F: exact layer — unit-variance point = the (SD)/beta=6 point")
+    print("\nSECTION F: exact formal layer — unit variance and the leading beta map")
     print("-" * 78)
     n_c = Fraction(3)
 
@@ -482,7 +482,8 @@ def section_G() -> None:
     require_contains("note", note_flat, "rate-blind")
     require_contains("note", note_flat, "complete surviving invariant")
     require_contains("note", note_flat, "unit-variance")
-    require_contains("note", note_flat, "distinguished setting")
+    require_contains("note", note_flat, "tau_lead(beta):=N_c/beta")
+    require_contains("note", note_flat, "distinguished heat-kernel setting")
     require_contains("note", note_flat, "zero dimensionless content")
     require_contains("note", note_flat, "not a citation-graph dependency")
     require_contains("note", note_flat, "does not claim:")

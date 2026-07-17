@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
-runner_sha256: e45cb3ada0e1d5d49476a11a4831612477cdceff7fdbf4a1caa9ec54374a8514
+runner_sha256: 8fc61f5c6ee56390d364d73bd73387bd1bcd40ea902183ea4a54ddc9f2c0a371
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 Plaquette beta=6 perturbative-derivation repaired diagnostic runner
@@ -11,21 +11,21 @@ Plaquette beta=6 perturbative-derivation repaired diagnostic runner
 
 
 ==============================================================================
-T0: admitted-input runner-local diagnostic license
+T0: explicit-input runner-local diagnostic license
 ==============================================================================
 PASS: note records 2026-06-12 source-boundary demotion
-      demotion and admitted-input sections present
-PASS: note records admitted finite packet I_PT
+      demotion and explicit-input sections present
+PASS: note records explicit runner-local finite packet I_PT
       packet separates formal algebra, W-PHYS, and runner-local values
 PASS: note records only formal coefficient algebra as the explicit dependency
-      W-PHYS remains admitted rather than dependency-laundered
+      W-PHYS remains an explicit non-satisfying condition rather than dependency-laundered
 PASS: note licenses unresolved NSPT/MC/F2 inputs for this diagnostic only
-      remaining admitted inputs and alpha/beta boundaries carry no downstream license
+      remaining explicit runner-local inputs and alpha/beta boundaries carry no downstream license
 PASS: note excludes actual beta=6 surface and non-perturbative route claims
       diagnostic remains conditional and finite-route only
 PASS: note firewalls retained beta=6 surface claim after demotion
       source repair remains diagnostic-only after the Wilson edge is wired
-PASS: note explicitly elects admitted-input diagnostic option
+PASS: note explicitly elects explicit-input diagnostic option
       source-boundary second option is source-locked
 PASS: note scopes row as non-downstream-licensed runner-local diagnostic only
       source-boundary non-downstream-licensed scoping present; not a citeable bridge/derivation
@@ -33,13 +33,13 @@ PASS: note records remaining promotion authorities as unsupplied/open
       NSPT packet, surface/g_bare specialization, MC comparator, and F2 comparator remain open; row not promotable
 PASS: note keeps 0.5934 MC value fenced as comparator-only, never a proof input
       MC value stays a fenced comparator, never a derivation/proof input
-PASS: note blocks downstream reuse of admitted beta=6 inputs
+PASS: note blocks downstream reuse of explicit runner-local beta=6 inputs
       downstream authority must come from a separate retained/effective-bounded row
 PASS: note keeps non-perturbative routes open
       finite perturbative route only
 
 ==============================================================================
-C1: source-wired formal coefficient edge + admitted W-PHYS
+C1: source-wired formal coefficient edge + explicit W-PHYS condition
 ==============================================================================
 PASS: matrix theorem supplies beta=2n/g^2 only as formal coefficient algebra
       formal identity is present in the dependency source
@@ -47,7 +47,7 @@ PASS: matrix theorem does not contain a beta=6/g_bare specialization
       physical specialization remains runner-local
 PASS: matrix theorem explicitly forbids action/coupling inference
       the dependency supplies formal algebra, not W-PHYS
-PASS: admitted W-PHYS specialization gives beta=6 at N_c=3, g_bare=1
+PASS: explicit W-PHYS condition gives beta=6 at N_c=3, g_bare=1
       beta = 6.0
 PASS: g_bare^2 = 2 N_c / beta = 1 at beta=6
       g^2 = 1.0
@@ -55,19 +55,19 @@ PASS: alpha_bare = g_bare^2/(4 pi) = 1/(4 pi) at beta=6
       alpha_bare = 0.07957747, 1/(4 pi) = 0.07957747
 
 ==============================================================================
-T2: 1-loop weak-coupling value over admitted packet
+T2: 1-loop weak-coupling value over explicit runner-local packet
 ==============================================================================
 PASS: M5 1-loop weak-coupling: <P> = 1 - (N^2-1)/(8 N^2) * 4/beta = 0.9259
       <P>_M5 = 0.925926
 PASS: equivalent: <P> = 1 - w_1/beta with w_1 = (N^2-1)/(2 N^2) = 4/9
       <P>_w1 = 0.925926, |diff| = 0.000e+00
-PASS: 1-loop overshoots admitted MC comparator by ~56%
+PASS: 1-loop overshoots explicit runner-local MC comparator by ~56%
       gap = 0.3325, pct = 56.04%
 
 ==============================================================================
-T3: truncated perturbative series at beta=6 (admitted coefficient packet)
+T3: truncated perturbative series at beta=6 (explicit runner-local coefficient packet)
 ==============================================================================
-  admitted coefficient packet:
+  explicit runner-local coefficient packet:
     w_1=0.44444  w_2=0.20305  w_3=0.16766
     w_4=0.18000  w_5=0.23600  w_6=0.33600
     w_7=0.51000  w_8=0.80600  w_9=1.30000
@@ -90,8 +90,8 @@ T3: truncated perturbative series at beta=6 (admitted coefficient packet)
     N=15:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
     N=16:  <P>_PT = 0.919331,  gap = +0.32593,  pct = +54.926%
   best truncation: N*=16, <P>_PT(N*) = 0.919331, pct = 54.926%
-PASS: OBSTRUCTION: truncated series at beta=6 saturates at >40% gap from admitted comparator
-      <P>_PT(N*=16) = 0.919331, admitted comparator = 0.5934, pct = 54.926%; residual exceeds 40% inside the admitted coefficient packet
+PASS: OBSTRUCTION: truncated series at beta=6 saturates at >40% gap from explicit runner-local comparator
+      <P>_PT(N*=16) = 0.919331, explicit runner-local comparator = 0.5934, pct = 54.926%; residual exceeds 40% inside the explicit runner-local coefficient packet
   coefficient ratios w_(n+1)/w_n:
     n= 1 -> n+1= 2: ratio = 0.4569
     n= 2 -> n+1= 3: ratio = 0.8257
@@ -112,13 +112,13 @@ PASS: scale diagnostic: coefficient ratios > 1.5 for n>=6
       10/10 ratios exceed 1.5 starting at n=6
 
 ==============================================================================
-T4: tadpole-improvement signature over admitted packet
+T4: tadpole-improvement signature over explicit runner-local packet
 ==============================================================================
-PASS: u_0 = <P>_MC^(1/4) at admitted comparator gives u_0 = 0.87768
+PASS: u_0 = <P>_MC^(1/4) at explicit runner-local comparator gives u_0 = 0.87768
       u_0 = 0.877681
   tadpole-improved self-consistent <P>_TI (4-loop) = 0.910624
 PASS: OBSTRUCTION: tadpole-improved self-consistent <P>_TI(4-loop) saturates >40% gap
-      <P>_TI = 0.910624, admitted comparator = 0.5934, gap = +0.31722, pct = 53.459%
+      <P>_TI = 0.910624, explicit runner-local comparator = 0.5934, gap = +0.31722, pct = 53.459%
   tadpole-improved self-consistent <P>_TI(N) for N=1..8:
     N=1: <P>_TI = 0.919435, gap = +0.32604, pct = 54.944%
     N=2: <P>_TI = 0.911997, gap = +0.31860, pct = 53.690%
@@ -204,7 +204,7 @@ T5: Pade [m/n] resummation of the perturbative series
     [11/1] (order 12): <P>_Pade = 0.919331, gap = +0.32593, pct = 54.926%
   best Pade: [3/2], <P>_Pade = 0.919330, pct = 54.926%
 PASS: OBSTRUCTION: best Pade [3/2] resummation has |pct| > 40%
-      <P>_Pade = 0.919330, admitted comparator = 0.5934, pct = 54.926%
+      <P>_Pade = 0.919330, explicit runner-local comparator = 0.5934, pct = 54.926%
 
 ==============================================================================
 T6: tadpole-improved Pade resummation (best combined attempt)
@@ -239,10 +239,10 @@ T6: tadpole-improved Pade resummation (best combined attempt)
     [7/1]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
   best tadpole-improved Pade: [3/2], <P> = 0.910550, pct = 53.446%
 PASS: OBSTRUCTION: best tadpole-improved Pade combination has |pct| > 40%
-      <P>_TI-Pade = 0.910550, admitted comparator = 0.5934, pct = 53.446%
+      <P>_TI-Pade = 0.910550, explicit runner-local comparator = 0.5934, pct = 53.446%
 
 ==============================================================================
-T7: finite-route residual and admitted scale diagnostic
+T7: finite-route residual and explicit runner-local scale diagnostic
 ==============================================================================
   pure-gauge b_0 = 11.000
   alpha_lat at beta=6 = 0.079577
@@ -252,24 +252,24 @@ PASS: scale-diagnostic n* = 1/(alpha_lat b_0/4) in range [4, 8] at beta=6
   smallest |w_n/beta^n| at n* = 16: 2.144546e-11
   perturbative summed value (N=16): 0.919331
   finite-route gap to comparator:   +0.32593 (54.926%)
-  admitted F2 comparator:           0.0833%
-PASS: finite-route gap to admitted comparator dominates over minimum-term residual
+  explicit runner-local F2 comparator:           0.0833%
+PASS: finite-route gap to explicit runner-local comparator dominates over minimum-term residual
       non_pert_gap = +0.32593, min_term = 2.145e-11, ratio = 1.52e+10
-PASS: finite-route gap exceeds admitted F2 comparator (tested route does not reach admitted MC comparator)
+PASS: finite-route gap exceeds explicit runner-local F2 comparator (tested route does not reach explicit runner-local MC comparator)
       gap = 54.9259%, F2 = 0.0833%, ratio = 659.4x
 
 ==============================================================================
-T8: honest verdict on the admitted-input diagnostic
+T8: honest verdict on the explicit-input diagnostic
 ==============================================================================
   HONEST best tested value: method = tadpole+Pade[3/2]
                             <P>_tested = 0.910550
-                            admitted <P>_MC comparator = 0.5934
+                            explicit runner-local <P>_MC comparator = 0.5934
                             residual = +0.31715
                             residual % = 53.446%
-                            admitted F2 comparator = 0.0833%
-  Verdict: best tested residual (53.45%) > admitted F2 comparator (0.0833%)
+                            explicit runner-local F2 comparator = 0.0833%
+  Verdict: best tested residual (53.45%) > explicit runner-local F2 comparator (0.0833%)
   Verdict label: RUNNER_LOCAL_OBSTRUCTION_>10pct
-PASS: HONEST VERDICT: best tested value has residual > admitted F2 comparator
+PASS: HONEST VERDICT: best tested value has residual > explicit runner-local F2 comparator
       best tested = 0.910550, residual = 53.4462% > F2 = 0.0833%
 
 ==============================================================================
@@ -279,20 +279,20 @@ PASS: no new axiom or primitive introduced (Lattice/Qubit/Admissibility/Record b
       paired note refuses new axiom/primitive authority
 PASS: no new repo vocabulary introduced
       paired note uses existing labels: <P>, beta, w_n, alpha_bare, u_0, tadpole improvement, Pade
-PASS: admitted MC comparator 0.5934 enters only as comparator (not derivation input)
+PASS: explicit runner-local MC comparator 0.5934 enters only as comparator (not derivation input)
       <P>_MC = 0.5934 used only in residual computation, never as authority or downstream license
 
 ==============================================================================
 T10: paired note exists with matching status authority disclaimer
 ==============================================================================
 PASS: note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
-      length = 24169 chars
+      length = 26877 chars
 PASS: note declares Status authority: independent audit lane only
       audit-lane authority pattern present
 PASS: note declares no new axioms / no new primitives
       audit-discipline disclaimers present
-PASS: note declares admitted MC comparator 0.5934 as comparator only
-      admitted comparator pattern present
+PASS: note declares explicit runner-local MC comparator 0.5934 as comparator only
+      explicit runner-local comparator pattern present
 
 TOTAL: PASS=39, FAIL=0
 

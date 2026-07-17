@@ -1858,6 +1858,59 @@
         "total_pass": 53
       },
       "verdict_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separately defined Theta_H odd-sector result may survive a narrower formulation.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260713-7abd2d90\", \"judge\": 1, \"rationale\": \"The primary runner constructs a real anti-Hermitian operator and tests T=K and CPK on that operator; multiplying it by i occurs only in the spectrum comparison. For physical H=iD, K changes i to -i, so T=K flips H and CPK also flips H. The cited bridge explicitly confirms this and replaces the physical antiunitary representative with Theta_H=PK (equivalently CPT_H with T_H=CK). Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, so the theorem as written fails even though the C/P spectral flips, unitary CP identity, and separa\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-2-20260713-eb4834ff\", \"judge\": 2, \"rationale\": \"The runner tests the real anti-Hermitian operator D while calling it H; its physical Hermitian lift iD appears only in a spectral calculation. Because K(iD)K=-iD, the retained simultaneous claims T=K invariance and CP K/CPT invariance of physical H=iD are false, while the cited bridge instead establishes the distinct Theta_H=P K symmetry. The first position correctly ratifies failure over the exact supplied pre-audit scope.\", \"tuple\": [\"first\", \"audited_failed\", \"positive_theorem\", \"The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.\", \"A\", []]}, {\"auditor\": \"codex-judicial-3-20260713-e80e1202\", \"judge\": 3, \"rationale\": \"The primary runner computes the real anti-Hermitian operator D while calling it H; its direct T=K and CPK checks therefore do not establish those identities for the physical Hermitian lift iD. The cited bridge confirms that K reverses i, so CPK flips iD and must be replaced by Theta_H=PK; this contradicts the retained theorem and symmetry table as written.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-4-20260713-7737686a\", \"judge\": 4, \"rationale\": \"The primary runner constructs the real anti-Hermitian hopping operator D under the variable name H and applies T=K and CPK to that operator; multiplying by i appears only in the spectral calculation. For the physical Hermitian lift H=iD, complex conjugation reverses i, so T=K does not preserve H and CPK flips H. The cited bridge explicitly confirms this and instead establishes the distinct antiunitary symmetry Theta_H=PK. Thus the retained theorem and symmetry table conflate valid D-level identities with incompatible physical-H identities, despite the valid PK odd-sector result.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}, {\"auditor\": \"codex-judicial-5-20260713-433197b8\", \"judge\": 5, \"rationale\": \"The primary runner\\u2019s C, P, T=K, and CP/CPT identities concern the real anti-Hermitian operator D that it labels H; multiplying by i makes the physical Hermitian lift complex, so K sends iD to -iD. The cited bridge expressly confirms that naive CP K flips physical H and replaces it with Theta_H=P K (equivalently using T_H=C K). Thus the retained theorem and symmetry table incorrectly combine D-level T=K/CPK identities with physical-Hamiltonian claims, and the theorem as written does not close.\", \"tuple\": [\"second\", \"audited_failed\", \"positive_theorem\", \"The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.\", \"A\", []]}]"
+    },
+    {
+      "archived_at": "2026-07-17T21:12:27.036891+00:00",
+      "audit_date": "2026-07-17T21:12:17.202079+00:00",
+      "audit_invocation_history": [
+        "48b8b43ffa19478fbbb28048c9caeb79"
+      ],
+      "audit_invocation_id": "48b8b43ffa19478fbbb28048c9caeb79",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 31.757,
+        "runner_hash": "4fee660a7a890bf399088a22da3ddcb891d4455e4ed627c51f60c4073dcfd8d2",
+        "transitive_descendants": 864
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-65a76b6138d3454da6ffaed3f29896e6-cpt_exact_note-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The proof closes a narrower matrix theorem, but not the supplied pre-audit scope. It derives K H K^-1=-H and CPK H (CPK)^-1=-H and explicitly disclaims a physical Hamiltonian or physical T/CPT identification.",
+      "claim_scope": "The pre-audit free even-periodic claim that bare T=K and CPK/CPT preserve physical H=iD, with vanishing Theta_H-odd residuals.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-17T21:12:17.202079+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Since H^*=-H, bare K and CPK flip H, whereas CK and PK preserve H by cancelling the conjugation sign with one unitary spectral flip.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after the registered scope is narrowed to the declared CK/PK finite-matrix theorem and removes bare-K, CPK, and physical Hamiltonian/CPT identification claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 115,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 115
+      },
+      "verdict_rationale": "The runner genuinely reconstructs the finite matrices and its 115 algebraic checks agree with the revised source theorem. Those checks directly contradict the pre-audit assertions that bare K and CPK/CPT preserve H=iD; they instead verify that both flip H. The source also excludes the pre-audit physical identification, so its correct narrower theorem cannot validate the registered scope."
     }
   ],
   "prose_corrections": [],

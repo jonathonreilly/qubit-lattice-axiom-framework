@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_sharpening_import_decomposition_2026_07_16.py
-runner_sha256: 00a908c670b48d195c0e23a5f9ccaea445f395422fe3ec1501f836e71ce89254
+runner_sha256: 5412422a8a169a583ba1588bf584d1a7a0554406a107988a283e8a74b64f9088
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 2.39
+elapsed_sec: 2.30
 status: ok
 ----- stdout -----
 [TEXT_INTEGRITY] Note exists, claim id present, dependency filenames cited
@@ -11,8 +11,7 @@ TEXT_INTEGRITY.1 PASS: paired note file exists on disk
 TEXT_INTEGRITY.2 PASS: note states its claim id verbatim
 TEXT_INTEGRITY.3 PASS: note cites dependency filename ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md
 TEXT_INTEGRITY.4 PASS: note cites dependency filename MINIMAL_AXIOMS_2026-06-29.md
-TEXT_INTEGRITY.5 PASS: note cites dependency filename FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md
-TEXT_INTEGRITY.6 PASS: note cites dependency filename AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md
+TEXT_INTEGRITY.5 PASS: note cites dependency filename AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md
 [T1_FIXED_POINT] Fixed-point identity, interior fixed set, A-membership equivalence
 T1_FIXED_POINT.1 PASS: f(q)(1-q) - q f(1-q) = q(1-q)[g(q) - g(1-q)] exactly
 T1_FIXED_POINT.2 PASS: numerator of T_f(q) - q equals f(q)(1-q) - q f(1-q) exactly
@@ -27,16 +26,17 @@ T2_SIGN_BRIDGE.2 PASS: sign-bridge numerator q(1-q) h(q) equals f(q)(1-q) - q f(
 T2_SIGN_BRIDGE.3 PASS: denominator f(q)+f(1-q) > 0 at q=3/5 for f=q^2
 T2_SIGN_BRIDGE.4 PASS: denominator f(q)+f(1-q) > 0 at q=3/5 for f=sqrt(q)
 T2_SIGN_BRIDGE.5 PASS: exchange symmetry: T_f(1-q) = 1 - T_f(q) exactly
-T2_SIGN_BRIDGE.6 PASS: central slope T_f'(1/2) = f'(1/2)/(2 f(1/2)) exactly
+T2_SIGN_BRIDGE.6 PASS: under differentiability at 1/2: central slope T_f'(1/2) = f'(1/2)/(2 f(1/2)) exactly
 T2_SIGN_BRIDGE.7 PASS: power member f = q^1/2: central slope is exactly 1/2
 T2_SIGN_BRIDGE.8 PASS: power member f = q^2: central slope is exactly 2
 T2_SIGN_BRIDGE.9 PASS: power member f = q^k, symbolic k > 0: central slope is exactly k
 [T3_HORN] Off-center amplification: T_f(q) > q for q > 1/2 across members
-T3_HORN.1 PASS: f = q^2: T_f(3/5) > 3/5 (off-center amplification, q > 1/2)
-T3_HORN.2 PASS: f = q^3: T_f(3/5) > 3/5 (off-center amplification, q > 1/2)
-T3_HORN.3 PASS: f = q^4: T_f(3/5) > 3/5 (off-center amplification, q > 1/2)
-T3_HORN.4 PASS: f = q + q^2: T_f(3/5) > 3/5 (off-center amplification, q > 1/2)
-T3_HORN.5 PASS: mirror: f = q^2 attenuates the minority side, T_f(2/5) < 2/5
+T3_HORN.1 PASS: normalized polynomial member is in F: f(0)=0, f(1)=1, and f' >= f'(0)=1/2 > 0
+T3_HORN.2 PASS: f = q^2: T_f(3/5) > 3/5 (off-center amplification, q > 1/2)
+T3_HORN.3 PASS: f = q^3: T_f(3/5) > 3/5 (off-center amplification, q > 1/2)
+T3_HORN.4 PASS: f = q^4: T_f(3/5) > 3/5 (off-center amplification, q > 1/2)
+T3_HORN.5 PASS: f = (q + q^2)/2: T_f(3/5) > 3/5 (off-center amplification, q > 1/2)
+T3_HORN.6 PASS: mirror: f = q^2 attenuates the minority side, T_f(2/5) < 2/5
 [ORBITS] Exemplar orbits: A+ rises toward 1; A- falls toward 1/2 (exact)
 ORBITS.1 PASS: A+ orbit f=q^2 from 3/5: strictly increasing over six steps
 ORBITS.2 PASS: A+ orbit f=q^2 from 3/5: every iterate stays in (1/2, 1)
@@ -59,7 +59,7 @@ WITNESS_A.10 PASS: witness A affine certificate: side formulas agree, h(1/2) = 0
 WITNESS_A.11 PASS: witness A h collinear on each subinterval: midpoint equals endpoint average
 WITNESS_A.12 PASS: witness A per-weight influence profile g non-monotone: g(1/2) = 11/20 < g(1/4) = 3/5
 WITNESS_A.13 PASS: witness A one-step amplification T_A(q) > q at q in {5/8, 3/4, 7/8}
-[WITNESS_B] Sign-mixed boundary witness B, off-center fixed point q* = 17/22
+[WITNESS_B] Sign-mixed boundary witness B, off-center fixed-point pair {5/22, 17/22}
 WITNESS_B.1 PASS: witness B node table gated in note text and matched by g exactly
 WITNESS_B.2 PASS: witness B g continuous at internal breakpoints 1/4, 1/2, 3/4
 WITNESS_B.3 PASS: witness B f(0) = 0 and f(1) = 1
@@ -69,10 +69,11 @@ WITNESS_B.6 PASS: witness B h(21/22) = 2/5 > 0 while h(3/4) < 0: sign-mixed on (
 WITNESS_B.7 PASS: witness B h(q) = 1/10 - q/5 on (1/2, 3/4)
 WITNESS_B.8 PASS: witness B h(q) = 11q/5 - 17/10 on (3/4, 1)
 WITNESS_B.9 PASS: witness B: solving h(q) = 0 on (3/4, 1) yields exactly {17/22}
-WITNESS_B.10 PASS: witness B off-center fixed point: T_B(q*) = q* by back-substitution
-WITNESS_B.11 PASS: witness B fixed point q* = 17/22 is off-center (q* != 1/2)
-WITNESS_B.12 PASS: witness B below q*: T_B(7/10) < 7/10 (attenuation region)
-WITNESS_B.13 PASS: witness B above q*: T_B(9/10) > 9/10 (amplification region)
+WITNESS_B.10 PASS: reflection gives the off-center pair {5/22, 17/22}
+WITNESS_B.11 PASS: both off-center points satisfy T_B(q*) = q* by back-substitution
+WITNESS_B.12 PASS: piecewise solve plus reflection gives closed fixed set {0,5/22,1/2,17/22,1}
+WITNESS_B.13 PASS: witness B below q*: T_B(7/10) < 7/10 (attenuation region)
+WITNESS_B.14 PASS: witness B above q*: T_B(9/10) > 9/10 (amplification region)
 [IDENTITY] N2 identity member f = x: T_f = q identically, h identically zero
 IDENTITY.1 PASS: identity member f = x: T_f(q) = q identically
 IDENTITY.2 PASS: identity member: every rational sample is fixed (T_f(q) = q)
@@ -84,7 +85,7 @@ LADDER.3 PASS: sqrt member f = sqrt(x): g' = -x^(-3/2)/2 exactly (profile strict
 LADDER.4 PASS: sqrt member: g'(x) < 0 at x in {1/4, 1/2} (not in M)
 LADDER.5 PASS: sqrt member in A-: exact conjugate certificate gives h < 0 on (1/2, 1)
 LADDER.6 PASS: identity member in F but not A: h identically 0 (no reflection asymmetry)
-LADDER.7 PASS: witness B in F but not A: off-center interior zero h(17/22) = 0
+LADDER.7 PASS: witness B in F but not A: reflected off-center zeros h(5/22)=h(17/22)=0
 [SOURCE_GATES] Verbatim quote gates (flattened substring in source AND this note)
 SOURCE_GATES.1 PASS: Q1 family prose (W1b L2): present verbatim in source and in this note
 SOURCE_GATES.2 PASS: Q2 family form (W1b L2): present verbatim in source and in this note
@@ -102,7 +103,7 @@ NOTE_HYGIENE.2 PASS: pinned closing / enumeration phrases are absent from the no
 NOTE_HYGIENE.3 PASS: claim-type line is present exactly
 NOTE_HYGIENE.4 PASS: required sections and status-authority line are present
 NOTE_HYGIENE.5 PASS: the T5 exact-characterization phrase appears exactly once in the flattened note
-TOTAL: PASS=85 FAIL=0
+TOTAL: PASS=86 FAIL=0
 
 ----- stderr -----
 

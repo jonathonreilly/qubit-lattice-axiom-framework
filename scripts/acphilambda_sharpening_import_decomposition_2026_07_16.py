@@ -19,7 +19,7 @@ back. Blocks:
   T3_HORN          off-center amplification T_f(q)>q for q>1/2
   ORBITS           A+ orbit rises toward 1; A- orbit falls toward 1/2 (exact)
   WITNESS_A        A+ witness: reflection asymmetry, non-monotone per-weight profile
-  WITNESS_B        sign-mixed boundary witness B, extra fixed point q* = 17/22
+  WITNESS_B        sign-mixed boundary witness B, fixed-point pair 5/22, 17/22
   IDENTITY         N2 identity member f = x: T_f = q, h identically zero
   LADDER           strict ladder M ( A+ ( A ( F
   SOURCE_GATES     verbatim source and boundary quote gates
@@ -98,7 +98,6 @@ check("TEXT_INTEGRITY", "note states its claim id verbatim", CLAIM_ID in note_te
 DEP_FILENAMES = [
     "ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md",
     "MINIMAL_AXIOMS_2026-06-29.md",
-    "FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md",
     "AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md",
 ]
 for dep_name in DEP_FILENAMES:
@@ -175,10 +174,11 @@ for name, fcall in DENOM_MEMBERS:
 check("T2_SIGN_BRIDGE", "exchange symmetry: T_f(1-q) = 1 - T_f(q) exactly",
       sp.simplify(T_sym(fsym, q).subs(q, 1 - q) - (1 - T_sym(fsym, q))) == 0)
 
-# Central slope T_f'(1/2) = f'(1/2)/(2 f(1/2)).
+# If f is differentiable at 1/2, then
+# T_f'(1/2) = f'(1/2)/(2 f(1/2)).
 T_slope = sp.diff(T_sym(fsym, q), q).subs(q, half)
 target_slope = sp.diff(fsym(q), q).subs(q, half) / (2 * fsym(half))
-check("T2_SIGN_BRIDGE", "central slope T_f'(1/2) = f'(1/2)/(2 f(1/2)) exactly",
+check("T2_SIGN_BRIDGE", "under differentiability at 1/2: central slope T_f'(1/2) = f'(1/2)/(2 f(1/2)) exactly",
       sp.simplify(T_slope - target_slope) == 0)
 
 for exponent in (sp.Rational(1, 2), sp.Integer(2)):
@@ -197,8 +197,17 @@ HORN_MEMBERS = [
     ("q^2", lambda t: t ** 2),
     ("q^3", lambda t: t ** 3),
     ("q^4", lambda t: t ** 4),
-    ("q + q^2", lambda t: t + t ** 2),
+    ("(q + q^2)/2", lambda t: (t + t ** 2) / 2),
 ]
+horn_poly = (q + q ** 2) / 2
+horn_poly_prime = sp.diff(horn_poly, q)
+check("T3_HORN",
+      "normalized polynomial member is in F: f(0)=0, f(1)=1, and f' >= f'(0)=1/2 > 0",
+      horn_poly.subs(q, 0) == 0
+      and horn_poly.subs(q, 1) == 1
+      and horn_poly_prime == q + half
+      and positive(horn_poly_prime.subs(q, 0))
+      and positive(sp.diff(horn_poly_prime, q)))
 for name, fcall in HORN_MEMBERS:
     val = T_sym(fcall, sp.Rational(3, 5)) - sp.Rational(3, 5)
     check("T3_HORN", f"f = {name}: T_f(3/5) > 3/5 (off-center amplification, q > 1/2)",
@@ -339,7 +348,7 @@ check("WITNESS_A", "witness A one-step amplification T_A(q) > q at q in {5/8, 3/
           for s in (sp.Rational(5, 8), sp.Rational(3, 4), sp.Rational(7, 8))))
 
 # ---------------------------------------------------------------------------
-print("[WITNESS_B] Sign-mixed boundary witness B, off-center fixed point q* = 17/22")
+print("[WITNESS_B] Sign-mixed boundary witness B, off-center fixed-point pair {5/22, 17/22}")
 PIECES_B = [
     (sp.Integer(0), sp.Rational(1, 4), half, sp.Rational(4, 5)),
     (sp.Rational(1, 4), half, sp.Rational(4, 5), -sp.Rational(2, 5)),
@@ -386,15 +395,29 @@ check("WITNESS_B", "witness B h(q) = 1/10 - q/5 on (1/2, 3/4)",
 check("WITNESS_B", "witness B h(q) = 11q/5 - 17/10 on (3/4, 1)",
       sp.expand(h_B_hi - (sp.Rational(11, 5) * q - sp.Rational(17, 10))) == 0)
 
-# Derive q* by solving h = 0 on (3/4, 1); do not assert the constant.
+# Derive the upper root by solving h = 0 on (3/4, 1), then obtain the lower
+# root by the already-proved reflection oddness; do not assert either constant.
 qstar_set = sp.solveset(sp.Eq(h_B_hi, 0), q, sp.Interval.open(sp.Rational(3, 4), 1))
 check("WITNESS_B", "witness B: solving h(q) = 0 on (3/4, 1) yields exactly {17/22}",
       qstar_set == sp.FiniteSet(sp.Rational(17, 22)))
 qstar = list(qstar_set)[0]
-check("WITNESS_B", "witness B off-center fixed point: T_B(q*) = q* by back-substitution",
-      T_pw(PIECES_B, qstar) == qstar)
-check("WITNESS_B", "witness B fixed point q* = 17/22 is off-center (q* != 1/2)",
-      qstar != half)
+qstar_reflected = 1 - qstar
+qstar_pair = {qstar_reflected, qstar}
+check("WITNESS_B", "reflection gives the off-center pair {5/22, 17/22}",
+      qstar_pair == {sp.Rational(5, 22), sp.Rational(17, 22)})
+check("WITNESS_B", "both off-center points satisfy T_B(q*) = q* by back-substitution",
+      all(T_pw(PIECES_B, root) == root for root in qstar_pair))
+upper_low_roots = sp.solveset(
+    sp.Eq(h_B_lo, 0), q, sp.Interval.open(half, sp.Rational(3, 4)))
+upper_roots = set(upper_low_roots) | set(qstar_set)
+closed_fixed_set = (
+    {sp.Integer(0), half, sp.Integer(1)}
+    | upper_roots
+    | {1 - root for root in upper_roots}
+)
+check("WITNESS_B", "piecewise solve plus reflection gives closed fixed set {0,5/22,1/2,17/22,1}",
+      closed_fixed_set
+      == {sp.Integer(0), sp.Rational(5, 22), half, sp.Rational(17, 22), sp.Integer(1)})
 check("WITNESS_B", "witness B below q*: T_B(7/10) < 7/10 (attenuation region)",
       positive(sp.Rational(7, 10) - T_pw(PIECES_B, sp.Rational(7, 10))))
 check("WITNESS_B", "witness B above q*: T_B(9/10) > 9/10 (amplification region)",
@@ -440,12 +463,15 @@ num_sqrt = sp.sqrt(1 - q) - sp.sqrt(q)
 conj_sqrt = sp.sqrt(1 - q) + sp.sqrt(q)
 check("LADDER", "sqrt member in A-: exact conjugate certificate gives h < 0 on (1/2, 1)",
       sp.simplify(h_sqrt * sp.sqrt(q) * sp.sqrt(1 - q) - num_sqrt) == 0
-      and sp.expand(num_sqrt * conj_sqrt - (1 - 2 * q)) == 0)
+      and sp.expand(num_sqrt * conj_sqrt - (1 - 2 * q)) == 0
+      and sp.simplify_logic(sp.Equivalent(
+          sp.reduce_inequalities([q > half, q < 1, h_sqrt < 0], q),
+          sp.And(q > half, q < 1))) is sp.true)
 check("LADDER", "identity member in F but not A: h identically 0 (no reflection asymmetry)",
       sp.simplify(h_sym(lambda t: t, q)) == 0)
-check("LADDER", "witness B in F but not A: off-center interior zero h(17/22) = 0",
-      h_pw(PIECES_B, sp.Rational(17, 22)) == 0
-      and sp.Rational(17, 22) != half)
+check("LADDER", "witness B in F but not A: reflected off-center zeros h(5/22)=h(17/22)=0",
+      all(h_pw(PIECES_B, root) == 0 for root in qstar_pair)
+      and half not in qstar_pair)
 
 # ---------------------------------------------------------------------------
 print("[SOURCE_GATES] Verbatim quote gates (flattened substring in source AND this note)")

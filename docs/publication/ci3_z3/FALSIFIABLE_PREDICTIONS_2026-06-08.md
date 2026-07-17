@@ -1,6 +1,17 @@
 # Falsifiable Predictions — Honest Catalog (Publication Surface)
 
 **Date:** 2026-06-08 (hardened: falsifier-inventory pass + NuFit-6.1 currency + tension-chase)
+**Currency note (2026-07-16):** this catalog predates the 2026-06-29 four-axiom
+foundation reset and the associated audit-ledger reset. Its falsifier
+thresholds, bucket assignments, and named external comparison bands stand as
+stated; its per-row status words and source-note standings are as of
+2026-06-08 and are **not** current `effective_status` — the live authority is
+the tracked audit ledger
+([`docs/audit/data/ledger/`](../../audit/data/ledger/)), summarized in
+[`docs/repo/RETAINED_BACKBONE.md`](../../repo/RETAINED_BACKBONE.md). Where this
+catalog quotes three-axiom-era framing, read it as historical; the current
+baseline is the four named axioms in
+[`MINIMAL_AXIOMS_2026-06-29.md`](../../MINIMAL_AXIOMS_2026-06-29.md).
 **Claim type:** meta (publication-surface catalog; backward-looking)
 **Status authority:** independent audit lane only. This note sets no audit
 verdict, promotes nothing, and introduces no new derivation, axiom, or fitted

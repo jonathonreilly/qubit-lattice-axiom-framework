@@ -104,7 +104,7 @@
       "path": "docs/RECORD_COMPARABILITY_OWNER_ONE_PAGER_2026-07-04.md",
       "class": "D",
       "status": "landed",
-      "note": "Owner decision surface: whether to append 'There is one configuration of records.' to Record \u2014 the arrow's last missing piece. No weight until decided."
+      "note": "Owner decision surface: whether to append 'There is one configuration of records.' to Record — the arrow's last missing piece. No weight until decided."
     },
     {
       "path": "docs/GRADED_CONSTRAINT_PRIMITIVE_REGISTRATION_PROPOSAL_2026-07-04.md",
@@ -113,11 +113,17 @@
       "note": "Primitive registration draft: graded constraint (weights on record-conditioned menus), preserving PR #4916 review lessons as historical input only. No weight until registered."
     },
     {
-     "path": "docs/audit/AUDIT_DISPATCH_RETARGET_CONDITIONAL_DELTA_AND_CYCLE_ENUMERATOR_NOTE_2026-07-16.md",
-     "class": "D",
-     "status": "in_flight_pr",
-     "pr": 5418,
-     "note": "Proposed design note for audit-lane dispatch machinery (publication interleave lane, conditional blocker-delta consolidation, cycle-domain unification). Class D proposal: zero process authority until an owner-ratified transition; never physics-premise weight; must not chain-satisfy citation edges."
+      "path": "docs/audit/AUDIT_DISPATCH_RETARGET_CONDITIONAL_DELTA_AND_CYCLE_ENUMERATOR_NOTE_2026-07-16.md",
+      "class": "D",
+      "status": "in_flight_pr",
+      "pr": 5418,
+      "note": "Proposed design note for audit-lane dispatch machinery (publication interleave lane, conditional blocker-delta consolidation, cycle-domain unification). Class D proposal: zero process authority until an owner-ratified transition; never physics-premise weight; must not chain-satisfy citation edges."
+    },
+    {
+      "path": "docs/repo/STATE_OF_THE_THEORY_2026-07-16.md",
+      "class": "F",
+      "status": "landed",
+      "note": "Plain-language orientation memo: ratified backbone vs review-gated frontier vs open walls, with the axioms-to-results map. No premise or interpretive weight; status words dated 2026-07-16; ledger is authoritative."
     }
   ]
 }

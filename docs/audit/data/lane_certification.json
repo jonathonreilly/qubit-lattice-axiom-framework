@@ -2201,7 +2201,7 @@
         },
         {
           "claim_id": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "s3_anomaly_spacetime_lift_note",
@@ -2935,6 +2935,6 @@
       "uncertified_count": 669
     }
   ],
-  "repo_head": "59448e3fab2ea08ceed9437a354e88ed346b209f",
+  "repo_head": "264b9f5e469afa4ef2e318a1638ea88c9304e98e",
   "schema": "lane_certification_v2"
 }

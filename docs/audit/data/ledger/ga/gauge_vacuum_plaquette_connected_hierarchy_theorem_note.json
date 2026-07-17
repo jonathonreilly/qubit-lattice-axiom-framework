@@ -1467,6 +1467,67 @@
         "total_pass": 8
       },
       "verdict_rationale": "Issue: the note promotes a valid source-shift identity into an unsupported necessity and exclusivity claim, while the runner's final theorem check is merely positivity of imported onset coefficients. Why this blocks: nonzero nonlocal cumulants show that the hierarchy is active, not that alternative exact representations cannot close beta_eff; the runner also computes a nonlocal three-point correction while the note displays it as an unqualified full sum. No-go discipline: N1/N7 direct partition, spectral, transfer, and finite-case routes remain untested; N2 has only the hierarchy-necessity wall; N3 supplies no retained bridge-or-normalization exclusion; N4 has no matched retained residual; N5 lacks five-resolution execution; and N6/N8 contain potentially relevant plaquette spectral and bootstrap routes without disposition. Repair target: prove an exhaustion theorem reducing every explicit closure to the cumulant tower and state the full-versus-local three-point relation correctly, or narrow the claim to an exact hierarchy representation; until then, only the source-shift hierarchy and its algebraic transport corollaries are supported."
+    },
+    {
+      "archived_at": "2026-07-17T21:36:01.999070+00:00",
+      "audit_date": "2026-07-17T21:35:52.159626+00:00",
+      "audit_invocation_history": [
+        "fae65b3dc5c844099100193c4a7df3b0"
+      ],
+      "audit_invocation_id": "fae65b3dc5c844099100193c4a7df3b0",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+          "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py": "96cfa9c6348eeeae32929f3c1fa5109d1c4aa48987120cbfa64656e390ff3d45",
+          "scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py": "b7aa72f79cfd12f29f19b29f51ba9974024f9b26ab0271057cda1d0256b567ce",
+          "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py": "ee013ee9d87ca89cbda5fd6c7229d4d31cdb9c1eba027aeb7881f31f4d6a4fdc",
+          "scripts/frontier_scalar_3plus1_temporal_ratio.py": "dba67f913ce7daa6ddfd894860d9429fd6fa26e6a6abac9bc6312c30cbaf04e2"
+        },
+        "load_bearing_score": 13.678,
+        "runner_hash": "18e09d760dcfea6c4d2853322eefc2bf54e545870c9bf203081f6be2ac10b6b0",
+        "transitive_descendants": 818
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-4045db00061d4291a81685ec88d5b9ba-gauge_vacuum_plaquette_c-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The common-source identity establishes an exact derivative hierarchy, but it does not establish that closing the full position-dependent hierarchy is necessary or equivalent to direct scalar closure of P_L or beta_eff. The stated summed three-point onset also omits the one-plaquette baseline P_1plaq''(beta).",
+      "claim_scope": "The finite-surface common-source identity, its connected-cumulant hierarchy, and the asserted necessity of that hierarchy for explicit beta_eff closure.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-17T21:35:52.159626+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Explicit nonperturbative closure of beta_eff(beta) is equivalent to closing this exact connected plaquette hierarchy on the accepted finite Wilson surface.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after narrowing the necessity claim to shell-summed hierarchy projections and correcting the full summed three-point onset formula and runner.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the common-source identity proves the derivative hierarchy, but not that full hierarchy closure is necessary or equivalent to scalar beta_eff closure; additionally, the displayed summed C_3 onset omits the one-plaquette baseline P_1plaq''(beta). Why this blocks: direct closure of P_L or beta_eff would determine only shell-summed projections, and the runner's positivity checks neither exclude such routes nor validate the full C_3 formula. Repair target: replace the equivalence by a projection statement, restore the local baseline in the three-point expansion, and add a runner check of the complete transport identity. Claim boundary until fixed: the exact uniform-source hierarchy remains valid, while N1/N7 leave direct scalar or spectral closure untested, N2 has no independent wall decomposition, N3/N5 expose negative rhetoric without all-resolution tests, N4 supplies no matching prior witness, and N6/N8 do not exclude indexed alternatives."
     }
   ],
   "prose_corrections": [],

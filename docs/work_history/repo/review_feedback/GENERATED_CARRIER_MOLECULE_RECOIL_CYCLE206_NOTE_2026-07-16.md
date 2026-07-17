@@ -15,13 +15,18 @@ surface.
 
 ## Attribution boundary
 
-The two-fermion molecule is inherited from the Thirring quantum walk studied
-by Bisio, D'Ariano, Mosco, Perinotti, and Tosini:
+The two-fermion molecule is inherited from the Thirring quantum cellular
+automaton introduced and solved by Bisio, D'Ariano, Perinotti, and Tosini:
 
-<https://arxiv.org/abs/1804.08508>
+<https://doi.org/10.1103/PhysRevA.97.032132>
+
+Bisio, D'Ariano, Mosco, Perinotti, and Tosini also give a simplified
+two-particle derivation and simulations:
+
+<https://doi.org/10.3390/e20060435>
 
 The strict Dirac walk, its onsite two-particle phase, and the existence and
-solution of molecular bound states are prior work. Cycle 206 adds a
+solution of molecular bound states are prior work from those papers. Cycle 206 adds a
 distinguishable third carrier and a candidate onsite collision phase between
 that carrier and either molecule constituent. The three-body extension and
 its operational tournament are exploratory framework work; they are not

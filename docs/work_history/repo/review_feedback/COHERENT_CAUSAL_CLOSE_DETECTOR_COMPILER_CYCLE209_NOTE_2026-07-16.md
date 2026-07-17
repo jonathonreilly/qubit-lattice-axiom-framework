@@ -22,15 +22,20 @@ scripts/coherent_causal_close_detector_compiler_cycle209_2026_07_16.py
 ## Attribution boundary
 
 The interacting two-fermion walk and its molecular bound states are prior
-work of Bisio, D'Ariano, Mosco, Perinotti, and Tosini, *Solutions of a
-Two-Particle Interacting Quantum Walk*:
+work of Bisio, D'Ariano, Perinotti, and Tosini, “Thirring quantum cellular
+automaton”:
 
-<https://arxiv.org/abs/1804.08508>
+<https://doi.org/10.1103/PhysRevA.97.032132>
 
-That paper supplies the one-dimensional Thirring-QCA engine and solves its
-two-particle scattering and bound sectors.  It does not supply this third
+The simplified two-particle derivation and simulations are due to Bisio,
+D'Ariano, Mosco, Perinotti, and Tosini:
+
+<https://doi.org/10.3390/e20060435>
+
+Those papers supply the one-dimensional Thirring-QCA engine and solve its
+two-particle scattering and bound sectors. They do not supply this third
 distinguishable carrier, this relational outcome compiler, or the framework's
-record interpretation.  Cycle 209 is an extension relative to that paper.
+record interpretation. Cycle 209 is an extension relative to those papers.
 Broader literature novelty has not been established.
 
 ## Question

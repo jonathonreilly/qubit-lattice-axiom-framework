@@ -15,17 +15,22 @@ surface.
 
 ## Attribution boundary
 
-The bound two-fermion engine is prior work from Bisio, D'Ariano, Mosco,
-Perinotti, and Tosini, *Solutions of a Two-Particle Interacting Quantum Walk*:
+The bound two-fermion engine is prior work from Bisio, D'Ariano, Perinotti,
+and Tosini, “Thirring quantum cellular automaton”:
 
-<https://arxiv.org/abs/1804.08508>
+<https://doi.org/10.1103/PhysRevA.97.032132>
 
-That paper supplies and solves the two-particle Thirring automaton, including
+Its simplified two-particle solution and simulations are given by Bisio,
+D'Ariano, Mosco, Perinotti, and Tosini:
+
+<https://doi.org/10.3390/e20060435>
+
+Those papers supply and solve the two-particle Thirring automaton, including
 its scattering and molecular bound states. Cycle 207 does not claim those
 mechanisms, their spectrum, or their analytic solution as new. The
 distinguishable third carrier, its onsite coupling to both constituents, the
 fixed-total-momentum three-body reduction, and the operational late-record
-tournament are extensions relative to that paper. Broader literature novelty
+tournament are extensions relative to those papers. Broader literature novelty
 has not been established.
 
 ## Result up front

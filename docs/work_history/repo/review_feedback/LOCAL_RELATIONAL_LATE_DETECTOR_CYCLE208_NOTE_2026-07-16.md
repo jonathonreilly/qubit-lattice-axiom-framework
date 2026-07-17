@@ -16,13 +16,18 @@ surface.
 ## Attribution boundary
 
 The molecular two-fermion engine remains prior work of Bisio, D'Ariano,
-Mosco, Perinotti, and Tosini:
+Perinotti, and Tosini:
 
-<https://arxiv.org/abs/1804.08508>
+<https://doi.org/10.1103/PhysRevA.97.032132>
 
-The cited paper supplies and solves the two-particle Thirring walk. The third
+The simplified two-particle derivation and simulations are due to Bisio,
+D'Ariano, Mosco, Perinotti, and Tosini:
+
+<https://doi.org/10.3390/e20060435>
+
+The cited papers supply and solve the two-particle Thirring walk. The third
 carrier, fixed-total-momentum scattering extension, and this detector
-tournament are additions relative to that paper. No broader novelty claim is
+tournament are additions relative to those papers. No broader novelty claim is
 made.
 
 ## Result up front

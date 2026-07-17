@@ -17,16 +17,22 @@ surface.
 ## Attribution boundary
 
 The microscopic construction and the existence of its two-particle bound
-states are prior work. The primary source is Bisio, D'Ariano, Mosco,
-Perinotti, and Tosini, *Solutions of a Two-Particle Interacting Quantum Walk*:
+states are prior work. Bisio, D'Ariano, Perinotti, and Tosini introduce and
+analytically solve the one-dimensional fermionic automaton in “Thirring
+quantum cellular automaton,” *Physical Review A* 97, 032132 (2018):
 
-<https://arxiv.org/abs/1804.08508>
+<https://doi.org/10.1103/PhysRevA.97.032132>
 
-That paper studies a one-dimensional fermionic Thirring quantum walk: a
-strict Dirac walk is followed by an onsite number-preserving interaction
-phase, and the two-particle problem has scattering and molecular bound
-solutions. Cycle 205 claims no novelty for that automaton, its analytic
-solution, or the existence of the bound molecule.
+Bisio, D'Ariano, Mosco, Perinotti, and Tosini give a simplified derivation and
+simulations in “Solutions of a Two-Particle Interacting Quantum Walk,”
+*Entropy* 20, 435 (2018):
+
+<https://doi.org/10.3390/e20060435>
+
+Those papers supply the strict one-dimensional Dirac walk, the onsite
+number-preserving interaction phase, and the two-particle scattering and
+molecular bound solutions. Cycle 205 claims no novelty for that automaton,
+its analytic solution, or the existence of the bound molecule.
 
 Our narrower extension is an operational tournament. We independently build
 the finite two-particle update and ask whether one selected molecular branch

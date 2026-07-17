@@ -39,7 +39,9 @@ pairs. Labels must be unique, every weight must be an actual `Fraction`, and
 the tuple must be nonempty. Zero entries are allowed, but a zero total is not.
 Floats, integers masquerading as exact weights, duplicate labels, negative
 weights, empty carriers, and nonpositive totals are rejected rather than
-coerced.
+coerced. Labels and edge identifiers are compared by exact string equality:
+case folding and Unicode normalization are not implicit, so distinct strings
+remain distinct while an exact repeated string is a duplicate.
 
 For example,
 
@@ -59,8 +61,9 @@ P_(r,c) = w_(r,c)/W_r >= 0,          sum_{c in C} P_(r,c) = 1.
 ```
 
 Thus `P` is row-stochastic in the exact algebraic sense. Every row uses the
-same explicitly supplied column carrier; a missing or extra column is rejected.
-For the two-row example
+same explicitly supplied column-label set. Column order is representation only:
+the executable canonicalizes every row to the first row's order, while a
+missing or extra column is rejected. For the two-row example
 
 ```text
 A: (3, 1) -> (3/4, 1/4),
@@ -136,12 +139,16 @@ common-denominator integer counts and path products via separate numerator and
 denominator products.
 
 Hostile mode verifies rejection of empty and zero-total carriers, negative and
-inexact weights, duplicate labels and edge definitions, mismatched row
-carriers, missing and incidence-broken edges, noncomposable paths, wrong-total
-normalization, additive path weights, dropped repeated traversals, and an
-unsupported physical-selection request. Individually selectable intentional
-failure fixtures promote each hostile mutation to a claimed success; every
-individual fixture and their aggregate must exit nonzero.
+inexact weights, strict rejection rather than coercion of booleans and type
+subclasses, malformed entries, duplicate labels, rows, and edge definitions,
+and mismatched row carriers. It also checks order-independent common-carrier
+semantics, exact Unicode-identifier equality, an empty edge set with the empty
+path, zero-weight edges, missing and incidence-broken edges, noncomposable
+paths, wrong-total normalization, additive path weights, dropped repeated
+traversals, and an in-memory source mutation that asserts unsupported physical
+selection. Individually selectable intentional-failure fixtures promote each
+of the 17 named hostile mutations to a claimed success; every individual
+fixture and their aggregate must exit nonzero.
 
 Run:
 

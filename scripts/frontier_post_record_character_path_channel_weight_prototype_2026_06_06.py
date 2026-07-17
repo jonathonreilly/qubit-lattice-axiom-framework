@@ -112,6 +112,7 @@ def normalize_rows(rows: Rows) -> Rows:
         raise ValueError("row carrier must be a nonempty finite tuple")
     row_labels: set[str] = set()
     expected_columns: tuple[str, ...] | None = None
+    expected_column_set: frozenset[str] | None = None
     normalized: list[tuple[str, WeightPacket]] = []
     for item in rows:
         if type(item) is not tuple or len(item) != 2:
@@ -122,12 +123,21 @@ def normalize_rows(rows: Rows) -> Rows:
         if row_label in row_labels:
             raise ValueError(f"duplicate row label: {row_label}")
         row_labels.add(row_label)
-        columns = tuple(label for label, _ in packet)
+        normalized_packet = normalize_exact(packet)
+        columns = tuple(label for label, _ in normalized_packet)
+        column_set = frozenset(columns)
         if expected_columns is None:
             expected_columns = columns
-        elif columns != expected_columns:
-            raise ValueError("every row must use the same ordered column carrier")
-        normalized.append((row_label, normalize_exact(packet)))
+            expected_column_set = column_set
+        elif column_set != expected_column_set:
+            raise ValueError("every row must use the same column-label set")
+        by_column = dict(normalized_packet)
+        normalized.append(
+            (
+                row_label,
+                tuple((column, by_column[column]) for column in expected_columns),
+            )
+        )
     return tuple(normalized)
 
 
@@ -250,36 +260,49 @@ def expect_raises(
     return False
 
 
+REQUIRED_SOURCE_PHRASES = (
+    "**Claim type:** positive_theorem",
+    "**Dependencies:** none.",
+    "p_i = w_i/W",
+    "sum_{c in C} P_(r,c) = 1",
+    "A(P Q) = A(P) A(Q)",
+    "Repeated traversal is counted once per occurrence",
+    "Column order is representation only",
+    "compared by exact string equality",
+    "normalization cannot choose its own inputs",
+    "The theorem has no audit-census, ledger, queue, export, or row-count premise.",
+)
+
+FORBIDDEN_SOURCE_PATTERNS = (
+    r"\bRecord (?:derives|supplies|selects|fixes)\b",
+    r"\bthe normalized packet (?:is|selects) the physical\b",
+    r"\bBorn (?:law|rule) follows\b",
+    r"\ball \d+ character_path_channel_weight rows\b",
+    r"post_record_character_path_channel_weight_slice_2026_06_07\.json",
+    r"frontier_post_record_measure_weight_normalization_subdivision_2026_06_06\.py",
+    r"docs/audit/data/",
+    r"\baudit_status\s*:",
+    r"\beffective_status\s*:",
+)
+
+
+def source_contract_valid(text: str) -> bool:
+    flat = " ".join(text.split())
+    return all(phrase in flat for phrase in REQUIRED_SOURCE_PHRASES) and all(
+        re.search(pattern, flat, flags=re.IGNORECASE) is None
+        for pattern in FORBIDDEN_SOURCE_PATTERNS
+    )
+
+
 def source_scope_checks() -> None:
     section("Source theorem and semantic scope checks")
     text = NOTE.read_text(encoding="utf-8")
     flat = " ".join(text.split())
     report("source note exists", NOTE.is_file())
-    required = (
-        "**Claim type:** positive_theorem",
-        "**Dependencies:** none.",
-        "p_i = w_i/W",
-        "sum_{c in C} P_(r,c) = 1",
-        "A(P Q) = A(P) A(Q)",
-        "Repeated traversal is counted once per occurrence",
-        "normalization cannot choose its own inputs",
-        "The theorem has no audit-census, ledger, queue, export, or row-count premise.",
-    )
-    for phrase in required:
+    for phrase in REQUIRED_SOURCE_PHRASES:
         report(f"source contains theorem anchor: {phrase}", phrase in flat)
 
-    forbidden_patterns = (
-        r"\bRecord (?:derives|supplies|selects|fixes)\b",
-        r"\bthe normalized packet (?:is|selects) the physical\b",
-        r"\bBorn (?:law|rule) follows\b",
-        r"\ball \d+ character_path_channel_weight rows\b",
-        r"post_record_character_path_channel_weight_slice_2026_06_07\.json",
-        r"frontier_post_record_measure_weight_normalization_subdivision_2026_06_06\.py",
-        r"docs/audit/data/",
-        r"\baudit_status\s*:",
-        r"\beffective_status\s*:",
-    )
-    for pattern in forbidden_patterns:
+    for pattern in FORBIDDEN_SOURCE_PATTERNS:
         report(
             f"source excludes volatile or physical overclaim: {pattern}",
             re.search(pattern, flat, flags=re.IGNORECASE) is None,
@@ -338,6 +361,17 @@ def theorem_examples() -> None:
     report(
         "B row is exactly (1/2,1/2)",
         stochastic[1][1] == (("A", Fraction(1, 2)), ("B", Fraction(1, 2))),
+    )
+    permuted = normalize_rows(
+        (
+            ("A", (("left", Fraction(3)), ("right", Fraction(1)))),
+            ("B", (("right", Fraction(1)), ("left", Fraction(1)))),
+        )
+    )
+    report(
+        "common column carrier is independent of row tuple order",
+        permuted[1][1]
+        == (("left", Fraction(1, 2)), ("right", Fraction(1, 2))),
     )
 
     section("Supplied-edge path-product theorem")
@@ -495,18 +529,6 @@ def independent_checks() -> None:
     )
 
 
-def scope_authorizes(conclusion: str) -> bool:
-    capabilities = frozenset(
-        {
-            "exact_finite_normalization",
-            "exact_row_stochasticity",
-            "supplied_edge_path_product",
-            "path_concatenation_multiplicativity",
-        }
-    )
-    return conclusion in capabilities
-
-
 def hostile_mutation_acceptance(name: str) -> bool:
     """Return whether a false or malformed mutation incorrectly passes."""
     if name == "empty-carrier":
@@ -584,7 +606,10 @@ def hostile_mutation_acceptance(name: str) -> bool:
         mutated = edges["loop"].weight
         return mutated == actual
     if name == "physical-selection-inference":
-        return scope_authorizes("physical_measure_selected")
+        mutated = NOTE.read_text(encoding="utf-8") + (
+            "\nThe normalized packet is the physical measure selected.\n"
+        )
+        return source_contract_valid(mutated)
     raise KeyError(f"unknown hostile fixture: {name}")
 
 
@@ -614,6 +639,90 @@ def hostile_checks() -> None:
     for name in HOSTILE_FIXTURES:
         accepted = hostile_mutation_acceptance(name)
         report(f"hostile mutation rejected: {name}", not accepted)
+
+    class FractionSubclass(Fraction):
+        pass
+
+    class StringSubclass(str):
+        pass
+
+    strict_packet_mutations = (
+        ("boolean weight", (("a", True),)),
+        ("Fraction subclass weight", (("a", FractionSubclass(1, 2)),)),
+        ("string subclass label", ((StringSubclass("a"), Fraction(1)),)),
+        ("list entry", (["a", Fraction(1)],)),
+        ("one-field entry", (("a",),)),
+        ("three-field entry", (("a", Fraction(1), "extra"),)),
+    )
+    for label, malformed in strict_packet_mutations:
+        report(
+            f"strict packet domain rejects {label}",
+            expect_raises(
+                (TypeError, ValueError),
+                lambda malformed=malformed: normalize_exact(malformed),  # type: ignore[arg-type]
+            ),
+        )
+
+    duplicate_rows = (
+        ("row", (("a", Fraction(1)),)),
+        ("row", (("a", Fraction(2)),)),
+    )
+    report(
+        "duplicate row identifiers are rejected",
+        expect_raises(ValueError, lambda: normalize_rows(duplicate_rows)),
+    )
+    permuted_rows = (
+        ("r0", (("a", Fraction(1)), ("b", Fraction(2)))),
+        ("r1", (("b", Fraction(3)), ("a", Fraction(4)))),
+    )
+    report(
+        "a permuted row with the same column set is canonicalized",
+        normalize_rows(permuted_rows)[1][1]
+        == (("a", Fraction(4, 7)), ("b", Fraction(3, 7))),
+    )
+
+    unicode_packet = (("é", Fraction(1)), ("e\u0301", Fraction(1)))
+    report(
+        "distinct Unicode strings remain distinct identifiers",
+        normalize_exact(unicode_packet)
+        == (("é", Fraction(1, 2)), ("e\u0301", Fraction(1, 2))),
+    )
+    report(
+        "an exact repeated Unicode identifier is rejected",
+        expect_raises(
+            ValueError,
+            lambda: normalize_exact((("λ", Fraction(1)), ("λ", Fraction(2)))),
+        ),
+    )
+
+    empty_edges = compile_edges(())
+    report(
+        "empty path over an empty edge set has identity weight",
+        evaluate_path(PathWord("v", ()), empty_edges)
+        == PathValue("v", Fraction(1)),
+    )
+    zero_edges = compile_edges((Edge("zero", "s", "t", Fraction(0)),))
+    report(
+        "a zero-weight edge gives a zero path product",
+        evaluate_path(PathWord("s", ("zero",)), zero_edges)
+        == PathValue("t", Fraction(0)),
+    )
+    report(
+        "integer edge weights are rejected rather than coerced",
+        expect_raises(
+            TypeError,
+            lambda: compile_edges((Edge("e", "s", "t", 1),)),  # type: ignore[arg-type]
+        ),
+    )
+    report(
+        "Fraction-subclass edge weights are rejected rather than coerced",
+        expect_raises(
+            TypeError,
+            lambda: compile_edges(
+                (Edge("e", "s", "t", FractionSubclass(1, 2)),)
+            ),
+        ),
+    )
 
 
 def intentional_failure_checks(fixture: str) -> None:

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_character_path_channel_weight_prototype_2026_06_06.py
-runner_sha256: 2ccb6e34c273beac85cfd3b5aa1850525db8a2aeccd15060f0574bf3fb6aaa2b
+runner_sha256: 43c8f7031177385a50adc236d691082c5fd329c0c44a520426bd3a7b1a142edd
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -17,6 +17,8 @@ PASS source contains theorem anchor: p_i = w_i/W
 PASS source contains theorem anchor: sum_{c in C} P_(r,c) = 1
 PASS source contains theorem anchor: A(P Q) = A(P) A(Q)
 PASS source contains theorem anchor: Repeated traversal is counted once per occurrence
+PASS source contains theorem anchor: Column order is representation only
+PASS source contains theorem anchor: compared by exact string equality
 PASS source contains theorem anchor: normalization cannot choose its own inputs
 PASS source contains theorem anchor: The theorem has no audit-census, ledger, queue, export, or row-count premise.
 PASS source excludes volatile or physical overclaim: \bRecord (?:derives|supplies|selects|fixes)\b
@@ -45,6 +47,7 @@ PASS three supplied rows normalize :: (('A', (('A', Fraction(3, 4)), ('B', Fract
 PASS every row sums exactly to one
 PASS A row is exactly (3/4,1/4)
 PASS B row is exactly (1/2,1/2)
+PASS common column carrier is independent of row tuple order
 
 ------------------------------------------------------------------------------
 Supplied-edge path-product theorem
@@ -57,7 +60,7 @@ PASS empty path is the exact identity
 PASS repeated loop traversal counts twice
 PASS 6:1 path carrier normalizes exactly
 
-SUMMARY: MODE=normal PASS=34 FAIL=0
+SUMMARY: MODE=normal PASS=37 FAIL=0
 THEOREM_SCOPE=EXACT_FINITE_RATIONAL_NORMALIZATION_ROW_STOCHASTICITY_AND_SUPPLIED_EDGE_PATH_PRODUCTS
 
 ----- stderr -----

@@ -23,8 +23,9 @@ remains, under the live Qualification of
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md), a named
 conditional or open dependency.
 
-This note moves the same mechanism, under a declared reading stated below,
-from the initial-state slot to the C3 corner probe-coupling triple `(a,b,c)`
+This note moves the same mechanism, under the declared extension reading
+R4c stated below, from the initial-state slot to the C3 corner
+probe-coupling triple `(a,b,c)`
 of `W(a,b,c) = a*I + b*C + c*C^2`, and proves the exact spectral-pairing
 structure on the mechanism's fixed locus. An earlier draft of this step was
 rejected for grouping `lam1*lam2` into `|lam1|^2` without exhibiting a
@@ -135,7 +136,7 @@ Under the consumed reading R2c and the declared extension reading R4c:
    sign. The charged-lepton registered point `delta = 2/9` is not K-fixed,
    so it is not a derivable singleton under this reading — consistent with
    the standing position that `delta` is registered, not derived. The
-   spectrum obeys the permutation gate
+   spectrum obeys the permutation identity
    `lam_k(-delta) = lam_{(3-k) mod 3}(delta)` with the `k = 0` channel fixed
    (runner V4).
 3. `det3 = a^3 + b^3 + c^3 - 3abc` is delta-even on the section, hence a
@@ -151,14 +152,33 @@ On entrywise-real triples, with `lam_k = a + b*w^k + c*w^(2k)`:
 1. `lam_0 = a + b + c` is real, and its channel `P_1` is K-fixed;
 2. `lam_2 = conj(lam_1)`, and the channels `{P_w, P_conj(w)}` form one
    K-2-orbit;
-3. therefore `det3 = lam_0 * |lam_1|^2` exactly.
+3. therefore `det3 = lam_0 * |lam_1|^2` exactly, with a real singlet factor.
 
-The modulus-square grouping arises on the doublet factor alone, and it is
+The channel-eigenvalue association is computed, not assumed:
+`W * P_(w^k) = lam_k * P_(w^k)` for `k = 0, 1, 2` (runner V2). The
+modulus-square grouping arises on the doublet factor alone, and it is
 licensed by the fixed-point-versus-2-orbit channel structure rather than
-imposed: at the negative control `(a,b,c) = (1,i,0)` the pairing
-`lam_2 = conj(lam_1)` fails and `det3` is not real, so no such grouping is
-available off the entrywise-real locus (runner V3). This answers the
-licensing objection that rejected the earlier grouping step.
+imposed. Where each ingredient lives is computed exactly. The pairing gap
+has the closed form
+
+```text
+lam_2 - conj(lam_1) = 2*i*(Im a + Im b * w^2 + Im c * w)
+                    = sqrt(3)*(Im b - Im c) + i*(2*Im a - Im b - Im c),
+```
+
+vanishing exactly on the equal-imaginary-parts locus `Im a = Im b = Im c`
+(runner V3). On that pairing locus `det3 = lam_0 * |lam_1|^2` still holds,
+but the singlet factor `lam_0` has imaginary part `3 * Im a`: requiring the
+K-fixed channel value to be real cuts the pairing locus down exactly to the
+entrywise-real triples (runner V3). The witness `(a,b,c) = (i, 1+i, i)`
+carries the pairing off the entrywise-real locus with a non-real grouped
+value `det3 = lam_0 * |lam_1|^2 = 1 + 3i` (runner V3); at the negative
+control `(a,b,c) = (1,i,0)` the pairing itself fails, with exact values
+`lam_2 - conj(lam_1) = sqrt(3) - i` and `det3 = 1 - i` (runner V3). The
+sector-selective reading — a real K-fixed singlet factor times a K-2-orbit
+modulus factor — therefore holds on, and is cut out by, the entrywise-real
+triples through computed residuals rather than stipulation. This answers
+the licensing objection that rejected the earlier grouping step.
 
 ### T4 — r-neutrality positive control and the underived graining binary
 
@@ -241,13 +261,18 @@ authority here.
 
 1. **Off-locus pairing failure:** at `(a,b,c) = (1,i,0)`,
    `lam_2 - conj(lam_1) = sqrt(3) - i` is nonzero and `det3 = 1 - i` is not
-   real; the T3 grouping is unavailable (runner V3).
+   real; the T3 pairing fails at that point, and both exact values are
+   computed (runner V3).
 2. **Involution distinctness witness:** at `(a,b,c) = (0,1,2)`, `K` fixes
    `W(0,1,2)` while the adjoint gives `W(0,2,1)` (runner V1).
 3. **Locus separation witnesses:** `(1,i,-i)` lies on the Hermitian section
    but not on the entrywise-real locus; `(1,2,3)` is entrywise-real but off
    the Hermitian section; the intersection is exactly real `b = c`
    (runner V5).
+4. **Pairing-without-reality witness:** `(a,b,c) = (i, 1+i, i)` lies on the
+   equal-imaginary-parts pairing locus off the entrywise-real triples, and
+   its grouped determinant `det3 = 1 + 3i` is not real: the pairing alone
+   does not supply the real singlet factor (runner V3).
 
 ## No-Go Discipline Gate (narrow subclaim only)
 
@@ -267,8 +292,8 @@ at real `b = c` (runner V1, V5).
 | Route toward entailing the section from the mechanism | Marker | Result and check |
 |---|---|---|
 | fixed-locus route: take Fix of the presentation swap | ATTEMPTED | fixed locus is the entrywise-real triples, not the section (V1, V5) |
-| spectral-pairing route: derive the section from `lam_2 = conj(lam_1)` | ATTEMPTED | the pairing already holds on the entrywise-real locus without `c = conj(b)` (V3) |
-| within-section route: restrict the swap to the section first | ATTEMPTED | the restricted action is `delta -> -delta` with fixed set `delta = 0` inside the section; it presupposes the section rather than producing it (V4) |
+| spectral-pairing route: derive the section from `lam_2 = conj(lam_1)` | ATTEMPTED | the pairing holds exactly on the equal-imaginary-parts locus `Im a = Im b = Im c`, which contains the entrywise-real triples and does not entail `c = conj(b)` (V3) |
+| within-section route: restrict the swap to the section first | ATTEMPTED | the restricted action is `delta -> -delta` with fixed set `delta = 0 mod pi` (the real `b = c` triples) inside the section; it presupposes the section rather than producing it (V4) |
 | adjoint-conflation route: identify `K` with the adjoint | ATTEMPTED | distinct involutions; generic disagreement witness `(0,1,2)`; agreement exactly at `b = c` (V1) |
 | determinant route: derive the section from delta-evenness of `det3` | ATTEMPTED | evenness is a class-function statement on unordered pairs and holds without selecting any locus (V4) |
 
@@ -406,8 +431,8 @@ unaudited row.
 ## Honest auditor read
 
 The unconditional content is small and exact: T1 and T3 are finite linear
-algebra on a supplied 3-by-3 surface, checked symbolically, with an explicit
-negative control. T2 is the note's reach, and it is conditional twice over:
+algebra on a supplied 3-by-3 surface, checked symbolically, with explicit
+negative-control and pairing-locus witnesses. T2 is the note's reach, and it is conditional twice over:
 it consumes R2 from a mechanism note that is unaudited at writing, and it
 extends that reading to the coupling slot by R4c, a declared reading the
 axiom memo does not name. An auditor should grade T2 no higher than the
@@ -443,7 +468,7 @@ python3 scripts/kcpt_coupling_triple_two_presentation_derivable_class_spectral_p
 ```
 
 ```text
-TOTAL: PASS=134 FAIL=0
+TOTAL: PASS=145 FAIL=0
 ```
 
 **No check passes by literal stipulation.**

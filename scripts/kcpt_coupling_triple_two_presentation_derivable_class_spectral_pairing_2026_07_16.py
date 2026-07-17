@@ -5,12 +5,16 @@ Paired note:
 docs/KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md
 
 Blocks:
-  V1 corner carrier and the two pinned involutions (entrywise K vs adjoint)
-  V2 determinant factorization and character-projector swap structure
-  V3 real-triple spectral pairing, sector-selective modulus grouping,
-     negative control, r-neutral positive control
+  V1 corner carrier and the two pinned involutions (entrywise K vs adjoint),
+     with residual identities pinning each fixed locus exactly
+  V2 determinant factorization, character-projector swap structure, and the
+     channel-eigenvalue association
+  V3 real-triple spectral pairing, exact pairing-gap closed form and
+     equal-imaginary-parts locus, sector-selective modulus grouping,
+     negative control with exact values, r-neutral positive control
   V4 Hermitian section: Brannen spectrum, delta -> -delta action,
-     permutation gate, delta-evenness, registered-point non-fixedness
+     permutation identity, delta-evenness, fixed set delta = 0 mod pi,
+     registered-point non-fixedness
   V5 locus separation witnesses, intersection arithmetic, Wirtinger and
      Laplacian controls, holomorphic-surface harmonicity
   V6 section-tie endpoint arithmetic (both conditional laws, neither derived)
@@ -157,6 +161,36 @@ check(
 )
 Wbc = Wf(a, b, b)
 check("V1.7", "involutions agree exactly at b = c", mat_zero(Wbc.conjugate() - Wbc.H))
+resK = W.conjugate() - W
+check(
+    "V1.8",
+    "K-residual identity: conj(W) - W = -2i(Im a*I + Im b*C + Im c*C^2)",
+    mat_zero(resK + 2 * sp.I * (ai_ * I3 + bi_ * C + ci_ * C2)),
+)
+check(
+    "V1.9",
+    "K-residual entries separate: (0,0) = -2i Im a, (0,1) = -2i Im b, "
+    "(0,2) = -2i Im c; vanishing pins entrywise-real exactly",
+    is_zero(resK[0, 0] + 2 * sp.I * ai_)
+    and is_zero(resK[0, 1] + 2 * sp.I * bi_)
+    and is_zero(resK[0, 2] + 2 * sp.I * ci_),
+)
+resH = W.H - W
+check(
+    "V1.10",
+    "adjoint-residual entries: (0,0) = -2i Im a, (0,1) = conj(c) - b, "
+    "(0,2) = conj(b) - c; vanishing pins a real and c = conj(b) exactly",
+    is_zero(resH[0, 0] + 2 * sp.I * ai_)
+    and is_zero(resH[0, 1] - (sp.conjugate(c) - b))
+    and is_zero(resH[0, 2] - (sp.conjugate(b) - c)),
+)
+resD = W.conjugate() - W.H
+check(
+    "V1.11",
+    "involution-difference residual: conj(W) - W^dagger = "
+    "(conj(b) - conj(c))*(C - C^2); vanishing pins b = c exactly",
+    mat_zero(resD - (sp.conjugate(b) - sp.conjugate(c)) * (C - C2)),
+)
 
 # ------------------------------------------- V2: determinant and projectors
 w = sp.Rational(-1, 2) + sp.sqrt(3) / 2 * sp.I
@@ -200,6 +234,15 @@ orth = all(
     for y in P
 )
 check("V2.7", "projector idempotence and mutual orthogonality", orth)
+chis = [sp.Integer(1), w, wc]
+assoc = all(
+    mat_zero(sp.expand(W * P[chis[k]] - lams[k] * P[chis[k]])) for k in range(3)
+)
+check(
+    "V2.8",
+    "channel-eigenvalue association: W*P_(w^k) = lam_k*P_(w^k) for k = 0, 1, 2",
+    assoc,
+)
 
 # --------------------------------------- V3: real-triple spectral pairing
 x_, y_, z_ = sp.symbols("x y z", real=True)
@@ -224,14 +267,62 @@ det_pt = sp.expand_complex(1 + sp.I ** 3)
 pair_gap = sp.simplify(sp.expand_complex(lam2_pt - sp.conjugate(lam1_pt)))
 check(
     "V3.4",
-    "negative control (1,i,0): pairing fails and det3 is not real",
-    pair_gap != 0 and sp.im(det_pt) != 0,
+    "negative control (1,i,0): exact values computed, pairing fails and "
+    "det3 is not real",
+    is_zero(pair_gap - (sp.sqrt(3) - sp.I))
+    and is_zero(det_pt - (1 - sp.I))
+    and sp.im(det_pt) != 0,
     detail="lam2-conj(lam1)=sqrt(3)-i, det3=1-i",
 )
 check(
     "V3.5",
     "|det3|^2 = lam0^2*|lam1|^4 on entrywise-real triples (r-neutral)",
     is_zero(sp.expand(det3R ** 2) - sp.expand(lamsR[0] ** 2 * mod1sq ** 2)),
+)
+gap_full = sp.expand_complex(lams[2] - sp.conjugate(lams[1]))
+gap_w_form = sp.expand_complex(2 * sp.I * (ai_ + bi_ * w ** 2 + ci_ * w))
+gap_closed = sp.sqrt(3) * (bi_ - ci_) + sp.I * (2 * ai_ - bi_ - ci_)
+check(
+    "V3.6",
+    "pairing-gap closed form: lam2 - conj(lam1) = 2i(Im a + Im b*w^2 + Im c*w) "
+    "= sqrt(3)(Im b - Im c) + i(2 Im a - Im b - Im c)",
+    is_zero(gap_full - gap_w_form) and is_zero(gap_full - gap_closed),
+)
+check(
+    "V3.7",
+    "gap real/imag parts separate: Re = sqrt(3)(Im b - Im c), "
+    "Im = 2 Im a - Im b - Im c; vanishing pins Im a = Im b = Im c exactly",
+    is_zero(sp.re(gap_full) - sp.sqrt(3) * (bi_ - ci_))
+    and is_zero(sp.im(gap_full) - (2 * ai_ - bi_ - ci_)),
+)
+eq_locus = {bi_: ai_, ci_: ai_}
+check(
+    "V3.8",
+    "on the equal-imaginary-parts locus the pairing holds and "
+    "det3 = lam0*|lam1|^2",
+    is_zero(gap_full.subs(eq_locus))
+    and is_zero(
+        (W.det() - lams[0] * lams[1] * sp.conjugate(lams[1])).subs(eq_locus)
+    ),
+)
+check(
+    "V3.9",
+    "Im lam0 = Im a + Im b + Im c = 3*Im a on the pairing locus: singlet "
+    "reality cuts the pairing locus exactly to the entrywise-real triples",
+    is_zero(sp.im(lams[0]) - (ai_ + bi_ + ci_))
+    and is_zero(sp.im(lams[0]).subs(eq_locus) - 3 * ai_),
+)
+wa_, wb_, wc2_ = sp.I, 1 + sp.I, sp.I
+wlam = [sp.expand_complex(wa_ + wb_ * w ** k + wc2_ * w ** (2 * k)) for k in range(3)]
+wdet = sp.expand_complex(wa_ ** 3 + wb_ ** 3 + wc2_ ** 3 - 3 * wa_ * wb_ * wc2_)
+check(
+    "V3.10",
+    "witness (i,1+i,i): pairing holds off the entrywise-real locus with "
+    "non-real grouped det3 = 1+3i",
+    is_zero(wlam[2] - sp.conjugate(wlam[1]))
+    and is_zero(wdet - (1 + 3 * sp.I))
+    and sp.im(wlam[0]) != 0,
+    detail="lam0=1+3i, det3=1+3i",
 )
 
 # --------------------------------- V4: Hermitian section and delta action
@@ -264,12 +355,24 @@ check(
     is_zero(detH.subs(d_, -d_) - detH),
 )
 perm = all(is_zero(lamsH[k].subs(d_, -d_) - lamsH[(3 - k) % 3]) for k in range(3))
-check("V4.9", "permutation gate lam_k(-delta) = lam_{(3-k) mod 3}(delta)", perm)
+check("V4.9", "permutation identity lam_k(-delta) = lam_{(3-k) mod 3}(delta)", perm)
 d0 = sp.Rational(2, 9)
+WH_p = WH.subs(d_, d0)
+WH_m = WH.subs(d_, -d0)
 check(
     "V4.10",
-    "registered point delta=2/9 is not K-fixed; unordered pair is K-stable",
-    (-d0 != d0) and ({d0, -d0} == {-d0, d0}),
+    "registered point delta=2/9: K maps W(2/9) to W(-2/9), a different "
+    "matrix; the point is not K-fixed and the unordered pair {2/9, -2/9} "
+    "is the K-orbit",
+    mat_zero(WH_p.conjugate() - WH_m) and not mat_zero(WH_p - WH_m),
+)
+check(
+    "V4.11",
+    "section fixed set is delta = 0 mod pi: W is K-fixed at delta in "
+    "{0, pi}, not at the registered point",
+    mat_zero(WH.subs(d_, 0).conjugate() - WH.subs(d_, 0))
+    and mat_zero(WH.subs(d_, sp.pi).conjugate() - WH.subs(d_, sp.pi))
+    and not mat_zero(WH_p.conjugate() - WH_p),
 )
 
 # ------------------------- V5: locus separation, Wirtinger, harmonicity
@@ -291,7 +394,7 @@ bS = br_ + sp.I * bi_
 gap = sp.expand_complex(sp.conjugate(bS) - bS)
 check(
     "V5.3",
-    "intersection (c = conj(b) and entrywise-real) forces real b = c",
+    "intersection (c = conj(b) and entrywise-real) yields real b = c",
     is_zero(gap.subs(bi_, 0)) and sp.simplify(gap.subs(bi_, 1)) != 0,
 )
 ars, bs, bbs, cs = sp.symbols("ars bs bbs cs")

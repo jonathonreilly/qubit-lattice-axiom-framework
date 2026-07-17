@@ -162,12 +162,26 @@ The runner checks:
 
 ## 7. Methodology and Dependencies
 
-This note is primarily a textbook-methodology packet for the continuum free Dirac
-representation. The runner mirrors conventions used by the existing free Dirac
-mode-algebra and free staggered covariance notes, but those rows are not promoted
-by this note.
+The candidate one-hop source authority for the continuum carrier and finite
+given-CAR relabelling used by this packet is:
 
-Textbook methodology used as non-graph context: Wigner induced representations,
-Dirac spinor calculus, the Poincare Lie algebra, the Lorentz-invariant mass-shell
-measure, CAR Fock relabelling of the negative-energy branch, and standard domain
-theorems for free-field generators.
+- [FREE_STAGGERED_POLE_RESIDUE_DIRAC_CARRIER_CAR_RELABELING_BOUNDED_THEOREM_NOTE_2026-07-17.md](FREE_STAGGERED_POLE_RESIDUE_DIRAC_CARRIER_CAR_RELABELING_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+  — derives the positive mass shell, `d^3p/(2E)` density, Dirac spectral
+  fibers, and four spectator taste copies from the finite-spacing retained
+  free-staggered pole and residue, then constructs the finite Jordan-Wigner CAR
+  carrier and exact negative-branch hole relabelling. It does not select the
+  free-staggered action, a physical single taste, CAR statistics, or an
+  OS/Wightman reconstruction. This source edit requests independent re-audit;
+  it does not set the authority's or this row's audit status.
+
+The present runner remains the explicit continuum algebra check on each of the
+four equivalent spin blocks supplied by that authority. Its Poincare/Wigner
+and bispinor calculations are methodology on the pole-derived carrier, not a
+separate derivation from the four axioms.
+
+Non-graph mathematical infrastructure is limited to finite-dimensional
+Lie/Clifford calculus, the induced-representation construction on an already
+supplied carrier, and standard domain theorems that remain excluded from the
+claim. The mass shell, invariant density, spin/taste fibers, and finite CAR
+negative-branch relabelling are no longer free context inputs: they are the
+specific outputs requested from the candidate one-hop authority above.

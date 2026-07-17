@@ -8,22 +8,23 @@ unit split 2026-06-17; see §0)
 **Type:** bounded_theorem
 **Claim scope:** **Axis-conditional single-clock codimension-1 unitary
 evolution.** Given the declared evolution-axis premise (B-AXIS) below
-and the supplied transfer data of the retained_bounded
+and the supplied transfer data of the cited
 reflection-positivity and spectrum-condition rows — the positive
 Hermitian two-step blocked transfer `T̂²` with blocked time-step
 `2 a_τ` on the staggered fixed-background surface — the framework's
 lattice dynamics is a single-clock codimension-1 unitary evolution:
 (S1′) the generator `H := -(1/(2a_τ)) log(T̂²/M_T)` is the **unique**
-self-adjoint generator (retained finite-dim Stone uniqueness,
-transfer-relative and τ-relative) of the unique strongly continuous
+self-adjoint generator (finite-dim Stone uniqueness per the cited
+narrow row, transfer-relative and τ-relative) of the unique strongly
+continuous
 one-parameter unitary group `U(t) = exp(-itH)` on the finite block
 Hilbert space; (S2′) each lattice time slice `Σ_t = {t} × Z^3` is a
 codimension-1 Cauchy surface: the equal-time local algebra is the
 mutually commuting tensor product of per-site one-qubit `M_2(C)` Pauli
-factors selected from the retained complexification split
+factors selected from the cited complexification split
 `Cl(3,0) ⊗ C ≅ M_2(C) ⊕ M_2(C)`, with the physical carrier one
 summand, and slice data propagates with the
-finite quasilocal Lieb-Robinson envelope of the retained_bounded
+finite quasilocal Lieb-Robinson envelope of the cited
 free-bilinear exact-log bridge on the free `U = 1` bilinear sector; no
 finite-range or interacting/fixed-background exact-log locality is
 claimed outside that sector; (S3′) **the axis
@@ -36,10 +37,10 @@ single out the temporal direction, and the prior revision's S3 claim
 hence no second clock") is **withdrawn** as false-as-written. The
 "exactly one clock" conclusion holds conditional on (B-AXIS) — one
 declared axis/transfer construction (N4), one supplied `τ` (N2), and
-no independent commuting clock factor (N5), per the retained
+no independent commuting clock factor (N5), per the
 single-clock uniqueness scope boundary. The continuum-limit
 identification with a Wightman one-parameter group remains bounded by
-the emergent-Lorentz program's `retained_bounded` free-sector scope.
+the emergent-Lorentz program's free-sector scope.
 **Status authority:** independent audit lane only. This source note
 does not set or predict an audit outcome; audit verdict and effective
 status are set only by the independent audit lane.
@@ -47,7 +48,8 @@ status are set only by the independent audit lane.
 science-fix lane 2026-06-11 (re-scope)
 **Runner:** [`scripts/axiom_first_single_clock_codimension1_evolution_check.py`](../scripts/axiom_first_single_clock_codimension1_evolution_check.py)
 (`TOTAL: PASS=47 FAIL=0`, deterministic, runtime well under one minute)
-**Authority role:** source-note proposal. If retained, this row
+**Authority role:** source-note proposal. Subject to audit-lane
+ratification, this row
 supplies the *axis-conditional* single-clock codimension-1 clauses
 (S1′)+(S2′) cited by `ANOMALY_FORCES_TIME_THEOREM.md` (its SC premise
 row), with the axis-selection content explicitly declared as (B-AXIS)
@@ -215,7 +217,7 @@ codimension-1 Cauchy slice structure** — i.e. `d_t ≤ 1` holds *given*
 that the framework supplies one evolution axis with one transfer
 construction and one time step, and admits no independent commuting
 clock factor. The free `U = 1` bilinear exact-log sector additionally
-has finite quasilocal propagation by the retained_bounded free-bilinear
+has finite quasilocal propagation by the cited free-bilinear
 bridge; propagation beyond that sector is not supplied here. The axis
 premise is anomaly-free (it references no anomaly trace, no chirality
 content), so the consumer's
@@ -243,7 +245,7 @@ local algebra per site; Admissibility and Record are not load-bearing here).
   used for slices `Σ_t` and for the Lieb-Robinson distance.
 - **Euclidean block (supplied surface, not an axiom).** The staggered
   Dirac + Wilson surface `Λ = (Z/L_τ Z) × (Z/L_s Z)^3` enters only
-  through the retained_bounded RP/SC supplier rows; its status as a
+  through the cited RP/SC supplier rows; its status as a
   gate (not an axiom) is inherited from those rows. No A3/A4 axiom
   status is asserted (the 2026-05-05 audit flagged that carrier as
   superseded; this revision complies).
@@ -273,7 +275,7 @@ No fitted parameters. No observed values used as proof inputs.
   [`SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md`](SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md):
   separates (B-AXIS.1)'s two meanings. The internal blocked-transfer
   denominator for the supplied `T_hat^2` object is fixed by the
-  retained-bounded two-step normalization bridge to `2a_tau`; the
+  cited two-step normalization bridge to `2a_tau`; the
   absolute physical clock unit or time metric represented by `a_tau`
   is not derived from the current framework axioms or Record-count
   layer. This source boundary does not close (B-AXIS.2) or (B-AXIS.3)
@@ -339,7 +341,7 @@ No fitted parameters. No observed values used as proof inputs.
 
 The older declared finite-range generator premise `(B-RANGE)` is no
 longer a current premise of this theorem. It was replaced by the
-retained_bounded R-FBQL supplier on the narrower free bilinear exact-log
+R-FBQL supplier on the narrower free bilinear exact-log
 surface; outside that surface, propagation remains open rather than
 declared.
 
@@ -360,7 +362,7 @@ still-live axis-selection premise:
 
 - **B-RANGE is not a current blocker.** The current claim no longer
   asks the auditor to grant finite range for a generic log-transfer
-  generator. S2'(c) is sourced only by the retained_bounded free
+  generator. S2'(c) is sourced only by the free
   bilinear exact-log/quasilocal bridge (R-FBQL) on its own `U = 1`,
   massive-sector surface. Interacting or fixed-background exact-log
   propagation remains open, but it is not part of this row's current
@@ -368,7 +370,7 @@ still-live axis-selection premise:
 - **B-AXIS remains a real declared premise.** The framework has not
   derived the registration direction, the absolute physical clock
   unit/time metric, or the exclusion of independent commuting transfer
-  factors from the current retained axiom surface. The internal
+  factors from the current axiom surface. The internal
   two-step denominator for `T_hat^2` is separately supported by
   (S-N2-SPLIT); this does not make a physical clock/rate unit follow
   from Record or from the transfer spectrum alone. The follow-up source note
@@ -473,7 +475,7 @@ other under `W`). The framework direction is the same: the approved
 premise sets `c_t = c_s`, which makes the surface *more*
 exchange-symmetric, not less. Therefore the single-clock conclusion
 cannot be derived from RP-admissibility of the action; it holds
-conditional on (B-AXIS), exactly as the retained (G-SCOPE) boundary
+conditional on (B-AXIS), exactly as the (G-SCOPE) boundary
 requires. A two-clock comparator exists mathematically (two commuting
 tensor-factor transfers with a 2-dimensional generator span; runner
 block [C-2CLK]) and is excluded only by (B-AXIS.3) — the premise
@@ -501,7 +503,7 @@ is fixed by (R-CL3) on the one-qubit carrier. (b) is arithmetic.
 `U = 1` bilinear exact-log sector, R-FBQL has already proved the
 finite weighted overlap `W_mu < infinity` and the weighted-path
 Lieb-Robinson envelope with speed `v_mu = 4 W_mu/mu`. This theorem
-imports that retained_bounded propagation clause only on its stated
+imports that propagation clause only on its stated
 sector. The old finite-range step remains false in general: the runner
 keeps a boundary witness showing that a strictly local positive
 transfer can have a non-range-1 logarithm, so the current statement
@@ -531,22 +533,22 @@ conclusion is withdrawn. What survives is: per declared axis and
 supplied `(T̂², 2a_τ)`, the clock is unique (Step 1); selecting the
 axis, the `τ`, and excluding commuting factor clocks is (B-AXIS). ∎
 
-## Consistency with retained no-gos (declared, checked)
+## Consistency with governing no-gos (declared, checked)
 
 - **`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`
-  (retained_no_go).** This revision asserts nothing that row denies:
+  (no_go).** This revision asserts nothing that row denies:
   uniqueness is stated transfer-relative and τ-relative; N2/N4/N5
   appear verbatim as (B-AXIS.1–3) declared premises. The prior
   revision's S3 violated its N4/N5 discipline and is withdrawn.
 - **`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`
-  (retained_no_go).** No SO(4)/continuum-isotropy wording is claimed
+  (no_go).** No SO(4)/continuum-isotropy wording is claimed
   from spatial cubic checks; the continuum corollary stays bounded by
   the emergent-Lorentz row. Where that row notes `c_t = c_s` is an
   extra premise now supplied by the kinetic-isotropy primitive, this
   note only *uses* the direction of that premise (exchange symmetry),
   never its converse.
 - **`QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`
-  (retained_no_go).** Nothing here derives a physical boost action
+  (no_go).** Nothing here derives a physical boost action
   from the local algebra: (S1′) concerns the single time-translation
   group only; boosts/Lorentz enter only through the bounded continuum
   corollary, which carries that program's own bounded status.
@@ -557,7 +559,7 @@ The identification of `U(t)` with the Wightman one-parameter group of
 a relativistic continuum QFT is **not** part of (S1′)–(S3′); it is
 bounded by the emergent-Lorentz program
 ([`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
-retained_bounded free-sector structural dispersion scope only). The
+bounded free-sector structural dispersion scope only). The
 ultrahyperbolic well-posedness obstruction for `d_t > 1`
 (Craig-Weinstein 2009; Tegmark 1997) remains an external
 classical-PDE result consumed, if at all, by the downstream consumer,
@@ -581,7 +583,7 @@ For `ANOMALY_FORCES_TIME_THEOREM.md` (premise row SC):
   any unconditional "no second clock" wording. The consumer's SC row
   text predates this re-scope and needs a follow-up edit.
 
-## Relation to the retained Stone narrow row
+## Relation to the Stone narrow row
 
 `SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`
 is consumed, not duplicated: the old inline Steps 1–2 re-proved its
@@ -594,15 +596,15 @@ in that row.
 
 ## Honest status
 
-**Bounded theorem.** (S1′) closes from retained/retained_bounded
+**Bounded theorem.** (S1′) closes from its cited
 one-hop inputs given the declared premise; (S2′a,b) closes at the
-retained_bounded level of its suppliers and (S2′c) closes only on the
-free `U = 1` bilinear exact-log sector by the retained_bounded R-FBQL
+bounded level of its suppliers and (S2′c) closes only on the
+free `U = 1` bilinear exact-log sector by the R-FBQL
 supplier; (S3′) is a computed exact certificate plus a declared
 premise. Not positive_theorem: the transfer supply is bounded
 (2-step, staggered-only, fixed background), spatial clustering is
 outside the claim, interacting/fixed-background exact-log propagation
-is not supplied, and the axis selection is a premise by the retained
+is not supplied, and the axis selection is a premise by the
 (G-SCOPE) no-go.
 
 The runner computes the load-bearing content: supply-hypothesis
@@ -616,14 +618,14 @@ two-clock tensor-factor comparator (2-dimensional generator span,
 excluded only by B-AXIS.3); and a finite-range boundary block — a
 strictly local positive transfer whose log-generator has a computed
 nonzero end-to-end Pauli component, with the single-factor contrast
-where the log returns the local generator exactly. The retained
+where the log returns the local generator exactly. The
 free-bilinear quasilocal LR supplier has its own companion runner.
 
-**Honest claim-status summary.** This is a bounded theorem on retained and
-retained-bounded one-hop inputs plus the declared B-AXIS premise. Its scope is
+**Honest claim-status summary.** This is a bounded theorem on its cited
+one-hop inputs plus the declared B-AXIS premise. Its scope is
 axis-conditional single-clock codimension-1 unitary evolution: with the
 source-supported internal block denominator `2a_tau` for the
-retained-bounded RP/SC two-step transfer supply `T_hat^2`, a still-supplied
+RP/SC two-step transfer supply `T_hat^2`, a still-supplied
 absolute physical clock unit/time metric, one declared evolution axis carrying
 that transfer construction, and no independent commuting transfer factor
 declared as a second clock, the finite-dim Stone row (currently unaudited per ledger) gives the unique
@@ -633,7 +635,7 @@ one-parameter unitary group `U(t) = exp(-itH)`. Each lattice slice `Sigma_t` is
 a codimension-1 Cauchy surface with mutually commuting per-site `M_2(C)`
 tensor-product equal-time algebra.
 
-On the free `U = 1` bilinear exact-log sector only, the retained-bounded
+On the free `U = 1` bilinear exact-log sector only, the
 free-bilinear quasilocal LR bridge supplies finite propagation with envelope
 `||[alpha_t(A_x),B_y]|| <= 2||A_x||||B_y|| exp(-mu d_1(x,y)+4 W_mu |t|)`,
 `0 < d mu < eta < arcsinh(m)`. No interacting/fixed-background exact-log
@@ -641,16 +643,16 @@ propagation claim is made. The prior S3 claim that the temporal direction is
 the unique RP-admissible reflection axis is withdrawn: the staggered hop
 operator is exactly invariant under the time-space exchange unitary
 `W = P_{tau<->1} diag((-1)^{x_tau x_1})`, so axis selection is a premise,
-consistent with the retained single-clock uniqueness scope boundary
+consistent with the single-clock uniqueness scope boundary
 (N2/N4/N5). Continuum Wightman identification stays bounded by the
 emergent-Lorentz program.
 
-Every load-bearing input is retained or retained-bounded on this source
+Every load-bearing input is a cited one-hop source note on this source
 surface except the surviving declared/open pieces of B-AXIS: absolute
 clock-rate/unit content for (B-AXIS.1b), axis/transfer-construction uniqueness
 (B-AXIS.2), and no-independent-factor exclusion (B-AXIS.3). The older B-RANGE
 finite-range generator premise is no longer part of the current claim;
-free-sector propagation is supplied by the retained-bounded R-FBQL bridge.
+free-sector propagation is supplied by the R-FBQL bridge.
 Because these B-AXIS pieces remain declared/open, this branch is not a
 retained-grade proposal. No new axiom, fitted parameter, observed value, or
 status promotion is made here; the independent audit lane remains the only
@@ -697,7 +699,7 @@ authority for effective status.
   [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
 - APBC/PBC axis-label bridge (conditional supplier; no status change):
   [`SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
-- continuum bound (retained_bounded):
+- continuum bound (currently unaudited per ledger):
   [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md)
 - downstream consumer (cross-reference only, not a dep):
   `ANOMALY_FORCES_TIME_THEOREM.md` (premise row SC)

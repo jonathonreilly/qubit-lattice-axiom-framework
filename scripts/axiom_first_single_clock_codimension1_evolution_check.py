@@ -51,7 +51,7 @@ Computes the load-bearing content of the axis-conditional theorem
               computed NONZERO end-to-end Pauli component (support
               diameter 2): strict finite-range-ness of a log-transfer
               generator is not automatic, so the current theorem must
-              cite the retained free-bilinear quasilocal bridge rather
+              cite the free-bilinear quasilocal bridge rather
               than keep the old B-RANGE premise;
               (iii) contrast — a single-factor local transfer logs
               back to its local generator exactly (the failure in (ii)
@@ -559,7 +559,7 @@ def block_C_range_boundary(H: np.ndarray, L: int) -> None:
 
     print("  BOUNDARY: strict finite-range-ness of a log-transfer generator is")
     print("  not automatic. The companion note therefore retires the old B-RANGE")
-    print("  premise from the current claim and cites the retained free-bilinear")
+    print("  premise from the current claim and cites the free-bilinear")
     print("  quasilocal LR bridge only on its stated free U=1 exact-log sector.")
 
 
@@ -611,7 +611,7 @@ def block_D_discipline() -> None:
            ("no longer a current premise" in text
             or "no\nlonger a current premise" in text)
            and "conditional on (B-RANGE)" not in text,
-           "S2'(c) now uses the retained free-sector quasilocal supplier")
+           "S2'(c) now uses the free-sector quasilocal supplier")
     record("D", "note cites the free-bilinear quasilocal LR bridge as propagation supplier",
            "FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md" in text
            and "R-FBQL" in text
@@ -626,7 +626,7 @@ def block_D_discipline() -> None:
                 or "does not derive B-AXIS" in text
                 or "leaves B-AXIS open" in text)
            and "No retained-grade proposal or status promotion is made here" in text,
-           "axis-selection route-pruning context wired without retained promotion")
+           "axis-selection route-pruning context wired without status promotion")
     record("D", "2026-06-17 B-AXIS.1 split note is wired",
            "SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md" in text
            and "S-N2-SPLIT" in text,
@@ -651,7 +651,7 @@ def main() -> None:
     print("Axis-conditional theorem (S1')-(S3'): conditional on B-AXIS, the")
     print("supplied transfer data give one generator, one unitary group, and")
     print("codimension-1 Cauchy slices. Propagation is cited only on the")
-    print("retained free U=1 exact-log quasilocal bridge; the staggered action's")
+    print("free U=1 exact-log quasilocal bridge; the staggered action's")
     print("exact time-space exchange symmetry shows the axis itself is a premise")
     print("(old S3 withdrawn).")
 

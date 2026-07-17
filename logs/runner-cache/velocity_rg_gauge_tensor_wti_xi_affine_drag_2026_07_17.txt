@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py
+runner_sha256: 2766d16e725783d50d99036d64ff32cf9149ee0f93970ac8588aa4877ab3b1b9
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.14
+status: ok
+----- stdout -----
+Velocity-RG gauge tensor block, exact WTI, xi-affine drag -- exact-support runner
+(exact tier V1-V3; labeled finite-grid witness tier V4-V7; see companion note)
+
+==========================================================================
+V1: exact gauge tensor block (plaquette form, zero mode, xi-inverse)
+==========================================================================
+[PASS] plaquette quadratic form == K*delta - qhat qhat^T EXACTLY (link-midpoint modes, direct lattice sum, 3 modes)  ::  worst rel err within bound 1e-9 (residual suppressed)
+[PASS] CONTROL: site-centered modes (no half-shift) MISS the closed form (link-midpoint is the exact convention)  ::  site-centered rel mismatch = 0.0562 > 1e-3
+[PASS] color normalization tr(T^a T^b) = delta^{ab}/2 (su(2) fundamental)
+[PASS] exact gauge-orbit zero mode: M qhat = 0 (6 seeded momenta)  ::  max |M qhat| / max(K,1) within bound 1e-11 (residual suppressed)
+[PASS] exact closed inverse: (M + xi^-1 qhat qhat^T)^-1 == P_T/K + xi qhat qhat^T/K^2 (6 seeded (q, xi))  ::  max |Mfix D - 1| within bound 1e-11 (residual suppressed)
+
+==========================================================================
+V2: exact lattice Ward-Takahashi identity (anisotropic velocities)
+==========================================================================
+[PASS] khat.Gamma == S0^-1(p) - S0^-1(p-k) EXACTLY for the midpoint cos vertex, INCLUDING anisotropic v_mu (6 seeded draws)  ::  worst residual within bound 1e-11 (residual suppressed)
+[PASS] CONTROL: no-half-shift vertex cos(p_mu) VIOLATES the WTI (midpoint is the Ward-exact vertex)  ::  min residual over draws = 0.9361 > 1e-2
+
+==========================================================================
+V3: rainbow a(xi) exactly affine; tadpole closed form; WTI slope
+==========================================================================
+[PASS] RAINBOW a_rb(xi) EXACTLY affine in xi over xi in {0, 0.5, 1.0, 1.7} (N=10, delta=0.30)  ::  max dev from line within bound 1e-11 (residual suppressed); a_rb(1)=-0.00126, slope=+0.00085
+[PASS] rainbow xi-slope == WTI-derived longitudinal closed form (assembled WITHOUT vertex functions)  ::  |pred - measured| within bound 1e-10 (residual suppressed); pred=+0.00085
+[PASS] TADPOLE split == (1 - xi)(C_s - C_t) EXACTLY (same-order fermion-line seagull; probe-independent; xi-slope = -(C_s - C_t))  ::  max dev from closed form within bound 1e-11 (residual suppressed); tad(0)=+0.000797, C_s-C_t=+0.000797
+[PASS] sign of the TOTAL drag a_rb(xi) + a_tad(xi) is xi-ROBUST across the covariant family xi in [0, 1.7]  ::  totals -0.00131, -0.00128, -0.00126, -0.00122
+
+==========================================================================
+V4: delta->0 gauge-line limit; IR-finite (C_s - C_t) split
+==========================================================================
+[PASS] delta->0: RAINBOW xi-slope -> +(C_s - C_t), a PURE GAUGE-LINE integral (no fermion line; delta=0.05, N=10)  ::  slope(0.05)=+0.000798 vs +(C_s-C_t)=+0.000797 (rel bound 5e-3 holds)
+[PASS] C_s, C_t individually still GROWING at N=24 (log-divergent pieces; last increment > 10x the difference increment)  ::  dC_s(20->24)=+0.00221, dDiff(20->24)=+0.000002
+[PASS] (C_s - C_t) increments SHRINK through N=24 (strictly; last < 5% of value): finite-grid convergence witness for the split (no continuum claim)  ::  (C_s-C_t)(N=24)=+0.000823, |dDiff_last|/|value|=0.0029
+
+==========================================================================
+V5: xi-shift constant-dominated; TOTAL xi-slope -> 0 as delta -> 0
+==========================================================================
+  xi=0.0: A_F(log)=+0.00020  B_F(const)=-0.00236  raw=-0.00223, -0.00214, -0.00207, -0.00203
+  xi=1.0: A_F(log)=+0.00009  B_F(const)=-0.00137  raw=-0.00131, -0.00127, -0.00124, -0.00121
+[PASS] xi-shift of the RAINBOW response CONSTANT-DOMINATED over the fit window: log-coefficient shift |A(1)-A(0)| < 20% of the constant shift |B(1)-B(0)| (delta in [0.18, 0.5]; A_F itself is subdominant to B_F at both xi)  ::  A(0)=+0.00020 A(1)=+0.00009 B(1)-B(0)=+0.00099 ratio=0.11
+[PASS] per-delta RAINBOW xi-slope a_rb(1)-a_rb(0) approaches +(C_s - C_t) MONOTONICALLY as delta -> 0 (deviations strictly shrinking; worst < 30%; V4 witnesses the delta=0.05 proximity at rel 5e-3)  ::  slopes +0.000923, +0.000864, +0.000832, +0.000815 vs +0.000797
+[PASS] TOTAL xi-slope (rainbow + tadpole) SHRINKS toward zero as delta -> 0 (strictly; final < 10% of C_s - C_t): the physical drag loses its xi-dependence in the small-probe limit  ::  total slopes +0.000127, +0.000067, +0.000035, +0.000018; scale C_s-C_t = +0.000797
+
+==========================================================================
+V6: drag directions, BOTH sectors in ONE functional-integral convention
+==========================================================================
+  Convention (single Euclidean bookkeeping; sign chain in the note):
+    fermion: S^-1 = S0^-1 - Sigma (rainbow + tadpole); kinetic coeffs v_mu -> v_mu - g^2 C_F out_mu (linear in v)
+    gauge:   Gamma_2 = M/g^2 + Pi (Pi = second variation of -tr log Dslash); c_mu -> w_mu + g^2 Pi_T/qhat^2
+[PASS] gauge sector FASTER (dv_B=+0.05) => fermion velocity response POSITIVE (rainbow + tadpole TOTAL): fermion dragged TOWARD the gauge speed  ::  dv_F response = -C_F*(out_s-out_t)_total = +0.00098 per g^2 (rainbow -0.00210 + tadpole +0.00080; C_F=3/4; N=10, delta=0.30)
+[PASS] deformed-kernel Pi stays TRANSVERSE at both probes (the sign chain consumes the -tr log assembly this certifies)  ::  normalized Ward residuals (0.0169, 0.0305) < 0.05 (N=12)
+[PASS] fermion sector FASTER (dv_F=+0.105) => induced gauge transverse anisotropy POSITIVE: gauge dragged TOWARD the fermion speed  ::  dv_B response = (piT_s - piT_t)/2 = +0.03017 per g^2 (T_F=1/2 inside Pi; N=12, probe q=0.3, spatial polarization both)
+[PASS] exchange-matrix coefficients: a-proxy > 0 AND b-proxy > 0 (finite-grid witnesses for the named open input of the exchange-matrix support note)  ::  a-proxy=+0.0196 b-proxy=+0.2866 per g^2 (magnitudes are labeled finite-grid scheme proxies; the signs are the witnessed content)
+[PASS] 2x2 exchange algebra: eigenvalues {0, -(a+b)}; null direction (1,1) (common speed); the DIFFERENCE mode contracts  ::  contraction rate a+b = +0.3062 per g^2
+
+==========================================================================
+V7: finite-grid robustness proxies (labeled; no continuum claim)
+==========================================================================
+[PASS] drag response a(xi=1, delta) sign stable and magnitude within 50% under N=10 -> N=12, all four probe deltas (labeled finite-grid proxy; the tadpole split vanishes at xi=1, so this IS the total)  ::  a(N=12) -0.00134, -0.00134, -0.00132, -0.00130; worst reldiff vs N=10 = 0.06
+[PASS] TOTAL fermion drag (rainbow + tadpole) sign stable and monotone under halving the gauge deformation (eps 0.10 -> 0.05)  ::  total-split(0.10)=-0.00131  total-split(0.05)=-0.00066
+
+==========================================================================
+SCORECARD
+==========================================================================
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

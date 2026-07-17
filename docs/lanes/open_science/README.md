@@ -114,7 +114,7 @@ gated by Lane 2.
 
 | # | Lane | Science priority | Approachability | Status today |
 |---|---|---|---|---|
-| 7 | Thermalization / kinetic theory (equilibrium, `T`, H-theorem, pressure) | HIGH-FOUNDATIONAL | Tier B-C (core) / Tier C gated by Lane 2 (gas) | thermal structure imported, not derived; arrow row audited_conditional pre-reset; generalized-2nd-law and classicalization-firewall scaffolds never audited; all three unaudited today; past-hypothesis residual remains open and is not an accepted premise |
+| 7 | Thermalization / kinetic theory (equilibrium, `T`, H-theorem, pressure) | HIGH-FOUNDATIONAL | Tier B-C (core) / Tier C gated by Lane 2 (gas) | thermal structure imported, not derived; arrow row's only substantive audit (2026-07-16, post-reset) returned audited_conditional; generalized-2nd-law and classicalization-firewall scaffolds never substantively audited; all three unaudited today; past-hypothesis residual remains open and is not an accepted premise |
 
 Per-lane document:
 [`07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md`](./07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md).

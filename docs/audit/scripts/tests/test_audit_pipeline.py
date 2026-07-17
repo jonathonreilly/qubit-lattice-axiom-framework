@@ -8900,10 +8900,6 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             helper_path = root / "scripts" / "helper.py"
             note_path.parent.mkdir(parents=True, exist_ok=True)
             runner_path.parent.mkdir(parents=True, exist_ok=True)
-            note_path.write_text(
-                "Claim type: positive_theorem\nThe selector wall remains unresolved.\n",
-                encoding="utf-8",
-            )
             runner_path.write_text("print('primary')\n", encoding="utf-8")
             helper_path.write_text(
                 "print('N7_STEELMAN_RESOLUTION selector wall resolved')\n",
@@ -8917,33 +8913,45 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "claim_type": "positive_theorem",
                 "deps": [],
             }
-            manifest: dict[str, dict] = {}
-            with (
-                mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}),
-                mock.patch.object(
-                    m,
-                    "get_runner_stdout",
-                    return_value=_no_go_evidence_text("PRIMARY_STDOUT"),
-                ),
-                mock.patch.object(
-                    m, "get_independent_runner_stdout"
-                ) as independent_stdout,
-            ):
-                m.render_prompt(
-                    row,
-                    {"positive": row},
-                    "{{HELPER_RUNNER_SOURCES}}\n{{FRAMEWORK_PREMISE_CONTEXT}}\n"
-                    "{{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
-                    "{{NO_GO_CROSS_CYCLE_INDEX}}\n"
-                    "{{NO_GO_EVIDENCE_MANIFEST}}",
-                    1,
-                    use_cache=False,
-                    evidence_manifest_out=manifest,
-                )
-            independent_stdout.assert_not_called()
-            self.assertFalse(any(
-                "runner-stdout-independent" in path for path in manifest
-            ))
+            note_bodies = (
+                "Claim type: positive_theorem\n"
+                "The selector wall remains unresolved.\n",
+                "Claim type: positive_theorem\n"
+                "The finite positive identity is exact.\n",
+            )
+            for note_body in note_bodies:
+                with self.subTest(note_body=note_body):
+                    note_path.write_text(note_body, encoding="utf-8")
+                    manifest: dict[str, dict] = {}
+                    with (
+                        mock.patch.dict(
+                            os.environ, {"AUDIT_FORENSIC_MODE": "1"}
+                        ),
+                        mock.patch.object(
+                            m,
+                            "get_runner_stdout",
+                            return_value=_no_go_evidence_text("PRIMARY_STDOUT"),
+                        ),
+                        mock.patch.object(
+                            m, "get_independent_runner_stdout"
+                        ) as independent_stdout,
+                    ):
+                        m.render_prompt(
+                            row,
+                            {"positive": row},
+                            "{{HELPER_RUNNER_SOURCES}}\n"
+                            "{{FRAMEWORK_PREMISE_CONTEXT}}\n"
+                            "{{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
+                            "{{NO_GO_CROSS_CYCLE_INDEX}}\n"
+                            "{{NO_GO_EVIDENCE_MANIFEST}}",
+                            1,
+                            use_cache=False,
+                            evidence_manifest_out=manifest,
+                        )
+                    independent_stdout.assert_not_called()
+                    self.assertFalse(any(
+                        "runner-stdout-independent" in path for path in manifest
+                    ))
 
     def test_nonmarker_helper_does_not_run_as_independent_certificate(self):
         m = _import_codex_audit_runner()

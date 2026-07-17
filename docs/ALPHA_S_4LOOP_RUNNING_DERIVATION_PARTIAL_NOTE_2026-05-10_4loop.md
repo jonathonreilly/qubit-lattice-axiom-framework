@@ -1,9 +1,7 @@
 # Alpha_s Four-Order Running — Formal-Algebra and Physical-Input Accounting Note
 
 **Date:** 2026-05-10; boundary repaired 2026-07-16
-**Claim type:** bounded_theorem
-**Status authority:** independent audit lane only; effective status is
-pipeline-derived.
+**Type:** bounded_theorem
 **Source-note proposal disclaimer:** this note proposes an accounting boundary,
 not an audit verdict or a physical running theorem.
 **Primary runner:**
@@ -23,7 +21,8 @@ different layers:
    templates, a physical gauge/coupling identification, and the interpretation
    of `n_f`; and
 2. a formal layer that substitutes exact values into already-defined
-   polynomials and changes coordinates in an already-defined vector field.
+   polynomials and forms induced nonnegative variables in an already-defined
+   vector field.
 
 The direct formal supplier is
 [`ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md`](ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md).
@@ -67,8 +66,8 @@ load-bearing: neither polynomial is derived here as a physical/QFT law.
 
 | Order | Formal content available from the direct supplier | Physical/QFT content not supplied by that theorem |
 |---|---|---|
-| **L1 (`b0`)** | Exact simplification `11-2n/3`, values, slope, root, sign window, and coordinate-convention algebra for a defined vector field | Origin of the template as a physical one-loop coefficient; colour/coupling identification; physical meaning and selection of `n_f`; physical running |
-| **L2 (`b1`)** | Exact simplification `102-38n/3`, values, slope, root, sign window, and coordinate-convention algebra for a defined vector field | Origin of the template as a physical two-loop coefficient; any universality or scheme-independence theorem; colour/coupling identification; physical meaning and selection of `n_f`; physical running |
+| **L1 (`b0`)** | Exact simplification `11-2n/3`, values, slope, root, sign window, and induced-variable chain-rule algebra for a defined vector field | Origin of the template as a physical one-loop coefficient; colour/coupling identification; physical meaning and selection of `n_f`; physical running |
+| **L2 (`b1`)** | Exact simplification `102-38n/3`, values, slope, root, sign window, and induced-variable chain-rule algebra for a defined vector field | Origin of the template as a physical two-loop coefficient; any universality or scheme-independence theorem; colour/coupling identification; physical meaning and selection of `n_f`; physical running |
 | **L3 (`b2`)** | No coefficient template or formal higher-order theorem is supplied by the direct supplier | A specified scheme and the corresponding QFT coefficient calculation remain imported/open |
 | **L4 (`b3`)** | No coefficient template or formal higher-order theorem is supplied by the direct supplier | A specified scheme and the corresponding QFT coefficient calculation remain imported/open |
 
@@ -86,9 +85,9 @@ defined coefficient polynomials and vector field in the direct supplier:
 1. the exact substitutions
    `b0(n)=11-2n/3` and `b1(n)=102-38n/3` follow;
 2. the exact listed rational evaluations follow;
-3. the changes of variables `alpha=g^2/(4 pi)` and
-   `a=alpha/(4 pi)` give the stated transformed vector fields by the chain
-   rule; and
+3. along any real formal trajectory of the defined `g` vector field, the
+   induced nonnegative variables `alpha=g^2/(4 pi)` and
+   `a=alpha/(4 pi)` have the stated rates by the chain rule; and
 4. none of these algebraic implications supplies the QFT origin of the
    templates or the physical semantics enumerated in section 2.
 
@@ -127,7 +126,7 @@ proposed_claim_type: bounded_theorem
 proposed_claim_scope: |
   Exact accounting separation for a supplied two-coefficient polynomial
   vector field. The direct supplier proves formal substitutions, rational
-  evaluations, slopes, roots, sign windows, and two coordinate-change
+  evaluations, slopes, roots, sign windows, and two induced-variable
   identities. It supplies no physical QCD beta-function origin, loop
   universality, scheme independence, physical colour/coupling bridge,
   active-flavour interpretation or selector, thresholds, or physical running.
@@ -136,19 +135,74 @@ proposed_claim_scope: |
 
 per_order_accounting:
   L1_b0:
-    status: formal_defined_template_only
+    accounting_class: formal_defined_template_only
     exact_polynomial: "11 - 2*n/3"
+    formal_outputs:
+      - defined_b0_polynomial
+      - exact_rational_evaluations
+      - exact_slopes_roots_signs
+      - defined_induced_variable_identities
+    physical_requirements:
+      - one_loop_qft_calculation
+      - qft_coefficient_origin
+      - physical_colour_carrier
+      - physical_coupling_identification
+      - physical_nf_interpretation
+      - scale_dependent_nf_selector
+      - physical_scale_variable
+      - threshold_matching
+      - boundary_data
     physical_origin: explicit_input_or_open_bridge
   L2_b1:
-    status: formal_defined_template_only
+    accounting_class: formal_defined_template_only
     exact_polynomial: "102 - 38*n/3"
+    formal_outputs:
+      - defined_b1_polynomial
+      - exact_rational_evaluations
+      - exact_slopes_roots_signs
+      - defined_induced_variable_identities
+    physical_requirements:
+      - two_loop_qft_calculation
+      - qft_coefficient_origin
+      - scheme_independence_theorem
+      - physical_colour_carrier
+      - physical_coupling_identification
+      - physical_nf_interpretation
+      - scale_dependent_nf_selector
+      - physical_scale_variable
+      - threshold_matching
+      - boundary_data
     physical_origin: explicit_input_or_open_bridge
   L3_b2:
-    status: physical_coefficient_import_open
+    accounting_class: physical_coefficient_import_open
     formal_template_in_direct_supplier: absent
+    formal_outputs: []
+    physical_requirements:
+      - three_loop_qft_calculation
+      - qft_coefficient_origin
+      - renormalization_scheme
+      - physical_colour_carrier
+      - physical_coupling_identification
+      - physical_nf_interpretation
+      - scale_dependent_nf_selector
+      - physical_scale_variable
+      - threshold_matching
+      - boundary_data
   L4_b3:
-    status: physical_coefficient_import_open
+    accounting_class: physical_coefficient_import_open
     formal_template_in_direct_supplier: absent
+    formal_outputs: []
+    physical_requirements:
+      - four_loop_qft_calculation
+      - qft_coefficient_origin
+      - renormalization_scheme
+      - physical_colour_carrier
+      - physical_coupling_identification
+      - physical_nf_interpretation
+      - scale_dependent_nf_selector
+      - physical_scale_variable
+      - threshold_matching
+      - boundary_data
 
 declared_one_hop_deps:
   - alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18
@@ -158,8 +212,6 @@ forbidden_promotions:
   - defined_n_to_active_flavour_selector
   - exact_coordinate_identity_to_physical_running
   - absent_current_supplier_to_global_no_go
-
-audit_required_before_effective_status_change: true
 ```
 
 ## 7. Verification

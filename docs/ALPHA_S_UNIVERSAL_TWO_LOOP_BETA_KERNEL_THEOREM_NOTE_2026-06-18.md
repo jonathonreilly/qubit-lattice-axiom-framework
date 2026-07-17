@@ -1,9 +1,6 @@
 # Defined Two-Coefficient Polynomial Vector-Field Algebra Theorem Note (2026-06-18)
 
 **Type:** positive_theorem
-**Claim type:** positive_theorem
-**Status authority:** independent audit lane only; this source note proposes no
-audit verdict.
 **Primary runner:** `scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py`
 **Runner cache:**
 `logs/runner-cache/frontier_alpha_s_universal_beta_kernel_2026_06_18.txt`
@@ -74,7 +71,7 @@ These are sign facts about the defined affine polynomials only. Terms such as
 "active flavour" and "asymptotic freedom" would add physical semantics that
 this theorem does not supply.
 
-## 3. Defined vector field and change of variables
+## 3. Defined vector field and induced variables
 
 Let `pi` denote the exact positive constant and let `g` be a real formal
 coordinate. Define the polynomial vector field
@@ -84,14 +81,18 @@ V_g(g,n) = -b0(n) g^3/(16 pi^2)
            -b1(n) g^5/(16 pi^2)^2.
 ```
 
-For the defined coordinate changes
+For any differentiable real trajectory `g(s)` satisfying
+`dg/ds = V_g(g,n)`, define the induced variables
 
 ```text
 alpha = g^2/(4 pi),
 a = alpha/(4 pi),
 ```
 
-the chain rule gives, identically,
+Because `pi > 0` and `g` is real, the induced variables satisfy
+`alpha >= 0` and `a >= 0`. The square map is many-to-one, so this is not a
+global invertible coordinate change on the real line. The chain rule gives,
+on the induced nonnegative half-lines,
 
 ```text
 V_alpha(alpha,n)
@@ -105,8 +106,12 @@ V_a(a,n)
 The first identity follows from `d alpha/dg = g/(2 pi)` and the exact
 substitutions `g^4 = 16 pi^2 alpha^2` and
 `g^6 = 64 pi^3 alpha^3`. The second follows from
-`d a/d alpha = 1/(4 pi)` and `alpha = 4 pi a`. No numerical coupling value,
-small-coupling estimate, convergence statement, or running solution is used.
+`d a/d alpha = 1/(4 pi)` and `alpha = 4 pi a`. Their polynomial right-hand
+sides have unique algebraic extensions to arbitrary real `alpha` and `a`, but
+only the nonnegative values are induced by a real `g`. The trajectory
+parameter `s` is untyped formal data; no physical scale interpretation is
+used. No numerical coupling value, small-coupling estimate, convergence
+statement, or running solution is used.
 
 ## 4. Exact scope firewall
 
@@ -118,8 +123,8 @@ explicitly defined vector field. In particular, it does not establish that
 - `N=3`, `C_F`, `C_A`, or `T_F` describes a physical colour sector;
 - `n` counts physical or active flavours, or that any threshold selects a
   value of `n`;
-- `g`, `alpha`, or `a` is a physical coupling, `t` is `ln(mu)`, or the
-  vector field governs physical running;
+- `g`, `alpha`, or `a` is a physical coupling, `s` is `ln(mu)` or any other
+  physical scale variable, or the vector field governs physical running;
 - the displayed coefficient templates follow from the framework axioms,
   approved primitives, Casimirs, a matter carrier, or QFT;
 - higher coefficients, counterterms, a renormalization scheme, threshold
@@ -134,7 +139,7 @@ proof.
 
 The runner uses exact `Fraction` and SymPy identities. It provides:
 
-- a normal derivation of the coefficient, slope, root, sign, and coordinate
+- a normal derivation of the coefficient, slope, root, sign, and induced-variable
   identities;
 - an independent symbolic reconstruction and multiple rational `(n,g)`
   examples;

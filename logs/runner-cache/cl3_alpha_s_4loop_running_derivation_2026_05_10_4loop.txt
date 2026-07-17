@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_alpha_s_4loop_running_derivation_2026_05_10_4loop.py
-runner_sha256: 91d1b5751f26533a5836a0fcac6e76e201b744a0b151786e7b33587db98b6082
+runner_sha256: 2156c8a41a69364ea5f1c0c7c31b149f9dda1bd4985ab4a437b0e89ef50e02d3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 FOUR-ORDER FORMAL/PHYSICAL ACCOUNTING CERTIFICATE
 [PASS] consumer keeps the one-hop formal supplier link
-[PASS] formal supplier is proposed as positive_theorem
+[PASS] formal supplier keeps the definition-only scope :: ()
 [PASS] historical formal-to-physical promotions are absent :: ()
 [PASS] repaired source states the exact accounting boundary :: ()
 
@@ -24,21 +24,30 @@ FOUR-ORDER FORMAL/PHYSICAL ACCOUNTING CERTIFICATE
 
 == Per-order physical-input accounting ==
 [PASS] formal supplier exports no physical requirement field :: []
-[PASS] L1 status is formal-defined-template only
-[PASS] L2 status is formal-defined-template only
-[PASS] L3 status keeps its physical coefficient import open
-[PASS] L4 status keeps its physical coefficient import open
-[PASS] L1_b0 retains every named physical requirement :: one_loop_qft_calculation,physical_colour_carrier,physical_coupling_identification,physical_nf_interpretation,physical_scale_variable,qft_coefficient_origin,scale_dependent_nf_selector
-[PASS] L1_b0 formal outputs do not exceed supplier :: defined_b0_polynomial,defined_coordinate_change_identities
-[PASS] L2_b1 retains every named physical requirement :: physical_colour_carrier,physical_coupling_identification,physical_nf_interpretation,physical_scale_variable,qft_coefficient_origin,scale_dependent_nf_selector,scheme_independence_theorem,two_loop_qft_calculation
-[PASS] L2_b1 formal outputs do not exceed supplier :: defined_b1_polynomial,defined_coordinate_change_identities
-[PASS] L3_b2 retains every named physical requirement :: physical_colour_carrier,physical_coupling_identification,physical_nf_interpretation,physical_scale_variable,qft_coefficient_origin,renormalization_scheme,scale_dependent_nf_selector,three_loop_qft_calculation
+[PASS] source note has exactly the four expected order rows :: ['L1_b0', 'L2_b1', 'L3_b2', 'L4_b3']
+[PASS] L1_b0 source accounting class matches its bounded role :: formal_defined_template_only
+[PASS] L1_b0 source formal inventory is exact :: defined_b0_polynomial,defined_induced_variable_identities,exact_rational_evaluations,exact_slopes_roots_signs
+[PASS] L1_b0 source physical-input inventory is exact :: boundary_data,one_loop_qft_calculation,physical_colour_carrier,physical_coupling_identification,physical_nf_interpretation,physical_scale_variable,qft_coefficient_origin,scale_dependent_nf_selector,threshold_matching
+[PASS] L1_b0 retains every named physical requirement :: boundary_data,one_loop_qft_calculation,physical_colour_carrier,physical_coupling_identification,physical_nf_interpretation,physical_scale_variable,qft_coefficient_origin,scale_dependent_nf_selector,threshold_matching
+[PASS] L1_b0 formal outputs do not exceed supplier :: defined_b0_polynomial,defined_induced_variable_identities,exact_rational_evaluations,exact_slopes_roots_signs
+[PASS] L2_b1 source accounting class matches its bounded role :: formal_defined_template_only
+[PASS] L2_b1 source formal inventory is exact :: defined_b1_polynomial,defined_induced_variable_identities,exact_rational_evaluations,exact_slopes_roots_signs
+[PASS] L2_b1 source physical-input inventory is exact :: boundary_data,physical_colour_carrier,physical_coupling_identification,physical_nf_interpretation,physical_scale_variable,qft_coefficient_origin,scale_dependent_nf_selector,scheme_independence_theorem,threshold_matching,two_loop_qft_calculation
+[PASS] L2_b1 retains every named physical requirement :: boundary_data,physical_colour_carrier,physical_coupling_identification,physical_nf_interpretation,physical_scale_variable,qft_coefficient_origin,scale_dependent_nf_selector,scheme_independence_theorem,threshold_matching,two_loop_qft_calculation
+[PASS] L2_b1 formal outputs do not exceed supplier :: defined_b1_polynomial,defined_induced_variable_identities,exact_rational_evaluations,exact_slopes_roots_signs
+[PASS] L3_b2 source accounting class matches its bounded role :: physical_coefficient_import_open
+[PASS] L3_b2 source formal inventory is exact
+[PASS] L3_b2 source physical-input inventory is exact :: boundary_data,physical_colour_carrier,physical_coupling_identification,physical_nf_interpretation,physical_scale_variable,qft_coefficient_origin,renormalization_scheme,scale_dependent_nf_selector,three_loop_qft_calculation,threshold_matching
+[PASS] L3_b2 retains every named physical requirement :: boundary_data,physical_colour_carrier,physical_coupling_identification,physical_nf_interpretation,physical_scale_variable,qft_coefficient_origin,renormalization_scheme,scale_dependent_nf_selector,three_loop_qft_calculation,threshold_matching
 [PASS] L3_b2 formal outputs do not exceed supplier
-[PASS] L4_b3 retains every named physical requirement :: four_loop_qft_calculation,physical_colour_carrier,physical_coupling_identification,physical_nf_interpretation,physical_scale_variable,qft_coefficient_origin,renormalization_scheme,scale_dependent_nf_selector
+[PASS] L4_b3 source accounting class matches its bounded role :: physical_coefficient_import_open
+[PASS] L4_b3 source formal inventory is exact
+[PASS] L4_b3 source physical-input inventory is exact :: boundary_data,four_loop_qft_calculation,physical_colour_carrier,physical_coupling_identification,physical_nf_interpretation,physical_scale_variable,qft_coefficient_origin,renormalization_scheme,scale_dependent_nf_selector,threshold_matching
+[PASS] L4_b3 retains every named physical requirement :: boundary_data,four_loop_qft_calculation,physical_colour_carrier,physical_coupling_identification,physical_nf_interpretation,physical_scale_variable,qft_coefficient_origin,renormalization_scheme,scale_dependent_nf_selector,threshold_matching
 [PASS] L4_b3 formal outputs do not exceed supplier
-[PASS] no order is assigned a promoted physical status :: ['formal_defined_template_only', 'physical_coefficient_import_open']
+[PASS] no order is assigned a promoted physical accounting class :: ['formal_defined_template_only', 'physical_coefficient_import_open']
 
-TOTAL: PASS=26 FAIL=0
+TOTAL: PASS=35 FAIL=0
 VERDICT: formal identities verified; every physical/QFT input remains explicit.
 
 ----- stderr -----

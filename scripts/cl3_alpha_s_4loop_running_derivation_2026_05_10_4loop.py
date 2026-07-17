@@ -11,9 +11,11 @@ from __future__ import annotations
 from dataclasses import dataclass
 import importlib.util
 from pathlib import Path
+import re
 import sys
 
 import sympy as sp
+import yaml
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -28,7 +30,7 @@ FAIL = 0
 @dataclass(frozen=True)
 class OrderAccount:
     label: str
-    status: str
+    accounting_class: str
     formal_outputs: frozenset[str]
     physical_requirements: frozenset[str]
 
@@ -39,7 +41,7 @@ FORMAL_SUPPLIER_OUTPUTS = frozenset(
         "defined_b1_polynomial",
         "exact_rational_evaluations",
         "exact_slopes_roots_signs",
-        "defined_coordinate_change_identities",
+        "defined_induced_variable_identities",
     }
 )
 
@@ -51,38 +53,50 @@ COMMON_PHYSICAL_REQUIREMENTS = frozenset(
         "physical_nf_interpretation",
         "scale_dependent_nf_selector",
         "physical_scale_variable",
+        "threshold_matching",
+        "boundary_data",
     }
 )
 
-ACCOUNTS = (
-    OrderAccount(
-        "L1_b0",
+EXPECTED_ACCOUNTS = {
+    "L1_b0": (
         "formal_defined_template_only",
-        frozenset({"defined_b0_polynomial", "defined_coordinate_change_identities"}),
+        frozenset(
+            {
+                "defined_b0_polynomial",
+                "exact_rational_evaluations",
+                "exact_slopes_roots_signs",
+                "defined_induced_variable_identities",
+            }
+        ),
         COMMON_PHYSICAL_REQUIREMENTS | {"one_loop_qft_calculation"},
     ),
-    OrderAccount(
-        "L2_b1",
+    "L2_b1": (
         "formal_defined_template_only",
-        frozenset({"defined_b1_polynomial", "defined_coordinate_change_identities"}),
+        frozenset(
+            {
+                "defined_b1_polynomial",
+                "exact_rational_evaluations",
+                "exact_slopes_roots_signs",
+                "defined_induced_variable_identities",
+            }
+        ),
         COMMON_PHYSICAL_REQUIREMENTS
         | {"two_loop_qft_calculation", "scheme_independence_theorem"},
     ),
-    OrderAccount(
-        "L3_b2",
+    "L3_b2": (
         "physical_coefficient_import_open",
         frozenset(),
         COMMON_PHYSICAL_REQUIREMENTS
         | {"three_loop_qft_calculation", "renormalization_scheme"},
     ),
-    OrderAccount(
-        "L4_b3",
+    "L4_b3": (
         "physical_coefficient_import_open",
         frozenset(),
         COMMON_PHYSICAL_REQUIREMENTS
         | {"four_loop_qft_calculation", "renormalization_scheme"},
     ),
-)
+}
 
 
 def check(label: str, condition: bool, detail: str = "") -> None:
@@ -109,13 +123,54 @@ def load_target_module():
     return module
 
 
+def load_note_accounts(note_text: str) -> tuple[OrderAccount, ...]:
+    """Parse the note's machine-readable accounting rather than self-certify it."""
+    match = re.search(r"```yaml\n(.*?)\n```", note_text, flags=re.DOTALL)
+    if match is None:
+        raise ValueError("consumer note has no YAML accounting block")
+    payload = yaml.safe_load(match.group(1))
+    rows = payload.get("per_order_accounting") if isinstance(payload, dict) else None
+    if not isinstance(rows, dict):
+        raise ValueError("consumer note has no per_order_accounting mapping")
+    accounts: list[OrderAccount] = []
+    for label, row in rows.items():
+        if not isinstance(row, dict):
+            raise ValueError(f"{label} accounting row is not a mapping")
+        accounts.append(
+            OrderAccount(
+                label=str(label),
+                accounting_class=str(row.get("accounting_class", "")),
+                formal_outputs=frozenset(map(str, row.get("formal_outputs", []))),
+                physical_requirements=frozenset(
+                    map(str, row.get("physical_requirements", []))
+                ),
+            )
+        )
+    return tuple(accounts)
+
+
 def source_boundary_checks() -> None:
     """Guard the direct link and reject the historical promotion language."""
     note_text = NOTE.read_text(encoding="utf-8")
     target_text = TARGET_NOTE.read_text(encoding="utf-8")
-    target_link = "ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md"
+    target_link = (
+        "[`ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md`]"
+        "(ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md)"
+    )
     check("consumer keeps the one-hop formal supplier link", target_link in note_text)
-    check("formal supplier is proposed as positive_theorem", "**Claim type:** positive_theorem" in target_text)
+    target_scope_needles = (
+        "**Dependencies:** none.",
+        "No QFT calculation, universality statement, or physical beta-function",
+        "The square map is many-to-one",
+    )
+    missing_target_scope = tuple(
+        phrase for phrase in target_scope_needles if phrase not in target_text
+    )
+    check(
+        "formal supplier keeps the definition-only scope",
+        len(missing_target_scope) == 0,
+        str(missing_target_scope),
+    )
 
     historical_promotions = (
         "L1 (β_0) is retained inline",
@@ -160,21 +215,42 @@ def exact_supplier_checks(module) -> None:
         check(f"formal {name}({argument}) exact evaluation", actual == expected, str(actual))
 
 
-def accounting_checks() -> None:
-    """Compute which physical inputs remain after consuming the formal row."""
+def accounting_checks(accounts: tuple[OrderAccount, ...]) -> None:
+    """Compare the source note's parsed accounting with the formal supplier."""
     print("\n== Per-order physical-input accounting ==")
     supplied_physical_fields = FORMAL_SUPPLIER_OUTPUTS & set().union(
-        *(account.physical_requirements for account in ACCOUNTS)
+        *(account.physical_requirements for account in accounts)
     )
     check("formal supplier exports no physical requirement field", len(supplied_physical_fields) == 0, str(sorted(supplied_physical_fields)))
 
-    by_label = {account.label: account for account in ACCOUNTS}
-    check("L1 status is formal-defined-template only", by_label["L1_b0"].status == "formal_defined_template_only")
-    check("L2 status is formal-defined-template only", by_label["L2_b1"].status == "formal_defined_template_only")
-    check("L3 status keeps its physical coefficient import open", by_label["L3_b2"].status == "physical_coefficient_import_open")
-    check("L4 status keeps its physical coefficient import open", by_label["L4_b3"].status == "physical_coefficient_import_open")
+    by_label = {account.label: account for account in accounts}
+    check(
+        "source note has exactly the four expected order rows",
+        set(by_label) == set(EXPECTED_ACCOUNTS),
+        str(sorted(by_label)),
+    )
 
-    for account in ACCOUNTS:
+    for label, expected in EXPECTED_ACCOUNTS.items():
+        account = by_label.get(label)
+        if account is None:
+            check(f"{label} source accounting exists", False)
+            continue
+        expected_class, expected_formal, expected_physical = expected
+        check(
+            f"{label} source accounting class matches its bounded role",
+            account.accounting_class == expected_class,
+            account.accounting_class,
+        )
+        check(
+            f"{label} source formal inventory is exact",
+            account.formal_outputs == expected_formal,
+            ",".join(sorted(account.formal_outputs)),
+        )
+        check(
+            f"{label} source physical-input inventory is exact",
+            account.physical_requirements == expected_physical,
+            ",".join(sorted(account.physical_requirements)),
+        )
         missing_physical = account.physical_requirements - FORMAL_SUPPLIER_OUTPUTS
         check(
             f"{account.label} retains every named physical requirement",
@@ -187,21 +263,26 @@ def accounting_checks() -> None:
             ",".join(sorted(account.formal_outputs)),
         )
 
-    promoted_statuses = {
+    forbidden_accounting_classes = {
         "retained_inline_companion",
         "bounded_algebraic_pending_color_bridge",
         "physical_coefficient_derived",
     }
-    observed_statuses = {account.status for account in ACCOUNTS}
-    check("no order is assigned a promoted physical status", observed_statuses.isdisjoint(promoted_statuses), str(sorted(observed_statuses)))
+    observed_classes = {account.accounting_class for account in accounts}
+    check(
+        "no order is assigned a promoted physical accounting class",
+        observed_classes.isdisjoint(forbidden_accounting_classes),
+        str(sorted(observed_classes)),
+    )
 
 
 def main() -> int:
     print("FOUR-ORDER FORMAL/PHYSICAL ACCOUNTING CERTIFICATE")
     source_boundary_checks()
+    accounts = load_note_accounts(NOTE.read_text(encoding="utf-8"))
     target = load_target_module()
     exact_supplier_checks(target)
-    accounting_checks()
+    accounting_checks(accounts)
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print("VERDICT: formal identities verified; every physical/QFT input remains explicit.")

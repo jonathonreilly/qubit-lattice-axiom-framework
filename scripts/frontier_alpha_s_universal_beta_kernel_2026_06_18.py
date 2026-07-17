@@ -206,9 +206,10 @@ def request_physical_interpretation(label: str) -> None:
         "physical_running",
     }
     missing = requested_fields - formal_fields
-    raise PhysicalInterpretationError(
-        f"cannot infer {label!r}; formal packet lacks {sorted(missing)}"
-    )
+    if missing:
+        raise PhysicalInterpretationError(
+            f"cannot infer {label!r}; formal packet lacks {sorted(missing)}"
+        )
 
 
 def expect_rejection(
@@ -258,8 +259,23 @@ def normal_checks() -> int:
     check("b1 unit slope is -38/3", sp.cancel(certificate.b1.subs(n, n + 1) - certificate.b1 + sp.Rational(38, 3)) == 0)
     check("b0 root is 33/2", sp.solve(certificate.b0, n) == [sp.Rational(33, 2)])
     check("b1 root is 153/19", sp.solve(certificate.b1, n) == [sp.Rational(153, 19)])
-    check("b0 integer sign window", all(certificate.b0.subs(n, k) > 0 for k in range(17)) and all(certificate.b0.subs(n, k) < 0 for k in range(17, 25)))
-    check("b1 integer sign window", all(certificate.b1.subs(n, k) > 0 for k in range(9)) and all(certificate.b1.subs(n, k) < 0 for k in range(9, 25)))
+    m = sp.symbols("m", integer=True, nonnegative=True)
+    b0_tail = sp.expand(certificate.b0.subs(n, 17 + m))
+    b1_tail = sp.expand(certificate.b1.subs(n, 9 + m))
+    b0_tail_negative = sp.ask(sp.Q.negative(b0_tail))
+    b1_tail_negative = sp.ask(sp.Q.negative(b1_tail))
+    check(
+        "b0 integer sign window",
+        all(certificate.b0.subs(n, k) > 0 for k in range(17))
+        and bool(b0_tail_negative),
+        f"tail={b0_tail}",
+    )
+    check(
+        "b1 integer sign window",
+        all(certificate.b1.subs(n, k) > 0 for k in range(9))
+        and bool(b1_tail_negative),
+        f"tail={b1_tail}",
+    )
 
     print("\n== Defined coordinate identities ==")
     check("g-to-alpha vector-field identity", sp.cancel(certificate.induced_alpha - certificate.expected_alpha) == 0)

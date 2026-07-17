@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py
-runner_sha256: 4d1cfb19813c86a3bcda13233e15a72174714d43ea5b4a1ed7b660eba2938552
+runner_sha256: 1af11938a8fd3ae0d2142f0e7d9ef5dd1c584e5104bdd24bfb42bf7d65f515b4
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.36
 status: ok
 ----- stdout -----
 == Defined coefficient packet ==
@@ -23,8 +23,8 @@ status: ok
 [PASS] b1 unit slope is -38/3
 [PASS] b0 root is 33/2
 [PASS] b1 root is 153/19
-[PASS] b0 integer sign window
-[PASS] b1 integer sign window
+[PASS] b0 integer sign window :: tail=-2*m/3 - 1/3
+[PASS] b1 integer sign window :: tail=-38*m/3 - 12
 
 == Defined coordinate identities ==
 [PASS] g-to-alpha vector-field identity

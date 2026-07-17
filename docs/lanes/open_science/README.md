@@ -1,12 +1,22 @@
 # Critical Open Science Lanes
 
-**Date:** 2026-04-26
+**Date:** 2026-04-26 (currency note added 2026-07-16)
 **Status:** open science lane package on `main`; outside audit-ratified tier,
-not bounded, and not on the manuscript surface. This package records six
+not bounded, and not on the manuscript surface. This package records the
 missing science lanes that need active work.
 
 The current ontology baseline is the four named axioms in
 [`MINIMAL_AXIOMS_2026-06-29.md`](../../MINIMAL_AXIOMS_2026-06-29.md).
+
+**Status-language currency note (2026-07-16):** grade words in this package
+("retained", "bounded", "scaffold") predate the 2026-06-29 foundation reset
+and the associated audit-ledger reset; read them as the lane authors'
+pre-reset scoping language, **not** as current `effective_status`. Most
+pre-reset ratifications are `unaudited` today pending post-reset re-audit.
+The live authorities are the tracked ledger
+([`docs/audit/data/ledger/`](../../audit/data/ledger/)) and the generated
+[`docs/repo/RETAINED_BACKBONE.md`](../../repo/RETAINED_BACKBONE.md); check a
+row's shard before citing any grade word from this package.
 
 ## Why this package exists
 
@@ -32,11 +42,11 @@ records the work that still needs to be done.
 
 | # | Lane | Science priority | Approachability | Status today |
 |---|---|---|---|---|
-| 1 | Hadron mass program (m_p, m_π, hadron spectroscopy) | HIGHEST | Tier B-C | confinement T=0 retained; √σ ≈ 465 MeV bounded; m_p, m_π not derived |
+| 1 | Hadron mass program (m_p, m_π, hadron spectroscopy) | HIGHEST | Tier B-C | confinement T=0 ratified pre-reset (re-audit pending); √σ ≈ 465 MeV graded bounded pre-reset; m_p, m_π not derived |
 | 2 | Atomic-scale predictions (Rydberg, Lamb shift, fine structure) | HIGH-VISCERAL | Tier A (post-Koide) / B (pre-Koide) | scaffold uses textbook inputs |
 | 3 | Quark masses retention (5 quark masses) | HIGHEST | Tier B-C | bounded companion via threshold-local + up-type extension |
 | 4 | Neutrino quantitative closure (m_ν, Δm², Majorana phases) | HIGH | Tier B-C | "different carriers"; bounded |
-| 5 | Hubble constant H_0 derivation (cosmology matter bridge) | HIGH | Tier B | external input; structural identities retained |
+| 5 | Hubble constant H_0 derivation (cosmology matter bridge) | HIGH | Tier B | external input; structural identities landed pre-reset (re-audit pending) |
 | 6 | Charged-lepton mass retention (full closure: ratios + V_0) | HIGHEST | Tier A-B | Koide flagship lane in flight (ratios); V_0 absolute scale separately open |
 
 Per-lane open-lane documents:
@@ -104,7 +114,7 @@ gated by Lane 2.
 
 | # | Lane | Science priority | Approachability | Status today |
 |---|---|---|---|---|
-| 7 | Thermalization / kinetic theory (equilibrium, `T`, H-theorem, pressure) | HIGH-FOUNDATIONAL | Tier B-C (core) / Tier C gated by Lane 2 (gas) | thermal structure imported, not derived; arrow + generalized-2nd-law + classicalization-firewall scaffolding retained_bounded; past-hypothesis residual remains open and is not an accepted premise |
+| 7 | Thermalization / kinetic theory (equilibrium, `T`, H-theorem, pressure) | HIGH-FOUNDATIONAL | Tier B-C (core) / Tier C gated by Lane 2 (gas) | thermal structure imported, not derived; arrow + generalized-2nd-law + classicalization-firewall scaffolding graded retained_bounded pre-reset; past-hypothesis residual remains open and is not an accepted premise |
 
 Per-lane document:
 [`07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md`](./07_THERMALIZATION_KINETIC_THEORY_OPEN_LANE_2026-06-12.md).
@@ -187,7 +197,7 @@ status elsewhere, the canonical theorem surface wins.
 | 11 | **W boson mass M_W retention** | bounded companion at 0.23% | **Deferred — Phase 2 of matter mass program** |
 | 12 | **BBN abundance ratio derivation** | absent | **Deferred — separate cosmology lane** |
 | 13 | **CMB anisotropy spectrum quantitative comparison** | bounded primordial only | **Deferred — separate cosmology lane** |
-| 14 | **Dark matter particle / detection mechanism** | DM relic ratio R = 5.48 retained, but not particle ID | **Deferred — DM closed package follow-on** |
+| 14 | **Dark matter particle / detection mechanism** | DM relic ratio R = 5.48 (pre-reset grade), but not particle ID | **Deferred — DM closed package follow-on** |
 | 15 | **Lattice scale ⟨P⟩ = 0.5934 dependence on action choice** | computed via Monte Carlo | **Deferred — methodology audit lane** |
 
 ### Tier 3 — MEDIUM science priority

@@ -56,17 +56,22 @@ ledger enforces.
 
 Use these entrypoints in order:
 
-1. [Generated front-door status snapshot](docs/repo/FRONT_DOOR_STATUS.md)
-2. [Minimal axiom memo](docs/MINIMAL_AXIOMS_2026-06-29.md)
-3. [Publication package README](docs/publication/ci3_z3/README.md)
-4. [Current falsifiable predictions catalog](docs/publication/ci3_z3/FALSIFIABLE_PREDICTIONS_2026-06-08.md)
-5. [Manuscript claims with audit badges](docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md)
-6. [Quantitative table with audit badges](docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md)
-7. [Publication/audit divergence report](docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md)
-8. [Reproduce guide](docs/publication/ci3_z3/REPRODUCE.md)
-9. [Science map by domain](docs/publication/ci3_z3/SCIENCE_MAP.md)
-10. [Open science lanes](docs/lanes/open_science/README.md)
-11. [Full audit ledger (tracked shards)](docs/audit/data/ledger/), summarized in
+1. [State of the theory (plain language)](docs/repo/STATE_OF_THE_THEORY_2026-07-16.md)
+   — what is audit-ratified, what is review-gated, what is open, and the
+   axioms-to-results map
+2. [Generated front-door status snapshot](docs/repo/FRONT_DOOR_STATUS.md)
+3. [Minimal axiom memo](docs/MINIMAL_AXIOMS_2026-06-29.md)
+4. [Retained backbone — every audit-ratified row](docs/repo/RETAINED_BACKBONE.md)
+5. [Publication package README](docs/publication/ci3_z3/README.md)
+6. [Current falsifiable predictions catalog](docs/publication/ci3_z3/FALSIFIABLE_PREDICTIONS_2026-06-08.md)
+7. [Manuscript claims with audit badges](docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md)
+8. [Quantitative table with audit badges](docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md)
+9. [Publication/audit divergence report](docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md)
+10. [External reviewer guide](docs/publication/ci3_z3/EXTERNAL_REVIEWER_GUIDE.md)
+    and [reproduce guide](docs/publication/ci3_z3/REPRODUCE.md)
+11. [Science map by domain](docs/publication/ci3_z3/SCIENCE_MAP.md)
+12. [Open science lanes](docs/lanes/open_science/README.md)
+13. [Full audit ledger (tracked shards)](docs/audit/data/ledger/), summarized in
     [`effective_status_summary.json`](docs/audit/data/effective_status_summary.json)
 
 ## Current Status
@@ -117,9 +122,10 @@ It highlights three near-term tests:
   SM metastability.
 
 Those forecasts are explicitly conditional and currently not unconditional
-closures. The catalog predates the 2026-06-29 reset; its falsifier thresholds
-and named external comparison bands stand, but quote it with its stated
-conditionality rather than copying a number bare.
+closures. The catalog predates the 2026-06-29 reset and carries a dated
+currency note saying exactly what stands (falsifier thresholds, named external
+comparison bands) and what does not (its 2026-06-08 status words); quote it
+with its stated conditionality rather than copying a number bare.
 
 ## Reusable Numbers
 
@@ -153,7 +159,9 @@ High-level state:
   bounded, and boxed-decoration rows; `retained_no_go` is a supported grade
   with zero rows at present. Use
   [`docs/repo/FRONT_DOOR_STATUS.md`](docs/repo/FRONT_DOOR_STATUS.md) for the
-  current generated counts.
+  current generated counts and
+  [`docs/repo/RETAINED_BACKBONE.md`](docs/repo/RETAINED_BACKBONE.md) for the
+  full generated row list.
 - **Publication package:** manuscript and quantitative surfaces exist, but the
   effective-status mirrors show which cited authorities are audit-retained and
   which remain unaudited, conditional, renaming-only, numerical-match, or open.

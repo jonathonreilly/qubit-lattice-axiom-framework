@@ -337,29 +337,37 @@ check("B2.4", "count-twice = |det3|^2 = lam0^2*|lam1|^4 via K-partner copy; "
                   - l0r ** 2 * (l1r * conjugate(l1r)) ** 2)
       and mat_zero(partner_real - Wr))
 
+order12 = list(range(12))
 aw, bw, cw = sp.Integer(2), 1 + I, -I
 Wnum = W_of(aw, bw, cw)
 Wnum_conj = W_of(conjugate(aw), conjugate(bw), conjugate(cw))
 terms12 = (minus_action_terms(Wnum, [0, 2, 4], [1, 3, 5])
            + minus_action_terms(Wnum_conj, [6, 8, 10], [7, 9, 11]))
 F12 = gexp_product(terms12)
-val12 = berezin(F12, list(range(12)))
+val12 = berezin(F12, order12)
 expected12 = det3(aw, bw, cw) * conjugate(det3(aw, bw, cw))
 check("B2.5", "direct 12-generator joint integral = |det3|^2 at witness (2,1+i,-i)",
       is_zero(val12 - expected12)
       and is_zero(expected12 - sp.Abs(det3(aw, bw, cw)) ** 2))
 
-check("B2.6", "r-neutral doubling: exponent pairs (1,1)->(2,2) together; "
+terms12_sym = (minus_action_terms(Wr, [0, 2, 4], [1, 3, 5])
+               + minus_action_terms(partner_real, [6, 8, 10], [7, 9, 11]))
+val12_sym = berezin(gexp_product(terms12_sym), order12)
+check("B2.6", "direct symbolic 12-generator joint integral = det3^2 on the "
+      "entrywise-real locus",
+      is_zero(val12_sym - det3(ar, br, cr) ** 2))
+
+check("B2.7", "r-neutral doubling: exponent pairs (1,1)->(2,2) together; "
       "ratio twice/once = det3, not constant",
       is_zero(l0r ** 2 * (l1r * conjugate(l1r)) ** 2
               - (l0r * l1r * conjugate(l1r)) ** 2)
       and is_zero(count_twice_sym - count_once * det3(ar, br, cr)))
 
 # ----------------------- B3: declared-reading generator-count bookkeeping
-check("B3.1", "generator-count bookkeeping: horn m uses 6m generators "
-      "(m=1: 6; m=2: 12), tied to the constructed integrals",
-      len(th3 + tb3) == 6 and len(list(range(12))) == 12
-      and 6 * 1 == 6 and 6 * 2 == 12)
+check("B3.1", "generator-count bookkeeping: horn m uses 6m generators, read "
+      "off the constructed integration orders (m=1: 6; m=2: 12)",
+      len(th3 + tb3) == 6 and len(order12) == 12
+      and len(order12) == 2 * len(th3 + tb3))
 
 # --------------------------------------------- B4: linear measure collapse
 d1, d2, c1, c2 = sp.symbols("d1 d2 c1 c2")
@@ -420,9 +428,14 @@ check("B5.3", "pairing-without-reality (i,1+i,i): count-once integral = 1 + 3i, 
       "not real",
       is_zero(val_p - (1 + 3 * I)) and not is_zero(val_p - conjugate(val_p)))
 
-v_once = det3(3, 1, 1)
-check("B5.4", "neither horn forced at (3,1,1): once = 20, twice = 400, both nonzero",
-      v_once == 20 and v_once ** 2 == 400)
+W311 = W_of(3, 1, 1)
+v_once = holo_integral(W311, th3, tb3)
+terms12_311 = (minus_action_terms(W311, [0, 2, 4], [1, 3, 5])
+               + minus_action_terms(W311, [6, 8, 10], [7, 9, 11]))
+v_twice = berezin(gexp_product(terms12_311), order12)
+check("B5.4", "neither horn forced at (3,1,1): Berezin once = 20, "
+      "12-generator twice = 400, both nonzero",
+      v_once == 20 and v_twice == 400)
 
 eps = sp.Symbol("eps", positive=True)
 a2 = eps / 3

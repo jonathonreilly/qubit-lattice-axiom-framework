@@ -42,9 +42,9 @@ Two consequences of that discipline shape everything below:
 ## How to read a status word
 
 - **retained / retained_bounded / retained_no_go** — ratified by the
-  independent audit lane; the only retained grades. Bounded rows are ratified
-  *with stated supplied conditions*; they are results about what follows from
-  named inputs, not unconditional claims.
+  independent audit lane; the only retained grades. A bounded row is an
+  audited scope-bounded theorem: ratified with the boundary its note states
+  (a declared scope; some rows additionally carry named supplied inputs).
 - **unaudited** — landed through review, awaiting the audit lane. This is the
   current home of most flagship chains.
 - **audited_conditional / audited_failed / audited_renaming /

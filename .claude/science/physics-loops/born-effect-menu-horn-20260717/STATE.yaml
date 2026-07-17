@@ -19,7 +19,7 @@ open_imports: none in this block's results; Gleason 1957 remains the landed proj
 no_go_routes: see NO_GO_LEDGER.md
 trace: see TRACE_GATE.md (upstream_support; negative slice = negative_route_pruning)
 review: pass (round 1 five-lens panel; all substantive findings fixed; see REVIEW_HISTORY.md)
-pr: pending
+pr: opened — #5472 (physics-loop/born-effect-menu-horn-block01-20260717 -> main)
 next_exact_action: >
   Commit staged block; push; open PR; hand off to owner-operated
   review/audit lanes. Post-landing: parked follow-ons in

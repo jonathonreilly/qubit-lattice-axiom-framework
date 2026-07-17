@@ -4,12 +4,14 @@ This run executes one block. Parked, ranked, for future campaigns:
 
 1. **Premise thinning on the effect horn** — EXECUTED as block02
    (2026-07-17): native scaled-projector family theorem (forcing + paired
-   boundary). Remaining slice parked: exact native translation of the
+   boundary). EXECUTED-IN-PART as block03's mixed-projective family (native mixture
+   class with merge lemma); still parked: exact native translation of the
    Wright-Weigert mixture class and any minimal-family classification.
-2. **Additivity-failure boundary** — exact statement of what survives if E2/H2
-   additivity is dropped (higher-order interference measure classes); turns
-   the strategy's global hidden premise into a named boundary. Larger block;
-   new formal class discipline needed (no new vocabulary without the queue).
+2. **Additivity-failure boundary** — EXECUTED as block03's outcome
+   threshold (binary menus admit an exact smooth non-Born witness; ternary
+   menus restore the parent chain; threshold exactly three; Sorkin cited
+   as comparator analogy only). Remaining slice: families strictly between
+   binary and full ternary; full classification of forcing families.
 3. **Menu-eligibility-from-Admissibility probe** — owner/registration-gated;
    any attempt must go through the registration channel named by the landed
    Class D proposal, not through axiom-prose readings. Record-only entry: do

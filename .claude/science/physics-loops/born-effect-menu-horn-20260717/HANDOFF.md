@@ -78,3 +78,22 @@ worker completion. Wright-Weigert stays comparator-only; exact translation
 Note placeholder discipline (block01 lesson applied): the Verification total
 is the literal `__TOTAL__` until the runner is final; the worker spec
 forbids matching it.
+
+
+## Checkpoint 4 — block03 (map completion, stacked on block02)
+
+User authorized "go get the remaining slices ... completion and full
+retention". Retention discipline restated: retained status is set only by
+the owner-operated independent audit lane; this campaign prepares
+audit-ready surfaces and never sets or predicts verdicts. Block03 combines
+the two remaining executable queue slices into one map-completion block:
+outcome-count threshold (binary boundary witness f(t)=t^3/(t^3+(1-t)^3);
+ternary restores the block01 chain; threshold exactly three), the native
+mixed-projective family (presentation-defined; merge/decomposition-
+invariance lemma; forcing via the halved block02 axis identity), and the
+incomparability corollary (merged element outside S; coplanar menu not
+presentable; no unique inclusion-minimal forcing family). Supervisor
+pre-battery 10/10 before authoring. Cluster-cap evaluator run for PR #3:
+OPEN (recorded in CLAIM_STATUS_CERTIFICATE_BLOCK03.md). Governance-gated
+queue items (menu-eligibility-from-Admissibility; weight values from
+records) remain parked and are not attemptable from a physics loop.

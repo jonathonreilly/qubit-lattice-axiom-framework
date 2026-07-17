@@ -206,3 +206,33 @@ mutation probe (cubic exponent 3 -> 2) FAILS correctly; cache regenerated
 and SHA-verified; note total synced to 60.
 
 ### Round 1 disposition after fixes: pass
+
+# Block03 review history
+
+## Round 0 — supervisor pre-battery (before authoring)
+
+10/10 from planning: f-complement/endpoints/denominator; the four exact
+f-values; the 41/56-vs-125/152 non-affinity; the 4/7 ternary violation; the
+merge-lemma elimination; the merged element's distinct nonzero eigenvalues;
+the halved axis identity.
+
+## Mutation checks (block03) — executed, all FAIL as required
+
+| Family | Mutation | Result |
+|---|---|---|
+| F | completed-square constant 1/4 -> 1/2 | FAIL F2-identity (+F2-lower-bound) |
+| T1 | sigma0 z-coefficient 1/2 -> 1 | FAIL T1a (+T1c cascade) |
+| T2 | binary regrouping normalization = 2 | FAIL T2a |
+| T3b | merge equation drops the a2 term | FAIL T3b-two-direction |
+| T3c | halved axis element /2 -> /3 | FAIL T3c-axis-symbolic |
+| T3d | complement equation = 2 | FAIL T3d-positive |
+| T4a | expected eigenvalue sqrt(2) -> sqrt(3) | FAIL T4a-spectrum |
+| T4c | nonparallel witness -> parallel e_z | FAIL T4c-projector-piece (the lemma's own content) |
+| T5 | target eigenvalue (1-c) -> (1-2c) | FAIL T5a-spectrum |
+| N | needle string perturbed | FAIL N2 |
+
+Unmutated runner: `TOTAL: PASS=42 FAIL=0` (worker + supervisor re-runs);
+cache SHA-pinned and verified; `__TOTAL__` resolved to 42 only after the
+runner was final.
+
+## Round 1 — block03 four-lens adversarial panel (pending)

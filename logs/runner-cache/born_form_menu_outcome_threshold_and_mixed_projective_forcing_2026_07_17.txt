@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py
+runner_sha256: a90756fe56e93db7c5398594b281b994b12875ac827908e01ffa31073d90e04b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.54
+status: ok
+----- stdout -----
+PASS: F1-complement f(t)+f(1-t)=1 identically
+PASS: F1-endpoints f has the exact endpoint values zero and one
+PASS: F2-identity the cubic denominator has the completed-square form
+PASS: F2-lower-bound the completed-square denominator is at least one-quarter
+PASS: F3 f has all four specified exact rational values
+PASS: T1a sigma0 gives Tr(sigma0 P(n))=(2+nz)/4 symbolically
+PASS: T1b-trace a symbolic Hermitian effect and its complement have complementary traces
+PASS: T1b-compose the f-complement law formally composes with the trace complement
+PASS: T1c-values the endpoint values predict 41/56 while the midpoint is 125/152
+PASS: T1c-cross-product exact cross multiplication detects the three-point non-affinity
+PASS: T1d the exact ternary menu sums to I but the witness weights sum to 4/7
+PASS: T1e-control the affine trace control passes binary and ternary normalization without a flag
+PASS: T2a TERNARY MENU IS THE ONLY NEW INPUT: it and the binary regrouping eliminate to additivity
+PASS: T2b-cone the rational noncommuting pair and its sum/remainder stay in the effect cone
+PASS: T2b-menus the noncommuting witness realizes the ternary and binary regrouped menus exactly
+PASS: T3a one component with a split plus outcome gives the symbolic split menu
+PASS: T3b-two-direction the two-direction merge presentation normalizes and eliminates to its matching sum
+PASS: T3b-three-direction the three-direction merge presentation obeys the same finite-family lemma
+PASS: T3c-axis-symbolic the positive-octant halved axis decomposition equals I/2 with mass one
+PASS: T3c-antipodal-symbolic the symbolic antipodal decomposition equals I/2 with mass one
+PASS: T3c-axis-octant an exact mixed-sign rational axis decomposition equals I/2 with mass one
+PASS: T3c-antipodal-witness the rational antipodal comparison is the same I/2 with mass one
+PASS: T3d-positive the merge equation and complements eliminate to positive-octant affinity
+PASS: T3d-other-octant explicit sign branches give the same affinity in a mixed-sign octant
+PASS: T3e the trace form on a merged element is the matching sum of affine values
+PASS: T4a-spectrum the merged two-direction element has the two exact distinct nonzero eigenvalues
+PASS: T4a-membership the merged spectrum matches neither a rank-one scaled ray nor an identity ray
+PASS: T4b-menu the exact coplanar scaled-projector menu sums to identity
+PASS: T4b-dots all coplanar directions have dot product minus one-half, never antipodal
+PASS: T4c-projector-piece an exact nonparallel positive projector piece creates a negative eigenvalue
+PASS: T4c-identity-piece every positive identity piece leaves a negative eigenvalue below a rank-one projector
+PASS: T4d the exact coplanar rank-one element cannot receive a positive coin piece
+PASS: T5a-spectrum I-cP(n) has the symbolic eigenvalue multiset {1-c,1}
+PASS: T5a-rank-one-match solve-based matching to {c-prime,0} forces c=1
+PASS: T5a-identity-match solve-based matching to {c-prime,c-prime} only gives c=0, outside (0,1)
+PASS: T5b coin complements stay on the identity ray and pass the scaled-family test
+PASS: N1 the axiom memo pins readable values to record content alone
+PASS: N2 the effect-grade parent pins universal finite effect-menu eligibility
+PASS: N3 the scaled-projector parent states the paired-subfamily boundary
+PASS: N4-claim the source note pins its exact claim identifier
+PASS: N4-labels the source note contains all three grading hypothesis labels
+PASS: N4-threshold the source note states the exact three-outcome threshold
+TOTAL: PASS=42 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,4 @@
+READ-ONLY adversarial review lens (convention/sign), block03. No file writes, no git. Verdict = final message.
+Read exactly: (1) docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md (2) scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py
+Hunt convention/sign defects: sigma0's z-coefficient and the (2+nz)/4 trace; the f-composition direction in T1b; the halved axis identity's coefficients and signs; the merge presentations' minus-outcome directions; the T4c eigenvalue pairs ((5±sqrt(65))/20 — recompute); the T5 characteristic-polynomial route. Recompute anything suspicious via python3 HEREDOC (no file writes).
+Output: "VERDICT: <n> blocker(s), <m> major, <k> minor" + numbered findings; if clean, the three likeliest failure points and why they pass.

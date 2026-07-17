@@ -2,11 +2,11 @@ loop: born-effect-menu-horn-20260717
 mode: single-block interactive (user-directed: pick critical TOE item, work to solution)
 goal: see GOAL.md — effect-menu horn forcing + product-menu boundary on the Born wall
 target_status: best-honest-status (bounded_theorem landing; audit later)
-branch: physics-loop/born-effect-menu-horn-block02-20260717 (stacked on block01)
+branch: physics-loop/born-effect-menu-horn-block03-20260717 (stacked on block02)
 base: origin/main @ 3ad141be24
-block: 02
-cycle: 2
-active_route: OPPORTUNITY_QUEUE item 1 (premise thinning; executed as the native scaled-projector family theorem)
+block: 03
+cycle: 3
+active_route: OPPORTUNITY_QUEUE items 1-remainder + 2, combined map-completion block (outcome threshold; mixed-projective forcing; incomparability)
 hard_residual_attacked: >
   Born-weights honest wall W3; the landed frontier's Gleason bridge input and
   H4 entangled-menu clause, sharpened via the menu-grade dial.
@@ -19,10 +19,10 @@ open_imports: none in this block's results; Gleason 1957 remains the landed proj
 no_go_routes: see NO_GO_LEDGER.md
 trace: see TRACE_GATE.md (upstream_support; negative slice = negative_route_pruning)
 review: pass (round 1 five-lens panel; all substantive findings fixed; see REVIEW_HISTORY.md)
-pr: block01 = #5472 (open); block02 = #5476 (open, stacked, base = block01 branch)
+pr: block01 = #5472; block02 = #5476; block03 = pending (stacked, base = block02 branch; cluster-cap evaluated OPEN in CLAIM_STATUS_CERTIFICATE_BLOCK03.md)
 next_exact_action: >
   Block02: review worker runner line-by-line; mutations; cache; sync
   __TOTAL__; panel; fixes; pipeline with block01-relative derived-surface
   restore + manifest refresh; commit; push; stacked PR (base block01).
 stop_condition: single block lands as one PR (or PR_BACKLOG on delivery failure)
-checkpoint: 2026-07-17 block02 complete — runner 60/0, 11 mutation families, panel pass, PR #5476
+checkpoint: 2026-07-17 block03 in flight — note authored, pre-battery 10/10, worker drafting

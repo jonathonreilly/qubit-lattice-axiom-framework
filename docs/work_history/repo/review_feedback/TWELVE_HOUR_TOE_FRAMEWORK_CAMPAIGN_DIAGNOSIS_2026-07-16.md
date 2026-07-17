@@ -210,6 +210,16 @@ without permanently recording every intermediate step and would relieve the
 storage pressure, but it cannot be smuggled in as “an open site's
 possibility.”
 
+Cycle 189 is the bounded positive counterexample to premature widening. For
+its complete two-qubit record packets, the fixed process reconstructs one
+density operator and every declared future Pauli statistic. Coherent state is
+a derived future-law calculator there, not an independent unrecorded
+variable. The unresolved discriminator is whether one local lattice process
+can retain that record-fibre sufficiency while carrying phase between sparse
+formation events. If equal record configurations can carry different phases
+that later change records, Qualification—not Record—comes under direct
+pressure.
+
 ## What is now established
 
 ### One coherent compiler substrate

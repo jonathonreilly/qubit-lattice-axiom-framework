@@ -149,7 +149,7 @@ def main() -> int:
     assert_contains(NOTE, "Does not add an axiom")
     assert_contains(NOTE, "**Claim boundary:** source-inventory support")
     assert_contains(NOTE, "No second physical-clock transfer is currently admitted.")
-    assert_contains(NOTE, "## Admission Manifest (2026-07-10)")
+    assert_contains(NOTE, "## Admission Manifest (2026-07-16)")
     check("not a theorem over all positive operators" in read(NOTE),
           "note states why the support is source-inventory, not algebraic exclusion")
 
@@ -199,7 +199,7 @@ def main() -> int:
     manifest = extract_manifest(NOTE)
     note_rel = "docs/" + NOTE.name
     parent_rel = "docs/" + SINGLE_CLOCK.name
-    check(manifest.get("manifest_date") == "2026-07-10", "manifest is explicitly dated 2026-07-10")
+    check(manifest.get("manifest_date") == "2026-07-16", "manifest is explicitly dated 2026-07-16")
     check(manifest.get("packet_notes") == [parent_rel, note_rel],
           "manifest packet is the parent theorem note plus this inventory note")
     authority = manifest.get("axiom_authority", {})
@@ -214,7 +214,7 @@ def main() -> int:
     parent_links = md_link_set(SINGLE_CLOCK)
     note_links = md_link_set(NOTE)
     union = parent_links | note_links
-    check(len(entries) == 19, "manifest enumerates 19 packet documents", f"got={len(entries)}")
+    check(len(entries) == 18, "manifest enumerates 18 packet documents", f"got={len(entries)}")
     check(len(entry_paths) == len(set(entry_paths)), "manifest entry paths are unique")
     missing = sorted(union - set(entry_paths))
     stale = sorted(set(entry_paths) - union)
@@ -246,9 +246,9 @@ def main() -> int:
           "per-entry h1 titles match the live document headers",
           f"mismatches={title_mismatches}")
     alias_rows = {e["path"]: e.get("alias_of") for e in entries if "alias_of" in e}
-    check(set(alias_rows) == {"docs/MINIMAL_AXIOMS_2026-06-05.md", "docs/MINIMAL_AXIOMS_2026-06-29.md"}
+    check(set(alias_rows) == {"docs/MINIMAL_AXIOMS_2026-06-29.md"}
           and set(alias_rows.values()) == {"minimal_axioms"},
-          "exactly the two minimal-axiom paths are marked as aliases of minimal_axioms")
+          "exactly the current minimal-axiom path is marked as an alias of minimal_axioms")
     aliased_ok = all(
         path == node.get("current_path") or path in node.get("aliased_paths", [])
         for path in alias_rows

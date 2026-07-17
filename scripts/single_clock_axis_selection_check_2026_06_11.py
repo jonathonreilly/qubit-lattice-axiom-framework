@@ -25,9 +25,10 @@ import check, [C] first-principles compute on explicit small lattices,
             escape: the spatial construction is obtained for free by
             conjugation.
   [RT-REC]  W-transport of the record/durability structure: the Record
-            axiom and the retained record rows are axis-blind by their
-            own text (no time metric, no forced formation, supplied
-            clock); durability (= operator-order monotonicity of the
+            axiom and the record rows it consumes are axis-blind by
+            their own text (no time metric, no forced formation
+            rule/site/rate, supplied clock); durability (= operator-order
+            monotonicity of the
             registered-record counter) is unitary-transport invariant
             (computed); the registration-cone slice package (CAP-K
             shape) maps exactly onto the x_1-axis package.
@@ -208,17 +209,22 @@ def block_RT_REC(sec, W, Ls, sites, idx):
     print("[RT-REC] ROUTE A2: does record durability anchor the axis? (textual + computed: NO)")
     print("-" * 72)
 
-    ax = read_doc("MINIMAL_AXIOMS_2026-06-05.md")
-    record("B", "Record axiom is axis-blind by its own text: a record supplies no "
-           "'time metric' (verbatim in the exclusion list)",
-           "time metric" in ax and "Durable means fixed once registered" in ax,
-           "MINIMAL_AXIOMS_2026-06-05.md")
+    ax = read_doc("MINIMAL_AXIOMS_2026-06-29.md")
+    ax_flat = " ".join(ax.split())
+    record("B", "Record axiom is axis-blind by its own text: 'time metric' sits in the "
+           "open-gates exclusion list and record permanence carries no axis label",
+           "time metric, and local observability of records" in ax_flat
+           and "records are permanent" in ax,
+           "MINIMAL_AXIOMS_2026-06-29.md")
 
     rf = read_doc("RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md")
-    record("B", "record formation is not forced (retained_no_go): 'at least one record "
-           "exists' is NOT an axiom consequence, so no axis can be derived from it "
-           "unconditionally",
-           "does **not** hold unconditionally" in rf, "record-formation no-go quoted")
+    record("B", "record formation supplies no axis datum: occurrence is axiom-supplied "
+           "('Records form.') and the narrowed no-go keeps the formation "
+           "rule/process/state/site/weight/rate unforced, so no axis label can be "
+           "derived from record formation",
+           'occurrence is axiom-supplied by "Records form."' in rf
+           and "do **not** force the formation rule/process/state/site/weight/rate" in rf,
+           "narrowed record-formation no-go quoted")
 
     cr = read_doc("POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md")
     record("B", "the clock map is supplied, never derived from records (retained_no_go): "

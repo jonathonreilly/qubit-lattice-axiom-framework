@@ -17,7 +17,8 @@ pipeline after independent review.
 of the substep-1 surface: it does **not** close the selection (the retained
 2026-05-25 no-go stands), but it (i) locates the tested open input at one
 named predicate — cross-site graded locality
-relative to the **retained** fermion-parity grading, written `GL(F)` below —
+relative to the formal fermion-parity grading on the supplied ordered
+occupation carrier, written `GL(F)` below —
 (ii) proves the selection **is forced conditionally on `GL(F)`** within the
 explicit three-candidate list used below, and
 (iii) records non-load-bearing boundary diagnostics for why this note does
@@ -28,11 +29,10 @@ removed.
 
 ## 0. Changelog
 
-- **2026-06-12.** Source-packet freshness repair after the new audit batch:
-  the 04-29 spin-statistics row is now `retained_bounded` for the scoped
-  CCR/free-boson exclusion, and the 05-16 Grassmann/free-CCR bridge is now
-  `retained`. This note no longer treats either row as a missing dependency:
-  it consumes their retained scoped content and records that neither supplies
+- **2026-06-12.** Source-packet repair after that audit batch. Live grades are
+  now left to the pipeline. This note does not treat the 04-29 spin-statistics
+  row or 05-16 Grassmann/free-CCR bridge as a missing dependency: it consumes
+  only their scoped source content and records that neither supplies
   the cross-site graded-locality predicate `GL(F)`.
 - **2026-06-10 (this note).** Written in response to the retained no-go's own
   escape clause. The no-go
@@ -58,8 +58,10 @@ the qubit tensor product of the Qubit axiom, and let
     F  =  ⊗_{x ∈ Λ} σ₃^(x)  =  (-1)^{Q̂_total}
 ```
 
-be the **retained** fermion-parity involution
-(`fermion_parity_z2_grading_theorem_note_2026-05-02`, retained). Both tied
+be the formal fermion-parity involution
+(`fermion_parity_z2_grading_theorem_note_2026-05-02`; current audit grade is
+pipeline-derived, not set here). Treating this operator as a physical grading
+requires a separate carrier/statistics bridge. Both tied
 realizations of the substep-1 matter generators are families of `F`-odd site
 fields on `H_Λ`:
 
@@ -68,7 +70,7 @@ fields on `H_Λ`:
   standard methodology, recomputed by the runner).
 
 **Definition (the predicate `GL(F)` — cross-site graded locality relative to
-the retained grading).** A realization `(ψ_x)_{x∈Λ}` of `F`-odd site fields
+the formal grading).** A realization `(ψ_x)_{x∈Λ}` of `F`-odd site fields
 satisfies `GL(F)` iff for all `x ≠ y`:
 
 ```text
@@ -147,12 +149,13 @@ admit it, and does not ask the audit to adjudicate a global supplier survey.
   consumed as a `GL(F)` supplier: its retained scope excludes the free CCR
   branch and leaves hard-core-vs-CAR selection out of scope.
 - [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
-  — (status per the ledger). **License used here:** the grading operator `F`, its
-  involution/spectrum/grading facts (F1)–(F7), used as the *algebraic
-  carrier* against which `GL(F)` is defined — exactly the role its own C4
-  anticipates. Its disclaimer ("does not by itself prove a physical
-  fermion-statistics selector or superselection rule") is preserved: (T1)
-  computes that the grading is frame-blind.
+  — current grade is pipeline-derived. **License used here:** after this
+  consumer supplies the ordered occupation carrier, the theorem's exact
+  `F`, involution, spectrum, balanced grading, and odd/even identities are
+  used as the *formal algebraic comparison* against which `GL(F)` is defined.
+  Its physical firewall is preserved: it selects no physical carrier,
+  statistics rule, superselection rule, or dynamics. Check (T1) computes that
+  the formal grading is frame-blind.
 - [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — baseline
   (Lattice, Qubit, Admissibility, Record). **License used here:** the
   one-qubit-per-site tensor-product carrier only.
@@ -170,35 +173,37 @@ payload. The T1-T3 proof above is complete without it. The diagnostic purpose
 is only to prevent a reader from mistaking this note for an unconditional
 statistics-selection or `GL(F)`-supplier theorem.
 
-- `axiom_first_spin_statistics_theorem_note_2026-04-29` (`retained_bounded`):
+- `axiom_first_spin_statistics_theorem_note_2026-04-29` (status per the
+  ledger):
   its load-bearing Step 2 hypothesis is the canonical CCR
   `[a_x, a_y^†] = δ_xy` (its eq. (6)), which the hard-core boson violates
-  on-site (`[a, a^†] = 1 - 2n ≠ I`, runner [D]), so its retained bosonic
+  on-site (`[a, a^†] = 1 - 2n ≠ I`, runner [D]), so its scoped bosonic
   exclusion reaches only the free boson. It re-proves the dimensional half
   and supplies no cross-site graded-locality/CAR/superselection input; hence
-  even after retention it does not supply the no-go's `GL(F)` escape clause.
-- `fermion_parity_z2_grading_theorem_note_2026-05-02` (retained): supplies
-  the carrier `F` but is frame-blind — both candidates' fields are `F`-odd
-  with `F`-even bilinears (runner [A]) — and it self-disclaims any selector
-  role (its C1/C4).
+  it does not supply the no-go's `GL(F)` escape clause.
+- `fermion_parity_z2_grading_theorem_note_2026-05-02` (current grade is
+  pipeline-derived): supplies only the formal `F` after the ordered carrier is
+  given and is frame-blind — both candidates' fields are `F`-odd with
+  `F`-even bilinears (runner [A]). It supplies no physical carrier or selector.
 - `axiom_first_reflection_positivity_theorem_note_2026-04-29`
-  (retained_bounded): its audited scope is the pure-gauge Wilson plaquette
+  (status per the ledger): its scoped claim is the pure-gauge Wilson plaquette
   temporal-gauge surface with no fermion claim, and the finite positivity
   surface is frame-blind anyway (identical hopping `H`, hence identical
-  `T = e^{-τH}`; runner [A]), consistent with the retained
+  `T = e^{-τH}`; runner [A]), consistent with the cited
   `car_from_positivity_neutrality_note_2026-06-02` no-go.
 - `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`
-  (`retained`): its dimensional readout is blind to the
+  (status per the ledger): its dimensional readout is blind to the
   hard-core-vs-Grassmann choice (`2 = 2`, runner [A]).
 - `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`
-  (retained_pending_chain, decoration): constructs the CAR frame but
+  (status per the ledger; used only as a construction): constructs the CAR frame but
   explicitly disclaims uniqueness, so it exhibits a `GL(F)`-passing candidate
   without excluding the `GL(F)`-failing one.
 - `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28`
-  (retained_no_go): discrete rotation + exchange representation data admit
+  (status per the ledger): discrete rotation + exchange representation data admit
   both exchange signs, so the rotation-covariance route does not supply
   `GL(F)`.
-- `ring_monodromy_does_not_force_car_note_2026-06-04` (retained_no_go):
+- `ring_monodromy_does_not_force_car_note_2026-06-04` (status per the
+  ledger):
   closed-ring monodromy/boundary data do not force CAR, so the loop-holonomy
   route does not supply `GL(F)`.
 
@@ -244,8 +249,9 @@ eq.-(6) hypothesis class. This diagnostic is intentionally not a theorem
 step: the conditional discriminator and falsification leg close in (T1)-(T3).
 
 **Load-bearing step.** The decisive step is (T2)'s non-constancy
-computation: *`GL(F)` distinguishes the two tied candidates while every
-retained input is computed constant across them* — a first-principles finite
+computation: *`GL(F)` distinguishes the two tied candidates while every other
+tested input, including the formal parity grading, is computed constant across
+them* — a first-principles finite
 linear-algebra computation from the baseline objects plus the explicitly
 declared `GL(F)` hypothesis (rubric class (C) for the conditional statement;
 nothing here is a renaming of the conclusion, since the falsification leg
@@ -263,7 +269,8 @@ shows the conclusion fails when the hypothesis is dropped).
 - **No CAR-frame uniqueness.** (T2) selects the statistics *class*; the JW
   note's non-uniqueness disclaimer is untouched.
 - **No claim about other locality formalisms.** `GL(F)` is the specific
-  graded-locality predicate defined in §1 relative to the retained `F`; this
+  graded-locality predicate defined in §1 relative to the formal `F` on the
+  supplied ordered carrier; this
   note does not claim it is the unique possible selector, only that it is
   sufficient (T2), not supplied by this row, and minimal in the sense of
   (T3) (not ungraded-algebra-derivable).
@@ -274,8 +281,8 @@ shows the conclusion fails when the hypothesis is dropped).
 
 Before: "(B-stat): statistics selection open (S2/FS input)". After this note
 (if independently retained): "(B-stat′): the missing tested input is the cross-site
-graded-locality predicate `GL(F)` relative to the retained parity grading
-`F`; given `GL(F)`, the Grassmann/CAR class is forced on the substep-1
+graded-locality predicate `GL(F)` relative to the formal parity grading
+`F` after a separate physical-carrier/statistics bridge; given `GL(F)`, the Grassmann/CAR class is forced on the substep-1
 surface (conditional closure, this note); without it, the retained
 2026-05-25 no-go holds; `GL(F)`/FS is a genuine open-premise candidate, not
 currently retained or admission-registered."
@@ -302,12 +309,12 @@ boundary checks:
 [B] PASS: selection certificate: exactly one of three candidates passes {dim = 2} AND GL(F): ['Grassmann/CAR']  (the forcing is CONDITIONAL on GL(F); the baseline does not supply GL(F))
 [C] PASS: with GL(F) removed, every remaining tested predicate is constant across the two frames (tie restored)  (reproduces STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING facts (C)/(D))
 [D] PASS: hard-core ladders VIOLATE the 04-29 S2 hypothesis on-site: [a, a^+] = 1 - 2n != I (defect norm = 2)  (boundary diagnostic only: this note does not consume 04-29 as a GL(F) supplier)
-[E] PASS: source packet status: 04-29 spin-statistics row is retained_bounded and consumed only for CCR/free-boson exclusion
+[E] PASS: formal parity theorem is consumed only after an ordered carrier is supplied
 ```
 
 ```yaml
 claim_type_author_hint: bounded_theorem
-claim_scope: "Substep-1 statistics selection sharpened on the tested surface: every retained input checked here (per-site dim, ungraded algebra, retained Z2 parity grading F, finite transfer positivity) is computed constant across the tied hard-core-boson and Grassmann/CAR frames; the cross-site graded-locality predicate GL(F) relative to the retained F is non-constant (Grassmann passes, hard-core fails) and, with the retained dim-2 free-boson exclusion, selects the Grassmann/CAR class conditionally on GL(F) within the explicit three-candidate list; removing GL(F) restores the tie (the retained 2026-05-25 no-go is reproduced, not contradicted); GL(F)/FS remains unsupplied by this row and no unconditional selection is claimed; the source-boundary diagnostics about possible suppliers are non-load-bearing and outside this row's theorem payload."
+claim_scope: "Substep-1 statistics selection sharpened on the tested surface: every other tested input (per-site dim, ungraded algebra, the formal Z2 parity grading F on a supplied ordered occupation carrier, finite transfer positivity) is computed constant across the tied hard-core-boson and Grassmann/CAR frames; the cross-site graded-locality predicate GL(F) relative to that formal F is non-constant (Grassmann passes, hard-core fails) and, with the retained dim-2 free-boson exclusion, selects the Grassmann/CAR class conditionally on GL(F) within the explicit three-candidate list; identifying F as a physical grading requires a separate carrier/statistics bridge; removing GL(F) restores the tie (the retained 2026-05-25 no-go is reproduced, not contradicted); GL(F)/FS remains unsupplied by this row and no unconditional selection is claimed; the source-boundary diagnostics about possible suppliers are non-load-bearing and outside this row's theorem payload."
 upstream_dependencies:
   - minimal_axioms
   - staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25

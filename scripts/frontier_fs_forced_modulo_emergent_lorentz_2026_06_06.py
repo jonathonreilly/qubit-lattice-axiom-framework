@@ -43,7 +43,9 @@ ALSO statistics-blind -- both boson and fermion satisfy the multi-loop cocycle, 
 the hard-core boson is not frustrated out.  (theta-graph: beta1 free, no torsion.)
 
 CHEAPEST PRINCIPLE IF EVER FORCED: graded locality / fermion-parity
-superselection -- a sign-selection on the retained Z2 fermion-parity grading.
+superselection -- a sign-selection relative to the formal Z2 grading after an
+ordered occupation carrier is supplied. The grading theorem selects neither
+the physical carrier nor the rule.
 It would still be an extra theory principle if invoked, and it is NOT currently
 forced (the continuum/R route remains open).
 
@@ -115,10 +117,19 @@ def block3_multiloop_refuted():
 
 def block4_cheapest_principle():
     print("\n[BLOCK 4] If ever forced: cheapest principle is WEAKER than an axiom")
-    # The retained fermion-parity grading supplies the two Z2 parity sectors.
-    # The only missing datum is the SIGN between the two existing sectors.
-    check("retained fermion-parity grading supplies the two Z2 parity sectors",
-          True)
+    # On a supplied ordered occupation carrier, the formal grading constructs
+    # two Z2 sectors. It does not select that carrier or a physical rule.
+    z_local = np.diag([1.0, -1.0])
+    formal_parity = np.kron(z_local, z_local)
+    eigenvalues = np.linalg.eigvalsh(formal_parity)
+    note_flat = " ".join(NOTE.read_text(encoding="utf-8").split())
+    check("formal fermion-parity theorem constructs two sectors on its supplied carrier",
+          np.allclose(formal_parity @ formal_parity, np.eye(4))
+          and np.count_nonzero(np.isclose(eigenvalues, 1.0)) == 2
+          and np.count_nonzero(np.isclose(eigenvalues, -1.0)) == 2
+          and "after an ordered occupation carrier is supplied" in note_flat
+          and "selects neither that physical carrier nor the superselection rule" in note_flat,
+          "exact two-mode matrix check plus source-boundary guard")
     check("cheapest fallback = graded locality / parity-superselection = a SIGN-SELECTION between 2 existing sectors",
           True, "not supplied by Record; would be an extra theory principle if ever invoked")
     check("NOT currently forced: the continuum/R route remains open => do not invoke it prematurely", True)

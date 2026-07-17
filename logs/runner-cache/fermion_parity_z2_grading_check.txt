@@ -1,102 +1,30 @@
 ===== runner cache v1 =====
 runner: scripts/fermion_parity_z2_grading_check.py
-runner_sha256: 5b43fff97465a6c163c3bb8c303aeed7367550c3202579d6b8a803d73543756f
+runner_sha256: ff0ed6563e57c41b967e7775facd14c0e20f43b55d0e25b9a2596daca2e83c51
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.74
 status: ok
 ----- stdout -----
-========================================================================
-FRAMEWORK OCCUPATION PARITY (-1)^Q̂ AND Z_2 GRADING
-========================================================================
-
-  Toy model: N = 4 sites, dim = 16
-
-  Computing (-1)^Q̂ via product of σ_3 over all sites
-  ||diag((-1)^Q̂) - diag(⊗ σ_3)|| = 0.000e+00
-
-------------------------------------------------------------------------
-TEST 1: (-1)^Q̂ is Hermitian
-------------------------------------------------------------------------
-  ||F - F†|| = 0.000e+00
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 2: ((-1)^Q̂)² = I  (involution)
-------------------------------------------------------------------------
-  ||F² - I|| = 0.000e+00
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 3: [(-1)^Q̂, n̂_x] = 0  for all x  (n̂ is Z_2-even)
-------------------------------------------------------------------------
-  max ||[F, n̂_x]|| = 0.000e+00
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 4: Spec((-1)^Q̂) = {+1, -1}
-------------------------------------------------------------------------
-  Distinct eigenvalues: [np.float64(-1.0), np.float64(1.0)]
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 5: dim H_even = dim H_odd = 2^{N-1} = 8
-------------------------------------------------------------------------
-  dim H_even (eigenvalue +1) = 8
-  dim H_odd  (eigenvalue -1) = 8
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 6: {(-1)^Q̂, a_x} = 0  for all x  (ladder operator is Z_2-odd)
-------------------------------------------------------------------------
-  max ||{F, a_x}|| = 0.000e+00
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 7: [(-1)^Q̂, a_x^† a_y] = 0  (bilinears are Z_2-even)
-------------------------------------------------------------------------
-  max ||[F, a_x^† a_y]|| = 0.000e+00
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 8: [H_dyn, Q̂] = 0 implies [H_dyn, F] = 0
-------------------------------------------------------------------------
-  ||[H_number, Q̂]|| = 0.000e+00
-  ||[H_number, F]|| = 0.000e+00
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 9: N = 1 equivalence; N >= 2 converse counterexample
-------------------------------------------------------------------------
-  N = 1 ||F - (I - 2 Q̂)|| = 0.000e+00
-  N = 1 ||[H, F] + 2[H, Q̂]|| = 0.000e+00
-  ||H_pair - H_pair†|| = 0.000e+00
-  ||[H_pair, F]|| = 0.000e+00
-  ||[H_pair, Q̂]|| = 5.657e+00  (nonzero)
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 10: [H_dyn, F] = 0 iff parity-mixing blocks vanish
-------------------------------------------------------------------------
-  commutator/block identity deviation = 0.000e+00
-  parity-projected cross-block norm = 0.000e+00
-  parity-projected ||[H, F]|| = 0.000e+00
-  generic cross-block norm = 1.201e+01  (nonzero)
-  generic ||dF/dt|| = ||i[H, F]|| = 2.403e+01
-  STATUS: PASS
-
-========================================================================
-  Test 1 ((-1)^Q̂ Hermitian):                       PASS
-  Test 2 (((-1)^Q̂)² = I involution):                PASS
-  Test 3 ([F, n̂_x] = 0):                            PASS
-  Test 4 (Spec = {+1, -1}):                         PASS
-  Test 5 (Z_2 grading dim balance):                 PASS
-  Test 6 (ladder operator is Z_2-odd: {F, a_x} = 0): PASS
-  Test 7 (bilinear a_x^† a_y is Z_2-even):           PASS
-  Test 8 (number conservation implies parity):         PASS
-  Test 9 (N=1 equivalence; N>=2 converse false):        PASS
-  Test 10 ([H, F] iff no parity-mixing blocks):         PASS
-  OVERALL: PASS
+ORDERED FINITE-MODE FERMION PARITY — NORMAL EXACT MODE
+[PASS] source/import firewall: violations=[]
+[PASS] ordered occupation basis and exact n_x/Q action: Q diagonal=(0, 1, 1, 2, 1, 2, 2, 3)
+[PASS] Jordan-Wigner construction realizes the full CAR: checked 27 exact anticommutators
+[PASS] integer Q spectral decomposition: spectrum=[0, 1, 2, 3]
+[PASS] F=exp(i*pi*Q) equals spectral signs and tensor-product Z: three independently constructed exact matrices agree
+[PASS] F is Hermitian, unitary, and involutive: F^dagger=F and F^2=I exactly
+[PASS] both parity eigenvalues occur with dimensions 2^(N-1): sector dimensions=[(1, 1, 1), (2, 2, 2), (3, 4, 4), (4, 8, 8), (5, 16, 16), (6, 32, 32)]
+[PASS] H_N is the direct sum of exact even/odd projectors: ranks=(4,4)
+[PASS] every a_x and a_x^dagger is parity odd: checked 6 generators
+[PASS] monomials acquire (-1)^degree under F conjugation: checked=1555, nonzero=625, degrees=0..4
+[PASS] number-conserving hopping also conserves parity: both exact commutators vanish
+[PASS] exact pair Hamiltonian preserves parity but not number: H_pair=|00><11|+|11><00| and [Q,H_pair]=2create-2annihilate
+[PASS] [H,Q]=0 implies [H,F]=0 for the full matrix-unit basis: number support=20, parity support=32
+[PASS] N=1 has F=I-2Q and equal commutants: the two eigenspace decompositions coincide
+[PASS] [H,F]=0 iff parity-mixing blocks vanish: generic block identity plus a complete matrix-unit basis check
+[PASS] Heisenberg derivative i[H,F] detects parity conservation: self-adjoint parity-even and parity-odd Hamiltonians separate exactly
+[PASS] number commutant is strictly smaller than parity commutant for N=3: dimensions=(20,32)
+TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----
 

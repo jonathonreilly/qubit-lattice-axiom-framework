@@ -22,9 +22,11 @@ spin-statistics / FS wall — the matter sector's highest-leverage residual
 
 ## Wall (neutral)
 
-The per-site `Z₂` fermion-parity grading, Pauli exclusion, and the Berezin
-determinant are **retained**; the **cross-site fermion exchange sign** (CAR / −1,
-vs hard-core-boson CCR) is **not forced** from `{Lattice, Quantum, Record}`. A
+The cited occupation-parity theorem gives a **formal** `Z₂` grading after an
+ordered occupation carrier is supplied; it does not select that physical
+carrier or a superselection rule, and its current grade is pipeline-derived.
+The **cross-site fermion exchange sign** (CAR / −1, vs hard-core-boson CCR) is
+**not forced** from `{Lattice, Quantum, Record}`. A
 hard-core boson has the same per-site dim 2 / `Z₂` grading / Pauli exclusion; only
 the cross-site exchange sign differs. The standard spin-statistics theorem needs
 Lorentz invariance + microcausality + positivity — the lattice lacks manifest
@@ -54,10 +56,12 @@ packet.
    `H₁(UD₂) = Z¹⁶ ⊕ Z₂`** — the smallest concrete `Z³` graph where the exchange
    `Z₂` appears (to be independently re-verified; the dichotomy itself is
    `retained_bounded` in the graph-braid notes).
-3. **Precise location (the sharpest reframe).** The `Z₂` fermion-parity grading
-   `F = (−1)^Q` is the retained central-sector datum from
-   `fermion_parity_z2_grading_theorem`, identical in the boson and fermion
-   frames. Record registers a supplied/derived central-sector label and
+3. **Precise location (the sharpest reframe).** After a common ordered
+   occupation carrier and occupation labeling are supplied, the formal `Z₂`
+   grading `F = (−1)^Q` from `fermion_parity_z2_grading_theorem` is identical
+   in the boson and fermion frames. The theorem itself does not make that
+   grading a physical central-sector datum. Conditional on a separate bridge
+   that does, Record registers a supplied/derived central-sector label and
    explicitly "supplies no within-sector data." The exchange **sign** is
    within-sector data. So this packet locates the residual: Record is silent on
    the sign once the central grading is in place; it does not derive CAR. That is
@@ -82,8 +86,8 @@ the runner:
 2. the exchange topology route supplies the order-two sign dichotomy
    `{+1, -1}` but does not select the sign;
 3. the Record boundary used here is only that Record supplies no
-   within-sector exchange-sign datum once the retained central fermion-parity
-   label is in place.
+   within-sector exchange-sign datum once the separately bridged central
+   fermion-parity label is in place.
 
 The route portfolio below is not a closure theorem. In particular, the
 multi-loop graded-net route is an open target, the continuum-migration route is
@@ -111,8 +115,9 @@ protocol's forbidden outcome).
 
 ## Honest scope
 
-This is a **location + route-boundary map**, not a closure. The retained
-central-sector grading is not the within-sector exchange sign; Cl(3) does not
+This is a **location + route-boundary map**, not a closure. The formal grading,
+even if separately bridged to a physical central-sector label, is not the
+within-sector exchange sign; Cl(3) does not
 supply that sign; topology leaves a `+1/-1` dichotomy; and the multi-loop
 graded-net consistency route remains un-refuted. The verified facts are exact;
 the 3×3×2 `H₁` is from the fan-out and flagged for re-verification. No new axiom.
@@ -122,7 +127,8 @@ the 3×3×2 `H₁` is from the fan-out and flagged for re-verification. No new a
 - **Reproven here** (runner): `ω = i·I`, `ω² = −I`, only `G=0` anticommutes all
   three Paulis; `Hom(Z₂,U(1)) = {±1}`; and the source-scope guards that keep the
   route portfolio non-closing.
-- **Cited**: the four repo no-gos; `fermion_parity_z2_grading_theorem` (retained);
+- **Cited**: the four repo no-gos; the formal ordered-carrier scope of
+  `fermion_parity_z2_grading_theorem` (current grade pipeline-derived);
   the graph-braid dichotomy (retained_bounded); the Record axiom boundary
   (`MINIMAL_AXIOMS_2026-06-05`); literature (Allen–Mondragon, DHR, Berry–Robbins,
   Leinaas–Myrheim, Abrams/HKRS — comparators only).

@@ -123,8 +123,10 @@ out. So no static graph-braid route forces the sign.
 
 If neither the continuum/`R` route nor any static route closes it, the cheapest
 closer is **graded locality / fermion-parity superselection** — a sign-selection
-on the retained `Z₂` fermion-parity grading
-(`fermion_parity_z2_grading_theorem`). That would still be an extra theory
+relative to the formal `Z₂` grading constructed by
+`fermion_parity_z2_grading_theorem` after an ordered occupation carrier is
+supplied. The grading theorem selects neither that physical carrier nor the
+superselection rule. The rule would still be an extra theory
 principle if invoked; it is **not currently forced** (the continuum/`R` route
 remains open), so it should not be invoked prematurely or attributed to Record.
 
@@ -183,7 +185,8 @@ comparator only.
   not an imported audit verdict.
 - **Cited**: `per_site_su2_spin_half`, `internal_external_su2_merger`,
   `cl3_oh_cubic_lift`, `emergent_lorentz_invariance`,
-  `fermion_parity_z2_grading_theorem`, `flavor_spin_statistics_forces_modulo_reconstruction`,
+  the formal algebraic scope of `fermion_parity_z2_grading_theorem`,
+  `flavor_spin_statistics_forces_modulo_reconstruction`,
   the four FS no-gos; literature (Pauli 1940; Streater–Wightman; emergent-Lorentz
   fixed points arXiv:1305.0011/1506.07570; Levin–Wen cond-mat/0302460) as comparators.
 

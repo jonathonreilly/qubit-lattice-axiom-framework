@@ -357,16 +357,16 @@ def chain_composition_T4_T5() -> Tuple[bool, str]:
 
 
 # ============================================================================
-# Authority enumeration (18 cited retained/support/admissible authorities)
+# Authority enumeration (18 cited, individually graded/support/admissible authorities)
 # ============================================================================
 
 
 def authority_enumeration() -> Tuple[bool, str]:
     """Verify the 20 cited authorities are enumerated correctly.
 
-    Matches the note's premise + retained/support tables exactly:
+    Matches the note's premise + authority tables exactly:
       - 2 repo-baseline surfaces
-      - 16 retained / support / admissible-standard-math citations
+      - 16 individually graded / support / admissible-standard-math citations
         (U2, U4, S2, F1, NR, BPG, RP, RS, CD, LR, LN, SC, FP, M3,
         NQ, S3T)
       - 2 additional substep-required citations (SPI: site-phase
@@ -378,7 +378,7 @@ def authority_enumeration() -> Tuple[bool, str]:
         ("U2", "retained: Cl(3) per-site uniqueness", "AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29"),
         ("U4", "retained: per-site Hilbert dim 2", "CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02"),
         ("S2", "support: spin-statistics", "AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29"),
-        ("F1", "retained: Z_2 fermion-parity", "FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02"),
+        ("F1", "formal Z_2 grading after the T2 carrier bridge; live grade pipeline-derived", "FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02"),
         ("NR", "retained: no Cl(3)-preserving taste projection", "frontier_generation_rooting_undefined.py"),
         ("BPG", "admissible standard math: bipartite-graph parity", "graph theory"),
         ("RP", "retained: A11 RP + OS reconstruction", "AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29"),
@@ -395,7 +395,7 @@ def authority_enumeration() -> Tuple[bool, str]:
         ("APBC", "retained framework convention: anti-periodic boundary on Lambda in Z^3", "minimal-axioms ledger"),
     ]
     # Authority count: 20 distinct authorities matching the note's premise +
-    # retained/support tables exactly (repo baseline + 18 retained/support/admissible).
+    # authority tables exactly (repo baseline + 18 individually graded/support/admissible).
     expected_count = 20
     ok = len(authorities) == expected_count
     msg = f"Authority enumeration: {len(authorities)} authorities cited (expected {expected_count})."

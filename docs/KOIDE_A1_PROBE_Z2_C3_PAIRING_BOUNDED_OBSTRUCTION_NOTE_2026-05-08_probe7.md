@@ -95,7 +95,7 @@ not a Z_2-derived halving.
 | Embed | Cl⁺(3) ≅ ℍ → SU(2)_L; ω = Γ_1 Γ_2 Γ_3 pseudoscalar central with ω² = -I | retained: [`CL3_SM_EMBEDDING_THEOREM.md`](CL3_SM_EMBEDDING_THEOREM.md) |
 | Circulant | C_3-equivariant Hermitian on hw=1 is `aI + bU + b̄U^{-1}` | retained: [`KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`](KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md) R1 |
 | KoideAlg | Koide Q = 2/3 ⟺ a₀² = 2|z|² ⟺ |b|²/a² = 1/2 (algebraic) | retained: [`CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md`](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md) |
-| FermPar | F = (-1)^Q̂_total is positive_theorem on framework Fock; Z_2-EVEN on bilinears | retained: [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) F7 |
+| FermPar | On a supplied ordered occupation space, `F = (-1)^Q̂_total` is `Z_2`-even on bilinears; the theorem selects no physical carrier or superselection rule | current grade is pipeline-derived: [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) |
 | CircParity | P_{23}-Z_2 acts on Hermitian-circulant family decomposing it into even (real-b) and odd (imaginary-b) parts | retained: [`CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md`](CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md) T1, T2 |
 | Z2HW1 | Z_2 = ⟨(12)⟩ acting on hw=1 ordered basis (X_3, X_1, X_2) gives 5-real-parameter Hermitian normal form | proposed_retained: [`Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md`](Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) |
 | APBC | Anti-periodic boundary conditions on Λ ⊂ Z³ are framework substrate convention | retained per [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) APBC premise |
@@ -138,12 +138,13 @@ this proposal.
 
 **Theorem.** On A1+A2 + retained CL3_SM_EMBEDDING + retained
 KOIDE_CIRCULANT_CHARACTER + retained CIRCULANT_PARITY_CP_TENSOR +
-retained FERMION_PARITY_Z_2_GRADING + retained APBC convention +
+the formal FERMION_PARITY_Z_2_GRADING after supplying the occupation-carrier
+identification described below + retained APBC convention +
 retained Z2_HW1_MASS_MATRIX parametrization + admissible standard
 math:
 
 ```
-None of the 5 retained-grade Z_2 candidates {inversion (S↔S²),
+None of the 5 inventoried Z_2 candidates {inversion (S↔S²),
 (12)-axis-transposition, pseudoscalar ω-flip, fermion parity F,
 APBC↔PBC twist} paired with C_3[111] forces |b|²/a² = 1/2 on
 C_3-equivariant Hermitian circulants on hw=1.
@@ -246,16 +247,20 @@ trivial × C_3) but the Z_2 contributes no information.
 
 ### Barrier 4: Fermion parity F = (-1)^Q̂_total — trivial on bilinears
 
-Per [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
-property F7: `[F, a_x^† a_y] = 0`. F is **Z_2-EVEN on bilinears**.
+Per [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md),
+`[F, a_x^† a_y] = 0` on the theorem's supplied ordered occupation space.
+Thus the **adjoint action** of `F` is trivial on even bilinears.
 
-The hw=1 generation triplet lives in the bilinear sector (per the
-staggered-Dirac realization, the BZ-corner states correspond to
-fermion-bilinear occupation patterns). On the bilinear sector, F acts
-as +I (Z_2-charge 0).
+Applying that statement to the `hw=1` generation algebra additionally requires
+the staggered-realization bridge identifying its operators with even
+occupation monomials. The parity theorem neither supplies that physical
+carrier identification nor a superselection rule. Conditional on this
+consumer's stated staggered-realization bridge, conjugation by `F` acts as the
+identity on the `hw=1` bilinear operators (`Z_2` charge zero).
 
-Trivial action ⟹ no constraint. Z_6 generated trivially as in
-Barrier 3. The runner verifies all ratios are F-equivariant.
+That conditional trivial adjoint action gives no ratio constraint. The runner
+verifies all ratios are `F`-equivariant on the supplied formal representation;
+it does not promote the representation to a physical selector.
 
 ### Barrier 5: APBC↔PBC boundary-condition Z_2 — substrate-level only
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py
-runner_sha256: 0ec146e9fd08e673c4d663135ae51c7900ca17a83791d6a1e91ae0e3fc6d2549
+runner_sha256: a0e0ee54ccefe83364034c462253b595f185df2446de9338ba2f97a684176dd0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -37,7 +37,7 @@ FS stress-test: conditional 'forced-modulo emergent-Lorentz + R' route map
   [PASS] => BOTH survive => multi-loop is statistics-BLIND; HCB not frustrated out (opening refuted)  --  theta-graph H1 free (beta1=3, no torsion): both +-1 are homomorphisms
 
 [BLOCK 4] If ever forced: cheapest principle is WEAKER than an axiom
-  [PASS] retained fermion-parity grading supplies the two Z2 parity sectors
+  [PASS] formal fermion-parity theorem constructs two sectors on its supplied carrier  --  exact two-mode matrix check plus source-boundary guard
   [PASS] cheapest fallback = graded locality / parity-superselection = a SIGN-SELECTION between 2 existing sectors  --  not supplied by Record; would be an extra theory principle if ever invoked
   [PASS] NOT currently forced: the continuum/R route remains open => do not invoke it prematurely
 

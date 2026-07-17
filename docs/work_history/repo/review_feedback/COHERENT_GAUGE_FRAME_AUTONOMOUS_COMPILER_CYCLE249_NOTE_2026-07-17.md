@@ -69,10 +69,10 @@ unitary conjugation gives
 E_coh G = G_physical E_coh
 ```
 
-on the declared Cycle-235 code space.  The runner tests the actual Cycle-219
-six-mode Fock coin, both Cycle-230 `A/B` FSWAP factors, and the Cycle-230
-contact.  Intertwining and coherent uncompute residuals are at most
-`1.82e-16`; branch-probability residuals are at most `2.09e-17`.  The update
+on the declared Cycle-235 code space.  The runner tests the fixed Cycle-230
+six-mode Fock coin at `beta=-0.3`, both Cycle-230 `A/B` FSWAP factors, and
+the Cycle-230 contact.  Intertwining and coherent uncompute residuals are at
+most `1.82e-16`; branch-probability residuals are at most `1.39e-17`.  The update
 uses no projective instrument and has ideal code leakage zero.
 
 The quantum-controlled signs are local.  On the square-pyramid map, the
@@ -87,7 +87,7 @@ homogeneous physical-law theorem here.
 
 The important gauge distinction is exact.  A local `k=B_t` lies in `ker H`.
 The data-only operation `Z_Q(k)` changes the actual coin and FSWAP, with
-commutator norms `10.6058660963` and `2.82842712475`; it is not a redundancy.
+commutator norms `10.6219092546` and `2.82842712475`; it is not a redundancy.
 The **paired** operation
 
 ```text
@@ -220,17 +220,17 @@ host-controlled conditional instruction.
 
 ### Actual Cycle-219 and Cycle-230 factors
 
-The executable controls use:
+The executable controls use the fixed Cycle-230 update:
 
-- `Gamma(C(-0.35))`, the actual `64 x 64` exterior lift of the Cycle-219
-  six-mode coin;
+- `Gamma(C(-0.3))`, the actual `64 x 64` exterior lift of the Cycle-230
+  six-mode coin from the Cycle-219 family;
 - the actual `4 x 4` fermionic SWAP for both Cycle-230 `A` and `B` stream
   matchings; and
 - the actual `64 x 64` onsite contact at diagnostic coupling `g=0.37`.
 
 | factor | intertwining residual | interference-uncompute residual | data-only gauge commutator |
 |---|---:|---:|---:|
-| Cycle-219 coin | `1.8113e-16` | `1.8113e-16` | `10.6058660963` |
+| Cycle-230 coin | `1.8158e-16` | `1.8158e-16` | `10.6219092546` |
 | Cycle-230 `A` FSWAP | `0` | `0` | `2.82842712475` |
 | Cycle-230 `B` FSWAP | `0` | `0` | `2.82842712475` |
 | Cycle-230 contact | `1.1696e-16` | `1.1696e-16` | `0` |
@@ -362,7 +362,7 @@ winding history or time.
 
 The incidence circuit passes every unit **coarse-cell** translation at
 `L=3,4,5,6`.  Its 15 face roles and 11 check roles are permuted exactly by
-all 24 proper-cubic frames.  The actual Cycle-219 coin and contact Fock
+all 24 proper-cubic frames.  The fixed Cycle-230 coin and contact Fock
 matrices commute with all 24 frame representations to residual below
 `2e-12`; the `A/B` outer-edge matching is carried by the checked graph
 permutation.  Every frame permutes `F_f` and `Q_f` together, so
@@ -410,7 +410,7 @@ The runner retains failures rather than projecting them away:
 - flipping one check bit alone lies outside `im H` at all four sizes and is
   rejected by the lawful-domain guard;
 - deleting one side of the sign conjugation gives actual coin residual
-  `10.6058660963` and FSWAP residual `2.82842712475`; and
+  `10.6219092546` and FSWAP residual `2.82842712475`; and
 - the corresponding contact residual is exactly zero, as required by its
   sign independence.
 
@@ -472,7 +472,7 @@ Cycle 249 supplies or inherits explicitly:
 6. product `|+>_F` and `|0>_S` ancillary initialization;
 7. the incidence CNOT circuit, a 10-color implementation schedule, and
    pairwise `W_CZ` dressing;
-8. the Cycle-219 coin at `beta=-0.35`;
+8. the Cycle-230 coin at `beta=-0.3`, from the Cycle-219 common family;
 9. the Cycle-230 `A/B` FSWAP/contact order and diagnostic contact coupling;
 10. the period-64 placement, macro origin, blanks, routing, and two-site grid
     check repetition convention;
@@ -614,7 +614,7 @@ supplied-structure inventory.
 | `EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md:32,66,95-107` | exact local even algebra; bounded full-Fock E, Wilson preparation, and odd fixtures absent | supplies `E_0/G_0` boundary and exact odd/Wilson residual | yes |
 | `TRANSLATION_CUBIC_LOCAL_SYNDROME_DECODER_CYCLE244_NOTE_2026-07-17.md:83,272-291,549` | deterministic local section fails on even torus; coherent field remains live | directly constructs the named coherent alternative | yes |
 | same Cycle-244 note `:328-335` | odd code and rank-73 state absent | verifies unchanged exponent and fixture boundary | yes |
-| `COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md:32-45` | actual proper-cubic one-particle coin/mass family | uses its actual coin; mass state remains absent in `E_0` | yes |
+| `COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md:32-45` | proper-cubic one-particle coin/mass family | uses the fixed Cycle-230 `beta=-0.3` member; mass state remains absent in `E_0` | yes |
 | `SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md:32-56` | actual CAR coin/FSWAP/contact and rank-73 seam | tests the actual even gates; does not claim the absent seam state | yes |
 | `HAEGEMAN_PARITY_SECTOR_GAUGING_CYCLE245_NOTE_2026-07-17.md:54-82` | marked odd/common-Wilson sector route | live alternative only, not evidence against coherent even framing | no; scoped away |
 | `OFF_CODE_LOCAL_AUXILIARY_COMPLETION_CYCLE246_NOTE_2026-07-17.md:36-45,232-257` | free auxiliary algebra and Wilson/odd completion failures in a different ansatz | context only | no; not used as proof |

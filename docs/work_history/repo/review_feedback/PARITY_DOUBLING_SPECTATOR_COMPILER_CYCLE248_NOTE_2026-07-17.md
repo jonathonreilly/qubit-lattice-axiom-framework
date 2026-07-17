@@ -130,7 +130,7 @@ Z_s product_(a=1)^6 Z_a = +1.
 ```
 
 It has the right six-qubit code exponent and a six-`CNOT` local preparation.
-Because the Cycle-219 coin and Cycle-230 contact preserve cell parity,
+Because the fixed Cycle-230 coin and contact preserve cell parity,
 `coin tensor I_s` and `contact tensor I_s` intertwine exactly; their residuals
 are below `2e-12` and `2e-15` respectively.
 
@@ -196,13 +196,14 @@ G_cell = E_cell-block U_cell E_cell-block^dagger + U_off (I-P_cell),
 ```
 
 with any supplied unitary off-code completion `U_off` compatible with the code
-projector.  For the actual Cycle-219/230 factors:
+projector.  For the fixed Cycle-230 factors at `beta=-0.3`:
 
 - the Fock-lifted coin is parity even and has onsite bounded support;
 - the contact `exp(i g binom(N_x,2))` is diagonal and onsite;
 - the contact is identity on the zero- and one-particle sectors;
-- the copied occupation retains the Cycle-219 rest/analytic mass value
-  `0.5304258513857456` exactly within the predecessor tolerance;
+- the copied occupation retains the Cycle-230 rest/analytic mass values
+  `0.4534056541748851` and `0.4534056541748852` exactly within the
+  predecessor tolerance;
 - the Cycle-230 `L=3` principal sea still has original rank `73`; after copying,
   combined data-plus-spectator parity is even; and
 - the sampled rank-73 seam block retains singular range

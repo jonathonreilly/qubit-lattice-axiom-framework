@@ -543,16 +543,18 @@ def coherent_branch_test(gate: np.ndarray, mode_count: int, seed: int):
 
 
 def actual_update_controls() -> None:
-    species = c219.common_species(-0.35)
+    species = c219.common_species(c230.BETA)
     coin = c229.fock_lift(species.coin)
     fswap = np.asarray(
         [[1, 0, 0, 0], [0, 0, 1, 0], [0, 1, 0, 0], [0, 0, 0, -1]],
         dtype=complex,
     )
     occupations = np.asarray([state.bit_count() for state in range(64)])
-    contact = np.diag(np.exp(1j * 0.37 * occupations * (occupations - 1) / 2))
+    contact = np.diag(
+        np.exp(1j * c230.COUPLING * occupations * (occupations - 1) / 2)
+    )
     results = {
-        "Cycle219_coin": coherent_branch_test(coin, 6, 249),
+        "Cycle230_coin": coherent_branch_test(coin, 6, 249),
         "Cycle230_A_FSWAP": coherent_branch_test(fswap, 2, 250),
         "Cycle230_B_FSWAP": coherent_branch_test(fswap, 2, 251),
         "Cycle230_contact": coherent_branch_test(contact, 6, 252),
@@ -570,7 +572,7 @@ def actual_update_controls() -> None:
             }
         )
     check(
-        "the actual Cycle-219 coin and Cycle-230 A/B FSWAP and contact satisfy E_coh G = G_physical E_coh",
+        "the fixed Cycle-230 coin, A/B FSWAP, and contact satisfy E_coh G = G_physical E_coh",
         all(row["intertwining_residual"] < 3e-13 for row in results.values()),
         results,
     )
@@ -586,7 +588,7 @@ def actual_update_controls() -> None:
     check(
         "paired frame-data gauge transformations commute with every actual update although data-only mode parity changes coin and FSWAP",
         all(row["paired_gauge_commutator"] < 3e-12 for row in results.values())
-        and results["Cycle219_coin"]["data_only_commutator"] > 1e-6
+        and results["Cycle230_coin"]["data_only_commutator"] > 1e-6
         and results["Cycle230_A_FSWAP"]["data_only_commutator"] > 1e-6
         and results["Cycle230_B_FSWAP"]["data_only_commutator"] > 1e-6
         and results["Cycle230_contact"]["data_only_commutator"] < 1e-12,
@@ -807,7 +809,7 @@ def deletion_and_leakage_controls(data_cache) -> None:
         rows,
     )
 
-    species = c219.common_species(-0.35)
+    species = c219.common_species(c230.BETA)
     coin = c229.fock_lift(species.coin)
     signs = fock_signs(6, 1)
     deleted_coin_residual = float(
@@ -822,7 +824,9 @@ def deletion_and_leakage_controls(data_cache) -> None:
         np.linalg.norm(two_signs[:, None] * fswap * two_signs[None, :] - fswap)
     )
     occupations = np.asarray([state.bit_count() for state in range(64)])
-    contact = np.diag(np.exp(1j * 0.37 * occupations * (occupations - 1) / 2))
+    contact = np.diag(
+        np.exp(1j * c230.COUPLING * occupations * (occupations - 1) / 2)
+    )
     deleted_contact_residual = float(
         np.linalg.norm(signs[:, None] * contact * signs[None, :] - contact)
     )

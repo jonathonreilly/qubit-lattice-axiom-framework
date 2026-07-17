@@ -345,11 +345,13 @@ def spectator_transport_and_exchange_controls() -> None:
 
 
 def coin_contact_and_cell_route_controls() -> None:
-    species = c219.common_species(-0.35)
+    species = c219.common_species(c230.BETA)
     coin = c229.fock_lift(species.coin)
     parity = np.diag([(-1) ** state.bit_count() for state in range(64)]).astype(complex)
     occupations = np.asarray([state.bit_count() for state in range(64)])
-    contact = np.diag(np.exp(1j * 0.37 * occupations * (occupations - 1) / 2))
+    contact = np.diag(
+        np.exp(1j * c230.COUPLING * occupations * (occupations - 1) / 2)
+    )
     cell_encoder = cell_spectator_isometry(6)
     embedded_coin = np.kron(np.eye(2), coin)
     embedded_contact = np.kron(np.eye(2), contact)
@@ -642,7 +644,7 @@ def cycle245_single_update_control() -> None:
 
 
 def fixture_and_deletion_controls() -> None:
-    species = c219.common_species(-0.35)
+    species = c219.common_species(c230.BETA)
     rest = c219.rest_mass(species)
     _, _, eigenvalues, _ = c230.finite_torus_modes(3)
     sea_rank = int(np.sum(np.angle(eigenvalues) < -1e-10))

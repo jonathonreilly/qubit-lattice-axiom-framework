@@ -4,24 +4,35 @@
 Companion runner for
 docs/CROSS_SECTOR_FRONT_SPEED_B4_TWO_SURFACE_ALIGNMENT_BOUNDED_THEOREM_NOTE_2026-07-16.md
 
-Conditional bounded theorem; BOTH supplied legs are declared in the note:
-  (L1) ALLORDERS_B4 premise (A): exact B4 invariance of the regulated action and
-       measure on the Z^4 surface is SUPPLIED, not derived from the four axioms.
-  (L2) `taste_orbit_summed_front_speed_readout_context`: the taste-orbit-SUMMED
-       marginal curvature is identified as the physical fermion front-speed
-       observable. Declared supplied context, not derived; on the single-taste
-       reading the alignment theorem does NOT follow from this runner.
+Conditional bounded theorem; THREE supplied legs are declared in the note:
+  (leg 1) ALLORDERS_B4 premise (A): exact B4 invariance of the regulated
+       action and measure on the Z^4 surface is SUPPLIED, not derived from
+       the four axioms.
+  (leg 2) `taste_orbit_summed_front_speed_readout_context`: the taste-orbit-
+       SUMMED marginal curvature is identified as the fermion-side observable.
+       Declared supplied context, not derived; on the single-taste reading
+       the alignment theorem does NOT follow from this runner.
+  (leg 3) `euclidean_marginal_front_speed_bridge_context`: the finite-grid
+       EUCLIDEAN marginal coefficient ratio is identified with a physical
+       (Lorentzian) front speed. No pole readout or Euclidean-to-Lorentzian
+       continuation is constructed here; what the runner certifies is the
+       Euclidean marginal coefficient statement, and every "front speed"
+       phrase is conditional on this declared bridge.
 
-Statement verified: on the Z^4 B4-covariant Wilson+staggered surface, B4 pins
-EACH sector's diagonal marginal kinetic form isotropic (Reynolds rank 1 on the
-diagonal marginal coefficients), so each sector's front speed v = sqrt(c_s/c_t)
-equals 1 in lattice units, the overall kinetic normalizations Z_F and Z_G
-cancel in the ratio, and v_F/v_G = 1 order-by-order on that surface. On the
-broken-B4 surface (Z^3 + continuous tick; time-fixing S3), each sector's
-c_t/c_s is an independent singlet (Reynolds rank 2 per sector) and
-v_F/v_G = sqrt(a_F/a_G) is free: set by two independent per-sector
-anisotropies through their quotient alone (scale-invariant), unconstrained
-by the time-fixing symmetry.
+Statement verified (Euclidean marginal coefficients, conditional): on the Z^4
+B4-covariant Wilson+staggered surface, B4 pins EACH sector's diagonal marginal
+kinetic form isotropic -- for the fermion observable this requires the JOINT
+(taste, axis) representation lemma of V5, not the 4-component counting alone --
+so each sector's Euclidean marginal coefficient ratio c_s/c_t equals 1 in
+lattice units, the overall kinetic normalizations Z_F and Z_G cancel in the
+ratio, and the cross-sector ratio equals 1 order-by-order on that surface. On
+the broken-B4 surface (Z^3 + continuous tick; time-fixing S3), the same exact
+counting leaves each sector's c_t/c_s an independent singlet of the
+time-fixing subgroup: the time-fixing symmetry alone does NOT force
+cross-sector equality. That is a symmetry-counting statement only -- it does
+NOT establish that dynamics realizes arbitrary (a_F, a_G); the landed
+velocity-RG mutual-drag flow is a live dynamical route toward equality on
+that surface and is not contradicted here.
 
 The two computed one-loop channels are representative B4-covariant instances
 sharing the Wilson gluon block and the gauged staggered cos-vertex/seagull
@@ -32,15 +43,20 @@ V4 -- direction-blind on-surface, hence an isotropic marginal renormalization
 there). Each channel's own B4 covariance is what the theorem consumes; the
 instances are witnesses, not the proof.
 
-Verification map:
+Verification map (explicit-name-first; the V-codes key the note's table):
   V1  Clifford algebra for BOTH landed gamma conventions (taste kron set,
       seagull block set); W_B taste-rotation unitarity + conjugation for all
       16 taste shifts B; gauged cos-vertex taste covariance
       cos((p+piB-q/2)_mu) = (-1)^{B_mu} cos((p-q/2)_mu).
   V2  Gauge sector (seagull-runner kernel, T_F=1/2, 0.5*Pi/tot): seagull-
-      completed Pi transverse (Ward < 5% at N=12) with the bubble (no seagull)
-      assembly much worse; B4 isotropy piT(temporal)==piT(spatial) at v=1;
-      eta=1 fixed point (induced anisotropy vanishes at isotropic input).
+      completed Pi transverse (normalized Ward residual |khat.Pi|/(|khat||Pi|);
+      thresholds stated at the checks) with the bubble (no seagull) assembly
+      much worse; B4 isotropy piT(temporal)==piT(spatial) at v=1; eta=1 fixed
+      point (induced anisotropy vanishes at isotropic input); the anisotropic
+      control gauges the DEFORMED kernel consistently -- v_mu enters the
+      propagators, the vertices, AND the seagull (gauging
+      sum_mu v_mu sin(k_mu + A_mu)) -- and the deformed-kernel Pi stays
+      transverse at the same normalized-Ward threshold.
   V3  Fermion sector, three kernels on the honest observable
       G_hon = Dinv(p) - Sigma(p,B) (the observable READS the taste shift B --
       non-degeneracy gates, never a W_B-conjugation define-away):
@@ -52,19 +68,28 @@ Verification map:
       structural across N=12 and N=10 for (a) and (b).
   V4  Off-surface controls: temporal-edge deformed Wilson block
       (2/xi)sin(xi q0/2) at xi=0.7 / xi=1.3 gives NONZERO orbit anisotropy
-      with a sign straddle (rainbow) and NONZERO at xi=1.3 (gauged vertex);
-      mutual unconstraint (Pi carries no internal gluon line yet feels the
-      fermion-velocity deformation); tadpole T_mu (declared normalization:
+      with a sign straddle across xi=1 (rainbow; two samples -- no
+      isolated-zero claim) and NONZERO at xi=1.3 (gauged vertex);
+      cross-sector control (Pi carries no internal gluon line yet feels the
+      fermion-velocity deformation) -- a symmetry-tracking witness, NOT a
+      dynamical-unconstraint claim; tadpole T_mu (declared normalization:
       mean over the BZ grid, Landau form on the Wilson block) direction-blind
       on-surface and direction-sensitive off-surface.
-  V5  Exact invariant counting (sympy Reynolds): B4 acts on the diagonal
-      marginal coefficients through its S4 quotient with invariant rank 1
-      (isotropic image); the time-fixing S3 (O_h horn) has rank 2.
+  V5  Exact invariant counting (sympy Reynolds), TWO representations:
+      (i) the 4-dim diagonal marginal coefficient vector: B4 acts through its
+      S4 quotient with invariant rank 1 (isotropic image); the time-fixing S3
+      (O_h horn) has rank 2. (ii) the JOINT 24-dim (hw2 taste B, axis mu)
+      representation the fermion observable actually lives in: S4 invariant
+      rank 2 (orbit indicators {mu in B}, {mu not in B}); each axis lies in
+      exactly 3 of the 6 hw2 tastes, so UNIFORM taste averaging (the leg-2
+      orbit sum) composed with the Reynolds projector has rank 1 with
+      isotropic image; joint time-fixing S3 rank 6, averaging to rank 2.
   V6  Speed arithmetic (sympy exact + numeric): constant kinetic
       normalizations Z_F, Z_G cancel in v = sqrt(c_s/c_t); pinned-surface
       ratio = 1 identically; broken-surface ratio = sqrt(a_F/a_G) depends
       only on the quotient of the two independent per-sector anisotropies
-      (scale-invariance gated); numeric delta(v_F/v_G) = sqrt(vF2/vG2) - 1
+      (scale-invariance gated) -- symmetry counting only, no
+      dynamical-freedom claim; numeric delta(v_F/v_G) = sqrt(vF2/vG2) - 1
       = 0 on-surface, primary gate on the gauged cos-vertex curvatures with
       the rainbow curvatures as a labeled robustness gate.
 
@@ -273,6 +298,10 @@ def khat(qv):
 
 
 def pi_munu(qv, N, v, include_seagull=True, chunk=50000):
+    """Fermion-loop Pi for the kernel sum_mu v_mu sin(k_mu). Gauging
+    k_mu -> k_mu + A_mu puts v_mu into the propagators, the one-gluon vertex
+    v_mu cos(k_mu + q_mu/2), AND the seagull -v_mu sin(k_mu) delta_munu: the
+    anisotropic control deforms one consistent gauged kernel."""
     q = np.array(qv, float)
     ax = make_bz_grid(N)
     Pi = np.zeros((4, 4), complex)
@@ -292,8 +321,8 @@ def pi_munu(qv, N, v, include_seagull=True, chunk=50000):
         Dkq = np.sum(skq**2, 1)
         Sk = (-1j * np.einsum("ca,aij->cij", sk, gb)) / Dk[:, None, None]
         Skq = (-1j * np.einsum("ca,aij->cij", skq, gb)) / Dkq[:, None, None]
-        cmid = np.cos(k + q / 2)
-        sk_mu = np.sin(k)
+        cmid = np.cos(k + q / 2) * v
+        sk_mu = np.sin(k) * v
         for mu in range(4):
             Vmu = 1j * cmid[:, mu][:, None, None] * gb[mu]
             SV = Sk @ Vmu @ Skq
@@ -307,7 +336,10 @@ def pi_munu(qv, N, v, include_seagull=True, chunk=50000):
 
 
 def ward(Pi, qv):
-    return np.max(np.abs(khat(qv) @ Pi)) / (np.max(np.abs(Pi)) + 1e-30)
+    """Normalized Ward residual |khat . Pi| / (|khat| |Pi|) (max norms on Pi,
+    Euclidean norm on khat) -- dimensionless in the external momentum."""
+    kh = khat(qv)
+    return np.max(np.abs(kh @ Pi)) / (np.linalg.norm(kh) * np.max(np.abs(Pi)) + 1e-30)
 
 
 def piT(qaxis, q, N, v):
@@ -320,7 +352,7 @@ def piT(qaxis, q, N, v):
 
 # ===========================================================================
 def part_1() -> None:
-    hr("V1 -- Clifford (both sets), W_B conjugation, cos-vertex taste covariance")
+    hr("Clifford (both sets), W_B conjugation, cos-vertex taste covariance (V1)")
     for name, GG in (("taste kron set", Gt), ("seagull block set", list(gb))):
         worst = 0.0
         for mu in range(4):
@@ -363,17 +395,22 @@ def part_1() -> None:
 
 
 def part_2() -> dict:
-    hr("V2 -- gauge sector: seagull-completed transverse Pi, B4 isotropy, eta=1")
+    hr("Gauge sector: seagull-completed transverse Pi, B4 isotropy, eta=1 (V2)")
     N = 12
     iso = np.array([1.0, 1.0, 1.0, 1.0])
     qvs = ([0.0, 0.4, 0.0, 0.0], [0.3, 0.3, 0.0, 0.0], [0.0, 0.0, 0.0, 0.5])
     w_sea = [ward(np.real(pi_munu(qv, N, iso)), qv) for qv in qvs]
-    check("Ward khat_mu Pi_munu transverse < 5% WITH seagull (N=12)",
-          max(w_sea) < 0.05, f"worst violation={max(w_sea):.4f} < 0.05")
+    check("normalized Ward residual |khat.Pi|/(|khat||Pi|) < 5% WITH seagull (N=12)",
+          max(w_sea) < 0.05, f"worst residual={max(w_sea):.4f} < 0.05")
     w_bub = [ward(np.real(pi_munu(qv, N, iso, include_seagull=False)), qv) for qv in qvs]
-    check("bubble (no seagull) Ward violation is LARGE (seagull is load-bearing)",
-          min(w_bub) > 0.05 and min(w_bub) > 3 * max(w_sea),
-          f"bubble min={min(w_bub):.4f} > 0.05 and > 3x seagull worst")
+    check("bubble (no seagull) Ward residual is LARGE (seagull is load-bearing)",
+          min(w_bub) > 0.25 and min(w_bub) > 3 * max(w_sea),
+          f"bubble min={min(w_bub):.4f} > 0.25 and > 3x seagull worst")
+    v_def = np.array([1 - 0.05, 1 + 0.05, 1 + 0.05, 1 + 0.05])
+    w_def = [ward(np.real(pi_munu(qv, N, v_def)), qv) for qv in qvs]
+    check("DEFORMED-kernel Pi stays transverse (v_mu in propagators, vertices, "
+          "seagull; eps=0.10)",
+          max(w_def) < 0.05, f"worst residual={max(w_def):.4f} < 0.05")
 
     qq = [0.5, 0.3, 0.18]
     diffs = [abs(piT(0, q, N, iso) - piT(1, q, N, iso)) for q in qq]
@@ -394,7 +431,7 @@ def part_2() -> dict:
 
 
 def part_3() -> dict:
-    hr("V3 -- fermion sector: three kernels (rainbow; gauged Feynman; gauged Landau)")
+    hr("Fermion sector: three kernels -- rainbow, gauged Feynman, gauged Landau (V3)")
     n = 12
     qpts = bz_points(n)
     gluon1 = lambda q: gluon_block_lat(q, xi=1.0)
@@ -486,7 +523,7 @@ def part_3() -> dict:
 
 
 def part_4(p3: dict) -> None:
-    hr("V4 -- off-surface controls, mutual unconstraint, tadpole direction test")
+    hr("Off-surface controls, deformation-response witness, tadpole direction test (V4)")
     qpts = p3["qpts"]
     hw2 = p3["hw2"]
 
@@ -500,7 +537,7 @@ def part_4(p3: dict) -> None:
           abs(a07) > 1e-4, f"A(xi=0.7)={a07:+.4f}, |A| > 1e-4")
     check("rainbow xi=1.3 orbit anisotropy NONZERO off-surface",
           abs(a13) > 1e-4, f"A(xi=1.3)={a13:+.4f}, |A| > 1e-4")
-    check("xi<1 / xi>1 STRADDLE in sign (xi=1 isolated zero)",
+    check("xi<1 / xi>1 STRADDLE in sign across xi=1 (two samples; no isolated-zero claim)",
           np.sign(a07) != np.sign(a13) and abs(a07) > 1e-4 and abs(a13) > 1e-4,
           f"sign(0.7)={np.sign(a07):+.0f} sign(1.3)={np.sign(a13):+.0f}, both |A| > 1e-4")
 
@@ -510,9 +547,10 @@ def part_4(p3: dict) -> None:
     check("GAUGED-VERTEX orbit anisotropy NONZERO off-surface (xi=1.3)",
           abs(ag13) > 1e-4, f"A_g(xi=1.3)={ag13:+.4f}, |A_g| > 1e-4")
 
-    # mutual unconstraint: the fermion-loop Pi carries NO internal gluon line, so
-    # the gauge-block deformation cannot move it; the fermion-velocity deformation
-    # DOES move it.
+    # deformation-response witness (symmetry-tracking, NOT a dynamical-unconstraint
+    # claim): the fermion-loop Pi carries NO internal gluon line in this diagram
+    # class, so the gauge-block deformation cannot move it; the fermion-velocity
+    # deformation DOES move it.
     check("Pi FEELS the fermion deformation (induced anisotropy at eps=0.10 nonzero)",
           abs(_P2["ind1"]) > 1e-4,
           f"induced(0.10)={_P2['ind1']:+.4f}; Pi has no internal gluon line by construction")
@@ -537,7 +575,7 @@ def part_4(p3: dict) -> None:
 
 
 def part_5() -> None:
-    hr("V5 -- exact invariant counting (sympy Reynolds): B4 rank 1 vs O_h rank 2")
+    hr("Exact invariant counting + joint (hw2 taste, axis) representation lemma (V5)")
 
     def reynolds(perms):
         P = sp.zeros(4, 4)
@@ -569,9 +607,64 @@ def part_5() -> None:
           sp.simplify(img3[0] - 1) == 0 and all(sp.simplify(img3[i]) == 0 for i in (1, 2, 3)),
           f"image={list(img3)}")
 
+    # JOINT (hw2 taste B, axis mu) representation lemma. The fermion object is
+    # the 24-dim coefficient array c_{B,mu} (6 hw2 tastes x 4 axes), NOT a
+    # single 4-vector. S4 acts jointly: B -> B o p, mu -> p^{-1}(mu) (membership
+    # mu in B is preserved). Averaged over the full group / subgroup, the
+    # anti-homomorphism convention gives the same Reynolds projector.
+    hw2 = [tuple(s) for s in it.product([0, 1], repeat=4) if sum(s) == 2]
+    pairs = [(bi, mu) for bi in range(6) for mu in range(4)]
+    pidx = {p: i for i, p in enumerate(pairs)}
+
+    def joint_matrix(prm):
+        Mx = sp.zeros(24, 24)
+        for bi, mu in pairs:
+            B = hw2[bi]
+            newB = tuple(B[prm[j]] for j in range(4))
+            Mx[pidx[(hw2.index(newB), prm.index(mu))], pidx[(bi, mu)]] = 1
+        return Mx
+
+    def joint_reynolds(perms):
+        R = sp.zeros(24, 24)
+        for prm in perms:
+            R += joint_matrix(prm)
+        return R / len(perms)
+
+    in_b = sp.Matrix([1 if hw2[bi][mu] == 1 else 0 for bi, mu in pairs])
+    out_b = sp.Matrix([1 if hw2[bi][mu] == 0 else 0 for bi, mu in pairs])
+
+    R24 = joint_reynolds(list(it.permutations(range(4))))
+    check("JOINT S4 invariant rank on c_{B,mu} = 2 (orbit indicators {mu in B}, "
+          "{mu not in B})",
+          R24.rank() == 2 and R24 * in_b == in_b and R24 * out_b == out_b,
+          f"rank={R24.rank()}; both orbit indicators are fixed vectors")
+
+    counts = [sum(hw2[bi][mu] for bi in range(6)) for mu in range(4)]
+    check("each axis lies in EXACTLY 3 of the 6 hw2 tastes",
+          counts == [3, 3, 3, 3], f"counts={counts}")
+
+    Avg = sp.zeros(4, 24)
+    for bi, mu in pairs:
+        Avg[mu, pidx[(bi, mu)]] += sp.Rational(1, 6)
+    AR = Avg * R24
+    iso_img = all(sp.simplify(AR[i, j] - AR[0, j]) == 0
+                  for j in range(24) for i in range(1, 4))
+    check("UNIFORM hw2 averaging o S4 Reynolds: rank 1, image ISOTROPIC "
+          "(the V3 orbit-sum zero is this representation-forced projection)",
+          AR.rank() == 1 and iso_img, f"rank={AR.rank()}; all rows equal")
+
+    R24_3 = joint_reynolds(perms3)
+    check("JOINT time-fixing S3 invariant rank = 6 (six (taste-type, axis-role) "
+          "orbits)",
+          R24_3.rank() == 6, f"rank={R24_3.rank()}")
+    AR3 = Avg * R24_3
+    check("uniform hw2 averaging o time-fixing S3 Reynolds: rank 2 -- time-fixing "
+          "symmetry alone does NOT force c_t = c_s (symmetry counting only)",
+          AR3.rank() == 2, f"rank={AR3.rank()}")
+
 
 def part_6(p3: dict) -> None:
-    hr("V6 -- speed arithmetic: Z cancellation, pinned ratio = 1, broken freedom")
+    hr("Speed arithmetic: Z cancellation, pinned ratio = 1, broken freedom (V6)")
     ZF, ZG = sp.symbols("Z_F Z_G", positive=True)
     ctF, csF, ctG, csG = sp.symbols("c_tF c_sF c_tG c_sG", positive=True)
     vF = sp.sqrt((ZF * csF) / (ZF * ctF))

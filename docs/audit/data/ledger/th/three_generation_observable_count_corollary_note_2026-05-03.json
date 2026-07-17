@@ -18,7 +18,7 @@
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem (corollary)",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -143,6 +143,62 @@
         "total_pass": 27
       },
       "verdict_rationale": "The load-bearing quotient step is a genuine finite-dimensional algebraic closure: algebra preservation makes ker(Q) invariant, and the constructed M_3(C) action has no proper invariant subspaces. The runner does not merely print constants; it enumerates corners and constructs projectors and matrix units from explicit matrices. The upstream retained authorities are not provided in full despite being named in the note, but the supplied runner independently checks the finite claims needed for this narrow corollary."
+    },
+    {
+      "archived_at": "2026-07-17T18:09:16.545207+00:00",
+      "audit_date": "2026-07-17T18:09:01.061417+00:00",
+      "audit_invocation_history": [
+        "9df435422df54339bd88379f1fc0b7d4"
+      ],
+      "audit_invocation_id": "9df435422df54339bd88379f1fc0b7d4",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 11.476,
+        "runner_hash": "09070c3f94208a84370d18d8eb08493dc1d8b442789b06328d050e3fd3ae087e",
+        "transitive_descendants": 88
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-recovery-12h-20260717-24c8f51a22f54f479bb31397bb0cfe86-three_generation_observa-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional quotient argument closes if the orbit-count and retained-generator representation inputs are granted. The restricted packet supplies neither cited authority, so it cannot establish that the hard-coded matrices and count are the retained Cl(3)/Z^3 inputs claimed by the note.",
+      "claim_scope": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-17T18:09:01.061417+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Any quotient preserving all retained generators has an M_3(C)-invariant kernel; for a nonzero target irreducibility forces that kernel to be zero, so the quotient is an isomorphism and preserves the count three.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the full one-hop contents and authenticated retained statuses of docs/THREE_GENERATION_STRUCTURE_NOTE.md and docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md, then re-audit the generator provenance and orbit-count import.",
+      "open_dependency_paths": [
+        "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
+        "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 27,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "The kernel-invariance and irreducibility inference is valid standard finite-dimensional algebra once the two imported inputs are granted. However, section 2 explicitly provides no cited authorities, while the runner hard-codes the generator representation and treats several concluding claims as unconditional True checks; therefore it verifies the conditional algebraic model but not its retained-input provenance. The N1-N8 stress test is non-clean: N1 lacks five independently evidenced alternative routes; N2 supports only the stated quotient boundary; N3 exposes the two unpacketized imports; N4 supplies no matching retained witness; N5 lacks the required five-resolution execution; N6 candidates do not establish those imports; N7 resolves the zero-target countercase only by the theorem's nonzero-target assumption; and N8 supplies no substitute for the missing one-hop authorities."
     }
   ],
   "prose_corrections": [],

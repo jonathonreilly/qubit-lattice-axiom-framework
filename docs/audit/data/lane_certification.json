@@ -581,7 +581,7 @@
         },
         {
           "claim_id": "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "dm_leptogenesis_hrad_theorem_note_2026-04-16",
@@ -2895,6 +2895,6 @@
       "uncertified_count": 661
     }
   ],
-  "repo_head": "5e9d140420129098642ae3271dec6a679b341b24",
+  "repo_head": "689ae2c8018fb23ac0d9b92ea2d3324c9249938b",
   "schema": "lane_certification_v2"
 }

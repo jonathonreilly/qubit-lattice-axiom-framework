@@ -1285,7 +1285,7 @@
         },
         {
           "claim_id": "hypercharge_identification_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "hypercharge_proof_walk_lattice_independence_bounded_note_2026-05-07",
@@ -2915,6 +2915,6 @@
       "uncertified_count": 665
     }
   ],
-  "repo_head": "eada8e220bab015ff95a5d93480a223d93950606",
+  "repo_head": "142f7a303148318be32e99a0f27f58fee99a53be",
   "schema": "lane_certification_v2"
 }

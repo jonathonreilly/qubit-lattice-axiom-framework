@@ -21,8 +21,8 @@ be explicit, and support-only results must not be promoted by prose.
 
 Review-loop is a text/code/math review path. Run it with the user's configured
 highest-tier Codex reviewer model and maximum available reasoning for this
-repo (currently GPT-5.5 at extra-high/xhigh reasoning in the local Codex
-configuration). Do not switch to lower-reasoning models for convenience, and
+repo (currently GPT-5.6-Sol; use the maximum available reasoning tier unless
+the owner directs a specific tier for the episode). Do not switch to lower-reasoning models for convenience, and
 do not use image-generation, image-editing, presentation, document-rendering,
 or visual-generation tools unless the user explicitly asks for a separate
 visual artifact task.
@@ -184,6 +184,46 @@ pipeline, and verifying the target appears in `docs/audit/AUDIT_DISPATCH_QUEUE.m
 or `docs/audit/data/audit_dispatch_queue.json`. The dispatch manifest is
 target-selection metadata only; it must not be passed to auditors as evidence
 and must not apply audit verdicts.
+
+## Default Entry: Parallel PR Review, Any Orchestrator (owner-directed 2026-07-17)
+
+Invoking this skill against a SET of open PRs ("review the open PRs",
+"drain the PR backlog") means: review them in parallel, land them serially —
+no topology decisions required from the invoker.
+
+1. **Enumerate targets**: open, non-draft PRs in scope (drafts stay out of
+   scope per the draft rule below). Detect stacks and cumulative-tower
+   branches first; stacked PRs review and land bottom-up as deltas, never in
+   parallel with each other.
+2. **One isolated worktree per PR.** Parallel reviews never share a
+   worktree or a checkout; shared worktrees race and have destroyed findings
+   in this repo's history.
+3. **One reviewer process per PR**, applicable lenses combined into a
+   single pass (two for large diffs), findings written incrementally to an
+   untracked file in that PR's worktree, verdict line last.
+4. **Concurrency budget (shared codex pool).** Reviewer processes share one
+   pool with the audit lane's auditor seats and judicial panels. Keep the
+   TOTAL concurrent codex processes across every lane at or under ~8-10
+   (measured 2026-07-17: ~18 concurrent processes collapsed audit-lane
+   throughput from 6-11 landed verdicts/hour to ~1 every 3 hours). When the
+   audit drain is running at 4+ seats, run at most 2-3 concurrent PR
+   reviewers; scale up only in a quiet pool.
+5. **Fixes and landings serialize.** Apply Fix Policy fixes per PR as its
+   round returns; a focused confirmation round follows each fix pass. Land
+   ONE PR at a time through the fail-closed cherry-pick loop, re-fetching
+   `origin/main` before every landing.
+6. **Who may kick it off: any orchestrator** — any Claude tier, a codex
+   session, or a human. The orchestration is process: every finding and
+   every PASS/FAIL verdict comes from the configured reviewer model's seats,
+   the orchestrator fixes only per Fix Policy, and nothing lands without a
+   reviewer PASS on its final state. The orchestrator never self-certifies.
+   Substituting a different reviewer family for a round (for example a
+   fresh-context reviewer when the codex lane is unavailable) requires
+   explicit owner authorization for that episode and must be disclosed in
+   the PR's provenance comment.
+
+The single-PR procedure in the rest of this skill is the inner loop of each
+parallel slot; nothing below is weakened by running slots concurrently.
 
 ## Author Pre-Flight (input hygiene)
 

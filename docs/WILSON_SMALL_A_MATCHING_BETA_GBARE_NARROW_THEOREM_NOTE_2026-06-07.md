@@ -1,6 +1,6 @@
-# Defined Matrix-Trace Taylor and Formal Coefficient-Matching Theorem
+# Abstract Hermitian Matrix-Trace Deficit Taylor and Global Remainder Theorem
 
-**Date:** 2026-06-07. Dependency-free scope repair: 2026-07-16.
+**Date:** 2026-06-07. Clean-retention repair: 2026-07-18.
 **Claim type:** positive_theorem
 **Status authority:** independent audit lane only. This source note does not
 set, predict, or apply an audit verdict.
@@ -9,169 +9,183 @@ set, predict, or apply an audit verdict.
 **Cached log:**
 [`logs/runner-cache/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.txt`](../logs/runner-cache/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.txt)
 
-## Purpose and repair
+## Scope
 
-The earlier version started from a supplied action, a supplied exponential
-dictionary, and a supplied continuum coefficient. Its algebra was correct
-inside that packet, but those inputs were not derived by the note. This repair
-removes every physical identification from the theorem. The stable filename is
-kept so existing citations can be repaired without changing claim identity.
+The stable paths are retained for claim identity and existing citations. The
+result itself is a native finite-dimensional matrix theorem. It has no
+comparison coefficient, parameter-selection rule, or interpretation outside
+the matrix problem defined below.
 
-The result below is an ordinary finite-dimensional matrix theorem. The symbols
-`beta` and `g` are formal positive real parameters. They are not a lattice
-action coefficient or a physical coupling unless a separate authority proves
-such a dictionary.
+## Hypotheses and definitions
 
-## Definitions
-
-Let `n >= 2` and let `T_1,...,T_m` be Hermitian traceless matrices in
-`M_n(C)` satisfying the explicitly supplied algebraic hypotheses
+Let `n >= 1`. Supply a finite family `T_1,...,T_m` in `M_n(C)` satisfying
 
 ```text
+T_a = T_a^dagger,
 Tr(T_a T_b) = delta_ab / 2.
 ```
 
-For real coefficients `f_a`, set
+Let `f_1,...,f_m` be real and define
 
 ```text
-A = sum_a f_a T_a,
+A  = sum_a f_a T_a,
 F2 = sum_a f_a^2,
-D(x) = 1 - (1/n) Re Tr exp(i x A),          x real.
+D(x) = 1 - (1/n) Re Tr exp(i x A),       x real.
 ```
 
-For formal parameters `beta > 0` and `g > 0`, define two scalar coefficients
-
-```text
-C_left(beta,g,n) = beta g^2 / (4 n),
-C_right           = 1/2.
-```
-
-These definitions are all the data used by the theorem. In particular, the
-labels do not carry an action, plaquette, continuum, gauge-field, or coupling
-interpretation.
+The empty family is allowed, in which case `A=0` and `F2=0`. No tracelessness
+hypothesis is imposed.
 
 ## Theorem
 
-Under the definitions above:
+Under exactly those hypotheses:
 
-1. `D(0) = 0` and `D'(0) = 0`.
-2. `D''(0) = Tr(A^2)/n = F2/(2n)`.
-3. The even Taylor coefficient is therefore
+1. `D(0)=0` and `D'(0)=0`.
+2. `D''(0)=Tr(A^2)/n=F2/(2n)`.
+3. The quadratic Taylor coefficient is
 
    ```text
-   [x^2] D(x) = D''(0)/2 = F2/(4n).
+   [x^2]D(x) = D''(0)/2 = F2/(4n).
    ```
 
-4. For every real `x`, the second-order remainder obeys
+4. For every real `x`, globally rather than only asymptotically,
 
    ```text
    |D(x) - x^2 Tr(A^2)/(2n)|
        <= |x|^4 Tr(A^4)/(24n).
    ```
 
-5. Consequently the coefficient of `x^2 F2` in the **defined** expression
-   `beta D(gx)` is `C_left = beta g^2/(4n)`. Equality with the separately
-   **defined** coefficient `C_right = 1/2` holds exactly when
+5. For arbitrary formal positive scalars `w,s`, rescaling alone gives
 
    ```text
-   C_left = C_right
-       <=> beta g^2/(4n) = 1/2
-       <=> beta g^2 = 2n
-       <=> beta = 2n/g^2.
+   [x^2 F2] w D(sx) = w s^2/(4n).
    ```
 
-This last line is a formal coefficient equivalence between two defined
-quadratic expressions. It is not a derivation of a physical normalization.
+Item 5 is only substitution `x -> sx` followed by multiplication by `w`.
+It does not compare the resulting coefficient with another expression and
+does not select either scalar.
 
 ## Proof
 
-Because `A` is Hermitian, the spectral theorem gives real eigenvalues
-`lambda_1,...,lambda_n` and
+Real coefficients and Hermiticity of every `T_a` make `A` Hermitian. By the
+finite-dimensional spectral theorem there is a unitary matrix `U` and real
+eigenvalues `lambda_1,...,lambda_n`, with multiplicity, such that
+
+```text
+A = U diag(lambda_1,...,lambda_n) U^dagger.
+```
+
+Trace invariance and functional calculus therefore give
 
 ```text
 D(x) = (1/n) sum_j (1 - cos(x lambda_j)).
 ```
 
-Differentiating this finite sum gives `D(0)=D'(0)=0` and
+Termwise differentiation of this finite sum yields
+
+```text
+D'(x)  = (1/n) sum_j lambda_j sin(x lambda_j),
+D''(x) = (1/n) sum_j lambda_j^2 cos(x lambda_j).
+```
+
+At zero this proves `D(0)=D'(0)=0` and
 
 ```text
 D''(0) = (1/n) sum_j lambda_j^2 = Tr(A^2)/n.
 ```
 
-The supplied Gram relation gives
+Only the supplied Gram relation is needed to rewrite this matrix quantity in
+component coordinates:
 
 ```text
 Tr(A^2)
   = sum_ab f_a f_b Tr(T_a T_b)
   = (1/2) sum_a f_a^2
-  = F2/2,
+  = F2/2.
 ```
 
-which proves items 1--3. Taylor's theorem for the real scalar function
-`1-cos y` has fourth derivative `-cos y`, whose absolute value is at most
-one. Thus
+Dividing the second derivative by `2!` proves the quadratic coefficient.
+
+For the global bound, Taylor's theorem applied to the scalar function
+`1-cos y` through degree three gives, for every real `y`,
 
 ```text
-|1 - cos y - y^2/2| <= |y|^4/24.
+|1 - cos y - y^2/2| <= |y|^4/24,
 ```
 
-Apply this inequality to every `y=x lambda_j`, sum, divide by `n`, and use
-`sum_j lambda_j^4 = Tr(A^4)` to obtain item 4. Substituting `gx` for `x`
-and multiplying by `beta` gives item 5 by exact scalar algebra.
+because its fourth derivative is `-cos y`, whose absolute value is at most
+one on the entire real line. Apply this inequality to each
+`y=x lambda_j`, sum, divide by `n`, and use
+`sum_j lambda_j^4=Tr(A^4)`. This proves item 4. Substitution and scalar
+multiplication prove item 5.
 
-### Tracelessness and the linear term
+## Exact use of the hypotheses
 
-The real-part deficit has `D'(0)=0` for **every Hermitian** `A`, even if
-`Tr(A) != 0`, because `Re(i Tr A)=0`. Tracelessness instead removes the
-linear term of the complex deficit
+- `n>=1` makes the normalized trace defined; the proof does not require
+  `n>=2`.
+- Real `f_a` and Hermitian `T_a` are used to make `A` Hermitian. Hermiticity
+  supplies the real spectrum and the cosine representation used by the
+  derivative and remainder arguments.
+- The Gram relation is used only for
+  `Tr(A^2)=F2/2` and the resulting component-coordinate coefficients.
+- Tracelessness is not used. For any Hermitian `A`, even with
+  `Tr(A) != 0`, the real-part derivative vanishes because
+  `Re(i Tr A)=0`.
+- The positivity of formal `w,s` states their intended scalar domain; the
+  coefficient substitution itself is algebraic.
+
+For comparison with the real-part statement only, the complex deficit
 
 ```text
-Z(x) = 1 - (1/n) Tr exp(i x A),
-Z'(0) = -(i/n) Tr(A).
+Z(x) = 1 - (1/n) Tr exp(i x A)
 ```
 
-The runner tests this distinction explicitly. It rejects a nontraceless
-fixture because it violates the theorem hypotheses and produces a nonzero
-complex linear term; it does not falsely claim that nontracelessness makes
-`D'(0)` nonzero.
+has `Z'(0)=-(i/n)Tr(A)`, which need not vanish. This observation does not add
+a hypothesis to the theorem; it prevents confusing the two deficit
+functions.
 
-## Independent executable routes
+## Edge cases
 
-The runner provides four selectable modes:
+The proof already includes the following cases without extra assumptions:
 
-- `normal`: exact Gram-contraction and matrix-derivative checks;
-- `independent`: a separate spectral/power-series reconstruction;
-- `hostile`: mutations of the hypotheses, derivative normalization, and
-  formal coefficient equation, plus a physical-inference firewall;
-- `intentional-failure`: promotes one rejected hostile mutation to a primary
+- `A=0`, including an empty family or all-zero coefficients: both sides of
+  every displayed identity and the remainder bound vanish;
+- rank-deficient `A`: zero eigenvalues contribute zero;
+- repeated eigenvalues: multiplicities are included in the finite spectral
+  sum;
+- negative eigenvalues: cosine and the even spectral moments require no sign
+  restriction;
+- `n=1`, whenever a supplied family satisfies the Gram relation;
+- Hermitian matrices with nonzero complex off-diagonal entries.
+
+## Executable evidence
+
+The runner provides independent proof and falsification routes:
+
+- `normal`: exact matrix derivatives, Gram contraction, the scalar remainder
+  mechanism, rescaling algebra, and the zero/rank-deficient/repeated/negative
+  and `n=1` cases;
+- `independent`: a separate spectral power-series reconstruction plus a
+  numerical complex-off-diagonal Hermitian reconstruction that does not use
+  the normal route's expected-value table;
+- `hostile`: recomputed mutations for a wrong Gram factor, omitted `1/n`,
+  confusion of `D''(0)` with `[x^2]D`, a false fourth-order constant,
+  non-Hermitian input, a false complex-deficit linear statement, a wrong
+  rescaling power, and an inference of an external target from the native
+  coefficient;
+- `intentional-failure`: promotes any rejected hostile mutation to a primary
   assertion and must exit nonzero.
 
-The hostile set covers wrong trace normalization, a nontraceless complex
-linear term, omission of `1/n`, confusion of `D''(0)` with its half-sized
-Taylor coefficient, replacement of `C_right=1/2` by `1/4`, the wrong product
-`beta g^2=n`, the wrong solve `beta=2n/g`, a false `1/48` fourth-order
-remainder constant, and an illicit physical interpretation. The independent
-route also checks a complex off-diagonal `n=4` basis, while the normal route
-checks the zero-matrix edge case and the exact fourth-derivative mechanism.
+The theorem counts contain only computed mathematical checks. Prose
+presence, audit-ledger state, and literal pass flags are not evidence.
 
-## Boundary and downstream citation rule
+## Citation boundary
 
-This theorem does **not** derive or select:
-
-- a Wilson or any other lattice action;
-- a plaquette/exponential dictionary for a gauge field;
-- a Yang--Mills or other continuum coefficient;
-- a trace convention as a framework fact (the Gram relation is an explicit
-  finite-dimensional hypothesis here);
-- a physical meaning or value for `beta` or `g`;
-- a continuum limit, running coupling, observable, or comparator;
-- an audit verdict or effective-status promotion.
-
-Downstream notes may cite this row for the matrix Taylor identities and the
-formal equivalence `C_left=C_right <=> beta g^2=2n`. They may not cite it as
-authority for an action surface, a physical matching demand, a coupling
-dictionary, or a value such as a chosen normalization point. Any such bridge
-must be supplied and audited separately.
+Downstream notes may cite this row only for the displayed matrix derivatives,
+quadratic coefficient, global fourth-order bound, and the coefficient
+`w s^2/(4n)` of the formally rescaled expression. Any comparison target,
+parameter equation, preferred value, or interpretation outside this abstract
+matrix packet requires separate authority and remains outside this theorem.
 
 ## Verification
 

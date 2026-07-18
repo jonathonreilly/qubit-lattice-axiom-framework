@@ -3,15 +3,17 @@
 
 The runner exercises the algebraic content of the explicit runner-local SU(3)
 Wilson-plaquette perturbative expansion at beta=6 GIVEN the source-wired
-formal coefficient algebra, explicit non-satisfying runner-local W-PHYS condition, and
+native matrix coefficient, explicit non-satisfying runner-local W-PHYS
+comparison condition, and
 other explicit runner-local inputs, and tests
 whether tadpole-improvement plus finite-order truncation plus a Pade [m/n]
 resummation reaches the explicit runner-local MC comparator <P>_MC = 0.5934 to any
 controlled accuracy.
 
-This is a RUNNER-LOCAL DIAGNOSTIC: only the formal relation
-beta = 2 n / g^2 is dependency-wired to the defined matrix theorem. The
-physical Wilson dictionary W-PHYS, NSPT coefficient packet, MC comparator,
+This is a RUNNER-LOCAL DIAGNOSTIC: only the native coefficient
+w*s^2/(4n) is dependency-wired to the matrix theorem. The comparison
+relation and physical Wilson dictionary are parts of W-PHYS; the NSPT
+coefficient packet, MC comparator,
 and F2 comparator remain explicit runner-local for this diagnostic only. The beta=6
 diagnostic specialization, g_bare=1 specialization, and alpha_bare scale
 notation are not downstream-licensed physical authorities. The runner reports
@@ -111,7 +113,7 @@ W_COEFFS_NSPT_SU3 = [
 
 
 def test_framework_constants() -> None:
-    section("C1: source-wired formal coefficient edge + explicit W-PHYS condition")
+    section("C1: source-wired native coefficient + explicit W-PHYS condition")
     if not WILSON_NOTE.exists():
         check(
             f"defined matrix coefficient note {WILSON_NOTE.name} exists",
@@ -122,10 +124,10 @@ def test_framework_constants() -> None:
     wilson_body = WILSON_NOTE.read_text()
     wilson_flat = " ".join(wilson_body.split())
     check(
-        "matrix theorem supplies beta=2n/g^2 only as formal coefficient algebra",
-        "beta = 2n/g^2" in wilson_flat
-        and "C_left = C_right" in wilson_flat,
-        "formal identity is present in the dependency source",
+        "matrix theorem supplies only the native w*s^2/(4n) coefficient",
+        "w s^2/(4n)" in wilson_flat
+        and "no comparison coefficient" in wilson_flat,
+        "native coefficient is present without a target equation",
     )
     check(
         "matrix theorem does not contain a beta=6/g_bare specialization",
@@ -133,10 +135,10 @@ def test_framework_constants() -> None:
         "physical specialization remains runner-local",
     )
     check(
-        "matrix theorem explicitly forbids action/coupling inference",
-        "They may not cite it as authority for an action surface" in wilson_flat
-        and "a physical meaning or value for `beta` or `g`" in wilson_flat,
-        "the dependency supplies formal algebra, not W-PHYS",
+        "matrix theorem leaves external targets and parameter equations outside scope",
+        "Any comparison target" in wilson_flat
+        and "requires separate authority" in wilson_flat,
+        "the dependency supplies native Taylor algebra, not W-PHYS",
     )
     # beta = 2 N_c / g_bare^2; with g_bare = 1, beta = 6 at N_c = 3.
     beta_from_axiom = 2.0 * N_C / 1.0
@@ -177,14 +179,14 @@ def test_source_boundary_manifest() -> None:
     )
     check(
         "note records explicit runner-local finite packet I_PT",
-        "source-wired formal beta*g^2 = 2 n algebra" in flat
-        and "explicit non-satisfying runner-local W-PHYS condition" in flat
+        "source-wired native coefficient w*s^2/(4n)" in flat
+        and "explicit non-satisfying runner-local W-PHYS comparison condition" in flat
         and "explicit runner-local w_1..w_16" in flat,
-        "packet separates formal algebra, W-PHYS, and runner-local values",
+        "packet separates native algebra, W-PHYS, and runner-local values",
     )
     check(
-        "note records only formal coefficient algebra as the explicit dependency",
-        "## 2026-07-16 source-side correction: only formal coefficient algebra is wired" in body
+        "note records only the native matrix coefficient as the explicit dependency",
+        "## 2026-07-18 source-side correction: only the native matrix coefficient is wired" in body
         and "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md" in body
         and "Depends on" in body,
         "W-PHYS remains an explicit non-satisfying condition rather than dependency-laundered",
@@ -222,7 +224,7 @@ def test_source_boundary_manifest() -> None:
         "## 2026-06-15 source-boundary repair: second option elected" in body
         and "keep the row as\nan explicit-input runner-local diagnostic only" in body
         and "not a retained or\neffective-bounded authority" in body
-        and "Only the formal coefficient\nalgebra is sourced; the Wilson dictionary is runner-local `W-PHYS`." in body,
+        and "Only the native matrix\ncoefficient is sourced; the comparison relation and Wilson dictionary are\nrunner-local `W-PHYS`." in body,
         "source-boundary second option is source-locked",
     )
     check(
@@ -230,7 +232,7 @@ def test_source_boundary_manifest() -> None:
         "## 2026-06-20 source-boundary repair: non-downstream-licensed scoping" in body
         and "non-downstream-licensed runner-local diagnostic only." in flat
         and "No downstream row may cite this row as a retained or effective-bounded bridge or as a derivation" in flat
-        and "formal coefficient algebra" in flat,
+        and "native matrix coefficient" in flat,
         "source-boundary non-downstream-licensed scoping present; not a citeable bridge/derivation",
     )
     check(
@@ -684,7 +686,7 @@ def test_no_axiom_extension() -> None:
     plain_body = body_lower.replace("*", "")
     # The perturbative coefficients, MC comparator, and F2 comparator remain
     # explicit runner-local for this runner-local diagnostic only; the Wilson coefficient
-    # relation is dependency-wired without promoting the beta=6 surface.
+    # is dependency-wired without promoting the beta=6 surface.
     check(
         "no new axiom or primitive introduced (Lattice/Qubit/Admissibility/Record baseline unchanged)",
         "does not propose a new axiom or framework primitive" in plain_body,

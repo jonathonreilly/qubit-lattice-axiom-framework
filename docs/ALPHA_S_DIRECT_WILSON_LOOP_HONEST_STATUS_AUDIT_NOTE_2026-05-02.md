@@ -123,10 +123,10 @@ what the axioms do and do not provide. It does not supply `g_bare = 1`.
 be used as an authority that would close the Wilson normalization dependency.
 The stable-path theorem
 `WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`
-now supplies only a defined matrix-trace Taylor coefficient and the formal
-equivalence `beta*g^2=2n`. It supplies no Wilson action, gauge-field
-dictionary, or physical matching demand and therefore cannot close this
-route's `g_bare = 1` / `beta = 6` normalization gate.
+now supplies only the native Hermitian matrix-trace Taylor identities, global
+fourth-order remainder bound, and the rescaled coefficient `w s^2/(4n)`.
+It supplies no comparison target or parameter equation and therefore cannot
+close this route's `g_bare = 1` / `beta = 6` normalization gate.
 
 Until at least one of these is closed, only the bounded-support source wording
 is justified; independent audit owns any status conclusion.
@@ -182,7 +182,7 @@ certificate.
 - `MINIMAL_AXIOMS_2026-04-11.md` — historical-only older memo; context
   handle only, not a citation-graph dependency and not a live normalization
   authority for this route
-- [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md) — defined matrix-trace Taylor theorem and formal coefficient equivalence only; no Wilson or physical normalization authority
+- [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md) — native Hermitian matrix-trace Taylor, global remainder, and scalar-rescaling theorem only; no comparison or normalization authority
 - [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) — retained Wilson SU(3) gauge surface
 - Sommer, "A New Way to Set the Energy Scale" — arXiv:hep-lat/9310022
 - FLAG Review 2021, Eur. Phys. J. C 82, 869 (2022)

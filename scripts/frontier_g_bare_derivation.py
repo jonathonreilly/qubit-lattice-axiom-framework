@@ -16,13 +16,14 @@ Numerically exhibit a conditional `g_bare = 1` composition end to end:
   (1) Cl(3) -> End(V=C^8) chiral representation built explicitly.
   (2) Canonical orthonormal su(3) Gell-Mann basis on the canonical triplet,
       verified to satisfy Tr(T_a T_b) = delta_ab / 2.
-  (3) W-PHYS (an explicit, not-derived dictionary) identifies the defined
-      matrix coefficient with a Wilson coefficient and a target kinetic
-      coefficient; only under W-PHYS does beta = 2 N_c / g^2 get a Wilson read.
+  (3) The matrix theorem supplies only [x^2 F2] w D(sx)=w s^2/(4n).
+      W-PHYS is an explicit, not-derived condition that instantiates the
+      symbols and supplies the comparison target; only under W-PHYS does
+      beta = 2 N_c / g^2 follow on the Wilson surface.
   (4) The finite-link rigidity theorem supplies the canonical scalar slot
       g_link^2 = 1 in the fixed T_a basis.
-  (5) The defined matrix theorem supplies only the formal coefficient
-      equivalence beta * g^2 = 2 n.
+  (5) The defined matrix theorem supplies no target coefficient or parameter
+      equation.
   (6) The parent bridge locates the same-slot point but does not choose it.
       The explicit non-satisfying condition SLOT-ID identifies g_bare with
       the finite-link slot, so beta = 6 follows conditionally for N_c = 3
@@ -35,8 +36,9 @@ This runner certifies the repaired parent source surface:
 
   - finite-link rigidity supplies the canonical scalar slot in the fixed
     generator basis;
-  - the matrix theorem supplies the formal coefficient identity;
-  - W-PHYS supplies the Wilson/continuum dictionary as an explicit condition;
+  - the matrix theorem supplies the native rescaled Taylor coefficient;
+  - W-PHYS supplies the comparison target and Wilson/continuum dictionary as
+    an explicit condition;
   - the 2026-06-18 bridge locates same-slot compatibility, while SLOT-ID is a
     separate explicit condition.
 
@@ -331,8 +333,8 @@ def section_D_rescaling_freedom(T_triplet, N_c: int = 3):
     section("SECTION D: formal paired rescaling T -> cT, g -> g/c, beta -> c^2 beta")
 
     # If we rescale T_a -> c * T_a, the canonical Tr(T_a T_b) = delta_ab/2
-    # becomes Tr((c T_a)(c T_b)) = c^2 delta_ab/2. The matching condition
-    # formal coefficient labels transform as g_new=g/c and
+    # becomes Tr((c T_a)(c T_b)) = c^2 delta_ab/2. Under the explicit
+    # W-PHYS comparison condition, the labels transform as g_new=g/c and
     # beta_new=c^2 beta, keeping beta*g^2 invariant. The canonical
     # normalization is the c=1 surface; c != 1 changes the half-trace Gram.
     # No physical Wilson interpretation follows from this label algebra.
@@ -431,9 +433,9 @@ def section_E_constraint_vs_convention(N_c: int = 3):
     )
     formal_residual = Fraction(2) * Fraction(N_c) - Fraction(2) * Fraction(N_c)
     check(
-        "formal layer: beta*g^2=2n is exact; a Wilson read additionally requires W-PHYS",
+        "W-PHYS-supplied comparison relation is exact on its conditional surface",
         formal_residual == 0,
-        "formal source: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md",
+        "matrix source supplies only w*s^2/(4n); W-PHYS supplies the target",
     )
 
     # Bounded boundary statement
@@ -472,11 +474,11 @@ def section_F_no_circular_input(T_triplet, N_c: int = 3):
         f"||Gram - delta/2|| = {np.linalg.norm(Gram - 0.5 * np.eye(8)):.2e}",
     )
 
-    # Step 3: formal coefficient equality plus supplied W-PHYS dictionary.
+    # Step 3: native coefficient plus supplied W-PHYS target/dictionary.
     check(
         "Step 3: W-PHYS conditional read gives beta = 2 N_c / g^2",
         all(abs((2 * N_c / g2) * g2 - 2 * N_c) < 1e-12 for g2 in (0.5, 1.0, 1.5, 2.0)),
-        "formal identity verified; physical dictionary remains an explicit condition",
+        "comparison relation is conditional on the explicit W-PHYS target/dictionary",
     )
 
     # Step 4: finite-link rigidity supplies s^2=1. SLOT-ID conditionally maps
@@ -503,7 +505,7 @@ def section_F_no_circular_input(T_triplet, N_c: int = 3):
     print("\n  Circularity audit:")
     print("  - Step 1 uses the Quantum axiom's one-site operator algebra; no beta or g input.")
     print("  - Step 2 uses the explicit canonical Gell-Mann basis and checks its half-trace Gram.")
-    print("  - Step 3 uses the formal coefficient identity plus supplied W-PHYS.")
+    print("  - Step 3 uses the native coefficient plus the target/dictionary supplied by W-PHYS.")
     print("  - Step 4 uses rigidity for s^2=1 and explicit SLOT-ID for g_bare^2=s^2.")
     print("  - Final beta = 6 follows only under both W-PHYS and SLOT-ID.")
     check(
@@ -552,8 +554,9 @@ def section_G_source_bridge_visibility():
         (parent_flat, "This note derives neither `W-PHYS`"),
         (parent_text, "`SLOT-ID`"),
         (parent_flat, "neither condition chain-satisfies a dependency"),
-        (wilson_text, "beta g^2 = 2n"),
-        (wilson_flat, "They may not cite it as authority for an action surface"),
+        (wilson_text, "[x^2 F2] w D(sx) = w s^2/(4n)"),
+        (wilson_flat, "Any comparison target"),
+        (wilson_flat, "requires separate authority"),
     ]
     for text, marker in markers:
         check(f"source marker present: {marker[:58]}", marker in text, kind="BOUNDED")
@@ -596,8 +599,8 @@ def main() -> int:
     print()
     if FAIL == 0 and BOUNDED_FAIL == 0:
         print("  All exact checks passed.")
-        print("  The repaired parent chain composes finite-link rigidity with a formal coefficient theorem.")
-        print("  A Wilson interpretation remains conditional on explicit W-PHYS and SLOT-ID.")
+        print("  The repaired parent chain composes finite-link rigidity with a native matrix coefficient.")
+        print("  Its comparison target and Wilson interpretation remain conditional on explicit W-PHYS and SLOT-ID.")
         print("  Conditional on both, beta=6 follows after the canonical scalar-slot input;")
         print("  neither condition is derived by this runner.")
         print()

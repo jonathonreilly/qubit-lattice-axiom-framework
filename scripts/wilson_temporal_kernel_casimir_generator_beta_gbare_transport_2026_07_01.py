@@ -20,8 +20,7 @@ Checked content (all constructed, nothing assigned):
       e^{beta cos}: 2 beta eps_n -> n^2; SU(2): beta eps_j / 2 -> j(j+1).
   K3  kernel coefficient: defining the conjugate-slot label by
       eps_R = (g_E^2 / 2) C_2(R) (1 + O(1/beta)), the constructed values
-      satisfy beta * g_E^2 -> 2 N_c. The stable-path matrix theorem has the
-      same formal algebraic shape but supplies no magnetic-side dictionary.
+      satisfy beta * g_E^2 -> 2 N_c, derived inside this packet from K2.
       The generator is a function of C_2 alone at leading order
       (R-independence of the extracted dial).
   K4  normalization-point coincidence (exact rational layer): the leading
@@ -44,7 +43,6 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md"
 RIGIDITY = ROOT / "docs" / "G_BARE_RIGIDITY_THEOREM_NOTE.md"
-WILSON = ROOT / "docs" / "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md"
 RP_TEMPORAL = ROOT / "docs" / "AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
 
 N_C = 3
@@ -367,13 +365,10 @@ def section_G() -> None:
         "coincidence backward: g_lead^2 = 1 gives beta = 2 N_c = 6",
         two_n_c / Fraction(1) == Fraction(6),
     )
-    # The kernel label and the separately defined formal coefficient label
-    # have the same value at beta=2n. No physical dictionary is inferred.
-    g_formal_sq_at_6 = two_n_c / Fraction(6)
     g_ker_sq_at_6 = g_lead_sq(Fraction(6))
     check(
-        "kernel/formal-label coincidence at beta=6 is exact",
-        g_formal_sq_at_6 == g_ker_sq_at_6 == 1,
+        "kernel-side unit-coefficient point at beta=6 is exact",
+        g_ker_sq_at_6 == 1,
     )
 
 
@@ -387,7 +382,6 @@ def section_H() -> None:
     paths = {
         "transport note": NOTE,
         "finite-link rigidity note": RIGIDITY,
-        "Wilson small-a note": WILSON,
         "RP temporal-gauge bridge note": RP_TEMPORAL,
     }
     for label, path in paths.items():
@@ -396,7 +390,6 @@ def section_H() -> None:
 
     note_text = NOTE.read_text(encoding="utf-8")
     rigidity_flat = flat(RIGIDITY.read_text(encoding="utf-8"))
-    wilson_text = WILSON.read_text(encoding="utf-8")
     rp_flat = flat(RP_TEMPORAL.read_text(encoding="utf-8"))
     note_flat = flat(note_text)
 
@@ -404,7 +397,7 @@ def section_H() -> None:
     require_contains("note", note_flat, "does not derive `beta = 2 N_c`")
     require_contains("note", note_flat, "unit-coefficient")
     require_contains("note", note_flat, "half-trace")
-    require_contains("note", note_flat, "formal algebraic comparison")
+    require_contains("note", note_flat, "kernel-side statement")
     require_contains("note", note_flat, "does not claim:")
     require_contains("note", note_flat, "Wilson plaquette action-surface selection")
     require_contains("note", note_flat, "an audit verdict or any effective-status promotion")
@@ -415,12 +408,6 @@ def section_H() -> None:
 
     require_contains("rigidity", rigidity_flat, "no independent scalar-normalization freedom")
     require_contains("rigidity", rigidity_flat, "Tr(T_a T_b) = delta_ab / 2")
-    require_contains("Wilson", wilson_text, "beta g^2 = 2n")
-    require_contains(
-        "Wilson",
-        flat(wilson_text),
-        "They may not cite it as authority for an action surface",
-    )
     require_contains("RP bridge", rp_flat, "temporal gauge")
     require_contains("RP bridge", rp_flat, "plane positive kernel")
 

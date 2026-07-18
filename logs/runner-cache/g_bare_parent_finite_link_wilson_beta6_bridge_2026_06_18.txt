@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
-runner_sha256: 4cb124435205929dac938359b8fe7d81361e859643aaa33329429415a60ac219
+runner_sha256: ef4c934939ee16699086c1afc008c0b47ec4b7383ec74cd40d0e22f2c249769f
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.15
@@ -127,9 +127,9 @@ SECTION G: source-boundary guards
 [PASS] parent omits forbidden marker: beta_canonical
 [PASS] rigidity contains marker: finite-link
 [PASS] rigidity contains marker: no independent scalar-normalization freedom
-[PASS] Wilson contains marker: beta g^2 = 2n
-[PASS] Wilson contains marker: C_left = C_right
-[PASS] Wilson contains marker: They may not cite it as authority for an action surface
+[PASS] matrix theorem contains marker: [x^2 F2] w D(sx) = w s^2/(4n)
+[PASS] matrix theorem contains marker: Any comparison target
+[PASS] matrix theorem contains marker: requires separate authority
 
 Summary
 ------------------------------------------------------------------------------

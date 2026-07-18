@@ -523,11 +523,11 @@ def section_G() -> None:
 
     require_contains("rigidity", rigidity_flat, "finite-link")
     require_contains("rigidity", rigidity_flat, "no independent scalar-normalization freedom")
-    require_contains("Wilson", wilson_text, "beta g^2 = 2n")
-    require_contains("Wilson", wilson_text, "C_left = C_right")
+    require_contains("matrix theorem", wilson_text, "[x^2 F2] w D(sx) = w s^2/(4n)")
     require_contains(
-        "Wilson", wilson_flat, "They may not cite it as authority for an action surface"
+        "matrix theorem", wilson_flat, "Any comparison target"
     )
+    require_contains("matrix theorem", wilson_flat, "requires separate authority")
 
 
 def main() -> int:

@@ -21,18 +21,18 @@ contains only the following algebraic ingredients:
   canonical finite-link coordinates this is the `s = 1` slot
   (`g_link^2 = 1`).
 - [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-  supplies only the defined matrix-trace Taylor coefficient and formal
-  coefficient identity:
+  supplies only the native Hermitian matrix-trace Taylor identities, global
+  remainder bound, and rescaling coefficient:
 
 ```text
-beta g^2 = 2 n.
+[x^2 F2] w D(sx) = w s^2/(4n).
 ```
 
-  It does not supply a Wilson action or physical coefficient dictionary. In
-  this note, the identification `(n,g)=(N_c,g_bare)` and the interpretation
-  of its two formal coefficients as Wilson/target coefficients are a named
-  explicit non-satisfying condition `W-PHYS`, not a conclusion of the cited
-  theorem and not a chain-satisfying premise.
+  It supplies no comparison target or parameter equation. In this note,
+  instantiation of `(w,s,n)` on the Wilson surface and comparison with the
+  target kinetic coefficient are parts of the named explicit non-satisfying
+  condition `W-PHYS`, not conclusions of the cited theorem and not a
+  chain-satisfying premise.
 
 - Theorems 1–3 below prove the plaquette exponent construction, the exact
   split redundancy, and the pin equivalence
@@ -69,9 +69,9 @@ Setup (supplied surfaces, cited at audited scope):
    `S_W = beta sum (1 - (1/N_c) Re Tr U_P)` with canonical trace
    normalization, and the small-a matching demand that the matched gauge
    field carry the continuum kinetic normalization
-   `(1/4) F^a_{mu nu} F^a_{mu nu}`. `W-PHYS` maps the cited theorem's formal
-   coefficient equality onto this surface, yielding the conditional relation
-   `beta g_bare^2 = 2 N_c`.
+   `(1/4) F^a_{mu nu} F^a_{mu nu}`. `W-PHYS` both instantiates the cited
+   native coefficient and supplies its external comparison target, yielding
+   the conditional relation `beta g_bare^2 = 2 N_c`.
 
 **Audited claim-surface statement.**
 
@@ -175,11 +175,12 @@ beta (1 - (1/N_c) Re Tr U_P)
 
 For a candidate split `A = C/gamma` the same value reads
 `(beta gamma^2 a^4 / (4 N_c)) F^a[A] F^a[A] + higher order` (using
-Theorem 2's identity componentwise, `F^a[C] = gamma F^a[A]`). The Wilson
-note's matching demand fixes the coefficient per unordered plaquette
+Theorem 2's identity componentwise, `F^a[C] = gamma F^a[A]`). The explicit
+`W-PHYS` comparison condition fixes the coefficient per unordered plaquette
 plane at `1/2`, i.e. `beta gamma*^2 / (4 N_c) = 1/2`, hence
 `gamma*(beta)^2 = 2 N_c / beta`. The matrix-trace theorem supplies only the
-formal equality used in this algebra; `W-PHYS` supplies its physical reading.
+native left-hand coefficient; `W-PHYS` supplies the comparison target and
+the interpretation of the symbols.
 On the declared Wilson domain
 `beta > 0`, the positive-root definition gives
 `gamma*(beta)=+sqrt(2 N_c/beta)>0`. Because the constructed

@@ -1,6 +1,6 @@
-# Formal Generator/Coupling Label Rescaling and Coefficient Transformation
+# Formal Scalar-Argument Rescaling and Gram Transformation
 
-**Date:** 2026-06-16. Dependency-free scope repair: 2026-07-16.
+**Date:** 2026-06-16. Clean-retention rescope: 2026-07-18.
 **Claim type:** positive_theorem
 **Status authority:** independent audit lane only. This source note does not
 set, predict, or apply an audit verdict.
@@ -9,79 +9,66 @@ set, predict, or apply an audit verdict.
 
 ## Purpose
 
-This note proves an exact transformation law for defined algebraic symbols.
-Its stable filename is historical. No Wilson action or physical coupling is
-part of the theorem.
+This note proves an exact transformation law for the native quadratic
+coefficient supplied by
+[`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md).
+Its stable filename is historical. No comparison target or preferred scalar
+value is part of the theorem.
 
-The formal coefficient theorem
-[`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-defines `C_left=beta*g^2/(4n)` and `C_right=1/2` and proves
+The cited matrix theorem gives, for a Gram-normalized Hermitian family,
 
 ```text
-C_left=C_right  <=>  beta*g^2=2n.
+q(w,s,n) := [x^2 F2] w D(sx) = w s^2/(4n).
 ```
 
 ## Theorem
 
-Let `n >= 2` and let `beta,g,c > 0`. Suppose the formal coefficient equality
+Let `n>=1` and let `w,s,c>0`. Define
 
 ```text
-beta*g^2 = 2n
+w' = c^2 w,
+s' = s/c.
 ```
 
-holds. Define
+Then the quadratic coefficient is invariant:
 
 ```text
-T'_a = c T_a,
-g'   = g/c,
-beta' = c^2 beta.
+q(w',s',n)
+  = (c^2 w)(s^2/c^2)/(4n)
+  = q(w,s,n).
 ```
 
-Then:
+If the supplied Hermitian family also satisfies
+`Tr(T_a T_b)=delta_ab/2`, define `T'_a=c T_a`. Then
 
 ```text
-g'T'_a = gT_a,
-g'^2 = g^2/c^2,
-beta'/beta = c^2,
-beta' g'^2 = beta g^2 = 2n.
+s'T'_a = sT_a,
+Tr(T'_a T'_b) = c^2 delta_ab/2.
 ```
 
-If additionally `Tr(T_a T_b)=delta_ab/2`, then
-
-```text
-Tr(T'_a T'_b)=c^2 delta_ab/2.
-```
-
-Thus a nontrivial `c^2 != 1` changes the supplied half-trace Gram convention,
-even though the defined products `gT_a` and `beta*g^2` remain invariant under
-the paired label transformation.
+Thus the paired transformation preserves the product in the exponent and the
+native quadratic coefficient, while a nontrivial generator rescaling changes
+the supplied Gram relation.
 
 ## Proof
 
-Every identity follows by direct substitution:
+All statements are direct substitution and trace bilinearity:
 
 ```text
-g'T'_a = (g/c)(cT_a)=gT_a,
-beta'g'^2=(c^2 beta)(g^2/c^2)=beta g^2=2n.
+(c^2 w)(s/c)^2 = w s^2,
+(s/c)(c T_a) = sT_a,
+Tr((cT_a)(cT_b)) = c^2 Tr(T_aT_b).
 ```
 
-Bilinearity of trace gives the Gram transformation. Positivity ensures the
-divisions are defined; no other input is used.
+Positivity makes every displayed division defined. No other input is used.
 
 ## Boundary
 
-This note does not claim:
-
-- that `T_a`, `g`, or `beta` are physical gauge variables;
-- that the paired label transformation is induced on any Wilson or other
-  action;
-- action-surface selection, a continuum dictionary, or a coupling value;
-- that a noncanonical generator scale is physically forbidden;
-- an audit verdict or status promotion.
-
-A downstream physical use must separately prove the dictionary from these
-formal symbols to its action and observables. This note supplies only the
-displayed algebra.
+This note does not supply an external interpretation of `w`, `s`, or `T_a`;
+does not choose a comparison coefficient or solve a parameter equation; and
+does not turn a changed Gram convention into a preferred normalization. It
+also does not set an audit verdict or status promotion. Any use beyond the
+displayed matrix and scalar algebra requires separate authority.
 
 ## Verification
 
@@ -92,5 +79,5 @@ python3 scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py
 Expected:
 
 ```text
-TOTAL: PASS=79 FAIL=0
+TOTAL: PASS=81 FAIL=0
 ```

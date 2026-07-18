@@ -23,7 +23,7 @@ The question this note answers: within the bi-invariant diffusive class,
 what does the dynamics lane do to the per-step **rate** — the one
 dimensionless parameter the class carries, whose value `tau = 1/2` per
 step coincides, under the explicitly defined leading map
-`tau_lead(beta)=N_c/beta`, with the formal point `beta = 2 N_c`?
+`tau_lead(beta)=N_c/beta`, with the unit-variance point `beta = 2 N_c`?
 
 Answer, proved below: composition conserves the rate exactly; the rate is
 the **complete surviving invariant** of step composition (two different
@@ -33,8 +33,8 @@ every named structural premise of the lane is **rate-blind**; the rate is
 dimensionless, so the approved scale-reference primitive — which by its
 own declaration carries "zero dimensionless content" — does not cover it;
 and `tau = 1/2` is located exactly as the **unit-variance-per-step
-setting**, the distinguished heat-kernel setting where the formal coefficient
-label and leading Wilson-kernel label both equal one. The rate is exhibited as a
+setting**, the distinguished heat-kernel setting where the leading
+Wilson-kernel label equals one. The rate is exhibited as a
 registered-dial-shaped residual: this note does not derive `tau = 1/2`,
 and forcing a dial value would be overreach; locating it sharply is the
 theorem content.
@@ -46,19 +46,15 @@ theorem content.
    `Tr(T_a T_b) = delta_ab / 2`; the group metric and Casimir
    normalization used throughout are this fixed form's (no scalar
    freedom, so the rate cannot be absorbed into a metric rescale).
-2. [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-   — the defined matrix-trace Taylor coefficient and formal identity
-   `beta g^2 = 2n`, used only as algebra in the exact coincidence layer. It
-   supplies no magnetic-side or Wilson dictionary.
-3. [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+2. [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
    — the temporal-gauge per-link plane kernel of the supplied Wilson
    surface, the concrete in-class member used by Lemma R0.
-4. [`RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md`](RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md)
+3. [`RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md`](RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md)
    — the retained boundary that Record alone supplies no continuous
    Markov dynamics. This note respects it: everything below is a
    classification over a named hypothesis class of per-step kernels, not
    an existence claim for the dynamics.
-5. [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md)
+4. [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md)
    — the approved single dimensionful reference, quoted in the
    coverage verdict below.
 
@@ -120,7 +116,7 @@ covariant-channel premise (non-scalar fundamental Fourier block); a
 metric dilation changes the fixed trace form (the freedom the rigidity
 theorem removes).
 
-**Theorem R3 (variance law and the formal unit point).** The per-direction
+**Theorem R3 (variance law and the unit point).** The per-direction
 second moment per step is `2 tau` (Gaussian generator identity; and the
 constructed Wilson member's second moment satisfies
 `<sum_j theta_j^2> -> 8 tau_eff` over `dim su(3) = 8` directions,
@@ -133,16 +129,14 @@ tau = 1/2
 
 tau_lead(beta) := N_c / beta,
 tau_lead(beta) = 1/2
-  <=>  beta = 2 N_c = 6
-  <=>  g_formal^2 = 2 N_c / beta = 1.                    (defined coefficient label)
+  <=>  beta = 2 N_c = 6.
 ```
 
 The mismatched leading-map family: `tau_lead = 1/8 <=> beta = 24`
 with formal per-direction moment `1/4`; `tau_lead = 3 <=> beta = 1` with
 formal moment `6`.
-The formal coincidence holds at the unit-variance setting and fails everywhere
-else. Identifying `g_formal` with a magnetic or physical coupling is outside
-this theorem.
+The leading-map unit point holds at the unit-variance setting and fails
+everywhere else.
 
 **Coverage verdict (scale-reference primitive).** The rate is
 dimensionless. The approved scale-reference primitive declares, in its own
@@ -153,8 +147,8 @@ is supplied by it." Therefore the primitive does **not** cover the rate:
 discharged by the approved dimensionful reference. The rate is a genuine
 dimensionless residual of the dynamics lane — a dial with `tau = 1/2` as
 its distinguished heat-kernel setting (unit variance per record step). The
-formal and leading-kernel labels coincide there; no coordinate, magnetic, or
-physical-coupling identification is inferred or forced by the lane's premises.
+No coordinate, magnetic, or physical-coupling identification is inferred or
+forced by the lane's premises.
 
 ## Proof
 
@@ -190,9 +184,8 @@ the generator model; the group-level statement is verified on the
 constructed Wilson member: `<sum theta_j^2> / (8 tau_eff) -> 1`
 (Richardson), i.e. `8` directions at `2 tau` each. The leading-map equivalences
 in the display are exact rational arithmetic by definition of `tau_lead`, and the
-`g^2 = 2 tau` consistency line is the cited formal identity
-`beta g^2 = 2n` evaluated under the explicit symbolic naming `n=N_c` and
-`beta=N_c/tau`. No physical coupling dictionary is used.
+relation `beta=N_c/tau` follows directly from the defined leading map. No
+coupling dictionary is used.
 
 ## Boundary
 
@@ -213,8 +206,7 @@ This note does not claim:
 - coverage of the rate by the scale-reference primitive — the opposite is
   proved from the primitive's own quoted text;
 - Wilson plaquette action-surface selection from framework axioms;
-- a dictionary identifying the formal `g` of the matrix coefficient theorem
-  with a Wilson magnetic or physical coupling;
+- a dictionary identifying the rate with a Wilson magnetic or physical coupling;
 - a continuum Hamiltonian, spectral gap, or continuum-limit existence;
 - a continuum running-coupling value or phenomenological coupling;
 - an audit verdict or any effective-status promotion.
@@ -263,5 +255,5 @@ python3 scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07
 Expected:
 
 ```text
-TOTAL: PASS=76 FAIL=0
+TOTAL: PASS=72 FAIL=0
 ```

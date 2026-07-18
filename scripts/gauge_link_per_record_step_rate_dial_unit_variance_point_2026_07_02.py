@@ -26,13 +26,12 @@ Checked content (all constructed, nothing assigned):
       (breaks the covariant-channel premise — the premise that fails is
       named, and it is not the rate); a metric dilation changes the fixed
       trace form (the freedom rigidity removes — also not the rate).
-  R3  variance law and the formal leading-map unit point: the per-direction second moment
+  R3  variance law and the leading-map unit point: the per-direction second moment
       per step is 2 tau (Gaussian generator identity + constructed Wilson
       second moments -> 8 tau_eff over dim = 8); hence tau = 1/2 is
       exactly the unit-variance-per-step setting. Under the defined leading
-      map tau_lead=N_c/beta it corresponds to beta = 2 N_c = 6. The stable-path matrix theorem
-      supplies only a formal coefficient identity; no magnetic/physical
-      g_bare dictionary is inferred. Exact rational layer for the equivalences and the
+      map tau_lead=N_c/beta it corresponds to beta = 2 N_c = 6. Exact
+      rational layer for the equivalences and the
       mismatched family (tau = 1/8 <-> beta = 24, per-direction moment
       1/4; tau = 3 <-> beta = 1, moment 6).
 
@@ -50,7 +49,6 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md"
 RIGIDITY = ROOT / "docs" / "G_BARE_RIGIDITY_THEOREM_NOTE.md"
-WILSON = ROOT / "docs" / "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md"
 RP_TEMPORAL = ROOT / "docs" / "AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
 SEMIGROUP = ROOT / "docs" / "RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md"
 SCALE_REF = ROOT / "docs" / "SCALE_REFERENCE_PRIMITIVE_NOTE.md"
@@ -428,12 +426,8 @@ def section_F() -> None:
     check("tau = 1/2 gives per-direction moment 1 (unit variance per step)", per_direction_moment(Fraction(1, 2)) == 1)
     check("tau = 1/2 maps to beta = N_c / tau = 6", beta_of(Fraction(1, 2)) == 6)
     check(
-        "consistency with the formal identity: g_formal^2(beta(tau)) = 2 N_c / beta = 2 tau",
-        all(2 * n_c / beta_of(t) == 2 * t for t in (Fraction(1, 8), Fraction(1, 2), Fraction(3))),
-    )
-    check(
-        "formal coincidence at tau = 1/2: g_formal^2 = 1",
-        2 * n_c / beta_of(Fraction(1, 2)) == 1,
+        "defined leading map gives N_c/beta(tau)=tau",
+        all(n_c / beta_of(t) == t for t in (Fraction(1, 8), Fraction(1, 2), Fraction(3))),
     )
     check(
         "mismatched family: tau = 1/8 -> beta = 24, moment 1/4; tau = 3 -> beta = 1, moment 6",
@@ -458,7 +452,6 @@ def section_G() -> None:
     paths = {
         "rate-dial note": NOTE,
         "finite-link rigidity note": RIGIDITY,
-        "Wilson small-a note": WILSON,
         "RP temporal-gauge bridge note": RP_TEMPORAL,
         "record classical semigroup boundary note": SEMIGROUP,
         "scale-reference primitive note": SCALE_REF,
@@ -469,7 +462,6 @@ def section_G() -> None:
     note_flat = flat(NOTE.read_text(encoding="utf-8"))
     note_text = NOTE.read_text(encoding="utf-8")
     rigidity_flat = flat(RIGIDITY.read_text(encoding="utf-8"))
-    wilson_text = WILSON.read_text(encoding="utf-8")
     rp_flat = flat(RP_TEMPORAL.read_text(encoding="utf-8"))
     semigroup_flat = flat(SEMIGROUP.read_text(encoding="utf-8"))
     scale_flat = flat(SCALE_REF.read_text(encoding="utf-8"))
@@ -493,8 +485,6 @@ def section_G() -> None:
 
     require_contains("rigidity", rigidity_flat, "no independent scalar-normalization freedom")
     require_contains("rigidity", rigidity_flat, "Tr(T_a T_b) = delta_ab / 2")
-    require_contains("Wilson", wilson_text, "beta g^2 = 2n")
-    require_contains("Wilson", wilson_text, "authority for an action surface")
     require_contains("RP bridge", rp_flat, "temporal gauge")
     require_contains("RP bridge", rp_flat, "plane positive kernel")
     require_contains(

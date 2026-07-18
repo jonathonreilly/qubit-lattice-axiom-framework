@@ -1,41 +1,43 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py
-runner_sha256: 9d6922ea80eee081cd497c53435f3ad6c41c9685958a0658d43a0357e711bcc4
+runner_sha256: f0fe749c00d549b311bb03a812f22746d7b7b89102b4ddcab5f86cfac74fc84f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 ================================================================================================
-DEFINED MATRIX-TRACE TAYLOR AND FORMAL COEFFICIENT CERTIFICATE
-Arithmetic: exact SymPy symbolic; no physical dictionary
+ABSTRACT HERMITIAN MATRIX-TRACE DEFICIT CERTIFICATE
+Arithmetic: exact symbolic plus independent numerical reconstruction
 Mode: normal
 ================================================================================================
 
 ------------------------------------------------------------------------------------------------
-Part A: normal exact derivative and Gram-contraction route
+Part A: exact derivative, Gram, remainder, and rescaling route
 ------------------------------------------------------------------------------------------------
-  [PASS (A)] A1 packet dimension is n=2
-  [PASS (A)] A2 all matrices satisfy the theorem hypotheses
-  [PASS (A)] A3 Tr(A)=0  (0)
-  [PASS (A)] A4 Gram contraction gives Tr(A^2)=sum f_a^2/2  (f1**2/2 + f2**2/2 + f3**2/2)
+  [PASS (A)] A1 packet has positive dimension
+  [PASS (A)] A2 supplied packet satisfies Hermiticity and the half-Gram relation
+  [PASS (A)] A3 assembled A is Hermitian
+  [PASS (A)] A4 Gram contraction gives Tr(A^2)=F2/2  (f1**2/2 + f2**2/2 + f3**2/2)
   [PASS (A)] A5 D(0)=0
   [PASS (A)] A6 D'(0)=0
-  [PASS (A)] A7 D''(0)=sum f_a^2/(2n)  (f1**2/4 + f2**2/4 + f3**2/4)
-  [PASS (A)] A8 [x^2]D=D''(0)/2=sum f_a^2/(4n)  (f1**2/8 + f2**2/8 + f3**2/8)
-  [PASS (A)] A9 complex deficit has no linear term on the traceless packet
-  [PASS (A)] A10 the scalar deficit has fourth derivative -cos(y)
-  [PASS (A)] A11 the fourth derivative has absolute value at most one for real y  (1-cos(y)^2=sin(y)^2>=0)
-  [PASS (A)] A12 spectral fourth moment equals Tr(A^4)
-  [PASS (A)] A13 zero A has zero derivative, quadratic coefficient, and fourth moment
-  [PASS (A)] A14 coefficient residual factors as (beta*g^2-2n)/(4n)  ((beta*g**2 - 2*n)/(4*n))
-  [PASS (A)] A15 coefficient equality solves uniquely to beta=2n/g^2  ([2*n/g**2])
-  [PASS (A)] A16 canonical coefficient packet has zero exact residual  (0)
+  [PASS (A)] A7 D''(0)=Tr(A^2)/n=F2/(2n)  (f1**2/4 + f2**2/4 + f3**2/4)
+  [PASS (A)] A8 [x^2]D=D''(0)/2=F2/(4n)  (f1**2/8 + f2**2/8 + f3**2/8)
+  [PASS (A)] A9 the scalar deficit has fourth derivative -cos(y)
+  [PASS (A)] A10 the fourth derivative is globally bounded by one on the real line  (1-cos(y)^2=sin(y)^2>=0)
+  [PASS (A)] A11 the spectral fourth moment equals Tr(A^4)
+  [PASS (A)] A12 zero A saturates the identities and bound at zero
+  [PASS (A)] A13 n=1 is allowed when the supplied Gram relation holds
+  [PASS (A)] A14 tracelessness is unnecessary for the real deficit derivative  (Tr(A)=1, D'(0)=0)
+  [PASS (A)] A15 the n=1 packet has D''(0)=1 and [x^2]D=1/2
+  [PASS (A)] A16 its complex deficit retains the nonzero linear coefficient -i  (-I)
+  [PASS (A)] A17 substitution in w D(sx) gives coefficient w*s^2/(4n)  (s**2*w/(4*n))
+  [PASS (A)] A18 scalar rescaling is quadratic in s
 
 ================================================================================================
-TOTAL: PASS=16 FAIL=0
+TOTAL: PASS=18 FAIL=0
 ================================================================================================
-VERDICT: exact finite-dimensional Taylor/coefficient theorem verified; no physical interpretation inferred.
+VERDICT: native matrix Taylor, global remainder, and rescaling theorem verified.
 
 ----- stderr -----
 

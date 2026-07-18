@@ -1,101 +1,103 @@
 ===== runner cache v1 =====
 runner: scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py
-runner_sha256: fc0246de04b6b8afb84caf7bd054799f8dd48d81015298218b2c7bfc02e90125
+runner_sha256: 08cfaab5a41cafa340cea6b11769be4f42ae279b34161c7a3f62b2dff0d0a198
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
-Formal generator/coupling label-rescaling coefficient theorem
+Formal scalar-argument rescaling and Gram transformation
 ========================================================================
 Part 0: source boundaries
-[PASS] bridge note exists  [docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md]
-[PASS] defined matrix coefficient note exists  [docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md]
-[PASS] g_bare rescaling consumer note exists  [docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md]
-[PASS] bridge note contains marker: **Claim type:** positive_theorem
-[PASS] bridge note contains marker: No Wilson action or physical coupling is part of the theorem
-[PASS] bridge note contains marker: T'_a = c T_a
-[PASS] bridge note contains marker: g'   = g/c
-[PASS] bridge note contains marker: beta' = c^2 beta
-[PASS] bridge note contains marker: beta' g'^2 = beta g^2 = 2n
-[PASS] bridge note contains marker: does not claim:
-[PASS] bridge note contains marker: the paired label transformation is induced on any Wilson
-[PASS] bridge note contains marker: A downstream physical use must separately prove the dictiona
-[PASS] forbidden overclaim absent: audit verdict marker
-[PASS] forbidden overclaim absent: effective-status marker
-[PASS] forbidden overclaim absent: Wilson surface overclaim
-[PASS] forbidden overclaim absent: g_bare closure overclaim
+[PASS] rescaling note exists  [docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md]
+[PASS] native matrix theorem exists  [docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md]
+[PASS] rescaling note contains marker: **Claim type:** positive_theorem
+[PASS] rescaling note contains marker: q(w,s,n) := [x^2 F2] w D(sx) = w s^2/(4n)
+[PASS] rescaling note contains marker: w' = c^2 w
+[PASS] rescaling note contains marker: s' = s/c
+[PASS] rescaling note contains marker: q(w',s',n)
+[PASS] rescaling note contains marker: s'T'_a = sT_a
+[PASS] rescaling note contains marker: Tr(T'_a T'_b) = c^2 delta_ab/2
+[PASS] rescaling note contains marker: does not choose a comparison coefficient
+[PASS] rescaling note contains marker: Any use beyond the displayed matrix and scalar algebra requi
+[PASS] removed target/status marker absent: preferred parameter value
+[PASS] removed target/status marker absent: audit_status: audited_clean
+[PASS] removed target/status marker absent: effective_status: retained
 
-Part 1: formal coefficient authority surface
-[PASS] formal note contains marker: beta = 2n/g^2
-[PASS] formal note contains marker: beta g^2 = 2n
-[PASS] formal note contains marker: C_left = C_right
-[PASS] formal note contains marker: They may not cite it as authority for an action surface
+Part 1: native matrix coefficient authority surface
+[PASS] matrix theorem contains marker: [x^2 F2] w D(sx) = w s^2/(4n)
+[PASS] matrix theorem contains marker: global fourth-order bound
+[PASS] matrix theorem contains marker: does not select either scalar
+[PASS] matrix theorem contains marker: requires separate authority and remains outside this theorem
 
-Part 2: exact beta transform under compensating generator rescaling
-[PASS] formal product before rescaling n=3, g^2=1  [beta=6]
-[PASS] beta scales by c^2 for N=3, g^2=1, c=1/3  [beta'=2/3; c^2 beta=2/3]
-[PASS] product invariant after compensating rescale c=1/3
-[PASS] beta scales by c^2 for N=3, g^2=1, c=1/2  [beta'=3/2; c^2 beta=3/2]
-[PASS] product invariant after compensating rescale c=1/2
-[PASS] beta scales by c^2 for N=3, g^2=1, c=1  [beta'=6; c^2 beta=6]
-[PASS] product invariant after compensating rescale c=1
-[PASS] beta scales by c^2 for N=3, g^2=1, c=2  [beta'=24; c^2 beta=24]
-[PASS] product invariant after compensating rescale c=2
-[PASS] beta scales by c^2 for N=3, g^2=1, c=5/2  [beta'=75/2; c^2 beta=75/2]
-[PASS] product invariant after compensating rescale c=5/2
-[PASS] beta scales by c^2 for N=3, g^2=1, c=3  [beta'=54; c^2 beta=54]
-[PASS] product invariant after compensating rescale c=3
-[PASS] formal product before rescaling n=3, g^2=5/7  [beta=42/5]
-[PASS] beta scales by c^2 for N=3, g^2=5/7, c=1/3  [beta'=14/15; c^2 beta=14/15]
-[PASS] product invariant after compensating rescale c=1/3
-[PASS] beta scales by c^2 for N=3, g^2=5/7, c=1/2  [beta'=21/10; c^2 beta=21/10]
-[PASS] product invariant after compensating rescale c=1/2
-[PASS] beta scales by c^2 for N=3, g^2=5/7, c=1  [beta'=42/5; c^2 beta=42/5]
-[PASS] product invariant after compensating rescale c=1
-[PASS] beta scales by c^2 for N=3, g^2=5/7, c=2  [beta'=168/5; c^2 beta=168/5]
-[PASS] product invariant after compensating rescale c=2
-[PASS] beta scales by c^2 for N=3, g^2=5/7, c=5/2  [beta'=105/2; c^2 beta=105/2]
-[PASS] product invariant after compensating rescale c=5/2
-[PASS] beta scales by c^2 for N=3, g^2=5/7, c=3  [beta'=378/5; c^2 beta=378/5]
-[PASS] product invariant after compensating rescale c=3
-[PASS] formal product before rescaling n=2, g^2=3/5  [beta=20/3]
-[PASS] beta scales by c^2 for N=2, g^2=3/5, c=1/3  [beta'=20/27; c^2 beta=20/27]
-[PASS] product invariant after compensating rescale c=1/3
-[PASS] beta scales by c^2 for N=2, g^2=3/5, c=1/2  [beta'=5/3; c^2 beta=5/3]
-[PASS] product invariant after compensating rescale c=1/2
-[PASS] beta scales by c^2 for N=2, g^2=3/5, c=1  [beta'=20/3; c^2 beta=20/3]
-[PASS] product invariant after compensating rescale c=1
-[PASS] beta scales by c^2 for N=2, g^2=3/5, c=2  [beta'=80/3; c^2 beta=80/3]
-[PASS] product invariant after compensating rescale c=2
-[PASS] beta scales by c^2 for N=2, g^2=3/5, c=5/2  [beta'=125/3; c^2 beta=125/3]
-[PASS] product invariant after compensating rescale c=5/2
-[PASS] beta scales by c^2 for N=2, g^2=3/5, c=3  [beta'=60; c^2 beta=60]
-[PASS] product invariant after compensating rescale c=3
-[PASS] formal product before rescaling n=7/2, g^2=9/4  [beta=28/9]
-[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=1/3  [beta'=28/81; c^2 beta=28/81]
-[PASS] product invariant after compensating rescale c=1/3
-[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=1/2  [beta'=7/9; c^2 beta=7/9]
-[PASS] product invariant after compensating rescale c=1/2
-[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=1  [beta'=28/9; c^2 beta=28/9]
-[PASS] product invariant after compensating rescale c=1
-[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=2  [beta'=112/9; c^2 beta=112/9]
-[PASS] product invariant after compensating rescale c=2
-[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=5/2  [beta'=175/9; c^2 beta=175/9]
-[PASS] product invariant after compensating rescale c=5/2
-[PASS] beta scales by c^2 for N=7/2, g^2=9/4, c=3  [beta'=28; c^2 beta=28]
-[PASS] product invariant after compensating rescale c=3
+Part 2: exact native-coefficient transform
+[PASS] native coefficient is positive for w=3/2, s^2=1, n=1  [q=3/8]
+[PASS] paired rescaling preserves q at w=3/2, s^2=1, c=1/3  [q'=3/8]
+[PASS] paired scalar product cancels c^2 at c=1/3
+[PASS] paired rescaling preserves q at w=3/2, s^2=1, c=1/2  [q'=3/8]
+[PASS] paired scalar product cancels c^2 at c=1/2
+[PASS] paired rescaling preserves q at w=3/2, s^2=1, c=1  [q'=3/8]
+[PASS] paired scalar product cancels c^2 at c=1
+[PASS] paired rescaling preserves q at w=3/2, s^2=1, c=2  [q'=3/8]
+[PASS] paired scalar product cancels c^2 at c=2
+[PASS] paired rescaling preserves q at w=3/2, s^2=1, c=5/2  [q'=3/8]
+[PASS] paired scalar product cancels c^2 at c=5/2
+[PASS] paired rescaling preserves q at w=3/2, s^2=1, c=3  [q'=3/8]
+[PASS] paired scalar product cancels c^2 at c=3
+[PASS] native coefficient is positive for w=5/7, s^2=9/4, n=2  [q=45/224]
+[PASS] paired rescaling preserves q at w=5/7, s^2=9/4, c=1/3  [q'=45/224]
+[PASS] paired scalar product cancels c^2 at c=1/3
+[PASS] paired rescaling preserves q at w=5/7, s^2=9/4, c=1/2  [q'=45/224]
+[PASS] paired scalar product cancels c^2 at c=1/2
+[PASS] paired rescaling preserves q at w=5/7, s^2=9/4, c=1  [q'=45/224]
+[PASS] paired scalar product cancels c^2 at c=1
+[PASS] paired rescaling preserves q at w=5/7, s^2=9/4, c=2  [q'=45/224]
+[PASS] paired scalar product cancels c^2 at c=2
+[PASS] paired rescaling preserves q at w=5/7, s^2=9/4, c=5/2  [q'=45/224]
+[PASS] paired scalar product cancels c^2 at c=5/2
+[PASS] paired rescaling preserves q at w=5/7, s^2=9/4, c=3  [q'=45/224]
+[PASS] paired scalar product cancels c^2 at c=3
+[PASS] native coefficient is positive for w=11/5, s^2=3/5, n=3  [q=11/100]
+[PASS] paired rescaling preserves q at w=11/5, s^2=3/5, c=1/3  [q'=11/100]
+[PASS] paired scalar product cancels c^2 at c=1/3
+[PASS] paired rescaling preserves q at w=11/5, s^2=3/5, c=1/2  [q'=11/100]
+[PASS] paired scalar product cancels c^2 at c=1/2
+[PASS] paired rescaling preserves q at w=11/5, s^2=3/5, c=1  [q'=11/100]
+[PASS] paired scalar product cancels c^2 at c=1
+[PASS] paired rescaling preserves q at w=11/5, s^2=3/5, c=2  [q'=11/100]
+[PASS] paired scalar product cancels c^2 at c=2
+[PASS] paired rescaling preserves q at w=11/5, s^2=3/5, c=5/2  [q'=11/100]
+[PASS] paired scalar product cancels c^2 at c=5/2
+[PASS] paired rescaling preserves q at w=11/5, s^2=3/5, c=3  [q'=11/100]
+[PASS] paired scalar product cancels c^2 at c=3
+[PASS] native coefficient is positive for w=7/2, s^2=25/9, n=5/2  [q=35/36]
+[PASS] paired rescaling preserves q at w=7/2, s^2=25/9, c=1/3  [q'=35/36]
+[PASS] paired scalar product cancels c^2 at c=1/3
+[PASS] paired rescaling preserves q at w=7/2, s^2=25/9, c=1/2  [q'=35/36]
+[PASS] paired scalar product cancels c^2 at c=1/2
+[PASS] paired rescaling preserves q at w=7/2, s^2=25/9, c=1  [q'=35/36]
+[PASS] paired scalar product cancels c^2 at c=1
+[PASS] paired rescaling preserves q at w=7/2, s^2=25/9, c=2  [q'=35/36]
+[PASS] paired scalar product cancels c^2 at c=2
+[PASS] paired rescaling preserves q at w=7/2, s^2=25/9, c=5/2  [q'=35/36]
+[PASS] paired scalar product cancels c^2 at c=5/2
+[PASS] paired rescaling preserves q at w=7/2, s^2=25/9, c=3  [q'=35/36]
+[PASS] paired scalar product cancels c^2 at c=3
 
-Part 3: fixed-beta and half-trace definitions change for nontrivial c
-[PASS] test point satisfies beta g^2 = 2 N_c
-[PASS] nontrivial c=1/2 changes the defined beta label  [beta'=3/2; beta=6]
-[PASS] nontrivial c=1/2 changes canonical trace Gram  [Tr(T'_a T'_a)=1/8]
-[PASS] nontrivial c=2 changes the defined beta label  [beta'=24; beta=6]
-[PASS] nontrivial c=2 changes canonical trace Gram  [Tr(T'_a T'_a)=2]
-[PASS] nontrivial c=3 changes the defined beta label  [beta'=54; beta=6]
-[PASS] nontrivial c=3 changes canonical trace Gram  [Tr(T'_a T'_a)=9/2]
+Part 3: exponent-product preservation and Gram change
+[PASS] s'T'=sT under c=1/2
+[PASS] half-Gram transforms by c^2 under c=1/2  [diagonal=1/8]
+[PASS] nontrivial c=1/2 changes the half-Gram value
+[PASS] s'T'=sT under c=1
+[PASS] half-Gram transforms by c^2 under c=1  [diagonal=1/2]
+[PASS] s'T'=sT under c=2
+[PASS] half-Gram transforms by c^2 under c=2  [diagonal=2]
+[PASS] nontrivial c=2 changes the half-Gram value
+[PASS] s'T'=sT under c=3
+[PASS] half-Gram transforms by c^2 under c=3  [diagonal=9/2]
+[PASS] nontrivial c=3 changes the half-Gram value
 
-TOTAL: PASS=79 FAIL=0
+TOTAL: PASS=81 FAIL=0
 
 ----- stderr -----
 

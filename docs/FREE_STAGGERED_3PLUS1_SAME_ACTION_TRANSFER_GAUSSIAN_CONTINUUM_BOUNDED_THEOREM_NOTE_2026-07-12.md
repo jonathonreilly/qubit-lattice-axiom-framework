@@ -79,7 +79,7 @@ selected by the axioms.
 
 ## Theorem
 
-### 1. Exact same-object action, transfer, and covariance identity
+### 1. Exact same-action transfer and covariance identity
 
 Fold the three spatial axes into the canonical `2^3` cell. The spatial hop is
 

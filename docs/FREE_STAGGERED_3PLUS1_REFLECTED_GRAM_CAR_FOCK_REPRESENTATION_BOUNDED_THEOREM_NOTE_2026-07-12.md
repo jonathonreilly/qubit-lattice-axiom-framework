@@ -37,7 +37,7 @@ remain separate.
 | Existing surface | What it really contains | Treatment here |
 |---|---|---|
 | preceding same-action scalar spectral block | exact `z_pole=z_stable`, positive `T_2`, eight-dimensional solution-space map, and controlled scalar continuum limit | sole markdown dependency; this note resolves its named finite-`a` representation residual |
-| `docs/MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md:1-223` | numerical finite-carrier Berezin/operator eigenvalue equality, hard-coded `c_block=2`, predominantly one-spatial-axis language | question provenance and numerical cross-check only; the analytic proof below is self-contained and applies to arbitrary finite-dimensional anti-Hermitian spatial hop |
+| `docs/MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md:1-223` | numerical finite-carrier Berezin/operator eigenvalue equality, hard-coded `c_block=2`, predominantly one-spatial-axis language | question provenance and numerical cross-check only; the analytic proof below is self-contained and applies to arbitrary finite-dimensional real anti-Hermitian spatial hop |
 | `scripts/mixed_os_transfer_representation_2026-05-30.py:216-430` | open temporal-chain inverse, two-slice reflected Gram, full position-basis numerical check | sign conventions re-verified by the current runner's dense chain-inverse check; its finite-boundary equality is asymptotic rather than exact |
 | `docs/FREE_FIELD_LATTICE_TO_CONTINUUM_GAUSSIAN_MEASURE_BOUNDED_NOTE_2026-05-30.md:43-119` | covariance-to-fixed-finite-Wick polynomial continuity in a supplied Gaussian branch | compatible downstream context; not used to prove the fixed-`a` representation identity |
 | `docs/FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION_CONDITIONAL_THEOREM_NOTE_2026-05-30.md:367-390` | continuum OS reconstruction with a named lattice representation gap | this note closes the free positive-time block-algebra part of that gap, not the interacting or full continuum theorem |
@@ -76,8 +76,13 @@ b=(M+i lambda)/r,     |b|=1.
 ```
 
 For the canonical free 3D staggered action, `H` is the spatial hop with the
-three staggered phases. The following proof actually needs only finite
-dimension and `H^dag=-H`; the canonical torus supplies both.
+three staggered phases. The mode-level identities below need only finite
+dimension and `H^dag=-H`. The operator-level reflected-Gram identities
+additionally use that the hop is **real in the site basis** (`H*=H`, so
+complex conjugation maps `H=i lambda` eigenvectors to `H=-i lambda`
+eigenvectors); for a complex anti-Hermitian hop the same formulas hold with
+`H` replaced by `conj(H)` in the frames. The canonical torus supplies finite
+dimension, anti-Hermiticity, and realness.
 
 ## Theorem
 
@@ -380,7 +385,7 @@ supply the remaining structures, not that the framework cannot supply them.
 | compute the inside-pole residue analytically | `ATTEMPTED` | succeeds and fixes the exact reflected Gram | current Theorem 1; runner residue check |
 | use only equality of the pole and stable eigenvalue | `ATTEMPTED` | insufficient: it does not fix residue, null direction, or OS quotient/boundary-insertion normalization | preceding dependency boundary; current rank-one projector check |
 | normalize the rank-one residue into the OS projector and quotient | `ATTEMPTED` | succeeds: `K/(2z)` is an orthogonal projector and `K=A^dag A` | current Theorem 2; runner projector/quotient checks |
-| lift the mode formula to the full 3D position carrier | `ATTEMPTED` | succeeds for arbitrary finite-dimensional anti-Hermitian `H` once the operator reading binds each mode Gram to the conjugate eigenline | current Theorems 2, 3, and 5; runner dense chain-inverse and operator checks |
+| lift the mode formula to the full 3D position carrier | `ATTEMPTED` | succeeds for arbitrary finite-dimensional real anti-Hermitian `H` once the operator reading binds each mode Gram to the conjugate eigenline | current Theorems 2, 3, and 5; runner dense chain-inverse and operator checks |
 | extend the two-point identity to all finite multitime Gaussian polynomials | `ATTEMPTED` | succeeds on the positive-time unbarred OS algebra by Wick determinants and exterior products | current Theorem 4; runner degrees `1..3`, common and nonuniform-time controls |
 | demand exact equality on a finite temporal open chain | `ATTEMPTED` | fails without boundary-image terms; the exact theorem is vacuum/infinite-time and finite open chains converge to it | current arena boundary; runner `N=8,16,32` control |
 
@@ -433,6 +438,7 @@ an independent wall. The theorem closes the representation statement under
 | `finite even 3D spatial torus` | arena condition | infinite-volume uniformity remains open |
 | `positive-time unbarred` | algebra restriction | reciprocal barred/contact terms stay open |
 | `operator reading conjugates the mode dressing` | load-bearing kernel convention | dense chain-inverse check pins the OS support frame to `U_pole`; the parity involution displays the conjugate frame `V` |
+| real staggered hop (`H*=H`) | load-bearing carrier condition | required for the conjugate-eigenline operator binding; the canonical staggered hop is real, and a complex anti-Hermitian hop gets the `conj(H)` frames instead |
 | `full 3D` | finite-torus resolution only | does not mean infinite spatial volume or interacting spacetime |
 
 The scan also checked `we assume`, `by construction`, `as is standard`,
@@ -457,7 +463,7 @@ SM, or GR residuals.
 | resolution | tested? | narrow result |
 |---|---|---|
 | one spatial eigenmode | yes | exact residue and rank-one Gram |
-| arbitrary finite anti-Hermitian spatial hop | yes | operator-function `V,Z,B` theorem |
+| arbitrary finite real anti-Hermitian spatial hop | yes | operator-function `U_pole,Z,B` theorem |
 | canonical finite even 3D torus in position basis | yes | parity bridge and all cross-mode contractions |
 | block separations `n>=1` | analytic; sampled `1..6` | semigroup Grams `K_n` |
 | every finite multitime positive-time unbarred polynomial grade | analytic; sampled grades `1..3` | Wick determinant equals Fock exterior inner product |

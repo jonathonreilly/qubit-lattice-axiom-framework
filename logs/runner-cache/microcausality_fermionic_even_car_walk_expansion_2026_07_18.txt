@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_fermionic_even_car_walk_expansion_2026_07_18.py
+runner_sha256: 96719ee149a9da69d8f5a8ebd877b4fc64216ecf21a13714cae04edb5f3c3a13
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+PASS: C1 CAR relations hold in the JW representation (all pairs, 4 sites)
+PASS: C2 lemma ingredients: cross-site generators anticommute; even monomial passes a disjoint generator with sign +1
+PASS: C3 graded table: even-disjoint commutes (even, density, odd); odd-odd disjoint anticommutes with nonzero commutator
+PASS: C4 hopping and pairing: Hermitian, even (commute with parity), exact norm 1 each
+PASS: C5 odd-term necessity: an odd disjoint pair anticommutes, so the reduction step fails without evenness
+PASS: C6 exhaustive graded sign law: all 256 basis pairs obey (-1)^(p*q), and the (-1)^(p+q) law is explicitly violated
+PASS: R1 fermionic boundary reduction: far hops commute exactly and [H, n_0] = [hop_01, n_0] != 0
+PASS: R2 self-drop: [h, h] = 0 and [H, hop_01] = [hop_12, hop_01]
+PASS: R3 generator sums stay Hermitian and even (H-tilde hypothesis)
+PASS: K1 below-cone vanishing k = 0, 1, 2 against BOTH parities of probe
+PASS: K2 cone arrival at k = d = 3 against both probes
+PASS: K3 parity preservation exhibit: the adjoint chain of an even observable stays even
+PASS: S1 JW image of the JW-nonadjacent hop is NOT a qubit operator on its two factors (fails against the intermediate qubit X)
+PASS: S2 CAR locality holds regardless: the same hop commutes with the odd intermediate generators and the even intermediate density
+PASS: T1 odd-odd zeroth term is genuinely needed: ||[A, B]|| = 2 at t = 0
+PASS: T2 even-sector zeroth term vanishes (either observable even, both orientations)
+PASS: T3 coefficient assembly re-gate (2J)^k n 10^(k-1) = (n/10)(20J)^k
+PASS: N1 sibling names the fermionic transfer bridge as open
+PASS: N2 axiom memo supplies no dynamics
+PASS: N3 sibling chain authorities: theorem heading, volume-uniform constants, directed-time symmetry
+PASS: N3b sibling class conventions (block01: Hermitian bond terms)
+PASS: N4 target identifiers, lemma, theorem, non-attempt, hypothesis
+PASS: N5 theorem inequality with zeroth term pinned in frontmatter AND body
+PASS: N6 clean arbitrary-parity form is rejected (must not reappear)
+PASS: N7 No-Go section structure: all eight items and the Status line
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

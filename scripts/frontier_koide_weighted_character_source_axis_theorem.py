@@ -8,11 +8,13 @@ Status:
 Question:
   The old source-response cross-check proved that the canonical Plancherel
   kernel on the character sources is exactly I_3. Could a more general
-  left/right class-function weighting of the same canonical sources evade that
-  identity and force a unique Koide ray?
+  real left/right class-function weighting of the same canonical sources,
+  followed by principal/top-eigenspace selection, evade that identity and
+  force a unique Koide ray?
 
 Answer:
-  No. Every such weighted kernel stays diagonal in the canonical source basis.
+  No for that selection rule. Every such weighted kernel stays diagonal in the
+  canonical source basis.
   Therefore:
     - if the top eigenvalue is unique, the selected ray is a basis axis and
       has Koide Q = 1, not 2/3;
@@ -273,11 +275,11 @@ def main() -> int:
 
     print()
     print("Interpretation:")
-    print("  Allowing arbitrary left/right central class-function weights on the")
-    print("  canonical Z3 character sources does not rescue the charged-lepton")
-    print("  source-response route. The kernel always stays diagonal in the source")
-    print("  basis. Unique tops pick basis axes, which sit off the Koide cone;")
-    print("  degenerate tops leave the ray unfixed.")
+    print("  For real left/right central class-function weights on the canonical")
+    print("  Z3 character sources, principal/top-eigenspace selection does not")
+    print("  produce a unique Koide ray. The kernel stays diagonal in the source")
+    print("  basis: unique tops pick axes off the Koide cone, while degenerate")
+    print("  tops leave the ray unfixed. Other supplied selection rules are open.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1

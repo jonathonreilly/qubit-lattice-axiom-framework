@@ -388,8 +388,10 @@ The BAE residue closure problem reduces (post-Probe-26) to:
 2. **Identify a different Wilson-side derivation chain that produces
    non-scalar operator-level content.** Possible directions (none
    currently retained):
-   - microscopic source law for the cyclic 3-channel Wilson
-     descendant (per `KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md`),
+   - a microscopic source functional for the cyclic three-response carrier;
+     `KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md` describes only
+     its abstract supplied-functional coordinate domain and Riesz
+     reconstruction, not a microscopic or Wilson law,
    - the cyclic compression of an exact charged Hermitian source
      law (per `KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md`),
    - a positive-parent operator with principal square root

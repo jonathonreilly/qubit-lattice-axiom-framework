@@ -366,12 +366,12 @@ The constructive target is now smaller than a generic `Herm(3)` reconstruction:
 the Koide lane needs only the `3`-real `C_3[111]`-covariant Hermitian family
 `a I + b C + b* C²`, and Koide itself cuts that to a `2`-real scale-plus-phase
 subfamily. So the next positive attack is not "derive an arbitrary charged
-Hermitian block", but "derive the microscopic source law for the cyclic
-`3`-response Wilson descendant, then the single selector equation landing it on
-the Koide cone." See
+Hermitian block", but "derive a microscopic functional whose three cyclic
+responses satisfy the single cone equation." See
 [KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md](./KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md)
-and
-[KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md](./KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md).
+for that target-space reduction. The abstract supplied-functional Riesz lemma
+is recorded in `KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md` as
+context, not as a microscopic source law.
 For the ranked positive-path map, with fresh axiom-only routes placed ahead of
 transplant routes, see the search-map note
 `KOIDE_POSITIVE_PATHS_FIRST_PRINCIPLES_NOTE_2026-04-18.md` (a ranked
@@ -689,9 +689,9 @@ three-mass-hierarchy problem:
    are now clean. The missing science is the charged-lepton-specific positive
    parent `M` together with a retained route from its nontrivial eigenvalue
    channel to physical charged-lepton masses. Constructively, the cyclic
-   `3`-response descendant law is now explicit; what remains is the microscopic
-   source law for those three responses together with the one extra real
-   selector equation inside that smaller family.
+   `3`-response Riesz reconstruction is explicit once a real-linear functional
+   is supplied; the microscopic source functional and the one extra real
+   selector equation are not supplied by that reconstruction.
 
 **Net reduction:** The three-mass problem reduces from "derive three
 free parameters" to "derive one lepton-sector scale selector, one

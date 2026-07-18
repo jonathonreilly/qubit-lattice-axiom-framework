@@ -8,11 +8,11 @@ lane positively, with axiom-only routes prioritized over transplant routes
 
 ## Question
 
-After reducing the charged-lepton Koide lane to:
+After isolating the following abstract coordinate problem:
 
-- a cyclic `3`-response Wilson descendant law on
+- a cyclic `3`-response compression on
   `B0 = I`, `B1 = C + C^2`, `B2 = i(C - C^2)`,
-- and one scalar selector equation
+- and the scalar response equation
   `2 r0^2 = r1^2 + r2^2`,
 
 what are the simplest **positive** closure routes worth attacking next?
@@ -99,6 +99,13 @@ Those four are the cleanest positive routes currently visible in the tree.
 
 ## The 10 approaches
 
+The common algebraic input for the routes below is the
+[adjacent-chain cyclic-response Riesz lemma](./KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md):
+for a supplied real-linear functional `ell` on the Hermitian adjacent-chain
+space, `ell(B0)`, `ell(B1)`, and `ell(B2)` uniquely reconstruct the Riesz
+representative of its cyclic restriction. The source functional and any
+physical interpretation remain separate inputs to these search routes.
+
 ### 1. Observable-principle cyclic-source law on the exact retained operators
 
 **Type:** axiom-only / first-principles  
@@ -110,13 +117,13 @@ Use:
 
 - [OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](./OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
 - [THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md](./THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
-- [KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md](./KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)
 
 The three responses would be:
 ```
 r_i = dW(B_i)
 ```
-for the exact retained cyclic basis `B0,B1,B2`.
+for the exact cyclic basis `B0,B1,B2`, but only after this route separately
+derives such a microscopic `dW`.
 
 **Why it is strong:** no new carrier, no two-Higgs import, no later-atlas
 machinery. This is the cleanest direct axiom-only route.
@@ -139,7 +146,6 @@ Use:
 
 - [THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md](./THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
 - [KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md](./KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md)
-- [KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md](./KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)
 - [KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md](./KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md)
 
 **Why it is strong:** completely exact retained operator basis; the cyclic law
@@ -178,7 +184,6 @@ carrier.
 Use:
 
 - [PMNS_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md](./PMNS_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md)
-- [KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md](./KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)
 
 **Why it is strong:** positive route already exists at the interface level; it
 only needs to be specialized to the cyclic bundle.
@@ -196,7 +201,6 @@ even `2`-real law to the full cyclic `3`-response law.
 Use:
 
 - [PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md](./PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md)
-- [KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md](./KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)
 
 **Why it is attractive:** it already has the right spectral language and the
 right `C_3`-structured kernel.
@@ -233,7 +237,6 @@ and reinterpret `(mu,nu,eta)` as the charged-lepton cyclic response carrier.
 Use:
 
 - [DM_NEUTRINO_Z3_CIRCULANT_CP_TOOL_NOTE_2026-04-15.md](./DM_NEUTRINO_Z3_CIRCULANT_CP_TOOL_NOTE_2026-04-15.md)
-- [KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md](./KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)
 
 **Why it is attractive:** the basis matches almost perfectly; the odd
 generator is already exact and explicit.
@@ -267,7 +270,6 @@ responses from its principal square root `M^(1/2)`.
 Use:
 
 - [KOIDE_SQRTM_AMPLITUDE_PRINCIPLE_NOTE_2026-04-18.md](./KOIDE_SQRTM_AMPLITUDE_PRINCIPLE_NOTE_2026-04-18.md)
-- [KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md](./KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)
 
 **Why it is attractive:** it aims directly at the eventual `√m` interpretation.
 

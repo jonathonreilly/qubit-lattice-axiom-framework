@@ -1,335 +1,591 @@
 #!/usr/bin/env python3
-"""Verify an abstract cyclic-compression three-coordinate reconstruction lemma.
+"""Exact certificate for the adjacent-chain cyclic-response Riesz lemma.
 
-The historical runner path is retained for graph stability. This runner proves
-only finite linear algebra for a supplied ``H in Herm(3)``. It does not derive
-a microscopic Wilson first variation, an action map, a physical carrier, a
-mass spectrum, a scale/readout map, or a selector mechanism.
+The historical runner path is retained for ledger continuity. All theorem
+checks use symbolic integer or rational algebra. Mutation checks exercise the
+normalization, orientation, dimension, Hermiticity, linearity, response, and
+cone-factor contracts.
 """
 
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
-import numpy as np
 import sympy as sp
 
 
-PASS_COUNT = 0
-FAIL_COUNT = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md"
+KINDS = ("EXACT", "SUPPORT", "MUTATION")
 
 
-def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT") -> bool:
-    global PASS_COUNT, FAIL_COUNT
-    status = "PASS" if condition else "FAIL"
-    if condition:
-        PASS_COUNT += 1
-    else:
-        FAIL_COUNT += 1
-    tag = f" [{kind}]" if kind != "EXACT" else ""
-    message = f"  [{status} (A)]{tag} {name}"
-    if detail:
-        message += f"  ({detail})"
-    print(message)
-    return condition
+class Evidence:
+    def __init__(self) -> None:
+        self.passes = {kind: 0 for kind in KINDS}
+        self.failures = {kind: 0 for kind in KINDS}
+
+    def check(self, kind: str, name: str, condition: object, detail: str = "") -> None:
+        if kind not in KINDS:
+            raise ValueError(f"unknown evidence kind: {kind}")
+        status = "PASS" if condition else "FAIL"
+        bucket = self.passes if condition else self.failures
+        bucket[kind] += 1
+        message = f"  [{status}][{kind}] {name}"
+        if detail:
+            message += f"  ({detail})"
+        print(message)
+
+    def failed(self) -> int:
+        return sum(self.failures.values())
+
+    def summary(self) -> str:
+        fields = []
+        for kind in KINDS:
+            fields.append(f"{kind}={self.passes[kind]}/{self.failures[kind]}")
+        fields.append(f"TOTAL_FAIL={self.failed()}")
+        return " ".join(fields)
 
 
-def scope_firewall_violations(note_text: str, source_text: str) -> list[str]:
-    """Return missing scope markers or reintroduced load-bearing overclaims."""
-    required_note = (
-        "# Abstract Cyclic-Compression Three-Coordinate Reconstruction Lemma",
-        "**Type:** positive_theorem",
-        "**Status:** proposed_retained",
-        "supplied Hermitian matrix",
-        "Riesz/trace coordinates",
-        "No microscopic source or action map is derived.",
-        "No physical carrier identification is derived.",
-        "No scale or readout map is derived.",
-        "No selector mechanism is derived.",
-        "KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md",
-    )
-    forbidden_prose = (
-        "The la" + "w is now ex" + "plicit.",
-        "actual cyclic " + "Wilson descendant law",
-        "Given any local " + "Wilson first-variation law",
-        "Observed charged-" + "lepton witness",
-        "matches the actual " + "charged-lepton target",
-        "r0 = dW_" + "W(B0)",
-    )
-    forbidden_source = forbidden_prose + (
-        "cls=" + '"D"',
-        "PD" + "G",
-        "fourier_" + "matrix",
-        "part5_" + "observed",
-        "masses = " + "np.array",
-    )
-    violations = [f"missing note marker: {item}" for item in required_note if item not in note_text]
-    violations.extend(
-        f"forbidden note claim: {item}" for item in forbidden_prose if item in note_text
-    )
-    violations.extend(
-        f"forbidden runner claim: {item}" for item in forbidden_source if item in source_text
-    )
-    return violations
+EVIDENCE = Evidence()
 
 
-def matrix_unit(i: int, j: int) -> np.ndarray:
-    out = np.zeros((3, 3), dtype=complex)
-    out[i - 1, j - 1] = 1.0
-    return out
+def matrix_unit(i: int, j: int) -> sp.Matrix:
+    matrix = sp.zeros(3)
+    matrix[i - 1, j - 1] = sp.Integer(1)
+    return matrix
 
 
-def chain_data() -> dict[str, np.ndarray]:
-    data = {f"E{i}{j}": matrix_unit(i, j) for i in range(1, 4) for j in range(1, 4)}
-    for i, j in ((1, 2), (1, 3), (2, 3)):
-        data[f"X{i}{j}"] = data[f"E{i}{j}"] + data[f"E{j}{i}"]
-        data[f"Y{i}{j}"] = 1j * (data[f"E{j}{i}"] - data[f"E{i}{j}"])
-    return data
+def canonical_cycle() -> sp.Matrix:
+    return sp.Matrix(((0, 0, 1), (1, 0, 0), (0, 1, 0)))
 
 
-def real_trace_pair(left: np.ndarray, right: np.ndarray) -> float:
-    return float(np.trace(left @ right).real)
+def basis_for_cycle(cycle: sp.Matrix) -> tuple[sp.Matrix, sp.Matrix, sp.Matrix]:
+    cycle2 = cycle**2
+    return sp.eye(3), cycle + cycle2, sp.I * (cycle - cycle2)
 
 
-def cycle_matrix() -> np.ndarray:
-    return np.array([[0, 0, 1], [1, 0, 0], [0, 1, 0]], dtype=complex)
+def canonical_basis() -> tuple[sp.Matrix, sp.Matrix, sp.Matrix]:
+    return basis_for_cycle(canonical_cycle())
 
 
-def cyclic_basis() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    c = cycle_matrix()
-    c2 = c @ c
-    return np.eye(3, dtype=complex), c + c2, 1j * (c - c2)
+def matrix_is_zero(matrix: sp.Matrix) -> object:
+    return all(sp.simplify(entry) == 0 for entry in matrix)
 
 
-def cyclic_projector(matrix: np.ndarray) -> np.ndarray:
-    c = cycle_matrix()
-    c2 = c @ c
-    return (matrix + c @ matrix @ c2 + c2 @ matrix @ c) / 3.0
+def matrices_equal(left: sp.Matrix, right: sp.Matrix) -> object:
+    return matrix_is_zero(left - right)
 
 
-def cyclic_responses(matrix: np.ndarray) -> tuple[float, float, float]:
-    return tuple(real_trace_pair(basis, matrix) for basis in cyclic_basis())
+def is_hermitian(matrix: sp.Matrix) -> object:
+    return matrices_equal(matrix, matrix.conjugate().T)
 
 
-def reconstruct(responses: tuple[float, float, float]) -> np.ndarray:
-    r0, r1, r2 = responses
-    b0, b1, b2 = cyclic_basis()
-    return (r0 / 3.0) * b0 + (r1 / 6.0) * b1 + (r2 / 6.0) * b2
+def real_trace_pair(left: sp.Matrix, right: sp.Matrix) -> sp.Expr:
+    return sp.simplify(sp.re(sp.trace(left * right)))
 
 
-def hermitian_basis() -> tuple[np.ndarray, ...]:
-    data = chain_data()
+def hermitian_coordinate_basis() -> tuple[sp.Matrix, ...]:
+    e11, e22, e33 = matrix_unit(1, 1), matrix_unit(2, 2), matrix_unit(3, 3)
+
+    def x(i: int, j: int) -> sp.Matrix:
+        return matrix_unit(i, j) + matrix_unit(j, i)
+
+    def y(i: int, j: int) -> sp.Matrix:
+        return sp.I * (matrix_unit(j, i) - matrix_unit(i, j))
+
     return (
-        data["E11"],
-        data["E22"],
-        data["E33"],
-        data["X12"],
-        data["X13"],
-        data["X23"],
-        data["Y12"],
-        data["Y13"],
-        data["Y23"],
+        e11,
+        e22,
+        e33,
+        x(1, 2),
+        x(1, 3),
+        x(2, 3),
+        y(1, 2),
+        y(1, 3),
+        y(2, 3),
     )
 
 
-def part0_scope_firewall() -> None:
-    print("=" * 88)
-    print("PART 0: source scope is the abstract supplied-matrix lemma")
-    print("=" * 88)
-    note_text = NOTE_PATH.read_text(encoding="utf-8")
-    source_text = Path(__file__).read_text(encoding="utf-8")
-    violations = scope_firewall_violations(note_text, source_text)
-    check(
-        "The note and runner retain the required theorem boundary and reject prior overclaims",
-        not violations,
-        detail="; ".join(violations) if violations else "scope firewall clean",
+def hermitian_coordinates(matrix: sp.Matrix) -> sp.Matrix:
+    basis = hermitian_coordinate_basis()
+    norms = tuple(real_trace_pair(item, item) for item in basis)
+    return sp.Matrix(tuple(sp.simplify(real_trace_pair(item, matrix) / norm) for item, norm in zip(basis, norms)))
+
+
+def real_imag_vector(matrix: sp.Matrix) -> sp.Matrix:
+    entries = []
+    for entry in matrix:
+        entries.extend((sp.simplify(sp.re(entry)), sp.simplify(sp.im(entry))))
+    return sp.Matrix(entries)
+
+
+def commutator_map(cycle: sp.Matrix) -> sp.Matrix:
+    columns = [real_imag_vector(item * cycle - cycle * item) for item in hermitian_coordinate_basis()]
+    return sp.Matrix.hstack(*columns)
+
+
+def cyclic_projector(matrix: sp.Matrix, cycle: sp.Matrix, denominator: int) -> sp.Matrix:
+    return sp.simplify(
+        (matrix + cycle * matrix * cycle.inv() + cycle**2 * matrix * cycle.inv() ** 2)
+        / sp.Integer(denominator)
     )
 
 
-def part1_chain_algebra_contains_basis() -> None:
+def gram_matrix(basis: tuple[sp.Matrix, ...]) -> sp.Matrix:
+    return sp.Matrix(tuple(tuple(real_trace_pair(left, right) for right in basis) for left in basis))
+
+
+def generic_hermitian() -> tuple[sp.Matrix, tuple[sp.Symbol, ...]]:
+    names = "d0 d1 d2 x12 x13 x23 y12 y13 y23"
+    variables = sp.symbols(names, real=sp.S.true)
+    matrix = sum(
+        (coefficient * basis for coefficient, basis in zip(variables, hermitian_coordinate_basis())),
+        sp.zeros(3),
+    )
+    return matrix, variables
+
+
+def section(title: str) -> None:
     print()
-    print("=" * 88)
-    print("PART 1: the adjacent-chain path algebra contains the signed cyclic basis")
-    print("=" * 88)
-    data = chain_data()
-    c = cycle_matrix()
-    c2 = c @ c
-    b0, b1, b2 = cyclic_basis()
-    forward = data["E21"] + data["E32"] + data["E13"]
-    backward = data["E12"] + data["E23"] + data["E31"]
-
-    check(
-        "E12 E23 equals the long corner E13",
-        np.array_equal(data["E12"] @ data["E23"], data["E13"]),
-    )
-    check(
-        "E32 E21 equals the long corner E31",
-        np.array_equal(data["E32"] @ data["E21"], data["E31"]),
-    )
-    check(
-        "The fixed forward-cycle convention is C = E21 + E32 + E13",
-        np.array_equal(forward, c),
-    )
-    check(
-        "The backward cycle is C^2 = E12 + E23 + E31",
-        np.array_equal(backward, c2),
-    )
-    check(
-        "C has order three and C^2 = C^dagger",
-        np.array_equal(c @ c2, b0) and np.array_equal(c2, c.conj().T),
-    )
-    check(
-        "B1 = C + C^2 is in the adjacent-chain algebra",
-        np.array_equal(forward + backward, b1),
-    )
-    check(
-        "The B2 sign is i(C-C^2) = Y12 + Y23 - Y13",
-        np.array_equal(data["Y12"] + data["Y23"] - data["Y13"], b2),
-    )
+    print("=" * 92)
+    print(title)
+    print("=" * 92)
 
 
-def part2_projector_and_image() -> None:
-    print()
-    print("=" * 88)
-    print("PART 2: cyclic averaging is the exact rank-three Hermitian projector")
-    print("=" * 88)
-    c = cycle_matrix()
-    b0, b1, b2 = cyclic_basis()
-    h_basis = hermitian_basis()
-    projections = [cyclic_projector(item) for item in h_basis]
+def exact_adjacent_chain_and_commutant() -> None:
+    section("EXACT 1: adjacent-chain certificates and the full Hermitian commutant")
+    units = {(i, j): matrix_unit(i, j) for i in range(1, 4) for j in range(1, 4)}
+    cycle = canonical_cycle()
+    cycle2 = cycle**2
+    b0, b1, b2 = canonical_basis()
 
-    check(
-        "The projector fixes B0, B1, and B2",
-        all(np.array_equal(cyclic_projector(item), item) for item in (b0, b1, b2)),
+    EVIDENCE.check("EXACT", "E12 E23 is the long corner E13", matrices_equal(units[1, 2] * units[2, 3], units[1, 3]))
+    EVIDENCE.check("EXACT", "E32 E21 is the long corner E31", matrices_equal(units[3, 2] * units[2, 1], units[3, 1]))
+    diagonal_words = (
+        units[1, 2] * units[2, 1],
+        units[2, 1] * units[1, 2],
+        units[3, 2] * units[2, 3],
     )
-    check(
-        "The projector is idempotent on a real basis of Herm(3)",
-        all(np.allclose(cyclic_projector(item), item) for item in projections),
+    EVIDENCE.check(
+        "EXACT",
+        "adjacent generators and words contain all three diagonal units",
+        all(matrices_equal(actual, expected) for actual, expected in zip(diagonal_words, (units[1, 1], units[2, 2], units[3, 3]))),
     )
-    check(
-        "Every projected basis element is Hermitian",
-        all(np.allclose(item, item.conj().T) for item in projections),
+    EVIDENCE.check(
+        "EXACT",
+        "the displayed orientation is C=E21+E32+E13",
+        matrices_equal(cycle, units[2, 1] + units[3, 2] + units[1, 2] * units[2, 3]),
     )
-    check(
-        "Every projected basis element commutes with C",
-        all(np.allclose(item @ c, c @ item) for item in projections),
+    EVIDENCE.check(
+        "EXACT",
+        "the inverse orientation is C^2=E12+E23+E31",
+        matrices_equal(cycle2, units[1, 2] + units[2, 3] + units[3, 2] * units[2, 1]),
+    )
+    EVIDENCE.check(
+        "EXACT",
+        "C has order three and C^2=C^dagger",
+        matrices_equal(cycle**3, sp.eye(3)) and matrices_equal(cycle2, cycle.conjugate().T),
+    )
+    EVIDENCE.check(
+        "EXACT",
+        "B0,B1,B2 are Hermitian adjacent-chain combinations",
+        all(is_hermitian(item) for item in (b0, b1, b2)),
+    )
+    y12 = sp.I * (units[2, 1] - units[1, 2])
+    y13 = sp.I * (units[3, 1] - units[1, 3])
+    y23 = sp.I * (units[3, 2] - units[2, 3])
+    EVIDENCE.check("EXACT", "the fixed B2 orientation is Y12+Y23-Y13", matrices_equal(b2, y12 + y23 - y13))
+
+    comm_map = commutator_map(cycle)
+    kernel = comm_map.nullspace()
+    expected_kernel = sp.Matrix.hstack(*(hermitian_coordinates(item) for item in (b0, b1, b2)))
+    solved_kernel = sp.Matrix.hstack(*kernel)
+    EVIDENCE.check(
+        "EXACT",
+        "the full 18-by-9 real commutator system has rank six",
+        comm_map.shape == (18, 9) and comm_map.rank() == 6,
+        detail=f"shape={comm_map.shape} rank={comm_map.rank()}",
+    )
+    EVIDENCE.check(
+        "EXACT",
+        "the solved Hermitian commutant has nullity exactly three",
+        len(kernel) == 3,
+        detail=f"nullity={len(kernel)}",
+    )
+    EVIDENCE.check(
+        "EXACT",
+        "the complete commutant kernel equals span_R{B0,B1,B2}",
+        expected_kernel.rank() == 3
+        and solved_kernel.rank() == 3
+        and sp.Matrix.hstack(expected_kernel, solved_kernel).rank() == 3,
     )
 
-    real_columns = [np.concatenate((item.real.ravel(), item.imag.ravel())) for item in projections]
-    image_rank = int(np.linalg.matrix_rank(np.column_stack(real_columns), tol=1e-12))
-    check(
-        "The real Hermitian image has rank exactly three",
-        image_rank == 3,
-        detail=f"rank={image_rank}",
+    h, variables = generic_hermitian()
+    a, x, y = sp.symbols("a x y", real=sp.S.true)
+    commutant_substitution = {
+        variables[0]: a,
+        variables[1]: a,
+        variables[2]: a,
+        variables[3]: x,
+        variables[4]: x,
+        variables[5]: x,
+        variables[6]: y,
+        variables[7]: -y,
+        variables[8]: y,
+    }
+    solved_form = sp.simplify(h.subs(commutant_substitution))
+    EVIDENCE.check(
+        "EXACT",
+        "the explicit nine-coordinate commutant solution is aB0+xB1+yB2",
+        matrices_equal(solved_form, a * b0 + x * b1 + y * b2),
+        detail="d0=d1=d2; x12=x13=x23; y12=y23=-y13",
     )
 
-    gram = np.array(
-        [
-            [real_trace_pair(left, right) for right in (b0, b1, b2)]
-            for left in (b0, b1, b2)
-        ]
+
+def exact_projector_and_gram() -> None:
+    section("EXACT 2: orthogonal C3 conjugation projector and exact Gram data")
+    cycle = canonical_cycle()
+    b0, b1, b2 = canonical_basis()
+    h_basis = hermitian_coordinate_basis()
+    projected = tuple(cyclic_projector(item, cycle, 3) for item in h_basis)
+    projector_coordinates = sp.Matrix.hstack(*(hermitian_coordinates(item) for item in projected))
+
+    EVIDENCE.check(
+        "EXACT",
+        "the average preserves Hermiticity on a full real basis of Herm(3)",
+        all(is_hermitian(item) for item in projected),
     )
-    check(
-        "The real trace Gram matrix is exactly diag(3,6,6)",
-        np.array_equal(gram, np.diag([3.0, 6.0, 6.0])),
+    EVIDENCE.check(
+        "EXACT",
+        "every averaged basis element commutes with C",
+        all(matrix_is_zero(item * cycle - cycle * item) for item in projected),
+    )
+    EVIDENCE.check(
+        "EXACT",
+        "the average fixes B0,B1,B2",
+        all(matrices_equal(cyclic_projector(item, cycle, 3), item) for item in (b0, b1, b2)),
+    )
+    EVIDENCE.check(
+        "EXACT",
+        "the average is idempotent on all nine Hermitian coordinates",
+        all(matrices_equal(cyclic_projector(item, cycle, 3), item) for item in projected),
+    )
+    EVIDENCE.check(
+        "EXACT",
+        "the group average is self-adjoint for Re Tr on all 81 basis pairs",
+        all(
+            sp.simplify(real_trace_pair(cyclic_projector(left, cycle, 3), right) - real_trace_pair(left, cyclic_projector(right, cycle, 3))) == 0
+            for left in h_basis
+            for right in h_basis
+        ),
+    )
+    EVIDENCE.check(
+        "EXACT",
+        "the projector image has exact real rank three",
+        projector_coordinates.rank() == 3,
+        detail=f"rank={projector_coordinates.rank()}",
+    )
+    gram = gram_matrix((b0, b1, b2))
+    EVIDENCE.check(
+        "EXACT",
+        "the ordered trace Gram matrix is diag(3,6,6)",
+        gram == sp.diag(3, 6, 6),
         detail=f"gram={gram.tolist()}",
     )
-    check(
-        "All nine projected basis elements obey the trace-coordinate reconstruction",
-        all(
-            np.allclose(reconstruct(cyclic_responses(item)), projected)
-            for item, projected in zip(h_basis, projections)
+
+
+def exact_riesz_reconstruction_and_cone() -> None:
+    section("EXACT 3: arbitrary supplied functional, unique Riesz representative, and cone")
+    cycle = canonical_cycle()
+    b0, b1, b2 = canonical_basis()
+    cyclic_basis = (b0, b1, b2)
+    q = sp.symbols("q0:9", real=sp.S.true)
+
+    def functional(matrix: sp.Matrix) -> sp.Expr:
+        coords = hermitian_coordinates(matrix)
+        return sp.simplify(sum(coefficient * coordinate for coefficient, coordinate in zip(q, coords)))
+
+    responses = tuple(functional(item) for item in cyclic_basis)
+    h_ell = sp.simplify(responses[0] * b0 / 3 + responses[1] * b1 / 6 + responses[2] * b2 / 6)
+    u0, u1, u2 = sp.symbols("u0 u1 u2", real=sp.S.true)
+    test_vector = u0 * b0 + u1 * b1 + u2 * b2
+    EVIDENCE.check("EXACT", "the Riesz formula is Hermitian for arbitrary real functional data", is_hermitian(h_ell))
+    EVIDENCE.check(
+        "EXACT",
+        "the Riesz representative agrees with an arbitrary real-linear functional on all cyclic coordinates",
+        sp.simplify(functional(test_vector) - real_trace_pair(h_ell, test_vector)) == 0,
+    )
+    gram = gram_matrix(cyclic_basis)
+    response_vector = sp.Matrix(sp.symbols("r0:3", real=sp.S.true))
+    unique_coefficients = sp.simplify(gram.inv() * response_vector)
+    EVIDENCE.check(
+        "EXACT",
+        "the nonsingular Gram system gives the unique coefficients (r0/3,r1/6,r2/6)",
+        gram.det() == 108
+        and unique_coefficients == sp.Matrix((response_vector[0] / 3, response_vector[1] / 6, response_vector[2] / 6)),
+        detail=f"det(G)={gram.det()}",
+    )
+
+    a, x, y = sp.symbols("a x y", real=sp.S.true)
+    generic_cyclic = a * b0 + x * b1 + y * b2
+    trace_responses = tuple(real_trace_pair(item, generic_cyclic) for item in cyclic_basis)
+    recovered = sp.simplify(trace_responses[0] * b0 / 3 + trace_responses[1] * b1 / 6 + trace_responses[2] * b2 / 6)
+    EVIDENCE.check(
+        "EXACT",
+        "every cyclic Hermitian H has responses (3a,6x,6y)",
+        trace_responses == (3 * a, 6 * x, 6 * y),
+    )
+    EVIDENCE.check("EXACT", "the three trace responses recover every cyclic Hermitian H", matrices_equal(recovered, generic_cyclic))
+
+    generic_h, _ = generic_hermitian()
+    projected = cyclic_projector(generic_h, cycle, 3)
+    projected_responses = tuple(real_trace_pair(item, generic_h) for item in cyclic_basis)
+    projected_reconstruction = sp.simplify(
+        projected_responses[0] * b0 / 3 + projected_responses[1] * b1 / 6 + projected_responses[2] * b2 / 6
+    )
+    EVIDENCE.check(
+        "EXACT",
+        "for a generic nine-coordinate Hermitian matrix the same responses reconstruct its cyclic projection",
+        matrices_equal(projected, projected_reconstruction),
+    )
+
+    r0, r1, r2 = sp.symbols("r0 r1 r2", real=sp.S.true)
+    cone_in_responses = sp.expand(18 * ((r0 / 3) ** 2 - 2 * ((r1 / 6) ** 2 + (r2 / 6) ** 2)))
+    cone_polynomial = sp.Poly(cone_in_responses, r0, r1, r2)
+    EVIDENCE.check(
+        "EXACT",
+        "independent coefficient extraction gives 2r0^2-r1^2-r2^2",
+        cone_polynomial.coeff_monomial(r0**2) == 2
+        and cone_polynomial.coeff_monomial(r1**2) == -1
+        and cone_polynomial.coeff_monomial(r2**2) == -1
+        and len(cone_polynomial.terms()) == 3,
+        detail=f"18*residual={cone_in_responses}",
+    )
+
+
+def source_support_checks() -> None:
+    section("SUPPORT: source scope, wiring, and evidence hygiene")
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    source = Path(__file__).read_text(encoding="utf-8")
+    required_note = (
+        "# Adjacent-Chain Cyclic-Response Compression and Riesz-Reconstruction Lemma",
+        "**Type:** positive_theorem",
+        "ell : V -> R",
+        "H_ell = (r0/3) B0 + (r1/6) B1 + (r2/6) B2",
+        "No microscopic source functional, physical carrier or readout, mass",
+    )
+    forbidden_note = (
+        "actual local " + "Wilson descendant",
+        "Wilson first-" + "variation",
+        "charged-" + "lepton target",
+        "physical mass " + "spectrum",
+        "selected physical " + "Koide law",
+        "future Wilson " + "obligation",
+        "what this buys",
+        "sharp next move",
+    )
+    EVIDENCE.check(
+        "SUPPORT",
+        "the note carries every required abstract supplied-functional marker",
+        all(marker in note for marker in required_note),
+    )
+    EVIDENCE.check(
+        "SUPPORT",
+        "the note carries none of the removed physical or promotional claims",
+        all(marker.lower() not in note.lower() for marker in forbidden_note),
+    )
+    markdown_doc_links = re.findall(r"\[[^\]]+\]\(([^)]+\.md(?:#[^)]+)?)\)", note)
+    EVIDENCE.check(
+        "SUPPORT",
+        "the self-contained proof has no hidden source-note dependency link",
+        len(markdown_doc_links) == 0,
+        detail=f"links={markdown_doc_links}",
+    )
+    forbidden_runner_tokens = (
+        "num" + "py",
+        "ran" + "dom",
+        "all" + "close",
+        "PD" + "G",
+        "masses" + " =",
+        "cls=" + '"D"',
+    )
+    EVIDENCE.check(
+        "SUPPORT",
+        "the runner contains no floating, stochastic, observed-comparator, or D-check evidence path",
+        all(token not in source for token in forbidden_runner_tokens),
+    )
+
+
+def theorem_contract_errors(
+    cycle: sp.Matrix,
+    declared_basis: tuple[sp.Matrix, sp.Matrix, sp.Matrix],
+    claimed_dimension: int,
+    gram_denominators: tuple[int, int, int],
+    projector_denominator: int,
+    response_basis: tuple[sp.Matrix, sp.Matrix, sp.Matrix],
+    reconstruction_basis: tuple[sp.Matrix, sp.Matrix, sp.Matrix],
+    koide_factor: int,
+    response_cone_coefficients: tuple[int, int, int],
+) -> set[str]:
+    errors: set[str] = set()
+    basis_from_declared_cycle = basis_for_cycle(cycle)
+    if not all(
+        matrices_equal(declared, derived)
+        for declared, derived in zip(declared_basis, basis_from_declared_cycle)
+    ):
+        errors.add("cycle_basis_orientation")
+
+    actual_dimension = 9 - commutator_map(cycle).rank()
+    if claimed_dimension != actual_dimension:
+        errors.add("commutant_dimension")
+
+    actual_gram = gram_matrix(declared_basis)
+    claimed_gram = sp.diag(*gram_denominators)
+    if actual_gram != claimed_gram:
+        errors.add("gram_denominator")
+
+    projected_basis = tuple(cyclic_projector(item, cycle, projector_denominator) for item in hermitian_coordinate_basis())
+    projector_ok = all(
+        matrices_equal(cyclic_projector(item, cycle, projector_denominator), item)
+        for item in projected_basis
+    ) and all(
+        matrices_equal(cyclic_projector(item, cycle, projector_denominator), item)
+        for item in declared_basis
+    )
+    if not projector_ok:
+        errors.add("projector_normalization")
+
+    a, x, y = sp.symbols("ma mx my", real=sp.S.true)
+    target = a * declared_basis[0] + x * declared_basis[1] + y * declared_basis[2]
+    responses = tuple(real_trace_pair(item, target) for item in response_basis)
+    reconstructed = sum(
+        (
+            response * basis / sp.Integer(denominator)
+            for response, basis, denominator in zip(responses, reconstruction_basis, gram_denominators)
         ),
+        sp.zeros(3),
     )
+    if not matrices_equal(reconstructed, target):
+        errors.add("response_reconstruction")
+    reconstruction_columns = sp.Matrix.hstack(*(hermitian_coordinates(item) for item in reconstruction_basis))
+    if reconstruction_columns.rank() != 3:
+        errors.add("reconstruction_uniqueness")
+
+    r0, r1, r2 = sp.symbols("mr0 mr1 mr2", real=sp.S.true)
+    scaled_cone = sp.expand(18 * ((r0 / 3) ** 2 - koide_factor * ((r1 / 6) ** 2 + (r2 / 6) ** 2)))
+    declared_response_cone = sum(
+        coefficient * response**2
+        for coefficient, response in zip(response_cone_coefficients, (r0, r1, r2))
+    )
+    if sp.simplify(scaled_cone - declared_response_cone) != 0:
+        errors.add("koide_factor")
+    return errors
 
 
-def part3_exact_supplied_matrix_reconstruction() -> None:
-    print()
-    print("=" * 88)
-    print("PART 3: three trace coordinates reconstruct the projection of a supplied H")
-    print("=" * 88)
-    d0, d1, d2, x01, x02, x12, y01, y02, y12 = sp.symbols(
-        "d0 d1 d2 x01 x02 x12 y01 y02 y12", real=True
+def functional_contract_errors(functional: object) -> set[str]:
+    errors: set[str] = set()
+    b0, b1, b2 = canonical_basis()
+    u = b0 + b1
+    v = 2 * b0 - b1 + b2
+    values = tuple(sp.simplify(functional(item)) for item in (u, v, u + v, 3 * u))
+    if sp.simplify(values[2] - values[0] - values[1]) != 0 or sp.simplify(values[3] - 3 * values[0]) != 0:
+        errors.add("functional_linearity")
+    if any(sp.simplify(sp.im(value)) != 0 for value in values):
+        errors.add("functional_reality")
+    return errors
+
+
+def mutation_checks() -> None:
+    section("MUTATION: hostile theorem-contract variants must be rejected")
+    cycle = canonical_cycle()
+    basis = canonical_basis()
+    base = {
+        "cycle": cycle,
+        "declared_basis": basis,
+        "claimed_dimension": 3,
+        "gram_denominators": (3, 6, 6),
+        "projector_denominator": 3,
+        "response_basis": basis,
+        "reconstruction_basis": basis,
+        "koide_factor": 2,
+        "response_cone_coefficients": (2, -1, -1),
+    }
+    baseline_errors = theorem_contract_errors(**base)
+    reversed_cycle = cycle.T
+    reversed_basis = basis_for_cycle(reversed_cycle)
+    reversed_control = dict(base)
+    reversed_control.update(
+        {
+            "cycle": reversed_cycle,
+            "declared_basis": reversed_basis,
+            "response_basis": reversed_basis,
+            "reconstruction_basis": reversed_basis,
+        }
     )
-    h = sp.Matrix(
-        [
-            [d0, x01 - sp.I * y01, x02 - sp.I * y02],
-            [x01 + sp.I * y01, d1, x12 - sp.I * y12],
-            [x02 + sp.I * y02, x12 + sp.I * y12, d2],
-        ]
-    )
-    c = sp.Matrix([[0, 0, 1], [1, 0, 0], [0, 1, 0]])
-    c2 = c**2
-    b0, b1, b2 = sp.eye(3), c + c2, sp.I * (c - c2)
-    projected = sp.simplify((h + c * h * c2 + c2 * h * c) / 3)
-    responses = tuple(sp.simplify(sp.trace(basis * h)) for basis in (b0, b1, b2))
-    reconstructed = sp.simplify(
-        (responses[0] / 3) * b0
-        + (responses[1] / 6) * b1
-        + (responses[2] / 6) * b2
-    )
-    expected_responses = (
-        d0 + d1 + d2,
-        2 * (x01 + x02 + x12),
-        2 * (y01 - y02 + y12),
+    reversed_control_errors = theorem_contract_errors(**reversed_control)
+    EVIDENCE.check(
+        "MUTATION",
+        "canonical and coherently reversed orientation controls are accepted",
+        len(baseline_errors) == 0 and len(reversed_control_errors) == 0,
+        detail=f"canonical={sorted(baseline_errors)} reversed={sorted(reversed_control_errors)}",
     )
 
-    check(
-        "The generic supplied Hermitian matrix reconstructs symbolically",
-        sp.simplify(projected - reconstructed) == sp.zeros(3),
-    )
-    check(
-        "The three symbolic trace coordinates are real polynomials",
-        all(sp.simplify(sp.im(item)) == 0 for item in responses),
-    )
-    check(
-        "The signed symbolic coordinates have the fixed normalization",
-        all(
-            sp.simplify(actual - expected) == 0
-            for actual, expected in zip(responses, expected_responses)
+    mutations = (
+        (
+            "reversed declared cycle with unreversed B2 basis orientation",
+            "cycle_basis_orientation",
+            {"cycle": reversed_cycle},
         ),
-        detail="r0=sum(diagonal), r1=2 sum(xij), r2=2(y01-y02+y12)",
+        ("missing commutant dimension", "commutant_dimension", {"claimed_dimension": 2}),
+        ("extra commutant dimension", "commutant_dimension", {"claimed_dimension": 4}),
+        ("wrong Gram denominator", "gram_denominator", {"gram_denominators": (3, 5, 6)}),
+        ("wrong projector normalization", "projector_normalization", {"projector_denominator": 2}),
+        ("wrong response index", "response_reconstruction", {"response_basis": (basis[0], basis[2], basis[1])}),
+        ("wrong response sign", "response_reconstruction", {"response_basis": (basis[0], basis[1], -basis[2])}),
+        ("nonunique reconstruction basis", "reconstruction_uniqueness", {"reconstruction_basis": (basis[0], basis[1], basis[1])}),
+        ("wrong Koide factor", "koide_factor", {"koide_factor": 1}),
     )
+    for name, expected_error, override in mutations:
+        candidate = dict(base)
+        candidate.update(override)
+        errors = theorem_contract_errors(**candidate)
+        EVIDENCE.check(
+            "MUTATION",
+            f"validator kills {name}",
+            expected_error in errors,
+            detail=f"errors={sorted(errors)}",
+        )
 
+    valid_target = 2 * basis[0] - 3 * basis[1] + basis[2]
+    invalid_target = valid_target + matrix_unit(1, 2)
+    EVIDENCE.check("MUTATION", "Hermitian target validator accepts the exact control", is_hermitian(valid_target))
+    EVIDENCE.check("MUTATION", "Hermitian target validator kills a non-Hermitian supplied target", not is_hermitian(invalid_target))
 
-def part4_koide_coordinate_equivalence() -> None:
-    print()
-    print("=" * 88)
-    print("PART 4: the supplied-matrix Koide cone has the exact response equation")
-    print("=" * 88)
-    r0, r1, r2 = sp.symbols("r0 r1 r2", real=True)
-    cone_residual = (r0 / 3) ** 2 - 2 * ((r1 / 6) ** 2 + (r2 / 6) ** 2)
-    response_residual = (2 * r0**2 - r1**2 - r2**2) / 18
-    check(
-        "a^2-2(x^2+y^2) equals (2r0^2-r1^2-r2^2)/18",
-        sp.simplify(cone_residual - response_residual) == 0,
-    )
-    check(
-        "The response-space equation has the required factor two",
-        sp.simplify(cone_residual - (r0**2 - r1**2 - r2**2) / 18) != 0,
+    linear_functional = lambda matrix: real_trace_pair(2 * basis[0] - basis[1] + 3 * basis[2], matrix)
+    nonlinear_functional = lambda matrix: sp.trace(matrix) ** 2 + real_trace_pair(basis[1], matrix)
+    linear_errors = functional_contract_errors(linear_functional)
+    nonlinear_errors = functional_contract_errors(nonlinear_functional)
+    EVIDENCE.check("MUTATION", "real-linear functional validator accepts the exact control", len(linear_errors) == 0, detail=str(sorted(linear_errors)))
+    EVIDENCE.check(
+        "MUTATION",
+        "real-linear functional validator kills nonlinear functional misuse",
+        "functional_linearity" in nonlinear_errors,
+        detail=str(sorted(nonlinear_errors)),
     )
 
 
 def main() -> int:
-    part0_scope_firewall()
-    part1_chain_algebra_contains_basis()
-    part2_projector_and_image()
-    part3_exact_supplied_matrix_reconstruction()
-    part4_koide_coordinate_equivalence()
-
+    print("ADJACENT-CHAIN CYCLIC-RESPONSE COMPRESSION / RIESZ CERTIFICATE")
+    exact_adjacent_chain_and_commutant()
+    exact_projector_and_gram()
+    exact_riesz_reconstruction_and_cone()
+    source_support_checks()
+    mutation_checks()
     print()
-    print("Interpretation:")
-    print("  The exact result is an abstract rank-three cyclic compression of a supplied")
-    print("  Hermitian matrix, reconstructed from its real trace coordinates on B0, B1,")
-    print("  and B2. The Koide cone is equivalent to 2 r0^2 = r1^2 + r2^2.")
-    print("  No microscopic source/action map, physical carrier or spectrum, scale/readout")
-    print("  map, or selector mechanism is derived by these identities.")
-    print()
-    print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
-    return 0 if FAIL_COUNT == 0 else 1
+    print("SUMMARY " + EVIDENCE.summary())
+    return int(EVIDENCE.failed() != 0)
 
 
 if __name__ == "__main__":

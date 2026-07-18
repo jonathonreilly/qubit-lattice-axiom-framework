@@ -6,36 +6,39 @@
 - **Paired runner:** [kcpt_corner_carrier_two_presentation_swap_proper_rotation_conjugacy_2026_07_18.py](../scripts/kcpt_corner_carrier_two_presentation_swap_proper_rotation_conjugacy_2026_07_18.py)
 - **Runner cache:** `logs/runner-cache/kcpt_corner_carrier_two_presentation_swap_proper_rotation_conjugacy_2026_07_18.txt`
 
-**Abstract.** The spectral-pairing note supplies a corner carrier `(C, P_chi, K)` and the
-mechanism note flags a two-model presentation pair — the entrywise-conjugate images
-`(C, P_w, K)` and `(C, P_wbar, K)` — with an unfixed binary choice and a live
-Qualification. On the same one-component staggered surface on the periodic `4^3` torus
+**Abstract.** The spectral-pairing note supplies a corner carrier `(C, P_chi, K)`. The
+mechanism note's two-model comparison is a joint Pauli/corner comparison; its
+corner-projector restriction contains the entrywise-conjugate pair `P_w`, `P_wbar`.
+On the same one-component staggered surface on the periodic `4^3` torus
 that the landed hw=1 delivery note used, this note delivers the presentation-swap as the
 proper cubic rotation `M`: the pi-rotation about `[1,-1,0]` (`det M = +1`), realized as a
 lattice unitary whose hw=1 kernel action is the transposition `TS` (T1). Rotation
 conjugation by `TS` acts on the supplied projector family exactly as entrywise conjugation
-`K`, `TS P_chi TS = conj(P_chi)` for every channel, so the pair is a single 2-orbit of the
-proper rotation and the canonical K-odd separator `D0 = P_w - P_wbar` is exchanged exactly
+`K`, `TS P_chi TS = conj(P_chi)` for every channel, so the projector pair is a single
+2-orbit of the proper rotation and the canonical K-odd separator `D0 = P_w - P_wbar` is exchanged exactly
 as by `K` (T2, T3). On the Hermitian probe section `W_H = a I + b C + conj(b) C^2` the
 antilinear K-exchange coincides exactly with the linear rotation conjugation,
 `conj(W_H) = TS W_H TS`; off the section the two gradings are inequivalent (witnesses
-`C - C^2` and `i I`) (T4). The unfixed binary choice is thereby a rotation-frame
-orientation at the `C_3[111]` axis; the note does not fix it and does not act on the
-memo's live Qualification. An honest operator-level covariance report for a named dressed
+`C - C^2` and `i I`) (T4). Thus the `w` versus `wbar` projector labeling is a
+rotation-frame orientation at the `C_3[111]` axis. This does not reclassify the full
+Pauli/corner two-model comparison: `sigma_2 tensor I_3` is K-odd but fixed by the
+corner rotation. The note does not fix the mechanism's choice and does not act on its
+live Qualification. An honest operator-level covariance report for a named dressed
 class (T5) is included and consumed by no other claim. All lattice arithmetic is exact
 integer; all carrier algebra is exact symbolic.
 
 ## Purpose
 
-The mechanism note's two-model FLAG leaves an unfixed binary choice between the two
-entrywise-conjugate presentations of the supplied corner carrier, and its live
-Qualification keeps that choice conditional. This note asks a structural question about
-that choice: is the exchange of the two presentations a symmetry named by the framework
-axioms? It answers yes on the delivered carrier — the exchange is conjugation by a proper
-cubic rotation named by the LATTICE axiom — and records exactly where the answer stops. It
-reclassifies the unfixed choice as a rotation-frame orientation without fixing it, and it
-leaves the memo's live Qualification untouched. The operator-level covariance report (T5)
-is a separate hardening probe whose computed outcome is consumed by no claim here.
+The mechanism note's two-model FLAG compares a supplied joint Pauli/corner presentation
+with its entrywise-conjugate presentation, and its live Qualification keeps the unfixed
+choice conditional. This note asks a narrower structural question: is the induced exchange
+of the two corner projectors a symmetry named by the framework axioms? It answers yes on
+the delivered carrier — that projector exchange is conjugation by a proper cubic rotation
+named by the LATTICE axiom — and records exactly where the answer stops. It reclassifies
+only the `w` versus `wbar` projector labeling as a rotation-frame orientation; it neither
+implements entrywise conjugation on the full joint presentation nor changes the memo's
+live Qualification. The operator-level covariance report (T5) is a separate hardening
+probe whose computed outcome is consumed by no claim here.
 
 ## Supplied objects and consumed readings
 
@@ -115,13 +118,21 @@ presents the same projector with its natural generator. Conjugation by the real 
 composed with `K` is an antilinear involution fixing every `P_chi`, and the probe transform
 is `TS W(a,b,c) TS = W(a,c,b)`.
 
-### The two-model pair is a proper-rotation orbit on the delivered carrier (T3, exact)
+### The corner-projector pair is a proper-rotation orbit on the delivered carrier (T3, exact)
 
-On the delivered carrier the entrywise-conjugate presentation pair lies on a single orbit of the proper cubic rotation group named by the LATTICE axiom; the unfixed binary choice in the two-model FLAG is a rotation-frame orientation at the `C_3[111]` axis, and any clause set that breaks the tie must break proper-rotation covariance at that orientation.
+On the delivered carrier the entrywise-conjugate corner-projector pair is exchanged by an
+element of the proper cubic rotation group named by the LATTICE axiom. Thus, on this
+restricted surface, the `w` versus `wbar` label is a rotation-frame orientation at the
+`C_3[111]` axis. A carrier-only tie-breaker invariant under the delivered rotation cannot
+distinguish the two; a larger joint construction may consume additional internal or
+co-transforming orientation data and is not classified here.
 Concretely, `{P_w, P_wbar}` is a 2-orbit under `TS`-conjugation (`TS P_w TS = P_wbar`,
 `TS P_wbar TS = P_w`, `TS P_1 TS = P_1`), this orbit coincides with the entrywise-conjugation
 orbit, and the canonical K-odd separator `D0 = P_w - P_wbar` is exchanged exactly as by `K`:
-`conj(D0) = -D0` and `TS D0 TS = -D0 = conj(D0)`. The memo's live Qualification remains live and unfixed; this note does not act on that slot.
+`conj(D0) = -D0` and `TS D0 TS = -D0 = conj(D0)`. This is not the full
+Pauli/corner orbit of the mechanism note: under the natural joint lift `I_2 tensor TS`,
+`sigma_2 tensor I_3` is fixed by rotation conjugation but is K-odd. The memo's live
+Qualification remains live and unfixed; this note does not act on that slot.
 
 ### K-parity equals rotation parity on the Hermitian section (T4, exact)
 
@@ -129,12 +140,17 @@ Channel values are `lam_chi(W(a,b,c)) = a + b*chi + c*chi^2`, with doublet separ
 `lam_w - lam_wbar = i*sqrt(3)*(b - c)`; the swap `b <-> c` fixes `lam_1` and exchanges the
 doublet pair. On the Hermitian section `W_H = a I + b C + conj(b) C^2` (with `b = b1 + i*b2`),
 the antilinear K-exchange coincides exactly with the linear rotation conjugation,
-`conj(W_H) = TS W_H TS`. Off the section the two gradings are inequivalent: `C - C^2` is
+`conj(W_H) = TS W_H TS`. Off the section the two gradings are inequivalent within the
+carrier algebra: `C - C^2` is
 K-even but rotation-odd and separates the doublet, while `i I` is K-odd but rotation-even
 and does not separate. K-parity and rotation parity therefore coincide on the Hermitian
-section and only there: for general complex `(a, b, c)` the difference `conj(W) - TS W TS`
+section of the carrier algebra and only there: for general complex `(a, b, c)` the difference
+`conj(W) - TS W TS`
 decomposes as `(conj(a) - a) I + (conj(b) - c) C + (conj(c) - b) C^2` with `I`, `C`, `C^2`
 linearly independent, so it vanishes exactly when `a` is real and `c = conj(b)`.
+On the larger mechanism surface, `sigma_2 tensor I_3` is a second escape: it is K-odd
+but rotation-even under `I_2 tensor TS`, so the full joint K action is not delivered by
+this corner rotation.
 
 ### Operator-level covariance report for the named dressed class (T5, computed report)
 
@@ -165,103 +181,132 @@ quote pairs (B7); ledger shard existence (B8); and note hygiene (B9).
 
 ## Negative controls
 
-Three controls separate the delivered result from look-alikes. The proper rotation
+Four controls separate the delivered result from look-alikes. The proper rotation
 `diag(-1,-1,1)` acts trivially on the hw=1 triplet while permuting sites, so properness
 alone does not deliver the swap. The improper coordinate mirror `x1 <-> x2` has `det = -1`
 and lies outside the axiom's proper rotation set, so no improper element is consumed. The
 witness `i I` is rotation-even yet K-odd, so the K-parity and rotation-parity coincidence is
-a fact about the Hermitian section rather than an identity of all operators.
+a fact about the Hermitian section rather than an identity of all carrier operators. The
+joint-factor witness `sigma_2 tensor I_3` is K-odd but fixed by `I_2 tensor TS`, so the
+corner-projector orbit is not silently promoted to the mechanism's full Pauli/corner
+presentation.
 
 ## No-Go Discipline Gate
 
-This bounded theorem asserts a positive structural coincidence on a supplied carrier; the
-discipline gate records what it does not claim and how each boundary is held.
+This gate covers the bounded negative content: the carrier-algebra `if and only if` in T4,
+the zero triplet-preserving count inside T5's named finite class, and the boundary between
+the corner-projector result and the mechanism's larger joint presentation.
 
-### N1 — Alternative-presentation scope
+### N1 — Alternative-route enumeration
 
-The claim ranges over the two entrywise-conjugate presentations named by the FLAG and over
-the proper cubic rotation group; it does not range over other supplied carriers or other
-axes.
+| Route attacking the scoped boundary | Marker | Result |
+|---|---|---|
+| delivered proper site rotation | ATTEMPTED | `M` has determinant `+1`, and its exact kernel action is `TS`, which exchanges the projector pair (B1 and B2) |
+| bare coordinate mirror | ATTEMPTED | it also induces the transposition but has determinant `-1`; it is outside the axiom's proper set (B1 item 11) |
+| different proper rotation with trivial restriction | ATTEMPTED | `diag(-1,-1,1)` is proper and moves sites but acts as the identity on the triplet, so properness alone is insufficient (B1 item 10) |
+| general carrier algebra | ATTEMPTED | rotation and K agree exactly on the Hermitian section and differ off it; `C-C^2` and `iI` witness both directions (B4 items 4 through 7) |
+| full joint Pauli/corner presentation | ATTEMPTED | `sigma_2 tensor I_3` is K-odd but fixed by `I_2 tensor TS`; the full mechanism comparison is an explicit escape (B4 item 8) |
+| operator-commuting dressings of `U2` | ATTEMPTED | the complete named `4096`-candidate enumeration has `64` commuting members and zero triplet-preserving members (B6 U2 block) |
+| operator-commuting dressings of `U_R` | ATTEMPTED | the second complete named enumeration also has `64` commuting members and zero triplet-preserving members (B6 UR block) |
 
-| Boundary | Status |
-|---|---|
-| presentation pair and proper rotations only | addressed |
+The last two rows close only the named finite classes. Other sign-field families, internal
+spin lifts, interacting extensions, and larger joint constructions remain untested and are
+not ruled out.
 
-### N2 — No status assertion
+### N2 — Wall-independence audit
 
-No dependency status is asserted or consumed; the note consumes only the quoted sentences.
+The note has three explicit scope boundaries rather than a universal no-go:
 
-| Boundary | Status |
-|---|---|
-| status set by the audit lane | addressed |
+| Boundary pair | Does the first close the second? | Does the second close the first? | Disposition |
+|---|---|---|---|
+| inherited supplied/gate carrier surface; projector-family restriction | no: a lattice carrier does not identify the full K action with rotation | no: the projector identity does not derive the carrier at the mechanism-note origin | independent and stated |
+| projector-family restriction; Hermitian carrier section | no: projector exchange holds while general carrier operators still separate the actions | no: the Hermitian-section identity does not enlarge the claim to the joint presentation | independent and stated |
+| Hermitian carrier section; named dressed operator class | no: carrier-algebra equality does not imply commutation with `D` | no: commuting dressings do not preserve the hw=1 triplet in the searched class | independent and stated |
 
-### N3 — Negative controls present
+No inflated wall count is used; T1-T4 consume none of T5.
 
-The trivial-restriction rotation, the improper mirror, and the rotation-even K-odd witness
-separate the result from look-alikes.
+### N3 — Hidden-wall scan
 
-| Boundary | Status |
-|---|---|
-| three explicit controls | addressed |
+The scan terms are “we assume”, “by construction”, “as is standard”, “the framework
+provides”, “bridge context”, “background”, “naturally”, “obviously”, “standard QFT”,
+“registered”, and “canonical”. “Canonical” occurs only in the supplied-basis and
+separator names; “framework axioms” is accompanied by the two verbatim Lattice and
+Admissibility quotations. The periodic `4^3` surface, corner basis, projector-family
+restriction, Hermitian section, and `4096`-candidate dressing class are all explicit.
+No hidden spin lift, action, readout, measure, or weight rule is consumed.
 
-### N4 — Scope boundary stated
+### N4 — Residual matching
 
-The coincidence of K-parity and rotation parity holds on the Hermitian section; off the
-section the two gradings differ, as witnessed.
+| Cited source | Source residual or role | Residual addressed here | Match? |
+|---|---|---|---|
+| spectral-pairing note | supplied abstract corner carrier and its supplied-surface FLAG | proper-rotation delivery of the projector exchange on the gate-note carrier | yes, at the gate note's bounded surface; the origin FLAG remains |
+| mechanism note | full joint Pauli/corner two-model comparison and live Qualification | corner-projector restriction only | partial, not full; the joint-factor witness prevents use as a closure or reclassification of the full FLAG |
+| landed carrier-delivery note | `C`, projector family, and entrywise `K` on the hw=1 carrier | same `V`, `C`, and periodic `4^3` surface | yes |
+| T5 finite-class report | no prior negative witness is cited | direct complete count in two named classes | direct computation; no residual substitution |
 
-| Boundary | Status |
-|---|---|
-| Hermitian section only | addressed |
+### N5 — Rhetoric and resolution audit
 
-### N5 — Inherited FLAG preserved
+The equality `TS P_chi TS = conj(P_chi)` is tested at projector resolution. The stronger
+carrier-algebra comparison is tested exactly and holds only on the Hermitian section. The
+joint Pauli/corner comparison is not claimed and has an explicit counter-witness. At the
+lattice-operator resolution, only the two named dressing classes are enumerated; no
+lattice-wide or all-operator nonexistence statement is made. T5's “zero” therefore always
+means zero among the `64` commuting members of the stated `4096`-candidate class.
 
-The corner surface is the mechanism note's supplied surface; that inherited FLAG is carried
-unchanged, not removed.
+### N6 — Partial-closure paths
 
-| Boundary | Status |
-|---|---|
-| supplied-surface FLAG carried | addressed |
+| Candidate path | Current treatment | What it could change |
+|---|---|---|
+| internal spin lift or another joint representation of the rotation | untested | could act nontrivially on the Pauli factor; outside the corner-only proof |
+| co-transforming orientation datum or larger covariant clause set | untested | could select a joint orientation without being a carrier-only invariant |
+| wider sign-field, translation, or interacting dressing class | untested | could contain an operator that both commutes with `D` and preserves the hw=1 triplet |
+| a physical action/readout selector | open outside this note | could fix the mechanism's presentation choice or a weight without contradicting the projector orbit |
 
-### N6 — No weight selection
+These are ordinary downstream theorem paths, not new axioms, and none is foreclosed.
 
-No weight `r` is referenced, forced, derived, or selected; the guard exhibits only the
-swap-invariance of the doublet symmetric functions.
+### N7 — Steelman
 
-| Boundary | Status |
-|---|---|
-| weight-neutral | addressed |
+Strongest objection: the mechanism's entrywise-conjugate presentations include the Pauli
+factor and every K-odd seed, while the rotation proved here acts only on the corner carrier.
+The objection is decisive against reclassifying the full FLAG: `sigma_2 tensor I_3` is the
+exact counterexample. The claim is therefore restricted to the corner projectors and, for
+general carrier probes, to the Hermitian section. A second objection is that the failure of
+the searched commuting dressings may be an artifact of the six-bit sign-field ansatz. That
+is also granted; T5 reports only its named finite class and is consumed by no theorem claim.
 
-### N7 — Exact arithmetic only
+### N8 — Cross-cycle echo
 
-Every gate is exact integer or exact symbolic; the report uses no float, tolerance, or
-randomness.
+The closest echo is the landed carrier-delivery note: its N1 scan already records that joint
+qubit/corner observables escape a bare-carrier classification. The spectral-pairing note
+keeps entrywise `K` distinct from the adjoint and requires an extra declared reading before
+moving the mechanism to the coupling slot. The mechanism note itself constructs a jointly
+K-even qubit/corner witness whose factors are separately K-odd. The older carrier-orbit
+ledger at `.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md`
+likewise warns that adding an antisymmetric carrier primitive would break a carrier-only
+swap reduction. Those precedents are respected here by keeping the joint, internal-lift,
+and larger-dressing routes open.
 
-| Boundary | Status |
-|---|---|
-| exact arithmetic | addressed |
-
-### N8 — Consumed readings are verbatim
-
-Each consumed sentence is quoted without paraphrase and gated against both its source and
-this note's blockquote.
-
-| Boundary | Status |
-|---|---|
-| verbatim quote gates | addressed |
+**Gate result: PASS.** The exact projector orbit and Hermitian-section characterization
+survive; the full mechanism FLAG and all operator classes outside T5's finite search remain
+explicitly unclassified.
 
 ## Non-claims
 
-This note does not fix the presentation choice and does not act on the memo's live
-Qualification. It does not upgrade the supplied corner surface to physically derived status,
-and it does not claim the delivered rotation is the sole operator implementing the exchange.
-The T5 report is consumed by no claim here. No weight `r` is forced, derived, or selected.
+This note does not fix the mechanism's presentation choice and does not act on the memo's
+live Qualification. It reclassifies only the `w` versus `wbar` corner-projector label, not
+the full Pauli/corner comparison or every K-odd seed. It does not upgrade the supplied
+corner surface to physically derived status, and it does not claim the delivered rotation
+is the sole operator implementing the exchange. A larger joint construction may use
+internal or co-transforming orientation data. The T5 report is consumed by no claim here.
+No weight `r` is forced, derived, or selected.
 
 ## Dependency roles and status boundary
 
 Each dependency supplies a specific object: the framework axioms name the proper cubic
 rotation group and the admissibility covariance; the staggered realization gate names the
 operator surface; the spectral-pairing note supplies the corner carrier and its declared
-FLAG; the mechanism note supplies the two-model FLAG and its live Qualification; and the
+FLAG; the mechanism note supplies the broader two-model FLAG and its live Qualification,
+which bound rather than enlarge the projector-family result; and the
 landed hw=1 delivery note supplies the delivered carrier this note reuses. This note adds a
 structural coincidence on that delivered carrier and consumes no status-dependent content
 from any dependency. **Status authority:** independent audit lane only. Statuses of all dependencies are set by the independent audit lane; this note asserts no dependency status and consumes no status-dependent content.

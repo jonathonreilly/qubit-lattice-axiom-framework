@@ -545,7 +545,7 @@
         },
         {
           "claim_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "complete_prediction_chain_2026_04_15",
@@ -2875,6 +2875,6 @@
       "uncertified_count": 656
     }
   ],
-  "repo_head": "5685a5ae8a82ead36dbbe3eb71629c956ee50510",
+  "repo_head": "dd951dfcadb1acd8f64366ba75d344d9fff47485",
   "schema": "lane_certification_v2"
 }

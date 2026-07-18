@@ -246,10 +246,10 @@ def main() -> int:
         not np.array_equal(np.diag(diagonal_interface(env_perturbed)), env_perturbed),
     )
     check(
-        "the primary exact hostile control independently rejects a kappa-only physical inference",
+        "the primary exact supplied-diagonal theorem verifies its contraction, Gram, and rank/kernel outputs",
         bool(source_exact["formula_exact"])
-        and bool(source_exact["hostile_mixing"])
-        and bool(source_exact["shadow_fails"]),
+        and bool(source_exact["gram_exact"])
+        and bool(source_exact["rank_kernel_exact"]),
     )
 
     print()

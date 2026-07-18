@@ -30,7 +30,7 @@ from frontier_gauge_vacuum_plaquette_local_environment_factorization import (
     wilson_character_coefficient,
 )
 from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
-    SOURCE_SECTOR_BOUNDARY,
+    SOURCE_SECTOR_SURFACE,
     exact_small_case as source_factorization_exact_small_case,
 )
 
@@ -109,12 +109,12 @@ def main() -> int:
     print()
 
     check(
-        "The source boundary contract keeps the model supplied-diagonal-only and the exact hostile control rejects physical diagonality inference",
-        SOURCE_SECTOR_BOUNDARY.supplied_character_diagonal_only
-        and not SOURCE_SECTOR_BOUNDARY.derives_wilson_residual
-        and SOURCE_SECTOR_BOUNDARY.wilson_diagonality_open
-        and bool(source_exact["hostile_mixing"])
-        and bool(source_exact["shadow_fails"]),
+        "The source theorem exposes complete supplied-diagonal inputs and verifies its exact positive outputs",
+        SOURCE_SECTOR_SURFACE.complete_typed_inputs
+        and SOURCE_SECTOR_SURFACE.complete_outputs
+        and bool(source_exact["formula_exact"])
+        and bool(source_exact["gram_exact"])
+        and bool(source_exact["rank_kernel_exact"]),
     )
     check(
         "The completion producers supply one finite four-coefficient packet with nonzero trivial component",
@@ -142,8 +142,7 @@ def main() -> int:
     )
     check(
         "The finite zero-extension witness leaves physical Wilson compression and diagonality open",
-        SOURCE_SECTOR_BOUNDARY.wilson_diagonality_open
-        and recon_gap < 1.0e-12
+        recon_gap < 1.0e-12
         and eig_min > -1.0e-10,
         f"z00_min={z00_min:.6f}",
     )

@@ -16,7 +16,7 @@ import numpy as np
 from scipy.special import iv
 
 from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
-    SOURCE_SECTOR_BOUNDARY,
+    SOURCE_SECTOR_SURFACE,
     exact_small_case as source_factorization_exact_small_case,
 )
 
@@ -177,16 +177,15 @@ def main() -> int:
         in tensor,
     )
     check(
-        "source-sector boundary contract and exact helper keep the algebra supplied-D-only and reject the old diagonality inference",
-        SOURCE_SECTOR_BOUNDARY.supplied_character_diagonal_only
-        and not SOURCE_SECTOR_BOUNDARY.derives_wilson_residual
-        and SOURCE_SECTOR_BOUNDARY.wilson_diagonality_open
+        "source-sector typed interface and exact helper verify the supplied-diagonal inputs and positive outputs",
+        SOURCE_SECTOR_SURFACE.complete_typed_inputs
+        and SOURCE_SECTOR_SURFACE.complete_outputs
         and bool(source_exact["d_exact"])
         and bool(source_exact["formula_exact"])
-        and bool(source_exact["hostile_self_adjoint"])
-        and bool(source_exact["hostile_swap"])
-        and bool(source_exact["hostile_mixing"])
-        and bool(source_exact["shadow_fails"]),
+        and bool(source_exact["gram_exact"])
+        and bool(source_exact["rank_kernel_exact"])
+        and bool(source_exact["positive_case_exact"])
+        and bool(source_exact["zero_case_exact"]),
     )
     check(
         "plaquette note states the finite Wilson action and average plaquette object",

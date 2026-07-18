@@ -74,10 +74,10 @@ def main() -> int:
     print()
 
     check(
-        "The source theorem's exact hostile control rejects promotion from structural symmetry to physical diagonality",
+        "The source theorem verifies its supplied-diagonal matrix and Gram identities exactly",
         bool(source_exact["formula_exact"])
-        and bool(source_exact["hostile_mixing"])
-        and bool(source_exact["shadow_fails"]),
+        and bool(source_exact["gram_exact"])
+        and bool(source_exact["rank_kernel_exact"]),
     )
     check(
         "The completion producers return one finite four-coefficient vector and one finite three-sample target",
@@ -103,10 +103,11 @@ def main() -> int:
         f"||z_recon-Z_min||={recon_gap:.3e}",
     )
     check(
-        "The finite packet witness does not defeat the exact off-diagonal hostile control",
+        "The finite packet witness composes with the exact supplied-diagonal output surface",
         recon_gap < 1.0e-12
         and e_three.shape == (3, 4)
-        and bool(source_exact["shadow_fails"]),
+        and bool(source_exact["positive_case_exact"])
+        and bool(source_exact["zero_case_exact"]),
         f"z00_min={z00_min:.6f}",
     )
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_parent_correctness_audit_2026_04_18.py
-runner_sha256: 28ef113b6a49339c242173e1fd54f5133aa041ffde34d10449b04e64ea5d9222
+runner_sha256: 76ab03190a272c1bfc03f6014313c817fbd042820060805f43c280c489f6d390
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -21,7 +21,7 @@ PART 1: THE CURRENT REPO USES DIFFERENT PARENT-LEVEL FORMULAS
 PART 2: THE GAUGE-SIDE FRAMEWORK-POINT DATA ARE STILL UNDERDETERMINED
 ========================================================================================
   [PASS] The transfer-operator note explicitly leaves framework-point transfer-state identification open
-  [PASS] The source-sector boundary contract and exact helper keep the theorem supplied-D-only and reject the old diagonality inference
+  [PASS] The source-sector typed interface and exact helper verify the supplied-diagonal inputs and positive outputs
   [PASS] The Perron/Jacobi note says even the sharpened factorized class still does not force unique framework-point data
 
 ========================================================================================

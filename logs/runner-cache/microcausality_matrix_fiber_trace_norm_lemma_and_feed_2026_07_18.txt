@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_matrix_fiber_trace_norm_lemma_and_feed_2026_07_18.py
+runner_sha256: f29db5761479029f74c9039f46199a56ff9b02bf2f53de6a7197ecc24938d05f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.39
+status: ok
+----- stdout -----
+PASS: M1 pair trace-norm lemma ||T + T^H|| = ||k||_S1 on eight instances incl. non-normal ([[2,1],[0,1]]: both sides sqrt(10)), a COMPLEX kernel, and identity fiber (both sides 2 > op norm 1)
+PASS: M1b n_f = 3 with degenerate singular values (2, 2, 1/2): explicit eigenvector achieves 9/2 and the triangle bound matches, so ||T|| = ||k||_S1 = 9/2 without 64x64 eigendecomposition
+PASS: M2 particle-conserving mode rotations preserve the CAR: real orthogonal AND complex unitary instances, all anticommutators recomputed
+PASS: M3 rotated-hop structure: disjoint-mode hops commute, single hop spectrum {-s, 0, s}, FULL joint spectrum = all sums, and the sum's norm adds (1 + 2 = 3)
+PASS: M4 on-site bound: diag(1,-1) gives norm 1 < S1 = 2 (strict); diag(1,2) gives norm 3 = S1 (saturated)
+PASS: M5 S1 <= n_f * op (instances) with equality at the identity fiber (2 = 2 * 1)
+PASS: M6 fiber terms are even (pair terms vs total parity, non-normal and complex instances; on-site term vs site parity)
+PASS: M7 both fiber envelopes at x = 1/2: direct exact-pair 293 n_f K and sibling-compatible inherited 585 n_f K; n_f = 1 recovers the sibling values (293/585); n_f = 3 gives 879/1755
+PASS: N1 sibling names the matrix-fiber item this note takes
+PASS: N2 block07 class and display consumed unchanged
+PASS: N3 block04 graded disjoint-commutation authority
+PASS: N4 axiom memo supplies no dynamics
+PASS: N6 CT note declares U(1) AND SU(2) block kernels (the source-scope correction's quotes)
+PASS: N5 target identifiers, exact-lemma sentence, non-claims, Status
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

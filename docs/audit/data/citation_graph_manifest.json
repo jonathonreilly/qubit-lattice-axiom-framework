@@ -1,5 +1,5 @@
 {
- "edge_count": 14442,
+ "edge_count": 14438,
  "node_count": 3965,
  "nodes": {
   "3d_correction_master_note": {
@@ -5275,8 +5275,8 @@
    "out_degree": 4
   },
   "gauge_link_per_record_step_rate_dial_unit_variance_point_theorem_note_2026-07-02": {
-   "deps_hash": "102e38a43a3e",
-   "out_degree": 5
+   "deps_hash": "01785de443f3",
+   "out_degree": 4
   },
   "gauge_matter_closure_gates_2026-04-12": {
    "deps_hash": "9ef489997f78",
@@ -10863,8 +10863,8 @@
    "out_degree": 1
   },
   "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02": {
-   "deps_hash": "36b3e3d05819",
-   "out_degree": 4
+   "deps_hash": "55bc58b72208",
+   "out_degree": 3
   },
   "qcd_low_energy_running_bridge_note_2026-05-01": {
    "deps_hash": "e3b0c44298fc",
@@ -13539,8 +13539,8 @@
    "out_degree": 2
   },
   "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": {
-   "deps_hash": "f9016420ed6b",
-   "out_degree": 6
+   "deps_hash": "0d719aa82e12",
+   "out_degree": 5
   },
   "su2_weak_beta_coefficient_structural_closed_form_theorem_note_2026-04-26": {
    "deps_hash": "0028464a6b7f",
@@ -15059,8 +15059,8 @@
    "out_degree": 2
   },
   "wilson_temporal_kernel_casimir_generator_beta_gbare_transport_theorem_note_2026-07-01": {
-   "deps_hash": "a51d03613dbb",
-   "out_degree": 3
+   "deps_hash": "abc8a73d0784",
+   "out_degree": 2
   },
   "wilson_test_mass_continuum_note_2026-04-11": {
    "deps_hash": "25d0a1c867bc",

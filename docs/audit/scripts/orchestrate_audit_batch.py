@@ -18,6 +18,7 @@ clean guard is repeated immediately before every mutation and race retry.
 from __future__ import annotations
 
 import argparse
+import fcntl
 import hashlib
 import json
 import os
@@ -26,6 +27,7 @@ import shutil
 import signal
 import subprocess
 import sys
+import tempfile
 import time
 import uuid
 from collections import Counter
@@ -53,6 +55,36 @@ MIN_DELIVERY_BYTES = 200
 PACKET_COMPLETION_STALL_SECONDS = 20 * 60
 PACKET_COMPLETION_POLL_SECONDS = 15
 PACKET_COMPLETION_EXIT_GRACE_SECONDS = 10
+
+
+def acquire_exclusive_drain_lock(label: str):
+    """One audit-lane orchestrator per repository per machine.
+
+    Verdict/reseat commits ship the full regenerated audit-surface set, so
+    two concurrent audit-lane orchestrators race every push and each race
+    costs a multi-minute pipeline replay. Parallelism belongs in the seats
+    INSIDE one orchestrator, never in competing orchestrators. The lock is
+    advisory (flock), machine-local, keyed to the repository path, and
+    released automatically on process exit. Returns an open handle to keep
+    referenced, or None when another orchestrator already holds it.
+    """
+    key = hashlib.sha256(str(REPO_ROOT).encode("utf-8")).hexdigest()[:12]
+    lock_path = Path(tempfile.gettempdir()) / f"audit-lane-{key}.lock"
+    handle = open(lock_path, "w")
+    try:
+        fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        handle.close()
+        print(
+            "refusing to run: another audit-lane orchestrator holds "
+            f"{lock_path} for this repository. Join the running drain's "
+            "seats (its --max-workers) instead of racing a second "
+            f"instance ({label})."
+        )
+        return None
+    handle.write(f"{label} pid={os.getpid()}\n")
+    handle.flush()
+    return handle
 
 
 def sh(cmd: list[str], timeout: int | None = None) -> subprocess.CompletedProcess:
@@ -1064,6 +1096,10 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     PROGRESS["dry_run"] = bool(args.dry_run)
+    if not args.dry_run:
+        drain_lock = acquire_exclusive_drain_lock("orchestrate_audit_batch")
+        if drain_lock is None:
+            return 3
     if (
         args.max_workers < 1
         or args.rounds < 1

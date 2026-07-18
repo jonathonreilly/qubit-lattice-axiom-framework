@@ -312,6 +312,20 @@ through the same per-claim gate ladder as verdicts (pipeline, strict lint,
 serialized commit, race-retried push), mint nothing, and any reseat
 failure exits nonzero.
 
+**Parallel coexistence with review-loop.** The audit lane and review-loop
+sessions may run at the same time by design; the rules that keep concurrent
+landings cheap are: (1) exactly ONE audit-lane orchestrator per repository —
+the drainer and the panel orchestrator enforce this with a machine-local
+exclusive lock and exit with guidance when another instance holds it
+(parallelism belongs in the seats inside the one instance); (2) audit
+commits are the expensive racers (they ship regenerated audit surfaces and
+a push race replays the pipeline), review landings are cheap racers
+(cherry-pick retries in seconds) — so the audit lane never waits for
+review-loop, and review-loop retries rather than queues; (3) neither lane
+hand-merges `docs/audit/data/citation_graph_manifest.json` — a conflict
+touching only that file is resolved by regenerating it from the landed
+tree.
+
 **Apply-gate rejections are data.** When a finished audit is rejected at the
 apply gate (decoration/claim-type mismatch or any compatibility error),
 record the exact rejection with the row id in the run report. Recurring

@@ -1,9 +1,10 @@
 {
   "audit_date": null,
   "audit_invocation_history": [
-    "fc71816e0abe4282858421c30fdccbde"
+    "fc71816e0abe4282858421c30fdccbde",
+    "34cf35808d9042bd9cab50ea08654e88"
   ],
-  "audit_invocation_id": "fc71816e0abe4282858421c30fdccbde",
+  "audit_invocation_id": "34cf35808d9042bd9cab50ea08654e88",
   "audit_state_snapshot": null,
   "audit_status": "audit_in_progress",
   "auditor": null,
@@ -11,7 +12,7 @@
   "auditor_family": null,
   "auditor_model": null,
   "auditor_reasoning_effort": null,
-  "blocker": "awaiting_cross_confirmation",
+  "blocker": "cross_confirmation_disagreement",
   "chain_closes": null,
   "chain_closure_explanation": null,
   "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
@@ -51,8 +52,37 @@
       "verdict": "audited_clean",
       "verdict_rationale": "The result is a direct finite Fourier and linear-algebra closure, and the runner genuinely constructs the translations, characters, and projectors before checking their properties. Its general diagonal-observable conclusion follows analytically from the identical position profiles, rather than from the single numerical weight example alone. Selection of the physical generation locus lies outside the audited proposition and is explicitly excluded from its scope."
     },
-    "second_audit": null,
-    "status": "awaiting_second"
+    "second_audit": {
+      "audit_date": "2026-07-18T01:15:18.653015+00:00",
+      "audit_invocation_id": "34cf35808d9042bd9cab50ea08654e88",
+      "auditor": "codex-audit-loop-drain-ready-20260717-3c7d3251b79a4894aacd34f08706e80c-flavor_carrier_momentum_-001",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebraic implication closes after choosing the periodic 2 x 2 x 2 quotient and hw=1 sector, but those carrier choices are supplied rather than derived from the accepted premises. The universal nonseparation wording also lacks the required multi-route and five-resolution no-go evidence.",
+      "claim_scope": "Position-diagonal local readouts on the supplied hw=1 three-corner sector.",
+      "claim_type": "bounded_theorem",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "For any diagonal position observable O = diag(w_n), <psi_k, O psi_k> = (1/8) sum_n w_n, so no position-diagonal local observable separates the hw=1 characters.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add current-cycle N1 alternative-route evidence and exact N5 per-element, per-site, per-mode, per-block, and lattice-wide resolution lines for the scoped nonseparation assertion, then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict": "audited_conditional",
+      "verdict_rationale": "The runner genuinely constructs the translation matrices, character basis, and projectors and verifies ten algebraic facts rather than merely printing expected constants. Its results establish equal position profiles and diagonal expectations, plus momentum-projector separation, on the explicitly supplied finite hw=1 sector; they do not derive that carrier choice from the accepted framework premises. For N1-N4, non-diagonal momentum readout is an explicit escape from the scoped negative result, the position-diagonal restriction is the sole wall, the supplied-sector language is the only load-bearing admission, and no prior residual witness is invoked. For N5-N8, the runner checks several finite resolutions but lacks the mandated five-class rhetoric matrix, indexed registry candidates do not derive the supplied carrier, momentum projection supplies the strongest steelman, and the cross-cycle material concerns broader physical-locus or readout bridges rather than establishing this scoped universal boundary."
+    },
+    "status": "disagreement"
   },
   "decoration_parent_claim_id": null,
   "deps": [],

@@ -1,11 +1,11 @@
 # Audit Queue
 
-**Total pending:** 2984
-**Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** 623
+**Total pending:** 2985
+**Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** 624
 
 By criticality:
 - `critical`: 670
-- `high`: 353
+- `high`: 354
 - `medium`: 777
 - `leaf`: 1184
 
@@ -31,7 +31,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 14 | `g_bare_rigidity_theorem_note` | bounded_theorem | unaudited | critical | 1145 | 18.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_rigidity_theorem.py` |
 | 15 | `physical_lattice_necessity_note` | no_go | unaudited | critical | 1111 | 22.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_physical_lattice_necessity.py` |
 | 16 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | unaudited | critical | 1097 | 10.60 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_2026_05_17.py` |
-| 17 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | non_terminal_failed | critical | 1077 | 13.57 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_qcd_low_energy_running_bridge.py` |
+| 17 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | unaudited | critical | 1077 | 13.57 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_qcd_low_energy_running_bridge.py` |
 | 18 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | unaudited | critical | 1073 | 12.57 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py` |
 | 19 | `tensor_support_center_excess_law_note` | bounded_theorem | unaudited | critical | 1045 | 19.53 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_tensor_support_center_excess_law.py` |
 | 20 | `rconn_derived_note` | no_go | unaudited | critical | 988 | 24.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/rconn_matching_rule_nogo_certificate.py` |

@@ -61,7 +61,7 @@
         },
         {
           "claim_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
@@ -609,7 +609,7 @@
         },
         {
           "claim_id": "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16",
@@ -1473,7 +1473,7 @@
         },
         {
           "claim_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
@@ -2073,7 +2073,7 @@
         },
         {
           "claim_id": "qcd_low_energy_running_bridge_note_2026-05-01",
-          "effective_status": "audited_failed"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
@@ -2895,6 +2895,6 @@
       "uncertified_count": 661
     }
   ],
-  "repo_head": "bf40d67b001dda799f3cc3cef6b364460371e84d",
+  "repo_head": "e3a77148fece128dfae975c222800b9ebfe697fb",
   "schema": "lane_certification_v2"
 }

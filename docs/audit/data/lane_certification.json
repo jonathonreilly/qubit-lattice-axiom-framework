@@ -1149,7 +1149,7 @@
         },
         {
           "claim_id": "gravity_full_self_consistency_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "gravity_law_cleanup_note",
@@ -2895,6 +2895,6 @@
       "uncertified_count": 661
     }
   ],
-  "repo_head": "4d2a4c63ab109fb17aefa6f5ae1f0f213d7cb42a",
+  "repo_head": "f9abd72d3132798d42f8c8a424a6aed8aa29d796",
   "schema": "lane_certification_v2"
 }

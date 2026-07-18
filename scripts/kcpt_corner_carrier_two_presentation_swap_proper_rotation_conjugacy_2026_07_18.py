@@ -5,8 +5,9 @@ Paired note:
 docs/KCPT_CORNER_CARRIER_TWO_PRESENTATION_SWAP_PROPER_ROTATION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-07-18.md
 
 The mechanism note's two-model FLAG leaves an unfixed binary choice between the
-entrywise-conjugate presentations of the supplied corner carrier. This runner
-computes, in exact integer and exact symbolic arithmetic, that the pair is
+entrywise-conjugate presentations of the supplied joint Pauli/corner surface. This
+runner computes, in exact integer and exact symbolic arithmetic, that the induced
+corner-projector pair is
 conjugate under the pi-rotation about [1,-1,0] -- a PROPER cubic rotation named by
 the LATTICE axiom -- delivered on the same 4^3 staggered surface as the landed hw=1
 carrier (T1); rotation conjugation acts on the supplied projector family exactly as
@@ -25,7 +26,7 @@ Blocks:
   B1  T1 -- lattice delivery of the presentation-swap rotation (items a-g)
   B2  T2 -- rotation conjugation equals entrywise conjugation on the projector
       family (items h-l)
-  B3  T3 -- the two-model pair is a proper-rotation orbit; canonical K-odd
+  B3  T3 -- the corner-projector pair is a proper-rotation orbit; canonical K-odd
       separator exchanged as by K (orbit statement + item p)
   B4  T4 -- K-parity equals rotation parity on the Hermitian section; off-section
       inequivalence witnesses (items m, n, o)
@@ -480,13 +481,13 @@ check(
 )
 
 # ---------------------------------------------------------------------------
-# B3: T3 -- the two-model pair is a proper-rotation orbit; canonical K-odd
+# B3: T3 -- the corner-projector pair is a proper-rotation orbit; canonical K-odd
 #     separator (orbit statement + item p), exact symbolic
 # ---------------------------------------------------------------------------
 
 check(
     "B3.1",
-    "the presentation pair {P_w, P_wbar} is a single 2-orbit under the delivered "
+    "the corner-projector pair {P_w, P_wbar} is a single 2-orbit under the delivered "
     "proper rotation: TS P_w TS = P_wbar, TS P_wbar TS = P_w, TS P_1 TS = P_1",
     mat_zero(TSs * P[w] * TSs - P[wb])
     and mat_zero(TSs * P[wb] * TSs - P[w])
@@ -513,8 +514,8 @@ check(
 check(
     "B3.4",
     "the rotation image (C^2 with its natural w-channel projector) reproduces "
-    "the conjugate model: P_w(C^2) = P_wbar(C), so the orbit image is the "
-    "FLAG's entrywise-conjugate presentation",
+    "the conjugate corner model: P_w(C^2) = P_wbar(C), so the orbit image is "
+    "the corner-projector restriction of the FLAG's entrywise-conjugate presentation",
     mat_zero(proj(w, C3**2) - proj(wb, C3)),
 )
 
@@ -616,6 +617,18 @@ check(
         eye(3).reshape(9, 1), C3.reshape(9, 1), (C3**2).reshape(9, 1)
     ).rank()
     == 3,
+)
+
+sigma2 = Matrix([[0, -I], [I, 0]])
+joint_sigma2 = sp.kronecker_product(sigma2, eye(3))
+joint_rotation = sp.kronecker_product(eye(2), TSs)
+check(
+    "B4.8",
+    "joint-surface escape: sigma_2 tensor I_3 is K-ODD but fixed by the natural "
+    "joint lift I_2 tensor TS, so the corner-projector orbit does not implement "
+    "the mechanism note's full Pauli/corner entrywise-conjugation action",
+    mat_zero(conjugate(joint_sigma2) + joint_sigma2)
+    and mat_zero(joint_rotation * joint_sigma2 * joint_rotation - joint_sigma2),
 )
 
 # ---------------------------------------------------------------------------
@@ -876,7 +889,7 @@ SECTIONS = [
     "## Claims",
     "### Lattice delivery of the presentation-swap rotation (T1, exact)",
     "### Rotation conjugation equals entrywise conjugation on the supplied projector family (T2, exact)",
-    "### The two-model pair is a proper-rotation orbit on the delivered carrier (T3, exact)",
+    "### The corner-projector pair is a proper-rotation orbit on the delivered carrier (T3, exact)",
     "### K-parity equals rotation parity on the Hermitian section (T4, exact)",
     "### Operator-level covariance report for the named dressed class (T5, computed report)",
     "## Gated controls",
@@ -899,8 +912,10 @@ SECTIONS = [
     "**No check passes by literal stipulation.**",
     "**Status authority:** independent audit lane only.",
     "Context orientation only; no content is consumed from either.",
-    "On the delivered carrier the entrywise-conjugate presentation pair lies on a single orbit of the proper cubic rotation group named by the LATTICE axiom; the unfixed binary choice in the two-model FLAG is a rotation-frame orientation at the `C_3[111]` axis, and any clause set that breaks the tie must break proper-rotation covariance at that orientation.",
-    "The memo's live Qualification remains live and unfixed; this note does not act on that slot.",
+    "entrywise-conjugate corner-projector pair is exchanged by an",
+    "Pauli/corner orbit of the mechanism note: under the natural joint lift",
+    "`sigma_2 tensor I_3` is fixed by rotation conjugation but is K-odd.",
+    "Qualification remains live and unfixed; this note does not act on that slot.",
 ]
 for s in SECTIONS:
     B9_N += 1
@@ -985,16 +1000,16 @@ print(f"PATH note={NOTE}")
 print(f"PATH runner={RUNNER}")
 print(f"PATH cache={CACHE}")
 print(
-    "FLAGS: T1 delivers the mechanism note's two-presentation swap as the proper "
+    "FLAGS: T1 delivers the corner-projector restriction of the mechanism note's "
+    "two-presentation swap as the proper "
     "pi-rotation about [1,-1,0] (det M = +1) on the same 4^3 staggered surface as "
     "the landed hw=1 carrier, using the landed delivery standard (translation "
     "conjugacy + kernel action); T2-T4 show rotation conjugation equals entrywise "
     "conjugation on the supplied projector family and coincides with the antilinear "
     "K-exchange exactly on the Hermitian section, with off-section inequivalence "
-    "witnesses; T3 reclassifies the FLAG's unfixed binary choice as a rotation-frame "
-    "orientation at the C_3[111] axis and opens the predicate that any tie-breaking "
-    "clause set must break proper-rotation covariance there; the note does not fix "
-    "the presentation choice and does not act on the memo's live Qualification slot; "
+    "witnesses; the full Pauli/corner presentation has the exact joint-factor escape "
+    "sigma_2 tensor I_3 and is not reclassified; the note does not fix the mechanism's "
+    "presentation choice and does not act on the memo's live Qualification slot; "
     "B5 is weight-neutral (no weight r is referenced, forced, derived, or selected); "
     "the corner surface remains the mechanism note's supplied surface (inherited FLAG)"
 )

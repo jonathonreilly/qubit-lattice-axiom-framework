@@ -1,178 +1,213 @@
-# Gauge-Vacuum Plaquette Connected-Hierarchy Theorem
+# Gauge-Vacuum Plaquette Finite Connected-Hierarchy Projection Theorem
 
 **Date:** 2026-04-16
-**Status:** support - exact connected-cumulant hierarchy theorem for the Wilson plaquette reduction law on finite evaluation surfaces; explicit closure at `beta = 6` still open
-**Script:** `scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py`
+**Type:** positive_theorem
+**Status:** source-note positive finite-volume theorem for the common-source
+connected-cumulant hierarchy, its shell-summed projections, and the exact
+derivative transport route for the Wilson plaquette reduction law; audit and
+effective status remain pipeline-owned
+**Primary runner:**
+[`scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py`](../scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py)
+**Cache:**
+[`logs/runner-cache/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.txt`](../logs/runner-cache/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.txt)
 
-## Question
+## Claim scope
 
-After closing the exact implicit reduction law and its exact susceptibility
-transport equation, can we identify the exact nonperturbative object that still
-blocks analytic closure of the plaquette at the framework point?
+On a finite periodic Wilson evaluation surface, the common plaquette coupling
+is a uniform source shift. This gives an exact connected-cumulant derivative
+hierarchy. Its first shell-summed projections are the plaquette susceptibility
+and its derivative, and the exact `beta_eff` transport equations use those
+projections successively.
 
-## Answer
+The onset input
 
-Yes.
+`P_L(beta) - P_1plaq(beta) = beta^5 / 472392 + O(beta^6)`
 
-The remaining object is not just an unnamed scalar function `chi_L(beta)`. It
-is an exact connected plaquette hierarchy.
+then fixes the complete full-versus-one-plaquette three-point relation
 
-If
+`sum_(r,s) C_3(p_0,r,s;beta)
+ = chi_1plaq'(beta) + 5 beta^3 / 118098 + O(beta^4)`.
+
+This is a positive projection theorem. A direct explicit formula for `P_L` or
+`beta_eff` may determine the shell-summed projections without separately
+resolving every position-dependent cumulant.
+
+## Setup
+
+Let
 
 `X_p(U) = (1/3) Re Tr U_p`
 
-and
+and introduce independent plaquette sources on a finite Wilson surface:
 
-`Z_L[J; beta] = integral DU exp[beta sum_p X_p(U) + sum_p J_p X_p(U)]`,
+`Z_L[J;beta]
+ = integral DU exp[beta sum_p X_p(U) + sum_p J_p X_p(U)]`,
 
-then with
+`W_L[J;beta] = log Z_L[J;beta]`.
 
-`W_L[J; beta] = log Z_L[J; beta]`
+The connected `n`-point plaquette cumulants are
 
-the connected `n`-point plaquette cumulants are
+`C_n(p_1,...,p_n;beta)
+ = d_(J_p1) ... d_(J_pn) W_L[J;beta] |_(J=0)`.
 
-`C_n(p_1, ..., p_n; beta) = d_(J_{p_1}) ... d_(J_{p_n}) W_L[J; beta] |_(J=0)`.
+Fix a plaquette `p_0` on the symmetric finite surface and write
 
-Because `beta` enters as one common source on every plaquette, one has the
-exact operator identity
+`P_L(beta) = C_1(p_0;beta)`.
 
-`d/d beta = sum_r d/d J_r`
+## Theorem 1: finite Wilson common-source shift
 
-on the source-shifted finite Wilson surface. Therefore:
-
-`d/d beta C_n(p_1, ..., p_n; beta) = sum_r C_(n+1)(p_1, ..., p_n, r; beta)`.
-
-In particular,
-
-- `P_L(beta) = C_1(p_0; beta)`,
-- `chi_L(beta) = sum_r C_2(p_0, r; beta)`,
-- `chi_L'(beta) = sum_(r,s) C_3(p_0, r, s; beta)`.
-
-So explicit nonperturbative closure of `beta_eff(beta)` is equivalent to
-closing this exact connected plaquette hierarchy on the accepted `3 spatial +
-1 derived-time` surface.
-
-## Theorem 1: uniform-source shift identity
-
-The source-deformed finite Wilson partition function depends on `beta` and the
-plaquette sources only through the shifted combination
+Set
 
 `y_p = beta + J_p`.
 
-Equivalently,
+The exponent in `Z_L[J;beta]` is `sum_p y_p X_p(U)`, so for a finite plaquette
+set there is a function `W_tilde_L` such that
 
-`W_L[J; beta] = \widetilde{W}_L(y_1, ..., y_(N_plaq))`
+`W_L[J;beta] = W_tilde_L({beta + J_p}_p)`.
 
-with `y_p = beta + J_p`.
-
-Therefore, on the finite Wilson source surface,
+The ordinary multivariable chain rule therefore gives the exact operator
+identity
 
 `d/d beta = sum_r d/d y_r = sum_r d/d J_r`.
 
-This is an exact finite-volume identity, not a large-volume or perturbative
-approximation.
+No volume limit or perturbative expansion is used.
 
-## Corollary 1: exact connected hierarchy
+## Corollary 1: connected-cumulant hierarchy
 
-Applying the previous identity after taking `n` source derivatives gives
+Finite source derivatives commute. Applying the common-source identity after
+`n` source derivatives gives
 
-`d/d beta C_n(p_1, ..., p_n; beta) = sum_r C_(n+1)(p_1, ..., p_n, r; beta)`.
+`d/d beta C_n(p_1,...,p_n;beta)
+ = sum_r C_(n+1)(p_1,...,p_n,r;beta)`.
 
-This is the exact BBGKY-style hierarchy for connected plaquette cumulants on
-the finite periodic Wilson evaluation surface.
+The first shell-summed projections are consequently
 
-The first two levels are:
+- `P_L(beta) = C_1(p_0;beta)`;
+- `chi_L(beta) = P_L'(beta) = sum_r C_2(p_0,r;beta)`;
+- `chi_L'(beta) = P_L''(beta)
+   = sum_(r,s) C_3(p_0,r,s;beta)`.
 
-- `P_L(beta) = C_1(p_0; beta)`,
-- `chi_L(beta) = dP_L/d beta = sum_r C_2(p_0, r; beta)`,
-- `chi_L'(beta) = sum_(r,s) C_3(p_0, r, s; beta)`.
+These equations identify scalar shell sums. They do not assert separate
+closure of every position-resolved member of `C_2`, `C_3`, or the higher
+hierarchy.
 
-So the exact susceptibility flow theorem is already one collapsed projection of
-this hierarchy.
+## Corollary 2: positive derivative transport route for `beta_eff`
 
-## Corollary 2: exact transport hierarchy for `beta_eff`
+On the exact finite reduction map
 
-From the exact susceptibility-flow theorem,
+`P_L(beta) = P_1plaq(beta_eff(beta))`,
 
-`beta_eff'(beta) = chi_L(beta) / chi_1plaq(beta_eff(beta))`.
+write `chi_1plaq = P_1plaq'`. One differentiation gives
 
-Differentiating once more and substituting the hierarchy gives
+`beta_eff'(beta)
+ = [sum_r C_2(p_0,r;beta)]
+   / chi_1plaq(beta_eff(beta))`.
 
-`beta_eff''(beta) = [sum_(r,s) C_3(p_0, r, s; beta)] / chi_1plaq(beta_eff(beta))
-                    - [chi_1plaq'(beta_eff(beta)) / chi_1plaq(beta_eff(beta))]
-                      * (beta_eff'(beta))^2`.
+Differentiating again gives
 
-So:
+`beta_eff''(beta)
+ = [sum_(r,s) C_3(p_0,r,s;beta)]
+   / chi_1plaq(beta_eff(beta))
+   - [chi_1plaq'(beta_eff(beta))
+      / chi_1plaq(beta_eff(beta))]
+     * (beta_eff'(beta))^2`.
 
-- explicit closure of `beta_eff'` needs the shell-summed two-point connected
-  field,
-- explicit closure of `beta_eff''` already needs the shell-summed three-point
-  connected field,
-- and higher derivatives require the full connected hierarchy.
+Thus this transport/Taylor route determines successive derivatives through the
+corresponding shell-summed hierarchy projections: the first derivative uses
+the shell-summed two-point projection, the second uses the shell-summed
+three-point projection, and repeated differentiation consumes successive
+shell sums. Other exact representations of `P_L` or `beta_eff` lie outside
+this route statement.
 
-This is the exact sense in which the remaining gap is a hierarchy closure
-problem, not a missing constant or a missing local bridge factor.
+## Corollary 3: corrected three-point onset
 
-## Corollary 3: exact onset hierarchy data
+The supplied onset theorem gives
 
-The previously closed onset theorems give
+`P_L(beta) - P_1plaq(beta)
+ = beta^5 / 472392 + O(beta^6)`.
 
-`P_L(beta) - P_1plaq(beta) = beta^5 / 472392 + O(beta^6)`,
+Twice differentiating yields
 
-hence
+`P_L''(beta) - P_1plaq''(beta)
+ = 20 beta^3 / 472392 + O(beta^4)
+ = 5 beta^3 / 118098 + O(beta^4)`.
 
-`chi_L(beta) - chi_1plaq(beta) = 5 beta^4 / 472392 + O(beta^5)`,
+Since
+
+`P_L''(beta) = sum_(r,s) C_3(p_0,r,s;beta)`
 
 and
 
-`beta_eff(beta) = beta + beta^5 / 26244 + O(beta^6)`,
+`P_1plaq''(beta) = chi_1plaq'(beta)`,
 
-so
+the exact onset statement is
 
-`beta_eff'(beta) = 1 + 5 beta^4 / 26244 + O(beta^5)`,
+`sum_(r,s) C_3(p_0,r,s;beta)
+ = chi_1plaq'(beta) + 5 beta^3 / 118098 + O(beta^4)`.
 
-`beta_eff''(beta) = 20 beta^3 / 26244 + O(beta^4)
-                  = 5 beta^3 / 6561 + O(beta^4)`.
+Equivalently,
 
-Using the exact common slope `chi_1plaq(0) = 1/18`, the first summed connected
-three-point correction is therefore fixed at onset:
-
-`sum_(r,s) C_3(p_0, r, s; beta)
+`sum_(r,s) C_3(p_0,r,s;beta) - chi_1plaq'(beta)
  = 5 beta^3 / 118098 + O(beta^4)`.
 
-So even the first hierarchy level beyond `chi_L` is now constrained exactly at
-small `beta`.
+The same coefficient follows independently from the reduction-map onset.
+For a generic analytic local series
+
+`P_1plaq(x) = c_1 x + c_2 x^2 + c_3 x^3 + ...`,
+
+with `c_1 = chi_1plaq(0) = 1/18`, compose it with
+
+`beta_eff(beta) = beta + beta^5 / 26244 + O(beta^6)`.
+
+Only the linear local coefficient can contribute to the order-`beta^5`
+difference:
+
+`P_1plaq(beta_eff(beta)) - P_1plaq(beta)
+ = [chi_1plaq(0) / 26244] beta^5 + O(beta^6)`.
+
+After two derivatives, the order-`beta^3` coefficient is therefore
+
+`20 chi_1plaq(0) / 26244
+ = 20 / (18 * 26244)
+ = 5 / 118098`,
+
+independent of every higher coefficient `c_2,c_3,...`. The local
+`chi_1plaq'(beta)` term is the baseline in the full three-point sum.
+
+## Source boundary
+
+The two exact onset inputs used above are supplied by the
+[`Gauge-Vacuum Plaquette Mixed-Cumulant Audit and First Nonlinear Coefficient`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
+packet. The implicit finite reduction map and its first derivative transport
+are supplied by the
+[`Gauge-Vacuum Plaquette Reduction Existence and Uniqueness Theorem`](GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md)
+and the
+[`Gauge-Vacuum Plaquette Susceptibility-Flow Finite Packet`](GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md),
+respectively.
+
+No new axiom, admission, primitive, carrier, convention, imported value, fit,
+or physical-observable identification is introduced here. The frozen Lattice,
+Qubit, Admissibility, and Record axioms are unchanged and are not used to
+enlarge this finite Wilson theorem.
 
 ## What this closes
 
-- exact uniform-source derivative identity on the finite Wilson source surface
-- exact connected plaquette hierarchy
-- exact identification of `chi_L` as the shell-summed connected two-point
-  plaquette field
-- exact identification of `beta_eff''` as depending on the shell-summed
-  connected three-point field
-- exact first onset coefficient for the hierarchy beyond `chi_L`
+- the exact finite Wilson common-source identity;
+- the exact connected-cumulant derivative hierarchy;
+- the first shell-summed two- and three-point projections;
+- the exact first- and second-derivative `beta_eff` transport formulas;
+- the corrected full-versus-one-plaquette three-point onset relation;
+- the limited statement that this derivative route consumes successive
+  shell-summed hierarchy projections.
 
-## What this does not close
+## Outside this claim
 
-- an explicit closed form for the full connected two-point plaquette field at
-  `beta = 6`
-- an explicit closed form for the shell-summed connected three-point field
-- explicit nonperturbative closure of the hierarchy
-- analytic closure of `P(6)`
+- an explicit nonperturbative formula for `P_L(beta)` or `beta_eff(beta)`;
+- a position-resolved solution for every member of the connected hierarchy;
+- restrictions on other exact representations outside the displayed route;
+- analytic evaluation of the framework-point plaquette.
 
-## Support consequence for the live package
-
-The live package can now say:
-
-- reduction-law existence is exact,
-- reduction-law transport is exact,
-- the missing object is exactly the connected plaquette hierarchy,
-- not a guessed bridge factor and not a missing local normalization.
-
-That is the right rigorous endpoint for the current plaquette lane.
-
-## Commands run
+## Command
 
 ```bash
 python3 scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py
@@ -180,4 +215,4 @@ python3 scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py
 
 Expected summary:
 
-- `THEOREM PASS=4 SUPPORT=4 FAIL=0`
+- `THEOREM PASS=6 SUPPORT=4 FAIL=0`

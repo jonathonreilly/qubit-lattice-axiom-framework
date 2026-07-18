@@ -52,10 +52,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
           "effective_status": "audit_in_progress"
         },
@@ -135,7 +131,7 @@
       "roots": [
         "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
       ],
-      "uncertified_count": 31
+      "uncertified_count": 30
     },
     {
       "blocking": [
@@ -1438,10 +1434,6 @@
         {
           "claim_id": "koide_brannen_phase_reduction_theorem_note_2026-04-20",
           "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "koide_circulant_character_bridge_note_2026-04-18",
@@ -2924,9 +2916,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 667
+      "uncertified_count": 666
     }
   ],
-  "repo_head": "cb0b730229ff4ad168f2e811aeb1931b5f76ecb6",
+  "repo_head": "2ccf3e9e1b7a05b2d40e2145c147cbb4af3f94b0",
   "schema": "lane_certification_v2"
 }

@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 2991
-**Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** 619
+**Total pending:** 2990
+**Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** 622
 
 By criticality:
-- `critical`: 677
+- `critical`: 676
 - `high`: 353
 - `medium`: 777
 - `leaf`: 1184
@@ -28,10 +28,10 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 11 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | unaudited | critical | 1225 | 15.26 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_2026_05_17.py` |
 | 12 | `s3_boundary_link_theorem_note` | bounded_theorem | unaudited | critical | 1160 | 14.18 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_boundary_link_theorem.py` |
 | 13 | `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15` | bounded_theorem | unaudited | critical | 1148 | 11.67 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py` |
-| 14 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | audit_in_progress | critical | 1146 | 25.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_circulant_character_bridge_narrow.py` |
-| 15 | `g_bare_rigidity_theorem_note` | bounded_theorem | unaudited | critical | 1145 | 18.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_rigidity_theorem.py` |
-| 16 | `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | audit_in_progress | critical | 1131 | 10.64 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_os0_supplied_action_ks_blocking_four_taste_module_2026_07_11.py` |
-| 17 | `physical_lattice_necessity_note` | no_go | unaudited | critical | 1111 | 22.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_physical_lattice_necessity.py` |
+| 14 | `g_bare_rigidity_theorem_note` | bounded_theorem | unaudited | critical | 1145 | 18.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_rigidity_theorem.py` |
+| 15 | `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | audit_in_progress | critical | 1131 | 10.64 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_os0_supplied_action_ks_blocking_four_taste_module_2026_07_11.py` |
+| 16 | `physical_lattice_necessity_note` | no_go | unaudited | critical | 1111 | 22.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_physical_lattice_necessity.py` |
+| 17 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | unaudited | critical | 1097 | 10.60 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_2026_05_17.py` |
 | 18 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | non_terminal_failed | critical | 1077 | 13.57 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_qcd_low_energy_running_bridge.py` |
 | 19 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | audit_in_progress | critical | 1073 | 12.57 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py` |
 | 20 | `tensor_support_center_excess_law_note` | bounded_theorem | audit_in_progress | critical | 1045 | 19.53 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_tensor_support_center_excess_law.py` |

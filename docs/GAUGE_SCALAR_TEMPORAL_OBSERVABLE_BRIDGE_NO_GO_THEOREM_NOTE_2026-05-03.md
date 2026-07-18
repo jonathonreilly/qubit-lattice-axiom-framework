@@ -1,14 +1,15 @@
-# Gauge-Scalar Temporal Observable Bridge No-Go Theorem
+# Gauge-Scalar Temporal Observable Bridge Open Interface
 
 **Date:** 2026-05-03
-**Claim type:** no_go
-**Status:** formal no-go proposal for the observable-level
-bridge residual named in `GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md`.
-**Primary runner:** `scripts/frontier_gauge_scalar_temporal_observable_bridge_no_go.py`
-**Closure outcome:** B, formal no-go. The gate is retired as a negative
-theorem, not as a positive plaquette derivation.
+**Claim type:** open_gate
+**Status:** source correction 2026-07-18: the earlier formal no-go proposal
+used finite-jet witnesses as if they were full Wilson-packet completions. That
+use is withdrawn; the observable-level bridge residual named in
+`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md` remains
+open in this source note.
+**Historical runner:** `scripts/frontier_gauge_scalar_temporal_observable_bridge_no_go.py`
 
-## 0. Residual being retired
+## 0. Positive interface and remaining source requirement
 
 The residual is the observable-level bridge
 
@@ -40,17 +41,17 @@ plaquette primitives:
 - [`GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md):
   the retained bounded finite Wilson source-sector operator realization.
 - [`GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md):
-  the retained no-go theorem that the current exact jet plus analyticity
-  and monotonicity do not determine `beta_eff(6)` or analytic `P(6)`.
+  the positive finite-jet construction of two entire rational polynomials
+  with the same coefficients through degree five, exact interval derivative
+  lower bounds, and a positive separation at `beta = 6`.
 - [`GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md):
   the retained no-go theorem that the current source-operator stack does
   not force the beta-6 Perron moments or Jacobi coefficients after the
   local Wilson marked-link factor is fixed.
 
-The phrase "current Wilson packet" below means exactly this cited packet.
-It excludes an exact beta-6 spectral measure, exact Perron vector, exact
-nonperturbative effective action, or exact fitted `beta_eff(6)`, because
-none of those is currently a retained Wilson-framework primitive.
+The finite-jet construction is cited only for its typed polynomial output. It
+does not supply a connected-hierarchy realization, compact spectral measure,
+finite Wilson reduction law, or completion of the current Wilson packet.
 
 ## 2. Lemma 1: BRIDGE pins the missing nonperturbative number
 
@@ -62,7 +63,7 @@ d R_O / dx = Var_x(P) > 0
 ```
 
 away from a degenerate zero-variance measure. Therefore `R_O` is injective
-on the finite coupling interval used by the retained witness laws.
+on the finite coupling interval used by the displayed polynomial witnesses.
 
 Consequently an exact bridge
 
@@ -77,12 +78,12 @@ nonperturbative reduction parameter:
 beta_eff = R_O^{-1}(<P>_full).
 ```
 
-If `beta_eff` is defined by this inverse equation, BRIDGE is a definition
-or a fit. That is precisely the forbidden route. If `beta_eff` is not
-defined this way, BRIDGE requires an independent retained primitive that
-selects the exact beta-6 nonperturbative completion.
+If `beta_eff` is defined by this inverse equation, BRIDGE is a definition or
+a fit rather than an independent derivation. A positive derivation of BRIDGE
+therefore needs an independently sourced theorem selecting the exact beta-6
+nonperturbative completion.
 
-## 3. Lemma 2: the current Wilson packet admits two completion witnesses
+## 3. Finite-jet witness pair and its authority boundary
 
 Let
 
@@ -91,7 +92,7 @@ a = 1 / 26244,
 c = 10^(-7).
 ```
 
-Define two analytic, strictly increasing completion laws on `[0, 6]`:
+Define two analytic, strictly increasing polynomial witnesses on `[0, 6]`:
 
 ```text
 beta_eff^-(beta) = beta + a beta^5,
@@ -110,52 +111,30 @@ At the framework point:
 beta_eff^+(6) - beta_eff^-(6) = c 6^6 = 0.0046656 > 0.
 ```
 
-They have the same `A_min` data, the same scalar temporal completion law,
-the same local one-plaquette response map, the same beta-5 onset
-coefficient, and the same cited source-operator packet. They differ
-only in the exact nonperturbative completion datum that the retained
-packet does not select.
-
-Since `R_O` is injective,
+Since `R_O` is injective on the displayed positive arguments,
 
 ```text
 R_O(beta_eff^+(6)) != R_O(beta_eff^-(6)).
 ```
 
-Thus two admissible completions of the current Wilson packet give two different
-BRIDGE readouts.
+The two local-block values are strictly ordered. The polynomials have not been
+shown to satisfy the connected hierarchy, compact spectral-measure conditions,
+or finite Wilson reduction law. They are therefore not two admissible
+completions of the current Wilson packet.
 
-## 4. Theorem: no retained-packet derivation of BRIDGE
+## 4. Current positive reduction
 
-Assume, for contradiction, that BRIDGE is derivable from `A_min` extended
-only by the current Wilson-framework primitives listed in section 1.
-Then the derivation factors through the current Wilson packet. It must assign
-one and the same output to both completion witnesses in section 3, because
-the witnesses agree on every retained premise.
+The injectivity calculation in section 2 gives a useful positive interface:
+any exact bridge theorem that supplies `<P>_full` fixes one corresponding
+`beta_eff`, and any independently realized `beta_eff` fixes one local-block
+value. The finite-jet pair in section 3 exercises that interface on its stated
+mathematical domain. A source theorem connecting either direction to the full
+Wilson packet remains the open task.
 
-But BRIDGE evaluated on those witnesses gives
+## 5. Inputs for a future bridge theorem
 
-```text
-<P>_full^- = R_O(beta_eff^-(6)),
-<P>_full^+ = R_O(beta_eff^+(6)),
-```
-
-and these are unequal by Lemma 2. Contradiction.
-
-Therefore the exact observable bridge is not analytically derivable from
-`A_min` plus any current Wilson-framework primitive packet that
-does not itself add the missing exact nonperturbative completion object.
-
-## 5. What would escape the no-go
-
-The no-go does not say that the physical Wilson integral is mathematically
-unknowable. It says the current retained Wilson framework cannot discharge
-this audit gate by algebra, Schwinger-Dyson identities, finite retained
-jets, source-sector character recurrence, or RG language alone.
-
-To escape the no-go, a future note would have to supply one of the following
-as an additional load-bearing theorem or as an explicitly approved primitive
-if it changes the repo-wide primitive stack:
+A future positive bridge theorem may supply one of the following as a
+load-bearing derived object:
 
 - the exact beta-6 Wilson plaquette spectral measure;
 - the exact beta-6 Perron vector / Jacobi data for the retained source
@@ -164,24 +143,21 @@ if it changes the repo-wide primitive stack:
   `<P>_full`;
 - an exact independently selected `beta_eff(6)` not fitted to `<P>`.
 
-Those are not forbidden in principle, but they are outside the current
-current Wilson packet. A fitted `beta_eff`, a perturbative beta-function
-derivation, or a PDG/lattice plaquette value remains forbidden as a
-derivation input.
+The source authority for any such object must be stated directly. A fitted
+`beta_eff`, perturbative beta-function value, or comparator is not substituted
+for that derivation in this note.
 
 ## 6. Audit consequence
 
-This note proposes a no-go claim for independent audit-lane review. Review-loop
-does not apply the verdict. The audit ledger row should seed with
-`claim_type = no_go` and remain unaudited until the audit lane ratifies it.
-
-The original open gate is narrowed to a proposed no-go retirement:
+This source note now declares the bridge residual open. Review-loop does not
+apply a verdict, and the independent audit lane owns any later claim-type or
+status decision.
 
 ```yaml
 gate: gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02
-closure_proposal: no_go
+source_disposition: open_gate
 positive_bridge_status: not_derived
-parent_completion_status: conditional_at_observable_level_pending_audit
+finite_jet_witness_role: polynomial_surface_only
 forbidden_imports_used: false
 audit_status_authority: independent audit lane only
 ```
@@ -192,6 +168,10 @@ completion law is retained, while the full observable plaquette bridge is
 not promoted.
 
 ## 7. Runner
+
+The historical runner replays the former proposal. It is not current evidence
+for a full-Wilson-packet conclusion and is outside the repaired finite-jet
+runner package.
 
 Run:
 

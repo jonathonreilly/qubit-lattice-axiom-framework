@@ -233,14 +233,13 @@ read-off.
 15. **Re-derive P(6) / beta_eff(6) from the existing conditional source-sector
     transfer / Perron-Jacobi stack**
     (`gauge_vacuum_plaquette_perron_jacobi_underdetermination_note`,
-    retained_no_go; `gauge_vacuum_plaquette_framework_point_underdetermination_note`,
-    retained_no_go). The source-operator stack does not force the beta-6 Perron
-    moments / Jacobi coefficients after the local marked-link factor is fixed;
-    the finite jet + analyticity + monotonicity do not force beta_eff(6).
-16. **Observable bridge <P>_full = R_O(beta_eff) from the current Wilson
-    primitive packet** (`gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03`,
-    retained_no_go). BRIDGE only PINS the missing nonperturbative number;
-    escape requires a NEW independently-audited primitive.
+    retained_no_go). That source-operator row carries the beta-6 Perron/Jacobi
+    boundary after the local marked-link factor is fixed.
+16. **Observable bridge <P>_full = R_O(beta_eff) interface**
+    (`gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03`,
+    source-corrected open gate). The injective local block gives a positive
+    two-way interface once either exact input is independently derived; a
+    sourced full-Wilson bridge theorem remains required.
 17. **Spatial-environment transfer underdetermination**
     (`gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`,
     retained_no_go). The spatial-environment transfer is underdetermined
@@ -287,9 +286,7 @@ content collides with one of two recorded foreclosures:
   does not evaluate the missing spatial-environment Perron data.
 - **Algebraic underdetermination by local data.** Local character +
   intertwiner data + any 1-parameter rho-family do not select rho_{p,q}(6)
-  (Theorem-3, `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`); the
-  finite jet + analyticity + monotonicity do not force beta_eff(6)
-  (`gauge_vacuum_plaquette_framework_point_underdetermination_note`).
+  (Theorem-3, `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`).
 
 In one sentence: **the static boundary data `rho_{p,q}(6)` remain
 underdetermined/intractable on the recorded routes, and even supplied static

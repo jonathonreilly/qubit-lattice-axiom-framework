@@ -98,11 +98,8 @@ them:
   autocorrelation and finite-size systematics;
 - any downstream publication-status or parent-chain update.
 
-The existing no-go/boundary notes remain in force:
+The independent constant-lift boundary remains in force:
 
-- [`GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md)
-  says the current exact stack does not determine the explicit
-  nonperturbative framework point;
 - [`GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md)
   rules out the constant-lift shortcut.
 

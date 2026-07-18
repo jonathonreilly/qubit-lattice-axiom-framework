@@ -265,14 +265,14 @@ propagate retention to this row:
 3. `KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md`
    — exact rank/kernel quotient of the linear second-order readout
    map `L : R^4 → Diag_3(R)`, `L(W) = P_{T_1} Γ_1 W Γ_1 P_{T_1}` on
-   the retained `Γ_1 / T_1` grammar. Establishes that the readout
-   map factors through the species-resolving diagonal carrier with a
-   unique unreachable slot, and now proves the first-live
-   kernel-invariance substep inside that admitted grammar: every
-   scalar selector admitted as first-live factors through `L` and is
-   constant on `span(e_z)`. This supplies the algebraic skeleton of
-   the two-generator block reduction used in this note's Sections
-   1–2. It still does not prove that the physical charged-lepton
+   the retained `Γ_1 / T_1` grammar. Establishes rank `3`, full
+   diagonal image, kernel `span(e_z)`, exact fibers, and the quotient
+   `R^4 / span(e_z) ≅ Diag_3(R)`. Constancy on `span(e_z)` is only a
+   definitional corollary for the separately declared selector class
+   `S = Phi composed with L`; it is not an admissibility or physical
+   charged-lepton classification theorem. This supplies the algebraic
+   skeleton of the two-generator block reduction used in this note's
+   Sections 1–2. It still does not prove that the physical charged-lepton
    selector must belong to that first-live grammar.
 4. `KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md`
    — exact uniqueness of the scale-free `C_3`-invariant selector

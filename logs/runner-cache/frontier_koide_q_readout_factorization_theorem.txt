@@ -1,85 +1,97 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_readout_factorization_theorem.py
-runner_sha256: 21e5d1109165c7800424420b158c82685a2ff1e48a65bdb06d8f08acbead6cf5
+runner_sha256: 4cf3b6ec54e9159f49b091b828225262654fb73ef5f171829b1b16a190ef63de
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 
 ========================================================================================
-A. Exact first-live second-order readout map
+A. Exact 16 x 16 basis/projector reconstruction
 ========================================================================================
-[PASS] A.1 the four single-slot second-order images are e1, e2, e3, and 0
-       The unreachable T_2(0,1,1) slot drops out identically.
-[PASS] A.2 the first-live readout map has exact matrix L = [[1,0,0,0],[0,1,0,0],[0,0,1,0]]
+[PASS] A.1 Gamma_1 = X tensor I tensor I tensor I flips only the first spatial bit
+[PASS] A.2 every spatial projector contains both time copies and P_T1 has rank 6
+       t=0 and t=1 are included for each spatial basis state.
+[PASS] A.3 the six-column T1 embedding is an exact restriction map onto im(P_T1)
+[PASS] A.4 tuple transitions independently give 100->000, 010->110, 001->101
+       transition-derived L = Matrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0]])
+[PASS] A.5 slot 000 has the exact displayed image on both time copies
+       t=0: Matrix([[1, 0, 0], [0, 0, 0], [0, 0, 0]]); t=1: Matrix([[1, 0, 0], [0, 0, 0], [0, 0, 0]])
+[PASS] A.6 slot 110 has the exact displayed image on both time copies
+       t=0: Matrix([[0, 0, 0], [0, 1, 0], [0, 0, 0]]); t=1: Matrix([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
+[PASS] A.7 slot 101 has the exact displayed image on both time copies
+       t=0: Matrix([[0, 0, 0], [0, 0, 0], [0, 0, 1]]); t=1: Matrix([[0, 0, 0], [0, 0, 0], [0, 0, 1]])
+[PASS] A.8 slot 011 has the exact displayed image on both time copies
+       t=0: Matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]]); t=1: Matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]])
+
+========================================================================================
+B. Exact rank, kernel, image, fibers, and quotient
+========================================================================================
+[PASS] B.1 the operator-derived coefficient matrix is exactly L = [I3 0]
        L = Matrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0]])
-[PASS] A.3 the map has rank 3 and image equal to the full diagonal species space
-       rank(L) = 3
-[PASS] A.4 the kernel is one-dimensional and carried entirely by the unreachable slot
-       ker(L) basis = [Matrix([
+[PASS] B.2 rank(L)=3 and the column space is all of Diag_3(R)
+       rank(L) = 3, right inverse J = Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1], [0, 0, 0]])
+[PASS] B.3 ker(L) is exactly span(e_z)
+       nullspace basis = [Matrix([
        [0],
        [0],
        [0],
        [1]])]
+[PASS] B.4 every diagonal has the exact affine fiber {(d1,d2,d3,z)}
+       fiber = {(d1, d2, d3, z)}
+[PASS] B.5 L(x)=L(y) iff x-y is an e_z shift
+       L(x-y) = Matrix([[x0 - y0], [x1 - y1], [x2 - y2]])
+[PASS] B.6 explicit section/defect identities construct R4/span(e_z) ~= Diag_3(R)
+       LJ = Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]]); I4-JL = Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 1]])
 
 ========================================================================================
-B. Exact quotient/fiber statement
+C. C3 intertwining and invariant quadratics on the image
 ========================================================================================
-[PASS] B.1 fixing the returned operator determines u,v,w uniquely and leaves only z free
-       general fiber = {u: d1, v: d2, w: d3}
-[PASS] B.2 two weight packages have the same returned operator iff they differ by an unreachable-slot shift
-       difference = Matrix([[0], [0], [0], [z1 - z2]])
-[PASS] B.3 the first-live readout realizes the exact quotient R^4 / span(e_unreach) ≅ Diag_3
-       All first-live species data are classified exactly by diag(u,v,w).
+[PASS] C.1 the declared forward cycles have order 3 and the stated orientation
+[PASS] C.2 L intertwines the declared forward coefficient and diagonal cycles
+       rho_3 L = Matrix([[0, 0, 1, 0], [1, 0, 0, 0], [0, 1, 0, 0]])
+[PASS] C.3 the C3-invariant real quadratic space on Diag_3(R) is exactly two-dimensional
+       Q has one common diagonal coefficient and one common off-diagonal coefficient.
 
 ========================================================================================
-C. C3 covariance and quadratic invariants on the image
+D. Definition-driven selector corollary, not classification
 ========================================================================================
-[PASS] C.1 the readout map intertwines the species 3-cycle with the reachable-slot 3-cycle
-       P_species L = Matrix([[0, 0, 1, 0], [1, 0, 0, 0], [0, 1, 0, 0]])
-[PASS] C.2 every C3-invariant quadratic scalar on Diag_3 is a scalar on diag(u,v,w)
-       invariant quadratic family = Matrix([[q33, q23, q23], [q23, q33, q23], [q23, q23, q33]])
-
-========================================================================================
-D. First-live kernel-invariance theorem
-========================================================================================
-[PASS] D.1 an unreachable-slot shift leaves the returned first-live operator unchanged
-       L(W + eta e_z) = Matrix([[u], [v], [w]])
-[PASS] D.2 any first-live scalar Phi(L(W)) is constant on span(e_z)
+[PASS] D.1 for the declared class S_L={Phi composed with L}, kernel invariance is definitional
        Phi(L(W + eta e_z)) = Phi(u, v, w)
-[PASS] D.3 a z-sensitive scalar is not first-live because it distinguishes equal returned operators
-       z-sensitive shift: z -> eta + z
-[PASS] D.4 C3-invariant quadratic first-live scalars are also kernel-invariant
-       quadratic first-live scalar = alpha*u**2 + 2*alpha*u*v + 2*alpha*u*w + alpha*v**2 + 2*alpha*v*w + alpha*w**2 + 2*beta*u**2 - 2*beta*u*v - 2*beta*u*w + 2*beta*v**2 - 2*beta*v*w + 2*beta*w**2
+[PASS] D.2 the z scalar is C3-invariant but kernel-sensitive, so covariance alone does not force factorization
+       S_z(rho_4 W)-S_z(W)=0; S_z(W+eta e_z)-S_z(W)=eta
 
 ========================================================================================
 Summary
 ========================================================================================
-PASSED: 13/13
-  [PASS] A.1 the four single-slot second-order images are e1, e2, e3, and 0
-  [PASS] A.2 the first-live readout map has exact matrix L = [[1,0,0,0],[0,1,0,0],[0,0,1,0]]
-  [PASS] A.3 the map has rank 3 and image equal to the full diagonal species space
-  [PASS] A.4 the kernel is one-dimensional and carried entirely by the unreachable slot
-  [PASS] B.1 fixing the returned operator determines u,v,w uniquely and leaves only z free
-  [PASS] B.2 two weight packages have the same returned operator iff they differ by an unreachable-slot shift
-  [PASS] B.3 the first-live readout realizes the exact quotient R^4 / span(e_unreach) ≅ Diag_3
-  [PASS] C.1 the readout map intertwines the species 3-cycle with the reachable-slot 3-cycle
-  [PASS] C.2 every C3-invariant quadratic scalar on Diag_3 is a scalar on diag(u,v,w)
-  [PASS] D.1 an unreachable-slot shift leaves the returned first-live operator unchanged
-  [PASS] D.2 any first-live scalar Phi(L(W)) is constant on span(e_z)
-  [PASS] D.3 a z-sensitive scalar is not first-live because it distinguishes equal returned operators
-  [PASS] D.4 C3-invariant quadratic first-live scalars are also kernel-invariant
+MODE: normal
+PASSED: 19/19
+  [PASS] A.1 Gamma_1 = X tensor I tensor I tensor I flips only the first spatial bit
+  [PASS] A.2 every spatial projector contains both time copies and P_T1 has rank 6
+  [PASS] A.3 the six-column T1 embedding is an exact restriction map onto im(P_T1)
+  [PASS] A.4 tuple transitions independently give 100->000, 010->110, 001->101
+  [PASS] A.5 slot 000 has the exact displayed image on both time copies
+  [PASS] A.6 slot 110 has the exact displayed image on both time copies
+  [PASS] A.7 slot 101 has the exact displayed image on both time copies
+  [PASS] A.8 slot 011 has the exact displayed image on both time copies
+  [PASS] B.1 the operator-derived coefficient matrix is exactly L = [I3 0]
+  [PASS] B.2 rank(L)=3 and the column space is all of Diag_3(R)
+  [PASS] B.3 ker(L) is exactly span(e_z)
+  [PASS] B.4 every diagonal has the exact affine fiber {(d1,d2,d3,z)}
+  [PASS] B.5 L(x)=L(y) iff x-y is an e_z shift
+  [PASS] B.6 explicit section/defect identities construct R4/span(e_z) ~= Diag_3(R)
+  [PASS] C.1 the declared forward cycles have order 3 and the stated orientation
+  [PASS] C.2 L intertwines the declared forward coefficient and diagonal cycles
+  [PASS] C.3 the C3-invariant real quadratic space on Diag_3(R) is exactly two-dimensional
+  [PASS] D.1 for the declared class S_L={Phi composed with L}, kernel invariance is definitional
+  [PASS] D.2 the z scalar is C3-invariant but kernel-sensitive, so covariance alone does not force factorization
 
-VERDICT (bounded): on the retained Γ_1 / T_1 grammar, the first-live
-second-order readout map L : R^4 -> Diag_3 has rank 3 and kernel
-span(e_z), so R^4 / span(e_z) ≅ Diag_3. The map intertwines the
-species 3-cycle with the reachable-slot 3-cycle, every C_3-invariant
-quadratic scalar on Diag_3 is a scalar on diag(u,v,w), and every
-selector admitted as first-live is constant on span(e_z) because it
-factors through L(W).
-
-This is science-only and does not modify the repo's authority surfaces.
+VERDICT (bounded): the defined 16 x 16 construction gives
+L=[I3 0], rank 3, image Diag_3(R), kernel span(e_z), exact
+fibers, and R^4/span(e_z) ~= Diag_3(R).  The declared forward
+C3 actions intertwine.  Selector invariance is asserted only as
+the definitional corollary for S_L={Phi composed with L}.
 
 ----- stderr -----
 

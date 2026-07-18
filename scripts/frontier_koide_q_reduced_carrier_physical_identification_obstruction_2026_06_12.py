@@ -71,11 +71,12 @@ check(
     "Finite M3(C) algebra is retained; physical flavor semantics are separate.",
 )
 check(
-    "readout factorization note keeps admissibility-to-carrier as conditional",
-    "Conditional extension" in readout_factor
-    and "does not claim that local bosonic first-live species-resolving" in readout_factor
-    and "does not by itself prove that the physical charged-lepton selector" in readout_factor,
-    "Rank/kernel quotient is retained-bounded; physical selector remains open.",
+    "readout note separates the exact quotient from the definitional selector class",
+    "definitional corollary" in readout_factor
+    and "do not by themselves exclude every `z`-sensitive scalar" in readout_factor
+    and "identify any physical charged-lepton selector" in readout_factor,
+    "Rank/kernel quotient is bounded; admissibility classification and "
+    "physical selector remain open.",
 )
 check(
     "minimal selector note starts after the carrier is admitted",

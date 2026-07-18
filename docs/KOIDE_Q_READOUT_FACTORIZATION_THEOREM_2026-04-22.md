@@ -1,215 +1,219 @@
-# Koide Q Readout Factorization Theorem
+# Koide Q Readout Rank/Kernel Quotient Theorem
 
 **Date:** 2026-04-22
 **Claim type:** bounded_theorem
-**Status:** exact support theorem on the admitted first-live second-order
-readout grammar; not a closure theorem
-**Purpose:** replace the weakest remaining phrase in the second-order `Q` route
-
-> the selector should live on the second-order returned operator
-
-with the strongest exact quotient statement currently available on the retained
-`Γ_1 / T_1` grammar.
-
+**Status:** exact finite-dimensional rank/kernel/image/fiber/quotient theorem;
+not a selector-classification or physical-closure theorem
 **Primary runner:** `scripts/frontier_koide_q_readout_factorization_theorem.py`
 
----
+## Exact scope
 
-## Audit scope
-
-This note has been narrowed in response to an auditor verdict
-(`audit_status=audited_conditional`, `claim_type=positive_theorem`,
-`scope_too_broad`).
-
-**Auditor's repair target (verbatim):**
-
-> scope_too_broad: split out the exact rank/kernel quotient as the clean
-> bounded theorem, or add a theorem and runner check proving that local
-> bosonic first-live species-resolving C3-covariant admissibility forces
-> constancy on span(e_z).
-
-**2026-06-17 repair:** this note now takes the second auditor-approved
-repair route for the first-live grammar. Sections 1-2 retain the exact
-rank/kernel quotient of the linear map `L : R^4 -> Diag_3(R)`. Section 3 adds
-the separate theorem-and-runner check that first-live operational
-admissibility forces constancy on `span(e_z)`.
-
-The repair is intentionally local. "First-live" is used in its operational
-readout sense: two weight packages are equivalent for a first-live selector
-when they have the same returned species operator
-`P_{T_1} Gamma_1 W Gamma_1 P_{T_1}`. Therefore any scalar selector admitted
-inside this first-live readout grammar must factor through the returned
-operator `L(W) = diag(u,v,w)`. Since `span(e_z) = ker L`, kernel constancy is a
-theorem of the admitted first-live grammar, not an additional physical
-carrier-identification assumption.
-
-This does **not** prove that the physical charged-lepton selector must belong
-to this first-live class, does not identify the reduced two-block determinant
-carrier as the physical charged-lepton carrier, and does not fix the separate
-`D_red = I_2` response-unit normalization.
-
----
-
-## 1. Exact map
-
-On the retained charged-lepton readout grammar, define the second-order map
+This note proves only the quotient theorem for the explicitly defined map
 
 ```text
-L(W) = P_{T_1} Γ_1 W Γ_1 P_{T_1}
+L(W) = P_{T_1} Γ_1 W Γ_1 P_{T_1}.
 ```
 
-on the four reachable/intermediate-state weight slots
+For the separately declared selector class
 
 ```text
-W = u P_{O_0} + v P_{(1,1,0)} + w P_{(1,0,1)} + z P_{(0,1,1)}.
+𝒮_L = {S : S = Φ composed with L for some Φ on Diag_3(R)},
 ```
 
-The exact single-slot images are
+kernel invariance is an immediate **definitional corollary**. It is not a
+classification theorem. In particular, the separately listed adjectives
+"local", "bosonic/even in `Γ_1`", "first-live", "species-resolving", and
+"`C_3`-covariant" do not by themselves exclude every `z`-sensitive scalar in
+the material proved here. No non-circular admissibility theorem connecting
+those adjectives to `𝒮_L` is supplied or claimed.
+
+## 1. Basis-level construction
+
+Use the ordered basis
 
 ```text
-P_{T_1} Γ_1 P_{O_0} Γ_1 P_{T_1}     = diag(1,0,0)
-P_{T_1} Γ_1 P_{(1,1,0)} Γ_1 P_{T_1} = diag(0,1,0)
-P_{T_1} Γ_1 P_{(1,0,1)} Γ_1 P_{T_1} = diag(0,0,1)
-P_{T_1} Γ_1 P_{(0,1,1)} Γ_1 P_{T_1} = 0.
+|a,b,c;t>,  a,b,c,t in {0,1},
 ```
 
-So the readout map is exactly
+of `C^16`, where the final bit `t` is the time/chirality copy. The defined
+branch convention is
 
 ```text
-L(u,v,w,z) = diag(u,v,w).
+Γ_1 = X tensor I tensor I tensor I,
+Γ_1 |a,b,c;t> = |1-a,b,c;t>.
 ```
 
----
-
-## 2. Quotient theorem (bounded)
-
-The map `L : R^4 -> Diag_3(R)` has:
-
-- rank `3`,
-- kernel `span{(0,0,0,1)}`,
-- image equal to the full diagonal species space.
-
-Therefore
+Thus `Γ_1` flips the first spatial bit and preserves `t`. Every spatial
+projector includes both time copies:
 
 ```text
-R^4 / span(e_unreach)  ≅  Diag_3(R),
+P_s = |s;0><s;0| + |s;1><s;1|.
 ```
 
-and two weight packages have the same first-live returned operator if and only
-if they differ only in the unreachable slot `z`.
-
-This is the clean bounded theorem of the note: the exact rank/kernel quotient
-of the linear readout map `L` on the retained `Γ_1 / T_1` grammar. It is a
-purely linear-algebraic statement about `L`, independent of any selector
-admissibility hypothesis.
-
----
-
-## 3. First-live kernel-invariance theorem (bounded repair)
-
-Within the admitted first-live readout grammar:
-
-- local,
-- bosonic/even in `Γ_1`,
-- first-live on `T_1`,
-- species-resolving,
-- `C_3`-covariant,
-
-the operational first-live object is the returned species operator
+Order the returned species basis as
 
 ```text
-R_{Γ_1}(W) = diag(u,v,w).
+T_1 = ((1,0,0), (0,1,0), (0,0,1)).
 ```
 
-So any scalar selector `S` admitted inside this first-live grammar factors as
+For each `t=0,1`, let `B_t : R^3 -> C^16` embed the three standard basis
+vectors as the correspondingly ordered `|s;t>` states, and define the
+restriction of a `16 x 16` operator `A` by `B_t^* A B_t`. The full six-state
+restriction is the direct sum of the `t=0` and `t=1` restrictions.
+
+The one-hop transitions from `T_1` are, identically on both time copies,
 
 ```text
-S(W) = Phi(R_{Gamma_1}(W)) = Phi(L(W))
+(1,0,0) --Γ_1--> (0,0,0),
+(0,1,0) --Γ_1--> (1,1,0),
+(0,0,1) --Γ_1--> (1,0,1).
 ```
 
-for some scalar `Phi` on `Diag_3(R)`. If two weight packages differ by the
-unreachable slot,
+The spatial slot `(0,1,1)` is not reached. Consequently, for either `t`,
 
 ```text
-W' = W + lambda e_z,
+B_t^* P_{T_1} Γ_1 P_{(0,0,0)} Γ_1 P_{T_1} B_t = diag(1,0,0),
+B_t^* P_{T_1} Γ_1 P_{(1,1,0)} Γ_1 P_{T_1} B_t = diag(0,1,0),
+B_t^* P_{T_1} Γ_1 P_{(1,0,1)} Γ_1 P_{T_1} B_t = diag(0,0,1),
+B_t^* P_{T_1} Γ_1 P_{(0,1,1)} Γ_1 P_{T_1} B_t = 0.
 ```
 
-then
+There is no hidden single-copy convention: the corresponding full
+six-state restrictions are two identical `3 x 3` blocks.
+
+## 2. Exact map and quotient theorem
+
+Define the four-slot weight operator
 
 ```text
-L(W') = L(W),
+W(u,v,w,z)
+  = u P_{(0,0,0)} + v P_{(1,1,0)}
+  + w P_{(1,0,1)} + z P_{(0,1,1)}.
 ```
 
-because `e_z` spans `ker L`. Therefore
+The basis calculation gives
 
 ```text
-S(W') = Phi(L(W')) = Phi(L(W)) = S(W).
+L(u,v,w,z) = diag(u,v,w),
 ```
 
-This proves constancy on `span(e_z)` for every selector admitted in the
-first-live readout grammar. The companion runner checks this theorem directly:
-it verifies the exact kernel, the quotient fibers, the `C_3` intertwining on
-the returned operator, and symbolic invariance of an arbitrary
-returned-operator scalar under unreachable-slot shifts.
-
-The exact species Fourier transport then sends that returned operator to the
-Koide carrier `H_cyc`, and the cyclic quadratic scalar sector reduces to the
-same two-slot carrier `(E_+, E_perp)`.
-
-Thus the old identification language inside the admitted first-live
-second-order class is upgraded to an exact statement:
+so, after identifying `Diag_3(R)` with `R^3` by its diagonal, the exact
+matrix is
 
 ```text
-admitted first-live selector = scalar on the exact second-order returned
-operator
+L = [ I_3  0 ].
 ```
 
-It is exact only inside the admitted first-live grammar. A selector that
-depends directly on the unreachable coordinate `z` is not a counterexample to
-this theorem; it is simply not first-live, because it distinguishes two weight
-packages with the same returned species operator.
+It follows directly that
 
----
+```text
+rank(L) = 3,
+im(L) = Diag_3(R),
+ker(L) = span{e_z},  e_z = (0,0,0,1).
+```
 
-## 4. Honest scope
+For `d=(d_1,d_2,d_3)`, the fiber is
 
-### What this note claims (bounded theorem)
+```text
+L^{-1}(diag(d_1,d_2,d_3))
+  = {(d_1,d_2,d_3,z) : z in R}.
+```
 
-1. on the first-live second-order readout grammar, the linear readout map
-   `L : R^4 -> Diag_3(R)` has rank `3`, kernel `span{e_z}`, and image equal
-   to the full diagonal species space;
-2. equivalently, the unreachable slot `z` is the entire kernel of `L`, and
-   `R^4 / span(e_z) ≅ Diag_3(R)`.
-3. inside the admitted first-live readout grammar, every scalar selector
-   factors through `L`, hence every such selector is constant on `span(e_z)`.
+Equivalently, `L(x)=L(y)` if and only if `x-y` lies in `span{e_z}`.
 
-### What this note does not claim
+Let `J : R^3 -> R^4` be `J(d_1,d_2,d_3)=(d_1,d_2,d_3,0)`. Then
 
-1. it does not claim that every formally writable scalar on the four-slot
-   weight vector is first-live; a `z`-sensitive scalar is excluded precisely
-   because it distinguishes equal returned operators;
-2. it does not claim a universal statement about all possible higher-order or
-   nonlocal carriers;
-3. it does not touch the separate `delta` bridge;
-4. it does not rewrite authority surfaces;
-5. it does not by itself prove that the physical charged-lepton selector must
-   belong to this admitted first-live class;
-6. it does not identify the reduced two-block determinant carrier as the
-   physical charged-lepton carrier or fix the `D_red = I_2` normalization.
+```text
+L J = I_3,
+I_4 - J L = e_z e_z^T,
+L e_z = 0.
+```
 
----
+These identities construct mutually inverse maps between the quotient and
+the image, rather than merely counting dimensions. Therefore
 
-## 5. Bottom line
+```text
+R^4 / span{e_z}  is isomorphic to  Diag_3(R).
+```
 
-The strongest clean **bounded** statement for review is:
+This rank/kernel/image/fiber/quotient statement is the theorem of the note.
 
-> on the retained `Γ_1 / T_1` grammar, the exact second-order readout map
-> `L : R^4 -> Diag_3(R)` has rank `3` and kernel `span{e_z}`, so
-> `R^4 / span(e_z) ≅ Diag_3(R)`; moreover, any scalar selector admitted as
-> first-live factors through this returned operator and is therefore constant
-> on `span(e_z)`.
+## 3. `C_3` intertwining and invariant quadratics at their actual scope
 
-That closes the previously conditional kernel-invariance substep inside the
-admitted first-live readout grammar. The remaining open issue beyond this
-statement is still the physical identification of the second-order `Q` route,
-including the separate source-free and `D_red = I_2` normalization bridges.
+On the coefficient and diagonal spaces, declare the forward cycles
+
+```text
+rho_4(u,v,w,z) = (w,u,v,z),
+rho_3(d_1,d_2,d_3) = (d_3,d_1,d_2).
+```
+
+The unreachable coordinate is fixed. With these explicitly declared
+orientations,
+
+```text
+rho_3 L = L rho_4.
+```
+
+This is the exact `C_3` intertwining statement. It concerns the displayed
+linear representations and does not classify scalar selectors on `R^4`.
+
+If `q(d)=d^T Q d` is a real quadratic scalar on the image, then
+`q(rho_3 d)=q(d)` exactly when
+
+```text
+Q = [[a,b,b],
+     [b,a,b],
+     [b,b,a]].
+```
+
+Thus the invariant quadratic space on `Diag_3(R)` is two-dimensional; for
+example it is spanned by `(d_1+d_2+d_3)^2` and
+`(d_1-d_2)^2+(d_2-d_3)^2+(d_3-d_1)^2`. This algebra is retained only on the
+image of `L`. It supplies no independent theorem that a scalar originally
+defined on all four coefficients must ignore `z`.
+
+Indeed, `S_z(u,v,w,z)=z` is invariant under the declared `rho_4` cycle but is
+not constant on `ker(L)`. This gives an exact finite-dimensional warning
+against treating `C_3` covariance as the missing classification theorem.
+
+## 4. Definitional selector corollary
+
+Declare, separately from the theorem,
+
+```text
+𝒮_L = {S : R^4 -> R | there exists Φ : Diag_3(R) -> R with S = Φ composed with L}.
+```
+
+For `S` in `𝒮_L` and any real `eta`,
+
+```text
+S(W + eta e_z)
+  = Φ(L(W + eta e_z))
+  = Φ(L(W))
+  = S(W).
+```
+
+This is a definitional corollary of membership in `𝒮_L` plus `L e_z=0`.
+Because `L` is surjective, the corresponding `Φ` is unique once `S` is in
+that class. Neither existence of `Φ` nor membership in `𝒮_L` is derived from
+the separate locality, parity, species-resolution, or covariance adjectives.
+
+## 5. Honest boundary and frozen baseline
+
+This note does not:
+
+1. classify every local, bosonic, first-live, species-resolving, or
+   `C_3`-covariant scalar as an element of `𝒮_L`;
+2. identify any physical charged-lepton selector with a member of `𝒮_L`;
+3. identify the diagonal image or a reduced determinant carrier as the
+   physical charged-lepton carrier;
+4. fix `D_red = I_2`, a response-unit normalization, or any source law;
+5. derive `Q=2/3`, a mass spectrum, a comparator match, or the separate
+   Brannen `delta` bridge;
+6. add an axiom, admission, primitive, carrier, physical input, premise
+   entry, or authority import.
+
+The remaining honest boundary is a non-circular physical/admissibility
+classification theorem, if one is sought. The present result stops at the
+exact finite-dimensional quotient and its explicitly definition-driven
+selector corollary.

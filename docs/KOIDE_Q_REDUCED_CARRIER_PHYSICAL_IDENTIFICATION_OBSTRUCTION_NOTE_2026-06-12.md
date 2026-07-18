@@ -125,11 +125,12 @@ insufficient for the physical-identification bridge:
   admissibility class.
 - [`KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md`](KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md)
   proves the exact rank/kernel quotient of the first-live second-order
-  readout map and, after the 2026-06-17 kernel-invariance repair,
-  proves that every scalar admitted as first-live factors through that
-  returned operator and is constant on `span(e_z)`. It still does not
-  prove that the physical charged-lepton selector belongs to this
-  admitted first-live grammar.
+  readout map. Kernel invariance holds as a definitional corollary only
+  for the separately declared class `S = Phi composed with L`; the
+  listed locality, parity, species-resolution, and covariance adjectives
+  do not independently classify all selectors into that class. In
+  particular, this source does not prove that a physical charged-lepton
+  selector factors through the returned operator.
 - [`KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md`](KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md)
   proves uniqueness of the scale-free invariant after the second-order
   carrier is admitted. It does not select the carrier or the value law.

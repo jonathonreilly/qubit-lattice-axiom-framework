@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py
-runner_sha256: 6c542b5fc99472959408d7f5ebfd24d6cb7505f19803400a05f3039403f04270
+runner_sha256: ff475c9354f1ed4a0e3c2e15600042a5f450d1be7af164a0515ca082c7dc412d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -22,7 +22,7 @@ Part 0: symbolic setup
   C(z) = c1 z1 + c2 z2 - d
   grad J(z) = [[-A11*a1 + A11*z1 - A12*a2 + A12*z2], [-A12*a1 + A12*z1 - A22*a2 + A22*z2]]
   grad C(z) = [[c1], [c2]]
-  [PASS (A)] A SPD discriminant det(A) = A11 A22 - A12^2 (supplied positive under (H1))  (det_A = A11*A22 - A12**2)
+  [PASS (A)] det(A) equals the displayed discriminant A11 A22 - A12^2 exactly  (det_A = A11*A22 - A12**2)
   [PASS (A)] grad C has explicit nonvanishing-norm form c1^2 + c2^2 (supplied (H2))  (|| grad C ||^2 = c1**2 + c2**2)
 
 ----------------------------------------------------------------------------------------
@@ -65,19 +65,24 @@ Part 6: numerical FP cross-check at one independent random sample
   [PASS (A)] (numerical) Lagrange (L) holds at z_* component-wise (random sample)  (|diff| = (0.000e+00, 0.000e+00))
 
 ----------------------------------------------------------------------------------------
-Part 7: counterfactual probe -- necessity of (H1) (strict convexity)
+Part 7: counterfactual probe -- drop (H1) while keeping (H2)-(H4) and (H1')
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (H1) counterfactual: linear J on affine constraint is constant on F (no unique min)  (J_lin - d on F = 0 (zero means J constant))
+  [PASS (A)] (H1) counterfactual keeps regularity: grad C_cf = (0,1)  (grad C_cf = [[0, 1]])
+  [PASS (A)] (H1) counterfactual objective is not strictly convex  (Hessian J_cf = [[0, 0], [0, 2]])
+  [PASS (A)] (H1) counterfactual has two distinct feasible global minimizers in bounded Omega_cf  (Omega_cf=(-2,2)^2; z_a=(-1,0), z_b=(1,0); J_cf|F_cf=0)
 
 ----------------------------------------------------------------------------------------
 Part 8: counterfactual probe -- necessity of (H2) (constraint regularity)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (H2) counterfactual: || grad C_cf ||^2 at (0,0) is 0 (regularity fails)  (|| grad C_cf(0,0) ||^2 = 0)
+  [PASS (A)] (H2) counterfactual point (0,0) is feasible for C_cf = z1^2 + z2^2  (C_cf(0,0) = 0)
+  [PASS (A)] (H2) counterfactual has grad C_cf(0,0) = 0 but grad J_cf(0,0) nonzero  (grad C_cf = [[0, 0]], grad J_cf = [[-2, 0]])
+  [PASS (A)] (H2) counterfactual cannot satisfy Lagrange stationarity for any lambda  (grad J_cf - lambda grad C_cf = [[-2, 0]])
+  [PASS (A)] (H2) counterfactual makes the multiplier-formula denominator zero  (|| grad C_cf(0,0) ||^2 = 0)
 
 ----------------------------------------------------------------------------------------
 Part 9: (T1) midpoint strict-convexity probe
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (T1) midpoint strict-convexity inequality at sample (z_a=(1,0), z_b=(0,1))  (J((z_a+z_b)/2) = 1/4, (J(z_a)+J(z_b))/2 = 1/2, diff = 1/4)
+  [PASS (A)] (T1) affine-feasible midpoint sample satisfies the strict-convexity inequality  (J((z_a+z_b)/2) = 1/4, (J(z_a)+J(z_b))/2 = 1/2, diff = 1/4)
 
 ----------------------------------------------------------------------------------------
 Part 10: A SPD reality check (sanity)
@@ -90,15 +95,15 @@ Summary
   Verified at exact sympy precision:
     (T2) Lagrange stationarity grad J(z_*) = lambda_* grad C(z_*)
     (T3) multiplier formula lambda_* = <gJ, gC>/||gC||^2
-    (C1)-(C3) corollaries all reduce to 0 / hold parametrically
+    (C1)-(C2) reduce to 0 parametrically; (C3) follows from (L) and has an exact sample
     Numerical FP cross-check at random SPD/affine sample (constraint and (L))
-    (H1) counterfactual: linear J on affine F is constant -> no unique min
+    (H1) counterfactual: bounded regular segment with flat J_cf|F_cf -> no unique min
     (H2) counterfactual: vanishing-grad C breaks (L-formula) denominator
     (T1) midpoint strict-convexity inequality at one sample
     Hessian of J equals A (strict convexity <=> A SPD)
 
 ========================================================================================
-TOTAL: PASS=18, FAIL=0
+TOTAL: PASS=23, FAIL=0
 ========================================================================================
 
 ----- stderr -----

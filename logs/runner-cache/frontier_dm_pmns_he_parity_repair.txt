@@ -1,65 +1,55 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_he_parity_repair.py
-runner_sha256: 9728235dabe25cd95ad9ce32fa51d615553a89e448c1cf815d2bb8163ea17ba5
+runner_sha256: 166097fdc2a93c7b941938d54739bc35777bebb4b53d0f68dd0ed3f935467aa4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 1.11
 status: ok
 ----- stdout -----
-DM/PMNS fixed-chart Hermitian-block parity repair
+Abstract Hermitian-product conjugation-parity theorem for an explicit matrix family
 
-========================================================================================
-Source-note boundary
-========================================================================================
-  [PASS] note contains required boundary: 'bounded-support formal matrix algebra'
-  [PASS] note contains required boundary: 'That fixed-chart Hermitian-block formula and conjugation parity are the entire repaired theorem.'
-  [PASS] note contains required boundary: 'This repair withdraws that selector conclusion from the binding claim.'
-  [PASS] note contains required boundary: 'The bridge from this fixed-chart parity algebra to the full PMNS-assisted leptogenesis selector remains a separate open science problem.'
-  [PASS] note avoids overclaim phrase: 'relative-action selector is derived'
-  [PASS] note avoids overclaim phrase: 'KKT branch classification is derived'
-  [PASS] note avoids overclaim phrase: 'favored-column closure is derived'
-  [PASS] note avoids overclaim phrase: 'eta normalization is derived'
-  [PASS] note avoids overclaim phrase: 'stationary-branch minimality is proved'
+----------------------------------------------------------------------------------
+Direct product, order, and conjugation
+----------------------------------------------------------------------------------
+[PASS] direct Y Y^dagger multiplication gives all displayed entries
+[PASS] the computed product is Hermitian
+[PASS] sign reversal is entrywise conjugation
+[PASS] the seven phase-independent entries are individually even
+[PASS] the two phase-sensitive entries are conjugation-paired, not generically entrywise even
+[PASS] Y^dagger Y is generically distinct from the certified Y Y^dagger product
 
-========================================================================================
-Symbolic formula and parity
-========================================================================================
-  [PASS] direct multiplication gives displayed H_e entries
-  [PASS] H_e is Hermitian
-  [PASS] H_e(-delta) is entrywise conjugate of H_e(delta)
-  [PASS] trace is even in delta
-  [PASS] trace square is even in delta
-  [PASS] determinant is even in delta
-  [PASS] characteristic coefficient 0 is even in delta
-  [PASS] characteristic coefficient 1 is even in delta
-  [PASS] characteristic coefficient 2 is even in delta
-  [PASS] characteristic coefficient 3 is even in delta
+----------------------------------------------------------------------------------
+Positive semidefiniteness
+----------------------------------------------------------------------------------
+[PASS] principal minor (1) is the displayed sum of real squares
+[PASS] principal minor (2) is the displayed sum of real squares
+[PASS] principal minor (3) is the displayed sum of real squares
+[PASS] principal minor (0, 1) is a sum of real squares
+[PASS] principal minor (0, 2) is a sum of real squares
+[PASS] principal minor (1, 2) is a sum of real squares
+[PASS] det(H) is the displayed sum of two real squares
+[PASS] det(H) equals |det(Y)|^2
+[PASS] v^dagger H v equals ||Y^dagger v||_2^2 exactly
 
-========================================================================================
-Numeric parity samples
-========================================================================================
-  [PASS] sample 0: H(-delta) equals conjugate H(delta)
-  [PASS] sample 0: trace parity
-  [PASS] sample 0: determinant parity
-  [PASS] sample 0: Frobenius norm parity
-  [PASS] sample 1: H(-delta) equals conjugate H(delta)
-  [PASS] sample 1: trace parity
-  [PASS] sample 1: determinant parity
-  [PASS] sample 1: Frobenius norm parity
-  [PASS] sample 2: H(-delta) equals conjugate H(delta)
-  [PASS] sample 2: trace parity
-  [PASS] sample 2: determinant parity
-  [PASS] sample 2: Frobenius norm parity
+----------------------------------------------------------------------------------
+Characteristic data and invariant readouts
+----------------------------------------------------------------------------------
+[PASS] characteristic coefficient 0 has the derived closed form
+[PASS] characteristic coefficient 1 has the derived closed form
+[PASS] characteristic coefficient 2 has the derived closed form
+[PASS] characteristic coefficient 3 has the derived closed form
+[PASS] trace has the derived closed form
+[PASS] determinant has the derived cosine form
+[PASS] trace is even under sign reversal
+[PASS] determinant is even under sign reversal
+[PASS] trace power k=2 is even under sign reversal
+[PASS] trace power k=3 is even under sign reversal
+[PASS] trace power k=4 is even under sign reversal
+[PASS] Frobenius norm squared equals tr(H^2)
+[PASS] Frobenius norm squared is even
+[PASS] sign reversal preserves the full characteristic polynomial
 
-========================================================================================
-Negative controls
-========================================================================================
-  [PASS] phase-sensitive entry is not even by itself
-  [PASS] phase-sensitive entry is odd under sign flip
-
-========================================================================================
-TOTAL: PASS=33 FAIL=0
-========================================================================================
+SUMMARY: MODE=normal PASS=29 FAIL=0
 
 ----- stderr -----
 

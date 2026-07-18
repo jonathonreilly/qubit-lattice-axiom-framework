@@ -59,5 +59,14 @@ the exact polar identity.
 [KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
 [AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md](AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md)
 [KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md](KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md)
-[KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md](KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md)
 [KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
+
+The [Q-readout quotient note](KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md)
+is context only and is not used to prove the Fisher identity. It proves kernel
+invariance only for the definitionally selected class
+`S_L={Phi composed with L}`. Locality, bosonic/even parity, species resolution,
+first-live rhetoric, and `C_3` covariance have not been shown to classify all
+selectors into `S_L`; `S_z(u,v,w,z)=z` is a `C_3`-invariant, kernel-sensitive
+counterexample. It supplies no physical charged-lepton selector/carrier,
+normalization, `Q=2/3` law, mass spectrum, source law, comparator, or delta
+bridge.

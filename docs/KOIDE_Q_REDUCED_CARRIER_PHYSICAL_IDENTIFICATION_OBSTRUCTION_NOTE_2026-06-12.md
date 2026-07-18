@@ -98,15 +98,14 @@ This does not damage the reduced determinant theorem. It only blocks the
 stronger inference that the reduced scalar carrier is forced as the
 physical charged-lepton readout.
 
-### 2. The current Record/Quantum axioms do not supply the missing readout context
+### 2. The current Record/Qubit axioms do not supply the missing readout context
 
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) says
-Record is a durable realized-outcome axiom with finite additivity once a
-readout context is supplied. It explicitly supplies no readout context,
-decomposition, weighting, normalization, probability, dynamics,
-within-sector data, or occupancy rule. The Quantum axiom supplies the
-one-site algebraic carrier and explicitly does not supply a physical
-observable bridge.
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) states that
+readout-context selection, central-sector decomposition, source/action
+structure, and physical-observable identification require separate retained
+authorities or remain open. The Qubit axiom supplies the domain of local
+possibilities and its full one-site algebraic presentation; physical
+observable bridges remain downstream.
 
 Thus the current axiom surface cannot select the reduced two-slot
 scalar readout over the full finite `C3` carrier, nor can it select the
@@ -127,10 +126,12 @@ insufficient for the physical-identification bridge:
   proves the exact rank/kernel quotient of the first-live second-order
   readout map. Kernel invariance holds as a definitional corollary only
   for the separately declared class `S = Phi composed with L`; the
-  listed locality, parity, species-resolution, and covariance adjectives
-  do not independently classify all selectors into that class. In
-  particular, this source does not prove that a physical charged-lepton
-  selector factors through the returned operator.
+  listed locality, bosonic/even parity, species-resolution, first-live
+  rhetoric, and `C_3` covariance adjectives do not independently classify
+  all selectors into that class. In particular,
+  `S_z(u,v,w,z)=z` is `C_3`-invariant but kernel-sensitive, so this source
+  does not prove that a physical charged-lepton selector factors through
+  the returned operator.
 - [`KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md`](KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md)
   proves uniqueness of the scale-free invariant after the second-order
   carrier is admitted. It does not select the carrier or the value law.
@@ -180,19 +181,28 @@ available as an honest route.
    boundary.
 3. Real-D log-det uniqueness supplies the physical carrier: ruled out;
    it applies after the block-family class is supplied.
-4. Readout factorization supplies physical selector admissibility: ruled
-   out in the current note; that extension is explicitly conditional.
+4. The readout quotient supplies physical selector admissibility: ruled
+   out in the current note; kernel invariance is definition-only for
+   `S_L`, and the `z`-sensitive scalar is a counterexample to the broader
+   classification.
 5. A future independent theorem supplies the readout/coarse-graining and
    source-unit normalization: not ruled out; this is the live bridge.
 
-**N2 wall independence.** Carrier selection, scalar coarse-graining,
-source-unit normalization, and value-law selection are distinct. The
-reduced determinant algebra closes only after the first three have been
-supplied.
+**N2 wall independence.** Two independently blocking walls remain:
+physical readout/coarse-graining (including carrier and selector-class
+membership) and source-unit normalization. A readout theorem could select a
+carrier without fixing its absolute source units, while a unit convention
+cannot select the physical readout. Closing either wall would therefore leave
+the other open.
+
+| Wall A | Wall B | Pairwise-independence witness |
+|---|---|---|
+| physical readout/coarse-graining | source-unit normalization | selecting the physical carrier leaves every positive diagonal baseline rescalable |
+| source-unit normalization | physical readout/coarse-graining | fixing response units does not choose a carrier or place a selector in `S_L` |
 
 **N3 hidden-wall scan.** No observed charged-lepton masses, fitted
-selector, PDG comparator, new axiom, Tier-A admission, or audit verdict is
-used here.
+selector, PDG comparator, new axiom, premise-registry entry, authority import,
+or audit verdict is used here.
 
 **N4 residual matching.** The exact residual is the auditor's named
 missing bridge: derive the physical charged-lepton observable
@@ -228,7 +238,7 @@ This note does not:
 - promote or demote any audit ledger row;
 - close the physical charged-lepton Koide `Q` bridge;
 - reject the reduced determinant support theorem;
-- add a new axiom, convention, or Tier-A admission;
+- add a new axiom, convention, premise-registry entry, or authority import;
 - use observed lepton masses or any fitted target.
 
 It says only that the current retained inputs do not yet derive the

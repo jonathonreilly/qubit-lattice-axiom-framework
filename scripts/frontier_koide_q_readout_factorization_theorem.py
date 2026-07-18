@@ -318,7 +318,7 @@ def run_normal() -> None:
     section("B. Exact rank, kernel, image, fibers, and quotient")
 
     record(
-        "B.1 the operator-derived coefficient matrix is exactly L = [I3 0]",
+        "B.1 the common time-block readout matrix is exactly L = [I3 0]",
         l_matrix == EXPECTED_L and l_matrix == transition_map,
         f"L = {l_matrix}",
     )
@@ -522,7 +522,7 @@ def run_hostile() -> None:
 
     baseline_checks = algebra_checks(reconstruct())
     record(
-        "H.0 the hostile validator accepts the independently reconstructed baseline",
+        "H.0 the hostile validator accepts the canonical reconstructed baseline",
         all(baseline_checks.values()),
         "validated premises = " + ", ".join(baseline_checks),
     )
@@ -583,11 +583,17 @@ def run_hostile() -> None:
 
     canonical_l = reconstruct().l_matrix
     wrong_kernel_direction = sp.Matrix([0, 0, 1, 0])
+    wrong_section = SECTION.copy()
+    wrong_section[3, 0] = 1
     record(
-        "H.8 the plausible wrong kernel span(e_w) is rejected by exact multiplication",
+        "H.8 plausible wrong kernel and noncanonical right inverse are rejected exactly",
         canonical_l * wrong_kernel_direction != sp.zeros(3, 1)
-        and wrong_kernel_direction not in canonical_l.nullspace(),
-        f"L e_w = {canonical_l * wrong_kernel_direction}",
+        and wrong_kernel_direction not in canonical_l.nullspace()
+        and canonical_l * wrong_section == sp.eye(3)
+        and wrong_section != SECTION
+        and sp.eye(4) - wrong_section * canonical_l != E_Z * E_Z.T,
+        f"L e_w = {canonical_l * wrong_kernel_direction}; "
+        f"L J_wrong = {canonical_l * wrong_section}",
     )
 
     eta = sp.symbols("eta", nonzero=True, real=True)

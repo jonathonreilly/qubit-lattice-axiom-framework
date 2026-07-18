@@ -1,6 +1,7 @@
 # Koide April 22 Second-Order `Q` Support Batch
 
 **Date:** 2026-04-22
+**Claim type:** bounded_theorem
 **Scope:** Charged-lepton Koide `Q = 2/3` support additions from the
 second-order readout / reduced-carrier support packet.
 **Status:** Support batch only. This note does **not** promote `Q` closure.
@@ -196,15 +197,20 @@ one supplier is independently determined by the audit lane.
 
 3. `KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md`
    — exact rank/kernel quotient of the linear second-order readout map
-   `L : R^4 → Diag_3(R)`, `L(W) = P_{T_1} Γ_1 W Γ_1 P_{T_1}` on the
-   retained `Γ_1 / T_1` grammar. Establishes rank `3`, full diagonal
+   `L : R^4 → Diag_3(R)` on the retained `Γ_1 / T_1` grammar. Here
+   `A(W)=P_{T_1} Γ_1 W Γ_1 P_{T_1}` is the full operator and
+   `L(W)=B_t^* A(W) B_t` is its common `t=0,1` diagonal restriction.
+   Establishes rank `3`, full diagonal
    image, kernel `span(e_z)`, exact fibers, and the quotient
    `R^4 / span(e_z) ≅ Diag_3(R)`. Constancy on `span(e_z)` is only a
    definitional corollary for the separately declared class
    `S = Phi composed with L`; the note does not classify admissible or
    physical charged-lepton selectors into that class. This supplies the
    algebraic skeleton of the reduced two-block carrier used in the batch,
-   while leaving the physical-selector-membership bridge open.
+   while leaving the physical-selector-membership bridge open. Locality,
+   bosonic/even parity, species resolution, first-live rhetoric, and `C_3`
+   covariance have not been shown to classify all selectors into `S_L`;
+   `S_z(u,v,w,z)=z` is `C_3`-invariant but kernel-sensitive.
 
 4. `KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md`
    — exact uniqueness of the scale-free `C_3`-invariant selector
@@ -213,19 +219,19 @@ one supplier is independently determined by the audit lane.
    at quadratic order). Supplies the carrier-side uniqueness matching
    the source-side restriction used in the batch.
 
-The combined load-bearing inference of this chain is:
+The proposed physical-identification inference of this chain remains open:
 
 > on the framework's accepted substrate, the physical local scalar
 > observables read through the canonical descent `E_loc` to the
 > diagonal carrier; the source-derivative content of any admissible
 > scalar generator on a real-`D` block coincides with that of
-> `W = log|det(D + J)| - log|det D|`; the readout map factors through
-> the species-resolving diagonal target, so first-live scalars are
-> kernel-invariant on `span(e_z)`; and the normalized
-> scale-free selector on the admitted carrier is unique. The
-> reduced two-generator block carrier with baseline `D_red = I_2`
-> and the source-free point `K = 0` is then the framework-forced
-> reading rather than a free admitted choice.
+> `W = log|det(D + J)| - log|det D|`; and the normalized scale-free
+> selector on a separately supplied carrier is unique. The exact map
+> `L` supplies only the quotient `R^4/span(e_z) ≅ Diag_3(R)` and
+> does not place every first-live or physically admissible scalar in
+> `S_L`. The reduced two-generator block carrier, the baseline
+> `D_red = I_2`, and the source-free point `K = 0` therefore remain
+> supplied choices rather than framework-forced readings.
 
 That inference is the audit-named missing bridge for this row.
 

@@ -116,6 +116,14 @@ The BAE admission count is UNCHANGED. No new admission is proposed.
 | Probe12 | Plancherel-uniform on `Ĉ_3` gives `(1,2)` weighting; `(1,1)` requires combining ω, ω̄ | source dependency; see [`KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md`](KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md) |
 | Probe13 | K-real-structure supplies Z_2 part of (1,1) but not SO(2) | source dependency; see [`KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md`](KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md) |
 
+The readout-quotient row is context only outside the defined selector class
+`S_L={Phi composed with L}`. Locality, bosonic/even parity, species resolution,
+first-live rhetoric, and `C_3` covariance have not been shown to classify all
+selectors into `S_L`; `S_z(u,v,w,z)=z` remains a `C_3`-invariant,
+kernel-sensitive counterexample. No physical `Q` functional, charged-lepton
+carrier, normalization, source law, mass spectrum, comparator, or delta bridge
+is inherited from that row.
+
 ### Forbidden imports
 
 - NO PDG observed mass values used as derivation input (per

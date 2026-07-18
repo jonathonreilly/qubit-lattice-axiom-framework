@@ -17,7 +17,20 @@ M2_256_ROW = "m2_tensor_d4_dimension_256_bounded_note_2026-05-26"
 
 
 def _rows(root: Path) -> dict[str, dict[str, object]]:
-    return json.loads((root / "docs" / "audit" / "data" / "audit_ledger.json").read_text())["rows"]
+    ledger = root / "docs" / "audit" / "data" / "ledger"
+    row_ids = (
+        FINITE_WEIGHT_ROW,
+        RADIAN_SEPARATION_ROW,
+        RADIAN_NO_GO_ROW,
+        DELTA_ORIENTATION_ROW,
+        M2_256_ROW,
+    )
+    return {
+        row_id: json.loads(
+            (ledger / row_id[:2] / f"{row_id}.json").read_text(encoding="utf-8")
+        )
+        for row_id in row_ids
+    }
 
 
 def _registration_guard(

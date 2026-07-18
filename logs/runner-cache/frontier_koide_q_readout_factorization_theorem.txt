@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_readout_factorization_theorem.py
-runner_sha256: 4cf3b6ec54e9159f49b091b828225262654fb73ef5f171829b1b16a190ef63de
+runner_sha256: 159a1f2dcc2da5815d78c1e6ea62e1e1e6fafc27f06e029c069fbd501a14336b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 
@@ -28,7 +28,7 @@ A. Exact 16 x 16 basis/projector reconstruction
 ========================================================================================
 B. Exact rank, kernel, image, fibers, and quotient
 ========================================================================================
-[PASS] B.1 the operator-derived coefficient matrix is exactly L = [I3 0]
+[PASS] B.1 the common time-block readout matrix is exactly L = [I3 0]
        L = Matrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0]])
 [PASS] B.2 rank(L)=3 and the column space is all of Diag_3(R)
        rank(L) = 3, right inverse J = Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1], [0, 0, 0]])
@@ -75,7 +75,7 @@ PASSED: 19/19
   [PASS] A.6 slot 110 has the exact displayed image on both time copies
   [PASS] A.7 slot 101 has the exact displayed image on both time copies
   [PASS] A.8 slot 011 has the exact displayed image on both time copies
-  [PASS] B.1 the operator-derived coefficient matrix is exactly L = [I3 0]
+  [PASS] B.1 the common time-block readout matrix is exactly L = [I3 0]
   [PASS] B.2 rank(L)=3 and the column space is all of Diag_3(R)
   [PASS] B.3 ker(L) is exactly span(e_z)
   [PASS] B.4 every diagonal has the exact affine fiber {(d1,d2,d3,z)}

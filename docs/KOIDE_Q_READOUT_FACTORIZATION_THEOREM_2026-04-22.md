@@ -8,11 +8,19 @@ not a selector-classification or physical-closure theorem
 
 ## Exact scope
 
-This note proves only the quotient theorem for the explicitly defined map
+This note proves only the quotient theorem for the readout obtained from the
+explicitly defined returned operator
 
 ```text
-L(W) = P_{T_1} Γ_1 W Γ_1 P_{T_1}.
+A(W) = P_{T_1} Γ_1 W Γ_1 P_{T_1}.
+L_t(W) = B_t^* A(W) B_t,  t in {0,1}.
 ```
+
+The basis calculation below proves `L_0(W)=L_1(W)`. The map used in the
+quotient theorem is their common `3 x 3` diagonal restriction
+`L(W):=L_0(W)=L_1(W)`, while the full six-state restriction of `A(W)` is
+`diag(L(W),L(W))`. Thus the codomain `Diag_3(R)` is an explicit restriction,
+not a type-identification of the full `16 x 16` operator.
 
 For the separately declared selector class
 
@@ -91,7 +99,7 @@ W(u,v,w,z)
   + w P_{(1,0,1)} + z P_{(0,1,1)}.
 ```
 
-The basis calculation gives
+The basis calculation gives, on each time copy,
 
 ```text
 L(u,v,w,z) = diag(u,v,w),
@@ -168,8 +176,8 @@ Q = [[a,b,b],
 
 Thus the invariant quadratic space on `Diag_3(R)` is two-dimensional; for
 example it is spanned by `(d_1+d_2+d_3)^2` and
-`(d_1-d_2)^2+(d_2-d_3)^2+(d_3-d_1)^2`. This algebra is retained only on the
-image of `L`. It supplies no independent theorem that a scalar originally
+`(d_1-d_2)^2+(d_2-d_3)^2+(d_3-d_1)^2`. This algebra is established only on
+the image of `L`. It supplies no independent theorem that a scalar originally
 defined on all four coefficients must ignore `z`.
 
 Indeed, `S_z(u,v,w,z)=z` is invariant under the declared `rho_4` cycle but is

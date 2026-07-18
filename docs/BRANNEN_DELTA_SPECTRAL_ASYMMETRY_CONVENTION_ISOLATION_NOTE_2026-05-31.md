@@ -87,8 +87,17 @@ notes; this note only localizes it for the Brannen delta lane.
 [AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md](AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md)
 [KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md](KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md)
 [KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
-[KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md](KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md)
 [NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md](NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md)
+
+The [Q-readout quotient note](KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md)
+is context only, not load-bearing for the direct circulant calculation here. It
+proves the exact quotient for `L` and kernel invariance only for the
+definitionally selected class `S_L={Phi composed with L}`. Locality,
+bosonic/even parity, species resolution, first-live rhetoric, and `C_3`
+covariance have not been shown to classify all selectors into `S_L`;
+`S_z(u,v,w,z)=z` is a `C_3`-invariant, kernel-sensitive counterexample. It
+supplies no physical charged-lepton selector/carrier, `Q` functional,
+normalization, mass spectrum, source law, comparator, or delta bridge.
 
 ## Repair Log
 

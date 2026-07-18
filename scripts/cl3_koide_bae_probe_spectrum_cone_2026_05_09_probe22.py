@@ -1,79 +1,16 @@
-"""
-Koide BAE Probe 22 — Spectrum-Level Cone Localization Pivot
+"""Probe 22: exact abstract cone-slack identity.
 
-Tests the SPECTRUM-LEVEL closure pivot for the Brannen Amplitude
-Equipartition (BAE) condition |b|^2/a^2 = 1/2 on the C_3-equivariant
-Hermitian circulant H = aI + bC + b̄C^2 on hw=1.
+For a supplied Hermitian circulant H=aI+bC+conj(b)C^2, this runner
+recomputes
 
-PIVOT (distinct from Probes 1-21):
-   Prior probes attacked closure at the PARAMETER level — derive
-   (a, |b|) values such that |b|^2/a^2 = 1/2. All 18 named probes
-   returned bounded structural obstruction.
-   This probe asks: pivot away from parameter-level. Instead of
-   deriving (a, b), derive directly that the eigenvalues
-   {lambda_0, lambda_1, lambda_2} of H lie on the Koide cone
-       lambda_0^2 + lambda_1^2 + lambda_2^2  =  4 (lambda_0 lambda_1
-                                                  + lambda_0 lambda_2
-                                                  + lambda_1 lambda_2)
-   directly. The retained polynomial identity
-   KOIDE_CONE_THREE_FORM_EQUIVALENCE then closes Q = 2/3, which by
-   retained CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE is
-   BAE.
+  3 sum(lambda_k^2) - 2 (sum lambda_k)^2 = -9(a^2-2|b|^2).
 
-QUESTION: does this spectrum-level pivot escape the parameter-level
-obstruction?
-
-ANSWER: NO. The retained Koide-Circulant Character Bridge identity
-(positive_theorem) makes the spectrum-level cone localization
-arithmetically identical to the parameter-level BAE:
-
-   bridge identity (T3, KOIDE_CIRCULANT_CHARACTER_BRIDGE):
-       a_0^2 - 2 |z|^2  ==  3 a^2 - 6 |b|^2          (algebraic)
-
-   spectrum-level cone (the target of this probe):
-       2 (lambda_0 + lambda_1 + lambda_2)^2  ==  3 (lambda_0^2
-                                                  + lambda_1^2
-                                                  + lambda_2^2)
-       <=>  3 a_0^2  ==  3 (a_0^2 + 2|z|^2) * (1/3) ... (rewrites)
-       <=>  a_0^2  ==  2 |z|^2                       (Plancherel)
-       <=>  a^2  ==  2 |b|^2                          (bridge T3)
-       <=>  BAE: |b|^2 / a^2  ==  1/2                 (definition)
-
-These four equational forms are ALL equivalent algebraically. The
-bridge identity is retained (positive_theorem) and exact. Therefore:
-
-   "spectrum lies on the Koide cone"
-       and
-   "operator parameters satisfy BAE"
-   are NOT distinct mathematical statements on
-   Herm_circ(3) = M_3(C)^{C_3}-Hermitian.
-
-The pivot does not provide a new derivation route — it provides the
-SAME equation in DIFFERENT variables. Any derivation of
-"spectrum-on-cone" reduces, by the bridge identity, to a derivation
-of BAE. And conversely: a probe that fails at the parameter level
-fails at the spectrum level for the SAME reason, because the two
-levels are bridge-identical.
-
-VERDICT: SHARPENED bounded obstruction.
-
-   The spectrum-level pivot is RULED OUT as a route to closure
-   distinct from the parameter-level routes already enumerated by
-   Probes 1-21. The 18-probe campaign's terminal residue —
-   "the (1, 1)-multiplicity-weighted Frobenius pairing on
-   M_3(C)_Herm under C_3-isotype decomposition" / equivalently
-   "the U(1)_b angular quotient on the non-trivial doublet of
-   A^{C_3}" — is now confirmed to apply at BOTH the parameter and
-   spectrum levels. There is no spectrum-level escape hatch.
-
-   BAE admission count: UNCHANGED. No new admissions. No promotion.
-
-This runner verifies the spectrum-level / parameter-level
-arithmetic equivalence with explicit symbolic computation and
-numerical instances spanning both BAE-satisfying and non-BAE
-regions.
-
-No PDG values used as derivation input — masses appear nowhere.
+It verifies the shared global zero locus and separates the phase-independent
+cone invariants e1,e2,p1,p2 from phase-sensitive e3,p3. The result is an exact
+rewrite of this one slack, not a physical Koide theorem and not a no-go against
+separately supplied phase-sensitive spectral selectors. P1, a matter carrier,
+readout, quotient, and selector are not supplied. Prose/source boundaries are
+printed but uncounted; no PDG values are used.
 """
 
 from __future__ import annotations
@@ -97,12 +34,12 @@ def report(passed: list[bool], section: str) -> tuple[int, int]:
 
 def section_1_setup() -> tuple[int, int]:
     """
-    Section 1 — Retained inputs.
+    Section 1 — Supplied finite-algebra inputs.
 
     Verify R1 (circulant Hermitian form on hw=1) and R2 (eigenvalue
     spectrum) are realized on a concrete C_3-equivariant Hermitian.
     """
-    header("Section 1 — Retained inputs (R1, R2)")
+    header("Section 1 — Supplied finite-algebra inputs (R1, R2)")
     passed: list[bool] = []
 
     # Standard 3x3 cyclic shift (right-shift)
@@ -179,12 +116,12 @@ def section_1_setup() -> tuple[int, int]:
 
 def section_2_bridge_identity() -> tuple[int, int]:
     """
-    Section 2 — Retained bridge identity (KOIDE_CIRCULANT_CHARACTER_BRIDGE).
+    Section 2 — Finite bridge identity.
 
     Verify the algebraic identity a_0^2 - 2|z|^2 = 3a^2 - 6|b|^2 holds
     symbolically on (a in R, b in C).
     """
-    header("Section 2 — Retained bridge identity (positive_theorem)")
+    header("Section 2 — Finite bridge identity")
     passed: list[bool] = []
 
     a = sp.symbols("a", real=True)
@@ -270,7 +207,7 @@ def section_3_spectrum_level_cone() -> tuple[int, int]:
     find that F_orbit (or equivalently F_ratio') reduces to
     (a^2 - 2|b|^2) up to a non-vanishing real prefactor.
     """
-    header("Section 3 — Spectrum-level cone reduces to BAE")
+    header("Section 3 — Spectrum-level cone reduces to Koide Frobenius equipartition")
     passed: list[bool] = []
 
     a = sp.symbols("a", real=True)
@@ -365,9 +302,8 @@ def section_4_bridge_makes_pivot_illusory() -> tuple[int, int]:
     arithmetically identical to the parameter-level BAE.
 
     Demonstrate:
-       (a) any spectral statement on (lambda_0, lambda_1, lambda_2) of
-           the matter-sector circulant H = aI + bC + b̄C^2 is a
-           statement on (a, |b|) only;
+       (a) the displayed cone slack for the supplied abstract circulant
+           H = aI + bC + b̄C^2 is a statement on (a, |b|) only;
        (b) the cone localization is exactly equivalent to BAE;
        (c) therefore "spectrum-level closure" and "parameter-level
            closure" are not independent — they are the same equation.
@@ -470,10 +406,8 @@ def section_4_bridge_makes_pivot_illusory() -> tuple[int, int]:
     print(f"  T4.4 F_orbit = 0 iff BAE on 6 sample (a, |b|) points: "
           f"BAE={BAE_results}, offBAE={offBAE_results}, PASS={test}")
 
-    # Test 4.5 — delta-independence: cone localization does NOT
-    # depend on arg(b). This proves arg(b) is genuinely a permutation
-    # symmetry on the eigenvalues (the same triple is on the cone
-    # regardless of arg(b)).
+    # Test 4.5 — this particular cone slack is delta-independent. General
+    # phase shifts do not merely permute the spectrum; e_3 and p_3 vary.
     delta1 = sp.Rational(1, 7)
     delta2 = sp.pi - sp.Rational(2, 5)
     a_val = sp.sqrt(2)
@@ -494,28 +428,49 @@ def section_4_bridge_makes_pivot_illusory() -> tuple[int, int]:
     # the other, with the same zero set. We have shown:
     #   T3.3:  3 (sum sq) - 2 (sum)^2 = -9 (a^2 - 2|b|^2)
     # i.e., the cone slack form is -9*(BAE slack form). Same zero locus.
-    # Verify the prefactor explicitly is non-vanishing (-9 != 0).
-    test = (sp.Integer(-9) != 0)
+    # Recompute the prefactor from the two symbolic residuals; do not count
+    # the target literal itself as evidence.
+    parameter_slack = a**2 - 2 * b_mod**2
+    computed_prefactor = sp.cancel(F_orbit_form2 / parameter_slack)
+    test = (
+        sp.simplify(F_orbit_form2 - computed_prefactor * parameter_slack) == 0
+        and sp.diff(computed_prefactor, a) == 0
+        and sp.diff(computed_prefactor, b_mod) == 0
+        and sp.simplify(computed_prefactor + 9) == 0
+    )
     passed.append(test)
-    print(f"  T4.6 prefactor -9 in 3(sum sq) - 2(sum)^2 = -9 BAE_slack "
-          f"is non-vanishing: PASS={test}")
+    print(f"  T4.6 recomputed prefactor in 3(sum sq) - 2(sum)^2 = "
+          f"prefactor * BAE_slack is {computed_prefactor}: PASS={test}")
+
+    # Test 4.7 — the global polynomial locus includes the origin, but the
+    # quotient Q and the BAE ratio are both undefined there.
+    a_global, b2_global = sp.symbols("a_global b2_global", real=True)
+    q_global = (3 * a_global**2 + 6 * b2_global) / (9 * a_global**2)
+    ratio_global = b2_global / a_global**2
+    test = (
+        sp.denom(q_global).subs(a_global, 0) == 0
+        and sp.denom(ratio_global).subs(a_global, 0) == 0
+        and (a_global**2 - 2 * b2_global).subs({a_global: 0, b2_global: 0}) == 0
+    )
+    passed.append(test)
+    print("  T4.7 origin lies on polynomial locus but Q and |b|^2/a^2 "
+          f"are undefined there: PASS={test}")
 
     return report(passed, "Section 4")
 
 
 def section_5_no_extra_handle() -> tuple[int, int]:
     """
-    Section 5 — Confirm the spectrum carries no extra handle beyond
-    (a, |b|).
+    Section 5 — Separate the delta-independent cone invariants from the
+    genuinely phase-sensitive spectral invariant.
 
-    The eigenvalues of the matter-sector circulant H = aI + bC + b̄C^2
+    The eigenvalues of the supplied abstract circulant H = aI + bC + b̄C^2
     are determined by (a, |b|, arg(b)), and the symmetric functions
-    (Newton-Girard / power sums) are determined by (a, |b|) alone
-    (arg(b) only permutes the three eigenvalues). So no spectrum-level
-    invariant can give a derivation of BAE that doesn't reduce to a
-    derivation in (a, |b|).
+    e_1,e_2,p_1,p_2 used by the cone slack depend only on (a,|b|).
+    The full spectrum and e_3,p_3 depend on cos(3 arg(b)), so this runner
+    makes no universal claim against phase-sensitive selectors.
     """
-    header("Section 5 — Spectrum invariants are functions of (a, |b|) only")
+    header("Section 5 — Cone invariants versus phase-sensitive spectrum data")
     passed: list[bool] = []
 
     a = sp.symbols("a", real=True)
@@ -625,32 +580,16 @@ def section_5_no_extra_handle() -> tuple[int, int]:
           f"(delta=0: {sp.simplify(e3_d0)}, delta=pi/3: "
           f"{sp.simplify(e3_dpi3)}): PASS={test}")
 
-    # Test 5.5 — Discriminant (which detects degenerate eigenvalues)
-    # is also a function of (a, |b|, cos(3 delta)) only — same delta
-    # dependence. No extra independent invariant beyond power sums
-    # and (a, |b|, delta).
-
-    # The full set of spectrum invariants: {e_1, e_2, e_3} or
-    # equivalently {p_1, p_2, p_3}. Among these, only e_3 (or
-    # equivalently p_3 modulo p_1, p_2 via Newton-Girard) carries
-    # delta-dependence — the BAE condition is delta-independent (since
-    # it's a^2 = 2|b|^2). So spectral invariants give us 2 + 1 = 3
-    # functionally-independent functions, but BAE requires 1 condition
-    # in 2 variables (a, |b|) — a delta-independent condition. The
-    # spectrum-level pivot has access to NO extra equation that is not
-    # already a function of (a, |b|, delta), and for delta-independent
-    # conditions, the only available coordinates are (a, |b|).
-    # This concludes the spectrum-level pivot does not escape the
-    # parameter-level obstruction.
+    # Boundary: the full spectrum has a genuine phase-sensitive coordinate
+    # through e_3/p_3. Only this displayed cone slack is delta-independent.
 
     # Verify quantitatively: the BAE slack equation
     # f(a, |b|) := a^2 - 2|b|^2 is a polynomial in (a, |b|) only.
     # By T4.6, F_orbit (the cone slack) = -9 * f. So the spectrum-
     # level cone equation is -9 * (the parameter-level BAE equation).
-    test = True
-    passed.append(test)
-    print(f"  T5.5 Spectrum pivot adds no BAE-relevant DOF beyond (a, |b|): "
-          f"PASS={test}")
+    print("  [BOUNDARY — not counted] The displayed BAE slack is independent of")
+    print("       delta and the cone slack is its computed -9 multiple. This does")
+    print("       not exclude a separately supplied spectral selector.")
     print(f"        (BAE is delta-independent; spectrum reduces to "
           f"(a, |b|, delta) with delta unconstrained by BAE.)")
 
@@ -713,72 +652,42 @@ def section_6_retained_polynomial_closure_step() -> tuple[int, int]:
     print(f"  T6.3 (1, 1, 1) off cone, F_orbit_retained=9, Q=1/3: "
           f"F={sp.simplify(F_at)}, Q={Q_at}, PASS={test}")
 
-    # Test 6.4 — Closure step: IF spectrum-on-cone, THEN Q = 2/3.
+    # Boundary statement — IF spectrum-on-cone, THEN Q = 2/3.
     # By retained polynomial identity (T2) + retained algebraic
     # equivalence (CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE),
     # Q = 2/3 is BAE.
     # Closure step is correct conditional on the antecedent.
     # The probe verdict is: the antecedent (spectrum-on-cone) is the
-    # SAME as BAE on the matter-sector circulant.
-    test = True
-    passed.append(test)
-    print(f"  T6.4 closure step (cone => Q=2/3 => BAE) is correct "
-          f"conditional on antecedent: PASS={test}")
+    # SAME zero locus as the parameter slack on the abstract circulant.
+    print("  [BOUNDARY — not counted] T6.1 is the algebraic certificate for the")
+    print("       conditional cone => Q=2/3 step; no separate prose PASS is added.")
 
     return report(passed, "Section 6")
 
 
 def section_7_verdict() -> tuple[int, int]:
-    """
-    Section 7 — Sharpened bounded obstruction verdict.
-
-    The spectrum-level pivot does NOT provide a route to BAE closure
-    distinct from the parameter-level routes already enumerated. The
-    bridge identity makes the two levels arithmetically identical for
-    the matter-sector circulant H = aI + bC + b̄C^2 on hw=1.
-
-    BAE admission count: UNCHANGED. No new admissions. No promotion.
-    """
-    header("Section 7 — Verdict: spectrum-level pivot is bridge-illusory")
+    """Print the uncounted source/physical boundary."""
+    header("Section 7 — Uncounted source and physical boundary")
     passed: list[bool] = []
 
-    # Test 7.1 — Three honest outcomes summary
-    # (1) CLOSURE: spectrum-on-cone derived from cited source-stack content.
-    #     STATUS: NOT achieved. Spectrum-on-cone is exactly BAE on
-    #     this operator class, and the 18-probe campaign showed BAE is
-    #     not derivable from cited source-stack content alone.
-    # (2) STRUCTURAL OBSTRUCTION: spectrum-localization on cone cannot
-    #     be derived from cited source-stack content.
-    #     STATUS: ACHIEVED with sharper localization — the obstruction
-    #     is identified as a BRIDGE-IDENTITY-INHERITED obstruction
-    #     from the parameter level. The spectrum-level pivot inherits
-    #     the parameter-level obstruction via the retained bridge
-    #     identity (T3 of KOIDE_CIRCULANT_CHARACTER_BRIDGE).
-    # (3) SHARPENED: progress without full closure.
-    #     STATUS: SHARPENED bounded obstruction — the campaign now
-    #     covers the spectrum-level reformulation as well, ruling out
-    #     this attack vector.
-    test = True
-    passed.append(test)
-    print(f"  T7.1 Verdict outcome: SHARPENED bounded obstruction. PASS={test}")
+    print("  [VERDICT — not counted] The spectrum-cone rewrite is algebraically")
+    print("       identical to the parameter-level slack on this operator class;")
+    print("       this does not rule out an independently supplied selector.")
 
-    # Test 7.2 — BAE admission count unchanged
-    # The probe adds NO new admissions and removes NO existing admissions.
+    # Test 7.2 — premise and registry surfaces unchanged
+    # The probe adds no premise or registry entry.
     # The single residual primitive remains as identified by the
     # 18-probe campaign synthesis: the (1, 1)-multiplicity-weighted
     # Frobenius pairing on M_3(C)_Herm under C_3-isotype decomposition
     # / equivalently the U(1)_b angular quotient on the non-trivial
     # doublet of A^{C_3}.
-    test = True
-    passed.append(test)
-    print(f"  T7.2 BAE admission count UNCHANGED: PASS={test}")
+    print("  [SOURCE BOUNDARY — not counted] This probe does not alter the existing")
+    print("       premise or registry surface.")
 
     # Test 7.3 — No PDG values used as derivation input
     # The runner uses a, b_re, b_im, b_mod, delta as symbolic variables
     # only. No PDG charged-lepton mass is consumed in any step.
-    test = True
-    passed.append(test)
-    print(f"  T7.3 No PDG values consumed: PASS={test}")
+    print("  [SOURCE BOUNDARY — not counted] No PDG values are consumed.")
 
     # Test 7.4 — No new axioms or imports
     # The probe uses only cited source-stack content:
@@ -787,15 +696,13 @@ def section_7_verdict() -> tuple[int, int]:
     #   - bridge identity T1, T2, T3
     #   - retained polynomial identity (KOIDE_CONE_THREE_FORM_EQUIVALENCE)
     # plus elementary symbolic algebra. No new axiom is introduced.
-    test = True
-    passed.append(test)
-    print(f"  T7.4 No new axioms or imports: PASS={test}")
+    print("  [SOURCE BOUNDARY — not counted] No new axiom or import is introduced.")
 
     return report(passed, "Section 7")
 
 
 def main() -> int:
-    print("Koide BAE Probe 22 — Spectrum-Level Cone Localization Pivot")
+    print("Abstract Circulant Cone-Slack Rewrite (historical Koide Probe 22)")
     print("Date: 2026-05-09")
     print("Type: bounded_theorem (sharpened obstruction)")
 

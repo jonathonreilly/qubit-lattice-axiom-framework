@@ -20,12 +20,11 @@ support package. The honest read now is:
   and the physical Brannen-phase bridge behind `δ = 2/9`;
 - the DM flagship lane is closed on the current package surface and on the
   exact-target native/source map by the later April 21 theorem stack;
-- at the **meta-axiom layer**, with STRC derived from `1(+)5` channel
-  completeness (`37c4f2bf`) and the Koide `kappa` gate now carried
-  primarily by the spectrum/operator bridge plus block-total Frobenius,
-  all four lanes reduce to the retained Cl(3)/Z³ framework axioms — the
-  earlier "4 → 2 DIM-UNIQ +
-  STRC" meta-layer collapses further to **4 → Cl(3)/Z³**;
+- at the **meta-axiom layer**, the former claim that the Koide `kappa` gate
+  was carried by a spectrum/operator bridge is superseded: that row proves
+  only an abstract Fourier polynomial identity, and the physical carrier and
+  selector remain open. Consequently it cannot support the earlier proposed
+  collapse to **4 → Cl(3)/Z³**;
 - a named future target (**BACT**, the bimodule amplitude-completeness
   theorem) sharpens the remaining quark-side structural gap but does not erase
   the per-lane object-derivation issue by itself.
@@ -41,9 +40,10 @@ then use this note for the candidate-route logic in §2-§9.
 the historical route language below:
 
 - Koide `kappa`: MRU remains supplementary only. The SO(2)-quotient needed to
-  make MRU load-bearing is not retained-derived from the observable
-  principle; the primary retained route is now the spectrum/operator bridge
-  plus the block-total Frobenius measure. See
+  make MRU load-bearing is not derived by the cited observable-principle
+  proposal. The abstract Hermitian-circulant Fourier invariant and the
+  block-total Frobenius formulas characterize candidate loci but do not
+  provide a physical mass carrier or selector. See
   `docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`.
 - DM A-BCC basin bookkeeping: the full χ²=0 chart is now certified as five
   basins `{Basin 1, Basin N, Basin P, Basin 2, Basin X}`, with active-chamber
@@ -87,34 +87,36 @@ singlet-vs-doublet scalar selector iff `|Iso(d)| = 2` with one singlet
 + one complex doublet, which holds iff **`d = 3`**.
 
 See `docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`.
-Runner PASS=65 FAIL=0.
+Runner classified PASS=26 FAIL=0 with one explicitly supplied conditional
+premise and no registry entry.
 
 A same-day obstruction theorem sharpens the MRU frontier. On the same
 `1 ⊕ 2` cyclic carrier, every weighted block-log-volume law lands on the leaf
 `kappa = 2 mu / nu`. MRU is the equal-weight leaf `(mu, nu) = (1, 1)`, while
-the retained unreduced determinant carrier satisfies
+the cited unreduced determinant carrier satisfies
 `det(alpha P_+ + beta P_perp) = alpha beta^2`, so it carries weights `(1, 2)`
 and lands at `kappa = 1`, not `kappa = 2`. The exact missing object is
-therefore a retained `1:1` real-isotype measure or equivalent two-slot carrier
+therefore an independently justified `1:1` real-isotype measure or equivalent two-slot carrier
 reduction. See
 `docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`.
 
-### §2.1a κ spectrum/operator bridge theorem — operator-side κ as corollary of spectrum-side Q
+### §2.1a Abstract Hermitian-circulant Fourier invariant
 
-Under the retained cyclic-compression bridge, the exact sympy-verified
+For an abstract matrix in `Herm_circ(3)`, the exact normalized-Fourier
 identity
 
 ```text
 a_0^2 - 2 |z|^2  =  3 (a^2 - 2 |b|^2)
 ```
 
-makes operator-side `kappa = g_0^2 / |g_1|^2 = 2` a corollary of
-spectrum-side `Q = 2/3` on the charged-lepton Koide cone. So if the reviewer
-accepts the spectrum-side closure language, the operator-side framing is
-dispensable: `Q = 2/3`, `kappa = 2`, and MRU at `d = 3` are the same leaf on
-the branch. See
+makes the two displayed polynomial residuals vanish together. The ratio
+shorthand `kappa=a^2/|b|^2` is valid only for `b!=0`; the global theorem is
+the polynomial zero-locus statement. This algebra does not identify the
+eigenvalues with charged-lepton square-root masses, supply a physical
+cyclic-compression carrier, select the zero locus, or establish MRU. See
 `docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`.
-Runner PASS=9 FAIL=0.
+Runner modes: normal PASS=12, independent PASS=10, hostile PASS=10; all
+FAIL=0.
 
 ### §2.1b κ block-total Frobenius measure theorem — realizes the 1:1 measure
 
@@ -125,12 +127,14 @@ explicitly realized by the block-total Frobenius-squared functional
 E_I := || pi_I(H) ||_F^2.
 ```
 
-At `d = 3` this gives `E_+ = 3 a^2`, `E_⊥ = 6 |b|^2`, so the block-total
-extremum recovers `kappa = 2` while the determinant-carrier lands at
+At `d = 3` this gives `E_+ = 3 a^2`, `E_⊥ = 6 |b|^2`, so the supplied
+block-total extremum has `kappa = 2` while the determinant-carrier lands at
 `kappa = 1`. `d = 3` is the unique dim where `Herm_circ` decomposes as
-`1 · trivial ⊕ 1 · complex-doublet` — so the block-total Frobenius functional
-is itself dim-uniquely well-defined at `d = 3`. This supplies a second
-independent retained closure route for operator-side `kappa`. See
+`1 · trivial ⊕ 1 · complex-doublet` with no sign block. The block-total
+Frobenius functional itself exists in other dimensions; this decomposition
+profile is what is dimensionally unique. This is an abstract
+characterization for a supplied functional, not an independent physical
+closure route or selector for `kappa`. See
 `docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`.
 Runner PASS=16 FAIL=0.
 
@@ -592,9 +596,9 @@ At the reviewer's object-derivation bar, the current branch is mixed:
 
 - MRU restates the missing charged-lepton scalar law but does not derive why
   the physical carrier satisfies it;
-- operator-side `kappa = 2` framing is now dispensable if the reviewer accepts
-  the spectrum-side closure language, because `Q = 2/3`, `kappa = 2`, and MRU
-  at `d = 3` are already the same leaf on the branch;
+- the exact spectrum and operator polynomial residuals describe the same
+  abstract leaf, but neither description supplies the missing physical mass
+  carrier or selector;
 - Berry's old geometric model exists, but the new bundle-obstruction theorem
   shows that packaging is not available on the actual positive Koide base;
 - DPLE upgrades `F_4` to a real theorem on the fixed chart but does not derive

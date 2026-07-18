@@ -5,12 +5,12 @@ Source-side runner for `KOIDE_MRU_DEMOTION_NOTE_2026-04-20`.
 This runner verifies the repaired scope of the MRU demotion note:
 
 1. the note demotes the SO(2)-quotient/MRU route instead of promoting it;
-2. the only graph-visible retained authority is the spectrum-operator bridge;
+2. the graph-visible Fourier authority is exact abstract algebra only;
 3. the block-total Frobenius theorem is bounded context, not an independent
    unbounded closure route in this note;
 4. the Path-A trace obstruction uses the correct tr(H^3) phase term; and
-5. the bridge corollary `spectrum Q = 2/3 => operator kappa = 2` is exact on
-   Herm_circ(3).
+5. the normalized Fourier and coordinate residuals have the same polynomial
+   zero locus on Herm_circ(3), without a physical interpretation.
 
 No audit verdict or ledger update is written here.
 """
@@ -31,18 +31,29 @@ BLOCK_TOTAL_NOTE = (
     ROOT / "docs" / "KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md"
 )
 
-PASS = 0
-FAIL = 0
+SOURCE_PASS = 0
+SOURCE_FAIL = 0
+ALGEBRA_PASS = 0
+ALGEBRA_FAIL = 0
 
 
-def check(label: str, condition: bool, detail: str = "") -> None:
-    global PASS, FAIL
+def check(label: str, condition: bool, detail: str = "", *, kind: str = "algebra") -> None:
+    global SOURCE_PASS, SOURCE_FAIL, ALGEBRA_PASS, ALGEBRA_FAIL
+    if kind not in {"source", "algebra"}:
+        raise ValueError(f"unknown check kind: {kind}")
     status = "PASS" if condition else "FAIL"
     if condition:
-        PASS += 1
+        if kind == "source":
+            SOURCE_PASS += 1
+        else:
+            ALGEBRA_PASS += 1
     else:
-        FAIL += 1
-    print(f"  [{status}] {label}")
+        if kind == "source":
+            SOURCE_FAIL += 1
+        else:
+            ALGEBRA_FAIL += 1
+    prefix = "SOURCE" if kind == "source" else "ALGEBRA"
+    print(f"  [{prefix} {status}] {label}")
     if detail:
         print(f"         {detail}")
 
@@ -62,27 +73,32 @@ def check_source_boundaries() -> None:
     check(
         "note registers the dedicated demotion runner",
         "scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py" in note,
+        kind="source",
     )
     check(
-        "note states the bridge is the only graph-visible retained authority",
-        "only graph-visible retained authority" in flat
-        and "Graph-visible source authority (one hop)" in note,
+        "note scopes its graph-visible Fourier authority to finite algebra",
+        "Graph-visible finite-algebra authority (one hop)" in note
+        and "supplies no physical mass spectrum" in flat,
+        kind="source",
     )
     check(
-        "note explicitly rejects an independent block-total closure route",
+        "note explicitly rejects physical closure from either algebraic route",
         "It does not claim an independent block-total closure route." in flat
-        and "not an independent retained closure route in this note" in flat,
+        and "No physical operator-side `kappa=2` statement is supplied here" in flat,
+        kind="source",
     )
     check(
         "note preserves no-new-axiom / no-audit-verdict boundary",
-        "No new axiom, Tier-A admission, audit verdict, or physical scalar-measure bridge" in flat
+        "No new axiom, supplied premise, registry entry, audit verdict, or physical scalar-measure bridge" in flat
         and "independent audit lane only" in flat,
+        kind="source",
     )
     check(
-        "note keeps MRU as supplementary conditional support",
+        "note keeps MRU as supplementary conditional support only",
         "MRU + weight-class obstruction" in note
         and "Supplementary / alternative framing" in note
         and "not load-bearing" in flat,
+        kind="source",
     )
 
     markdown_targets = re.findall(r"\[[^\]]+\]\(([^)]+)\)", note)
@@ -97,6 +113,7 @@ def check_source_boundaries() -> None:
         "block-total and MRU context pointers are not graph-visible markdown edges",
         not bad_targets,
         f"bad_targets={bad_targets}" if bad_targets else "",
+        kind="source",
     )
 
     retired_old_claims = [
@@ -104,12 +121,15 @@ def check_source_boundaries() -> None:
         "The `kappa = 2` gate is therefore carried by two retained independent routes",
         "The block-total Frobenius measure theorem is the independent second closure route.",
         "bridge + block-total Frobenius",
+        "retained spectrum-operator bridge corollary",
+        "operator-side `kappa = 2` is inherited",
     ]
     present = [claim for claim in retired_old_claims if claim in note]
     check(
         "old overbroad two-route closure claims are absent",
         not present,
         f"present={present}" if present else "",
+        kind="source",
     )
 
     block_note = read(BLOCK_TOTAL_NOTE)
@@ -118,11 +138,13 @@ def check_source_boundaries() -> None:
         "block-total source authority itself declares bounded support",
         "**Claim type:** bounded_theorem" in block_note
         and "bounded support theorem" in block_flat,
+        kind="source",
     )
     check(
         "block-total source authority leaves canonical scalar-measure bridge open",
         "does not derive the scalar-lane `SO(2)` quotient" in block_flat
         and "canonical physical scalar measure" in block_flat,
+        kind="source",
     )
 
 
@@ -174,7 +196,7 @@ def check_trace_phase_obstruction() -> None:
     )
 
 
-def check_bridge_corollary() -> None:
+def check_fourier_invariant() -> None:
     a, x, y = sp.symbols("a x y", real=True)
     b = x + sp.I * y
     bbar = x - sp.I * y
@@ -193,10 +215,10 @@ def check_bridge_corollary() -> None:
     z_abs_sq = sp.simplify(sp.re(z) ** 2 + sp.im(z) ** 2)
     bridge_residual = sp.simplify((a0**2 - 2 * z_abs_sq) - 3 * (a**2 - 2 * (x**2 + y**2)))
 
-    check("bridge gives a0 = sqrt(3) a exactly", sp.simplify(a0 - sp.sqrt(3) * a) == 0)
-    check("bridge gives |z|^2 = 3 |b|^2 exactly", sp.simplify(z_abs_sq - 3 * (x**2 + y**2)) == 0)
+    check("abstract Fourier map gives a0 = sqrt(3) a exactly", sp.simplify(a0 - sp.sqrt(3) * a) == 0)
+    check("abstract Fourier map gives |z|^2 = 3 |b|^2 exactly", sp.simplify(z_abs_sq - 3 * (x**2 + y**2)) == 0)
     check(
-        "spectrum residual equals three times operator residual exactly",
+        "Fourier residual equals three times coordinate residual exactly",
         bridge_residual == 0,
     )
 
@@ -212,24 +234,31 @@ def check_bridge_corollary() -> None:
         )
         max_spectrum_residual = max(max_spectrum_residual, abs(residual))
     check(
-        "operator kappa=2 sample points imply spectrum residual zero",
+        "coordinate zero-locus sample points imply Fourier residual zero",
         max_spectrum_residual < 1e-12,
         f"max_spectrum_residual={max_spectrum_residual:.3e}",
     )
 
 
 def main() -> None:
-    print("Koide MRU demotion bridge-corollary source runner")
+    print("Koide MRU demotion and abstract-Fourier-boundary source runner")
     print("=" * 78)
     check_source_boundaries()
     print("\nTrace/SO(2) obstruction checks")
     print("-" * 78)
     check_trace_phase_obstruction()
-    print("\nSpectrum-operator bridge corollary checks")
+    print("\nAbstract Hermitian-circulant Fourier invariant checks")
     print("-" * 78)
-    check_bridge_corollary()
-    print(f"\nSUMMARY: KOIDE MRU DEMOTION BRIDGE-COROLLARY PASS={PASS} FAIL={FAIL}")
-    if FAIL:
+    check_fourier_invariant()
+    total_pass = SOURCE_PASS + ALGEBRA_PASS
+    total_fail = SOURCE_FAIL + ALGEBRA_FAIL
+    print(
+        "\nSUMMARY: KOIDE MRU DEMOTION ABSTRACT-BOUNDARY "
+        f"SOURCE_PASS={SOURCE_PASS} SOURCE_FAIL={SOURCE_FAIL} "
+        f"ALGEBRA_PASS={ALGEBRA_PASS} ALGEBRA_FAIL={ALGEBRA_FAIL} "
+        f"PASS={total_pass} FAIL={total_fail}"
+    )
+    if total_fail:
         raise SystemExit(1)
 
 

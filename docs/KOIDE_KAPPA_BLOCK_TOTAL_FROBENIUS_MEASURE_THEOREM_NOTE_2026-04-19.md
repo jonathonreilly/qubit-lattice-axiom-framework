@@ -73,9 +73,10 @@ block-total branch, not a claim that the operator-side `kappa = 2` gate
 is closed by independent routes. It separates the algebraic support
 from the still-open canonical-measure bridge:
 
-1. **Bridge route.** Operator-side `kappa = 2` may be inherited from
-   spectrum-side Koide `Q = 2/3` through the cyclic-compression
-   dictionary, subject to that bridge note's audit status.
+1. **Abstract bridge route.** The operator and normalized Fourier-coordinate
+   polynomial zero loci are exactly equivalent. Interpreting either side as
+   physical Koide `Q = 2/3` additionally requires the unresolved P1/carrier
+   and readout bridge.
 2. **Block-total Frobenius branch (this theorem).** Operator-side
    `kappa = 2` is the equal-weight extremum of `log E_+ + log E_perp`
    under a stipulated block-total 1:1 scalar carrier, with `d = 3`
@@ -156,8 +157,8 @@ the pointwise-vector-projector picture, landing at `kappa = 1`.
    `H = a I + b C + bbar C^2`.
 2. The equal-weight log-law `S_MRU(H) = log E_+(H) + log E_perp(H)`
    under the constraint `E_+(H) + E_perp(H) = const` is extremized at
-   `E_+ = E_perp`, i.e. at `a^2 = 2 |b|^2`, i.e. at `kappa := a^2 / |b|^2
-   = 2`.
+   `E_+ = E_perp`, i.e. at `a^2 = 2 |b|^2`; on this interior stationary
+   domain `b != 0`, this is equivalently `kappa := a^2 / |b|^2 = 2`.
 3. When the block-total scalar carrier is stipulated, the weights
    `(1, 1)` in `S_MRU` are Frobenius reciprocity's multiplicity count
    `mult(rho, Herm_circ(3))` over the two real isotypes (trivial,
@@ -305,7 +306,8 @@ The PDG line is printed as a comparator and does not increment PASS.
 - `docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`
   — MRU as a d = 3 theorem.
 - `docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`
-  — companion bridge theorem for the spectrum/operator route.
+  — companion abstract Hermitian-circulant Fourier invariant; it supplies no
+  physical spectrum/operator identification.
 - `docs/KOIDE_CYCLIC_PROJECTOR_BLOCK_DEMOCRACY_NOTE_2026-04-18.md`
   — block democracy equivalent to MRU via block-total energies.
 - `docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`

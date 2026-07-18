@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Finite character-suppression kernel for the flavor holonomy no-go.
 
-This runner isolates the framework-native part of the holonomy argument.  On
-the retained finite link surface, a gauge-invariant fibre average multiplies
-the generation hop coefficient by chi_R(U)/d_R.  For every finite-dimensional
-unitary link representation, |chi_R(U)/d_R| <= 1, so the holonomy can suppress
-the Koide r-ratio but cannot enhance it.
+This runner checks conditional finite algebra for a supplied holonomy tensor
+dressing. The conjugation-invariant fibre trace of a
+closed based holonomy (or endpoint-identified transporter) multiplies the
+generation hop coefficient by chi_R(U)/d_R.  For every finite-dimensional
+unitary representation, |chi_R(U)/d_R| <= 1, so this channel can suppress the
+abstract r-ratio but cannot enhance it.
 
 The runner deliberately does not derive the physical sector-to-representation
 readout.  That bridge remains open in the parent flavor holonomy note.
@@ -14,7 +15,6 @@ readout.  That bridge remains open in the parent flavor holonomy note.
 from __future__ import annotations
 
 import itertools
-import json
 from pathlib import Path
 
 import numpy as np
@@ -23,25 +23,27 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md"
 PARENT = ROOT / "docs" / "FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md"
-LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
-PASS = 0
-FAIL = 0
+ALGEBRA_PASS = 0
+ALGEBRA_FAIL = 0
+SOURCE_PASS = 0
+SOURCE_FAIL = 0
 
 
-def check(label: str, ok: bool, detail: str = "") -> None:
-    global PASS, FAIL
-    print(f"[{'PASS' if ok else 'FAIL'}] {label}")
+def check(label: str, ok: bool, detail: str = "", *, kind: str = "algebra") -> None:
+    global ALGEBRA_PASS, ALGEBRA_FAIL, SOURCE_PASS, SOURCE_FAIL
+    if kind not in {"algebra", "source"}:
+        raise ValueError(f"unknown check kind: {kind}")
+    prefix = "ALGEBRA" if kind == "algebra" else "SOURCE"
+    print(f"[{prefix} {'PASS' if ok else 'FAIL'}] {label}")
     if detail:
         print(f"       {detail}")
-    PASS += int(ok)
-    FAIL += int(not ok)
-
-
-def ledger_status(claim_id: str) -> str | None:
-    rows = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
-    row = rows.get(claim_id, {})
-    return row.get("effective_status") or row.get("audit_status")
+    if kind == "algebra":
+        ALGEBRA_PASS += int(ok)
+        ALGEBRA_FAIL += int(not ok)
+    else:
+        SOURCE_PASS += int(ok)
+        SOURCE_FAIL += int(not ok)
 
 
 def phases(root_count: int, d: int) -> list[np.ndarray]:
@@ -79,27 +81,6 @@ def main() -> int:
     print("FLAVOR GAUGE HOLONOMY CHARACTER-SUPPRESSION KERNEL")
     print("=" * 72)
 
-    retained_sources = {
-        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08":
-            ledger_status("matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"),
-        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09":
-            ledger_status("fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09"),
-        "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18":
-            ledger_status("koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18"),
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09":
-            ledger_status("koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"),
-        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19":
-            ledger_status("koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"),
-        "three_generation_observable_theorem_note":
-            ledger_status("three_generation_observable_theorem_note"),
-    }
-    retained_ok = {"retained", "retained_bounded"}
-    check(
-        "kernel dependencies are retained-grade in the live ledger",
-        all(status in retained_ok for status in retained_sources.values()),
-        ", ".join(f"{cid}={status}" for cid, status in retained_sources.items()),
-    )
-
     max_identity_error = 0.0
     min_gap = 1e9
     equality_violations = 0
@@ -115,7 +96,7 @@ def main() -> int:
             if abs(normalized - 1) < 1e-12 and not all_equal:
                 equality_violations += 1
     check(
-        "finite triangle-identity proof certificate is nonnegative on phase grid",
+        "finite phase-grid regression matches the analytic triangle identity and bound",
         max_identity_error < 1e-10 and min_gap > -1e-10 and equality_violations == 0,
         f"max_identity_error={max_identity_error:.3e}, min_gap={min_gap:.3e}, equality_violations={equality_violations}",
     )
@@ -164,38 +145,49 @@ def main() -> int:
     flat_note_lower = " ".join(note.lower().split())
     flat_parent = " ".join(parent.split())
     check(
-        "kernel note records framework-native proof and no new axiom",
+        "kernel note records the conditional finite-algebra proof and no new axiom",
         "character-suppression kernel" in flat_note_lower
         and "No new axiom" in note
+        and "does not close a framework-native holonomy channel" in flat_note_lower
         and "d^2 - |sum z_i|^2" in note
         and "sum_{i<j}|z_i-z_j|^2" in note,
+        kind="source",
     )
     check(
         "parent note cites the kernel note, runner, and cache",
         "FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md" in parent
         and "flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py" in parent
         and "flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.txt" in parent,
+        kind="source",
     )
     check(
         "physical sector-to-representation readout remains open",
         "physical sector-to-representation/readout bridge remains open" in flat_parent
         and "does not derive the colourless-lepton/trivial-representation or coloured-quark/nontrivial-representation assignment" in flat_parent,
+        kind="source",
     )
     check(
         "source change does not promote audit status",
         "audited_clean" not in parent
         and "proposed_retained" not in parent
         and "source note awaiting independent audit handling" in parent,
+        kind="source",
     )
 
     print()
     print(
-        "VERDICT: the character-suppression kernel is a finite framework-native "
-        "support theorem; the flavor sector readout/representation assignment "
-        "remains open for the parent no-go."
+        "VERDICT: the character-suppression kernel is exact conditional finite "
+        "algebra for a supplied closed-holonomy tensor dressing; that dressing "
+        "and the physical sector readout remain open."
     )
-    print(f"SCORECARD PASS={PASS} FAIL={FAIL}")
-    return 0 if FAIL == 0 else 1
+    total_pass = ALGEBRA_PASS + SOURCE_PASS
+    total_fail = ALGEBRA_FAIL + SOURCE_FAIL
+    print(
+        f"SCORECARD ALGEBRA_PASS={ALGEBRA_PASS} ALGEBRA_FAIL={ALGEBRA_FAIL} "
+        f"SOURCE_PASS={SOURCE_PASS} SOURCE_FAIL={SOURCE_FAIL} "
+        f"PASS={total_pass} FAIL={total_fail}"
+    )
+    return 0 if total_fail == 0 else 1
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@ This supplies an audit-ready **abelian gauge-half (bosonic) Factor 3** packet fo
 reflection-positivity reduction in
 [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 (the parent reflection-positivity row whose intended conditional gap is this
-gauge-half bridge). It instantiates the **retained** abstract gauge-half norm-square
+gauge-half bridge). It instantiates the named abstract gauge-half norm-square
 identity
 [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md)
 (G1–G3: `⟨Θ(F)·F⟩ = ‖ψ²F‖² ≥ 0`) on the Wilson plaquette in temporal gauge,
@@ -32,13 +32,15 @@ audit that normalization. The runner now exposes the SU(2) first-order mismatch
 at `g=h=iσ_x`, so the `SU(2)`/`SU(3)` probes below are kept only as diagnostics
 and future-work boundary data, not as part of W2/W3.
 
-It **corrects and supersedes** the prior
+The 2026-06-09 revision historically corrected the then-current version of
 [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
-failed-attempt note, whose displayed reflection-plane weight had a **sign bug**:
+whose displayed reflection-plane weight had a **sign bug** at that time:
 it wrote `S_0 = +β Re Tr` with `exp(-S_0)`, giving a negative nontrivial
 Fourier coefficient already for `Z_2` (`c_1 = (e^{-β}-e^{β})/2 < 0`, not PSD),
 while its runner silently used `exp(+S_0)`; its U(1) "exact" check used a finite
-angular grid (not a bounded-degree object). Both defects are fixed here.
+angular grid (not a bounded-degree object). Both defects were fixed in this
+historical packet. The linked target has since been independently repaired;
+this note does not state its current audit standing.
 
 ## Setup (minimal, temporal gauge)
 
@@ -53,7 +55,7 @@ exp(-S_0),   S_0 = -(β/N) Re Tr V_k     (STANDARD ferromagnetic Wilson sign).
 ```
 
 (The reduction of the straddling plaquette to a single per-spatial-link plane
-coupling is the retained
+coupling is supplied by
 [`GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md`](GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md).)
 
 ## Theorem
@@ -105,28 +107,31 @@ Factor 3 packet; it is ready for independent re-audit, not a status promotion.
   `SU(2)` and `SU(3)` checks are diagnostic/non-load-bearing boundary data only.
 - **Does NOT claim:** the full fermion+gauge **integrated** RP, the continuum
   Osterwalder reconstruction, or anything beyond the bosonic Factor 3 on the
-  finite surface. Does not derive the Wilson action itself (admitted surface).
+  finite surface. Does not derive the Wilson action itself (supplied carrier).
   Does not claim a nonabelian W2/W3 reconstruction from product characters;
   does not prove all `SU(3)` character coefficients, close the parent row, or
   force any coupling value. No new axiom/import; no audit-status promotion.
   Osterwalder–Seiler (1978) / Montvay–Münster (1994) are **comparators only**.
 
-## Cited dependencies (fresh ledger status verified)
+## Cited source dependencies
 
-| Authority | Status | Role |
-|---|---|---|
-| `GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md` | see generated audit ledger | non-load-bearing context only: analogous split on a distinct finite-periodic `SU(N_c)`, `L_t≥4`, trivial-holonomy surface; it is not authority for W1 on this two-slice abelian carrier, and its link-level plus-locality belongs to `f`, not to `F` |
-| [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md) | retained | G1–G3 abstract norm-square identity instantiated here |
-| [`GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md`](GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md) | retained | straddling-plaquette → per-link plane coupling reduction |
-| [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md) | retained_bounded | fixed-background 2-step transfer positivity context (Factor 1) |
-| [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md) | retained | positive staggered determinant weight (Factor 2) |
+The live audit pipeline, not this source note, owns the current standing of each
+dependency.
+
+| Authority | Source role |
+|---|---|
+| `GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md` | non-load-bearing context only: analogous split on a distinct finite-periodic `SU(N_c)`, `L_t≥4`, trivial-holonomy surface; it is not authority for W1 on this two-slice abelian carrier, and its link-level plus-locality belongs to `f`, not to `F` |
+| [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md) | G1–G3 abstract norm-square identity instantiated here |
+| [`GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md`](GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md) | straddling-plaquette → per-link plane coupling reduction |
+| [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md) | fixed-background 2-step transfer positivity context (Factor 1) |
+| [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md) | positive staggered determinant weight (Factor 2) |
 
 ## Forbidden imports check
 
 - No PDG observed values consumed.
 - No literature numerical comparators consumed (OS / Montvay–Münster cited for
   context only).
-- No fitted selectors; no admitted unit conventions load-bearing on the claim.
+- No fitted selectors or externally supplied unit conventions are load-bearing on the claim.
 
 ## Validation
 
@@ -150,7 +155,6 @@ declared_one_hop_deps:
   - gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10
   - rp_p2_gauge_extension_and_realization_residual_note_2026-05-28
   - staggered_only_det_positivity_case_a_note_2026-05-17
-supersedes_failed: axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05
 proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
@@ -164,5 +168,6 @@ bare_retained_allowed: false
   the Wilson plaquette temporal-gauge boundary and prove the integrated
   three-factor RP form for the A_+^(2) observables").
 - `AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
-  — the `audited_failed` predecessor this note corrects (sign bug + U(1)
-  finite-grid), referenced as plain text (not a load-bearing link).
+  — historical context for the then-current version this note corrected (sign
+  bug + U(1) finite-grid); the current target standing is audit-lane-owned.
+  It is referenced as plain text, not as a load-bearing link.

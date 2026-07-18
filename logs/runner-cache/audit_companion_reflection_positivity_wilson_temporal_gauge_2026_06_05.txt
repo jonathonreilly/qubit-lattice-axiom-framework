@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
-runner_sha256: 90c5a959f72e4ee9f6236af0c6305fa4a803671acb75bce2388e22cd2919193c
-timeout_sec: 120
+runner_sha256: c3584724ac42ff277f97e8746bcfbe957a35a9cc21e66f0fc081aa7c4fd3dc30
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 79.67
+elapsed_sec: 83.66
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -19,26 +19,26 @@ three-factor RP Gram PSD for A_+^(2) observables
 ----------------------------------------------------------------------------------------
 Part 0: exact-gate prerequisites
 ----------------------------------------------------------------------------------------
-  [PASS] (P0) sympy is available for the exact symbolic reflection and normalization gates  (explicit prerequisite; missing sympy also fails the Part A fallback)
+  [PASS] [HYGIENE] (P0) sympy is available for the exact symbolic reflection and normalization gates  (explicit prerequisite; missing sympy also fails the Part A fallback)
 
 ----------------------------------------------------------------------------------------
 Part A: reflection symmetry  B_- = Theta B_+  and B_0 plane invariance
 ----------------------------------------------------------------------------------------
-  [PASS] reflect-split.1 B_- = Theta B_+ = 0 on the exact 1+1D Wilson carrier (sympy)  (no purely spatial plaquettes occur in one spatial dimension)
-  [PASS] reflect-plane.1 B_0 invariant under reflection-plane swap c0<->c1 (sympy)  (Re Tr[U(0) U(1)^dag] is symmetric in the two slices)
-  [PASS] reflect-plane.2 Z_N: B_0(c0,c1) = B_0(c1,c0) for all configs (reflection-plane invariance)  (N=4, L_s=2)
+  [PASS] [THEOREM_EVIDENCE] reflect-split.1 B_- = Theta B_+ = 0 on the exact 1+1D Wilson carrier (sympy)  (no purely spatial plaquettes occur in one spatial dimension)
+  [PASS] [THEOREM_EVIDENCE] reflect-plane.1 B_0 invariant under reflection-plane swap c0<->c1 (sympy)  (Re Tr[U(0) U(1)^dag] is symmetric in the two slices)
+  [PASS] [NUMERICAL_SUPPORT] reflect-plane.2 Z_N: B_0(c0,c1) = B_0(c1,c0) for all configs (reflection-plane invariance)  (N=4, L_s=2)
 
 ----------------------------------------------------------------------------------------
 Part B: reflection-plane norm-square (Schwarz) factorization
 ----------------------------------------------------------------------------------------
-  [PASS] (B1) Z_N plane-kernel character coeffs are real (Im ~ 0)  (max|Im c_q| = 2.78e-17)
-  [PASS] (B2) Z_N plane-kernel character coeffs are nonnegative (norm-square form)  (min c_q = 0.092733)
-  [PASS] (B3) Z_N plane kernel reconstructed from character sum exp(B_0)=sum_q c_q chi_q(U0) conj chi_q(U1)  (reconstruction err = 3.38e-16)
-  [PASS] (B4) U(1) positive-term series gives positive coefficient partial sums  (min floating partial sum for n in [-8,8] = 8.281833e-07)
-  [PASS] (B5) U(1) Bessel floating tail estimates are tiny  (max floating tail estimate for n in [-8,8] = 2.45e-97)
-  [PASS] (B6) U(1) plane-kernel coeffs symmetric c_n = c_{-n}  (max|c_n - c_{-n}| = 0.00e+00)
-  [PASS] (B7) SU(N) Wilson exponential-series scalar weights are nonnegative for beta_Wilson>=0  (weights=(beta_Wilson/(2N))^n/n!, N=2..8, n=0..9)
-  [PASS] (B8) alpha=beta_Wilson/N character-series normalization is exact (sympy)  (orders n=0..9 after chi_F+chi_Fbar=2 Re chi_F)
+  [PASS] [NUMERICAL_SUPPORT] (B1) Z_N plane-kernel character coeffs are real (Im ~ 0)  (max|Im c_q| = 2.78e-17)
+  [PASS] [NUMERICAL_SUPPORT] (B2) Z_N plane-kernel character coeffs are nonnegative (norm-square form)  (min c_q = 0.092733)
+  [PASS] [NUMERICAL_SUPPORT] (B3) Z_N plane kernel reconstructed from character sum exp(B_0)=sum_q c_q chi_q(U0) conj chi_q(U1)  (reconstruction err = 3.38e-16)
+  [PASS] [NUMERICAL_SUPPORT] (B4) U(1) positive-term series gives positive coefficient partial sums  (min floating partial sum for n in [-8,8] = 8.281833e-07)
+  [PASS] [NUMERICAL_SUPPORT] (B5) U(1) Bessel floating tail estimates are tiny  (max floating tail estimate for n in [-8,8] = 2.45e-97)
+  [PASS] [NUMERICAL_SUPPORT] (B6) U(1) plane-kernel coeffs symmetric c_n = c_{-n}  (max|c_n - c_{-n}| = 0.00e+00)
+  [PASS] [NUMERICAL_SUPPORT] (B7) SU(N) Wilson exponential-series scalar weights are nonnegative for beta_Wilson>=0  (weights=(beta_Wilson/(2N))^n/n!, N=2..8, n=0..9)
+  [PASS] [THEOREM_EVIDENCE] (B8) alpha=beta_Wilson/N character-series normalization is exact (sympy)  (orders n=0..9 after chi_F+chi_Fbar=2 Re chi_F)
 
 ----------------------------------------------------------------------------------------
 Part C: integrated three-factor RP Gram PSD for A_+^(2) observables
@@ -55,23 +55,23 @@ Part C: integrated three-factor RP Gram PSD for A_+^(2) observables
      Z_5, beta=0.3: basis=9, min_eig=+2.201009e-02, herm_err=9.6e-16, PSD=True
      Z_5, beta=1.0: basis=9, min_eig=+2.010423e-01, herm_err=7.0e-16, PSD=True
      Z_5, beta=2.5: basis=9, min_eig=+6.290306e-01, herm_err=1.4e-16, PSD=True
-  [PASS] (C1) Z_N reflected Gram is Hermitian PSD across N in {2,3,4,5}, beta in {0.3,1,2.5}  (worst min_eig = -5.706384e-16)
-  [PASS] (C2) control: dropping Theta's conjugation gives a NON-PSD form (correct OS reflection is load-bearing)  (min_eig (wrong reflection) = -0.2913)
+  [PASS] [NUMERICAL_SUPPORT] (C1) Z_N reflected Gram is Hermitian PSD across N in {2,3,4,5}, beta in {0.3,1,2.5}  (worst min_eig = -5.706384e-16)
+  [PASS] [BOUNDARY_EVIDENCE] (C2) control: dropping Theta's conjugation gives a NON-PSD form (correct OS reflection is load-bearing)  (min_eig (wrong reflection) = -0.2913)
      U(1), beta=0.5: min_eig=+5.880606e-02, herm_err=2.6e-16, PSD=True
      U(1), beta=1.5: min_eig=+3.553748e-01, herm_err=4.6e-16, PSD=True
-  [PASS] (C3) U(1) reflected Gram quadrature cross-check is Hermitian PSD
+  [PASS] [NUMERICAL_SUPPORT] (C3) U(1) reflected Gram quadrature cross-check is Hermitian PSD
 
 ----------------------------------------------------------------------------------------
 Part D: manifest factorization G = W diag(kappa) W^dag, kappa >= 0
 ----------------------------------------------------------------------------------------
-  [PASS] (D1) plane-kernel matrix spectrum kappa >= 0 (positive Gram kernel)  (min kappa = 0.137589)
-  [PASS] (D2) numerical evaluation agrees with the exact G = W diag(kappa) W^dag factorization  (||G - W diag(kappa) W^dag|| = 1.42e-13)
-  [PASS] (D3) integrated three-factor Gram is PSD (eigenvalues >= 0)  (min_eig = +2.594098e+01)
+  [PASS] [NUMERICAL_SUPPORT] (D1) plane-kernel matrix spectrum kappa >= 0 (positive Gram kernel)  (min kappa = 0.137589)
+  [PASS] [NUMERICAL_SUPPORT] (D2) numerical evaluation agrees with the exact G = W diag(kappa) W^dag factorization  (||G - W diag(kappa) W^dag|| = 1.42e-13)
+  [PASS] [NUMERICAL_SUPPORT] (D3) integrated three-factor Gram is PSD (eigenvalues >= 0)  (min_eig = +2.594098e+01)
 
 ----------------------------------------------------------------------------------------
 Part E: SU(2) numeric sample (Haar Monte Carlo)
 ----------------------------------------------------------------------------------------
-  [PASS] (E1) SU(2) link-reflection Gram is PSD within MC error (min_eig > -MC noise)  (min_eig = +0.08134, herm/MC-noise = 0.0072)
+  [PASS] [NUMERICAL_SUPPORT] (E1) SU(2) link-reflection Gram is PSD within MC error (min_eig > -MC noise)  (min_eig = +0.08134, herm/MC-noise = 0.0072)
      SU(2) eigenvalues: [0.08134 0.18961 0.21888 0.43915 0.56473 1.00004]
      (numeric sample only; exhaustive finite-Haar checks above are Z_N,
       with U(1) certified here and SU(N) certified in the source proof)
@@ -79,12 +79,61 @@ Part E: SU(2) numeric sample (Haar Monte Carlo)
 ----------------------------------------------------------------------------------------
 Part F: SU(3) representation-ring certificate and kernel controls
 ----------------------------------------------------------------------------------------
-  [PASS] (F1) (3 plus 3bar)^tensor n multiplicities are nonnegative integers  (exact SU(3) fusion recurrence through n=8)
-  [PASS] (F2) SU(3) tensor-power dimensions satisfy sum M_(p,q),n dim(p,q) = 6^n  (n=0..8 totals=[1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616])
-  [PASS] (F3) order-two SU(3) representation-ring decomposition is exact  ((3+3bar)^2 = 6 + 3bar + 2(1+8) + 6bar + 3)
-  [PASS] (F4) truncated SU(3) Wilson character coefficients are nonnegative  (45 irreps through tensor order 8; min=1.430e-06)
-  [PASS] (F5) sampled SU(3) Wilson plane-kernel restriction is positive definite  (40-point deterministic restriction min_eig=+2.373202e+00)
-  [PASS] (F6) control: alpha=-0.1 is non-PSD on this deterministic SU(3) restriction  (same restriction min_eig=-1.402883e+00)
+  [PASS] [THEOREM_EVIDENCE] (F1) (3 plus 3bar)^tensor n multiplicities are nonnegative integers  (exact SU(3) fusion recurrence through n=8)
+  [PASS] [THEOREM_EVIDENCE] (F2) SU(3) tensor-power dimensions satisfy sum M_(p,q),n dim(p,q) = 6^n  (n=0..8 totals=[1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616])
+  [PASS] [THEOREM_EVIDENCE] (F3) order-two SU(3) representation-ring decomposition is exact  ((3+3bar)^2 = 6 + 3bar + 2(1+8) + 6bar + 3)
+  [PASS] [NUMERICAL_SUPPORT] (F4) truncated SU(3) Wilson character coefficients are nonnegative  (45 irreps through tensor order 8; min=1.430e-06)
+  [PASS] [NUMERICAL_SUPPORT] (F5) sampled SU(3) Wilson plane-kernel restriction is positive definite  (40-point deterministic restriction min_eig=+2.373202e+00)
+  [PASS] [BOUNDARY_EVIDENCE] (F6) control: alpha=-0.1 is non-PSD on this deterministic SU(3) restriction  (same restriction min_eig=-1.402883e+00)
+
+----------------------------------------------------------------------------------------
+Part G: current-cycle N1-N8 bounded-theorem evidence
+----------------------------------------------------------------------------------------
+  [PASS] [THEOREM_EVIDENCE] G0 all-order coefficient normalization and uniform-majorant residuals vanish  (half_residual=0, majorant_residual=0; sum beta^n/n!=exp(beta))
+  N1_ROUTE route_id=representation-ring-all-orders; honesty_marker=ATTEMPTED; disposition=CLOSES; witness_state=EXACT_SOURCE_PROOF_PLUS_SYMBOLIC_NORMALIZATION; evidence=tensor powers of F direct-sum Fbar; nonnegative multiplicities; exp(beta) majorant
+  N1_ROUTE route_id=real-Gram-Schur-exponential; honesty_marker=ATTEMPTED; disposition=CLOSES; witness_state=EXACT_SOURCE_PROOF_PLUS_FINITE_RESTRICTION; evidence=realification_residual=8.882e-16; min_eig=+4.486e-01
+  N1_ROUTE route_id=matrix-coefficient-product-integrated-Gram; honesty_marker=ATTEMPTED; disposition=CLOSES; witness_state=EXACT_SOURCE_PROOF_PLUS_FINITE_RECONSTRUCTION; evidence=matrix coefficients tensor across links and integrate to W diag(kappa) W^dagger
+  N1_ROUTE route_id=finite-abelian-and-fusion-reductions; honesty_marker=ATTEMPTED; disposition=SUPPORTS; witness_state=EXACT_FINITE_SUPPORT; evidence=finite Z_N/U(1) diagnostics and exact SU(3) fusion recurrence support the proof objects
+  N1_ROUTE route_id=pointwise-positive-weight-only; honesty_marker=ATTEMPTED; disposition=FAILS; witness_state=EXACT_BOUNDARY_COUNTEREXAMPLE; evidence=positive-entry control min_eig=-1.0
+  N1_ROUTE route_id=sampled-SU-N-restrictions-only; honesty_marker=ATTEMPTED; disposition=SUPPORTS; witness_state=NUMERICAL_SUPPORT; evidence=finite deterministic restriction min_eig=+2.334e-01; not universal evidence
+  N1_ROUTE route_id=Peter-Weyl-completeness-without-sign-control; honesty_marker=ATTEMPTED; disposition=FAILS; witness_state=EXACT_BOUNDARY_COUNTEREXAMPLE; evidence=exact Z_2 expansion has negative odd coefficient and kernel min_eig=-5.000e-01
+  [PASS] [BOUNDARY_EVIDENCE] G1 N1 enumerates at least five distinct recomputed routes  (routes=7, closes=3, supports=2, fails=2)
+  N2_PAIR left=arbitrary_time_extent; right=fermion_sector; left_unique_requirements=['interior_time_reflection_factorization', 'third_time_slice']; right_unique_requirements=['Berezin_crossing_coefficient_matrix', 'Grassmann_generators']
+  N2_PAIR left=arbitrary_time_extent; right=continuum_or_thermodynamic_limit; left_unique_requirements=['interior_time_reflection_factorization', 'third_time_slice']; right_unique_requirements=['limit_topology_and_convergence_proof', 'volume_uniform_estimate']
+  N2_PAIR left=arbitrary_time_extent; right=global_temporal_gauge_fixing; left_unique_requirements=['interior_time_reflection_factorization', 'third_time_slice']; right_unique_requirements=['gauge_orbit_representative_map', 'global_gauge_fixing_measure_identity']
+  N2_PAIR left=fermion_sector; right=continuum_or_thermodynamic_limit; left_unique_requirements=['Berezin_crossing_coefficient_matrix', 'Grassmann_generators']; right_unique_requirements=['limit_topology_and_convergence_proof', 'volume_uniform_estimate']
+  N2_PAIR left=fermion_sector; right=global_temporal_gauge_fixing; left_unique_requirements=['Berezin_crossing_coefficient_matrix', 'Grassmann_generators']; right_unique_requirements=['gauge_orbit_representative_map', 'global_gauge_fixing_measure_identity']
+  N2_PAIR left=continuum_or_thermodynamic_limit; right=global_temporal_gauge_fixing; left_unique_requirements=['limit_topology_and_convergence_proof', 'volume_uniform_estimate']; right_unique_requirements=['gauge_orbit_representative_map', 'global_gauge_fixing_measure_identity']
+  N2_DISPOSITION proved_objects=['bounded_gauge_observable_block', 'finite_gauge_link_configuration_space', 'nonnegative_tensor_multiplicities', 'open_two_slice_temporal_graph', 'positive_crossing_kernel']; missing_requirements={'arbitrary_time_extent': {'interior_time_reflection_factorization', 'third_time_slice'}, 'fermion_sector': {'Grassmann_generators', 'Berezin_crossing_coefficient_matrix'}, 'continuum_or_thermodynamic_limit': {'volume_uniform_estimate', 'limit_topology_and_convergence_proof'}, 'global_temporal_gauge_fixing': {'global_gauge_fixing_measure_identity', 'gauge_orbit_representative_map'}}; each broader wall requires objects absent from the bounded proof.
+  [PASS] [BOUNDARY_EVIDENCE] G2 N2 each broader wall has independent missing proof objects  (boundaries=4, pairs=6)
+  N3_DISPOSITION finite_volume_spatial_links=2; temporal_slices=(0, 1); temporal_periodicity_edges=0; beta_domain=[0,infinity); N_domain=integers>=2; temporal_gauge_identity_links=2; bounded_observable_sup_norm_max=1.0; gauge_field_records=4; non_gauge_field_records=0; configurations_per_slice=16; continuum_parameters=0; limit_operations=0
+  [PASS] [BOUNDARY_EVIDENCE] G3 N3 hidden-wall carrier scan matches the exact bounded surface  (finite open two-slice pure-gauge temporal-gauge carrier with bounded observables)
+  N4_CLAUSE clause=finite_open_temporal_gauge_carrier; evidence_kind=CONSTRUCTED_FINITE_CARRIER; recomputed_residual=0.000000e+00; tolerance=0.0e+00
+  N4_CLAUSE clause=reflection_split_and_Boltzmann_sign; evidence_kind=EXHAUSTIVE_FINITE_HAAR; recomputed_residual=0.000000e+00; tolerance=1.0e-12
+  N4_CLAUSE clause=character_coefficient_formula_and_sign_mechanism; evidence_kind=EXACT_SYMBOLIC_FORMULA_PLUS_FINITE_SU3_RECURRENCE; recomputed_residual=0.000000e+00; tolerance=0.0e+00
+  N4_CLAUSE clause=uniform_absolute_convergence; evidence_kind=EXACT_SCALAR_MAJORANT; recomputed_residual=0.000000e+00; tolerance=0.0e+00
+  N4_CLAUSE clause=positive_plane_kernel; evidence_kind=EXHAUSTIVE_Z4_RESTRICTION; recomputed_residual=0.000000e+00; tolerance=1.0e-10
+  N4_CLAUSE clause=finite_product_kernel; evidence_kind=EXHAUSTIVE_Z4_RESTRICTION; recomputed_residual=0.000000e+00; tolerance=1.0e-10
+  N4_CLAUSE clause=integrated_reflected_Gram; evidence_kind=NORMALIZED_HAAR_FEATURE_FACTORIZATION; recomputed_residual=5.551115e-16; tolerance=1.0e-09
+  N4_CLAUSE clause=normalized_Haar_partition_0_lt_Z_lt_infinity; evidence_kind=EXHAUSTIVE_FINITE_HAAR; recomputed_residual=0.000000e+00; tolerance=0.0e+00
+  N4_CLAUSE clause=bounded_complex_observable_diagnostic_block; evidence_kind=EXHAUSTIVE_FINITE_BASIS; recomputed_residual=0.000000e+00; tolerance=0.0e+00
+  N4_OBJECT finite_link_product_majorant=3.32011692274; normalized_Haar_Z=1.19406455504; bounded_observable_sup_norm_max=1.0
+  [PASS] [BOUNDARY_EVIDENCE] G4 N4 every clause is mapped to its actual exact or finite evidence object  (clauses=9)
+  N5_RESOLUTION per_element: straddling_link_count=2; kernel_min_eigenvalues=[0.370930436485, 0.370930436485]; each link factor is checked separately.
+  N5_RESOLUTION per_site: finite_spatial_link_factors=2; one_link_shapes=[(4, 4), (4, 4)]; product_shape=(16, 16); Kronecker_residual=0.000e+00; product_min_eig=+1.376e-01.
+  N5_RESOLUTION per_mode: tensor_orders=0..8; order8_irreps=45; nonnegative_integer_multiplicities=164; beta0_zero_nontrivial_modes=44; absent_irrep_(20,0)_count=1; fundamental_matrix_element_cut_residual=8.884e-16; antifundamental_matrix_element_cut_residual=8.884e-16.
+  N5_RESOLUTION per_block: configuration_block=16; observable_block=9; factor_residual=5.551e-16; Gram_min_eig=+8.486e-02; positive_kappa_count=16.
+  N5_RESOLUTION lattice_wide: temporal_slice_count=2; finite_spatial_link_count=2; temporal_periodicity_edges=0; gauge_field_records=4; non_gauge_field_records=0; additional_temporal_slices=0; continuum_parameters=0; limit_operations=0.
+  [PASS] [BOUNDARY_EVIDENCE] G5 N5 all five resolution labels close on computed objects  (resolved_labels=5; required_labels=5)
+  N6_DISPOSITION honest_partial_closure=bounded finite two-slice pure-gauge theorem; symbolic_inputs=['N', 'beta', 'order']; unexpected_empirical_or_physics_selectors=[]; axiom/primitive registry purity is intentionally delegated to repository-diff validation; broader arbitrary-time, fermion, transfer-matrix, Hamiltonian, continuum, and global-gauge-fixing physics remains open and is not reclassified.
+  [PASS] [BOUNDARY_EVIDENCE] G6 N6 exact derivation formulas contain no empirical or supplied-physics selector  (registry purity is a separate repository-diff gate, not self-certified here)
+  N7_STEELMAN objection=pointwise positivity is insufficient; resolution=positive-entry matrix min_eig=-1.0, so the proof uses Gram plus Schur powers instead.
+  N7_STEELMAN objection=finite samples cannot prove all SU(N); resolution=agreed, sample min_eig=+2.334e-01 is support only; the exact route is all-order tensor multiplicities with the exp(beta) majorant.
+  N7_STEELMAN objection=negative coupling or dropped antilinearity can fail; resolution=hostile mins negative_coupling=-1.178e+00, wrong_reflection=-2.000e+00; theorem keeps beta>=0 and antilinear Theta.
+  N7_STEELMAN objection=temporal gauge is not globally derived; resolution=not claimed, identity temporal links=2 are explicit data on the open two-slice carrier.
+  [PASS] [BOUNDARY_EVIDENCE] G7 N7 strongest objections are resolved only on the exact bounded proof surface  (pointwise, finite-sample, sign, antilinearity, and temporal-gauge boundaries exercised)
+  N8_DISPOSITION current_cycle_cross_route_echo=residual_matched; symbolic_normalization_residual=0; direct_exponential_vs_Schur_series_residual=8.882e-16; direct_integral_vs_feature_factorization_residual=5.551e-16; source=audit-independent recomputation only.
+  [PASS] [BOUNDARY_EVIDENCE] G8 N8 independently recomputed proof objects echo across three routes  (symbolic character normalization, Schur exponential, and integrated feature block)
 
 ----------------------------------------------------------------------------------------
 Summary
@@ -99,10 +148,12 @@ Summary
    D  manifest G = W diag(kappa) W^dag with kappa >= 0 (OS Gram = A^dag A)
    E  SU(2) numeric sample PSD (link-reflection structure carries over)
    F  SU(3) exact tensor multiplicities and deterministic kernel controls
+   G  current-cycle N1-N8 scope, resolution, hostile, and cross-route objects
   No literature theorem is used as a derivation input.
 
+EVIDENCE_COUNTS theorem_evidence=7 numerical_support=16 hygiene=1 boundary_evidence=10 failures=0
 ========================================================================================
-TOTAL: 25 PASS / 0 FAIL
+TOTAL: 34 PASS / 0 FAIL
 ========================================================================================
 
 ----- stderr -----

@@ -5,15 +5,16 @@
 narrowing); 2026-05-28 (in-repo first-principles 2-step transfer-matrix
 positivity replacing the prior citation-only treatment); 2026-06-07
 (Wilson-plane sign-repair source packet, conditional on independent audit of
-the companion bridge note); 2026-06-08 (rerouted through the retained-bounded
-Wilson temporal-gauge bridge).
+the companion bridge note); 2026-06-08 (rerouted through the bounded-source
+Wilson temporal-gauge bridge; current standing is audit-lane-owned).
 **Type:** bounded_theorem
 **Loop:** `axiom-first-foundations`
 **Status authority:** independent audit lane only.
 **Primary runner:** [`scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py`](../scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py)
 (parent reroute guard: replays the free staggered 2-step checks C1-C6 through
-the construction runner below, then verifies the retained-bounded Wilson
-temporal-gauge reroute and joint cross-configuration Gram guard C7).
+the construction runner below, then verifies the source-side bounded Wilson
+temporal-gauge reroute and joint cross-configuration Gram guard C7; live
+dependency grades are hygiene owned by the audit lane).
 **Cached primary-runner output:** [`logs/runner-cache/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.txt`](../logs/runner-cache/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.txt)
 **Free-case construction runner:** [`scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py`](../scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py)
 (positive 2-step exhibit; in-repo construction + proof: the free staggered-KS
@@ -126,7 +127,7 @@ Out of scope (removed from this row's claim surface):
 
 The source package uses an in-repo first-principles derivation of the
 2-step positivity (a standalone free-case note + its primary positive
-runner, plus a retained_bounded fixed-`SU(3)` gauge-extension note),
+runner, plus a bounded-source fixed-`SU(3)` gauge-extension note),
 plus two local authorities that supply the remaining factors of the
 gauge-case reduction, plus the single-step no-go runner:
 
@@ -139,7 +140,7 @@ gauge-case reduction, plus the single-step no-go runner:
   construction and proof"). This is the load-bearing positive piece and
   is **derived in-repo, not imported** from the literature.
 - The **fixed-`SU(3)` gauge-background extension** of that same 2-step
-  positivity is the retained_bounded note
+  positivity is the bounded source note
   [RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md),
   which establishes `T_hat^2[U]` positive Hermitian config-by-config at
   fixed arbitrary spatial `SU(3)` (and `U(1)`) background in temporal
@@ -167,7 +168,7 @@ gauge-case reduction, plus the single-step no-go runner:
   [AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   and
   [`audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py`](../scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py).
-  That retained-bounded bridge translates the abstract gauge-half
+  That source-side bounded bridge translates the abstract gauge-half
   Cauchy-Schwarz hypotheses to the Wilson plaquette temporal-gauge
   boundary setup: it fixes the Wilson sign as
   `S_W = -B + constant`, proves the reflection split
@@ -190,7 +191,7 @@ to nontrivial background; the full interacting gauge closure is limited to
 the named joint-Gram claim and must be judged by the independent audit lane.
 This note does not import any fitted value,
 observed target value, literature numerical comparator, same-surface
-family selector, or admitted unit convention.
+family selector, or externally supplied unit convention.
 
 ## Statement (2-step blocked formulation)
 
@@ -217,14 +218,14 @@ one has `||T_hat_tilde^2|| = 1` and `H_hat_tilde >= 0`, i.e., the
 
 ### 2026-06-08 Wilson temporal-gauge bridge reroute
 
-The latest conditional audit of this row names one remaining parent blocker:
+A prior conditional audit of this row named one remaining parent blocker:
 derive the full Wilson-plaquette gauge-half sesquilinear PSD form for the
 non-time-symmetric, `U`-integrated configuration space, or keep the row
-bounded. Current `main` now has a retained-bounded bridge for exactly the
+bounded. Current `main` now has a source-side bounded bridge for exactly the
 Wilson plaquette temporal-gauge / gauge-half application:
 [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md).
 This row is therefore rerouted through that bridge rather than through the
-unaudited June 6 sign-repair packet.
+then-unaudited June 6 sign-repair packet.
 
 For the bridge's restricted factorized-generator diagnostic (not the general
 mixed-observable claim), take generators
@@ -233,7 +234,7 @@ mixed-observable claim), take generators
     F(U,chi) = F_G(U) F_f(chi),
 ```
 
-the audited temporal-gauge bridge uses the corrected Wilson sign convention
+the temporal-gauge bridge uses the corrected Wilson sign convention
 
 ```text
     S_W = -B + constant,       exp(-S_W) = constant * exp(B),
@@ -274,7 +275,7 @@ ingredient inventory, not a pointwise product identity. Their valid roles are:
   [GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md](GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md);
 - `det(M_KS[U] + m I) > 0` from the staggered determinant positivity
   theorem;
-- the gauge-half norm square / plane-kernel PSD from the audited Wilson
+- the gauge-half norm square / plane-kernel PSD from the source-side bounded Wilson
   temporal-gauge bridge, with the abstract Cauchy-Schwarz note used only for
   the finite norm-square identity it actually proves;
 - `<vac_U | F_f^dag T_hat^2[U] F_f | vac_U> >= 0` from the fixed-background
@@ -285,8 +286,9 @@ Finite linear combinations are included directly through the moment vector
 `V_(gamma,alpha),i`; no factorized-generator polarization step is used. The
 coupled-Gram supplier below establishes the joint PSD kernel on the full mixed
 algebra. This reroute supplies the
-missing Wilson-plane application named in this row's latest conditional verdict
-from a retained-bounded source. This note still does not mark this parent row
+missing Wilson-plane application named in that prior conditional verdict
+from a bounded source theorem. Its current standing remains audit-lane-owned.
+This note still does not mark this parent row
 or any downstream row retained; independent audit must judge the composed
 parent claim.
 
@@ -304,11 +306,12 @@ Haar-sampled plane-kernel Gram, the composed two-slice Gram at `L_s = 2`
 through that supplier's machinery,
 and a no-conjugation rejector — in place of the earlier synthetic product model.
 The determinant and fixed-background
-fermion-transfer factors remain separately checked by the retained dependency
-gate and C1-C6 rather than being recomputed inside this pure-gauge Monte Carlo.
+fermion-transfer factors remain separately checked by their named source
+dependency gates and C1-C6 rather than being recomputed inside this pure-gauge
+Monte Carlo. Their current grades are owned by the audit lane.
 
 **2026-07-10 coupled-Gram in-packet supplier.** The coupled two-slice
-SU(3)-gauge plus staggered-fermion Berezin/OS Gram named by the latest
+SU(3)-gauge plus staggered-fermion Berezin/OS Gram named by a prior
 conditional verdict is now derived in-packet by
 [RP_COUPLED_TWO_SLICE_GAUGE_STAGGERED_BEREZIN_GRAM_NARROW_THEOREM_NOTE_2026-07-10.md](RP_COUPLED_TWO_SLICE_GAUGE_STAGGERED_BEREZIN_GRAM_NARROW_THEOREM_NOTE_2026-07-10.md):
 in temporal gauge the crossing Boltzmann factor factorizes exactly into the
@@ -359,10 +362,11 @@ positive runner
 [`scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py`](../scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py).
 The free case (`U = 1`) is treated explicitly and decisively below; the
 fixed-`SU(3)` gauge-background extension of the same object is the
-retained_bounded note
+bounded source note
 [RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md),
-and the full gauge case is reduced to that extension plus two retained
-dependencies (see "Gauge-case reduction" below).
+and the full gauge case is reduced to that extension plus two named source
+dependencies whose current grades are owned by the audit lane (see
+"Gauge-case reduction" below).
 
 **Why two steps (mechanism, not citation).** With the canonical
 staggered phases `eta_0 = 1` and `eta_1(t) = (-1)^t` the temporal hop
@@ -394,7 +398,7 @@ the single-step classical transfer matrix on the amplitude 2-vector
 ```
 
 `T_even`, `T_odd` come straight from the action; no convention is
-admitted.
+introduced.
 
 **Step 2 — single-step non-positivity (consistent with the no-go).**
 For `p != 0`, `spec(T_even)` and `spec(T_odd)` are genuinely complex
@@ -482,12 +486,12 @@ R2), captured in
 [AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md](AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md),
 and the fixed-`SU(3)` gauge-background extension (`T_hat^2[U]` positive
 Hermitian config-by-config at arbitrary fixed spatial background in
-temporal gauge) is the retained_bounded note
+temporal gauge) is the bounded source note
 [RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md).
-The positive gauge weight is the retained Case A determinant note
+The positive gauge weight is supplied by the named Case A determinant note
 (`det(M_KS + m I) = prod (m^2 + sigma_i^2) >= m^n > 0`
 config-by-config on every `SU(3)` background). The gauge/bosonic half is
-now routed through the retained-bounded Wilson temporal-gauge bridge plus the
+now routed through the source-side bounded Wilson temporal-gauge bridge plus the
 abstract gauge-half Cauchy-Schwarz identity, rather than through the abstract
 identity alone. The full interacting `U`-integrated positivity is claimed
 only through this explicitly scoped joint-Gram construction and remains
@@ -593,21 +597,23 @@ Hermiticity.
 The newly load-bearing positive support is the **free-case** fermion-
 sector 2-step transfer positivity (explicit, §"In-repo first-principles
 construction and proof"). The gauge-case text records a reduction
-target to two retained deps, not a fresh interacting proof. The note
+target to two named source dependencies, with current grades owned by the audit
+lane, not a fresh interacting proof. The note
 does **not** claim:
 
 - single-step Lagrangian RP for staggered KS in the spin basis;
 - a universal impossibility theorem for every conceivable one-step
   staggered transfer-matrix construction;
 - a from-scratch full interacting `SU(3)` 2-step RP proof: the gauge
-  case is reduced to named retained/retained-bounded factor authorities,
-  not re-derived;
+  case is reduced to named factor source authorities, not re-derived; their
+  current grades remain owned by the audit lane;
 - an interacting-fermion-sector 2-step transfer positivity from scratch
   on a non-trivial `SU(3)` background: the explicit construction is the
   free (`U = 1`) case, and the gauge sector enters only through the
-  retained positive determinant weight;
+  named positive determinant-weight source, whose current grade is audit-lane-owned;
 - an author-applied retained status for this parent row; the Wilson
-  temporal-gauge bridge is cited at its own retained-bounded scope, and this
+  temporal-gauge bridge is cited at its source-side bounded scope, with current
+  standing owned by the audit lane, and this
   row's composed parent claim still requires independent audit;
 - a full staggered + Wilson fermion RP theorem;
 - an unconditional Wilson-sector determinant positivity statement;
@@ -696,7 +702,7 @@ Branch-local source-surface repair. The narrowed source claim is a
 proposal for independent re-audit. As of 2026-05-28 the 2-step
 positive claim is **derived in-repo from first principles** (free case
 explicit, via the new positive 2-step runner; gauge case recorded as a
-reduction target to two retained deps), replacing the prior
+reduction target to two named source dependencies whose grades are audit-lane-owned), replacing the prior
 citation-only treatment. The
 explicit single-step no-go runner remains intact and documents the
 failure of the prior overreach. This note does not set or predict an
@@ -718,7 +724,8 @@ What this does not support:
   runner + Caracciolo-Palumbo 2013);
 - a from-scratch interacting `SU(3)` 2-step RP proof: the explicit
   construction is the free case; the gauge case is only a scoped
-  reduction target to the two named retained deps;
+  reduction target to the two named source dependencies, with current grades
+  owned by the audit lane;
 - a full staggered + Wilson-fermion RP theorem;
 - an unconditional Wilson-sector determinant positivity statement.
 

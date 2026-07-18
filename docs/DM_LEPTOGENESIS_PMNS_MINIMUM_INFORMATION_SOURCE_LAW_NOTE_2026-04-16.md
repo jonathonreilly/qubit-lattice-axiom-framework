@@ -111,9 +111,8 @@ gradient, and an independent finite-difference KKT residual below `1e-5`.
 The runner output is a local constrained-optimization diagnostic. It is not a
 proof of global minimality, global uniqueness, global stationarity
 classification, a physical column selector, or minimum-selector derivation
-from the baseline framework. A longer seeded search changes the largest
-sampled column, so the bounded initialization search carries no extremal or
-column-selection authority.
+from the baseline framework. The bounded initialization search carries no
+extremal or column-selection authority.
 
 ## What this note does NOT claim
 

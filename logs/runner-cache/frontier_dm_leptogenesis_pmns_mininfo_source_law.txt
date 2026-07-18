@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py
 runner_sha256: 9d8f4622ae22e5a609d7786aa22de8e9e77836e44d91131cbeed131bcf7f2f5b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.98
+elapsed_sec: 1.82
 status: ok
 ----- stdout -----
 ========================================================================================

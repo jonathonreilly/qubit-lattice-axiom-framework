@@ -302,10 +302,12 @@ verifies symbolically (sympy `simplify` to 0) that:
    strictly convex quadratic `J(z) = (z - a)^T A (z - a) / 2` with `A`
    SPD and a single affine constraint `C(z) = c^T z - d`): the
    closed-form minimizer satisfies `(L)`.
-7. Counterfactual probe (necessity of `(H1)`): replacing `J` with a
-   non-strictly-convex quadratic `J(z) = c^T z` (linear) admits an
-   entire affine subspace of minimizers on `F`, demonstrating that
-   `(T1)` fails without strict convexity.
+7. Counterfactual probe (necessity of `(H1)`): on the bounded open convex
+   domain `Omega_cf = (-2,2)^2`, take `C_cf(z) = z2` and
+   `J_cf(z) = z2^2`. Then `F_cf = (-2,2) x {0}` is non-empty, bounded,
+   segment-feasible, and regular; `J_cf` is attained and constant on `F_cf`
+   but is not strictly convex, so `(T1)` fails while `(H2)-(H4)` and `(H1')`
+   remain satisfied.
 8. Counterfactual probe (necessity of `(H2)`): for
    `C_cf(z) = z1^2 + z2^2`, the feasible set is `{0}` but its constraint
    gradient vanishes there; a strictly convex objective with nonzero gradient

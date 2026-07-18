@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py
-runner_sha256: f2202ff1adae8b9125252db745e93fac2ea8648865534b07edcad579507ae646
+runner_sha256: ff475c9354f1ed4a0e3c2e15600042a5f450d1be7af164a0515ca082c7dc412d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.60
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -65,9 +65,11 @@ Part 6: numerical FP cross-check at one independent random sample
   [PASS (A)] (numerical) Lagrange (L) holds at z_* component-wise (random sample)  (|diff| = (0.000e+00, 0.000e+00))
 
 ----------------------------------------------------------------------------------------
-Part 7: counterfactual probe -- necessity of (H1) (strict convexity)
+Part 7: counterfactual probe -- drop (H1) while keeping (H2)-(H4) and (H1')
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (H1) counterfactual: linear J on affine constraint is constant on F (no unique min)  (J_lin - d on F = 0 (zero means J constant))
+  [PASS (A)] (H1) counterfactual keeps regularity: grad C_cf = (0,1)  (grad C_cf = [[0, 1]])
+  [PASS (A)] (H1) counterfactual objective is not strictly convex  (Hessian J_cf = [[0, 0], [0, 2]])
+  [PASS (A)] (H1) counterfactual has two distinct feasible global minimizers in bounded Omega_cf  (Omega_cf=(-2,2)^2; z_a=(-1,0), z_b=(1,0); J_cf|F_cf=0)
 
 ----------------------------------------------------------------------------------------
 Part 8: counterfactual probe -- necessity of (H2) (constraint regularity)
@@ -80,7 +82,7 @@ Part 8: counterfactual probe -- necessity of (H2) (constraint regularity)
 ----------------------------------------------------------------------------------------
 Part 9: (T1) midpoint strict-convexity probe
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (T1) midpoint strict-convexity inequality at sample (z_a=(1,0), z_b=(0,1))  (J((z_a+z_b)/2) = 1/4, (J(z_a)+J(z_b))/2 = 1/2, diff = 1/4)
+  [PASS (A)] (T1) affine-feasible midpoint sample satisfies the strict-convexity inequality  (J((z_a+z_b)/2) = 1/4, (J(z_a)+J(z_b))/2 = 1/2, diff = 1/4)
 
 ----------------------------------------------------------------------------------------
 Part 10: A SPD reality check (sanity)
@@ -95,13 +97,13 @@ Summary
     (T3) multiplier formula lambda_* = <gJ, gC>/||gC||^2
     (C1)-(C2) reduce to 0 parametrically; (C3) follows from (L) and has an exact sample
     Numerical FP cross-check at random SPD/affine sample (constraint and (L))
-    (H1) counterfactual: linear J on affine F is constant -> no unique min
+    (H1) counterfactual: bounded regular segment with flat J_cf|F_cf -> no unique min
     (H2) counterfactual: vanishing-grad C breaks (L-formula) denominator
     (T1) midpoint strict-convexity inequality at one sample
     Hessian of J equals A (strict convexity <=> A SPD)
 
 ========================================================================================
-TOTAL: PASS=21, FAIL=0
+TOTAL: PASS=23, FAIL=0
 ========================================================================================
 
 ----- stderr -----

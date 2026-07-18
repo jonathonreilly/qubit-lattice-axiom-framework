@@ -52,25 +52,27 @@ physical Brannen-phase bridge.
 
 ## §1 Koide κ — charged-lepton cone normalization
 
-**Observable.** The operator-side Koide normalization
+**Historical target.** The old package compared the operator-side ratio
 
     κ  :=  g_0² / |g_1|²  =  2
 
-on the C₃ Fourier-character decomposition of the charged-lepton Hermitian carrier, equivalent to the spectrum-side Koide relation
+with the spectrum-side Koide relation
 
     Q  :=  (m_e + m_μ + m_τ) / (√m_e + √m_μ + √m_τ)²  =  2/3.
 
-### §1.1 Primary closure — spectrum–operator Fourier bridge
+The theorem below does not establish that physical equivalence.
+
+### §1.1 Exact abstract Hermitian-circulant Fourier invariant
 
 **Theorem.** On the C₃-cyclic Hermitian algebra `Herm_circ(3)`, the exact Fourier-character identity
 
     a_0² − 2|z|²  =  3 (a² − 2|b|²)
 
-holds where `(a_0, z)` are the spectrum-side C₃ character components of `(√m_e, √m_μ, √m_τ)` and `(a, b)` are the operator-side C₃ Fourier components of `H = aI + bC + b̄C²`.
+holds where `(a_0,z)` are the normalized Fourier coordinates of the real eigenvalue triple of the defined abstract matrix `H=aI+bC+b̄C²`. No mass assignment or physical carrier is part of the theorem.
 
-**Proof.** Direct symbolic expansion on the C₃ Fourier basis; sympy-verified in `scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py` (9 PASS, 0 FAIL).
+**Proof.** Direct roots-of-unity expansion, independently reconstructed from the characteristic polynomial/traces and explicit real DFT; `scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py` gives normal 12 PASS, independent 10 PASS, hostile 10 PASS, all 0 FAIL.
 
-**Consequence.** The spectrum-side Koide relation `Q = 2/3`, equivalent to `a_0² = 2|z|²`, implies the operator-side normalization `a² = 2|b|²`, i.e. `κ = 2`. The operator-side framing reduces algebraically to the spectrum-side framing under the retained cyclic-compression bridge.
+**Consequence.** The two abstract polynomial residuals have the same zero locus. The ratio `κ=a²/|b|²` is defined only for `b!=0`; the global theorem includes the `b=0` boundary and is not a physical Koide, P1, carrier, selector, or MRU theorem.
 
 **Package status.** The April 21 Frobenius-isotype / AM-GM stack is the
 strongest current support route for `Q = 2/3`. It proves that the admitted
@@ -481,7 +483,7 @@ All runners pass with no hardcoded `True` PASS annotations. Every PASS is a nume
 
 | Lane | Runner | PASS | FAIL |
 |---|---|---|---|
-| κ bridge | `frontier_koide_kappa_spectrum_operator_bridge_theorem.py` | 9 | 0 |
+| abstract Hermitian-circulant Fourier invariant | `frontier_koide_kappa_spectrum_operator_bridge_theorem.py` | 12 normal / 10 independent / 10 hostile | 0 |
 | κ block Frobenius | `frontier_koide_kappa_block_total_frobenius_measure_theorem.py` | 16 | 0 |
 | κ MRU | `frontier_koide_moment_ratio_uniformity_theorem.py` | 26 | 0 |
 | κ weight-class obstruction | `frontier_koide_mru_weight_class_obstruction_theorem.py` | 21 | 0 |

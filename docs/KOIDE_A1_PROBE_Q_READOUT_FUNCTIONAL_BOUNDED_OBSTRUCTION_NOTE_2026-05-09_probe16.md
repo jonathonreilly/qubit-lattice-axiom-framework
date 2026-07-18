@@ -5,13 +5,15 @@
 **Claim type:** bounded_theorem
 **Scope:** review-loop source-note proposal — Probe 16 of the Koide
 A1-condition closure campaign. Pivots from algebra-level closure
-(Probes 1-14) to the **Q-functional / Koide-readout level**, exploiting
-the fact that under the retained P1 identification `λ_k = √m_k`, the
+(Probes 1-14) to a **conditional Q-functional / Koide-readout probe**, under
+the explicitly supplied and unretained hypothesis `λ_k = √m_k`. Under that
+hypothesis, the
 Brannen Koide ratio `Q = Σm_k / (Σ√m_k)²` reduces to
 `Q(a, |b|) = (a² + 2|b|²)/(3a²)` and is **U(1)_b-invariant by
 construction** (depends only on `|b|²/a²`, not on `arg(b)`).
 **Status:** source-note proposal for a **sharpened** bounded obstruction.
-The Probe 13/14 algebra-level residue (U(1)_b angular quotient on the
+This conditional calculation does not derive P1, a charged-lepton carrier, or
+a physical selector. The Probe 13/14 algebra-level residue (U(1)_b angular quotient on the
 b-doublet) is **automatically erased** at the Q-functional level — Q
 factors through the U(1)_b-quotient as a function of `|b|²/a²` alone.
 However, **the closure of A1 does not follow** from this U(1)_b-erasure:
@@ -75,11 +77,19 @@ quotient), so the algebra-level residue is **erased by construction**.
 The question becomes: does the framework's retained matter-sector
 content force `Q = 2/3` at the readout level?
 
-## Phase 1 — Q-functional U(1)_b-invariance under retained P1 identification
+## Phase 1 — Q-functional U(1)_b-invariance under an explicit P1 hypothesis
 
-Under the retained P1 identification (per
+For this probe only, suppose the unsupplied physical hypothesis
+
+```text
+v_k = √m_k = λ_k
+```
+
+is imposed after choosing a circulant. The abstract theorem
 [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
-§1.2):
+proves the finite Fourier identities for a defined eigenvalue triple, but it
+does not supply this P1 mass assignment or a physical carrier. Conditional on
+the displayed probe hypothesis:
 
 ```text
 v_k = √m_k = λ_k     (eigenvalues of H = aI + bC + b̄C² on hw=1)
@@ -272,7 +282,7 @@ A1.
 | BlockTotalFrob | `E_+ = 3a²`, `E_⊥ = 6|b|²` on `Herm_circ(3)` | source dependency; see [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md) |
 | ConeAlg | Koide `Q = 2/3 ⟺ a₀² = 2\|z\|² ⟺ \|b\|²/a² = 1/2` | source dependency; see [`CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md`](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md) |
 | ConePoly | Polynomial cone three-form equivalence | source dependency; see [`KOIDE_CONE_THREE_FORM_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-02.md`](KOIDE_CONE_THREE_FORM_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-02.md) |
-| P1 | `λ_k = √m_k` (P1 square-root identification) | source dependency; see [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) §1.2 |
+| P1 | `λ_k = √m_k` (P1 square-root identification) | unsupplied physical probe hypothesis; [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) supplies only the abstract Fourier algebra and explicitly does not authorize P1 or a physical carrier |
 | BrannenSO2 | `Q = (c²+2)/6` U(1)_b-invariant on Brannen carrier | source dependency; see [`KOIDE_Q_SO2_PHASE_ERASURE_SUPPORT_NOTE_2026-04-25.md`](KOIDE_Q_SO2_PHASE_ERASURE_SUPPORT_NOTE_2026-04-25.md) |
 | Probe13 | Algebra-level residue: U(1)_b SO(2) phase quotient on b-doublet | source dependency; see [`KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md`](KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md) |
 | Probe14 | No retained U(1) projects onto U(1)_b on b-doublet | source dependency; see [`KOIDE_A1_PROBE_RETAINED_U1_HUNT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe14.md`](KOIDE_A1_PROBE_RETAINED_U1_HUNT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe14.md) |
@@ -295,8 +305,9 @@ A1.
 **Theorem.** On A1 + A2 + retained C_3-action on `hw=1` + retained
 `M_3(ℂ)` on `hw=1` + retained Hermitian circulant + retained
 block-total Frobenius + retained cone-algebraic equivalence +
-retained polynomial cone three-form equivalence + retained P1
-identification + retained Brannen-SO(2) phase-erasure support:
+retained polynomial cone three-form equivalence + retained
+Brannen-SO(2) phase-erasure support, and conditional on the separately
+supplied, unretained P1 probe hypothesis:
 
 ```
 (a) Q-functional U(1)_b-invariance (closes from cited source-stack content).
@@ -426,8 +437,8 @@ This satisfies the substep-4 AC narrowing rule.
 - **Scale-invariance** of `|b|²/a²` is preserved under `H → cH`. ✓
 - **Basis change** `C → C^{-1} = C²` preserves C_3-action and isotype
   structure. ✓
-- **U(1)_b-invariance** of Q is convention-independent (depends on
-  P1 identification only, which is retained). ✓
+- **U(1)_b-invariance** of the conditional Q expression is
+  convention-independent once the unretained P1 probe hypothesis is supplied. ✓
 
 The post-U(1)_b-quotient (a, |b|)-plane is canonically pinned by
 cited source-stack content. What is **not pinned** is the **canonical
@@ -471,7 +482,8 @@ though A1 is not closed.
 
 ### What this probe DOES
 
-1. Verifies that under retained P1 identification `λ_k = √m_k`, the
+1. Verifies that under the explicitly supplied, unretained P1 probe
+   hypothesis `λ_k = √m_k`, the
    Brannen Koide ratio `Q(a, b) = (a² + 2|b|²)/(3a²)` is U(1)_b-
    invariant by construction.
 2. Verifies that the **det-carrier law** (campaign synthesis's
@@ -491,8 +503,8 @@ though A1 is not closed.
 1. Does NOT close the A1-condition.
 2. Does NOT add any new axiom or new admission.
 3. Does NOT modify any retained theorem (BZ, 3GenObs, Circulant,
-   BlockTotalFrob, ConeAlg, ConePoly, P1, BrannenSO2, Probe13,
-   Probe14).
+   BlockTotalFrob, ConeAlg, ConePoly, BrannenSO2, Probe13, or Probe14),
+   and does not promote P1 into a retained premise.
 4. Does NOT promote any downstream theorem (the block-total Frobenius
    measure theorem remains `proposed_retained`).
 5. Does NOT load-bear PDG values into a derivation step.
@@ -533,7 +545,7 @@ positive_theorem and provides the polynomial backbone:
 - `(F_cyclic)`: `2 r₀² = r₁² + r₂²` (in cyclic basis)
 
 These are equivalent for any abstract (u, v, w). The probe verifies
-that under the retained P1 identification (v_k = √m_k = λ_k = a +
+that under the supplied, unretained P1 probe hypothesis (v_k = √m_k = λ_k = a +
 2|b|cos(arg(b) + 2πk/3)), the (F_ratio) form gives `Q = (a² +
 2|b|²)/(3a²)` (post-U(1)_b-erasure). The polynomial identity is
 correctly applied; it does not, by itself, force A1.
@@ -557,9 +569,11 @@ second discrete one (functional-choice convention).
 - Completing-root narrow: [`KOIDE_CONE_COMPLETING_ROOT_NARROW_THEOREM_NOTE_2026-05-02.md`](KOIDE_CONE_COMPLETING_ROOT_NARROW_THEOREM_NOTE_2026-05-02.md)
 - Algebraic equivalence: [`CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md`](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md)
 
-### Retained spectrum-operator bridge and P1 identification
+### Abstract Fourier identity and open P1 identification
 
-- Spectrum-operator bridge: [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
+- Abstract Hermitian-circulant Fourier invariant (no mass/P1/carrier
+  authority):
+  [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
 - Block-total Frobenius (proposed_retained): [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md)
 - MRU demotion (functional-choice convention status): [`KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`](KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md)
 
@@ -598,8 +612,9 @@ The runner verifies:
 
 1. Retained inputs (Section 1): C unitary, order 3, eigenvalues
    `{1, ω, ω̄}`; H = aI + bC + b̄C² is Hermitian and circulant.
-2. P1 identification under retained spectrum-operator bridge:
-   `λ_k = √m_k` (Section 2).
+2. Conditional algebra after explicitly supplying the unretained P1 probe
+   hypothesis `λ_k = √m_k` (Section 2); the abstract Fourier theorem does not
+   supply that hypothesis.
 3. Q-functional under P1: Q(a, b) = (a² + 2|b|²)/(3a²) is U(1)_b-
    invariant (Section 3).
 4. Det carrier carries cos(3 arg b) and is NOT U(1)_b-invariant

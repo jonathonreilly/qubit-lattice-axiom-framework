@@ -1,41 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py
-runner_sha256: eff3f154cddc1a4ae96b04bd5b82f01f6345e8705a866423dca933818b7f07c7
+runner_sha256: 3f2467ff15ab1b017e7439c6c3e24e1d13386f05eb0d566fea2f05fa854f7a37
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
-Section A — symbolic Hermitian circulant and Fourier bridge
-  [PASS] T1 Hermitian circulant: H = H^H symbolically
-  [PASS] T2 Fourier eigenvalues lam_k are real  (lam_k = [a + 2*b1, a - b1 - sqrt(3)*b2, a - b1 + sqrt(3)*b2])
-  [PASS] T3 bridge a_0 = sqrt(3) * a  (symbolic)  (a_0 = sqrt(3)*a)
-  [PASS] T4 bridge |z|^2 = 3 |b|^2  (symbolic)  (|z|^2 = 3*b1**2 + 3*b2**2)
-  [PASS] T5 bridge identity a_0^2 - 2|z|^2 = 3 (a^2 - 2 |b|^2)
-  [PASS] T6 tr(H^3) phase term is 3(b^3+bbar^3), not a(b^3+bbar^3)  (phase piece = 6*b1*(b1**2 - 3*b2**2))
-
-Section B — PDG charged-lepton numerical realization
-  [PASS] T7 PDG Koide Q ~ 2/3  (Q = 0.66666051)
-  [PASS] T8 PDG operator-side kappa = a^2/|b|^2 ~ 2  (kappa = 2.00003693)
-
-Section C — random Herm_circ(3) sample scan
-  [PASS] T9 bridge identity holds on 200 random samples (max residual < 1e-10)  (max residual = 2.842e-14)
-
-Section D — condition equivalence under bridge
-  [PASS] T10 operator kappa = 2 implies spectrum a_0^2 = 2|z|^2 (zero residual on sample set)  (|spectrum residual| = 0.000e+00)
-
-Section E — MRU demotion source-boundary checks
-  [PASS] T11 demotion note records the 2026-06-18 source-boundary repair
-  [PASS] T12 clean claim is bounded demotion / bridge-corollary support
-  [PASS] T13 block-total route is bounded support, not standalone closure
-  [PASS] T14 demotion note prints the corrected cubic trace diagnostic
-  [PASS] T15 demotion note removes old retained-route overclaim phrases
-  [PASS] T16 demotion note narrows the SO(2) quotient failure to Path A
-  [PASS] T17 demotion note leaves alternative quotient attack routes open
-  [PASS] T18 bridge note declares bounded_theorem source claim type
-  [PASS] T19 bridge note removes retained-proposal and independent-closure overclaim phrases
-
-TOTAL: PASS=19 FAIL=0
+NORMAL — complex Fourier derivation
+  [PASS] N1 shift algebra C^3=I and C^dagger=C^2
+  [PASS] N2 H=aI+bC+conjugate(b)C^2 is Hermitian and circulant
+  [PASS] N3 declared DFT orientation has C f_k=omega^k f_k
+  [PASS] N4 Fourier basis exactly diagonalizes H
+  [PASS] N5 the three eigenvalues are real  ([a + 2*x, a - x - sqrt(3)*y, a - x + sqrt(3)*y])
+  [PASS] N6 a_0=sqrt(3)a  (a_0=sqrt(3)*a)
+  [PASS] N7 z=sqrt(3)b with the declared orientation
+  [PASS] N8 |z|^2=3|b|^2
+  [PASS] N9 global polynomial invariant has exact factor 3
+  [PASS] N10 b=0 boundary reduces to 3a^2 and meets the zero locus only at a=0
+  [PASS] N11 ratio form is equivalent only on the nonzero-denominator domain
+  [PASS] N12 tr(H^3)=3a^3+18a|b|^2+3(b^3+conjugate(b)^3)
+TOTAL mode=normal PASS=12 FAIL=0
 
 ----- stderr -----
 

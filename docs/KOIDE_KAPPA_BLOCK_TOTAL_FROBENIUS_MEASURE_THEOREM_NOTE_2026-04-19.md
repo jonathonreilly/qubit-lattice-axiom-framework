@@ -305,7 +305,8 @@ The PDG line is printed as a comparator and does not increment PASS.
 - `docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`
   — MRU as a d = 3 theorem.
 - `docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`
-  — companion bridge theorem for the spectrum/operator route.
+  — companion abstract Hermitian-circulant Fourier invariant; it supplies no
+  physical spectrum/operator identification.
 - `docs/KOIDE_CYCLIC_PROJECTOR_BLOCK_DEMOCRACY_NOTE_2026-04-18.md`
   — block democracy equivalent to MRU via block-total energies.
 - `docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`

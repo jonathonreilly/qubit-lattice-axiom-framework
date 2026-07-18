@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_moment_ratio_uniformity_theorem.py
-runner_sha256: a0fb233ac2fe66f39ebb053a11610f7fa78fc3091bce78a33dd94bc510a14913
+runner_sha256: 6bb59a941c989e521c724674acba0f471959a2e848223c28fb560e5dfdb9a439
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.75
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 
@@ -55,10 +55,10 @@ Interpretation:
   admission of Part 1, which the demotion note proves is NOT
   a corollary of the retained observable principle on
   Herm_circ(3). This runner certifies the conditional algebra
-  after the admission; it does NOT derive the admission. The
-  retained closure routes for operator-side kappa = 2 (the
-  spectrum-operator bridge theorem and the block-total
-  Frobenius measure theorem) do not use the SO(2)-quotient.
+  after the admission; it does NOT derive the admission.
+  The abstract Fourier-invariant theorem proves only a finite
+  polynomial zero-locus equivalence. It supplies no physical
+  mass carrier, P1 assignment, selector, or MRU closure.
 
 classified_pass=26 fail=0 admissions=1
 

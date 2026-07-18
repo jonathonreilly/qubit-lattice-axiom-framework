@@ -179,7 +179,7 @@ Dependency edges (retained):
 - [`matter_gauge_minimal_coupling_fiber_frame_forces_connection`](MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md) — the covariant-hopping form H_cov = Σ aₓ† U_μ(x) a_{x+μ} + h.c. (the link rides the hop, not the on-site term).
 - [`fiber_frame_local_redundancy_bridge`](FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md) — the link law U_xy → gₓ U_xy g_y† and the fibre V_x.
 - [`koide_gamma_axis_covariant_full_cube_orbit_law`](KOIDE_GAMMA_AXIS_COVARIANT_FULL_CUBE_ORBIT_LAW_NOTE_2026-04-18.md) — the b-term is the C₃[111] second-order hop-return (traverses a link); the a-term is on-site.
-- [`koide_circulant_character_bridge`](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md) and [`koide_kappa_spectrum_operator_bridge`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) — H = aI + bC + b̄C², r = |b|²/a², Q = 1/3 + 2r/3.
+- [`koide_circulant_character_bridge`](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md) — the abstract form `H = aI + bC + b̄C²` and ratio definition `r = |b|²/a²`. The separately located `KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md` proves only an abstract Fourier-coordinate identity and is not physical carrier/readout authority for this no-go.
 - [`three_generation_observable_theorem`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) — the gauge-uniform shared M₃(ℂ) generation carrier (the link acts on the fibre, not the generation index).
 
 Source-side kernel support (audit required before any effective status change):

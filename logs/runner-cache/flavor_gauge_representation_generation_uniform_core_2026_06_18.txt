@@ -1,15 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_gauge_representation_generation_uniform_core_2026_06_18.py
-runner_sha256: 3da22264b2d128d2c07b2fd179e20bf86f78def84fea55113fa341c5449e05c8
+runner_sha256: 8a2c77ac01b44e18c9448fcd391ceec8c6cacd257883a9da68facd34aa0260b3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 FLAVOR GAUGE REPRESENTATION GENERATION-UNIFORM CORE
 ========================================================================
-[PASS] generation and Koide ratio dependencies are retained-grade
-       three_generation_observable_theorem_note=retained, three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10=retained, three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02=retained, koide_circulant_character_bridge_narrow_theorem_note_2026-05-09=retained, koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19=retained
 [PASS] uniform generation-carrier scalar action leaves r degree-zero inert
        s=0.2: r=0.289940828402; s=0.75: r=0.289940828402; s=1.0: r=0.289940828402; s=2.0: r=0.289940828402; s=5.0: r=0.289940828402
 [PASS] discriminating control: non-uniform singlet/doublet scaling would move r
@@ -23,7 +21,7 @@ FLAVOR GAUGE REPRESENTATION GENERATION-UNIFORM CORE
 [PASS] parent status is not promoted
 
 VERDICT: the framework-native generation-uniform scalar-action core is split out; the SM sector representation assignment and electroweak splitter remain conditional/open in the parent row.
-SCORECARD PASS=9 FAIL=0
+SCORECARD PASS=8 FAIL=0
 
 ----- stderr -----
 

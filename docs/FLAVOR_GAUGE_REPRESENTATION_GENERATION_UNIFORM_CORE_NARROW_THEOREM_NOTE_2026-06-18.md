@@ -45,9 +45,11 @@ The core uses:
 - [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md)
   for the no-proper-generation-quotient boundary;
 - [`KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md`](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md)
-  and
-  [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
-  for the finite circulant form and `r = |b|^2/a^2` readout.
+  for the finite circulant form and abstract ratio definition
+  `r = |b|^2/a^2`. The separately located
+  `KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`
+  proves only an abstract Fourier-coordinate identity and supplies no physical
+  generation carrier or readout to this core.
 
 ## What This Splits From The Parent
 

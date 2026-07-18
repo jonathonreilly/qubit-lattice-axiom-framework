@@ -414,13 +414,13 @@ To promote a separate positive MRU quotient route, the missing work is:
 Those tasks are not prerequisites for the bounded theorem claimed here,
 because that theorem is the unreduced obstruction.
 
-Per the demotion note already on main, the `kappa = 2` operator-side
-gate does **not** depend on supplying (1)/(2): two independent
-routes (`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19`
-and `KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19`)
-already carry it without any `SO(2)`-quotient postulate. The Path A
-work above is a path to promote **this** row, not a prerequisite for the
-operator-side closure.
+The two adjacent algebra notes do not remove this physical boundary.
+`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19` now proves
+only an abstract Fourier polynomial identity, and
+`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19` leaves
+its physical scalar-measure choice open. The Path A work above remains a
+possible route to promote **this** conditional MRU framing; no operator-side
+physical closure is imported from either adjacent algebra note.
 
 ## 10. Boundaries
 

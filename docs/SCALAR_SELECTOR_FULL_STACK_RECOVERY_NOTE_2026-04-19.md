@@ -109,11 +109,13 @@ available on the branch).
    `kappa`.**
 4. **Spectrum/operator bridge theorem** (recovered;
    `KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_…`, runner
-   `frontier_koide_kappa_spectrum_operator_bridge_theorem.py` PASS=9
-   FAIL=0). The exact identity `a_0^2 - 2|z|^2 = 3(a^2 - 2|b|^2)` —
-   sympy-verified — proves operator-side `kappa = 2` is a corollary of
-   spectrum-side `Q = 2/3` under the retained cyclic-compression bridge.
-   **Status: retained equivalence / spectrum↔operator collapse.**
+   `frontier_koide_kappa_spectrum_operator_bridge_theorem.py`: normal
+   PASS=12, independent PASS=10, hostile PASS=10, all FAIL=0). The exact
+   identity `a_0^2 - 2|z|^2 = 3(a^2 - 2|b|^2)` is an abstract normalized
+   Fourier-coordinate theorem on `Herm_circ(3)`. It does not supply P1,
+   charged-lepton masses, a physical cyclic-compression carrier, MRU, or a
+   physical `kappa=2` conclusion. **Status in this historical recovery map:
+   exact finite algebra only.**
 
 **Reviewer-bar status:** single named residue = physical selection of the
 `1:1` block-total Frobenius measure over the `(1,2)` determinant measure.
@@ -217,7 +219,7 @@ Files restored from git objects `f6b5ce6c`, `986457d0`, `a8fa9cfb`,
 | `docs/KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md` (selected-line CP¹ version, softened) | `5c223ff9` | `frontier_koide_berry_phase_theorem.py` | 24 |
 | `docs/KOIDE_THETA_HIERARCHY_OPEN_SCALAR_NOTE_2026-04-19.md` (softened status) | `5c223ff9` | — (companion) | — |
 | `docs/KOIDE_SELECTED_LINE_CYCLIC_RESPONSE_BRIDGE_NOTE_2026-04-18.md` (softened) | `5c223ff9` | `frontier_koide_selected_line_cyclic_response_bridge.py` | 20 |
-| `docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md` | `a8fa9cfb` | `frontier_koide_kappa_spectrum_operator_bridge_theorem.py` | 9 |
+| `docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md` | `a8fa9cfb` | `frontier_koide_kappa_spectrum_operator_bridge_theorem.py` | 12 normal / 10 independent / 10 hostile |
 | `docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md` | `a8fa9cfb` | `frontier_koide_kappa_block_total_frobenius_measure_theorem.py` | 16 |
 | `docs/DM_ABCC_PMNS_NONSINGULARITY_THEOREM_NOTE_2026-04-19.md` | `4a7aa854` | `frontier_dm_abcc_pmns_nonsingularity_theorem.py` | 38 |
 | `docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md` | `4a7aa854` | `frontier_dm_abcc_signature_forcing_theorem.py` | 54 |
@@ -293,7 +295,7 @@ All recovered runners plus all canonical-tip runners pass:
 ```text
 frontier_koide_berry_phase_theorem.py                             PASS=24  FAIL=0
 frontier_koide_selected_line_cyclic_response_bridge.py            PASS=20  FAIL=0
-frontier_koide_kappa_spectrum_operator_bridge_theorem.py          PASS=9   FAIL=0
+frontier_koide_kappa_spectrum_operator_bridge_theorem.py          PASS=12  FAIL=0  (normal; independent=10, hostile=10)
 frontier_koide_kappa_block_total_frobenius_measure_theorem.py     PASS=16  FAIL=0
 frontier_dm_abcc_pmns_nonsingularity_theorem.py                   PASS=38  FAIL=0
 frontier_dm_abcc_signature_forcing_theorem.py                     PASS=54  FAIL=0

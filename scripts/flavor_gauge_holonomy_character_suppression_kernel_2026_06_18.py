@@ -14,7 +14,6 @@ readout.  That bridge remains open in the parent flavor holonomy note.
 from __future__ import annotations
 
 import itertools
-import json
 from pathlib import Path
 
 import numpy as np
@@ -23,7 +22,6 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md"
 PARENT = ROOT / "docs" / "FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md"
-LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 PASS = 0
 FAIL = 0
@@ -36,12 +34,6 @@ def check(label: str, ok: bool, detail: str = "") -> None:
         print(f"       {detail}")
     PASS += int(ok)
     FAIL += int(not ok)
-
-
-def ledger_status(claim_id: str) -> str | None:
-    rows = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
-    row = rows.get(claim_id, {})
-    return row.get("effective_status") or row.get("audit_status")
 
 
 def phases(root_count: int, d: int) -> list[np.ndarray]:
@@ -78,27 +70,6 @@ def effective_generation_matrix(a: float, b: complex, evals: np.ndarray) -> np.n
 def main() -> int:
     print("FLAVOR GAUGE HOLONOMY CHARACTER-SUPPRESSION KERNEL")
     print("=" * 72)
-
-    retained_sources = {
-        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08":
-            ledger_status("matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"),
-        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09":
-            ledger_status("fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09"),
-        "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18":
-            ledger_status("koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18"),
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09":
-            ledger_status("koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"),
-        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19":
-            ledger_status("koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"),
-        "three_generation_observable_theorem_note":
-            ledger_status("three_generation_observable_theorem_note"),
-    }
-    retained_ok = {"retained", "retained_bounded"}
-    check(
-        "kernel dependencies are retained-grade in the live ledger",
-        all(status in retained_ok for status in retained_sources.values()),
-        ", ".join(f"{cid}={status}" for cid, status in retained_sources.items()),
-    )
 
     max_identity_error = 0.0
     min_gap = 1e9

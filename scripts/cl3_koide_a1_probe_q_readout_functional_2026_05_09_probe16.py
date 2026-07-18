@@ -2,8 +2,9 @@
 """
 Koide A1 Probe 16 — Q-Readout / Functional-Level Pivot
 
-Tests the functional-level pivot for the A1-condition closure attempt:
-under the retained P1 identification (lambda_k = sqrt(m_k)), the Brannen
+Tests the functional-level pivot for the A1-condition closure attempt.
+Conditional on an explicitly supplied, unretained P1 probe hypothesis
+(lambda_k = sqrt(m_k)), the Brannen
 Koide ratio
 
     Q = sum(m_k) / (sum(sqrt(m_k)))^2 = (a^2 + 2|b|^2) / (3 a^2)
@@ -17,8 +18,9 @@ force Q = 2/3 at the readout level, exploiting U(1)_b-invariance?
 
 Verdict: SHARPENED bounded obstruction.
 
-  Phase 1 (closes from cited source-stack content): Q is U(1)_b-invariant under
-  P1 identification.
+  Phase 1 (conditional finite algebra): Q is U(1)_b-invariant under the
+  supplied P1 probe hypothesis. The runner does not derive P1 or a physical
+  carrier.
   Phase 2 (closes from cited source-stack content): det-carrier (campaign synthesis's
   competing log|det| functional, landing at kappa=1 at algebra level) is
   NOT U(1)_b-invariant; it is eliminated by the U(1)_b-quotient.
@@ -102,8 +104,8 @@ def eigenvalues_circulant(a: float, b: complex) -> np.ndarray:
 
 
 def Q_under_P1(a: float, b: complex) -> float:
-    """Q = sum(m_k) / (sum(sqrt(m_k)))^2 under P1: sqrt(m_k) = lambda_k."""
-    eigs = eigenvalues_circulant(a, b)  # = sqrt(m_k) under P1
+    """Conditional Q after supplying the probe hypothesis sqrt(m_k)=lambda_k."""
+    eigs = eigenvalues_circulant(a, b)
     sum_sqrt_m = float(np.sum(eigs))
     if sum_sqrt_m == 0.0:
         return float("nan")
@@ -131,9 +133,11 @@ print("  This is a CONTINUOUS symmetry, qualitatively different from any")
 print("  retained algebra symmetry. Probe 14 ruled out 9 retained U(1)")
 print("  candidates; none projects to U(1)_b on the b-doublet.")
 print()
-print("  This probe pivots to the Q-functional / readout level. Under the")
-print("  retained P1 identification (per KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE")
-print("  Section 1.2), lambda_k = sqrt(m_k). The Brannen Koide ratio")
+print("  This probe pivots to the Q-functional / readout level. It explicitly")
+print("  SUPPLIES the unretained probe hypothesis lambda_k = sqrt(m_k).")
+print("  The abstract Fourier-invariant theorem does not derive P1, a mass")
+print("  assignment, or a physical carrier. Conditional on the hypothesis, the")
+print("  Brannen Koide ratio")
 print("  Q = sum(m_k) / (sum(sqrt(m_k)))^2 is then a function of (a, |b|)")
 print("  only, not arg(b). The Q-functional automatically respects U(1)_b.")
 print()
@@ -192,10 +196,12 @@ check(
 # Section 2: P1 identification (lambda_k = sqrt(m_k))
 # ======================================================================
 
-banner("Section 2: P1 identification (retained per spectrum-operator bridge)")
+banner("Section 2: supplied P1 probe hypothesis (not derived)")
 
-print("Per KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM Section 1.2:")
+print("Supplied for this conditional probe only:")
 print("  v_k = sqrt(m_k) = lambda_k")
+print("The abstract Hermitian-circulant Fourier theorem supplies only the")
+print("coordinate algebra after lambda_k is defined; it is not P1 authority.")
 print()
 print("This identifies the eigenvalues of H = aI + bC + b̄C^2 with the")
 print("sqrt-mass amplitudes. Under this identification:")
@@ -667,8 +673,8 @@ check(
 
 banner("Section 10: Verdict")
 
-print("Phase 1 (closes from cited source-stack content):")
-print("  Under P1 identification (lambda_k = sqrt(m_k)), the Brannen Koide")
+print("Phase 1 (conditional on the unretained P1 probe hypothesis):")
+print("  After supplying lambda_k = sqrt(m_k), the Brannen Koide")
 print("  ratio Q = (a^2 + 2|b|^2)/(3a^2) is U(1)_b-invariant. The Q-")
 print("  functional automatically erases the U(1)_b angular ambiguity.")
 print()

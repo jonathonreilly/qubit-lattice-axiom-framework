@@ -350,7 +350,7 @@ the primary closure runner and its verification counts are:
 
 | Lane | Primary runner | PASS | Notes |
 |---|---|---|---|
-| Koide κ (spectrum/operator bridge) | `frontier_koide_kappa_spectrum_operator_bridge_theorem.py` | 9 | exact sympy identity `a_0² − 2|z|² = 3(a² − 2|b|²)` |
+| Abstract Hermitian-circulant Fourier invariant | `frontier_koide_kappa_spectrum_operator_bridge_theorem.py` | 12 normal / 10 independent / 10 hostile | exact finite identity `a_0² − 2|z|² = 3(a² − 2|b|²)`; no physical mass/carrier interpretation |
 | Koide κ (block-total Frobenius corroboration) | `frontier_koide_kappa_block_total_frobenius_measure_theorem.py` | 16 | independent functional reaching same `κ = 2` |
 | Koide θ (Berry identification on selected line) | `frontier_koide_berry_phase_theorem.py` | 24 | ambient-S² calculation § + selected-line CP¹ § + natural-selector no-go § |
 | Koide θ (scalar-phase bridge) | `frontier_koide_selected_line_cyclic_response_bridge.py` | 20 | `κ_sel(δ)` exact identity |

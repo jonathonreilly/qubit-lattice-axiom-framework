@@ -175,7 +175,7 @@ elementary-symmetric / Newton-Girard machinery.
 | 3GenObs | hw=1 BZ-corner triplet has M_3(C) algebra; C_3[111] cycles corners | retained-bounded: [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) |
 | Substep4 | AC_φλ remains the explicit identification residual on hw=1 | retained-bounded: [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md) |
 | KoideAlg | Koide Q = 2/3 ⟺ a₀² = 2|z|² ⟺ \|b\|²/a² = 1/2 ⟺ p_2/e_1² = 2/3 | retained: [`CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md`](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md) |
-| Bridge | Spectrum-operator bridge: a_0² − 2\|z\|² = 3(a² − 2\|b\|²) | retained: [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) |
+| Abstract Fourier invariant | On a defined `Herm_circ(3)` matrix, `a_0² − 2\|z\|² = 3(a² − 2\|b\|²)` with the same polynomial zero locus | finite algebra only: [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md); it supplies no P1 mass assignment, physical carrier, or selector |
 | BTF | Block-total Frobenius theorem: (1,1) multiplicity weights yield κ=2 | retained: [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md) |
 | MRUDemo | MRU SO(2)-quotient is supplementary, not load-bearing | retained: [`KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`](KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md) |
 | RouteD_Form | `V(Φ) = [e_1² − 6 e_2]²` is the candidate Newton-Girard form for A1 | route-status note: `KOIDE_A1_DERIVATION_STATUS_NOTE.md` §"Route D" |
@@ -507,13 +507,14 @@ same trap.
   package (status from
   [`CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md`](CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md)
   unchanged).
-- The retained spectrum-operator bridge theorem
+- The abstract Hermitian-circulant Fourier theorem
   ([`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md))
-  retains its primary status — operator-side `kappa = 2` follows from
-  spectrum-side `Q = 2/3` with zero residue. This note does NOT
-  retract that — it only addresses the question of whether
-  Newton-Girard polynomial structure can derive the spectrum-side
-  Koide condition itself, which it cannot.
+  retains only its exact polynomial identity and zero-locus equivalence on a
+  defined abstract matrix. It does not identify either side with a physical
+  mass spectrum, P1, MRU, or a charged-lepton carrier. This Route-D no-go
+  continues to address whether Newton-Girard polynomial structure selects the
+  displayed zero locus; it does not obtain a physical identification from the
+  abstract Fourier identity.
 - The retained block-total Frobenius measure theorem
   ([`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md))
   retains its independent-second-route status. This note's Barrier D2
@@ -588,7 +589,7 @@ is to avoid one-step relabelings of already-landed cycles. This note:
 - Sister-route bounded obstructions:
   - Route F (Casimir difference): [`KOIDE_A1_ROUTE_F_CASIMIR_DIFFERENCE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routef.md`](KOIDE_A1_ROUTE_F_CASIMIR_DIFFERENCE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routef.md)
   - Route E (Kostant Weyl-vector): see commit b38cccbb9 (filename `KOIDE_A1_ROUTE_E_KOSTANT_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routee.md`)
-- Spectrum-operator bridge (retained): [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
+- Abstract Hermitian-circulant Fourier invariant (finite algebra only): [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
 - Block-total Frobenius (retained, weight-class residue): [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md)
 - MRU demotion (related residue): [`KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`](KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md)
 - Circulant character derivation: [`KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`](KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md)

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_a1_probe_q_readout_functional_2026_05_09_probe16.py
-runner_sha256: 37686e27b8c3ba720e2a683a59990a8d8b9db37b8159b3f282c1880fa40b4098
+runner_sha256: d935abfc2de2189ffaa01d7023b68127cf8d24ed72b8032b5325238acc1905df
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.74
+elapsed_sec: 0.83
 status: ok
 ----- stdout -----
 
@@ -22,9 +22,11 @@ Pivot motivation:
   retained algebra symmetry. Probe 14 ruled out 9 retained U(1)
   candidates; none projects to U(1)_b on the b-doublet.
 
-  This probe pivots to the Q-functional / readout level. Under the
-  retained P1 identification (per KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE
-  Section 1.2), lambda_k = sqrt(m_k). The Brannen Koide ratio
+  This probe pivots to the Q-functional / readout level. It explicitly
+  SUPPLIES the unretained probe hypothesis lambda_k = sqrt(m_k).
+  The abstract Fourier-invariant theorem does not derive P1, a mass
+  assignment, or a physical carrier. Conditional on the hypothesis, the
+  Brannen Koide ratio
   Q = sum(m_k) / (sum(sqrt(m_k)))^2 is then a function of (a, |b|)
   only, not arg(b). The Q-functional automatically respects U(1)_b.
 
@@ -45,11 +47,13 @@ Section 1: Retained-content sanity checks
   PASS  1.5 eigenvalues lambda_k = a + 2|b|cos(arg(b) + 2 pi k / 3)
 
 ========================================================================
-Section 2: P1 identification (retained per spectrum-operator bridge)
+Section 2: supplied P1 probe hypothesis (not derived)
 ========================================================================
 
-Per KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM Section 1.2:
+Supplied for this conditional probe only:
   v_k = sqrt(m_k) = lambda_k
+The abstract Hermitian-circulant Fourier theorem supplies only the
+coordinate algebra after lambda_k is defined; it is not P1 authority.
 
 This identifies the eigenvalues of H = aI + bC + b̄C^2 with the
 sqrt-mass amplitudes. Under this identification:
@@ -177,8 +181,8 @@ Section 9: Convention-robustness checks
 Section 10: Verdict
 ========================================================================
 
-Phase 1 (closes from cited source-stack content):
-  Under P1 identification (lambda_k = sqrt(m_k)), the Brannen Koide
+Phase 1 (conditional on the unretained P1 probe hypothesis):
+  After supplying lambda_k = sqrt(m_k), the Brannen Koide
   ratio Q = (a^2 + 2|b|^2)/(3a^2) is U(1)_b-invariant. The Q-
   functional automatically erases the U(1)_b angular ambiguity.
 

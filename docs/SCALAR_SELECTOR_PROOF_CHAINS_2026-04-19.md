@@ -114,24 +114,20 @@ Step 6  — block-total Frobenius measure theorem: the 1:1 measure named in
            runner PASS=16]
 Step 7  — spectrum/operator bridge theorem: exact sympy-verified identity
           a_0^2 - 2 |z|^2 = 3 (a^2 - 2 |b|^2)
-          makes operator-side kappa = 2 a corollary of spectrum-side Q = 2/3
+          gives the same abstract polynomial zero locus in two normalized
+          coordinate systems; it supplies no mass/P1/carrier/MRU authority
           [KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19,
-           runner PASS=9]
-Step 8  — spectrum-side Q = 2/3 is the retained Koide relation
-          (machine-precision PDG verification)                                   †
-Step 9  — [Steps 7–8] => operator-side kappa = 2 via spectrum route, or
-          [Steps 4 + 6] => operator-side kappa = 2 via measure route, or
-          [Step 4] alone => kappa = 2 via MRU candidate-principle route.
-          All three converge.
+           runner normal PASS=12, independent PASS=10, hostile PASS=10]
+Step 8  — identifying either coordinate equation with a physical Koide/MRU
+          condition remains an unsupplied bridge and selector obligation.       †
+Step 9  — Steps 4–7 preserve their conditional or abstract algebraic content;
+          none derives a charged-lepton carrier or selects the common zero locus.
 ```
 
-**Status:** three independent converging proposed_retained theorems for `kappa = 2`.
-Single named residue: physical selection of the block-total Frobenius
-measure (Step 6) over the `(1,2)` determinant measure. Both measures are
-algebraically available; the missing step is a retained physics principle
-that picks the block-total form. Absent that, `Q = 2/3` itself (Step 8)
-can be accepted as the retained spectrum-side input via the bridge
-(Step 7), at which point operator-side `kappa = 2` is a corollary.
+**Status:** historical conditional proof-chain map. The exact Fourier identity
+is retained here only as abstract finite algebra. Physical selection of a
+carrier, P1 mass assignment, scalar measure, and the common zero locus is not
+derived by this chain.
 
 ---
 

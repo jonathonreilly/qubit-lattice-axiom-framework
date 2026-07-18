@@ -43,10 +43,11 @@ remains true unconditionally; this runner certifies (a) the conditional
 quotient-carrier algebra after the admission and (b) the unconditional
 algebraic radius-invariance identity.
 
-Retained closure routes for operator-side kappa = 2 that do NOT use the
-SO(2)-quotient admission:
+Adjacent algebra notes do not remove the physical quotient/measure boundary:
   - docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md
+    proves only an abstract Fourier polynomial identity;
   - docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md
+    leaves the canonical physical scalar-measure choice open.
 """
 
 from __future__ import annotations
@@ -331,10 +332,10 @@ def main() -> int:
     print("  admission of Part 1, which the demotion note proves is NOT")
     print("  a corollary of the retained observable principle on")
     print("  Herm_circ(3). This runner certifies the conditional algebra")
-    print("  after the admission; it does NOT derive the admission. The")
-    print("  retained closure routes for operator-side kappa = 2 (the")
-    print("  spectrum-operator bridge theorem and the block-total")
-    print("  Frobenius measure theorem) do not use the SO(2)-quotient.")
+    print("  after the admission; it does NOT derive the admission.")
+    print("  The abstract Fourier-invariant theorem proves only a finite")
+    print("  polynomial zero-locus equivalence. It supplies no physical")
+    print("  mass carrier, P1 assignment, selector, or MRU closure.")
     print(f"\nclassified_pass={PASS} fail={FAIL} admissions={len(ADMISSIONS)}")
     return 0 if FAIL == 0 else 1
 

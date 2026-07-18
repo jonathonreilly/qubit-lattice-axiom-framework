@@ -128,7 +128,7 @@ structure for that open fork.
 
 Dependency edges (retained):
 - [`three_generation_observable_theorem`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md), [`three_generation_observable_m3c_burnside`](THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md), [`three_generation_observable_no_proper_quotient`](THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md) — the gauge-uniform shared M₃(ℂ) generation carrier (the core of A).
-- [`koide_circulant_character_bridge`](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md) and [`koide_kappa_spectrum_operator_bridge`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) — H = aI + bC + b̄C², r = |b|²/a², Q = 1/3 + 2r/3.
+- [`koide_circulant_character_bridge`](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md) — the abstract form `H = aI + bC + b̄C²` and ratio definition `r = |b|²/a²`. The separately located `KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md` proves only an abstract Fourier-coordinate identity and is not physical carrier/readout authority for this no-go.
 - [`charged_lepton_koide_cone_algebraic_equivalence`](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md) — Q = 2/3 ⟺ r = 1/2.
 - [`flavor_hw1_staggered_projection_democratic_r0`](FLAVOR_HW1_STAGGERED_PROJECTION_DEMOCRATIC_R0_2026-06-02.md) — the bare (undressed) generation hop gives r = 0 (the endpoint the suppression points toward).
 

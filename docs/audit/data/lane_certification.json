@@ -2534,7 +2534,7 @@
         },
         {
           "claim_id": "tensor_support_center_excess_law_note",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
@@ -2915,6 +2915,6 @@
       "uncertified_count": 665
     }
   ],
-  "repo_head": "4424a7af35f55e3d722be501452b2ac4408841c1",
+  "repo_head": "eada8e220bab015ff95a5d93480a223d93950606",
   "schema": "lane_certification_v2"
 }

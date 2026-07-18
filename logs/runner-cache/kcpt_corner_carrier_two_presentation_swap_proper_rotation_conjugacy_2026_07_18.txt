@@ -1,0 +1,155 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_corner_carrier_two_presentation_swap_proper_rotation_conjugacy_2026_07_18.py
+runner_sha256: eb16d94fcd4e8f70e4879fc645938cecae4837034be92a1da20712215dd64a9c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 6.30
+status: ok
+----- stdout -----
+A.1 PASS 2D is integer antisymmetric with entries in {-1,0,1}
+A.2 PASS exact rank(D) = 56, so dim ker D = 8
+A.3 PASS all eight corner plane waves are exact null vectors of D
+A.4 PASS corner waves orthogonal (V8^T V8 = 64*I), hence they span ker D exactly
+A.5 PASS translations are commuting permutation matrices of order 4
+A.6 PASS hw=1 joint translation characters are exactly (-1,+1,+1), (+1,-1,+1), (+1,+1,-1)
+A.7 PASS U_R is a permutation matrix with U_R^3 = I
+A.8 PASS U_R conjugates translations cyclically: U_R T_mu U_R^T = T_{mu+1 mod 3}
+A.9 PASS landed kernel action: U_R V = V C exactly (C = [[0,0,1],[1,0,0],[0,1,0]])
+B1.1 PASS M is a PROPER signed-permutation involution (det +1, M^T M = I, M^2 = I, one nonzero per row/col in {-1,0,1}): an element of the cubic rotation group O
+B1.2 PASS R2 fixes the [1,-1,0] axis (M [1,-1,0]^T = [1,-1,0]^T): the pi-rotation about [1,-1,0]
+B1.3 PASS group relation R2 R3 R2 = R3^{-1}: M C M = C^T exactly
+B1.4 PASS U2 is a symmetric permutation involution (U2 = U2^T, U2 U2 = I_N)
+B1.5 PASS U2 U_R U2 = U_R^T exactly (the swap conjugates the C_3[111] rotation to its inverse)
+B1.6 PASS translation conjugacy: U2 T1 U2 = T2^3, U2 T2 U2 = T1^3, U2 T3 U2 = T3^3 (translation by M e_mu; -e_mu = 3 e_mu mod 4)
+B1.7 PASS sign-free corner-wave covariance: U2 V8 = V8 PI with PI a pure subset permutation (every entry in {0,1}; (0,)<->(1,), (0,2)<->(1,2), (2,) fixed)
+B1.8 PASS hw=1 kernel action: U2 V = V TS with TS the transposition swapping the (0,) and (1,) corner waves
+B1.9 PASS T1 rejector: TS != I3 and TS C TS != C -- the delivered action genuinely moves C on the triplet
+B1.10 PASS trivial-restriction control: R2b = diag(-1,-1,1) is PROPER (det +1) yet restricts to the identity on the hw=1 triplet (U2b V = V) while moving sites (U2b != I_N): properness alone does not deliver the swap
+B1.11 PASS improper-honesty: the bare coordinate mirror S12 (x1<->x2) has det -1 (not in the axiom's proper rotation set), while the swap M has det +1 (proper): no improper element is consumed
+B2.1 PASS TS C TS = C^T = C^2 exactly, and C is real (conj C = C)
+B2.2 PASS TS P_chi TS = conj(P_chi) for all three channels: rotation conjugation acts on the supplied projector family identically to entrywise K
+B2.3 PASS in particular TS P_w TS = P_wbar and TS P_1 TS = P_1, and the map is nontrivial (P_w != P_wbar)
+B2.4 PASS generator coherence: P_wbar(C) = P_w(C^2) symbolically (the rotated pair is the entrywise-conjugate model presented with its natural generator)
+B2.5 PASS conj(TS) = TS (real rotation); the antilinear involution M -> conj(TS M TS) fixes every P_chi and is nontrivial (moves C to C^2)
+B2.6 PASS probe transform: TS W(a,b,c) TS = W(a,c,b) (the swap exchanges the b and c generator coefficients)
+B3.1 PASS the presentation pair {P_w, P_wbar} is a single 2-orbit under the delivered proper rotation: TS P_w TS = P_wbar, TS P_wbar TS = P_w, TS P_1 TS = P_1
+B3.2 PASS the rotation orbit coincides with the entrywise-conjugation orbit: TS P_chi TS = conj(P_chi) is the same partition of the projector family
+B3.3 PASS canonical K-odd separator D0 = P_w - P_wbar: nonzero, conj(D0) = -D0 (K-odd), and TS D0 TS = -D0 = conj(D0) -- the delivered rotation exchanges the canonical K-odd seed exactly as K does
+B3.4 PASS the rotation image (C^2 with its natural w-channel projector) reproduces the conjugate model: P_w(C^2) = P_wbar(C), so the orbit image is the FLAG's entrywise-conjugate presentation
+B4.1 PASS channel values: W(a,b,c) P_chi = lam_chi P_chi with lam_chi = a + b*chi + c*chi^2; the doublet separation is lam_w - lam_wbar = i*sqrt(3)*(b-c) exactly
+B4.2 PASS under the swap b<->c: lam_1 fixed and the doublet pair is exchanged, lam_w(W(a,c,b)) = lam_wbar(W(a,b,c)) and lam_wbar(W(a,c,b)) = lam_w(W(a,b,c))
+B4.3 PASS Hermitian-section coincidence (keystone): with b = b1 + i*b2, W_H = a*I + b*C + conj(b)*C^2 satisfies conj(W_H) = TS W_H TS exactly -- on the Hermitian section the antilinear K-exchange IS conjugation by the delivered proper rotation
+B4.4 PASS off-section witness skew = C - C^2: K-EVEN (conj skew = skew) but rotation-ODD (TS skew TS = -skew), and it separates the doublet (lam_w - lam_wbar = 2*i*sqrt(3) != 0)
+B4.5 PASS off-section witness i*I: K-ODD (conj = -it) but rotation-EVEN (TS (i*I) TS = i*I), and it does NOT separate (all channel values equal)
+B4.6 PASS the two gradings are inequivalent off the Hermitian section: conj(skew) != TS skew TS and conj(i*I) != TS (i*I) TS, while on the section conj(W_H) = TS W_H TS (item n) -- K-parity and rotation-parity coincide only on the Hermitian section
+B4.7 PASS exact section characterization: for general complex (a,b,c), conj(W) - TS W TS = (conj(a)-a) I + (conj(b)-c) C + (conj(c)-b) C^2, and {I, C, C^2} are linearly independent (rank 3); hence conj(W) = TS W TS holds iff a is real and c = conj(b) -- exactly the Hermitian section, and only there
+B5.1 PASS the swap fixes lam_1 and permutes {lam_w, lam_wbar}: the elementary symmetric functions lam_w + lam_wbar and lam_w * lam_wbar are swap-invariant
+B5.2 PASS the swap genuinely moves the individual doublet values (lam_w(W(a,c,b)) - lam_w(W(a,b,c)) is not identically zero) while fixing their symmetric functions: the invariance is of the pair, not of a pinned value; no target weight r is referenced, forced, derived, or selected
+B5.3 PASS the singlet channel value lam_1 = a + b + c is swap-invariant (fixed): the guard references no weight value
+B6.1 PASS computed undressed status: U2 does NOT commute with D2 (the swap needs a sign dressing to be a D operator symmetry)
+B6.2 PASS computed undressed status: U_R does NOT commute with D2 (the C_3[111] rotation needs a sign dressing to be a D operator symmetry)
+B6.3 PASS U2 dressed search visited exactly 4096 candidates (64 sign fields x 64 translations)
+B6.4 PASS U2 dressed class solution count is exactly 64 (computed live)
+B6.5 PASS U2 exemplar re-check: the reported exemplar commutes with D2
+B6.6 PASS U2 exemplar preserves the full 8-dim corner-wave kernel (D2 U V8 = 0) but does NOT preserve the hw=1 triplet subspace (the off-triplet residual 64*U V - V (V^T U V) is nonzero)
+B6.7 PASS U2 class-scoped count: no member of the named 4096-candidate dressed class preserves the hw=1 triplet subspace (0 of 64 -- computed live)
+B6.8 PASS U2 discriminating rejector: a one-bit flip of the exemplar sign field FAILS to commute with D2
+B6.9 PASS U2 check is live: the identity dressing (s=0, t=0) has a nonzero commutator with D2
+B6 REPORT U2: undressed_commutes=False; visited=4096; solutions=64; triplet_preserving=0; identity_dressing_commutator_nonzero_entries=256
+B6 REPORT U2 exemplar: (a1,a2,a3,b12,b13,b23)=(0, 1, 0, 1, 0, 0); t=(1, 0, 0); one_bit_flip_breaks=(1, 1, 0, 1, 0, 0); compression V^T U V = [[-32, 32, 0], [-32, 32, 0], [0, 0, 32]]
+B6.10 PASS UR dressed search visited exactly 4096 candidates (64 sign fields x 64 translations)
+B6.11 PASS UR dressed class solution count is exactly 64 (computed live)
+B6.12 PASS UR exemplar re-check: the reported exemplar commutes with D2
+B6.13 PASS UR exemplar preserves the full 8-dim corner-wave kernel (D2 U V8 = 0) but does NOT preserve the hw=1 triplet subspace (the off-triplet residual 64*U V - V (V^T U V) is nonzero)
+B6.14 PASS UR class-scoped count: no member of the named 4096-candidate dressed class preserves the hw=1 triplet subspace (0 of 64 -- computed live)
+B6.15 PASS UR discriminating rejector: a one-bit flip of the exemplar sign field FAILS to commute with D2
+B6.16 PASS UR check is live: the identity dressing (s=0, t=0) has a nonzero commutator with D2
+B6 REPORT UR: undressed_commutes=False; visited=4096; solutions=64; triplet_preserving=0; identity_dressing_commutator_nonzero_entries=192
+B6 REPORT UR exemplar: (a1,a2,a3,b12,b13,b23)=(0, 0, 0, 1, 1, 0); t=(0, 0, 0); one_bit_flip_breaks=(1, 0, 0, 1, 1, 0); compression V^T U V = [[0, 0, 32], [32, 32, 0], [32, 32, 0]]
+B7.1 PASS mechanism note carries the R2 + two-model FLAG passage
+B7.2 PASS note blockquotes the R2 + two-model FLAG passage
+B7.3 PASS spectral-pairing note carries the R1c supplied-carrier sentence
+B7.4 PASS note blockquotes the R1c supplied-carrier sentence
+B7.5 PASS spectral-pairing note carries the supplied-surface FLAG sentence
+B7.6 PASS note blockquotes the supplied-surface FLAG sentence
+B7.7 PASS minimal-axioms note carries the proper-rotation Lattice sentence
+B7.8 PASS note blockquotes the proper-rotation Lattice sentence
+B7.9 PASS minimal-axioms note carries the proper-rotation Admissibility sentence
+B7.10 PASS note blockquotes the proper-rotation Admissibility sentence
+B7.11 PASS delivery note carries the landed hw=1 carrier-delivery sentence
+B7.12 PASS note blockquotes the landed hw=1 carrier-delivery sentence
+B8.1 PASS ledger shard file exists: minimal_axioms
+B8.2 PASS ledger shard file exists: staggered_dirac_realization_gate_note_2026-05-03
+B8.3 PASS ledger shard file exists: kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_bounded_theorem_note_2026-07-16
+B8.4 PASS ledger shard file exists: kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12
+B8.5 PASS ledger shard file exists: kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_bounded_theorem_note_2026-07-17
+B8.6 PASS ledger shard file exists: acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12
+B8.7 PASS ledger shard file exists: acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12
+B9.1 PASS note carries: ## Purpose
+B9.2 PASS note carries: ## Supplied objects and consumed readings
+B9.3 PASS note carries: ## Claims
+B9.4 PASS note carries: ### Lattice delivery of the presentation-swap rotation (T1, 
+B9.5 PASS note carries: ### Rotation conjugation equals entrywise conjugation on the
+B9.6 PASS note carries: ### The two-model pair is a proper-rotation orbit on the del
+B9.7 PASS note carries: ### K-parity equals rotation parity on the Hermitian section
+B9.8 PASS note carries: ### Operator-level covariance report for the named dressed c
+B9.9 PASS note carries: ## Gated controls
+B9.10 PASS note carries: ## Negative controls
+B9.11 PASS note carries: ## No-Go Discipline Gate
+B9.12 PASS note carries: ### N1 —
+B9.13 PASS note carries: ### N2 —
+B9.14 PASS note carries: ### N3 —
+B9.15 PASS note carries: ### N4 —
+B9.16 PASS note carries: ### N5 —
+B9.17 PASS note carries: ### N6 —
+B9.18 PASS note carries: ### N7 —
+B9.19 PASS note carries: ### N8 —
+B9.20 PASS note carries: ## Non-claims
+B9.21 PASS note carries: ## Dependency roles and status boundary
+B9.22 PASS note carries: ## Dependencies
+B9.23 PASS note carries: ### Non-citation context handles
+B9.24 PASS note carries: ## Verification
+B9.25 PASS note carries: Statuses of all dependencies are set by the independent audi
+B9.26 PASS note carries: **No check passes by literal stipulation.**
+B9.27 PASS note carries: **Status authority:** independent audit lane only.
+B9.28 PASS note carries: Context orientation only; no content is consumed from either
+B9.29 PASS note carries: On the delivered carrier the entrywise-conjugate presentatio
+B9.30 PASS note carries: The memo's live Qualification remains live and unfixed; this
+B9.31 PASS forbidden phrase absent: 'exhaust'
+B9.32 PASS forbidden phrase absent: 'only route'
+B9.33 PASS forbidden phrase absent: 'last route'
+B9.34 PASS forbidden phrase absent: 'bijection'
+B9.35 PASS forbidden phrase absent: 'final'
+B9.36 PASS forbidden phrase absent: 'forces r'
+B9.37 PASS forbidden phrase absent: 'derives r'
+B9.38 PASS forbidden phrase absent: 'selects r'
+B9.39 PASS forbidden phrase absent: 'retained'
+B9.40 PASS forbidden phrase absent: 'discharge'
+B9.41 PASS forbidden phrase absent: 'derived carrier'
+B9.42 PASS forbidden phrase absent: 'dissolv'
+B9.43 PASS forbidden phrase absent: 'retire'
+B9.44 PASS forbidden phrase absent: 'closes the'
+B9.45 PASS source-authored status/value snapshot absent: 'unaudited at writing'
+B9.46 PASS source-authored status/value snapshot absent: 'citation grades at writing'
+B9.47 PASS source-authored status/value snapshot absent: 'audited_renaming'
+B9.48 PASS source-authored status/value snapshot absent: 'honest auditor read'
+B9.49 PASS no bare decimal literals in the note
+B9.50 PASS markdown dependency link present: MINIMAL_AXIOMS_2026-06-29.md
+B9.51 PASS markdown dependency link present: STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
+B9.52 PASS markdown dependency link present: KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md
+B9.53 PASS markdown dependency link present: KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md
+B9.54 PASS markdown dependency link present: KCPT_CORNER_CARRIER_LATTICE_DELIVERY_HW1_DOUBLET_PAIR_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md
+B9.55 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md
+B9.56 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md
+B9.57 PASS every cited or handled doc path exists
+PATH note=docs/KCPT_CORNER_CARRIER_TWO_PRESENTATION_SWAP_PROPER_ROTATION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-07-18.md
+PATH runner=scripts/kcpt_corner_carrier_two_presentation_swap_proper_rotation_conjugacy_2026_07_18.py
+PATH cache=logs/runner-cache/kcpt_corner_carrier_two_presentation_swap_proper_rotation_conjugacy_2026_07_18.txt
+FLAGS: T1 delivers the mechanism note's two-presentation swap as the proper pi-rotation about [1,-1,0] (det M = +1) on the same 4^3 staggered surface as the landed hw=1 carrier, using the landed delivery standard (translation conjugacy + kernel action); T2-T4 show rotation conjugation equals entrywise conjugation on the supplied projector family and coincides with the antilinear K-exchange exactly on the Hermitian section, with off-section inequivalence witnesses; T3 reclassifies the FLAG's unfixed binary choice as a rotation-frame orientation at the C_3[111] axis and opens the predicate that any tie-breaking clause set must break proper-rotation covariance there; the note does not fix the presentation choice and does not act on the memo's live Qualification slot; B5 is weight-neutral (no weight r is referenced, forced, derived, or selected); the corner surface remains the mechanism note's supplied surface (inherited FLAG)
+RESIDUAL (declared-open, inherited): the mechanism note's live Qualification leaves the presentation orientation conditional/open; this note does not act on it
+RESIDUAL (declared-open, inherited): the corner surface is the mechanism note's supplied surface, not a physically derived carrier
+T5 REPORT (computed, consumed by no other claim): undressed U2 does not commute with D2; undressed U_R does not commute with D2; the named 4096-candidate dressed class contains 64 commuting members for U2 and 64 for U_R; none of the 64 members in either class preserves the hw=1 triplet subspace (0 of 64 each); one-bit sign-field flips of the exemplars break commutation (discriminating rejectors); the identity dressings have nonzero commutators with D2
+TOTAL: PASS=132 FAIL=0
+
+----- stderr -----
+

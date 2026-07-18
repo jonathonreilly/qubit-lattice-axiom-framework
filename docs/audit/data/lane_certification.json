@@ -109,7 +109,7 @@
         },
         {
           "claim_id": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "three_generation_observable_count_corollary_note_2026-05-03",
@@ -1461,7 +1461,7 @@
         },
         {
           "claim_id": "koide_cyclic_wilson_descendant_law_note_2026-04-18",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30",
@@ -2389,7 +2389,7 @@
         },
         {
           "claim_id": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
@@ -2935,6 +2935,6 @@
       "uncertified_count": 669
     }
   ],
-  "repo_head": "ddbbbb1c64034fd1600d89f04f5ff0a64521e52d",
+  "repo_head": "7d723d4b0cae033417a269b48f7023d627dae1a8",
   "schema": "lane_certification_v2"
 }

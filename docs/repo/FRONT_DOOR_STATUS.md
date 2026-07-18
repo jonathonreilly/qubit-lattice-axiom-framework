@@ -32,16 +32,16 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3770 |
-| Applied audit verdicts | 446 |
+| Applied audit verdicts | 445 |
 | Retained-grade rows, including boxed decorations | 394 |
 | Retained positive theorems | 76 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 304 |
 | Boxed decorations under retained parents | 14 |
 | Open gates | 2 |
-| Unaudited rows | 2944 |
+| Unaudited rows | 2946 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 21 |
+| Audited conditional rows | 20 |
 | Audited renaming rows | 18 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 62 |
@@ -106,15 +106,11 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 9 |
 | Live conditional/failed rows that would park | 0 |
-| Live rows fail-open (legacy/unversioned snapshot) | 22 |
+| Live rows fail-open (legacy/unversioned snapshot) | 21 |
 | Lane rows already in actual ready top-10 | 2 |
 | Lane rows added since prior pass | 0 |
-| Lane rows removed since prior pass | 2 |
+| Lane rows removed since prior pass | 0 |
 | Non-lane rows deferred by simulated interleave | 108 |
-
-Named lane membership churn since the prior pass:
-- removed: `gauge_vacuum_plaquette_reduction_existence_theorem_note`
-- removed: `shapiro_static_discriminator_note`
 
 Admitted ids currently absent from lane candidates:
 - `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06`

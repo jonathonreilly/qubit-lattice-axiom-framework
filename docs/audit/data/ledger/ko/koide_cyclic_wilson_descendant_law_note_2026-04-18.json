@@ -1,48 +1,24 @@
 {
-  "audit_date": "2026-07-16T02:16:25.543565+00:00",
-  "audit_invocation_history": [
-    "bd02d67b6e45472697716e1ecf8fade3"
-  ],
-  "audit_invocation_id": "bd02d67b6e45472697716e1ecf8fade3",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "koide_dweh_cyclic_compression_note_2026-04-18": "Exact algebraic cyclic compression of a given Hermitian charged block H_e in Herm(3) to the C-invariant three-real subspace span_R{I, C+C^2, i(C-C^2)}, including the response reconstruction formula."
-    },
-    "dep_claim_type": {
-      "koide_dweh_cyclic_compression_note_2026-04-18": "positive_theorem"
-    },
-    "dep_effective_status": {
-      "koide_dweh_cyclic_compression_note_2026-04-18": "retained"
-    },
-    "deps": [
-      "koide_dweh_cyclic_compression_note_2026-04-18"
-    ],
-    "helper_runner_hashes": {
-      "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
-      "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py": "e4504c7a25e82ffab2224ddeedf50b3ca98caabe5de4f395694198ce6255514b"
-    },
-    "load_bearing_score": 12.484,
-    "runner_hash": "0831a337ea3524a4fa59e27c38c4197a177c406974786eeb7f1998904282e36a",
-    "transitive_descendants": 715
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-koide_cyclic_wilson_desc-108",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The linear-algebra chain closes once a real-linear functional on the Hermitian chain image is supplied, but the packet does not derive that functional from an actual microscopic Wilson law. The Wilson-descendant identification therefore remains conditional.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "koide_cyclic_wilson_descendant_law_note_2026-04-18",
-  "claim_scope": "The algebraic cyclic-sector reconstruction and its claimed identification as an actual local Wilson descendant.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-16T02:16:25.543565+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -50,26 +26,20 @@
     "koide_dweh_cyclic_compression_note_2026-04-18"
   ],
   "direct_in_degree": 6,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
-  "helper_runner_paths": [
-    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
-    "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
-  ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 12.416,
-  "load_bearing_step": "Any local Wilson first variation on the adjacent-chain image descends canonically, after cyclic projection, to exactly three real cyclic responses that reconstruct the unique cyclic charged-lepton target.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
-  "note_hash": "eeecac1592415c8aecf1bdfa92c9e15f6cc1d8e2e34008c52cdf381ae567b4f0",
+  "note_hash": "a66d422251ef7072ff7ca22c94c88a81ce60941acb53d7181663d4fa2cf213f8",
   "note_path": "docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md",
-  "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation identifying the microscopic Wilson first variation with a real-linear functional on the adjacent-chain Hermitian image, or narrow this note's title and bottom-line claims to an abstract cyclic-compression lemma.",
-  "open_dependency_paths": [
-    "docs/KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md"
-  ],
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
   "previous_auditor_family": "codex-gpt-5",
   "previous_audits": [
     {
@@ -211,6 +181,70 @@
         "total_pass": 19
       },
       "verdict_rationale": "The load-bearing step is not a physical readout or numerical fit; it is the orthogonal-basis reconstruction of the C3-cyclic Hermitian subspace and the algebraic substitution of a=r0/3, x=r1/6, y=r2/6 into the Koide cone. The cached runner exits 0 with PASS=19 FAIL=0 and checks basis containment, cyclic projection, response reconstruction, and the scalar Koide rewrite; the four D-class checks are only an observed charged-lepton witness, not needed for theorem closure. The note clearly limits its scope by stating that the microscopic Wilson law, selector mechanism, and final readout primitive are not derived here, so the positive theorem closes at the stated algebraic target-law level."
+    },
+    {
+      "archived_at": "2026-07-18T01:01:16.565312+00:00",
+      "archived_for_note_hash": "eeecac1592415c8aecf1bdfa92c9e15f6cc1d8e2e34008c52cdf381ae567b4f0",
+      "audit_date": "2026-07-16T02:16:25.543565+00:00",
+      "audit_invocation_history": [
+        "bd02d67b6e45472697716e1ecf8fade3"
+      ],
+      "audit_invocation_id": "bd02d67b6e45472697716e1ecf8fade3",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_dweh_cyclic_compression_note_2026-04-18": "Exact algebraic cyclic compression of a given Hermitian charged block H_e in Herm(3) to the C-invariant three-real subspace span_R{I, C+C^2, i(C-C^2)}, including the response reconstruction formula."
+        },
+        "dep_claim_type": {
+          "koide_dweh_cyclic_compression_note_2026-04-18": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_dweh_cyclic_compression_note_2026-04-18": "retained"
+        },
+        "deps": [
+          "koide_dweh_cyclic_compression_note_2026-04-18"
+        ],
+        "helper_runner_hashes": {
+          "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+          "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py": "e4504c7a25e82ffab2224ddeedf50b3ca98caabe5de4f395694198ce6255514b"
+        },
+        "load_bearing_score": 12.484,
+        "runner_hash": "0831a337ea3524a4fa59e27c38c4197a177c406974786eeb7f1998904282e36a",
+        "transitive_descendants": 715
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-koide_cyclic_wilson_desc-108",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The linear-algebra chain closes once a real-linear functional on the Hermitian chain image is supplied, but the packet does not derive that functional from an actual microscopic Wilson law. The Wilson-descendant identification therefore remains conditional.",
+      "claim_scope": "The algebraic cyclic-sector reconstruction and its claimed identification as an actual local Wilson descendant.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-16T02:16:25.543565+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Any local Wilson first variation on the adjacent-chain image descends canonically, after cyclic projection, to exactly three real cyclic responses that reconstruct the unique cyclic charged-lepton target.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation identifying the microscopic Wilson first variation with a real-linear functional on the adjacent-chain Hermitian image, or narrow this note's title and bottom-line claims to an abstract cyclic-compression lemma.",
+      "open_dependency_paths": [
+        "docs/KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 4,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The runner correctly verifies the cyclic basis, projector, trace Gram matrix, three-response reconstruction, and Koide response equation as finite linear algebra. Its four class-D checks only compare the constructed circulant matrix with embedded charged-lepton masses. The retained one-hop authority establishes compression after H_e is supplied but explicitly leaves the microscopic Wilson/lattice source law open, so calling the construction the actual Wilson-descendant law exceeds the closed packet."
     }
   ],
   "prose_corrections": [],
@@ -218,14 +252,14 @@
   "relabel_date": "2026-05-06T17:45:26.976918+00:00",
   "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
   "runner_check_breakdown": {
-    "A": 15,
+    "A": 0,
     "B": 0,
     "C": 0,
-    "D": 4,
-    "total_pass": 19
+    "D": 0,
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_koide_cyclic_wilson_descendant_law.py",
-  "title": "Koide Cyclic Wilson-Descendant Law",
+  "title": "Abstract Cyclic-Compression Three-Coordinate Reconstruction Lemma",
   "transitive_descendants": 682,
-  "verdict_rationale": "The runner correctly verifies the cyclic basis, projector, trace Gram matrix, three-response reconstruction, and Koide response equation as finite linear algebra. Its four class-D checks only compare the constructed circulant matrix with embedded charged-lepton masses. The retained one-hop authority establishes compression after H_e is supplied but explicitly leaves the microscopic Wilson/lattice source law open, so calling the construction the actual Wilson-descendant law exceeds the closed packet."
+  "verdict_rationale": null
 }

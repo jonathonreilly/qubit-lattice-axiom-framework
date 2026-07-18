@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "88a65e1e319e50815ebd58d62fca46d31650d67c8a177a28bcaf1cd94bb51aa7",
+  "note_hash": "58ca06bfc520baff44a5b42938cdfb72eff892d4f4b5543e716e43aa65ecf953",
   "note_path": "docs/KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -1,60 +1,59 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_cyclic_wilson_descendant_law.py
-runner_sha256: 0831a337ea3524a4fa59e27c38c4197a177c406974786eeb7f1998904282e36a
+runner_sha256: 0fb15934c737fc029ca4b2acf262f2185287e5fea395efe9fedd2f9e9b5b401f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.11
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 ========================================================================================
-PART 1: the adjacent-chain algebra already contains the cyclic basis
+PART 0: source scope is the abstract supplied-matrix lemma
 ========================================================================================
-  [PASS (A)] The adjacent-chain algebra contains the forward cycle C  (err=0.00e+00)
-  [PASS (A)] The adjacent-chain algebra contains the backward cycle C^2 = C^dagger  (err=0.00e+00)
-  [PASS (A)] B0 = I lies in the chain algebra
-  [PASS (A)] B1 = C + C^2 lies in the chain algebra
-  [PASS (A)] B2 = i(C - C^2) lies in the chain algebra
+  [PASS (A)] The note and runner retain the required theorem boundary and reject prior overclaims  (scope firewall clean)
 
 ========================================================================================
-PART 2: the canonical C_3 projector lands exactly on the 3-response cyclic sector
+PART 1: the adjacent-chain path algebra contains the signed cyclic basis
 ========================================================================================
-  [PASS (A)] The cyclic projector fixes B0
-  [PASS (A)] The cyclic projector fixes B1
-  [PASS (A)] The cyclic projector fixes B2
-  [PASS (A)] [NUMERIC] Projected outputs are always reconstructed exactly from the 3 cyclic responses  (E11:0.00e+00; X12:0.00e+00; Y12:0.00e+00; X13:0.00e+00)
-  [PASS (A)] [NUMERIC] The cyclic basis is orthogonal for the real trace pairing  (gram=[[3.0, 0.0, 0.0], [0.0, 6.0, 0.0], [0.0, 0.0, 6.0]])
+  [PASS (A)] E12 E23 equals the long corner E13
+  [PASS (A)] E32 E21 equals the long corner E31
+  [PASS (A)] The fixed forward-cycle convention is C = E21 + E32 + E13
+  [PASS (A)] The backward cycle is C^2 = E12 + E23 + E31
+  [PASS (A)] C has order three and C^2 = C^dagger
+  [PASS (A)] B1 = C + C^2 is in the adjacent-chain algebra
+  [PASS (A)] The B2 sign is i(C-C^2) = Y12 + Y23 - Y13
 
 ========================================================================================
-PART 3: three Wilson responses reconstruct the unique cyclic Hermitian target
+PART 2: cyclic averaging is the exact rank-three Hermitian projector
 ========================================================================================
-  [PASS (A)] [NUMERIC] Any cyclic Hermitian target is reconstructed exactly from (r0, r1, r2)  (err=4.84e-16)
-  [PASS (A)] The reconstruction coefficients are exactly a = r0/3, x = r1/6, y = r2/6
-  [PASS (A)] [NUMERIC] So the actual cyclic Wilson descendant law has exactly three real channels  (responses=(-2.517143, -7.871260, 1.309826))
+  [PASS (A)] The projector fixes B0, B1, and B2
+  [PASS (A)] The projector is idempotent on a real basis of Herm(3)
+  [PASS (A)] Every projected basis element is Hermitian
+  [PASS (A)] Every projected basis element commutes with C
+  [PASS (A)] The real Hermitian image has rank exactly three  (rank=3)
+  [PASS (A)] The real trace Gram matrix is exactly diag(3,6,6)  (gram=[[3.0, 0.0, 0.0], [0.0, 6.0, 0.0], [0.0, 0.0, 6.0]])
+  [PASS (A)] All nine projected basis elements obey the trace-coordinate reconstruction
 
 ========================================================================================
-PART 4: Koide becomes one scalar equation on the cyclic Wilson responses
+PART 3: three trace coordinates reconstruct the projection of a supplied H
 ========================================================================================
-  [PASS (A)] The response-space Koide selector is exactly 2 r0^2 = r1^2 + r2^2  (because a = r0/3, x = r1/6, y = r2/6)
-  [PASS (A)] On the Koide cone, the response pair (r1, r2) is a circle of radius sqrt(2) r0  (r1 = sqrt(2) r0 cos(delta), r2 = sqrt(2) r0 sin(delta))
+  [PASS (A)] The generic supplied Hermitian matrix reconstructs symbolically
+  [PASS (A)] The three symbolic trace coordinates are real polynomials
+  [PASS (A)] The signed symbolic coordinates have the fixed normalization  (r0=sum(diagonal), r1=2 sum(xij), r2=2(y01-y02+y12))
 
 ========================================================================================
-PART 5: observed charged leptons satisfy the cyclic descendant law
+PART 4: the supplied-matrix Koide cone has the exact response equation
 ========================================================================================
-  [PASS (D)] [NUMERIC] The observed amplitude operator is exactly cyclic and reconstructed from the 3 responses  (err=9.61e-15)
-  [PASS (D)] [NUMERIC] The cyclic descendant spectrum reproduces the observed sqrt(m) triple  (evals=[ 0.71484191 10.279026   42.15281722])
-  [PASS (D)] [NUMERIC] Observed charged leptons satisfy the response-space Koide equation to PDG precision  ((r1^2+r2^2)/(2 r0^2)=0.9999815344)
-  [PASS (D)] [NUMERIC] So the observed target is one scale r0 and one phase arg(r1 + i r2) inside the cyclic Wilson law  (r0=53.146685, phase=-2.316625 rad)
+  [PASS (A)] a^2-2(x^2+y^2) equals (2r0^2-r1^2-r2^2)/18
+  [PASS (A)] The response-space equation has the required factor two
 
 Interpretation:
-  The actual cyclic Wilson descendant law is now explicit. One local
-  adjacent-chain embedding supplies the basis B0 = I, B1 = C + C^2,
-  B2 = i(C - C^2). Any Wilson first variation on that image descends
-  canonically to three real cyclic responses (r0, r1, r2), which
-  reconstruct the unique circulant Hermitian target.
-  Koide is then not a large reconstruction problem. It is one scalar
-  selector equation on those three responses: 2 r0^2 = r1^2 + r2^2.
+  The exact result is an abstract rank-three cyclic compression of a supplied
+  Hermitian matrix, reconstructed from its real trace coordinates on B0, B1,
+  and B2. The Koide cone is equivalent to 2 r0^2 = r1^2 + r2^2.
+  No microscopic source/action map, physical carrier or spectrum, scale/readout
+  map, or selector mechanism is derived by these identities.
 
-PASS=19 FAIL=0
+PASS=20 FAIL=0
 
 ----- stderr -----
 

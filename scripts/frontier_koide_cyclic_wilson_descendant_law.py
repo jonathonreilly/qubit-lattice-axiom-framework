@@ -1,56 +1,28 @@
 #!/usr/bin/env python3
-"""
-Koide cyclic Wilson-descendant law runner
-=========================================
+"""Verify an abstract cyclic-compression three-coordinate reconstruction lemma.
 
-STATUS: constructive law on the charged-lepton Koide lane
-
-Purpose:
-  Upgrade the Koide Wilson target from "find a cyclic 3-channel descendant" to
-  an explicit canonical law:
-
-    local Wilson first variation  ->  cyclic 3-response descendant
-                                   ->  unique circulant Hermitian target
-                                   ->  one scalar Koide selector equation
-
-Safe output:
-  The cyclic descendant is completely determined by three real responses on
-  the adjacent-chain algebra:
-
-      r0 = dW(B0),   r1 = dW(B1),   r2 = dW(B2)
-
-  with
-      B0 = I,
-      B1 = C + C^2,
-      B2 = i(C - C^2),
-
-  and reconstructs the unique cyclic Hermitian target
-
-      H_cyc = (r0/3) B0 + (r1/6) B1 + (r2/6) B2.
-
-  Inside this law, Koide is exactly one real equation:
-
-      2 r0^2 = r1^2 + r2^2.
+The historical runner path is retained for graph stability. This runner proves
+only finite linear algebra for a supplied ``H in Herm(3)``. It does not derive
+a microscopic Wilson first variation, an action map, a physical carrier, a
+mass spectrum, a scale/readout map, or a selector mechanism.
 """
 
 from __future__ import annotations
 
-import math
 import sys
+from pathlib import Path
 
 import numpy as np
 import sympy as sp
 
-from frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18 import (
-    chain_data,
-    real_trace_pair,
-)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md"
 
 
-def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT", cls: str = "A") -> bool:
+def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT") -> bool:
     global PASS_COUNT, FAIL_COUNT
     status = "PASS" if condition else "FAIL"
     if condition:
@@ -58,11 +30,68 @@ def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT", cls
     else:
         FAIL_COUNT += 1
     tag = f" [{kind}]" if kind != "EXACT" else ""
-    msg = f"  [{status} ({cls})]{tag} {name}"
+    message = f"  [{status} (A)]{tag} {name}"
     if detail:
-        msg += f"  ({detail})"
-    print(msg)
+        message += f"  ({detail})"
+    print(message)
     return condition
+
+
+def scope_firewall_violations(note_text: str, source_text: str) -> list[str]:
+    """Return missing scope markers or reintroduced load-bearing overclaims."""
+    required_note = (
+        "# Abstract Cyclic-Compression Three-Coordinate Reconstruction Lemma",
+        "**Type:** positive_theorem",
+        "**Status:** proposed_retained",
+        "supplied Hermitian matrix",
+        "Riesz/trace coordinates",
+        "No microscopic source or action map is derived.",
+        "No physical carrier identification is derived.",
+        "No scale or readout map is derived.",
+        "No selector mechanism is derived.",
+        "KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md",
+    )
+    forbidden_prose = (
+        "The la" + "w is now ex" + "plicit.",
+        "actual cyclic " + "Wilson descendant law",
+        "Given any local " + "Wilson first-variation law",
+        "Observed charged-" + "lepton witness",
+        "matches the actual " + "charged-lepton target",
+        "r0 = dW_" + "W(B0)",
+    )
+    forbidden_source = forbidden_prose + (
+        "cls=" + '"D"',
+        "PD" + "G",
+        "fourier_" + "matrix",
+        "part5_" + "observed",
+        "masses = " + "np.array",
+    )
+    violations = [f"missing note marker: {item}" for item in required_note if item not in note_text]
+    violations.extend(
+        f"forbidden note claim: {item}" for item in forbidden_prose if item in note_text
+    )
+    violations.extend(
+        f"forbidden runner claim: {item}" for item in forbidden_source if item in source_text
+    )
+    return violations
+
+
+def matrix_unit(i: int, j: int) -> np.ndarray:
+    out = np.zeros((3, 3), dtype=complex)
+    out[i - 1, j - 1] = 1.0
+    return out
+
+
+def chain_data() -> dict[str, np.ndarray]:
+    data = {f"E{i}{j}": matrix_unit(i, j) for i in range(1, 4) for j in range(1, 4)}
+    for i, j in ((1, 2), (1, 3), (2, 3)):
+        data[f"X{i}{j}"] = data[f"E{i}{j}"] + data[f"E{j}{i}"]
+        data[f"Y{i}{j}"] = 1j * (data[f"E{j}{i}"] - data[f"E{i}{j}"])
+    return data
+
+
+def real_trace_pair(left: np.ndarray, right: np.ndarray) -> float:
+    return float(np.trace(left @ right).real)
 
 
 def cycle_matrix() -> np.ndarray:
@@ -71,258 +100,233 @@ def cycle_matrix() -> np.ndarray:
 
 def cyclic_basis() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     c = cycle_matrix()
-    cd = c.conj().T
-    b0 = np.eye(3, dtype=complex)
-    b1 = c + cd
-    b2 = 1j * (c - cd)
-    return b0, b1, b2
+    c2 = c @ c
+    return np.eye(3, dtype=complex), c + c2, 1j * (c - c2)
 
 
-def cyclic_projector(x: np.ndarray) -> np.ndarray:
+def cyclic_projector(matrix: np.ndarray) -> np.ndarray:
     c = cycle_matrix()
-    out = np.zeros_like(x, dtype=complex)
-    ck = np.eye(3, dtype=complex)
-    for _ in range(3):
-        out += ck @ x @ ck.conj().T
-        ck = c @ ck
-    return out / 3.0
+    c2 = c @ c
+    return (matrix + c @ matrix @ c2 + c2 @ matrix @ c) / 3.0
 
 
-def reconstruct_from_cyclic_responses(r0: float, r1: float, r2: float) -> np.ndarray:
+def cyclic_responses(matrix: np.ndarray) -> tuple[float, float, float]:
+    return tuple(real_trace_pair(basis, matrix) for basis in cyclic_basis())
+
+
+def reconstruct(responses: tuple[float, float, float]) -> np.ndarray:
+    r0, r1, r2 = responses
     b0, b1, b2 = cyclic_basis()
     return (r0 / 3.0) * b0 + (r1 / 6.0) * b1 + (r2 / 6.0) * b2
 
 
-def cyclic_responses_from_h(h: np.ndarray) -> tuple[float, float, float]:
-    b0, b1, b2 = cyclic_basis()
+def hermitian_basis() -> tuple[np.ndarray, ...]:
+    data = chain_data()
     return (
-        real_trace_pair(b0, h),
-        real_trace_pair(b1, h),
-        real_trace_pair(b2, h),
+        data["E11"],
+        data["E22"],
+        data["E33"],
+        data["X12"],
+        data["X13"],
+        data["X23"],
+        data["Y12"],
+        data["Y13"],
+        data["Y23"],
     )
 
 
-def fourier_matrix() -> np.ndarray:
-    w = np.exp(2j * np.pi / 3)
-    return np.array([[1, 1, 1], [1, w, w**2], [1, w**2, w]], dtype=complex) / np.sqrt(3.0)
-
-
-def part1_chain_algebra_contains_cyclic_basis() -> None:
+def part0_scope_firewall() -> None:
     print("=" * 88)
-    print("PART 1: the adjacent-chain algebra already contains the cyclic basis")
+    print("PART 0: source scope is the abstract supplied-matrix lemma")
     print("=" * 88)
-
-    chain = chain_data()
-    b0, b1, b2 = cyclic_basis()
-    c = cycle_matrix()
-
-    forward = chain["E21"] + chain["E32"] + chain["E13"]
-    backward = chain["E12"] + chain["E23"] + chain["E31"]
-    b2_chain = chain["Y12"] + chain["Y23"] - chain["Y13"]
-
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    source_text = Path(__file__).read_text(encoding="utf-8")
+    violations = scope_firewall_violations(note_text, source_text)
     check(
-        "The adjacent-chain algebra contains the forward cycle C",
-        np.linalg.norm(forward - c) < 1e-12,
-        detail=f"err={np.linalg.norm(forward - c):.2e}",
-    )
-    check(
-        "The adjacent-chain algebra contains the backward cycle C^2 = C^dagger",
-        np.linalg.norm(backward - c.conj().T) < 1e-12,
-        detail=f"err={np.linalg.norm(backward - c.conj().T):.2e}",
-    )
-    check(
-        "B0 = I lies in the chain algebra",
-        np.linalg.norm((chain["E11"] + chain["E22"] + chain["E33"]) - b0) < 1e-12,
-    )
-    check(
-        "B1 = C + C^2 lies in the chain algebra",
-        np.linalg.norm((forward + backward) - b1) < 1e-12,
-    )
-    check(
-        "B2 = i(C - C^2) lies in the chain algebra",
-        np.linalg.norm(b2_chain - b2) < 1e-12,
+        "The note and runner retain the required theorem boundary and reject prior overclaims",
+        not violations,
+        detail="; ".join(violations) if violations else "scope firewall clean",
     )
 
 
-def part2_canonical_cyclic_projection() -> None:
+def part1_chain_algebra_contains_basis() -> None:
     print()
     print("=" * 88)
-    print("PART 2: the canonical C_3 projector lands exactly on the 3-response cyclic sector")
+    print("PART 1: the adjacent-chain path algebra contains the signed cyclic basis")
     print("=" * 88)
-
+    data = chain_data()
+    c = cycle_matrix()
+    c2 = c @ c
     b0, b1, b2 = cyclic_basis()
-    chain = chain_data()
+    forward = data["E21"] + data["E32"] + data["E13"]
+    backward = data["E12"] + data["E23"] + data["E31"]
 
     check(
-        "The cyclic projector fixes B0",
-        np.linalg.norm(cyclic_projector(b0) - b0) < 1e-12,
+        "E12 E23 equals the long corner E13",
+        np.array_equal(data["E12"] @ data["E23"], data["E13"]),
     )
     check(
-        "The cyclic projector fixes B1",
-        np.linalg.norm(cyclic_projector(b1) - b1) < 1e-12,
+        "E32 E21 equals the long corner E31",
+        np.array_equal(data["E32"] @ data["E21"], data["E31"]),
     )
     check(
-        "The cyclic projector fixes B2",
-        np.linalg.norm(cyclic_projector(b2) - b2) < 1e-12,
+        "The fixed forward-cycle convention is C = E21 + E32 + E13",
+        np.array_equal(forward, c),
+    )
+    check(
+        "The backward cycle is C^2 = E12 + E23 + E31",
+        np.array_equal(backward, c2),
+    )
+    check(
+        "C has order three and C^2 = C^dagger",
+        np.array_equal(c @ c2, b0) and np.array_equal(c2, c.conj().T),
+    )
+    check(
+        "B1 = C + C^2 is in the adjacent-chain algebra",
+        np.array_equal(forward + backward, b1),
+    )
+    check(
+        "The B2 sign is i(C-C^2) = Y12 + Y23 - Y13",
+        np.array_equal(data["Y12"] + data["Y23"] - data["Y13"], b2),
     )
 
-    witness_ok = True
-    details = []
-    for label, x in [
-        ("E11", chain["E11"]),
-        ("X12", chain["X12"]),
-        ("Y12", chain["Y12"]),
-        ("X13", chain["X13"]),
-    ]:
-        p = cyclic_projector(x)
-        p_rec = reconstruct_from_cyclic_responses(*cyclic_responses_from_h(p))
-        err = float(np.linalg.norm(p - p_rec))
-        details.append(f"{label}:{err:.2e}")
-        witness_ok &= err < 1e-12
+
+def part2_projector_and_image() -> None:
+    print()
+    print("=" * 88)
+    print("PART 2: cyclic averaging is the exact rank-three Hermitian projector")
+    print("=" * 88)
+    c = cycle_matrix()
+    b0, b1, b2 = cyclic_basis()
+    h_basis = hermitian_basis()
+    projections = [cyclic_projector(item) for item in h_basis]
+
     check(
-        "Projected outputs are always reconstructed exactly from the 3 cyclic responses",
-        witness_ok,
-        detail="; ".join(details),
-        kind="NUMERIC",
+        "The projector fixes B0, B1, and B2",
+        all(np.array_equal(cyclic_projector(item), item) for item in (b0, b1, b2)),
+    )
+    check(
+        "The projector is idempotent on a real basis of Herm(3)",
+        all(np.allclose(cyclic_projector(item), item) for item in projections),
+    )
+    check(
+        "Every projected basis element is Hermitian",
+        all(np.allclose(item, item.conj().T) for item in projections),
+    )
+    check(
+        "Every projected basis element commutes with C",
+        all(np.allclose(item @ c, c @ item) for item in projections),
+    )
+
+    real_columns = [np.concatenate((item.real.ravel(), item.imag.ravel())) for item in projections]
+    image_rank = int(np.linalg.matrix_rank(np.column_stack(real_columns), tol=1e-12))
+    check(
+        "The real Hermitian image has rank exactly three",
+        image_rank == 3,
+        detail=f"rank={image_rank}",
     )
 
     gram = np.array(
-        [[real_trace_pair(a, b) for b in [b0, b1, b2]] for a in [b0, b1, b2]],
-        dtype=float,
+        [
+            [real_trace_pair(left, right) for right in (b0, b1, b2)]
+            for left in (b0, b1, b2)
+        ]
     )
     check(
-        "The cyclic basis is orthogonal for the real trace pairing",
-        np.allclose(gram, np.diag([3.0, 6.0, 6.0])),
+        "The real trace Gram matrix is exactly diag(3,6,6)",
+        np.array_equal(gram, np.diag([3.0, 6.0, 6.0])),
         detail=f"gram={gram.tolist()}",
-        kind="NUMERIC",
+    )
+    check(
+        "All nine projected basis elements obey the trace-coordinate reconstruction",
+        all(
+            np.allclose(reconstruct(cyclic_responses(item)), projected)
+            for item, projected in zip(h_basis, projections)
+        ),
     )
 
 
-def part3_actual_descendant_law() -> None:
+def part3_exact_supplied_matrix_reconstruction() -> None:
     print()
     print("=" * 88)
-    print("PART 3: three Wilson responses reconstruct the unique cyclic Hermitian target")
+    print("PART 3: three trace coordinates reconstruct the projection of a supplied H")
     print("=" * 88)
-
-    rng = np.random.default_rng(20260418)
-    m = rng.normal(size=(3, 3)) + 1j * rng.normal(size=(3, 3))
-    h = m + m.conj().T
-    h_cyc = cyclic_projector(h)
-    r0, r1, r2 = cyclic_responses_from_h(h_cyc)
-    h_rec = reconstruct_from_cyclic_responses(r0, r1, r2)
-
-    a = r0 / 3.0
-    x = r1 / 6.0
-    y = r2 / 6.0
-    b0, b1, b2 = cyclic_basis()
-
-    check(
-        "Any cyclic Hermitian target is reconstructed exactly from (r0, r1, r2)",
-        np.linalg.norm(h_rec - h_cyc) < 1e-12,
-        detail=f"err={np.linalg.norm(h_rec - h_cyc):.2e}",
-        kind="NUMERIC",
+    d0, d1, d2, x01, x02, x12, y01, y02, y12 = sp.symbols(
+        "d0 d1 d2 x01 x02 x12 y01 y02 y12", real=True
     )
-    check(
-        "The reconstruction coefficients are exactly a = r0/3, x = r1/6, y = r2/6",
-        np.linalg.norm(h_rec - (a * b0 + x * b1 + y * b2)) < 1e-12,
+    h = sp.Matrix(
+        [
+            [d0, x01 - sp.I * y01, x02 - sp.I * y02],
+            [x01 + sp.I * y01, d1, x12 - sp.I * y12],
+            [x02 + sp.I * y02, x12 + sp.I * y12, d2],
+        ]
     )
-    check(
-        "So the actual cyclic Wilson descendant law has exactly three real channels",
-        True,
-        detail=f"responses=({r0:.6f}, {r1:.6f}, {r2:.6f})",
-        kind="NUMERIC",
+    c = sp.Matrix([[0, 0, 1], [1, 0, 0], [0, 1, 0]])
+    c2 = c**2
+    b0, b1, b2 = sp.eye(3), c + c2, sp.I * (c - c2)
+    projected = sp.simplify((h + c * h * c2 + c2 * h * c) / 3)
+    responses = tuple(sp.simplify(sp.trace(basis * h)) for basis in (b0, b1, b2))
+    reconstructed = sp.simplify(
+        (responses[0] / 3) * b0
+        + (responses[1] / 6) * b1
+        + (responses[2] / 6) * b2
+    )
+    expected_responses = (
+        d0 + d1 + d2,
+        2 * (x01 + x02 + x12),
+        2 * (y01 - y02 + y12),
     )
 
+    check(
+        "The generic supplied Hermitian matrix reconstructs symbolically",
+        sp.simplify(projected - reconstructed) == sp.zeros(3),
+    )
+    check(
+        "The three symbolic trace coordinates are real polynomials",
+        all(sp.simplify(sp.im(item)) == 0 for item in responses),
+    )
+    check(
+        "The signed symbolic coordinates have the fixed normalization",
+        all(
+            sp.simplify(actual - expected) == 0
+            for actual, expected in zip(responses, expected_responses)
+        ),
+        detail="r0=sum(diagonal), r1=2 sum(xij), r2=2(y01-y02+y12)",
+    )
 
-def part4_koide_selector_equation() -> None:
+
+def part4_koide_coordinate_equivalence() -> None:
     print()
     print("=" * 88)
-    print("PART 4: Koide becomes one scalar equation on the cyclic Wilson responses")
+    print("PART 4: the supplied-matrix Koide cone has the exact response equation")
     print("=" * 88)
-
     r0, r1, r2 = sp.symbols("r0 r1 r2", real=True)
-    lhs = (r0 / 3) ** 2 - 2 * ((r1 / 6) ** 2 + (r2 / 6) ** 2)
-    rhs = (2 * r0**2 - r1**2 - r2**2) / 18
-
+    cone_residual = (r0 / 3) ** 2 - 2 * ((r1 / 6) ** 2 + (r2 / 6) ** 2)
+    response_residual = (2 * r0**2 - r1**2 - r2**2) / 18
     check(
-        "The response-space Koide selector is exactly 2 r0^2 = r1^2 + r2^2",
-        sp.simplify(lhs - rhs) == 0,
-        detail="because a = r0/3, x = r1/6, y = r2/6",
-    )
-
-    delta, a = sp.symbols("delta a", real=True, positive=True)
-    r0_k = 3 * a
-    r1_k = 3 * sp.sqrt(2) * a * sp.cos(delta)
-    r2_k = 3 * sp.sqrt(2) * a * sp.sin(delta)
-    check(
-        "On the Koide cone, the response pair (r1, r2) is a circle of radius sqrt(2) r0",
-        sp.simplify(r1_k**2 + r2_k**2 - 2 * r0_k**2) == 0,
-        detail="r1 = sqrt(2) r0 cos(delta), r2 = sqrt(2) r0 sin(delta)",
-    )
-
-
-def part5_observed_charged_lepton_witness() -> None:
-    print()
-    print("=" * 88)
-    print("PART 5: observed charged leptons satisfy the cyclic descendant law")
-    print("=" * 88)
-
-    masses = np.array([0.51099895, 105.6583755, 1776.86], dtype=float)
-    amps = np.sqrt(masses)
-    f = fourier_matrix()
-    h_obs = f @ np.diag(amps) @ f.conj().T
-    r0, r1, r2 = cyclic_responses_from_h(h_obs)
-    h_rec = reconstruct_from_cyclic_responses(r0, r1, r2)
-    evals = np.linalg.eigvalsh(h_obs)
-    ratio = (r1**2 + r2**2) / (2.0 * r0**2)
-    phase = math.atan2(r2, r1)
-
-    check(
-        "The observed amplitude operator is exactly cyclic and reconstructed from the 3 responses",
-        np.linalg.norm(h_rec - h_obs) < 1e-10,
-        detail=f"err={np.linalg.norm(h_rec - h_obs):.2e}",
-        kind="NUMERIC",
-        cls="D",
+        "a^2-2(x^2+y^2) equals (2r0^2-r1^2-r2^2)/18",
+        sp.simplify(cone_residual - response_residual) == 0,
     )
     check(
-        "The cyclic descendant spectrum reproduces the observed sqrt(m) triple",
-        np.max(np.abs(np.sort(evals) - np.sort(amps))) < 1e-10,
-        detail=f"evals={np.round(np.sort(evals), 9)}",
-        kind="NUMERIC",
-        cls="D",
-    )
-    check(
-        "Observed charged leptons satisfy the response-space Koide equation to PDG precision",
-        abs(ratio - 1.0) < 1e-4,
-        detail=f"(r1^2+r2^2)/(2 r0^2)={ratio:.10f}",
-        kind="NUMERIC",
-        cls="D",
-    )
-    check(
-        "So the observed target is one scale r0 and one phase arg(r1 + i r2) inside the cyclic Wilson law",
-        True,
-        detail=f"r0={r0:.6f}, phase={phase:.6f} rad",
-        kind="NUMERIC",
-        cls="D",
+        "The response-space equation has the required factor two",
+        sp.simplify(cone_residual - (r0**2 - r1**2 - r2**2) / 18) != 0,
     )
 
 
 def main() -> int:
-    part1_chain_algebra_contains_cyclic_basis()
-    part2_canonical_cyclic_projection()
-    part3_actual_descendant_law()
-    part4_koide_selector_equation()
-    part5_observed_charged_lepton_witness()
+    part0_scope_firewall()
+    part1_chain_algebra_contains_basis()
+    part2_projector_and_image()
+    part3_exact_supplied_matrix_reconstruction()
+    part4_koide_coordinate_equivalence()
 
     print()
     print("Interpretation:")
-    print("  The actual cyclic Wilson descendant law is now explicit. One local")
-    print("  adjacent-chain embedding supplies the basis B0 = I, B1 = C + C^2,")
-    print("  B2 = i(C - C^2). Any Wilson first variation on that image descends")
-    print("  canonically to three real cyclic responses (r0, r1, r2), which")
-    print("  reconstruct the unique circulant Hermitian target.")
-    print("  Koide is then not a large reconstruction problem. It is one scalar")
-    print("  selector equation on those three responses: 2 r0^2 = r1^2 + r2^2.")
+    print("  The exact result is an abstract rank-three cyclic compression of a supplied")
+    print("  Hermitian matrix, reconstructed from its real trace coordinates on B0, B1,")
+    print("  and B2. The Koide cone is equivalent to 2 r0^2 = r1^2 + r2^2.")
+    print("  No microscopic source/action map, physical carrier or spectrum, scale/readout")
+    print("  map, or selector mechanism is derived by these identities.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1

@@ -20,11 +20,12 @@ verbatim from:
 Companion structural inputs already in the one-hop deps:
 
 - [`KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md`](KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)
-  — cyclic 3-response descendant law on `B0 = I`, `B1 = C + C^2`,
-  `B2 = i(C - C^2)`.
+  — abstract three-coordinate reconstruction of the cyclic projection of a
+  supplied `H in Herm(3)` on `B0 = I`, `B1 = C + C^2`, and
+  `B2 = i(C - C^2)`; no Wilson responses are derived.
 - [`KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md`](KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md)
-  — exact charged Hermitian source law compresses canonically to those
-  three cyclic channels.
+  — exact algebraic compression of a supplied Hermitian block to those three
+  cyclic coordinates.
 
 This note does not derive the spectral bridge; it imports the algebraic
 identity from the narrow theorem above and pulls back the target-size
@@ -228,13 +229,14 @@ Koide lane itself asks for.
 
 The companion
 [KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md](./KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)
-now makes Step 2 explicit: the cyclic descendant is exactly the `3`-response
-law on
-`B0 = I`, `B1 = C + C^2`, `B2 = i(C - C^2)`, and the selector equation becomes
-the response-space circle law `2 r0^2 = r1^2 + r2^2`. The companion
+does not perform Step 2. It makes only the target-space algebra exact: after a
+Hermitian matrix has been supplied, its cyclic projection is reconstructed
+from the three trace coordinates on `B0 = I`, `B1 = C + C^2`, and
+`B2 = i(C - C^2)`, and the cone equation is equivalent to
+`2 r0^2 = r1^2 + r2^2`. The companion
 [KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md](./KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md)
-now proves that the exact charged Hermitian source law compresses canonically
-to those same three cyclic channels.
+supplies only the exact compression of a given Hermitian block to those same
+three cyclic coordinates.
 
 ## What this does not yet close
 

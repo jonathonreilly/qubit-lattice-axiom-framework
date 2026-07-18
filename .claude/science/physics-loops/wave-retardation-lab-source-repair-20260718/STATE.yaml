@@ -1,0 +1,65 @@
+loop_slug: wave-retardation-lab-source-repair-20260718
+mode: run
+date_started: 2026-07-18
+target: best-honest-status
+current_goal: >-
+  Repair the exact latest failed-audit source defects in the finite
+  wave-retardation velocity-sweep packet without performing an audit.
+branch: codex/science-fix-wave-retardation-lab-20260718-0841
+base_commit_at_start: f9b05e3cc9ef7496543c9a8bea60059a320cde1e
+lock_status: >-
+  Dedicated worktree is the single-writer surface; shared-checkout lock
+  skipped per the repository protocol.
+cycle_count: 1
+block_count: 1
+active_route: controlled_finite_carrier_counterchecks
+hard_residual: >-
+  No supplied continuum limit, laboratory observable map, physical
+  calibration, or redesign that makes velocity the only independent control.
+produced_claim_id: wave_retardation_lab_prediction_note
+actual_current_surface_status: bounded finite-carrier negative
+trace_class: direct_blocker_closure
+reachability_to_target: closes_latest_source_defects
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: >-
+  This is a source repair with independent review and audit still required;
+  it does not assign an effective retained status.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/WAVE_RETARDATION_LAB_PREDICTION_NOTE.md
+  - scripts/wave_retardation_velocity_sweep.py
+  - scripts/wave_retarded_gravity.py
+  - logs/runner-cache/wave_retardation_velocity_sweep.txt
+  - logs/runner-cache/wave_retarded_gravity.txt
+  - scripts/wave_retardation_continuum_limit.py
+  - logs/runner-cache/wave_retardation_continuum_limit.txt
+  - docs/WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md
+  - docs/WAVE_RETARDED_GRAVITY_NOTE.md
+  - .claude/science/physics-loops/wave-retardation-lab-source-repair-20260718/
+open_imports_for_stronger_claim:
+  - a validated continuum limit
+  - a physical calibration and laboratory observable map
+  - an independently justified carrier redesign
+  - a velocity-only identification strategy beyond the timing constraint
+no_go_routes:
+  - legacy direct-velocity sweep changed trajectory range and overshot
+  - legacy allegedly fixed trajectory changed lattice, onset, and measurement
+  - fixed-final controlled sweep leaves buffer coupled
+  - fixed-buffer controlled sweep leaves measurement time coupled
+  - same-speed shifted path changes the finite output
+  - same trajectory with varied buffer changes the finite output
+trace_gate_classification: direct_blocker_closure
+review_disposition: fresh_single_lens_pass
+audit_compatibility_validation: pending_disposable_worktree
+pr_status: pending
+pr_url: null
+next_exact_action: >-
+  Complete deterministic and disposable compatibility validation, integrate
+  latest main, and open one unmerged ready PR if all caused checks pass.
+stop_condition: >-
+  One honestly bounded, source-repaired, reviewed, compatibility-tested PR is
+  open without an audit verdict or merge.

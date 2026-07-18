@@ -105,7 +105,11 @@ is made in either direction.
 
 **T3 (finite-volume factorial-tail bound).** With `J = max_b ||h_b||`
 and `M = |E(Λ)|` the number of bonds of the finite region, iterating the
-commutator norm inequality `||[P, Q]|| ≤ 2||P||·||Q||` over the bond sum
+commutator norm inequality `||[P, Q]|| ≤ 2||P||·||Q||` — itself rebuilt
+here rather than cited: `||PQ − QP|| ≤ ||PQ|| + ||QP|| ≤ 2||P||·||Q||`
+by the triangle inequality and submultiplicativity of the operator norm,
+with the runner gating the squared-norm chain on an exact instance —
+over the bond sum
 gives `||ad_H^k A|| ≤ (2 J M)^k ||A||` and hence, for `d = d(X, Y)`,
 
 > `||[A_X(t), B_Y]|| ≤ 2 ||A|| ||B|| Σ_{k ≥ d} (c |t|)^k / k!
@@ -187,4 +191,4 @@ Mutation checks (one load-bearing mutation per check family, reverted)
 are recorded in the review history and PR body.
 
 Measured runner total after final verification:
-`TOTAL: PASS=16 FAIL=0`.
+`TOTAL: PASS=17 FAIL=0`.

@@ -24,7 +24,16 @@ It deliberately does NOT try to:
   - Verify the new derivation closes the chain (that belongs to review-loop
     before landing and then to the independent audit lane after merge)
   - Run the modified runner (pre-commit hook + CI handle that)
-  - Re-merge the new branch (the PR is for human review)
+  - Re-merge the new branch. Opened PRs land through the review-loop
+    skill's parallel default entry (each review worker reviews, fixes,
+    confirms, lands, and closes its PR end to end) — not by direct merge,
+    which bypasses the stage-18 citation-graph delta gate.
+
+Concurrency note: each attempt is one codex process for up to
+--codex-timeout-sec. Attempts count against the machine's shared codex
+pool alongside audit-lane seats and review-loop reviewers (keep the TOTAL
+at or under ~8-10; measured 2026-07-17: ~18 concurrent processes collapsed
+audit-lane throughput ~20x).
 
 Usage:
 
@@ -52,7 +61,7 @@ State file (`logs/science-fix-state.json`):
       "attempts": {
         "<claim_id>": {
           "attempted_at": "<utc iso>",
-          "outcome": "in_progress" | "stale_in_progress" | "pr_opened" | "no_edits" | "declined_too_hard" | "stalled_no_edits" | "thinking_only" | "timeout_no_edits" | "pr_opened_partial_stalled" | "pr_opened_partial_thinking_only" | "pr_opened_partial_timeout" | "codex_failed" | "run_error" | "error" | "push_failed" | "pr_failed" | "skipped_ratified_on_main",
+          "outcome": "in_progress" | "stale_in_progress" | "pr_opened" | "no_edits" | "declined_too_hard" | "stalled_no_edits" | "thinking_only" | "timeout_no_edits" | "pr_opened_partial_stalled" | "pr_opened_partial_thinking_only" | "pr_opened_partial_timeout" | "codex_failed" | "run_error" | "error" | "push_failed" | "pr_failed" | "skipped_ratified_on_main" | "skipped_open_pr_exists",
           "worker_id": "<pid-run_id>",
           "branch": "<branch>",
           "pr_url": "<url>",
@@ -113,7 +122,7 @@ LOG_DIR = REPO_ROOT / "logs" / "science-fix-runs"
 DEFAULT_CODEX_TIMEOUT = 1800     # 30 min absolute max
 DEFAULT_EDIT_DEADLINE = 900      # 15 min: must have started editing
 DEFAULT_STALE_AFTER = 240        # 4 min stale-kill
-DEFAULT_MODEL = "gpt-5.5"
+DEFAULT_MODEL = "gpt-5.6-sol"
 DEFAULT_REASONING = "xhigh"
 DIFFICULTY_ORDER = {"easy": 0, "medium": 1, "hard": 2, "unknown": 3}
 
@@ -161,6 +170,75 @@ CATEGORIES = (
     "conditional_scope_too_broad",
     "conditional_missing_bridge_theorem",
 )
+# Scheduling rank within a difficulty bucket: mechanical categories close
+# fastest per token (renaming/numerical/artifact), real-science bridge rows
+# last (measured 2026-07-10..15: bridge attempts dominated the failure share).
+# Keep in lockstep with CATEGORIES; the parity test enforces it.
+CATEGORY_RANK = {
+    "renaming": 0,
+    "numerical_match": 1,
+    "conditional_runner_artifact_issue": 2,
+    "conditional_scope_too_broad": 3,
+    "open_gate": 4,
+    "failed": 5,
+    "conditional_missing_bridge_theorem": 6,
+}
+
+PUBLICATION_LANE_MANIFEST = (
+    REPO_ROOT / "docs" / "audit" / "data" / "publication_lane_manifest.json"
+)
+
+
+def publication_lane_ids() -> set:
+    """Admitted ids from the tracked publication-lane manifest (the review-
+    lane-owned eligibility authority). Fix effort aims at the publication
+    gap first — the same retarget philosophy as the audit lane's shadow
+    interleave. Empty set (no boost) when the manifest is absent."""
+    try:
+        data = json.loads(PUBLICATION_LANE_MANIFEST.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return set()
+    return set(data.get("admitted") or [])
+
+
+def candidate_sort_key(row: dict, lane_ids: set) -> tuple:
+    """Difficulty first (easy wins), publication-lane rows before non-lane,
+    mechanical categories before bridge science, then impact (descendants)."""
+    return (
+        DIFFICULTY_ORDER.get(row.get("difficulty", "unknown"), 99),
+        0 if row["claim_id"] in lane_ids else 1,
+        CATEGORY_RANK.get(row["category"], 99),
+        -row["descendants"],
+    )
+
+
+def open_science_fix_pr(claim_id: str) -> str | None:
+    """URL of an existing OPEN science-fix PR for this claim, from any
+    workspace. State files are per-clone, so two clones can both pass the
+    local reservation; the remote PR list is the shared truth. Returns None
+    (proceed) when gh is unavailable — the local state still dedupes within
+    this clone."""
+    try:
+        proc = subprocess.run(
+            ["gh", "pr", "list", "--state", "open", "--limit", "10",
+             "--search", f"science-fix: {claim_id} in:title",
+             "--json", "title,url"],
+            capture_output=True, text=True, cwd=REPO_ROOT, timeout=30,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return None
+    if proc.returncode != 0:
+        return None
+    try:
+        prs = json.loads(proc.stdout or "[]")
+    except json.JSONDecodeError:
+        return None
+    for pr in prs:
+        if claim_id in (pr.get("title") or ""):
+            return pr.get("url")
+    return None
+
+
 CATEGORY_HEADER_RE = re.compile(r"^## audited_(\w+)|^## (open_gate)\b", re.MULTILINE)
 ROW_BLOCK_RE = re.compile(
     r"^### `([^`]+)`\s*\n"
@@ -843,12 +921,16 @@ def main() -> int:
     # Filter by allowed difficulties.
     candidates = [r for r in candidates if r["difficulty"] in allowed_difficulties]
 
-    # Sort: easy (rank 0) → medium (1) → hard (2) → unknown (3),
-    # then descendants desc so highest-leverage easy attempted first.
-    candidates.sort(key=lambda r: (
-        DIFFICULTY_ORDER.get(r["difficulty"], 99),
-        -r["descendants"],
-    ))
+    # Sort: easy (rank 0) → medium (1) → hard (2) → unknown (3); within a
+    # bucket, publication-lane rows first (chip at the publication gap),
+    # then mechanical categories before bridge science, then descendants
+    # desc so the highest-leverage row of each kind goes first.
+    lane_ids = publication_lane_ids()
+    in_lane = sum(1 for r in candidates if r["claim_id"] in lane_ids)
+    if lane_ids:
+        print(f"Publication-lane candidates: {in_lane}/{len(candidates)} "
+              "(scheduled first within each difficulty bucket)")
+    candidates.sort(key=lambda r: candidate_sort_key(r, lane_ids))
 
     # Atomic claim: takes the lock, marks N rows as in_progress, and
     # returns them. Other workers running this loop in parallel will skip
@@ -898,6 +980,15 @@ def main() -> int:
             "category": r["category"],
             "descendants": r["descendants"],
         }
+        existing_pr = open_science_fix_pr(cid)
+        if existing_pr:
+            print(f"  skip: open PR already exists for this claim "
+                  f"(another workspace): {existing_pr}")
+            outcome["outcome"] = "skipped_open_pr_exists"
+            outcome["pr_url"] = existing_pr
+            record_outcome(cid, outcome)
+            continue
+
         try:
             worktree, branch = make_worktree(cid, run_id)
         except Exception as e:

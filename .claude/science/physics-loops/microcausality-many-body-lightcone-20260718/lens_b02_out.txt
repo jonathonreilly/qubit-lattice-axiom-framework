@@ -1,0 +1,1846 @@
+2026-07-18T12:34:06.997220Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f7538-3b7c-7f93-b6a7-6f17ce2efbcb
+--------
+user
+READ-ONLY adversarial review lens (combined: algebra + overclaim + governance), microcausality block02. No file writes, no git. Verdict = final message.
+Read exactly: (1) docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md (2) scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py (3) docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md
+Attack: (a) ALGEBRA — W3's count logic (does a support of s sites really meet at most 6s bonds INCLUDING boundary effects? does each bond add at most 2 sites? is the product bound's indexing right?); W5's term-ratio chain (is a_{k+1}/a_k <= 12J|t|(m+2k)/(k+1) actually derived from the W3/W4 bounds — check the algebra N_{k+1}/N_k <= 6(m+2k) and the k! division; the m>=2 absorption; is the geometric domination applied from k=d correctly?); the absolute-convergence step; the breathing exhibit's claims vs gates. Verify with python3 HEREDOC, no writes. (b) OVERCLAIM — "volume-uniform" scoping (per-coefficient vs window vs all-time); "local data only"; quantifier lessons; does anything oversell vs the sibling's named-open sentence? (c) GOVERNANCE — coined terms ("breathing"? check it's descriptive), N1-N8 completeness, frontmatter deps, quote fidelity vs file 3.
+Output: "VERDICT: <n> blocker(s), <m> major, <k> minor" + numbered findings with exact quotes and narrowest fixes; if clean, the three closest calls.
+
+codex
+I’m using the review-loop skill because this is an explicit adversarial review request. I’ll read its instructions and only the three named files, then run an in-memory `python3` heredoc check—no writes and no git.
+exec
+/bin/zsh -lc "sed -n '1,240p' '/Users/jonBridger/.codex/skills/review-loop/SKILL.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+---
+name: review-loop
+description: Use when an LLM agent needs to run `/review-loop`, review branch changes, run parallel physics-specific reviewers, identify overclaims/imported values/support-only material, apply narrow honest fixes, verify audit-system compatibility without applying audit verdicts, and re-review only files changed by those fixes.
+---
+
+# Review Loop
+
+## Skill Freshness
+
+Before applying this skill, perform the repo skill freshness check described in
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
+this `SKILL.md` exists on `origin/main`, follow that version for the current
+task.
+
+Run a local review/fix/re-review loop for this physics repo. This is not a
+generic software review. Its job is to protect the live claim boundary:
+retained/Nature-grade claims must have artifact support, imported values must
+be explicit, and support-only results must not be promoted by prose.
+
+## Model And Tool Boundary
+
+Review-loop is a text/code/math review path. Run it with the user's configured
+highest-tier Codex reviewer model and maximum available reasoning for this
+repo (currently GPT-5.5 at extra-high/xhigh reasoning in the local Codex
+configuration). Do not switch to lower-reasoning models for convenience, and
+do not use image-generation, image-editing, presentation, document-rendering,
+or visual-generation tools unless the user explicitly asks for a separate
+visual artifact task.
+
+If a run surfaces an image-generation model/tool error such as a stale
+`gpt-image-*` tool configuration, treat it as a local Codex tooling/config
+problem, not as part of review-loop. Do not retry the review by invoking
+imagegen, changing the science-review model, or routing science review through
+visual tooling.
+
+This skill is **review only**. It may make branch/package hygiene changes that
+allow the independent audit system to parse and queue claims, but it must not
+apply audit verdicts, write `audited_clean`, or run the audit worker.
+Audit results have a strict provenance boundary: review-loop must never land
+PR-submitted audit verdicts, audit-status promotions/demotions, effective-status
+changes, auditor transcripts, or `apply_audit.py` outputs as authority. Audits
+come only from the independent post-landing audit loop. PRs may land source
+repairs, runners, controlled-data dispatch sidecars, and explicit audit or
+re-audit targeting metadata when those are review-clean; they may not carry the
+answer to the audit they request.
+It must not create or open pull requests. When reviewing an existing PR or
+branch, review-loop either fixes/narrows that existing landing path and lands it
+when requested, or rejects/closes it with a clear reason. Salvage, dependency
+chain repair, audit queue regeneration, and parent re-audit gates are part of
+that same landing path, not follow-up PRs.
+Delete a closed PR's head branch **only when durable content actually landed** --
+its reviewed content was salvaged to `main`, or it was merged. In that case run
+`gh pr close <N> --delete-branch` (or `git push origin --delete <head>` after a
+manual close) so stale heads do not accumulate on `origin` (review-loop closes
+rather than merges, so GitHub's auto-delete-on-merge never fires). **Do NOT
+delete the head branch when a PR is closed without landing its content** --
+rejected as non-landable with nothing salvaged, or with salvage deferred to a
+later pass: keep that branch as the working handle on the un-landed work. Never
+delete a head that still backs another open PR, nor `main` or a protected
+branch. (Closed PRs retain their commits either way; the live branch matters as
+the recovery handle precisely when the content did not land.)
+It auto-corrects status vocabulary and terminology so a PR follows repo
+conventions by running `scripts/vocab_lint.py --fix` on all
+branch-modified files before any landing gate. Vocabulary is canonical
+in
+[`docs/repo/controlled_vocabulary.yaml`](../../../repo/controlled_vocabulary.yaml)
+(design in
+[`VOCABULARY_HYGIENE_DESIGN.md`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)).
+Routine local drift that has a non-link-aware rewrite rule, such as legacy
+aliases and deprecated wording, is rewritten mechanically as part of the
+same review commit; this is never a science blocker. Link-aware filename
+suffix migrations and F-letter finding-label migrations are reported but
+deferred to Cleanup-2 tooling. Genuinely new terms, pending link-aware
+renames, or pending F-letter migrations that `vocab_lint` cannot
+mechanically rewrite are recorded as
+`prose_status: needs_human_vocab_decision` for the periodic
+vocab-extension review; they do not block the landing. Review-loop
+must not introduce new repo-wide axioms, new theory
+language, new retained-surface claims, framework primitives, or new
+foundational premises without explicit user approval. Imports are allowed for
+bounded theorem surfaces when they are scoped, labelled, and
+dependency-checked; repo-wide axiom additions and primitive additions are not
+review-loop fixes.
+
+Review-loop must keep accepted premise classes distinct. Repo-wide axioms and
+explicitly approved framework primitives are registered in
+`docs/audit/data/axiom_premise_nodes.json` and chain-satisfy dependencies
+without making downstream rows `retained_bounded`. Tier-A admitted derivation
+targets are registered in `docs/audit/data/tier_a_admissions.json` and
+chain-satisfy only at `retained_bounded` until retired by a retained
+derivation. Record is part of the approved `minimal_axioms` node in its narrow
+permanent-record form, not a Tier-A admission; the older
+`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` parent is not an axiom-premise node.
+The scale-reference primitive is the approved units primitive, not a Tier-A
+admission or a bounded Planck import. The kinetic-isotropy primitive is the
+approved structural OS0 kinetic-form isotropy `c_t = c_s`, not a Tier-A
+admission or a bounded-status source; it supplies no dynamics, Lorentz-closure
+theorem, absolute scale, spacing-ratio theorem, mass ratio, coupling, mixing
+angle, phase, selector, readout bridge, probability rule, normalization rule,
+or empirical match. New axioms and new primitives both require explicit owner
+approval and a reviewed registry/policy update before review-loop may treat
+them as accepted premises.
+Before naming a changed dependency as an import, wall, Tier-A admission, or
+bounded-status source, perform the primitive registry check in
+`docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. In particular, if
+the dependency is only the registered `scale_reference_primitive`, treat the
+Planck scale reference as already granted units conversion and do not mark the
+row `retained_bounded` on that basis. If the dependency is only the registered
+`kinetic_isotropy_primitive`, treat `c_t = c_s` as already granted structural
+kinetic-form isotropy and do not bound the row on that basis; audit only the
+extra dynamics, closure theorem, observable, or empirical content actually
+claimed. If the dependency is only the registered `realized_state_primitive`,
+treat pointwise evaluation at the supplied realized state as already granted
+and do not bound the row on that basis; audit only any averaging, typicality
+or genericity predicate, weighting, or state-contingent value actually
+claimed.
+
+The framework baseline (per `MINIMAL_AXIOMS_2026-06-29.md`) is the four named
+axioms Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
+lattice with nearest-neighbor adjacency, standard translations, and proper
+cubic rotations about each site; no site is privileged, and sites are
+distinguished by the supplied lattice structure alone. Qubit is the domain of
+local possibilities with full one-site algebraic presentation `M_2(ℂ)`;
+`Cl(3,0)` is equivalent notation, not extra primitive structure, and no
+possibility is privileged; possibilities are distinguished by the supplied
+algebraic structure alone.
+Admissibility is one fixed finite-neighborhood rule, the same at every lattice
+translate; for each site, the available possibilities are determined by, and
+vary with, the nearest-neighbor conditions, consistent with local records. A
+record, when present, locks exactly one admissible local possibility. A site
+never carries more than one record; records are permanent. Only records are
+readable; a readout value is
+determined by record content alone;
+finite scalar readout is additive over finite pairwise-disjoint record
+collections. A state is a configuration of records. A law privileges no states:
+its domain is a supplied condition, and where that condition holds it gives
+exactly one answer. Additional
+structures such as readout-context selection, decomposition, `K`/CPT
+structure, sector-generation rules, weighting, normalization, probability,
+measurement/decoherence dynamics, record-production dynamics, physical
+persistence dynamics, occurrence rules, update laws, time metric,
+within-sector data, occupancy rules, P2/modulus, log-det readouts,
+source/action bridges, scale, local observability, law-admissibility or
+transition relations, kinetic-branch selection, or arbitrary observable
+identification remain compatible downstream targets, but require derivation,
+bridge, explicit admission, or approved primitive registration before use as
+load-bearing content. Do not
+land new science under bare letter-number names such as `A1`, `A2`, `G1`,
+or `R3`; those labels are overloaded with axioms, assumptions, Lie
+types, lane stages, route codes, and branch blocks. Use the explicit
+scientific name on live science surfaces; archival aliases belong
+only in clearly historical work-history/archive material. Review-loop must
+not treat the framework baseline as a
+new axiom, new admitted premise, regulator interpretation, or optional
+theory language. Correcting a PR back to this repo language is allowed. This
+does not promote downstream science by itself: physical-species
+identifications, `C_3`-breaking selectors, kinetic-branch selectors,
+readout/scale/unit bridges, and empirical matches remain separate
+bounded/open inputs unless they have their own retained-grade derivation and
+independent audit closure.
+
+The bar is intentionally high: if review-loop is doing its job, the later
+fresh-context audit should be mostly confirmatory. Do not pass branches that
+leave the audit lane to discover basic claim-boundary, dependency-graph,
+status-vocabulary, or runner-validity defects. Do not lose durable science
+when a PR fails that bar: before closing or rejecting a branch, run the
+salvage pass below and preserve any narrow, runner-backed lemma that can be
+made canonical without changing the science.
+Review-loop is still not the audit loop: it must never apply verdicts or
+describe its review as an audit. Its job is to decide whether source/tooling
+math, claim boundaries, and repo language are honest enough to land and be
+sent to the independent auditor afterward.
+Non-science PRs require the same discipline: do not reject generated
+audit/status or hygiene-only work just because it is not theorem science.
+First decide whether it exposes a real audit-graph, cache, queue,
+normalization, dependency-chain, or audit-readiness defect. If it does,
+salvage the value into durable source, tooling, pipeline, or controlled-data
+repairs and regenerate the generated surfaces from that repair.
+Audit-dispatch manifests are a special non-science case. If a PR lands a
+source note whose purpose is to request future re-audit, retagging, cascade
+repair, or batch audit selection, review-loop is not done when the source note
+lands. It must also make the request machine-visible by adding or updating a
+supported dispatcher sidecar under `docs/audit/data/`, rerunning the audit
+pipeline, and verifying the target appears in `docs/audit/AUDIT_DISPATCH_QUEUE.md`
+or `docs/audit/data/audit_dispatch_queue.json`. The dispatch manifest is
+target-selection metadata only; it must not be passed to auditors as evidence
+and must not apply audit verdicts.
+
+## Arguments
+
+Parse:
+
+- focus text: optional free-text review focus;
+- `--max-iterations N`: optional cap, default `5`;
+- `--no-fix`: review only, do not edit;
+- `--no-commit`: fix locally but do not create iteration commits.
+
+## Setup
+
+1. Read the local review/governance surfaces before judging status:
+   - `docs/repo/REVIEW_FEEDBACK_WORKFLOW.md`
+   - `docs/repo/ACTIVE_REVIEW_QUEUE.md`
+   - `docs/repo/CONTROLLED_VOCABULARY.md`
+   - `docs/CANONICAL_HARNESS_INDEX.md`
+   - `docs/audit/README.md`
+   - `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`
+   - `docs/audit/data/axiom_premise_nodes.json` and the source notes named by
+     relevant primitive nodes
+   - `docs/audit/data/tier_a_admissions.json`
+   - `docs/publication/ci3_z3/` when publication-facing files changed
+   - `docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md` when
+     quantitative or imported-value claims changed
+2. Determine the base ref:
+   - prefer `origin/main` if present;
+   - otherwise use `main`;
+   - if the current branch is the base branch, use `HEAD~1`.
+3. Compute the review base with `git merge-base HEAD <base-ref>`.
+4. Build the original changed-file set from committed, staged, unstaged, and
+   untracked changes. Do not review outside this set except interacting files
+   that are also in this original set.
+5. Record whether the worktree was initially clean. If it was dirty, do not
+   auto-commit without explicit user permission unless the slash-command
+   invocation clearly requested commit-producing fixes.
+6. If the task is to review open/non-landed PRs, include all non-merged,
+   non-draft PRs in the requested scope except PRs the user explicitly
+   excluded. Draft PRs are out of scope: ignore them entirely and do not land
+   them unless the user explicitly asks to inspect a draft PR without landing
+   it. Closed-but-unmerged PR heads can be inspected with `gh pr view` and
+   `git fetch origin pull/<N>/head:refs/tmp/pr-<N>`.
+
+Useful commands:
+
+```bash
+git diff --name-only <base>...HEAD
+git diff --name-only --cached
+git diff --name-only
+git ls-files --others --exclude-standard
+git diff <base>...HEAD -- <files>
+git diff --cached -- <files>
+git diff -- <files>
+
+codex
+The skill’s normal freshness/setup path calls for extra repo files and git checks, but your tighter scope overrides that: I’m not doing either. I’m completing only the skill instructions themselves, then the three specified artifacts.
+exec
+/bin/zsh -lc "sed -n '241,520p' '/Users/jonBridger/.codex/skills/review-loop/SKILL.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+```
+
+For untracked files, include their full content or a concise new-file summary
+in reviewer prompts.
+
+## Stale PR Integration Guard
+
+When landing one or more PRs, protect already-landed science before applying
+any branch content. A PR branch may be based before another PR just landed, so
+checking out whole files from that stale PR head can erase current-main source
+science in shared files.
+
+For every PR before integration:
+
+```bash
+git fetch origin main pull/<N>/head:refs/tmp/pr-<N>
+pr_base=$(git merge-base origin/main refs/tmp/pr-<N>)
+comm -12 \
+  <(git diff --name-only "$pr_base"..origin/main | sort) \
+  <(git diff --name-only "$pr_base"..refs/tmp/pr-<N> | sort)
+```
+
+If the overlap list is non-empty, or if earlier PRs have landed during the
+same review-loop run, do **not** run `git checkout refs/tmp/pr-<N> -- <file>`
+for those paths. Integrate the PR's delta against its merge base with a
+three-way patch, rebase/merge, or cherry-pick source commits, then resolve any
+conflicts by preserving both current-main science and the salvageable PR
+science:
+
+```bash
+git diff --binary "$pr_base"..refs/tmp/pr-<N> -- <source paths> > /tmp/pr<N>.patch
+git apply --3way /tmp/pr<N>.patch
+```
+
+Whole-file checkout from a PR head is allowed only when the file is new on the
+PR or when `git diff --quiet "$pr_base"..origin/main -- <file>` proves current
+`main` has not changed that path since the PR base. For every overlapped
+source path, do a science-loss guard after integration: the current-main diff
+from `pr_base` to `origin/main` must still be represented in the final file.
+If that cannot be verified quickly, stop and treat it as a blocking integration
+hazard rather than risking science loss.
+
+Generated audit JSON/Markdown is a special case: do not hand-merge generated
+files from stale PR heads. Resolve source files first, prefer the current
+`origin/main` generated audit surface, then rerun the audit pipeline and strict
+lint to regenerate it.
+
+## Reviewer Fanout
+
+On each iteration, set `files_to_review` to the files that changed since their
+last clean review. On iteration 1, use all original changed files.
+
+Run all applicable reviewers in parallel through the available agent/subagent
+mechanism. If parallel agents are unavailable, run the same reviewer passes
+locally and report that limitation.
+
+### Required Reviewers
+
+- `CodeRunnerReviewer`
+  Review changed Python/scripts/log-producing code. Check syntax, decisive
+  assertions, hard-coded targets, stale fixtures, literal `True` checks,
+  hidden observations, reproducibility, paired runner/output agreement, and
+  whether the runner actually tests the note's load-bearing bridge. If a
+  runner checks audit-ledger dependency status, it must use the current
+  retained-grade set (`retained`, `retained_bounded`, `retained_no_go`) rather
+  than hard-coding stale expectations such as exactly `retained`.
+  For math-bearing runners, PASS output is not enough. Extract every
+  load-bearing formula, sign, factor, normalization, matrix identity,
+  optimizer objective, and expected numeric value from the changed code and
+  note, then verify them by an independent route before landing: manual
+  derivation against the note, symbolic simplification, small-case exhaustive
+  enumeration, a second implementation that does not share the same expression,
+  or invariant/limit/property checks. Treat self-confirming tests, expected
+  values generated by the same implementation under review, missing factor/sign
+  checks, or stale reopened bug reports as blocking until the formula is
+  corrected or the claim is demoted to a narrower supported boundary.
+
+- `PhysicsClaimReviewer`
+  Attack theorem notes, claims tables, publication surfaces, and prose. Check
+  semantic bridges, selector assumptions, status labels, exact/bounded/support
+  boundaries, and code/prose drift.
+
+- `ImportSupportReviewer`
+  Inventory every measured, fitted, literature, PDG, cosmological,
+  normalization, boundary-condition, or convention input. Classify each as
+  `zero-input structural`, `framework-derived`, `one computed lattice input`,
+  `admitted normalization/boundary condition`, `standard/literature
+  correction`, `observational comparator`, `support-only`, `insensitive
+  nuisance`, or `unjustified import`. For a Nature-grade retention claim, every
+  import must be derived, admitted with a narrow role, quantitatively
+  insensitive, or the claim must be demoted.
+
+- `NatureRetentionReviewer`
+  Apply the hostile external-review bar. Ask whether the result can honestly
+  be called retained/Nature-grade: no hidden unit identification, no structural
+  redefinition, no imported selector, no unsupported first-principles claim,
+  no unmatched observed target, and clear falsifiers/open gates. Output
+  `RETAINED`, `RETAINED SUPPORT`, `BOUNDED`, `OPEN`, `NO-GO`, or `REJECT`.
+
+- `NoGoDisciplineReviewer`
+  Scrutinize negative claims with the same rigor as positive ones. Trigger
+  this reviewer whenever changed content includes a `no_go`, `stretch_attempt`,
+  `bounded_with_named_walls`, or derived-no-go-boundary artifact, or when any
+  other reviewer in this fanout outputs `NO-GO` / `BOUNDED` / `OVERCLAIM` on
+  a negative claim. The reviewer must invoke the `no-go-discipline` skill
+  and walk N1-N8 against the branch content (see
+  [`docs/ai_methodology/skills/no-go-discipline/SKILL.md`](../no-go-discipline/SKILL.md)):
+  N1 alternative-route enumeration (≥5 distinct routes), N2
+  wall-independence audit, N3 hidden-wall scan, N4 residual matching,
+  N5 rhetoric audit (per-element / per-mode / per-block / lattice-wide
+  resolutions), N6 partial-closure path scan (convention-reframe vs new
+  axiom), N7 steelman, N8 cross-cycle echo. Output `PASS` (negative claim
+  honestly scoped) or `FAIL` with the failing checklist items named and the
+  narrowest demoted claim proposed (`partial-attempt-with-named-untested-routes`,
+  `partial-narrowing`, `bounded-with-corrected-wall-count`, or
+  `stretch-attempt-with-honest-residual`). The reviewer must not approve a
+  no-go that has not been stress-tested against the framework's full
+  authority surface — under-tested negative claims are at least as harmful
+  as overclaimed positive ones because they foreclose investigation paths
+  permanently.
+
+- `LabelingConventionReviewer`
+  Detect labeling/naming/convention content masquerading as a bounded
+  theorem. Trigger whenever changed content includes a `bounded_theorem`
+  candidate whose load-bearing claim is a labeling/naming/convention
+  statement (parallel to the u/c/t mass-ordering convention or the
+  e/μ/τ charged-lepton naming) rather than an algebraic claim with
+  explicit named admissions. A labeling convention has no propositional
+  content to admit, so `retained_bounded` grade does not apply — the
+  grade is for algebraic claims with explicit named premises, not for
+  stipulations about names.
+
+  The right outcome is to split:
+  (i) the algebraic core (if any) ships as a narrow `positive_theorem`
+      or `bounded_theorem` with the algebraic premises explicit;
+  (ii) the labeling content ships as a separate `meta` convention note,
+       parallel to the No-Go Discipline Battery's labeling-vs-physics
+       check in
+       `docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md`
+       ("If labeling, the right outcome is a `meta` convention note").
+
+  Output `PASS` if the candidate is genuinely algebraic with named
+  admissions, `SPLIT-REQUIRED` if labeling content is bundled with
+  algebraic content (ship the algebraic theorem narrow + the convention
+  as a separate `meta` note), or `DEMOTE-TO-META` if the candidate is
+  purely convention with no derivation. The reviewer must not approve a
+  `bounded_theorem` whose load-bearing content is a labeling stipulation
+  — conflating conventions with bounded theorems hides which premises
+  are actually load-bearing and prevents downstream rows from cleanly
+  identifying their dependency status. Downstream costs of the
+  conflation: the bundled convention becomes an undischargeable
+  "premise" that blocks the row from reaching retained-unbounded;
+  downstream rows that cite the bundled bounded_theorem inherit an
+  unstated convention dependency; the audit lane cannot cleanly verify
+  "all premises retained" because the convention is not propositional
+  content; and future agents may waste cycles trying to "prove" the
+  convention as if it were derivable.
+
+- `RepoGovernanceReviewer`
+  Check placement and authority surfaces. Ensure live findings route through
+  `docs/repo/ACTIVE_REVIEW_QUEUE.md`, long packets go under
+  `docs/work_history/repo/review_feedback/`, publication edits update the
+  relevant `docs/publication/ci3_z3/` surfaces, status wording follows
+  `docs/repo/CONTROLLED_VOCABULARY.md`, and changed claim notes are compatible
+  with the audit lane's propose/ratify split. Also verify that load-bearing
+  dependencies are real markdown links that seed the citation graph, not just
+  code-formatted file names in prose. Block ambiguous new science names such
+  as bare `A1`, `A2`, `G1`, `R3`, `Route F`, or `Block 2` when they appear as
+  titles, primary table labels, claim scopes, runner headlines, or review
+  findings without an explicit scientific noun phrase. Block repo-wide axiom
+  additions, nonstandard theory vocabulary, or new foundational claims unless
+  the user explicitly approved that change; vocabulary corrections back to
+  repo conventions are allowed.
+  Block branch-local or draft-PR language from landing on repo-facing surfaces.
+  Long-lived draft wording, PR-specific labels, campaign names, and branch-only
+  framings must be translated into native repo vocabulary before merge
+  (including language leaked from PR230 or any similar draft branch). If a
+  scientific claim is otherwise salvageable, fix the vocabulary in the landing
+  commit instead of rejecting the science.
+
+### Optional Reviewer
+
+Run `MethodologySkillReviewer` when files under `docs/ai_methodology/skills/`,
+`docs/ai_methodology/`, or `.claude/commands/` changed. Check that the skill is
+concise, triggerable from its frontmatter/command name, aligned with the AI
+methodology lane, and not claiming physics authority.
+
+## Reviewer Prompt
+
+Use this prompt shape for each reviewer, filtered to only that reviewer's file
+scope:
+
+````text
+Review the following physics-repo changes.
+
+Files to review:
+<files>
+
+Diff/content:
+```diff
+<diff for only those files; include untracked file content separately>
+```
+
+Focus:
+<focus text or "None specified">
+
+Context:
+- Base ref: <base-ref>
+- Iteration: <N> of <max>
+- Already reviewed and unchanged: <reviewed_files>
+- Repo review surfaces: REVIEW_FEEDBACK_WORKFLOW, ACTIVE_REVIEW_QUEUE,
+  CONTROLLED_VOCABULARY, CANONICAL_HARNESS_INDEX, docs/audit/README.md
+
+Rules:
+- Findings must cite file/line when possible.
+- Separate bugs, overclaims, support-only demotions, imported-value problems,
+  repo-governance problems, and nits.
+- Do not require new science for wording problems.
+- Do not approve retained/Nature-grade language if an import or bridge remains
+  hidden.
+- Do not apply audit verdicts. Review only whether the branch is ready for the
+  independent audit worker.
+- Do not approve new bare letter-number science names. Require explicit names
+  from CONTROLLED_VOCABULARY, with shorthand only as a parenthetical alias.
+- Do not approve a `NO-GO` or `BOUNDED with named walls` recommendation
+  without running `no-go-discipline` N1-N8 against the branch content. An
+  unscrutinized negative claim forecloses investigation paths permanently and
+  is at least as harmful as an overclaimed positive.
+````
+
+## Consolidate Findings
+
+Present one iteration summary:
+
+```text
+## Review Results (Iteration N)
+
+### Code / Runner: PASS | RISK | FAIL
+### Physics Claim Boundary: RETAINED | SUPPORT | BOUNDED | OPEN | REJECT
+### Imports / Support: CLEAN | DISCLOSED | DEMOTE | FAIL
+### Nature Retention: RETAINED | RETAINED SUPPORT | BOUNDED | OPEN | NO-GO | REJECT
+### No-Go Discipline: PASS | FAIL | NOT APPLICABLE
+### Labeling Convention: PASS | SPLIT-REQUIRED | DEMOTE-TO-META | NOT APPLICABLE
+### Repo Governance: PASS | FIX | QUEUE | ARCHIVE
+### Audit Compatibility: PASS | FIX | BLOCKED | NOT APPLICABLE
+### Methodology Skill: PASS | FIX | SKIPPED
+```
+
+Classify every finding:
+
+- `BUG`
+- `OVERCLAIM`
+- `NO_GO_OVERCLAIM`
+- `IMPORTED_VALUE`
+- `SUPPORT_ONLY_DEMOTION`
+- `MISSING_ARTIFACT`
+- `SEMANTIC_BRIDGE`
+- `REPO_GOVERNANCE`
+- `AUDIT_COMPATIBILITY`
+- `NIT`
+- `SALVAGE_CANDIDATE`
+- `SALVAGE_REJECT`
+
+Stop immediately when all applicable reviewers are clean.
+
+## Salvage Pass
+
+Run this pass before closing a PR, marking it non-landable, or discarding a
+stretch/campaign packet. The goal is to preserve meaningful science without
+lowering the review bar.
+
+1. Inventory the branch into these buckets:
+   - canonical source candidates: theorem/no-go/open-gate notes and paired
+     runners;
+   - useful negative results: failed routes that name a durable obstruction and
+     have a runner or exact calculation;
+   - support-only calculations: exact algebra or bookkeeping that may be useful
+     as bounded support but not as retained/Nature-grade science;
+   - audit/process hygiene: dependency-graph repairs, audit queue unlocks,
+     stale runner-cache detection, generated-data normalization, cycle-break
+
+2026-07-18T12:34:26.216282Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "sed -n '521,1040p' '/Users/jonBridger/.codex/skills/review-loop/SKILL.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     hygiene, and pipeline/tooling fixes that make audit results more reliable;
+   - non-source material: claim-status certificates, handoffs, campaign state,
+     generated audit files, expected audit verdicts, and branch-local logs.
+2. For each source candidate, decide whether it can be salvaged with only
+   review-level edits:
+   - the claim can be narrowed to a canonical `claim_type`:
+     `positive_theorem`, `bounded_theorem`, `no_go`, `open_gate`,
+     `decoration`, or `meta`;
+   - all imported physics, textbook machinery, observations, fitted values,
+     and conventions are explicitly labelled;
+   - the runner tests the actual load-bearing bridge, not just downstream
+     arithmetic after the premise is assumed;
+   - load-bearing dependencies can be represented as markdown links and
+     non-load-bearing siblings can be kept out of the citation graph;
+   - the salvage does not rely on a closed, unlanded, unaudited, or rejected
+     sibling PR unless the dependency is copied in as a self-contained
+     derivation and reviewed in the same salvage branch.
+3. Do not salvage by papering over missing science. If the durable part is
+   only an obstruction or failed route, salvage it as a narrow `open_gate` or
+   `no_go` only when the runner directly supports that negative boundary.
+4. Strip all non-source material from salvage branches:
+   claim-status certificates, handoffs, campaign state, expected audit
+   verdicts, `target_effective_status_*`, `audit_status = ...`, generated audit
+   verdict payloads, and branch-local logs.
+5. Prefer small salvage slices grouped by coherent topic. Split unrelated
+   lemmas rather than bundling them only because they came from the same failed
+   PR, but do not open follow-up PRs for those slices. Land them through the
+   current requested landing path or report that the work cannot be landed yet.
+6. Run the normal audit-system compatibility gate on every salvage slice.
+   The resulting rows must remain `unaudited`; the independent audit lane owns
+   all verdicts.
+7. For audit/process hygiene, preserve the durable repair rather than the
+   generated symptom. Land source/tooling/pipeline/controlled-data changes when
+   they strengthen the repo or unblock auditing without changing science.
+   Regenerate audit JSON/Markdown from the pipeline afterward only from the
+   reviewed source repair on current `main`. Do not land PR-authored
+   `effective_status`, `intrinsic_status`, `audit_status`, auditor-output,
+   previous-audit, or expected-verdict edits as the authority for the change.
+   Source repairs may intentionally invalidate a prior row hash and make a row
+   visible for re-audit; that is allowed. The independent audit loop must still
+   produce the verdict after landing.
+8. If no salvage is possible, leave a concise PR comment or review summary
+   saying why, for example: "runner only rechecks assumed premise",
+   "claim depends on closed sibling", "noncanonical stretch packet with no
+   theorem-grade boundary", or "overbroad theorem not supported by runner".
+
+Salvageable examples:
+
+- a parity/counting/no-go lemma with a decisive finite algebra runner;
+- a conditional textbook lemma that is useful only when explicitly marked as
+  bounded support;
+- a negative route that conclusively rules out one proposed mechanism and
+  narrows the remaining open gate;
+- an audit-hygiene PR whose generated status change reveals a real durable
+  graph/tooling/pipeline defect, salvaged as the underlying repair plus
+  regenerated audit outputs.
+
+Not salvageable without a new research task:
+
+- branch-local certificates and handoffs with no source theorem;
+- broad "closing derivations" whose runner assumes the missing bridge;
+- expected audit verdicts or status-elevation packages;
+- stretch-attempt notes that document research direction but do not define a
+  canonical theorem/no-go/open-gate boundary.
+
+## Fix Policy
+
+If `--no-fix` was passed, do not edit.
+
+Otherwise apply the narrowest honest fix:
+
+1. Fix verified code bugs, broken reproduction commands, stale runner names,
+   false PASS checks, and code/prose mismatches.
+2. Demote overclaimed status when the artifact supports only support/bounded
+   language.
+3. Mark imported values explicitly; distinguish derived, admitted, fitted,
+   measured, literature, boundary-condition, and insensitive nuisance inputs.
+4. Add or repair paired runner/note references only when the artifact exists.
+5. Make audit-system hygiene fixes only when they do not change the science:
+   status-line tier labels, machine-local path removal, stale runner transcript
+   refreshes, generated audit queue/ledger seeding, and discoverability wiring.
+6. Rename ambiguous science shorthand to explicit repo vocabulary without
+   changing the claim boundary. Examples: write `one-qubit operator algebra`
+   (or equivalently `M_2(ℂ) ≅ Cl(3,0)`, `physical Cl(3) local algebra` as
+   the real-algebra reading — all co-equal labels for the same retained
+   algebra-isomorphism class), `Z^3 lattice`,
+   `Koide Frobenius-equipartition condition`, or `Lie type A_1` instead of
+   bare `A1` / `A2`.
+7. Update `docs/repo/ACTIVE_REVIEW_QUEUE.md` for live unresolved findings.
+8. Route detailed resolved packets to
+   `docs/work_history/repo/review_feedback/` only when a long packet is needed.
+9. When a PR is non-landable but salvageable, preserve only the durable
+   note/runner content, make the claim boundary canonical, and land that source
+   salvage through the current requested landing path. If the rejected branch
+   contains substantial non-source packet material, use a clean temporary
+   worktree for integration, but do not create or open a follow-up PR.
+
+Skip:
+
+- nits;
+- suspected findings without evidence;
+- ambiguous science gaps that need new derivation;
+- attempts to paper over missing theorem steps with confident prose;
+- repo-wide axiom additions, new theory terminology, or new foundational
+  premises that lack explicit user approval;
+- broad refactors unrelated to the finding.
+
+## Audit-System Compatibility Gate
+
+This gate is mandatory when a branch adds or edits source notes, runners,
+claim tables, lane stubs, or publication/control-plane files.
+
+The review loop must enforce the audit lane's propose/ratify split without
+performing the independent audit:
+
+**Audit-hash churn guard.** Non-semantic hygiene sweeps on audited source notes
+can be scientifically harmless while still invalidating large parts of the
+audit ledger, because note hashes are source-content hashes. Before landing any
+branch that touches many existing claim-note files for formatting, link-target,
+path, vocabulary, or other non-science cleanup, run the pipeline in validation
+mode and inspect the `seed_audit_ledger.py` / `invalidate_stale_audits.py`
+counts. If the change would reset or requeue already-audited rows solely due to
+non-semantic churn, do not land the broad source sweep. Either narrow the PR to
+non-ledger/non-claim surfaces, land a reviewed hash/canonicalization tooling
+repair first, or ask for explicit user approval to spend the audit capacity.
+Never trade a clean audit graph for cosmetic source-note churn without making
+that cost explicit.
+
+0. Before applying a PR, inventory any audit-status surface it touches:
+
+```bash
+git diff --name-only <pr-base>..refs/tmp/pr-<N> -- \
+  docs/audit/AUDIT_LEDGER.md docs/audit/AUDIT_QUEUE.md docs/audit/data \
+  'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md'
+git diff <pr-base>..refs/tmp/pr-<N> -- docs/audit docs/publication/ci3_z3 \
+  | grep -E 'audit_status|effective_status|audited_clean|audited_conditional|audited_failed|audited_renaming|audited_decoration|audited_numerical_match|previous_audits|audit_result|verdict'
+```
+
+Treat this output as a provenance review, not as a merge recipe. Strip
+PR-submitted generated ledgers, queues, effective-status tables, auditor
+transcripts, and audit verdict payloads before landing. The only acceptable
+audit-lane changes from a PR are reviewed source/tooling repairs and
+machine-readable audit/re-audit targeting metadata, such as dispatcher
+sidecars, that do not assert a verdict. After applying the source repair, run
+the local pipeline to verify the row is queued or re-queued as intended, then
+restore generated audit outputs from `origin/main` before committing. Pipeline
+regeneration of `docs/audit/data/`, `docs/audit/AUDIT_LEDGER.md`,
+`docs/audit/AUDIT_QUEUE.md`, `docs/audit/MISSING_DERIVATION_PROMPTS.md`, and
+`docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md` is a VALIDATION step only;
+framework PRs must never ship these files because the merge would overwrite
+the audit lane's ratified state. The audit-loop run on `main` (nightly cron
+plus `audit:` commits) is the sole channel for landing those outputs.
+
+1. Source-note `Status:` prose is not an audit authority. New or touched claim
+   notes should use `Type:` / `Claim type:` metadata for intended audit
+   classification.
+2. If a no-go/firewall is intended to be theorem-grade, use
+   `claim_type = no_go`; do not rely on support-style prose and expect audit
+   ratification.
+3. Keep disclaimers such as "This is not charged-lepton mass closure" outside
+   audit metadata fields.
+4. Do not prefill or recommend a verdict in author/review surfaces. Wording
+   such as `target_audit_status: audited_clean`, `audit_status =
+   audited_clean`, `effective_status = retained`, or "can land audited_clean"
+   is not review-loop compatible. Use wording like `audit_status_authority:
+   independent audit lane only` and "effective status is pipeline-derived
+   after audit ratification and dependency closure."
+5. Changed claim notes that cite load-bearing authorities must use markdown
+   links, for example
+   ``[`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)``.
+   Code-formatted names such as `` `GRAPH_FIRST_SU3_INTEGRATION_NOTE.md` `` do
+   not seed graph dependencies and are not enough.
+6. Run the audit pipeline after review fixes:
+
+```bash
+bash docs/audit/scripts/run_pipeline.sh
+python3 docs/audit/scripts/audit_lint.py --strict
+git diff --check
+```
+
+The known graph-cycle warning is acceptable. Any strict-lint error blocks a
+review-loop PASS.
+
+**`note_hash` drift is a notice for non-retained rows, an error only for
+retained-grade rows.** `note_hash` is a *source-content* hash, not an audit
+verdict. When a review fix edits a claim note, its `note_hash` drifts from the
+seeded value; `audit_lint.py` reports this drift as a non-blocking
+`note_hash_drift_reaudit_pending` **notice** when the row is not retained-grade
+(`unaudited` / `audited_conditional` / pending), because re-audit is simply
+pending and the audit-lane re-seed refreshes the hash. Such a notice does **not**
+block review-loop PASS and must **not** be "fixed" by committing audit-lane
+ledger churn (that is the forbidden pipeline-output commit). A `note_hash`
+mismatch on a **retained-grade** row (`retained` / `retained_bounded` /
+`retained_no_go`) stays a hard **error**: an edited retained note laundered past
+a stale ratification is a real integrity violation. Resolve it by re-auditing
+(the audit lane re-seeds and archives the prior verdict) or by demoting the edit
+per the audit-hash churn guard — never by refreshing the hash while keeping the
+retained verdict.
+
+**Stuck-row repair requeue gate.** Terminal non-clean rows
+(`audited_conditional` / `audited_renaming` / `audited_failed` /
+`audited_numerical_match`) re-enter the audit queue only through their own
+note or paired-runner hash drift, an upstream `deps_changed` invalidation, or
+a dispatcher-sidecar re-audit target. Dependent-side edits never reschedule
+the stuck row. When a branch's stated purpose is repairing such a row (the PR
+title/body names the row or quotes its audit repair target):
+
+1. Verify the stuck row itself will requeue: its note or paired runner
+   changes on the branch, or the branch ships dispatcher-sidecar targeting
+   metadata naming the row.
+2. If the audit-named repair is dependent-side only (for example, narrowing
+   dependents' citing sentences to the audited scope), add a dated
+   downstream-hygiene line to the stuck row's own note boundary as part of
+   the landing: a one-line source-side record of what changed downstream
+   (date + what was narrowed + PR number), with no grade or verdict
+   language. The hash drift re-enters the row into the ordinary queue and
+   the re-auditor (or second auditor) sees the recorded condition.
+3. Run the validation pipeline and confirm the row is queued or re-queued as
+   intended, then restore generated audit outputs per the
+   pipeline-output-stripped gate below.
+4. Repair-PR review checklist: the audit repair target is quoted verbatim
+   (from `verdict_rationale` / `notes_for_re_audit_if_any`) in the PR body;
+   a sibling-runner pin sweep was done before every note edit (grep
+   `scripts/` for runners pinning the edited sentences); no authored grade
+   language anywhere; no `docs/audit/data/` content beyond
+   dispatcher-sidecar targeting metadata.
+
+7. **Pipeline-output-stripped PASS gate (hard).** After running the pipeline
+   for validation, the framework PR must NOT land any pipeline-regenerated
+   audit-lane or effective-status surface. The independent audit lane is the
+   sole authority for these files; a framework PR that ships them creates a
+   dual-source-of-truth and overwrites the audit lane's ratified state at
+   merge. The following must hold for review-loop to issue PASS:
+
+```bash
+# Must produce no output. Any change here means the working tree has
+# pipeline-regenerated audit-lane outputs left over from validation;
+# drop them (see below) before recommitting.
+git status --porcelain docs/audit/AUDIT_LEDGER.md \
+                       docs/audit/AUDIT_QUEUE.md \
+                       docs/audit/data \
+                       docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md \
+                       docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/DERIVATION_ATLAS_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/PUBLICATION_MATRIX_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/FULL_CLAIM_LEDGER_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/RESULTS_INDEX_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md
+```
+
+If this command prints any lines, BLOCK PASS and instruct the operator to
+DROP the regenerated files before recommitting:
+
+```bash
+git checkout origin/main -- docs/audit/data/ \
+                            docs/audit/AUDIT_LEDGER.md \
+                            docs/audit/AUDIT_QUEUE.md \
+                            docs/audit/MISSING_DERIVATION_PROMPTS.md \
+                            'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
+                            docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+git clean -fd -- docs/audit/data/
+```
+
+The pipeline is run for VALIDATION only — to confirm the source repair is
+ingested and the runner row is queued or re-queued as intended. The
+audit-loop pipeline run on `main` (nightly cron + `audit:` commits) is the
+sole channel for landing the regenerated outputs. Framework PRs that ship
+these files force a destructive overwrite of ratified audit state at merge
+time and have been an active source of broken-row regressions.
+
+8. **Repository-portable links PASS gate (hard).** Markdown link targets on
+   branch-modified `.md` files must be repo-relative or web URLs. Absolute
+   local paths such as `/Users/<name>/...`, `/home/<name>/...`,
+   `/private/tmp/...`, `/tmp/...`, `/var/...`, `/opt/...`, or `file://...`
+   inside a markdown link target are non-portable: they break for other
+   developers, CI runners, fresh clones, and independent reviewers.
+
+```bash
+# Must produce no output. Scans branch-modified markdown for local absolute
+# paths inside markdown link targets.
+git diff --name-only origin/main...HEAD -- '*.md' \
+  | xargs -I{} grep -nE '\]\((/Users/|/home/|/private/|/tmp/|/var/|/opt/|file://)' {} 2>/dev/null
+```
+
+If this command prints lines for files the branch is already modifying for
+source, runner, methodology, or review reasons, rewrite the offending link
+targets before PASS. The usual mechanical fix is to preserve the display text
+and replace the target with a `../` chain relative to the source file's
+directory, e.g. in `docs/SOURCE_RESOLVED_FOO_NOTE.md` rewrite
+`(/Users/me/Projects/Physics/scripts/foo.py)` to `(../scripts/foo.py)`.
+
+This gate prevents new non-portable links from landing; it is not a license for
+large standalone cosmetic sweeps over audited claim notes. If the PR's only
+purpose is to rewrite existing local-path links across many audited source
+notes, apply the audit-hash churn guard above before landing any broad cleanup.
+
+9. **No-Go Discipline PASS gate (hard).** Before issuing review-loop PASS,
+   identify any artifact on the branch that ships a negative claim:
+
+```bash
+# Source notes whose claim_type is no_go, or whose Status / Type line
+# names walls / admissions / "conditional on" content
+git diff --name-only origin/main...HEAD -- 'docs/*NO_GO*.md' 'docs/*BOUNDED*.md' \
+                                           'docs/*STRETCH_ATTEMPT*.md' \
+                                           'docs/*OBSTRUCTION*.md'
+# Audit-data rows whose verdict_rationale or claim_type record walls
+git diff origin/main...HEAD -- docs/audit/data/audit_ledger.json \
+  | grep -E '"claim_type": "no_go"|"verdict_rationale".*wall|"verdict_rationale".*admission'
+# Any source note touched on this branch whose body contains negative-claim shape
+git diff origin/main...HEAD -- 'docs/*.md' \
+  | grep -E 'structurally undecidable|no retained primitive|requires new axiom|cannot be derived from A_min|conditional on .* walls?'
+```
+
+For every match, the NoGoDisciplineReviewer must output `PASS` (N1-N8 walk
+complete and no failure condition hit) before review-loop issues PASS. A
+`FAIL` from NoGoDisciplineReviewer blocks PASS regardless of how other
+reviewers voted. An unscrutinized no-go that ships through review cements
+the overclaim at audit time and forecloses investigation paths permanently.
+
+If NoGoDisciplineReviewer outputs FAIL, apply the narrowest honest fix per
+Fix Policy step 2 (demote to a narrower honest claim that passes N1-N8) and
+re-review. Do not weaken the gate to PASS the branch.
+
+This gate is independent of the Pipeline-clean PASS gate above; both must
+pass for review-loop to issue PASS.
+
+10. **Math-runner independent-check PASS gate (hard).** Before issuing
+review-loop PASS for any branch that changes a runner, proof script, numeric
+constant, matrix construction, optimizer, expected value, or note formula,
+record the independent math check used by `CodeRunnerReviewer`. At least one
+check must not share the same implementation path as the changed runner:
+manual formula derivation, symbolic/algebraic reduction, finite toy-case
+enumeration, independent recomputation, or invariant/limit tests. A runner
+that merely computes its own target and prints PASS is not a proof that the
+formula is correct. If an issue was reopened because the runner's math was
+wrong, treat the whole formula family as suspect until the changed expression
+and any reused helpers are cross-checked.
+
+11. **Native-language PASS gate (hard).** Changed repo-facing text must use
+controlled, native repo vocabulary. Run `scripts/vocab_lint.py --fix` on all
+branch-modified files before landing, then inspect changed headings, metadata,
+runner banners, claim scopes, table labels, and review comments for
+branch-local/draft language that the linter cannot know about. PR-specific
+labels, draft-branch vocabulary, campaign names, and noncanonical theory
+phrases must be rewritten into repo-native language or explicitly deferred in
+`docs/repo/ACTIVE_REVIEW_QUEUE.md`; do not land them silently.
+
+The review loop must not run `docs/audit/scripts/apply_audit.py` and must not
+write `audit_status`, `audited_clean`, or other audit verdicts. If the branch
+introduces retained-grade `claim_type` rows, report those claim IDs in the
+final report as requiring the independent audit worker.
+When a source repair changes a note or runner for a previously audited row,
+the local result is `note_hash`/runner-hash drift plus queue/dispatch
+visibility for independent re-audit. For a non-retained row this drift is a
+benign `note_hash_drift_reaudit_pending` notice (see the Audit-System
+Compatibility Gate) — it does not block strict lint and must not be repaired by
+committing ledger churn. For a retained-grade row the drift is a strict error
+that must be resolved by re-audit, not laundered. In all cases, do not preserve,
+copy, or author a fresh `previous_audits` entry, `audit_status`, or verdict
+rationale from the PR branch; the independent audit lane (nightly cron +
+`audit:` commits) is the sole channel that refreshes the hash and re-ratifies.
+
+After the pipeline, inspect the changed claim rows in
+`docs/audit/data/audit_ledger.json`:
+
+- `claim_type` must match the intended class (`positive_theorem`,
+  `bounded_theorem`, `no_go`, `open_gate`, `decoration`, or `meta`).
+- `audit_status` must remain `unaudited` unless the branch is only carrying
+  already-audited history from `origin/main`.
+- `effective_status` must be pipeline-derived, not hand-authored.
+- New theorem/no-go/bounded rows with declared load-bearing authorities must
+  have non-empty `deps` matching the markdown-linked authorities.
+- Dependencies asserted as retained-grade must currently have
+  `effective_status` in `{retained, retained_bounded, retained_no_go}`. Open
+  gates, `unaudited`, `audit_in_progress`, `retained_pending_chain`, and
+  terminal non-clean audit statuses are blockers for retained-grade claims.
+
+Useful review-only inventory:
+
+```bash
+python3 - <<'PY'
+import json, subprocess
+changed = set()
+for cmd in (
+    ["git", "diff", "--name-only", "HEAD"],
+    ["git", "diff", "--name-only", "--cached"],
+):
+    changed.update(subprocess.check_output(cmd, text=True).splitlines())
+try:
+    changed.update(subprocess.check_output(
+        ["git", "diff", "--name-only", "origin/main...HEAD"], text=True
+    ).splitlines())
+except Exception:
+    pass
+rows=json.load(open("docs/audit/data/audit_ledger.json"))["rows"]
+for cid,row in rows.items():
+    if row.get("note_path") in changed:
+        print(cid, row.get("claim_type"), row.get("audit_status"),
+              row.get("effective_status"), row.get("deps"),
+              row.get("note_path"))
+PY
+```
+
+If generated audit files conflict while integrating current `origin/main`, do
+not hand-merge generated JSON/Markdown. Resolve source files, prefer the
+current remote generated audit files, then rerun `run_pipeline.sh` and strict
+lint so the generated surface is rebuilt from source.
+
+## Smoketest
+
+After fixes, run the smallest relevant checks:
+
+- `python3 -m py_compile <changed .py files>` for changed Python files;
+- changed paired runners directly when they are expected to be short;
+- for changed math-bearing runners, independently verify formulas/constants
+  before trusting PASS output: compare note equations to code line by line,
+  check signs/factors/normalizations, run a second implementation or symbolic
+  simplification when practical, and add finite edge-case or invariant checks
+  when they would have caught the suspected class of error;
+- if many changed runners are part of the branch, execute all practical
+  changed runners with a bounded timeout, then rerun any timeout once with a
+  longer timeout before classifying it as slow rather than broken;
+- any reproduction commands named in changed notes when practical;
+- publication/control-plane consistency checks by reading changed tables and
+  nearby authority surfaces.
+- `bash docs/audit/scripts/run_pipeline.sh` and
+  `python3 docs/audit/scripts/audit_lint.py --strict` when claim notes or
+  governance/publication surfaces changed.
+
+If a runner is long, stochastic, or requires unavailable data, do not fake the
+check. Report it as not run with the reason.
+
+## Re-Review Tracking
+
+Never re-review unchanged files.
+
+After each fix pass:
+
+1. Identify files modified by the fix pass.
+2. If committing is allowed, create one iteration commit:
+   `fix: address physics review findings (iteration N)`.
+3. Set `files_to_review` to the files modified by the fix pass.
+4. Add interacting files only if they are also in the original changed-file
+   set. Find interactions through imports, runner/note pairs, canonical harness
+   rows, publication tables, and explicit cross-links.
+5. Loop until clean, no files changed, or max iterations reached.
+
+## Final Report
+
+Report:
+
+- iterations run;
+- files reviewed;
+- total findings, fixed findings, skipped findings;
+- import/support inventory summary;
+- final claim-strength disposition;
+- audit-compatibility status and proposed claim IDs needing independent audit;
+- commits created;
+- checks run and checks skipped;
+- remaining issues with disposition;
+- recommendation: `PASS`, `PASS WITH BOUNDED CLAIMS`, or `NEEDS MANUAL SCIENCE`.
+
+Do not claim Nature readiness. Say whether the branch meets this repo's
+Nature-grade retention bar or exactly what remains open.
+
+2026-07-18T12:34:30.122813Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'nl -ba docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	---
+     2	claim_id: microcausality_volume_uniform_sequence_count_coefficient_bounds_bounded_theorem_note_2026-07-18
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional strengthening of the sibling lightcone lemma on the same supplied finite-range class (axioms supply no dynamics; same declared algebra and Heisenberg convention): (W1) the exact multinomial expansion of the nested adjoint into bond sequences; (W2) the dead-sequence lemma — a sequence contributes only if each bond touches the support accumulated so far — recovering below-cone vanishing sequence-by-sequence; (W3) the accumulated-support sequence count N_k bounded by the exact local product 6^k·(m)(m+2)···(m+2k−2) with m the site count of the observable's support — local data only, independent of the region size; (W4) volume-uniform per-coefficient bounds ||[ad_H^k A, B]|| ≤ 2||A||||B||(2J)^k N_k, gated at k = 2 with exact norms, plus an exact k = 3 parity exhibit where every sequence's commutator with the chosen probe vanishes although the cone was reached at k = 2 — coefficient bounds are upper bounds, probe- and order-dependent; (W5) a volume-uniform commutator bound on the exact local time window |t| < (d+1)/(12J(m+2d)·2) via the term-ratio and geometric-tail chain, every inequality gated. The all-time volume-uniform Lieb-Robinson constant (the integral-equation walk reorganization) and the sharp rate remain open exactly as the sibling names them; nothing physical is selected."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	  - microcausality_many_body_nested_commutator_lightcone_bounded_theorem_note_2026-07-18
+     8	runner: scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py
+     9	---
+    10	
+    11	# Microcausality: Volume-Uniform Sequence-Count Coefficient Bounds And The Local Time Window
+    12	
+    13	**Date:** 2026-07-18
+    14	**Type:** bounded_theorem
+    15	**Claim type:** bounded_theorem
+    16	**Scope:** bridge-conditional; same supplied class, algebra, and
+    17	Heisenberg convention as the sibling note; the axioms choose no dynamics.
+    18	**Audit-status authority:** independent audit lane only. This note sets no
+    19	audit verdict and predicts none.
+    20	**Primitive status:** no primitive is approved, registered, edited, or
+    21	enlarged here.
+    22	**Primary runner:**
+    23	[`scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py`](../scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py)
+    24	**Runner cache:**
+    25	[`logs/runner-cache/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.txt`](../logs/runner-cache/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.txt)
+    26	
+    27	## Purpose
+    28	
+    29	The sibling note
+    30	[`MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md`](MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md)
+    31	proved below-cone vanishing and a factorial-tail bound whose constant
+    32	`c = 2J·|E(Λ)|` is region-level, stating: "a genuine volume-uniform
+    33	Lieb-Robinson constant would need the interaction-path argument". This
+    34	note supplies the exact Taylor-level part of that argument: expanding the
+    35	nested adjoint into bond sequences and counting only those that survive
+    36	the dead-sequence lemma replaces the region-level bond count with local
+    37	data (the observable's support size and the lattice's local bond counts),
+    38	giving volume-uniform per-coefficient bounds at every order and a
+    39	volume-uniform commutator bound on an exact local time window. What it
+    40	does not supply — stated plainly — is the all-time volume-uniform
+    41	constant: that needs the integral-equation reorganization into
+    42	walks adjacent to the previous bond, which, together with the sharp rate,
+    43	remains open exactly as the sibling names it.
+    44	
+    45	## Results
+    46	
+    47	On the sibling's supplied surface (finite region `Λ ⊂ Z^3`, supplied
+    48	nearest-neighbor bond Hamiltonian `H = Σ_b h_b`, `J = max_b ||h_b||`,
+    49	observable `A` supported on `X` with `m = |X|` sites, probe `B` on `Y`,
+    50	`d = d(X, Y)`):
+    51	
+    52	**W1 (multinomial sequence expansion, exact).** Nested adjoints expand
+    53	into bond sequences:
+    54	
+    55	> `ad_H^k A = Σ_{(b_k, ..., b_1)} ad_{h_{b_k}} ··· ad_{h_{b_1}} A`,
+    56	
+    57	a finite algebraic identity (gated at `k = 2, 3` on the three-site
+    58	chain by summing all `2^k` sequences exactly).
+    59	
+    60	**W2 (dead-sequence lemma, exact).** A sequence contributes zero unless
+    61	its innermost bond touches `X` and each later bond touches the support
+    62	accumulated by the earlier bonds (the sibling's L1, applied per step;
+    63	gated: inner-miss and later-miss sequences vanish exactly, on three- and
+    64	four-site instances). Surviving sequences grow the support by at most one
+    65	bond per step, so no sequence of length `k < d` reaches `Y` — recovering
+    66	the sibling's below-cone vanishing sequence-by-sequence.
+    67	
+    68	**W3 (accumulated-support count, local and exact).** The number `N_k` of
+    69	surviving sequences obeys
+    70	
+    71	> `N_k ≤ Π_{j=0}^{k−1} 6·(m + 2j)`,
+    72	
+    73	since a support of `s` sites on `Z^3` meets at most `6s` bonds and each
+    74	step adds at most `2` sites. Every factor is local data (`m` and the
+    75	coordination number `6`); the region size `|Λ|` appears nowhere — this
+    76	replaces the sibling's `M = |E(Λ)|`. (Gated: the bond-count enumeration
+    77	`≤ 6s` on exact small site sets; the product values at `k = 1, 2`; and
+    78	the actual surviving-sequence counts on the chain are below the bound.)
+    79	
+    80	**W4 (volume-uniform per-coefficient bounds; upper bounds only).**
+    81	Iterating `||[P, Q]|| ≤ 2||P||·||Q||` (rebuilt in the sibling) along each
+    82	sequence and summing,
+    83	
+    84	> `||[ad_H^k A, B]|| ≤ 2 ||A|| ||B|| (2J)^k N_k`,
+    85	
+    86	with `N_k` as in W3 — volume-uniform at every order. Gated at `k = 2`
+    87	with exact norms on the three-site chain. The bound is an upper bound
+    88	and not an equality in a strong, exact sense — the chain exhibits an
+    89	order-parity breathing, gated exactly: the cone is reached at `k = 2`
+    90	(the `X_3` and `Y_3` probes register; `Z_3` never does, since the
+    91	arriving factor is itself `Z_3`); at `k = 3` the entire site-3 component
+    92	cancels — every one of the eight sequences separately gives zero against
+    93	every site-3 probe, a full support retreat; and at `k = 4` the commutator
+    94	re-arrives against `X_3` while `Z_3` stays silent. Coefficient
+    95	nonvanishing is probe- and order-dependent; only the bound is claimed.
+    96	
+    97	**W5 (volume-uniform bound on an exact local time window).** Writing the
+    98	commutator's absolutely convergent Taylor series (finite matrices) and
+    99	bounding term `k` by `a_k = 2||A||||B|| (2J)^k N_k |t|^k / k!`, the term
+   100	ratio obeys
+   101	
+   102	> `a_{k+1}/a_k ≤ 12 J |t| · (m + 2k)/(k + 1)`,
+   103	
+   104	which for `k ≥ d` is at most `r := 12 J |t| (m + 2d)/(d + 1)` when
+   105	`(m + 2k)/(k+1)` is nonincreasing in `k` (it is, for `m ≥ 2`... the
+   106	runner gates the monotonicity inequality in the form
+   107	`(m + 2k)(k + 2) ≥ (m + 2k + 2)(k + 1)` exactly, equivalent to
+   108	`m ≥ 2`, and the `m = 1` case is absorbed by using `m' = 2`). Hence for
+   109	`r < 1` — the exact local window `|t| < (d + 1) / (12 J (m' + 2d))` —
+   110	the tail is dominated geometrically:
+   111	
+   112	> `||[A_X(t), B_Y]|| ≤ a_d / (1 − r)`,
+   113	
+   114	with `a_d` built from local data only. Volume-uniform, on the stated
+   115	window; the window itself is local. Beyond the window, the sibling's
+   116	region-level bound still applies; the all-time volume-uniform constant
+   117	remains open as named.
+   118	
+   119	## No-Go Discipline Gate
+   120	
+   121	W2's dead-sequence statement and the W4 parity exhibit are the bounded
+   122	negatives, answered:
+   123	
+   124	- **N1 route inventory.** Against the parity exhibit: (1) change the
+   125	  probe — the `Z_3` probe at `k = 3` picks up the arriving operator; the
+   126	  exhibit is probe-specific and gated as such; ATTEMPTED (both probes
+   127	  gated); (2) change the Hamiltonian — the sibling's commuting chain
+   128	  stalls at every order; different mechanisms, both exhibited; (3)
+   129	  higher orders — named untested beyond the gated `k ≤ 3`; the claim is
+   130	  only that bounds are not equalities. Against dead sequences: (4)
+   131	  bonds touching later-accumulated support are exactly the surviving
+   132	  class — that is the lemma, not a rescue; (5) longer-range supplied
+   133	  terms — outside the nearest-neighbor class, named untested.
+   134	- **N2 wall independence:** the dead-sequence lemma is structural; the
+   135	  parity exhibit is an instance statement; neither implies the other.
+   136	- **N3 hidden-wall scan:** the `6s` bond count and the `+2` support
+   137	  growth are the nearest-neighbor class's exact local combinatorics,
+   138	  gated; the absolute-convergence step is the finite-matrix entire-series
+   139	  fact, note-carried as in the sibling; the `m ≥ 2` absorption is stated
+   140	  where used.
+   141	- **N4 residual matching and dependency roles:** the sibling supplies
+   142	  the class, L1, the norm inequality (rebuilt there), and the named open
+   143	  task this note partially takes; `minimal_axioms` supplies the
+   144	  no-dynamics boundary needle only.
+   145	- **N5 rhetoric audit:** "volume-uniform" is claimed for per-coefficient
+   146	  bounds at every order and for the commutator bound on the stated exact
+   147	  window only; the all-time statement is named open, not softened.
+   148	- **N6 partial-closure scan:** the walk-reorganization route and the
+   149	  sharp rate remain open; nothing here forecloses them.
+   150	- **N7 steelman:** "the window makes it useless." Reply: the window is
+   151	  local and exact, the per-coefficient bounds are unconditional in `t`,
+   152	  and the sibling's region-level bound covers all `t` — the pair of
+   153	  bounds brackets exactly what the open walk argument would unify.
+   154	- **N8 cross-cycle echo:** the sibling's exhibit-pair discipline is
+   155	  repeated (bound gated at a reaching instance; non-equality gated at an
+   156	  exact vanishing instance).
+   157	
+   158	## Non-Claims
+   159	
+   160	- Does **not** supply the all-time volume-uniform Lieb-Robinson
+   161	  constant, the walk reorganization, the sharp rate, the U-integrated
+   162	  statement, or any physical velocity; does **not** alter the sibling's
+   163	  scope.
+   164	- Does **not** claim coefficient nonvanishing at or above the cone
+   165	  (probe- and order-dependent, exhibited).
+   166	- Does **not** select dynamics; the axioms supply none (needled).
+   167	- Does **not** set an audit verdict; independent audit remains required.
+   168	
+   169	## Verification
+   170	
+   171	The primary runner checks the listed identities and witnesses and
+   172	nothing more (sympy, exact arithmetic, single process; three- and
+   173	four-site instances, 8x8 and 16x16): the multinomial expansion at
+   174	`k = 2, 3` by full sequence enumeration; the dead-sequence gates
+   175	(inner-miss, later-miss); the sequence-by-sequence below-cone recovery;
+   176	the `6s` bond-count enumeration on exact site sets and the product-form
+   177	count values; the `k = 2` coefficient-bound norm computation; the
+   178	`k = 3` parity exhibit (all eight sequences vanish against the probe,
+   179	both the sum and each term); the term-ratio and monotonicity
+   180	inequalities in formal form; the geometric-tail closed form and an exact
+   181	window instance; and needle checks pinning the sibling's named-open
+   182	sentence, the axiom memo's no-dynamics sentence, and this note's claim
+   183	identifier and labels. Mutation checks (one load-bearing mutation per
+   184	check family, reverted) are recorded in the review history and PR body.
+   185	
+   186	Measured runner total after final verification:
+   187	`TOTAL: PASS=17 FAIL=0`.
+
+2026-07-18T12:34:35.441415Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'nl -ba scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	#!/usr/bin/env python3
+     2	"""Exact checks for the volume-uniform sequence-count bounds note."""
+     3	
+     4	import itertools
+     5	from pathlib import Path
+     6	
+     7	import sympy as sp
+     8	
+     9	
+    10	ROOT = Path(__file__).resolve().parents[1]
+    11	TARGET_NOTE = ROOT / "docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md"
+    12	SIBLING_NOTE = ROOT / "docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md"
+    13	AXIOM_NOTE = ROOT / "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    14	
+    15	
+    16	def normalized_whitespace(text):
+    17	    return " ".join(text.split())
+    18	
+    19	
+    20	class CheckRunner:
+    21	    def __init__(self):
+    22	        self.passed = 0
+    23	        self.failed = 0
+    24	
+    25	    def check(self, label, condition):
+    26	        ok = bool(condition)
+    27	        if ok:
+    28	            self.passed += 1
+    29	            print(f"PASS: {label}")
+    30	        else:
+    31	            self.failed += 1
+    32	            print(f"FAIL: {label}")
+    33	
+    34	    def needle(self, label, path, needles):
+    35	        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
+    36	        if isinstance(needles, str):
+    37	            needles = (needles,)
+    38	        self.check(
+    39	            label,
+    40	            all(normalized_whitespace(n) in haystack for n in needles),
+    41	        )
+    42	
+    43	    def finish(self):
+    44	        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
+    45	        return 0 if self.failed == 0 else 1
+    46	
+    47	
+    48	I2 = sp.eye(2)
+    49	SX = sp.Matrix([[0, 1], [1, 0]])
+    50	SZ = sp.Matrix([[1, 0], [0, -1]])
+    51	
+    52	
+    53	def kron(*mats):
+    54	    out = mats[0]
+    55	    for m in mats[1:]:
+    56	        out = sp.Matrix(sp.kronecker_product(out, m))
+    57	    return out
+    58	
+    59	
+    60	def com(a, b):
+    61	    return a * b - b * a
+    62	
+    63	
+    64	def is_zero(m):
+    65	    return sp.simplify(m) == sp.zeros(*m.shape)
+    66	
+    67	
+    68	def op_norm_sq(m):
+    69	    return max((m.H * m).eigenvals())
+    70	
+    71	
+    72	def main():
+    73	    checks = CheckRunner()
+    74	
+    75	    bond = {1: kron(SX, SX, I2), 2: kron(I2, SZ, SZ)}
+    76	    hamiltonian = bond[1] + bond[2]
+    77	    site_a = kron(SZ, I2, I2)
+    78	    probe_x3 = kron(I2, I2, SX)
+    79	    probe_z3 = kron(I2, I2, SZ)
+    80	
+    81	    def nested(sequence, operator):
+    82	        for label in reversed(sequence):
+    83	            operator = com(bond[label], operator)
+    84	        return operator
+    85	
+    86	    # Group W1 -- multinomial sequence expansion.
+    87	    for order in (2, 3):
+    88	        direct = site_a
+    89	        for _ in range(order):
+    90	            direct = com(hamiltonian, direct)
+    91	        summed = sp.zeros(8)
+    92	        for sequence in itertools.product((1, 2), repeat=order):
+    93	            summed += nested(sequence, site_a)
+    94	        checks.check(
+    95	            f"W1-k{order} multinomial expansion equals the sequence sum",
+    96	            is_zero(direct - summed),
+    97	        )
+    98	
+    99	    # Group W2 -- dead sequences and below-cone recovery.
+   100	    checks.check(
+   101	        "W2a inner-miss sequences vanish exactly",
+   102	        is_zero(nested((1, 2), site_a)) and is_zero(nested((2, 2), site_a)),
+   103	    )
+   104	    bond4_12 = kron(SX, SX, I2, I2)
+   105	    bond4_34 = kron(I2, I2, SZ, SZ)
+   106	    site4_a = kron(SZ, I2, I2, I2)
+   107	    checks.check(
+   108	        "W2b later-miss sequences vanish exactly (four-site instance)",
+   109	        is_zero(com(bond4_34, com(bond4_12, site4_a))),
+   110	    )
+   111	    checks.check(
+   112	        "W2c every length-1 sequence stays below the cone",
+   113	        all(
+   114	            is_zero(com(nested((label,), site_a), probe_x3))
+   115	            for label in (1, 2)
+   116	        ),
+   117	    )
+   118	
+   119	    # Group W3 -- local bond counts and the product-form bound.
+   120	    unit_vectors = ((1, 0, 0), (0, 1, 0), (0, 0, 1))
+   121	
+   122	    def incident_bonds(sites):
+   123	        bonds = set()
+   124	        for site in sites:
+   125	            for vec in unit_vectors:
+   126	                plus = tuple(a + b for a, b in zip(site, vec))
+   127	                minus = tuple(a - b for a, b in zip(site, vec))
+   128	                bonds.add(tuple(sorted((site, plus))))
+   129	                bonds.add(tuple(sorted((minus, site))))
+   130	        return bonds
+   131	
+   132	    single = incident_bonds([(0, 0, 0)])
+   133	    pair = incident_bonds([(0, 0, 0), (1, 0, 0)])
+   134	    checks.check(
+   135	        "W3a exact incident-bond counts respect the 6s bound",
+   136	        len(single) == 6
+   137	        and len(pair) == 11
+   138	        and len(single) <= 6 * 1
+   139	        and len(pair) <= 6 * 2,
+   140	    )
+   141	    m_sites = 1
+   142	    product_bound = lambda k: sp.prod(
+   143	        [6 * (m_sites + 2 * j) for j in range(k)]
+   144	    )
+   145	    surviving = {
+   146	        order: sum(
+   147	            0 if is_zero(nested(seq, site_a)) else 1
+   148	            for seq in itertools.product((1, 2), repeat=order)
+   149	        )
+   150	        for order in (1, 2)
+   151	    }
+   152	    checks.check(
+   153	        "W3b product-form bound dominates the exact surviving counts",
+   154	        product_bound(1) == 6
+   155	        and product_bound(2) == 108
+   156	        and surviving[1] <= 6
+   157	        and surviving[2] <= 108
+   158	        and surviving[1] >= 1
+   159	        and surviving[2] >= 1,
+   160	    )
+   161	
+   162	    # Group W4 -- coefficient bound at k=2 and the parity exhibit at k=3.
+   163	    ad2 = com(hamiltonian, com(hamiltonian, site_a))
+   164	    coeff_norm_sq = op_norm_sq(com(ad2, probe_x3))
+   165	    j_bound_sq = max(op_norm_sq(bond[1]), op_norm_sq(bond[2]))
+   166	    a_norm_sq = op_norm_sq(site_a)
+   167	    b_norm_sq = op_norm_sq(probe_x3)
+   168	    rhs_sq = (
+   169	        4 * a_norm_sq * b_norm_sq
+   170	        * (4 * j_bound_sq) ** 2
+   171	        * sp.Integer(108) ** 2
+   172	    )
+   173	    checks.check(
+   174	        "W4a volume-uniform coefficient bound holds at k=2 with exact norms",
+   175	        sp.simplify(rhs_sq - coeff_norm_sq).is_nonnegative is True,
+   176	    )
+   177	    parity_terms = [
+   178	        nested(seq, site_a)
+   179	        for seq in itertools.product((1, 2), repeat=3)
+   180	    ]
+   181	    checks.check(
+   182	        "W4b parity exhibit: all eight k=3 sequences vanish against X3",
+   183	        all(is_zero(com(term, probe_x3)) for term in parity_terms)
+   184	        and is_zero(
+   185	            com(sum(parity_terms, sp.zeros(8)), probe_x3)
+   186	        ),
+   187	    )
+   188	    ad3_total = sum(parity_terms, sp.zeros(8))
+   189	    checks.check(
+   190	        "W4c k=3 support retreat: every site-3 probe is silent",
+   191	        is_zero(com(ad3_total, probe_z3))
+   192	        and is_zero(com(ad3_total, probe_x3)),
+   193	    )
+   194	    ad4_total = com(hamiltonian, ad3_total)
+   195	    checks.check(
+   196	        "W4d k=4 re-arrival against X3 while Z3 stays silent at k=2 and k=4",
+   197	        (not is_zero(com(ad4_total, probe_x3)))
+   198	        and is_zero(com(ad4_total, probe_z3))
+   199	        and is_zero(com(ad2, probe_z3)),
+   200	    )
+   201	
+   202	    # Group W5 -- term ratio, monotonicity, window, geometric tail.
+   203	    m_sym, k_sym = sp.symbols("m_sym k_sym", positive=True)
+   204	    monotonicity = sp.expand(
+   205	        (m_sym + 2 * k_sym) * (k_sym + 2)
+   206	        - (m_sym + 2 * k_sym + 2) * (k_sym + 1)
+   207	    )
+   208	    checks.check(
+   209	        "W5a ratio monotonicity reduces exactly to m >= 2",
+   210	        sp.simplify(monotonicity - (m_sym - 2)) == 0,
+   211	    )
+   212	    j_val = sp.Integer(1)
+   213	    d_val = 2
+   214	    m_prime = 2
+   215	    window_t = sp.Rational(d_val + 1, 12 * j_val * (m_prime + 2 * d_val)) / 2
+   216	    ratio_at_window = 12 * j_val * window_t * sp.Rational(
+   217	        m_prime + 2 * d_val, d_val + 1
+   218	    )
+   219	    checks.check(
+   220	        "W5b exact window instance gives ratio one-half",
+   221	        ratio_at_window == sp.Rational(1, 2)
+   222	        and ratio_at_window < 1,
+   223	    )
+   224	    a_sym, r_sym = sp.symbols("a_sym r_sym", positive=True)
+   225	    k_idx = sp.symbols("k_idx", nonnegative=True, integer=True)
+   226	    half_sum = sp.summation(
+   227	        a_sym * sp.Rational(1, 2) ** k_idx, (k_idx, 0, sp.oo)
+   228	    )
+   229	    telescope = sp.expand((a_sym / (1 - r_sym)) * (1 - r_sym) - a_sym)
+   230	    checks.check(
+   231	        "W5c geometric tail: exact half-ratio sum and the telescoping identity",
+   232	        sp.simplify(half_sum - 2 * a_sym) == 0 and telescope == 0,
+   233	    )
+   234	
+   235	    # Group N -- needles.  __TOTAL__ deliberately not matched.
+   236	    checks.needle(
+   237	        "N1 sibling names the volume-uniform constant as needing the path argument",
+   238	        SIBLING_NOTE,
+   239	        "a genuine volume-uniform\nLieb-Robinson constant would need the interaction-path argument",
+   240	    )
+   241	    checks.needle(
+   242	        "N2 axiom memo supplies no dynamics",
+   243	        AXIOM_NOTE,
+   244	        "Admissibility is not a dynamics axiom.",
+   245	    )
+   246	    checks.needle(
+   247	        "N3 target identifier and labels",
+   248	        TARGET_NOTE,
+   249	        (
+   250	            "microcausality_volume_uniform_sequence_count_coefficient_bounds_bounded_theorem_note_2026-07-18",
+   251	            "**W2 (dead-sequence lemma, exact).**",
+   252	            "**W5 (volume-uniform bound on an exact local time window).**",
+   253	            "remains open exactly as the sibling names it",
+   254	        ),
+   255	    )
+   256	
+   257	    return checks.finish()
+   258	
+   259	
+   260	if __name__ == "__main__":
+   261	    raise SystemExit(main())
+
+2026-07-18T12:34:39.279995Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'nl -ba docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	---
+     2	claim_id: microcausality_many_body_nested_commutator_lightcone_bounded_theorem_note_2026-07-18
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional nested-commutator lightcone structure on the qubit lattice for a SUPPLIED finite-range bond Hamiltonian class on a finite region, with the tensor-product algebra and Heisenberg convention declared as supplied hypotheses (the axioms supply no dynamics and no Hamiltonian; nothing physical is selected): (L1) one-neighborhood support growth of the adjoint action, exactly; (T1) below-cone vanishing — every Taylor coefficient of [A_X(t), B_Y] at t = 0 with order k < d(X,Y) vanishes identically, so the commutator has a zero of order at least d(X,Y), with an exact three-site noncommuting instance reaching the cone at k = d; (T2) an exact commuting-chain exhibit where the cone is never reached at any order (the two bonds commute and the far bond commutes with the observable, so the nested adjoint chain collapses to the near bond alone), so cone-saturation is Hamiltonian-dependent; (T3) a finite-volume factorial-tail bound with region-level constants (M = the number of bonds in the finite region) and the exact tail domination — explicitly NOT a volume-uniform velocity statement and NOT finite-speed propagation. This is a conditional finite-range spin lemma relevant to, but not closing, the cited note's named many-body/quasilocal-composition open task, which remains open along with the U-integrated and sharp-rate slices; no physical propagation speed, kinetic-isotropy content, or dynamics selection is claimed."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	  - gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13
+     8	runner: scripts/microcausality_many_body_nested_commutator_lightcone_2026_07_18.py
+     9	---
+    10	
+    11	# Microcausality: A Many-Body Nested-Commutator Lightcone For The Supplied Finite-Range Class
+    12	
+    13	**Date:** 2026-07-18
+    14	**Type:** bounded_theorem
+    15	**Claim type:** bounded_theorem
+    16	**Scope:** bridge-conditional; the Hamiltonian class is supplied, exactly
+    17	as in the cited microcausality notes; the axioms choose no dynamics.
+    18	**Audit-status authority:** independent audit lane only. This note sets no
+    19	audit verdict and predicts none.
+    20	**Primitive status:** no primitive is approved, registered, edited, or
+    21	enlarged here; the kinetic-isotropy primitive is not used.
+    22	**Primary runner:**
+    23	[`scripts/microcausality_many_body_nested_commutator_lightcone_2026_07_18.py`](../scripts/microcausality_many_body_nested_commutator_lightcone_2026_07_18.py)
+    24	**Runner cache:**
+    25	[`logs/runner-cache/microcausality_many_body_nested_commutator_lightcone_2026_07_18.txt`](../logs/runner-cache/microcausality_many_body_nested_commutator_lightcone_2026_07_18.txt)
+    26	
+    27	## Purpose
+    28	
+    29	The landed gauged quasilocality note
+    30	[`GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md`](GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md)
+    31	states: "The `U`-integrated, many-body, and sharp-rate problems are
+    32	separate open tasks, not walls claimed here." The one-particle bridge
+    33	surface
+    34	[`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+    35	works on one-particle blocks and free bilinear sectors. This note supplies a
+    36	conditional finite-range spin lemma relevant to that many-body task
+    37	without closing it: for a supplied finite-range bond Hamiltonian on a
+    38	finite qubit-lattice region, commutators of separated observables have a
+    39	zero of order at least the graph distance, with a finite-volume
+    40	factorial-tail bound above the cone. The named many-body/quasilocal-
+    41	composition task, the `U`-integrated slice, and the sharp-rate slice all
+    42	remain open exactly as named there — this block does not construct the
+    43	many-body transfer Hamiltonian nor place it in the finite-range class.
+    44	
+    45	## The Supplied Class
+    46	
+    47	Let `Λ ⊂ Z^3` be finite and
+    48	`H = Σ_b h_b` a supplied Hamiltonian whose terms `h_b` are Hermitian and
+    49	supported on nearest-neighbor bonds `b` of `Λ`, with finite bond norms.
+    50	The axiom memo's own boundary is the honesty needle here: "Admissibility
+    51	is not a dynamics axiom." and "It does not
+    52	choose a Hamiltonian or transfer operator". Everything below is a theorem
+    53	about the supplied class, of the same conditional shape as the cited
+    54	microcausality notes; no dynamics is selected and no physical propagation
+    55	speed is claimed.
+    56	
+    57	Two further supplied hypotheses are declared (not axiom consequences):
+    58	the observable algebra is the finite tensor product `⊗_{x∈Λ} M_2(C)`
+    59	with operators supported on tensor slots, and time evolution is the
+    60	Heisenberg convention `A(t) = e^{itH} A e^{−itH}`, under which the `k`-th
+    61	Taylor coefficient of `A(t)` at `t = 0` is `(i)^k/k! · ad_H^k A`. For an
+    62	operator `A` with support `supp A ⊆ Λ`, write `N^k(supp A)` for the
+    63	`k`-fold nearest-neighbor graph neighborhood and `d(X, Y)` for the graph
+    64	distance between supports.
+    65	
+    66	## Results
+    67	
+    68	**L1 (one-neighborhood support growth, exact).** For every bond `b` not
+    69	touching `supp A`, `[h_b, A] = 0` (the factors act on disjoint tensor
+    70	slots), so
+    71	
+    72	> `supp(ad_H A) ⊆ N^1(supp A)`, and by iteration
+    73	> `supp(ad_H^k A) ⊆ N^k(supp A)`.
+    74	
+    75	This is finite operator algebra on the supplied class; the runner gates
+    76	the disjoint-slot commutation and the one-step support containment on
+    77	exact three-site instances.
+    78	
+    79	**T1 (below-cone Taylor vanishing, exact).** The `k`-th Taylor
+    80	coefficient of `[A_X(t), B_Y]` at `t = 0` is `(i)^k/k! · [ad_H^k A, B]`.
+    81	By L1, `supp(ad_H^k A) ⊆ N^k(X)`, and for `k < d(X, Y)` that neighborhood
+    82	is disjoint from `Y`, so the coefficient vanishes identically:
+    83	
+    84	> every coefficient with `k < d(X, Y)` vanishes — `[A_X(t), B_Y]` has a
+    85	> zero of order **at least** `d(X, Y)` at `t = 0` (arrival exactly at
+    86	> `d` holds for the named noncommuting instance below, not in general;
+    87	> see T2).
+    88	
+    89	Exact instance (gated, 8-by-8): on the three-site chain with
+    90	`H = X_1 X_2 + Z_2 Z_3`, `A = Z_1`, `B = X_3` (`d = 2`): the `k = 0` and
+    91	`k = 1` commutators are exactly zero and the `k = 2` commutator is
+    92	nonzero — the cone is reached at `k = d`.
+    93	
+    94	**T2 (the cone need not be reached: commuting exhibit, exact, all
+    95	orders).** For the commuting chain `H = X_1 X_2 + X_2 X_3` with
+    96	`A = Z_1`: since `[h_{12}, h_{23}] = 0` and `[h_{23}, A] = 0`, the nested
+    97	adjoint chain collapses to the near bond alone,
+    98	`ad_H^k A = ad_{h_{12}}^k A` for every `k`, so the support never leaves
+    99	`{1, 2}` and no site-3 probe is ever reached, at any order (the runner
+   100	gates the displayed orders `k = 2, 3` for both site-3 probes; the
+   101	collapse identity carries the all-order statement). So T1's vanishing is
+   102	a one-sided bound: below-cone coefficients always vanish, while
+   103	cone-saturation depends on the supplied Hamiltonian. No genericity claim
+   104	is made in either direction.
+   105	
+   106	**T3 (finite-volume factorial-tail bound).** With `J = max_b ||h_b||`
+   107	and `M = |E(Λ)|` the number of bonds of the finite region, iterating the
+   108	commutator norm inequality `||[P, Q]|| ≤ 2||P||·||Q||` — itself rebuilt
+   109	here rather than cited: `||PQ − QP|| ≤ ||PQ|| + ||QP|| ≤ 2||P||·||Q||`
+   110	by the triangle inequality and submultiplicativity of the operator norm,
+   111	with the runner gating the squared-norm chain on an exact instance —
+   112	over the bond sum
+   113	gives `||ad_H^k A|| ≤ (2 J M)^k ||A||` and hence, for `d = d(X, Y)`,
+   114	
+   115	> `||[A_X(t), B_Y]|| ≤ 2 ||A|| ||B|| Σ_{k ≥ d} (c |t|)^k / k!
+   116	>  ≤ 2 ||A|| ||B|| · ((c |t|)^d / d!) · e^{c |t|}`,
+   117	
+   118	with `c = 2 J M`, using the exact tail domination
+   119	`Σ_{k ≥ d} x^k/k! ≤ (x^d/d!)·e^x` (from `d!/k! ≤ 1/(k−d)!`, equivalent
+   120	to `binomial(k, d) ≥ 1`, gated formally). The constant is a
+   121	region-level bookkeeping bound: it grows with the region, so this is
+   122	explicitly **not** a volume-uniform velocity and **not** a finite-speed
+   123	propagation statement; a genuine volume-uniform Lieb-Robinson constant
+   124	would need the interaction-path argument, which together with the
+   125	sharp-rate problem remains open exactly as the cited note names it.
+   126	
+   127	## No-Go Discipline Gate
+   128	
+   129	T2 is the block's bounded negative (cone non-saturation for a named
+   130	Hamiltonian), answered:
+   131	
+   132	- **N1 route inventory:** (1) perturb the commuting chain's couplings —
+   133	  any all-`X` bond chain has commuting site factors and stalls
+   134	  identically; ATTEMPTED in structure (the stall is algebraic, not
+   135	  fine-tuned); (2) change the probe `B` — the `k`-step operator stays
+   136	  supported on `N^1`, so every site-3 probe commutes; ATTEMPTED via the
+   137	  support gate; (3) longer times — the collapse identity `ad_H^k A = ad_{h_12}^k A`
+   138	  carries the stall to every order (the runner gates `k ≤ 3`);
+   139	  (4) different observables `A` — `Z_1` is the exhibited case; other
+   140	  choices are named untested; (5) non-commuting bonds — that is T1's
+   141	  generic instance, not a rescue of the stall.
+   142	- **N2 wall independence:** one exhibit wall (non-saturation); T1's
+   143	  vanishing is a positive statement, not a second wall.
+   144	- **N3 hidden-wall scan:** finiteness of the region, Hermiticity and
+   145	  finite bond norms, and the nearest-neighbor range are the supplied
+   146	  class, stated; the Taylor-coefficient identification
+   147	  (`∂_t^k` at `t = 0` giving nested commutators) is the standard exact
+   148	  identity on finite matrices, note-carried.
+   149	- **N4 residual matching and dependency roles:** the Combes-Thomas note
+   150	  supplies the named open-task sentence (the block's target) and the
+   151	  conditional shape; `minimal_axioms` supplies the no-dynamics boundary
+   152	  needle; the one-particle bridge note is contrast context, cited in
+   153	  prose only.
+   154	- **N5 rhetoric audit:** "lightcone" here means exactly the below-cone
+   155	  Taylor vanishing plus the series bound for the supplied class; no
+   156	  physical causality, continuum, `U`-integrated, or sharp-rate claim; no
+   157	  genericity claim for saturation.
+   158	- **N6 partial-closure scan:** the `U`-integrated and sharp-rate slices
+   159	  remain open exactly as the cited note names them; nothing here
+   160	  forecloses either.
+   161	- **N7 steelman:** "Lieb-Robinson bounds are textbook." Reply: stated as
+   162	  such — the note's content is the exact placement on this framework's
+   163	  supplied class with runner-gated instances, the honest commuting-stall
+   164	  exhibit pair, and the closure of the many-body slice the lane itself
+   165	  named open; the comparator literature is not imported as proof.
+   166	- **N8 cross-cycle echo:** no prior cycle in this lane is cited; the
+   167	  exhibit-pair shape (named reaching instance plus named stalling
+   168	  instance) is used in place of any genericity claim.
+   169	
+   170	## Non-Claims
+   171	
+   172	- Does **not** select, derive, or prefer any Hamiltonian; the axioms
+   173	  supply no dynamics, and the supplied-class shape matches the cited
+   174	  microcausality notes.
+   175	- Does **not** claim a physical propagation speed, kinetic-isotropy
+   176	  content, continuum limits, `U`-integrated statements, or sharp rates.
+   177	- Does **not** claim cone-saturation for generic Hamiltonians.
+   178	- Does **not** set an audit verdict; independent audit remains required.
+   179	
+   180	## Verification
+   181	
+   182	The primary runner checks the listed reductions and witnesses and nothing
+   183	more (sympy, exact arithmetic, single process, three-site 8-by-8
+   184	instances): disjoint-slot bond commutation; one-step support containment;
+   185	the T1 instance (`k = 0, 1` zero, `k = 2` nonzero at `d = 2`); the T2
+   186	commuting exhibit (`k = 2, 3` zero); the factorial tail-domination
+   187	inequality in formal form; a commutator norm-bound instance; and needle
+   188	checks pinning the cited note's open-task sentence, the axiom memo's
+   189	no-dynamics sentences, and this note's claim identifier and labels.
+   190	Mutation checks (one load-bearing mutation per check family, reverted)
+   191	are recorded in the review history and PR body.
+   192	
+   193	Measured runner total after final verification:
+   194	`TOTAL: PASS=17 FAIL=0`.
+
+2026-07-18T12:34:44.089907Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+The first pass exposes two pressure points worth independently testing: the count bound is safe but uses `+2` where a touching bond can add only one new site, and W5 divides by the actual sequence count without handling a zero count. I’m now checking those and every stated probe/order in the breathing exhibit from scratch.
+exec
+/bin/zsh -lc "PYTHONDONTWRITEBYTECODE=1 python3 - <<'PY'
+import itertools
+import sympy as sp
+
+# Independent Z"'^3 incidence/count checks.
+V = ((1,0,0),(0,1,0),(0,0,1))
+def incident(S):
+    S=set(S); out=set()
+    for x in S:
+        for v in V:
+            y=tuple(x[i]+v[i] for i in range(3))
+            z=tuple(x[i]-v[i] for i in range(3))
+            out.add(tuple(sorted((x,y))))
+            out.add(tuple(sorted((z,x))))
+    return out
+sets = [
+    {(0,0,0)},
+    {(0,0,0),(1,0,0)},
+    {(0,0,0),(2,0,0)},
+    {(0,0,0),(1,0,0),(0,1,0)},
+]
+print('"'INCIDENCE')
+for S in sets:
+    adds=sorted(len(set(b)-S) for b in incident(S))
+    print(len(S), len(incident(S)), 6*len(S), max(adds))
+
+def compatible_supports(k):
+    states=[frozenset({(0,0,0)})]
+    for _ in range(k):
+        states=[frozenset(set(S)|set(b)) for S in states for b in incident(S)]
+    return states
+print('COMPATIBLE_SEQUENCE_COUNTS')
+for k in range(1,4):
+    count=len(compatible_supports(k))
+    old=sp.prod(6*(1+2*j) for j in range(k))
+    improved=sp.prod(6*(1+j) for j in range(k))
+    print(k, count, int(old), int(improved))
+
+# Independent W5 algebra.
+m,k,J,t=sp.symbols('m k J t', positive=True)
+old_P_ratio=6*(m+2*k)
+old_a_ratio=sp.simplify(2*J*t*old_P_ratio/(k+1))
+new_P_ratio=6*(m+k)
+new_a_ratio=sp.simplify(2*J*t*new_P_ratio/(k+1))
+old_mon=sp.expand((m+2*k)*(k+2)-(m+2*k+2)*(k+1))
+new_mon=sp.expand((m+k)*(k+2)-(m+k+1)*(k+1))
+print('RATIOS', old_a_ratio, new_a_ratio)
+print('MONOTONICITY_NUMERATORS', old_mon, new_mon)
+
+# Independent exact matrix/probe checks.
+I=sp.eye(2)
+X=sp.Matrix([[0,1],[1,0]])
+Y=sp.Matrix([[0,-sp.I],[sp.I,0]])
+Z=sp.diag(1,-1)
+def kron(*xs):
+    out=xs[0]
+    for q in xs[1:]: out=sp.kronecker_product(out,q)
+    return sp.Matrix(out)
+def com(a,b): return a*b-b*a
+def zero(a): return a == sp.zeros(*a.shape)
+h=[kron(X,X,I),kron(I,Z,Z)]
+H=h[0]+h[1]
+A=kron(Z,I,I)
+P={'X3':kron(I,I,X),'Y3':kron(I,I,Y),'Z3':kron(I,I,Z)}
+def term(seq):
+    out=A
+    for idx in reversed(seq): out=com(h[idx],out)
+    return out
+def total(order):
+    return sum((term(seq) for seq in itertools.product(range(2),repeat=order)),sp.zeros(8))
+print('BREATHING_TOTAL_COMMUTES')
+for order in (2,3,4):
+    T=total(order)
+    print(order,{name:zero(com(T,p)) for name,p in P.items()})
+print('K3_EACH_TERM_COMMUTES')
+for name,p in P.items():
+    vals=[zero(com(term(seq),p)) for seq in itertools.product(range(2),repeat=3)]
+    print(name, all(vals), vals)
+print('K3_NONZERO_TERMS',sum(not zero(term(seq)) for seq in itertools.product(range(2),repeat=3)))
+print('H_AND_A_COMMUTE_WITH_Z3',zero(com(H,P['Z3'])),zero(com(A,P['Z3'])))
+PY" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+2026-07-18T12:39:19.514011Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 184ms:
+INCIDENCE
+1 6 6 1
+2 11 12 1
+2 12 12 1
+3 16 18 1
+COMPATIBLE_SEQUENCE_COUNTS
+1 6 6 6
+2 66 108 72
+3 1026 3240 1296
+RATIOS 12*J*t*(2*k + m)/(k + 1) 12*J*t*(k + m)/(k + 1)
+MONOTONICITY_NUMERATORS m - 2 m - 1
+BREATHING_TOTAL_COMMUTES
+2 {'X3': False, 'Y3': False, 'Z3': True}
+3 {'X3': True, 'Y3': True, 'Z3': True}
+4 {'X3': False, 'Y3': False, 'Z3': True}
+K3_EACH_TERM_COMMUTES
+X3 True [True, True, True, True, True, True, True, True]
+Y3 True [True, True, True, True, True, True, True, True]
+Z3 True [True, True, True, True, True, True, True, True]
+K3_NONZERO_TERMS 2
+H_AND_A_COMMUTE_WITH_Z3 True True
+
+codex
+VERDICT: 0 blocker(s), 4 major, 2 minor
+
+1. **MAJOR — W5’s ratio chain has an unstated recurrence and divides by possibly zero terms.** Quote: “`a_{k+1}/a_k ≤ 12 J |t| · (m + 2k)/(k + 1)`” ([note:102](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:102>)). The displayed W3 bounds `N_k≤P_k` and `N_{k+1}≤P_{k+1}` alone do not imply a ratio bound. The needed extension lemma is
+   `N_{k+1}≤6(m+2k)N_k`; then the `(2J)/(k+1)` factor indeed gives `12J(m+2k)/(k+1)`. If `N_k=0`, however, the written ratio is undefined—although all later counts are then zero. The runner checks only the symbolic monotonicity, not this recurrence ([runner:202](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py:202>)).  
+   **Narrowest fix:** state and prove the recurrence by unique-prefix extension; apply ratios only when `a_k>0`, with the zero-tail, `t=0`, and `J=0` cases handled separately. After that repair, the `m≥2` monotonicity, `m'=2` absorption, and geometric domination beginning at `k=d` are correct.
+
+2. **MAJOR — “volume-uniform” and “local data only” omit the required uniform interaction-strength hypothesis.** Quotes: “`J = max_b ||h_b||`” ([note:48](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:48>)) and “`a_d built from local data only. Volume-uniform`” ([note:114](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:114>)). A remote bond can change this region-wide maximum, and the supplied class only assumes finite norms in each finite region; it does not impose one `J` uniform over a volume family. Thus the result is `|Λ|`-free at fixed `J`, not volume-uniform over the stated class without another hypothesis.  
+   **Narrowest fix:** add `sup_{Λ,b}||h_b^(Λ)||≤J_*` for the compared family and consistently say “uniform at fixed `J_*`, `m`, observable norms, and coordination”; replace “local data only” with that explicit inventory.
+
+3. **MAJOR — N1 contains two statements contradicted by the theorem and runner.** Quote: “`the Z_3 probe at k = 3 picks up the arriving operator`” and “`higher orders — named untested beyond the gated k ≤ 3`” ([note:124](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:124>)). Independent exact enumeration gives:
+
+   - `k=2`: `X₃,Y₃` register; `Z₃` is silent.
+   - `k=3`: every individual sequence commutes with `X₃,Y₃,Z₃`.
+   - `k=4`: `X₃,Y₃` register; `Z₃` remains silent.
+
+   Moreover, W4d explicitly gates `k=4`. Once these false “routes” are removed, N1 no longer supplies five credible alternatives: the cited commuting-chain stall is not a rescue of the parity retreat, and one route is merely the dead-sequence lemma restated.  
+   **Narrowest fix:** rewrite N1 with the exact order/probe facts, mark only orders `>4` untested, and provide five truthful scope variations before claiming N1–N8 completeness.
+
+4. **MAJOR — the breathing exhibit is true, but the runner does not gate the strengthened body claim.** The body says “`every one of the eight sequences separately gives zero against every site-3 probe`” ([note:92](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:92>)). The runner checks every term only against `X₃`; its `Z₃` check is on the total sum ([runner:177](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py:177>)). It also does not gate the asserted `Y₃` registration at `k=2` or the all-order-sounding “`Z₃ never does`.”  
+   **Narrowest fix:** check each `k=3` term against both `X₃` and `Z₃`—enough to establish commutation with the full site algebra—plus gate `Y₃` at `k=2`; either prove `[H,Z₃]=[A,Z₃]=0` for “never” or narrow it to the displayed orders.
+
+5. **MINOR — W3 is valid, including at boundaries, but its “exact” language hides an immediately stronger count.** Quote: “`each step adds at most 2 sites`” ([note:73](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:73>)). A support of `s` sites meets at most `6s` distinct bonds; internal bonds are double-counted by the degree sum and finite-region boundaries only reduce the count. But a bond required to touch the accumulated support adds at most **one new site**, not two. The stated product and its `j=0,…,k−1` indexing are safe but loose.  
+   **Narrowest fix:** call it a conservative product bound, not an “exact local product/window.” Alternatively strengthen it to `∏_{j=0}^{k−1}6(m+j)`, yielding ratio `12J|t|(m+k)/(k+1)` and removing the `m'=2` absorption.
+
+6. **MINOR — the authoritative frontmatter and W5 body state different windows.** Frontmatter says “`|t| < (d+1)/(12J(m+2d)·2)`” ([note:4](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:4>)); W5 says `|t|<(d+1)/(12J(m'+2d))` ([note:109](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:109>)). The former has an unexplained extra factor two and omits `m'`.  
+   **Narrowest fix:** make frontmatter match W5 and call it an “explicit sufficient/certified window,” since it is not the maximal exact window.
+
+The finite-matrix absolute-convergence step is sound for each fixed finite region. The sibling quotation is faithful ([sibling:123](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md:123>)); the all-time/sharp-rate boundary is not oversold. Frontmatter dependencies are complete for the stated proof roles, and “breathing” is descriptive rather than a new framework primitive.
+tokens used
+58,144
+VERDICT: 0 blocker(s), 4 major, 2 minor
+
+1. **MAJOR — W5’s ratio chain has an unstated recurrence and divides by possibly zero terms.** Quote: “`a_{k+1}/a_k ≤ 12 J |t| · (m + 2k)/(k + 1)`” ([note:102](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:102>)). The displayed W3 bounds `N_k≤P_k` and `N_{k+1}≤P_{k+1}` alone do not imply a ratio bound. The needed extension lemma is
+   `N_{k+1}≤6(m+2k)N_k`; then the `(2J)/(k+1)` factor indeed gives `12J(m+2k)/(k+1)`. If `N_k=0`, however, the written ratio is undefined—although all later counts are then zero. The runner checks only the symbolic monotonicity, not this recurrence ([runner:202](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py:202>)).  
+   **Narrowest fix:** state and prove the recurrence by unique-prefix extension; apply ratios only when `a_k>0`, with the zero-tail, `t=0`, and `J=0` cases handled separately. After that repair, the `m≥2` monotonicity, `m'=2` absorption, and geometric domination beginning at `k=d` are correct.
+
+2. **MAJOR — “volume-uniform” and “local data only” omit the required uniform interaction-strength hypothesis.** Quotes: “`J = max_b ||h_b||`” ([note:48](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:48>)) and “`a_d built from local data only. Volume-uniform`” ([note:114](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:114>)). A remote bond can change this region-wide maximum, and the supplied class only assumes finite norms in each finite region; it does not impose one `J` uniform over a volume family. Thus the result is `|Λ|`-free at fixed `J`, not volume-uniform over the stated class without another hypothesis.  
+   **Narrowest fix:** add `sup_{Λ,b}||h_b^(Λ)||≤J_*` for the compared family and consistently say “uniform at fixed `J_*`, `m`, observable norms, and coordination”; replace “local data only” with that explicit inventory.
+
+3. **MAJOR — N1 contains two statements contradicted by the theorem and runner.** Quote: “`the Z_3 probe at k = 3 picks up the arriving operator`” and “`higher orders — named untested beyond the gated k ≤ 3`” ([note:124](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:124>)). Independent exact enumeration gives:
+
+   - `k=2`: `X₃,Y₃` register; `Z₃` is silent.
+   - `k=3`: every individual sequence commutes with `X₃,Y₃,Z₃`.
+   - `k=4`: `X₃,Y₃` register; `Z₃` remains silent.
+
+   Moreover, W4d explicitly gates `k=4`. Once these false “routes” are removed, N1 no longer supplies five credible alternatives: the cited commuting-chain stall is not a rescue of the parity retreat, and one route is merely the dead-sequence lemma restated.  
+   **Narrowest fix:** rewrite N1 with the exact order/probe facts, mark only orders `>4` untested, and provide five truthful scope variations before claiming N1–N8 completeness.
+
+4. **MAJOR — the breathing exhibit is true, but the runner does not gate the strengthened body claim.** The body says “`every one of the eight sequences separately gives zero against every site-3 probe`” ([note:92](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:92>)). The runner checks every term only against `X₃`; its `Z₃` check is on the total sum ([runner:177](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py:177>)). It also does not gate the asserted `Y₃` registration at `k=2` or the all-order-sounding “`Z₃ never does`.”  
+   **Narrowest fix:** check each `k=3` term against both `X₃` and `Z₃`—enough to establish commutation with the full site algebra—plus gate `Y₃` at `k=2`; either prove `[H,Z₃]=[A,Z₃]=0` for “never” or narrow it to the displayed orders.
+
+5. **MINOR — W3 is valid, including at boundaries, but its “exact” language hides an immediately stronger count.** Quote: “`each step adds at most 2 sites`” ([note:73](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:73>)). A support of `s` sites meets at most `6s` distinct bonds; internal bonds are double-counted by the degree sum and finite-region boundaries only reduce the count. But a bond required to touch the accumulated support adds at most **one new site**, not two. The stated product and its `j=0,…,k−1` indexing are safe but loose.  
+   **Narrowest fix:** call it a conservative product bound, not an “exact local product/window.” Alternatively strengthen it to `∏_{j=0}^{k−1}6(m+j)`, yielding ratio `12J|t|(m+k)/(k+1)` and removing the `m'=2` absorption.
+
+6. **MINOR — the authoritative frontmatter and W5 body state different windows.** Frontmatter says “`|t| < (d+1)/(12J(m+2d)·2)`” ([note:4](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:4>)); W5 says `|t|<(d+1)/(12J(m'+2d))` ([note:109](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md:109>)). The former has an unexplained extra factor two and omits `m'`.  
+   **Narrowest fix:** make frontmatter match W5 and call it an “explicit sufficient/certified window,” since it is not the maximal exact window.
+
+The finite-matrix absolute-convergence step is sound for each fixed finite region. The sibling quotation is faithful ([sibling:123](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md:123>)); the all-time/sharp-rate boundary is not oversold. Frontmatter dependencies are complete for the stated proof roles, and “breathing” is descriptive rather than a new framework primitive.

@@ -1,0 +1,1354 @@
+2026-07-18T12:05:03.681262Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f751d-a1b2-73e1-a195-917a7c582b10
+--------
+user
+READ-ONLY adversarial review lens (combined: algebra + overclaim + governance), microcausality many-body lightcone block01. No file writes, no git. Verdict = final message.
+Read exactly: (1) docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md (2) scripts/microcausality_many_body_nested_commutator_lightcone_2026_07_18.py (3) docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md (4) docs/MINIMAL_AXIOMS_2026-06-29.md
+Attack: (a) ALGEBRA — is L1's support-growth argument airtight as stated (bond terms only? what about overlapping-bond sums, on-site terms — does the class definition cover/exclude them and does the proof care)? Is T1's Taylor-coefficient identification exact ((i)^k/k! ad^k — sign/convention)? Is T3's ||ad_H^k A|| <= (2 J m_k)^k ||A|| chain honestly derivable from the stated inequalities (iteration subtlety: which region's bonds count at step j)? Verify via python3 HEREDOC, no writes. (b) OVERCLAIM — "lightcone", "finite-speed", "many-body slice ... at bounded level" vs the runner's 16 instance gates and the note-carried general proofs; the quantifier lessons (per-theorem statements); T2's scope (gated orders only). (c) GOVERNANCE — coined terms; axiom-reading discipline (no dynamics supplied — does any sentence over-read?); N1-N8 completeness; frontmatter deps; quote fidelity vs files 3-4.
+Output: "VERDICT: <n> blocker(s), <m> major, <k> minor" + numbered findings with exact quotes and narrowest fixes; if clean, the three closest calls.
+
+codex
+I’ll conduct the review strictly read-only, read only the four named files, and run only a Python heredoc for the requested algebra checks. The final response will be the verdict.
+exec
+/bin/zsh -lc 'nl -ba "docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+exec
+/bin/zsh -lc 'nl -ba "docs/MINIMAL_AXIOMS_2026-06-29.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+exec
+/bin/zsh -lc 'nl -ba "scripts/microcausality_many_body_nested_commutator_lightcone_2026_07_18.py"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	---
+     2	claim_id: microcausality_many_body_nested_commutator_lightcone_bounded_theorem_note_2026-07-18
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional many-body lightcone on the qubit lattice for a SUPPLIED finite-range bond Hamiltonian class (the axioms supply no dynamics and no Hamiltonian; nothing physical is selected): (L1) one-neighborhood support growth of the adjoint action, exactly; (T1) below-cone vanishing — every Taylor coefficient of the commutator [A_X(t), B_Y] at t = 0 vanishes identically through order d(X,Y) − 1, by iterated support growth, with an exact three-site instance reaching the cone at k = d; (T2) an exact commuting-chain exhibit where the cone is never reached, so the vanishing order is an upper bound on arrival, not an equality, and cone-saturation is Hamiltonian-dependent; (T3) a Lieb-Robinson-form series bound with class-relative constants and the exact factorial tail domination, giving finite-speed operator spreading for the supplied class — the many-body slice of the microcausality lane's named separate open tasks, at bounded level; the U-integrated and sharp-rate slices remain open, and no physical propagation speed, kinetic-isotropy content, or dynamics selection is claimed."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	  - gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13
+     8	runner: scripts/microcausality_many_body_nested_commutator_lightcone_2026_07_18.py
+     9	---
+    10	
+    11	# Microcausality: A Many-Body Nested-Commutator Lightcone For The Supplied Finite-Range Class
+    12	
+    13	**Date:** 2026-07-18
+    14	**Type:** bounded_theorem
+    15	**Claim type:** bounded_theorem
+    16	**Scope:** bridge-conditional; the Hamiltonian class is supplied, exactly
+    17	as in the cited microcausality notes; the axioms choose no dynamics.
+    18	**Audit-status authority:** independent audit lane only. This note sets no
+    19	audit verdict and predicts none.
+    20	**Primitive status:** no primitive is approved, registered, edited, or
+    21	enlarged here; the kinetic-isotropy primitive is not used.
+    22	**Primary runner:**
+    23	[`scripts/microcausality_many_body_nested_commutator_lightcone_2026_07_18.py`](../scripts/microcausality_many_body_nested_commutator_lightcone_2026_07_18.py)
+    24	**Runner cache:**
+    25	[`logs/runner-cache/microcausality_many_body_nested_commutator_lightcone_2026_07_18.txt`](../logs/runner-cache/microcausality_many_body_nested_commutator_lightcone_2026_07_18.txt)
+    26	
+    27	## Purpose
+    28	
+    29	The landed gauged quasilocality note
+    30	[`GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md`](GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md)
+    31	states: "The `U`-integrated, many-body, and sharp-rate problems are
+    32	separate open tasks, not walls claimed here." The one-particle bridge
+    33	surface
+    34	[`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+    35	works on one-particle blocks and free bilinear sectors. This note takes
+    36	the **many-body** slice at bounded level: for a supplied finite-range bond
+    37	Hamiltonian on the qubit lattice, operator spreading has an exact
+    38	lightcone structure — commutators of separated observables vanish to
+    39	order the graph distance, with a Lieb-Robinson-form series bound above the
+    40	cone. The `U`-integrated and sharp-rate slices remain open exactly as
+    41	named there.
+    42	
+    43	## The Supplied Class
+    44	
+    45	Let `Λ ⊂ Z^3` be finite and
+    46	`H = Σ_b h_b` a supplied Hamiltonian whose terms `h_b` are Hermitian and
+    47	supported on nearest-neighbor bonds `b` of `Λ`, with finite bond norms.
+    48	The axiom memo's own boundary is the honesty needle here: "Admissibility
+    49	is not a dynamics axiom." and "It does not
+    50	choose a Hamiltonian or transfer operator". Everything below is a theorem
+    51	about the supplied class, of the same conditional shape as the cited
+    52	microcausality notes; no dynamics is selected and no physical propagation
+    53	speed is claimed.
+    54	
+    55	For an operator `A` with support `supp A ⊆ Λ`, write `N^k(supp A)` for
+    56	the `k`-fold nearest-neighbor graph neighborhood and `d(X, Y)` for the
+    57	graph distance between supports.
+    58	
+    59	## Results
+    60	
+    61	**L1 (one-neighborhood support growth, exact).** For every bond `b` not
+    62	touching `supp A`, `[h_b, A] = 0` (the factors act on disjoint tensor
+    63	slots), so
+    64	
+    65	> `supp(ad_H A) ⊆ N^1(supp A)`, and by iteration
+    66	> `supp(ad_H^k A) ⊆ N^k(supp A)`.
+    67	
+    68	This is finite operator algebra on the supplied class; the runner gates
+    69	the disjoint-slot commutation and the one-step support containment on
+    70	exact three-site instances.
+    71	
+    72	**T1 (below-cone Taylor vanishing, exact).** The `k`-th Taylor
+    73	coefficient of `[A_X(t), B_Y]` at `t = 0` is `(i)^k/k! · [ad_H^k A, B]`.
+    74	By L1, `supp(ad_H^k A) ⊆ N^k(X)`, and for `k < d(X, Y)` that neighborhood
+    75	is disjoint from `Y`, so the coefficient vanishes identically:
+    76	
+    77	> `[A_X(t), B_Y]` vanishes at `t = 0` to order `d(X, Y)`.
+    78	
+    79	Exact instance (gated, 8-by-8): on the three-site chain with
+    80	`H = X_1 X_2 + Z_2 Z_3`, `A = Z_1`, `B = X_3` (`d = 2`): the `k = 0` and
+    81	`k = 1` commutators are exactly zero and the `k = 2` commutator is
+    82	nonzero — the cone is reached at `k = d`.
+    83	
+    84	**T2 (the cone need not be reached: commuting exhibit, exact).** For the
+    85	commuting chain `H = X_1 X_2 + X_2 X_3` with `A = Z_1`, `B = Z_3`, the
+    86	`k = 2` and `k = 3` nested-commutator coefficients are still exactly zero
+    87	(the site-2 factors of the two bonds commute, so spreading stalls at the
+    88	first neighborhood). So T1's vanishing order is a one-sided bound:
+    89	below-cone coefficients always vanish, while cone-saturation depends on
+    90	the supplied Hamiltonian. No genericity claim is made in either
+    91	direction.
+    92	
+    93	**T3 (Lieb-Robinson-form series bound).** With `J = max_b ||h_b||` and
+    94	`m_k` the number of bonds touching `N^{k}(X)` (polynomially bounded on
+    95	`Z^3`, `m_k ≤ z·|N^k(X)|` with `z` the coordination bound), iterating the
+    96	commutator norm inequality `||[P, Q]|| ≤ 2||P||·||Q||` gives
+    97	`||ad_H^k A|| ≤ (2 J m_k)^k ||A||` and hence, for `d = d(X, Y)`,
+    98	
+    99	> `||[A_X(t), B_Y]|| ≤ 2 ||A|| ||B|| Σ_{k ≥ d} (c |t|)^k / k!
+   100	>  ≤ 2 ||A|| ||B|| · ((c |t|)^d / d!) · e^{c |t|}`,
+   101	
+   102	with `c = 2 J m_D` for any uniform bond-count bound `m_D` on the finite
+   103	region, using the exact tail domination
+   104	`Σ_{k ≥ d} x^k/k! ≤ (x^d/d!)·e^x` (from `d!/k! ≤ 1/(k−d)!`, equivalent to
+   105	`binomial(k, d) ≥ 1`, gated formally). The constants are class-relative
+   106	bookkeeping on the finite region: coarse by construction, exact as
+   107	stated, and not a physical velocity — the sharp-rate problem remains the
+   108	named open task of the cited note.
+   109	
+   110	## No-Go Discipline Gate
+   111	
+   112	T2 is the block's bounded negative (cone non-saturation for a named
+   113	Hamiltonian), answered:
+   114	
+   115	- **N1 route inventory:** (1) perturb the commuting chain's couplings —
+   116	  any all-`X` bond chain has commuting site factors and stalls
+   117	  identically; ATTEMPTED in structure (the stall is algebraic, not
+   118	  fine-tuned); (2) change the probe `B` — the `k`-step operator stays
+   119	  supported on `N^1`, so every site-3 probe commutes; ATTEMPTED via the
+   120	  support gate; (3) longer times — Taylor coefficients of every order
+   121	  `k ≤ 3` are gated zero, and the stall argument is order-uniform for
+   122	  this chain; stated to the gated orders with the algebraic reason named;
+   123	  (4) different observables `A` — `Z_1` is the exhibited case; other
+   124	  choices are named untested; (5) non-commuting bonds — that is T1's
+   125	  generic instance, not a rescue of the stall.
+   126	- **N2 wall independence:** one exhibit wall (non-saturation); T1's
+   127	  vanishing is a positive statement, not a second wall.
+   128	- **N3 hidden-wall scan:** finiteness of the region, Hermiticity and
+   129	  finite bond norms, and the nearest-neighbor range are the supplied
+   130	  class, stated; the Taylor-coefficient identification
+   131	  (`∂_t^k` at `t = 0` giving nested commutators) is the standard exact
+   132	  identity on finite matrices, note-carried.
+   133	- **N4 residual matching and dependency roles:** the Combes-Thomas note
+   134	  supplies the named open-task sentence (the block's target) and the
+   135	  conditional shape; `minimal_axioms` supplies the no-dynamics boundary
+   136	  needle; the one-particle bridge note is contrast context, cited in
+   137	  prose only.
+   138	- **N5 rhetoric audit:** "lightcone" here means exactly the below-cone
+   139	  Taylor vanishing plus the series bound for the supplied class; no
+   140	  physical causality, continuum, `U`-integrated, or sharp-rate claim; no
+   141	  genericity claim for saturation.
+   142	- **N6 partial-closure scan:** the `U`-integrated and sharp-rate slices
+   143	  remain open exactly as the cited note names them; nothing here
+   144	  forecloses either.
+   145	- **N7 steelman:** "Lieb-Robinson bounds are textbook." Reply: stated as
+   146	  such — the note's content is the exact placement on this framework's
+   147	  supplied class with runner-gated instances, the honest commuting-stall
+   148	  exhibit pair, and the closure of the many-body slice the lane itself
+   149	  named open; the comparator literature is not imported as proof.
+   150	- **N8 cross-cycle echo:** the exhibit-pair discipline (generic reach
+   151	  plus commuting stall) repeats the lane pattern of witnessing both
+   152	  sides exactly rather than claiming genericity.
+   153	
+   154	## Non-Claims
+   155	
+   156	- Does **not** select, derive, or prefer any Hamiltonian; the axioms
+   157	  supply no dynamics, and the supplied-class shape matches the cited
+   158	  microcausality notes.
+   159	- Does **not** claim a physical propagation speed, kinetic-isotropy
+   160	  content, continuum limits, `U`-integrated statements, or sharp rates.
+   161	- Does **not** claim cone-saturation for generic Hamiltonians.
+   162	- Does **not** set an audit verdict; independent audit remains required.
+   163	
+   164	## Verification
+   165	
+   166	The primary runner checks the listed reductions and witnesses and nothing
+   167	more (sympy, exact arithmetic, single process, three-site 8-by-8
+   168	instances): disjoint-slot bond commutation; one-step support containment;
+   169	the T1 instance (`k = 0, 1` zero, `k = 2` nonzero at `d = 2`); the T2
+   170	commuting exhibit (`k = 2, 3` zero); the factorial tail-domination
+   171	inequality in formal form; a commutator norm-bound instance; and needle
+   172	checks pinning the cited note's open-task sentence, the axiom memo's
+   173	no-dynamics sentences, and this note's claim identifier and labels.
+   174	Mutation checks (one load-bearing mutation per check family, reverted)
+   175	are recorded in the review history and PR body.
+   176	
+   177	Measured runner total after final verification:
+   178	`TOTAL: PASS=16 FAIL=0`.
+
+ succeeded in 0ms:
+     1	#!/usr/bin/env python3
+     2	"""Exact checks for the many-body nested-commutator lightcone note."""
+     3	
+     4	from pathlib import Path
+     5	
+     6	import sympy as sp
+     7	
+     8	
+     9	ROOT = Path(__file__).resolve().parents[1]
+    10	TARGET_NOTE = ROOT / "docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md"
+    11	CT_NOTE = ROOT / "docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md"
+    12	AXIOM_NOTE = ROOT / "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    13	
+    14	
+    15	def normalized_whitespace(text):
+    16	    return " ".join(text.split())
+    17	
+    18	
+    19	class CheckRunner:
+    20	    def __init__(self):
+    21	        self.passed = 0
+    22	        self.failed = 0
+    23	
+    24	    def check(self, label, condition):
+    25	        ok = bool(condition)
+    26	        if ok:
+    27	            self.passed += 1
+    28	            print(f"PASS: {label}")
+    29	        else:
+    30	            self.failed += 1
+    31	            print(f"FAIL: {label}")
+    32	
+    33	    def needle(self, label, path, needles):
+    34	        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
+    35	        if isinstance(needles, str):
+    36	            needles = (needles,)
+    37	        self.check(
+    38	            label,
+    39	            all(normalized_whitespace(n) in haystack for n in needles),
+    40	        )
+    41	
+    42	    def finish(self):
+    43	        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
+    44	        return 0 if self.failed == 0 else 1
+    45	
+    46	
+    47	I2 = sp.eye(2)
+    48	SX = sp.Matrix([[0, 1], [1, 0]])
+    49	SZ = sp.Matrix([[1, 0], [0, -1]])
+    50	
+    51	
+    52	def kron(*mats):
+    53	    out = mats[0]
+    54	    for m in mats[1:]:
+    55	        out = sp.Matrix(sp.kronecker_product(out, m))
+    56	    return out
+    57	
+    58	
+    59	def com(a, b):
+    60	    return a * b - b * a
+    61	
+    62	
+    63	def is_zero(m):
+    64	    return sp.simplify(m) == sp.zeros(*m.shape)
+    65	
+    66	
+    67	def main():
+    68	    checks = CheckRunner()
+    69	
+    70	    site_a = kron(SZ, I2, I2)
+    71	    probe_x3 = kron(I2, I2, SX)
+    72	    probe_z3 = kron(I2, I2, SZ)
+    73	    bond_12_xx = kron(SX, SX, I2)
+    74	    bond_23_xx = kron(I2, SX, SX)
+    75	    bond_23_zz = kron(I2, SZ, SZ)
+    76	
+    77	    # Group L1 -- support growth.
+    78	    checks.check(
+    79	        "L1a a bond not touching the support commutes exactly",
+    80	        is_zero(com(bond_23_zz, site_a)) and is_zero(com(bond_23_xx, site_a)),
+    81	    )
+    82	    generic_h = bond_12_xx + bond_23_zz
+    83	    ad1 = com(generic_h, site_a)
+    84	    checks.check(
+    85	        "L1b the first adjoint step stays inside the one-neighborhood",
+    86	        is_zero(com(ad1, probe_x3)) and is_zero(com(ad1, probe_z3)),
+    87	    )
+    88	    checks.check(
+    89	        "L1c the first adjoint step is itself nonzero",
+    90	        not is_zero(ad1),
+    91	    )
+    92	
+    93	    # Group T1 -- below-cone vanishing and cone arrival (generic chain).
+    94	    ad2 = com(generic_h, ad1)
+    95	    checks.check(
+    96	        "T1a k=0 commutator vanishes below the cone",
+    97	        is_zero(com(site_a, probe_x3)),
+    98	    )
+    99	    checks.check(
+   100	        "T1b k=1 commutator vanishes below the cone",
+   101	        is_zero(com(ad1, probe_x3)),
+   102	    )
+   103	    checks.check(
+   104	        "T1c k=2 commutator is nonzero at the cone distance",
+   105	        not is_zero(com(ad2, probe_x3)),
+   106	    )
+   107	
+   108	    # Group T2 -- commuting-chain stall exhibit.
+   109	    commuting_h = bond_12_xx + bond_23_xx
+   110	    cad1 = com(commuting_h, site_a)
+   111	    cad2 = com(commuting_h, cad1)
+   112	    cad3 = com(commuting_h, cad2)
+   113	    checks.check(
+   114	        "T2a commuting chain first step is nonzero",
+   115	        not is_zero(cad1),
+   116	    )
+   117	    checks.check(
+   118	        "T2b commuting chain never reaches the cone at k=2 (any site-3 probe)",
+   119	        is_zero(com(cad2, probe_z3)) and is_zero(com(cad2, probe_x3)),
+   120	    )
+   121	    checks.check(
+   122	        "T2c commuting chain never reaches the cone at k=3 (any site-3 probe)",
+   123	        is_zero(com(cad3, probe_z3)) and is_zero(com(cad3, probe_x3)),
+   124	    )
+   125	    checks.check(
+   126	        "T2d the stall mechanism: the two bonds commute exactly",
+   127	        is_zero(com(bond_12_xx, bond_23_xx))
+   128	        and not is_zero(com(bond_12_xx, bond_23_zz)),
+   129	    )
+   130	
+   131	    # Group T3 -- series-bound ingredients.
+   132	    k_val, d_val = 5, 2
+   133	    checks.check(
+   134	        "T3a factorial tail domination d!/k! <= 1/(k-d)! via binomial >= 1",
+   135	        sp.binomial(k_val, d_val) >= 1
+   136	        and sp.Rational(sp.factorial(d_val), sp.factorial(k_val))
+   137	        <= sp.Rational(1, sp.factorial(k_val - d_val)),
+   138	    )
+   139	    x = sp.Rational(3, 2)
+   140	    lhs_tail = sum(x**k / sp.factorial(k) for k in range(d_val, 12))
+   141	    rhs_tail = (x**d_val / sp.factorial(d_val)) * sp.exp(x)
+   142	    checks.check(
+   143	        "T3b exact partial-tail instance is dominated by the closed form",
+   144	        sp.simplify(rhs_tail - lhs_tail).is_positive is True,
+   145	    )
+   146	    two_by_two = sp.Matrix([[0, 2], [1, 0]])
+   147	    other = sp.Matrix([[1, 1], [0, -1]])
+   148	    comm_norm_sq = max(
+   149	        (com(two_by_two, other).H * com(two_by_two, other)).eigenvals()
+   150	    )
+   151	    prod_bound_sq = 4 * max((two_by_two.H * two_by_two).eigenvals()) * max(
+   152	        (other.H * other).eigenvals()
+   153	    )
+   154	    checks.check(
+   155	        "T3c commutator norm-bound instance ||[P,Q]||^2 <= 4||P||^2||Q||^2",
+   156	        sp.simplify(prod_bound_sq - comm_norm_sq).is_nonnegative is True,
+   157	    )
+   158	
+   159	    # Group N -- source needles.  __TOTAL__ deliberately not matched.
+   160	    checks.needle(
+   161	        "N1 cited note names the many-body slice as a separate open task",
+   162	        CT_NOTE,
+   163	        "The `U`-integrated, many-body, and\n  sharp-rate problems are "
+   164	        "separate open tasks, not walls claimed here.",
+   165	    )
+   166	    checks.needle(
+   167	        "N2 axiom memo supplies no dynamics",
+   168	        AXIOM_NOTE,
+   169	        (
+   170	            "Admissibility is not a dynamics axiom.",
+   171	            "choose a Hamiltonian or transfer operator",
+   172	        ),
+   173	    )
+   174	    checks.needle(
+   175	        "N3 target identifier and labels",
+   176	        TARGET_NOTE,
+   177	        (
+   178	            "microcausality_many_body_nested_commutator_lightcone_bounded_theorem_note_2026-07-18",
+   179	            "**L1 (one-neighborhood support growth, exact).**",
+   180	            "**T2 (the cone need not be reached: commuting exhibit, exact).**",
+   181	            "vanishes at `t = 0` to order `d(X, Y)`",
+   182	        ),
+   183	    )
+   184	
+   185	    return checks.finish()
+   186	
+   187	
+   188	if __name__ == "__main__":
+   189	    raise SystemExit(main())
+
+ succeeded in 0ms:
+     1	# Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)
+     2	
+     3	> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`;
+     4	> each row points to the canonical source-of-truth doc.
+     5	
+     6	**Date:** 2026-06-29
+     7	**Type:** meta
+     8	**Status:** current public framework axiom memo for the qubit-on-`Z^3`
+     9	package with local admissibility and fixed scalar record readout.
+    10	**Status authority:** explicit owner approval for the 2026-06-29 foundation
+    11	reset is recorded in `docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6.
+    12	Audit status remains set only by the independent audit lane.
+    13	
+    14	**Supersedes:** `MINIMAL_AXIOMS_2026-06-05.md`. The 2026-06-05 memo remains the
+    15	historical source for the prior Lattice/Quantum/Record wording in which
+    16	realized outcome was latent in Record and no explicit local admissibility
+    17	constraint was named.
+    18	
+    19	## Purpose
+    20	
+    21	This note states the framework's minimal ontology premises. They are named
+    22	rather than treated as bare letter codes:
+    23	
+    24	1. **Lattice**
+    25	2. **Qubit**
+    26	3. **Admissibility**
+    27	4. **Record**
+    28	
+    29	Legacy `A1`/`A2` numbering and the older `Quantum` axiom name are historical.
+    30	New repo surfaces should use the axiom names above unless quoting an older
+    31	document.
+    32	
+    33	## The Four Framework Axioms
+    34	
+    35	### Lattice / Physical Locality
+    36	
+    37	Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
+    38	adjacency, standard translations, and proper cubic rotations about each site.
+    39	
+    40	No site is privileged. Sites are distinguished by the supplied lattice
+    41	structure alone.
+    42	
+    43	### Qubit / Site Possibility
+    44	
+    45	Each site has a domain of local possibilities.
+    46	
+    47	The full one-site possibility domain has algebraic presentation `M_2(C)`.
+    48	
+    49	A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
+    50	adds no further primitive structure.
+    51	
+    52	No possibility is privileged. Possibilities are distinguished by the supplied
+    53	algebraic structure alone.
+    54	
+    55	### Admissibility / Local Constraint
+    56	
+    57	There is one fixed nearest-neighbor admissibility rule, covariant under lattice
+    58	translations and proper cubic rotations.
+    59	
+    60	For each site, the available possibilities are determined by, and vary with,
+    61	the nearest-neighbor conditions.
+    62	
+    63	### Record / Fixed Reality
+    64	
+    65	Records form.
+    66	
+    67	When present, a record locks exactly one admissible local possibility. A
+    68	site never carries more than one record; records are permanent.
+    69	
+    70	Only records are readable. A readout value is determined by record content
+    71	alone. For any finite collection of pairwise-disjoint records, scalar readout
+    72	`I` is additive, with `I(empty)=0`.
+    73	
+    74	## Qualification
+    75	
+    76	These axioms state only their named primitive content. Further physical
+    77	structure requires a retained derivation or bridge, or explicit approved-
+    78	primitive registration, before use as a premise. A choice not fixed by the
+    79	supplied structure remains a named conditional or open dependency.
+    80	
+    81	A state is a configuration of records.
+    82	
+    83	A law privileges no states. Its domain is a supplied condition, and at every
+    84	state where the condition holds it gives exactly one answer.
+    85	
+    86	## Audit-Pipeline Treatment
+    87	
+    88	The machine-readable source of this axiom set is the stable `minimal_axioms`
+    89	entry in `docs/audit/data/axiom_premise_nodes.json`. Dependencies on
+    90	`minimal_axioms` chain-satisfy without making downstream rows
+    91	`retained_bounded`.
+    92	
+    93	**Primary runner:** `scripts/audit_companion_minimal_axioms_clean_base_exact.py`
+    94	checks only elementary algebra/notation sanity for the four axiom names. It
+    95	does not derive or enlarge the axiom set.
+    96	
+    97	Axioms and approved primitives are the complete supplied foundation.
+    98	Depending on the Lattice, Qubit, Admissibility, or Record axiom, or on an
+    99	explicitly approved primitive such as `scale_reference_primitive`, must not be
+   100	treated as a source of bounded status. No admission class exists: every other
+   101	scientific dependency must be retained-derived or remain conditional/open.
+   102	
+   103	## Relation To Dynamics And Kinetic Branch Selection
+   104	
+   105	Admissibility is not a dynamics axiom. It determines availability by a
+   106	nearest-neighbor rule: for each site, the available possibilities are
+   107	determined by, and vary with, the nearest-neighbor conditions. It does not
+   108	choose a Hamiltonian or transfer operator, supply transition probabilities or
+   109	weights, select a scalar or nonzero kinetic branch, assert a Dirac-square
+   110	carrier, define a time metric, or provide a record-production process or
+   111	physical persistence dynamics.
+   112	
+   113	Static spatial kinetic questions, probability/process questions, and temporal
+   114	evolution questions should be tracked separately. A realized kinetic branch, if
+   115	proposed, is downstream content: it needs a retained derivation or bridge, or
+   116	an approved-primitive registry update, before audit rows may use it
+   117	as load-bearing content. The four axioms are compatible with such later
+   118	content, but do not include it.
+   119	
+   120	## Relation To The Older Observable-Principle Parent
+   121	
+   122	`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` is not this axiom note and is not an
+   123	approved axiom-premise node. It remains a broader conditional parent that
+   124	packages additive scalar observables with further readout/log-det/modulus
+   125	structure. That older parent must not be moved wholesale into
+   126	`docs/audit/data/axiom_premise_nodes.json`.
+   127	
+   128	Rows that require only the Record axiom should cite this minimal-axiom
+   129	authority. Rows that require P2/modulus, log-det, source/action, measurement,
+   130	Born weights, readout-context selection, central-sector decomposition, `K`/CPT
+   131	structure, transition relations, record-production dynamics, physical
+   132	persistence dynamics, local observability, or any other additional bridge must
+   133	cite separate retained authorities or remain bounded/pending according to the
+   134	audit ledger.
+   135	
+   136	## Relation To The 2026-06-05 Record Wording
+   137	
+   138	The 2026-06-05 Record axiom named durable realized-outcome registration and
+   139	gave a `K`/CPT orbit reading once a finite central-sector readout context and
+   140	fixed `K`/CPT conjugation were supplied. This reset separates generic site
+   141	possibility, local admissibility, and fixed records from context-specific
+   142	readout structure:
+   143	
+   144	- Qubit names the domain of local possibilities and its full one-site algebraic
+   145	  presentation.
+   146	- Admissibility names the nearest-neighbor rule by which, for each site, the
+   147	  available possibilities are determined by, and vary with, the
+   148	  nearest-neighbor conditions.
+   149	- Record names the fixed locking of one admissible local possibility,
+   150	  one-record-per-site uniqueness, permanence, and finite scalar readout
+   151	  additivity over disjoint record collections.
+   152	- `K`/CPT orbit structure, central-sector decomposition, and any sector
+   153	  generation rule are downstream readout-context content, not generic axiom
+   154	  content.
+   155	
+   156	## Open Gates Outside The Axioms
+   157	
+   158	The four axioms do not close, import, or rename the framework's downstream open
+   159	gates. In particular, the following remain outside axiom content:
+   160	
+   161	- the staggered-Dirac/finite-Grassmann realization and `AC_phi_lambda`;
+   162	- the strong-CP theta gauge and mass-side derivation obligations;
+   163	- P2/modulus/phase-blindness and any log-det readout theorem;
+   164	- context selection, measurement basis selection, Born weights, probability
+   165	  rules, update laws, decoherence mechanisms, and formation rules (which
+   166	  admissible possibility a new record locks, at which site, with what weight,
+   167	  or at what rate);
+   168	- arrow, record-production dynamics, physical persistence dynamics, time metric,
+   169	  and local observability of records;
+   170	- source/action and physical-observable identification;
+   171	- `g_bare = 1` convention handling;
+   172	- the scale-reference primitive and the separate gravity self-consistency
+   173	  question that the framework's natural unit equals the Planck length.
+   174	
+   175	## Historical Context
+   176	
+   177	The April 15 through May 20 sequence separated the one-qubit local algebra and
+   178	the `Z^3` lattice from downstream realization gates that had previously been
+   179	written too axiomatically. The 2026-06-04 memo added scalar finite Record
+   180	additivity as the third explicitly approved premise. The 2026-06-05 memo refined
+   181	Record to durable realized-outcome registration in a supplied readout context.
+   182	The 2026-07-04 owner-approved revision appended the formation sentence "Records
+   183	form." to the Record axiom: occurrence became named axiom content, while every
+   184	formation rule (which admissible possibility, at which site, with what weight,
+   185	at what rate) remained downstream supplier content. The file path was kept
+   186	unchanged so existing runner needles and links continue to resolve.
+   187	
+   188	This memo exposes the remaining minimal ontology needed by the blocked audit
+   189	lanes: records are not arbitrary mosaics. The admissibility rule determines the
+   190	available possibilities at each site from the nearest-neighbor conditions, and
+   191	those available possibilities vary with those conditions, before a record can
+   192	lock one available local possibility. Probability, dynamics, readout contexts,
+   193	and physical observable bridges remain downstream.
+
+exec
+/bin/zsh -lc 'nl -ba "docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	# Gauged Fixed-Background Quasilocality of the Reconstructed Log-Transfer Hamiltonian, via Combes-Thomas
+     2	
+     3	> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`;
+     4	> each row points to the canonical source-of-truth doc.
+     5	
+     6	**Date:** 2026-06-13
+     7	**Claim type:** bounded_theorem (fixed-background, single-particle sector;
+     8	Combes-Thomas route)
+     9	**Type:** bounded_theorem
+    10	**Status:** unaudited candidate. Graph-visible only so the independent audit lane
+    11	can decide. Inherits the conditional provenance of the reconstruction authorities
+    12	it cites (see Honest status); it does not set or predict an audit outcome.
+    13	**Primary runner:**
+    14	[`scripts/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.py`](../scripts/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.py)
+    15	**Cached runner output:**
+    16	[`logs/runner-cache/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.txt`](../logs/runner-cache/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.txt)
+    17	
+    18	---
+    19	
+    20	## Role
+    21	
+    22	The free (`U = 1`) sector of the microcausality exact-`H` step is closed by
+    23	[`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md):
+    24	the reconstructed single-particle Hamiltonian `h = -log(T_hat^2)/(2 a_tau)` has a
+    25	**sharp** exponential kernel rate `arcsinh(m)`, proved by a Fourier / Paley-Wiener
+    26	torus contour shift. That note declares its open frontier verbatim:
+    27	
+    28	> *"the **gauged / interacting** log-transfer locality: fixed-background
+    29	> `T_hat^2[U]` is not translation-invariant, the Fourier route does not apply
+    30	> verbatim, and the `U`-integrated interacting case is open."*
+    31	
+    32	This note closes the **fixed-background** half of that frontier with the
+    33	translation-invariance-free tool: **Combes-Thomas resolvent decay** plus
+    34	**holomorphic functional calculus**, on a spectral gap that is **uniform over all
+    35	gauge backgrounds**. It does not touch the `U`-integrated dynamical case, which
+    36	remains open.
+    37	
+    38	The expansion-route triage
+    39	[`MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md`](MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md)
+    40	foreclosed the norm-convergent expansion route on the canonical surface and named
+    41	spectral/analyticity as the live route; the free note instantiated it via Fourier.
+    42	This note shows the spectral route survives the loss of translation invariance.
+    43	
+    44	## The object
+    45	
+    46	On a fixed background `U = {U_mu(x)}` of unitary link variables in any compact
+    47	gauge group `G` (here `U(1)` and `SU(2)`), define the covariant shift, covariant
+    48	sine, and total hop
+    49	
+    50	```text
+    51	    (S_mu psi)(x) = U_mu(x) psi(x + e_mu),   S_mu a contraction (unitary on a block),
+    52	    s_mu[U] = (S_mu - S_mu^dag) / (2i),       s_mu = s_mu^dag,
+    53	    D[U]   = m^2 I + ( sum_{mu=1}^d s_mu[U] )^2 .                            (1)
+    54	```
+    55	
+    56	The reconstructed single-particle Hamiltonian on the fixed background is the
+    57	matrix function
+    58	
+    59	```text
+    60	    h[U] = arcsinh( sqrt( D[U] ) ),                                          (2)
+    61	```
+    62	
+    63	whose eigenvalues are exactly the landed per-config dispersion
+    64	`E_j[U] = arcsinh(sqrt(m^2 + lambda_j(U)^2))`, `lambda_j` the eigenvalues of
+    65	`sum_mu s_mu`, of
+    66	[`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
+    67	and
+    68	[`INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md`](INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md).
+    69	Eq. (1) is the **square-of-sum** radicand `m^2 I + (sum_mu s_mu)^2`, which is the
+    70	landed gauged form; at `d = 1` it is the exact action-derived free dispersion.
+    71	
+    72	**Carrier note.** The free note's *declared* `d >= 2` carrier is instead the
+    73	**sum-of-squares** `D_ss[U] = m^2 I + sum_mu s_mu[U]^2`; it differs from (1) by
+    74	flux cross-terms `sum_{mu != nu} s_mu s_nu` and coincides with (1) at `d = 1`.
+    75	Both carriers satisfy the Combes-Thomas hypotheses, so the conclusion of this note
+    76	is **carrier-robust** (Theorem G9). We take the action-faithful square-of-sum as
+    77	primary because it is the operator the landed reconstruction actually produces.
+    78	
+    79	## Statement
+    80	
+    81	Throughout, `m > 0`, `||.||_inf` is the sup metric, and "uniform in `U`" means the
+    82	constant is the same for every fixed background of unitary links (every flux /
+    83	holonomy) and every volume.
+    84	
+    85	**(G1) Uniform spectral containment.** Each `S_mu` is a contraction
+    86	(`||S_mu|| <= 1`), so `s_mu = s_mu^dag` with `||s_mu|| <= 1`, hence
+    87	`||sum_mu s_mu|| <= d` and `(sum_mu s_mu)^2 >= 0`. Therefore
+    88	
+    89	```text
+    90	    m^2 I  <=  D[U]  <=  (m^2 + d^2) I ,    i.e.  spec(D[U]) subset [m^2, m^2 + d^2],   (3)
+    91	```
+    92	
+    93	uniformly in `U` and volume, with `dist(spec(D[U]), (-inf, 0]) = m^2 > 0`. No
+    94	Fourier / translation invariance is used. (For the sum-of-squares carrier the
+    95	ceiling tightens to `m^2 + d`.)
+    96	
+    97	**(G2) Finite range, gauge-independent envelope.** Because `S_mu S_mu^dag = I`, the
+    98	range-1 piece of `s_mu^2` cancels, so `D[U]` is **exactly range 2** in `||.||_inf`
+    99	inside a support envelope that does not depend on `U`. The axial range-2 entries
+   100	have gauge-independent magnitude (`|D[x, x+-2 e_mu]| = 1/4`); flux can change or
+   101	cancel individual cross-term coefficients inside the envelope.
+   102	
+   103	**(G3) Holomorphic functional calculus, uniform.**
+   104	`f(w) = arcsinh(sqrt(w)) = log(sqrt(w) + sqrt(w + 1))` is holomorphic and
+   105	single-valued on `C \ (-inf, 0]` (all branch points of `sqrt` and of `arcsinh`
+   106	at `w = -1` lie on the cut). Since `spec(D[U])` sits at distance `m^2 > 0` from the
+   107	cut for every `U`, the Riesz-Dunford integral
+   108	
+   109	```text
+   110	    h[U] = (2 pi i)^{-1} oint_Gamma f(w) (w - D[U])^{-1} dw                  (4)
+   111	```
+   112	
+   113	defines `h[U]` on a contour `Gamma` that hugs `[m^2, m^2 + d^2]` at distance
+   114	`m^2/2`, staying strictly in `Re w > 0` with finite `sup_Gamma |f|` and finite
+   115	length. The gap `m^2 > 0` is load-bearing: a circle of radius `>= m^2 + d^2/2`
+   116	would cross the cut and the calculus fails.
+   117	
+   118	**(G4) Combes-Thomas resolvent bound (reproved).** Let `A = A^*` be finite range
+   119	`R` in `||.||_inf` with `||A|| <= K`, and `dist(z, spec A) = eta > 0`. Fix a unit
+   120	coordinate direction `u` and the diagonal twist `M_lambda = diag e^{lambda <u, x>}`.
+   121	By the band decomposition `A = sum_{||r||_inf <= R} A_r` with
+   122	`A_r = (2 pi)^{-d} int e^{-i<theta, r>} V_theta A V_theta^* d theta`
+   123	(`V_theta = diag e^{i<theta, x>}` unitary), each band obeys `||A_r|| <= ||A|| <= K`,
+   124	so
+   125	
+   126	```text
+   127	    || M_lambda A M_lambda^{-1} - A ||  <=  K sum_{0 < ||r||_inf <= R} |e^{lambda <u, r>} - 1|
+   128	                                        <=  e K lambda * B(R, d)   (lambda R <= 1),     (5)
+   129	    B(R, d) = sum_{0 < ||r||_inf <= R} |<u, r>| = (2R+1)^{d-1} R(R+1) ,
+   130	```
+   131	
+   132	using `|e^t - 1| <= e |t|` for `|t| <= 1`. The band-count `B(R, d)` is
+   133	**dimension-aware** (e.g. `B(2,1) = 6`, `B(2,2) = 30`; enumerated in the runner) —
+   134	it is *not* the dimension-blind `2R`. Choosing
+   135	`gamma = min(1/R, eta / (2 e K B(R, d)))` gives `||A_gamma - A|| <= eta/2`, so
+   136	by Neumann series `||(A_gamma - z)^{-1}|| <= 2/eta`, and undoing the similarity
+   137	
+   138	```text
+   139	    | <x| (A - z)^{-1} |y> |  <=  (2/eta) e^{-gamma ||x - y||_inf} ,         (6)
+   140	```
+   141	
+   142	with `2/eta` and `gamma` depending **only** on `(R, K, eta, d)`. (We use the rigorous
+   143	band-sum / Schur envelope (5), not the non-contraction `(e^{lambda R} - 1)||A||`
+   144	form.) The unbounded position ramp `M_lambda = diag e^{lambda <u, x>}` is the
+   145	open / infinite-lattice statement; on a finite periodic torus the wrap-around bond
+   146	violates (5) literally, but the kernel decay it controls is supplied by the *same*
+   147	uniform gap, which is what the runner measures directly on torus kernels (G4, G6,
+   148	G7) and on an open chain for the twist bound (G3).
+   149	
+   150	**(G5) Gauged uniform quasilocality (main result).** Combining (G3) and (G4) with
+   151	`R = 2`, `K = m^2 + d^2`, and resolvent gap `eta = m^2/2` on `Gamma`,
+   152	
+   153	```text
+   154	    || <x| h[U] |y> ||  <=  Const(m, d) e^{-gamma_CT ||x - y||_inf} ,        (7)
+   155	    gamma_CT = min(1/2, (m^2/2) / (2 e (m^2 + d^2) B(2, d))) > 0 ,   B(2, d) = 5^{d-1} * 6 ,
+   156	```
+   157	
+   158	with `Const(m, d) = (|Gamma|/2 pi) (sup_Gamma|f|) (2/eta)` finite, and **both
+   159	`gamma_CT` and `Const` independent of the background `U` and of the volume**. So
+   160	`h[U]` is quasilocal on every fixed background with a single background-independent
+   161	rate. `h[U]` is **not** finite-range (the free note proved the same at `U = 1`);
+   162	`D[U]` is finite-range, `h[U]` is quasilocal — distinct objects.
+   163	
+   164	**(G6) Gauge covariance of the kernel.** Under
+   165	`U_mu(x) -> g(x) U_mu(x) g(x + e_mu)^dag`, `S_mu -> G S_mu G^dag` with `G = diag(g)`
+   166	unitary, so `D[U^g] = G D[U] G^dag` and (spectral calculus) `h[U^g] = G h[U] G^dag`
+   167	exactly. Hence the kernel block `<x| h[U] |y>` transforms by left/right unitaries
+   168	and its **unitarily-invariant block norm `|| <x| h[U] |y> ||` is exactly
+   169	gauge-invariant**; for abelian `G` this is the scalar `| <x| h[U] |y> |`. The decay
+   170	rate is therefore a gauge-invariant datum.
+   171	
+   172	**(G7) `U = 1` / `d = 1` reduction.** At `U = 1` (or any `d = 1` background) the
+   173	symbol of `D` is `m^2 + sin^2 p` and `h` recovers the landed free dispersion
+   174	`arcsinh(sqrt(m^2 + sin^2 p))` exactly, with measured kernel rate `arcsinh(m)`. The
+   175	runner's `d = 1` rate is extracted by a **joint two-parameter fit** of both the
+   176	exponential rate and the prefactor exponent; it recovers the rate to `0.18%` of
+   177	`arcsinh(m)` **and** the prefactor exponent `1.56 ~ 3/2` — the square-root
+   178	branch-point asymptotic `|h(n)| ~ n^{-3/2} e^{-arcsinh(m) n}` already established by
+   179	the free note's T5, here *recovered from the data*, not imported as a tuned input.
+   180	The Combes-Thomas lower rate satisfies `gamma_CT <= arcsinh(m)` for all `m > 0`,
+   181	consistent with — and never claiming to reproduce — the **sharp** free rate.
+   182	`gamma_CT` is a **lower bound** on the true gauged rate and is generically not
+   183	sharp; the true gauged rate is background-dependent and can **exceed** `arcsinh(m)`
+   184	(measured `~0.9-1.1` on random 2D flux).
+   185	
+   186	**(G9) Carrier robustness.** The sum-of-squares carrier
+   187	`D_ss = m^2 I + sum_mu s_mu^2` (the free note's declared `d >= 2` carrier) is also
+   188	range 2 with `spec(D_ss) subset [m^2, m^2 + d]` and gap `m^2`, so (G4)-(G5) give
+   189	the same quasilocality conclusion. Thus the gauged-quasilocality result does not
+   190	depend on the `d >= 2` carrier choice; only the constants (`d^2` vs `d` ceiling)
+   191	and the parity structure differ.
+   192	
+   193	## Parity Boundary
+   194	
+   195	In `d = 1` (both carriers) and for the sum-of-squares carrier in any `d`, `D` and
+   196	hence `h` hop on the **even sublattice** (`h(z) = 0` unless every component of `z`
+   197	is even), preserved on every background — flux changes coefficients, not the parity
+   198	support. The **action-faithful square-of-sum** carrier does **not** have strict
+   199	even-sublattice parity as a universal carrier identity in `d >= 2`: the cross-terms
+   200	`s_mu s_nu` (`mu != nu`) open nearest diagonal channels at offsets
+   201	`(+-1, +-1, ...)` (measured magnitude `~5e-1` on the tested background, far above
+   202	any floor). This is stated, not hidden; it does not affect (G5), which only uses
+   203	range and gap.
+   204	
+   205	## Proof sketch
+   206	
+   207	(G1) operator monotonicity from `0 <= s_mu^2 <= I` and `(sum s_mu)^2 >= 0`, summed
+   208	over `d` directions; (G2) the cancellation `s_mu^2 = -(S_mu^2 - 2I + S_mu^{dag 2})/4`
+   209	removes the range-1 part, leaving offsets `{0, +-2 e_mu}` (plus `{+-e_mu +- e_nu}`
+   210	cross-terms for the square-of-sum, still `||.||_inf`-range 2); (G3) principal-branch
+   211	composition and the contour-distance bound; (G4) the band-decomposition Combes-Thomas
+   212	estimate with the dimension-aware band constant `B(R, d) = (2R+1)^{d-1} R(R+1)`
+   213	(eq. (5)); (G5) assembling (4) with (6) and bounding `|f|`, `|Gamma|`, `2/eta`;
+   214	(G6) direct conjugation through the spectral calculus; (G7) the `d = 1` symbol
+   215	identity and `gamma_CT <= arcsinh(m)`.
+   216	
+   217	**What the runner does (and does not) reprove.** The runner reproves a *numerical*
+   218	Schur row-sum twist bound on an explicit open chain (G3, `alpha* ~ 0.022`) and
+   219	verifies the closed-form band constant `B(R, d)` by enumeration; it confirms that
+   220	the closed-form `gamma_CT` of (7) is a valid *conservative lower bound* on the
+   221	independently measured resolvent and kernel decay rates (it is not sharp). It also
+   222	verifies the Riesz-Dunford contour integral reproduces `h[U]` (G2), the uniform gap
+   223	floor `m^2` and ceiling `m^2 + d^2` (G1), the `arcsinh(m)` reduction (G7), and the
+   224	exact gauge-invariance (G5) to machine precision. It does **not** symbolically
+   225	reprove the closed-form CT envelope (5)-(7); that is the in-note analytic step, and
+   226	(5) is corrected here to the dimension-aware form.
+   227	
+   228	## Hypothesis set used
+   229	
+   230	- **Compact gauge group / unitary links** — `S_mu` a contraction
+   231	  (`||S_mu|| <= 1`); load-bearing for (G1) `||s_mu|| <= 1` and the uniform gap.
+   232	  Reproved in-runner from `S_mu S_mu^dag = I` (eigenvalues on the unit circle =>
+   233	  `Im in [-1, 1]`); not asserted.
+   234	- **Mass gap `m > 0`** — load-bearing for the gap `m^2` to the holomorphy cut;
+   235	  at `m = 0` the kernel is a power law (F1).
+   236	- **The reconstruction object** — that `h[U] = arcsinh(sqrt(D[U]))` with the
+   237	  square-of-sum radicand (1) is the per-config reconstructed single-particle
+   238	  Hamiltonian: cited from `RP_P2_GAUGE_EXTENSION...2026-05-28` and
+   239	  `INTERACTING_TRANSFER_MATTER_GAP...2026-05-30` (both `audited_conditional`),
+   240	  whose `E_j[U] = arcsinh(sqrt(m^2 + lambda_j^2))` this note covariantizes
+   241	  operatorially. The `d >= 2` carrier choice is declared (square-of-sum primary,
+   242	  sum-of-squares robustness), exactly as the free note declares its `d >= 2`
+   243	  carrier.
+   244	- **Per-site commuting-mode / block-kernel convention** — from
+   245	  `HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02` (same convention as the
+   246	  free note); blocked-time normalization from
+   247	  `AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29` (unaudited; inherited
+   248	  conditionality).
+   249	- **Proof-technique provenance (cited as method, reproved in-note, NOT a
+   250	  derivation input):** Combes-Thomas resolvent decay (Combes-Thomas 1973) and
+   251	  Riesz-Dunford holomorphic functional calculus. The repo's own
+   252	  `OBSERVABLE_PRINCIPLE_P1_BRIDGE_LOCALITY_OF_SOURCE_DERIVATIVES_NARROW_NOTE_2026-05-21`
+   253	  already records that "Combes-Thomas does not derive locality as a primitive; it
+   254	  characterizes the resolvent decay rate" — the same discipline applies here.
+   255	- **No fitted parameters, no observed values, no empirical comparators.** Inputs
+   256	  are `m`, `d`, and the fixed background `U`.
+   257	
+   258	## No-Go Discipline Gate (parity boundary only)
+   259	
+   260	**Status: PASS for the scoped parity boundary only.** The negative is not that
+   261	gauged log-transfer locality fails — it is proved (G5). It is only that strict
+   262	component-even sublattice parity is not a universal identity of the
+   263	action-faithful square-of-sum carrier in `d >= 2`.
+   264	
+   265	- **N1 alternative routes.** Five distinct rescue routes were checked or scoped
+   266	  away. (1) `d = 1` preserves strict even parity, but that is outside the `d >= 2`
+   267	  square-of-sum boundary. (2) The sum-of-squares carrier preserves strict even
+   268	  parity, but it is a different carrier; G9 keeps locality carrier-robust while
+   269	  not transferring parity. (3) Gauge transformation cannot remove a nonzero odd
+   270	  block norm because G6 gives unitary covariance of the kernel blocks. (4) Flux
+   271	  cancellation can erase individual cross-term coefficients, so the claim is not
+   272	  phrased as "every background breaks parity"; it is only that strict parity is not
+   273	  a universal carrier identity. (5) Replacing strict component-even parity with a
+   274	  different parity notion, such as checkerboard parity, changes the predicate and
+   275	  is not the free/sum-of-squares parity statement compared here.
+   276	- **N2 wall independence.** One scoped boundary: strict component-even parity for
+   277	  the square-of-sum carrier in `d >= 2`. The `U`-integrated, many-body, and
+   278	  sharp-rate problems are separate open tasks, not walls claimed here.
+   279	- **N3 hidden-wall scan.** The `d >= 2` carrier is declared (both forms), not
+   280	  imported as a retained theorem; the CT and contour steps are reproved in-note.
+   281	  "Background" means a supplied fixed unitary-link configuration, not a hidden
+   282	  gauge-measure or dynamical gauge-field claim.
+   283	- **N4 residual matching.** No prior no-go witness is used for the parity boundary.
+   284	  The free note's named residual is fixed-background gauged quasilocality, which
+   285	  this note addresses by (G5), not by the parity boundary.
+   286	- **N5 rhetoric audit.** The only negative predicate is strict component-even
+   287	  sublattice parity of the square-of-sum carrier. The note does not claim failure
+   288	  of all parity notions, finite-range locality, quasilocality, gauge covariance, or
+   289	  sum-of-squares parity.
+   290	- **N6 partial-closure path.** Parity can be restored by choosing the
+   291	  sum-of-squares carrier or by changing the parity predicate, but those are
+   292	  carrier/predicate changes, not derivations of strict parity for the
+   293	  action-faithful square-of-sum carrier. No new axiom, primitive, or Tier-A
+   294	  admission is requested.
+   295	- **N7 steelman.** A hostile reviewer can object that a different parity notion or
+   296	  the sum-of-squares carrier remains useful. This is correct and is why the note
+   297	  isolates parity as a carrier-dependent boundary while keeping the quasilocality
+   298	  theorem carrier-robust.
+   299	- **N8 cross-cycle echo.** Similar prior overclaims confused finite range, exact
+   300	  parity, and quasilocal tails. This note separates them: `D[U]` is finite-range,
+   301	  `h[U]` is quasilocal, and strict component-even parity is carrier-dependent.
+   302	
+   303	## What this rules out / does not claim
+   304	
+   305	**Shows (not open at the fixed-background single-particle level).** Fixed-background
+   306	gauged log-transfer locality is not rate-unknown: `h[U]` is quasilocal with a
+   307	background-independent exponential rate `gamma_CT > 0`, and the kernel block norm is
+   308	exactly gauge-invariant. The "BCH commutators destroy locality" worry is answered on
+   309	every fixed background, not just `U = 1`. (This note carries Status = unaudited
+   310	candidate; "shows" is a source-side claim, not an audit-ratified closure.)
+   311	
+   312	**Does not claim.** (i) The `U`-integrated / dynamical gauge-measure case — the
+   313	fixed-`U` resolvent bound does not control gauge-field correlations; **open**.
+   314	(ii) A **sharp** gauged rate — `gamma_CT` is a lower bound only. (iii) The full
+   315	**many-body fermionic** transfer-matrix locality or a **Lieb-Robinson lightcone** —
+   316	that needs the separate quasilocal-LR composition step (the free note's item 3),
+   317	still a separate theorem. (iv) Continuum limit, OS reconstruction, or any audit
+   318	status. (v) Retained-grade status: the reconstruction authorities cited are
+   319	`audited_conditional` / unaudited, so this note inherits conditional status.
+   320	
+   321	## Runner and cache
+   322	
+   323	```bash
+   324	python3 scripts/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.py
+   325	```
+   326	
+   327	Deterministic (seeded `U(1)` and `SU(2)` backgrounds), runtime a few minutes.
+   328	Checks: object sanity (G0), uniform gap (G1), contour (G2), Combes-Thomas
+   329	reproved + measured (G3), kernel quasilocality 1D/2D (G4), abelian and non-abelian
+   330	gauge-invariance (G5), uniform rate over a `U(1)+SU(2)` ensemble (G6), `d = 1`
+   331	reduction to `arcsinh(m)` (G7), parity (G8), carrier robustness (G9), and
+   332	falsification legs `m = 0` (gap) and long-range (finite range). Runner cache:
+   333	[`logs/runner-cache/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.txt`](../logs/runner-cache/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.txt)
+   334	(PASS=36, FAIL=0).
+   335	
+   336	## Citations
+   337	
+   338	- [`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md)
+   339	  — the free (`U = 1`) anchor this note extends, and its named open frontier
+   340	  (context/target, not an upstream premise).
+   341	- [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
+   342	  (`audited_conditional`) — per-config dispersion
+   343	  `E_j[U] = arcsinh(sqrt(m^2 + lambda_j^2))`; the object (1)-(2) covariantizes this.
+   344	- [`INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md`](INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md)
+   345	  (`audited_conditional`) — the uniform matter-gap floor `arcsinh(m)`; the floor
+   346	  this note's gap `m^2` is consistent with.
+   347	- [`HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md`](HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md)
+   348	  — per-site mode / block-kernel convention.
+   349	- [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
+   350	  — blocked-time normalization (unaudited; inherited conditionality).
+   351	- [`MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md`](MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md)
+   352	  — route triage naming spectral/analyticity live (context only).
+   353	- Proof-technique provenance (no constant imported): Combes-Thomas (1973);
+   354	  Riesz-Dunford holomorphic functional calculus. Reproved in-note (G4/G3).
+   355	
+   356	## Changelog
+   357	
+   358	- **2026-06-13** — initial note. Closes the fixed-background half of the free
+   359	  note's named gauged open frontier: on any fixed compact-group background `U`,
+   360	  the reconstructed single-particle `h[U] = arcsinh(sqrt(m^2 I + (sum_mu s_mu)^2))`
+   361	  is quasilocal with a background- and volume-independent exponential rate
+   362	  `gamma_CT > 0` (Combes-Thomas on the uniform gap `m^2`, finite range 2), the
+   363	  kernel block norm exactly gauge-invariant, reducing to the landed sharp free rate
+   364	  `arcsinh(m)` at `d = 1`. Carrier-robust across the square-of-sum (action-faithful)
+   365	  and sum-of-squares (declared) radicands. Open: `U`-integrated/dynamical case,
+   366	  sharp gauged rate, many-body Lieb-Robinson lightcone, continuum. Runner
+   367	  `PASS=36 FAIL=0`.
+
+exec
+/bin/zsh -lc "nl -ba docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md | sed -n '17,234p'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+    17	
+    18	---
+    19	
+    20	## Role
+    21	
+    22	The free (`U = 1`) sector of the microcausality exact-`H` step is closed by
+    23	[`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md):
+    24	the reconstructed single-particle Hamiltonian `h = -log(T_hat^2)/(2 a_tau)` has a
+    25	**sharp** exponential kernel rate `arcsinh(m)`, proved by a Fourier / Paley-Wiener
+    26	torus contour shift. That note declares its open frontier verbatim:
+    27	
+    28	> *"the **gauged / interacting** log-transfer locality: fixed-background
+    29	> `T_hat^2[U]` is not translation-invariant, the Fourier route does not apply
+    30	> verbatim, and the `U`-integrated interacting case is open."*
+    31	
+    32	This note closes the **fixed-background** half of that frontier with the
+    33	translation-invariance-free tool: **Combes-Thomas resolvent decay** plus
+    34	**holomorphic functional calculus**, on a spectral gap that is **uniform over all
+    35	gauge backgrounds**. It does not touch the `U`-integrated dynamical case, which
+    36	remains open.
+    37	
+    38	The expansion-route triage
+    39	[`MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md`](MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md)
+    40	foreclosed the norm-convergent expansion route on the canonical surface and named
+    41	spectral/analyticity as the live route; the free note instantiated it via Fourier.
+    42	This note shows the spectral route survives the loss of translation invariance.
+    43	
+    44	## The object
+    45	
+    46	On a fixed background `U = {U_mu(x)}` of unitary link variables in any compact
+    47	gauge group `G` (here `U(1)` and `SU(2)`), define the covariant shift, covariant
+    48	sine, and total hop
+    49	
+    50	```text
+    51	    (S_mu psi)(x) = U_mu(x) psi(x + e_mu),   S_mu a contraction (unitary on a block),
+    52	    s_mu[U] = (S_mu - S_mu^dag) / (2i),       s_mu = s_mu^dag,
+    53	    D[U]   = m^2 I + ( sum_{mu=1}^d s_mu[U] )^2 .                            (1)
+    54	```
+    55	
+    56	The reconstructed single-particle Hamiltonian on the fixed background is the
+    57	matrix function
+    58	
+    59	```text
+    60	    h[U] = arcsinh( sqrt( D[U] ) ),                                          (2)
+    61	```
+    62	
+    63	whose eigenvalues are exactly the landed per-config dispersion
+    64	`E_j[U] = arcsinh(sqrt(m^2 + lambda_j(U)^2))`, `lambda_j` the eigenvalues of
+    65	`sum_mu s_mu`, of
+    66	[`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
+    67	and
+    68	[`INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md`](INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md).
+    69	Eq. (1) is the **square-of-sum** radicand `m^2 I + (sum_mu s_mu)^2`, which is the
+    70	landed gauged form; at `d = 1` it is the exact action-derived free dispersion.
+    71	
+    72	**Carrier note.** The free note's *declared* `d >= 2` carrier is instead the
+    73	**sum-of-squares** `D_ss[U] = m^2 I + sum_mu s_mu[U]^2`; it differs from (1) by
+    74	flux cross-terms `sum_{mu != nu} s_mu s_nu` and coincides with (1) at `d = 1`.
+    75	Both carriers satisfy the Combes-Thomas hypotheses, so the conclusion of this note
+    76	is **carrier-robust** (Theorem G9). We take the action-faithful square-of-sum as
+    77	primary because it is the operator the landed reconstruction actually produces.
+    78	
+    79	## Statement
+    80	
+    81	Throughout, `m > 0`, `||.||_inf` is the sup metric, and "uniform in `U`" means the
+    82	constant is the same for every fixed background of unitary links (every flux /
+    83	holonomy) and every volume.
+    84	
+    85	**(G1) Uniform spectral containment.** Each `S_mu` is a contraction
+    86	(`||S_mu|| <= 1`), so `s_mu = s_mu^dag` with `||s_mu|| <= 1`, hence
+    87	`||sum_mu s_mu|| <= d` and `(sum_mu s_mu)^2 >= 0`. Therefore
+    88	
+    89	```text
+    90	    m^2 I  <=  D[U]  <=  (m^2 + d^2) I ,    i.e.  spec(D[U]) subset [m^2, m^2 + d^2],   (3)
+    91	```
+    92	
+    93	uniformly in `U` and volume, with `dist(spec(D[U]), (-inf, 0]) = m^2 > 0`. No
+    94	Fourier / translation invariance is used. (For the sum-of-squares carrier the
+    95	ceiling tightens to `m^2 + d`.)
+    96	
+    97	**(G2) Finite range, gauge-independent envelope.** Because `S_mu S_mu^dag = I`, the
+    98	range-1 piece of `s_mu^2` cancels, so `D[U]` is **exactly range 2** in `||.||_inf`
+    99	inside a support envelope that does not depend on `U`. The axial range-2 entries
+   100	have gauge-independent magnitude (`|D[x, x+-2 e_mu]| = 1/4`); flux can change or
+   101	cancel individual cross-term coefficients inside the envelope.
+   102	
+   103	**(G3) Holomorphic functional calculus, uniform.**
+   104	`f(w) = arcsinh(sqrt(w)) = log(sqrt(w) + sqrt(w + 1))` is holomorphic and
+   105	single-valued on `C \ (-inf, 0]` (all branch points of `sqrt` and of `arcsinh`
+   106	at `w = -1` lie on the cut). Since `spec(D[U])` sits at distance `m^2 > 0` from the
+   107	cut for every `U`, the Riesz-Dunford integral
+   108	
+   109	```text
+   110	    h[U] = (2 pi i)^{-1} oint_Gamma f(w) (w - D[U])^{-1} dw                  (4)
+   111	```
+   112	
+   113	defines `h[U]` on a contour `Gamma` that hugs `[m^2, m^2 + d^2]` at distance
+   114	`m^2/2`, staying strictly in `Re w > 0` with finite `sup_Gamma |f|` and finite
+   115	length. The gap `m^2 > 0` is load-bearing: a circle of radius `>= m^2 + d^2/2`
+   116	would cross the cut and the calculus fails.
+   117	
+   118	**(G4) Combes-Thomas resolvent bound (reproved).** Let `A = A^*` be finite range
+   119	`R` in `||.||_inf` with `||A|| <= K`, and `dist(z, spec A) = eta > 0`. Fix a unit
+   120	coordinate direction `u` and the diagonal twist `M_lambda = diag e^{lambda <u, x>}`.
+   121	By the band decomposition `A = sum_{||r||_inf <= R} A_r` with
+   122	`A_r = (2 pi)^{-d} int e^{-i<theta, r>} V_theta A V_theta^* d theta`
+   123	(`V_theta = diag e^{i<theta, x>}` unitary), each band obeys `||A_r|| <= ||A|| <= K`,
+   124	so
+   125	
+   126	```text
+   127	    || M_lambda A M_lambda^{-1} - A ||  <=  K sum_{0 < ||r||_inf <= R} |e^{lambda <u, r>} - 1|
+   128	                                        <=  e K lambda * B(R, d)   (lambda R <= 1),     (5)
+   129	    B(R, d) = sum_{0 < ||r||_inf <= R} |<u, r>| = (2R+1)^{d-1} R(R+1) ,
+   130	```
+   131	
+   132	using `|e^t - 1| <= e |t|` for `|t| <= 1`. The band-count `B(R, d)` is
+   133	**dimension-aware** (e.g. `B(2,1) = 6`, `B(2,2) = 30`; enumerated in the runner) —
+   134	it is *not* the dimension-blind `2R`. Choosing
+   135	`gamma = min(1/R, eta / (2 e K B(R, d)))` gives `||A_gamma - A|| <= eta/2`, so
+   136	by Neumann series `||(A_gamma - z)^{-1}|| <= 2/eta`, and undoing the similarity
+   137	
+   138	```text
+   139	    | <x| (A - z)^{-1} |y> |  <=  (2/eta) e^{-gamma ||x - y||_inf} ,         (6)
+   140	```
+   141	
+   142	with `2/eta` and `gamma` depending **only** on `(R, K, eta, d)`. (We use the rigorous
+   143	band-sum / Schur envelope (5), not the non-contraction `(e^{lambda R} - 1)||A||`
+   144	form.) The unbounded position ramp `M_lambda = diag e^{lambda <u, x>}` is the
+   145	open / infinite-lattice statement; on a finite periodic torus the wrap-around bond
+   146	violates (5) literally, but the kernel decay it controls is supplied by the *same*
+   147	uniform gap, which is what the runner measures directly on torus kernels (G4, G6,
+   148	G7) and on an open chain for the twist bound (G3).
+   149	
+   150	**(G5) Gauged uniform quasilocality (main result).** Combining (G3) and (G4) with
+   151	`R = 2`, `K = m^2 + d^2`, and resolvent gap `eta = m^2/2` on `Gamma`,
+   152	
+   153	```text
+   154	    || <x| h[U] |y> ||  <=  Const(m, d) e^{-gamma_CT ||x - y||_inf} ,        (7)
+   155	    gamma_CT = min(1/2, (m^2/2) / (2 e (m^2 + d^2) B(2, d))) > 0 ,   B(2, d) = 5^{d-1} * 6 ,
+   156	```
+   157	
+   158	with `Const(m, d) = (|Gamma|/2 pi) (sup_Gamma|f|) (2/eta)` finite, and **both
+   159	`gamma_CT` and `Const` independent of the background `U` and of the volume**. So
+   160	`h[U]` is quasilocal on every fixed background with a single background-independent
+   161	rate. `h[U]` is **not** finite-range (the free note proved the same at `U = 1`);
+   162	`D[U]` is finite-range, `h[U]` is quasilocal — distinct objects.
+   163	
+   164	**(G6) Gauge covariance of the kernel.** Under
+   165	`U_mu(x) -> g(x) U_mu(x) g(x + e_mu)^dag`, `S_mu -> G S_mu G^dag` with `G = diag(g)`
+   166	unitary, so `D[U^g] = G D[U] G^dag` and (spectral calculus) `h[U^g] = G h[U] G^dag`
+   167	exactly. Hence the kernel block `<x| h[U] |y>` transforms by left/right unitaries
+   168	and its **unitarily-invariant block norm `|| <x| h[U] |y> ||` is exactly
+   169	gauge-invariant**; for abelian `G` this is the scalar `| <x| h[U] |y> |`. The decay
+   170	rate is therefore a gauge-invariant datum.
+   171	
+   172	**(G7) `U = 1` / `d = 1` reduction.** At `U = 1` (or any `d = 1` background) the
+   173	symbol of `D` is `m^2 + sin^2 p` and `h` recovers the landed free dispersion
+   174	`arcsinh(sqrt(m^2 + sin^2 p))` exactly, with measured kernel rate `arcsinh(m)`. The
+   175	runner's `d = 1` rate is extracted by a **joint two-parameter fit** of both the
+   176	exponential rate and the prefactor exponent; it recovers the rate to `0.18%` of
+   177	`arcsinh(m)` **and** the prefactor exponent `1.56 ~ 3/2` — the square-root
+   178	branch-point asymptotic `|h(n)| ~ n^{-3/2} e^{-arcsinh(m) n}` already established by
+   179	the free note's T5, here *recovered from the data*, not imported as a tuned input.
+   180	The Combes-Thomas lower rate satisfies `gamma_CT <= arcsinh(m)` for all `m > 0`,
+   181	consistent with — and never claiming to reproduce — the **sharp** free rate.
+   182	`gamma_CT` is a **lower bound** on the true gauged rate and is generically not
+   183	sharp; the true gauged rate is background-dependent and can **exceed** `arcsinh(m)`
+   184	(measured `~0.9-1.1` on random 2D flux).
+   185	
+   186	**(G9) Carrier robustness.** The sum-of-squares carrier
+   187	`D_ss = m^2 I + sum_mu s_mu^2` (the free note's declared `d >= 2` carrier) is also
+   188	range 2 with `spec(D_ss) subset [m^2, m^2 + d]` and gap `m^2`, so (G4)-(G5) give
+   189	the same quasilocality conclusion. Thus the gauged-quasilocality result does not
+   190	depend on the `d >= 2` carrier choice; only the constants (`d^2` vs `d` ceiling)
+   191	and the parity structure differ.
+   192	
+   193	## Parity Boundary
+   194	
+   195	In `d = 1` (both carriers) and for the sum-of-squares carrier in any `d`, `D` and
+   196	hence `h` hop on the **even sublattice** (`h(z) = 0` unless every component of `z`
+   197	is even), preserved on every background — flux changes coefficients, not the parity
+   198	support. The **action-faithful square-of-sum** carrier does **not** have strict
+   199	even-sublattice parity as a universal carrier identity in `d >= 2`: the cross-terms
+   200	`s_mu s_nu` (`mu != nu`) open nearest diagonal channels at offsets
+   201	`(+-1, +-1, ...)` (measured magnitude `~5e-1` on the tested background, far above
+   202	any floor). This is stated, not hidden; it does not affect (G5), which only uses
+   203	range and gap.
+   204	
+   205	## Proof sketch
+   206	
+   207	(G1) operator monotonicity from `0 <= s_mu^2 <= I` and `(sum s_mu)^2 >= 0`, summed
+   208	over `d` directions; (G2) the cancellation `s_mu^2 = -(S_mu^2 - 2I + S_mu^{dag 2})/4`
+   209	removes the range-1 part, leaving offsets `{0, +-2 e_mu}` (plus `{+-e_mu +- e_nu}`
+   210	cross-terms for the square-of-sum, still `||.||_inf`-range 2); (G3) principal-branch
+   211	composition and the contour-distance bound; (G4) the band-decomposition Combes-Thomas
+   212	estimate with the dimension-aware band constant `B(R, d) = (2R+1)^{d-1} R(R+1)`
+   213	(eq. (5)); (G5) assembling (4) with (6) and bounding `|f|`, `|Gamma|`, `2/eta`;
+   214	(G6) direct conjugation through the spectral calculus; (G7) the `d = 1` symbol
+   215	identity and `gamma_CT <= arcsinh(m)`.
+   216	
+   217	**What the runner does (and does not) reprove.** The runner reproves a *numerical*
+   218	Schur row-sum twist bound on an explicit open chain (G3, `alpha* ~ 0.022`) and
+   219	verifies the closed-form band constant `B(R, d)` by enumeration; it confirms that
+   220	the closed-form `gamma_CT` of (7) is a valid *conservative lower bound* on the
+   221	independently measured resolvent and kernel decay rates (it is not sharp). It also
+   222	verifies the Riesz-Dunford contour integral reproduces `h[U]` (G2), the uniform gap
+   223	floor `m^2` and ceiling `m^2 + d^2` (G1), the `arcsinh(m)` reduction (G7), and the
+   224	exact gauge-invariance (G5) to machine precision. It does **not** symbolically
+   225	reprove the closed-form CT envelope (5)-(7); that is the in-note analytic step, and
+   226	(5) is corrected here to the dimension-aware form.
+   227	
+   228	## Hypothesis set used
+   229	
+   230	- **Compact gauge group / unitary links** — `S_mu` a contraction
+   231	  (`||S_mu|| <= 1`); load-bearing for (G1) `||s_mu|| <= 1` and the uniform gap.
+   232	  Reproved in-runner from `S_mu S_mu^dag = I` (eigenvalues on the unit circle =>
+   233	  `Im in [-1, 1]`); not asserted.
+   234	- **Mass gap `m > 0`** — load-bearing for the gap `m^2` to the holomorphy cut;
+
+codex
+The first pass isolates two different standards: the support/Taylor claims are finite-matrix identities carried by the note, while the claimed “finite-speed” consequence depends on whether T3 has a volume-uniform constant. I’m checking those separately so the runner’s instance coverage is not mistaken for a general proof.
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import sympy as sp
+from math import factorial
+
+I = sp.I
+I2 = sp.eye(2)
+X = sp.Matrix([[0,1],[1,0]])
+Y = sp.Matrix([[0,-I],[I,0]])
+Z = sp.Matrix([[1,0],[0,-1]])
+P = {\"X\": X, \"Y\": Y, \"Z\": Z}
+
+def kron(*xs):
+    out = xs[0]
+    for x in xs[1:]:
+        out = sp.kronecker_product(out, x)
+    return sp.Matrix(out)
+
+def at(n, assignments):
+    return kron(*[assignments.get(j, I2) for j in range(1, n+1)])
+
+def com(a,b):
+    return a*b-b*a
+
+def zero(a):
+    return sp.simplify(a) == sp.zeros(*a.shape)
+
+def ad(H,A,k):
+    out=A
+    for _ in range(k):
+        out=com(H,out)
+    return out
+
+def coeff_conjugation(H,A,k,sgn):
+    # coefficient of t"'^k in exp(sgn*i*t*H) A exp(-sgn*i*t*H)
+    out=sp.zeros(*A.shape)
+    for p in range(k+1):
+        q=k-p
+        out += (sgn*I*H)**p/factorial(p) * A * (-sgn*I*H)**q/factorial(q)
+    return sp.simplify(out)
+
+# Taylor convention/sign on an exact 2x2 example.
+H2=Z
+A2=X
+for sgn in (+1,-1):
+    for k in range(5):
+        lhs=coeff_conjugation(H2,A2,k,sgn)
+        rhs=(sgn*I)**k*ad(H2,A2,k)/factorial(k)
+        assert zero(lhs-rhs)
+print("Taylor: exp(+iHt) A exp(-iHt) has coefficient i''^k/k! ad_H''^k(A); opposite convention gives (-i)''^k.")
+
+# L1 with overlapping nearest-neighbor bond sum; then add a separate on-site term.
+n=4
+h12=at(n,{1:X,2:X})
+h23=at(n,{2:Z,3:Z})
+h34=at(n,{3:X,4:Y})
+onsite2=at(n,{2:Y})
+A1=at(n,{1:Z})
+for label,H in [("overlapping bonds",h12+h23+h34),("same + on-site",h12+h23+h34+onsite2)]:
+    C1=ad(H,A1,1)
+    C2=ad(H,A1,2)
+    # N''^1({1})={1,2}; N''^2({1})={1,2,3} on the chain.
+    assert all(zero(com(C1,at(n,{j:p}))) for j in (3,4) for p in P.values())
+    assert all(zero(com(C2,at(n,{4:p}))) for p in P.values())
+    print(f"L1: support containment holds for {label} in the exact 4-site test.")
+
+# T1 named 3-site witness.
+n=3
+Hreach=at(n,{1:X,2:X})+at(n,{2:Z,3:Z})
+A=at(n,{1:Z})
+B=at(n,{3:X})
+reach=[zero(com(ad(Hreach,A,k),B)) for k in range(3)]
+assert reach == [True,True,False]
+print("T1 witness: [k=0 zero, k=1 zero, k=2 zero] =", reach)
+
+# T2: exact all-order reduction, not just k=2,3.
+h12=at(n,{1:X,2:X})
+h23=at(n,{2:X,3:X})
+Hstall=h12+h23
+A=at(n,{1:Z})
+assert zero(com(h12,h23)) and zero(com(h23,A))
+for k in range(13):
+    assert zero(ad(Hstall,A,k)-ad(h12,A,k))
+    for p in P.values():
+        assert zero(com(ad(Hstall,A,k),at(n,{3:p})))
+print("T2: ad_(h12+h23)''^k(A)=ad_h12''^k(A), and every site-3 probe commutes, verified exactly for k=0..12; the commuting-derivation identity supplies the induction for all k.")
+
+# T3 iteration bookkeeping on a 4-site chain.
+n=4
+bonds=[
+    at(n,{1:X,2:X}),
+    at(n,{2:Z,3:Z}),
+    at(n,{3:X,4:Y}),
+]
+H=sum(bonds,sp.zeros(2**n))
+A=at(n,{1:Z})
+m=[1,2,3]  # bonds touching N''^r({1}), r=0,1,2
+C=A
+prod=1
+for step in range(1,4):
+    prev=C
+    C=com(H,prev)
+    r=step-1
+    prod*=2*m[r] # J=1
+    prev_norm=float(sp.N(prev.norm(2),15))
+    curr_norm=float(sp.N(C.norm(2),15))
+    assert curr_norm <= 2*m[r]*prev_norm + 1e-12
+    assert curr_norm <= prod*float(sp.N(A.norm(2),15)) + 1e-12
+    assert prod <= (2*m[r])**step
+    print(f"T3 step {step}: uses bonds touching N''^{r}(X), m_{r}={m[r]}, ||C_step||={curr_norm:.6g}, product bound={prod}.")
+print("T3 bookkeeping: product_{r=0}''^{k-1}(2 J m_r) <= (2 J m_{k-1})''^k <= (2 J m_k)''^k when m_r is nondecreasing.")
+PY' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+2026-07-18T12:07:26.717362Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 266ms:
+Taylor: exp(+iHt) A exp(-iHt) has coefficient i^k/k! ad_H^k(A); opposite convention gives (-i)^k.
+L1: support containment holds for overlapping bonds in the exact 4-site test.
+L1: support containment holds for same + on-site in the exact 4-site test.
+T1 witness: [k=0 zero, k=1 zero, k=2 zero] = [True, True, False]
+T2: ad_(h12+h23)^k(A)=ad_h12^k(A), and every site-3 probe commutes, verified exactly for k=0..12; the commuting-derivation identity supplies the induction for all k.
+T3 step 1: uses bonds touching N^0(X), m_0=1, ||C_step||=2, product bound=2.
+T3 step 2: uses bonds touching N^1(X), m_1=2, ||C_step||=5.65685, product bound=8.
+T3 step 3: uses bonds touching N^2(X), m_2=3, ||C_step||=17.8885, product bound=48.
+T3 bookkeeping: product_{r=0}^{k-1}(2 J m_r) <= (2 J m_{k-1})^k <= (2 J m_k)^k when m_r is nondecreasing.
+
+codex
+VERDICT: 2 blocker(s), 2 major, 1 minor
+
+1. **BLOCKER — T3 does not establish finite-speed propagation.** The note claims `"giving finite-speed operator spreading for the supplied class"` and calls (T3) a `"Lieb-Robinson-form series bound"`. But its constant is `c = 2 J m_D`, where `m_D` may scale with every bond in the finite volume. Consequently the bound has no volume-independent velocity and becomes vacuous along growing lattices. The recurrence itself is valid:
+   \[
+   \|\operatorname{ad}_H^jA\|\le2Jm_{j-1}\|\operatorname{ad}_H^{j-1}A\|,
+   \]
+   hence the product bound and the looser `(2Jm_k)^k` bound are honest. The overclaim is the finite-speed interpretation. Narrowest fix: call T3 a **finite-volume factorial-tail bound**, remove “finite-speed” and LR-closure language, and define `M=|E(\Lambda)|` rather than the undefined `m_D`. Alternatively, add a genuine interaction-path LR proof with constants uniform in volume. [T3](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md:93>)
+
+2. **BLOCKER — the named upstream many-body task is not closed.** The note says it `"takes the many-body slice at bounded level"` and later claims `"closure of the many-body slice the lane itself named open"`. The cited source’s actual open task is `"the full many-body fermionic transfer-matrix locality or a Lieb-Robinson lightcone"` requiring `"the separate quasilocal-LR composition step"`. A theorem for an independently supplied nearest-neighbor qubit bond Hamiltonian neither constructs that many-body transfer Hamiltonian nor proves it belongs to this finite-range class. Narrowest fix: describe this as a conditional finite-range spin lemma relevant to—but not closing—the named many-body/quasilocal-composition task, and leave that task open. [Upstream scope](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md:312>)
+
+3. **MAJOR — T1 states the wrong order quantifier.** The boxed conclusion says `"[A_X(t), B_Y] vanishes at t = 0 to order d(X,Y)"`. Conventionally that can mean the zero has exact order `d`, whereas T2 expressly demonstrates that the coefficient at `d` may also vanish. Narrowest fix: replace every such occurrence with `"has a zero of order at least d(X,Y)"`, `"is O(t^d)"`, or `"all coefficients with k<d vanish"`. Keep exact arrival only for the named reaching exhibit. [T1](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md:72>)
+
+4. **MAJOR — the supplied algebra and time-evolution convention are undeclared.** L1 invokes `"disjoint tensor slots"` and T1 asserts coefficient `(i)^k/k!`, but the supplied-class definition never explicitly sets
+   `𝒜_Λ = ⊗_{x∈Λ} M₂(C)` or `A(t)=e^{itH}Ae^{-itH}`. The minimal axioms do not supply that dynamics. With the displayed Heisenberg convention the coefficient is exactly correct; the opposite convention gives `(-i)^k/k!`. Narrowest fix: declare both the finite tensor-product algebra and Heisenberg convention as supplied theorem hypotheses—not axiom consequences. This also completes N3’s hidden-assumption inventory.
+
+5. **MINOR — governance language contains three unsupported labels.** `"at bounded level"` is undefined; N1 calls the named reaching exhibit `"T1's generic instance"` despite the explicit no-genericity disclaimer; and N8 says it `"repeats the lane pattern"` without identifying a prior cycle. Narrowest fixes: define or delete “bounded level,” change “generic instance” to “named noncommuting reaching instance,” and cite the precise prior cycle or state that no cross-cycle echo is claimed.
+
+The Python heredoc checks confirmed that overlapping bond sums do not harm L1; separate on-site summands are excluded as written, although L1 would survive them if T3 counted them as local terms. It also confirmed the T1 sign under the `e^{itH}Ae^{-itH}` convention and the stated reaching witness. T2 is mathematically all-order, not merely `k=2,3`: `[h₁₂,h₂₃]=[h₂₃,A]=0` implies `ad_{h₁₂+h₂₃}^kA=ad_{h₁₂}^kA`; only the runner gates are limited to the displayed orders.
+
+Both quotations from the Combes–Thomas note and minimal-axiom memo are faithful. The frontmatter dependency names match their stated contextual/foundation roles, but neither supplies the missing transfer-Hamiltonian bridge.
+tokens used
+51,577
+VERDICT: 2 blocker(s), 2 major, 1 minor
+
+1. **BLOCKER — T3 does not establish finite-speed propagation.** The note claims `"giving finite-speed operator spreading for the supplied class"` and calls (T3) a `"Lieb-Robinson-form series bound"`. But its constant is `c = 2 J m_D`, where `m_D` may scale with every bond in the finite volume. Consequently the bound has no volume-independent velocity and becomes vacuous along growing lattices. The recurrence itself is valid:
+   \[
+   \|\operatorname{ad}_H^jA\|\le2Jm_{j-1}\|\operatorname{ad}_H^{j-1}A\|,
+   \]
+   hence the product bound and the looser `(2Jm_k)^k` bound are honest. The overclaim is the finite-speed interpretation. Narrowest fix: call T3 a **finite-volume factorial-tail bound**, remove “finite-speed” and LR-closure language, and define `M=|E(\Lambda)|` rather than the undefined `m_D`. Alternatively, add a genuine interaction-path LR proof with constants uniform in volume. [T3](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md:93>)
+
+2. **BLOCKER — the named upstream many-body task is not closed.** The note says it `"takes the many-body slice at bounded level"` and later claims `"closure of the many-body slice the lane itself named open"`. The cited source’s actual open task is `"the full many-body fermionic transfer-matrix locality or a Lieb-Robinson lightcone"` requiring `"the separate quasilocal-LR composition step"`. A theorem for an independently supplied nearest-neighbor qubit bond Hamiltonian neither constructs that many-body transfer Hamiltonian nor proves it belongs to this finite-range class. Narrowest fix: describe this as a conditional finite-range spin lemma relevant to—but not closing—the named many-body/quasilocal-composition task, and leave that task open. [Upstream scope](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md:312>)
+
+3. **MAJOR — T1 states the wrong order quantifier.** The boxed conclusion says `"[A_X(t), B_Y] vanishes at t = 0 to order d(X,Y)"`. Conventionally that can mean the zero has exact order `d`, whereas T2 expressly demonstrates that the coefficient at `d` may also vanish. Narrowest fix: replace every such occurrence with `"has a zero of order at least d(X,Y)"`, `"is O(t^d)"`, or `"all coefficients with k<d vanish"`. Keep exact arrival only for the named reaching exhibit. [T1](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md:72>)
+
+4. **MAJOR — the supplied algebra and time-evolution convention are undeclared.** L1 invokes `"disjoint tensor slots"` and T1 asserts coefficient `(i)^k/k!`, but the supplied-class definition never explicitly sets
+   `𝒜_Λ = ⊗_{x∈Λ} M₂(C)` or `A(t)=e^{itH}Ae^{-itH}`. The minimal axioms do not supply that dynamics. With the displayed Heisenberg convention the coefficient is exactly correct; the opposite convention gives `(-i)^k/k!`. Narrowest fix: declare both the finite tensor-product algebra and Heisenberg convention as supplied theorem hypotheses—not axiom consequences. This also completes N3’s hidden-assumption inventory.
+
+5. **MINOR — governance language contains three unsupported labels.** `"at bounded level"` is undefined; N1 calls the named reaching exhibit `"T1's generic instance"` despite the explicit no-genericity disclaimer; and N8 says it `"repeats the lane pattern"` without identifying a prior cycle. Narrowest fixes: define or delete “bounded level,” change “generic instance” to “named noncommuting reaching instance,” and cite the precise prior cycle or state that no cross-cycle echo is claimed.
+
+The Python heredoc checks confirmed that overlapping bond sums do not harm L1; separate on-site summands are excluded as written, although L1 would survive them if T3 counted them as local terms. It also confirmed the T1 sign under the `e^{itH}Ae^{-itH}` convention and the stated reaching witness. T2 is mathematically all-order, not merely `k=2,3`: `[h₁₂,h₂₃]=[h₂₃,A]=0` implies `ad_{h₁₂+h₂₃}^kA=ad_{h₁₂}^kA`; only the runner gates are limited to the displayed orders.
+
+Both quotations from the Combes–Thomas note and minimal-axiom memo are faithful. The frontmatter dependency names match their stated contextual/foundation roles, but neither supplies the missing transfer-Hamiltonian bridge.

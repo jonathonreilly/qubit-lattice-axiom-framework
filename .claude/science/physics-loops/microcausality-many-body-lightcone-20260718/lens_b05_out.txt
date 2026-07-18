@@ -1,0 +1,2160 @@
+Reading additional input from stdin...
+2026-07-18T14:20:27.754326Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f7599-9833-7600-8bf6-cb26ab9e7a26
+--------
+user
+# Combined adversarial lens — block05 (finite-range plaquette-class walk-expansion LR bound)
+
+Role: hostile referee + independent mathematician. Attempt to REFUTE
+the note before it ships. Report BLOCKER / MAJOR / MINOR with exact
+sentences/gates attacked and concrete counterexamples or fixes. State
+survivals explicitly.
+
+Files (read-only):
+- docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md
+- scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py
+- docs/MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md (sibling chain)
+- docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md (the U-integrated open item)
+
+Attack surfaces (do all, add your own):
+1. Term-adjacency geometry: independently recompute 6/12/10/20/20/32 (hence 30/52), the diameters, the 804 walk count, and the reach values 2k. Any box-size or orientation dependence? Does the runner's enumeration actually cover all orientations (the fixed representatives claim)?
+2. The dilated reach lemma: is k >= ceil(d/2) exactly right at the boundary (odd d)? Is the face-jump exhibit honest (distance-2 in one step)? Does the series-start bookkeeping match the walk definition (k terms, k-1 adjacency steps — check against the sibling's convention and the coefficient identity exponents)?
+3. Chain carry-over: any step of the sibling chain that secretly uses BOND structure (two-site supports) rather than general term supports? The per-term reduced generator, the base-term bound 2J||B||, the first-step count n_X — all still correct for four-site terms?
+4. The theorem display: coefficient (2J)^k n 52^(k-1), series start ceil(d/2), the mu-form transplant, the 208eJ readout — check every exponent and factor. Is the claim "not on the site dimensions" actually established by the mixed-dim gates?
+5. Gauge-shaped coverage: is the edge->endpoint assignment argument airtight (magnetic face-supported, electric bond-supported)? Is anything about the U-integrated item smuggled (measure, kernel, correlations)? Is the Z2 instance faithful to the claim?
+6. Scope hygiene: supplied vs derived, d >= 1 inheritance (tensor class — does the sibling's d = 0 counterexample really apply verbatim?), single-site subsumption, longer-range exclusion, non-sharpness language.
+7. Runner: vacuous gates, instance-vs-universal honesty, needle fragility, manifest, anything false-green.
+
+House conventions: axioms supply no dynamics; bounded_theorem notes claim exactly what runners gate; literature comparator-only; no new vocabulary; N1-N8 with ATTEMPTED markers and Status line.
+codex
+I’m using the `audit-loop` skill because this is a scoped retained-grade adversarial audit. I’ll keep the listed files read-only, independently recompute the combinatorics and bounds, and return the required N1–N8 verdict with explicit survivals.
+  → Read the audit-loop instructions and all four scoped files
+  • Independently recompute geometry, reach, walk counts, and theorem constants
+  • Audit sibling-chain carry-over, gauge coverage, scope hygiene, and runner gates
+  • Deliver N1–N8 hostile-referee report with severity, exact attacks, fixes, and survivals
+exec
+/bin/zsh -lc "sed -n '1,260p' /Users/jonBridger/.codex/skills/audit-loop/SKILL.md" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+---
+name: audit-loop
+description: Run the cl3-lattice-framework audit lane as an adversarial Nature-grade claim auditor. Use when the user asks to audit scoped retained-grade science, process the audit backlog/queue, run an auditor loop, update audit results, apply audit verdicts, or push claim-audit outcomes directly to main.
+---
+
+# Audit Loop
+
+Use this skill to audit one claim at a time from the repository audit queue and land the audit result. The standard is hostile field review: the claim must survive an adversarial physicist looking for hidden imports, circular logic, definition-as-derivation, stale numerics, misidentified observables, and overstated closure.
+
+## Non-Negotiables
+
+- Audit; do not repair the science. If a claim fails, record a physicist-actionable failure handoff so someone else can fix it.
+- Work one claim per commit. This keeps audit verdicts reversible and reviewable.
+- Prefer a clean temporary worktree based on `origin/main`. Do not use a dirty shared checkout for audit commits.
+- Push routine audit commits directly to `main`. This project has authorized direct-main audit operation for ordinary `apply_audit.py`-accepted verdicts; do not open PRs for routine clean, conditional, renaming, decoration, numerical-match, or non-controversial failed verdicts.
+- Do not read broad publication framing while judging the claim. Use the source note, one-hop cited authorities, runner, runner output, and the audit rubric.
+- Preserve fresh-context integrity. Do not read prior audit rationales, previous audit entries, rendered `AUDIT_LEDGER.md` history, PR text, publication framing, or downstream summaries while judging a claim.
+- Do not grant `audited_clean` unless the derivation closes without hidden premises, unsupported physical identifications, circular dependency, or tuned comparator matching.
+- If the author family appears to be Codex and the current auditor is Codex, do not let the current context self-ratify a clean result. Restart the claim in a distinct restricted-input sub-agent when sub-agents are available, and record a clean result only as `independence: fresh_context` with a distinct `auditor` identity if `apply_audit.py` accepts it. If no sub-agent is available, skip clean application and report that a non-Codex, human, or fresh-context agent audit is required.
+- Do not stop after producing an audit JSON unless the user explicitly asks for a dry run, no-apply, or JSON-only result. If the user asks to "return JSON" as part of an audit-loop task, treat that as the required verdict format and still apply, verify, commit, and push the audit result according to this skill.
+
+## Setup For Each Session
+
+1. Fetch `origin/main`.
+2. Create or reuse a clean worktree based on `origin/main`.
+3. Run:
+
+```bash
+bash docs/audit/scripts/run_pipeline.sh
+python3 docs/audit/scripts/audit_lint.py --strict
+```
+
+The graph-cycle warning is currently expected. Treat any error as a blocker.
+
+## Clean-Context Guards
+
+- Do not run broad content searches over `docs/audit/data/audit_ledger.json`, `docs/audit/AUDIT_LEDGER.md`, or other audit-history files. Use exact `jq` field extraction for selected rows and dependencies.
+- When reading `audit_ledger.json`, extract only operational metadata such as `claim_id`, `note_path`, `runner_path`, statuses, `criticality`, `deps`, `note_hash`, and graph-degree fields. Do not print or inspect `verdict_rationale`, `chain_closure_explanation`, `previous_audits`, `audit_history`, or prior auditor notes.
+- File-name listing is allowed when needed, but do not search file contents in audit data/history to find alternate candidate sources or prior conclusions.
+- If fresh-context contamination occurs before a verdict is applied, discard the current context's judgment for that claim and restart the claim in a distinct restricted-input sub-agent when sub-agents are available. Do not pass the contamination, prior conclusion, or audit-history text to the sub-agent. If no sub-agent is available, stop before applying any audit and report the contamination.
+
+## Blocked-Row Loop Guard
+
+- If applying a verdict and rerunning the pipeline immediately invalidates that same row, returns it to the ready queue, or creates a dependency-status cycle that cannot be resolved by the audit verdict alone, do not keep retrying the row in the same audit loop.
+- Restore the pre-claim generated audit diff for that row, record a session-local blocked/skip entry with the claim id and the exact tooling reason, and continue with the next ready row.
+- Do not write an unsupported blocked verdict into the ledger unless `apply_audit.py` provides such a route. Report skipped blocked rows at the end of the loop and require upstream dependency/status repair before retrying them.
+
+## Long-Running Runner / Timeout Guard
+
+- A wall-time timeout, missing stdout, or noncompletion of a runner is not scientific evidence against the claim. Do not apply `audited_conditional`, `audited_failed`, or any other terminal non-clean verdict solely because the runner may need a long compute run.
+- If the load-bearing step cannot be judged without a long run and there is no completed log, cached certificate, sliced deterministic runner, or independent derivation in the restricted packet, record a session-local `compute_required` skip with the claim id, runner path, timeout/budget used, and the exact artifact needed; then continue with the next ready row.
+- Apply a non-clean verdict only when there is a substantive audit reason beyond wall-time noncompletion, such as a completed output mismatch, stale number, unsupported dependency, import/API failure, hard-coded contested premise, or an over-broad claim not supported by completed finite evidence.
+- If a prior audit row appears to have used timeout/noncompletion as the primary reason for a terminal verdict, do not treat that prior verdict as settled science. Queue it for policy repair or re-audit under this guard.
+- Do not blanket-reset older rows just because the rationale mentions a timeout. If the same rationale contains an independent blocker, re-audit the blocker under restricted inputs; if timeout/noncompletion is the primary or only reason, leave the row pending for compute or policy repair instead of citing it as non-clean science.
+
+## Legacy Claim-Type Re-Audits
+
+- `claim_type_backfill_reaudit` rows are migration cleanup under the PR291 regime. Audit the current scoped claim, not the old source-note status prose.
+- For critical rows with already confirmed legacy clean cross-confirmation whose summaries predate `claim_type`, a restricted-input re-audit may own the scoped `claim_type` and `claim_scope`; missing `claim_type` in the old summaries is not by itself a cross-confirmation disagreement.
+- If the new restricted-input audit changes the actual clean/non-clean verdict, or if `apply_audit.py` records a real cross-confirmation disagreement, follow the normal escalation path.
+
+## Pick The Next Claim
+
+If the user names a candidate file or other constrained selection source, that source is authoritative. After the pipeline, check the exact path exists. If it is absent, stop and report the missing file; do not search for substitutes or fall back to the default queue unless the user explicitly authorizes that fallback.
+
+Default selection is the highest-priority ready scoped claim:
+
+1. Read `docs/audit/data/audit_queue.json`.
+2. Pick the first row with `ready = true`, `audit_status` in `{unaudited, audit_in_progress}`, and `claim_type` in `{positive_theorem, bounded_theorem, no_go, open_gate}`.
+3. If the user explicitly says strict queue order, take the top queue row even if `claim_type` is unset.
+4. Exclude any claim id recorded in the current session's blocked/skip set by the Blocked-Row Loop Guard.
+5. If only `meta` or `decoration` rows remain, process them only when the user explicitly asks for those classes.
+
+Use this snippet when useful:
+
+```bash
+python3 - <<'PY'
+import json
+q=json.load(open("docs/audit/data/audit_queue.json"))["queue"]
+for e in q:
+    if e.get("ready") and e.get("claim_type") in {"positive_theorem","bounded_theorem","no_go","open_gate"}:
+        print(e["claim_id"], e["note_path"], e.get("runner_path") or "-")
+        break
+PY
+```
+
+## Context To Read
+
+For the selected claim, read only:
+
+- source note at `note_path`;
+- one-hop dependency notes listed in `docs/audit/data/audit_ledger.json` under `deps`;
+- the primary runner, if any;
+- current runner output, if the runner can be executed safely;
+- `docs/audit/README.md`, `FRESH_LOOK_REQUIREMENTS.md`, `AUDIT_AGENT_PROMPT_TEMPLATE.md`, and `ALGEBRAIC_DECORATION_POLICY.md`.
+
+When writing the verdict, also load `references/nature-grade-rubric.md` from this skill.
+
+Do not use `CLAIMS_TABLE.md`, `PUBLICATION_MATRIX.md`, `ARXIV_DRAFT.md`, or earlier review summaries to bias the verdict.
+
+## Audit Questions
+
+Answer these before choosing a verdict:
+
+- What exact sentence/equation is load-bearing?
+- Is the claimed observable the same observable being compared or derived?
+- Does the result follow from cited inputs, or is a symbol identity being introduced?
+- Are any physical carriers, unit maps, source laws, boundary conditions, sectors, normalizations, or readouts selected without a retained theorem?
+- Are dependencies unaudited, open gates, retained-pending-chain, stale, or themselves conditional?
+- Does the runner compute the hard bridge, or does it hard-code the contested premise and check consistency afterward?
+- Is this an independent theorem, or algebraic decoration of an upstream claim?
+- Are numerical values current with the runner and the source note?
+- Would a hostile specialist be able to reject the conclusion without making a mistake?
+
+## Verdict Rules
+
+Use the audit-lane verdict enum exactly:
+
+- `audited_clean`: derivation closes from the cited inputs; no hidden physical identification; runner checks the load-bearing step or the proof is purely exact algebra over independent retained inputs. Effective status is derived from ledger `claim_type` plus dependency closure, not source-note status prose. `support` is not a claim class, and old support prose neither grants nor blocks retained status after a clean audit.
+- `audited_conditional`: depends on an unaudited dependency, open gate, retained-pending-chain row, unratified physical bridge, or an explicit premise not closed by the cited authorities.
+- `audited_renaming`: the load-bearing step defines/renames the target quantity or identifies two concepts without derivation.
+- `audited_decoration`: exact algebraic corollary with no independent comparator, falsifiability, compression, or new physical content beyond an upstream parent.
+- `audited_numerical_match`: result depends on tuned/calibrated input or chosen scale/value rather than a structural theorem.
+- `audited_failed`: chain is wrong, stale relative to the runner, mismatches the observable, contradicts dependencies, or does not close on its own terms.
+
+When in doubt, choose the more conservative non-clean verdict.
+
+## Required Failure Handoff
+
+For any verdict other than `audited_clean`, make the ledger useful to the physicist who fixes the science. Put this structure inside `verdict_rationale` and keep `chain_closure_explanation` short but specific:
+
+```text
+Issue: <exact failed step, stale number, hidden premise, or observable mismatch>.
+Why this blocks: <why the conclusion cannot be claimed from current inputs>.
+Repair target: <specific theorem, derivation, runner computation, or dependency status needed>.
+Claim boundary until fixed: <what may still be safely said>.
+```
+
+For `audited_clean`, still explain why the load-bearing step closes and what residual risk remains.
+
+## Conditional Repair Surfacing
+
+For every `audited_conditional` result, make the next repair lane sortable.
+Prefix `notes_for_re_audit_if_any` with exactly one repair class:
+
+- `missing_dependency_edge`: a needed source note or authority exists or is
+  named, but is not wired as a direct dependency for the audited claim.
+- `dependency_not_retained`: a direct dependency exists but is not retained
+  grade.
+- `missing_bridge_theorem`: the claim needs a new theorem for a physical
+  carrier, readout, unit map, boundary condition, sector choice,
+  normalization, or observable bridge.
+- `scope_too_broad`: a clean bounded core exists, but the current claim scope
+  includes an unclosed extension.
+- `runner_artifact_issue`: a runner, log, classifier, threshold, import, or
+  pass/fail accounting problem blocks closure despite otherwise local scope.
+- `compute_required`: closure needs a completed long run, sliced runner,
+  cached certificate, or independent derivation.
+- `other`: use only when none of the above fits, and state why.
+
+After the class, name the cheapest next repair action, such as adding an
+explicit citation/dependency edge, auditing a named dependency first, creating
+an open bridge theorem, splitting the clean bounded core from the conditional
+extension, or repairing/slicing the runner. Do not repair during the audit
+unless the user explicitly asks for repair work.
+
+## Apply The Audit
+
+Create an audit JSON matching `docs/audit/scripts/apply_audit.py`. Returning this JSON to the user is not the end of the task unless they explicitly requested dry-run/no-apply behavior. Required metadata:
+
+- `claim_type`: one of `positive_theorem`, `bounded_theorem`, `no_go`, `open_gate`, `decoration`, `meta`.
+- `claim_scope`: a short citeable statement of exactly what was audited.
+- `auditor`: use a stable string such as `codex-audit-loop`.
+- `auditor_family`: use the actual family if known; otherwise use `codex-current`. Do not claim `codex-gpt-5.5` unless that is true for the session.
+- `independence`: use `cross_family` for non-Codex-authored claims, `weak` for same-family audits, `strong` for independent human review, `external` for off-project review.
+
+Apply it:
+
+```bash
+python3 docs/audit/scripts/apply_audit.py --file /tmp/audit-result.json
+bash docs/audit/scripts/run_pipeline.sh
+python3 docs/audit/scripts/audit_lint.py --strict
+git diff --check
+```
+
+For critical claims, the first clean audit records `audit_in_progress` and awaits cross-confirmation. That is expected.
+
+`apply_audit.py` is the gate. If it records a cross-confirmation disagreement, do not stop by default. Run a fresh judicial third auditor in the same loop using the restricted source packet plus the two prior audit arguments. Apply the judicial JSON through `apply_audit.py`; if the third auditor explicitly sides with the first or second audit, the script accepts the judgment, the pipeline refresh passes, `audit_lint.py --strict` passes, and `git diff --check` passes, treat the resolved judicial review as an ordinary landable audit result and continue the loop.
+
+Only stop for human review when the judicial auditor sides with neither, introduces a three-way disagreement, the tooling rejects the judgment, strict lint fails, or another hard-rule/exceptional routing case remains after the judicial review.
+
+If `apply_audit.py` accepts the JSON and `audit_lint.py --strict` passes after the pipeline refresh, land the audit by direct push to `main` for these routine cases:
+
+| Verdict / state | Audit-loop action |
+| --- | --- |
+| First or second `audited_clean` in the cross-confirmation flow | Direct push to `main` |
+| Cross-confirmation disagreement recorded before judicial review | Direct push only if immediately followed by an accepted judicial resolution in the same claim commit; otherwise stop for human review |
+| Judicial third-auditor review that confirms first or second verdict | Direct push to `main` |
+| `audited_conditional`, `audited_renaming`, `audited_decoration`, or `audited_numerical_match` | Direct push to `main` |
+| `audited_failed` on a non-controversial claim | Direct push to `main` |
+
+Open a PR and flag for human review only when there is an unresolved hard-rule conflict or exceptional routing case:
+
+| Exception | Audit-loop action |
+| --- | --- |
+| Judicial third auditor sides with neither, creates a three-way disagreement, or leaves the row blocked | Open PR; flag for human |
+| `apply_audit.py` rejects the verdict JSON or blocks on a hard rule | Open PR; flag for human |
+| `audit_lint.py --strict` fails after applying the verdict | Open PR; flag for human |
+
+## Commit And Push
+
+Review the diff. It should normally touch only:
+
+- `docs/audit/data/audit_ledger.json`;
+- `docs/audit/data/effective_status_summary.json`;
+- `docs/audit/data/audit_queue.json`;
+- `docs/audit/AUDIT_LEDGER.md`;
+- `docs/audit/AUDIT_QUEUE.md`;
+- possibly generated load-bearing/runner files if the pipeline refreshed them.
+
+Commit:
+
+```bash
+git add docs/audit
+git commit -m "audit: <claim-id> <verdict>"
+```
+
+Before pushing, fetch and confirm `origin/main` is still the parent or rebase cleanly and rerun the pipeline:
+
+```bash
+git fetch origin main
+git push origin HEAD:main
+```
+
+If the push is rejected, fetch/rebase onto `origin/main`, rerun pipeline/lint/diff-check, amend only if it is the same audit commit and no one else has consumed it, then push.
+
+## Loop Control
+
+After each successful direct-main push:
+
+1. Report the claim id, verdict, and one-sentence reason.
+2. If time and user intent allow, fetch `origin/main`, refresh the queue, exclude any session-local blocked/skip rows, and start the next claim.
+3. Stop if there is an ambiguous independence issue, source-note hash drift that cannot be resolved mechanically, or an audit requiring domain expertise beyond the provided authorities.
+
+For unresolved exception cases listed above, create a branch/PR instead of pushing to `main`, flag the reason for human review in the PR body, and stop the loop until the human decision lands. Do not stop merely because a third-auditor review occurred; stop only if the review remains unresolved or the tooling/verification gates fail.
+
+exec
+/bin/zsh -lc 'wc -l docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py docs/MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md /Users/jonBridger/.codex/skills/audit-loop/references/nature-grade-rubric.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     275 docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md
+     382 scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py
+     393 docs/MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md
+     367 docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md
+      81 /Users/jonBridger/.codex/skills/audit-loop/references/nature-grade-rubric.md
+    1498 total
+
+exec
+/bin/zsh -lc 'nl -ba docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md
+nl -ba scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	---
+     2	claim_id: microcausality_finite_range_plaquette_class_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional extension of the family walk-expansion chain to the finite-range term class on Z^3 (axioms supply no dynamics; the term family, the Hermitian terms, the finite region, and the finite site dimensions are supplied objects; same Heisenberg convention and declared finite-matrix ODE context as the siblings), under the standing scoping hypothesis X ∩ Y = ∅ (d ≥ 1; tensor class, so the clean form holds): (P1) the supplied class — H = Σ_{S∈𝒮} h_S with 𝒮 contained in {nearest-neighbor bonds} ∪ {unit faces}, each h_S Hermitian on its tensor factors, ||h_S|| ≤ J, sites carrying ARBITRARY finite dimensions (dimension-blindness gated on a mixed-dimension instance), single-site terms subsumable as degenerate bond terms; (P2) the exact term-adjacency geometry, natively re-enumerated and box-stable: 6 bonds and 12 faces per site (n_X^𝒮 ≤ 18|X|), degrees bond→30, face→52, D = 52, diameters 1 and 2; (P3) the dilated reach lemma — a length-k mixed walk reaches at most distance 2k, exactly attained at k = 1, 2, 3, so the series starts at k ≥ ⌈d/2⌉ and one face step genuinely jumps distance 2 (sharpness exhibit gated); (P4) the chain carry-over — every locality step is tensor-factor disjointness exactly as in the qubit siblings, so the Duhamel walk expansion applies with the term-adjacency graph replacing the bond graph, per-step degree ≤ 52, coefficient identity (2J)^k n 52^(k−1) = (n/52)(104J)^k gated; (P5) the theorem: ||[τ_t(A), B]|| ≤ 2||A||||B||(n_X^𝒮/52) Σ_{k≥⌈d/2⌉} (104J|t|)^k/k!, all t, volume-uniform, μ-reweighted exponential tail inherited, activity scale 104J and readout v ≤ 208eJ (cone dilation factor 2 is real), NEITHER claimed sharp; (P6) the gauge-shaped coverage remark, gated at a Z_2 instance: assigning each link's Hilbert space to one endpoint makes Kogut-Susskind-form magnetic plaquette terms face-supported and electric link terms bond-supported, so KS-form Hamiltonians with DYNAMICAL finite-dimensional links lie in the class — while the CT note's U-integrated item (gauge measure, transfer kernel, gauge-field correlation control, continuous groups) is NOT touched and remains open. Longer-range terms (diameter > 2) are outside the class, named."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	  - microcausality_many_body_nested_commutator_lightcone_bounded_theorem_note_2026-07-18
+     8	  - microcausality_all_time_volume_uniform_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18
+     9	  - gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13
+    10	runner: scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py
+    11	---
+    12	
+    13	# Microcausality: Finite-Range Plaquette-Class Walk-Expansion Lieb-Robinson Bound
+    14	
+    15	**Date:** 2026-07-18
+    16	**Type:** bounded_theorem
+    17	**Claim type:** bounded_theorem
+    18	**Scope:** bridge-conditional; supplied finite-range class (bonds and
+    19	unit faces, arbitrary finite site dimensions); the axioms supply no
+    20	dynamics; same conventions and declared ODE context as the siblings.
+    21	**Audit-status authority:** independent audit lane only. This note sets
+    22	no audit verdict and predicts none.
+    23	**Primitive status:** no primitive is approved, registered, edited, or
+    24	enlarged here.
+    25	**Primary runner:**
+    26	[`scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py`](../scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py)
+    27	**Runner cache:**
+    28	[`logs/runner-cache/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.txt`](../logs/runner-cache/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.txt)
+    29	
+    30	## Purpose
+    31	
+    32	The cited gauged quasilocality note
+    33	[`GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md`](GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md)
+    34	names its dynamical case open: "The `U`-integrated / dynamical
+    35	gauge-measure case — the fixed-`U` resolvent bound does not control
+    36	gauge-field correlations; **open**." That item has a Hamiltonian-level
+    37	many-body prerequisite the family can now supply: a Lieb-Robinson
+    38	bound for a term class wide enough to contain gauge-shaped
+    39	Hamiltonians whose links are **dynamical quantum degrees of freedom**
+    40	— which requires plaquette (four-site) terms and arbitrary finite
+    41	local dimensions, neither of which the qubit siblings' bond class
+    42	covers. This note supplies exactly that: the walk-expansion chain of
+    43	[`MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md`](MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md)
+    44	carries over verbatim — every locality input is tensor-factor
+    45	disjointness, exactly as in the qubit case — with the bond-adjacency
+    46	graph replaced by the term-adjacency graph of bonds and unit faces,
+    47	whose exact local geometry is enumerated and gated here. What this
+    48	note does **not** touch, stated plainly: the gauge measure, the
+    49	transfer kernel, gauge-field correlation control, and
+    50	continuous/compact link groups — the `U`-integrated item itself
+    51	remains open exactly as the CT note states it.
+    52	
+    53	## Hypotheses (all supplied, none derived)
+    54	
+    55	A finite region `Λ ⊂ Z^3`; each site `x` carries a supplied Hilbert
+    56	space of **arbitrary finite dimension** `q_x ≥ 1`; a supplied term
+    57	family `𝒮 ⊆ {nearest-neighbor bonds} ∪ {unit faces}` over `Λ` and a
+    58	supplied Hamiltonian `H = Σ_{S∈𝒮} h_S`, each `h_S` Hermitian on the
+    59	tensor factors of `S`, `J = max_S ||h_S||` (`𝒮` assumed nonempty; at
+    60	`𝒮 = ∅` set `J = 0`, `H = 0`, and every statement is trivial).
+    61	Single-site terms are subsumable: a term on `{x}` is a degenerate bond
+    62	term on any bond containing `x` (an upper-bound relabeling; no
+    63	constant changes). Observables `A`, `B` on disjoint supports `X`, `Y`
+    64	(`d = d(X, Y) ≥ 1` as the standing scoping hypothesis; this is a
+    65	tensor-product class, so `[A, B] = 0` holds and the clean form is
+    66	claimed — no CAR grading is involved anywhere in this note).
+    67	Heisenberg convention and the declared finite-matrix ODE context of
+    68	the sibling chain, unchanged, including directed time with the
+    69	`H → −H` extension (the class is invariant with the same `J`, terms,
+    70	and walks). The axioms supply no dynamics (needled); everything is
+    71	bridge-conditional. No literature statement is load-bearing.
+    72	
+    73	## Results
+    74	
+    75	**Exact term-adjacency geometry (natively enumerated, box-stable).**
+    76	Two terms are adjacent iff their site supports intersect. On `Z^3`,
+    77	enumerated at two box radii and stable:
+    78	
+    79	- bonds incident to one site: `6`; faces containing one site: `12` —
+    80	  so `n_X^𝒮 := #{S ∈ 𝒮 : S ∩ X ≠ ∅} ≤ 18·|X|`;
+    81	- from a bond: `10` adjacent bonds, `20` adjacent faces (degree `30`);
+    82	- from a face: `20` adjacent bonds, `32` adjacent faces (degree `52`);
+    83	- per-step degree bound `D = 52`; support diameters: bond `1`, face
+    84	  `2`.
+    85	
+    86	A mixed length-2 walk count from a single site is `804`, below the
+    87	product bound `18·52 = 936` (both gated) — the per-step bound is not
+    88	tight, and no tightness is claimed.
+    89	
+    90	**Dilated reach lemma (exact, with a sharpness exhibit).** The sites
+    91	of the `k`-th term of a walk lie within distance `2k` of `X`
+    92	(induction: each term shares a site with its predecessor and has
+    93	diameter at most `2`), and the value `2k` is exactly attained at
+    94	`k = 1, 2, 3` (enumerated). Hence a walk whose last term touches `Y`
+    95	needs `k ≥ ⌈d/2⌉`, and the series below starts there. The dilation is
+    96	real, not an artifact: one adjoint step through a face term moves
+    97	information distance `2` — gated: for the four-qubit face term
+    98	`X⊗X⊗X⊗X`, the single commutator `[H, Z_corner]` already fails to
+    99	commute with `Z` at the **opposite** corner (distance 2).
+   100	
+   101	**Chain carry-over.** Every locality input of the sibling chain is
+   102	tensor-factor disjointness — the same mechanism, verbatim: the
+   103	boundary reduction `[H, O] = [H_{∂ supp O}, O]`, the self-drop, the
+   104	per-term re-derivation with the reduced generator (self term dropped
+   105	before the Jacobi step), the base-term vanishing unless the last term
+   106	touches `Y`, and the initial `[A, B] = 0`. The algebra-independent
+   107	steps (Jacobi, conjugation, directed-time norm transport with the
+   108	`H → −H` extension, iterated integrals, factorial tail, μ-reweighting,
+   109	vanishing remainder) are cited to the sibling where they are natively
+   110	gated. The walk now lives on the term-adjacency graph: first term at
+   111	most `n_X^𝒮` choices, each later term at most `D = 52` choices, and
+   112	the coefficient identity `(2J)^k · n · 52^{k−1} = (n/52)(104J)^k` is
+   113	gated symbolically. Dimension-blindness is not just asserted: the
+   114	reduction and the below-cone/arrival instances are gated on a
+   115	**mixed-dimension** chain (site dimensions `2, 3, 2`), where nothing
+   116	in the chain refers to qubits.
+   117	
+   118	**Theorem (finite-range all-time volume-uniform Lieb-Robinson
+   119	bound).** For the supplied class above with `d ≥ 1`, for all `t` and
+   120	every finite `Λ`:
+   121	
+   122	> `||[τ_t(A), B]|| ≤ 2||A|| ||B|| (n_X^𝒮/52) Σ_{k≥⌈d/2⌉}
+   123	> (104J|t|)^k / k!`
+   124	> `≤ 2||A|| ||B|| (n_X^𝒮/52) · ((104J|t|)^{⌈d/2⌉}/⌈d/2⌉!) ·
+   125	> e^{104J|t|}`,
+   126	
+   127	with constants depending only on `||A||`, `||B||`, `n_X^𝒮 ≤ 18|X|`,
+   128	`J`, `d` — not on `|Λ|` and not on the site dimensions. The
+   129	μ-reweighted exponential tail form carries over verbatim (the tail
+   130	factor is algebra-independent): `Σ_{k≥⌈d/2⌉} x^k/k! ≤
+   131	e^{−μ⌈d/2⌉ + xe^μ}` for every `μ > 0`, giving decay once
+   132	`⌈d/2⌉ > e·104J|t|`, i.e. a velocity-type readout `v ≤ 208eJ` in site
+   133	units — the factor `2` from the real face-jump dilation, the `104J`
+   134	from the crude degree bound. **Neither `104J` (the class activity
+   135	scale) nor `208eJ` is claimed sharp**; the bond-only siblings'
+   136	constants (`20J`, `20eJ`) remain the sharper statement on the smaller
+   137	class, and this note does not modify them.
+   138	
+   139	**Gauge-shaped coverage (remark, gated at a `Z_2` instance).** Assign
+   140	each lattice link's Hilbert space to one chosen endpoint site. Then a
+   141	Kogut-Susskind-form magnetic plaquette term (product of the four link
+   142	variables around a face) becomes a term whose **site** support lies
+   143	inside that face's four sites — a face term of the class — and an
+   144	electric single-link term becomes a term on one site, subsumable as a
+   145	bond term. Gated concretely at `Z_2` link dimension: the four-link
+   146	magnetic term `X⊗X⊗X⊗X` commutes exactly with everything on sites
+   147	outside its face (including a fifth, far link qubit), the electric
+   148	term `Z` on one link commutes with everything off its bond, and the
+   149	two do not commute with each other (the gauge dynamics is nontrivial).
+   150	Hence KS-form Hamiltonians with **dynamical links of fixed finite
+   151	dimension** lie in the supplied class, and the theorem applies to them
+   152	with the same constants. What this does **not** give — stated plainly
+   153	— is the CT note's `U`-integrated item itself: no gauge measure is
+   154	integrated, no transfer kernel is controlled, no gauge-field
+   155	correlation bound is derived, and continuous link groups
+   156	(infinite-dimensional link spaces) are outside the class.
+   157	
+   158	## No-Go Discipline Gate
+   159	
+   160	- **N1 route inventory (residuals first).** Not attempted and not
+   161	  smuggled: (i) the `U`-integrated item itself — no measure, kernel,
+   162	  or correlation object appears; the coverage remark is a class
+   163	  statement about Hamiltonians, needled against the CT note's own
+   164	  open-item sentence; (ii) sharp rates for this class — `104J`/`208eJ`
+   165	  are crude degree bounds, stated so; (iii) longer-range terms
+   166	  (diameter `> 2`) — outside the class, named; (iv) the transfer
+   167	  identification and the bond-class tilt refinement — separate
+   168	  surfaces, untouched. Positive routes weighed: (1) reduce faces to
+   169	  pairs of bonds — ATTEMPTED and REJECTED: a four-site term is not a
+   170	  product or sum of two-site terms in general, and no such
+   171	  decomposition is assumed; (2) treat faces as range-2 bonds on a
+   172	  coarser lattice — ATTEMPTED and REJECTED as lossy (it would inflate
+   173	  `d` bookkeeping unnecessarily); the direct term-adjacency walk is
+   174	  exact.
+   175	- **N2 hypothesis independence (pairwise).** Hermiticity (norm
+   176	  transport only) vs `J` (majorization only) vs `d ≥ 1` (series start
+   177	  and `[A, B] = 0`) vs the class membership `𝒮 ⊆` bonds ∪ faces
+   178	  (adjacency degrees and reach dilation only): each pair separates at
+   179	  the named proof steps; no condition implies another. The site
+   180	  dimensions enter nowhere (gated on the mixed-dimension instance) —
+   181	  dimension-independence is itself one of the theorem's claims.
+   182	- **N3 hidden-wall scan.** New load-bearing content beyond the
+   183	  sibling chain: the term-adjacency geometry (natively enumerated,
+   184	  box-stable, gated) and the dilated reach lemma with its sharpness
+   185	  exhibit. Everything else is the sibling chain cited where natively
+   186	  gated. The `d ≥ 1` condition is the same scoping hypothesis as in
+   187	  the siblings (tensor class: clean form, so the sibling's `d = 0`
+   188	  counterexample applies verbatim here and the exclusion is
+   189	  necessary for the clean form).
+   190	- **N4 dependency roles, per citation (links are the load-bearing
+   191	  citation-graph edges).**
+   192	  - [`MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md`](MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md):
+   193	    the full algebra-independent chain (Duhamel, norm transport,
+   194	    iterated integrals, tail, μ-form, remainder) where natively
+   195	    gated; this note re-gates the coefficient identity, a tail
+   196	    instance, and every geometry-adjacent fact for the new class.
+   197	  - [`MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md`](MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md):
+   198	    family class conventions and the commutator norm bound (rebuilt
+   199	    there, used representation-level).
+   200	  - [`GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md`](GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md):
+   201	    the open-item sentence this note's Purpose is scoped against
+   202	    (needled); nothing mathematical is imported from it.
+   203	  - [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
+   204	    no-dynamics boundary needle only.
+   205	  - Lattice-gauge / Lieb-Robinson literature: comparator class only.
+   206	- **N5 rhetoric audit.** "Gauge-shaped coverage" is a class-membership
+   207	  remark with its non-claims enumerated in place; "dynamical links"
+   208	  means link factors inside the Hilbert space, not any measure
+   209	  statement; the dilation factor is exhibited, not narrated; nothing
+   210	  is called sharp.
+   211	- **N6 partial-closure scan.** Closed here: the many-body
+   212	  Hamiltonian-level LR input for finite-dimensional-link gauge-shaped
+   213	  classes — the prerequisite side of the `U`-integrated item. Still
+   214	  open, named: the `U`-integrated item itself (measure/kernel/
+   215	  correlations/continuous groups), the sharp rates (both classes),
+   216	  the transfer identification, and the bond-class tilt refinement.
+   217	- **N7 steelman (strongest counterarguments, answered).** (a) "The
+   218	  face degree 52 might be box-size-dependent." Enumerated at two
+   219	  radii, stable, and cross-checked by hand inclusion-exclusion
+   220	  (`48 − 18 + 4 − 1 = 33` faces meeting a face, minus itself, is 32).
+   221	  (b) "The dilated cone makes the bound weaker than the bond-only
+   222	  sibling on bond-only Hamiltonians." Correct and stated: on the
+   223	  smaller class the sibling's constants are sharper and are not
+   224	  modified; this theorem's value is the wider class. (c) "Gauge
+   225	  coverage is a smuggled U-integrated claim." No: the coverage remark
+   226	  is needled directly against the CT note's open-item sentence, and
+   227	  the measure/kernel/correlation content is explicitly not derived.
+   228	  (d) "Single-site subsumption changes constants." It does not: a
+   229	  degenerate bond term uses the bond degree row, an upper bound.
+   230	- **N8 prior-wall echo.** The family's walls: block01's region-level
+   231	  scope marker (crossed openly by block03, cited); the CT note's
+   232	  fixed-background scope (this note stays Hamiltonian-level, touching
+   233	  neither resolvent nor measure); the CAR no-go notes dispositioned
+   234	  in the block04 sibling concern statistics derivation and are
+   235	  irrelevant to this tensor-class note. No landed no-go touches
+   236	  finite-range spin locality. The family's exhibit-pair discipline is
+   237	  repeated (face-jump arrival gated at `k = 1`, `d = 2`;
+   238	  non-sharpness stated for both new constants).
+   239	
+   240	**Status: PASS** (all eight items answered; the two honest weaknesses
+   241	— crude degree constants and the dilated cone — are stated in the
+   242	theorem and steelman rather than hidden).
+   243	
+   244	## Non-Claims
+   245	
+   246	- Does **not** derive the `U`-integrated statement: no gauge measure,
+   247	  transfer kernel, or gauge-field correlation control; continuous
+   248	  link groups are outside the class.
+   249	- Does **not** claim `104J` or `208eJ` is sharp, and does **not**
+   250	  modify the bond-only siblings' sharper constants on their class.
+   251	- Does **not** cover terms of diameter greater than `2`.
+   252	- Does **not** cover `d = 0` (inherited clean-form exclusion; the
+   253	  sibling's counterexample applies verbatim to this tensor class).
+   254	- Does **not** involve CAR grading (tensor class only; the fermionic
+   255	  sibling stands separately).
+   256	- Does **not** select dynamics; the axioms supply none (needled).
+   257	- Does **not** set an audit verdict; independent audit remains
+   258	  required.
+   259	
+   260	## Verification
+   261	
+   262	Primary runner:
+   263	[`scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py`](../scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py)
+   264	— exact throughout. Gate kinds, honestly distinguished: **exhaustive
+   265	finite gates** (the full term-adjacency enumeration at two box radii;
+   266	the reach values at `k = 1, 2, 3`; the mixed length-2 walk count),
+   267	**exact representation gates** (the mixed-dimension chain reduction
+   268	and cone instances; the face-jump sharpness exhibit; the `Z_2`
+   269	KS-shaped instance), and **symbolic identity gates** (the coefficient
+   270	assembly; the `⌈d/2⌉` arithmetic; the tail instance re-gate). The
+   271	enumeration code is written natively for this runner — the loop-pack
+   272	worker analysis was scaffolding and is not executed or cited by the
+   273	runner. The gate count is enforced against a manifest. The runner
+   274	prints one `PASS`/`FAIL` line per gate and a final total; the cached
+   275	transcript is committed at the path in the header at landing time.
+     1	#!/usr/bin/env python3
+     2	"""Exact checks for the finite-range plaquette-class walk-expansion LR note."""
+     3	
+     4	import itertools
+     5	from pathlib import Path
+     6	
+     7	import sympy as sp
+     8	
+     9	
+    10	ROOT = Path(__file__).resolve().parents[1]
+    11	TARGET_NOTE = ROOT / (
+    12	    "docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_"
+    13	    "LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md"
+    14	)
+    15	BLOCK03_NOTE = ROOT / (
+    16	    "docs/MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_"
+    17	    "LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md"
+    18	)
+    19	CT_NOTE = ROOT / (
+    20	    "docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_"
+    21	    "NARROW_THEOREM_NOTE_2026-06-13.md"
+    22	)
+    23	AXIOM_NOTE = ROOT / "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    24	
+    25	EXPECTED_GATES = 21
+    26	
+    27	
+    28	def normalized_whitespace(text):
+    29	    return " ".join(text.split())
+    30	
+    31	
+    32	class CheckRunner:
+    33	    def __init__(self):
+    34	        self.passed = 0
+    35	        self.failed = 0
+    36	
+    37	    def check(self, label, condition):
+    38	        ok = bool(condition)
+    39	        if ok:
+    40	            self.passed += 1
+    41	            print(f"PASS: {label}")
+    42	        else:
+    43	            self.failed += 1
+    44	            print(f"FAIL: {label}")
+    45	
+    46	    def needle(self, label, path, needles):
+    47	        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
+    48	        if isinstance(needles, str):
+    49	            needles = (needles,)
+    50	        self.check(
+    51	            label,
+    52	            all(normalized_whitespace(n) in haystack for n in needles),
+    53	        )
+    54	
+    55	    def finish(self):
+    56	        total = self.passed + self.failed
+    57	        if total != EXPECTED_GATES:
+    58	            print(
+    59	                f"FAIL: gate-manifest drift: ran {total}, "
+    60	                f"expected {EXPECTED_GATES}"
+    61	            )
+    62	            self.failed += 1
+    63	        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
+    64	        return 0 if self.failed == 0 else 1
+    65	
+    66	
+    67	AXES = [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+    68	
+    69	
+    70	def add(p, q):
+    71	    return tuple(a + b for a, b in zip(p, q))
+    72	
+    73	
+    74	def terms_in_box(radius):
+    75	    """All bonds and faces whose sites lie in the centered box."""
+    76	    rng = range(-radius, radius + 1)
+    77	    bonds, faces = set(), set()
+    78	    for x in itertools.product(rng, repeat=3):
+    79	        for i in range(3):
+    80	            y = add(x, AXES[i])
+    81	            if all(-radius <= c <= radius for c in y):
+    82	                bonds.add(frozenset((x, y)))
+    83	            for j in range(i + 1, 3):
+    84	                y2 = add(x, AXES[j])
+    85	                y3 = add(y, AXES[j])
+    86	                quad = (x, y, y2, y3)
+    87	                if all(-radius <= c <= radius for pt in quad for c in pt):
+    88	                    faces.add(frozenset(quad))
+    89	    return bonds, faces
+    90	
+    91	
+    92	def site_index(terms):
+    93	    idx = {}
+    94	    for t in terms:
+    95	        for s in t:
+    96	            idx.setdefault(s, set()).add(t)
+    97	    return idx
+    98	
+    99	
+   100	def adjacent_terms(term, idx):
+   101	    out = set()
+   102	    for s in term:
+   103	        out |= idx[s]
+   104	    out.discard(term)
+   105	    return out
+   106	
+   107	
+   108	def l1(p, q):
+   109	    return sum(abs(a - b) for a, b in zip(p, q))
+   110	
+   111	
+   112	def geometry(radius):
+   113	    bonds, faces = terms_in_box(radius)
+   114	    allt = bonds | faces
+   115	    idx = site_index(allt)
+   116	    origin = (0, 0, 0)
+   117	    b0 = frozenset((origin, (1, 0, 0)))
+   118	    f0 = frozenset(((0, 0, 0), (1, 0, 0), (0, 1, 0), (1, 1, 0)))
+   119	    nb = adjacent_terms(b0, idx)
+   120	    nf = adjacent_terms(f0, idx)
+   121	    stats = {
+   122	        "bonds_per_site": len([t for t in idx[origin] if len(t) == 2]),
+   123	        "faces_per_site": len([t for t in idx[origin] if len(t) == 4]),
+   124	        "bond_bond": len([t for t in nb if len(t) == 2]),
+   125	        "bond_face": len([t for t in nb if len(t) == 4]),
+   126	        "face_bond": len([t for t in nf if len(t) == 2]),
+   127	        "face_face": len([t for t in nf if len(t) == 4]),
+   128	    }
+   129	    stats["bond_degree"] = stats["bond_bond"] + stats["bond_face"]
+   130	    stats["face_degree"] = stats["face_bond"] + stats["face_face"]
+   131	    return stats, idx, origin
+   132	
+   133	
+   134	def main():
+   135	    checks = CheckRunner()
+   136	
+   137	    stats4, idx4, origin = geometry(4)
+   138	    stats5, idx5, _ = geometry(5)
+   139	
+   140	    # Group G -- exhaustive geometry, box-stable.
+   141	    checks.check(
+   142	        "G1 terms per site: 6 bonds and 12 faces (radii 4 and 5)",
+   143	        stats4["bonds_per_site"] == 6
+   144	        and stats4["faces_per_site"] == 12
+   145	        and stats5["bonds_per_site"] == 6
+   146	        and stats5["faces_per_site"] == 12,
+   147	    )
+   148	    checks.check(
+   149	        "G2 bond degrees: 10 bonds + 20 faces = 30 (radii 4 and 5)",
+   150	        stats4["bond_bond"] == 10
+   151	        and stats4["bond_face"] == 20
+   152	        and stats4["bond_degree"] == 30
+   153	        and stats5["bond_degree"] == 30,
+   154	    )
+   155	    ie = 4 * 12 - (4 * 4 + 2 * 1) + 4 * 1 - 1
+   156	    checks.check(
+   157	        "G3 face degrees: 20 bonds + 32 faces = 52, box-stable, and the "
+   158	        "hand inclusion-exclusion 48-18+4-1 = 33 minus self = 32 agrees",
+   159	        stats4["face_bond"] == 20
+   160	        and stats4["face_face"] == 32
+   161	        and stats4["face_degree"] == 52
+   162	        and stats5["face_degree"] == 52
+   163	        and ie == 33
+   164	        and ie - 1 == 32,
+   165	    )
+   166	    diam = lambda t: max(l1(p, q) for p in t for q in t)
+   167	    b0 = frozenset(((0, 0, 0), (1, 0, 0)))
+   168	    f0 = frozenset(((0, 0, 0), (1, 0, 0), (0, 1, 0), (1, 1, 0)))
+   169	    checks.check(
+   170	        "G4 support diameters: bond 1, face 2",
+   171	        diam(b0) == 1 and diam(f0) == 2,
+   172	    )
+   173	    starts = sorted(idx5[origin], key=lambda t: sorted(t))
+   174	    walks2 = [
+   175	        (t1, t2) for t1 in starts for t2 in adjacent_terms(t1, idx5)
+   176	    ]
+   177	    checks.check(
+   178	        "G5 mixed length-2 walks from one site: 804 <= 936 = 18*52",
+   179	        len(starts) == 18 and len(walks2) == 804 and 804 <= 18 * 52,
+   180	    )
+   181	    max_d1 = max(
+   182	        l1(origin, s) for t1 in starts for s in t1
+   183	    )
+   184	    max_d2 = max(l1(origin, s) for _, t2 in walks2 for s in t2)
+   185	    max_d3 = 0
+   186	    for _, t2 in walks2:
+   187	        for t3 in adjacent_terms(t2, idx5):
+   188	            for s in t3:
+   189	                dd = l1(origin, s)
+   190	                if dd > max_d3:
+   191	                    max_d3 = dd
+   192	    checks.check(
+   193	        "G6 reach is exactly 2k at k = 1, 2, 3",
+   194	        max_d1 == 2 and max_d2 == 4 and max_d3 == 6,
+   195	    )
+   196	
+   197	    # Group R -- series start and sharpness.
+   198	    ceil_ok = all(
+   199	        sp.ceiling(sp.Rational(d, 2)) == expect
+   200	        and 2 * (expect - 1) < d <= 2 * expect
+   201	        for d, expect in ((1, 1), (2, 1), (3, 2), (4, 2), (5, 3))
+   202	    )
+   203	    checks.check(
+   204	        "R1 series start: 2k >= d iff k >= ceil(d/2) (instances d=1..5)",
+   205	        ceil_ok,
+   206	    )
+   207	    I2 = sp.eye(2)
+   208	    SX = sp.Matrix([[0, 1], [1, 0]])
+   209	    SZ = sp.Matrix([[1, 0], [0, -1]])
+   210	
+   211	    def kron(*mats):
+   212	        out = mats[0]
+   213	        for m in mats[1:]:
+   214	            out = sp.Matrix(sp.kronecker_product(out, m))
+   215	        return out
+   216	
+   217	    def com(a, b):
+   218	        return a * b - b * a
+   219	
+   220	    def is_zero(m):
+   221	        return sp.simplify(m) == sp.zeros(*m.shape)
+   222	
+   223	    face_term = kron(SX, SX, SX, SX)
+   224	    z_corner = kron(SZ, I2, I2, I2)
+   225	    z_opposite = kron(I2, I2, I2, SZ)
+   226	    checks.check(
+   227	        "R2 face-jump sharpness: one adjoint step reaches distance 2 "
+   228	        "(k=0 commutes, k=1 does not)",
+   229	        is_zero(com(z_corner, z_opposite))
+   230	        and not is_zero(com(com(face_term, z_corner), z_opposite)),
+   231	    )
+   232	
+   233	    # Group M -- mixed-dimension chain (dims 2, 3, 2).
+   234	    I3 = sp.eye(3)
+   235	    Q = sp.diag(1, 2, 3)
+   236	    Qp = sp.Matrix([[0, 1, 0], [1, 0, 0], [0, 0, 0]])
+   237	
+   238	    def kron3(a, b, c):
+   239	        return sp.Matrix(
+   240	            sp.kronecker_product(sp.kronecker_product(a, b), c)
+   241	        )
+   242	
+   243	    h12 = kron3(SX, Q, I2)
+   244	    h23 = kron3(I2, Qp, SX)
+   245	    ham = h12 + h23
+   246	    a1 = kron3(SZ, I3, I2)
+   247	    z3 = kron3(I2, I3, SZ)
+   248	    checks.check(
+   249	        "M1 mixed-dim reduction: [h23, A] = 0 and [H, A] = [h12, A] != 0",
+   250	        is_zero(com(h23, a1))
+   251	        and is_zero(com(ham, a1) - com(h12, a1))
+   252	        and not is_zero(com(h12, a1)),
+   253	    )
+   254	    ad1 = com(ham, a1)
+   255	    ad2 = com(ham, ad1)
+   256	    checks.check(
+   257	        "M2 mixed-dim cone: k = 0, 1 below (d = 2), k = 2 arrives",
+   258	        is_zero(com(a1, z3))
+   259	        and is_zero(com(ad1, z3))
+   260	        and not is_zero(com(ad2, z3)),
+   261	    )
+   262	    checks.check(
+   263	        "M3 mixed-dim terms Hermitian with exact Kronecker norms "
+   264	        "(||X ⊗ diag(1,2,3)|| = 3)",
+   265	        is_zero(h12 - h12.H)
+   266	        and is_zero(h23 - h23.H)
+   267	        and sp.simplify(max((h12.H * h12).eigenvals()) - 9) == 0,
+   268	    )
+   269	
+   270	    # Group Z -- Z2 KS-shaped instance (factors l1, l3, l2, l4, l5).
+   271	    def kron5(ms):
+   272	        out = ms[0]
+   273	        for m in ms[1:]:
+   274	            out = sp.Matrix(sp.kronecker_product(out, m))
+   275	        return out
+   276	
+   277	    def op_on(which, mat):
+   278	        mats = [I2] * 5
+   279	        mats[which] = mat
+   280	        return kron5(mats)
+   281	
+   282	    # factor order: 0 = l1, 1 = l3 (both at site v00), 2 = l2 (v10),
+   283	    # 3 = l4 (v01), 4 = l5 (far site w)
+   284	    b_p = kron5([SX, I2, SX, SX, I2]) * op_on(1, SX)
+   285	    e_l1 = op_on(0, SZ)
+   286	    checks.check(
+   287	        "Z1 magnetic plaquette term is face-supported: commutes with "
+   288	        "every operator on the far link",
+   289	        is_zero(com(b_p, op_on(4, SZ))) and is_zero(com(b_p, op_on(4, SX))),
+   290	    )
+   291	    checks.check(
+   292	        "Z2 electric link term is bond-supported: commutes with "
+   293	        "operators on l2, l4, l5",
+   294	        is_zero(com(e_l1, op_on(2, SX)))
+   295	        and is_zero(com(e_l1, op_on(3, SX)))
+   296	        and is_zero(com(e_l1, op_on(4, SX))),
+   297	    )
+   298	    checks.check(
+   299	        "Z3 the gauge dynamics is nontrivial: [B_p, E_l1] != 0",
+   300	        not is_zero(com(b_p, e_l1)),
+   301	    )
+   302	
+   303	    # Group T -- assembly.
+   304	    j_sym, n_sym, k_sym = sp.symbols("j_sym n_sym k_sym", positive=True)
+   305	    checks.check(
+   306	        "T1 coefficient assembly (2J)^k n 52^(k-1) = (n/52)(104J)^k",
+   307	        sp.simplify(
+   308	            (2 * j_sym) ** k_sym * n_sym * 52 ** (k_sym - 1)
+   309	            - (n_sym / sp.Integer(52)) * (104 * j_sym) ** k_sym
+   310	        )
+   311	        == 0,
+   312	    )
+   313	    x_val = sp.Rational(3, 2)
+   314	    tail_lhs = sum(x_val**k / sp.factorial(k) for k in range(2, 40))
+   315	    tail_rhs = x_val**2 / 2 * sp.exp(x_val)
+   316	    checks.check(
+   317	        "T2 tail instance re-gate: sum_{k>=2} x^k/k! <= (x^2/2) e^x "
+   318	        "at x = 3/2",
+   319	        sp.simplify(tail_rhs - tail_lhs).is_positive is True,
+   320	    )
+   321	
+   322	    # Group N -- source needles.  __TOTAL__ deliberately not matched.
+   323	    checks.needle(
+   324	        "N1 CT note names the U-integrated case open (its own words)",
+   325	        CT_NOTE,
+   326	        "The `U`-integrated / dynamical gauge-measure case — the "
+   327	        "fixed-`U` resolvent bound does not control gauge-field "
+   328	        "correlations; **open**.",
+   329	    )
+   330	    checks.needle(
+   331	        "N2 axiom memo supplies no dynamics",
+   332	        AXIOM_NOTE,
+   333	        (
+   334	            "Admissibility is not a dynamics axiom.",
+   335	            "choose a Hamiltonian or transfer operator",
+   336	        ),
+   337	    )
+   338	    checks.needle(
+   339	        "N3 sibling chain authorities",
+   340	        BLOCK03_NOTE,
+   341	        (
+   342	            "microcausality_all_time_volume_uniform_walk_expansion_"
+   343	            "lieb_robinson_bounded_theorem_note_2026-07-18",
+   344	            "**G6 (theorem: all-time volume-uniform Lieb-Robinson bound).**",
+   345	            "obtained by the `H → −H` symmetry",
+   346	        ),
+   347	    )
+   348	    checks.needle(
+   349	        "N4 target identifiers, theorem, non-sharpness, non-claims",
+   350	        TARGET_NOTE,
+   351	        (
+   352	            "microcausality_finite_range_plaquette_class_walk_expansion_"
+   353	            "lieb_robinson_bounded_theorem_note_2026-07-18",
+   354	            "**Theorem (finite-range all-time volume-uniform "
+   355	            "Lieb-Robinson bound).**",
+   356	            "**Neither `104J` (the class activity scale) nor `208eJ` is "
+   357	            "claimed sharp**",
+   358	            "no gauge measure is integrated",
+   359	            "`d = d(X, Y) ≥ 1` as the standing scoping hypothesis",
+   360	        ),
+   361	    )
+   362	    checks.needle(
+   363	        "N5 No-Go section structure: all eight items and the Status line",
+   364	        TARGET_NOTE,
+   365	        (
+   366	            "**N1 route inventory (residuals first).**",
+   367	            "**N2 hypothesis independence (pairwise).**",
+   368	            "**N3 hidden-wall scan.**",
+   369	            "**N4 dependency roles, per citation",
+   370	            "**N5 rhetoric audit.**",
+   371	            "**N6 partial-closure scan.**",
+   372	            "**N7 steelman (strongest counterarguments, answered).**",
+   373	            "**N8 prior-wall echo.**",
+   374	            "**Status: PASS**",
+   375	        ),
+   376	    )
+   377	
+   378	    return checks.finish()
+   379	
+   380	
+   381	if __name__ == "__main__":
+   382	    raise SystemExit(main())
+
+exec
+/bin/zsh -lc 'nl -ba docs/MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	---
+     2	claim_id: microcausality_all_time_volume_uniform_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional closure of the family's named open task on the same supplied finite-range class (axioms supply no dynamics; same declared algebra and Heisenberg convention as the siblings, Hermitian bond terms, plus the declared finite-matrix ODE context stated in Hypotheses), under the standing hypothesis X ∩ Y = ∅ (d ≥ 1, with the necessity of the exclusion gated by an exact d = 0 counterexample): (G1) the algebraic kernel of the Duhamel step — Jacobi rearrangement, conjugation-commutator distribution, the boundary reduction [H, O] = [H_∂supp(O), O], and the self-term drop [h, h] = 0 — each identity gated symbolically or at exact instances as marked; (G2) the directed-time norm-transport lemma ||f(t)|| ≤ ||f(0)|| + ∫_0^t ||R|| (t ≥ 0) for f' = i[H̃(t), f] + R(t), with the intertwiner and unitarity computations gated symbolically, the variation-of-constants identity gated end-to-end at an exact rational-spectrum instance, the finite-sum triangle inequality rebuilt and gated, and negative times obtained by the gated H → −H symmetry, never by |t| substitution; (G3) the one-step Duhamel inequality ||[τ_t(A), B]|| ≤ ||[A, B]|| + 2||A|| Σ_{b∩X≠∅} ∫_0^t ||[τ_s(h_b), B]|| ds (t ≥ 0), gated on an exact stationary-bond instance with even-in-t norm; (G4) the iteration into bond-adjacency walks — the derivation re-run per bond with the self term dropped BEFORE the Jacobi step, so each next bond is adjacent to the PREVIOUS bond, not the accumulated support — with the depth-2 assembly identity and the vanishing remainder gated; (G5) the exact walk combinatorics on Z^3: bonds per site = 6, bond-adjacency degree = 10 (enumerated, box-stable), walks of length k from X counted by n_X·10^(k−1) (all six start bonds checked), and the reach lemma with a sharp d = 3 instance; (G6) the all-time volume-uniform Lieb-Robinson bound ||[τ_t(A), B]|| ≤ 2||A||||B||(n_X/10) Σ_{k≥d} (20J|t|)^k/k! ≤ 2||A||||B||(n_X/10)((20J|t|)^d/d!)e^{20J|t|}, constants free of |Λ|, with the tail lemma re-derived, the term-ratio monotone-decrease statement kept separate from exponential decay, the μ-reweighted exponential tail bound Σ_{k≥d} x^k/k! ≤ e^{−μd + xe^μ} (a review-lens contribution, adopted and gated) giving the μ = 1 velocity-type readout 20eJ, and an explicit large-d smallness certificate gated in exact integer arithmetic; (G7) strict-extension exhibits against both siblings' certificates (block01's constant is region-level 2J·|E(Λ)|; block02's window at the instance is 1/12, while this bound is finite at every t — broader time domain, no within-window smallness claim). Neither 20J (walk-series activity scale) nor 20eJ is claimed sharp; the sharp rate, the U-integrated statement, and the fermionic transfer bridge remain open; nothing physical is selected."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	  - microcausality_many_body_nested_commutator_lightcone_bounded_theorem_note_2026-07-18
+     8	  - microcausality_volume_uniform_sequence_count_coefficient_bounds_bounded_theorem_note_2026-07-18
+     9	runner: scripts/microcausality_all_time_volume_uniform_walk_expansion_2026_07_18.py
+    10	---
+    11	
+    12	# Microcausality: All-Time Volume-Uniform Walk-Expansion Lieb-Robinson Bound
+    13	
+    14	**Date:** 2026-07-18
+    15	**Type:** bounded_theorem
+    16	**Claim type:** bounded_theorem
+    17	**Scope:** bridge-conditional; same supplied class, algebra, and
+    18	Heisenberg convention as the siblings, plus the declared finite-matrix
+    19	ODE context in Hypotheses; the axioms choose no dynamics.
+    20	**Audit-status authority:** independent audit lane only. This note sets no
+    21	audit verdict and predicts none.
+    22	**Primitive status:** no primitive is approved, registered, edited, or
+    23	enlarged here.
+    24	**Primary runner:**
+    25	[`scripts/microcausality_all_time_volume_uniform_walk_expansion_2026_07_18.py`](../scripts/microcausality_all_time_volume_uniform_walk_expansion_2026_07_18.py)
+    26	**Runner cache:**
+    27	[`logs/runner-cache/microcausality_all_time_volume_uniform_walk_expansion_2026_07_18.txt`](../logs/runner-cache/microcausality_all_time_volume_uniform_walk_expansion_2026_07_18.txt)
+    28	
+    29	## Purpose
+    30	
+    31	Both siblings name the same open task. The first,
+    32	[`MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md`](MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md),
+    33	proved below-cone Taylor vanishing and an all-time bound whose constant
+    34	`c = 2J·|E(Λ)|` is region-level. The second,
+    35	[`MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md`](MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md),
+    36	made the constants local but only on a finite time window, and stated
+    37	why: at the Taylor-coefficient level the count is genuinely
+    38	accumulated-support — "the pair of bounds brackets exactly what the open
+    39	walk argument would unify". This note supplies that walk argument. The
+    40	reorganization happens at the Duhamel level, not the coefficient level:
+    41	differentiating `[τ_t(A), B]`, reducing `[H, A]` to the bonds touching
+    42	`supp(A)`, and applying the Jacobi identity term-by-term produces an
+    43	inhomogeneous commutator flow whose inhomogeneity involves the evolved
+    44	**bond** `[τ_s(h_b), B]` — a fixed two-site object — rather than the
+    45	growing operator. Iterating on the bond replaces accumulated-support
+    46	sequences by walks on the bond-adjacency graph, each next bond adjacent
+    47	to the **previous bond** only. On `Z^3` that graph has degree exactly
+    48	`10`, so the walk count is geometric, and geometric-over-factorial
+    49	converges for every `t`, volume-uniformly. The result is the family's
+    50	all-time volume-uniform Lieb-Robinson bound with rate constant `20J` —
+    51	explicitly **not** claimed sharp.
+    52	
+    53	## Hypotheses (all supplied, none derived)
+    54	
+    55	Same supplied surface as the siblings: a finite region `Λ ⊂ Z^3` with
+    56	its induced nearest-neighbor bond set `E(Λ)`; a supplied bond
+    57	Hamiltonian `H = Σ_{b∈E(Λ)} h_b` with each `h_b` Hermitian (the first
+    58	sibling's declaration, load-bearing here: it makes the generator
+    59	`H̃(t)` below self-adjoint, which G2 requires) and `J = max_b ||h_b||`; observables
+    60	`A` supported on `X ⊆ Λ` and `B` supported on `Y ⊆ Λ` with
+    61	**`X ∩ Y = ∅`, equivalently `d ≥ 1` — required throughout** (the `d = 0`
+    62	overlapping case is excluded by hypothesis, and the runner exhibits why
+    63	the exclusion is necessary: at `d = 0` the bound's right side can fall
+    64	below `||[A, B]||` itself); `d = d(X, Y)`
+    65	the `Z^3` graph distance (a lower bound for the `Λ`-induced distance,
+    66	hence conservative in the reach lemma); `n_X = #{b ∈ E(Λ) : b ∩ X ≠ ∅}
+    67	≤ 6·|X|`; the Heisenberg convention `τ_t(A) = e^{itH} A e^{−itH}`. The
+    68	axioms supply no dynamics (needled); `H` is a supplied object of the
+    69	declared class, so every statement is bridge-conditional exactly as in
+    70	the siblings.
+    71	
+    72	Declared finite-matrix analysis context (supplied, with every algebraic
+    73	identity gated): (i) existence, unitarity, and termwise differentiability
+    74	of `e^{itH}`, giving `d/dt τ_t(A) = i[H, τ_t(A)]` (the siblings'
+    75	entire-series fact); (ii) existence of the time-ordered propagator
+    76	`V(t)` with `V'(t) = i H̃(t) V(t)`, `V(0) = 1`, for the continuous
+    77	bounded self-adjoint generator `H̃(t)` below (a finite-dimensional
+    78	linear ODE); (iii) continuity of `s ↦ ||[τ_s(h_b), B]||` and the Riemann
+    79	limit passage extending the finite-sum triangle inequality to integrals
+    80	(the finite-sum inequality itself is rebuilt and gated in G2; only the
+    81	limit passage is supplied). No literature statement is load-bearing: the
+    82	Lieb-Robinson/Nachtergaele-Sims line is a **comparator class only**; the
+    83	proof below is self-contained and every load-bearing identity is gated.
+    84	
+    85	## Results
+    86	
+    87	**G1 (algebraic kernel of the Duhamel step, exact).** Four identities,
+    88	each gated:
+    89	
+    90	1. Jacobi rearrangement `[[P, Q], R] = [P, [Q, R]] − [Q, [P, R]]`
+    91	   (symbolic zero on generic matrix symbols).
+    92	2. Conjugation distributes over commutators,
+    93	   `M [P, Q] M^{−1} = [M P M^{−1}, M Q M^{−1}]` (symbolic zero), hence
+    94	   `τ_t([h_b, A]) = [τ_t(h_b), τ_t(A)]`.
+    95	3. Boundary reduction: `[H, O] = [H_{∂Z}, O]` for `O` supported on `Z`,
+    96	   with `H_{∂Z} = Σ_{b∩Z≠∅} h_b` — a bond missing `Z` acts on
+    97	   complementary tensor factors and commutes exactly (the first
+    98	   sibling's L1a mechanism, re-gated here on the three-site chain).
+    99	4. Self-term drop: `[h_b, h_b] = 0`, so for `O = h_b` the reduction
+   100	   sum runs over the **other** bonds touching `b` only.
+   101	
+   102	Combining 1-4 with the supplied derivative fact, `f(t) := [τ_t(A), B]`
+   103	satisfies the inhomogeneous commutator flow
+   104	
+   105	> `f'(t) = i[H̃(t), f(t)] − i Σ_{b∩X≠∅} [τ_t(A), [τ_t(h_b), B]]`,
+   106	> `H̃(t) := Σ_{b∩X≠∅} τ_t(h_b)`,
+   107	
+   108	because `f'(t) = i[τ_t([H, A]), B] = i Σ_{b∩X≠∅} [[τ_t(h_b), τ_t(A)], B]`
+   109	by (2)-(3), and each summand rearranges by (1) with `P = τ_t(h_b)`,
+   110	`Q = τ_t(A)`, `R = B`.
+   111	
+   112	**G2 (norm-transport lemma; identities gated, finite-sum triangle
+   113	rebuilt).** Let `f' = i[H̃(t), f] + R(t)` with `H̃(t)` self-adjoint,
+   114	and let `V` solve `V' = iH̃V`, `V(0) = 1`. Writing `W := V^†` (so
+   115	`W' = −iWH̃`, valid since `H̃^† = H̃`):
+   116	
+   117	- *Unitarity is preserved:* `d/dt(WV) = W'V + WV' = −iWH̃V + iWH̃V = 0`
+   118	  (gated symbolically), so `V(t)` stays unitary.
+   119	- *Intertwiner:* `d/dt(W f V) = W' f V + W f' V + W f V' = W R V`
+   120	  (gated symbolically — the commutator part cancels exactly).
+   121	- Integrating **for `t ≥ 0`**, `W(t) f(t) V(t) = f(0) + ∫_0^t W R V ds`.
+   122	  Unitary invariance of the operator norm (gated at a rational
+   123	  orthogonal instance: conjugation preserves the spectrum of `M^†M`)
+   124	  and the triangle inequality for integrals give
+   125	
+   126	  > `||f(t)|| ≤ ||f(0)|| + ∫_0^{t} ||R(s)|| ds`  (`t ≥ 0`).
+   127	
+   128	  Negative times are **not** obtained by substituting `|t|` into this
+   129	  display (that would integrate `R` over the wrong side of `0`);
+   130	  they are obtained by the `H → −H` symmetry: `τ_{−t}^{H} = τ_{t}^{−H}`
+   131	  exactly (gated), the supplied class is invariant under `H → −H` with
+   132	  the same `J`, bonds, and walks, so every bound proved below for
+   133	  `t ≥ 0` holds verbatim for `−H` and therefore yields the `|t|` form
+   134	  of the final theorem. The `G3` instance additionally exhibits the
+   135	  symmetry concretely: its commutator norm is even in `t` (gated).
+   136	
+   137	  The triangle inequality for integrals is used in its rebuilt finite
+   138	  form: for matrices, `||M_1 + M_2 + M_3|| ≤ ||M_1|| + ||M_2|| +
+   139	  ||M_3||` by iterated two-term subadditivity (gated at an exact
+   140	  instance with a strict-inequality witness); applying it to Riemann
+   141	  sums of the continuous integrand and passing to the limit (supplied
+   142	  context (iii)) yields `||∫ M|| ≤ ∫ ||M||`.
+   143	- The variation-of-constants identity behind this — `g(t) =
+   144	  V(t)(g(0) + ∫_0^t V^† R V ds)V(t)^†` solves `g' = i[H̃, g] + R` — is
+   145	  additionally gated end-to-end at an exact instance with rational
+   146	  spectrum and polynomial inhomogeneity.
+   147	
+   148	**G3 (one-step Duhamel inequality).** Applying G2 to the flow in G1 and
+   149	bounding the inhomogeneity by `||[τ_t(A), [τ_t(h_b), B]]|| ≤ 2||A|| ·
+   150	||[τ_t(h_b), B]||` (unitary invariance `||τ_t(A)|| = ||A||` plus the
+   151	commutator norm bound `||[P, Q]|| ≤ 2||P||·||Q||`, rebuilt in the first
+   152	sibling and re-gated here):
+   153	
+   154	> `||[τ_t(A), B]|| ≤ ||[A, B]|| + 2||A|| Σ_{b∩X≠∅} ∫_0^{t}
+   155	> ||[τ_s(h_b), B]|| ds`  (`t ≥ 0`; negative `t` via the gated
+   156	> `H → −H` symmetry of G2, giving the `|t|` forms below).
+   157	
+   158	Gated on an exact stationary-bond instance: `Λ` two sites, `H = h =
+   159	J·X_1X_2`, `A = Z_1`, `B = Z_2`. There `[H, h] = 0` so `τ_s(h) = h`
+   160	exactly (gated), the right side is `4J|t|` exactly, and the left side is
+   161	`2|sin(2Jt)|` by the gated conjugation closed form
+   162	`e^{iθX_1X_2} Z_1 e^{−iθX_1X_2} = cos(2θ)Z_1 + sin(2θ)Y_1X_2`; the
+   163	inequality reduces to `|sin x| ≤ |x|` (elementary: `cos ≤ 1`
+   164	integrated; gated at exact instances `x = 1/2, 1, 3`).
+   165	
+   166	**G4 (iteration = walk expansion).** The iteration does **not** reuse
+   167	G3's display verbatim with `A → h_b` (that display's sum includes the
+   168	bond itself). Instead the derivation is re-run for `f_b(s) :=
+   169	[τ_s(h_b), B]`, dropping the self term **before** the Jacobi step:
+   170	`[H, h_b] = Σ_{b'∩b≠∅, b'≠b} [h_{b'}, h_b]` by G1.3 **and** G1.4
+   171	(`[h_b, h_b] = 0`, gated with the reduced instance
+   172	`[H, h_12] = [h_23, h_12]`), so the flow is
+   173	
+   174	> `f_b'(s) = i[H̃_b(s), f_b(s)] − i Σ_{b'∩b≠∅, b'≠b}
+   175	> [τ_s(h_b), [τ_s(h_{b'}), B]]`,
+   176	> `H̃_b(s) := Σ_{b'∩b≠∅, b'≠b} τ_s(h_{b'})`,
+   177	
+   178	and G2 applies to it exactly as before. The new sum therefore runs over
+   179	bonds `b'` adjacent to `b` (`b' ∩ b ≠ ∅`, `b' ≠ b`) — the **previous
+   180	bond only**, not the accumulated support. No self-drop is used at the
+   181	first step, where `A` is generic and the sum over all `n_X` touching
+   182	bonds stands. Unrolling to depth `K` and
+   183	bounding every leftover integrand by the a priori bound
+   184	`||[τ_s(h_{b'}), B]|| ≤ 2J||B||` (G3's commutator bound plus
+   185	`||τ_s(h)|| = ||h||`):
+   186	
+   187	> `||[τ_t(A), B]|| ≤ ||[A, B]|| + 2||A|| Σ_{k=1}^{K} (2J)^{k−1}
+   188	> Σ_{w∈𝒲_k} ||[h_{b_k}, B]|| · |t|^k/k! + ρ_K`,
+   189	
+   190	where `𝒲_k` is the set of walks `w = (b_1, …, b_k)` with `b_1 ∩ X ≠ ∅`,
+   191	`b_{j+1} ∩ b_j ≠ ∅`, `b_{j+1} ≠ b_j`, the iterated integrals
+   192	`∫_0^{|t|}∫_0^{s_1}···ds = |t|^k/k!` are exact (gated at `k = 3`), and
+   193	
+   194	> `ρ_K ≤ 2||A|| (2J)^K |𝒲_{K+1}| · 2J||B|| · |t|^{K+1}/(K+1)! → 0`
+   195	
+   196	as `K → ∞` for every fixed `t` (geometric-over-factorial; ratio gated).
+   197	The depth-2 assembly is additionally gated as an exact algebraic
+   198	identity, and the monotonicity step (integrating a pointwise-smaller
+   199	polynomial majorant) is gated on an exact instance. By G1.3, the base
+   200	term `||[h_{b_k}, B]||` vanishes unless `b_k ∩ Y ≠ ∅` and is otherwise
+   201	`≤ 2J||B||`; and `||[A, B]|| = 0` since `d ≥ 1` gives disjoint supports.
+   202	
+   203	**G5 (exact walk combinatorics on `Z^3`).** All enumerated exactly:
+   204	
+   205	- Bonds incident to one site: exactly `6`, so `n_X ≤ 6|X|`.
+   206	- Bond-adjacency degree: every bond of `Z^3` has exactly `10` adjacent
+   207	  bonds (`6 + 6 − 2`), enumerated and box-stable (two box sizes).
+   208	- Walk counts: `|𝒲_k| ≤ n_X · 10^{k−1}` — first bond at most `n_X`
+   209	  choices, each later bond at most `10`. Exact instances: for
+   210	  single-site `X`, `|𝒲_2| = 60 = 6·10` exactly, and each start bond
+   211	  admits exactly `100 = 10^2` length-3 continuations (a length-`k` walk
+   212	  has `k − 1` adjacency steps).
+   213	- Reach lemma: the sites of `b_j` lie within `Z^3`-distance `j` of `X`
+   214	  (induction: `b_1` touches `X`; each next bond shares a site with the
+   215	  previous one), so a walk with `b_k ∩ Y ≠ ∅` needs `k ≥ d`. Sharp at
+   216	  the gated `d = 3` instance: no walk of length `≤ 2` touches `Y`, and
+   217	  a length-3 walk does. Walks in `E(Λ)` are walks in `E(Z^3)` and the
+   218	  `Z^3` distance lower-bounds the induced distance, so both the count
+   219	  and the reach constraint transfer conservatively to every `Λ`.
+   220	
+   221	**G6 (theorem: all-time volume-uniform Lieb-Robinson bound).** Under
+   222	the standing hypothesis `X ∩ Y = ∅` (`d ≥ 1`), feeding
+   223	G5 into G4 and using the coefficient identity `(2J)^k · n_X · 10^{k−1}
+   224	= (n_X/10)(20J)^k` (gated symbolically):
+   225	
+   226	> `||[τ_t(A), B]|| ≤ 2||A|| ||B|| (n_X/10) Σ_{k≥d} (20J|t|)^k / k!`
+   227	> `≤ 2||A|| ||B|| (n_X/10) · ((20J|t|)^d / d!) · e^{20J|t|}`,
+   228	
+   229	for all `t` and every finite `Λ`, with constants depending only on
+   230	`||A||`, `||B||`, `n_X ≤ 6|X|`, `J`, and `d` — **not** on `|Λ|`. The
+   231	tail lemma `Σ_{k≥d} x^k/k! ≤ (x^d/d!)e^x` is re-derived from
+   232	`d!/k! ≤ 1/(k−d)!` (binomial `≥ 1`; the first sibling's mechanism,
+   233	re-gated with an exact partial-sum instance). Cone readout, stated at two strengths with `x := 20J|t|` (the
+   234	**walk-series activity scale** — deliberately not called a velocity):
+   235	
+   236	- *Monotone decrease:* once `d > x` the successive-term ratio
+   237	  `x/(d+1) < 1` (gated), so the majorant decreases as `d` grows. This
+   238	  alone is **not** an exponential-decay statement — at `d` slightly
+   239	  above `x` the majorant is still enormous.
+   240	- *Exponential form (review-lens contribution, adopted):* reweighting
+   241	  the tail termwise by `x^k/k! = e^{−μk}(xe^μ)^k/k!` (identity gated
+   242	  symbolically) and using `e^{−μk} ≤ e^{−μd}` for `k ≥ d` (reduces to
+   243	  the exponent comparison `μk ≥ μd`, gated symbolically, plus
+   244	  monotonicity of `exp` — declared context, gated at exact instances)
+   245	  gives, for every `μ > 0`,
+   246	
+   247	  > `Σ_{k≥d} x^k/k! ≤ e^{−μd + x e^μ}`,
+   248	
+   249	  so the bound decays exponentially in `d` at fixed `t`, with the
+   250	  `μ = 1` readout: decay `e^{−d}` once `d > e·x`, i.e. a
+   251	  Lieb-Robinson-type velocity bound `v ≤ 20eJ` in site units. An
+   252	  explicit large-`d` smallness certificate is also gated in exact
+   253	  integer arithmetic (`e < 3`, so at `J = 1`, `t = 10`, `d = 800` the
+   254	  tail factor obeys `3^200 · 200^800/800! < 10^{−40}`).
+   255	
+   256	Neither `20J` nor `20eJ` is claimed sharp.
+   257	
+   258	**G7 (strict-extension exhibits against the siblings' certificates,
+   259	exact).** Neither sibling is contradicted; both certificates are
+   260	strictly extended, and both facts are gated:
+   261	
+   262	- Block01's all-time constant is region-level — its note says the
+   263	  constant `c = 2J·|E(Λ)|` grows with the region (needled); G6's
+   264	  constant is free of `|E(Λ)|`.
+   265	- Block02's certified window at the instance `J_* = 1`, `m = 1`,
+   266	  `d = 6` is `|t| < 7/84 = 1/12` (value gated), while G6 is finite at
+   267	  `t = 10` — and nontrivially small there for suitable `d` (the G6
+   268	  large-`d` certificate above). Block02's per-coefficient bounds remain
+   269	  the coefficient-level statement this note does not reproduce; this
+   270	  note's bound is the broader **time-domain** function-level statement
+   271	  (no claim is made that it is numerically smaller inside block02's
+   272	  window).
+   273	
+   274	## No-Go Discipline Gate
+   275	
+   276	- **N1 route inventory.** Against "the walk expansion might still be
+   277	  volume-dependent": (1) the propagator `V(t)` involves all of `H` —
+   278	  ATTEMPTED: it enters only through unitary invariance of the norm,
+   279	  which is volume-blind; gated via the intertwiner identity; (2) the
+   280	  walk count might secretly depend on `Λ` — ATTEMPTED: walks in `E(Λ)`
+   281	  inject into walks in `E(Z^3)` and the count is gated on `Z^3`; (3)
+   282	  the base terms might reintroduce `|E(Λ)|` — ATTEMPTED: each base term
+   283	  is a single bond against `B`, bounded by `2J||B||`, with the
+   284	  `Y`-touching constraint gated; (4) the remainder might diverge —
+   285	  ATTEMPTED: geometric-over-factorial, gated symbolically past the
+   286	  threshold and at an instance; (5) degenerate cases — ATTEMPTED:
+   287	  `d = 0` is excluded by hypothesis and the runner gates an exact
+   288	  counterexample showing the exclusion is necessary (at `d = 0` the
+   289	  right side can fall below `||[A, B]||`); at `J = 0` every `h_b = 0`,
+   290	  so `τ_t = id` and `[A, B] = 0` by disjoint supports while the bound's
+   291	  right side is also `0` — consistent, covered by the disjointness
+   292	  gate; negative `t` — ATTEMPTED: handled by the gated `H → −H`
+   293	  symmetry, never by substituting `|t|` into the directed-time lemma.
+   294	- **N2 hypothesis independence.** The supplied hypotheses are
+   295	  independent in the standard sense: bond-locality (used in G1.3),
+   296	  Hermiticity of `h_b` (used only through `H̃(t)^† = H̃(t)` in G2),
+   297	  the norm bound `J` (used only in G4's majorization), and `d ≥ 1`
+   298	  (used only to kill `||[A, B]||` and set the series start) enter at
+   299	  disjoint proof steps; dropping any one breaks exactly the step named,
+   300	  as the runner's mutation battery exhibits gate-by-gate. The Duhamel
+   301	  mechanism (this note) and block02's coefficient mechanism are
+   302	  different expansions of the same object; neither implies the other —
+   303	  the walk reorganization happens **before** taking coefficients (the
+   304	  `k`-th walk term is not the `k`-th Taylor coefficient).
+   305	- **N3 hidden-wall scan.** The load-bearing conditions are all
+   306	  declared in Hypotheses: `d ≥ 1` (explicit, with the necessity
+   307	  exhibit), Hermitian bond terms, exponential calculus (siblings'
+   308	  declared class), time-ordered propagator existence (finite linear
+   309	  ODE), and the Riemann limit passage. Each is named where used; every
+   310	  load-bearing algebraic identity is gated; instance-level gates are
+   311	  described as instances (Verification). The `sin x ≤ x` step in the
+   312	  G3 instance gate is elementary and gated at exact instances.
+   313	- **N4 dependency roles, per citation.**
+   314	  - Block01 (sibling): supplies the class declaration (Hermitian bond
+   315	    terms, `J`), the L1a disjoint-factor mechanism (re-gated at G1c),
+   316	    the commutator norm bound (rebuilt there, re-gated at G3b), and
+   317	    the tail-domination mechanism (re-derived at G6b). Residual: none —
+   318	    each supplied fact is re-gated here.
+   319	  - Block02 (sibling): supplies the naming of this task (needled at N3
+   320	    of the runner) and the window certificate compared in G7 (value
+   321	    re-gated). Residual: none load-bearing.
+   322	  - `minimal_axioms`: supplies the no-dynamics boundary needle only.
+   323	  - Lieb-Robinson/Nachtergaele-Sims literature line: comparator class
+   324	    only — no cited statement is load-bearing; the recursion is
+   325	    rebuilt from gated identities in G1-G4.
+   326	- **N5 rhetoric audit.** "All-time volume-uniform" is claimed for the
+   327	  stated bound on the stated class; `20J` is named an activity scale,
+   328	  not a velocity; the velocity-type readout is the `μ`-bound's `20eJ`,
+   329	  stated with "not claimed sharp"; no physical velocity, propagation,
+   330	  or dynamics-selection claim is made.
+   331	- **N6 partial-closure scan.** Closed here: the walk reorganization —
+   332	  the family's named open task — at the Hamiltonian level. Still open,
+   333	  named: the sharp rate (optimizing `20J`/`20eJ`), the
+   334	  `U`-integrated/tick-level statement, and the fermionic transfer
+   335	  bridge. Nothing here forecloses them.
+   336	- **N7 steelman (strongest counterarguments found in review, answered
+   337	  in text).** (a) "The theorem fails at `d = 0`" — correct as an attack
+   338	  on an unhypothesized statement; the hypothesis `d ≥ 1` is now
+   339	  explicit and the runner gates the exact `d = 0` counterexample as an
+   340	  exclusion-necessity exhibit. (b) "The norm-transport display is false
+   341	  for `t < 0`" — correct against a naive `|t|` substitution; the lemma
+   342	  is directed-time and negative times go through the gated `H → −H`
+   343	  symmetry. (c) "The term-ratio argument is not exponential decay" —
+   344	  correct; the exponential statement is the separate `μ`-reweighted
+   345	  bound, adopted from the review lens and gated. (d) "The bound is
+   346	  astronomically large at `20J|t| ≫ d`" — inside the cone no decay is
+   347	  claimed; `2||A||||B||` is already the trivial bound there; the
+   348	  content is volume-uniformity at every `t` plus the outside-cone
+   349	  decay, both gated.
+   350	- **N8 prior-wall echo.** Searched the family and the cited CT note
+   351	  for prior walls this note might silently cross: block01's "explicitly
+   352	  NOT a volume-uniform velocity statement" wall is the one this note
+   353	  crosses **openly** — that wall was a scope marker on its own
+   354	  region-level constant, not a no-go, and its note names the
+   355	  interaction-path argument as the intended route (needled at G7a).
+   356	  The CT note's `U`-integrated and sharp-rate walls are untouched and
+   357	  remain open. No landed no-go forbids this bound; the family's
+   358	  exhibit-pair discipline (bound gated at a reaching instance,
+   359	  non-equality exhibited elsewhere) is repeated via G3's stationary
+   360	  bond and block02's parity exhibits.
+   361	
+   362	**Status: PASS** (all eight items answered above; the three review
+   363	blockers and the cone-rate major are repaired in text and gated).
+   364	
+   365	## Non-Claims
+   366	
+   367	- Does **not** claim the scale `20J` or the readout `20eJ` is sharp,
+   368	  and does **not** supply the `U`-integrated statement, the fermionic
+   369	  transfer bridge, or any physical velocity.
+   370	- Does **not** cover `d = 0` (overlapping supports) — excluded by
+   371	  hypothesis, with the necessity of the exclusion gated.
+   372	- Does **not** claim numerical smallness inside the cone, nor that this
+   373	  bound is numerically smaller than block02's inside its window.
+   374	- Does **not** replace block02's per-coefficient bounds (they are
+   375	  coefficient-level statements this note does not reproduce).
+   376	- Does **not** select dynamics; the axioms supply none (needled).
+   377	- Does **not** set an audit verdict; independent audit remains required.
+   378	
+   379	## Verification
+   380	
+   381	Primary runner:
+   382	[`scripts/microcausality_all_time_volume_uniform_walk_expansion_2026_07_18.py`](../scripts/microcausality_all_time_volume_uniform_walk_expansion_2026_07_18.py)
+   383	— sympy-exact and enumeration-exact throughout. Gates are of two
+   384	honestly-distinguished kinds: **symbolic identity gates** (Jacobi,
+   385	conjugation, intertwiner, unitarity, coefficient assembly, μ-reweighting
+   386	identity, remainder-ratio threshold — proved for the displayed symbols)
+   387	and **exact instance gates** (variation-of-constants at a rational
+   388	spectrum, triangle-inequality witness, stationary-bond closed forms,
+   389	walk enumerations, tail and certificate arithmetic — exact at the named
+   390	instances, supporting the written proof text rather than replacing it).
+   391	The runner prints one `PASS`/`FAIL` line per gate and a final total; the
+   392	cached transcript is committed at the path in the header at landing
+   393	time.
+
+codex
+The first-pass geometry checks out analytically: the full-lattice counts are \(6,12,10,20,20,32\), the weighted two-term count is \(6\cdot30+12\cdot52=804\), and the maximal reach is \(2k\). I’m now stress-testing whether the proof and runner actually establish the stated universality, especially single-site relabeling, gauge regrouping, and the inherited recursion.
+exec
+/bin/zsh -lc 'nl -ba docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md
+nl -ba /Users/jonBridger/.codex/skills/audit-loop/references/nature-grade-rubric.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	# Gauged Fixed-Background Quasilocality of the Reconstructed Log-Transfer Hamiltonian, via Combes-Thomas
+     2	
+     3	> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`;
+     4	> each row points to the canonical source-of-truth doc.
+     5	
+     6	**Date:** 2026-06-13
+     7	**Claim type:** bounded_theorem (fixed-background, single-particle sector;
+     8	Combes-Thomas route)
+     9	**Type:** bounded_theorem
+    10	**Status:** unaudited candidate. Graph-visible only so the independent audit lane
+    11	can decide. Inherits the conditional provenance of the reconstruction authorities
+    12	it cites (see Honest status); it does not set or predict an audit outcome.
+    13	**Primary runner:**
+    14	[`scripts/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.py`](../scripts/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.py)
+    15	**Cached runner output:**
+    16	[`logs/runner-cache/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.txt`](../logs/runner-cache/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.txt)
+    17	
+    18	---
+    19	
+    20	## Role
+    21	
+    22	The free (`U = 1`) sector of the microcausality exact-`H` step is closed by
+    23	[`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md):
+    24	the reconstructed single-particle Hamiltonian `h = -log(T_hat^2)/(2 a_tau)` has a
+    25	**sharp** exponential kernel rate `arcsinh(m)`, proved by a Fourier / Paley-Wiener
+    26	torus contour shift. That note declares its open frontier verbatim:
+    27	
+    28	> *"the **gauged / interacting** log-transfer locality: fixed-background
+    29	> `T_hat^2[U]` is not translation-invariant, the Fourier route does not apply
+    30	> verbatim, and the `U`-integrated interacting case is open."*
+    31	
+    32	This note closes the **fixed-background** half of that frontier with the
+    33	translation-invariance-free tool: **Combes-Thomas resolvent decay** plus
+    34	**holomorphic functional calculus**, on a spectral gap that is **uniform over all
+    35	gauge backgrounds**. It does not touch the `U`-integrated dynamical case, which
+    36	remains open.
+    37	
+    38	The expansion-route triage
+    39	[`MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md`](MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md)
+    40	foreclosed the norm-convergent expansion route on the canonical surface and named
+    41	spectral/analyticity as the live route; the free note instantiated it via Fourier.
+    42	This note shows the spectral route survives the loss of translation invariance.
+    43	
+    44	## The object
+    45	
+    46	On a fixed background `U = {U_mu(x)}` of unitary link variables in any compact
+    47	gauge group `G` (here `U(1)` and `SU(2)`), define the covariant shift, covariant
+    48	sine, and total hop
+    49	
+    50	```text
+    51	    (S_mu psi)(x) = U_mu(x) psi(x + e_mu),   S_mu a contraction (unitary on a block),
+    52	    s_mu[U] = (S_mu - S_mu^dag) / (2i),       s_mu = s_mu^dag,
+    53	    D[U]   = m^2 I + ( sum_{mu=1}^d s_mu[U] )^2 .                            (1)
+    54	```
+    55	
+    56	The reconstructed single-particle Hamiltonian on the fixed background is the
+    57	matrix function
+    58	
+    59	```text
+    60	    h[U] = arcsinh( sqrt( D[U] ) ),                                          (2)
+    61	```
+    62	
+    63	whose eigenvalues are exactly the landed per-config dispersion
+    64	`E_j[U] = arcsinh(sqrt(m^2 + lambda_j(U)^2))`, `lambda_j` the eigenvalues of
+    65	`sum_mu s_mu`, of
+    66	[`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
+    67	and
+    68	[`INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md`](INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md).
+    69	Eq. (1) is the **square-of-sum** radicand `m^2 I + (sum_mu s_mu)^2`, which is the
+    70	landed gauged form; at `d = 1` it is the exact action-derived free dispersion.
+    71	
+    72	**Carrier note.** The free note's *declared* `d >= 2` carrier is instead the
+    73	**sum-of-squares** `D_ss[U] = m^2 I + sum_mu s_mu[U]^2`; it differs from (1) by
+    74	flux cross-terms `sum_{mu != nu} s_mu s_nu` and coincides with (1) at `d = 1`.
+    75	Both carriers satisfy the Combes-Thomas hypotheses, so the conclusion of this note
+    76	is **carrier-robust** (Theorem G9). We take the action-faithful square-of-sum as
+    77	primary because it is the operator the landed reconstruction actually produces.
+    78	
+    79	## Statement
+    80	
+    81	Throughout, `m > 0`, `||.||_inf` is the sup metric, and "uniform in `U`" means the
+    82	constant is the same for every fixed background of unitary links (every flux /
+    83	holonomy) and every volume.
+    84	
+    85	**(G1) Uniform spectral containment.** Each `S_mu` is a contraction
+    86	(`||S_mu|| <= 1`), so `s_mu = s_mu^dag` with `||s_mu|| <= 1`, hence
+    87	`||sum_mu s_mu|| <= d` and `(sum_mu s_mu)^2 >= 0`. Therefore
+    88	
+    89	```text
+    90	    m^2 I  <=  D[U]  <=  (m^2 + d^2) I ,    i.e.  spec(D[U]) subset [m^2, m^2 + d^2],   (3)
+    91	```
+    92	
+    93	uniformly in `U` and volume, with `dist(spec(D[U]), (-inf, 0]) = m^2 > 0`. No
+    94	Fourier / translation invariance is used. (For the sum-of-squares carrier the
+    95	ceiling tightens to `m^2 + d`.)
+    96	
+    97	**(G2) Finite range, gauge-independent envelope.** Because `S_mu S_mu^dag = I`, the
+    98	range-1 piece of `s_mu^2` cancels, so `D[U]` is **exactly range 2** in `||.||_inf`
+    99	inside a support envelope that does not depend on `U`. The axial range-2 entries
+   100	have gauge-independent magnitude (`|D[x, x+-2 e_mu]| = 1/4`); flux can change or
+   101	cancel individual cross-term coefficients inside the envelope.
+   102	
+   103	**(G3) Holomorphic functional calculus, uniform.**
+   104	`f(w) = arcsinh(sqrt(w)) = log(sqrt(w) + sqrt(w + 1))` is holomorphic and
+   105	single-valued on `C \ (-inf, 0]` (all branch points of `sqrt` and of `arcsinh`
+   106	at `w = -1` lie on the cut). Since `spec(D[U])` sits at distance `m^2 > 0` from the
+   107	cut for every `U`, the Riesz-Dunford integral
+   108	
+   109	```text
+   110	    h[U] = (2 pi i)^{-1} oint_Gamma f(w) (w - D[U])^{-1} dw                  (4)
+   111	```
+   112	
+   113	defines `h[U]` on a contour `Gamma` that hugs `[m^2, m^2 + d^2]` at distance
+   114	`m^2/2`, staying strictly in `Re w > 0` with finite `sup_Gamma |f|` and finite
+   115	length. The gap `m^2 > 0` is load-bearing: a circle of radius `>= m^2 + d^2/2`
+   116	would cross the cut and the calculus fails.
+   117	
+   118	**(G4) Combes-Thomas resolvent bound (reproved).** Let `A = A^*` be finite range
+   119	`R` in `||.||_inf` with `||A|| <= K`, and `dist(z, spec A) = eta > 0`. Fix a unit
+   120	coordinate direction `u` and the diagonal twist `M_lambda = diag e^{lambda <u, x>}`.
+   121	By the band decomposition `A = sum_{||r||_inf <= R} A_r` with
+   122	`A_r = (2 pi)^{-d} int e^{-i<theta, r>} V_theta A V_theta^* d theta`
+   123	(`V_theta = diag e^{i<theta, x>}` unitary), each band obeys `||A_r|| <= ||A|| <= K`,
+   124	so
+   125	
+   126	```text
+   127	    || M_lambda A M_lambda^{-1} - A ||  <=  K sum_{0 < ||r||_inf <= R} |e^{lambda <u, r>} - 1|
+   128	                                        <=  e K lambda * B(R, d)   (lambda R <= 1),     (5)
+   129	    B(R, d) = sum_{0 < ||r||_inf <= R} |<u, r>| = (2R+1)^{d-1} R(R+1) ,
+   130	```
+   131	
+   132	using `|e^t - 1| <= e |t|` for `|t| <= 1`. The band-count `B(R, d)` is
+   133	**dimension-aware** (e.g. `B(2,1) = 6`, `B(2,2) = 30`; enumerated in the runner) —
+   134	it is *not* the dimension-blind `2R`. Choosing
+   135	`gamma = min(1/R, eta / (2 e K B(R, d)))` gives `||A_gamma - A|| <= eta/2`, so
+   136	by Neumann series `||(A_gamma - z)^{-1}|| <= 2/eta`, and undoing the similarity
+   137	
+   138	```text
+   139	    | <x| (A - z)^{-1} |y> |  <=  (2/eta) e^{-gamma ||x - y||_inf} ,         (6)
+   140	```
+   141	
+   142	with `2/eta` and `gamma` depending **only** on `(R, K, eta, d)`. (We use the rigorous
+   143	band-sum / Schur envelope (5), not the non-contraction `(e^{lambda R} - 1)||A||`
+   144	form.) The unbounded position ramp `M_lambda = diag e^{lambda <u, x>}` is the
+   145	open / infinite-lattice statement; on a finite periodic torus the wrap-around bond
+   146	violates (5) literally, but the kernel decay it controls is supplied by the *same*
+   147	uniform gap, which is what the runner measures directly on torus kernels (G4, G6,
+   148	G7) and on an open chain for the twist bound (G3).
+   149	
+   150	**(G5) Gauged uniform quasilocality (main result).** Combining (G3) and (G4) with
+   151	`R = 2`, `K = m^2 + d^2`, and resolvent gap `eta = m^2/2` on `Gamma`,
+   152	
+   153	```text
+   154	    || <x| h[U] |y> ||  <=  Const(m, d) e^{-gamma_CT ||x - y||_inf} ,        (7)
+   155	    gamma_CT = min(1/2, (m^2/2) / (2 e (m^2 + d^2) B(2, d))) > 0 ,   B(2, d) = 5^{d-1} * 6 ,
+   156	```
+   157	
+   158	with `Const(m, d) = (|Gamma|/2 pi) (sup_Gamma|f|) (2/eta)` finite, and **both
+   159	`gamma_CT` and `Const` independent of the background `U` and of the volume**. So
+   160	`h[U]` is quasilocal on every fixed background with a single background-independent
+   161	rate. `h[U]` is **not** finite-range (the free note proved the same at `U = 1`);
+   162	`D[U]` is finite-range, `h[U]` is quasilocal — distinct objects.
+   163	
+   164	**(G6) Gauge covariance of the kernel.** Under
+   165	`U_mu(x) -> g(x) U_mu(x) g(x + e_mu)^dag`, `S_mu -> G S_mu G^dag` with `G = diag(g)`
+   166	unitary, so `D[U^g] = G D[U] G^dag` and (spectral calculus) `h[U^g] = G h[U] G^dag`
+   167	exactly. Hence the kernel block `<x| h[U] |y>` transforms by left/right unitaries
+   168	and its **unitarily-invariant block norm `|| <x| h[U] |y> ||` is exactly
+   169	gauge-invariant**; for abelian `G` this is the scalar `| <x| h[U] |y> |`. The decay
+   170	rate is therefore a gauge-invariant datum.
+   171	
+   172	**(G7) `U = 1` / `d = 1` reduction.** At `U = 1` (or any `d = 1` background) the
+   173	symbol of `D` is `m^2 + sin^2 p` and `h` recovers the landed free dispersion
+   174	`arcsinh(sqrt(m^2 + sin^2 p))` exactly, with measured kernel rate `arcsinh(m)`. The
+   175	runner's `d = 1` rate is extracted by a **joint two-parameter fit** of both the
+   176	exponential rate and the prefactor exponent; it recovers the rate to `0.18%` of
+   177	`arcsinh(m)` **and** the prefactor exponent `1.56 ~ 3/2` — the square-root
+   178	branch-point asymptotic `|h(n)| ~ n^{-3/2} e^{-arcsinh(m) n}` already established by
+   179	the free note's T5, here *recovered from the data*, not imported as a tuned input.
+   180	The Combes-Thomas lower rate satisfies `gamma_CT <= arcsinh(m)` for all `m > 0`,
+   181	consistent with — and never claiming to reproduce — the **sharp** free rate.
+   182	`gamma_CT` is a **lower bound** on the true gauged rate and is generically not
+   183	sharp; the true gauged rate is background-dependent and can **exceed** `arcsinh(m)`
+   184	(measured `~0.9-1.1` on random 2D flux).
+   185	
+   186	**(G9) Carrier robustness.** The sum-of-squares carrier
+   187	`D_ss = m^2 I + sum_mu s_mu^2` (the free note's declared `d >= 2` carrier) is also
+   188	range 2 with `spec(D_ss) subset [m^2, m^2 + d]` and gap `m^2`, so (G4)-(G5) give
+   189	the same quasilocality conclusion. Thus the gauged-quasilocality result does not
+   190	depend on the `d >= 2` carrier choice; only the constants (`d^2` vs `d` ceiling)
+   191	and the parity structure differ.
+   192	
+   193	## Parity Boundary
+   194	
+   195	In `d = 1` (both carriers) and for the sum-of-squares carrier in any `d`, `D` and
+   196	hence `h` hop on the **even sublattice** (`h(z) = 0` unless every component of `z`
+   197	is even), preserved on every background — flux changes coefficients, not the parity
+   198	support. The **action-faithful square-of-sum** carrier does **not** have strict
+   199	even-sublattice parity as a universal carrier identity in `d >= 2`: the cross-terms
+   200	`s_mu s_nu` (`mu != nu`) open nearest diagonal channels at offsets
+   201	`(+-1, +-1, ...)` (measured magnitude `~5e-1` on the tested background, far above
+   202	any floor). This is stated, not hidden; it does not affect (G5), which only uses
+   203	range and gap.
+   204	
+   205	## Proof sketch
+   206	
+   207	(G1) operator monotonicity from `0 <= s_mu^2 <= I` and `(sum s_mu)^2 >= 0`, summed
+   208	over `d` directions; (G2) the cancellation `s_mu^2 = -(S_mu^2 - 2I + S_mu^{dag 2})/4`
+   209	removes the range-1 part, leaving offsets `{0, +-2 e_mu}` (plus `{+-e_mu +- e_nu}`
+   210	cross-terms for the square-of-sum, still `||.||_inf`-range 2); (G3) principal-branch
+   211	composition and the contour-distance bound; (G4) the band-decomposition Combes-Thomas
+   212	estimate with the dimension-aware band constant `B(R, d) = (2R+1)^{d-1} R(R+1)`
+   213	(eq. (5)); (G5) assembling (4) with (6) and bounding `|f|`, `|Gamma|`, `2/eta`;
+   214	(G6) direct conjugation through the spectral calculus; (G7) the `d = 1` symbol
+   215	identity and `gamma_CT <= arcsinh(m)`.
+   216	
+   217	**What the runner does (and does not) reprove.** The runner reproves a *numerical*
+   218	Schur row-sum twist bound on an explicit open chain (G3, `alpha* ~ 0.022`) and
+   219	verifies the closed-form band constant `B(R, d)` by enumeration; it confirms that
+   220	the closed-form `gamma_CT` of (7) is a valid *conservative lower bound* on the
+   221	independently measured resolvent and kernel decay rates (it is not sharp). It also
+   222	verifies the Riesz-Dunford contour integral reproduces `h[U]` (G2), the uniform gap
+   223	floor `m^2` and ceiling `m^2 + d^2` (G1), the `arcsinh(m)` reduction (G7), and the
+   224	exact gauge-invariance (G5) to machine precision. It does **not** symbolically
+   225	reprove the closed-form CT envelope (5)-(7); that is the in-note analytic step, and
+   226	(5) is corrected here to the dimension-aware form.
+   227	
+   228	## Hypothesis set used
+   229	
+   230	- **Compact gauge group / unitary links** — `S_mu` a contraction
+   231	  (`||S_mu|| <= 1`); load-bearing for (G1) `||s_mu|| <= 1` and the uniform gap.
+   232	  Reproved in-runner from `S_mu S_mu^dag = I` (eigenvalues on the unit circle =>
+   233	  `Im in [-1, 1]`); not asserted.
+   234	- **Mass gap `m > 0`** — load-bearing for the gap `m^2` to the holomorphy cut;
+   235	  at `m = 0` the kernel is a power law (F1).
+   236	- **The reconstruction object** — that `h[U] = arcsinh(sqrt(D[U]))` with the
+   237	  square-of-sum radicand (1) is the per-config reconstructed single-particle
+   238	  Hamiltonian: cited from `RP_P2_GAUGE_EXTENSION...2026-05-28` and
+   239	  `INTERACTING_TRANSFER_MATTER_GAP...2026-05-30` (both `audited_conditional`),
+   240	  whose `E_j[U] = arcsinh(sqrt(m^2 + lambda_j^2))` this note covariantizes
+   241	  operatorially. The `d >= 2` carrier choice is declared (square-of-sum primary,
+   242	  sum-of-squares robustness), exactly as the free note declares its `d >= 2`
+   243	  carrier.
+   244	- **Per-site commuting-mode / block-kernel convention** — from
+   245	  `HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02` (same convention as the
+   246	  free note); blocked-time normalization from
+   247	  `AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29` (unaudited; inherited
+   248	  conditionality).
+   249	- **Proof-technique provenance (cited as method, reproved in-note, NOT a
+   250	  derivation input):** Combes-Thomas resolvent decay (Combes-Thomas 1973) and
+   251	  Riesz-Dunford holomorphic functional calculus. The repo's own
+   252	  `OBSERVABLE_PRINCIPLE_P1_BRIDGE_LOCALITY_OF_SOURCE_DERIVATIVES_NARROW_NOTE_2026-05-21`
+   253	  already records that "Combes-Thomas does not derive locality as a primitive; it
+   254	  characterizes the resolvent decay rate" — the same discipline applies here.
+   255	- **No fitted parameters, no observed values, no empirical comparators.** Inputs
+   256	  are `m`, `d`, and the fixed background `U`.
+   257	
+   258	## No-Go Discipline Gate (parity boundary only)
+   259	
+   260	**Status: PASS for the scoped parity boundary only.** The negative is not that
+   261	gauged log-transfer locality fails — it is proved (G5). It is only that strict
+   262	component-even sublattice parity is not a universal identity of the
+   263	action-faithful square-of-sum carrier in `d >= 2`.
+   264	
+   265	- **N1 alternative routes.** Five distinct rescue routes were checked or scoped
+   266	  away. (1) `d = 1` preserves strict even parity, but that is outside the `d >= 2`
+   267	  square-of-sum boundary. (2) The sum-of-squares carrier preserves strict even
+   268	  parity, but it is a different carrier; G9 keeps locality carrier-robust while
+   269	  not transferring parity. (3) Gauge transformation cannot remove a nonzero odd
+   270	  block norm because G6 gives unitary covariance of the kernel blocks. (4) Flux
+   271	  cancellation can erase individual cross-term coefficients, so the claim is not
+   272	  phrased as "every background breaks parity"; it is only that strict parity is not
+   273	  a universal carrier identity. (5) Replacing strict component-even parity with a
+   274	  different parity notion, such as checkerboard parity, changes the predicate and
+   275	  is not the free/sum-of-squares parity statement compared here.
+   276	- **N2 wall independence.** One scoped boundary: strict component-even parity for
+   277	  the square-of-sum carrier in `d >= 2`. The `U`-integrated, many-body, and
+   278	  sharp-rate problems are separate open tasks, not walls claimed here.
+   279	- **N3 hidden-wall scan.** The `d >= 2` carrier is declared (both forms), not
+   280	  imported as a retained theorem; the CT and contour steps are reproved in-note.
+   281	  "Background" means a supplied fixed unitary-link configuration, not a hidden
+   282	  gauge-measure or dynamical gauge-field claim.
+   283	- **N4 residual matching.** No prior no-go witness is used for the parity boundary.
+   284	  The free note's named residual is fixed-background gauged quasilocality, which
+   285	  this note addresses by (G5), not by the parity boundary.
+   286	- **N5 rhetoric audit.** The only negative predicate is strict component-even
+   287	  sublattice parity of the square-of-sum carrier. The note does not claim failure
+   288	  of all parity notions, finite-range locality, quasilocality, gauge covariance, or
+   289	  sum-of-squares parity.
+   290	- **N6 partial-closure path.** Parity can be restored by choosing the
+   291	  sum-of-squares carrier or by changing the parity predicate, but those are
+   292	  carrier/predicate changes, not derivations of strict parity for the
+   293	  action-faithful square-of-sum carrier. No new axiom, primitive, or Tier-A
+   294	  admission is requested.
+   295	- **N7 steelman.** A hostile reviewer can object that a different parity notion or
+   296	  the sum-of-squares carrier remains useful. This is correct and is why the note
+   297	  isolates parity as a carrier-dependent boundary while keeping the quasilocality
+   298	  theorem carrier-robust.
+   299	- **N8 cross-cycle echo.** Similar prior overclaims confused finite range, exact
+   300	  parity, and quasilocal tails. This note separates them: `D[U]` is finite-range,
+   301	  `h[U]` is quasilocal, and strict component-even parity is carrier-dependent.
+   302	
+   303	## What this rules out / does not claim
+   304	
+   305	**Shows (not open at the fixed-background single-particle level).** Fixed-background
+   306	gauged log-transfer locality is not rate-unknown: `h[U]` is quasilocal with a
+   307	background-independent exponential rate `gamma_CT > 0`, and the kernel block norm is
+   308	exactly gauge-invariant. The "BCH commutators destroy locality" worry is answered on
+   309	every fixed background, not just `U = 1`. (This note carries Status = unaudited
+   310	candidate; "shows" is a source-side claim, not an audit-ratified closure.)
+   311	
+   312	**Does not claim.** (i) The `U`-integrated / dynamical gauge-measure case — the
+   313	fixed-`U` resolvent bound does not control gauge-field correlations; **open**.
+   314	(ii) A **sharp** gauged rate — `gamma_CT` is a lower bound only. (iii) The full
+   315	**many-body fermionic** transfer-matrix locality or a **Lieb-Robinson lightcone** —
+   316	that needs the separate quasilocal-LR composition step (the free note's item 3),
+   317	still a separate theorem. (iv) Continuum limit, OS reconstruction, or any audit
+   318	status. (v) Retained-grade status: the reconstruction authorities cited are
+   319	`audited_conditional` / unaudited, so this note inherits conditional status.
+   320	
+   321	## Runner and cache
+   322	
+   323	```bash
+   324	python3 scripts/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.py
+   325	```
+   326	
+   327	Deterministic (seeded `U(1)` and `SU(2)` backgrounds), runtime a few minutes.
+   328	Checks: object sanity (G0), uniform gap (G1), contour (G2), Combes-Thomas
+   329	reproved + measured (G3), kernel quasilocality 1D/2D (G4), abelian and non-abelian
+   330	gauge-invariance (G5), uniform rate over a `U(1)+SU(2)` ensemble (G6), `d = 1`
+   331	reduction to `arcsinh(m)` (G7), parity (G8), carrier robustness (G9), and
+   332	falsification legs `m = 0` (gap) and long-range (finite range). Runner cache:
+   333	[`logs/runner-cache/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.txt`](../logs/runner-cache/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.txt)
+   334	(PASS=36, FAIL=0).
+   335	
+   336	## Citations
+   337	
+   338	- [`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md)
+   339	  — the free (`U = 1`) anchor this note extends, and its named open frontier
+   340	  (context/target, not an upstream premise).
+   341	- [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
+   342	  (`audited_conditional`) — per-config dispersion
+   343	  `E_j[U] = arcsinh(sqrt(m^2 + lambda_j^2))`; the object (1)-(2) covariantizes this.
+   344	- [`INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md`](INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md)
+   345	  (`audited_conditional`) — the uniform matter-gap floor `arcsinh(m)`; the floor
+   346	  this note's gap `m^2` is consistent with.
+   347	- [`HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md`](HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md)
+   348	  — per-site mode / block-kernel convention.
+   349	- [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
+   350	  — blocked-time normalization (unaudited; inherited conditionality).
+   351	- [`MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md`](MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md)
+   352	  — route triage naming spectral/analyticity live (context only).
+   353	- Proof-technique provenance (no constant imported): Combes-Thomas (1973);
+   354	  Riesz-Dunford holomorphic functional calculus. Reproved in-note (G4/G3).
+   355	
+   356	## Changelog
+   357	
+   358	- **2026-06-13** — initial note. Closes the fixed-background half of the free
+   359	  note's named gauged open frontier: on any fixed compact-group background `U`,
+   360	  the reconstructed single-particle `h[U] = arcsinh(sqrt(m^2 I + (sum_mu s_mu)^2))`
+   361	  is quasilocal with a background- and volume-independent exponential rate
+   362	  `gamma_CT > 0` (Combes-Thomas on the uniform gap `m^2`, finite range 2), the
+   363	  kernel block norm exactly gauge-invariant, reducing to the landed sharp free rate
+   364	  `arcsinh(m)` at `d = 1`. Carrier-robust across the square-of-sum (action-faithful)
+   365	  and sum-of-squares (declared) radicands. Open: `U`-integrated/dynamical case,
+   366	  sharp gauged rate, many-body Lieb-Robinson lightcone, continuum. Runner
+   367	  `PASS=36 FAIL=0`.
+     1	# Nature-Grade Audit Rubric
+     2	
+     3	Use this rubric when writing an audit verdict for the CL3 audit lane.
+     4	
+     5	## Hostile Review Standard
+     6	
+     7	The claim should be able to survive a specialist referee who assumes the result is wrong and looks for:
+     8	
+     9	- hidden imported physics;
+    10	- circular dependence on the target result;
+    11	- definition-as-derivation;
+    12	- selected observable/readout/carrier not forced by retained inputs;
+    13	- unit normalization introduced as if it were a theorem;
+    14	- sector selection chosen because it gives the answer;
+    15	- stale numerical values relative to the runner;
+    16	- matching the wrong observable;
+    17	- runner PASS lines that check consistency after hard-coding the contested premise;
+    18	- algebraic decoration advertised as independent physics.
+    19	
+    20	The burden is on the note. If the closure is not explicit, do not infer it.
+    21	
+    22	## Common P0/P1 Failure Modes
+    23	
+    24	### Physical-Observable Bridge Missing
+    25	
+    26	Symptoms: the note identifies two physical quantities, phases, currents, carriers, source laws, or readouts without a retained theorem constructing the map.
+    27	
+    28	Verdict usually: `audited_conditional` or `audited_renaming`.
+    29	
+    30	Repair target: a theorem deriving the map from retained primitives and a runner that constructs the map rather than setting the output.
+    31	
+    32	### Hard-Coded Runner
+    33	
+    34	Symptoms: runner sets the target value or disputed bridge directly, then marks closure because downstream algebra agrees.
+    35	
+    36	Verdict usually: same as the note's actual failure, often `audited_conditional`, `audited_renaming`, or `audited_failed`.
+    37	
+    38	Repair target: runner must compute the load-bearing object from inputs and fail when the bridge is removed.
+    39	
+    40	### Misidentified Observable
+    41	
+    42	Symptoms: note compares a framework quantity to a different experimental observable or relabels states/indices to get a match.
+    43	
+    44	Verdict usually: `audited_failed`.
+    45	
+    46	Repair target: state the correct observable and redo the prediction/comparator under standard labels.
+    47	
+    48	### Numerical Staleness
+    49	
+    50	Symptoms: headline number disagrees with the formula or current runner output.
+    51	
+    52	Verdict usually: `audited_failed` if the headline claim depends on it; otherwise `audited_conditional`.
+    53	
+    54	Repair target: update note and rerun; if the corrected value weakens the claim, demote accordingly.
+    55	
+    56	### Decoration / Corollary Inflation
+    57	
+    58	Symptoms: exact identity is true but is only an algebraic restatement of an upstream theorem and adds no new comparator, compression, or independent falsifiability.
+    59	
+    60	Verdict usually: `audited_decoration`.
+    61	
+    62	Repair target: box under parent claim or add a real independent physical/comparator surface.
+    63	
+    64	### Tuned Numerical Match
+    65	
+    66	Symptoms: a result works only after choosing a scale, sector, endpoint, source, or parameter because it matches the target.
+    67	
+    68	Verdict usually: `audited_numerical_match` or `audited_conditional`.
+    69	
+    70	Repair target: derive the selection rule independently or present the result as a calibrated scenario.
+    71	
+    72	## Failure Handoff Quality Bar
+    73	
+    74	A non-clean audit is useful only if a physicist can act on it. Include:
+    75	
+    76	- the exact failing step;
+    77	- the reason it blocks the current claim;
+    78	- the theorem/input/computation needed to fix it;
+    79	- the safe reduced claim that remains.
+    80	
+    81	Do not write vague rationales such as "needs more work" or "not convincing." Name the missing theorem.
+
+exec
+/bin/zsh -lc 'python3 scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 271ms:
+PASS: G1 terms per site: 6 bonds and 12 faces (radii 4 and 5)
+PASS: G2 bond degrees: 10 bonds + 20 faces = 30 (radii 4 and 5)
+PASS: G3 face degrees: 20 bonds + 32 faces = 52, box-stable, and the hand inclusion-exclusion 48-18+4-1 = 33 minus self = 32 agrees
+PASS: G4 support diameters: bond 1, face 2
+PASS: G5 mixed length-2 walks from one site: 804 <= 936 = 18*52
+PASS: G6 reach is exactly 2k at k = 1, 2, 3
+PASS: R1 series start: 2k >= d iff k >= ceil(d/2) (instances d=1..5)
+PASS: R2 face-jump sharpness: one adjoint step reaches distance 2 (k=0 commutes, k=1 does not)
+PASS: M1 mixed-dim reduction: [h23, A] = 0 and [H, A] = [h12, A] != 0
+PASS: M2 mixed-dim cone: k = 0, 1 below (d = 2), k = 2 arrives
+PASS: M3 mixed-dim terms Hermitian with exact Kronecker norms (||X ⊗ diag(1,2,3)|| = 3)
+PASS: Z1 magnetic plaquette term is face-supported: commutes with every operator on the far link
+PASS: Z2 electric link term is bond-supported: commutes with operators on l2, l4, l5
+PASS: Z3 the gauge dynamics is nontrivial: [B_p, E_l1] != 0
+PASS: T1 coefficient assembly (2J)^k n 52^(k-1) = (n/52)(104J)^k
+PASS: T2 tail instance re-gate: sum_{k>=2} x^k/k! <= (x^2/2) e^x at x = 3/2
+PASS: N1 CT note names the U-integrated case open (its own words)
+PASS: N2 axiom memo supplies no dynamics
+PASS: N3 sibling chain authorities
+PASS: N4 target identifiers, theorem, non-sharpness, non-claims
+PASS: N5 No-Go section structure: all eight items and the Status line
+TOTAL: PASS=21 FAIL=0
+
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import itertools, collections, math
+axes=((1,0,0),(0,1,0),(0,0,1))
+def add(a,b): return tuple(x+y for x,y in zip(a,b))
+def terms(r):
+    pts=range(-r,r+1); B=set(); F=set()
+    for x in itertools.product(pts, repeat=3):
+        for i,e in enumerate(axes):
+            y=add(x,e)
+            if all(-r<=c<=r for c in y): B.add(frozenset((x,y)))
+            for f in axes[i+1:]:
+                q=frozenset((x,y,add(x,f),add(y,f)))
+                if all(-r<=c<=r for p in q for c in p): F.add(q)
+    return B,F
+def axis_type(t):
+    spans=tuple(max(p[i] for p in t)-min(p[i] for p in t) for i in range(3))
+    return spans
+for r in (2,3,4,5,6):
+    B,F=terms(r); allterms=B|F; idx=collections.defaultdict(set)
+    for t in allterms:
+        for p in t: idx[p].add(t)
+    rows=collections.defaultdict(set)
+    for t in allterms:
+        if all(max(abs(c) for c in p)<=r-2 for p in t):
+            adj=set().union(*(idx[p] for p in t))-{t}
+            rows[(len(t),axis_type(t))].add((sum(len(u)==2 for u in adj),sum(len(u)==4 for u in adj)))
+    print(r, dict(sorted(rows.items())))
+# Explicit reach witnesses: face squares anchored at (j,j,0).
+walk=[]
+for j in range(3):
+    a=(j,j,0); walk.append(frozenset((a,(j+1,j,0),(j,j+1,0),(j+1,j+1,0))))
+print('reach witness intersections', [len(walk[i]&walk[i+1]) for i in range(2)])
+print('reach witness maxima', [max(sum(abs(c) for c in p) for p in t) for t in walk])
+# If site supports are genuinely added as a separate class.
+print('with explicit site terms:', {'per_site':19,'site_degree':18,'bond_degree':32,'face_degree':56,'walks2':1*18+6*32+12*56})
+PY" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 108ms:
+All scoped files and the audit rubric are read. Independent enumeration confirms the core lattice constants and reach; the remaining work is consolidating the single-site counterexample and runner false-green findings into the required N1–N8 report.
+  ✓ Read the audit-loop instructions and all four scoped files
+  ✓ Independently recompute geometry, reach, walk counts, and theorem constants
+  ✓ Audit sibling-chain carry-over, gauge coverage, scope hygiene, and runner gates
+  → Deliver N1–N8 hostile-referee report with severity, exact attacks, fixes, and survivals
+codex
+The core walk bound survives. I found one genuine scope defect—general single-site terms cannot always be relabeled as bonds without collisions or changing \(J\)—and a separate runner-integrity defect: several universal/symbolic claims are only fixed-instance or textual-presence checks. I’m classifying both as MAJOR because they are locally repairable without changing the bond-plus-face theorem.
+The adversarial audit is complete. No files were modified.
+  ✓ Read the audit-loop instructions and all four scoped files
+  ✓ Independently recompute geometry, reach, walk counts, and theorem constants
+  ✓ Audit sibling-chain carry-over, gauge coverage, scope hygiene, and runner gates
+  ✓ Deliver N1–N8 hostile-referee report with severity, exact attacks, fixes, and survivals
+codex
+Overall verdict: no BLOCKER in the bond-plus-face Lieb–Robinson theorem, but two MAJOR defects make the note not ship-ready: the single-site subsumption claim is false as stated, and the runner overstates several instance checks as universal/symbolic gates.
+
+### N1 route inventory — ATTEMPTED
+
+Independent recomputation of the geometry:
+
+| Quantity | Independent calculation | Result |
+|---|---:|---:|
+| Bonds through a site | \(2\times3\) | 6 |
+| Faces through a site | \(4\times\binom32\) | 12 |
+| Bond→bond | \(6+6-1\) including the bond, then remove it | 10 |
+| Bond→face | \(12+12-4\) faces sharing the bond | 20 |
+| Face→bond | \(4\cdot6-4\) duplicated perimeter bonds | 20 |
+| Face→face | \(48-(4\cdot4+2\cdot1)+4-1=33\), then remove self | 32 |
+| Length-2 walks from one site | \(6\cdot30+12\cdot52\) | 804 |
+| Diameters | edge/face diagonal in \(\ell^1\) | 1, 2 |
+
+I also enumerated all three bond orientations and all three face orientations for interior terms in centered boxes of radii 3–6. Every orientation gives `(10,20)` or `(20,32)`. Finite-volume boundaries only delete terms, so cannot increase these values. Thus \(D=52\), \(n_X^\mathcal S\le18|X|\), and box/orientation independence survive.
+
+MINOR: “Two terms are adjacent iff their site supports intersect” at [line 76](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md:76>) is formally reflexive, while both the degrees and runner remove the term itself. Fix: “Two distinct terms are adjacent iff…”.
+
+### N2 hypothesis independence — ATTEMPTED
+
+The dilated reach lemma survives exactly.
+
+For a walk \((S_1,\ldots,S_k)\), \(S_1\cap X\ne\varnothing\), consecutive terms intersect, and every term has diameter at most 2. Hence every site of \(S_j\) is within \(2j\) of \(X\). If \(S_k\cap Y\ne\varnothing\), then \(d\le2k\), equivalently
+\[
+k\ge \lceil d/2\rceil.
+\]
+
+At the odd boundary \(d=2r+1\), \(k=r\) reaches at most \(2r<d\), while \(k=r+1\) is the first permitted value. There is no off-by-one error.
+
+The sharpness exhibit is honest: the faces anchored successively at \((0,0,0),(1,1,0),(2,2,0)\) share one vertex consecutively and reach distances \(2,4,6\). The \(X^{\otimes4}\) / opposite-corner \(Z\) double commutator in [lines 90–99](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md:90>) genuinely realizes distance 2 in one adjoint step.
+
+The convention also matches the sibling: a length-\(k\) walk has \(k\) terms and \(k-1\) adjacency steps, as stated at [sibling line 190](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md:190>).
+
+### N3 hidden-wall scan — ATTEMPTED
+
+No bond-only algebra is secretly used in the sibling carry-over. For any finite term support \(S\),
+\[
+[H,h_S]
+ =\sum_{\substack{S'\cap S\ne\varnothing\\S'\ne S}}[h_{S'},h_S].
+\]
+This uses only disjoint tensor factors and \([h_S,h_S]=0\). Consequently:
+
+- The reduced generator remains Hermitian.
+- The next term is adjacent only to the preceding term.
+- The base term vanishes when \(S_k\cap Y=\varnothing\).
+- Otherwise \(\|[h_{S_k},B]\|\le2J\|B\|\).
+- The initial count is exactly \(n_X^\mathcal S\), regardless of whether terms have two or four sites.
+
+Thus the boundary reduction, per-term recursion, base bound, and first-step count all survive four-site terms.
+
+### N4 dependency roles — ATTEMPTED
+
+Every factor and exponent in the theorem display survives. With \(m=\lceil d/2\rceil\),
+\[
+2\|A\|\|B\|\sum_{k\ge m}(2J)^k n_X^\mathcal S52^{k-1}\frac{|t|^k}{k!}
+=
+2\|A\|\|B\|\frac{n_X^\mathcal S}{52}
+\sum_{k\ge m}\frac{(104J|t|)^k}{k!}.
+\]
+
+There is no missing initial factor, extra adjacency step, or wrong power of 52. The factorial tail and \(\mu\)-form are valid. At \(\mu=1\),
+\[
+-\lceil d/2\rceil+104eJ|t|
+\le -d/2+104eJ|t|,
+\]
+so the site-distance readout \(v\le208eJ\) is correct.
+
+The absence of site dimensions follows from the general tensor-disjointness and operator-norm proof. It is mathematically established, although the runner’s single mixed-dimension instance does not itself prove the universal claim.
+
+### N5 rhetoric audit — ATTEMPTED
+
+The gauge-shaped core survives.
+
+Regrouping the full finite-dimensional link tensor product by assigning each link factor to either endpoint is exact. Every owner of a plaquette link is one of the four plaquette vertices, so the magnetic operator is supported inside that unit face. An electric link operator can be represented directly as the term \(h_b\) on its underlying geometric bond, acting as the identity on the other endpoint. This route does not require the defective general single-site subsumption sentence.
+
+The \(Z_2\) instance is faithful up to the harmless \(X\leftrightarrow Z\) basis convention. It establishes a noncommuting electric/magnetic pair with the claimed tensor support.
+
+Nothing from the `U`-integrated item is smuggled. The CT note explicitly leaves gauge measure and correlation control open at [line 312](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md:312>), and the present note derives none of them.
+
+### N6 partial-closure scan — ATTEMPTED
+
+MAJOR: the sentence “Single-site terms are subsumable: a term on `{x}` is a degenerate bond term on any bond containing `x` … no constant changes” at [line 61](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md:61>) is false in the declared support-set model.
+
+Concrete counterexamples:
+
+- If \(\Lambda=\{x\}\), there is no bond over \(\Lambda\) containing \(x\).
+- On a two-site region with its only bond \(b\), suppose both a bond term \(h_b=JZ_x\otimes I\) and a site term \(g_x=JZ_x\) occur. Relabeling \(g_x\) as \(b\) duplicates the support, forbidden by the set-indexed family. Combining them produces norm \(2J\), contradicting “no constant changes”.
+- Allowing duplicate terms with the same support instead would invalidate the stated degree and \(n_X^\mathcal S\) counts.
+
+Concrete fixes:
+
+1. Cheapest: delete the general single-site claim and describe electric link terms directly as bond-labelled operators.
+2. If genuine site supports must be included, add them explicitly. The elementary enlarged-class constants become
+   \[
+   n_X\le19|X|,\qquad D=56,\qquad
+   \text{activity}=112J,\qquad v\le224eJ,
+   \]
+   with length-2 count \(1\cdot18+6\cdot32+12\cdot56=882\).
+3. Alternatively prove a separate onsite-interaction-picture lemma preserving the old propagation constants.
+
+Safe boundary until fixed: the theorem is correct for the literal supplied family of bond and face labels; the blanket single-site extension is not established.
+
+### N7 steelman — ATTEMPTED
+
+MAJOR: the runner returns `PASS=21 FAIL=0`, but does not gate several claims at the level asserted in Verification.
+
+Exact false-green surfaces:
+
+- G2/G3 inspect only the fixed \(x\)-bond and fixed \(xy\)-face at [runner line 117](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py:117>), not “the full term-adjacency enumeration” claimed at [note line 264](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md:264>). Cubic symmetry repairs the mathematics, not the gate description.
+- R1 tests only \(d=1,\ldots,5\) at [runner line 198](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py:198>), while Verification calls the ceiling arithmetic symbolic.
+- T2 labels an infinite tail but computes only `range(2, 40)` at [runner line 314](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/microcausality_finite_range_plaquette_class_walk_EXPANSION_2026_07_18.py:314>). A finite partial sum cannot gate the displayed infinite inequality.
+- M1/M2 use only two-site terms, so they witness mixed dimensions but do not gate the four-site carry-over.
+- `EXPECTED_GATES = 21` checks only the count, not an explicit manifest of gate identities. Deleting a load-bearing check and duplicating another preserves a green total.
+- N1–N5 are textual needles. They verify phrase presence, not correctness; N5 can certify the note’s self-written `Status: PASS`.
+
+Fix: iterate every interior orientation for geometry; gate the even/odd \(d\) proof; gate the general factorial domination rather than a truncation; add a mixed-dimensional face recursion; use an explicit ordered gate-label manifest; and describe needles as presence checks only.
+
+### N8 prior-wall echo — ATTEMPTED
+
+The remaining scope walls survive:
+
+- The \(d=0\) exclusion is necessary. The sibling’s bond-only counterexample remains a counterexample because the bond class is a subclass here; the target prefactor at \(t=0\) is no larger.
+- Longer-range terms are explicitly excluded.
+- \(104J\) and \(208eJ\) are correctly described as non-sharp.
+- The axioms supply no dynamics.
+- Continuous-group link Hilbert spaces and the `U`-integrated measure/kernel/correlation problem remain open.
+- The bond-only sibling remains sharper on its smaller class.
+
+**Status: MAJOR — do not ship until the single-site scope claim and runner gate honesty are repaired.**
+tokens used
+84,191
+Overall verdict: no BLOCKER in the bond-plus-face Lieb–Robinson theorem, but two MAJOR defects make the note not ship-ready: the single-site subsumption claim is false as stated, and the runner overstates several instance checks as universal/symbolic gates.
+
+### N1 route inventory — ATTEMPTED
+
+Independent recomputation of the geometry:
+
+| Quantity | Independent calculation | Result |
+|---|---:|---:|
+| Bonds through a site | \(2\times3\) | 6 |
+| Faces through a site | \(4\times\binom32\) | 12 |
+| Bond→bond | \(6+6-1\) including the bond, then remove it | 10 |
+| Bond→face | \(12+12-4\) faces sharing the bond | 20 |
+| Face→bond | \(4\cdot6-4\) duplicated perimeter bonds | 20 |
+| Face→face | \(48-(4\cdot4+2\cdot1)+4-1=33\), then remove self | 32 |
+| Length-2 walks from one site | \(6\cdot30+12\cdot52\) | 804 |
+| Diameters | edge/face diagonal in \(\ell^1\) | 1, 2 |
+
+I also enumerated all three bond orientations and all three face orientations for interior terms in centered boxes of radii 3–6. Every orientation gives `(10,20)` or `(20,32)`. Finite-volume boundaries only delete terms, so cannot increase these values. Thus \(D=52\), \(n_X^\mathcal S\le18|X|\), and box/orientation independence survive.
+
+MINOR: “Two terms are adjacent iff their site supports intersect” at [line 76](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md:76>) is formally reflexive, while both the degrees and runner remove the term itself. Fix: “Two distinct terms are adjacent iff…”.
+
+### N2 hypothesis independence — ATTEMPTED
+
+The dilated reach lemma survives exactly.
+
+For a walk \((S_1,\ldots,S_k)\), \(S_1\cap X\ne\varnothing\), consecutive terms intersect, and every term has diameter at most 2. Hence every site of \(S_j\) is within \(2j\) of \(X\). If \(S_k\cap Y\ne\varnothing\), then \(d\le2k\), equivalently
+\[
+k\ge \lceil d/2\rceil.
+\]
+
+At the odd boundary \(d=2r+1\), \(k=r\) reaches at most \(2r<d\), while \(k=r+1\) is the first permitted value. There is no off-by-one error.
+
+The sharpness exhibit is honest: the faces anchored successively at \((0,0,0),(1,1,0),(2,2,0)\) share one vertex consecutively and reach distances \(2,4,6\). The \(X^{\otimes4}\) / opposite-corner \(Z\) double commutator in [lines 90–99](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md:90>) genuinely realizes distance 2 in one adjoint step.
+
+The convention also matches the sibling: a length-\(k\) walk has \(k\) terms and \(k-1\) adjacency steps, as stated at [sibling line 190](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md:190>).
+
+### N3 hidden-wall scan — ATTEMPTED
+
+No bond-only algebra is secretly used in the sibling carry-over. For any finite term support \(S\),
+\[
+[H,h_S]
+ =\sum_{\substack{S'\cap S\ne\varnothing\\S'\ne S}}[h_{S'},h_S].
+\]
+This uses only disjoint tensor factors and \([h_S,h_S]=0\). Consequently:
+
+- The reduced generator remains Hermitian.
+- The next term is adjacent only to the preceding term.
+- The base term vanishes when \(S_k\cap Y=\varnothing\).
+- Otherwise \(\|[h_{S_k},B]\|\le2J\|B\|\).
+- The initial count is exactly \(n_X^\mathcal S\), regardless of whether terms have two or four sites.
+
+Thus the boundary reduction, per-term recursion, base bound, and first-step count all survive four-site terms.
+
+### N4 dependency roles — ATTEMPTED
+
+Every factor and exponent in the theorem display survives. With \(m=\lceil d/2\rceil\),
+\[
+2\|A\|\|B\|\sum_{k\ge m}(2J)^k n_X^\mathcal S52^{k-1}\frac{|t|^k}{k!}
+=
+2\|A\|\|B\|\frac{n_X^\mathcal S}{52}
+\sum_{k\ge m}\frac{(104J|t|)^k}{k!}.
+\]
+
+There is no missing initial factor, extra adjacency step, or wrong power of 52. The factorial tail and \(\mu\)-form are valid. At \(\mu=1\),
+\[
+-\lceil d/2\rceil+104eJ|t|
+\le -d/2+104eJ|t|,
+\]
+so the site-distance readout \(v\le208eJ\) is correct.
+
+The absence of site dimensions follows from the general tensor-disjointness and operator-norm proof. It is mathematically established, although the runner’s single mixed-dimension instance does not itself prove the universal claim.
+
+### N5 rhetoric audit — ATTEMPTED
+
+The gauge-shaped core survives.
+
+Regrouping the full finite-dimensional link tensor product by assigning each link factor to either endpoint is exact. Every owner of a plaquette link is one of the four plaquette vertices, so the magnetic operator is supported inside that unit face. An electric link operator can be represented directly as the term \(h_b\) on its underlying geometric bond, acting as the identity on the other endpoint. This route does not require the defective general single-site subsumption sentence.
+
+The \(Z_2\) instance is faithful up to the harmless \(X\leftrightarrow Z\) basis convention. It establishes a noncommuting electric/magnetic pair with the claimed tensor support.
+
+Nothing from the `U`-integrated item is smuggled. The CT note explicitly leaves gauge measure and correlation control open at [line 312](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md:312>), and the present note derives none of them.
+
+### N6 partial-closure scan — ATTEMPTED
+
+MAJOR: the sentence “Single-site terms are subsumable: a term on `{x}` is a degenerate bond term on any bond containing `x` … no constant changes” at [line 61](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md:61>) is false in the declared support-set model.
+
+Concrete counterexamples:
+
+- If \(\Lambda=\{x\}\), there is no bond over \(\Lambda\) containing \(x\).
+- On a two-site region with its only bond \(b\), suppose both a bond term \(h_b=JZ_x\otimes I\) and a site term \(g_x=JZ_x\) occur. Relabeling \(g_x\) as \(b\) duplicates the support, forbidden by the set-indexed family. Combining them produces norm \(2J\), contradicting “no constant changes”.
+- Allowing duplicate terms with the same support instead would invalidate the stated degree and \(n_X^\mathcal S\) counts.
+
+Concrete fixes:
+
+1. Cheapest: delete the general single-site claim and describe electric link terms directly as bond-labelled operators.
+2. If genuine site supports must be included, add them explicitly. The elementary enlarged-class constants become
+   \[
+   n_X\le19|X|,\qquad D=56,\qquad
+   \text{activity}=112J,\qquad v\le224eJ,
+   \]
+   with length-2 count \(1\cdot18+6\cdot32+12\cdot56=882\).
+3. Alternatively prove a separate onsite-interaction-picture lemma preserving the old propagation constants.
+
+Safe boundary until fixed: the theorem is correct for the literal supplied family of bond and face labels; the blanket single-site extension is not established.
+
+### N7 steelman — ATTEMPTED
+
+MAJOR: the runner returns `PASS=21 FAIL=0`, but does not gate several claims at the level asserted in Verification.
+
+Exact false-green surfaces:
+
+- G2/G3 inspect only the fixed \(x\)-bond and fixed \(xy\)-face at [runner line 117](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py:117>), not “the full term-adjacency enumeration” claimed at [note line 264](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md:264>). Cubic symmetry repairs the mathematics, not the gate description.
+- R1 tests only \(d=1,\ldots,5\) at [runner line 198](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py:198>), while Verification calls the ceiling arithmetic symbolic.
+- T2 labels an infinite tail but computes only `range(2, 40)` at [runner line 314](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/microcausality_finite_range_plaquette_class_walk_EXPANSION_2026_07_18.py:314>). A finite partial sum cannot gate the displayed infinite inequality.
+- M1/M2 use only two-site terms, so they witness mixed dimensions but do not gate the four-site carry-over.
+- `EXPECTED_GATES = 21` checks only the count, not an explicit manifest of gate identities. Deleting a load-bearing check and duplicating another preserves a green total.
+- N1–N5 are textual needles. They verify phrase presence, not correctness; N5 can certify the note’s self-written `Status: PASS`.
+
+Fix: iterate every interior orientation for geometry; gate the even/odd \(d\) proof; gate the general factorial domination rather than a truncation; add a mixed-dimensional face recursion; use an explicit ordered gate-label manifest; and describe needles as presence checks only.
+
+### N8 prior-wall echo — ATTEMPTED
+
+The remaining scope walls survive:
+
+- The \(d=0\) exclusion is necessary. The sibling’s bond-only counterexample remains a counterexample because the bond class is a subclass here; the target prefactor at \(t=0\) is no larger.
+- Longer-range terms are explicitly excluded.
+- \(104J\) and \(208eJ\) are correctly described as non-sharp.
+- The axioms supply no dynamics.
+- Continuous-group link Hilbert spaces and the `U`-integrated measure/kernel/correlation problem remain open.
+- The bond-only sibling remains sharper on its smaller class.
+
+**Status: MAJOR — do not ship until the single-site scope claim and runner gate honesty are repaired.**
+LENS B05 EXIT: 0

@@ -78,15 +78,12 @@ A spatial plaquette on a boundary slice is multiplication by
 A_p(U) = X(U_p),                 X(g) = (1/N) Re Tr_F(g).
 ```
 
-A mixed plaquette is different. Marking it changes one factor in the
-two-slice kernel. Its source derivatives have the positive-type Schur-power
-form
+A mixed plaquette is marked by changing one factor in the two-slice kernel.
+Its source derivatives have the positive-type Schur-power form
 
 ```text
-H^(circle m) circle exp(gamma H),        gamma >= 0,
+H^(circle m) circle exp(gamma H),        gamma >= 0.
 ```
-
-not a one-slice multiplication form.
 
 For `SU(3)`,
 
@@ -656,8 +653,8 @@ Z_mixed,repeated(h)
 ```
 
 The ordering in the selected formula records which one of the cyclic
-two-slice kernels is modified; cyclicity permits a relabeling of the selected
-step, not a replacement by a one-slice multiplication factor.
+two-slice kernels is modified. Cyclicity permits a relabeling of the selected
+step.
 
 ### Proof of positivity
 
@@ -781,22 +778,19 @@ At `h=0`, the moment of one selected mixed plaquette is
 
 This is the genuine mixed-plaquette insertion formula.
 
-### Why this is not `J`
+### Established mixed insertion
 
-`D_beta,e,m(h)` has a two-slice integral kernel. In general it cannot be
-written as
+For the selected mixed plaquette, the established insertion is the operator
+`D_beta,e,m(h)` obtained by differentiating the marked two-slice kernel. Its
+kernel contains the marked-link factor
 
 ```text
-A T_beta,
-T_beta A,
-or (A T_beta + T_beta A)/2
+X(W_e)^m exp[gamma X(W_e)]
 ```
 
-for a one-slice multiplication operator `A`.
-
-The operator `J` describes the local class-function multiplication algebra of
-a spatial plaquette holonomy. It does not describe a mixed plaquette crossing
-the transfer step.
+inside the temporal-link integral, with the unmarked link factors and the two
+spatial half weights unchanged. The selected and repeated trace formulas above
+are the insertion statements proved here.
 
 ## 8. Positive transfer state
 
@@ -816,11 +810,8 @@ omega_beta,L_t(B)
 ```
 
 is a positive normalized state on bounded one-slice operators. Spatial
-plaquette moments use `B = f(A_p)`.
-
-Mixed plaquette moments are not values of this state on a one-slice
-multiplication operator. They use the selected-step two-slice insertion
-`D_beta,e,m(0)` as displayed in Section 7.
+plaquette moments use `B = f(A_p)`. Mixed plaquette moments use the
+selected-step two-slice insertion `D_beta,e,m(0)` displayed in Section 7.
 
 ## 9. Exact scope and exclusions
 
@@ -839,7 +830,6 @@ This note proves:
 
 This note does not prove:
 
-- that a mixed plaquette is one-slice multiplication by `J`;
 - transfer invariance of the plaquette-holonomy pullback range;
 - equality between recurrence eigenvalues and full-transfer eigenvalues;
 - a source-sector compression or Perron eigenvalue preservation theorem;
@@ -869,12 +859,11 @@ The runner independently checks:
 - transfer trace/path sum and selected/repeated spatial insertions;
 - mixed selected-step and repeated-step sources and the
   `H^(circle m) circle exp(gamma H)` derivative form;
-- a discriminator showing the mixed derivative is not one-slice
-  multiplication;
+- dominant-weight boundary omissions in the `SU(3)` recurrence;
 - hostile controls for pointwise-positive indefinite kernels, a wrong
   plaquette word, selected-versus-repeated slice placement, doubled spatial
-  half weights, missing normalized Haar factors, and negative effective mixed
-  coupling.
+  half weights, missing spatial half weights, missing normalized Haar factors,
+  and negative effective mixed coupling.
 
 The finite-group and sampled matrix results are support only. The exact
 `SU(N)` proof is the analytic argument in this note; the earlier open-slab

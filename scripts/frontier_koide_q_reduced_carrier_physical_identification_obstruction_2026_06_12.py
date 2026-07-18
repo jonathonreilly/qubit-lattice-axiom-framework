@@ -24,24 +24,29 @@ DOCS = REPO_ROOT / "docs"
 
 PASS = 0
 FAIL = 0
+COUNTS = {"algebra": [0, 0], "hygiene": [0, 0]}
 
 
 def read_doc(name: str) -> str:
     return (DOCS / name).read_text(encoding="utf-8")
 
 
-def check(name: str, ok: bool, detail: str = "") -> None:
+def check(name: str, ok: bool, detail: str = "", *, kind: str = "hygiene") -> None:
     global PASS, FAIL
+    if kind not in COUNTS:
+        raise ValueError(f"unknown check kind: {kind}")
     if ok:
         PASS += 1
+        COUNTS[kind][0] += 1
         print(f"PASS: {name} {detail}")
     else:
         FAIL += 1
+        COUNTS[kind][1] += 1
         print(f"FAIL: {name} {detail}")
 
 
 # A. Current authority boundaries.
-minimal_axioms = read_doc("MINIMAL_AXIOMS_2026-06-05.md")
+minimal_axioms = read_doc("MINIMAL_AXIOMS_2026-06-29.md")
 three_gen = read_doc("THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md")
 readout_factor = read_doc("KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md")
 selector = read_doc("KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md")
@@ -52,15 +57,14 @@ parent = read_doc("KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md"
 
 check(
     "Record axiom does not supply the missing readout context",
-    "record supplies no readout context" in minimal_axioms
-    and "decomposition" in minimal_axioms
-    and "normalization" in minimal_axioms
-    and "within-sector data" in minimal_axioms,
-    "Record is additive only after a readout context is supplied.",
+    "readout-context selection" in minimal_axioms
+    and "central-sector decomposition" in minimal_axioms
+    and "source/action" in minimal_axioms,
+    "Current axioms leave readout-context selection downstream.",
 )
 check(
-    "Quantum axiom does not supply a physical observable bridge",
-    "physical observable bridge" in minimal_axioms,
+    "Qubit axiom does not supply a physical observable bridge",
+    "physical observable bridges remain downstream" in minimal_axioms,
     "The one-site algebra is not a charged-lepton readout theorem.",
 )
 check(
@@ -71,11 +75,12 @@ check(
     "Finite M3(C) algebra is retained; physical flavor semantics are separate.",
 )
 check(
-    "readout factorization note keeps admissibility-to-carrier as conditional",
-    "Conditional extension" in readout_factor
-    and "does not claim that local bosonic first-live species-resolving" in readout_factor
-    and "does not by itself prove that the physical charged-lepton selector" in readout_factor,
-    "Rank/kernel quotient is retained-bounded; physical selector remains open.",
+    "readout note separates the exact quotient from the definitional selector class",
+    "definitional corollary" in readout_factor
+    and "do not by themselves exclude every `z`-sensitive scalar" in readout_factor
+    and "identify any physical charged-lepton selector" in readout_factor,
+    "Rank/kernel quotient is bounded; admissibility classification and "
+    "physical selector remain open.",
 )
 check(
     "minimal selector note starts after the carrier is admitted",
@@ -114,6 +119,7 @@ check(
     "two-slot scalar compression is not the full C3 diagonal carrier",
     same_two_slot_data and distinct_diag,
     f"(1,2,3) and (1,3,2) share sum/centered norm but differ as diagonal triples.",
+    kind="algebra",
 )
 
 # The pair is also not related by a cyclic rotation, so this loss is not only
@@ -123,6 +129,7 @@ check(
     "compression also loses reflection/orientation data not removed by C3",
     (1, 3, 2) not in cyclic_orbit_x,
     "Same scalar data, different C3 orbit.",
+    kind="algebra",
 )
 
 # C. D_red = I_2 is a normalized coordinate choice unless the source units are
@@ -136,6 +143,7 @@ check(
     "arbitrary positive diagonal baseline normalizes to I2 after rescaling sources",
     sp.simplify(W - W_norm) == 0,
     "D_red=I2 follows after choosing normalized source coordinates j_i/d_i.",
+    kind="algebra",
 )
 check(
     "absolute D_red=I2 still needs source-unit/readout normalization",
@@ -159,7 +167,11 @@ check(
 )
 
 print()
-print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+print(
+    f"TOTAL: PASS={PASS} FAIL={FAIL} "
+    f"(ALGEBRA={COUNTS['algebra'][0]}/{sum(COUNTS['algebra'])} "
+    f"HYGIENE={COUNTS['hygiene'][0]}/{sum(COUNTS['hygiene'])})"
+)
 if FAIL:
     raise SystemExit(1)
 

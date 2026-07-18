@@ -41,7 +41,8 @@ record("L_3(1,2) = (1/N) sum_k det[(C^k-I)^-1|doublet] = 2/9",
 record("Jcs=(C-C^2)/sqrt3: Jcs^2=-P_doublet and exp((2pi/3)Jcs)=C",
        np.allclose(Jcs @ Jcs, -(I3 - np.outer(np.ones(3), np.ones(3))/3)) and
        np.allclose(__import__('scipy.linalg', fromlist=['expm']).expm((2*np.pi/3)*Jcs), C))
-# Q depends only on |b|/a -> delta is Q-orthogonal (koide_q_readout_factorization)
+# Direct circulant eigenvalue calculation: independent of the readout quotient.
+# Q depends only on |b|/a, so delta is Q-orthogonal.
 def Qof(a, bmag, delta):
     b = bmag*np.exp(1j*delta); lam = np.linalg.eigvalsh(a*I3 + b*C + np.conj(b)*C2)
     return np.sum(lam**2)/np.sum(lam)**2

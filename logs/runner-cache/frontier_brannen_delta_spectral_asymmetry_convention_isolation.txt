@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_brannen_delta_spectral_asymmetry_convention_isolation.py
-runner_sha256: 61f069e480da33ca877075e56f206f58c2b9337621916081f8db8a751b9d0fb5
+runner_sha256: 104120cea2f525cd2e45368fd9d26632d5925dffe4a27d084246435f6cbde394
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 

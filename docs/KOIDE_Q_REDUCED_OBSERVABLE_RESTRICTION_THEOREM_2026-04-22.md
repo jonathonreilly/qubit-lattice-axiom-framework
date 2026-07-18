@@ -264,16 +264,22 @@ propagate retention to this row:
    `E_loc`, which lands on the normalized `Y = I_2` baseline.
 3. `KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md`
    — exact rank/kernel quotient of the linear second-order readout
-   map `L : R^4 → Diag_3(R)`, `L(W) = P_{T_1} Γ_1 W Γ_1 P_{T_1}` on
-   the retained `Γ_1 / T_1` grammar. Establishes that the readout
-   map factors through the species-resolving diagonal carrier with a
-   unique unreachable slot, and now proves the first-live
-   kernel-invariance substep inside that admitted grammar: every
-   scalar selector admitted as first-live factors through `L` and is
-   constant on `span(e_z)`. This supplies the algebraic skeleton of
-   the two-generator block reduction used in this note's Sections
-   1–2. It still does not prove that the physical charged-lepton
-   selector must belong to that first-live grammar.
+   map `L : R^4 → Diag_3(R)` on the retained `Γ_1 / T_1` grammar.
+   Here `A(W)=P_{T_1} Γ_1 W Γ_1 P_{T_1}` is the full operator and
+   `L(W)=B_t^* A(W) B_t` is its common `t=0,1` diagonal restriction.
+   Establishes rank `3`, full
+   diagonal image, kernel `span(e_z)`, exact fibers, and the quotient
+   `R^4 / span(e_z) ≅ Diag_3(R)`. Constancy on `span(e_z)` is only a
+   definitional corollary for the separately declared selector class
+   `S = Phi composed with L`; it is not an admissibility or physical
+   charged-lepton classification theorem. This supplies the algebraic
+   skeleton of the two-generator block reduction used in this note's
+   Sections 1–2. It still does not prove that the physical charged-lepton
+   selector must belong to `S_L`. In particular, locality, bosonic/even
+   parity, species resolution, first-live rhetoric, and `C_3` covariance
+   have not been shown to classify all selectors into `S_L`; the
+   `z`-sensitive scalar `S_z(u,v,w,z)=z` is `C_3`-invariant but is not
+   constant on the fibers of `L`.
 4. `KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md`
    — exact uniqueness of the scale-free `C_3`-invariant selector
    ratio on the admitted second-order returned carrier (no nontrivial
@@ -289,21 +295,21 @@ are already at `retained_bounded` effective status. The remaining two
 suppliers are at lower status and contribute to the bridge only
 conditionally on their independent audit retention.
 
-The intended combined load-bearing inference of the supplier chain, if the
-candidate suppliers and the response-unit normalization bridge are later
-independently accepted, would be:
+The intended physical-identification chain remains incomplete even if the
+other candidate suppliers and the response-unit normalization bridge are
+later independently accepted:
 
 > on the framework's accepted substrate, the physical local scalar
 > observables must read through the canonical descent `E_loc` to the
 > diagonal carrier; the source-derivative content of any admissible
 > scalar generator on a real-D block coincides with that of
-> `W = log|det(D+J)| - log|det D|` up to overall scale; the readout
-> map `L` factors through the species-resolving diagonal target, so
-> first-live scalars are kernel-invariant on `span(e_z)`; and the
-> normalized scale-free selector on the admitted carrier is
-> already unique. The reduced two-generator block carrier with
-> baseline `D_red = I_2` is therefore the framework-forced reading,
-> rather than a free admitted choice.
+> `W = log|det(D+J)| - log|det D|` up to overall scale; and the
+> normalized scale-free selector on a separately supplied carrier is
+> unique. The exact map `L` supplies only the quotient
+> `R^4/span(e_z) ≅ Diag_3(R)`. It does not establish that every
+> first-live or physically admissible scalar belongs to `S_L`, so this
+> chain still does not force the reduced two-generator block carrier or
+> the baseline `D_red = I_2` as the physical reading.
 
 That inference is the audit-named missing bridge for this row. It is not
 established by this note itself, and the 2026-06-15 normalization-freedom
@@ -325,12 +331,15 @@ records the current source-side state of the audit-named missing bridge.
 It does **not** promote this row. It records and checks a narrower boundary: on the
 current retained surface, the two-slot reduced scalar carrier is a
 coarse-grained readout of the retained finite `C3` generation data, not the
-retained physical charged-lepton carrier itself. The current Record/Quantum
+retained physical charged-lepton carrier itself. The current Record/Qubit
 axioms do not supply the missing readout context, the cited real-D uniqueness
 theorem starts after its block-family class is supplied, the readout
-factorization theorem closes first-live kernel-invariance only inside its
-admitted first-live grammar, and the selector theorem starts after the
-second-order carrier is admitted.
+quotient gives kernel invariance only for the definitionally selected class
+`S_L = {Phi composed with L}`, and the selector theorem starts after the
+second-order carrier is admitted. Locality, bosonic/even parity, species
+resolution, first-live rhetoric, and `C_3` covariance have not been shown to
+classify all selectors into `S_L`; `S_z(u,v,w,z)=z` remains a `C_3`-invariant,
+kernel-sensitive counterexample to any broader inference.
 
 It also records the normalization boundary:
 

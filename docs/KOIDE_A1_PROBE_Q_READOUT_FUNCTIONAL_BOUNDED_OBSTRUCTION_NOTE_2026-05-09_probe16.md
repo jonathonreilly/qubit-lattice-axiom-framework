@@ -563,11 +563,19 @@ second discrete one (functional-choice convention).
 - Block-total Frobenius (proposed_retained): [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md)
 - MRU demotion (functional-choice convention status): [`KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`](KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md)
 
-### Retained Brannen-carrier U(1)_b-erasure support
+### Brannen-carrier U(1)_b-erasure context
 
 - Brannen Q SO(2) phase erasure: [`KOIDE_Q_SO2_PHASE_ERASURE_SUPPORT_NOTE_2026-04-25.md`](KOIDE_Q_SO2_PHASE_ERASURE_SUPPORT_NOTE_2026-04-25.md)
-- Q readout factorization: [`KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md`](KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md)
+- Q readout quotient (context only): [`KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md`](KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md)
 - Brannen phase reduction: [`KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md`](KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md)
+
+The Q-readout note proves kernel invariance only for the definitionally selected
+class `S_L={Phi composed with L}`. Locality, bosonic/even parity, species
+resolution, first-live rhetoric, and `C_3` covariance have not been shown to
+classify all selectors into `S_L`; `S_z(u,v,w,z)=z` is a `C_3`-invariant,
+kernel-sensitive counterexample. The row supplies no Brannen carrier, physical
+charged-lepton selector, `Q` functional, normalization, mass spectrum, source
+law, comparator, or delta bridge.
 
 ### Sister Koide-A1 probes
 

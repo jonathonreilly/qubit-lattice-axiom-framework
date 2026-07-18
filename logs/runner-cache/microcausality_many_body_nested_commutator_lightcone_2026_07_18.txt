@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/microcausality_many_body_nested_commutator_lightcone_2026_07_18.py
-runner_sha256: 4bf91d555cede11e3cd2cf6986e17aba2306628f253ecd60def16b1602f48899
+runner_sha256: 9f82537c73a275bc1cb3e27a6aca3a3828d0f38d61377d632990a6740cab783b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 PASS: L1a a bond not touching the support commutes exactly
@@ -19,10 +19,11 @@ PASS: T2d the stall mechanism: the two bonds commute exactly
 PASS: T3a factorial tail domination d!/k! <= 1/(k-d)! via binomial >= 1
 PASS: T3b exact partial-tail instance is dominated by the closed form
 PASS: T3c commutator norm-bound instance ||[P,Q]||^2 <= 4||P||^2||Q||^2
+PASS: T3d rebuilt chain: triangle plus submultiplicativity on the instance
 PASS: N1 cited note names the many-body slice as a separate open task
 PASS: N2 axiom memo supplies no dynamics
 PASS: N3 target identifier and labels
-TOTAL: PASS=16 FAIL=0
+TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----
 

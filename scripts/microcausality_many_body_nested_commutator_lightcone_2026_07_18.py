@@ -155,6 +155,24 @@ def main():
         "T3c commutator norm-bound instance ||[P,Q]||^2 <= 4||P||^2||Q||^2",
         sp.simplify(prod_bound_sq - comm_norm_sq).is_nonnegative is True,
     )
+    pq_norm_sq = max((
+        (two_by_two * other).H * (two_by_two * other)
+    ).eigenvals())
+    qp_norm_sq = max((
+        (other * two_by_two).H * (other * two_by_two)
+    ).eigenvals())
+    p_norm_sq = max((two_by_two.H * two_by_two).eigenvals())
+    q_norm_sq = max((other.H * other).eigenvals())
+    checks.check(
+        "T3d rebuilt chain: triangle plus submultiplicativity on the instance",
+        sp.simplify(p_norm_sq * q_norm_sq - pq_norm_sq).is_nonnegative is True
+        and sp.simplify(p_norm_sq * q_norm_sq - qp_norm_sq).is_nonnegative
+        is True
+        and sp.simplify(
+            (sp.sqrt(pq_norm_sq) + sp.sqrt(qp_norm_sq)) ** 2 - comm_norm_sq
+        ).is_nonnegative
+        is True,
+    )
 
     # Group N -- source needles.  __TOTAL__ deliberately not matched.
     checks.needle(

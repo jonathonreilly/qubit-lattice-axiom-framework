@@ -22,21 +22,19 @@
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "dm_neutrino_weak_vector_theorem_note_2026-04-15"
-  ],
+  "deps": [],
   "direct_in_degree": 17,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 18.218,
+  "load_bearing_score": 18.24,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "6e117d47f2f4b7b4ccbc0d2121fcb824dd399eeb7b52f7d17e4ca2b8967d9514",
+  "note_hash": "80c3831d8b7dff0731d24eee8a96cd51f1c24d7e87dcfa2a60b89c166c5a0e3d",
   "note_path": "docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1543,7 +1541,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -1553,6 +1551,6 @@
   },
   "runner_path": "scripts/frontier_dm_neutrino_dirac_bridge_theorem.py",
   "title": "DM Neutrino Dirac Bridge Theorem Note",
-  "transitive_descendants": 841,
+  "transitive_descendants": 854,
   "verdict_rationale": null
 }

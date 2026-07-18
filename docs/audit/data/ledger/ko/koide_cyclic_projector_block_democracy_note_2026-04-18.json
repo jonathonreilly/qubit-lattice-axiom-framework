@@ -57,7 +57,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 7.248,
+  "load_bearing_score": 7.392,
   "load_bearing_step": "Demanding equal block power E_+ = E_perp gives r0^2/3 = (r1^2 + r2^2)/6, equivalently 2 r0^2 = r1^2 + r2^2.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -142,6 +142,6 @@
   },
   "runner_path": "scripts/frontier_koide_cyclic_projector_block_democracy.py",
   "title": "Koide Cyclic-Projector Block Democracy",
-  "transitive_descendants": 75,
+  "transitive_descendants": 83,
   "verdict_rationale": "Within its bounded scope, the claim closes as an algebraic identity over the stated cyclic basis, coefficients, and real-trace metric. The runner source performs actual numeric and symbolic computations of the Gram matrix, block powers, and equation equivalences rather than merely printing constants. The observed charged-lepton section is only an external witness check and is not needed for the algebraic selector equivalence."
 }

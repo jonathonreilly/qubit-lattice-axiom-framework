@@ -52,7 +52,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "43c916720b8e7303f7b6bffc4cd7b85d57f1e9da6e3c757d5aea96d89e94a3fc",
+  "note_hash": "23fde8fec85d423ece8d085742dd6c912c35ee2d4f80ad36fd1447f78161a59d",
   "note_path": "docs/KOIDE_A1_PROBE_Q_READOUT_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe16.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -67,7 +67,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/cl3_koide_a1_probe_q_readout_functional_2026_05_09_probe16.py",
-  "title": "Koide A1 Probe 16 \u2014 Q-Readout / Functional-Level Pivot, Sharpened Bounded Obstruction",
+  "title": "Koide Q-readout Probe 16 \u2014 Functional-Level Pivot, Sharpened Bounded Obstruction",
   "transitive_descendants": 5,
   "verdict_rationale": null
 }

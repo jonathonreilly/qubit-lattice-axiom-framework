@@ -49,7 +49,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "b7a21c96ce0ca0e30351786d71b9b85228344142f8ab1971fde3dea851c4bc92",
+  "note_hash": "c17c0b5819a75a51a1eda4de80f3d574678bb07036e67e6a9a3103c226388ab4",
   "note_path": "docs/SCALAR_SELECTOR_FULL_STACK_RECOVERY_NOTE_2026-04-19.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

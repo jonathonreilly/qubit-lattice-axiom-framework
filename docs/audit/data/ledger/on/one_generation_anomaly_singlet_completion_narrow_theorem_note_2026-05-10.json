@@ -31,12 +31,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.449,
+  "load_bearing_score": 11.472,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "7a2a142015b91b1641eb58479d4635c0a93a0cd4326c34e1a9934b8928ee247f",
+  "note_hash": "8114db0551aa419ebeff4d4b2ed52390f0b33284ff2aa496e22546e92e8348a3",
   "note_path": "docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -5092,7 +5092,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -5102,6 +5102,6 @@
   },
   "runner_path": "scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py",
   "title": "One-Generation Anomaly Singlet Completion Narrow Theorem",
-  "transitive_descendants": 698,
+  "transitive_descendants": 709,
   "verdict_rationale": null
 }

@@ -15,16 +15,15 @@
   "claim_id": "koide_weighted_character_source_axis_theorem_note_2026-04-20",
   "claim_scope": null,
   "claim_type": "no_go",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "koide_microscopic_scalar_selector_target_note_2026-04-18",
-    "koide_cyclic_wilson_descendant_law_note_2026-04-18"
+    "koide_microscopic_scalar_selector_target_note_2026-04-18"
   ],
   "direct_in_degree": 2,
   "effective_status": "unaudited",
@@ -37,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "90e03f78bea5cdb9485f14f97b814e437d92d8f99e34a9ac758003bcb36aca8a",
+  "note_hash": "e4574a2b2a8d7ccca596bcd62cb6f7acd3de401085a362a1de4fdbfe8e3f99ed",
   "note_path": "docs/KOIDE_WEIGHTED_CHARACTER_SOURCE_AXIS_THEOREM_NOTE_2026-04-20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -78,7 +77,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_koide_weighted_character_source_axis_theorem.py",
-  "title": "Koide Weighted Character-Source Axis Theorem",
+  "title": "Koide Weighted Character-Source Principal-Axis No-Go",
   "transitive_descendants": 46,
   "verdict_rationale": null
 }

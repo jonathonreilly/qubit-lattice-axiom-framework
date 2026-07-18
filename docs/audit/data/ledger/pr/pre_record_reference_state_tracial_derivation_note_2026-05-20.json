@@ -54,7 +54,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "retained_pending_chain",
-  "load_bearing_score": 10.2,
+  "load_bearing_score": 10.407,
   "load_bearing_step": "The UHF C*-algebra of type 2^\u221e admits a unique tracial state obtained as the inductive limit of the finite-region normalized traces.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1917,6 +1917,6 @@
   },
   "runner_path": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
   "title": "Pre-Record Reference State as the Unique Tracial State on the One-Qubit Z^3 Algebra",
-  "transitive_descendants": 51,
+  "transitive_descendants": 59,
   "verdict_rationale": "The scoped mathematical statement is correct: finite-region matrix-algebra trace uniqueness and density of the local union establish the unique quasi-local tracial state. The runner performs twelve genuine finite-dimensional algebraic checks and accurately limits its evidentiary scope. Because the result is a class-A corollary of one accepted foundation parent together with standard operator-algebra mathematics and contains no class-D comparison, the rubric assigns audited_decoration."
 }

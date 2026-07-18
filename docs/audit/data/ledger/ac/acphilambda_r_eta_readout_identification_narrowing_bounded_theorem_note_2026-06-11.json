@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -37,7 +37,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 3.959,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -357,6 +357,6 @@
   },
   "runner_path": "scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py",
   "title": "AC_phi_lambda R-eta Narrowing: Forced Form Layer Plus One Open Identification Gate",
-  "transitive_descendants": 1,
+  "transitive_descendants": 10,
   "verdict_rationale": null
 }

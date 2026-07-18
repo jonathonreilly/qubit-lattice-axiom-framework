@@ -369,7 +369,7 @@
         },
         {
           "claim_id": "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
@@ -605,10 +605,6 @@
         },
         {
           "claim_id": "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16",
-          "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16",
           "effective_status": "unaudited"
         },
         {
@@ -904,10 +900,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "dm_neutrino_weak_vector_theorem_note_2026-04-15",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "dm_neutrino_z3_character_transfer_theorem_note_2026-04-15",
           "effective_status": "unaudited"
         },
@@ -1092,6 +1084,10 @@
           "effective_status": "unaudited"
         },
         {
+          "claim_id": "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+          "effective_status": "unaudited"
+        },
+        {
           "claim_id": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
           "effective_status": "unaudited"
         },
@@ -1117,6 +1113,10 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "effective_status": "unaudited"
+        },
+        {
+          "claim_id": "gauge_vacuum_plaquette_susceptibility_flow_theorem_note",
           "effective_status": "unaudited"
         },
         {
@@ -1205,7 +1205,7 @@
         },
         {
           "claim_id": "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "hierarchy_matsubara_decomposition_note",
@@ -1324,10 +1324,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "koide_a1_probe_retained_u1_hunt_bounded_obstruction_note_2026-05-09_probe14",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "koide_a1_probe_rg_fixed_point_bounded_obstruction_note_2026-05-08_probe5",
           "effective_status": "unaudited"
         },
@@ -1384,23 +1380,7 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "koide_bae_probe_phi_from_z3_character_note_2026-05-09_probe24",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "koide_bae_probe_physical_extremization_bounded_obstruction_note_2026-05-09_probe25",
-          "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "koide_bae_probe_spectrum_cone_bounded_obstruction_note_2026-05-09_probe22",
-          "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "koide_bae_probe_wilson_chain_mass_note_2026-05-09_probe19",
-          "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "koide_bae_probe_wilson_dimensional_consistency_bounded_note_2026-05-09_probe26",
           "effective_status": "unaudited"
         },
         {
@@ -1577,7 +1557,7 @@
         },
         {
           "claim_id": "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "lhcm_y_normalization_from_anomaly_and_convention_note_2026-05-02",
@@ -2886,15 +2866,15 @@
         }
       ],
       "certified": false,
-      "closure_size": 716,
+      "closure_size": 709,
       "lane": "theta_retirement",
       "root": "strong_cp_theta_zero_note",
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 661
+      "uncertified_count": 656
     }
   ],
-  "repo_head": "ec5bc76ac71c7a4e8c5b7826919ffa6af9ad5e7c",
+  "repo_head": "5685a5ae8a82ead36dbbe3eb71629c956ee50510",
   "schema": "lane_certification_v2"
 }

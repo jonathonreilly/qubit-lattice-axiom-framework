@@ -62,7 +62,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": "2026-07-13T01:10:00+00:00",
   "claim_type_provenance": "audited",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -73,13 +73,13 @@
     "minimal_axioms",
     "realized_state_primitive"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 2,
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 3.322,
   "load_bearing_step": "C3 invariance makes rho character-diagonal and the supplied antiunitary exchanges the two nontrivial characters, forcing rho=diag(p_s,p_d/2,p_d/2) while unequal cell ranks leave p_s/p_d free.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -292,6 +292,6 @@
   },
   "runner_path": "scripts/frontier_koide_dial_shape_qualification_2026_07_11.py",
   "title": "Generation Weight Dial: Shape Forced, Value Unfixed (from the Qualification) \u2014 Bounded Theorem",
-  "transitive_descendants": 1,
+  "transitive_descendants": 4,
   "verdict_rationale": "Issue: the commutant, antiunitary-exchange, invariant-state, rank/orbit, and two-point calculations are correct, but the density/Born form and readout context are supplied and the K/CPT and two no-go parents are unaudited. Why this blocks: the one-parameter dial is only a conditional classification and the Qualification cannot by itself make the registered point into derivation output. Repair target: retain the context/no-go parents and derive a density-weight/readout bridge with a lattice-motion-covariant, record-decidable domain. Claim boundary until fixed: within the supplied density-state and invariance class, doublet equality is forced while the singlet-doublet ratio remains free."
 }

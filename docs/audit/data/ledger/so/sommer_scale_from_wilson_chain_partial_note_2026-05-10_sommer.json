@@ -26,13 +26,13 @@
     "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02",
     "bridge_lanes_promotion_proposal_note_2026-05-10_lanes",
     "alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18",
-    "minimal_axioms_2026-05-03",
     "complete_prediction_chain_2026_04_15",
-    "confinement_string_tension_note",
     "alpha_s_derived_note",
     "qcd_low_energy_running_bridge_note_2026-05-01",
     "koide_bae_probe_wilson_chain_mass_note_2026-05-09_probe19",
+    "confinement_string_tension_note",
     "hadron_lane1_sqrt_sigma_retention_gate_audit_support_note_2026-04-27",
+    "minimal_axioms_2026-05-03",
     "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
     "graph_first_su3_integration_note",
     "su3_casimir_fundamental_theorem_note_2026-05-02"
@@ -48,7 +48,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c94e76214c0b8951f191b97a646cd64d98b9be23a1a6bfa0e4ffde4afa018af0",
+  "note_hash": "e107d543fd36fa86c4bb83797557b0bd342e6869792e5369ecf7800ae2c77e19",
   "note_path": "docs/SOMMER_SCALE_FROM_WILSON_CHAIN_PARTIAL_NOTE_2026-05-10_sommer.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -63,7 +63,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/cl3_sommer_scale_from_wilson_chain_2026_05_10_sommer.py",
-  "title": "Sommer Scale `r_0` from the Retained Wilson Chain \u2014 Lane 1 Sub-Import Probe (Partial Closure)",
+  "title": "Sommer Scale `r_0` from Supplied Wilson-Chain Inputs \u2014 Lane 1 Bounded Probe",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

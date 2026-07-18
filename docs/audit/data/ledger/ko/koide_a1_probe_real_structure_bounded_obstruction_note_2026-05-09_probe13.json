@@ -41,13 +41,13 @@
     "koide_a1_probe_rp_frobenius_bounded_obstruction_note_2026-05-08_probe1",
     "koide_a1_route_d_newton_girard_bounded_obstruction_note_2026-05-08_routed"
   ],
-  "direct_in_degree": 17,
+  "direct_in_degree": 16,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 17.897,
+  "load_bearing_score": 17.42,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -68,6 +68,6 @@
   },
   "runner_path": "scripts/cl3_koide_a1_probe_real_structure_2026_05_09_probe13.py",
   "title": "Koide A1 Probe 13 \u2014 Real-Structure / Antilinear-Involution Sharpened Bounded Obstruction",
-  "transitive_descendants": 673,
+  "transitive_descendants": 684,
   "verdict_rationale": null
 }

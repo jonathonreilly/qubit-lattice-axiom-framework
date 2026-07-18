@@ -623,7 +623,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4c2d1258000b2d0a86f9aa165c4d25e631039a975e64733cbade59133705e48f",
+  "note_hash": "8e6968b9a1a16b6480248af4296269b3c60f4273f47b6299e28cbbae69b66090",
   "note_path": "docs/publication/ci3_z3/DERIVATION_ATLAS.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

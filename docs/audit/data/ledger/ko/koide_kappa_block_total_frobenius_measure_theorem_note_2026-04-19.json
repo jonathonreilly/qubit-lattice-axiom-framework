@@ -26,18 +26,18 @@
     "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
     "koide_mru_weight_class_obstruction_theorem_note_2026-04-19"
   ],
-  "direct_in_degree": 25,
+  "direct_in_degree": 24,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 21.901,
+  "load_bearing_score": 21.424,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "da7aa1d876d02b53afcef66c614af6c467a55558f9828f1ca30f89983cc9790c",
+  "note_hash": "a64a5fcd72ae93132520b0a97293f4913f6c84f63626f89bea3e09f4bb3c0553",
   "note_path": "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -289,7 +289,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -299,6 +299,6 @@
   },
   "runner_path": "scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py",
   "title": "Koide kappa Block-Total Frobenius Measure Theorem",
-  "transitive_descendants": 675,
+  "transitive_descendants": 686,
   "verdict_rationale": null
 }

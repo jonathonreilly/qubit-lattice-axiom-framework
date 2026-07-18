@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.0,
+  "load_bearing_score": 3.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/condition_alphabet_identification_orientation_free_2026_07_04.py",
   "title": "The Condition Domain Identified: Openness Plus Possibility Content Transforming as (Even Scalar, Pseudoscalar, Polar Vector, Axial Vector) Under the Coupled Cubic Action \u2014 the DOMAIN-Level Alphabet Meets the Chirality Threshold (the Domain-Level Small-Alphabet Shortcut Is a Route No-Go; the REALIZED Record-Content Alphabet Is Rule-Generated and Remains Open) Yet No Odd Channel Exists Below Vector Triples, and Every Chiral Channel Is the Same Single Orientation Bit (Bounded Theorem + Route No-Go)",
-  "transitive_descendants": 3,
+  "transitive_descendants": 6,
   "verdict_rationale": null
 }

@@ -29,12 +29,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 19.665,
+  "load_bearing_score": 19.695,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "88da8edd2fb3491e7d4ce6cc4336061db35e7cc7713e1183cbabd1c4d68fa487",
+  "note_hash": "e1025f9fd1577ddbcf04b108fb1b505fbfa4fa02f96db25b3c687dff8d04732a",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1531,7 +1531,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
-  "title": "Gauge-Vacuum Plaquette Conditional Source-Sector Matrix-Element Factorization Theorem",
-  "transitive_descendants": 811,
+  "title": "Gauge-Vacuum Plaquette Supplied-Diagonal Source-Sector Factorization Theorem",
+  "transitive_descendants": 828,
   "verdict_rationale": null
 }

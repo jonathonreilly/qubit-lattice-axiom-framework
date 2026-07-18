@@ -29,12 +29,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.955,
+  "load_bearing_score": 13.978,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "ecee9bbb6f64540b39b5d8ba2f4fffb0e63fbdb21daff6a49c0579700e5f290b",
+  "note_hash": "6a7ddbef1f074255399ba86caefb02bb3162703b817ca0274c831449d74c94e7",
   "note_path": "docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -477,7 +477,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -486,7 +486,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_koide_q_readout_factorization_theorem.py",
-  "title": "Koide Q Readout Factorization Theorem",
-  "transitive_descendants": 701,
+  "title": "Koide Q Readout Rank/Kernel Quotient Theorem",
+  "transitive_descendants": 712,
   "verdict_rationale": null
 }

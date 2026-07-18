@@ -29,12 +29,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.676,
+  "load_bearing_score": 13.706,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "91ac4b305a5f4996b2121561e945b05cc7c7d14e06c581dcc44360a47d76726a",
+  "note_hash": "b77cf642601e158b8301684586a1492dcf2cead80cb00103fcf6080808155a06",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1452,7 +1452,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py",
-  "title": "Gauge-Vacuum Plaquette Rho(p,q)(6) Wilson Environment Bounded Note",
-  "transitive_descendants": 817,
+  "title": "Finite Evaluation of a Stipulated SU(3) Character Integral at x=2",
+  "transitive_descendants": 834,
   "verdict_rationale": null
 }

@@ -19,28 +19,24 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "medium",
+  "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "gauge_vacuum_plaquette_reduction_existence_theorem_note",
-    "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
+    "gauge_vacuum_plaquette_reduction_existence_theorem_note"
   ],
-  "direct_in_degree": 3,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [
-    "scripts/canonical_plaquette_surface.py",
-    "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py"
-  ],
+  "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.055,
+  "load_bearing_score": 11.706,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "09452480f5e2c0b41693393aa18146692e09a46b1ebc790ea1a1742579e543f0",
+  "note_hash": "5121d03fb03a3bfa03c9f586d0a15c8dc230ff5f073534c9a813f7dae94e48e2",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -290,7 +286,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -299,7 +295,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py",
-  "title": "Gauge-Vacuum Plaquette Susceptibility-Flow Finite Packet",
-  "transitive_descendants": 46,
+  "title": "Gauge-Vacuum Plaquette Inverse-Coordinate Derivative Packet",
+  "transitive_descendants": 834,
   "verdict_rationale": null
 }

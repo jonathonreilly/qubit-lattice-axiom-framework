@@ -28,7 +28,6 @@
     "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
     "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
     "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-    "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
     "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
     "flavor_hw1_staggered_projection_democratic_r0_2026-06-02"
   ],
@@ -43,7 +42,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "b7b050eb9492f98e7ed10d329c73453cc20889dab87ba41bb14cfed3c42ebdc1",
+  "note_hash": "8dd361d0867ef1d8fef58dc277c410b8cdcf938893cbbdb550a52dfadf964042",
   "note_path": "docs/FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -283,7 +282,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -292,7 +291,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_rep_channel_cannot_source_spread_2026_06_15.py",
-  "title": "The non-abelian (colour) gauge-representation channel cannot source the sector r-spread \u2014 the splitter is abelian/electroweak (narrow no-go)",
+  "title": "Common-scalar and non-abelian colour-representation channels cannot source the displayed sector r-spread (narrow no-go)",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

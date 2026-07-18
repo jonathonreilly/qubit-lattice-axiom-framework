@@ -29,12 +29,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.399,
+  "load_bearing_score": 10.422,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "40ad85cfd965404540416f582961c955643b11b47a7d9e0b1c5f5695f039fd9e",
+  "note_hash": "b423abbb0f7d47cab90de1d6e7bddf40d538f1f2ba87422334f3193b97fa363f",
   "note_path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -237,7 +237,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -246,7 +246,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_circulant_parity_cp_tensor_narrow.py",
-  "title": "Hermitian Circulant Parity Decomposition + CP-Tensor Narrow Theorem",
-  "transitive_descendants": 674,
+  "title": "Hermitian Circulant Parity Decomposition + Coordinate-Polynomial Narrow Theorem",
+  "transitive_descendants": 685,
   "verdict_rationale": null
 }

@@ -646,9 +646,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_renaming",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_renaming",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -676,13 +676,7 @@
       "generated_order": 5,
       "group_id": "wilson_exact_local_chain",
       "group_order": 2,
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py",
-        "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
-        "scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py",
-        "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
-        "scripts/frontier_scalar_3plus1_temporal_ratio.py"
-      ],
+      "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py",
@@ -743,7 +737,10 @@
       "audit_question": "Can the exact connected plaquette cumulant hierarchy on the finite Wilson source surface be reclassified as positive_theorem while leaving explicit nonperturbative beta_eff closure open?",
       "blocked_by_group_ids": [],
       "claim_id": "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
-      "deps": [],
+      "deps": [
+        "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+        "gauge_vacuum_plaquette_susceptibility_flow_theorem_note"
+      ],
       "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
       "dispatch_kind": "promotion_reaudit",
       "expected_current_audit_status": "audited_clean",
@@ -760,13 +757,7 @@
       "generated_order": 7,
       "group_id": "wilson_exact_local_chain",
       "group_order": 2,
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py",
-        "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
-        "scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py",
-        "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
-        "scripts/frontier_scalar_3plus1_temporal_ratio.py"
-      ],
+      "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py",
@@ -808,8 +799,6 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
-        "scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py",
-        "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
         "scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py",
         "scripts/frontier_scalar_3plus1_temporal_ratio.py"
       ],
@@ -1486,9 +1475,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_audit_status": "audited_decoration",
+      "actual_claim_type": "decoration",
+      "actual_effective_status": "retained_pending_chain",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -2985,9 +2974,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "audit_question": "Useful finite coefficient table, but intentionally finite-box support; reconsider later only if finite tables are accepted as scoped positive theorems.",
       "claim_id": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
       "expected_current_audit_status": "audited_clean",

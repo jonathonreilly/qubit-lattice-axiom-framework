@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "d2f71c68d96e38126a5f6c98e9c4008eaaf61ad9371ab260a9f7f6b311f17569",
+  "note_hash": "7e0788df0d03d6f2f801065f63c19c5bf62aa60665a06f313c9589bd8ee14ea0",
   "note_path": "docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

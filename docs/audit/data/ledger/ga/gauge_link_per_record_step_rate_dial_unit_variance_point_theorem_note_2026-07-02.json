@@ -24,7 +24,6 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "g_bare_rigidity_theorem_note",
-    "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
     "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
     "record_classical_semigroup_boundary_2026-06-06",
     "scale_reference_primitive"
@@ -40,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "be8e2d5287982d335d09e96baefeb2b0f6801d66a39e735e7a79da1c5e9fb529",
+  "note_hash": "baf0e847b477b21fef616383b4b990817294e0b1dc5e8b9c6f521ea302d7d68f",
   "note_path": "docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

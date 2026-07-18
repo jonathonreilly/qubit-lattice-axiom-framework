@@ -23,9 +23,7 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "ckm_small_vs_pmns_large_from_record_readout_context_narrow_theorem_note_2026-06-06",
     "three_generation_observable_theorem_note",
-    "quark_c3_circulant_source_law_boundary_note_2026-04-28",
     "delta_magnitude_reduces_to_massless_gravity_scale_narrow_theorem_note_2026-06-06",
     "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
     "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
@@ -41,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "7330b27529ca87bfca67cc91f377c150947ed4367a3927adcaaf0aebf13677b7",
+  "note_hash": "2e9f8d5e193fa6de62fe8f088767c034cb2aeb383487e5590e2ca3446e94bbc2",
   "note_path": "docs/ACTIVE_SECTOR_GROUNDED_BY_MASS_VS_K_DOMINANT_OPERATOR_SIEVE_NARROW_THEOREM_NOTE_2026-06-06.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -56,7 +54,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/active_sector_mass_vs_k_sieve_grounding_runner.py",
-  "title": "The Active-Sector Assignment (Large PMNS / Small CKM) is Grounded by the Mass-vs-|K| Dominant-Operator Sieve, Not the Refuted Position-Detection Story \u2014 Narrow Theorem",
+  "title": "Conditional Mass-vs-|K| Dominant-Operator Sieve for an Active-Sector Assignment \u2014 Narrow Theorem",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

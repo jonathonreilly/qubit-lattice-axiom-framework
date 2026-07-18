@@ -22,21 +22,19 @@
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "koide_dweh_cyclic_compression_note_2026-04-18"
-  ],
-  "direct_in_degree": 6,
+  "deps": [],
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.416,
+  "load_bearing_score": 10.441,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "a66d422251ef7072ff7ca22c94c88a81ce60941acb53d7181663d4fa2cf213f8",
+  "note_hash": "2d6d867826299deff2d8df3695dd93337e71bb694e292f9b8a24ce898e74cefc",
   "note_path": "docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -259,7 +257,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_koide_cyclic_wilson_descendant_law.py",
-  "title": "Abstract Cyclic-Compression Three-Coordinate Reconstruction Lemma",
-  "transitive_descendants": 682,
+  "title": "Adjacent-Chain Cyclic-Response Compression and Riesz-Reconstruction Lemma",
+  "transitive_descendants": 694,
   "verdict_rationale": null
 }

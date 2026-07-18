@@ -27,7 +27,6 @@
     "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
     "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
     "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-    "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
     "three_generation_observable_theorem_note"
   ],
   "direct_in_degree": 1,
@@ -41,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c902f582475bfa8efe0d991d73000cfa83e854cc478a5a395515ac5f0abc5316",
+  "note_hash": "9c6a7baef825f7f16e7ff08ec9b9924afcd70ae286b41e592d4807cb9652357e",
   "note_path": "docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -188,7 +187,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

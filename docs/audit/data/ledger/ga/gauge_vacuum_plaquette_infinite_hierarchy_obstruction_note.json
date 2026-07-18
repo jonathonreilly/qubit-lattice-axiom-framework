@@ -23,6 +23,8 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
+    "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05",
+    "gauge_vacuum_plaquette_spectral_measure_theorem_note",
     "gauge_vacuum_plaquette_reduction_existence_theorem_note",
     "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10"
   ],
@@ -41,7 +43,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "9d97c9a90bd28a344a955f1d252de7a75df6c3bb988c550a152695cfdccc9752",
+  "note_hash": "2517ebbe899350d33d1634b9b1044782e4786925461f2709942f61290bde5469",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -371,7 +373,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "relabel_date": "2026-05-06T17:45:26.976876+00:00",
   "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
   "runner_check_breakdown": {

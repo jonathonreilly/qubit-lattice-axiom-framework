@@ -39,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5fa1f028528e6ba9bc9c5fdbe65cf85c4d7a4a603f7295d7822c545323731bc9",
+  "note_hash": "19f599e1c0528d62ffc008f93adeb461c347f36a02bb110c69d63aa38f131d42",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_STRIPPING_UNIQUENESS_NARROW_NOTE_2026-05-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -182,7 +182,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow.py",
-  "title": "Gauge-Vacuum Plaquette Residual Environment Finite-Box Stripping-Uniqueness Narrow Note",
+  "title": "Gauge-Vacuum Plaquette Finite-Box Matrix-Factorization Stripping-Uniqueness Narrow Note",
   "transitive_descendants": 0,
   "unattributed_audit_provenance": [
     {

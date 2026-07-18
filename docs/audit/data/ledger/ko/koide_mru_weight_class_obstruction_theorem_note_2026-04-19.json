@@ -25,18 +25,18 @@
   "deps": [
     "koide_dweh_cyclic_compression_note_2026-04-18"
   ],
-  "direct_in_degree": 17,
+  "direct_in_degree": 16,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 17.903,
+  "load_bearing_score": 17.426,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "47bea166d928cd558609856efe168b57411905d0a178987b1d699ea4f62fe37a",
+  "note_hash": "082ed6af8c12036b37e9ef04c2944abfdf05751469fb892537f06a2667b7528d",
   "note_path": "docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -4998,7 +4998,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -5008,6 +5008,6 @@
   },
   "runner_path": "scripts/frontier_koide_mru_weight_class_obstruction_theorem.py",
   "title": "Koide MRU Unreduced Weight-Class Obstruction Boundary",
-  "transitive_descendants": 676,
+  "transitive_descendants": 687,
   "verdict_rationale": null
 }

@@ -34,12 +34,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.899,
+  "load_bearing_score": 9.922,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "b6eac5ff63e2544ed80f5c0927504478eb33f17c85449a70575a574ea88f6b84",
+  "note_hash": "38d584df1761faef204c2bbd95b10ffc3f0b66755bef7752eaf996954ec7fc70",
   "note_path": "docs/DM_NEUTRINO_ODD_MIXED_BRIDGE_EXTENSION_NOTE_2026-04-15.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -91,6 +91,6 @@
   },
   "runner_path": "scripts/frontier_dm_neutrino_odd_mixed_bridge_extension.py",
   "title": "DM Neutrino Odd Mixed-Bridge Extension",
-  "transitive_descendants": 674,
+  "transitive_descendants": 685,
   "verdict_rationale": null
 }

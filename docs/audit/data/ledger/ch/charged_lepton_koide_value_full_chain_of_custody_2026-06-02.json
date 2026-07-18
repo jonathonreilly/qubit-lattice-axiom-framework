@@ -51,12 +51,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.644,
+  "load_bearing_score": 11.728,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4821cd21c4878806b1c7edab188f26ab6db99d34df8ee97ffd3d1cfd3473ea58",
+  "note_hash": "0ea38efea33028a1382071ca0a98bb1b8bc0863edb62518e1e23f45edd069da3",
   "note_path": "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -758,6 +758,6 @@
   },
   "runner_path": "scripts/flavor_charged_lepton_value_full_chain_2026_06_02.py",
   "title": "Charged-Lepton Koide Value \u2014 Full Chain of Custody to the Open `r` Selector",
-  "transitive_descendants": 49,
+  "transitive_descendants": 52,
   "verdict_rationale": null
 }

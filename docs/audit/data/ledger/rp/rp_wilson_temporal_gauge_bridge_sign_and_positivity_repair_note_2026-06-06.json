@@ -40,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8389c97cb22fba9484c6d1b02ef3948e897cb0f4483fc3702b83d39999767454",
+  "note_hash": "5f36b5fd0375a7712cbd20432d5a0f55bb4da6d861fc3eda7f3c5e54f798ded5",
   "note_path": "docs/RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -115,7 +115,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -124,7 +124,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py",
-  "title": "Reflection Positivity \u2014 Wilson Plaquette Temporal-Gauge Bridge: Sign Repair + a Manifestly-Positive Character-Coefficient Theorem (Repairs the `audited_failed` Bridge)",
+  "title": "Reflection Positivity \u2014 Wilson Plaquette Temporal-Gauge Bridge: Sign Repair + a Manifestly-Positive Character-Coefficient Theorem (Historical 2026-06-06 Repair Record)",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

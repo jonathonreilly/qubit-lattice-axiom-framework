@@ -28,8 +28,8 @@
     "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
     "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
     "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-    "koide_q_readout_factorization_theorem_2026-04-22",
-    "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
+    "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
+    "koide_q_readout_factorization_theorem_2026-04-22"
   ],
   "direct_in_degree": 1,
   "effective_status": "unaudited",
@@ -44,7 +44,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "86daaee15781a460e7b8cbf3be11c9d3615924c54a1cc13b97d6847f3e57b4e9",
+  "note_hash": "c678f5fa75af5bb58f2002414d1f32ff4692596bc5ec8b002a81bf0fcfb56f9d",
   "note_path": "docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

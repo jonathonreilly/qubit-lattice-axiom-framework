@@ -15,8 +15,8 @@
   "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
-  "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
@@ -29,12 +29,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.666,
+  "load_bearing_score": 11.689,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5e8bb69ed48e247aa937694c130d7e3ec50fd49305a7edb4c05aba9912d2296b",
+  "note_hash": "bfcd06cbd71305062c6dfc58211cae68ef684291ba0be63c39c9b3230603c34d",
   "note_path": "docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -251,7 +251,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -260,7 +260,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py",
-  "title": "Flavor Carrier Momentum Type From Translation Theorem",
-  "transitive_descendants": 1148,
+  "title": "Finite Translation-Character Profiles and Projectors Theorem",
+  "transitive_descendants": 1166,
   "verdict_rationale": null
 }

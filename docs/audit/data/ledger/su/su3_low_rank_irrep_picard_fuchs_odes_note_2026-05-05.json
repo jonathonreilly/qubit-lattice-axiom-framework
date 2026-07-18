@@ -25,18 +25,18 @@
   "deps": [
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.7,
+  "load_bearing_score": 7.522,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "81b79487eb45913fbed76c7761b744327ee48bcee3bdfbabb2152c4affef4c3b",
+  "note_hash": "d4c27e90f58332360ae7f51f0d9cf55bc70aad635440b0b76f9882c1f9b834c7",
   "note_path": "docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1536,7 +1536,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -1546,6 +1546,6 @@
   },
   "runner_path": "scripts/frontier_su3_low_rank_picard_fuchs_odes_2026_05_05.py",
   "title": "SU(3) Low-Rank Irrep Character Coefficients: Picard-Fuchs ODE Catalog",
-  "transitive_descendants": 12,
+  "transitive_descendants": 64,
   "verdict_rationale": null
 }

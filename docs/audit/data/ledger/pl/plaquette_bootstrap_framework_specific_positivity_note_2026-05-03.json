@@ -26,7 +26,6 @@
     "axiom_first_reflection_positivity_theorem_note_2026-04-29",
     "observable_principle_from_axiom_note",
     "plaquette_self_consistency_note",
-    "gauge_vacuum_plaquette_framework_point_underdetermination_note",
     "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
   ],
   "direct_in_degree": 3,
@@ -40,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "93bf7d6e6eac1b7c444290e0f2e5fcf801d10eda2a8305a073d605524b331204",
+  "note_hash": "4fc6192ebb46af405f239651e96b0f233a488cab02c481181733175ed3286219",
   "note_path": "docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_SPECIFIC_POSITIVITY_NOTE_2026-05-03.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

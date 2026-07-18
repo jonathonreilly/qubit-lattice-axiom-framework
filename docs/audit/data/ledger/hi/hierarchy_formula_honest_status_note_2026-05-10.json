@@ -38,12 +38,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 18.93,
+  "load_bearing_score": 18.953,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "9fcbc3b7b15fcbccb534f1392ef75d1897e17628e4f59856ac7fd01dc9281cb0",
+  "note_hash": "11ba6709af5b94705f827d106fbaf98bb4cd0c282ffe3ef05ccdf824f0025264",
   "note_path": "docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -593,7 +593,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -603,7 +603,7 @@
   },
   "runner_path": "scripts/frontier_hierarchy_formula_honest_status.py",
   "title": "Hierarchy Formula `v_cand = M_Pl x (7/8)^(1/4) x alpha_LM^16` \u2014 Structural Support Theorem with Open B3/B4 Formula-Closure Gates",
-  "transitive_descendants": 689,
+  "transitive_descendants": 700,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

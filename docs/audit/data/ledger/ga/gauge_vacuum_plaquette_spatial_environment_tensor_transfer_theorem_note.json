@@ -32,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 25.662,
+  "load_bearing_score": 25.692,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "ddbc077ac665bae6ad5053c3707ee3dabbf184951ac722fbdeec84e6669eed04",
+  "note_hash": "e46a0f3633833a386f250e6c1bfbac08c1547ce900ff1268f569364cf48e28f8",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -439,7 +439,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -449,6 +449,6 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
   "title": "Gauge-Vacuum Plaquette Spatial Environment Tensor-Transfer Bounded Packet",
-  "transitive_descendants": 809,
+  "transitive_descendants": 826,
   "verdict_rationale": null
 }

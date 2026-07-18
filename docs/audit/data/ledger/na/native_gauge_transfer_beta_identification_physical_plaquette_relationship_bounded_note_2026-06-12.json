@@ -34,9 +34,7 @@
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [
-    "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py"
-  ],
+  "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
@@ -44,7 +42,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "158ea19dd034892a613ea407adc41fadba2286ac1612ae06c4df5b4148df26d3",
+  "note_hash": "932dd635ab5465906bf8c4bb0cdf59c04605a8c9f4ba16df3669899508022902",
   "note_path": "docs/NATIVE_GAUGE_TRANSFER_BETA_IDENTIFICATION_PHYSICAL_PLAQUETTE_RELATIONSHIP_BOUNDED_NOTE_2026-06-12.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

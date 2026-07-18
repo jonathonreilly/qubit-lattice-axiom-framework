@@ -39,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "69bfac0850fc673fd36ad40f7ccbc6122293e87f0ffb55bcbb5a8932f287182f",
+  "note_hash": "cc9668c1e54d4b6e0fcda1736967d53e484f3dff22ddc3448aadaa0bf347941e",
   "note_path": "docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -546,7 +546,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

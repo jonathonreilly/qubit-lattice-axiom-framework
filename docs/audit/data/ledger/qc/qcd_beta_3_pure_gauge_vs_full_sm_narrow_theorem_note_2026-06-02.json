@@ -25,8 +25,7 @@
   "deps": [
     "graph_first_su3_integration_note",
     "native_gauge_closure_note",
-    "three_generation_observable_count_corollary_note_2026-05-03",
-    "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10"
+    "three_generation_observable_count_corollary_note_2026-05-03"
   ],
   "direct_in_degree": 1,
   "effective_status": "unaudited",
@@ -39,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "ac2377aafe4ce03ac4b87bef583605076093c9c628ac0c26c7c35d514a2234a6",
+  "note_hash": "739cef581ceeb4739a15dcbe08be24fcf73d09807d3a882b10ba82dfc6347e51",
   "note_path": "docs/QCD_BETA_3_PURE_GAUGE_VS_FULL_SM_NARROW_THEOREM_NOTE_2026-06-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -173,7 +172,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

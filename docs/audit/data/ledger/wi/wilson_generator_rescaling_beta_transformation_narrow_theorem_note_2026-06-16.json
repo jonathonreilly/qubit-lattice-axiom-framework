@@ -36,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f6cf1520a7b7350fca5e99964027acfe60ac5505213fd685e2f28ace9b83da03",
+  "note_hash": "a835a24fc547b43bd9bd6918010730687b5f4bd7ff7e81f58870be85d146b292",
   "note_path": "docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -105,7 +105,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py",
-  "title": "Formal Generator/Coupling Label Rescaling and Coefficient Transformation",
+  "title": "Formal Scalar-Argument Rescaling and Gram Transformation",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

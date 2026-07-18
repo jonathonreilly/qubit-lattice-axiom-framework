@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -31,13 +31,13 @@
     "minimal_axioms",
     "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 3.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -214,6 +214,6 @@
   },
   "runner_path": "scripts/frontier_acphilambda_r_eta_value_face_registered_angle_2026_07_05.py",
   "title": "AC_phi_lambda Sub-Admission (ii) Value Face: Registered-Angle Functional, Law-Freeness, and Exactness Relocation",
-  "transitive_descendants": 0,
+  "transitive_descendants": 9,
   "verdict_rationale": null
 }

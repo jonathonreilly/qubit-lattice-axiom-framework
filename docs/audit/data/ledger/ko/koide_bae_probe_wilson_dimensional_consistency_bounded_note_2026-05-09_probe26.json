@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "critical",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -31,18 +31,18 @@
     "koide_a1_probe_operator_class_bounded_note_2026-05-08_probe6",
     "koide_a1_probe_retained_u1_hunt_bounded_obstruction_note_2026-05-09_probe14"
   ],
-  "direct_in_degree": 3,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.897,
+  "load_bearing_score": 7.555,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "a8a173e721e9ac1719a6671918ea9e320c9ef2c3f6e7f237207ea4a43d2d1b11",
+  "note_hash": "e09719ca9b090d42e193889a448d84c755d216dae562b96b516ba0d61165c0be",
   "note_path": "docs/KOIDE_BAE_PROBE_WILSON_DIMENSIONAL_CONSISTENCY_BOUNDED_NOTE_2026-05-09_probe26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -117,6 +117,6 @@
   },
   "runner_path": "scripts/cl3_koide_bae_probe_wilson_dimensional_consistency_2026_05_09_probe26.py",
   "title": "Koide BAE Probe 26 \u2014 Wilson-Chain Dimensional Consistency Bounded Obstruction",
-  "transitive_descendants": 673,
+  "transitive_descendants": 93,
   "verdict_rationale": null
 }

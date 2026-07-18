@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "critical",
+  "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -38,18 +38,18 @@
     "koide_a1_probe_retained_u1_hunt_bounded_obstruction_note_2026-05-09_probe14",
     "brannen_amplitude_equipartition_bae_rename_meta_note_2026-05-09"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.397,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "94833ddb6124d4e41cf8a42fcaccb0c8fcc7a0b7dac6547eb63722a5ae4a6a7d",
+  "note_hash": "8eadf038c09f4b066cf8d29fb8928127e05c7f35121580d7d9116272ff82519c",
   "note_path": "docs/KOIDE_BAE_PROBE_SPECTRUM_CONE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe22.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -64,7 +64,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/cl3_koide_bae_probe_spectrum_cone_2026_05_09_probe22.py",
-  "title": "Koide BAE Probe 22 \u2014 Spectrum-Level Cone Localization Pivot Bounded Obstruction",
-  "transitive_descendants": 673,
+  "title": "Abstract Circulant Cone-Slack Rewrite (historical Koide Probe 22) \u2014 Bounded Theorem",
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

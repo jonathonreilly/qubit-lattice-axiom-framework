@@ -47,12 +47,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.897,
+  "load_bearing_score": 11.92,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "04cc860a2cae0b8fdd420cfa61c5da234da93f32b800b76025d11f83939d3504",
+  "note_hash": "39fe9017e32cc48eb4096c275f155fd51877aac191f2194aaa8c8ed8ff1af675",
   "note_path": "docs/KOIDE_A1_ROUTE_D_NEWTON_GIRARD_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routed.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -67,7 +67,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/cl3_koide_a1_route_d_newton_girard_2026_05_08_routed.py",
-  "title": "Koide A1 Route D \u2014 Newton-Girard Polynomial Structure Bounded Obstruction",
-  "transitive_descendants": 673,
+  "title": "Newton-Girard Polynomial Candidate (historical Koide Route D) \u2014 Bounded Obstruction",
+  "transitive_descendants": 684,
   "verdict_rationale": null
 }

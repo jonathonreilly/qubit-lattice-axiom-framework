@@ -25,7 +25,6 @@
   "deps": [
     "native_gauge_closure_note",
     "graph_first_su3_integration_note",
-    "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
     "three_generation_observable_count_corollary_note_2026-05-03",
     "sm_relativistic_dof_count_import_note_2026-05-17",
     "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26"
@@ -41,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "0561f0557b269c049e1fb7034303b80493bf58b2f3bd7a06f4ccfce3699ccd7c",
+  "note_hash": "02a0cc01f24b34e6c1bb0033c676a7b4c21bf9a628a0fc01634824111d42a206",
   "note_path": "docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -25,8 +25,7 @@
   "deps": [
     "axiom_first_reflection_positivity_theorem_note_2026-04-29",
     "plaquette_self_consistency_note",
-    "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-    "gauge_vacuum_plaquette_framework_point_underdetermination_note"
+    "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
   ],
   "direct_in_degree": 3,
   "effective_status": "unaudited",
@@ -39,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8e3089fa12507e10b0b7060b4090e0c333a96a79aec19a208afbac86a33e8cf8",
+  "note_hash": "721ed00eb303a40f1054d17486c70683639855c9e9cf69b838b23c2b8baf4a32",
   "note_path": "docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

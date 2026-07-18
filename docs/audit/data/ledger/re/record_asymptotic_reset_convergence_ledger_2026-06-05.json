@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 3.085,
+  "load_bearing_score": 4.307,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/frontier_record_asymptotic_reset_convergence_ledger_2026_06_05.py",
   "title": "Record Asymptotic Reset Convergence Ledger",
-  "transitive_descendants": 5,
+  "transitive_descendants": 13,
   "verdict_rationale": null
 }

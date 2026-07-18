@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 7.248,
+  "load_bearing_score": 7.781,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -119,7 +119,7 @@
   },
   "runner_path": null,
   "title": "AI Accountability And Disclosure Note",
-  "transitive_descendants": 37,
+  "transitive_descendants": 54,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

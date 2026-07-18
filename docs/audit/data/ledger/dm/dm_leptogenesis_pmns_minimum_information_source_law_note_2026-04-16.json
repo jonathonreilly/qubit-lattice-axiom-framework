@@ -23,9 +23,11 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
+    "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16",
+    "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16",
+    "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
   ],
-  "direct_in_degree": 10,
+  "direct_in_degree": 9,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -36,12 +38,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.441,
+  "load_bearing_score": 13.961,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f0a8fcb1dc140b9d527d34b3c391994102d7f2fa1af9b3e75da7b4bd1df21c5f",
+  "note_hash": "36542092a43f4732a203b10a7b941c86d607b7b46aeb2b562e34fd1fd86bd00f",
   "note_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1804,7 +1806,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -1814,6 +1816,6 @@
   },
   "runner_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
   "title": "DM Leptogenesis PMNS Minimum-Information Source Law",
-  "transitive_descendants": 694,
+  "transitive_descendants": 704,
   "verdict_rationale": null
 }

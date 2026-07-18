@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.085,
+  "load_bearing_score": 6.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/frontier_record_pointer_broadcast_circuit_interface_2026_06_05.py",
   "title": "Record Pointer Broadcast Circuit Interface",
-  "transitive_descendants": 23,
+  "transitive_descendants": 31,
   "verdict_rationale": null
 }

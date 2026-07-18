@@ -31,12 +31,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 23.664,
+  "load_bearing_score": 23.693,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "0eb0cc70bee8f87567688c3b2c83277c5c195c6bc9a5e8b3aff64e8f5dcad618",
+  "note_hash": "9097a5652b0ec1ba06627fb0cddedafdacca63f8cb5c81b61736acff1d6af95e",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -122,7 +122,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -132,6 +132,6 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py",
   "title": "Gauge-Vacuum Plaquette Finite Tensor-Word Packet \u2014 Bounded Note",
-  "transitive_descendants": 810,
+  "transitive_descendants": 827,
   "verdict_rationale": null
 }

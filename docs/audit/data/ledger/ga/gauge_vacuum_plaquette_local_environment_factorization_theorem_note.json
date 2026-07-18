@@ -33,12 +33,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 15.642,
+  "load_bearing_score": 15.672,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "1add16a092b1d82862680cf48b2f72339f33d0cdebbaa1b5bac24dad214c707a",
+  "note_hash": "948cb96a2625ef2b4ac05d84e156c7d927d16b615f3d796e7cf205a9cc416a24",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -447,7 +447,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py",
-  "title": "Gauge-Vacuum Plaquette Local Wilson Factor Finite Packet",
-  "transitive_descendants": 798,
+  "title": "Gauge-Vacuum Plaquette Fourth-Power Diagonal Finite Packet",
+  "transitive_descendants": 815,
   "verdict_rationale": null
 }

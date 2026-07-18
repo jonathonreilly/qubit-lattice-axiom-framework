@@ -25,13 +25,13 @@
   "deps": [
     "minimal_axioms"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 2.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -108,6 +108,6 @@
   },
   "runner_path": "scripts/rule_achirality_substrate_minimality_bit_count_2026_07_04.py",
   "title": "Bounded Rule-Achirality Diagnostic from the Qualification: a Chiral Rule Branch Needs an Unfixed Reflection-Odd Bit, While Chiral States Remain Allowed",
-  "transitive_descendants": 0,
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

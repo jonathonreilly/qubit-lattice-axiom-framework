@@ -16,7 +16,7 @@
   "claim_scope": null,
   "claim_type": "open_gate",
   "claim_type_author_hint": "open_gate",
-  "claim_type_author_hint_raw": "open_gate / conditional integration map",
+  "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "high",
@@ -34,12 +34,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.833,
+  "load_bearing_score": 7.989,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "08b018da74a7a87e24d2e73cdba1b969f584e416a35bc746e72b5d8293dec0f8",
+  "note_hash": "f996760c8544f334c48ab1b649bcf0f90c788cd44e65746e8b5688565c793da8",
   "note_path": "docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -545,7 +545,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -554,7 +554,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py",
-  "title": "Flavor carrier from framework baseline up: the momentum-factor carrier TYPE is FORCED; the hw=1 triplet LOCUS reduces to the one chiral operator-class import (the framework's recurring chirality gate); r=1/2 stays a separate input",
-  "transitive_descendants": 113,
+  "title": "Flavor Carrier Conditional Integration Map: Finite Translation Characters and Open Physical Identifications",
+  "transitive_descendants": 126,
   "verdict_rationale": null
 }

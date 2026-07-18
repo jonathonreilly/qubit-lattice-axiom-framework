@@ -22,11 +22,7 @@
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16",
-    "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
-    "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
-  ],
+  "deps": [],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
@@ -38,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "48f0bedb9148ad2e98f6491fdec33c85e80ab2bc3c932b0b747765883c34f951",
+  "note_hash": "6448b34328a3a3e78bffc2cdbc50f10cde5f2adc948afd6e748bf7ce446cdf1a",
   "note_path": "docs/DM_LEPTOGENESIS_PMNS_CONSTRAINED_OPTIMIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

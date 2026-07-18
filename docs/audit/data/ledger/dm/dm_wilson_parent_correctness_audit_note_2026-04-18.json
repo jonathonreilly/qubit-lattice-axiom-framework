@@ -35,9 +35,7 @@
   "direct_in_degree": 4,
   "effective_status": "meta",
   "effective_status_reason": "metadata",
-  "helper_runner_paths": [
-    "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py"
-  ],
+  "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
   "load_bearing_score": 8.066,
@@ -45,7 +43,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "d26d413a7a7106e37a76001cd69cea450821375646cb72ad60eec1c4dc68c922",
+  "note_hash": "466e90a42b2c8e1cc0ee50e492fe4d80cbe5051b5a4fcf4b7cb73b5927c00bf9",
   "note_path": "docs/DM_WILSON_PARENT_CORRECTNESS_AUDIT_NOTE_2026-04-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -24,11 +24,10 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
-    "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
     "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
     "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
+    "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
     "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-    "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
     "three_generation_observable_theorem_note"
   ],
   "direct_in_degree": 0,
@@ -42,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "dc19ceb1cf23a3004c630079f12d6ccc9f4e564ae2d14ea2025de28a9058f439",
+  "note_hash": "271b67d93708f1398f5cad864c8817b0aa63a1b544275c14398f22ebe564c657",
   "note_path": "docs/FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -270,7 +269,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

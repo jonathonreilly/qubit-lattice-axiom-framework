@@ -32,12 +32,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.725,
+  "load_bearing_score": 10.753,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "ebbd1fa65615f8b84461e8d06ad17bdc3dcb086cb15b82344fcf493484ab9fc4",
+  "note_hash": "04f1c1982f11611d255635072ca81c4be52f43595a530011b8c4c80ad3d8ecbd",
   "note_path": "docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -208,6 +208,6 @@
   },
   "runner_path": "scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py",
   "title": "G Bare Finite-Link/Wilson Split-Redundancy and Pin-Equivalence Theorem",
-  "transitive_descendants": 845,
+  "transitive_descendants": 862,
   "verdict_rationale": null
 }

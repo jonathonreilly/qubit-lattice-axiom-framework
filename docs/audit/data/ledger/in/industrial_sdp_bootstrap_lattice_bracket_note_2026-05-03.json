@@ -24,7 +24,6 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "plaquette_self_consistency_note",
-    "gauge_vacuum_plaquette_framework_point_underdetermination_note",
     "industrial_sdp_bootstrap_infrastructure_note_2026-05-03"
   ],
   "direct_in_degree": 2,
@@ -38,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c1ed3ed6c160b86311124b821efbfd2e6a7c7a3c0efa738b125fefd9916a7ebe",
+  "note_hash": "c65406fbc99ba63244433c846731628ee49475f13e79c1cea071b5380b1c6bb5",
   "note_path": "docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -227,7 +226,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

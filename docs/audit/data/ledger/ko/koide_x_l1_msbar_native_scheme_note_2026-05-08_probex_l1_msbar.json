@@ -43,7 +43,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e373e2b025079868c6854f6dedc8a42559eb04bd137f54c205e1418614205ee9",
+  "note_hash": "9625484a40960da9179b5de0ef5a8479d2822a900f46d9bb9282c775baf69e0e",
   "note_path": "docs/KOIDE_X_L1_MSBAR_NATIVE_SCHEME_NOTE_2026-05-08_probeX_L1_msbar.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -58,7 +58,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/cl3_koide_x_l1_msbar_2026_05_08_probeX_L1_msbar.py",
-  "title": "Probe X-L1-MSbar \u2014 Beta-Function Coefficients in a Lattice/`<P>` Scheme: Bounded-Tier Source Note",
+  "title": "Probe X-L1-MSbar \u2014 MSbar Beta-Function Source Check and Incomplete Lattice/`<P>` Rescaling: Open-Gate Source Note",
   "transitive_descendants": 7,
   "verdict_rationale": null
 }

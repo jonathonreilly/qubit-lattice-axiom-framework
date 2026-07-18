@@ -36,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "41ff95875b8c3f2158e2923cdcc8953b355d81fe16aec9f284ecc447e6ff460c",
+  "note_hash": "3d5b816f78019f7f7b4f87808e8c3f70c9aba64f05f63f025f348c40d15c0c1f",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_HIERARCHY_OBSTRUCTION_LEMMAS_BOUNDED_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -209,7 +209,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

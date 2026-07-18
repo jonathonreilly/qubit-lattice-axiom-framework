@@ -57,7 +57,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 2 | resolved_or_superseded | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem / unaudited / unaudited |
 | 3 | resolved_or_superseded | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem / audited_clean / retained |
 | 4 | resolved_or_superseded | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem / unaudited / unaudited |
-| 5 | resolved_or_superseded | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | bounded_theorem / audited_renaming / audited_renaming |
+| 5 | resolved_or_superseded | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | bounded_theorem / unaudited / unaudited |
 | 6 | resolved_or_superseded | `scalar_3plus1_temporal_ratio_note` | positive_theorem / audited_clean / retained |
 | 7 | resolved_or_superseded | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate / unaudited / unaudited |
 | 8 | resolved_or_superseded | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | bounded_theorem / unaudited / unaudited |
@@ -77,7 +77,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 22 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem / unaudited / unaudited |
 | 23 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem / unaudited / unaudited |
 | 24 | resolved_or_superseded | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | bounded_theorem / unaudited / unaudited |
-| 25 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | bounded_theorem / unaudited / unaudited |
+| 25 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | decoration / audited_decoration / retained_pending_chain |
 | 26 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / audited_clean / retained |
 | 27 | resolved_or_superseded | `graph_first_su3_integration_note` | positive_theorem / audited_clean / retained |
 | 28 | resolved_or_superseded | `cl3_color_automorphism_theorem` | bounded_theorem / unaudited / unaudited |
@@ -113,7 +113,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | # | claim_id | current | reason |
 |---:|---|---|---|
 | 1 | `higgs_from_lattice_note` | bounded_theorem / unaudited / unaudited | not_a_direct_promotion_candidate |
-| 2 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem / audited_conditional / audited_conditional | not_a_direct_promotion_candidate |
+| 2 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem / unaudited / unaudited | not_a_direct_promotion_candidate |
 | 3 | `yt_ward_identity_derivation_theorem` | bounded_theorem / unaudited / unaudited | deferred_normalization_convention |
 | 4 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 5 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |

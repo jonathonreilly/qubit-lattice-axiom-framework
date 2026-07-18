@@ -27,13 +27,13 @@
     "record_local_observability_decoder_criterion_2026-06-05",
     "record_dynamics_audit_gate_ladder_2026-06-05"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.585,
+  "load_bearing_score": 4.959,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/frontier_record_dephasing_broadcast_interface_2026_06_05.py",
   "title": "Record Dephasing Broadcast Interface",
-  "transitive_descendants": 2,
+  "transitive_descendants": 10,
   "verdict_rationale": null
 }

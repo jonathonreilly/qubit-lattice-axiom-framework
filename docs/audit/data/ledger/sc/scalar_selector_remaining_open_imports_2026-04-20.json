@@ -42,7 +42,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "355c202a289dbab17c7ab99e8699101d17afeaa38547cf48c68458e84d8513bd",
+  "note_hash": "f48e0e8211841d73a1dbe9bcae7243927a0be7e68d0e47fcabdc396f0f59d8d7",
   "note_path": "docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

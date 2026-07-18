@@ -37,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4667a007b1ea325dcfe79c164d97991bbefd41d8388b950b828d6814413e9059",
+  "note_hash": "7b81131d5611257f02dd31ce4794328ad811b88b83de154329a38b67415f03ec",
   "note_path": "docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -317,7 +317,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

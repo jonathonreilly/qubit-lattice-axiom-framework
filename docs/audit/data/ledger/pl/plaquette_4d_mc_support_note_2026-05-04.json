@@ -25,7 +25,6 @@
   "deps": [
     "plaquette_self_consistency_note",
     "gauge_scalar_temporal_completion_theorem_note",
-    "gauge_vacuum_plaquette_framework_point_underdetermination_note",
     "gauge_vacuum_plaquette_constant_lift_obstruction_note"
   ],
   "direct_in_degree": 3,
@@ -39,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "3e720246dbd70289a394e672bb24b88574467b1b671bc932d8336b9b072e8630",
+  "note_hash": "e94dab49366f03e83c68dfb4881e4b8e260534d65224680ac5a29cffd047cdb9",
   "note_path": "docs/PLAQUETTE_4D_MC_SUPPORT_NOTE_2026-05-04.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -116,7 +115,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

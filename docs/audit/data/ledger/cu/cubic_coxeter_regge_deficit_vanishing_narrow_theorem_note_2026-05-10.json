@@ -62,7 +62,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 13.928,
+  "load_bearing_score": 13.951,
   "load_bearing_step": "Summing dihedral contributions across all tetrahedra in T(Z^3) containing a given interior edge gives sum_{T containing e} alpha_T(e) = 2*pi for every axis, face-diagonal, and body-diagonal edge.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -125,6 +125,6 @@
   },
   "runner_path": "scripts/frontier_cubic_coxeter_regge_deficit_vanishing_narrow.py",
   "title": "Cubic-Coxeter Regge Deficit Vanishing Narrow Theorem",
-  "transitive_descendants": 688,
+  "transitive_descendants": 699,
   "verdict_rationale": "This is a standalone Euclidean algebra claim over the stipulated flat Coxeter triangulation, with no cited upstream authorities or physical bridge imports. The runner computes volumes, dihedral angles, and representative edge-star sums directly from vertex coordinates using sympy/numpy; it is not merely printing constants or reading another note. The repaired axis-edge proof replaces the earlier uniform-incidence shortcut with the correct finite-star accounting, preserving the zero-deficit conclusion."
 }

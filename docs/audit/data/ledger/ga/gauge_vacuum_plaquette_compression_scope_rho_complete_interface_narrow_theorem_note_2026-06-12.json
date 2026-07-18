@@ -30,7 +30,6 @@
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
-    "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
     "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
     "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
     "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"

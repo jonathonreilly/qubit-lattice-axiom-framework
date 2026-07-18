@@ -24,7 +24,6 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "g_bare_rigidity_theorem_note",
-    "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
     "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
   ],
   "direct_in_degree": 0,
@@ -38,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "48d7e6a03461e25adee98884a2833298e7acd1e2d4f57d7eff2a70089c18b7c5",
+  "note_hash": "8e7a70de32fa573dddcf4e6958bbf4335ecad988ba32026f1db42485c1e416bb",
   "note_path": "docs/WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

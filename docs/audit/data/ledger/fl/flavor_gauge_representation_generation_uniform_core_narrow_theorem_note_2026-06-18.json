@@ -26,8 +26,7 @@
     "three_generation_observable_theorem_note",
     "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
     "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-    "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-    "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
+    "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
   ],
   "direct_in_degree": 1,
   "effective_status": "unaudited",
@@ -40,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "822cd0be44fa14e0ba6ea249846cfccdbf3f404c745670f6ea80bad2d04d4452",
+  "note_hash": "fe5137089f65227b82b77ffba36d564a8ff826a51f43ccafdeee5a1f91338dd1",
   "note_path": "docs/FLAVOR_GAUGE_REPRESENTATION_GENERATION_UNIFORM_CORE_NARROW_THEOREM_NOTE_2026-06-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -116,7 +115,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

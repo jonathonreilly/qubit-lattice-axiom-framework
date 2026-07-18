@@ -36,12 +36,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 37.573,
+  "load_bearing_score": 37.59,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f9ff6d1943aac6b52111690db6a4a2dc485f979ec55c6b75c3212f6f93fcbbf8",
+  "note_hash": "e67dab6bfd8a921768ac630388d26c2a85641f1fad48dbc219ade9ee9df973f5",
   "note_path": "docs/ALPHA_S_DERIVED_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -489,6 +489,6 @@
   },
   "runner_path": "scripts/frontier_alpha_s_derived_bounded_chain.py",
   "title": "`alpha_s(v)` Forward-Computation Theorem over Declared Boundary Inputs, with Bounded `M_Z` Corollary",
-  "transitive_descendants": 1076,
+  "transitive_descendants": 1089,
   "verdict_rationale": null
 }

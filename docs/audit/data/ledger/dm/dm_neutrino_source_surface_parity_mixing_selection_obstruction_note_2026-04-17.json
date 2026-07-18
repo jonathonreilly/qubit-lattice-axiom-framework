@@ -45,12 +45,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.897,
+  "load_bearing_score": 11.92,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8bce127351eb3418d38eea7902a25dd7a21c5c2c746dd2c003f5427766c7a5e0",
+  "note_hash": "a45e93f7d1676011ca02a8a1d27aeb29fba21beef8640a76c112e8c1fadd7c33",
   "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_PARITY_MIXING_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -92,6 +92,6 @@
   },
   "runner_path": "scripts/frontier_dm_neutrino_source_surface_parity_mixing_selection_obstruction.py",
   "title": "Parity-Mixing Selector Law \u2014 Narrower-Gap + Closure-Candidate-Pending-Physics-Cross-Check",
-  "transitive_descendants": 673,
+  "transitive_descendants": 684,
   "verdict_rationale": null
 }

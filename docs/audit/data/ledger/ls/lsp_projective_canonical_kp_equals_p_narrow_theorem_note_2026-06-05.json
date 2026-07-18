@@ -75,7 +75,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 8.248,
+  "load_bearing_score": 8.392,
   "load_bearing_step": "From K_r=\u03a3_s\u27e8r|V_A|s\u27e9P_s and P_sP_{s'}=\u03b4_{ss'}P_s, one obtains K_r\u2020K_r=\u03a3_s|\u27e8r|V_A|s\u27e9|\u00b2P_s, with the canonical case giving K_r=P_r.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -386,6 +386,6 @@
   },
   "runner_path": "scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py",
   "title": "LSP-Projective Canonical Kraus Selection `K_P = P` Under Restricted Step-3 Scope (Narrow)",
-  "transitive_descendants": 75,
+  "transitive_descendants": 83,
   "verdict_rationale": "The load-bearing identities are genuine finite-dimensional algebraic consequences of the stated hypotheses. The runner constructs the projectors, isometry, Kraus contractions, phase/permutation twists, mixing examples, and zero-projector cases rather than printing or importing the conclusions; all 53 checks pass. The necessity statement is correctly limited to nonzero displayed sectors, and the note does not claim instrument uniqueness or derive physical measurement semantics."
 }

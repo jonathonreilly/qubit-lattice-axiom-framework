@@ -14,9 +14,9 @@
   "chain_closure_explanation": null,
   "claim_id": "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
   "claim_scope": null,
-  "claim_type": "no_go",
-  "claim_type_author_hint": "no_go",
-  "claim_type_author_hint_raw": "no_go",
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "critical",
@@ -40,12 +40,12 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 16.105,
+  "load_bearing_score": 16.14,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "b66bb2c03e10b4d3d53f631836169a7fb28fc415d9f5d3b605eda7f58ef021a0",
+  "note_hash": "11d1ab58a5b697008bef23885da3d2693d04fc6d20ead7f4011031ea2cee2e75",
   "note_path": "docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -289,7 +289,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -298,7 +298,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_no_go.py",
-  "title": "Gauge-Scalar Temporal Observable Bridge No-Go Theorem",
-  "transitive_descendants": 778,
+  "title": "Gauge-Scalar Temporal Observable Bridge Open Interface",
+  "transitive_descendants": 797,
   "verdict_rationale": null
 }

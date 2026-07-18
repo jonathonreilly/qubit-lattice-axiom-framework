@@ -46,7 +46,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "b71a3bc3971fb6199828b65d08704194732e6dc74a3213aabbf66f39cdefc259",
+  "note_hash": "30f562bb1ec4820a5dad0623994cf52ea637c93ee30fc17dc82adc7b25d17c22",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_PERRON_DERIVED_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-11.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

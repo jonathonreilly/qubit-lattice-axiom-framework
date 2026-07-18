@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py
-runner_sha256: f6df1de468d1ea532f97b4c52fff8c7c61bd43c475d0ea165a247fb6e72a3a9c
+runner_sha256: d282a2b66448197e5a7b5aec348be0110a602cf71eceaec6bb5da8e57ba990f9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -13,6 +13,8 @@ Clean clause: trace + positive-integer count + nonzero pair => [a:b]=[1:-n_color
 Conditional clauses: b=-1 and Q=T3+Y/2 arithmetic remain supplied-convention support
 ================================================================================================
 
+------------------------------------------------------------------------------------------------
+NORMAL: direct symbolic proof of the homogeneous/projective implication
 ------------------------------------------------------------------------------------------------
   [PASS THEOREM] dividing the trace equation by 2 gives n_color*a + b  (trace/2 - reduced = 0)
   [PASS THEOREM] trace equation solves to b = -n_color*a  (b = -a*n_color)
@@ -26,12 +28,16 @@ Conditional clauses: b=-1 and Q=T3+Y/2 arithmetic remain supplied-convention sup
   [PASS THEOREM] positive, negative, and fractional nonzero scales preserve the n_color=5 class  (scales = (2, -3, 5/7))
 
 ------------------------------------------------------------------------------------------------
+NORMAL: explicitly convention-supplied arithmetic (not theorem evidence)
+------------------------------------------------------------------------------------------------
   [PASS CONDITIONAL_SUPPORT] under supplied b=-1, a=1/n_color  (a = 1/n_color)
   [PASS CONDITIONAL_SUPPORT] under supplied Q=T3+Y/2, Q(up)=(n_color+1)/(2*n_color)  (Q(up) = (n_color + 1)/(2*n_color))
   [PASS CONDITIONAL_SUPPORT] under supplied Q=T3+Y/2, Q(down)=(1-n_color)/(2*n_color)  (Q(down) = (1 - n_color)/(2*n_color))
   [PASS CONDITIONAL_SUPPORT] the two supplied-convention charges differ by one
   [PASS CONDITIONAL_SUPPORT] the supplied-convention charges sum to 1/n_color
 
+------------------------------------------------------------------------------------------------
+INDEPENDENT: exact nullspace/projective route
 ------------------------------------------------------------------------------------------------
   [PASS THEOREM] the exact trace row has a one-dimensional nullspace  (basis = [Matrix([
 [-1/n_color],
@@ -41,6 +47,8 @@ Conditional clauses: b=-1 and Q=T3+Y/2 arithmetic remain supplied-convention sup
   [PASS THEOREM] independent Fraction arithmetic agrees at n_color=11 across four scales  (scales = (Fraction(-7, 3), Fraction(-1, 2), Fraction(1, 5), Fraction(9, 4)))
 
 ------------------------------------------------------------------------------------------------
+INDEPENDENT: Euclidean/GCD route for conditional support
+------------------------------------------------------------------------------------------------
   [PASS CONDITIONAL_SUPPORT] two-way Bezout combinations prove both gcd reductions for arbitrary integer n_color  (up=(2,2n): (2, 2*n_color); down=(2,2n): (2, 2*n_color))
   [PASS CONDITIONAL_SUPPORT] the two residue classes modulo 2 prove the common gcd is 1 for even and 2 for odd n_color  (residue certificate = {0: (1, 1), 1: (2, 2)})
   [PASS CONDITIONAL_SUPPORT] the parity gcd certificate gives denominator n_color for odd and 2*n_color for even counts
@@ -48,6 +56,8 @@ Conditional clauses: b=-1 and Q=T3+Y/2 arithmetic remain supplied-convention sup
   [PASS CONDITIONAL_SUPPORT] regression-only sweep finds denominator n_color for odd n_color=1..63
   [PASS CONDITIONAL_SUPPORT] regression-only sweep finds denominator 2*n_color for even n_color=2..64
 
+------------------------------------------------------------------------------------------------
+HOSTILE: counterdomains, normalization freedom, and alternate readout
 ------------------------------------------------------------------------------------------------
   [PASS BOUNDARY] the excluded zero pair satisfies the homogeneous trace equation
   [PASS BOUNDARY] the zero pair has no projective class under the executable determinant guard
@@ -64,6 +74,8 @@ Conditional clauses: b=-1 and Q=T3+Y/2 arithmetic remain supplied-convention sup
   [PASS BOUNDARY] without supplied normalization the conditional readout remains open
   [PASS BOUNDARY] without a supplied charge functional the conditional readout remains open
 
+------------------------------------------------------------------------------------------------
+HOSTILE: N1-N8 boundary evidence
 ------------------------------------------------------------------------------------------------
   [PASS BOUNDARY] N1 ATTEMPTED six distinct attack routes and computed every disposition  (alternate_charge_functional=True, alternate_scale=True, negative_parameter=True, noninteger_parameter=True, zero_pair=True, zero_parameter=True)
   [PASS BOUNDARY] N2 normalization does not close the charge-functional condition  (b=-1 held fixed while the charge functional changed)

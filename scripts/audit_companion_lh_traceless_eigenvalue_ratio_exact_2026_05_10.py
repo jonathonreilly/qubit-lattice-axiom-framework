@@ -57,6 +57,8 @@ def check(evidence_class: str, label: str, condition: object, detail: str = "") 
 def section(title: str) -> None:
     print()
     print("-" * 96)
+    print(title)
+    print("-" * 96)
 
 
 def positive_integer_count(value: object) -> bool:
@@ -141,8 +143,6 @@ def hostile_route_results() -> dict[str, bool]:
         and tuple(value.denominator for value in standard[1:])
         != tuple(value.denominator for value in alternate[1:]),
     }
-    print(title)
-    print("-" * 96)
 
 
 def normal_mode() -> None:

@@ -358,6 +358,67 @@
         "total_pass": 5
       },
       "verdict_rationale": "Issue: The runner independently establishes the reported exact linear-algebra facts for the truncated Bessel-determinant series, but the restricted packet does not provide a retained proof of the load-bearing Bars identity identifying that series with the SU(3) Haar integral J. Why this blocks: without that bridge, the certificates apply to a formally constructed series, not yet to the physical integral named in the claim, although the finite results are consistent and not hard-coded. Repair target: retain a one-hop exact theorem proving (\u2605), its normalization J(0)=1, and the finite truncation-tail justification used by build_J_series, then re-audit. Claim boundary until fixed: certificates [A]\u2013[E] are exact statements about the displayed truncated determinant series; for the negative assertions, N1 covers the enumerated ans\u00e4tze but lacks five distinct mechanism classes, N2 reduces to the checked-window zero-kernel wall, N3's background/normalization/boundary terms are non-load-bearing scope labels, N4 has no prior-witness route, N5 lacks five-resolution live instrumentation, N6 candidates do not supply (\u2605), N7's exact-rank steelman leaves the identification open, and N8's finite-window echo repeats rather than closes it."
+    },
+    {
+      "archived_at": "2026-07-18T05:55:16.327610+00:00",
+      "audit_date": "2026-07-18T05:55:00.473374+00:00",
+      "audit_invocation_history": [
+        "aec32242a45648708ea4967e50dd4e0d"
+      ],
+      "audit_invocation_id": "aec32242a45648708ea4967e50dd4e0d",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated Taylor-series ODE residual through the runner window, finite numerical agreement at beta=2,4,6,8,10, and the beta=6 logarithmic-derivative readout; no all-order Picard-Fuchs or all-order branch-identification claim was audited."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 13.026,
+        "runner_hash": "48ac95fca09d98a968eefee0465fb117ae4f76e88ad4aa3b4fe76c03ed64155c",
+        "transitive_descendants": 736
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-drain-ready-20260717-3fdf1d96d3da4445b0ea6d726308447e-plaquette_v1_picard_fuch-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic chain closes from the determinant-series coefficients to certificates [A]-[E], but the restricted packet does not close the preceding identification of that series with the Haar integral J. A retained one-hop authority or self-contained proof of the Bars SU(3) Bessel-determinant identity is missing.",
+      "claim_scope": "Bounded depth-40 certificates for the SU(3) integral candidate: annihilation through \u03b2^36, recurrence for N=2..39, the stated rank windows, uniqueness at (r=3,d=2), and d=3..6 consistency, excluding all-order minimality and (r=2,d=12).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-18T05:55:00.473374+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Using the Bessel-determinant Taylor coefficients through depth 40, exact residual and rank calculations establish certificates [A]-[E] in the stated finite windows.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add a retained one-hop authority or a self-contained exact proof of the Bars SU(3) Bessel-determinant identity, then re-run the restricted audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner genuinely constructs exact rational Taylor coefficients and performs all five advertised residual, recurrence, rank, uniqueness, and kernel-dimension checks rather than merely printing expected results. For N1/N2/N5/N7, the negative exclusion has one bounded matrix-rank route and no independent wall set; the skipped cell, higher degrees, and all-order extension remain untested, and no per-site, per-mode, per-block, or lattice-wide resolution evidence supports a broader reading. For N3/N4, the load-bearing unclosed premise is the Bars integral-to-series identity, while no prior residual witness is invoked. For N6/N8, the indexed framework primitives and unrelated open gates do not supply that identity, and the Picard-Fuchs finite-window cross-cycle echo supports only the same narrowed scope."
     }
   ],
   "prose_corrections": [],

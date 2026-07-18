@@ -1,27 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_gauge_representation_generation_uniform_core_2026_06_18.py
-runner_sha256: 8a2c77ac01b44e18c9448fcd391ceec8c6cacd257883a9da68facd34aa0260b3
+runner_sha256: ae01aea73137b6a63c65f75fc181c0bf93cd1064dbe37d688203c69a18c230d5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 FLAVOR GAUGE REPRESENTATION GENERATION-UNIFORM CORE
 ========================================================================
-[PASS] uniform generation-carrier scalar action leaves r degree-zero inert
+[CORE PASS] nonzero common scalar rescaling leaves r degree-zero inert
        s=0.2: r=0.289940828402; s=0.75: r=0.289940828402; s=1.0: r=0.289940828402; s=2.0: r=0.289940828402; s=5.0: r=0.289940828402
-[PASS] discriminating control: non-uniform singlet/doublet scaling would move r
+[CORE PASS] discriminating control: non-uniform singlet/doublet scaling would move r
        r0=0.289941, nonuniform=0.0181213
-[PASS] standard colour-representation premise supplies only two colour classes
+[CONDITIONAL PASS] standard colour-representation premise supplies only two colour classes
        classes=[1, 3]
-[PASS] weak-doublet partners share the parent premise's left-handed multiplet
-[PASS] new core note states framework-native degree-zero inertness only
-[PASS] parent cites core note, runner, and cache
-[PASS] parent keeps SM sector representation assignment conditional
-[PASS] parent status is not promoted
+[CONDITIONAL PASS] weak-doublet partners share the parent premise's left-handed multiplet
+[SOURCE PASS] new core note states only the conditional common-scalar lemma
+[SOURCE PASS] parent cites core note, runner, and cache
+[SOURCE PASS] parent keeps SM sector representation assignment conditional
+[SOURCE PASS] parent status is not promoted
 
-VERDICT: the framework-native generation-uniform scalar-action core is split out; the SM sector representation assignment and electroweak splitter remain conditional/open in the parent row.
-SCORECARD PASS=8 FAIL=0
+VERDICT: the conditional nonzero common-scalar homogeneity lemma is split out; generation uniformity does not supply that premise, and the SM sector representation assignment remains conditional/open.
+SCORECARD CORE_PASS=2 CORE_FAIL=0 CONDITIONAL_PASS=2 CONDITIONAL_FAIL=0 SOURCE_PASS=4 SOURCE_FAIL=0 PASS=8 FAIL=0
 
 ----- stderr -----
 

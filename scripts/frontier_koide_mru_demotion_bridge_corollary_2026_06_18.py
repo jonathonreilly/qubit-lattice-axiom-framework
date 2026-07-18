@@ -31,18 +31,29 @@ BLOCK_TOTAL_NOTE = (
     ROOT / "docs" / "KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md"
 )
 
-PASS = 0
-FAIL = 0
+SOURCE_PASS = 0
+SOURCE_FAIL = 0
+ALGEBRA_PASS = 0
+ALGEBRA_FAIL = 0
 
 
-def check(label: str, condition: bool, detail: str = "") -> None:
-    global PASS, FAIL
+def check(label: str, condition: bool, detail: str = "", *, kind: str = "algebra") -> None:
+    global SOURCE_PASS, SOURCE_FAIL, ALGEBRA_PASS, ALGEBRA_FAIL
+    if kind not in {"source", "algebra"}:
+        raise ValueError(f"unknown check kind: {kind}")
     status = "PASS" if condition else "FAIL"
     if condition:
-        PASS += 1
+        if kind == "source":
+            SOURCE_PASS += 1
+        else:
+            ALGEBRA_PASS += 1
     else:
-        FAIL += 1
-    print(f"  [{status}] {label}")
+        if kind == "source":
+            SOURCE_FAIL += 1
+        else:
+            ALGEBRA_FAIL += 1
+    prefix = "SOURCE" if kind == "source" else "ALGEBRA"
+    print(f"  [{prefix} {status}] {label}")
     if detail:
         print(f"         {detail}")
 
@@ -62,27 +73,32 @@ def check_source_boundaries() -> None:
     check(
         "note registers the dedicated demotion runner",
         "scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py" in note,
+        kind="source",
     )
     check(
         "note scopes its graph-visible Fourier authority to finite algebra",
         "Graph-visible finite-algebra authority (one hop)" in note
         and "supplies no physical mass spectrum" in flat,
+        kind="source",
     )
     check(
         "note explicitly rejects physical closure from either algebraic route",
         "It does not claim an independent block-total closure route." in flat
         and "No physical operator-side `kappa=2` statement is supplied here" in flat,
+        kind="source",
     )
     check(
         "note preserves no-new-axiom / no-audit-verdict boundary",
-        "No new axiom, Tier-A admission, audit verdict, or physical scalar-measure bridge" in flat
+        "No new axiom, supplied premise, registry entry, audit verdict, or physical scalar-measure bridge" in flat
         and "independent audit lane only" in flat,
+        kind="source",
     )
     check(
         "note keeps MRU as supplementary conditional support only",
         "MRU + weight-class obstruction" in note
         and "Supplementary / alternative framing" in note
         and "not load-bearing" in flat,
+        kind="source",
     )
 
     markdown_targets = re.findall(r"\[[^\]]+\]\(([^)]+)\)", note)
@@ -97,6 +113,7 @@ def check_source_boundaries() -> None:
         "block-total and MRU context pointers are not graph-visible markdown edges",
         not bad_targets,
         f"bad_targets={bad_targets}" if bad_targets else "",
+        kind="source",
     )
 
     retired_old_claims = [
@@ -112,6 +129,7 @@ def check_source_boundaries() -> None:
         "old overbroad two-route closure claims are absent",
         not present,
         f"present={present}" if present else "",
+        kind="source",
     )
 
     block_note = read(BLOCK_TOTAL_NOTE)
@@ -120,11 +138,13 @@ def check_source_boundaries() -> None:
         "block-total source authority itself declares bounded support",
         "**Claim type:** bounded_theorem" in block_note
         and "bounded support theorem" in block_flat,
+        kind="source",
     )
     check(
         "block-total source authority leaves canonical scalar-measure bridge open",
         "does not derive the scalar-lane `SO(2)` quotient" in block_flat
         and "canonical physical scalar measure" in block_flat,
+        kind="source",
     )
 
 
@@ -230,8 +250,15 @@ def main() -> None:
     print("\nAbstract Hermitian-circulant Fourier invariant checks")
     print("-" * 78)
     check_fourier_invariant()
-    print(f"\nSUMMARY: KOIDE MRU DEMOTION ABSTRACT-BOUNDARY PASS={PASS} FAIL={FAIL}")
-    if FAIL:
+    total_pass = SOURCE_PASS + ALGEBRA_PASS
+    total_fail = SOURCE_FAIL + ALGEBRA_FAIL
+    print(
+        "\nSUMMARY: KOIDE MRU DEMOTION ABSTRACT-BOUNDARY "
+        f"SOURCE_PASS={SOURCE_PASS} SOURCE_FAIL={SOURCE_FAIL} "
+        f"ALGEBRA_PASS={ALGEBRA_PASS} ALGEBRA_FAIL={ALGEBRA_FAIL} "
+        f"PASS={total_pass} FAIL={total_fail}"
+    )
+    if total_fail:
         raise SystemExit(1)
 
 

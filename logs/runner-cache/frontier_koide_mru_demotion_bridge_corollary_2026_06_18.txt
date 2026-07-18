@@ -1,41 +1,41 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py
-runner_sha256: d2d269c8a4cf8bc4f59d2af7b983c36565df364718f40795d93586df1b82aafc
+runner_sha256: c654a4a2181c71ba623643b952fe22ac394c144c9514eea2030dcb26dfea9aed
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.36
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 Koide MRU demotion and abstract-Fourier-boundary source runner
 ==============================================================================
-  [PASS] note registers the dedicated demotion runner
-  [PASS] note scopes its graph-visible Fourier authority to finite algebra
-  [PASS] note explicitly rejects physical closure from either algebraic route
-  [PASS] note preserves no-new-axiom / no-audit-verdict boundary
-  [PASS] note keeps MRU as supplementary conditional support only
-  [PASS] block-total and MRU context pointers are not graph-visible markdown edges
-  [PASS] old overbroad two-route closure claims are absent
-  [PASS] block-total source authority itself declares bounded support
-  [PASS] block-total source authority leaves canonical scalar-measure bridge open
+  [SOURCE PASS] note registers the dedicated demotion runner
+  [SOURCE PASS] note scopes its graph-visible Fourier authority to finite algebra
+  [SOURCE PASS] note explicitly rejects physical closure from either algebraic route
+  [SOURCE PASS] note preserves no-new-axiom / no-audit-verdict boundary
+  [SOURCE PASS] note keeps MRU as supplementary conditional support only
+  [SOURCE PASS] block-total and MRU context pointers are not graph-visible markdown edges
+  [SOURCE PASS] old overbroad two-route closure claims are absent
+  [SOURCE PASS] block-total source authority itself declares bounded support
+  [SOURCE PASS] block-total source authority leaves canonical scalar-measure bridge open
 
 Trace/SO(2) obstruction checks
 ------------------------------------------------------------------------------
-  [PASS] tr(H^3) exact formula has phase term 3(b^3+bbar^3), not a-scaled phase
+  [ALGEBRA PASS] tr(H^3) exact formula has phase term 3(b^3+bbar^3), not a-scaled phase
          tr(H^3) = 3*a**3 + 18*a*x**2 + 18*a*y**2 + 6*x**3 - 18*x*y**2
-  [PASS] phase survives at a=0, so it cannot be proportional to a(b^3+bbar^3)
+  [ALGEBRA PASS] phase survives at a=0, so it cannot be proportional to a(b^3+bbar^3)
          phase_at_a0=6*x*(x**2 - 3*y**2)
-  [PASS] generic SO(2) phase rotation changes scalar spectral observables
+  [ALGEBRA PASS] generic SO(2) phase rotation changes scalar spectral observables
          tr3: 17.826000 vs 15.768000; det: 0.650000 vs -0.036000
 
 Abstract Hermitian-circulant Fourier invariant checks
 ------------------------------------------------------------------------------
-  [PASS] abstract Fourier map gives a0 = sqrt(3) a exactly
-  [PASS] abstract Fourier map gives |z|^2 = 3 |b|^2 exactly
-  [PASS] Fourier residual equals three times coordinate residual exactly
-  [PASS] coordinate zero-locus sample points imply Fourier residual zero
+  [ALGEBRA PASS] abstract Fourier map gives a0 = sqrt(3) a exactly
+  [ALGEBRA PASS] abstract Fourier map gives |z|^2 = 3 |b|^2 exactly
+  [ALGEBRA PASS] Fourier residual equals three times coordinate residual exactly
+  [ALGEBRA PASS] coordinate zero-locus sample points imply Fourier residual zero
          max_spectrum_residual=8.882e-16
 
-SUMMARY: KOIDE MRU DEMOTION ABSTRACT-BOUNDARY PASS=16 FAIL=0
+SUMMARY: KOIDE MRU DEMOTION ABSTRACT-BOUNDARY SOURCE_PASS=9 SOURCE_FAIL=0 ALGEBRA_PASS=7 ALGEBRA_FAIL=0 PASS=16 FAIL=0
 
 ----- stderr -----
 

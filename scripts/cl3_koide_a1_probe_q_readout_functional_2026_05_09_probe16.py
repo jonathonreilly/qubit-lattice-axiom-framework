@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Koide A1 Probe 16 — Q-Readout / Functional-Level Pivot
+Koide Q-readout Probe 16 — Functional-Level Pivot
 
-Tests the functional-level pivot for the A1-condition closure attempt.
+Tests the functional-level pivot for the Koide Frobenius-equipartition
+condition (historical alias: A1-condition).
 Conditional on an explicitly supplied, unretained P1 probe hypothesis
 (lambda_k = sqrt(m_k)), the Brannen
 Koide ratio
@@ -10,31 +11,28 @@ Koide ratio
     Q = sum(m_k) / (sum(sqrt(m_k)))^2 = (a^2 + 2|b|^2) / (3 a^2)
 
 is U(1)_b-invariant by construction (depends only on (a, |b|), not on
-arg(b)). This automatically erases the Probe 13/14 algebra-level residue
-(U(1)_b angular quotient on the b-doublet).
+arg(b)). This conditional invariance does not itself supply a physical
+quotient or readout.
 
-The probe asks: does the framework's retained matter-sector content
-force Q = 2/3 at the readout level, exploiting U(1)_b-invariance?
+The probe asks whether the cited content selects Q = 2/3 after explicitly
+supplying P1 and a Haar angular projection.
 
 Verdict: SHARPENED bounded obstruction.
 
   Phase 1 (conditional finite algebra): Q is U(1)_b-invariant under the
   supplied P1 probe hypothesis. The runner does not derive P1 or a physical
   carrier.
-  Phase 2 (closes from cited source-stack content): det-carrier (campaign synthesis's
-  competing log|det| functional, landing at kappa=1 at algebra level) is
-  NOT U(1)_b-invariant; it is eliminated by the U(1)_b-quotient.
-  Phase 3 (closes from cited source-stack content): block-total Frobenius F1 =
+  Phase 2 (computed under a supplied Haar projection): the det-carrier is
+  NOT U(1)_b-invariant; its angular moments are computed exactly.
+  Phase 3 (supplied candidate algebra): block-total Frobenius F1 =
   log E_+ + log E_perp has its Lagrange extremum at A1 (kappa=2).
   Phase 4 (sharpened obstruction): admissible competitors F2 (angular-
-  averaged det) and F3 (rank-weighted) survive U(1)_b-quotient and land
-  AWAY from A1. The functional-choice convention on the post-quotient
-  (a, |b|) plane remains a discrete-choice convention not pinned by
+  averaged det) and F3 (rank-weighted) land AWAY from A1. More generally,
+  weighted block-log laws form a continuous weight family not pinned by
   cited source-stack content.
 
-This refines the Probe 13/14 residue: the continuous-symmetry residue
-becomes a discrete-functional-choice residue. A1 admission count is
-unchanged. No new admissions proposed.
+This computes named conditional candidates; it does not derive P1, a physical
+Haar quotient, or a selector. No premise or registry entry is changed.
 """
 
 from __future__ import annotations
@@ -49,19 +47,29 @@ import sympy as sp
 # Test harness
 # ----------------------------------------------------------------------
 
-PASS_COUNT = 0
-FAIL_COUNT = 0
+ALGEBRA_PASS = 0
+ALGEBRA_FAIL = 0
+CONDITIONAL_PASS = 0
+CONDITIONAL_FAIL = 0
+CURRENT_KIND = "algebra"
 
 
 def check(label: str, condition: bool, *, detail: str = "") -> None:
     """Single PASS/FAIL line, mirroring the campaign's runner style."""
-    global PASS_COUNT, FAIL_COUNT
+    global ALGEBRA_PASS, ALGEBRA_FAIL, CONDITIONAL_PASS, CONDITIONAL_FAIL
+    prefix = CURRENT_KIND.upper()
     if condition:
-        PASS_COUNT += 1
-        print(f"  PASS  {label}")
+        if CURRENT_KIND == "algebra":
+            ALGEBRA_PASS += 1
+        else:
+            CONDITIONAL_PASS += 1
+        print(f"  {prefix} PASS  {label}")
     else:
-        FAIL_COUNT += 1
-        print(f"  FAIL  {label}")
+        if CURRENT_KIND == "algebra":
+            ALGEBRA_FAIL += 1
+        else:
+            CONDITIONAL_FAIL += 1
+        print(f"  {prefix} FAIL  {label}")
         if detail:
             print(f"        detail: {detail}")
 
@@ -119,12 +127,12 @@ def Q_under_P1(a: float, b: complex) -> float:
 
 print()
 print("=" * 72)
-print("Probe 16 — Q-Readout / Functional-Level Pivot for A1-Condition")
+print("Probe 16 — Q-Readout / Functional-Level Pivot for Koide Frobenius Equipartition")
 print("=" * 72)
 print()
 print("Pivot motivation:")
 print("  Probes 13 (real-structure / antilinear involution) and Probe 14")
-print("  (retained-U(1) hunt) sharpened the algebra-level A1-condition")
+print("  (retained-U(1) hunt) sharpened the algebra-level equipartition condition")
 print("  residue to:")
 print("     'U(1)_b angular quotient on the non-trivial doublet of")
 print("      A^{C_3} = the U(1)_b symmetry of the Brannen delta-readout.'")
@@ -142,17 +150,17 @@ print("  Q = sum(m_k) / (sum(sqrt(m_k)))^2 is then a function of (a, |b|)")
 print("  only, not arg(b). The Q-functional automatically respects U(1)_b.")
 print()
 print("Hypothesis under test:")
-print("  Does the framework's retained matter-sector content force Q = 2/3")
+print("  Do the cited source statements force Q = 2/3")
 print("  at the readout level, exploiting U(1)_b-invariance?")
 print()
 print("=" * 72)
 
 
 # ======================================================================
-# Section 1: Retained-content sanity checks
+# Section 1: Supplied finite-algebra sanity checks
 # ======================================================================
 
-banner("Section 1: Retained-content sanity checks")
+banner("Section 1: Supplied finite-algebra sanity checks")
 
 # 1.1 C is unitary, order 3, eigenvalues {1, omega, omega-bar}
 check(
@@ -239,6 +247,7 @@ check(
 # ======================================================================
 
 banner("Section 3: Q-functional under P1 is U(1)_b-invariant")
+CURRENT_KIND = "conditional"
 
 print("Q under P1 = sum(m_k) / (sum(sqrt(m_k)))^2 = ||H||_F^2 / Tr(H)^2")
 print("           = (3a^2 + 6|b|^2) / (3a)^2")
@@ -259,16 +268,17 @@ check(
 
 # 3.2 Q is U(1)_b-invariant: numerically verify Q(a, b) = Q(a, |b|*e^{i phi})
 print("3.2-3.7 Q is U(1)_b-invariant (numerical):")
-a_val = 1.0
+a_val = 2.0
 b_mag_val = 0.7
 Q_at_b_real = Q_under_P1(a_val, b_mag_val)
 for i, phi in enumerate([0.0, 0.3, 0.7, 1.5, 2.5, 3.14]):
     b_rotated = b_mag_val * np.exp(1j * phi)
     Q_rotated = Q_under_P1(a_val, b_rotated)
+    lambda_min = float(np.min(np.linalg.eigvalsh(hermitian_circulant(a_val, b_rotated))))
     check(
-        f"3.{2+i} Q(a, |b|*e^(i*{phi:.2f})) = Q(a, |b|)",
-        np.isclose(Q_rotated, Q_at_b_real, atol=1e-12),
-        detail=f"Q at phi={phi:.2f}: {Q_rotated:.10f} vs reference {Q_at_b_real:.10f}",
+        f"3.{2+i} positive-spectrum P1-domain Q is phase invariant at phi={phi:.2f}",
+        lambda_min >= -1e-12 and np.isclose(Q_rotated, Q_at_b_real, atol=1e-12),
+        detail=f"lambda_min={lambda_min:.6g}; Q={Q_rotated:.10f} vs {Q_at_b_real:.10f}",
     )
 
 # 3.8 Q = 2/3 ⇔ a^2 = 2|b|^2 (= A1-condition algebraically)
@@ -299,6 +309,7 @@ check(
 # ======================================================================
 
 banner("Section 4: Det-carrier law is NOT U(1)_b-invariant")
+CURRENT_KIND = "algebra"
 
 print("Computing det(H) symbolically...")
 det_H_sym = sp.simplify(H_sym.det())
@@ -331,12 +342,13 @@ check(
 )
 
 # 4.3 Angular average of det over arg(b) ∈ [0, 2 pi)
+CURRENT_KIND = "conditional"
 det_avg = sp.integrate(det_H_polar, (arg_b, 0, 2 * sp.pi)) / (2 * sp.pi)
 det_avg = sp.simplify(det_avg)
 # Should equal a (a^2 - 3 |b|^2)  (since cos(3 arg(b)) integrates to 0)
 expected_det_avg = a * (a**2 - 3 * mag**2)
 check(
-    "4.3 <det(H)>_arg(b) = a(a^2 - 3|b|^2) (post-U(1)_b-quotient det)",
+    "4.3 supplied Haar average <det(H)> = a(a^2 - 3|b|^2)",
     sp.simplify(det_avg - expected_det_avg) == 0,
     detail=f"<det> = {det_avg}",
 )
@@ -358,13 +370,14 @@ check(
 # Section 5: Functional extrema on (a, |b|)-plane
 # ======================================================================
 
-banner("Section 5: Functional extrema on (a, |b|)-plane (post-U(1)_b-quotient)")
+banner("Section 5: Supplied candidate extrema on invariant (a, |b|) coordinates")
 
-print("Three admissible extremization functionals on the post-U(1)_b-quotient")
+print("Three supplied extremization candidates on the invariant")
 print("(a, |b|) plane:")
 print("  F1 = log E_+ + log E_perp     (block-total Frobenius, (1,1)-mult)")
 print("  F2 = log <det^2>              (angular-averaged det)")
 print("  F3 = log E_+ + 2 log E_perp   (rank-weighted, (1,2)-mult)")
+print("Weighted block-log laws more generally form a continuous mu/nu family.")
 print()
 print("Constraint: E_+ + E_perp = const, where E_+ = 3a^2, E_perp = 6|b|^2.")
 print()
@@ -393,11 +406,11 @@ res_F1 = minimize(
     method="SLSQP",
 )
 a_F1, b_F1 = res_F1.x
-kappa_F1 = a_F1**2 / b_F1**2 if b_F1 > 0 else float("inf")
+kappa_F1 = a_F1**2 / b_F1**2 if b_F1 > 0 else None
 ratio_F1 = b_F1**2 / a_F1**2
 check(
     "5.1 F1 (block-total Frobenius) extremum at A1 (kappa = 2)",
-    np.isclose(kappa_F1, 2.0, atol=1e-4),
+    kappa_F1 is not None and np.isclose(kappa_F1, 2.0, atol=1e-4),
     detail=f"a = {a_F1:.6f}, |b| = {b_F1:.6f}, |b|^2/a^2 = {ratio_F1:.6f} (target A1 = 0.5)",
 )
 
@@ -421,11 +434,37 @@ res_F2 = minimize(
 )
 a_F2, b_F2 = res_F2.x
 ratio_F2 = b_F2**2 / a_F2**2
-# F2 lands AWAY from A1 — verify it does NOT land at A1
+
+# Reconstruct the complete fixed-energy profile exactly. With
+# t=E_perp/E_total in [0,1], a^2=E_total(1-t)/3 and |b|^2=E_total*t/6.
+# Comparing both endpoints and every interior critical point certifies the
+# global maximum, rather than trusting the local numerical optimizer.
+t_fraction, total_symbol = sp.symbols("t_fraction total_symbol", real=True, positive=True)
+fixed_energy_profile = sp.factor(
+    det_sq_avg.subs(
+        {
+            a: sp.sqrt(total_symbol * (1 - t_fraction) / 3),
+            mag: sp.sqrt(total_symbol * t_fraction / 6),
+        }
+    )
+)
+critical_fractions = sp.solve(sp.diff(fixed_energy_profile, t_fraction), t_fraction)
+boundary_value = sp.simplify(fixed_energy_profile.subs(t_fraction, 0))
+other_candidates = [sp.Integer(1), *critical_fractions]
+global_boundary_certificate = (
+    len(critical_fractions) == 2
+    and all(bool(0 < point < 1) for point in critical_fractions)
+    and all(
+        sp.simplify(
+            boundary_value - fixed_energy_profile.subs(t_fraction, point)
+        ).is_positive
+        for point in other_candidates
+    )
+)
 check(
-    "5.2 F2 (angular-averaged det^2) extremum NOT at A1",
-    not np.isclose(ratio_F2, 0.5, atol=0.05),
-    detail=f"a = {a_F2:.6f}, |b| = {b_F2:.6f}, |b|^2/a^2 = {ratio_F2:.6f} (target A1 = 0.5; F2 lands away)",
+    "5.2 F2 exact fixed-energy global maximum is the |b|=0 boundary, not A1",
+    global_boundary_certificate,
+    detail=f"critical energy fractions={critical_fractions}; local-control ratio={ratio_F2:.6f}",
 )
 
 # 5.3 F3 = log E_+ + 2 log E_perp (rank-weighted)
@@ -443,11 +482,11 @@ res_F3 = minimize(
     method="SLSQP",
 )
 a_F3, b_F3 = res_F3.x
-kappa_F3 = a_F3**2 / b_F3**2 if b_F3 > 0 else float("inf")
+kappa_F3 = a_F3**2 / b_F3**2 if b_F3 > 0 else None
 ratio_F3 = b_F3**2 / a_F3**2
 check(
     "5.3 F3 (rank-weighted) extremum at kappa = 1 (NOT A1)",
-    np.isclose(kappa_F3, 1.0, atol=1e-4),
+    kappa_F3 is not None and np.isclose(kappa_F3, 1.0, atol=1e-4),
     detail=f"a = {a_F3:.6f}, |b| = {b_F3:.6f}, |b|^2/a^2 = {ratio_F3:.6f} (target NOT A1; rank-weighted predicts kappa=1)",
 )
 
@@ -462,7 +501,9 @@ print()
 # 5.5 Symbolic Lagrange F2 extremum confirms boundary
 print("  Symbolic Lagrange of F2 (angular-averaged det^2):")
 print("     <det^2> = a^6 - 6a^4|b|^2 + 9a^2|b|^4 + 2|b|^6")
-print("     At |b|=0: <det^2> = a^6.  This is the boundary maximum (κ=∞).")
+print("     At |b|=0: <det^2> = a^6.  This is the boundary maximum.")
+print("     The ratio κ=a^2/|b|^2 is undefined there; it diverges only as")
+print("     a one-sided interior limit.")
 print("     At a → 0: <det^2> → 2|b|^6.  Lower than a^6 at fixed E_total.")
 print("     →  F2 prefers |b| = 0 boundary (NOT A1).")
 
@@ -520,18 +561,13 @@ check(
 # (we demonstrate this by showing that all three are functionals on Herm_circ(3)
 # expressed in cited-source-stack vocabulary)
 print()
-print("  Each functional uses only cited-source-stack primitives:")
-print("    F1: E_+ = 3a^2 (retained), E_perp = 6|b|^2 (retained, BlockTotalFrob)")
+print("  Each supplied candidate uses the same abstract coordinates:")
+print("    F1: E_+ = 3a^2, E_perp = 6|b|^2 (abstract Frobenius algebra)")
 print("    F2: <det^2>_phi = polynomial in (a^2, |b|^2) after U(1)_b averaging")
 print("    F3: E_+, E_perp same as F1, but with rank-weighted (1,2) coefficients")
 print()
-print("  All three are admissible candidates on the post-U(1)_b-quotient")
-print("  (a, |b|)-plane. No cited source-stack content distinguishes F1 as canonical.")
-print()
-check(
-    "6.3 All three functionals use retained primitives (verifies F1 not distinguished by retained vocabulary)",
-    True,  # structural claim demonstrated above
-)
+print("  SOURCE BOUNDARY (not counted as theorem evidence): no cited source")
+print("  theorem selects F1 as the canonical physical functional over F2 or F3.")
 
 
 # ======================================================================
@@ -539,6 +575,7 @@ check(
 # ======================================================================
 
 banner("Section 7: PDG circularity firewall")
+CURRENT_KIND = "algebra"
 
 # 7.1 No PDG mass values used in derivation
 # All algebraic computations above use symbolic (a, b) or arbitrary numerical
@@ -580,6 +617,7 @@ check(
 # ======================================================================
 
 banner("Section 8: Polynomial cone identity propagation under P1")
+CURRENT_KIND = "conditional"
 
 print("Retained KOIDE_CONE_THREE_FORM_EQUIVALENCE (positive_theorem):")
 print("  3(u^2 + v^2 + w^2) = 2(u + v + w)^2")
@@ -623,10 +661,11 @@ print()
 print("  This propagates correctly. The polynomial cone identity is the")
 print("  algebraic backbone, but it does NOT, by itself, force A1 — it")
 print("  states: 'IF (lambda_0, lambda_1, lambda_2) lies on the cone")
-print("  THEN |b|^2/a^2 = 1/2'. The 'IF' is the open admission.")
+print("  THEN |b|^2/a^2 = 1/2'. The 'IF' is the open selector condition.")
 check(
     "8.2 Cone identity correctly propagates under P1 (algebraic backbone)",
-    True,  # demonstrated above by 8.1
+    sp.solve(sp.Eq(F_orbit_at_P1_simplified, 0), a_pos)
+    == [sp.sqrt(2) * mag_b],
 )
 
 
@@ -635,6 +674,7 @@ check(
 # ======================================================================
 
 banner("Section 9: Convention-robustness checks")
+CURRENT_KIND = "algebra"
 
 # 9.1 Q is scale-invariant: Q(c*H) = Q(H) for c > 0
 H1 = hermitian_circulant(1.0, 0.7 + 0.3j)
@@ -676,12 +716,11 @@ banner("Section 10: Verdict")
 print("Phase 1 (conditional on the unretained P1 probe hypothesis):")
 print("  After supplying lambda_k = sqrt(m_k), the Brannen Koide")
 print("  ratio Q = (a^2 + 2|b|^2)/(3a^2) is U(1)_b-invariant. The Q-")
-print("  functional automatically erases the U(1)_b angular ambiguity.")
+print("  formula is invariant; this does not supply a physical quotient.")
 print()
-print("Phase 2 (closes from cited source-stack content):")
-print("  The det-carrier law (campaign synthesis's competing functional for")
-print("  kappa=1 at algebra level) is NOT U(1)_b-invariant. After U(1)_b-")
-print("  quotient (angular average), <det> = a(a^2 - 3|b|^2). The angular-")
+print("Phase 2 (conditional on a supplied Haar angular projection):")
+print("  The det-carrier law is NOT U(1)_b-invariant. Under the supplied")
+print("  average, <det> = a(a^2 - 3|b|^2). The angular-")
 print("  averaged det extremum lands at boundary |b|=0, NOT A1.")
 print()
 print("Phase 3 (positive — F1 is a viable candidate):")
@@ -689,28 +728,25 @@ print("  Block-total Frobenius F1 = log E_+ + log E_perp at fixed E_+ + E_perp")
 print("  has its Lagrange extremum at E_+ = E_perp ⇔ a^2 = 2|b|^2 ⇔ A1.")
 print()
 print("Phase 4 (sharpened obstruction — closure NOT achieved):")
-print("  Multiple admissible post-U(1)_b-quotient functionals on (a, |b|)-")
-print("  plane:")
+print("  Three supplied candidates on invariant (a, |b|) coordinates:")
 print("    F1 = log E_+ + log E_perp         → extremum at A1 (kappa=2)")
 print("    F2 = log <det^2>_arg(b)           → extremum at boundary, NOT A1")
 print("    F3 = log E_+ + 2 log E_perp       → extremum at kappa=1, NOT A1")
-print("  No retained extremization principle pins F1 over F2, F3.")
+print("  Weighted block-log laws form a continuous mu/nu family; no cited")
+print("  extremization principle pins F1 over that family.")
 print()
 print("Conclusion:")
-print("  The functional-level pivot ERASES the U(1)_b angular ambiguity")
-print("  (Probes 13/14 algebra-level residue) by construction, but DOES")
-print("  NOT close A1. The new sharpened residue is a discrete functional-")
-print("  choice convention on the (a, |b|)-plane, strictly smaller than")
-print("  (and qualitatively different from) the algebra-level continuous-")
-print("  symmetry residue.")
+print("  The conditional invariant formula and supplied Haar projection DO")
+print("  NOT close A1. P1, the physical quotient/readout, and the continuous")
+print("  functional/weight choice remain open.")
 print()
 print("  Sharpened residue (Probe 16):")
-print("    'The canonical extremization functional on the (a, |b|) post-")
-print("     U(1)_b-quotient carrier — block-total Frobenius F1 over")
-print("     admissible competitors F2, F3 — that lands the extremum at A1.'")
+print("    'The physical extremization functional on invariant (a, |b|)")
+print("     coordinates, including the continuous weight family, is not")
+print("     selected by the cited content.'")
 print()
-print("  A1 admission count: UNCHANGED.")
-print("  No new admissions proposed.")
+print("  Premise and registry surfaces: UNCHANGED.")
+print("  No new premise or registry entry proposed.")
 print()
 
 
@@ -720,8 +756,13 @@ print()
 
 print()
 print("=" * 72)
-print(f"=== TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT} ===")
-print("=" * 72)
-
-if FAIL_COUNT > 0:
+total_pass = ALGEBRA_PASS + CONDITIONAL_PASS
+total_fail = ALGEBRA_FAIL + CONDITIONAL_FAIL
+print(
+    f"SCORECARD ALGEBRA_PASS={ALGEBRA_PASS} ALGEBRA_FAIL={ALGEBRA_FAIL} "
+    f"CONDITIONAL_PASS={CONDITIONAL_PASS} CONDITIONAL_FAIL={CONDITIONAL_FAIL}"
+)
+print(f"=== TOTAL: PASS={total_pass}, FAIL={total_fail} ===")
+if total_fail:
     raise SystemExit(1)
+print("=" * 72)

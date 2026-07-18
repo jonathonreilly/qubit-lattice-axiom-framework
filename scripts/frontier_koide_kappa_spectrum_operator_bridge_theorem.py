@@ -355,23 +355,30 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--mode",
-        choices=("normal", "independent", "hostile"),
-        default="normal",
+        choices=("all", "normal", "independent", "hostile"),
+        default="all",
     )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    score = Score()
-    if args.mode == "normal":
-        normal_mode(score)
-    elif args.mode == "independent":
-        independent_mode(score)
-    else:
-        hostile_mode(score)
-    print(f"TOTAL mode={args.mode} PASS={score.passed} FAIL={score.failed}")
-    return int(score.failed != 0)
+    modes = {
+        "normal": normal_mode,
+        "independent": independent_mode,
+        "hostile": hostile_mode,
+    }
+    selected = tuple(modes) if args.mode == "all" else (args.mode,)
+    total = Score()
+    for mode in selected:
+        score = Score()
+        modes[mode](score)
+        print(f"TOTAL mode={mode} PASS={score.passed} FAIL={score.failed}")
+        total.passed += score.passed
+        total.failed += score.failed
+    if args.mode == "all":
+        print(f"TOTAL mode=all PASS={total.passed} FAIL={total.failed}")
+    return int(total.failed != 0)
 
 
 if __name__ == "__main__":

@@ -4,10 +4,10 @@ Date: 2026-05-09
 
 Source repair: 2026-07-18
 
-Type: `bounded_theorem`
+**Type:** `bounded_theorem`
 
-Scope: exact finite-dimensional algebra for a supplied logarithmic functional
-Status: source repaired; a fresh independent audit is required
+**Scope:** exact finite-dimensional algebra for a supplied logarithmic functional
+**Status:** source repaired; a fresh independent audit is required
 
 ## Claim
 
@@ -88,6 +88,21 @@ E_+=E_\perp.
 For positive weights this occurs at the stationary point exactly when
 \(\mu=\nu\).
 
+### Independent global-maximizer reconstruction
+
+Set \(t=E_+/N\) and \(q=\mu/(\mu+\nu)\). Without differentiating,
+
+\[
+S(t)-S(q)=-(\mu+\nu)
+D_{\mathrm{KL}}\!\left((q,1-q)\,\|\,(t,1-t)\right)\le0.
+\]
+
+Equivalently, weighted AM-GM applies to \(t/q\) and
+\((1-t)/(1-q)\), whose \((q,1-q)\)-weighted arithmetic mean is exactly
+one. Equality requires \(t/q=(1-t)/(1-q)\), hence uniquely \(t=q\).
+This proves the same global maximizer by a route distinct from the
+derivative and curvature calculation.
+
 ## Global polynomial statement and the \(b=0\) boundary
 
 The polynomial equation \(a^2-2|b|^2=0\) is globally meaningful. At
@@ -100,9 +115,9 @@ The exact Fourier equivalence used here is proved in the
 That theorem supplies only the finite polynomial identity; it supplies no
 mass assignment or physical carrier.
 
-## Retained and excluded conclusions
+## Exact in-scope and excluded conclusions
 
-Retained:
+Exact in scope:
 
 1. the exact isotype-energy formulas;
 2. the unique stationary energy fractions for a supplied positive-weight
@@ -118,12 +133,27 @@ Not derived:
 - that \(H\) carries charged-lepton masses or square roots of masses;
 - a P1 assignment, cyclic-compression carrier, physical selector, MRU
   principle, or scalar measure;
-- a prediction or falsification of a charged-lepton relation;
-- any comparison with PDG masses or a numerical near-\(Q\)/near-\(\kappa\)
-  target.
+- an unconditional prediction or falsification of a charged-lepton relation.
 
-This repair removes the former physical “partial falsification” reading.
-The honest result is the abstract supplied-functional obstruction above.
+### Conditional empirical comparator (not theorem evidence)
+
+If one additionally supplies both (i) the P1 square-root-mass assignment and
+charged-lepton carrier/readout and (ii) the claim that the \((1,2)\)
+logarithmic functional is the physical law for that carrier, then its
+\(\kappa=1\) stationary locus disagrees with the charged-lepton square-root
+mass Fourier comparator \(\kappa\simeq2\). From the supplied snapshot
+\((m_e,m_\mu,m_\tau)=(0.51099895,105.6583755,1776.86)\,\mathrm{MeV}\),
+the runner independently recomputes \(\kappa=2.0000369318\); this is printed
+as uncounted support and is not used by any theorem check. The snapshot is
+also recorded in the source-side
+[circulant derivation note](KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md).
+Under those two added premises the mismatch is a
+partial falsification of that *conditioned model only*; it is not a
+falsification of this framework, which supplies neither premise here.
+
+This repair preserves that narrow conditional comparator while removing the
+former unconditional physical “partial falsification” reading. The exact
+result is the abstract supplied-functional obstruction above.
 
 ## Executable witness
 
@@ -136,6 +166,9 @@ python3 scripts/cl3_koide_bae_probe_kappa_prediction_test_2026_05_09_probe29.py 
 ```
 
 The normal mode checks the direct matrix and stationary-point algebra. The
-independent mode reconstructs the result in the normalized energy fraction.
+independent mode reconstructs the result from the Bernoulli KL identity and
+weighted AM-GM, without differentiating the supplied functional.
 The hostile mode requires wrong weights, missing normalization factors,
 ratio extension to \(b=0\), and false zero-locus identifications to fail.
+With no `--mode` argument, all three modes run so the single canonical
+SHA-pinned cache records every evidence path.

@@ -40,8 +40,8 @@ then use this note for the candidate-route logic in §2-§9.
 the historical route language below:
 
 - Koide `kappa`: MRU remains supplementary only. The SO(2)-quotient needed to
-  make MRU load-bearing is not retained-derived from the observable
-  principle. The abstract Hermitian-circulant Fourier invariant and the
+  make MRU load-bearing is not derived by the cited observable-principle
+  proposal. The abstract Hermitian-circulant Fourier invariant and the
   block-total Frobenius formulas characterize candidate loci but do not
   provide a physical mass carrier or selector. See
   `docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`.
@@ -87,15 +87,16 @@ singlet-vs-doublet scalar selector iff `|Iso(d)| = 2` with one singlet
 + one complex doublet, which holds iff **`d = 3`**.
 
 See `docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`.
-Runner PASS=65 FAIL=0.
+Runner classified PASS=26 FAIL=0 with one explicitly supplied conditional
+premise and no registry entry.
 
 A same-day obstruction theorem sharpens the MRU frontier. On the same
 `1 ⊕ 2` cyclic carrier, every weighted block-log-volume law lands on the leaf
 `kappa = 2 mu / nu`. MRU is the equal-weight leaf `(mu, nu) = (1, 1)`, while
-the retained unreduced determinant carrier satisfies
+the cited unreduced determinant carrier satisfies
 `det(alpha P_+ + beta P_perp) = alpha beta^2`, so it carries weights `(1, 2)`
 and lands at `kappa = 1`, not `kappa = 2`. The exact missing object is
-therefore a retained `1:1` real-isotype measure or equivalent two-slot carrier
+therefore an independently justified `1:1` real-isotype measure or equivalent two-slot carrier
 reduction. See
 `docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`.
 
@@ -129,8 +130,9 @@ E_I := || pi_I(H) ||_F^2.
 At `d = 3` this gives `E_+ = 3 a^2`, `E_⊥ = 6 |b|^2`, so the supplied
 block-total extremum has `kappa = 2` while the determinant-carrier lands at
 `kappa = 1`. `d = 3` is the unique dim where `Herm_circ` decomposes as
-`1 · trivial ⊕ 1 · complex-doublet` — so the block-total Frobenius functional
-is itself dim-uniquely well-defined at `d = 3`. This is an abstract
+`1 · trivial ⊕ 1 · complex-doublet` with no sign block. The block-total
+Frobenius functional itself exists in other dimensions; this decomposition
+profile is what is dimensionally unique. This is an abstract
 characterization for a supplied functional, not an independent physical
 closure route or selector for `kappa`. See
 `docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`.

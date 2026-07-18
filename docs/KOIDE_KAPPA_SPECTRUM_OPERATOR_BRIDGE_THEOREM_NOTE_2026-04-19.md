@@ -76,7 +76,7 @@ z   = sqrt(3) b,
 |z|^2 = 3 |b|^2.
 ```
 
-An orientation-independent real check uses
+An independent real-coordinate check in the same displayed orientation uses
 
 ```text
 [ a_0  ]   [ 1/sqrt(3)   1/sqrt(3)      1/sqrt(3)    ] [lambda_0]
@@ -170,6 +170,9 @@ python3 scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py --mode 
   conjugation, inverse cyclic shift, wrong `3/2` factors, a global `b=0`
   ratio claim, and wrong cubic-trace coefficients to leave nonzero exact
   residues or an explicit domain counterexample.
+
+With no `--mode` argument, the runner executes all three modes so the single
+canonical SHA-pinned cache records every evidence path.
 
 No theorem count is awarded for prose presence, a literal boolean, an
 external numerical comparator, or a target-value match.

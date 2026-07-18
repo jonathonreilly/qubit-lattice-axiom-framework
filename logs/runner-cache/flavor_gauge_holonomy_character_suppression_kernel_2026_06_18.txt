@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py
-runner_sha256: 3fe464474930cfddea61c47444542d12472692f16806684e833601304798976e
+runner_sha256: 38af552b851a5b361014460e93e644c1a137837b24e6ef4c32c32005f9fd0dae
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.21
@@ -8,27 +8,27 @@ status: ok
 ----- stdout -----
 FLAVOR GAUGE HOLONOMY CHARACTER-SUPPRESSION KERNEL
 ========================================================================
-[PASS] finite triangle-identity proof certificate is nonnegative on phase grid
+[ALGEBRA PASS] finite phase-grid regression matches the analytic triangle identity and bound
        max_identity_error=7.105e-15, min_gap=0.000e+00, equality_violations=0
-[PASS] fibre-averaged hop coefficient is exactly character-normalized
+[ALGEBRA PASS] fibre-averaged hop coefficient is exactly character-normalized
        max_formula_error=2.776e-16
-[PASS] normalized character multiplier cannot enhance r
+[ALGEBRA PASS] normalized character multiplier cannot enhance r
        max_bound_excess=1.110e-16
-[PASS] bound propagates an arbitrary free r0=0.11
+[ALGEBRA PASS] bound propagates an arbitrary free r0=0.11
        r_eff=0.031998
-[PASS] bound propagates an arbitrary free r0=0.31
+[ALGEBRA PASS] bound propagates an arbitrary free r0=0.31
        r_eff=0.090177
-[PASS] bound propagates an arbitrary free r0=0.50
+[ALGEBRA PASS] bound propagates an arbitrary free r0=0.50
        r_eff=0.145446
-[PASS] bound propagates an arbitrary free r0=0.87
+[ALGEBRA PASS] bound propagates an arbitrary free r0=0.87
        r_eff=0.253077
-[PASS] kernel note records framework-native proof and no new axiom
-[PASS] parent note cites the kernel note, runner, and cache
-[PASS] physical sector-to-representation readout remains open
-[PASS] source change does not promote audit status
+[SOURCE PASS] kernel note records the conditional finite-algebra proof and no new axiom
+[SOURCE PASS] parent note cites the kernel note, runner, and cache
+[SOURCE PASS] physical sector-to-representation readout remains open
+[SOURCE PASS] source change does not promote audit status
 
-VERDICT: the character-suppression kernel is a finite framework-native support theorem; the flavor sector readout/representation assignment remains open for the parent no-go.
-SCORECARD PASS=11 FAIL=0
+VERDICT: the character-suppression kernel is exact conditional finite algebra for a supplied closed-holonomy tensor dressing; that dressing and the physical sector readout remain open.
+SCORECARD ALGEBRA_PASS=7 ALGEBRA_FAIL=0 SOURCE_PASS=4 SOURCE_FAIL=0 PASS=11 FAIL=0
 
 ----- stderr -----
 

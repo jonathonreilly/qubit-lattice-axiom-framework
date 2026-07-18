@@ -13,8 +13,9 @@ residue; all other steps are mechanically verified.
 bookkeeping. For current branch-facing status, apply two corrections first:
 
 - Koide `kappa`: the MRU/SO(2)-quotient path is no longer primary. The
-  retained closure route is the spectrum/operator bridge plus the block-total
-  Frobenius measure; MRU is supplementary only. See
+  spectrum/operator row is an abstract Fourier identity, the block-total row
+  is supplied-functional support, and MRU is supplementary only. The physical
+  carrier and scalar-measure selector remain open. See
   `docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`.
 - DM A-BCC basin bookkeeping: the full χ²=0 chart is now
   `{Basin 1, Basin N, Basin P, Basin 2, Basin X}`, and the active-chamber
@@ -82,8 +83,9 @@ claimed.**
 
 ## Chain 2 — Koide `kappa` (charged-lepton cone normalization `kappa = 2`)
 
-**Gate:** operator-side charged-lepton cone normalization
-`kappa := g_0^2 / |g_1|^2 = 2`, equivalently `Q := 2 (sum m) / (sum sqrt(m))^2 = 2/3`.
+**Gate:** operator-side charged-lepton cone normalization on the nonzero
+denominator domain, `kappa := g_0^2 / |g_1|^2 = 2`, equivalently
+`Q := (sum m) / (sum sqrt(m))^2 = 2/3`.
 
 ```text
 Step 1  — retain Herm_circ(d) + Frobenius metric on charged-lepton
@@ -98,17 +100,19 @@ Step 3  — at d = 3, Herm_circ decomposes as 1 · trivial ⊕ 1 · complex-doub
           [KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19, §2]
 Step 4  — MRU principle: Frobenius-normalized cyclic responses uniform
           across Z_3 isotypes => a^2 = 2 |b|^2 => kappa = 2
-          [same note, runner PASS=65]
+          [same note, runner classified PASS=26, one supplied conditional premise,
+           no registry entry]
 Step 5  — weight-class obstruction: every weighted block-log-volume law
           lands on the leaf kappa = 2 mu / nu. MRU is (1,1) leaf; the
-          retained unreduced det-carrier satisfies det(alpha P_+ + beta P_⊥)
+          cited unreduced det-carrier satisfies det(alpha P_+ + beta P_⊥)
           = alpha beta^2 => (1,2) leaf => kappa = 1. Missing object =
-          retained 1:1 real-isotype measure
+          independently justified 1:1 real-isotype measure
           [KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19]
 Step 6  — block-total Frobenius measure theorem: the 1:1 measure named in
           Step 5 is explicitly realized by E_I := || pi_I(H) ||_F^2, giving
-          E_+ = 3 a^2, E_⊥ = 6 |b|^2. d = 3 is the unique dim where this
-          block-total functional is dim-uniquely well-defined. Extremum at
+          E_+ = 3 a^2, E_⊥ = 6 |b|^2. d = 3 is the unique dim where the
+          real-isotype pattern is exactly one trivial plus one doublet with
+          no sign block. Extremum at
           E_+ = E_⊥ recovers kappa = 2
           [KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19,
            runner PASS=16]
@@ -125,7 +129,7 @@ Step 9  — Steps 4–7 preserve their conditional or abstract algebraic content
 ```
 
 **Status:** historical conditional proof-chain map. The exact Fourier identity
-is retained here only as abstract finite algebra. Physical selection of a
+is preserved here only as abstract finite algebra. Physical selection of a
 carrier, P1 mass assignment, scalar measure, and the common zero locus is not
 derived by this chain.
 
@@ -237,18 +241,18 @@ independently retained.
 | Chain | Named residues | Meta-axiom dependency |
 |---|---|---|
 | Koide `theta` | none | the Brannen-Zenczykowski phase offset closed on actual route via Berry selected-line CP¹; part of DIM-UNIQ framing at `d = 3` |
-| Koide `kappa` | none | Current primary route is bridge + block-total Frobenius; historical SO(2)-quotient language is superseded by `KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md` |
+| Koide `kappa` | physical carrier/readout plus scalar-measure selector | Fourier zero-locus identity and block-total supplied-functional extremum are exact support, not a framework-only physical closure; historical SO(2)-quotient language is superseded by `KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md` |
 | DM A-BCC | none | Part of DIM-UNIQ framing at `d = 3` (DPLE `floor(d/2) = 1`) |
 | Quark `a_u` | none | STRC derived from `1(+)5` channel completeness (`37c4f2bf`), no longer a separate meta-axiom |
 
-**Meta-axiom collapse:** with STRC derived and the Koide `kappa` gate carried
-primarily by the bridge/block-total pair, the earlier "`4 → 2` DIM-UNIQ +
-STRC" layer reduces to
-**`4 → Cl(3)/Z³` framework axioms**.
+**Meta-axiom accounting:** the exact Fourier and block-total calculations do
+not collapse the Koide physical carrier/selector residue into the framework
+axioms. The earlier proposed "`4 → Cl(3)/Z³`" collapse therefore does not
+follow from this chain.
 
-**Reviewer-bar per-lane:** all four gates closed; zero named residues;
-zero new axioms added this cycle. All four closures ride only on
-retained Cl(3)/Z³ framework ingredients.
+**Reviewer-bar per-lane:** the Koide `kappa` gate remains open at the physical
+carrier/readout and scalar-measure selector; the exact algebra adds no new
+axiom. Other lane statuses are not changed by this source repair.
 
 ## Audit dependency repair links
 

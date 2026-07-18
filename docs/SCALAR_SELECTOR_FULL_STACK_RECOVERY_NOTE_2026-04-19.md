@@ -81,22 +81,25 @@ available on the branch).
 
 ### §1.2 Koide `kappa` (charged-lepton cone normalization `kappa = 2`)
 
-**Retained content:**
+**Preserved conditional and abstract content:**
 
 1. **Moment-Ratio Uniformity (MRU)**
-   (`KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_…`, runner PASS=65). On
-   `Herm_circ(d)` with Frobenius metric, MRU requires Frobenius-normalized
-   cyclic responses to be uniform across `Z_d` isotypes; at `d = 3` this
+   (`KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_…`, runner classified
+   PASS=26 with one supplied conditional premise and no registry entry). On
+   the supplied quotient carrier over `Herm_circ(d)` with Frobenius metric,
+   MRU stipulates Frobenius-normalized cyclic responses uniform across
+   `Z_d` isotypes; at `d = 3` this
    is a single equation equivalent to `a^2 = 2|b|^2`, i.e. `kappa = 2`.
    `d = 3` is the unique dim where Herm_circ has exactly one singlet plus
    one complex doublet. **Status: support/candidate principle.**
 2. **Weight-class obstruction**
    (`KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_…`). Every weighted
    block-log-volume law lands on the leaf `kappa = 2 mu / nu`; MRU is the
-   equal-weight leaf `(1,1)`; the retained unreduced determinant carrier
+   equal-weight leaf `(1,1)`; the cited unreduced determinant carrier
    has weights `(1,2)` and lands at `kappa = 1`. The exact missing object
-   is a retained `1:1` real-isotype measure. **Status: retained frontier
-   obstruction.**
+   is an independently justified `1:1` real-isotype measure. **Status:
+   source-proposed determinant-specific obstruction; audit authority remains
+   with the audit lane.**
 3. **Block-total Frobenius measure theorem** (recovered;
    `KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_…`, runner
    `frontier_koide_kappa_block_total_frobenius_measure_theorem.py` PASS=16
@@ -105,8 +108,8 @@ available on the branch).
    `E_I := ||pi_I(H)||_F^2`. At `d = 3` this gives `E_+ = 3 a^2`,
    `E_⊥ = 6 |b|^2`, so the block-total extremum at `E_+ = E_⊥` recovers
    `kappa = 2` while the determinant-carrier lands at `kappa = 1`.
-   **Status: retained independent second closure route for operator-side
-   `kappa`.**
+   **Status: exact supplied-functional support; the physical scalar-measure
+   selector remains open.**
 4. **Spectrum/operator bridge theorem** (recovered;
    `KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_…`, runner
    `frontier_koide_kappa_spectrum_operator_bridge_theorem.py`: normal
@@ -120,7 +123,7 @@ available on the branch).
 **Reviewer-bar status:** single named residue = physical selection of the
 `1:1` block-total Frobenius measure over the `(1,2)` determinant measure.
 Both measures are algebraically available; the missing ingredient is a
-retained physics principle that picks the block-total form as the one the
+source-supported physics principle that picks the block-total form as the one the
 charged-lepton carrier actually obeys.
 
 ### §1.3 DM A-BCC basin (interior-minimum Sylvester discriminator `F_4`)
@@ -303,7 +306,7 @@ frontier_dm_pns_attack_cascade.py                                 PASS=47  FAIL=
 frontier_dm_abcc_chamber_dple_closure.py                          PASS=39  FAIL=0
 frontier_dm_dple_dimension_parametric_extremum_theorem.py         PASS=19  FAIL=0
 frontier_quark_issr1_bicac_forcing.py                             PASS=13  FAIL=0
-frontier_koide_moment_ratio_uniformity_theorem.py                 PASS=65  FAIL=0
+frontier_koide_moment_ratio_uniformity_theorem.py                 PASS=26  FAIL=0  SUPPLIED_PREMISES=1
 frontier_koide_mru_weight_class_obstruction.py                    PASS=*   FAIL=0
 ```
 

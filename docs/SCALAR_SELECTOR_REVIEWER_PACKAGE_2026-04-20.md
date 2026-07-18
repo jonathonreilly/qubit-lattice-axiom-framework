@@ -41,9 +41,9 @@ does not fully close the charged-lepton Koide lane: `Q = 2/3` still needs the
 physical/source-law extremal-principle bridge, and `δ = 2/9` still needs the
 physical Brannen-phase bridge.
 
-| Gate | Observable | Closure routes | Retained inputs |
+| Gate | Observable | Closure routes | Open inputs / boundaries |
 |---|---|---|---|
-| **Koide κ** | Charged-lepton cone normalization `κ = 2` (equivalently `Q = 2/3`) | April 21 support package: Frobenius-isotype / AM-GM support + executable reviewer stress-test | physical/source-law bridge from retained framework physics to the block-total Frobenius extremal principle |
+| **Koide κ** | Charged-lepton cone normalization `κ = 2` (equivalently `Q = 2/3`) | April 21 support package: Frobenius-isotype / AM-GM support + executable reviewer stress-test | physical/source-law bridge from framework inputs to the block-total Frobenius extremal principle |
 | **Koide θ** | Brannen-Zenczykowski phase offset `δ = 2/9` | April 21 support package: ABSS fixed-point / topological robustness + executable reviewer stress-test | physical Brannen-phase bridge from the selected-line observable to the ambient APS invariant |
 | **DM PMNS** | Physical neutrino-source basin selection plus intrinsic PMNS point selection | Retained-measurement A-BCC integration + interval-certified split-2 closure + shifted same-law recovered-packet closure + exact target-surface source-cubic theorem + graph-first ordered-chain nonzero-current activation theorem + affine current-coordinate reduction theorem + ordered-chain graded-current delta closure theorem | none on the current package surface; on the stricter/native side the closure is exact-target-surface rather than a pure target-free global sign law |
 | **Quark a_u** | Up-sector reduced amplitude `a_u = 0.7748865611` | JTS / ISSR1 / shell-normalization / RPSR support stack materially sharpens the lane | authoritative package still keeps the full quark lane bounded rather than promoted |
@@ -54,7 +54,7 @@ physical Brannen-phase bridge.
 
 **Historical target.** The old package compared the operator-side ratio
 
-    κ  :=  g_0² / |g_1|²  =  2
+    κ  :=  g_0² / |g_1|²  =  2,       on |g_1| != 0,
 
 with the spectrum-side Koide relation
 
@@ -75,10 +75,10 @@ holds where `(a_0,z)` are the normalized Fourier coordinates of the real eigenva
 **Consequence.** The two abstract polynomial residuals have the same zero locus. The ratio `κ=a²/|b|²` is defined only for `b!=0`; the global theorem includes the `b=0` boundary and is not a physical Koide, P1, carrier, selector, or MRU theorem.
 
 **Package status.** The April 21 Frobenius-isotype / AM-GM stack is the
-strongest current support route for `Q = 2/3`. It proves that the admitted
+strongest current support route for `Q = 2/3`. It proves that the supplied
 block-total Frobenius functional is maximized at the Koide point. What
 remains open is the physical/source-law bridge: why the charged-lepton packet
-must extremize that functional on the retained framework surface.
+must extremize that functional on the charged-lepton physical surface.
 
 ### §1.2 Independent corroboration — block-total Frobenius measure
 
@@ -91,13 +91,21 @@ The equal-block-measure extremum `E_+ = E_⊥` at fixed `E_+ + E_⊥` recovers `
 
 **Proof.** Direct calculation; verified in `scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py` (16 PASS, 0 FAIL).
 
-**Dimensional uniqueness.** `d = 3` is the unique dimension where `Herm_circ(d)` decomposes as `1·trivial ⊕ 1·complex-doublet`, so the block-total Frobenius functional is itself dim-uniquely well-defined at `d = 3`.
+**Dimensional uniqueness.** `d = 3` is the unique dimension where
+`Herm_circ(d)` decomposes as `1·trivial ⊕ 1·complex-doublet` with no sign
+block. The block-total Frobenius functional itself is defined in other
+dimensions; what is unique here is this one-trivial-plus-one-doublet isotype
+pattern.
 
-**Retained inputs.** Herm_circ(3) structure (C₃ representation theory; see `docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`), `d = 3` (from `docs/DIMENSION_SELECTION_NOTE.md` and related dimensional-selection notes).
+**Supplied/cited algebraic context.** `Herm_circ(3)` structure (C₃
+representation theory; see
+`docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`) and `d=3`.
+These citations are not authority-promoted here; the circulant source row is
+currently ledger-unaudited.
 
 ### §1.3 Supporting — Moment-Ratio Uniformity (MRU)
 
-On `Herm_circ(3)` with Frobenius metric, the MRU principle — Frobenius-normalized cyclic responses uniform across Z₃ isotypes — is a single scalar equation equivalent to `a² = 2|b|²`. See `scripts/frontier_koide_moment_ratio_uniformity_theorem.py` (26 PASS). MRU is supplementary support only. The cycle-2 demotion note proves that the stronger SO(2)-quotient needed to make MRU load-bearing is **not** derivable from the retained observable principle, so the primary closure remains the spectrum/operator bridge plus the block-total Frobenius route. See `docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`.
+On `Herm_circ(3)` with Frobenius metric, the MRU principle — Frobenius-normalized cyclic responses uniform across Z₃ isotypes — is a single scalar equation equivalent to `a² = 2|b|²`. See `scripts/frontier_koide_moment_ratio_uniformity_theorem.py` (26 PASS). MRU is supplementary support only. The cycle-2 demotion note proves that the stronger SO(2)-quotient needed to make MRU load-bearing is **not** derived by the cited, ledger-unaudited observable-principle proposal. The Fourier identity and block-total functional therefore remain abstract/supplied-functional support, not a primary physical closure; the carrier and scalar-measure selector are open. See `docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`.
 
 ### §1.4 Supporting obstructions — what is ruled out
 

@@ -1,23 +1,54 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_bae_probe_kappa_prediction_test_2026_05_09_probe29.py
-runner_sha256: 6370132ad72e964370b2689cec44a3ab33641d44a0bfff70fcd1af9eca5c0ea7
+runner_sha256: 7e9c7f0e3d379a125e2e43458ab85056a5459e1fcd43beadf27f21de070afa2f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
+MODE=normal
 PASS: cyclic shift has order three
+PASS: cyclic shift adjoint is its square
 PASS: trivial-isotype energy is 3 a^2
 PASS: nontrivial-isotype energy is 6 |b|^2
-PASS: stationary E+ fraction
-PASS: stationary Eperp fraction
+PASS: stationarity equation is linear with the claimed numerator
+PASS: stationarity equation has one algebraic solution
+PASS: derived stationary E+ fraction
+PASS: derived stationary Eperp fraction
+PASS: curvature is negative on 0<p<total after clearing its positive denominator
 PASS: coordinate ratio equals twice energy ratio
 PASS: stationary kappa is 2 mu/nu
 PASS: supplied weights (1,2) give kappa 1
 PASS: equal weights give kappa 2
 PASS: polynomial zero locus equals equal energies
-PASS: zero locus at b=0 forces a=0
-PASS=11 FAIL=0
+PASS: global zero locus at b=0 has only a=0
+PASS: kappa denominator vanishes at b=0
+PASS=16 FAIL=0
+TOTAL mode=normal PASS=16 FAIL=0
+MODE=independent
+PASS: Bernoulli KL identity reconstructs the functional gap
+PASS: weighted AM-GM comparison has arithmetic mean one
+PASS: weighted AM-GM equality has the unique solution t=q
+PASS: coordinate ratio reconstructed from energy fraction
+PASS: (1,2) fraction is one third
+PASS: equal-weight fraction is one half
+PASS=6 FAIL=0
+TOTAL mode=independent PASS=6 FAIL=0
+MODE=hostile
+PASS: hostile mutation killed: swap the supplied weights
+PASS: hostile mutation killed: drop the factor two in kappa
+PASS: hostile mutation killed: replace Eperp=6|b|^2 by 3|b|^2
+PASS: hostile mutation killed: put the supplied (1,2) stationary point on the equal-energy locus
+PASS: hostile mutation killed: claim equal weights give kappa one
+PASS: hostile ratio extension is killed because its denominator is zero at b=0
+PASS: hostile mutation killed: reverse the global zero-locus coefficient
+PASS=7 FAIL=0
+TOTAL mode=hostile PASS=7 FAIL=0
+TOTAL mode=all PASS=29 FAIL=0
+CONDITIONAL SUPPORT (uncounted): supplied charged-lepton mass snapshot
+  recomputed square-root Fourier comparator kappa=2.0000369318177
+  this comparison requires P1, a charged-lepton carrier/readout, and
+  the supplied (1,2) functional as a physical law; none is derived here
 
 ----- stderr -----
 

@@ -1,66 +1,67 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_moment_ratio_uniformity_theorem.py
-runner_sha256: 6bb59a941c989e521c724674acba0f471959a2e848223c28fb560e5dfdb9a439
+runner_sha256: 78b6f321001cd642268983f0a0da3f782eb62e3188717701ff26059d7a7d4687
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 
 === Part 0: d=3 geometry and uniqueness (unconditional) ===
-[A] PASS: ||B_0||^2 = 3
-[A] PASS: ||B_1||^2 = ||B_2||^2 = 6
-[A] PASS: B_0, B_1, B_2 are pairwise orthogonal
-[A] PASS: d=3 has exactly one singlet and one real doublet
-[A] PASS: d=2 is singlet-singlet only, so no singlet-vs-doublet MRU form
-[A] PASS: d>=4 fragments into multiple real isotypes
+[A/ALGEBRA] PASS: ||B_0||^2 = 3
+[A/ALGEBRA] PASS: ||B_1||^2 = ||B_2||^2 = 6
+[A/ALGEBRA] PASS: B_0, B_1, B_2 are pairwise orthogonal
+[A/ALGEBRA] PASS: d=3 has exactly one singlet and one real doublet
+[A/ALGEBRA] PASS: d=2 is singlet-singlet only, so no singlet-vs-doublet MRU form
+[A/ALGEBRA] PASS: all d>=4 have more than two real isotypes by the parity formulas
 
-=== Part 1: doublet radius invariance (algebraic) + load-bearing admission ===
-  Note: the algebraic radius invariance is unconditional and is NOT what carries the closure. The load-bearing claim is the physical admission that the scalar charged-lepton lane reads only the radius and not the angle. That admission is logged below as a class-G input rather than verified here.
-[A] PASS: The doublet radius r_1^2 + r_2^2 is SO(2)-invariant (algebraic)
-[A] PASS: A single Cartesian coordinate is NOT invariant under the internal frame rotation  (residual=-3*r1**2/4 - sqrt(3)*r1*r2/2 + 3*r2**2/4)
-[A] PASS: |b|^2 is frame-invariant on the non-trivial sector (algebraic)
-[A] PASS: tr(H^3) carries explicit arg(b) dependence on Herm_circ(3) (i.e. is NOT SO(2)-invariant): d/d(bphi) tr(H^3) != 0  (d/d(bphi) tr(H^3) = -18*bmod**3*sin(3*bphi))
-[G] ADMITTED INPUT: SO(2)-quotient on the charged-lepton scalar lane.
-      detail: The note's Section 3 closure depends on the *physical* claim that the scalar charged-lepton lane reads only the doublet radius rho_perp^2 = E_perp and erases the SO(2) angle arg(b). The preceding check exhibits that generic Herm_circ(3) scalar observables (such as tr(H^3)) do carry arg(b)-dependent content, so this admission is strictly stronger than 'scalar observables are spectrum-native' and is not derived in the restricted packet of this runner.
-      see: docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md Section 1.2 for the Path A failure proof showing this is NOT a corollary of the retained observable principle on Herm_circ(3).
+=== Part 1: doublet radius invariance (algebraic) + load-bearing supplied premise ===
+  Note: the algebraic radius invariance is unconditional and is NOT what carries the closure. The load-bearing claim is the supplied physical premise that the scalar charged-lepton lane reads only the radius and not the angle. It is logged below as conditional input rather than verified here.
+[A/ALGEBRA] PASS: The doublet radius r_1^2 + r_2^2 is SO(2)-invariant (algebraic)
+[A/ALGEBRA] PASS: A single Cartesian coordinate is NOT invariant under the internal frame rotation  (residual=-3*r1**2/4 - sqrt(3)*r1*r2/2 + 3*r2**2/4)
+[A/ALGEBRA] PASS: |b|^2 is frame-invariant on the non-trivial sector (algebraic)
+[A/ALGEBRA] PASS: tr(H^3) carries explicit arg(b) dependence on Herm_circ(3) (i.e. is NOT SO(2)-invariant): d/d(bphi) tr(H^3) != 0  (d/d(bphi) tr(H^3) = -18*bmod**3*sin(3*bphi))
+[S] SUPPLIED CONDITIONAL PREMISE: SO(2)-quotient on the charged-lepton scalar lane.
+      detail: The note's Section 3 closure depends on the *physical* claim that the scalar charged-lepton lane reads only the doublet radius rho_perp^2 = E_perp and erases the SO(2) angle arg(b). The preceding check exhibits that generic Herm_circ(3) scalar observables (such as tr(H^3)) do carry arg(b)-dependent content, so this premise is strictly stronger than 'scalar observables are spectrum-native' and is not derived in the restricted packet of this runner. It is not added to any premise registry.
+      see: docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md Section 1.2 for the Path A failure proof showing this is NOT a corollary of the cited observable-principle proposal on Herm_circ(3).
 
-=== Part 2: conditional two-slot quotient carrier (uses Part 1 admission) ===
-[A] PASS: E_+ = r_0^2 / 3
-[A] PASS: E_perp = (r_1^2 + r_2^2) / 6
-[A] PASS: E_perp is constant on SO(2) orbits of the doublet plane (algebraic)
-[A] PASS: In circulant variables E_+ = 3 a^2
-[A] PASS: In circulant variables E_perp = 6 |b|^2
-[A] PASS: kappa is a quotient-carrier function of (E_+, E_perp): kappa = 2 E_+ / E_perp
+=== Part 2: conditional two-slot quotient carrier (uses Part 1 supplied premise) ===
+[A/CONDITIONAL] PASS: E_+ = r_0^2 / 3
+[A/CONDITIONAL] PASS: E_perp = (r_1^2 + r_2^2) / 6
+[A/CONDITIONAL] PASS: E_perp is constant on SO(2) orbits of the supplied quotient
+[A/CONDITIONAL] PASS: In circulant variables E_+ = 3 a^2
+[A/CONDITIONAL] PASS: In circulant variables E_perp = 6 |b|^2
+[A/CONDITIONAL] PASS: kappa is a quotient-carrier function of (E_+, E_perp): kappa = 2 E_+ / E_perp
 
-=== Part 3: reduced-carrier log-volume extremum (conditional on Part 1 admission) ===
-[A] PASS: Reduced log-volume has a unique positive stationary point  (sol=[{lam: 1/e_tot, rho_p: sqrt(2)*sqrt(e_tot)/2, rho_perp: sqrt(2)*sqrt(e_tot)/2}])
-[A] PASS: Stationary point is rho_+ = rho_perp = sqrt(E_tot/2)
-[A] PASS: The stationary point is a strict maximum on the positive branch  (second=-8/e_tot)
-[A] PASS: rho_+ = rho_perp is equivalent to E_+ = E_perp
-[A] PASS: E_+ = E_perp pulls back to a^2 = 2 |b|^2
-[A] PASS: Therefore the conditional reduced-carrier extremum forces kappa = 2 (conditional on the Part 1 admission)
+=== Part 3: reduced-carrier log-volume extremum (conditional on Part 1 supplied premise) ===
+[A/CONDITIONAL] PASS: Reduced log-volume has a unique positive stationary point  (sol=[{lam: 1/e_tot, rho_p: sqrt(2)*sqrt(e_tot)/2, rho_perp: sqrt(2)*sqrt(e_tot)/2}])
+[A/CONDITIONAL] PASS: Stationary point is rho_+ = rho_perp = sqrt(E_tot/2)
+[A/CONDITIONAL] PASS: The stationary point is a strict maximum on the positive branch  (second=-8/e_tot)
+[A/CONDITIONAL] PASS: rho_+ = rho_perp is equivalent to E_+ = E_perp
+[A/CONDITIONAL] PASS: E_+ = E_perp pulls back to a^2 = 2 |b|^2
+[A/CONDITIONAL] PASS: Therefore the conditional reduced-carrier extremum forces kappa = 2 (conditional on the Part 1 supplied premise)
 
 === Part 4: contrast with the unconditional unreduced determinant obstruction ===
-[A] PASS: Unreduced isotypic-scalar carrier has det = alpha beta^2 (unconditional)
-[A] PASS: Reduced real-isotype carrier has det = alpha beta (conditional on Part 1 admission)
-[A] PASS: Unreduced weights (1,2) land at kappa = 1 (unconditional)
-[A] PASS: Reduced two-slot carrier carries equal weights and lands at kappa = 2 (conditional on Part 1 admission)
+[A/ALGEBRA] PASS: Unreduced isotypic-scalar carrier has det = alpha beta^2 (unconditional)
+[A/CONDITIONAL] PASS: Reduced real-isotype carrier has det = alpha beta (conditional on Part 1 supplied premise)
+[A/ALGEBRA] PASS: Unreduced weights (1,2) land at kappa = 1 (unconditional)
+[A/CONDITIONAL] PASS: Reduced two-slot carrier carries equal weights and lands at kappa = 2 (conditional on Part 1 supplied premise)
 
 Interpretation:
   The unreduced 3x3 determinant obstruction remains exact and
   unconditional. The doublet radius invariance is purely
   algebraic. The load-bearing step that turns those into MRU
   on the charged-lepton scalar lane is the SO(2)-quotient
-  admission of Part 1, which the demotion note proves is NOT
-  a corollary of the retained observable principle on
+  supplied premise of Part 1, which the demotion note proves is NOT
+  a corollary of the cited observable-principle proposal on
   Herm_circ(3). This runner certifies the conditional algebra
-  after the admission; it does NOT derive the admission.
+  after the supplied premise; it does NOT derive that premise.
   The abstract Fourier-invariant theorem proves only a finite
   polynomial zero-locus equivalence. It supplies no physical
   mass carrier, P1 assignment, selector, or MRU closure.
 
-classified_pass=26 fail=0 admissions=1
+SCORECARD ALGEBRA_PASS=12 ALGEBRA_FAIL=0 CONDITIONAL_PASS=14 CONDITIONAL_FAIL=0 SUPPLIED_PREMISES=1
+classified_pass=26 fail=0
 
 ----- stderr -----
 

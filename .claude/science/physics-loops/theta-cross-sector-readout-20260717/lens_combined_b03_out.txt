@@ -1,0 +1,2037 @@
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f7507-145a-7060-a90a-ae7f24015f84
+--------
+user
+READ-ONLY adversarial review lens (combined: algebra + overclaim + governance), theta block03. No file writes, no git. Verdict = final message.
+Read exactly: (1) docs/THETA_RECORD_LOG_BRIDGE_FORCED_LOGARITHMIC_INTERFACE_BOUNDED_THEOREM_NOTE_2026-07-18.md (2) scripts/theta_record_log_bridge_forced_logarithmic_interface_2026_07_18.py (3) docs/THETA_POST_ERASURE_ODD_SIDE_LOG_EQUIVALENCE_AND_ADDITIVITY_INCOMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-18.md (4) docs/MINIMAL_AXIOMS_2026-06-29.md
+Attack: (a) ALGEBRA — is the T1 lift sound (does the axiom's additivity sentence really instantiate to F(xy)=F(x)+F(y) under (R2) with a multiplicative datum? is the empty-collection anchor use legitimate? quantifiers per the lane's earlier lessons); is T2's "only nondegenerate interface" claim exactly scoped to the fixed-function class (could non-monotone or partially-defined data maps evade)? verify via python3 HEREDOC, no writes. (b) OVERCLAIM — "forced, not chosen", "pinned up to one slope", the tail rewrite; every strong phrase vs the runner certificate and the named standard theorem. (c) GOVERNANCE — does the note read the AXIOM as supplying anything beyond the quoted sentence (axiom-reading discipline)? coined terms; N1-N8 completeness; frontmatter deps; quote fidelity vs files 3-4.
+Output: "VERDICT: <n> blocker(s), <m> major, <k> minor" + numbered findings with exact quotes and narrowest fixes; if clean, the three closest calls.
+
+2026-07-18T11:40:27.420110Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+I’m using the review-loop skill because this is a scoped adversarial review request. I’ll read its instructions first, then only the four named files and run an in-memory Python heredoc check—no writes or git.
+exec
+/bin/zsh -lc "sed -n '1,240p' '/Users/jonBridger/.codex/skills/review-loop/SKILL.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+---
+name: review-loop
+description: Use when an LLM agent needs to run `/review-loop`, review branch changes, run parallel physics-specific reviewers, identify overclaims/imported values/support-only material, apply narrow honest fixes, verify audit-system compatibility without applying audit verdicts, and re-review only files changed by those fixes.
+---
+
+# Review Loop
+
+## Skill Freshness
+
+Before applying this skill, perform the repo skill freshness check described in
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
+this `SKILL.md` exists on `origin/main`, follow that version for the current
+task.
+
+Run a local review/fix/re-review loop for this physics repo. This is not a
+generic software review. Its job is to protect the live claim boundary:
+retained/Nature-grade claims must have artifact support, imported values must
+be explicit, and support-only results must not be promoted by prose.
+
+## Model And Tool Boundary
+
+Review-loop is a text/code/math review path. Run it with the user's configured
+highest-tier Codex reviewer model and maximum available reasoning for this
+repo (currently GPT-5.5 at extra-high/xhigh reasoning in the local Codex
+configuration). Do not switch to lower-reasoning models for convenience, and
+do not use image-generation, image-editing, presentation, document-rendering,
+or visual-generation tools unless the user explicitly asks for a separate
+visual artifact task.
+
+If a run surfaces an image-generation model/tool error such as a stale
+`gpt-image-*` tool configuration, treat it as a local Codex tooling/config
+problem, not as part of review-loop. Do not retry the review by invoking
+imagegen, changing the science-review model, or routing science review through
+visual tooling.
+
+This skill is **review only**. It may make branch/package hygiene changes that
+allow the independent audit system to parse and queue claims, but it must not
+apply audit verdicts, write `audited_clean`, or run the audit worker.
+Audit results have a strict provenance boundary: review-loop must never land
+PR-submitted audit verdicts, audit-status promotions/demotions, effective-status
+changes, auditor transcripts, or `apply_audit.py` outputs as authority. Audits
+come only from the independent post-landing audit loop. PRs may land source
+repairs, runners, controlled-data dispatch sidecars, and explicit audit or
+re-audit targeting metadata when those are review-clean; they may not carry the
+answer to the audit they request.
+It must not create or open pull requests. When reviewing an existing PR or
+branch, review-loop either fixes/narrows that existing landing path and lands it
+when requested, or rejects/closes it with a clear reason. Salvage, dependency
+chain repair, audit queue regeneration, and parent re-audit gates are part of
+that same landing path, not follow-up PRs.
+Delete a closed PR's head branch **only when durable content actually landed** --
+its reviewed content was salvaged to `main`, or it was merged. In that case run
+`gh pr close <N> --delete-branch` (or `git push origin --delete <head>` after a
+manual close) so stale heads do not accumulate on `origin` (review-loop closes
+rather than merges, so GitHub's auto-delete-on-merge never fires). **Do NOT
+delete the head branch when a PR is closed without landing its content** --
+rejected as non-landable with nothing salvaged, or with salvage deferred to a
+later pass: keep that branch as the working handle on the un-landed work. Never
+delete a head that still backs another open PR, nor `main` or a protected
+branch. (Closed PRs retain their commits either way; the live branch matters as
+the recovery handle precisely when the content did not land.)
+It auto-corrects status vocabulary and terminology so a PR follows repo
+conventions by running `scripts/vocab_lint.py --fix` on all
+branch-modified files before any landing gate. Vocabulary is canonical
+in
+[`docs/repo/controlled_vocabulary.yaml`](../../../repo/controlled_vocabulary.yaml)
+(design in
+[`VOCABULARY_HYGIENE_DESIGN.md`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)).
+Routine local drift that has a non-link-aware rewrite rule, such as legacy
+aliases and deprecated wording, is rewritten mechanically as part of the
+same review commit; this is never a science blocker. Link-aware filename
+suffix migrations and F-letter finding-label migrations are reported but
+deferred to Cleanup-2 tooling. Genuinely new terms, pending link-aware
+renames, or pending F-letter migrations that `vocab_lint` cannot
+mechanically rewrite are recorded as
+`prose_status: needs_human_vocab_decision` for the periodic
+vocab-extension review; they do not block the landing. Review-loop
+must not introduce new repo-wide axioms, new theory
+language, new retained-surface claims, framework primitives, or new
+foundational premises without explicit user approval. Imports are allowed for
+bounded theorem surfaces when they are scoped, labelled, and
+dependency-checked; repo-wide axiom additions and primitive additions are not
+review-loop fixes.
+
+Review-loop must keep accepted premise classes distinct. Repo-wide axioms and
+explicitly approved framework primitives are registered in
+`docs/audit/data/axiom_premise_nodes.json` and chain-satisfy dependencies
+without making downstream rows `retained_bounded`. Tier-A admitted derivation
+targets are registered in `docs/audit/data/tier_a_admissions.json` and
+chain-satisfy only at `retained_bounded` until retired by a retained
+derivation. Record is part of the approved `minimal_axioms` node in its narrow
+permanent-record form, not a Tier-A admission; the older
+`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` parent is not an axiom-premise node.
+The scale-reference primitive is the approved units primitive, not a Tier-A
+admission or a bounded Planck import. The kinetic-isotropy primitive is the
+approved structural OS0 kinetic-form isotropy `c_t = c_s`, not a Tier-A
+admission or a bounded-status source; it supplies no dynamics, Lorentz-closure
+theorem, absolute scale, spacing-ratio theorem, mass ratio, coupling, mixing
+angle, phase, selector, readout bridge, probability rule, normalization rule,
+or empirical match. New axioms and new primitives both require explicit owner
+approval and a reviewed registry/policy update before review-loop may treat
+them as accepted premises.
+Before naming a changed dependency as an import, wall, Tier-A admission, or
+bounded-status source, perform the primitive registry check in
+`docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. In particular, if
+the dependency is only the registered `scale_reference_primitive`, treat the
+Planck scale reference as already granted units conversion and do not mark the
+row `retained_bounded` on that basis. If the dependency is only the registered
+`kinetic_isotropy_primitive`, treat `c_t = c_s` as already granted structural
+kinetic-form isotropy and do not bound the row on that basis; audit only the
+extra dynamics, closure theorem, observable, or empirical content actually
+claimed. If the dependency is only the registered `realized_state_primitive`,
+treat pointwise evaluation at the supplied realized state as already granted
+and do not bound the row on that basis; audit only any averaging, typicality
+or genericity predicate, weighting, or state-contingent value actually
+claimed.
+
+The framework baseline (per `MINIMAL_AXIOMS_2026-06-29.md`) is the four named
+axioms Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
+lattice with nearest-neighbor adjacency, standard translations, and proper
+cubic rotations about each site; no site is privileged, and sites are
+distinguished by the supplied lattice structure alone. Qubit is the domain of
+local possibilities with full one-site algebraic presentation `M_2(ℂ)`;
+`Cl(3,0)` is equivalent notation, not extra primitive structure, and no
+possibility is privileged; possibilities are distinguished by the supplied
+algebraic structure alone.
+Admissibility is one fixed finite-neighborhood rule, the same at every lattice
+translate; for each site, the available possibilities are determined by, and
+vary with, the nearest-neighbor conditions, consistent with local records. A
+record, when present, locks exactly one admissible local possibility. A site
+never carries more than one record; records are permanent. Only records are
+readable; a readout value is
+determined by record content alone;
+finite scalar readout is additive over finite pairwise-disjoint record
+collections. A state is a configuration of records. A law privileges no states:
+its domain is a supplied condition, and where that condition holds it gives
+exactly one answer. Additional
+structures such as readout-context selection, decomposition, `K`/CPT
+structure, sector-generation rules, weighting, normalization, probability,
+measurement/decoherence dynamics, record-production dynamics, physical
+persistence dynamics, occurrence rules, update laws, time metric,
+within-sector data, occupancy rules, P2/modulus, log-det readouts,
+source/action bridges, scale, local observability, law-admissibility or
+transition relations, kinetic-branch selection, or arbitrary observable
+identification remain compatible downstream targets, but require derivation,
+bridge, explicit admission, or approved primitive registration before use as
+load-bearing content. Do not
+land new science under bare letter-number names such as `A1`, `A2`, `G1`,
+or `R3`; those labels are overloaded with axioms, assumptions, Lie
+types, lane stages, route codes, and branch blocks. Use the explicit
+scientific name on live science surfaces; archival aliases belong
+only in clearly historical work-history/archive material. Review-loop must
+not treat the framework baseline as a
+new axiom, new admitted premise, regulator interpretation, or optional
+theory language. Correcting a PR back to this repo language is allowed. This
+does not promote downstream science by itself: physical-species
+identifications, `C_3`-breaking selectors, kinetic-branch selectors,
+readout/scale/unit bridges, and empirical matches remain separate
+bounded/open inputs unless they have their own retained-grade derivation and
+independent audit closure.
+
+The bar is intentionally high: if review-loop is doing its job, the later
+fresh-context audit should be mostly confirmatory. Do not pass branches that
+leave the audit lane to discover basic claim-boundary, dependency-graph,
+status-vocabulary, or runner-validity defects. Do not lose durable science
+when a PR fails that bar: before closing or rejecting a branch, run the
+salvage pass below and preserve any narrow, runner-backed lemma that can be
+made canonical without changing the science.
+Review-loop is still not the audit loop: it must never apply verdicts or
+describe its review as an audit. Its job is to decide whether source/tooling
+math, claim boundaries, and repo language are honest enough to land and be
+sent to the independent auditor afterward.
+Non-science PRs require the same discipline: do not reject generated
+audit/status or hygiene-only work just because it is not theorem science.
+First decide whether it exposes a real audit-graph, cache, queue,
+normalization, dependency-chain, or audit-readiness defect. If it does,
+salvage the value into durable source, tooling, pipeline, or controlled-data
+repairs and regenerate the generated surfaces from that repair.
+Audit-dispatch manifests are a special non-science case. If a PR lands a
+source note whose purpose is to request future re-audit, retagging, cascade
+repair, or batch audit selection, review-loop is not done when the source note
+lands. It must also make the request machine-visible by adding or updating a
+supported dispatcher sidecar under `docs/audit/data/`, rerunning the audit
+pipeline, and verifying the target appears in `docs/audit/AUDIT_DISPATCH_QUEUE.md`
+or `docs/audit/data/audit_dispatch_queue.json`. The dispatch manifest is
+target-selection metadata only; it must not be passed to auditors as evidence
+and must not apply audit verdicts.
+
+## Arguments
+
+Parse:
+
+- focus text: optional free-text review focus;
+- `--max-iterations N`: optional cap, default `5`;
+- `--no-fix`: review only, do not edit;
+- `--no-commit`: fix locally but do not create iteration commits.
+
+## Setup
+
+1. Read the local review/governance surfaces before judging status:
+   - `docs/repo/REVIEW_FEEDBACK_WORKFLOW.md`
+   - `docs/repo/ACTIVE_REVIEW_QUEUE.md`
+   - `docs/repo/CONTROLLED_VOCABULARY.md`
+   - `docs/CANONICAL_HARNESS_INDEX.md`
+   - `docs/audit/README.md`
+   - `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`
+   - `docs/audit/data/axiom_premise_nodes.json` and the source notes named by
+     relevant primitive nodes
+   - `docs/audit/data/tier_a_admissions.json`
+   - `docs/publication/ci3_z3/` when publication-facing files changed
+   - `docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md` when
+     quantitative or imported-value claims changed
+2. Determine the base ref:
+   - prefer `origin/main` if present;
+   - otherwise use `main`;
+   - if the current branch is the base branch, use `HEAD~1`.
+3. Compute the review base with `git merge-base HEAD <base-ref>`.
+4. Build the original changed-file set from committed, staged, unstaged, and
+   untracked changes. Do not review outside this set except interacting files
+   that are also in this original set.
+5. Record whether the worktree was initially clean. If it was dirty, do not
+   auto-commit without explicit user permission unless the slash-command
+   invocation clearly requested commit-producing fixes.
+6. If the task is to review open/non-landed PRs, include all non-merged,
+   non-draft PRs in the requested scope except PRs the user explicitly
+   excluded. Draft PRs are out of scope: ignore them entirely and do not land
+   them unless the user explicitly asks to inspect a draft PR without landing
+   it. Closed-but-unmerged PR heads can be inspected with `gh pr view` and
+   `git fetch origin pull/<N>/head:refs/tmp/pr-<N>`.
+
+Useful commands:
+
+```bash
+git diff --name-only <base>...HEAD
+git diff --name-only --cached
+git diff --name-only
+git ls-files --others --exclude-standard
+git diff <base>...HEAD -- <files>
+git diff --cached -- <files>
+git diff -- <files>
+
+2026-07-18T11:40:39.080744Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+The skill’s normal workflow includes broader repo and git checks, but your “read exactly” and “no git” constraints narrow this run. I’m applying only its adversarial claim-boundary lens and will not inspect any additional repository files.
+exec
+/bin/zsh -lc "sed -n '241,520p' '/Users/jonBridger/.codex/skills/review-loop/SKILL.md'; sed -n '521,800p' '/Users/jonBridger/.codex/skills/review-loop/SKILL.md'; sed -n '801,1080p' '/Users/jonBridger/.codex/skills/review-loop/SKILL.md'; sed -n '1081,1360p' '/Users/jonBridger/.codex/skills/review-loop/SKILL.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+```
+
+For untracked files, include their full content or a concise new-file summary
+in reviewer prompts.
+
+## Stale PR Integration Guard
+
+When landing one or more PRs, protect already-landed science before applying
+any branch content. A PR branch may be based before another PR just landed, so
+checking out whole files from that stale PR head can erase current-main source
+science in shared files.
+
+For every PR before integration:
+
+```bash
+git fetch origin main pull/<N>/head:refs/tmp/pr-<N>
+pr_base=$(git merge-base origin/main refs/tmp/pr-<N>)
+comm -12 \
+  <(git diff --name-only "$pr_base"..origin/main | sort) \
+  <(git diff --name-only "$pr_base"..refs/tmp/pr-<N> | sort)
+```
+
+If the overlap list is non-empty, or if earlier PRs have landed during the
+same review-loop run, do **not** run `git checkout refs/tmp/pr-<N> -- <file>`
+for those paths. Integrate the PR's delta against its merge base with a
+three-way patch, rebase/merge, or cherry-pick source commits, then resolve any
+conflicts by preserving both current-main science and the salvageable PR
+science:
+
+```bash
+git diff --binary "$pr_base"..refs/tmp/pr-<N> -- <source paths> > /tmp/pr<N>.patch
+git apply --3way /tmp/pr<N>.patch
+```
+
+Whole-file checkout from a PR head is allowed only when the file is new on the
+PR or when `git diff --quiet "$pr_base"..origin/main -- <file>` proves current
+`main` has not changed that path since the PR base. For every overlapped
+source path, do a science-loss guard after integration: the current-main diff
+from `pr_base` to `origin/main` must still be represented in the final file.
+If that cannot be verified quickly, stop and treat it as a blocking integration
+hazard rather than risking science loss.
+
+Generated audit JSON/Markdown is a special case: do not hand-merge generated
+files from stale PR heads. Resolve source files first, prefer the current
+`origin/main` generated audit surface, then rerun the audit pipeline and strict
+lint to regenerate it.
+
+## Reviewer Fanout
+
+On each iteration, set `files_to_review` to the files that changed since their
+last clean review. On iteration 1, use all original changed files.
+
+Run all applicable reviewers in parallel through the available agent/subagent
+mechanism. If parallel agents are unavailable, run the same reviewer passes
+locally and report that limitation.
+
+### Required Reviewers
+
+- `CodeRunnerReviewer`
+  Review changed Python/scripts/log-producing code. Check syntax, decisive
+  assertions, hard-coded targets, stale fixtures, literal `True` checks,
+  hidden observations, reproducibility, paired runner/output agreement, and
+  whether the runner actually tests the note's load-bearing bridge. If a
+  runner checks audit-ledger dependency status, it must use the current
+  retained-grade set (`retained`, `retained_bounded`, `retained_no_go`) rather
+  than hard-coding stale expectations such as exactly `retained`.
+  For math-bearing runners, PASS output is not enough. Extract every
+  load-bearing formula, sign, factor, normalization, matrix identity,
+  optimizer objective, and expected numeric value from the changed code and
+  note, then verify them by an independent route before landing: manual
+  derivation against the note, symbolic simplification, small-case exhaustive
+  enumeration, a second implementation that does not share the same expression,
+  or invariant/limit/property checks. Treat self-confirming tests, expected
+  values generated by the same implementation under review, missing factor/sign
+  checks, or stale reopened bug reports as blocking until the formula is
+  corrected or the claim is demoted to a narrower supported boundary.
+
+- `PhysicsClaimReviewer`
+  Attack theorem notes, claims tables, publication surfaces, and prose. Check
+  semantic bridges, selector assumptions, status labels, exact/bounded/support
+  boundaries, and code/prose drift.
+
+- `ImportSupportReviewer`
+  Inventory every measured, fitted, literature, PDG, cosmological,
+  normalization, boundary-condition, or convention input. Classify each as
+  `zero-input structural`, `framework-derived`, `one computed lattice input`,
+  `admitted normalization/boundary condition`, `standard/literature
+  correction`, `observational comparator`, `support-only`, `insensitive
+  nuisance`, or `unjustified import`. For a Nature-grade retention claim, every
+  import must be derived, admitted with a narrow role, quantitatively
+  insensitive, or the claim must be demoted.
+
+- `NatureRetentionReviewer`
+  Apply the hostile external-review bar. Ask whether the result can honestly
+  be called retained/Nature-grade: no hidden unit identification, no structural
+  redefinition, no imported selector, no unsupported first-principles claim,
+  no unmatched observed target, and clear falsifiers/open gates. Output
+  `RETAINED`, `RETAINED SUPPORT`, `BOUNDED`, `OPEN`, `NO-GO`, or `REJECT`.
+
+- `NoGoDisciplineReviewer`
+  Scrutinize negative claims with the same rigor as positive ones. Trigger
+  this reviewer whenever changed content includes a `no_go`, `stretch_attempt`,
+  `bounded_with_named_walls`, or derived-no-go-boundary artifact, or when any
+  other reviewer in this fanout outputs `NO-GO` / `BOUNDED` / `OVERCLAIM` on
+  a negative claim. The reviewer must invoke the `no-go-discipline` skill
+  and walk N1-N8 against the branch content (see
+  [`docs/ai_methodology/skills/no-go-discipline/SKILL.md`](../no-go-discipline/SKILL.md)):
+  N1 alternative-route enumeration (≥5 distinct routes), N2
+  wall-independence audit, N3 hidden-wall scan, N4 residual matching,
+  N5 rhetoric audit (per-element / per-mode / per-block / lattice-wide
+  resolutions), N6 partial-closure path scan (convention-reframe vs new
+  axiom), N7 steelman, N8 cross-cycle echo. Output `PASS` (negative claim
+  honestly scoped) or `FAIL` with the failing checklist items named and the
+  narrowest demoted claim proposed (`partial-attempt-with-named-untested-routes`,
+  `partial-narrowing`, `bounded-with-corrected-wall-count`, or
+  `stretch-attempt-with-honest-residual`). The reviewer must not approve a
+  no-go that has not been stress-tested against the framework's full
+  authority surface — under-tested negative claims are at least as harmful
+  as overclaimed positive ones because they foreclose investigation paths
+  permanently.
+
+- `LabelingConventionReviewer`
+  Detect labeling/naming/convention content masquerading as a bounded
+  theorem. Trigger whenever changed content includes a `bounded_theorem`
+  candidate whose load-bearing claim is a labeling/naming/convention
+  statement (parallel to the u/c/t mass-ordering convention or the
+  e/μ/τ charged-lepton naming) rather than an algebraic claim with
+  explicit named admissions. A labeling convention has no propositional
+  content to admit, so `retained_bounded` grade does not apply — the
+  grade is for algebraic claims with explicit named premises, not for
+  stipulations about names.
+
+  The right outcome is to split:
+  (i) the algebraic core (if any) ships as a narrow `positive_theorem`
+      or `bounded_theorem` with the algebraic premises explicit;
+  (ii) the labeling content ships as a separate `meta` convention note,
+       parallel to the No-Go Discipline Battery's labeling-vs-physics
+       check in
+       `docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md`
+       ("If labeling, the right outcome is a `meta` convention note").
+
+  Output `PASS` if the candidate is genuinely algebraic with named
+  admissions, `SPLIT-REQUIRED` if labeling content is bundled with
+  algebraic content (ship the algebraic theorem narrow + the convention
+  as a separate `meta` note), or `DEMOTE-TO-META` if the candidate is
+  purely convention with no derivation. The reviewer must not approve a
+  `bounded_theorem` whose load-bearing content is a labeling stipulation
+  — conflating conventions with bounded theorems hides which premises
+  are actually load-bearing and prevents downstream rows from cleanly
+  identifying their dependency status. Downstream costs of the
+  conflation: the bundled convention becomes an undischargeable
+  "premise" that blocks the row from reaching retained-unbounded;
+  downstream rows that cite the bundled bounded_theorem inherit an
+  unstated convention dependency; the audit lane cannot cleanly verify
+  "all premises retained" because the convention is not propositional
+  content; and future agents may waste cycles trying to "prove" the
+  convention as if it were derivable.
+
+- `RepoGovernanceReviewer`
+  Check placement and authority surfaces. Ensure live findings route through
+  `docs/repo/ACTIVE_REVIEW_QUEUE.md`, long packets go under
+  `docs/work_history/repo/review_feedback/`, publication edits update the
+  relevant `docs/publication/ci3_z3/` surfaces, status wording follows
+  `docs/repo/CONTROLLED_VOCABULARY.md`, and changed claim notes are compatible
+  with the audit lane's propose/ratify split. Also verify that load-bearing
+  dependencies are real markdown links that seed the citation graph, not just
+  code-formatted file names in prose. Block ambiguous new science names such
+  as bare `A1`, `A2`, `G1`, `R3`, `Route F`, or `Block 2` when they appear as
+  titles, primary table labels, claim scopes, runner headlines, or review
+  findings without an explicit scientific noun phrase. Block repo-wide axiom
+  additions, nonstandard theory vocabulary, or new foundational claims unless
+  the user explicitly approved that change; vocabulary corrections back to
+  repo conventions are allowed.
+  Block branch-local or draft-PR language from landing on repo-facing surfaces.
+  Long-lived draft wording, PR-specific labels, campaign names, and branch-only
+  framings must be translated into native repo vocabulary before merge
+  (including language leaked from PR230 or any similar draft branch). If a
+  scientific claim is otherwise salvageable, fix the vocabulary in the landing
+  commit instead of rejecting the science.
+
+### Optional Reviewer
+
+Run `MethodologySkillReviewer` when files under `docs/ai_methodology/skills/`,
+`docs/ai_methodology/`, or `.claude/commands/` changed. Check that the skill is
+concise, triggerable from its frontmatter/command name, aligned with the AI
+methodology lane, and not claiming physics authority.
+
+## Reviewer Prompt
+
+Use this prompt shape for each reviewer, filtered to only that reviewer's file
+scope:
+
+````text
+Review the following physics-repo changes.
+
+Files to review:
+<files>
+
+Diff/content:
+```diff
+<diff for only those files; include untracked file content separately>
+```
+
+Focus:
+<focus text or "None specified">
+
+Context:
+- Base ref: <base-ref>
+- Iteration: <N> of <max>
+- Already reviewed and unchanged: <reviewed_files>
+- Repo review surfaces: REVIEW_FEEDBACK_WORKFLOW, ACTIVE_REVIEW_QUEUE,
+  CONTROLLED_VOCABULARY, CANONICAL_HARNESS_INDEX, docs/audit/README.md
+
+Rules:
+- Findings must cite file/line when possible.
+- Separate bugs, overclaims, support-only demotions, imported-value problems,
+  repo-governance problems, and nits.
+- Do not require new science for wording problems.
+- Do not approve retained/Nature-grade language if an import or bridge remains
+  hidden.
+- Do not apply audit verdicts. Review only whether the branch is ready for the
+  independent audit worker.
+- Do not approve new bare letter-number science names. Require explicit names
+  from CONTROLLED_VOCABULARY, with shorthand only as a parenthetical alias.
+- Do not approve a `NO-GO` or `BOUNDED with named walls` recommendation
+  without running `no-go-discipline` N1-N8 against the branch content. An
+  unscrutinized negative claim forecloses investigation paths permanently and
+  is at least as harmful as an overclaimed positive.
+````
+
+## Consolidate Findings
+
+Present one iteration summary:
+
+```text
+## Review Results (Iteration N)
+
+### Code / Runner: PASS | RISK | FAIL
+### Physics Claim Boundary: RETAINED | SUPPORT | BOUNDED | OPEN | REJECT
+### Imports / Support: CLEAN | DISCLOSED | DEMOTE | FAIL
+### Nature Retention: RETAINED | RETAINED SUPPORT | BOUNDED | OPEN | NO-GO | REJECT
+### No-Go Discipline: PASS | FAIL | NOT APPLICABLE
+### Labeling Convention: PASS | SPLIT-REQUIRED | DEMOTE-TO-META | NOT APPLICABLE
+### Repo Governance: PASS | FIX | QUEUE | ARCHIVE
+### Audit Compatibility: PASS | FIX | BLOCKED | NOT APPLICABLE
+### Methodology Skill: PASS | FIX | SKIPPED
+```
+
+Classify every finding:
+
+- `BUG`
+- `OVERCLAIM`
+- `NO_GO_OVERCLAIM`
+- `IMPORTED_VALUE`
+- `SUPPORT_ONLY_DEMOTION`
+- `MISSING_ARTIFACT`
+- `SEMANTIC_BRIDGE`
+- `REPO_GOVERNANCE`
+- `AUDIT_COMPATIBILITY`
+- `NIT`
+- `SALVAGE_CANDIDATE`
+- `SALVAGE_REJECT`
+
+Stop immediately when all applicable reviewers are clean.
+
+## Salvage Pass
+
+Run this pass before closing a PR, marking it non-landable, or discarding a
+stretch/campaign packet. The goal is to preserve meaningful science without
+lowering the review bar.
+
+1. Inventory the branch into these buckets:
+   - canonical source candidates: theorem/no-go/open-gate notes and paired
+     runners;
+   - useful negative results: failed routes that name a durable obstruction and
+     have a runner or exact calculation;
+   - support-only calculations: exact algebra or bookkeeping that may be useful
+     as bounded support but not as retained/Nature-grade science;
+   - audit/process hygiene: dependency-graph repairs, audit queue unlocks,
+     stale runner-cache detection, generated-data normalization, cycle-break
+     hygiene, and pipeline/tooling fixes that make audit results more reliable;
+   - non-source material: claim-status certificates, handoffs, campaign state,
+     generated audit files, expected audit verdicts, and branch-local logs.
+2. For each source candidate, decide whether it can be salvaged with only
+   review-level edits:
+   - the claim can be narrowed to a canonical `claim_type`:
+     `positive_theorem`, `bounded_theorem`, `no_go`, `open_gate`,
+     `decoration`, or `meta`;
+   - all imported physics, textbook machinery, observations, fitted values,
+     and conventions are explicitly labelled;
+   - the runner tests the actual load-bearing bridge, not just downstream
+     arithmetic after the premise is assumed;
+   - load-bearing dependencies can be represented as markdown links and
+     non-load-bearing siblings can be kept out of the citation graph;
+   - the salvage does not rely on a closed, unlanded, unaudited, or rejected
+     sibling PR unless the dependency is copied in as a self-contained
+     derivation and reviewed in the same salvage branch.
+3. Do not salvage by papering over missing science. If the durable part is
+   only an obstruction or failed route, salvage it as a narrow `open_gate` or
+   `no_go` only when the runner directly supports that negative boundary.
+4. Strip all non-source material from salvage branches:
+   claim-status certificates, handoffs, campaign state, expected audit
+   verdicts, `target_effective_status_*`, `audit_status = ...`, generated audit
+   verdict payloads, and branch-local logs.
+5. Prefer small salvage slices grouped by coherent topic. Split unrelated
+   lemmas rather than bundling them only because they came from the same failed
+   PR, but do not open follow-up PRs for those slices. Land them through the
+   current requested landing path or report that the work cannot be landed yet.
+6. Run the normal audit-system compatibility gate on every salvage slice.
+   The resulting rows must remain `unaudited`; the independent audit lane owns
+   all verdicts.
+7. For audit/process hygiene, preserve the durable repair rather than the
+   generated symptom. Land source/tooling/pipeline/controlled-data changes when
+   they strengthen the repo or unblock auditing without changing science.
+   Regenerate audit JSON/Markdown from the pipeline afterward only from the
+   reviewed source repair on current `main`. Do not land PR-authored
+   `effective_status`, `intrinsic_status`, `audit_status`, auditor-output,
+   previous-audit, or expected-verdict edits as the authority for the change.
+   Source repairs may intentionally invalidate a prior row hash and make a row
+   visible for re-audit; that is allowed. The independent audit loop must still
+   produce the verdict after landing.
+8. If no salvage is possible, leave a concise PR comment or review summary
+   saying why, for example: "runner only rechecks assumed premise",
+   "claim depends on closed sibling", "noncanonical stretch packet with no
+   theorem-grade boundary", or "overbroad theorem not supported by runner".
+
+Salvageable examples:
+
+- a parity/counting/no-go lemma with a decisive finite algebra runner;
+- a conditional textbook lemma that is useful only when explicitly marked as
+  bounded support;
+- a negative route that conclusively rules out one proposed mechanism and
+  narrows the remaining open gate;
+- an audit-hygiene PR whose generated status change reveals a real durable
+  graph/tooling/pipeline defect, salvaged as the underlying repair plus
+  regenerated audit outputs.
+
+Not salvageable without a new research task:
+
+- branch-local certificates and handoffs with no source theorem;
+- broad "closing derivations" whose runner assumes the missing bridge;
+- expected audit verdicts or status-elevation packages;
+- stretch-attempt notes that document research direction but do not define a
+  canonical theorem/no-go/open-gate boundary.
+
+## Fix Policy
+
+If `--no-fix` was passed, do not edit.
+
+Otherwise apply the narrowest honest fix:
+
+1. Fix verified code bugs, broken reproduction commands, stale runner names,
+   false PASS checks, and code/prose mismatches.
+2. Demote overclaimed status when the artifact supports only support/bounded
+   language.
+3. Mark imported values explicitly; distinguish derived, admitted, fitted,
+   measured, literature, boundary-condition, and insensitive nuisance inputs.
+4. Add or repair paired runner/note references only when the artifact exists.
+5. Make audit-system hygiene fixes only when they do not change the science:
+   status-line tier labels, machine-local path removal, stale runner transcript
+   refreshes, generated audit queue/ledger seeding, and discoverability wiring.
+6. Rename ambiguous science shorthand to explicit repo vocabulary without
+   changing the claim boundary. Examples: write `one-qubit operator algebra`
+   (or equivalently `M_2(ℂ) ≅ Cl(3,0)`, `physical Cl(3) local algebra` as
+   the real-algebra reading — all co-equal labels for the same retained
+   algebra-isomorphism class), `Z^3 lattice`,
+   `Koide Frobenius-equipartition condition`, or `Lie type A_1` instead of
+   bare `A1` / `A2`.
+7. Update `docs/repo/ACTIVE_REVIEW_QUEUE.md` for live unresolved findings.
+8. Route detailed resolved packets to
+   `docs/work_history/repo/review_feedback/` only when a long packet is needed.
+9. When a PR is non-landable but salvageable, preserve only the durable
+   note/runner content, make the claim boundary canonical, and land that source
+   salvage through the current requested landing path. If the rejected branch
+   contains substantial non-source packet material, use a clean temporary
+   worktree for integration, but do not create or open a follow-up PR.
+
+Skip:
+
+- nits;
+- suspected findings without evidence;
+- ambiguous science gaps that need new derivation;
+- attempts to paper over missing theorem steps with confident prose;
+- repo-wide axiom additions, new theory terminology, or new foundational
+  premises that lack explicit user approval;
+- broad refactors unrelated to the finding.
+
+## Audit-System Compatibility Gate
+
+This gate is mandatory when a branch adds or edits source notes, runners,
+claim tables, lane stubs, or publication/control-plane files.
+
+The review loop must enforce the audit lane's propose/ratify split without
+performing the independent audit:
+
+**Audit-hash churn guard.** Non-semantic hygiene sweeps on audited source notes
+can be scientifically harmless while still invalidating large parts of the
+audit ledger, because note hashes are source-content hashes. Before landing any
+branch that touches many existing claim-note files for formatting, link-target,
+path, vocabulary, or other non-science cleanup, run the pipeline in validation
+mode and inspect the `seed_audit_ledger.py` / `invalidate_stale_audits.py`
+counts. If the change would reset or requeue already-audited rows solely due to
+non-semantic churn, do not land the broad source sweep. Either narrow the PR to
+non-ledger/non-claim surfaces, land a reviewed hash/canonicalization tooling
+repair first, or ask for explicit user approval to spend the audit capacity.
+Never trade a clean audit graph for cosmetic source-note churn without making
+that cost explicit.
+
+0. Before applying a PR, inventory any audit-status surface it touches:
+
+```bash
+git diff --name-only <pr-base>..refs/tmp/pr-<N> -- \
+  docs/audit/AUDIT_LEDGER.md docs/audit/AUDIT_QUEUE.md docs/audit/data \
+  'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md'
+git diff <pr-base>..refs/tmp/pr-<N> -- docs/audit docs/publication/ci3_z3 \
+  | grep -E 'audit_status|effective_status|audited_clean|audited_conditional|audited_failed|audited_renaming|audited_decoration|audited_numerical_match|previous_audits|audit_result|verdict'
+```
+
+Treat this output as a provenance review, not as a merge recipe. Strip
+PR-submitted generated ledgers, queues, effective-status tables, auditor
+transcripts, and audit verdict payloads before landing. The only acceptable
+audit-lane changes from a PR are reviewed source/tooling repairs and
+machine-readable audit/re-audit targeting metadata, such as dispatcher
+sidecars, that do not assert a verdict. After applying the source repair, run
+the local pipeline to verify the row is queued or re-queued as intended, then
+restore generated audit outputs from `origin/main` before committing. Pipeline
+regeneration of `docs/audit/data/`, `docs/audit/AUDIT_LEDGER.md`,
+`docs/audit/AUDIT_QUEUE.md`, `docs/audit/MISSING_DERIVATION_PROMPTS.md`, and
+`docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md` is a VALIDATION step only;
+framework PRs must never ship these files because the merge would overwrite
+the audit lane's ratified state. The audit-loop run on `main` (nightly cron
+plus `audit:` commits) is the sole channel for landing those outputs.
+
+1. Source-note `Status:` prose is not an audit authority. New or touched claim
+   notes should use `Type:` / `Claim type:` metadata for intended audit
+   classification.
+2. If a no-go/firewall is intended to be theorem-grade, use
+   `claim_type = no_go`; do not rely on support-style prose and expect audit
+   ratification.
+3. Keep disclaimers such as "This is not charged-lepton mass closure" outside
+   audit metadata fields.
+4. Do not prefill or recommend a verdict in author/review surfaces. Wording
+   such as `target_audit_status: audited_clean`, `audit_status =
+   audited_clean`, `effective_status = retained`, or "can land audited_clean"
+   is not review-loop compatible. Use wording like `audit_status_authority:
+   independent audit lane only` and "effective status is pipeline-derived
+   after audit ratification and dependency closure."
+5. Changed claim notes that cite load-bearing authorities must use markdown
+   links, for example
+   ``[`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)``.
+   Code-formatted names such as `` `GRAPH_FIRST_SU3_INTEGRATION_NOTE.md` `` do
+   not seed graph dependencies and are not enough.
+6. Run the audit pipeline after review fixes:
+
+```bash
+bash docs/audit/scripts/run_pipeline.sh
+python3 docs/audit/scripts/audit_lint.py --strict
+git diff --check
+```
+
+The known graph-cycle warning is acceptable. Any strict-lint error blocks a
+review-loop PASS.
+
+**`note_hash` drift is a notice for non-retained rows, an error only for
+retained-grade rows.** `note_hash` is a *source-content* hash, not an audit
+verdict. When a review fix edits a claim note, its `note_hash` drifts from the
+seeded value; `audit_lint.py` reports this drift as a non-blocking
+`note_hash_drift_reaudit_pending` **notice** when the row is not retained-grade
+(`unaudited` / `audited_conditional` / pending), because re-audit is simply
+pending and the audit-lane re-seed refreshes the hash. Such a notice does **not**
+block review-loop PASS and must **not** be "fixed" by committing audit-lane
+ledger churn (that is the forbidden pipeline-output commit). A `note_hash`
+mismatch on a **retained-grade** row (`retained` / `retained_bounded` /
+`retained_no_go`) stays a hard **error**: an edited retained note laundered past
+a stale ratification is a real integrity violation. Resolve it by re-auditing
+(the audit lane re-seeds and archives the prior verdict) or by demoting the edit
+per the audit-hash churn guard — never by refreshing the hash while keeping the
+retained verdict.
+
+**Stuck-row repair requeue gate.** Terminal non-clean rows
+(`audited_conditional` / `audited_renaming` / `audited_failed` /
+`audited_numerical_match`) re-enter the audit queue only through their own
+note or paired-runner hash drift, an upstream `deps_changed` invalidation, or
+a dispatcher-sidecar re-audit target. Dependent-side edits never reschedule
+the stuck row. When a branch's stated purpose is repairing such a row (the PR
+title/body names the row or quotes its audit repair target):
+
+1. Verify the stuck row itself will requeue: its note or paired runner
+   changes on the branch, or the branch ships dispatcher-sidecar targeting
+   metadata naming the row.
+2. If the audit-named repair is dependent-side only (for example, narrowing
+   dependents' citing sentences to the audited scope), add a dated
+   downstream-hygiene line to the stuck row's own note boundary as part of
+   the landing: a one-line source-side record of what changed downstream
+   (date + what was narrowed + PR number), with no grade or verdict
+   language. The hash drift re-enters the row into the ordinary queue and
+   the re-auditor (or second auditor) sees the recorded condition.
+3. Run the validation pipeline and confirm the row is queued or re-queued as
+   intended, then restore generated audit outputs per the
+   pipeline-output-stripped gate below.
+4. Repair-PR review checklist: the audit repair target is quoted verbatim
+   (from `verdict_rationale` / `notes_for_re_audit_if_any`) in the PR body;
+   a sibling-runner pin sweep was done before every note edit (grep
+   `scripts/` for runners pinning the edited sentences); no authored grade
+   language anywhere; no `docs/audit/data/` content beyond
+   dispatcher-sidecar targeting metadata.
+
+7. **Pipeline-output-stripped PASS gate (hard).** After running the pipeline
+   for validation, the framework PR must NOT land any pipeline-regenerated
+   audit-lane or effective-status surface. The independent audit lane is the
+   sole authority for these files; a framework PR that ships them creates a
+   dual-source-of-truth and overwrites the audit lane's ratified state at
+   merge. The following must hold for review-loop to issue PASS:
+
+```bash
+# Must produce no output. Any change here means the working tree has
+# pipeline-regenerated audit-lane outputs left over from validation;
+# drop them (see below) before recommitting.
+git status --porcelain docs/audit/AUDIT_LEDGER.md \
+                       docs/audit/AUDIT_QUEUE.md \
+                       docs/audit/data \
+                       docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md \
+                       docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/DERIVATION_ATLAS_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/PUBLICATION_MATRIX_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/FULL_CLAIM_LEDGER_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/RESULTS_INDEX_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md
+```
+
+If this command prints any lines, BLOCK PASS and instruct the operator to
+DROP the regenerated files before recommitting:
+
+```bash
+git checkout origin/main -- docs/audit/data/ \
+                            docs/audit/AUDIT_LEDGER.md \
+                            docs/audit/AUDIT_QUEUE.md \
+                            docs/audit/MISSING_DERIVATION_PROMPTS.md \
+                            'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
+                            docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+git clean -fd -- docs/audit/data/
+```
+
+The pipeline is run for VALIDATION only — to confirm the source repair is
+ingested and the runner row is queued or re-queued as intended. The
+audit-loop pipeline run on `main` (nightly cron + `audit:` commits) is the
+sole channel for landing the regenerated outputs. Framework PRs that ship
+these files force a destructive overwrite of ratified audit state at merge
+time and have been an active source of broken-row regressions.
+
+8. **Repository-portable links PASS gate (hard).** Markdown link targets on
+   branch-modified `.md` files must be repo-relative or web URLs. Absolute
+   local paths such as `/Users/<name>/...`, `/home/<name>/...`,
+   `/private/tmp/...`, `/tmp/...`, `/var/...`, `/opt/...`, or `file://...`
+   inside a markdown link target are non-portable: they break for other
+   developers, CI runners, fresh clones, and independent reviewers.
+
+```bash
+# Must produce no output. Scans branch-modified markdown for local absolute
+# paths inside markdown link targets.
+git diff --name-only origin/main...HEAD -- '*.md' \
+  | xargs -I{} grep -nE '\]\((/Users/|/home/|/private/|/tmp/|/var/|/opt/|file://)' {} 2>/dev/null
+```
+
+If this command prints lines for files the branch is already modifying for
+source, runner, methodology, or review reasons, rewrite the offending link
+targets before PASS. The usual mechanical fix is to preserve the display text
+and replace the target with a `../` chain relative to the source file's
+directory, e.g. in `docs/SOURCE_RESOLVED_FOO_NOTE.md` rewrite
+`(/Users/me/Projects/Physics/scripts/foo.py)` to `(../scripts/foo.py)`.
+
+This gate prevents new non-portable links from landing; it is not a license for
+large standalone cosmetic sweeps over audited claim notes. If the PR's only
+purpose is to rewrite existing local-path links across many audited source
+notes, apply the audit-hash churn guard above before landing any broad cleanup.
+
+9. **No-Go Discipline PASS gate (hard).** Before issuing review-loop PASS,
+   identify any artifact on the branch that ships a negative claim:
+
+```bash
+# Source notes whose claim_type is no_go, or whose Status / Type line
+# names walls / admissions / "conditional on" content
+git diff --name-only origin/main...HEAD -- 'docs/*NO_GO*.md' 'docs/*BOUNDED*.md' \
+                                           'docs/*STRETCH_ATTEMPT*.md' \
+                                           'docs/*OBSTRUCTION*.md'
+# Audit-data rows whose verdict_rationale or claim_type record walls
+git diff origin/main...HEAD -- docs/audit/data/audit_ledger.json \
+  | grep -E '"claim_type": "no_go"|"verdict_rationale".*wall|"verdict_rationale".*admission'
+# Any source note touched on this branch whose body contains negative-claim shape
+git diff origin/main...HEAD -- 'docs/*.md' \
+  | grep -E 'structurally undecidable|no retained primitive|requires new axiom|cannot be derived from A_min|conditional on .* walls?'
+```
+
+For every match, the NoGoDisciplineReviewer must output `PASS` (N1-N8 walk
+complete and no failure condition hit) before review-loop issues PASS. A
+`FAIL` from NoGoDisciplineReviewer blocks PASS regardless of how other
+reviewers voted. An unscrutinized no-go that ships through review cements
+the overclaim at audit time and forecloses investigation paths permanently.
+
+If NoGoDisciplineReviewer outputs FAIL, apply the narrowest honest fix per
+Fix Policy step 2 (demote to a narrower honest claim that passes N1-N8) and
+re-review. Do not weaken the gate to PASS the branch.
+
+This gate is independent of the Pipeline-clean PASS gate above; both must
+pass for review-loop to issue PASS.
+
+10. **Math-runner independent-check PASS gate (hard).** Before issuing
+review-loop PASS for any branch that changes a runner, proof script, numeric
+constant, matrix construction, optimizer, expected value, or note formula,
+record the independent math check used by `CodeRunnerReviewer`. At least one
+check must not share the same implementation path as the changed runner:
+manual formula derivation, symbolic/algebraic reduction, finite toy-case
+enumeration, independent recomputation, or invariant/limit tests. A runner
+that merely computes its own target and prints PASS is not a proof that the
+formula is correct. If an issue was reopened because the runner's math was
+wrong, treat the whole formula family as suspect until the changed expression
+and any reused helpers are cross-checked.
+
+11. **Native-language PASS gate (hard).** Changed repo-facing text must use
+controlled, native repo vocabulary. Run `scripts/vocab_lint.py --fix` on all
+branch-modified files before landing, then inspect changed headings, metadata,
+runner banners, claim scopes, table labels, and review comments for
+branch-local/draft language that the linter cannot know about. PR-specific
+labels, draft-branch vocabulary, campaign names, and noncanonical theory
+phrases must be rewritten into repo-native language or explicitly deferred in
+`docs/repo/ACTIVE_REVIEW_QUEUE.md`; do not land them silently.
+
+The review loop must not run `docs/audit/scripts/apply_audit.py` and must not
+write `audit_status`, `audited_clean`, or other audit verdicts. If the branch
+introduces retained-grade `claim_type` rows, report those claim IDs in the
+final report as requiring the independent audit worker.
+When a source repair changes a note or runner for a previously audited row,
+the local result is `note_hash`/runner-hash drift plus queue/dispatch
+visibility for independent re-audit. For a non-retained row this drift is a
+benign `note_hash_drift_reaudit_pending` notice (see the Audit-System
+Compatibility Gate) — it does not block strict lint and must not be repaired by
+committing ledger churn. For a retained-grade row the drift is a strict error
+that must be resolved by re-audit, not laundered. In all cases, do not preserve,
+copy, or author a fresh `previous_audits` entry, `audit_status`, or verdict
+rationale from the PR branch; the independent audit lane (nightly cron +
+`audit:` commits) is the sole channel that refreshes the hash and re-ratifies.
+
+After the pipeline, inspect the changed claim rows in
+`docs/audit/data/audit_ledger.json`:
+
+- `claim_type` must match the intended class (`positive_theorem`,
+  `bounded_theorem`, `no_go`, `open_gate`, `decoration`, or `meta`).
+- `audit_status` must remain `unaudited` unless the branch is only carrying
+  already-audited history from `origin/main`.
+- `effective_status` must be pipeline-derived, not hand-authored.
+- New theorem/no-go/bounded rows with declared load-bearing authorities must
+  have non-empty `deps` matching the markdown-linked authorities.
+- Dependencies asserted as retained-grade must currently have
+  `effective_status` in `{retained, retained_bounded, retained_no_go}`. Open
+  gates, `unaudited`, `audit_in_progress`, `retained_pending_chain`, and
+  terminal non-clean audit statuses are blockers for retained-grade claims.
+
+Useful review-only inventory:
+
+```bash
+python3 - <<'PY'
+import json, subprocess
+changed = set()
+for cmd in (
+    ["git", "diff", "--name-only", "HEAD"],
+    ["git", "diff", "--name-only", "--cached"],
+):
+    changed.update(subprocess.check_output(cmd, text=True).splitlines())
+try:
+    changed.update(subprocess.check_output(
+        ["git", "diff", "--name-only", "origin/main...HEAD"], text=True
+    ).splitlines())
+except Exception:
+    pass
+rows=json.load(open("docs/audit/data/audit_ledger.json"))["rows"]
+for cid,row in rows.items():
+    if row.get("note_path") in changed:
+        print(cid, row.get("claim_type"), row.get("audit_status"),
+              row.get("effective_status"), row.get("deps"),
+              row.get("note_path"))
+PY
+```
+
+If generated audit files conflict while integrating current `origin/main`, do
+not hand-merge generated JSON/Markdown. Resolve source files, prefer the
+current remote generated audit files, then rerun `run_pipeline.sh` and strict
+lint so the generated surface is rebuilt from source.
+
+## Smoketest
+
+After fixes, run the smallest relevant checks:
+
+- `python3 -m py_compile <changed .py files>` for changed Python files;
+- changed paired runners directly when they are expected to be short;
+- for changed math-bearing runners, independently verify formulas/constants
+  before trusting PASS output: compare note equations to code line by line,
+  check signs/factors/normalizations, run a second implementation or symbolic
+  simplification when practical, and add finite edge-case or invariant checks
+  when they would have caught the suspected class of error;
+- if many changed runners are part of the branch, execute all practical
+  changed runners with a bounded timeout, then rerun any timeout once with a
+  longer timeout before classifying it as slow rather than broken;
+- any reproduction commands named in changed notes when practical;
+- publication/control-plane consistency checks by reading changed tables and
+  nearby authority surfaces.
+- `bash docs/audit/scripts/run_pipeline.sh` and
+  `python3 docs/audit/scripts/audit_lint.py --strict` when claim notes or
+  governance/publication surfaces changed.
+
+If a runner is long, stochastic, or requires unavailable data, do not fake the
+check. Report it as not run with the reason.
+
+## Re-Review Tracking
+
+Never re-review unchanged files.
+
+After each fix pass:
+
+1. Identify files modified by the fix pass.
+2. If committing is allowed, create one iteration commit:
+   `fix: address physics review findings (iteration N)`.
+3. Set `files_to_review` to the files modified by the fix pass.
+4. Add interacting files only if they are also in the original changed-file
+   set. Find interactions through imports, runner/note pairs, canonical harness
+   rows, publication tables, and explicit cross-links.
+5. Loop until clean, no files changed, or max iterations reached.
+
+## Final Report
+
+Report:
+
+- iterations run;
+- files reviewed;
+- total findings, fixed findings, skipped findings;
+- import/support inventory summary;
+- final claim-strength disposition;
+- audit-compatibility status and proposed claim IDs needing independent audit;
+- commits created;
+- checks run and checks skipped;
+- remaining issues with disposition;
+- recommendation: `PASS`, `PASS WITH BOUNDED CLAIMS`, or `NEEDS MANUAL SCIENCE`.
+
+Do not claim Nature readiness. Say whether the branch meets this repo's
+Nature-grade retention bar or exactly what remains open.
+
+2026-07-18T11:40:49.199412Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'nl -ba docs/THETA_RECORD_LOG_BRIDGE_FORCED_LOGARITHMIC_INTERFACE_BOUNDED_THEOREM_NOTE_2026-07-18.md
+nl -ba scripts/theta_record_log_bridge_forced_logarithmic_interface_2026_07_18.py
+nl -ba docs/THETA_POST_ERASURE_ODD_SIDE_LOG_EQUIVALENCE_AND_ADDITIVITY_INCOMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-18.md
+nl -ba docs/MINIMAL_AXIOMS_2026-06-29.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	---
+     2	claim_id: theta_record_log_bridge_forced_logarithmic_interface_bounded_theorem_note_2026-07-18
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional interface-form theorem closing the open link named by the post-erasure structure note: on the phase-erased determinant slice, if the physical determinant readout is Record-registrable — additive over pairwise-disjoint records in the sense of the Record axiom's own scalar-readout sentence — and is a fixed function of channel data, then the channel data must compose additively across independent blocks (the multiplicative raw-value presentation admits only the degenerate readout, by the sibling incompatibility theorem lifted to the axiom sentence), so the interface factors through the logarithmic-modulus presentation; the trivial block anchors the readout at zero (I(empty)=0 with log 1 = 0), and with the named bounded-additive-function theorem on a nondegenerate interval the readout form is s·log|det| with only the slope s undetermined. The alternative — a readout that is not a fixed function of channel data — remains named and untested; nothing physical is derived; the obligation stays open; the gauge side and theta-bar are untouched."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	  - theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_bounded_theorem_note_2026-07-18
+     8	  - theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17
+     9	  - registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10
+    10	runner: scripts/theta_record_log_bridge_forced_logarithmic_interface_2026_07_18.py
+    11	---
+    12	
+    13	# Theta Record/Log Bridge: The Registrable Determinant Interface Is Forced To Logarithmic Form
+    14	
+    15	**Date:** 2026-07-18
+    16	**Type:** bounded_theorem
+    17	**Claim type:** bounded_theorem
+    18	**Scope:** bridge-conditional; the registrability of the physical readout
+    19	and the fixed-function interface shape are assumed, not adopted; no
+    20	physical identification is made.
+    21	**Audit-status authority:** independent audit lane only. This note sets no
+    22	audit verdict and predicts none.
+    23	**Primitive status:** no primitive is approved, registered, edited, or
+    24	enlarged here.
+    25	**Primary runner:**
+    26	[`scripts/theta_record_log_bridge_forced_logarithmic_interface_2026_07_18.py`](../scripts/theta_record_log_bridge_forced_logarithmic_interface_2026_07_18.py)
+    27	**Runner cache:**
+    28	[`logs/runner-cache/theta_record_log_bridge_forced_logarithmic_interface_2026_07_18.txt`](../logs/runner-cache/theta_record_log_bridge_forced_logarithmic_interface_2026_07_18.txt)
+    29	
+    30	## Purpose
+    31	
+    32	The sibling structure note
+    33	[`THETA_POST_ERASURE_ODD_SIDE_LOG_EQUIVALENCE_AND_ADDITIVITY_INCOMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-18.md`](THETA_POST_ERASURE_ODD_SIDE_LOG_EQUIVALENCE_AND_ADDITIVITY_INCOMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-18.md)
+    34	named its exact open link: "Whether any Record/log bridge connects the
+    35	registrable scalar-additive shape to logarithmic-coordinate additivity is
+    36	the exact open link this note names and does not claim." This note closes
+    37	that link at the bounded level by lifting the sibling's incompatibility
+    38	theorem to the Record axiom's own readout sentence
+    39	([`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)): "For any
+    40	finite collection of pairwise-disjoint records, scalar readout `I` is
+    41	additive, with `I(empty)=0`." The result is an interface-form forcing: a
+    42	Record-registrable determinant readout that is a fixed function of channel
+    43	data cannot read the multiplicatively-composing raw value nondegenerately,
+    44	so it must read an additively-composing presentation — the logarithmic
+    45	modulus — and its form is then pinned up to one slope.
+    46	
+    47	## Hypotheses
+    48	
+    49	On the phase-erased determinant slice of the sibling notes (channel values
+    50	composing multiplicatively across independent blocks; readouts depending
+    51	on the block determinant through its modulus):
+    52	
+    53	**(R1)** the physical determinant readout is Record-registrable: additive
+    54	over pairwise-disjoint records in the sense of the quoted axiom sentence,
+    55	with the empty collection reading zero.
+    56	
+    57	**(R2)** the readout is a fixed function of channel data: there is one
+    58	function applied to a per-block channel datum, the same function for every
+    59	block, with the composite record's datum determined by the blocks' data.
+    60	
+    61	Both are assumed, not derived; the alternative to (R2) — readouts using
+    62	more than the channel datum — is named and untested here.
+    63	
+    64	## Results
+    65	
+    66	**T1 (raw multiplicative datum is excluded).** If the channel datum is the
+    67	modulus itself (composing multiplicatively), (R1)+(R2) force the sibling
+    68	incompatibility configuration: the fixed nonnegative function satisfies
+    69	`F(x·y) = F(x) + F(y)`, so `F(1) = 0` and `F(x) + F(1/x) = 0` with both
+    70	terms nonnegative, hence `F ≡ 0` — only the degenerate readout. The lift
+    71	is exact: the additivity used is the axiom sentence's own finite
+    72	additivity over disjoint records, instantiated at two blocks and at the
+    73	empty collection.
+    74	
+    75	**T2 (the forced logarithmic interface).** If instead the channel datum
+    76	composes additively — the logarithmic-modulus presentation
+    77	`u = log |det|`, with the trivial block reading `log 1 = 0` matching
+    78	`I(empty) = 0` — then (R1)+(R2) say exactly that the readout `G` is
+    79	additive with `G(0) = 0`, which is consistent and nondegenerate, and by
+    80	the sibling equivalence is the same supply as the block homomorphism
+    81	ingredient in multiplicative coordinates. Within the fixed-function class,
+    82	the additively-composing presentation is therefore the only nondegenerate
+    83	Record-facing interface to the determinant channel: **the Record/log
+    84	bridge is forced, not chosen.** With the named standard
+    85	bounded-additive-function theorem on a nondegenerate interval (stated as
+    86	standard mathematics, carried by the note; runner cells are consistency
+    87	instances), the readout form is `G(u) = s·u`, i.e. `s · log |det|`, with
+    88	only the slope `s` undetermined by anything cited here.
+    89	
+    90	**T3 (tail rewrite, bookkeeping).** Combining with the parent
+    91	characterization and the sibling structure note: on the erased slice, the
+    92	obligation's forcing-half conditional tail is now — transported K/CPT
+    93	orbit constancy, plus Record-registrability of the quark determinant
+    94	readout under the fixed-function interface shape — and the interface FORM
+    95	is no longer a free choice in that tail: it is `s·log|det|` up to slope.
+    96	What remains open is unchanged in kind: the physical identification
+    97	(carrier, readout map, exhaustion — the no-go's live routes), the
+    98	orbit-constancy transport, the registrability of the physical readout,
+    99	the fixed-function shape itself, and the slope. The gauge side and
+   100	`theta_bar = theta_gauge + arg det(M_u M_d)` are untouched.
+   101	
+   102	## No-Go Discipline Gate
+   103	
+   104	T1 is a bounded negative, answered:
+   105	
+   106	- **N1 route inventory:** (1) signed raw-value readouts — outside the
+   107	  erased slice's nonnegative character form; named to its resolution;
+   108	  (2) per-block-varying functions — outside (R2), named untested;
+   109	  (3) readouts of the record pair beyond the channel datum — outside
+   110	  (R2), named untested; (4) rescaling the raw value before reading —
+   111	  preserves multiplicative composition, proof applies unchanged;
+   112	  ATTEMPTED; (5) additively-composing presentations — exactly T2, the
+   113	  forced interface, not a rescue of the raw-value route.
+   114	- **N2 wall independence:** one wall (raw-value exclusion); T2 is its
+   115	  complement, not a second wall.
+   116	- **N3 hidden-wall scan:** the axiom sentence is quoted and needled; the
+   117	  empty-collection anchor is used exactly once (the `log 1 = 0` match);
+   118	  strict positivity and the nondegenerate-interval boundedness input are
+   119	  named where used, as in the sibling.
+   120	- **N4 residual matching and dependency roles:** the sibling supplies the
+   121	  incompatibility mechanism and the log equivalence; the parent supplies
+   122	  the tail being rewritten; the registrability note supplies the
+   123	  registrable shape's lineage; `minimal_axioms` supplies the quoted
+   124	  readout sentence — here a load-bearing needle, not background.
+   125	- **N5 rhetoric audit:** "forced, not chosen" is scoped to the
+   126	  fixed-function class on the erased slice with (R1); the (R2)
+   127	  alternative and the slope are named open.
+   128	- **N6 partial-closure scan:** closure paths named — the no-go's live
+   129	  routes for the physical half; a future slope-fixing theorem is a
+   130	  separate increment, not claimed.
+   131	- **N7 steelman:** "this is the sibling's theorem with the axiom sentence
+   132	  pasted on." Reply: the sibling proved incompatibility against the
+   133	  parent's supplied (P-add) shape; this note instantiates the AXIOM's own
+   134	  additivity sentence as the source of that shape, which is what makes
+   135	  the interface conclusion Record-facing rather than
+   136	  hypothesis-surface-internal, and adds the forced-form and anchor
+   137	  content; the distinction is exactly what the cluster-cap evaluation
+   138	  records.
+   139	- **N8 cross-cycle echo:** the lane's pattern of turning a named open
+   140	  link into the next block's exact target is repeated; the link closed
+   141	  here was named by the sibling one block ago.
+   142	
+   143	## Non-Claims
+   144	
+   145	- Does **not** derive (R1), (R2), the slope `s`, the orbit-constancy
+   146	  transport, the carrier, or the exhaustion bridge; the obligation
+   147	  remains open exactly as stated.
+   148	- Does **not** exclude readouts that use more than the channel datum.
+   149	- Does **not** touch the gauge side, theta-bar, or the action-level bare
+   150	  slot; does **not** set an audit verdict; independent audit remains
+   151	  required.
+   152	
+   153	## Verification
+   154	
+   155	The primary runner checks the listed reductions and witnesses and nothing
+   156	more (sympy, exact arithmetic, single process): the axiom-sentence needle;
+   157	the two-block and empty-collection instantiations of T1 (`F(1) = 0`;
+   158	nonnegative pair summing to zero; degenerate propagation); the additive
+   159	presentation's consistency and anchor (`log 1 = 0`; `s·(u+v) = s·u + s·v`);
+   160	the slope-only underdetermination instance (two additive forms agreeing at
+   161	one nonzero point coincide); and needle checks pinning the sibling's
+   162	open-link sentence, the parent's tail sentence, and this note's claim
+   163	identifier and labels. Mutation checks (one load-bearing mutation per
+   164	check family, reverted) are recorded in the review history and PR body.
+   165	
+   166	Measured runner total after final verification:
+   167	`TOTAL: PASS=12 FAIL=0`.
+     1	#!/usr/bin/env python3
+     2	"""Exact checks for the forced logarithmic interface note."""
+     3	
+     4	from pathlib import Path
+     5	
+     6	import sympy as sp
+     7	
+     8	
+     9	ROOT = Path(__file__).resolve().parents[1]
+    10	TARGET_NOTE = ROOT / "docs/THETA_RECORD_LOG_BRIDGE_FORCED_LOGARITHMIC_INTERFACE_BOUNDED_THEOREM_NOTE_2026-07-18.md"
+    11	SIBLING_NOTE = ROOT / "docs/THETA_POST_ERASURE_ODD_SIDE_LOG_EQUIVALENCE_AND_ADDITIVITY_INCOMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-18.md"
+    12	PARENT_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
+    13	AXIOM_NOTE = ROOT / "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    14	
+    15	
+    16	def normalized_whitespace(text):
+    17	    return " ".join(text.split())
+    18	
+    19	
+    20	class CheckRunner:
+    21	    def __init__(self):
+    22	        self.passed = 0
+    23	        self.failed = 0
+    24	
+    25	    def check(self, label, condition):
+    26	        ok = bool(condition)
+    27	        if ok:
+    28	            self.passed += 1
+    29	            print(f"PASS: {label}")
+    30	        else:
+    31	            self.failed += 1
+    32	            print(f"FAIL: {label}")
+    33	
+    34	    def needle(self, label, path, needles):
+    35	        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
+    36	        if isinstance(needles, str):
+    37	            needles = (needles,)
+    38	        self.check(
+    39	            label,
+    40	            all(normalized_whitespace(n) in haystack for n in needles),
+    41	        )
+    42	
+    43	    def finish(self):
+    44	        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
+    45	        return 0 if self.failed == 0 else 1
+    46	
+    47	
+    48	def main():
+    49	    checks = CheckRunner()
+    50	
+    51	    # Group T1 -- raw multiplicative datum exclusion (axiom-sentence lift).
+    52	    f_one = sp.symbols("f_one", real=True)
+    53	    checks.check(
+    54	        "T1a empty-collection anchor and unit block force F(1)=0",
+    55	        sp.solve(sp.Eq(f_one, 2 * f_one), f_one) == [0]
+    56	        and sp.log(1) == 0,
+    57	    )
+    58	    fa = sp.symbols("fa", real=True)
+    59	    inc = sp.reduce_inequalities([fa >= 0, -fa >= 0, fa > 0], fa)
+    60	    inc_solution = sp.reduce_inequalities([fa >= 0, -fa >= 0], fa)
+    61	    checks.check(
+    62	        "T1b nonnegative inverse-pair summing to zero has no positive member",
+    63	        (inc is sp.false or inc == False) and inc_solution == sp.Eq(fa, 0),
+    64	    )
+    65	    F = sp.Function("F")
+    66	    x, x0 = sp.symbols("x x0", positive=True)
+    67	    checks.check(
+    68	        "T1c degenerate propagation through the multiplicative factorization",
+    69	        sp.Eq(F(x), F(x0) * F(x / x0)).subs(F(x0), 0) == sp.Eq(F(x), 0),
+    70	    )
+    71	    checks.check(
+    72	        "T1d two-block additive-shape instantiation is the sibling configuration",
+    73	        2 * 3 == 6 and 2 + 3 == 5 and 6 != 5,
+    74	    )
+    75	
+    76	    # Group T2 -- forced logarithmic interface.
+    77	    u, v, s = sp.symbols("u v s", real=True)
+    78	    checks.check(
+    79	        "T2a additively-composing presentation is consistent and anchored",
+    80	        sp.simplify(s * (u + v) - (s * u + s * v)) == 0
+    81	        and (s * u).subs(u, 0) == 0,
+    82	    )
+    83	    r1, r2 = sp.symbols("r1 r2", positive=True)
+    84	    checks.check(
+    85	        "T2b logarithmic modulus composes additively across blocks",
+    86	        sp.expand_log(sp.log(r1 * r2), force=False)
+    87	        == sp.log(r1) + sp.log(r2),
+    88	    )
+    89	    g_part, g_rest, g_total = sp.symbols("g_part g_rest g_total", real=True)
+    90	    r_fold = sp.solve(
+    91	        (sp.Eq(3 * g_part + g_rest, g_total), sp.Eq(g_rest, 0)),
+    92	        (g_part, g_rest),
+    93	        dict=True,
+    94	    )
+    95	    checks.check(
+    96	        "T2c rational-homogeneity consistency instance for the named theorem",
+    97	        r_fold == [{g_part: g_total / 3, g_rest: 0}],
+    98	    )
+    99	    s2 = sp.symbols("s2", real=True)
+   100	    slope_solution = sp.solve(sp.Eq(s * 2, s2 * 2), s2)
+   101	    checks.check(
+   102	        "T2d two additive forms agreeing at one nonzero point coincide",
+   103	        slope_solution == [s],
+   104	    )
+   105	
+   106	    # Group N -- source needles.  __TOTAL__ deliberately not matched.
+   107	    checks.needle(
+   108	        "N1 axiom readout-additivity sentence needle",
+   109	        AXIOM_NOTE,
+   110	        "For any finite collection of pairwise-disjoint records, scalar readout "
+   111	        "`I` is additive, with `I(empty)=0`.",
+   112	    )
+   113	    checks.needle(
+   114	        "N2 sibling open-link sentence needle",
+   115	        SIBLING_NOTE,
+   116	        "Whether any Record/log bridge connects the registrable scalar-additive "
+   117	        "shape to logarithmic-coordinate additivity is the exact open link",
+   118	    )
+   119	    checks.needle(
+   120	        "N3 parent tail sentence needle",
+   121	        PARENT_NOTE,
+   122	        "an independently supplied quark-side odd-side ingredient",
+   123	    )
+   124	    checks.needle(
+   125	        "N4 target identifier and hypothesis labels",
+   126	        TARGET_NOTE,
+   127	        (
+   128	            "theta_record_log_bridge_forced_logarithmic_interface_bounded_theorem_note_2026-07-18",
+   129	            "**(R1)**",
+   130	            "**(R2)**",
+   131	            "the Record/log\nbridge is forced, not chosen",
+   132	        ),
+   133	    )
+   134	
+   135	    return checks.finish()
+   136	
+   137	
+   138	if __name__ == "__main__":
+   139	    raise SystemExit(main())
+     1	---
+     2	claim_id: theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_bounded_theorem_note_2026-07-18
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional structure theorem on the phase-erased (k = 0) slice of the supplied determinant-channel readout surface, three exact slices. Log equivalence: for strictly positive modulus readouts, independent-block multiplicativity is exactly equivalent to additivity of the logarithmic-coordinate readout (both directions through the exponential bridge); with the standard bounded-additive-function theorem on a nondegenerate interval (stated, note-carried), the family is the modulus-character class. Additivity incompatibility: on this slice, where the channel value composes multiplicatively and the readout is a fixed nonnegative function of it, the parent's scalar record-additive shape admits only the identically-zero readout (exact two-step proof), and block multiplicativity does not imply scalar additivity (exact witness F(x) = x); so the parent block's two odd-side routes are genuinely distinct here, and the viable odd-side ingredient on this slice is the homomorphism form (equivalently its logarithmic-coordinate presentation). Non-reconstruction boundary: pre-erasure readouts with identical logarithmic modulus content can differ in multiplicativity (exact two-readout discriminator), so log-modulus data reconstruct neither the phase nor the block law. Bookkeeping corollary: the parent T2 tail, on this slice, sharpens to transported K/CPT orbit constancy plus the homomorphism ingredient; whether any Record/log bridge connects the registrable additive shape to logarithmic coordinates is named as the exact open link, not claimed. No physical readout, carrier, exhaustion, or orientation is derived; the obligation stays open; the gauge side and theta-bar are untouched."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	  - theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17
+     8	  - theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10
+     9	  - registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10
+    10	runner: scripts/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.py
+    11	---
+    12	
+    13	# Theta Post-Erasure Odd-Side Structure: Log Equivalence, Scalar-Additivity Incompatibility, And The Honest Tail
+    14	
+    15	**Date:** 2026-07-18
+    16	**Type:** bounded_theorem
+    17	**Claim type:** bounded_theorem
+    18	**Scope:** bridge-conditional; every property below is a supplied-class
+    19	property, assumed, not adopted; no physical identification is made.
+    20	**Audit-status authority:** independent audit lane only. This note sets no
+    21	audit verdict and predicts none.
+    22	**Primitive status:** no primitive is approved, registered, edited, or
+    23	enlarged here.
+    24	**Primary runner:**
+    25	[`scripts/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.py`](../scripts/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.py)
+    26	**Runner cache:**
+    27	[`logs/runner-cache/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.txt`](../logs/runner-cache/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.txt)
+    28	
+    29	## Purpose
+    30	
+    31	The parent block
+    32	[`THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md`](THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+    33	left its T2 reduction conditional on "an independently supplied quark-side
+    34	odd-side ingredient" — the Record-registrable additive shape (P-add), or
+    35	the independent-block determinant homomorphism (P-hom) — as alternative,
+    36	separately sufficient assumptions. This note settles how those two
+    37	ingredients relate on the phase-erased slice (the `k = 0` class of the
+    38	cited erasure notes, whose "invariant members of this determinant-character
+    39	family are phase-free functions of `|det|`"): they are **not** one supply —
+    40	the additive shape is incompatible with the slice's multiplicative channel
+    41	composition except degenerately, while the homomorphism ingredient is
+    42	exactly equivalent to additivity in logarithmic coordinates. A review-lens
+    43	counterexample refuting an earlier draft's conflation of the two additivity
+    44	notions is adopted here as the distinctness witness.
+    45	
+    46	## The Post-Erasure Surface
+    47	
+    48	Per the cited erasure notes, the post-erasure slice carries, per sector
+    49	block, a readout `r(z) = F(|z|)` with `F : (0, ∞) → [0, ∞)`, and channel
+    50	values composing multiplicatively across independent blocks
+    51	(`|z_1 z_2| = |z_1| |z_2|`, from the determinant block law). Ingredients:
+    52	
+    53	- **(P-hom, slice form)** block multiplicativity:
+    54	  `F(x·y) = F(x)·F(y)` on moduli.
+    55	- **(P-log)** additivity of the logarithmic-coordinate readout
+    56	  `G(u) = log F(e^u)`: `G(u+v) = G(u) + G(v)`. This is a coordinate
+    57	  presentation defined only for strictly positive `F`; it is **not** the
+    58	  parent's (P-add), which is additivity of the scalar readout itself over
+    59	  pairwise-disjoint records.
+    60	- **(P-add, slice form)** the parent's scalar shape on this slice: the
+    61	  composite record's readout equals the sum, `F(x·y) = F(x) + F(y)`.
+    62	
+    63	**Degeneracy lemma.** A multiplicative `F` with a zero is identically zero
+    64	(`F(x) = F(x_0)·F(x/x_0)`), and `F(1) = F(1)^2` forces `F(1) ∈ {0, 1}`;
+    65	nondegenerate multiplicative `F` is strictly positive, so `G` is defined.
+    66	
+    67	## Results
+    68	
+    69	**T1 (log equivalence).** For strictly positive `F`, (P-hom, slice form)
+    70	holds iff (P-log) holds — both directions exact through the bijective
+    71	exponential bridge `e^u·e^v = e^{u+v}`. With the standard theorem that an
+    72	additive function bounded on a nondegenerate interval is linear (stated
+    73	here as named standard mathematics carried by the note's text; the
+    74	runner's cells are consistency instances, not a derivation of it),
+    75	`G(u) = s·u` and `F(x) = x^s` — the modulus-character family. The
+    76	homomorphism ingredient and its logarithmic-coordinate presentation are
+    77	one supply; the parent's scalar additive shape is not part of this
+    78	equivalence.
+    79	
+    80	**T2 (scalar-additivity incompatibility, bounded negative).** On this
+    81	slice — channel values composing multiplicatively, readout a fixed
+    82	function `F ≥ 0` of the channel value — the parent's scalar additive
+    83	shape admits only the degenerate readout: `F(1·1) = F(1) + F(1)` gives
+    84	`F(1) = 0`, and then `F(x) + F(1/x) = F(1) = 0` with both terms
+    85	nonnegative gives `F(x) = 0` for every `x`. Conversely block
+    86	multiplicativity does not imply the scalar shape: `F(x) = x` is
+    87	multiplicative while `F(2·3) = 6 ≠ 5 = F(2) + F(3)`, exactly. So on the
+    88	erased determinant slice the parent's two odd-side routes are genuinely
+    89	distinct, and the viable odd-side ingredient here is the homomorphism
+    90	form (equivalently (P-log)); the additive route can operate only through
+    91	a readout that is not a fixed nonnegative function of the multiplicative
+    92	channel value — for example on logarithmic-coordinate data, which is
+    93	exactly the (P-log) presentation, or through a Record/log bridge not
+    94	supplied by anything cited here.
+    95	
+    96	**T3 (non-reconstruction boundary, bounded negative).** Logarithmic
+    97	modulus content reconstructs neither the phase nor the block law:
+    98	pre-erasure, the full character `e^{i·arg z}|z|^s` registers the phase
+    99	(`1` versus `i` at `arg z = 0, π/2`, fixed modulus) while
+   100	`log|r| = s·log|z|` is phase-silent; and the two readouts `z/|z|` and
+   101	`e^{i·sin(arg z)}` have identical (zero) logarithmic modulus at unit
+   102	modulus while the first is multiplicative and the second is not
+   103	(`1 ≠ e^{2i}` at the pair `(i, i)`, exactly). So sharing log-modulus data
+   104	decides neither ingredient.
+   105	
+   106	**T4 (bookkeeping corollary on the parent tail).** On the erased
+   107	determinant slice, the parent T2 conditional tail sharpens to:
+   108	transported K/CPT orbit constancy on the quark determinant channel, plus
+   109	the homomorphism ingredient (in either presentation). Whether any
+   110	Record/log bridge connects the registrable scalar-additive shape to
+   111	logarithmic-coordinate additivity is the exact open link this note names
+   112	and does not claim; the physical half (carrier, readout map, exhaustion —
+   113	the no-go's live routes), the gauge side, and
+   114	`theta_bar = theta_gauge + arg det(M_u M_d)` are untouched.
+   115	
+   116	## No-Go Discipline Gate
+   117	
+   118	T2 and T3 are bounded negatives, answered:
+   119	
+   120	- **N1 route inventory.** Against T2: (1) drop nonnegativity — signed
+   121	  scalar readouts leave the stated surface (the erased class is
+   122	  nonnegative by its character form); named to its resolution; (2) let
+   123	  the readout depend on the record pair rather than the channel value —
+   124	  outside the fixed-function surface, named untested; (3) rescale the
+   125	  channel value before reading — reparametrization preserves the
+   126	  multiplicative composition, so the proof applies unchanged; ATTEMPTED;
+   127	  (4) log-coordinate data — exactly (P-log), where additivity is viable
+   128	  and equivalent to (P-hom) (T1); (5) a Record/log bridge theorem — the
+   129	  named open link, not foreclosed. Against T3: the same-modulus
+   130	  phase-twist attack is the discriminator witness itself; enlarging the
+   131	  data to full complex values trivially reconstructs — outside the
+   132	  log-modulus surface, named.
+   133	- **N2 wall independence:** T2 concerns the additive shape's viability;
+   134	  T3 concerns reconstruction from log-modulus data; the discriminator
+   135	  witnesses differ and neither result implies the other.
+   136	- **N3 hidden-wall scan:** strict positivity (for (P-log)'s domain), the
+   137	  nondegenerate-interval boundedness input, and the fixed-function
+   138	  surface are stated where used; the exponential bridge is bijective.
+   139	- **N4 residual matching and dependency roles:** the parent block
+   140	  supplies the ingredient inventory this note structures; the erasure
+   141	  note supplies the `k = 0` slice; the registrability note supplies the
+   142	  scalar-additive shape being tested; `minimal_axioms` supplies only the
+   143	  Record sentence lineage those notes rest on, with no direct load here
+   144	  beyond scope discipline.
+   145	- **N5 rhetoric audit:** "admits only the degenerate readout" is scoped
+   146	  to the fixed-nonnegative-function surface with multiplicative
+   147	  composition; "genuinely distinct" is scoped to this slice; the earlier
+   148	  draft's "one supply in two presentations" claim about (P-add) and
+   149	  (P-hom) is withdrawn and replaced by the T1 equivalence, which relates
+   150	  (P-hom) to (P-log) only.
+   151	- **N6 partial-closure scan:** closure paths named — the homomorphism
+   152	  ingredient with orbit-constancy transport (parent T2 shape); a future
+   153	  Record/log bridge; the no-go's live routes for the physical half.
+   154	- **N7 steelman:** "the incompatibility just says additive and
+   155	  multiplicative laws differ — textbook." Reply: the mathematics is
+   156	  elementary and stated as such; the content is the placement — the
+   157	  parent presented two alternative sufficient routes, and this note
+   158	  proves that on the erased determinant slice one of them is degenerate
+   159	  as stated, which changes what a closing theorem on the obligation's
+   160	  forcing half must supply.
+   161	- **N8 cross-cycle echo:** the parent lane's own review round already
+   162	  corrected one quantifier-level conflation; this block adopts a
+   163	  review-lens counterexample the same way, recorded in the review
+   164	  history.
+   165	
+   166	## Non-Claims
+   167	
+   168	- Does **not** derive the physical quark readout, its registrability, the
+   169	  orbit-constancy transport, the carrier, or any Record/log bridge; the
+   170	  obligation remains open exactly as stated.
+   171	- Does **not** modify the parent characterization at the pre-erasure
+   172	  level, where both routes remain alternative sufficient assumptions.
+   173	- Does **not** touch the gauge-side theta, theta-bar, or the action-level
+   174	  bare slot.
+   175	- Does **not** set an audit verdict; independent audit remains required.
+   176	
+   177	## Verification
+   178	
+   179	The primary runner checks the listed reductions and witnesses and nothing
+   180	more (sympy, exact arithmetic, single process): modulus multiplicativity;
+   181	both directions of the exponential bridge with the strict-positivity
+   182	domain stated; power-family consistency instances for the named
+   183	bounded-additive theorem (not a derivation of it); the degeneracy lemma;
+   184	the incompatibility proof steps (`F(1) = 0`; nonnegative pair summing to
+   185	zero; the exact `6 ≠ 5` witness for the converse); the non-reconstruction
+   186	discriminator pair at exact points; the pre-erasure phase-silence
+   187	contrast; and needle checks pinning the parent's odd-side ingredient
+   188	sentence, the erasure note's phase-free-family line, and this note's
+   189	claim identifier and labels. Mutation checks (one load-bearing mutation
+   190	per check family, reverted) are recorded in the review history and PR
+   191	body.
+   192	
+   193	Measured runner total after final verification:
+   194	`TOTAL: PASS=18 FAIL=0`.
+     1	# Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)
+     2	
+     3	> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`;
+     4	> each row points to the canonical source-of-truth doc.
+     5	
+     6	**Date:** 2026-06-29
+     7	**Type:** meta
+     8	**Status:** current public framework axiom memo for the qubit-on-`Z^3`
+     9	package with local admissibility and fixed scalar record readout.
+    10	**Status authority:** explicit owner approval for the 2026-06-29 foundation
+    11	reset is recorded in `docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6.
+    12	Audit status remains set only by the independent audit lane.
+    13	
+    14	**Supersedes:** `MINIMAL_AXIOMS_2026-06-05.md`. The 2026-06-05 memo remains the
+    15	historical source for the prior Lattice/Quantum/Record wording in which
+    16	realized outcome was latent in Record and no explicit local admissibility
+    17	constraint was named.
+    18	
+    19	## Purpose
+    20	
+    21	This note states the framework's minimal ontology premises. They are named
+    22	rather than treated as bare letter codes:
+    23	
+    24	1. **Lattice**
+    25	2. **Qubit**
+    26	3. **Admissibility**
+    27	4. **Record**
+    28	
+    29	Legacy `A1`/`A2` numbering and the older `Quantum` axiom name are historical.
+    30	New repo surfaces should use the axiom names above unless quoting an older
+    31	document.
+    32	
+    33	## The Four Framework Axioms
+    34	
+    35	### Lattice / Physical Locality
+    36	
+    37	Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
+    38	adjacency, standard translations, and proper cubic rotations about each site.
+    39	
+    40	No site is privileged. Sites are distinguished by the supplied lattice
+    41	structure alone.
+    42	
+    43	### Qubit / Site Possibility
+    44	
+    45	Each site has a domain of local possibilities.
+    46	
+    47	The full one-site possibility domain has algebraic presentation `M_2(C)`.
+    48	
+    49	A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
+    50	adds no further primitive structure.
+    51	
+    52	No possibility is privileged. Possibilities are distinguished by the supplied
+    53	algebraic structure alone.
+    54	
+    55	### Admissibility / Local Constraint
+    56	
+    57	There is one fixed nearest-neighbor admissibility rule, covariant under lattice
+    58	translations and proper cubic rotations.
+    59	
+    60	For each site, the available possibilities are determined by, and vary with,
+    61	the nearest-neighbor conditions.
+    62	
+    63	### Record / Fixed Reality
+    64	
+    65	Records form.
+    66	
+    67	When present, a record locks exactly one admissible local possibility. A
+    68	site never carries more than one record; records are permanent.
+    69	
+    70	Only records are readable. A readout value is determined by record content
+    71	alone. For any finite collection of pairwise-disjoint records, scalar readout
+    72	`I` is additive, with `I(empty)=0`.
+    73	
+    74	## Qualification
+    75	
+    76	These axioms state only their named primitive content. Further physical
+    77	structure requires a retained derivation or bridge, or explicit approved-
+    78	primitive registration, before use as a premise. A choice not fixed by the
+    79	supplied structure remains a named conditional or open dependency.
+    80	
+    81	A state is a configuration of records.
+    82	
+    83	A law privileges no states. Its domain is a supplied condition, and at every
+    84	state where the condition holds it gives exactly one answer.
+    85	
+    86	## Audit-Pipeline Treatment
+    87	
+    88	The machine-readable source of this axiom set is the stable `minimal_axioms`
+    89	entry in `docs/audit/data/axiom_premise_nodes.json`. Dependencies on
+    90	`minimal_axioms` chain-satisfy without making downstream rows
+    91	`retained_bounded`.
+    92	
+    93	**Primary runner:** `scripts/audit_companion_minimal_axioms_clean_base_exact.py`
+    94	checks only elementary algebra/notation sanity for the four axiom names. It
+    95	does not derive or enlarge the axiom set.
+    96	
+    97	Axioms and approved primitives are the complete supplied foundation.
+    98	Depending on the Lattice, Qubit, Admissibility, or Record axiom, or on an
+    99	explicitly approved primitive such as `scale_reference_primitive`, must not be
+   100	treated as a source of bounded status. No admission class exists: every other
+   101	scientific dependency must be retained-derived or remain conditional/open.
+   102	
+   103	## Relation To Dynamics And Kinetic Branch Selection
+   104	
+   105	Admissibility is not a dynamics axiom. It determines availability by a
+   106	nearest-neighbor rule: for each site, the available possibilities are
+   107	determined by, and vary with, the nearest-neighbor conditions. It does not
+   108	choose a Hamiltonian or transfer operator, supply transition probabilities or
+   109	weights, select a scalar or nonzero kinetic branch, assert a Dirac-square
+   110	carrier, define a time metric, or provide a record-production process or
+   111	physical persistence dynamics.
+   112	
+   113	Static spatial kinetic questions, probability/process questions, and temporal
+   114	evolution questions should be tracked separately. A realized kinetic branch, if
+   115	proposed, is downstream content: it needs a retained derivation or bridge, or
+   116	an approved-primitive registry update, before audit rows may use it
+   117	as load-bearing content. The four axioms are compatible with such later
+   118	content, but do not include it.
+   119	
+   120	## Relation To The Older Observable-Principle Parent
+   121	
+   122	`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` is not this axiom note and is not an
+   123	approved axiom-premise node. It remains a broader conditional parent that
+   124	packages additive scalar observables with further readout/log-det/modulus
+   125	structure. That older parent must not be moved wholesale into
+   126	`docs/audit/data/axiom_premise_nodes.json`.
+   127	
+   128	Rows that require only the Record axiom should cite this minimal-axiom
+   129	authority. Rows that require P2/modulus, log-det, source/action, measurement,
+   130	Born weights, readout-context selection, central-sector decomposition, `K`/CPT
+   131	structure, transition relations, record-production dynamics, physical
+   132	persistence dynamics, local observability, or any other additional bridge must
+   133	cite separate retained authorities or remain bounded/pending according to the
+   134	audit ledger.
+   135	
+   136	## Relation To The 2026-06-05 Record Wording
+   137	
+   138	The 2026-06-05 Record axiom named durable realized-outcome registration and
+   139	gave a `K`/CPT orbit reading once a finite central-sector readout context and
+   140	fixed `K`/CPT conjugation were supplied. This reset separates generic site
+   141	possibility, local admissibility, and fixed records from context-specific
+   142	readout structure:
+   143	
+   144	- Qubit names the domain of local possibilities and its full one-site algebraic
+   145	  presentation.
+   146	- Admissibility names the nearest-neighbor rule by which, for each site, the
+   147	  available possibilities are determined by, and vary with, the
+   148	  nearest-neighbor conditions.
+   149	- Record names the fixed locking of one admissible local possibility,
+   150	  one-record-per-site uniqueness, permanence, and finite scalar readout
+   151	  additivity over disjoint record collections.
+   152	- `K`/CPT orbit structure, central-sector decomposition, and any sector
+   153	  generation rule are downstream readout-context content, not generic axiom
+   154	  content.
+   155	
+   156	## Open Gates Outside The Axioms
+   157	
+   158	The four axioms do not close, import, or rename the framework's downstream open
+   159	gates. In particular, the following remain outside axiom content:
+   160	
+   161	- the staggered-Dirac/finite-Grassmann realization and `AC_phi_lambda`;
+   162	- the strong-CP theta gauge and mass-side derivation obligations;
+   163	- P2/modulus/phase-blindness and any log-det readout theorem;
+   164	- context selection, measurement basis selection, Born weights, probability
+   165	  rules, update laws, decoherence mechanisms, and formation rules (which
+   166	  admissible possibility a new record locks, at which site, with what weight,
+   167	  or at what rate);
+   168	- arrow, record-production dynamics, physical persistence dynamics, time metric,
+   169	  and local observability of records;
+   170	- source/action and physical-observable identification;
+   171	- `g_bare = 1` convention handling;
+   172	- the scale-reference primitive and the separate gravity self-consistency
+   173	  question that the framework's natural unit equals the Planck length.
+   174	
+   175	## Historical Context
+   176	
+   177	The April 15 through May 20 sequence separated the one-qubit local algebra and
+   178	the `Z^3` lattice from downstream realization gates that had previously been
+   179	written too axiomatically. The 2026-06-04 memo added scalar finite Record
+   180	additivity as the third explicitly approved premise. The 2026-06-05 memo refined
+   181	Record to durable realized-outcome registration in a supplied readout context.
+   182	The 2026-07-04 owner-approved revision appended the formation sentence "Records
+   183	form." to the Record axiom: occurrence became named axiom content, while every
+   184	formation rule (which admissible possibility, at which site, with what weight,
+   185	at what rate) remained downstream supplier content. The file path was kept
+   186	unchanged so existing runner needles and links continue to resolve.
+   187	
+   188	This memo exposes the remaining minimal ontology needed by the blocked audit
+   189	lanes: records are not arbitrary mosaics. The admissibility rule determines the
+   190	available possibilities at each site from the nearest-neighbor conditions, and
+   191	those available possibilities vary with those conditions, before a record can
+   192	lock one available local possibility. Probability, dynamics, readout contexts,
+   193	and physical observable bridges remain downstream.
+
+2026-07-18T11:40:58.421073Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'nl -ba docs/THETA_POST_ERASURE_ODD_SIDE_LOG_EQUIVALENCE_AND_ADDITIVITY_INCOMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-18.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	---
+     2	claim_id: theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_bounded_theorem_note_2026-07-18
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional structure theorem on the phase-erased (k = 0) slice of the supplied determinant-channel readout surface, three exact slices. Log equivalence: for strictly positive modulus readouts, independent-block multiplicativity is exactly equivalent to additivity of the logarithmic-coordinate readout (both directions through the exponential bridge); with the standard bounded-additive-function theorem on a nondegenerate interval (stated, note-carried), the family is the modulus-character class. Additivity incompatibility: on this slice, where the channel value composes multiplicatively and the readout is a fixed nonnegative function of it, the parent's scalar record-additive shape admits only the identically-zero readout (exact two-step proof), and block multiplicativity does not imply scalar additivity (exact witness F(x) = x); so the parent block's two odd-side routes are genuinely distinct here, and the viable odd-side ingredient on this slice is the homomorphism form (equivalently its logarithmic-coordinate presentation). Non-reconstruction boundary: pre-erasure readouts with identical logarithmic modulus content can differ in multiplicativity (exact two-readout discriminator), so log-modulus data reconstruct neither the phase nor the block law. Bookkeeping corollary: the parent T2 tail, on this slice, sharpens to transported K/CPT orbit constancy plus the homomorphism ingredient; whether any Record/log bridge connects the registrable additive shape to logarithmic coordinates is named as the exact open link, not claimed. No physical readout, carrier, exhaustion, or orientation is derived; the obligation stays open; the gauge side and theta-bar are untouched."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	  - theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17
+     8	  - theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10
+     9	  - registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10
+    10	runner: scripts/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.py
+    11	---
+    12	
+    13	# Theta Post-Erasure Odd-Side Structure: Log Equivalence, Scalar-Additivity Incompatibility, And The Honest Tail
+    14	
+    15	**Date:** 2026-07-18
+    16	**Type:** bounded_theorem
+    17	**Claim type:** bounded_theorem
+    18	**Scope:** bridge-conditional; every property below is a supplied-class
+    19	property, assumed, not adopted; no physical identification is made.
+    20	**Audit-status authority:** independent audit lane only. This note sets no
+    21	audit verdict and predicts none.
+    22	**Primitive status:** no primitive is approved, registered, edited, or
+    23	enlarged here.
+    24	**Primary runner:**
+    25	[`scripts/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.py`](../scripts/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.py)
+    26	**Runner cache:**
+    27	[`logs/runner-cache/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.txt`](../logs/runner-cache/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.txt)
+    28	
+    29	## Purpose
+    30	
+    31	The parent block
+    32	[`THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md`](THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+    33	left its T2 reduction conditional on "an independently supplied quark-side
+    34	odd-side ingredient" — the Record-registrable additive shape (P-add), or
+    35	the independent-block determinant homomorphism (P-hom) — as alternative,
+    36	separately sufficient assumptions. This note settles how those two
+    37	ingredients relate on the phase-erased slice (the `k = 0` class of the
+    38	cited erasure notes, whose "invariant members of this determinant-character
+    39	family are phase-free functions of `|det|`"): they are **not** one supply —
+    40	the additive shape is incompatible with the slice's multiplicative channel
+    41	composition except degenerately, while the homomorphism ingredient is
+    42	exactly equivalent to additivity in logarithmic coordinates. A review-lens
+    43	counterexample refuting an earlier draft's conflation of the two additivity
+    44	notions is adopted here as the distinctness witness.
+    45	
+    46	## The Post-Erasure Surface
+    47	
+    48	Per the cited erasure notes, the post-erasure slice carries, per sector
+    49	block, a readout `r(z) = F(|z|)` with `F : (0, ∞) → [0, ∞)`, and channel
+    50	values composing multiplicatively across independent blocks
+    51	(`|z_1 z_2| = |z_1| |z_2|`, from the determinant block law). Ingredients:
+    52	
+    53	- **(P-hom, slice form)** block multiplicativity:
+    54	  `F(x·y) = F(x)·F(y)` on moduli.
+    55	- **(P-log)** additivity of the logarithmic-coordinate readout
+    56	  `G(u) = log F(e^u)`: `G(u+v) = G(u) + G(v)`. This is a coordinate
+    57	  presentation defined only for strictly positive `F`; it is **not** the
+    58	  parent's (P-add), which is additivity of the scalar readout itself over
+    59	  pairwise-disjoint records.
+    60	- **(P-add, slice form)** the parent's scalar shape on this slice: the
+    61	  composite record's readout equals the sum, `F(x·y) = F(x) + F(y)`.
+    62	
+    63	**Degeneracy lemma.** A multiplicative `F` with a zero is identically zero
+    64	(`F(x) = F(x_0)·F(x/x_0)`), and `F(1) = F(1)^2` forces `F(1) ∈ {0, 1}`;
+    65	nondegenerate multiplicative `F` is strictly positive, so `G` is defined.
+    66	
+    67	## Results
+    68	
+    69	**T1 (log equivalence).** For strictly positive `F`, (P-hom, slice form)
+    70	holds iff (P-log) holds — both directions exact through the bijective
+    71	exponential bridge `e^u·e^v = e^{u+v}`. With the standard theorem that an
+    72	additive function bounded on a nondegenerate interval is linear (stated
+    73	here as named standard mathematics carried by the note's text; the
+    74	runner's cells are consistency instances, not a derivation of it),
+    75	`G(u) = s·u` and `F(x) = x^s` — the modulus-character family. The
+    76	homomorphism ingredient and its logarithmic-coordinate presentation are
+    77	one supply; the parent's scalar additive shape is not part of this
+    78	equivalence.
+    79	
+    80	**T2 (scalar-additivity incompatibility, bounded negative).** On this
+    81	slice — channel values composing multiplicatively, readout a fixed
+    82	function `F ≥ 0` of the channel value — the parent's scalar additive
+    83	shape admits only the degenerate readout: `F(1·1) = F(1) + F(1)` gives
+    84	`F(1) = 0`, and then `F(x) + F(1/x) = F(1) = 0` with both terms
+    85	nonnegative gives `F(x) = 0` for every `x`. Conversely block
+    86	multiplicativity does not imply the scalar shape: `F(x) = x` is
+    87	multiplicative while `F(2·3) = 6 ≠ 5 = F(2) + F(3)`, exactly. So on the
+    88	erased determinant slice the parent's two odd-side routes are genuinely
+    89	distinct, and the viable odd-side ingredient here is the homomorphism
+    90	form (equivalently (P-log)); the additive route can operate only through
+    91	a readout that is not a fixed nonnegative function of the multiplicative
+    92	channel value — for example on logarithmic-coordinate data, which is
+    93	exactly the (P-log) presentation, or through a Record/log bridge not
+    94	supplied by anything cited here.
+    95	
+    96	**T3 (non-reconstruction boundary, bounded negative).** Logarithmic
+    97	modulus content reconstructs neither the phase nor the block law:
+    98	pre-erasure, the full character `e^{i·arg z}|z|^s` registers the phase
+    99	(`1` versus `i` at `arg z = 0, π/2`, fixed modulus) while
+   100	`log|r| = s·log|z|` is phase-silent; and the two readouts `z/|z|` and
+   101	`e^{i·sin(arg z)}` have identical (zero) logarithmic modulus at unit
+   102	modulus while the first is multiplicative and the second is not
+   103	(`1 ≠ e^{2i}` at the pair `(i, i)`, exactly). So sharing log-modulus data
+   104	decides neither ingredient.
+   105	
+   106	**T4 (bookkeeping corollary on the parent tail).** On the erased
+   107	determinant slice, the parent T2 conditional tail sharpens to:
+   108	transported K/CPT orbit constancy on the quark determinant channel, plus
+   109	the homomorphism ingredient (in either presentation). Whether any
+   110	Record/log bridge connects the registrable scalar-additive shape to
+   111	logarithmic-coordinate additivity is the exact open link this note names
+   112	and does not claim; the physical half (carrier, readout map, exhaustion —
+   113	the no-go's live routes), the gauge side, and
+   114	`theta_bar = theta_gauge + arg det(M_u M_d)` are untouched.
+   115	
+   116	## No-Go Discipline Gate
+   117	
+   118	T2 and T3 are bounded negatives, answered:
+   119	
+   120	- **N1 route inventory.** Against T2: (1) drop nonnegativity — signed
+   121	  scalar readouts leave the stated surface (the erased class is
+   122	  nonnegative by its character form); named to its resolution; (2) let
+   123	  the readout depend on the record pair rather than the channel value —
+   124	  outside the fixed-function surface, named untested; (3) rescale the
+   125	  channel value before reading — reparametrization preserves the
+   126	  multiplicative composition, so the proof applies unchanged; ATTEMPTED;
+   127	  (4) log-coordinate data — exactly (P-log), where additivity is viable
+   128	  and equivalent to (P-hom) (T1); (5) a Record/log bridge theorem — the
+   129	  named open link, not foreclosed. Against T3: the same-modulus
+   130	  phase-twist attack is the discriminator witness itself; enlarging the
+   131	  data to full complex values trivially reconstructs — outside the
+   132	  log-modulus surface, named.
+   133	- **N2 wall independence:** T2 concerns the additive shape's viability;
+   134	  T3 concerns reconstruction from log-modulus data; the discriminator
+   135	  witnesses differ and neither result implies the other.
+   136	- **N3 hidden-wall scan:** strict positivity (for (P-log)'s domain), the
+   137	  nondegenerate-interval boundedness input, and the fixed-function
+   138	  surface are stated where used; the exponential bridge is bijective.
+   139	- **N4 residual matching and dependency roles:** the parent block
+   140	  supplies the ingredient inventory this note structures; the erasure
+   141	  note supplies the `k = 0` slice; the registrability note supplies the
+   142	  scalar-additive shape being tested; `minimal_axioms` supplies only the
+   143	  Record sentence lineage those notes rest on, with no direct load here
+   144	  beyond scope discipline.
+   145	- **N5 rhetoric audit:** "admits only the degenerate readout" is scoped
+   146	  to the fixed-nonnegative-function surface with multiplicative
+   147	  composition; "genuinely distinct" is scoped to this slice; the earlier
+   148	  draft's "one supply in two presentations" claim about (P-add) and
+   149	  (P-hom) is withdrawn and replaced by the T1 equivalence, which relates
+   150	  (P-hom) to (P-log) only.
+   151	- **N6 partial-closure scan:** closure paths named — the homomorphism
+   152	  ingredient with orbit-constancy transport (parent T2 shape); a future
+   153	  Record/log bridge; the no-go's live routes for the physical half.
+   154	- **N7 steelman:** "the incompatibility just says additive and
+   155	  multiplicative laws differ — textbook." Reply: the mathematics is
+   156	  elementary and stated as such; the content is the placement — the
+   157	  parent presented two alternative sufficient routes, and this note
+   158	  proves that on the erased determinant slice one of them is degenerate
+   159	  as stated, which changes what a closing theorem on the obligation's
+   160	  forcing half must supply.
+   161	- **N8 cross-cycle echo:** the parent lane's own review round already
+   162	  corrected one quantifier-level conflation; this block adopts a
+   163	  review-lens counterexample the same way, recorded in the review
+   164	  history.
+   165	
+   166	## Non-Claims
+   167	
+   168	- Does **not** derive the physical quark readout, its registrability, the
+   169	  orbit-constancy transport, the carrier, or any Record/log bridge; the
+   170	  obligation remains open exactly as stated.
+   171	- Does **not** modify the parent characterization at the pre-erasure
+   172	  level, where both routes remain alternative sufficient assumptions.
+   173	- Does **not** touch the gauge-side theta, theta-bar, or the action-level
+   174	  bare slot.
+   175	- Does **not** set an audit verdict; independent audit remains required.
+   176	
+   177	## Verification
+   178	
+   179	The primary runner checks the listed reductions and witnesses and nothing
+   180	more (sympy, exact arithmetic, single process): modulus multiplicativity;
+   181	both directions of the exponential bridge with the strict-positivity
+   182	domain stated; power-family consistency instances for the named
+   183	bounded-additive theorem (not a derivation of it); the degeneracy lemma;
+   184	the incompatibility proof steps (`F(1) = 0`; nonnegative pair summing to
+   185	zero; the exact `6 ≠ 5` witness for the converse); the non-reconstruction
+   186	discriminator pair at exact points; the pre-erasure phase-silence
+   187	contrast; and needle checks pinning the parent's odd-side ingredient
+   188	sentence, the erasure note's phase-free-family line, and this note's
+   189	claim identifier and labels. Mutation checks (one load-bearing mutation
+   190	per check family, reverted) are recorded in the review history and PR
+   191	body.
+   192	
+   193	Measured runner total after final verification:
+   194	`TOTAL: PASS=18 FAIL=0`.
+
+2026-07-18T11:41:05.223474Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+The central issue is now concrete: the algebraic degeneracy proof is valid on a full inverse-closed positive group, but R1–R2 only speak about actual disjoint record collections. I’m testing the missing-quantifier countermodel and the non-monotone/partial-interface escape exactly in memory.
+exec
+/bin/zsh -lc "python3 - <<'PY'
+from itertools import combinations
+from fractions import Fraction
+
+# Exact finite-record countermodel to the R1+R2 => degeneracy lift as written.
+# I(A)=|A|, d(A)=2"'^|A|.  For disjoint A,B:
+# I(A union B)=I(A)+I(B), d(A union B)=d(A)d(B), and I=F(d)
+# on the realized monoid {2''^n:n>=0}, with F(2''^n)=n >= 0.
+records = tuple(range(5))
+collections = [frozenset(c) for n in range(6) for c in combinations(records, n)]
+def I(A): return len(A)
+def datum(A): return 2 ** len(A)
+def F_on_realized(x):
+    n = 0
+    while x > 1 and x % 2 == 0:
+        x //= 2
+        n += 1
+    assert x == 1
+    return n
+pairs = [(A, B) for A in collections for B in collections if A.isdisjoint(B)]
+assert all(I(A | B) == I(A) + I(B) for A, B in pairs)
+assert all(datum(A | B) == datum(A) * datum(B) for A, B in pairs)
+assert all(I(A) == F_on_realized(datum(A)) for A in collections)
+assert I(frozenset()) == 0 and datum(frozenset()) == 1
+assert F_on_realized(2) == 1  # nondegenerate, nonnegative fixed-function readout
+print("record_monoid_countermodel: PASS")
+
+# Exact partially-defined additive interface on D={2''^a 3''^b : a,b in Q}.
+# Represent each datum by its unique exponent pair (a,b); composition is addition.
+def compose(p, q): return (p[0] + q[0], p[1] + q[1])
+def H(p): return p[1]
+samples = [
+    (Fraction(0), Fraction(0)),
+    (Fraction(1), Fraction(0)),
+    (Fraction(0), Fraction(1)),
+    (Fraction(2), Fraction(0)),
+    (Fraction(-1), Fraction(1)),
+]
+assert all(H(compose(p, q)) == H(p) + H(q) for p in samples for q in samples)
+# H(2)=0 and H(3)=1, so H cannot equal s log(x) for one real slope s.
+assert H((Fraction(1), Fraction(0))) == 0
+assert H((Fraction(0), Fraction(1))) == 1
+# It is non-monotone on ordinary positive values: 3 < 4 but H(3)=1 > H(4)=0.
+assert 3 < 4 and H((Fraction(0), Fraction(1))) > H((Fraction(2), Fraction(0)))
+print("partial_nonmonotone_interface_countermodel: PASS")
+
+# Exact finite-dimensional shadow of the Cauchy/Hamel issue: two additive Q-linear
+# maps agree at one nonzero point but differ elsewhere.
+def A(p): return p[0]
+def B(p): return p[0] + p[1]
+assert A((Fraction(1), Fraction(0))) == B((Fraction(1), Fraction(0)))
+assert A((Fraction(0), Fraction(1))) != B((Fraction(0), Fraction(1)))
+assert all(A(compose(p, q)) == A(p) + A(q) for p in samples for q in samples)
+assert all(B(compose(p, q)) == B(p) + B(q) for p in samples for q in samples)
+print("one_point_does_not_pin_general_additive_map: PASS")
+
+# The full-group nonnegative lemma itself is sound once universal inverse closure
+# is actually supplied: f(x)+f(x''^-1)=f(1)=0 and both summands are >=0.
+for fx in range(5):
+    for finv in range(5):
+        if fx + finv == 0:
+            assert fx == finv == 0
+print("full_inverse_closed_nonnegative_lemma: PASS")
+PY' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+record_monoid_countermodel: PASS
+partial_nonmonotone_interface_countermodel: PASS
+one_point_does_not_pin_general_additive_map: PASS
+full_inverse_closed_nonnegative_lemma: PASS
+
+2026-07-18T11:45:09.761875Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+VERDICT: 4 blocker(s), 4 major, 1 minor
+
+1. **BLOCKER — T1 does not follow from the Record axiom under R1–R2.** The note claims: “the fixed nonnegative function satisfies `F(x·y) = F(x) + F(y)`” and “The lift is exact.” The axiom quantifies over actual finite pairwise-disjoint record collections, not arbitrary `x,y ∈ (0,∞)`. R2 supplies neither simultaneous realizability of every `x,y` by disjoint collections nor inverse closure. The heredoc verified a countermodel: `I(A)=|A|`, datum `d(A)=2^|A|`, and `F(2^n)=n`. It is fixed, nonnegative, nondegenerate, Record-additive, and multiplicative in the datum on every disjoint pair. Narrowest fix: add an explicit record-to-datum premise with `d(A⊔B)=d(A)d(B)` and universal disjoint realizability of every `x,y>0`; alternatively restrict T1 to the realized datum monoid and require that monoid to be inverse-closed. The elementary full-group nonnegative lemma is sound; the axiom-to-group lift is not.
+
+2. **BLOCKER — T1 and T2 silently switch codomain/sign class.** T1 requires a “fixed nonnegative function,” while T2 declares the same physical readout nondegenerately to be `G(u)=s·u` on `u=log|det|`. If `u` ranges over all reals and `G≥0`, additivity gives `G(-u)=-G(u)`, forcing `G≡0`. If signed scalar readouts are allowed, T1’s exclusion fails—`F(x)=log x` is already a nondegenerate fixed solution of `F(xy)=F(x)+F(y)`. Narrowest fix: state explicitly that the raw and logarithmic cases use different admitted codomains, and remove the inference that one is forced from the exclusion of the other. If they must be one readout class, the central claim fails.
+
+3. **BLOCKER — “pinned up to one slope” lacks the theorem’s boundedness hypothesis.** R1 and R2 contain no assumption that additive `G` is bounded on any nondegenerate interval. Merely naming “the standard bounded-additive-function theorem” does not establish its premise. Without regularity, Cauchy-additive functions need not be linear and contain far more freedom than one slope. Runner T2c checks only a rational-homogeneity instance; T2d assumes two already-linear forms. Narrowest fix: add a hypothesis such as “`G:R→R` is total, additive, and bounded on an interval of positive length,” then conclude `G(u)=su`.
+
+4. **BLOCKER — “the only nondegenerate … interface” and “forced, not chosen” are not exhaustive.** Excluding one raw nonnegative presentation and exhibiting the log presentation does not classify all fixed-function data maps. The heredoc verified an exact partial/non-monotone escape on `D={2^a3^b:a,b∈Q}`: `H(2^a3^b)=b` is additive under multiplication, nondegenerate, non-monotone (`3<4` but `H(3)>H(4)`), and not `s log x` for any single slope. Total discontinuous Cauchy maps supply the analogous unregularized escape. Even where the scalar output is regular, internal data encodings need not be unique. Narrowest fix: replace the interface-uniqueness claim with: “For a total scalar homomorphism on all positive moduli satisfying the stated regularity, the resulting scalar readout has normal form `s log x`.” Leave partial domains, nonregular maps, and internal encodings unclassified.
+
+5. **MAJOR — the empty-collection anchor is illegitimately identified with a unit/trivial block.** The note says “the trivial block reading `log 1 = 0` matching `I(empty)=0`,” while the runner labels `F(1)=2F(1)` plus `log(1)=0` as an “empty-collection anchor.” The axiom only states `I(empty)=0`; it does not identify the empty collection with a determinant block of modulus one. Narrowest fix: delete the claimed identification and derive the unit value from universal two-block additivity, or add the explicit premise `d(empty)=1` and define the trivial block to be that empty collection.
+
+6. **MAJOR — the runner certificate does not test the load-bearing claims.** T1c checks the unrelated multiplicative equation `F(x)=F(x0)·F(x/x0)`, whereas T1 concerns scalar additivity `F(xy)=F(x)+F(y)`. T1d checks only `6≠5`; T2d proves uniqueness only after assuming both maps are linear; the needles verify prose presence, not the axiom-to-channel semantics. Thus `TOTAL: PASS=12 FAIL=0` cannot support “forced,” “only,” or “pinned.” Narrowest fix: describe the runner strictly as consistency checks, replace T1c with the actual inverse-closed additive argument, and include negative tests demonstrating that missing realizability, sign, and regularity assumptions are necessary.
+
+7. **MAJOR — the tail rewrite inherits the failed forcing claim.** T3 says “the interface FORM is no longer a free choice in that tail.” Until the domain, disjoint-realizability, sign, and boundedness premises are supplied, that rewrite is not established. Even after repair, only the scalar normal form—not the physical interface implementation—is constrained. Narrowest fix: retain the Record/log bridge as open, or rewrite T3 as explicitly conditional on all added premises and say only the scalar map is fixed up to slope.
+
+8. **MAJOR — the N1–N8 gate is incomplete.** N1 omits the decisive realized-monoid/inverse-closure route and partial or discontinuous data maps. N3 declares the empty anchor legitimate without supplying the identification. N5’s claimed scope does not name totality, inverse closure, sign switching, or boundedness. N7 answers “the sibling theorem pasted on” but not the actual semantic-lift countermodel. Consequently N2’s “one wall” accounting is premature. Narrowest fix: add these routes and premises to N1–N3, narrow N5, and make the finite-record countermodel the N7 steelman; the negative gate presently fails.
+
+9. **MINOR — two direct dependencies are YAML-only in the note body.** The frontmatter lists the parent characterization and registrability note, but their load-bearing prose references are only “the parent characterization” and “the registrability note,” without Markdown links. Narrowest fix: link both at first load-bearing use.
+
+The quoted sibling open-link sentence and the quoted Record-axiom sentence are faithful to files 3 and 4. The visible frontmatter dependency inventory is otherwise complete relative to the four permitted files. No files were written and no git commands were run.
+tokens used
+62,752
+VERDICT: 4 blocker(s), 4 major, 1 minor
+
+1. **BLOCKER — T1 does not follow from the Record axiom under R1–R2.** The note claims: “the fixed nonnegative function satisfies `F(x·y) = F(x) + F(y)`” and “The lift is exact.” The axiom quantifies over actual finite pairwise-disjoint record collections, not arbitrary `x,y ∈ (0,∞)`. R2 supplies neither simultaneous realizability of every `x,y` by disjoint collections nor inverse closure. The heredoc verified a countermodel: `I(A)=|A|`, datum `d(A)=2^|A|`, and `F(2^n)=n`. It is fixed, nonnegative, nondegenerate, Record-additive, and multiplicative in the datum on every disjoint pair. Narrowest fix: add an explicit record-to-datum premise with `d(A⊔B)=d(A)d(B)` and universal disjoint realizability of every `x,y>0`; alternatively restrict T1 to the realized datum monoid and require that monoid to be inverse-closed. The elementary full-group nonnegative lemma is sound; the axiom-to-group lift is not.
+
+2. **BLOCKER — T1 and T2 silently switch codomain/sign class.** T1 requires a “fixed nonnegative function,” while T2 declares the same physical readout nondegenerately to be `G(u)=s·u` on `u=log|det|`. If `u` ranges over all reals and `G≥0`, additivity gives `G(-u)=-G(u)`, forcing `G≡0`. If signed scalar readouts are allowed, T1’s exclusion fails—`F(x)=log x` is already a nondegenerate fixed solution of `F(xy)=F(x)+F(y)`. Narrowest fix: state explicitly that the raw and logarithmic cases use different admitted codomains, and remove the inference that one is forced from the exclusion of the other. If they must be one readout class, the central claim fails.
+
+3. **BLOCKER — “pinned up to one slope” lacks the theorem’s boundedness hypothesis.** R1 and R2 contain no assumption that additive `G` is bounded on any nondegenerate interval. Merely naming “the standard bounded-additive-function theorem” does not establish its premise. Without regularity, Cauchy-additive functions need not be linear and contain far more freedom than one slope. Runner T2c checks only a rational-homogeneity instance; T2d assumes two already-linear forms. Narrowest fix: add a hypothesis such as “`G:R→R` is total, additive, and bounded on an interval of positive length,” then conclude `G(u)=su`.
+
+4. **BLOCKER — “the only nondegenerate … interface” and “forced, not chosen” are not exhaustive.** Excluding one raw nonnegative presentation and exhibiting the log presentation does not classify all fixed-function data maps. The heredoc verified an exact partial/non-monotone escape on `D={2^a3^b:a,b∈Q}`: `H(2^a3^b)=b` is additive under multiplication, nondegenerate, non-monotone (`3<4` but `H(3)>H(4)`), and not `s log x` for any single slope. Total discontinuous Cauchy maps supply the analogous unregularized escape. Even where the scalar output is regular, internal data encodings need not be unique. Narrowest fix: replace the interface-uniqueness claim with: “For a total scalar homomorphism on all positive moduli satisfying the stated regularity, the resulting scalar readout has normal form `s log x`.” Leave partial domains, nonregular maps, and internal encodings unclassified.
+
+5. **MAJOR — the empty-collection anchor is illegitimately identified with a unit/trivial block.** The note says “the trivial block reading `log 1 = 0` matching `I(empty)=0`,” while the runner labels `F(1)=2F(1)` plus `log(1)=0` as an “empty-collection anchor.” The axiom only states `I(empty)=0`; it does not identify the empty collection with a determinant block of modulus one. Narrowest fix: delete the claimed identification and derive the unit value from universal two-block additivity, or add the explicit premise `d(empty)=1` and define the trivial block to be that empty collection.
+
+6. **MAJOR — the runner certificate does not test the load-bearing claims.** T1c checks the unrelated multiplicative equation `F(x)=F(x0)·F(x/x0)`, whereas T1 concerns scalar additivity `F(xy)=F(x)+F(y)`. T1d checks only `6≠5`; T2d proves uniqueness only after assuming both maps are linear; the needles verify prose presence, not the axiom-to-channel semantics. Thus `TOTAL: PASS=12 FAIL=0` cannot support “forced,” “only,” or “pinned.” Narrowest fix: describe the runner strictly as consistency checks, replace T1c with the actual inverse-closed additive argument, and include negative tests demonstrating that missing realizability, sign, and regularity assumptions are necessary.
+
+7. **MAJOR — the tail rewrite inherits the failed forcing claim.** T3 says “the interface FORM is no longer a free choice in that tail.” Until the domain, disjoint-realizability, sign, and boundedness premises are supplied, that rewrite is not established. Even after repair, only the scalar normal form—not the physical interface implementation—is constrained. Narrowest fix: retain the Record/log bridge as open, or rewrite T3 as explicitly conditional on all added premises and say only the scalar map is fixed up to slope.
+
+8. **MAJOR — the N1–N8 gate is incomplete.** N1 omits the decisive realized-monoid/inverse-closure route and partial or discontinuous data maps. N3 declares the empty anchor legitimate without supplying the identification. N5’s claimed scope does not name totality, inverse closure, sign switching, or boundedness. N7 answers “the sibling theorem pasted on” but not the actual semantic-lift countermodel. Consequently N2’s “one wall” accounting is premature. Narrowest fix: add these routes and premises to N1–N3, narrow N5, and make the finite-record countermodel the N7 steelman; the negative gate presently fails.
+
+9. **MINOR — two direct dependencies are YAML-only in the note body.** The frontmatter lists the parent characterization and registrability note, but their load-bearing prose references are only “the parent characterization” and “the registrability note,” without Markdown links. Narrowest fix: link both at first load-bearing use.
+
+The quoted sibling open-link sentence and the quoted Record-axiom sentence are faithful to files 3 and 4. The visible frontmatter dependency inventory is otherwise complete relative to the four permitted files. No files were written and no git commands were run.

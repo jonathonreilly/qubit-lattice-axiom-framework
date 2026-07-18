@@ -1,0 +1,1967 @@
+2026-07-18T01:21:37.558731Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f72d0-8c7d-7322-8395-58947abf39c8
+--------
+user
+READ-ONLY adversarial review lens (combined: algebra + overclaim + governance). No file writes, no git. Verdict = final message.
+Read exactly: (1) docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md (2) scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py (3) docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md (4) docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md
+Attack all three dimensions: (a) ALGEBRA — try to break T1's iff (a registering functional satisfying P-orb AND one odd-side property? a non-registering functional missing the properties? does the phase-functional resolution at fixed |z| hide anything?); verify both witnesses and the two forward routes yourself (python3 HEREDOC fine, no file writes). (b) OVERCLAIM — every "exactly", "iff", "reduces to one transported property", "necessary" vs what the runner certifies + the note carries; is T2 honestly a reduction (not a closure)? does anything overstate against the obligation's closure criterion or the no-go's live routes? (c) GOVERNANCE — status vocabulary, coined terms (assess "odd-side property", "transported property"), N1-N8 completeness for the two necessity negatives, frontmatter dependency completeness (should the three cited theta notes be upstream_dependencies?), verbatim-quote fidelity against files 3-4.
+Output: "VERDICT: <n> blocker(s), <m> major, <k> minor" + numbered findings with exact quotes and narrowest fixes; if clean, the three closest calls.
+
+codex
+I’ll perform the requested read-only adversarial audit on exactly those four files, including independent in-memory Python checks. I’ll report only the final verdict and findings—no edits or git operations.
+codex
+The request directly triggers the `audit-loop` skill; I’m using its adversarial claim-audit rubric, constrained by your stricter instruction to read only the four named repo files and make no writes or git calls.
+exec
+/bin/zsh -lc 'cat /Users/jonBridger/.codex/skills/audit-loop/SKILL.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+---
+name: audit-loop
+description: Run the cl3-lattice-framework audit lane as an adversarial Nature-grade claim auditor. Use when the user asks to audit scoped retained-grade science, process the audit backlog/queue, run an auditor loop, update audit results, apply audit verdicts, or push claim-audit outcomes directly to main.
+---
+
+# Audit Loop
+
+Use this skill to audit one claim at a time from the repository audit queue and land the audit result. The standard is hostile field review: the claim must survive an adversarial physicist looking for hidden imports, circular logic, definition-as-derivation, stale numerics, misidentified observables, and overstated closure.
+
+## Non-Negotiables
+
+- Audit; do not repair the science. If a claim fails, record a physicist-actionable failure handoff so someone else can fix it.
+- Work one claim per commit. This keeps audit verdicts reversible and reviewable.
+- Prefer a clean temporary worktree based on `origin/main`. Do not use a dirty shared checkout for audit commits.
+- Push routine audit commits directly to `main`. This project has authorized direct-main audit operation for ordinary `apply_audit.py`-accepted verdicts; do not open PRs for routine clean, conditional, renaming, decoration, numerical-match, or non-controversial failed verdicts.
+- Do not read broad publication framing while judging the claim. Use the source note, one-hop cited authorities, runner, runner output, and the audit rubric.
+- Preserve fresh-context integrity. Do not read prior audit rationales, previous audit entries, rendered `AUDIT_LEDGER.md` history, PR text, publication framing, or downstream summaries while judging a claim.
+- Do not grant `audited_clean` unless the derivation closes without hidden premises, unsupported physical identifications, circular dependency, or tuned comparator matching.
+- If the author family appears to be Codex and the current auditor is Codex, do not let the current context self-ratify a clean result. Restart the claim in a distinct restricted-input sub-agent when sub-agents are available, and record a clean result only as `independence: fresh_context` with a distinct `auditor` identity if `apply_audit.py` accepts it. If no sub-agent is available, skip clean application and report that a non-Codex, human, or fresh-context agent audit is required.
+- Do not stop after producing an audit JSON unless the user explicitly asks for a dry run, no-apply, or JSON-only result. If the user asks to "return JSON" as part of an audit-loop task, treat that as the required verdict format and still apply, verify, commit, and push the audit result according to this skill.
+
+## Setup For Each Session
+
+1. Fetch `origin/main`.
+2. Create or reuse a clean worktree based on `origin/main`.
+3. Run:
+
+```bash
+bash docs/audit/scripts/run_pipeline.sh
+python3 docs/audit/scripts/audit_lint.py --strict
+```
+
+The graph-cycle warning is currently expected. Treat any error as a blocker.
+
+## Clean-Context Guards
+
+- Do not run broad content searches over `docs/audit/data/audit_ledger.json`, `docs/audit/AUDIT_LEDGER.md`, or other audit-history files. Use exact `jq` field extraction for selected rows and dependencies.
+- When reading `audit_ledger.json`, extract only operational metadata such as `claim_id`, `note_path`, `runner_path`, statuses, `criticality`, `deps`, `note_hash`, and graph-degree fields. Do not print or inspect `verdict_rationale`, `chain_closure_explanation`, `previous_audits`, `audit_history`, or prior auditor notes.
+- File-name listing is allowed when needed, but do not search file contents in audit data/history to find alternate candidate sources or prior conclusions.
+- If fresh-context contamination occurs before a verdict is applied, discard the current context's judgment for that claim and restart the claim in a distinct restricted-input sub-agent when sub-agents are available. Do not pass the contamination, prior conclusion, or audit-history text to the sub-agent. If no sub-agent is available, stop before applying any audit and report the contamination.
+
+## Blocked-Row Loop Guard
+
+- If applying a verdict and rerunning the pipeline immediately invalidates that same row, returns it to the ready queue, or creates a dependency-status cycle that cannot be resolved by the audit verdict alone, do not keep retrying the row in the same audit loop.
+- Restore the pre-claim generated audit diff for that row, record a session-local blocked/skip entry with the claim id and the exact tooling reason, and continue with the next ready row.
+- Do not write an unsupported blocked verdict into the ledger unless `apply_audit.py` provides such a route. Report skipped blocked rows at the end of the loop and require upstream dependency/status repair before retrying them.
+
+## Long-Running Runner / Timeout Guard
+
+- A wall-time timeout, missing stdout, or noncompletion of a runner is not scientific evidence against the claim. Do not apply `audited_conditional`, `audited_failed`, or any other terminal non-clean verdict solely because the runner may need a long compute run.
+- If the load-bearing step cannot be judged without a long run and there is no completed log, cached certificate, sliced deterministic runner, or independent derivation in the restricted packet, record a session-local `compute_required` skip with the claim id, runner path, timeout/budget used, and the exact artifact needed; then continue with the next ready row.
+- Apply a non-clean verdict only when there is a substantive audit reason beyond wall-time noncompletion, such as a completed output mismatch, stale number, unsupported dependency, import/API failure, hard-coded contested premise, or an over-broad claim not supported by completed finite evidence.
+- If a prior audit row appears to have used timeout/noncompletion as the primary reason for a terminal verdict, do not treat that prior verdict as settled science. Queue it for policy repair or re-audit under this guard.
+- Do not blanket-reset older rows just because the rationale mentions a timeout. If the same rationale contains an independent blocker, re-audit the blocker under restricted inputs; if timeout/noncompletion is the primary or only reason, leave the row pending for compute or policy repair instead of citing it as non-clean science.
+
+## Legacy Claim-Type Re-Audits
+
+- `claim_type_backfill_reaudit` rows are migration cleanup under the PR291 regime. Audit the current scoped claim, not the old source-note status prose.
+- For critical rows with already confirmed legacy clean cross-confirmation whose summaries predate `claim_type`, a restricted-input re-audit may own the scoped `claim_type` and `claim_scope`; missing `claim_type` in the old summaries is not by itself a cross-confirmation disagreement.
+- If the new restricted-input audit changes the actual clean/non-clean verdict, or if `apply_audit.py` records a real cross-confirmation disagreement, follow the normal escalation path.
+
+## Pick The Next Claim
+
+If the user names a candidate file or other constrained selection source, that source is authoritative. After the pipeline, check the exact path exists. If it is absent, stop and report the missing file; do not search for substitutes or fall back to the default queue unless the user explicitly authorizes that fallback.
+
+Default selection is the highest-priority ready scoped claim:
+
+1. Read `docs/audit/data/audit_queue.json`.
+2. Pick the first row with `ready = true`, `audit_status` in `{unaudited, audit_in_progress}`, and `claim_type` in `{positive_theorem, bounded_theorem, no_go, open_gate}`.
+3. If the user explicitly says strict queue order, take the top queue row even if `claim_type` is unset.
+4. Exclude any claim id recorded in the current session's blocked/skip set by the Blocked-Row Loop Guard.
+5. If only `meta` or `decoration` rows remain, process them only when the user explicitly asks for those classes.
+
+Use this snippet when useful:
+
+```bash
+python3 - <<'PY'
+import json
+q=json.load(open("docs/audit/data/audit_queue.json"))["queue"]
+for e in q:
+    if e.get("ready") and e.get("claim_type") in {"positive_theorem","bounded_theorem","no_go","open_gate"}:
+        print(e["claim_id"], e["note_path"], e.get("runner_path") or "-")
+        break
+PY
+```
+
+## Context To Read
+
+For the selected claim, read only:
+
+- source note at `note_path`;
+- one-hop dependency notes listed in `docs/audit/data/audit_ledger.json` under `deps`;
+- the primary runner, if any;
+- current runner output, if the runner can be executed safely;
+- `docs/audit/README.md`, `FRESH_LOOK_REQUIREMENTS.md`, `AUDIT_AGENT_PROMPT_TEMPLATE.md`, and `ALGEBRAIC_DECORATION_POLICY.md`.
+
+When writing the verdict, also load `references/nature-grade-rubric.md` from this skill.
+
+Do not use `CLAIMS_TABLE.md`, `PUBLICATION_MATRIX.md`, `ARXIV_DRAFT.md`, or earlier review summaries to bias the verdict.
+
+## Audit Questions
+
+Answer these before choosing a verdict:
+
+- What exact sentence/equation is load-bearing?
+- Is the claimed observable the same observable being compared or derived?
+- Does the result follow from cited inputs, or is a symbol identity being introduced?
+- Are any physical carriers, unit maps, source laws, boundary conditions, sectors, normalizations, or readouts selected without a retained theorem?
+- Are dependencies unaudited, open gates, retained-pending-chain, stale, or themselves conditional?
+- Does the runner compute the hard bridge, or does it hard-code the contested premise and check consistency afterward?
+- Is this an independent theorem, or algebraic decoration of an upstream claim?
+- Are numerical values current with the runner and the source note?
+- Would a hostile specialist be able to reject the conclusion without making a mistake?
+
+## Verdict Rules
+
+Use the audit-lane verdict enum exactly:
+
+- `audited_clean`: derivation closes from the cited inputs; no hidden physical identification; runner checks the load-bearing step or the proof is purely exact algebra over independent retained inputs. Effective status is derived from ledger `claim_type` plus dependency closure, not source-note status prose. `support` is not a claim class, and old support prose neither grants nor blocks retained status after a clean audit.
+- `audited_conditional`: depends on an unaudited dependency, open gate, retained-pending-chain row, unratified physical bridge, or an explicit premise not closed by the cited authorities.
+- `audited_renaming`: the load-bearing step defines/renames the target quantity or identifies two concepts without derivation.
+- `audited_decoration`: exact algebraic corollary with no independent comparator, falsifiability, compression, or new physical content beyond an upstream parent.
+- `audited_numerical_match`: result depends on tuned/calibrated input or chosen scale/value rather than a structural theorem.
+- `audited_failed`: chain is wrong, stale relative to the runner, mismatches the observable, contradicts dependencies, or does not close on its own terms.
+
+When in doubt, choose the more conservative non-clean verdict.
+
+## Required Failure Handoff
+
+For any verdict other than `audited_clean`, make the ledger useful to the physicist who fixes the science. Put this structure inside `verdict_rationale` and keep `chain_closure_explanation` short but specific:
+
+```text
+Issue: <exact failed step, stale number, hidden premise, or observable mismatch>.
+Why this blocks: <why the conclusion cannot be claimed from current inputs>.
+Repair target: <specific theorem, derivation, runner computation, or dependency status needed>.
+Claim boundary until fixed: <what may still be safely said>.
+```
+
+For `audited_clean`, still explain why the load-bearing step closes and what residual risk remains.
+
+## Conditional Repair Surfacing
+
+For every `audited_conditional` result, make the next repair lane sortable.
+Prefix `notes_for_re_audit_if_any` with exactly one repair class:
+
+- `missing_dependency_edge`: a needed source note or authority exists or is
+  named, but is not wired as a direct dependency for the audited claim.
+- `dependency_not_retained`: a direct dependency exists but is not retained
+  grade.
+- `missing_bridge_theorem`: the claim needs a new theorem for a physical
+  carrier, readout, unit map, boundary condition, sector choice,
+  normalization, or observable bridge.
+- `scope_too_broad`: a clean bounded core exists, but the current claim scope
+  includes an unclosed extension.
+- `runner_artifact_issue`: a runner, log, classifier, threshold, import, or
+  pass/fail accounting problem blocks closure despite otherwise local scope.
+- `compute_required`: closure needs a completed long run, sliced runner,
+  cached certificate, or independent derivation.
+- `other`: use only when none of the above fits, and state why.
+
+After the class, name the cheapest next repair action, such as adding an
+explicit citation/dependency edge, auditing a named dependency first, creating
+an open bridge theorem, splitting the clean bounded core from the conditional
+extension, or repairing/slicing the runner. Do not repair during the audit
+unless the user explicitly asks for repair work.
+
+## Apply The Audit
+
+Create an audit JSON matching `docs/audit/scripts/apply_audit.py`. Returning this JSON to the user is not the end of the task unless they explicitly requested dry-run/no-apply behavior. Required metadata:
+
+- `claim_type`: one of `positive_theorem`, `bounded_theorem`, `no_go`, `open_gate`, `decoration`, `meta`.
+- `claim_scope`: a short citeable statement of exactly what was audited.
+- `auditor`: use a stable string such as `codex-audit-loop`.
+- `auditor_family`: use the actual family if known; otherwise use `codex-current`. Do not claim `codex-gpt-5.5` unless that is true for the session.
+- `independence`: use `cross_family` for non-Codex-authored claims, `weak` for same-family audits, `strong` for independent human review, `external` for off-project review.
+
+Apply it:
+
+```bash
+python3 docs/audit/scripts/apply_audit.py --file /tmp/audit-result.json
+bash docs/audit/scripts/run_pipeline.sh
+python3 docs/audit/scripts/audit_lint.py --strict
+git diff --check
+```
+
+For critical claims, the first clean audit records `audit_in_progress` and awaits cross-confirmation. That is expected.
+
+`apply_audit.py` is the gate. If it records a cross-confirmation disagreement, do not stop by default. Run a fresh judicial third auditor in the same loop using the restricted source packet plus the two prior audit arguments. Apply the judicial JSON through `apply_audit.py`; if the third auditor explicitly sides with the first or second audit, the script accepts the judgment, the pipeline refresh passes, `audit_lint.py --strict` passes, and `git diff --check` passes, treat the resolved judicial review as an ordinary landable audit result and continue the loop.
+
+Only stop for human review when the judicial auditor sides with neither, introduces a three-way disagreement, the tooling rejects the judgment, strict lint fails, or another hard-rule/exceptional routing case remains after the judicial review.
+
+If `apply_audit.py` accepts the JSON and `audit_lint.py --strict` passes after the pipeline refresh, land the audit by direct push to `main` for these routine cases:
+
+| Verdict / state | Audit-loop action |
+| --- | --- |
+| First or second `audited_clean` in the cross-confirmation flow | Direct push to `main` |
+| Cross-confirmation disagreement recorded before judicial review | Direct push only if immediately followed by an accepted judicial resolution in the same claim commit; otherwise stop for human review |
+| Judicial third-auditor review that confirms first or second verdict | Direct push to `main` |
+| `audited_conditional`, `audited_renaming`, `audited_decoration`, or `audited_numerical_match` | Direct push to `main` |
+| `audited_failed` on a non-controversial claim | Direct push to `main` |
+
+Open a PR and flag for human review only when there is an unresolved hard-rule conflict or exceptional routing case:
+
+| Exception | Audit-loop action |
+| --- | --- |
+| Judicial third auditor sides with neither, creates a three-way disagreement, or leaves the row blocked | Open PR; flag for human |
+| `apply_audit.py` rejects the verdict JSON or blocks on a hard rule | Open PR; flag for human |
+| `audit_lint.py --strict` fails after applying the verdict | Open PR; flag for human |
+
+## Commit And Push
+
+Review the diff. It should normally touch only:
+
+- `docs/audit/data/audit_ledger.json`;
+- `docs/audit/data/effective_status_summary.json`;
+- `docs/audit/data/audit_queue.json`;
+- `docs/audit/AUDIT_LEDGER.md`;
+- `docs/audit/AUDIT_QUEUE.md`;
+- possibly generated load-bearing/runner files if the pipeline refreshed them.
+
+Commit:
+
+```bash
+git add docs/audit
+git commit -m "audit: <claim-id> <verdict>"
+```
+
+Before pushing, fetch and confirm `origin/main` is still the parent or rebase cleanly and rerun the pipeline:
+
+```bash
+git fetch origin main
+git push origin HEAD:main
+```
+
+If the push is rejected, fetch/rebase onto `origin/main`, rerun pipeline/lint/diff-check, amend only if it is the same audit commit and no one else has consumed it, then push.
+
+## Loop Control
+
+After each successful direct-main push:
+
+1. Report the claim id, verdict, and one-sentence reason.
+2. If time and user intent allow, fetch `origin/main`, refresh the queue, exclude any session-local blocked/skip rows, and start the next claim.
+3. Stop if there is an ambiguous independence issue, source-note hash drift that cannot be resolved mechanically, or an audit requiring domain expertise beyond the provided authorities.
+
+For unresolved exception cases listed above, create a branch/PR instead of pushing to `main`, flag the reason for human review in the PR body, and stop the loop until the human decision lands. Do not stop merely because a third-auditor review occurred; stop only if the review remains unresolved or the tooling/verification gates fail.
+
+exec
+/bin/zsh -lc 'cat /Users/jonBridger/.codex/skills/audit-loop/references/nature-grade-rubric.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+# Nature-Grade Audit Rubric
+
+Use this rubric when writing an audit verdict for the CL3 audit lane.
+
+## Hostile Review Standard
+
+The claim should be able to survive a specialist referee who assumes the result is wrong and looks for:
+
+- hidden imported physics;
+- circular dependence on the target result;
+- definition-as-derivation;
+- selected observable/readout/carrier not forced by retained inputs;
+- unit normalization introduced as if it were a theorem;
+- sector selection chosen because it gives the answer;
+- stale numerical values relative to the runner;
+- matching the wrong observable;
+- runner PASS lines that check consistency after hard-coding the contested premise;
+- algebraic decoration advertised as independent physics.
+
+The burden is on the note. If the closure is not explicit, do not infer it.
+
+## Common P0/P1 Failure Modes
+
+### Physical-Observable Bridge Missing
+
+Symptoms: the note identifies two physical quantities, phases, currents, carriers, source laws, or readouts without a retained theorem constructing the map.
+
+Verdict usually: `audited_conditional` or `audited_renaming`.
+
+Repair target: a theorem deriving the map from retained primitives and a runner that constructs the map rather than setting the output.
+
+### Hard-Coded Runner
+
+Symptoms: runner sets the target value or disputed bridge directly, then marks closure because downstream algebra agrees.
+
+Verdict usually: same as the note's actual failure, often `audited_conditional`, `audited_renaming`, or `audited_failed`.
+
+Repair target: runner must compute the load-bearing object from inputs and fail when the bridge is removed.
+
+### Misidentified Observable
+
+Symptoms: note compares a framework quantity to a different experimental observable or relabels states/indices to get a match.
+
+Verdict usually: `audited_failed`.
+
+Repair target: state the correct observable and redo the prediction/comparator under standard labels.
+
+### Numerical Staleness
+
+Symptoms: headline number disagrees with the formula or current runner output.
+
+Verdict usually: `audited_failed` if the headline claim depends on it; otherwise `audited_conditional`.
+
+Repair target: update note and rerun; if the corrected value weakens the claim, demote accordingly.
+
+### Decoration / Corollary Inflation
+
+Symptoms: exact identity is true but is only an algebraic restatement of an upstream theorem and adds no new comparator, compression, or independent falsifiability.
+
+Verdict usually: `audited_decoration`.
+
+Repair target: box under parent claim or add a real independent physical/comparator surface.
+
+### Tuned Numerical Match
+
+Symptoms: a result works only after choosing a scale, sector, endpoint, source, or parameter because it matches the target.
+
+Verdict usually: `audited_numerical_match` or `audited_conditional`.
+
+Repair target: derive the selection rule independently or present the result as a calibrated scenario.
+
+## Failure Handoff Quality Bar
+
+A non-clean audit is useful only if a physicist can act on it. Include:
+
+- the exact failing step;
+- the reason it blocks the current claim;
+- the theorem/input/computation needed to fix it;
+- the safe reduced claim that remains.
+
+Do not write vague rationales such as "needs more work" or "not convincing." Name the missing theorem.
+
+2026-07-18T01:21:56.570675Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'cat "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+exec
+/bin/zsh -lc 'cat "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+exec
+/bin/zsh -lc 'cat "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+# Theta Quark-Determinant Cross-Sector Readout Derivation Obligation
+
+**Date:** 2026-07-11
+**Type:** open_gate
+**Premise weight:** none. This is an open derivation obligation, not an axiom,
+approved primitive, accepted premise, convention, or theorem.
+**Status authority:** independent audit lane only.
+
+## Exact target
+
+Derive from the retained framework chain whether the charged-lepton `K`/CPT
+occupancy carrier is the same physical channel that controls the quark-sector
+determinant readout, and whether that identification forces
+`arg det(M_q) = 0`.
+
+Charged-lepton statistical-grain closure alone does not establish this
+cross-sector identity. The two requirements must remain separate until a
+retained theorem derives the quark determinant carrier and its physical
+readout without importing the desired strong-CP phase.
+
+## Closure criterion
+
+A closing theorem must construct the quark mass/determinant carrier, identify
+the physical readout map, and prove the cross-sector correspondence to the
+charged-lepton `K`/CPT structure. Algebraic similarity, shared notation, and
+historical decision text are insufficient.
+
+Relevant route maps are context only:
+
+- `docs/THETA_MASS_SIDE_COMPOSITION_CLOSE_ON_SHARED_OCCUPANCY_BRIDGE_BOUNDED_NOTE_2026-07-03.md`
+- `docs/STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`
+
+Until such a theorem is independently audited and retained, every theta result
+that uses the cross-sector determinant identification remains conditional or
+pending-chain.
+
+## Running-program relation
+
+This obligation is self-liquidating. A retained theorem deriving the exact
+cross-sector determinant readout removes the obligation rather than converting
+it into a supplied premise.
+
+## Non-claims
+
+This note derives no theta value, quark mass, charged-lepton mass, occupancy
+grain, selector, mixing angle, or probability rule, and changes no audit
+verdict.
+
+ succeeded in 0ms:
+# Theta P2 K/CPT Determinant-Character Phase Erasure: Bounded Candidate Route
+
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
+
+**Date:** 2026-06-10 (split from
+`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
+so the strong-CP mass-orientation route stands on the theta surface alone,
+with no dependency on the `AC_phi_lambda` staggered gate) (2026-06-12: the
+determinant-readout bridge named open here is now cited from
+`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+and from the dedicated mass-determinant-channel bridge
+`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`;
+both are wired below as load-bearing dependencies)
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit outcome and does not edit the audit-lane-owned Tier-A registry.
+**Primary runner:** [`scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py`](../scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py)
+**Runner cache:** [`logs/runner-cache/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.txt`](../logs/runner-cache/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.txt)
+
+## Boundary
+
+This note proves one bounded fact:
+
+1. In a supplied determinant-class readout whose scalar readouts are the
+   standard continuous multiplicative determinant characters
+   `|z|^s exp(i k arg z)`, K/CPT invariance kills the determinant phase
+   character: `k = 0`.
+
+It does not discharge the strong-CP mass-orientation premise by itself,
+derive the strong-CP action-form premise, or change
+`docs/audit/data/premise_decision_history.json`. Those moves require later
+registry/audit handling and the determinant-readout bridge cited below, whose
+audit status is owned by the independent audit lane.
+
+## Determinant Readout Lemma
+
+The Record axiom supplies durable realized-outcome readout only after a
+readout context, finite central-sector decomposition, and fixed K/CPT
+conjugation are already supplied. It does not supply the determinant readout
+context.
+
+Given such a supplied determinant-class context, the standard multiplicative
+determinant character family has phase part
+
+```text
+chi_k(z) = exp(i k arg z).
+```
+
+K/CPT conjugation sends `z` to `conj(z)`, so `arg z` goes to `-arg z`.
+Requiring the character to be invariant under that conjugation gives
+
+```text
+exp(i k phi) = exp(-i k phi) for all phi,
+```
+
+hence `sin(k phi) = 0` for all `phi`, so `k = 0`. Therefore the invariant
+members of this determinant-character family are phase-free functions of
+`|det|`.
+
+The hostile guard is important: K/CPT orbit invariance alone gives evenness, not phase erasure.
+For example `cos(arg z)` is K-invariant and still depends on the phase. The
+phase-erasure conclusion applies only inside the supplied multiplicative
+determinant-character class.
+
+## The Determinant-Readout Bridge (cited dependency)
+
+This lemma is a candidate route for the mass-orientation part of the strong-CP
+surface, not a completed discharge by itself. To discharge that premise, a
+later retained bridge must show that the physical `arg det(M_u M_d)`
+contribution used by
+[`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) is exhausted by
+this determinant-class registrable readout, and that no phase-sensitive
+non-multiplicative or action-level datum remains relevant to that premise.
+The broad Record-registrability source theorem is cited here as the candidate
+bridge:
+[`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+(Consequence A there): a Record-registrable scalar readout is finitely
+additive over pairwise-disjoint records and constant on `K`/CPT orbits;
+additivity forces its per-sector phase functional to be odd, orbit-constancy
+forces it to be even, and odd-and-even forces it to vanish identically. Hence
+the registrable content of `arg det(M_u M_d)` is exhausted by the phase-free
+`k = 0` (modulus) class: phase-sensitive non-multiplicative functionals (for
+example `cos(arg z)`, this note's hostile guard) are excluded by additivity,
+cross-sector interference data are excluded by additivity, and the
+action-level bare-`theta` slot is strong-CP premise 1 — a separate
+action-surface premise tracked by the per-plaquette license route, not part of
+the mass-orientation premise.
+
+The dedicated mass-determinant-channel specialization is
+[`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md):
+under a supplied determinant-channel interface with independent-block
+determinant multiplication and K/CPT orbit registration, the only registered
+continuous determinant phase character is `k = 0`; K-even nonmultiplicative
+phase probes such as `cos(arg det)` are outside that determinant-channel block
+law.
+
+This wiring does not set `theta_gauge = 0`, does not derive the real-positive
+Wilson action surface, and does not eliminate action-level or gauge-theta
+residuals.
+
+What remains conditional, exactly as named in the bridge note: the standing
+modeling premise that the physical mass-surface readout context satisfies the
+Record registrability constraints remains an explicit condition of the
+strong-CP selected surface (the bridge removes phase freedom within the
+Record-registrable class; it does not prove the physical readout must be in
+that class), and the bridge note's audit status is owned by the independent
+audit lane and is not asserted here.
+
+## Registry Consequence
+
+The only supported consequence is a candidate route for future Tier-A
+registry review: the determinant lemma composed with the determinant-readout
+bridges cited above may help remove the positive-real mass-orientation
+condition of the strong-CP selected surface only after independent review/audit
+accepts the determinant-readout bridge surface being used; registry handling
+stays with the audit lane.
+
+No new axiom, primitive, admission, normalization, probability rule,
+comparator, or audit verdict is introduced here.
+
+## Dependencies
+
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) for the
+  narrow Record axiom boundary.
+- [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) for the
+  selected-surface strong-CP premise whose mass-orientation part is the
+  candidate target here.
+- [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+  for the determinant-readout bridge candidate (its Consequence A):
+  registrable readouts are additive plus `K`/CPT-orbit-constant, hence
+  phase-free, so the multiplicative determinant-character family exhausts the
+  registrable `arg det(M_u M_d)` content.
+- [`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
+  for the dedicated mass-determinant-channel bridge under independent-block
+  determinant multiplication and K/CPT orbit registration.
+
+The `AC_phi_lambda` orientation lemma that previously shared a note with
+this lemma remains in
+`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
+(context, not load-bearing here: this lemma uses nothing from the staggered
+gate surface).
+
+**No-promotion statement:** this note does not promote, demote, or set the
+audit status of any dependency. The independent audit lane is the only
+status authority.
+
+ succeeded in 0ms:
+---
+claim_id: theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17
+claim_type: bounded_theorem
+claim_scope: "Bridge-conditional property characterization on the supplied determinant-channel readout surface of the theta mass side: within the supplied class, the registered content of the determinant phase vanishes exactly when the channel is K/CPT orbit-constant and carries at least one odd-side property (finite additivity over pairwise-disjoint records, or the independent-block determinant homomorphism); each ingredient is individually necessary in its role, witnessed exactly (a nonzero-k multiplicative character keeps both odd-side properties and registers the phase; the K-even cosine probe keeps orbit constancy and registers the phase). Consequence, stated as a reduction and not a closure: under the cross-sector identification named by the open obligation, the forcing half reduces to one transported property — K/CPT orbit constancy on the quark determinant channel — with the odd side sector-local. No physical readout, exhaustion, carrier, or orientation is derived; the gauge-side theta and the invariant theta-bar combination are untouched; the obligation is not closed."
+upstream_dependencies:
+  - minimal_axioms
+runner: scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+---
+
+# Theta Cross-Sector Determinant Readout: Exact Characterization Of The Forcing Properties
+
+**Date:** 2026-07-17
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Scope:** bridge-conditional; every channel property below is a property of
+a supplied readout class, assumed, not adopted; no physical identification
+is made.
+**Audit-status authority:** independent audit lane only. This note sets no
+audit verdict and predicts none.
+**Primitive status:** no primitive is approved, registered, edited, or
+enlarged here.
+**Primary runner:**
+[`scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py`](../scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py)
+**Runner cache:**
+[`logs/runner-cache/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.txt`](../logs/runner-cache/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.txt)
+
+## Purpose
+
+The open derivation obligation
+[`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md)
+asks: "Derive from the retained framework chain whether the charged-lepton
+`K`/CPT occupancy carrier is the same physical channel that controls the
+quark-sector determinant readout, and whether that identification forces
+`arg det(M_q) = 0`."
+
+The landed mass-side surface erases the determinant phase by two routes,
+each inside a supplied class:
+[`THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`](THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md)
+(multiplicative character class: K/CPT invariance forces `k = 0`, with the
+hostile guard "K/CPT orbit invariance alone gives evenness, not phase
+erasure"),
+[`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+(its Consequence A: additivity forces the per-sector phase functional odd,
+orbit constancy forces it even, odd-and-even forces zero — summarized in
+its own verification line "homomorphism forces odd; even forces zero"), and
+[`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
+(the dedicated mass-determinant-channel bridge). What no landed note states
+is the exact division of labor: which of the named channel properties carry
+the forcing, which are individually necessary, and therefore what exactly
+the cross-sector identification must transport for the obligation's forcing
+half to go through. This note proves that characterization and nothing
+else. It does not construct a carrier, derive a physical readout, or close
+the obligation; the axiom-update route remains closed exactly as in
+[`THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md).
+
+## The Supplied Surface
+
+Per sector block, the supplied determinant channel carries a nonzero
+complex value `z` (the block determinant) and a scalar readout functional
+`r(z)`. Writing `z = |z| e^{i·arg z}`, the registered phase content of `r`
+is its dependence on `arg z` at fixed `|z|`, captured by a per-sector phase
+functional `h(arg z)`. Three channel properties are in play, each landed as
+part of a supplied class and none derived from the axioms:
+
+- **(P-add)** finite additivity of the scalar readout over pairwise-disjoint
+  records together with the conjugate-pair trivial-sector normalization
+  (the pair at `(φ, −φ)` composes to the trivial sector, whose phase
+  content is zero — both parts of the landed Record-registrability shape;
+  additivity alone does not give oddness, and the runner flags this
+  explicitly) — consequence: `h` is odd.
+- **(P-hom)** the independent-block determinant homomorphism
+  `det(M_1 ⊕ M_2) = det(M_1) det(M_2)` with the readout respecting block
+  composition — its named consequence: `h` is additive in the angle, hence
+  odd.
+- **(P-orb)** K/CPT orbit constancy: `z ↦ conj(z)` leaves the readout
+  unchanged — its named consequence: `h` is even.
+
+## Results
+
+**T1 (exact characterization).** Within the supplied surface, the
+registered content of `arg z` vanishes (`h ≡ 0`) **iff** (P-orb) holds
+together with at least one of (P-add), (P-hom).
+
+- *Forward.* Either odd-side property makes `h` odd — (P-add) via the
+  conjugate-pair normalization it carries, (P-hom) via exponent
+  additivity; (P-orb) makes `h` even; `h(φ) = −h(−φ) = −h(φ)` forces
+  `h ≡ 0`. This is the landed mechanism, re-derived formally in the
+  runner.
+- *(P-orb) is necessary.* The witness `r(z) = e^{i k · arg z}` with integer
+  `k ≠ 0` satisfies both odd-side properties — it is exactly the
+  multiplicative character with odd phase functional `k·arg z` — is not
+  orbit-constant, and registers the phase (`r` at `arg z = 0` and
+  `arg z = π/2` differ, exactly). So both odd-side properties together
+  force nothing without orbit constancy.
+- *The odd side is necessary.* The witness `r(z) = cos(arg z)` is
+  orbit-constant (even), satisfies neither odd-side property (it is not
+  odd: `cos(−φ) = cos(φ)`; not block-homomorphic:
+  `cos(π) = −1 ≠ 0 = cos(π/2)·cos(π/2)`, exactly), and registers the phase
+  (`cos 0 = 1 ≠ −1 = cos π`). This is the landed hostile guard, now placed
+  as the exact witness that (P-orb) alone forces nothing.
+- *Each odd-side property suffices alone.* Given (P-orb), either (P-add) or
+  (P-hom) individually completes the forcing (both routes are landed; the
+  runner re-derives each oddness consequence separately). Neither odd-side
+  property is needed once the other is present: the two erasure routes are
+  genuinely independent.
+
+**T2 (cross-sector reduction — a reduction, not a closure).** Under the
+identification named by the obligation — the charged-lepton `K`/CPT
+occupancy carrier and the quark determinant channel being one physical
+channel — the *forcing* half of the obligation reduces to exactly one
+transported property: **K/CPT orbit constancy on the quark determinant
+channel**. The odd side is sector-local: (P-add) is the Record-registrable
+shape of whatever scalar readout the quark channel uses, and (P-hom) is the
+block law the channel interface already states; either one, plus
+transported orbit constancy, forces `arg det(M_q) = 0` registered content
+by T1. What T1 does not and cannot supply is the identification itself: the
+quark determinant carrier construction, the physical readout map, and the
+physical-exhaustion statement (the no-go note's remaining live route 1)
+stay open, exactly per the obligation's closure criterion that "algebraic
+similarity, shared notation, and historical decision text are
+insufficient."
+
+**T3 (theta-bar honesty guard).** Everything above concerns the mass-side
+registered content only. The gauge-side slot and the invariant combination
+`theta_bar = theta_gauge + arg det(M_u M_d)` (the no-go note's live route
+3) are untouched: no gauge-side statement is made, and T1's conclusion is
+about the registered content of a supplied channel, not about the
+action-level bare slot (strong-CP premise 1, tracked separately).
+
+## No-Go Discipline Gate
+
+T1's necessity halves are bounded negatives ("without (P-orb) nothing
+forces"; "without the odd side nothing forces"), answered:
+
+- **N1 route inventory:** (1) strengthen the class to multiplicative
+  characters only — then (P-orb) alone gives `k = 0` (landed lemma); this
+  is the (P-hom)+(P-orb) cell of T1, ATTEMPTED and consistent; (2) demand
+  continuity/smoothness of `r` — both witnesses are smooth in `arg z`;
+  RULED OUT as a rescue; (3) demand `r` real-valued — `cos(arg z)` already
+  is; the `e^{ik arg}` witness has real-valued registering companions
+  (its real part is the cosine witness composed with the odd-side
+  failure), named; (4) restrict to `|z| = 1` — both witnesses live there;
+  (5) higher-arity block laws — (P-hom) at two blocks already suffices for
+  its oddness consequence; named untested beyond.
+- **N2 wall independence:** the two necessity statements concern disjoint
+  property sides and are witnessed by different functionals; neither
+  implies the other.
+- **N3 hidden-wall scan:** all properties are stated as supplied-class
+  properties; the phase functional's definition (dependence at fixed
+  `|z|`) is the same resolution the landed notes use.
+- **N4 residual matching:** the cited prior negatives are the landed
+  hostile guard (reused as the exact odd-side witness) and the axiom-update
+  no-go (respected; no axiom reading is used).
+- **N5 rhetoric audit:** "forces nothing" is not used; each necessity is
+  stated as "the remaining properties admit an exact registering witness".
+- **N6 partial-closure scan:** closure paths named — transport of (P-orb)
+  plus either sector-local odd-side property (T2); the no-go note's live
+  routes 1-3 remain the closure surface for the physical half.
+- **N7 steelman:** "the characterization is just the landed lemmas
+  relabeled." Reply: the landed notes prove two forward erasures inside
+  supplied classes; the necessity structure — that orbit constancy is the
+  single property whose transport the cross-sector identification must
+  deliver, and that the odd side is sector-local and two-way redundant —
+  appears in no landed note and is exactly what the obligation's forcing
+  half needs named.
+- **N8 cross-cycle echo:** the mechanism echoes the lane pattern of
+  boundary-by-witness (parent Born-lane blocks); the same discipline of
+  per-horn exact witnesses is applied here to the theta surface.
+
+## Non-Claims
+
+- Does **not** derive the physical quark determinant readout, its carrier,
+  or the physical-exhaustion bridge; does **not** close or weaken the
+  obligation, which remains open exactly as stated.
+- Does **not** identify the charged-lepton carrier with the quark channel;
+  T2 is conditional on that identification and reduces only its forcing
+  half.
+- Does **not** touch the gauge-side theta, the theta-bar combination, the
+  action-level bare slot, or the positive-orientation surface.
+- Does **not** read the axioms as supplying any channel property (the
+  axiom-update no-go is respected), and does **not** set an audit verdict;
+  independent audit remains required.
+
+## Verification
+
+The primary runner exactly checks the listed reductions and witnesses
+(sympy, exact arithmetic, single process): the odd-and-even elimination to
+zero; the oddness consequences of (P-add) and (P-hom) separately (formal
+eliminations); the block-determinant homomorphism on symbolic blocks; the
+`e^{ik arg}` witness (odd phase functional, homomorphic composition,
+orbit-constancy failure, exact phase registration); the cosine witness
+(evenness, both odd-side failures at exact angles, exact phase
+registration); the conjugation action `arg z ↦ −arg z`; and needle checks
+pinning the obligation's exact-target sentence, the hostile-guard sentence,
+the "homomorphism forces odd; even forces zero" line, and this note's
+claim identifier and property labels. Mutation checks (one load-bearing
+mutation per check family, reverted) are recorded in the review history
+and PR body.
+
+Measured runner total after final verification:
+`TOTAL: PASS=26 FAIL=0`.
+
+exec
+/bin/zsh -lc 'cat "scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+#!/usr/bin/env python3
+"""Exact checks for the theta forcing-property characterization note."""
+
+from pathlib import Path
+
+import sympy as sp
+
+
+ROOT = Path(__file__).resolve().parents[1]
+TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
+OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
+PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
+REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
+
+
+def normalized_whitespace(text):
+    return " ".join(text.split())
+
+
+class CheckRunner:
+    def __init__(self):
+        self.passed = 0
+        self.failed = 0
+
+    def check(self, label, condition):
+        try:
+            ok = bool(condition)
+        except (TypeError, ValueError):
+            ok = condition == sp.true
+        if ok:
+            self.passed += 1
+            print(f"PASS: {label}")
+        else:
+            self.failed += 1
+            print(f"FAIL: {label}")
+
+    def needle(self, label, path, needles):
+        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
+        if isinstance(needles, str):
+            needles = (needles,)
+        self.check(
+            label,
+            all(normalized_whitespace(needle) in haystack for needle in needles),
+        )
+
+    def finish(self):
+        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
+        return 0 if self.failed == 0 else 1
+
+
+def main():
+    checks = CheckRunner()
+    print(
+        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
+        "alone. They are checked only with the separately supplied "
+        "conjugation-pair/trivial-sector normalization."
+    )
+
+    # Group C -- conjugation and the phase functional.
+    radius = sp.symbols("r", positive=True, real=True)
+    phi = sp.symbols("phi", real=True)
+    z = radius * sp.exp(sp.I * phi)
+    checks.check(
+        "C1 symbolic conjugation reverses the phase",
+        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
+    )
+
+    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
+    checks.check(
+        "C1 principal-branch argument reversal at exact witnesses",
+        all(
+            sp.simplify(
+                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
+                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
+            )
+            == 0
+            for angle in principal_witnesses
+        ),
+    )
+
+    formal_value = sp.symbols("f")
+    checks.check(
+        "C2 formal odd-and-even elimination",
+        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
+    )
+
+    c1 = sp.symbols("c1")
+    odd_family = c1 * sp.sin(phi)
+    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
+    checks.check(
+        "C2 generic odd-family evenness forces its coefficient to zero",
+        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
+        and sp.solve(evenness_equation, c1) == [0],
+    )
+
+    # Group P -- the two named odd-side consequences.
+    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
+        "h_phi h_neg_phi h_sum h_trivial"
+    )
+    additive_elimination = sp.solve(
+        (
+            sp.Eq(h_sum, h_phi + h_neg_phi),
+            sp.Eq(h_sum, h_trivial),
+            sp.Eq(h_trivial, 0),
+        ),
+        (h_neg_phi, h_sum, h_trivial),
+        dict=True,
+    )
+    checks.check(
+        "P1 additivity plus conjugation-pair normalization implies oddness",
+        additive_elimination
+        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
+    )
+
+    phi1 = sp.pi / 6
+    phi2 = sp.pi / 3
+    z1 = sp.exp(sp.I * phi1)
+    z2 = sp.exp(sp.I * phi2)
+    checks.check(
+        "P2 principal-range argument is additive at exact witnesses",
+        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
+    )
+
+    k = sp.symbols("k", integer=True)
+    alpha, beta = sp.symbols("alpha beta", real=True)
+    checks.check(
+        "P2 character exponent is additive identically",
+        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
+    )
+
+    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
+    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
+    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
+    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
+    block_matrix = sp.diag(matrix_a, matrix_b)
+    checks.check(
+        "P2 symbolic two-by-two block determinant law",
+        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
+    )
+
+    # Group W -- exact registering witnesses and the silent control.
+    k_nonzero = sp.symbols("k_nz", integer=True, nonzero=True)
+    character_phase = k_nonzero * phi
+    checks.check(
+        "W1a nonzero-character phase functional is odd identically",
+        sp.expand(character_phase.subs(phi, -phi) + character_phase) == 0,
+    )
+
+    character_product = sp.exp(sp.I * k_nonzero * phi1) * sp.exp(
+        sp.I * k_nonzero * phi2
+    )
+    checks.check(
+        "W1a character composes multiplicatively at exact witnesses",
+        sp.simplify(
+            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
+        )
+        == 0,
+    )
+
+    orbit_value = sp.exp(sp.I * sp.pi / 2)
+    conjugate_orbit_value = sp.exp(-sp.I * sp.pi / 2)
+    checks.check(
+        "W1b k=1 character breaks orbit constancy",
+        orbit_value == sp.I
+        and conjugate_orbit_value == -sp.I
+        and orbit_value != conjugate_orbit_value,
+    )
+
+    checks.check(
+        "W1c k=1 character registers phase",
+        sp.exp(sp.I * 0) == 1
+        and sp.exp(sp.I * sp.pi / 2) == sp.I
+        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2),
+    )
+
+    cosine_probe = sp.cos(phi)
+    checks.check(
+        "W2a cosine is even identically",
+        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0,
+    )
+
+    checks.check(
+        "W2a cosine is not odd",
+        cosine_probe.subs(phi, 0) == 1
+        and -cosine_probe.subs(phi, 0) == -1
+        and cosine_probe.subs(phi, 0) != -cosine_probe.subs(phi, 0),
+    )
+
+    checks.check(
+        "W2b cosine breaks multiplicative homomorphism",
+        sp.cos(sp.pi) == -1
+        and sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2) == 0
+        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2),
+    )
+
+    cosine_pair_sum = cosine_probe.subs(phi, -phi) + cosine_probe
+    checks.check(
+        "W2c cosine breaks the additivity-oddness consequence",
+        sp.trigsimp(cosine_pair_sum - 2 * sp.cos(phi)) == 0
+        and cosine_pair_sum.subs(phi, 0) == 2
+        and cosine_pair_sum.subs(phi, 0) != 0,
+    )
+
+    checks.check(
+        "W2d cosine registers phase",
+        sp.cos(0) == 1 and sp.cos(sp.pi) == -1 and sp.cos(0) != sp.cos(sp.pi),
+    )
+
+    s = sp.symbols("s", real=True)
+    modulus_character = sp.Abs(z) ** s
+    conjugate_modulus_character = sp.Abs(sp.conjugate(z)) ** s
+    checks.check(
+        "W3 k=0 modulus character is orbit-constant and phase-silent",
+        sp.simplify(modulus_character - radius**s) == 0
+        and sp.simplify(conjugate_modulus_character - modulus_character) == 0
+        and sp.diff(modulus_character, phi) == 0
+        and sp.simplify(
+            modulus_character.subs(phi, 0)
+            - modulus_character.subs(phi, sp.pi / 2)
+        )
+        == 0,
+    )
+
+    # Group T -- assemble the two forward cells and the necessity witnesses.
+    forward_value, forward_negative = sp.symbols(
+        "forward_value forward_negative"
+    )
+    odd_even_solution = sp.solve(
+        (
+            sp.Eq(forward_negative, -forward_value),
+            sp.Eq(forward_negative, forward_value),
+        ),
+        (forward_value, forward_negative),
+        dict=True,
+    )
+    checks.check(
+        "T1 landed additive-plus-orbit mechanism re-derived",
+        odd_even_solution == [{forward_value: 0, forward_negative: 0}],
+    )
+
+    character_evenness_difference = sp.exp(sp.I * k * phi) - sp.exp(
+        -sp.I * k * phi
+    )
+    generic_k_candidates = sp.solve(sp.Eq(sp.sin(k * phi), 0), k)
+    phi_independent_candidates = [
+        candidate for candidate in generic_k_candidates if not candidate.has(phi)
+    ]
+    identity_coefficient = sp.diff(sp.sin(k * phi), phi).subs(phi, 0)
+    checks.check(
+        "T2 character-family evenness for all phases forces k=0",
+        sp.simplify(
+            character_evenness_difference - 2 * sp.I * sp.sin(k * phi)
+        )
+        == 0
+        and phi_independent_candidates == [0]
+        and identity_coefficient == k
+        and sp.solve(sp.Eq(identity_coefficient, 0), k) == [0],
+    )
+
+    w1_additive_odd_side = (
+        sp.expand(
+            k_nonzero * (alpha + beta)
+            - (k_nonzero * alpha + k_nonzero * beta)
+        )
+        == 0
+    )
+    w1_homomorphic_odd_side = (
+        sp.simplify(
+            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
+        )
+        == 0
+    )
+    w1_not_orbit_constant_and_registers = (
+        orbit_value != conjugate_orbit_value
+        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2)
+    )
+    w2_orbit_constant = (
+        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0
+    )
+    w2_neither_odd_side_and_registers = (
+        cosine_pair_sum.subs(phi, 0) != 0
+        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2)
+        and sp.cos(0) != sp.cos(sp.pi)
+    )
+    checks.check(
+        "T3 characterization corollary: W1 supplies both odd sides without "
+        "orbit constancy; W2 supplies orbit constancy without either odd side",
+        w1_additive_odd_side
+        and w1_homomorphic_odd_side
+        and w1_not_orbit_constant_and_registers
+        and w2_orbit_constant
+        and w2_neither_odd_side_and_registers,
+    )
+
+    # Group N -- normalized-whitespace source needles.  The Verification
+    # __TOTAL__ placeholder is deliberately neither parsed nor matched.
+    checks.needle(
+        "N1 obligation exact-target needle",
+        OBLIGATION,
+        "Derive from the retained framework chain whether the charged-lepton "
+        "`K`/CPT occupancy carrier is the same physical channel",
+    )
+    checks.needle(
+        "N2 obligation insufficiency needle",
+        OBLIGATION,
+        "similarity, shared notation, and historical decision text are insufficient",
+    )
+    checks.needle(
+        "N3 phase-erasure hostile-guard needle",
+        PHASE_ERASURE_NOTE,
+        "K/CPT orbit invariance alone gives evenness, not phase erasure",
+    )
+    checks.needle(
+        "N4 registrable-note mechanism needle",
+        REGISTRABLE_NOTE,
+        "homomorphism forces odd; even forces zero",
+    )
+    checks.needle(
+        "N5 characterization-note identifier, properties, and reduction needle",
+        TARGET_NOTE,
+        (
+            "theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17",
+            "**(P-add)**",
+            "**(P-hom)**",
+            "**(P-orb)**",
+            "one transported property",
+        ),
+    )
+
+    return checks.finish()
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+
+2026-07-18T01:22:06.148104Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+The first algebraic fault is substantive: T1’s written “iff” includes an unproved converse. A phase-silent radial functional can be orbit-constant while satisfying neither composition property. I’m now checking whether this is isolated wording or compounded by witness/phase-domain mismatches.
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import sympy as s
+
+phi, a, b, rho = s.symbols('phi a b rho', real=True, positive=True)
+v, vm = s.symbols('v vm')
+
+# Forward core: real/additive codomain, no 2-torsion.
+sol = s.solve((s.Eq(vm, -v), s.Eq(vm, v)), (v, vm), dict=True)
+assert sol == [{v: 0, vm: 0}]
+
+# P-add's stated oddness consequence, once pair normalization is assumed.
+hp, hm, hs, h0 = s.symbols('hp hm hs h0')
+add_sol = s.solve((s.Eq(hs, hp+hm), s.Eq(hs,h0), s.Eq(h0,0)), (hm,hs,h0), dict=True)
+assert add_sol == [{hm:-hp, hs:0, h0:0}]
+
+# W1, choosing k=1: homomorphic, registering, not orbit-constant.
+rchar = lambda x: s.exp(s.I*x)
+assert s.simplify(rchar(a+b)-rchar(a)*rchar(b)) == 0
+assert s.simplify(rchar(s.pi/2)-rchar(-s.pi/2)) "'!= 0
+assert s.simplify(rchar(0)-rchar(s.pi/2)) != 0
+# But it is not additive as a scalar readout under block/disjoint composition.
+assert rchar(0+0) != rchar(0)+rchar(0)
+
+# W2: orbit-constant, registering, neither odd nor multiplicative.
+rcos = s.cos
+assert s.simplify(rcos(-phi)-rcos(phi)) == 0
+assert rcos(0) != -rcos(0)
+assert rcos(0) != rcos(s.pi)
+assert rcos(s.pi) != rcos(s.pi/2)*rcos(s.pi/2)
+
+# Converse counterexample to the written iff: phase-silent radial readout.
+rrad = lambda radius: 1 + radius
+assert s.diff(rrad(rho), phi) == 0
+assert rrad(s.Integer(1)) == rrad(s.Integer(1))          # orbit-constant
+assert rrad(s.Integer(1)) != rrad(s.Integer(1))+rrad(s.Integer(1)) # not P-add
+assert rrad(s.Integer(1)) != rrad(s.Integer(1))*rrad(s.Integer(1)) # not P-hom
+
+# The note'"'s fixed pi/2 registration claim is false for all nonzero integer k.
+assert s.exp(s.I*4*0) == s.exp(s.I*4*s.pi/2)
+
+print('PASS independent forward/additive eliminations')
+print('PASS W1(k=1) and W2 witness cores')
+print('FAIL W1 as scalar P-add witness')
+print('COUNTEREXAMPLE T1 converse: r(z)=1+|z|')
+print('COUNTEREXAMPLE fixed-angle claim: k=4 gives r(0)=r(pi/2)=1')
+PY" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+2026-07-18T01:24:47.946657Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 164ms:
+PASS independent forward/additive eliminations
+PASS W1(k=1) and W2 witness cores
+FAIL W1 as scalar P-add witness
+COUNTEREXAMPLE T1 converse: r(z)=1+|z|
+COUNTEREXAMPLE fixed-angle claim: k=4 gives r(0)=r(pi/2)=1
+
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import sympy as s
+x = 3*s.pi/4
+y = 3*s.pi/4
+lhs = s.arg(s.exp(s.I*(x+y)))
+rhs = s.arg(s.exp(s.I*x)) + s.arg(s.exp(s.I*y))
+print('principal arg(product)=', lhs)
+print('principal arg(z1)+arg(z2)=', rhs)
+assert lhs == -s.pi/2 and rhs == 3*s.pi/2 and lhs "'!= rhs
+print('"'COUNTEREXAMPLE global real-angle additivity across branch cut')
+PY" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+2026-07-18T01:24:58.821355Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 114ms:
+exec
+/bin/zsh -lc 'nl -ba "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md" | sed -n "1,220p"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+exec
+/bin/zsh -lc 'nl -ba "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md" | sed -n "1,240p"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	# Theta P2 K/CPT Determinant-Character Phase Erasure: Bounded Candidate Route
+     2	
+     3	**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+     4	reference below is superseded historical context. It supplies no premise and
+     5	makes no dependency ready; the scientific conditions remain conditional/open.
+     6	
+     7	**Date:** 2026-06-10 (split from
+     8	`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
+     9	so the strong-CP mass-orientation route stands on the theta surface alone,
+    10	with no dependency on the `AC_phi_lambda` staggered gate) (2026-06-12: the
+    11	determinant-readout bridge named open here is now cited from
+    12	`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+    13	and from the dedicated mass-determinant-channel bridge
+    14	`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`;
+    15	both are wired below as load-bearing dependencies)
+    16	**Claim type:** bounded_theorem
+    17	**Status authority:** independent audit lane only. This source note does not
+    18	set or predict an audit outcome and does not edit the audit-lane-owned Tier-A registry.
+    19	**Primary runner:** [`scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py`](../scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py)
+    20	**Runner cache:** [`logs/runner-cache/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.txt`](../logs/runner-cache/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.txt)
+    21	
+    22	## Boundary
+    23	
+    24	This note proves one bounded fact:
+    25	
+    26	1. In a supplied determinant-class readout whose scalar readouts are the
+    27	   standard continuous multiplicative determinant characters
+    28	   `|z|^s exp(i k arg z)`, K/CPT invariance kills the determinant phase
+    29	   character: `k = 0`.
+    30	
+    31	It does not discharge the strong-CP mass-orientation premise by itself,
+    32	derive the strong-CP action-form premise, or change
+    33	`docs/audit/data/premise_decision_history.json`. Those moves require later
+    34	registry/audit handling and the determinant-readout bridge cited below, whose
+    35	audit status is owned by the independent audit lane.
+    36	
+    37	## Determinant Readout Lemma
+    38	
+    39	The Record axiom supplies durable realized-outcome readout only after a
+    40	readout context, finite central-sector decomposition, and fixed K/CPT
+    41	conjugation are already supplied. It does not supply the determinant readout
+    42	context.
+    43	
+    44	Given such a supplied determinant-class context, the standard multiplicative
+    45	determinant character family has phase part
+    46	
+    47	```text
+    48	chi_k(z) = exp(i k arg z).
+    49	```
+    50	
+    51	K/CPT conjugation sends `z` to `conj(z)`, so `arg z` goes to `-arg z`.
+    52	Requiring the character to be invariant under that conjugation gives
+    53	
+    54	```text
+    55	exp(i k phi) = exp(-i k phi) for all phi,
+    56	```
+    57	
+    58	hence `sin(k phi) = 0` for all `phi`, so `k = 0`. Therefore the invariant
+    59	members of this determinant-character family are phase-free functions of
+    60	`|det|`.
+    61	
+    62	The hostile guard is important: K/CPT orbit invariance alone gives evenness, not phase erasure.
+    63	For example `cos(arg z)` is K-invariant and still depends on the phase. The
+    64	phase-erasure conclusion applies only inside the supplied multiplicative
+    65	determinant-character class.
+    66	
+    67	## The Determinant-Readout Bridge (cited dependency)
+    68	
+    69	This lemma is a candidate route for the mass-orientation part of the strong-CP
+    70	surface, not a completed discharge by itself. To discharge that premise, a
+    71	later retained bridge must show that the physical `arg det(M_u M_d)`
+    72	contribution used by
+    73	[`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) is exhausted by
+    74	this determinant-class registrable readout, and that no phase-sensitive
+    75	non-multiplicative or action-level datum remains relevant to that premise.
+    76	The broad Record-registrability source theorem is cited here as the candidate
+    77	bridge:
+    78	[`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+    79	(Consequence A there): a Record-registrable scalar readout is finitely
+    80	additive over pairwise-disjoint records and constant on `K`/CPT orbits;
+    81	additivity forces its per-sector phase functional to be odd, orbit-constancy
+    82	forces it to be even, and odd-and-even forces it to vanish identically. Hence
+    83	the registrable content of `arg det(M_u M_d)` is exhausted by the phase-free
+    84	`k = 0` (modulus) class: phase-sensitive non-multiplicative functionals (for
+    85	example `cos(arg z)`, this note's hostile guard) are excluded by additivity,
+    86	cross-sector interference data are excluded by additivity, and the
+    87	action-level bare-`theta` slot is strong-CP premise 1 — a separate
+    88	action-surface premise tracked by the per-plaquette license route, not part of
+    89	the mass-orientation premise.
+    90	
+    91	The dedicated mass-determinant-channel specialization is
+    92	[`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md):
+    93	under a supplied determinant-channel interface with independent-block
+    94	determinant multiplication and K/CPT orbit registration, the only registered
+    95	continuous determinant phase character is `k = 0`; K-even nonmultiplicative
+    96	phase probes such as `cos(arg det)` are outside that determinant-channel block
+    97	law.
+    98	
+    99	This wiring does not set `theta_gauge = 0`, does not derive the real-positive
+   100	Wilson action surface, and does not eliminate action-level or gauge-theta
+   101	residuals.
+   102	
+   103	What remains conditional, exactly as named in the bridge note: the standing
+   104	modeling premise that the physical mass-surface readout context satisfies the
+   105	Record registrability constraints remains an explicit condition of the
+   106	strong-CP selected surface (the bridge removes phase freedom within the
+   107	Record-registrable class; it does not prove the physical readout must be in
+   108	that class), and the bridge note's audit status is owned by the independent
+   109	audit lane and is not asserted here.
+   110	
+   111	## Registry Consequence
+   112	
+   113	The only supported consequence is a candidate route for future Tier-A
+   114	registry review: the determinant lemma composed with the determinant-readout
+   115	bridges cited above may help remove the positive-real mass-orientation
+   116	condition of the strong-CP selected surface only after independent review/audit
+   117	accepts the determinant-readout bridge surface being used; registry handling
+   118	stays with the audit lane.
+   119	
+   120	No new axiom, primitive, admission, normalization, probability rule,
+   121	comparator, or audit verdict is introduced here.
+   122	
+   123	## Dependencies
+   124	
+   125	- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) for the
+   126	  narrow Record axiom boundary.
+   127	- [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) for the
+   128	  selected-surface strong-CP premise whose mass-orientation part is the
+   129	  candidate target here.
+   130	- [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+   131	  for the determinant-readout bridge candidate (its Consequence A):
+   132	  registrable readouts are additive plus `K`/CPT-orbit-constant, hence
+   133	  phase-free, so the multiplicative determinant-character family exhausts the
+   134	  registrable `arg det(M_u M_d)` content.
+   135	- [`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
+   136	  for the dedicated mass-determinant-channel bridge under independent-block
+   137	  determinant multiplication and K/CPT orbit registration.
+   138	
+   139	The `AC_phi_lambda` orientation lemma that previously shared a note with
+   140	this lemma remains in
+   141	`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
+   142	(context, not load-bearing here: this lemma uses nothing from the staggered
+   143	gate surface).
+   144	
+   145	**No-promotion statement:** this note does not promote, demote, or set the
+   146	audit status of any dependency. The independent audit lane is the only
+   147	status authority.
+
+ succeeded in 0ms:
+     1	---
+     2	claim_id: theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional property characterization on the supplied determinant-channel readout surface of the theta mass side: within the supplied class, the registered content of the determinant phase vanishes exactly when the channel is K/CPT orbit-constant and carries at least one odd-side property (finite additivity over pairwise-disjoint records, or the independent-block determinant homomorphism); each ingredient is individually necessary in its role, witnessed exactly (a nonzero-k multiplicative character keeps both odd-side properties and registers the phase; the K-even cosine probe keeps orbit constancy and registers the phase). Consequence, stated as a reduction and not a closure: under the cross-sector identification named by the open obligation, the forcing half reduces to one transported property — K/CPT orbit constancy on the quark determinant channel — with the odd side sector-local. No physical readout, exhaustion, carrier, or orientation is derived; the gauge-side theta and the invariant theta-bar combination are untouched; the obligation is not closed."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	runner: scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+     8	---
+     9	
+    10	# Theta Cross-Sector Determinant Readout: Exact Characterization Of The Forcing Properties
+    11	
+    12	**Date:** 2026-07-17
+    13	**Type:** bounded_theorem
+    14	**Claim type:** bounded_theorem
+    15	**Scope:** bridge-conditional; every channel property below is a property of
+    16	a supplied readout class, assumed, not adopted; no physical identification
+    17	is made.
+    18	**Audit-status authority:** independent audit lane only. This note sets no
+    19	audit verdict and predicts none.
+    20	**Primitive status:** no primitive is approved, registered, edited, or
+    21	enlarged here.
+    22	**Primary runner:**
+    23	[`scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py`](../scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py)
+    24	**Runner cache:**
+    25	[`logs/runner-cache/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.txt`](../logs/runner-cache/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.txt)
+    26	
+    27	## Purpose
+    28	
+    29	The open derivation obligation
+    30	[`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md)
+    31	asks: "Derive from the retained framework chain whether the charged-lepton
+    32	`K`/CPT occupancy carrier is the same physical channel that controls the
+    33	quark-sector determinant readout, and whether that identification forces
+    34	`arg det(M_q) = 0`."
+    35	
+    36	The landed mass-side surface erases the determinant phase by two routes,
+    37	each inside a supplied class:
+    38	[`THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`](THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md)
+    39	(multiplicative character class: K/CPT invariance forces `k = 0`, with the
+    40	hostile guard "K/CPT orbit invariance alone gives evenness, not phase
+    41	erasure"),
+    42	[`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+    43	(its Consequence A: additivity forces the per-sector phase functional odd,
+    44	orbit constancy forces it even, odd-and-even forces zero — summarized in
+    45	its own verification line "homomorphism forces odd; even forces zero"), and
+    46	[`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
+    47	(the dedicated mass-determinant-channel bridge). What no landed note states
+    48	is the exact division of labor: which of the named channel properties carry
+    49	the forcing, which are individually necessary, and therefore what exactly
+    50	the cross-sector identification must transport for the obligation's forcing
+    51	half to go through. This note proves that characterization and nothing
+    52	else. It does not construct a carrier, derive a physical readout, or close
+    53	the obligation; the axiom-update route remains closed exactly as in
+    54	[`THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md).
+    55	
+    56	## The Supplied Surface
+    57	
+    58	Per sector block, the supplied determinant channel carries a nonzero
+    59	complex value `z` (the block determinant) and a scalar readout functional
+    60	`r(z)`. Writing `z = |z| e^{i·arg z}`, the registered phase content of `r`
+    61	is its dependence on `arg z` at fixed `|z|`, captured by a per-sector phase
+    62	functional `h(arg z)`. Three channel properties are in play, each landed as
+    63	part of a supplied class and none derived from the axioms:
+    64	
+    65	- **(P-add)** finite additivity of the scalar readout over pairwise-disjoint
+    66	  records together with the conjugate-pair trivial-sector normalization
+    67	  (the pair at `(φ, −φ)` composes to the trivial sector, whose phase
+    68	  content is zero — both parts of the landed Record-registrability shape;
+    69	  additivity alone does not give oddness, and the runner flags this
+    70	  explicitly) — consequence: `h` is odd.
+    71	- **(P-hom)** the independent-block determinant homomorphism
+    72	  `det(M_1 ⊕ M_2) = det(M_1) det(M_2)` with the readout respecting block
+    73	  composition — its named consequence: `h` is additive in the angle, hence
+    74	  odd.
+    75	- **(P-orb)** K/CPT orbit constancy: `z ↦ conj(z)` leaves the readout
+    76	  unchanged — its named consequence: `h` is even.
+    77	
+    78	## Results
+    79	
+    80	**T1 (exact characterization).** Within the supplied surface, the
+    81	registered content of `arg z` vanishes (`h ≡ 0`) **iff** (P-orb) holds
+    82	together with at least one of (P-add), (P-hom).
+    83	
+    84	- *Forward.* Either odd-side property makes `h` odd — (P-add) via the
+    85	  conjugate-pair normalization it carries, (P-hom) via exponent
+    86	  additivity; (P-orb) makes `h` even; `h(φ) = −h(−φ) = −h(φ)` forces
+    87	  `h ≡ 0`. This is the landed mechanism, re-derived formally in the
+    88	  runner.
+    89	- *(P-orb) is necessary.* The witness `r(z) = e^{i k · arg z}` with integer
+    90	  `k ≠ 0` satisfies both odd-side properties — it is exactly the
+    91	  multiplicative character with odd phase functional `k·arg z` — is not
+    92	  orbit-constant, and registers the phase (`r` at `arg z = 0` and
+    93	  `arg z = π/2` differ, exactly). So both odd-side properties together
+    94	  force nothing without orbit constancy.
+    95	- *The odd side is necessary.* The witness `r(z) = cos(arg z)` is
+    96	  orbit-constant (even), satisfies neither odd-side property (it is not
+    97	  odd: `cos(−φ) = cos(φ)`; not block-homomorphic:
+    98	  `cos(π) = −1 ≠ 0 = cos(π/2)·cos(π/2)`, exactly), and registers the phase
+    99	  (`cos 0 = 1 ≠ −1 = cos π`). This is the landed hostile guard, now placed
+   100	  as the exact witness that (P-orb) alone forces nothing.
+   101	- *Each odd-side property suffices alone.* Given (P-orb), either (P-add) or
+   102	  (P-hom) individually completes the forcing (both routes are landed; the
+   103	  runner re-derives each oddness consequence separately). Neither odd-side
+   104	  property is needed once the other is present: the two erasure routes are
+   105	  genuinely independent.
+   106	
+   107	**T2 (cross-sector reduction — a reduction, not a closure).** Under the
+   108	identification named by the obligation — the charged-lepton `K`/CPT
+   109	occupancy carrier and the quark determinant channel being one physical
+   110	channel — the *forcing* half of the obligation reduces to exactly one
+   111	transported property: **K/CPT orbit constancy on the quark determinant
+   112	channel**. The odd side is sector-local: (P-add) is the Record-registrable
+   113	shape of whatever scalar readout the quark channel uses, and (P-hom) is the
+   114	block law the channel interface already states; either one, plus
+   115	transported orbit constancy, forces `arg det(M_q) = 0` registered content
+   116	by T1. What T1 does not and cannot supply is the identification itself: the
+   117	quark determinant carrier construction, the physical readout map, and the
+   118	physical-exhaustion statement (the no-go note's remaining live route 1)
+   119	stay open, exactly per the obligation's closure criterion that "algebraic
+   120	similarity, shared notation, and historical decision text are
+   121	insufficient."
+   122	
+   123	**T3 (theta-bar honesty guard).** Everything above concerns the mass-side
+   124	registered content only. The gauge-side slot and the invariant combination
+   125	`theta_bar = theta_gauge + arg det(M_u M_d)` (the no-go note's live route
+   126	3) are untouched: no gauge-side statement is made, and T1's conclusion is
+   127	about the registered content of a supplied channel, not about the
+   128	action-level bare slot (strong-CP premise 1, tracked separately).
+   129	
+   130	## No-Go Discipline Gate
+   131	
+   132	T1's necessity halves are bounded negatives ("without (P-orb) nothing
+   133	forces"; "without the odd side nothing forces"), answered:
+   134	
+   135	- **N1 route inventory:** (1) strengthen the class to multiplicative
+   136	  characters only — then (P-orb) alone gives `k = 0` (landed lemma); this
+   137	  is the (P-hom)+(P-orb) cell of T1, ATTEMPTED and consistent; (2) demand
+   138	  continuity/smoothness of `r` — both witnesses are smooth in `arg z`;
+   139	  RULED OUT as a rescue; (3) demand `r` real-valued — `cos(arg z)` already
+   140	  is; the `e^{ik arg}` witness has real-valued registering companions
+   141	  (its real part is the cosine witness composed with the odd-side
+   142	  failure), named; (4) restrict to `|z| = 1` — both witnesses live there;
+   143	  (5) higher-arity block laws — (P-hom) at two blocks already suffices for
+   144	  its oddness consequence; named untested beyond.
+   145	- **N2 wall independence:** the two necessity statements concern disjoint
+   146	  property sides and are witnessed by different functionals; neither
+   147	  implies the other.
+   148	- **N3 hidden-wall scan:** all properties are stated as supplied-class
+   149	  properties; the phase functional's definition (dependence at fixed
+   150	  `|z|`) is the same resolution the landed notes use.
+   151	- **N4 residual matching:** the cited prior negatives are the landed
+   152	  hostile guard (reused as the exact odd-side witness) and the axiom-update
+   153	  no-go (respected; no axiom reading is used).
+   154	- **N5 rhetoric audit:** "forces nothing" is not used; each necessity is
+   155	  stated as "the remaining properties admit an exact registering witness".
+   156	- **N6 partial-closure scan:** closure paths named — transport of (P-orb)
+   157	  plus either sector-local odd-side property (T2); the no-go note's live
+   158	  routes 1-3 remain the closure surface for the physical half.
+   159	- **N7 steelman:** "the characterization is just the landed lemmas
+   160	  relabeled." Reply: the landed notes prove two forward erasures inside
+   161	  supplied classes; the necessity structure — that orbit constancy is the
+   162	  single property whose transport the cross-sector identification must
+   163	  deliver, and that the odd side is sector-local and two-way redundant —
+   164	  appears in no landed note and is exactly what the obligation's forcing
+   165	  half needs named.
+   166	- **N8 cross-cycle echo:** the mechanism echoes the lane pattern of
+   167	  boundary-by-witness (parent Born-lane blocks); the same discipline of
+   168	  per-horn exact witnesses is applied here to the theta surface.
+   169	
+   170	## Non-Claims
+   171	
+   172	- Does **not** derive the physical quark determinant readout, its carrier,
+   173	  or the physical-exhaustion bridge; does **not** close or weaken the
+   174	  obligation, which remains open exactly as stated.
+   175	- Does **not** identify the charged-lepton carrier with the quark channel;
+   176	  T2 is conditional on that identification and reduces only its forcing
+   177	  half.
+   178	- Does **not** touch the gauge-side theta, the theta-bar combination, the
+   179	  action-level bare slot, or the positive-orientation surface.
+   180	- Does **not** read the axioms as supplying any channel property (the
+   181	  axiom-update no-go is respected), and does **not** set an audit verdict;
+   182	  independent audit remains required.
+   183	
+   184	## Verification
+   185	
+   186	The primary runner exactly checks the listed reductions and witnesses
+   187	(sympy, exact arithmetic, single process): the odd-and-even elimination to
+   188	zero; the oddness consequences of (P-add) and (P-hom) separately (formal
+   189	eliminations); the block-determinant homomorphism on symbolic blocks; the
+   190	`e^{ik arg}` witness (odd phase functional, homomorphic composition,
+   191	orbit-constancy failure, exact phase registration); the cosine witness
+   192	(evenness, both odd-side failures at exact angles, exact phase
+   193	registration); the conjugation action `arg z ↦ −arg z`; and needle checks
+   194	pinning the obligation's exact-target sentence, the hostile-guard sentence,
+   195	the "homomorphism forces odd; even forces zero" line, and this note's
+   196	claim identifier and property labels. Mutation checks (one load-bearing
+   197	mutation per check family, reverted) are recorded in the review history
+   198	and PR body.
+   199	
+   200	Measured runner total after final verification:
+   201	`TOTAL: PASS=26 FAIL=0`.
+
+exec
+/bin/zsh -lc 'nl -ba "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md" | sed -n "1,120p"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+exec
+/bin/zsh -lc 'nl -ba "scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py" | sed -n "1,360p"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	# Theta Quark-Determinant Cross-Sector Readout Derivation Obligation
+     2	
+     3	**Date:** 2026-07-11
+     4	**Type:** open_gate
+     5	**Premise weight:** none. This is an open derivation obligation, not an axiom,
+     6	approved primitive, accepted premise, convention, or theorem.
+     7	**Status authority:** independent audit lane only.
+     8	
+     9	## Exact target
+    10	
+    11	Derive from the retained framework chain whether the charged-lepton `K`/CPT
+    12	occupancy carrier is the same physical channel that controls the quark-sector
+    13	determinant readout, and whether that identification forces
+    14	`arg det(M_q) = 0`.
+    15	
+    16	Charged-lepton statistical-grain closure alone does not establish this
+    17	cross-sector identity. The two requirements must remain separate until a
+    18	retained theorem derives the quark determinant carrier and its physical
+    19	readout without importing the desired strong-CP phase.
+    20	
+    21	## Closure criterion
+    22	
+    23	A closing theorem must construct the quark mass/determinant carrier, identify
+    24	the physical readout map, and prove the cross-sector correspondence to the
+    25	charged-lepton `K`/CPT structure. Algebraic similarity, shared notation, and
+    26	historical decision text are insufficient.
+    27	
+    28	Relevant route maps are context only:
+    29	
+    30	- `docs/THETA_MASS_SIDE_COMPOSITION_CLOSE_ON_SHARED_OCCUPANCY_BRIDGE_BOUNDED_NOTE_2026-07-03.md`
+    31	- `docs/STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`
+    32	- `docs/THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`
+    33	
+    34	Until such a theorem is independently audited and retained, every theta result
+    35	that uses the cross-sector determinant identification remains conditional or
+    36	pending-chain.
+    37	
+    38	## Running-program relation
+    39	
+    40	This obligation is self-liquidating. A retained theorem deriving the exact
+    41	cross-sector determinant readout removes the obligation rather than converting
+    42	it into a supplied premise.
+    43	
+    44	## Non-claims
+    45	
+    46	This note derives no theta value, quark mass, charged-lepton mass, occupancy
+    47	grain, selector, mixing angle, or probability rule, and changes no audit
+    48	verdict.
+
+ succeeded in 0ms:
+     1	#!/usr/bin/env python3
+     2	"""Exact checks for the theta forcing-property characterization note."""
+     3	
+     4	from pathlib import Path
+     5	
+     6	import sympy as sp
+     7	
+     8	
+     9	ROOT = Path(__file__).resolve().parents[1]
+    10	TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
+    11	OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
+    12	PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
+    13	REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
+    14	
+    15	
+    16	def normalized_whitespace(text):
+    17	    return " ".join(text.split())
+    18	
+    19	
+    20	class CheckRunner:
+    21	    def __init__(self):
+    22	        self.passed = 0
+    23	        self.failed = 0
+    24	
+    25	    def check(self, label, condition):
+    26	        try:
+    27	            ok = bool(condition)
+    28	        except (TypeError, ValueError):
+    29	            ok = condition == sp.true
+    30	        if ok:
+    31	            self.passed += 1
+    32	            print(f"PASS: {label}")
+    33	        else:
+    34	            self.failed += 1
+    35	            print(f"FAIL: {label}")
+    36	
+    37	    def needle(self, label, path, needles):
+    38	        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
+    39	        if isinstance(needles, str):
+    40	            needles = (needles,)
+    41	        self.check(
+    42	            label,
+    43	            all(normalized_whitespace(needle) in haystack for needle in needles),
+    44	        )
+    45	
+    46	    def finish(self):
+    47	        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
+    48	        return 0 if self.failed == 0 else 1
+    49	
+    50	
+    51	def main():
+    52	    checks = CheckRunner()
+    53	    print(
+    54	        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
+    55	        "alone. They are checked only with the separately supplied "
+    56	        "conjugation-pair/trivial-sector normalization."
+    57	    )
+    58	
+    59	    # Group C -- conjugation and the phase functional.
+    60	    radius = sp.symbols("r", positive=True, real=True)
+    61	    phi = sp.symbols("phi", real=True)
+    62	    z = radius * sp.exp(sp.I * phi)
+    63	    checks.check(
+    64	        "C1 symbolic conjugation reverses the phase",
+    65	        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
+    66	    )
+    67	
+    68	    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
+    69	    checks.check(
+    70	        "C1 principal-branch argument reversal at exact witnesses",
+    71	        all(
+    72	            sp.simplify(
+    73	                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
+    74	                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
+    75	            )
+    76	            == 0
+    77	            for angle in principal_witnesses
+    78	        ),
+    79	    )
+    80	
+    81	    formal_value = sp.symbols("f")
+    82	    checks.check(
+    83	        "C2 formal odd-and-even elimination",
+    84	        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
+    85	    )
+    86	
+    87	    c1 = sp.symbols("c1")
+    88	    odd_family = c1 * sp.sin(phi)
+    89	    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
+    90	    checks.check(
+    91	        "C2 generic odd-family evenness forces its coefficient to zero",
+    92	        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
+    93	        and sp.solve(evenness_equation, c1) == [0],
+    94	    )
+    95	
+    96	    # Group P -- the two named odd-side consequences.
+    97	    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
+    98	        "h_phi h_neg_phi h_sum h_trivial"
+    99	    )
+   100	    additive_elimination = sp.solve(
+   101	        (
+   102	            sp.Eq(h_sum, h_phi + h_neg_phi),
+   103	            sp.Eq(h_sum, h_trivial),
+   104	            sp.Eq(h_trivial, 0),
+   105	        ),
+   106	        (h_neg_phi, h_sum, h_trivial),
+   107	        dict=True,
+   108	    )
+   109	    checks.check(
+   110	        "P1 additivity plus conjugation-pair normalization implies oddness",
+   111	        additive_elimination
+   112	        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
+   113	    )
+   114	
+   115	    phi1 = sp.pi / 6
+   116	    phi2 = sp.pi / 3
+   117	    z1 = sp.exp(sp.I * phi1)
+   118	    z2 = sp.exp(sp.I * phi2)
+   119	    checks.check(
+   120	        "P2 principal-range argument is additive at exact witnesses",
+   121	        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
+   122	    )
+   123	
+   124	    k = sp.symbols("k", integer=True)
+   125	    alpha, beta = sp.symbols("alpha beta", real=True)
+   126	    checks.check(
+   127	        "P2 character exponent is additive identically",
+   128	        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
+   129	    )
+   130	
+   131	    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
+   132	    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
+   133	    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
+   134	    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
+   135	    block_matrix = sp.diag(matrix_a, matrix_b)
+   136	    checks.check(
+   137	        "P2 symbolic two-by-two block determinant law",
+   138	        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
+   139	    )
+   140	
+   141	    # Group W -- exact registering witnesses and the silent control.
+   142	    k_nonzero = sp.symbols("k_nz", integer=True, nonzero=True)
+   143	    character_phase = k_nonzero * phi
+   144	    checks.check(
+   145	        "W1a nonzero-character phase functional is odd identically",
+   146	        sp.expand(character_phase.subs(phi, -phi) + character_phase) == 0,
+   147	    )
+   148	
+   149	    character_product = sp.exp(sp.I * k_nonzero * phi1) * sp.exp(
+   150	        sp.I * k_nonzero * phi2
+   151	    )
+   152	    checks.check(
+   153	        "W1a character composes multiplicatively at exact witnesses",
+   154	        sp.simplify(
+   155	            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
+   156	        )
+   157	        == 0,
+   158	    )
+   159	
+   160	    orbit_value = sp.exp(sp.I * sp.pi / 2)
+   161	    conjugate_orbit_value = sp.exp(-sp.I * sp.pi / 2)
+   162	    checks.check(
+   163	        "W1b k=1 character breaks orbit constancy",
+   164	        orbit_value == sp.I
+   165	        and conjugate_orbit_value == -sp.I
+   166	        and orbit_value != conjugate_orbit_value,
+   167	    )
+   168	
+   169	    checks.check(
+   170	        "W1c k=1 character registers phase",
+   171	        sp.exp(sp.I * 0) == 1
+   172	        and sp.exp(sp.I * sp.pi / 2) == sp.I
+   173	        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2),
+   174	    )
+   175	
+   176	    cosine_probe = sp.cos(phi)
+   177	    checks.check(
+   178	        "W2a cosine is even identically",
+   179	        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0,
+   180	    )
+   181	
+   182	    checks.check(
+   183	        "W2a cosine is not odd",
+   184	        cosine_probe.subs(phi, 0) == 1
+   185	        and -cosine_probe.subs(phi, 0) == -1
+   186	        and cosine_probe.subs(phi, 0) != -cosine_probe.subs(phi, 0),
+   187	    )
+   188	
+   189	    checks.check(
+   190	        "W2b cosine breaks multiplicative homomorphism",
+   191	        sp.cos(sp.pi) == -1
+   192	        and sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2) == 0
+   193	        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2),
+   194	    )
+   195	
+   196	    cosine_pair_sum = cosine_probe.subs(phi, -phi) + cosine_probe
+   197	    checks.check(
+   198	        "W2c cosine breaks the additivity-oddness consequence",
+   199	        sp.trigsimp(cosine_pair_sum - 2 * sp.cos(phi)) == 0
+   200	        and cosine_pair_sum.subs(phi, 0) == 2
+   201	        and cosine_pair_sum.subs(phi, 0) != 0,
+   202	    )
+   203	
+   204	    checks.check(
+   205	        "W2d cosine registers phase",
+   206	        sp.cos(0) == 1 and sp.cos(sp.pi) == -1 and sp.cos(0) != sp.cos(sp.pi),
+   207	    )
+   208	
+   209	    s = sp.symbols("s", real=True)
+   210	    modulus_character = sp.Abs(z) ** s
+   211	    conjugate_modulus_character = sp.Abs(sp.conjugate(z)) ** s
+   212	    checks.check(
+   213	        "W3 k=0 modulus character is orbit-constant and phase-silent",
+   214	        sp.simplify(modulus_character - radius**s) == 0
+   215	        and sp.simplify(conjugate_modulus_character - modulus_character) == 0
+   216	        and sp.diff(modulus_character, phi) == 0
+   217	        and sp.simplify(
+   218	            modulus_character.subs(phi, 0)
+   219	            - modulus_character.subs(phi, sp.pi / 2)
+   220	        )
+   221	        == 0,
+   222	    )
+   223	
+   224	    # Group T -- assemble the two forward cells and the necessity witnesses.
+   225	    forward_value, forward_negative = sp.symbols(
+   226	        "forward_value forward_negative"
+   227	    )
+   228	    odd_even_solution = sp.solve(
+   229	        (
+   230	            sp.Eq(forward_negative, -forward_value),
+   231	            sp.Eq(forward_negative, forward_value),
+   232	        ),
+   233	        (forward_value, forward_negative),
+   234	        dict=True,
+   235	    )
+   236	    checks.check(
+   237	        "T1 landed additive-plus-orbit mechanism re-derived",
+   238	        odd_even_solution == [{forward_value: 0, forward_negative: 0}],
+   239	    )
+   240	
+   241	    character_evenness_difference = sp.exp(sp.I * k * phi) - sp.exp(
+   242	        -sp.I * k * phi
+   243	    )
+   244	    generic_k_candidates = sp.solve(sp.Eq(sp.sin(k * phi), 0), k)
+   245	    phi_independent_candidates = [
+   246	        candidate for candidate in generic_k_candidates if not candidate.has(phi)
+   247	    ]
+   248	    identity_coefficient = sp.diff(sp.sin(k * phi), phi).subs(phi, 0)
+   249	    checks.check(
+   250	        "T2 character-family evenness for all phases forces k=0",
+   251	        sp.simplify(
+   252	            character_evenness_difference - 2 * sp.I * sp.sin(k * phi)
+   253	        )
+   254	        == 0
+   255	        and phi_independent_candidates == [0]
+   256	        and identity_coefficient == k
+   257	        and sp.solve(sp.Eq(identity_coefficient, 0), k) == [0],
+   258	    )
+   259	
+   260	    w1_additive_odd_side = (
+   261	        sp.expand(
+   262	            k_nonzero * (alpha + beta)
+   263	            - (k_nonzero * alpha + k_nonzero * beta)
+   264	        )
+   265	        == 0
+   266	    )
+   267	    w1_homomorphic_odd_side = (
+   268	        sp.simplify(
+   269	            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
+   270	        )
+   271	        == 0
+   272	    )
+   273	    w1_not_orbit_constant_and_registers = (
+   274	        orbit_value != conjugate_orbit_value
+   275	        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2)
+   276	    )
+   277	    w2_orbit_constant = (
+   278	        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0
+   279	    )
+   280	    w2_neither_odd_side_and_registers = (
+   281	        cosine_pair_sum.subs(phi, 0) != 0
+   282	        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2)
+   283	        and sp.cos(0) != sp.cos(sp.pi)
+   284	    )
+   285	    checks.check(
+   286	        "T3 characterization corollary: W1 supplies both odd sides without "
+   287	        "orbit constancy; W2 supplies orbit constancy without either odd side",
+   288	        w1_additive_odd_side
+   289	        and w1_homomorphic_odd_side
+   290	        and w1_not_orbit_constant_and_registers
+   291	        and w2_orbit_constant
+   292	        and w2_neither_odd_side_and_registers,
+   293	    )
+   294	
+   295	    # Group N -- normalized-whitespace source needles.  The Verification
+   296	    # __TOTAL__ placeholder is deliberately neither parsed nor matched.
+   297	    checks.needle(
+   298	        "N1 obligation exact-target needle",
+   299	        OBLIGATION,
+   300	        "Derive from the retained framework chain whether the charged-lepton "
+   301	        "`K`/CPT occupancy carrier is the same physical channel",
+   302	    )
+   303	    checks.needle(
+   304	        "N2 obligation insufficiency needle",
+   305	        OBLIGATION,
+   306	        "similarity, shared notation, and historical decision text are insufficient",
+   307	    )
+   308	    checks.needle(
+   309	        "N3 phase-erasure hostile-guard needle",
+   310	        PHASE_ERASURE_NOTE,
+   311	        "K/CPT orbit invariance alone gives evenness, not phase erasure",
+   312	    )
+   313	    checks.needle(
+   314	        "N4 registrable-note mechanism needle",
+   315	        REGISTRABLE_NOTE,
+   316	        "homomorphism forces odd; even forces zero",
+   317	    )
+   318	    checks.needle(
+   319	        "N5 characterization-note identifier, properties, and reduction needle",
+   320	        TARGET_NOTE,
+   321	        (
+   322	            "theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17",
+   323	            "**(P-add)**",
+   324	            "**(P-hom)**",
+   325	            "**(P-orb)**",
+   326	            "one transported property",
+   327	        ),
+   328	    )
+   329	
+   330	    return checks.finish()
+   331	
+   332	
+   333	if __name__ == "__main__":
+   334	    raise SystemExit(main())
+
+2026-07-18T01:25:06.924505Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+VERDICT: 1 blocker(s), 6 major, 2 minor
+
+Independent checks confirm both odd-plus-even forward eliminations and the core \(k=1\) and cosine witnesses. They do not support the advertised iff or several stronger governance claims.
+
+1. **BLOCKER — T1’s “iff” is false.** The note claims “registered content … vanishes (`h ≡ 0`) **iff** (P-orb) holds together with at least one of (P-add), (P-hom)” ([note:80](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:80>)). Only the property-to-vanishing direction is proved. For example, \(r(z)=1+|z|\) is phase-silent and orbit-constant but, under block multiplication, is neither additive nor multiplicative: at \(z_1=z_2=1\), \(r(z_1z_2)=2\), while both \(r(z_1)+r(z_2)\) and \(r(z_1)r(z_2)\) equal \(4\). The runner’s silent control checks only the specially chosen modulus character \(|z|^s\), not arbitrary silent functionals ([runner:209](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:209>)). **Narrowest fix:** replace “iff/exact characterization” with a one-way sufficient-forcing theorem plus irredundancy witnesses, including in `claim_scope`; alternatively add and prove a class axiom that makes the converse true.
+
+2. **MAJOR — the global phase functional is not well-defined tightly enough for the proof.** The note uses a single “`h(arg z)`” at fixed modulus and says P-hom makes it “additive in the angle” ([note:58](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:58>), [note:71](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:71>)). Principal argument is not globally additive: for \(\phi_1=\phi_2=3\pi/4\), \(\arg(e^{i(\phi_1+\phi_2)})=-\pi/2\), not \(3\pi/2\). Likewise, at \(z=-1\), principal `arg(conj(z))` is \(\pi\), not \(-\pi\). The runner samples only non-wrapping angles ([runner:68](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:68>), [runner:115](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:115>)). Block composition also changes \(|z|\), so a general readout requires \(h_\rho(\phi)\), not an unexplained radius-independent \(h(\phi)\). **Narrowest fix:** specify the phase domain, endpoint identification, torsion-free codomain, and radius dependence; then prove oddness uniformly and add wrap/branch-cut checks.
+
+3. **MAJOR — W1 does not satisfy P-add as P-add is defined, and route independence is unproved.** P-add is “finite additivity of the scalar readout” ([note:65](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:65>)), yet the note says \(e^{ik\arg z}\) “satisfies both odd-side properties” ([note:89](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:89>)). At zero angles, its composite scalar value is \(1\), whereas scalar additivity requires \(1+1=2\). The runner’s variable `w1_additive_odd_side` checks only \(k(\alpha+\beta)=k\alpha+k\beta\)—exponent additivity, effectively the P-hom route ([runner:260](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:260>)). Consequently, “the two erasure routes are genuinely independent” is also unsupported ([note:101](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:101>)). **Narrowest fix:** say W1 preserves P-hom only and call the routes separate sufficient proofs; retain “independent” only after providing witnesses separating P-add and P-hom.
+
+4. **MAJOR — T2 is conditional reduction bookkeeping, not an exact one-property reduction under the stated identification alone.** It says the forcing half “reduces to exactly one transported property” and treats the odd side as automatically sector-local ([note:107](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:107>)). But the obligation keeps carrier identity and physical readout separate ([obligation:16](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md:16>)), while the cited P2 note expressly says it does not prove that the physical readout belongs to the Record-registrable class ([P2 note:103](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md:103>)). Thus forcing still requires an explicit quark-side P-add/P-hom premise, in addition to transported orbit constancy; carrier identity does not itself transport a readout property. “Odd-side property” is acceptable local shorthand, but “transported property” currently conceals this bridge assumption. **Narrowest fix:** state “conditional on an independently supplied quark-side P-add or P-hom property, only P-orb needs cross-sector transport,” and define transport as an assumption rather than a consequence of identity.
+
+5. **MAJOR — “the runner exactly checks the listed reductions and witnesses” overstates its certificate.** That claim appears at [note:184](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:184>). The runner does not check the iff converse, scalar P-add for W1, P-add/P-hom independence, the cross-sector transport, physical-readout assumptions, no-go live routes, or dependency status. Its “one transported property” test is only a text needle ([runner:318](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:318>)). It also reads a fifth repo note at runtime ([runner:13](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:13>)), so I did not execute it under the exact-four-file restriction; the independent in-memory checks exposed the failures above. **Narrowest fix:** describe the certificate as checking the conditional odd/even eliminations, selected witness points, determinant identity, and source needles only.
+
+6. **MAJOR — frontmatter dependencies and status language are incomplete.** Frontmatter lists only `minimal_axioms` ([note:5](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:5>)), although the P2 character lemma, registrability theorem, and determinant-readout bridge are explicitly load-bearing sources ([note:36](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:36>)). Yes: all three should be `upstream_dependencies`. Calling their surface and routes “landed” risks status leakage because the supplied P2 source says its scientific conditions remain “conditional/open” ([P2 note:3](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md:3>)). **Narrowest fix:** wire the three mechanistic dependencies and replace bare “landed” with “cited/source-landed, with audit status inherited from the audit lane.” Treat the obligation and no-go as explicit contextual/governance edges if the schema supports them.
+
+7. **MAJOR — N1–N8 do not complete the two necessity negatives.** N5 says `"forces nothing" is not used` ([note:154](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:154>)), but that exact rhetoric occurs twice in T1 ([note:93](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:93>), [note:100](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:100>)). N1’s real-valued “companion” is cosine, which loses the odd-side property and therefore does not test the no-P-orb negative ([note:139](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:139>)). N3 misses the radius/branch walls above; N6 does not enumerate live route 2; N7’s “appears in no landed note” novelty claim is not certified; N8 is analogy, not horn coverage. **Narrowest fix:** use separate route tables for each negative, require every rescue witness to retain the other stated properties, repair N3/N5, enumerate route 2, and downgrade unverified novelty language.
+
+8. **MINOR — the nonzero-\(k\) witness has a false fixed-angle claim.** The note says for integer \(k\ne0\), values at \(0\) and \(\pi/2\) “differ, exactly” ([note:89](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:89>)). For \(k=4\), both equal \(1\). The runner silently specializes this check to \(k=1\) ([runner:160](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:160>)). **Narrowest fix:** choose \(k=1\) throughout or say a suitable phase distinguishes every nonzero \(k\).
+
+9. **MINOR — one purported verbatim quote is not verbatim.** The obligation’s exact-target quotation and P2 hostile-guard quotation are faithful. But T2 quotes lowercase `"algebraic similarity..."` ([note:119](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:119>)), whereas the source says `"Algebraic similarity..."` ([obligation:23](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md:23>)). The runner’s substring needle cannot detect this ([runner:303](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:303>)). **Narrowest fix:** preserve capitalization, use `[a]lgebraic`, or remove quotation marks.
+tokens used
+55,060
+VERDICT: 1 blocker(s), 6 major, 2 minor
+
+Independent checks confirm both odd-plus-even forward eliminations and the core \(k=1\) and cosine witnesses. They do not support the advertised iff or several stronger governance claims.
+
+1. **BLOCKER — T1’s “iff” is false.** The note claims “registered content … vanishes (`h ≡ 0`) **iff** (P-orb) holds together with at least one of (P-add), (P-hom)” ([note:80](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:80>)). Only the property-to-vanishing direction is proved. For example, \(r(z)=1+|z|\) is phase-silent and orbit-constant but, under block multiplication, is neither additive nor multiplicative: at \(z_1=z_2=1\), \(r(z_1z_2)=2\), while both \(r(z_1)+r(z_2)\) and \(r(z_1)r(z_2)\) equal \(4\). The runner’s silent control checks only the specially chosen modulus character \(|z|^s\), not arbitrary silent functionals ([runner:209](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:209>)). **Narrowest fix:** replace “iff/exact characterization” with a one-way sufficient-forcing theorem plus irredundancy witnesses, including in `claim_scope`; alternatively add and prove a class axiom that makes the converse true.
+
+2. **MAJOR — the global phase functional is not well-defined tightly enough for the proof.** The note uses a single “`h(arg z)`” at fixed modulus and says P-hom makes it “additive in the angle” ([note:58](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:58>), [note:71](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:71>)). Principal argument is not globally additive: for \(\phi_1=\phi_2=3\pi/4\), \(\arg(e^{i(\phi_1+\phi_2)})=-\pi/2\), not \(3\pi/2\). Likewise, at \(z=-1\), principal `arg(conj(z))` is \(\pi\), not \(-\pi\). The runner samples only non-wrapping angles ([runner:68](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:68>), [runner:115](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:115>)). Block composition also changes \(|z|\), so a general readout requires \(h_\rho(\phi)\), not an unexplained radius-independent \(h(\phi)\). **Narrowest fix:** specify the phase domain, endpoint identification, torsion-free codomain, and radius dependence; then prove oddness uniformly and add wrap/branch-cut checks.
+
+3. **MAJOR — W1 does not satisfy P-add as P-add is defined, and route independence is unproved.** P-add is “finite additivity of the scalar readout” ([note:65](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:65>)), yet the note says \(e^{ik\arg z}\) “satisfies both odd-side properties” ([note:89](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:89>)). At zero angles, its composite scalar value is \(1\), whereas scalar additivity requires \(1+1=2\). The runner’s variable `w1_additive_odd_side` checks only \(k(\alpha+\beta)=k\alpha+k\beta\)—exponent additivity, effectively the P-hom route ([runner:260](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:260>)). Consequently, “the two erasure routes are genuinely independent” is also unsupported ([note:101](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:101>)). **Narrowest fix:** say W1 preserves P-hom only and call the routes separate sufficient proofs; retain “independent” only after providing witnesses separating P-add and P-hom.
+
+4. **MAJOR — T2 is conditional reduction bookkeeping, not an exact one-property reduction under the stated identification alone.** It says the forcing half “reduces to exactly one transported property” and treats the odd side as automatically sector-local ([note:107](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:107>)). But the obligation keeps carrier identity and physical readout separate ([obligation:16](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md:16>)), while the cited P2 note expressly says it does not prove that the physical readout belongs to the Record-registrable class ([P2 note:103](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md:103>)). Thus forcing still requires an explicit quark-side P-add/P-hom premise, in addition to transported orbit constancy; carrier identity does not itself transport a readout property. “Odd-side property” is acceptable local shorthand, but “transported property” currently conceals this bridge assumption. **Narrowest fix:** state “conditional on an independently supplied quark-side P-add or P-hom property, only P-orb needs cross-sector transport,” and define transport as an assumption rather than a consequence of identity.
+
+5. **MAJOR — “the runner exactly checks the listed reductions and witnesses” overstates its certificate.** That claim appears at [note:184](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:184>). The runner does not check the iff converse, scalar P-add for W1, P-add/P-hom independence, the cross-sector transport, physical-readout assumptions, no-go live routes, or dependency status. Its “one transported property” test is only a text needle ([runner:318](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:318>)). It also reads a fifth repo note at runtime ([runner:13](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:13>)), so I did not execute it under the exact-four-file restriction; the independent in-memory checks exposed the failures above. **Narrowest fix:** describe the certificate as checking the conditional odd/even eliminations, selected witness points, determinant identity, and source needles only.
+
+6. **MAJOR — frontmatter dependencies and status language are incomplete.** Frontmatter lists only `minimal_axioms` ([note:5](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:5>)), although the P2 character lemma, registrability theorem, and determinant-readout bridge are explicitly load-bearing sources ([note:36](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:36>)). Yes: all three should be `upstream_dependencies`. Calling their surface and routes “landed” risks status leakage because the supplied P2 source says its scientific conditions remain “conditional/open” ([P2 note:3](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md:3>)). **Narrowest fix:** wire the three mechanistic dependencies and replace bare “landed” with “cited/source-landed, with audit status inherited from the audit lane.” Treat the obligation and no-go as explicit contextual/governance edges if the schema supports them.
+
+7. **MAJOR — N1–N8 do not complete the two necessity negatives.** N5 says `"forces nothing" is not used` ([note:154](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:154>)), but that exact rhetoric occurs twice in T1 ([note:93](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:93>), [note:100](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:100>)). N1’s real-valued “companion” is cosine, which loses the odd-side property and therefore does not test the no-P-orb negative ([note:139](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:139>)). N3 misses the radius/branch walls above; N6 does not enumerate live route 2; N7’s “appears in no landed note” novelty claim is not certified; N8 is analogy, not horn coverage. **Narrowest fix:** use separate route tables for each negative, require every rescue witness to retain the other stated properties, repair N3/N5, enumerate route 2, and downgrade unverified novelty language.
+
+8. **MINOR — the nonzero-\(k\) witness has a false fixed-angle claim.** The note says for integer \(k\ne0\), values at \(0\) and \(\pi/2\) “differ, exactly” ([note:89](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:89>)). For \(k=4\), both equal \(1\). The runner silently specializes this check to \(k=1\) ([runner:160](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:160>)). **Narrowest fix:** choose \(k=1\) throughout or say a suitable phase distinguishes every nonzero \(k\).
+
+9. **MINOR — one purported verbatim quote is not verbatim.** The obligation’s exact-target quotation and P2 hostile-guard quotation are faithful. But T2 quotes lowercase `"algebraic similarity..."` ([note:119](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md:119>)), whereas the source says `"Algebraic similarity..."` ([obligation:23](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md:23>)). The runner’s substring needle cannot detect this ([runner:303](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py:303>)). **Narrowest fix:** preserve capitalization, use `[a]lgebraic`, or remove quotation marks.

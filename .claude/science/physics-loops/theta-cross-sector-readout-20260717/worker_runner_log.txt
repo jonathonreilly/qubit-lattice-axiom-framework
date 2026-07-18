@@ -1,0 +1,3569 @@
+2026-07-18T01:14:10.680103Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f72c9-bac7-73d0-8b78-3d50d2576f17
+--------
+user
+# Worker Spec — Runner For The Theta Forcing-Property Characterization Note
+
+Bounded execution worker. One deliverable, no git, no other files, no audit
+status. python3 + sympy only, exact arithmetic, single process. Mirror the
+CheckRunner/print/needle style of
+`scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py`
+(read it first). The note's Verification total is the literal `__TOTAL__`
+placeholder — resolved by the supervisor after your run; do not parse or
+match it; do not edit the note. Target roughly 26 gates; no padding.
+
+## Deliverable
+`scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py`
+
+## Files you may read (exactly these)
+1. `docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md`
+2. `docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`
+3. `docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`
+4. `docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+5. `scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py`
+
+## Gate inventory
+
+### Group C — conjugation and phase functional
+- C1: for symbolic nonzero z = r*exp(I*phi) (r positive, phi real):
+  arg(conj(z)) = -arg(z) on the principal branch at exact witnesses
+  (phi in {0, pi/4, pi/2, 3*pi/4}); symbolic identity conj(r*exp(I*phi)) =
+  r*exp(-I*phi).
+- C2: odd-and-even elimination: solve [f = -f] -> f = 0 (formal); and a
+  function-level version: h(phi) := c1*sin(phi) (generic odd form on the
+  witness family) with evenness constraint h(phi) - h(-phi) = 0 forces
+  c1*sin(phi) = 0 at generic phi => c1 = 0 (solve-based).
+
+### Group P — the two odd-side consequences (formal eliminations)
+- P1 (additivity => odd): with symbols h1, h2, hsum for per-sector phase
+  functionals and the disjoint-record additivity equation
+  hsum = h1 + h2 together with the conjugation-pair normalization
+  h(phi) + h(-phi) = 0 DERIVED as: the two-sector value at (phi, -phi)
+  composes to the trivial sector, whose phase content is zero:
+  formal elimination h(phi) + h(-phi) = h_trivial = 0. Encode exactly as
+  the note states (oddness as the named consequence; do not overreach).
+- P2 (homomorphism => odd): the exponent-additivity of characters:
+  arg(z1*z2) = arg z1 + arg z2 mod 2pi at exact witnesses inside the
+  principal range; k*(phi1 + phi2) = k*phi1 + k*phi2 identically; and
+  det block law det(diag(A,B)) = det(A)*det(B) for symbolic 2x2 A, B.
+
+### Group W — the two witnesses
+- W1a: r(z) = exp(I*k*arg z), integer k != 0 symbol: phase functional
+  k*phi is odd identically; multiplicative composition at exact witnesses
+  (phi1 = pi/6, phi2 = pi/3: exp(I*k*(phi1+phi2)) = product).
+- W1b: W1 breaks orbit constancy: exp(I*k*phi) != exp(-I*k*phi) at
+  phi = pi/(2k)... use exact k-free witness: at phi = pi/2 the values
+  exp(I*k*pi/2) and exp(-I*k*pi/2) differ unless sin(k*pi/2) = 0; gate
+  with concrete k = 1 (values I vs -I, distinct exactly).
+- W1c: W1 registers the phase: values at phi = 0 and phi = pi/2 differ
+  (k = 1 witness: 1 vs I).
+- W2a: cos(phi) is even identically; not odd (cos(0) = 1 != -1 = -cos(0)).
+- W2b: cos breaks the homomorphism: cos(pi) = -1 != 0 =
+  cos(pi/2)*cos(pi/2) exactly.
+- W2c: cos breaks additivity-oddness: cos(-phi) + cos(phi) = 2*cos(phi)
+  != 0 at phi = 0 exactly.
+- W2d: cos registers: cos(0) = 1 != -1 = cos(pi).
+- W3 (control): the k = 0 character r(z) = |z|^s (s symbolic) is
+  orbit-constant, has zero phase functional, and does not register (values
+  at phi = 0 and pi/2 equal at fixed |z|) — the detector stays silent.
+
+### Group T — characterization assembly
+- T1: forward cell (P-add + P-orb): odd + even => zero (C2 route),
+  labeled as the landed mechanism re-derivation.
+- T2: forward cell (P-hom + P-orb): within the character family
+  exp(I*k*phi), evenness constraint exp(I*k*phi) = exp(-I*k*phi) for all
+  phi forces sin(k*phi) = 0 generically => k = 0 (solve at generic
+  symbolic phi with k integer symbol; mirror the landed lemma).
+- T3: necessity assembly (corollary logic gate): W1 gates witness that
+  both odd-side properties without orbit constancy register; W2 gates
+  witness that orbit constancy without either odd-side property registers;
+  print the conjunction as the characterization corollary.
+
+### Group N — needles (normalized whitespace; copy exact strings from files)
+- N1 (obligation): "Derive from the retained framework chain whether the
+  charged-lepton `K`/CPT occupancy carrier is the same physical channel"
+- N2 (obligation): "similarity, shared notation, and historical decision
+  text are insufficient"
+- N3 (phase-erasure note): "K/CPT orbit invariance alone gives evenness,
+  not phase erasure"
+- N4 (registrable note): "homomorphism forces odd; even forces zero"
+- N5 (this note): its claim_id; the labels "**(P-add)**", "**(P-hom)**",
+  "**(P-orb)**"; the phrase "one transported property".
+
+## Iteration protocol
+Write incrementally (C+P, run; W; T+N), never weaken a gate to vacuity,
+FLAG loudly if any specified gate is mathematically wrong, report the final
+TOTAL line, no cache file.
+
+codex
+I’ll mirror the specified runner exactly, implement it in the requested C+P → W → T+N increments, and run each stage with Python/SymPy. I’ll only read the five authorized files and won’t touch the note or git.
+exec
+/bin/zsh -lc "sed -n '1,260p' scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ exited 1 in 0ms:
+sed: scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py: No such file or directory
+
+2026-07-18T01:14:18.485702Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+The required style-reference path is absent in the supplied worktree, so I’m checking only the five named paths for presence before proceeding. I won’t substitute or inspect any unlisted file.
+exec
+/bin/zsh -lc "pwd
+for f in \\
+  docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md \\
+  docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md \\
+  docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md \\
+  docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md \\
+  scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py
+do
+  if test -f \""'$f"; then
+    echo "PRESENT $f"
+  else
+    echo "MISSING $f"
+  fi
+done' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+/Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+PRESENT docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md
+PRESENT docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md
+PRESENT docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md
+PRESENT docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md
+MISSING scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py
+
+exec
+/bin/zsh -lc "if test -f '/Users/jonBridger/Toy Physics/scripts/born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py'; then
+  echo PRESENT_ROOT_COPY
+else
+  echo MISSING_ROOT_COPY
+fi" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+MISSING_ROOT_COPY
+
+2026-07-18T01:14:40.033426Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "find '/Users/jonBridger/Toy Physics/.claude/worktrees' -type f -name 'born_form_menu_outcome_threshold_and_mixed_projective_forcing_2026_07_17.py' -print" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+2026-07-18T01:14:50.812344Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 6555ms:
+codex
+The reference runner is genuinely missing both here and in the repository’s other worktrees. I’m flagging that specification defect, but it does not make any mathematical gate impossible; I’ll continue with the named CheckRunner/print/needle contract using only the four available authorized notes.
+exec
+/bin/zsh -lc "wc -l \\
+  docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md \\
+  docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md \\
+  docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md \\
+  docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     196 docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md
+      48 docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md
+     147 docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md
+     438 docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md
+     829 total
+
+2026-07-18T01:15:04.216067Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "sed -n '1,240p' docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+---
+claim_id: theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17
+claim_type: bounded_theorem
+claim_scope: "Bridge-conditional property characterization on the supplied determinant-channel readout surface of the theta mass side: within the supplied class, the registered content of the determinant phase vanishes exactly when the channel is K/CPT orbit-constant and carries at least one odd-side property (finite additivity over pairwise-disjoint records, or the independent-block determinant homomorphism); each ingredient is individually necessary in its role, witnessed exactly (a nonzero-k multiplicative character keeps both odd-side properties and registers the phase; the K-even cosine probe keeps orbit constancy and registers the phase). Consequence, stated as a reduction and not a closure: under the cross-sector identification named by the open obligation, the forcing half reduces to one transported property — K/CPT orbit constancy on the quark determinant channel — with the odd side sector-local. No physical readout, exhaustion, carrier, or orientation is derived; the gauge-side theta and the invariant theta-bar combination are untouched; the obligation is not closed."
+upstream_dependencies:
+  - minimal_axioms
+runner: scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+---
+
+# Theta Cross-Sector Determinant Readout: Exact Characterization Of The Forcing Properties
+
+**Date:** 2026-07-17
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Scope:** bridge-conditional; every channel property below is a property of
+a supplied readout class, assumed, not adopted; no physical identification
+is made.
+**Audit-status authority:** independent audit lane only. This note sets no
+audit verdict and predicts none.
+**Primitive status:** no primitive is approved, registered, edited, or
+enlarged here.
+**Primary runner:**
+[`scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py`](../scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py)
+**Runner cache:**
+[`logs/runner-cache/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.txt`](../logs/runner-cache/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.txt)
+
+## Purpose
+
+The open derivation obligation
+[`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md)
+asks: "Derive from the retained framework chain whether the charged-lepton
+`K`/CPT occupancy carrier is the same physical channel that controls the
+quark-sector determinant readout, and whether that identification forces
+`arg det(M_q) = 0`."
+
+The landed mass-side surface erases the determinant phase by two routes,
+each inside a supplied class:
+[`THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`](THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md)
+(multiplicative character class: K/CPT invariance forces `k = 0`, with the
+hostile guard "K/CPT orbit invariance alone gives evenness, not phase
+erasure"),
+[`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+(its Consequence A: additivity forces the per-sector phase functional odd,
+orbit constancy forces it even, odd-and-even forces zero — summarized in
+its own verification line "homomorphism forces odd; even forces zero"), and
+[`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
+(the dedicated mass-determinant-channel bridge). What no landed note states
+is the exact division of labor: which of the named channel properties carry
+the forcing, which are individually necessary, and therefore what exactly
+the cross-sector identification must transport for the obligation's forcing
+half to go through. This note proves that characterization and nothing
+else. It does not construct a carrier, derive a physical readout, or close
+the obligation; the axiom-update route remains closed exactly as in
+[`THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md).
+
+## The Supplied Surface
+
+Per sector block, the supplied determinant channel carries a nonzero
+complex value `z` (the block determinant) and a scalar readout functional
+`r(z)`. Writing `z = |z| e^{i·arg z}`, the registered phase content of `r`
+is its dependence on `arg z` at fixed `|z|`, captured by a per-sector phase
+functional `h(arg z)`. Three channel properties are in play, each landed as
+part of a supplied class and none derived from the axioms:
+
+- **(P-add)** finite additivity of the scalar readout over pairwise-disjoint
+  records (the Record-registrability shape) — its named consequence: `h` is
+  odd.
+- **(P-hom)** the independent-block determinant homomorphism
+  `det(M_1 ⊕ M_2) = det(M_1) det(M_2)` with the readout respecting block
+  composition — its named consequence: `h` is additive in the angle, hence
+  odd.
+- **(P-orb)** K/CPT orbit constancy: `z ↦ conj(z)` leaves the readout
+  unchanged — its named consequence: `h` is even.
+
+## Results
+
+**T1 (exact characterization).** Within the supplied surface, the
+registered content of `arg z` vanishes (`h ≡ 0`) **iff** (P-orb) holds
+together with at least one of (P-add), (P-hom).
+
+- *Forward.* Either odd-side property makes `h` odd; (P-orb) makes `h`
+  even; `h(φ) = −h(−φ) = −h(φ)` forces `h ≡ 0`. This is the landed
+  mechanism, re-derived formally in the runner.
+- *(P-orb) is necessary.* The witness `r(z) = e^{i k · arg z}` with integer
+  `k ≠ 0` satisfies both odd-side properties — it is exactly the
+  multiplicative character with odd phase functional `k·arg z` — is not
+  orbit-constant, and registers the phase (`r` at `arg z = 0` and
+  `arg z = π/2` differ, exactly). So both odd-side properties together
+  force nothing without orbit constancy.
+- *The odd side is necessary.* The witness `r(z) = cos(arg z)` is
+  orbit-constant (even), satisfies neither odd-side property (it is not
+  odd: `cos(−φ) = cos(φ)`; not block-homomorphic:
+  `cos(π) = −1 ≠ 0 = cos(π/2)·cos(π/2)`, exactly), and registers the phase
+  (`cos 0 = 1 ≠ −1 = cos π`). This is the landed hostile guard, now placed
+  as the exact witness that (P-orb) alone forces nothing.
+- *Each odd-side property suffices alone.* Given (P-orb), either (P-add) or
+  (P-hom) individually completes the forcing (both routes are landed; the
+  runner re-derives each oddness consequence separately). Neither odd-side
+  property is needed once the other is present: the two erasure routes are
+  genuinely independent.
+
+**T2 (cross-sector reduction — a reduction, not a closure).** Under the
+identification named by the obligation — the charged-lepton `K`/CPT
+occupancy carrier and the quark determinant channel being one physical
+channel — the *forcing* half of the obligation reduces to exactly one
+transported property: **K/CPT orbit constancy on the quark determinant
+channel**. The odd side is sector-local: (P-add) is the Record-registrable
+shape of whatever scalar readout the quark channel uses, and (P-hom) is the
+block law the channel interface already states; either one, plus
+transported orbit constancy, forces `arg det(M_q) = 0` registered content
+by T1. What T1 does not and cannot supply is the identification itself: the
+quark determinant carrier construction, the physical readout map, and the
+physical-exhaustion statement (the no-go note's remaining live route 1)
+stay open, exactly per the obligation's closure criterion that "algebraic
+similarity, shared notation, and historical decision text are
+insufficient."
+
+**T3 (theta-bar honesty guard).** Everything above concerns the mass-side
+registered content only. The gauge-side slot and the invariant combination
+`theta_bar = theta_gauge + arg det(M_u M_d)` (the no-go note's live route
+3) are untouched: no gauge-side statement is made, and T1's conclusion is
+about the registered content of a supplied channel, not about the
+action-level bare slot (strong-CP premise 1, tracked separately).
+
+## No-Go Discipline Gate
+
+T1's necessity halves are bounded negatives ("without (P-orb) nothing
+forces"; "without the odd side nothing forces"), answered:
+
+- **N1 route inventory:** (1) strengthen the class to multiplicative
+  characters only — then (P-orb) alone gives `k = 0` (landed lemma); this
+  is the (P-hom)+(P-orb) cell of T1, ATTEMPTED and consistent; (2) demand
+  continuity/smoothness of `r` — both witnesses are smooth in `arg z`;
+  RULED OUT as a rescue; (3) demand `r` real-valued — `cos(arg z)` already
+  is; the `e^{ik arg}` witness has real-valued registering companions
+  (its real part is the cosine witness composed with the odd-side
+  failure), named; (4) restrict to `|z| = 1` — both witnesses live there;
+  (5) higher-arity block laws — (P-hom) at two blocks already suffices for
+  its oddness consequence; named untested beyond.
+- **N2 wall independence:** the two necessity statements concern disjoint
+  property sides and are witnessed by different functionals; neither
+  implies the other.
+- **N3 hidden-wall scan:** all properties are stated as supplied-class
+  properties; the phase functional's definition (dependence at fixed
+  `|z|`) is the same resolution the landed notes use.
+- **N4 residual matching:** the cited prior negatives are the landed
+  hostile guard (reused as the exact odd-side witness) and the axiom-update
+  no-go (respected; no axiom reading is used).
+- **N5 rhetoric audit:** "forces nothing" is not used; each necessity is
+  stated as "the remaining properties admit an exact registering witness".
+- **N6 partial-closure scan:** closure paths named — transport of (P-orb)
+  plus either sector-local odd-side property (T2); the no-go note's live
+  routes 1-3 remain the closure surface for the physical half.
+- **N7 steelman:** "the characterization is just the landed lemmas
+  relabeled." Reply: the landed notes prove two forward erasures inside
+  supplied classes; the necessity structure — that orbit constancy is the
+  single property whose transport the cross-sector identification must
+  deliver, and that the odd side is sector-local and two-way redundant —
+  appears in no landed note and is exactly what the obligation's forcing
+  half needs named.
+- **N8 cross-cycle echo:** the mechanism echoes the lane pattern of
+  boundary-by-witness (parent Born-lane blocks); the same discipline of
+  per-horn exact witnesses is applied here to the theta surface.
+
+## Non-Claims
+
+- Does **not** derive the physical quark determinant readout, its carrier,
+  or the physical-exhaustion bridge; does **not** close or weaken the
+  obligation, which remains open exactly as stated.
+- Does **not** identify the charged-lepton carrier with the quark channel;
+  T2 is conditional on that identification and reduces only its forcing
+  half.
+- Does **not** touch the gauge-side theta, the theta-bar combination, the
+  action-level bare slot, or the positive-orientation surface.
+- Does **not** read the axioms as supplying any channel property (the
+  axiom-update no-go is respected), and does **not** set an audit verdict;
+  independent audit remains required.
+
+## Verification
+
+The primary runner exactly checks the listed reductions and witnesses
+(sympy, exact arithmetic, single process): the odd-and-even elimination to
+zero; the oddness consequences of (P-add) and (P-hom) separately (formal
+eliminations); the block-determinant homomorphism on symbolic blocks; the
+`e^{ik arg}` witness (odd phase functional, homomorphic composition,
+orbit-constancy failure, exact phase registration); the cosine witness
+(evenness, both odd-side failures at exact angles, exact phase
+registration); the conjugation action `arg z ↦ −arg z`; and needle checks
+pinning the obligation's exact-target sentence, the hostile-guard sentence,
+the "homomorphism forces odd; even forces zero" line, and this note's
+claim identifier and property labels. Mutation checks (one load-bearing
+mutation per check family, reverted) are recorded in the review history
+and PR body.
+
+Measured runner total after final verification:
+`TOTAL: PASS=__TOTAL__ FAIL=0`.
+
+2026-07-18T01:15:08.066839Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "rg -n -C 2 'Derive from the retained framework chain whether the charged-lepton|similarity, shared notation, and historical decision text are insufficient' docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md
+rg -n -C 2 'K/CPT orbit invariance alone gives evenness, not phase erasure' docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md
+rg -n -C 2 'homomorphism forces odd; even forces zero' docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+9-## Exact target
+10-
+11:Derive from the retained framework chain whether the charged-lepton `K`/CPT
+12-occupancy carrier is the same physical channel that controls the quark-sector
+13-determinant readout, and whether that identification forces
+60-`|det|`.
+61-
+62:The hostile guard is important: K/CPT orbit invariance alone gives evenness, not phase erasure.
+63-For example `cos(arg z)` is K-invariant and still depends on the phase. The
+64-phase-erasure conclusion applies only inside the supplied multiplicative
+271-Record additivity + bridge-supplied K/CPT orbit constancy
+272-  + determinant-character / log-character homomorphism boundary for phase readout
+273:  => homomorphic determinant phase contribution = 0   (homomorphism forces odd; even forces zero)
+274-  => (a) det-class phase character k=0 on the supplied homomorphism surface;
+275-     physical arg det(M_u M_d) identification still open
+
+2026-07-18T01:15:19.685256Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "sed -n '1,80p' docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+# Theta Quark-Determinant Cross-Sector Readout Derivation Obligation
+
+**Date:** 2026-07-11
+**Type:** open_gate
+**Premise weight:** none. This is an open derivation obligation, not an axiom,
+approved primitive, accepted premise, convention, or theorem.
+**Status authority:** independent audit lane only.
+
+## Exact target
+
+Derive from the retained framework chain whether the charged-lepton `K`/CPT
+occupancy carrier is the same physical channel that controls the quark-sector
+determinant readout, and whether that identification forces
+`arg det(M_q) = 0`.
+
+Charged-lepton statistical-grain closure alone does not establish this
+cross-sector identity. The two requirements must remain separate until a
+retained theorem derives the quark determinant carrier and its physical
+readout without importing the desired strong-CP phase.
+
+## Closure criterion
+
+A closing theorem must construct the quark mass/determinant carrier, identify
+the physical readout map, and prove the cross-sector correspondence to the
+charged-lepton `K`/CPT structure. Algebraic similarity, shared notation, and
+historical decision text are insufficient.
+
+Relevant route maps are context only:
+
+- `docs/THETA_MASS_SIDE_COMPOSITION_CLOSE_ON_SHARED_OCCUPANCY_BRIDGE_BOUNDED_NOTE_2026-07-03.md`
+- `docs/STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`
+- `docs/THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`
+
+Until such a theorem is independently audited and retained, every theta result
+that uses the cross-sector determinant identification remains conditional or
+pending-chain.
+
+## Running-program relation
+
+This obligation is self-liquidating. A retained theorem deriving the exact
+cross-sector determinant readout removes the obligation rather than converting
+it into a supplied premise.
+
+## Non-claims
+
+This note derives no theta value, quark mass, charged-lepton mass, occupancy
+grain, selector, mixing angle, or probability rule, and changes no audit
+verdict.
+
+2026-07-18T01:15:24.552030Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "sed -n '1,180p' docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+# Theta P2 K/CPT Determinant-Character Phase Erasure: Bounded Candidate Route
+
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
+
+**Date:** 2026-06-10 (split from
+`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
+so the strong-CP mass-orientation route stands on the theta surface alone,
+with no dependency on the `AC_phi_lambda` staggered gate) (2026-06-12: the
+determinant-readout bridge named open here is now cited from
+`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+and from the dedicated mass-determinant-channel bridge
+`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`;
+both are wired below as load-bearing dependencies)
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit outcome and does not edit the audit-lane-owned Tier-A registry.
+**Primary runner:** [`scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py`](../scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py)
+**Runner cache:** [`logs/runner-cache/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.txt`](../logs/runner-cache/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.txt)
+
+## Boundary
+
+This note proves one bounded fact:
+
+1. In a supplied determinant-class readout whose scalar readouts are the
+   standard continuous multiplicative determinant characters
+   `|z|^s exp(i k arg z)`, K/CPT invariance kills the determinant phase
+   character: `k = 0`.
+
+It does not discharge the strong-CP mass-orientation premise by itself,
+derive the strong-CP action-form premise, or change
+`docs/audit/data/premise_decision_history.json`. Those moves require later
+registry/audit handling and the determinant-readout bridge cited below, whose
+audit status is owned by the independent audit lane.
+
+## Determinant Readout Lemma
+
+The Record axiom supplies durable realized-outcome readout only after a
+readout context, finite central-sector decomposition, and fixed K/CPT
+conjugation are already supplied. It does not supply the determinant readout
+context.
+
+Given such a supplied determinant-class context, the standard multiplicative
+determinant character family has phase part
+
+```text
+chi_k(z) = exp(i k arg z).
+```
+
+K/CPT conjugation sends `z` to `conj(z)`, so `arg z` goes to `-arg z`.
+Requiring the character to be invariant under that conjugation gives
+
+```text
+exp(i k phi) = exp(-i k phi) for all phi,
+```
+
+hence `sin(k phi) = 0` for all `phi`, so `k = 0`. Therefore the invariant
+members of this determinant-character family are phase-free functions of
+`|det|`.
+
+The hostile guard is important: K/CPT orbit invariance alone gives evenness, not phase erasure.
+For example `cos(arg z)` is K-invariant and still depends on the phase. The
+phase-erasure conclusion applies only inside the supplied multiplicative
+determinant-character class.
+
+## The Determinant-Readout Bridge (cited dependency)
+
+This lemma is a candidate route for the mass-orientation part of the strong-CP
+surface, not a completed discharge by itself. To discharge that premise, a
+later retained bridge must show that the physical `arg det(M_u M_d)`
+contribution used by
+[`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) is exhausted by
+this determinant-class registrable readout, and that no phase-sensitive
+non-multiplicative or action-level datum remains relevant to that premise.
+The broad Record-registrability source theorem is cited here as the candidate
+bridge:
+[`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+(Consequence A there): a Record-registrable scalar readout is finitely
+additive over pairwise-disjoint records and constant on `K`/CPT orbits;
+additivity forces its per-sector phase functional to be odd, orbit-constancy
+forces it to be even, and odd-and-even forces it to vanish identically. Hence
+the registrable content of `arg det(M_u M_d)` is exhausted by the phase-free
+`k = 0` (modulus) class: phase-sensitive non-multiplicative functionals (for
+example `cos(arg z)`, this note's hostile guard) are excluded by additivity,
+cross-sector interference data are excluded by additivity, and the
+action-level bare-`theta` slot is strong-CP premise 1 — a separate
+action-surface premise tracked by the per-plaquette license route, not part of
+the mass-orientation premise.
+
+The dedicated mass-determinant-channel specialization is
+[`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md):
+under a supplied determinant-channel interface with independent-block
+determinant multiplication and K/CPT orbit registration, the only registered
+continuous determinant phase character is `k = 0`; K-even nonmultiplicative
+phase probes such as `cos(arg det)` are outside that determinant-channel block
+law.
+
+This wiring does not set `theta_gauge = 0`, does not derive the real-positive
+Wilson action surface, and does not eliminate action-level or gauge-theta
+residuals.
+
+What remains conditional, exactly as named in the bridge note: the standing
+modeling premise that the physical mass-surface readout context satisfies the
+Record registrability constraints remains an explicit condition of the
+strong-CP selected surface (the bridge removes phase freedom within the
+Record-registrable class; it does not prove the physical readout must be in
+that class), and the bridge note's audit status is owned by the independent
+audit lane and is not asserted here.
+
+## Registry Consequence
+
+The only supported consequence is a candidate route for future Tier-A
+registry review: the determinant lemma composed with the determinant-readout
+bridges cited above may help remove the positive-real mass-orientation
+condition of the strong-CP selected surface only after independent review/audit
+accepts the determinant-readout bridge surface being used; registry handling
+stays with the audit lane.
+
+No new axiom, primitive, admission, normalization, probability rule,
+comparator, or audit verdict is introduced here.
+
+## Dependencies
+
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) for the
+  narrow Record axiom boundary.
+- [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) for the
+  selected-surface strong-CP premise whose mass-orientation part is the
+  candidate target here.
+- [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
+  for the determinant-readout bridge candidate (its Consequence A):
+  registrable readouts are additive plus `K`/CPT-orbit-constant, hence
+  phase-free, so the multiplicative determinant-character family exhausts the
+  registrable `arg det(M_u M_d)` content.
+- [`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
+  for the dedicated mass-determinant-channel bridge under independent-block
+  determinant multiplication and K/CPT orbit registration.
+
+The `AC_phi_lambda` orientation lemma that previously shared a note with
+this lemma remains in
+`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
+(context, not load-bearing here: this lemma uses nothing from the staggered
+gate surface).
+
+**No-promotion statement:** this note does not promote, demote, or set the
+audit status of any dependency. The independent audit lane is the only
+status authority.
+
+2026-07-18T01:15:28.773789Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "rg -n -C 10 'Consequence A|additivity forces|phase functional|homomorphism forces odd; even forces zero' docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+98-> data is the determinant-class datum that can survive these constraints.
+99-
+100-### Proof (each leg checked in the runner)
+101-
+102-**T1 — the central sectors define disjoint record labels.** In the supplied
+103-readout context, the finite central-sector decomposition is a set of orthogonal
+104-central idempotents `e_j` with `e_j e_k = 0` (`j != k`) and `sum_j e_j = 1`.
+105-Orthogonality is disjointness, so the associated record labels are
+106-pairwise-disjoint.
+107-
+108:**T2 — Record additivity forces a per-record sum with no interference.** Posit
+109-the most general two-sector readout permitting a cross term,
+110-`I(e_1 cup e_2) = I(e_1) + I(e_2) + c`. (Additivity) is exactly
+111-`I(e_1 cup e_2) = I(e_1) + I(e_2)`, which forces `c = 0`. Iterating over the
+112-finite family, a registrable readout equals `sum_j I(e_j)`; there is no
+113-cross-record / interference content. This is finite additivity over records; by
+114-itself it is **not** phase-group additivity of an arbitrary phase function.
+115-
+116-**T3 — the homomorphism boundary puts determinant phase in the additive
+117-class.** For a sector-factored configuration `det = prod_j z_j`, so
+118-`arg det = sum_j arg(z_j)` (mod `2 pi`). The determinant-character /
+--
+122-finite additivity.
+123-
+124-**T4 — an additive functional is odd (no regularity needed).** For any
+125-`R`-valued additive `g` on an abelian group, `g(0) = g(0) + g(0)` gives
+126-`g(0) = 0`, and `g(x) + g(-x) = g(0) = 0` gives `g(-x) = -g(x)`. This is pure
+127-algebra; **no continuity, measurability, or linearity is assumed**, so the
+128-Cauchy/Hamel pathology of additive functions is irrelevant here.
+129-
+130-**T5 — even ∩ additive = zero.** (Orbit) makes the readout constant on `K`/CPT
+131-orbits; `K`/CPT acts on the central characters as complex conjugation, sending
+132:`arg z` to `-arg z`. So the homomorphic phase functional is also **even**:
+133-`g(-t) = g(t)`. Even (`g(-t) = g(t)`) together with odd (T4:
+134-`g(-t) = -g(t)`) gives `g(t) = -g(t)`, hence `g(t) = 0` for every `t`. The
+135-homomorphic determinant-character phase contribution vanishes; equivalently the
+136-determinant-character phase index is `k = 0`.
+137-
+138-**T6 — the hostile guard is threaded.** `K`/CPT-evenness *alone* does **not**
+139-erase phase: `cos(arg z)` is `K`-even (`cos(-theta) = cos(theta)`) yet
+140-phase-dependent. Nor does Record finite additivity alone erase all K-even phase
+141-functions: `sum_j cos(theta_j)` is finitely additive over disjoint sector
+142-records and K-even while still phase-dependent. The theorem does not exclude
+--
+263-orbit invariance, while the unordered symmetric functions survive. The
+264-consumers share the Record-additivity plus bridge-supplied-orbit layer, but the
+265-determinant phase-erasure claim no longer asserts that Record alone supplies
+266-phase-group additivity or orbit structure.
+267-
+268-## Net
+269-
+270-```text
+271-Record additivity + bridge-supplied K/CPT orbit constancy
+272-  + determinant-character / log-character homomorphism boundary for phase readout
+273:  => homomorphic determinant phase contribution = 0   (homomorphism forces odd; even forces zero)
+274-  => (a) det-class phase character k=0 on the supplied homomorphism surface;
+275-     physical arg det(M_u M_d) identification still open
+276-  => (b-i) delta-sign is not scalar orbit content on the supplied unordered
+277-     multiset surface; physical AC_phi_lambda readout identification still open
+278-
+279-new axioms: 0     new primitives: 0     new premise classes: 0     new imports: 0
+280-residuals named: strong-CP premise 1 (separate); standing readout-context /
+281-                 homomorphism premise; |delta| magnitude (R-eta);
+282-                 R2 PL/ABSS global bridge (external-math LIVE)
+283-```
+
+2026-07-18T01:15:33.023269Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import sympy as sp
+r = sp.symbols('r', positive=True, real=True)
+phi = sp.symbols('phi', real=True, nonzero=True)
+k = sp.symbols('k', integer=True)
+z = r * sp.exp(sp.I * phi)
+print('conj:', sp.conjugate(z), sp.simplify(sp.conjugate(z) - r * sp.exp(-sp.I * phi)))
+print('solve generic:', sp.solve(sp.sin(k * phi), k))
+print('solveset generic:', sp.solveset(sp.sin(k * phi), k, domain=sp.S.Integers))
+for p in (0, sp.pi/4, sp.pi/2, 3*sp.pi/4):
+    zw = sp.exp(sp.I*p)
+    print(p, sp.arg(sp.conjugate(zw)), -sp.arg(zw), sp.simplify(sp.arg(sp.conjugate(zw)) + sp.arg(zw)))
+PY" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+2026-07-18T01:16:25.744492Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 274ms:
+conj: r*exp(-I*phi) 0
+solve generic: [0, pi/phi]
+solveset generic: Union(Intersection(ImageSet(Lambda(_n, (2*_n*pi + pi)/phi), Integers), Integers), Intersection(ImageSet(Lambda(_n, 2*_n*pi/phi), Integers), Integers))
+0 0 0 0
+pi/4 -pi/4 -pi/4 0
+pi/2 -pi/2 -pi/2 0
+3*pi/4 -3*pi/4 -3*pi/4 0
+
+codex
+C+P exposes a load-bearing qualification: finite disjoint-record additivity alone does not imply oddness—the authorized registrability note explicitly says so. P1 is valid only after adding the specified conjugation-pair/trivial-sector normalization. I’ll make the runner print that flag and verify the formal elimination conditionally, so the gate is not weakened or made vacuous.
+apply patch
+patch: completed
+/Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+diff --git a/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..cafd280f35247b03cce8ca15a1fa05016303cafe
+--- /dev/null
++++ b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+@@ -0,0 +1,145 @@
++#!/usr/bin/env python3
++"""Exact checks for the theta forcing-property characterization note."""
++
++from pathlib import Path
++
++import sympy as sp
++
++
++ROOT = Path(__file__).resolve().parents[1]
++TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
++OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
++PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
++REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
++
++
++def normalized_whitespace(text):
++    return " ".join(text.split())
++
++
++class CheckRunner:
++    def __init__(self):
++        self.passed = 0
++        self.failed = 0
++
++    def check(self, label, condition):
++        try:
++            ok = bool(condition)
++        except (TypeError, ValueError):
++            ok = condition == sp.true
++        if ok:
++            self.passed += 1
++            print(f"PASS: {label}")
++        else:
++            self.failed += 1
++            print(f"FAIL: {label}")
++
++    def needle(self, label, path, needles):
++        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
++        if isinstance(needles, str):
++            needles = (needles,)
++        self.check(
++            label,
++            all(normalized_whitespace(needle) in haystack for needle in needles),
++        )
++
++    def finish(self):
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return 0 if self.failed == 0 else 1
++
++
++def main():
++    checks = CheckRunner()
++    print(
++        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
++        "alone. They are checked only with the separately supplied "
++        "conjugation-pair/trivial-sector normalization."
++    )
++
++    # Group C -- conjugation and the phase functional.
++    radius = sp.symbols("r", positive=True, real=True)
++    phi = sp.symbols("phi", real=True)
++    z = radius * sp.exp(sp.I * phi)
++    checks.check(
++        "C1 symbolic conjugation reverses the phase",
++        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
++    )
++
++    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
++    checks.check(
++        "C1 principal-branch argument reversal at exact witnesses",
++        all(
++            sp.simplify(
++                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
++                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
++            )
++            == 0
++            for angle in principal_witnesses
++        ),
++    )
++
++    formal_value = sp.symbols("f")
++    checks.check(
++        "C2 formal odd-and-even elimination",
++        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
++    )
++
++    c1 = sp.symbols("c1")
++    odd_family = c1 * sp.sin(phi)
++    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
++    checks.check(
++        "C2 generic odd-family evenness forces its coefficient to zero",
++        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
++        and sp.solve(evenness_equation, c1) == [0],
++    )
++
++    # Group P -- the two named odd-side consequences.
++    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
++        "h_phi h_neg_phi h_sum h_trivial"
++    )
++    additive_elimination = sp.solve(
++        (
++            sp.Eq(h_sum, h_phi + h_neg_phi),
++            sp.Eq(h_sum, h_trivial),
++            sp.Eq(h_trivial, 0),
++        ),
++        (h_neg_phi, h_sum, h_trivial),
++        dict=True,
++    )
++    checks.check(
++        "P1 additivity plus conjugation-pair normalization implies oddness",
++        additive_elimination
++        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
++    )
++
++    phi1 = sp.pi / 6
++    phi2 = sp.pi / 3
++    z1 = sp.exp(sp.I * phi1)
++    z2 = sp.exp(sp.I * phi2)
++    checks.check(
++        "P2 principal-range argument is additive at exact witnesses",
++        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
++    )
++
++    k = sp.symbols("k", integer=True)
++    alpha, beta = sp.symbols("alpha beta", real=True)
++    checks.check(
++        "P2 character exponent is additive identically",
++        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
++    )
++
++    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
++    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
++    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
++    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
++    block_matrix = sp.diag(matrix_a, matrix_b)
++    checks.check(
++        "P2 symbolic two-by-two block determinant law",
++        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
++    )
++
++    checks.finish()
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+
+diff --git a/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..cafd280f35247b03cce8ca15a1fa05016303cafe
+--- /dev/null
++++ b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+@@ -0,0 +1,145 @@
++#!/usr/bin/env python3
++"""Exact checks for the theta forcing-property characterization note."""
++
++from pathlib import Path
++
++import sympy as sp
++
++
++ROOT = Path(__file__).resolve().parents[1]
++TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
++OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
++PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
++REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
++
++
++def normalized_whitespace(text):
++    return " ".join(text.split())
++
++
++class CheckRunner:
++    def __init__(self):
++        self.passed = 0
++        self.failed = 0
++
++    def check(self, label, condition):
++        try:
++            ok = bool(condition)
++        except (TypeError, ValueError):
++            ok = condition == sp.true
++        if ok:
++            self.passed += 1
++            print(f"PASS: {label}")
++        else:
++            self.failed += 1
++            print(f"FAIL: {label}")
++
++    def needle(self, label, path, needles):
++        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
++        if isinstance(needles, str):
++            needles = (needles,)
++        self.check(
++            label,
++            all(normalized_whitespace(needle) in haystack for needle in needles),
++        )
++
++    def finish(self):
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return 0 if self.failed == 0 else 1
++
++
++def main():
++    checks = CheckRunner()
++    print(
++        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
++        "alone. They are checked only with the separately supplied "
++        "conjugation-pair/trivial-sector normalization."
++    )
++
++    # Group C -- conjugation and the phase functional.
++    radius = sp.symbols("r", positive=True, real=True)
++    phi = sp.symbols("phi", real=True)
++    z = radius * sp.exp(sp.I * phi)
++    checks.check(
++        "C1 symbolic conjugation reverses the phase",
++        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
++    )
++
++    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
++    checks.check(
++        "C1 principal-branch argument reversal at exact witnesses",
++        all(
++            sp.simplify(
++                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
++                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
++            )
++            == 0
++            for angle in principal_witnesses
++        ),
++    )
++
++    formal_value = sp.symbols("f")
++    checks.check(
++        "C2 formal odd-and-even elimination",
++        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
++    )
++
++    c1 = sp.symbols("c1")
++    odd_family = c1 * sp.sin(phi)
++    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
++    checks.check(
++        "C2 generic odd-family evenness forces its coefficient to zero",
++        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
++        and sp.solve(evenness_equation, c1) == [0],
++    )
++
++    # Group P -- the two named odd-side consequences.
++    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
++        "h_phi h_neg_phi h_sum h_trivial"
++    )
++    additive_elimination = sp.solve(
++        (
++            sp.Eq(h_sum, h_phi + h_neg_phi),
++            sp.Eq(h_sum, h_trivial),
++            sp.Eq(h_trivial, 0),
++        ),
++        (h_neg_phi, h_sum, h_trivial),
++        dict=True,
++    )
++    checks.check(
++        "P1 additivity plus conjugation-pair normalization implies oddness",
++        additive_elimination
++        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
++    )
++
++    phi1 = sp.pi / 6
++    phi2 = sp.pi / 3
++    z1 = sp.exp(sp.I * phi1)
++    z2 = sp.exp(sp.I * phi2)
++    checks.check(
++        "P2 principal-range argument is additive at exact witnesses",
++        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
++    )
++
++    k = sp.symbols("k", integer=True)
++    alpha, beta = sp.symbols("alpha beta", real=True)
++    checks.check(
++        "P2 character exponent is additive identically",
++        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
++    )
++
++    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
++    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
++    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
++    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
++    block_matrix = sp.diag(matrix_a, matrix_b)
++    checks.check(
++        "P2 symbolic two-by-two block determinant law",
++        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
++    )
++
++    checks.finish()
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+
+2026-07-18T01:17:45.919027Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'python3 scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+diff --git a/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..cafd280f35247b03cce8ca15a1fa05016303cafe
+--- /dev/null
++++ b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+@@ -0,0 +1,145 @@
++#!/usr/bin/env python3
++"""Exact checks for the theta forcing-property characterization note."""
++
++from pathlib import Path
++
++import sympy as sp
++
++
++ROOT = Path(__file__).resolve().parents[1]
++TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
++OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
++PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
++REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
++
++
++def normalized_whitespace(text):
++    return " ".join(text.split())
++
++
++class CheckRunner:
++    def __init__(self):
++        self.passed = 0
++        self.failed = 0
++
++    def check(self, label, condition):
++        try:
++            ok = bool(condition)
++        except (TypeError, ValueError):
++            ok = condition == sp.true
++        if ok:
++            self.passed += 1
++            print(f"PASS: {label}")
++        else:
++            self.failed += 1
++            print(f"FAIL: {label}")
++
++    def needle(self, label, path, needles):
++        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
++        if isinstance(needles, str):
++            needles = (needles,)
++        self.check(
++            label,
++            all(normalized_whitespace(needle) in haystack for needle in needles),
++        )
++
++    def finish(self):
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return 0 if self.failed == 0 else 1
++
++
++def main():
++    checks = CheckRunner()
++    print(
++        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
++        "alone. They are checked only with the separately supplied "
++        "conjugation-pair/trivial-sector normalization."
++    )
++
++    # Group C -- conjugation and the phase functional.
++    radius = sp.symbols("r", positive=True, real=True)
++    phi = sp.symbols("phi", real=True)
++    z = radius * sp.exp(sp.I * phi)
++    checks.check(
++        "C1 symbolic conjugation reverses the phase",
++        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
++    )
++
++    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
++    checks.check(
++        "C1 principal-branch argument reversal at exact witnesses",
++        all(
++            sp.simplify(
++                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
++                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
++            )
++            == 0
++            for angle in principal_witnesses
++        ),
++    )
++
++    formal_value = sp.symbols("f")
++    checks.check(
++        "C2 formal odd-and-even elimination",
++        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
++    )
++
++    c1 = sp.symbols("c1")
++    odd_family = c1 * sp.sin(phi)
++    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
++    checks.check(
++        "C2 generic odd-family evenness forces its coefficient to zero",
++        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
++        and sp.solve(evenness_equation, c1) == [0],
++    )
++
++    # Group P -- the two named odd-side consequences.
++    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
++        "h_phi h_neg_phi h_sum h_trivial"
++    )
++    additive_elimination = sp.solve(
++        (
++            sp.Eq(h_sum, h_phi + h_neg_phi),
++            sp.Eq(h_sum, h_trivial),
++            sp.Eq(h_trivial, 0),
++        ),
++        (h_neg_phi, h_sum, h_trivial),
++        dict=True,
++    )
++    checks.check(
++        "P1 additivity plus conjugation-pair normalization implies oddness",
++        additive_elimination
++        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
++    )
++
++    phi1 = sp.pi / 6
++    phi2 = sp.pi / 3
++    z1 = sp.exp(sp.I * phi1)
++    z2 = sp.exp(sp.I * phi2)
++    checks.check(
++        "P2 principal-range argument is additive at exact witnesses",
++        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
++    )
++
++    k = sp.symbols("k", integer=True)
++    alpha, beta = sp.symbols("alpha beta", real=True)
++    checks.check(
++        "P2 character exponent is additive identically",
++        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
++    )
++
++    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
++    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
++    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
++    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
++    block_matrix = sp.diag(matrix_a, matrix_b)
++    checks.check(
++        "P2 symbolic two-by-two block determinant law",
++        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
++    )
++
++    checks.finish()
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+
+2026-07-18T01:17:53.153040Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 220ms:
+FLAG: P1/T1 are not consequences of finite disjoint-record additivity alone. They are checked only with the separately supplied conjugation-pair/trivial-sector normalization.
+PASS: C1 symbolic conjugation reverses the phase
+PASS: C1 principal-branch argument reversal at exact witnesses
+PASS: C2 formal odd-and-even elimination
+PASS: C2 generic odd-family evenness forces its coefficient to zero
+PASS: P1 additivity plus conjugation-pair normalization implies oddness
+PASS: P2 principal-range argument is additive at exact witnesses
+PASS: P2 character exponent is additive identically
+PASS: P2 symbolic two-by-two block determinant law
+TOTAL: PASS=8 FAIL=0
+
+codex
+The C+P increment passes 8/8, with the conditionality flag visible. I’m adding the exact character, cosine, and silent-control witnesses next; these will distinguish orbit constancy, oddness/homomorphism, and actual phase registration rather than merely restating identities.
+apply patch
+patch: completed
+/Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+diff --git a/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..7c5564a48f6b4c6cc60ba7db54ff58448254c011
+--- /dev/null
++++ b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+@@ -0,0 +1,228 @@
++#!/usr/bin/env python3
++"""Exact checks for the theta forcing-property characterization note."""
++
++from pathlib import Path
++
++import sympy as sp
++
++
++ROOT = Path(__file__).resolve().parents[1]
++TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
++OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
++PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
++REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
++
++
++def normalized_whitespace(text):
++    return " ".join(text.split())
++
++
++class CheckRunner:
++    def __init__(self):
++        self.passed = 0
++        self.failed = 0
++
++    def check(self, label, condition):
++        try:
++            ok = bool(condition)
++        except (TypeError, ValueError):
++            ok = condition == sp.true
++        if ok:
++            self.passed += 1
++            print(f"PASS: {label}")
++        else:
++            self.failed += 1
++            print(f"FAIL: {label}")
++
++    def needle(self, label, path, needles):
++        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
++        if isinstance(needles, str):
++            needles = (needles,)
++        self.check(
++            label,
++            all(normalized_whitespace(needle) in haystack for needle in needles),
++        )
++
++    def finish(self):
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return 0 if self.failed == 0 else 1
++
++
++def main():
++    checks = CheckRunner()
++    print(
++        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
++        "alone. They are checked only with the separately supplied "
++        "conjugation-pair/trivial-sector normalization."
++    )
++
++    # Group C -- conjugation and the phase functional.
++    radius = sp.symbols("r", positive=True, real=True)
++    phi = sp.symbols("phi", real=True)
++    z = radius * sp.exp(sp.I * phi)
++    checks.check(
++        "C1 symbolic conjugation reverses the phase",
++        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
++    )
++
++    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
++    checks.check(
++        "C1 principal-branch argument reversal at exact witnesses",
++        all(
++            sp.simplify(
++                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
++                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
++            )
++            == 0
++            for angle in principal_witnesses
++        ),
++    )
++
++    formal_value = sp.symbols("f")
++    checks.check(
++        "C2 formal odd-and-even elimination",
++        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
++    )
++
++    c1 = sp.symbols("c1")
++    odd_family = c1 * sp.sin(phi)
++    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
++    checks.check(
++        "C2 generic odd-family evenness forces its coefficient to zero",
++        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
++        and sp.solve(evenness_equation, c1) == [0],
++    )
++
++    # Group P -- the two named odd-side consequences.
++    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
++        "h_phi h_neg_phi h_sum h_trivial"
++    )
++    additive_elimination = sp.solve(
++        (
++            sp.Eq(h_sum, h_phi + h_neg_phi),
++            sp.Eq(h_sum, h_trivial),
++            sp.Eq(h_trivial, 0),
++        ),
++        (h_neg_phi, h_sum, h_trivial),
++        dict=True,
++    )
++    checks.check(
++        "P1 additivity plus conjugation-pair normalization implies oddness",
++        additive_elimination
++        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
++    )
++
++    phi1 = sp.pi / 6
++    phi2 = sp.pi / 3
++    z1 = sp.exp(sp.I * phi1)
++    z2 = sp.exp(sp.I * phi2)
++    checks.check(
++        "P2 principal-range argument is additive at exact witnesses",
++        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
++    )
++
++    k = sp.symbols("k", integer=True)
++    alpha, beta = sp.symbols("alpha beta", real=True)
++    checks.check(
++        "P2 character exponent is additive identically",
++        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
++    )
++
++    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
++    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
++    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
++    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
++    block_matrix = sp.diag(matrix_a, matrix_b)
++    checks.check(
++        "P2 symbolic two-by-two block determinant law",
++        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
++    )
++
++    # Group W -- exact registering witnesses and the silent control.
++    k_nonzero = sp.symbols("k_nz", integer=True, nonzero=True)
++    character_phase = k_nonzero * phi
++    checks.check(
++        "W1a nonzero-character phase functional is odd identically",
++        sp.expand(character_phase.subs(phi, -phi) + character_phase) == 0,
++    )
++
++    character_product = sp.exp(sp.I * k_nonzero * phi1) * sp.exp(
++        sp.I * k_nonzero * phi2
++    )
++    checks.check(
++        "W1a character composes multiplicatively at exact witnesses",
++        sp.simplify(
++            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
++        )
++        == 0,
++    )
++
++    orbit_value = sp.exp(sp.I * sp.pi / 2)
++    conjugate_orbit_value = sp.exp(-sp.I * sp.pi / 2)
++    checks.check(
++        "W1b k=1 character breaks orbit constancy",
++        orbit_value == sp.I
++        and conjugate_orbit_value == -sp.I
++        and orbit_value != conjugate_orbit_value,
++    )
++
++    checks.check(
++        "W1c k=1 character registers phase",
++        sp.exp(sp.I * 0) == 1
++        and sp.exp(sp.I * sp.pi / 2) == sp.I
++        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2),
++    )
++
++    cosine_probe = sp.cos(phi)
++    checks.check(
++        "W2a cosine is even identically",
++        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0,
++    )
++
++    checks.check(
++        "W2a cosine is not odd",
++        cosine_probe.subs(phi, 0) == 1
++        and -cosine_probe.subs(phi, 0) == -1
++        and cosine_probe.subs(phi, 0) != -cosine_probe.subs(phi, 0),
++    )
++
++    checks.check(
++        "W2b cosine breaks multiplicative homomorphism",
++        sp.cos(sp.pi) == -1
++        and sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2) == 0
++        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2),
++    )
++
++    cosine_pair_sum = cosine_probe.subs(phi, -phi) + cosine_probe
++    checks.check(
++        "W2c cosine breaks the additivity-oddness consequence",
++        sp.trigsimp(cosine_pair_sum - 2 * sp.cos(phi)) == 0
++        and cosine_pair_sum.subs(phi, 0) == 2
++        and cosine_pair_sum.subs(phi, 0) != 0,
++    )
++
++    checks.check(
++        "W2d cosine registers phase",
++        sp.cos(0) == 1 and sp.cos(sp.pi) == -1 and sp.cos(0) != sp.cos(sp.pi),
++    )
++
++    s = sp.symbols("s", real=True)
++    modulus_character = sp.Abs(z) ** s
++    conjugate_modulus_character = sp.Abs(sp.conjugate(z)) ** s
++    checks.check(
++        "W3 k=0 modulus character is orbit-constant and phase-silent",
++        sp.simplify(modulus_character - radius**s) == 0
++        and sp.simplify(conjugate_modulus_character - modulus_character) == 0
++        and sp.diff(modulus_character, phi) == 0
++        and sp.simplify(
++            modulus_character.subs(phi, 0)
++            - modulus_character.subs(phi, sp.pi / 2)
++        )
++        == 0,
++    )
++
++    checks.finish()
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+
+diff --git a/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..7c5564a48f6b4c6cc60ba7db54ff58448254c011
+--- /dev/null
++++ b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+@@ -0,0 +1,228 @@
++#!/usr/bin/env python3
++"""Exact checks for the theta forcing-property characterization note."""
++
++from pathlib import Path
++
++import sympy as sp
++
++
++ROOT = Path(__file__).resolve().parents[1]
++TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
++OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
++PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
++REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
++
++
++def normalized_whitespace(text):
++    return " ".join(text.split())
++
++
++class CheckRunner:
++    def __init__(self):
++        self.passed = 0
++        self.failed = 0
++
++    def check(self, label, condition):
++        try:
++            ok = bool(condition)
++        except (TypeError, ValueError):
++            ok = condition == sp.true
++        if ok:
++            self.passed += 1
++            print(f"PASS: {label}")
++        else:
++            self.failed += 1
++            print(f"FAIL: {label}")
++
++    def needle(self, label, path, needles):
++        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
++        if isinstance(needles, str):
++            needles = (needles,)
++        self.check(
++            label,
++            all(normalized_whitespace(needle) in haystack for needle in needles),
++        )
++
++    def finish(self):
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return 0 if self.failed == 0 else 1
++
++
++def main():
++    checks = CheckRunner()
++    print(
++        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
++        "alone. They are checked only with the separately supplied "
++        "conjugation-pair/trivial-sector normalization."
++    )
++
++    # Group C -- conjugation and the phase functional.
++    radius = sp.symbols("r", positive=True, real=True)
++    phi = sp.symbols("phi", real=True)
++    z = radius * sp.exp(sp.I * phi)
++    checks.check(
++        "C1 symbolic conjugation reverses the phase",
++        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
++    )
++
++    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
++    checks.check(
++        "C1 principal-branch argument reversal at exact witnesses",
++        all(
++            sp.simplify(
++                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
++                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
++            )
++            == 0
++            for angle in principal_witnesses
++        ),
++    )
++
++    formal_value = sp.symbols("f")
++    checks.check(
++        "C2 formal odd-and-even elimination",
++        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
++    )
++
++    c1 = sp.symbols("c1")
++    odd_family = c1 * sp.sin(phi)
++    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
++    checks.check(
++        "C2 generic odd-family evenness forces its coefficient to zero",
++        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
++        and sp.solve(evenness_equation, c1) == [0],
++    )
++
++    # Group P -- the two named odd-side consequences.
++    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
++        "h_phi h_neg_phi h_sum h_trivial"
++    )
++    additive_elimination = sp.solve(
++        (
++            sp.Eq(h_sum, h_phi + h_neg_phi),
++            sp.Eq(h_sum, h_trivial),
++            sp.Eq(h_trivial, 0),
++        ),
++        (h_neg_phi, h_sum, h_trivial),
++        dict=True,
++    )
++    checks.check(
++        "P1 additivity plus conjugation-pair normalization implies oddness",
++        additive_elimination
++        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
++    )
++
++    phi1 = sp.pi / 6
++    phi2 = sp.pi / 3
++    z1 = sp.exp(sp.I * phi1)
++    z2 = sp.exp(sp.I * phi2)
++    checks.check(
++        "P2 principal-range argument is additive at exact witnesses",
++        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
++    )
++
++    k = sp.symbols("k", integer=True)
++    alpha, beta = sp.symbols("alpha beta", real=True)
++    checks.check(
++        "P2 character exponent is additive identically",
++        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
++    )
++
++    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
++    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
++    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
++    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
++    block_matrix = sp.diag(matrix_a, matrix_b)
++    checks.check(
++        "P2 symbolic two-by-two block determinant law",
++        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
++    )
++
++    # Group W -- exact registering witnesses and the silent control.
++    k_nonzero = sp.symbols("k_nz", integer=True, nonzero=True)
++    character_phase = k_nonzero * phi
++    checks.check(
++        "W1a nonzero-character phase functional is odd identically",
++        sp.expand(character_phase.subs(phi, -phi) + character_phase) == 0,
++    )
++
++    character_product = sp.exp(sp.I * k_nonzero * phi1) * sp.exp(
++        sp.I * k_nonzero * phi2
++    )
++    checks.check(
++        "W1a character composes multiplicatively at exact witnesses",
++        sp.simplify(
++            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
++        )
++        == 0,
++    )
++
++    orbit_value = sp.exp(sp.I * sp.pi / 2)
++    conjugate_orbit_value = sp.exp(-sp.I * sp.pi / 2)
++    checks.check(
++        "W1b k=1 character breaks orbit constancy",
++        orbit_value == sp.I
++        and conjugate_orbit_value == -sp.I
++        and orbit_value != conjugate_orbit_value,
++    )
++
++    checks.check(
++        "W1c k=1 character registers phase",
++        sp.exp(sp.I * 0) == 1
++        and sp.exp(sp.I * sp.pi / 2) == sp.I
++        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2),
++    )
++
++    cosine_probe = sp.cos(phi)
++    checks.check(
++        "W2a cosine is even identically",
++        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0,
++    )
++
++    checks.check(
++        "W2a cosine is not odd",
++        cosine_probe.subs(phi, 0) == 1
++        and -cosine_probe.subs(phi, 0) == -1
++        and cosine_probe.subs(phi, 0) != -cosine_probe.subs(phi, 0),
++    )
++
++    checks.check(
++        "W2b cosine breaks multiplicative homomorphism",
++        sp.cos(sp.pi) == -1
++        and sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2) == 0
++        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2),
++    )
++
++    cosine_pair_sum = cosine_probe.subs(phi, -phi) + cosine_probe
++    checks.check(
++        "W2c cosine breaks the additivity-oddness consequence",
++        sp.trigsimp(cosine_pair_sum - 2 * sp.cos(phi)) == 0
++        and cosine_pair_sum.subs(phi, 0) == 2
++        and cosine_pair_sum.subs(phi, 0) != 0,
++    )
++
++    checks.check(
++        "W2d cosine registers phase",
++        sp.cos(0) == 1 and sp.cos(sp.pi) == -1 and sp.cos(0) != sp.cos(sp.pi),
++    )
++
++    s = sp.symbols("s", real=True)
++    modulus_character = sp.Abs(z) ** s
++    conjugate_modulus_character = sp.Abs(sp.conjugate(z)) ** s
++    checks.check(
++        "W3 k=0 modulus character is orbit-constant and phase-silent",
++        sp.simplify(modulus_character - radius**s) == 0
++        and sp.simplify(conjugate_modulus_character - modulus_character) == 0
++        and sp.diff(modulus_character, phi) == 0
++        and sp.simplify(
++            modulus_character.subs(phi, 0)
++            - modulus_character.subs(phi, sp.pi / 2)
++        )
++        == 0,
++    )
++
++    checks.finish()
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+
+exec
+/bin/zsh -lc 'python3 scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+diff --git a/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..7c5564a48f6b4c6cc60ba7db54ff58448254c011
+--- /dev/null
++++ b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+@@ -0,0 +1,228 @@
++#!/usr/bin/env python3
++"""Exact checks for the theta forcing-property characterization note."""
++
++from pathlib import Path
++
++import sympy as sp
++
++
++ROOT = Path(__file__).resolve().parents[1]
++TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
++OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
++PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
++REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
++
++
++def normalized_whitespace(text):
++    return " ".join(text.split())
++
++
++class CheckRunner:
++    def __init__(self):
++        self.passed = 0
++        self.failed = 0
++
++    def check(self, label, condition):
++        try:
++            ok = bool(condition)
++        except (TypeError, ValueError):
++            ok = condition == sp.true
++        if ok:
++            self.passed += 1
++            print(f"PASS: {label}")
++        else:
++            self.failed += 1
++            print(f"FAIL: {label}")
++
++    def needle(self, label, path, needles):
++        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
++        if isinstance(needles, str):
++            needles = (needles,)
++        self.check(
++            label,
++            all(normalized_whitespace(needle) in haystack for needle in needles),
++        )
++
++    def finish(self):
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return 0 if self.failed == 0 else 1
++
++
++def main():
++    checks = CheckRunner()
++    print(
++        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
++        "alone. They are checked only with the separately supplied "
++        "conjugation-pair/trivial-sector normalization."
++    )
++
++    # Group C -- conjugation and the phase functional.
++    radius = sp.symbols("r", positive=True, real=True)
++    phi = sp.symbols("phi", real=True)
++    z = radius * sp.exp(sp.I * phi)
++    checks.check(
++        "C1 symbolic conjugation reverses the phase",
++        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
++    )
++
++    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
++    checks.check(
++        "C1 principal-branch argument reversal at exact witnesses",
++        all(
++            sp.simplify(
++                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
++                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
++            )
++            == 0
++            for angle in principal_witnesses
++        ),
++    )
++
++    formal_value = sp.symbols("f")
++    checks.check(
++        "C2 formal odd-and-even elimination",
++        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
++    )
++
++    c1 = sp.symbols("c1")
++    odd_family = c1 * sp.sin(phi)
++    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
++    checks.check(
++        "C2 generic odd-family evenness forces its coefficient to zero",
++        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
++        and sp.solve(evenness_equation, c1) == [0],
++    )
++
++    # Group P -- the two named odd-side consequences.
++    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
++        "h_phi h_neg_phi h_sum h_trivial"
++    )
++    additive_elimination = sp.solve(
++        (
++            sp.Eq(h_sum, h_phi + h_neg_phi),
++            sp.Eq(h_sum, h_trivial),
++            sp.Eq(h_trivial, 0),
++        ),
++        (h_neg_phi, h_sum, h_trivial),
++        dict=True,
++    )
++    checks.check(
++        "P1 additivity plus conjugation-pair normalization implies oddness",
++        additive_elimination
++        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
++    )
++
++    phi1 = sp.pi / 6
++    phi2 = sp.pi / 3
++    z1 = sp.exp(sp.I * phi1)
++    z2 = sp.exp(sp.I * phi2)
++    checks.check(
++        "P2 principal-range argument is additive at exact witnesses",
++        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
++    )
++
++    k = sp.symbols("k", integer=True)
++    alpha, beta = sp.symbols("alpha beta", real=True)
++    checks.check(
++        "P2 character exponent is additive identically",
++        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
++    )
++
++    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
++    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
++    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
++    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
++    block_matrix = sp.diag(matrix_a, matrix_b)
++    checks.check(
++        "P2 symbolic two-by-two block determinant law",
++        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
++    )
++
++    # Group W -- exact registering witnesses and the silent control.
++    k_nonzero = sp.symbols("k_nz", integer=True, nonzero=True)
++    character_phase = k_nonzero * phi
++    checks.check(
++        "W1a nonzero-character phase functional is odd identically",
++        sp.expand(character_phase.subs(phi, -phi) + character_phase) == 0,
++    )
++
++    character_product = sp.exp(sp.I * k_nonzero * phi1) * sp.exp(
++        sp.I * k_nonzero * phi2
++    )
++    checks.check(
++        "W1a character composes multiplicatively at exact witnesses",
++        sp.simplify(
++            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
++        )
++        == 0,
++    )
++
++    orbit_value = sp.exp(sp.I * sp.pi / 2)
++    conjugate_orbit_value = sp.exp(-sp.I * sp.pi / 2)
++    checks.check(
++        "W1b k=1 character breaks orbit constancy",
++        orbit_value == sp.I
++        and conjugate_orbit_value == -sp.I
++        and orbit_value != conjugate_orbit_value,
++    )
++
++    checks.check(
++        "W1c k=1 character registers phase",
++        sp.exp(sp.I * 0) == 1
++        and sp.exp(sp.I * sp.pi / 2) == sp.I
++        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2),
++    )
++
++    cosine_probe = sp.cos(phi)
++    checks.check(
++        "W2a cosine is even identically",
++        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0,
++    )
++
++    checks.check(
++        "W2a cosine is not odd",
++        cosine_probe.subs(phi, 0) == 1
++        and -cosine_probe.subs(phi, 0) == -1
++        and cosine_probe.subs(phi, 0) != -cosine_probe.subs(phi, 0),
++    )
++
++    checks.check(
++        "W2b cosine breaks multiplicative homomorphism",
++        sp.cos(sp.pi) == -1
++        and sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2) == 0
++        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2),
++    )
++
++    cosine_pair_sum = cosine_probe.subs(phi, -phi) + cosine_probe
++    checks.check(
++        "W2c cosine breaks the additivity-oddness consequence",
++        sp.trigsimp(cosine_pair_sum - 2 * sp.cos(phi)) == 0
++        and cosine_pair_sum.subs(phi, 0) == 2
++        and cosine_pair_sum.subs(phi, 0) != 0,
++    )
++
++    checks.check(
++        "W2d cosine registers phase",
++        sp.cos(0) == 1 and sp.cos(sp.pi) == -1 and sp.cos(0) != sp.cos(sp.pi),
++    )
++
++    s = sp.symbols("s", real=True)
++    modulus_character = sp.Abs(z) ** s
++    conjugate_modulus_character = sp.Abs(sp.conjugate(z)) ** s
++    checks.check(
++        "W3 k=0 modulus character is orbit-constant and phase-silent",
++        sp.simplify(modulus_character - radius**s) == 0
++        and sp.simplify(conjugate_modulus_character - modulus_character) == 0
++        and sp.diff(modulus_character, phi) == 0
++        and sp.simplify(
++            modulus_character.subs(phi, 0)
++            - modulus_character.subs(phi, sp.pi / 2)
++        )
++        == 0,
++    )
++
++    checks.finish()
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+
+ succeeded in 223ms:
+FLAG: P1/T1 are not consequences of finite disjoint-record additivity alone. They are checked only with the separately supplied conjugation-pair/trivial-sector normalization.
+PASS: C1 symbolic conjugation reverses the phase
+PASS: C1 principal-branch argument reversal at exact witnesses
+PASS: C2 formal odd-and-even elimination
+PASS: C2 generic odd-family evenness forces its coefficient to zero
+PASS: P1 additivity plus conjugation-pair normalization implies oddness
+PASS: P2 principal-range argument is additive at exact witnesses
+PASS: P2 character exponent is additive identically
+PASS: P2 symbolic two-by-two block determinant law
+PASS: W1a nonzero-character phase functional is odd identically
+PASS: W1a character composes multiplicatively at exact witnesses
+PASS: W1b k=1 character breaks orbit constancy
+PASS: W1c k=1 character registers phase
+PASS: W2a cosine is even identically
+PASS: W2a cosine is not odd
+PASS: W2b cosine breaks multiplicative homomorphism
+PASS: W2c cosine breaks the additivity-oddness consequence
+PASS: W2d cosine registers phase
+PASS: W3 k=0 modulus character is orbit-constant and phase-silent
+TOTAL: PASS=18 FAIL=0
+
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import sympy as sp
+phi=sp.symbols('phi', real=True)
+k=sp.symbols('k', integer=True)
+d=sp.exp(sp.I*k*phi)-sp.exp(-sp.I*k*phi)
+print(sp.simplify(d-2*sp.I*sp.sin(k*phi)))
+print(sp.solve(sp.Eq(sp.sin(k*phi),0),k))
+print(sp.solve(sp.Eq(sp.diff(sp.sin(k*phi),phi).subs(phi,0),0),k))
+PY" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+diff --git a/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..7c5564a48f6b4c6cc60ba7db54ff58448254c011
+--- /dev/null
++++ b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+@@ -0,0 +1,228 @@
++#!/usr/bin/env python3
++"""Exact checks for the theta forcing-property characterization note."""
++
++from pathlib import Path
++
++import sympy as sp
++
++
++ROOT = Path(__file__).resolve().parents[1]
++TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
++OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
++PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
++REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
++
++
++def normalized_whitespace(text):
++    return " ".join(text.split())
++
++
++class CheckRunner:
++    def __init__(self):
++        self.passed = 0
++        self.failed = 0
++
++    def check(self, label, condition):
++        try:
++            ok = bool(condition)
++        except (TypeError, ValueError):
++            ok = condition == sp.true
++        if ok:
++            self.passed += 1
++            print(f"PASS: {label}")
++        else:
++            self.failed += 1
++            print(f"FAIL: {label}")
++
++    def needle(self, label, path, needles):
++        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
++        if isinstance(needles, str):
++            needles = (needles,)
++        self.check(
++            label,
++            all(normalized_whitespace(needle) in haystack for needle in needles),
++        )
++
++    def finish(self):
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return 0 if self.failed == 0 else 1
++
++
++def main():
++    checks = CheckRunner()
++    print(
++        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
++        "alone. They are checked only with the separately supplied "
++        "conjugation-pair/trivial-sector normalization."
++    )
++
++    # Group C -- conjugation and the phase functional.
++    radius = sp.symbols("r", positive=True, real=True)
++    phi = sp.symbols("phi", real=True)
++    z = radius * sp.exp(sp.I * phi)
++    checks.check(
++        "C1 symbolic conjugation reverses the phase",
++        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
++    )
++
++    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
++    checks.check(
++        "C1 principal-branch argument reversal at exact witnesses",
++        all(
++            sp.simplify(
++                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
++                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
++            )
++            == 0
++            for angle in principal_witnesses
++        ),
++    )
++
++    formal_value = sp.symbols("f")
++    checks.check(
++        "C2 formal odd-and-even elimination",
++        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
++    )
++
++    c1 = sp.symbols("c1")
++    odd_family = c1 * sp.sin(phi)
++    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
++    checks.check(
++        "C2 generic odd-family evenness forces its coefficient to zero",
++        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
++        and sp.solve(evenness_equation, c1) == [0],
++    )
++
++    # Group P -- the two named odd-side consequences.
++    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
++        "h_phi h_neg_phi h_sum h_trivial"
++    )
++    additive_elimination = sp.solve(
++        (
++            sp.Eq(h_sum, h_phi + h_neg_phi),
++            sp.Eq(h_sum, h_trivial),
++            sp.Eq(h_trivial, 0),
++        ),
++        (h_neg_phi, h_sum, h_trivial),
++        dict=True,
++    )
++    checks.check(
++        "P1 additivity plus conjugation-pair normalization implies oddness",
++        additive_elimination
++        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
++    )
++
++    phi1 = sp.pi / 6
++    phi2 = sp.pi / 3
++    z1 = sp.exp(sp.I * phi1)
++    z2 = sp.exp(sp.I * phi2)
++    checks.check(
++        "P2 principal-range argument is additive at exact witnesses",
++        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
++    )
++
++    k = sp.symbols("k", integer=True)
++    alpha, beta = sp.symbols("alpha beta", real=True)
++    checks.check(
++        "P2 character exponent is additive identically",
++        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
++    )
++
++    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
++    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
++    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
++    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
++    block_matrix = sp.diag(matrix_a, matrix_b)
++    checks.check(
++        "P2 symbolic two-by-two block determinant law",
++        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
++    )
++
++    # Group W -- exact registering witnesses and the silent control.
++    k_nonzero = sp.symbols("k_nz", integer=True, nonzero=True)
++    character_phase = k_nonzero * phi
++    checks.check(
++        "W1a nonzero-character phase functional is odd identically",
++        sp.expand(character_phase.subs(phi, -phi) + character_phase) == 0,
++    )
++
++    character_product = sp.exp(sp.I * k_nonzero * phi1) * sp.exp(
++        sp.I * k_nonzero * phi2
++    )
++    checks.check(
++        "W1a character composes multiplicatively at exact witnesses",
++        sp.simplify(
++            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
++        )
++        == 0,
++    )
++
++    orbit_value = sp.exp(sp.I * sp.pi / 2)
++    conjugate_orbit_value = sp.exp(-sp.I * sp.pi / 2)
++    checks.check(
++        "W1b k=1 character breaks orbit constancy",
++        orbit_value == sp.I
++        and conjugate_orbit_value == -sp.I
++        and orbit_value != conjugate_orbit_value,
++    )
++
++    checks.check(
++        "W1c k=1 character registers phase",
++        sp.exp(sp.I * 0) == 1
++        and sp.exp(sp.I * sp.pi / 2) == sp.I
++        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2),
++    )
++
++    cosine_probe = sp.cos(phi)
++    checks.check(
++        "W2a cosine is even identically",
++        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0,
++    )
++
++    checks.check(
++        "W2a cosine is not odd",
++        cosine_probe.subs(phi, 0) == 1
++        and -cosine_probe.subs(phi, 0) == -1
++        and cosine_probe.subs(phi, 0) != -cosine_probe.subs(phi, 0),
++    )
++
++    checks.check(
++        "W2b cosine breaks multiplicative homomorphism",
++        sp.cos(sp.pi) == -1
++        and sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2) == 0
++        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2),
++    )
++
++    cosine_pair_sum = cosine_probe.subs(phi, -phi) + cosine_probe
++    checks.check(
++        "W2c cosine breaks the additivity-oddness consequence",
++        sp.trigsimp(cosine_pair_sum - 2 * sp.cos(phi)) == 0
++        and cosine_pair_sum.subs(phi, 0) == 2
++        and cosine_pair_sum.subs(phi, 0) != 0,
++    )
++
++    checks.check(
++        "W2d cosine registers phase",
++        sp.cos(0) == 1 and sp.cos(sp.pi) == -1 and sp.cos(0) != sp.cos(sp.pi),
++    )
++
++    s = sp.symbols("s", real=True)
++    modulus_character = sp.Abs(z) ** s
++    conjugate_modulus_character = sp.Abs(sp.conjugate(z)) ** s
++    checks.check(
++        "W3 k=0 modulus character is orbit-constant and phase-silent",
++        sp.simplify(modulus_character - radius**s) == 0
++        and sp.simplify(conjugate_modulus_character - modulus_character) == 0
++        and sp.diff(modulus_character, phi) == 0
++        and sp.simplify(
++            modulus_character.subs(phi, 0)
++            - modulus_character.subs(phi, sp.pi / 2)
++        )
++        == 0,
++    )
++
++    checks.finish()
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+
+2026-07-18T01:18:45.556113Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 357ms:
+0
+[0, pi/phi]
+[0]
+
+codex
+The witness increment passes 18/18. For T2 I’m using SymPy’s generic pointwise solve plus the “for all φ” identity condition: the φ-dependent branches are not fixed integer character indices, while the identity’s exact first coefficient solves only to `k = 0`. This avoids the mathematically invalid shortcut of treating one pointwise sine equation as sufficient.
+apply patch
+patch: completed
+/Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+diff --git a/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..2e2b98c56596621187a02a49a3ea98c55676e8a1
+--- /dev/null
++++ b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+@@ -0,0 +1,334 @@
++#!/usr/bin/env python3
++"""Exact checks for the theta forcing-property characterization note."""
++
++from pathlib import Path
++
++import sympy as sp
++
++
++ROOT = Path(__file__).resolve().parents[1]
++TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
++OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
++PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
++REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
++
++
++def normalized_whitespace(text):
++    return " ".join(text.split())
++
++
++class CheckRunner:
++    def __init__(self):
++        self.passed = 0
++        self.failed = 0
++
++    def check(self, label, condition):
++        try:
++            ok = bool(condition)
++        except (TypeError, ValueError):
++            ok = condition == sp.true
++        if ok:
++            self.passed += 1
++            print(f"PASS: {label}")
++        else:
++            self.failed += 1
++            print(f"FAIL: {label}")
++
++    def needle(self, label, path, needles):
++        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
++        if isinstance(needles, str):
++            needles = (needles,)
++        self.check(
++            label,
++            all(normalized_whitespace(needle) in haystack for needle in needles),
++        )
++
++    def finish(self):
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return 0 if self.failed == 0 else 1
++
++
++def main():
++    checks = CheckRunner()
++    print(
++        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
++        "alone. They are checked only with the separately supplied "
++        "conjugation-pair/trivial-sector normalization."
++    )
++
++    # Group C -- conjugation and the phase functional.
++    radius = sp.symbols("r", positive=True, real=True)
++    phi = sp.symbols("phi", real=True)
++    z = radius * sp.exp(sp.I * phi)
++    checks.check(
++        "C1 symbolic conjugation reverses the phase",
++        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
++    )
++
++    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
++    checks.check(
++        "C1 principal-branch argument reversal at exact witnesses",
++        all(
++            sp.simplify(
++                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
++                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
++            )
++            == 0
++            for angle in principal_witnesses
++        ),
++    )
++
++    formal_value = sp.symbols("f")
++    checks.check(
++        "C2 formal odd-and-even elimination",
++        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
++    )
++
++    c1 = sp.symbols("c1")
++    odd_family = c1 * sp.sin(phi)
++    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
++    checks.check(
++        "C2 generic odd-family evenness forces its coefficient to zero",
++        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
++        and sp.solve(evenness_equation, c1) == [0],
++    )
++
++    # Group P -- the two named odd-side consequences.
++    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
++        "h_phi h_neg_phi h_sum h_trivial"
++    )
++    additive_elimination = sp.solve(
++        (
++            sp.Eq(h_sum, h_phi + h_neg_phi),
++            sp.Eq(h_sum, h_trivial),
++            sp.Eq(h_trivial, 0),
++        ),
++        (h_neg_phi, h_sum, h_trivial),
++        dict=True,
++    )
++    checks.check(
++        "P1 additivity plus conjugation-pair normalization implies oddness",
++        additive_elimination
++        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
++    )
++
++    phi1 = sp.pi / 6
++    phi2 = sp.pi / 3
++    z1 = sp.exp(sp.I * phi1)
++    z2 = sp.exp(sp.I * phi2)
++    checks.check(
++        "P2 principal-range argument is additive at exact witnesses",
++        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
++    )
++
++    k = sp.symbols("k", integer=True)
++    alpha, beta = sp.symbols("alpha beta", real=True)
++    checks.check(
++        "P2 character exponent is additive identically",
++        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
++    )
++
++    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
++    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
++    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
++    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
++    block_matrix = sp.diag(matrix_a, matrix_b)
++    checks.check(
++        "P2 symbolic two-by-two block determinant law",
++        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
++    )
++
++    # Group W -- exact registering witnesses and the silent control.
++    k_nonzero = sp.symbols("k_nz", integer=True, nonzero=True)
++    character_phase = k_nonzero * phi
++    checks.check(
++        "W1a nonzero-character phase functional is odd identically",
++        sp.expand(character_phase.subs(phi, -phi) + character_phase) == 0,
++    )
++
++    character_product = sp.exp(sp.I * k_nonzero * phi1) * sp.exp(
++        sp.I * k_nonzero * phi2
++    )
++    checks.check(
++        "W1a character composes multiplicatively at exact witnesses",
++        sp.simplify(
++            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
++        )
++        == 0,
++    )
++
++    orbit_value = sp.exp(sp.I * sp.pi / 2)
++    conjugate_orbit_value = sp.exp(-sp.I * sp.pi / 2)
++    checks.check(
++        "W1b k=1 character breaks orbit constancy",
++        orbit_value == sp.I
++        and conjugate_orbit_value == -sp.I
++        and orbit_value != conjugate_orbit_value,
++    )
++
++    checks.check(
++        "W1c k=1 character registers phase",
++        sp.exp(sp.I * 0) == 1
++        and sp.exp(sp.I * sp.pi / 2) == sp.I
++        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2),
++    )
++
++    cosine_probe = sp.cos(phi)
++    checks.check(
++        "W2a cosine is even identically",
++        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0,
++    )
++
++    checks.check(
++        "W2a cosine is not odd",
++        cosine_probe.subs(phi, 0) == 1
++        and -cosine_probe.subs(phi, 0) == -1
++        and cosine_probe.subs(phi, 0) != -cosine_probe.subs(phi, 0),
++    )
++
++    checks.check(
++        "W2b cosine breaks multiplicative homomorphism",
++        sp.cos(sp.pi) == -1
++        and sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2) == 0
++        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2),
++    )
++
++    cosine_pair_sum = cosine_probe.subs(phi, -phi) + cosine_probe
++    checks.check(
++        "W2c cosine breaks the additivity-oddness consequence",
++        sp.trigsimp(cosine_pair_sum - 2 * sp.cos(phi)) == 0
++        and cosine_pair_sum.subs(phi, 0) == 2
++        and cosine_pair_sum.subs(phi, 0) != 0,
++    )
++
++    checks.check(
++        "W2d cosine registers phase",
++        sp.cos(0) == 1 and sp.cos(sp.pi) == -1 and sp.cos(0) != sp.cos(sp.pi),
++    )
++
++    s = sp.symbols("s", real=True)
++    modulus_character = sp.Abs(z) ** s
++    conjugate_modulus_character = sp.Abs(sp.conjugate(z)) ** s
++    checks.check(
++        "W3 k=0 modulus character is orbit-constant and phase-silent",
++        sp.simplify(modulus_character - radius**s) == 0
++        and sp.simplify(conjugate_modulus_character - modulus_character) == 0
++        and sp.diff(modulus_character, phi) == 0
++        and sp.simplify(
++            modulus_character.subs(phi, 0)
++            - modulus_character.subs(phi, sp.pi / 2)
++        )
++        == 0,
++    )
++
++    # Group T -- assemble the two forward cells and the necessity witnesses.
++    forward_value, forward_negative = sp.symbols(
++        "forward_value forward_negative"
++    )
++    odd_even_solution = sp.solve(
++        (
++            sp.Eq(forward_negative, -forward_value),
++            sp.Eq(forward_negative, forward_value),
++        ),
++        (forward_value, forward_negative),
++        dict=True,
++    )
++    checks.check(
++        "T1 landed additive-plus-orbit mechanism re-derived",
++        odd_even_solution == [{forward_value: 0, forward_negative: 0}],
++    )
++
++    character_evenness_difference = sp.exp(sp.I * k * phi) - sp.exp(
++        -sp.I * k * phi
++    )
++    generic_k_candidates = sp.solve(sp.Eq(sp.sin(k * phi), 0), k)
++    phi_independent_candidates = [
++        candidate for candidate in generic_k_candidates if not candidate.has(phi)
++    ]
++    identity_coefficient = sp.diff(sp.sin(k * phi), phi).subs(phi, 0)
++    checks.check(
++        "T2 character-family evenness for all phases forces k=0",
++        sp.simplify(
++            character_evenness_difference - 2 * sp.I * sp.sin(k * phi)
++        )
++        == 0
++        and phi_independent_candidates == [0]
++        and identity_coefficient == k
++        and sp.solve(sp.Eq(identity_coefficient, 0), k) == [0],
++    )
++
++    w1_additive_odd_side = (
++        sp.expand(
++            k_nonzero * (alpha + beta)
++            - (k_nonzero * alpha + k_nonzero * beta)
++        )
++        == 0
++    )
++    w1_homomorphic_odd_side = (
++        sp.simplify(
++            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
++        )
++        == 0
++    )
++    w1_not_orbit_constant_and_registers = (
++        orbit_value != conjugate_orbit_value
++        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2)
++    )
++    w2_orbit_constant = (
++        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0
++    )
++    w2_neither_odd_side_and_registers = (
++        cosine_pair_sum.subs(phi, 0) != 0
++        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2)
++        and sp.cos(0) != sp.cos(sp.pi)
++    )
++    checks.check(
++        "T3 characterization corollary: W1 supplies both odd sides without "
++        "orbit constancy; W2 supplies orbit constancy without either odd side",
++        w1_additive_odd_side
++        and w1_homomorphic_odd_side
++        and w1_not_orbit_constant_and_registers
++        and w2_orbit_constant
++        and w2_neither_odd_side_and_registers,
++    )
++
++    # Group N -- normalized-whitespace source needles.  The Verification
++    # __TOTAL__ placeholder is deliberately neither parsed nor matched.
++    checks.needle(
++        "N1 obligation exact-target needle",
++        OBLIGATION,
++        "Derive from the retained framework chain whether the charged-lepton "
++        "`K`/CPT occupancy carrier is the same physical channel",
++    )
++    checks.needle(
++        "N2 obligation insufficiency needle",
++        OBLIGATION,
++        "similarity, shared notation, and historical decision text are insufficient",
++    )
++    checks.needle(
++        "N3 phase-erasure hostile-guard needle",
++        PHASE_ERASURE_NOTE,
++        "K/CPT orbit invariance alone gives evenness, not phase erasure",
++    )
++    checks.needle(
++        "N4 registrable-note mechanism needle",
++        REGISTRABLE_NOTE,
++        "homomorphism forces odd; even forces zero",
++    )
++    checks.needle(
++        "N5 characterization-note identifier, properties, and reduction needle",
++        TARGET_NOTE,
++        (
++            "theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17",
++            "**(P-add)**",
++            "**(P-hom)**",
++            "**(P-orb)**",
++            "one transported property",
++        ),
++    )
++
++    return checks.finish()
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+
+diff --git a/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..2e2b98c56596621187a02a49a3ea98c55676e8a1
+--- /dev/null
++++ b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+@@ -0,0 +1,334 @@
++#!/usr/bin/env python3
++"""Exact checks for the theta forcing-property characterization note."""
++
++from pathlib import Path
++
++import sympy as sp
++
++
++ROOT = Path(__file__).resolve().parents[1]
++TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
++OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
++PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
++REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
++
++
++def normalized_whitespace(text):
++    return " ".join(text.split())
++
++
++class CheckRunner:
++    def __init__(self):
++        self.passed = 0
++        self.failed = 0
++
++    def check(self, label, condition):
++        try:
++            ok = bool(condition)
++        except (TypeError, ValueError):
++            ok = condition == sp.true
++        if ok:
++            self.passed += 1
++            print(f"PASS: {label}")
++        else:
++            self.failed += 1
++            print(f"FAIL: {label}")
++
++    def needle(self, label, path, needles):
++        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
++        if isinstance(needles, str):
++            needles = (needles,)
++        self.check(
++            label,
++            all(normalized_whitespace(needle) in haystack for needle in needles),
++        )
++
++    def finish(self):
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return 0 if self.failed == 0 else 1
++
++
++def main():
++    checks = CheckRunner()
++    print(
++        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
++        "alone. They are checked only with the separately supplied "
++        "conjugation-pair/trivial-sector normalization."
++    )
++
++    # Group C -- conjugation and the phase functional.
++    radius = sp.symbols("r", positive=True, real=True)
++    phi = sp.symbols("phi", real=True)
++    z = radius * sp.exp(sp.I * phi)
++    checks.check(
++        "C1 symbolic conjugation reverses the phase",
++        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
++    )
++
++    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
++    checks.check(
++        "C1 principal-branch argument reversal at exact witnesses",
++        all(
++            sp.simplify(
++                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
++                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
++            )
++            == 0
++            for angle in principal_witnesses
++        ),
++    )
++
++    formal_value = sp.symbols("f")
++    checks.check(
++        "C2 formal odd-and-even elimination",
++        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
++    )
++
++    c1 = sp.symbols("c1")
++    odd_family = c1 * sp.sin(phi)
++    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
++    checks.check(
++        "C2 generic odd-family evenness forces its coefficient to zero",
++        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
++        and sp.solve(evenness_equation, c1) == [0],
++    )
++
++    # Group P -- the two named odd-side consequences.
++    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
++        "h_phi h_neg_phi h_sum h_trivial"
++    )
++    additive_elimination = sp.solve(
++        (
++            sp.Eq(h_sum, h_phi + h_neg_phi),
++            sp.Eq(h_sum, h_trivial),
++            sp.Eq(h_trivial, 0),
++        ),
++        (h_neg_phi, h_sum, h_trivial),
++        dict=True,
++    )
++    checks.check(
++        "P1 additivity plus conjugation-pair normalization implies oddness",
++        additive_elimination
++        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
++    )
++
++    phi1 = sp.pi / 6
++    phi2 = sp.pi / 3
++    z1 = sp.exp(sp.I * phi1)
++    z2 = sp.exp(sp.I * phi2)
++    checks.check(
++        "P2 principal-range argument is additive at exact witnesses",
++        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
++    )
++
++    k = sp.symbols("k", integer=True)
++    alpha, beta = sp.symbols("alpha beta", real=True)
++    checks.check(
++        "P2 character exponent is additive identically",
++        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
++    )
++
++    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
++    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
++    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
++    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
++    block_matrix = sp.diag(matrix_a, matrix_b)
++    checks.check(
++        "P2 symbolic two-by-two block determinant law",
++        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
++    )
++
++    # Group W -- exact registering witnesses and the silent control.
++    k_nonzero = sp.symbols("k_nz", integer=True, nonzero=True)
++    character_phase = k_nonzero * phi
++    checks.check(
++        "W1a nonzero-character phase functional is odd identically",
++        sp.expand(character_phase.subs(phi, -phi) + character_phase) == 0,
++    )
++
++    character_product = sp.exp(sp.I * k_nonzero * phi1) * sp.exp(
++        sp.I * k_nonzero * phi2
++    )
++    checks.check(
++        "W1a character composes multiplicatively at exact witnesses",
++        sp.simplify(
++            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
++        )
++        == 0,
++    )
++
++    orbit_value = sp.exp(sp.I * sp.pi / 2)
++    conjugate_orbit_value = sp.exp(-sp.I * sp.pi / 2)
++    checks.check(
++        "W1b k=1 character breaks orbit constancy",
++        orbit_value == sp.I
++        and conjugate_orbit_value == -sp.I
++        and orbit_value != conjugate_orbit_value,
++    )
++
++    checks.check(
++        "W1c k=1 character registers phase",
++        sp.exp(sp.I * 0) == 1
++        and sp.exp(sp.I * sp.pi / 2) == sp.I
++        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2),
++    )
++
++    cosine_probe = sp.cos(phi)
++    checks.check(
++        "W2a cosine is even identically",
++        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0,
++    )
++
++    checks.check(
++        "W2a cosine is not odd",
++        cosine_probe.subs(phi, 0) == 1
++        and -cosine_probe.subs(phi, 0) == -1
++        and cosine_probe.subs(phi, 0) != -cosine_probe.subs(phi, 0),
++    )
++
++    checks.check(
++        "W2b cosine breaks multiplicative homomorphism",
++        sp.cos(sp.pi) == -1
++        and sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2) == 0
++        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2),
++    )
++
++    cosine_pair_sum = cosine_probe.subs(phi, -phi) + cosine_probe
++    checks.check(
++        "W2c cosine breaks the additivity-oddness consequence",
++        sp.trigsimp(cosine_pair_sum - 2 * sp.cos(phi)) == 0
++        and cosine_pair_sum.subs(phi, 0) == 2
++        and cosine_pair_sum.subs(phi, 0) != 0,
++    )
++
++    checks.check(
++        "W2d cosine registers phase",
++        sp.cos(0) == 1 and sp.cos(sp.pi) == -1 and sp.cos(0) != sp.cos(sp.pi),
++    )
++
++    s = sp.symbols("s", real=True)
++    modulus_character = sp.Abs(z) ** s
++    conjugate_modulus_character = sp.Abs(sp.conjugate(z)) ** s
++    checks.check(
++        "W3 k=0 modulus character is orbit-constant and phase-silent",
++        sp.simplify(modulus_character - radius**s) == 0
++        and sp.simplify(conjugate_modulus_character - modulus_character) == 0
++        and sp.diff(modulus_character, phi) == 0
++        and sp.simplify(
++            modulus_character.subs(phi, 0)
++            - modulus_character.subs(phi, sp.pi / 2)
++        )
++        == 0,
++    )
++
++    # Group T -- assemble the two forward cells and the necessity witnesses.
++    forward_value, forward_negative = sp.symbols(
++        "forward_value forward_negative"
++    )
++    odd_even_solution = sp.solve(
++        (
++            sp.Eq(forward_negative, -forward_value),
++            sp.Eq(forward_negative, forward_value),
++        ),
++        (forward_value, forward_negative),
++        dict=True,
++    )
++    checks.check(
++        "T1 landed additive-plus-orbit mechanism re-derived",
++        odd_even_solution == [{forward_value: 0, forward_negative: 0}],
++    )
++
++    character_evenness_difference = sp.exp(sp.I * k * phi) - sp.exp(
++        -sp.I * k * phi
++    )
++    generic_k_candidates = sp.solve(sp.Eq(sp.sin(k * phi), 0), k)
++    phi_independent_candidates = [
++        candidate for candidate in generic_k_candidates if not candidate.has(phi)
++    ]
++    identity_coefficient = sp.diff(sp.sin(k * phi), phi).subs(phi, 0)
++    checks.check(
++        "T2 character-family evenness for all phases forces k=0",
++        sp.simplify(
++            character_evenness_difference - 2 * sp.I * sp.sin(k * phi)
++        )
++        == 0
++        and phi_independent_candidates == [0]
++        and identity_coefficient == k
++        and sp.solve(sp.Eq(identity_coefficient, 0), k) == [0],
++    )
++
++    w1_additive_odd_side = (
++        sp.expand(
++            k_nonzero * (alpha + beta)
++            - (k_nonzero * alpha + k_nonzero * beta)
++        )
++        == 0
++    )
++    w1_homomorphic_odd_side = (
++        sp.simplify(
++            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
++        )
++        == 0
++    )
++    w1_not_orbit_constant_and_registers = (
++        orbit_value != conjugate_orbit_value
++        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2)
++    )
++    w2_orbit_constant = (
++        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0
++    )
++    w2_neither_odd_side_and_registers = (
++        cosine_pair_sum.subs(phi, 0) != 0
++        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2)
++        and sp.cos(0) != sp.cos(sp.pi)
++    )
++    checks.check(
++        "T3 characterization corollary: W1 supplies both odd sides without "
++        "orbit constancy; W2 supplies orbit constancy without either odd side",
++        w1_additive_odd_side
++        and w1_homomorphic_odd_side
++        and w1_not_orbit_constant_and_registers
++        and w2_orbit_constant
++        and w2_neither_odd_side_and_registers,
++    )
++
++    # Group N -- normalized-whitespace source needles.  The Verification
++    # __TOTAL__ placeholder is deliberately neither parsed nor matched.
++    checks.needle(
++        "N1 obligation exact-target needle",
++        OBLIGATION,
++        "Derive from the retained framework chain whether the charged-lepton "
++        "`K`/CPT occupancy carrier is the same physical channel",
++    )
++    checks.needle(
++        "N2 obligation insufficiency needle",
++        OBLIGATION,
++        "similarity, shared notation, and historical decision text are insufficient",
++    )
++    checks.needle(
++        "N3 phase-erasure hostile-guard needle",
++        PHASE_ERASURE_NOTE,
++        "K/CPT orbit invariance alone gives evenness, not phase erasure",
++    )
++    checks.needle(
++        "N4 registrable-note mechanism needle",
++        REGISTRABLE_NOTE,
++        "homomorphism forces odd; even forces zero",
++    )
++    checks.needle(
++        "N5 characterization-note identifier, properties, and reduction needle",
++        TARGET_NOTE,
++        (
++            "theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17",
++            "**(P-add)**",
++            "**(P-hom)**",
++            "**(P-orb)**",
++            "one transported property",
++        ),
++    )
++
++    return checks.finish()
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+
+2026-07-18T01:19:22.364480Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'python3 scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+diff --git a/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..2e2b98c56596621187a02a49a3ea98c55676e8a1
+--- /dev/null
++++ b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+@@ -0,0 +1,334 @@
++#!/usr/bin/env python3
++"""Exact checks for the theta forcing-property characterization note."""
++
++from pathlib import Path
++
++import sympy as sp
++
++
++ROOT = Path(__file__).resolve().parents[1]
++TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
++OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
++PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
++REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
++
++
++def normalized_whitespace(text):
++    return " ".join(text.split())
++
++
++class CheckRunner:
++    def __init__(self):
++        self.passed = 0
++        self.failed = 0
++
++    def check(self, label, condition):
++        try:
++            ok = bool(condition)
++        except (TypeError, ValueError):
++            ok = condition == sp.true
++        if ok:
++            self.passed += 1
++            print(f"PASS: {label}")
++        else:
++            self.failed += 1
++            print(f"FAIL: {label}")
++
++    def needle(self, label, path, needles):
++        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
++        if isinstance(needles, str):
++            needles = (needles,)
++        self.check(
++            label,
++            all(normalized_whitespace(needle) in haystack for needle in needles),
++        )
++
++    def finish(self):
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return 0 if self.failed == 0 else 1
++
++
++def main():
++    checks = CheckRunner()
++    print(
++        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
++        "alone. They are checked only with the separately supplied "
++        "conjugation-pair/trivial-sector normalization."
++    )
++
++    # Group C -- conjugation and the phase functional.
++    radius = sp.symbols("r", positive=True, real=True)
++    phi = sp.symbols("phi", real=True)
++    z = radius * sp.exp(sp.I * phi)
++    checks.check(
++        "C1 symbolic conjugation reverses the phase",
++        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
++    )
++
++    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
++    checks.check(
++        "C1 principal-branch argument reversal at exact witnesses",
++        all(
++            sp.simplify(
++                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
++                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
++            )
++            == 0
++            for angle in principal_witnesses
++        ),
++    )
++
++    formal_value = sp.symbols("f")
++    checks.check(
++        "C2 formal odd-and-even elimination",
++        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
++    )
++
++    c1 = sp.symbols("c1")
++    odd_family = c1 * sp.sin(phi)
++    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
++    checks.check(
++        "C2 generic odd-family evenness forces its coefficient to zero",
++        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
++        and sp.solve(evenness_equation, c1) == [0],
++    )
++
++    # Group P -- the two named odd-side consequences.
++    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
++        "h_phi h_neg_phi h_sum h_trivial"
++    )
++    additive_elimination = sp.solve(
++        (
++            sp.Eq(h_sum, h_phi + h_neg_phi),
++            sp.Eq(h_sum, h_trivial),
++            sp.Eq(h_trivial, 0),
++        ),
++        (h_neg_phi, h_sum, h_trivial),
++        dict=True,
++    )
++    checks.check(
++        "P1 additivity plus conjugation-pair normalization implies oddness",
++        additive_elimination
++        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
++    )
++
++    phi1 = sp.pi / 6
++    phi2 = sp.pi / 3
++    z1 = sp.exp(sp.I * phi1)
++    z2 = sp.exp(sp.I * phi2)
++    checks.check(
++        "P2 principal-range argument is additive at exact witnesses",
++        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
++    )
++
++    k = sp.symbols("k", integer=True)
++    alpha, beta = sp.symbols("alpha beta", real=True)
++    checks.check(
++        "P2 character exponent is additive identically",
++        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
++    )
++
++    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
++    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
++    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
++    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
++    block_matrix = sp.diag(matrix_a, matrix_b)
++    checks.check(
++        "P2 symbolic two-by-two block determinant law",
++        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
++    )
++
++    # Group W -- exact registering witnesses and the silent control.
++    k_nonzero = sp.symbols("k_nz", integer=True, nonzero=True)
++    character_phase = k_nonzero * phi
++    checks.check(
++        "W1a nonzero-character phase functional is odd identically",
++        sp.expand(character_phase.subs(phi, -phi) + character_phase) == 0,
++    )
++
++    character_product = sp.exp(sp.I * k_nonzero * phi1) * sp.exp(
++        sp.I * k_nonzero * phi2
++    )
++    checks.check(
++        "W1a character composes multiplicatively at exact witnesses",
++        sp.simplify(
++            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
++        )
++        == 0,
++    )
++
++    orbit_value = sp.exp(sp.I * sp.pi / 2)
++    conjugate_orbit_value = sp.exp(-sp.I * sp.pi / 2)
++    checks.check(
++        "W1b k=1 character breaks orbit constancy",
++        orbit_value == sp.I
++        and conjugate_orbit_value == -sp.I
++        and orbit_value != conjugate_orbit_value,
++    )
++
++    checks.check(
++        "W1c k=1 character registers phase",
++        sp.exp(sp.I * 0) == 1
++        and sp.exp(sp.I * sp.pi / 2) == sp.I
++        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2),
++    )
++
++    cosine_probe = sp.cos(phi)
++    checks.check(
++        "W2a cosine is even identically",
++        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0,
++    )
++
++    checks.check(
++        "W2a cosine is not odd",
++        cosine_probe.subs(phi, 0) == 1
++        and -cosine_probe.subs(phi, 0) == -1
++        and cosine_probe.subs(phi, 0) != -cosine_probe.subs(phi, 0),
++    )
++
++    checks.check(
++        "W2b cosine breaks multiplicative homomorphism",
++        sp.cos(sp.pi) == -1
++        and sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2) == 0
++        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2),
++    )
++
++    cosine_pair_sum = cosine_probe.subs(phi, -phi) + cosine_probe
++    checks.check(
++        "W2c cosine breaks the additivity-oddness consequence",
++        sp.trigsimp(cosine_pair_sum - 2 * sp.cos(phi)) == 0
++        and cosine_pair_sum.subs(phi, 0) == 2
++        and cosine_pair_sum.subs(phi, 0) != 0,
++    )
++
++    checks.check(
++        "W2d cosine registers phase",
++        sp.cos(0) == 1 and sp.cos(sp.pi) == -1 and sp.cos(0) != sp.cos(sp.pi),
++    )
++
++    s = sp.symbols("s", real=True)
++    modulus_character = sp.Abs(z) ** s
++    conjugate_modulus_character = sp.Abs(sp.conjugate(z)) ** s
++    checks.check(
++        "W3 k=0 modulus character is orbit-constant and phase-silent",
++        sp.simplify(modulus_character - radius**s) == 0
++        and sp.simplify(conjugate_modulus_character - modulus_character) == 0
++        and sp.diff(modulus_character, phi) == 0
++        and sp.simplify(
++            modulus_character.subs(phi, 0)
++            - modulus_character.subs(phi, sp.pi / 2)
++        )
++        == 0,
++    )
++
++    # Group T -- assemble the two forward cells and the necessity witnesses.
++    forward_value, forward_negative = sp.symbols(
++        "forward_value forward_negative"
++    )
++    odd_even_solution = sp.solve(
++        (
++            sp.Eq(forward_negative, -forward_value),
++            sp.Eq(forward_negative, forward_value),
++        ),
++        (forward_value, forward_negative),
++        dict=True,
++    )
++    checks.check(
++        "T1 landed additive-plus-orbit mechanism re-derived",
++        odd_even_solution == [{forward_value: 0, forward_negative: 0}],
++    )
++
++    character_evenness_difference = sp.exp(sp.I * k * phi) - sp.exp(
++        -sp.I * k * phi
++    )
++    generic_k_candidates = sp.solve(sp.Eq(sp.sin(k * phi), 0), k)
++    phi_independent_candidates = [
++        candidate for candidate in generic_k_candidates if not candidate.has(phi)
++    ]
++    identity_coefficient = sp.diff(sp.sin(k * phi), phi).subs(phi, 0)
++    checks.check(
++        "T2 character-family evenness for all phases forces k=0",
++        sp.simplify(
++            character_evenness_difference - 2 * sp.I * sp.sin(k * phi)
++        )
++        == 0
++        and phi_independent_candidates == [0]
++        and identity_coefficient == k
++        and sp.solve(sp.Eq(identity_coefficient, 0), k) == [0],
++    )
++
++    w1_additive_odd_side = (
++        sp.expand(
++            k_nonzero * (alpha + beta)
++            - (k_nonzero * alpha + k_nonzero * beta)
++        )
++        == 0
++    )
++    w1_homomorphic_odd_side = (
++        sp.simplify(
++            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
++        )
++        == 0
++    )
++    w1_not_orbit_constant_and_registers = (
++        orbit_value != conjugate_orbit_value
++        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2)
++    )
++    w2_orbit_constant = (
++        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0
++    )
++    w2_neither_odd_side_and_registers = (
++        cosine_pair_sum.subs(phi, 0) != 0
++        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2)
++        and sp.cos(0) != sp.cos(sp.pi)
++    )
++    checks.check(
++        "T3 characterization corollary: W1 supplies both odd sides without "
++        "orbit constancy; W2 supplies orbit constancy without either odd side",
++        w1_additive_odd_side
++        and w1_homomorphic_odd_side
++        and w1_not_orbit_constant_and_registers
++        and w2_orbit_constant
++        and w2_neither_odd_side_and_registers,
++    )
++
++    # Group N -- normalized-whitespace source needles.  The Verification
++    # __TOTAL__ placeholder is deliberately neither parsed nor matched.
++    checks.needle(
++        "N1 obligation exact-target needle",
++        OBLIGATION,
++        "Derive from the retained framework chain whether the charged-lepton "
++        "`K`/CPT occupancy carrier is the same physical channel",
++    )
++    checks.needle(
++        "N2 obligation insufficiency needle",
++        OBLIGATION,
++        "similarity, shared notation, and historical decision text are insufficient",
++    )
++    checks.needle(
++        "N3 phase-erasure hostile-guard needle",
++        PHASE_ERASURE_NOTE,
++        "K/CPT orbit invariance alone gives evenness, not phase erasure",
++    )
++    checks.needle(
++        "N4 registrable-note mechanism needle",
++        REGISTRABLE_NOTE,
++        "homomorphism forces odd; even forces zero",
++    )
++    checks.needle(
++        "N5 characterization-note identifier, properties, and reduction needle",
++        TARGET_NOTE,
++        (
++            "theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17",
++            "**(P-add)**",
++            "**(P-hom)**",
++            "**(P-orb)**",
++            "one transported property",
++        ),
++    )
++
++    return checks.finish()
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+
+2026-07-18T01:19:27.262229Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 371ms:
+FLAG: P1/T1 are not consequences of finite disjoint-record additivity alone. They are checked only with the separately supplied conjugation-pair/trivial-sector normalization.
+PASS: C1 symbolic conjugation reverses the phase
+PASS: C1 principal-branch argument reversal at exact witnesses
+PASS: C2 formal odd-and-even elimination
+PASS: C2 generic odd-family evenness forces its coefficient to zero
+PASS: P1 additivity plus conjugation-pair normalization implies oddness
+PASS: P2 principal-range argument is additive at exact witnesses
+PASS: P2 character exponent is additive identically
+PASS: P2 symbolic two-by-two block determinant law
+PASS: W1a nonzero-character phase functional is odd identically
+PASS: W1a character composes multiplicatively at exact witnesses
+PASS: W1b k=1 character breaks orbit constancy
+PASS: W1c k=1 character registers phase
+PASS: W2a cosine is even identically
+PASS: W2a cosine is not odd
+PASS: W2b cosine breaks multiplicative homomorphism
+PASS: W2c cosine breaks the additivity-oddness consequence
+PASS: W2d cosine registers phase
+PASS: W3 k=0 modulus character is orbit-constant and phase-silent
+PASS: T1 landed additive-plus-orbit mechanism re-derived
+PASS: T2 character-family evenness for all phases forces k=0
+PASS: T3 characterization corollary: W1 supplies both odd sides without orbit constancy; W2 supplies orbit constancy without either odd side
+PASS: N1 obligation exact-target needle
+PASS: N2 obligation insufficiency needle
+PASS: N3 phase-erasure hostile-guard needle
+PASS: N4 registrable-note mechanism needle
+PASS: N5 characterization-note identifier, properties, and reduction needle
+TOTAL: PASS=26 FAIL=0
+
+codex
+Created [theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py](/Users/jonBridger/Toy%20Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py).
+
+`TOTAL: PASS=26 FAIL=0`
+
+The runner loudly flags that P1/T1 require the additional conjugation-pair/trivial-sector normalization; finite record additivity alone does not imply oddness. The requested reference runner was absent, so the specified CheckRunner/print/needle structure was reproduced directly. No note, cache, or other file was changed.
+diff --git a/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..2e2b98c56596621187a02a49a3ea98c55676e8a1
+--- /dev/null
++++ b/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+@@ -0,0 +1,334 @@
++#!/usr/bin/env python3
++"""Exact checks for the theta forcing-property characterization note."""
++
++from pathlib import Path
++
++import sympy as sp
++
++
++ROOT = Path(__file__).resolve().parents[1]
++TARGET_NOTE = ROOT / "docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
++OBLIGATION = ROOT / "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
++PHASE_ERASURE_NOTE = ROOT / "docs/THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md"
++REGISTRABLE_NOTE = ROOT / "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
++
++
++def normalized_whitespace(text):
++    return " ".join(text.split())
++
++
++class CheckRunner:
++    def __init__(self):
++        self.passed = 0
++        self.failed = 0
++
++    def check(self, label, condition):
++        try:
++            ok = bool(condition)
++        except (TypeError, ValueError):
++            ok = condition == sp.true
++        if ok:
++            self.passed += 1
++            print(f"PASS: {label}")
++        else:
++            self.failed += 1
++            print(f"FAIL: {label}")
++
++    def needle(self, label, path, needles):
++        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
++        if isinstance(needles, str):
++            needles = (needles,)
++        self.check(
++            label,
++            all(normalized_whitespace(needle) in haystack for needle in needles),
++        )
++
++    def finish(self):
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return 0 if self.failed == 0 else 1
++
++
++def main():
++    checks = CheckRunner()
++    print(
++        "FLAG: P1/T1 are not consequences of finite disjoint-record additivity "
++        "alone. They are checked only with the separately supplied "
++        "conjugation-pair/trivial-sector normalization."
++    )
++
++    # Group C -- conjugation and the phase functional.
++    radius = sp.symbols("r", positive=True, real=True)
++    phi = sp.symbols("phi", real=True)
++    z = radius * sp.exp(sp.I * phi)
++    checks.check(
++        "C1 symbolic conjugation reverses the phase",
++        sp.simplify(sp.conjugate(z) - radius * sp.exp(-sp.I * phi)) == 0,
++    )
++
++    principal_witnesses = (sp.S.Zero, sp.pi / 4, sp.pi / 2, 3 * sp.pi / 4)
++    checks.check(
++        "C1 principal-branch argument reversal at exact witnesses",
++        all(
++            sp.simplify(
++                sp.arg(sp.conjugate(sp.Rational(7, 3) * sp.exp(sp.I * angle)))
++                + sp.arg(sp.Rational(7, 3) * sp.exp(sp.I * angle))
++            )
++            == 0
++            for angle in principal_witnesses
++        ),
++    )
++
++    formal_value = sp.symbols("f")
++    checks.check(
++        "C2 formal odd-and-even elimination",
++        sp.solve(sp.Eq(formal_value, -formal_value), formal_value) == [0],
++    )
++
++    c1 = sp.symbols("c1")
++    odd_family = c1 * sp.sin(phi)
++    evenness_equation = sp.Eq(odd_family - odd_family.subs(phi, -phi), 0)
++    checks.check(
++        "C2 generic odd-family evenness forces its coefficient to zero",
++        sp.simplify(evenness_equation.lhs - 2 * c1 * sp.sin(phi)) == 0
++        and sp.solve(evenness_equation, c1) == [0],
++    )
++
++    # Group P -- the two named odd-side consequences.
++    h_phi, h_neg_phi, h_sum, h_trivial = sp.symbols(
++        "h_phi h_neg_phi h_sum h_trivial"
++    )
++    additive_elimination = sp.solve(
++        (
++            sp.Eq(h_sum, h_phi + h_neg_phi),
++            sp.Eq(h_sum, h_trivial),
++            sp.Eq(h_trivial, 0),
++        ),
++        (h_neg_phi, h_sum, h_trivial),
++        dict=True,
++    )
++    checks.check(
++        "P1 additivity plus conjugation-pair normalization implies oddness",
++        additive_elimination
++        == [{h_neg_phi: -h_phi, h_sum: 0, h_trivial: 0}],
++    )
++
++    phi1 = sp.pi / 6
++    phi2 = sp.pi / 3
++    z1 = sp.exp(sp.I * phi1)
++    z2 = sp.exp(sp.I * phi2)
++    checks.check(
++        "P2 principal-range argument is additive at exact witnesses",
++        sp.arg(z1 * z2) == sp.arg(z1) + sp.arg(z2) == sp.pi / 2,
++    )
++
++    k = sp.symbols("k", integer=True)
++    alpha, beta = sp.symbols("alpha beta", real=True)
++    checks.check(
++        "P2 character exponent is additive identically",
++        sp.expand(k * (alpha + beta) - (k * alpha + k * beta)) == 0,
++    )
++
++    a11, a12, a21, a22 = sp.symbols("a11 a12 a21 a22")
++    b11, b12, b21, b22 = sp.symbols("b11 b12 b21 b22")
++    matrix_a = sp.Matrix(((a11, a12), (a21, a22)))
++    matrix_b = sp.Matrix(((b11, b12), (b21, b22)))
++    block_matrix = sp.diag(matrix_a, matrix_b)
++    checks.check(
++        "P2 symbolic two-by-two block determinant law",
++        sp.expand(block_matrix.det() - matrix_a.det() * matrix_b.det()) == 0,
++    )
++
++    # Group W -- exact registering witnesses and the silent control.
++    k_nonzero = sp.symbols("k_nz", integer=True, nonzero=True)
++    character_phase = k_nonzero * phi
++    checks.check(
++        "W1a nonzero-character phase functional is odd identically",
++        sp.expand(character_phase.subs(phi, -phi) + character_phase) == 0,
++    )
++
++    character_product = sp.exp(sp.I * k_nonzero * phi1) * sp.exp(
++        sp.I * k_nonzero * phi2
++    )
++    checks.check(
++        "W1a character composes multiplicatively at exact witnesses",
++        sp.simplify(
++            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
++        )
++        == 0,
++    )
++
++    orbit_value = sp.exp(sp.I * sp.pi / 2)
++    conjugate_orbit_value = sp.exp(-sp.I * sp.pi / 2)
++    checks.check(
++        "W1b k=1 character breaks orbit constancy",
++        orbit_value == sp.I
++        and conjugate_orbit_value == -sp.I
++        and orbit_value != conjugate_orbit_value,
++    )
++
++    checks.check(
++        "W1c k=1 character registers phase",
++        sp.exp(sp.I * 0) == 1
++        and sp.exp(sp.I * sp.pi / 2) == sp.I
++        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2),
++    )
++
++    cosine_probe = sp.cos(phi)
++    checks.check(
++        "W2a cosine is even identically",
++        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0,
++    )
++
++    checks.check(
++        "W2a cosine is not odd",
++        cosine_probe.subs(phi, 0) == 1
++        and -cosine_probe.subs(phi, 0) == -1
++        and cosine_probe.subs(phi, 0) != -cosine_probe.subs(phi, 0),
++    )
++
++    checks.check(
++        "W2b cosine breaks multiplicative homomorphism",
++        sp.cos(sp.pi) == -1
++        and sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2) == 0
++        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2),
++    )
++
++    cosine_pair_sum = cosine_probe.subs(phi, -phi) + cosine_probe
++    checks.check(
++        "W2c cosine breaks the additivity-oddness consequence",
++        sp.trigsimp(cosine_pair_sum - 2 * sp.cos(phi)) == 0
++        and cosine_pair_sum.subs(phi, 0) == 2
++        and cosine_pair_sum.subs(phi, 0) != 0,
++    )
++
++    checks.check(
++        "W2d cosine registers phase",
++        sp.cos(0) == 1 and sp.cos(sp.pi) == -1 and sp.cos(0) != sp.cos(sp.pi),
++    )
++
++    s = sp.symbols("s", real=True)
++    modulus_character = sp.Abs(z) ** s
++    conjugate_modulus_character = sp.Abs(sp.conjugate(z)) ** s
++    checks.check(
++        "W3 k=0 modulus character is orbit-constant and phase-silent",
++        sp.simplify(modulus_character - radius**s) == 0
++        and sp.simplify(conjugate_modulus_character - modulus_character) == 0
++        and sp.diff(modulus_character, phi) == 0
++        and sp.simplify(
++            modulus_character.subs(phi, 0)
++            - modulus_character.subs(phi, sp.pi / 2)
++        )
++        == 0,
++    )
++
++    # Group T -- assemble the two forward cells and the necessity witnesses.
++    forward_value, forward_negative = sp.symbols(
++        "forward_value forward_negative"
++    )
++    odd_even_solution = sp.solve(
++        (
++            sp.Eq(forward_negative, -forward_value),
++            sp.Eq(forward_negative, forward_value),
++        ),
++        (forward_value, forward_negative),
++        dict=True,
++    )
++    checks.check(
++        "T1 landed additive-plus-orbit mechanism re-derived",
++        odd_even_solution == [{forward_value: 0, forward_negative: 0}],
++    )
++
++    character_evenness_difference = sp.exp(sp.I * k * phi) - sp.exp(
++        -sp.I * k * phi
++    )
++    generic_k_candidates = sp.solve(sp.Eq(sp.sin(k * phi), 0), k)
++    phi_independent_candidates = [
++        candidate for candidate in generic_k_candidates if not candidate.has(phi)
++    ]
++    identity_coefficient = sp.diff(sp.sin(k * phi), phi).subs(phi, 0)
++    checks.check(
++        "T2 character-family evenness for all phases forces k=0",
++        sp.simplify(
++            character_evenness_difference - 2 * sp.I * sp.sin(k * phi)
++        )
++        == 0
++        and phi_independent_candidates == [0]
++        and identity_coefficient == k
++        and sp.solve(sp.Eq(identity_coefficient, 0), k) == [0],
++    )
++
++    w1_additive_odd_side = (
++        sp.expand(
++            k_nonzero * (alpha + beta)
++            - (k_nonzero * alpha + k_nonzero * beta)
++        )
++        == 0
++    )
++    w1_homomorphic_odd_side = (
++        sp.simplify(
++            sp.exp(sp.I * k_nonzero * (phi1 + phi2)) - character_product
++        )
++        == 0
++    )
++    w1_not_orbit_constant_and_registers = (
++        orbit_value != conjugate_orbit_value
++        and sp.exp(sp.I * 0) != sp.exp(sp.I * sp.pi / 2)
++    )
++    w2_orbit_constant = (
++        sp.trigsimp(cosine_probe.subs(phi, -phi) - cosine_probe) == 0
++    )
++    w2_neither_odd_side_and_registers = (
++        cosine_pair_sum.subs(phi, 0) != 0
++        and sp.cos(sp.pi) != sp.cos(sp.pi / 2) * sp.cos(sp.pi / 2)
++        and sp.cos(0) != sp.cos(sp.pi)
++    )
++    checks.check(
++        "T3 characterization corollary: W1 supplies both odd sides without "
++        "orbit constancy; W2 supplies orbit constancy without either odd side",
++        w1_additive_odd_side
++        and w1_homomorphic_odd_side
++        and w1_not_orbit_constant_and_registers
++        and w2_orbit_constant
++        and w2_neither_odd_side_and_registers,
++    )
++
++    # Group N -- normalized-whitespace source needles.  The Verification
++    # __TOTAL__ placeholder is deliberately neither parsed nor matched.
++    checks.needle(
++        "N1 obligation exact-target needle",
++        OBLIGATION,
++        "Derive from the retained framework chain whether the charged-lepton "
++        "`K`/CPT occupancy carrier is the same physical channel",
++    )
++    checks.needle(
++        "N2 obligation insufficiency needle",
++        OBLIGATION,
++        "similarity, shared notation, and historical decision text are insufficient",
++    )
++    checks.needle(
++        "N3 phase-erasure hostile-guard needle",
++        PHASE_ERASURE_NOTE,
++        "K/CPT orbit invariance alone gives evenness, not phase erasure",
++    )
++    checks.needle(
++        "N4 registrable-note mechanism needle",
++        REGISTRABLE_NOTE,
++        "homomorphism forces odd; even forces zero",
++    )
++    checks.needle(
++        "N5 characterization-note identifier, properties, and reduction needle",
++        TARGET_NOTE,
++        (
++            "theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17",
++            "**(P-add)**",
++            "**(P-hom)**",
++            "**(P-orb)**",
++            "one transported property",
++        ),
++    )
++
++    return checks.finish()
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+
+tokens used
+52,636
+Created [theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py](/Users/jonBridger/Toy%20Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py).
+
+`TOTAL: PASS=26 FAIL=0`
+
+The runner loudly flags that P1/T1 require the additional conjugation-pair/trivial-sector normalization; finite record additivity alone does not imply oddness. The requested reference runner was absent, so the specified CheckRunner/print/needle structure was reproduced directly. No note, cache, or other file was changed.

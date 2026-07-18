@@ -1,6 +1,6 @@
 {
- "edge_count": 14483,
- "node_count": 3966,
+ "edge_count": 14484,
+ "node_count": 3967,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14101,6 +14101,10 @@
   "theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_bounded_theorem_note_2026-07-02": {
    "deps_hash": "0f6f95392b53",
    "out_degree": 4
+  },
+  "theta_post_erasure_odd_side_collapse_record_facing_tail_bounded_theorem_note_2026-07-18": {
+   "deps_hash": "7d56779087d7",
+   "out_degree": 1
   },
   "theta_quark_determinant_cross_sector_readout_derivation_obligation": {
    "deps_hash": "e3b0c44298fc",

@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.py
+runner_sha256: cf78b199869b3c08dc7a771cddf933d4b5fecd8ae4d373068f0e0487884336aa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+PASS: M1 symbolic modulus is multiplicative across blocks
+PASS: M2 exponential and logarithmic bridges are exact on the stated domains
+PASS: M3 power-family consistency instance G(u)=s*u
+PASS: T1a multiplicative-to-additive direction on strictly positive values
+PASS: T1b additive-to-multiplicative direction through exp
+PASS: T1c rational-homogeneity elimination instance
+PASS: D1 F(1)=F(1)^2 has exactly the values zero and one
+PASS: D2 a zero propagates through the multiplicative factorization
+PASS: INC1 the additive shape at the unit block forces F(1)=0
+PASS: INC2 nonnegative pair summing to zero has no positive member
+PASS: INC3 identity witness: multiplicative but scalar-additivity fails 6 != 5
+PASS: B1 discriminator pair shares zero logarithmic modulus at unit modulus
+PASS: B2 good character is multiplicative at the pair (i, i)
+PASS: B3 twisted readout is not multiplicative at the pair (i, i)
+PASS: B4 pre-erasure phase-silence contrast at fixed modulus
+PASS: N1 parent odd-side ingredient needle
+PASS: N2 erasure-note phase-free family needle
+PASS: N3 target identifier and label needles
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

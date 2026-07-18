@@ -217,7 +217,6 @@ proposal_allowed_reason: |
 - Verdict-named obstruction: [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
 - Prior bootstrap analytical (small-truncation): PR [#420](https://github.com/jonathonreilly/cl3-lattice-framework/pull/420), PR [#423](https://github.com/jonathonreilly/cl3-lattice-framework/pull/423)
 - Bridge-support analytic upper-bound: `GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md`
-- Finite-jet witness construction: [`GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md)
 - Literature: Kazakov-Zheng [arXiv:2203.11360](https://arxiv.org/abs/2203.11360), [arXiv:2404.16925](https://arxiv.org/abs/2404.16925)
 
 ## Audit dependency repair links

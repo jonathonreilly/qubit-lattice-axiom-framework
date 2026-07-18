@@ -27,7 +27,7 @@ one-plaquette block preserves that order under composition.
 | Input | Exact value or statement | Authority and role |
 |---|---|---|
 | onset coefficient | `a = 1/26244 > 0` | [Gauge-vacuum plaquette mixed-cumulant audit](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md), Corollary 2; the runner imports its exact `Fraction` calculation |
-| evaluation interval | `beta in [0,6]` | the interval is stipulated here; its endpoint is the selected finite Wilson coordinate used in the [plaquette self-consistency finite diagnostic](PLAQUETTE_SELF_CONSISTENCY_NOTE.md), without importing the diagnostic's comparator value |
+| evaluation interval | `beta in [0,6]` | stipulated construction domain; no comparator value, physical framework-point identification, or full-Wilson realization is imported |
 | separation coefficient | `c = 1/10^7 > 0` | an explicit rational construction choice in this theorem; it is not fitted data or a physical input |
 | local composition block | `P_1plaq'(x) = Var_x(X) > 0` for the displayed positive arguments | [Gauge-vacuum plaquette reduction existence theorem](GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md), Theorem 1; the variance proof is restated below and the Bessel helper evaluates only the local block |
 

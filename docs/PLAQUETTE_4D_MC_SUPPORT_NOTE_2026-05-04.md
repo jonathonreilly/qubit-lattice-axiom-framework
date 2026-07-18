@@ -98,11 +98,8 @@ them:
   autocorrelation and finite-size systematics;
 - any downstream publication-status or parent-chain update.
 
-Two separate source results organize this comparison:
+The independent constant-lift boundary remains in force:
 
-- [`GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md)
-  supplies a positive finite-jet pair with exact endpoint and local-block
-  separation; it supplies no full-Wilson-stack conclusion;
 - [`GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md)
   rules out the constant-lift shortcut.
 

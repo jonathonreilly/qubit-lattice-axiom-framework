@@ -335,7 +335,6 @@ proposal_allowed_reason: |
 - Verdict-named obstruction: [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
 - Mixed-cumulant onset theorem:
   [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
-- Finite-jet witness construction: [`GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md)
 - Prior campaign block 03 (mean-field saddle stretch): PR [#410](https://github.com/jonathonreilly/cl3-lattice-framework/pull/410), `PLAQUETTE_MINIMAL_BLOCK_SADDLE_STRETCH_NOTE_2026-05-02.md`
 - Literature: Anderson-Kruczenski 2017; Kazakov-Zheng [arXiv:2203.11360](https://arxiv.org/abs/2203.11360), [arXiv:2404.16925](https://arxiv.org/abs/2404.16925); JHEP 12(2025) 033 SU(3) bootstrap
 - Loop pack: `.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/`

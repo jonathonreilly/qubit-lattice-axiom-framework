@@ -113,11 +113,6 @@ These are imported authorities for a bounded theorem. The row remains
 unaudited until the independent audit lane reviews this note, its
 dependencies, and the runner.
 
-The finite-jet pair in
-`GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md` is
-non-load-bearing context only. It supplies no bulk-transition statement and
-is not used in this finite compact-Haar differentiation proof.
-
 ## Boundaries
 
 This note does not close:

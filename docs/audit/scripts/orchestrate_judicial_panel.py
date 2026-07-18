@@ -282,6 +282,56 @@ def seat_context_error(row: dict) -> str | None:
     return None
 
 
+def _seat_blocked_memo_path() -> Path:
+    return batch.DATA / "judicial_seat_blocked.json"
+
+
+def seat_blocked_projection(rows: dict[str, dict]) -> dict[str, dict]:
+    """All disagreement rows whose seats cannot back a valid panel packet.
+
+    Pure projection of current ledger state (deterministic, no timestamps):
+    an entry appears while the block condition holds and disappears the run
+    after the seats are repaired, so freezing needs no owner toggle and
+    cannot go stale.
+    """
+    blocked: dict[str, dict] = {}
+    for cid in sorted(rows):
+        row = rows[cid]
+        if (row.get("cross_confirmation") or {}).get("status") != "disagreement":
+            continue
+        context_error = seat_context_error(row)
+        if context_error:
+            blocked[cid] = {
+                "detail": context_error,
+                "disagreement_fingerprint": disagreement_fingerprint(row),
+                "repair": (
+                    "rerun the cross-confirmation seats under the "
+                    "rationale-preserving apply contract"
+                ),
+            }
+    return blocked
+
+
+def write_seat_blocked_memo(blocked: dict[str, dict]) -> None:
+    """Tracked controller-facing memo: which disagreement rows must not be
+    (re-)targeted for panels, and the exact repair. Controllers consult this
+    instead of re-invoking the panel orchestrator on every main advance."""
+    payload = {
+        "schema_version": 1,
+        "generated_by": "orchestrate_judicial_panel.py",
+        "semantics": (
+            "pure projection of current ledger state; rewritten every panel "
+            "run; empty rows means no seat-blocked disagreements"
+        ),
+        "rows": blocked,
+    }
+    path = _seat_blocked_memo_path()
+    path.write_text(
+        json.dumps(payload, indent=1, sort_keys=True) + "\n", encoding="utf-8"
+    )
+    print(f"wrote {path}")
+
+
 def seat_block(label: str, summary: dict, row: dict) -> str:
     lines = [f"=== BEGIN {label.upper()} POSITION ==="]
     for field in SEAT_ARGUMENT_FIELDS:
@@ -1139,6 +1189,9 @@ def main() -> int:
             for cid, row in rows.items()
             if (row.get("cross_confirmation") or {}).get("status") == "disagreement"
         )
+    # Full-population projection, independent of --claims scoping: a scoped
+    # run must never shrink the memo for rows it did not look at.
+    seat_blocked = seat_blocked_projection(rows)
     targets = []
     for cid in scope:
         row = rows.get(cid)
@@ -1148,8 +1201,21 @@ def main() -> int:
         if (row.get("cross_confirmation") or {}).get("status") != "disagreement":
             print(f"   skip: {cid}: cross_confirmation is not a disagreement")
             continue
+        if cid in seat_blocked:
+            # A seat whose rationale cannot be reconstructed produces an
+            # invalid packet; launching (or re-launching on every main
+            # advance) only burns controller time. The row unfreezes
+            # automatically once its seats are re-run under the
+            # rationale-preserving apply contract.
+            print(f"   skip: {cid}: seat-blocked ({seat_blocked[cid]['detail']})")
+            continue
         targets.append(row)
-    print(f"== judicial panel targets: {len(targets)}")
+    if not args.dry_run:
+        write_seat_blocked_memo(seat_blocked)
+    print(
+        f"== judicial panel targets: {len(targets)} "
+        f"(seat-blocked memoized: {len(seat_blocked)})"
+    )
     if args.dry_run:
         for row in targets:
             print(f"   would panel: {row['claim_id']}")

@@ -197,6 +197,64 @@ premises, and permitted metadata context satisfy the marker. Treat a lane's
 cascade queues: draining those rows moves a flagship lane toward
 certification.
 
+## Scaling: The One Canonical Fan-Out (owner-directed 2026-07-17)
+
+There is exactly one sanctioned way to parallelize this lane — the
+repo-native batch drainer:
+
+```bash
+python3 docs/audit/scripts/orchestrate_audit_batch.py \
+  --lane <lane-name>            # or --claims id1,id2,...
+  --max-workers N
+```
+
+- **Who may kick it off: any orchestrator.** The invocation is pure process —
+  a Claude session (any tier), a codex session, or a human may start it
+  without ceremony, because every verdict originates from a fresh sol auditor
+  seat inside the drainer. The orchestrator never authors, edits, or
+  completes verdict JSON, packets, or rationales; an orchestrator that
+  touches verdict content has left this skill.
+- **Auditor model/effort is fixed**: the current best Codex GPT model at
+  xhigh reasoning exactly — per seat, regardless of who orchestrates. Do not
+  escalate seats to max; do not mix families inside one row's
+  cross-confirmation without the owner's seating policy saying so.
+- **Commits stay serialized** one claim at a time (apply -> pipeline -> lint
+  -> commit -> push inside the drainer). Never add a second committer against
+  the same checkout; parallelism lives in the auditor seats only.
+- **Concurrency budget (shared codex pool).** Auditor seats, review-loop
+  reviewers, and judicial panels all draw on one pool. Keep the TOTAL
+  concurrent codex processes across every lane at or under ~8-10, and
+  coordinate before raising `--max-workers` while review campaigns run.
+  Measured 2026-07-17: ~18 concurrent processes collapsed lane throughput
+  from 6-11 landed verdicts/hour to ~1 every 3 hours; a 4-6 seat drain in a
+  quiet pool is the sweet spot.
+- **Development tier only.** The drainer already skips `no_go` rows,
+  non-batch-auditable claim types, and forensic-shaped sources at selection;
+  do not force them in via `--claims`.
+
+**Forensic tier scales by canary, not by fan-out.** Run exactly ONE
+forensic-tier row at a time until an N1-N8 packet has landed end-to-end
+through validation and apply; record every validator rejection verbatim
+(they are repair evidence for the packet/validator path, not noise). Only
+after a canary lands may the forensic lane run more than one seat, and never
+more than two. Parallelizing a failing forensic path multiplies model burn
+with zero landings.
+
+**Seat-blocked judicial rows are frozen automatically.** The panel
+orchestrator skips any disagreement row whose recorded seats cannot back a
+valid packet (missing or non-invocation-bound rationales) and memoizes the
+current set in `docs/audit/data/judicial_seat_blocked.json` (a pure
+projection, rewritten each panel run). Controllers must consult the memo and
+must NOT re-invoke panels for memoized rows on main advances; the row
+unfreezes by itself once its cross-confirmation seats are re-run under the
+rationale-preserving apply contract, which is the named repair.
+
+**Apply-gate rejections are data.** When a finished audit is rejected at the
+apply gate (decoration/claim-type mismatch or any compatibility error),
+record the exact rejection with the row id in the run report. Recurring
+rejection classes get selection-time filters in the drainer — burning a full
+audit to discover an incompatibility twice is a defect.
+
 ## Setup For Each Session
 
 1. Fetch `origin/main`.

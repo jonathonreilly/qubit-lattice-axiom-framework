@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py
-runner_sha256: 53951d79253b78268a41755c300c84d3e6492480da56163dc975081fe7916f71
+runner_sha256: 4202365af3ddea957626d7aef536965fa1d0ca8de799965579018e99e8379e14
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -26,7 +26,7 @@ Part 0: symbolic setup (positive integers)
   symbolic N_color = N_color
   symbolic N_gen   = N_gen
   (X1) N_W = (N_color + 1) * N_gen = N_gen*(N_color + 1)
-  (X3) n_S^complex_components = 2
+  (X3) n_H^complex_doublets = 1
   (X4a) d = 4 Yang-Mills marginal tangent supplied upstream
 
 ----------------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ Part 1: SU(2) trace data used by the explicit X4' coefficient kernel
 ----------------------------------------------------------------------------------------
   [PASS (A)] SU(2) fundamental trace normalization Tr_F(T_a T_b) = (1/2) delta_ab  (T(F) = 1/2 for Weyl and scalar fundamental doublets)
   [PASS (A)] SU(2) adjoint Casimir sum_a ad(T_a)^2 = 2 I_adj  (Casimir matrix = Matrix([[2, 0, 0], [0, 2, 0], [0, 0, 2]]))
-  [BOUNDARY] X4' spin-sector rational table is an explicit bounded d=4 QFT kernel, not derived here  (gauge+ghost: 11/3, Weyl: -2/3, complex scalar component: -1/6; convention b>0 = asymptotic freedom)
+  [BOUNDARY] X4' spin-sector rational table is an explicit bounded d=4 QFT kernel, not derived here  (gauge+ghost: 11/3, Weyl: -2/3, complex scalar multiplet: -1/3; convention b>0 = asymptotic freedom)
 
 ----------------------------------------------------------------------------------------
 Part 2: (P1) symbolic closed form for b_2 parametric in (N_pair, N_color, N_gen)
@@ -53,7 +53,7 @@ Part 4: (P3) per-sector decomposition
 ----------------------------------------------------------------------------------------
   [PASS (A)] (P3) gauge boson + ghost contribution at framework counts is +22/3  (+ (11/3) * 2 = 22/3)
   [PASS (A)] (P3) LH SU(2) Weyl-doublet matter contribution at framework counts is -4  (- (1/3) * 4 * 3 = -4)
-  [PASS (A)] (P3) 1-Higgs-doublet scalar contribution is -1/6  (- (1/6) * (1/2) * 2 = -1/6)
+  [PASS (A)] (P3) 1-Higgs-doublet scalar contribution is -1/6  (- (1/3) * (1/2) * 1 = -1/6)
   [PASS (A)] (P3) per-sector sum: +22/3 + (-4) + (-1/6) = 19/6  (22/3 - 4 - 1/6 = 19/6)
 
 ----------------------------------------------------------------------------------------

@@ -119,6 +119,26 @@ gcd(n_color + 1, 2 n_color) = gcd(n_color + 1, 2),
 gcd(1 - n_color, 2 n_color) = gcd(1 - n_color, 2).
 ```
 
+These are two-way common-divisor identities, not a finite-pattern inference.
+For the first pair,
+
+```text
+2 n_color = 2(n_color + 1) - 2,
+2 = 2(n_color + 1) - 2 n_color.
+```
+
+For the second pair,
+
+```text
+2 n_color = 2 - 2(1 - n_color),
+2 = 2 n_color + 2(1 - n_color).
+```
+
+Thus each member of either pair is an integer combination of the other
+pair. The common divisors coincide in both directions. Reduction then uses
+the exhaustive residue classes modulo `2`: both numerators are odd when
+`n_color` is even and both are even when `n_color` is odd.
+
 Consequently, on this explicitly convention-supplied surface,
 
 ```text
@@ -160,8 +180,8 @@ inventory.
 
 - `ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md`
   continues to cite this note for `b = -n_color a`. Its normalization,
-  charge-shift, singlet inventory, and branch labels are explicit local
-  conditions rather than conclusions inherited from this theorem.
+  charge-shift, and singlet inventory are explicit local conditions; its
+  historical slot aliases supply no physical naming selector.
 - `SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md` treats
   `N_W = (N_color + 1) N_gen` as a supplied field-inventory condition. It does
   not cite this projective theorem as a count authority.
@@ -177,14 +197,14 @@ audit verdict.
 
 ### N1 — distinct attack routes
 
-| route | test | disposition |
-|---|---|---|
-| zero pair | remove `(a,b) != (0,0)` | `(0,0)` satisfies the equation and has no projective ratio; the hypothesis is load-bearing |
-| zero parameter | set `n_color = 0` | `(1,0)` satisfies the equation and has `b = 0`; positivity/nonzeroness of the count is load-bearing for the two-nonzero conclusion |
-| negative parameter | set `n_color = -2` | the projective algebra still holds; this is an algebraic extension outside the count domain |
-| noninteger parameter | set `n_color = 1/2` or `sqrt(2)` | the projective algebra still holds for a nonzero parameter, while parity/denominator language no longer has the stated domain |
-| alternate scale | use `lambda = 2` and `lambda = -3` | both pairs satisfy the trace equation; neither selects `b = -1` in general |
-| alternate charge functional | replace `Q = T_3 + Y/2` by `Q = T_3 + Y` | the projective theorem remains true and the charge formulas change |
+| route | honesty | test | disposition |
+|---|---|---|---|
+| zero pair | ATTEMPTED | remove `(a,b) != (0,0)` | RULED OUT: `(0,0)` satisfies the equation and has no projective ratio; the hypothesis is load-bearing |
+| zero parameter | ATTEMPTED | set `n_color = 0` | RULED OUT: `(1,0)` satisfies the equation and has `b = 0`; positivity/nonzeroness of the count is load-bearing for the two-nonzero conclusion |
+| negative parameter | ATTEMPTED | set `n_color = -2` | RULED OUT AS STATED DOMAIN: the projective algebra still holds, but this is an algebraic extension outside the count domain |
+| noninteger parameter | ATTEMPTED | set `n_color = 1/2` or `sqrt(2)` | RULED OUT AS STATED DOMAIN: the projective algebra still holds for a nonzero parameter, while parity/denominator language no longer has the stated domain |
+| alternate scale | ATTEMPTED | use `lambda = 2` and `lambda = -3` | RULED OUT AS NORMALIZATION SELECTOR: both pairs satisfy the trace equation; neither selects `b = -1` |
+| alternate charge functional | ATTEMPTED | replace `Q = T_3 + Y/2` by `Q = T_3 + Y` | RULED OUT AS THEOREM CONSEQUENCE: the projective theorem remains true while both charges and their reduced denominators change |
 
 All six routes are exercised by the runner's hostile mode.
 
@@ -202,21 +222,19 @@ consequences.
 
 The proof uses the displayed positive-integer, real-pair, trace-equation, and
 nonzero-pair hypotheses. The support appendix marks normalization and charge
-readout as supplied conventions. No carrier, species, empirical, dynamics, or
-registry premise is hidden inside construction or standardness shorthand. The
-runner performs a source-text hygiene scan separately from its
-theorem evidence.
+readout as supplied conventions. No carrier, species, empirical, dynamics,
+registry, or premise-authority claim is hidden inside shorthand. The runner
+checks the complete no-go trigger vocabulary from the review methodology,
+in lower case, as source-text hygiene separate from theorem evidence.
 
-### N4 — residual matching
+### N4 — prior-witness residual matching
 
-| residual | exact location after repair | scope match |
-|---|---|---|
-| absolute normalization `b = -1` | `(C_norm)` support condition | exact |
-| charge readout `Q = T_3 + Y/2` | `(C_Q)` support condition | exact |
-| physical carrier/state inventory | exact authority boundary | excluded from the theorem rather than declared resolved |
-
-The GCD identities match the convention-supplied rational fractions; they do
-not match a framework derivation of those fractions.
+N/A for this self-contained elementary theorem: no prior scientific witness
+is cited, and the runner verifies that the note contains no Markdown link to
+another note. The local condition-to-output boundary is nevertheless exact:
+`b = -1` is `(C_norm)`, `Q = T_3 + Y/2` is `(C_Q)`, and the physical carrier
+and state inventory are excluded rather than declared resolved. The GCD
+identities match only the convention-supplied rational fractions.
 
 ### N5 — rhetoric and resolution
 
@@ -242,15 +260,27 @@ the free common scale together with freedom to choose a charge functional;
 the alternate-scale and alternate-functional countermodels show why those
 claims remain outside the theorem.
 
-### N8 — cross-route echo
+The strongest convention-route steelman is also correct: one may *define*
+the scale by `b = -1` and separately *define* the readout by
+`Q = T_3 + Y/2`; those choices close the appendix exactly. That argument
+supports the conditional calculation, but it cannot make either definition a
+consequence of the homogeneous projective theorem.
 
-The rearrangement proof, an independent exact nullspace computation, and
-finite exhaustive integer checks agree on `[1:-n_color]` for the stated
-domain. Independent two-way Bézout combinations plus the two exhaustive
-residue classes modulo `2` prove the conditional GCD reduction for every
-positive integer. The zero-pair route echoes the 2026-06-19 scope repair; the
-independent scale and charge-functional routes address the distinct
-2026-07-18 convention boundary.
+### N8 — cross-cycle and cross-route echo
+
+| prior source path | prior boundary | present mechanism | applicability |
+|---|---|---|---|
+| `docs/LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md` | scale, Standard Model identification, and charge readout remained open | projective ratio is separated from normalization and readout | same boundary; not retired |
+| `docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md` | broad ratio argument still supplied normalization and left `Q` outside scope | clean R1 plus a quarantined convention appendix | same mechanism; scope narrowed |
+| `docs/ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md` | anomaly core was scale-free and did not select normalization or naming | scale and physical labels remain outside R1 | independent lane reaches the same boundary |
+
+Within this cycle, the rearrangement proof and an independent exact nullspace
+computation agree on `[1:-n_color]`. Finite integer enumeration is regression
+support only, not the universal proof. Independent two-way Bézout combinations
+plus the two exhaustive residue classes modulo `2` prove the conditional GCD
+reduction for every positive integer. The zero-pair route echoes the
+2026-06-19 repair; the independent scale and charge-functional routes address
+the distinct 2026-07-18 convention boundary.
 
 ## Cited dependencies
 
@@ -272,7 +302,9 @@ python3 scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.p
 The output reports theorem evidence, convention-supplied support arithmetic,
 boundary/countermodel evidence, and hygiene evidence as separate counts. A
 literal note string, cache header, or ledger status is not counted as theorem
-evidence.
+evidence. The `n_color = 1..64` sweep is explicitly regression support; the
+universal denominator proof is the exact two-way common-divisor and parity
+argument above.
 
 ## Repair history
 

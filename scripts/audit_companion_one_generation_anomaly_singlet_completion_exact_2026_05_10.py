@@ -7,15 +7,19 @@ The narrow theorem's load-bearing content is:
   (R1) Y_uR  = a + 1     = (n_color + 1) / n_color   under b = -1, a = 1/n_color
   (R2) Y_dR  = a - 1     = (1 - n_color) / n_color   under b = -1
   (R3) Y_eR  = b - 1     = -2                         under b = -1
-  (R4) Y_nuR = b + 1     = 0 under b = -1, by neutral-branch convention
+  (R4) Y_nuR = b + 1     = 0 under the supplied b = -1 convention
 
-derived under the standard singlet charge-readout / Y-shift assignment plus
+derived under the supplied singlet charge-readout / Y-shift assignment plus
 the color, mixed gauge-gravity, and cubic anomaly equations.
+
+The variable names are historical algebraic slot aliases. The anomaly
+equations are invariant under exchanging the two lepton-slot values, so this
+runner supplies no physical species map or charged/neutral naming selector.
 
 The runner verifies that these closed forms satisfy the three anomaly
 equations parametric in n_color and a (with b = -n_color a from the
-sister LH-trace narrow theorem), then specializes to the framework
-n_color = 3 instance and to a non-framework n_color = 5 sanity check.
+sister LH-trace narrow theorem). Separately supplied n_color = 3 and
+n_color = 5 instances are regression support, not theorem authority.
 
 Companion role: not a new claim row, not a new source note, no status
 promotion. Provides audit-friendly evidence that the narrow note's
@@ -37,14 +41,14 @@ PASS = 0
 FAIL = 0
 
 
-def check(label: str, ok: bool, detail: str = "") -> None:
+def check(label: str, ok: bool, detail: str = "", grade: str = "A") -> None:
     global PASS, FAIL
     if ok:
         PASS += 1
-        tag = "PASS (A)"
+        tag = f"PASS ({grade})"
     else:
         FAIL += 1
-        tag = "FAIL (A)"
+        tag = f"FAIL ({grade})"
     suffix = f"  ({detail})" if detail else ""
     print(f"  [{tag}] {label}{suffix}")
 
@@ -61,7 +65,8 @@ def main() -> int:
     print("Audit companion (exact-symbolic) for")
     print("ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10")
     print("Goal: verify (R1)-(R4) closed forms satisfy anomaly equations")
-    print("parametric in n_color, plus framework n_color=3 sanity")
+    print("parametric in n_color, plus condition-supplied regression instances")
+    print("Slot aliases do not assert physical species identification")
     print("=" * 88)
 
     # ---------------------------------------------------------------------
@@ -77,20 +82,20 @@ def main() -> int:
     b_constraint = -nc * a
 
     # Closed-form proposals for RH hypercharges from (R1)-(R4) under
-    # the standard singlet charge-readout / Y-shift assignment:
+    # the supplied singlet charge-readout / Y-shift assignment:
     Y_uR = a + 1
     Y_dR = a - 1
     Y_eR = b - 1
-    Y_nuR = b + 1  # neutral branch gives Y_nuR = 0 when b = -1
+    Y_nuR = b + 1
 
-    # Under the neutral-branch convention with b = -1:
-    # Substituting b = -1 gives Y_nuR = 0 directly.
+    # Under the supplied normalization convention b = -1, substitution gives
+    # the fourth slot value Y_nuR = 0 directly.
     print(f"  symbolic n_color = {nc}, a, b = LH eigenvalues")
     print(f"  LH trace constraint (imported from sister narrow): b = -n_color * a")
     print(f"  (R1) Y_uR  = a + 1")
     print(f"  (R2) Y_dR  = a - 1")
     print(f"  (R3) Y_eR  = b - 1")
-    print(f"  (R4) Y_nuR = b + 1 (neutral branch gives Y_nuR = 0 at b = -1)")
+    print(f"  (R4) Y_nuR = b + 1 (fourth slot is 0 at supplied b = -1)")
 
     # ---------------------------------------------------------------------
     section("Part 1: color SU(3)_c anomaly under closed forms")
@@ -160,7 +165,7 @@ def main() -> int:
     )
 
     # ---------------------------------------------------------------------
-    section("Part 4: (R1)-(R4) framework instance n_color = 3, b = -1, a = 1/3")
+    section("Part 4: regression support at supplied n_color = 3, b = -1, a = 1/3")
     # ---------------------------------------------------------------------
     framework = {nc: 3, a: Rational(1, 3), b: -1}
 
@@ -173,25 +178,29 @@ def main() -> int:
         "framework n_color=3: Y_uR = 4/3",
         simplify(Y_uR_at - Rational(4, 3)) == 0,
         detail=f"Y_uR = {Y_uR_at}",
+        grade="SUPPORT",
     )
     check(
         "framework n_color=3: Y_dR = -2/3",
         simplify(Y_dR_at + Rational(2, 3)) == 0,
         detail=f"Y_dR = {Y_dR_at}",
+        grade="SUPPORT",
     )
     check(
         "framework n_color=3: Y_eR = -2",
         simplify(Y_eR_at + 2) == 0,
         detail=f"Y_eR = {Y_eR_at}",
+        grade="SUPPORT",
     )
     check(
-        "framework n_color=3: Y_nuR = 0 (neutral branch under b=-1)",
+        "framework n_color=3: fourth slot Y_nuR = 0 under supplied b=-1",
         simplify(Y_nuR_at) == 0,
         detail=f"Y_nuR = {Y_nuR_at}",
+        grade="SUPPORT",
     )
 
     # ---------------------------------------------------------------------
-    section("Part 5: anomalies vanish numerically at framework n_color = 3")
+    section("Part 5: anomaly regression at supplied n_color = 3")
     # ---------------------------------------------------------------------
     A2_at = simplify(color_anom.subs(framework))
     A3_at = simplify(grav_anom.subs(framework))
@@ -200,20 +209,23 @@ def main() -> int:
         "framework n_color=3: (COLOR_ANOM) SU(3)_c anomaly = 0",
         A2_at == 0,
         detail=f"color_anom at framework = {A2_at}",
+        grade="SUPPORT",
     )
     check(
         "framework n_color=3: (GRAV_ANOM) gauge-gravity anomaly = 0",
         A3_at == 0,
         detail=f"grav_anom at framework = {A3_at}",
+        grade="SUPPORT",
     )
     check(
         "framework n_color=3: (CUBIC_ANOM) cubic [U(1)_Y]^3 anomaly = 0",
         A4_at == 0,
         detail=f"cubic_anom at framework = {A4_at}",
+        grade="SUPPORT",
     )
 
     # ---------------------------------------------------------------------
-    section("Part 6: broad-note hypercharge readouts at n_color = 3")
+    section("Part 6: non-load-bearing broad-note literal regression at n_color = 3")
     # ---------------------------------------------------------------------
     # Broad note subscripts in (1,3)_{+4/3}, (1,3)_{-2/3}, (1,1)_{-2}, (1,1)_0
     # use the same Q = T_3 + Y/2 hypercharge convention. Verify these match.
@@ -221,21 +233,25 @@ def main() -> int:
         "broad-note readout at framework n_color=3: Y_uR = 4/3",
         simplify(Y_uR_at - Rational(4, 3)) == 0,
         detail=f"Y_uR = {Y_uR_at}; broad note uses (1,3)_{{+4/3}}",
+        grade="SUPPORT",
     )
     check(
         "broad-note readout at framework n_color=3: Y_dR = -2/3",
         simplify(Y_dR_at + Rational(2, 3)) == 0,
         detail=f"Y_dR = {Y_dR_at}; broad note uses (1,3)_{{-2/3}}",
+        grade="SUPPORT",
     )
     check(
         "broad-note readout at framework n_color=3: Y_eR = -2",
         simplify(Y_eR_at + 2) == 0,
         detail=f"Y_eR = {Y_eR_at}; broad note uses (1,1)_{{-2}}",
+        grade="SUPPORT",
     )
     check(
         "broad-note readout at framework n_color=3: Y_nuR = 0",
         simplify(Y_nuR_at) == 0,
         detail=f"Y_nuR = {Y_nuR_at}; broad note uses (1,1)_{{0}}",
+        grade="SUPPORT",
     )
 
     # ---------------------------------------------------------------------
@@ -252,21 +268,25 @@ def main() -> int:
         "non-framework n_color=5: Y_uR = 6/5",
         simplify(Y_uR_nf - Rational(6, 5)) == 0,
         detail=f"Y_uR = {Y_uR_nf}",
+        grade="SUPPORT",
     )
     check(
         "non-framework n_color=5: Y_dR = -4/5",
         simplify(Y_dR_nf + Rational(4, 5)) == 0,
         detail=f"Y_dR = {Y_dR_nf}",
+        grade="SUPPORT",
     )
     check(
         "non-framework n_color=5: Y_eR = -2 (independent of n_color)",
         simplify(Y_eR_nf + 2) == 0,
         detail=f"Y_eR = {Y_eR_nf}",
+        grade="SUPPORT",
     )
     check(
-        "non-framework n_color=5: Y_nuR = 0 (independent of n_color, neutral branch)",
+        "non-framework n_color=5: fourth slot Y_nuR = 0 under supplied b=-1",
         simplify(Y_nuR_nf) == 0,
         detail=f"Y_nuR = {Y_nuR_nf}",
+        grade="SUPPORT",
     )
 
     # All anomalies vanish at non-framework instance too:
@@ -277,14 +297,14 @@ def main() -> int:
         "non-framework n_color=5: all three anomalies vanish",
         A2_nf == 0 and A3_nf == 0 and A4_nf == 0,
         detail=f"(color_anom, grav_anom, cubic_anom) = ({A2_nf}, {A3_nf}, {A4_nf})",
+        grade="SUPPORT",
     )
 
     # ---------------------------------------------------------------------
-    section("Part 8: discrete e_R <-> nu_R relabelling branch is anomaly-consistent")
+    section("Part 8: lepton-slot exchange shows absence of a naming selector")
     # ---------------------------------------------------------------------
-    # The relabelled branch swaps Y_eR <-> Y_nuR. Under b = -1 that gives
-    # Y_eR = 0 (the previously-neutral slot) and Y_nuR = -2. Check that the
-    # anomaly equations still vanish.
+    # Swapping the two lepton-slot values leaves the anomaly equations
+    # unchanged. This is a boundary check, not a physical alternative.
     Y_eR_swap = b + 1  # was Y_nuR
     Y_nuR_swap = b - 1  # was Y_eR
 
@@ -309,24 +329,27 @@ def main() -> int:
     A4_swap_under_trace = simplify(A4_swap.subs(b, b_constraint))
 
     check(
-        "discrete branch e_R <-> nu_R: (GRAV_ANOM) still vanishes",
+        "lepton-slot exchange: (GRAV_ANOM) still vanishes",
         A3_swap_under_trace == 0,
         detail=f"A3_swap = {A3_swap_under_trace}",
+        grade="BOUNDARY",
     )
     check(
-        "discrete branch e_R <-> nu_R: (CUBIC_ANOM) still vanishes",
+        "lepton-slot exchange: (CUBIC_ANOM) still vanishes",
         A4_swap_under_trace == 0,
         detail=f"A4_swap = {A4_swap_under_trace}",
+        grade="BOUNDARY",
     )
 
-    # At framework n_color = 3, b = -1:
+    # At the supplied regression instance n_color = 3, b = -1:
     framework_swap = {nc: 3, a: Rational(1, 3), b: -1}
     Y_eR_swap_at = simplify(Y_eR_swap.subs(framework_swap))
     Y_nuR_swap_at = simplify(Y_nuR_swap.subs(framework_swap))
     check(
-        "discrete branch at framework n_color=3: Y_eR_swap = 0, Y_nuR_swap = -2",
+        "lepton-slot exchange at n_color=3 swaps 0 and -2 without selecting names",
         simplify(Y_eR_swap_at) == 0 and simplify(Y_nuR_swap_at + 2) == 0,
         detail=f"swap: Y_eR = {Y_eR_swap_at}, Y_nuR = {Y_nuR_swap_at}",
+        grade="BOUNDARY",
     )
 
     # ---------------------------------------------------------------------
@@ -364,10 +387,10 @@ def main() -> int:
     print("    Color SU(3)_c anomaly vanishes identically")
     print("    Gauge-gravity anomaly vanishes under LH trace b = -n_color a")
     print("    Cubic [U(1)_Y]^3 anomaly vanishes under LH trace")
-    print("    Framework n_color=3: (Y_uR, Y_dR, Y_eR, Y_nuR) = (4/3, -2/3, -2, 0)")
-    print("    Hypercharge readouts match broad-note rep-literal subscripts at n_color=3")
-    print("    Non-framework n_color=5: (Y_uR, Y_dR, Y_eR, Y_nuR) = (6/5, -4/5, -2, 0)")
-    print("    Discrete e_R <-> nu_R relabelling branch is anomaly-consistent")
+    print("    Supplied n_color=3 regression: slot values (4/3, -2/3, -2, 0)")
+    print("    Non-load-bearing broad-note literal regression agrees at n_color=3")
+    print("    Supplied n_color=5 regression: slot values (6/5, -4/5, -2, 0)")
+    print("    Lepton-slot exchange is anomaly-invariant and selects no names")
     print("    (C1), (C2) corollaries verified")
 
     print()

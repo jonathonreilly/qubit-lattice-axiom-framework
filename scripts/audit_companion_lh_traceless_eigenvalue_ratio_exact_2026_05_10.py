@@ -24,6 +24,7 @@ from collections import defaultdict
 from fractions import Fraction
 from math import gcd
 from pathlib import Path
+import re
 import sys
 
 try:
@@ -56,6 +57,90 @@ def check(evidence_class: str, label: str, condition: object, detail: str = "") 
 def section(title: str) -> None:
     print()
     print("-" * 96)
+
+
+def positive_integer_count(value: object) -> bool:
+    """Return whether ``value`` lies in the theorem's count domain."""
+    return isinstance(value, int) and not isinstance(value, bool) and value > 0
+
+
+def trace_zero(n_value: object, pair: tuple[object, object]) -> bool:
+    """Evaluate the homogeneous trace equation without dividing."""
+    a_value, b_value = pair
+    return simplify(2 * n_value * a_value + 2 * b_value) == 0
+
+
+def projective_equal(
+    pair: tuple[object, object], reference: tuple[object, object]
+) -> bool:
+    """Use the determinant test, while rejecting either zero representative."""
+    if pair == (0, 0) or reference == (0, 0):
+        return False
+    a_value, b_value = pair
+    x_value, y_value = reference
+    return simplify(a_value * y_value - b_value * x_value) == 0
+
+
+def conditional_readout(
+    n_value: object,
+    b_value: object | None,
+    y_coefficient: object | None,
+) -> tuple[object, object, object] | None:
+    """Return ``(a,Q_up,Q_down)`` only after both support inputs are supplied."""
+    if (
+        not positive_integer_count(n_value)
+        or b_value is None
+        or y_coefficient is None
+    ):
+        return None
+    a_value = -Fraction(b_value, n_value)
+    q_up = Fraction(1, 2) + y_coefficient * a_value
+    q_down = -Fraction(1, 2) + y_coefficient * a_value
+    return a_value, q_up, q_down
+
+
+def hostile_route_results() -> dict[str, bool]:
+    """Compute the six N1 attack-route dispositions from load-bearing checks."""
+    zero_pair = (0, 0)
+    zero_parameter_pair = (Fraction(1), Fraction(0))
+    negative_pair = (Fraction(3, 2), Fraction(3))
+    rational_pair = (Fraction(4), Fraction(-2))
+    irrational_parameter = sqrt(2)
+    irrational_pair = (1, -irrational_parameter)
+    scale_two = (Fraction(2), Fraction(-6))
+    scale_minus_three = (Fraction(-3), Fraction(9))
+    standard = conditional_readout(3, -1, Fraction(1, 2))
+    alternate = conditional_readout(3, -1, Fraction(1))
+
+    return {
+        "zero_pair": trace_zero(3, zero_pair)
+        and not projective_equal(zero_pair, (1, -3)),
+        "zero_parameter": not positive_integer_count(0)
+        and trace_zero(0, zero_parameter_pair)
+        and zero_parameter_pair[0] != 0
+        and zero_parameter_pair[1] == 0,
+        "negative_parameter": not positive_integer_count(-2)
+        and trace_zero(-2, negative_pair)
+        and projective_equal(negative_pair, (1, 2)),
+        "noninteger_parameter": not positive_integer_count(Fraction(1, 2))
+        and not positive_integer_count(irrational_parameter)
+        and trace_zero(Fraction(1, 2), rational_pair)
+        and trace_zero(irrational_parameter, irrational_pair)
+        and projective_equal(rational_pair, (1, -Fraction(1, 2)))
+        and projective_equal(irrational_pair, (1, -irrational_parameter)),
+        "alternate_scale": trace_zero(3, scale_two)
+        and trace_zero(3, scale_minus_three)
+        and projective_equal(scale_two, (1, -3))
+        and projective_equal(scale_minus_three, (1, -3))
+        and scale_two != scale_minus_three
+        and scale_two[1] != -1
+        and scale_minus_three[1] != -1,
+        "alternate_charge_functional": standard is not None
+        and alternate is not None
+        and standard[1:] != alternate[1:]
+        and tuple(value.denominator for value in standard[1:])
+        != tuple(value.denominator for value in alternate[1:]),
+    }
     print(title)
     print("-" * 96)
 
@@ -228,19 +313,20 @@ def independent_mode() -> None:
     )
 
     section("INDEPENDENT: Euclidean/GCD route for conditional support")
-    up_bezout_ok = (
-        simplify(2 * n - 2 * (n + 1) + 2) == 0
-        and simplify(2 * (n + 1) - 2 - 2 * n) == 0
+    up_bezout_certificate = (
+        simplify(2 * (n + 1) - 2 * n),
+        simplify(2 * (n + 1) - 2),
     )
-    down_bezout_ok = (
-        simplify(2 * n + 2 * (1 - n) - 2) == 0
-        and simplify(2 - 2 * (1 - n) - 2 * n) == 0
+    down_bezout_certificate = (
+        simplify(2 * n + 2 * (1 - n)),
+        simplify(2 - 2 * (1 - n)),
     )
     check(
         "CONDITIONAL_SUPPORT",
         "two-way Bezout combinations prove both gcd reductions for arbitrary integer n_color",
-        up_bezout_ok and down_bezout_ok,
-        "common divisors of each original pair and its reduced pair coincide",
+        up_bezout_certificate == (2, 2 * n)
+        and down_bezout_certificate == (2, 2 * n),
+        f"up=(2,2n): {up_bezout_certificate}; down=(2,2n): {down_bezout_certificate}",
     )
 
     residue_gcds = {
@@ -272,8 +358,9 @@ def independent_mode() -> None:
     )
     check(
         "CONDITIONAL_SUPPORT",
-        "Euclidean gcd reductions hold for n_color=1..64",
+        "regression-only sweep confirms Euclidean gcd reductions for n_color=1..64",
         gcd_reduction_ok,
+        "finite sweep supports but does not prove the universal identity",
     )
     odd_denominator_ok = all(
         Fraction(n_value + 1, 2 * n_value).denominator == n_value
@@ -283,7 +370,7 @@ def independent_mode() -> None:
     )
     check(
         "CONDITIONAL_SUPPORT",
-        "conditional charge denominators equal n_color for odd n_color=1..63",
+        "regression-only sweep finds denominator n_color for odd n_color=1..63",
         odd_denominator_ok,
     )
     even_denominator_ok = all(
@@ -294,7 +381,7 @@ def independent_mode() -> None:
     )
     check(
         "CONDITIONAL_SUPPORT",
-        "conditional charge denominators equal 2*n_color for even n_color=2..64",
+        "regression-only sweep finds denominator 2*n_color for even n_color=2..64",
         even_denominator_ok,
     )
 
@@ -302,23 +389,24 @@ def independent_mode() -> None:
 def hostile_mode() -> None:
     section("HOSTILE: counterdomains, normalization freedom, and alternate readout")
 
+    zero_pair = (0, 0)
     check(
         "BOUNDARY",
         "the excluded zero pair satisfies the homogeneous trace equation",
-        2 * 3 * 0 + 2 * 0 == 0,
+        trace_zero(3, zero_pair),
     )
-    zero_projective_defined = (0, 0) != (0, 0)
     check(
         "BOUNDARY",
-        "the zero pair fails the nonzero representative condition",
-        not zero_projective_defined,
+        "the zero pair has no projective class under the executable determinant guard",
+        not projective_equal(zero_pair, (1, -3)),
     )
 
     zero_parameter_pair = (Fraction(1), Fraction(0))
     check(
         "BOUNDARY",
         "at n_color=0, (1,0) is trace-zero and refutes the two-nonzero conclusion",
-        2 * 0 * zero_parameter_pair[0] + 2 * zero_parameter_pair[1] == 0
+        not positive_integer_count(0)
+        and trace_zero(0, zero_parameter_pair)
         and zero_parameter_pair[0] != 0
         and zero_parameter_pair[1] == 0,
     )
@@ -327,37 +415,44 @@ def hostile_mode() -> None:
     check(
         "BOUNDARY",
         "negative n_color=-2 preserves the projective algebra outside the count domain",
-        2 * (-2) * negative_n_pair[0] + 2 * negative_n_pair[1] == 0
-        and negative_n_pair[1] == -(-2) * negative_n_pair[0],
+        not positive_integer_count(-2)
+        and trace_zero(-2, negative_n_pair)
+        and projective_equal(negative_n_pair, (1, 2)),
     )
 
     rational_n_pair = (Fraction(4), Fraction(-2))
     check(
         "BOUNDARY",
         "noninteger n_color=1/2 preserves the projective algebra but has no integer parity class",
-        2 * Fraction(1, 2) * rational_n_pair[0] + 2 * rational_n_pair[1] == 0
-        and rational_n_pair[1] == -Fraction(1, 2) * rational_n_pair[0],
+        not positive_integer_count(Fraction(1, 2))
+        and trace_zero(Fraction(1, 2), rational_n_pair)
+        and projective_equal(rational_n_pair, (1, -Fraction(1, 2))),
     )
 
     irrational_n = sqrt(2)
-    irrational_pair = Matrix([1, -irrational_n])
+    irrational_pair = (1, -irrational_n)
     check(
         "BOUNDARY",
         "irrational nonzero parameter preserves the projective identity outside rational gcd arithmetic",
-        simplify((Matrix([[2 * irrational_n, 2]]) * irrational_pair)[0]) == 0,
+        not positive_integer_count(irrational_n)
+        and trace_zero(irrational_n, irrational_pair)
+        and projective_equal(irrational_pair, (1, -irrational_n)),
     )
 
-    scale_two = (Fraction(2, 3), Fraction(-2))
-    scale_minus_three = (Fraction(-1), Fraction(3))
+    scale_two = (Fraction(2), Fraction(-6))
+    scale_minus_three = (Fraction(-3), Fraction(9))
     check(
         "BOUNDARY",
-        "alternate scale lambda=2/3 at n_color=3 satisfies trace but has b=-2",
-        2 * 3 * scale_two[0] + 2 * scale_two[1] == 0 and scale_two[1] != -1,
+        "alternate scale lambda=2 at n_color=3 satisfies trace but has b=-6",
+        trace_zero(3, scale_two)
+        and projective_equal(scale_two, (1, -3))
+        and scale_two[1] != -1,
     )
     check(
         "BOUNDARY",
-        "alternate sign scale lambda=-1 at n_color=3 satisfies trace but has b=+3",
-        2 * 3 * scale_minus_three[0] + 2 * scale_minus_three[1] == 0
+        "alternate sign scale lambda=-3 at n_color=3 satisfies trace but has b=+9",
+        trace_zero(3, scale_minus_three)
+        and projective_equal(scale_minus_three, (1, -3))
         and scale_minus_three[1] != -1,
     )
     check(
@@ -367,39 +462,56 @@ def hostile_mode() -> None:
         and scale_two[0] * scale_minus_three[1] - scale_two[1] * scale_minus_three[0] == 0,
     )
 
-    n_value = Fraction(3)
-    a_normalized = Fraction(1, 3)
-    q_half_up = Fraction(1, 2) + a_normalized / 2
-    q_full_up = Fraction(1, 2) + a_normalized
+    n_value = 3
+    standard_readout = conditional_readout(n_value, -1, Fraction(1, 2))
+    alternate_readout = conditional_readout(n_value, -1, Fraction(1))
+    assert standard_readout is not None and alternate_readout is not None
+    a_normalized, q_half_up, q_half_down = standard_readout
+    _, q_full_up, q_full_down = alternate_readout
     check(
         "BOUNDARY",
-        "alternate Q=T3+Y changes the up-component charge at the same normalized ratio",
-        q_half_up == Fraction(2, 3) and q_full_up == Fraction(5, 6) and q_full_up != q_half_up,
-        f"Q_half={q_half_up}, Q_full={q_full_up}, n_color={n_value}",
+        "alternate Q=T3+Y changes both R3 charge clauses at fixed normalization",
+        q_half_up == Fraction(2, 3)
+        and q_half_down == Fraction(-1, 3)
+        and q_full_up == Fraction(5, 6)
+        and q_full_down == Fraction(-1, 6)
+        and (q_full_up, q_full_down) != (q_half_up, q_half_down),
+        f"Q_half={(q_half_up, q_half_down)}, Q_full={(q_full_up, q_full_down)}",
+    )
+    check(
+        "BOUNDARY",
+        "alternate Q=T3+Y changes the R4 reduced-denominator readout",
+        (q_half_up.denominator, q_half_down.denominator) == (3, 3)
+        and (q_full_up.denominator, q_full_down.denominator) == (6, 6),
     )
 
-    q_scaled_up = Fraction(1, 2) + scale_two[0] / 2
+    scaled_readout = conditional_readout(n_value, scale_two[1], Fraction(1, 2))
+    assert scaled_readout is not None
+    _, q_scaled_up, _ = scaled_readout
     check(
         "BOUNDARY",
         "supplying Q=T3+Y/2 without b=-1 leaves the charge scale-dependent",
-        q_scaled_up == Fraction(5, 6) and q_scaled_up != q_half_up,
+        q_scaled_up == Fraction(3, 2) and q_scaled_up != q_half_up,
         f"scaled Q={q_scaled_up}, normalized Q={q_half_up}",
+    )
+    check(
+        "BOUNDARY",
+        "without supplied normalization the conditional readout remains open",
+        conditional_readout(n_value, None, Fraction(1, 2)) is None,
+    )
+    check(
+        "BOUNDARY",
+        "without a supplied charge functional the conditional readout remains open",
+        conditional_readout(n_value, -1, None) is None,
     )
 
     section("HOSTILE: N1-N8 boundary evidence")
-    route_ids = {
-        "zero_pair",
-        "zero_parameter",
-        "negative_parameter",
-        "noninteger_parameter",
-        "alternate_scale",
-        "alternate_charge_functional",
-    }
+    route_results = hostile_route_results()
     check(
         "BOUNDARY",
-        "N1 enumerates six distinct attack routes",
-        len(route_ids) == 6,
-        ", ".join(sorted(route_ids)),
+        "N1 ATTEMPTED six distinct attack routes and computed every disposition",
+        len(route_results) == 6 and all(route_results.values()),
+        ", ".join(f"{key}={value}" for key, value in sorted(route_results.items())),
     )
     check(
         "BOUNDARY",
@@ -415,15 +527,23 @@ def hostile_mode() -> None:
     )
 
     note_text = NOTE.read_text(encoding="utf-8")
-    hidden_wall_phrases = (
+    hidden_wall_phrases = tuple(
+        phrase.lower()
+        for phrase in (
+        "we assume",
         "by construction",
         "as is standard",
         "the framework provides",
+        "bridge context",
+        "background",
         "naturally",
         "obviously",
         "standard QFT",
+        "registered",
+        "canonical",
         "requires a new axiom",
         "no retained primitive",
+        )
     )
     hidden_hits = {phrase: note_text.lower().count(phrase) for phrase in hidden_wall_phrases}
     check(
@@ -433,12 +553,14 @@ def hostile_mode() -> None:
         f"hits = {hidden_hits}",
     )
 
+    markdown_note_links = re.findall(
+        r"\[[^\]]+\]\(([^)]+\.md(?:#[^)]*)?)\)", note_text
+    )
     check(
-        "BOUNDARY",
-        "N4 residual matching keeps GCD arithmetic attached to both supplied conventions",
-        q_half_up == Fraction(2, 3)
-        and Fraction(1 - 3, 2 * 3) == Fraction(-1, 3)
-        and gcd(4, 6) == 2,
+        "HYGIENE",
+        "N4 is N/A because the self-contained note cites no prior Markdown witness",
+        markdown_note_links == [],
+        f"Markdown note links = {markdown_note_links}",
     )
     check(
         "BOUNDARY",
@@ -455,14 +577,15 @@ def hostile_mode() -> None:
         "N6 convention-supplied partial closure reproduces the conditional n_color=3 arithmetic",
         a_normalized == Fraction(1, 3)
         and q_half_up == Fraction(2, 3)
-        and Fraction(1 - 3, 2 * 3) == Fraction(-1, 3),
+        and q_half_down == Fraction(-1, 3),
     )
     check(
         "BOUNDARY",
-        "N7 strongest objections are realized by zero-pair, scale, and readout counterexamples",
-        (2 * 3 * 0 + 2 * 0 == 0)
-        and scale_two[1] != -1
-        and q_full_up != q_half_up,
+        "N7 steelman closes the support arithmetic by definition without enlarging R1",
+        trace_zero(3, zero_pair)
+        and standard_readout == (Fraction(1, 3), Fraction(2, 3), Fraction(-1, 3))
+        and q_full_up != q_half_up
+        and projective_equal(scale_two, (1, -3)),
     )
 
     normal_vector = Matrix([1, -5])

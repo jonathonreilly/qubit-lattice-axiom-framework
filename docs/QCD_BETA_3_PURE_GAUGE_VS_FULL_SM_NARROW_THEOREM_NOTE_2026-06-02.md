@@ -25,7 +25,7 @@ pure-gauge-vs-full-SM difference
 Δb_3  ≡  b_3(N_quark = 0)  -  b_3(N_quark = 6)  =  11  -  7  =  4    (P2)
 ```
 
-is the 1-loop sea-quark correction at the framework instance,
+is the condition-supplied 1-loop coefficient difference,
 algebraically `(2/3) · N_quark`. This is purely a statement about
 substituting the linked sources and explicit bounded conditions into the
 external β-formula; no new axiom, no new selector, no PDG comparator,
@@ -62,9 +62,8 @@ with `N_color = 3`.
 
 Sources:
 [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
-(effective_status: `retained`) and
-[`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md)
-(effective_status: `retained`).
+and [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md).
+Their live statuses are resolved by the audit pipeline, not authored here.
 
 **(X1) Quark Dirac flavor count.** Two regimes:
 
@@ -92,7 +91,7 @@ N_gen  =  3.                                                              (X2)
 
 Source:
 [`THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md`](THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md)
-(effective_status: `retained`). Used only for the full-SM instance
+Used only for the full-SM instance
 `(X1b)`; the parametric closed form `(P1)` and the pure-gauge instance
 `b_3(n_f = 0) = 11` do not consume `(X2)`.
 
@@ -125,7 +124,7 @@ At the full-SM instance `(X1b)` with `(N_color, N_quark) = (3, 6)`,
 b_3(N_quark = 6)  =  (11 * 3  -  2 * 6) / 3  =  21 / 3  =  7.           (P2b)
 ```
 
-The framework-counted pure-gauge-vs-full-SM difference is `Δb_3 = 4`
+The inventory-conditioned pure-gauge-vs-full-SM difference is `Δb_3 = 4`
 `(P2)`. The per-sector decomposition at the full-SM instance is
 
 ```text
@@ -177,7 +176,7 @@ b_3(N_quark = 6)  =  (11 * 3 - 2 * 6) / 3  =  21 / 3  =  7.            (P2b)
 ```
 
 Equivalently, `Δb_3 = (2/3) · N_quark = (2/3)(6) = 4`, the algebraic
-form of the sea-quark correction at framework counts. The per-sector
+matter-sector coefficient difference for the two supplied inventories. The per-sector
 decomposition `(P3)` follows by reading the two additive contributions
 individually with their framework values. ∎
 
@@ -188,7 +187,7 @@ individually with their framework values. ∎
 (C2) Pure-gauge-to-full-SM ratio: b_3(0) : b_3(6) = 11 : 7. The
      1-loop asymptotic-freedom strengthening factor from full SM to
      pure gauge.
-(C3) The sea-quark correction is linear in N_quark with slope -(2/3),
+(C3) The quark-matter coefficient is linear in N_quark with slope -(2/3),
      parametric in N_color (slope independent of N_color):
         b_3(N_quark) - b_3(0)  =  -(2/3) * N_quark.
      Evaluates to -4 at N_quark = 6, matching (P2) by sign.
@@ -200,8 +199,7 @@ individually with their framework values. ∎
      b_3 = (33 - 24)/3 = 3, confirming (P1) is genuinely parametric.
 ```
 
-All five corollaries follow algebraically from `(P1)` plus the framework
-inputs.
+All five corollaries follow algebraically from `(P1)` plus the named inputs.
 
 ## What this claims
 
@@ -212,24 +210,22 @@ inputs.
 - The full-SM instance `b_3(N_quark = 6) = 7` at `(N_color, N_quark) =
   (3, 6)` `(P2b)`, with `N_quark = 6` supplied by `(X1b)` and bookkept as
   `N_gen × N_pair`.
-- The framework-counted pure-gauge-vs-full-SM difference `Δb_3 = 4`
+- The inventory-conditioned pure-gauge-vs-full-SM difference `Δb_3 = 4`
   `(P2)`.
 - The per-sector additive decomposition `(P3)` and the five derivable
   corollaries `(C1)`–`(C5)`.
 
 All conclusions follow algebraically from the four named inputs.
 
-**First quantitative framework-counted component of the
-pure-gauge-to-full-QCD bridge.** The named open residual `S5.bridge`
-of the α_s direct Wilson-loop lane is the sea-quark correction converting
-pure-gauge α_s extraction to full-QCD. This narrow theorem supplies the
-**β-coefficient piece**:
+**Conditioned coefficient comparison, not a physical bridge.** The named open
+residual `S5.bridge` of the α_s direct Wilson-loop lane concerns converting a
+pure-gauge α_s extraction to full-QCD. This narrow theorem supplies only a
+candidate **β-coefficient input**:
 `Δb_3 = 4` quantifies the shift between pure-gauge `b_3 = 11` and
 full-SM `b_3 = 7`, from substituting `N_quark = 0` versus `N_quark =
-6` in the same closed form `(P1)`. Does **not** close the bridge,
-which additionally requires threshold matching, RG integration, and
-the lattice-scale anchor; but is the cleanest framework-counted
-β-coefficient foothold on the lane.
+6` in the same closed form `(P1)`. It is not itself a sea-quark extraction
+correction and does not close or partially close the physical bridge, which
+requires threshold matching, RG integration, and a lattice-scale anchor.
 
 ## What this does NOT claim
 
@@ -262,12 +258,12 @@ the lattice-scale anchor; but is the cleanest framework-counted
 Markdown-link upstream (load-bearing):
 
 - [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md)
-  — retained; supplies the native gauge-structure surface.
+  — supplies the native gauge-structure surface.
 - [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
-  — retained; supplies the graph-first structural `SU(3)_c` color
+  — supplies the graph-first structural `SU(3)_c` color
   surface and `N_color = 3`.
 - [`THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md`](THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md)
-  — retained; supplies `(X2)` `N_gen = 3` (load-bearing only on
+  — supplies `(X2)` `N_gen = 3` (load-bearing only on
   `(P2b)` and `(P2)`).
 
 Explicit external condition (not a ledger dependency):
@@ -326,10 +322,10 @@ verifies via exact sympy `Rational` / `simplify` arithmetic:
   not derived here.
 - The Peskin–Schroeder β-coefficient formula `(X3)` is an explicit external
   condition.
-- The pure-gauge-to-full-QCD bridge `S5.bridge` is **partially**
-  addressed here at the β-coefficient layer (`Δb_3 = 4`); the full
-  bridge additionally requires threshold-matching content, RG-equation
-  integration, and the lattice-scale anchor. Those remain out-of-scope.
+- The pure-gauge-to-full-QCD bridge `S5.bridge` remains open. The conditional
+  coefficient difference `Δb_3 = 4` is one possible algebraic input, but a
+  physical conversion additionally requires threshold matching, RG-equation
+  integration, and a lattice-scale anchor.
 
 ## Cross-references
 
@@ -349,5 +345,5 @@ dependency edges:
   `CL3_COLOR_AUTOMORPHISM_THEOREM.md` — derivations of `T_F = 1/2`
   and `C_A = 3`; not load-bearing here (values enter via `(X3)`).
 - `BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md`
-  — retained `g_bare` rescaling identity used in the α_s lane bridge;
+  — `g_bare` rescaling identity used in the α_s lane bridge;
   not load-bearing here.

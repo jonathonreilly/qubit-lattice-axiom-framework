@@ -7,7 +7,7 @@ gauge-count surfaces supplying native `SU(2)_L` and structural
 `SU(3)_c` color, (X1) the explicit left-handed field-inventory condition
 `N_W = (N_color + 1) * N_gen`, (X2) the linked three-generation observable
 count `N_gen = 3`, (X3) the supplied one-Higgs-doublet inventory
-with `n_S^complex_components = 2`, and (X4′) the explicit d=4
+with `n_H^complex_doublets = 1`, and (X4′) the explicit d=4
 background-field / heat-kernel coefficient kernel recorded in this note,
 the SU(2)_L 1-loop β-coefficient admits the
 structural closed form
@@ -21,7 +21,7 @@ with `N_pair = 2` from `C_2(adj of SU(2)) = N_pair`. At the framework counts
 `(N_pair, N_color, N_gen) = (2, 3, 3)` the closed form `(P1)` evaluates to
 `b_2 = 19/6` by exact `Rational` arithmetic. The former broad textbook
 formula import is narrowed to an explicit d=4 spin-sector coefficient kernel
-on the retained four-dimensional Yang-Mills tangent surface; the runner
+on the linked four-dimensional Yang-Mills tangent surface; the runner
 derives the finite `SU(2)` trace factors and checks the downstream algebra,
 but it does not derive the heat-kernel spin coefficients from the minimal
 axioms. Peskin--Schroeder is cited only as a parallel reference for the
@@ -40,15 +40,15 @@ core of the parent
 The parent broad note additionally bundles companion `b_3`, `b_QED`
 structural forms, the joint asymptotic running package, and a lattice-scale
 α_2 anchor; this narrow theorem isolates only the load-bearing substitution
-step that yields `b_2 = 19/6` from the named retained inputs plus the
+step that yields `b_2 = 19/6` from the named supplied and linked inputs plus the
 explicit X4′ coefficient kernel below.
 
 ## Statement
 
 Let `N_pair`, `N_color`, `N_gen` be abstract positive integers and let
 `b_2` denote the SU(2)_L 1-loop β-function coefficient in the convention
-`b > 0` ↔ asymptotic freedom. Use the named retained inputs `(X0)`-`(X3)`,
-the retained four-dimensional Yang-Mills marginality surface `(X4a)`, and the
+`b > 0` ↔ asymptotic freedom. Use the named inputs `(X0)`-`(X3)`,
+the linked four-dimensional Yang-Mills marginality surface `(X4a)`, and the
 explicit d=4 coefficient kernel `(X4b)`:
 
 **(X0) Gauge-count surface.** The native gauge and graph-first color surfaces
@@ -63,10 +63,9 @@ N_color = 3.
 ```
 
 Sources:
-[`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md)
-(effective_status: `retained`) and
-[`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
-(effective_status: `retained`).
+[`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md) and
+[`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md).
+Their live statuses are resolved by the audit pipeline, not authored here.
 
 **(X1) Supplied LH SU(2)-doublet inventory.** Supply one LH quark doublet
 in each of `N_color` color copies and one LH lepton doublet per generation.
@@ -87,15 +86,14 @@ not derive the inventory or the species interpretation.
 N_gen  =  3.                                                              (X2)
 ```
 
-Source: [`THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md`](THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md)
-(effective_status: `retained`).
+Source: [`THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md`](THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md).
 
 **(X3) Supplied one-Higgs-doublet content.** The declared SM inventory
-supplies one complex `SU(2)_L` scalar doublet, so the complex-scalar component
-count contributing to the beta-coefficient is
+supplies one complex `SU(2)_L` scalar doublet, so the representation-multiplet
+inventory contributing to the beta-coefficient is
 
 ```text
-n_S^complex_components  =  2.                                              (X3)
+n_H^complex_doublets  =  1.                                                 (X3)
 ```
 
 Source: [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md), as a declared physical
@@ -108,7 +106,7 @@ coefficient is a logarithmic local counterterm on the four-dimensional
 marginal Yang-Mills tangent. The framework `d=4` marginality surface is
 supplied by
 [`YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`](YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md)
-(effective_status: `retained`).
+as a linked input whose live status is resolved by the audit pipeline.
 
 **(X4b) Explicit d=4 one-loop coefficient kernel.** On the
 local `SU(2)_L` tangent, fix background-field gauge and heat-kernel
@@ -120,8 +118,8 @@ spin/statistics sectors:
 ```text
 gauge field + Faddeev-Popov ghost:  +(11/3) * C_2(adj of SU(2)),
 left Weyl doublets:                  -(2/3)  * T(F^Weyl) * N_W,
-complex Higgs components:            -(1/6)  * T(F^scalar)
-                                               * n_S^complex_components.
+complex Higgs doublets:               -(1/3)  * T(F^scalar)
+                                               * n_H^complex_doublets.
 ```
 
 The paired runner verifies the finite `SU(2)` representation data used by
@@ -138,7 +136,7 @@ ghost, Weyl, and scalar fluctuation operators on that local tangent. They
 are recorded here as the X4′ coefficient kernel. The runner treats these
 spin-sector coefficients as the stated bounded QFT kernel, derives the
 finite `SU(2)` trace factors independently, and checks the downstream
-symbolic substitution; it does not derive `11/3`, `-2/3`, or `-1/6` from
+symbolic substitution; it does not derive `11/3`, `-2/3`, or `-1/3` from
 the minimal axioms. Peskin--Schroeder Eq. 16.135 is a parallel textbook
 reference, not an additional load-bearing import.
 
@@ -171,7 +169,7 @@ total:                                                          =  19/6.   (P3)
 Pure substitution.
 
 **Step 0 (explicit coefficient kernel).** Apply `(X4a)` to work on
-the retained four-dimensional marginal Yang-Mills tangent. Apply `(X4b)` to
+the linked four-dimensional marginal Yang-Mills tangent. Apply `(X4b)` to
 the local `SU(2)_L` fluctuation sectors. The finite `SU(2)` trace
 normalization gives `T(F^Weyl) = T(F^scalar) = 1/2`; the adjoint Casimir
 gives `C_2(adj of SU(2)) = N_pair`. Thus the local coefficient template is
@@ -179,7 +177,7 @@ gives `C_2(adj of SU(2)) = N_pair`. Thus the local coefficient template is
 ```text
 b_2 = (11/3) * N_pair
       - (2/3) * (1/2) * N_W
-      - (1/6) * (1/2) * n_S^complex_components.                           (S0)
+      - (1/3) * (1/2) * n_H^complex_doublets.                              (S0)
 ```
 
 **Step 1 (LH Weyl-doublet contribution).** Apply `(S0)` with
@@ -199,8 +197,8 @@ LH Weyl matter contribution to b_2  =  -(1/3) * (N_color + 1) * N_gen.    (S1)
 `T(F^scalar) = 1/2` and `(X3)`:
 
 ```text
--(1/6) * (1/2) * n_S^complex_components
-  =  -(1/6) * (1/2) * 2
+-(1/3) * (1/2) * n_H^complex_doublets
+  =  -(1/3) * (1/2) * 1
   =  -1/6.                                                                  (S2)
 ```
 
@@ -273,7 +271,7 @@ inputs.
 
 - The closed form `(P1)` / `(P1')` for `b_2` parametric in
   `(N_pair, N_color, N_gen)` under the named upstream inputs `(X0)`-`(X3)`,
-  the retained d=4 tangent `(X4a)`, and the explicit X4′ coefficient
+  the linked d=4 tangent `(X4a)`, and the explicit X4′ coefficient
   kernel `(X4b)`.
 - The framework-instance evaluation `b_2 = 19/6` at
   `(N_pair, N_color, N_gen) = (2, 3, 3)` `(P2)`.
@@ -281,7 +279,7 @@ inputs.
 - The four derivable corollaries `(C1)`–`(C4)`.
 
 All five conclusions follow algebraically from `(X0)`-`(X3)` plus the
-retained d=4 tangent `(X4a)` and explicit X4′ coefficient kernel `(X4b)`.
+linked d=4 tangent `(X4a)` and explicit X4′ coefficient kernel `(X4b)`.
 
 ## What this does NOT claim
 
@@ -294,7 +292,7 @@ retained d=4 tangent `(X4a)` and explicit X4′ coefficient kernel `(X4b)`.
   for the same d=4 background-field coefficient convention after the
   narrower X4′ coefficient kernel has been stated here.
 - Does **not** derive the d=4 heat-kernel spin-sector coefficients
-  `11/3`, `-2/3`, or `-1/6` from minimal axioms; those coefficients remain
+  `11/3`, `-2/3`, or `-1/3` from minimal axioms; those coefficients remain
   the explicit X4′ QFT kernel for this bounded theorem.
 - Does **not** derive the LH field inventory or state count. The relation
   `N_W = (N_color + 1) N_gen` is the explicit condition `(X1)`.
@@ -319,8 +317,8 @@ items:
 2. The companion forms `b_3 = (11 N_color - 2 N_quark)/3 = 7` and
    `b_QED = (2/3)(N_color + 1)² = 32/3` derived inline.
 3. The joint asymptotic running package
-   `1/α_2(Q) = 16π + (19/(12π)) ln(Q/Q_lattice)`, requiring the retained
-   lattice-scale anchor `1/α_2|_lattice = 16π` from
+   `1/α_2(Q) = 16π + (19/(12π)) ln(Q/Q_lattice)`, requiring the separate
+   separately supplied lattice-scale anchor `1/α_2|_lattice = 16π` from
    `YT_EW_COLOR_PROJECTION_THEOREM.md`.
 4. The per-sector decomposition `(P3)` and the structural integer
    relations.
@@ -335,18 +333,18 @@ this row; no broad-parent content is load-bearing.
 Markdown-link upstream (load-bearing):
 
 - [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md)
-  — retained; supplies the native `SU(2)_L` gauge-structure surface
+  — supplies the native `SU(2)_L` gauge-structure surface
   used for the SU(2) specialization.
 - [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
-  — retained; supplies the graph-first structural `SU(3)_c` color
+  — supplies the graph-first structural `SU(3)_c` color
   surface and the color multiplicity `N_color = 3`.
 - [`THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md`](THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md)
-  — retained; supplies `(X2)` `N_gen = 3` observable-stable count.
+  — supplies `(X2)` `N_gen = 3` observable-stable count.
 - [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
   — declared-inventory source for `(X3)` one complex scalar doublet and
-  `n_S^complex_components = 2`; this is supplied physical content.
+  `n_H^complex_doublets = 1`; this is supplied physical content.
 - [`YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`](YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md)
-  — retained; supplies `(X4a)` the four-dimensional marginal Yang-Mills
+  — supplies `(X4a)` the four-dimensional marginal Yang-Mills
   tangent on which the local one-loop logarithmic coefficient is evaluated.
 
 Parallel textbook reference (not a ledger dependency):
@@ -365,7 +363,7 @@ Parallel textbook reference (not a ledger dependency):
 - No same-surface family arguments.
 - No staggered-Dirac realization input.
 - No new graph-first selector consumed; the structural `SU(3)_c` count enters
-  only through the cited retained upstream.
+  only through the cited upstream.
 - The pipeline resolves the five linked scientific dependencies at review and
   audit time. The LH field inventory `(X1)` and the X4′ spin-sector kernel are
   explicit conditions rather than dependency authorities.
@@ -383,7 +381,7 @@ verifies via exact sympy `Rational` / `simplify` arithmetic:
    and `sum_a ad(T_a)^2 = 2 I_adj`, hence `T(F)=1/2` and
    `C_2(adj_SU(2)) = N_pair = 2` on the framework `SU(2)_L` surface.
 2. `(X4b)` boundary record: state the exact rational d=4 coefficient kernel
-   `{gauge+ghost: 11/3, Weyl: -2/3, complex scalar component: -1/6}` used
+   `{gauge+ghost: 11/3, Weyl: -2/3, complex scalar multiplet: -1/3}` used
    in the background-field coefficient; this runner does not derive those
    spin-sector constants.
 3. `(P1)` symbolic: substitute `(X4a)`-`(X4b)` with `(X1)`, `(X3)`, and
@@ -411,7 +409,7 @@ The 2026-07-04 conditional audit found that the arithmetic closes but the old
 load-bearing textbook input. This repair removes that import from the
 load-bearing surface:
 
-- the retained `d=4` Yang-Mills tangent is now cited explicitly through
+- the linked `d=4` Yang-Mills tangent is cited explicitly through
   `YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`;
 - the local background-field / heat-kernel sector coefficients are stated as
   the explicit X4′ bounded QFT kernel;
@@ -464,7 +462,7 @@ citation-graph builder does not parse them as upstream dependency edges:
   `LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10`, which does
   not supply the field inventory used here.
 - `YT_EW_COLOR_PROJECTION_THEOREM.md`
-  — retained derived; supplies the lattice-scale anchor
+  — supplies the lattice-scale anchor
   `1/α_2|_lattice = 16π` used in the parent broad note's joint
   asymptotic running package (not load-bearing here).
 - `ONE_GENERATION_MATTER_CLOSURE_NOTE.md`

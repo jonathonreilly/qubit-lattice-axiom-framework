@@ -2462,7 +2462,7 @@
         },
         {
           "claim_id": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "su3_cube_full_rho_perron_2026-05-04",
@@ -2482,7 +2482,7 @@
         },
         {
           "claim_id": "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "su3_wigner_intertwiner_block2_theorem_note_2026-05-03",
@@ -2899,6 +2899,6 @@
       "uncertified_count": 662
     }
   ],
-  "repo_head": "31eae186a6015f18a1406dcb351c618b65ab374e",
+  "repo_head": "17cb0c5c32e753ef1297b185fbd1e8c6d41920c2",
   "schema": "lane_certification_v2"
 }

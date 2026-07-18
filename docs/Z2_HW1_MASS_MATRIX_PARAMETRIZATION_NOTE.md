@@ -5,9 +5,10 @@
 **Status:** proposed exact finite-dimensional structural theorem; audit-status
 authority belongs to the independent audit lane
 **Script:** `scripts/frontier_z2_hw1_mass_matrix_parametrization.py`
-**Authority role:** self-contained normal-form theorem for a supplied
-three-point axis-permutation representation; not a physical-carrier,
-mass-hierarchy, or parameter-selection theorem
+**Authority role:** self-contained positive classification theorem for a
+supplied three-point axis-permutation representation
+**Authority boundary:** physical-carrier identification, mass hierarchy,
+symmetry breaking, and selector theorems are not supplied
 
 ## Safe statement
 
@@ -55,8 +56,8 @@ M = (a - c) I_3 + c J_3,
 spec(M) = {a + 2c, a - c, a - c},
 ```
 
-where `J_3` is the all-ones matrix. Thus exact `S_3` invariance forces at
-most two spectral values; it does not select either real parameter.
+where `J_3` is the all-ones matrix. This is the exact spectrum throughout the
+full-`S_3`-invariant locus.
 
 ## Derivation from explicit generators
 
@@ -111,20 +112,22 @@ has three distinct eigenvalues.
 
 ## Framework-specific step
 
-- the symbols `X_i` and `hw=1` label the supplied three-dimensional source
-  surface only; this note does not derive a physical carrier or symmetry-
-  breaking mechanism
+- the symbols `X_i` and `hw=1` are explicitly supplied representation labels;
+  the theorem begins with that representation and supplies no derivation of
+  physical-generation or mass-carrier semantics
+- this note supplies no physical carrier identification, mass hierarchy,
+  symmetry-breaking mechanism, or selector theorem
 - any application to a physical mass operator must separately establish the
   carrier identification, its group action, and pointwise operator invariance
 
 ## Why it matters on `main`
 
 This is a finite linear-algebra support tool complementary to the separate
-conditional `S_3` commutant classification. It exposes the full residual
-`Z_2` Hermitian normal form and its exact full-`S_3` sublocus on the supplied
-representation. It does not claim a derived flavor hierarchy, identify the
-space with physical generations, establish physical symmetry breaking, or
-select a point in the five-real-parameter family.
+conditional `S_3` commutant classification. Its claim ends at the exact
+residual-`Z_2` Hermitian normal form, the open-dense simple-spectrum locus, and
+the exact full-`S_3` sublocus and spectrum of the supplied representation.
+Physical carrier identification, flavor hierarchy, symmetry breaking, and
+selector theorems lie outside this note's authority.
 
 ## Verification
 
@@ -140,4 +143,6 @@ then performs an exact symbolic solve of the transposition and 3-cycle
 invariance equations, checks all six permutation matrices on the resulting
 `S_3` locus, verifies the exact characteristic-polynomial factorization and
 generic-family discriminant, and exercises hostile controls omitting each
-necessary locus condition.
+necessary locus condition. A source-scope firewall also checks the supplied-
+representation boundary and rejects a hostile prose mutation that restores a
+parameter-nonselection conclusion.

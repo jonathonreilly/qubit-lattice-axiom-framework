@@ -9,18 +9,24 @@ Safe statement:
   with a, b, c real and d complex. The sign eigenvalue and the remaining
   2x2 block are explicit, and generic points give three distinct eigenvalues.
   For the supplied axis-permutation representation, the exact full-S_3 locus
-  is a=b and d=c with c real. No physical carrier or mass selector is claimed.
+  is a=b and d=c with c real, with its exact spectrum displayed. The claim
+  scope ends at classification of this supplied representation and its loci.
 """
 
 from __future__ import annotations
 
+import re
 import sys
+from pathlib import Path
 
 import numpy as np
 import sympy as sp
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+SOURCE_NOTE = REPO_ROOT / "docs" / "Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md"
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -35,6 +41,20 @@ def check(name: str, condition: bool, detail: str = "") -> None:
     if detail:
         line += f"  ({detail})"
     print(line)
+
+
+def rejected_scope_phrases(text: str) -> list[str]:
+    """Return parameter-nonselection/no-go rhetoric outside this claim."""
+    normalized = " ".join(text.casefold().split())
+    patterns = (
+        r"forces\s+at\s+most\s+two\s+spectral\s+values",
+        r"does\s+not\s+select\s+(?:either\s+)?(?:real\s+)?parameters?",
+        r"(?:symmetry|invariance)\s+cannot\s+select",
+        r"uniqueness\s+cannot\s+follow",
+        r"no\s+(?:mass\s+)?selector\s+exists",
+        r"additional\s+physics\s+cannot\s+choose",
+    )
+    return [pattern for pattern in patterns if re.search(pattern, normalized)]
 
 
 U_Z2 = np.array(
@@ -426,15 +446,47 @@ def part5_exact_s3_locus() -> None:
     )
 
 
+def part6_positive_scope_firewall() -> None:
+    print("\n" + "=" * 72)
+    print("PART 6: Positive supplied-representation scope firewall")
+    print("=" * 72)
+
+    note_text = SOURCE_NOTE.read_text(encoding="utf-8")
+    normalized = " ".join(note_text.casefold().split())
+    violations = rejected_scope_phrases(note_text)
+    check(
+        "the source note excludes parameter-nonselection/no-go conclusions",
+        not violations,
+        f"violations = {violations}",
+    )
+    check(
+        "the source note keeps hw=1 and X_i as supplied representation labels",
+        "`x_i` and `hw=1` are explicitly supplied representation labels" in normalized,
+    )
+
+    hostile_mutation = (
+        note_text
+        + "\nThus exact full-S_3 invariance "
+        + "forces at most two spectral values; it "
+        + "does not select either real parameter.\n"
+    )
+    check(
+        "hostile prose mutation restoring parameter-nonselection is rejected",
+        bool(rejected_scope_phrases(hostile_mutation)),
+    )
+
+
 def main() -> int:
     print("=" * 72)
     print("Z_2 hw=1 MASS-MATRIX PARAMETRIZATION")
+    print("SCOPE: POSITIVE CLASSIFICATION OF A SUPPLIED REPRESENTATION")
     print("=" * 72)
     part1_parametrization()
     part2_sign_eigenvector()
     part3_block_and_spectrum()
     part4_genericity()
     part5_exact_s3_locus()
+    part6_positive_scope_firewall()
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print("=" * 72)

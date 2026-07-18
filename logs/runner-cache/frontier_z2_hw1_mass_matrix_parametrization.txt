@@ -1,13 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_z2_hw1_mass_matrix_parametrization.py
-runner_sha256: f2aa1d7bfa4093d10e2d537b0832a47a7e82b5da67a4ba6b9557dcef1104a5f6
+runner_sha256: 7ea1669f32bb5f3ee27de2b7cd096508a1a02a29f5f992105a39a4c5ec3d9cb5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.33
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 ========================================================================
 Z_2 hw=1 MASS-MATRIX PARAMETRIZATION
+SCOPE: POSITIVE CLASSIFICATION OF A SUPPLIED REPRESENTATION
 ========================================================================
 
 ========================================================================
@@ -61,7 +62,14 @@ PART 5: Exact full-S_3 locus from explicit generators
   [PASS] hostile control: omitting Im(d)=0 breaks 3-cycle invariance
 
 ========================================================================
-TOTAL: PASS=30, FAIL=0
+PART 6: Positive supplied-representation scope firewall
+========================================================================
+  [PASS] the source note excludes parameter-nonselection/no-go conclusions  (violations = [])
+  [PASS] the source note keeps hw=1 and X_i as supplied representation labels
+  [PASS] hostile prose mutation restoring parameter-nonselection is rejected
+
+========================================================================
+TOTAL: PASS=33, FAIL=0
 ========================================================================
 
 ----- stderr -----

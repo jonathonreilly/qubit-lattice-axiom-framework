@@ -1,6 +1,6 @@
 {
- "edge_count": 14438,
- "node_count": 3965,
+ "edge_count": 14722,
+ "node_count": 4388,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -345,6 +345,10 @@
   "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08": {
    "deps_hash": "17b0cde87f4c",
    "out_degree": 3
+  },
+  "admissibility_record_continuation_refinement_conditional_bounded_theorem_note_2026-07-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "admissibility_rule_covariance_extension_classification_openness_achiral_oriented_frame_minimal_chiral_channel_bounded_theorem_note_2026-07-03": {
    "deps_hash": "d69dd5ba8c7f",
@@ -1567,8 +1571,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "1703eb28f7c7",
-   "out_degree": 301
+   "deps_hash": "b6f0bca07a6e",
+   "out_degree": 306
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -4370,6 +4374,10 @@
    "deps_hash": "5861e51d4c5d",
    "out_degree": 1
   },
+  "extensional_nearest_neighbor_rule_deep_probe_2026-07-13": {
+   "deps_hash": "47bdd56db7ab",
+   "out_degree": 4
+  },
   "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -5757,6 +5765,10 @@
   "gellmann_completeness_theorem_note_2026-05-02": {
    "deps_hash": "5e93d700a831",
    "out_degree": 1
+  },
+  "generated_finite_composition_minimality_theorem_2026-07-13": {
+   "deps_hash": "bf4029e958ca",
+   "out_degree": 3
   },
   "generated_geometry_synthesis_note": {
    "deps_hash": "e3b0c44298fc",
@@ -11622,6 +11634,14 @@
    "deps_hash": "d673176fd64a",
    "out_degree": 2
   },
+  "read_reset_cadence_interference_channel_bounded_theorem_note_2026-07-17": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "read_twice_packet_derive_first_unification_bounded_note_2026-07-13": {
+   "deps_hash": "3b19a6a3b936",
+   "out_degree": 4
+  },
   "reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -15214,7 +15234,195 @@
    "deps_hash": "7cbc0749d4b4",
    "out_degree": 4
   },
+  "work_history.repo.review_feedback.abelian_compatible_seed_bell_merge_cycle15_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.active_cubic_source_response_cycle211_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.actual_contact_action_syndrome_tournament_cycle285_note_2026-07-17": {
+   "deps_hash": "a7066e51ef19",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.actual_five_port_open_rlb_macrostep_audit_cycle99_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.actual_five_port_open_rlb_macrostep_cycle97_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.actual_header_role_decoder_parity_selection_cycle18_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.adaptive_record_protocol_qca_full_abstraction_theorem_note_2026-07-14": {
+   "deps_hash": "d1e713b54393",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.admissibility_record_continuation_axiom_draft_note_2026-07-13": {
+   "deps_hash": "fff883056f18",
+   "out_degree": 3
+  },
+  "work_history.repo.review_feedback.admissibility_symbol_definability_and_exact_law_reference_challenge_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "work_history.repo.review_feedback.adversarial_review_2026_04_05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.all_nine_six_context_shared_ancestry_cycle177_note_2026-07-16": {
+   "deps_hash": "ba13d751a059",
+   "out_degree": 2
+  },
+  "work_history.repo.review_feedback.all_nine_six_context_shared_ancestry_cycle177_scope_note_2026-07-16": {
+   "deps_hash": "ba13d751a059",
+   "out_degree": 2
+  },
+  "work_history.repo.review_feedback.append_only_causal_bell_wire_cycle13_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.archive_carrier_source_ledger_cycle227_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.autonomous_cubic_field_emission_cycle214_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.autonomous_homogeneous_binary_nucleation_note_2026-07-14": {
+   "deps_hash": "cce3dd398962",
+   "out_degree": 4
+  },
+  "work_history.repo.review_feedback.autonomous_self_closing_diamond_cycle17_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.autonomous_signed_row_recurrent_sidecar_cycle171_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.aux_gated_candidate_transport_cycle95_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.auxiliary_pair_completion_gate_cycle54_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.bare_metal_literal_egress_bind_cycle190_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.bare_metal_record_actualization_primary_source_audit_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.bare_metal_record_formation_final_probe_results_and_axiom_need_note_2026-07-13": {
+   "deps_hash": "0417bdf22b14",
+   "out_degree": 1
+  },
+  "work_history.repo.review_feedback.bare_metal_record_formation_minimum_viable_probe_program_note_2026-07-13": {
+   "deps_hash": "c0ee6898b086",
+   "out_degree": 2
+  },
+  "work_history.repo.review_feedback.blind_residual_atom_packing_and_one_law_constitutional_schema_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.c129_two_parent_corner_relocated_cage_seed_cycle132_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.c132_cage_first_bit_successor_boundary_cycle135_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.c135_six_guard_h0_factorized_full_graph_cycle136_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.candidate_selected_common_reference_port_cycle120_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.canonical_law_completeness_contract_note_2026-07-13": {
+   "deps_hash": "6c05a91cc54d",
+   "out_degree": 1
+  },
+  "work_history.repo.review_feedback.car_compiler_record_causal_depth_bridge_cycle255_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.carried_internal_species_source_field_ledger_repair_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.carried_relative_extended_green_branch_hunt_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.carried_relative_frozen_branch_observable_cycle300_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.carried_site_reservoir_interface_mapping_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.carried_source_recurrent_tagged_block_cycle316_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.carried_source_retarded_lattice_execution_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.causal_algebraic_history_substrate_specification_note_2026-07-13": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.causal_completion_cable_audit_cycle69_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.causal_front_record_phase_minimum_model_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.causal_order_record_density_metric_reconstruction_cycle46_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.causal_phase_chain_cycle61_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.causal_reversible_actuality_weight_independence_note_2026-07-14": {
+   "deps_hash": "f3477e5d7eab",
+   "out_degree": 13
+  },
+  "work_history.repo.review_feedback.causal_schedule_equivalence_wolfram_inspiration_probe_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.certified_record_corpus_ergodic_frequency_cycle21_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cfsi_q_bell_coherent_causal_front_law_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cfsi_qh11_homogeneous_local_decoder_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.chiral_triad_transverse_context_cycle17_note_2026-07-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -15230,17 +15438,637 @@
    "deps_hash": "ecfb42af6768",
    "out_degree": 4
   },
+  "work_history.repo.review_feedback.clean_row_alphabet_component_replacement_cycle175_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.clock_as_commit_count_and_rate_classification_cycle22_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "work_history.repo.review_feedback.closed_pr_science_salvage_sweep_2026-05-03": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "work_history.repo.review_feedback.coarse_outcome_uncompute_mass_cycle226_note_2026-07-17": {
+   "deps_hash": "16397d700f95",
+   "out_degree": 12
   },
   "work_history.repo.review_feedback.code_review_last_week_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "work_history.repo.review_feedback.coherent_causal_close_detector_compiler_cycle209_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.coherent_cubic_pair_orbit_synthesis_cycle303_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.coherent_even_odd_sector_join_cycle252_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.coherent_gamma_parity_sector_doubling_cycle264_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.coherent_gauge_frame_autonomous_compiler_cycle249_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.coherent_orientation_character_car_compiler_cycle272_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.collision_safe_physical_catchup_synthesis_cycle299_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.common_acoustic_cone_mass_cycle218_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.common_clifford_context_interpreter_cycle191_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.common_matter_field_coin_family_cycle219_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.common_replacement_base_integration_cycle197b_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.compact_binary_bundle_transparent_contact_cycle192_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.compact_five_literal_lane_spacing_cycle180_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.compact_five_literal_membership_bind_cycle183_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.compact_pair_barrier_phase_cycle74_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.complete_candidate_lstar_assembly_cycle41_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.complete_future_operational_parity_certificate_cycle19_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.complete_history_reconstruction_cycle45_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.complete_sampled_law_pair_axiom_underdetermination_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.completion_barrier_phase_transducer_cycle67_scratch_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.conditional_flavor_mass_operator_compiler_cycle222_note_2026-07-17": {
+   "deps_hash": "f648308ce8c9",
+   "out_degree": 2
+  },
   "work_history.repo.review_feedback.conformal_class_causal_source_packet_review_2026-07-09": {
    "deps_hash": "12ef887d4de7",
    "out_degree": 3
+  },
+  "work_history.repo.review_feedback.conjugate_source_bridge_followon_synthesis_cycle295_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.connected_edge_autonomous_apparatus_law_cycle282_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.connected_edge_code_odd_sector_join_cycle265_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.connected_edge_same_code_local_instrument_cycle278_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.constitutional_lower_bound_closure_and_clause_deletion_cycle31_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.constructive_constitutional_delta_audit_cycle83_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.contact_archive_finite_process_history_cycle284_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.contact_close_typed_record_dag_cycle287_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.contractible_lightcone_wilson_quotient_cycle271_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.covariant_vertex_gamma_car_compiler_cycle261_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cubic_covariance_exact_repair_tournament_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cubic_cz_edge_rule_uniqueness_selection_cycle36_note_2026-07-14": {
+   "deps_hash": "63c20a020a2e",
+   "out_degree": 1
+  },
+  "work_history.repo.review_feedback.cubic_neighbor_kernel_selection_first_principles_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cubic_one_qubit_clifford_qca_uniqueness_cycle40_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cubic_qubit_relativistic_reduction_cycle7_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cubic_split_step_qw_qca_primary_source_uniqueness_audit_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cycle189_record_corpus_frequency_bridge_cycle194_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cycle190_cycle193_law_union_compatibility_audit_cycle197a_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cycle48_decoder_clifford_machine_cycle146_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cycle48_symplectic_tableau_reconstruction_cycle148_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cycle48_unified_stabilizer_record_machine_cycle147_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cycle60_cycle67_mixed_composition_audit_cycle70_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cycle67_endpoint_bdh_composition_cycle73_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cycle67_terminal_bdh_rebind_cycle72_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cycle80_recurrence_audit_endpoint_tube_nucleation_cycle85_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.deeper_probes_final_axiom_content_gate_note_2026-07-13": {
+   "deps_hash": "4f1d55961126",
+   "out_degree": 2
+  },
+  "work_history.repo.review_feedback.delayed_locking_causal_close_cycle16_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.designed_payload_interaction_window_cycle196_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.deterministic_unique_extension_record_sector_note_2026-07-14": {
+   "deps_hash": "690e3b8550c0",
+   "out_degree": 3
+  },
+  "work_history.repo.review_feedback.direct_gatewise_matter_mediator_current_ledger_route_a_cycle293_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.directed_payload_reusable_cone_cycle113_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.directional_multiword_rule_port_output_cycle82_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.disjoint_mixed_product_coexistence_cycle198_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.distinguishable_antisymmetric_fock_compiler_cycle239_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.distributed_phase_field_car_compiler_cycle263_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.dressed_spoke_parity_gauge_cycle273_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.dynamic_record_boundary_index_qca_steelman_note_2026-07-14": {
+   "deps_hash": "89bf0379eea6",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.dynamic_static_source_interface_synthesis_cycle296_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.eight_bit_physical_role_comparator_cycle81_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.eight_bit_status_completion_front_cycle112_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.exact_3d_higher_form_bosonization_cycle235_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.exact_compiler_closure_ledger_cycle88_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.exact_law_constitutional_placement_schema_probe_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.exact_law_irreducible_content_independence_tournament_note_2026-07-14": {
+   "deps_hash": "dee28d9950a0",
+   "out_degree": 2
+  },
+  "work_history.repo.review_feedback.exact_law_uniqueness_selection_primary_source_audit_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.exact_predictive_specification_tournament_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.existence_uniqueness_and_exact_law_reference_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.farrelly_short_auxiliary_majorana_car_compiler_cycle236_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.final_m64_physical_m2_compiler_tournament_synthesis_cycle276_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.final_missing_content_census_and_constitutional_edit_gate_cycle35_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.finite_coin_scalar_wave_dilation_cycle215_no_go_discipline_checklist_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.finite_coin_scalar_wave_dilation_cycle215_no_go_ledger_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.finite_coin_scalar_wave_dilation_cycle215_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.finite_cycle48_six_bit_local_decoder_cycle145_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.finite_diamond_sampled_luders_invariant_record_model_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.first_autonomous_successor_role_port_cycle115_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.first_contact_boundary_diagnostic_cycle199_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.first_principles_law_selection_tournament_note_2026-07-14": {
+   "deps_hash": "bc6e2b498609",
+   "out_degree": 2
+  },
+  "work_history.repo.review_feedback.first_role_differentiation_cycle56_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.first_self_grown_selector_payload_bit0_cycle106_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.five_lane_toe_bridge_endpoint_reconnaissance_cycle270_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.fixed_total_momentum_molecular_scattering_cycle207_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.fixed_two_value_serial_read_path_cycle118_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.fock_modular_boundary_current_cycle229_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.followup_m64_physical_m2_compiler_tournament_synthesis_cycle257_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.foundation_atom_ledger_and_dependency_map_note_2026-07-13": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.foundation_licensed_physical_equivalence_weyl_pair_note_2026-07-14": {
+   "deps_hash": "85985aaf012a",
+   "out_degree": 6
+  },
+  "work_history.repo.review_feedback.foundation_site_net_record_equivalence_classification_cycle21_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.foundation_sort_preserving_equivalence_and_dynamical_gauge_collapse_note_2026-07-14": {
+   "deps_hash": "8e154d10b6c0",
+   "out_degree": 3
+  },
+  "work_history.repo.review_feedback.four_axiom_toe_completeness_and_final_update_gate_note_2026-07-13": {
+   "deps_hash": "e82ce087358a",
+   "out_degree": 1
+  },
+  "work_history.repo.review_feedback.four_generator_physical_tableau_row_machine_cycle149_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.four_open_reservation_comb_cycle59_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.four_row_late_guard_socket_boundary_cycle137_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.fragment_safe_role_remap_type_integration_cycle108_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.frame_caged_local_motif_cycle50_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.full_a_boundary_launcher_last_cycle57_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.full_fock_unit_weight_mediator_paired_two_source_cycle325_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.full_hard_core_higher_field_history_route_2_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.full_lattice_fd_slir_compatibility_and_minimum_content_note_2026-07-14": {
+   "deps_hash": "64cc92c34ba2",
+   "out_degree": 2
+  },
+  "work_history.repo.review_feedback.full_law_adjacent_critical_pair_actuality_cycle186_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.full_law_binary_physicalization_census_cycle185_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.full_law_inventory_adversarial_reduction_note_2026-07-14": {
+   "deps_hash": "d7a95f085c4e",
+   "out_degree": 2
+  },
+  "work_history.repo.review_feedback.full_two_particle_fixed_seam_synthesis_cycle305_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.full_z3_causal_front_sampled_instrument_law_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.fundamental_one_qubit_qca_compilation_cycle12_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.gate_faithful_fswap_physical_close_cycle259_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.general_clifford_reference_spoke_covariance_cycle268_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.generated_beta_phase_register_cycle220_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.generated_carrier_molecule_recoil_cycle206_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.generated_endpoint_autonomous_frame_rail_cycle102_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.genuine_staggered_parity_shuttle_cycle260_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.global_q2_simultaneous_two_source_cycle328_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.global_record_history_process_law_cycle30_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.gravity_route_c_bounded_direct_current_search_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.guarded_three_row_socket_renewal_boundary_cycle134_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.guided_cycle67_bdh_rebind_cycle76_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.haegeman_parity_sector_gauging_cycle245_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.hardcore_global_q2_mediator_cycle331_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.homogeneous_boundary_seed_selection_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.incident_car_auxiliary_dressing_cycle256_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.infinite_redundancy_quasilocal_record_sector_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.infinite_reversible_record_export_qca_cycle11_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.intrinsic_fswap_occurrence_link_tournament_cycle262_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.intrinsic_simulation_observer_equivalence_record_cost_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.invariant_first_seed_hard_core_cycle18_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.isotropic_weyl_qca_lattice_compatibility_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.joint_endpoint_bdh_rebind_cycle63_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.joint_endpoint_mixed_rebind_cycle78_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.joint_six_mode_coin_bridge_synthesis_cycle302_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.launcher_last_first_role_differentiation_cycle55_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.lawful_h0_reference_fork_cycle114_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.literal_bit_alu_symplectic_commutation_cycle150_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.live_directional_program_writer_cycle90_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.live_eight_bit_physical_comparator_cycle89_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.live_empty_caged_router_patricia_cycle92_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.live_seed_row_readable_macrostep_cycle94_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.live_selected_compiler_closure_revision_cycle91_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.local_click_strength_resolution_inertia_cycle225_note_2026-07-17": {
+   "deps_hash": "74f223b1d02f",
+   "out_degree": 10
+  },
+  "work_history.repo.review_feedback.local_conjugate_reservoir_source_field_ledger_repair_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.local_conservative_commit_resource_gravity_cycle9_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.local_force_inertial_mass_bridge_cycle202_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.local_generator_source_tournament_cycle228_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.local_instrument_to_record_close_tournament_cycle279_note_2026-07-17": {
+   "deps_hash": "0330a11fc363",
+   "out_degree": 8
+  },
+  "work_history.repo.review_feedback.local_m2_mass_scalar_deformation_response_route_b_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.local_relational_late_detector_cycle208_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.local_rough_puncture_odd_sector_cycle247_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.local_to_global_cubic_process_glue_cycle33_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.locally_bound_composite_mass_bridge_cycle203_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.locally_matched_wilson_sector_states_cycle275_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.locking_cadence_record_kernel_discriminator_cycle223_note_2026-07-17": {
+   "deps_hash": "189cef0070ca",
+   "out_degree": 16
+  },
+  "work_history.repo.review_feedback.long_run_record_only_append_architecture_cycle32_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "work_history.repo.review_feedback.main_control_plane_audit_2026-04-11": {
    "deps_hash": "03b4af2d891f",
@@ -15250,6 +16078,434 @@
    "deps_hash": "91ded25719f6",
    "out_degree": 3
   },
+  "work_history.repo.review_feedback.matter_counting_chirality_exact_law_placement_note_2026-07-14": {
+   "deps_hash": "d86076dca42e",
+   "out_degree": 22
+  },
+  "work_history.repo.review_feedback.matter_coupling_faithful_close_record_candidate_cycle281_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.measure_twice_constitutional_decision_packet_note_2026-07-13": {
+   "deps_hash": "611ba8361c4a",
+   "out_degree": 8
+  },
+  "work_history.repo.review_feedback.measure_twice_final_minimum_axiom_cut_readiness_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.measurement_feedforward_square_pyramid_preparation_cycle240_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.minimal_exchange_action_selection_cycle217_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.minimum_axiom_update_exercise_synthesis_and_cut_gate_note_2026-07-14": {
+   "deps_hash": "b13a9321f3c0",
+   "out_degree": 1
+  },
+  "work_history.repo.review_feedback.minimum_constitutional_content_exhaustion_ledger_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.mixed_cycle72_guide_repair_cycle77_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.mixed_cycle76_caged_guide_audit_cycle79_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.mixed_local_context_phase_cycle65_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.mixed_pauli_selector_canonical_pair_tournament_cycle254_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.mixed_transient_completion_barrier_cycle71_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.mixed_transient_pair_barrier_phase_cycle68_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.monotone_fat_phase_shell_cycle62_scratch_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.monotone_phase_transducer_cycle64_scratch_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.moving_logical_apparatus_append_front_cycle34_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.named_site_record_faithful_equivalence_classification_note_2026-07-14": {
+   "deps_hash": "9f7f9d333fee",
+   "out_degree": 9
+  },
+  "work_history.repo.review_feedback.nearest_neighbor_seed_compilation_cycle19_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.nondiagonal_reference_cat_parity_join_cycle267_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.observable_specific_wilson_blindness_cycle274_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.off_code_local_auxiliary_completion_cycle246_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.official_seed_to_rail_nucleation_cycle53_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.one_cut_foundation_surface_impact_map_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.onsite_alphabet_closed_frame_rail_cycle104_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.open_boundary_actual_contact_action_detector_cycle291_note_2026-07-17": {
+   "deps_hash": "6c1ca0d774ba",
+   "out_degree": 4
+  },
+  "work_history.repo.review_feedback.open_direction_empty_slot_cycle86_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.open_site_reservation_handshake_cycle51_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.operational_binary_macrocode_compiler_cycle58_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.operational_context_process_seam_cycle181_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.operational_mass_coordinate_tournament_cycle201_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.operational_quotient_born_affinity_cycle20_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.operational_record_reconstruction_deep_probe_note_2026-07-13": {
+   "deps_hash": "083d4908a77a",
+   "out_degree": 1
+  },
+  "work_history.repo.review_feedback.operator_mass_equivalence_cycle221_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.orthogonal_lineage_coherent_dilation_cycle182_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.outgoing_carrier_nonrecurrence_cycle286_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.output_ported_commutator_isolated_pivot_cycle160_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.parity_doubling_spectator_compiler_cycle248_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.peres_mermin_effect_completion_seam_cycle195_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.peres_mermin_factorized_reference_census_cycle168_note_2026-07-16": {
+   "deps_hash": "f30d5a4f356b",
+   "out_degree": 2
+  },
+  "work_history.repo.review_feedback.phase_launch_fa_completion_scratch_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.phase_port_preserving_comb_cycle60_scratch_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.phase_sensitive_record_fibre_state_discriminator_cycle200_target_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_bare_formation_ported_readout_cycle176_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_bit_router_patricia_selector_cycle87_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_commutation_multiplication_atoms_cycle151_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_contact_ternary_born_forcing_bridge_cycle317_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_context_program_dispatcher_cycle193_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_coherent_cubic_pair_orbit_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_coin_stream_contact_common_refinement_cycle304_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_collision_safe_auxiliary_ports_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_common_m64_fixed_seam_cycle311_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_common_refinement_synthesis_cycle304_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_five_cell_adjacent_star_cycle327_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_four_cell_star_cycle324_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_full_two_particle_sector_interface_cycle305_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_higher_number_fixed_seam_cycle308_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_joint_six_mode_coin_lift_cycle302_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_local_contact_intertwiner_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_local_fock_extension_cycle312_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_overlap_aware_two_cell_cycle315_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_paired_direct_orbit_factorization_cycle310_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_position_growing_recurrent_compiler_cycle307_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_primitive_matrix_unit_synthesis_cycle309_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_reference_relative_localized_pair_lift_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_relational_role_marker_gauge_cycle306_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_relational_role_marker_gauge_synthesis_cycle306_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_seven_cell_maximal_star_cycle330_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_staggered_reservoir_catchup_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_cycle269_three_cell_multiedge_cycle319_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_effect_equivalence_normalized_grade_cycle321_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_environment_export_realized_member_bridge_cycle334_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_event_to_append_commit_candidate_cycle326_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_five_lane_formation_membership_cycle179_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_fixed_program_carrier_two_use_cycle323_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_four_case_pivot_router_cycle152_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_instrument_record_history_bridge_synthesis_cycle288_note_2026-07-17": {
+   "deps_hash": "30290b849189",
+   "out_degree": 12
+  },
+  "work_history.repo.review_feedback.physical_isolated_row_mux_common_output_cycle163_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_joint_stabilizer_update_cycle166_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_literal_bit_cable_cycle154_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_literal_bit_fork_cycle157_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_m2_source_response_common_seam_cycle313_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_m64_reversible_event_sidecar_cycle314_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_ported_symplectic_fanout_cable_cycle155_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_r_b01_recurrent_root_bind_cycle144_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_relational_actual_history_member_selection_cycle333_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_row_native_signed_membership_cycle169_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_row_reader_payload_tap_cycle165_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_row_role_fork_cable_cycle162_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_row_role_literal_fanout_cycle153_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_serial_repeat_measurement_cycle174_note_2026-07-16": {
+   "deps_hash": "30344738a16d",
+   "out_degree": 4
+  },
+  "work_history.repo.review_feedback.physical_state_contact_bridge_synthesis_cycle301_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_support_matcher_predecessor_controls_cycle329_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_three_row_dual_commutation_bind_cycle159_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_three_row_spacious_isolated_pivot_cycle161_no_go_checklist_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_three_row_spacious_isolated_pivot_cycle161_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_transition_occurrence_close_tournament_cycle332_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_transport_bound_commuting_multiplier_cycle164_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_two_port_row_four_fork_cycle158_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.physical_two_row_commutation_bind_cycle156_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.post_cycle105_constitutional_minimality_smuggle_audit_cycle110_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.post_cycle109_strict_compiler_constitutional_delta_cycle111_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.post_cycle115_address_semantics_audit_cycle116_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.post_cycle124_minimum_axiom_and_compiler_delta_cycle126_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.post_cycle132_minimum_axiom_and_compiler_campaign_cycle133_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.post_cycle94_operational_completeness_audit_cycle96_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "work_history.repo.review_feedback.pr463_axiom_first_weave_review_2026-05-03": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -15258,7 +16514,111 @@
    "deps_hash": "7b96e108ce08",
    "out_degree": 2
   },
+  "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.primitive_qca_record_protocol_full_equivalence_steelman_note_2026-07-14": {
+   "deps_hash": "4c3daf6191c5",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.proper_cubic_bound_object_equivalence_cycle210_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.proper_cubic_generated_recoil_cycle212_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.proper_cubic_qubit_qca_ward_identity_steelman_note_2026-07-14": {
+   "deps_hash": "557b007f9c87",
+   "out_degree": 2
+  },
+  "work_history.repo.review_feedback.proper_cubic_recoil_balanced_carried_source_cycle318_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.proper_cubic_recurrent_contact_kernel_cycle188_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.protected_matter_transport_cycle44_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.protected_recurrent_actual_history_selection_cycle335_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "work_history.repo.review_feedback.publication_discovery_audit_2026-04-11": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.qca_isometry_square_pyramid_cycle241_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.qualitative_substrate_exact_law_selection_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.quantum_dissipative_seed_escape_cycle20_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.qubit_symmetry_exchange_law_reduction_probe_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.r_b00_completion_to_r_b01_role_allocator_common_port_cycle124_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.r_b00_port_to_zero_source_word_completion_cycle121_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.r_b01_cycle129_bridge_orientation13_interface_cycle130_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.r_b01_minimal_phase_patch_probe_cycle125_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.r_b01_orientation13_neighbor_guard_family_cycle128_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.r_b01_orientation13_phase_chain_alias_cycle127_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.r_b01_physical_word_completion_cycle143_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.r_b01_port_to_role_closed_rail_frame_join_cycle129_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.r_b10_completion_to_r_b00_role_allocator_common_port_cycle119_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.r_b10_port_to_zero_source_word_completion_cycle117_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.radius_two_incident_car_quadratic_tournament_cycle258_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.reachable_recurrent_contact_critical_pair_cycle187_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.read_status_to_generated_rail_spine_cycle105_note_2026-07-15": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -15266,9 +16626,341 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "work_history.repo.review_feedback.realized_history_exact_law_identifiability_cycle42_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.record_capacity_renewal_constitutional_pressure_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.record_conditioned_exchange_capacity_gravity_finite_probe_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.record_defined_causal_depth_clock_cycle170_note_2026-07-16": {
+   "deps_hash": "8cfbcfee360b",
+   "out_degree": 1
+  },
+  "work_history.repo.review_feedback.record_derived_coherent_carrier_decoder_cycle48_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.record_formation_three_route_assumptions_exercise_and_axiom_target_note_2026-07-13": {
+   "deps_hash": "a80df9d182fe",
+   "out_degree": 3
+  },
+  "work_history.repo.review_feedback.record_instrument_selection_luders_primary_source_audit_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.record_only_state_bell_law_type_dichotomy_cycle29_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.record_state_one_m2_nn_fortress_cycle26_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.record_state_phase_sufficiency_constructive_probe_note_2026-07-13": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.recurrent_carrier_matter_kinematics_cycle172_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.recurrent_five_literal_lane_worldline_cycle178_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.redundant_archive_permanence_history_cycle283_note_2026-07-17": {
+   "deps_hash": "6610353c23d7",
+   "out_degree": 7
+  },
+  "work_history.repo.review_feedback.relational_pointer_context_selection_cycle16_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.relational_qubit_disagreement_canonical_law_escalation_note_2026-07-14": {
+   "deps_hash": "742fbcc1c5e6",
+   "out_degree": 4
+  },
+  "work_history.repo.review_feedback.relational_two_cell_recurrence_and_compact_law_gate_cycle140_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.repeated_readable_cell_allocation_cycle98_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "work_history.repo.review_feedback.rerun_required_bug_audit_2026-04-11": {
    "deps_hash": "007a99cd3b33",
    "out_degree": 1
+  },
+  "work_history.repo.review_feedback.rest_inertial_lapse_source_triangle_cycle204_no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.rest_inertial_lapse_source_triangle_cycle204_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.retarded_cubic_mass_field_cycle213_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.reversible_dilation_closed_cycle_gravity_cycle10_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.rough_subsystem_operational_equivalence_cycle253_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.rough_terminal_same_code_local_instrument_cycle277_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.rough_terminal_subsystem_gauge_factorization_cycle251_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.route1_direct_car_compiler_cycle231_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.route2_local_gauge_car_compiler_cycle232_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.route3_staggered_car_compiler_cycle233_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.route6_infinite_even_car_translation_marker_cycle237_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.same_code_instrument_bridge_synthesis_cycle280_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.seed_orbit_write_once_transducer_cycle47_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.self_describing_law_foundation_selection_cycle49_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.self_extending_frame_cage_rail_cycle52_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.self_writing_append_only_bell_front_cycle14_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.separated_recurrent_tube_collision_control_cycle84_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.seven_bit_physical_role_comparator_cycle75_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.shared_ancestry_dual_context_peres_mermin_cycle173_note_2026-07-16": {
+   "deps_hash": "64eb79a93a7b",
+   "out_degree": 2
+  },
+  "work_history.repo.review_feedback.shared_qab_open_commit_comb_conditional_scratch_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.signed_row_egress_and_membership_seam_cycle167_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.single_invariant_action_steelman_attack_note_2026-07-14": {
+   "deps_hash": "01a47e1b9a7f",
+   "out_degree": 3
+  },
+  "work_history.repo.review_feedback.source_response_common_code_followon_synthesis_cycle297_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.spatial_car_contact_seam_form_factor_cycle230_note_2026-07-17": {
+   "deps_hash": "d0e2a07a7c16",
+   "out_degree": 8
+  },
+  "work_history.repo.review_feedback.spatial_compiler_derived_causal_time_bridge_cycle243_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.state_local_fermionization_topological_sector_tournament_cycle238_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.stationary_dressed_carried_source_relative_mode_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.stationary_dressed_reservoir_shifted_green_profile_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.stationary_local_first_event_history_cycle224_note_2026-07-17": {
+   "deps_hash": "6f54b0e268f1",
+   "out_degree": 9
+  },
+  "work_history.repo.review_feedback.status_gated_typed_payload_handoff_cycle109_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.stochastic_record_history_actuality_semantics_cycle27_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.strict_compiler_toe_ledger_cycle107_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.strict_nn_record_law_compiler_cycle43_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.strict_thirring_qca_bound_molecule_cycle205_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.substrate_tournament_decisive_probes_note_2026-07-13": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.temporal_protocol_equivalence_alternating_frame_cycle39_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.three_dimensional_anomalous_bulk_category_index_steelman_note_2026-07-14": {
+   "deps_hash": "f42602f68666",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.three_escape_state_compiler_tournament_cycle242_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.three_phase_recurrent_append_tube_cycle80_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.three_route_physical_m2_car_compiler_tournament_cycle234_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.toe_bridge_campaign_landing_manifest_2026-07-18": {
+   "deps_hash": "6c2685336753",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.toe_framework_campaign_handoff_2026-07-17": {
+   "deps_hash": "65d64778cacb",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.toe_framework_campaign_handoff_2026-07-17_cycle292": {
+   "deps_hash": "9f51e78ca2f8",
+   "out_degree": 12
+  },
+  "work_history.repo.review_feedback.toe_framework_campaign_handoff_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.toe_interface_constructive_gate_note_2026-07-13": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.topological_conservation_rg_action_steelman_note_2026-07-14": {
+   "deps_hash": "a0e3f4dd9e9b",
+   "out_degree": 2
+  },
+  "work_history.repo.review_feedback.total_status_serial_reject_selector_cycle93_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.translated_cycle60_renewal_obstruction_cycle66_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.translated_second_rail_frame_join_interface_cycle131_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.translation_cubic_local_syndrome_decoder_cycle244_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.twelve_hour_minimum_axiom_and_compiler_handoff_cycle139_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.twelve_hour_toe_framework_campaign_diagnosis_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.two_cell_two_source_recoil_reciprocity_cycle322_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.two_fixed_reservoir_stationary_composition_kernel_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.two_slice_offdiagonal_contact_reservoir_work_ledger_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.unconditional_two_cell_contact_interferometer_cycle290_note_2026-07-17": {
+   "deps_hash": "c101f6f5876b",
+   "out_degree": 4
+  },
+  "work_history.repo.review_feedback.uncontrolled_contact_collision_current_syndrome_cycle289_note_2026-07-17": {
+   "deps_hash": "6ac343bba7ba",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.uncontrolled_contact_to_outgoing_syndrome_tournament_synthesis_cycle292_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.unit_weight_carried_link_recoil_cycle320_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.unitary_nondemolition_occurrence_link_factorization_cycle266_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.universal_rule_space_multiway_law_steelman_note_2026-07-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.virtual_exchange_green_kernel_cycle216_note_2026-07-16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.weyl_pair_physical_equivalence_and_combined_intersection_note_2026-07-14": {
+   "deps_hash": "665b4de5b62c",
+   "out_degree": 6
+  },
+  "work_history.repo.review_feedback.wilson_subsystem_sector_free_compiler_cycle269_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.zero_binary_source_endpoint_macroblock_bind_cycle100_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.zero_source_relational_first_harness_cycle101_note_2026-07-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "work_history.yt.yt_explicit_systematic_reduction_options_2026-04-15": {
    "deps_hash": "e3b0c44298fc",

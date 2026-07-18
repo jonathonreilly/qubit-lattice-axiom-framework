@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py
-runner_sha256: 600d619026171134fc5749b7d6f0e738743801dfdbadea02adf3d6769b84c880
+runner_sha256: ab9af62d4fd224385c18abca195dad68a54f225ca2aa006d8f053da9b21ecd56
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py
@@ -17,6 +17,7 @@ PASS: B-class note marker: additional hypothesis `n = 0`
 PASS: B-class note marker: E_mix = a - (x + y)/2 = 0
 PASS: B-class note marker: E_lin = -(3x + 3y + z + n) = 0
 PASS: B-class note marker: E_cub = -48a^3 - (3x^3 + 3y^3 + z^3 + n^3) = 0
+PASS: B-class note marker: n = 0.                                                  (4)
 PASS: B-class note marker: xy = -8a^2
 PASS: B-class note marker: {x, y} = {4a, -2a}
 PASS: B-class note marker: exact implication and classification of the supplied finite algebraic sy
@@ -41,7 +42,7 @@ PASS: B-class note excludes conditional-status rhetoric
 PASS: B-class note excludes audit outcome claim
 PASS: B-class dependent boundary: Declared P-COMP completion premise
 PASS: B-class dependent boundary: is used here only for this algebraic implication
-PASS: B-class dependent boundary: supplies the physical slots, signs, multiplicities, and `n = 0`
+PASS: B-class dependent boundary: supplies every physical slot, its opposite-chirality assignment, every s
 PASS: B-class dependent boundary: does not supply that physical surface
 
 == Part 1: B-class supplied-surface encoding ==
@@ -52,7 +53,7 @@ PASS: B-class E_lin multiplicities of z,n are signed -1
 PASS: B-class E_cub coefficient of a^3 is -48
 PASS: B-class E_cub multiplicities of x^3,y^3 are signed -3
 PASS: B-class E_cub multiplicities of z^3,n^3 are signed -1
-PASS: B-class supplied neutral equation is n=0
+PASS: B-class supplied neutral residual is exactly n
 
 == Part 2: A-class exact implication and classification ==
 PASS: A-class E_mix=0 forces x+y=2a (2*a)
@@ -89,7 +90,7 @@ PASS: A-class a=2/5, branch 2: all supplied residuals vanish ((Fraction(0, 1), F
 PASS: A-class a=-1/2, branch 1: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
 PASS: A-class a=-1/2, branch 2: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
 
-TOTAL: PASS=71 FAIL=0
+TOTAL: PASS=72 FAIL=0
 VERDICT: exact positive theorem over the supplied finite algebraic system.
 
 ----- stderr -----

@@ -98,6 +98,7 @@ def part0_source_and_dependency_firewalls() -> None:
         "E_mix = a - (x + y)/2 = 0",
         "E_lin = -(3x + 3y + z + n) = 0",
         "E_cub = -48a^3 - (3x^3 + 3y^3 + z^3 + n^3) = 0",
+        "n = 0.                                                  (4)",
         "xy = -8a^2",
         "{x, y} = {4a, -2a}",
         "exact implication and classification of the supplied finite algebraic system",
@@ -135,7 +136,7 @@ def part0_source_and_dependency_firewalls() -> None:
     bridge_markers = [
         "Declared P-COMP completion premise",
         "is used here only for this algebraic implication",
-        "supplies the physical slots, signs, multiplicities, and `n = 0`",
+        "supplies every physical slot, its opposite-chirality assignment, every sign and multiplicity, and `n = 0`",
         "does not supply that physical surface",
     ]
     for marker in bridge_markers:
@@ -146,6 +147,7 @@ def part1_supplied_surface_encoding() -> None:
     section("Part 1: B-class supplied-surface encoding")
     a, x, y, z, n = sp.symbols("a x y z n", real=True)
     e_mix, e_lin, e_cub = symbolic_surface(a, x, y, z, n)
+    neutral_residual = rational_surface(a, x, y, z, n)[3]
 
     mix_poly = sp.Poly(e_mix, a, x, y, z, n)
     lin_poly = sp.Poly(e_lin, a, x, y, z, n)
@@ -167,7 +169,7 @@ def part1_supplied_surface_encoding() -> None:
         "B-class E_cub multiplicities of z^3,n^3 are signed -1",
         all(cub_poly.coeff_monomial(v**3) == -1 for v in (z, n)),
     )
-    check("B-class supplied neutral equation is n=0", sp.Eq(n, 0).lhs == n and sp.Eq(n, 0).rhs == 0)
+    check("B-class supplied neutral residual is exactly n", sp.expand(neutral_residual - n) == 0)
 
 
 def part2_exact_classification() -> None:

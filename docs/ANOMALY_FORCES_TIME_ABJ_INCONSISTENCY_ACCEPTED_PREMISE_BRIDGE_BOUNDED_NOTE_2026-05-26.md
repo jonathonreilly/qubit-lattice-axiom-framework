@@ -143,7 +143,8 @@ or P-REC.
 The abstract source note
 [`ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md`](ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md)
 is used here only for this algebraic implication after the declared P-COMP
-premise supplies the physical slots, signs, multiplicities, and `n = 0`.
+premise supplies every physical slot, its opposite-chirality assignment, every
+sign and multiplicity, and `n = 0`.
 Writing the resulting supplied polynomial system as
 
 ```text

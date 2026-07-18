@@ -1,281 +1,391 @@
 #!/usr/bin/env python3
-"""
-Neutrino Weak Vector Theorem
-============================
+"""Exact verifier for the finite-dimensional chiral vector theorem.
 
-STATUS: EXACT representation theorem; base normalization closed elsewhere
-
-Purpose:
-  Tighten the direct-bridge story one more step:
-
-    do the exact local chiral bridges
-
-        Y_i = P_R Gamma_i P_L
-
-    form a genuine weak vector under the derived SU(2), and if so does that
-    force the neutrino base coupling?
-
-The exact answer from the current branch is:
-
-  1. yes, the bridge family is an exact spin-1 weak vector
-  2. no, that covariance alone does not fix the absolute coefficient
-
-More precisely:
-
-  - the normalized bivectors
-        B_a = -(i/4) sum_{bc} eps_{abc} Gamma_b Gamma_c
-      equivalently B_1=-(i/2)Gamma_2 Gamma_3 cyclically, form exact su(2)
-  - the spatial Gamma_i family on C^8 transforms as a vector:
-        [B_a, Gamma_b] = i eps_{abc} Gamma_c
-        sum_a [B_a,[B_a,Gamma_b]] = 2 Gamma_b
-  - the chiral bridges Y_i = P_R Gamma_i P_L on C^16 obey the same exact
-    vector law and are trace-orthogonal
-  - but the covariance equations are homogeneous: lambda * Y_i satisfies the
-    same weak-vector relations for any scalar lambda
-
-So the theorem closes the representation content of the direct bridge, but it
-does NOT by itself select the physical base normalization. That later step is
-handled separately by the bosonic-normalization theorem.
+All load-bearing checks use SymPy matrices over Gaussian rationals. Floating
+values are printed only in the SUPPORT lane. The MUTATION lane passes only
+when a hostile alteration produces a nonzero residual in a computed
+validator.
 """
 
 from __future__ import annotations
 
-import math
 import sys
-import numpy as np
+from collections.abc import Iterable, Sequence
 
-PASS_COUNT = 0
-FAIL_COUNT = 0
+import sympy as sp
 
 
-def check(name: str, condition: bool, detail: str = "") -> bool:
-    global PASS_COUNT, FAIL_COUNT
+LANES = ("EXACT", "SUPPORT", "MUTATION")
+COUNTS = {lane: {"pass": 0, "fail": 0} for lane in LANES}
+
+
+def report(lane: str, name: str, condition: bool, detail: str = "") -> bool:
     status = "PASS" if condition else "FAIL"
-    if condition:
-        PASS_COUNT += 1
-    else:
-        FAIL_COUNT += 1
-    line = f"  [{status}] {name}"
-    if detail:
-        line += f"  ({detail})"
-    print(line)
+    COUNTS[lane]["pass" if condition else "fail"] += 1
+    suffix = f"  ({detail})" if detail else ""
+    print(f"  [{status}][{lane}] {name}{suffix}")
     return condition
 
 
-I2 = np.eye(2, dtype=complex)
-I8 = np.eye(8, dtype=complex)
-I16 = np.eye(16, dtype=complex)
-
-SX = np.array([[0, 1], [1, 0]], dtype=complex)
-SY = np.array([[0, -1j], [1j, 0]], dtype=complex)
-SZ = np.array([[1, 0], [0, -1]], dtype=complex)
+def is_zero_matrix(matrix: sp.MatrixBase) -> bool:
+    return all(sp.simplify(entry) == 0 for entry in matrix)
 
 
-def kron3(a: np.ndarray, b: np.ndarray, c: np.ndarray) -> np.ndarray:
-    return np.kron(a, np.kron(b, c))
+def all_zero(residuals: Iterable[sp.MatrixBase]) -> bool:
+    return all(is_zero_matrix(residual) for residual in residuals)
 
 
-def kron4(a: np.ndarray, b: np.ndarray, c: np.ndarray, d: np.ndarray) -> np.ndarray:
-    return np.kron(a, np.kron(b, np.kron(c, d)))
+def exact(name: str, residuals: Sequence[sp.MatrixBase], detail: str = "") -> bool:
+    return report(
+        "EXACT",
+        name,
+        all_zero(residuals),
+        detail or f"{len(residuals)} residuals",
+    )
 
 
-def eps(a: int, b: int, c: int) -> int:
-    if len({a, b, c}) < 3:
-        return 0
-    if (a, b, c) in ((1, 2, 3), (2, 3, 1), (3, 1, 2)):
-        return 1
-    return -1
+def reject_mutation(name: str, residuals: Sequence[sp.MatrixBase]) -> bool:
+    nonzero = sum(not is_zero_matrix(residual) for residual in residuals)
+    return report(
+        "MUTATION",
+        name,
+        nonzero > 0,
+        f"validator found {nonzero}/{len(residuals)} nonzero residuals",
+    )
 
 
-G1 = kron3(SX, I2, I2)
-G2 = kron3(SY, SX, I2)
-G3 = kron3(SY, SY, SX)
-G_SPATIAL_8 = [G1, G2, G3]
+I2 = sp.eye(2)
+I8 = sp.eye(8)
+I16 = sp.eye(16)
 
-G0_4D = kron4(SZ, SZ, SZ, SX)
-G1_4D = kron4(SX, I2, I2, I2)
-G2_4D = kron4(SZ, SX, I2, I2)
-G3_4D = kron4(SZ, SZ, SX, I2)
-G_SPATIAL_16 = [G1_4D, G2_4D, G3_4D]
+SX = sp.Matrix([[0, 1], [1, 0]])
+SY = sp.Matrix([[0, -sp.I], [sp.I, 0]])
+SZ = sp.Matrix([[1, 0], [0, -1]])
 
 
-def weak_bivectors(gammas: list[np.ndarray]) -> list[np.ndarray]:
-    return [
-        sum(
-            -0.25j * eps(a, b, c) * gammas[b - 1] @ gammas[c - 1]
-            for b in range(1, 4)
-            for c in range(1, 4)
-        )
-        for a in range(1, 4)
-    ]
+def kron(*factors: sp.MatrixBase) -> sp.MatrixBase:
+    return sp.kronecker_product(*factors)
+
+
+G_SPATIAL_8 = (
+    kron(SX, I2, I2),
+    kron(SY, SX, I2),
+    kron(SY, SY, SX),
+)
+
+G0_16 = kron(SZ, SZ, SZ, SX)
+G_SPATIAL_16 = (
+    kron(SX, I2, I2, I2),
+    kron(SZ, SX, I2, I2),
+    kron(SZ, SZ, SX, I2),
+)
+
+
+def commutator(left: sp.MatrixBase, right: sp.MatrixBase) -> sp.MatrixBase:
+    return left * right - right * left
+
+
+def weak_bivectors(gammas: Sequence[sp.MatrixBase]) -> tuple[sp.MatrixBase, ...]:
+    result = []
+    for a in range(3):
+        bivector = sp.zeros(gammas[0].rows)
+        for m in range(3):
+            for n in range(3):
+                bivector += (
+                    -sp.I
+                    * sp.Rational(1, 4)
+                    * sp.LeviCivita(a, m, n)
+                    * gammas[m]
+                    * gammas[n]
+                )
+        result.append(bivector)
+    return tuple(result)
 
 
 B_8 = weak_bivectors(G_SPATIAL_8)
 B_16 = weak_bivectors(G_SPATIAL_16)
 
-GAMMA5_4D = G0_4D @ G1_4D @ G2_4D @ G3_4D
-P_L = (I16 + GAMMA5_4D) / 2.0
-P_R = (I16 - GAMMA5_4D) / 2.0
-Y_BRIDGES = [P_R @ G @ P_L for G in G_SPATIAL_16]
+GAMMA5 = G0_16 * G_SPATIAL_16[0] * G_SPATIAL_16[1] * G_SPATIAL_16[2]
+P_L = (I16 + GAMMA5) / 2
+P_R = (I16 - GAMMA5) / 2
+Y = tuple(P_R * gamma * P_L for gamma in G_SPATIAL_16)
 
 
-def vector_error(generators: list[np.ndarray], family: list[np.ndarray]) -> float:
-    worst = 0.0
-    for a, B in enumerate(generators, start=1):
-        for b, X in enumerate(family, start=1):
-            target = sum(1j * eps(a, b, c) * family[c - 1] for c in range(1, 4))
-            err = np.linalg.norm(B @ X - X @ B - target)
-            worst = max(worst, float(err))
-    return worst
+VECTOR_TABLE = {
+    (0, 1): (1, 2),
+    (1, 0): (-1, 2),
+    (1, 2): (1, 0),
+    (2, 1): (-1, 0),
+    (2, 0): (1, 1),
+    (0, 2): (-1, 1),
+}
 
 
-def clifford_error(family: list[np.ndarray], identity: np.ndarray) -> float:
-    worst = 0.0
-    for i, Gi in enumerate(family):
-        for j, Gj in enumerate(family):
-            target = 2.0 * identity if i == j else np.zeros_like(identity)
-            err = np.linalg.norm(Gi @ Gj + Gj @ Gi - target)
-            worst = max(worst, float(err))
-    return worst
+def vector_target(
+    a: int,
+    b: int,
+    family: Sequence[sp.MatrixBase],
+    target_sign: int = 1,
+) -> sp.MatrixBase:
+    if a == b:
+        return sp.zeros(family[0].rows)
+    sign, index = VECTOR_TABLE[(a, b)]
+    return target_sign * sign * sp.I * family[index]
 
 
-def double_commutator_error(generators: list[np.ndarray], family: list[np.ndarray], coeff: float) -> float:
-    worst = 0.0
-    for X in family:
-        double = sum(B @ (B @ X - X @ B) - (B @ X - X @ B) @ B for B in generators)
-        err = np.linalg.norm(double - coeff * X)
-        worst = max(worst, float(err))
-    return worst
+def clifford_residuals(
+    family: Sequence[sp.MatrixBase], identity: sp.MatrixBase
+) -> list[sp.MatrixBase]:
+    return [
+        family[i] * family[j]
+        + family[j] * family[i]
+        - (2 * identity if i == j else sp.zeros(identity.rows))
+        for i in range(3)
+        for j in range(3)
+    ]
 
 
-def gram_matrix(family: list[np.ndarray]) -> np.ndarray:
-    n = len(family)
-    gram = np.zeros((n, n), dtype=complex)
-    for i, Xi in enumerate(family):
-        for j, Xj in enumerate(family):
-            gram[i, j] = np.trace(Xi.conj().T @ Xj)
-    return gram
+def cyclic_bivector_residuals(
+    bivectors: Sequence[sp.MatrixBase], gammas: Sequence[sp.MatrixBase]
+) -> list[sp.MatrixBase]:
+    cyclic = ((1, 2), (2, 0), (0, 1))
+    return [
+        bivectors[a] + sp.I * sp.Rational(1, 2) * gammas[m] * gammas[n]
+        for a, (m, n) in enumerate(cyclic)
+    ]
+
+
+def su2_residuals(generators: Sequence[sp.MatrixBase]) -> list[sp.MatrixBase]:
+    return [
+        commutator(generators[a], generators[b])
+        - vector_target(a, b, generators)
+        for a in range(3)
+        for b in range(3)
+    ]
+
+
+def vector_residuals(
+    generators: Sequence[sp.MatrixBase],
+    family: Sequence[sp.MatrixBase],
+    target_sign: int = 1,
+) -> list[sp.MatrixBase]:
+    return [
+        commutator(generators[a], family[b])
+        - vector_target(a, b, family, target_sign)
+        for a in range(3)
+        for b in range(3)
+    ]
+
+
+def casimir_residuals(
+    generators: Sequence[sp.MatrixBase],
+    family: Sequence[sp.MatrixBase],
+    coefficient: sp.Expr,
+) -> list[sp.MatrixBase]:
+    result = []
+    for member in family:
+        double = sum(
+            (
+                commutator(generator, commutator(generator, member))
+                for generator in generators
+            ),
+            sp.zeros(member.rows),
+        )
+        result.append(double - coefficient * member)
+    return result
+
+
+def gram_matrix(family: Sequence[sp.MatrixBase]) -> sp.MatrixBase:
+    return sp.Matrix(
+        3,
+        3,
+        lambda i, j: sp.trace(family[i].H * family[j]),
+    )
+
+
+def projector_residuals(
+    plus: sp.MatrixBase, minus: sp.MatrixBase
+) -> list[sp.MatrixBase]:
+    return [
+        plus * plus - plus,
+        minus * minus - minus,
+        plus * minus,
+        plus + minus - I16,
+        GAMMA5 * plus - plus,
+        GAMMA5 * minus + minus,
+    ]
+
+
+def chirality_residuals() -> list[sp.MatrixBase]:
+    return [
+        GAMMA5 * GAMMA5 - I16,
+        GAMMA5.H - GAMMA5,
+        *(GAMMA5 * gamma + gamma * GAMMA5 for gamma in G_SPATIAL_16),
+    ]
+
+
+def projector_commutator_residuals() -> list[sp.MatrixBase]:
+    return [
+        *(commutator(generator, P_L) for generator in B_16),
+        *(commutator(generator, P_R) for generator in B_16),
+    ]
+
+
+def chiral_orientation_residuals() -> list[sp.MatrixBase]:
+    result = []
+    for member in Y:
+        result.extend(
+            (
+                P_R * member * P_L - member,
+                P_L * member,
+                member * P_R,
+            )
+        )
+    return result
+
+
+def numeric_max(residuals: Iterable[sp.MatrixBase]) -> float:
+    values = (
+        abs(complex(sp.N(entry, 16)))
+        for residual in residuals
+        for entry in residual
+    )
+    return max(values, default=0.0)
 
 
 def main() -> int:
     print("=" * 78)
-    print("NEUTRINO WEAK VECTOR THEOREM")
-    print("=" * 78)
-    print()
-
-    print("Part 0: Explicit Clifford and chirality packet")
-    cliff_8 = clifford_error(G_SPATIAL_8, I8)
-    cliff_16 = clifford_error(G_SPATIAL_16, I16)
-    gamma5_anticomm = max(float(np.linalg.norm(G @ GAMMA5_4D + GAMMA5_4D @ G)) for G in G_SPATIAL_16)
-    projector_err = max(
-        float(np.linalg.norm(P_L @ P_L - P_L)),
-        float(np.linalg.norm(P_R @ P_R - P_R)),
-        float(np.linalg.norm(P_L @ P_R)),
-        float(np.linalg.norm(P_L + P_R - I16)),
-    )
-    print(f"  max C^8 spatial Clifford error = {cliff_8:.3e}")
-    print(f"  max C^16 spatial Clifford error = {cliff_16:.3e}")
-    print(f"  max {{Gamma_i, gamma_5}} error = {gamma5_anticomm:.3e}")
-    print(f"  max chiral projector algebra error = {projector_err:.3e}")
-    print()
-    check("C^8 Gamma_i satisfy {Gamma_i,Gamma_j}=2 delta_ij", cliff_8 < 1e-12)
-    check("C^16 Gamma_i satisfy {Gamma_i,Gamma_j}=2 delta_ij", cliff_16 < 1e-12)
-    check("gamma_5 anticommutes with each spatial Gamma_i", gamma5_anticomm < 1e-12)
-    check("P_L and P_R are complementary orthogonal projectors", projector_err < 1e-12)
-    print()
-
-    print("Part 1: Derived weak SU(2) on the taste space")
-    su2_err = 0.0
-    for a, Ba in enumerate(B_8, start=1):
-        for b, Bb in enumerate(B_8, start=1):
-            target = sum(1j * eps(a, b, c) * B_8[c - 1] for c in range(1, 4))
-            su2_err = max(su2_err, float(np.linalg.norm(Ba @ Bb - Bb @ Ba - target)))
-    casimir_err = np.linalg.norm(sum(B @ B for B in B_8) - 0.75 * I8)
-    gram_b = gram_matrix(B_8)
-    print(f"  max su(2) commutator error = {su2_err:.3e}")
-    print(f"  ||sum_a B_a^2 - (3/4)I|| = {casimir_err:.3e}")
-    print()
-    check("bivectors form exact su(2)", su2_err < 1e-12, detail=f"max err = {su2_err:.3e}")
-    check("fermion-space Casimir is 3/4", casimir_err < 1e-12, detail=f"err = {casimir_err:.3e}")
-    check(
-        "bivector trace Gram matrix is diagonal",
-        np.allclose(gram_b, 2.0 * np.eye(3), atol=1e-12),
-        detail="Tr(B_a^dag B_b) = 2 delta_ab",
-    )
-
-    print()
-    print("Part 2: Spatial Gamma_i form an exact weak vector on C^8")
-    vec_err_8 = vector_error(B_8, G_SPATIAL_8)
-    cas_vec_8 = double_commutator_error(B_8, G_SPATIAL_8, coeff=2.0)
-    gram_g = gram_matrix(G_SPATIAL_8)
-    avg_conj_err = 0.0
-    for G in G_SPATIAL_8:
-        avg_conj_err = max(avg_conj_err, float(np.linalg.norm(sum(B @ G @ B for B in B_8) + 0.25 * G)))
-    print(f"  max vector-law error = {vec_err_8:.3e}")
-    print(f"  max double-commutator error = {cas_vec_8:.3e}")
-    print(f"  max sum_a B_a G_i B_a + (1/4) G_i error = {avg_conj_err:.3e}")
-    print()
-    check("Gamma_i obey exact weak-vector commutator law", vec_err_8 < 1e-12)
-    check("Gamma_i carry spin-1 Casimir", cas_vec_8 < 1e-12, detail="sum_a ad(B_a)^2 = 2")
-    check(
-        "Gamma_i are trace-orthogonal",
-        np.allclose(gram_g, 8.0 * np.eye(3), atol=1e-12),
-        detail="Tr(Gamma_i^dag Gamma_j) = 8 delta_ij",
-    )
-    check("conjugation average matches vector identity", avg_conj_err < 1e-12)
-
-    print()
-    print("Part 3: Chiral bridges Y_i = P_R Gamma_i P_L form the same weak vector on C^16")
-    gamma5_comm = max(float(np.linalg.norm(B @ GAMMA5_4D - GAMMA5_4D @ B)) for B in B_16)
-    vec_err_16 = vector_error(B_16, Y_BRIDGES)
-    cas_vec_16 = double_commutator_error(B_16, Y_BRIDGES, coeff=2.0)
-    gram_y = gram_matrix(Y_BRIDGES)
-    print(f"  max [B_a, gamma_5] error = {gamma5_comm:.3e}")
-    print(f"  max bridge vector-law error = {vec_err_16:.3e}")
-    print(f"  max bridge double-commutator error = {cas_vec_16:.3e}")
-    print()
-    check("weak generators commute with gamma_5", gamma5_comm < 1e-12)
-    check("bridge family obeys exact weak-vector commutator law", vec_err_16 < 1e-12)
-    check("bridge family carries spin-1 Casimir", cas_vec_16 < 1e-12, detail="sum_a ad(B_a)^2 = 2")
-    check(
-        "bridge family is trace-orthogonal",
-        np.allclose(gram_y, 8.0 * np.eye(3), atol=1e-12),
-        detail="Tr(Y_i^dag Y_j) = 8 delta_ij",
-    )
-
-    print()
-    print("Part 4: Weak-vector covariance does not fix absolute normalization")
-    lambdas = [0.5, math.sqrt(2.0), 2.0]
-    for lam in lambdas:
-        scaled = [lam * Y for Y in Y_BRIDGES]
-        err_cov = vector_error(B_16, scaled)
-        err_cas = double_commutator_error(B_16, scaled, coeff=2.0)
-        gram_scaled = gram_matrix(scaled)
-        print(f"  lambda = {lam:.6f}: max cov err = {err_cov:.3e}, max Casimir err = {err_cas:.3e}")
-        check(
-            f"scaled family lambda={lam:.6f} preserves weak-vector covariance",
-            err_cov < 1e-12 and err_cas < 1e-12,
-            detail=f"Tr-scaled norm = {gram_scaled[0,0].real:.6f}",
-        )
-
-    print()
-    print("Honest read:")
-    print("  1. The direct local chiral bridges Y_i = P_R Gamma_i P_L are now an")
-    print("     exact weak-vector family, not just an axis-picked operator guess.")
-    print("  2. This is real theorem-grade progress: the bridge family carries the")
-    print("     spin-1 Casimir and exact adjoint SU(2) transformation law.")
-    print("  3. But covariance alone is homogeneous. Rescaled families lambda Y_i")
-    print("     satisfy the same weak-vector equations, so the representation law")
-    print("     does not by itself select the physical base normalization.")
-    print("  4. Base normalization is a separate input outside this runner.")
-    print("     What remains beyond this runner is the second-order suppression")
-    print("     law, not weak-vector classification.")
-    print()
-    print("=" * 78)
-    print(f"RESULT: {PASS_COUNT} PASS, {FAIL_COUNT} FAIL")
+    print("FINITE-DIMENSIONAL CHIRAL VECTOR REPRESENTATION THEOREM")
     print("=" * 78)
 
-    return 0 if FAIL_COUNT == 0 else 1
+    load_bearing: list[sp.MatrixBase] = []
+
+    def run_exact(name: str, residuals: list[sp.MatrixBase], detail: str = "") -> None:
+        load_bearing.extend(residuals)
+        exact(name, residuals, detail)
+
+    print("\nPart 1: exact Clifford and chirality packet")
+    run_exact("C^8 spatial Clifford relations", clifford_residuals(G_SPATIAL_8, I8))
+    run_exact(
+        "C^16 spatial Clifford relations",
+        clifford_residuals(G_SPATIAL_16, I16),
+    )
+    run_exact(
+        "gamma_5 involution, Hermiticity, and spatial anticommutation",
+        chirality_residuals(),
+    )
+    run_exact("oriented complementary chiral projectors", projector_residuals(P_L, P_R))
+
+    print("\nPart 2: exact derived bivectors and vector laws")
+    run_exact(
+        "C^8 bivector double-sum equals cyclic formula",
+        cyclic_bivector_residuals(B_8, G_SPATIAL_8),
+    )
+    run_exact(
+        "C^16 bivector double-sum equals cyclic formula",
+        cyclic_bivector_residuals(B_16, G_SPATIAL_16),
+    )
+    run_exact("C^8 bivectors obey su(2)", su2_residuals(B_8))
+    run_exact("C^16 bivectors obey su(2)", su2_residuals(B_16))
+    run_exact(
+        "C^8 Gamma family obeys the vector commutator",
+        vector_residuals(B_8, G_SPATIAL_8),
+    )
+    run_exact(
+        "C^16 Gamma family obeys the vector commutator",
+        vector_residuals(B_16, G_SPATIAL_16),
+    )
+    run_exact(
+        "bivectors commute with both chiral projectors",
+        projector_commutator_residuals(),
+    )
+
+    print("\nPart 3: exact chiral family, Casimir, and Gram identities")
+    run_exact(
+        "Y_i maps the P_L subspace to the P_R subspace",
+        chiral_orientation_residuals(),
+    )
+    run_exact("Y_i obeys the vector commutator", vector_residuals(B_16, Y))
+    run_exact(
+        "C^8 Gamma family has adjoint Casimir 2",
+        casimir_residuals(B_8, G_SPATIAL_8, sp.Integer(2)),
+    )
+    run_exact(
+        "C^16 Gamma family has adjoint Casimir 2",
+        casimir_residuals(B_16, G_SPATIAL_16, sp.Integer(2)),
+    )
+    run_exact(
+        "Y_i has adjoint Casimir 2",
+        casimir_residuals(B_16, Y, sp.Integer(2)),
+    )
+    gram_y = gram_matrix(Y)
+    run_exact("Tr(Y_i^dag Y_j) = 8 delta_ij", [gram_y - 8 * sp.eye(3)])
+
+    print("\nPart 4: universal symbolic rescaling identities")
+    lam = sp.Symbol("lambda", complex=True)
+    scaled_y = tuple(lam * member for member in Y)
+    run_exact(
+        "symbolic lambda Y_i obeys the vector commutator",
+        vector_residuals(B_16, scaled_y),
+        "polynomial identity in lambda",
+    )
+    run_exact(
+        "symbolic lambda Y_i has adjoint Casimir 2",
+        casimir_residuals(B_16, scaled_y, sp.Integer(2)),
+        "polynomial identity in lambda",
+    )
+    run_exact(
+        "Gram(lambda Y) = conjugate(lambda) lambda Gram(Y)",
+        [gram_matrix(scaled_y) - sp.conjugate(lam) * lam * gram_y],
+        "symbolic complex scalar",
+    )
+
+    print("\nPart 5: numerical support (non-load-bearing)")
+    max_residual = numeric_max(load_bearing)
+    report(
+        "SUPPORT",
+        "floating evaluation agrees with exact zero residuals",
+        max_residual < 1.0e-12,
+        f"max residual = {max_residual:.3e}",
+    )
+    scaled_two_gram = gram_matrix(tuple(2 * member for member in Y))
+    scaled_two_error = numeric_max([scaled_two_gram - 32 * sp.eye(3)])
+    report(
+        "SUPPORT",
+        "lambda=2 sample has Gram diagonal 32",
+        scaled_two_error < 1.0e-12,
+        f"max residual = {scaled_two_error:.3e}",
+    )
+
+    print("\nPart 6: hostile mutation rejection")
+    reject_mutation("wrong bivector sign", su2_residuals(tuple(-generator for generator in B_8)))
+    doubled_b = tuple(2 * generator for generator in B_8)
+    reject_mutation(
+        "wrong bivector normalization",
+        [*su2_residuals(doubled_b), *vector_residuals(doubled_b, G_SPATIAL_8)],
+    )
+    reject_mutation("wrong vector sign", vector_residuals(B_16, Y, target_sign=-1))
+    reject_mutation("wrong vector index", vector_residuals(B_16, (Y[1], Y[0], Y[2])))
+    reject_mutation("reversed chiral projector orientation", projector_residuals(P_R, P_L))
+    reject_mutation(
+        "false adjoint Casimir coefficient 3",
+        casimir_residuals(B_16, Y, sp.Integer(3)),
+    )
+    reject_mutation("false Gram normalization 16 delta_ij", [gram_y - 16 * sp.eye(3)])
+    false_off_diagonal = 8 * sp.eye(3)
+    false_off_diagonal[0, 1] = 1
+    false_off_diagonal[1, 0] = 1
+    reject_mutation("false nonzero off-diagonal Gram claim", [gram_y - false_off_diagonal])
+    reject_mutation("false invariant Gram under lambda=2", [scaled_two_gram - gram_y])
+
+    print("\n" + "=" * 78)
+    total_pass = sum(COUNTS[lane]["pass"] for lane in LANES)
+    total_fail = sum(COUNTS[lane]["fail"] for lane in LANES)
+    for lane in LANES:
+        print(f"{lane}: PASS={COUNTS[lane]['pass']} FAIL={COUNTS[lane]['fail']}")
+    print(f"RESULT: PASS={total_pass} FAIL={total_fail}")
+    print("=" * 78)
+    return 0 if total_fail == 0 else 1
 
 
 if __name__ == "__main__":

@@ -1,267 +1,149 @@
-# DM Neutrino Weak Vector Theorem
+# Finite-Dimensional Chiral Vector Representation Theorem
 
-**Status:** bounded support theorem; audit status set only by the independent
-audit lane
-**Date:** 2026-04-15  
-**Branch:** `codex/dm-across-the-line`
+**Date:** 2026-04-15
+
+**Revised:** 2026-07-18
+
+**Type:** positive_theorem
+
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit outcome.
+
+**Claim scope:** exact identities for the explicit Pauli/Kronecker matrix
+packets on `C^8` and `C^16` displayed below.
 
 **Primary runner:** [`scripts/frontier_dm_neutrino_weak_vector_theorem.py`](../scripts/frontier_dm_neutrino_weak_vector_theorem.py)
+
 **Primary runner cache:** [`logs/runner-cache/frontier_dm_neutrino_weak_vector_theorem.txt`](../logs/runner-cache/frontier_dm_neutrino_weak_vector_theorem.txt)
 
----
-
-## Status
-
-**Exact representation theorem; base normalization cited separately**
-
-The branch now closes one more exact part of the neutrino bridge:
-
-> the direct local chiral bridge family  
-> `Y_i = P_R Gamma_i P_L`  
-> is an exact weak vector under the derived `SU(2)` bivectors.
-
-This is real progress. It upgrades the bridge family from "an axis-picked
-operator that seems plausible" to "a theorem-grade spin-1 weak multiplet."
-
-At the stage of this theorem alone, it still does **not** close the neutrino
-base coupling. The reason is sharp: the weak-vector covariance equations are
-homogeneous, so they do not fix the overall coefficient. The separate
-bosonic-normalization row supplies a base-normalization input outside this
-claim; this note does not re-audit that input or the downstream second-order
-suppression law.
-
----
-
-## The Theorem
+## Statement
 
 Let
 
-- `B_a = -(i/4) sum_{m,n=1}^3 eps_{amn} Gamma_m Gamma_n` be the
-  normalized derived weak bivectors, equivalently
-  `B_1 = -(i/2) Gamma_2 Gamma_3` and cyclic permutations
-- `gamma_5` be the `3+1` chirality operator on `C^16`
-- `P_L = (1 + gamma_5)/2`, `P_R = (1 - gamma_5)/2`
-- `Y_i = P_R Gamma_i P_L`
+- `sigma_x = [[0,1],[1,0]]`,
+- `sigma_y = [[0,-i],[i,0]]`,
+- `sigma_z = [[1,0],[0,-1]]`.
 
-Then:
+The spatial Clifford triple on `C^8` is
 
-1. the bivectors `B_a` form exact `su(2)` on the taste space
-2. the spatial `Gamma_i` family on `C^8` transforms as a vector:
+- `Gamma_1^(8) = sigma_x x I x I`,
+- `Gamma_2^(8) = sigma_y x sigma_x x I`,
+- `Gamma_3^(8) = sigma_y x sigma_y x sigma_x`.
 
-   `[B_a, Gamma_b] = i eps_{abc} Gamma_c`
+The four-generator packet on `C^16` is
 
-3. the same is true for the chiral bridge family on `C^16`:
+- `Gamma_0 = sigma_z x sigma_z x sigma_z x sigma_x`,
+- `Gamma_1 = sigma_x x I x I x I`,
+- `Gamma_2 = sigma_z x sigma_x x I x I`,
+- `Gamma_3 = sigma_z x sigma_z x sigma_x x I`.
 
-   `[B_a, Y_b] = i eps_{abc} Y_c`
+For either spatial triple, define
 
-4. the adjoint Casimir on both families is exactly spin-1:
+`B_a = -(i/4) sum_(m,n=1)^3 eps_(amn) Gamma_m Gamma_n`.
 
-   `sum_a [B_a,[B_a, X_b]] = 2 X_b`
+On `C^16`, also define
 
-   for `X_b = Gamma_b` or `Y_b`
+`gamma_5 = Gamma_0 Gamma_1 Gamma_2 Gamma_3`,
 
-5. the bridge family is trace-orthogonal:
+`P_L = (I + gamma_5)/2`, `P_R = (I - gamma_5)/2`,
 
-   `Tr(Y_i^dag Y_j) = 8 delta_ij`
+and
 
-So the direct post-EWSB bridge is now not only selected as `Gamma_1` after
-axis choice; the full family `Y_i` is an exact weak-vector multiplet.
+`Y_i = P_R Gamma_i P_L`.
 
----
+Then the following identities hold exactly:
 
-## Restricted-Packet Algebra
+1. Each spatial triple satisfies
+   `{Gamma_i,Gamma_j} = 2 delta_ij I`.
+2. The derived matrices have the cyclic form
+   `B_1 = -(i/2) Gamma_2 Gamma_3` and cyclic permutations, form an exact `su(2)`
+   triple, and obey
+   `[B_a,B_b] = i eps_(abc) B_c`.
+3. The spatial Clifford generators obey
+   `[B_a,Gamma_b] = i eps_(abc) Gamma_c`.
+4. `gamma_5` anticommutes with every spatial `Gamma_i`; `P_L` and `P_R`
+   are complementary orthogonal projectors; and every `B_a` commutes with
+   both projectors.
+5. The chiral family obeys
+   `[B_a,Y_b] = i eps_(abc) Y_c`.
+6. The adjoint Casimir is `2` on both displayed vector families:
+   `sum_a [B_a,[B_a,X_b]] = 2 X_b` for `X_b = Gamma_b` or `Y_b`.
+7. The `C^16` chiral family has Gram matrix
+   `Tr(Y_i^dag Y_j) = 8 delta_ij`.
+8. For every scalar `lambda` in `C`, the family `lambda Y_i` obeys the same
+   vector and Casimir equations, and
+   `Tr((lambda Y_i)^dag (lambda Y_j)) = |lambda|^2 8 delta_ij`.
 
-This note does not require an external authority for the load-bearing
-commutator. The exact packet used by the runner is:
+Item 8 is a homogeneous closure property of the displayed matrix equations.
 
-- `sigma_x = [[0,1],[1,0]]`
-- `sigma_y = [[0,-i],[i,0]]`
-- `sigma_z = [[1,0],[0,-1]]`
+## Derivation
 
-On `C^8`, the spatial taste generators are
+The Pauli relations give each Clifford identity directly under Kronecker
+multiplication. For an arbitrary spatial Clifford triple,
 
-- `Gamma_1 = sigma_x x I x I`
-- `Gamma_2 = sigma_y x sigma_x x I`
-- `Gamma_3 = sigma_y x sigma_y x sigma_x`
+`[Gamma_m Gamma_n,Gamma_b]`
 
-On `C^16`, the bridge packet uses
+`= 2 delta_(nb) Gamma_m - 2 delta_(mb) Gamma_n`.
 
-- `Gamma_0 = sigma_z x sigma_z x sigma_z x sigma_x`
-- `Gamma_1 = sigma_x x I x I x I`
-- `Gamma_2 = sigma_z x sigma_x x I x I`
-- `Gamma_3 = sigma_z x sigma_z x sigma_x x I`
-- `gamma_5 = Gamma_0 Gamma_1 Gamma_2 Gamma_3`
-- `P_L = (I + gamma_5)/2`, `P_R = (I - gamma_5)/2`
+Substitution in the definition of `B_a` gives
 
-These matrices obey the Clifford relations
+`[B_a,Gamma_b] = i sum_c eps_(abc) Gamma_c`.
 
-`Gamma_i Gamma_j + Gamma_j Gamma_i = 2 delta_ij I`
+The same Clifford products give the cyclic formulas for `B_a` and then
 
-for the spatial `Gamma_i`. The runner also checks that `gamma_5`
-anticommutes with each spatial `Gamma_i` and that `P_L`, `P_R` are
-complementary orthogonal projectors.
+`[B_a,B_b] = i sum_c eps_(abc) B_c`.
 
-The commutator identity then follows directly. For any spatial Clifford
-triple,
+Applying the vector commutator twice yields
 
-`[Gamma_m Gamma_n, Gamma_b] = 2 delta_{nb} Gamma_m - 2 delta_{mb} Gamma_n`.
+`sum_a [B_a,[B_a,Gamma_b]] = 2 Gamma_b`.
 
-Therefore
+On `C^16`, `gamma_5` anticommutes with each spatial generator. It therefore
+commutes with every even product `Gamma_m Gamma_n`, so
+`[B_a,P_L] = [B_a,P_R] = 0`. Consequently,
 
-`[B_a, Gamma_b]`
+`[B_a,Y_b]`
 
-`= -(i/4) sum_{m,n} eps_{amn} [Gamma_m Gamma_n, Gamma_b]`
+`= [B_a,P_R Gamma_b P_L]`
 
-`= i sum_c eps_{abc} Gamma_c`.
+`= P_R [B_a,Gamma_b] P_L`
 
-Because `gamma_5` anticommutes with each spatial `Gamma_i`, every even
-product `Gamma_m Gamma_n` commutes with `gamma_5`. Hence
-`[B_a, P_L] = [B_a, P_R] = 0`, and
+`= i sum_c eps_(abc) Y_c`.
 
-`[B_a, Y_b] = [B_a, P_R Gamma_b P_L]`
+The same double-commutator calculation gives the Casimir identity for `Y_b`.
+Moreover,
 
-`= P_R [B_a, Gamma_b] P_L`
+`Y_i^dag Y_j = P_L Gamma_i Gamma_j P_L`.
 
-`= i sum_c eps_{abc} P_R Gamma_c P_L`
+The explicit Kronecker traces are `Tr(P_L)=8` and
+`Tr(P_L Gamma_i Gamma_j)=0` for `i != j`, proving
+`Tr(Y_i^dag Y_j)=8 delta_ij`.
 
-`= i sum_c eps_{abc} Y_c`.
+Finally, commutators are complex-linear in `Y`, while the Gram form is
+conjugate-linear in its first argument and linear in its second. Thus, for a
+symbolic scalar `lambda`, the vector and Casimir residuals acquire an overall
+factor `lambda`, and the Gram matrix acquires the factor
+`conjugate(lambda) lambda = |lambda|^2`.
 
-The spin-1 Casimir follows by applying the same commutator twice:
+## Boundary
 
-`sum_a [B_a,[B_a,Y_b]] = 2 Y_b`,
+This theorem concerns only the displayed finite matrices and their exact
+algebraic identities. Identifications of these matrices with a physical
+system, and coefficients attached to any such identification, are outside
+the theorem and are neither asserted nor denied.
 
-using `sum_{a,c} eps_{abc} eps_{acd} = -2 delta_bd`. Trace orthogonality is
-the finite-matrix trace identity
+**Downstream hygiene (2026-07-18):** references to this row may cite only the
+displayed finite-matrix identities; they supply no additional physical
+identification or coefficient statement.
 
-`Tr(Y_i^dag Y_j) = Tr(P_L Gamma_i Gamma_j P_L) = 8 delta_ij`,
+## Executable verification
 
-checked exactly by the paired runner on the explicit tensor-product matrices.
-
----
-
-## What This Actually Buys
-
-This theorem closes the representation content of the bridge family.
-
-Before this pass, the branch had:
-
-- an exact operator-selection theorem (`Gamma_1`, not `Xi_5`)
-- an exact second-order cascade geometry
-- an exact weak-matching obstruction to reusing the old `G5` route
-
-Now it also has:
-
-- an exact statement that the direct bridge family carries the correct weak
-  spin-1 transformation law
-
-That means the bridge family is no longer just "the thing picked by axis
-selection." It is a canonically transforming weak object in the derived
-operator algebra.
-
-This matters because it removes one more possible harsh objection:
-
-> "Maybe `Gamma_1` is just a basis artifact and not a genuine weak-sector
-> operator family."
-
-That objection is no longer supported by this finite packet.
-
----
-
-## Why This Still Does Not Fix The Coefficient
-
-The key obstruction is algebraic and exact:
-
-if `Y_i` obeys
-
-`[B_a, Y_b] = i eps_{abc} Y_c`
-
-then for any scalar `lambda`,
-
-`[B_a, lambda Y_b] = i eps_{abc} lambda Y_c`
-
-as well.
-
-Likewise the Casimir equation is homogeneous:
-
-`sum_a [B_a,[B_a, lambda Y_b]] = 2 lambda Y_b`.
-
-So the weak-vector theorem fixes the **representation law**, but not the
-**absolute normalization**.
-
-This is exactly why the theorem does **not** by itself promote any particular
-base benchmark.
-
-That equality would require an extra ingredient beyond covariance, for example:
-
-- a new weak-sector Ward / Slavnov-Taylor-style identity for the direct bridge
-- or a theorem-grade Higgs / bridge field-normalization principle
-- or a stronger gauge-Higgs unification result than the branch currently has
-
-At the stage of this note, none of those are supplied here. The separate
-bosonic-normalization row supplies the field-normalization selector outside
-this claim, but not the second-order suppression law.
-
----
-
-## Relation To Gauge Universality
-
-This also clarifies the scope of the older gauge-universality theorem.
-
-That theorem proves that the three hw=1 fermion species carry isomorphic gauge
-representations. It is a representation-content result. It does **not** prove
-coefficient sharing between different operator families.
-
-The new weak-vector theorem is the same kind of result:
-
-- it proves the direct bridge family is an exact weak vector
-- it does **not** prove the coefficient multiplying that family in the physical
-  neutrino Yukawa equals the weak gauge coupling
-
-So the branch should not treat "exact weak representation" and
-"exact coefficient sharing" as the same achievement. They are not.
-
----
-
-## Updated Blocker
-
-The denominator blocker is now even narrower:
-
-> the branch has fixed the direct local bridge family and its exact weak
-> representation content, but it still lacks the theorem that fixes the
-> suppressed second-order coefficient below the now-selected base surface.
-
-Equivalently:
-
-> the remaining problem is no longer operator selection or weak covariance. It
-> is the suppressed second-order coefficient on the exact `Gamma_1` return.
-
-That is the right Nature-bar statement.
-
----
-
-## Verification
-
-Verified by:
-
-- [`scripts/frontier_dm_neutrino_weak_vector_theorem.py`](../scripts/frontier_dm_neutrino_weak_vector_theorem.py)
-- captured stdout:
-  [`outputs/frontier_dm_neutrino_weak_vector_theorem_2026-05-06.txt`](../outputs/frontier_dm_neutrino_weak_vector_theorem_2026-05-06.txt)
-
-Command:
+Run:
 
 `python3 scripts/frontier_dm_neutrino_weak_vector_theorem.py`
 
-The runner checks:
-
-- explicit `C^8` and `C^16` Clifford relations
-- `gamma_5` chirality anticommutation and `P_L`, `P_R` projector algebra
-- exact `su(2)` closure of the weak bivectors
-- exact vector transformation of `Gamma_i`
-- exact vector transformation of `Y_i = P_R Gamma_i P_L`
-- exact spin-1 Casimir `2`
-- trace orthogonality of the bridge family
-- explicit rescaling invariance of the covariance equations
-
-Latest captured result:
-
-`RESULT: 18 PASS, 0 FAIL`
+The runner uses exact SymPy matrices over Gaussian rationals for every
+load-bearing identity. It separately reports numerical support and hostile
+mutation checks. The mutation suite rejects wrong bivector sign and
+normalization, wrong vector sign and index, reversed projector orientation,
+a false Casimir coefficient, false diagonal and off-diagonal Gram claims, and
+a false invariant-Gram claim under non-unit rescaling.

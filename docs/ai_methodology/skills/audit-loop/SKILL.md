@@ -220,6 +220,26 @@ the invoker. The default session is:
 The single-claim manual procedure later in this skill remains the special
 case for targeted rows; it is not the default.
 
+## Progress Reports (every 15 minutes)
+
+While a session is running, the operator surface gets a summary block at
+least every 15 minutes — never silence for a long run.
+
+- The batch drainer emits its own `== drain summary` block on that cadence
+  (elapsed time, outcome counts straight from the session report, active
+  worker seats with per-seat runtimes, dep-ready rows remaining this
+  round). Relay these to the operator surface as they appear; do not
+  re-derive or editorialize the numbers.
+- During phases the drainer does not cover — judicial panels, reseats, the
+  forensic canary, setup/pipeline waits — the orchestrator composes the
+  same cadence manually: elapsed session time, verdicts landed this session
+  by type, attempts and failures with the top failure reasons verbatim,
+  panel/reseat/canary state, and the current ready-row count from the audit
+  queue.
+- Every session ends with a final forced summary plus the standard batch
+  report; a session that stops early still reports what landed, what
+  failed, and what remains.
+
 ## Scaling: The One Canonical Fan-Out
 
 There is exactly one sanctioned way to parallelize this lane — the

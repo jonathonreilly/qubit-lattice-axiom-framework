@@ -76,8 +76,7 @@ This sharpens and extends:
 2. `CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md`
 3. `KOIDE_POSITIVE_PATHS_FIRST_PRINCIPLES_NOTE_2026-04-18.md`
 4. [KOIDE_MICROSCOPIC_SCALAR_SELECTOR_TARGET_NOTE_2026-04-18.md](./KOIDE_MICROSCOPIC_SCALAR_SELECTOR_TARGET_NOTE_2026-04-18.md)
-5. [KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md](./KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)
-6. [frontier_charged_lepton_z3_source_response_crosscheck.py](../scripts/frontier_charged_lepton_z3_source_response_crosscheck.py)
+5. [frontier_charged_lepton_z3_source_response_crosscheck.py](../scripts/frontier_charged_lepton_z3_source_response_crosscheck.py)
 
 ## Theorem 1: every weighted character-source kernel is diagonal
 

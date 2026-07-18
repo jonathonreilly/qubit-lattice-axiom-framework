@@ -116,8 +116,7 @@ Any one of the following would close P. None is currently retained.
 **Input (a): Lattice propagator radian quantum.** A retained Euclidean lattice
 propagator identity `G_{C_3}(1) = exp(i · 2/d²) · G_0` on a specific
 C_3-equivariant lattice, where `2/d²` appears literally as a radian phase.
-Candidate routes (KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md) have
-not produced this.
+No result cited by this note supplies this identity.
 
 **Input (b): 4×4 hw=1+baryon non-uniform Wilson holonomy.** Extending hw=1 from
 the retained 3×3 triplet to a 4×4 sector with baryon coupling, where the
@@ -181,7 +180,6 @@ form is (a), (b), or (c).
 - KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md (R1)
 - KOIDE_BERRY_BUNDLE_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md (R2)
 - KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md (R3, A.2)
-- KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md (candidate input (a))
 - KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md (candidate input (c))
 - SCALAR_SELECTOR_CYCLE1_SCIENCE_REVIEW_NOTE_2026-04-19.md (stack context)
 
@@ -193,6 +191,5 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [koide_berry_phase_theorem_note_2026-04-19](KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md)
 - [koide_berry_bundle_obstruction_theorem_note_2026-04-19](KOIDE_BERRY_BUNDLE_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
 - `KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md` (back-reference, not load-bearing on this no-go note — circulant_character is an older sister exploring the character-theoretic Q-derivation candidate; this 2026-04-20 note's no-go argument does not consume circulant_character as a one-hop authority. Backticked to break length-8 cycle `cycle-0004` in `docs/audit/data/cycle_inventory.json`.)
-- [koide_cyclic_wilson_descendant_law_note_2026-04-18](KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)
 - [koide_circulant_wilson_target_note_2026-04-18](KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md)
 - [scalar_selector_cycle1_science_review_note_2026-04-19](SCALAR_SELECTOR_CYCLE1_SCIENCE_REVIEW_NOTE_2026-04-19.md)

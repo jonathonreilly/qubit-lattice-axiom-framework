@@ -1,59 +1,78 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_cyclic_wilson_descendant_law.py
-runner_sha256: 0fb15934c737fc029ca4b2acf262f2185287e5fea395efe9fedd2f9e9b5b401f
+runner_sha256: 2653516b95254092623f980a6115aa98c5498cb12fafd6f89fa5630aadbed211
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 1.01
 status: ok
 ----- stdout -----
-========================================================================================
-PART 0: source scope is the abstract supplied-matrix lemma
-========================================================================================
-  [PASS (A)] The note and runner retain the required theorem boundary and reject prior overclaims  (scope firewall clean)
+ADJACENT-CHAIN CYCLIC-RESPONSE COMPRESSION / RIESZ CERTIFICATE
 
-========================================================================================
-PART 1: the adjacent-chain path algebra contains the signed cyclic basis
-========================================================================================
-  [PASS (A)] E12 E23 equals the long corner E13
-  [PASS (A)] E32 E21 equals the long corner E31
-  [PASS (A)] The fixed forward-cycle convention is C = E21 + E32 + E13
-  [PASS (A)] The backward cycle is C^2 = E12 + E23 + E31
-  [PASS (A)] C has order three and C^2 = C^dagger
-  [PASS (A)] B1 = C + C^2 is in the adjacent-chain algebra
-  [PASS (A)] The B2 sign is i(C-C^2) = Y12 + Y23 - Y13
+============================================================================================
+EXACT 1: adjacent-chain certificates and the full Hermitian commutant
+============================================================================================
+  [PASS][EXACT] E12 E23 is the long corner E13
+  [PASS][EXACT] E32 E21 is the long corner E31
+  [PASS][EXACT] adjacent generators and words contain all three diagonal units
+  [PASS][EXACT] the displayed orientation is C=E21+E32+E13
+  [PASS][EXACT] the inverse orientation is C^2=E12+E23+E31
+  [PASS][EXACT] C has order three and C^2=C^dagger
+  [PASS][EXACT] B0,B1,B2 are Hermitian adjacent-chain combinations
+  [PASS][EXACT] the fixed B2 orientation is Y12+Y23-Y13
+  [PASS][EXACT] the full 18-by-9 real commutator system has rank six  (shape=(18, 9) rank=6)
+  [PASS][EXACT] the solved Hermitian commutant has nullity exactly three  (nullity=3)
+  [PASS][EXACT] the complete commutant kernel equals span_R{B0,B1,B2}
+  [PASS][EXACT] the explicit nine-coordinate commutant solution is aB0+xB1+yB2  (d0=d1=d2; x12=x13=x23; y12=y23=-y13)
 
-========================================================================================
-PART 2: cyclic averaging is the exact rank-three Hermitian projector
-========================================================================================
-  [PASS (A)] The projector fixes B0, B1, and B2
-  [PASS (A)] The projector is idempotent on a real basis of Herm(3)
-  [PASS (A)] Every projected basis element is Hermitian
-  [PASS (A)] Every projected basis element commutes with C
-  [PASS (A)] The real Hermitian image has rank exactly three  (rank=3)
-  [PASS (A)] The real trace Gram matrix is exactly diag(3,6,6)  (gram=[[3.0, 0.0, 0.0], [0.0, 6.0, 0.0], [0.0, 0.0, 6.0]])
-  [PASS (A)] All nine projected basis elements obey the trace-coordinate reconstruction
+============================================================================================
+EXACT 2: orthogonal C3 conjugation projector and exact Gram data
+============================================================================================
+  [PASS][EXACT] the average preserves Hermiticity on a full real basis of Herm(3)
+  [PASS][EXACT] every averaged basis element commutes with C
+  [PASS][EXACT] the average fixes B0,B1,B2
+  [PASS][EXACT] the average is idempotent on all nine Hermitian coordinates
+  [PASS][EXACT] the group average is self-adjoint for Re Tr on all 81 basis pairs
+  [PASS][EXACT] the projector image has exact real rank three  (rank=3)
+  [PASS][EXACT] the ordered trace Gram matrix is diag(3,6,6)  (gram=[[3, 0, 0], [0, 6, 0], [0, 0, 6]])
 
-========================================================================================
-PART 3: three trace coordinates reconstruct the projection of a supplied H
-========================================================================================
-  [PASS (A)] The generic supplied Hermitian matrix reconstructs symbolically
-  [PASS (A)] The three symbolic trace coordinates are real polynomials
-  [PASS (A)] The signed symbolic coordinates have the fixed normalization  (r0=sum(diagonal), r1=2 sum(xij), r2=2(y01-y02+y12))
+============================================================================================
+EXACT 3: arbitrary supplied functional, unique Riesz representative, and cone
+============================================================================================
+  [PASS][EXACT] the Riesz formula is Hermitian for arbitrary real functional data
+  [PASS][EXACT] the Riesz representative agrees with an arbitrary real-linear functional on all cyclic coordinates
+  [PASS][EXACT] the nonsingular Gram system gives the unique coefficients (r0/3,r1/6,r2/6)  (det(G)=108)
+  [PASS][EXACT] every cyclic Hermitian H has responses (3a,6x,6y)
+  [PASS][EXACT] the three trace responses recover every cyclic Hermitian H
+  [PASS][EXACT] for a generic nine-coordinate Hermitian matrix the same responses reconstruct its cyclic projection
+  [PASS][EXACT] independent coefficient extraction gives 2r0^2-r1^2-r2^2  (18*residual=2*r0**2 - r1**2 - r2**2)
 
-========================================================================================
-PART 4: the supplied-matrix Koide cone has the exact response equation
-========================================================================================
-  [PASS (A)] a^2-2(x^2+y^2) equals (2r0^2-r1^2-r2^2)/18
-  [PASS (A)] The response-space equation has the required factor two
+============================================================================================
+SUPPORT: source scope, wiring, and evidence hygiene
+============================================================================================
+  [PASS][SUPPORT] the note carries every required abstract supplied-functional marker
+  [PASS][SUPPORT] the note carries none of the removed physical or promotional claims
+  [PASS][SUPPORT] the self-contained proof has no hidden source-note dependency link  (links=[])
+  [PASS][SUPPORT] the runner contains no floating, stochastic, observed-comparator, or D-check evidence path
 
-Interpretation:
-  The exact result is an abstract rank-three cyclic compression of a supplied
-  Hermitian matrix, reconstructed from its real trace coordinates on B0, B1,
-  and B2. The Koide cone is equivalent to 2 r0^2 = r1^2 + r2^2.
-  No microscopic source/action map, physical carrier or spectrum, scale/readout
-  map, or selector mechanism is derived by these identities.
+============================================================================================
+MUTATION: hostile theorem-contract variants must be rejected
+============================================================================================
+  [PASS][MUTATION] canonical theorem contract is accepted before mutation  ([])
+  [PASS][MUTATION] validator kills wrong cycle orientation  (errors=['cycle_orientation'])
+  [PASS][MUTATION] validator kills missing commutant dimension  (errors=['commutant_dimension'])
+  [PASS][MUTATION] validator kills extra commutant dimension  (errors=['commutant_dimension'])
+  [PASS][MUTATION] validator kills wrong Gram denominator  (errors=['gram_denominator', 'response_reconstruction'])
+  [PASS][MUTATION] validator kills wrong projector normalization  (errors=['projector_normalization'])
+  [PASS][MUTATION] validator kills wrong response index  (errors=['response_reconstruction'])
+  [PASS][MUTATION] validator kills wrong response sign  (errors=['response_reconstruction'])
+  [PASS][MUTATION] validator kills nonunique reconstruction basis  (errors=['reconstruction_uniqueness', 'response_reconstruction'])
+  [PASS][MUTATION] validator kills wrong Koide factor  (errors=['koide_factor'])
+  [PASS][MUTATION] Hermitian target validator accepts the exact control
+  [PASS][MUTATION] Hermitian target validator kills a non-Hermitian supplied target
+  [PASS][MUTATION] real-linear functional validator accepts the exact control  ([])
+  [PASS][MUTATION] real-linear functional validator kills nonlinear functional misuse  (['functional_linearity'])
 
-PASS=20 FAIL=0
+SUMMARY EXACT=26/0 SUPPORT=4/0 MUTATION=14/0 TOTAL_FAIL=0
 
 ----- stderr -----
 

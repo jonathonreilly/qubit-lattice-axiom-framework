@@ -85,5 +85,27 @@ class OpenScienceFixPrTest(unittest.TestCase):
         self.assertIsNone(self._probe(raises=OSError("gh missing")))
 
 
+
+class CleanupWorktreeBranchTest(unittest.TestCase):
+    def test_cleanup_removes_worktree_and_local_branch(self):
+        import subprocess
+
+        path, branch = sfl.make_worktree("cleanup_probe_claim", "testrun0")
+        try:
+            self.assertTrue(path.exists())
+            listed = subprocess.run(
+                ["git", "branch", "--list", branch],
+                cwd=sfl.REPO_ROOT, capture_output=True, text=True,
+            ).stdout
+            self.assertIn(branch, listed)
+        finally:
+            sfl.cleanup_worktree(path, branch)
+        self.assertFalse(path.exists())
+        listed = subprocess.run(
+            ["git", "branch", "--list", branch],
+            cwd=sfl.REPO_ROOT, capture_output=True, text=True,
+        ).stdout
+        self.assertNotIn(branch, listed)
+
 if __name__ == "__main__":
     unittest.main()

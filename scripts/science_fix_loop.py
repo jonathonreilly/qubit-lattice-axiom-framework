@@ -429,10 +429,20 @@ def make_worktree(claim_id: str, run_id: str) -> tuple[Path, str]:
     return path, branch
 
 
-def cleanup_worktree(path: Path) -> None:
+def cleanup_worktree(path: Path, branch: str | None = None) -> None:
+    """Remove the attempt worktree AND its local branch registration.
+
+    Every attempt creates a fresh local branch (make_worktree -b); pushed
+    branches live on as remotes, but the LOCAL branch is disposable on every
+    path — leaving it behind accumulates hundreds of dead branch refs in the
+    clone (confirmed by an end-to-end race-skip probe). Branch deletion must
+    follow worktree removal (a branch checked out in a live worktree cannot
+    be deleted)."""
     git("worktree", "remove", "--force", str(path), check=False)
     if path.exists():
         shutil.rmtree(path, ignore_errors=True)
+    if branch:
+        git("branch", "-D", branch, check=False)
 
 
 def _newest_mtime(worktree: Path) -> float:
@@ -1148,7 +1158,7 @@ def main() -> int:
                 f.write(json.dumps({"claim_id": cid, **outcome}) + "\n")
             record_outcome(cid, outcome)
             if not args.keep_worktrees:
-                cleanup_worktree(worktree)
+                cleanup_worktree(worktree, branch)
 
     print(f"\nDone. attempted={len(targets)} pr_opened={applied} punted={punted} errored={errored} pr_failed={pr_failed}")
     print(f"State: {STATE_FILE.relative_to(REPO_ROOT)}")

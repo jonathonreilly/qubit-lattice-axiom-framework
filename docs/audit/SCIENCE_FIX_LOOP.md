@@ -16,13 +16,24 @@ the independent audit lane verifies correctness after merge.
 
 ## Mechanics
 
+Candidate order (2026-07-18): within each difficulty bucket
+(easy → medium → hard → unknown), publication-lane rows first (admitted set
+from the tracked `docs/audit/data/publication_lane_manifest.json` — fix
+effort chips at the publication gap, the same retarget philosophy as the
+audit lane), then mechanical categories before bridge science
+(renaming → numerical_match → runner_artifact → scope → open_gate →
+failed → missing_bridge_theorem), then descendants descending.
+
 For each prompt the loop:
 
 1. Atomically reserves up to `--n` rows in `logs/science-fix-state.json`
    as `in_progress`
+1b. Skips the row (`skipped_open_pr_exists`) when an OPEN science-fix PR
+   for the claim already exists on the remote — the state file is
+   per-clone, so this is the cross-workspace dedupe
 2. Creates a clean worktree off `origin/main` on a new branch
    (`claude/science-fix/<claim-slug>-<run-id>`)
-3. Runs `codex exec -C <worktree> -s workspace-write -m gpt-5.5
+3. Runs `codex exec -C <worktree> -s workspace-write -m gpt-5.6-sol
    --config model_reasoning_effort=xhigh "<prompt body>"`
 4. After codex returns:
    - If no edits were made (codex punted) → record `no_edits`, move on
@@ -51,10 +62,19 @@ For each prompt the loop:
 }
 ```
 
-The loop never auto-merges. Every successful attempt produces a PR
-that must be reviewed and either landed through the normal review-loop
-path or closed. After merge, the pipeline queues the changed row and the
-independent audit lane picks it up in a later audit run.
+The loop never auto-merges — and science-fix PRs are not DIRECT-merged
+either: direct merges bypass the stage-18 citation-graph delta gate and
+the landing conventions. Every successful attempt produces a PR that the
+review-loop skill's parallel default entry reviews, fixes, confirms,
+lands (fail-closed cherry-pick loop, manifest handling included), and
+closes end to end — or closes with a reason. After landing, the pipeline
+queues the changed row and the independent audit lane picks it up.
+
+Concurrency budget: each attempt is one codex process for up to
+`--codex-timeout-sec`; attempts share the machine's codex pool with
+audit-lane seats and review-loop reviewers (keep the TOTAL at or under
+~8-10; measured 2026-07-17: ~18 concurrent processes collapsed audit-lane
+throughput ~20x).
 
 ## Commands
 
@@ -133,8 +153,8 @@ python3 scripts/science_fix_loop.py --n 5 --codex-timeout-sec 600
 - **`audit-loop` skill** (Codex skill, `~/.codex/skills/audit-loop`):
   audits claims after they're written. The science-fix loop produces
   PRs that the audit-loop will then check.
-- **`codex_audit_runner.py`**: same auditor (Codex GPT-5.5 at xhigh)
-  but reads-only. Reads cached runner output and renders verdicts.
+- **`codex_audit_runner.py`**: same auditor family (currently
+  GPT-5.6-Sol at xhigh) but reads-only. Reads cached runner output and renders verdicts.
 - **`compute_reaudit_candidates.py`**: when a science-fix PR merges
   and the upstream's audit changes, downstream rows show up here for
   re-audit via `codex_audit_runner.py --from-reaudit-candidates`, or
@@ -144,7 +164,8 @@ python3 scripts/science_fix_loop.py --n 5 --codex-timeout-sec 600
 The full loop:
 
 1. `science_fix_loop.py` opens PR with new derivation
-2. Human/review-loop reviews + lands or closes the PR
+2. A review-loop worker reviews, fixes, confirms, lands, and closes
+   the PR end to end (parallel default entry; never a direct merge)
 3. Pipeline regenerates (note hash drifts → seed_audit_ledger archives
    the prior verdict, resets to `unaudited`)
 4. `codex_audit_runner.py --n 1` re-audits this specific row (via

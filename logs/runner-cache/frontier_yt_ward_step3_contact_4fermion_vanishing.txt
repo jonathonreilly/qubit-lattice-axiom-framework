@@ -1,129 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_ward_step3_contact_4fermion_vanishing.py
-runner_sha256: e432bc7a9d753aa5f8852c05f6c089c330dca173ba5a509cfa5d19648331bac7
+runner_sha256: 5ff07cc6ce4a7f83328529e6f2f92b27034429d1e1a3329550dcee48ac88933f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.66
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
-========================================================================
-BLOCK 1: Bare-action operator enumeration on Q_L = (2, 3)
-========================================================================
 
-  The retained Cl(3) x Z^3 Wilson-plaquette + staggered-Dirac bare
-  action (MINIMAL_AXIOMS_2026-05-03:32-43) contains exactly:
-    - Wilson plaquette S_W = -(beta/N_c) sum_p Re Tr U_p
-    - staggered Dirac S_F = sum_x sum_mu eta_mu(x) (1/2) (psibar U psi)
-  No four-fermion contact operator (psibar Gamma psi)(psibar Gamma' psi)
-  appears in the bare Lagrangian for any Clifford / color / iso choice.
+----------------------------------------------------------------------------------------
+Finite contact-operator inventory
+----------------------------------------------------------------------------------------
+PASS: Clifford x color x isospin contact inventory is exhaustive and finite :: candidate_count=1024
+PASS: absent four-fermion action arity gives zero for every contact coefficient :: zero_coefficients=1024
+PASS: scalar-singlet contact coefficient is a zero member of the inventory
 
-  Enumerated 4-fermion contact operator candidates on Q_L = (2, 3):
-    16 Clifford x 16 Clifford x 2 color x 2 iso  =  1024
-  [PASS] Enumerated contact-operator basis is finite (16*16*2*2 = 1024)  --  n_candidates = 1024
-  [PASS] (T1) Every admissible bare-action contact-4-fermion coefficient = 0  --  verified across all 1024 (Clifford, Clifford, color, iso) candidates
-  [PASS] (T1a) Scalar-singlet projection contact coefficient = 0  --  c_contact[O_S = (I,I,1,1)] = 0
+----------------------------------------------------------------------------------------
+Projected one-gauge-boson coefficient
+----------------------------------------------------------------------------------------
+PASS: SU(3) Fierz relation is reconstructed over all index tuples :: max_error=5.551e-17
+PASS: singlet projection coefficient is -1/(2N_c)=-1/6 :: exchange=0.5, singlet=-0.166666666667
+PASS: one-exchange term has leading g_bare^2/q^2 power :: coefficient=-g_bare**2/(6*q**2)
+PASS: two-exchange topology is higher in both coupling and inverse momentum :: higher_term=g_bare**4/q**4
 
-========================================================================
-BLOCK 2: D9 composite-Higgs no-independent-scalar check
-========================================================================
+----------------------------------------------------------------------------------------
+Conditional Rep-B boundary
+----------------------------------------------------------------------------------------
+PASS: under H-MATRIX only, the formal residual is (g_bare^2-1)/6 :: residual=(g_bare - 1)*(g_bare + 1)/6
+PASS: contact vanishing does not make the conditional residual an identity :: residual(g_bare=2)=1/2
+PASS: without H-MATRIX the Rep-B coefficient remains functionally unconstrained :: unbridged_residual=g_bare**2/6 - f(g_bare)**2
 
-  D9 (YUKAWA_COLOR_PROJECTION_THEOREM.md:33-40):
-    The framework's only scalar bilinear on Q_L is the COMPOSITE
-    phi = (1/N_c) sum_a psibar_a psi_a.
-  This is a composite operator built from the staggered Dirac
-  fermions; not an independent fundamental scalar field.
-
-  [PASS] D9: No independent fundamental scalar field in framework Lagrangian  --  n_independent = 0; only composite phi (no Yukawa-mediated contact possible)
-  [PASS] Composite phi does not produce a bare-Lagrangian contact 4-fermion term  --  phi is (psibar psi)-built; no independent kinetic term, no integration-out
-
-========================================================================
-BLOCK 3: Tree-level power-counting decomposition Gamma^(4)_tree
-========================================================================
-
-  From Wick's theorem on the bare action's tree-level T-product
-  expansion (Peskin-Schroeder s10.1; Itzykson-Zuber s5-3), the
-  amputated 4-fermion 1PI Green's function decomposes as:
-
-    Gamma^(4)_tree = Gamma^(4)_OGE  +  Gamma^(4)_contact  +  Gamma^(4)_higher
-
-  where each piece is classified by internal-line content.
-
-  Symbolic OGE coefficient on O_S:
-    Gamma_S^(4)_OGE(q^2; g_bare) / O_S  =  -g_bare**2/(6*q**2)
-    Gamma_S^(4)_contact(q^2; g_bare) / O_S  =  0  [from (T1a)]
-  [PASS] OGE coefficient on O_S matches the D12 + S2 derivation  --  = -c_S g_bare^2 / (2 N_c q^2)
-  [PASS] (T2a) OGE coefficient simplifies to -g_bare^2 / (2 N_c q^2) for c_S = +1  --  value = -g_bare**2/(6*q**2)
-
-========================================================================
-BLOCK 4: Higher-topology power suppression (two-gluon exchange)
-========================================================================
-
-  The lowest higher tree topology contributing to Gamma_S^(4) is the
-  planar two-gluon exchange (TGE) diagram: two trilinear vertices on
-  each external fermion line + two internal gauge propagators.
-  Feynman-rule power counting:
-    - 4 trilinear vertices: g_bare^4
-    - 2 gauge propagators: 1/q^4
-  Therefore TGE contributes O(g_bare^4 / q^4) on O_S, sub-leading
-  relative to OGE's O(g_bare^2 / q^2) in the leading-order expansion.
-
-  Symbolic TGE coefficient on O_S (leading TGE topology):
-    Gamma_S^(4)_TGE(q^2; g_bare) / O_S  =  C_TGE*g_bare**4/q**4
-  Ratio TGE / OGE  =  -6*C_TGE*g_bare**2/q**2
-  [PASS] TGE / OGE ratio is O(g_bare^2) (sub-leading)  --  g_bare-degree of (TGE / OGE) up to O(1) factors = 2
-  [PASS] TGE is 1/q^4 vs OGE's 1/q^2 (further kinematic suppression at large q^2)  --  reduced TGE q-degree = 0; reduced OGE q-degree = 0; raw degrees -4 and -2 confirmed by isolation above
-
-========================================================================
-BLOCK 5: Same-1PI-bridge reduction at leading order
-========================================================================
-
-  Rep A leading-order coefficient on O_S (from Blocks 1 + 3):
-    Gamma_S^(4)_A_LO(q^2; g_bare) = Gamma_S^(4)_OGE + 0 + O(g_bare^4)
-                                 = -g_bare^2 / (2 N_c q^2)
-
-  Rep B leading-order coefficient on O_S (retained UNIT_SINGLET_OVERLAP):
-    F_Htt^(0)(g_bare) = 1/sqrt(N_c N_iso)  for all g_bare
-    Gamma_S^(4)_B_LO(q^2; g_bare) = -F_Htt^(0)(g_bare)^2 / q^2
-                                 = -1 / (N_c N_iso q^2)
-
-  Symbolic Rep A leading-order coefficient:
-    -g_bare**2/(6*q**2)
-  Symbolic Rep B leading-order coefficient:
-    F_Htt^(0)(g_bare) = sqrt(6)/6
-    -1/(6*q**2)
-  [PASS] Retained H_unit form-factor identity F_Htt^(0) is g_bare-independent  --  d F_Htt^(0) / d g_bare = 0
-  [PASS] Retained H_unit form-factor value F_Htt^(0) = 1/sqrt(N_c N_iso) = 1/sqrt(6)  --  F_Htt^(0) = sqrt(6)/6 = sqrt(6)/6
-
-  Leading-order coefficient identity (R) residual:
-    F_Htt^(0)^2 - g_bare^2 / (2 N_c)  =  1/6 - g_bare**2/6
-  [PASS] (R) residual factorizes as (g_bare^2 - 2 N_c F_Htt^(0)^2) / (2 N_c)  --  residual = -(g_bare^2 - 2 N_c F_Htt^(0)^2) / (2 N_c)
-  [PASS] (R) reduces to g_bare^2 = 2 N_c F_Htt^(0)^2 = 1 (corollary cross-check)  --  g_bare^2 = 1
-
-========================================================================
-BLOCK 6: Independence + conservation-of-bookkeeping cross-checks
-========================================================================
-
-  [PASS] (T1) is g_bare-independent (contact coefficients are 0 for all g_bare)  --  verified for first 64 candidate operators
-  [PASS] Rep A LO == OGE at all sampled g_bare values (contact vanishing)  --  sampled g_bare = [1/2, 1, 2, 3/7]
-  [PASS] (T3) Same-1PI bridge reduces to (R), with positive branch g_bare = 1  --  the bridge gate solves to g_bare^2 = 1; positive branch g_bare = 1
-
-========================================================================
-SUMMARY
-========================================================================
-  PASS: 16
-  FAIL: 0
-
-  Verified narrow theorem statements:
-    (T1)  every bare-action contact-4-fermion coefficient = 0
-    (T1a) scalar-singlet projection contact coefficient = 0
-    (T2a) OGE coefficient on O_S = -g_bare^2 / (2 N_c q^2)
-    (T3)  same-1PI bridge reduces to (R), positive branch g_bare = 1
-
-  Claim type: bounded_theorem
-  Honest scope: conditional on staggered-Dirac realization gate (A)
-    and g_bare derivation target (B); narrows but does NOT close the
-    parent yt_ward_identity_derivation_theorem row.
-  See: docs/YT_WARD_STEP3_CONTACT_4FERMION_VANISHING_NARROW_THEOREM_NOTE_2026-05-17.md
+TOTAL: PASS=10, FAIL=0
 
 ----- stderr -----
 

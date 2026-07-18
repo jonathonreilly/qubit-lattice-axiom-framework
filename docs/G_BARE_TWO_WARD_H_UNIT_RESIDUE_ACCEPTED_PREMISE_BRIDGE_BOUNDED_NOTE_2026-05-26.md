@@ -163,9 +163,11 @@ top-quark mass enters this proof-walk.
   this bridge does not promote that row's status, it formalizes (P1)
   for the H_unit-residue branch.
 - `UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md`
-  carries the D17 uniqueness of the unit-normalized scalar-singlet
-  composite on `Q_L`. Source-text motivation for (P1); not a
-  load-bearing dependency for the abstract proof-walk above.
+  proves only an abstract finite-dimensional statement: a positive,
+  full-matrix-central, Hilbert--Schmidt-unit endomorphism of `C^n` is
+  `I_n/sqrt(n)`. It does not establish those hypotheses for a physical
+  composite on `Q_L`. Abstract source-text context only; not a load-bearing
+  dependency for the accepted-premise proof-walk above.
 - `YT_WARD_IDENTITY_DERIVATION_THEOREM.md`
   carries the same-`Gamma^(4)` two-representation framing as a
   background reference. Plain-text pointer; the abstract coefficient

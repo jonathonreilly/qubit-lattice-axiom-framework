@@ -1,237 +1,402 @@
 #!/usr/bin/env python3
-"""Pattern A narrow runner for `UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02`.
+"""Evidence for the central-positive Hilbert--Schmidt unit theorem.
 
-Verifies the standalone combinatorial / Wick-algebra identity:
-
-  GIVEN positive integers N_iso, N_c and the unit-normalized scalar-singlet
-  operator on the index set {(alpha, a) : 1 <= alpha <= N_iso, 1 <= a <= N_c}
-
-      H_unit  =  (1 / sqrt(N_iso * N_c)) * sum_{alpha, a} E_{alpha, a}
-
-  where E_{alpha, a} is the elementary diagonal Wick contractor on the
-  basis pair (alpha, a),
-
-  THEN the tree-level matrix element with any single basis pair-state
-  |alpha_0, a_0> is
-
-      F_overlap  =  <0 | H_unit | tbar_{alpha_0, a_0} t_{alpha_0, a_0}>_tree
-                  =  1 / sqrt(N_iso * N_c).
-
-The identity is purely combinatorial: the sum of N_iso * N_c diagonal
-projectors selects the (alpha_0, a_0) component with weight 1, and the
-overall normalization 1/sqrt(N_iso * N_c) gives the result. No gauge
-coupling appears in H_unit at tree order, so the result is **identically**
-independent of any preselected coupling parameter.
-
-This narrow theorem treats H_unit as a stated operator definition (not
-derived from the free-theory two-point function residue), so it does not
-import the upstream YT_WARD_IDENTITY_DERIVATION_THEOREM authority. It is
-a Pattern A carve-out of the load-bearing class-(A) combinatorial core of
-`g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` (claim_type=
-positive_theorem, load_bearing_step_class=A).
-
-Companion role: this is a Pattern A new narrow claim row, NOT an audit
-companion. It introduces a new positive_theorem candidate
-that drops the parent's YT_WARD_IDENTITY dep by stating the operator
-normalization as a definition.
+The filename is historical.  This runner is deliberately confined to
+finite-dimensional matrix algebra.  It reads no note, ledger, cache, audit
+surface, physical carrier, gauge datum, or framework normalization.
 """
 
-from pathlib import Path
+from __future__ import annotations
+
+import argparse
+from dataclasses import dataclass
+import math
 import sys
-import json
 
-try:
-    import sympy
-    from sympy import Rational, sqrt, simplify, symbols, Matrix, eye, zeros, Symbol
-except ImportError:
-    print("FAIL: sympy required for exact algebra")
-    sys.exit(1)
-
-ROOT = Path(__file__).resolve().parent.parent
-
-PASS = 0
-FAIL = 0
+import numpy as np
+import sympy as sp
 
 
-def check(label, ok, detail=""):
-    global PASS, FAIL
-    if ok:
-        PASS += 1
-    else:
-        FAIL += 1
-    tag = "PASS (A)" if ok else "FAIL (A)"
-    print(f"  [{tag}] {label}  ({detail})")
+AUDIT_TIMEOUT_SEC = 120
+EXACT_DIMENSIONS = (1, 2, 3, 6)
+NUMERIC_TOL = 2.0e-10
 
 
-def section(title):
-    print("\n" + "-" * 88 + f"\n{title}\n" + "-" * 88)
+@dataclass
+class Checks:
+    passed: int = 0
+    failed: int = 0
+
+    def check(self, label: str, condition: object, detail: str = "") -> None:
+        if bool(condition):
+            self.passed += 1
+            tag = "PASS"
+        else:
+            self.failed += 1
+            tag = "FAIL"
+        suffix = f" :: {detail}" if detail else ""
+        print(f"{tag}: {label}{suffix}")
 
 
-# ============================================================================
-section("Pattern A narrow theorem: unit-singlet overlap = 1/sqrt(N_iso * N_c)")
-# Statement: given the explicit operator H_unit defined below, the tree-level
-# matrix element with any basis pair-state is exactly 1/sqrt(N_iso * N_c),
-# independent of any gauge-coupling parameter.
-# Pure combinatorial Wick algebra. No YT_WARD_IDENTITY upstream.
-# ============================================================================
-
-# In the diagonal Wick-contractor basis, H_unit acts on the
-# (N_iso * N_c)-dimensional pair-space by selecting the corresponding basis
-# pair with weight 1, normalized by 1/sqrt(N_iso * N_c).
-# We model this directly via diagonal sums on a symbolic basis.
+def section(title: str) -> None:
+    print("\n" + "-" * 88)
+    print(title)
+    print("-" * 88)
 
 
-def unit_singlet_overlap_in_basis(N_iso, N_c, alpha_0, a_0):
-    """
-    Compute <0 | H_unit | tbar_{alpha_0, a_0} t_{alpha_0, a_0}>_tree
-    via direct Wick contraction.
-
-    H_unit = (1/sqrt(N_iso * N_c)) * sum_{alpha, a} E_{alpha, a}
-    where E_{alpha, a} represents the diagonal Wick contractor for the
-    (alpha, a) basis pair: it has matrix element 1 only with the (alpha, a)
-    pair state, 0 with all others.
-    """
-    N = N_iso * N_c
-    # The sum has exactly one nonzero contribution: from E_{alpha_0, a_0}
-    # picking out the (alpha_0, a_0) basis pair with unit weight.
-    matching_count = 1  # exactly one (alpha, a) = (alpha_0, a_0)
-    return Rational(matching_count) / sqrt(Rational(N))
+def matrix_unit(n: int, row: int, col: int) -> sp.Matrix:
+    unit = sp.zeros(n)
+    unit[row, col] = 1
+    return unit
 
 
-# ----------------------------------------------------------------------------
-section("Part 1: framework instance (N_iso, N_c) = (2, 3) -> F = 1/sqrt(6)")
-# ----------------------------------------------------------------------------
-N_iso_fw, N_c_fw = 2, 3
-expected_fw = Rational(1) / sqrt(Rational(6))
-for alpha_0 in range(1, N_iso_fw + 1):
-    for a_0 in range(1, N_c_fw + 1):
-        F = unit_singlet_overlap_in_basis(N_iso_fw, N_c_fw, alpha_0, a_0)
-        check(f"(N_iso, N_c) = (2, 3) at (alpha_0, a_0) = ({alpha_0}, {a_0}): F = 1/sqrt(6)",
-              simplify(F - expected_fw) == 0,
-              detail=f"F = {F}")
+def exact_zero(matrix: sp.Matrix) -> bool:
+    return all(sp.simplify(entry) == 0 for entry in matrix)
 
 
-# ----------------------------------------------------------------------------
-section("Part 2: alternative instance (N_iso, N_c) = (3, 4) -> F = 1/sqrt(12)")
-# ----------------------------------------------------------------------------
-N_iso_alt, N_c_alt = 3, 4
-expected_alt = Rational(1) / sqrt(Rational(12))
-for alpha_0 in [1, N_iso_alt]:
-    for a_0 in [1, N_c_alt]:
-        F = unit_singlet_overlap_in_basis(N_iso_alt, N_c_alt, alpha_0, a_0)
-        check(f"(N_iso, N_c) = (3, 4) at (alpha_0, a_0) = ({alpha_0}, {a_0}): F = 1/sqrt(12)",
-              simplify(F - expected_alt) == 0,
-              detail=f"F = {F}")
+def symbolic_matrix(n: int) -> tuple[sp.Matrix, tuple[sp.Symbol, ...]]:
+    entries = tuple(sp.symbols(f"h0:{n * n}"))
+    return sp.Matrix(n, n, entries), entries
 
 
-# ----------------------------------------------------------------------------
-section("Part 3: alternative instance (N_iso, N_c) = (1, 1) -> F = 1")
-# ----------------------------------------------------------------------------
-N_iso_min, N_c_min = 1, 1
-F_min = unit_singlet_overlap_in_basis(N_iso_min, N_c_min, 1, 1)
-check("(N_iso, N_c) = (1, 1) at (1, 1): F = 1 (degenerate case)",
-      simplify(F_min - 1) == 0,
-      detail=f"F = {F_min}")
+def full_centralizer_nullspace(n: int) -> list[sp.Matrix]:
+    """Solve [H,E_jk]=0 for all matrix units by exact linear algebra."""
+
+    generic, variables = symbolic_matrix(n)
+    equations: list[sp.Expr] = []
+    for j in range(n):
+        for k in range(n):
+            commutator = generic * matrix_unit(n, j, k) - matrix_unit(n, j, k) * generic
+            equations.extend(commutator)
+    coefficient_matrix, _ = sp.linear_eq_to_matrix(equations, variables)
+    return coefficient_matrix.nullspace()
 
 
-# ----------------------------------------------------------------------------
-section("Part 4: explicit matrix-form verification at (N_iso, N_c) = (2, 3)")
-# ----------------------------------------------------------------------------
-# Build H_unit explicitly as a 6x6 matrix over the basis-pair Hilbert space
-# with basis indexed by (alpha, a) in {1,2} x {1,2,3}. H_unit is the
-# matrix (1/sqrt(6)) * I_6, so its (i, j) entry is delta_{ij} / sqrt(6).
-N_total = N_iso_fw * N_c_fw  # = 6
-
-H_unit = eye(N_total) / sqrt(Rational(N_total))
-
-print(f"\n  H_unit (6x6) = (1/sqrt(6)) * I_6:")
-print(f"    diagonal entry = {simplify(H_unit[0, 0])}")
-print(f"    off-diagonal entry = {simplify(H_unit[0, 1])}")
-
-# Basis pair vectors |i> for i = 0..5 (indexing (alpha, a) -> i = (alpha-1) * N_c + (a-1))
-for i in range(N_total):
-    e_i = zeros(N_total, 1)
-    e_i[i] = 1
-    matrix_element = (e_i.T * H_unit * e_i)[0, 0]
-    check(f"<basis pair {i+1} | H_unit | basis pair {i+1}> = 1/sqrt(6)",
-          simplify(matrix_element - Rational(1) / sqrt(Rational(6))) == 0,
-          detail=f"matrix element = {simplify(matrix_element)}")
+def scalar_generator_from_nullspace(n: int) -> tuple[int, sp.Matrix]:
+    nullspace = full_centralizer_nullspace(n)
+    if not nullspace:
+        return 0, sp.zeros(n)
+    vector = nullspace[0]
+    generator = sp.Matrix(n, n, list(vector))
+    pivot = next((entry for entry in generator if entry != 0), sp.Integer(1))
+    return len(nullspace), sp.simplify(generator / pivot)
 
 
-# ----------------------------------------------------------------------------
-section("Part 5: independence of gauge-coupling parameter g_bare")
-# ----------------------------------------------------------------------------
-# H_unit at tree order has no gauge-field insertion. We model this by
-# verifying that H_unit's matrix elements do not depend on any auxiliary
-# parameter we might consider attaching.
-g_bare = symbols('g_bare', positive=True, real=True)
+def isolated_offdiagonal_constraints(n: int) -> list[sp.Expr]:
+    """Return the entries that force h_lj=h_jm=0 from [H,E_jj]=0."""
 
-# Tree-level overlap: H_unit involves no g_bare, so its matrix elements
-# are identically independent of g_bare. We verify this by:
-#   1. Checking that H_unit (as defined) contains no symbolic g_bare.
-#   2. Confirming that the matrix element of H_unit between basis pairs
-#      does not contain g_bare.
-
-# The matrix element computed above evaluates to 1/sqrt(6), with no g_bare.
-# Symbolic test:
-matrix_element_sym = (e_i.T * H_unit * e_i)[0, 0]
-free_symbols = matrix_element_sym.free_symbols
-check("H_unit matrix element contains no g_bare (tree-level g_bare independence)",
-      g_bare not in free_symbols,
-      detail=f"free symbols: {free_symbols}")
+    generic, _ = symbolic_matrix(n)
+    constraints: list[sp.Expr] = []
+    for j in range(n):
+        diagonal_unit = matrix_unit(n, j, j)
+        commutator = generic * diagonal_unit - diagonal_unit * generic
+        constraints.extend(commutator[row, j] for row in range(n) if row != j)
+        constraints.extend(commutator[j, col] for col in range(n) if col != j)
+    return constraints
 
 
-# ----------------------------------------------------------------------------
-section("Part 6: parent row context (no ledger modification)")
-# ----------------------------------------------------------------------------
-LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-ledger = json.loads(LEDGER.read_text())
-parent = ledger['rows'].get('g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19', {})
-print(f"\n  Parent row state on origin/main:")
-print(f"    claim_type: {parent.get('claim_type')}")
-print(f"    transitive_descendants: {parent.get('transitive_descendants')}")
-print(f"    load_bearing_step_class: {parent.get('load_bearing_step_class')}")
-print(f"    deps: {parent.get('deps')}")
+def diagonal_equality_constraints(n: int) -> list[sp.Expr]:
+    """Return the (j,k) entries of [diag(d),E_jk]."""
 
-check("parent row class-A load-bearing step (combinatorial Wick algebra)",
-      parent.get('load_bearing_step_class') == 'A')
-
-
-# ----------------------------------------------------------------------------
-section("Narrow theorem summary")
-# ----------------------------------------------------------------------------
-print("""
-  Narrow Pattern A theorem statement:
-
-  HYPOTHESES:
-    - N_iso, N_c are positive integers.
-    - H_unit is the operator on the (N_iso * N_c)-dim pair-Hilbert space
-      defined by
-          H_unit = (1 / sqrt(N_iso * N_c)) * I_{N_iso * N_c}
-      in the diagonal Wick-contractor basis
-      {|alpha, a> : 1 <= alpha <= N_iso, 1 <= a <= N_c}.
-
-  CONCLUSION:
-    For any basis pair-state |alpha_0, a_0>,
-        <0 | H_unit | tbar_{alpha_0, a_0} t_{alpha_0, a_0}>_tree
-            = 1 / sqrt(N_iso * N_c).
-
-    In particular, this matrix element is identically independent of any
-    gauge-coupling parameter at tree order, because H_unit has no
-    gauge-field content in its definition.
-
-  Audit-lane class:
-    (A) — pure combinatorial Wick algebra. No external observed/fitted/
-    literature input. The framework instance (N_iso, N_c) = (2, 3) gives
-    F = 1/sqrt(6); the algebra closes for any other positive integer
-    pair.
-
-  This narrow theorem drops the parent's YT_WARD_IDENTITY_DERIVATION_THEOREM
-  upstream by stating H_unit as an explicit operator definition rather than
-  deriving its normalization from the free-theory two-point function
-  residue.
-""")
+    diagonal_symbols = sp.symbols(f"d0:{n}")
+    diagonal = sp.diag(*diagonal_symbols)
+    constraints: list[sp.Expr] = []
+    for j in range(n):
+        for k in range(n):
+            if j == k:
+                continue
+            unit = matrix_unit(n, j, k)
+            constraints.append(sp.expand((diagonal * unit - unit * diagonal)[j, k]))
+    return constraints
 
 
-print(f"\n{'='*88}\n  TOTAL: PASS={PASS}, FAIL={FAIL}\n{'='*88}")
-sys.exit(1 if FAIL > 0 else 0)
+def matrix_properties(matrix: sp.Matrix) -> dict[str, object]:
+    n = matrix.rows
+    hermitian = exact_zero(matrix - matrix.H)
+    eigenvalues = list(matrix.eigenvals()) if hermitian else []
+    psd = hermitian and all(value.is_real and value >= 0 for value in eigenvalues)
+    central = all(
+        exact_zero(matrix * matrix_unit(n, j, k) - matrix_unit(n, j, k) * matrix)
+        for j in range(n)
+        for k in range(n)
+    )
+    hs_square = sp.simplify(sp.trace(matrix.H * matrix))
+    return {
+        "hermitian": hermitian,
+        "psd": psd,
+        "central": central,
+        "hs_square": hs_square,
+        "hs_unit": sp.simplify(hs_square - 1) == 0,
+    }
+
+
+def positive_norm_solution(n: int) -> tuple[list[sp.Expr], list[sp.Expr]]:
+    c = sp.symbols("c", real=True)
+    branches = sp.solve(sp.Eq(n * c**2, 1), c)
+    positive = [branch for branch in branches if branch.is_nonnegative]
+    return branches, positive
+
+
+def audit_normal(checks: Checks) -> None:
+    section("Normal reconstruction from matrix-unit commutators")
+    for n in EXACT_DIMENSIONS:
+        nullity, generator = scalar_generator_from_nullspace(n)
+        offdiagonal = isolated_offdiagonal_constraints(n)
+        equalities = diagonal_equality_constraints(n)
+        branches, positive = positive_norm_solution(n)
+        solution = sp.eye(n) * positive[0]
+        props = matrix_properties(solution)
+
+        if n == 1:
+            checks.check(
+                "n=1 has no off-diagonal constraints",
+                len(offdiagonal) == 0 and len(equalities) == 0,
+                f"offdiagonal={len(offdiagonal)}, diagonal_equalities={len(equalities)}",
+            )
+        else:
+            generic, _ = symbolic_matrix(n)
+            expected_offdiagonal = {
+                generic[row, col]
+                for row in range(n)
+                for col in range(n)
+                if row != col
+            }
+            observed_offdiagonal = {sp.expand(abs_sign * expr) for expr in offdiagonal for abs_sign in (1, -1)}
+            checks.check(
+                f"n={n} diagonal matrix units isolate every off-diagonal entry",
+                expected_offdiagonal.issubset(observed_offdiagonal),
+                f"isolated={len(expected_offdiagonal)} entries",
+            )
+            diagonal_symbols = set(sp.symbols(f"d0:{n}"))
+            equality_support = set().union(*(expr.free_symbols for expr in equalities))
+            checks.check(
+                f"n={n} off-diagonal matrix units connect every diagonal coordinate",
+                equality_support == diagonal_symbols and len(equalities) == n * (n - 1),
+                f"equalities={len(equalities)}",
+            )
+
+        checks.check(
+            f"n={n} exact common centralizer is one-dimensional",
+            nullity == 1 and generator == sp.eye(n),
+            f"nullity={nullity}",
+        )
+        checks.check(
+            f"n={n} Hilbert--Schmidt equation exposes both Hermitian signs",
+            len(branches) == 2
+            and any(sp.simplify(branch - 1 / sp.sqrt(n)) == 0 for branch in branches)
+            and any(sp.simplify(branch + 1 / sp.sqrt(n)) == 0 for branch in branches),
+            f"branches={branches}",
+        )
+        checks.check(
+            f"n={n} positivity selects c=1/sqrt(n)",
+            len(positive) == 1 and sp.simplify(positive[0] - 1 / sp.sqrt(n)) == 0,
+            f"positive_branch={positive}",
+        )
+        checks.check(
+            f"n={n} reconstructed matrix satisfies all three hypotheses",
+            props["psd"] and props["central"] and props["hs_unit"],
+            f"hs_square={props['hs_square']}",
+        )
+        overlaps = [sp.simplify(solution[index, index]) for index in range(n)]
+        checks.check(
+            f"n={n} every normalized basis diagonal is derived as 1/sqrt(n)",
+            all(sp.simplify(value - 1 / sp.sqrt(n)) == 0 for value in overlaps),
+            f"overlaps={overlaps}",
+        )
+
+
+def random_unitary(n: int, rng: np.random.Generator) -> np.ndarray:
+    raw = rng.normal(size=(n, n)) + 1j * rng.normal(size=(n, n))
+    q, r = np.linalg.qr(raw)
+    diagonal = np.diag(r)
+    phases = np.where(np.abs(diagonal) > 0.0, diagonal / np.abs(diagonal), 1.0)
+    return q @ np.diag(np.conjugate(phases))
+
+
+def numerical_commutant_reconstruction(n: int, seed: int) -> dict[str, object]:
+    """Reconstruct a common commutant from fresh unitary constraints."""
+
+    rng = np.random.default_rng(seed)
+    unitaries = [random_unitary(n, rng) for _ in range(max(3, n))]
+    identity = np.eye(n, dtype=complex)
+    constraints = np.vstack(
+        [
+            np.kron(identity, unitary) - np.kron(unitary.T, identity)
+            for unitary in unitaries
+        ]
+    )
+    _u, singular_values, vh = np.linalg.svd(constraints, full_matrices=True)
+    rank = int(np.count_nonzero(singular_values > NUMERIC_TOL))
+    nullity = n * n - rank
+    vector = vh[-1].conjugate()
+    recovered = vector.reshape((n, n), order="F")
+    recovered *= n / np.trace(recovered)
+    hs_unit = recovered / math.sqrt(n)
+    commutator_error = max(
+        float(np.linalg.norm(unitary @ recovered - recovered @ unitary))
+        for unitary in unitaries
+    )
+    identity_error = float(np.linalg.norm(recovered - identity))
+    hermitian_error = float(np.linalg.norm(hs_unit - hs_unit.conjugate().T))
+    eigenvalues = np.linalg.eigvalsh((hs_unit + hs_unit.conjugate().T) / 2)
+    hs_square = float(np.trace(hs_unit.conjugate().T @ hs_unit).real)
+    overlaps = np.array([hs_unit[index, index] for index in range(n)])
+    return {
+        "nullity": nullity,
+        "commutator_error": commutator_error,
+        "identity_error": identity_error,
+        "hermitian_error": hermitian_error,
+        "minimum_eigenvalue": float(np.min(eigenvalues)),
+        "hs_square": hs_square,
+        "overlap_error": float(np.max(np.abs(overlaps - 1 / math.sqrt(n)))),
+    }
+
+
+def audit_independent(checks: Checks) -> None:
+    section("Independent random-unitary common-commutant reconstruction")
+    for n in EXACT_DIMENSIONS:
+        result = numerical_commutant_reconstruction(n, seed=8100 + 37 * n)
+        checks.check(
+            f"n={n} fresh unitary-conjugation constraints have one-dimensional commutant",
+            result["nullity"] == 1 and result["commutator_error"] < NUMERIC_TOL,
+            f"nullity={result['nullity']}, commutator_error={result['commutator_error']:.3e}",
+        )
+        checks.check(
+            f"n={n} independent null vector reconstructs the identity generator",
+            result["identity_error"] < NUMERIC_TOL,
+            f"identity_error={result['identity_error']:.3e}",
+        )
+        checks.check(
+            f"n={n} independent positive Hilbert--Schmidt normalization closes",
+            result["hermitian_error"] < NUMERIC_TOL
+            and result["minimum_eigenvalue"] > 0.0
+            and abs(result["hs_square"] - 1.0) < NUMERIC_TOL,
+            (
+                f"hermitian_error={result['hermitian_error']:.3e}, "
+                f"min_eigenvalue={result['minimum_eigenvalue']:.12g}, "
+                f"hs_square={result['hs_square']:.12g}"
+            ),
+        )
+        checks.check(
+            f"n={n} independent basis overlaps equal 1/sqrt(n)",
+            result["overlap_error"] < NUMERIC_TOL,
+            f"overlap_error={result['overlap_error']:.3e}",
+        )
+
+
+def audit_hostile(checks: Checks) -> None:
+    section("Hostile recomputation of mutated hypotheses and conclusions")
+    n = 6
+    identity = sp.eye(n)
+    target = identity / sp.sqrt(n)
+
+    wrong_dimension = identity / n
+    wrong_props = matrix_properties(wrong_dimension)
+    checks.check(
+        "wrong 1/n dimension factor is rejected by Hilbert--Schmidt normalization",
+        wrong_props["central"] and wrong_props["psd"] and not wrong_props["hs_unit"],
+        f"Tr(H^dagger H)={wrong_props['hs_square']}",
+    )
+
+    trace_normalized = identity / n
+    trace_props = matrix_properties(trace_normalized)
+    checks.check(
+        "trace-norm substitution is killed by recomputing the Hilbert--Schmidt square",
+        sp.simplify(sp.trace(trace_normalized) - 1) == 0
+        and trace_props["hs_square"] == sp.Rational(1, n),
+        f"trace_norm_for_PSD={sp.trace(trace_normalized)}, hs_square={trace_props['hs_square']}",
+    )
+
+    negative_branch = -target
+    negative_props = matrix_properties(negative_branch)
+    checks.check(
+        "negative branch passes the remaining assumptions but is killed by positivity",
+        negative_props["hermitian"]
+        and negative_props["central"]
+        and negative_props["hs_unit"]
+        and not negative_props["psd"],
+        f"minimum_eigenvalue={min(negative_branch.eigenvals())}",
+    )
+
+    first_projector = sp.zeros(n)
+    first_projector[0, 0] = 1
+    first_props = matrix_properties(first_projector)
+    checks.check(
+        "noncentral normalized positive rank-one projector is rejected",
+        first_props["psd"] and first_props["hs_unit"] and not first_props["central"],
+        f"hs_square={first_props['hs_square']}",
+    )
+
+    plus = sp.zeros(n, 1)
+    plus[0] = 1 / sp.sqrt(2)
+    plus[1] = 1 / sp.sqrt(2)
+    offdiagonal_projector = plus * plus.H
+    offdiagonal_props = matrix_properties(offdiagonal_projector)
+    checks.check(
+        "off-diagonal contamination is rejected even when positivity and HS-unit norm survive",
+        offdiagonal_projector[0, 1] != 0
+        and offdiagonal_props["psd"]
+        and offdiagonal_props["hs_unit"]
+        and not offdiagonal_props["central"],
+        f"H_01={offdiagonal_projector[0, 1]}",
+    )
+
+    second_projector = sp.zeros(n)
+    second_projector[1, 1] = 1
+    second_props = matrix_properties(second_projector)
+    checks.check(
+        "omitting centrality leaves multiple distinct normalized PSD matrices",
+        first_projector != second_projector
+        and first_props["psd"]
+        and second_props["psd"]
+        and first_props["hs_unit"]
+        and second_props["hs_unit"],
+        "two orthogonal rank-one projectors are explicit members of an infinite family",
+    )
+
+    gauge_parameter = sp.symbols("g", real=True)
+    unfixed_scale = sp.Function("a")(gauge_parameter)
+    unbridged_physical_candidate = unfixed_scale * identity / sp.sqrt(n)
+    unbridged_overlap = sp.simplify(unbridged_physical_candidate[0, 0])
+    unbridged_hs_square = sp.simplify(
+        sp.trace(unbridged_physical_candidate.H * unbridged_physical_candidate)
+    )
+    checks.check(
+        "illicit gauge-parameter independence is rejected without physical HS-unit bridge data",
+        (
+            gauge_parameter in unbridged_overlap.free_symbols
+            or bool(unbridged_overlap.atoms(sp.Function))
+        )
+        and sp.simplify(unbridged_hs_square - 1) != 0,
+        f"overlap={unbridged_overlap}, hs_square={unbridged_hs_square}",
+    )
+
+    factor_pairs = [(left, n // left) for left in range(1, n + 1) if n % left == 0]
+    checks.check(
+        "dimension n=6 cannot select a carrier interpretation or factor labeling",
+        len(factor_pairs) > 1 and len(set(factor_pairs)) == len(factor_pairs),
+        f"ordered_factorizations={factor_pairs}",
+    )
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument(
+        "--mode",
+        choices=("normal", "independent", "hostile"),
+        default="normal",
+    )
+    args = parser.parse_args()
+    checks = Checks()
+    modes = {
+        "normal": audit_normal,
+        "independent": audit_independent,
+        "hostile": audit_hostile,
+    }
+    modes[args.mode](checks)
+    print(f"\nTOTAL: PASS={checks.passed}, FAIL={checks.failed}")
+    return 1 if checks.failed else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

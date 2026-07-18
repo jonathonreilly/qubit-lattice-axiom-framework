@@ -277,4 +277,6 @@ verifier.
 - `docs/YT_CLASS_5_NON_QL_YUKAWA_VERTEX_NOTE_2026-04-18.md` - separate
   trilinear Clebsch-Gordan discussion, not certified by this note.
 - `docs/UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md` - sibling
-  narrow arithmetic theorem with the same finite-dimensional overlap core.
+  abstract matrix theorem deriving `I_n/sqrt(n)` from positivity,
+  full-matrix centrality, and Hilbert--Schmidt unit norm; it supplies no
+  physical `H_unit` or matching bridge for this note.

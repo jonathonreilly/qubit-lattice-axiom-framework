@@ -1,129 +1,112 @@
-# Rep-B Bare-Scale Independence Theorem for the Two-Ward `g_bare` Route
+---
+claim_id: g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19
+claim_type_author_hint: bounded_theorem
+audit_authority: independent audit lane only
+---
 
-**Date:** 2026-04-19
+# Conditional Rep-B Matrix Corollary for the Two-Ward Route
+
+**Date:** 2026-04-19 (source-boundary repair 2026-07-18)
 **Type:** bounded_theorem
+**Claim scope:** a conditional finite-matrix corollary. If a
+parameter-indexed physical Rep-B operator is separately represented on a
+fixed normalized six-dimensional basis by matrices that are positive
+semidefinite, central in the full matrix algebra, and Hilbert--Schmidt unit,
+and if the physical form factor is separately identified with a diagonal
+matrix expectation, then the form factor is `1/sqrt(6)` at every parameter
+value. The current dependency set does not derive either physical bridge.
 **Status authority:** independent audit lane only.
-**Role:** bounded Rep-B independence step for the two-Ward `g_bare` route,
-scoped to the retained narrow overlap authority rather than the terminal
-top-Yukawa Ward-identification row.
 
----
+## Abstract authority consumed
 
-## Theorem
+The
+[central-positive Hilbert--Schmidt unit theorem](UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md)
+proves the following statement for an abstract matrix `H in End(C^n)`:
 
-Fix the retained `Cl(3) × Z^3` Wilson-plaquette + staggered-Dirac bare action
-on the `Q_L = (2,3)` block, but do **not** preselect the canonical value
-`g_bare = 1`.
-
-Define the unique unit-normalized scalar-singlet composite operator on `Q_L`
-by D17:
-
-```
-H_unit(x) = (1 / sqrt(N_c N_iso)) sum_{alpha,a} psibar_{alpha,a}(x) psi_{alpha,a}(x)
-          = (1 / sqrt(6)) (psibar psi)_(1,1)(x)
+```text
+H >= 0,
+[H,E_jk] = 0 for every matrix unit E_jk,
+Tr(H^dagger H) = 1
+    implies
+H = I_n / sqrt(n).
 ```
 
-Then the tree-level bare top-channel form factor
+That theorem does not mention a physical `H_unit`, a gauge parameter, a
+carrier assignment, a Wick contraction, or a Ward identity.
 
-```
-F_Htt^(0)(g_bare) := <0 | H_unit(0) | tbar_(top,up) t_(top,up)>_tree
-```
+## Local conditional bridge
 
-is exactly
+Let `G` be any parameter domain. The following are ordinary local hypotheses
+of this corollary; they are not framework axioms, admissions, premise-registry
+entries, or established physical inputs.
 
-```
-F_Htt^(0)(g_bare) = 1 / sqrt(6)
-```
+**H-MATRIX.** For every `g in G`, a separate physical construction supplies
+a matrix representative `K(g) in End(C^6)` such that
 
-for **all** values of `g_bare`.
-
-Equivalently, Rep B's bare Yukawa datum
-
-```
-y_t_bare^(0)(g_bare) = 1 / sqrt(6)
+```text
+K(g) >= 0,
+[K(g),E_jk] = 0 for all 1 <= j,k <= 6,
+Tr(K(g)^dagger K(g)) = 1.
 ```
 
-is genuinely independent of the preselected canonical surface.
+Centrality here means commutation with the full algebra `End(C^6)`, not only
+with a chosen color, isospin, gauge, or Ward-symmetry subalgebra.
 
----
+**FORM-FACTOR IDENTIFICATION.** A separate construction identifies the
+physical Rep-B form factor with a normalized diagonal expectation of that
+same representative:
 
-## Proof
-
-### 1. The narrow `H_unit` overlap authority is independent of `g_bare`
-
-The retained narrow authority
-[UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md](UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md)
-states the unit-normalized scalar-singlet operator as
-
-```
-H_unit = (1 / sqrt(N_c N_iso)) sum_{alpha,a} psibar_{alpha,a} psi_{alpha,a}
+```text
+F_RepB(g) = <e_j, K(g) e_j>
 ```
 
-and proves that its tree-level matrix element with any single basis pair is
-`1 / sqrt(N_c N_iso)`, with no gauge-coupling parameter in the calculation.
-This note consumes that narrow overlap identity only. It does not consume the
-broader `YT_WARD_IDENTITY_DERIVATION_THEOREM.md` identification of the same
-matrix element with the Standard Model top-Yukawa readout.
+for a specified normalized basis vector `e_j`.
 
-### 2. The top-channel overlap is pure group theory
+## Conditional conclusion
 
-The `(1,1)` singlet on `Q_L ⊗ Q_L*` is the uniform unit vector over the six
-basis components. Therefore the overlap with any basis top-pair component is
+Under H-MATRIX, the abstract theorem applies pointwise in `g` and gives
 
-```
-<top-pair | S> = 1 / sqrt(N_c N_iso) = 1 / sqrt(6),
+```text
+K(g) = I_6 / sqrt(6).
 ```
 
-again independent of `g_bare`.
+Under FORM-FACTOR IDENTIFICATION as well,
 
-### 3. The tree-level matrix element has no gauge-coupling insertion
-
-At tree order, the operator `H_unit` contains no gauge field and no explicit
-coupling constant. The external top-pair state is evaluated in canonical
-fermion normalization. So the only tree-order contribution to
-
-```
-<0 | H_unit | tbar t>_tree
+```text
+F_RepB(g) = 1 / sqrt(6)  for every g in G.
 ```
 
-is the local bilinear Wick contraction
+Thus parameter independence follows only after both local bridges have been
+supplied for the whole parameter domain. Absence of a parameter from the
+abstract theorem is not itself a physical independence argument.
 
-```
-<0 | psibar_(top,up) psi_(top,up) | tbar_(top,up) t_(top,up)>_tree = 1.
-```
+## Open physical boundary
 
-No gluon propagator, no gauge vertex, and no factor of `g_bare` can appear at
-this order.
+This note does not derive H-MATRIX or FORM-FACTOR IDENTIFICATION for the
+two-Ward construction. In particular, it does not prove that:
 
-### 4. Combine the three ingredients
+- the physical composite called `H_unit` has a positive matrix
+  representative;
+- it commutes with every endomorphism rather than a selected symmetry
+  algebra;
+- its physical residue convention is the Hilbert--Schmidt condition
+  `Tr(K^dagger K)=1`;
+- the labels in a factorization `6 = 2 * 3` have any physical assignment;
+- a Wick matrix element, free-field residue, Ward identity, tree-level gauge
+  sector, `g_bare` selector, top-Yukawa datum, or observed quantity is the
+  abstract diagonal expectation.
 
-Multiplying the operator normalization from Step 1 by the group-theory overlap
-from Step 2 and the unit Wick contraction from Step 3 gives
+Without H-MATRIX, a central family may have the form `K(g)=a(g)I_6` with an
+unfixed scale, so its diagonal expectation can depend on `g`. Without the
+form-factor identification, even a solved abstract matrix has no physical
+readout attached to it.
 
-```
-F_Htt^(0)(g_bare)
-  = (1 / sqrt(6)) * 1
-  = 1 / sqrt(6),
-```
+The same-projected 1PI identification and any subsequent `g_bare` pinning
+remain separate open steps. This conditional corollary supplies neither.
 
-with no `g_bare` dependence.
+## Dependencies
 
-This proves the theorem.
+- [UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md](UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md)
+  for the abstract central-positive Hilbert--Schmidt uniqueness theorem only.
 
----
-
-## Corollary
-
-The candidate Rep-B datum used in the two-Ward route,
-
-```
-y_t_bare^(0) = 1 / sqrt(6),
-```
-
-is not a statement tied to the preselected canonical surface. It is a
-tree-level bare-scale identity on the retained `Q_L` block itself.
-
-The remaining Path-2 step is supplied separately by
-`G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`,
-which upgrades the same-`Gamma^(4)` coefficient identity itself to an
-off-surface theorem and then solves `g_bare = 1`.
+No physical bridge authority is cited because none is established here.

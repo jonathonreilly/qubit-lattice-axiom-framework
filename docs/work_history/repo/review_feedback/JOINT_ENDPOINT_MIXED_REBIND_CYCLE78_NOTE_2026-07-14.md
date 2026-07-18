@@ -1,8 +1,8 @@
 # Joint-Endpoint Mixed Rebind — Cycle 78
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** exact mixed-transient candidate-law closure  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** exact mixed-transient candidate-law closure
 **Constitutional effect:** none
 
 Companion runner:

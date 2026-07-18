@@ -1,7 +1,7 @@
 # Mixed-Transient Completion Barrier — Cycle 71
 
-**Date:** 2026-07-14  
-**Authority:** none  
+**Date:** 2026-07-14
+**Authority:** none
 **Status:** constructive mixed-composition result; endpoint and renewal gates remain
 
 Companion runner:
@@ -37,4 +37,3 @@ builder, prove a reusable transducer, or replace the 91 symbolic roles/sites
 with a finite seed-grown operational decoder. Literal `+3` reuse is already
 rejected by Cycle 66; typed, recaged, stationary, lane-alternating, and `+6`
 renewal remain open. No axiom, primitive, or law-selection claim follows.
-

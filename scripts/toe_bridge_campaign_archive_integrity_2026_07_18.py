@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import ast
 import hashlib
+import importlib.util
 import re
 from pathlib import Path
 
@@ -18,7 +19,7 @@ EXPECTED_PATH_DIGEST = (
     "981c928ffdc00f4a333b8c6b61f86c54b385c67af4f1efb426df12287e411584"
 )
 EXPECTED_CONTENT_DIGEST = (
-    "303f193162f206a286e8ea2d69b14e83c9c9ae02e1295784fb34417d762a6d4f"
+    "6b293b65e11351fc9895c268f4d0226f4fbde3a9e1e8beb8f93fcc2d86060d9b"
 )
 UNDATED_HISTORY = (
     "REST_INERTIAL_LAPSE_SOURCE_TRIANGLE_CYCLE204_NO_GO_LEDGER.md",
@@ -58,6 +59,7 @@ FORBIDDEN_PACKAGE_PATHS = (
 )
 RUNNER_TOKEN = re.compile(r"scripts/([A-Za-z0-9_./-]+\.py)")
 MARKDOWN_PY_LINK = re.compile(r"\]\(([^)]+\.py)(?:#[^)]+)?\)")
+BARE_PY_TOKEN = re.compile(r"`([A-Za-z0-9_.-]+\.py)`")
 
 PASS = 0
 FAIL = 0
@@ -134,8 +136,13 @@ def digests(paths: list[Path]) -> tuple[str, str]:
     return path_hash.hexdigest(), content_hash.hexdigest()
 
 
+def bare_runner_reference_missing(target: str, python_names: set[str]) -> bool:
+    return target not in python_names
+
+
 def runner_reference_failures(notes: list[Path]) -> list[tuple[str, str]]:
     failures: set[tuple[str, str]] = set()
+    python_names = {path.name for path in ROOT.rglob("*.py")}
     for note in notes:
         body = note.read_text(encoding="utf-8")
         for target in RUNNER_TOKEN.findall(body):
@@ -146,7 +153,28 @@ def runner_reference_failures(notes: list[Path]) -> list[tuple[str, str]]:
             path = (note.parent / target).resolve()
             if not path.exists():
                 failures.add((str(note.relative_to(ROOT)), target))
+        for target in BARE_PY_TOKEN.findall(body):
+            if bare_runner_reference_missing(target, python_names):
+                failures.add((str(note.relative_to(ROOT)), target))
     return sorted(failures)
+
+
+def import_resolution_failure(
+    name: str,
+    modules: dict[str, Path],
+    archive_scripts: set[Path],
+) -> str | None:
+    """Return a failure reason when an import is neither archived nor external."""
+
+    dependency = modules.get(name)
+    if dependency is not None:
+        allowed_helpers = {ROOT / "scripts" / item for item in BASE_HELPERS}
+        if dependency not in archive_scripts and dependency not in allowed_helpers:
+            return "local dependency lies outside archive closure"
+        return None
+    if importlib.util.find_spec(name) is None:
+        return "no local, standard-library, or installed module resolves"
+    return None
 
 
 def main() -> int:
@@ -168,8 +196,9 @@ def main() -> int:
     )
 
     parse_failures = list(early_parse_failures)
-    local_import_failures: list[tuple[str, str]] = []
+    import_resolution_failures: list[tuple[str, str, str]] = []
     modules = {path.stem: path for path in (ROOT / "scripts").glob("*.py")}
+    archive_script_set = set(scripts)
     for path in scripts:
         try:
             tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
@@ -177,14 +206,24 @@ def main() -> int:
             parse_failures.append((path, str(error)))
             continue
         for name in local_import_names(tree):
-            dependency = modules.get(name)
-            if dependency is not None and not dependency.exists():
-                local_import_failures.append((str(path.relative_to(ROOT)), name))
+            failure = import_resolution_failure(name, modules, archive_script_set)
+            if failure is not None:
+                import_resolution_failures.append(
+                    (str(path.relative_to(ROOT)), name, failure)
+                )
     check("all archive scripts parse", not parse_failures, parse_failures)
     check(
-        "all local Python imports resolve",
-        not local_import_failures,
-        local_import_failures,
+        "all Python imports resolve inside the archive or external environment",
+        not import_resolution_failures,
+        import_resolution_failures,
+    )
+    missing_import = "toe_archive_deliberately_missing_dependency_20260718"
+    check(
+        "import resolver rejects a deleted or misspelled dependency",
+        import_resolution_failure(
+            missing_import, modules, archive_script_set
+        )
+        is not None,
     )
 
     reference_failures = runner_reference_failures(history)
@@ -192,6 +231,13 @@ def main() -> int:
         "every historical runner reference resolves",
         not reference_failures,
         reference_failures,
+    )
+    missing_runner = "toe_archive_deliberately_missing_runner_20260718.py"
+    python_names = {path.name for path in ROOT.rglob("*.py")}
+    check(
+        "bare runner-reference resolver rejects a missing target",
+        bool(BARE_PY_TOKEN.findall(f"`{missing_runner}`"))
+        and bare_runner_reference_missing(missing_runner, python_names),
     )
 
     path_digest, content_digest = digests(history + scripts)

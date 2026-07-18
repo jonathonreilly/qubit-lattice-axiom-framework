@@ -119,22 +119,34 @@ or constitutional no-go is asserted.
 
 ### N1 -- alternative routes
 
-| route | marker | result |
-|---|---|---|
-| direct-sum extension | `ATTEMPTED` | preserves local copies/products and adds a central sector; generatedness fails |
-| spectator tensor factor | `ATTEMPTED` | preserves local copies/products and adds a noncentral factor; generatedness fails |
-| operational quotient | `ATTEMPTED` as exact finite quotient pattern; full rule route live | removes sectors only if the record repertoire is separating/complete |
-| irreducible representation | `ATTEMPTED` in existing commutant runners | scalar commutant closes a carrier realization but is stronger than abstract generatedness |
-| algebra-valued QCA/quasilocal rule | `ATTEMPTED` as a family and live constructively | can place the law directly on the generated algebra; composition is then law-domain content |
-| record-graph-only rule | `ATTEMPTED` | duplicate algebras carry the same graph, so this rule type cannot decide the physical algebra |
+The scoped negative is only that faithful commuting local copies, without
+generatedness or an equivalent extra condition, do not force the declared
+global algebra to equal their generated subalgebra.
+
+| attempted route | marker | result against the scoped negative | evidence |
+|---|---|---|---|
+| use simplicity of the local tensor-product algebra | `ATTEMPTED` | proves the product map is injective, but gives no surjectivity without generatedness | proof above; [paired runner](../scripts/generated_finite_composition_minimality_2026_07_13.py) |
+| add a silent direct-sum sector | `ATTEMPTED` | preserves every local product while enlarging the center and total dimension | exact counterexample above; paired runner |
+| add a spectator matrix factor | `ATTEMPTED` | preserves every local product while adding a noncentral factor | exact counterexample above; paired runner |
+| require an irreducible carrier/scalar commutant | `ATTEMPTED` | closes a stronger carrier realization by adding an extra premise; it does not follow from local copies alone | carrier boundary above |
+| quotient by operational indistinguishability | `ATTEMPTED` | can remove silent sectors only after a separating/complete record repertoire is separately proved | operational-extensionality route above |
+| define an algebra-valued local law on the generated domain | `ATTEMPTED` | closes composition as law-domain content, again by supplying the missing generated-domain condition | canonical-law route above |
+
+The [minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md) supply the
+one-site algebra but no finite composition clause. The proof and paired runner
+are the new bounded evidence submitted for independent audit; no prior audit
+status is claimed for them.
 
 ### N2 -- wall independence
 
-The composition residual has two typed subclauses: faithful commuting local
-embeddings and no-extra-global generation. The first does not imply the
-second, as both extension witnesses show. Generatedness plus the existing
-one-site `M_2(C)` domains implies the ordinary abstract composite, so no third
-tensor-product or local-tomography atom is counted at this algebraic level.
+The composition residual has two typed subclauses.
+
+| pair | first closes second? | second closes first? | independent? |
+|---|---:|---:|---:|
+| faithful commuting local embeddings / no-extra-global generation | no -- both extension witnesses preserve the embeddings | no -- generatedness alone does not identify faithful commuting local copies | yes |
+
+Together they imply the ordinary abstract composite, so no third tensor-
+product or local-tomography atom is counted at this algebraic level.
 
 ### N3 -- hidden-wall scan
 
@@ -144,9 +156,12 @@ all algebraic projectors/effects and operational tomography are not inferred.
 
 ### N4 -- residual matching
 
-The duplicate-sector and two-site carrier notes address exactly the
-no-extra-global-generation residual. Probability, formation, statistics, and
-readout notes are not used as composition witnesses.
+| cited source | residual there | residual used here | match? |
+|---|---|---|---:|
+| [minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md), Qubit and open-gates sections | one-site `M_2(C)` is supplied while finite composition is not | composition cannot be attributed to the one-site axiom | yes |
+| [paired runner](../scripts/generated_finite_composition_minimality_2026_07_13.py), blocks B-C | local Pauli products span the ordinary block; direct-sum and spectator observables lie outside that span | exact no-extra-global-generation residual | yes |
+| [extensional-rule note](EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md), same-record-graph construction | one record successor graph fits ordinary and duplicate-sector carriers | record-graph data alone do not select the global algebra | yes |
+| probability, formation, statistics, and readout notes | different physical bridges | finite algebra generation | no; not used as witnesses |
 
 ### N5 -- rhetoric and resolution audit
 
@@ -172,8 +187,12 @@ not constitutional necessity.
 
 ### N8 -- cross-cycle echo
 
-Earlier tensor-product constructions repeatedly supplied the ordinary carrier
-and then overread it as forced. The duplicate-sector audit corrected that
-pattern. This theorem keeps the positive construction and isolates the one
-word—`generated`—that the prior constructions had supplied rather than
-derived.
+| prior surface | similar wall | later mechanism/status | treatment here |
+|---|---|---|---|
+| [read-twice finite fan-out](READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md) | finite fan-out begins on a supplied tensor carrier | generated composition is now isolated as a separate bounded dependency | the carrier is not treated as axiom content |
+| [extensional-rule note](EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md) | one record graph is compatible with a duplicate central sector | exact finite counterexample remains live | used only for the matching composition residual |
+| earlier tensor-product constructions in work history | ordinary carrier was supplied and then overread as forced | archival classification keeps those surfaces historical | no historical status is inherited |
+
+The reusable retirement mechanisms are a generated law domain, a proved
+operational quotient, or an irreducibility/duality theorem. All remain live;
+none is misclassified as requiring a new axiom.

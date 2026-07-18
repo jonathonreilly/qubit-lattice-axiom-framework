@@ -1,8 +1,8 @@
 # Phase-Port-Preserving Reservation Comb — Cycle 60 Scratch
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** exact bounded construction; conditional on the completed Cycle-57 builder  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** exact bounded construction; conditional on the completed Cycle-57 builder
 **Constitutional effect:** none
 
 ## Result

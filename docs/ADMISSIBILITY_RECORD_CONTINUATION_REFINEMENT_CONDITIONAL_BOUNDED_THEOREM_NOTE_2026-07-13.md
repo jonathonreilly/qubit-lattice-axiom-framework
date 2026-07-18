@@ -7,7 +7,7 @@ upstream_dependencies:
 runner: scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py
 ---
 
-# Admissibility And Record-Continuation Refinement: Conditional Bounded Theorem Attempt
+# Admissibility and Record-Continuation Refinement: Conditional Bounded Theorem
 
 **Date:** 2026-07-13
 **Type:** bounded_theorem
@@ -107,7 +107,7 @@ The working sentence is therefore a **composite condition**, not the minimum
 atom proved necessary by this attempt. Its plural "possibilities" is
 interpreted here as menu-complete support. The nonreconnection theorem itself
 needs only two distinct supported successors. The exact sentence remains
-held verbatim here for the theorem attempt; this decomposition prevents its
+held verbatim here for the theorem candidate; this decomposition prevents its
 stronger support content from being hidden under the word "separate."
 
 ## Landed Premise Surface
@@ -167,7 +167,7 @@ The theorem uses this explicit representation condition:
 > individuated by its site and locked content. Every later history state
 > preserves that same site/content pair.
 
-This is a named condition of the theorem attempt. Record uniqueness and
+This is a named condition of the theorem candidate. Record uniqueness and
 permanence motivate it, but the axioms do not independently supply a successor
 relation or forbid a permanent record from migrating.
 
@@ -450,10 +450,10 @@ axiom sentences alone do not force that outcome.
 
 ## Effect On The TOE Lanes
 
-| lane | what this theorem attempt supplies | what remains open |
+| lane | what this bounded theorem candidate supplies | what remains open |
 |---|---|---|
 | fixed reality | order-theoretic incompatibility of already-supplied site-tagged immutable successors | successor semantics/support, physical preservation, selector mechanism |
-| probability | a conditional set and fixed-schedule finite partition of supported chains, not yet a sample space with a measure | general event algebra, weights, FRAME-EXT, PREP-FRAME, denominator, selection mechanism |
+| probability | a conditional set and fixed-schedule finite partition of supported chains, not yet a sample space with a measure | general event algebra, weights, frame extension, prepared-state identification, denominator, selection mechanism |
 | time | record-inclusion order inside the supplied extension model | physical successor dynamics, dependency relation, trigger, rate, duration |
 | arrow | fixed-schedule monotonicity inside that representation, not a thermodynamic arrow | site identity, general physical event order, low-entropy boundary, entropy functional, thermodynamic law |
 | causality | a set-theoretic local conflict certificate and order-independent union of fixed compatible appends | physical formation commutation, dependency support, finite causal activation, continuum cone |
@@ -472,7 +472,7 @@ physical-superselection wall.
 
 ## Axiom Need At This Stage
 
-No axiom edit is justified by this theorem attempt.
+No axiom edit is justified by this bounded theorem candidate.
 
 The exact target remains verbatim as the working route-two condition,
 but this attempt does **not** establish that it is minimal or ready for axiom
@@ -501,7 +501,7 @@ even if that bridge closes.
 
 ## No-Go Discipline Gate
 
-**Status: current-cycle bounded support for the scoped negative below.** The broader claim that the
+**Status: PASS for the scoped source-surface and typed-nonuniqueness boundary below.** The broader claim that the
 framework's unprinted physical rule cannot close route two is not made; it is a
 `partial-narrowing` with a named live steelman.
 
@@ -520,16 +520,18 @@ text is required.
 | route and attempted attack | marker | outcome against the scoped negative | evidence and authority status |
 |---|---|---|---|
 | recover a successor law by reading the foundation and approved-premise registry as executable dynamics | ATTEMPTED | fails at the source-text level: the memo expressly separates Admissibility from dynamics and the approved primitives add no successor or operation rule | `MINIMAL_AXIOMS_2026-06-29.md#relation-to-dynamics-and-kinetic-branch-selection`, approved foundation/meta; registry check A1-A18 |
-| read Record permanence as site-tagged immutable extension | ATTEMPTED | succeeds conditionally for weak syntactic nonreconnection, so the note narrows rather than rejects route two; site identity remains explicit representation data | Theorem 1 and C1-C10, current-cycle unaudited evidence; `RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md#inputs-and-boundaries`, `audited_conditional` |
-| hold one local rule and one formation domain fixed while varying only successor support | ATTEMPTED | gives local typed nonuniqueness: branch-complete and singleton-support maps survive the same 729-pattern/24-rotation controls | B1-B15, current-cycle unaudited evidence; this is not advertised as two complete foundation models |
-| use the unrestricted finite quantum operation algebra as the physical sector supplier | ATTEMPTED | fails on the separately supplied finite tensor-product comparator because the full matrix algebra has scalar center and later coherent reversal remains available | E1, E12-E13, current-cycle unaudited exact algebra |
-| impose a block-preserving algebra or conditional expectation after formation | ATTEMPTED | succeeds conditionally, but the operation class and its activation are supplied rather than generated by Admissibility | E2-E11, current-cycle unaudited exact algebra; three-route R2F, source-side context only |
-| use disconnected local-constraint components or bounded-local code protection | ATTEMPTED | succeeds only relative to a supplied move/support class; a physical move class and global reconnection control remain open | three-route R2B-R2C, source-side context only, runner `71/0` |
-| enter an infinite-volume tail/topological sector | ATTEMPTED | remains a live positive route; no bounded finite-time entry theorem is supplied by this probe | infinite-volume boundary above; external comparators are context only, not framework authority |
+| read Record permanence as site-tagged immutable extension | ATTEMPTED | succeeds conditionally for weak syntactic nonreconnection, so the note narrows rather than rejects route two; site identity remains explicit representation data | Theorem 1 and C1-C10, paired unaudited runner evidence; `RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md#inputs-and-boundaries`, with current status left pipeline-derived |
+| hold one local rule and one formation domain fixed while varying only successor support | ATTEMPTED | gives local typed nonuniqueness: branch-complete and singleton-support maps survive the same 729-pattern/24-rotation controls | B1-B15, paired unaudited runner evidence; this is not advertised as two complete foundation models |
+| use the unrestricted finite quantum operation algebra as the physical sector supplier | ATTEMPTED | fails on the separately supplied finite tensor-product comparator because the full matrix algebra has scalar center and later coherent reversal remains available | E1, E12-E13, paired unaudited runner evidence |
+| impose a block-preserving algebra or conditional expectation after formation | ATTEMPTED | succeeds conditionally, but the operation class and its activation are supplied rather than generated by Admissibility | E2-E11, paired unaudited runner evidence; three-route R2F, historical context only |
+| treat one supplied conditional expectation as permanent physical superselection | ATTEMPTED | a later sector-changing unitary reopens the block, so one application is not an all-future operation restriction | E4-E6 and E12, paired unaudited runner evidence |
 | identify order-theoretic record classes with decoherent histories | ATTEMPTED | fails at the typed level because no state, class operators, or decoherence functional is present | no-decoherence boundary above; external histories papers are context only |
 
 The five-route threshold is exceeded. Rows backed only by this cycle or an
 unaudited source are labeled that way; none is promoted to retained authority.
+Infinite-volume tail sectors and constrained local-code dynamics remain live
+steelman routes against any broader no-go and are therefore excluded from the
+scoped-negative route table rather than mislabeled as ruled out.
 
 ### N2 -- wall independence
 
@@ -602,19 +604,19 @@ sector is imported into Theorems 1-3.
 | cited witness, exact location, status | witness residual | residual used here | match? |
 |---|---|---|---:|
 | `MINIMAL_AXIOMS_2026-06-29.md#L105`, approved foundation/meta | availability is expressly separated from transition, formation, and persistence dynamics | checked text supplies neither successor realization/support nor physical preservation | yes |
-| `RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md#L76`, `audited_conditional` | site-tagged monotone identity is explicit representation data; migration is untested | site-tagged identity is a condition here | yes |
+| `RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md#L76`, status read from the pipeline rather than asserted here | site-tagged monotone identity is explicit representation data; migration is untested | site-tagged identity is a condition here | yes |
 | `RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md#L125`, unaudited | the concrete local rule is a declared toy because physical rule content is unsupplied | no toy table is identified with the physical rule | yes, context only |
 | `TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md#L15`, unaudited | tick-to-Admissibility realization is not derived | a static menu is not treated as a physical successor process | yes, context only |
 | `PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BRIDGE_AND_WORD_DISPERSIVENESS_NARROW_THEOREM_NOTE_2026-07-10.md#L37`, unaudited | physical rule-to-protocol identification is not derived | no protocol is used as the successor law | yes, context only |
 | `BOOTSTRAP_CONTINUATION_AVAILABILITY_NONEMPTY_FREE_ORBIT_REDUCTION_PROPAGATION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-07-04.md#L7`, unaudited | first-menu nonemptiness and conditional flip-closure; toy rules do not determine the fixed rule | occurrence/nonemptiness does not supply menu-complete support or operation preservation | yes for the boundary; not proof of this negative |
 | `RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md#L52`, unaudited | occurrence does not supply a total formation rule, weight, or rate | only the formation-rule overlap is relevant | partial; not counted as independent support |
-| `READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md#L86`, source-side/untracked | two-carrier robustness and probability-import decomposition | physical all-future operation preservation | no exact match; context only and dropped as support |
+| `READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md#L86`, current unaudited source | two-carrier robustness and probability-import decomposition | physical all-future operation preservation | no exact match; context only and dropped as support |
 | `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md#L186`, unaudited | record order supplies neither rate nor axis label | successor support/preservation | no; used only to prevent a time overclaim |
-| `work_history/repo/review_feedback/RECORD_FORMATION_THREE_ROUTE_ASSUMPTIONS_EXERCISE_AND_AXIOM_TARGET_NOTE_2026-07-13.md#L169`, source-side/untracked | route two needs a continuation relation, allowed-operation algebra, and activation | the same support/preservation pair | yes, context only |
-| [paired runner B/C/E/F](../scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py), current-cycle unaudited | local same-domain support nonuniqueness, syntactic separation, finite algebra, scoped Bell control | exactly the bounded computations claimed here | yes |
+| `work_history/repo/review_feedback/RECORD_FORMATION_THREE_ROUTE_ASSUMPTIONS_EXERCISE_AND_AXIOM_TARGET_NOTE_2026-07-13.md#L169`, historical source | route two needs a continuation relation, allowed-operation algebra, and activation | the same support/preservation pair | yes, context only |
+| [paired runner B/C/E/F](../scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py), current unaudited source evidence | local same-domain support nonuniqueness, syntactic separation, finite algebra, scoped Bell control | exactly the bounded computations claimed here | yes |
 
 After dropping the two non-matches and the partial rate witness, the scoped
-claim still has the approved source-text boundary plus its current-cycle exact
+claim still has the approved source-text boundary plus its paired-runner exact
 typed witness. The unaudited adjacent notes are corroborating context, never
 promoted authority.
 
@@ -656,13 +658,13 @@ They remain approved premises, not walls.
 
 | candidate retirement path | current status | exact contribution if it lands |
 |---|---|---|
-| interpret Record through the `RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md#L76` site-tagged monotone-history condition | `audited_conditional`, not axiom text | retires weak syntactic preservation/site identity for consumers that state the representation; does not create successor support or physical superselection |
+| interpret Record through the `RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md#L76` site-tagged monotone-history condition | source condition, not axiom text; status read from the pipeline | retires weak syntactic preservation/site identity for consumers that state the representation; does not create successor support or physical superselection |
 | `BOOTSTRAP_CONTINUATION_AVAILABILITY_NONEMPTY_FREE_ORBIT_REDUCTION_PROPAGATION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-07-04.md#L34` | unaudited bounded note | retires first-menu nonemptiness and gives conditional symmetry propagation; not menu-complete support or all-future preservation |
 | extensional fixed rule plus a retained rule-to-successor theorem | absent | would retire context-scoped successor realization/support |
 | retained post-record operation theorem, e.g. every future `Phi` obeys `Phi*(P)=P` | absent | would retire strong physical preservation/nonreconnection without choosing a branch or weight |
 | `TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md#L15` and `PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BRIDGE_AND_WORD_DISPERSIVENESS_NARROW_THEOREM_NOTE_2026-07-10.md#L37` realization predicates | unaudited and conditional | give templates for a rule-to-process proof, but currently retire neither bridge |
 | record-faithful dynamics branch / [closed unmerged PR #5178](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178), final head `3db1067b24` | source review passed; PR closed unmerged on 2026-07-13; no current-main authority | classifies cubic neighbor responses and leaves spectral faithfulness plus response-to-process realization conditional; it identifies, rather than closes, the process-law bridge |
-| this exact working sentence as a theorem condition | current source-side attempt, not registered | lets bounded consumers expose what the condition buys while support and preservation are separately targeted for retirement |
+| this exact working sentence as a theorem condition | current unaudited source note, not registered | lets bounded consumers expose what the condition buys while support and preservation are separately targeted for retirement |
 | controlled-vocabulary, interpretation-stance, or convention reframe | none found for continuation support or operation preservation | a definition can clarify the weak site-tagged reading, but cannot turn physical successor support or all-future channel preservation into labeling only |
 
 The branch and controlled-vocabulary scans therefore found real partial routes,
@@ -702,7 +704,7 @@ walked as follows:
 |---|---|---|---|
 | `RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md` | occurrence was confused with a total formation rule | axiom append closed occurrence only; site/value/weight/rate stayed open | candidate successor support is not called an actual event |
 | `RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md` | permanence was read as site immobility | site-tagged monotone identity was exposed as representation data | the same condition is explicit in Theorem 1 |
-| `READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md` | redundancy was read as global permanence/probability | local carrier result retained; FRAME-EXT and PREP-FRAME stayed named | no witness count or probability is inferred from content classes |
+| `READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md` | redundancy was read as global permanence/probability | finite carrier result preserved conditionally; frame extension and prepared-state identification stayed named | no witness count or probability is inferred from content classes |
 | `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md` | record order was read as metric time | axis/order and rate/metric were separated | partition refinement supplies no clock rate or duration |
 | `work_history/repo/review_feedback/RECORD_FORMATION_THREE_ROUTE_ASSUMPTIONS_EXERCISE_AND_AXIOM_TARGET_NOTE_2026-07-13.md` | a fixed algebra was read as dynamic formation | activation and allowed-operation scope stayed open | one-time `E_P`, fixed algebra, and persistent operation law are separated |
 | `.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md` | formation occurrence was read as a selector, rate, or time metric | live; future occurrence/action theorem or owner governance named | different downstream residual; selection/rate remain outside this route-two result |

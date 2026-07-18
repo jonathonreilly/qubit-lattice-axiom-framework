@@ -1,9 +1,9 @@
 # Compact Pair-Barrier Phase — Cycle 74
 
-**Date:** 2026-07-14  
-**Authority:** none  
+**Date:** 2026-07-14
+**Authority:** none
 **Status:** exact finite candidate-law composition; supplied V-gate packet
-rejected only as written  
+rejected only as written
 **Constitutional effect:** none
 
 Companion runner:

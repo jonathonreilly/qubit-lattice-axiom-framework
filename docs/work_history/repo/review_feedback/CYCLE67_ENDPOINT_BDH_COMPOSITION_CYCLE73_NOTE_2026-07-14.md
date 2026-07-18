@@ -1,7 +1,7 @@
 # Cycle-67 Endpoint B/D/H Composition — Cycle 73
 
-**Date:** 2026-07-14  
-**Authority:** none  
+**Date:** 2026-07-14
+**Authority:** none
 **Status:** conditional constructive endpoint composition
 
 Companion runner:

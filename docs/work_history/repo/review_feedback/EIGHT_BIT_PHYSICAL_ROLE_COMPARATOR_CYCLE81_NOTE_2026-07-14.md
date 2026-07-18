@@ -1,8 +1,8 @@
 # Eight-Bit Physical Role Comparator — Cycle 81
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** exact bounded comparator; harness remains supplied  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** exact bounded comparator; harness remains supplied
 **Constitutional effect:** none
 
 Companion runner:

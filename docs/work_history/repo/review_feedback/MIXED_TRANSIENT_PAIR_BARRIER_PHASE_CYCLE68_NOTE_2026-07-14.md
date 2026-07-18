@@ -1,8 +1,8 @@
 # Mixed-Transient Pair-Barrier Phase — Cycle 68
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** exact mixed-local causal closure; scratch candidate-law result  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** exact mixed-local causal closure; scratch candidate-law result
 **Constitutional effect:** none
 
 ## Question

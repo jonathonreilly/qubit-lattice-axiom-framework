@@ -1,6 +1,6 @@
 # Shared q/a/b OPEN–COMMIT Comb — Conditional Scratch Certificate
 
-**Date:** 2026-07-14  
+**Date:** 2026-07-14
 **Authority: none.** This scratch note does not amend an axiom, register a
 primitive, issue an audit verdict, or authorize a foundation edit.
 

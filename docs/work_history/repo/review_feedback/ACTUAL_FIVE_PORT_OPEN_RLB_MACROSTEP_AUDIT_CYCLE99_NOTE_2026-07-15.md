@@ -1,6 +1,6 @@
 # Actual five-port `R_LB` macrostep adversarial audit — Cycle 99
 
-Date: 2026-07-15  
+Date: 2026-07-15
 Authority: none
 
 ## Result up front

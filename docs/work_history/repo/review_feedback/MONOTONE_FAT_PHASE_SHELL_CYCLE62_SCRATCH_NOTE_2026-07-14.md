@@ -1,8 +1,8 @@
 # Monotone F/A/T Phase Shell — Cycle 62 Scratch
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** exact local closure, conditional on the completed Cycle-60 terminal  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** exact local closure, conditional on the completed Cycle-60 terminal
 **Constitutional effect:** none
 
 ## Result

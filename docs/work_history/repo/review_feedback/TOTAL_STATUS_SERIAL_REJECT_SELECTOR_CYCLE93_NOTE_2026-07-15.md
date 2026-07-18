@@ -1,8 +1,8 @@
 # Total-Status Serial-Reject Selector — Cycle 93
 
-**Date:** 2026-07-15  
-**Authority:** none  
-**Status:** exact supplied-harness decision primitive; candidate transport remains open  
+**Date:** 2026-07-15
+**Authority:** none
+**Status:** exact supplied-harness decision primitive; candidate transport remains open
 **Constitutional effect:** none
 
 Companion runner:

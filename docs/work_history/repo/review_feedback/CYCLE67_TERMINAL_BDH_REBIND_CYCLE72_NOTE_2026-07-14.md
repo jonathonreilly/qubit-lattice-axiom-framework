@@ -1,8 +1,8 @@
 # Cycle-67 Terminal B/D/H Rebind — Cycle 72
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** exact conditional terminal-to-terminal construction  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** exact conditional terminal-to-terminal construction
 **Constitutional effect:** none
 
 Companion runner:

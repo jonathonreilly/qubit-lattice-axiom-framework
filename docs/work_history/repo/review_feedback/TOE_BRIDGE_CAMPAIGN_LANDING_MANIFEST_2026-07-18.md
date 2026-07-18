@@ -53,8 +53,13 @@ history notes:   417
 archive scripts: 469
 total artifacts: 886
 path digest:     981c928ffdc00f4a333b8c6b61f86c54b385c67af4f1efb426df12287e411584
-content digest:  303f193162f206a286e8ea2d69b14e83c9c9ae02e1295784fb34417d762a6d4f
+content digest:  6b293b65e11351fc9895c268f4d0226f4fbde3a9e1e8beb8f93fcc2d86060d9b
 ```
+
+Review normalization removed trailing spaces and excess blank lines at end of
+file from the Markdown archive so the repository whitespace gate is clean.
+The scientific prose, equations, tables, paths, and Python artifacts are
+unchanged; the content digest above records the normalized archive bytes.
 
 Thirteen late runners originally required the recorded methodology commit to
 equal the moving `origin/main` ref. Packaging changed only that replay check:

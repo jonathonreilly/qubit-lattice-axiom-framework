@@ -1,7 +1,7 @@
 # Completion-Barrier Phase Transducer — Cycle 67 Scratch
 
-**Date:** 2026-07-14  
-**Authority:** none  
+**Date:** 2026-07-14
+**Authority:** none
 **Status:** conditional constructive result; live-composition and renewal gates remain
 
 Companion runner:

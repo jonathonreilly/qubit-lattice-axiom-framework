@@ -1,9 +1,9 @@
 # Live seed-row readable macrostep — Cycle 94
 
-**Date:** 2026-07-15  
-**Authority:** none  
+**Date:** 2026-07-15
+**Authority:** none
 **Status:** positive one-row, supplied-cell, value-faithful
-output-to-next-front construction  
+output-to-next-front construction
 **Constitutional effect:** none
 
 Companion runner:

@@ -1,8 +1,8 @@
 # Mixed Cycle-76 Caged-Guide Audit — Cycle 79
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** exact Cycle-76 rejection; conditionally green local repairs  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** exact Cycle-76 rejection; conditionally green local repairs
 **Constitutional effect:** none
 
 Companion runner:

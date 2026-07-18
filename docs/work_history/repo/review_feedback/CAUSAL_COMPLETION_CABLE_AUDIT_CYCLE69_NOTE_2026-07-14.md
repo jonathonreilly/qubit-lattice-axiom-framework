@@ -1,8 +1,8 @@
 # Causal Completion-Cable Audit — Cycle 69
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** exact conditional causal-safety audit of the Cycle-67 candidate  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** exact conditional causal-safety audit of the Cycle-67 candidate
 **Constitutional effect:** none
 
 Companion runner:

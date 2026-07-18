@@ -1,7 +1,7 @@
 # Status-gated typed payload handoff — Cycle 109
 
-Date: 2026-07-15  
-Authority: none  
+Date: 2026-07-15
+Authority: none
 Disposition: positive bounded construction with an explicit integration substitution
 
 Companion runner:

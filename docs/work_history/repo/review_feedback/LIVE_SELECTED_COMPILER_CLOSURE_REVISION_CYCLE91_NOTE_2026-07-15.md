@@ -1,8 +1,8 @@
 # Live Selected Compiler-Closure Revision — Cycle 91
 
-**Date:** 2026-07-15  
+**Date:** 2026-07-15
 **Type:** authority-free live-law recount, mixed-harness counterexample,
-constructive router repair, and N1–N8 scoped closure audit  
+constructive router repair, and N1–N8 scoped closure audit
 **Authority:** none. This note is not an axiom proposal, primitive
 registration, retained theorem, audit verdict, exact-law selection, or
 authorization to edit the foundation, registry, queue, audit state, or

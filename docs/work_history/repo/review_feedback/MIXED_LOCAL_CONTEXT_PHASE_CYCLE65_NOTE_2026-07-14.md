@@ -1,8 +1,8 @@
 # Mixed Local-Context Phase Audit — Cycle 65
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** exact bounded rejection of the frozen Cycle-64 candidate; no global no-go  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** exact bounded rejection of the frozen Cycle-64 candidate; no global no-go
 **Constitutional effect:** none
 
 Companion runner:

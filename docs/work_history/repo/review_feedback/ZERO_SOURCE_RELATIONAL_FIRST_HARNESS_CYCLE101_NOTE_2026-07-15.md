@@ -1,9 +1,9 @@
 # Zero-source relational first-harness fragment — Cycle 101
 
-**Date:** 2026-07-15  
-**Authority:** none  
+**Date:** 2026-07-15
+**Authority:** none
 **Status:** positive zero-source literal reader and first compare/write fragment;
-complete reusable harness still open  
+complete reusable harness still open
 **Constitutional effect:** none
 
 Companion runner:

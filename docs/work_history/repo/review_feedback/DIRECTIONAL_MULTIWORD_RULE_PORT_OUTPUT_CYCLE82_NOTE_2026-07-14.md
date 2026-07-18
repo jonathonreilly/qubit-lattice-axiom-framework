@@ -1,8 +1,8 @@
 # Directional Multiword Rule Port And Output — Cycle 82
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** positive supplied-harness construction for full six-neighbour rows and universal output writer  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** positive supplied-harness construction for full six-neighbour rows and universal output writer
 **Constitutional effect:** none
 
 Companion runner:

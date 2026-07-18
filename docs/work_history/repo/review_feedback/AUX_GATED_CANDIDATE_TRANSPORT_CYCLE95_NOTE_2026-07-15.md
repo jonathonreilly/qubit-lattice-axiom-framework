@@ -1,8 +1,8 @@
 # AUX-gated candidate transport — Cycle 95
 
-**Date:** 2026-07-15  
-**Authority:** none  
-**Status:** exact two-handoff, three-cell, supplied-apparatus construction  
+**Date:** 2026-07-15
+**Authority:** none
+**Status:** exact two-handoff, three-cell, supplied-apparatus construction
 **Constitutional effect:** none
 
 Companion runner:

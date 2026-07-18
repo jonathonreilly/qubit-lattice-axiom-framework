@@ -4,22 +4,16 @@
 
 **Claim type:** bounded_theorem
 
-**Status:** branch-local source note; audit unset
+**Status:** bounded claim candidate; audit unset
 
 **Claim scope:** For a supplied finite-dimensional unitary, declared rank-one
 instrument, squared-modulus transition weights, and read/reset schedule, this
 note proves the exact cadence-defect identity and its all-time monomial closure
-criterion. It then applies the identity to the conditional Cycle-222 candidate
-blocks. It does not derive an instrument, Record, occurrence rule, clock, mass
-law, or axiom content.
+criterion. It does not derive an instrument, Record, occurrence rule, clock,
+mass law, or axiom content.
 
 **Primary runner:**
 [`scripts/read_reset_cadence_interference_channel_bounded_2026_07_18.py`](../scripts/read_reset_cadence_interference_channel_bounded_2026_07_18.py)
-
-**Campaign and controls:**
-[`LOCKING_CADENCE_RECORD_KERNEL_DISCRIMINATOR_CYCLE223_NOTE_2026-07-17.md`](work_history/repo/review_feedback/LOCKING_CADENCE_RECORD_KERNEL_DISCRIMINATOR_CYCLE223_NOTE_2026-07-17.md)
-with its
-[`historical application runner`](../scripts/locking_cadence_record_kernel_discriminator_cycle223_2026_07_17.py).
 
 ## Imported surface
 
@@ -92,70 +86,6 @@ monomial closure criterion is proved here from finite-unitary recurrence and
 the Hadamard bound, but no claim of literature novelty is made for either
 statement.
 
-## Conditional Cycle-222 application
-
-For each supplied Cycle-222 direction block, up to global phase,
-
-```text
-C_beta^t = P_scalar + (-1)^t P_even + exp(i t beta) P_vector.
-```
-
-Its declared-frame kernel is
-
-```text
-|C_beta^t|^2 = P_scalar + e_t P_even + v_t P_vector,
-
-e_t = 1                         when t is even,
-      1/3                       when t is odd,
-
-v_t = cos(t beta)               when t is even,
-      -cos(t beta)/3            when t is odd.
-```
-
-Two odd intervals therefore leave the nonzero term `8/9 P_even` in the
-cadence defect. The runner checks the closed kernel and defect formulas through
-twelve updates in all three blocks, with maximum residual below `7.3e-14`.
-
-At total duration sixteen, schedules with interval lengths `1`, `2`, `4`, and
-`8` differ from a final-only diagnostic in the declared direction frame. A
-favorable fixed cadence can nearly coincide by cancellation, while the
-all-time family still fails closure. In the supplied eigenframe the same
-unitary has the identity kernel; monomial relabeling/rephasing and passive
-co-transformation controls separate a changed instrument from changed
-notation.
-
-For the supplied diagonal kick, every-tick read/reset is exactly kick-blind:
-
-```text
-|D_left U D_right|^2 = |U|^2.
-```
-
-Longer coherent intervals can reveal the kick through interference. This is a
-property of the declared candidate update, kick, frame, and schedule—not a
-universal theorem about force or measurement.
-
-## Pointer and archive control
-
-In the tested binary-projector, equal-superposition controlled-write
-construction, one and two coherent pointer copies induce the same reduced
-dephasing channel. Reversing the first modeled write while leaving the second
-pointer untouched leaves reduced-system purity `1/2`; reversing both modeled
-writes restores fidelity one. Only a separately supplied nonselective
-dephasing channel mixes the retained modeled history state. That control
-establishes neither spatially disjoint independent witnesses nor global
-irreversibility, outcome selection, or a physical Record.
-
-## Dependencies
-
-The application inherits every conditional input and wall from:
-
-- [Cycle 219 common matter/field coin](work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md);
-- [Cycle 220 generated beta-phase register](work_history/repo/review_feedback/GENERATED_BETA_PHASE_REGISTER_CYCLE220_NOTE_2026-07-16.md);
-- [Cycle 221 operator-mass equivalence](work_history/repo/review_feedback/OPERATOR_MASS_EQUIVALENCE_CYCLE221_NOTE_2026-07-17.md); and
-- [Cycle 222 conditional mass compiler](work_history/repo/review_feedback/CONDITIONAL_FLAVOR_MASS_OPERATOR_COMPILER_CYCLE222_NOTE_2026-07-17.md).
-
-These are branch-local, unaudited support surfaces, not retained authority.
-
 ## Boundaries
 
 - The unitary, frame, squared-modulus rule, reset/repreparation, schedule, and
@@ -168,6 +98,99 @@ These are branch-local, unaudited support surfaces, not retained authority.
 - It makes no mass-spectrum, gravity, measurement-solution, TOE, or no-go
   claim.
 - It has no constitutional effect and supports no axiom conclusion.
+
+## No-Go Discipline Gate
+
+**Status: PASS for the scoped artifact boundary below.** The positive theorem
+is the cadence-defect identity and all-time monomial criterion under the
+declared imports. The only negative gated here is:
+
+> The objects constructed in this note and its paired runner do not by
+> themselves define a physical Record, occurrence rule, probability law, or
+> clock.
+
+This is a typed statement about the displayed construction, not a claim that
+those bridges are impossible in the framework.
+
+### N1 -- alternative routes
+
+| attempted route | marker | result against the scoped boundary |
+|---|---|---|
+| identify the integer exponent of `U` with duration | `ATTEMPTED` | the exponent orders supplied updates but carries no duration unit or calibration |
+| identify the unistochastic kernel with a probability law | `ATTEMPTED` | squared-modulus weights and selective reset semantics are declared inputs; occurrence and frequency are absent |
+| identify dephasing with Record formation | `ATTEMPTED` | the channel deletes coherences but locks no site/content pair, selects no outcome, and proves no permanence |
+| identify kernel-semigroup closure with a physical clock | `ATTEMPTED` | the monomial criterion concerns composition in update count only and supplies no trigger, rate, or metric |
+| identify the cadence defect with force, mass, or energy | `ATTEMPTED` | the defect depends on a supplied unitary and frame and contains no source-response or resource bridge |
+| absorb the frame into notation | `ATTEMPTED` | passive relabeling preserves the construction, while changing the physical read frame changes the instrument being declared |
+
+The [minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md) supply neither
+the missing instrument semantics nor a time metric. The paired runner tests
+the finite algebraic identities and does not assert those bridges.
+
+### N2 -- wall independence
+
+For a physical read/reset interpretation, the imports collapse to three
+independent groups.
+
+| pair | first closes second? | second closes first? | independent? |
+|---|---:|---:|---:|
+| supplied unitary/frame / selective reset semantics | no | no | yes |
+| supplied unitary/frame / schedule-to-clock bridge | no | no | yes |
+| selective reset semantics / schedule-to-clock bridge | no | no | yes |
+
+Only the first two groups enter the bounded algebraic theorem. The third is
+named solely to prevent update count from being overread as physical time.
+
+### N3 -- hidden-wall scan
+
+Every use of `supplied` or `declared` refers to the unitary, rank-one frame,
+squared-modulus weights, dephasing map, or reset semantics listed under
+Imported surface. No phrase such as “the framework provides,” “naturally,” or
+“standard QFT” carries an additional premise. The proof uses only finite
+unitary recurrence, determinant multiplicativity, and the Hadamard bound.
+
+### N4 -- residual matching
+
+| source | residual there | residual used here | match? |
+|---|---|---|---:|
+| [minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md) | Record supplies no update law, probability rule, or time metric | the construction does not inherit those objects from Record | yes |
+| [paired runner](../scripts/read_reset_cadence_interference_channel_bounded_2026_07_18.py) | finite channel/kernel identities only | exact theorem scope | yes |
+| `LOCKING_CADENCE_RECORD_KERNEL_DISCRIMINATOR_CYCLE223_NOTE_2026-07-17.md` in work history | conditional application to a supplied candidate | not used as authority for the canonical theorem | no; historical context only |
+
+No historical application is used to support the canonical claim.
+
+### N5 -- rhetoric and resolution audit
+
+The exact identity is matrix-wide for finite dimension and all positive
+interval pairs. The runner checks a five-dimensional generic control and a
+four-dimensional monomial control. It does not classify lattice-wide
+instruments, physical histories, field modes, or continuum clocks. Every
+negative sentence is therefore restricted to the objects actually displayed.
+
+### N6 -- partial-closure paths
+
+A retained instrument theorem could derive the rank-one read/reset semantics;
+a retained occurrence/Record bridge could type selected outcomes; and an
+independent clock theorem could calibrate lawful update order to duration.
+Each would retire a named import without changing the algebraic identity. The
+registered scale-reference, kinetic-isotropy, and realized-state primitives do
+not supply these bridges.
+
+### N7 -- strongest steelman
+
+A future local law could derive the instrument, make read/reset events into
+Records, and calibrate its update order against the independently derived time
+lane. Then the same cadence defect could become a physical observable rather
+than a declared-frame diagnostic. That live route defeats any broad no-go and
+is why this note claims only the finite conditional theorem.
+
+### N8 -- cross-cycle echo
+
+The nearby read-twice work separated pointer copying from Record, probability,
+and time; the continuation-refinement work separated a static availability
+menu from successor dynamics. Those earlier type separations are preserved
+here. None has been retired merely by renaming an update index or a dephasing
+map.
 
 ## Primary comparisons
 

@@ -1,8 +1,8 @@
 # Exact Compiler-Closure Ledger — Cycle 88
 
-**Date:** 2026-07-14  
+**Date:** 2026-07-14
 **Type:** authority-free exact residual reconciliation, physical composition
-probe, and N1–N8 scoped shortest-path audit  
+probe, and N1–N8 scoped shortest-path audit
 **Authority:** none. This note is not an axiom proposal, registered primitive,
 retained theorem, audit verdict, exact-law selection, or authorization to edit
 the foundation, registry, queue, audit state, or repository history.

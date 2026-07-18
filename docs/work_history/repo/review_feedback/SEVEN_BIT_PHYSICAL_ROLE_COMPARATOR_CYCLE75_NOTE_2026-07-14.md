@@ -1,8 +1,8 @@
 # Seven-Bit Physical Role Comparator — Cycle 75
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** positive bounded local comparator; supplied-harness residual remains  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** positive bounded local comparator; supplied-harness residual remains
 **Constitutional effect:** none
 
 Companion runner:

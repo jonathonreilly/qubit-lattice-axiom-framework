@@ -1,8 +1,8 @@
 # Post-Cycle-132 minimum-axiom and compiler campaign — Cycle 133
 
-Date: 2026-07-15  
-Authority: none  
-Disposition: time-bounded local campaign synthesis; no audit verdict or law selection  
+Date: 2026-07-15
+Authority: none
+Disposition: time-bounded local campaign synthesis; no audit verdict or law selection
 Write scope: review note plus executable companion only
 
 No foundation, axiom, primitive, registry, queue, policy, audit state, commit,

@@ -1,8 +1,8 @@
 # Cycle-60 / Cycle-67 Mixed Composition Audit — Cycle 70
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** exact mixed-local composition closure; renewal still open  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** exact mixed-local composition closure; renewal still open
 **Constitutional effect:** none
 
 ## Result

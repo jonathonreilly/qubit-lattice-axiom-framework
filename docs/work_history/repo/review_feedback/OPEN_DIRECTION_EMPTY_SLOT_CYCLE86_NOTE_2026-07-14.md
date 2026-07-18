@@ -1,8 +1,8 @@
 # Open Direction To Physical EMPTY Slot — Cycle 86
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** positive supplied-harness openness encoder and slot comparator  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** positive supplied-harness openness encoder and slot comparator
 **Constitutional effect:** none
 
 Companion runner:

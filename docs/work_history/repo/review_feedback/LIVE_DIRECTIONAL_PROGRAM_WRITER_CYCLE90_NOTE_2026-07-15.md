@@ -1,6 +1,6 @@
 # Live directional program and output writer — Cycle 90
 
-Date: 2026-07-15  
+Date: 2026-07-15
 Authority: none
 
 ## Question

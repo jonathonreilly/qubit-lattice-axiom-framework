@@ -1,8 +1,8 @@
 # Separated Recurrent-Tube Collision Control — Cycle 84
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** exact positive separation control  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** exact positive separation control
 **Constitutional effect:** none
 
 Companion runner:

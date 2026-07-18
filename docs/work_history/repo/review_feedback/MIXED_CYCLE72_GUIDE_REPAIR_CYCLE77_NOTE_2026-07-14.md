@@ -1,8 +1,8 @@
 # Mixed Cycle-72 Zero-Site Repair — Cycle 77
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** exact mixed-transient scoped closure  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** exact mixed-transient scoped closure
 **Constitutional effect:** none
 
 Companion runner:

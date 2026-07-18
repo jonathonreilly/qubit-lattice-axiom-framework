@@ -120,17 +120,17 @@ source_needles = (
         "local observability of records",
     ),
     (
-        "n5 FRAME-EXT named finite-additivity gap",
+        "n5 frame-extension condition names the finite-additivity gap",
         frame_path,
         "FINITE-ADDITIVITY-TO-FRAME gap:",
     ),
     (
-        "n6 FRAME-EXT Gleason scope",
+        "n6 frame-extension condition states the Gleason scope",
         frame_path,
         "Gleason's theorem on Hilbert spaces of dimension at least 3",
     ),
     (
-        "n7 FRAME-EXT composite-domain clause",
+        "n7 frame-extension condition states the composite-domain clause",
         frame_path,
         "(4) the composite domain itself (M_2 tensor M_2 = M_4 and",
     ),

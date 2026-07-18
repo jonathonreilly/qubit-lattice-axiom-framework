@@ -1,4 +1,4 @@
-# Extensional Nearest-Neighbor Rule: Deep Derivation Probe
+# Extensional Nearest-Neighbor Rule: Finite Construction and Non-Entailment
 
 **Date:** 2026-07-13
 
@@ -212,7 +212,7 @@ Actualization remains independent too: the append-only relation determines a
 set of successors, and the same set accepts different normalized measures and
 different realized-member selectors.
 
-## Constitutional Effect
+## Effect on Framework Axioms
 
 No additional axiom is declared necessary by this probe.
 
@@ -228,50 +228,62 @@ No additional axiom is declared necessary by this probe.
 
 ## No-Go Discipline Gate
 
-**Gate result:** `PASS` for the exact finite census and displayed finite
-constructions. No broad no-go or constitutional conclusion is claimed, so a
-No-Go Discipline verdict for either is not applicable. The finite witnesses show
-non-entailment and route prices; they do not show that a TOE-grade rule cannot
-exist.
+**Gate result:** `PASS` for the exact finite census, displayed constructions,
+and the scoped record-graph non-entailment witness. No broad no-go or axiom-
+necessity conclusion is claimed. The finite witnesses show non-entailment and
+route prices; they do not show that a framework-complete rule cannot exist.
 
 ### N1 -- alternative routes
 
-1. Append-only classical/possibilistic CA -- executed; closes record semantics,
-   not quantum composition or dynamics.
-2. Reversible QCA -- executed on the minimal reversible copy; composition is
-   presupposed and global reversal defeats absolute permanence.
-3. Local quantum instrument -- executed; closes a conditional write model but
-   imports tensor product, effects, weights, and unraveling.
-4. Stable-subalgebra QCA -- live; could derive persistence if a nontrivial
-   future-invariant record algebra is forced by the physical update.
-5. Topological/superselection archive -- live; could make local reversal
-   impossible while retaining global unitarity.
-6. Branching history law -- live; could make continuation fundamental but must
-   still derive amplitudes, consistency, and probability.
+| attempted route | marker | result against the scoped boundary |
+|---|---|---|
+| append-only cellular relation | `ATTEMPTED` | closes continuation, support, and permanence for the explicit record rule but contains no global algebra data |
+| ordinary generated `M_4(C)` carrier | `ATTEMPTED` | carries the record successor graph on the ordinary two-site algebra |
+| duplicate-sector `M_4(C) direct-sum M_4(C)` carrier | `ATTEMPTED` | carries the identical record successor graph while adding a central sector |
+| inspect local-product span for the extra central observable | `ATTEMPTED` | the observable lies outside the 16-dimensional local-product span and remains invisible to the record graph |
+| reversible CNOT cellular update | `ATTEMPTED` | begins with composite structure and its inverse defeats absolute permanence |
+| local quantum instrument | `ATTEMPTED` | imports tensor product, effects, trace weights, fresh capacity, and a selective outcome label |
+
+Stable-subalgebra, topological, and branching-history constructions remain
+live routes against any broader framework no-go. They are not needed to defeat
+the exact statement that the displayed record graph alone is compatible with
+two inequivalent finite global algebras.
 
 ### N2 -- wall independence
 
-- Rule-table selection is independent of append semantics: hundreds of
-  billions of tables share the same append schema.
-- Append semantics is independent of composition: ordinary and
-  duplicate-sector composites share one successor graph.
-- Reversible dynamics is independent of permanence: CNOT supplies the first
-  without the second.
-- A nonselective channel is independent of actualization: it supplies the
-  ensemble update without a realized label.
+After the append construction closes continuation/support/permanence for its
+explicit rule, the broader physical residual collapses to three walls.
+
+| pair | first closes second? | second closes first? | independent? |
+|---|---:|---:|---:|
+| physical rule selection / global algebra generation | no | no | yes |
+| physical rule selection / realized-member weighting or selection | no | no | yes |
+| global algebra generation / realized-member weighting or selection | no | no | yes |
+
+Reversible dynamics versus permanence and nonselective dynamics versus
+actualization are route-price examples, not additional independent walls of
+the finite append theorem.
 
 ### N3 -- hidden-wall scan
 
-The append witness is explicitly classical/possibilistic. The QCA and
-instrument routes explicitly price their tensor product, pointer, trace,
-fresh-register, and selection content. No mathematical construction is called
+The required phrase scan finds `by construction` only where the append
+relation is explicitly declared as the theorem's supplied rule; it is a
+load-bearing named construction, not hidden framework authority. The append
+witness is explicitly classical/possibilistic. The QCA and instrument routes
+explicitly price their tensor product, pointer, trace, fresh-register, and
+selection content. `Naturally`, `obviously`, `the framework provides`, and
+`standard QFT` do not carry premises. No mathematical construction is called
 the physical rule.
 
 ### N4 -- residual matching
 
-The rule-count residual is rule selection; the duplicate-sector residual is
-composition; the CNOT residual is absolute permanence; and the nonselective
-instrument residual is actualization. None is used as evidence for another.
+| cited source | residual there | residual used here | match? |
+|---|---|---|---:|
+| [minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md), Admissibility/dynamics boundary | one fixed covariant rule is named but no predictive table or successor dynamics is supplied | structural clauses do not select the displayed table | yes |
+| [paired runner](../scripts/extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py), blocks B-C | exact rule census and append construction | finite selection count and record-layer theorem | yes |
+| [generated-composition theorem](GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md), extension witnesses | local products do not exclude extra global sectors | identical record graph does not determine global algebra | yes |
+| [Schumacher-Werner QCA](https://arxiv.org/abs/quant-ph/0405174) | QCA assumes an infinite quantum lattice algebra and reversible update | route price for a quantum local rule | yes, context only |
+| probability or actualization notes | weighting/selection rather than rule-table or composition residuals | finite rule census | no; not used as support |
 
 ### N5 -- resolution audit
 
@@ -298,8 +310,13 @@ but this probe does not weaken it.
 
 ### N8 -- cross-cycle echo
 
-Earlier rule-table toys repeatedly proved properties of supplied models and
-were then correctly fenced from the physical rule. Earlier tensor, Kraus, and
-record-write rows likewise proved conditional algebra while leaving
-composition, pointer selection, and formation open. This probe preserves those
-boundaries and consolidates them into one rule-first target.
+| prior surface | repeated wall | retirement mechanism/status | treatment here |
+|---|---|---|---|
+| [continuation-refinement note](ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md) | an availability menu was overread as successor support | explicit append semantics closes the record-layer witness conditionally | the rule remains a constructed witness, not the physical law |
+| [generated-composition theorem](GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md) | local copies were overread as the whole composite | generatedness isolates the exact extra condition | record-graph data are not used to retire it |
+| [read-twice finite fan-out](READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md) | a finite tensor carrier and write were overread as formation/probability | the live note exposes carrier and frame imports | the instrument route repeats those imports explicitly |
+| earlier rule-table work in work history | supplied examples were overread as the fixed physical rule | historical demotion preserved the examples without authority | no historical example selects the current rule |
+
+The same repair mechanisms—explicit construction, generated-domain theorem,
+or retained operational bridge—remain available. No similar wall is declared
+to require a new axiom.

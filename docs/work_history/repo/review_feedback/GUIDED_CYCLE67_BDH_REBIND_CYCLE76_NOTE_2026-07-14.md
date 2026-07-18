@@ -1,7 +1,7 @@
 # Guided Cycle-67 B/D/H Rebind — Cycle 76
 
-**Date:** 2026-07-14  
-**Authority:** none  
+**Date:** 2026-07-14
+**Authority:** none
 **Status:** candidate successor to Cycle 72; mixed audit pending
 
 Companion runner:
@@ -34,4 +34,3 @@ The companion runner first checks every schedule conditional on the Cycle-67
 terminal. A separate mixed scan through all Cycle-60/Cycle-67 transients is
 still required before this successor can replace Cycle 72. Renewal and
 operational decoding remain open. No axiom conclusion follows.
-

@@ -1,7 +1,7 @@
 # Three-Phase Recurrent Append Tube — Cycle 80
 
-**Date:** 2026-07-14  
-**Status:** constructive recurrent-core result; attachment to the physical front remains open  
+**Date:** 2026-07-14
+**Status:** constructive recurrent-core result; attachment to the physical front remains open
 **Authority:** none. This is a local compiler probe, not an axiom, primitive,
 retained theorem, registry entry, or law-selection result.
 

@@ -1,6 +1,6 @@
 # Actual five-port plus OPEN `R_LB` macrostep — Cycle 97
 
-Date: 2026-07-15  
+Date: 2026-07-15
 Authority: none
 
 ## Result

@@ -1,9 +1,9 @@
 # Repeated readable-cell allocation census — Cycle 98
 
-**Date:** 2026-07-15  
-**Authority:** none  
+**Date:** 2026-07-15
+**Authority:** none
 **Status:** positive repeated supplied-cell induction; exact bounded
-target-only allocation residual  
+target-only allocation residual
 **Constitutional effect:** none
 
 Companion runner:

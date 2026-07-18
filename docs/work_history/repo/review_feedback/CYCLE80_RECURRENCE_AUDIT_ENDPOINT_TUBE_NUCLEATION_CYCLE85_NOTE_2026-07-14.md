@@ -1,8 +1,8 @@
 # Cycle-80 Recurrence Audit and Endpoint-to-Tube Nucleation — Cycle 85
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** scoped lower bound and induction verified; live endpoint attachment constructed  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** scoped lower bound and induction verified; live endpoint attachment constructed
 **Constitutional effect:** none
 
 Companion runner:

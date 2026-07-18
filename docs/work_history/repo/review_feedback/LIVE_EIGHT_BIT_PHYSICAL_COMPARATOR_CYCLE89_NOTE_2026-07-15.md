@@ -1,6 +1,6 @@
 # Live eight-bit physical comparator — Cycle 89
 
-Date: 2026-07-15  
+Date: 2026-07-15
 Authority: none
 
 ## Question
@@ -39,4 +39,3 @@ never for its stale selected-law union.
 
 No foundation edit, registry edit, queue edit, audit verdict, or selected-law
 promotion follows.  No axiom addition follows from this bounded compiler port.
-

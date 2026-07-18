@@ -1,8 +1,8 @@
 # Physical Bit Router And Patricia Selector — Cycle 87
 
-**Date:** 2026-07-14  
-**Authority:** none  
-**Status:** positive physical branch primitive plus exact selector reduction  
+**Date:** 2026-07-14
+**Authority:** none
+**Status:** positive physical branch primitive plus exact selector reduction
 **Constitutional effect:** none
 
 Companion runner:

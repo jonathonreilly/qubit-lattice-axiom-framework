@@ -222,6 +222,16 @@ no topology decisions required from the invoker.
    explicit owner authorization for that episode and must be disclosed in
    the PR's provenance comment.
 
+7. **Progress reports every 15 minutes.** While any slot is active, emit a
+   summary block to the operator surface at least every 15 minutes — never
+   silence for a long session: a per-PR table (PR number, phase — reviewing
+   round N / fixing / confirmation / landing / landed / closed-with-reason —
+   reviewer runtime, and the finding count so far read from that PR's
+   incremental findings file), landings so far with their main SHAs, the
+   remaining queue, and the current codex process count against the budget.
+   A session that stops early still emits a final block with the same
+   fields; the Final Report section below remains the full closing artifact.
+
 The single-PR procedure in the rest of this skill is the inner loop of each
 parallel slot; nothing below is weakened by running slots concurrently.
 

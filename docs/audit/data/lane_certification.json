@@ -1161,7 +1161,7 @@
         },
         {
           "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
@@ -2899,6 +2899,6 @@
       "uncertified_count": 662
     }
   ],
-  "repo_head": "3cac23052cebc2eced11f80d6cb61b7bcbd81de8",
+  "repo_head": "31eae186a6015f18a1406dcb351c618b65ab374e",
   "schema": "lane_certification_v2"
 }

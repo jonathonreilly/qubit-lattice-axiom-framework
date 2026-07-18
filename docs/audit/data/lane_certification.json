@@ -1205,7 +1205,7 @@
         },
         {
           "claim_id": "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "hierarchy_matsubara_decomposition_note",
@@ -2626,7 +2626,7 @@
         },
         {
           "claim_id": "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
-          "effective_status": "audited_renaming"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
@@ -2895,6 +2895,6 @@
       "uncertified_count": 661
     }
   ],
-  "repo_head": "11b2f22f6d878bc66b69eac7dafb3e1865d3833b",
+  "repo_head": "ec5bc76ac71c7a4e8c5b7826919ffa6af9ad5e7c",
   "schema": "lane_certification_v2"
 }

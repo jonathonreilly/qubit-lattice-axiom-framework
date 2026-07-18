@@ -362,12 +362,12 @@ The current numerical witnesses are pinned to exact executable locations:
 
 | current witness | exact file and line |
 |---|---|
-| complete `M64 tensor M64` physical isometry | `scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py:1248` |
-| physical AB/BA order mismatch | `scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py:1272` |
-| local edge-role gauge repair | `scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py:1280` |
-| full coin-FSWAP-contact update | `scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py:1297` |
-| on-code and off-code ambient completion | `scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py:1315` |
-| 24-frame covariance and endpoint reversal | `scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py:1334` |
+| complete `M64 tensor M64` physical isometry | `scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py:1247` |
+| physical AB/BA order mismatch | `scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py:1271` |
+| local edge-role gauge repair | `scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py:1279` |
+| full coin-FSWAP-contact update | `scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py:1296` |
+| on-code and off-code ambient completion | `scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py:1314` |
+| 24-frame covariance and endpoint reversal | `scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py:1333` |
 
 No route-specific Cycle-312 failure is cited against generic multi-edge gauge
 or time-multiplexed completion.

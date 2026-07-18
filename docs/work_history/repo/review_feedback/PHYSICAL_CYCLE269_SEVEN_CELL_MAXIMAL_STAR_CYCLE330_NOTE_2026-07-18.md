@@ -338,12 +338,12 @@ and
 
 | current witness | exact file and line |
 |---|---|
-| eight selected physical orders and exact masks | `scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py:1015` |
-| overlapping lower-subgroup ranks and S6 residuals | `scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py:1032` |
-| bounded joint S7 role | `scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py:1045` |
-| all 720 logical update orders | `scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py:1056` |
-| joint role update and mass fixture | `scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py:1079` |
-| frames and local slot | `scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py:1089` |
+| eight selected physical orders and exact masks | `scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py:1014` |
+| overlapping lower-subgroup ranks and S6 residuals | `scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py:1031` |
+| bounded joint S7 role | `scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py:1044` |
+| all 720 logical update orders | `scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py:1055` |
+| joint role update and mass fixture | `scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py:1078` |
+| frames and local slot | `scripts/physical_cycle269_seven_cell_maximal_star_cycle330_2026_07_18.py:1088` |
 
 ### N5 — rhetoric and resolution audit
 

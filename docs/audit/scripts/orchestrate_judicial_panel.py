@@ -316,6 +316,60 @@ def reseat_mutation(row: dict) -> dict:
     return new_row
 
 
+def panel_scope(args: argparse.Namespace, rows: dict[str, dict]) -> list[str]:
+    if args.claims:
+        return [cid.strip() for cid in args.claims.split(",") if cid.strip()]
+    return sorted(
+        cid
+        for cid, row in rows.items()
+        if (row.get("cross_confirmation") or {}).get("status") == "disagreement"
+    )
+
+
+def collect_panel_targets(
+    scope: list[str], rows: dict[str, dict], announce_reseat: bool = True
+) -> tuple[list[dict], list[str]]:
+    """Split scoped rows into panelable targets and the reseat queue.
+
+    A seat whose rationale cannot be reconstructed produces an invalid
+    packet, so that row can never finish through a panel as recorded.
+    Instead of retrying (or freezing), it is queued for RESEAT: archive the
+    broken seats with full provenance and reopen the row for fresh
+    cross-confirmation — the audit then finishes through fresh agreement or
+    a validly-seated panel.
+    """
+    targets: list[dict] = []
+    reseat_queue: list[str] = []
+    for cid in scope:
+        row = rows.get(cid)
+        if not row:
+            print(f"   skip: {cid}: missing ledger row")
+            continue
+        if (row.get("cross_confirmation") or {}).get("status") != "disagreement":
+            print(f"   skip: {cid}: cross_confirmation is not a disagreement")
+            continue
+        context_error = seat_context_error(row)
+        if context_error:
+            reseat_queue.append(cid)
+            if announce_reseat:
+                print(f"   reseat: {cid}: {context_error}")
+            else:
+                print(f"   skip: {cid}: still seat-blocked after reseat attempt")
+            continue
+        targets.append(row)
+    return targets, reseat_queue
+
+
+RESEAT_OK_RESULTS = {"reseated", "resolved", "recovered"}
+
+
+def _reseat_failure(cid: str, result: str, detail: str) -> dict:
+    """Restore preapply state and return the outcome DICT (failed_after_apply
+    returns an (ok, dict) tuple shaped for apply callers)."""
+    _ok, failure = failed_after_apply(cid, result, detail)
+    return failure
+
+
 def reseat_blocked_row(cid: str, retries: int) -> dict:
     """Persist a reseat through the same per-claim gate ladder as verdicts:
     sync, mutate, pipeline, strict lint, diff check, serialized commit,
@@ -336,19 +390,19 @@ def reseat_blocked_row(cid: str, retries: int) -> dict:
         ledger_io.save_ledger(ledger)
         pipeline = batch.sh(["bash", str(SCRIPTS / "run_pipeline.sh")], timeout=1800)
         if pipeline.returncode != 0:
-            return failed_after_apply(
+            return _reseat_failure(
                 cid, "reseat_pipeline_failed", (pipeline.stderr or pipeline.stdout)[-400:]
             )
         lint = batch.sh(
             [sys.executable, str(SCRIPTS / "audit_lint.py"), "--strict"], timeout=600
         )
         if lint.returncode != 0:
-            return failed_after_apply(
+            return _reseat_failure(
                 cid, "reseat_strict_lint_failed", (lint.stderr or lint.stdout)[-400:]
             )
         diff_check = batch.sh(["git", "diff", "--check"])
         if diff_check.returncode != 0:
-            return failed_after_apply(
+            return _reseat_failure(
                 cid, "reseat_diff_check_failed", diff_check.stdout[-400:]
             )
         unexpected = [
@@ -357,7 +411,7 @@ def reseat_blocked_row(cid: str, retries: int) -> dict:
             if not batch.allowed_generated_path(path)
         ]
         if unexpected:
-            return failed_after_apply(
+            return _reseat_failure(
                 cid, "reseat_unexpected_generated_paths", str(unexpected[:8])
             )
         committed, detail = batch.stage_and_commit(
@@ -365,7 +419,7 @@ def reseat_blocked_row(cid: str, retries: int) -> dict:
             "(unrecoverable legacy rationales archived; fresh seating opened)"
         )
         if not committed:
-            return failed_after_apply(cid, "reseat_commit_failed", detail)
+            return _reseat_failure(cid, "reseat_commit_failed", detail)
         local_commit = detail
         push = batch.sh(["git", "push", "-q", "origin", "HEAD:main"])
         if push.returncode == 0:
@@ -1247,36 +1301,8 @@ def main() -> int:
             print(f"pipeline bootstrap failed: {(bootstrap.stderr or bootstrap.stdout)[-300:]}")
             return 2
     rows = batch.load_rows()
-    if args.claims:
-        scope = [cid.strip() for cid in args.claims.split(",") if cid.strip()]
-    else:
-        scope = sorted(
-            cid
-            for cid, row in rows.items()
-            if (row.get("cross_confirmation") or {}).get("status") == "disagreement"
-        )
-    targets = []
-    reseat_queue: list[str] = []
-    for cid in scope:
-        row = rows.get(cid)
-        if not row:
-            print(f"   skip: {cid}: missing ledger row")
-            continue
-        if (row.get("cross_confirmation") or {}).get("status") != "disagreement":
-            print(f"   skip: {cid}: cross_confirmation is not a disagreement")
-            continue
-        context_error = seat_context_error(row)
-        if context_error:
-            # A seat whose rationale cannot be reconstructed produces an
-            # invalid packet, so this row can never finish through a panel
-            # as recorded. Instead of retrying (or freezing), RESEAT it:
-            # archive the broken seats with full provenance and reopen the
-            # row for fresh cross-confirmation — the audit then finishes
-            # through fresh agreement or a validly-seated panel.
-            reseat_queue.append(cid)
-            print(f"   reseat: {cid}: {context_error}")
-            continue
-        targets.append(row)
+    scope = panel_scope(args, rows)
+    targets, reseat_queue = collect_panel_targets(scope, rows)
     print(
         f"== judicial panel targets: {len(targets)} "
         f"(reseat queue: {len(reseat_queue)})"
@@ -1288,11 +1314,26 @@ def main() -> int:
             print(f"   would reseat: {cid}")
         return 0
 
+    reseat_failures: list[dict] = []
     if reseat_queue and not args.no_reseat:
         print(f"== reseating {len(reseat_queue)} seat-blocked row(s)")
+        any_reseated = False
         for cid in reseat_queue:
             outcome = reseat_blocked_row(cid, args.push_retries)
             print(f"   reseat outcome: {json.dumps(outcome, sort_keys=True)}")
+            if outcome.get("result") == "reseated":
+                any_reseated = True
+            elif outcome.get("result") not in RESEAT_OK_RESULTS:
+                reseat_failures.append(outcome)
+        if any_reseated:
+            # Reseats synced and committed ledger state; rebuild the panel
+            # view so the first panel cannot render from pre-reseat rows.
+            rows = batch.load_rows()
+            scope = panel_scope(args, rows)
+            targets, _still_blocked = collect_panel_targets(
+                scope, rows, announce_reseat=False
+            )
+            print(f"== post-reseat panel targets: {len(targets)}")
     elif reseat_queue:
         print(
             f"== --no-reseat: leaving {len(reseat_queue)} seat-blocked row(s) "
@@ -1334,7 +1375,10 @@ def main() -> int:
         "audited_clean", "audited_renaming", "audited_conditional",
         "audited_decoration", "audited_failed", "audited_numerical_match",
     }
-    return 0 if all(item.get("result") in applied for item in report) else 1
+    if reseat_failures:
+        print(f"== reseat failures: {len(reseat_failures)} (nonzero exit)")
+    panels_ok = all(item.get("result") in applied for item in report)
+    return 0 if (panels_ok and not reseat_failures) else 1
 
 
 if __name__ == "__main__":

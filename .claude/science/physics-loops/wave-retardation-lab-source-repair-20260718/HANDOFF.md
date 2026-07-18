@@ -11,9 +11,22 @@ The bounded conclusion is that these named finite controls do not identify a
 single monotone velocity-only power law or a laboratory card.  A continuum or
 redesigned carrier may behave differently.
 
-## Remaining work
+## Validation and remaining work
 
-Complete fresh review-loop and disposable compatibility validation, integrate
-the latest `origin/main`, refresh caches if any runner changes, commit, push,
-and open one ready unmerged PR.  Independent audit is deliberately outside
-this worker's authority.
+Fresh review-loop passed after two rounds of focused guard fixes.  Normal,
+independent, hostile, and all modes pass; two all-mode runs are byte-identical;
+all three changed-runner caches are exact-SHA fresh.  Optimized/no-site
+fail-closed probes, compile, vocabulary, premise purity, staged cache checks,
+and diff checks pass.
+
+Detached compatibility ran the full mechanical pipeline.  It initially
+reached only the expected graph-manifest acknowledgment gate; staging the
+refreshed citation manifest in that disposable worktree made enforced
+invariants pass.  Strict lint had no errors and staged claim typing resolved
+the target as `bounded_theorem`.  The reconstructed graph has zero inbound
+edges and zero transitive descendants because both overreading consumers were
+narrowed.  All generated audit/status/queue/dispatch/publication/front-door
+and manifest changes were discarded.
+
+Only the final latest-main fetch, push, and ready unmerged PR remain.
+Independent audit is deliberately outside this worker's authority.

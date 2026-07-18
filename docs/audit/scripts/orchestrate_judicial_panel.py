@@ -1317,23 +1317,22 @@ def main() -> int:
     reseat_failures: list[dict] = []
     if reseat_queue and not args.no_reseat:
         print(f"== reseating {len(reseat_queue)} seat-blocked row(s)")
-        any_reseated = False
         for cid in reseat_queue:
             outcome = reseat_blocked_row(cid, args.push_retries)
             print(f"   reseat outcome: {json.dumps(outcome, sort_keys=True)}")
-            if outcome.get("result") == "reseated":
-                any_reseated = True
-            elif outcome.get("result") not in RESEAT_OK_RESULTS:
+            if outcome.get("result") not in RESEAT_OK_RESULTS:
                 reseat_failures.append(outcome)
-        if any_reseated:
-            # Reseats synced and committed ledger state; rebuild the panel
-            # view so the first panel cannot render from pre-reseat rows.
-            rows = batch.load_rows()
-            scope = panel_scope(args, rows)
-            targets, _still_blocked = collect_panel_targets(
-                scope, rows, announce_reseat=False
-            )
-            print(f"== post-reseat panel targets: {len(targets)}")
+        # Every reseat attempt begins with a main sync, so the ledger may
+        # have moved regardless of outcome (reseated, recovered, resolved,
+        # or failure). Rebuild the panel view unconditionally so no panel —
+        # including a row whose seats turned out recovered — renders from
+        # pre-sync rows.
+        rows = batch.load_rows()
+        scope = panel_scope(args, rows)
+        targets, _still_blocked = collect_panel_targets(
+            scope, rows, announce_reseat=False
+        )
+        print(f"== post-reseat panel targets: {len(targets)}")
     elif reseat_queue:
         print(
             f"== --no-reseat: leaving {len(reseat_queue)} seat-blocked row(s) "

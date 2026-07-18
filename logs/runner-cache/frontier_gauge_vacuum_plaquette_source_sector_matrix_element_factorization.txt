@@ -1,61 +1,66 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py
-runner_sha256: b36be98bd463f2de0f7b046ee9b26a70c7cf4ebb647ffeacfe51efb1f33c336a
+runner_sha256: 86a68b339ce0d69b660dd107633ba4a055fd981a3df98d7e864372ecf46797cb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
-========================================================================================
-CONDITIONAL SU(3) SOURCE-SECTOR MATRIX-ELEMENT FACTORIZATION
-========================================================================================
-Exact theorem: supplied positive character-diagonal D; no Wilson D is derived.
+============================================================================================
+SUPPLIED-DIAGONAL SU(3) SOURCE-SECTOR FACTORIZATION THEOREM
+============================================================================================
+Inputs: finite character box, explicit J and swap, real beta, supplied kappa.
+Outputs: M properties; exact M D M sum and Gram form; symmetry, rank, kernel, bounds.
 
-EXACT SMALL-CASE ALGEBRA (Fraction; NMAX=1, supplied rational M)
-  [PASS] [THEOREM] the rational source recurrence is exactly self-adjoint and swap-symmetric
-  [PASS] [THEOREM] the supplied rational M is exactly self-adjoint, swap-symmetric, and invertible
-  [PASS] [THEOREM] the supplied semidefinite D has the exact diagonal, positivity, and swap hypotheses
-  [PASS] [THEOREM] the explicit scalar matrix-element sum equals M D M exactly
-  [PASS] [THEOREM] the independent Gram construction B^*B equals M D M exactly
-  [PASS] [THEOREM] invertible congruence preserves the supplied semidefinite rank exactly
+EXACT FRACTION CHECKS
+  [PASS] [EXACT] the six-neighbor recurrence is exactly self-adjoint and swap-commuting on N=0,1,2,3
+  [PASS] [EXACT] the N=0 recurrence and swap edge case are exact
+  [PASS] [EXACT] the nontrivial rational multiplier is exactly self-adjoint, positive, invertible, and swap-commuting
+  [PASS] [EXACT] the supplied zero-containing sequence defines an exact diagonal swap-commuting D
+  [PASS] [EXACT] the displayed row-middle-column matrix-element sum equals M D M exactly
+  [PASS] [EXACT] the Gram orientation B=D^(1/2)M gives B^*B=M D M exactly
+  [PASS] [EXACT] rank and transported-kernel identities hold exactly
+  [PASS] [EXACT] an all-positive supplied sequence gives an exactly positive-definite T
+  [PASS] [EXACT] a supplied zero gives an exactly positive-semidefinite rank-deficient T
+  [PASS] [EXACT] the all-zero supplied sequence gives T=0 exactly
+  [PASS] [EXACT] at beta=0, M=I and T=D exactly on N=2
+  [PASS] [EXACT] the beta=0 spectral bounds are attained exactly
 
-FINITE FLOATING WITNESSES (NumPy; numerical evidence, not exact proof)
-  strict-rational-N1                     states= 4 zeros= 0 minEig(T)=+1.394e+00 formula=4.441e-16 gram=8.882e-16 rank=4/4
-  strict-algebraic-N2                    states= 9 zeros= 0 minEig(T)=+9.601e-01 formula=4.441e-16 gram=8.882e-16 rank=9/9
-  strict-rational-N4-beta6               states=25 zeros= 0 minEig(T)=+2.149e-01 formula=1.421e-14 gram=1.421e-14 rank=25/25
-  checkerboard-semidefinite-N3           states=16 zeros= 8 minEig(T)=-1.463e-16 formula=2.220e-16 gram=1.110e-16 rank=8/8
-  zero-trivial-semidefinite-N5-beta6     states=36 zeros=12 minEig(T)=-1.920e-14 formula=5.329e-15 gram=1.776e-15 rank=24/24
-  [PASS] [SUPPORT] every tested J and exp[(beta/2)J] has the self-adjoint, swap, positivity, and invertibility properties used
+DETERMINISTIC NUMERICAL EXPONENTIAL SUPPORT (not exact proof)
+  strict-N0-beta6                states= 1 zeros= 0 minEig(T)=+1.500e+00 formula=0.000e+00 gram=2.220e-16 rank=1/1
+  strict-N2-beta0                states= 9 zeros= 0 minEig(T)=+1.707e+00 formula=1.972e-31 gram=4.441e-16 rank=9/9
+  strict-N2-negative-beta        states= 9 zeros= 0 minEig(T)=+8.252e-01 formula=4.441e-16 gram=8.882e-16 rank=9/9
+  strict-N4-beta6                states=25 zeros= 0 minEig(T)=+2.149e-01 formula=1.421e-14 gram=1.421e-14 rank=25/25
+  checkerboard-zero-N3           states=16 zeros= 8 minEig(T)=-1.463e-16 formula=2.220e-16 gram=1.110e-16 rank=8/8
+  irregular-zero-N5-beta6        states=36 zeros=12 minEig(T)=-1.920e-14 formula=5.329e-15 gram=1.776e-15 rank=24/24
+  [PASS] [SUPPORT] all tested exponentials are numerically self-adjoint, positive, invertible, and swap-commuting
          max inverse residual=6.672e-15
-  [PASS] [SUPPORT] every supplied D explicitly satisfies diagonality, nonnegative spectrum, and conjugation-swap symmetry
-         hypotheses checked before constructing T
-  [PASS] [SUPPORT] independent Gram/congruence construction verifies positivity for every supplied sequence
-         max Gram residual=1.421e-14
-  [PASS] [SUPPORT] scalar-loop matrix-element sums agree with direct matrix multiplication for every supplied sequence
-         max formula residual=1.421e-14
-  [PASS] [SUPPORT] T is self-adjoint, swap-symmetric, PSD, and has the rank predicted by invertible congruence
-         max symmetry=1.421e-14, swap=6.217e-14
-  [PASS] [SUPPORT] the finite witnesses satisfy the exact eigenvalue bounds implied by D and M
-         worst lower gap=-1.920e-14, worst upper gap=4.528e-01
-  [PASS] [SUPPORT] the witness family includes both positive-definite and zero/semidefinite supplied D cases
-         strict cases=3, semidefinite cases=2
-  [PASS] [SUPPORT] an irregular witness is conjugation-symmetric but not a function of total weight alone
+  [PASS] [SUPPORT] direct multiplication, scalar contraction, and Gram construction agree numerically
+         max formula=1.421e-14, Gram=1.421e-14
+  [PASS] [SUPPORT] T is numerically self-adjoint and swap-commuting in every witness
+         max swap residual=6.217e-14
+  [PASS] [SUPPORT] rank and transported-kernel identities hold numerically in strict and zero cases
+         max kernel residual=2.761e-14
+  [PASS] [SUPPORT] the independently computed extremal eigenvalues satisfy both spectral bounds
+         worst lower gap=-1.920e-14, upper gap=0.000e+00
+  [PASS] [SUPPORT] positive definiteness occurs exactly for the all-positive supplied sequences
+         strict=4, zero-containing=2
+  [PASS] [SUPPORT] N=0, beta=0, negative beta, beta=6, all-positive, and supplied-zero cases all execute
+  [PASS] [SUPPORT] an irregular supplied sequence is swap-symmetric without depending only on p+q
          kappa(0,2)=kappa(2,0)=2.166667; kappa(1,1)=2.400000
 
-HOSTILE CONTROLS (exact operator counterexample plus guarded helper)
-  [PASS] [HOSTILE] C=I+|v><v| is exactly positive definite, self-adjoint, and swap-symmetric
-         exact eigenvalues are 1 (multiplicity 3) and 3 (multiplicity 1)
-  [PASS] [HOSTILE] the positive swap-symmetric hostile operator has explicit off-diagonal character mixing
-         C_((0,0),(1,1)) = 1
-  [PASS] [HOSTILE] silently replacing C by diag(C) gives the wrong factorized operator
-         M C M differs exactly from M diag(C) M
-  [PASS] [HOSTILE] the kappa-only helper rejects an operator with hidden off-diagonal mixing
-  [PASS] [HOSTILE] the guarded helper accepts a genuinely supplied diagonal D and returns the conditional formula
-         formula residual=8.882e-16
+LOAD-BEARING MUTATION VALIDATORS
+  [PASS] [MUTATION] the diagonal-sequence validator rejects an off-diagonal operator matrix
+  [PASS] [MUTATION] the matrix-element validator rejects a contraction with the wrong kappa index
+  [PASS] [MUTATION] the Gram validator rejects the wrong M D^(1/2) factor orientation
+  [PASS] [MUTATION] the supplied-sequence validator rejects a negative coefficient for the PSD conclusion
+  [PASS] [MUTATION] the supplied-sequence validator rejects broken swap symmetry for the swap conclusion
+  [PASS] [MUTATION] the multiplier validator rejects a singular surrogate for rank/kernel consequences
+  [PASS] [MUTATION] the multiplier validator rejects a non-positive surrogate
 
-========================================================================================
-SUMMARY: THEOREM PASS=6 SUPPORT=8 HOSTILE=5 FAIL=0
-========================================================================================
+============================================================================================
+SUMMARY: EXACT PASS=12 SUPPORT PASS=8 MUTATION PASS=7 FAIL=0
+============================================================================================
 
 ----- stderr -----
 

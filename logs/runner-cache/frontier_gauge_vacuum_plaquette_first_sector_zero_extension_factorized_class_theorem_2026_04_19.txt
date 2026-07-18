@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py
-runner_sha256: 077b4f80988248130f77df56443dc4ab352e6aadf74bbf60245788337b5c8d68
+runner_sha256: a722569fafb7443841fd0f927508dbea97ac4d56282e1e590fa627b349e106f2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 7.30
+elapsed_sec: 7.55
 status: ok
 ----- stdout -----
 ================================================================================================================
@@ -21,12 +21,12 @@ Question:
   min eigenvalue(T_ext)                       = -3.700e-16
   supplied-packet reconstruction gap           = 1.665e-16
 
-  [PASS] The source boundary contract keeps the model supplied-diagonal-only and the exact hostile control rejects physical diagonality inference
+  [PASS] The local factor times the zero-extended packet satisfies the source theorem's supplied diagonal interface
   [PASS] The completion producers supply one finite four-coefficient packet with nonzero trivial component
   [PASS] Extending rho_packet by zero outside the first-symmetric weights gives a nonnegative conjugation-symmetric finite sequence  (nonzero count=3)
   [PASS] The zero-extension yields a self-adjoint swap-symmetric positive-semidefinite supplied-diagonal operator M D_loc diag(rho_ext) M  ((sym,swap,eig_min)=(1.110e-16,4.441e-16,-3.700e-16))
   [PASS] The extended packet reproduces the supplied three-sample data to floating-point tolerance  (||z_recon-Z_min||=1.665e-16)
-  [PASS] The finite zero-extension witness leaves physical Wilson compression and diagonality open  (z00_min=0.349607)
+  [PASS] The supplied zero-extension has proper support and reconstructs the finite packet  (z00_min=0.349607, nonzero count=3)
 
 ================================================================================================================
 RESULT

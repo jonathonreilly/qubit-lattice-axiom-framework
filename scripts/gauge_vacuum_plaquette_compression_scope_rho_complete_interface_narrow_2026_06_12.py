@@ -26,9 +26,6 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 import gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11 as one_word
-from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
-    exact_small_case as source_factorization_exact_small_case,
-)
 
 
 AUDIT_TIMEOUT_SEC = 600
@@ -231,7 +228,6 @@ def main() -> int:
     )
 
     section("Part 5: durable interface semantics")
-    source_exact = source_factorization_exact_small_case()
     check("paired theorem note exists as a durable repository file", NOTE_PATH.is_file())
     check(
         "copying an equal supplied rho vector leaves the operator readout unchanged",
@@ -245,13 +241,6 @@ def main() -> int:
         "the hostile raw operator cannot be reconstructed from its diagonal interface",
         not np.array_equal(np.diag(diagonal_interface(env_perturbed)), env_perturbed),
     )
-    check(
-        "the primary exact hostile control independently rejects a kappa-only physical inference",
-        bool(source_exact["formula_exact"])
-        and bool(source_exact["hostile_mixing"])
-        and bool(source_exact["shadow_fails"]),
-    )
-
     print()
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

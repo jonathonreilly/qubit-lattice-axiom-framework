@@ -221,7 +221,7 @@ against overclaiming a negative, not an audit verdict.
 |---|---|---|---|
 | Beta-rescaling route | Treat the gap beta and plaquette beta as different couplings. | The exact character argument comparison gives the same Wilson beta: `beta/3` on `Re Tr` equals `beta/(2N_c)` on `chi+chibar` for `N_c=3`. | ATTEMPTED |
 | Local-coefficient route | Use the shared `c_(p,q)(6)` coefficients to identify the two outputs. | Shared coefficients do not make a spectral ratio equal an environment expectation; the gap lane uses `c/c00`, while plaquette local-link packets use normalized environment data and leave the full spatial environment open. | ATTEMPTED |
-| Source-factorization route | Use `T_beta=exp[(beta/2)J]D_beta exp[(beta/2)J]` as the bridge. | The conditional theorem gives the matrix law only after diagonal `D_beta` is supplied; it now explicitly retracts any inference that the stripped Wilson residual is diagonal from positivity and conjugation symmetry. | ATTEMPTED |
+| Source-factorization route | Use `T_beta=exp[(beta/2)J]D_beta exp[(beta/2)J]` as the bridge. | The theorem accepts diagonal `D_beta` through its typed supplied sequence and returns the exact matrix, Gram, symmetry, rank, kernel, and spectral outputs. | ATTEMPTED |
 | Plaquette-reuse route | Insert `0.5934` to pin the gap row physically. | The plaquette note licenses `0.5934` only as admitted comparison/reuse; it is not a derivation of a mass gap or a map from the native spectral ratio. | ATTEMPTED |
 | Fixed-lattice gap route | Read the native row as the `beta=6` physical fixed-lattice gap. | The fixed-lattice gap notes keep the `beta=6` gap problem separate and name missing gap premises; the native row here is a finite-shell ratio of a different operator. | ATTEMPTED |
 
@@ -250,7 +250,7 @@ appears only as admitted comparison/reuse.
 |---|---|---|---|
 | Native transfer construction in this note | no physical `beta=6` environment/Perron claim | native spectral row is not a physical-environment claim | yes |
 | [PLAQUETTE_SELF_CONSISTENCY_NOTE.md](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) | `0.5934` not derived or certified there | `0.5934` not a bridge to the native spectral row | yes |
-| [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) | supplied-diagonal algebra only; Wilson diagonality and Perron data remain open | the conditional formula alone is not the bridge | yes |
+| [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) | complete supplied-diagonal finite theorem | `D_beta` is the theorem's typed input, so this row must obtain any intended middle operator from its own authorities | yes |
 | [FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md](FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md) | fixed-lattice diagnostics do not prove physical `SU(3)` gap at `beta=6` | native finite-shell row is not a physical gap | yes |
 
 **N5 - Rhetoric audit**

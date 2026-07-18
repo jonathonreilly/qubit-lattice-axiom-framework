@@ -1492,6 +1492,64 @@
         "total_pass": 2
       },
       "verdict_rationale": "The runner/helper chain is genuine class-C computation, but its stdout contradicts the source: at v/c = 0.40 the first-sweep relative gap is 37.16%, not 0%, while at v/c = 0.10 the second-sweep dI is +0.003737 with a 35.74% gap, not \u22120.0030 with 151.5%; the v/c = 0.30 second-sweep gap is 33.41%, not 7.1%. Configuration dependence remains plausible, but the asserted symmetry zero, low-velocity sign flip, minimum location, exponents, and numerical range are stale, and the second sweep still changes NL_total and source onset. For N1\u2013N8 discipline, N1/N7 leave continuum, fixed-control, and observable-remapping attacks unresolved; N2's confounds are not independently separated; N3 exposes the physical lab mapping as admitted missing work; N4 supplies no prior-witness closure; N5 lacks all mandated resolution tests; N6's indexed candidates do not repair the mismatch; and N8's echoes do not independently validate this claim. The as-written chain therefore fails."
+    },
+    {
+      "archived_at": "2026-07-18T11:23:05.006611+00:00",
+      "audit_date": "2026-07-18T11:22:48.133193+00:00",
+      "audit_invocation_history": [
+        "5ce727f0ad3242fbbfb7c1ec5fc4e521"
+      ],
+      "audit_invocation_id": "5ce727f0ad3242fbbfb7c1ec5fc4e521",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/wave_retarded_gravity.py": "910035dc9e1e820e26213ce9340d5b527e7634bf6e976be1ce73120c8b558607"
+        },
+        "load_bearing_score": 10.435,
+        "runner_hash": "d6a738fb76b72c31e2c1c957bcfe24b3ef0bee330fe1a74a4c9d12285832276e",
+        "transitive_descendants": 691
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-drain-ready-20260717-8f7fef7e7e454fa2a3b9cdf1c5963692-wave_retardation_lab_pre-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The completed stdout contradicts both source tables, their slopes, the claimed low-velocity sign flip, and the v/c = 0.30 comparison. Independently, the second-sweep code changes NL, recomputes onset as NL // 3, and never clamps motion after n_active, so the advertised fixed 6-to-0 trajectory is not actually fixed.",
+      "claim_scope": "Whether the supplied runner, helper, and stdout establish that the two finite sweeps block a clean single-v/c lab-scaling card.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-18T11:22:48.133193+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The two sweeps diverge, showing that the M \u2212 I gap is configuration-dependent and non-monotonic rather than a genuine v/c power law, so a clean lab-scaling card is blocked.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary",
+        "stretch_attempt_negative"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after the source tables and interpretations are regenerated from the current runner and the trajectory-fixed sweep actually fixes onset, endpoint, active duration, and buffer behavior.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: current stdout gives first-sweep relative gaps of 19.22%, 13.49%, 7.19%, 0.79%, 5.92%, 13.75%, and 37.16%, and second-sweep gaps of 35.74%\u201377.08%, contradicting the note's tables, slopes, zero at 0.40, low-v sign flip, and 7.1% value at 0.30. Why this blocks: the second-sweep implementation also changes NL, recomputes src_layer = NL // 3, and lets the source keep moving during the buffer, so it does not perform the asserted fixed 6-to-0 trajectory test and cannot support the named confound separation. Repair target and safe boundary: regenerate the note from the current comparator and clamp or fix onset, duration, endpoint, and propagation buffer; until then the stdout supports only that the sampled confounded configurations do not display one clean monotone power law, not the quoted magnitudes or mechanisms. No-go discipline judgment: N1/N7 evidence only a finite numerical route while independent-control and continuum routes remain untested; N2's claimed walls are not independently established; N3/N4 find no cited hidden admission or prior witness; N5 lacks the five required resolution checks; N6's indexed continuum reframe is uncited and cannot repair this runner; and N8 supplies no applicable closure of the exact defect."
     }
   ],
   "prose_corrections": [],

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py
-runner_sha256: 94f3e50635ce595f505723b502fb1d2d1d290fee056ac86399e42f502c0b799e
+runner_sha256: 1b12f0476e232e166635160d919e2633e86ae9b7292e315d5a0ea9c0a0f3f3d1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -17,41 +17,21 @@ Finite source-shift illustrations
   common-source identity illustrated     = True
   next hierarchy level illustrated       = True
 
-Exact supplied onset data
-  P_L - P_1plaq beta^5 coefficient       = 1/472392
-  beta_eff beta^5 coefficient            = 1/26244
-  chi_1plaq(0)                           = 1/18
-  derivative order used                  = 2
-
-Independent exact routes to the corrected beta^3 coefficient
-  route 1 coefficient                    = 5/118098
-  route 2 generic coefficient            = 5*c1/6561
-  route 2 at chi_1plaq(0)=1/18           = 5/118098
-  expected full-minus-local coefficient  = 5/118098
+Defined inverse-coordinate derivative reconstruction
+  beta_eff'                              = S2/chi_1plaq
+  beta_eff''                             = -S2**2*chi_1plaq_prime/chi_1plaq**3 + S3/chi_1plaq
 
   [PASS] [SUPPORT] the finite common-source identity is illustrated exactly on the stated monomials
          finite illustration only; the note proves the universal identity by the multivariable chain rule
   [PASS] [SUPPORT] the next hierarchy level is illustrated exactly on the same finite basis
          finite illustration after one fixed source derivative
-  [PASS] [SUPPORT] the supplied full-minus-one-plaquette onset coefficient is source-bound exactly
-         P_L - P_1plaq = (1/472392) beta^5 + O(beta^6)
-  [PASS] [SUPPORT] the beta_eff route uses the exact supplied beta^5 coefficient
-         beta_eff - beta = (1/26244) beta^5 + O(beta^6)
-  [PASS] [THEOREM] the first beta_eff derivative transport formula reconstructs the shell-summed two-point projection
+  [PASS] [THEOREM] the first defined-coordinate derivative identity reconstructs the shell-summed two-point projection
          chi_1plaq(beta_eff) * beta_eff' = sum_r C_2(p_0,r)
-  [PASS] [THEOREM] the second beta_eff derivative transport formula reconstructs the shell-summed three-point projection
+  [PASS] [THEOREM] the second defined-coordinate derivative identity reconstructs the shell-summed three-point projection
          chi_1plaq * beta_eff'' + chi_1plaq' * (beta_eff')^2 = sum_(r,s) C_3(p_0,r,s)
-  [PASS] [THEOREM] twice differentiating the supplied plaquette difference gives 5/118098 at order beta^3
-         d^2/d beta^2 [beta^5/472392] has beta^3 coefficient 5/118098
-  [PASS] [THEOREM] generic one-plaquette composition leaves only 20 * chi_1plaq(0) * a at order beta^3 after baseline subtraction
-         generic coefficient = 5*c1/6561; c2 through c6 cancel
-  [PASS] [THEOREM] the beta_eff composition route gives the same corrected full-minus-local coefficient
-         20 * (1/18) * (1/26244) = 5/118098
-  [PASS] [THEOREM] both exact routes agree on the coefficient in sum C_3 minus the local chi_1plaq' baseline
-         sum_(r,s) C_3 - chi_1plaq' = (5/118098) beta^3 + O(beta^4)
 
 ==============================================================================
-SUMMARY: THEOREM PASS=6 SUPPORT=4 FAIL=0
+SUMMARY: THEOREM PASS=2 SUPPORT=2 FAIL=0
 ==============================================================================
 
 ----- stderr -----

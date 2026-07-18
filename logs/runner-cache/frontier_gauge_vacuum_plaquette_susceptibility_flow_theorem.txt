@@ -1,42 +1,26 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py
-runner_sha256: 6c6d609c9fc0fe78fc3cb4184c4e89649b461c5e5d560e818ce62e13973b6c59
+runner_sha256: 9f06a14eb67b2fea4615a97dcf9e69507cef9cc66862bc708635f3ff7937df84
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.44
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ==============================================================================
 GAUGE-VACUUM PLAQUETTE INVERSE-COORDINATE DERIVATIVE PACKET
 ==============================================================================
 
-Exact onset coefficients
-  nonlocal plaquette beta^5 coefficient      = 1/472392 = 2.116885976053786e-06
-  nonlocal susceptibility beta^4 coefficient = 5/472392 = 1.058442988026893e-05
-  beta_eff beta^5 coefficient                = 1/26244 = 3.810394756896815e-05
-  beta_eff' beta^4 coefficient               = 5/26244 = 1.905197378448407e-04
-  common slope                               = 1/18 = 5.555555555555555e-02
-  slope * beta_eff' correction               = 5/472392 = 1.058442988026893e-05
-
 Sampled local susceptibility profile
   sampled betas                              = [0.1, 0.5, 1.0, 2.0, 4.0, 6.0, 10.0]
   sampled chi_1plaq(betas)                   = [0.056481264481, 0.060156768988, 0.064575666344, 0.072018622252, 0.076131361049, 0.064880483355, 0.034763689583]
 
-  [PASS] [SUPPORT] differentiating the exact beta^5 plaquette correction gives the exact beta^4 susceptibility correction
-         d/d beta [beta^5/472392] = (5/472392) beta^4
-  [PASS] [SUPPORT] differentiating the exact onset law gives beta_eff'(beta)=1 + 5 beta^4 / 26244 + O(beta^5)
-         beta_eff'(beta) correction coefficient = 5/26244
-  [PASS] [SUPPORT] the common strong-coupling slope transports the beta_eff' correction into the same exact susceptibility coefficient
-         (1/18) * (5/26244) = 5/472392
-  [PASS] [THEOREM] differentiating the defined inverse coordinate gives the susceptibility quotient identity
-         P_1plaq'(beta_eff) * beta_eff' = P_L'; this is a coordinate identity, not a reduction mechanism
-  [PASS] [SUPPORT] the imported onset arithmetic does not supply the full susceptibility profile
-         finite onset support leaves chi_L(beta) unevaluated away from the onset expansion
+  [PASS] [THEOREM] an independently expanded exact composition gives the susceptibility quotient identity
+         local(x)=x+x^3 and coordinate(beta)=beta+beta^2; at beta=2/5, full'=10917/3125, local'=1213/625, coordinate'=9/5
   [PASS] [SUPPORT] sampled local one-plaquette susceptibility is strictly positive on the tested beta range
          min sampled chi_1plaq = 0.034763689583
 
 ==============================================================================
-SUMMARY: THEOREM PASS=1 SUPPORT=5 FAIL=0
+SUMMARY: THEOREM PASS=1 SUPPORT=1 FAIL=0
 ==============================================================================
 
 ----- stderr -----

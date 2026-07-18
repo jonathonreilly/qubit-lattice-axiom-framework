@@ -14,10 +14,6 @@ defined inverse coordinate:
   proves the finite analytic/monotone premises and defines
   `beta_eff,L := P_1plaq^(-1) o P_L`; the resulting equality is a coordinate
   identity, not a reduction mechanism;
-- [GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
-  separately supplies the imported first nonlinear coefficient used for an
-  onset cross-check; this packet does not promote that source or attribute the
-  coefficient to the inverse-coordinate theorem;
 - the runner computes the one-plaquette Bessel sum directly inside this
   packet.
 
@@ -132,38 +128,9 @@ Substituting into the exact inverse relation yields
 Thus evaluating the coordinate requires the same full connected plaquette
 susceptibility profile; the inverse-coordinate notation does not solve it.
 
-## Imported onset cross-check
-
-If the separately cited mixed-cumulant onset output is supplied,
-
-`P_L(beta) - P_1plaq(beta) = beta^5 / 472392 + O(beta^6)`.
-
-Differentiating gives the exact first nonlocal susceptibility correction:
-
-`chi_L(beta) - chi_1plaq(beta) = 5 beta^4 / 472392 + O(beta^5)`.
-
-Equivalently, from
-
-`beta_eff,L(beta) = beta + beta^5 / 26244 + O(beta^6)`,
-
-one gets
-
-`beta_eff,L'(beta) = 1 + 5 beta^4 / 26244 + O(beta^5)`.
-
-Using the exact common slope
-
-`chi_1plaq(0) = chi_L(0) = 1/18`,
-
-the first transport correction is
-
-`chi_1plaq(0) * (beta_eff,L'(beta) - 1) = 5 beta^4 / 472392 + O(beta^5)`,
-
-matching the differentiated mixed-cumulant theorem exactly.
-
 ## What this establishes
 
 - the derivative and integral identities for the defined inverse coordinate;
-- an algebraic cross-check of a separately imported onset coefficient;
 - the boundary that the full susceptibility profile remains independent input
   to any explicit evaluation.
 
@@ -179,9 +146,8 @@ matching the differentiated mixed-cumulant theorem exactly.
 
 The inverse coordinate is exact as a definition and its derivative formula is
 exact calculus. Neither statement characterizes the Wilson response at a
-physical coupling. The imported mixed-cumulant coefficient remains sourced by
-its own row, and no canonical plaquette or canonical inverse-coordinate value
-is evidence in this packet.
+physical coupling. No mixed-cumulant onset, canonical plaquette, or canonical
+inverse-coordinate value is evidence in this packet.
 
 ## Commands run
 
@@ -191,4 +157,4 @@ python3 scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py
 
 Expected summary:
 
-- `THEOREM PASS=1 SUPPORT=5 FAIL=0`
+- `THEOREM PASS=1 SUPPORT=1 FAIL=0`

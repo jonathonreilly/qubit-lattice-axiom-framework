@@ -4,7 +4,7 @@
 The load-bearing proof is rational-polynomial algebra: two entire real
 functions share every Taylor coefficient through degree five, have exact
 positive derivative lower bounds on [0,6], and separate at beta=6.  A separate
-composition block uses the sourced one-plaquette variance theorem and compares
+composition block uses the proved one-plaquette variance theorem and compares
 independent Bessel/Weyl evaluations at the two positive arguments.
 
 The certificate's domain is the finite jet plus interval-monotonicity surface.
@@ -22,11 +22,6 @@ from frontier_gauge_vacuum_plaquette_bridge_support import (
     plaquette_from_bessel,
     plaquette_from_weyl,
 )
-from frontier_gauge_vacuum_plaquette_mixed_cumulant_audit import (
-    beta_eff_beta5_coefficient,
-)
-
-
 Polynomial: TypeAlias = dict[int, Fraction]
 
 PASS_COUNTS = {"THEOREM": 0, "SUPPORT": 0, "CONTROL": 0}
@@ -34,8 +29,7 @@ FAIL = 0
 
 BETA_MIN = Fraction(0, 1)
 BETA_FRAMEWORK = Fraction(6, 1)
-A_EXPECTED = Fraction(1, 26244)
-A = beta_eff_beta5_coefficient()
+A = Fraction(1, 100_000)
 C = Fraction(1, 10_000_000)
 EXPECTED_ENDPOINT_SEPARATION = Fraction(729, 156250)
 
@@ -245,7 +239,7 @@ def main() -> int:
     print("=" * 78)
     print()
     print("Typed exact inputs")
-    print(f"  a (mixed-cumulant Fraction helper)   = {A}")
+    print(f"  a (rational construction choice)    = {A}")
     print(f"  interval                             = [{BETA_MIN}, {BETA_FRAMEWORK}]")
     print(f"  c (rational construction choice)    = {C}")
     print(f"  local monotonicity authority         = {MONOTONICITY_AUTHORITY}")
@@ -286,8 +280,8 @@ def main() -> int:
     print()
 
     check(
-        "typed inputs are the exact positive rationals and interval endpoint declared by the theorem",
-        A == A_EXPECTED
+        "typed construction inputs are exact positive rationals on the declared interval",
+        A == Fraction(1, 100_000)
         and A > 0
         and C == Fraction(1, 10_000_000)
         and C > 0

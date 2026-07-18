@@ -186,9 +186,9 @@ Thus the coordinate is strictly increasing.  The equality
 contains no further dynamical content: it is the coordinate identity obtained
 by applying `P_1plaq` to the definition.
 
-## Independently reconstructed onset identity
+## Independently reconstructed zero-source slope
 
-The linear onset is retained because both slopes follow directly from the
+The linear onset is included because both slopes follow directly from the
 same product-Haar definitions.
 
 For one plaquette,

@@ -30,6 +30,13 @@ DIMS = 4
 MODE_TOL = 1.0e-15
 MAX_MODE = 80
 WEYL_NODES = 32
+FORBIDDEN_AUTHORITY_FRAGMENTS = (
+    "canonical_plaquette",
+    "mixed_cumulant",
+    "constant_lift",
+    "physical",
+    "audit",
+)
 
 Coordinate = tuple[int, ...]
 LinkKey = tuple[Coordinate, int]
@@ -367,6 +374,7 @@ def inverse_local(
     evaluator: Callable[[float], float] = local_plaquette_bessel,
     lo: float = 0.0,
     hi: float = 12.0,
+    max_hi: float = 768.0,
     steps: int = 80,
     reverse_branch: bool = False,
 ) -> float:
@@ -374,8 +382,15 @@ def inverse_local(
         raise ValueError("the [0,infinity) inverse branch has range [0,1)")
     left_value = 0.0 if lo == 0.0 else evaluator(lo)
     right_value = evaluator(hi)
+    if target == left_value:
+        return lo
+    while right_value < target and hi < max_hi:
+        hi = min(2.0 * hi, max_hi)
+        right_value = evaluator(hi)
     if not left_value <= target <= right_value:
-        raise ValueError("target is not bracketed on the requested inverse branch")
+        raise ValueError(
+            "target is not bracketed within the requested numerical search bound"
+        )
     left, right = lo, hi
     for _ in range(steps):
         mid = 0.5 * (left + right)
@@ -411,14 +426,67 @@ def range_rejections() -> tuple[bool, bool]:
     return rejected_low, rejected_endpoint
 
 
+def imported_names(tree: ast.AST) -> set[str]:
+    imports: set[str] = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Import):
+            imports.update(alias.name for alias in node.names)
+        elif isinstance(node, ast.ImportFrom):
+            module = node.module or ""
+            if module:
+                imports.add(module)
+            imports.update(
+                f"{module}.{alias.name}" if module else alias.name
+                for alias in node.names
+            )
+    return imports
+
+
+def forbidden_authority_imports(tree: ast.AST) -> list[str]:
+    return sorted(
+        name
+        for name in imported_names(tree)
+        if any(
+            fragment in name.casefold()
+            for fragment in FORBIDDEN_AUTHORITY_FRAGMENTS
+        )
+    )
+
+
+def literal_data_accesses(tree: ast.AST) -> list[tuple[str, int]]:
+    accesses: list[tuple[str, int]] = []
+    for node in ast.walk(tree):
+        if not isinstance(node, ast.Call):
+            continue
+        name = ""
+        receiver: ast.AST | None = None
+        if isinstance(node.func, ast.Name):
+            name = node.func.id
+        elif isinstance(node.func, ast.Attribute):
+            name = node.func.attr
+            receiver = node.func.value
+        if name not in {"open", "read_text", "read_bytes"}:
+            continue
+        for argument in node.args:
+            if isinstance(argument, ast.Constant) and isinstance(
+                argument.value, str
+            ):
+                accesses.append((argument.value, node.lineno))
+        if (
+            isinstance(receiver, ast.Call)
+            and isinstance(receiver.func, ast.Name)
+            and receiver.func.id == "Path"
+        ):
+            for argument in receiver.args:
+                if isinstance(argument, ast.Constant) and isinstance(
+                    argument.value, str
+                ):
+                    accesses.append((argument.value, node.lineno))
+    return accesses
+
+
 def source_firewall(audit: Audit) -> None:
     tree = ast.parse(SOURCE.read_text(encoding="utf-8"), filename=str(SOURCE))
-    imports = {
-        alias.name
-        for node in ast.walk(tree)
-        if isinstance(node, (ast.Import, ast.ImportFrom))
-        for alias in node.names
-    }
     literal_true_checks = []
     dynamic_calls = []
     for node in ast.walk(tree):
@@ -436,19 +504,54 @@ def source_firewall(audit: Audit) -> None:
         if name in {"eval", "exec"}:
             dynamic_calls.append((name, node.lineno))
 
-    forbidden_fragments = (
-        "canonical_plaquette",
-        "mixed_cumulant",
-        "constant_lift",
-        "audit",
+    authority_imports = forbidden_authority_imports(tree)
+    authority_data_accesses = sorted(
+        access
+        for access in literal_data_accesses(tree)
+        if any(
+            fragment in access[0].casefold()
+            for fragment in FORBIDDEN_AUTHORITY_FRAGMENTS
+        )
     )
-    authority_imports = sorted(
-        name for name in imports if any(fragment in name for fragment in forbidden_fragments)
+
+    firewall_function = next(
+        node
+        for node in tree.body
+        if isinstance(node, ast.FunctionDef) and node.name == "source_firewall"
+    )
+    forbidden_table_values = (26244, 118098, 472392, 0.5934, 9.326)
+    imported_table_literals = sorted(
+        {
+            float(node.value)
+            for node in ast.walk(tree)
+            if isinstance(node, ast.Constant)
+            and isinstance(node.value, (int, float))
+            and not isinstance(node.value, bool)
+            and not (
+                firewall_function.lineno
+                <= node.lineno
+                <= (firewall_function.end_lineno or firewall_function.lineno)
+            )
+            and any(
+                math.isclose(float(node.value), float(forbidden), rel_tol=0.0, abs_tol=1.0e-12)
+                for forbidden in forbidden_table_values
+            )
+        }
     )
     audit.check(
         "runner has no canonical, mixed-cumulant, physical, or audit authority import",
         len(authority_imports) == 0,
         f"authority_imports={authority_imports}",
+    )
+    audit.check(
+        "runner has no canonical, mixed-cumulant, physical, or audit data-file access",
+        len(authority_data_accesses) == 0,
+        f"authority_data_accesses={authority_data_accesses}",
+    )
+    audit.check(
+        "runner contains no copied canonical or mixed-cumulant result-table literal",
+        len(imported_table_literals) == 0,
+        f"forbidden_literals={imported_table_literals}",
     )
     audit.check(
         "runner has no literal-True evidence check",
@@ -551,13 +654,27 @@ def audit_normal(audit: Audit) -> None:
         f"beta_eff,L'(0)={onset_derivative}",
     )
 
-    p_l_prime = Fraction(5, 37)
-    p_one_prime = Fraction(7, 41)
-    coordinate_prime = p_l_prime / p_one_prime
+    beta = Fraction(2, 5)
+    coordinate = beta + beta**2
+    coordinate_prime = 1 + 2 * beta
+    local_prime = 1 + 3 * coordinate**2
+    independently_expanded_full_prime = (
+        1
+        + 2 * beta
+        + 3 * beta**2
+        + 12 * beta**3
+        + 15 * beta**4
+        + 6 * beta**5
+    )
     audit.check(
-        "implicit differentiation gives a positive quotient derivative",
-        coordinate_prime > 0 and p_one_prime * coordinate_prime == p_l_prime,
-        f"P_L'={p_l_prime}, P_1plaq'={p_one_prime}, coordinate'={coordinate_prime}",
+        "an independently expanded polynomial composition obeys the positive quotient derivative",
+        coordinate_prime > 0
+        and independently_expanded_full_prime == local_prime * coordinate_prime
+        and independently_expanded_full_prime / local_prime == coordinate_prime,
+        (
+            f"full'={independently_expanded_full_prime}, local'={local_prime}, "
+            f"coordinate'={coordinate_prime}"
+        ),
     )
 
 
@@ -629,36 +746,104 @@ def audit_independent(audit: Audit) -> None:
         f"P_1plaq(6)={bessel_values[-1]:.12f}, P_1plaq(20)={local_plaquette_bessel(20.0):.12f}",
     )
 
+    loose = local_partition_sum(20.0, tolerance=1.0e-10)
+    tight = local_partition_sum(20.0, tolerance=1.0e-15)
+    loose_value = loose.derivative / loose.partition
+    tight_value = tight.derivative / tight.partition
+    audit.check(
+        "tightening the Bessel mode-tail tolerance stabilizes the local response",
+        tight.max_mode > loose.max_mode
+        and abs(tight_value - loose_value) < 5.0e-14,
+        (
+            f"modes=({loose.max_mode},{tight.max_mode}), "
+            f"delta={abs(tight_value-loose_value):.3e}"
+        ),
+    )
+
+    weyl_sequence = [local_weyl_statistics(20.0, nodes).mean for nodes in (16, 24, 32)]
+    weyl_errors = [abs(value - tight_value) for value in weyl_sequence]
+    audit.check(
+        "Weyl-angle quadrature has an explicit convergent node refinement at beta=20",
+        weyl_errors[2] < weyl_errors[1] < weyl_errors[0]
+        and weyl_errors[2] < 1.0e-9,
+        f"errors={weyl_errors}",
+    )
+
 
 def audit_hostile(audit: Audit) -> None:
+    import_mutation = ast.parse(
+        "from Canonical_Plaquette_Surface import copied_result\n"
+    )
+    detected_import_mutation = forbidden_authority_imports(import_mutation)
+    audit.check(
+        "hostile from-import authority mutation is detected case-insensitively",
+        detected_import_mutation
+        == ["Canonical_Plaquette_Surface", "Canonical_Plaquette_Surface.copied_result"],
+        f"detected={detected_import_mutation}",
+    )
+
+    data_mutation = ast.parse(
+        'Path("mixed_cumulant_result_table.json").read_text()\n'
+    )
+    detected_data_mutation = [
+        access
+        for access in literal_data_accesses(data_mutation)
+        if any(
+            fragment in access[0].casefold()
+            for fragment in FORBIDDEN_AUTHORITY_FRAGMENTS
+        )
+    ]
+    audit.check(
+        "hostile Path-read authority mutation is detected from the call receiver",
+        detected_data_mutation == [("mixed_cumulant_result_table.json", 1)],
+        f"detected={detected_data_mutation}",
+    )
+
     moment, _, _ = local_haar_moment()
-    wrong_source_scale = Fraction(1, N_C)
-    wrong_normalized_slope = wrong_source_scale**2 * moment
+    step = 1.0e-4
+    correct_numeric_slope = (
+        local_plaquette_bessel(step) - local_plaquette_bessel(-step)
+    ) / (2.0 * step)
+    wrong_numeric_slope = (
+        local_plaquette_bessel(step, source_scale=1.0 / N_C)
+        - local_plaquette_bessel(-step, source_scale=1.0 / N_C)
+    ) / (2.0 * step)
     audit.check(
-        "hostile wrong beta normalization is rejected",
-        wrong_normalized_slope != moment,
-        f"correct={moment}, mutated={wrong_normalized_slope}",
+        "hostile wrong beta normalization is recomputed and rejected",
+        abs(correct_numeric_slope - float(moment)) < 1.0e-12
+        and abs(wrong_numeric_slope - correct_numeric_slope) > 1.0e-3,
+        f"correct={correct_numeric_slope:.15f}, mutated={wrong_numeric_slope:.15f}",
     )
 
-    count = len(plaquettes(length=2))
-    missing_average_slope = count * moment
+    charges = charge_summary(length=2)
+    finite_variance = Fraction(charges.plaquette_count, 1) * moment
+    correct_average_slope = finite_variance / charges.plaquette_count
+    missing_average_slope = finite_variance
     audit.check(
-        "hostile omission of 1/N_plaq is rejected",
-        missing_average_slope != moment,
-        f"correct={moment}, mutated={missing_average_slope}",
-    )
-    audit.check(
-        "hostile reversed monotonicity sign is rejected",
-        -moment < 0 < moment,
-        f"correct_slope={moment}, reversed={-moment}",
+        "hostile omission of 1/N_plaq is recomputed and rejected",
+        correct_average_slope == moment and missing_average_slope != moment,
+        f"correct={correct_average_slope}, mutated={missing_average_slope}",
     )
 
+    increasing_values = [local_plaquette_bessel(beta) for beta in (0.5, 2.0, 6.0)]
+    reversed_values = [-value for value in increasing_values]
+    audit.check(
+        "hostile reversed monotonicity is recomputed and rejected",
+        strict_increase(increasing_values) and not strict_increase(reversed_values),
+        f"correct={increasing_values}, mutated={reversed_values}",
+    )
+
+    valid = one_link_witness(length=2, theta=0.41)
     constant = one_link_witness(length=2, theta=0.0)
     audit.check(
-        "hostile constant-action witness is rejected",
-        constant.changed_count == 0
-        and abs(constant.deformed_average - constant.identity_average) < 1.0e-15,
-        f"changed={constant.changed_count}, delta={constant.deformed_average-constant.identity_average:+.3e}",
+        "hostile constant-action mutation fails the recomputed witness validator",
+        valid.changed_count == 2 * (DIMS - 1)
+        and valid.deformed_average < valid.identity_average
+        and not (
+            constant.changed_count == 2 * (DIMS - 1)
+            and constant.deformed_average < constant.identity_average
+        ),
+        f"valid_changed={valid.changed_count}, mutated_changed={constant.changed_count}",
     )
 
     target_beta = 3.0
@@ -677,13 +862,33 @@ def audit_hostile(audit: Audit) -> None:
         f"negative_rejected={rejected_low}, endpoint_rejected={rejected_endpoint}",
     )
 
-    p_l_prime = Fraction(5, 37)
-    p_one_prime = Fraction(7, 41)
-    wrong_derivative = p_l_prime * p_one_prime
+    high_target = 0.9
+    high_inverse = inverse_local(high_target)
     audit.check(
-        "hostile product derivative factor is rejected",
-        p_one_prime * wrong_derivative != p_l_prime,
-        f"wrong_coordinate'={wrong_derivative}",
+        "adaptive inverse bracketing covers a valid target above the initial beta=12 bracket",
+        high_inverse > 12.0
+        and abs(local_plaquette_bessel(high_inverse) - high_target) < 1.0e-12,
+        f"target={high_target}, beta={high_inverse:.12f}",
+    )
+
+    beta = Fraction(2, 5)
+    coordinate = beta + beta**2
+    correct_coordinate_prime = 1 + 2 * beta
+    local_prime = 1 + 3 * coordinate**2
+    full_prime = (
+        1
+        + 2 * beta
+        + 3 * beta**2
+        + 12 * beta**3
+        + 15 * beta**4
+        + 6 * beta**5
+    )
+    wrong_derivative = full_prime * local_prime
+    audit.check(
+        "hostile product derivative factor fails the independently expanded composition",
+        full_prime / local_prime == correct_coordinate_prime
+        and wrong_derivative != correct_coordinate_prime,
+        f"correct_coordinate'={correct_coordinate_prime}, mutated={wrong_derivative}",
     )
 
 

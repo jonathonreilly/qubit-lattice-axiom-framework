@@ -1,14 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py
-runner_sha256: 1ec19ad536037c98b8e4d9601e74a0907013670dd076653183e2931087890e93
+runner_sha256: 41edcc9b7718b037075dd6444b204755a377b1bfe8ba8e83c2331348e562a7d3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.55
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 === Finite-volume Wilson plaquette inverse-coordinate verifier ===
 MODE: normal
 PASS: runner has no canonical, mixed-cumulant, physical, or audit authority import :: authority_imports=[]
+PASS: runner has no canonical, mixed-cumulant, physical, or audit data-file access :: authority_data_accesses=[]
+PASS: runner contains no copied canonical or mixed-cumulant result-table literal :: forbidden_literals=[]
 PASS: runner has no literal-True evidence check :: lines=[]
 PASS: runner has no dynamic eval or exec :: calls=[]
 PASS: fundamental orthogonality contracts the mixed trace moment :: contractions=3, integral Tr(U)Tr(U)^*=1
@@ -24,9 +26,9 @@ PASS: the witness changes a plaquette holonomy and is not gauge-pure cancellatio
 PASS: two-insertion center neutrality has no off-diagonal plaquette survivor :: off_diagonal=0, diagonal_counts={2}
 PASS: finite-volume zero-source slope equals the independently reconstructed local slope :: Var_0(S_L)=16/3, P_L'(0)=1/18
 PASS: the inverse-coordinate derivative at zero is the ratio of the two slopes :: beta_eff,L'(0)=1
-PASS: implicit differentiation gives a positive quotient derivative :: P_L'=5/37, P_1plaq'=7/41, coordinate'=205/259
+PASS: an independently expanded polynomial composition obeys the positive quotient derivative :: full'=10917/3125, local'=1213/625, coordinate'=9/5
 
-TOTAL: PASS=17, FAIL=0
+TOTAL: PASS=19, FAIL=0
 VERDICT: FINITE_VOLUME_INVERSE_COORDINATE_THEOREM_VERIFIED
 
 ----- stderr -----

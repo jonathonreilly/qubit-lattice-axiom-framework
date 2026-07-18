@@ -5,8 +5,8 @@
 Block 01 of a new lane on the third foundation-surface derivation
 obligation
 (`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`).
-One bounded theorem note plus a 26-gate exact runner giving the
-obligation's *forcing* half an exact characterization:
+One bounded theorem note plus a 30-gate exact runner giving the
+obligation's *forcing* half a forcing-level characterization:
 
 - **T1 — Forcing-level characterization.** A supplied property set
   guarantees vanishing registered phase content for every functional
@@ -17,13 +17,14 @@ obligation's *forcing* half an exact characterization:
   consequence-level witness; the cos(arg z) hostile guard repositioned).
   No individual-functional biconditional: an exact silent witness
   (1 + |z|) outside both odd-side properties is gated.
-- **T2 — Cross-sector reduction (a reduction, not a closure).** Under the
-  identification the obligation names, its forcing half reduces to exactly
-  one transported property: K/CPT orbit constancy on the quark determinant
-  channel; the odd side is sector-local. The physical half (carrier
-  construction, readout map, exhaustion — the axiom-update no-go's live
-  routes 1-3) is untouched and named open, per the obligation's own
-  closure criterion.
+- **T2 — Cross-sector reduction (a reduction, not a closure).** Conditional
+  on an independently supplied quark-side odd-side ingredient, the
+  remaining cross-sector content of the forcing half is the transport of
+  one property — K/CPT orbit constancy on the quark determinant channel —
+  with transport an assumption named as such, not a consequence of carrier
+  identity. The physical half (carrier construction, readout map,
+  exhaustion — the axiom-update no-go's live routes 1-3) is untouched and
+  named open, per the obligation's own closure criterion.
 - **T3 — Theta-bar honesty guard.** Mass-side registered content only; the
   gauge slot and `theta_bar = theta_gauge + arg det(M_u M_d)` untouched.
 

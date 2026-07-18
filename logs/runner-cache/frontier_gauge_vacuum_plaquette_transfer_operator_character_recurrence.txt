@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py
-runner_sha256: 75a5135ee1509542ca1db2311b475dd81826322df0a56b562c2103f5f084502a
+runner_sha256: c81f16584a28f3bce9ebd39a699b94560f3402d2b555c9b07e2a7e9c5a2d0db6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -16,6 +16,7 @@ Exact SU(3) character data
   minimum truncated coefficient            = 1.030056e-09
   recurrence errors (3,3bar,real)          = 1.361e-13, 1.616e-13, 4.775e-14
   recurrence symmetry error                = 0.000e+00
+  recurrence boundary counts               = {(0, 0): 2, (1, 0): 4, (0, 1): 4, (1, 1): 6}
   recurrence compressed spectrum           = [-0.439488, 0.877072]
   sampled SU(3) Wilson Gram min eigenvalue = 1.665696e+00
 
@@ -40,9 +41,6 @@ Mixed two-slice source (SUPPORT)
   sourced derivative T minima m=0..4      = [7.443935e-06, 2.6095812e-05, 5.2218267e-05, 3.9162411e-05, 4.5692011e-05]
   mixed marked trace / path sum            = 0.340898668485 / 0.340898668485
   mixed derivative / finite difference     = 0.340898668485 / 0.340898669426
-  spatial multiplication-fit residual      = 1.665e-16 (norm 3.248e-16)
-  mixed symmetric-fit residual             = 1.632e-03 (norm 2.509e-03)
-  mixed left/right-fit residuals           = 1.816e-03, 1.816e-03
 
 Hostile controls
   pointwise-positive symmetric min eig      = -1.000000e+00
@@ -65,6 +63,8 @@ Hostile controls
          maximum error = 1.616e-13
   [PASS] [SUPPORT] the real plaquette source obeys the exact six-neighbor recurrence
          combined error = 4.775e-14, symmetry error = 0.000e+00
+  [PASS] [SUPPORT] dominant-weight boundary terms omit exactly the negative labels
+         neighbor counts at (0,0),(1,0),(0,1),(1,1) = [2, 4, 4, 6]
   [PASS] [SUPPORT] sampled SU(3) Wilson positive-type Gram matrices are positive semidefinite
          minimum eigenvalue = 1.665696e+00
   [PASS] [SUPPORT] the finite square pullback is an isometry onto the three class functions
@@ -83,8 +83,6 @@ Hostile controls
          lambda_min(H)=-5.551e-17, max form error=0.000e+00
   [PASS] [SUPPORT] the marked mixed insertion matches its path sum and source derivative
          path error=4.996e-16, finite-difference error=9.419e-10
-  [PASS] [SUPPORT] a mixed two-slice source cannot be silently replaced by one-slice multiplication
-         spatial fit=1.665e-16, mixed sym/left/right=1.632e-03/1.816e-03/1.816e-03
   [PASS] [SUPPORT] pointwise positive symmetry alone does not imply quadratic-form positivity
          counterexample minimum eigenvalue = -1.0
   [PASS] [SUPPORT] the wrong plaquette word fails gauge invariance while the oriented word passes

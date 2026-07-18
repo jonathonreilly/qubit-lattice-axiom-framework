@@ -1294,6 +1294,10 @@ def main() -> int:
             )
             return 2
 
+    if not args.dry_run:
+        drain_lock = batch.acquire_exclusive_drain_lock("orchestrate_judicial_panel")
+        if drain_lock is None:
+            return 3
     if not args.dry_run and not (batch.DATA / "citation_graph.json").exists():
         print("derived audit caches missing (fresh clone); running the pipeline once")
         bootstrap = batch.sh(["bash", str(SCRIPTS / "run_pipeline.sh")], timeout=1800)

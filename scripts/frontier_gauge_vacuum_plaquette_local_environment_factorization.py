@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
-Bounded local Wilson factor packet for the plaquette source-sector route.
+Bounded fourth-power diagonal matrix packet.
 
 This does not close analytic P(6), the residual source-sector environment, or
 the operator-level mixed-kernel compression bridge. It computes the finite
-single-link Wilson coefficients on NMAX = 5 and packages their fourth powers as
-the finite local diagonal packet D_6^loc.
+stipulated integral coefficients on NMAX = 5 and packages their fourth powers
+as the finite matrix D_6^packet. No physical local-factor identification is
+claimed.
 """
 
 from __future__ import annotations
@@ -148,10 +149,10 @@ def main() -> int:
     min_link = float(np.min(a_link))
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE LOCAL WILSON FACTOR FINITE PACKET")
+    print("FINITE FOURTH-POWER DIAGONAL MATRIX PACKET")
     print("=" * 78)
     print()
-    print("Exact one-link Wilson character coefficients at beta = 6")
+    print("Stipulated integral coefficients at x = 2")
     print(f"  c_(0,0)                              = {c00:.15f}")
     for rep in [(0, 0), (1, 0), (0, 1), (1, 1), (2, 0)]:
         idx = weights.index(rep)
@@ -160,56 +161,56 @@ def main() -> int:
             f"a_link^4 = {a_link[idx]**4:.15f}"
         )
     print()
-    print("Finite local Wilson packet")
+    print("Finite fourth-power diagonal packet")
     print(f"  non-marked trivial-channel factor     = {nonmarked_scalar_norm:.15f}")
     print(f"  scalar-insertion normalized spread    = {mix_box_spread:.3e}")
-    print(f"  local-factor swap error               = {local_sym:.3e}")
-    print(f"  min/max local factor                  = {float(np.min(np.diag(d_local))):.12f}, {float(np.max(np.diag(d_local))):.12f}")
+    print(f"  fourth-power swap error               = {local_sym:.3e}")
+    print(f"  min/max fourth-power diagonal         = {float(np.min(np.diag(d_local))):.12f}, {float(np.max(np.diag(d_local))):.12f}")
     print()
-    print("Finite source-sector package")
-    print(f"  local package symmetry error          = {local_only_sym:.3e}")
-    print(f"  local package swap error              = {local_only_swap:.3e}")
-    print(f"  local package Perron <J>              = {local_value:.12f}")
-    print(f"  |local-only - 0.5934|                 = {abs(local_value - 0.5934):.6e}")
+    print("Finite constructed matrix package")
+    print(f"  constructed package symmetry error    = {local_only_sym:.3e}")
+    print(f"  constructed package swap error        = {local_only_swap:.3e}")
+    print(f"  constructed package Perron <J>        = {local_value:.12f}")
     print()
 
     check(
-        "the one-link Wilson class function has explicit normalized SU(3) character coefficients from the Bessel-determinant mode sum",
+        "the stipulated integral has explicit normalized SU(3) coefficients from the Bessel-determinant mode sum",
         c00 > 0.0 and abs(a_link[weights.index((0, 0))] - 1.0) < 1.0e-12,
         detail=f"c_(0,0)={c00:.12f}, a_(0,0)={a_link[weights.index((0, 0))]:.12f}",
     )
     check(
-        "trivial-channel scalar insertions do not alter the normalized finite local packet",
+        "the constructed trivial-channel scalar normalization is unity",
         abs(nonmarked_scalar_norm - 1.0) < 1.0e-15,
-        detail="this is a finite packet normalization check, not the actual mixed-kernel compression bridge",
+        detail="support-only normalization bookkeeping",
+        bucket="SUPPORT",
     )
     check(
-        "the finite local plaquette-loop packet D_6^loc = diag(a_(p,q)(6)^4) is positive and conjugation-symmetric",
+        "the finite fourth-power matrix D_6^packet = diag(a_(p,q)(6)^4) is positive and conjugation-symmetric",
         local_sym < 1.0e-12 and min_local > 0.0 and min_link > 0.0,
-        detail=f"local-factor symmetry={local_sym:.3e}, min local factor={min_local:.6e}",
+        detail=f"matrix symmetry={local_sym:.3e}, min diagonal={min_local:.6e}; no local-factor authority is claimed",
     )
     check(
-        "the finite source-sector local package exp(3 J) D_6^loc exp(3 J) is self-adjoint and conjugation-symmetric",
+        "the finite constructed package exp(3 J) D_6^packet exp(3 J) is self-adjoint and conjugation-symmetric",
         local_only_sym < 1.0e-12 and local_only_swap < 1.0e-12,
         detail=f"package symmetry={local_only_sym:.3e}, swap={local_only_swap:.3e}",
     )
 
     check(
-        "the finite local packet alone does not already reproduce the full same-surface plaquette value",
-        abs(local_value - 0.5934) > 1.0e-2,
-        detail=f"|local-only - 0.5934| = {abs(local_value - 0.5934):.6e}",
+        "the constructed package has a finite positive Perron diagnostic",
+        np.isfinite(local_value) and local_value > 0.0,
+        detail=f"constructed <J> = {local_value:.6e}; no physical readout is inferred",
         bucket="SUPPORT",
     )
     check(
-        "the remaining framework-point ambiguity is outside the finite local Wilson packet",
-        abs(local_value - 0.5934) > 1.0e-2,
-        detail="this packet supplies D_6^loc only; it does not solve the residual environment or actual compression bridge",
+        "the fourth-power diagonal is nonconstant on the finite box",
+        float(np.max(np.diag(d_local)) - np.min(np.diag(d_local))) > 1.0e-3,
+        detail="finite diagnostic only",
         bucket="SUPPORT",
     )
     check(
-        "the finite local Wilson link factor is explicit and reusable as an atlas tool even though full analytic P(6) remains open",
-        min_local > 0.0,
-        detail="this finite factor can now be reused independently of the still-open residual source-sector environment solve",
+        "all constructed coefficient and matrix entries are finite",
+        bool(np.all(np.isfinite(a_link)) and np.all(np.isfinite(d_local)) and np.all(np.isfinite(local_only))),
+        detail="numerical-health diagnostic only",
         bucket="SUPPORT",
     )
 

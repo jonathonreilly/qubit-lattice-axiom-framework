@@ -1,53 +1,32 @@
 #!/usr/bin/env python3
-"""
-Bounded beta = 6 single-link Wilson boundary character coefficients
-rho_(p,q)(6), computed by two distinct evaluation methods with an observed
-float64 roundoff-scale discrepancy on a finite SU(3) irrep box.
+"""Finite evaluation of a stipulated SU(3) character integral at x = 2.
 
-Supplies bounded rho_(p,q)(6) data for the gap shared by:
+For supplied data
 
-- gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note
-- gauge_vacuum_plaquette_residual_environment_identification_theorem_note
+  c_(p,q)(x) = int_SU(3) chi_(p,q)(U) exp(x Re tr U) dmu_Haar(U),
+  rho_(p,q)(x) = c_(p,q)(x) / (d_(p,q) c_(0,0)(x)),
 
-Both prior runners injected a generic positive conjugation-symmetric witness
-sequence rho_env(p,q) and verified packaging only. This runner replaces that
-arbitrary witness, on the finite computed box, with normalized coefficients of
-the canonical single-link Wilson boundary class function.
+this runner evaluates x = 6/3 = 2 on 0 <= p,q <= 4.  The label beta=6,
+the factor 1/3, the group, the Haar probability measure, and the finite box
+are stipulated inputs.  No physical-environment, local-factor, plaquette
+readout, framework-selection, or canonicity identification is made here.
 
-The computation:
+Two separately implemented numerical routes evaluate the same integral:
 
-  rho_(p,q)(beta) = c_(p,q)(beta) / (d_(p,q) c_(0,0)(beta)),
-  c_(p,q)(beta)   = int_{SU(3)} chi_(p,q)(U) exp((beta/3) Re tr U) dU,
+* the absolutely convergent Bessel-determinant series obtained from the
+  Fourier expansion of exp(x cos(theta)), truncated to modes -80..80;
+* direct periodic quadrature of the Weyl-torus formula, using the stable
+  product det(numerator) conjugate(det(denominator)) so Weyl walls never
+  require a 0/0 character evaluation.
 
-i.e. the canonical normalized Wilson character coefficient at the framework
-point beta = 6 with the conventional SU(3) Wilson normalization S_W = (beta/3)
-sum_p Re tr U_p. Interpreting these numbers as the full residual unmarked
-spatial environment still requires the parent tensor-transfer/Perron bridge;
-this runner only supplies the bounded single-link coefficient table.
+Mode-cutoff and grid-refinement ladders provide convergence checks.  Hostile
+mutations exercise sign, rho normalization, torus domain, Haar density/Weyl
+factor, and determinant-index conventions.  Those mutation checks measure
+sensitivity; they are not substitutes for the two evaluations.
 
-Two independent evaluations:
-
-  Method A: Schur--Weyl Bessel-determinant identity (closed form)
-            c_(p,q)(beta) = sum_{k in Z} det_{i,j} I_{k + lambda_j + i - j}(beta/3)
-            with highest weight lambda = (p+q, q, 0).
-
-  Method B: Weyl integration formula on the Cartan torus T^2 (direct quadrature)
-            c_(p,q)(beta) = (1/|W|) (1/(2 pi)^2) int_{T^2} chi_(p,q)(theta)
-                            |Delta(theta)|^2 exp((beta/3) Re tr) d^2 theta,
-            with |W| = 6, |Delta|^2 the SU(3) Vandermonde squared.
-
-Cross-check: Method A and Method B agree to ~1e-13 absolute on the finite
-0 <= p,q <= 4 box at beta = 6, confirming the single-link boundary character
-integral is computed rather than asserted.
-
-Verification: feeding the computed rho_(p,q)(6) into the finite diagonal
-operator R_6^env reproduces R_6^env chi_(p,q) = rho_(p,q)(6) chi_(p,q) and the
-exp(3 J) D_6^loc R_6^env exp(3 J) factorized witness passes the same
-self-adjoint / conjugation-symmetric / positivity gates that the previous
-witness-injection runners required.
-
-This runner does NOT close analytic P(6), an all-weight coefficient law, or the
-full unmarked spatial Wilson environment tensor-transfer problem.
+The historical public function names at the bottom are retained because two
+finite-packet runners import them.  They denote only the stipulated integral
+defined above.
 """
 
 from __future__ import annotations
@@ -65,10 +44,17 @@ SUPPORT_PASS = 0
 FAIL = 0
 
 NMAX = 4
-BETA = 6.0
-ARG = BETA / 3.0
+BETA_LABEL = 6.0
+ARG = BETA_LABEL / 3.0
 MODE_MAX = 80
-WEYL_GRID = 160
+MODE_CHECK = 12
+WEYL_GRID = 64
+WEYL_GRID_LADDER = (24, 32, 40, WEYL_GRID)
+
+CROSS_ABS_TOL = 1.0e-12
+CROSS_REL_TOL = 1.0e-10
+CONVERGENCE_TOL = 1.0e-12
+SYMMETRY_TOL = 1.0e-13
 
 
 def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM") -> None:
@@ -87,390 +73,414 @@ def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM")
 
 
 def dim_su3(p: int, q: int) -> int:
+    """Dimension of the SU(3) irrep with Dynkin labels (p,q)."""
     return (p + 1) * (q + 1) * (p + q + 2) // 2
 
 
-def highest_weight_triple(p: int, q: int) -> list[int]:
-    return [p + q, q, 0]
+def highest_weight_triple(p: int, q: int) -> tuple[int, int, int]:
+    return (p + q, q, 0)
 
 
 def weights_box(nmax: int) -> list[tuple[int, int]]:
     return [(p, q) for p in range(nmax + 1) for q in range(nmax + 1)]
 
 
-def recurrence_neighbors(p: int, q: int) -> list[tuple[int, int]]:
-    out: list[tuple[int, int]] = []
-    for a, b in [
-        (p + 1, q),
-        (p - 1, q + 1),
-        (p, q - 1),
-        (p, q + 1),
-        (p + 1, q - 1),
-        (p - 1, q),
-    ]:
-        if a >= 0 and b >= 0:
-            out.append((a, b))
-    return out
-
-
-def build_recurrence_matrix(nmax: int) -> tuple[np.ndarray, list[tuple[int, int]], dict[tuple[int, int], int]]:
-    weights = weights_box(nmax)
-    index = {w: i for i, w in enumerate(weights)}
-    jmat = np.zeros((len(weights), len(weights)), dtype=float)
-    for p, q in weights:
-        i = index[(p, q)]
-        for a, b in recurrence_neighbors(p, q):
-            if (a, b) in index:
-                jmat[index[(a, b)], i] += 1.0 / 6.0
-    return jmat, weights, index
-
-
-def conjugation_swap_matrix(
-    weights: list[tuple[int, int]], index: dict[tuple[int, int], int]
+def coefficient_matrix_bessel(
+    mode: int,
+    lam: tuple[int, int, int],
+    *,
+    arg: float = ARG,
+    row_weight_mutation: bool = False,
 ) -> np.ndarray:
-    swap = np.zeros((len(weights), len(weights)), dtype=float)
-    for w in weights:
-        swap[index[(w[1], w[0])], index[w]] = 1.0
-    return swap
-
-
-def matrix_exponential_symmetric(m: np.ndarray, tau: float) -> np.ndarray:
-    vals, vecs = np.linalg.eigh(m)
-    return (vecs * np.exp(tau * vals)) @ vecs.T
-
-
-def dominant_eigenpair(m: np.ndarray) -> tuple[float, np.ndarray]:
-    vals, vecs = np.linalg.eigh(m)
-    idx = int(np.argmax(vals))
-    vec = vecs[:, idx]
-    if np.sum(vec) < 0.0:
-        vec = -vec
-    return float(vals[idx]), vec
-
-
-# ----------------------------------------------------------------------------
-# Method A: Schur--Weyl Bessel-determinant identity (closed form)
-# ----------------------------------------------------------------------------
-
-def coefficient_matrix_bessel(mode: int, lam: list[int]) -> np.ndarray:
+    """Bessel matrix; row_weight_mutation implements a hostile index error."""
     return np.array(
-        [[iv(mode + lam[j] + i - j, ARG) for j in range(3)] for i in range(3)],
+        [
+            [
+                iv(
+                    mode
+                    + (lam[i] if row_weight_mutation else lam[j])
+                    + i
+                    - j,
+                    arg,
+                )
+                for j in range(3)
+            ]
+            for i in range(3)
+        ],
         dtype=float,
     )
 
 
-def wilson_character_coefficient_bessel(p: int, q: int) -> float:
-    """c_(p,q)(beta) via Schur--Weyl Bessel-determinant identity."""
+def stipulated_character_coefficient_bessel(
+    p: int,
+    q: int,
+    *,
+    mode_max: int = MODE_MAX,
+    arg: float = ARG,
+    row_weight_mutation: bool = False,
+) -> float:
+    """Truncated Bessel-determinant evaluation of c_(p,q)(x)."""
     lam = highest_weight_triple(p, q)
-    total = 0.0
-    for mode in range(-MODE_MAX, MODE_MAX + 1):
-        total += float(np.linalg.det(coefficient_matrix_bessel(mode, lam)))
-    return total
+    return float(
+        sum(
+            np.linalg.det(
+                coefficient_matrix_bessel(
+                    mode,
+                    lam,
+                    arg=arg,
+                    row_weight_mutation=row_weight_mutation,
+                )
+            )
+            for mode in range(-mode_max, mode_max + 1)
+        )
+    )
 
 
-# ----------------------------------------------------------------------------
-# Method B: Weyl integration formula on the SU(3) Cartan torus T^2
-# ----------------------------------------------------------------------------
+def bessel_coefficient_vector(
+    weights: list[tuple[int, int]],
+    *,
+    mode_max: int = MODE_MAX,
+    arg: float = ARG,
+    row_weight_mutation: bool = False,
+) -> np.ndarray:
+    return np.array(
+        [
+            stipulated_character_coefficient_bessel(
+                p,
+                q,
+                mode_max=mode_max,
+                arg=arg,
+                row_weight_mutation=row_weight_mutation,
+            )
+            for p, q in weights
+        ],
+        dtype=float,
+    )
 
-def weyl_character_value(p: int, q: int, theta1: float, theta2: float) -> float:
-    """SU(3) Weyl character at U = diag(e^{i theta1}, e^{i theta2}, e^{-i(theta1+theta2)}).
 
-    Uses the Weyl character formula
-      chi_lambda(U) = det( z_i^{lambda_j + n - j} ) / det( z_i^{n - j} ),
-    with n = 3, lambda = (p+q, q, 0) the SU(3) highest weight triple.
+def torus_eigenvalues(
+    n_grid: int,
+    *,
+    domain: float = 2.0 * np.pi,
+    offset1: float = 0.0,
+    offset2: float = 0.0,
+) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    theta1 = (np.arange(n_grid, dtype=float) + offset1) * domain / n_grid
+    theta2 = (np.arange(n_grid, dtype=float) + offset2) * domain / n_grid
+    t1, t2 = np.meshgrid(theta1, theta2, indexing="ij")
+    z = np.stack(
+        (np.exp(1j * t1), np.exp(1j * t2), np.exp(-1j * (t1 + t2))),
+        axis=-1,
+    )
+    return t1, t2, z
+
+
+def alternant_determinant(z: np.ndarray, exponents: tuple[int, int, int]) -> np.ndarray:
+    matrix = z[..., :, np.newaxis] ** np.asarray(exponents, dtype=int)
+    return np.linalg.det(matrix)
+
+
+def stipulated_character_coefficient_weyl_complex(
+    p: int,
+    q: int,
+    *,
+    n_grid: int = WEYL_GRID,
+    arg: float = ARG,
+    domain: float = 2.0 * np.pi,
+) -> complex:
+    """Direct Weyl-torus quadrature with Haar probability normalization.
+
+    For theta_3 = -theta_1-theta_2 and both independent angles in [0,2pi),
+
+      dmu_Haar = |Delta|^2 dtheta_1 dtheta_2 / (6 (2pi)^2).
+
+    Since chi = det_num/det_den and |Delta|^2 = |det_den|^2, the product
+    chi |Delta|^2 is evaluated as det_num conjugate(det_den).  This equality
+    removes the removable 0/0 singularity on Weyl walls.
     """
-    theta3 = -theta1 - theta2
-    z = np.array([np.exp(1j * theta1), np.exp(1j * theta2), np.exp(1j * theta3)])
+    t1, t2, z = torus_eigenvalues(n_grid, domain=domain)
+    den = alternant_determinant(z, (2, 1, 0))
     lam = highest_weight_triple(p, q)
-    num = np.zeros((3, 3), dtype=complex)
-    den = np.zeros((3, 3), dtype=complex)
-    for i in range(3):
-        for j in range(3):
-            num[i, j] = z[i] ** (lam[j] + 2 - j)
-            den[i, j] = z[i] ** (2 - j)
-    detn = np.linalg.det(num)
-    detd = np.linalg.det(den)
-    if abs(detd) < 1.0e-14:
-        # On Weyl walls; the character extends by continuity but the formula
-        # divides 0/0. With a finite Riemann grid these points have measure
-        # zero and we return 0 here so the quadrature is well-defined.
-        return 0.0
-    return float((detn / detd).real)
+    num = alternant_determinant(z, (lam[0] + 2, lam[1] + 1, lam[2]))
+    weight = np.exp(arg * (np.cos(t1) + np.cos(t2) + np.cos(t1 + t2)))
+    domain_fraction = (domain / (2.0 * np.pi)) ** 2
+    return complex(np.mean(num * np.conjugate(den) * weight) * domain_fraction / 6.0)
 
 
-def vandermonde_squared(theta1: float, theta2: float) -> float:
-    """|Delta(theta)|^2 = product over i<j |e^{i theta_i} - e^{i theta_j}|^2."""
-    theta3 = -theta1 - theta2
-    z = [np.exp(1j * theta1), np.exp(1j * theta2), np.exp(1j * theta3)]
-    prod = 1.0
-    for i in range(3):
-        for j in range(i + 1, 3):
-            prod *= abs(z[i] - z[j]) ** 2
-    return float(prod)
+def weyl_coefficient_vector_complex(
+    weights: list[tuple[int, int]],
+    *,
+    n_grid: int = WEYL_GRID,
+    arg: float = ARG,
+    domain: float = 2.0 * np.pi,
+) -> np.ndarray:
+    return np.array(
+        [
+            stipulated_character_coefficient_weyl_complex(
+                p,
+                q,
+                n_grid=n_grid,
+                arg=arg,
+                domain=domain,
+            )
+            for p, q in weights
+        ],
+        dtype=complex,
+    )
+
+
+def flat_torus_measure_mutation(
+    weights: list[tuple[int, int]], *, n_grid: int = WEYL_GRID, arg: float = ARG
+) -> np.ndarray:
+    """Hostile mutation: replace SU(3) Haar density by flat torus measure.
+
+    Unequal deterministic offsets avoid sampling Weyl walls, where the
+    character quotient has a removable 0/0 singularity.
+    """
+    t1, t2, z = torus_eigenvalues(n_grid, offset1=0.371, offset2=0.137)
+    den = alternant_determinant(z, (2, 1, 0))
+    if float(np.min(np.abs(den))) <= 1.0e-8:
+        raise RuntimeError("flat-measure mutation grid approached a Weyl wall")
+    weight = np.exp(arg * (np.cos(t1) + np.cos(t2) + np.cos(t1 + t2)))
+    values = []
+    for p, q in weights:
+        lam = highest_weight_triple(p, q)
+        num = alternant_determinant(z, (lam[0] + 2, lam[1] + 1, lam[2]))
+        values.append(complex(np.mean((num / den) * weight)))
+    return np.asarray(values, dtype=complex)
+
+
+def normalized_rho(coefficients: np.ndarray, weights: list[tuple[int, int]]) -> np.ndarray:
+    dims = np.asarray([dim_su3(p, q) for p, q in weights], dtype=float)
+    return coefficients / (dims * coefficients[0])
+
+
+def max_abs_rel(left: np.ndarray, right: np.ndarray) -> tuple[float, float]:
+    delta = np.abs(left - right)
+    relative = delta / np.maximum(np.abs(left), 1.0e-30)
+    return float(np.max(delta)), float(np.max(relative))
+
+
+# Historical compatibility API.  The names describe the original file path,
+# not a physical-environment identification.
+def wilson_character_coefficient_bessel(p: int, q: int) -> float:
+    return stipulated_character_coefficient_bessel(p, q)
 
 
 def wilson_character_coefficient_weyl(p: int, q: int, n_grid: int = WEYL_GRID) -> float:
-    """c_(p,q)(beta) via direct Weyl integration on the maximal torus T^2.
+    value = stipulated_character_coefficient_weyl_complex(p, q, n_grid=n_grid)
+    return float(value.real)
 
-    Weyl integration formula:
-      int_{SU(3)} f(U) dU = (1/|W|) (1/(2 pi)^2) int_{T^2} f(theta) |Delta(theta)|^2 d^2 theta,
-    with |W| = 3! = 6.
-    """
-    th = np.linspace(0.0, 2.0 * np.pi, n_grid, endpoint=False)
-    h = 2.0 * np.pi / n_grid
-    total = 0.0
-    for t1 in th:
-        for t2 in th:
-            tr_re = np.cos(t1) + np.cos(t2) + np.cos(t1 + t2)
-            ch = weyl_character_value(p, q, t1, t2)
-            v2 = vandermonde_squared(t1, t2)
-            total += ch * v2 * np.exp(ARG * tr_re) * h * h
-    total /= (2.0 * np.pi) ** 2
-    total /= 6.0  # |W| for SU(3)
-    return total
-
-
-# ----------------------------------------------------------------------------
-# rho_(p,q)(beta): canonical normalized boundary character coefficient
-# ----------------------------------------------------------------------------
 
 def rho_pq(p: int, q: int, c00: float, method: str = "bessel") -> float:
     if method == "bessel":
-        c = wilson_character_coefficient_bessel(p, q)
+        coefficient = stipulated_character_coefficient_bessel(p, q)
     elif method == "weyl":
-        c = wilson_character_coefficient_weyl(p, q)
+        coefficient = wilson_character_coefficient_weyl(p, q)
     else:
         raise ValueError("method must be 'bessel' or 'weyl'")
-    return c / (dim_su3(p, q) * c00)
-
-
-# Witness sequences from the prior witness-injection runners, retained here
-# only so the cross-check shows the new computation is NOT the prior witness.
-def prior_witness_character_measure(p: int, q: int) -> float:
-    return float(np.exp(-0.24 * (p + q) - 0.08 * ((p - q) ** 2)))
-
-
-def prior_witness_residual_identification(p: int, q: int) -> float:
-    return float(np.exp(-0.27 * (p + q) - 0.07 * ((p - q) ** 2)))
+    return coefficient / (dim_su3(p, q) * c00)
 
 
 def main() -> int:
     weights = weights_box(NMAX)
-    index = {w: i for i, w in enumerate(weights)}
-    jmat, weights2, index2 = build_recurrence_matrix(NMAX)
-    assert weights2 == weights and index2 == index
-    swap = conjugation_swap_matrix(weights, index)
-    multiplier = matrix_exponential_symmetric(jmat, BETA / 2.0)
+    index = {weight: i for i, weight in enumerate(weights)}
 
-    # Method A: Bessel-determinant identity
-    c00_bessel = wilson_character_coefficient_bessel(0, 0)
-    c_bessel = {pq: wilson_character_coefficient_bessel(*pq) for pq in weights}
-    rho_bessel = np.array(
-        [c_bessel[(p, q)] / (dim_su3(p, q) * c00_bessel) for (p, q) in weights],
-        dtype=float,
+    # Route A and its mode-cutoff convergence check.
+    c_bessel = bessel_coefficient_vector(weights)
+    c_bessel_check = bessel_coefficient_vector(weights, mode_max=MODE_CHECK)
+    rho_bessel = normalized_rho(c_bessel, weights)
+    rho_bessel_check = normalized_rho(c_bessel_check, weights)
+    mode_drift = float(np.max(np.abs(rho_bessel - rho_bessel_check)))
+
+    # Route B and its grid-refinement ladder.  Each grid recomputes the
+    # integral from the definitions; no Route-A table is imported.
+    weyl_by_grid = {
+        grid: weyl_coefficient_vector_complex(weights, n_grid=grid)
+        for grid in WEYL_GRID_LADDER
+    }
+    c_weyl_complex = weyl_by_grid[WEYL_GRID]
+    c_weyl = c_weyl_complex.real
+    rho_weyl_by_grid = {
+        grid: normalized_rho(values.real, weights) for grid, values in weyl_by_grid.items()
+    }
+    rho_weyl = rho_weyl_by_grid[WEYL_GRID]
+    grid_drifts = {
+        (left, right): float(
+            np.max(np.abs(rho_weyl_by_grid[left] - rho_weyl_by_grid[right]))
+        )
+        for left, right in zip(WEYL_GRID_LADDER[:-1], WEYL_GRID_LADDER[1:])
+    }
+    final_grid_drift = grid_drifts[(WEYL_GRID_LADDER[-2], WEYL_GRID_LADDER[-1])]
+    weyl_imag_residual = float(np.max(np.abs(c_weyl_complex.imag)))
+
+    cross_c_abs, cross_c_rel = max_abs_rel(c_bessel, c_weyl)
+    cross_rho_abs, cross_rho_rel = max_abs_rel(rho_bessel, rho_weyl)
+    rho_cross_delta = np.abs(rho_bessel - rho_weyl)
+    rho_cross_abs_weight = weights[int(np.argmax(rho_cross_delta))]
+    rho_cross_rel_weight = weights[
+        int(np.argmax(rho_cross_delta / np.maximum(np.abs(rho_bessel), 1.0e-30)))
+    ]
+
+    swap_error = float(
+        max(
+            abs(rho_bessel[index[(p, q)]] - rho_bessel[index[(q, p)]])
+            for p, q in weights
+        )
     )
+    rho_min = float(np.min(rho_bessel))
 
-    # Method B: Weyl integration formula
-    c00_weyl = wilson_character_coefficient_weyl(0, 0)
-    c_weyl = {pq: wilson_character_coefficient_weyl(*pq) for pq in weights}
-    rho_weyl = np.array(
-        [c_weyl[(p, q)] / (dim_su3(p, q) * c00_weyl) for (p, q) in weights],
-        dtype=float,
-    )
+    # Exact Haar/character orthogonality sanity check at x=0.  With this
+    # finite Fourier polynomial, the 16x16 periodic grid resolves all modes.
+    haar_zero = weyl_coefficient_vector_complex(weights, n_grid=16, arg=0.0)
+    haar_unit_error = float(abs(haar_zero[0] - 1.0))
+    haar_nontrivial_error = float(np.max(np.abs(haar_zero[1:])))
 
-    # Cross-check
-    cross_abs_values = np.abs(rho_bessel - rho_weyl)
-    cross_rel_values = cross_abs_values / np.maximum(np.abs(rho_bessel), 1.0e-30)
-    cross_abs_index = int(np.argmax(cross_abs_values))
-    cross_rel_index = int(np.argmax(cross_rel_values))
-    cross_abs = float(cross_abs_values[cross_abs_index])
-    cross_rel = float(cross_rel_values[cross_rel_index])
-    cross_abs_weight = weights[cross_abs_index]
-    cross_rel_weight = weights[cross_rel_index]
+    # Hostile mutations.  Each recomputes from formulas rather than comparing
+    # strings or importing an expected result table.
+    sign_mutation = weyl_coefficient_vector_complex(weights, arg=-ARG).real
+    rho_sign_mutation = normalized_rho(sign_mutation, weights)
+    sign_mutation_gap = float(np.max(np.abs(rho_sign_mutation - rho_weyl)))
 
-    # Computed environment coefficient sequence (use Bessel as the canonical
-    # closed-form value; Weyl is the independent quadrature cross-check).
-    rho_env = rho_bessel.copy()
-    z00_env = float(c00_bessel)
-    z_env = np.array(
-        [dim_su3(p, q) * rho_env[index[(p, q)]] for (p, q) in weights],
-        dtype=float,
-    )
-    r_env = np.diag(rho_env)
+    rho_no_dimension = c_bessel / c_bessel[0]
+    normalization_mutation_gap = float(np.max(np.abs(rho_no_dimension - rho_bessel)))
 
-    # Symmetry checks on rho_(p,q) = rho_(q,p)
-    rho_swap_err = float(np.max(np.abs(swap @ r_env - r_env @ swap)))
-    rho_min = float(np.min(rho_env))
-    rho_max = float(np.max(rho_env))
+    half_domain = weyl_coefficient_vector_complex(weights, domain=np.pi).real
+    rho_half_domain = normalized_rho(half_domain, weights)
+    domain_mutation_gap = float(np.max(np.abs(rho_half_domain - rho_weyl)))
 
-    # Local Wilson four-link factor D_6^loc, reusing the same a_(p,q)(beta).
-    local = rho_bessel.copy()  # a_(p,q)(beta) = rho_(p,q)(beta) for the canonical link.
-    d_local = np.diag(local ** 4)
+    flat_measure = flat_torus_measure_mutation(weights).real
+    rho_flat_measure = normalized_rho(flat_measure, weights)
+    measure_mutation_gap = float(np.max(np.abs(rho_flat_measure - rho_weyl)))
 
-    # Assemble the source-sector factorized transfer law and check structural
-    # gates (self-adjoint, conjugation-symmetric, positive Perron).
-    transfer = multiplier @ d_local @ r_env @ multiplier
-    transfer_sym = float(np.max(np.abs(transfer - transfer.T)))
-    transfer_swap = float(np.max(np.abs(swap @ transfer - transfer @ swap)))
-    transfer_min = float(np.min(transfer))
-    commute_err = float(np.max(np.abs(d_local @ r_env - r_env @ d_local)))
+    weyl_factor_mutation_gap = float(np.max(np.abs(6.0 * c_weyl - c_bessel)))
 
-    # Eigen-action check: R_6^env chi_(p,q) = rho_(p,q)(6) chi_(p,q) on the
-    # marked class-function sector (basis is {chi_(p,q)} themselves).
-    eig_action_err = 0.0
-    n = len(weights)
-    for k in range(n):
-        ek = np.zeros(n)
-        ek[k] = 1.0
-        action = r_env @ ek
-        expected = rho_env[k] * ek
-        eig_action_err = max(eig_action_err, float(np.max(np.abs(action - expected))))
-
-    # Compare to prior witness injections
-    prior_char = np.array(
-        [prior_witness_character_measure(p, q) for (p, q) in weights], dtype=float
-    )
-    prior_resi = np.array(
-        [prior_witness_residual_identification(p, q) for (p, q) in weights], dtype=float
-    )
-    diff_char = float(np.max(np.abs(rho_env - prior_char)))
-    diff_resi = float(np.max(np.abs(rho_env - prior_resi)))
-
-    _, psi = dominant_eigenpair(transfer)
-    expectation = float(psi @ (jmat @ psi))
+    index_mutation = bessel_coefficient_vector(weights, row_weight_mutation=True)
+    rho_index_mutation = normalized_rho(index_mutation, weights)
+    index_mutation_gap = float(np.max(np.abs(rho_index_mutation - rho_bessel)))
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE rho_(p,q)(6) WILSON-ENVIRONMENT COMPUTATION")
+    print("STIPULATED SU(3) CHARACTER INTEGRAL: FINITE EVALUATION AT x=2")
     print("=" * 78)
     print()
-    print("Deterministic inputs / current execution environment")
-    print(f"  beta={BETA:.1f}, argument=beta/3={ARG:.1f}, box=0<=p,q<={NMAX}")
-    print(f"  Bessel mode sum=-{MODE_MAX}..{MODE_MAX}, Weyl grid={WEYL_GRID}x{WEYL_GRID}")
+    print("Supplied mathematical inputs")
+    print(f"  group=SU(3), Haar measure=probability measure, beta label={BETA_LABEL:.1f}")
+    print(f"  x=beta/3={ARG:.1f}, finite box=0<=p,q<={NMAX}")
+    print("  Weyl domain: theta1,theta2 in [0,2pi), theta3=-theta1-theta2")
+    print("  Haar density: |Delta|^2 / (6 (2pi)^2)")
+    print(f"  Bessel modes=-{MODE_MAX}..{MODE_MAX}; cutoff check=-{MODE_CHECK}..{MODE_CHECK}")
+    print(f"  Weyl grid ladder={' -> '.join(str(grid) for grid in WEYL_GRID_LADDER)}")
     print(
         f"  arithmetic=float64, Python={platform.python_version()}, "
         f"NumPy={np.__version__}, SciPy={scipy.__version__}"
     )
     print(f"  platform={platform.platform()}, mantissa bits={sys.float_info.mant_dig}")
     print()
-    print("Computed boundary character coefficients rho_(p,q)(6) (closed form, Bessel-det)")
-    for pq in [(0, 0), (1, 0), (0, 1), (1, 1), (2, 0), (0, 2), (2, 1), (1, 2), (3, 0), (0, 3), (2, 2)]:
-        if pq in index:
-            i = index[pq]
-            print(
-                f"  rho_({pq[0]},{pq[1]})(6) = {rho_bessel[i]:.12e}   "
-                f"(Weyl quadrature: {rho_weyl[i]:.12e})"
-            )
+    print("Normalized finite values rho_(p,q)=c_(p,q)/(d_(p,q)c_(0,0))")
+    for p, q in [
+        (0, 0),
+        (1, 0),
+        (0, 1),
+        (1, 1),
+        (2, 0),
+        (0, 2),
+        (2, 1),
+        (1, 2),
+        (3, 0),
+        (0, 3),
+        (2, 2),
+        (4, 4),
+    ]:
+        i = index[(p, q)]
+        print(
+            f"  rho_({p},{q}) = {rho_bessel[i]:.12e}   "
+            f"(direct Weyl: {rho_weyl[i]:.12e})"
+        )
     print()
-    print("Cross-check Bessel-det (Method A) vs Weyl integration (Method B)")
+    print("Convergence and independent cross-check")
+    print(f"  Bessel normalized drift M={MODE_CHECK} -> M={MODE_MAX} = {mode_drift:.3e}")
+    for (left, right), drift in grid_drifts.items():
+        print(f"  Weyl normalized drift N={left} -> N={right:<2}       = {drift:.3e}")
+    print(f"  max Weyl coefficient imaginary residual          = {weyl_imag_residual:.3e}")
+    print(f"  max raw-coefficient absolute cross-error          = {cross_c_abs:.3e}")
+    print(f"  max raw-coefficient relative cross-error          = {cross_c_rel:.3e}")
     print(
-        f"  max |rho_A - rho_B| (absolute)        = {cross_abs:.3e} "
-        f"at (p,q)={cross_abs_weight}"
+        f"  max normalized absolute cross-error               = {cross_rho_abs:.3e} "
+        f"at {rho_cross_abs_weight}"
     )
     print(
-        f"  max |rho_A - rho_B| / |rho_A|         = {cross_rel:.3e} "
-        f"at (p,q)={cross_rel_weight}"
+        f"  max normalized relative cross-error               = {cross_rho_rel:.3e} "
+        f"at {rho_cross_rel_weight}"
     )
-    print(f"  raw absolute maximum (float64)        = {cross_abs:.16e}")
-    print(f"  raw relative maximum (float64)        = {cross_rel:.16e}")
+    print(f"  c_(0,0)(x=2)                                      = {c_bessel[0]:.12f}")
+    print(f"  finite-box rho min/max                            = {rho_min:.12e}, {float(np.max(rho_bessel)):.12f}")
     print()
-    print("Symmetry / positivity / structural gates")
-    print(f"  rho_(p,q)(6) min/max                  = {rho_min:.12e}, {rho_max:.12f}")
-    print(f"  rho_swap_err (rho_(p,q) = rho_(q,p))  = {rho_swap_err:.3e}")
-    print(f"  rho_(0,0)(6)                          = {rho_env[index[(0, 0)]]:.16f}")
-    print(f"  R_env chi_(p,q) = rho chi_(p,q) error = {eig_action_err:.3e}")
-    print()
-    print("Distance from prior witness injections (was the prior runner using witnesses?)")
-    print(f"  max |rho_env - prior_char_measure|    = {diff_char:.3e}")
-    print(f"  max |rho_env - prior_residual_id|     = {diff_resi:.3e}")
-    print()
-    print("Resulting factorized transfer witness (with computed rho_env)")
-    print(f"  transfer symmetry error               = {transfer_sym:.3e}")
-    print(f"  transfer swap error                   = {transfer_swap:.3e}")
-    print(f"  transfer min entry                    = {transfer_min:.6e}")
-    print(f"  local/environment commutator          = {commute_err:.3e}")
-    print(f"  Perron <J>                            = {expectation:.12f}")
-    print()
-    print(f"  Z(beta=6) = c_(0,0)(6)                = {z00_env:.12f}")
+    print("Hostile-mutation separations from the unmutated evaluation")
+    print(f"  sign x -> -x                                      = {sign_mutation_gap:.3e}")
+    print(f"  omit d_(p,q) in rho normalization                 = {normalization_mutation_gap:.3e}")
+    print(f"  replace [0,2pi)^2 by [0,pi)^2                    = {domain_mutation_gap:.3e}")
+    print(f"  replace Haar density by flat torus measure        = {measure_mutation_gap:.3e}")
+    print(f"  omit Weyl factor 1/6 in raw coefficients          = {weyl_factor_mutation_gap:.3e}")
+    print(f"  attach highest-weight index to determinant row    = {index_mutation_gap:.3e}")
     print()
 
-    # ------------------------------------------------------------------
-    # THEOREM gates: actual Wilson environment data, not witness injection
-    # ------------------------------------------------------------------
     check(
-        "Method A (Bessel-determinant) and Method B (Weyl integration on the Cartan torus) "
-        "produce normalized rho_(p,q)(6) values that agree within the 1e-10 acceptance "
-        "tolerance on the finite 0 <= p,q <= 4 box",
-        cross_abs < 1.0e-10 and cross_rel < 1.0e-10,
+        "the Weyl formula has Haar probability normalization and character orthogonality at x=0",
+        haar_unit_error < 1.0e-14 and haar_nontrivial_error < 1.0e-14,
         detail=(
-            f"max abs={cross_abs:.3e}, max rel={cross_rel:.3e}; two distinct evaluation "
-            "methods agree, with a float64 roundoff-scale discrepancy in this disclosed run"
+            f"|c_(0,0)(0)-1|={haar_unit_error:.3e}; "
+            f"max nontrivial |c_(p,q)(0)|={haar_nontrivial_error:.3e}"
         ),
     )
     check(
-        "the boundary character coefficients rho_(p,q)(6) satisfy rho_(0,0)(6) = 1 exactly "
-        "(normalized Wilson character measure)",
-        abs(rho_env[index[(0, 0)]] - 1.0) < 1.0e-14,
-        detail=f"|rho_(0,0)(6) - 1| = {abs(rho_env[index[(0, 0)]] - 1.0):.3e}",
+        "the Bessel-determinant evaluation is stable under the disclosed mode-cutoff refinement",
+        mode_drift < CONVERGENCE_TOL,
+        detail=f"max normalized drift from M={MODE_CHECK} to M={MODE_MAX}: {mode_drift:.3e}",
     )
     check(
-        "rho_(p,q)(6) is conjugation-symmetric: rho_(p,q)(6) = rho_(q,p)(6) on the "
-        "finite marked-plaquette class-function box",
-        rho_swap_err < 1.0e-12,
-        detail=f"max |swap rho - rho swap| = {rho_swap_err:.3e}",
+        "the direct Weyl evaluation is stable on the final disclosed periodic-grid refinement",
+        final_grid_drift < CONVERGENCE_TOL,
+        detail=(
+            f"max normalized drift from N={WEYL_GRID_LADDER[-2]} to "
+            f"N={WEYL_GRID_LADDER[-1]}: {final_grid_drift:.3e}"
+        ),
     )
     check(
-        "rho_(p,q)(6) is strictly positive on every finite-box weight, matching the "
-        "positive-type expectation for the single-link boundary class function Z_6^env",
+        "the Bessel series and wall-stable direct Weyl quadrature agree on all 25 supplied weights",
+        cross_c_abs < CROSS_ABS_TOL
+        and cross_c_rel < CROSS_REL_TOL
+        and cross_rho_abs < CROSS_ABS_TOL
+        and cross_rho_rel < CROSS_REL_TOL
+        and weyl_imag_residual < CROSS_ABS_TOL,
+        detail=(
+            f"raw max abs={cross_c_abs:.3e}, raw max rel={cross_c_rel:.3e}; "
+            f"rho max abs={cross_rho_abs:.3e}, rho max rel={cross_rho_rel:.3e}"
+        ),
+    )
+    check(
+        "the definition gives rho_(0,0)=1 and the finite values obey conjugation symmetry",
+        abs(rho_bessel[0] - 1.0) < 1.0e-15 and swap_error < SYMMETRY_TOL,
+        detail=f"|rho_(0,0)-1|={abs(rho_bessel[0]-1.0):.3e}; swap error={swap_error:.3e}",
+    )
+    check(
+        "all 25 numerically evaluated normalized coefficients are strictly positive",
         rho_min > 0.0,
-        detail=f"min rho_(p,q)(6) = {rho_min:.6e}",
-    )
-    check(
-        "the finite diagonal coefficient operator R_6^env acts on chi_(p,q) by "
-        "R_6^env chi_(p,q) = rho_(p,q)(6) chi_(p,q) with the computed Wilson coefficients",
-        eig_action_err < 1.0e-14,
-        detail=f"eigen-action error = {eig_action_err:.3e}; the bounded coefficient object is numerically explicit",
-    )
-    check(
-        "the finite factorized framework-point source-sector witness "
-        "exp(3 J) D_6^loc R_6^env exp(3 J) is self-adjoint and conjugation-symmetric "
-        "with the computed rho_env (no witness injection)",
-        transfer_sym < 1.0e-12 and transfer_swap < 1.0e-12 and transfer_min > 0.0,
-        detail=f"sym={transfer_sym:.3e}, swap={transfer_swap:.3e}, min entry={transfer_min:.3e}",
-    )
-    check(
-        "the previous witness injections rho_env_witness(p,q) "
-        "(both spatial_environment_character_measure and residual_environment_identification "
-        "runners) differ from the computed Wilson coefficients by a definite tabulated amount, "
-        "confirming this runner is not just relabelling the prior witness",
-        diff_char > 1.0e-2 and diff_resi > 1.0e-2,
-        detail=f"max |rho - witness_char|={diff_char:.3e}, max |rho - witness_resid|={diff_resi:.3e}",
+        detail=f"minimum finite-box value={rho_min:.12e}",
     )
 
-    # ------------------------------------------------------------------
-    # SUPPORT gates
-    # ------------------------------------------------------------------
-    check(
-        "Z(6) = c_(0,0)(6) > 0 confirms the SU(3) Wilson partition function is well-defined "
-        "and the normalization is consistent",
-        z00_env > 0.0,
-        detail=f"Z(6) = {z00_env:.6f}",
-        bucket="SUPPORT",
-    )
-    check(
-        "the local mixed-kernel factor D_6^loc and the residual environment factor R_6^env "
-        "commute as positive diagonal operators on the character basis",
-        commute_err < 1.0e-12,
-        detail=f"commutator error = {commute_err:.3e}",
-        bucket="SUPPORT",
-    )
-    check(
-        "with explicit bounded rho_(p,q)(6) the factorized transfer Perron expectation <J> is positive, "
-        "matching the structural Perron-positivity expectation of the source sector",
-        expectation > 0.0,
-        detail=f"Perron <J> = {expectation:.6f}",
-        bucket="SUPPORT",
-    )
+    for name, gap in [
+        ("hostile sign mutation x -> -x is detected", sign_mutation_gap),
+        ("hostile omission of d_(p,q) from rho is detected", normalization_mutation_gap),
+        ("hostile half-domain torus integration is detected", domain_mutation_gap),
+        ("hostile flat-torus replacement of Haar density is detected", measure_mutation_gap),
+        ("hostile omission of the Weyl factor 1/6 is detected in raw coefficients", weyl_factor_mutation_gap),
+        ("hostile determinant highest-weight row/column index swap is detected", index_mutation_gap),
+    ]:
+        check(name, gap > 1.0e-6, detail=f"max separation={gap:.3e}", bucket="SUPPORT")
 
+    print()
+    print("Scope boundary: this certificate evaluates only the stipulated integral/data.")
+    print("It supplies no canonical or physical environment identification and no plaquette readout.")
     print()
     print("=" * 78)
     print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")

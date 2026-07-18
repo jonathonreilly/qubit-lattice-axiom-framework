@@ -265,11 +265,12 @@ is consumed is:
    resolves into this note by cascade on C1 alone; T1's claim surface
    is unaffected.
 
-Plain-text progress pointer, not a one-hop authority:
+Plain-text finite-evaluation pointer, not a one-hop authority:
 `docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`
-records where B1's upstream plaquette analytic work currently stands.
-It is not load-bearing for T1, because T1 consumes `<P> = 0.5934` as an
-input (B1), not as a derived value.
+records only the evaluation of an explicitly stipulated finite `SU(3)`
+integral. It is not a progress authority for physical plaquette closure and is
+not load-bearing for T1, because T1 consumes `<P> = 0.5934` as an input (B1),
+not as a derived value.
 
 ## 2026-06-12 Residual-Bridge Source Firewall
 

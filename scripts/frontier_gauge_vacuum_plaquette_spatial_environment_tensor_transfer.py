@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """
-Finite spatial-environment tensor-transfer support packet for the plaquette
-route on the accepted Wilson 3+1 surface.
+Finite matrix-word packet from stipulated SU(3) integral coefficients and
+finite Pieri matrices.
 
 This does not close analytic P(6). It is a truncated support packet that
-sharpens the remaining object: one explicit finite tensor word can be built
-from bounded Wilson character coefficients and finite SU(3)
-fusion/intertwiner multiplicities. It does not prove the full
-spatial-environment boundary-character identity.
+checks one explicit finite matrix word. It does not prove a local-factor
+placement, tensor-transfer operator, spatial-environment identification, or
+boundary-character identity.
 """
 
 from __future__ import annotations
@@ -134,11 +133,11 @@ def main() -> int:
     amp_swap = float(np.max(np.abs(swap @ amp - amp)))
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE SPATIAL ENVIRONMENT FINITE TENSOR PACKET")
+    print("FINITE SU(3) COEFFICIENT/PIERI MATRIX-WORD PACKET")
     print("=" * 78)
     print()
-    print("Finite Wilson local coefficients at beta = 6")
-    print(f"  audited truncations                    = NMAX = {NMAX}, MODE_MAX = {MODE_MAX}")
+    print("Finite stipulated-integral coefficients at x = 2")
+    print(f"  disclosed truncations                  = NMAX = {NMAX}, MODE_MAX = {MODE_MAX}")
     print(f"  c_(0,0)                              = {c00:.15f}")
     for rep in [(0, 0), (1, 0), (0, 1), (1, 1), (2, 0)]:
         i = index[rep]
@@ -154,7 +153,7 @@ def main() -> int:
     print(f"  swap intertwining error (N_f)        = {nf_swap}")
     print(f"  swap intertwining error (N_fbar)     = {nfb_swap}")
     print()
-    print("Tensor-transfer support word from exact ingredients")
+    print("Constructed matrix word from finite inputs")
     print(f"  tensor-word minimum entry            = {word_min:.12f}")
     print(f"  tensor-word swap error               = {word_swap:.3e}")
     print(f"  boundary-amplitude minimum           = {amp_min:.12f}")
@@ -162,42 +161,42 @@ def main() -> int:
     print()
 
     check(
-        "the Wilson local class-function coefficients at beta = 6 are explicit, positive, and conjugation-symmetric on the audited SU(3) irreps",
+        "the stipulated integral coefficients at x = 2 are explicit, positive, and conjugation-symmetric on the finite box",
         c00 > 0.0 and float(np.min(normalized)) > 0.0 and c_swap < 1.0e-12,
         detail=f"min normalized coefficient={float(np.min(normalized)):.6e}, swap error={c_swap:.3e}",
     )
     check(
-        "multiplication by the fundamental and antifundamental characters gives exact nonnegative dominant-weight fusion primitives",
+        "the fundamental and antifundamental Pieri recurrences give exact nonnegative finite matrices",
         nf_nonneg and nfb_nonneg and nf_swap == 0 and nfb_swap == 0,
-        detail="the exact SU(3) recurrence matrices furnish the local intertwiner primitives on the class sector",
+        detail="the exact SU(3) recurrence matrices are independent mathematical inputs",
     )
     check(
-        "the constructed truncated tensor-transfer word built from those exact Wilson coefficients and fusion primitives is positivity-preserving on the audited class sector",
+        "the constructed finite matrix word has nonnegative entries and a nonnegative unit-vector readout",
         word_min >= 0.0 and amp_min >= 0.0,
         detail=f"word min={word_min:.6e}, amplitude min={amp_min:.6e}",
     )
     check(
-        "the constructed finite unit-vector boundary amplitude is compatible with an explicit positive tensor-transfer packet rather than a generic free positive sequence",
+        "the constructed finite matrix word and its unit-vector readout obey conjugation-swap symmetry",
         word_swap < 1.0e-12 and amp_swap < 1.0e-12,
         detail=f"tensor-word swap={word_swap:.3e}, amplitude swap={amp_swap:.3e}",
     )
 
     check(
-        "the finite tensor-transfer packet is atlas-reusable independently of any full beta=6 Perron solve",
+        "the constructed matrix word is nonconstant on the finite box",
         float(np.max(amp)) > float(np.min(amp)),
-        detail="the remaining problem is the full environment Perron evaluation, not local coefficient ambiguity",
+        detail="finite diagnostic only; no transfer or environment interpretation is inferred",
         bucket="SUPPORT",
     )
     check(
-        "the finite packet localizes the remaining plaquette gap to a tensor-transfer boundary-state problem",
+        "the displayed unit-vector component of the constructed matrix is positive",
         amp[index[(0, 0)]] > 0.0,
         detail=f"trivial-channel boundary amplitude={amp[index[(0, 0)]]:.6e}",
         bucket="SUPPORT",
     )
     check(
-        "the tensor-transfer packet strengthens the environment lane without claiming analytic P(6)",
-        amp_min >= 0.0 and c00 > 0.0,
-        detail="the explicit local tensor ingredients are closed; the beta=6 Perron state still is not",
+        "all constructed coefficients, matrix entries, and readout entries are finite",
+        bool(np.all(np.isfinite(normalized)) and np.all(np.isfinite(tensor_word)) and np.all(np.isfinite(amp))),
+        detail="numerical-health diagnostic only",
         bucket="SUPPORT",
     )
 

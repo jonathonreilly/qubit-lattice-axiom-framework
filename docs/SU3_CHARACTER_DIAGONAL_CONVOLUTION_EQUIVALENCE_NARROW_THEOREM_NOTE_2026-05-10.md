@@ -255,8 +255,9 @@ coefficient-source result supplies `(rho_(p,q))`, and this theorem supplies
 the convolution/diagonal equivalence after that typed input is present. The
 bounded coefficient companion
 `GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`
-and the full tensor-transfer program each retain authority over their stated
-physical surfaces.
+supplies only one finite stipulated-integral coefficient packet. It provides
+no physical-surface, environment, or tensor-transfer identification; any such
+application requires its own authority in addition to this abstract theorem.
 
 ## Cited dependencies
 

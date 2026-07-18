@@ -1,6 +1,6 @@
 {
- "edge_count": 14444,
- "node_count": 3966,
+ "edge_count": 14445,
+ "node_count": 3967,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -8769,6 +8769,10 @@
   "microcausality_many_body_nested_commutator_lightcone_bounded_theorem_note_2026-07-18": {
    "deps_hash": "b9e8afcfdbf5",
    "out_degree": 2
+  },
+  "microcausality_volume_uniform_sequence_count_coefficient_bounds_bounded_theorem_note_2026-07-18": {
+   "deps_hash": "2a079681cb55",
+   "out_degree": 1
   },
   "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08": {
    "deps_hash": "3c3e26353fe0",

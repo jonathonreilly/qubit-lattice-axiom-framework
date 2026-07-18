@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py
+runner_sha256: 0dcf59421d41b84b2903ffe6e800446229ced9c66f749226bbd315ccf8e7a5bf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+PASS: W1-k2 multinomial expansion equals the sequence sum
+PASS: W1-k3 multinomial expansion equals the sequence sum
+PASS: W2a inner-miss sequences vanish exactly
+PASS: W2b later-miss sequences vanish exactly (four-site instance)
+PASS: W2c every length-1 sequence stays below the cone
+PASS: W3a exact incident-bond counts respect the 6s bound
+PASS: W3b strengthened product bound dominates the exact surviving counts
+PASS: W3c recurrence instance on the chain: N_{k+1} <= (touching bonds) * N_k
+PASS: W4a volume-uniform coefficient bound holds at k=2 with exact norms
+PASS: W4b parity exhibit: every k=3 sequence commutes with X3 and Z3
+PASS: W4b2 k=2 registers against X3 and the Y3-type probe, Z3 silent
+PASS: W4c k=3 support retreat: every site-3 probe is silent
+PASS: W4d k=4 re-arrival against X3 while Z3 stays silent at k=2 and k=4
+PASS: W5a ratio monotonicity reduces exactly to m >= 1
+PASS: W5b exact window instance gives ratio one-half
+PASS: W5c geometric tail: exact half-ratio sum and the telescoping identity
+PASS: N1 sibling names the volume-uniform constant as needing the path argument
+PASS: N2 axiom memo supplies no dynamics
+PASS: N3 target identifier and labels
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

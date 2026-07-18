@@ -31,3 +31,43 @@ ALL accepted as narrowings (core survives):
 ## Disposition after fixes: pass
 Post-fix runner `TOTAL: PASS=16 FAIL=0`; needle synced to the corrected
 T1 wording; cache SHA re-pinned; quotes verified both directions.
+
+# Block02 review history (2026-07-18)
+
+## Round 0 — supervisor work
+Pre-battery 8/8 (multinomial expansion, dead sequences, unique reaching
+sequence at k=2, later-step death on 4 sites, Z^3 bond-adjacency degree
+10). Two exact discoveries during battery/authoring: (i) the planned
+walk-adjacent count is NOT what the plain multinomial gives — the honest
+Taylor-level count is accumulated-support, volume-uniform per coefficient
+and on a certified local time window only (all-time uniform stays open);
+(ii) the k=3 commutator vanishes sequence-by-sequence against EVERY
+site-3 probe — a full support retreat with k=4 re-arrival (order-parity
+breathing), adopted as the upper-bound-not-equality exhibit.
+
+## Round 1 — combined adversarial lens: 0 blockers / 4 major / 2 minor
+ALL accepted; one finding STRENGTHENED the theorem:
+1. W5's ratio needed the recurrence N_{k+1} <= 6(m+k)N_k stated and
+   proven (unique-prefix extension) with zero-term/t=0/J=0 cases —
+   ADDED, recurrence gated on the chain (N1=1, N2=2 exact).
+2. "Volume-uniform"/"local data only" required the family-level J_*
+   hypothesis — inventory stated explicitly everywhere.
+3. N1 contained two false routes (lens's independent enumeration matched
+   the runner: k=2 X3/Y3 register, Z3 silent; k=3 all silent; k=4
+   re-arrival) — rewritten truthfully with orders > 4 named untested.
+4. The strengthened body claim (every sequence vs every probe) was
+   under-gated — now each k=3 term is gated against both X3 and Z3
+   (generating the site algebra) and Y3 at k=2 is gated.
+5. STRENGTHENING adopted: a touching bond adds at most ONE new site —
+   count improved to prod 6(m+j), ratio (m+k)/(k+1), monotonicity for
+   ALL m >= 1 (the m'=2 absorption deleted).
+6. Frontmatter window synced to the body's certified sufficient window.
+
+## Mutation checks — ten families, all FAIL correctly
+W1 (expansion weight), W2 (later-miss flip), W3 (pair bond count),
+W3c (recurrence factor), W4a (inequality direction — chosen after a
+slack-bound probe lesson), W4c (retreat flip), W4b2 (Z3 silence flip),
+W5 (monotonicity constant), W5a (m>=1 form), N (needle).
+Unmutated: `TOTAL: PASS=19 FAIL=0`; cache SHA-pinned, exit_code 0.
+
+## Disposition after fixes: pass

@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3775 |
+| Ledger rows | 3776 |
 | Applied audit verdicts | 452 |
 | Retained-grade rows, including boxed decorations | 403 |
 | Retained positive theorems | 80 |
@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 308 |
 | Boxed decorations under retained parents | 15 |
 | Open gates | 2 |
-| Unaudited rows | 2955 |
+| Unaudited rows | 2956 |
 | Retained-pending-chain rows | 5 |
 | Audited conditional rows | 20 |
 | Audited renaming rows | 16 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2990 |
+| Total pending rows | 2991 |
 | Ready rows | 635 |
 | Cycle-break targets | 59 |
 | Critical pending | 665 |
-| High pending | 357 |
-| Medium pending | 791 |
-| Leaf pending | 1177 |
+| High pending | 358 |
+| Medium pending | 790 |
+| Leaf pending | 1178 |
 
 Next ready rows by queue order:
 
@@ -181,22 +181,22 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `hypercharge_identification_note`: +6
 - `koide_q23_oh_covariance_nogo_note_2026-04-22`: +6
 - `yt_color_projection_correction_note`: +5
-- `action_normalization_note`: +5
 - `koide_native_zero_section_closure_route_note_2026-04-24`: +5
 - `yt_ew_color_projection_theorem`: +4
 - `yt_ew_m_residual_note_2026-05-02`: +4
 - `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`: +4
 - `gauge_vacuum_plaquette_constant_lift_obstruction_note`: +4
+- `action_normalization_note`: +4
 - `three_generation_observable_count_corollary_note_2026-05-03`: +4
+- `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25`: +4
 - `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24`: +4
+- `single_axiom_hilbert_note`: +4
 - `q_integer_spectrum_theorem_note_2026-05-02`: +4
 - `z2_hw1_mass_matrix_parametrization_note`: +3
 - `gauge_vacuum_plaquette_reduction_existence_theorem_note`: +3
 - `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note`: +3
 - `gauge_vacuum_plaquette_mixed_cumulant_audit_note`: +3
-- `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25`: +3
 - `signed_gravity_response_lane_status_note_2026-04-26`: +3
-- `single_axiom_hilbert_note`: +3
 - `planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30`: +3
 - `teleportation_native_axioms_theory_note`: +3
 - `s3_mass_matrix_conditional_degeneracy_note_2026-07-11`: +2
@@ -275,7 +275,6 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05`: -6
 - `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`: -5
 - `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16`: -5
-- `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10`: -5
 - `schur_covariance_inheritance_narrow_theorem_note_2026-05-02`: -5
 - `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`: -4
 - `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`: -4
@@ -285,7 +284,10 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30`: -4
 - `poisson_self_gravity_mechanism_note`: -4
 - `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30`: -4
+- `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10`: -4
+- `kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04`: -4
 - `gravity_sign_audit_2026-04-10`: -4
+- `ac_reta_hclass_hunit_readout_derivation_obligation`: -4
 - `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`: -4
 - `fermion_parity_z2_grading_theorem_note_2026-05-02`: -3
 - `abj_epsilon_index_square_block_no_go_note_2026-05-30`: -3
@@ -300,9 +302,7 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29`: -3
 - `staggered_3d_self_gravity_sign_note_2026-04-11`: -3
 - `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10`: -3
-- `kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04`: -3
 - `complex_action_note`: -3
-- `ac_reta_hclass_hunit_readout_derivation_obligation`: -3
 - `substrate_to_p_a_forcing_theorem_note_2026-04-30`: -3
 - `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`: -2
 - `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`: -2
@@ -331,19 +331,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4388 |
+| Citation-graph nodes | 4389 |
 | Critical nodes | 755 |
-| High nodes | 425 |
-| Medium nodes | 1068 |
-| Leaf nodes | 2140 |
+| High nodes | 426 |
+| Medium nodes | 1067 |
+| Leaf nodes | 2141 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2063 descendants; score 253.011
-- `graph_first_su3_integration_note` - critical; 1632 descendants; score 64.173
-- `three_generation_observable_theorem_note` - critical; 1240 descendants; score 62.277
+- `minimal_axioms` - critical; 2064 descendants; score 253.512
+- `graph_first_su3_integration_note` - critical; 1633 descendants; score 64.174
+- `three_generation_observable_theorem_note` - critical; 1241 descendants; score 62.278
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 197 descendants; score 61.629
-- `observable_principle_from_axiom_note` - critical; 1079 descendants; score 61.577
-- `plaquette_self_consistency_note` - critical; 1215 descendants; score 49.248
-- `key_terminology` - critical; 1259 descendants; score 44.799
-- `minimal_axioms_2026-05-03` - critical; 1110 descendants; score 44.118
+- `observable_principle_from_axiom_note` - critical; 1080 descendants; score 61.578
+- `plaquette_self_consistency_note` - critical; 1216 descendants; score 49.249
+- `key_terminology` - critical; 1260 descendants; score 44.800
+- `minimal_axioms_2026-05-03` - critical; 1111 descendants; score 44.119

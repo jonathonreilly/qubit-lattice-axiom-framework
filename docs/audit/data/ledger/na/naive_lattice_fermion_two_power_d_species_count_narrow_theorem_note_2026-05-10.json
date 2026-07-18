@@ -62,7 +62,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 16.171,
+  "load_bearing_score": 16.172,
   "load_bearing_step": "Using the gamma anticommutator, (-i a D_naive(k))^2 = (sum_mu sin^2(k_mu a)) I, so D_naive(k)=0 iff every sin(k_mu a)=0.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -83,6 +83,6 @@
   },
   "runner_path": "scripts/frontier_naive_lattice_fermion_two_power_d_species_count_narrow.py",
   "title": "Naive Lattice Fermion 2^d Species Count \u2014 Narrow Theorem",
-  "transitive_descendants": 1152,
+  "transitive_descendants": 1153,
   "verdict_rationale": "The load-bearing step is a genuine algebraic identity check on the operator defined in the note, not a renaming, tuned numerical match, or external comparator. The runner source performs symbolic corner checks, finite d count checks, the d=4 arithmetic, and boundary-context checks; it does not merely print constants for the contested zero-locus result. The Wilson, staggered, and regulator-count rows are contextual safeguards rather than load-bearing inputs."
 }

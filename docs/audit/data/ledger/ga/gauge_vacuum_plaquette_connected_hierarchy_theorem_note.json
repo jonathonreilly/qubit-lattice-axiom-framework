@@ -1528,6 +1528,66 @@
         "total_pass": 8
       },
       "verdict_rationale": "Issue: the common-source identity proves the derivative hierarchy, but not that full hierarchy closure is necessary or equivalent to scalar beta_eff closure; additionally, the displayed summed C_3 onset omits the one-plaquette baseline P_1plaq''(beta). Why this blocks: direct closure of P_L or beta_eff would determine only shell-summed projections, and the runner's positivity checks neither exclude such routes nor validate the full C_3 formula. Repair target: replace the equivalence by a projection statement, restore the local baseline in the three-point expansion, and add a runner check of the complete transport identity. Claim boundary until fixed: the exact uniform-source hierarchy remains valid, while N1/N7 leave direct scalar or spectral closure untested, N2 has no independent wall decomposition, N3/N5 expose negative rhetoric without all-resolution tests, N4 supplies no matching prior witness, and N6/N8 do not exclude indexed alternatives."
+    },
+    {
+      "archived_at": "2026-07-18T03:38:14.649990+00:00",
+      "audit_date": "2026-07-18T03:38:02.345521+00:00",
+      "audit_invocation_history": [
+        "aa9a302ce2df4ad3b12d148f60b033b9"
+      ],
+      "audit_invocation_id": "aa9a302ce2df4ad3b12d148f60b033b9",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+          "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py": "96cfa9c6348eeeae32929f3c1fa5109d1c4aa48987120cbfa64656e390ff3d45",
+          "scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py": "b7aa72f79cfd12f29f19b29f51ba9974024f9b26ab0271057cda1d0256b567ce",
+          "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py": "ee013ee9d87ca89cbda5fd6c7229d4d31cdb9c1eba027aeb7881f31f4d6a4fdc",
+          "scripts/frontier_scalar_3plus1_temporal_ratio.py": "dba67f913ce7daa6ddfd894860d9429fd6fa26e6a6abac9bc6312c30cbaf04e2"
+        },
+        "load_bearing_score": 13.681,
+        "runner_hash": "18e09d760dcfea6c4d2853322eefc2bf54e545870c9bf203081f6be2ac10b6b0",
+        "transitive_descendants": 820
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-drain-ready-20260717-07c4abe2063546f985206bba1496105e-gauge_vacuum_plaquette_c-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source-shift identity and resulting cumulant hierarchy close algebraically. The stronger necessity claim does not follow: an explicit P_L or beta_eff could be obtained without separately closing the full hierarchy, and the displayed onset formula omits the local one-plaquette contribution.",
+      "claim_scope": "The finite-surface common-source identity, its connected-cumulant hierarchy, and the asserted necessity of that hierarchy for explicit beta_eff closure.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-18T03:38:02.345521+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Since W_L depends only on y_p = beta + J_p, d/d beta = sum_r d/d J_r and therefore d C_n/d beta = sum_r C_(n+1).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Correct the summed three-point onset equation by restoring chi_1plaq'(beta), and narrow the hierarchy-necessity language to the transport/Taylor route actually proved before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The exact identity d/d beta = sum_r d/d J_r and its hierarchy consequence are correct. However, the runner imports the onset coefficients and tests only their algebraic manipulation; positivity of two imported coefficients does not establish that every explicit nonperturbative closure must proceed through the full hierarchy. Moreover, the correct onset statement is sum_(r,s) C_3 = chi_1plaq'(beta) + 5 beta^3/118098 + O(beta^4), or equivalently that this coefficient describes the difference from the one-plaquette hierarchy, not the absolute sum written in the note. The asserted negative boundary also lacks N1 alternative-route testing, N2 independence analysis, N3 hidden-premise review, N4 residual matching, N5 resolution tests, N6 indexed partial-closure dispositions, N7 an independent steelman, and N8 cross-cycle dispositions."
     }
   ],
   "prose_corrections": [],

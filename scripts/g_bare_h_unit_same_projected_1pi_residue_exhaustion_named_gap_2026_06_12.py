@@ -74,10 +74,16 @@ def main() -> int:
         "positivity and HS-unit norm derive I_6/sqrt(6)",
         h_matrix == sp.eye(n) / sp.sqrt(n),
     )
-    r_b = sp.simplify(h_matrix[0, 0] ** 2)
+    form_factor_square = sp.simplify(h_matrix[0, 0] ** 2)
     checks.check(
         "under H-MATRIX the diagonal-overlap square is 1/6",
-        r_b == sp.Rational(1, 6),
+        form_factor_square == sp.Rational(1, 6),
+        f"F_RepB^2={form_factor_square}",
+    )
+    r_b = form_factor_square  # only after supplied REP-B-RESIDUE
+    checks.check(
+        "under REP-B-RESIDUE the coefficient is the squared form factor",
+        sp.simplify(r_b - form_factor_square) == 0,
         f"R_B={r_b}",
     )
 
@@ -109,19 +115,27 @@ def main() -> int:
         )
     roots = sp.solve(sp.Eq(residual, 0), g)
     checks.check(
-        "point equality occurs only at the two Hermitian algebraic roots",
+        "point equality occurs only at the two real algebraic roots",
         set(roots) == {-sp.Integer(1), sp.Integer(1)},
         f"roots={roots}",
     )
 
-    section("Missing-H-MATRIX branch")
+    section("Missing bridge branches")
     unbridged_form_factor = sp.Function("f")(g)
     unbridged_residual = sp.simplify(r_oge - unbridged_form_factor**2)
     checks.check(
-        "without H-MATRIX the physical Rep-B coefficient remains symbolic",
+        "without H-MATRIX, even with REP-B-RESIDUE, the coefficient stays symbolic",
         bool(unbridged_residual.atoms(sp.Function))
         and sp.simplify(unbridged_residual - residual) != 0,
         f"unbridged_residual={unbridged_residual}",
+    )
+    missing_residue = sp.Function("r_B")(g)
+    missing_residue_residual = sp.simplify(r_oge - missing_residue)
+    checks.check(
+        "without REP-B-RESIDUE, H-MATRIX leaves the coefficient symbolic",
+        bool(missing_residue_residual.atoms(sp.Function))
+        and sp.simplify(missing_residue_residual - residual) != 0,
+        f"missing_residue_residual={missing_residue_residual}",
     )
     checks.check(
         "no arbitrary-parameter identity follows from point equality",

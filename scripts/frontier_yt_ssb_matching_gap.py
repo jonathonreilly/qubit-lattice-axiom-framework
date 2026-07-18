@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Verifier for the scoped YT SSB matching-gap arithmetic boundary note.
 
-This runner intentionally checks only the finite-dimensional H_unit component
-overlap:
+This runner intentionally checks only the locally defined finite-dimensional
+matrix component overlap (the symbol H_unit is historical):
 
     H_unit = I_(N_iso * N_c) / sqrt(N_iso * N_c)
 
@@ -85,7 +85,7 @@ def close(a: float, b: float) -> bool:
 
 
 def block_1_dimensions() -> PairSpace:
-    print("\n=== Block 1: canonical dimensions ===\n")
+    print("\n=== Block 1: arithmetic dimensions ===\n")
 
     space = PairSpace(n_iso=2, n_c=3)
 
@@ -259,7 +259,7 @@ def main() -> int:
     if FAIL_COUNT == 0:
         print(
             "\n  OUTCOME: exact H_unit component-overlap arithmetic verified.\n"
-            "  Framework instance: <component|H_unit|component> = 1/sqrt(6).\n"
+            "  Arithmetic instance: <component|H_unit|component> = 1/sqrt(6).\n"
             "  Boundary: this does NOT close the physical SSB/Yukawa matching\n"
             "  theorem; that operator-matching problem remains open.\n"
         )

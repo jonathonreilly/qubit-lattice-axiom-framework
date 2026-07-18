@@ -1,19 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/g_bare_two_ward_h_unit_residue_accepted_premise_runner.py
-runner_sha256: 15e038c77e1ec5b9302e236684b57c81a7751a7b6003fbd7314bb0b0a5f8eb8f
+runner_sha256: 717d459da61cff63f90f92a89c65279f178c759955a819c27925bb94fea076b8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 G_BARE TWO-WARD H_UNIT-RESIDUE ACCEPTED-PREMISE BRIDGE
 
 == Part 0: source firewall ==
-PASS: source contains required phrase: Accepted Premises Registration
+PASS: source contains required phrase: Supplied local condition P1
 PASS: source contains required phrase: (P1)
 PASS: source contains required phrase: H_unit-residue identification
-PASS: source contains required phrase: accepted-premise packet entry
+PASS: source contains required phrase: explicit non-satisfying local condition
 PASS: source contains required phrase: not derived in this bridge
+PASS: source contains required phrase: W1-BRIDGE
+PASS: source contains required phrase: adds no premise-registry entry
 PASS: source contains required phrase: G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md
 PASS: source contains required phrase: G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md
 PASS: source contains required phrase: HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md
@@ -33,32 +35,32 @@ PASS: (B1) symbolic c_color = -1/(2 N_c) (-1/(2*N_c))
 PASS: (B1) c_color at N_c=3 evaluates to -1/6 (rational) (-1/6)
 PASS: (B1) SU(3) generators satisfy Tr(T^a T^b) = (1/2) delta_{ab}
 PASS: (B1) SU(3) completeness identity sum_a (T^a)_{ij}(T^a)_{kl} verified
-PASS: (B1) singlet x singlet projection of sum_a T^a otimes T^a vanishes (0)
+PASS: (B1) full-tensor singlet contraction vanishes (not the Fierz coordinate) (0)
 
 == Part 2: (B1) Clifford scalar coefficient c_S = +1 ==
 PASS: (B1) Clifford algebra {gamma_mu, gamma_nu} = 2 eta_{mu nu} I_4 holds
 PASS: (B1) Tr(I_4) = 4 (scalar bilinear normalization)
 PASS: (B1) Tr(gamma_mu) = 0 for mu = 0..3 (traceless Dirac generators)
-PASS: (B1) c_S = +1 (Lorentz-scalar bilinear Clifford coefficient) (1)
+PASS: (B1) chosen Fierz pairing gives Clifford-scalar coordinate c_S=+1 (1)
 
 == Part 3: (B1) Rep-A scalar-singlet coefficient ==
 PASS: (B1) Rep-A symbolic coefficient = - c_S g_bare^2 / (2 N_c) (-g_bare**2/(2*N_c))
 PASS: (B1) Rep-A specialized at N_c = 3 gives -g_bare^2/6 (-g_bare**2/6)
 PASS: (B1) c_color * c_S * g_bare^2 at N_c = 3 equals -g_bare^2/6 (-g_bare**2/6)
 
-== Part 4: (B2) accepted-premise registration check ==
+== Part 4: (B2) supplied-condition boundary check ==
 PASS: (B2) registration phrase present: (P1)
 PASS: (B2) registration phrase present: H_unit-residue identification
 PASS: (B2) registration phrase present: exhausts the complete same-projected 1PI
 PASS: (B2) registration phrase present: Gamma_S^(4)
-PASS: (B2) registration phrase present: accepted-premise packet entry
+PASS: (B2) registration phrase present: explicit non-satisfying local condition
 PASS: (B2) registration phrase present: not derived in this bridge
 
 == Part 5: (B2) same-1PI pinning identity under (P1) ==
 PASS: (B2) coef_A - coef_B simplifies to F^2 - g_bare^2/6 (F**2 - g_bare**2/6)
 
-== Part 6: (B3) substitute W1 identity F_Htt = 1/sqrt(6) ==
-PASS: (B3) W1 identity squared: F_Htt^2 = 1/6 (exact rational) (1/6)
+== Part 6: (B3) conditional W1-BRIDGE arithmetic ==
+PASS: (B3) W1-BRIDGE consequence squared: F_Htt^2 = 1/6 (1/6)
 PASS: (B3) Substituted (M1) becomes (1 - g_bare^2)/6 = 0 (1/6 - g_bare**2/6)
 PASS: (B3) Polynomial g_bare^2 - 1 = 0 has exactly two rational roots ([-1, 1])
 PASS: (B3) Solve for g_bare^2 directly yields exactly {1} ([1])
@@ -69,7 +71,7 @@ PASS: (B4) positive branch: g_bare = +1 (1)
 PASS: (B4) negative branch g_bare = -1 is recorded but excluded by sign convention (-1)
 
 == Part 8: dependency status check ==
-PASS: Rep-B independence (W1) note file exists (docs/G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md)
+PASS: conditional Rep-B boundary note file exists (docs/G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md)
 PASS: Parent same-1PI pinning (W2) note file exists (docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md)
 PASS: Two-Ward closure-chain context note file exists (docs/G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md)
 PASS: Canonical narrow-bridge template file exists (docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
@@ -93,14 +95,17 @@ PASS: (scope) note records open scope phrase: derivation of the positive-branch 
 PASS: (scope) note records open scope phrase: Standard Model top-Yukawa identification
 PASS: (scope) note records open scope phrase: regulator-dependence
 PASS: (scope) no new repo-wide axiom introduced
-PASS: (scope) H_unit premise is existing parent-row admission
+PASS: (scope) P1 is not current dependency authority
 
 == Part 11: forward-chain consistency check ==
 PASS: Forward chain: g_bare=1 + (M1) at N_c=3 reproduces F^2 = 1/6 (1/6 vs 1/6)
 PASS: Closure identity g_bare^2 = 2 N_c F_Htt^2 = 2*3*(1/6) = 1 (1)
 
-TOTAL: PASS=67 FAIL=0
-VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow from the G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM (W1) + Rep-A color-Fierz / Clifford coefficient algebra + accepted-premise packet (P1) by exact sympy rational arithmetic.
+THEOREM: PASS=22 FAIL=0
+HYGIENE: PASS=47 FAIL=0
+
+TOTAL: PASS=69 FAIL=0
+VERDICT: bounded supplied-condition bridge passes; (B1)-(B4) follow from the supplied W1-BRIDGE condition + abstract matrix implication + Rep-A color-Fierz / Clifford coordinate algebra + supplied condition (P1) by exact sympy rational arithmetic.
 
 ----- stderr -----
 

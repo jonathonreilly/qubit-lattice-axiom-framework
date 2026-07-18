@@ -2,18 +2,18 @@
 
 **Date:** 2026-04-18
 **Repair date:** 2026-05-06
-**Type:** positive_theorem, scoped to exact algebraic identity
-**Claim scope:** bounded `H_unit` normalization arithmetic. Given the
-unit-normalized scalar-singlet component
+**Type:** positive_theorem
+**Claim scope:** bounded matrix-definition arithmetic. Define the local
+abstract symbol `H_unit` by
 
 ```text
 H_unit = (1 / sqrt(N_iso * N_c)) * sum_{alpha,a} E_{alpha,a}
 ```
 
-on the canonical orthonormal pair basis, each single component overlap is
-`1 / sqrt(N_iso * N_c)`. For the framework values `(N_iso, N_c) = (2, 3)`,
-that value is `1 / sqrt(6)`. If two labels are both explicitly defined to be
-this same `H_unit` component overlap, both labels evaluate to `1 / sqrt(6)`.
+on a stipulated orthonormal basis. Each component overlap is then
+`1 / sqrt(N_iso * N_c)`. The arithmetic example `(N_iso, N_c) = (2, 3)` gives
+`1 / sqrt(6)`. The definition supplies no framework carrier or physical
+operator.
 
 **Boundary:** this note does not close a retained matching theorem for the
 physical Standard Model Yukawa trilinear. In particular, it does not identify
@@ -67,7 +67,7 @@ orthonormal basis
 |alpha,a>,  1 <= alpha <= N_iso,  1 <= a <= N_c.
 ```
 
-Let `E_{alpha,a}` be the diagonal Wick-contractor / matrix-unit operator that
+Let `E_{alpha,a}` be the diagonal matrix unit that
 acts as the identity on the basis pair `|alpha,a>` and as zero on all other
 basis pairs:
 
@@ -77,7 +77,7 @@ basis pairs:
   0, otherwise.
 ```
 
-The scoped operator in this note is
+The scoped matrix in this note is locally defined as
 
 ```text
 H_unit = (1 / sqrt(D)) * sum_{alpha=1..N_iso} sum_{a=1..N_c} E_{alpha,a}.
@@ -89,7 +89,7 @@ Equivalently, in this basis,
 H_unit = (1 / sqrt(D)) * I_D.
 ```
 
-For the framework instance used in the original note,
+For the arithmetic instance used in the original note,
 
 ```text
 N_iso = 2,  N_c = 3,  D = 6,
@@ -175,7 +175,7 @@ is exactly the component-overlap arithmetic of the stated operator.
 ## 5. What This Claims
 
 - The finite-dimensional identity `(T1)` for any positive `N_iso, N_c`.
-- The framework arithmetic instance `(N_iso, N_c) = (2, 3)` gives
+- The arithmetic instance `(N_iso, N_c) = (2, 3)` gives
   `1 / sqrt(6)`.
 - Two labels defined as the same `H_unit` component overlap evaluate to the
   same number.
@@ -205,10 +205,10 @@ derived by a separate retained action-level operator-matching theorem.
 
 ## 7. Relation To The Ward And Class 5 Notes
 
-`docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md` is the parent authority for the
-framework's `H_unit` definition and for its Ward-side use. This note does not
-rederive that parent theorem; it isolates the local arithmetic consequence of
-the normalized operator once the definition is stated.
+`docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md` is historical Ward-side context
+only. Its staggered-action surface is an unsatisfied condition, and it is not
+authority for a physical `H_unit` here. This note uses only the local abstract
+matrix definition above.
 
 `docs/YT_CLASS_5_NON_QL_YUKAWA_VERTEX_NOTE_2026-04-18.md` discusses
 non-`Q_L` Yukawa trilinear Clebsch-Gordan factors. This note does not certify
@@ -273,7 +273,8 @@ verifier.
 
 ## 10. Cross-References
 
-- `docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md` - parent Ward/H_unit note.
+- `docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md` - historical Ward-side
+  context only; not authority for the local matrix definition.
 - `docs/YT_CLASS_5_NON_QL_YUKAWA_VERTEX_NOTE_2026-04-18.md` - separate
   trilinear Clebsch-Gordan discussion, not certified by this note.
 - `docs/UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md` - sibling

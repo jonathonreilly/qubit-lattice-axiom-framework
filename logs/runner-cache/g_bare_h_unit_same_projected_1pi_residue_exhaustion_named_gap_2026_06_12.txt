@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/g_bare_h_unit_same_projected_1pi_residue_exhaustion_named_gap_2026_06_12.py
-runner_sha256: af4cbda83d86563ea7f743e494ad7a657468e0471d0c2be3c3822fb61c744546
+runner_sha256: 75e3016aa082a7f4a4d3af490efb1c6b822da56e96789a9e94909e050e0c0d6c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.27
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 
@@ -12,7 +12,8 @@ Conditional H-MATRIX branch
 ----------------------------------------------------------------------------------------
 PASS: full matrix-unit commutant is one-dimensional :: nullity=1
 PASS: positivity and HS-unit norm derive I_6/sqrt(6)
-PASS: under H-MATRIX the diagonal-overlap square is 1/6 :: R_B=1/6
+PASS: under H-MATRIX the diagonal-overlap square is 1/6 :: F_RepB^2=1/6
+PASS: under REP-B-RESIDUE the coefficient is the squared form factor :: R_B=1/6
 
 ----------------------------------------------------------------------------------------
 Exact projected residual
@@ -23,15 +24,16 @@ PASS: exact conditional sample Delta(1/2) :: Delta=-1/8
 PASS: exact conditional sample Delta(1) :: Delta=0
 PASS: exact conditional sample Delta(3/2) :: Delta=5/24
 PASS: exact conditional sample Delta(2) :: Delta=1/2
-PASS: point equality occurs only at the two Hermitian algebraic roots :: roots=[-1, 1]
+PASS: point equality occurs only at the two real algebraic roots :: roots=[-1, 1]
 
 ----------------------------------------------------------------------------------------
-Missing-H-MATRIX branch
+Missing bridge branches
 ----------------------------------------------------------------------------------------
-PASS: without H-MATRIX the physical Rep-B coefficient remains symbolic :: unbridged_residual=g_bare**2/6 - f(g_bare)**2
+PASS: without H-MATRIX, even with REP-B-RESIDUE, the coefficient stays symbolic :: unbridged_residual=g_bare**2/6 - f(g_bare)**2
+PASS: without REP-B-RESIDUE, H-MATRIX leaves the coefficient symbolic :: missing_residue_residual=g_bare**2/6 - r_B(g_bare)
 PASS: no arbitrary-parameter identity follows from point equality :: Delta(1)=0, Delta(2)=1/2
 
-TOTAL: PASS=12, FAIL=0
+TOTAL: PASS=14, FAIL=0
 
 ----- stderr -----
 

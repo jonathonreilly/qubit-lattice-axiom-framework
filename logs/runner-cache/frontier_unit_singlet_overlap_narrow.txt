@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_unit_singlet_overlap_narrow.py
-runner_sha256: 05fcdfa676ebe4500dd59a3b8cfae165fffe25297e7b362f4f48b1f49302e7f5
+runner_sha256: 66a3b013720d6b2d04c38d657aa03041d07e3abbf3f4e1258f8485272b85a092
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.33
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 

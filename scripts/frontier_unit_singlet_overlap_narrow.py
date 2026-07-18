@@ -243,6 +243,10 @@ def numerical_commutant_reconstruction(n: int, seed: int) -> dict[str, object]:
     overlaps = np.array([hs_unit[index, index] for index in range(n)])
     return {
         "nullity": nullity,
+        "smallest_singular_value": float(singular_values[-1]),
+        "first_nonzero_singular_value": (
+            float(singular_values[-2]) if n > 1 else math.inf
+        ),
         "commutator_error": commutator_error,
         "identity_error": identity_error,
         "hermitian_error": hermitian_error,
@@ -255,7 +259,28 @@ def numerical_commutant_reconstruction(n: int, seed: int) -> dict[str, object]:
 def audit_independent(checks: Checks) -> None:
     section("Independent random-unitary common-commutant reconstruction")
     for n in EXACT_DIMENSIONS:
-        result = numerical_commutant_reconstruction(n, seed=8100 + 37 * n)
+        base_seed = 8100 + 37 * n
+        results = [
+            numerical_commutant_reconstruction(n, seed=base_seed + offset)
+            for offset in range(3)
+        ]
+        result = results[0]
+        checks.check(
+            f"n={n} deterministic multi-seed reconstructions are stable and separated",
+            all(item["nullity"] == 1 for item in results)
+            and all(item["smallest_singular_value"] < NUMERIC_TOL for item in results)
+            and (
+                n == 1
+                or min(item["first_nonzero_singular_value"] for item in results)
+                > 1.0e-6
+            )
+            and all(item["identity_error"] < NUMERIC_TOL for item in results),
+            (
+                f"seeds={list(range(base_seed, base_seed + 3))}, "
+                f"max_null_sv={max(item['smallest_singular_value'] for item in results):.3e}, "
+                f"min_nonzero_sv={min(item['first_nonzero_singular_value'] for item in results):.3e}"
+            ),
+        )
         checks.check(
             f"n={n} fresh unitary-conjugation constraints have one-dimensional commutant",
             result["nullity"] == 1 and result["commutator_error"] < NUMERIC_TOL,
@@ -316,6 +341,17 @@ def audit_hostile(checks: Checks) -> None:
         and negative_props["hs_unit"]
         and not negative_props["psd"],
         f"minimum_eigenvalue={min(negative_branch.eigenvals())}",
+    )
+
+    phase_branch = sp.I * target
+    phase_props = matrix_properties(phase_branch)
+    checks.check(
+        "omitting both positivity and Hermiticity leaves a non-real phase branch",
+        phase_props["central"]
+        and phase_props["hs_unit"]
+        and not phase_props["hermitian"]
+        and not phase_props["psd"],
+        f"phase_overlap={phase_branch[0, 0]}",
     )
 
     first_projector = sp.zeros(n)

@@ -1,4 +1,4 @@
-# Two-Ward `g_bare` Route H_unit-Residue Accepted-Premise Bridge
+# Two-Ward `g_bare` Route H_unit-Residue Supplied-Condition Bridge
 
 **Date:** 2026-05-26
 **Claim type:** bounded_theorem
@@ -11,7 +11,7 @@ above is a source-side claim-boundary declaration, not an audit verdict.
 
 ## Claim
 
-Given the supplied accepted-premise packet (P1) below — the
+Given the explicit non-satisfying local condition (P1) below — the
 H_unit-residue identification
 
 ```text
@@ -20,58 +20,69 @@ exhausts the complete same-projected 1PI Gamma_S^(4) coefficient on the
 retained Q_L block for arbitrary g_bare                              (P1)
 ```
 
-— together with the Rep-B-independence theorem
+— together with the following ordinary local bridge hypothesis:
 
 ```text
-F_Htt^(0)(g_bare) = 1 / sqrt(6)   for all g_bare                     (W1)
+for each g_bare, a physical construction supplies K(g_bare) in End(C^6),
+proves K >= 0, [K,E_jk]=0 for every matrix unit, and
+Tr(K^dagger K)=1, and identifies
+F_Htt^(0)(g_bare)=<e_j,K(g_bare)e_j>                    (W1-BRIDGE)
 ```
 
-from
-[`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md),
-the following narrow conditional consequence holds:
+the abstract central-positive Hilbert--Schmidt theorem gives
+`F_Htt^(0)(g_bare)=1/sqrt(6)`, and the following narrow conditional
+consequence holds. Neither this note nor the
+[`Rep-B conditional corollary`](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md)
+derives W1-BRIDGE for a physical operator.
+
+For this note, "same-projected 1PI" means the four-fermion vertex of a
+fermion-only effective action after tree-level gauge integration. The OGE
+graph is not 1PI in the full gauge-plus-fermion theory. Premise (P1), not
+W1-BRIDGE or the abstract theorem, supplies the two-insertion residue/source
+normalization and exhaustion identification used in `(B2)`.
 
 ```text
-(B1)  Rep-A scalar-singlet coefficient (complete tree-level coefficient
-      from the bare action on Q_L):
+(B1)  Rep-A scalar-singlet coordinate in the declared direct/exchange Fierz
+      basis and continuum/small-lattice-momentum kernel convention:
         Gamma_S^(4)(q^2; g_bare) = - c_S * g_bare^2 / (2 N_c q^2) * O_S
       with c_S = +1 and N_c = 3 (color-Fierz + Clifford trace identities).
-(B2)  (P1) registers F_Htt^(0)(g_bare)^2 as the complete same-projected
+(B2)  (P1) supplies F_Htt^(0)(g_bare)^2 as the complete same-projected
       1PI residue coefficient, so equating Rep A with the H_unit residue
       gives the conditional same-1PI pinning identity
         F_Htt^(0)(g_bare)^2 = g_bare^2 / (2 N_c)                     (M1)
-(B3)  Substitute (W1) into (M1) with N_c = 3:
+(B3)  Under W1-BRIDGE, substitute the derived value into (M1) with N_c = 3:
         (1 / sqrt(6))^2 = g_bare^2 / 6
         1/6           = g_bare^2 / 6
         g_bare^2       = 1
 (B4)  On the positive bare-coupling branch, g_bare = 1.
 ```
 
-This is an exact rational-arithmetic identity once (P1) is registered as
-an accepted-premise packet entry, with the usual positive bare-coupling
-branch convention used only for the final square-root readout in (B4).
+This is an exact rational-arithmetic identity once (P1) and W1-BRIDGE are
+separately supplied, with the usual positive bare-coupling branch convention
+used only for the final square-root readout in (B4).
 The bridge does **not** derive (P1) from the Wilson-plaquette +
-staggered-Dirac bare action on `Q_L`; it formally registers (P1) as the
-existing H_unit-residue admission, then composes it with the Rep-A
-color-Fierz/Clifford coefficient algebra (B1) and the W1 identity to
+staggered-Dirac bare action on `Q_L`; it keeps (P1) visible as an ordinary
+unsatisfied condition, then composes it with the Rep-A
+color-Fierz/Clifford coefficient algebra (B1) and the conditional
+W1-BRIDGE consequence to
 land (B3), and conditionally (B4), by polynomial-rational arithmetic
 over `Q`.
 
-This narrow theorem follows the canonical accepted-premise bridge
-pattern for the open H_unit-residue admission carried by the
+The historical parent described this input in an
 `§"Admissions (load-bearing, not yet derived)"` section of
 [`G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md).
-It does not assert or predict any parent row's audit status.
+That description is provenance only: current premise policy grants historical
+admissions no dependency authority. This note does not assert or predict any
+parent row's audit status.
 
-## Accepted Premises Registration (2026-05-26 narrow-bridge)
+## Supplied local condition P1
 
-In the canonical narrow-bridge form used elsewhere in the repo, this
-section formally registers the open non-framework input the proof-walk
-uses, in named-premise form. It introduces no new repo-wide axiom and no
-new admission outside the parent row's existing H_unit-residue premise:
-this is a structural re-statement of the admission already named in
-§"Admissions (load-bearing, not yet derived)" of
-[`G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md)
-in audit-readable named-premise form.
+The legacy filename records this note's earlier premise treatment. P1 is not
+listed in `axiom_premise_nodes`, supplies no dependency authority, and does
+not convert the physical identification into a derived fact. It functions
+only as a visibly supplied local condition. This source correction does not
+alter any historical ledger decision or replace P1 with the abstract matrix
+theorem.
 
 - **(P1)** *H_unit-residue identification.* On the retained `Q_L = (2,3)`
   block of the Wilson-plaquette + staggered-Dirac bare action, with
@@ -91,17 +102,18 @@ in audit-readable named-premise form.
 
   on `Q_L`. Equivalently, no additional retained scalar-singlet residue
   contributes to the same projected coefficient under (P1). **Status:**
-  accepted-premise packet entry (admitted bridge identification,
-  not derived in this bridge). The D17 uniqueness of the
+  explicit non-satisfying local condition, not derived in this bridge and not
+  premise authority. The D17 uniqueness of the
   unit-normalized scalar-singlet composite on `Q_L` is the
   source-text motivation for (P1) but is not by itself a derivation
   of the 1PI exhaustion bridge.
 
-The registered premise (P1) feeds step (B2) of the §"Proof-walk" table
+The supplied condition (P1) feeds step (B2) of the §"Proof-walk" table
 below. Steps (B1) and (B3) consume only the Rep-A
 color-Fierz/Clifford coefficient algebra (single-gluon exchange on the
 scalar-singlet channel with the SU(`N_c`) color-Fierz factor
-`-1/(2 N_c)`) and the W1 identity respectively. Step (B4) is
+`-1/(2 N_c)`) and W1-BRIDGE plus the abstract matrix implication,
+respectively. Step (B4) is
 the positive-branch readout of an exact rational square root in `Q`.
 
 ## Proof-walk
@@ -109,15 +121,17 @@ the positive-branch readout of an exact rational square root in `Q`.
 | Step | Statement | Load-bearing input | Lattice-action input? |
 |---|---|---|---|
 | (B1) | `Gamma_S^(4)(q^2; g_bare) = - c_S * g_bare^2 / (2 N_c q^2) * O_S` with `c_S = +1`, `N_c = 3` | Single-gluon-exchange tree-level coefficient on the unique scalar-singlet channel; SU(N_c) color-Fierz factor `-1/(2 N_c)` and Clifford scalar coefficient | symbolic only (bare-action coefficient algebra; no specific Wilson value consumed) |
-| (B2) | Under (P1), the same projected coefficient equals `- F_Htt^(0)(g_bare)^2 / q^2 * O_S`, so equating coefficients gives `F_Htt^(0)(g_bare)^2 = g_bare^2 / (2 N_c)` | (P1) accepted-premise packet entry | no |
-| (B3) | Substitute the W1 identity `F_Htt^(0) = 1/sqrt(6)` and `N_c = 3` into (M1): `1/6 = g_bare^2 / 6`, hence `g_bare^2 = 1` | [`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md) (W1) + rational arithmetic in `Q` | no |
+| (B2) | Under (P1), the same projected coefficient equals `- F_Htt^(0)(g_bare)^2 / q^2 * O_S`, so equating coefficients gives `F_Htt^(0)(g_bare)^2 = g_bare^2 / (2 N_c)` | (P1) explicit non-satisfying local condition | no |
+| (B3) | Under W1-BRIDGE, the abstract theorem gives `F_Htt^(0) = 1/sqrt(6)`; substituting it and `N_c = 3` into (M1) gives `1/6 = g_bare^2 / 6`, hence `g_bare^2 = 1` | W1-BRIDGE (supplied) + [`UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md`](UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md) (abstract implication only) + rational arithmetic in `Q` | no |
 | (B4) | On the positive bare-coupling branch, `g_bare = 1` | Positive-branch convention on `g_bare` (sign convention; no observed value consumed) | no |
 
-The bridge does not cite a specific Wilson plaquette value, staggered
+The symbol `q^2` in (B1) is the continuum/small-lattice-momentum kernel
+convention, not an exact Wilson-lattice propagator. The bridge does not cite
+a specific Wilson plaquette value, staggered
 gauge-coupling value, Brillouin-zone label, link-unitary value, lattice
 scale `u_0`, a Monte Carlo measurement, or a fitted observational value.
 All steps (B1)–(B4) are coefficient algebra and rational arithmetic in
-`Q` once (P1) is registered.
+`Q` once (P1) and W1-BRIDGE are supplied.
 
 ## Exact arithmetic check (sympy-verified)
 
@@ -129,18 +143,22 @@ The runner verifies (B1)–(B4) symbolically via sympy on exact rationals:
 - (B2) Build the H_unit-residue coefficient symbolically as
   `coef_B = - F_Htt^2`. Under (P1), `coef_A = coef_B` gives the
   same-1PI pinning identity `F_Htt^2 = g_bare^2 / (2 N_c)`.
-- (B3) Substitute `F_Htt = 1/sqrt(6)` (W1) and `N_c = 3`,
+- (B3) Under W1-BRIDGE, substitute the abstract theorem's consequence
+  `F_Htt = 1/sqrt(6)` and `N_c = 3`,
   obtaining `1/6 = g_bare^2 / 6`, hence `g_bare^2 = 1`. The runner
   verifies the rational identity directly and then solves the
   univariate polynomial `g_bare^2 - 1 = 0` over `Q[g_bare]`.
-- (B4) The positive root `g_bare = 1` is the framework lattice-unit
-  value of the bare coupling. The runner records the negative root
-  `g_bare = -1` is excluded by the sign convention.
+- (B4) The positive root `g_bare = 1` is only the conditional branch readout
+  after (P1), W1-BRIDGE, and the sign convention are supplied. It is not an
+  independently derived framework value. The runner records the negative
+  root `g_bare = -1` as the other algebraic branch.
 
-The Rep-A coefficient algebra is exercised three independent ways:
-direct construction, color-Fierz identity verification on the
-`N_c × N_c` algebra, and the explicit `c_S = +1` Clifford trace from a
-small Dirac-algebra check on `M_4(C)`.
+The Rep-A coordinate algebra is exercised three independent ways: direct
+construction, verification of the exchange and direct-singlet coordinates
+in the SU(`N_c`) completeness identity, and the explicit `c_S = +1`
+Clifford trace for the runner's chosen Fierz index convention on `M_4(C)`.
+The direct-singlet coordinate is not described as an orthogonal projection
+of the full color tensor.
 
 No PDG-observed value, no lattice action plaquette evaluation, no
 Monte Carlo measurement, no fitted top-Yukawa value, and no continuum
@@ -148,12 +166,12 @@ top-quark mass enters this proof-walk.
 
 ## Load-Bearing Dependencies
 
-- [`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md)
-  — supplies the W1 identity `F_Htt^(0)(g_bare) = 1/sqrt(6)` used in
-  step (B3).
+- W1-BRIDGE is an ordinary explicit hypothesis, supplied rather than derived.
+- [`UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md`](UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md)
+  — supplies only the abstract matrix implication used after W1-BRIDGE.
 - [`G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md)
-  — parent conditional-support row whose Admissions section carries the
-  H_unit-residue premise that this bridge records as (P1).
+  — historical context that names the H_unit-residue condition; it is not
+  premise authority for this source.
 
 ## Non-Load-Bearing Context
 
@@ -162,27 +180,23 @@ top-quark mass enters this proof-walk.
   reproduced here as (B1)-(B4) is the same chain that note records;
   this bridge does not promote that row's status, it formalizes (P1)
   for the H_unit-residue branch.
-- `UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md`
-  proves only an abstract finite-dimensional statement: a positive,
-  full-matrix-central, Hilbert--Schmidt-unit endomorphism of `C^n` is
-  `I_n/sqrt(n)`. It does not establish those hypotheses for a physical
-  composite on `Q_L`. Abstract source-text context only; not a load-bearing
-  dependency for the accepted-premise proof-walk above.
+- `G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`
+  records the same conditional physical boundary. It does not establish
+  W1-BRIDGE and is not authority for the physical matrix hypotheses here.
 - `YT_WARD_IDENTITY_DERIVATION_THEOREM.md`
   carries the same-`Gamma^(4)` two-representation framing as a
   background reference. Plain-text pointer; the abstract coefficient
   algebra above does not depend on its current effective status.
 - `HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`
-  is a narrow-bridge template whose accepted-premise
-  registration pattern this note mirrors. Pattern reference only;
-  no algebraic content is consumed.
+  is a historical formatting reference only; no premise authority or
+  algebraic content is consumed.
 - `MINIMAL_AXIOMS_2026-05-20.md` states the repo baseline containing
   the one-qubit operator algebra and `Z^3` spatial substrate. This note
   introduces no new repo-wide axiom; the Rep-A coefficient algebra and
   the W1 identity are admitted-context algebra and do not consume the
   baseline.
 
-The open physics premise exposed by this bridge is exactly (P1). The
+The open physics inputs exposed by this bridge are (P1) and W1-BRIDGE. The
 positive branch in (B4) is a sign convention for reading `g_bare` from
 `g_bare^2 = 1`; without it, the bounded arithmetic conclusion is
 `g_bare^2 = 1`. The row remains unaudited until the independent audit
@@ -195,6 +209,9 @@ This bridge does not close:
 
 - derivation of the H_unit-residue identification (P1) from the
   Wilson-plaquette + staggered-Dirac bare action on `Q_L`;
+- derivation of W1-BRIDGE for a physical operator, including positivity,
+  full-matrix centrality, Hilbert--Schmidt unit norm, and the form-factor
+  identification;
 - the missing same-projected 1PI exhaustion bridge itself (the open
   bridge named by the parent row);
 - a derivation of the SU(`N_c`) color-Fierz coefficient `-1/(2 N_c)`
@@ -211,9 +228,10 @@ This bridge does not close:
   as a separate bounded identity packet; downstream status of the
   parent same-1PI pinning row is decided by the audit lane).
 
-The bridge re-bases the parent's existing H_unit-residue admission
-onto the explicit (P1) accepted-premise registration. It does not
-eliminate admission; it formally exposes the conditional chain.
+This source-boundary correction neither treats the historical admission
+language as current authority nor replaces P1 with a theorem. It adds no premise-registry entry
+or framework authority; it makes P1 and W1-BRIDGE
+visible as separate unsatisfied local conditions required by the chain.
 
 ## Verification
 
@@ -227,8 +245,8 @@ Expected:
 
 ```text
 TOTAL: PASS=N FAIL=0
-VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow from
-the G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM (W1) + Rep-A
-color-Fierz / Clifford coefficient algebra + accepted-premise
-packet (P1) by exact sympy rational arithmetic.
+VERDICT: bounded supplied-condition bridge passes conditionally; (B1)-(B4)
+follow from W1-BRIDGE + the abstract matrix implication + Rep-A color-Fierz /
+Clifford coefficient algebra + supplied condition (P1) by exact sympy
+rational arithmetic.
 ```

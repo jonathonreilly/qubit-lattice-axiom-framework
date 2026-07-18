@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Narrow accepted-premise bridge for the two-Ward `g_bare` route H_unit-residue.
+"""Narrow supplied-condition bridge for the two-Ward `g_bare` route.
 
 This runner verifies the bounded conditional consequence (B1)-(B4) of
 G_BARE_TWO_WARD_H_UNIT_RESIDUE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md:
@@ -7,16 +7,17 @@ G_BARE_TWO_WARD_H_UNIT_RESIDUE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.m
   (P1) := the tree-level matrix element F_Htt^(0)(g_bare) =
           <0|H_unit|tbar t>_tree exhausts the complete same-projected
           1PI Gamma_S^(4) coefficient on the retained Q_L block for
-          arbitrary g_bare (admitted in this row as a single
-          accepted-premise packet entry).
+          arbitrary g_bare (supplied here as an explicit non-satisfying
+          local condition).
   =>  (B1) Rep-A scalar-singlet coefficient
             Gamma_S^(4) = - c_S * g_bare^2 / (2 N_c q^2) * O_S
             with c_S = +1 and N_c = 3 (color-Fierz + Clifford scalar
             trace identities).
-  =>  (B2) (P1) registers F_Htt^(0)(g_bare)^2 as the complete same-
+  =>  (B2) (P1) supplies F_Htt^(0)(g_bare)^2 as the complete same-
             projected 1PI residue coefficient, giving the conditional
             same-1PI pinning identity F_Htt^(0)^2 = g_bare^2 / (2 N_c).
-  =>  (B3) substitute the W1 identity F_Htt^(0) = 1/sqrt(6)
+  =>  (B3) under the separately supplied W1-BRIDGE condition, substitute
+            the abstract matrix consequence F_Htt^(0) = 1/sqrt(6)
             with N_c = 3: g_bare^2 = 1 (exact rational arithmetic
             in Q[g_bare]).
   =>  (B4) on the positive bare-coupling branch, g_bare = 1.
@@ -43,15 +44,28 @@ NOTE_PATH = (
 
 PASS = 0
 FAIL = 0
+THEOREM_PASS = 0
+THEOREM_FAIL = 0
+HYGIENE_PASS = 0
+HYGIENE_FAIL = 0
+CURRENT_LANE = "theorem"
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
-    global PASS, FAIL
+    global PASS, FAIL, THEOREM_PASS, THEOREM_FAIL, HYGIENE_PASS, HYGIENE_FAIL
     status = "PASS" if condition else "FAIL"
     if condition:
         PASS += 1
+        if CURRENT_LANE == "theorem":
+            THEOREM_PASS += 1
+        else:
+            HYGIENE_PASS += 1
     else:
         FAIL += 1
+        if CURRENT_LANE == "theorem":
+            THEOREM_FAIL += 1
+        else:
+            HYGIENE_FAIL += 1
     msg = f"{status}: {name}"
     if detail:
         msg += f" ({detail})"
@@ -64,11 +78,13 @@ def part0_source_firewall() -> None:
     note = NOTE_PATH.read_text(encoding="utf-8")
 
     required = [
-        "Accepted Premises Registration",
+        "Supplied local condition P1",
         "(P1)",
         "H_unit-residue identification",
-        "accepted-premise packet entry",
+        "explicit non-satisfying local condition",
         "not derived in this bridge",
+        "W1-BRIDGE",
+        "adds no premise-registry entry",
         "G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md",
         "G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
         "HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
@@ -191,21 +207,13 @@ def part1_color_fierz_coefficient() -> sp.Rational:
         completeness_ok,
     )
 
-    # Now project on the color-singlet x color-singlet bilinear
-    # (psibar^i psi^j)(psibar^k psi^l) with j=i, l=k summed. The
-    # delta_{il} delta_{kj} piece contracts to N_c (sum_{i,k} delta_{ik}
-    # ...), and the -(1/N_c) delta_{ij} delta_{kl} piece contracts to
-    # N_c^2 / N_c = N_c. So the relative coefficient on the singlet
-    # projection is -1/(2 N_c) (from the -(1/(2 N_c)) delta_{ij} delta_{kl}
-    # piece).
-    # Concretely: the singlet bilinear coefficient is
+    # Contrast the direct singlet-singlet contraction of the full tensor with
+    # the direct-singlet coordinate in the nonorthogonal Fierz tensor basis.
+    # The full contraction is
     #   sum_a delta_{ij} delta_{kl} (T^a)_{ij} (T^a)_{kl}
     #     = (1/2) * (N_c - (1/N_c) N_c^2) = (1/2) * (N_c - N_c) = 0
-    # That zero verifies the "color singlet receives no traceless adjoint
-    # contribution" sub-identity used in the Fierz reduction.
-    # For the SINGLET-projected bilinear coefficient on (psibar T psi)
-    # (psibar T psi), the relevant Fierz reduction extracts the -1/(2 N_c)
-    # delta_{ij} delta_{kl} piece. We verify by direct contraction:
+    # while completeness gives coordinate -1/(2 N_c) on the
+    # delta_{ij}delta_{kl} basis tensor. These are different operations.
     singlet_proj_diff = 0
     for i in range(N_c):
         for k in range(N_c):
@@ -219,15 +227,12 @@ def part1_color_fierz_coefficient() -> sp.Rational:
                         singlet_proj_diff += val
     singlet_proj_diff = sp.simplify(singlet_proj_diff)
     check(
-        "(B1) singlet x singlet projection of sum_a T^a otimes T^a vanishes",
+        "(B1) full-tensor singlet contraction vanishes (not the Fierz coordinate)",
         singlet_proj_diff == 0,
         str(singlet_proj_diff),
     )
 
-    # The -1/(2 N_c) piece is the residual color-singlet bilinear
-    # coefficient AFTER Fierz reordering. We do not re-derive the full
-    # Fierz here (admitted background-algebra coefficient per
-    # § Boundaries), but we record the symbolic value used by (B1).
+    # The -1/(2 N_c) value returned is only the declared tensor coordinate.
     return c_color_at_3
 
 
@@ -318,12 +323,14 @@ def part2_clifford_scalar_coefficient() -> sp.Integer:
         tr_g_ok,
     )
 
-    # The scalar bilinear (psibar psi) has Clifford coefficient c_S = +1
-    # (identity matrix on Dirac indices). The runner records c_S = +1
-    # explicitly.
-    c_S = sp.Integer(1)
+    # Contract the vector-current tensor with the scalar dual in the chosen
+    # Fierz index pairing.  The normalization 16 is the scalar-basis norm.
+    c_S = sp.simplify(
+        sum((gammas[mu] * (metric[mu] * gammas[mu])).trace() for mu in range(4))
+        / 16
+    )
     check(
-        "(B1) c_S = +1 (Lorentz-scalar bilinear Clifford coefficient)",
+        "(B1) chosen Fierz pairing gives Clifford-scalar coordinate c_S=+1",
         c_S == sp.Integer(1),
         str(c_S),
     )
@@ -367,8 +374,8 @@ def part3_rep_a_coefficient(c_color: sp.Rational, c_S: sp.Integer) -> sp.Expr:
 
 
 def part4_p1_registration() -> None:
-    """Verify (B2): the source note registers (P1) as an accepted-premise."""
-    print("\n== Part 4: (B2) accepted-premise registration check ==")
+    """Verify (B2): the source exposes P1 as a non-satisfying condition."""
+    print("\n== Part 4: (B2) supplied-condition boundary check ==")
     note = NOTE_PATH.read_text(encoding="utf-8")
 
     required_p1 = [
@@ -376,7 +383,7 @@ def part4_p1_registration() -> None:
         "H_unit-residue identification",
         "exhausts the complete same-projected 1PI",
         "Gamma_S^(4)",
-        "accepted-premise packet entry",
+        "explicit non-satisfying local condition",
         "not derived in this bridge",
     ]
     for phrase in required_p1:
@@ -406,8 +413,8 @@ def part5_pinning_identity(coef_A_3: sp.Expr) -> sp.Expr:
 
 
 def part6_substitute_w1(M1: sp.Expr) -> sp.Rational:
-    """Verify (B3): substitute the W1 identity F = 1/sqrt(6) into (M1)."""
-    print("\n== Part 6: (B3) substitute W1 identity F_Htt = 1/sqrt(6) ==")
+    """Verify (B3) arithmetic after the supplied W1-BRIDGE condition."""
+    print("\n== Part 6: (B3) conditional W1-BRIDGE arithmetic ==")
 
     g_bare = sp.Symbol("g_bare", real=True)
     F = sp.Symbol("F", real=True)
@@ -416,7 +423,7 @@ def part6_substitute_w1(M1: sp.Expr) -> sp.Rational:
     # F^2 = 1/6 exact
     F_sq = sp.simplify(F_W1**2)
     check(
-        "(B3) W1 identity squared: F_Htt^2 = 1/6 (exact rational)",
+        "(B3) W1-BRIDGE consequence squared: F_Htt^2 = 1/6",
         F_sq == sp.Rational(1, 6),
         str(F_sq),
     )
@@ -488,7 +495,7 @@ def part8_dependency_status() -> None:
         / "docs/G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md"
     )
     check(
-        "Rep-B independence (W1) note file exists",
+        "conditional Rep-B boundary note file exists",
         dep_w1.is_file(),
         str(dep_w1.relative_to(ROOT)),
     )
@@ -570,18 +577,17 @@ def part10_scope_boundary_check() -> None:
         "introduces no new repo-wide axiom" in note_flat,
     )
     check(
-        "(scope) H_unit premise is existing parent-row admission",
-        "no new admission outside the parent row's existing H_unit-residue premise"
-        in note_flat,
+        "(scope) P1 is not current dependency authority",
+        "supplies no dependency authority" in note_flat,
     )
 
 
 def part11_chain_consistency() -> None:
     """Cross-check: substituting g_bare = 1 reproduces F_Htt^2 = 1/6 forward.
 
-    This is a forward chain consistency check: given W1 (F = 1/sqrt(6)) and
-    (M1) (F^2 = g_bare^2 / (2 N_c)) at N_c = 3, then at g_bare = 1 we
-    must have F^2 = 1/6 (which W1 already provides). This is the
+    This is a forward chain consistency check: given the W1-BRIDGE consequence
+    (F = 1/sqrt(6)) and (M1) (F^2 = g_bare^2 / (2 N_c)) at N_c = 3, then at
+    g_bare = 1 we must have F^2 = 1/6. This is the
     same-1PI pinning identity rendered forward.
     """
     print("\n== Part 11: forward-chain consistency check ==")
@@ -606,29 +612,38 @@ def part11_chain_consistency() -> None:
 
 
 def main() -> int:
+    global CURRENT_LANE
     print("G_BARE TWO-WARD H_UNIT-RESIDUE ACCEPTED-PREMISE BRIDGE")
+    CURRENT_LANE = "hygiene"
     part0_source_firewall()
+    CURRENT_LANE = "theorem"
     c_color = part1_color_fierz_coefficient()
     c_S = part2_clifford_scalar_coefficient()
     coef_A_3 = part3_rep_a_coefficient(c_color, c_S)
+    CURRENT_LANE = "hygiene"
     part4_p1_registration()
+    CURRENT_LANE = "theorem"
     M1 = part5_pinning_identity(coef_A_3)
     g_bare_sq = part6_substitute_w1(M1)
     part7_positive_branch(g_bare_sq)
+    CURRENT_LANE = "hygiene"
     part8_dependency_status()
     part9_no_forbidden_imports()
     part10_scope_boundary_check()
+    CURRENT_LANE = "theorem"
     part11_chain_consistency()
+    print(f"\nTHEOREM: PASS={THEOREM_PASS} FAIL={THEOREM_FAIL}")
+    print(f"HYGIENE: PASS={HYGIENE_PASS} FAIL={HYGIENE_FAIL}")
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print(
-            "VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow "
-            "from the G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM (W1) "
-            "+ Rep-A color-Fierz / Clifford coefficient algebra + "
-            "accepted-premise packet (P1) by exact sympy rational arithmetic."
+            "VERDICT: bounded supplied-condition bridge passes; (B1)-(B4) follow "
+            "from the supplied W1-BRIDGE condition + abstract matrix implication "
+            "+ Rep-A color-Fierz / Clifford coordinate algebra + "
+            "supplied condition (P1) by exact sympy rational arithmetic."
         )
         return 0
-    print("VERDICT: bounded accepted-premise bridge FAILED.")
+    print("VERDICT: bounded supplied-condition bridge FAILED.")
     return 1
 
 

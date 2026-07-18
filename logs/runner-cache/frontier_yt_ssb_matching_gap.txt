@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_ssb_matching_gap.py
-runner_sha256: eb84f2a2a6639117af568f3c5d6b938bb610d660890f21e779465afe1d3c5809
+runner_sha256: 0382aee82e906df5cddf8fd35699186fd69f82f821851d4cfb873242acacf7bd
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -10,7 +10,7 @@ status: ok
 YT SSB matching-gap arithmetic boundary verifier
 ========================================================================
 
-=== Block 1: canonical dimensions ===
+=== Block 1: arithmetic dimensions ===
 
   [PASS] 1.1  N_iso is positive  (N_iso=2)
   [PASS] 1.2  N_c is positive  (N_c=3)
@@ -49,7 +49,7 @@ RESULT: 13 PASS, 0 FAIL
 ========================================================================
 
   OUTCOME: exact H_unit component-overlap arithmetic verified.
-  Framework instance: <component|H_unit|component> = 1/sqrt(6).
+  Arithmetic instance: <component|H_unit|component> = 1/sqrt(6).
   Boundary: this does NOT close the physical SSB/Yukawa matching
   theorem; that operator-matching problem remains open.
 

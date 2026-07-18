@@ -53,8 +53,9 @@ def centralizer_basis(n: int) -> list[sp.Matrix]:
     return coefficient_matrix.nullspace()
 
 
-def derive_h_matrix(n: int) -> tuple[sp.Matrix, list[sp.Expr]]:
+def derive_h_matrix(n: int) -> tuple[sp.Matrix, list[sp.Expr], int]:
     basis = centralizer_basis(n)
+    nullity = len(basis)
     vector = basis[0]
     generator = sp.Matrix(n, n, list(vector))
     pivot = next(entry for entry in generator if entry != 0)
@@ -62,7 +63,7 @@ def derive_h_matrix(n: int) -> tuple[sp.Matrix, list[sp.Expr]]:
     c = sp.symbols("c", real=True)
     branches = sp.solve(sp.Eq(sp.trace((c * generator).H * (c * generator)), 1), c)
     positive = [branch for branch in branches if branch.is_nonnegative]
-    return sp.simplify(positive[0] * generator), branches
+    return sp.simplify(positive[0] * generator), branches, nullity
 
 
 def su3_fierz_coefficients() -> tuple[float, float, float]:
@@ -79,15 +80,47 @@ def su3_fierz_coefficients() -> tuple[float, float, float]:
     values: list[float] = []
     residual = 0.0
     for i, j, k, ell in product(range(3), repeat=4):
-        lhs = sum(matrix[i, j] * matrix[k, ell] for matrix in generators).real
+        lhs = sum(matrix[i, j] * matrix[k, ell] for matrix in generators)
         exchange = float(i == ell and j == k)
         singlet = float(i == j and k == ell)
         rhs = 0.5 * (exchange - singlet / 3.0)
         residual = max(residual, abs(lhs - rhs))
         rows.append([exchange, singlet])
-        values.append(lhs)
+        values.append(float(lhs.real))
     coefficients, *_ = np.linalg.lstsq(np.array(rows), np.array(values), rcond=None)
     return float(coefficients[0]), float(coefficients[1]), residual
+
+
+def clifford_scalar_coordinate() -> tuple[complex, float]:
+    """Return the scalar coordinate for the explicitly Fierz-paired tensor."""
+
+    sigma1 = np.array([[0, 1], [1, 0]], dtype=complex)
+    sigma2 = np.array([[0, -1j], [1j, 0]], dtype=complex)
+    sigma3 = np.array([[1, 0], [0, -1]], dtype=complex)
+    zero = np.zeros((2, 2), dtype=complex)
+    identity2 = np.eye(2, dtype=complex)
+    gamma = [
+        np.block([[identity2, zero], [zero, -identity2]]),
+        np.block([[zero, sigma1], [-sigma1, zero]]),
+        np.block([[zero, sigma2], [-sigma2, zero]]),
+        np.block([[zero, sigma3], [-sigma3, zero]]),
+    ]
+    metric = (1.0, -1.0, -1.0, -1.0)
+    clifford_error = 0.0
+    for mu, nu in product(range(4), repeat=2):
+        anticommutator = gamma[mu] @ gamma[nu] + gamma[nu] @ gamma[mu]
+        expected = (
+            2.0 * metric[mu] * np.eye(4, dtype=complex)
+            if mu == nu
+            else np.zeros((4, 4), dtype=complex)
+        )
+        clifford_error = max(
+            clifford_error, float(np.max(np.abs(anticommutator - expected)))
+        )
+    scalar_coordinate = sum(
+        np.trace(gamma[mu] @ (metric[mu] * gamma[mu])) for mu in range(4)
+    ) / 16.0
+    return complex(scalar_coordinate), clifford_error
 
 
 def main() -> int:
@@ -97,11 +130,11 @@ def main() -> int:
     n = int(n_c * n_iso)
 
     section("H-MATRIX conditional reconstruction")
-    h_matrix, norm_branches = derive_h_matrix(n)
+    h_matrix, norm_branches, centralizer_nullity = derive_h_matrix(n)
     checks.check(
         "matrix-unit constraints and positivity derive I_6/sqrt(6)",
-        h_matrix == sp.eye(n) / sp.sqrt(n),
-        f"norm_branches={norm_branches}",
+        centralizer_nullity == 1 and h_matrix == sp.eye(n) / sp.sqrt(n),
+        f"nullity={centralizer_nullity}, norm_branches={norm_branches}",
     )
     overlaps = [sp.simplify(h_matrix[index, index]) for index in range(n)]
     checks.check(
@@ -110,7 +143,7 @@ def main() -> int:
         f"overlaps={overlaps}",
     )
 
-    section("Independent SU(3) coefficient reconstruction")
+    section("Independent Fierz-coordinate reconstruction")
     exchange, singlet, residual_error = su3_fierz_coefficients()
     checks.check(
         "SU(3) Fierz tensor is reconstructed over every index tuple",
@@ -118,21 +151,38 @@ def main() -> int:
         f"max_error={residual_error:.3e}",
     )
     checks.check(
-        "exchange and singlet coefficients are 1/2 and -1/6",
+        "exchange and direct-singlet tensor coordinates are 1/2 and -1/6",
         abs(exchange - 0.5) < 1.0e-12 and abs(singlet + 1 / 6) < 1.0e-12,
         f"exchange={exchange:.12g}, singlet={singlet:.12g}",
+    )
+    scalar_coordinate, clifford_error = clifford_scalar_coordinate()
+    checks.check(
+        "explicit gamma matrices satisfy the Minkowski Clifford algebra",
+        clifford_error < 1.0e-12,
+        f"max_error={clifford_error:.3e}",
+    )
+    checks.check(
+        "chosen Fierz index pairing has Clifford-scalar coordinate c_S=+1",
+        abs(scalar_coordinate - 1.0) < 1.0e-12,
+        f"c_S={scalar_coordinate}",
     )
 
     section("Conditional coefficient algebra")
     g_bare = sp.symbols("g_bare", real=True)
     c_s = sp.symbols("c_S", real=True)
     c_a = c_s * g_bare**2 / (2 * n_c)
-    c_b = sp.simplify(h_matrix[0, 0] ** 2)
+    form_factor_square = sp.simplify(h_matrix[0, 0] ** 2)
+    c_b = form_factor_square  # only after supplied REP-B-RESIDUE
     coefficient_residual = sp.factor(c_a - c_b)
     expected = (n_iso * c_s * g_bare**2 - 2) / (2 * n_c * n_iso)
     checks.check(
-        "H-MATRIX gives C_B=1/(N_c N_iso)",
-        sp.simplify(c_b - 1 / (n_c * n_iso)) == 0,
+        "H-MATRIX gives only F_RepB^2=1/(N_c N_iso)",
+        sp.simplify(form_factor_square - 1 / (n_c * n_iso)) == 0,
+        f"F_RepB^2={form_factor_square}",
+    )
+    checks.check(
+        "under REP-B-RESIDUE the coefficient is C_B=F_RepB^2",
+        sp.simplify(c_b - form_factor_square) == 0,
         f"C_B={c_b}",
     )
     checks.check(
@@ -163,10 +213,18 @@ def main() -> int:
     f = sp.Function("f")(g_bare)
     unbridged_residual = sp.simplify(c_a - f**2)
     checks.check(
-        "without H-MATRIX the Rep-B coefficient remains an unconstrained function",
+        "without H-MATRIX, even with REP-B-RESIDUE, the coefficient stays functional",
         bool(unbridged_residual.atoms(sp.Function))
         and sp.simplify(unbridged_residual - coefficient_residual) != 0,
         f"unbridged_residual={unbridged_residual}",
+    )
+    residue_unfixed = sp.Function("r_B")(g_bare)
+    missing_residue_residual = sp.simplify(c_a - residue_unfixed)
+    checks.check(
+        "without REP-B-RESIDUE, H-MATRIX does not fix the Rep-B coefficient",
+        bool(missing_residue_residual.atoms(sp.Function))
+        and sp.simplify(missing_residue_residual - coefficient_residual) != 0,
+        f"missing_residue_residual={missing_residue_residual}",
     )
 
     print(f"\nTOTAL: PASS={checks.passed}, FAIL={checks.failed}")

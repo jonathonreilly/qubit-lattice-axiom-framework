@@ -1,35 +1,38 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_ward_step3_contact_4fermion_vanishing.py
-runner_sha256: 5ff07cc6ce4a7f83328529e6f2f92b27034429d1e1a3329550dcee48ac88933f
+runner_sha256: 3a4dd1a4d38e47d84b4ae6229d5a88d4ac60aa74427bd4b09ccbcb2cad352558
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
-Finite contact-operator inventory
+Bare-action fermion-degree reconstruction
 ----------------------------------------------------------------------------------------
-PASS: Clifford x color x isospin contact inventory is exhaustive and finite :: candidate_count=1024
-PASS: absent four-fermion action arity gives zero for every contact coefficient :: zero_coefficients=1024
-PASS: scalar-singlet contact coefficient is a zero member of the inventory
+PASS: generic fermion action is reconstructed as bilinear :: fermion_degree=2
+PASS: four fermionic derivatives of the bilinear action give zero contact vertex :: contact_derivative=0
+PASS: inserted four-fermion mutation recomputes a nonzero contact vertex :: mutated_contact_derivative=lambda_contact
 
 ----------------------------------------------------------------------------------------
-Projected one-gauge-boson coefficient
+One-gauge-boson Fierz-coordinate reconstruction
 ----------------------------------------------------------------------------------------
 PASS: SU(3) Fierz relation is reconstructed over all index tuples :: max_error=5.551e-17
-PASS: singlet projection coefficient is -1/(2N_c)=-1/6 :: exchange=0.5, singlet=-0.166666666667
+PASS: direct-singlet tensor coordinate is -1/(2N_c)=-1/6 :: exchange=0.5, singlet=-0.166666666667
+PASS: explicit gamma matrices satisfy the Minkowski Clifford algebra :: max_error=0.000e+00
+PASS: chosen Fierz pairing has Clifford-scalar coordinate c_S=+1 :: c_S=(1+0j)
 PASS: one-exchange term has leading g_bare^2/q^2 power :: coefficient=-g_bare**2/(6*q**2)
-PASS: two-exchange topology is higher in both coupling and inverse momentum :: higher_term=g_bare**4/q**4
 
 ----------------------------------------------------------------------------------------
 Conditional Rep-B boundary
 ----------------------------------------------------------------------------------------
-PASS: under H-MATRIX only, the formal residual is (g_bare^2-1)/6 :: residual=(g_bare - 1)*(g_bare + 1)/6
+PASS: under REP-B-RESIDUE the coefficient is the squared form factor :: C_B=1/6
+PASS: under H-MATRIX plus REP-B-RESIDUE the residual is (g_bare^2-1)/6 :: residual=(g_bare - 1)*(g_bare + 1)/6
 PASS: contact vanishing does not make the conditional residual an identity :: residual(g_bare=2)=1/2
-PASS: without H-MATRIX the Rep-B coefficient remains functionally unconstrained :: unbridged_residual=g_bare**2/6 - f(g_bare)**2
+PASS: without H-MATRIX, even with REP-B-RESIDUE, the coefficient stays functional :: unbridged_residual=g_bare**2/6 - f(g_bare)**2
+PASS: without REP-B-RESIDUE, H-MATRIX leaves the coefficient symbolic :: missing_residue_residual=g_bare**2/6 - r_B(g_bare)
 
-TOTAL: PASS=10, FAIL=0
+TOTAL: PASS=13, FAIL=0
 
 ----- stderr -----
 

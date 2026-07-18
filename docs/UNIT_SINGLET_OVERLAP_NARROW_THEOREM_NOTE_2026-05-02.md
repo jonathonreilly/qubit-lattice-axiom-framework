@@ -102,8 +102,9 @@ Hilbert--Schmidt condition is
 
 ```text
 1 = Tr(H^dagger H)
-  = Tr(c^2 I_n)
-  = n c^2.
+  = Tr(|c|^2 I_n)
+  = n |c|^2
+  = n c^2,
 ```
 
 Therefore `c = 1 / sqrt(n)`, proving `(T1)`. Since `e_j` is normalized,
@@ -207,13 +208,14 @@ python3 scripts/frontier_unit_singlet_overlap_narrow.py --mode hostile
   and recomputes all basis expectations, including `n = 1` and `n = 6`
   (`PASS=27, FAIL=0`).
 - `independent` reconstructs the common commutant numerically from fresh
-  random-unitary conjugation constraints and then normalizes the recovered
-  positive generator; it does not import normal-mode result tables
-  (`PASS=16, FAIL=0`).
+  random-unitary conjugation constraints, checks the singular-value
+  separation and reconstruction stability across three deterministic seeds,
+  and then normalizes the recovered positive generator; it does not import
+  normal-mode result tables (`PASS=20, FAIL=0`).
 - `hostile` recomputes and rejects the wrong dimension factor, trace-norm
-  substitution, negative branch, noncentral normalized positive matrices,
-  off-diagonal contamination, and physical/carrier inferences without a
-  bridge (`PASS=8, FAIL=0`).
+  substitution, negative and non-real phase branches, noncentral normalized
+  positive matrices, off-diagonal contamination, and physical/carrier
+  inferences without a bridge (`PASS=9, FAIL=0`).
 
 The canonical exact-SHA cache records the default normal mode. Independent
 and hostile counts are recorded in the source-repair PR validation report.

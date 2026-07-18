@@ -1,28 +1,31 @@
 ===== runner cache v1 =====
 runner: scripts/yt_ward_step3_same_1pi_construction_2026_05_10.py
-runner_sha256: a3470d623d0344264d0e4954365e46cc3e0c1a1b653e7a6421b73e79dbdfdd8f
+runner_sha256: 6ec0cb4b90f296f69d92710ae4210be939d6f919f4f4715fc5b07f401cf67b2c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
 H-MATRIX conditional reconstruction
 ----------------------------------------------------------------------------------------
-PASS: matrix-unit constraints and positivity derive I_6/sqrt(6) :: norm_branches=[-sqrt(6)/6, sqrt(6)/6]
+PASS: matrix-unit constraints and positivity derive I_6/sqrt(6) :: nullity=1, norm_branches=[-sqrt(6)/6, sqrt(6)/6]
 PASS: conditional diagonal expectations are uniformly 1/sqrt(6) :: overlaps=[sqrt(6)/6, sqrt(6)/6, sqrt(6)/6, sqrt(6)/6, sqrt(6)/6, sqrt(6)/6]
 
 ----------------------------------------------------------------------------------------
-Independent SU(3) coefficient reconstruction
+Independent Fierz-coordinate reconstruction
 ----------------------------------------------------------------------------------------
 PASS: SU(3) Fierz tensor is reconstructed over every index tuple :: max_error=5.551e-17
-PASS: exchange and singlet coefficients are 1/2 and -1/6 :: exchange=0.5, singlet=-0.166666666667
+PASS: exchange and direct-singlet tensor coordinates are 1/2 and -1/6 :: exchange=0.5, singlet=-0.166666666667
+PASS: explicit gamma matrices satisfy the Minkowski Clifford algebra :: max_error=0.000e+00
+PASS: chosen Fierz index pairing has Clifford-scalar coordinate c_S=+1 :: c_S=(1+0j)
 
 ----------------------------------------------------------------------------------------
 Conditional coefficient algebra
 ----------------------------------------------------------------------------------------
-PASS: H-MATRIX gives C_B=1/(N_c N_iso) :: C_B=1/6
+PASS: H-MATRIX gives only F_RepB^2=1/(N_c N_iso) :: F_RepB^2=1/6
+PASS: under REP-B-RESIDUE the coefficient is C_B=F_RepB^2 :: C_B=1/6
 PASS: formal Rep-A minus Rep-B residual is derived exactly :: residual=(c_S*g_bare**2 - 1)/6
 PASS: SAME-1PI equality condition yields c_S g_bare^2=2/N_iso :: g_bare^2 solutions=[1/c_S]
 PASS: arithmetic specialization has residual (g_bare^2-1)/6 :: residual=g_bare**2/6 - 1/6
@@ -31,9 +34,10 @@ PASS: without SAME-1PI the off-surface residual remains nonzero :: residual(g_ba
 ----------------------------------------------------------------------------------------
 Missing H-MATRIX branch
 ----------------------------------------------------------------------------------------
-PASS: without H-MATRIX the Rep-B coefficient remains an unconstrained function :: unbridged_residual=c_S*g_bare**2/6 - f(g_bare)**2
+PASS: without H-MATRIX, even with REP-B-RESIDUE, the coefficient stays functional :: unbridged_residual=c_S*g_bare**2/6 - f(g_bare)**2
+PASS: without REP-B-RESIDUE, H-MATRIX does not fix the Rep-B coefficient :: missing_residue_residual=c_S*g_bare**2/6 - r_B(g_bare)
 
-TOTAL: PASS=10, FAIL=0
+TOTAL: PASS=14, FAIL=0
 
 ----- stderr -----
 

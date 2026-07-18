@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py
-runner_sha256: c81f16584a28f3bce9ebd39a699b94560f3402d2b555c9b07e2a7e9c5a2d0db6
+runner_sha256: e4da7117aca2f942c8dd862c9e2fd5827f6c235cffca6eb45ec42ffad156690b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -47,7 +47,8 @@ Hostile controls
   correct/wrong plaquette gauge errors      = 0.000e+00, 1.500e+00
   selected-vs-repeated slice mismatch       = 6.544801e-02
   selected-vs-repeated mixed mismatch       = 2.100161e-01
-  correct/wrong half-weight trace mismatch  = 3.744333e-01
+  correct/doubled half-weight mismatch      = 3.744333e-01
+  correct/missing half-weight mismatch      = 1.036107e-01
   correct/wrong Haar trace mismatch         = 4.245432e+09
   negative effective-coupling min eig       = -6.696686e-04
 
@@ -88,7 +89,7 @@ Hostile controls
   [PASS] [SUPPORT] the wrong plaquette word fails gauge invariance while the oriented word passes
          correct error=0.000e+00, wrong error=1.500e+00
   [PASS] [SUPPORT] wrong slice placement, half weighting, or Haar normalization changes the path sum
-         slice=6.545e-02, half=3.744e-01, Haar=4.245e+09
+         slice=6.545e-02, half(doubled/missing)=3.744e-01/1.036e-01, Haar=4.245e+09
   [PASS] [SUPPORT] negative effective mixed coupling is detected outside the source-positivity domain
          minimum eigenvalue = -6.696686e-04
   [PASS] [SUPPORT] the compressed recurrence spectrum stays inside the plaquette support interval

@@ -862,8 +862,8 @@ The runner independently checks:
 - dominant-weight boundary omissions in the `SU(3)` recurrence;
 - hostile controls for pointwise-positive indefinite kernels, a wrong
   plaquette word, selected-versus-repeated slice placement, doubled spatial
-  half weights, missing normalized Haar factors, and negative effective mixed
-  coupling.
+  half weights, missing spatial half weights, missing normalized Haar factors,
+  and negative effective mixed coupling.
 
 The finite-group and sampled matrix results are support only. The exact
 `SU(N)` proof is the analytic argument in this note; the earlier open-slab

@@ -751,6 +751,13 @@ def main() -> int:
     wrong_half_trace = float(
         np.trace(np.linalg.matrix_power(wrong_half_transfer, S3_LT))
     )
+    missing_half_weight = reduced_multiplication(
+        pullback, np.ones(S3_CONFIG_COUNT, dtype=float)
+    )
+    missing_half_transfer = missing_half_weight @ q_operator @ missing_half_weight
+    missing_half_trace = float(
+        np.trace(np.linalg.matrix_power(missing_half_transfer, S3_LT))
+    )
     wrong_haar_trace = float(
         np.trace(np.linalg.matrix_power((S3_ORDER**4) * transfer, S3_LT))
     )
@@ -807,7 +814,8 @@ def main() -> int:
     print(f"  correct/wrong plaquette gauge errors      = {correct_orientation_error:.3e}, {wrong_orientation_error:.3e}")
     print(f"  selected-vs-repeated slice mismatch       = {abs(spatial_single_value-wrong_slice_placement_value):.6e}")
     print(f"  selected-vs-repeated mixed mismatch       = {abs(mixed_single_value-mixed_repeated_value):.6e}")
-    print(f"  correct/wrong half-weight trace mismatch  = {abs(trace_value-wrong_half_trace):.6e}")
+    print(f"  correct/doubled half-weight mismatch      = {abs(trace_value-wrong_half_trace):.6e}")
+    print(f"  correct/missing half-weight mismatch      = {abs(trace_value-missing_half_trace):.6e}")
     print(f"  correct/wrong Haar trace mismatch         = {abs(trace_value-wrong_haar_trace):.6e}")
     print(f"  negative effective-coupling min eig       = {negative_effective_minimum:.6e}")
     print()
@@ -962,10 +970,12 @@ def main() -> int:
         "wrong slice placement, half weighting, or Haar normalization changes the path sum",
         abs(spatial_single_value - wrong_slice_placement_value) > 1.0e-5
         and abs(trace_value - wrong_half_trace) > 1.0e-5
+        and abs(trace_value - missing_half_trace) > 1.0e-5
         and abs(trace_value - wrong_haar_trace) > 1.0,
         detail=(
             f"slice={abs(spatial_single_value-wrong_slice_placement_value):.3e}, "
-            f"half={abs(trace_value-wrong_half_trace):.3e}, "
+            f"half(doubled/missing)={abs(trace_value-wrong_half_trace):.3e}/"
+            f"{abs(trace_value-missing_half_trace):.3e}, "
             f"Haar={abs(trace_value-wrong_haar_trace):.3e}"
         ),
         bucket="SUPPORT",

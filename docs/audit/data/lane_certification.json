@@ -949,7 +949,7 @@
         },
         {
           "claim_id": "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "fermion_parity_z2_grading_theorem_note_2026-05-02",
@@ -1101,7 +1101,7 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
@@ -2895,6 +2895,6 @@
       "uncertified_count": 661
     }
   ],
-  "repo_head": "689ae2c8018fb23ac0d9b92ea2d3324c9249938b",
+  "repo_head": "a88537d8704f421f21b6d27cded0b23608151b20",
   "schema": "lane_certification_v2"
 }

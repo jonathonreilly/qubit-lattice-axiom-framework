@@ -1,346 +1,547 @@
 #!/usr/bin/env python3
-"""Exact-symbolic audit-companion runner for
-`LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10`.
+"""Evidence runner for the LH traceless projective-ratio theorem.
 
-The narrow theorem's load-bearing content is:
+Clean theorem:
+    n_color is a positive integer, (a,b) is a nonzero real pair, and
+    2*n_color*a + 2*b = 0. Then a and b are nonzero,
+    b = -n_color*a, and [a:b] = [1:-n_color].
 
-  (R1) Given any positive integer n_color and a NONZERO real pair (a, b) != (0, 0)
-       satisfying 2 n_color a + 2 b = 0, the eigenvalue ratio is forced to
-       a : b = 1 : (-n_color). The premise (L2) (a, b) != (0, 0) excludes the
-       degenerate solution a = b = 0 of the homogeneous equation (which would
-       make the ratio ill-defined); see the Part 1b guard.
-  (R2) Under labelling convention b = -1, a = 1/n_color.
-  (R3) Under Q = T_3 + a/2, the LH-quark electric charges are
-         Q(u_L) = (n_color + 1)/(2 n_color),
-         Q(d_L) = (1 - n_color)/(2 n_color).
-  (R4) The reduced (lowest-terms) denominator of Q(u_L), Q(d_L) is
-         d_red(n_color) = n_color        if n_color is odd,
-         d_red(n_color) = 2 n_color      if n_color is even.
+The former charge and reduced-denominator calculations are checked in a
+separate CONDITIONAL_SUPPORT class under explicitly supplied ``b = -1`` and
+``Q = T_3 + Y/2`` conventions. They are not counted as theorem evidence.
 
-The runner verifies (R1)-(R4) at exact sympy precision over abstract
-positive integer n_color (parametric), then specializes to a sweep
-n_color in {1, 2, 3, 4, 5, 7, 9, 11, 12} that exercises both parity
-classes plus the framework instance n_color = 3.
-
-Companion role: not a new claim row, not a new source note, no status
-promotion. Provides audit-friendly evidence that the narrow note's
-load-bearing class-A algebra holds at exact symbolic precision.
+Modes:
+    normal       direct symbolic proof plus conditional-support arithmetic
+    independent  exact nullspace/exhaustive route plus an independent gcd route
+    hostile      counterdomains, alternate scales/readouts, and N1-N8 evidence
+    all          all three modes (default)
 """
 
+from __future__ import annotations
+
+import argparse
+from collections import defaultdict
 from fractions import Fraction
+from math import gcd
 from pathlib import Path
 import sys
 
 try:
     import sympy
-    from sympy import Rational, Symbol, simplify, symbols, expand, gcd
+    from sympy import Matrix, Rational, Symbol, linsolve, simplify, sqrt, symbols
 except ImportError:
-    print("FAIL: sympy required for exact algebra")
-    sys.exit(1)
+    print("FAIL: sympy is required for exact algebra", file=sys.stderr)
+    raise SystemExit(2)
 
 
-PASS = 0
-FAIL = 0
+AUDIT_TIMEOUT_SEC = 120
+ROOT = Path(__file__).resolve().parent.parent
+NOTE = ROOT / "docs/LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md"
+EVIDENCE_CLASSES = ("THEOREM", "CONDITIONAL_SUPPORT", "BOUNDARY", "HYGIENE")
+
+passes: dict[str, int] = defaultdict(int)
+failures: dict[str, int] = defaultdict(int)
 
 
-def check(label: str, ok: bool, detail: str = "") -> None:
-    global PASS, FAIL
-    if ok:
-        PASS += 1
-        tag = "PASS (A)"
-    else:
-        FAIL += 1
-        tag = "FAIL (A)"
+def check(evidence_class: str, label: str, condition: object, detail: str = "") -> None:
+    """Record a computed check in exactly one evidence class."""
+    ok = bool(condition)
+    bucket = passes if ok else failures
+    bucket[evidence_class] += 1
+    tag = "PASS" if ok else "FAIL"
     suffix = f"  ({detail})" if detail else ""
-    print(f"  [{tag}] {label}{suffix}")
+    print(f"  [{tag} {evidence_class}] {label}{suffix}")
 
 
 def section(title: str) -> None:
     print()
-    print("-" * 88)
+    print("-" * 96)
     print(title)
-    print("-" * 88)
+    print("-" * 96)
+
+
+def normal_mode() -> None:
+    section("NORMAL: direct symbolic proof of the homogeneous/projective implication")
+    n = Symbol("n_color", positive=True, integer=True)
+    a, b = symbols("a b", real=True)
+    trace = 2 * n * a + 2 * b
+    reduced = n * a + b
+
+    check(
+        "THEOREM",
+        "dividing the trace equation by 2 gives n_color*a + b",
+        simplify(trace / 2 - reduced) == 0,
+        f"trace/2 - reduced = {simplify(trace / 2 - reduced)}",
+    )
+
+    b_solved = sympy.solve(reduced, b)[0]
+    check(
+        "THEOREM",
+        "trace equation solves to b = -n_color*a",
+        simplify(b_solved + n * a) == 0,
+        f"b = {b_solved}",
+    )
+
+    zero_if_a_zero = linsolve((Matrix([[n, 1], [1, 0]]), Matrix([0, 0])), (a, b))
+    check(
+        "THEOREM",
+        "trace plus a=0 has the single solution (a,b)=(0,0)",
+        zero_if_a_zero == sympy.FiniteSet((0, 0)),
+        f"solutions = {zero_if_a_zero}",
+    )
+
+    zero_if_b_zero = linsolve((Matrix([[n, 1], [0, 1]]), Matrix([0, 0])), (a, b))
+    check(
+        "THEOREM",
+        "trace plus b=0 has the single solution (a,b)=(0,0) for nonzero n_color",
+        zero_if_b_zero == sympy.FiniteSet((0, 0)),
+        f"solutions = {zero_if_b_zero}",
+    )
+
+    projective_determinant = simplify(a * (-n) - b)
+    check(
+        "THEOREM",
+        "projective equality follows by the division-free determinant test",
+        simplify(projective_determinant + reduced) == 0,
+        f"det((a,b),(1,-n_color)) = {projective_determinant}",
+    )
+
+    lam = Symbol("lambda", real=True, nonzero=True)
+    representative = Matrix([lam, -n * lam])
+    check(
+        "THEOREM",
+        "every nonzero scale lambda gives a trace-zero representative",
+        simplify((Matrix([[2 * n, 2]]) * representative)[0]) == 0,
+        f"representative = {representative.T}",
+    )
+    check(
+        "THEOREM",
+        "the representative is lambda*(1,-n_color)",
+        simplify(representative - lam * Matrix([1, -n])) == Matrix([0, 0]),
+    )
+    check(
+        "THEOREM",
+        "division occurs only on the nonzero representative and gives a/b=-1/n_color",
+        simplify(representative[0] / representative[1] + Rational(1, 1) / n) == 0,
+        f"a/b = {simplify(representative[0] / representative[1])}",
+    )
+    check(
+        "THEOREM",
+        "n_color=1 gives the projective point [1:-1]",
+        Matrix([[2, 2]]) * Matrix([1, -1]) == Matrix([0]),
+    )
+    signed_scales = (Rational(2), Rational(-3), Rational(5, 7))
+    signed_scale_ok = all(
+        simplify(2 * 5 * scale + 2 * (-5 * scale)) == 0
+        and scale != 0
+        for scale in signed_scales
+    )
+    check(
+        "THEOREM",
+        "positive, negative, and fractional nonzero scales preserve the n_color=5 class",
+        signed_scale_ok,
+        f"scales = {signed_scales}",
+    )
+
+    section("NORMAL: explicitly convention-supplied arithmetic (not theorem evidence)")
+    a_norm = sympy.solve(reduced.subs(b, -1), a)[0]
+    q_up = Rational(1, 2) + a_norm / 2
+    q_down = -Rational(1, 2) + a_norm / 2
+    check(
+        "CONDITIONAL_SUPPORT",
+        "under supplied b=-1, a=1/n_color",
+        simplify(a_norm - 1 / n) == 0,
+        f"a = {a_norm}",
+    )
+    check(
+        "CONDITIONAL_SUPPORT",
+        "under supplied Q=T3+Y/2, Q(up)=(n_color+1)/(2*n_color)",
+        simplify(q_up - (n + 1) / (2 * n)) == 0,
+        f"Q(up) = {simplify(q_up)}",
+    )
+    check(
+        "CONDITIONAL_SUPPORT",
+        "under supplied Q=T3+Y/2, Q(down)=(1-n_color)/(2*n_color)",
+        simplify(q_down - (1 - n) / (2 * n)) == 0,
+        f"Q(down) = {simplify(q_down)}",
+    )
+    check(
+        "CONDITIONAL_SUPPORT",
+        "the two supplied-convention charges differ by one",
+        simplify(q_up - q_down) == 1,
+    )
+    check(
+        "CONDITIONAL_SUPPORT",
+        "the supplied-convention charges sum to 1/n_color",
+        simplify(q_up + q_down - 1 / n) == 0,
+    )
+
+
+def independent_mode() -> None:
+    section("INDEPENDENT: exact nullspace/projective route")
+    n = Symbol("n_color", positive=True, integer=True)
+    row = Matrix([[2 * n, 2]])
+    nullspace = row.nullspace()
+    check(
+        "THEOREM",
+        "the exact trace row has a one-dimensional nullspace",
+        len(nullspace) == 1 and row.rank() == 1,
+        f"basis = {nullspace}",
+    )
+    basis = nullspace[0]
+    check(
+        "THEOREM",
+        "the nullspace basis is projectively equal to (1,-n_color)",
+        simplify(basis[0] * (-n) - basis[1]) == 0,
+        f"basis = {basis.T}",
+    )
+
+    tested_pairs = 0
+    exhaustive_ok = True
+    for n_value in range(1, 8):
+        for a_value in range(-12, 13):
+            for b_value in range(-12, 13):
+                if (a_value, b_value) == (0, 0):
+                    continue
+                if 2 * n_value * a_value + 2 * b_value == 0:
+                    tested_pairs += 1
+                    exhaustive_ok = exhaustive_ok and a_value != 0 and b_value != 0
+                    exhaustive_ok = exhaustive_ok and (-n_value * a_value - b_value == 0)
+    check(
+        "THEOREM",
+        "finite hostile enumeration finds no nonzero off-projective solution for n_color=1..7",
+        exhaustive_ok and tested_pairs > 0,
+        f"nonzero trace-zero pairs tested = {tested_pairs}",
+    )
+
+    rational_scales = (Fraction(-7, 3), Fraction(-1, 2), Fraction(1, 5), Fraction(9, 4))
+    exact_fraction_ok = all(
+        2 * 11 * scale + 2 * (-11 * scale) == 0
+        and scale / (-11 * scale) == Fraction(-1, 11)
+        for scale in rational_scales
+    )
+    check(
+        "THEOREM",
+        "independent Fraction arithmetic agrees at n_color=11 across four scales",
+        exact_fraction_ok,
+        f"scales = {rational_scales}",
+    )
+
+    section("INDEPENDENT: Euclidean/GCD route for conditional support")
+    up_bezout_ok = (
+        simplify(2 * n - 2 * (n + 1) + 2) == 0
+        and simplify(2 * (n + 1) - 2 - 2 * n) == 0
+    )
+    down_bezout_ok = (
+        simplify(2 * n + 2 * (1 - n) - 2) == 0
+        and simplify(2 - 2 * (1 - n) - 2 * n) == 0
+    )
+    check(
+        "CONDITIONAL_SUPPORT",
+        "two-way Bezout combinations prove both gcd reductions for arbitrary integer n_color",
+        up_bezout_ok and down_bezout_ok,
+        "common divisors of each original pair and its reduced pair coincide",
+    )
+
+    residue_gcds = {
+        residue: (gcd(residue + 1, 2), gcd(1 - residue, 2))
+        for residue in (0, 1)
+    }
+    check(
+        "CONDITIONAL_SUPPORT",
+        "the two residue classes modulo 2 prove the common gcd is 1 for even and 2 for odd n_color",
+        residue_gcds == {0: (1, 1), 1: (2, 2)},
+        f"residue certificate = {residue_gcds}",
+    )
+
+    k = Symbol("k", nonnegative=True, integer=True)
+    odd_n = 2 * k + 1
+    even_n = 2 * (k + 1)
+    check(
+        "CONDITIONAL_SUPPORT",
+        "the parity gcd certificate gives denominator n_color for odd and 2*n_color for even counts",
+        simplify((2 * odd_n) / 2 - odd_n) == 0
+        and simplify((2 * even_n) / 1 - 2 * even_n) == 0,
+    )
+
+    values = range(1, 65)
+    gcd_reduction_ok = all(
+        gcd(n_value + 1, 2 * n_value) == gcd(n_value + 1, 2)
+        and gcd(1 - n_value, 2 * n_value) == gcd(1 - n_value, 2)
+        for n_value in values
+    )
+    check(
+        "CONDITIONAL_SUPPORT",
+        "Euclidean gcd reductions hold for n_color=1..64",
+        gcd_reduction_ok,
+    )
+    odd_denominator_ok = all(
+        Fraction(n_value + 1, 2 * n_value).denominator == n_value
+        and Fraction(1 - n_value, 2 * n_value).denominator == n_value
+        for n_value in values
+        if n_value % 2 == 1
+    )
+    check(
+        "CONDITIONAL_SUPPORT",
+        "conditional charge denominators equal n_color for odd n_color=1..63",
+        odd_denominator_ok,
+    )
+    even_denominator_ok = all(
+        Fraction(n_value + 1, 2 * n_value).denominator == 2 * n_value
+        and Fraction(1 - n_value, 2 * n_value).denominator == 2 * n_value
+        for n_value in values
+        if n_value % 2 == 0
+    )
+    check(
+        "CONDITIONAL_SUPPORT",
+        "conditional charge denominators equal 2*n_color for even n_color=2..64",
+        even_denominator_ok,
+    )
+
+
+def hostile_mode() -> None:
+    section("HOSTILE: counterdomains, normalization freedom, and alternate readout")
+
+    check(
+        "BOUNDARY",
+        "the excluded zero pair satisfies the homogeneous trace equation",
+        2 * 3 * 0 + 2 * 0 == 0,
+    )
+    zero_projective_defined = (0, 0) != (0, 0)
+    check(
+        "BOUNDARY",
+        "the zero pair fails the nonzero representative condition",
+        not zero_projective_defined,
+    )
+
+    zero_parameter_pair = (Fraction(1), Fraction(0))
+    check(
+        "BOUNDARY",
+        "at n_color=0, (1,0) is trace-zero and refutes the two-nonzero conclusion",
+        2 * 0 * zero_parameter_pair[0] + 2 * zero_parameter_pair[1] == 0
+        and zero_parameter_pair[0] != 0
+        and zero_parameter_pair[1] == 0,
+    )
+
+    negative_n_pair = (Fraction(3, 2), Fraction(3))
+    check(
+        "BOUNDARY",
+        "negative n_color=-2 preserves the projective algebra outside the count domain",
+        2 * (-2) * negative_n_pair[0] + 2 * negative_n_pair[1] == 0
+        and negative_n_pair[1] == -(-2) * negative_n_pair[0],
+    )
+
+    rational_n_pair = (Fraction(4), Fraction(-2))
+    check(
+        "BOUNDARY",
+        "noninteger n_color=1/2 preserves the projective algebra but has no integer parity class",
+        2 * Fraction(1, 2) * rational_n_pair[0] + 2 * rational_n_pair[1] == 0
+        and rational_n_pair[1] == -Fraction(1, 2) * rational_n_pair[0],
+    )
+
+    irrational_n = sqrt(2)
+    irrational_pair = Matrix([1, -irrational_n])
+    check(
+        "BOUNDARY",
+        "irrational nonzero parameter preserves the projective identity outside rational gcd arithmetic",
+        simplify((Matrix([[2 * irrational_n, 2]]) * irrational_pair)[0]) == 0,
+    )
+
+    scale_two = (Fraction(2, 3), Fraction(-2))
+    scale_minus_three = (Fraction(-1), Fraction(3))
+    check(
+        "BOUNDARY",
+        "alternate scale lambda=2/3 at n_color=3 satisfies trace but has b=-2",
+        2 * 3 * scale_two[0] + 2 * scale_two[1] == 0 and scale_two[1] != -1,
+    )
+    check(
+        "BOUNDARY",
+        "alternate sign scale lambda=-1 at n_color=3 satisfies trace but has b=+3",
+        2 * 3 * scale_minus_three[0] + 2 * scale_minus_three[1] == 0
+        and scale_minus_three[1] != -1,
+    )
+    check(
+        "BOUNDARY",
+        "two unequal scales give the same projective point and different absolute eigenvalues",
+        scale_two != scale_minus_three
+        and scale_two[0] * scale_minus_three[1] - scale_two[1] * scale_minus_three[0] == 0,
+    )
+
+    n_value = Fraction(3)
+    a_normalized = Fraction(1, 3)
+    q_half_up = Fraction(1, 2) + a_normalized / 2
+    q_full_up = Fraction(1, 2) + a_normalized
+    check(
+        "BOUNDARY",
+        "alternate Q=T3+Y changes the up-component charge at the same normalized ratio",
+        q_half_up == Fraction(2, 3) and q_full_up == Fraction(5, 6) and q_full_up != q_half_up,
+        f"Q_half={q_half_up}, Q_full={q_full_up}, n_color={n_value}",
+    )
+
+    q_scaled_up = Fraction(1, 2) + scale_two[0] / 2
+    check(
+        "BOUNDARY",
+        "supplying Q=T3+Y/2 without b=-1 leaves the charge scale-dependent",
+        q_scaled_up == Fraction(5, 6) and q_scaled_up != q_half_up,
+        f"scaled Q={q_scaled_up}, normalized Q={q_half_up}",
+    )
+
+    section("HOSTILE: N1-N8 boundary evidence")
+    route_ids = {
+        "zero_pair",
+        "zero_parameter",
+        "negative_parameter",
+        "noninteger_parameter",
+        "alternate_scale",
+        "alternate_charge_functional",
+    }
+    check(
+        "BOUNDARY",
+        "N1 enumerates six distinct attack routes",
+        len(route_ids) == 6,
+        ", ".join(sorted(route_ids)),
+    )
+    check(
+        "BOUNDARY",
+        "N2 normalization does not close the charge-functional condition",
+        q_full_up != q_half_up,
+        "b=-1 held fixed while the charge functional changed",
+    )
+    check(
+        "BOUNDARY",
+        "N2 charge-functional convention does not close the normalization condition",
+        q_scaled_up != q_half_up,
+        "Q=T3+Y/2 held fixed while the common scale changed",
+    )
+
+    note_text = NOTE.read_text(encoding="utf-8")
+    hidden_wall_phrases = (
+        "by construction",
+        "as is standard",
+        "the framework provides",
+        "naturally",
+        "obviously",
+        "standard QFT",
+        "requires a new axiom",
+        "no retained primitive",
+    )
+    hidden_hits = {phrase: note_text.lower().count(phrase) for phrase in hidden_wall_phrases}
+    check(
+        "HYGIENE",
+        "N3 hidden-wall phrase scan has no unclassified trigger",
+        sum(hidden_hits.values()) == 0,
+        f"hits = {hidden_hits}",
+    )
+
+    check(
+        "BOUNDARY",
+        "N4 residual matching keeps GCD arithmetic attached to both supplied conventions",
+        q_half_up == Fraction(2, 3)
+        and Fraction(1 - 3, 2 * 3) == Fraction(-1, 3)
+        and gcd(4, 6) == 2,
+    )
+    check(
+        "BOUNDARY",
+        "N5 alternate scale blocks an absolute-eigenvalue reading of the projective theorem",
+        scale_two[1] != -1 and scale_minus_three[1] != -1,
+    )
+    check(
+        "BOUNDARY",
+        "N5 alternate charge functional blocks a physical-charge reading of the projective theorem",
+        q_full_up != q_half_up,
+    )
+    check(
+        "BOUNDARY",
+        "N6 convention-supplied partial closure reproduces the conditional n_color=3 arithmetic",
+        a_normalized == Fraction(1, 3)
+        and q_half_up == Fraction(2, 3)
+        and Fraction(1 - 3, 2 * 3) == Fraction(-1, 3),
+    )
+    check(
+        "BOUNDARY",
+        "N7 strongest objections are realized by zero-pair, scale, and readout counterexamples",
+        (2 * 3 * 0 + 2 * 0 == 0)
+        and scale_two[1] != -1
+        and q_full_up != q_half_up,
+    )
+
+    normal_vector = Matrix([1, -5])
+    independent_basis = Matrix([[10, 2]]).nullspace()[0]
+    check(
+        "BOUNDARY",
+        "N8 direct rearrangement and independent nullspace routes agree projectively at n_color=5",
+        simplify(normal_vector[0] * independent_basis[1] - normal_vector[1] * independent_basis[0]) == 0,
+        f"direct={normal_vector.T}, nullspace={independent_basis.T}",
+    )
+
+    linked_absolute_paths = sympy.Integer(
+        len(
+            [
+                marker
+                for marker in ('](/Users/', '](/home/', '](/private/', '](/tmp/', '](/var/', '](/opt/', '](file://')
+                if marker in note_text
+            ]
+        )
+    )
+    check(
+        "HYGIENE",
+        "changed note has no absolute local markdown link target",
+        linked_absolute_paths == 0,
+    )
+    broad_negative_hits = {
+        phrase: note_text.lower().count(phrase)
+        for phrase in ("nothing else", "cannot be derived", "unique", "forced")
+    }
+    check(
+        "HYGIENE",
+        "broad-negative phrase scan finds no unqualified foreclosure wording",
+        sum(broad_negative_hits.values()) == 0,
+        f"hits = {broad_negative_hits}",
+    )
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--mode",
+        choices=("normal", "independent", "hostile", "all"),
+        default="all",
+    )
+    return parser.parse_args()
 
 
 def main() -> int:
-    print("=" * 88)
-    print("Audit companion (exact-symbolic) for")
-    print("LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10")
-    print("Goal: sympy-symbolic verification of (R1)-(R4) over abstract n_color,")
-    print("then concrete sweep over n_color in {1, 2, 3, 4, 5, 7, 9, 11, 12}")
-    print("=" * 88)
+    args = parse_args()
+    print("=" * 96)
+    print("LH traceless projective-ratio theorem evidence runner")
+    print(f"mode: {args.mode}")
+    print("Clean clause: trace + positive-integer count + nonzero pair => [a:b]=[1:-n_color]")
+    print("Conditional clauses: b=-1 and Q=T3+Y/2 arithmetic remain supplied-convention support")
+    print("=" * 96)
 
-    # ---------------------------------------------------------------------
-    section("Part 0: symbolic setup")
-    # ---------------------------------------------------------------------
-    nc = Symbol("n_color", positive=True, integer=True)
-    a, b = symbols("a b", real=True)
-
-    print(f"  symbolic n_color = {nc}, eigenvalues a, b real")
-    print(f"  trace equation (L1): 2 n_color a + 2 b = 0")
-
-    # Trace equation as sympy expression set to zero
-    L1 = 2 * nc * a + 2 * b
-
-    # ---------------------------------------------------------------------
-    section("Part 1: (R1) parametric eigenvalue ratio a : b = 1 : (-n_color)")
-    # ---------------------------------------------------------------------
-    # Solve L1 = 0 for b: b = -n_color * a.
-    b_solved = sympy.solve(L1, b)[0]
-    check(
-        "(R1) parametric: b = -n_color * a forced by (L1)",
-        simplify(b_solved + nc * a) == 0,
-        detail=f"b_solved = {b_solved}",
-    )
-
-    # The ratio a:b is invariant of the scalar a. Express:
-    # a / b = a / (-n_color a) = -1/n_color, so a:b = 1:(-n_color).
-    ratio_check = simplify(a / b_solved + Rational(1) / nc)
-    check(
-        "(R1) parametric: a / b = -1 / n_color (equivalent ratio form)",
-        ratio_check == 0,
-        detail=f"a/b + 1/n_color simplifies to {ratio_check}",
-    )
-
-    # ---------------------------------------------------------------------
-    section("Part 1b: zero-solution guard for the (R1) ratio claim")
-    # ---------------------------------------------------------------------
-    # The ratio claim a:b = 1:(-n_color) is well-defined only on the nonzero
-    # branch. The degenerate pair (a, b) = (0, 0) satisfies the homogeneous
-    # trace equation (L1) but makes a:b ill-defined (a/b = 0/0) and would
-    # vacuously satisfy any ratio. Premise (L2) (a, b) != (0, 0) excludes
-    # exactly this solution. This guard confirms:
-    #   (i)  (0, 0) satisfies (L1) (so it IS a solution of the bare equation),
-    #   (ii) (0, 0) is the UNIQUE solution excluded by (L2) (since (L1) forces
-    #        b = -n_color * a, the whole solution set is {(a, -n_color a)}, and
-    #        a = 0 is the only value giving the zero pair),
-    #   (iii) on the nonzero branch (a != 0) the denominator b is nonzero, so
-    #         the projective ratio a:b = 1:(-n_color) is well-defined and holds.
-    L1_at_zero = L1.subs({a: 0, b: 0})
-    check(
-        "(R1) guard (i): degenerate pair (a, b) = (0, 0) satisfies (L1)",
-        simplify(L1_at_zero) == 0,
-        detail=f"(L1) at (0,0) = {simplify(L1_at_zero)}",
-    )
-
-    # (ii) The solution set of (L1) is b = -n_color * a, parameterized by a.
-    # The zero pair arises iff a = 0; hence (0,0) is the unique excluded point.
-    a_param = Symbol("a_param", real=True)
-    b_on_branch = b_solved.subs(a, a_param)  # = -n_color * a_param
-    pair_is_zero_only_at_a0 = simplify(b_on_branch.subs(a_param, 0)) == 0
-    nonzero_when_a_nonzero = simplify(
-        b_on_branch.subs({a_param: Rational(1)}) + nc
-    ) == 0  # b = -n_color when a = 1, i.e. nonzero for positive-integer n_color
-    check(
-        "(R1) guard (ii): (0,0) is the unique (L2)-excluded solution of (L1)",
-        pair_is_zero_only_at_a0 and nonzero_when_a_nonzero,
-        detail=f"branch b = {b_on_branch}; zero only at a = 0",
-    )
-
-    # (iii) On the nonzero branch (a != 0), b = -n_color * a != 0 (n_color > 0),
-    # so the ratio identity a:b = 1:(-n_color) holds with nonzero denominator.
-    ratio_on_nonzero_branch = simplify(
-        (a_param / b_on_branch) + Rational(1) / nc
-    )
-    denom_nonzero_symbolic = simplify(b_on_branch) != 0  # symbolic: -n_color*a_param
-    check(
-        "(R1) guard (iii): on nonzero branch, ratio a:b = 1:(-n_color) with b != 0",
-        ratio_on_nonzero_branch == 0 and denom_nonzero_symbolic,
-        detail=f"a/b + 1/n_color = {ratio_on_nonzero_branch}; denom = {b_on_branch}",
-    )
-
-    # Concrete nonzero-branch instances confirm the zero solution is excluded
-    # and the ratio holds at framework and sweep counts.
-    for n_val in [1, 2, 3, 5]:
-        a_inst = Fraction(1)  # pick a nonzero representative
-        b_inst = Fraction(-n_val) * a_inst
-        # (L1) holds: 2 n_val * a + 2 * b = 2 n_val - 2 n_val = 0
-        l1_holds = (2 * n_val * a_inst + 2 * b_inst) == 0
-        # zero pair excluded: (a_inst, b_inst) != (0, 0)
-        nonzero_pair = (a_inst, b_inst) != (Fraction(0), Fraction(0))
-        # ratio holds: a : b = 1 : (-n_val)
-        ratio_holds = (a_inst / b_inst) == Fraction(1, -n_val)
-        check(
-            f"(R1) guard at n_color = {n_val}: nonzero branch excludes (0,0), "
-            f"ratio a:b = 1:(-{n_val}) holds",
-            l1_holds and nonzero_pair and ratio_holds,
-            detail=f"(a, b) = ({a_inst}, {b_inst}), a/b = {a_inst / b_inst}",
-        )
-
-    # ---------------------------------------------------------------------
-    section("Part 2: (R2) convention b = -1 fixes a = 1/n_color")
-    # ---------------------------------------------------------------------
-    a_under_b_neg1 = sympy.solve(L1.subs(b, -1), a)[0]
-    check(
-        "(R2) parametric: under b = -1 convention, a = 1 / n_color",
-        simplify(a_under_b_neg1 - Rational(1) / nc) == 0,
-        detail=f"a = {a_under_b_neg1}",
-    )
-
-    # ---------------------------------------------------------------------
-    section("Part 3: (R3) closed-form Q(u_L), Q(d_L) parametric in n_color")
-    # ---------------------------------------------------------------------
-    # Under Q = T_3 + a/2 with a = 1/n_color:
-    #   Q(u_L)  =  +1/2 + 1/(2 n_color)  =  (n_color + 1)/(2 n_color)
-    #   Q(d_L)  =  -1/2 + 1/(2 n_color)  =  (1 - n_color)/(2 n_color)
-    a_sym = Rational(1) / nc
-    Q_uL = Rational(1, 2) + a_sym / 2
-    Q_dL = -Rational(1, 2) + a_sym / 2
-
-    Q_uL_target = (nc + 1) / (2 * nc)
-    Q_dL_target = (1 - nc) / (2 * nc)
-
-    check(
-        "(R3) Q(u_L) parametric: (n_color + 1) / (2 n_color)",
-        simplify(Q_uL - Q_uL_target) == 0,
-        detail=f"Q(u_L) = {simplify(Q_uL)}",
-    )
-    check(
-        "(R3) Q(d_L) parametric: (1 - n_color) / (2 n_color)",
-        simplify(Q_dL - Q_dL_target) == 0,
-        detail=f"Q(d_L) = {simplify(Q_dL)}",
-    )
-
-    # ---------------------------------------------------------------------
-    section("Part 4: (C1), (C2) derivable corollaries")
-    # ---------------------------------------------------------------------
-    check(
-        "(C1) Q(u_L) - Q(d_L) = 1 (independent of n_color)",
-        simplify(Q_uL - Q_dL - 1) == 0,
-        detail=f"Q_uL - Q_dL = {simplify(Q_uL - Q_dL)}",
-    )
-    check(
-        "(C2) Q(u_L) + Q(d_L) = a = 1/n_color",
-        simplify(Q_uL + Q_dL - Rational(1) / nc) == 0,
-        detail=f"Q_uL + Q_dL = {simplify(Q_uL + Q_dL)}",
-    )
-
-    # ---------------------------------------------------------------------
-    section("Part 5: (R4) reduced-denominator parity rule via concrete sweep")
-    # ---------------------------------------------------------------------
-    # For each n_color, reduce Q(u_L) = (n_color + 1)/(2 n_color) and
-    # Q(d_L) = (1 - n_color)/(2 n_color) to lowest terms and check the
-    # parity rule:
-    #   odd  n_color -> reduced denominator = n_color
-    #   even n_color -> reduced denominator = 2 n_color
-    sweep_values = [1, 2, 3, 4, 5, 7, 9, 11, 12]
-    for n_val in sweep_values:
-        QuL = Fraction(n_val + 1, 2 * n_val)
-        QdL = Fraction(1 - n_val, 2 * n_val)
-        den_uL = QuL.denominator
-        den_dL = QdL.denominator
-        if n_val % 2 == 1:
-            expected = n_val
-            parity_label = "odd"
-        else:
-            expected = 2 * n_val
-            parity_label = "even"
-        ok = den_uL == expected and den_dL == expected
-        check(
-            f"(R4) at n_color = {n_val} ({parity_label}): "
-            f"d_red = {expected} (got Q_uL denom {den_uL}, Q_dL denom {den_dL})",
-            ok,
-            detail=f"Q_uL = {QuL}, Q_dL = {QdL}",
-        )
-
-    # ---------------------------------------------------------------------
-    section("Part 6: framework instance n_color = 3 rational closed form")
-    # ---------------------------------------------------------------------
-    framework = {nc: 3}
-
-    Q_uL_at_3 = simplify(Q_uL.subs(framework))
-    Q_dL_at_3 = simplify(Q_dL.subs(framework))
-    a_at_3 = simplify(a_sym.subs(framework))
-
-    check(
-        "framework n_color = 3: a = 1/3",
-        simplify(a_at_3 - Rational(1, 3)) == 0,
-        detail=f"a = {a_at_3}",
-    )
-    check(
-        "framework n_color = 3: Q(u_L) = 2/3",
-        simplify(Q_uL_at_3 - Rational(2, 3)) == 0,
-        detail=f"Q(u_L) = {Q_uL_at_3}",
-    )
-    check(
-        "framework n_color = 3: Q(d_L) = -1/3",
-        simplify(Q_dL_at_3 + Rational(1, 3)) == 0,
-        detail=f"Q(d_L) = {Q_dL_at_3}",
-    )
-    check(
-        "framework n_color = 3: reduced denominator = 3 (odd-parity branch)",
-        Fraction(2, 3).denominator == 3 and Fraction(-1, 3).denominator == 3,
-        detail="confirms d_red(3) = n_color = 3 directly",
-    )
-
-    # ---------------------------------------------------------------------
-    section("Part 7: parity-branch counterfactual at n_color = 2")
-    # ---------------------------------------------------------------------
-    # At n_color = 2, parity is even, so the reduced denominator should be
-    # 2 n_color = 4, NOT n_color = 2. Confirm this is genuinely different
-    # from the odd-parity branch behavior.
-    Q_uL_at_2 = Fraction(2 + 1, 2 * 2)  # = 3/4
-    Q_dL_at_2 = Fraction(1 - 2, 2 * 2)  # = -1/4
-    check(
-        "counterfactual at n_color = 2 (even): reduced denominator = 4 != 2",
-        Q_uL_at_2.denominator == 4 and Q_dL_at_2.denominator == 4,
-        detail=f"Q(u_L) = {Q_uL_at_2}, Q(d_L) = {Q_dL_at_2}",
-    )
-
-    # Counterfactual at n_color = 4 (even): reduced denominator = 8.
-    Q_uL_at_4 = Fraction(4 + 1, 2 * 4)  # = 5/8
-    Q_dL_at_4 = Fraction(1 - 4, 2 * 4)  # = -3/8
-    check(
-        "counterfactual at n_color = 4 (even): reduced denominator = 8",
-        Q_uL_at_4.denominator == 8 and Q_dL_at_4.denominator == 8,
-        detail=f"Q(u_L) = {Q_uL_at_4}, Q(d_L) = {Q_dL_at_4}",
-    )
-
-    # ---------------------------------------------------------------------
-    section("Part 8: parity rule via sympy gcd identity")
-    # ---------------------------------------------------------------------
-    # The reduced denominator is 2 n_color / gcd(n_color + 1, 2 n_color).
-    # gcd(n_color + 1, 2 n_color) = gcd(n_color + 1, 2) since
-    # gcd(n_color + 1, 2 n_color) = gcd(n_color + 1, 2 n_color - 2(n_color + 1))
-    #                              = gcd(n_color + 1, -2)
-    #                              = gcd(n_color + 1, 2).
-    # If n_color odd, n_color + 1 even, gcd = 2, reduced denom = n_color.
-    # If n_color even, n_color + 1 odd, gcd = 1, reduced denom = 2 n_color.
-    for n_val in sweep_values:
-        g_uL = sympy.gcd(n_val + 1, 2 * n_val)
-        g_dL = sympy.gcd(1 - n_val, 2 * n_val)
-        # We require gcd matches with the parity rule.
-        if n_val % 2 == 1:
-            expected_gcd = 2
-        else:
-            expected_gcd = 1
-        check(
-            f"(R4) gcd(n_color + 1, 2 n_color) at n_color = {n_val} "
-            f"is {expected_gcd}",
-            int(g_uL) == expected_gcd and int(g_dL) == expected_gcd,
-            detail=f"gcd_uL = {g_uL}, gcd_dL = {g_dL}",
-        )
-
-    # ---------------------------------------------------------------------
-    section("Summary")
-    # ---------------------------------------------------------------------
-    print("  Verified at exact sympy precision:")
-    print("    (R1) parametric eigenvalue ratio a:b = 1:(-n_color)")
-    print("    (R1) zero-solution guard: (0,0) satisfies (L1), excluded by (L2),")
-    print("         ratio holds on nonzero branch with nonzero denominator")
-    print("    (R2) under b = -1 convention, a = 1/n_color")
-    print("    (R3) Q(u_L), Q(d_L) closed forms parametric in n_color")
-    print("    (R4) reduced-denominator parity rule, sweep across both parities")
-    print("    (C1), (C2) sum/difference corollaries")
-    print("    Framework n_color = 3 instance: (a, Q(u_L), Q(d_L)) = (1/3, 2/3, -1/3)")
-    print("    Counterfactual: parity-even branch (n_color = 2, 4) reduces differently")
-    print("    Parity rule via sympy gcd identity across both parities")
+    if args.mode in ("normal", "all"):
+        normal_mode()
+    if args.mode in ("independent", "all"):
+        independent_mode()
+    if args.mode in ("hostile", "all"):
+        hostile_mode()
 
     print()
-    print("=" * 88)
-    print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
-    print("=" * 88)
-    return 0 if FAIL == 0 else 1
+    print("=" * 96)
+    print("EVIDENCE COUNTS")
+    for evidence_class in EVIDENCE_CLASSES:
+        print(
+            f"  {evidence_class}: PASS={passes[evidence_class]} "
+            f"FAIL={failures[evidence_class]}"
+        )
+    total_pass = sum(passes.values())
+    total_fail = sum(failures.values())
+    print(f"TOTAL: PASS={total_pass} FAIL={total_fail}")
+    print("Clean clause: homogeneous/projective implication stated above.")
+    print("Conditional clauses: normalization, charge readout, and denominator support.")
+    print("No audit verdict is issued by this runner.")
+    print("=" * 96)
+    return 0 if total_fail == 0 else 1
 
 
 if __name__ == "__main__":

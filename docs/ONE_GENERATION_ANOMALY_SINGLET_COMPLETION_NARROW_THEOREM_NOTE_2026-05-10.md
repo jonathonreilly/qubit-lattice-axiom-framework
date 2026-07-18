@@ -37,7 +37,9 @@ lepton hypercharges as
 `Y_QL = a`, `Y_LL = b = -n_color a` (the trace-equation forcing from the
 sister narrow theorem
 `LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`),
-with the labelling convention `b = -1` so `a = 1/n_color`.
+and separately supply the local normalization convention `b = -1`, so the
+projective relation gives `a = 1/n_color`. The sister theorem supplies the
+ratio relation; it does not supply this normalization.
 
 Consider four right-handed SU(2)_L-singlet hypercharges
 `(Y_uR, Y_dR, Y_eR, Y_nuR)`. Impose:
@@ -183,7 +185,8 @@ discrete branch selection `(NEUTRAL_BRANCH)`, and checking
   from the sister narrow theorem
   `LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`.
 - Does **not** derive the labelling convention `b = -1` (the LH lepton
-  doublet hypercharge scale). That comes from the same sister theorem.
+  doublet hypercharge scale). It is an explicit local condition of this
+  bounded completion.
 - Does **not** derive `n_color = 3`. The argument is parametric in any
   positive integer `n_color`; the framework-specific value is separate.
 - Does **not** identify the four right-handed singlets with SM particles.
@@ -211,25 +214,26 @@ bundles the anomaly-algebra above with several distinct downstream items:
 
 This narrow theorem isolates item 4. The chirality assignment of the four
 right-handed singlets is taken as a hypothesis; the LH trace relation
-`b = -n_color a` and the convention `b = -1` are imported from the
-sister narrow LH-trace theorem; the branch convention `Y_nuR = 0` is named
-explicitly. The anomaly-algebra closure of the four right-handed Y values
-closes independently of items 1-3.
+`b = -n_color a` is imported from the sister narrow LH-trace theorem; the
+normalization `b = -1`, charge-shift relation, singlet inventory, and branch
+labelling are explicit local conditions. The anomaly-algebra closure of the
+four right-handed Y values is the conditional algebra checked here.
 
 ## Cited dependencies
 
 - [`LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`](LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md) -
-  sister narrow theorem supplying the LH-trace relation `b = -n_color a` and
-  the labelling convention `b = -1`.
+  sister narrow theorem supplying the projective LH-trace relation
+  `b = -n_color a` for a nonzero pair. It supplies no absolute normalization,
+  charge functional, singlet inventory, or species labels.
 
 ## Forbidden imports check
 
 - No PDG observed values consumed.
 - No literature numerical comparators consumed.
 - No fitted selectors consumed.
-- No admitted unit conventions load-bearing on the claim
-  (the `Q = T_3 + Y/2`, `b = -1`, and `Y_nuR = 0` choices are named as
-  conventions, not derivations).
+- The `Q = T_3 + Y/2`, `b = -1`, and `Y_nuR = 0` choices are explicit
+  non-chain-satisfying conditions of this bounded theorem, not framework
+  derivations.
 - No same-surface family arguments.
 - No staggered-Dirac realization input.
 - No anomaly-forces-time chirality input (chirality assignment is a hypothesis).
@@ -260,8 +264,8 @@ verifies via exact sympy `Rational` / `simplify` arithmetic:
   `Y_eR = 0`). Carried by the broad note as a named convention (audit-prep
   2026-05-07 boundary disclosure); not closed here.
 - Why `n_color = 3`. Carried by the graph-first SU(3) lane.
-- The convention `b = -1`. Carried by the sister LH-trace narrow theorem
-  with the same boundary status.
+- The convention `b = -1`. It remains an explicit local normalization
+  condition rather than a conclusion inherited from the sister theorem.
 - The chirality assignment of the four right-handed singlets to single-clock
   `(3, 1)` Minkowski signature. Carried by
   `ANOMALY_FORCES_TIME_THEOREM.md`.
@@ -273,8 +277,8 @@ verifies via exact sympy `Rational` / `simplify` arithmetic:
   chirality + LH-charge + branch-convention inputs; this narrow theorem
   isolates the anomaly-algebra step.
 - `LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md` -
-  sister wave-2 narrow theorem supplying the LH trace relation and
-  the `b = -1` convention.
+  sister wave-2 narrow theorem supplying the projective LH trace relation;
+  the present note supplies its own normalization condition.
 - `STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md` -
   downstream broad note pinning the full one-generation electric charge set;
   this narrow theorem covers the right-handed-Y solving step parametric in

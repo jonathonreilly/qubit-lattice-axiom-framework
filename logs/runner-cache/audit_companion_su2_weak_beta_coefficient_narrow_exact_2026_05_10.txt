@@ -1,21 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py
-runner_sha256: f17fb2d401a3ec7f50f2734d074484cf3e6269d0a740926042e80da3ed1c0dbf
+runner_sha256: 53951d79253b78268a41755c300c84d3e6492480da56163dc975081fe7916f71
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10
 Goal: sympy verification of b_2 = 19/6 closed form
-Inputs (cited):
-  (X0) native_gauge_closure retained + graph_first_su3_integration retained
-  (X1) lh_traceless_eigenvalue_ratio_narrow ... retained_bounded
-  (X2) three_generation_observable_count_corollary ... retained
-  (X3) ew_higgs_gauge_mass_diagonalization ... retained_bounded
-  (X4a) yang_mills_coupling_marginality_forces_d_four ... retained
+Inputs and explicit conditions:
+  (X0) linked native_gauge_closure + graph_first_su3_integration sources
+  (X1) explicit supplied LH inventory N_W=(N_color+1)*N_gen
+  (X2) linked three_generation_observable_count_corollary source
+  (X3) explicit one-Higgs-doublet inventory
+  (X4a) linked yang_mills_coupling_marginality_forces_d_four source
   (X4b) explicit d=4 background-field coefficient kernel
 ========================================================================================
 

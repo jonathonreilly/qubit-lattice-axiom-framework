@@ -6,13 +6,12 @@ The narrow theorem's load-bearing content is the algebraic substitution
 implication: given
 
   (X0) Native SU(2)_L and graph-first structural SU(3)_c color supplied by
-       retained gauge-count upstreams; standard SU(2) group theory
+       the linked gauge-count upstreams; standard SU(2) group theory
        gives C_2(adj of SU(2)) = 2, recorded as N_pair = 2.
-  (X1) N_W = (N_color + 1) * N_gen  (LH SU(2) Weyl-doublet count from
-       the retained_bounded lh_traceless_eigenvalue_ratio narrow theorem),
-  (X2) N_gen = 3  (retained three_generation_observable_count corollary),
-  (X3) n_S^complex_components = 2  (retained ew_higgs_gauge_mass_diagonalization),
-  (X4a) d = 4 Yang-Mills marginal tangent (retained),
+  (X1) N_W = (N_color + 1) * N_gen  (explicit supplied LH field inventory),
+  (X2) N_gen = 3  (linked three_generation_observable_count source),
+  (X3) n_S^complex_components = 2  (explicit one-Higgs-doublet inventory),
+  (X4a) d = 4 Yang-Mills marginal tangent (linked source),
   (X4b) explicit d=4 background-field / heat-kernel coefficient kernel:
          b = (11/3) C_2(adj) - (2/3) T(F_W) N_W - (1/6) T(F_S) n_S
        with the SU(2) trace data verified in this runner:
@@ -96,12 +95,12 @@ def main() -> int:
     print("Audit companion (exact-symbolic) for")
     print("SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10")
     print("Goal: sympy verification of b_2 = 19/6 closed form")
-    print("Inputs (cited):")
-    print("  (X0) native_gauge_closure retained + graph_first_su3_integration retained")
-    print("  (X1) lh_traceless_eigenvalue_ratio_narrow ... retained_bounded")
-    print("  (X2) three_generation_observable_count_corollary ... retained")
-    print("  (X3) ew_higgs_gauge_mass_diagonalization ... retained_bounded")
-    print("  (X4a) yang_mills_coupling_marginality_forces_d_four ... retained")
+    print("Inputs and explicit conditions:")
+    print("  (X0) linked native_gauge_closure + graph_first_su3_integration sources")
+    print("  (X1) explicit supplied LH inventory N_W=(N_color+1)*N_gen")
+    print("  (X2) linked three_generation_observable_count_corollary source")
+    print("  (X3) explicit one-Higgs-doublet inventory")
+    print("  (X4a) linked yang_mills_coupling_marginality_forces_d_four source")
     print("  (X4b) explicit d=4 background-field coefficient kernel")
     print("=" * 88)
 
@@ -116,7 +115,7 @@ def main() -> int:
     print(f"  symbolic N_color = {N_color}")
     print(f"  symbolic N_gen   = {N_gen}")
 
-    # Cited input (X1): N_W = (N_color + 1) * N_gen
+    # Explicit supplied field-inventory condition (X1).
     N_W = (N_color + 1) * N_gen
 
     # Cited input (X3): n_S^complex_components = 2 (one Higgs doublet)

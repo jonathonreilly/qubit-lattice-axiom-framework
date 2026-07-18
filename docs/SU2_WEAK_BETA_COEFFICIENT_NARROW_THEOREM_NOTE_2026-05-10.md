@@ -3,10 +3,9 @@
 **Date:** 2026-05-10
 **Type:** bounded_theorem
 **Claim scope:** the standalone algebraic implication that, given (X0) the
-retained gauge-count surfaces supplying native `SU(2)_L` and structural
-`SU(3)_c` color, (X1) the left-handed trace-equation eigenvalue ratio
-supplying the LH SU(2)-doublet count
-`N_W = (N_color + 1) * N_gen`, (X2) the retained three-generation observable
+gauge-count surfaces supplying native `SU(2)_L` and structural
+`SU(3)_c` color, (X1) the explicit left-handed field-inventory condition
+`N_W = (N_color + 1) * N_gen`, (X2) the linked three-generation observable
 count `N_gen = 3`, (X3) the supplied one-Higgs-doublet inventory
 with `n_S^complex_components = 2`, and (X4′) the explicit d=4
 background-field / heat-kernel coefficient kernel recorded in this note,
@@ -69,19 +68,18 @@ Sources:
 [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
 (effective_status: `retained`).
 
-**(X1) LH SU(2)-doublet count.** The trace-equation eigenvalue analysis of
-the left-handed `2 N_color + 2` state count (one LH quark doublet in
-`N_color` color states plus one LH lepton doublet) supplies the LH SU(2)
-Weyl-doublet count per generation as `N_color + 1` (i.e. `N_color` quark
-doublets plus `1` lepton doublet). Multiplied by `N_gen` generations, the
-total LH SU(2) Weyl-doublet count is
+**(X1) Supplied LH SU(2)-doublet inventory.** Supply one LH quark doublet
+in each of `N_color` color copies and one LH lepton doublet per generation.
+This field-content condition gives `N_color + 1` Weyl doublets per generation,
+so the total count is
 
 ```text
 N_W  =  (N_color + 1) * N_gen.                                            (X1)
 ```
 
-Source: [`LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`](LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md)
-(effective_status: `retained_bounded`).
+This inventory is an explicit non-chain-satisfying physical condition of the
+bounded beta-coefficient theorem. The traceless projective-ratio theorem does
+not derive the inventory or the species interpretation.
 
 **(X2) Three-generation observable count.**
 
@@ -298,9 +296,8 @@ retained d=4 tangent `(X4a)` and explicit X4′ coefficient kernel `(X4b)`.
 - Does **not** derive the d=4 heat-kernel spin-sector coefficients
   `11/3`, `-2/3`, or `-1/6` from minimal axioms; those coefficients remain
   the explicit X4′ QFT kernel for this bounded theorem.
-- Does **not** derive the LH state-count `2 N_color + 2` per generation;
-  that is the trace-surface input carried by the cited retained_bounded
-  upstream `LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10`.
+- Does **not** derive the LH field inventory or state count. The relation
+  `N_W = (N_color + 1) N_gen` is the explicit condition `(X1)`.
 - Does **not** consume any PDG observed `b_2` value, literature numerical
   comparator, fitted selector, or admitted unit convention.
 - Does **not** assert any α_2(M_Z) prediction, threshold-resolved running,
@@ -317,11 +314,8 @@ The parent broad note
 bundles the algebraic substitution above with several distinct downstream
 items:
 
-1. The LH SU(2)-doublet count derivation, supplied by the broad parent
-   `LEFT_HANDED_CHARGE_MATCHING_NOTE.md` (currently `unaudited` on the
-   broad surface; the narrow rescope
-   `LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10` is
-   retained_bounded and is what this narrow theorem cites).
+1. The LH SU(2)-doublet field inventory, supplied here as condition `(X1)`;
+   this theorem does not promote the inventory to a framework derivation.
 2. The companion forms `b_3 = (11 N_color - 2 N_quark)/3 = 7` and
    `b_QED = (2/3)(N_color + 1)² = 32/3` derived inline.
 3. The joint asymptotic running package
@@ -332,10 +326,9 @@ items:
    relations.
 
 This narrow theorem isolates item 4 (the load-bearing substitution and
-the per-sector decomposition) from items 1–3. The named upstream inputs enter
-as hypotheses sourced from cited retained / retained_bounded authorities, and
-the X4′ coefficient kernel is explicit in this row; no broad-parent
-unaudited content is load-bearing.
+the per-sector decomposition) from items 1–3. The linked sources and explicit
+conditions are itemized above, and the X4′ coefficient kernel is explicit in
+this row; no broad-parent content is load-bearing.
 
 ## Cited dependencies
 
@@ -347,9 +340,6 @@ Markdown-link upstream (load-bearing):
 - [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
   — retained; supplies the graph-first structural `SU(3)_c` color
   surface and the color multiplicity `N_color = 3`.
-- [`LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`](LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — retained_bounded; supplies `(X1)` LH SU(2)-doublet count
-  `N_W = (N_color + 1) * N_gen` per generation.
 - [`THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md`](THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md)
   — retained; supplies `(X2)` `N_gen = 3` observable-stable count.
 - [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
@@ -376,11 +366,9 @@ Parallel textbook reference (not a ledger dependency):
 - No staggered-Dirac realization input.
 - No new graph-first selector consumed; the structural `SU(3)_c` count enters
   only through the cited retained upstream.
-- All six load-bearing ledger upstreams verified at effective_status
-  `retained` or `retained_bounded` on `docs/audit/data/audit_ledger.json`
-  as of this repair: native gauge closure, graph-first SU(3), LH trace
-  ratio, three-generation count, one-Higgs-doublet content, and d=4
-  Yang-Mills marginality.
+- The pipeline resolves the five linked scientific dependencies at review and
+  audit time. The LH field inventory `(X1)` and the X4′ spin-sector kernel are
+  explicit conditions rather than dependency authorities.
 - The X4′ heat-kernel spin-sector coefficient kernel is not a ledger
   upstream and is not derived by this runner; it is the explicit bounded QFT
   kernel on which the substitution theorem is conditional.
@@ -435,6 +423,15 @@ load-bearing surface:
 Status authority remains independent audit lane only. This edit does not set
 `audit_status`, `effective_status`, a retained tag, or any verdict.
 
+## 2026-07-18 direct-consumer boundary repair
+
+The earlier text cited the LH projective-ratio theorem as authority for
+`N_W = (N_color + 1) N_gen`. That theorem assumes a trace surface and derives
+its projective eigenvalue ratio; it does not derive a field inventory. This
+note now states the LH doublet inventory as explicit condition `(X1)` and no
+longer creates that citation-graph edge. The beta-coefficient arithmetic is
+unchanged.
+
 ## Residual boundary
 
 - Why native `SU(2)_L` exists is still cited through the upstream native gauge
@@ -458,14 +455,14 @@ citation-graph builder does not parse them as upstream dependency edges:
   and the joint asymptotic running package; this narrow theorem covers
   the load-bearing substitution core parametric in three counts.
 - `CKM_MAGNITUDES_STRUCTURAL_COUNTS_NARROW_THEOREM_NOTE_2026-05-02.md`
-  — sister Pattern A narrow theorem (retained_bounded) carving the
+  — sister Pattern A bounded theorem carving the
   algebraic substitution core of the parent CKM magnitudes
   structural-counts row from its framework-specific upstream context.
 - `LEFT_HANDED_CHARGE_MATCHING_NOTE.md`
   — broad parent of the LH-content row carrying the
-  `Q_L : (2, N_color)_{+1/3}` literal; out-of-scope here because the
-  narrow rescope (`LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10`)
-  supplies the load-bearing trace-equation core at retained_bounded.
+  `Q_L : (2, N_color)_{+1/3}` literal; its projective-ratio companion is
+  `LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10`, which does
+  not supply the field inventory used here.
 - `YT_EW_COLOR_PROJECTION_THEOREM.md`
   — retained derived; supplies the lattice-scale anchor
   `1/α_2|_lattice = 16π` used in the parent broad note's joint

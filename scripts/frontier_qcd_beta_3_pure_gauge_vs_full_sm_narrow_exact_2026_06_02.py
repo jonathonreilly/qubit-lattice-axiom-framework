@@ -3,15 +3,15 @@
 `QCD_BETA_3_PURE_GAUGE_VS_FULL_SM_NARROW_THEOREM_NOTE_2026-06-02`.
 
 Given (X0) graph-first SU(3)_c with N_color=3, (X1) N_quark in
-{0 (pure gauge), N_gen*N_pair = 3*2 = 6 (full SM)}, (X2) retained
-N_gen = 3 (only on full-SM instance), and (X3) named-admitted
+{0 (pure gauge), 6 (explicitly supplied full-SM inventory)}, (X2) linked
+N_gen = 3 bookkeeping, and (X3) explicitly supplied
 Peskin-Schroeder b = (11/3) C_2(adj SU(N)) - (4/3) T(F) n_f with
 C_2(adj SU(N)) = N, T(F) = 1/2, n_f counting Dirac quark flavors, and no
 scalar (Higgs is SU(3)-singlet), verifies (P1) b_3 = (11 N_color - 2
 N_quark)/3, (P2a) 11 at
 (3,0), (P2b) 7 at (3,6), (P2) Delta b_3 = 4 = (2/3)*6, (P3) per-sector
 +11 -4 = +7, plus (C1)-(C5), SU(2) sister cross-check, convention flip.
-Mirrors retained_bounded SU(2)_L sister
+Mirrors the bounded SU(2)_L sister
 audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py.
 """
 
@@ -61,7 +61,7 @@ def main() -> int:
     N_color = Symbol("N_color", positive=True, integer=True)
     N_quark = Symbol("N_quark", nonnegative=True, integer=True)
 
-    # (X3) admissions: C_2(adj SU(N)) = N (here N_color); T(F) = 1/2.
+    # (X3) explicit external kernel: C_2(adj SU(N)) = N; T(F) = 1/2.
     # n_f counts Dirac quark flavors; no scalar contribution because the
     # SM Higgs is SU(3)-singlet.
     C2_adj_SU3 = N_color
@@ -127,7 +127,7 @@ def main() -> int:
         detail="cross-check via (P1')",
     )
 
-    # Verify (X1b): N_quark = N_gen * N_pair = 3 * 2 = 6 at framework counts.
+    # Check the supplied full-SM bookkeeping decomposition 6 = 3 * 2.
     N_gen_sym = Symbol("N_gen", positive=True, integer=True)
     N_pair_sym = Symbol("N_pair", positive=True, integer=True)
     check(
@@ -256,8 +256,8 @@ def main() -> int:
         detail=f"pg={pg_total_num}, sm={sm_total_num}, delta={pg_total_num - sm_total_num}",
     )
 
-    # Sister cross-check: same (X3) admission at SU(2) pure gauge (matter-free)
-    # gives the matter-free piece of the retained_bounded SU(2)_L sister.
+    # Sister cross-check: the same (X3) kernel at SU(2) pure gauge
+    # gives the matter-free piece of the bounded SU(2)_L sister.
     b_2_pg_matter_free = simplify(b_3_psv.subs({N_color: 2, N_quark: 0}))
     check(
         "sister cross-check: SU(2) pure-gauge matter-free = +22/3",

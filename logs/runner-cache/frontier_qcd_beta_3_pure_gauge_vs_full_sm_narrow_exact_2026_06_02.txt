@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_qcd_beta_3_pure_gauge_vs_full_sm_narrow_exact_2026_06_02.py
-runner_sha256: 3b1ecd5591f066b9be799f5b3c64d329819c2752b8e65b97a3721b95ec9fd141
+runner_sha256: ae7d7c78292017e6843413c58718ef7e7cdef2fe7f8220d3272cbb998af2e311
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ========================================================================================

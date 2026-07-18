@@ -1,24 +1,45 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-18T03:50:54.119837+00:00",
+  "audit_invocation_history": [
+    "bfab691e3d234e71bf5e41ceb82e6d2d"
+  ],
+  "audit_invocation_id": "bfab691e3d234e71bf5e41ceb82e6d2d",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, which occurs uniquely at d = 4; there the exact tuple is (7/8, 7/8, 0)."
+    },
+    "dep_claim_type": {
+      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 15.667,
+    "runner_hash": "714decb544f077fe780563f30351a64ae5f86709f1df5579e8640bccbb025fb5",
+    "transitive_descendants": 812
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-loop-drain-ready-20260717-96d23bf2b52740f7a0766fe14587e40b-sm_relativistic_dof_coun-001",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The arithmetic closes conditionally, but the restricted retained chain does not establish or register the physical Standard Model inventory that supplies the totals 28 and 90.",
   "claim_id": "sm_relativistic_dof_count_import_note_2026-05-17",
-  "claim_scope": null,
+  "claim_scope": "Given the explicitly declared Standard Model inventory totals of 28 bosonic and 90 fermionic states and the retained 7/8 weight, exact finite arithmetic gives g_* = 427/4 = 106.75; inventory selection and thermal applicability are excluded.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-18T03:50:54.119837+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +47,20 @@
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 12,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 15.667,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Given g_bosonic = 28, g_fermionic = 90, and fermion weight 7/8, g_* = 28 + (7/8) * 90 = 427/4 = 106.75.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "14ca250db8402f5bab238354f8c653bd7f58f3a88086e74374940081c031cb23",
   "note_path": "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop inventory theorem or explicitly registered physical-input authority establishing the Standard Model state multiplicities and their thermal-count interpretation, then re-audit the finite arithmetic wrapper.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -176,14 +198,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 28,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 28
   },
   "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py",
   "title": "Standard-Model Relativistic Degrees-of-Freedom Count \u2014 Finite Inventory Arithmetic",
   "transitive_descendants": 812,
-  "verdict_rationale": null
+  "verdict_rationale": "The exact arithmetic is correct, and the runner genuinely computes the multiplicity products and Fraction sum rather than merely printing a passing result. However, the Standard Model inventory and its interpretation as relativistic thermal states are expressly declared external physical inputs; only the 7/8 weight is supplied by a retained one-hop authority. The result is therefore a valid conditional arithmetic certificate, not clean retained closure of the physical g_* value."
 }

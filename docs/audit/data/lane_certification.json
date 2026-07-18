@@ -2281,7 +2281,7 @@
         },
         {
           "claim_id": "sm_relativistic_dof_count_import_note_2026-05-17",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "source_driven_field_recovery_sweep_note",
@@ -2907,6 +2907,6 @@
       "uncertified_count": 663
     }
   ],
-  "repo_head": "4507b0d37d8ef79c41fa3a0bafcb69bcd421d602",
+  "repo_head": "f9f4b56e26bc4180f9eada4c3edede7a58deb517",
   "schema": "lane_certification_v2"
 }

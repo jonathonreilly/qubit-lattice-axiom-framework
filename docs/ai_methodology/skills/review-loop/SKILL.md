@@ -198,9 +198,14 @@ no topology decisions required from the invoker.
 2. **One isolated worktree per PR.** Parallel reviews never share a
    worktree or a checkout; shared worktrees race and have destroyed findings
    in this repo's history.
-3. **One reviewer process per PR**, applicable lenses combined into a
-   single pass (two for large diffs), findings written incrementally to an
-   untracked file in that PR's worktree, verdict line last.
+3. **One reviewer process per PR at a time**, applicable lenses combined
+   into a single pass (two for large diffs), findings written incrementally
+   to an untracked file in that PR's worktree, verdict line last. This is
+   the budget-adapted default of the Reviewer Fanout section below: under
+   the shared-pool budget, cross-PR parallelism replaces per-lens
+   parallelism; full per-lens fanout inside one PR remains available in a
+   quiet pool, and every applicable lens must be explicitly covered either
+   way.
 4. **Concurrency budget (shared codex pool).** Reviewer processes share one
    pool with the audit lane's auditor seats and judicial panels. Keep the
    TOTAL concurrent codex processes across every lane at or under ~8-10

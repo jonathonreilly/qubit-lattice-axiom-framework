@@ -88,14 +88,29 @@ regardless of executor.
    `python3 -c "import sys; sys.path.insert(0,'scripts'); from runner_cache
    import execute_runner, write_cache; r=execute_runner('scripts/<runner>.py',
    120); write_cache('scripts/<runner>.py', r)"`
-7. **Commit/push/PR (planner).** Conventional commit; PR body states what
+   Size the timeout to the runner — 120 s default; raise it (e.g. 300) for
+   heavy group-closure/symbolic runners rather than letting the regen die.
+7. **Citation-graph manifest (only when the PR adds a NEW note).** Stage 18
+   of the audit pipeline (`repo_invariants_check.py --check --enforce-links`)
+   HARD-FAILS any PR that adds a note without acknowledging the
+   citation-graph delta. In the PR worktree: (a) run the full pipeline
+   `docs/audit/scripts/run_pipeline.sh` — stage 1 builds the untracked
+   citation graph that the manifest writer needs; running
+   `write_citation_graph_manifest.py` alone FileNotFoundErrors in a fresh
+   checkout; (b) stage ONLY `docs/audit/data/citation_graph_manifest.json`,
+   then `git checkout -- docs/audit docs/repo docs/publication` to discard
+   the other derived rewrites; (c) `rm` the auto-created untracked ledger
+   shard for the new note — the audit lane owns ledger-row creation; (d)
+   commit as a separate `audit-infra:` commit. This manifest refresh is the
+   SOLE sanctioned change under `docs/audit/data/`.
+8. **Commit/push/PR (planner).** Conventional commit; PR body states what
    verdict/goal the work responds to, what changed, runner numbers, and
    downstream order if PRs chain. `git worktree remove --force` after push.
    The PR is the done-state — do NOT check/wait on/report `gh pr checks`
    (owner 2026-07-02: main moves too fast for PR CI to signal; the
    review-loop worker owns landing). Clean science + your own runner re-run
    PASS + fresh cache = done; start the next unit.
-8. **Memory (planner).** Update the campaign's project memory + index hook,
+9. **Memory (planner).** Update the campaign's project memory + index hook,
    where the session has persistent memory.
 
 ## Spec template (what makes dispatches clean)
@@ -196,10 +211,11 @@ Line-by-line review is the only thing that catches them. The six patterns
    official, they differ). Not fabrication — every word is real — but the
    citation is wrong, and the executor may pin its runner to the same wrong
    source, making the pair self-consistently green. Defense: specs put the
-   authoritative text inline AND require a runner gate that reads
-   `docs/audit/data/audit_ledger.json` directly and pins the note's quote to
-   the ledger field; review re-derives the quote from the ledger, never from
-   the note file.
+   authoritative text inline AND require a runner gate that reads the ledger
+   row shard (`docs/audit/data/ledger/<rid[:2]>/<rid>.json`, rid = lowercase
+   note basename without `.md`; the monolithic `audit_ledger.json` no longer
+   exists) directly and pins the note's quote to the ledger field; review
+   re-derives the quote from the ledger, never from the note file.
 
 **Discriminating-gate test:** recompute every completeness/identity gate with
 a term dropped/perturbed; if it still passes, it's tautological — demand a

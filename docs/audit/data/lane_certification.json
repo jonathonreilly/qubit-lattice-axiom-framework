@@ -2300,10 +2300,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
           "effective_status": "unaudited"
         },
@@ -2900,9 +2896,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 663
+      "uncertified_count": 662
     }
   ],
-  "repo_head": "e6b3ea00b62a7b2271ca54ce68804567525aecfb",
+  "repo_head": "9b718c40e8406fde1a2b918c1ca693bb99c2db2d",
   "schema": "lane_certification_v2"
 }

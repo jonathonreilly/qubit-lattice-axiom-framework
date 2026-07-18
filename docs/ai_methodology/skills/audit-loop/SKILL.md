@@ -314,10 +314,13 @@ failure exits nonzero.
 
 **Parallel coexistence with review-loop.** The audit lane and review-loop
 sessions may run at the same time by design; the rules that keep concurrent
-landings cheap are: (1) exactly ONE audit-lane orchestrator per repository —
+landings cheap are: (1) exactly ONE audit-lane orchestrator per clone —
 the drainer and the panel orchestrator enforce this with a machine-local
-exclusive lock and exit with guidance when another instance holds it
-(parallelism belongs in the seats inside the one instance); (2) audit
+exclusive lock keyed to the clone's git common directory, so every worktree
+of that clone shares one lock, and a second instance exits with guidance
+(parallelism belongs in the seats inside the one instance; an INDEPENDENT
+clone has its own lock, and cross-clone coordination stays with this
+contract and the concurrency budget, not the lock); (2) audit
 commits are the expensive racers (they ship regenerated audit surfaces and
 a push race replays the pipeline), review landings are cheap racers
 (cherry-pick retries in seconds) — so the audit lane never waits for

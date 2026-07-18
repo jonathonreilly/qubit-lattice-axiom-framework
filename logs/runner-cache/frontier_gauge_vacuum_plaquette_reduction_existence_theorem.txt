@@ -1,53 +1,33 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py
-runner_sha256: a7dfaa3835fbe2e6166bbe4a776d63c6e1a0aa6dd94af6911c3954d34e78238a
-timeout_sec: 900
+runner_sha256: 1ec19ad536037c98b8e4d9601e74a0907013670dd076653183e2931087890e93
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
-==============================================================================
-GAUGE-VACUUM PLAQUETTE REDUCTION EXISTENCE THEOREM
-==============================================================================
+=== Finite-volume Wilson plaquette inverse-coordinate verifier ===
+MODE: normal
+PASS: runner has no canonical, mixed-cumulant, physical, or audit authority import :: authority_imports=[]
+PASS: runner has no literal-True evidence check :: lines=[]
+PASS: runner has no dynamic eval or exec :: calls=[]
+PASS: fundamental orthogonality contracts the mixed trace moment :: contractions=3, integral Tr(U)Tr(U)^*=1
+PASS: the reconstructed local Haar variance is strictly positive :: Var_0(X)=1/18
+PASS: local SU(3) response samples stay in the proved finite-beta range :: values=[0.00560184644, 0.028931672799, 0.060126554834, 0.128627785322, 0.279619149409, 0.535753990214, 0.677672037375, 0.803193676744]
+PASS: local SU(3) response samples have the variance-predicted sign :: betas=(0.1, 0.5, 1.0, 2.0, 4.0, 8.0, 12.0, 20.0)
+PASS: the positive [0,1) inverse branch recovers an independently integrated target :: target=0.203075050030219, recovered_beta=3.000000000000005
+PASS: the inverse rejects targets outside its half-open range :: negative_rejected=True, endpoint_rejected=True
+PASS: periodic plaquette enumeration includes the 1/N_plaq normalization count :: enumerated=96, formula=96
+PASS: one deformed link changes two plaquettes in every transverse direction :: changed=6
+PASS: the deformed configuration has the directly reconstructed lower action :: identity=1.000000000000000, deformed=0.996546700950692
+PASS: the witness changes a plaquette holonomy and is not gauge-pure cancellation :: max ||U_p-I||=5.757749e-01
+PASS: two-insertion center neutrality has no off-diagonal plaquette survivor :: off_diagonal=0, diagonal_counts={2}
+PASS: finite-volume zero-source slope equals the independently reconstructed local slope :: Var_0(S_L)=16/3, P_L'(0)=1/18
+PASS: the inverse-coordinate derivative at zero is the ratio of the two slopes :: beta_eff,L'(0)=1
+PASS: implicit differentiation gives a positive quotient derivative :: P_L'=5/37, P_1plaq'=7/41, coordinate'=205/259
 
-Local one-plaquette block
-  X(identity)                           = 1.000000000000000
-  X(center)                             = -0.500000000000000
-  sampled P_1plaq(betas)                = [0.00560184644, 0.028931672799, 0.060126554834, 0.128627785322, 0.279619149409, 0.42253173965, 0.618175738968, 0.803193676744]
-
-Finite Wilson evaluation surface witness
-  average plaquette on identity config  = 1.000000000000000
-  average plaquette on deformed config  = 0.996546700950692
-
-Implicit reduction parameters
-  canonical implicit beta_eff(0.5934)   = 9.326167920875534
-  candidate support beta_eff            = 9.329531846652703
-  delta(beta_eff)                       = +0.003363925777169
-
-Onset data
-  full-vacuum slope                     = 0.055555555555556
-  beta_eff beta^5 coefficient           = 3.810394756896815e-05
-
-  [PASS] [THEOREM] the local one-plaquette observable is nonconstant on SU(3)
-         X(U)=Re Tr U / 3 takes the values 1 and -1/2 on explicit SU(3) elements
-  [PASS] [THEOREM] the finite periodic Wilson plaquette observable is nonconstant on the evaluation surface
-         identity average = 1.000000000000000, deformed average = 0.996546700950692
-  [PASS] [SUPPORT] sampled local one-plaquette values are consistent with the strict-monotonicity theorem
-         sampled local plaquette values increase strictly from beta=0.1 to beta=20 and stay in (0,1)
-  [PASS] [SUPPORT] explicit witnesses and range bounds are consistent with the exact implicit reduction-law theorem
-         strict monotonicity of P_1plaq plus 0 <= P_L(beta) < 1 gives uniqueness on the finite Wilson surface
-  [PASS] [THEOREM] the reduction law onset is exact with beta_eff'(0)=1
-         P_full'(0)=P_1plaq'(0)=0.055555555555556
-  [PASS] [THEOREM] the first nonlinear coefficient of the exact onset law is beta^5/26244
-         beta_eff(beta)=beta + (1/26244) beta^5 + O(beta^6)
-  [PASS] [SUPPORT] the canonical same-surface plaquette therefore has a unique implicit nonperturbative reduction parameter
-         beta_eff^can = 9.326167920875534
-  [PASS] [SUPPORT] the old constant-lift candidate remains numerically close to the exact implicit canonical beta_eff
-         |candidate - implicit| = 3.363926e-03
-
-==============================================================================
-SUMMARY: THEOREM PASS=4 SUPPORT=4 FAIL=0
-==============================================================================
+TOTAL: PASS=17, FAIL=0
+VERDICT: FINITE_VOLUME_INVERSE_COORDINATE_THEOREM_VERIFIED
 
 ----- stderr -----
 

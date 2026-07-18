@@ -1,23 +1,25 @@
-# Gauge-Vacuum Plaquette Susceptibility-Flow Finite Packet
+# Gauge-Vacuum Plaquette Inverse-Coordinate Derivative Packet
 
 **Date:** 2026-04-16
 **Type:** bounded_theorem
-**Status:** bounded support theorem for the implicit plaquette-reduction flow on finite Wilson evaluation surfaces; explicit closure at `beta = 6` still open
+**Status authority:** independent audit lane only
 **Script:** `scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py`
 
 ## Load-bearing claim scope
 
-This packet proves the finite transport identity that follows once a finite
-Wilson plaquette reduction map exists:
+This packet records the finite derivative identity that follows from the
+defined inverse coordinate:
 
 - [GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md)
-  supplies the retained finite implicit map
-  `P_L(beta) = P_1plaq(beta_eff,L(beta))`;
+  proves the finite analytic/monotone premises and defines
+  `beta_eff,L := P_1plaq^(-1) o P_L`; the resulting equality is a coordinate
+  identity, not a reduction mechanism;
 - [GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
-  supplies the retained first nonlinear coefficient used for the onset
-  cross-check;
-- the runner computes the one-plaquette Bessel sum and the local inverse
-  parameter directly inside this packet.
+  separately supplies the imported first nonlinear coefficient used for an
+  onset cross-check; this packet does not promote that source or attribute the
+  coefficient to the inverse-coordinate theorem;
+- the runner computes the one-plaquette Bessel sum directly inside this
+  packet.
 
 No staggered-Dirac realization, `g_bare` normalization, physical Wilson
 coupling derivation, bridge-support stack, or beta-6 closed-form plaquette
@@ -25,18 +27,19 @@ value is a premise of this bounded theorem.
 
 ## Question
 
-After closing the exact existence and uniqueness of the implicit reduction law
+After defining the unique finite-volume inverse coordinate
 
 `P_L(beta) = P_1plaq(beta_eff,L(beta))`,
 
-can we derive anything more explicit about the full nonperturbative reduction
-without already solving the Wilson plaquette at the framework point?
+does differentiating its coordinate identity determine the unknown Wilson
+plaquette without already solving that response?
 
 ## Answer
 
-Yes.
+No. Differentiation yields an exact identity but does not evaluate the unknown
+susceptibility.
 
-The exact reduction law is governed by a nonperturbative susceptibility flow:
+Differentiating the coordinate identity gives
 
 `beta_eff,L'(beta) = chi_L(beta) / chi_1plaq(beta_eff,L(beta))`
 
@@ -53,12 +56,12 @@ and therefore
 
 `beta_eff,L(beta) = P_1plaq^(-1)(integral_0^beta chi_L(s) ds)`.
 
-So the remaining open object is now even sharper:
+This identity does not determine either susceptibility. The remaining object is
 
-> derive the full connected Wilson plaquette susceptibility profile
+> independently derive the full connected Wilson plaquette susceptibility profile
 > `chi_L(beta)` on the finite Wilson evaluation surface.
 
-That would close the explicit nonperturbative reduction law.
+That would evaluate the coordinate; the derivative identity alone does not.
 
 ## Theorem 1: exact susceptibility identities
 
@@ -98,9 +101,9 @@ Because both observables are nonconstant and the densities are strictly
 positive for finite `beta`, both susceptibilities are strictly positive on the
 finite Wilson evaluation surface.
 
-## Theorem 2: exact nonperturbative flow law for `beta_eff,L`
+## Theorem 2: derivative identity for the defined `beta_eff,L`
 
-The retained exact implicit reduction law
+The inverse-coordinate identity, true by definition,
 
 `P_L(beta) = P_1plaq(beta_eff,L(beta))`
 
@@ -112,8 +115,9 @@ Therefore
 
 `beta_eff,L'(beta) = chi_L(beta) / chi_1plaq(beta_eff,L(beta))`.
 
-This is an exact nonperturbative transport equation for the reduction map on
-every finite periodic Wilson evaluation surface.
+This is an exact derivative formula for the defined coordinate on every finite
+periodic Wilson evaluation surface. It is not an independently derived
+transport mechanism.
 
 ## Corollary 1: exact integral representation
 
@@ -125,12 +129,12 @@ Substituting into the exact inverse relation yields
 
 `beta_eff,L(beta) = P_1plaq^(-1)(integral_0^beta chi_L(s) ds)`.
 
-So the explicit nonperturbative reduction law is equivalent to the exact
-connected plaquette susceptibility profile.
+Thus evaluating the coordinate requires the same full connected plaquette
+susceptibility profile; the inverse-coordinate notation does not solve it.
 
-## Corollary 2: first nonlocal susceptibility coefficient
+## Imported onset cross-check
 
-The mixed-cumulant onset theorem already proved
+If the separately cited mixed-cumulant onset output is supplied,
 
 `P_L(beta) - P_1plaq(beta) = beta^5 / 472392 + O(beta^6)`.
 
@@ -156,14 +160,12 @@ the first transport correction is
 
 matching the differentiated mixed-cumulant theorem exactly.
 
-## What this closes
+## What this establishes
 
-- exact nonperturbative flow equation for the implicit reduction law
-- exact integral representation of the reduction law in terms of connected
-  Wilson susceptibility
-- exact first nonlocal susceptibility coefficient
-- exact identification of the remaining object as the full susceptibility
-  profile, not a generic missing bridge
+- the derivative and integral identities for the defined inverse coordinate;
+- an algebraic cross-check of a separately imported onset coefficient;
+- the boundary that the full susceptibility profile remains independent input
+  to any explicit evaluation.
 
 ## What this does not close
 
@@ -171,18 +173,15 @@ matching the differentiated mixed-cumulant theorem exactly.
 - an explicit closed form for `beta_eff,L(beta)`
 - analytic closure of `P(6)`
 - repo-wide repinning of the canonical plaquette
+- an independently specified reduction law or physical transport mechanism
 
-## Support consequence for the live package
+## Source boundary
 
-The live package can now say more sharply:
-
-- reduction-law existence/uniqueness is exact;
-- reduction-law transport is exact;
-- the first nonlocal susceptibility correction is exact;
-- the remaining gap is the explicit full connected susceptibility profile at
-  the framework point.
-
-That is a real derivation step, not just a numerical observation.
+The inverse coordinate is exact as a definition and its derivative formula is
+exact calculus. Neither statement characterizes the Wilson response at a
+physical coupling. The imported mixed-cumulant coefficient remains sourced by
+its own row, and no canonical plaquette or canonical inverse-coordinate value
+is evidence in this packet.
 
 ## Commands run
 
@@ -192,4 +191,4 @@ python3 scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py
 
 Expected summary:
 
-- `THEOREM PASS=5 SUPPORT=3 FAIL=0`
+- `THEOREM PASS=1 SUPPORT=5 FAIL=0`

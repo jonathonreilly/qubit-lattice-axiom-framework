@@ -1,203 +1,724 @@
 #!/usr/bin/env python3
-"""
-Exact existence / uniqueness theorem for the Wilson plaquette reduction law.
+"""Evidence for the finite-volume Wilson inverse-coordinate theorem.
 
-This closes the exact implicit reduction-law statement on finite periodic
-Wilson L^4 evaluation surfaces, while keeping the explicit nonperturbative
-form at beta = 6 open.
+The stable filename is historical.  This runner reconstructs the finite
+Wilson configuration space, product-Haar onset algebra, a nonconstant-action
+witness, and the local SU(3) response without importing canonical plaquette,
+mixed-cumulant, physical-coupling, audit, or source-note authority.
 """
 
 from __future__ import annotations
 
+import argparse
+import ast
+from collections import Counter
+from dataclasses import dataclass
+from fractions import Fraction
+from itertools import combinations, product
 import math
-import sys
-from typing import Iterable
+from pathlib import Path
+from typing import Callable, Iterable
 
 import numpy as np
-
-sys.path.insert(0, "scripts")
-
-from canonical_plaquette_surface import CANONICAL_PLAQUETTE  # noqa: E402
-from frontier_gauge_vacuum_plaquette_bridge_support import plaquette_from_bessel  # noqa: E402
-from frontier_gauge_vacuum_plaquette_constant_lift_obstruction import full_wilson_strong_coupling_slope  # noqa: E402
-from frontier_gauge_vacuum_plaquette_mixed_cumulant_audit import beta_eff_beta5_coefficient  # noqa: E402
+from scipy.special import iv
 
 
-THEOREM_PASS = 0
-SUPPORT_PASS = 0
-FAIL = 0
-
+AUDIT_TIMEOUT_SEC = 120
+SOURCE = Path(__file__).resolve()
 N_C = 3
 DIMS = 4
+MODE_TOL = 1.0e-15
+MAX_MODE = 80
+WEYL_NODES = 32
+
+Coordinate = tuple[int, ...]
+LinkKey = tuple[Coordinate, int]
+Plaquette = tuple[Coordinate, int, int]
 
 
-def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM") -> None:
-    global THEOREM_PASS, SUPPORT_PASS, FAIL
-    status = "PASS" if condition else "FAIL"
-    if condition:
-        if bucket == "SUPPORT":
-            SUPPORT_PASS += 1
+@dataclass
+class Audit:
+    passed: int = 0
+    failed: int = 0
+
+    def check(self, label: str, condition: object, detail: str = "") -> None:
+        if bool(condition):
+            self.passed += 1
+            print(f"PASS: {label}" + (f" :: {detail}" if detail else ""))
         else:
-            THEOREM_PASS += 1
-    else:
-        FAIL += 1
-    print(f"  [{status}] [{bucket}] {name}")
-    if detail:
-        print(f"         {detail}")
+            self.failed += 1
+            print(f"FAIL: {label}" + (f" :: {detail}" if detail else ""))
 
 
-def local_plaquette_density(matrix: np.ndarray) -> float:
+@dataclass(frozen=True)
+class LocalSum:
+    partition: float
+    derivative: float
+    max_mode: int
+
+
+@dataclass(frozen=True)
+class WeylStatistics:
+    mean: float
+    variance: float
+
+
+@dataclass(frozen=True)
+class Witness:
+    plaquette_count: int
+    changed_count: int
+    identity_average: float
+    deformed_average: float
+    max_holonomy_deviation: float
+    phase_density: float
+
+
+@dataclass(frozen=True)
+class ChargeSummary:
+    plaquette_count: int
+    off_diagonal_neutral_assignments: int
+    diagonal_neutral_counts: tuple[int, ...]
+
+
+def shift(x: Coordinate, direction: int, length: int) -> Coordinate:
+    out = list(x)
+    out[direction] = (out[direction] + 1) % length
+    return tuple(out)
+
+
+def plaquettes(length: int, ndim: int = DIMS) -> list[Plaquette]:
+    return [
+        (x, mu, nu)
+        for x in product(range(length), repeat=ndim)
+        for mu, nu in combinations(range(ndim), 2)
+    ]
+
+
+def plaquette_boundary(p: Plaquette, length: int) -> Counter[LinkKey]:
+    x, mu, nu = p
+    boundary: Counter[LinkKey] = Counter()
+    boundary[(x, mu)] += 1
+    boundary[(shift(x, mu, length), nu)] += 1
+    boundary[(shift(x, nu, length), mu)] -= 1
+    boundary[(x, nu)] -= 1
+    return Counter({link: charge for link, charge in boundary.items() if charge})
+
+
+def center_neutral(mapping: Counter[LinkKey]) -> bool:
+    return all(charge % N_C == 0 for charge in mapping.values())
+
+
+def charge_summary(length: int) -> ChargeSummary:
+    cells = plaquettes(length)
+    boundaries = [plaquette_boundary(p, length) for p in cells]
+    off_diagonal = 0
+    diagonal_counts: list[int] = []
+    for i, left in enumerate(boundaries):
+        diagonal_neutral = 0
+        for j, right in enumerate(boundaries):
+            for left_sign, right_sign in product((1, -1), repeat=2):
+                combined: Counter[LinkKey] = Counter()
+                for link, charge in left.items():
+                    combined[link] += left_sign * charge
+                for link, charge in right.items():
+                    combined[link] += right_sign * charge
+                combined = Counter(
+                    {link: charge for link, charge in combined.items() if charge}
+                )
+                if center_neutral(combined):
+                    if i == j:
+                        diagonal_neutral += 1
+                    else:
+                        off_diagonal += 1
+        diagonal_counts.append(diagonal_neutral)
+    return ChargeSummary(len(cells), off_diagonal, tuple(diagonal_counts))
+
+
+def identity_links(length: int, ndim: int = DIMS) -> dict[LinkKey, np.ndarray]:
+    return {
+        (x, direction): np.eye(N_C, dtype=complex)
+        for x in product(range(length), repeat=ndim)
+        for direction in range(ndim)
+    }
+
+
+def phase_link(theta: float) -> np.ndarray:
+    return np.diag(
+        [np.exp(1j * theta), np.exp(-1j * theta), 1.0]
+    ).astype(complex)
+
+
+def local_density(matrix: np.ndarray) -> float:
     return float(np.trace(matrix).real / N_C)
 
 
+def local_plaquette_density(matrix: np.ndarray) -> float:
+    """Stable helper API for the spectral-measure consumer."""
+
+    return local_density(matrix)
+
+
 def center_matrix() -> np.ndarray:
-    phase = np.exp(2j * math.pi / 3.0)
-    return phase * np.eye(3, dtype=complex)
+    phase = np.exp(2j * math.pi / N_C)
+    return phase * np.eye(N_C, dtype=complex)
 
 
 def diagonal_phase_link(theta: float) -> np.ndarray:
-    return np.diag([np.exp(1j * theta), np.exp(-1j * theta), 1.0]).astype(complex)
+    return phase_link(theta)
 
 
-def build_identity_links(L: int = 2, ndim: int = DIMS) -> dict[tuple[int, ...], list[np.ndarray]]:
-    links: dict[tuple[int, ...], list[np.ndarray]] = {}
-    for coords in np.ndindex(*([L] * ndim)):
-        links[coords] = [np.eye(3, dtype=complex) for _ in range(ndim)]
-    return links
+def build_identity_links(
+    L: int = 2, ndim: int = DIMS
+) -> dict[Coordinate, list[np.ndarray]]:
+    """Return the historical coordinate-to-direction link representation."""
+
+    return {
+        x: [np.eye(N_C, dtype=complex) for _ in range(ndim)]
+        for x in product(range(L), repeat=ndim)
+    }
 
 
-def measure_average_plaquette(links: dict[tuple[int, ...], list[np.ndarray]], L: int = 2, ndim: int = DIMS) -> float:
-    total = 0.0
-    count = 0
-    for coords in np.ndindex(*([L] * ndim)):
-        x = list(coords)
-        for mu in range(ndim):
-            for nu in range(mu + 1, ndim):
-                xm = list(x)
-                xm[mu] = (xm[mu] + 1) % L
-                xn = list(x)
-                xn[nu] = (xn[nu] + 1) % L
-                u_p = (
-                    links[tuple(x)][mu]
-                    @ links[tuple(xm)][nu]
-                    @ links[tuple(xn)][mu].conj().T
-                    @ links[tuple(x)][nu].conj().T
+def measure_average_plaquette(
+    links: dict[Coordinate, list[np.ndarray]],
+    L: int = 2,
+    ndim: int = DIMS,
+) -> float:
+    values: list[float] = []
+    for x in product(range(L), repeat=ndim):
+        for mu, nu in combinations(range(ndim), 2):
+            matrix = (
+                links[x][mu]
+                @ links[shift(x, mu, L)][nu]
+                @ links[shift(x, nu, L)][mu].conj().T
+                @ links[x][nu].conj().T
+            )
+            values.append(local_density(matrix))
+    return float(np.mean(values))
+
+
+def plaquette_matrix(
+    links: dict[LinkKey, np.ndarray], p: Plaquette, length: int
+) -> np.ndarray:
+    x, mu, nu = p
+    return (
+        links[(x, mu)]
+        @ links[(shift(x, mu, length), nu)]
+        @ links[(shift(x, nu, length), mu)].conj().T
+        @ links[(x, nu)].conj().T
+    )
+
+
+def one_link_witness(length: int, theta: float) -> Witness:
+    cells = plaquettes(length)
+    identity = identity_links(length)
+    deformed = identity_links(length)
+    deformed[((0,) * DIMS, 0)] = phase_link(theta)
+
+    identity_matrices = [plaquette_matrix(identity, p, length) for p in cells]
+    deformed_matrices = [plaquette_matrix(deformed, p, length) for p in cells]
+    identity_values = [local_density(matrix) for matrix in identity_matrices]
+    deformed_values = [local_density(matrix) for matrix in deformed_matrices]
+    holonomy_deviations = [
+        float(np.linalg.norm(matrix - np.eye(N_C)))
+        for matrix in deformed_matrices
+    ]
+    changed = sum(deviation > 1.0e-12 for deviation in holonomy_deviations)
+    return Witness(
+        plaquette_count=len(cells),
+        changed_count=changed,
+        identity_average=float(np.mean(identity_values)),
+        deformed_average=float(np.mean(deformed_values)),
+        max_holonomy_deviation=max(holonomy_deviations),
+        phase_density=local_density(phase_link(theta)),
+    )
+
+
+def local_haar_moment() -> tuple[Fraction, Fraction, int]:
+    """Compute E[X^2] from fundamental matrix-element orthogonality."""
+
+    nonzero_contractions = sum(
+        1 for row in range(N_C) for col in range(N_C) if row == col
+    )
+    mixed_trace_moment = sum(
+        Fraction(1, N_C)
+        for row in range(N_C)
+        for col in range(N_C)
+        if row == col
+    )
+    trace_normalization = 2 * N_C
+    x_second_moment = Fraction(2, 1) * mixed_trace_moment / (
+        trace_normalization**2
+    )
+    return x_second_moment, mixed_trace_moment, nonzero_contractions
+
+
+def bessel_matrix(beta: float, mode: int, source_scale: float) -> np.ndarray:
+    argument = source_scale * beta / N_C
+    return np.array(
+        [
+            [iv(mode + row - col, argument) for col in range(N_C)]
+            for row in range(N_C)
+        ],
+        dtype=float,
+    )
+
+
+def bessel_matrix_derivative(
+    beta: float, mode: int, source_scale: float
+) -> np.ndarray:
+    argument = source_scale * beta / N_C
+    return np.array(
+        [
+            [
+                source_scale
+                * (
+                    iv(mode + row - col - 1, argument)
+                    + iv(mode + row - col + 1, argument)
                 )
-                total += np.trace(u_p).real / N_C
-                count += 1
-    return total / count
+                / (2.0 * N_C)
+                for col in range(N_C)
+            ]
+            for row in range(N_C)
+        ],
+        dtype=float,
+    )
 
 
-def implicit_beta_eff(target_plaquette: float, lo: float = 0.0, hi: float = 20.0, steps: int = 100) -> float:
-    left = lo
-    right = hi
+def local_partition_sum(
+    beta: float,
+    source_scale: float = 1.0,
+    tolerance: float = MODE_TOL,
+    max_mode: int = MAX_MODE,
+) -> LocalSum:
+    total_partition = 0.0
+    total_derivative = 0.0
+    for mode_abs in range(max_mode + 1):
+        strip_partition = 0.0
+        strip_derivative = 0.0
+        signed_modes = (0,) if mode_abs == 0 else (-mode_abs, mode_abs)
+        for mode in signed_modes:
+            matrix = bessel_matrix(beta, mode, source_scale)
+            derivative_matrix = bessel_matrix_derivative(
+                beta, mode, source_scale
+            )
+            determinant = float(np.linalg.det(matrix))
+            derivative = determinant * float(
+                np.trace(np.linalg.solve(matrix, derivative_matrix))
+            )
+            strip_partition += determinant
+            strip_derivative += derivative
+        total_partition += strip_partition
+        total_derivative += strip_derivative
+        if mode_abs >= 3:
+            scale_z = max(abs(total_partition), 1.0)
+            scale_dz = max(abs(total_derivative), 1.0)
+            if (
+                abs(strip_partition) < tolerance * scale_z
+                and abs(strip_derivative) < tolerance * scale_dz
+            ):
+                return LocalSum(total_partition, total_derivative, mode_abs)
+    raise RuntimeError(f"SU(3) mode sum did not converge by mode {max_mode}")
+
+
+def local_plaquette_bessel(beta: float, source_scale: float = 1.0) -> float:
+    result = local_partition_sum(beta, source_scale=source_scale)
+    return result.derivative / result.partition
+
+
+def local_weyl_statistics(beta: float, nodes: int = WEYL_NODES) -> WeylStatistics:
+    legendre_nodes, legendre_weights = np.polynomial.legendre.leggauss(nodes)
+    angles = math.pi * (legendre_nodes + 1.0)
+    weights = math.pi * legendre_weights
+    partition = 0.0
+    first = 0.0
+    second = 0.0
+    for i, theta1 in enumerate(angles):
+        for j, theta2 in enumerate(angles):
+            theta3 = -theta1 - theta2
+            eigenvalues = (
+                np.exp(1j * theta1),
+                np.exp(1j * theta2),
+                np.exp(1j * theta3),
+            )
+            vandermonde = (
+                (eigenvalues[0] - eigenvalues[1])
+                * (eigenvalues[0] - eigenvalues[2])
+                * (eigenvalues[1] - eigenvalues[2])
+            )
+            density = abs(vandermonde) ** 2
+            x_value = (
+                math.cos(theta1) + math.cos(theta2) + math.cos(theta3)
+            ) / N_C
+            weighted = (
+                weights[i]
+                * weights[j]
+                * density
+                * math.exp(beta * x_value)
+            )
+            partition += weighted
+            first += weighted * x_value
+            second += weighted * x_value * x_value
+    mean = first / partition
+    return WeylStatistics(mean=mean, variance=second / partition - mean * mean)
+
+
+def inverse_local(
+    target: float,
+    evaluator: Callable[[float], float] = local_plaquette_bessel,
+    lo: float = 0.0,
+    hi: float = 12.0,
+    steps: int = 80,
+    reverse_branch: bool = False,
+) -> float:
+    if not 0.0 <= target < 1.0:
+        raise ValueError("the [0,infinity) inverse branch has range [0,1)")
+    left_value = 0.0 if lo == 0.0 else evaluator(lo)
+    right_value = evaluator(hi)
+    if not left_value <= target <= right_value:
+        raise ValueError("target is not bracketed on the requested inverse branch")
+    left, right = lo, hi
     for _ in range(steps):
         mid = 0.5 * (left + right)
-        p_mid, _ = plaquette_from_bessel(mid)
-        if p_mid < target_plaquette:
+        mid_value = evaluator(mid)
+        if reverse_branch:
+            if mid_value < target:
+                right = mid
+            else:
+                left = mid
+        elif mid_value < target:
             left = mid
         else:
             right = mid
     return 0.5 * (left + right)
 
 
-def sample_monotone(values: Iterable[float]) -> bool:
-    vals = list(values)
-    return all(vals[i] < vals[i + 1] for i in range(len(vals) - 1))
+def strict_increase(values: Iterable[float]) -> bool:
+    sequence = list(values)
+    return all(left < right for left, right in zip(sequence, sequence[1:]))
+
+
+def range_rejections() -> tuple[bool, bool]:
+    rejected_low = False
+    rejected_endpoint = False
+    try:
+        inverse_local(-0.01)
+    except ValueError:
+        rejected_low = True
+    try:
+        inverse_local(1.0)
+    except ValueError:
+        rejected_endpoint = True
+    return rejected_low, rejected_endpoint
+
+
+def source_firewall(audit: Audit) -> None:
+    tree = ast.parse(SOURCE.read_text(encoding="utf-8"), filename=str(SOURCE))
+    imports = {
+        alias.name
+        for node in ast.walk(tree)
+        if isinstance(node, (ast.Import, ast.ImportFrom))
+        for alias in node.names
+    }
+    literal_true_checks = []
+    dynamic_calls = []
+    for node in ast.walk(tree):
+        if not isinstance(node, ast.Call):
+            continue
+        name = ""
+        if isinstance(node.func, ast.Name):
+            name = node.func.id
+        elif isinstance(node.func, ast.Attribute):
+            name = node.func.attr
+        if name == "check" and len(node.args) >= 2:
+            condition = node.args[1]
+            if isinstance(condition, ast.Constant) and condition.value is True:
+                literal_true_checks.append(node.lineno)
+        if name in {"eval", "exec"}:
+            dynamic_calls.append((name, node.lineno))
+
+    forbidden_fragments = (
+        "canonical_plaquette",
+        "mixed_cumulant",
+        "constant_lift",
+        "audit",
+    )
+    authority_imports = sorted(
+        name for name in imports if any(fragment in name for fragment in forbidden_fragments)
+    )
+    audit.check(
+        "runner has no canonical, mixed-cumulant, physical, or audit authority import",
+        len(authority_imports) == 0,
+        f"authority_imports={authority_imports}",
+    )
+    audit.check(
+        "runner has no literal-True evidence check",
+        len(literal_true_checks) == 0,
+        f"lines={literal_true_checks}",
+    )
+    audit.check(
+        "runner has no dynamic eval or exec",
+        len(dynamic_calls) == 0,
+        f"calls={dynamic_calls}",
+    )
+
+
+def audit_normal(audit: Audit) -> None:
+    moment, mixed_trace, contraction_count = local_haar_moment()
+    audit.check(
+        "fundamental orthogonality contracts the mixed trace moment",
+        mixed_trace == Fraction(contraction_count, N_C),
+        f"contractions={contraction_count}, integral Tr(U)Tr(U)^*={mixed_trace}",
+    )
+    audit.check(
+        "the reconstructed local Haar variance is strictly positive",
+        moment > 0,
+        f"Var_0(X)={moment}",
+    )
+
+    sample_betas = (0.1, 0.5, 1.0, 2.0, 4.0, 8.0, 12.0, 20.0)
+    local_values = [local_plaquette_bessel(beta) for beta in sample_betas]
+    audit.check(
+        "local SU(3) response samples stay in the proved finite-beta range",
+        all(0.0 < value < 1.0 for value in local_values),
+        f"values={[round(value, 12) for value in local_values]}",
+    )
+    audit.check(
+        "local SU(3) response samples have the variance-predicted sign",
+        strict_increase(local_values),
+        f"betas={sample_betas}",
+    )
+
+    target_beta = 3.0
+    target = local_weyl_statistics(target_beta).mean
+    recovered = inverse_local(target)
+    audit.check(
+        "the positive [0,1) inverse branch recovers an independently integrated target",
+        abs(recovered - target_beta) < 2.0e-10,
+        f"target={target:.15f}, recovered_beta={recovered:.15f}",
+    )
+    rejected_low, rejected_endpoint = range_rejections()
+    audit.check(
+        "the inverse rejects targets outside its half-open range",
+        rejected_low and rejected_endpoint,
+        f"negative_rejected={rejected_low}, endpoint_rejected={rejected_endpoint}",
+    )
+
+    witness = one_link_witness(length=2, theta=0.41)
+    expected_count = math.comb(DIMS, 2) * (2**DIMS)
+    audit.check(
+        "periodic plaquette enumeration includes the 1/N_plaq normalization count",
+        witness.plaquette_count == expected_count,
+        f"enumerated={witness.plaquette_count}, formula={expected_count}",
+    )
+    audit.check(
+        "one deformed link changes two plaquettes in every transverse direction",
+        witness.changed_count == 2 * (DIMS - 1),
+        f"changed={witness.changed_count}",
+    )
+    expected_average = 1.0 - witness.changed_count * (
+        1.0 - witness.phase_density
+    ) / witness.plaquette_count
+    audit.check(
+        "the deformed configuration has the directly reconstructed lower action",
+        witness.deformed_average < witness.identity_average
+        and abs(witness.deformed_average - expected_average) < 1.0e-14,
+        f"identity={witness.identity_average:.15f}, deformed={witness.deformed_average:.15f}",
+    )
+    audit.check(
+        "the witness changes a plaquette holonomy and is not gauge-pure cancellation",
+        witness.max_holonomy_deviation > 1.0e-6,
+        f"max ||U_p-I||={witness.max_holonomy_deviation:.6e}",
+    )
+
+    charges = charge_summary(length=2)
+    audit.check(
+        "two-insertion center neutrality has no off-diagonal plaquette survivor",
+        charges.off_diagonal_neutral_assignments == 0
+        and set(charges.diagonal_neutral_counts) == {2},
+        f"off_diagonal={charges.off_diagonal_neutral_assignments}, diagonal_counts={set(charges.diagonal_neutral_counts)}",
+    )
+    finite_variance = Fraction(charges.plaquette_count, 1) * moment
+    finite_slope = finite_variance / charges.plaquette_count
+    audit.check(
+        "finite-volume zero-source slope equals the independently reconstructed local slope",
+        finite_slope == moment,
+        f"Var_0(S_L)={finite_variance}, P_L'(0)={finite_slope}",
+    )
+    onset_derivative = finite_slope / moment
+    audit.check(
+        "the inverse-coordinate derivative at zero is the ratio of the two slopes",
+        onset_derivative == 1,
+        f"beta_eff,L'(0)={onset_derivative}",
+    )
+
+    p_l_prime = Fraction(5, 37)
+    p_one_prime = Fraction(7, 41)
+    coordinate_prime = p_l_prime / p_one_prime
+    audit.check(
+        "implicit differentiation gives a positive quotient derivative",
+        coordinate_prime > 0 and p_one_prime * coordinate_prime == p_l_prime,
+        f"P_L'={p_l_prime}, P_1plaq'={p_one_prime}, coordinate'={coordinate_prime}",
+    )
+
+
+def audit_independent(audit: Audit) -> None:
+    betas = (0.5, 2.0, 6.0)
+    bessel_values = [local_plaquette_bessel(beta) for beta in betas]
+    weyl_stats = [local_weyl_statistics(beta) for beta in betas]
+    deviations = [
+        abs(bessel - stats.mean)
+        for bessel, stats in zip(bessel_values, weyl_stats)
+    ]
+    audit.check(
+        "Bessel-determinant and Weyl-angle routes independently agree",
+        max(deviations) < 2.0e-12,
+        f"max_deviation={max(deviations):.3e}",
+    )
+    audit.check(
+        "independent Weyl integration gives positive local variances",
+        all(stats.variance > 0.0 for stats in weyl_stats),
+        f"variances={[round(stats.variance, 12) for stats in weyl_stats]}",
+    )
+    step = 1.0e-4
+    numeric_derivative = (
+        local_plaquette_bessel(2.0 + step)
+        - local_plaquette_bessel(2.0 - step)
+    ) / (2.0 * step)
+    audit.check(
+        "the numerical source derivative agrees with the independent Weyl variance",
+        abs(numeric_derivative - weyl_stats[1].variance) < 2.0e-8,
+        f"derivative={numeric_derivative:.12f}, variance={weyl_stats[1].variance:.12f}",
+    )
+
+    charges = charge_summary(length=3)
+    expected_count = math.comb(DIMS, 2) * (3**DIMS)
+    audit.check(
+        "an independent L=3 cellulation has the expected plaquette count",
+        charges.plaquette_count == expected_count,
+        f"enumerated={charges.plaquette_count}, formula={expected_count}",
+    )
+    audit.check(
+        "the independent L=3 incidence route also isolates only diagonal covariances",
+        charges.off_diagonal_neutral_assignments == 0
+        and set(charges.diagonal_neutral_counts) == {2},
+        f"off_diagonal={charges.off_diagonal_neutral_assignments}",
+    )
+
+    witness = one_link_witness(length=3, theta=0.37)
+    closed_form = 1.0 - 2 * (DIMS - 1) * (
+        1.0 - (1.0 + 2.0 * math.cos(0.37)) / N_C
+    ) / witness.plaquette_count
+    audit.check(
+        "matrix holonomies and the closed one-link formula independently agree",
+        abs(witness.deformed_average - closed_form) < 1.0e-14
+        and witness.changed_count == 2 * (DIMS - 1),
+        f"matrix={witness.deformed_average:.15f}, formula={closed_form:.15f}",
+    )
+
+    target_beta = 4.0
+    target = local_weyl_statistics(target_beta).mean
+    recovered = inverse_local(target)
+    audit.check(
+        "independent Weyl target and Bessel inverse agree on the positive branch",
+        abs(recovered - target_beta) < 2.0e-10,
+        f"target={target:.15f}, recovered={recovered:.15f}",
+    )
+    audit.check(
+        "large positive source moves the local mean toward its compact maximum without reaching it",
+        bessel_values[-1] < local_plaquette_bessel(20.0) < 1.0,
+        f"P_1plaq(6)={bessel_values[-1]:.12f}, P_1plaq(20)={local_plaquette_bessel(20.0):.12f}",
+    )
+
+
+def audit_hostile(audit: Audit) -> None:
+    moment, _, _ = local_haar_moment()
+    wrong_source_scale = Fraction(1, N_C)
+    wrong_normalized_slope = wrong_source_scale**2 * moment
+    audit.check(
+        "hostile wrong beta normalization is rejected",
+        wrong_normalized_slope != moment,
+        f"correct={moment}, mutated={wrong_normalized_slope}",
+    )
+
+    count = len(plaquettes(length=2))
+    missing_average_slope = count * moment
+    audit.check(
+        "hostile omission of 1/N_plaq is rejected",
+        missing_average_slope != moment,
+        f"correct={moment}, mutated={missing_average_slope}",
+    )
+    audit.check(
+        "hostile reversed monotonicity sign is rejected",
+        -moment < 0 < moment,
+        f"correct_slope={moment}, reversed={-moment}",
+    )
+
+    constant = one_link_witness(length=2, theta=0.0)
+    audit.check(
+        "hostile constant-action witness is rejected",
+        constant.changed_count == 0
+        and abs(constant.deformed_average - constant.identity_average) < 1.0e-15,
+        f"changed={constant.changed_count}, delta={constant.deformed_average-constant.identity_average:+.3e}",
+    )
+
+    target_beta = 3.0
+    target = local_weyl_statistics(target_beta).mean
+    wrong_inverse = inverse_local(target, reverse_branch=True)
+    wrong_residual = abs(local_plaquette_bessel(wrong_inverse) - target)
+    audit.check(
+        "hostile reversed inverse branch is rejected by its response residual",
+        wrong_residual > 1.0e-3,
+        f"mutated_beta={wrong_inverse:.12f}, residual={wrong_residual:.3e}",
+    )
+    rejected_low, rejected_endpoint = range_rejections()
+    audit.check(
+        "hostile inverse targets outside [0,1) are rejected",
+        rejected_low and rejected_endpoint,
+        f"negative_rejected={rejected_low}, endpoint_rejected={rejected_endpoint}",
+    )
+
+    p_l_prime = Fraction(5, 37)
+    p_one_prime = Fraction(7, 41)
+    wrong_derivative = p_l_prime * p_one_prime
+    audit.check(
+        "hostile product derivative factor is rejected",
+        p_one_prime * wrong_derivative != p_l_prime,
+        f"wrong_coordinate'={wrong_derivative}",
+    )
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Finite-volume SU(3) Wilson inverse-coordinate verifier."
+    )
+    parser.add_argument(
+        "--mode",
+        choices=("normal", "independent", "hostile"),
+        default="normal",
+        help="evidence route (default: normal)",
+    )
+    return parser.parse_args()
 
 
 def main() -> int:
-    identity_density = local_plaquette_density(np.eye(3, dtype=complex))
-    center_density = local_plaquette_density(center_matrix())
-
-    links_identity = build_identity_links()
-    links_deformed = build_identity_links()
-    links_deformed[(0, 0, 0, 0)][0] = diagonal_phase_link(0.41)
-    avg_identity = measure_average_plaquette(links_identity)
-    avg_deformed = measure_average_plaquette(links_deformed)
-
-    sample_betas = [0.1, 0.5, 1.0, 2.0, 4.0, 6.0, 10.0, 20.0]
-    sample_local_plaquettes = [plaquette_from_bessel(beta)[0] for beta in sample_betas]
-
-    canonical_beta_eff = implicit_beta_eff(CANONICAL_PLAQUETTE)
-    candidate_beta_eff = implicit_beta_eff(0.593530679977098)
-    slope_full = full_wilson_strong_coupling_slope()
-    onset_coeff = beta_eff_beta5_coefficient()
-
-    print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE REDUCTION EXISTENCE THEOREM")
-    print("=" * 78)
+    args = parse_args()
+    audit = Audit()
+    print("=== Finite-volume Wilson plaquette inverse-coordinate verifier ===")
+    print(f"MODE: {args.mode}")
+    source_firewall(audit)
+    routes = {
+        "normal": audit_normal,
+        "independent": audit_independent,
+        "hostile": audit_hostile,
+    }
+    routes[args.mode](audit)
     print()
-    print("Local one-plaquette block")
-    print(f"  X(identity)                           = {identity_density:.15f}")
-    print(f"  X(center)                             = {center_density:.15f}")
-    print(f"  sampled P_1plaq(betas)                = {[round(v, 12) for v in sample_local_plaquettes]}")
-    print()
-    print("Finite Wilson evaluation surface witness")
-    print(f"  average plaquette on identity config  = {avg_identity:.15f}")
-    print(f"  average plaquette on deformed config  = {avg_deformed:.15f}")
-    print()
-    print("Implicit reduction parameters")
-    print(f"  canonical implicit beta_eff(0.5934)   = {canonical_beta_eff:.15f}")
-    print(f"  candidate support beta_eff            = {candidate_beta_eff:.15f}")
-    print(f"  delta(beta_eff)                       = {candidate_beta_eff - canonical_beta_eff:+.15f}")
-    print()
-    print("Onset data")
-    print(f"  full-vacuum slope                     = {slope_full:.15f}")
-    print(f"  beta_eff beta^5 coefficient           = {float(onset_coeff):.15e}")
-    print()
-
-    check(
-        "the local one-plaquette observable is nonconstant on SU(3)",
-        abs(identity_density - 1.0) < 1.0e-15 and abs(center_density + 0.5) < 1.0e-15,
-        detail="X(U)=Re Tr U / 3 takes the values 1 and -1/2 on explicit SU(3) elements",
-    )
-    check(
-        "the finite periodic Wilson plaquette observable is nonconstant on the evaluation surface",
-        avg_identity > avg_deformed and abs(avg_identity - 1.0) < 1.0e-15,
-        detail=f"identity average = {avg_identity:.15f}, deformed average = {avg_deformed:.15f}",
-    )
-    check(
-        "sampled local one-plaquette values are consistent with the strict-monotonicity theorem",
-        sample_monotone(sample_local_plaquettes) and 0.0 < sample_local_plaquettes[0] < sample_local_plaquettes[-1] < 1.0,
-        detail="sampled local plaquette values increase strictly from beta=0.1 to beta=20 and stay in (0,1)",
-        bucket="SUPPORT",
-    )
-    check(
-        "explicit witnesses and range bounds are consistent with the exact implicit reduction-law theorem",
-        avg_deformed < 1.0 and avg_identity <= 1.0 and sample_monotone(sample_local_plaquettes),
-        detail="strict monotonicity of P_1plaq plus 0 <= P_L(beta) < 1 gives uniqueness on the finite Wilson surface",
-        bucket="SUPPORT",
-    )
-    check(
-        "the reduction law onset is exact with beta_eff'(0)=1",
-        abs(slope_full - (1.0 / 18.0)) < 1.0e-15,
-        detail=f"P_full'(0)=P_1plaq'(0)={slope_full:.15f}",
-    )
-    check(
-        "the first nonlinear coefficient of the exact onset law is beta^5/26244",
-        onset_coeff.numerator == 1 and onset_coeff.denominator == 26244,
-        detail=f"beta_eff(beta)=beta + ({onset_coeff}) beta^5 + O(beta^6)",
-    )
-
-    check(
-        "the canonical same-surface plaquette therefore has a unique implicit nonperturbative reduction parameter",
-        9.0 < canonical_beta_eff < 10.0,
-        detail=f"beta_eff^can = {canonical_beta_eff:.15f}",
-        bucket="SUPPORT",
-    )
-    check(
-        "the old constant-lift candidate remains numerically close to the exact implicit canonical beta_eff",
-        abs(candidate_beta_eff - canonical_beta_eff) < 5.0e-3,
-        detail=f"|candidate - implicit| = {abs(candidate_beta_eff - canonical_beta_eff):.6e}",
-        bucket="SUPPORT",
-    )
-
-    print()
-    print("=" * 78)
-    print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")
-    print("=" * 78)
-    return 0 if FAIL == 0 else 1
+    print(f"TOTAL: PASS={audit.passed}, FAIL={audit.failed}")
+    if audit.failed:
+        print("VERDICT: FAIL")
+        return 1
+    print("VERDICT: FINITE_VOLUME_INVERSE_COORDINATE_THEOREM_VERIFIED")
+    return 0
 
 
 if __name__ == "__main__":

@@ -1,205 +1,273 @@
-# Gauge-Vacuum Plaquette Reduction Existence and Uniqueness Theorem
+# Finite-Volume Wilson Plaquette Inverse-Coordinate Theorem
 
 **Date:** 2026-04-16
-**Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
-**Admitted context inputs:** (1) staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`); (2) g_bare = 1 derivation target (canonical parent: `G_BARE_DERIVATION_NOTE.md` — bookkeeping pointer, see-also cross-reference; not a load-bearing dependency of this reduction-existence theorem's local algebra).
-**Status:** support - exact implicit reduction-law theorem on the finite Wilson evaluation surface; explicit nonperturbative closed form still open
-**Script:** `scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py`
+**Revised:** 2026-07-18
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only
+**Scope:** finite periodic `SU(3)` Wilson `L^4` evaluation surfaces with
+integer `L >= 2`; no physical interpretation of `beta` and no canonical
+plaquette value
+**Primary runner:**
+[`scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py`](../scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py)
 
-## Question
+## Result
 
-After closing the first nonlinear onset coefficient, can we derive something
-stronger than a guessed reduction ansatz without already solving the full
-nonperturbative plaquette at `beta = 6`?
+The substantive finite-volume theorem is an inverse-coordinate theorem.  The
+one-plaquette response is a real-analytic strictly increasing bijection
 
-## Answer
+`P_1plaq : [0, infinity) -> [0, 1)`.
 
-Yes.
+The finite-volume Wilson response `P_L` is also real analytic and strictly
+increasing, has values in `[0,1)` at finite nonnegative `beta`, and tends to
+`1` as `beta -> infinity`.  Consequently the formula
 
-On every finite periodic Wilson `L^4` evaluation surface, there is an exact
-unique implicit reduction law
+`beta_eff,L(beta) := P_1plaq^(-1)(P_L(beta))`
+
+defines a unique real-analytic strictly increasing coordinate.  Substitution
+then gives
+
+`P_L(beta) = P_1plaq(beta_eff,L(beta))`.
+
+The last equality is true **by the displayed definition**.  It is not an
+independently specified reduction law, a dynamical reduction mechanism, or a
+physical replacement of the finite Wilson theory.
+
+## Wilson finite-volume definitions
+
+Let
+
+`Lambda_L = (Z / L Z)^4`, with `L >= 2`,
+
+and retain one positively oriented link in each of the four directions from
+each site.  The configuration space and reference measure are
+
+`Omega_L = SU(3)^(4 L^4)`,
+
+`d mu_H(U) = product_(positive links ell) dH(U_ell)`,
+
+where every `dH` is normalized Haar probability measure.  For a positively
+oriented elementary plaquette `p = (x; mu,nu)`, `mu < nu`, write
+
+`U_p = U_(x,mu) U_(x+mu,nu) U_(x+nu,mu)^dagger U_(x,nu)^dagger`.
+
+There are
+
+`N_plaq = binom(4,2) L^4 = 6 L^4`
+
+such plaquettes.  Define the normalized local observable and the unnormalized
+Wilson source sum by
+
+`X(U) = (1/3) Re Tr U`,
+
+`S_L(U) = sum_p X(U_p)`.
+
+The one-plaquette and finite-volume partition functions are
+
+`Z_1plaq(beta) = integral_SU(3) exp(beta X(U)) dH(U)`,
+
+`Z_L(beta) = integral_(Omega_L) exp(beta S_L(U)) d mu_H(U)`.
+
+The responses in this note use the derivative with respect to exactly this
+source parameter `beta`:
+
+`P_1plaq(beta) = d/d beta log Z_1plaq(beta)`,
+
+`P_L(beta) = (1/N_plaq) d/d beta log Z_L(beta)`.
+
+Thus `S_L` already contains `X = (1/3) Re Tr`; there is no additional factor
+of `1/3` in the exponential, and the factor `1/N_plaq` occurs once in `P_L`.
+
+## Theorem 1: analyticity and strict variance identities
+
+The functions `X` and `S_L` are bounded on compact domains.  Expanding the
+exponential and integrating term by term, uniformly on compact subsets of
+complex `beta`, proves that both partition functions are entire.  They are
+strictly positive on the real axis, so their logarithmic derivatives are
+real analytic there.
+
+Differentiation with respect to the source parameter defined above gives
+
+`P_1plaq'(beta) = Var_beta(X)`,
+
+`P_L'(beta) = (1/N_plaq) Var_beta(S_L)`.
+
+Both variances are strictly positive at every finite real `beta`.
+
+In particular, `Var_beta(X) > 0`.
+
+`P_1plaq(beta)` is strictly increasing on `beta >= 0`.
+
+For the local observable, `X(I) = 1`, whereas for the nontrivial center element
+`z I`, `z = exp(2 pi i/3)`, one has `X(z I) = -1/2`.  The tilted density is
+strictly positive, hence has the same support as Haar measure; the local
+observable cannot have zero variance.
+
+For the finite lattice, compare the identity link field with a field in which
+only `U_(0,mu)` is replaced by
+
+`V_theta = diag(exp(i theta), exp(-i theta), 1)`,
+
+where `theta` is not a multiple of `2 pi`.  For `L >= 2`, exactly two
+plaquettes in each direction `nu != mu` contain that link.  Their holonomies
+are `V_theta` or `V_theta^dagger`; all other plaquettes remain the identity.
+Therefore
+
+`S_L(U_deformed) = N_plaq - 6 (1 - X(V_theta)) < N_plaq`.
+
+At least six plaquette holonomies really change, so this deformation is not a
+gauge-pure cancellation.  Continuity gives positive-Haar-measure
+neighborhoods with different `S_L` values, and the strictly positive tilted
+density then gives `Var_beta(S_L) > 0`.
+
+It follows that both response functions are strictly increasing.
+
+## Theorem 2: endpoints, range, and bijectivity
+
+At `beta = 0`, character orthogonality gives
+
+`P_1plaq(0) = integral X dH = 0`.
+
+For `L >= 2`, the four positive link variables around any elementary
+plaquette are distinct.  Their product is Haar distributed under the product
+measure, so every plaquette has zero mean and
+
+`P_L(0) = 0`.
+
+Every `SU(3)` matrix obeys `X(U) <= 1`, with equality only at `U = I`.
+The positive finite-`beta` density and the nonconstancy witnesses above imply
+
+`0 <= P_1plaq(beta) < 1`,
+
+`0 <= P_L(beta) < 1`
+
+for every finite `beta >= 0`.
+
+The endpoint at infinity follows from a compact Laplace lemma.  If `f` is
+continuous on a compact probability space, has maximum `M`, and
+`d mu_beta` is proportional to `exp(beta f) d mu` with full-support `mu`, then
+`E_beta[f] -> M`.  Indeed, for any `epsilon > 0`, a positive-measure
+neighborhood on which `f > M - epsilon/2` bounds the tilted mass of
+`{f <= M-epsilon}` by a constant times `exp(-beta epsilon/2)`; boundedness of
+`f` finishes the expectation estimate.
+
+Apply the lemma first to `f = X`, whose maximum is `1`, and then to
+`f = S_L`, whose maximum is `N_plaq` and is attained by the identity field.
+This proves
+
+`lim_(beta -> infinity) P_1plaq(beta) = 1`,
+
+`lim_(beta -> infinity) P_L(beta) = 1`.
+
+Strict increase, continuity, and the two endpoints prove—not merely
+assume—that both maps are bijections from `[0,infinity)` onto `[0,1)`.
+
+## Theorem 3: the defined inverse coordinate
+
+Since `P_L(beta)` lies in the range of `P_1plaq`, define
+
+`beta_eff,L(beta) := P_1plaq^(-1)(P_L(beta))`.
+
+This coordinate exists and is unique for every finite `beta >= 0`.  Since
+`P_1plaq'` never vanishes, the real-analytic inverse-function theorem applies
+at every point of its range.  At the endpoint `beta = 0`, the same theorem
+applies on an open real neighborhood because `P_1plaq` and `P_L` extend
+analytically across zero.  Hence `beta_eff,L` is real analytic on its
+finite-volume domain.
+
+Differentiating the definition gives
+
+`beta_eff,L'(beta)
+ = P_L'(beta) / P_1plaq'(beta_eff,L(beta)) > 0`.
+
+Thus the coordinate is strictly increasing.  The equality
 
 `P_L(beta) = P_1plaq(beta_eff,L(beta))`
 
-with
+contains no further dynamical content: it is the coordinate identity obtained
+by applying `P_1plaq` to the definition.
 
-- `beta_eff,L(0) = 0`,
-- `beta_eff,L'(0) = 1`,
-- `beta_eff,L(beta) = beta + beta^5 / 26244 + O(beta^6)`.
+## Independently reconstructed onset identity
 
-This is a real derivation step. It removes the question of whether a reduction
-law exists at all. The remaining gap is narrower:
+The linear onset is retained because both slopes follow directly from the
+same product-Haar definitions.
 
-> derive an explicit nonperturbative characterization of `beta_eff(beta)` at
-> the framework point `beta = 6`.
+For one plaquette,
 
-## Theorem 1: the local one-plaquette map is analytic and strictly increasing
+`X = (Tr U + Tr U^dagger)/6`.
 
-Define
+Center invariance kills `integral (Tr U)^2 dH` and its conjugate, while
+fundamental character orthogonality gives
+`integral Tr U Tr U^dagger dH = 1`.  Therefore
 
-`P_1plaq(beta) = d/d beta log Z_1plaq(beta)`
+`P_1plaq'(0) = integral X^2 dH = 1/18`.
 
-with
+For the finite lattice, expand `X_p X_q` into its four trace orientations.
+Independent multiplication of any link by an `SU(3)` center element forces
+zero expectation unless the oriented link charges cancel modulo three.  With
+two elementary plaquette insertions the charges are in `{-2,-1,0,1,2}`, so
+mod-three neutrality requires exact linkwise cancellation.  On the periodic
+cellulation with `L >= 2`, distinct positive elementary plaquettes have
+neither equal nor opposite oriented link boundaries.  Hence only `p = q`
+with opposite trace orientations survives, and
 
-`Z_1plaq(beta) = integral dU exp[(beta/3) Re Tr U]`.
+`E_0[X_p X_q] = delta_(p,q) / 18`.
 
-Because the integration domain is compact and the integrand is entire in
-`beta`, `Z_1plaq(beta)` and `P_1plaq(beta)` are analytic for real `beta`.
+It follows that
 
-Differentiating once more gives
+`Var_0(S_L) = N_plaq / 18`,
 
-`P_1plaq'(beta) = Var_beta(X)`
+`P_L'(0) = (1/N_plaq) Var_0(S_L) = 1/18`.
 
-for
+The inverse-coordinate derivative is consequently
 
-`X(U) = (1/3) Re Tr U`.
+`beta_eff,L(0) = 0`,
 
-The measure density `exp(beta X)` is strictly positive for every finite `beta`,
-while `X` is not constant on `SU(3)`:
+`beta_eff,L'(0) = P_L'(0) / P_1plaq'(0) = 1`.
 
-- `X(I) = 1`,
-- `X(e^{2 pi i / 3} I) = -1/2`.
+No higher-order onset coefficient is part of this theorem.  In particular,
+this row does not import a mixed-cumulant output and does not use such an
+output as proof of the inverse-coordinate result.
 
-So `Var_beta(X) > 0` and therefore:
+## Exact boundary
 
-> `P_1plaq(beta)` is strictly increasing on `beta >= 0`.
+This theorem establishes only finite-volume Wilson mathematics:
 
-Also:
+- compact-domain analyticity of the two partition functions and real
+  analyticity of their responses;
+- strict variance/nonconstancy and strict monotonicity;
+- the proved `[0,1)` ranges and endpoint limits;
+- existence, uniqueness, analyticity, and monotonicity of the defined inverse
+  coordinate;
+- `beta_eff,L(0) = 0` and the independently reconstructed
+  `beta_eff,L'(0) = 1`.
 
-- `P_1plaq(0) = 0` by Haar symmetry,
-- `P_1plaq(beta) < 1` for finite `beta`,
-- `P_1plaq(beta) -> 1` as `beta -> infinity` by compact Laplace concentration
-  at the identity manifold.
+It does not establish:
 
-Hence `P_1plaq` is a bijection from `[0, infinity)` onto `[0, 1)`.
+- an independently specified plaquette-reduction law or physical reduction
+  mechanism;
+- a thermodynamic-limit theorem;
+- a physical identification of `beta`, including a framework-point value;
+- an explicit nonperturbative value or closed form for `beta_eff,L`;
+- a canonical plaquette value, a canonical inverse-coordinate value, or an
+  old-candidate comparison;
+- any plaquette closure, coupling extraction, or downstream physical
+  prediction.
 
-## Theorem 2: the finite Wilson plaquette map is analytic and strictly increasing
+No staggered-Dirac gate, `g_bare` input, framework axiom, new admission,
+primitive, carrier, or physical premise is used.  The theorem is a
+zero-physical-input statement about the explicitly defined finite Wilson
+probability spaces.
 
-On a finite periodic symmetric Wilson `L^4` surface, define
-
-`P_L(beta) = (1 / N_plaq) d/d beta log Z_L(beta)`
-
-with
-
-`Z_L(beta) = integral DU exp[(beta/3) sum_p Re Tr U_p]`.
-
-Again, compactness gives analyticity in `beta`.
-
-Differentiating gives
-
-`P_L'(beta) = (1 / N_plaq) Var_beta(S_L)`
-
-where
-
-`S_L = sum_p (1/3) Re Tr U_p`.
-
-The finite-volume Wilson density is strictly positive for finite `beta`, and
-`S_L` is not constant on configuration space: the identity link field has
-plaquette average `1`, while an explicit one-link deformed field has smaller
-average plaquette. Therefore `Var_beta(S_L) > 0`.
-
-So:
-
-> `P_L(beta)` is strictly increasing on `beta >= 0`.
-
-Also:
-
-- `P_L(0) = 0`,
-- `0 <= P_L(beta) < 1` for finite `beta`.
-
-## Corollary 1: exact unique implicit reduction law
-
-Since `P_1plaq` is a bijection `[0,infinity) -> [0,1)` and `P_L(beta)` lies in
-`[0,1)` for every finite `beta`, the quantity
-
-`beta_eff,L(beta) := P_1plaq^{-1}(P_L(beta))`
-
-is well-defined and unique.
-
-This is not a fit ansatz. It is an exact implicit reduction law on the finite
-Wilson evaluation surface.
-
-Because `P_1plaq' > 0`, the inverse function theorem gives:
-
-> `beta_eff,L(beta)` is analytic wherever `P_L(beta)` is analytic.
-
-And because both numerator and denominator are positive:
-
-`beta_eff,L'(beta) = P_L'(beta) / P_1plaq'(beta_eff,L(beta)) > 0`.
-
-So the exact implicit reduction law is itself strictly increasing.
-
-## Corollary 2: exact onset data
-
-The strong-coupling slope theorem gives
-
-`P_L'(0) = P_1plaq'(0) = 1/18`.
-
-So
-
-`beta_eff,L'(0) = 1`.
-
-The mixed-cumulant audit already proved the first nonlinear coefficient:
-
-`beta_eff,L(beta) = beta + beta^5 / 26244 + O(beta^6)`.
-
-Thus the onset of the exact implicit reduction law is now completely fixed.
-
-## What this closes
-
-- exact existence of the reduction law on the finite Wilson evaluation surface
-- exact uniqueness of that reduction law
-- exact analyticity / monotonicity of the implicit reduction map
-- exact onset data through the first nonlinear coefficient
-
-## What this does not close
-
-- an explicit closed form for `beta_eff(beta)`
-- a theorem-grade nonperturbative characterization at `beta = 6`
-- repo-wide repinning of the canonical plaquette value
-
-So the remaining open question is no longer:
-
-> does an exact reduction law exist?
-
-It is now the narrower question:
-
-> can we close the explicit nonperturbative reduction law at the framework
-> point?
-
-## Support consequence for the live package
-
-Applying the exact implicit inverse to the canonical same-surface plaquette
-value gives the unique implicit reduction parameter
-
-`beta_eff^can = P_1plaq^{-1}(0.5934) = 9.326167920875534`.
-
-This sits very close to the older constant-lift support candidate
-
-`9.329531846652698`,
-
-but that closeness is now only a support fact. The theorem-grade content is the
-existence and uniqueness of the implicit reduction law, not the old closed-form
-guess.
-
-## Commands run
+## Verification
 
 ```bash
-python3 scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py
+python3 scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py --mode normal
+python3 scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py --mode independent
+python3 scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py --mode hostile
 ```
 
-Expected summary:
-
-- `THEOREM PASS=4 SUPPORT=4 FAIL=0`
-
-
-## Hypothesis set used (axiom-reset 2026-05-03)
-
-Per `MINIMAL_AXIOMS_2026-05-03.md`, this note depends on **both** open gates:
-
-1. **Staggered-Dirac realization derivation target** — canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (`claim_type: open_gate`); in-flight supporting work: `PHYSICAL_LATTICE_NECESSITY_NOTE.md`, `THREE_GENERATION_STRUCTURE_NOTE.md`, `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`, `scripts/frontier_generation_rooting_undefined.py`, `GENERATION_AXIOM_BOUNDARY_NOTE.md`.
-2. **`g_bare = 1` derivation target** — canonical parent: `G_BARE_DERIVATION_NOTE.md` (`claim_type: positive_theorem`, `audit_status: audited_conditional`); bookkeeping pointer / see-also cross-reference, not a load-bearing dependency of this reduction-existence theorem's local algebra. In-flight supporting work: `G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`, `G_BARE_RIGIDITY_THEOREM_NOTE.md`, `G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md`, `G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`, `G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`, `G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md`, `G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md`.
-
-The note produces (or directly supports) a quantitative gauge prediction (Wilson plaquette content, `α_s`, `v`, `sin²θ_W`, `m_t`, `m_H`, `g_1`, `g_2`, `β = 6`, CKM/quark/hadron mass hierarchy, action-unit metrology, etc.) by fixing `g_bare = 1` without independently deriving it — therefore both gates must close for the lane to upgrade.
-
-Therefore `claim_type: bounded_theorem` until both gates close. When both gates close, the lane becomes eligible for independent audit/governance retagging as `positive_theorem`; the audit pipeline recomputes `effective_status`, but it does not silently invent a new `claim_type`. The substantive science content of this note is unchanged by this retag.
+The hostile mode rejects a wrong source normalization, omission of
+`1/N_plaq`, reversed monotonicity, a constant-action witness, an invalid or
+reversed inverse branch, and a wrong derivative factor.  It does not mutate
+the coordinate identity, which is a definition rather than an independent
+theorem.

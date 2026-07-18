@@ -176,14 +176,19 @@ independent of every higher coefficient `c_2,c_3,...`. The local
 
 ## Source boundary
 
-The two exact onset inputs used above are supplied by the
+The two exact onset inputs used above are supplied independently by the
 [`Gauge-Vacuum Plaquette Mixed-Cumulant Audit and First Nonlinear Coefficient`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
-packet. The implicit finite reduction map and its first derivative transport
-are supplied by the
-[`Gauge-Vacuum Plaquette Reduction Existence and Uniqueness Theorem`](GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md)
+packet. The defined finite inverse coordinate and its first derivative
+identity are supplied by the
+[`Finite-Volume Wilson Plaquette Inverse-Coordinate Theorem`](GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md)
 and the
 [`Gauge-Vacuum Plaquette Susceptibility-Flow Finite Packet`](GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md),
 respectively.
+
+The composed plaquette equality and its differentiated forms are coordinate
+identities, not an independently derived reduction mechanism. The connected
+cumulant and shell-summed projection mathematics in this note is supplied by
+its own source algebra and the separately cited onset packet.
 
 No new axiom, admission, primitive, carrier, convention, imported value, fit,
 or physical-observable identification is introduced here. The frozen Lattice,

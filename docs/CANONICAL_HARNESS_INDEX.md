@@ -123,6 +123,21 @@ Use this file to find the current canonical note/runner pair on `main`.
 | PMNS selector-bank nonrealization support theorem | [PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md](PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md) | `frontier_pmns_selector_bank_nonrealization.py` |
 | PMNS chart constants γ, E₁, E₂ retention-boundary stretch attempt with named obstructions A, B, C (sharpens cycle 12 Path B Obstruction O1; partial structural identification via sharp selector projector + Frobenius dual + bosonic normalization, with retained-grade interpretation blocked by audited_conditional upstream c_odd, v_even, swap-reduction theorems) | [PMNS_CHART_CONSTANTS_RETENTION_NOTE_2026-05-03.md](PMNS_CHART_CONSTANTS_RETENTION_NOTE_2026-05-03.md) | `frontier_pmns_chart_constants_retention.py` |
 
+## Unaudited Bounded Campaign Surfaces
+
+These rows are canonical note/runner pairs for review and reproduction. Their
+source-note type is `bounded_theorem`, but audit status is unset; this index
+does not promote them to retained grade.
+
+| lane | authority | primary runner |
+|---|---|---|
+| finite generated complex-qubit composition | [GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md](GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md) | `generated_finite_composition_minimality_2026_07_13.py` |
+| extensional nearest-neighbor rule and append semantics | [EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md](EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md) | `extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py` |
+| conditional site-tagged continuation refinement | [ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md](ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md) | `frontier_admissibility_record_continuation_refinement_2026_07_13.py` |
+| read-twice finite fan-out and frame-function controls | [READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md](READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md) | `read_twice_packet_derive_first_unification_2026_07_13.py` |
+| read/reset cadence-defect identity and all-time monomial criterion | [READ_RESET_CADENCE_INTERFERENCE_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-17.md](READ_RESET_CADENCE_INTERFERENCE_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-17.md) | `read_reset_cadence_interference_channel_bounded_2026_07_18.py` |
+| TOE campaign archive integrity and landing boundary | [work_history/repo/review_feedback/TOE_BRIDGE_CAMPAIGN_LANDING_MANIFEST_2026-07-18.md](work_history/repo/review_feedback/TOE_BRIDGE_CAMPAIGN_LANDING_MANIFEST_2026-07-18.md) | `toe_bridge_campaign_archive_integrity_2026_07_18.py` |
+
 ## Remaining Live Gates
 
 | lane | authority | primary runner |

@@ -589,6 +589,6 @@ for index, (system_ket, written_r, coefficient) in enumerate(
 
 print()
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
-print("No check passes by literal stipulation.")
+print("BOUNDARY: total includes source needles and supplied-fixture checks; see the note's verification map.")
 
 raise SystemExit(0 if FAIL == 0 else 1)

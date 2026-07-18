@@ -27,6 +27,18 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-07-18-toe-bounded-notes-failed-negative-gate-packaging`
+  Scope: the five unaudited bounded claim candidates for continuation
+  refinement, extensional nearest-neighbor construction, generated finite
+  composition, read/reset cadence, and finite controlled-copy fan-out.
+  Finding: each note preserves a durable positive bounded core, but also
+  ships semantic negative or bounded-with-named-walls conclusions while its
+  own No-Go Discipline N1 result is `FAIL / DO NOT SHIP`. Renaming those
+  conclusions as boundaries or import inventories does not clear the
+  full-note semantic gate. Split or remove the negative claim surfaces and
+  retain only the positive constructions, or supply a narrowed N1--N8 packet
+  that passes before review-loop can issue PASS.
+  Disposition: `science-needed`.
 - `2026-07-10-pr5123-tick-admissibility-physical-realization-bridge`
   Scope:
   `TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md`

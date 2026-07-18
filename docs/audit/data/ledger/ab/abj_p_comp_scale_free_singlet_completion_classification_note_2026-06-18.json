@@ -15,8 +15,8 @@
   "claim_id": "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
-  "claim_type_author_hint": "bounded_theorem",
-  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
@@ -34,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "d4cfa971fed8384b95df27b3accd6fe701a21d07efca48caa7bd35e6c46aac75",
+  "note_hash": "38d9caea2981e2382604ceece520b33e96257e8a70a63821a3ec70f939e3826f",
   "note_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1558,7 +1558,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -1567,7 +1567,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py",
-  "title": "ABJ P-COMP Scale-Free Singlet Completion Classification",
+  "title": "Scale-Free Supplied Anomaly-Equation Classification",
   "transitive_descendants": 1331,
   "verdict_rationale": null
 }

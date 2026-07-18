@@ -1405,6 +1405,61 @@
         "total_pass": 51
       },
       "verdict_rationale": "The source and exact runner substantively establish the basis, central idempotents, two M_2(C) ideals, irreducible-module classification, real-versus-complex faithfulness distinction, and Hermitian conditional unitary refinement without imported premises. The artifact also asserts two derived negative boundaries: an irreducible complexified representation cannot be faithful, and bare complex-linear equivalence does not imply unitary equivalence without the Hermitian condition. Its hostile fixtures cover several N1 routes and the two boundaries are mathematically independent, with no hidden admission or prior residual witness apparent, but N5 lacks the mandated five-resolution live evidence and N6-N8 are not fully dispositioned in a valid clean-verdict packet."
+    },
+    {
+      "archived_at": "2026-07-18T15:59:31.805410+00:00",
+      "audit_date": "2026-07-18T15:48:45.121256+00:00",
+      "audit_invocation_history": [
+        "63837526270e400ebb601610a37c7410"
+      ],
+      "audit_invocation_id": "63837526270e400ebb601610a37c7410",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f"
+        },
+        "load_bearing_score": 17.747,
+        "runner_hash": "6eaf62118f0bf14a92574d4dbe175b2d197afdb6cf3018ed87e9ef1f0bfad6ce",
+        "transitive_descendants": 1717
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260718-c1244445",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed exact algebraic derivation appears internally correct, but clean certification cannot close because the supplied live stdout exposes only two complete N1 route records and the primary runner source is also clipped.",
+      "claim_scope": "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-18T15:48:45.121256+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The four abstract matrix units in each central ideal satisfy E_ab^(s) E_cd^(s) = delta_bc E_ad^(s), sum to e_s, have rank four, and span A_s, so A_s is isomorphic to M_2(C).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: supply untruncated live current-cycle stdout containing all five N1 route records and the complete primary runner source, then rerun the clean no-go-discipline audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 51,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 51
+      },
+      "verdict_rationale": "The basis, central-idempotent decomposition, matrix-unit construction, module classification, real faithfulness calculation, and conditional unitary argument form a coherent exact class-(A) proof with no cited dependency. The assertions that irreducible complexified modules are not faithful and that bare complex equivalence does not imply unitary equivalence are derived negative boundaries, so they trigger the no-go-discipline gate despite the mechanical source-shape value being false. N2 distinguishes the two boundaries, N3 reveals no load-bearing hidden premise, N4 reports no reused residual, N5 supplies all five resolution scales, N6 supplies partial-closure dispositions, N7 independently resolves the faithful-direct-sum steelman, and N8 supplies the restricted cross-cycle index; however, the clipped live artifact does not expose five complete evidenced N1 routes. A clean verdict therefore cannot be authenticated from this packet."
     }
   ],
   "prose_corrections": [],

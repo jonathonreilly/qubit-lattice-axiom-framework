@@ -2,11 +2,12 @@
 Audit companion (exact-symbolic + exact-numeric) for
 CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17
 Goal: derive structural CHSH bounds (classical 2, Tsirelson 2*sqrt(2))
-Retained inputs (cited):
-  (R1) Born quadratic surface P=|A|^2   ... retained (i3_zero_exact)
-  (R2) Tensor product H_A (x) H_B       ... retained (SINGLE_AXIOM_HILBERT)
-  (R3) Cl(3) per-site Hilbert dim two   ... retained_bounded
-  (R4) Anticommuting Pauli involutions  ... retained
+One-hop inputs (cited):
+  (R1) Born quadratic surface P=|A|^2   ... cited (i3_zero_exact)
+  (R2) Tensor product H_A (x) H_B       ... cited (SINGLE_AXIOM_HILBERT)
+  (R3) Cl(3) per-site Hilbert dim two   ... cited (bounded scope)
+  (R4) Anticommuting Pauli involutions  ... cited
+  (statuses per live audit ledger; independent audit lane only)
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
@@ -21,9 +22,9 @@ Part 1: Classical CHSH bound |S| <= 2 (exhaustive 16-case)
 ----------------------------------------------------------------------------------------
 Part 2: Tsirelson bound via Landau identity (exact symbolic)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] Part 2 — sigma_z^2 = I (involution, from retained R4)
-  [PASS (A)] Part 2 — sigma_x^2 = I (involution, from retained R4)
-  [PASS (A)] Part 2 — {sigma_z, sigma_x} = 0 (anticommutation, from retained R4)
+  [PASS (A)] Part 2 — sigma_z^2 = I (involution, from cited R4)
+  [PASS (A)] Part 2 — sigma_x^2 = I (involution, from cited R4)
+  [PASS (A)] Part 2 — {sigma_z, sigma_x} = 0 (anticommutation, from cited R4)
   [PASS (A)] Part 2 — B_0 = (sigma_z + sigma_x)/sqrt(2) is an involution
   [PASS (A)] Part 2 — B_1 = (sigma_z - sigma_x)/sqrt(2) is an involution
   [PASS (A)] Part 2 — B_0 is self-adjoint (Hermitian)
@@ -57,9 +58,9 @@ Part 4: Product-state corollary recovers |S| <= 2 (G=0 null)
   [PASS (A)] Part 4 — product state |+>|+>: |S| <= 2 (verified non-entangled gives bounded)  (S(|+>|+>) = sqrt(2) = 1.414213562373)
 
 ----------------------------------------------------------------------------------------
-Part 5: Cross-check vs retained primitives + boundary guards
+Part 5: Cross-check vs cited one-hop inputs + boundary guards
 ----------------------------------------------------------------------------------------
-  [PASS (A)] Part 5 — R4 cross-check: anticommutation {sigma_z, sigma_x} = 0 matches retained
+  [PASS (A)] Part 5 — R4 cross-check: anticommutation {sigma_z, sigma_x} = 0 matches cited row
   [PASS (A)] Part 5 — R3 cross-check: H = C^2 (dim 2 per Cl(3) site)
   [PASS (A)] Part 5 — S_op eigenvalues in [-2sqrt(2), 2sqrt(2)] (self-adjoint spectral bound)  (eigenvalues = [-2.8284271247461903, 0.0, 0.0, 2.8284271247461903])
   [PASS (A)] Part 5 — max eigenvalue of S_op equals 2*sqrt(2) (saturating)  (max eig = 2.828427124746190)
@@ -80,6 +81,6 @@ SCORECARD
 
   STATUS: ALL EXACT-ALGEBRA CHECKS PASS
   CLOSURE: Structural CHSH bounds (classical 2, Tsirelson 2*sqrt(2)) derived
-           from retained primitives R1-R4 + Landau identity.
-           Class A (pure algebra over retained inputs).
+           from cited one-hop inputs R1-R4 + Landau identity.
+           Class A (pure algebra over cited inputs).
            Saturating witness exists in Cl(3) per-site Hilbert dim two.

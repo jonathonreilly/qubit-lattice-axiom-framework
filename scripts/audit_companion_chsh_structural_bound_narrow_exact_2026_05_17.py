@@ -2,7 +2,7 @@
 """Exact-symbolic audit-companion runner for
 `CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17`.
 
-Narrow theorem: derive the structural CHSH bounds from retained
+Narrow theorem: derive the structural CHSH bounds from cited
 primitives.
 
   Part 1 (classical bound):  For any LHV model with A_i, B_j in {-1,+1},
@@ -20,11 +20,12 @@ primitives.
                              |S| <= 2 (recovering G=0 null control of
                              the framework runner).
 
-Retained inputs consumed:
-  (R1) Born quadratic surface P=|A|^2 (i3_zero_exact_theorem_note, retained)
-  (R2) Tensor product bipartition H_A (x) H_B (SINGLE_AXIOM_HILBERT_NOTE, retained)
-  (R3) Cl(3) per-site Hilbert dim two (cl3_per_site_hilbert_dim_two_theorem_note, retained_bounded)
-  (R4) Anticommuting Pauli involutions in Cl(3) (fermion_parity_pauli_tensor_involution_narrow_theorem_note, retained)
+One-hop inputs consumed (statuses per live audit ledger):
+  (R1) Born quadratic surface P=|A|^2 (i3_zero_exact_theorem_note, cited)
+  (R2) Tensor product bipartition H_A (x) H_B (SINGLE_AXIOM_HILBERT_NOTE, cited)
+  (R3) Cl(3) per-site Hilbert dim two (cl3_per_site_hilbert_dim_two_theorem_note, cited bounded scope)
+  (R4) Anticommuting Pauli involutions in Cl(3) (fermion_parity_pauli_tensor_involution_narrow_theorem_note, cited)
+  Statuses for R1-R4 are set only by the independent audit lane (live ledger).
 
 No fitted parameters, no observational comparator, no literature import.
 
@@ -87,11 +88,12 @@ def main() -> int:
     print("Audit companion (exact-symbolic + exact-numeric) for")
     print("CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17")
     print("Goal: derive structural CHSH bounds (classical 2, Tsirelson 2*sqrt(2))")
-    print("Retained inputs (cited):")
-    print("  (R1) Born quadratic surface P=|A|^2   ... retained (i3_zero_exact)")
-    print("  (R2) Tensor product H_A (x) H_B       ... retained (SINGLE_AXIOM_HILBERT)")
-    print("  (R3) Cl(3) per-site Hilbert dim two   ... retained_bounded")
-    print("  (R4) Anticommuting Pauli involutions  ... retained")
+    print("One-hop inputs (cited):")
+    print("  (R1) Born quadratic surface P=|A|^2   ... cited (i3_zero_exact)")
+    print("  (R2) Tensor product H_A (x) H_B       ... cited (SINGLE_AXIOM_HILBERT)")
+    print("  (R3) Cl(3) per-site Hilbert dim two   ... cited (bounded scope)")
+    print("  (R4) Anticommuting Pauli involutions  ... cited")
+    print("  (statuses per live audit ledger; independent audit lane only)")
     print("=" * 88)
 
     # ==================================================================
@@ -173,18 +175,18 @@ def main() -> int:
     sigma_y = Matrix([[0, -Sym.ImaginaryUnit], [Sym.ImaginaryUnit, 0]])
     sigma_z = Matrix([[1, 0], [0, -1]])
 
-    # Verify involutions: sigma_z^2 = sigma_x^2 = I (R4 retained input)
+    # Verify involutions: sigma_z^2 = sigma_x^2 = I (R4 cited input)
     check(
-        "Part 2 — sigma_z^2 = I (involution, from retained R4)",
+        "Part 2 — sigma_z^2 = I (involution, from cited R4)",
         sigma_z * sigma_z == I2,
     )
     check(
-        "Part 2 — sigma_x^2 = I (involution, from retained R4)",
+        "Part 2 — sigma_x^2 = I (involution, from cited R4)",
         sigma_x * sigma_x == I2,
     )
-    # Verify anticommutation {sigma_z, sigma_x} = 0 (R4 retained)
+    # Verify anticommutation {sigma_z, sigma_x} = 0 (R4 cited)
     check(
-        "Part 2 — {sigma_z, sigma_x} = 0 (anticommutation, from retained R4)",
+        "Part 2 — {sigma_z, sigma_x} = 0 (anticommutation, from cited R4)",
         sigma_z * sigma_x + sigma_x * sigma_z == zeros(2, 2),
     )
 
@@ -397,7 +399,8 @@ def main() -> int:
         detail=f"max |S_product| = {max_S_product} (theoretical max = 2 at corners)",
     )
 
-    # Verify product state |+>|+> reaches |S|=0 (orthogonal A_i to chosen basis)
+    # Spot-check one explicit product state |+>|+>: S evaluates to sqrt(2),
+    # comfortably inside the product-state bound |S| <= 2.
     plus = Matrix([Rational(1), Rational(1)]) / sqrt(2)
     psi_prod = kronecker_product(plus, plus)
     Sp_op = A0t * B0t + A0t * B1t + A1t * B0t - A1t * B1t
@@ -409,11 +412,11 @@ def main() -> int:
     )
 
     # ==================================================================
-    section("Part 5: Cross-check vs retained primitives + boundary guards")
+    section("Part 5: Cross-check vs cited one-hop inputs + boundary guards")
     # ==================================================================
     # R4 cross-check: anticommuting in Cl(3) and Z^2 = X^2 = I
     check(
-        "Part 5 — R4 cross-check: anticommutation {sigma_z, sigma_x} = 0 matches retained",
+        "Part 5 — R4 cross-check: anticommutation {sigma_z, sigma_x} = 0 matches cited row",
         sigma_z * sigma_x + sigma_x * sigma_z == zeros(2, 2),
     )
     # R3 cross-check: Hilbert dim two
@@ -460,8 +463,8 @@ def main() -> int:
     if FAIL == 0:
         print("  STATUS: ALL EXACT-ALGEBRA CHECKS PASS")
         print("  CLOSURE: Structural CHSH bounds (classical 2, Tsirelson 2*sqrt(2)) derived")
-        print("           from retained primitives R1-R4 + Landau identity.")
-        print("           Class A (pure algebra over retained inputs).")
+        print("           from cited one-hop inputs R1-R4 + Landau identity.")
+        print("           Class A (pure algebra over cited inputs).")
         print("           Saturating witness exists in Cl(3) per-site Hilbert dim two.")
         return 0
     else:

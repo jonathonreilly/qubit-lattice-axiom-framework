@@ -1,7 +1,7 @@
 # ALT Connectivity Family Complex Failure Note
 
 **Date:** 2026-04-06  
-**Type:** no_go
+**Type:** open_gate
 **Status:** diagnosed boundary for complex action on the alternative connectivity family
 
 ## Artifact Chain

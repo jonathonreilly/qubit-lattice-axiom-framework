@@ -29,7 +29,7 @@
         },
         {
           "claim_id": "cpt_exact_note",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
@@ -565,7 +565,7 @@
         },
         {
           "claim_id": "cpt_exact_note",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "cpt_squared_is_identity_theorem_note_2026-05-02",
@@ -2911,6 +2911,6 @@
       "uncertified_count": 664
     }
   ],
-  "repo_head": "43a7b12830f10d13c0fa9ceea69c65ce4f555e8f",
+  "repo_head": "ad02a856638fabc5ca70408a780bd47c3a3172ab",
   "schema": "lane_certification_v2"
 }

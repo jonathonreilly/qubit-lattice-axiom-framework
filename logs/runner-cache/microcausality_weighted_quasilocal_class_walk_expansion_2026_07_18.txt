@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_weighted_quasilocal_class_walk_expansion_2026_07_18.py
+runner_sha256: c7861ea1b77eb2d13b2ece16fbb804ed46208385c504713fde16f032ad5419be
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+PASS: Q1 l1 sphere counts on Z^3: 4r^2+2 at r = 1..4
+PASS: Q2 chain lemma on mixed-size segments: reach <= sum of diameters (all chains k = 1, 2), attained
+PASS: Q3 union bound 12 vs distinct meeting bonds 11 vs non-self 10
+PASS: Q4 peeling inductive-step algebra kappa^n (|S| kappa) = |S| kappa^(n+1) (the reconstitution itself is exercised exhaustively in Q4b)
+PASS: Q4b ALL-SUBSETS peeling gate: every nonempty subset of a five-site segment (disconnected included), all X-to-Y chains k = 1, 2, 3, exact sums strictly below n_X^w kappa^(k-1)
+PASS: Q5a finite-family activity: kappa_box = 111/16 attained at interior sites and n_X^w = 111/16 at X = {0}
+PASS: Q5b exact chain sums below the bound: Sigma_1 <= n_X^w and Sigma_2 <= n_X^w * kappa_box (both strict)
+PASS: Q6 assembly: 2^(k+1) kap^(k-1) t^k = (2/kap)(2 kap t)^k, series = e^{2 kap t} - 1, t = 0 tight, order-one MAJORANT coefficient 4 a b n_X^w
+PASS: Q7 bond-class ENVELOPE: saturated bulk model attains 12 J e^mu exactly (6 incident bonds enumerated); a single-bond family gives only 2 J e^mu; envelope ratio 24/20 = 6/5
+PASS: Q8 numerator 4rho(1+rho)+2rho(1-rho)^2 = 2rho(3+rho^2) and finite-N telescoping identities for sum rho^r, sum r rho^r, AND sum r^2 rho^r
+PASS: Q9 closed-form kappa instances: kappa_3D = 14 J0 (rho=1/3) and 684 J0 (rho=3/4) certified by partial+tail brackets on the series; kappa_1D = 4 J0 at rho=1/2
+PASS: Q10 fermionic long-range lift: distant even pair term is Hermitian, commutes with intermediate odd/even elements, and the weighted reduction holds on a mixed family
+PASS: Q11 mixed-size tensor reduction: three-site term plus bond term; far term commutes with A, [H, A] = [h_123, A] != 0, and the three-site term commutes with the far probe's site complement rules
+PASS: N1 finite-range bridge note: the composition gap taken here and the one-hypothesis sentence
+PASS: N2 exp-decay note: the reproducing no-go display (dispositioned non-binding) and the separate-source sentence
+PASS: N3 free-bilinear note: the landed pair-support instance displays
+PASS: N4 block03 chain authority (its file read directly)
+PASS: N4b block04 graded-lemma authority (its file read directly)
+PASS: N5 axiom memo supplies no dynamics
+PASS: N6 target identifiers, delta sentences, No-Go structure
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

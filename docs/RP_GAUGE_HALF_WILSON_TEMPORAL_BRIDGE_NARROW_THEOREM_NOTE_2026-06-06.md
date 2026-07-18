@@ -14,7 +14,7 @@ This supplies an audit-ready **abelian gauge-half (bosonic) Factor 3** packet fo
 reflection-positivity reduction in
 [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 (the parent reflection-positivity row whose intended conditional gap is this
-gauge-half bridge). It instantiates the **retained** abstract gauge-half norm-square
+gauge-half bridge). It instantiates the named abstract gauge-half norm-square
 identity
 [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md)
 (G1–G3: `⟨Θ(F)·F⟩ = ‖ψ²F‖² ≥ 0`) on the Wilson plaquette in temporal gauge,
@@ -55,7 +55,7 @@ exp(-S_0),   S_0 = -(β/N) Re Tr V_k     (STANDARD ferromagnetic Wilson sign).
 ```
 
 (The reduction of the straddling plaquette to a single per-spatial-link plane
-coupling is the retained
+coupling is supplied by
 [`GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md`](GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md).)
 
 ## Theorem
@@ -107,28 +107,31 @@ Factor 3 packet; it is ready for independent re-audit, not a status promotion.
   `SU(2)` and `SU(3)` checks are diagnostic/non-load-bearing boundary data only.
 - **Does NOT claim:** the full fermion+gauge **integrated** RP, the continuum
   Osterwalder reconstruction, or anything beyond the bosonic Factor 3 on the
-  finite surface. Does not derive the Wilson action itself (admitted surface).
+  finite surface. Does not derive the Wilson action itself (supplied carrier).
   Does not claim a nonabelian W2/W3 reconstruction from product characters;
   does not prove all `SU(3)` character coefficients, close the parent row, or
   force any coupling value. No new axiom/import; no audit-status promotion.
   Osterwalder–Seiler (1978) / Montvay–Münster (1994) are **comparators only**.
 
-## Cited dependencies (fresh ledger status verified)
+## Cited source dependencies
 
-| Authority | Status | Role |
-|---|---|---|
-| `GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md` | see generated audit ledger | non-load-bearing context only: analogous split on a distinct finite-periodic `SU(N_c)`, `L_t≥4`, trivial-holonomy surface; it is not authority for W1 on this two-slice abelian carrier, and its link-level plus-locality belongs to `f`, not to `F` |
-| [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md) | retained | G1–G3 abstract norm-square identity instantiated here |
-| [`GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md`](GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md) | retained | straddling-plaquette → per-link plane coupling reduction |
-| [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md) | retained_bounded | fixed-background 2-step transfer positivity context (Factor 1) |
-| [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md) | retained | positive staggered determinant weight (Factor 2) |
+The live audit pipeline, not this source note, owns the current standing of each
+dependency.
+
+| Authority | Source role |
+|---|---|
+| `GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md` | non-load-bearing context only: analogous split on a distinct finite-periodic `SU(N_c)`, `L_t≥4`, trivial-holonomy surface; it is not authority for W1 on this two-slice abelian carrier, and its link-level plus-locality belongs to `f`, not to `F` |
+| [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md) | G1–G3 abstract norm-square identity instantiated here |
+| [`GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md`](GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md) | straddling-plaquette → per-link plane coupling reduction |
+| [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md) | fixed-background 2-step transfer positivity context (Factor 1) |
+| [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md) | positive staggered determinant weight (Factor 2) |
 
 ## Forbidden imports check
 
 - No PDG observed values consumed.
 - No literature numerical comparators consumed (OS / Montvay–Münster cited for
   context only).
-- No fitted selectors; no admitted unit conventions load-bearing on the claim.
+- No fitted selectors or externally supplied unit conventions are load-bearing on the claim.
 
 ## Validation
 

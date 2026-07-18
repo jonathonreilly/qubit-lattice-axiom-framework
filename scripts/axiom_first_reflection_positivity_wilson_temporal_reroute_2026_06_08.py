@@ -10,7 +10,7 @@ reroute guard.
 
 from __future__ import annotations
 
-import json
+from collections import Counter
 from pathlib import Path
 import sys
 
@@ -21,10 +21,14 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS_DIR = ROOT / "scripts"
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
+AUDIT_SCRIPTS_DIR = ROOT / "docs" / "audit" / "scripts"
+if str(AUDIT_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(AUDIT_SCRIPTS_DIR))
 
 import axiom_first_rp_two_step_transfer_matrix_positivity as base_runner
 import su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09 as su3_supplier
 import rp_multislice_halfspace_os_gram_certificate as ms_supplier
+from ledger_io import load_ledger
 
 
 NOTE_PATH = ROOT / "docs" / "AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
@@ -32,14 +36,19 @@ COUPLED_SUPPLIER_NAME = "RP_COUPLED_TWO_SLICE_GAUGE_STAGGERED_BEREZIN_GRAM_NARRO
 COUPLED_SUPPLIER_PATH = ROOT / "docs" / COUPLED_SUPPLIER_NAME
 MULTISLICE_SUPPLIER_NAME = "RP_COUPLED_MULTISLICE_HALFSPACE_GAUGE_STAGGERED_OS_GRAM_NARROW_THEOREM_NOTE_2026-07-11.md"
 MULTISLICE_SUPPLIER_PATH = ROOT / "docs" / MULTISLICE_SUPPLIER_NAME
-LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 BASE_RUNNER_PATH = ROOT / "scripts" / "axiom_first_rp_two_step_transfer_matrix_positivity.py"
 
 PASS = 0
 FAIL = 0
+EVIDENCE_COUNTS: Counter[str] = Counter()
 
 
-def check(label: str, ok: bool, detail: str = "") -> bool:
+def check(
+    label: str,
+    ok: bool,
+    detail: str = "",
+    evidence_class: str = "THEOREM_EVIDENCE",
+) -> bool:
     global PASS, FAIL
     if ok:
         PASS += 1
@@ -47,8 +56,9 @@ def check(label: str, ok: bool, detail: str = "") -> bool:
     else:
         FAIL += 1
         tag = "FAIL"
+    EVIDENCE_COUNTS[evidence_class] += int(ok)
     suffix = f" ({detail})" if detail else ""
-    print(f"  [{tag}] {label}{suffix}")
+    print(f"  [{tag}] [{evidence_class}] {label}{suffix}")
     return ok
 
 
@@ -67,6 +77,7 @@ def check_free_two_step_construction(base) -> None:
         "C1 dispersion anchor",
         max_res < base.TOL_DISP and max_imag < base.TOL_DISP,
         detail=f"max_res={max_res:.2e}, max_imag={max_imag:.2e}",
+        evidence_class="NUMERICAL_SUPPORT",
     )
 
     complex_min_imag, _, exceptional_ok, _, _ = base.check_single_step_nonpositive(base.MASS)
@@ -74,6 +85,7 @@ def check_free_two_step_construction(base) -> None:
         "C2 single-step remains non-positive",
         complex_min_imag > 1e-3 and exceptional_ok,
         detail=f"min_complex_imag={complex_min_imag:.3f}, exceptional_ok={exceptional_ok}",
+        evidence_class="BOUNDARY_EVIDENCE",
     )
 
     c3_ok = True
@@ -111,21 +123,28 @@ def check_free_two_step_construction(base) -> None:
             and r6["gamma_bdagb_err"] < base.TOL_PSD
         )
 
-    check("C3 many-body T_hat^2 positive Hermitian = B^dag B", c3_ok)
+    check(
+        "C3 many-body T_hat^2 positive Hermitian = B^dag B",
+        c3_ok,
+        evidence_class="NUMERICAL_SUPPORT",
+    )
 
     c4_ok = True
     for ls in (3, 4):
         r4 = base.r2_os_gram(ls, base.MASS)
         c4_ok = c4_ok and r4["herm_err"] < base.TOL_PSD and r4["min_eig"] >= -base.TOL_PSD
-    check("C4 two-step OS Gram Hermitian PSD", c4_ok)
-    check("C5 second-quantization functor identity", c5_ok)
-    check("C6 decaying spectral channel gives positive Fock kernel", c6_ok)
+    check("C4 two-step OS Gram Hermitian PSD", c4_ok, evidence_class="NUMERICAL_SUPPORT")
+    check("C5 second-quantization functor identity", c5_ok, evidence_class="NUMERICAL_SUPPORT")
+    check("C6 decaying spectral channel gives positive Fock kernel", c6_ok, evidence_class="NUMERICAL_SUPPORT")
 
 
 def check_reroute_guard() -> None:
     section("C7 source-side bounded Wilson temporal-gauge reroute guard")
     text = NOTE_PATH.read_text(encoding="utf-8")
-    rows = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
+    # The sharded ledger is canonical.  load_ledger() reads those shards
+    # directly and therefore works in a clean checkout where the ignored
+    # compatibility cache audit_ledger.json has not been materialized.
+    rows = load_ledger()["rows"]
 
     required_phrases = [
         "2026-06-08 Wilson temporal-gauge bridge reroute",
@@ -154,11 +173,22 @@ def check_reroute_guard() -> None:
     ]
     missing = [phrase for phrase in required_phrases if phrase not in text]
     stale = [phrase for phrase in forbidden_phrases if phrase in text]
-    check("required reroute phrases present", not missing, detail=", ".join(missing))
-    check("stale Wilson sign-repair phrases absent", not stale, detail=", ".join(stale))
+    check(
+        "required reroute phrases present",
+        not missing,
+        detail=", ".join(missing),
+        evidence_class="HYGIENE",
+    )
+    check(
+        "stale Wilson sign-repair phrases absent",
+        not stale,
+        detail=", ".join(stale),
+        evidence_class="HYGIENE",
+    )
     check(
         "parent note links the coupled-Gram supplier",
         f"[{COUPLED_SUPPLIER_NAME}]({COUPLED_SUPPLIER_NAME})" in text,
+        evidence_class="HYGIENE",
     )
     coupled_text = COUPLED_SUPPLIER_PATH.read_text(encoding="utf-8") if COUPLED_SUPPLIER_PATH.exists() else ""
     check(
@@ -166,6 +196,7 @@ def check_reroute_guard() -> None:
         COUPLED_SUPPLIER_PATH.exists()
         and "tensor product" in coupled_text.lower()
         and "entangled" in coupled_text.lower(),
+        evidence_class="HYGIENE",
     )
 
     retained_grades = {"retained", "retained_bounded", "retained_no_go"}
@@ -218,6 +249,7 @@ def check_reroute_guard() -> None:
         "foundational reroute dependencies remain retained-grade",
         foundational_ok,
         detail="; ".join(foundational_details),
+        evidence_class="HYGIENE",
     )
 
     supplier_ok = True
@@ -240,6 +272,7 @@ def check_reroute_guard() -> None:
         "in-packet reroute suppliers present, typed, and not audit-rejected",
         supplier_ok,
         detail="; ".join(supplier_details),
+        evidence_class="HYGIENE",
     )
 
     rng = np.random.default_rng(20260710)
@@ -253,6 +286,7 @@ def check_reroute_guard() -> None:
         "actual SU(3) plane-kernel Haar Gram is positive semidefinite",
         plane_min >= 1e-2,
         detail=f"min eig={plane_min:+.3e} (n=64, beta={beta_kernel})",
+        evidence_class="NUMERICAL_SUPPORT",
     )
 
     overlap_nodagger = np.einsum("nab,mba->nm", u, u).real
@@ -263,6 +297,7 @@ def check_reroute_guard() -> None:
         "no-conjugation plane-kernel rejector is decisively non-PSD",
         wrong_min < -1.0,
         detail=f"min eig={wrong_min:+.3e}",
+        evidence_class="BOUNDARY_EVIDENCE",
     )
 
     composed = su3_supplier.composed_mc(0.5, 100_000, rng)
@@ -272,11 +307,13 @@ def check_reroute_guard() -> None:
         "actual composed two-slice pure-gauge SU(3) Gram is PSD within sampling error",
         composed_min > -composed_threshold,
         detail=f"min eig={composed_min:+.6e}, negative allowance={composed_threshold:.3e}",
+        evidence_class="NUMERICAL_SUPPORT",
     )
     check(
         "pure-gauge composed-form sampling error is controlled",
         composed["mc_noise"] < 0.05,
         detail=f"mc_noise={composed['mc_noise']:.3e}",
+        evidence_class="NUMERICAL_SUPPORT",
     )
 
     control = su3_supplier.composed_mc(1.0, 100_000, rng, conjugate_reflected=False)
@@ -285,6 +322,7 @@ def check_reroute_guard() -> None:
         "no-conjugation pure-gauge composed control is non-PSD",
         control_min < -1e-3,
         detail=f"min eig={control_min:+.6e}",
+        evidence_class="BOUNDARY_EVIDENCE",
     )
 
 
@@ -295,6 +333,7 @@ def check_multislice_halfspace_supplier() -> None:
     check(
         "parent note links the multi-slice half-space supplier",
         f"[{MULTISLICE_SUPPLIER_NAME}]({MULTISLICE_SUPPLIER_NAME})" in text,
+        evidence_class="HYGIENE",
     )
     ms_phrases = [
         "full positive-time half-space algebra",
@@ -306,6 +345,7 @@ def check_multislice_halfspace_supplier() -> None:
         "parent note states the multi-slice half-space extension",
         not ms_missing,
         detail=", ".join(ms_missing),
+        evidence_class="HYGIENE",
     )
     ms_note_text = (
         MULTISLICE_SUPPLIER_PATH.read_text(encoding="utf-8")
@@ -319,6 +359,7 @@ def check_multislice_halfspace_supplier() -> None:
         and "a_+^half" in ms_note_norm
         and "multi-slice" in ms_note_norm
         and "half-space" in ms_note_norm,
+        evidence_class="HYGIENE",
     )
     results: list[tuple[str, bool, str]] = []
     ms_supplier.gate_G0(results)
@@ -331,6 +372,7 @@ def check_multislice_halfspace_supplier() -> None:
         "live multi-slice half-space supplier gates all pass",
         not gate_failures and len(results) >= 13,
         detail=f"n_checks={len(results)}, failures={gate_failures}",
+        evidence_class="HYGIENE",
     )
 
 
@@ -342,12 +384,24 @@ def main() -> int:
     check_reroute_guard()
     check_multislice_halfspace_supplier()
     print()
+    print(
+        "EVIDENCE_COUNTS "
+        + " ".join(
+            f"{name.lower()}={EVIDENCE_COUNTS.get(name, 0)}"
+            for name in (
+                "THEOREM_EVIDENCE",
+                "NUMERICAL_SUPPORT",
+                "HYGIENE",
+                "BOUNDARY_EVIDENCE",
+            )
+        )
+    )
     print(f"PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print(
-            "VERDICT: parent reroute guard passes; free two-step construction remains "
-            "unchanged, and the Wilson temporal-gauge application is routed through "
-            "retained-grade dependencies without promoting the parent row."
+            "RESULT: parent source-routing guard passes; free two-step construction "
+            "remains unchanged, the named Wilson and coupled suppliers are present, "
+            "and no parent-row status is inferred from this hygiene check."
         )
     return 0 if FAIL == 0 else 1
 

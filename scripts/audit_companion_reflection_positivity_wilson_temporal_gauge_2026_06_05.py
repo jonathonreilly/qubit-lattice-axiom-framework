@@ -565,16 +565,18 @@ def run_current_cycle_n1_n8() -> None:
     n_symbol = symbols("N", integer=True, positive=True)
     x_symbol = symbols("x", real=True)
     order_symbol = symbols("order", integer=True, nonnegative=True)
-    half_residual = simplify(
+    half_expression = (
         beta_symbol * (2 * x_symbol) / (2 * n_symbol)
         - beta_symbol * x_symbol / n_symbol
     )
-    majorant_residual = simplify(
+    half_residual = simplify(half_expression)
+    majorant_expression = (
         (beta_symbol / (2 * n_symbol)) ** order_symbol
         * (2 * n_symbol) ** order_symbol
         / sympy.factorial(order_symbol)
         - beta_symbol**order_symbol / sympy.factorial(order_symbol)
     )
+    majorant_residual = simplify(majorant_expression)
     all_order_exact = half_residual == 0 and majorant_residual == 0
     check(
         "G0 all-order coefficient normalization and uniform-majorant residuals vanish",
@@ -624,58 +626,117 @@ def run_current_cycle_n1_n8() -> None:
     pointwise_route_min = float(np.linalg.eigvalsh(direct_positive).min())
     sample_min = float(su3_plane_kernel_sample(alpha=0.3, n=20, seed=29).min())
 
+    # Build the finite open carrier used by the exact Z_4 diagnostics instead
+    # of certifying its scope from a dictionary of expected answers.  The
+    # temporal graph has only the open 0->1 links; in particular it contains
+    # no wrap edge 1->0.  Every field in this object is a gauge-link field.
+    _, s0, _, basis, observable, configs = zn_rp_setup(4, 0.6, 2)
+    spatial_link_ids = tuple(range(len(configs[0])))
+    temporal_slices = tuple(
+        sorted({time for time in (0, 1) for _ in spatial_link_ids})
+    )
+    spatial_links = tuple(
+        (time, link_id)
+        for time in temporal_slices
+        for link_id in spatial_link_ids
+    )
+    temporal_links = tuple(
+        (temporal_slices[0], temporal_slices[1], link_id, 1.0 + 0.0j)
+        for link_id in spatial_link_ids
+    )
+    temporal_wrap_links = tuple(
+        edge for edge in temporal_links
+        if edge[0] == temporal_slices[-1] and edge[1] == temporal_slices[0]
+    )
+    field_records = tuple(("gauge_link",) + link for link in spatial_links)
+    observable_matrix = np.asarray(
+        [[observable(item, config) for config in configs] for item in basis]
+    )
+    observable_sup_norms = tuple(
+        float(np.max(np.abs(row))) for row in observable_matrix
+    )
+    carrier = {
+        "temporal_slices": temporal_slices,
+        "spatial_link_ids": spatial_link_ids,
+        "spatial_links": spatial_links,
+        "temporal_links": temporal_links,
+        "temporal_wrap_links": temporal_wrap_links,
+        "field_records": field_records,
+        "observable_sup_norms": observable_sup_norms,
+        "configurations_per_slice": len(configs),
+        "continuum_parameters": tuple(),
+        "limit_operations": tuple(),
+    }
+
+    # Peter-Weyl completeness by itself does not determine coefficient signs.
+    # This exact Z_2 character expansion has a negative odd coefficient and
+    # an indefinite convolution kernel despite being a complete expansion.
+    unsigned_pw_coefficients = np.asarray([1.0, -0.25])
+    unsigned_pw_kernel = np.asarray(
+        [
+            [unsigned_pw_coefficients[0] + unsigned_pw_coefficients[1],
+             unsigned_pw_coefficients[0] - unsigned_pw_coefficients[1]],
+            [unsigned_pw_coefficients[0] - unsigned_pw_coefficients[1],
+             unsigned_pw_coefficients[0] + unsigned_pw_coefficients[1]],
+        ]
+    )
+    unsigned_pw_min = float(np.linalg.eigvalsh(unsigned_pw_kernel).min())
+
     routes = [
         (
             "representation-ring-all-orders",
             "CLOSES",
             all_order_exact and multiplicities_exact and dimensions_exact,
+            "EXACT_SOURCE_PROOF_PLUS_SYMBOLIC_NORMALIZATION",
             "tensor powers of F direct-sum Fbar; nonnegative multiplicities; exp(beta) majorant",
         ),
         (
             "real-Gram-Schur-exponential",
             "CLOSES",
             realification_residual < 1.0e-12 and exp_min >= -1.0e-10,
+            "EXACT_SOURCE_PROOF_PLUS_FINITE_RESTRICTION",
             f"realification_residual={realification_residual:.3e}; min_eig={exp_min:+.3e}",
         ),
         (
             "matrix-coefficient-product-integrated-Gram",
             "CLOSES",
             multiplicities_exact and dimensions_exact,
+            "EXACT_SOURCE_PROOF_PLUS_FINITE_RECONSTRUCTION",
             "matrix coefficients tensor across links and integrate to W diag(kappa) W^dagger",
         ),
         (
             "finite-abelian-and-fusion-reductions",
             "SUPPORTS",
             multiplicities_exact and dimensions_exact,
+            "EXACT_FINITE_SUPPORT",
             "finite Z_N/U(1) diagnostics and exact SU(3) fusion recurrence support the proof objects",
         ),
         (
             "pointwise-positive-weight-only",
             "FAILS",
             direct_positive.min() > 0.0 and pointwise_route_min < 0.0,
+            "EXACT_BOUNDARY_COUNTEREXAMPLE",
             f"positive-entry control min_eig={pointwise_route_min:+.1f}",
         ),
         (
             "sampled-SU-N-restrictions-only",
             "SUPPORTS",
             sample_min >= -1.0e-10,
+            "NUMERICAL_SUPPORT",
             f"finite deterministic restriction min_eig={sample_min:+.3e}; not universal evidence",
         ),
         (
-            "literature-or-Peter-Weyl-without-signs",
+            "Peter-Weyl-completeness-without-sign-control",
             "FAILS",
-            len(tables) == 9,
-            "neither a citation nor Peter-Weyl alone supplies coefficient signs",
+            unsigned_pw_coefficients[1] < 0.0 and unsigned_pw_min < 0.0,
+            "EXACT_BOUNDARY_COUNTEREXAMPLE",
+            (
+                "exact Z_2 expansion has negative odd coefficient "
+                f"and kernel min_eig={unsigned_pw_min:+.3e}"
+            ),
         ),
     ]
-    for route_id, disposition, resolved, proof_object in routes:
-        witness_state = (
-            "computed_closure_witness"
-            if disposition == "CLOSES"
-            else "computed_support_witness"
-            if disposition == "SUPPORTS"
-            else "computed_failure_witness"
-        )
+    for route_id, disposition, resolved, witness_state, proof_object in routes:
         print(
             "  N1_ROUTE "
             f"route_id={route_id}; honesty_marker=ATTEMPTED; "
@@ -693,76 +754,104 @@ def run_current_cycle_n1_n8() -> None:
         evidence_class="BOUNDARY_EVIDENCE",
     )
 
-    open_boundaries = (
-        "arbitrary_time_extent",
-        "fermion_sector",
-        "continuum_or_thermodynamic_limit",
-        "global_temporal_gauge_fixing",
+    proved_object_inventory = {
+        "open_two_slice_temporal_graph"
+        if len(carrier["temporal_slices"]) == 2
+        and not carrier["temporal_wrap_links"]
+        else "invalid_temporal_graph",
+        "finite_gauge_link_configuration_space"
+        if carrier["configurations_per_slice"] == 4 ** len(spatial_link_ids)
+        else "invalid_configuration_space",
+        "bounded_gauge_observable_block"
+        if observable_sup_norms and max(observable_sup_norms) < math.inf
+        else "invalid_observable_block",
+        "positive_crossing_kernel"
+        if exp_min >= -1.0e-10
+        else "invalid_crossing_kernel",
+        "nonnegative_tensor_multiplicities"
+        if multiplicities_exact and dimensions_exact
+        else "invalid_tensor_multiplicities",
+    }
+    boundary_requirements = {
+        "arbitrary_time_extent": {
+            "third_time_slice",
+            "interior_time_reflection_factorization",
+        },
+        "fermion_sector": {
+            "Grassmann_generators",
+            "Berezin_crossing_coefficient_matrix",
+        },
+        "continuum_or_thermodynamic_limit": {
+            "volume_uniform_estimate",
+            "limit_topology_and_convergence_proof",
+        },
+        "global_temporal_gauge_fixing": {
+            "gauge_orbit_representative_map",
+            "global_gauge_fixing_measure_identity",
+        },
+    }
+    missing_by_boundary = {
+        boundary: requirements - proved_object_inventory
+        for boundary, requirements in boundary_requirements.items()
+    }
+    pairwise_independent = all(
+        boundary_requirements[left] - boundary_requirements[right]
+        and boundary_requirements[right] - boundary_requirements[left]
+        for left, right in itertools.combinations(boundary_requirements, 2)
     )
-    proof_closure_edges: set[tuple[str, str]] = set()
-    implication_pairs = [
-        (left, right)
-        for left in open_boundaries
-        for right in open_boundaries
-        if left != right and (left, right) in proof_closure_edges
-    ]
-    for left_index, left in enumerate(open_boundaries):
-        for right in open_boundaries[left_index + 1 :]:
-            print(
-                "  N2_PAIR "
-                f"left={left}; right={right}; "
-                f"left_closes_right={int((left, right) in proof_closure_edges)}; "
-                f"right_closes_left={int((right, left) in proof_closure_edges)}; "
-                "independent_open_surfaces=1"
-            )
+    for left, right in itertools.combinations(boundary_requirements, 2):
+        print(
+            "  N2_PAIR "
+            f"left={left}; right={right}; "
+            f"left_unique_requirements={sorted(boundary_requirements[left] - boundary_requirements[right])}; "
+            f"right_unique_requirements={sorted(boundary_requirements[right] - boundary_requirements[left])}"
+        )
     print(
         "  N2_DISPOSITION "
-        f"open_boundaries={open_boundaries}; derived_by_bounded_proof=0; "
-        f"pairwise_implication_edges={len(implication_pairs)}; "
-        "the packet neither closes one open boundary from another nor uses any as a premise."
+        f"proved_objects={sorted(proved_object_inventory)}; "
+        f"missing_requirements={missing_by_boundary}; "
+        "each broader wall requires objects absent from the bounded proof."
     )
     check(
-        "G2 N2 proof objects contain no cross-boundary derivation",
-        len(implication_pairs) == 0,
-        detail=f"ordered_pairs_checked={len(open_boundaries) * (len(open_boundaries) - 1)}",
+        "G2 N2 each broader wall has independent missing proof objects",
+        pairwise_independent
+        and all(len(missing) == len(boundary_requirements[boundary])
+                for boundary, missing in missing_by_boundary.items()),
+        detail=f"boundaries={len(boundary_requirements)}, pairs={len(list(itertools.combinations(boundary_requirements, 2)))}",
         evidence_class="BOUNDARY_EVIDENCE",
     )
 
-    carrier = {
-        "temporal_slices": tuple(range(2)),
-        "spatial_link_count": 2,
-        "temporal_periodicity_edges": 0,
-        "gauge_sector_count": 1,
-        "fermion_generator_count": 0,
-        "temporal_gauge_identity_link_count": 2,
-        "observable_sup_norms": (1.0, 1.0, 1.0),
-        "arbitrary_time_extent_claims": 0,
-        "continuum_limit_claims": 0,
-    }
+    gauge_field_count = sum(record[0] == "gauge_link" for record in field_records)
+    non_gauge_field_count = len(field_records) - gauge_field_count
+    temporal_gauge_identity_link_count = sum(
+        abs(link[3] - 1.0) < 1.0e-15 for link in temporal_links
+    )
     hidden_wall_scan = (
         len(carrier["temporal_slices"]) == 2
         and carrier["temporal_slices"] == (0, 1)
-        and carrier["spatial_link_count"] > 0
-        and carrier["temporal_periodicity_edges"] == 0
-        and carrier["gauge_sector_count"] == 1
-        and carrier["fermion_generator_count"] == 0
-        and carrier["temporal_gauge_identity_link_count"]
-        == carrier["spatial_link_count"]
+        and len(carrier["spatial_link_ids"]) > 0
+        and len(carrier["temporal_wrap_links"]) == 0
+        and gauge_field_count == len(carrier["spatial_links"])
+        and non_gauge_field_count == 0
+        and temporal_gauge_identity_link_count == len(carrier["spatial_link_ids"])
         and max(carrier["observable_sup_norms"]) < math.inf
-        and carrier["arbitrary_time_extent_claims"] == 0
-        and carrier["continuum_limit_claims"] == 0
+        and carrier["configurations_per_slice"] == 4 ** len(carrier["spatial_link_ids"])
+        and not carrier["continuum_parameters"]
+        and not carrier["limit_operations"]
     )
     print(
         "  N3_DISPOSITION "
-        f"finite_volume_spatial_links={carrier['spatial_link_count']}; "
+        f"finite_volume_spatial_links={len(carrier['spatial_link_ids'])}; "
         f"temporal_slices={carrier['temporal_slices']}; "
-        f"temporal_periodicity_edges={carrier['temporal_periodicity_edges']}; "
+        f"temporal_periodicity_edges={len(carrier['temporal_wrap_links'])}; "
         "beta_domain=[0,infinity); N_domain=integers>=2; "
-        f"temporal_gauge_identity_links={carrier['temporal_gauge_identity_link_count']}; "
+        f"temporal_gauge_identity_links={temporal_gauge_identity_link_count}; "
         f"bounded_observable_sup_norm_max={max(carrier['observable_sup_norms']):.1f}; "
-        f"fermion_generators={carrier['fermion_generator_count']}; "
-        f"arbitrary_time_claims={carrier['arbitrary_time_extent_claims']}; "
-        f"continuum_claims={carrier['continuum_limit_claims']}"
+        f"gauge_field_records={gauge_field_count}; "
+        f"non_gauge_field_records={non_gauge_field_count}; "
+        f"configurations_per_slice={carrier['configurations_per_slice']}; "
+        f"continuum_parameters={len(carrier['continuum_parameters'])}; "
+        f"limit_operations={len(carrier['limit_operations'])}"
     )
     check(
         "G3 N3 hidden-wall carrier scan matches the exact bounded surface",
@@ -771,61 +860,92 @@ def run_current_cycle_n1_n8() -> None:
         evidence_class="BOUNDARY_EVIDENCE",
     )
 
-    _, s0, _, basis, observable, configs = zn_rp_setup(4, 0.6, 2)
     reflection_residual = max(
         abs(s0(left, right) - s0(right, left))
         for left in configs
         for right in configs
     )
-    one_link = np.asarray(
+    link_kernels = [
+        np.asarray(
+            [
+                [
+                    np.exp(
+                        0.6
+                        * np.real(
+                            zn_element(left, 4)
+                            * np.conj(zn_element(right, 4))
+                        )
+                    )
+                    for right in range(4)
+                ]
+                for left in range(4)
+            ]
+        )
+        for _link_id in spatial_link_ids
+    ]
+    one_link_min = min(
+        float(np.linalg.eigvalsh(kernel).min()) for kernel in link_kernels
+    )
+    product_kernel = np.asarray(
         [
             [
-                np.exp(
-                    0.6
-                    * np.real(zn_element(left, 4) * np.conj(zn_element(right, 4)))
+                math.prod(
+                    link_kernels[link_id][left[link_id], right[link_id]]
+                    for link_id in spatial_link_ids
                 )
-                for right in range(4)
+                for right in configs
             ]
-            for left in range(4)
+            for left in configs
         ]
     )
-    one_link_min = float(np.linalg.eigvalsh(one_link).min())
-    product_kernel = np.kron(one_link, one_link)
+    kronecker_product = np.asarray([[1.0]])
+    for kernel in link_kernels:
+        kronecker_product = np.kron(kronecker_product, kernel)
     product_min = float(np.linalg.eigvalsh(product_kernel).min())
 
-    observable_matrix = np.asarray(
-        [[observable(item, config) for config in configs] for item in basis]
+    raw_direct_block = (
+        np.conj(observable_matrix) @ product_kernel @ observable_matrix.T
     )
-    direct_block = np.conj(observable_matrix) @ product_kernel @ observable_matrix.T
     kappa, phi = np.linalg.eigh(product_kernel)
-    coordinates = np.conj(observable_matrix) @ phi
-    factored_block = coordinates @ np.diag(kappa) @ coordinates.conj().T
+    haar_weight = 1.0 / len(configs)
+    normalized_partition = float(
+        (haar_weight**2) * product_kernel.sum()
+    )
+    direct_block = (haar_weight**2) * raw_direct_block / normalized_partition
+    W = haar_weight * np.conj(observable_matrix) @ phi
+    factored_block = W @ np.diag(kappa) @ W.conj().T / normalized_partition
     factor_residual = float(np.max(np.abs(direct_block - factored_block)))
     block_min = float(
         np.linalg.eigvalsh((direct_block + direct_block.conj().T) / 2.0).min()
     )
-    normalized_partition = float(product_kernel.sum() / (len(configs) ** 2))
-    convergence_majorant = math.exp(0.6) ** carrier["spatial_link_count"]
+    convergence_majorant = math.exp(0.6) ** len(carrier["spatial_link_ids"])
 
     clause_objects = (
-        ("finite_open_temporal_gauge_carrier", float(not hidden_wall_scan), 0.0),
-        ("reflection_split_and_Boltzmann_sign", reflection_residual, 1.0e-12),
-        ("all_order_character_coefficients", float(not all_order_exact), 0.0),
-        ("uniform_absolute_convergence", float(not math.isfinite(convergence_majorant)), 0.0),
-        ("positive_plane_kernel", max(0.0, -one_link_min), 1.0e-10),
-        ("finite_product_kernel", max(0.0, -product_min), 1.0e-10),
-        ("integrated_reflected_Gram", max(factor_residual, max(0.0, -block_min)), 1.0e-9),
+        ("finite_open_temporal_gauge_carrier", float(not hidden_wall_scan), 0.0, "CONSTRUCTED_FINITE_CARRIER"),
+        ("reflection_split_and_Boltzmann_sign", reflection_residual, 1.0e-12, "EXHAUSTIVE_FINITE_HAAR"),
+        (
+            "character_coefficient_formula_and_sign_mechanism",
+            float(not (all_order_exact and multiplicities_exact and dimensions_exact)),
+            0.0,
+            "EXACT_SYMBOLIC_FORMULA_PLUS_FINITE_SU3_RECURRENCE",
+        ),
+        ("uniform_absolute_convergence", float(not math.isfinite(convergence_majorant)), 0.0, "EXACT_SCALAR_MAJORANT"),
+        ("positive_plane_kernel", max(0.0, -one_link_min), 1.0e-10, "EXHAUSTIVE_Z4_RESTRICTION"),
+        ("finite_product_kernel", max(0.0, -product_min), 1.0e-10, "EXHAUSTIVE_Z4_RESTRICTION"),
+        ("integrated_reflected_Gram", max(factor_residual, max(0.0, -block_min)), 1.0e-9, "NORMALIZED_HAAR_FEATURE_FACTORIZATION"),
         (
             "normalized_Haar_partition_0_lt_Z_lt_infinity",
             float(not (math.isfinite(normalized_partition) and normalized_partition > 0.0)),
             0.0,
+            "EXHAUSTIVE_FINITE_HAAR",
         ),
-        ("bounded_complex_observable_class", float(not all(math.isfinite(value) for value in carrier["observable_sup_norms"])), 0.0),
+        ("bounded_complex_observable_diagnostic_block", float(not all(math.isfinite(value) for value in carrier["observable_sup_norms"])), 0.0, "EXHAUSTIVE_FINITE_BASIS"),
     )
-    for clause, residual, tolerance in clause_objects:
+    for clause, residual, tolerance, evidence_kind in clause_objects:
         print(
             "  N4_CLAUSE "
-            f"clause={clause}; recomputed_residual={residual:.6e}; tolerance={tolerance:.1e}"
+            f"clause={clause}; evidence_kind={evidence_kind}; "
+            f"recomputed_residual={residual:.6e}; tolerance={tolerance:.1e}"
         )
     print(
         "  N4_OBJECT "
@@ -834,18 +954,34 @@ def run_current_cycle_n1_n8() -> None:
         f"bounded_observable_sup_norm_max={max(carrier['observable_sup_norms']):.1f}"
     )
     check(
-        "G4 N4 every bounded-theorem clause has a closing recomputed proof object",
-        all(residual <= tolerance for _, residual, tolerance in clause_objects),
+        "G4 N4 every clause is mapped to its actual exact or finite evidence object",
+        all(residual <= tolerance for _, residual, tolerance, _ in clause_objects),
         detail=f"clauses={len(clause_objects)}",
         evidence_class="BOUNDARY_EVIDENCE",
     )
 
     one_link_spectra = [
-        float(np.linalg.eigvalsh(one_link).min())
-        for _ in range(carrier["spatial_link_count"])
+        float(np.linalg.eigvalsh(kernel).min())
+        for kernel in link_kernels
     ]
     kron_residual = float(
-        np.max(np.abs(product_kernel - np.kron(one_link, one_link)))
+        np.max(np.abs(product_kernel - kronecker_product))
+    )
+    fundamental_cut_residual = max(
+        abs(
+            np.trace(left @ right.conj().T)
+            - np.sum(left * np.conj(right))
+        )
+        for left in finite_family
+        for right in finite_family
+    )
+    antifundamental_cut_residual = max(
+        abs(
+            np.conj(np.trace(left @ right.conj().T))
+            - np.sum(np.conj(left) * right)
+        )
+        for left in finite_family
+        for right in finite_family
     )
     beta_zero_coefficients = su3_truncated_character_coefficients(0.0, 8)
     zero_nontrivial_modes = sum(
@@ -862,6 +998,8 @@ def run_current_cycle_n1_n8() -> None:
             and beta_zero_coefficients[(0, 0)] == 1.0
             and zero_nontrivial_modes > 0
             and absent_mode
+            and fundamental_cut_residual < 1.0e-12
+            and antifundamental_cut_residual < 1.0e-12
         ),
         "per_block": factor_residual < 1.0e-9 and block_min >= -1.0e-9,
         "lattice_wide": hidden_wall_scan,
@@ -874,8 +1012,8 @@ def run_current_cycle_n1_n8() -> None:
     )
     print(
         "  N5_RESOLUTION per_site: "
-        f"finite_spatial_link_factors={carrier['spatial_link_count']}; "
-        f"one_link_shape={one_link.shape}; product_shape={product_kernel.shape}; "
+        f"finite_spatial_link_factors={len(link_kernels)}; "
+        f"one_link_shapes={[kernel.shape for kernel in link_kernels]}; product_shape={product_kernel.shape}; "
         f"Kronecker_residual={kron_residual:.3e}; product_min_eig={product_min:+.3e}."
     )
     print(
@@ -883,7 +1021,9 @@ def run_current_cycle_n1_n8() -> None:
         f"tensor_orders=0..{len(tables) - 1}; order8_irreps={len(tables[-1])}; "
         f"nonnegative_integer_multiplicities={sum(len(table) for table in tables)}; "
         f"beta0_zero_nontrivial_modes={zero_nontrivial_modes}; "
-        f"absent_irrep_(20,0)_count={int(absent_mode)}."
+        f"absent_irrep_(20,0)_count={int(absent_mode)}; "
+        f"fundamental_matrix_element_cut_residual={fundamental_cut_residual:.3e}; "
+        f"antifundamental_matrix_element_cut_residual={antifundamental_cut_residual:.3e}."
     )
     print(
         "  N5_RESOLUTION per_block: "
@@ -894,12 +1034,13 @@ def run_current_cycle_n1_n8() -> None:
     print(
         "  N5_RESOLUTION lattice_wide: "
         f"temporal_slice_count={len(carrier['temporal_slices'])}; "
-        f"finite_spatial_link_count={carrier['spatial_link_count']}; "
-        f"temporal_periodicity_edges={carrier['temporal_periodicity_edges']}; "
-        f"pure_gauge_sector_count={carrier['gauge_sector_count']}; "
-        f"fermion_generators={carrier['fermion_generator_count']}; "
-        f"arbitrary_time_claims={carrier['arbitrary_time_extent_claims']}; "
-        f"continuum_claims={carrier['continuum_limit_claims']}."
+        f"finite_spatial_link_count={len(carrier['spatial_link_ids'])}; "
+        f"temporal_periodicity_edges={len(carrier['temporal_wrap_links'])}; "
+        f"gauge_field_records={gauge_field_count}; "
+        f"non_gauge_field_records={non_gauge_field_count}; "
+        f"additional_temporal_slices={max(0, len(carrier['temporal_slices']) - 2)}; "
+        f"continuum_parameters={len(carrier['continuum_parameters'])}; "
+        f"limit_operations={len(carrier['limit_operations'])}."
     )
     check(
         "G5 N5 all five resolution labels close on computed objects",
@@ -911,23 +1052,25 @@ def run_current_cycle_n1_n8() -> None:
         evidence_class="BOUNDARY_EVIDENCE",
     )
 
-    premise_counts = {
-        "new_axioms": 0,
-        "new_primitives": 0,
-        "supplied_physics_premises": 0,
-    }
+    symbolic_derivation_symbols = (
+        half_expression.free_symbols | majorant_expression.free_symbols
+    )
+    allowed_symbolic_roles = {beta_symbol, n_symbol, x_symbol, order_symbol}
+    unexpected_derivation_selectors = (
+        symbolic_derivation_symbols - allowed_symbolic_roles
+    )
     print(
         "  N6_DISPOSITION honest_partial_closure=bounded finite two-slice pure-gauge theorem; "
-        f"new_axioms={premise_counts['new_axioms']}; "
-        f"new_primitives={premise_counts['new_primitives']}; "
-        f"supplied_physics_premises={premise_counts['supplied_physics_premises']}; "
+        f"symbolic_inputs={sorted(str(item) for item in symbolic_derivation_symbols)}; "
+        f"unexpected_empirical_or_physics_selectors={sorted(str(item) for item in unexpected_derivation_selectors)}; "
+        "axiom/primitive registry purity is intentionally delegated to repository-diff validation; "
         "broader arbitrary-time, fermion, transfer-matrix, Hamiltonian, continuum, and "
         "global-gauge-fixing physics remains open and is not reclassified."
     )
     check(
-        "G6 N6 bounded closure requires no new axiom, primitive, or supplied physics premise",
-        sum(premise_counts.values()) == 0,
-        detail=f"counts={premise_counts}",
+        "G6 N6 exact derivation formulas contain no empirical or supplied-physics selector",
+        not unexpected_derivation_selectors,
+        detail="registry purity is a separate repository-diff gate, not self-certified here",
         evidence_class="BOUNDARY_EVIDENCE",
     )
 
@@ -945,8 +1088,7 @@ def run_current_cycle_n1_n8() -> None:
         and negative_coupling_min < -1.0e-3
         and np.linalg.eigvalsh(right_reflection).min() >= -1.0e-12
         and wrong_reflection_min < -1.0e-3
-        and carrier["temporal_gauge_identity_link_count"]
-        == carrier["spatial_link_count"]
+        and temporal_gauge_identity_link_count == len(carrier["spatial_link_ids"])
     )
     print(
         "  N7_STEELMAN objection=pointwise positivity is insufficient; "
@@ -965,7 +1107,7 @@ def run_current_cycle_n1_n8() -> None:
     )
     print(
         "  N7_STEELMAN objection=temporal gauge is not globally derived; "
-        f"resolution=not claimed, identity temporal links={carrier['temporal_gauge_identity_link_count']} "
+        f"resolution=not claimed, identity temporal links={temporal_gauge_identity_link_count} "
         "are explicit data on the open two-slice carrier."
     )
     check(

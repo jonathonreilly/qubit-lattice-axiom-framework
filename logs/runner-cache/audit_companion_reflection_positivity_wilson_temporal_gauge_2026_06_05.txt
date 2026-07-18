@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
-runner_sha256: 33602a1f217625ea71d938ef41cf4051b27ef2c9d0d5d8abd7b73cc90c10724d
-timeout_sec: 240
+runner_sha256: c3584724ac42ff277f97e8746bcfbe957a35a9cc21e66f0fc081aa7c4fd3dc30
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 82.77
+elapsed_sec: 83.66
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -90,49 +90,49 @@ Part F: SU(3) representation-ring certificate and kernel controls
 Part G: current-cycle N1-N8 bounded-theorem evidence
 ----------------------------------------------------------------------------------------
   [PASS] [THEOREM_EVIDENCE] G0 all-order coefficient normalization and uniform-majorant residuals vanish  (half_residual=0, majorant_residual=0; sum beta^n/n!=exp(beta))
-  N1_ROUTE route_id=representation-ring-all-orders; honesty_marker=ATTEMPTED; disposition=CLOSES; witness_state=computed_closure_witness; evidence=tensor powers of F direct-sum Fbar; nonnegative multiplicities; exp(beta) majorant
-  N1_ROUTE route_id=real-Gram-Schur-exponential; honesty_marker=ATTEMPTED; disposition=CLOSES; witness_state=computed_closure_witness; evidence=realification_residual=8.882e-16; min_eig=+4.486e-01
-  N1_ROUTE route_id=matrix-coefficient-product-integrated-Gram; honesty_marker=ATTEMPTED; disposition=CLOSES; witness_state=computed_closure_witness; evidence=matrix coefficients tensor across links and integrate to W diag(kappa) W^dagger
-  N1_ROUTE route_id=finite-abelian-and-fusion-reductions; honesty_marker=ATTEMPTED; disposition=SUPPORTS; witness_state=computed_support_witness; evidence=finite Z_N/U(1) diagnostics and exact SU(3) fusion recurrence support the proof objects
-  N1_ROUTE route_id=pointwise-positive-weight-only; honesty_marker=ATTEMPTED; disposition=FAILS; witness_state=computed_failure_witness; evidence=positive-entry control min_eig=-1.0
-  N1_ROUTE route_id=sampled-SU-N-restrictions-only; honesty_marker=ATTEMPTED; disposition=SUPPORTS; witness_state=computed_support_witness; evidence=finite deterministic restriction min_eig=+2.334e-01; not universal evidence
-  N1_ROUTE route_id=literature-or-Peter-Weyl-without-signs; honesty_marker=ATTEMPTED; disposition=FAILS; witness_state=computed_failure_witness; evidence=neither a citation nor Peter-Weyl alone supplies coefficient signs
+  N1_ROUTE route_id=representation-ring-all-orders; honesty_marker=ATTEMPTED; disposition=CLOSES; witness_state=EXACT_SOURCE_PROOF_PLUS_SYMBOLIC_NORMALIZATION; evidence=tensor powers of F direct-sum Fbar; nonnegative multiplicities; exp(beta) majorant
+  N1_ROUTE route_id=real-Gram-Schur-exponential; honesty_marker=ATTEMPTED; disposition=CLOSES; witness_state=EXACT_SOURCE_PROOF_PLUS_FINITE_RESTRICTION; evidence=realification_residual=8.882e-16; min_eig=+4.486e-01
+  N1_ROUTE route_id=matrix-coefficient-product-integrated-Gram; honesty_marker=ATTEMPTED; disposition=CLOSES; witness_state=EXACT_SOURCE_PROOF_PLUS_FINITE_RECONSTRUCTION; evidence=matrix coefficients tensor across links and integrate to W diag(kappa) W^dagger
+  N1_ROUTE route_id=finite-abelian-and-fusion-reductions; honesty_marker=ATTEMPTED; disposition=SUPPORTS; witness_state=EXACT_FINITE_SUPPORT; evidence=finite Z_N/U(1) diagnostics and exact SU(3) fusion recurrence support the proof objects
+  N1_ROUTE route_id=pointwise-positive-weight-only; honesty_marker=ATTEMPTED; disposition=FAILS; witness_state=EXACT_BOUNDARY_COUNTEREXAMPLE; evidence=positive-entry control min_eig=-1.0
+  N1_ROUTE route_id=sampled-SU-N-restrictions-only; honesty_marker=ATTEMPTED; disposition=SUPPORTS; witness_state=NUMERICAL_SUPPORT; evidence=finite deterministic restriction min_eig=+2.334e-01; not universal evidence
+  N1_ROUTE route_id=Peter-Weyl-completeness-without-sign-control; honesty_marker=ATTEMPTED; disposition=FAILS; witness_state=EXACT_BOUNDARY_COUNTEREXAMPLE; evidence=exact Z_2 expansion has negative odd coefficient and kernel min_eig=-5.000e-01
   [PASS] [BOUNDARY_EVIDENCE] G1 N1 enumerates at least five distinct recomputed routes  (routes=7, closes=3, supports=2, fails=2)
-  N2_PAIR left=arbitrary_time_extent; right=fermion_sector; left_closes_right=0; right_closes_left=0; independent_open_surfaces=1
-  N2_PAIR left=arbitrary_time_extent; right=continuum_or_thermodynamic_limit; left_closes_right=0; right_closes_left=0; independent_open_surfaces=1
-  N2_PAIR left=arbitrary_time_extent; right=global_temporal_gauge_fixing; left_closes_right=0; right_closes_left=0; independent_open_surfaces=1
-  N2_PAIR left=fermion_sector; right=continuum_or_thermodynamic_limit; left_closes_right=0; right_closes_left=0; independent_open_surfaces=1
-  N2_PAIR left=fermion_sector; right=global_temporal_gauge_fixing; left_closes_right=0; right_closes_left=0; independent_open_surfaces=1
-  N2_PAIR left=continuum_or_thermodynamic_limit; right=global_temporal_gauge_fixing; left_closes_right=0; right_closes_left=0; independent_open_surfaces=1
-  N2_DISPOSITION open_boundaries=('arbitrary_time_extent', 'fermion_sector', 'continuum_or_thermodynamic_limit', 'global_temporal_gauge_fixing'); derived_by_bounded_proof=0; pairwise_implication_edges=0; the packet neither closes one open boundary from another nor uses any as a premise.
-  [PASS] [BOUNDARY_EVIDENCE] G2 N2 proof objects contain no cross-boundary derivation  (ordered_pairs_checked=12)
-  N3_DISPOSITION finite_volume_spatial_links=2; temporal_slices=(0, 1); temporal_periodicity_edges=0; beta_domain=[0,infinity); N_domain=integers>=2; temporal_gauge_identity_links=2; bounded_observable_sup_norm_max=1.0; fermion_generators=0; arbitrary_time_claims=0; continuum_claims=0
+  N2_PAIR left=arbitrary_time_extent; right=fermion_sector; left_unique_requirements=['interior_time_reflection_factorization', 'third_time_slice']; right_unique_requirements=['Berezin_crossing_coefficient_matrix', 'Grassmann_generators']
+  N2_PAIR left=arbitrary_time_extent; right=continuum_or_thermodynamic_limit; left_unique_requirements=['interior_time_reflection_factorization', 'third_time_slice']; right_unique_requirements=['limit_topology_and_convergence_proof', 'volume_uniform_estimate']
+  N2_PAIR left=arbitrary_time_extent; right=global_temporal_gauge_fixing; left_unique_requirements=['interior_time_reflection_factorization', 'third_time_slice']; right_unique_requirements=['gauge_orbit_representative_map', 'global_gauge_fixing_measure_identity']
+  N2_PAIR left=fermion_sector; right=continuum_or_thermodynamic_limit; left_unique_requirements=['Berezin_crossing_coefficient_matrix', 'Grassmann_generators']; right_unique_requirements=['limit_topology_and_convergence_proof', 'volume_uniform_estimate']
+  N2_PAIR left=fermion_sector; right=global_temporal_gauge_fixing; left_unique_requirements=['Berezin_crossing_coefficient_matrix', 'Grassmann_generators']; right_unique_requirements=['gauge_orbit_representative_map', 'global_gauge_fixing_measure_identity']
+  N2_PAIR left=continuum_or_thermodynamic_limit; right=global_temporal_gauge_fixing; left_unique_requirements=['limit_topology_and_convergence_proof', 'volume_uniform_estimate']; right_unique_requirements=['gauge_orbit_representative_map', 'global_gauge_fixing_measure_identity']
+  N2_DISPOSITION proved_objects=['bounded_gauge_observable_block', 'finite_gauge_link_configuration_space', 'nonnegative_tensor_multiplicities', 'open_two_slice_temporal_graph', 'positive_crossing_kernel']; missing_requirements={'arbitrary_time_extent': {'interior_time_reflection_factorization', 'third_time_slice'}, 'fermion_sector': {'Grassmann_generators', 'Berezin_crossing_coefficient_matrix'}, 'continuum_or_thermodynamic_limit': {'volume_uniform_estimate', 'limit_topology_and_convergence_proof'}, 'global_temporal_gauge_fixing': {'global_gauge_fixing_measure_identity', 'gauge_orbit_representative_map'}}; each broader wall requires objects absent from the bounded proof.
+  [PASS] [BOUNDARY_EVIDENCE] G2 N2 each broader wall has independent missing proof objects  (boundaries=4, pairs=6)
+  N3_DISPOSITION finite_volume_spatial_links=2; temporal_slices=(0, 1); temporal_periodicity_edges=0; beta_domain=[0,infinity); N_domain=integers>=2; temporal_gauge_identity_links=2; bounded_observable_sup_norm_max=1.0; gauge_field_records=4; non_gauge_field_records=0; configurations_per_slice=16; continuum_parameters=0; limit_operations=0
   [PASS] [BOUNDARY_EVIDENCE] G3 N3 hidden-wall carrier scan matches the exact bounded surface  (finite open two-slice pure-gauge temporal-gauge carrier with bounded observables)
-  N4_CLAUSE clause=finite_open_temporal_gauge_carrier; recomputed_residual=0.000000e+00; tolerance=0.0e+00
-  N4_CLAUSE clause=reflection_split_and_Boltzmann_sign; recomputed_residual=0.000000e+00; tolerance=1.0e-12
-  N4_CLAUSE clause=all_order_character_coefficients; recomputed_residual=0.000000e+00; tolerance=0.0e+00
-  N4_CLAUSE clause=uniform_absolute_convergence; recomputed_residual=0.000000e+00; tolerance=0.0e+00
-  N4_CLAUSE clause=positive_plane_kernel; recomputed_residual=0.000000e+00; tolerance=1.0e-10
-  N4_CLAUSE clause=finite_product_kernel; recomputed_residual=0.000000e+00; tolerance=1.0e-10
-  N4_CLAUSE clause=integrated_reflected_Gram; recomputed_residual=1.705303e-13; tolerance=1.0e-09
-  N4_CLAUSE clause=normalized_Haar_partition_0_lt_Z_lt_infinity; recomputed_residual=0.000000e+00; tolerance=0.0e+00
-  N4_CLAUSE clause=bounded_complex_observable_class; recomputed_residual=0.000000e+00; tolerance=0.0e+00
+  N4_CLAUSE clause=finite_open_temporal_gauge_carrier; evidence_kind=CONSTRUCTED_FINITE_CARRIER; recomputed_residual=0.000000e+00; tolerance=0.0e+00
+  N4_CLAUSE clause=reflection_split_and_Boltzmann_sign; evidence_kind=EXHAUSTIVE_FINITE_HAAR; recomputed_residual=0.000000e+00; tolerance=1.0e-12
+  N4_CLAUSE clause=character_coefficient_formula_and_sign_mechanism; evidence_kind=EXACT_SYMBOLIC_FORMULA_PLUS_FINITE_SU3_RECURRENCE; recomputed_residual=0.000000e+00; tolerance=0.0e+00
+  N4_CLAUSE clause=uniform_absolute_convergence; evidence_kind=EXACT_SCALAR_MAJORANT; recomputed_residual=0.000000e+00; tolerance=0.0e+00
+  N4_CLAUSE clause=positive_plane_kernel; evidence_kind=EXHAUSTIVE_Z4_RESTRICTION; recomputed_residual=0.000000e+00; tolerance=1.0e-10
+  N4_CLAUSE clause=finite_product_kernel; evidence_kind=EXHAUSTIVE_Z4_RESTRICTION; recomputed_residual=0.000000e+00; tolerance=1.0e-10
+  N4_CLAUSE clause=integrated_reflected_Gram; evidence_kind=NORMALIZED_HAAR_FEATURE_FACTORIZATION; recomputed_residual=5.551115e-16; tolerance=1.0e-09
+  N4_CLAUSE clause=normalized_Haar_partition_0_lt_Z_lt_infinity; evidence_kind=EXHAUSTIVE_FINITE_HAAR; recomputed_residual=0.000000e+00; tolerance=0.0e+00
+  N4_CLAUSE clause=bounded_complex_observable_diagnostic_block; evidence_kind=EXHAUSTIVE_FINITE_BASIS; recomputed_residual=0.000000e+00; tolerance=0.0e+00
   N4_OBJECT finite_link_product_majorant=3.32011692274; normalized_Haar_Z=1.19406455504; bounded_observable_sup_norm_max=1.0
-  [PASS] [BOUNDARY_EVIDENCE] G4 N4 every bounded-theorem clause has a closing recomputed proof object  (clauses=9)
+  [PASS] [BOUNDARY_EVIDENCE] G4 N4 every clause is mapped to its actual exact or finite evidence object  (clauses=9)
   N5_RESOLUTION per_element: straddling_link_count=2; kernel_min_eigenvalues=[0.370930436485, 0.370930436485]; each link factor is checked separately.
-  N5_RESOLUTION per_site: finite_spatial_link_factors=2; one_link_shape=(4, 4); product_shape=(16, 16); Kronecker_residual=0.000e+00; product_min_eig=+1.376e-01.
-  N5_RESOLUTION per_mode: tensor_orders=0..8; order8_irreps=45; nonnegative_integer_multiplicities=164; beta0_zero_nontrivial_modes=44; absent_irrep_(20,0)_count=1.
-  N5_RESOLUTION per_block: configuration_block=16; observable_block=9; factor_residual=1.705e-13; Gram_min_eig=+2.594e+01; positive_kappa_count=16.
-  N5_RESOLUTION lattice_wide: temporal_slice_count=2; finite_spatial_link_count=2; temporal_periodicity_edges=0; pure_gauge_sector_count=1; fermion_generators=0; arbitrary_time_claims=0; continuum_claims=0.
+  N5_RESOLUTION per_site: finite_spatial_link_factors=2; one_link_shapes=[(4, 4), (4, 4)]; product_shape=(16, 16); Kronecker_residual=0.000e+00; product_min_eig=+1.376e-01.
+  N5_RESOLUTION per_mode: tensor_orders=0..8; order8_irreps=45; nonnegative_integer_multiplicities=164; beta0_zero_nontrivial_modes=44; absent_irrep_(20,0)_count=1; fundamental_matrix_element_cut_residual=8.884e-16; antifundamental_matrix_element_cut_residual=8.884e-16.
+  N5_RESOLUTION per_block: configuration_block=16; observable_block=9; factor_residual=5.551e-16; Gram_min_eig=+8.486e-02; positive_kappa_count=16.
+  N5_RESOLUTION lattice_wide: temporal_slice_count=2; finite_spatial_link_count=2; temporal_periodicity_edges=0; gauge_field_records=4; non_gauge_field_records=0; additional_temporal_slices=0; continuum_parameters=0; limit_operations=0.
   [PASS] [BOUNDARY_EVIDENCE] G5 N5 all five resolution labels close on computed objects  (resolved_labels=5; required_labels=5)
-  N6_DISPOSITION honest_partial_closure=bounded finite two-slice pure-gauge theorem; new_axioms=0; new_primitives=0; supplied_physics_premises=0; broader arbitrary-time, fermion, transfer-matrix, Hamiltonian, continuum, and global-gauge-fixing physics remains open and is not reclassified.
-  [PASS] [BOUNDARY_EVIDENCE] G6 N6 bounded closure requires no new axiom, primitive, or supplied physics premise  (counts={'new_axioms': 0, 'new_primitives': 0, 'supplied_physics_premises': 0})
+  N6_DISPOSITION honest_partial_closure=bounded finite two-slice pure-gauge theorem; symbolic_inputs=['N', 'beta', 'order']; unexpected_empirical_or_physics_selectors=[]; axiom/primitive registry purity is intentionally delegated to repository-diff validation; broader arbitrary-time, fermion, transfer-matrix, Hamiltonian, continuum, and global-gauge-fixing physics remains open and is not reclassified.
+  [PASS] [BOUNDARY_EVIDENCE] G6 N6 exact derivation formulas contain no empirical or supplied-physics selector  (registry purity is a separate repository-diff gate, not self-certified here)
   N7_STEELMAN objection=pointwise positivity is insufficient; resolution=positive-entry matrix min_eig=-1.0, so the proof uses Gram plus Schur powers instead.
   N7_STEELMAN objection=finite samples cannot prove all SU(N); resolution=agreed, sample min_eig=+2.334e-01 is support only; the exact route is all-order tensor multiplicities with the exp(beta) majorant.
   N7_STEELMAN objection=negative coupling or dropped antilinearity can fail; resolution=hostile mins negative_coupling=-1.178e+00, wrong_reflection=-2.000e+00; theorem keeps beta>=0 and antilinear Theta.
   N7_STEELMAN objection=temporal gauge is not globally derived; resolution=not claimed, identity temporal links=2 are explicit data on the open two-slice carrier.
   [PASS] [BOUNDARY_EVIDENCE] G7 N7 strongest objections are resolved only on the exact bounded proof surface  (pointwise, finite-sample, sign, antilinearity, and temporal-gauge boundaries exercised)
-  N8_DISPOSITION current_cycle_cross_route_echo=residual_matched; symbolic_normalization_residual=0; direct_exponential_vs_Schur_series_residual=8.882e-16; direct_integral_vs_feature_factorization_residual=1.705e-13; source=audit-independent recomputation only.
+  N8_DISPOSITION current_cycle_cross_route_echo=residual_matched; symbolic_normalization_residual=0; direct_exponential_vs_Schur_series_residual=8.882e-16; direct_integral_vs_feature_factorization_residual=5.551e-16; source=audit-independent recomputation only.
   [PASS] [BOUNDARY_EVIDENCE] G8 N8 independently recomputed proof objects echo across three routes  (symbolic character normalization, Schur exponential, and integrated feature block)
 
 ----------------------------------------------------------------------------------------

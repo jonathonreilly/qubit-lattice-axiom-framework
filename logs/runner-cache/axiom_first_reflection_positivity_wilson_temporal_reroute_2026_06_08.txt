@@ -1,46 +1,46 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py
-runner_sha256: cb02f1819450053f2da7a661d9ce08460245bd1f02a583b1c463642a8a6dc229
-timeout_sec: 240
+runner_sha256: 3486082a5b23930a9b4f0a2905f480ec3eed4768e6e7341e72a38226bbdc9d22
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.65
+elapsed_sec: 2.01
 status: ok
 ----- stdout -----
 Axiom-first RP Wilson temporal-gauge reroute guard
-note: /private/tmp/reflection-rp-integration.luYwGf/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
-base runner: /private/tmp/reflection-rp-integration.luYwGf/scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
+note: /private/tmp/review-pr-5505-reflection-rp-20260718-0737/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+base runner: /private/tmp/review-pr-5505-reflection-rp-20260718-0737/scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
 
 ----------------------------------------------------------------------------------------
 C1-C6 free staggered two-step construction reused from retained runner
 ----------------------------------------------------------------------------------------
-  [PASS] C1 dispersion anchor (max_res=2.94e-16, max_imag=2.60e-16)
-  [PASS] C2 single-step remains non-positive (min_complex_imag=0.562, exceptional_ok=True)
-  [PASS] C3 many-body T_hat^2 positive Hermitian = B^dag B
-  [PASS] C4 two-step OS Gram Hermitian PSD
-  [PASS] C5 second-quantization functor identity
-  [PASS] C6 decaying spectral channel gives positive Fock kernel
+  [PASS] [NUMERICAL_SUPPORT] C1 dispersion anchor (max_res=2.94e-16, max_imag=2.60e-16)
+  [PASS] [BOUNDARY_EVIDENCE] C2 single-step remains non-positive (min_complex_imag=0.562, exceptional_ok=True)
+  [PASS] [NUMERICAL_SUPPORT] C3 many-body T_hat^2 positive Hermitian = B^dag B
+  [PASS] [NUMERICAL_SUPPORT] C4 two-step OS Gram Hermitian PSD
+  [PASS] [NUMERICAL_SUPPORT] C5 second-quantization functor identity
+  [PASS] [NUMERICAL_SUPPORT] C6 decaying spectral channel gives positive Fock kernel
 
 ----------------------------------------------------------------------------------------
 C7 source-side bounded Wilson temporal-gauge reroute guard
 ----------------------------------------------------------------------------------------
-  [PASS] required reroute phrases present
-  [PASS] stale Wilson sign-repair phrases absent
-  [PASS] parent note links the coupled-Gram supplier
-  [PASS] coupled-Gram supplier exists and pins tensor-product entangled coverage
-  [PASS] foundational reroute dependencies remain retained-grade (gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10:('positive_theorem', 'audited_clean', 'retained'); staggered_only_det_positivity_case_a_note_2026-05-17:('positive_theorem', 'audited_clean', 'retained'); reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10:('positive_theorem', 'audited_clean', 'retained'))
-  [PASS] in-packet reroute suppliers present, typed, and not audit-rejected (axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05:('bounded_theorem', 'unaudited', 'unaudited'); rp_p2_gauge_extension_and_realization_residual_note_2026-05-28:('bounded_theorem', 'audited_conditional', 'audited_conditional'); su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09:('positive_theorem', 'unaudited', 'unaudited'); rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11:('positive_theorem', 'unaudited', 'unaudited'))
-  [PASS] actual SU(3) plane-kernel Haar Gram is positive semidefinite (min eig=+7.348e+00 (n=64, beta=1.0))
-  [PASS] no-conjugation plane-kernel rejector is decisively non-PSD (min eig=-3.146e+01)
-  [PASS] actual composed two-slice pure-gauge SU(3) Gram is PSD within sampling error (min eig=+9.347452e-04, negative allowance=2.279e-02)
-  [PASS] pure-gauge composed-form sampling error is controlled (mc_noise=7.597e-03)
-  [PASS] no-conjugation pure-gauge composed control is non-PSD (min eig=-4.149715e-01)
+  [PASS] [HYGIENE] required reroute phrases present
+  [PASS] [HYGIENE] stale Wilson sign-repair phrases absent
+  [PASS] [HYGIENE] parent note links the coupled-Gram supplier
+  [PASS] [HYGIENE] coupled-Gram supplier exists and pins tensor-product entangled coverage
+  [PASS] [HYGIENE] foundational reroute dependencies remain retained-grade (gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10:('positive_theorem', 'audited_clean', 'retained'); staggered_only_det_positivity_case_a_note_2026-05-17:('positive_theorem', 'audited_clean', 'retained'); reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10:('positive_theorem', 'audited_clean', 'retained'))
+  [PASS] [HYGIENE] in-packet reroute suppliers present, typed, and not audit-rejected (axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05:('bounded_theorem', 'audited_conditional', 'audited_conditional'); rp_p2_gauge_extension_and_realization_residual_note_2026-05-28:('bounded_theorem', 'audited_conditional', 'audited_conditional'); su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09:('positive_theorem', 'unaudited', 'unaudited'); rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11:('positive_theorem', 'unaudited', 'unaudited'))
+  [PASS] [NUMERICAL_SUPPORT] actual SU(3) plane-kernel Haar Gram is positive semidefinite (min eig=+7.348e+00 (n=64, beta=1.0))
+  [PASS] [BOUNDARY_EVIDENCE] no-conjugation plane-kernel rejector is decisively non-PSD (min eig=-3.146e+01)
+  [PASS] [NUMERICAL_SUPPORT] actual composed two-slice pure-gauge SU(3) Gram is PSD within sampling error (min eig=+9.347452e-04, negative allowance=2.279e-02)
+  [PASS] [NUMERICAL_SUPPORT] pure-gauge composed-form sampling error is controlled (mc_noise=7.597e-03)
+  [PASS] [BOUNDARY_EVIDENCE] no-conjugation pure-gauge composed control is non-PSD (min eig=-4.149715e-01)
 
 ----------------------------------------------------------------------------------------
 C8 multi-slice half-space OS Gram in-packet supplier (2026-07-11)
 ----------------------------------------------------------------------------------------
-  [PASS] parent note links the multi-slice half-space supplier
-  [PASS] parent note states the multi-slice half-space extension
-  [PASS] multi-slice supplier note exists and pins half-space multi-slice coverage
+  [PASS] [HYGIENE] parent note links the multi-slice half-space supplier
+  [PASS] [HYGIENE] parent note states the multi-slice half-space extension
+  [PASS] [HYGIENE] multi-slice supplier note exists and pins half-space multi-slice coverage
 [PASS] G0_engine_anchor_exact: max entrywise mismatch from exact 4x4 anchor = 2.220e-16
 [PASS] G0_engine_unphased_discriminates: unphased odd diagonals = -0.500,-0.500; min-eig = -0.500
 [PASS] L4a_open_even_det_positive: open-even {-1,0,1,2}: min Re(det)=1.8444e-05>0, max |det-prod(m^2+lam^2)|_rel=1.36e-15, max pairing err=1.55e-15, max ||{eps,M}||_F=0.00e+00
@@ -54,10 +54,11 @@ C8 multi-slice half-space OS Gram in-packet supplier (2026-07-11)
 [PASS] L3d_unphased_discriminates: worst (largest) unphased lambda_min = -1.8544e+02 << 0
 [PASS] H1a_union_gram_psd: 19-dim union min-eig = 3.514747e-01; ||G-G^dagger||_F = 1.061e-14
 [PASS] H1b_collapse_matches_anchor: one-site/one-color H=1 Gram vs exact anchor: max mismatch = 2.220e-16
-  [PASS] live multi-slice half-space supplier gates all pass (n_checks=13, failures=[])
+  [PASS] [HYGIENE] live multi-slice half-space supplier gates all pass (n_checks=13, failures=[])
 
+EVIDENCE_COUNTS theorem_evidence=0 numerical_support=8 hygiene=10 boundary_evidence=3
 PASS=21 FAIL=0
-VERDICT: parent reroute guard passes; free two-step construction remains unchanged, and the Wilson temporal-gauge application is routed through retained-grade dependencies without promoting the parent row.
+RESULT: parent source-routing guard passes; free two-step construction remains unchanged, the named Wilson and coupled suppliers are present, and no parent-row status is inferred from this hygiene check.
 
 ----- stderr -----
 

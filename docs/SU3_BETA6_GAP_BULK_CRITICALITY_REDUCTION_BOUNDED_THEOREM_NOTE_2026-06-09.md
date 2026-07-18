@@ -23,7 +23,7 @@ runner-checked content is useful but narrow: if the named no-critical-point
 premise and standard fixed-lattice Wilson/gap setting are supplied, then a
 zero lattice-units gap at `beta=6` would require a divergent correlation
 length, so the supplied premise implies a positive fixed-lattice gap. This
-firewall adds no new axiom, no Tier-A admission, and no audit-status change.
+firewall adds no new axiom, no supplied physics premise, and no audit-status change.
 
 ## Summary
 
@@ -94,7 +94,7 @@ the one premise that would still have to be proven to make the fixed-lattice
   result.
 - Not a `Lambda_QCD`, observed-spectrum, or Planck-scale statement.
 - Not an import of a physical scale through the scale-reference primitive.
-- Not an axiom, primitive, or Tier-A admission.
+- Not an axiom, primitive, or supplied physics premise.
 - Not a claim that the lattice axiom supplies the Wilson action, gauge weight,
   transfer matrix, or coupling convention.
 - Not an all-coupling confinement proof.

@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.py
 runner_sha256: d113fddd6935a1a5b67ed317e0fe6f511c8a7134e68a478e58ecb41e08c7e137
-timeout_sec: 180
+timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.29
 status: ok

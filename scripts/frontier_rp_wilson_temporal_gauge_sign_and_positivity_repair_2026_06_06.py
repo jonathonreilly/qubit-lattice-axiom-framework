@@ -20,24 +20,24 @@ had been returned **audited_failed** with three blockers (verbatim):
        exp(beta cos theta), which is not a bounded-degree trigonometric
        polynomial."                                         [EXACTNESS OVERCLAIM]
 
-All three trace to ONE root: the wrong sign of the plane Boltzmann WEIGHT.
-This runner repairs them and, in doing so, UPGRADES the SU(N) statement from a
-numeric SU(2) Monte-Carlo sample to an EXACT positivity theorem.
+Blockers (1) and (2) share the wrong Boltzmann sign.  Blocker (3) is a
+separate exactness defect and is repaired by the source's tensor-power proof.
+The floating runner reconstructions remain support for that exact algebra.
 
 The repair
 ----------
-* SIGN.  Standard Wilson convention: action  S_W = -(beta/N) sum_p Re Tr U_p,
-  partition fn  Z = int exp(-S_W) = int exp(+(beta/N) sum_p Re Tr U_p).  The
-  Boltzmann WEIGHT therefore carries +beta Re Tr.  The straddling-plane weight
-  is  exp(+beta Re Tr[U_+ U_-^dag])  (FERROMAGNETIC).  Equivalently define the
-  plane action  S_0 := -beta Re Tr[U_+ U_-^dag]  so that exp(-S_0) is this
+* SIGN.  Standard Wilson convention: action  S_W = -(beta_W/N) sum_p Re Tr U_p,
+  partition fn  Z = int exp(-S_W) = int exp(+(beta_W/N) sum_p Re Tr U_p).
+  Write alpha := beta_W/N.  The straddling-plane weight is
+  exp(+alpha Re Tr[U_+ U_-^dag]) (FERROMAGNETIC).  Equivalently define the
+  plane action S_0 := -alpha Re Tr[U_+ U_-^dag] so that exp(-S_0) is this
   ferromagnetic weight -- note and runner then use the SAME sign.  (Blockers 1,2.)
 
-* POSITIVITY (general, exact).  For beta >= 0 the class function
-  exp(beta Re chi_F(U))  (chi_F = fundamental character) has NONNEGATIVE
+* POSITIVITY (general, exact source proof).  For alpha >= 0 the class function
+  exp(alpha Re chi_F(U))  (chi_F = fundamental character) has NONNEGATIVE
   coefficients in its expansion over irreducible characters:
-      exp(beta Re chi_F) = exp((beta/2) chi_F) * exp((beta/2) chi_Fbar)
-                         = [sum_k (beta/2)^k/k! chi_F^k]*[sum_m (beta/2)^m/m! chi_Fbar^m].
+      exp(alpha Re chi_F) = exp((alpha/2) chi_F) * exp((alpha/2) chi_Fbar)
+                          = [sum_k (alpha/2)^k/k! chi_F^k]*[sum_m (alpha/2)^m/m! chi_Fbar^m].
   chi_F^k = sum_r M^{(k)}_r chi_r with M^{(k)}_r in Z_{>=0} (tensor-power
   multiplicities); products of characters decompose with nonnegative fusion
   (Clebsch-Gordan/Littlewood-Richardson) coefficients N^t_{rs} >= 0.  Hence every
@@ -61,14 +61,21 @@ from __future__ import annotations
 
 import itertools
 import sys
+from collections import Counter
 from math import cosh, exp, factorial, sinh
 
 import numpy as np
 
 PASS, FAIL = 0, 0
+EVIDENCE_COUNTS: Counter[str] = Counter()
 
 
-def check(label: str, ok: bool, detail: str = "") -> bool:
+def check(
+    label: str,
+    ok: bool,
+    detail: str = "",
+    evidence_class: str = "NUMERICAL_SUPPORT",
+) -> bool:
     global PASS, FAIL
     if ok:
         PASS += 1
@@ -76,7 +83,11 @@ def check(label: str, ok: bool, detail: str = "") -> bool:
     else:
         FAIL += 1
         tag = "FAIL"
-    print(f"  [{tag}] {label}" + (f"  --  {detail}" if detail else ""))
+    EVIDENCE_COUNTS[evidence_class] += int(ok)
+    print(
+        f"  [{tag}] [{evidence_class}] {label}"
+        + (f"  --  {detail}" if detail else "")
+    )
     return bool(ok)
 
 
@@ -113,6 +124,8 @@ def main() -> int:
     # =====================================================================
     section("Part A: the SIGN root -- reproduce the audit's negative coeff, then fix it")
     # =====================================================================
+    # Legacy diagnostics call the direct plane coupling `beta`; in the
+    # standard SU(N) Wilson normalization it is alpha = beta_Wilson/N.
     b = 0.8
     # note-as-written: weight exp(-S_0) with S_0 = +beta Re U  =>  exp(-beta Re U)  (ANTIferro)
     # Z_2 nontrivial character chi_1(U) = U = +/-1 ;  c_1 = (1/2) sum_U chi_1(U) w(U)
@@ -125,17 +138,35 @@ def main() -> int:
     check("(A2) FERROMAGNETIC exp(+beta Re U): Z_2 coeffs (c_0,c_1) = (cosh b, sinh b), BOTH > 0  [FIXED]",
           c0_good > 0 and c1_good > 0 and abs(c1_good - sinh(b)) < 1e-12,
           detail=f"(c_0,c_1) = ({c0_good:.6f}, {c1_good:+.6f})")
+    # Recompute the sign identity at several real trace values.  This guards
+    # the Wilson beta/N normalization and fails if either sign is reversed.
+    N_wilson = 3
+    beta_wilson = 1.7
+    trace_values = np.array([-N_wilson, -0.75, 0.0, 1.25, N_wilson])
+    action_values = -(beta_wilson / N_wilson) * trace_values
+    boltzmann_from_action = np.exp(-action_values)
+    ferromagnetic_weight = np.exp(
+        (beta_wilson / N_wilson) * trace_values
+    )
+    sign_residual = float(
+        np.max(np.abs(boltzmann_from_action - ferromagnetic_weight))
+    )
     check("(A3) note<->runner drift resolved: the WEIGHT is exp(+beta Re Tr) i.e. S_0 := -beta Re Tr (Wilson)",
-          True, detail="Z = int exp(-S_W), S_W = -(beta/N) Re Tr U_p  =>  weight carries +beta Re Tr")
+          sign_residual < 1e-14
+          and boltzmann_from_action[-1] > boltzmann_from_action[0],
+          detail=(
+              f"max sign residual={sign_residual:.1e}; "
+              "Z = int exp(-S_W), S_W = -(beta/N) Re Tr U_p"
+          ), evidence_class="BOUNDARY_EVIDENCE")
 
     # =====================================================================
-    section("Part B: plane-kernel positivity -- EXACT, manifestly positive, group-general")
+    section("Part B: exact source algebra with finite numerical reconstructions")
     # =====================================================================
-    # (B1) U(1): I_n(beta) by the EXACT power series (no grid), positive term by term.
+    # (B1) U(1): finite floating evaluation of the exact positive-term series.
     pos = all(I_series(n, 1.3) > 0 for n in range(0, 9))
     match = max(abs(I_series(n, 1.3) - I_grid(n, 1.3)) for n in range(0, 9))
-    check("(B1) U(1): c_n = I_n(beta) by EXACT power series I_n=sum_k (b/2)^{2k+n}/(k!(n+k)!), every term > 0",
-          pos, detail="manifestly positive; replaces the finite-grid 'exact' overclaim")
+    check("(B1) U(1): floating partial sums support the exact term-positive I_n series",
+          pos, detail="exact positivity is the displayed all-order source formula")
     check("(B1') grid is a CROSS-CHECK only: power-series I_n == quadrature I_n to machine eps",
           match < 1e-9, detail=f"max|series-grid| = {match:.1e}")
 
@@ -151,10 +182,10 @@ def main() -> int:
         okzn = okzn and ok
         print(f"     Z_{N}: min c_q = {c.real.min():+.6f}, max|Im| = {np.abs(c.imag).max():.1e}, "
               f"Poisson match = {np.max(np.abs(c.real - poisson)):.1e}")
-    check("(B2) Z_N: exact finite-Haar Fourier coeffs all > 0, = sum_{m==q (N)} I_m(beta) (Poisson)", okzn)
+    check("(B2) Z_N: exhaustive finite-Haar floating coefficients are positive and match truncated Poisson sums", okzn)
 
-    # (B3) SU(2): EXACT character coeffs a_n of exp(beta chi_{1/2}) (chi_{1/2}=2cos phi, real)
-    #      via Weyl integration, all > 0, AND equal the tensor-power-multiplicity reconstruction.
+    # (B3) SU(2): numerical Weyl quadrature and an order-12 exact finite
+    # tensor-multiplicity recurrence support the all-order source proof.
     ph = np.linspace(1e-7, np.pi - 1e-7, 60000)
     dphi = ph[1] - ph[0]
     meas = (2 / np.pi) * np.sin(ph) ** 2          # SU(2) Weyl measure
@@ -164,7 +195,7 @@ def main() -> int:
     def chiN(n):                                   # character of the (n+1)-dim irrep
         return np.sin((n + 1) * ph) / np.sin(ph)
 
-    a_exact = [float(np.sum(wsu2 * chiN(n) * meas) * dphi) for n in range(0, 7)]
+    a_quadrature = [float(np.sum(wsu2 * chiN(n) * meas) * dphi) for n in range(0, 7)]
     # tensor-power multiplicities: chi_F^k = sum_n m_{k,n} chi_n, recursion chi_n*chi_1=chi_{n+1}+chi_{n-1}
     rows = [np.array([1.0])]
     cur = np.array([1.0])
@@ -180,12 +211,14 @@ def main() -> int:
     nonneg_int = all((r >= -1e-12).all() and np.allclose(r, np.round(r)) for r in rows)
     a_recon = [sum((b ** k / factorial(k)) * (rows[k][n] if n < len(rows[k]) else 0.0) for k in range(13))
                for n in range(0, 7)]
-    check("(B3) SU(2): exact character coeffs a_n of exp(beta chi_{1/2}) all > 0 (Weyl integration)",
-          all(a > 0 for a in a_exact), detail=f"a_0..a_6 = {[round(a,5) for a in a_exact]}")
-    check("(B3') SU(2): chi_F^k tensor-power multiplicities are NONNEGATIVE INTEGERS (ballot numbers)", nonneg_int)
-    check("(B3'') SU(2): a_n EXACTLY reconstructed from nonneg tensor multiplicities -> positivity is a THEOREM",
-          max(abs(a_exact[n] - a_recon[n]) for n in range(7)) < 1e-3,
-          detail="UPGRADE: was a numeric SU(2) MC sample; now exact")
+    check("(B3) SU(2): Weyl quadrature gives positive sampled coefficients",
+          all(a > 0 for a in a_quadrature),
+          detail=f"a_0..a_6 = {[round(a,5) for a in a_quadrature]}")
+    check("(B3') SU(2): float-encoded order-0..12 multiplicities reconstruct as nonnegative integers",
+          nonneg_int)
+    check("(B3'') SU(2): order-12 reconstruction matches Weyl quadrature within truncation tolerance",
+          max(abs(a_quadrature[n] - a_recon[n]) for n in range(7)) < 1e-3,
+          detail="finite reconstruction support; all-order positivity is the source proof")
 
     # (B4) SU(3): Haar-projected irrep coeffs of exp(+beta Re Tr U) all >= 0 (physically relevant group).
     rng = np.random.default_rng(0)
@@ -225,7 +258,9 @@ def main() -> int:
     # =====================================================================
     def zn_gram(N, beta, sign=+1.0, Ls=2):
         el = lambda n: np.exp(2j * np.pi * n / N)
-        Sp = lambda lk: beta * np.real(np.prod([el(lk[k]) for k in range(Ls)]))
+        # This carrier is 1+1-dimensional: a slice has spatial links but no
+        # purely spatial Wilson plaquette, hence B_+=B_-=0.
+        Sp = lambda lk: 0.0
         # sign=+1 => ferromagnetic weight exp(+beta Re...) (correct);  sign=-1 => note-as-written antiferro
         S0 = lambda c0, c1: sign * beta * sum(np.real(el(c0[k]) * np.conj(el(c1[k]))) for k in range(Ls))
         wt = lambda c0, c1: np.exp(Sp(c1) + Sp(c0) + S0(c0, c1))
@@ -268,7 +303,7 @@ def main() -> int:
     basis = [(0,) * Ls] + [q for q in itertools.product(range(-1, 2), repeat=Ls)
                            if 1 <= sum(abs(x) for x in q) <= 2]
     F = lambda qe, cf: np.prod([el(cf[k]) ** qe[k] for k in range(Ls)])
-    Sp = lambda lk: beta * np.real(np.prod([el(lk[k]) for k in range(Ls)]))
+    Sp = lambda lk: 0.0
     M = len(basis)
     expS = np.array([np.exp(Sp(c)) for c in cfgs])
     Fmat = np.array([[F(basis[i], c) for c in cfgs] for i in range(M)])
@@ -281,9 +316,9 @@ def main() -> int:
                             * np.exp(beta * sum(np.real(el(a[k]) * np.conj(el(c[k]))) for k in range(Ls)))
                             * np.conj(F(basis[i], a)) * F(basis[jj], c)
                             for a in cfgs for c in cfgs)
-    check("(D2) G = W diag(kappa) W^dag exactly (OS Gram = A^dag A), kappa >= 0",
+    check("(D2) finite-carrier G matches W diag(kappa) W^dag within tolerance",
           np.max(np.abs(Gd - Gfac)) < 1e-9, detail=f"||G - W diag(kappa) W^dag|| = {np.max(np.abs(Gd - Gfac)):.1e}")
-    check("(D3) hence integrated three-factor Gram is PSD (manifest)",
+    check("(D3) finite-carrier integrated Gram is PSD within tolerance",
           np.linalg.eigvalsh((Gd + Gd.conj().T) / 2.0).min() >= -1e-7)
 
     # =====================================================================
@@ -300,12 +335,12 @@ def main() -> int:
         okteeth = okteeth and broken
         print(f"     Z_{N}: antiferro plane-kernel min_eig = {eva.min():+.4f}, integrated Gram min_eig = {ev_gram.min():+.4f}")
     check("(E1) note-as-written exp(-beta Re) plane kernel AND integrated Gram are NON-PSD (sign is load-bearing)",
-          okteeth)
+          okteeth, evidence_class="BOUNDARY_EVIDENCE")
     # dropped-conjugation control (the original note's C2): linear-Theta bracket is non-PSD too
     Nc, bc = 4, 0.6
     elc = lambda n: np.exp(2j * np.pi * n / Nc)
     cfc = list(itertools.product(range(Nc), repeat=2))
-    Spc = lambda lk: bc * np.real(elc(lk[0]) * elc(lk[1]))
+    Spc = lambda lk: 0.0
     S0c = lambda a, c: bc * sum(np.real(elc(a[k]) * np.conj(elc(c[k]))) for k in range(2))
     wtc = lambda a, c: np.exp(Spc(a) + Spc(c) + S0c(a, c))
     Fc = lambda qe, cf: elc(cf[0]) ** qe[0] * elc(cf[1]) ** qe[1]
@@ -318,20 +353,32 @@ def main() -> int:
             Gn[i, jj] = sum(wtc(a, c) * Fc(basc[i], a) * Fc(basc[jj], c) for a in cfc for c in cfc) / Zc
     evn = np.linalg.eigvalsh((Gn + Gn.conj().T) / 2.0)
     check("(E2) control: dropping Theta's conjugation (linear Theta) is also NON-PSD (correct antilinear OS reflection needed)",
-          evn.min() < -1e-3, detail=f"min_eig (wrong reflection) = {evn.min():+.4f}")
+          evn.min() < -1e-3, detail=f"min_eig (wrong reflection) = {evn.min():+.4f}",
+          evidence_class="BOUNDARY_EVIDENCE")
 
     # =====================================================================
     section("Summary")
     # =====================================================================
     print("  REPAIRED:")
-    print("   A  sign root: weight is exp(+beta Re Tr) (S_0 := -beta Re Tr); note<->runner consistent")
-    print("   B  plane-kernel positivity EXACT & general (tensor-power/fusion multiplicities >= 0):")
-    print("      Z_2 (cosh,sinh)>0; Z_N exact Fourier = sum I_m>0; U(1) I_n by power series>0;")
-    print("      SU(2) exact char coeffs = nonneg tensor mult (UPGRADE from MC); SU(3) coeffs >= 0")
-    print("   C  ferromagnetic integrated Gram PSD across Z_N x beta")
-    print("   D  manifest G = W diag(kappa) W^dag, kappa >= 0")
+    print("   A  sign root: alpha=beta_Wilson/N and weight exp(+alpha Re Tr); note<->runner consistent")
+    print("   B  exact positivity is the source tensor-power/fusion proof;")
+    print("      runner Bessel/FFT/Weyl/Monte-Carlo/truncation values are finite support")
+    print("   C  exhaustive finite-carrier floating Gram support across Z_N x alpha")
+    print("   D  finite-carrier G = W diag(kappa) W^dag residual and spectrum")
     print("   E  TEETH: antiferro (note-as-written) sign breaks PSD; dropped-conjugation breaks PSD")
     print("  Literature (Osterwalder-Seiler 1978; Montvay-Munster 1994; Bessel/Peter-Weyl): comparator only.")
+    print(
+        "  EVIDENCE_COUNTS "
+        + " ".join(
+            f"{name.lower()}={EVIDENCE_COUNTS.get(name, 0)}"
+            for name in (
+                "EXACT_ALGEBRA",
+                "EXACT_FINITE_ALGEBRA",
+                "NUMERICAL_SUPPORT",
+                "BOUNDARY_EVIDENCE",
+            )
+        )
+    )
     print("\n" + "=" * 90)
     print(f"TOTAL: {PASS} PASS / {FAIL} FAIL")
     print("=" * 90)

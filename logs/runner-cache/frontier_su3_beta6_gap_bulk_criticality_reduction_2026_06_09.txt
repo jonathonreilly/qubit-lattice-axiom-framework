@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py
-runner_sha256: d9f3e0224701a59ba70c7b4a706c980e87a6b1b878c6ae23ab24d5254445f3d8
+runner_sha256: b43f4278e6a27fa07f4d76142ec94a475bfedc4b148d5c8a2546f45d426db1b2
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.20

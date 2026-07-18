@@ -662,6 +662,6 @@ Expected result (deterministic, pure Python stdlib, runtime well under
 one minute):
 
 ```text
-Breakdown: A=9 B=11 C=7 D=2
+Breakdown: A=10 B=11 C=6 D=2
 TOTAL: PASS=29 FAIL=0
 ```

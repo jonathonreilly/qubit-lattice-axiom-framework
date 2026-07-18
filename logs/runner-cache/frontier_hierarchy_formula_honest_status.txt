@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_formula_honest_status.py
-runner_sha256: b40a251f4289adc568dee7a6e1c9e236839e135929260523e0e4f3573c16d13b
+runner_sha256: 9907401d908e18ec696b66b6cd4e6e8340a74c292c156ff370c208838b46ab48
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -15,14 +15,14 @@ status: ok
  Parent note: docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
 ==============================================================================
 
---- [C] T1 first-principles compute (species count -> determinant degree -> dimensionless factor) ---
+--- [C/A] T1 compute (species count -> determinant degree; exact dimensionless factor) ---
   [PASS][C] naive symbol zero set per direction is {0, pi} (momenta n = 0, L/2) on even-L grids L = 6, 8 — exact integer count  (zero sets: {6: [0, 3], 8: [0, 4]})
   [PASS][C] species count = 2^d: (d=2,3,4,5) -> (4, 8, 16, 32); d = 4 corner enumeration gives the declared N = 16  (counts: {2: 4, 3: 8, 4: 16, 5: 32})
   [PASS][C] Hamming staircase over the d = 4 corners is (1,4,6,4,1), sum 16
   [PASS][C] eta-phase staggered operator on the all-APBC 2^4 block: D real antisymmetric and D^2 = -4 I exactly  (exact Fraction matrix arithmetic)
   [PASS][C] char poly of D/u_0 is (lambda^2 + 4)^8 — 16 taste modes +/- 2i u_0, multiplicity 8 each  (Faddeev-LeVerrier, exact)
   [PASS][C] det(u_0 D + m) = (m^2 + 4 u_0^2)^8 per color; at m = 0 |det| = 4^8 u_0^16; exact u_0-degree from a two-point ratio equals the species count 16  (exact at rational (u_0, m) test points)
-  [PASS][C] dimensionless factor: eta(4)/zeta(4) = 1 - 2^(1-4) = 7/8 exact (Fraction algebra); bracketed series interval contains 7/8  (ratio in [0.87499987, 0.87500013], width 2.6e-07)
+  [PASS][A] dimensionless factor: eta(4)/zeta(4) = 1 - 2^(1-4) = 7/8 exact (Fraction algebra); bracketed series interval contains 7/8  (ratio in [0.87499987, 0.87500013], width 2.6e-07)
 
 --- [A] T1.iv/T1.v + D1/C1 readout algebra over declared inputs and open formula-closure gates ---
   [PASS][A] K = (7/8)^(1/4) alpha_LM^16 = 2.017224e-17 (zero continuous knobs beyond B1); log decomposition 16 log10(1/alpha_LM) - (1/4) log10(7/8) matches  (K = 2.017223509625e-17, orders = 16.695246)
@@ -53,7 +53,7 @@ status: ok
   [PASS][D] comparator framing: deviation < B1 window (0.0337 %) AND deviation > B2 window (0.0041 %) — sub-resolution in the plaquette license, attributable in the Planck anchor  (|dev| = 2.551e-04, B1 = 3.370e-04, B2 = 4.095e-05)
 
 ==============================================================================
- Breakdown: A=9 B=11 C=7 D=2
+ Breakdown: A=10 B=11 C=6 D=2
  TOTAL: PASS=29 FAIL=0
 ==============================================================================
 

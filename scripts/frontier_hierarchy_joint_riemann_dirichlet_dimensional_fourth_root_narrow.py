@@ -27,6 +27,7 @@ labelled numerical support and never substitute for those certificates.
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 from collections import Counter
@@ -50,6 +51,8 @@ NOTE_PATH = (
     / "docs"
     / "HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md"
 )
+PREMISE_HISTORY_PATH = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
+SCALE_REFERENCE_PATH = ROOT / "docs" / "SCALE_REFERENCE_PRIMITIVE_NOTE.md"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -143,6 +146,8 @@ class ScaleMapCase:
         residual = self.dimension_residual()
         if self.kappa_mass_dimension != 0:
             issues.add("dimensionful_kappa")
+        if self.kappa < 0:
+            issues.add("negative_magnitude_coefficient")
         if residual != 0:
             issues.add("dimension_covariance_failure")
         if self.d * self.p != 1:
@@ -150,19 +155,31 @@ class ScaleMapCase:
 
         if self.f is not None and self.f < 0 and not self.magnitude_convention:
             issues.add("nonreal_even_root" if self.d % 2 == 0 else "signed_not_magnitude")
-        if self.kappa == 1 and not self.kappa_supplied:
-            issues.add("unsupplied_unit_coefficient")
+        if not self.kappa_supplied:
+            issues.add("unsupplied_coefficient")
         if self.infer_physical_value and (
             self.f is None or not self.carrier_supplied
         ):
             issues.add("unsupported_physical_inference")
         return issues
 
+    def supplied_conditions(self) -> set[str]:
+        conditions: set[str] = set()
+        if self.kappa_supplied:
+            conditions.add("coefficient")
+        if self.magnitude_convention:
+            conditions.add("magnitude_convention")
+        if self.carrier_supplied:
+            conditions.add("carrier")
+        if self.f is not None:
+            conditions.add("value")
+        return conditions
+
     def magnitude_value(self) -> sp.Expr | None:
         if self.d <= 0 or self.f is None:
             return None
         return sp.Rational(self.kappa.numerator, self.kappa.denominator) * sp.Pow(
-            abs(self.f), sp.Rational(1, self.d)
+            abs(self.f), sp.Rational(self.p.numerator, self.p.denominator)
         )
 
 
@@ -170,16 +187,33 @@ def normal_mode() -> None:
     mode = "normal"
     section("NORMAL: exact theorem and conditional-map reconstruction")
 
-    domain_rows = [(s, closed_ratio(s)) for s in range(2, 13)]
+    s = sp.symbols("s", real=True)
+    closed_base = 1 - sp.Pow(2, 1 - s)
+    positive_domain = sp.solve_univariate_inequality(
+        closed_base > 0, s, relational=False
+    )
+    below_one_domain = sp.solve_univariate_inequality(
+        closed_base < 1, s, relational=False
+    )
     check(
         mode,
         "theorem",
-        "integer theorem domain has a positive eta/zeta base strictly below one",
-        all(0 < base < 1 for _s, base in domain_rows),
-        detail=f"endpoints: s=2 -> {domain_rows[0][1]}, s=12 -> {domain_rows[-1][1]}",
+        "exact real domain of the eta/zeta base is 0 < 1-2^(1-s) < 1 for s>1",
+        positive_domain == sp.Interval.open(1, sp.oo)
+        and below_one_domain == sp.S.Reals
+        and closed_base.subs(s, 2) == sp.Rational(1, 2)
+        and closed_base.subs(s, 4) == sp.Rational(7, 8)
+        and sp.simplify(
+            sp.Pow(closed_base.subs(s, 2), sp.Rational(1, 2))
+            - 1 / sp.sqrt(2)
+        )
+        == 0,
+        detail=(
+            f"positive domain={positive_domain}; below-one domain={below_one_domain}; "
+            "g(2)=1/sqrt(2); s=4 base -> 7/8"
+        ),
     )
 
-    s = sp.symbols("s", real=True)
     z = sp.symbols("Z", nonzero=True)
     even = sp.Pow(2, -s) * z
     odd = (1 - sp.Pow(2, -s)) * z
@@ -286,6 +320,41 @@ def normal_mode() -> None:
         detail=f"cases={len(zero_cases)}, values={set(zero_values)}",
     )
 
+    thermal_values = [
+        sp.Pow(sp.Rational(c0) * sp.Pow(2, 4), sp.Rational(1, 4))
+        for c0 in (1, 16)
+    ]
+    check(
+        mode,
+        "boundary",
+        "a dimensionless thermal coefficient changes the magnitude without changing covariance",
+        [sp.simplify(value) for value in thermal_values] == [2, 4],
+        detail=f"for T=2 and c_4=(1,16), fourth roots={thermal_values}",
+    )
+
+    fully_supplied = ScaleMapCase(
+        d=4,
+        p=Fraction(1, 4),
+        kappa=Fraction(3, 2),
+        f=Fraction(-16),
+        magnitude_convention=True,
+        kappa_supplied=True,
+        carrier_supplied=True,
+    )
+    check(
+        mode,
+        "conditional",
+        "fully supplied coefficient, magnitude rule, carrier, and value close the map conditionally",
+        not fully_supplied.issues()
+        and fully_supplied.supplied_conditions()
+        == {"coefficient", "magnitude_convention", "carrier", "value"}
+        and sp.simplify(fully_supplied.magnitude_value()) == 3,
+        detail=(
+            f"conditions={sorted(fully_supplied.supplied_conditions())}; "
+            f"M={fully_supplied.magnitude_value()}"
+        ),
+    )
+
     with localcontext() as ctx:
         ctx.prec = 70
         values = [(s0, g_decimal(s0)) for s0 in range(2, 51)]
@@ -305,26 +374,51 @@ def independent_mode() -> None:
     mode = "independent"
     section("INDEPENDENT: derivative, rational brackets, and unit covariance")
 
-    s = sp.symbols("s", positive=True)
+    s = sp.symbols("s", real=True)
     x = sp.Pow(2, 1 - s)
     log_g = sp.log(1 - x) / s
     derivative_certificate = (
         s * sp.log(2) * x / (1 - x) - sp.log(1 - x)
     ) / s**2
     derivative_residual = sp.simplify(sp.diff(log_g, s) - derivative_certificate)
+    x_symbol = sp.symbols("x", real=True)
+    rational_term_domain = sp.solve_univariate_inequality(
+        x_symbol / (1 - x_symbol) > 0, x_symbol, relational=False
+    )
+    logarithm_term_domain = sp.solve_univariate_inequality(
+        -sp.log(1 - x_symbol) > 0, x_symbol, relational=False
+    )
+    x_below_one_domain = sp.solve_univariate_inequality(
+        x < 1, s, relational=False
+    )
+    x_positive_domain = sp.solve_univariate_inequality(
+        x > 0, s, relational=False
+    )
+    check(
+        mode,
+        "theorem",
+        "independent derivative is strictly positive on the exact real domain s>1",
+        derivative_residual == 0
+        and rational_term_domain == sp.Interval.open(0, 1)
+        and logarithm_term_domain == sp.Interval.open(0, 1)
+        and x_below_one_domain == sp.Interval.open(1, sp.oo)
+        and x_positive_domain == sp.S.Reals,
+        detail=(
+            f"formula residual={derivative_residual}; x/(1-x)>0 and -log(1-x)>0 "
+            f"on {rational_term_domain}; 0<x<1 exactly when s>1"
+        ),
+    )
+
     derivative_samples = [
         sp.N(derivative_certificate.subs(s, q), 50)
         for q in (sp.Rational(1001, 1000), 2, 3, 4, 10, 100)
     ]
     check(
         mode,
-        "theorem",
-        "independent real-derivative formula has zero residual and positive terms for s>1",
-        derivative_residual == 0 and all(value > 0 for value in derivative_samples),
-        detail=(
-            f"formula residual={derivative_residual}; sampled minimum="
-            f"{min(derivative_samples)}; numerator terms are positive for 0<x<1"
-        ),
+        "numerical",
+        "derivative samples support but do not carry the real-domain proof",
+        all(value > 0 for value in derivative_samples),
+        detail=f"sampled minimum={min(derivative_samples)}",
     )
 
     brackets = {s0: eta_zeta_ratio_bracket(s0, 200) for s0 in range(2, 9)}
@@ -338,7 +432,8 @@ def independent_mode() -> None:
         detail=f"s=2..8, max width={max(widths.values()):.3e}",
     )
 
-    d, p = sp.symbols("d p", positive=True)
+    d = sp.symbols("d", positive=True)
+    p = sp.symbols("p", real=True)
     lam = sp.symbols("lambda", positive=True)
     covariance_residual = sp.simplify(sp.Pow(lam, d * p) / lam - 1)
     solved_residual = sp.simplify(covariance_residual.subs(p, 1 / d))
@@ -348,6 +443,18 @@ def independent_mode() -> None:
         "unit-rescaling covariance lambda^(d*p)=lambda vanishes exactly at p=1/d",
         solved_residual == 0 and sp.solve(sp.Eq(d * p, 1), p) == [1 / d],
         detail=f"covariance residual={covariance_residual}; solved={solved_residual}",
+    )
+
+    q = sp.symbols("q", real=True)
+    dimensionful_solutions = sp.solve(sp.Eq(q + d * p, 1), p)
+    check(
+        mode,
+        "boundary",
+        "a coefficient of mass dimension q changes the exponent outside the stated map class",
+        dimensionful_solutions == [(1 - q) / d]
+        and sp.simplify(dimensionful_solutions[0].subs(q, 0) - 1 / d) == 0
+        and sp.simplify(dimensionful_solutions[0].subs(q, sp.Rational(1, 2)) - 1 / (2 * d)) == 0,
+        detail=f"q+d*p=1 gives p={dimensionful_solutions}",
     )
 
     exact_rescalings = []
@@ -466,8 +573,104 @@ def hostile_mode() -> None:
         mode,
         "boundary",
         "unit coefficient is rejected when kappa=1 was not supplied",
-        "unsupplied_unit_coefficient" in unit_coefficient.issues(),
+        "unsupplied_coefficient" in unit_coefficient.issues(),
         detail=f"issues={sorted(unit_coefficient.issues())}",
+    )
+
+    alternate_unsupplied = ScaleMapCase(
+        d=4,
+        p=Fraction(1, 4),
+        kappa=Fraction(5, 2),
+        kappa_supplied=False,
+    )
+    check(
+        mode,
+        "boundary",
+        "an alternate coefficient is also rejected when it was not supplied",
+        "unsupplied_coefficient" in alternate_unsupplied.issues(),
+        detail=f"issues={sorted(alternate_unsupplied.issues())}",
+    )
+
+    negative_coefficient = ScaleMapCase(
+        d=4,
+        p=Fraction(1, 4),
+        kappa=Fraction(-1),
+    )
+    check(
+        mode,
+        "boundary",
+        "a negative coefficient is rejected for a nonnegative magnitude map",
+        "negative_magnitude_coefficient" in negative_coefficient.issues()
+        and negative_coefficient.magnitude_value() < 0,
+        detail=f"issues={sorted(negative_coefficient.issues())}",
+    )
+
+    challenged_power = ScaleMapCase(
+        d=4,
+        p=Fraction(1, 3),
+        f=Fraction(81),
+    )
+    check(
+        mode,
+        "boundary",
+        "the hostile evaluator preserves a challenged exponent instead of hard-coding 1/d",
+        sp.simplify(challenged_power.magnitude_value() - sp.real_root(81, 3)) == 0
+        and challenged_power.magnitude_value() != 3,
+        detail=f"M={challenged_power.magnitude_value()}",
+    )
+
+    condition_witnesses = {
+        "coefficient": ScaleMapCase(
+            d=4,
+            p=Fraction(1, 4),
+            kappa=Fraction(3, 2),
+            f=None,
+            magnitude_convention=False,
+            kappa_supplied=True,
+            carrier_supplied=False,
+        ),
+        "magnitude_convention": ScaleMapCase(
+            d=4,
+            p=Fraction(1, 4),
+            f=None,
+            magnitude_convention=True,
+            kappa_supplied=False,
+            carrier_supplied=False,
+        ),
+        "carrier": ScaleMapCase(
+            d=4,
+            p=Fraction(1, 4),
+            f=None,
+            magnitude_convention=False,
+            kappa_supplied=False,
+            carrier_supplied=True,
+        ),
+        "value": ScaleMapCase(
+            d=4,
+            p=Fraction(1, 4),
+            f=Fraction(16),
+            magnitude_convention=False,
+            kappa_supplied=False,
+            carrier_supplied=False,
+        ),
+    }
+    check(
+        mode,
+        "boundary",
+        "singleton witnesses refute every directed implication among the four supplied conditions",
+        all(
+            case.supplied_conditions() == {name}
+            for name, case in condition_witnesses.items()
+        ),
+        detail=(
+            "witnesses="
+            + str(
+                {
+                    name: sorted(case.supplied_conditions())
+                    for name, case in condition_witnesses.items()
+                }
+            )
+        ),
     )
 
     physical_inference = ScaleMapCase(
@@ -516,6 +719,72 @@ def hygiene_mode() -> None:
         "source note has one explicit positive_theorem author hint",
         claim_types == ["positive_theorem"],
         detail=f"parsed claim types={claim_types}",
+        klass="B",
+    )
+
+    premise_history = (
+        json.loads(PREMISE_HISTORY_PATH.read_text(encoding="utf-8"))
+        if PREMISE_HISTORY_PATH.exists()
+        else {}
+    )
+    conventions = premise_history.get("conventions", {})
+    scale_text = (
+        SCALE_REFERENCE_PATH.read_text(encoding="utf-8")
+        if SCALE_REFERENCE_PATH.exists()
+        else ""
+    )
+    check(
+        mode,
+        "hygiene",
+        "cross-cycle echoes are provenance-only conventions or a units-only primitive",
+        premise_history.get("genuine_admitted_input_count") == 0
+        and "Non-authoritative" in premise_history.get("description", "")
+        and conventions.get("hypercharge_identification_note", {}).get("class")
+        == "vacuous normalization convention"
+        and "vacuous rescaling convention"
+        in conventions.get("g_bare_rigidity_theorem_note", {}).get("class", "")
+        and re.search(r"zero\s+dimensionless\s+content", scale_text) is not None,
+        detail="Y0/g0 are provenance-only; scale reference is units-only",
+        klass="B",
+    )
+
+    n2_match = re.search(
+        r"### Condition independence \(No-Go Discipline N2\)(.*?)"
+        r"### Hidden-condition scan \(No-Go Discipline N3\)",
+        note_text,
+        flags=re.DOTALL,
+    )
+    condition_names = {"coefficient", "sign/magnitude convention", "carrier", "value"}
+    n2_pairs = set(
+        re.findall(
+            r"^\| (coefficient|sign/magnitude convention|carrier|value) "
+            r"\| (coefficient|sign/magnitude convention|carrier|value) \|",
+            n2_match.group(1) if n2_match else "",
+            flags=re.MULTILINE,
+        )
+    )
+    expected_pairs = {
+        (source, target)
+        for source in condition_names
+        for target in condition_names
+        if source != target
+    }
+    no_go_headings = all(
+        f"No-Go Discipline N{index}" in note_text for index in range(1, 9)
+    )
+    check(
+        mode,
+        "hygiene",
+        "N1-N8 packet has current-cycle markers, all directed N2 pairs, and concrete N8 paths",
+        no_go_headings
+        and note_text.count("`ATTEMPTED`") == 6
+        and n2_pairs == expected_pairs
+        and "`docs/audit/data/premise_decision_history.json`" in note_text
+        and "`docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md`" in note_text,
+        detail=(
+            f"headings={no_go_headings}; N1 attempted=6; "
+            f"N2 directed pairs={len(n2_pairs)}; N8 paths=2"
+        ),
         klass="B",
     )
 

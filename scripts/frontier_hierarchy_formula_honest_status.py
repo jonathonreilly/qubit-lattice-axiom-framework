@@ -70,10 +70,10 @@ Check classes (each PASS line is tagged):
 
   [C] first-principles compute from local algebra (symbol zero
       set, eta-phase staggered operator on the 2^4 block, exact char
-      poly / determinants, bracketed eta/zeta series).
-  [A] exact arithmetic / algebraic identities over the declared
-      boundary inputs (K, identity (S), readout, elasticities,
-      falsification legs, anti-tuning certificate).
+      poly / determinants).
+  [A] exact arithmetic / algebraic identities (the eta/zeta factor and,
+      over the declared boundary inputs, K, identity (S), readout,
+      elasticities, falsification legs, anti-tuning certificate).
   [B] cross-note input verification (canonical plaquette helper,
       license/authority text on disk, parent-note hygiene, forbidden
       overclaim-token scan, runner self-scan).
@@ -134,7 +134,7 @@ ALPHA_S_V = ALPHA_BARE / U_0 ** 2    # canonical-surface alpha_s(v)
 M_PL = 1.2209e19                     # B2: declared Planck-lane anchor (GeV)
 M_PL_HALF_STEP_REL = 0.00005 / 1.2209  # B2 quoted-precision half-step (rel)
 N_EXPONENT = 16                      # B3b: declared regulator/species surface
-APBC = (7.0 / 8.0) ** 0.25           # dimensionless factor, recomputed in [C]
+FOURTH_ROOT_FACTOR = (7.0 / 8.0) ** 0.25  # number-theoretic factor, recomputed in [A]
 
 # Published constants of the note (reproducibility targets, class A).
 V_CAND_PUBLISHED = 246.282818290129  # GeV (corollary C1)
@@ -237,8 +237,8 @@ def v_cand_of(p, m_pl, n_exp):
 # Section C — first-principles compute (load-bearing chain of T1).
 # ---------------------------------------------------------------------------
 def section_c():
-    print("\n--- [C] T1 first-principles compute (species count -> "
-          "determinant degree -> dimensionless factor) ---")
+    print("\n--- [C/A] T1 compute (species count -> determinant degree; "
+          "exact dimensionless factor) ---")
 
     # C1: per-direction symbol zero set {0, pi} on even-L grids.
     zero_sets = {}
@@ -305,7 +305,7 @@ def section_c():
           det_id_ok and mag_ok and degree_ok,
           "exact at rational (u_0, m) test points")
 
-    # C7: dimensionless factor (7/8)^(1/4): exact closed form and brackets.
+    # S5 [A]: dimensionless factor (7/8)^(1/4), exact form and brackets.
     closed = Fraction(1) - Fraction(2) ** (1 - 4)
     big_n = 50
     zeta_part = sum(Fraction(1, n ** 4) for n in range(1, big_n + 1))
@@ -318,7 +318,7 @@ def section_c():
     ratio_lo = eta_lo / zeta_hi
     ratio_hi = eta_hi / zeta_lo
     width = float(ratio_hi - ratio_lo)
-    check("C", "dimensionless factor: eta(4)/zeta(4) = 1 - 2^(1-4) "
+    check("A", "dimensionless factor: eta(4)/zeta(4) = 1 - 2^(1-4) "
                "= 7/8 exact "
                "(Fraction algebra); bracketed series interval contains "
                "7/8", closed == Fraction(7, 8)
@@ -335,7 +335,7 @@ def section_a():
           "inputs and open formula-closure gates ---")
 
     # A1: suppression constant K and its log decomposition.
-    k_const = APBC * ALPHA_LM ** 16
+    k_const = FOURTH_ROOT_FACTOR * ALPHA_LM ** 16
     orders = math.log10(1.0 / k_const)
     orders_decomp = (16 * math.log10(1.0 / ALPHA_LM)
                      - 0.25 * math.log10(7.0 / 8.0))
@@ -411,12 +411,12 @@ def section_a():
           f"x {u_ratio:.4e} / x {r_bare:.5f} / x {r_sv:.5f}")
 
     # A8: falsification leg F3 — dimensionless-factor displacement.
-    r_sel = 1.0 / APBC
+    r_factor = 1.0 / FOURTH_ROOT_FACTOR
     check("A", "F3 factor displacement: removing (7/8)^(1/4) -> "
                "x 1.033946 (+3.39 %), two orders above the B1 window",
-          abs(r_sel - 1.0339463) < 1e-6
-          and (r_sel - 1.0) > 100.0 * 4.0 * (P_HALF_STEP / P_BOUNDARY),
-          f"x {r_sel:.7f}")
+          abs(r_factor - 1.0339463) < 1e-6
+          and (r_factor - 1.0) > 100.0 * 4.0 * (P_HALF_STEP / P_BOUNDARY),
+          f"x {r_factor:.7f}")
 
     # A9: falsification leg F4 — anti-tuning certificate. The PDG value
     # enters ONLY as the tuning target whose unreachability on the B1

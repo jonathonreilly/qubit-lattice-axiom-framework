@@ -63,7 +63,7 @@ audit lane.
 > M(f) = kappa |f|^p,
 > ```
 >
-> where `kappa > 0` is a supplied dimensionless coefficient. Covariance
+> where `p` is real and `kappa > 0` is a supplied dimensionless coefficient. Covariance
 > under a positive change of mass unit,
 >
 > ```text
@@ -77,8 +77,10 @@ audit lane.
 > M(f) = kappa |f|^(1/d).
 > ```
 >
-> After the exponent has been fixed by the nontrivial map, `kappa = 0`
-> may be included as its degenerate nonnegative extension. If strict
+> After the exponent has been fixed by the nontrivial positive-coefficient
+> family, the zero function may be represented by setting `kappa = 0` in
+> that family. The identical zero function is covariant for every exponent,
+> however, so its `p = 1/d` label carries no uniqueness information. If strict
 > positivity for `f != 0` is assumed, then `kappa > 0`. For finite
 > `kappa`, the continuous extension at `f = 0` is `M(0) = 0`.
 >
@@ -205,9 +207,20 @@ extension at `f = 0` is zero.
 This derivation leaves every dimensionless `kappa > 0` allowed. The zero
 map is an important boundary: if `kappa = 0` is assumed from the start,
 covariance holds for every exponent and cannot prove exponent uniqueness.
-That is why the exponent theorem is stated for a nontrivial map, with
-`kappa = 0` added only afterward as the degenerate member of the derived
-family.
+That is why the exponent theorem is stated for a nontrivial map. Writing the
+zero function afterward as the `kappa = 0` member of the derived family is
+only a representation convention; the zero function itself does not retain
+or identify an exponent.
+
+The dimensionless-coefficient hypothesis is also load-bearing. If `kappa`
+instead has mass dimension `q`, covariance gives
+
+```text
+q + d p = 1,       so       p = (1-q)/d.
+```
+
+Thus a dimensionful coefficient can compensate an exponent different from
+`1/d`, but it lies outside the theorem's stated map class.
 
 The absolute value is a supplied magnitude convention, not a consequence
 of dimensions. If `f < 0` and `d` is even, the naive expression
@@ -263,22 +276,44 @@ a universal no-go against dynamics or a future bridge theorem.
 
 ### Alternative routes (No-Go Discipline N1)
 
-| attempted route | computed object | result at the stated premise surface |
-| --- | --- | --- |
-| change the mass unit | `lambda^(d p - 1)` | fixes `p = 1/d`; every dimensionless `kappa` remains invariant |
-| require `M >= 0` | `kappa |f|^(1/d)` for `kappa >= 0` | fixes neither a positive value of `kappa` nor a sign rule for `f` |
-| use the naive even root | `(-|f|)^(1/d)` for even `d` | is not generally real positive; a magnitude convention is extra input |
-| use a thermal coefficient | `f = c_d T^d` | a supplied or derived `c_d` could fix normalization/sign, but dimensions alone do not compute it |
-| use the approved scale-reference primitive | a dimensionful ruler with zero dimensionless content | converts units but supplies no `kappa`, carrier, or physical value |
-| set `f = 0` | `M(0) = 0` for finite `kappa` | all finite coefficients agree at the boundary, so it cannot select one |
+| route | honesty marker | computed object | result at the stated premise surface |
+| --- | --- | --- | --- |
+| change the mass unit | `ATTEMPTED` | `lambda^(d p - 1)` | fixes `p = 1/d`; every dimensionless `kappa` remains invariant |
+| require `M >= 0` | `ATTEMPTED` | `kappa |f|^(1/d)` for `kappa >= 0` | fixes neither a positive value of `kappa` nor a sign rule for `f` |
+| use the naive even root | `ATTEMPTED` | `(-|f|)^(1/d)` for even `d` | is not generally real positive; a magnitude convention is extra input |
+| use a thermal coefficient | `ATTEMPTED` | `f = c_d T^d` | a supplied or derived `c_d` could fix normalization/sign, but dimensions alone do not compute it |
+| use the approved scale-reference primitive | `ATTEMPTED` | a dimensionful ruler with zero dimensionless content | converts units but supplies no `kappa`, carrier, or physical value |
+| set `f = 0` | `ATTEMPTED` | `M(0) = 0` for finite `kappa` | all finite coefficients agree at the boundary, so it cannot select one; the zero function is covariant for every `p` |
+
+Every row was reconstructed in the current cycle. No row is credited merely
+because a prior note ruled it out.
 
 ### Condition independence (No-Go Discipline N2)
 
-The three nonselected items are distinct: supplying `kappa` does not choose a
-sign/magnitude convention or a carrier/value for `f`; supplying the magnitude
-convention does not choose `kappa` or the carrier/value; supplying a physical
-`f` does not by itself choose the other two. No inflated wall count is used:
-they are simply independent inputs that stronger physics may supply.
+Before collapsing conditions, the current-cycle singleton witnesses test all
+directed implications among four supplied items: coefficient `kappa`,
+sign/magnitude convention, physical carrier of `f`, and numerical value of
+`f`. Each row below has a consistent partial specification in which the source
+condition is present and the target condition is absent.
+
+| supplied source | does not imply | counterexample at the declared premise surface |
+| --- | --- | --- |
+| coefficient | sign/magnitude convention | choose `kappa = 3/2` without choosing how signed `f` becomes a magnitude |
+| sign/magnitude convention | coefficient | choose `|f|` while leaving every positive dimensionless `kappa` open |
+| coefficient | carrier | choose `kappa = 3/2` without identifying what physical quantity realizes `f` |
+| carrier | coefficient | identify a carrier while leaving its normalization map open |
+| coefficient | value | choose `kappa = 3/2` with no numerical `f` |
+| value | coefficient | supply a number for `f` while leaving `kappa` open |
+| sign/magnitude convention | carrier | choose `|f|` without a physical identification of `f` |
+| carrier | sign/magnitude convention | identify a signed carrier without choosing `f`, `|f|`, or another magnitude rule |
+| sign/magnitude convention | value | choose `|f|` without supplying a numerical `f` |
+| value | sign/magnitude convention | supply a signed number without declaring how it maps to a nonnegative magnitude |
+| carrier | value | identify a quantity type without supplying its state-dependent numerical value |
+| value | carrier | supply a bare number without establishing its physical interpretation |
+
+No directed implication survives, so the collapsed condition set has four
+independent members at this premise surface. The runner constructs all four
+singleton witnesses. Stronger physics may supply any or all of them.
 
 ### Hidden-condition scan (No-Go Discipline N3)
 
@@ -327,12 +362,20 @@ inputs, not consequences of mass dimension alone.
 
 ### Cross-cycle echo (No-Go Discipline N8)
 
-The repository has repeatedly retired normalization “walls” by identifying a
-vacuous rescaling convention, and its scale-reference primitive explicitly
-separates a dimensionful ruler from dimensionless content. The same mechanism
-is applied here: `kappa = 1` is available as a conditional convention, while
-the source theorem retains only the exponent and proportionality class. No
-past normalization obstruction is promoted into a permanent impossibility.
+The following echoes are concrete scope checks, not theorem dependencies or
+prior no-go witnesses:
+
+| prior path | recorded status | retirement or boundary mechanism | applicability here |
+| --- | --- | --- | --- |
+| `docs/audit/data/premise_decision_history.json`, Y0 | non-authoritative provenance-only `vacuous normalization convention`; never chain-satisfying | overall hypercharge normalization is absorbed by the `Y <-> g'` rescaling convention | supports treating a freely chosen normalization as convention rather than derived dimensionless physics; supplies no `kappa` |
+| `docs/audit/data/premise_decision_history.json`, g0 | non-authoritative provenance-only `vacuous rescaling convention`; never chain-satisfying | `g_bare = 1` is a `g <-> beta` gauge/rescaling choice | supports the narrow classification of `kappa = 1` as a possible convention, not a theorem |
+| `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` | approved framework primitive, units conversion only | the ruler `a^(-1) = M_Pl` carries zero dimensionless content | can express a mass in physical units but cannot choose `kappa`, the carrier/value of `f`, or a hierarchy ratio |
+
+The first two records are explicitly superseded admission-era provenance and
+the runner checks that their file declares zero genuine admitted inputs. The
+third is an approved units-only primitive. None is imported into the proof,
+none changes the empty dependency list, and none promotes a past normalization
+obstruction into a permanent impossibility.
 
 ## 6. What this theorem closes
 
@@ -370,11 +413,13 @@ python3 scripts/frontier_hierarchy_joint_riemann_dirichlet_dimensional_fourth_ro
 
 The normal mode reconstructs the exact series, monotonicity, uniqueness, and
 dimension-equation objects. The independent mode uses the real-derivative
-route, rigorous rational partial-sum brackets, and unit-rescaling covariance.
-The hostile mode rejects wrong exponents, dimensionful coefficients,
-unsupplied unit normalization, signed even roots, invalid dimensions, and
-physical-value inference. Numerical sweeps are reported separately from
-theorem and boundary evidence.
+route with exact sign domains, rigorous rational partial-sum brackets, and
+unit-rescaling covariance. The hostile mode rejects wrong exponents,
+dimensionful coefficients, negative or unsupplied coefficients, signed roots,
+invalid dimensions, and physical-value inference; it also executes the four
+singleton condition witnesses. Numerical sweeps are reported separately from
+theorem and boundary evidence. Provenance and registry text is hygiene only,
+never theorem evidence.
 
 ## 9. Dependencies and external context
 

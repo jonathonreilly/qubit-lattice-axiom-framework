@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow.py
-runner_sha256: 42ab772322b13c67985997b4c5c6a1c65a641e0e3067abcf1f9220129c67b205
+runner_sha256: c64afa659936b1af48ce54303d5f504c6e2c31b46c94d2f89c412d3e44799a85
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -15,7 +15,7 @@ exact A-C theorem; exponent-only D with supplied kappa/sign boundary
 ----------------------------------------------------------------------------------------
 NORMAL: exact theorem and conditional-map reconstruction
 ----------------------------------------------------------------------------------------
-  [PASS][A][theorem] integer theorem domain has a positive eta/zeta base strictly below one  (endpoints: s=2 -> 1/2, s=12 -> 2047/2048)
+  [PASS][A][theorem] exact real domain of the eta/zeta base is 0 < 1-2^(1-s) < 1 for s>1  (positive domain=Interval.open(1, oo); below-one domain=Reals; g(2)=1/sqrt(2); s=4 base -> 7/8)
   [PASS][A][theorem] odd/even series split has zero eta/zeta closed-form residual  (residual = 0)
   [PASS][A][theorem] Taylor-coefficient comparison has a positive induction certificate  (R_1=s_i + 2; R_(k+1)-2R_k=s_i; decomposition residual=0)
   [PASS][A][theorem] log g(s) tends to zero, so g(s) tends to one  (lim log(g) = 0)
@@ -24,14 +24,18 @@ NORMAL: exact theorem and conditional-map reconstruction
   [PASS][A][conditional] all supplied dimensionless coefficients share zero dimension residual at p=1/d  (cases=24, residual set={Fraction(0, 1)})
   [PASS][A][boundary] distinct positive dimensionless coefficients remain covariant and give distinct scales  (at |f|=16: values=[2/3, 5])
   [PASS][A][boundary] finite-kappa p=1/d family extends to M(0)=0 for d>0  (cases=12, values={0})
+  [PASS][A][boundary] a dimensionless thermal coefficient changes the magnitude without changing covariance  (for T=2 and c_4=(1,16), fourth roots=[2, 4])
+  [PASS][A][conditional] fully supplied coefficient, magnitude rule, carrier, and value close the map conditionally  (conditions=['carrier', 'coefficient', 'magnitude_convention', 'value']; M=3)
   [PASS][A][numerical] high-precision integer sweep supports monotonicity and the unique s=4 hit  (sweep=2..50, hits=[4], g(50)=0.9999999999999999644728632119949597830963019573947234663712291995423064)
 
 ----------------------------------------------------------------------------------------
 INDEPENDENT: derivative, rational brackets, and unit covariance
 ----------------------------------------------------------------------------------------
-  [PASS][A][theorem] independent real-derivative formula has zero residual and positive terms for s>1  (formula residual=0; sampled minimum=1.1093706427202413827662059145992089826883564814040E-32; numerator terms are positive for 0<x<1)
+  [PASS][A][theorem] independent derivative is strictly positive on the exact real domain s>1  (formula residual=0; x/(1-x)>0 and -log(1-x)>0 on Interval.open(0, 1); 0<x<1 exactly when s>1)
+  [PASS][A][numerical] derivative samples support but do not carry the real-domain proof  (sampled minimum=1.1093706427202413827662059145992089826883564814040E-32)
   [PASS][A][numerical] independent rigorous eta/zeta partial-sum brackets contain every exact ratio  (s=2..8, max width=2.261e-05)
   [PASS][A][theorem] unit-rescaling covariance lambda^(d*p)=lambda vanishes exactly at p=1/d  (covariance residual=(-lambda + lambda**(d*p))/lambda; solved=0)
+  [PASS][A][boundary] a coefficient of mass dimension q changes the exponent outside the stated map class  (q+d*p=1 gives p=[(1 - q)/d])
   [PASS][A][conditional] exact positive unit rescalings reproduce M -> lambda M for several d and lambda  (residuals={0}, cases=24)
   [PASS][A][boundary] absolute-value route is real nonnegative where naive signed roots are not magnitudes  ((-16)^(1/4)=2*(-1)**(1/4); |−16|^(1/4)=2; real_root(-8,3)=-2)
 
@@ -43,7 +47,11 @@ HOSTILE: reject sign, normalization, domain, and inference overreads
   [PASS][A][boundary] a dimensionful kappa violates the stated dimensionless-coefficient map class  (residual=1/2, issues=['dimension_covariance_failure', 'dimensionful_kappa'])
   [PASS][A][boundary] negative f with even d rejects the naive real-positive root  (issues=['nonreal_even_root'])
   [PASS][A][boundary] negative f with odd d has a signed root, not a nonnegative magnitude  (issues=['signed_not_magnitude'], root=-2)
-  [PASS][A][boundary] unit coefficient is rejected when kappa=1 was not supplied  (issues=['unsupplied_unit_coefficient'])
+  [PASS][A][boundary] unit coefficient is rejected when kappa=1 was not supplied  (issues=['unsupplied_coefficient'])
+  [PASS][A][boundary] an alternate coefficient is also rejected when it was not supplied  (issues=['unsupplied_coefficient'])
+  [PASS][A][boundary] a negative coefficient is rejected for a nonnegative magnitude map  (issues=['negative_magnitude_coefficient'])
+  [PASS][A][boundary] the hostile evaluator preserves a challenged exponent instead of hard-coding 1/d  (M=3*3**(1/3))
+  [PASS][A][boundary] singleton witnesses refute every directed implication among the four supplied conditions  (witnesses={'coefficient': ['coefficient'], 'magnitude_convention': ['magnitude_convention'], 'carrier': ['carrier'], 'value': ['value']})
   [PASS][A][boundary] physical-value inference is rejected without a carrier and value for f  (issues=['unsupported_physical_inference'])
   [PASS][A][boundary] kappa=0 is covariant for multiple wrong exponents and cannot witness exponent uniqueness  (tested residuals={0}, cases=9)
 
@@ -51,15 +59,17 @@ HOSTILE: reject sign, normalization, domain, and inference overreads
 HYGIENE: source metadata, links, and overread guards
 ----------------------------------------------------------------------------------------
   [PASS][B][hygiene] source note has one explicit positive_theorem author hint  (parsed claim types=['positive_theorem'])
+  [PASS][B][hygiene] cross-cycle echoes are provenance-only conventions or a units-only primitive  (Y0/g0 are provenance-only; scale reference is units-only)
+  [PASS][B][hygiene] N1-N8 packet has current-cycle markers, all directed N2 pairs, and concrete N8 paths  (headings=True; N1 attempted=6; N2 directed pairs=12; N8 paths=2)
   [PASS][B][hygiene] every local markdown link in the source note resolves to a file  (local links=['../scripts/frontier_hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow.py'])
   [PASS][B][hygiene] source note contains no bare M=f^(1/d) or unique-map normalization overread  (bare-map hits=0, unique-map hits=0)
   [PASS][B][hygiene] source rhetoric does not promote coefficient, physical-value, or empirical authority  (hits={'unique_unit_normalization': 0, 'physical_mass_prediction': 0, 'dimensions_select_kappa': 0})
 
 ========================================================================================
-EVIDENCE: theorem=7 conditional=3 numerical=2 boundary=11 hygiene=4
-CLASSES: A=23 B=4 C=0 D=0
-MODES: hostile=8 hygiene=4 independent=5 normal=10
-SUMMARY: PASS=27 FAIL=0
+EVIDENCE: theorem=7 conditional=4 numerical=3 boundary=17 hygiene=6
+CLASSES: A=31 B=6 C=0 D=0
+MODES: hostile=12 hygiene=6 independent=7 normal=12
+SUMMARY: PASS=37 FAIL=0
 ========================================================================================
 
 ----- stderr -----

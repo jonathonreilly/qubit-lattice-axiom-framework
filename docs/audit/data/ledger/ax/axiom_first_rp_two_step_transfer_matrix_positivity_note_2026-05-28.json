@@ -670,6 +670,59 @@
         "total_pass": 6
       },
       "verdict_rationale": "The runner genuinely computes the recurrence eigenvalues, spectral projectors, exterior-algebra operator, factorization, and Gram matrices; its reported numerical checks are internally consistent. However, it constructs Gamma(lambda_-) only after assuming that the decaying eigenvalue of the classical second-order recurrence is the action's physical one-particle transfer kernel. No direct Grassmann Gaussian slice integration or canonical coherent-state construction establishes that identification, so positivity of the constructed Gamma operator does not yet prove positivity of the action-derived transfer operator; the analogous single-step transfer interpretation is likewise unestablished."
+    },
+    {
+      "archived_at": "2026-07-18T04:33:48.407088+00:00",
+      "audit_date": "2026-07-18T04:33:37.752261+00:00",
+      "audit_invocation_history": [
+        "b73a68237dd94f9d91daea7ba9cc508a"
+      ],
+      "audit_invocation_id": "b73a68237dd94f9d91daea7ba9cc508a",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 22.118,
+        "runner_hash": "65ce9be50f8b1612614045773a1a7d861872ebd3b1c8d763844ec7e560890302",
+        "transitive_descendants": 785
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-drain-ready-20260717-c6f41c70798d4b58aa07a8489e725c8b-axiom_first_rp_two_step_-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The eigenvalue and downstream factorization checks are valid algebra, but single_particle_2step_kernel selects the minimum-modulus monodromy eigenvalue and labels it the physical forward kernel without deriving that kernel from the Grassmann action. The recurrence-to-Fock identification\u2014and likewise treating the one-step recurrence matrices as Hilbert-space transfer operators\u2014is missing.",
+      "claim_scope": "Free U=1 1+1d staggered-only finite periodic L_s with real m>0: recurrence spectra and identification of the decaying two-step eigenchannel as a positive Fock-space transfer operator.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-18T04:33:37.752261+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "In the diagonal one-particle basis the forward kernel is therefore K_2(p)=lambda_-(p).",
+      "load_bearing_step_class": "F",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the two-step coherent-state transfer kernel from the staggered Grassmann path integral, including its inner product, particle-hole carrier, normalization, and proof that it equals the selected stable monodromy channel.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the runner computes the classical recurrence spectrum, then renames its minimum-modulus eigenvalue as the physical one-particle transfer kernel before constructing Gamma from it. Why this blocks: suppressing a growing classical solution by a half-line condition does not itself derive the coherent-state kernel, canonical inner product, Fock carrier, particle-hole treatment, or normalization of the quantum transfer operator. Repair target: derive the blocked coherent-state transfer matrix directly from the original Grassmann action; claim boundary until fixed: the recurrence spectra and the conditional positivity of the separately constructed Gamma(lambda_-) remain valid. N1-N8 judgment: N1-N2 establish no universal no-go or independent wall set; N3 exposes the unproved stable-channel/coherent-state identification, N4 has no prior witness, N5's negative statement is confined to the displayed recurrence, N6/N8 candidates do not close the bridge, and N7's stable-half-line steelman remains unresolved."
     }
   ],
   "prose_corrections": [],

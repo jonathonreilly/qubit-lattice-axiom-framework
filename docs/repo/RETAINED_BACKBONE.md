@@ -16,17 +16,18 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 79 |
+| Retained positive rows | 80 |
 | Retained bounded rows | 308 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 15 |
 
-## Retained positive rows (79)
+## Retained positive rows (80)
 
 Sorted by load-bearing graph score (descending).
 
 - [`graph_first_su3_integration_note`](../../docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) — score 64.173; audited 2026-05-22T15:30:10.285410+00:00
 - [`native_gauge_closure_note`](../../docs/NATIVE_GAUGE_CLOSURE_NOTE.md) — score 37.137; audited 2026-05-23T14:13:39.056923+00:00
+- [`cpt_exact_note`](../../docs/CPT_EXACT_NOTE.md) — score 31.785; audited 2026-07-18T15:57:45.306298+00:00
 - [`koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10`](../../docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md) — score 30.672; audited 2026-07-18T04:09:14.626536+00:00
 - [`koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`](../../docs/KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md) — score 25.680; audited 2026-07-18T01:25:36.958473+00:00
 - [`graph_first_selector_derivation_note`](../../docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md) — score 25.159; audited 2026-05-22T15:33:35.673777+00:00

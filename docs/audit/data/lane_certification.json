@@ -28,10 +28,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "cpt_exact_note",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
           "effective_status": "unaudited"
         },
@@ -127,7 +123,7 @@
       "roots": [
         "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
       ],
-      "uncertified_count": 29
+      "uncertified_count": 28
     },
     {
       "blocking": [
@@ -558,10 +554,6 @@
         {
           "claim_id": "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04",
           "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "cpt_exact_note",
-          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "cpt_squared_is_identity_theorem_note_2026-05-02",
@@ -2872,9 +2864,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 656
+      "uncertified_count": 655
     }
   ],
-  "repo_head": "2b24835fa86743a8d7023534539d78ea084107fe",
+  "repo_head": "acd869e1c67cf455cc8eb5239d20bb2f319180f3",
   "schema": "lane_certification_v2"
 }

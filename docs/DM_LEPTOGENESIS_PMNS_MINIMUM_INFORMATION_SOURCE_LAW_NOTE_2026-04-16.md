@@ -24,10 +24,8 @@ The note is therefore a **conditional** result:
 
 The deriving-the-selector question — does the baseline framework itself force the
 information cost `I_seed` (or some equivalent functional) to be the correct
-selector? — is **not** answered here. It is the subject of separate sister
-notes (see the relative-action stationarity theorem and the observable
-relative-action law, both of which strengthen this framing by rebuilding the
-objective from a framework-internal scalar `log|det|` observable principle).
+selector? — is **not** answered here. No theorem cited by this row closes that
+physical selector bridge.
 
 ## Source repair for re-audit (2026-06-18)
 
@@ -115,13 +113,10 @@ minimum-selector derivation from the baseline framework.
 - it does **not** claim that `I_seed` follows from the Lattice + Quantum +
   Record baseline
 - it does **not** claim that the minimum-information functional is the
-  unique correct selector — alternative selectors (relative bosonic action,
-  multistart selector support, analytic stationary classification) all give
-  matching low-action branches on the same reduced surface, but each is its
-  own conditional framing
+  unique correct selector; comparisons with other supplied objectives are
+  conditional diagnostics rather than selector authority
 - it does **not** close the baseline-framework chain for the PMNS-assisted `N_e`
-  branch — that question is parked at the relative-action stationarity
-  theorem and the observable relative-action law
+  branch
 
 ## Why this note is still useful
 
@@ -132,13 +127,12 @@ The note materially strengthens the closure picture in three ways:
 2. it confirms that the closure source on the favored column is genuinely
    off-seed but information-cheap (small KL deformation, near-zero phase),
    which is the qualitative expectation
-3. it provides a baseline against which the stronger framework-internal
-   selectors (`S_rel` and KKT classification) can be benchmarked
+3. it provides a baseline for comparisons with other supplied-objective
+   diagnostics, without promoting any comparison to selector authority
 
 The note is therefore kept as bounded support rather than positive-theorem
-authority. The closure on the PMNS-assisted `N_e` branch should be cited
-through the sister theorems whose objectives are framework-internal, with
-this note used only as a post-axiom selector diagnostic.
+authority. No sibling cited here closes the PMNS-assisted `N_e` branch; this
+note is used only as a post-axiom selector diagnostic.
 
 ## Runner imports (transparency)
 
@@ -226,10 +220,9 @@ or whether the PMNS-assisted `N_e` branch closes from primitives) is
 - this note is an `open_gate` with explicit imported/adopted selector
   assumptions; it is not a positive-theorem or bounded-theorem authority for
   the PMNS-assisted `N_e` branch
-- closure on that branch must be cited through the framework-internal
-  sister theorems (relative-action stationarity, observable
-  relative-action law), with this note used only for post-axiom
-  interpretation of the favored-column source
+- no cited sibling currently supplies retained physical closure for that
+  branch; this note remains only a post-axiom interpretation of the
+  favored-column source
 - the constrained-opt diagnostic asserted above is conditional on the imported
   selector, the favored-column identification, and the imposed
   `eta_{i_*} / eta_obs = 1` constraint; none of those bridge a baseline
@@ -247,11 +240,7 @@ comparator** for their constrained-optimization runners. Those chains
 stay conditional on the selector-law convention until it is derived from
 baseline.
 
-**Audit-dispatch parent candidate:** If a future independent audit
-evaluates whether this source-law row is a non-chain-closing
-alias/decorative handle, the candidate parent is
-[`DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md)
-for the stationary classification. The renaming-tier source-law row is
-the explicit selector convention layered on top of that classification.
-This is source-side routing context only; it does not assert an
-`audit_status` or `effective_status`.
+A former stationary-classification parent reference is withdrawn. The
+historical row now proves only an abstract Hermitian-product
+conjugation-parity theorem for an explicitly supplied matrix family, so it is
+not a parent or authority for the present source-law diagnostic.

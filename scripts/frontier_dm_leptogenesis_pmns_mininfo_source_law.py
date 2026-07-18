@@ -29,8 +29,8 @@ Law (adopted definition):
 
 What this runner does NOT prove:
   - that I_seed follows from the Lattice + Quantum + Record baseline
-  - that I_seed is the unique correct selector (alternative selectors
-    exist; see relative_action_stationarity and observable_relative_action_law)
+  - that I_seed is the unique correct selector or that comparisons with other
+    supplied objectives provide selector authority
   - baseline-framework closure for the PMNS-assisted N_e branch
 
 This yields a reproducible low-deformation exact-closure source on the current
@@ -335,7 +335,7 @@ def part3_bottom_line() -> None:
     check(
         "The runner verifies the conditional diagnostic, not a selector theorem",
         True,
-        "I_seed is imported from information geometry; baseline-framework derivation is parked at sister theorems",
+        "I_seed is imported from information geometry; the baseline-framework derivation remains open",
     )
 
 
@@ -381,11 +381,6 @@ def part4_honest_scope_assertions(
         "Runner explicitly does NOT claim baseline-framework derivation of I_seed",
         True,
         "I_seed is imported from information geometry; treat note as open-gate support",
-    )
-    check(
-        "Selector is comparable to sister selectors (relative action, KKT classification)",
-        True,
-        "all converge to the same low-action branch on the reduced N_e surface",
     )
 
 

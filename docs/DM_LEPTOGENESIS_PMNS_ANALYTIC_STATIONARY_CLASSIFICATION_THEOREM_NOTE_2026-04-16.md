@@ -1,121 +1,220 @@
-# DM Leptogenesis PMNS Fixed-Chart Hermitian Block Parity Theorem
+# Supplied-Chart Hermitian-Product Conjugation-Parity Theorem
 
-**Date:** 2026-04-16; fixed-chart parity repair 2026-05-25
-**Status:** bounded-support formal matrix algebra. No reduced `N_e` surface
-authority, favored-column closure, eta normalization, relative-action selector,
-KKT branch classification, or stationary-branch minimality is part of the
-binding theorem.
-**Claim type:** bounded_theorem
+**Date:** 2026-04-16; abstract-matrix source rescope 2026-07-18
+**Status:** bounded theorem in finite matrix algebra
+**Claim type:** `bounded_theorem`
 **Primary runner:** `scripts/frontier_dm_pmns_he_parity_repair.py`
-**Status authority:** independent audit lane only.
+**Cached output:** `logs/runner-cache/frontier_dm_pmns_he_parity_repair.txt`
+**Dependencies:** none; the matrix family is defined explicitly below
+**Status authority:** independent audit lane only
 
-## Actual claim
+The historical filename and claim identifier are retained only for stable
+repository references. They do not supply an interpretation of the matrix.
 
-Let `x_1,x_2,x_3,y_1,y_2,y_3` be real coordinates and let `delta` be a real
-phase. Define the supplied fixed-chart matrix
+## Exact theorem
+
+Let
+
+```text
+x1, x2, x3, y1, y2, y3, delta in R
+```
+
+and define the following abstract one-parameter matrix family:
 
 ```text
 Y(delta) =
-[[x1,          y1, 0],
- [0,           x2, y2],
- [y3 exp(i delta), 0, x3]].
+[[x1,                    y1,  0],
+ [ 0,                    x2, y2],
+ [y3 exp(i delta),        0, x3]].
 ```
 
 Set
 
 ```text
-H_e(delta) = Y(delta) Y(delta)^dagger.
+H(delta) = Y(delta) Y(delta)^dagger.
 ```
 
-Then
+Then direct multiplication gives
 
 ```text
-H_e(delta) =
-[[x1^2+y1^2,              x2 y1,        x1 y3 exp(-i delta)],
- [x2 y1,                  x2^2+y2^2,    x3 y2],
- [x1 y3 exp(i delta),     x3 y2,        x3^2+y3^2]].
+H(delta) =
+[[x1^2 + y1^2,           x2 y1, x1 y3 exp(-i delta)],
+ [x2 y1,          x2^2 + y2^2,                 x3 y2],
+ [x1 y3 exp(i delta),     x3 y2,         x3^2 + y3^2]].
 ```
 
-Moreover,
+For every real choice of the seven parameters:
+
+1. `H(delta)` is Hermitian and positive semidefinite;
+2. `H(-delta) = conjugate(H(delta))`, where the conjugation on the
+   right is entrywise; and
+3. if a scalar function `F` on this matrix family satisfies
+   `F(conjugate(H)) = F(H)` for every member `H` of the family, then
+   `delta -> F(H(delta))` is even.
+
+This statement is the entire theorem.
+
+## Direct multiplication and product order
+
+Write the rows of `Y(delta)` as
 
 ```text
-H_e(-delta) = conjugate(H_e(delta)).
+r1 = (x1, y1, 0),
+r2 = (0, x2, y2),
+r3 = (y3 exp(i delta), 0, x3).
 ```
 
-Therefore every scalar readout invariant under entrywise complex conjugation
-of this Hermitian block is even in `delta`; for example, the trace, trace
-square, determinant, characteristic polynomial coefficients, eigenvalue
-multiset, and Frobenius norm are unchanged under `delta -> -delta`.
-
-That fixed-chart Hermitian-block formula and conjugation parity are the entire
-repaired theorem.
-
-## Why This Repair Is Narrow
-
-The prior judicial audit accepted the displayed `H_e` formula and
-`delta -> -delta` parity as algebraic, but kept the row conditional because
-the selector conclusion imported helper machinery: reduced `N_e` surface
-authority, seed averages, favored-column closure functional, eta normalization,
-and relative-action/KKT branch selection.
-
-This repair withdraws that selector conclusion from the binding claim. It
-preserves only the matrix-algebra theorem that closes from the supplied
-fixed-chart definition of `Y(delta)`.
-
-The prior sampled KKT/action-gap diagnostic is intentionally not part of this
-binding row. If that sampled diagnostic is needed downstream, it should be
-rebuilt as a separate runner-backed bounded diagnostic with its own assumptions
-and audit queue entry.
-
-## Theorem
-
-**Theorem.** For the supplied fixed-chart matrix `Y(delta)` above,
-`H_e(delta)=Y(delta)Y(delta)^dagger` has the displayed entries and satisfies
-`H_e(-delta)=conjugate(H_e(delta))`.
-
-**Proof.** Multiplying `Y(delta)` by its adjoint gives:
+Because `H_ab = r_a r_b^dagger`, the nine entries are
 
 ```text
-H11 = x1^2 + y1^2
-H22 = x2^2 + y2^2
-H33 = x3^2 + y3^2
-H12 = x2 y1
-H23 = x3 y2
-H13 = x1 y3 exp(-i delta)
-H31 = x1 y3 exp(i delta).
+H11 = x1^2 + y1^2,
+H12 = x2 y1,
+H13 = x1 y3 exp(-i delta),
+H21 = x2 y1,
+H22 = x2^2 + y2^2,
+H23 = x3 y2,
+H31 = x1 y3 exp(i delta),
+H32 = x3 y2,
+H33 = x3^2 + y3^2.
 ```
 
-The only phase-dependent entries are `H13` and `H31`, and replacing
-`delta` by `-delta` swaps `exp(i delta)` with `exp(-i delta)`. Since all
-`x_i,y_i` are real, this is exactly entrywise complex conjugation of the
-Hermitian block. Any scalar function unchanged by entrywise conjugation is
-therefore even in `delta` on this supplied chart. QED.
+This is specifically `Y Y^dagger`. In general, `Y^dagger Y` is a different
+matrix and is not substituted anywhere in the theorem.
 
-## What This Row Does Not Claim
+The displayed entries obey `H_ba = conjugate(H_ab)`, so `H` is Hermitian.
+For any `v in C^3`,
 
-- It does not derive the fixed `N_e` reduced surface from the framework.
-- It does not derive seed averages, favored-column closure, eta normalization,
-  or a PMNS value law.
-- It does not define or derive a relative-action selector.
-- It does not classify stationary KKT branches or prove branch minimality.
-- It does not compute a leptogenesis abundance or select a physical PMNS
-  column.
-- It does not add an axiom or apply an audit verdict.
+```text
+v^dagger H v
+  = v^dagger Y Y^dagger v
+  = (Y^dagger v)^dagger (Y^dagger v)
+  = ||Y^dagger v||_2^2
+  >= 0.
+```
 
-The bridge from this fixed-chart parity algebra to the full PMNS-assisted
-leptogenesis selector remains a separate open science problem.
+Thus `H` is positive semidefinite. This conclusion uses the displayed
+`Y Y^dagger` order.
+
+## Conjugation parity and the universal corollary
+
+Only `H13` and `H31` depend on `delta`. Replacing `delta` by `-delta`
+interchanges `exp(i delta)` and `exp(-i delta)`. All six coordinates are real,
+so every remaining entry is fixed by conjugation. Hence
+
+```text
+H(-delta) = conjugate(H(delta)).
+```
+
+Now let `F` be any scalar function on this family with
+`F(conjugate(H)) = F(H)`. Then
+
+```text
+F(H(-delta))
+  = F(conjugate(H(delta)))
+  = F(H(delta)),
+```
+
+which is exactly evenness of the composite. No stronger condition on `F` is
+being inferred.
+
+## Derived concrete invariant examples
+
+Define
+
+```text
+A = x1^2 + y1^2,  B = x2^2 + y2^2,  C = x3^2 + y3^2,
+p = x2 y1,         q = x1 y3,         r = x3 y2,
+a = x1 x2 x3,      b = y1 y2 y3.
+```
+
+The characteristic polynomial has the form
+
+```text
+chi_H(t) = t^3 - c1 t^2 + c2 t - c3,
+c1 = A + B + C,
+c2 = AB + AC + BC - p^2 - q^2 - r^2,
+c3 = det(H) = a^2 + b^2 + 2ab cos(delta).
+```
+
+These formulas follow by expanding the displayed matrix. They show directly
+that the trace, determinant, and all characteristic coefficients are real and
+even. Equality of the characteristic polynomials at `delta` and `-delta`
+implies equality of the eigenvalue multisets, with algebraic multiplicity.
+
+For every integer `k >= 1`, `H^k` is Hermitian, so `tr(H^k)` is real. Also,
+
+```text
+tr(H(-delta)^k)
+  = tr(conjugate(H(delta)^k))
+  = conjugate(tr(H(delta)^k))
+  = tr(H(delta)^k).
+```
+
+Thus every trace power is even. Finally,
+
+```text
+||H||_F^2 = sum_ab |H_ab|^2 = tr(H^2),
+```
+
+so the Frobenius norm is conjugation-invariant and even as well. These examples
+are consequences of the theorem, not extra interpretation of the symbols.
+
+## Exact positive-semidefinite checks
+
+The principal minors also make positive semidefiniteness explicit. The three
+nontrivial `2 x 2` principal minors are
+
+```text
+x1^2 x2^2 + x1^2 y2^2 + y1^2 y2^2,
+x1^2 x3^2 + y1^2 x3^2 + y1^2 y3^2,
+x2^2 x3^2 + x2^2 y3^2 + y2^2 y3^2,
+```
+
+and
+
+```text
+det(H)
+  = (a + b cos(delta))^2 + (b sin(delta))^2
+  = |det(Y)|^2.
+```
+
+Together with the nonnegative diagonal entries, every principal minor is
+nonnegative, consistently with the Gram-matrix proof above.
+
+## Scope boundary
+
+No repository theorem currently derives this explicitly defined matrix family
+from the framework baseline. In particular, this row does not identify the
+family as a PMNS chart, a Yukawa law, a charged-lepton carrier, or a
+leptogenesis input. It supplies no selector, stationary system, KKT solution,
+branch classification, branch-minimality result, CP-asymmetry law, or physical
+phase-selection mechanism.
+
+A future physical use would require a separate retained bridge deriving both
+the matrix family and the proposed interpretation. That bridge remains open
+and is not load-bearing here.
 
 ## Verification
 
-Run:
+Run the three independent modes:
 
 ```bash
-PYTHONPATH=scripts python3 scripts/frontier_dm_pmns_he_parity_repair.py
+python3 scripts/frontier_dm_pmns_he_parity_repair.py --mode normal
+python3 scripts/frontier_dm_pmns_he_parity_repair.py --mode independent
+python3 scripts/frontier_dm_pmns_he_parity_repair.py --mode hostile
 ```
 
-Expected result:
+The normal route performs direct symbolic multiplication and exact invariant
+checks. The independent route reconstructs `Y Y^dagger` as a sum of column
+outer products and uses separately coded numerical characteristic-polynomial
+and principal-minor checks. The hostile route recomputes and rejects a wrong
+phase sign, a moved phase, a non-conjugating transpose, substitution of
+`Y^dagger Y`, complex-coordinate drift, false entrywise evenness, and a wrong
+characteristic coefficient.
 
-```text
-DM/PMNS fixed-chart Hermitian-block parity repair
-TOTAL: PASS=33 FAIL=0
-```
+## Bottom line
+
+For the explicitly defined real-coordinate matrix family above, and only that
+family, `H = Y Y^dagger` is the displayed Hermitian positive-semidefinite
+matrix, sign reversal of `delta` is entrywise conjugation, and every
+conjugation-invariant scalar composite is even.

@@ -226,11 +226,9 @@ Then `(P)` is exactly "choose the one minimizing `I_seed`", and
 - Does **not** supply or constrain the numerical readout `(x_*, y_*, delta_*)`
   or the multiplier `lambda_*`. Those are downstream numerical
   consequences and not part of the standalone calculus identity.
-- Does **not** claim that `I_seed` is the unique correct selector. The
-  parent note explicitly notes alternative selectors (relative bosonic
-  action, multistart selector support, analytic stationary
-  classification) all yield matching low-action branches; the narrow
-  theorem says nothing about selector choice.
+- Does **not** claim that `I_seed` is the unique correct selector. The narrow
+  theorem says nothing about selector choice or comparisons with other
+  supplied objectives.
 - Does **not** consume any PDG observed values, literature numerical
   comparators, fitted selectors, supplied unit conventions, or
   same-surface family arguments beyond the explicitly listed
@@ -248,21 +246,16 @@ framing" section:
    (`dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`,
    conditional on supplied transport equations, profiles, and packet),
    supplying the finite-fixture index `i_*`.
-3. The analytic-stationary-classification theorem
-   (`dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16`,
-   a sibling KKT calculation), which addresses the KKT structure for the
-   *S_rel* objective on the reduced surface (different selector but
-   identical seed surface and identical constraint).
-4. The numerical readout `(x_min, y_min, delta_min)` from the parent
+3. The numerical readout `(x_min, y_min, delta_min)` from the parent
    runner, conditional on adopting `I_seed`.
-5. The open premise boundary: `I_seed` is "explicitly adopted rather
+4. The open premise boundary: `I_seed` is "explicitly adopted rather
    than derived from the current four-axiom framework baseline".
-6. The standalone calculus content `(T1)-(T3)`.
+5. The standalone calculus content `(T1)-(T3)`.
 
-This narrow theorem isolates only item 6 from items 1-5. The
+This narrow theorem isolates only item 5 from items 1-4. The
 constrained-minimum uniqueness and Lagrange stationarity hold as
 pure standalone math under the explicit supplied hypotheses;
-open premise boundary 5 is preserved as the load-bearing
+open premise boundary 4 is preserved as the load-bearing
 supplied hypothesis `(H1)` (strict convexity of the selector). The narrow
 theorem does not promote, restate, or attempt to discharge that hole.
 
@@ -278,12 +271,6 @@ theorem does not promote, restate, or attempt to discharge that hole.
   define the constraint `C(z)` in the abstract identification; the present
   calculus theorem does not inherit transport provenance, packet canonicity,
   or physical readout authority from that input.
-- [`DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md)
-  — sibling calculation that exhibits the KKT structure
-  for the same exact seed surface and the same constraint
-  `eta_{i_*} / eta_obs = 1`, but with a different (framework-internal)
-  selector `S_rel` instead of `I_seed`. Cited only for cross-reference;
-  not load-bearing on the present narrow theorem.
 
 ## Forbidden imports check
 
@@ -333,11 +320,9 @@ The runner closes with PASS=N FAIL=0 at exact sympy precision.
 ## Cross-references
 
 - `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
-  (parent broad row; bundles items 1-6; this narrow theorem isolates only
-  item 6).
+  (parent broad row; bundles items 1-5; this narrow theorem isolates only
+  item 5).
 - `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`
   (conditional supplied-fixture source of `i_*`; no status inheritance).
-- `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16`
-  (sibling KKT calculation with framework-internal `S_rel` selector).
 - `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`
   (sibling broad-multistart support note).

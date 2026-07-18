@@ -210,12 +210,12 @@ def line_has(path: Path, line_number: int, fragment: str) -> bool:
 def n4_file_line_witness_control() -> None:
     witnesses = (
         (ROUTE, 397, "one E_x coherently spans"),
-        (ROUTE, 493, "operator_semantics"),
-        (ROUTE, 497, "same physical stream/catch-up and contact products"),
-        (ROUTE, 788, "declared_wedge_sign_failures"),
-        (ROUTE, 795, "translation_group_law_tests"),
-        (ROUTE, 923, "one_address_deletion_covariance_leakage"),
-        (ROUTE_NOTE, 73, "not operator support"),
+        (ROUTE, 505, "operator_semantics"),
+        (ROUTE, 509, "same physical stream/catch-up and contact products"),
+        (ROUTE, 802, "declared_wedge_sign_failures"),
+        (ROUTE, 809, "translation_group_law_tests"),
+        (ROUTE, 937, "one_address_deletion_covariance_leakage"),
+        (ROUTE_NOTE, 78, "not operator support"),
     )
     rows = [
         {

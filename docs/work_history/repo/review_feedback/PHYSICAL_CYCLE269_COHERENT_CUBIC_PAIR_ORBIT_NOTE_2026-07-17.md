@@ -44,8 +44,13 @@ and
     C_coarse = I_12 tensor diag(exp(i g),1),  g=0.37.
 
 `C_physical` is the same complete product of the Cycle-230 local contact
-projectors used by every address.  The explicitly declared contact-then-stream
-composition also satisfies
+projectors used by every address.  The actual Cycle-230 order is stream then
+contact, because `G_g=W_g Gamma(SC)`.  The common code satisfies both
+
+    E_x (C_coarse S_coarse)
+      = (C_physical S_physical) E_x,
+
+and the reverse-order comparator
 
     E_x (S_coarse C_coarse)
       = (S_physical C_physical) E_x.
@@ -58,8 +63,8 @@ from a decoded occupation label. Equality on all 24 basis columns proves the
 intertwiners for every coefficient vector by linearity; the three coherent
 vectors below are additional numerical probes, not the basis of that claim.
 
-This schedule is compiler composition, not physical time.  Contact and stream
-cannot silently be exchanged: their operator-norm commutator on this code is
+These schedules are compiler compositions, not physical time. Contact and
+stream cannot silently be exchanged: their operator-norm commutator on this code is
 `0.36789306705608243`.
 
 ## Support and constraints
@@ -140,7 +145,7 @@ In compact contract language: held L=6 passed.
 | 6 | 216 | 5,184 | yes | 0 |
 
 For every anchor the runner established the full 24-column Gram, stream,
-contact, inverse, and contact-then-stream matrix equalities. It additionally
+contact, inverse, Cycle-230 stream-then-contact, and reverse-order matrix equalities. It additionally
 tested a uniform coherent state, a Fourier-phase state, and a fixed-seed
 generic complex state. The matrix residuals were zero, and the largest
 floating normalization/superposition residual was
@@ -177,7 +182,7 @@ The construction creates no dynamic address service; it instead imports:
 4. six auxiliary port M2 per cell initialized to zero;
 5. the Cycle-269 `A/B/FSWAP` dictionary and collision-safe catch-up product;
 6. the Cycle-230 finite real contact coupling `g=0.37`; and
-7. the declared contact-then-stream compiler schedule.
+7. the Cycle-230 stream-then-contact order and the reverse-order comparator.
 
 In particular, address preparation is not derived.  The result proves the
 linear action after arbitrary address amplitudes are supplied; it does not
@@ -206,8 +211,9 @@ axiom pressure.
 - `C_local`: materially narrowed from separately selected localized rays to
   one bounded 12-address coherent proper-cubic orbit; global position
   coherence and preparation remain open.
-- `C_int`: the Cycle-230 contact and its ordered composition with stream now
-  act exactly on that common coherent subspace.
+- `C_int`: the Cycle-230 contact, its actual stream-then-contact composition,
+  and the reverse-order control now act exactly on that common coherent
+  subspace.
 - `C_wrap`: unchanged; the fixed +++ Wilson reference-vacuum import remains.
 - `C_ref`: unchanged by this probe.
 - `C_num`: unchanged by this probe.

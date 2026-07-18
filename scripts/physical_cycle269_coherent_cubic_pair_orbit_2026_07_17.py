@@ -113,7 +113,7 @@ def note_contract() -> None:
         "exact gram",
         "e_x s_coarse = s_physical e_x",
         "e_x c_coarse = c_physical e_x",
-        "contact-then-stream",
+        "cycle-230 stream-then-contact",
         "arbitrary coherent superpositions",
         "at most fifty-four-m2",
         "relative-state union",
@@ -434,7 +434,8 @@ def common_operator_and_coherence_controls(
     for length, encoders in fixtures.items():
         stream_residual = 0.0
         contact_residual = 0.0
-        composed_residual = 0.0
+        contact_then_stream_residual = 0.0
+        stream_then_contact_residual = 0.0
         inverse_residual = 0.0
         coherence_residual = 0.0
         action_failures = 0
@@ -445,9 +446,13 @@ def common_operator_and_coherence_controls(
             )
             stream_residual = max(stream_residual, float(np.linalg.norm(physical_s - stream)))
             contact_residual = max(contact_residual, float(np.linalg.norm(physical_c - coarse_c)))
-            composed_residual = max(
-                composed_residual,
+            contact_then_stream_residual = max(
+                contact_then_stream_residual,
                 float(np.linalg.norm(physical_s @ physical_c - stream @ coarse_c)),
+            )
+            stream_then_contact_residual = max(
+                stream_then_contact_residual,
+                float(np.linalg.norm(physical_c @ physical_s - coarse_c @ stream)),
             )
             inverse_residual = max(
                 inverse_residual,
@@ -477,6 +482,12 @@ def common_operator_and_coherence_controls(
                             @ coefficients
                         )
                     ),
+                    float(
+                        np.linalg.norm(
+                            (physical_c @ physical_s - coarse_c @ stream)
+                            @ coefficients
+                        )
+                    ),
                 )
         rows.append(
             {
@@ -486,7 +497,8 @@ def common_operator_and_coherence_controls(
                 "coherent_vectors_per_E_x": len(coherent_vectors),
                 "stream_intertwiner_residual": stream_residual,
                 "contact_intertwiner_residual": contact_residual,
-                "contact_then_stream_residual": composed_residual,
+                "contact_then_stream_residual": contact_then_stream_residual,
+                "cycle230_stream_then_contact_residual": stream_then_contact_residual,
                 "inverse_residual": inverse_residual,
                 "coherent_superposition_residual": coherence_residual,
                 "branch_action_failures": action_failures,
@@ -500,6 +512,7 @@ def common_operator_and_coherence_controls(
             and row["stream_intertwiner_residual"] < TOLERANCE
             and row["contact_intertwiner_residual"] < TOLERANCE
             and row["contact_then_stream_residual"] < TOLERANCE
+            and row["cycle230_stream_then_contact_residual"] < TOLERANCE
             and row["inverse_residual"] < TOLERANCE
             and row["coherent_superposition_residual"] < TOLERANCE
             and row["branch_action_failures"] == 0
@@ -510,10 +523,11 @@ def common_operator_and_coherence_controls(
     commutator = float(np.linalg.norm(coarse_c @ stream - stream @ coarse_c, 2))
     expected_commutator = abs(np.exp(1j * contact.COUPLING) - 1)
     check(
-        "the declared contact-then-stream schedule is explicit and cannot be silently commuted",
+        "the Cycle-230 stream-then-contact order and reverse comparator are explicit and cannot be silently commuted",
         abs(commutator - expected_commutator) < TOLERANCE,
         {
-            "schedule": "contact, then complete outer-edge FSWAP, then simultaneous local auxiliary catch-up",
+            "Cycle230_order": "complete outer-edge FSWAP and auxiliary catch-up, then contact",
+            "reverse_comparator": "contact, then complete outer-edge FSWAP and auxiliary catch-up",
             "contact_stream_commutator_norm": commutator,
             "substeps_are_physical_time": False,
         },
@@ -979,7 +993,7 @@ def supplied_inventory_and_boundary() -> None:
             "derived": (
                 "one 24-column linear E_x with exact Gram identity",
                 "coherent superpositions over all 12 perpendicular-pair directions and two stream slices",
-                "exact common stream/catch-up, contact, inverse, and contact-then-stream intertwiners",
+                "exact common stream/catch-up, contact, inverse, Cycle-230 stream-then-contact, and reverse-order intertwiners",
                 "declared signed-wedge proper-cubic representation common to both slices",
                 "common minus under source/carrier role reversal for the identical pair",
                 "42--54-M2 relative-state orbit-union support",
@@ -991,7 +1005,7 @@ def supplied_inventory_and_boundary() -> None:
                 "six auxiliary port M2 per cell initialized to zero",
                 "Cycle-269 A/B/FSWAP dictionary and collision-safe catch-up product",
                 "Cycle-230 real contact coupling g=0.37",
-                "the declared contact-then-stream compiler schedule",
+                "the Cycle-230 stream-then-contact order and reverse-order comparator",
             ),
             "open": (
                 "bounded preparation of the global reference vacuum",

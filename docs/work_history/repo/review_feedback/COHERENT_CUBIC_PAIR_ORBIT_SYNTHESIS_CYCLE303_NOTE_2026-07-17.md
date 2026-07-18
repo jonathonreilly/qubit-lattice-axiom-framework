@@ -42,6 +42,7 @@ contact product restrict to the full image of `E_x` and obey
 ```text
 E_x S_coarse = S_physical E_x,
 E_x C_coarse = C_physical E_x,
+E_x (C_coarse S_coarse) = (C_physical S_physical) E_x,
 E_x (S_coarse C_coarse) = (S_physical C_physical) E_x,
 
 S_coarse = I_12 tensor X_2,
@@ -52,8 +53,9 @@ g=0.37.
 These 24-by-24 objects are restricted physical matrices on `im(E_x)`, not
 full-Hilbert matrices. Equality on the complete basis, rather than three
 sampled amplitude vectors, earns arbitrary coherent address superpositions.
-Contact then stream is the declared compiler order; exchanging them has norm
-residual `0.36789306705608243`.
+The first composition is the actual Cycle-230 stream-then-contact order from
+`G_g=W_g Gamma(SC)`; the second is its reverse-order comparator. Exchanging
+them has norm residual `0.36789306705608243`.
 
 ## Symmetry, antisymmetry, and exact controls
 
@@ -109,7 +111,7 @@ Load-bearing supplied structure is:
 4. six auxiliary port M2 per cell and their local constraints;
 5. the Cycle-269 `A/B/FSWAP` and collision-safe catch-up products;
 6. the Cycle-230 contact form and coupling `g=0.37`;
-7. the contact-then-stream compiler order; and
+7. the Cycle-230 stream-then-contact order and reverse-order comparator; and
 8. the training/held split, tolerances, frame, translation, inverse, deletion,
    and lawful-domain fixtures.
 
@@ -167,7 +169,7 @@ routes below defeat closure of that claim.
 | one 24-column orbit isometry | **ATTEMPTED** | exact Gram and complete-basis action succeed at every anchor through held `L=6` |
 | unsigned frame permutation | **ATTEMPTED** | it omits exchange signs and therefore does not match the transformed physical pair columns |
 | declared signed-wedge frame action | **ATTEMPTED** | all frame columns and 576 group products succeed with the same sign on both slices |
-| one common stream/contact restriction | **ATTEMPTED** | both separate intertwiners and contact-then-stream composition have zero matrix residual |
+| one common stream/contact restriction | **ATTEMPTED** | both separate intertwiners, the Cycle-230 order, and its reverse comparator have zero matrix residual |
 | all-anchor translation family | **ATTEMPTED** | all translations at every `L=3` source anchor and 729 group products succeed, while cross-anchor state superposition remains unbuilt |
 | identical-pair role reversal | **ATTEMPTED** | both columns acquire one common minus and retain the same tags, rejecting a false two-species reading |
 
@@ -206,12 +208,12 @@ is a prose guard and supplies no physics premise.
 | file and line witness | witness residual | claimed residual | match? |
 |---|---|---|---:|
 | `scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py:397` | exact Gram and 24-column orbit census | one fixed-anchor coherent orbit | yes |
-| `scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py:493` | restricted 24-by-24 action semantics | full-Hilbert physical operator | no; dropped from that claim |
-| `scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py:497` | stream/contact/composed matrix residual on `im(E_x)` | coherent stream/contact orbit | yes |
-| `scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py:788` | declared wedge-sign failures | proper-cubic action on the same orbit | yes |
-| `scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py:795` | translation group products | coherent superposition across anchors | no; covariance of a family is not a position state |
-| `scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py:923` | one-address deletion covariance leakage | load-bearing transitive address set | yes at orbit resolution only |
-| `docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_COHERENT_CUBIC_PAIR_ORBIT_NOTE_2026-07-17.md:73` | relative-state union versus extensive products | bounded global operator support | no; dropped from that claim |
+| `scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py:505` | restricted 24-by-24 action semantics | full-Hilbert physical operator | no; dropped from that claim |
+| `scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py:509` | stream/contact/both-order matrix residuals on `im(E_x)` | coherent stream/contact orbit | yes |
+| `scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py:802` | declared wedge-sign failures | proper-cubic action on the same orbit | yes |
+| `scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py:809` | translation group products | coherent superposition across anchors | no; covariance of a family is not a position state |
+| `scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py:937` | one-address deletion covariance leakage | load-bearing transitive address set | yes at orbit resolution only |
+| `docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_COHERENT_CUBIC_PAIR_ORBIT_NOTE_2026-07-17.md:78` | relative-state union versus extensive products | bounded global operator support | no; dropped from that claim |
 
 Only exact orbit-level matches are retained. Gram, covariance, deletion, and
 state-support residuals are not pooled into coin, position, full-Hilbert, or
@@ -223,7 +225,7 @@ full-Fock evidence.
 |---|---|---|
 | per representative | exact physical stabilizer/tag ray, support 3--19 M2 | preparation word; no negative earned |
 | per address | all twelve perpendicular wedges and both slices | opposite wedges and larger sectors; no negative earned |
-| per block | restricted stream, contact, inverse, and declared composition on 24 columns | actual six-mode coin on this code; no negative earned |
+| per block | restricted stream, contact, inverse, Cycle-230 order, and reverse-order comparator on 24 columns | actual six-mode coin on this code; no negative earned |
 | per anchor | one linear `E_x` at every anchor, tested separately | one state coherent across anchors; no negative earned |
 | lattice-wide | extensive products of bounded factors and covariance of the anchor family | full-Hilbert action and autonomous volume update; no negative earned |
 | full Fock | not tested | `n=0,1,3,4,5,6`, overlapping patches, and sea state remain open; no negative earned |

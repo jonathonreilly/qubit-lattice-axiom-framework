@@ -20,14 +20,12 @@ side of the same supplied surface supplies an independent reading of the
 normalization. This note lands the first theorem package on that route.
 
 What is proved here: the temporal-gauge one-step kernel of the supplied
-Wilson action has a Casimir asymptotic coefficient with the formal shape
-`beta * g_E^2 -> 2 N_c`. The cited matrix theorem has the same algebraic
-shape but supplies no plaquette/magnetic dictionary. Therefore no physical
-same-dial identification between those two packets is claimed; and
-`beta = 2 N_c` is precisely the point where the per-step generator is
-the unit-coefficient canonical kinetic form. This is a kernel-side statement
-plus a formal algebraic comparison, not a three-surface physical
-identification.
+Wilson action has the independently reconstructed Casimir asymptotic
+coefficient `beta * g_{E,R}^2(beta) -> 2 N_c` for each fixed nontrivial
+representation `R`. The point `beta = 2 N_c` is therefore
+precisely where this packet's leading per-step generator is the
+unit-coefficient canonical kinetic form. This is a kernel-side statement;
+no identification with a different scalar slot is claimed.
 
 What is **not** proved here: this note does not derive `beta = 2 N_c` and
 does not remove or replace the surface definition recorded by the bridge
@@ -43,11 +41,7 @@ equivalent to on the operator side.
    `sum_a T_a T_a = (4/3) I_3`, is carried on that chain as a decoration
    cite. This fixes the normalization in which the Casimir values below
    (`4/3`, `3`, `10/3`) are stated.
-2. [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-   — the defined matrix-trace Taylor coefficient and formal identity
-   `beta g^2 = 2n`. It is used only for algebraic comparison and supplies no
-   magnetic-side, plaquette, or physical coupling authority.
-3. [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+2. [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
    — the temporal-gauge reduction of the supplied Wilson action, in which
    the straddling temporal plaquette on a link reduces to the per-link
    class-function plane kernel; that row also carries the positive-kernel
@@ -57,7 +51,7 @@ equivalent to on the operator side.
    scope.
 
 No other physical input is used. The objects defined below
-(`w_R`, `eps_R`, `g_E^2`) are definitions internal to this packet, made on
+(`w_R`, `eps_R`, `g_{E,R}^2`) are definitions internal to this packet, made on
 the supplied surfaces; no new axiom, import, or comparator is introduced.
 
 ## Definitions
@@ -110,40 +104,32 @@ fixes the canonical coordinates. Mechanism companions with their exact
 constants: `U(1)` with kernel `e^{beta cos theta}` has
 `2 beta eps_n -> n^2`; `SU(2)` has `beta eps_j / 2 -> j(j+1)`.
 
-**Theorem K3 (kernel coefficient).** Define the kernel-side label `g_E^2`
-by the unit-mass-normalized reading
-`eps_R = (g_E^2 / 2) C_2(R) (1 + O(1/beta))`. Then
+**Theorem K3 (kernel coefficient).** For each fixed nontrivial `R`, define
+the representation-indexed kernel-side label `g_{E,R}^2(beta)` exactly by
+`g_{E,R}^2(beta) := 2 eps_R(beta) / C_2(R)`. Then
 
 ```text
-beta * g_E^2  ->  2 N_c,
+beta * g_{E,R}^2(beta)  ->  2 N_c.
 ```
 
-the same algebraic form as the defined matrix theorem. This packet proves
-the kernel-side coefficient only. Calling it the same physical dial as a
-magnetic `g_bare` would require a separate dictionary not supplied here.
-At leading order the extracted dial is `R`-independent (the generator is a
-multiple of the canonical Laplacian, not of a representation-dependent
-deformation).
+This packet proves the kernel-side coefficient directly from K2. The
+finite-`beta` label is allowed to depend on `R`; only its leading
+large-`beta` coefficient is `R`-independent.
 
-**Corollary K4 (normalization-point coincidence).** The leading dial map
+**Corollary K4 (unit-coefficient point).** The leading dial map
 `g_lead^2(beta) = 2 N_c / beta` takes the value `1` exactly at
 `beta = 2 N_c` (`= 6` at `N_c = 3`), where the leading per-step generator
 is the unit-coefficient canonical kinetic form `(1/2) Delta`. At that
-point — and only there — the kernel coefficient equals the formal label:
-
-```text
-formal coefficient label      = 1     (defined matrix equality at beta=2n),
-kernel slot       g_E,lead^2  = 1     (per-step generator = Delta / 2).
-```
+point — and only there — the kernel-side leading label is `1` and the
+per-step generator is `Delta/2`.
 
 Mismatched reading, exhibited on the same construction: at `beta = 24` the
 leading generator is `(1/8) Delta` (coefficient `1/4 != 1`); the
 coincidence fails off the point.
 
 This packet does not derive selection of `beta = 2 N_c`. It locates the point
-where its kernel coefficient is one and notes the exact formal algebraic
-coincidence with the defined matrix theorem. It does not identify that
-formal label with a magnetic or coordinate coupling.
+where its kernel coefficient is one. It does not identify that label with a
+magnetic or coordinate coupling.
 
 ## Proof
 
@@ -174,19 +160,16 @@ representations and the `U(1)`/`SU(2)` companions with their exact
 constants (`tau_eff = 1/(2 beta)` for the `U(1)` kernel `e^{beta cos}`,
 `tau_eff = 2/beta` for `SU(2)`, `tau_eff = 3/beta` for `SU(3)`).
 
-**K3.** Substituting K2 into the definition of `g_E^2` gives
-`g_E^2 = 2 eps_R / C_2(R) -> 2 N_c / beta`, i.e. `beta g_E^2 -> 2 N_c`,
-algebraically identical to the formal relation `beta g^2=2n` under `n=N_c`.
-No magnetic interpretation is inherited from that formal relation.
-`R`-independence at leading order is K2's statement that `eps_R` is
+**K3.** Substituting K2 into the definition of `g_{E,R}^2(beta)` gives
+`g_{E,R}^2(beta) = 2 eps_R(beta) / C_2(R) -> 2 N_c / beta`, i.e.
+`beta g_{E,R}^2(beta) -> 2 N_c` for each fixed nontrivial `R`.
+Leading-coefficient `R`-independence is K2's statement that `eps_R` is
 proportional to `C_2(R)` with an `R`-independent coefficient.
 
 **K4.** Exact rational arithmetic on the leading map
 `g_lead^2(beta) = 2 N_c / beta`: value `1` iff `beta = 2 N_c`; at
 `N_c = 3` this is `beta = 6`, where the generator's leading form is
-`(1/2) Delta`; at `beta = 24` it is `(1/8) Delta`. The coordinate-slot
-value `s = 1` is the canonical-coordinate statement of the rigidity chain;
-the formal-label value at `beta = 2 N_c` is the cited matrix identity.
+`(1/2) Delta`; at `beta = 24` it is `(1/8) Delta`.
 
 ## Boundary
 
@@ -205,8 +188,7 @@ This note does not claim:
   `beta -> infinity` leading-coefficient theorems, verified by
   Richardson-extrapolated numeric character integrals at finite `beta`;
 - a continuum running-coupling value or a phenomenological coupling;
-- a dictionary identifying the formal `g` of the matrix theorem with
-  `g_E`, `g_bare`, or any physical coupling;
+- a dictionary identifying any `g_{E,R}` with `g_bare` or any physical coupling;
 - an audit verdict or any effective-status promotion.
 
 The forward surface this opens: the declared normalization bit now has the
@@ -227,13 +209,13 @@ The packet would fail if any of the following were true:
 - `beta * eps_R / N_c` failed to converge to the half-trace Casimir
   `C_2(R)` for any tested representation, or the `U(1)`/`SU(2)`
   companions missed their exact constants (K2);
-- `beta * g_E^2` failed to converge to `2 N_c`, or the extracted dial were
-  representation-dependent at leading order (K3);
+- `beta * g_{E,R}^2(beta)` failed to converge to `2 N_c` for a fixed
+  nontrivial `R`, or the extracted leading coefficient were
+  representation-dependent (K3);
 - the leading dial map failed `g_lead^2(2 N_c) = 1`, or the mismatched
   reading at `beta = 24` failed to give coefficient `1/4` on the same
   construction (K4);
-- the kernel/formal-label coincidence at `beta = 2 N_c` failed in exact
-  arithmetic.
+- the kernel-side unit-coefficient point failed in exact arithmetic.
 
 The runner checks these as source-boundary and construction checks rather
 than audit verdicts.
@@ -249,5 +231,5 @@ python3 scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_20
 Expected:
 
 ```text
-TOTAL: PASS=73 FAIL=0
+TOTAL: PASS=70 FAIL=0
 ```

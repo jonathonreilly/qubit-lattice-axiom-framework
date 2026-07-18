@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_derivation.py
-runner_sha256: 8fcc3596d25467fdcca45b57b28af110e02175227454b81529afcc769dca0081
+runner_sha256: 4dad4b220fc4e40cb0babe324be9313b91e0aa3b60ebb6347809eba38bd91828
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -80,7 +80,7 @@ SECTION E: constraint-vs-convention disambiguation
   [PASS] alternative g^2 = 2 requires beta = 3 != 6  (outside the canonical finite-link scalar slot used by the parent)
   [PASS] alternative g^2 = 4 requires beta = 3/2 != 6  (outside the canonical finite-link scalar slot used by the parent)
   [PASS] finite-link layer: canonical T_a basis carries no extra scalar multiplier  (source-checked in G_BARE_RIGIDITY_THEOREM_NOTE.md)
-  [PASS] formal layer: beta*g^2=2n is exact; a Wilson read additionally requires W-PHYS  (formal source: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+  [PASS] W-PHYS-supplied comparison relation is exact on its conditional surface  (matrix source supplies only w*s^2/(4n); W-PHYS supplies the target)
   [PASS] [BOUNDED] bounded boundary: W-PHYS and SLOT-ID are explicit non-satisfying conditions  (parent source keeps both conditions outside theorem authority)
 
 ========================================================================================
@@ -88,13 +88,13 @@ SECTION F: end-to-end derivation chain (no circular use of g_bare = 1)
 ========================================================================================
   [PASS] Step 1: one-qubit operator algebra -> End(V=C^8) chiral rep built without g_bare input  ({G_mu, G_nu} = 2 delta_munu I_8 verified in Section A)
   [PASS] Step 2: canonical orthonormal su(3) Gram = delta/2 (no g_bare input)  (||Gram - delta/2|| = 1.11e-16)
-  [PASS] Step 3: W-PHYS conditional read gives beta = 2 N_c / g^2  (formal identity verified; physical dictionary remains an explicit condition)
+  [PASS] Step 3: W-PHYS conditional read gives beta = 2 N_c / g^2  (comparison relation is conditional on the explicit W-PHYS target/dictionary)
   [PASS] Step 4: finite-link slot + W-PHYS + SLOT-ID -> conditional beta=6  (SLOT-ID maps s^2=1.0 to g_bare^2; conditional beta=6.0)
 
   Circularity audit:
   - Step 1 uses the Quantum axiom's one-site operator algebra; no beta or g input.
   - Step 2 uses the explicit canonical Gell-Mann basis and checks its half-trace Gram.
-  - Step 3 uses the formal coefficient identity plus supplied W-PHYS.
+  - Step 3 uses the native coefficient plus the target/dictionary supplied by W-PHYS.
   - Step 4 uses rigidity for s^2=1 and explicit SLOT-ID for g_bare^2=s^2.
   - Final beta = 6 follows only under both W-PHYS and SLOT-ID.
   [PASS] conditional arithmetic does not use beta=6 to compute g_bare^2=1  (W-PHYS remains an explicit antecedent, not a derived bridge)
@@ -102,10 +102,10 @@ SECTION F: end-to-end derivation chain (no circular use of g_bare = 1)
 ========================================================================================
 SECTION G: source-side finite-link/Wilson bridge visibility
 ========================================================================================
-  [PASS] [BOUNDED] parent note exists  (/private/tmp/science-fix-wilson-formal-taylor-20260716/docs/G_BARE_DERIVATION_NOTE.md)
-  [PASS] [BOUNDED] bridge note exists  (/private/tmp/science-fix-wilson-formal-taylor-20260716/docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
-  [PASS] [BOUNDED] finite-link rigidity note exists  (/private/tmp/science-fix-wilson-formal-taylor-20260716/docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
-  [PASS] [BOUNDED] Wilson small-a note exists  (/private/tmp/science-fix-wilson-formal-taylor-20260716/docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+  [PASS] [BOUNDED] parent note exists  (/private/tmp/review-pr-5502-wilson-taylor-20260718-0648/docs/G_BARE_DERIVATION_NOTE.md)
+  [PASS] [BOUNDED] bridge note exists  (/private/tmp/review-pr-5502-wilson-taylor-20260718-0648/docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
+  [PASS] [BOUNDED] finite-link rigidity note exists  (/private/tmp/review-pr-5502-wilson-taylor-20260718-0648/docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
+  [PASS] [BOUNDED] Wilson small-a note exists  (/private/tmp/review-pr-5502-wilson-taylor-20260718-0648/docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
   [PASS] [BOUNDED] source marker present: No step uses `beta = 6` as a premise for `g_bare = 1`.
   [PASS] [BOUNDED] source marker present: G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06
   [PASS] [BOUNDED] source marker present: same scalar slot
@@ -114,20 +114,21 @@ SECTION G: source-side finite-link/Wilson bridge visibility
   [PASS] [BOUNDED] source marker present: This note derives neither `W-PHYS`
   [PASS] [BOUNDED] source marker present: `SLOT-ID`
   [PASS] [BOUNDED] source marker present: neither condition chain-satisfies a dependency
-  [PASS] [BOUNDED] source marker present: beta g^2 = 2n
-  [PASS] [BOUNDED] source marker present: They may not cite it as authority for an action surface
+  [PASS] [BOUNDED] source marker present: [x^2 F2] w D(sx) = w s^2/(4n)
+  [PASS] [BOUNDED] source marker present: Any comparison target
+  [PASS] [BOUNDED] source marker present: requires separate authority
   [PASS] [BOUNDED] parent source no longer contains stale beta back-solving symbol
 
 ========================================================================================
 SUMMARY
 ========================================================================================
   EXACT   : PASS = 51,   FAIL = 0
-  BOUNDED : PASS = 16, FAIL = 0
-  TOTAL   : PASS = 67, FAIL = 0
+  BOUNDED : PASS = 17, FAIL = 0
+  TOTAL   : PASS = 68, FAIL = 0
 
   All exact checks passed.
-  The repaired parent chain composes finite-link rigidity with a formal coefficient theorem.
-  A Wilson interpretation remains conditional on explicit W-PHYS and SLOT-ID.
+  The repaired parent chain composes finite-link rigidity with a native matrix coefficient.
+  Its comparison target and Wilson interpretation remain conditional on explicit W-PHYS and SLOT-ID.
   Conditional on both, beta=6 follows after the canonical scalar-slot input;
   neither condition is derived by this runner.
 

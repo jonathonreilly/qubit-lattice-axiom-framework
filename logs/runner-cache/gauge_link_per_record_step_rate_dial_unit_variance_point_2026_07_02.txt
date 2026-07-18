@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py
-runner_sha256: be8039dee94b247c96e08d236992ef3464bc83798bdd7eeeaec5ee57a294f106
+runner_sha256: e3b57bef545306f89db9686c76cd5ed2a76cdb78c2b7ac3e56e6c1297472c3e5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 15.49
+elapsed_sec: 13.74
 status: ok
 ----- stdout -----
 Gauge-link per-record-step rate dial: blindness and the unit-variance point
@@ -38,19 +38,19 @@ SECTION C: Theorem R1 — rate additivity; cross-kernel collapse
 [PASS] cross-kernel collapse on adj(2,1,0): k|W-M| < 1e-3 at finest step (k|W-M|=5.33e-05)
 [PASS] cross-kernel collapse on sym(2,0,0): k|W-M| strictly shrinking under refinement (0.00132 -> 0.00030 -> 0.00007)
 [PASS] cross-kernel collapse on sym(2,0,0): k|W-M| < 1e-3 at finest step (k|W-M|=7.11e-05)
-[PASS] single calibrated number predicts all tested blocks (rate = complete invariant)
+[PASS] single calibrated number predicts the two tested nonfundamental blocks
 
 SECTION D: Theorem R2 — rate-blindness of the named premises
 ------------------------------------------------------------------------------
-[PASS] tau=1/8: positivity/record-compatibility (0 < w_R <= 1, all reps)
+[PASS] tau=1/8: positivity/record-compatibility (0 < w_R <= 1, enumerated reps)
 [PASS] tau=1/8: covariant-channel form (conjugate-rep scalar symmetry)
 [PASS] tau=1/8: composition law w(tau)^2 = w(2 tau)
 [PASS] tau=1/8: diffusive moment law <x^2> = 2 tau (m2=0.25000000)
-[PASS] tau=1/2: positivity/record-compatibility (0 < w_R <= 1, all reps)
+[PASS] tau=1/2: positivity/record-compatibility (0 < w_R <= 1, enumerated reps)
 [PASS] tau=1/2: covariant-channel form (conjugate-rep scalar symmetry)
 [PASS] tau=1/2: composition law w(tau)^2 = w(2 tau)
 [PASS] tau=1/2: diffusive moment law <x^2> = 2 tau (m2=1.00000000)
-[PASS] tau=3: positivity/record-compatibility (0 < w_R <= 1, all reps)
+[PASS] tau=3: positivity/record-compatibility (0 < w_R <= 1, enumerated reps)
 [PASS] tau=3: covariant-channel form (conjugate-rep scalar symmetry)
 [PASS] tau=3: composition law w(tau)^2 = w(2 tau)
 [PASS] tau=3: diffusive moment law <x^2> = 2 tau (m2=6.00000000)
@@ -68,8 +68,7 @@ SECTION F: exact formal layer — unit variance and the leading beta map
 ------------------------------------------------------------------------------
 [PASS] tau = 1/2 gives per-direction moment 1 (unit variance per step)
 [PASS] tau = 1/2 maps to beta = N_c / tau = 6
-[PASS] consistency with the formal identity: g_formal^2(beta(tau)) = 2 N_c / beta = 2 tau
-[PASS] formal coincidence at tau = 1/2: g_formal^2 = 1
+[PASS] defined leading map gives N_c/beta(tau)=tau
 [PASS] mismatched family: tau = 1/8 -> beta = 24, moment 1/4; tau = 3 -> beta = 1, moment 6
 [PASS] off-point coincidence failure: moments != 1 exactly at tau in {1/8, 3}
 
@@ -77,7 +76,6 @@ SECTION G: source-boundary guards
 ------------------------------------------------------------------------------
 [PASS] rate-dial note exists (docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md)
 [PASS] finite-link rigidity note exists (docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
-[PASS] Wilson small-a note exists (docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
 [PASS] RP temporal-gauge bridge note exists (docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
 [PASS] record classical semigroup boundary note exists (docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md)
 [PASS] scale-reference primitive note exists (docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md)
@@ -87,7 +85,7 @@ SECTION G: source-boundary guards
 [PASS] note contains marker: does not derive `tau = 1/2`
 [PASS] note contains marker: per-record-step
 [PASS] note contains marker: rate-blind
-[PASS] note contains marker: complete surviving invariant
+[PASS] note contains marker: tested cross-kernel convergence
 [PASS] note contains marker: unit-variance
 [PASS] note contains marker: tau_lead(beta):=N_c/beta
 [PASS] note contains marker: distinguished heat-kernel setting
@@ -99,8 +97,6 @@ SECTION G: source-boundary guards
 [PASS] note omits forbidden marker: audit_status:
 [PASS] rigidity contains marker: no independent scalar-normalization freedom
 [PASS] rigidity contains marker: Tr(T_a T_b) = delta_ab / 2
-[PASS] Wilson contains marker: beta g^2 = 2n
-[PASS] Wilson contains marker: authority for an action surface
 [PASS] RP bridge contains marker: temporal gauge
 [PASS] RP bridge contains marker: plane positive kernel
 [PASS] semigroup boundary contains marker: continuous Markov semigroups live on the probability/ensemble
@@ -108,7 +104,7 @@ SECTION G: source-boundary guards
 
 Summary
 ------------------------------------------------------------------------------
-TOTAL: PASS=76 FAIL=0
+TOTAL: PASS=72 FAIL=0
 Rate-dial check passed.
 
 ----- stderr -----

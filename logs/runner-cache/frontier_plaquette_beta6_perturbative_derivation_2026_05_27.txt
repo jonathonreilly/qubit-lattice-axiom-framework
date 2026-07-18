@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
-runner_sha256: a49ec81753651a9e0ab403a7a70f66777ade177250d003d3d2c716e2faad776c
+runner_sha256: 88600a3e4226fca3472d54d992155323a6425895911b680cb3ac31f49f468f8a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 Plaquette beta=6 perturbative-derivation repaired diagnostic runner
@@ -16,8 +16,8 @@ T0: explicit-input runner-local diagnostic license
 PASS: note records 2026-06-12 source-boundary demotion
       demotion and explicit-input sections present
 PASS: note records explicit runner-local finite packet I_PT
-      packet separates formal algebra, W-PHYS, and runner-local values
-PASS: note records only formal coefficient algebra as the explicit dependency
+      packet separates native algebra, W-PHYS, and runner-local values
+PASS: note records only the native matrix coefficient as the explicit dependency
       W-PHYS remains an explicit non-satisfying condition rather than dependency-laundered
 PASS: note licenses unresolved NSPT/MC/F2 inputs for this diagnostic only
       remaining explicit runner-local inputs and alpha/beta boundaries carry no downstream license
@@ -39,14 +39,14 @@ PASS: note keeps non-perturbative routes open
       finite perturbative route only
 
 ==============================================================================
-C1: source-wired formal coefficient edge + explicit W-PHYS condition
+C1: source-wired native coefficient + explicit W-PHYS condition
 ==============================================================================
-PASS: matrix theorem supplies beta=2n/g^2 only as formal coefficient algebra
-      formal identity is present in the dependency source
+PASS: matrix theorem supplies only the native w*s^2/(4n) coefficient
+      native coefficient is present without a target equation
 PASS: matrix theorem does not contain a beta=6/g_bare specialization
       physical specialization remains runner-local
-PASS: matrix theorem explicitly forbids action/coupling inference
-      the dependency supplies formal algebra, not W-PHYS
+PASS: matrix theorem leaves external targets and parameter equations outside scope
+      the dependency supplies native Taylor algebra, not W-PHYS
 PASS: explicit W-PHYS condition gives beta=6 at N_c=3, g_bare=1
       beta = 6.0
 PASS: g_bare^2 = 2 N_c / beta = 1 at beta=6
@@ -334,7 +334,7 @@ PASS: explicit runner-local MC comparator 0.5934 enters only as comparator (not 
 T10: paired note exists with matching status authority disclaimer
 ==============================================================================
 PASS: note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
-      length = 33445 chars
+      length = 33751 chars
 PASS: note declares Status authority: independent audit lane only
       audit-lane authority pattern present
 PASS: note declares no new axioms / no new primitives

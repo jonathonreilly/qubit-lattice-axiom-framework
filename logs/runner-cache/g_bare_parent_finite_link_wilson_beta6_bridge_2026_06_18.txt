@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
-runner_sha256: 4cb124435205929dac938359b8fe7d81361e859643aaa33329429415a60ac219
+runner_sha256: 501c4f9e988de7db4c7fe807d2abf267c952baeb915ecbf9e5b292bc1e929fa4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 G_BARE finite-link/Wilson split-redundancy theorem check
@@ -60,19 +60,19 @@ SECTION D: Theorem 3 — W-PHYS-conditional matched slot
 ------------------------------------------------------------------------------
 [PASS] tested Wilson matching domain has beta > 0
 [PASS] beta=6.0: constructed action coefficient k -> beta/(4 N_c) (k=0.500163, pred=0.500000)
-[PASS] beta=6.0: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.999675, pred=1.000000)
+[PASS] beta=6.0: W-PHYS-conditional matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.999675, pred=1.000000)
 [PASS] beta=6.0: gamma* is the positive matched-coupling root (gamma*=0.999838)
 [PASS] beta=6.0: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.998050)
 [PASS] beta=24.0: constructed action coefficient k -> beta/(4 N_c) (k=2.000650, pred=2.000000)
-[PASS] beta=24.0: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.249919, pred=0.250000)
+[PASS] beta=24.0: W-PHYS-conditional matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.249919, pred=0.250000)
 [PASS] beta=24.0: gamma* is the positive matched-coupling root (gamma*=0.499919)
 [PASS] beta=24.0: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.998050)
 [PASS] beta=1.5: constructed action coefficient k -> beta/(4 N_c) (k=0.125041, pred=0.125000)
-[PASS] beta=1.5: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=3.998700, pred=4.000000)
+[PASS] beta=1.5: W-PHYS-conditional matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=3.998700, pred=4.000000)
 [PASS] beta=1.5: gamma* is the positive matched-coupling root (gamma*=1.999675)
 [PASS] beta=1.5: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.998050)
 [PASS] beta=12.0: constructed action coefficient k -> beta/(4 N_c) (k=1.000325, pred=1.000000)
-[PASS] beta=12.0: constructed matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.499838, pred=0.500000)
+[PASS] beta=12.0: W-PHYS-conditional matched slot gamma*^2 -> 2 N_c / beta (gamma*^2=0.499838, pred=0.500000)
 [PASS] beta=12.0: gamma* is the positive matched-coupling root (gamma*=0.706992)
 [PASS] beta=12.0: constructed product beta * gamma*^2 -> 2 N_c (beta*gamma*^2=5.998050)
 [PASS] matched-slot construction converges as a -> 0 (error ratio=4.220)
@@ -127,9 +127,9 @@ SECTION G: source-boundary guards
 [PASS] parent omits forbidden marker: beta_canonical
 [PASS] rigidity contains marker: finite-link
 [PASS] rigidity contains marker: no independent scalar-normalization freedom
-[PASS] Wilson contains marker: beta g^2 = 2n
-[PASS] Wilson contains marker: C_left = C_right
-[PASS] Wilson contains marker: They may not cite it as authority for an action surface
+[PASS] matrix theorem contains marker: [x^2 F2] w D(sx) = w s^2/(4n)
+[PASS] matrix theorem contains marker: Any comparison target
+[PASS] matrix theorem contains marker: requires separate authority
 
 Summary
 ------------------------------------------------------------------------------

@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
-"""Exact certificate for a defined matrix-trace Taylor theorem.
+"""Certificate for an abstract Hermitian matrix-trace deficit theorem.
 
-Let n >= 2, let Hermitian traceless matrices T_a satisfy
+Let n >= 1, let Hermitian matrices T_a satisfy
 Tr(T_a T_b)=delta_ab/2, let A=sum_a f_a T_a for real f_a, and define
 
     D(x) = 1 - Re Tr exp(i x A) / n.
 
-This module certifies D(0)=D'(0)=0,
-D''(0)=Tr(A^2)/n=sum_a f_a^2/(2n), and the x^2 coefficient
-sum_a f_a^2/(4n).  For formal positive beta and g it also certifies
-
-    beta*g^2/(4n) = 1/2  <=>  beta*g^2 = 2n.
-
-No physical action, plaquette, continuum, gauge-field, or coupling
-identification is inferred.  Modes ``normal``, ``independent``, ``hostile``,
-and ``intentional-failure`` provide distinct proof and falsification routes.
+The runner reconstructs the derivatives, quadratic coefficient, global
+fourth-order remainder bound, and the coefficient of w D(sx).  Normal,
+independent, hostile, and intentional-failure modes provide distinct exact,
+numerical, and falsification routes.
 """
 
 from __future__ import annotations
@@ -23,6 +18,7 @@ import argparse
 from dataclasses import dataclass
 from typing import Callable
 
+import numpy as np
 import sympy as sp
 
 
@@ -34,12 +30,8 @@ class HypothesisViolation(ValueError):
     """Raised when a matrix packet violates the theorem hypotheses."""
 
 
-class CoefficientMismatch(ValueError):
-    """Raised when a proposed coefficient identity is not the theorem's."""
-
-
-class PhysicalInferenceError(ValueError):
-    """Raised when formal algebra is asked to make a physical inference."""
+class FormulaMismatch(ValueError):
+    """Raised when a recomputed mutation disagrees with the theorem."""
 
 
 @dataclass(frozen=True)
@@ -55,6 +47,7 @@ class TaylorCertificate:
     coefficient_norm: sp.Expr
     trace_a: sp.Expr
     trace_a2: sp.Expr
+    trace_a4: sp.Expr
     d0: sp.Expr
     d1: sp.Expr
     d2: sp.Expr
@@ -63,17 +56,14 @@ class TaylorCertificate:
 
 
 FIXTURES = (
-    "wrong-trace-normalization",
-    "nontraceless-linear-term",
-    "complex-coefficient",
-    "wrong-one-over-n",
-    "wrong-second-derivative-half",
-    "wrong-quarter-vs-half",
-    "beta-g2-equals-n",
-    "beta-equals-2n-over-g",
-    "inconsistent-actual-beta",
-    "wrong-remainder-constant",
-    "illicit-physical-inference",
+    "wrong-gram-factor",
+    "omitted-one-over-n",
+    "derivative-vs-coefficient",
+    "false-remainder-constant",
+    "non-hermitian-input",
+    "false-complex-linear-zero",
+    "wrong-rescaling-power",
+    "illicit-target-inference",
 )
 
 
@@ -118,14 +108,24 @@ def pauli_packet() -> MatrixPacket:
     return MatrixPacket(2, generators, (f1, f2, f3))
 
 
+def one_dimensional_packet() -> MatrixPacket:
+    """A valid n=1, nontraceless packet."""
+    return MatrixPacket(
+        1,
+        (sp.Matrix([[1 / sp.sqrt(2)]]),),
+        (sp.sqrt(2),),
+    )
+
+
 def diagonal_independent_packet() -> MatrixPacket:
-    """A separate n=3 spectral fixture, not constructed from Pauli matrices."""
-    generator = sp.diag(sp.Rational(1, 2), sp.Rational(-1, 2), 0)
-    return MatrixPacket(3, (generator,), (sp.Integer(1),))
+    """An n=4 fixture with repeated, zero, positive, and negative spectrum."""
+    t1 = sp.diag(sp.Rational(1, 2), sp.Rational(-1, 2), 0, 0)
+    t2 = sp.diag(0, 0, sp.Rational(1, 2), sp.Rational(-1, 2))
+    return MatrixPacket(4, (t1, t2), (sp.Integer(2), sp.Integer(2)))
 
 
 def complex_offdiagonal_packet() -> MatrixPacket:
-    """An independent n=4 packet with two complex off-diagonal generators."""
+    """An n=4 packet with genuinely complex off-diagonal entries."""
     real = sp.zeros(4)
     real[0, 3] = real[3, 0] = sp.Rational(1, 2)
     imag = sp.zeros(4)
@@ -135,10 +135,10 @@ def complex_offdiagonal_packet() -> MatrixPacket:
 
 
 def validate_packet(packet: MatrixPacket) -> None:
-    """Enforce exactly the algebraic hypotheses appearing in the theorem."""
+    """Enforce exactly the hypotheses used by the theorem."""
     n = packet.dimension
-    if n < 2:
-        raise HypothesisViolation("dimension n must be at least two")
+    if n < 1:
+        raise HypothesisViolation("dimension n must be positive")
     if len(packet.generators) != len(packet.coefficients):
         raise HypothesisViolation("generator and coefficient counts differ")
     for index, generator in enumerate(packet.generators):
@@ -146,8 +146,6 @@ def validate_packet(packet: MatrixPacket) -> None:
             raise HypothesisViolation(f"T_{index} has the wrong dimension")
         if not matrix_equal(generator, generator.conjugate().T):
             raise HypothesisViolation(f"T_{index} is not Hermitian")
-        if sp.simplify(sp.trace(generator)) != 0:
-            raise HypothesisViolation(f"T_{index} is not traceless")
     for index, coefficient in enumerate(packet.coefficients):
         if sp.simplify(coefficient).is_real is not True:
             raise HypothesisViolation(
@@ -161,21 +159,15 @@ def validate_packet(packet: MatrixPacket) -> None:
     )
     expected = sp.eye(len(packet.generators)) / 2
     if not matrix_equal(gram, expected):
-        raise HypothesisViolation(
-            f"trace Gram is {gram}, expected delta_ab/2"
-        )
+        raise HypothesisViolation(f"trace Gram is {gram}, expected delta_ab/2")
 
 
 def packet_hypotheses_hold(packet: MatrixPacket) -> bool:
-    """Boolean wrapper used only after the exception route is available."""
     try:
         validate_packet(packet)
     except HypothesisViolation:
         return False
-    return (
-        packet.dimension >= 2
-        and len(packet.generators) == len(packet.coefficients)
-    )
+    return packet.dimension >= 1 and len(packet.generators) == len(packet.coefficients)
 
 
 def matrix_from_packet(packet: MatrixPacket) -> sp.Matrix:
@@ -186,80 +178,69 @@ def matrix_from_packet(packet: MatrixPacket) -> sp.Matrix:
 
 
 def certify_by_derivatives(packet: MatrixPacket) -> TaylorCertificate:
-    """Normal route: exact matrix traces and derivatives at x=0."""
+    """Normal route: exact matrix traces and derivatives at zero."""
     validate_packet(packet)
     n = sp.Integer(packet.dimension)
     matrix_a = matrix_from_packet(packet)
     coefficient_norm = sp.expand(sum(value**2 for value in packet.coefficients))
     trace_a = sp.simplify(sp.trace(matrix_a))
     trace_a2 = sp.expand(sp.trace(matrix_a**2))
-
+    trace_a4 = sp.expand(sp.trace(matrix_a**4))
     # For Z(x)=1-Tr exp(i x A)/n, Z^(k)(0)=-(i^k/n)Tr(A^k).
     # D=Re Z.  Hermiticity makes Tr(A) real, hence Re(-i Tr(A)/n)=0.
     # D(0) is evaluated from the defining deficit at x=0, not assigned.
     zero_exponential = (sp.I * sp.Integer(0) * matrix_a).exp()
     d0 = sp.simplify(1 - sp.re(sp.trace(zero_exponential)) / n)
     d1 = sp.simplify(sp.re(-sp.I * trace_a / n))
-    d2 = sp.simplify(sp.re(sp.trace(matrix_a**2) / n))
-    quadratic = sp.simplify(d2 / 2)
-    complex_linear = sp.simplify(-sp.I * trace_a / n)
+    d2 = sp.simplify(sp.re(trace_a2 / n))
     return TaylorCertificate(
         dimension=packet.dimension,
         coefficient_norm=coefficient_norm,
         trace_a=trace_a,
         trace_a2=trace_a2,
+        trace_a4=trace_a4,
         d0=d0,
         d1=d1,
         d2=d2,
-        quadratic_coefficient=quadratic,
-        complex_linear_coefficient=complex_linear,
+        quadratic_coefficient=sp.simplify(d2 / 2),
+        complex_linear_coefficient=sp.simplify(-sp.I * trace_a / n),
     )
 
 
-def formal_coefficient_residual(
-    beta: sp.Expr, g: sp.Expr, n: sp.Expr, right: sp.Expr = sp.Rational(1, 2)
-) -> sp.Expr:
-    return sp.factor(beta * g**2 / (4 * n) - right)
+def expect_rejection(
+    label: str,
+    exception_type: type[Exception],
+    operation: Callable[[], object],
+    record_check: bool = True,
+) -> tuple[bool, str]:
+    caught: Exception | None = None
+    try:
+        operation()
+    except Exception as exc:
+        caught = exc
+    ok = isinstance(caught, exception_type)
+    detail = str(caught) if caught is not None else "mutation was accepted"
+    if record_check:
+        check(label, ok, detail)
+    return ok, detail
 
 
-def require_canonical_coefficient_equation(
-    beta: sp.Expr,
-    g: sp.Expr,
-    n: sp.Expr,
-    proposed_product: sp.Expr,
-    proposed_beta: sp.Expr,
-    right: sp.Expr = sp.Rational(1, 2),
-) -> None:
-    """Reject altered, inconsistent, or non-canonical coefficient formulas."""
-    canonical_product = 2 * n
-    canonical_beta = 2 * n / g**2
-    reasons: list[str] = []
-    if sp.simplify(right - sp.Rational(1, 2)) != 0:
-        reasons.append("C_right is not 1/2")
-    if sp.simplify(proposed_product - canonical_product) != 0:
-        reasons.append("proposed beta*g^2 product is not 2n")
-    if sp.simplify(proposed_beta - canonical_beta) != 0:
-        reasons.append("proposed beta solution is not 2n/g^2")
-    if sp.simplify(beta - proposed_beta) != 0:
-        reasons.append("actual beta does not equal the proposed beta")
-    if sp.simplify(beta * g**2 - proposed_product) != 0:
-        reasons.append("actual beta*g^2 does not equal the proposed product")
-    if reasons:
-        raise CoefficientMismatch("; ".join(reasons))
-    residual = formal_coefficient_residual(beta, g, n, right=right)
-    if sp.simplify(residual) != 0:
-        raise CoefficientMismatch("proposed formulas do not zero the residual")
-
-
-def infer_physical_meaning(label: str) -> None:
-    """Fail closed: no physical dictionary is part of the theorem packet."""
-    raise PhysicalInferenceError(
-        f"formal coefficient certificate cannot infer physical label {label!r}"
+def formal_rescaled_quadratic_term() -> tuple[sp.Expr, sp.Expr, tuple[sp.Symbol, ...]]:
+    """Derive the rescaled x^2 F2 term from D''=Tr(A^2)/n and Tr(A^2)=F2/2."""
+    x, f2_symbol, w, s = sp.symbols("x F2 w s", real=True)
+    dimension = sp.symbols("n", integer=True, positive=True)
+    trace_a2 = sp.symbols("trace_A2", real=True)
+    d2_from_trace = trace_a2 / dimension
+    quadratic_term = (d2_from_trace / 2) * x**2
+    rescaled = sp.expand(w * quadratic_term.subs(x, s * x)).subs(
+        trace_a2, f2_symbol / 2
     )
+    coefficient = sp.Poly(rescaled, x, f2_symbol).coeff_monomial(x**2 * f2_symbol)
+    return rescaled, sp.simplify(coefficient), (x, f2_symbol, w, s, dimension)
 
 
 def normal_route() -> None:
-    section("Part A: normal exact derivative and Gram-contraction route")
+    section("Part A: exact derivative, Gram, remainder, and rescaling route")
     packet = pauli_packet()
     certificate = certify_by_derivatives(packet)
     n = sp.Integer(packet.dimension)
@@ -267,41 +248,34 @@ def normal_route() -> None:
     expected_d2 = certificate.coefficient_norm / (2 * n)
     expected_quadratic = certificate.coefficient_norm / (4 * n)
 
-    check("A1 packet dimension is n=2", packet.dimension == 2)
-    check("A2 all matrices satisfy the theorem hypotheses", packet_hypotheses_hold(packet))
-    check("A3 Tr(A)=0", certificate.trace_a == 0, str(certificate.trace_a))
+    check("A1 packet has positive dimension", packet.dimension > 0)
+    check("A2 supplied packet satisfies Hermiticity and the half-Gram relation", packet_hypotheses_hold(packet))
+    check("A3 assembled A is Hermitian", matrix_equal(matrix_from_packet(packet), matrix_from_packet(packet).conjugate().T))
     check(
-        "A4 Gram contraction gives Tr(A^2)=sum f_a^2/2",
+        "A4 Gram contraction gives Tr(A^2)=F2/2",
         sp.simplify(certificate.trace_a2 - expected_trace_a2) == 0,
         str(certificate.trace_a2),
     )
     check("A5 D(0)=0", certificate.d0 == 0)
     check("A6 D'(0)=0", certificate.d1 == 0)
     check(
-        "A7 D''(0)=sum f_a^2/(2n)",
+        "A7 D''(0)=Tr(A^2)/n=F2/(2n)",
         sp.simplify(certificate.d2 - expected_d2) == 0,
         str(certificate.d2),
     )
     check(
-        "A8 [x^2]D=D''(0)/2=sum f_a^2/(4n)",
+        "A8 [x^2]D=D''(0)/2=F2/(4n)",
         sp.simplify(certificate.quadratic_coefficient - expected_quadratic) == 0,
         str(certificate.quadratic_coefficient),
-    )
-    check(
-        "A9 complex deficit has no linear term on the traceless packet",
-        certificate.complex_linear_coefficient == 0,
     )
 
     y = sp.symbols("y", real=True)
     scalar_deficit = 1 - sp.cos(y)
+    check("A9 the scalar deficit has fourth derivative -cos(y)", sp.diff(scalar_deficit, y, 4) == -sp.cos(y))
     check(
-        "A10 the scalar deficit has fourth derivative -cos(y)",
-        sp.diff(scalar_deficit, y, 4) == -sp.cos(y),
-    )
-    check(
-        "A11 the fourth derivative has absolute value at most one for real y",
-        y.is_real is True
-        and sp.trigsimp(1 - sp.cos(y) ** 2) == sp.sin(y) ** 2,
+        "A10 the fourth derivative is globally bounded by one on the real line",
+        sp.trigsimp(1 - sp.cos(y) ** 2) == sp.sin(y) ** 2
+        and sp.ask(sp.Q.nonnegative(sp.sin(y) ** 2)) is True,
         "1-cos(y)^2=sin(y)^2>=0",
     )
     matrix_a = matrix_from_packet(packet)
@@ -310,8 +284,8 @@ def normal_route() -> None:
         for eigenvalue, multiplicity in matrix_a.eigenvals().items()
     )
     check(
-        "A12 spectral fourth moment equals Tr(A^4)",
-        sp.simplify(eigenvalue_fourth_sum - sp.trace(matrix_a**4)) == 0,
+        "A11 the spectral fourth moment equals Tr(A^4)",
+        sp.simplify(eigenvalue_fourth_sum - certificate.trace_a4) == 0,
     )
 
     zero_packet = MatrixPacket(
@@ -321,296 +295,244 @@ def normal_route() -> None:
     )
     zero_certificate = certify_by_derivatives(zero_packet)
     check(
-        "A13 zero A has zero derivative, quadratic coefficient, and fourth moment",
+        "A12 zero A saturates the identities and bound at zero",
         zero_certificate.d2 == 0
         and zero_certificate.quadratic_coefficient == 0
-        and sp.trace(matrix_from_packet(zero_packet) ** 4) == 0,
+        and zero_certificate.trace_a4 == 0,
     )
 
-    beta, g, dimension = sp.symbols("beta g n", positive=True)
-    residual = formal_coefficient_residual(beta, g, dimension)
+    one_packet = one_dimensional_packet()
+    one_certificate = certify_by_derivatives(one_packet)
+    check("A13 n=1 is allowed when the supplied Gram relation holds", packet_hypotheses_hold(one_packet))
     check(
-        "A14 coefficient residual factors as (beta*g^2-2n)/(4n)",
-        sp.simplify(residual - (beta * g**2 - 2 * dimension) / (4 * dimension)) == 0,
-        str(residual),
-    )
-    solved = sp.solve(sp.Eq(residual, 0), beta)
-    check(
-        "A15 coefficient equality solves uniquely to beta=2n/g^2",
-        len(solved) == 1 and sp.simplify(solved[0] - 2 * dimension / g**2) == 0,
-        str(solved),
-    )
-    require_canonical_coefficient_equation(
-        beta=2 * dimension / g**2,
-        g=g,
-        n=dimension,
-        proposed_product=2 * dimension,
-        proposed_beta=2 * dimension / g**2,
-    )
-    canonical_residual = formal_coefficient_residual(
-        2 * dimension / g**2, g, dimension
+        "A14 tracelessness is unnecessary for the real deficit derivative",
+        one_certificate.trace_a == 1 and one_certificate.d1 == 0,
+        f"Tr(A)={one_certificate.trace_a}, D'(0)={one_certificate.d1}",
     )
     check(
-        "A16 canonical coefficient packet has zero exact residual",
-        sp.simplify(canonical_residual) == 0,
-        str(canonical_residual),
+        "A15 the n=1 packet has D''(0)=1 and [x^2]D=1/2",
+        one_certificate.d2 == 1 and one_certificate.quadratic_coefficient == sp.Rational(1, 2),
+    )
+    check(
+        "A16 its complex deficit retains the nonzero linear coefficient -i",
+        one_certificate.complex_linear_coefficient == -sp.I,
+        str(one_certificate.complex_linear_coefficient),
+    )
+
+    rescaled_term, native, formal_symbols = formal_rescaled_quadratic_term()
+    _, _, w, s, dimension = formal_symbols
+    check(
+        "A17 extracting x^2*F2 after substitution in w D(sx) gives w*s^2/(4n)",
+        sp.simplify(native - w * s**2 / (4 * dimension)) == 0,
+        f"term={rescaled_term}, coefficient={native}",
+    )
+    check(
+        "A18 scalar rescaling is quadratic in s",
+        sp.simplify(native.subs(s, 3 * s) - 9 * native) == 0,
     )
 
 
 def independent_route() -> None:
-    section("Part B: independent spectral and power-series route")
+    section("Part B: independent spectral power-series and numerical route")
     packet = diagonal_independent_packet()
     validate_packet(packet)
-    certificate = certify_by_derivatives(packet)
+    matrix_a = matrix_from_packet(packet)
+    spectrum = matrix_a.eigenvals()
     x = sp.symbols("x", real=True)
-    # The spectrum is read directly from the independently supplied diagonal
-    # matrix: {1/2,-1/2,0}.  Hence D=2(1-cos(x/2))/3.
-    spectral_d = sp.Rational(2, 3) * (1 - sp.cos(x / 2))
+
+    # Read the spectrum directly.  This route does not call the normal
+    # derivative certificate or import its expected-value table.
+    spectral_d = 1 - sum(
+        multiplicity * sp.cos(x * eigenvalue)
+        for eigenvalue, multiplicity in spectrum.items()
+    ) / packet.dimension
     series = sp.series(spectral_d, x, 0, 6).removeO().expand()
-    x2 = sp.expand(series).coeff(x, 2)
-    x4 = sp.expand(series).coeff(x, 4)
-    expected_x2 = sp.Rational(1, 12)
-    expected_x4 = -sp.Rational(1, 576)
-    check("B1 independent packet satisfies all hypotheses", packet_hypotheses_hold(packet))
+    trace_a2 = sp.trace(matrix_a**2)
+    trace_a4 = sp.trace(matrix_a**4)
+
+    check("B1 independent packet satisfies the supplied hypotheses", packet_hypotheses_hold(packet))
     check(
-        "B2 spectrum is exactly {1/2,-1/2,0}",
-        matrix_from_packet(packet).eigenvals()
-        == {sp.Rational(1, 2): 1, sp.Rational(-1, 2): 1, sp.Integer(0): 1},
+        "B2 spectrum contains repeated positive/negative eigenvalues and no missing multiplicity",
+        spectrum == {sp.Integer(1): 2, sp.Integer(-1): 2},
+        str(spectrum),
     )
     check("B3 spectral formula gives D(0)=0", spectral_d.subs(x, 0) == 0)
     check("B4 spectral formula gives D'(0)=0", sp.diff(spectral_d, x).subs(x, 0) == 0)
+    check("B5 direct spectrum gives D''(0)=1", sp.diff(spectral_d, x, 2).subs(x, 0) == 1)
+    check("B6 direct power series gives [x^2]D=1/2", series.coeff(x, 2) == sp.Rational(1, 2), str(series))
+    check("B7 direct power series gives [x^4]D=-1/24", series.coeff(x, 4) == -sp.Rational(1, 24))
+    check("B8 spectrum reconstructs Tr(A^2)=4", trace_a2 == 4)
+    check("B9 spectrum reconstructs Tr(A^4)=4", trace_a4 == 4)
     check(
-        "B5 spectral formula gives D''(0)=1/6",
-        sp.diff(spectral_d, x, 2).subs(x, 0) == sp.Rational(1, 6),
+        "B10 signed fourth coefficient reaches -Tr(A^4)/(24n)",
+        series.coeff(x, 4) == -trace_a4 / (24 * packet.dimension),
     )
-    check("B6 independent x^2 coefficient is 1/12", x2 == expected_x2, str(series))
-    check("B7 independent x^4 coefficient is -1/576", x4 == expected_x4, str(series))
-    check(
-        "B8 matrix-derivative and spectral routes agree on D''(0)",
-        certificate.d2 == sp.Rational(1, 6),
-        str(certificate.d2),
-    )
-    check(
-        "B9 matrix-derivative and power-series routes agree on [x^2]D",
-        certificate.quadratic_coefficient == x2,
-    )
-    # The fourth-order coefficient equals -Tr(A^4)/(24n), which is the
-    # signed leading remainder and lies at the universal absolute bound.
-    matrix_a = matrix_from_packet(packet)
-    remainder_x4 = -sp.trace(matrix_a**4) / (24 * packet.dimension)
-    check("B10 x^4 coefficient equals -Tr(A^4)/(24n)", x4 == remainder_x4)
 
+    # Rank-deficient, repeated-zero, and negative-eigenvalue case.
+    rank_packet = MatrixPacket(4, packet.generators, (sp.Integer(2), sp.Integer(0)))
+    validate_packet(rank_packet)
+    rank_a = matrix_from_packet(rank_packet)
+    rank_spectrum = rank_a.eigenvals()
+    check(
+        "B11 rank-deficient spectrum keeps repeated zeros and both signs",
+        rank_spectrum == {sp.Integer(1): 1, sp.Integer(-1): 1, sp.Integer(0): 2},
+        str(rank_spectrum),
+    )
+
+    # Genuinely complex-off-diagonal Hermitian packet, reconstructed with
+    # NumPy eigenvalues and scalar cosine rather than SymPy derivatives.
     complex_packet = complex_offdiagonal_packet()
     validate_packet(complex_packet)
-    complex_a = matrix_from_packet(complex_packet)
-    complex_spectrum = complex_a.eigenvals()
+    complex_a_sp = matrix_from_packet(complex_packet)
+    complex_a = np.array(complex_a_sp.tolist(), dtype=complex)
+    eigenvalues = np.linalg.eigvalsh(complex_a)
+    f2 = float(sum(float(value) ** 2 for value in complex_packet.coefficients))
     check(
-        "B11 independent n=4 complex off-diagonal packet satisfies all hypotheses",
-        packet_hypotheses_hold(complex_packet),
+        "B12 complex-off-diagonal A is Hermitian and non-real",
+        np.linalg.norm(complex_a - complex_a.conj().T) < 1e-14
+        and np.linalg.norm(complex_a.imag) > 1.0,
     )
     check(
-        "B12 n=4 packet spectrum is {+sqrt(13)/2,-sqrt(13)/2,0,0}",
-        complex_spectrum
-        == {
-            sp.sqrt(13) / 2: 1,
-            -sp.sqrt(13) / 2: 1,
-            sp.Integer(0): 2,
-        },
-        str(complex_spectrum),
+        "B13 numerical spectrum is {-sqrt(13)/2,0,0,+sqrt(13)/2}",
+        np.allclose(eigenvalues, [-np.sqrt(13) / 2, 0.0, 0.0, np.sqrt(13) / 2], atol=1e-12),
+        str(eigenvalues),
     )
-    complex_spectral_d = sp.Rational(1, 2) * (
-        1 - sp.cos(sp.sqrt(13) * x / 2)
-    )
-    complex_series = sp.series(complex_spectral_d, x, 0, 6).removeO().expand()
-    complex_certificate = certify_by_derivatives(complex_packet)
+    reconstructions = []
+    for h in (1e-2, 1e-3, 1e-4):
+        # 1-cos(z)=2 sin^2(z/2) avoids cancellation at small z.
+        d_h = float(np.mean(2.0 * np.sin(0.5 * h * eigenvalues) ** 2))
+        d_2h = float(np.mean(2.0 * np.sin(h * eigenvalues) ** 2))
+        reconstructions.append((16.0 * d_h - d_2h) / (6.0 * h**2))
+    expected_d2 = f2 / (2.0 * complex_packet.dimension)
     check(
-        "B13 n=4 spectral route gives D''(0)=13/8",
-        sp.diff(complex_spectral_d, x, 2).subs(x, 0) == sp.Rational(13, 8)
-        and complex_certificate.d2 == sp.Rational(13, 8),
+        "B14 stable finite differences across three step sizes give D''(0)=F2/(2n)",
+        max(abs(value - expected_d2) for value in reconstructions) < 3e-9,
+        "reconstructed=" + ",".join(f"{value:.12f}" for value in reconstructions),
     )
+    fourth_moment = float(np.sum(eigenvalues**4))
+    test_points = (-9.0, -2.5, -0.1, 0.0, 0.3, 4.0, 11.0)
+    residuals = []
+    bounds = []
+    for point in test_points:
+        d_value = float(np.mean(2.0 * np.sin(0.5 * point * eigenvalues) ** 2))
+        residuals.append(abs(d_value - point**2 * float(np.sum(eigenvalues**2)) / (2.0 * complex_packet.dimension)))
+        bounds.append(abs(point) ** 4 * fourth_moment / (24.0 * complex_packet.dimension))
     check(
-        "B14 n=4 spectral route gives [x^2]D=13/16",
-        complex_series.coeff(x, 2) == sp.Rational(13, 16)
-        and complex_certificate.quadratic_coefficient == sp.Rational(13, 16),
+        "B15 global fourth-order bound holds on wide signed numerical points",
+        all(residual <= bound + 1e-12 for residual, bound in zip(residuals, bounds)),
+        f"max ratio={max((r / b) if b else 0.0 for r, b in zip(residuals, bounds)):.6f}",
     )
 
 
 def hostile_rejections(record_checks: bool = True) -> dict[str, tuple[bool, str]]:
-    """Construct and reject every named mutation through substantive residuals."""
+    """Recompute and reject every named mutation."""
     results: dict[str, tuple[bool, str]] = {}
 
-    def record(
-        name: str,
-        exception_type: type[Exception],
-        operation: Callable[[], object],
-    ) -> None:
-        caught: Exception | None = None
-        try:
-            operation()
-        except Exception as exc:
-            caught = exc
-        ok = isinstance(caught, exception_type)
-        detail = str(caught) if caught is not None else "mutation was accepted"
-        results[name] = (ok, detail)
-        if record_checks:
-            check(f"H reject hostile fixture: {name}", ok, detail)
+    def record(name: str, operation: Callable[[], object]) -> None:
+        result = expect_rejection(
+            f"H reject hostile fixture: {name}",
+            (HypothesisViolation, FormulaMismatch),
+            operation,
+            record_check=record_checks,
+        )
+        results[name] = result
 
     pauli = pauli_packet()
-    wrong_scale = MatrixPacket(
+    wrong_gram = MatrixPacket(
         dimension=2,
-        generators=tuple(2 * generator for generator in pauli.generators),
+        generators=tuple(sp.sqrt(2) * generator for generator in pauli.generators),
         coefficients=pauli.coefficients,
     )
-    record(
-        "wrong-trace-normalization",
-        HypothesisViolation,
-        lambda: validate_packet(wrong_scale),
-    )
 
-    identity_packet = MatrixPacket(
-        dimension=2,
-        generators=(sp.eye(2) / 2,),
-        coefficients=(sp.Integer(1),),
-    )
-    record(
-        "nontraceless-linear-term",
-        HypothesisViolation,
-        lambda: validate_packet(identity_packet),
-    )
+    def reject_wrong_gram() -> None:
+        matrix_a = matrix_from_packet(wrong_gram)
+        actual = sp.expand(sp.trace(matrix_a**2))
+        f2 = sp.expand(sum(value**2 for value in wrong_gram.coefficients))
+        if sp.simplify(actual - f2 / 2) != 0:
+            raise FormulaMismatch(f"Gram delta gives Tr(A^2)={actual}, not F2/2")
+        validate_packet(wrong_gram)
 
-    complex_coefficient_packet = MatrixPacket(
-        dimension=2,
-        generators=pauli.generators,
-        coefficients=(sp.I, sp.Integer(0), sp.Integer(0)),
-    )
-    record(
-        "complex-coefficient",
-        HypothesisViolation,
-        lambda: validate_packet(complex_coefficient_packet),
-    )
+    record("wrong-gram-factor", reject_wrong_gram)
 
     canonical = certify_by_derivatives(pauli)
-    wrong_denominator_d2 = sp.simplify(
-        canonical.trace_a2 / (pauli.dimension - 1)
-    )
 
-    def reject_wrong_denominator() -> None:
-        expected = canonical.coefficient_norm / (2 * pauli.dimension)
-        if sp.simplify(wrong_denominator_d2 - expected) != 0:
-            raise CoefficientMismatch("omitting 1/n changes D''(0)")
+    def reject_omitted_normalization() -> None:
+        proposed = canonical.trace_a2
+        actual = canonical.trace_a2 / pauli.dimension
+        if sp.simplify(proposed - actual) != 0:
+            raise FormulaMismatch("omitting 1/n changes D''(0)")
 
-    record("wrong-one-over-n", CoefficientMismatch, reject_wrong_denominator)
+    record("omitted-one-over-n", reject_omitted_normalization)
 
-    def reject_derivative_half_confusion() -> None:
-        expected_quadratic = canonical.d2 / 2
-        proposed_quadratic = canonical.d2
-        if sp.simplify(proposed_quadratic - expected_quadratic) != 0:
-            raise CoefficientMismatch("D''(0) was confused with [x^2]D=D''(0)/2")
+    def reject_derivative_confusion() -> None:
+        proposed = canonical.d2
+        actual = canonical.d2 / 2
+        if sp.simplify(proposed - actual) != 0:
+            raise FormulaMismatch("D''(0) is twice the quadratic Taylor coefficient")
 
-    record(
-        "wrong-second-derivative-half",
-        CoefficientMismatch,
-        reject_derivative_half_confusion,
-    )
+    record("derivative-vs-coefficient", reject_derivative_confusion)
 
-    beta, g, n = sp.symbols("beta g n", positive=True)
-    # Each coefficient fixture mutates exactly one field of the canonical
-    # packet so every rejection is attributable to its named false claim.
-    record(
-        "wrong-quarter-vs-half",
-        CoefficientMismatch,
-        lambda: require_canonical_coefficient_equation(
-            beta=2 * n / g**2,
-            g=g,
-            n=n,
-            proposed_product=2 * n,
-            proposed_beta=2 * n / g**2,
-            right=sp.Rational(1, 4),
-        ),
-    )
-    record(
-        "beta-g2-equals-n",
-        CoefficientMismatch,
-        lambda: require_canonical_coefficient_equation(
-            beta=2 * n / g**2,
-            g=g,
-            n=n,
-            proposed_product=n,
-            proposed_beta=2 * n / g**2,
-        ),
-    )
-    record(
-        "beta-equals-2n-over-g",
-        CoefficientMismatch,
-        lambda: require_canonical_coefficient_equation(
-            beta=2 * n / g**2,
-            g=g,
-            n=n,
-            proposed_product=2 * n,
-            proposed_beta=2 * n / g,
-        ),
-    )
-    record(
-        "inconsistent-actual-beta",
-        CoefficientMismatch,
-        lambda: require_canonical_coefficient_equation(
-            beta=n / g**2,
-            g=g,
-            n=n,
-            proposed_product=2 * n,
-            proposed_beta=2 * n / g**2,
-        ),
-    )
-
-    def reject_wrong_remainder_constant() -> None:
+    def reject_false_remainder_constant() -> None:
         y = sp.symbols("y", real=True)
-        # Near zero the absolute scalar residual has leading coefficient 1/24,
-        # so replacing the theorem's 1/24 by 1/48 is decisively false.
-        leading = sp.limit(
-            (sp.cos(y) - 1 + y**2 / 2) / y**4,
-            y,
-            0,
-        )
+        leading = sp.limit((sp.cos(y) - 1 + y**2 / 2) / y**4, y, 0)
         if leading > sp.Rational(1, 48):
-            raise CoefficientMismatch(
-                "the proposed 1/48 remainder constant is below the exact 1/24 limit"
+            raise FormulaMismatch(f"exact small-y residual ratio is {leading}, exceeding 1/48")
+
+    record("false-remainder-constant", reject_false_remainder_constant)
+
+    nonhermitian = MatrixPacket(
+        1,
+        (sp.Matrix([[1 / sp.sqrt(2)]]),),
+        (sp.I * sp.sqrt(2),),
+    )
+
+    def reject_nonhermitian() -> None:
+        matrix_a = matrix_from_packet(nonhermitian)
+        d1 = sp.simplify(sp.re(-sp.I * sp.trace(matrix_a)))
+        if d1 != 0:
+            try:
+                validate_packet(nonhermitian)
+            except HypothesisViolation as exc:
+                raise HypothesisViolation(f"{exc}; recomputed D'(0)={d1}") from exc
+
+    record("non-hermitian-input", reject_nonhermitian)
+
+    def reject_false_complex_linear_zero() -> None:
+        certificate = certify_by_derivatives(one_dimensional_packet())
+        if certificate.complex_linear_coefficient != 0:
+            raise FormulaMismatch(
+                "valid nontraceless Hermitian packet has complex linear coefficient "
+                f"{certificate.complex_linear_coefficient}"
             )
 
-    record(
-        "wrong-remainder-constant",
-        CoefficientMismatch,
-        reject_wrong_remainder_constant,
-    )
-    record(
-        "illicit-physical-inference",
-        PhysicalInferenceError,
-        lambda: infer_physical_meaning("Wilson/Yang-Mills coupling match"),
-    )
+    record("false-complex-linear-zero", reject_false_complex_linear_zero)
+
+    def reject_wrong_rescaling_power() -> None:
+        _, actual, formal_symbols = formal_rescaled_quadratic_term()
+        _, _, w, s, n = formal_symbols
+        proposed = w * s / (4 * n)
+        if sp.simplify(actual - proposed) != 0:
+            raise FormulaMismatch("substitution x->s*x is quadratic in s")
+
+    record("wrong-rescaling-power", reject_wrong_rescaling_power)
+
+    def reject_illicit_target_inference() -> None:
+        _, actual, formal_symbols = formal_rescaled_quadratic_term()
+        _, _, w, _, _ = formal_symbols
+        target_1, target_2 = sp.Rational(1, 3), sp.Rational(5, 7)
+        solution_1 = sp.solve(sp.Eq(actual, target_1), w)[0]
+        solution_2 = sp.solve(sp.Eq(actual, target_2), w)[0]
+        if sp.simplify(solution_1 - solution_2) != 0:
+            raise FormulaMismatch(
+                "native coefficient admits distinct external targets and cannot select one"
+            )
+
+    record("illicit-target-inference", reject_illicit_target_inference)
     return results
 
 
-def nontraceless_diagnostic() -> None:
-    """Show the precise role of tracelessness without accepting the fixture."""
-    section("Part C: nontraceless linear-term diagnostic")
-    matrix_a = sp.eye(2) / 2
-    n = sp.Integer(2)
-    real_d1 = sp.re(-sp.I * sp.trace(matrix_a) / n)
-    complex_z1 = -sp.I * sp.trace(matrix_a) / n
-    check(
-        "C1 Hermiticity alone keeps the real deficit derivative zero",
-        sp.simplify(real_d1) == 0,
-        str(real_d1),
-    )
-    check(
-        "C2 nontracelessness produces a nonzero complex-deficit linear term",
-        sp.simplify(complex_z1) != 0,
-        str(complex_z1),
-    )
-
-
 def run_hostile() -> None:
-    section("Part D: hostile mutation controls")
-    nontraceless_diagnostic()
+    section("Part C: hostile mutation controls")
     hostile_rejections(record_checks=True)
 
 
@@ -636,8 +558,8 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     print("=" * 96)
-    print("DEFINED MATRIX-TRACE TAYLOR AND FORMAL COEFFICIENT CERTIFICATE")
-    print("Arithmetic: exact SymPy symbolic; no physical dictionary")
+    print("ABSTRACT HERMITIAN MATRIX-TRACE DEFICIT CERTIFICATE")
+    print("Arithmetic: exact symbolic plus independent numerical reconstruction")
     print(f"Mode: {args.mode}")
     print("=" * 96)
 
@@ -663,10 +585,7 @@ def main() -> int:
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 96)
     if FAIL == 0:
-        print(
-            "VERDICT: exact finite-dimensional Taylor/coefficient theorem "
-            "verified; no physical interpretation inferred."
-        )
+        print("VERDICT: native matrix Taylor, global remainder, and rescaling theorem verified.")
         return 0
     print("VERDICT: certificate FAILED closed.")
     return 1

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_2026_07_01.py
-runner_sha256: fe772b17b937329fdf2502b31aeb66f21157a88c7a69cda8dc4f671c12874c76
+runner_sha256: 3046589df0f8d597aa33e1adcfb5e7c909acae4a9f41321af5c1e167f9c7ab63
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.64
+elapsed_sec: 1.94
 status: ok
 ----- stdout -----
 Wilson temporal-kernel Casimir generator / beta-g_bare dial transport check
@@ -60,13 +60,13 @@ SECTION E: SU(3) — beta eps_R / N_c -> C_2(R), half-trace normalization
 [PASS] SU(3) sym(2,0,0): Richardson(24,48) hits 1 (R1=0.999340)
 [PASS] SU(3) sym(2,0,0): Richardson2(12,24,48) hits 1 (R2=0.997650)
 
-SECTION F: dial transport — beta * g_E^2 -> 2 N_c, R-independent
+SECTION F: representation-indexed dial transport — beta * g_{E,R}^2 -> 2 N_c
 ------------------------------------------------------------------------------
-[PASS] beta * g_E^2 strictly decreasing toward 2 N_c = 6 (values=7.0037, 6.4721, 6.2274)
-[PASS] transport Richardson(24,48): beta * g_E^2 hits 2 N_c = 6 (R1=5.98257)
-[PASS] transport Richardson2(12,24,48): beta * g_E^2 hits 2 N_c = 6 (R2=5.99654)
-[PASS] extracted dial is R-independent at beta=48 (adj(2,1,0) vs fund) (ratio=0.999369)
-[PASS] extracted dial is R-independent at beta=48 (sym(2,0,0) vs fund) (ratio=0.999243)
+[PASS] beta * g_{E,fund}^2 strictly decreasing toward 2 N_c = 6 (values=7.0037, 6.4721, 6.2274)
+[PASS] transport Richardson(24,48): beta * g_{E,fund}^2 hits 2 N_c = 6 (R1=5.98257)
+[PASS] transport Richardson2(12,24,48): beta * g_{E,fund}^2 hits 2 N_c = 6 (R2=5.99654)
+[PASS] representation-indexed leading estimates agree at beta=48 (adj(2,1,0) vs fund) (ratio=0.999369)
+[PASS] representation-indexed leading estimates agree at beta=48 (sym(2,0,0) vs fund) (ratio=0.999243)
 
 SECTION G: exact leading-dial layer — coincidence at beta = 2 N_c
 ------------------------------------------------------------------------------
@@ -79,19 +79,18 @@ SECTION G: exact leading-dial layer — coincidence at beta = 2 N_c
 [PASS] beta=12 != 2 N_c gives g_lead^2 = 1/2 != 1 (coincidence fails off the point)
 [PASS] coincidence forward: beta = 2 N_c gives g_lead^2 = 1
 [PASS] coincidence backward: g_lead^2 = 1 gives beta = 2 N_c = 6
-[PASS] kernel/formal-label coincidence at beta=6 is exact
+[PASS] kernel-side unit-coefficient point at beta=6 is exact
 
 SECTION H: source-boundary guards
 ------------------------------------------------------------------------------
 [PASS] transport note exists (docs/WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md)
 [PASS] finite-link rigidity note exists (docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
-[PASS] Wilson small-a note exists (docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
 [PASS] RP temporal-gauge bridge note exists (docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
 [PASS] note contains marker: Status authority:** independent audit lane only
 [PASS] note contains marker: does not derive `beta = 2 N_c`
 [PASS] note contains marker: unit-coefficient
 [PASS] note contains marker: half-trace
-[PASS] note contains marker: formal algebraic comparison
+[PASS] note contains marker: kernel-side statement
 [PASS] note contains marker: does not claim:
 [PASS] note contains marker: Wilson plaquette action-surface selection
 [PASS] note contains marker: an audit verdict or any effective-status promotion
@@ -101,14 +100,12 @@ SECTION H: source-boundary guards
 [PASS] note omits forbidden marker: **Audit status:**
 [PASS] rigidity contains marker: no independent scalar-normalization freedom
 [PASS] rigidity contains marker: Tr(T_a T_b) = delta_ab / 2
-[PASS] Wilson contains marker: beta g^2 = 2n
-[PASS] Wilson contains marker: They may not cite it as authority for an action surface
 [PASS] RP bridge contains marker: temporal gauge
 [PASS] RP bridge contains marker: plane positive kernel
 
 Summary
 ------------------------------------------------------------------------------
-TOTAL: PASS=73 FAIL=0
+TOTAL: PASS=70 FAIL=0
 Transport check passed.
 
 ----- stderr -----

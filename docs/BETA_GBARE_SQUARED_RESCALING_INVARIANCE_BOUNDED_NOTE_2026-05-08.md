@@ -21,26 +21,25 @@ The current row no longer uses an admitted physical `WM` premise as a
 load-bearing input. Its current content is the abstract polynomial identity
 with symbolic naming `(g, N) = (g_bare, N_c)`.
 
-## 2026-06-07 Science-Fix Source Packet for `WM`
+## 2026-06-07 Stable-Path Matrix Packet (reader context)
 
 Reader context only: the stable-path source packet,
 `WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`,
-now addresses a defined matrix-trace Taylor theorem, with runner
+now addresses an abstract Hermitian matrix-trace Taylor and global remainder
+theorem, with runner
 `scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py`
 and cache
 `logs/runner-cache/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.txt`.
 
-The repaired packet proves only the formal coefficient equivalence
+The repaired packet proves the native rescaling coefficient
 
 ```text
-C_left := beta g^2/(4n), C_right := 1/2
-  => (C_left=C_right iff beta g^2=2n).
+[x^2 F2] w D(sx) = w s^2/(4n).
 ```
 
-It does not identify either coefficient with a Wilson action or a continuum
-target, and it does not derive `g_bare = 1` or `beta = 6` as a physical
-value. After the 2026-06-20 narrowing below, that packet is not load-bearing
-for this row's current claim.
+It supplies no comparison target and no parameter equation. After the
+2026-06-20 narrowing below, that packet is not load-bearing for this row's
+current claim.
 
 ## 2026-06-20 Narrowing (abstract joint-rescaling algebra)
 

@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
-"""Formal generator/coupling label-rescaling coefficient theorem.
+"""Exact scalar-argument rescaling and Gram-covariance certificate.
 
-This runner checks the finite algebra behind the scoped bridge:
-
-  defined coefficient equality beta = 2 n / g^2
-  + compensating generator rescaling T' = c T, g' = g / c
-    => beta' = c^2 beta
-    => beta' g'^2 = beta g^2 = 2 N_c.
-
-It does not infer an action, physical coupling, normalization point, or audit
-verdict.
+For a fixed half-Gram family, q(w,s,n)=w*s^2/(4n) obeys
+q(c^2*w,s/c,n)=q(w,s,n). Separately, T'_a=c*T_a and s'=s/c preserve the
+exponent while the Gram factor scales by c^2; the weighted deficit is then
+preserved only at fixed w. No external target or preferred parameter is
+inferred.
 """
 
 from __future__ import annotations
@@ -20,8 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md"
-WM_NOTE = ROOT / "docs" / "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md"
-GBARE_RESCALING_NOTE = ROOT / "docs" / "G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md"
+MATRIX_NOTE = ROOT / "docs" / "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md"
 
 PASS = 0
 FAIL = 0
@@ -39,8 +34,14 @@ def check(name: str, ok: bool, detail: str = "") -> None:
     print(f"[{tag}] {name}{suffix}")
 
 
-def beta(n_c: Fraction, g_sq: Fraction) -> Fraction:
-    return Fraction(2) * n_c / g_sq
+def q(w: Fraction, s_sq: Fraction, n: Fraction) -> Fraction:
+    return w * s_sq / (4 * n)
+
+
+def q_gram(
+    w: Fraction, s_sq: Fraction, n: Fraction, gram_scale: Fraction
+) -> Fraction:
+    return w * s_sq * gram_scale / (4 * n)
 
 
 def gram_diag(c_sq: Fraction) -> Fraction:
@@ -49,108 +50,123 @@ def gram_diag(c_sq: Fraction) -> Fraction:
 
 def part0_source_boundaries() -> None:
     print("Part 0: source boundaries")
-    check("bridge note exists", NOTE.exists(), NOTE.relative_to(ROOT).as_posix())
-    check("defined matrix coefficient note exists", WM_NOTE.exists(), WM_NOTE.relative_to(ROOT).as_posix())
-    check("g_bare rescaling consumer note exists", GBARE_RESCALING_NOTE.exists(), GBARE_RESCALING_NOTE.relative_to(ROOT).as_posix())
+    check("rescaling note exists", NOTE.exists(), NOTE.relative_to(ROOT).as_posix())
+    check("native matrix theorem exists", MATRIX_NOTE.exists(), MATRIX_NOTE.relative_to(ROOT).as_posix())
     text = NOTE.read_text(encoding="utf-8")
+    flat = " ".join(text.split())
     required = [
         "**Claim type:** positive_theorem",
-        "No Wilson action or physical coupling is part of the theorem",
-        "T'_a = c T_a",
-        "g'   = g/c",
-        "beta' = c^2 beta",
-        "beta' g'^2 = beta g^2 = 2n",
-        "does not claim:",
-        "the paired label transformation is induced on any Wilson",
-        "A downstream physical use must separately prove the dictionary",
+        "q(w,s,n) := [x^2 F2] w D(sx) = w s^2/(4n)",
+        "w' = c^2 w",
+        "s' = s/c",
+        "q(w',s',n)",
+        "s'T'_a = sT_a",
+        "Tr(T'_a T'_b) = c^2 delta_ab/2",
+        "It preserves the weighted expression only when `w'=w`",
+        "q_kappa(w,s,n) = w s^2 kappa/(4n)",
+        "does not choose a comparison coefficient",
+        "Any use beyond the displayed matrix and scalar algebra requires separate authority",
     ]
-    flat = " ".join(text.split())
     for marker in required:
-        check(f"bridge note contains marker: {marker[:60]}", marker in text or marker in flat)
-    audit_verdict_marker = "audit" + "_status: " + "audited" + "_clean"
-    effective_marker = "effective" + "_status: " + "retained"
+        check(f"rescaling note contains marker: {marker[:60]}", marker in text or marker in flat)
     forbidden = [
-        ("audit verdict marker", audit_verdict_marker),
-        ("effective-status marker", effective_marker),
-        ("Wilson surface overclaim", "Wilson action-surface selection is derived"),
-        ("g_bare closure overclaim", "g_bare=1 is derived"),
+        "preferred parameter value",
+        "audit_status: audited_clean",
+        "effective_status: retained",
     ]
-    for label, marker in forbidden:
-        check(f"forbidden overclaim absent: {label}", marker not in text)
+    for marker in forbidden:
+        check(f"removed target/status marker absent: {marker}", marker not in text)
 
 
-def part1_wilson_matching_note() -> None:
+def part1_matrix_source() -> None:
     print()
-    print("Part 1: formal coefficient authority surface")
-    text = WM_NOTE.read_text(encoding="utf-8")
-    required = [
-        "beta = 2n/g^2",
-        "beta g^2 = 2n",
-        "C_left = C_right",
-        "They may not cite it as authority for an action surface",
-    ]
+    print("Part 1: native matrix coefficient authority surface")
+    text = MATRIX_NOTE.read_text(encoding="utf-8")
     flat = " ".join(text.split())
+    required = [
+        "[x^2 F2] w D(sx) = w s^2/(4n)",
+        "global fourth-order bound",
+        "does not select either scalar",
+        "requires separate authority and remains outside this theorem",
+    ]
     for marker in required:
-        check(f"formal note contains marker: {marker[:60]}", marker in text or marker in flat)
+        check(f"matrix theorem contains marker: {marker[:60]}", marker in text or marker in flat)
 
 
 def part2_exact_transform() -> None:
     print()
-    print("Part 2: exact beta transform under compensating generator rescaling")
+    print("Part 2: fixed-family scalar coefficient identity")
     samples = [
-        (Fraction(3), Fraction(1)),
-        (Fraction(3), Fraction(5, 7)),
-        (Fraction(2), Fraction(3, 5)),
-        (Fraction(7, 2), Fraction(9, 4)),
+        (Fraction(3, 2), Fraction(1), Fraction(1)),
+        (Fraction(5, 7), Fraction(9, 4), Fraction(2)),
+        (Fraction(11, 5), Fraction(3, 5), Fraction(3)),
+        (Fraction(7, 2), Fraction(25, 9), Fraction(5, 2)),
     ]
     c_values = [Fraction(1, 3), Fraction(1, 2), Fraction(1), Fraction(2), Fraction(5, 2), Fraction(3)]
-    for n_c, g_sq in samples:
-        beta_old = beta(n_c, g_sq)
-        check(f"formal product before rescaling n={n_c}, g^2={g_sq}", beta_old * g_sq == 2 * n_c, f"beta={beta_old}")
+    for w, s_sq, n in samples:
+        q_old = q(w, s_sq, n)
+        check(f"native coefficient is positive for w={w}, s^2={s_sq}, n={n}", q_old > 0, f"q={q_old}")
         for c in c_values:
             c_sq = c * c
-            g_sq_new = g_sq / c_sq
-            beta_new = beta(n_c, g_sq_new)
+            w_new = c_sq * w
+            s_sq_new = s_sq / c_sq
             check(
-                f"beta scales by c^2 for N={n_c}, g^2={g_sq}, c={c}",
-                beta_new == c_sq * beta_old,
-                f"beta'={beta_new}; c^2 beta={c_sq * beta_old}",
+                f"fixed-family scalar map preserves q at w={w}, s^2={s_sq}, c={c}",
+                q(w_new, s_sq_new, n) == q_old,
+                f"q'={q(w_new, s_sq_new, n)}",
             )
             check(
-                f"product invariant after compensating rescale c={c}",
-                beta_new * g_sq_new == beta_old * g_sq == 2 * n_c,
+                f"paired scalar product cancels c^2 at c={c}",
+                w_new * s_sq_new == w * s_sq,
             )
 
 
-def part3_canonical_surface_exclusion() -> None:
+def part3_generator_and_gram_transform() -> None:
     print()
-    print("Part 3: fixed-beta and half-trace definitions change for nontrivial c")
-    beta_old = Fraction(6)
-    g_sq = Fraction(1)
-    n_c = Fraction(3)
-    check("test point satisfies beta g^2 = 2 N_c", beta_old * g_sq == 2 * n_c)
-    for c in [Fraction(1, 2), Fraction(2), Fraction(3)]:
+    print("Part 3: exponent-product preservation and Gram change")
+    s = Fraction(5, 3)
+    s_sq = s * s
+    w = Fraction(11, 7)
+    n = Fraction(3)
+    generator_entry = Fraction(7, 4)
+    for c in [Fraction(1, 2), Fraction(1), Fraction(2), Fraction(3)]:
         c_sq = c * c
-        beta_new = c_sq * beta_old
+        s_new = s / c
+        generator_new = c * generator_entry
         check(
-            f"nontrivial c={c} changes the defined beta label",
-            beta_new != beta_old,
-            f"beta'={beta_new}; beta={beta_old}",
+            f"s'T'=sT under c={c}",
+            s_new * generator_new == s * generator_entry,
         )
         check(
-            f"nontrivial c={c} changes canonical trace Gram",
-            gram_diag(c_sq) != Fraction(1, 2),
-            f"Tr(T'_a T'_a)={gram_diag(c_sq)}",
+            f"half-Gram transforms by c^2 under c={c}",
+            gram_diag(c_sq) == c_sq / 2,
+            f"diagonal={gram_diag(c_sq)}",
         )
+        base_q = q_gram(w, s_sq, n, Fraction(1))
+        transformed_fixed_w = q_gram(w, s_sq / c_sq, n, c_sq)
+        check(
+            f"generator covariance preserves the quadratic coefficient at fixed w under c={c}",
+            transformed_fixed_w == base_q,
+        )
+        transformed_scaled_w = q_gram(c_sq * w, s_sq / c_sq, n, c_sq)
+        check(
+            f"adding w'=c^2 w scales the generator-transformed coefficient by c^2 under c={c}",
+            transformed_scaled_w == c_sq * base_q,
+        )
+        if c != 1:
+            check(
+                f"nontrivial c={c} changes the half-Gram value",
+                gram_diag(c_sq) != Fraction(1, 2),
+            )
 
 
 def main() -> int:
-    print("Formal generator/coupling label-rescaling coefficient theorem")
+    print("Formal scalar-argument rescaling and Gram transformation")
     print("=" * 72)
     part0_source_boundaries()
-    part1_wilson_matching_note()
+    part1_matrix_source()
     part2_exact_transform()
-    part3_canonical_surface_exclusion()
+    part3_generator_and_gram_transform()
     print()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

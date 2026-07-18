@@ -1,88 +1,113 @@
-# Flavor Carrier Momentum Type From Translation Theorem
+# Finite Translation-Character Profiles and Projectors Theorem
 
 **Date:** 2026-06-15
-**Claim type:** bounded_theorem
-**Status:** source-side carrier-type split; no audit verdict or effective-status
-change.
-**Status authority:** independent audit lane only. This source note does not
-set or predict an audit outcome.
-**Primary runner:** [`scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py`](../scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py)
+**Type:** positive_theorem
+**Status:** source-note proposal awaiting independent audit; audit and effective
+status are pipeline-owned.
+**Primary runner:**
+[`scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py`](../scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py)
+**Cache:**
+[`logs/runner-cache/flavor_carrier_momentum_type_from_translation_2026_06_15.txt`](../logs/runner-cache/flavor_carrier_momentum_type_from_translation_2026_06_15.txt)
+
+The historical filename and claim ID remain unchanged for citation-graph
+stability. They are not the reader-facing statement of the theorem.
 
 ## Purpose
 
-This note splits the clean carrier-type theorem out of
-`FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md`.
-
-The parent note was audited conditional because it combines:
-
-1. a clean carrier-type theorem: translation symmetry puts
-   flavor-separating observables on the momentum/BZ factor rather than on
-   local position observables;
-2. an open physical-locus bridge: forcing the physical generation locus to be
-   the staggered/KS `hw=1` triplet.
-
-This split proves only item 1. It does not claim that the physical generation
-locus is forced to be `hw=1`.
+This note records an exact finite construction on the supplied periodic
+`2 x 2 x 2` cell. Its content is the translation-character basis, the uniform
+position profiles of those characters, and the associated rank-one spectral
+projectors. Every statement below is a positive equality or construction.
 
 ## Theorem
 
-On the finite periodic `2 x 2 x 2` framework representative with commuting
-translation unitaries `T_x, T_y, T_z`, the joint character basis gives a
-framework-native momentum/BZ decomposition. Local position-diagonal
-observables are generation-blind on the character states, while momentum-block
-projectors separate corner labels. Therefore, within the position-diagonal
-local readout class tested here, flavor-separating label resolution is supplied
-by the momentum/BZ factor, not by local position weights.
+Let the sites be `n in {0,1}^3`, in lexicographic order, and let
 
-For the supplied `hw=1` three-corner sector, this becomes:
+```text
+T_mu |n> = |n + e_mu mod 2>,                 mu in {x,y,z}.
+```
 
-- the three `hw=1` corners have distinct joint translation characters;
-- the `C_3[111]` rotation permutes them transitively;
-- every diagonal position observable has equal expectation across the three
-  character states;
-- a momentum projector onto one corner separates the three labels;
-- the extensive position `Gamma_5 = (-1)^(x+y+z)` sum vanishes on the full
-  periodic cell.
-
-## Proof Sketch
-
-The runner constructs the three translation permutation matrices on the
-periodic `2 x 2 x 2` cell and verifies they are commuting unitaries. It then
-constructs the eight explicit `Z_2^3` character vectors
+For `k in Z_2^3`, define
 
 ```text
 psi_k(n) = (-1)^(k.n) / sqrt(8),
+P_k = |psi_k><psi_k|.
 ```
 
-checks that they are an orthonormal simultaneous eigenbasis, and forms the
-rank-one momentum projectors `P_k = |psi_k><psi_k|`.
+Then:
 
-For any diagonal position observable `O = diag(w_n)`,
+1. `T_x`, `T_y`, and `T_z` are commuting unitary permutation matrices.
+2. The eight vectors `psi_k` form an orthonormal simultaneous eigenbasis,
+   with `T_mu psi_k = (-1)^(k_mu) psi_k`.
+3. The supplied subset
+   `K_1 = {(1,0,0), (0,1,0), (0,0,1)}` contains three distinct joint
+   characters. The `C_3[111]` coordinate cycle acts transitively on `K_1` and
+   carries each `psi_k` to the correspondingly cycled character vector.
+4. Every character has the exact position probability profile
+
+   ```text
+   (|psi_k(n)|^2)_n = (1/8, 1/8, 1/8, 1/8, 1/8, 1/8, 1/8, 1/8).
+   ```
+
+5. For an arbitrary diagonal position operator
+   `O = diag(w_000, w_001, ..., w_111)`, with symbolic weights,
+
+   ```text
+   <psi_k, O psi_k> = (1/8) sum_n w_n
+   ```
+
+   for every `k`, including each member of `K_1`.
+6. The eight projectors are orthogonal idempotents resolving the identity:
+
+   ```text
+   P_k P_q = delta_(kq) P_k,       sum_k P_k = I_8.
+   ```
+
+   Their full expectation matrix is exactly
+
+   ```text
+   <psi_k, P_q psi_k> = delta_(kq).
+   ```
+
+   The `K_1 x K_1` submatrix is therefore exactly `I_3`.
+
+## Exact construction
+
+The runner builds the site permutations and character vectors with exact
+SymPy arithmetic. Orthonormality follows from the finite character sum
 
 ```text
-<psi_k, O psi_k> = (1/8) sum_n w_n,
+(1/8) sum_n (-1)^((k+q).n) = delta_(kq).
 ```
 
-so no position-diagonal local observable separates the `hw=1` characters. By
-contrast, `P_k` gives Kronecker separation on the momentum labels.
+The uniform profile gives the symbolic diagonal expectation directly:
 
-## Boundary
+```text
+sum_n w_n |psi_k(n)|^2 = (1/8) sum_n w_n.
+```
 
-This note does not prove:
+Finally, the projector product and expectation formulas follow from
+`<psi_k,psi_q> = delta_(kq)`. The runner evaluates all of these identities as
+exact matrix or symbolic equalities and prints the full `8 x 8` Kronecker
+matrix together with its supplied `3 x 3` submatrix.
 
-- that the physical generation locus is `hw=1`;
-- that staggered/Kawamoto-Smit chirality is forced by the baseline;
-- that the continuous Koide basepoint `r = 1/2` is derived;
-- that the index-density readout `delta = 2/9` is selected;
-- any audit verdict.
+## Authority limit
 
-The open bridge remains the parent audit's named blocker: derive the
-staggered/KS `hw=1` physical generation locus from retained framework inputs,
-or keep downstream claims conditional on that bridge.
+This theorem's authority ends at the displayed finite-cell constructions and
+equalities. The subset `K_1` is supplied as an abstract three-character locus;
+the theorem assigns it no physical selection or species meaning. Physical
+generation-locus identification, staggered/Kawamoto-Smit chirality, Koide
+basepoint or readout selection, and any actual flavor identification belong to
+separate authority surfaces. The formulas here assign no physical carrier,
+observable, or readout role to either basis.
 
-## Verification
+The proof adds no axiom, approved primitive, selector, convention, imported
+value, or physical identification. Its only inputs are the displayed finite
+definitions and exact finite-dimensional linear algebra.
 
-Run:
+## Verification and mutation controls
+
+Run the exact certificate:
 
 ```bash
 python3 scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py
@@ -93,3 +118,14 @@ Expected:
 ```text
 TOTAL: PASS=10 FAIL=0
 ```
+
+The same runner exposes reviewer-reproducible mutations for translation-step
+binding, character phase, normalization, site ordering, the `C_3` map,
+symbolic weight dependence, and projector-label binding:
+
+```bash
+python3 scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py \
+  --mutation <translation_direction|character_phase|normalization|site_ordering|c3_map|weight_dependence|projector_label>
+```
+
+Each mutation exits nonzero by breaking the exact family it targets.

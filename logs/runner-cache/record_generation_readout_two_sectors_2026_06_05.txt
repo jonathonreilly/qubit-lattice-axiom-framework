@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/record_generation_readout_two_sectors_2026_06_05.py
-runner_sha256: a1a845c44c4bcaef066c6e1103a558db621e112642c4e12db2957248981ca0ea
+runner_sha256: 020c3cf1aa7408c7e6efd553c4a8a385f1e2d6555c416c908c315d4a0039cf91
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
 RECORD_GENERATION_READOUT_TWO_SECTORS — generation readout resolves two K/CPT-orbit sectors (singlet + doublet)

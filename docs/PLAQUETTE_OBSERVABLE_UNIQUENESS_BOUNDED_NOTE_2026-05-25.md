@@ -30,8 +30,7 @@ only:
 - finiteness of the Haar product on compact SU(3) over a finite periodic
   L^4 lattice;
 - well-definition of `d ln Z / d beta` as differentiation of an
-  absolutely convergent integral;
-- absence of a bulk phase transition on symmetric L^4 (cited authority).
+  absolutely convergent integral.
 
 This note isolates the structural-uniqueness half of
 [`plaquette_self_consistency_note`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md).
@@ -50,7 +49,6 @@ status claim.
 | `Z(beta) = integral DU exp(-S_W[U])` finite, well-defined | finite compact Haar product, bounded Wilson action | no |
 | Dominated-convergence differentiation `d ln Z / d beta` | bounded integrand `-S_W[U]/N_plaq` on a compact domain | no |
 | Affine identity `<P> = 1 + (1/N_plaq) d ln Z / d beta` under the stated Wilson-action sign convention | algebraic differentiation of `exp(-S_W)` | no |
-| No bulk transition on symmetric L^4 at `beta = 6` | retained framework-point underdetermination + spectral-measure authorities | no |
 | Observable is single-valued real | sum of the above | no |
 
 The checked proof path does not cite the numeric value `0.5934`, the
@@ -111,16 +109,14 @@ confirms the affine derivative relation is single-valued and real.
   inverse defines a unique implicit `beta_eff,L(beta)` on every finite
   periodic SU(3) Wilson `L^4` evaluation surface with analytic, strictly
   increasing behavior.
-- [`GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md)
-  for the retained_no_go that the current jet plus real analyticity and
-  strict monotonicity on `[0, 6]` do not by themselves close
-  `beta_eff(6)` or analytic `P(6)`; this note relies on that authority
-  only for absence of a bulk transition obstruction, not for the numeric
-  insertion.
-
 These are imported authorities for a bounded theorem. The row remains
 unaudited until the independent audit lane reviews this note, its
 dependencies, and the runner.
+
+The finite-jet pair in
+`GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md` is
+non-load-bearing context only. It supplies no bulk-transition statement and
+is not used in this finite compact-Haar differentiation proof.
 
 ## Boundaries
 

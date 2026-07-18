@@ -98,11 +98,11 @@ them:
   autocorrelation and finite-size systematics;
 - any downstream publication-status or parent-chain update.
 
-The existing no-go/boundary notes remain in force:
+Two separate source results organize this comparison:
 
 - [`GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md)
-  says the current exact stack does not determine the explicit
-  nonperturbative framework point;
+  supplies a positive finite-jet pair with exact endpoint and local-block
+  separation; it supplies no full-Wilson-stack conclusion;
 - [`GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md)
   rules out the constant-lift shortcut.
 

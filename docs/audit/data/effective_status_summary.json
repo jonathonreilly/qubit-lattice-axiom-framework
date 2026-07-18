@@ -80,7 +80,7 @@
   ],
   "cycles_detected": 62,
   "effective_status_counts": {
-    "audit_in_progress": 19,
+    "audit_in_progress": 18,
     "audited_conditional": 21,
     "audited_failed": 1,
     "audited_numerical_match": 6,
@@ -94,7 +94,7 @@
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
     "meta": 353,
     "open_gate": 2,
-    "retained": 77,
+    "retained": 78,
     "retained_bounded": 307,
     "retained_pending_chain": 4,
     "unaudited": 2948

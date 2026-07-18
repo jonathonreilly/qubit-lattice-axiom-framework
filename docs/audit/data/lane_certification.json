@@ -1228,10 +1228,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
           "effective_status": "unaudited"
         },
@@ -2912,9 +2908,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 665
+      "uncertified_count": 664
     }
   ],
-  "repo_head": "142f7a303148318be32e99a0f27f58fee99a53be",
+  "repo_head": "9955ada698dea9374c8fe5127fd05d27a9b7a641",
   "schema": "lane_certification_v2"
 }

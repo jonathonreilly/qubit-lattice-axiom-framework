@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_directional_tilt_axis_cone_refinement_2026_07_18.py
+runner_sha256: b42878c38ebc54c87f53dc6780feec06e03da762655310d3f179973afdf88d66
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.39
+status: ok
+----- stdout -----
+PASS: D1 parallel-start height-change table {-2:1,-1:4,+1:4,+2:1}, box-stable (radii 4 and 6)
+PASS: D2 transverse-start table {-1:2,0:6,+1:2} for BOTH transverse orientations, box-stable
+PASS: D3 tilt polynomials match the enumerated tables term-by-term, and S_par(1) = S_perp(1) = 10
+PASS: D4 domination factorization S_par - S_perp = (y-1)^2 (y^2+4y+1)/y^2 with every factor nonnegative for y > 0
+PASS: D5 row bound: both step types tilt-sum below S_par for y >= 1 (domination is exact; equality only at y = 1)
+PASS: I1 indicator bound instances: y^(gain-m) >= 1 at gain = m, m+1 and positive below (y = 5/2)
+PASS: O1 hyperplane phi-ranges {2r-1, 2r, 2r+1} at r = 0 and r = 3, and the offset arithmetic (2(a+m)-1) - (2a+1) = 2m - 2
+PASS: A1 assembly: sum_{k>=1} (2JSt)^k/k! = e^{2JSt} - 1 and the display bookkeeping identity
+PASS: A2 logarithm-free display at y = 5/2: y^(-2m) = (4/25)^m and 4/25 < 1
+PASS: A3 sibling k-term reconstructed (prefactor 2||A||(2J)^(k-1), base 2J||B||, tilted count, t^k/k!) and summed to the display
+PASS: V1 S_par(5/2) = 1801/100 exactly
+PASS: V2 certified parent comparison: exact finite sums (sum 1/n! = 1957/720; two-term atanh = 312/343), sign brackets, and the exact rational margin 3234971/102900 > 0
+PASS: V3 scan-best against ALL FIVE other scan points (S_par values gated, exact comparisons; scan-best only, no global optimality)
+PASS: N1 sibling authorities: chain identifier and non-sharpness sentence taken as this note's target
+PASS: N2 axiom memo supplies no dynamics
+PASS: N3 target identifiers, theorem, honest boundaries
+PASS: N4 No-Go section structure: all eight items and the Status line
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

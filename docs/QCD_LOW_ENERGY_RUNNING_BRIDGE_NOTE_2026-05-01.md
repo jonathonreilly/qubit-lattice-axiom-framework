@@ -54,13 +54,21 @@ axioms.
    ```
 
    This is the one-loop matching prescription at the chosen pole-mass
-   threshold, not an all-orders no-jump theorem. In the standard decoupling
-   relation at `mu = m_h`, the one-loop constant is zero; for a pole mass the
-   first nonzero constant shown by the official QCD review is the coefficient
-   multiplying `alpha_s^2` in the matching bracket. Thus the first omitted
-   nonzero change in `alpha_s` is absolute order `alpha_s^3`. This packet sets
-   that and all higher matching corrections to zero by definition and supplies
-   no bound on them.
+   threshold, not an all-orders no-jump theorem. In the official-review
+   convention,
+
+   ```text
+   alpha_s^(n_f+1)(m_h)
+     = alpha_s^(n_f)(m_h)
+       [1 + 7 (alpha_s^(n_f)(m_h))^2/(24 pi^2) + ...]
+   ```
+
+   for a pole mass at `mu = m_h`: the one-loop constant `c_10` vanishes and
+   the first nonzero constant is `c_20 = 7/(24 pi^2)`. Consequently the
+   inverse `n_f+1 -> n_f` relation used when running downward first differs
+   from identity at absolute order `alpha_s^3`, with the opposite leading
+   sign. This packet sets that and all higher matching corrections to zero by
+   definition and supplies no bound on them.
 4. The domain and finite grid are
 
    ```text
@@ -256,13 +264,15 @@ python3 scripts/frontier_qcd_low_energy_running_bridge.py --hostile
 The normal mode reports `PASS=15 FAIL=0`. The independent mode reconstructs
 `beta_0`, `beta_1`, and all ten outputs using separate exact-rational
 coefficient substitution and fixed-step RK4, without reading a primary result
-table; it reports `PASS=5 FAIL=0`. The hostile mode reports `PASS=7 FAIL=0`
+table; it reports `PASS=5 FAIL=0`. The hostile mode reports `PASS=9 FAIL=0`
 and detects:
 
+- a wrong `beta_0` coefficient;
 - omitted/wrong `beta_1`;
 - the wrong factor of two in the two-loop term;
 - a beta-function sign flip;
 - a missing top threshold;
+- a non-identity matching jump at the threshold;
 - `n_f=5` above and `n_f=6` below the threshold;
 - reversed scale direction;
 - false remainder/envelope semantics.

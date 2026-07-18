@@ -8,12 +8,12 @@ Source-note runner for:
 This runner verifies a conditional decomposition only.  It supplies the
 rounded context input alpha_s(M_Z)=0.1181, inverts the declared two-loop
 formula to obtain Lambda_MS-bar^(N_F=5), and then combines that result with
-an admitted r_0*Lambda ratio.  The QCD low-energy bridge supplies a transfer
+a supplied r_0*Lambda ratio.  The QCD low-energy bridge supplies a transfer
 map; it does not derive the rounded coupling used here.
 
 Accordingly, neither Lambda nor r_0 is promoted to a framework-native
-prediction, and this probe makes no Lane 1 import-count decrement.  PDG
-values are comparators or explicitly identified threshold infrastructure.
+prediction, and this probe makes no Lane 1 import-count decrement.  Reference
+values are labeled individually as comparators or load-bearing supplied inputs.
 No new axiom or registry input is introduced by the repair.
 """
 
@@ -76,18 +76,19 @@ def lambda_from_alpha_s_2loop(mu, alpha_s, beta0, beta1):
     return Lambda
 
 
-def threshold_match_lambda(Lambda_high, mq, beta0_high, beta0_low):
+def threshold_match_lambda(Lambda_source, mq, beta0_source, beta0_target):
     """Match Lambda across a quark threshold at scale mq.
 
-    At leading log: alpha_s_high(mq) = alpha_s_low(mq), giving
-    Lambda_low = Lambda_high * (mq/Lambda_high)^(1 - beta0_high/beta0_low).
+    At leading log: alpha_s_source(mq) = alpha_s_target(mq), giving
+    Lambda_target = Lambda_source *
+    (mq/Lambda_source)^(1 - beta0_source/beta0_target).
     """
-    # Solve alpha_s_high(mq) = alpha_s_low(mq) at LO
-    # 1/(beta0_high * ln(mq^2/Lambda_high^2)) = 1/(beta0_low * ln(mq^2/Lambda_low^2))
-    t_high = math.log(mq * mq / (Lambda_high * Lambda_high))
-    t_low = (beta0_low / beta0_high) * t_high
-    Lambda_low = mq * math.exp(-t_low / 2.0)
-    return Lambda_low
+    # Solve alpha_s_source(mq) = alpha_s_target(mq) at LO.
+    # Neutral source/target names cover both downward and upward crossings.
+    t_source = math.log(mq * mq / (Lambda_source * Lambda_source))
+    t_target = (beta0_source / beta0_target) * t_source
+    Lambda_target = mq * math.exp(-t_target / 2.0)
+    return Lambda_target
 
 
 def main():
@@ -95,45 +96,45 @@ def main():
     fail_count = 0
 
     # =========================================================================
-    # Section 1: Retained Wilson chain inputs
+    # Section 1: Declared Wilson-chain context
     # =========================================================================
-    heading("SECTION 1: RETAINED WILSON CHAIN INPUTS")
+    heading("SECTION 1: DECLARED WILSON-CHAIN CONTEXT")
 
-    # All values from COMPLETE_PREDICTION_CHAIN_2026_04_15.md (retained)
-    P_avg = 0.5934                      # SU(3) plaquette MC at beta=6 (retained)
-    M_Pl = 1.221e19                     # GeV, framework UV cutoff (retained)
+    # Existing context values; this runner does not promote their source status.
+    P_avg = 0.5934                      # supplied plaquette context at beta=6
+    M_Pl = 1.221e19                     # GeV, supplied UV-scale context
     alpha_bare = 1.0 / (4.0 * math.pi)  # canonical Cl(3) g_bare = 1 normalization
     u_0 = P_avg ** 0.25                  # tadpole improvement
     alpha_LM = alpha_bare / u_0          # Lepage-Mackenzie geometric-mean coupling
     apbc_factor = (7.0 / 8.0) ** 0.25    # APBC eigenvalue ratio
 
-    # Retained CMT (Coupling Map Theorem, n_link = 2):
-    alpha_s_v_retained = alpha_bare / (u_0 ** 2)
+    # Display-only coupling-map context (n_link = 2):
+    alpha_s_v_context = alpha_bare / (u_0 ** 2)
 
-    # Retained EW VEV from hierarchy theorem
+    # Display-only hierarchy-chain context
     v_EW = M_Pl * apbc_factor * (alpha_LM ** 16)
 
     # Downstream supplied rounded context value at M_Z. The QCD running bridge
     # supplies only a piecewise transfer map; it does not certify this value as
     # a framework prediction or target match.
     alpha_s_MZ_context = 0.1181
-    M_Z = 91.1876  # GeV, conventional Z-pole scale
+    M_Z = 91.1876  # GeV, load-bearing conventional Z-pole scale
 
-    print(f"  retained <P>             = {P_avg}")
-    print(f"  retained M_Pl            = {M_Pl:.6e} GeV")
-    print(f"  retained alpha_bare      = {alpha_bare:.10f}")
-    print(f"  retained u_0             = {u_0:.10f}")
-    print(f"  retained alpha_LM        = {alpha_LM:.10f}")
-    print(f"  retained alpha_s(v)      = {alpha_s_v_retained:.10f}  (= alpha_bare/u_0^2, n_link=2)")
-    print(f"  retained (7/8)^(1/4)     = {apbc_factor:.10f}")
-    print(f"  retained v_EW           = {v_EW:.4f} GeV")
+    print(f"  context <P>              = {P_avg}")
+    print(f"  context M_Pl             = {M_Pl:.6e} GeV")
+    print(f"  declared alpha_bare      = {alpha_bare:.10f}")
+    print(f"  computed u_0             = {u_0:.10f}")
+    print(f"  computed alpha_LM        = {alpha_LM:.10f}")
+    print(f"  context alpha_s(v)       = {alpha_s_v_context:.10f}  (= alpha_bare/u_0^2, n_link=2)")
+    print(f"  context (7/8)^(1/4)      = {apbc_factor:.10f}")
+    print(f"  context v_EW             = {v_EW:.4f} GeV")
     print(f"  supplied alpha_s(M_Z)    = {alpha_s_MZ_context:.6f}  (downstream rounded context input)")
-    print(f"  conventional M_Z         = {M_Z} GeV (PDG-standard scale, comparator)")
+    print(f"  conventional M_Z          = {M_Z} GeV (load-bearing inversion scale)")
 
     # Sanity: v_EW reproduces PDG comparator
     v_EW_pdg = 246.22  # PDG comparator only
     rel_v = abs(v_EW - v_EW_pdg) / v_EW_pdg
-    if check("retained v_EW formula reproduces PDG to <0.1%",
+    if check("declared v_EW formula reproduces its comparator to <0.1%",
              rel_v < 1e-3,
              f"v_EW(formula) = {v_EW:.4f} GeV vs PDG {v_EW_pdg} GeV, rel = {rel_v:.4e}"):
         pass_count += 1
@@ -141,19 +142,19 @@ def main():
         fail_count += 1
 
     # alpha_s(v) is reasonable
-    if check("retained alpha_s(v) ~ 0.10 (sub-percent of 0.103-0.104 typical)",
-             0.09 < alpha_s_v_retained < 0.12,
-             f"alpha_s(v) = {alpha_s_v_retained:.5f}"):
+    if check("display-only alpha_s(v) context lies in [0.09, 0.12]",
+             0.09 < alpha_s_v_context < 0.12,
+             f"alpha_s(v) = {alpha_s_v_context:.5f}"):
         pass_count += 1
     else:
         fail_count += 1
 
     # =========================================================================
-    # Section 2: Beta-function coefficients (retained group theory)
+    # Section 2: Declared beta-function convention
     # =========================================================================
-    heading("SECTION 2: BETA-FUNCTION COEFFICIENTS (RETAINED GROUP THEORY)")
+    heading("SECTION 2: DECLARED BETA-FUNCTION CONVENTION")
 
-    # Retained: b_3 = -7 (SM RGE coefficient for g_3, full SM with N_F=6 quarks)
+    # Existing context: b_3 = -7 (SM RGE coefficient for g_3 with N_F=6 quarks)
     # Per COMPLETE_PREDICTION_CHAIN_2026_04_15 Table in Section 3.2:
     #   b_3 = -7 = group theory of derived gauge + matter content
     # In the SM convention dg/dlnmu = b_3 g^3/(16 pi^2),
@@ -196,15 +197,14 @@ def main():
     # With b_3 = -7: beta_0 = 7/(4 pi) ≈ 0.5570.
     # And (33 - 2*6)/(12 pi) = 21/(12 pi) = 7/(4 pi). ✓
     #
-    # This confirms that the framework's b_3 = -7 corresponds to the
-    # standard QCD beta_0 with N_F=6, so the running is fully retained
-    # group theory.
+    # This checks only the displayed convention conversion. It does not derive
+    # the continuum RGE or promote the source status of b_3.
 
-    framework_beta0_NF6 = -(-7.0) / (4.0 * math.pi)  # from b_3 = -7
+    context_beta0_NF6 = -(-7.0) / (4.0 * math.pi)  # from supplied b_3 = -7 context
     pdg_beta0_NF6 = beta0_pdg(6)
-    if check("framework b_3 = -7 -> beta_0 = 7/(4*pi) matches PDG N_F=6",
-             abs(framework_beta0_NF6 - pdg_beta0_NF6) < 1e-12,
-             f"framework: {framework_beta0_NF6:.10f}, PDG: {pdg_beta0_NF6:.10f}"):
+    if check("b_3 = -7 converts to beta_0 = 7/(4*pi) for N_F=6",
+             abs(context_beta0_NF6 - pdg_beta0_NF6) < 1e-12,
+             f"converted: {context_beta0_NF6:.10f}, formula: {pdg_beta0_NF6:.10f}"):
         pass_count += 1
     else:
         fail_count += 1
@@ -213,15 +213,16 @@ def main():
     # Below the c-quark threshold (m_c ~ 1.27 GeV), N_F=3
     # Above m_t (~172.57 GeV), N_F=6; between m_t and m_b, N_F=5
     # The framework retains m_t = 172.57 GeV (Probe 19 / chain).
-    # m_b, m_c are infrastructure inputs (PDG) per COMPLETE_PREDICTION_CHAIN section 8.4.
+    # m_b, m_c are conventional MS-bar mass threshold markers per
+    # COMPLETE_PREDICTION_CHAIN section 8.4; m_t is a pole-mass marker.
 
-    m_t_framework = 172.57   # GeV, retained framework prediction
-    m_b_pdg       = 4.18     # GeV, infrastructure (PDG)
-    m_c_pdg       = 1.27     # GeV, infrastructure (PDG)
+    m_t_context   = 172.57   # GeV, existing cross-check context
+    m_b_pdg       = 4.18     # GeV, conventional MS-bar mass threshold marker
+    m_c_pdg       = 1.27     # GeV, conventional MS-bar mass threshold marker
 
-    print(f"  m_t (framework, retained)   = {m_t_framework} GeV  (used for N_F=6 -> N_F=5 threshold)")
-    print(f"  m_b (PDG infrastructure)    = {m_b_pdg} GeV   (used for N_F=5 -> N_F=4 threshold)")
-    print(f"  m_c (PDG infrastructure)    = {m_c_pdg} GeV   (used for N_F=4 -> N_F=3 threshold)")
+    print(f"  m_t (cross-check context)   = {m_t_context} GeV  (used for N_F=5 -> N_F=6 threshold)")
+    print(f"  m_b (MS-bar threshold marker) = {m_b_pdg} GeV   (used for N_F=5 -> N_F=4 threshold)")
+    print(f"  m_c (MS-bar threshold marker) = {m_c_pdg} GeV   (used for N_F=4 -> N_F=3 threshold)")
 
     # =========================================================================
     # Section 3: Lambda_QCD inversion from supplied alpha_s(M_Z) context
@@ -238,13 +239,6 @@ def main():
     # ± 14 MeV)". That is the same chain.
 
     print(f"  Starting input: alpha_s(M_Z={M_Z} GeV) = {alpha_s_MZ_context:.6f} (supplied downstream context)")
-
-    # Cross-check: also report Lambda^(6) derived directly from alpha_s(v) at scale v
-    # (above m_t threshold). This is a parallel route that should give consistent
-    # results once threshold-matched.
-    Lambda6_from_v = lambda_from_alpha_s_2loop(v_EW, alpha_s_v_retained,
-                                                  beta0_pdg(6), beta1_pdg(6))
-    print(f"  Cross-check: Lambda^(N_F=6) from alpha_s(v={v_EW:.1f},N_F=6) = {Lambda6_from_v*1000:.2f} MeV")
 
     # Primary route: Lambda^(5) from alpha_s(M_Z) at N_F=5
     Lambda5 = lambda_from_alpha_s_2loop(M_Z, alpha_s_MZ_context,
@@ -270,10 +264,39 @@ def main():
     print(f"  Lambda^(N_F=3) [matched at m_c = {m_c_pdg} GeV]    = {Lambda3*1000:.2f} MeV")
 
     # Step 4 (cross-check): Lambda^(6) from threshold matching upward at m_t
-    Lambda6 = threshold_match_lambda(Lambda5, m_t_framework, beta0_pdg(5), beta0_pdg(6))
-    print(f"  Lambda^(N_F=6) [matched at m_t = {m_t_framework} GeV]   = {Lambda6*1000:.2f} MeV")
+    Lambda6 = threshold_match_lambda(Lambda5, m_t_context, beta0_pdg(5), beta0_pdg(6))
+    print(f"  Lambda^(N_F=6) [matched at m_t = {m_t_context} GeV]   = {Lambda6*1000:.2f} MeV")
 
-    # PDG comparator (post-derivation only, falsifiability check)
+    def alpha_s_1loop(mu, Lambda, beta0):
+        return 1.0 / (beta0 * math.log(mu * mu / (Lambda * Lambda)))
+
+    threshold_residuals = [
+        abs(alpha_s_1loop(m_b_pdg, Lambda5, beta0_pdg(5))
+            - alpha_s_1loop(m_b_pdg, Lambda4, beta0_pdg(4))),
+        abs(alpha_s_1loop(m_c_pdg, Lambda4, beta0_pdg(4))
+            - alpha_s_1loop(m_c_pdg, Lambda3, beta0_pdg(3))),
+        abs(alpha_s_1loop(m_t_context, Lambda5, beta0_pdg(5))
+            - alpha_s_1loop(m_t_context, Lambda6, beta0_pdg(6))),
+    ]
+    if check("leading-log threshold matching preserves alpha_s at all three markers",
+             max(threshold_residuals) < 1e-12,
+             f"max continuity residual = {max(threshold_residuals):.3e}"):
+        pass_count += 1
+    else:
+        fail_count += 1
+
+    Lambda4_closed = Lambda5 * (m_b_pdg / Lambda5) ** (
+        1.0 - beta0_pdg(5) / beta0_pdg(4)
+    )
+    if check("threshold implementation matches the independent closed formula",
+             abs(Lambda4 - Lambda4_closed) < 1e-14,
+             f"Lambda4 residual = {abs(Lambda4-Lambda4_closed):.3e} GeV"):
+        pass_count += 1
+    else:
+        fail_count += 1
+
+    # Conventional Lambda reference diagnostic. It is later also used in the
+    # supplied composite r_0*Lambda ratio, so it is not globally comparator-only.
     Lambda5_pdg = 0.210     # GeV, PDG
     Lambda5_pdg_err = 0.014 # GeV, PDG 1-sigma
     rel_Lambda5 = abs(Lambda5 - Lambda5_pdg) / Lambda5_pdg
@@ -316,10 +339,10 @@ def main():
     print()
     print("  Declared inputs and cross-check context:")
     print(f"    - alpha_s(M_Z) = 0.1181  [supplied downstream context input]")
-    print(f"    - alpha_s(v) = alpha_bare/u_0^2  [retained CMT, for cross-check]")
-    print(f"    - v_EW = M_Pl*(7/8)^(1/4)*alpha_LM^16  [retained hierarchy]")
-    print(f"    - b_3 = -7 (-> beta_0^(N_F=6) = 7/(4 pi))  [retained group theory]")
-    print(f"    - m_t = 172.57 GeV  [retained framework prediction]")
+    print(f"    - alpha_s(v) = alpha_bare/u_0^2  [display-only cross-check context]")
+    print(f"    - v_EW = M_Pl*(7/8)^(1/4)*alpha_LM^16  [display-only context]")
+    print(f"    - b_3 = -7 (-> beta_0^(N_F=6) = 7/(4 pi))  [declared context]")
+    print(f"    - m_t = 172.57 GeV  [cross-check context]")
     print(f"    - m_b, m_c  [PDG infrastructure, threshold matching only]")
     print()
     print("  Lambda^(5) = {:.2f} MeV  (conditional; PDG comparator: 210 MeV, dev: {:.1f}%)".format(
@@ -352,48 +375,48 @@ def main():
     heading("SECTION 5: r_0 FROM LAMBDA (DIMENSIONAL INVERSION)")
 
     # The Sommer scale r_0 is defined by F(r_0) * r_0^2 = 1.65 (Sommer 1993).
-    # In terms of the QCD scale Lambda_MS-bar, r_0 * Lambda is a pure SU(3)
-    # YM observable (ratio of two scales of the gauge theory).
+    # In terms of the QCD scale Lambda_MS-bar, r_0 * Lambda is dimensionless.
+    # Its value depends on the flavor content and scale convention.
     #
     # Quenched (N_F=0) Necco-Sommer 2002:  r_0 * Lambda_MS-bar^(0) = 0.602(48)
-    # For N_F=5: there is a corresponding number derivable from QCD running
-    # plus the N_F=0 ratio via threshold matching, but the cleanest published
-    # reference is:
-    #   FLAG: r_0 = 0.503(10) fm and Lambda_MS-bar^(N_F=5) ~ 210 MeV.
-    #   So r_0 * Lambda^(5) ~ 0.503 fm * 210 MeV / (197.3 MeV*fm) = 0.535
+    # The N_F=0 number does not determine the N_F=5 number used below. The
+    # latter is constructed directly from the supplied conventional values
+    # r_0=0.5 fm and Lambda^(5)=210 MeV.
     #
     # In units where hbar = c = 1: r_0 [fm] = 0.1973 / (Lambda [GeV]) * (r_0 * Lambda)
     #
-    # The dimensionless ratio is an admitted SU(3) gauge-theory input here;
-    # this runner does not calculate it from the framework.
+    # The composite dimensionless ratio is supplied here; this runner does not
+    # calculate it independently from gauge dynamics.
 
     hbar_c = 0.1973  # GeV * fm (universal conversion, NOT a physics import)
 
-    # Reference values: r_0 * Lambda for various N_F (lattice QCD literature)
-    # These are SU(3) YM dynamical predictions, NOT phenomenological fits.
+    # Reference values. The N_F=5 number below is a composite supplied input
+    # constructed from the conventional r_0 and Lambda^(5) references; it is
+    # not an independent gauge calculation.
     r0_Lambda_NF0_quenched = 0.602    # Necco-Sommer 2002 quenched
-    r0_Lambda_NF5_phenom   = 0.535    # FLAG-style estimate from r0 = 0.5 fm * 210 MeV / hbar*c
+    r0_reference = 0.5                # fm, supplied conventional reference
+    r0_Lambda_NF5_supplied = r0_reference * Lambda5_pdg / hbar_c
 
-    print("  r_0 * Lambda is a dimensionless SU(3) gauge-theory quantity")
+    print("  r_0 * Lambda is a dimensionless QCD scale ratio")
     print("  (supplied here; this runner does not calculate it).")
     print()
-    print(f"  Reference numbers (SU(3) YM lattice dynamics):")
+    print(f"  Reference numbers and constructions:")
     print(f"    r_0 * Lambda^(N_F=0) = {r0_Lambda_NF0_quenched} (Necco-Sommer 2002, quenched)")
-    print(f"    r_0 * Lambda^(N_F=5) ~ {r0_Lambda_NF5_phenom} (from r_0 = 0.5 fm, Lambda^(5) = 210 MeV)")
+    print(f"    r_0 * Lambda^(N_F=5) = {r0_Lambda_NF5_supplied:.6f} (constructed from r_0 = 0.5 fm, Lambda^(5) = 210 MeV)")
 
     # Combine the supplied N_F=5 ratio with the conditional Lambda^(5).
-    r0_framework_NF5 = (r0_Lambda_NF5_phenom / Lambda5) * hbar_c   # in fm
-    print(f"  r_0 (conditional Lambda^(5), using supplied ratio) = {r0_framework_NF5:.4f} fm")
+    r0_conditional = (r0_Lambda_NF5_supplied / Lambda5) * hbar_c   # in fm
+    print(f"  r_0 (conditional rescaling using supplied composite ratio) = {r0_conditional:.4f} fm")
 
-    # PDG/Sommer comparator
-    r0_sommer = 0.5  # fm, conventional Sommer choice
-    rel_r0 = abs(r0_framework_NF5 - r0_sommer) / r0_sommer
-    print(f"  Sommer convention r_0 = {r0_sommer} fm")
-    print(f"  Relative deviation: {rel_r0*100:.2f}%")
+    # The same r_0 reference is load-bearing in the composite ratio, so the
+    # following difference is a rescaling diagnostic, not an independent test.
+    rel_r0 = abs(r0_conditional - r0_reference) / r0_reference
+    print(f"  Supplied reference r_0 = {r0_reference} fm (also used to construct the ratio)")
+    print(f"  Conditional rescaling difference: {rel_r0*100:.2f}%")
 
-    if check("conditional r_0 readout within 30% of conventional Sommer 0.5 fm",
-             rel_r0 < 0.30,
-             f"r_0 = {r0_framework_NF5:.4f} fm vs Sommer 0.5 fm, dev {rel_r0*100:.2f}%"):
+    if check("conditional r_0 rescaling identity is internally consistent",
+             abs(r0_conditional - r0_reference * Lambda5_pdg / Lambda5) < 1e-14,
+             f"r_0 = {r0_conditional:.4f} fm; same 0.5 fm reference constructs the input ratio"):
         pass_count += 1
     else:
         fail_count += 1
@@ -402,8 +425,8 @@ def main():
     Lambda_inv = hbar_c / Lambda5     # 1/Lambda in fm
     print(f"  hbar*c / Lambda^(5) = {Lambda_inv:.4f} fm  (natural length scale)")
     if check("r_0 ~ O(1) * 1/Lambda^(5) (correct dimensional structure)",
-             0.3 * Lambda_inv < r0_framework_NF5 < 3.0 * Lambda_inv,
-             f"r_0/Lambda_inv = {r0_framework_NF5/Lambda_inv:.4f}"):
+             0.3 * Lambda_inv < r0_conditional < 3.0 * Lambda_inv,
+             f"r_0/Lambda_inv = {r0_conditional/Lambda_inv:.4f}"):
         pass_count += 1
     else:
         fail_count += 1
@@ -418,60 +441,57 @@ def main():
     print(f"    This value depends load-bearingly on supplied alpha_s(M_Z)=0.1181")
     print(f"    Threshold matching additionally uses declared m_t, m_b, and m_c inputs")
     print()
-    print("  ADMITTED OBSTRUCTION (this probe DOES NOT close):")
-    print(f"    The dimensionless ratio r_0 * Lambda is a SU(3) YM observable")
-    print(f"    Status: same shelf as <P> = 0.5934 — a SU(3) YM number that the")
-    print(f"            framework's gauge-identification predicts, but the framework")
-    print(f"            has not analytically computed it. Lattice MC computation of")
-    print(f"            r_0 * Lambda is a finite production calculation, not a")
-    print(f"            structural obstruction.")
+    print("  SUPPLIED LIMITATION (this probe DOES NOT close):")
+    print(f"    The dimensionless ratio r_0 * Lambda is a QCD scale ratio")
+    print(f"    Status: its numerical value is supplied; the gauge identification")
+    print(f"            alone does not calculate it.")
     print()
     print("  NET LANE 1 IMPORT-COUNT EFFECT:")
-    print(f"    None. Both supplied alpha_s(M_Z) and admitted r_0*Lambda remain")
+    print(f"    None. Both supplied alpha_s(M_Z) and supplied r_0*Lambda remain")
     print(f"    load-bearing, so the algebraic split does not close an import.")
     print()
     print("  This is a bounded conditional decomposition, not a partial closure.")
 
-    if check("bounded verdict: supplied coupling and admitted ratio remain explicit",
-             alpha_s_MZ_context == 0.1181 and r0_Lambda_NF5_phenom == 0.535,
+    if check("bounded verdict: supplied coupling and supplied ratio remain explicit",
+             alpha_s_MZ_context == 0.1181
+             and abs(r0_Lambda_NF5_supplied - r0_reference * Lambda5_pdg / hbar_c) < 1e-15,
              "no framework-native Lambda or Sommer-scale claim"):
         pass_count += 1
     else:
         fail_count += 1
 
     # =========================================================================
-    # Section 7: No-PDG-input audit
+    # Section 7: Input-role report
     # =========================================================================
-    heading("SECTION 7: NO-PDG-INPUT AUDIT")
+    heading("SECTION 7: INPUT-ROLE REPORT")
 
-    # Verify: PDG values were used ONLY as falsifiability comparators, never as
-    # derivation inputs. The infrastructure m_b, m_c are explicitly labeled
-    # as such per COMPLETE_PREDICTION_CHAIN section 8.4.
-    pdg_comparators_only = [
-        ("v_EW PDG", v_EW_pdg, "comparator for retained v_EW formula"),
-        ("Lambda^(5) PDG", Lambda5_pdg, "comparator for conditional Lambda^(5)"),
-        ("r_0 Sommer", r0_sommer, "comparator for conditional r_0"),
+    # Report which conventional values are load-bearing and which are only
+    # display-side comparators. This is prose, not a source-authority proof.
+    reference_values = [
+        ("v_EW PDG", v_EW_pdg, "comparator for declared v_EW formula"),
+        ("Lambda^(5) reference", Lambda5_pdg, "also constructs supplied r_0*Lambda ratio"),
+        ("r_0 reference", r0_reference, "also constructs supplied r_0*Lambda ratio"),
     ]
     pdg_infrastructure = [
-        ("M_Z", M_Z, "conventional Z-pole scale (PDG-standard scale identification)"),
-        ("m_b", m_b_pdg, "threshold infrastructure (per CHAIN section 8.4)"),
-        ("m_c", m_c_pdg, "threshold infrastructure (per CHAIN section 8.4)"),
+        ("M_Z", M_Z, "load-bearing inversion scale"),
+        ("m_b", m_b_pdg, "load-bearing for the Lambda4 threshold consequence"),
+        ("m_c", m_c_pdg, "load-bearing for the Lambda3 threshold consequence"),
     ]
     declared_chain_context = [
         ("alpha_s(M_Z)", alpha_s_MZ_context, "supplied downstream context input"),
-        ("alpha_s(v)", alpha_s_v_retained, "retained CMT alpha_bare/u_0^2"),
-        ("v_EW", v_EW, "retained hierarchy theorem"),
-        ("alpha_LM", alpha_LM, "retained ALPHA_LM_GEOMETRIC_MEAN_IDENTITY"),
-        ("u_0", u_0, "retained tadpole P^(1/4)"),
-        ("m_t", m_t_framework, "retained framework prediction"),
-        ("b_3 = -7", -7, "retained group theory"),
+        ("alpha_s(v)", alpha_s_v_context, "display-only alpha_bare/u_0^2 context"),
+        ("v_EW", v_EW, "display-only hierarchy-chain context"),
+        ("alpha_LM", alpha_LM, "computed context value"),
+        ("u_0", u_0, "computed P^(1/4) context value"),
+        ("m_t", m_t_context, "cross-check threshold context"),
+        ("b_3 = -7", -7, "declared coefficient context"),
     ]
 
-    print("  PDG comparators (post-derivation only):")
-    for name, val, role in pdg_comparators_only:
+    print("  Conventional references and roles:")
+    for name, val, role in reference_values:
         print(f"    {name} = {val} ({role})")
     print()
-    print("  Infrastructure inputs (threshold matching only):")
+    print("  Conventional infrastructure inputs:")
     for name, val, role in pdg_infrastructure:
         print(f"    {name} = {val} ({role})")
     print()
@@ -479,26 +499,8 @@ def main():
     for name, val, role in declared_chain_context:
         print(f"    {name} = {val} ({role})")
 
-    if check("PDG values used only as comparators or threshold infrastructure",
-             True,
-             "supplied alpha_s(M_Z) is separately and explicitly labeled"):
-        pass_count += 1
-    else:
-        fail_count += 1
-
-    if check("no new axioms introduced",
-             True,
-             "this repair narrows source semantics without changing the baseline"):
-        pass_count += 1
-    else:
-        fail_count += 1
-
-    if check("no new input introduced by this repair",
-             True,
-             "the existing supplied alpha_s(M_Z) dependence remains explicit"):
-        pass_count += 1
-    else:
-        fail_count += 1
+    print("  INFO  Source-role and frozen-baseline claims require repository-level checks;")
+    print("        they are not counted as unconditional runner PASS assertions.")
 
     # =========================================================================
     # Section 8: Lane 1 import-count update
@@ -523,19 +525,14 @@ def main():
     print("    No further decrement is justified.")
     print("      - Sommer r_0 splits into:")
     print("          * Lambda_MS-bar^(N_F=5)  [conditional on supplied alpha_s(M_Z)]")
-    print("          * r_0 * Lambda^(5)        [admitted ratio]")
+    print("          * r_0 * Lambda^(5)        [supplied ratio]")
     print("      - 4-loop QCD running [partially derived in PR #917]")
     print("      - threshold matching at heavy-quark thresholds")
     print("      - sea-quark / full-QCD bridge")
     print()
     print("  The earlier source-side 3.0 count and Lambda promotion are withdrawn.")
 
-    if check("Lane 1 import-count update accounting consistent",
-             True,
-             "no decrement from a result that depends on two supplied inputs"):
-        pass_count += 1
-    else:
-        fail_count += 1
+    print("  INFO  Import-count governance is reported, not asserted by this numeric runner.")
 
     # =========================================================================
     # Final summary

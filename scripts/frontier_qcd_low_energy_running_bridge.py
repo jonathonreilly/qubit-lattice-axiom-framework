@@ -15,7 +15,7 @@ Normal mode checks the group factors, coefficient/factor conventions, exact
 one-loop formula, the complete declared ten-point grid, two independent
 solve_ivp methods, and the implicit analytic two-loop solution on each
 constant-n_f segment.  ``--independent`` reconstructs the key values with a
-separate fixed-step RK4 implementation.  ``--hostile`` verifies that seven
+separate fixed-step RK4 implementation.  ``--hostile`` verifies that nine
 computed mutations are detected, including a counterexample to interpreting
 the one-loop-to-two-loop difference as a remainder bound.
 
@@ -153,13 +153,14 @@ def beta_alpha(
     alpha: float,
     n_f: int,
     *,
+    beta0_multiplier: float = 1.0,
     beta1_multiplier: float = 1.0,
     two_loop_factor: float = 1.0,
     flow_sign: float = -1.0,
 ) -> float:
     """Two-loop d alpha_s/dln(mu); optional controls are hostile fixtures."""
     beta_0, beta_1 = beta_coefficients(n_f)
-    magnitude = (beta_0 * alpha ** 2 / (2.0 * PI)
+    magnitude = (beta0_multiplier * beta_0 * alpha ** 2 / (2.0 * PI)
                  + two_loop_factor * beta1_multiplier
                  * beta_1 * alpha ** 3 / (8.0 * PI ** 2))
     return flow_sign * magnitude
@@ -189,6 +190,7 @@ def transfer_numeric(
     segments: tuple[Segment, ...] = MATCHED_SEGMENTS,
     *,
     method: str = "RK45",
+    beta0_multiplier: float = 1.0,
     beta1_multiplier: float = 1.0,
     two_loop_factor: float = 1.0,
     flow_sign: float = -1.0,
@@ -201,6 +203,7 @@ def transfer_numeric(
                 beta_alpha(
                     float(y[0]),
                     segment.n_f,
+                    beta0_multiplier=beta0_multiplier,
                     beta1_multiplier=beta1_multiplier,
                     two_loop_factor=two_loop_factor,
                     flow_sign=flow_sign,
@@ -216,6 +219,12 @@ def transfer_numeric(
             raise RuntimeError(f"two-loop segment failed: {solution.message}")
         current = float(solution.y[0, -1])
     return current
+
+
+def transfer_with_matching_jump(alpha: float, jump: float) -> float:
+    """Hostile fixture with an additive non-identity jump at the top marker."""
+    above = transfer_numeric(alpha, (MATCHED_SEGMENTS[0],))
+    return transfer_numeric(above + jump, (MATCHED_SEGMENTS[1],))
 
 
 def transfer_one_loop_numeric(alpha: float) -> float:
@@ -541,6 +550,14 @@ def run_hostile() -> None:
         max(abs(left - right) for left, right in zip(correct, wrong_beta1)) > separation,
     )
 
+    wrong_beta0 = [
+        transfer_numeric(float(alpha), beta0_multiplier=0.9) for alpha in GRID
+    ]
+    check(
+        "kills wrong beta_0 coefficient",
+        min(abs(left - right) for left, right in zip(correct, wrong_beta0)) > separation,
+    )
+
     wrong_factor = [
         transfer_numeric(float(alpha), two_loop_factor=2.0) for alpha in GRID
     ]
@@ -563,6 +580,14 @@ def run_hostile() -> None:
     check(
         "kills the missing-threshold mutation",
         min(abs(left - right) for left, right in zip(correct, missing_threshold)) > separation,
+    )
+
+    wrong_matching = [
+        transfer_with_matching_jump(float(alpha), 1e-3) for alpha in GRID
+    ]
+    check(
+        "kills a non-identity threshold-matching jump",
+        min(abs(left - right) for left, right in zip(correct, wrong_matching)) > separation,
     )
 
     wrong_flavor = [

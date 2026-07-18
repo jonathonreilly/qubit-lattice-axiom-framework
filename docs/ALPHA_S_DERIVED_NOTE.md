@@ -280,7 +280,7 @@ wired, but this row still cannot honestly promote beyond bounded
 forward arithmetic. The remaining promotion blockers are exact and
 source-visible:
 
-- **B1 remains an admitted plaquette value.** The bracket-reduction
+- **B1 remains a supplied plaquette reuse value.** The bracket-reduction
   program gives `<P>* = 1 + f'(6)` a framework-native referent and
   reduces retirement to a certified three-point `ln Z_L` enclosure, but
   this note does not supply that enclosure and does not derive

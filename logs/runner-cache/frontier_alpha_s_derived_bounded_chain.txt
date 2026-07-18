@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_alpha_s_derived_bounded_chain.py
-runner_sha256: 404c756020bc7151e8957f3b319f016b5ccc80b0a3cf46b994699e743d89d1be
+runner_sha256: 4d573811f07f392dd17f5ad4a84c4c0d131eeacd17caf5dcd742f6c810686276
 timeout_sec: 900
 exit_code: 0
 elapsed_sec: 0.09
@@ -32,7 +32,7 @@ C1: bounded v -> M_Z corollary (quarantined; not load-bearing)
 === Source-status firewall (class B, non-load-bearing for T1) ===
 
   [PASS][B] 2026-06-12 firewall says row remains bounded, not retained
-  [PASS][B] firewall keeps B1 plaquette value admitted until certified
+  [PASS][B] firewall keeps B1 as a supplied plaquette reuse value until certified
   [PASS][B] firewall keeps B3 channel-selection/coupling-map bridge open
   [PASS][B] firewall keeps B4 lattice-to-MSbar scheme/scale bridge open
 

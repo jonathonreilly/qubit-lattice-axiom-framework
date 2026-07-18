@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_z_quark_qcd_chain_2026_05_08_probeZ_quark_qcd_chain.py
-runner_sha256: 96ed76a6ec3656e4b4a3ef0f59dcfb260ef98a7a0c8f456ab92ea1528fcfb942
+runner_sha256: 76a412a8662d9bc7a08a8fa85b024da95fff72a8606a268e6bb00b6971792612
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -16,15 +16,15 @@ SECTION 1: CITED QCD-CHAIN CONSTANTS
   source-stack u_0             = 0.8776813812
   source-stack alpha_LM        = 0.0906678360
   source-stack alpha_s(v)      = 0.1033038161
-  source-stack alpha_s(M_Z)    = 0.1181
+  supplied alpha_s(M_Z)        = 0.1181
   source-stack log(alpha_s)    = -2.1362235558
   source-stack Lambda^(5)      = 0.21 GeV (5-flavor MS-bar)
   source-stack Lambda^(4)      = 0.29 GeV (4-flavor MS-bar)
   source-stack Lambda^(3)      = 0.332 GeV (3-flavor MS-bar)
   source-stack Lambda^(3)_fw   = 0.389 GeV (framework Method 1)
-  PASS  alpha_s(M_Z) = 0.1181 (bounded source note)
+  PASS  supplied alpha_s(M_Z) context equals 0.1181
         alpha_s(M_Z) = 0.1181
-  PASS  Lambda_MSbar^(5) = 210 MeV (bounded source note per CONFINEMENT_STRING_TENSION_NOTE)
+  PASS  cited Lambda_MSbar^(5) scan value equals 210 MeV
         Lambda_MSbar^(5) = 0.21 GeV
   PASS  alpha_s(v) = alpha_bare/u_0^2 (source-stack vertex-power identity)
         alpha_s(v) = 0.103304
@@ -42,8 +42,8 @@ SECTION 2: PDG FERMION-MASS COMPARATORS (FALSIFICATION TARGETS)
     m_c   = 1.270000e+00 GeV (MS-bar @ m_c)
     m_b   = 4.180000e+00 GeV (MS-bar @ m_b)
     m_t   = 1.726900e+02 GeV (pole)
-  PASS  PDG values are falsification targets, not derivation premises
-        chain expression inputs are source-stack; PDG is on the target/comparator side
+  INFO  PDG values are declared target-side comparators; source-role
+        enforcement belongs to repository checks, not an unconditional PASS.
 
 ========================================================================
 SECTION 3: RAW EXPONENT TEST (C=1, integer n_q)
@@ -74,11 +74,12 @@ SECTION 3: RAW EXPONENT TEST (C=1, integer n_q)
         m_c rel.err at n=-1: 40.01%
 
 ========================================================================
-SECTION 4: m_tau STRUCTURAL CIRCULARITY
+SECTION 4: m_tau INPUT-DEPENDENCE REPORT
 ========================================================================
-  m_tau ~ Lambda_QCD / alpha_s(M_Z) at 0.073% is structurally circular
-  because Lambda_QCD is itself derived from alpha_s(M_Z) via 2-loop
-  supplied rounded downstream context; the QCD bridge supplies only the transfer map.
+  m_tau ~ Lambda_QCD / alpha_s(M_Z) at 0.073% is not an independent
+  two-input result under the cited convention: the confinement note
+  obtains Lambda_QCD by inverting the same supplied alpha_s(M_Z) context.
+  The QCD bridge supplies only a transfer map and does not derive 0.1181.
 
   1-loop sanity: Lambda_pred = M_Z * exp(-1/(2*beta_0*alpha_s))
     beta_0 (nf=5) = 0.610094
@@ -89,8 +90,8 @@ SECTION 4: m_tau STRUCTURAL CIRCULARITY
   not a 2-parameter structural identity.
   PASS  1-loop Lambda within order-of-magnitude of cited Lambda^(5)
         Lambda_1loop / Lambda^(5) = 0.4207
-  PASS  m_tau ~ Lambda_QCD/alpha_s(M_Z) is RGE-circular, not independent
-        Lambda_QCD = M_Z * exp(-1/(2*beta_0*alpha_s)) makes m_tau ~ Lambda/alpha_s a 1-param relation
+  INFO  The one-input provenance statement is reported from the cited
+        confinement source; the numeric runner does not certify that source.
 
 ========================================================================
 SECTION 5: STRUCTURAL-CANDIDATE C WITH INTEGER n_q
@@ -110,7 +111,7 @@ SECTION 5: STRUCTURAL-CANDIDATE C WITH INTEGER n_q
   Cross-quark single-C check:
   NO single structural-candidate C works for all three heavy quarks at 5%
   PASS  NO single structural-candidate C closes (m_t, m_b, m_c) at 5% with integer n_q
-        checked C in {1, 4/3, 3, 1/2, sqrt(2), 1/sqrt(2), sqrt(6), 1/sqrt(6), 7/8, ...}
+        checked exactly the 30 declared structural-candidate C values
   PASS  m_t at C_F=4/3 (color Casimir), n=-3 closes to ~1.6% (BORDERLINE)
         m_t pred = 169.9841 GeV, rel.err = 1.57%
   PASS  m_b at C_F=4/3 fails at >40% (C_F is m_t-specific only)
@@ -132,19 +133,20 @@ SECTION 6: SIMPLE-RATIONAL n_q TEST (q in {2, 3, 4, 6})
   the failure mode: no unified structural-candidate C admits a chain
   closure for the heavy-quark triplet.
 
-  Cross-quark single-C check (q<=6):
-    WARNING: common C=sqrt(2) works for all three at 5% q<=6: {'t': (-3, 1, 0.044040654459251705), 'b': (-5, 4, 0.026232203355439226), 'c': (-2, 3, 0.02852721240706348)}
+  Cross-quark single-C check (q in {1, 2, 3, 4, 6}):
+    WARNING: common C=sqrt(2) works for all three at 5% q in (1, 2, 3, 4, 6): {'t': (-3, 1, 0.044040654459251705), 'b': (-5, 4, 0.026232203355439226), 'c': (-2, 3, 0.02852721240706348)}
 
-  Note: q<=6 closure may exist within the 37% random-density band, but
+  Note: closure over denominators {1, 2, 3, 4, 6} may exist within the
+  37% random-density band, but
   this would not be structurally informative. Test at 1% gate (random
-  density ~8% at q<=6) for structural significance.
+  density ~8% for the tested set) for structural significance.
 
-  Cross-quark single-C check at 1% mass gate (q<=6):
-    NO single structural-candidate C works for all three at 1% (q<=6)
-  PASS  NO single structural-candidate C closes (m_t, m_b, m_c) at 1% mass gate (q<=6)
-        1% gate has q<=6 random density ~8%; structural closure should be detectable here
+  Cross-quark single-C check at 1% mass gate (q in {1, 2, 3, 4, 6}):
+    NO single structural-candidate C works for all three at 1% (q in (1, 2, 3, 4, 6))
+  PASS  NO single structural-candidate C closes (m_t, m_b, m_c) at 1% mass gate for q in {1, 2, 3, 4, 6}
+        1% gate has ~8% random density for the tested denominator set
 
-  Density-of-rationals coincidence: C = sqrt(2), q<=6 fits all three at 5%
+  Density-of-rationals coincidence: C = sqrt(2), tested denominators fit all three at 5%
     m_t: n = -3/1, rel.err = 4.40%
     m_b: n = -5/4, rel.err = 2.62%
     m_c: n = -2/3, rel.err = 2.85%
@@ -152,7 +154,7 @@ SECTION 6: SIMPLE-RATIONAL n_q TEST (q in {2, 3, 4, 6})
   2.6%-4.4% mass error which sits at the edge of the 5% gate. This is a
   density-of-rationals coincidence within the 37% random band, not a
   structural closure (would need to hit 1% gate for structural significance).
-  PASS  C=sqrt(2) q<=6 5% closure is within density-of-rationals random band
+  PASS  C=sqrt(2) tested-denominator 5% closure is within density-of-rationals random band
         all three at 2.6%-4.4% mass error, just under the 5% gate
 
 ========================================================================
@@ -163,10 +165,10 @@ SECTION 7: DENSITY-OF-RATIONALS CONTROL (Monte Carlo)
 
   Random hit rates over N=10000 reals uniform in [-5, 5]:
     integer-only at 5% gate: 4.92%
-    q in [1..6]   at 5% gate: 36.68%
+    q in {1,2,3,4,6} at 5% gate: 36.68%
     q in [1..12]  at 5% gate: 92.17%
     integer-only at 1% gate: 1.11%
-    q in [1..6]   at 1% gate: 7.18%
+    q in {1,2,3,4,6} at 1% gate: 7.18%
   PASS  q<=12 fits at 5% gate are NOT structurally informative (random density >50%)
         random density q<=12 at 5%: 92.17%
   PASS  integer-only fits at 1% gate are structurally informative (random density <2%)
@@ -197,16 +199,16 @@ SECTION 9: SENSITIVITY TO Lambda_QCD AND alpha_s(M_Z)
     Lambda^(4) = 290 MeV                     -> FAIL
     Lambda^(3) = 332 MeV                     -> FAIL
     Lambda^(3)_framework = 389 MeV           -> FAIL
-  PASS  Result (no single-C closure) robust across Lambda^(3,4,5) choices
-        no Lambda choice admits common C for (m_t, m_b, m_c) at 5%
+  PASS  Integer-exponent result (no single-C closure) robust across Lambda^(3,4,5) choices
+        no Lambda choice admits a common-C integer fit for (m_t, m_b, m_c) at 5%
 
   Result robustness across alpha_s(M_Z) PDG envelope:
     alpha_s(M_Z) = 0.1171 (-1 sigma)         -> FAIL
     alpha_s(M_Z) = 0.1180 (PDG)              -> FAIL
     alpha_s(M_Z) = 0.1181 (canonical)        -> FAIL
     alpha_s(M_Z) = 0.1189 (+1 sigma)         -> FAIL
-  PASS  Result robust across alpha_s(M_Z) PDG envelope (+/- 0.0009)
-        no alpha_s envelope value admits common C for (m_t, m_b, m_c) at 5%
+  PASS  Integer-exponent result robust across alpha_s(M_Z) PDG envelope (+/- 0.0009)
+        no alpha_s envelope value admits a common-C integer fit for (m_t, m_b, m_c) at 5%
 
 ========================================================================
 SECTION 10: LIGHT-QUARK SECTOR CHECK
@@ -222,33 +224,33 @@ SECTION 10: LIGHT-QUARK SECTOR CHECK
 SECTION 11: COVERAGE SUMMARY
 ========================================================================
   Route tested by this runner:
-    [Z] QCD-confinement chain heavy-quark masses        -> NEG (no single-C closure at 5%)
+    [Z] QCD-confinement chain heavy-quark masses        -> NEG at declared gates
   Related EW-chain probes are sibling PRs and are not load-bearing
   dependencies for this runner.
 
   Sharpened residue: m_tau lies on EW Wilson chain (Probe 19, positive).
   m_tau also lies near Lambda_QCD/alpha_s(M_Z) at 0.073% but this is
-  structurally circular (Lambda_QCD derived from alpha_s(M_Z) via RGE).
+  non-independent under the cited Lambda-from-alpha_s convention.
 
-  Within this QCD-chain ansatz, heavy-quark masses require
-  generation-dependent prefactors C_q OR a qualitatively different
-  mechanism.
-  PASS  QCD-chain single-C route is closed within the tested ansatz
-        no single structural-candidate C closes the heavy-quark triplet at the configured gates
+  The scan excludes a common-C integer fit at 5% and a common-C
+  tested-denominator rational fit at 1%; it does not exclude the
+  observed common C=sqrt(2) fit at the non-significant 5% gate.
+  PASS  configured single-C negative gates are both satisfied
+        no integer 5% closure and no tested-denominator rational 1% closure
 
 ========================================================================
 FINAL TALLY
 ========================================================================
-  PASS = 27
+  PASS = 25
   FAIL = 0
 
   Result classification: BOUNDED (NEGATIVE)
-  - Parallel QCD-confinement chain m_q = Lambda_QCD * C * alpha_s^n_q
-    does NOT close (m_t, m_b, m_c) at 5% with any single
-    structural-candidate C and integer or simple-rational n_q.
-  - The QCD-chain route is FORECLOSED within the tested ansatz.
-  - m_tau ~ Lambda_QCD/alpha_s(M_Z) at 0.073% is structurally
-    circular (one-parameter QCD-RGE relation, not two-parameter).
+  - No single-C integer fit closes (m_t, m_b, m_c) at 5%.
+  - No single-C tested-denominator rational fit closes the triplet at 1%.
+  - C=sqrt(2) does close all three over that set at 5%, inside the
+    measured density-of-rationals band; no 5% rational no-go follows.
+  - m_tau ~ Lambda_QCD/alpha_s(M_Z) at 0.073% is non-independent
+    under the cited Lambda-from-alpha_s convention.
   - m_t at C_F=4/3, n=-3 closes to 1.57% (BORDERLINE, single-quark only).
   - The EW-chain m_b/m_c ~ alpha_LM^(-1/2) comparator does
     NOT extend to the QCD chain.

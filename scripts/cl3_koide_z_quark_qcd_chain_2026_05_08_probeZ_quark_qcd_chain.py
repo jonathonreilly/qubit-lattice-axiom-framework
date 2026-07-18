@@ -7,24 +7,27 @@ Source-note runner for:
 
 Result classification: bounded negative scan of the parallel QCD-confinement chain
   m_q = Lambda_QCD * C * alpha_s(M_Z)^n_q
-does NOT simultaneously close (m_t, m_b, m_c) at integer or simple-rational
-n_q with any single candidate structural prefactor C at the 5% mass
-precision gate.
+does NOT simultaneously close (m_t, m_b, m_c) with any single candidate
+structural prefactor C at the 5% gate for integer n_q, or at the 1% gate for
+simple-rational n_q with denominator in {1,2,3,4,6}. A C=sqrt(2) rational fit exists
+at 5%, inside the measured density-of-rationals band, so no broader 5% rational
+no-go is claimed.
 
 Tests:
   Step 1 (sanity): cited QCD/source-stack content
     Lambda_MSbar^(5) = 210 MeV (CONFINEMENT_STRING_TENSION_NOTE Step 4)
-    alpha_s(M_Z) = 0.1181 (ALPHA_S_DERIVED_NOTE bounded source note)
+    alpha_s(M_Z) = 0.1181 (supplied rounded downstream context)
   Step 2 (compute n_q with C=1): no heavy quark closes at integer n_q to 5%.
   Step 3 (test structural-candidate C with integer n_q): per-quark hits exist
     (m_t at C_F=4/3 -> 1.57%, m_b at sqrt(6) -> 4.20%, m_c at 1/sqrt(2) -> 1.00%)
     but no single C works for all three.
-  Step 4 (m_tau structural circularity): m_tau ~ Lambda_QCD/alpha_s(M_Z) at
-    0.073% but Lambda_QCD is itself derived from alpha_s(M_Z) via 2-loop
-    running, so this is a one-parameter relation already encoded in standard
-    QCD infrastructure, not a two-parameter structural identity.
-  Step 5 (density-of-rationals control): random reals admit q<=6 fits at 5%
-    gate ~37% of the time, q<=12 fits ~92%. q<=12 fits carry no structural
+  Step 4 (m_tau input dependence): m_tau ~ Lambda_QCD/alpha_s(M_Z) at
+    0.073%, but the cited convention obtains Lambda_QCD by inverting the same
+    supplied alpha_s(M_Z) context. It is therefore not an independent
+    two-input structural identity under that convention.
+  Step 5 (density-of-rationals control): random reals admit fits over the
+    tested denominator set {1,2,3,4,6} at 5% gate ~37% of the time, while
+    q<=12 fits occur ~92%. q<=12 fits carry no structural
     information.
   Step 6 (cross-ratio test): m_b/m_c approx alpha_s^(-0.558), 0.058 from -1/2.
     The EW-chain m_b/m_c ~ alpha_LM^(-1/2) comparator (0.0037 from
@@ -96,7 +99,7 @@ def main():
 
     # Bounded/source-stack QCD content
     alpha_s_v = alpha_bare / (u_0 ** 2)              # vertex-power chain
-    alpha_s_MZ = 0.1181                              # bounded source note
+    alpha_s_MZ = 0.1181                              # supplied rounded context
     log_alpha_s_MZ = math.log(alpha_s_MZ)
     Lambda_MSbar_5 = 0.210                           # GeV, 5-flavor
     Lambda_MSbar_4 = 0.290                           # GeV, 4-flavor
@@ -109,21 +112,21 @@ def main():
     print(f"  source-stack u_0             = {u_0:.10f}")
     print(f"  source-stack alpha_LM        = {alpha_LM:.10f}")
     print(f"  source-stack alpha_s(v)      = {alpha_s_v:.10f}")
-    print(f"  source-stack alpha_s(M_Z)    = {alpha_s_MZ}")
+    print(f"  supplied alpha_s(M_Z)        = {alpha_s_MZ}")
     print(f"  source-stack log(alpha_s)    = {log_alpha_s_MZ:.10f}")
     print(f"  source-stack Lambda^(5)      = {Lambda_MSbar_5} GeV (5-flavor MS-bar)")
     print(f"  source-stack Lambda^(4)      = {Lambda_MSbar_4} GeV (4-flavor MS-bar)")
     print(f"  source-stack Lambda^(3)      = {Lambda_MSbar_3} GeV (3-flavor MS-bar)")
     print(f"  source-stack Lambda^(3)_fw   = {Lambda_3_framework} GeV (framework Method 1)")
 
-    if check("alpha_s(M_Z) = 0.1181 (bounded source note)",
+    if check("supplied alpha_s(M_Z) context equals 0.1181",
              abs(alpha_s_MZ - 0.1181) < 1e-6,
              f"alpha_s(M_Z) = {alpha_s_MZ}"):
         pass_count += 1
     else:
         fail_count += 1
 
-    if check("Lambda_MSbar^(5) = 210 MeV (bounded source note per CONFINEMENT_STRING_TENSION_NOTE)",
+    if check("cited Lambda_MSbar^(5) scan value equals 210 MeV",
              abs(Lambda_MSbar_5 - 0.210) < 1e-6,
              f"Lambda_MSbar^(5) = {Lambda_MSbar_5} GeV"):
         pass_count += 1
@@ -161,13 +164,8 @@ def main():
     for name, (mass, scheme) in fermions_PDG.items():
         print(f"    m_{name:<3} = {mass:.6e} GeV ({scheme})")
 
-    # Check that PDG values are not used as positive derivation premises.
-    if check("PDG values are falsification targets, not derivation premises",
-             True,
-             "chain expression inputs are source-stack; PDG is on the target/comparator side"):
-        pass_count += 1
-    else:
-        fail_count += 1
+    print("  INFO  PDG values are declared target-side comparators; source-role")
+    print("        enforcement belongs to repository checks, not an unconditional PASS.")
 
     # =========================================================================
     # Section 3: Compute n_q with C=1 (raw exponent test)
@@ -233,11 +231,12 @@ def main():
     # =========================================================================
     # Section 4: m_tau circularity check
     # =========================================================================
-    heading("SECTION 4: m_tau STRUCTURAL CIRCULARITY")
+    heading("SECTION 4: m_tau INPUT-DEPENDENCE REPORT")
 
-    print("  m_tau ~ Lambda_QCD / alpha_s(M_Z) at 0.073% is structurally circular")
-    print("  because Lambda_QCD is itself derived from alpha_s(M_Z) via 2-loop")
-    print("  supplied rounded downstream context; the QCD bridge supplies only the transfer map.")
+    print("  m_tau ~ Lambda_QCD / alpha_s(M_Z) at 0.073% is not an independent")
+    print("  two-input result under the cited convention: the confinement note")
+    print("  obtains Lambda_QCD by inverting the same supplied alpha_s(M_Z) context.")
+    print("  The QCD bridge supplies only a transfer map and does not derive 0.1181.")
     print()
 
     # 1-loop sanity: Lambda ~ M_Z * exp(-1/(2*beta_0*alpha_s(M_Z)))
@@ -260,12 +259,8 @@ def main():
     else:
         fail_count += 1
 
-    if check("m_tau ~ Lambda_QCD/alpha_s(M_Z) is RGE-circular, not independent",
-             True,
-             "Lambda_QCD = M_Z * exp(-1/(2*beta_0*alpha_s)) makes m_tau ~ Lambda/alpha_s a 1-param relation"):
-        pass_count += 1
-    else:
-        fail_count += 1
+    print("  INFO  The one-input provenance statement is reported from the cited")
+    print("        confinement source; the numeric runner does not certify that source.")
 
     # =========================================================================
     # Section 5: Test structural-candidate C with integer n_q
@@ -358,7 +353,7 @@ def main():
 
     if check("NO single structural-candidate C closes (m_t, m_b, m_c) at 5% with integer n_q",
              common_C is None,
-             "checked C in {1, 4/3, 3, 1/2, sqrt(2), 1/sqrt(2), sqrt(6), 1/sqrt(6), 7/8, ...}"):
+             "checked exactly the 30 declared structural-candidate C values"):
         pass_count += 1
     else:
         fail_count += 1
@@ -435,7 +430,7 @@ def main():
     # The "per-quark best fits exist" is the failure mode, not the success.
     # Now test: does ANY single C close all 3 heavy quarks at simple-rational n_q?
     print()
-    print("  Cross-quark single-C check (q<=6):")
+    print("  Cross-quark single-C check (q in {1, 2, 3, 4, 6}):")
     common_C_rat = None
     for C_name, C_val in candidates_C.items():
         all_ok = True
@@ -463,20 +458,21 @@ def main():
             break
 
     if common_C_rat is None:
-        print(f"    NO single structural-candidate C works for all three heavy quarks at 5% (q<=6)")
+        print(f"    NO single structural-candidate C works for all three heavy quarks at 5% (q in {1, 2, 3, 4, 6})")
     else:
-        print(f"    WARNING: common C={common_C_rat[0]} works for all three at 5% q<=6: {common_C_rat[2]}")
+        print(f"    WARNING: common C={common_C_rat[0]} works for all three at 5% q in {1, 2, 3, 4, 6}: {common_C_rat[2]}")
 
-    # Note: with C=sqrt(2) and q<=6 rationals, all three heavy quarks happen
+    # Note: with C=sqrt(2) and denominators in {1, 2, 3, 4, 6}, all three heavy quarks happen
     # to fit within 5% (m_t -3, m_b -5/4, m_c -2/3 — three different denominators).
-    # However, this falls within the density-of-rationals random band (37% at q<=6 / 5%),
+    # However, this falls within the density-of-rationals random band (37% for the tested set / 5%),
     # so it is NOT a structural closure. The 1% gate test below confirms this.
     print()
-    print("  Note: q<=6 closure may exist within the 37% random-density band, but")
+    print("  Note: closure over denominators {1, 2, 3, 4, 6} may exist within the")
+    print("  37% random-density band, but")
     print("  this would not be structurally informative. Test at 1% gate (random")
-    print("  density ~8% at q<=6) for structural significance.")
+    print("  density ~8% for the tested set) for structural significance.")
 
-    # Test at 1% gate with q<=6
+    # Test at 1% gate with denominators in {1, 2, 3, 4, 6}
     delta_n_1pct = math.log(1.01) / abs(log_alpha_s_MZ)
     common_C_rat_1pct = None
     for C_name, C_val in candidates_C.items():
@@ -507,15 +503,15 @@ def main():
             break
 
     print()
-    print("  Cross-quark single-C check at 1% mass gate (q<=6):")
+    print("  Cross-quark single-C check at 1% mass gate (q in {1, 2, 3, 4, 6}):")
     if common_C_rat_1pct is None:
-        print(f"    NO single structural-candidate C works for all three at 1% (q<=6)")
+        print(f"    NO single structural-candidate C works for all three at 1% (q in {1, 2, 3, 4, 6})")
     else:
-        print(f"    common C={common_C_rat_1pct[0]} works at 1% (q<=6): {common_C_rat_1pct[2]}")
+        print(f"    common C={common_C_rat_1pct[0]} works at 1% (q in {1, 2, 3, 4, 6}): {common_C_rat_1pct[2]}")
 
-    if check("NO single structural-candidate C closes (m_t, m_b, m_c) at 1% mass gate (q<=6)",
+    if check("NO single structural-candidate C closes (m_t, m_b, m_c) at 1% mass gate for q in {1, 2, 3, 4, 6}",
              common_C_rat_1pct is None,
-             "1% gate has q<=6 random density ~8%; structural closure should be detectable here"):
+             "1% gate has ~8% random density for the tested denominator set"):
         pass_count += 1
     else:
         fail_count += 1
@@ -539,7 +535,7 @@ def main():
                 sqrt2_results[q] = (p, denom, rel)
 
     print()
-    print("  Density-of-rationals coincidence: C = sqrt(2), q<=6 fits all three at 5%")
+    print("  Density-of-rationals coincidence: C = sqrt(2), tested denominators fit all three at 5%")
     for q in heavy_quarks:
         p, denom, rel = sqrt2_results[q]
         print(f"    m_{q}: n = {p}/{denom}, rel.err = {rel*100:.2f}%")
@@ -548,7 +544,7 @@ def main():
     print("  density-of-rationals coincidence within the 37% random band, not a")
     print("  structural closure (would need to hit 1% gate for structural significance).")
 
-    if check("C=sqrt(2) q<=6 5% closure is within density-of-rationals random band",
+    if check("C=sqrt(2) tested-denominator 5% closure is within density-of-rationals random band",
              all(0.005 < sqrt2_results[q][2] < 0.05 for q in heavy_quarks),
              "all three at 2.6%-4.4% mass error, just under the 5% gate"):
         pass_count += 1
@@ -605,10 +601,10 @@ def main():
     print()
     print(f"  Random hit rates over N={N} reals uniform in [-5, 5]:")
     print(f"    integer-only at 5% gate: {hit_int_5/N*100:.2f}%")
-    print(f"    q in [1..6]   at 5% gate: {hit_q6_5/N*100:.2f}%")
+    print(f"    q in {{1,2,3,4,6}} at 5% gate: {hit_q6_5/N*100:.2f}%")
     print(f"    q in [1..12]  at 5% gate: {hit_q12_5/N*100:.2f}%")
     print(f"    integer-only at 1% gate: {hit_int_1/N*100:.2f}%")
-    print(f"    q in [1..6]   at 1% gate: {hit_q6_1/N*100:.2f}%")
+    print(f"    q in {{1,2,3,4,6}} at 1% gate: {hit_q6_1/N*100:.2f}%")
 
     # Random density at q<=12 / 5% should be very high (almost all reals match)
     if check("q<=12 fits at 5% gate are NOT structurally informative (random density >50%)",
@@ -731,9 +727,9 @@ def main():
         if common is not None:
             all_lambda_fail = False
 
-    if check("Result (no single-C closure) robust across Lambda^(3,4,5) choices",
+    if check("Integer-exponent result (no single-C closure) robust across Lambda^(3,4,5) choices",
              all_lambda_fail,
-             "no Lambda choice admits common C for (m_t, m_b, m_c) at 5%"):
+             "no Lambda choice admits a common-C integer fit for (m_t, m_b, m_c) at 5%"):
         pass_count += 1
     else:
         fail_count += 1
@@ -789,15 +785,15 @@ def main():
         if common is not None:
             all_alpha_fail = False
 
-    if check("Result robust across alpha_s(M_Z) PDG envelope (+/- 0.0009)",
+    if check("Integer-exponent result robust across alpha_s(M_Z) PDG envelope (+/- 0.0009)",
              all_alpha_fail,
-             "no alpha_s envelope value admits common C for (m_t, m_b, m_c) at 5%"):
+             "no alpha_s envelope value admits a common-C integer fit for (m_t, m_b, m_c) at 5%"):
         pass_count += 1
     else:
         fail_count += 1
 
     # =========================================================================
-    # Section 10: Light-quark sector check (light quarks also fail)
+    # Section 10: C=1 light-quark route check
     # =========================================================================
     heading("SECTION 10: LIGHT-QUARK SECTOR CHECK")
 
@@ -821,21 +817,21 @@ def main():
     heading("SECTION 11: COVERAGE SUMMARY")
 
     print("  Route tested by this runner:")
-    print("    [Z] QCD-confinement chain heavy-quark masses        -> NEG (no single-C closure at 5%)")
+    print("    [Z] QCD-confinement chain heavy-quark masses        -> NEG at declared gates")
     print("  Related EW-chain probes are sibling PRs and are not load-bearing")
     print("  dependencies for this runner.")
     print()
     print("  Sharpened residue: m_tau lies on EW Wilson chain (Probe 19, positive).")
     print("  m_tau also lies near Lambda_QCD/alpha_s(M_Z) at 0.073% but this is")
-    print("  structurally circular (Lambda_QCD derived from alpha_s(M_Z) via RGE).")
+    print("  non-independent under the cited Lambda-from-alpha_s convention.")
     print()
-    print("  Within this QCD-chain ansatz, heavy-quark masses require")
-    print("  generation-dependent prefactors C_q OR a qualitatively different")
-    print("  mechanism.")
+    print("  The scan excludes a common-C integer fit at 5% and a common-C")
+    print("  tested-denominator rational fit at 1%; it does not exclude the")
+    print("  observed common C=sqrt(2) fit at the non-significant 5% gate.")
 
-    if check("QCD-chain single-C route is closed within the tested ansatz",
-             True,
-             "no single structural-candidate C closes the heavy-quark triplet at the configured gates"):
+    if check("configured single-C negative gates are both satisfied",
+             common_C is None and common_C_rat_1pct is None,
+             "no integer 5% closure and no tested-denominator rational 1% closure"):
         pass_count += 1
     else:
         fail_count += 1
@@ -848,12 +844,12 @@ def main():
     print(f"  FAIL = {fail_count}")
     print()
     print(f"  Result classification: BOUNDED (NEGATIVE)")
-    print(f"  - Parallel QCD-confinement chain m_q = Lambda_QCD * C * alpha_s^n_q")
-    print(f"    does NOT close (m_t, m_b, m_c) at 5% with any single")
-    print(f"    structural-candidate C and integer or simple-rational n_q.")
-    print(f"  - The QCD-chain route is FORECLOSED within the tested ansatz.")
-    print(f"  - m_tau ~ Lambda_QCD/alpha_s(M_Z) at 0.073% is structurally")
-    print(f"    circular (one-parameter QCD-RGE relation, not two-parameter).")
+    print(f"  - No single-C integer fit closes (m_t, m_b, m_c) at 5%.")
+    print(f"  - No single-C tested-denominator rational fit closes the triplet at 1%.")
+    print(f"  - C=sqrt(2) does close all three over that set at 5%, inside the")
+    print(f"    measured density-of-rationals band; no 5% rational no-go follows.")
+    print(f"  - m_tau ~ Lambda_QCD/alpha_s(M_Z) at 0.073% is non-independent")
+    print(f"    under the cited Lambda-from-alpha_s convention.")
     print(f"  - m_t at C_F=4/3, n=-3 closes to 1.57% (BORDERLINE, single-quark only).")
     print(f"  - The EW-chain m_b/m_c ~ alpha_LM^(-1/2) comparator does")
     print(f"    NOT extend to the QCD chain.")

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_qcd_low_energy_running_bridge.py
-runner_sha256: 07f5c816c65893bea9c1eacb35d46179eee5883b1539608404f5f6bb1ee674d3
+runner_sha256: 189c6c50c09132d9b7bf2be53e7467d498c76303ca8483dee59f5580c78156d0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 ==============================================================================

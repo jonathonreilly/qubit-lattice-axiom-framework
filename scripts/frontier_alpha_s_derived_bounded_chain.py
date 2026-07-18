@@ -263,8 +263,8 @@ def part_source_firewall() -> None:
           "2026-06-12 Residual-Bridge Source Firewall" in text
           and "this is bounded support only" in flat_text
           and "No retained-grade proposal or status promotion is made here" in flat_text)
-    check("B", "firewall keeps B1 plaquette value admitted until certified",
-          "B1 remains an admitted plaquette value" in text
+    check("B", "firewall keeps B1 as a supplied plaquette reuse value until certified",
+          "B1 remains a supplied plaquette reuse value" in text
           and "this note does not supply that enclosure" in text
           and "`<P> = 0.5934`" in text)
     check("B", "firewall keeps B3 channel-selection/coupling-map bridge open",

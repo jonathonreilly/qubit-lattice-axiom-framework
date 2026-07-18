@@ -1,4 +1,4 @@
-# Reflection Positivity — Wilson Plaquette Temporal-Gauge Bridge: Sign Repair + a Manifestly-Positive Character-Coefficient Theorem (Repairs the `audited_failed` Bridge)
+# Reflection Positivity — Wilson Plaquette Temporal-Gauge Bridge: Sign Repair + a Manifestly-Positive Character-Coefficient Theorem (Historical 2026-06-06 Repair Record)
 
 **Date:** 2026-06-06
 **Claim type:** bounded_theorem
@@ -15,14 +15,16 @@ claim-boundary declaration, not an audit verdict.
 
 ## Role
 
-This note **repairs** the `audited_failed` narrow theorem
+On 2026-06-06 this note responded to the then-`audited_failed` version of the
+narrow theorem
 [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
 (`axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05`).
 That note attempted to supply the **gauge-half norm-square** factor of the
 reflection-positivity row's three-factor reduction — the Wilson-plaquette
 temporal-gauge application named as `missing_bridge_theorem` by the target row
 [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md).
-The independent audit returned **audited_failed** with three blockers (verbatim):
+The independent audit current on that date had returned **audited_failed** with
+three blockers (verbatim):
 
 1. **(sign)** "`S_0 = +beta Re` with `exp(-S_0)` gives negative Fourier
    coefficients already for `Z_2`, where the nontrivial coefficient is
@@ -182,25 +184,25 @@ mislabeled, and the repair is a genuine correction.
   integration is out of scope.
 - It does **not** establish continuum / OS-reconstruction RP in the Wightman
   sense; this is a lattice statement.
-- It does **not** retag, promote, or set the status of the failed note, the target
-  reflection-positivity row, or any upstream row. The audit lane is the only
-  status authority; this note makes a **re-audit case** only.
+- It does **not** retag, promote, or set the status of the historical target
+  version, the target reflection-positivity row, or any upstream row. The audit
+  lane is the only status authority; this note makes a **re-audit case** only.
 - It introduces **no** new axiom, primitive, repo vocabulary, or class tag, and
   consumes **no** PDG / fitted / measured / lattice-MC / `beta=6` / `g_bare`
   value as a derivation input.
 
 ## 6. Re-audit case (no status set here)
 
-The failed note's three blockers are each discharged: **(1)+(2)** the sign root is
-fixed (ferromagnetic weight `e^{+beta\,\mathrm{Re}\,\mathrm{Tr}}`,
+The three blockers recorded on 2026-06-06 are each discharged: **(1)+(2)** the
+sign root is fixed (ferromagnetic weight `e^{+beta\,\mathrm{Re}\,\mathrm{Tr}}`,
 `S_0 := -beta\,\mathrm{Re}\,\mathrm{Tr}`, note and runner consistent), with the
 `Z_2` coefficient now `+\sinh beta > 0`; **(3)** the "exact finite-Haar"
 overclaim is replaced by the manifestly-positive power-series / tensor-multiplicity
 argument, which is exact and group-general (and the grid is demoted to a
 cross-check). The non-abelian case is **upgraded** from a numeric `SU(2)` sample to
-an exact `SU(N)` coefficient-positivity theorem. Whether this lifts the
-gauge-half bridge out of `audited_failed`, and how that bears on the target RP
-row, is for the independent audit lane to decide.
+an exact `SU(N)` coefficient-positivity theorem. This historical packet does
+not state the target's current standing or how it bears on the target RP row;
+those questions remain for the independent audit lane.
 
 ## 7. Bounded-Wall Discipline Gate (N1–N8)
 

@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py
-runner_sha256: 7cf9638e41ef5bfadb5920787fc63802e0ed25888684e10e8ebd48bc9a94767d
-timeout_sec: 120
+runner_sha256: 1f77da2c9560f79d6dbefc8ca773032fc240b61a6f047e363ff3bca30d17f4c6
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 8.54
+elapsed_sec: 6.92
 status: ok
 ----- stdout -----
 ==========================================================================================
 RP Wilson temporal-gauge bridge: SIGN REPAIR + manifestly-positive character theorem
-repairs audited_failed AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_..._2026-06-05
+historical response to the 2026-06-06 audited_failed target version
 ==========================================================================================
 
 ------------------------------------------------------------------------------------------
@@ -37,7 +37,7 @@ Part B: plane-kernel positivity -- EXACT, manifestly positive, group-general
 ------------------------------------------------------------------------------------------
 Part C: integrated three-factor RP Gram is PSD with the CORRECT (ferro) sign
 ------------------------------------------------------------------------------------------
-     Z_2 (beta=1.0, ferro): min_eig = -2.938e-16  PSD=True
+     Z_2 (beta=1.0, ferro): min_eig = -6.555e-16  PSD=True
      Z_3 (beta=1.0, ferro): min_eig = +5.299e-02  PSD=True
      Z_4 (beta=1.0, ferro): min_eig = +7.450e-02  PSD=True
      Z_5 (beta=1.0, ferro): min_eig = +5.971e-02  PSD=True

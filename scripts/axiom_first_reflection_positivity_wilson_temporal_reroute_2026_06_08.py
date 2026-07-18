@@ -123,7 +123,7 @@ def check_free_two_step_construction(base) -> None:
 
 
 def check_reroute_guard() -> None:
-    section("C7 retained Wilson temporal-gauge reroute guard")
+    section("C7 source-side bounded Wilson temporal-gauge reroute guard")
     text = NOTE_PATH.read_text(encoding="utf-8")
     rows = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
 
@@ -134,7 +134,7 @@ def check_reroute_guard() -> None:
         "STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md",
         "REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md",
         "RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md",
-        "retained-bounded bridge",
+        "source-side bounded bridge",
         "joint cross-configuration Gram expansion",
         "ingredient inventory, not a pointwise product identity",
         "G = W diag(kappa) W^dag",

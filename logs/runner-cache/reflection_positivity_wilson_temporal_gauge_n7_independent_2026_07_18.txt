@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.py
+runner_sha256: d113fddd6935a1a5b67ed317e0fe6f511c8a7134e68a478e58ecb41e08c7e137
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+============================================================================================
+Independent N7 resolution surface: finite two-slice pure-gauge Wilson RP
+No primary-runner import, result table, cache text, target boolean, or audit verdict
+============================================================================================
+
+--------------------------------------------------------------------------------------------
+Exact algebra: coupling and all-order majorant normalization
+--------------------------------------------------------------------------------------------
+  [PASS] [EXACT_ALGEBRA] Wilson beta/N and character factor one-half are identical (symbolic_residual=0)
+  [PASS] [EXACT_ALGEBRA] all-order scalar weights obey a division-free nonnegative recurrence ((n+1)w_(n+1)-(beta/(2N))w_n=0)
+  [PASS] [EXACT_ALGEBRA] tensor-dimension majorant reduces termwise to beta^n/n! (sum_n beta^n/n! = exp(beta) for R=F with dim(F)=N)
+
+--------------------------------------------------------------------------------------------
+Deterministic complex-matrix reconstructions
+--------------------------------------------------------------------------------------------
+  [PASS] [NUMERICAL_SUPPORT] SU(2) deterministic matrices satisfy the group carrier (count=5, unitarity_residual=0.000e+00, determinant_residual=0.000e+00)
+  [PASS] [NUMERICAL_SUPPORT] SU(2) trace form equals a real coordinate Gram (coordinate_residual=0.000e+00, min_eig_H=-6.661e-16)
+  [PASS] [NUMERICAL_SUPPORT] SU(2) positive-coupling entrywise exponential is PSD (beta=1.4, alpha=beta/N=0.7, min_eig_K=+2.755e-15)
+  [PASS] [NUMERICAL_SUPPORT] SU(2) direct exponential agrees with the Schur-power series (orders=0..36, max_residual=2.776e-17)
+  [PASS] [BOUNDARY_EVIDENCE] SU(2) beta=0 kernel is the rank-one all-ones anchor (rank=1, min_eig=-1.014e-15)
+  [PASS] [BOUNDARY_EVIDENCE] SU(2) repeated elements make the finite restriction rank deficient without violating PSD (near_zero_eigenvalues=1)
+  [PASS] [NUMERICAL_SUPPORT] SU(3) deterministic matrices satisfy the group carrier (count=6, unitarity_residual=2.220e-16, determinant_residual=1.180e-15)
+  [PASS] [NUMERICAL_SUPPORT] SU(3) trace form equals a real coordinate Gram (coordinate_residual=4.441e-16, min_eig_H=-1.847e-15)
+  [PASS] [NUMERICAL_SUPPORT] SU(3) positive-coupling entrywise exponential is PSD (beta=1.4, alpha=beta/N=0.466666666667, min_eig_K=+1.578e-15)
+  [PASS] [NUMERICAL_SUPPORT] SU(3) direct exponential agrees with the Schur-power series (orders=0..36, max_residual=8.882e-16)
+  [PASS] [BOUNDARY_EVIDENCE] SU(3) beta=0 kernel is the rank-one all-ones anchor (rank=1, min_eig=-4.989e-16)
+  [PASS] [BOUNDARY_EVIDENCE] SU(3) repeated elements make the finite restriction rank deficient without violating PSD (near_zero_eigenvalues=1)
+
+--------------------------------------------------------------------------------------------
+Finite product and integrated Gram reconstruction
+--------------------------------------------------------------------------------------------
+  [PASS] [NUMERICAL_SUPPORT] two spatial-link factors compose by a Schur product (factor_count=2, configuration_count=6, min_eig_product=+3.045e+00)
+  [PASS] [NUMERICAL_SUPPORT] integrated block equals W diag(kappa) W^dagger (observables=4, factor_residual=5.747e-14, min_eig_G=+2.023e+00)
+  [PASS] [BOUNDARY_EVIDENCE] finite normalized partition function is strictly positive and finite (normalized_counting_measure_Z=1.81666568804)
+
+--------------------------------------------------------------------------------------------
+Hostile controls and N7 resolutions
+--------------------------------------------------------------------------------------------
+  [PASS] [BOUNDARY_EVIDENCE] pointwise-positive entries alone do not imply PSD (positive_entry_min=1.0, min_eig=-1.0)
+  [PASS] [BOUNDARY_EVIDENCE] negative coupling fails on a deterministic SU(2) restriction (alpha=-0.1, min_eig=-4.026720e-01)
+  [PASS] [BOUNDARY_EVIDENCE] negative coupling fails on the SU(3) center restriction (alpha=-0.1, min_eig=-4.210160e-01)
+  [PASS] [BOUNDARY_EVIDENCE] dropping reflection antilinearity changes W W^dagger to a non-PSD W W^T block (right_min=+2.000e+00, wrong_min=-2.000e+00)
+  N7_STEELMAN objection=pointwise positivity is insufficient; resolution=positive-entry control has min_eig=-1.0, while the proved route uses the real Gram and Schur powers.
+  N7_STEELMAN objection=finite SU(2)/SU(3) restrictions do not prove all SU(N); resolution=agreed, samples are support only (mins +2.755e-15, +1.578e-15); the universal theorem route additionally requires nonnegative tensor multiplicities, while this helper independently recomputes the symbolic beta/N normalization and exp(beta) majorant.
+  N7_STEELMAN objection=negative coupling or linear reflection may fail; resolution=hostile mins SU2=-4.027e-01, SU3=-4.210e-01, wrong_reflection=-2.000e+00; theorem keeps beta>=0 and antilinear Theta.
+  N7_STEELMAN objection=temporal gauge was not globally derived; resolution=not claimed: U0=identity is an explicit datum of the finite open two-slice carrier.
+
+--------------------------------------------------------------------------------------------
+Summary
+--------------------------------------------------------------------------------------------
+EVIDENCE_COUNTS exact_algebra=3 numerical_support=10 boundary_evidence=9 failures=0
+TOTAL: 22 PASS / 0 FAIL
+
+----- stderr -----
+

@@ -167,7 +167,7 @@ gauge-case reduction, plus the single-step no-go runner:
   [AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   and
   [`audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py`](../scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py).
-  That retained-bounded bridge translates the abstract gauge-half
+  That source-side bounded bridge translates the abstract gauge-half
   Cauchy-Schwarz hypotheses to the Wilson plaquette temporal-gauge
   boundary setup: it fixes the Wilson sign as
   `S_W = -B + constant`, proves the reflection split
@@ -220,7 +220,7 @@ one has `||T_hat_tilde^2|| = 1` and `H_hat_tilde >= 0`, i.e., the
 The latest conditional audit of this row names one remaining parent blocker:
 derive the full Wilson-plaquette gauge-half sesquilinear PSD form for the
 non-time-symmetric, `U`-integrated configuration space, or keep the row
-bounded. Current `main` now has a retained-bounded bridge for exactly the
+bounded. Current `main` now has a source-side bounded bridge for exactly the
 Wilson plaquette temporal-gauge / gauge-half application:
 [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md).
 This row is therefore rerouted through that bridge rather than through the
@@ -233,7 +233,7 @@ mixed-observable claim), take generators
     F(U,chi) = F_G(U) F_f(chi),
 ```
 
-the audited temporal-gauge bridge uses the corrected Wilson sign convention
+the temporal-gauge bridge uses the corrected Wilson sign convention
 
 ```text
     S_W = -B + constant,       exp(-S_W) = constant * exp(B),

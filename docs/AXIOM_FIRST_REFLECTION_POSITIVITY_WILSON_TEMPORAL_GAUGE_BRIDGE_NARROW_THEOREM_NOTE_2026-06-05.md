@@ -11,6 +11,10 @@ source-side theorem boundary, not an effective repository status.
 [`scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py`](../scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py)
 **Cached output:**
 [`logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt`](../logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt)
+**Independent N7 runner:**
+[`scripts/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.py`](../scripts/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.py)
+**Independent cached output:**
+[`logs/runner-cache/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.txt`](../logs/runner-cache/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.txt)
 
 ## 0. Exact bounded claim
 
@@ -318,6 +322,50 @@ The runner checks:
 
 The runner prints `TOTAL: <N> PASS / <M> FAIL` and exits nonzero exactly when
 `M>0`.
+
+### Current-cycle evidence modes
+
+The primary runner now separates four evidence classes in its summary:
+`theorem_evidence`, `numerical_support`, `hygiene`, and `boundary_evidence`.
+The default `--mode normal` recomputes the proof objects and prints a complete
+current-cycle N1--N8 record. In particular, N5 prints all five required
+resolutions from computed carrier objects:
+
+- `per_element`: the spectrum of every straddling-link kernel in the diagnostic
+  carrier;
+- `per_site`: the finite spatial-link factor count and product-kernel residual;
+- `per_mode`: the exact `SU(3)` tensor-power multiplicities, the `beta=0` zero
+  modes, and an absent-irrep check;
+- `per_block`: the direct integrated block versus
+  `W diag(kappa) W^dagger` residual and spectrum;
+- `lattice_wide`: the two temporal slices, finite spatial-link count, absent
+  temporal-periodicity edge, pure-gauge sector count, and zero fermion,
+  arbitrary-time, and continuum claims.
+
+The primary `--mode hostile` tests five mutations: pointwise positivity without
+PSD, negative coupling, dropped reflection antilinearity, a missing
+factor-of-two normalization, and an out-of-scope multi-slice/periodic/fermion
+carrier. A pass means the mutation was rejected; hostile checks do not count as
+theorem evidence.
+
+The primary `--mode independent` delegates only to the separately executable
+N7 helper. That helper does not import the primary runner, its result tables,
+its cache, target booleans, or audit state. It constructs deterministic complex
+`SU(2)`/`SU(3)` matrices, realifies `Re Tr(U_i U_j^dagger)`, compares the
+entrywise exponential with its Schur-power series, reconstructs a finite product
+and integrated Gram, checks the `beta/N` and factor-`1/2` normalization
+symbolically, and exercises negative-sign and wrong-reflection controls. Its
+matrix spectra are labelled numerical support; the normalization identities are
+labelled exact algebra.
+
+Run all surfaces with:
+
+```bash
+python3 scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py --mode normal
+python3 scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py --mode independent
+python3 scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py --mode hostile
+python3 scripts/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.py
+```
 
 ## 6. What this note does not claim
 

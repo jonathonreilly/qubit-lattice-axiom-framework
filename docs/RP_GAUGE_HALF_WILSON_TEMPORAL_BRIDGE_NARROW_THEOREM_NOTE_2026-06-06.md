@@ -32,13 +32,15 @@ audit that normalization. The runner now exposes the SU(2) first-order mismatch
 at `g=h=iσ_x`, so the `SU(2)`/`SU(3)` probes below are kept only as diagnostics
 and future-work boundary data, not as part of W2/W3.
 
-It **corrects and supersedes** the prior
+The 2026-06-09 revision historically corrected the then-current version of
 [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
-failed-attempt note, whose displayed reflection-plane weight had a **sign bug**:
+whose displayed reflection-plane weight had a **sign bug** at that time:
 it wrote `S_0 = +β Re Tr` with `exp(-S_0)`, giving a negative nontrivial
 Fourier coefficient already for `Z_2` (`c_1 = (e^{-β}-e^{β})/2 < 0`, not PSD),
 while its runner silently used `exp(+S_0)`; its U(1) "exact" check used a finite
-angular grid (not a bounded-degree object). Both defects are fixed here.
+angular grid (not a bounded-degree object). Both defects were fixed in this
+historical packet. The linked target has since been independently repaired;
+this note does not state its current audit standing.
 
 ## Setup (minimal, temporal gauge)
 
@@ -150,7 +152,6 @@ declared_one_hop_deps:
   - gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10
   - rp_p2_gauge_extension_and_realization_residual_note_2026-05-28
   - staggered_only_det_positivity_case_a_note_2026-05-17
-supersedes_failed: axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05
 proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
@@ -164,5 +165,6 @@ bare_retained_allowed: false
   the Wilson plaquette temporal-gauge boundary and prove the integrated
   three-factor RP form for the A_+^(2) observables").
 - `AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
-  — the `audited_failed` predecessor this note corrects (sign bug + U(1)
-  finite-grid), referenced as plain text (not a load-bearing link).
+  — historical context for the then-current version this note corrected (sign
+  bug + U(1) finite-grid); the current target standing is audit-lane-owned.
+  It is referenced as plain text, not as a load-bearing link.

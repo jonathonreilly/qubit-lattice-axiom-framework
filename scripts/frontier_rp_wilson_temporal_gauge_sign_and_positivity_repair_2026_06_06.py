@@ -2,13 +2,14 @@
 # -*- coding: utf-8 -*-
 r"""
 RP Wilson-plaquette temporal-gauge bridge: SIGN REPAIR + manifestly-positive
-character-coefficient theorem (repairs the audited_failed bridge note)
+character-coefficient theorem (historical 2026-06-06 repair record)
 ============================================================================
 
 Target of the repair
 ---------------------
+On 2026-06-06,
 `AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05`
-was returned **audited_failed** with three blockers (verbatim):
+had been returned **audited_failed** with three blockers (verbatim):
 
   (1) "S_0 = +beta Re with exp(-S_0) gives negative Fourier coefficients
        already for Z_2, where the nontrivial coefficient is
@@ -106,7 +107,7 @@ def I_grid(n: int, b: float, Kg: int = 4096) -> float:
 def main() -> int:
     print("=" * 90)
     print("RP Wilson temporal-gauge bridge: SIGN REPAIR + manifestly-positive character theorem")
-    print("repairs audited_failed AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_..._2026-06-05")
+    print("historical response to the 2026-06-06 audited_failed target version")
     print("=" * 90)
 
     # =====================================================================

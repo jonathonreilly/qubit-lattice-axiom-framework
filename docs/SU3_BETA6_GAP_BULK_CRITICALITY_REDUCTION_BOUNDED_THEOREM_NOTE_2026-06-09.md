@@ -164,8 +164,9 @@ or audit status is introduced here.
 
 The latest audit also named the standard fixed-lattice Wilson
 transfer-matrix/gap setting as part of the restricted packet boundary. This
-source-side repair adds the already audited-clean, retained-bounded in-repo
-authorities that carry the Wilson transfer-kernel positivity/RP side:
+source-side repair adds the in-repo source authorities that carry the Wilson
+transfer-kernel positivity/RP side. Their current standing remains owned by the
+independent audit lane:
 
 - [`WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md`](WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md)
   proves the SU(3) Wilson temporal-gauge transfer kernel is positive

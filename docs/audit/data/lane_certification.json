@@ -1928,10 +1928,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "plaquette_self_consistency_note",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
           "effective_status": "unaudited"
         },
@@ -2932,9 +2928,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 669
+      "uncertified_count": 668
     }
   ],
-  "repo_head": "7d723d4b0cae033417a269b48f7023d627dae1a8",
+  "repo_head": "01afede6dfba325a9473c4b78b02468a65875d8c",
   "schema": "lane_certification_v2"
 }

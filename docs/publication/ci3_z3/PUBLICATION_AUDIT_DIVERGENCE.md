@@ -20,7 +20,7 @@ publication tables phrase it.
 | critical | `unaudited` | 245 |
 | high | `unaudited` | 172 |
 | medium | `unaudited` | 131 |
-| critical | `audit_in_progress` | 6 |
+| critical | `audit_in_progress` | 5 |
 | ? | `unresolved` | 4 |
 | critical | `audited_conditional` | 2 |
 | critical | `audited_renaming` | 2 |
@@ -31,7 +31,7 @@ publication tables phrase it.
 | high | `audited_renaming` | 1 |
 | medium | `audited_conditional` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 568
+**Total non-retained-grade rows in publication tables:** 567
 
 ## Per-row breakdown
 
@@ -190,7 +190,6 @@ publication tables phrase it.
 | critical | `planck_parent_source_hidden_character_no_go_note_2026-04-24` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `planck_source_unit_normalization_support_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| critical | `plaquette_self_consistency_note` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `pmns_active_four_real_source_from_transport_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `pmns_c3_character_holonomy_closure_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `pmns_c3_character_mode_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

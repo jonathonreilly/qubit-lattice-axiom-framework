@@ -55,9 +55,9 @@ Entry by entry, `Delta_mn` is exactly the sum of the interference cross terms
 between distinct intermediate frame paths. Every `K_t` is entrywise
 nonnegative and doubly stochastic; every `Delta_mn` has zero row and column
 sum. The runner verifies the matrix/cross-term identity independently on the
-candidate blocks and on a seeded Haar unitary whose induced `K_2` and `K_3`
-kernels do not commute, fixing the interval order rather than relying on the
-commuting special structure of the candidate kernels.
+seeded Haar unitary whose induced `K_2` and `K_3` kernels do not commute,
+fixing the interval order, and checks the all-time closure criterion on
+monomial and finite-order nonmonomial controls.
 
 ## All-time closure criterion
 
@@ -88,11 +88,9 @@ statement.
 
 ## Boundaries
 
-- The unitary, frame, squared-modulus rule, reset/repreparation, schedule, and
-  candidate force kick are supplied.
+- The unitary, frame, squared-modulus rule, reset/repreparation, and schedule
+  are supplied.
 - A nonselective ensemble dephasing is not a selected realized trajectory.
-- Abstract pointer tensor factors are not demonstrated independent physical
-  witnesses.
 - The result derives no Record formation, permanence under all lawful
   continuations, Born frequency, event trigger, rate, or clock normalization.
 - It makes no mass-spectrum, gravity, measurement-solution, TOE, or no-go
@@ -206,8 +204,7 @@ for the process-tensor framework and its operational Markov condition,
 <https://doi.org/10.1103/PhysRevLett.120.040405>; Kendon and Tregenna for
 decohered walks, <https://doi.org/10.1103/PhysRevA.67.042315>; and
 Chandrashekar for periodically measured quantum walks,
-<https://doi.org/10.1103/PhysRevA.82.052108>. The finite application to the
-conditional Cycle-222 candidate is not asserted to be globally novel.
+<https://doi.org/10.1103/PhysRevA.82.052108>.
 
 ## Reproduction
 

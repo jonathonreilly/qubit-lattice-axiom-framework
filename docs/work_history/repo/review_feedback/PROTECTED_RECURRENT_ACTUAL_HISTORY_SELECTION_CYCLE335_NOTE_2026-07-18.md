@@ -1,4 +1,4 @@
-# Protected recurrent candidate/content-binding tournament — Cycle 335
+# Protected recurrent candidate/registration tournament — Cycle 335
 
 Date: 2026-07-18
 
@@ -26,7 +26,8 @@ the no-go-discipline skill fetched from `origin/main` at
 Three bounded mechanics are positive:
 
 1. protected recurrence on a four-slot ring;
-2. a moving/exported boundary with one renewed incoming blank;
+2. a moving/exported boundary that relocates one existing blank to the
+   incoming register;
 3. an append-only finite window with explicit exhaustion and reverse unwind.
 
 The protected ring has period four, four distinct forward states, one blank
@@ -38,7 +39,8 @@ unwinds exactly.
 
 Every primitive update is a swap on at most six M2. Every route is reversible.
 Every tested swap/write deletion, predecessor identity anti-splice, and
-single-replica fault is detected. The identity-bound Cycle-329 comparator
+single-replica fault changes or suppresses the declared endpoint, with zero
+lawful survivors; no physical fault flag is constructed. The identity-bound Cycle-329 comparator
 passes at trained `L=3`, held `L=6`, and all 24 proper-cubic frames.
 
 The approved `realized_state_primitive` changes the interpretation of this
@@ -47,13 +49,15 @@ slot for pointwise evaluation. That slot chain-satisfies dependencies and is
 not a wall. It supplies zero state-contingent content: no history, selection or
 sampling rule, measure, typicality, boundary, probability, or value.
 
-Cycle 335 therefore tests recurrent law/content realization into that approved
-slot. It does not test whether the slot exists. The tested selector-free
-candidate invariants are identical under a cyclic displacement of the same
-protected data. A supplied phase or boundary role distinguishes the two, but
-that is supplied selector content. Three live routes remain untested, so the
-broad claim that no recurrent physical law can determine the slot content is
-not shipped.
+Cycle 335 therefore tests recurrent candidate mechanics for a future physical
+state-dependent registration functional evaluated at the supplied realized
+state. It does not test whether the reference exists or treat it as writable
+memory. The declared selector-free summary family is identical under a
+one-step cyclic translation of the tested protected candidate/blank pattern.
+A supplied phase or boundary role distinguishes the two, but that is supplied
+program content. Three live routes remain untested, so the broad claim that no
+recurrent physical law can supply such a registration functional is not
+shipped.
 
 Copying is not a Record. Circuit cycle is not time. Occurrence remains
 separate. Member selection remains separate in the precise sense that the
@@ -81,13 +85,14 @@ The controlling authorities are:
 The typed target is consequently:
 
 ```text
-approved actual-history slot
-  + recurrent physical law/content
-  -> one law-admissible content for pointwise evaluation.
+supplied law-admissible realized state
+  + physical state-dependent registration functional
+  -> identified lawful local transition content, pointwise.
 ```
 
-This cycle supplies recurrent candidate mechanics only. It does not derive the
-arrow's unique content-selection law.
+This cycle supplies recurrent protected close/readiness-flag mechanics only,
+not full transition-history payloads. It does not derive the registration
+functional.
 
 ## 2. Route 1 — protected recurrence
 
@@ -149,13 +154,14 @@ A nearest-neighbor swap chain gives
 ```
 
 The oldest candidate is not erased; it occupies the exported boundary. The
-incoming register is renewed blank capacity. Reversing the same swaps restores
-the complete input.
+existing export blank is relocated to the incoming register, so net blank
+capacity does not increase. Reversing the same swaps restores the complete
+input.
 
 | export control | trained `L=3` | held `L=6` |
 |---|---:|---:|
 | exported candidate | `111` | `111` |
-| renewed incoming blank | `000` | `000` |
+| relocated incoming blank | `000` | `000` |
 | window occupancy | `3/3` | `6/6` |
 | inverse residual | `0` | `0` |
 | swap-deletion lawful survivors | `0/4` | `0/7` |
@@ -163,8 +169,8 @@ the complete input.
 
 The boundary role can distinguish exported from internal redundancy, but the
 boundary location and export grammar are supplied structure. Repeated forward
-uses require fresh export capacity or a larger external sector; applying the
-inverse renews the original export blank but also undoes the export.
+uses require a new blank export register or a larger external sector; applying
+the inverse restores the original export blank but also undoes the export.
 
 ## 4. Route 3 — append-only finite window
 
@@ -189,8 +195,11 @@ is not permanence.
 ## 5. Identity, faults, held size, and covariance
 
 Every occupied protected block is attached to the actual Cycle-329 target or
-predecessor identity. The comparator is rerun on rotated actual Cycle-312
-supports, not on a preferred coordinate name.
+predecessor identity. The inherited comparator is rerun on rotated actual
+Cycle-312 supports, not on a preferred coordinate name. The frame result below
+therefore covers the inherited physical matcher and cubic-scalar labels. The
+ring, export, and append layouts themselves are abstract register layouts; no
+physical cubic embedding of those layouts is claimed.
 
 | control | result |
 |---|---:|
@@ -212,41 +221,44 @@ different slot.
 |---|---|
 | approved realized-history/reference slot | supplied framework primitive; chain-satisfied, not a wall |
 | recurrent protected ring | derived, exact period four |
-| moving export and one renewed incoming blank | derived conditionally |
+| moving export and relocation of one existing blank | derived conditionally |
 | finite append prefix | derived through held `L=6` |
 | protected copying/fanout | reversible pointer redundancy, not Record |
 | candidate occurrence | prior conditional input |
-| slot content/member-selection rule | absent from these mechanics |
+| pointwise state-dependent registration functional | absent from these mechanics |
 | Record typing | absent |
 | permanence | absent; exact inverses exhibited |
 | clock law, interval, rate, calibration | absent |
 | probability, measure, sampling, typicality | absent |
 
-Capacity renewal is route-dependent. The ring recurs one internal blank. The
-export route trades an export blank for an incoming blank. The append window
-does not renew capacity. None of those facts chooses the contingent content of
-the approved realized-state slot.
+Blank handling is route-dependent. The ring recurs one internal blank. The
+export route relocates an export blank to the incoming register without net
+capacity creation. The append window does not renew capacity. None of those
+facts constructs a state-dependent registration functional at the supplied
+realized state.
 
 ## 7. Exact route disposition
 
 | route | disposition | retained result | residual |
 |---|---|---|---|
-| protected recurrence | **positive** | exact period, recurring blank, inverse, selector-free invariant equality | phase supplied; rotation does not choose realized content |
-| moving/exported boundary | **positive** | oldest candidate exported, incoming blank renewed, inverse | boundary/export program and further capacity supplied |
+| protected recurrence | **positive** | exact period, recurring blank, inverse, declared summary-family equality | phase supplied; no state-dependent registration functional |
+| moving/exported boundary | **positive** | oldest candidate exported, existing blank relocated, inverse | boundary/export program and further capacity supplied |
 | append-only finite window | **positive until explicit bound** | prefix monotonicity, exhaustion rejection, reverse unwind | no renewal before export/inverse |
 
-The constructive result is meaningful: Cycle-332 candidates can be composed
-into bounded recurrent and capacity-moving mechanics. The residual is narrower
-than “actuality is absent”: the actuality/reference slot is approved, while a
-law determining its state-contingent content is not produced here.
+The constructive result is meaningful: Cycle-332 protected close/readiness
+flags can be composed into bounded recurrent and capacity-moving mechanics.
+The residual is narrower than “actuality is absent”: the realized-state
+reference is approved, while a physical state-dependent registration
+functional is not produced here.
 
 ## 8. No-Go Discipline Gate
 
 The candidate negative is deliberately narrow during testing: can the tested
-selector-free protected-candidate invariants distinguish a cyclicly displaced
-copy as the content of the approved realized-state slot? They cannot; residual
-zero. The broad negative—no recurrent law can determine actual-history
-content—fails the gate and is not shipped.
+declared selector-free protected-candidate summary family distinguish a
+one-step cyclic translation of the tested protected candidate/blank pattern?
+It cannot; residual zero. The broad negative—no recurrent law can supply a
+state-dependent history-registration functional—fails the gate and is not
+shipped.
 
 ### N1 — Alternative routes
 
@@ -255,17 +267,18 @@ content—fails the gate and is not shipped.
 | protected recurrent ring | **ATTEMPTED** | exact recurrence and capacity succeed; candidate-only tested invariants are displacement invariant |
 | moving exported boundary | **ATTEMPTED** | boundary role distinguishes export, but that role/program is supplied |
 | append-only finite window | **ATTEMPTED** | ordered prefix succeeds until explicit capacity exhaustion |
-| explicit selector tag | **OPEN / UNTESTED** | derive a selector tag from the common dynamics rather than supply its phase |
+| explicit selector tag | **OPEN / UNTESTED** | derive a registration tag from the common dynamics rather than supply its phase |
 | environment or asymptotic export sector | **OPEN / UNTESTED** | test whether an infinite/export sector carries a law-selected invariant content |
 | topological history charge | **OPEN / UNTESTED** | test a protected invariant not reducible to occupancy and repetition syndromes |
 
-Three live routes make a broad no-go premature.
+Three live routes make a broad no-go premature. Their `OPEN / UNTESTED`
+markers are explicit N1 failure markers, not prescribed shipping markers.
 
 ### N2 — Wall-independence audit
 
 The collapsed set excludes the approved actuality slot. It contains only:
 
-- `W_content`: recurrent law determining the slot's contingent content;
+- `W_content`: physical state-dependent registration functional;
 - `W_typing`: lawful Record typing of candidate data;
 - `W_permanence`: physical permanence of typed history.
 
@@ -275,8 +288,8 @@ The collapsed set excludes the approved actuality slot. It contains only:
 | W_content | W_permanence | no | no | yes |
 | W_typing | W_permanence | no | no | yes |
 
-Capacity is not inflated into a universal wall because routes 1 and 2 renew a
-bounded blank in different senses.
+Capacity is not inflated into a universal wall because route 1 recurs a blank
+and route 2 relocates one without creating net capacity.
 
 ### N3 — Hidden-condition scan
 
@@ -290,8 +303,8 @@ is buried as context.
 | cited witness (path, line) | witness residual | Cycle-335 residual | match? |
 |---|---|---|---|
 | `docs/work_history/repo/review_feedback/REDUNDANT_ARCHIVE_PERMANENCE_HISTORY_CYCLE283_NOTE_2026-07-17.md:285` | Cycle 283 reversible-redundancy residual: finite redundant unitary data do not select one history | selector-free protected redundancy | yes, narrow |
-| `docs/work_history/repo/review_feedback/PHYSICAL_TRANSITION_OCCURRENCE_CLOSE_TOURNAMENT_CYCLE332_NOTE_2026-07-18.md:63` | Cycle 332 boundary-selection residual: a transition witness still receives the tested boundary pair | recurrent content realization into the approved slot | yes, interface continuation |
-| `docs/work_history/repo/review_feedback/OUTGOING_CARRIER_NONRECURRENCE_CYCLE286_NOTE_2026-07-17.md:467` | Cycle 286 capacity residual is dropped: outgoing nonrecurrence concerns finite carrier return, not actual-content selection | recurrent content realization | no |
+| `docs/work_history/repo/review_feedback/PHYSICAL_TRANSITION_OCCURRENCE_CLOSE_TOURNAMENT_CYCLE332_NOTE_2026-07-18.md:63` | Cycle 332 boundary-selection residual: a transition witness still receives the tested boundary pair | recurrent mechanics before pointwise registration | yes, interface continuation |
+| `docs/work_history/repo/review_feedback/OUTGOING_CARRIER_NONRECURRENCE_CYCLE286_NOTE_2026-07-17.md:467` | Cycle 286 capacity residual is dropped: outgoing nonrecurrence concerns finite carrier return, not pointwise registration | recurrent registration interface | no |
 | `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md:34` | approved pointwise slot with zero contingent content | exact type of `W_content` | yes |
 | `docs/work_history/repo/review_feedback/GLOBAL_RECORD_HISTORY_PROCESS_LAW_CYCLE30_NOTE_2026-07-14.md:84` | measure/process law and actual reference solve separate type problems | no sampler inferred from recurrence | yes |
 
@@ -310,8 +323,8 @@ selection.
 | lattice-wide untested | no | no lattice-wide member-selection statement |
 
 Thus “reversible redundancy is not actuality” is narrowed here to: the
-declared selector-free invariant family on the tested bounded states does not
-distinguish their displaced copies as realized-slot content.
+declared selector-free summary family cannot distinguish a one-step cyclic
+translation of the tested protected candidate/blank pattern.
 
 ### N6 — Partial-closure paths
 
@@ -319,15 +332,16 @@ distinguish their displaced copies as realized-slot content.
   `docs/audit/data/axiom_premise_nodes.json`, with `current_path`
   `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`. The approved primitive
   already closes the pointwise type slot; it is chain-satisfied, is not a
-  wall, and does not supply content. The open question is a physical law that
-  binds contingent content into that slot.
+  wall, and does not supply content. The open question is a physical
+  state-dependent registration functional evaluated at the supplied realized
+  state.
 - A selector-tag import-retirement path could derive the presently supplied
   phase from dynamics and then audit whether the tag is redundant.
 - An environment/export path could enlarge route 2 and test asymptotic sector
   invariants.
-- Cycle 30's fixed process-law route could determine history weights or
-  content pointwise without treating a measure as sampler.
-- Record typing and permanence remain separate from content realization and
+- Cycle 30's fixed process-law route could determine history weights or lawful
+  registration structure without treating a measure as sampler.
+- Record typing and permanence remain separate from pointwise registration and
   need not be folded into one wall.
 
 No claim that a new axiom is required is made.
@@ -362,11 +376,11 @@ selector-free tested invariant family. No axiom pressure follows.
 
 | wall | Cycle-335 movement | still open |
 |---|---|---|
-| `C_ref` | approved realized-state slot is correctly chain-satisfied; identity-bound protected candidates can be evaluated pointwise | recurrent law determining contingent slot content remains open |
+| `C_ref` | approved realized-state reference is correctly chain-satisfied; identity-bound protected candidates can be evaluated pointwise | physical state-dependent registration functional remains open |
 | `C_num` | unchanged | no coefficient selection or numerical grade |
-| `C_wrap` | period-four recurrence, moving export, bounded append prefix, and explicit capacity semantics | member-content law, typed permanence, named clock, interval, and rate |
+| `C_wrap` | period-four recurrence, moving export, bounded append prefix, and explicit capacity semantics | pointwise registration, typed permanence, named clock, interval, and rate |
 | `C_int` | unchanged | candidate mechanics do not derive interaction occurrence |
-| `C_local` | bounded six-M2 swaps, held size, all frames, deletion, inverse | autonomous selector, larger recurrent network, primitive integration |
+| `C_local` | bounded six-M2 swaps, inherited matcher frame tests, deletion, inverse | physical embedding of recurrence layouts, autonomous registration, larger recurrent network, primitive integration |
 | `C_source` | unchanged | no energy, stress, lapse, source, or gravity response |
 
 Using the packaged Cycle-330/Cycle-332 baseline:

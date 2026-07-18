@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Cycle 335: protected recurrent candidate/content-binding tournament.
+"""Cycle 335: protected recurrent candidate/registration tournament.
 
 The runner composes Cycle-332 protected candidates into a recurrent ring, a
 moving/exported window, and a finite append-only window.  It tests exact
 reversibility, capacity, faults, identity binding, held size, and frames.  The
-only negative retained is equality of a declared candidate-only invariant
-family; the broad member-selection negative is blocked by N1-N8.
+only negative retained is equality of a declared candidate-summary family;
+the broad registration negative is blocked by N1-N8.
 """
 
 from __future__ import annotations
@@ -76,7 +76,7 @@ def note_contract() -> None:
     required = (
         "authority: none",
         "audit: unset",
-        "protected recurrent candidate/content-binding tournament",
+        "protected recurrent candidate/registration tournament",
         "protected recurrence",
         "moving/exported boundary",
         "append-only finite window",
@@ -220,7 +220,7 @@ def methodology_controls() -> None:
         "the N1-N8 gate fails the broad negative and retains only the exact tested invariant equality",
         "Gate status: FAIL / DO NOT SHIP the broad negative." in flat
         and "No axiom pressure follows." in flat
-        and "selector-free tested invariant family" in flat,
+        and "declared selector-free summary family" in flat,
         "broad negative demoted",
     )
 
@@ -347,18 +347,18 @@ def moving_export_controls() -> dict[str, object]:
                 "final": final,
                 "inverse": recovered,
                 "deletion_lawful_survivors": sum(row == final for row in deleted),
-                "capacity_renewed_at_incoming": final.incoming == ZERO,
+                "existing_blank_relocated_to_incoming": final.incoming == ZERO,
                 "exported_candidate": final.exported == ONE,
                 "support_M2": 3 * (length + 2),
             }
         )
     check(
-        "route 2 reversibly exports the oldest protected candidate and renews one incoming blank boundary with every swap deletion detected",
+        "route 2 reversibly exports the oldest protected candidate, relocates one existing blank, and has zero lawful swap-deletion survivors",
         all(
             row["final"].slots == (ONE,) * row["L"]
             and row["inverse"] == ExportState(ONE, (ONE,) * row["L"], ZERO)
             and row["deletion_lawful_survivors"] == 0
-            and row["capacity_renewed_at_incoming"]
+            and row["existing_blank_relocated_to_incoming"]
             and row["exported_candidate"]
             and row["support_M2"] <= 24
             for row in rows
@@ -423,7 +423,7 @@ def append_window_controls() -> dict[str, object]:
             }
         )
     check(
-        "route 3 is exactly append-only on a finite forward window, rejects exhaustion, detects write deletion, and has an explicit reverse unwind",
+        "route 3 is exactly append-only on a finite forward window, rejects exhaustion, changes under write deletion, and has an explicit reverse unwind",
         all(
             row["prefix_counts"] == tuple(range(row["L"] + 1))
             and row["incoming_after_each_write"] == (ZERO,) * row["L"]
@@ -524,7 +524,7 @@ def main() -> int:
     identity_frame_fault_controls()
     semantic_firewall_controls()
     check(
-        "Cycle 335 closes three bounded recurrent candidate mechanics while the broad content-binding negative remains blocked",
+        "Cycle 335 closes three bounded recurrent candidate mechanics while the broad registration negative remains blocked",
         ring["selector_free_invariant_residual"] == 0
         and exported["maximum_primitive_support_M2"] == 6
         and appended["maximum_primitive_support_M2"] == 6
@@ -543,7 +543,7 @@ def main() -> int:
     print("SUMMARY PASS", PASS, "FAIL", FAIL)
     print(
         "RESULT",
-        "CYCLE335_PROTECTED_RECURRENT_CANDIDATE_CONTENT_BINDING_GREEN"
+        "CYCLE335_PROTECTED_RECURRENT_CANDIDATE_REGISTRATION_GREEN"
         if FAIL == 0
         else "CYCLE335_OPEN",
     )

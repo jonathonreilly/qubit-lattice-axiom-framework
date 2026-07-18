@@ -1,446 +1,582 @@
 #!/usr/bin/env python3
-"""
-Bounded supplied-matrix Hermitian-circulant / P23 even-odd algebra lemma.
+"""Exact positive finite-matrix Hermitian-circulant parity theorem.
 
-This runner independently checks the finite 3x3 algebra.  It does not define
-or test a physical leptogenesis observable.
+The runner constructs the full Hermitian commutant independently, checks its
+exact basis and coefficient extraction, verifies the parity representation and
+entry identity, and executes hostile mutations through the same validators.
 """
 
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
-import numpy as np
+try:
+    from sympy import (
+        I as SYM_I,
+        Matrix,
+        Rational,
+        conjugate,
+        eye,
+        im,
+        re as sym_re,
+        simplify,
+        sqrt,
+        symbols,
+        zeros,
+    )
+except ImportError:
+    print("FAIL: sympy is required for exact finite-matrix algebra")
+    sys.exit(1)
 
-np.set_printoptions(precision=6, suppress=True, linewidth=140)
 
 ROOT = Path(__file__).resolve().parents[1]
-NOTE_PATH = ROOT / "docs" / "DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md"
+NOTE_PATH = (
+    ROOT
+    / "docs"
+    / "DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md"
+)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
-TOL = 1e-11
+MUTATION_KILLS = 0
+MUTATION_TOTAL = 0
 
-I3 = np.eye(3, dtype=complex)
-S = np.array(
+I3 = eye(3)
+S = Matrix(
     [
-        [0.0, 1.0, 0.0],
-        [0.0, 0.0, 1.0],
-        [1.0, 0.0, 0.0],
-    ],
-    dtype=complex,
+        [0, 1, 0],
+        [0, 0, 1],
+        [1, 0, 0],
+    ]
 )
-S2 = S @ S
-P23 = np.array(
+S2 = S * S
+P23 = Matrix(
     [
-        [1.0, 0.0, 0.0],
-        [0.0, 0.0, 1.0],
-        [0.0, 1.0, 0.0],
-    ],
-    dtype=complex,
+        [1, 0, 0],
+        [0, 0, 1],
+        [0, 1, 0],
+    ]
 )
-BASIS = (I3, S + S2, 1j * (S - S2))
+BASIS = (I3, S + S2, SYM_I * (S - S2))
 
 
-def check(name: str, condition: bool, detail: str = "") -> bool:
+def check(name: str, condition: object, detail: str = "") -> bool:
     global PASS_COUNT, FAIL_COUNT
-    condition = bool(condition)
-    status = "PASS" if condition else "FAIL"
-    if condition:
+    ok = bool(condition)
+    if ok:
         PASS_COUNT += 1
     else:
         FAIL_COUNT += 1
-    msg = f"  [{status}] {name}"
+    status = "PASS" if ok else "FAIL"
+    message = f"  [{status}] {name}"
     if detail:
-        msg += f"  ({detail})"
-    print(msg)
-    return condition
+        message += f"  ({detail})"
+    print(message)
+    return ok
+
+
+def mutation_check(name: str, killed: object) -> bool:
+    global MUTATION_KILLS, MUTATION_TOTAL
+    MUTATION_TOTAL += 1
+    if bool(killed):
+        MUTATION_KILLS += 1
+    return check(f"Hostile mutation killed: {name}", killed)
 
 
 def exit_code_for(fail_count: int) -> int:
     return 1 if fail_count else 0
 
 
-def hs_inner(a: np.ndarray, b: np.ndarray) -> complex:
-    return np.trace(a.conj().T @ b)
+def is_zero_matrix(matrix: Matrix) -> bool:
+    return matrix.applyfunc(simplify) == zeros(*matrix.shape)
+
+
+def hs_inner(left: Matrix, right: Matrix):
+    return simplify((left.H * right).trace())
+
+
+def hs_gram(basis: tuple[Matrix, ...] = BASIS) -> Matrix:
+    return Matrix([[hs_inner(left, right) for right in basis] for left in basis])
 
 
 def extract_coefficients(
-    k: np.ndarray, basis: tuple[np.ndarray, np.ndarray, np.ndarray] = BASIS
-) -> np.ndarray:
-    gram = np.array(
-        [[hs_inner(left, right) for right in basis] for left in basis],
-        dtype=complex,
-    )
-    rhs = np.array([hs_inner(b, k) for b in basis], dtype=complex)
-    coeffs = np.linalg.solve(gram, rhs)
-    return np.real_if_close(coeffs, tol=1000).astype(float)
+    matrix: Matrix, basis: tuple[Matrix, ...] = BASIS
+) -> Matrix:
+    gram = hs_gram(basis)
+    rhs = Matrix([hs_inner(element, matrix) for element in basis])
+    return gram.inv() * rhs
 
 
 def reconstruct(
-    coeffs: np.ndarray,
-    basis: tuple[np.ndarray, np.ndarray, np.ndarray] = BASIS,
-) -> np.ndarray:
-    return sum((float(c) * b for c, b in zip(coeffs, basis)), np.zeros((3, 3), dtype=complex))
+    coefficients: Matrix, basis: tuple[Matrix, ...] = BASIS
+) -> Matrix:
+    result = zeros(3, 3)
+    for coefficient, element in zip(coefficients, basis):
+        result += coefficient * element
+    return result.applyfunc(simplify)
 
 
-def raw_hermitian_circulant(d: float, z: complex) -> np.ndarray:
-    """Construct from the independent first-row convention [d, z, conjugate(z)]."""
-    return np.array(
+def raw_hermitian_circulant(d, c_even, c_odd) -> Matrix:
+    """Build the matrix independently from its first-row entry."""
+    z = c_even + SYM_I * c_odd
+    return Matrix(
         [
-            [d, z, np.conjugate(z)],
-            [np.conjugate(z), d, z],
-            [z, np.conjugate(z), d],
-        ],
-        dtype=complex,
+            [d, z, conjugate(z)],
+            [conjugate(z), d, z],
+            [z, conjugate(z), d],
+        ]
+    ).applyfunc(simplify)
+
+
+def matrix_from_coefficients(d, c_even, c_odd) -> Matrix:
+    return (d * BASIS[0] + c_even * BASIS[1] + c_odd * BASIS[2]).applyfunc(
+        simplify
     )
 
 
-def hermitian_from_coords(x: np.ndarray) -> np.ndarray:
-    """Nine-real-coordinate parametrization of every 3x3 Hermitian matrix."""
-    return np.array(
+def hermitian_from_coordinates(coordinates: list[int]) -> Matrix:
+    return Matrix(
         [
-            [x[0], x[3] + 1j * x[4], x[5] + 1j * x[6]],
-            [x[3] - 1j * x[4], x[1], x[7] + 1j * x[8]],
-            [x[5] - 1j * x[6], x[7] - 1j * x[8], x[2]],
-        ],
-        dtype=complex,
+            [
+                coordinates[0],
+                coordinates[3] + SYM_I * coordinates[4],
+                coordinates[5] + SYM_I * coordinates[6],
+            ],
+            [
+                coordinates[3] - SYM_I * coordinates[4],
+                coordinates[1],
+                coordinates[7] + SYM_I * coordinates[8],
+            ],
+            [
+                coordinates[5] - SYM_I * coordinates[6],
+                coordinates[7] - SYM_I * coordinates[8],
+                coordinates[2],
+            ],
+        ]
     )
 
 
-def hermitian_coords(h: np.ndarray) -> np.ndarray:
-    return np.array(
+def hermitian_coordinates(matrix: Matrix) -> Matrix:
+    return Matrix(
         [
-            h[0, 0].real,
-            h[1, 1].real,
-            h[2, 2].real,
-            h[0, 1].real,
-            h[0, 1].imag,
-            h[0, 2].real,
-            h[0, 2].imag,
-            h[1, 2].real,
-            h[1, 2].imag,
-        ],
-        dtype=float,
+            sym_re(matrix[0, 0]),
+            sym_re(matrix[1, 1]),
+            sym_re(matrix[2, 2]),
+            sym_re(matrix[0, 1]),
+            im(matrix[0, 1]),
+            sym_re(matrix[0, 2]),
+            im(matrix[0, 2]),
+            sym_re(matrix[1, 2]),
+            im(matrix[1, 2]),
+        ]
+    ).applyfunc(simplify)
+
+
+def commutant_constraint_matrix(shift: Matrix) -> Matrix:
+    columns: list[Matrix] = []
+    for coordinate_index in range(9):
+        coordinates = [0] * 9
+        coordinates[coordinate_index] = 1
+        hermitian = hermitian_from_coordinates(coordinates)
+        commutator = hermitian * shift - shift * hermitian
+        entries = list(commutator)
+        columns.append(
+            Matrix(
+                [simplify(sym_re(value)) for value in entries]
+                + [simplify(im(value)) for value in entries]
+            )
+        )
+    return Matrix.hstack(*columns)
+
+
+def validate_supplied_shift(candidate: Matrix) -> bool:
+    return (
+        candidate == S
+        and candidate**3 == I3
+        and candidate.H == candidate**2
     )
 
 
-def real_imag_vector(a: np.ndarray) -> np.ndarray:
-    flat = a.reshape(-1)
-    return np.concatenate((flat.real, flat.imag))
+def validate_commutant_member(matrix: Matrix, shift: Matrix = S) -> bool:
+    return is_zero_matrix(matrix - matrix.H) and is_zero_matrix(
+        matrix * shift - shift * matrix
+    )
 
 
-def commutant_constraint_matrix() -> np.ndarray:
+def validate_commutant_basis(
+    shift: Matrix = S, basis: tuple[Matrix, ...] = BASIS
+) -> tuple[bool, int, int, int]:
+    constraint = commutant_constraint_matrix(shift)
+    nullity = 9 - constraint.rank()
+    coordinate_columns = Matrix.hstack(
+        *[hermitian_coordinates(element) for element in basis]
+    )
+    basis_rank = coordinate_columns.rank()
+    every_member = all(validate_commutant_member(element, shift) for element in basis)
+    spans = nullity == len(basis) and basis_rank == len(basis)
+    return every_member and spans, constraint.rank(), nullity, basis_rank
+
+
+def parity_representation(
+    basis: tuple[Matrix, ...] = BASIS, exchange: Matrix = P23
+) -> Matrix:
     columns = []
-    for j in range(9):
-        coordinate = np.zeros(9, dtype=float)
-        coordinate[j] = 1.0
-        h = hermitian_from_coords(coordinate)
-        columns.append(real_imag_vector(h @ S - S @ h))
-    return np.column_stack(columns)
+    for element in basis:
+        reflected = exchange * element * exchange.H
+        columns.append(extract_coefficients(reflected, basis))
+    return Matrix.hstack(*columns).applyfunc(simplify)
 
 
-def subspace_projector(columns: np.ndarray) -> np.ndarray:
-    q, _ = np.linalg.qr(columns)
-    return q @ q.T
+def validate_parity_signature(expected: tuple[int, int, int]) -> bool:
+    return parity_representation() == Matrix.diag(*expected)
 
 
-def fixed_unitary() -> np.ndarray:
-    seed = np.array(
-        [
-            [1.0 + 0.2j, 0.3 - 0.1j, -0.4 + 0.5j],
-            [0.2 + 0.7j, 1.3 + 0.0j, 0.6 - 0.2j],
-            [-0.5 + 0.1j, 0.4 + 0.8j, 0.9 - 0.3j],
-        ],
-        dtype=complex,
+def parity_multiplicities(representation: Matrix) -> tuple[int, int]:
+    even = len((representation - eye(3)).nullspace())
+    odd = len((representation + eye(3)).nullspace())
+    return even, odd
+
+
+def validate_extraction_denominators(denominators: tuple[int, int, int]) -> bool:
+    gram = hs_gram()
+    diagonal = tuple(gram[index, index] for index in range(3))
+    off_diagonal_zero = all(
+        gram[row, column] == 0
+        for row in range(3)
+        for column in range(3)
+        if row != column
     )
-    q, r = np.linalg.qr(seed)
-    phases = np.diag(r)
-    phase_fix = np.ones(3, dtype=complex)
-    nonzero = np.abs(phases) > 0.0
-    phase_fix[nonzero] = np.conjugate(phases[nonzero]) / np.abs(phases[nonzero])
-    return q @ np.diag(phase_fix)
+    return diagonal == denominators and off_diagonal_zero
 
 
-def part1_full_hermitian_circulant_parametrization() -> None:
+SIGNED_ZERO_SAMPLES = (
+    (Rational(5, 2), Rational(5, 4), Rational(3, 4)),
+    (-1, -2, 3),
+    (0, Rational(9, 2), Rational(-1, 2)),
+    (3, 0, 2),
+    (7, Rational(-3, 2), 0),
+    (0, 0, 0),
+)
+
+
+def coordinate_identity_holds(
+    samples: tuple[tuple[object, object, object], ...], factor: int = 2
+) -> bool:
+    for d, c_even, c_odd in samples:
+        matrix = raw_hermitian_circulant(d, c_even, c_odd)
+        direct = simplify(im(matrix[0, 1] * matrix[0, 1]))
+        if simplify(direct - factor * c_even * c_odd) != 0:
+            return False
+    return True
+
+
+def exact_basis_change() -> Matrix:
+    return Matrix(
+        [
+            [1 / sqrt(2), 1 / sqrt(2), 0],
+            [-1 / sqrt(2), 1 / sqrt(2), 0],
+            [0, 0, 1],
+        ]
+    )
+
+
+def raw_coordinate_polynomial(matrix: Matrix):
+    return simplify(im(matrix[0, 1] * matrix[0, 1]))
+
+
+def raw_coordinate_is_basis_invariant(matrix: Matrix, unitary: Matrix) -> bool:
+    transformed = (unitary * matrix * unitary.H).applyfunc(simplify)
+    return simplify(
+        raw_coordinate_polynomial(transformed) - raw_coordinate_polynomial(matrix)
+    ) == 0
+
+
+def part1_full_hermitian_commutant() -> None:
     print("\n" + "=" * 92)
-    print("PART 1: FULL HERMITIAN COMMUTANT PARAMETRIZATION")
+    print("PART 1: EXACT FULL HERMITIAN COMMUTANT")
     print("=" * 92)
 
-    constraint = commutant_constraint_matrix()
-    _, singular_values, vh = np.linalg.svd(constraint)
-    rank = int(np.sum(singular_values > TOL))
-    null_basis = vh[rank:].T
-    candidate_coords = np.column_stack([hermitian_coords(b) for b in BASIS])
-
-    null_projector = subspace_projector(null_basis)
-    candidate_projector = subspace_projector(candidate_coords)
-    candidate_commutators = [np.linalg.norm(b @ S - S @ b) for b in BASIS]
-    hermiticity_errors = [np.linalg.norm(b - b.conj().T) for b in BASIS]
-
+    valid, constraint_rank, nullity, basis_rank = validate_commutant_basis()
     check(
-        "The Hermitian commutant of the supplied S has real dimension three",
-        null_basis.shape[1] == 3,
-        f"constraint rank={rank}, nullity={null_basis.shape[1]}",
+        "The supplied cyclic shift convention is exact",
+        validate_supplied_shift(S) and S2 == S**2,
+    )
+    check(
+        "Independent nine-real-coordinate constraints have rank six",
+        constraint_rank == 6 and nullity == 3,
+        f"rank={constraint_rank}, nullity={nullity}",
     )
     check(
         "I, S+S^2, and i(S-S^2) are independent Hermitian commutant elements",
-        np.linalg.matrix_rank(candidate_coords, tol=TOL) == 3
-        and max(candidate_commutators) < TOL
-        and max(hermiticity_errors) < TOL,
-        (
-            f"rank={np.linalg.matrix_rank(candidate_coords, tol=TOL)}, "
-            f"max commutator={max(candidate_commutators):.2e}, "
-            f"max Hermiticity error={max(hermiticity_errors):.2e}"
-        ),
+        basis_rank == 3 and all(validate_commutant_member(element) for element in BASIS),
+        f"basis rank={basis_rank}",
     )
     check(
-        "Those three matrices span the full Hermitian commutant",
-        np.linalg.norm(null_projector - candidate_projector) < TOL,
-        f"projector error={np.linalg.norm(null_projector - candidate_projector):.2e}",
-    )
-
-    hostile = np.diag([1.0, 2.0, 3.0]).astype(complex)
-    check(
-        "Hostile Hermitian but noncirculant matrix is rejected by the commutator constraint",
-        np.linalg.norm(hostile @ S - S @ hostile) > 1e-3,
-        f"hostile commutator norm={np.linalg.norm(hostile @ S - S @ hostile):.6f}",
+        "The displayed basis spans the full Hermitian commutant",
+        valid,
+        f"commutant dimension={nullity}, basis rank={basis_rank}",
     )
 
 
-def part2_unique_p23_parity_split() -> None:
+def part2_gram_extraction_and_parity() -> None:
     print("\n" + "=" * 92)
-    print("PART 2: UNIQUE P23 PARITY SPLIT")
+    print("PART 2: EXACT GRAM MATRIX, EXTRACTION, AND PARITY REPRESENTATION")
     print("=" * 92)
 
-    reflected_basis = tuple(P23 @ b @ P23.conj().T for b in BASIS)
-    parity_columns = np.column_stack(
-        [extract_coefficients(reflected, BASIS) for reflected in reflected_basis]
-    )
-    parity_eigenvalues = np.linalg.eigvals(parity_columns)
-    even_count = int(np.sum(np.isclose(parity_eigenvalues, 1.0, atol=TOL)))
-    odd_count = int(np.sum(np.isclose(parity_eigenvalues, -1.0, atol=TOL)))
+    d, c_even, c_odd = symbols("d c_even c_odd", real=True)
+    symbolic_matrix = matrix_from_coefficients(d, c_even, c_odd)
+    representation = parity_representation()
+    multiplicities = parity_multiplicities(representation)
 
     check(
-        "P23 exchanges S and S^2 in the supplied convention",
-        np.linalg.norm(P23 @ S @ P23.conj().T - S2) < TOL
-        and np.linalg.norm(P23 @ S2 @ P23.conj().T - S) < TOL,
+        "P23 exchanges S and S^2",
+        P23 * S * P23 == S2 and P23 * S2 * P23 == S,
     )
     check(
-        "Parity acts as diag(+1,+1,-1) on the extracted coefficient space",
-        np.linalg.norm(parity_columns - np.diag([1.0, 1.0, -1.0])) < TOL,
-        f"representation error={np.linalg.norm(parity_columns - np.diag([1.0, 1.0, -1.0])):.2e}",
+        "The Hilbert-Schmidt Gram matrix is diag(3,6,6)",
+        hs_gram() == Matrix.diag(3, 6, 6),
+        f"G={hs_gram()}",
     )
     check(
-        "The P23-odd Hermitian-circulant subspace is uniquely one-dimensional",
-        even_count == 2 and odd_count == 1,
-        f"even multiplicity={even_count}, odd multiplicity={odd_count}",
+        "Hilbert-Schmidt extraction recovers the symbolic coefficient triple",
+        extract_coefficients(symbolic_matrix) == Matrix([d, c_even, c_odd]),
     )
     check(
-        "Hostile wrong-parity assignment of S+S^2 as odd is rejected",
-        np.linalg.norm(P23 @ BASIS[1] @ P23.conj().T + BASIS[1]) > 1e-3,
+        "The independently extracted parity representation is diag(+1,+1,-1)",
+        representation == Matrix.diag(1, 1, -1),
+        f"R={representation}",
     )
     check(
-        "Hostile wrong-parity assignment of i(S-S^2) as even is rejected",
-        np.linalg.norm(P23 @ BASIS[2] @ P23.conj().T - BASIS[2]) > 1e-3,
+        "The exact parity multiplicities are two even and one odd",
+        multiplicities == (2, 1),
+        f"multiplicities={multiplicities}",
     )
 
 
-def part3_exact_coefficient_extraction() -> None:
+def part3_signed_and_zero_extraction_cases() -> None:
     print("\n" + "=" * 92)
-    print("PART 3: EXACT COEFFICIENT EXTRACTION AND SIGN CONVENTION")
+    print("PART 3: EXACT SIGNED AND ZERO COEFFICIENT CASES")
     print("=" * 92)
 
-    samples = [
-        (2.5, 1.25, 0.75),
-        (-1.0, -2.0, 3.0),
-        (0.0, 4.5, -0.5),
-        (3.0, 0.0, 2.0),
-        (7.0, -1.5, 0.0),
-        (0.0, 0.0, 0.0),
-    ]
-    for index, (d, c_even, c_odd) in enumerate(samples):
-        k = raw_hermitian_circulant(d, complex(c_even, c_odd))
-        extracted = extract_coefficients(k)
-        entry_readout = np.array([k[0, 0].real, k[0, 1].real, k[0, 1].imag])
+    for index, (d, c_even, c_odd) in enumerate(SIGNED_ZERO_SAMPLES):
+        matrix = raw_hermitian_circulant(d, c_even, c_odd)
+        expected = Matrix([d, c_even, c_odd])
+        extracted = extract_coefficients(matrix)
         check(
-            f"Sample {index}: Hilbert-Schmidt extraction recovers signed/zero coefficients",
-            np.linalg.norm(extracted - np.array([d, c_even, c_odd])) < TOL
-            and np.linalg.norm(extracted - entry_readout) < TOL
-            and np.linalg.norm(reconstruct(extracted) - k) < TOL,
-            f"expected={(d, c_even, c_odd)}, extracted={tuple(extracted)}",
+            f"Case {index}: extraction and reconstruction recover all coefficients",
+            extracted == expected and reconstruct(extracted) == matrix,
+            f"expected={tuple(expected)}, extracted={tuple(extracted)}",
         )
 
-    sign_probe = raw_hermitian_circulant(0.0, 1.5 - 0.25j)
+    probe = raw_hermitian_circulant(0, Rational(3, 2), Rational(-1, 4))
     check(
-        "The supplied zero-based convention has K_01 = c_even + i c_odd",
-        abs(sign_probe[0, 1] - (1.5 - 0.25j)) < TOL
-        and abs(sign_probe[0, 2] - (1.5 + 0.25j)) < TOL,
-        f"K01={sign_probe[0,1]}, K02={sign_probe[0,2]}",
+        "The supplied entry convention has K_01 = c_even + i c_odd",
+        probe[0, 1] == Rational(3, 2) - SYM_I / 4
+        and probe[0, 2] == Rational(3, 2) + SYM_I / 4,
+        f"K_01={probe[0, 1]}, K_02={probe[0, 2]}",
     )
 
 
-def part4_entrywise_polynomial_identity() -> None:
+def part4_exact_coordinate_polynomial() -> None:
     print("\n" + "=" * 92)
-    print("PART 4: COORDINATE POLYNOMIAL Im[(K_01)^2]")
+    print("PART 4: EXACT COORDINATE POLYNOMIAL")
     print("=" * 92)
 
-    samples = [
-        (0.0, 2.0, 3.0),
-        (1.0, -2.0, 3.0),
-        (-4.0, 2.0, -3.0),
-        (5.0, -2.0, -3.0),
-        (2.0, 0.0, 5.0),
-        (-1.0, 4.0, 0.0),
-        (3.0, 0.0, 0.0),
-        (0.0, 0.5, -0.25),
-    ]
-    for index, (d, c_even, c_odd) in enumerate(samples):
-        k = raw_hermitian_circulant(d, complex(c_even, c_odd))
-        direct = float(np.imag(k[0, 1] * k[0, 1]))
-        expected = 2.0 * c_even * c_odd
+    d, c_even, c_odd = symbols("d c_even c_odd", real=True)
+    symbolic_matrix = matrix_from_coefficients(d, c_even, c_odd)
+    reflected = P23 * symbolic_matrix * P23
+    direct = raw_coordinate_polynomial(symbolic_matrix)
+    reflected_direct = raw_coordinate_polynomial(reflected)
+
+    check(
+        "Actual symbolic entry multiplication gives 2 c_even c_odd",
+        simplify(direct - 2 * c_even * c_odd) == 0,
+        f"A_01={direct}",
+    )
+    check(
+        "P23 changes the exact coordinate polynomial by one minus sign",
+        simplify(reflected_direct + direct) == 0,
+        f"A_01(PKP)={reflected_direct}",
+    )
+
+    for index, sample in enumerate(SIGNED_ZERO_SAMPLES):
         check(
-            f"Sample {index}: direct entry multiplication gives 2 c_even c_odd",
-            abs(direct - expected) < TOL,
-            f"(d,even,odd)={(d,c_even,c_odd)}, direct={direct:.6f}, expected={expected:.6f}",
+            f"Case {index}: actual matrix multiplication matches the coordinate identity",
+            coordinate_identity_holds((sample,)),
+            f"coefficients={sample}",
         )
 
-    k = raw_hermitian_circulant(1.0, 1.25 - 0.4j)
-    reflected = P23 @ k @ P23.conj().T
-    direct = float(np.imag(k[0, 1] * k[0, 1]))
-    reflected_direct = float(np.imag(reflected[0, 1] * reflected[0, 1]))
-    wrong_sign = -2.0 * 1.25 * (-0.4)
-    check(
-        "The coordinate polynomial is P23-odd on the supplied family",
-        abs(reflected_direct + direct) < TOL,
-        f"A(K)={direct:.6f}, A(PKP)={reflected_direct:.6f}",
-    )
-    check(
-        "Hostile overall-sign formula -2 c_even c_odd is rejected",
-        abs(direct - wrong_sign) > 0.5,
-        f"direct={direct:.6f}, hostile={wrong_sign:.6f}",
-    )
 
-
-def part5_basis_covariance_and_coordinate_limit() -> None:
+def part5_exact_basis_transformation() -> None:
     print("\n" + "=" * 92)
-    print("PART 5: BASIS-COVARIANT COEFFICIENTS, COORDINATE-DEPENDENT ENTRY POLYNOMIAL")
+    print("PART 5: EXACT SIMULTANEOUS BASIS TRANSFORMATION")
     print("=" * 92)
 
-    u = fixed_unitary()
-    k = raw_hermitian_circulant(1.75, -0.8 + 0.35j)
-    transformed_basis = tuple(u @ b @ u.conj().T for b in BASIS)
-    transformed_k = u @ k @ u.conj().T
-    transformed_p23 = u @ P23 @ u.conj().T
-    original_coeffs = extract_coefficients(k)
-    transformed_coeffs = extract_coefficients(transformed_k, transformed_basis)
-
-    transformed_odd = transformed_basis[2]
-    odd_parity_error = np.linalg.norm(
-        transformed_p23 @ transformed_odd @ transformed_p23.conj().T
-        + transformed_odd
+    unitary = exact_basis_change()
+    d, c_even, c_odd = symbols("d c_even c_odd", real=True)
+    symbolic_matrix = matrix_from_coefficients(d, c_even, c_odd)
+    transformed_basis = tuple(
+        (unitary * element * unitary.H).applyfunc(simplify) for element in BASIS
     )
-    original_entry_polynomial = float(np.imag(k[0, 1] * k[0, 1]))
-    transformed_entry_polynomial = float(
-        np.imag(transformed_k[0, 1] * transformed_k[0, 1])
+    transformed_matrix = (unitary * symbolic_matrix * unitary.H).applyfunc(simplify)
+    transformed_exchange = (unitary * P23 * unitary.H).applyfunc(simplify)
+    transformed_representation = parity_representation(
+        transformed_basis, transformed_exchange
     )
 
+    check("The chosen basis transformation is exactly unitary", unitary * unitary.H == I3)
     check(
-        "Simultaneous unitary conjugation preserves Hilbert-Schmidt coefficients",
-        np.linalg.norm(original_coeffs - transformed_coeffs) < TOL,
-        f"coefficient drift={np.linalg.norm(original_coeffs-transformed_coeffs):.2e}",
+        "Simultaneous conjugation preserves the symbolic coefficient triple",
+        extract_coefficients(transformed_matrix, transformed_basis)
+        == Matrix([d, c_even, c_odd]),
     )
     check(
-        "Simultaneous unitary conjugation preserves the one-dimensional odd parity class",
-        odd_parity_error < TOL,
-        f"odd parity error={odd_parity_error:.2e}",
+        "Simultaneous conjugation preserves parity multiplicities",
+        transformed_representation == Matrix.diag(1, 1, -1)
+        and parity_multiplicities(transformed_representation) == (2, 1),
     )
+
+    probe = raw_hermitian_circulant(
+        Rational(7, 4), Rational(-4, 5), Rational(7, 20)
+    )
+    transformed_probe = (unitary * probe * unitary.H).applyfunc(simplify)
+    original_value = raw_coordinate_polynomial(probe)
+    transformed_value = raw_coordinate_polynomial(transformed_probe)
     check(
-        "Hostile claim that the raw 01-entry polynomial is basis invariant is rejected",
-        abs(original_entry_polynomial - transformed_entry_polynomial) > 1e-3,
-        (
-            f"original A01={original_entry_polynomial:.6f}, "
-            f"transformed raw A01={transformed_entry_polynomial:.6f}"
-        ),
+        "The raw 01-entry polynomial changes under this basis transformation",
+        original_value != transformed_value,
+        f"original={original_value}, transformed={transformed_value}",
     )
 
 
-def part6_source_scope_firewall() -> None:
+def part6_theorem_surface_consistency() -> None:
     print("\n" + "=" * 92)
-    print("PART 6: SOURCE-SCOPE FIREWALL")
+    print("PART 6: POSITIVE THEOREM-SURFACE CONSISTENCY")
     print("=" * 92)
 
     note = NOTE_PATH.read_text(encoding="utf-8")
-    required = [
-        "**Claim type:** bounded_theorem",
-        "Supplied `3 x 3` Hermitian-Circulant / `P_23` Even-Odd Algebra Lemma",
-        "coordinate functional",
-        "not invariant under an arbitrary basis change",
+    required = (
+        "**Claim type:** positive_theorem",
+        "## Typed theorem surface",
+        "**Input.** The displayed finite matrices",
+        "**Output.** The exact Hermitian commutant",
+        "G = diag(3,6,6)",
+        "`(2 even, 1 odd)`",
+        "`c_odd` is the unique odd coordinate",
+        "A_01(K) := Im[(K_01)^2] = 2 c_even c_odd",
+        "The coefficient triple and parity multiplicities are therefore",
+        "The raw polynomial `Im[(K'_01)^2]` is coordinate-dependent",
+    )
+    stale_terms = (
+        "physical",
+        "leptogenesis",
+        "heavy-neutrino",
+        "right-Gram",
+        "activation",
+        "decay asymmetry",
+        "kinetics",
+        "washout",
+        "transport",
         "missing_bridge_theorem",
-        "**carrier bridge**",
-        "**source/activation bridge**",
-        "**readout bridge**",
-        "**transport bridge**",
-        "does not state that any coefficient must be activated",
-    ]
-    forbidden = [
-        "standard leptogenesis CP kernel on this family",
-        "must be activated away from zero",
-        "exact local slot that carries the CP-supporting deformation",
-        "the leptogenesis CP kernel reads",
+        "does not",
+        "no-go",
+        "exclusion",
+        "carrier bridge",
+        "readout bridge",
+    )
+    missing = [phrase for phrase in required if phrase not in note]
+    leaked = [
+        phrase
+        for phrase in stale_terms
+        if re.search(rf"(?<![A-Za-z]){re.escape(phrase)}(?![A-Za-z])", note, re.I)
     ]
 
-    missing = [phrase for phrase in required if phrase not in note]
-    leaked = [phrase for phrase in forbidden if phrase in note]
     check(
-        "Source declares the bounded supplied-matrix scope and all missing bridges",
+        "The note declares every finite-matrix input and theorem output",
         not missing,
-        f"missing={missing}",
+        f"missing count={len(missing)}",
     )
     check(
-        "Source contains no legacy physical-observable or activation wording",
+        "The theorem surface contains only its positive finite-matrix content",
         not leaked,
-        f"leaked={leaked}",
+        f"stale-term count={len(leaked)}",
     )
     check(
-        "Runner does not contain the former definitional cp_tensor helper",
-        ("def " + "cp_tensor") not in Path(__file__).read_text(encoding="utf-8"),
-    )
-    check(
-        "Exit policy is truthful: zero failures exits zero and any failure exits nonzero",
+        "Exit policy maps every positive failure count to a nonzero exit",
         exit_code_for(0) == 0
         and exit_code_for(1) != 0
         and exit_code_for(7) != 0,
     )
 
 
+def part7_hostile_mutations() -> None:
+    print("\n" + "=" * 92)
+    print("PART 7: HOSTILE MUTATIONS THROUGH LOAD-BEARING VALIDATORS")
+    print("=" * 92)
+
+    noncirculant_hermitian = Matrix.diag(1, 2, 3)
+    mutation_check(
+        "noncirculant Hermitian member",
+        not validate_commutant_member(noncirculant_hermitian),
+    )
+    mutation_check(
+        "wrong even/odd parity assignment",
+        not validate_parity_signature((1, -1, 1)),
+    )
+    mutation_check(
+        "reversed overall sign in the coordinate identity",
+        not coordinate_identity_holds(SIGNED_ZERO_SAMPLES, factor=-2),
+    )
+
+    unitary = exact_basis_change()
+    probe = raw_hermitian_circulant(
+        Rational(7, 4), Rational(-4, 5), Rational(7, 20)
+    )
+    mutation_check(
+        "raw-entry basis-invariance assertion",
+        not raw_coordinate_is_basis_invariant(probe, unitary),
+    )
+    mutation_check(
+        "altered coefficient-extraction denominator",
+        not validate_extraction_denominators((3, 3, 6)),
+    )
+    mutation_check(
+        "reversed cyclic-shift convention",
+        not validate_supplied_shift(S2),
+    )
+
+
 def main() -> int:
     print("=" * 92)
-    print("SUPPLIED 3x3 HERMITIAN-CIRCULANT / P23 EVEN-ODD ALGEBRA LEMMA")
+    print("SUPPLIED 3x3 HERMITIAN-CIRCULANT / P23 EVEN-ODD ALGEBRA THEOREM")
     print("=" * 92)
     print()
-    print("Scope:")
-    print("  finite supplied-matrix algebra only")
-    print("  no physical carrier, source, observable, or transport identification")
+    print("Typed surface:")
+    print("  input  = displayed finite matrices, basis, indices, and trace pairing")
+    print("  output = exact commutant, extraction, parity, and coordinate identity")
 
-    part1_full_hermitian_circulant_parametrization()
-    part2_unique_p23_parity_split()
-    part3_exact_coefficient_extraction()
-    part4_entrywise_polynomial_identity()
-    part5_basis_covariance_and_coordinate_limit()
-    part6_source_scope_firewall()
+    part1_full_hermitian_commutant()
+    part2_gram_extraction_and_parity()
+    part3_signed_and_zero_extraction_cases()
+    part4_exact_coordinate_polynomial()
+    part5_exact_basis_transformation()
+    part6_theorem_surface_consistency()
+    part7_hostile_mutations()
 
     print("\n" + "=" * 92)
     print("RESULT")
     print("=" * 92)
-    print("  Bounded result:")
-    print("    - the supplied Hermitian commutant is exactly three-real-dimensional")
-    print("    - its P23-odd subspace is uniquely one-dimensional")
-    print("    - Hilbert-Schmidt extraction recovers (d, c_even, c_odd)")
+    print("  Positive finite-matrix theorem:")
+    print("    - the Hermitian commutant is exactly three-real-dimensional")
+    print("    - its parity multiplicities are exactly two even and one odd")
+    print("    - Hilbert-Schmidt extraction returns (d, c_even, c_odd)")
     print("    - in the displayed basis Im[(K_01)^2] = 2 c_even c_odd")
-    print("    - the entry polynomial is not promoted to a physical observable")
+    print("    - simultaneous conjugation preserves coefficients and parity")
+    print("    - the raw 01-entry polynomial is coordinate-dependent")
     print()
+    print(f"MUTATION KILLS={MUTATION_KILLS}/{MUTATION_TOTAL}")
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return exit_code_for(FAIL_COUNT)
 

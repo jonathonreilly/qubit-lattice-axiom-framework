@@ -10,8 +10,8 @@ nonzero odd-coefficient target
 ## Question
 
 If a separate source/activation bridge requires `c_odd != 0`, what is the
-smallest extension class left after the odd-direction algebra lemma and the
-current-stack zero law?
+smallest extension class left after the positive finite-matrix theorem and
+the current-stack zero law?
 
 ## Bottom line
 
@@ -39,15 +39,15 @@ Under the note's explicit assumptions, the branch knows:
    branch
 4. the local sheet on that lane is already fixed on the DM circulant route
 
-The supplied-matrix lemma contributes only item 1. It does not supply a
+The positive finite-matrix theorem contributes only item 1. It does not supply a
 physical carrier, a source law, or a reason to require a nonzero odd
 coefficient.
 
 ## Theorem-level statement
 
 **Theorem (Conditional minimal extension class for a nonzero odd
-coefficient).** Assume a separate target requiring `c_odd != 0`, the bounded
-supplied-matrix odd-direction lemma, the DM odd-slot current-stack zero law,
+coefficient).** Assume a separate target requiring `c_odd != 0`, the positive
+finite-matrix Hermitian-circulant theorem, the DM odd-slot current-stack zero law,
 the DM two-Higgs minimality theorem, and the DM two-Higgs continuity sheet
 theorem. Then any realization of that target must:
 
@@ -93,8 +93,8 @@ python3 scripts/frontier_dm_neutrino_odd_mixed_bridge_extension.py
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15](DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md)
-  — bounded supplied-matrix Hermitian-circulant / `P_23` even-odd algebra
-  lemma only; it does not supply the nonzero target
+  — positive finite-matrix Hermitian-circulant / `P_23` even-odd algebra
+  theorem establishing the unique odd coordinate
 - [dm_neutrino_odd_circulant_current_stack_zero_law_note_2026-04-15](DM_NEUTRINO_ODD_CIRCULANT_CURRENT_STACK_ZERO_LAW_NOTE_2026-04-15.md)
 - [dm_neutrino_two_higgs_minimality_theorem_note_2026-04-15](DM_NEUTRINO_TWO_HIGGS_MINIMALITY_THEOREM_NOTE_2026-04-15.md)
 - [dm_neutrino_two_higgs_continuity_sheet_theorem_note_2026-04-15](DM_NEUTRINO_TWO_HIGGS_CONTINUITY_SHEET_THEOREM_NOTE_2026-04-15.md)

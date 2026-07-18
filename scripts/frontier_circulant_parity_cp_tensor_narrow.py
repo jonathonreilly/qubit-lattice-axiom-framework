@@ -15,22 +15,20 @@ Verifies the standalone linear-algebra / parity-decomposition identity:
     (iii) P_{23} (i (S - S^2)) P_{23} = -i (S - S^2);
     (iv)  hence d, c_even are residual-Z_2 even coefficients and c_odd is
           residual-Z_2 odd;
-    (v)   the CP-tensor formula on K is
+    (v)   the displayed coordinate-polynomial formula on K is
               Im[(K_01)^2] = 2 c_even c_odd;
     (vi)  c_odd = 0 forces Im[(K_01)^2] = 0;
     (vii) c_odd != 0 with c_even != 0 gives a nonzero value of this scalar.
 
 This is pure linear algebra on 3x3 Hermitian circulants and the
-residual Z_2 transposition. No DM-side / DM-circulant CP / two-Higgs
-right-Gram bridge / weak-axis-1+2 split / standard CP tensor readout
-authority is consumed; the narrow theorem treats (d, c_even, c_odd) as
-abstract real symbols.
+residual Z_2 transposition. No DM-side / two-Higgs right-Gram /
+weak-axis-1+2 split / physical-readout authority is consumed; the narrow
+theorem treats (d, c_even, c_odd) as abstract real symbols.
 
-Companion role: this is a Pattern A new narrow claim row carving out the
-algebraic core from `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`.
-The narrow theorem isolates the parity-decomposition + CP-tensor algebra on
-Hermitian circulants from any DM-side / Wilson-environment / weak-axis-split
-framework-specific input.
+Companion role: this is a separate Pattern A narrow claim. The repaired
+`dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` independently
+proves a complete finite-matrix theorem on the full Hermitian commutant;
+neither theorem supplies a physical carrier, activation law, or readout.
 """
 
 import sys
@@ -61,9 +59,9 @@ def section(title):
 
 
 # ============================================================================
-section("Pattern A narrow theorem: Hermitian circulant parity + CP tensor")
+section("Pattern A narrow theorem: Hermitian circulant parity + coordinate polynomial")
 # Statement: parity-decomposition of the Hermitian circulant family under
-# residual-Z_2 transposition + CP-tensor formula Im[(K_01)^2] = 2 c_even
+# residual-Z_2 transposition + coordinate formula Im[(K_01)^2] = 2 c_even
 # c_odd. Pure linear algebra on 3x3 matrices.
 # ============================================================================
 
@@ -138,7 +136,7 @@ check("P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_od
 
 
 # ----------------------------------------------------------------------------
-section("Part 4: CP-tensor formula Im[(K_01)^2] = 2 c_even c_odd")
+section("Part 4: coordinate polynomial Im[(K_01)^2] = 2 c_even c_odd")
 # ----------------------------------------------------------------------------
 # K_01 = K[0, 1] (first row, second column)
 K_01 = K[0, 1]
@@ -148,9 +146,9 @@ K_01_squared = sympy.simplify(K_01**2)
 print(f"  K[0, 1]^2 = {K_01_squared}")
 
 K_01_squared_imag = sympy.simplify(im(K_01_squared))
-expected_cp_tensor = 2 * c_even * c_odd
+expected_coordinate_polynomial = 2 * c_even * c_odd
 check("Im[(K_01)^2] = 2 c_even c_odd exact",
-      sympy.simplify(K_01_squared_imag - expected_cp_tensor) == 0,
+      sympy.simplify(K_01_squared_imag - expected_coordinate_polynomial) == 0,
       detail=f"Im[K_01^2] = {K_01_squared_imag}")
 
 
@@ -172,10 +170,10 @@ sub = {d: Rational(1), c_even: Rational(1, 3), c_odd: Rational(1, 5)}
 K_concrete = K.subs(sub)
 K01_concrete = K_concrete[0, 1]
 K01_concrete_squared_imag = sympy.simplify(im(K01_concrete**2))
-expected_cp_concrete = 2 * Rational(1, 3) * Rational(1, 5)  # = 2/15
+expected_coordinate_concrete = 2 * Rational(1, 3) * Rational(1, 5)  # = 2/15
 check("Im[(K_01)^2] = 2 c_even c_odd = 2/15 at (1, 1/3, 1/5)",
-      sympy.simplify(K01_concrete_squared_imag - expected_cp_concrete) == 0,
-      detail=f"Im[K_01^2] = {K01_concrete_squared_imag}, expected = {expected_cp_concrete}")
+      sympy.simplify(K01_concrete_squared_imag - expected_coordinate_concrete) == 0,
+      detail=f"Im[K_01^2] = {K01_concrete_squared_imag}, expected = {expected_coordinate_concrete}")
 
 
 # ----------------------------------------------------------------------------
@@ -195,17 +193,17 @@ print("""
     (i)   P_{23} S P_{23} = S^2 (residual-Z_2 swap of S, S^2);
     (ii)  I and (S + S^2) are residual-Z_2-even; i(S - S^2) is residual-Z_2-odd;
     (iii) P_{23} K P_{23} sends c_odd -> -c_odd, leaves d, c_even fixed;
-    (iv)  Im[(K_01)^2] = 2 c_even c_odd  (exact CP-tensor formula);
+    (iv)  Im[(K_01)^2] = 2 c_even c_odd  (exact coordinate polynomial);
     (v)   c_odd = 0 forces Im[(K_01)^2] = 0.
 
   Audit-lane class:
     pure linear algebra on 3x3 Hermitian circulants and a residual Z_2
-    transposition. No DM-side / Wilson-environment / weak-axis-split / two-Higgs
-    right-Gram / standard CP tensor readout authority consumed.
+    transposition. No DM-side / weak-axis-split / two-Higgs right-Gram /
+    physical-readout authority consumed.
 
-  This narrow theorem isolates the circulant parity decomposition + CP-tensor
-  formula from any DM-side framework-specific framing, so it can be
-  checked independently of the parent's authority-stack inputs.
+  This separate narrow theorem overlaps the displayed parity and coordinate
+  identities in the complete finite-matrix theorem; neither theorem supplies
+  a physical carrier, activation law, or readout.
 """)
 
 

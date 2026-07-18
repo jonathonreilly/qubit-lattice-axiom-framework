@@ -1,5 +1,5 @@
 {
- "as_of_date": "2026-07-17",
+ "as_of_date": "2026-07-18",
  "lane_ids": [
   "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
   "a3_r1_review_confirms_obstruction_note_2026-05-08_r1hr",
@@ -216,7 +216,6 @@
   "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
   "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note",
   "gauge_vacuum_plaquette_perron_reduction_theorem_note",
-  "gauge_vacuum_plaquette_reduction_existence_theorem_note",
   "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
   "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
   "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
@@ -473,7 +472,6 @@
   "shapiro_delay_note",
   "shapiro_family_portability_note",
   "shapiro_qa_retest_note",
-  "shapiro_static_discriminator_note",
   "shapiro_unique_discriminator_v2_note",
   "sigma_hier_uniqueness_theorem_note_2026-04-19",
   "signed_gravity_response_lane_status_note_2026-04-26",

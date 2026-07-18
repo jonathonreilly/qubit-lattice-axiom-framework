@@ -49,7 +49,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "7403c7105b87d6105b9ceb71365df7075f03745728d253dd8a8c9f5c051238d8",
+  "note_hash": "806921e6bb407c67b76baa7b2b46f2f81e7d2f7f80f8442838155e787262ad94",
   "note_path": "docs/lanes/open_science/README.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

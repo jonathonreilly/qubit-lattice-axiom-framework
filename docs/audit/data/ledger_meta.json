@@ -7,9 +7,9 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 0,
-    "preserved_existing": 3712,
-    "re_audit_required": 42,
-    "row_count": 3767,
-    "seeded_new": 13
+    "preserved_existing": 3766,
+    "re_audit_required": 1,
+    "row_count": 3770,
+    "seeded_new": 3
   }
 }

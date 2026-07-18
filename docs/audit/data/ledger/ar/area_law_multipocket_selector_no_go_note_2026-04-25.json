@@ -22,10 +22,7 @@
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [
-    "area_law_primitive_parity_gate_carrier_theorem_note_2026-04-25",
-    "area_law_primitive_car_edge_identification_theorem_note_2026-04-25"
-  ],
+  "deps": [],
   "direct_in_degree": 9,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
@@ -37,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "0d7d462312cfbc505098e78938faaa1b886726cda12db899a6abcc2f1baea0c9",
+  "note_hash": "d9a8f11c7896f6ce1ed3d7ef9f2495fe3e8e0fbaa364f2ba5620de76a443bd46",
   "note_path": "docs/AREA_LAW_MULTIPOCKET_SELECTOR_NO_GO_NOTE_2026-04-25.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

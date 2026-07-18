@@ -25,13 +25,13 @@
   "deps": [
     "minimal_axioms"
   ],
-  "direct_in_degree": 31,
+  "direct_in_degree": 30,
   "effective_status": "meta",
   "effective_status_reason": "metadata",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 25.66,
+  "load_bearing_score": 24.57,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "retained_bounded",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/realized_state_primitive_irreducibility_support_2026_06_11.py",
   "title": "Realized-State Primitive",
-  "transitive_descendants": 142,
+  "transitive_descendants": 94,
   "verdict_rationale": null
 }

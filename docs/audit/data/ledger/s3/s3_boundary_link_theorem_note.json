@@ -29,12 +29,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.179,
+  "load_bearing_score": 14.181,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "b2b7abcbea872ba162821364de48eb8728ffa7d3fc150f09fccd0662872c89ea",
+  "note_hash": "98cd3d9671005d0e900d4894718daf64f1908bed44b9ad1ca9b48f3ad997b940",
   "note_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1603,6 +1603,6 @@
   },
   "runner_path": "scripts/frontier_s3_boundary_link_theorem.py",
   "title": "S^3 Boundary-Link Disk Bounded Certificate",
-  "transitive_descendants": 1158,
+  "transitive_descendants": 1160,
   "verdict_rationale": null
 }

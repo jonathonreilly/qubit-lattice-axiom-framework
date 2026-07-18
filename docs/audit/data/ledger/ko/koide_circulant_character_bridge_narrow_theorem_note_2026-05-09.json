@@ -62,7 +62,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "audit_in_progress",
-  "load_bearing_score": 25.661,
+  "load_bearing_score": 25.664,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -195,6 +195,6 @@
   },
   "runner_path": "scripts/frontier_koide_circulant_character_bridge_narrow.py",
   "title": "Koide Circulant / Character Bridge Narrow Theorem",
-  "transitive_descendants": 1144,
+  "transitive_descendants": 1146,
   "verdict_rationale": null
 }

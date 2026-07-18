@@ -62,7 +62,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "audit_in_progress",
-  "load_bearing_score": 14.812,
+  "load_bearing_score": 14.814,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -1347,6 +1347,6 @@
   },
   "runner_path": "scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py",
   "title": "Hierarchy 7/8 Riemann-Dirichlet Dimensional Anchor \u2014 Narrow Theorem",
-  "transitive_descendants": 898,
+  "transitive_descendants": 899,
   "verdict_rationale": null
 }

@@ -41,7 +41,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_renaming",
-  "load_bearing_score": 13.951,
+  "load_bearing_score": 13.955,
   "load_bearing_step": "Any scalar selector admitted inside this first-live grammar factors as S(W) = Phi(L(W)).",
   "load_bearing_step_class": "E",
   "max_descendant_status": "audit_in_progress",
@@ -450,6 +450,6 @@
   },
   "runner_path": "scripts/frontier_koide_q_readout_factorization_theorem.py",
   "title": "Koide Q Readout Factorization Theorem",
-  "transitive_descendants": 699,
+  "transitive_descendants": 701,
   "verdict_rationale": "The explicit operator computation supports L(u,v,w,z)=diag(u,v,w), and the resulting rank, kernel, image, and quotient statements are valid algebraic consequences. The load-bearing kernel-invariance repair is not independently derived: runner D.2 constructs a selector already having the form Phi(L(W)), while D.3 labels a z-sensitive scalar non-first-live because it violates that stipulated form. Thus the advertised admissibility theorem reduces to defining the first-live selector class as functions on the returned operator."
 }

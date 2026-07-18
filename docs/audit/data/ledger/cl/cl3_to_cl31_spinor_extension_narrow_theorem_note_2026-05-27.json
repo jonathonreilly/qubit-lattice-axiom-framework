@@ -34,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "363fb5fcc8f5184d0b08cc65502655887adea9ed3d8805618ef872d15a255055",
+  "note_hash": "37263394dfd22343187e316c87d1317a90a6f8d6c673b5d5c984e7dc6e69f94e",
   "note_path": "docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -166,7 +166,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

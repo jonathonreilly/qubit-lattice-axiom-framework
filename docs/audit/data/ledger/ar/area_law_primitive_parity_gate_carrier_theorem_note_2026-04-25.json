@@ -29,13 +29,13 @@
     "planck_boundary_density_extension_theorem_note_2026-04-24",
     "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"
   ],
-  "direct_in_degree": 12,
+  "direct_in_degree": 11,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.248,
+  "load_bearing_score": 11.729,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -102,6 +102,6 @@
   },
   "runner_path": "scripts/frontier_area_law_primitive_parity_gate_carrier.py",
   "title": "Area-Law Primitive Parity-Gate Carrier Theorem Note",
-  "transitive_descendants": 75,
+  "transitive_descendants": 74,
   "verdict_rationale": null
 }

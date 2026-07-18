@@ -44,7 +44,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.392,
+  "load_bearing_score": 10.397,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -65,6 +65,6 @@
   },
   "runner_path": "scripts/cl3_koide_bae_probe_spectrum_cone_2026_05_09_probe22.py",
   "title": "Koide BAE Probe 22 \u2014 Spectrum-Level Cone Localization Pivot Bounded Obstruction",
-  "transitive_descendants": 671,
+  "transitive_descendants": 673,
   "verdict_rationale": null
 }

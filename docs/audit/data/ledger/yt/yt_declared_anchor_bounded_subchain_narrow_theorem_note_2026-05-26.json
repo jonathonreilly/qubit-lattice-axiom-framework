@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.225,
+  "load_bearing_score": 10.228,
   "load_bearing_step": "Substituting the declared anchors into the definitions yields the geometric-mean, connected-trace, taste-weight, and Ward-boundary identities.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -190,6 +190,6 @@
   },
   "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
   "title": "YT Declared-Anchor Bounded Subchain Narrow Theorem",
-  "transitive_descendants": 845,
+  "transitive_descendants": 847,
   "verdict_rationale": "The runner genuinely evaluates the stated algebra rather than merely printing the expected results, and all fifteen checks pass. However, the restricted packet supplies no retained-grade or accepted-premise authority for <P>=0.5934, kappa_EW=0, or the Ward Clebsch, so the theorem remains conditional on those explicit inputs. The note accurately limits its scope and does not present the resulting y_t value as a zero-import prediction."
 }

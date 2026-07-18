@@ -59,7 +59,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_pending_chain",
-  "load_bearing_score": 20.364,
+  "load_bearing_score": 20.367,
   "load_bearing_step": "Applying the S3 character inner products and diagonalizing the explicitly defined Y and T3 restrictions yields C^8 = 4A1 + 2E, hw=1 = A1 + E with a Z3 orbit, and the stated restricted spectra.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -5562,6 +5562,6 @@
   },
   "runner_path": "scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py",
   "title": "Cl(3) Abstract Taste-Cube S3/Z3 Representation Theorem",
-  "transitive_descendants": 931,
+  "transitive_descendants": 933,
   "verdict_rationale": "All 15 runner checks instantiate explicit permutation, projector, and Pauli matrices and verify algebraic identities, characters, orbit relations, and eigenvalue spectra without empirical comparators or tuned inputs. The retained parent already supplies the abstract S3-on-C^8 decomposition and hw=1 representation, while this note adds immediate finite-dimensional consequences and locally defined restricted spectra. With zero class-D checks and no independent framework derivation beyond the retained parent plus standard mathematics, the decoration tie-break applies."
 }

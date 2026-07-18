@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 13.672,
+  "load_bearing_score": 13.676,
   "load_bearing_step": "The Schur-Weyl Bessel-determinant sum and direct Weyl-torus integration compute rho_(p,q)(6) on 0 <= p,q <= 4 and agree at the stated float64 error scale.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -1416,6 +1416,6 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py",
   "title": "Gauge-Vacuum Plaquette Rho(p,q)(6) Wilson Environment Bounded Note",
-  "transitive_descendants": 815,
+  "transitive_descendants": 817,
   "verdict_rationale": "Issue: The runner genuinely computes the finite table, but the note supplies rather than derives the SU(3) Wilson single-link boundary measure and its canonical environment interpretation at beta=6. Why this blocks: With no cited authorities, the restricted packet contains no accepted-premise or retained theorem selecting that physical boundary function and normalization. Repair target: Cite or derive the missing physical-selection bridge, or remove the canonical environment identification and present the result solely as evaluation of a stipulated integral. Claim boundary until fixed: The two numerical methods support the reported finite-box table and constructed-operator checks for the defined integral only."
 }

@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.84,
+  "load_bearing_score": 9.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -336,6 +336,6 @@
   },
   "runner_path": "scripts/frontier_bh_entropy_derived.py",
   "title": "Bekenstein-Hawking Entropy Finite-Lattice Companion",
-  "transitive_descendants": 80,
+  "transitive_descendants": 79,
   "verdict_rationale": null
 }

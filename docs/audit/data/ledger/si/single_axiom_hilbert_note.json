@@ -15,8 +15,8 @@
   "claim_id": "single_axiom_hilbert_note",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "high",
@@ -36,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "ad65f3183c8d8ae1d9a206a0b688b04481f38eb40b96ce36f201b203cb09f191",
+  "note_hash": "579a044abd0af3625aac5901a28c9b34cab8ad2108a6272b785b26774f8cc620",
   "note_path": "docs/SINGLE_AXIOM_HILBERT_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -753,7 +753,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

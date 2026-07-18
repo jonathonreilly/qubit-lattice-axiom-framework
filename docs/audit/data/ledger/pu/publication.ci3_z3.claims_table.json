@@ -166,7 +166,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "58d7bcaa09506edd06497f520e516ac015324b48abae157afa97085d70ac6c12",
+  "note_hash": "54bd2539f10ace8e8f36f955e2bf6c1b84f63f7b0d52ed9e55a3b4f40f41b725",
   "note_path": "docs/publication/ci3_z3/CLAIMS_TABLE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

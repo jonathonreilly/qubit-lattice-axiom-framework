@@ -54,7 +54,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 11.894,
+  "load_bearing_score": 11.899,
   "load_bearing_step": "Rearranging the Koide cone as u^2 - 4(v+w)u + (v^2+w^2-4vw)=0 gives discriminant 12(v^2+4vw+w^2), hence roots u=2(v+w) \u00b1 sqrt(3(v^2+4vw+w^2)).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -115,6 +115,6 @@
   },
   "runner_path": "scripts/frontier_koide_cone_completing_root_narrow.py",
   "title": "Koide-Cone Completing-Root Narrow Theorem",
-  "transitive_descendants": 672,
+  "transitive_descendants": 674,
   "verdict_rationale": "Clean within the note's stated narrow algebra-only boundary. The load-bearing step is an elementary quadratic-formula identity, and the cached runner completes with nine class-A exact algebra checks covering the roots, cone identities, Vieta relations, ratio identity, and representative concrete cases. Residual risk is only downstream scope drift: this audit does not ratify any charged-lepton, sqrt-mass, selected-line, or physical-point identification."
 }

@@ -23,18 +23,18 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
-  "direct_in_degree": 8,
+  "direct_in_degree": 7,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.388,
+  "load_bearing_score": 13.885,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8f8c1a7c485d8068bf1a5a59bab630345ebb678e174857306d0dc2192580f64d",
+  "note_hash": "4933c69dfc48ac2a842a024f0c6f2c1b422d49c12700a518927729405d00474c",
   "note_path": "docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -1572,7 +1572,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -1582,6 +1582,6 @@
   },
   "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py",
   "title": "Clifford Volume-Element Chirality Forces Even Total Dimension Narrow Theorem",
-  "transitive_descendants": 1339,
+  "transitive_descendants": 1336,
   "verdict_rationale": null
 }

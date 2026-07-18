@@ -41,7 +41,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.439,
+  "load_bearing_score": 10.443,
   "load_bearing_step": "Direct multiplication of the supplied Y(delta) by its adjoint gives the displayed H_e entries, after which delta -> -delta is exactly entrywise complex conjugation.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -4143,6 +4143,6 @@
   },
   "runner_path": "scripts/frontier_dm_pmns_he_parity_repair.py",
   "title": "DM Leptogenesis PMNS Fixed-Chart Hermitian Block Parity Theorem",
-  "transitive_descendants": 693,
+  "transitive_descendants": 695,
   "verdict_rationale": "Issue: The displayed product and conjugation parity are correct, but the fixed-chart form of Y(delta) is supplied rather than derived from a cited authority. Why this blocks: The bounded matrix-algebra chain closes on that supplied chart, while framework-level chart or physical-carrier closure is not established. Repair target: Cite a retained theorem deriving the fixed chart before using this result for physical PMNS or leptogenesis conclusions. Claim boundary until fixed: Only the displayed H_e formula, conjugation parity, and conjugation-invariant even readouts on the explicitly supplied chart are supported."
 }

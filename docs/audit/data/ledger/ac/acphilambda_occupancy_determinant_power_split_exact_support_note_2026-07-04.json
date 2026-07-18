@@ -41,7 +41,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 6.085,
+  "load_bearing_score": 6.5,
   "load_bearing_step": "With the displayed Berezin ordering, the holomorphic Gaussian equals det_C(K), while det_R R(K) equals det_C(K) det_C(conjugate(K)) = |det_C(K)|^2.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "retained_no_go",
@@ -1155,6 +1155,6 @@
   },
   "runner_path": "scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py",
   "title": "Complex Determinant and Realification Determinant Power",
-  "transitive_descendants": 2,
+  "transitive_descendants": 3,
   "verdict_rationale": "The theorem is exact and self-contained. Direct multiplication gives S R(K) = diag(K, conjugate(K)) S with det(S) = (-2i)^n nonzero, so the determinant identity holds for singular as well as nonsingular K without imported physics. Independently, only permutation monomials survive in the top degree of exp(sum_ij K_ij chi_j chibar_i); the n! multiplicity cancels the factorial and reordering has sign sgn(permutation), yielding det_C(K), with an exhaustive independent sign check through n=8. Residual risk is limited to changing the explicitly stated Berezin convention; all physical charged-lepton carrier and occupancy identifications lie outside the audited scope."
 }

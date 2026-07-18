@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 23.181,
+  "load_bearing_score": 23.185,
   "load_bearing_step": "Schur matrix-element orthogonality gives the contraction integral chi_lambda(VW^-1) chi_mu(W) dW = delta_(lambda,mu) chi_mu(V)/d_mu, so the dimension factor in Z cancels and C_Z chi_mu = rho_mu chi_mu.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1336,6 +1336,6 @@
   },
   "runner_path": "scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py",
   "title": "SU(3) Character Diagonal Convolution Equivalence Narrow Theorem",
-  "transitive_descendants": 820,
+  "transitive_descendants": 822,
   "verdict_rationale": "The scoped mathematical theorem is correct, and the supplied runner performs genuine class-A symbolic and numerical checks rather than merely printing expected results. However, the mandatory clean-verdict discipline packet cannot be certified from the restricted evidence: the authenticated N5 rhetoric occurrences lack the required five resolution-prefixed current-cycle stdout lines and an independently evidenced N7 resolution. This is a certification-artifact condition, not a substantive defect in the SU(3) proof."
 }

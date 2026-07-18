@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 12.976,
+  "load_bearing_score": 12.959,
   "load_bearing_step": "Polarizing the supplied quadratic relation D(v)^2 = ||v||^2 I_K gives the Clifford anticommutation relations, from which irreducibility, formal-# CAR, and the spin phase follow algebraically.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1739,6 +1739,6 @@
   },
   "runner_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
   "title": "Planck Target 3 Conditional Clifford Carrier Algebra",
-  "transitive_descendants": 88,
+  "transitive_descendants": 87,
   "verdict_rationale": "The runner performs substantive matrix, span-rank, commutant, CAR, similarity, spin-phase, and trace checks rather than merely printing expected results, and those checks support the note's finite algebra. The load-bearing implication is nevertheless conditioned on a supplied metric-compatible coframe response for which no cited authority is provided. The note correctly excludes ambient-adjoint CAR, substrate forcing, and physical-unit conclusions, so those exclusions do not broaden the audited claim."
 }

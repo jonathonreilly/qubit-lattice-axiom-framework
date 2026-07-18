@@ -39,19 +39,19 @@
   "claim_type_author_hint_raw": "positive_theorem",
   "claim_type_last_reviewed": "2026-07-12",
   "claim_type_provenance": "audited",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 2,
   "effective_status": "retained",
   "effective_status_reason": "self",
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 5.5,
+  "load_bearing_score": 6.585,
   "load_bearing_step": "Pf(A_K)=(-1)^(n(n-1)/2) det_C(K), while congruence of A_K and the inverse Berezin Jacobian preserve the oriented Gaussian value under invertible coordinate changes.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "retained_no_go",
@@ -128,6 +128,6 @@
   },
   "runner_path": "scripts/acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12.py",
   "title": "Fermionic Realification and Pfaffian Determinant Power",
-  "transitive_descendants": 1,
+  "transitive_descendants": 2,
   "verdict_rationale": "All load-bearing formulas close as exact finite-dimensional algebra, including signs and measure orientation, for singular as well as invertible K where applicable. Manual permutation and top-form derivations independently reproduce the runner, whose SHA-pinned cache reports 32 algebraic checks. Physical carrier and charged-lepton applications remain separate from this finite theorem domain."
 }

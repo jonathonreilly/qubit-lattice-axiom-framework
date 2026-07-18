@@ -63,11 +63,11 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 11.951,
+  "load_bearing_score": 11.954,
   "load_bearing_step": "Direct substitution gives \u03b2(g/c,N)=2N/(g/c)^2=2Nc^2/g^2=c^2\u03b2(g,N).",
   "load_bearing_step_class": "A",
-  "max_descendant_status": "unknown",
-  "max_descendant_status_rank": 70,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
   "note_hash": "a8fb8bff35dc5bd2c474a4d489632f65aebcb6678f2d93a9693e8a3e65ddc44d",
   "note_path": "docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md",
   "notes_for_re_audit_if_any": "Re-check T3 domain wording: over Q, arbitrary positive \u03b20 need not have a rational square root, so the clean reading is the stated on-image fiber/injectivity claim.",
@@ -84,6 +84,6 @@
   },
   "runner_path": "scripts/frontier_beta_gbare_rescaling_abstract_identity_narrow.py",
   "title": "\u03b2\u2013g_bare Rescaling Abstract Identity Narrow Theorem",
-  "transitive_descendants": 989,
+  "transitive_descendants": 991,
   "verdict_rationale": "The load-bearing step is a genuine class A algebraic identity over the stated variables, with no cited upstream authority or physical import needed. The runner source actually computes the symbolic residuals with sympy and exact rational checks rather than merely printing expected results. The note\u2019s Wilson, Cl(3), SU(Nc), and g_bare language is explicitly non-load-bearing for this narrow claim."
 }

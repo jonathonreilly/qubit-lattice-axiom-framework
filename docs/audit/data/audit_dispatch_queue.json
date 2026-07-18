@@ -94,7 +94,7 @@
       "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "queue_order": 2,
       "ready": false,
-      "ready_blocker": "blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:unaudited,abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18:unaudited,clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10:unaudited,no_per_site_chirality_theorem_note_2026-05-02:unaudited,staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07:unaudited",
+      "ready_blocker": "blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:audited_conditional,abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18:unaudited,clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10:unaudited,no_per_site_chirality_theorem_note_2026-05-02:unaudited,staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07:unaudited",
       "runner_path": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py",
       "source_json_path": "docs/audit/data/anomaly_forces_time_reaudit_queue_2026-06-21.json",
       "source_schema": "promotion_reaudit_queue.v1",
@@ -646,9 +646,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_renaming",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audited_renaming",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1435,7 +1435,9 @@
       "generated_order": 1,
       "group_id": "local_clifford_algebra",
       "group_order": 1,
-      "helper_runner_paths": [],
+      "helper_runner_paths": [
+        "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
+      ],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
@@ -2983,9 +2985,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_conditional",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audited_conditional",
       "audit_question": "Useful finite coefficient table, but intentionally finite-box support; reconsider later only if finite tables are accepted as scoped positive theorems.",
       "claim_id": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
       "expected_current_audit_status": "audited_clean",

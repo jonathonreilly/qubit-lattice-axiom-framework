@@ -63,7 +63,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 11.903,
+  "load_bearing_score": 11.907,
   "load_bearing_step": "Using the path-origin convention P_h|_{h=0}=P_0, R'_0(i)=dp_i/p_i, so s_i=dp_i/p_i and E_0[s^2]=sum_i dp_i^2/p_i; the exponential normalizer W(h)=log E_0 exp(hO) gives origin score O when E_0[O]=0.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -84,6 +84,6 @@
   },
   "runner_path": "scripts/audit_companion_sharp_record_fisher_tangent_space_2026_06_06.py",
   "title": "Sharp-Record Fisher Tangent Space Narrow Theorem Note",
-  "transitive_descendants": 676,
+  "transitive_descendants": 678,
   "verdict_rationale": "The independent formula inventory checks the RN score identity, Fisher quadratic form, exponential-chart normalization and derivative, and the two-outcome epsilon arithmetic directly from finite probability definitions. The runner source performs symbolic finite-probability checks rather than importing fitted values or hard-coding a contested physical premise. The claim is narrow and explicitly excludes the broader physical source, closure, and Standard Model matching assertions, so the audited theorem closes as standard finite probability geometry."
 }

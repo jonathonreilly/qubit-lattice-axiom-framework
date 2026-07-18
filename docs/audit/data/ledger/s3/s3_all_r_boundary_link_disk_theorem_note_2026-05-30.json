@@ -39,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8497338ebdfe017cb1cf7bf0ba83e5d5adee6d02585c127287ee87259ebc2630",
+  "note_hash": "81d33e3c72053e554b80177ebe1e499293bc4043a5439b744df589c8ce52c561",
   "note_path": "docs/S3_ALL_R_BOUNDARY_LINK_DISK_THEOREM_NOTE_2026-05-30.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -111,7 +111,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

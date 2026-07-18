@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_failed",
-  "load_bearing_score": 13.571,
+  "load_bearing_score": 13.574,
   "load_bearing_step": "The matched two-loop transfer map T_2 is independently integrated and grid-certified on D, while the center-point difference T_2-T_1 is quoted as a conservative truncation envelope.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -294,6 +294,6 @@
   },
   "runner_path": "scripts/frontier_qcd_low_energy_running_bridge.py",
   "title": "QCD `v -> M_Z` Running Transfer-Map Kernel Theorem: domain-scoped, boundary-value-free",
-  "transitive_descendants": 1075,
+  "transitive_descendants": 1077,
   "verdict_rationale": "The exact T_1 formula and several discrete numerical checks are genuinely computed rather than merely printed. However, the T_2 implementation is inconsistent with the claimed flavor-threshold-matched full two-loop RGE, and the one-loop inequality b0(5)>b0(6) does not by itself derive the asserted bracket for the coupled two-loop flow. Calling the observed one-to-two-loop shift a truncation envelope further overstates what the runner establishes, so K1-K5 do not close as a package."
 }

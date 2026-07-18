@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/bounded_additive_on_interval_linearity_rebuilt_2026_07_18.py
+runner_sha256: d9eb7bdc81b21ddad7efdd184bf6010d6bcf18c2ab93860fe5e07e1797c6052d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+PASS: S1a G(0)=2G(0) forces G(0)=0
+PASS: S1b the additive pair to zero gives G(-u)=-G(u)
+PASS: S1c integer iteration gives G(nu)=nG(u) (n=3 elimination)
+PASS: S1d rational scaling G((2/5)u)=(2/5)G(u) by combining integers
+PASS: S2a the centered value decomposes exactly as G(w+a)-G(a)
+PASS: S2b triangle bound via the exact square identity plus sign patterns
+PASS: S3-n1 exact residual identity and window membership
+PASS: S3-n2 exact residual identity and window membership
+PASS: S3-n3 exact residual identity and window membership
+PASS: S3-n4 exact residual identity and window membership
+PASS: S3e the sandwich elimination isolates G(u)-(r/n)G(1) as tail/n
+PASS: S4a the bound c/n has exact limit zero
+PASS: S4b the contradiction witness n > c/X gives c/n < X exactly
+PASS: R1 rejector: with L=0 the sandwich bound has no 1/n decay
+PASS: N1 target identifier, statement, and step labels
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

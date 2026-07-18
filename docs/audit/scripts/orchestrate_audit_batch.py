@@ -446,16 +446,21 @@ def launch_worker(
     }
 
 
-PROGRESS = {"t0": None, "last": 0.0, "interval_sec": 900, "report": None, "remaining": None}
+PROGRESS = {
+    "t0": None, "last": 0.0, "interval_sec": 900,
+    "report": None, "round_targets": None, "jobs": None,
+}
+_TICKER_STARTED = False
 
 
 def maybe_progress_summary(jobs: list[dict] | None = None, force: bool = False) -> None:
     """Print a one-block session summary at most every 15 minutes.
 
-    Interpretation-free: outcome counts come straight from the session
-    report entries, active workers from live process state. Console output
-    only — nothing tracked is written, so cadence cannot perturb any
-    artifact.
+    Interpretation-free and inert: outcome counts come straight from the
+    session report entries, and worker liveness is read from the
+    `returncode` field that wait_workers maintains — this function touches
+    no process object and mutates nothing but PROGRESS. Console output
+    only, so cadence cannot perturb any tracked artifact.
     """
     now = time.monotonic()
     if PROGRESS["t0"] is None:
@@ -470,8 +475,8 @@ def maybe_progress_summary(jobs: list[dict] | None = None, force: bool = False) 
     counts = Counter(str(entry.get("result")) for entry in entries)
     outcomes = ", ".join(f"{key} x{val}" for key, val in counts.most_common(8))
     active = []
-    for job in jobs or []:
-        if job.get("returncode") is None and job["proc"].poll() is None:
+    for job in jobs if jobs is not None else (PROGRESS.get("jobs") or []):
+        if job.get("returncode") is None:
             minutes = int((now - job.get("started", now)) // 60)
             active.append(f"{job['row']['claim_id']}#p{job.get('pass', '?')}({minutes}m)")
     elapsed = int((now - PROGRESS["t0"]) // 60)
@@ -481,18 +486,36 @@ def maybe_progress_summary(jobs: list[dict] | None = None, force: bool = False) 
         f"active workers: {len(active)}"
         + (f" [{', '.join(active[:8])}]" if active else ""),
     ]
-    if PROGRESS.get("remaining") is not None:
-        parts.append(f"dep-ready remaining this round: {PROGRESS['remaining']}")
+    if PROGRESS.get("round_targets") is not None:
+        parts.append(f"dep-ready at round start: {PROGRESS['round_targets']}")
     print("; ".join(parts), flush=True)
+
+
+def start_progress_ticker() -> None:
+    """Daemon thread giving the 15-minute cadence full-session coverage,
+    including the long serialized apply/pipeline/lint/push phases where the
+    main thread is busy. Print-only; idempotent."""
+    global _TICKER_STARTED
+    if _TICKER_STARTED:
+        return
+    _TICKER_STARTED = True
+    import threading
+
+    def _loop() -> None:
+        while True:
+            time.sleep(max(1.0, PROGRESS["interval_sec"] / 30))
+            maybe_progress_summary()
+
+    threading.Thread(target=_loop, daemon=True, name="drain-progress").start()
 
 
 def wait_workers(jobs: list[dict], stall_minutes: int = 45) -> None:
     pending = set(range(len(jobs)))
     stall_seconds = stall_minutes * 60
+    PROGRESS["jobs"] = jobs
     try:
         while pending:
             now = time.monotonic()
-            maybe_progress_summary(jobs)
             for index in list(pending):
                 job = jobs[index]
                 job.setdefault("started", now)
@@ -529,6 +552,7 @@ def wait_workers(jobs: list[dict], stall_minutes: int = 45) -> None:
             job["returncode"] = job["proc"].wait()
         raise
     finally:
+        PROGRESS["jobs"] = None
         for job in jobs:
             if not job["log_handle"].closed:
                 job["log_handle"].close()
@@ -1039,6 +1063,7 @@ def main() -> int:
     parser.add_argument("--push-retries", type=int, default=3)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
+    PROGRESS["dry_run"] = bool(args.dry_run)
     if (
         args.max_workers < 1
         or args.rounds < 1
@@ -1104,8 +1129,10 @@ def main() -> int:
         scope.difference_update(session_skipped)
         targets, skipped = compute_targets(scope, rows, retarget=retarget)
         print(f"== round {round_no}: {len(targets)} dep-ready targets, {len(skipped)} skipped")
-        PROGRESS["remaining"] = len(targets)
+        PROGRESS["round_targets"] = len(targets)
         maybe_progress_summary(force=(round_no == 1))
+        if round_no == 1 and not args.dry_run:
+            start_progress_ticker()
         for line in skipped:
             print(f"   skip: {line}")
         missing = [line for line in skipped if line.endswith("missing ledger row")]
@@ -1186,7 +1213,6 @@ def main() -> int:
                 report.append({"cid": cid, "result": "judicial_panel_required"})
             break
 
-    maybe_progress_summary(force=True)
     print("== batch report ==")
     for item in report:
         pass_label = f" p{item['pass']}" if "pass" in item else ""
@@ -1202,4 +1228,10 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    finally:
+        # Forced final summary on EVERY exit path (normal completion, early
+        # returns, exceptions) except dry-run and pre-baseline aborts.
+        if PROGRESS.get("t0") is not None and not PROGRESS.get("dry_run"):
+            maybe_progress_summary(force=True)

@@ -209,13 +209,20 @@ the invoker. The default session is:
    `python3 docs/audit/scripts/orchestrate_judicial_panel.py`
    (this reseats any disagreement whose recorded seats are unrecoverable —
    see the reseat contract below — and panels the validly-seated rest).
-3. Drain the development tier in parallel:
-   `python3 docs/audit/scripts/orchestrate_audit_batch.py --lane <dispatch
-   lane> --max-workers 4` (raise toward 6 only in a quiet pool per the
-   budget below), and repeat while the queue has ready rows and budget
-   remains. Reseated rows from step 2 re-enter here and finish.
-4. Run the forensic tier as a single canary (rule below), never in the
-   parallel lane.
+3. Drain the development tier in parallel with
+   `python3 docs/audit/scripts/orchestrate_audit_batch.py --lane <name>
+   --max-workers 4` (raise toward 6 only in a quiet pool per the budget
+   below). Default scope rule — no invoker judgment required: use the
+   owner-named lane if one was given; otherwise iterate the lanes of
+   `docs/audit/data/lane_certification_config.json` in listed order,
+   starting from the first lane whose entry in the generated
+   `docs/audit/data/lane_certification.json` reports blocking rows.
+   Reseated rows from step 2 re-enter through whichever lane closure
+   contains them.
+4. Repeat steps 2-3 until a full pass lands nothing new (fresh
+   disagreements surfaced by step 3 get their panel on the next pass),
+   then run the forensic tier as a single canary (rule below), never in
+   the parallel lane.
 
 The single-claim manual procedure later in this skill remains the special
 case for targeted rows; it is not the default.
@@ -226,10 +233,12 @@ While a session is running, the operator surface gets a summary block at
 least every 15 minutes — never silence for a long run.
 
 - The batch drainer emits its own `== drain summary` block on that cadence
-  (elapsed time, outcome counts straight from the session report, active
-  worker seats with per-seat runtimes, dep-ready rows remaining this
-  round). Relay these to the operator surface as they appear; do not
-  re-derive or editorialize the numbers.
+  for the whole session — a background print-only ticker covers the long
+  serialized apply/pipeline/lint/push phases too (elapsed time, outcome
+  counts straight from the session report, live worker seats with per-seat
+  runtimes, and the dep-ready count as of the current round's start). Relay
+  these to the operator surface as they appear; do not re-derive or
+  editorialize the numbers.
 - During phases the drainer does not cover — judicial panels, reseats, the
   forensic canary, setup/pipeline waits — the orchestrator composes the
   same cadence manually: elapsed session time, verdicts landed this session
@@ -285,18 +294,22 @@ with zero landings.
 
 **Seat-blocked judicial rows are reseated, never frozen and never retried
 as recorded.** A disagreement whose recorded seats lack invocation-bound
-full rationales can never finish through a panel, so the panel orchestrator
-resolves it instead of burning launches on it, via this ladder: (1) envelope
-backfill (`backfill_cross_seat_rationales.py`) when the original seat
-envelopes still exist; (2) otherwise RESEAT — archive the broken seats into
-`previous_audits` with full provenance and the recorded reseat reason, and
-reopen the row as `unaudited` for fresh two-seat cross-confirmation under
-the rationale-preserving apply contract (the orchestrator does this by
-default; `--no-reseat` reports instead). Fresh seats that agree land the
-row; a fresh disagreement reaches a panel whose packet is now valid. Either
-way the audit finishes — no toggle, no memo, no standing freeze. Reseats
-persist through the same per-claim gate ladder as verdicts (pipeline, strict
-lint, serialized commit, race-retried push) and mint nothing.
+full rationales can never finish through a panel. When the original seat
+delivery envelopes still exist on disk, the gentler operator option is
+envelope backfill (`backfill_cross_seat_rationales.py` with the delivery
+directories) run before the panel session. The panel orchestrator's own
+automatic behavior on any still-blocked row is RESEAT — archive the broken
+seats into `previous_audits` with full provenance and the recorded reseat
+reason, and reopen the row as `unaudited` for fresh two-seat
+cross-confirmation under the rationale-preserving apply contract
+(`--no-reseat` reports instead). The reseated row re-enters the normal
+development-tier lane: fresh seats that agree land it there; a fresh
+disagreement returns to judicial work on the NEXT panel pass with valid
+rationales (the default entry loops panels-then-drainer until a pass lands
+nothing new). No toggle, no memo, no standing freeze. Reseats persist
+through the same per-claim gate ladder as verdicts (pipeline, strict lint,
+serialized commit, race-retried push), mint nothing, and any reseat
+failure exits nonzero.
 
 **Apply-gate rejections are data.** When a finished audit is rejected at the
 apply gate (decoration/claim-type mismatch or any compatibility error),

@@ -106,3 +106,19 @@ class ReseatMutationTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ReseatOutcomeShapeTest(unittest.TestCase):
+    def test_gate_failures_return_outcome_dicts_and_ok_set(self):
+        from unittest import mock
+
+        import orchestrate_judicial_panel as panel
+
+        with mock.patch.object(panel, "restore_preapply_state", lambda: None):
+            outcome = panel._reseat_failure("row_x", "reseat_pipeline_failed", "boom")
+        self.assertIsInstance(outcome, dict)
+        self.assertEqual(outcome["cid"], "row_x")
+        self.assertEqual(outcome["result"], "reseat_pipeline_failed")
+        self.assertNotIn(outcome["result"], panel.RESEAT_OK_RESULTS)
+        for ok in ("reseated", "resolved", "recovered"):
+            self.assertIn(ok, panel.RESEAT_OK_RESULTS)

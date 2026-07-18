@@ -227,22 +227,55 @@ no topology decisions required from the invoker.
    conflict touching only `docs/audit/data/citation_graph_manifest.json`
    is resolved by regenerating it from the landed tree
    (`build_citation_graph.py` then `write_citation_graph_manifest.py`),
-   never by hand-merge. The fail-closed landing loop is, exactly:
+   never by hand-merge; a manifest regeneration touches only that generated
+   acknowledgment surface, so it needs no new reviewer round — any OTHER
+   conflict fails the landing closed and returns the PR to its worker for
+   re-review on a rebased head. Generated-output restoration is a
+   COMMIT-time rule (see the audit-compatibility gate), not a landing-time
+   step: the commits being landed are already clean. The fail-closed
+   landing loop is, exactly:
    ```bash
-   for i in 1 2 3 4; do
-     git cherry-pick --abort 2>/dev/null || true
-     git fetch -q origin
-     git checkout -q --detach origin/main
-     if git cherry-pick <commits-oldest-first>; then
-       git checkout -q -- docs/audit/data docs/publication 2>/dev/null || true
-       if git push origin HEAD:main; then echo LANDED; break; fi
+   COMMITS=(<oldest-sha> ... <newest-sha>)  # the PR's commits, oldest first
+   landed=""
+   for attempt in 1 2 3 4; do
+     git cherry-pick --abort >/dev/null 2>&1 || true
+     if ! { git fetch -q origin && git checkout -q --detach origin/main; }; then
+       sleep 3; continue
+     fi
+     if ! git cherry-pick "${COMMITS[@]}" >/dev/null 2>&1; then
+       conflicts="$(git diff --name-only --diff-filter=U)"
+       if [ "$conflicts" != "docs/audit/data/citation_graph_manifest.json" ]; then
+         git cherry-pick --abort >/dev/null 2>&1 || true
+         echo "FAILED: source conflict; return the PR to its worker" >&2
+         exit 1
+       fi
+       if ! { python3 docs/audit/scripts/build_citation_graph.py >/dev/null \
+              && python3 docs/audit/scripts/write_citation_graph_manifest.py >/dev/null \
+              && git add docs/audit/data/citation_graph_manifest.json \
+              && GIT_EDITOR=true git cherry-pick --continue >/dev/null; }; then
+         sleep 3; continue
+       fi
+     fi
+     if git push -q origin HEAD:main; then
+       landed="$(git rev-parse HEAD)"
+       break
      fi
      sleep 3
    done
+   if [ -z "$landed" ]; then
+     echo "FAILED: landing did not complete after 4 attempts" >&2
+     exit 1
+   fi
+   git fetch -q origin
+   if ! git merge-base --is-ancestor "$landed" origin/main; then
+     echo "FAILED: $landed not contained in origin/main" >&2
+     exit 1
+   fi
+   echo "LANDED $landed"
    ```
-   Everything conditioned — never a stray `;` before the push (a failed
-   cherry-pick would then push a no-op reported as landed). Verify after:
-   `git fetch && git branch -r --contains <landed-sha> | grep origin/main`.
+   Every step is conditioned; push success captures the landed sha; retry
+   exhaustion and non-containment both exit nonzero — the loop can never
+   report success without the landed sha verified inside `origin/main`.
 6. **Who may kick it off: any orchestrator** — any Claude tier, a codex
    session, or a human. The orchestration is process: every finding and
    every PASS/FAIL verdict comes from the configured reviewer model's seats,

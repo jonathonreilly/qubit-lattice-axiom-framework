@@ -213,10 +213,17 @@ no topology decisions required from the invoker.
    throughput from 6-11 landed verdicts/hour to ~1 every 3 hours). When the
    audit drain is running at 4+ seats, run at most 2-3 concurrent PR
    reviewers; scale up only in a quiet pool.
-5. **Fixes and landings serialize.** Apply Fix Policy fixes per PR as its
-   round returns; a focused confirmation round follows each fix pass. Land
-   ONE PR at a time through the fail-closed cherry-pick loop, re-fetching
-   `origin/main` before every landing.
+5. **Each worker lands its own PR, end to end.** Fix Policy fixes, the
+   focused confirmation round, the landing, and the close-with-provenance
+   are all the final steps of that PR's own worker — never a separate
+   lander and never turn-taking. Workers land the moment their
+   confirmation passes: `origin/main`'s push atomicity is the only
+   serializer, and a lost push race costs seconds (re-fetch, re-cherry-pick
+   through the fail-closed loop, re-push, generated outputs restored). A
+   conflict touching only `docs/audit/data/citation_graph_manifest.json`
+   is resolved by regenerating it from the landed tree
+   (`build_citation_graph.py` then `write_citation_graph_manifest.py`),
+   never by hand-merge.
 6. **Who may kick it off: any orchestrator** — any Claude tier, a codex
    session, or a human. The orchestration is process: every finding and
    every PASS/FAIL verdict comes from the configured reviewer model's seats,

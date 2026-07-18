@@ -16,7 +16,8 @@ basis) — simultaneously realizes:
       R preserves V and acts on the ordered character basis as the cyclic
       generator (regular Z/3 action);
   K5  consumed-scope text checks (AC_lambda out-of-scope disclaimer;
-      momentum-type transitivity; species-reduction R4/R5 boundaries);
+      finite translation-character distinctness/transitivity;
+      species-reduction R4/R5 boundaries);
   K6  negative control: hw=2 is a distinct orbit, not blurred into V.
 
 No check passes by literal stipulation. Expected: PASS=N FAIL=0.
@@ -32,7 +33,7 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 AC_LAMBDA_PATH = DOCS / "STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md"
-MOMENTUM_TYPE_PATH = DOCS / "FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md"
+TRANSLATION_CHARACTER_PATH = DOCS / "FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md"
 SPECIES_REDUCTION_PATH = DOCS / "STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md"
 HAMMING_PATH = DOCS / "STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md"
 
@@ -205,23 +206,23 @@ def main() -> int:
         "make **no** claim that the framework's hw=1 carrier on the physical lattice substrate IS this 3-dim complex space"
         in ac,
     )
-    mom = flat(MOMENTUM_TYPE_PATH.read_text(encoding="utf-8"))
+    character_note = flat(TRANSLATION_CHARACTER_PATH.read_text(encoding="utf-8"))
     sc.check(
-        "momentum-type note records distinct joint translation characters on the three hw=1 corners",
-        "the three `hw=1` corners have distinct joint translation characters" in mom,
+        "finite translation-character note records three distinct supplied hw=1 characters",
+        "contains three distinct joint characters" in character_note,
     )
     sc.check(
-        "momentum-type note records the transitive C_3 permutation",
-        "permutes them transitively" in mom,
+        "finite translation-character note records the transitive C_3 action",
+        "coordinate cycle acts transitively on `K_1`" in character_note,
     )
     spr = flat(SPECIES_REDUCTION_PATH.read_text(encoding="utf-8"))
     sc.check(
-        "species-reduction (R4) boundary verbatim: taste factor not forced",
-        "is **not** forced by the cited upstream" in spr,
+        "species-reduction (R4) records the exact four-copy defined-module decomposition",
+        "that defined 16-dimensional module is exactly four copies" in spr,
     )
     sc.check(
-        "species-reduction (R5) boundary verbatim: reduction realization not derived",
-        "is **not** the same as a derivation that the framework's specific staggered-Dirac realization implements"
+        "species-reduction (R5) keeps the copy index outside physical roles",
+        "(R4) does not turn either copy index into a taste, species, generation, field, or physical carrier"
         in spr,
     )
     ham = flat(HAMMING_PATH.read_text(encoding="utf-8"))

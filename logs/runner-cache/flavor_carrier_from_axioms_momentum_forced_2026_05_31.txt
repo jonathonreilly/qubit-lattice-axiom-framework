@@ -1,57 +1,49 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py
-runner_sha256: e654af41615fb763bbfa9ae50bdf911dfd741f974d10e6fe836a7c07d98b5fc5
+runner_sha256: 85d76015914d4e7ff2918d29313f1a30fe7bd9e4c7a05db544962251825ce7a0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.54
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 [PASS] A1 the 3 hw=1 corners carry DISTINCT joint translation characters (-1,1,1),(1,-1,1),(1,1,-1)
        characters = [(1, 1, -1), (1, -1, 1), (-1, 1, 1)] (joint spectrum of commuting T_x,T_y,T_z)
 [PASS] A2 C_3[111] axis-shift acts transitively on the hw=1 triplet (a single 3-orbit)
        R-permutation = [2, 0, 1]
-[PASS] A3 carrier lands on MOMENTUM, not position: local per-site obs identical across gens; momentum-block separates
-       local <P_site0>=[0.125, 0.125, 0.125] (blind); momentum <P_k0>=[1.0, 0.0, 0.0] (separates)
-[PASS] A4 the extensive Gamma_5=(-1)^(x+y+z) position index sum_x epsilon(x) = 0 (bulk total, disqualified as carrier)
-       sum_x (-1)^(x+y+z) = 0 over the 8-site torus
-[PASS] B1 naive/first-order |D|^2=sum sin^2(k) zero locus = ALL 8 corners, Hamming-graded (1,3,3,1) -- NOT just hw=1
-       zeros=8, Hamming multiplicities [1, 3, 3, 1] -> hw=1 is one C_3 orbit, but not singled out by the dispersion alone
-[PASS] B2 COUNTERFACTUAL: a Wilson/2nd-difference operator puts its massless mode at hw=0 (staircase 0,2r,4r,6r), NOT hw=1
-       Wilson mass by hw = {0:0, 1:2, 2:4, 3:6} -> hw=1 selection needs the first-order CHIRAL (staggered/KS) operator = the import
+[PASS] A3 supplied hw=1 characters have uniform site profiles and projector row delta_(k0,k)
+       <P_site0>=[0.125, 0.125, 0.125]; <P_k0>=[1.0, 0.0, 0.0]
+[PASS] B1 naive/first-order |D|^2=sum sin^2(k) has all 8 corners as zeros with grading (1,3,3,1)
+       zeros=8, Hamming multiplicities [1, 3, 3, 1]
+[PASS] B2 displayed Wilson/2nd-difference comparison has staircase (0,2r,4r,6r)
+       Wilson mass by hw = {0:0, 1:2, 2:4, 3:6} on this supplied comparison operator
 [PASS] C1 delta=L_3(1,2)=2/9 (equivariant-eta/Atiyah-Bott density), distinct from the bare doublet character omega+omega^2=-1
        L_3(1,2)=0.222222; bare char=-1.0
 [PASS] D1 derive Q(F)=Tr(F^2)/Tr(F)^2 = 1/3 + (2/3)|b|^2/a^2 from F=aI+b(J-I)
        Tr F=3*a_sym, Tr F^2=3*a_sym**2 + 6*b_sym**2, Q=(a_sym**2 + 2*b_sym**2)/(3*a_sym**2)
 [PASS] D2 basepoint r=|b|^2/a^2 is FREE: r=1/2->Q=2/3, r=1->Q=1; unconstrained by corner kinematics
        discrete pole/corner structure fixes delta=2/9 only; the continuous Yukawa modulus r is a separate input
-[PASS] E0 parent source declares open_gate conditional integration map, not bounded theorem
-       source metadata demotes combined parent to open integration map
-[PASS] E1 parent note records 2026-06-18 parent-boundary repair
-       source-side repair section present
-[PASS] E2 parent delegates clean Layer-A carrier-type theorem to the 2026-06-15 split
-       downstream Layer-A citations should use the split note
-[PASS] E3 parent remains the combined conditional packet
-       locus/basepoint/readout stay inside the conditional parent
-[PASS] E4 parent is not standalone physical generation-carrier closure
-       full physical carrier closure stays open
-[PASS] E5 parent names the re-audit condition before full-package reuse
-       full-package recheck requires locus/r/readout closure
-[PASS] E6 split note boundary excludes hw=1/r/readout closure
-       split theorem remains clean Layer A only
+[PASS] E0 parent source declares the canonical open_gate author hint
+       source metadata keeps the combined parent open
+[PASS] E1 parent note records the 2026-07-18 positive-scope repair
+       source-side narrowing section present
+[PASS] E2 parent delegates exact finite character formulas to the 2026-06-15 theorem
+       the historical path now carries a positive finite theorem
+[PASS] E3 parent keeps physical locus, r, and readout identification outside the finite theorem
+       physical integrations remain open
+[PASS] E4 parent assigns no physical interpretation to the finite equalities
+       finite algebra and physical interpretation remain distinct
+[PASS] E5 comparison formulas are conditional-route context rather than route exhaustion
+       the parent makes no alternative-route foreclosure
+[PASS] E6 finite theorem states positive_theorem scope and its authority limit
+       finite theorem remains an abstract positive construction
 
-SCORECARD PASS=16 FAIL=0
-VERDICT: conditional_parent_with_clean_layer_a_split. LAYER A (carrier TYPE = momentum, not position) is
-FORCED from framework baseline: [H_dyn,T_mu]=0 + spectral theorem => basis-independent BZ decomposition; local
-observables generation-blind; flavor-separating observables are momentum-block (corner) operators;
-the extensive Gamma_5 position index vanishes. This is the genuine advance -- the position-vs-
-momentum carrier question is dissolved as a theorem of A2. The clean Layer-A citation target is
-FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15. This parent remains
-the combined conditional packet. LAYER B (which LOCUS = hw=1 triplet) is
-NOT forced by framework baseline: the dispersion zero locus is all 8 corners and a Wilson operator prefers hw=0;
-the hw=1 C_3 triplet needs the staggered/Kawamoto-Smit first-order CHIRAL operator (single-mode
-Grassmann + {epsilon,D}=0) -- a genuine import that aligns with the framework's named
-generation-ID / Koide-Q=2/3 chirality gate family. This is gate alignment, not closure of
-the physical generation bridge. BASEPOINT r=1/2 and the readout class remain separate inputs.
+SCORECARD PASS=15 FAIL=0
+SUMMARY: Layer A is the exact finite translation-character profile/projector construction.
+The supplied hw=1 characters have uniform 1/8 profiles, distinct joint characters, a transitive
+C_3 orbit, and the displayed Kronecker projector row. These equalities assign no physical role.
+Layer B records one conditional staggered/Kawamoto-Smit route and two finite operator comparisons;
+it does not exhaust physical routes or select the supplied hw=1 subset as a physical generation locus.
+BASEPOINT r=1/2 and the density/readout identification remain separate open inputs.
 Sources: STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md
 (BlockT1 + {epsilon,D}=0), KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md,
 and KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md.

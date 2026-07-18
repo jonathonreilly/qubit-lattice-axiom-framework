@@ -82,10 +82,11 @@ this note.
 - **Generation carrier = hw=1 `C3` regular-rep orbit.**
   [`CL3_TASTE_GENERATION_THEOREM.md`](CL3_TASTE_GENERATION_THEOREM.md) (the hw=1 sector `{e1,e2,e3}` transforms as the
   `S3` permutation rep `A_1 + E`, with the `Z3` cycle `e1 -> e2 -> e3 -> e1`), and
-  [`FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md`](FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md) (the carrier *type* is
-  the BZ momentum factor, constrained from the lattice + locality; the hw=1 *locus* is
-  the framework's recurring chiral operator-class import). These supply the carrier
-  as the readout surface; their open gates are not closed here.
+  [`FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md`](FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md)
+  (the exact finite translation-character profiles, distinct `hw=1`
+  characters, transitive `C3` orbit, and Kronecker projector matrix). These
+  facts describe the supplied finite readout surface. Physical generation-locus
+  and readout identification remain separate open inputs.
 - **Record axiom (durable realized-outcome registration).**
   [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) (Record): given a readout context with a finite
   central-sector decomposition and a fixed `K`/CPT conjugation, a record names

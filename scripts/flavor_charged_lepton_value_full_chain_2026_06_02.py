@@ -10,7 +10,7 @@ LINK -> source/dependency anchor (status checked before landing, not set by this
  L2 raw equal-time tensor locality      : lieb_robinson_equal_time_tensor_locality
  L3 abstract hw=1 C_3 triplet algebra   : three_generation_observable_theorem (+_count_corollary,
                                           _m3c_burnside, _no_proper_quotient)
- L4 label separation on supplied carrier: flavor_carrier_momentum_type_from_translation
+ L4 distinct supplied translation characters: flavor_carrier_momentum_type_from_translation
  L5 abstract C_3-equivariant circulant H=aI+bC+conj(b)C^2
  L6 exact Q=1/3+(2/3)r                  : koide_kappa_block_total_frobenius_algebraic /
                                           koide_kappa_spectrum_operator_bridge
@@ -60,7 +60,7 @@ def main():
     passed.append(check("L3 abstract hw=1 carrier: BZ corners form a 3-element C_3 orbit; eig(C)={1,w,w^2} [three_generation_observable]",
                         len(hw1) == 3 and np.allclose(np.sort(np.linalg.eigvals(C)), np.sort([1, w, w ** 2]))))
 
-    # L4 momentum-TYPE forced: distinct translation characters on the 3 corners
+    # L4 positive finite input: distinct translation characters on the 3 corners.
     chars = [tuple(-1 if ki else 1 for ki in k) for k in hw1]
     passed.append(check("L4 supplied-carrier labels: the 3 corners carry distinct translation characters [flavor_carrier_momentum_type_from_translation]",
                         len(set(chars)) == 3))

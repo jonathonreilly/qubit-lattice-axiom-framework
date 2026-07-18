@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_dirac_common_hw1_bz_corner_carrier_identification_2026_07_05.py
-runner_sha256: e34f450f6743f9b5b74e47f0190453c73611b8c576e6e64e24b99a75e31a1c0f
+runner_sha256: b5572535031690202896db06ace0e65e95235a1d801e2ed485a836baba31e1ec
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 === common hw=1 BZ-corner carrier identification ===
@@ -40,10 +40,10 @@ status: ok
 [K5] consumed-scope text checks
 
   PASS  AC_lambda note's own out-of-scope disclaimer present (the gap this bridge closes)
-  PASS  momentum-type note records distinct joint translation characters on the three hw=1 corners
-  PASS  momentum-type note records the transitive C_3 permutation
-  PASS  species-reduction (R4) boundary verbatim: taste factor not forced
-  PASS  species-reduction (R5) boundary verbatim: reduction realization not derived
+  PASS  finite translation-character note records three distinct supplied hw=1 characters
+  PASS  finite translation-character note records the transitive C_3 action
+  PASS  species-reduction (R4) records the exact four-copy defined-module decomposition
+  PASS  species-reduction (R5) keeps the copy index outside physical roles
   PASS  Hamming note supplies the abstract grading (1, 3, 3, 1)
 
 [K6] negative control

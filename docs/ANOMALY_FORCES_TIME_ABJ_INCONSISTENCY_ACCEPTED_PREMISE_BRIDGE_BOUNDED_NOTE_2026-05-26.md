@@ -138,33 +138,32 @@ exact conditional consequence over these named edges, but it is not a
 retained derivation of full physical hypercharge, matter completion, P-ABJ,
 or P-REC.
 
-## P-COMP arithmetic split (2026-06-18)
+## Declared P-COMP surface: algebra-only use (2026-06-18)
 
-The source-side support note
+The abstract source note
 [`ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md`](ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md)
-isolates the exact finite algebra inside the declared P-COMP witness.
-On the scale-free left-handed surface
+is used here only for this algebraic implication after the declared P-COMP
+premise supplies every physical slot, its opposite-chirality assignment, every
+sign and multiplicity, and `n = 0`.
+Writing the resulting supplied polynomial system as
 
 ```text
-Q_L : (2,3)_a,      L_L : (2,1)_(-3a),      a != 0,
+a - (x+y)/2 = 0,
+-(3x+3y+z+n) = 0,
+-48a^3 - (3x^3+3y^3+z^3+n^3) = 0,
+n = 0,      a != 0,
 ```
 
-it proves that, once the opposite-chirality SU(2)-singlet completion
-template with two color-triplet singlet slots, one charged colorless
-singlet slot, and one neutral colorless singlet slot is supplied,
-anomaly cancellation forces the completion charges
+the source theorem proves
 
 ```text
-{4a, -2a, -6a, 0}
+z = -6a,      xy = -8a^2,      {x,y} = {4a,-2a}
 ```
 
-up to swapping the two color-triplet singlet labels. At `a = 1/3` this
-is the `(4/3, -2/3, -2, 0)` witness used in (B3). This narrows P-COMP:
-the arithmetic and absolute normalization are not the residual. The
-remaining residual is the physical existence/minimality of that
-opposite-chirality singlet completion surface, including the neutral
-singlet, from framework-native structure. This split does not derive
-P-HY, P-ABJ, full P-COMP, P-REC, or B-AXIS.
+up to exchanging `x` and `y`. The declared P-COMP premise is the sole source
+of the physical interpretation in this bridge; the abstract theorem does not
+supply that physical surface, identify species, or prove completion
+minimality. It also does not derive P-HY, P-ABJ, P-REC, or B-AXIS.
 
 
 ## P-REC spin/taste core split (2026-06-18)
@@ -216,7 +215,7 @@ load-bearing reason the anomaly traces are nonzero.
 |---|---|---|---|
 | (B1) | Three formal traces are nonzero (`Tr[Y_a^3] = -48 a^3`, `Tr[SU(3)^2 Y_a] = a`, `Tr[SU(3)^3] = 2`, specializing at `a=1/3` to `-16/9`, `1/3`, `2`) | Explicit formal packet + scale-free arithmetic core above; P-HY remains the declared premise that this formal abelian direction is the anomaly-relevant physical gauged U(1) | no |
 | (B2) | A chiral gauge theory with nonzero anomaly traces fails to close as a unitary quantum field theory | (P1) accepted-premise packet entry | no |
-| (B3) | Adding SU(2)-singlet right-handed completion with `(y_1, y_2, y_3, y_4) = (4a, -2a, -6a, 0)` cancels all anomaly traces, specializing at `a=1/3` to `(4/3, -2/3, -2, 0)` | Declared P-COMP completion premise; scale-free completion branch is exact algebraic witness, not derived completion authority; the P-COMP classifier above splits the arithmetic from the remaining completion-shape premise | no |
+| (B3) | Adding SU(2)-singlet right-handed completion with `(y_1, y_2, y_3, y_4) = (4a, -2a, -6a, 0)` cancels all anomaly traces, specializing at `a=1/3` to `(4/3, -2/3, -2, 0)` | Declared P-COMP completion premise supplies the physical surface; the abstract source note proves only the resulting supplied-system algebra | no |
 | (B4) | The SU(2)-singlet RH completion is chirally distinct from LH doublets; the blocked spin/taste core supplies a taste-singlet spin-Clifford `gamma_5`, and under the remaining physical P-REC premise that spin `gamma_5` is the chirality used by the anomaly-carrying gauge representation | Retained `NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02` rules per-site Cl(3); retained-bounded `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07` carries the staggered carrier; `ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18` supplies the finite spin/taste Clifford core; full physical P-REC remains declared | no |
 | (B5) | `gamma_5` involution + anticommutation forces total dimension `d = d_s + d_t` to be even | Retained `CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10` (sister narrow theorem) | no |
 | (B6) | With `d_s = 3` (Z^3 substrate), `d_t` must be a positive odd integer: `d_t in {1, 3, 5, ...}` | Retained `NATIVE_GAUGE_CLOSURE_NOTE` (Cl(3)/Z^3); subtraction in `Z` | no |
@@ -337,8 +336,8 @@ registered.
   convention from the load-bearing anomaly arithmetic. It does not
   derive P-HY, P-COMP, P-ABJ, or P-REC.
 - [`ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md`](ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md)
-  — splits the exact singlet-completion arithmetic from the remaining
-  physical completion-surface premise.
+  — classifies only the explicit finite polynomial system supplied after this
+  bridge's declared P-COMP premise; it is not physical completion authority.
 - [`CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md)
   — supplies the retained-grade narrow theorem that `gamma_5`
   existence forces `d = d_s + d_t` even (used in step (B5)).

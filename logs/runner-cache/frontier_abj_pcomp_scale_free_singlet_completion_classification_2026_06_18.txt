@@ -1,74 +1,97 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py
-runner_sha256: 502da3a16e58ff4a86e448946ab3bec2da14829e83cb976774b4ba6409a3a3ee
+runner_sha256: ab9af62d4fd224385c18abca195dad68a54f225ca2aa006d8f053da9b21ecd56
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py
 
-== Part 0: source firewall ==
-PASS: note contains marker: **Actual current surface status:** bounded-support / exact condition
-PASS: note contains marker: does not set or predict an audit outcome
-PASS: note contains marker: a != 0
-PASS: note contains marker: {x, y, z, n} = {4a, -2a, -6a, 0}
-PASS: note contains marker: At the existing `a = 1/3` normalization
-PASS: note contains marker: If the neutral singlet condition `n = 0` is removed, uniqueness fail
-PASS: note contains marker: does not derive full `P-COMP`
-PASS: note contains marker: does not consume PDG values
-PASS: note contains marker: scripts/frontier_abj_pcomp_scale_free_singlet_completion_classificat
-PASS: note avoids overclaim phrase: audited_clean
-PASS: note avoids overclaim phrase: effective retained
-PASS: note avoids overclaim phrase: full `P-COMP` is derived
-PASS: note avoids overclaim phrase: this derives `P-HY`
-PASS: note avoids overclaim phrase: this derives `P-ABJ`
-PASS: note avoids overclaim phrase: this derives `P-REC`
-PASS: note avoids overclaim phrase: this derives `B-AXIS`
-PASS: ABJ bridge has source-side pointer to this P-COMP classification
-PASS: ABJ bridge still states it does not derive P-HY, P-ABJ, full P-COMP, P-REC, or B-AXIS
+== Part 0: B-class source and dependency firewalls ==
+PASS: B-class note marker: **Claim type:** positive_theorem
+PASS: B-class note marker: does not set or predict an audit outcome
+PASS: B-class note marker: a, x, y, z, n in R
+PASS: B-class note marker: with `a != 0`
+PASS: B-class note marker: additional hypothesis `n = 0`
+PASS: B-class note marker: E_mix = a - (x + y)/2 = 0
+PASS: B-class note marker: E_lin = -(3x + 3y + z + n) = 0
+PASS: B-class note marker: E_cub = -48a^3 - (3x^3 + 3y^3 + z^3 + n^3) = 0
+PASS: B-class note marker: n = 0.                                                  (4)
+PASS: B-class note marker: xy = -8a^2
+PASS: B-class note marker: {x, y} = {4a, -2a}
+PASS: B-class note marker: exact implication and classification of the supplied finite algebraic sy
+PASS: B-class note marker: supplies no physical realization, species identification
+PASS: B-class note marker: historical filename and claim ID are preserved for graph stability
+PASS: B-class note marker: scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_
+PASS: B-class note excludes counterfactual section
+PASS: B-class note excludes what-this-moves section
+PASS: B-class note excludes P-COMP source claim
+PASS: B-class note excludes named left-handed species
+PASS: B-class note excludes named completion species
+PASS: B-class note excludes physical color-triplet slots
+PASS: B-class note excludes Standard Model identification
+PASS: B-class note excludes physical completion surface
+PASS: B-class note excludes opposite-chirality physical template
+PASS: B-class note excludes removed nonuniqueness conclusion
+PASS: B-class note excludes removed family conclusion
+PASS: B-class note excludes removed missing-slot conclusion
+PASS: B-class note excludes removed cancellation impossibility
+PASS: B-class note excludes removed nonselection conclusion
+PASS: B-class note excludes conditional-status rhetoric
+PASS: B-class note excludes audit outcome claim
+PASS: B-class dependent boundary: Declared P-COMP completion premise
+PASS: B-class dependent boundary: is used here only for this algebraic implication
+PASS: B-class dependent boundary: supplies every physical slot, its opposite-chirality assignment, every s
+PASS: B-class dependent boundary: does not supply that physical surface
 
-== Part 1: scale-free LH anomaly traces ==
-PASS: Tr[Y]_LH = 0 (0)
-PASS: Tr[Y^3]_LH = -48 a^3 (-48*a**3)
-PASS: Tr[SU(3)^2 Y]_LH = a (a)
-PASS: Tr[SU(2)^2 Y]_LH = 0 (0)
-PASS: Tr[SU(3)^3]_LH = 2 (2)
-PASS: sample a=1/3: cubic trace matches -48a^3
-PASS: sample a=2/5: cubic trace matches -48a^3
-PASS: sample a=-1/2: cubic trace matches -48a^3
+== Part 1: B-class supplied-surface encoding ==
+PASS: B-class E_mix coefficient of a is +1
+PASS: B-class E_mix coefficients of x,y are -1/2
+PASS: B-class E_lin multiplicities of x,y are signed -3
+PASS: B-class E_lin multiplicities of z,n are signed -1
+PASS: B-class E_cub coefficient of a^3 is -48
+PASS: B-class E_cub multiplicities of x^3,y^3 are signed -3
+PASS: B-class E_cub multiplicities of z^3,n^3 are signed -1
+PASS: B-class supplied neutral residual is exactly n
 
-== Part 2: exact singlet-completion classification ==
-PASS: mixed color anomaly gives x + y = 2a
-PASS: linear anomaly with n=0 gives z = -6a
-PASS: cubic equation reduces to 3(x^3+y^3)-168a^3=0 (0)
-PASS: product xy forced to -8a^2 ([-8*a**2])
-PASS: quadratic factors as (t-4a)(t+2a) ((-4*a + t)*(2*a + t))
-PASS: roots are {-2a, 4a} ([-2*a, 4*a])
-PASS: direct solve at a=1/3 gives swapped SM-scale pair ({(-2/3, 4/3, -2), (4/3, -2/3, -2)})
-PASS: direct solve at a=2/5 gives swapped SM-scale pair ({(8/5, -4/5, -12/5), (-4/5, 8/5, -12/5)})
-PASS: direct solve at a=7/4 gives swapped SM-scale pair ({(-7/2, 7, -21/2), (7, -7/2, -21/2)})
+== Part 2: A-class exact implication and classification ==
+PASS: A-class E_mix=0 forces x+y=2a (2*a)
+PASS: A-class E_lin=0 with n=0 forces z=-6a (-6*a)
+PASS: A-class cubic substitution has the stated signs (168*a**3 - 3*x**3 - 3*y**3)
+PASS: A-class E_cub=0 forces x^3+y^3=56a^3
+PASS: A-class symmetric-polynomial identity is exact
+PASS: A-class a is explicitly nonzero before division
+PASS: A-class product xy is forced to -8a^2 ([-8*a**2])
+PASS: A-class root polynomial has correct sum and product
+PASS: A-class factorization is exact ((-4*a + t)*(2*a + t))
+PASS: A-class roots are exactly {-2a,4a} ([-2*a, 4*a])
+PASS: A-class label exchange preserves sum
+PASS: A-class label exchange preserves product
 
-== Part 3: full anomaly cancellation checks ==
-PASS: a=1/3, branch=(Fraction(4, 3), Fraction(-2, 3), Fraction(-2, 1), Fraction(0, 1)): all anomaly traces cancel ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
-PASS: a=1/3, branch=(Fraction(-2, 3), Fraction(4, 3), Fraction(-2, 1), Fraction(0, 1)): all anomaly traces cancel ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
-PASS: a=2/5, branch=(Fraction(8, 5), Fraction(-4, 5), Fraction(-12, 5), Fraction(0, 1)): all anomaly traces cancel ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
-PASS: a=2/5, branch=(Fraction(-4, 5), Fraction(8, 5), Fraction(-12, 5), Fraction(0, 1)): all anomaly traces cancel ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
-PASS: a=7/4, branch=(Fraction(7, 1), Fraction(-7, 2), Fraction(-21, 2), Fraction(0, 1)): all anomaly traces cancel ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
-PASS: a=7/4, branch=(Fraction(-7, 2), Fraction(7, 1), Fraction(-21, 2), Fraction(0, 1)): all anomaly traces cancel ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
-PASS: a=1/3 gives standard witness exactly ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
+== Part 3: A-class symbolic converse and exact cancellation ==
+PASS: A-class branch 1 satisfies supplied equation 1 (0)
+PASS: A-class branch 1 satisfies supplied equation 2 (0)
+PASS: A-class branch 1 satisfies supplied equation 3 (0)
+PASS: A-class branch 1 satisfies supplied equation 4 (0)
+PASS: A-class branch 2 satisfies supplied equation 1 (0)
+PASS: A-class branch 2 satisfies supplied equation 2 (0)
+PASS: A-class branch 2 satisfies supplied equation 3 (0)
+PASS: A-class branch 2 satisfies supplied equation 4 (0)
+PASS: A-class wrong sign z=+6a is rejected by E_lin (-12*a)
+PASS: A-class wrong x,y sign is rejected by E_mix (-2*a)
+PASS: A-class wrong root pair is rejected by E_cub (90*a**3)
 
-== Part 4: counterfactuals expose remaining P-COMP residuals ==
-PASS: without n=0, cubic leaves q-p=8a^2 relation
-PASS: a=1/3: non-neutral counterexample also cancels anomalies ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
-PASS: a=1/3: counterexample has no neutral singlet (n=-4/3)
-PASS: a=2/5: non-neutral counterexample also cancels anomalies ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
-PASS: a=2/5: counterexample has no neutral singlet (n=-8/5)
-PASS: one RH color triplet would leave SU(3)^3 residual 1
-PASS: two RH color triplets cancel SU(3)^3 by slot count
+== Part 4: A-class exact rational sample checks ==
+PASS: A-class a=1/3, branch 1: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
+PASS: A-class a=1/3, branch 2: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
+PASS: A-class a=2/5, branch 1: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
+PASS: A-class a=2/5, branch 2: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
+PASS: A-class a=-1/2, branch 1: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
+PASS: A-class a=-1/2, branch 2: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
 
-TOTAL: PASS=49 FAIL=0
-VERDICT: bounded-support exact P-COMP singlet-completion classification.
+TOTAL: PASS=72 FAIL=0
+VERDICT: exact positive theorem over the supplied finite algebraic system.
 
 ----- stderr -----
 

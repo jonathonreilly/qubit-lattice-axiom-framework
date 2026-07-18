@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py
-runner_sha256: 1359799bb51b8c94ad2e6910731437592b43c8f8cbe22906e71f4ef3b806d220
+runner_sha256: 075dd32a359505addab8b4b98d24b01195bf2bdbf3c978cbb4552b2ed767e437
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 9.17
+elapsed_sec: 8.62
 status: ok
 ----- stdout -----
 
@@ -90,18 +90,21 @@ Narrow theorem summary
     (T4)  R is positive, self-adjoint (in the Schur-orthonormal character basis),
           and commutes with the conjugation swap (p,q) <-> (q,p).
 
-  Load-bearing step class:
-    (A) - pure finite-dim SU(3) representation theory on an abstract real
-    coefficient sequence. No Wilson action, no unmarked spatial environment,
-    no beta = 6 framework-point input, no identification with the parent
-    plaquette environment operator R_beta^env.
+  INPUT AND AUTHORITY SURFACE:
+    The complete input is the finite B_4 SU(3) character basis, normalized
+    Haar probability measure, an abstract real nonnegative swap-symmetric
+    sequence with rho_(0,0) = 1, and standard compact-group representation
+    algebra.
 
-  This narrow theorem isolates the abstract algebraic equivalence between
-  diagonal-coefficient operators and convolution-by-central-class-function
-  operators on the finite SU(3) B_4 character truncation. It does NOT close the
-  parent gate. The remaining physical-Wilson-coefficient derivation is
-  separately addressed by the bounded companion
-  GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.
+  OUTPUT SURFACE:
+    T1 Schur orthogonality; T2 equality of normalized convolution and diagonal
+    action on V_4; T3 coefficient uniqueness; T4 positivity,
+    self-adjointness, and swap symmetry.
+
+  PARENT PROGRAM DIVISION OF LABOR:
+    A physical Wilson-environment coefficient result supplies the sequence
+    with its own source authority. This theorem supplies the algebraic
+    convolution/diagonal equivalence after that typed input is present.
 
 
 ========================================================================================

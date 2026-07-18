@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_z2_hw1_mass_matrix_parametrization.py
-runner_sha256: 7ea1669f32bb5f3ee27de2b7cd096508a1a02a29f5f992105a39a4c5ec3d9cb5
+runner_sha256: 3a2e7aaf825c059b8f9a451941399c733174ed06b514a43ae843cebc363f65d9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 ========================================================================
@@ -66,10 +66,11 @@ PART 6: Positive supplied-representation scope firewall
 ========================================================================
   [PASS] the source note excludes parameter-nonselection/no-go conclusions  (violations = [])
   [PASS] the source note keeps hw=1 and X_i as supplied representation labels
-  [PASS] hostile prose mutation restoring parameter-nonselection is rejected
+  [PASS] all equivalent hostile parameter-nonselection mutations are rejected
+  [PASS] authority-limit prose is not misclassified as a no-go conclusion
 
 ========================================================================
-TOTAL: PASS=33, FAIL=0
+TOTAL: PASS=34, FAIL=0
 ========================================================================
 
 ----- stderr -----

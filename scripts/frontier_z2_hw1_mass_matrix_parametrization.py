@@ -50,7 +50,15 @@ def rejected_scope_phrases(text: str) -> list[str]:
         r"forces\s+at\s+most\s+two\s+spectral\s+values",
         r"does\s+not\s+select\s+(?:either\s+)?(?:real\s+)?parameters?",
         r"(?:symmetry|invariance)\s+cannot\s+select",
+        r"(?:symmetry|invariance)\s+(?:does\s+not|fails?\s+to)\s+"
+        r"(?:determine|fix|select)",
+        r"(?:symmetry|invariance)\s+leaves?\s+(?:both|the)\s+"
+        r"(?:remaining\s+)?(?:real\s+)?parameters?\s+free",
         r"uniqueness\s+cannot\s+follow",
+        r"(?:parameter\s+)?uniqueness\s+does\s+not\s+follow",
+        r"no\s+unique\s+(?:parameter\s+)?(?:choice|point)\s+follows",
+        r"(?:representation|symmetry|invariance)\s+fixes?\s+neither\s+"
+        r"(?:remaining\s+)?(?:real\s+)?parameter",
         r"no\s+(?:mass\s+)?selector\s+exists",
         r"additional\s+physics\s+cannot\s+choose",
     )
@@ -464,15 +472,29 @@ def part6_positive_scope_firewall() -> None:
         "`x_i` and `hw=1` are explicitly supplied representation labels" in normalized,
     )
 
-    hostile_mutation = (
-        note_text
-        + "\nThus exact full-S_3 invariance "
-        + "forces at most two spectral values; it "
-        + "does not select either real parameter.\n"
+    hostile_mutations = (
+        "Thus exact full-S_3 invariance forces at most two spectral values; "
+        "it does not select either real parameter.",
+        "Full-S_3 invariance leaves both real parameters free.",
+        "Symmetry does not determine a unique point in the two-parameter locus.",
+        "The symmetry fails to select parameter values.",
+        "No unique parameter choice follows from this invariance.",
+        "Parameter uniqueness does not follow from the representation.",
+        "The representation fixes neither remaining real parameter.",
     )
     check(
-        "hostile prose mutation restoring parameter-nonselection is rejected",
-        bool(rejected_scope_phrases(hostile_mutation)),
+        "all equivalent hostile parameter-nonselection mutations are rejected",
+        all(rejected_scope_phrases(note_text + "\n" + mutation) for mutation in hostile_mutations),
+    )
+
+    authority_limit_controls = (
+        "This note supplies no physical carrier identification.",
+        "Any physical mass application must separately establish the carrier.",
+        "Selector theorems lie outside this note's authority.",
+    )
+    check(
+        "authority-limit prose is not misclassified as a no-go conclusion",
+        not any(rejected_scope_phrases(control) for control in authority_limit_controls),
     )
 
 

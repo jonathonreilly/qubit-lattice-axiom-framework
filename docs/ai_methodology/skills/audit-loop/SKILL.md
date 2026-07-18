@@ -245,9 +245,10 @@ least every 15 minutes — never silence for a long run.
   by type, attempts and failures with the top failure reasons verbatim,
   panel/reseat/canary state, and the current ready-row count from the audit
   queue.
-- Every session ends with a final forced summary plus the standard batch
-  report; a session that stops early still reports what landed, what
-  failed, and what remains.
+- Every session ends with a final forced summary; a session that reaches
+  the round loop's natural end also prints the standard batch report, and
+  one that stops early still reports what landed, what failed, and what
+  remains through that forced summary.
 
 ## Scaling: The One Canonical Fan-Out
 

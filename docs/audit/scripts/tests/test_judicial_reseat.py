@@ -104,9 +104,6 @@ class ReseatMutationTest(unittest.TestCase):
         self.assertEqual(len(new_row["previous_audits"]), 1)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class ReseatOutcomeShapeTest(unittest.TestCase):
     def test_gate_failures_return_outcome_dicts_and_ok_set(self):
@@ -122,3 +119,6 @@ class ReseatOutcomeShapeTest(unittest.TestCase):
         self.assertNotIn(outcome["result"], panel.RESEAT_OK_RESULTS)
         for ok in ("reseated", "resolved", "recovered"):
             self.assertIn(ok, panel.RESEAT_OK_RESULTS)
+
+if __name__ == "__main__":
+    unittest.main()

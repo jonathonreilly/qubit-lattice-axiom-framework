@@ -1434,6 +1434,59 @@
         "total_pass": 21
       },
       "verdict_rationale": "The central positive-type expansion and ensuing operator construction are self-contained, and the runner genuinely computes 21 algebraic or finite-case support checks without importing an external comparator or hard-coding the contested conclusion. However, a two-slice kernel form alone does not prove that the resulting SU(N) operator cannot equal a one-slice multiplication placement, and the runner's S3 counterexample lies outside the stated SU(N) domain. Under the development-tier N1\u2013N8 judgment, N1/N7 leave that SU(N) discriminator untested, N2 isolates this single wall, N3/N5 classify the remaining negative clauses as scope firewalls, N4 provides no retained prior witness, and N6/N8 provide no applicable premise or cross-cycle result closing the gap."
+    },
+    {
+      "archived_at": "2026-07-18T03:27:28.698310+00:00",
+      "audit_date": "2026-07-18T03:27:15.369401+00:00",
+      "audit_invocation_history": [
+        "0ba6a320678a44a2a49fb4e225707923"
+      ],
+      "audit_invocation_id": "0ba6a320678a44a2a49fb4e225707923",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 26.245,
+        "runner_hash": "75a5135ee1509542ca1db2311b475dd81826322df0a56b562c2103f5f084502a",
+        "transitive_descendants": 857
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-drain-ready-20260717-327c322f8ec94a65a74aa46abb7575db-gauge_vacuum_plaquette_t-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The character-expansion, gauge-projector, trace, source-insertion, and SU(3) recurrence arguments close analytically. The asserted general one-slice nonrepresentability does not: the only discriminator is an S3 finite-group witness, not a proof within the claimed SU(N) carrier class.",
+      "claim_scope": "Finite-volume SU(N) Wilson transfer positivity, periodic trace and marked-source formulas, the SU(3) character recurrence, and mixed-source one-slice nonrepresentability.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-18T03:27:15.369401+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The nonnegative character expansion of w_beta makes Q_beta positive and yields T_beta=(Q_beta^(1/2) M_beta)^*(Q_beta^(1/2) M_beta)>=0.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after adding an SU(N)-internal analytic nonrepresentability proof or narrowing the negative statement to the finite S3 support witness.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 14,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The runner genuinely computes its 21 reported checks, but explicitly labels all of them support and supplies only one finite S3 multiplication-fit counterexample for the contested negative boundary. That counterexample cannot establish the stated general SU(N) nonrepresentability, although it does support the two-slice source grammar. Under N1-N8, there is no exhaustive alternative-route test, independent wall analysis, hidden-premise and rhetoric resolution audit, matched residual witness, complete partial-closure and cross-cycle disposition, or independently resolved steelman for that negative assertion."
     }
   ],
   "prose_corrections": [],

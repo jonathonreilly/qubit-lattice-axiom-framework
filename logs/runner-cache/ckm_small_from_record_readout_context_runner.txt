@@ -1,24 +1,26 @@
 ===== runner cache v1 =====
 runner: scripts/ckm_small_from_record_readout_context_runner.py
-runner_sha256: 135b159e36cd518dc2b94d20595cd81bdb8786f0564ca51879bab1674d1e6eeb
+runner_sha256: 246e350b7da9476ebdea2d888eb1eff2052a305c6658286e3d42b9b9afc71d85
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================
 SMALL CKM vs LARGE PMNS as readout-context misalignment (conditional)  [class A]
 ========================================================================
-  [PASS] both CIRCULANT (shared C3) -> CKM is a PERMUTATION (|V| in {0,1}) [retained no-go]
-  [PASS] aligned mass eigenbases (U_up=U_dn=I) -> CKM = IDENTITY permutation (refines the no-go to the identity)
+  [PASS] both CIRCULANT (shared C3) -> CKM is a PERMUTATION (|V| in {0,1})
+  [PASS] aligned mass eigenbases (U_up=U_dn=I) -> CKM = IDENTITY permutation
   [PASS] small registered deviation -> SMALL Cabibbo CKM (near identity)  (|V_us|^2=0.0498)
-  [PASS] CKM has NO trimaximal column (structural opposite of PMNS)
-  [PASS] C3-structured neutrino vs corner-basis charged lepton -> PMNS has a TRIMAXIMAL column  (col=[2])
-  [PASS] PMNS is LARGE (off-diagonal O(1)), unlike CKM
-  [PASS] FAILED GROUNDING: a POSITION-local observable is GENERATION-BLIND (identical expectation on each MOMENTUM generation) -> corner(momentum) basis is NOT the local basis; the detection grounding is refuted  (<P_pos> per momentum generation = [0.333, 0.333, 0.333])
+  [PASS] CKM trimaximal-column count equals zero on the displayed matrix
+  [PASS] simple-spectrum Hermitian circulant neutrino matrix -> full C3 character eigenbasis  (trimaximal_cols=[0, 1, 2])
+  [PASS] PMNS squared-modulus matrix is exactly the uniform 1/3 profile numerically
+  [PASS] FINITE PROFILE: every supplied Fourier character has coordinate-projector expectation 1/3  (<P_0>=[0.333, 0.333, 0.333])
 ========================================================================
 TOTAL: PASS=7 FAIL=0
-VERDICT: small-CKM-vs-large-PMNS maps to readout-context misalignment (CONDITIONAL on the ungrounded posit: quark masses corner-diagonal, neutrino C3-structured). The detection/localization grounding is REFUTED -- the corner basis is momentum, and the local per-site observable is generation-blind.
+SUMMARY: small-CKM-vs-large-PMNS maps to a supplied readout-context misalignment
+(conditional on aligned quark bases and a C3-structured neutrino basis).
+The finite Fourier-profile equality is exact and carries no physical basis assignment.
 
 ----- stderr -----
 

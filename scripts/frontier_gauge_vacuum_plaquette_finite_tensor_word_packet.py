@@ -2,8 +2,8 @@
 """Gauge-vacuum plaquette finite tensor-word packet — bounded source-note runner.
 
 Verifies docs/GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md
-on the truncated NMAX = 4 weight box at MODE_MAX = 80 Wilson Bessel mode
-sum, beta = 6:
+on the truncated NMAX = 4 weight box at MODE_MAX = 80 Bessel modes and
+stipulated parameter x = 2:
 
   (P1) nonnegativity of tensor_word matrix entries
   (P2) conjugation-swap symmetry of tensor_word
@@ -21,8 +21,8 @@ The construction is:
   N_fbar    = SU(3) anti-fundamental fusion-multiplicity matrix on the box
   tensor_word = diag_c · (N_f + N_fbar) · diag_c · (N_f + N_fbar)^T · diag_c
 
-where c_(p,q)(6) is computed via Schur-Weyl Bessel-determinant truncated
-to MODE_MAX = 80 modes (matching the Wilson-environment companion
+where c_(p,q)(x=2) is computed via a Schur-Weyl Bessel determinant truncated
+to MODE_MAX = 80 modes (matching the stipulated-integral companion
 GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09).
 
 This is a split note following prior audit feedback on the parent
@@ -32,7 +32,7 @@ between the constructed matrix and actual spatial-environment boundary
 amplitudes is NOT claimed here.
 
 Imports: numpy + scipy.special.iv (family convention; matches the
-Wilson-environment companion runner
+stipulated-integral companion runner
 frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py).
 """
 
@@ -76,7 +76,7 @@ def section(title: str) -> None:
     print("-" * 88)
 
 
-# Truncation parameters and physical inputs (match Wilson-environment companion)
+# Stipulated finite-evaluation parameters (match the companion integral).
 BETA = 6.0
 ARG = BETA / 3.0
 MODE_MAX = 80
@@ -87,7 +87,7 @@ NOTE_FLAT = re.sub(r"\s+", " ", NOTE_TEXT)
 
 
 # ---------------------------------------------------------------------------
-# Canonical truncated local Wilson coefficient (Schur-Weyl Bessel determinant)
+# Stipulated finite integral coefficient (Schur-Weyl Bessel determinant)
 # Matches companion frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute
 # ---------------------------------------------------------------------------
 def dim_su3(p: int, q: int) -> int:
@@ -107,7 +107,7 @@ def coefficient_matrix(mode: int, lam: list[int]) -> np.ndarray:
 
 
 def wilson_character_coefficient(p: int, q: int) -> float:
-    """c_(p,q)(beta) via Schur-Weyl Bessel-determinant, truncated to MODE_MAX modes."""
+    """c_(p,q)(x=2) via a Schur-Weyl Bessel determinant."""
     lam = highest_weight_triple(p, q)
     total = 0.0
     for mode in range(-MODE_MAX, MODE_MAX + 1):
@@ -126,7 +126,8 @@ def build_mult_matrices(nmax: int):
     """Build N_f and N_fbar matrices on the NMAX weight box.
 
     Standard SU(3) tensoring with fundamental (1,0) and anti-fundamental (0,1)
-    via the six-neighbor recurrence, restricted to (p, q) ∈ [0..nmax]² box.
+    via their respective three-neighbor Pieri recurrences, restricted to the
+    (p, q) ∈ [0..nmax]² box.
     """
     weights = weights_box(nmax)
     index = {w: i for i, w in enumerate(weights)}
@@ -164,7 +165,7 @@ def part1_note_structure():
         ("bounded status phrase",
          "finite truncated tensor-word packet only"),
         ("Claim section header", "## Claim"),
-        ("Bounded admissions section header", "## Bounded admissions"),
+        ("Bounded inputs section header", "## Bounded inputs"),
         ("Proof-Walk section header", "## Proof-Walk"),
         ("Dependencies section header", "## Dependencies"),
         ("Boundaries section header", "## Boundaries"),
@@ -174,16 +175,14 @@ def part1_note_structure():
         ("(P3) boundary nonneg stated", "(P3) **Nonnegative boundary amplitude"),
         ("(P3-corollary) S·boundary0=boundary0 derived from (P2)",
          "Derived corollary of (P2)"),
-        ("BA-1 truncated Wilson coefficients stated",
-         "(BA-1) **Canonical truncated local Wilson coefficients.**"),
-        ("BA-2 fusion multiplicities stated",
-         "(BA-2) **`SU(3)` fundamental and anti-fundamental fusion"),
+        ("I-1 stipulated finite integral coefficients stated",
+         "(I-1) **Stipulated finite integral coefficients.**"),
+        ("I-2 fusion multiplicities stated",
+         "(I-2) **`SU(3)` fundamental and anti-fundamental fusion"),
         ("parent-note cite: GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER",
          "GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md"),
         ("Wilson-environment companion cited (rho_pq6)",
          "GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09"),
-        ("MINIMAL_AXIOMS upstream cited",
-         "MINIMAL_AXIOMS_2026-05-03"),
         ("explicit not-claimed: parent's matrix-element identity",
          "claim the parent note's structural matrix-element identity"),
         ("explicit not-claimed: full untruncated case",
@@ -242,7 +241,6 @@ def part3_cited_upstreams():
     must_exist = [
         "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md",
         "docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
     ]
     for rel in must_exist:
         check(f"upstream exists: {rel}", (ROOT / rel).exists())
@@ -256,7 +254,7 @@ def part4_construct_and_verify_packet():
     nf, nfb, weights, index = build_mult_matrices(NMAX)
     swap = conjugation_swap_matrix(weights, index)
     print(f"  truncation: NMAX = {NMAX} (weight box [0..{NMAX}]^2 = {len(weights)} states)")
-    print(f"             MODE_MAX = {MODE_MAX} (Wilson Bessel mode sum)")
+    print(f"             MODE_MAX = {MODE_MAX} (Bessel mode sum)")
     print(f"             beta = {BETA}, beta/3 = {ARG}")
     print()
 
@@ -268,22 +266,22 @@ def part4_construct_and_verify_packet():
     c00 = coeffs[index[(0, 0)]]
     normalized = coeffs / (dims * c00)
 
-    # (BA-2) sanity checks: N_f and N_fbar entries in {0, 1}
+    # (I-2) sanity checks: N_f and N_fbar entries in {0, 1}
     nf_entries_ok = bool(np.min(nf) >= 0 and np.max(nf) <= 1)
     nfb_entries_ok = bool(np.min(nfb) >= 0 and np.max(nfb) <= 1)
-    check("(BA-2) N_f entries in {0, 1}", nf_entries_ok)
-    check("(BA-2) N_fbar entries in {0, 1}", nfb_entries_ok)
+    check("(I-2) N_f entries in {0, 1}", nf_entries_ok)
+    check("(I-2) N_fbar entries in {0, 1}", nfb_entries_ok)
 
-    # (BA-2) sanity checks: S · N_f = N_fbar · S (conjugation swap)
+    # (I-2) sanity checks: S · N_f = N_fbar · S (conjugation swap)
     nf_swap_diff = int(np.max(np.abs(swap @ nf - nfb @ swap)))
     nfb_swap_diff = int(np.max(np.abs(swap @ nfb - nf @ swap)))
     check(
-        "(BA-2) S · N_f = N_fbar · S (fundamental ↔ anti-fundamental conjugation)",
+        "(I-2) S · N_f = N_fbar · S (fundamental ↔ anti-fundamental conjugation)",
         nf_swap_diff == 0,
         f"max |S·N_f - N_fbar·S| = {nf_swap_diff}",
     )
     check(
-        "(BA-2) S · N_fbar = N_f · S (conjugation symmetry)",
+        "(I-2) S · N_fbar = N_f · S (conjugation symmetry)",
         nfb_swap_diff == 0,
         f"max |S·N_fbar - N_f·S| = {nfb_swap_diff}",
     )
@@ -291,9 +289,9 @@ def part4_construct_and_verify_packet():
     # Local Wilson coefficient sanity: c_(0,0)(6) > 0, normalized[(0,0)] = 1
     c00_pos = bool(c00 > 0)
     norm_00_one = bool(abs(normalized[index[(0, 0)]] - 1.0) < 1e-12)
-    check("(BA-1) c_(0,0)(6) > 0", c00_pos, f"c_(0,0)(6) = {c00:.6f}")
+    check("(I-1) c_(0,0)(x=2) > 0", c00_pos, f"c_(0,0)(2) = {c00:.6f}")
     check(
-        "(BA-1) normalized[(0,0)] = 1 (definition)",
+        "(I-1) normalized[(0,0)] = 1 (definition)",
         norm_00_one,
         f"normalized[(0,0)] = {normalized[index[(0, 0)]]:.15f}",
     )
@@ -303,7 +301,7 @@ def part4_construct_and_verify_packet():
         np.max(np.abs(normalized - normalized[[index[(q, p)] for p, q in weights]]))
     )
     check(
-        "(BA-1) c_(p,q)(6) = c_(q,p)(6) up to normalization (conjugation symmetry)",
+        "(I-1) c_(p,q)(2) = c_(q,p)(2) up to normalization (conjugation symmetry)",
         norm_swap_diff < 1e-12,
         f"max |normalized - swap·normalized| = {norm_swap_diff:.2e}",
     )
@@ -439,16 +437,16 @@ def part6_boundary_check():
         "split note for one finite tensor-word packet" in NOTE_TEXT,
     )
     check(
-        "(BA-1) and (BA-2) admitted as bounded textbook inputs",
-        "bounded inputs, not derived from the physical `Cl(3)`" in NOTE_TEXT,
+        "(I-1) and (I-2) are declared supplied mathematical inputs",
+        "No framework axiom" in NOTE_TEXT,
     )
 
 
 def main() -> int:
     banner("frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py")
-    print(" Bounded source note: one explicit positive matrix tensor_word,")
-    print(" constructed at NMAX = 4, MODE_MAX = 80, beta = 6 from canonical")
-    print(" truncated Wilson coefficients and SU(3) fusion multiplicities.")
+    print(" Bounded source note: one explicit nonnegative-entry matrix tensor_word,")
+    print(" constructed at NMAX = 4, MODE_MAX = 80, x = 2 from stipulated")
+    print(" finite integral coefficients and SU(3) fusion multiplicities.")
     print(" Verifies three load-bearing structural properties (P1)-(P3) at")
     print(" double precision, plus the (P3-corollary) consistency check that")
     print(" S·amp = amp follows from (P2) since S·boundary0 = boundary0.")
@@ -468,9 +466,9 @@ def main() -> int:
     print("=" * 88)
     if FAIL == 0:
         print()
-        print(" RESULT: one explicit positive matrix tensor_word constructed from")
-        print(" canonical truncated local Wilson coefficients (NMAX=4, MODE_MAX=80,")
-        print(" beta=6) and SU(3) fusion multiplicities verifies three load-bearing")
+        print(" RESULT: one explicit nonnegative-entry matrix tensor_word constructed from")
+        print(" stipulated finite integral coefficients (NMAX=4, MODE_MAX=80,")
+        print(" x=2) and SU(3) fusion multiplicities verifies three load-bearing")
         print(" structural properties at double precision: (P1) nonnegativity of")
         print(" matrix entries, (P2) conjugation-swap symmetry, (P3) nonnegative")
         print(" boundary amplitude under (0,0)-component unit-vector readout. The")

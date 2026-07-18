@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
-runner_sha256: 8fc61f5c6ee56390d364d73bd73387bd1bcd40ea902183ea4a54ddc9f2c0a371
+runner_sha256: a49ec81753651a9e0ab403a7a70f66777ade177250d003d3d2c716e2faad776c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 Plaquette beta=6 perturbative-derivation repaired diagnostic runner
@@ -61,6 +61,8 @@ PASS: M5 1-loop weak-coupling: <P> = 1 - (N^2-1)/(8 N^2) * 4/beta = 0.9259
       <P>_M5 = 0.925926
 PASS: equivalent: <P> = 1 - w_1/beta with w_1 = (N^2-1)/(2 N^2) = 4/9
       <P>_w1 = 0.925926, |diff| = 0.000e+00
+PASS: pin: plain one-loop value equals 25/27 = 0.925926 exactly
+      <P>_1loop = 0.925925926, 25/27 = 0.925925926
 PASS: 1-loop overshoots explicit runner-local MC comparator by ~56%
       gap = 0.3325, pct = 56.04%
 
@@ -92,6 +94,10 @@ T3: truncated perturbative series at beta=6 (explicit runner-local coefficient p
   best truncation: N*=16, <P>_PT(N*) = 0.919331, pct = 54.926%
 PASS: OBSTRUCTION: truncated series at beta=6 saturates at >40% gap from explicit runner-local comparator
       <P>_PT(N*=16) = 0.919331, explicit runner-local comparator = 0.5934, pct = 54.926%; residual exceeds 40% inside the explicit runner-local coefficient packet
+PASS: pin: <P>_PT(N=16) = 0.919331 to six decimals
+      <P>_PT(16) = 0.919330524
+PASS: pin: saturation |<P>_PT(N) - <P>_PT(16)| < 1e-4 for all N >= 6
+      matches the note's stated saturation window
   coefficient ratios w_(n+1)/w_n:
     n= 1 -> n+1= 2: ratio = 0.4569
     n= 2 -> n+1= 3: ratio = 0.8257
@@ -108,28 +114,40 @@ PASS: OBSTRUCTION: truncated series at beta=6 saturates at >40% gap from explici
     n=13 -> n+1=14: ratio = 1.7634
     n=14 -> n+1=15: ratio = 1.7843
     n=15 -> n+1=16: ratio = 1.8054
-PASS: scale diagnostic: coefficient ratios > 1.5 for n>=6
+PASS: scale diagnostic: every coefficient ratio > 1.5 for n>=6
       10/10 ratios exceed 1.5 starting at n=6
 
 ==============================================================================
-T4: tadpole-improvement signature over explicit runner-local packet
+T4: tadpole-substitution signature over explicit runner-local packet
 ==============================================================================
 PASS: u_0 = <P>_MC^(1/4) at explicit runner-local comparator gives u_0 = 0.87768
       u_0 = 0.877681
-  tadpole-improved self-consistent <P>_TI (4-loop) = 0.910624
-PASS: OBSTRUCTION: tadpole-improved self-consistent <P>_TI(4-loop) saturates >40% gap
+PASS: fixed-point iteration (N=4) converged
+      <P>_TI(4) = 0.910624025
+  self-consistent substitution <P>_TI (4-loop) = 0.910624
+PASS: OBSTRUCTION: self-consistent <P>_TI(4-loop) saturates >40% gap
       <P>_TI = 0.910624, explicit runner-local comparator = 0.5934, gap = +0.31722, pct = 53.459%
-  tadpole-improved self-consistent <P>_TI(N) for N=1..8:
-    N=1: <P>_TI = 0.919435, gap = +0.32604, pct = 54.944%
-    N=2: <P>_TI = 0.911997, gap = +0.31860, pct = 53.690%
-    N=3: <P>_TI = 0.910850, gap = +0.31745, pct = 53.497%
-    N=4: <P>_TI = 0.910624, gap = +0.31722, pct = 53.459%
-    N=5: <P>_TI = 0.910570, gap = +0.31717, pct = 53.450%
-    N=6: <P>_TI = 0.910555, gap = +0.31716, pct = 53.447%
-    N=7: <P>_TI = 0.910552, gap = +0.31715, pct = 53.446%
-    N=8: <P>_TI = 0.910550, gap = +0.31715, pct = 53.446%
-  best tadpole-improved truncation: N*=8, <P>_TI = 0.910550, pct = 53.446%
-PASS: OBSTRUCTION: best tadpole-improved truncation has |pct| > 40%
+  self-consistent substitution <P>_TI(N) for N=1..8:
+    N=1: <P>_TI = 0.919435, gap = +0.32604, pct = 54.944%, eq-residual = 7.55e-15
+    N=2: <P>_TI = 0.911997, gap = +0.31860, pct = 53.690%, eq-residual = 1.02e-14
+    N=3: <P>_TI = 0.910850, gap = +0.31745, pct = 53.497%, eq-residual = 6.88e-15
+    N=4: <P>_TI = 0.910624, gap = +0.31722, pct = 53.459%, eq-residual = 7.33e-15
+    N=5: <P>_TI = 0.910570, gap = +0.31717, pct = 53.450%, eq-residual = 7.44e-15
+    N=6: <P>_TI = 0.910555, gap = +0.31716, pct = 53.447%, eq-residual = 7.44e-15
+    N=7: <P>_TI = 0.910552, gap = +0.31715, pct = 53.446%, eq-residual = 7.55e-15
+    N=8: <P>_TI = 0.910550, gap = +0.31715, pct = 53.446%, eq-residual = 7.44e-15
+PASS: all fixed-point iterations N=1..8 converged (no silent last-iterate use)
+      every walk terminated by tolerance, not by iteration cap
+PASS: every reported value satisfies its fixed-point equation to 1e-9
+      max |P - series(N, beta*P)| = 1.02e-14
+PASS: branch scope: every selected fixed point exceeds 0.5 (high branch)
+      the diagnostic tracks only the weak-coupling branch from seed 0.5
+PASS: pin: <P>_TI(N=1) = 0.919435 to six decimals
+      <P>_TI(1) = 0.919435246
+PASS: pin: <P>_TI(N=8) = 0.910550 to six decimals
+      <P>_TI(8) = 0.910550381
+  best self-consistent truncation: N*=8, <P>_TI = 0.910550, pct = 53.446%
+PASS: OBSTRUCTION: best tadpole-substitution truncation has |pct| > 40%
       <P>_TI(N*=8) = 0.910550, pct = 53.446%
 
 ==============================================================================
@@ -205,11 +223,19 @@ T5: Pade [m/n] resummation of the perturbative series
   best Pade: [3/2], <P>_Pade = 0.919330, pct = 54.926%
 PASS: OBSTRUCTION: best Pade [3/2] resummation has |pct| > 40%
       <P>_Pade = 0.919330, explicit runner-local comparator = 0.5934, pct = 54.926%
+PASS: pin: best ordinary Pade approximant is [3/2]
+      best_mn = (3, 2)
+PASS: pin: best ordinary Pade value = 0.919330 to six decimals
+      best value = 0.919330341
+PASS: pin: every accepted approximant with m+n>=6 lies within 1e-5 of <P>_PT(16)
+      56 accepted high-order approximants
+PASS: grid census: executed ordinary grid produced the expected evaluation count
+      evaluated = 66, expected = 66
 
 ==============================================================================
-T6: tadpole-improved Pade resummation (best combined attempt)
+T6: tadpole-substitution Pade resummation (best combined attempt)
 ==============================================================================
-  Pade [m/n] self-consistent with tadpole improvement (beta_eff = beta * <P>):
+  Pade [m/n] self-consistent with tadpole substitution (beta_eff = beta * <P>):
     [1/2]_TI: <P>_TI-Pade = 0.910668, gap = +0.31727, pct = 53.466%
     [2/1]_TI: <P>_TI-Pade = 0.910645, gap = +0.31725, pct = 53.462%
     [1/3]_TI: <P>_TI-Pade = 0.910576, gap = +0.31718, pct = 53.451%
@@ -237,9 +263,19 @@ T6: tadpole-improved Pade resummation (best combined attempt)
     [5/3]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
     [6/2]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
     [7/1]_TI: <P>_TI-Pade = 0.910550, gap = +0.31715, pct = 53.446%
-  best tadpole-improved Pade: [3/2], <P> = 0.910550, pct = 53.446%
-PASS: OBSTRUCTION: best tadpole-improved Pade combination has |pct| > 40%
+  best tadpole-substitution Pade: [3/2], <P> = 0.910550, pct = 53.446%
+PASS: OBSTRUCTION: best tadpole-substitution Pade combination has |pct| > 40%
       <P>_TI-Pade = 0.910550, explicit runner-local comparator = 0.5934, pct = 53.446%
+PASS: pin: best tadpole-substitution Pade approximant is [3/2]
+      best_mn = (3, 2)
+PASS: pin: best tadpole-substitution Pade value = 0.910550 to six decimals
+      best value = 0.910549541
+PASS: branch scope: every converged combined value exceeds 0.5 (high branch)
+      the combined walk tracks only the weak-coupling branch from seed 0.6
+PASS: pin: every converged combined value lies within 2e-4 of 0.910550
+      27 converged entries in the ~0.9106 band
+PASS: grid census: combined grid produced the expected converged count
+      converged = 27, expected = 27
 
 ==============================================================================
 T7: finite-route residual and explicit runner-local scale diagnostic
@@ -257,6 +293,12 @@ PASS: finite-route gap to explicit runner-local comparator dominates over minimu
       non_pert_gap = +0.32593, min_term = 2.145e-11, ratio = 1.52e+10
 PASS: finite-route gap exceeds explicit runner-local F2 comparator (tested route does not reach explicit runner-local MC comparator)
       gap = 54.9259%, F2 = 0.0833%, ratio = 659.4x
+PASS: input integrity: MC comparator constant is exactly 0.5934
+      MC_REFERENCE = 0.5934
+PASS: input integrity: F2 comparator constant is exactly 0.0833
+      F2_SCALE_PERCENT = 0.0833
+PASS: pin: N=16 route residual is ~659x the F2 comparator (in [655, 665])
+      ratio = 659.4x
 
 ==============================================================================
 T8: honest verdict on the explicit-input diagnostic
@@ -271,6 +313,12 @@ T8: honest verdict on the explicit-input diagnostic
   Verdict label: RUNNER_LOCAL_OBSTRUCTION_>10pct
 PASS: HONEST VERDICT: best tested value has residual > explicit runner-local F2 comparator
       best tested = 0.910550, residual = 53.4462% > F2 = 0.0833%
+PASS: pin: best tested method is tadpole+Pade[3/2]
+      best method = tadpole+Pade[3/2]
+PASS: pin: best tested value = 0.910550 to six decimals
+      best value = 0.910549541
+PASS: pin: best residual is ~641x the F2 comparator (in [635, 650])
+      ratio = 641.6x
 
 ==============================================================================
 T9: scope (no new axioms / primitives / vocabulary)
@@ -286,7 +334,7 @@ PASS: explicit runner-local MC comparator 0.5934 enters only as comparator (not 
 T10: paired note exists with matching status authority disclaimer
 ==============================================================================
 PASS: note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
-      length = 26877 chars
+      length = 33445 chars
 PASS: note declares Status authority: independent audit lane only
       audit-lane authority pattern present
 PASS: note declares no new axioms / no new primitives
@@ -294,7 +342,7 @@ PASS: note declares no new axioms / no new primitives
 PASS: note declares explicit runner-local MC comparator 0.5934 as comparator only
       explicit runner-local comparator pattern present
 
-TOTAL: PASS=39, FAIL=0
+TOTAL: PASS=63, FAIL=0
 
 ----- stderr -----
 

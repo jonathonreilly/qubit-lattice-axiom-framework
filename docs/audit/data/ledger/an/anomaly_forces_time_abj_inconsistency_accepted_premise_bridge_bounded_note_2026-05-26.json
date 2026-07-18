@@ -44,7 +44,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "cc8e02256b5161382b7e0472e70c5f74f8de4ce8df6138b2c4d6704fd55b0295",
+  "note_hash": "827e96ea96e1c62996c408acbb82849a1e13c63dfbdc4927d8b0934f365a7ef3",
   "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

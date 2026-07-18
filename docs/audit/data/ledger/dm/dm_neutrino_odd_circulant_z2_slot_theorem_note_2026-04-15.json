@@ -18,7 +18,7 @@
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -4335,6 +4335,60 @@
         "total_pass": 10
       },
       "verdict_rationale": "Issue: the residual-Z2 algebra is correct, but the packet supplies no authority deriving Im[(K_01)^2] as the relevant leptogenesis observable. Why this blocks: the ten runner checks validate matrix algebra and a chosen 1+2 example, not the physical bridge behind the claim that c_odd must be activated. Repair target: provide a retained one-hop theorem constructing the leptogenesis kernel from the right-Gram carrier and make the runner test that bridge independently. Claim boundary until fixed: c_odd is the unique odd coefficient and controls the displayed entrywise invariant, while physical activation and leptogenesis interpretation remain conditional."
+    },
+    {
+      "archived_at": "2026-07-18T04:58:41.150256+00:00",
+      "audit_date": "2026-07-18T04:58:30.681672+00:00",
+      "audit_invocation_history": [
+        "3eea49b7e7f243f297a604fbb001fbd9"
+      ],
+      "audit_invocation_id": "3eea49b7e7f243f297a604fbb001fbd9",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 12.057,
+        "runner_hash": "3dd661748bb093b2e0f9b705ba10751fa7c7133e8a260b88f4710fd8e5c1e359",
+        "transitive_descendants": 752
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-drain-ready-20260717-1453f1c12ad64b6e81676e10be07c407-dm_neutrino_odd_circulan-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional class-A algebra closes and is genuinely computed by the runner. The complete artifact chain does not close for a terminal clean verdict because the named carrier, source/activation, readout, and transport walls lack the current-cycle N5 resolution evidence required by the audit policy.",
+      "claim_scope": "The supplied 3x3 Hermitian-circulant parametrization, P_23 parity split, coefficient extraction, entrywise polynomial identity, basis-covariance limit, and four named physical-bridge boundaries.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-18T04:58:30.681672+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The Hermitian commutant of the supplied S is exactly span_R{I,S+S^2,i(S-S^2)}, with P_23 parity (+,+,-), and therefore Im[(K_01)^2]=2 c_even c_odd in the displayed convention.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add a current-cycle runner section containing the five required N5 resolution-class checks for each authenticated negative-rhetoric group, then re-audit the otherwise closed bounded algebra theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The runner performs substantive linear-algebra calculations rather than merely printing expected conclusions, and its 33 passing checks support the bounded matrix identities. The note also asserts a bounded-with-named-walls and conditional-wall rationale for four physical bridges. Because the supplied live stdout contains no per-element, per-site, per-mode, per-block, and lattice-wide N5 tests for that negative boundary language, this restricted packet cannot support audited_clean."
     }
   ],
   "prose_corrections": [],

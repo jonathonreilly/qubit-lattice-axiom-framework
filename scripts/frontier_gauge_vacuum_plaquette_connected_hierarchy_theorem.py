@@ -1,31 +1,29 @@
 #!/usr/bin/env python3
-"""
-Exact connected-hierarchy theorem for the Wilson plaquette reduction law.
+"""Finite connected-hierarchy projection theorem for the Wilson plaquette.
 
-This closes the exact source-derivative hierarchy governing chi_L(beta) and
-therefore the higher transport derivatives of beta_eff(beta), while keeping
-explicit hierarchy closure at beta = 6 open.
+The analytic proof in the source note establishes the universal finite
+common-source identity. This runner provides finite exact illustrations of the
+source algebra and checks the first two defined inverse-coordinate derivative
+identities by exact symbolic reconstruction.
 """
 
 from __future__ import annotations
 
+import argparse
 from collections import Counter
-from fractions import Fraction
-from itertools import product
-import sys
 
-sys.path.insert(0, "scripts")
-
-from frontier_gauge_vacuum_plaquette_constant_lift_obstruction import full_wilson_strong_coupling_slope  # noqa: E402
-from frontier_gauge_vacuum_plaquette_mixed_cumulant_audit import (  # noqa: E402
-    beta_eff_beta5_coefficient,
-    total_nonlocal_beta5_coefficient,
-)
-
+import sympy as sp
 
 THEOREM_PASS = 0
 SUPPORT_PASS = 0
 FAIL = 0
+
+MUTATIONS = (
+    "none",
+    "wrong-source-shift",
+    "wrong-transport-product",
+    "omit-local-curvature",
+)
 
 
 def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM") -> None:
@@ -44,6 +42,7 @@ def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM")
 
 
 def beta_derivative_of_monomial(alpha: tuple[int, ...]) -> Counter[tuple[int, ...]]:
+    """Derivative after the uniform shift y_r = beta + J_r."""
     out: Counter[tuple[int, ...]] = Counter()
     for idx, power in enumerate(alpha):
         if power == 0:
@@ -65,114 +64,139 @@ def source_derivative_of_monomial(alpha: tuple[int, ...], idx: int) -> Counter[t
     return out
 
 
-def sum_source_derivatives(alpha: tuple[int, ...]) -> Counter[tuple[int, ...]]:
+def source_indices(size: int, mutation: str) -> range:
+    if mutation == "wrong-source-shift":
+        return range(size - 1)
+    return range(size)
+
+
+def sum_source_derivatives(alpha: tuple[int, ...], mutation: str) -> Counter[tuple[int, ...]]:
     out: Counter[tuple[int, ...]] = Counter()
-    for idx in range(len(alpha)):
+    for idx in source_indices(len(alpha), mutation):
         out += source_derivative_of_monomial(alpha, idx)
     return out
 
 
-def second_level_identity(alpha: tuple[int, ...], fixed_idx: int) -> tuple[Counter[tuple[int, ...]], Counter[tuple[int, ...]]]:
-    left = Counter()
+def second_level_identity(
+    alpha: tuple[int, ...], fixed_idx: int, mutation: str
+) -> tuple[Counter[tuple[int, ...]], Counter[tuple[int, ...]]]:
+    left: Counter[tuple[int, ...]] = Counter()
     for reduced_alpha, coeff in source_derivative_of_monomial(alpha, fixed_idx).items():
-        left += Counter({k: coeff * v for k, v in beta_derivative_of_monomial(reduced_alpha).items()})
+        left += Counter(
+            {
+                monomial: coeff * value
+                for monomial, value in beta_derivative_of_monomial(reduced_alpha).items()
+            }
+        )
 
-    right = Counter()
-    for idx in range(len(alpha)):
-        inner = source_derivative_of_monomial(alpha, idx)
-        for reduced_alpha, coeff in inner.items():
-            right += Counter({k: coeff * v for k, v in source_derivative_of_monomial(reduced_alpha, fixed_idx).items()})
+    right: Counter[tuple[int, ...]] = Counter()
+    for idx in source_indices(len(alpha), mutation):
+        for reduced_alpha, coeff in source_derivative_of_monomial(alpha, idx).items():
+            right += Counter(
+                {
+                    monomial: coeff * value
+                    for monomial, value in source_derivative_of_monomial(
+                        reduced_alpha, fixed_idx
+                    ).items()
+                }
+            )
     return left, right
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--mutation",
+        choices=MUTATIONS,
+        default="none",
+        help="hostile mutation used to verify that a load-bearing check fails",
+    )
+    return parser.parse_args()
+
+
 def main() -> int:
-    basis = [
+    args = parse_args()
+    mutation = args.mutation
+
+    illustration_basis = [
         (0, 0, 0),
         (1, 0, 0),
+        (0, 0, 2),
         (2, 1, 0),
         (1, 1, 1),
         (3, 2, 1),
         (4, 0, 2),
     ]
-    first_identity_ok = all(beta_derivative_of_monomial(alpha) == sum_source_derivatives(alpha) for alpha in basis)
+    first_identity_ok = all(
+        beta_derivative_of_monomial(alpha) == sum_source_derivatives(alpha, mutation)
+        for alpha in illustration_basis
+    )
     second_identity_ok = all(
-        second_level_identity(alpha, fixed_idx)[0] == second_level_identity(alpha, fixed_idx)[1]
-        for alpha in basis
+        second_level_identity(alpha, fixed_idx, mutation)[0]
+        == second_level_identity(alpha, fixed_idx, mutation)[1]
+        for alpha in illustration_basis
         for fixed_idx in range(len(alpha))
     )
 
-    onset_plaquette_coeff = total_nonlocal_beta5_coefficient()
-    onset_susceptibility_coeff = Fraction(5, 1) * onset_plaquette_coeff
-    onset_beta_eff_coeff = beta_eff_beta5_coefficient()
-    onset_beta_eff_prime_coeff = Fraction(5, 1) * onset_beta_eff_coeff
-    onset_beta_eff_second_coeff = Fraction(20, 1) * onset_beta_eff_coeff
-    common_slope = Fraction(full_wilson_strong_coupling_slope()).limit_denominator()
-    onset_three_point_sum_coeff = common_slope * onset_beta_eff_second_coeff
+    shell_two, shell_three, local_chi, local_chi_prime = sp.symbols(
+        "S2 S3 chi_1plaq chi_1plaq_prime", nonzero=True
+    )
+    beta_eff_prime = (
+        shell_two * local_chi
+        if mutation == "wrong-transport-product"
+        else shell_two / local_chi
+    )
+    beta_eff_second = (
+        shell_three / local_chi
+        - (local_chi_prime / local_chi) * beta_eff_prime**2
+    )
+    if mutation == "omit-local-curvature":
+        beta_eff_second = shell_three / local_chi
+    first_transport_residual = sp.simplify(local_chi * beta_eff_prime - shell_two)
+    second_transport_residual = sp.simplify(
+        local_chi * beta_eff_second
+        + local_chi_prime * beta_eff_prime**2
+        - shell_three
+    )
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE CONNECTED-HIERARCHY THEOREM")
+    print("GAUGE-VACUUM PLAQUETTE FINITE CONNECTED-HIERARCHY PROJECTION THEOREM")
     print("=" * 78)
     print()
-    print("Uniform-source derivative basis check")
-    print(f"  tested monomial basis                    = {basis}")
-    print(f"  first-level identity exact               = {first_identity_ok}")
-    print(f"  second-level identity exact              = {second_identity_ok}")
+    print(f"Hostile mutation                         = {mutation}")
     print()
-    print("Exact onset hierarchy coefficients")
-    print(f"  nonlocal plaquette beta^5 coefficient    = {onset_plaquette_coeff} = {float(onset_plaquette_coeff):.15e}")
-    print(f"  nonlocal susceptibility beta^4 coeff     = {onset_susceptibility_coeff} = {float(onset_susceptibility_coeff):.15e}")
-    print(f"  beta_eff beta^5 coefficient              = {onset_beta_eff_coeff} = {float(onset_beta_eff_coeff):.15e}")
-    print(f"  beta_eff' beta^4 coefficient             = {onset_beta_eff_prime_coeff} = {float(onset_beta_eff_prime_coeff):.15e}")
-    print(f"  beta_eff'' beta^3 coefficient            = {onset_beta_eff_second_coeff} = {float(onset_beta_eff_second_coeff):.15e}")
-    print(f"  summed connected 3-point beta^3 coeff    = {onset_three_point_sum_coeff} = {float(onset_three_point_sum_coeff):.15e}")
+    print("Finite source-shift illustrations")
+    print(f"  monomial illustration basis            = {illustration_basis}")
+    print(f"  common-source identity illustrated     = {first_identity_ok}")
+    print(f"  next hierarchy level illustrated       = {second_identity_ok}")
+    print()
+    print("Defined inverse-coordinate derivative reconstruction")
+    print(f"  beta_eff'                              = {beta_eff_prime}")
+    print(f"  beta_eff''                             = {beta_eff_second}")
     print()
 
     check(
-        "the uniform-source operator identity is illustrated exactly on monomial basis states",
+        "the finite common-source identity is illustrated exactly on the stated monomials",
         first_identity_ok,
-        detail="checked exactly on a spanning monomial sample for the shifted source variables y_r = beta + J_r",
+        detail="finite illustration only; the note proves the universal identity by the multivariable chain rule",
         bucket="SUPPORT",
     )
     check(
-        "the next hierarchy level is illustrated exactly on the same monomial basis",
+        "the next hierarchy level is illustrated exactly on the same finite basis",
         second_identity_ok,
-        detail="checked exactly on the same monomial sample after one fixed source derivative",
+        detail="finite illustration after one fixed source derivative",
         bucket="SUPPORT",
     )
     check(
-        "differentiating the exact beta^5 plaquette correction gives the exact beta^4 connected-susceptibility correction",
-        onset_susceptibility_coeff == Fraction(5, 472392),
-        detail=f"d/d beta [beta^5/472392] = ({onset_susceptibility_coeff}) beta^4",
+        "the first defined-coordinate derivative identity reconstructs the shell-summed two-point projection",
+        first_transport_residual == 0,
+        detail="chi_1plaq(beta_eff) * beta_eff' = sum_r C_2(p_0,r)",
     )
     check(
-        "differentiating the exact beta_eff onset law gives beta_eff''(beta)=20 beta^3 / 26244 + O(beta^4)",
-        onset_beta_eff_second_coeff == Fraction(5, 6561),
-        detail=f"beta_eff'' onset coefficient = {onset_beta_eff_second_coeff}",
+        "the second defined-coordinate derivative identity reconstructs the shell-summed three-point projection",
+        second_transport_residual == 0,
+        detail="chi_1plaq * beta_eff'' + chi_1plaq' * (beta_eff')^2 = sum_(r,s) C_3(p_0,r,s)",
     )
-    check(
-        "the common strong-coupling slope transports the beta_eff'' onset into the exact first summed connected 3-point coefficient",
-        onset_three_point_sum_coeff == Fraction(5, 118098),
-        detail=f"(1/18) * ({onset_beta_eff_second_coeff}) = {onset_three_point_sum_coeff}",
-    )
-    check(
-        "explicit nonperturbative closure therefore requires the connected plaquette hierarchy, not a single local bridge factor",
-        onset_susceptibility_coeff > 0 and onset_three_point_sum_coeff > 0,
-        detail="chi_L needs the shell-summed 2-point field and beta_eff'' already needs the shell-summed 3-point field",
-    )
-
-    check(
-        "the hierarchy theorem is consistent with the previously closed transport law for beta_eff'",
-        onset_beta_eff_prime_coeff == Fraction(5, 26244),
-        detail=f"beta_eff' correction coefficient = {onset_beta_eff_prime_coeff}",
-        bucket="SUPPORT",
-    )
-    check(
-        "the first nonlocal hierarchy levels are strictly nonzero beyond the common strong-coupling slope",
-        onset_susceptibility_coeff > 0 and onset_three_point_sum_coeff > 0,
-        detail="the connected hierarchy is genuinely active beyond onset, not a formal redundancy",
-        bucket="SUPPORT",
-    )
-
     print()
     print("=" * 78)
     print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")

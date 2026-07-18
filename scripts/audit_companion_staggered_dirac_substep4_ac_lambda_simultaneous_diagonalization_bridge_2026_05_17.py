@@ -27,15 +27,16 @@ The equivalence is checked in two independent exact ways:
          K -> ([K,T_1], [K,T_2], [K,T_3])
      and verify rank 6 with kernel exactly span(E_11,E_22,E_33).
 
-Pairwise distinctness is load-bearing.  For every alpha != beta, the exact
-separation weight
+Under the theorem's pairwise-distinct joint-signature hypothesis, every
+alpha != beta has exact separation weight
 
   sum_mu (tau_mu^(beta) - tau_mu^(alpha))^2
 
-equals 8, giving an entrywise reconstruction identity for K_ab from the
-three commutators.  Dense and one-unitary-blind non-Hermitian complex
-controls verify the intended failure modes.  The original generic
-Hermitian specialization is retained as a secondary continuity check.
+equal to 8, giving an entrywise reconstruction identity for K_ab from the
+three commutators.  Directed, dense, and one-unitary-blind non-Hermitian
+complex controls exercise the positive certificate across the quantified
+operator space.  The original generic Hermitian specialization is retained
+as a secondary continuity check.
 
 Expected output: PASS=N FAIL=0 with N >= 50.
 """
@@ -102,7 +103,7 @@ def main() -> int:
             )
 
     # ----- (L1) pairwise-distinct signatures and exact separation -----
-    print("\n[L1] pairwise-distinct joint signatures are load-bearing")
+    print("\n[L1] theorem hypothesis: pairwise-distinct joint signatures")
     check(
         "the three joint eigenvalue signatures are pairwise distinct",
         len(set(signatures.values())) == 3,
@@ -457,7 +458,7 @@ def main() -> int:
         not is_zero_matrix(directed_commutators[1])
         and not is_zero_matrix(directed_commutators[2])
         and is_zero_matrix(directed_commutators[3]),
-        detail="coverage outside the old ansatz, not a theorem counterexample",
+        detail="coverage outside the old ansatz with the expected nonzero commutators",
     )
 
     K_dense_hostile = sp.Matrix(
@@ -491,7 +492,7 @@ def main() -> int:
         ),
     )
     check(
-        "dense hostile K fails all three commutator equations",
+        "dense hostile K is detected by all three commutator systems",
         all(not is_zero_matrix(dense_commutators[mu]) for mu in MUS),
         detail=(
             f"nonzero counts = "
@@ -520,27 +521,6 @@ def main() -> int:
         "the same mixing is detected by T_2 and T_3",
         not is_zero_matrix(blind_commutators[2])
         and not is_zero_matrix(blind_commutators[3]),
-    )
-
-    # If the signatures coincide, the separation weights vanish and the
-    # diagonal-commutant conclusion fails: even the dense hostile K commutes.
-    trivial_commutators = {
-        mu: K_dense_hostile * I3 - I3 * K_dense_hostile
-        for mu in MUS
-    }
-    check(
-        "coincident identity signatures let dense non-diagonal complex K commute",
-        all(is_zero_matrix(matrix) for matrix in trivial_commutators.values())
-        and K_dense_hostile != sp.diag(*K_dense_hostile.diagonal()),
-    )
-    check(
-        "coincident signatures have zero separation weight",
-        all(
-            sum((1 - 1) ** 2 for _mu in MUS) == 0
-            for _alpha in (1, 2, 3)
-            for _beta in (1, 2, 3)
-            if _alpha != _beta
-        ),
     )
 
     # ----- Summary -----

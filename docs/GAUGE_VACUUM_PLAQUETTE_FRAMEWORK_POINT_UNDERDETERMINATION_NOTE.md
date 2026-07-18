@@ -1,150 +1,162 @@
-# Gauge-Vacuum Plaquette Framework-Point Underdetermination
+# Gauge-Vacuum Plaquette Finite-Jet Witness Separation
 
-**Date:** 2026-04-16
-**Status:** exact obstruction theorem on the current plaquette support stack;
-analytic `P(6)` still open
+**Date:** 2026-04-16; finite-jet rescope 2026-07-18
+**Type:** positive_theorem
+**Status:** proposed_retained exact finite-jet witness-separation theorem on
+the typed surface below
+**Status authority:** source-note proposal only; audit verdict and effective
+status remain owned by the independent audit lane
 **Script:** `scripts/frontier_gauge_vacuum_plaquette_framework_point_underdetermination.py`
 
 ## Question
 
-Do the exact plaquette theorems already on `main` force the framework-point
-value `P(6)`?
+Can a fixed finite Taylor jet, a compact positive interval, and a strictly
+increasing local one-plaquette block support an explicit pair of separated
+analytic witnesses at `beta = 6`?
 
 ## Answer
 
-No.
+Yes. For any nonnegative rational degree-five coefficient `a`, two rational
+polynomials give a complete positive construction. They agree
+coefficient-by-coefficient through degree five, have derivatives bounded below
+by `1` throughout `[0,6]`, and differ at the right endpoint by the exact
+positive rational `729/156250 = 0.0046656`. Strict increase of the local
+one-plaquette block preserves that order under composition.
 
-The current exact stack closes:
+## Typed inputs and authority
 
-- existence and uniqueness of an implicit finite-surface reduction law
-  `P_L(beta) = P_1plaq(beta_eff,L(beta))`,
-- analyticity and strict monotonicity of `beta_eff,L`,
-- the exact onset jet
-  `beta_eff(beta) = beta + beta^5 / 26244 + O(beta^6)`,
-- the exact infinite connected-hierarchy structure,
-- and the existence/uniqueness of the equivalent compact spectral measure.
+| Input | Exact value or statement | Authority and role |
+|---|---|---|
+| common degree-five coefficient | arbitrary rational `a >= 0`; runner instance `a = 1/10^5` | rational construction parameter; no Wilson onset coefficient or mixed-cumulant authority is imported |
+| evaluation interval | `beta in [0,6]` | stipulated construction domain; no comparator value, physical framework-point identification, or full-Wilson realization is imported |
+| separation coefficient | `c = 1/10^7 > 0` | an explicit rational construction choice in this theorem; it is not fitted data or a physical input |
+| local composition block | `P_1plaq'(x) = Var_x(X) > 0` for the displayed positive arguments | [Finite-volume Wilson plaquette inverse-coordinate theorem](GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md), Theorem 1; only its local variance lemma is used, the proof is restated below, and the Bessel helper evaluates only the local block |
 
-But those facts do **not** yet determine the explicit nonperturbative
-framework-point reduction parameter `beta_eff(6)`.
+These four rows are the complete input surface of this construction. The
+parameterized proof is independent of the value of any Wilson onset
+coefficient.
 
-In particular, there exist distinct real-analytic strictly increasing witness
-laws on `[0,6]` that share the exact closed onset jet through order `beta^5`
-but produce different framework-point values, hence different candidate
-plaquettes after composition with the exact monotone one-plaquette block
-`P_1plaq`.
+## Construction
 
-So the current exact stack does **not** yet force analytic `P(6)`.
+Define
 
-## Setup
+`f_-(beta) = beta + a beta^5`,
 
-Let
+`f_+(beta) = beta + a beta^5 + c beta^6`.
 
-`a = 1 / 26244`.
+Both are polynomials over the rationals, hence entire real functions.
 
-The exact mixed-cumulant audit and reduction-existence theorem already close
+## Theorem 1: exact common jet and endpoint separation
 
-`beta_eff(beta) = beta + a beta^5 + O(beta^6)`,
+The coefficient lists through degree five are identical:
 
-with `beta_eff` analytic and strictly increasing on the finite Wilson source
-surface.
+`[beta^k] f_- = [beta^k] f_+` for every `0 <= k <= 5`.
 
-Define two witness laws:
+Their first differing coefficient is at degree six, where
 
-`beta_eff^-(beta) = beta + a beta^5`,
+`[beta^6](f_+ - f_-) = c = 1/10^7`.
 
-`beta_eff^+(beta) = beta + a beta^5 + c beta^6`,
+At the right endpoint,
 
-with
+for the runner's explicit instance `a = 1/10^5`,
 
-`c = 10^(-7)`.
+`f_-(6) = 18993/3125 = 6.07776`,
 
-Both are entire real-analytic functions.
+`f_+(6) = 950379/156250 = 6.0824256`,
 
-## Theorem 1: same exact jet through order `beta^5`
+and therefore
 
-The two witness laws satisfy
+`f_+(6) - f_-(6) = c 6^6 = 46656/10^7 = 729/156250 = 0.0046656`.
 
-`beta_eff^+(beta) - beta_eff^-(beta) = c beta^6 = O(beta^6)`.
+## Theorem 2: exact derivative certificate on `[0,6]`
 
-Therefore both share the exact closed onset jet
+The derivatives are
 
-`beta_eff(beta) = beta + beta^5 / 26244 + O(beta^6)`.
+`f_-'(beta) = 1 + 5 a beta^4`,
 
-## Theorem 2: both witnesses are strictly increasing on `[0,6]`
+`f_+'(beta) = 1 + 5 a beta^4 + 6 c beta^5`.
 
-Their derivatives are
+For every `beta in [0,6]`, all nonconstant terms on the right are
+nonnegative. Thus the exact analytic lower bounds are
 
-`d beta_eff^- / d beta = 1 + 5 a beta^4`,
+`f_-'(beta) >= 1` and `f_+'(beta) >= 1`.
 
-`d beta_eff^+ / d beta = 1 + 5 a beta^4 + 6 c beta^5`.
+Both derivatives are therefore strictly positive throughout the full
+interval. For an endpoint cross-check,
 
-Both are strictly positive for all `beta >= 0`, hence on `[0,6]`.
+`f_-'(6) = 1331/1250`,
 
-So both witnesses satisfy the same current exact regularity boundary:
+`f_+'(6) = 83552/78125`.
 
-- real-analytic,
-- strictly increasing,
-- same exact onset through order `beta^5`.
+The derivative certificate is coefficient-based and exact; sampled values
+are not used to prove interval positivity.
 
-## Corollary 1: the framework point is not fixed by the current exact jet
+## Theorem 3: strict order after local one-plaquette composition
 
-At `beta = 6`,
+For
 
-`beta_eff^+(6) - beta_eff^-(6) = c 6^6 = 46656 / 10^7 = 0.0046656 > 0`.
+`X(U) = (1/3) Re Tr U`
 
-So the current exact onset jet and monotonicity data do not determine a unique
-framework-point reduction parameter.
+and the one-plaquette density proportional to `exp(x X)`, differentiation
+gives
 
-## Corollary 2: the framework-point plaquette is not fixed by the current exact stack
+`P_1plaq'(x) = Var_x(X)`.
 
-The exact one-plaquette block `P_1plaq(beta)` is strictly increasing.
+The density is strictly positive for finite real `x`, while `X` is not
+constant on `SU(3)`: `X(I) = 1` and
+`X(exp(2 pi i/3) I) = -1/2`. Hence the variance is strictly positive on the
+relevant positive domain. Since
 
-Therefore
+`0 < f_-(6) < f_+(6)`,
 
-`P_1plaq(beta_eff^+(6)) > P_1plaq(beta_eff^-(6))`.
+strict increase gives
 
-So the current exact plaquette data already closed on `main`
+`P_1plaq(f_-(6)) < P_1plaq(f_+(6))`.
 
-- do not yet determine a unique explicit `beta_eff(6)`,
-- and therefore do not yet determine a unique analytic `P(6)`.
+The runner's independently formulated Bessel and Weyl evaluations give
 
-## Spectral-measure interpretation
+`P_1plaq(f_-(6)) = 0.427552773371913...`,
 
-The exact spectral-measure theorem says that the full finite Wilson hierarchy is
-equivalent to one compact positive measure `mu_L` on `[-1,1]`, and Hausdorff
-uniqueness says that the **full** moment sequence uniquely determines `mu_L`.
+`P_1plaq(f_+(6)) = 0.427852498360518...`.
 
-That does **not** imply that the finite jet already closed on `main`
-determines `mu_L`. The witness reduction laws above show exactly why:
+These are local one-plaquette block values at the constructed arguments.
 
-> current exact onset data plus analyticity/monotonicity still leave multiple
-> admissible nonperturbative framework-point reductions.
+## Output surface and division of labor
 
-So explicit spectral identification at `beta = 6` remains a genuinely new
-theorem target rather than something already implied by the existing atlas.
+The theorem output is the explicit ordered pair
 
-## What this closes
+`(f_-, f_+)`
 
-- exact proof that the current closed jet does not force a unique
-  framework-point reduction parameter
-- exact proof that the current closed jet does not force a unique analytic
-  plaquette at `beta = 6`
-- exact clarification that the remaining plaquette gap is not structural
-  existence, but explicit nonperturbative identification
+on the finite degree-five jet plus interval-monotonicity surface, together
+with the exact endpoint separation and the strictly ordered local-block
+compositions above.
 
-## What this does not close
+Connected-hierarchy compatibility, compact spectral-measure compatibility,
+finite Wilson inverse-coordinate realizability, and the physical full-surface
+symbol `P(6)` belong to their own source packages. They are not inputs or
+outputs of this finite polynomial construction, and the functions here are
+not registered as realizations of those structures.
 
-- explicit identification of the compact plaquette spectral measure
-- explicit closed form for `beta_eff(6)`
-- analytic closure of canonical `P(6)`
-- repo-wide repinning of the canonical plaquette
+## Executable evidence
 
-## Commands run
+The runner checks seven theorem statements and two independent numerical
+support statements. Five hostile mutations execute the same load-bearing
+validators and are rejected:
+
+1. moving the perturbation from degree six to degree five breaks the common
+   jet;
+2. setting `c = 0` removes endpoint separation;
+3. changing the linear sign breaks the exact derivative lower bound;
+4. swapping the two local plaquette values breaks strict output ordering;
+5. deleting the positive composition factor breaks the exact input-order
+   certificate.
+
+Run:
 
 ```bash
-python3 scripts/frontier_gauge_vacuum_plaquette_framework_point_underdetermination.py
+PYTHONPATH=scripts python3 scripts/frontier_gauge_vacuum_plaquette_framework_point_underdetermination.py
 ```
 
 Expected summary:
 
-- `THEOREM PASS=5 SUPPORT=2 FAIL=0`
+- `THEOREM PASS=7 SUPPORT=2 CONTROL PASS=5 FAIL=0`

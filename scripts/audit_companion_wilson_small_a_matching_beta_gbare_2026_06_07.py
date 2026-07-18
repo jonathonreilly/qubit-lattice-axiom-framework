@@ -21,7 +21,6 @@ from __future__ import annotations
 
 import argparse
 from dataclasses import dataclass
-from fractions import Fraction
 from typing import Callable
 
 import sympy as sp
@@ -66,11 +65,13 @@ class TaylorCertificate:
 FIXTURES = (
     "wrong-trace-normalization",
     "nontraceless-linear-term",
+    "complex-coefficient",
     "wrong-one-over-n",
     "wrong-second-derivative-half",
     "wrong-quarter-vs-half",
     "beta-g2-equals-n",
     "beta-equals-2n-over-g",
+    "inconsistent-actual-beta",
     "wrong-remainder-constant",
     "illicit-physical-inference",
 )
@@ -147,6 +148,11 @@ def validate_packet(packet: MatrixPacket) -> None:
             raise HypothesisViolation(f"T_{index} is not Hermitian")
         if sp.simplify(sp.trace(generator)) != 0:
             raise HypothesisViolation(f"T_{index} is not traceless")
+    for index, coefficient in enumerate(packet.coefficients):
+        if sp.simplify(coefficient).is_real is not True:
+            raise HypothesisViolation(
+                f"f_{index} is not a provably real coefficient"
+            )
     gram = sp.Matrix(
         [
             [sp.simplify(sp.trace(left * right)) for right in packet.generators]
@@ -190,7 +196,9 @@ def certify_by_derivatives(packet: MatrixPacket) -> TaylorCertificate:
 
     # For Z(x)=1-Tr exp(i x A)/n, Z^(k)(0)=-(i^k/n)Tr(A^k).
     # D=Re Z.  Hermiticity makes Tr(A) real, hence Re(-i Tr(A)/n)=0.
-    d0 = sp.Integer(0)
+    # D(0) is evaluated from the defining deficit at x=0, not assigned.
+    zero_exponential = (sp.I * sp.Integer(0) * matrix_a).exp()
+    d0 = sp.simplify(1 - sp.re(sp.trace(zero_exponential)) / n)
     d1 = sp.simplify(sp.re(-sp.I * trace_a / n))
     d2 = sp.simplify(sp.re(sp.trace(matrix_a**2) / n))
     quadratic = sp.simplify(d2 / 2)
@@ -222,7 +230,7 @@ def require_canonical_coefficient_equation(
     proposed_beta: sp.Expr,
     right: sp.Expr = sp.Rational(1, 2),
 ) -> None:
-    """Reject altered coefficient, product, or solved-beta formulas."""
+    """Reject altered, inconsistent, or non-canonical coefficient formulas."""
     canonical_product = 2 * n
     canonical_beta = 2 * n / g**2
     reasons: list[str] = []
@@ -232,11 +240,13 @@ def require_canonical_coefficient_equation(
         reasons.append("proposed beta*g^2 product is not 2n")
     if sp.simplify(proposed_beta - canonical_beta) != 0:
         reasons.append("proposed beta solution is not 2n/g^2")
+    if sp.simplify(beta - proposed_beta) != 0:
+        reasons.append("actual beta does not equal the proposed beta")
+    if sp.simplify(beta * g**2 - proposed_product) != 0:
+        reasons.append("actual beta*g^2 does not equal the proposed product")
     if reasons:
         raise CoefficientMismatch("; ".join(reasons))
-    residual = formal_coefficient_residual(
-        proposed_beta, g, n, right=right
-    )
+    residual = formal_coefficient_residual(beta, g, n, right=right)
     if sp.simplify(residual) != 0:
         raise CoefficientMismatch("proposed formulas do not zero the residual")
 
@@ -246,22 +256,6 @@ def infer_physical_meaning(label: str) -> None:
     raise PhysicalInferenceError(
         f"formal coefficient certificate cannot infer physical label {label!r}"
     )
-
-
-def expect_rejection(
-    label: str,
-    exception_type: type[Exception],
-    operation: Callable[[], object],
-) -> tuple[bool, str]:
-    caught: Exception | None = None
-    try:
-        operation()
-    except Exception as exc:  # exact type checked below
-        caught = exc
-    ok = isinstance(caught, exception_type)
-    detail = str(caught) if caught is not None else "mutation was accepted"
-    check(label, ok, detail)
-    return ok, detail
 
 
 def normal_route() -> None:
@@ -484,6 +478,17 @@ def hostile_rejections(record_checks: bool = True) -> dict[str, tuple[bool, str]
         lambda: validate_packet(identity_packet),
     )
 
+    complex_coefficient_packet = MatrixPacket(
+        dimension=2,
+        generators=pauli.generators,
+        coefficients=(sp.I, sp.Integer(0), sp.Integer(0)),
+    )
+    record(
+        "complex-coefficient",
+        HypothesisViolation,
+        lambda: validate_packet(complex_coefficient_packet),
+    )
+
     canonical = certify_by_derivatives(pauli)
     wrong_denominator_d2 = sp.simplify(
         canonical.trace_a2 / (pauli.dimension - 1)
@@ -509,15 +514,17 @@ def hostile_rejections(record_checks: bool = True) -> dict[str, tuple[bool, str]
     )
 
     beta, g, n = sp.symbols("beta g n", positive=True)
+    # Each coefficient fixture mutates exactly one field of the canonical
+    # packet so every rejection is attributable to its named false claim.
     record(
         "wrong-quarter-vs-half",
         CoefficientMismatch,
         lambda: require_canonical_coefficient_equation(
-            beta=n / g**2,
+            beta=2 * n / g**2,
             g=g,
             n=n,
-            proposed_product=n,
-            proposed_beta=n / g**2,
+            proposed_product=2 * n,
+            proposed_beta=2 * n / g**2,
             right=sp.Rational(1, 4),
         ),
     )
@@ -525,22 +532,33 @@ def hostile_rejections(record_checks: bool = True) -> dict[str, tuple[bool, str]
         "beta-g2-equals-n",
         CoefficientMismatch,
         lambda: require_canonical_coefficient_equation(
-            beta=n / g**2,
+            beta=2 * n / g**2,
             g=g,
             n=n,
             proposed_product=n,
-            proposed_beta=n / g**2,
+            proposed_beta=2 * n / g**2,
         ),
     )
     record(
         "beta-equals-2n-over-g",
         CoefficientMismatch,
         lambda: require_canonical_coefficient_equation(
-            beta=2 * n / g,
+            beta=2 * n / g**2,
             g=g,
             n=n,
             proposed_product=2 * n,
             proposed_beta=2 * n / g,
+        ),
+    )
+    record(
+        "inconsistent-actual-beta",
+        CoefficientMismatch,
+        lambda: require_canonical_coefficient_equation(
+            beta=n / g**2,
+            g=g,
+            n=n,
+            proposed_product=2 * n,
+            proposed_beta=2 * n / g**2,
         ),
     )
 

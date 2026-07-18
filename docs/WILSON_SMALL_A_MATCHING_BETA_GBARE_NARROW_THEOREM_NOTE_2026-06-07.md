@@ -14,8 +14,14 @@ set, predict, or apply an audit verdict.
 The earlier version started from a supplied action, a supplied exponential
 dictionary, and a supplied continuum coefficient. Its algebra was correct
 inside that packet, but those inputs were not derived by the note. This repair
-removes every physical identification from the theorem. The stable filename is
-kept so existing citations can be repaired without changing claim identity.
+removes every physical identification from the theorem and **withdraws** the
+prior conditional physical proposition on this row: the earlier
+Wilson-action/continuum reading is superseded, is no longer claimed at any
+strength here, and survives only in the row's archived audit history. The
+stable filename is kept so existing citations can be repaired in place; the
+row's live claim content is solely the formal matrix theorem below, and every
+direct consumer was synchronized in the same change so that no live surface
+cites the withdrawn physical reading.
 
 The result below is an ordinary finite-dimensional matrix theorem. The symbols
 `beta` and `g` are formal positive real parameters. They are not a lattice
@@ -141,18 +147,27 @@ The runner provides four selectable modes:
 
 - `normal`: exact Gram-contraction and matrix-derivative checks;
 - `independent`: a separate spectral/power-series reconstruction;
-- `hostile`: mutations of the hypotheses, derivative normalization, and
-  formal coefficient equation, plus a physical-inference firewall;
+- `hostile`: single-field mutations of the hypotheses, derivative
+  normalization, and formal coefficient equation, plus an interface
+  fail-closed contract check;
 - `intentional-failure`: promotes one rejected hostile mutation to a primary
   assertion and must exit nonzero.
 
 The hostile set covers wrong trace normalization, a nontraceless complex
-linear term, omission of `1/n`, confusion of `D''(0)` with its half-sized
-Taylor coefficient, replacement of `C_right=1/2` by `1/4`, the wrong product
-`beta g^2=n`, the wrong solve `beta=2n/g`, a false `1/48` fourth-order
-remainder constant, and an illicit physical interpretation. The independent
-route also checks a complex off-diagonal `n=4` basis, while the normal route
-checks the zero-matrix edge case and the exact fourth-derivative mechanism.
+linear term, a non-real (complex) coefficient, omission of `1/n`, confusion
+of `D''(0)` with its half-sized Taylor coefficient, replacement of
+`C_right=1/2` by `1/4`, the wrong product `beta g^2=n`, the wrong solve
+`beta=2n/g`, an actual `beta` inconsistent with the proposed formulas, and a
+false `1/48` fourth-order remainder constant. Each coefficient fixture
+mutates exactly one field of the canonical packet, so each rejection is
+attributable to its named false claim. The final hostile item is an
+interface contract check: the module's only physical-inference entry point
+refuses every request by construction. That is a fail-closed API contract,
+not a repository-wide detection scan; the claim-boundary policing for
+consumers lives in the Boundary section below and in each consumer's own
+runner. The independent route also checks a complex off-diagonal `n=4`
+basis, while the normal route checks the zero-matrix edge case and the
+exact fourth-derivative mechanism.
 
 ## Boundary and downstream citation rule
 

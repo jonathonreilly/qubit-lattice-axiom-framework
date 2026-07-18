@@ -15,10 +15,11 @@ bridge/derivation; the formal coefficient algebra is dependency-wired, while
 the Wilson coefficient dictionary, NSPT packet, beta=6 action-surface/physical-selection and `g_bare = 1`
 specialization, MC comparator, and F2 comparator required for any promotion
 remain unsupplied/open). Given exactly the source-wired formal coefficient
-algebra, an explicit non-satisfying runner-local `W-PHYS` condition, the diagnostic specialization, and the three
+algebra, an explicit non-satisfying runner-local `W-PHYS` condition, the diagnostic specialization, and the five
 explicit runner-local inputs listed below, finite truncations `N <= 16`,
-tadpole-improved fixed points `N <= 8`, Pade `[m/n]` resummations with
-`m+n <= 12`, and tadpole-improved Pade fixed points with `m+n <= 8` land in
+tadpole-improved fixed points `N <= 8` (high branch), Pade `[m/n]`
+resummations with `m, n >= 1` and `m + n <= 12`, and tadpole-improved Pade
+fixed points with `m, n >= 1` and `3 <= m + n <= 8` (high branch) land in
 the `<P>_analytic ~ 0.91` band, about 53-55% above the explicit runner-local MC comparator.
 This conditional arithmetic says nothing about the actual beta=6 plaquette
 surface beyond that explicit-input diagnostic comparison. It does not derive
@@ -171,7 +172,9 @@ I_PT = (source-wired formal beta*g^2 = 2 n algebra,
         explicit non-satisfying runner-local W-PHYS condition,
         diagnostic specialization N_c = 3 and beta = 6,
         explicit runner-local w_1..w_16, explicit runner-local <P>_MC = 0.5934,
-        explicit runner-local F2_SCALE_PERCENT = 0.0833%).
+        explicit runner-local F2_SCALE_PERCENT = 0.0833%,
+        explicit runner-local scale-diagnostic dictionary alpha_lat = alpha_bare,
+        explicit runner-local pure-gauge b_0 = 11 N_c / 3 = 11 formula input).
 ```
 
 - **NSPT coefficient packet:** the runner consumes
@@ -198,6 +201,13 @@ I_PT = (source-wired formal beta*g^2 = 2 n algebra,
   scale comparator only. This comparator is explicit runner-local for THIS diagnostic
   only, carries no derivation weight, and is not licensed for downstream
   reuse.
+- **Scale-diagnostic inputs:** the T5 scale diagnostic additionally consumes
+  the identification `alpha_lat = alpha_bare` (an explicit runner-local
+  dictionary for the scale diagnostic only) and the pure-gauge one-loop
+  coefficient formula `b_0 = 11 N_c / 3 = 11` (an explicit runner-local
+  formula input in literature form, not derived here). Both are explicit
+  runner-local for this diagnostic only, carry no derivation weight, and are
+  not licensed for downstream reuse.
 
 Over exactly that repaired boundary, the runner checks that finite truncation,
 tadpole fixed points, Pade resummation, and tadpole-Pade combinations stay in
@@ -247,22 +257,25 @@ saturates at
 <P>_PT(N=16; beta=6)  =  0.919331 ,                                    (2)
 ```
 with the differences `|<P>_PT(N) - <P>_PT(N=16)|` already below `1e-4`
-for `N >= 6`. The truncated PT series is numerically Cauchy-convergent
-to the value `~0.9193` at `beta = 6` over the truncation range in which
-the explicit runner-local coefficients exist; this saturation value is distinct from the
+for `N >= 6` (a runner-pinned finite-range stabilization over the 16-term
+packet, not an all-orders convergence claim). The stabilized value
+`~0.9193` at `beta = 6` is distinct from the
 explicit runner-local MC comparator by
 ```text
 <P>_PT(N=16) - <P>_MC  =  0.919331 - 0.5934  =  +0.32593                (3)
 ```
 i.e. a 54.9% relative residual.
 
-**Conclusion (T2; tadpole-improvement saturation).** Adopting
-Lepage-Mackenzie tadpole improvement, i.e. iterating the
-self-consistent fixed point
+**Conclusion (T2; tadpole-substitution fixed-point saturation).** Iterating
+the runner-local mean-plaquette self-consistent substitution fixed point
 ```text
 <P>_(k+1)  =  1 - sum_{n=1..N} w_n / (beta * <P>_k)^n                   (4)
 ```
-to numerical convergence, every truncation `N in {1,...,8}` saturates at
+to asserted numerical convergence, with the coefficients `w_n` consumed
+unchanged (this substitution is of tadpole-improvement type; the
+identification with the literature Lepage-Mackenzie prescription is a naming
+comparator only, not a verified semantic bridge), every truncation
+`N in {1,...,8}` saturates at
 ```text
 <P>_TI(N=8; beta=6)  =  0.910550 ,                                     (5)
 ```
@@ -270,14 +283,21 @@ with residual
 ```text
 <P>_TI(N=8) - <P>_MC  =  0.910550 - 0.5934  =  +0.31715                 (6)
 ```
-i.e. a 53.4% relative residual. Tadpole improvement reduces the
-1-loop value from `0.925926` to `0.910550`, i.e. an absolute shift of
-`0.01538` and a `1.66%` relative reduction against the 1-loop value at
-`beta = 6`; it does not change the saturation regime.
+i.e. a 53.4% relative residual. At matched order the substitution moves the
+plain 1-loop value `0.925926` to the `N = 1` fixed point `0.919435` (a
+runner-pinned value); the further reduction to `0.910550` at `N = 8`
+combines the substitution with the higher-order packet terms, for a total
+shift of `0.01538` (`1.66%`) against the plain 1-loop value at `beta = 6`.
+It does not change the saturation regime. The fixed-point equations are not
+single-rooted; the diagnostic scopes its statement to the high
+(weak-coupling) branch reached from seed `0.5` with damped iteration, and
+the runner asserts convergence, the fixed-point equation residual, and the
+high-branch location for every reported value.
 
 **Conclusion (T3; Pade resummation saturation).** Pade `[m/n]`
 approximants of the truncated series (1) at every `(m, n)` with
-`m + n in {2, ..., 12}` evaluate at `beta = 6` to
+`m, n >= 1` and `m + n in {2, ..., 12}` (the executed grid; the `[m/0]`
+and `[0/n]` edge families are untested) evaluate at `beta = 6` to
 ```text
 <P>_Pade[m/n](beta=6)  ~=  0.919331 ,                                  (7)
 ```
@@ -289,18 +309,24 @@ saturation regime inside this finite coefficient packet.
 Self-consistent iteration of (4) using Pade `[m/n]` approximants in
 place of the truncated polynomial in (4) gives accepted values from
 `0.910668` down to the best value `0.910550` across the tested `(m, n)`
-grid with `m + n in {3, ..., 8}`. From `m+n >= 5`, the accepted runner
-values lie within about `2e-5` of `0.910550`; all accepted values remain
-in the same `~0.9106` band. No combination of finite-order PT truncation,
-tadpole improvement, and Pade resummation tested in the runner brings
-`<P>_analytic` within `5%` of the explicit runner-local MC comparator.
+grid with `m, n >= 1` and `m + n in {3, ..., 8}` (the executed grid; edge
+families and `m + n = 2` are untested). From `m+n >= 5`, the accepted
+runner values lie within about `2e-5` of `0.910550`; all accepted values
+remain in the same `~0.9106` band, on the asserted-convergent high branch.
+No combination of finite-order PT truncation, tadpole improvement, and
+Pade resummation tested in the runner brings `<P>_analytic` within `5%` of
+the explicit runner-local MC comparator.
 
 **Conclusion (T5; finite-route residual and scale diagnostic).** The runner
 also records the scale diagnostic
 ```text
 n*  =  1 / (alpha_lat * b_0 / 4)  ~=  4.57                              (8)
 ```
-with the runner's explicit runner-local `alpha_lat = 1/(4 pi)` and `b_0 = 11`.
+with two additional explicit runner-local inputs used by this diagnostic
+only: the dictionary `alpha_lat = alpha_bare = 1/(4 pi)` and the pure-gauge
+one-loop coefficient formula `b_0 = 11 N_c / 3 = 11` (a literature-form
+formula consumed as runner-local input, not derived here). Neither is
+licensed for downstream reuse.
 Within the listed 16-term coefficient packet, the numerical minimum of
 `|w_n / beta^n|` is much smaller than the residual `(3)`. The runner
 therefore records a large finite-route residual and a scale comparison; it
@@ -400,42 +426,64 @@ number for downstream reuse.
 ## No-Go Discipline Gate
 
 **N1 — alternative-route enumeration.** The negative claim concerns only the
-five executable attacks below. Each is marked `ATTEMPTED`; no untested route is
-declared closed.
+**four distinct executable finite method families** below (the plain one-loop
+estimate is the `N = 1` first member of the finite-partial-sum family, not a
+separate route family). Each family is marked `ATTEMPTED`; no untested route
+is declared closed. Because fewer than five distinct route families are
+attempted, this record is a **partial attempt with named untested routes**,
+not a route-class no-go: the negative statement covers exactly the four
+executed families over the executed grids and nothing else.
 
-| route | marker | attempted operation | observed failure inside the explicit packet |
+| route family | marker | attempted operation | observed failure inside the explicit packet |
 |---|---|---|---|
-| plain one-loop weak-coupling estimate | `ATTEMPTED` | evaluate the first-order expression at `beta=6` | `0.925926`, a `56.04%` comparator residual |
-| higher finite partial sums | `ATTEMPTED` | evaluate every listed truncation `N=2..16` | best value `0.919331`, residual `54.93%` |
-| tadpole-improved fixed points | `ATTEMPTED` | solve the listed fixed-point systems for `N=1..8` | best value `0.910550`, residual `53.45%` |
-| ordinary Padé family | `ATTEMPTED` | evaluate all nonsingular `[m/n]` with `m+n<=12` | best `[3/2]`, residual `54.93%` |
-| tadpole-improved Padé family | `ATTEMPTED` | evaluate all listed fixed points with `m+n<=8` | best `[3/2]`, residual `53.45%` |
+| finite partial sums (including plain one-loop `N=1`: `0.925926`, `56.04%` residual) | `ATTEMPTED` | evaluate every listed truncation `N=1..16` | best value `0.919331`, residual `54.93%` |
+| tadpole-improved fixed points (high branch) | `ATTEMPTED` | solve the listed fixed-point systems for `N=1..8` with asserted convergence | best value `0.910550`, residual `53.45%` |
+| ordinary Padé family | `ATTEMPTED` | evaluate all nonsingular `[m/n]` with `m,n>=1`, `m+n<=12` | best `[3/2]`, residual `54.93%` |
+| tadpole-improved Padé family (high branch) | `ATTEMPTED` | evaluate all converged fixed points with `m,n>=1`, `3<=m+n<=8` | best `[3/2]`, residual `53.45%` |
 
 Strong-coupling, transfer-matrix, Wigner-Racah, exact finite-volume,
-Borel-conformal, and Monte Carlo routes are explicitly **untested and out of
-scope**. This row does not rule them out.
+Borel-conformal, Monte Carlo, Borel-Padé, `[m/0]`/`[0/n]` Padé edge
+families, and low-branch fixed-point routes are explicitly **untested and
+out of scope**. This row does not rule them out.
 
 **N2 — wall-independence audit.** The formal coefficient identity is wired and
-is not a wall. The five explicit non-satisfying inputs/data roles are `W-PHYS`,
-the NSPT coefficient packet, the `beta=6,N_c=3` diagnostic specialization, the
-MC comparator, and the F2 comparator. Every pair is independent for this
-diagnostic:
+is not a wall. The **seven** explicit non-satisfying inputs/data roles are:
+`W-PHYS` (the `(n,g)=(N_c,g_bare)` dictionary), **Wilson
+action-surface/physical selection** (choosing the Wilson action surface and
+the physical `beta=6` point at all — a separately open wall, distinct from
+the dictionary), the NSPT coefficient packet, the `beta=6,N_c=3` diagnostic
+specialization, the MC comparator, the F2 comparator, and the
+**scale-diagnostic inputs** (`alpha_lat = alpha_bare` dictionary plus the
+pure-gauge `b_0 = 11 N_c/3` formula, used only by T5). Every pair is
+independent for this diagnostic:
 
 | pair | first closes second? | second closes first? | independent? |
 |---|---|---|---|
+| `W-PHYS` / action-surface selection | no | no | yes |
 | `W-PHYS` / NSPT packet | no | no | yes |
 | `W-PHYS` / beta specialization | no | no | yes |
 | `W-PHYS` / MC comparator | no | no | yes |
 | `W-PHYS` / F2 comparator | no | no | yes |
+| `W-PHYS` / scale-diagnostic inputs | no | no | yes |
+| action-surface selection / NSPT packet | no | no | yes |
+| action-surface selection / beta specialization | no | no | yes |
+| action-surface selection / MC comparator | no | no | yes |
+| action-surface selection / F2 comparator | no | no | yes |
+| action-surface selection / scale-diagnostic inputs | no | no | yes |
 | NSPT packet / beta specialization | no | no | yes |
 | NSPT packet / MC comparator | no | no | yes |
 | NSPT packet / F2 comparator | no | no | yes |
+| NSPT packet / scale-diagnostic inputs | no | no | yes |
 | beta specialization / MC comparator | no | no | yes |
 | beta specialization / F2 comparator | no | no | yes |
+| beta specialization / scale-diagnostic inputs | no | no | yes |
 | MC comparator / F2 comparator | no | no | yes |
+| MC comparator / scale-diagnostic inputs | no | no | yes |
+| F2 comparator / scale-diagnostic inputs | no | no | yes |
 
 Replacing either comparator changes only the reported residual target. It does
-not derive any method value or close another condition.
+not derive any method value or close another condition. The scale-diagnostic
+inputs feed only the T5 diagnostic and close nothing else.
 
 **N3 — hidden-wall scan.** The live uses of the trigger phrases are classified
 as follows:
@@ -446,10 +494,12 @@ as follows:
 | `canonical` trace normalization | context for the wired formal theorem; no physical dictionary inherited |
 | `framework's existing` route names | non-load-bearing sibling context |
 | `by construction` / diagnostic specialization | explicit `beta=6,N_c=3` condition |
+| `alpha_lat = alpha_bare` and pure-gauge `b_0` wording | explicit runner-local scale-diagnostic inputs (T5 only); non-chain-satisfying |
+| Wilson action-surface wording | explicit separately open action-surface/physical-selection condition; non-chain-satisfying |
 | `registered`, `naturally`, `obviously`, `standard QFT` | not used as hidden authority |
 
-The NSPT values and the MC/F2 values are runner-local data. None is licensed
-for downstream reuse.
+The NSPT values, the MC/F2 values, and the scale-diagnostic inputs are
+runner-local data. None is licensed for downstream reuse.
 
 **N4 — residual matching.** The only evidence for the negative statement is
 the paired runner's direct computation of the same residual named here:
@@ -463,30 +513,75 @@ inside the runner; the conclusion is not stated at the all-orders,
 all-resummation, all-volume, all-action, all-analytic, or lattice-wide physical
 plaquette level. The untested resolutions remain open.
 
-**N6 — partial-closure path scan.** Strong-coupling Padé, a derived NSPT
-coefficient packet, exact transfer/character methods, Wigner-Racah per-cube
-calculations, Borel-conformal resummation, and finite-volume computation remain
-partial-closure paths. Deriving `W-PHYS` or replacing a comparator with retained
-authority would retire only that condition; none requires a new axiom, and the
-approved primitives supply none of these dimensionless data or dictionaries.
+**N6 — partial-closure path scan.** Each named path, its status, and what its
+closure would retire:
 
-**N7 — steelman.** The strongest objection is decisive against any broader
-no-go: this finite weak-coupling packet may simply be the wrong expansion or
-resummation regime at `beta=6`. A strong-coupling, Borel-conformal, exact
-character-transfer, or finite-volume Wigner-Racah computation could still reach
-the comparator. The note accepts that objection and limits its conclusion to
-the five attempted finite routes.
+| path | status | what it would close |
+|---|---|---|
+| derive the `W-PHYS` dictionary from retained authority | open | retires the `W-PHYS` condition only |
+| derive Wilson action-surface/physical selection | open | retires the action-surface condition only |
+| derive or retain the NSPT coefficient packet | open | retires the packet condition; would upgrade the diagnostic's inputs |
+| retained MC comparator authority | open | retires the MC-comparator condition only (residual target becomes citable) |
+| retained F2 comparator authority | open | retires the F2-comparator condition only |
+| derive the scale-diagnostic inputs (`alpha_lat` dictionary, pure-gauge `b_0`) | open | retires the T5 scale-diagnostic conditions only |
+| strong-coupling Padé / exact transfer or character methods / Wigner-Racah per-cube / Borel-conformal / finite-volume computation | open | alternative routes to the plaquette value; close nothing in this row but could supersede its residual |
 
-**N8 — cross-cycle echo.** Prior plaquette work split weak-coupling,
-strong-coupling, mean-field, transfer, character, and MC routes. Some apparent
-walls were narrowed by changing method or by separating comparator data from
-derivation authority. This note applies both lessons: it records only the
-tested finite-envelope miss, keeps every alternate route open, and grants no
-downstream authority to the comparator or packet.
+None of these is a convention-reframe, relabeling, or vocabulary fix: every
+missing item is dimensionless data or a dictionary that the approved
+framework primitives do not supply, so no path here dissolves by
+reinterpretation, and none requires a new axiom. No in-flight repair known to
+this note closes any of them.
 
-**No-Go Discipline result:** `PASS` for this narrow runner-local negative
-statement. It is not a no-go for the plaquette value or for non-perturbative
-analytic routes.
+**N7 — steelman.** Two objections are considered. (a) Against any broader
+no-go the decisive objection stands: this finite weak-coupling packet may
+simply be the wrong expansion or resummation regime at `beta=6`; a
+strong-coupling, Borel-conformal, exact character-transfer, or finite-volume
+Wigner-Racah computation could still reach the comparator. The note accepts
+this and limits its conclusion to the four attempted finite families. (b)
+Against the bounded search itself: the damped high-seed iteration, the Padé
+acceptance window `|val - 0.5| < 0.5`, and the executed `m,n >= 1` grids
+could in principle hide a reachable value. The runner now answers this with
+asserted convergence, fixed-point-equation residuals, high-branch location
+checks, exact value pins, and grid-census pins, and the claim scope names
+the executed grids and the untested edge families and low branch
+explicitly. The strongest supporting authority for the arithmetic itself is
+the paired runner together with the source-wired formal coefficient theorem
+[`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md).
+
+**N8 — cross-cycle echo.** Prior cycles on this surface and the mechanisms
+that retired or narrowed their walls:
+
+- `SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md` (route-split
+  cycle): the apparent single-route wall was narrowed by **method change**
+  (splitting weak-coupling, strong-coupling, mean-field, transfer, character,
+  and MC routes). That mechanism does not close the present conditions,
+  which are missing data/dictionaries rather than method choices, but it is
+  why this row's negative statement is scoped to four families instead of a
+  route-class claim.
+- `PLAQUETTE_SELF_CONSISTENCY_NOTE.md` (finite MC diagnostic cycle): an
+  earlier comparator-entanglement wall was retired by **separating comparator
+  data from derivation authority**. This row applies that mechanism: the MC
+  and F2 values enter only as fenced comparators.
+
+Neither prior mechanism (method change; comparator/authority separation)
+retires the current `W-PHYS`, action-surface, packet, comparator-authority,
+or scale-diagnostic conditions, which all require supplied or derived data.
+
+**No-Go Discipline result:** `FAIL` — N1 remains open: only four distinct
+route families are executed, fewer than the five required to support a clean
+negative verdict. Required controlled demotion applied:
+
+```text
+no_go_discipline.status: FAIL
+no_go_discipline.demotion: partial-attempt-with-named-untested-routes
+```
+
+The record therefore stands as a partial attempt with named untested routes
+over the four executed finite method families, not as a clean negative
+verdict. It is not a no-go for the plaquette value or for non-perturbative
+analytic routes; strong-coupling, transfer-matrix, Wigner-Racah,
+Borel-conformal, Monte Carlo, Padé edge-family, and low-branch routes remain
+named and untested.
 
 ## Verification
 
@@ -497,7 +592,7 @@ python3 scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
 Expected output:
 
 ```text
-TOTAL: PASS=39, FAIL=0
+TOTAL: PASS=63, FAIL=0
 ```
 
 The runner exercises each conclusion (T1)-(T5) plus framework-side

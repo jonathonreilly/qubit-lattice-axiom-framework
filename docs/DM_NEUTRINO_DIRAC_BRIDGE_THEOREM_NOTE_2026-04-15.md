@@ -139,9 +139,6 @@ to look for the generation-resolved effective Yukawa.
 This upgrades the branch in one specific way:
 
 - **closed now:** local operator selection on the post-EWSB chiral surface
-- **also closed now:** the direct bridge family carries exact weak-vector
-  representation content (see
-  [`DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md`](./DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md))
 - **still open:** neutrino-sector normalization / suppression theorem
 
 So the live theorem-grade blocker is no longer:

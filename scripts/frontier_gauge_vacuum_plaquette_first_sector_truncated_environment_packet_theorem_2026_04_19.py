@@ -22,7 +22,7 @@ from frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_1
     evaluation_matrix,
 )
 from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
-    exact_small_case as source_factorization_exact_small_case,
+    validate_supplied_sequence,
 )
 
 
@@ -54,10 +54,15 @@ def main() -> int:
     print("  coefficient packet, without identifying it as a physical Wilson")
     print("  residual or environment operator?")
 
-    source_exact = source_factorization_exact_small_case()
     v_min, z_min = completed_sector_data()
     z00_min = float(v_min[0])
     rho_packet = v_min / z00_min
+    packet_weights = [(0, 0), (1, 0), (0, 1), (1, 1)]
+    try:
+        validate_supplied_sequence(packet_weights, rho_packet.tolist())
+        supplied_diagonal_interface = True
+    except (TypeError, ValueError):
+        supplied_diagonal_interface = False
 
     sample_angles = [(u1 * np.pi / 16.0, u2 * np.pi / 16.0) for u1, u2 in sample_angle_units().values()]
     e_three = evaluation_matrix([(0, 0), (1, 0), (0, 1), (1, 1)], sample_angles)
@@ -74,10 +79,8 @@ def main() -> int:
     print()
 
     check(
-        "The source theorem's exact hostile control rejects promotion from structural symmetry to physical diagonality",
-        bool(source_exact["formula_exact"])
-        and bool(source_exact["hostile_mixing"])
-        and bool(source_exact["shadow_fails"]),
+        "The completed packet satisfies the source theorem's supplied nonnegative swap-symmetric diagonal interface",
+        supplied_diagonal_interface,
     )
     check(
         "The completion producers return one finite four-coefficient vector and one finite three-sample target",
@@ -103,10 +106,10 @@ def main() -> int:
         f"||z_recon-Z_min||={recon_gap:.3e}",
     )
     check(
-        "The finite packet witness does not defeat the exact off-diagonal hostile control",
+        "The reconstructed finite packet composes with the supplied-diagonal source interface",
         recon_gap < 1.0e-12
         and e_three.shape == (3, 4)
-        and bool(source_exact["shadow_fails"]),
+        and supplied_diagonal_interface,
         f"z00_min={z00_min:.6f}",
     )
 

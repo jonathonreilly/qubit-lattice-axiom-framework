@@ -2,22 +2,19 @@
 
 **Date:** 2026-05-10
 **Type:** positive_theorem
-**Claim scope:** the standalone abstract-algebraic equivalence on the finite
-`B_4` truncation of the `SU(3)` character basis between:
+**Claim scope:** the input surface is the finite `B_4` `SU(3)` character
+basis, normalized Haar probability measure, an abstract real nonnegative
+swap-symmetric sequence `rho_(p,q)` with `rho_(0,0) = 1`, and standard
+compact-group representation algebra. The output surface is T1 Schur
+orthogonality, T2 equality of normalized convolution and diagonal action on
+`V_4`, T3 coefficient uniqueness, and T4 positivity, self-adjointness, and
+swap symmetry.
 
-- a diagonal positive central operator
-  `R chi_(p,q) = rho_(p,q) chi_(p,q)` indexed by an abstract real coefficient
-  sequence `rho_(p,q) >= 0`, `rho_(0,0) = 1`, `rho_(p,q) = rho_(q,p)`, and
-- the normalized convolution operator `C_{Z/Z_(0,0)}` by the central class
-  function
-  `Z(W) = sum_(p,q) d_(p,q) rho_(p,q) chi_(p,q)(W)`,
-  with `d_(p,q) = (p+1)(q+1)(p+q+2)/2` the irrep dimension and
-  `Z_(0,0) = d_(0,0) rho_(0,0) = 1`.
+The parent Wilson-environment program is a separate coefficient-source
+problem. Once a physical coefficient sequence is supplied with its own
+authority and matches this input signature, this theorem supplies the
+algebraic convolution/diagonal equivalence on `V_4`.
 
-This is purely a fact of finite-dimensional `SU(3)` character algebra
-on the abstract real coefficient sequence `(rho_(p,q))`; **no Wilson
-action, no unmarked spatial environment, no `beta = 6` framework point,
-no specific numerical input** is consumed.
 **Runner:** [`scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py`](./../scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py)
 
 ## Statement
@@ -97,6 +94,10 @@ is:
 - conjugation-symmetric: it commutes with the involution
   `swap: chi_(p,q) -> chi_(q,p)` on `V_4`.
 
+The condition `rho_(0,0) = 1` is used only to fix the trivial-channel
+normalization `Z_(0,0) = 1` in `(T2)`. Conclusion `(T4)` uses the real,
+nonnegative, swap-symmetric properties of the sequence.
+
 ## Proof
 
 `(T1)` This is the Schur character orthogonality relation for
@@ -150,8 +151,8 @@ chi_mu(W) = sum_c D^mu(W)_(c c).                                          (9)
 ```
 
 Here `W^{-1}` creates the conjugated matrix element in the first character,
-while the target character `chi_mu(W)` is not conjugated. Reordering `(7)`
-gives the precise matrix-element pairing
+while the target character `chi_mu(W)` appears in its direct form. Reordering
+`(7)` gives the precise matrix-element pairing
 
 ```text
 integral conj(D^lambda(W)_(a b)) D^mu(W)_(c d) dW
@@ -177,7 +178,7 @@ I_(lambda,mu)(V)
 
 The last line uses `lambda = mu` only on the surviving Schur-delta branch.
 Thus the trace and the factor `1/d_mu` are outputs of the matrix-index
-contraction, not assumptions from a character-convolution helper.
+contraction itself.
 The indexed calculation is dimension-generic, but the durable claim in this
 note is restricted to the fixed `B_4` packet.
 
@@ -186,9 +187,10 @@ The inverse/conjugation choices are essential. If `W^{-1}` is replaced by
 `chi_mu(U^{-1}) = chi_(mu^*)(U)`, where `mu^* = (q',p')`. Likewise,
 replacing `chi_mu(W)` by its complex conjugate directly inserts
 `chi_(mu^*)(W)`. Either mutation therefore produces the dual-irrep action
-`rho_(mu^*) chi_(mu^*)(V)`, not `rho_mu chi_mu(V)` in general. The runner
-tests both mutations on the complex fundamental character at a `V` for
-which `chi_(1,0)(V) != chi_(0,1)(V)`.
+`rho_(mu^*) chi_(mu^*)(V)`, which generally differs from
+`rho_mu chi_mu(V)`. The runner tests both mutations on the complex
+fundamental character at a `V` for which
+`chi_(1,0)(V) != chi_(0,1)(V)`.
 
 Substituting `(11)` into the full finite sum `(8)` gives the dimension
 cancellation explicitly:
@@ -222,101 +224,57 @@ Conjugation symmetry
 = rho_(p,q) chi_(q,p) = swap rho_(p,q) chi_(p,q) = swap R chi_(p,q)`,
 so `R` commutes with `swap`. ∎
 
-## What this claims
+## Input and output surface
 
-- `(T1)`: the standard Schur orthogonality identity `(5)` for the
-  finite truncation of `SU(3)` characters.
-- `(T2)`: the symbolic identity `C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)`
-  on `V_4` for every abstract coefficient sequence with the stated symmetry
-  and normalization.
-- `(T3)`: uniqueness — the diagonal operator `R` determines and is
-  determined by its character coefficients `(rho_(p,q))` over `B_4`.
-- `(T4)`: positivity, self-adjointness, and conjugation symmetry of `R`
-  follow from the abstract hypotheses without reference to any physical
-  Wilson construction.
+The complete theorem input is:
 
-## What this does NOT claim
+- the 25 characters indexed by `B_4` and their span `V_4`;
+- normalized Haar probability measure on `SU(3)`;
+- the abstract real sequence `(rho_(p,q))` with nonnegative entries,
+  swap symmetry, and trivial-channel normalization `rho_(0,0) = 1`;
+- standard compact-group representation algebra, including the exact
+  `SU(3)` dimension formula and matrix-element Schur orthogonality.
 
-- Does **not** identify `(rho_(p,q))` with any specific physical
-  Wilson environment coefficients, `beta = 6` framework point data,
-  or unmarked spatial Wilson boundary integral.
-- Does **not** construct the unmarked spatial Wilson environment
-  operator `R_beta^env` or derive its coefficients from a Wilson
-  configuration integral.
-- Does **not** consume the parent residual-environment identification
-  theorem, the parent spatial-environment character-measure theorem, or
-  any of the parent gauge-vacuum plaquette derivation chains.
-- Does **not** consume any PDG observed value, literature numerical
-  comparator, fitted selector, or admitted unit convention.
-- Does **not** close analytic `P(6)`, an all-weight coefficient law, or
-  the full unmarked spatial Wilson tensor-transfer/Perron problem.
+From exactly that input, the theorem returns:
 
-## Relation to the parent plaquette residual environment chain
+- `(T1)` Schur character orthogonality on `B_4`;
+- `(T2)` `C_{Z/Z_(0,0)} = R` on `V_4`;
+- `(T3)` uniqueness of the diagonal coefficient sequence;
+- `(T4)` positivity, self-adjointness, and swap symmetry of `R`.
 
-The parent identification chain — anchored at
-`GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md`
-and
-`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md`
-— asserts the load-bearing equality `R_beta^env = C_(Z_beta^env)` on
-the marked-plaquette class-function sector. The auditor's
-recorded objection (verdict `audited_conditional`, repair class
-`missing_bridge_theorem`) was that the parent runners verify
-packaging once a generic positive symmetric `rho_env` sequence is
-supplied, but do not derive the equality from the actual unmarked
-spatial Wilson environment.
+## Division of labor with the parent plaquette program
 
-This narrow theorem isolates a clean algebraic component of that
-load-bearing equality, scoped to abstract `SU(3)` character algebra
-and explicitly disclaiming any Wilson-environment identification.
-Specifically, it proves:
+The parent Wilson-environment program owns the source problem for a physical
+coefficient sequence, including its Wilson configuration-integral provenance,
+normalization, and domain. This theorem owns the algebraic map from any
+sequence matching the input signature above to the corresponding normalized
+central convolution on `V_4`.
 
-> Whatever the actual physical or numerical origin of the coefficient
-> sequence `(rho_(p,q))`, the convolution-by-class-function realization
-> on the finite character-basis truncation **is**, as a matter of
-> finite-dimensional `SU(3)` representation theory, the same operator
-> as the diagonal eigenvalue action.
-
-The narrow theorem does NOT close the parent gate. The remaining
-bridge step — deriving the **physical Wilson coefficients**
-`rho_(p,q)(6)` from the unmarked spatial Wilson environment integral —
-is the separate target addressed by the bounded companion
+A physical application therefore has a two-authority type signature: the
+coefficient-source result supplies `(rho_(p,q))`, and this theorem supplies
+the convolution/diagonal equivalence after that typed input is present. The
+bounded coefficient companion
 `GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`
-and is **outside the scope of this narrow theorem**.
-
-The bounded companion supplies explicit normalized single-link Wilson
-boundary coefficients, but this narrow theorem does not consume them.
-It proves only the abstract algebraic implication after a coefficient
-sequence is supplied. Any use of both notes in the parent chain still
-requires a separate derivation identifying those coefficients and this
-finite character-sector operator with the physical environment
-compression. The two independently audit-able pieces are:
-
-- the **abstract algebraic bridge** (this narrow theorem, finite-dim
-  `SU(3)` representation theory),
-- the **bounded numerical coefficient** (the rho_(p,q)(6) computation,
-  two independent integrators).
-
-The remaining ungated piece — the all-weight or full tensor-transfer
-identification of `R_beta^env` with the **physical** Wilson
-environment compression — remains explicitly open.
+supplies only one finite stipulated-integral coefficient packet. It provides
+no physical-surface, environment, or tensor-transfer identification; any such
+application requires its own authority in addition to this abstract theorem.
 
 ## Cited dependencies
 
-No repo-source dependencies. This narrow note uses only standard mathematical
-inputs: normalized Haar probability measure, unitary irreducible
-representations, Peter-Weyl theory, and matrix-element Schur orthogonality for
-compact groups. Its durable claim is restricted to the abstract finite `B_4`
-packet; no physical input supplies or enlarges that scope.
+Repository-source dependency set: empty. The mathematical authority surface
+is normalized Haar probability measure, unitary irreducible representations,
+Peter-Weyl theory, and matrix-element Schur orthogonality for compact groups.
+The interface with the parent Wilson program requires a coefficient sequence
+carrying its own physical authority.
 
-## Forbidden imports check
+## Input-authority check
 
-- No PDG observed values consumed.
-- No literature numerical comparators consumed.
-- No fitted selectors consumed.
-- No admitted unit conventions load-bearing on the claim.
-- No same-surface family arguments.
-- No Wilson action or `beta = 6` framework-point input.
-- No identification with the parent plaquette environment operator.
+The complete load-bearing input roster is the finite `B_4` character packet,
+normalized Haar measure, the abstract normalized nonnegative swap-symmetric
+sequence, and standard compact-group representation algebra. Numerical data,
+physical coefficient provenance, environment compression, and Wilson
+configuration-integral construction retain their respective source
+authorities in the parent program.
 
 ## Validation
 
@@ -356,10 +314,11 @@ verifies, on the finite `N = 4` truncation (`B_4 = {(p,q): 0 <= p,q <= 4}`):
    symmetric square, symmetric cube, and conjugate symmetric cube
    characters reproduce `C_Z chi_mu(V) = rho_mu chi_mu(V)` for three
    nontrivial `V` values and an abstract rational symmetric coefficient
-   sequence. This Monte Carlo calculation is support, not the exact proof.
+   sequence. This Monte Carlo calculation supplies independent numerical
+   support; the indexed Schur contraction supplies the exact proof.
 8. Hostile controls that reject a missing `1/d_mu`, `W` in place of
-   `W^{-1}`, conjugating the target character, and a helper that merely
-   returns `rho_mu` without the factor `chi_mu(V)`.
+   `W^{-1}`, conjugating the target character, and the lookup-only value
+   `rho_mu` in place of the V-dependent value `rho_mu chi_mu(V)`.
 
 Expected summary:
 

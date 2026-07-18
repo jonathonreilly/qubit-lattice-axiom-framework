@@ -3,7 +3,7 @@ runner: scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06
 runner_sha256: fcb04609c8cbb5a79cac021ebed55d58f57bd011b3442bf53ec08e7b1c2aba76
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
@@ -129,8 +129,8 @@ PASS PR #2868 source note names primary runner :: scripts/frontier_post_record_d
 PASS PR #2868 runner source exists :: scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
 PASS PR #2868 runner cache exists :: logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt
 PASS PR #2868 cache runner matches source :: scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
-PASS PR #2868 cache SHA is fresh :: b1484cc0f4edd1e9f7b7c84dc40fa197ff8ea2c46f78a538322d2e3ee3daef1b
-PASS PR #2868 cache status ok :: {'runner': 'scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py', 'runner_sha256': 'b1484cc0f4edd1e9f7b7c84dc40fa197ff8ea2c46f78a538322d2e3ee3daef1b', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.05', 'status': 'ok'}
+PASS PR #2868 cache SHA is fresh :: eead9c1a04c20c7f5dd6b1bd5e32823d5e7622b37cf50def27493dc933b6c3bb
+PASS PR #2868 cache status ok :: {'runner': 'scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py', 'runner_sha256': 'eead9c1a04c20c7f5dd6b1bd5e32823d5e7622b37cf50def27493dc933b6c3bb', 'timeout_sec': '120', 'exit_code': '0', 'elapsed_sec': '0.04', 'status': 'ok'}
 PASS PR #2871 source note exists :: docs/POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md
 PASS PR #2871 source note names declared surface :: exact-support
 PASS PR #2871 source note names primary runner :: scripts/frontier_post_record_retained_unbounded_dynamics_gate_2026_06_06.py

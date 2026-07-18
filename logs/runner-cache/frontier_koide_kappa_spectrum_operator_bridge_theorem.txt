@@ -1,41 +1,50 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py
-runner_sha256: eff3f154cddc1a4ae96b04bd5b82f01f6345e8705a866423dca933818b7f07c7
+runner_sha256: 1ae9494a7d967526b276556456006cc4fa725837a88556abfdf0eff3d2f17e07
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.80
 status: ok
 ----- stdout -----
-Section A — symbolic Hermitian circulant and Fourier bridge
-  [PASS] T1 Hermitian circulant: H = H^H symbolically
-  [PASS] T2 Fourier eigenvalues lam_k are real  (lam_k = [a + 2*b1, a - b1 - sqrt(3)*b2, a - b1 + sqrt(3)*b2])
-  [PASS] T3 bridge a_0 = sqrt(3) * a  (symbolic)  (a_0 = sqrt(3)*a)
-  [PASS] T4 bridge |z|^2 = 3 |b|^2  (symbolic)  (|z|^2 = 3*b1**2 + 3*b2**2)
-  [PASS] T5 bridge identity a_0^2 - 2|z|^2 = 3 (a^2 - 2 |b|^2)
-  [PASS] T6 tr(H^3) phase term is 3(b^3+bbar^3), not a(b^3+bbar^3)  (phase piece = 6*b1*(b1**2 - 3*b2**2))
-
-Section B — PDG charged-lepton numerical realization
-  [PASS] T7 PDG Koide Q ~ 2/3  (Q = 0.66666051)
-  [PASS] T8 PDG operator-side kappa = a^2/|b|^2 ~ 2  (kappa = 2.00003693)
-
-Section C — random Herm_circ(3) sample scan
-  [PASS] T9 bridge identity holds on 200 random samples (max residual < 1e-10)  (max residual = 2.842e-14)
-
-Section D — condition equivalence under bridge
-  [PASS] T10 operator kappa = 2 implies spectrum a_0^2 = 2|z|^2 (zero residual on sample set)  (|spectrum residual| = 0.000e+00)
-
-Section E — MRU demotion source-boundary checks
-  [PASS] T11 demotion note records the 2026-06-18 source-boundary repair
-  [PASS] T12 clean claim is bounded demotion / bridge-corollary support
-  [PASS] T13 block-total route is bounded support, not standalone closure
-  [PASS] T14 demotion note prints the corrected cubic trace diagnostic
-  [PASS] T15 demotion note removes old retained-route overclaim phrases
-  [PASS] T16 demotion note narrows the SO(2) quotient failure to Path A
-  [PASS] T17 demotion note leaves alternative quotient attack routes open
-  [PASS] T18 bridge note declares bounded_theorem source claim type
-  [PASS] T19 bridge note removes retained-proposal and independent-closure overclaim phrases
-
-TOTAL: PASS=19 FAIL=0
+NORMAL — complex Fourier derivation
+  [PASS] N1 shift algebra C^3=I and C^dagger=C^2
+  [PASS] N2 H=aI+bC+conjugate(b)C^2 is Hermitian and circulant
+  [PASS] N3 declared DFT orientation has C f_k=omega^k f_k
+  [PASS] N4 Fourier basis exactly diagonalizes H
+  [PASS] N5 the three eigenvalues are real  ([a + 2*x, a - x - sqrt(3)*y, a - x + sqrt(3)*y])
+  [PASS] N6 a_0=sqrt(3)a  (a_0=sqrt(3)*a)
+  [PASS] N7 z=sqrt(3)b with the declared orientation
+  [PASS] N8 |z|^2=3|b|^2
+  [PASS] N9 global polynomial invariant has exact factor 3
+  [PASS] N10 b=0 boundary reduces to 3a^2 and meets the zero locus only at a=0
+  [PASS] N11 ratio form is equivalent only on the nonzero-denominator domain
+  [PASS] N12 tr(H^3)=3a^3+18a|b|^2+3(b^3+conjugate(b)^3)
+TOTAL mode=normal PASS=12 FAIL=0
+INDEPENDENT — characteristic polynomial, traces, and real DFT
+  [PASS] I1 direct characteristic polynomial reconstruction
+  [PASS] I2 direct traces tr(H) and tr(H^2)
+  [PASS] I3 direct cubic trace including phase coefficient
+  [PASS] I4 the three explicit real values are roots of the direct characteristic polynomial
+  [PASS] I5 explicit real DFT obeys R^T diag(1,2,2) R=I
+  [PASS] I6 explicit real DFT reconstructs (a_0,Re z,Im z)  (Matrix([[sqrt(3)*c, sqrt(3)*u, sqrt(3)*v]]))
+  [PASS] I7 independent a_0 identity
+  [PASS] I8 independent |z|^2 identity
+  [PASS] I9 independent polynomial invariant
+  [PASS] I10 spectral cubic sum equals the direct matrix trace
+TOTAL mode=independent PASS=10 FAIL=0
+HOSTILE — mutation-kill checks
+  [PASS] H1 KILL reversed DFT orientation (it returns conjugate(b), not b)
+  [PASS] H2 KILL missing 1/sqrt(3) Fourier normalization
+  [PASS] H3 KILL missing conjugation in H
+  [PASS] H4 KILL inverse cyclic shift under the declared DFT orientation
+  [PASS] H5 KILL wrong invariant prefactor 3/2
+  [PASS] H6 KILL wrong modulus factor |z|^2=(3/2)|b|^2
+  [PASS] H7 KILL global kappa-ratio extension using the b=0 origin counterexample  (polynomial residual=0 while the proposed ratio denominator=0)
+  [PASS] H8 KILL cubic phase coefficient 1 in place of 3
+  [PASS] H9 KILL an a-scaled cubic phase term
+  [PASS] H10 KILL missing conjugation in the eigenvalue formula
+TOTAL mode=hostile PASS=10 FAIL=0
+TOTAL mode=all PASS=32 FAIL=0
 
 ----- stderr -----
 

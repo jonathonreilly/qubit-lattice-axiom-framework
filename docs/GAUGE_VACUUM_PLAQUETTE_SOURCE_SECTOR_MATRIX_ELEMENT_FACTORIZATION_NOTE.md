@@ -1,11 +1,10 @@
-# Gauge-Vacuum Plaquette Conditional Source-Sector Matrix-Element Factorization Theorem
+# Gauge-Vacuum Plaquette Supplied-Diagonal Source-Sector Factorization Theorem
 
-**Date:** 2026-04-17; conditional-scope repair 2026-07-16
+**Date:** 2026-04-17; positive supplied-diagonal theorem 2026-07-18
 **Claim type:** positive_theorem
-**Claim scope:** exact finite-dimensional linear algebra on a stated truncated
-`SU(3)` character basis, conditional on a supplied positive
-character-diagonal operator `D_beta`; no identification of `D_beta` with the
-stripped Wilson residual is claimed.
+**Claim scope:** exact finite-dimensional factorization, positivity, symmetry,
+rank, kernel, and spectral consequences on a finite `SU(3)` character box for
+an explicitly supplied real nonnegative swap-symmetric diagonal sequence.
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit verdict or effective status.
 **Script:** `scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py`
@@ -13,105 +12,87 @@ set or predict an audit verdict or effective status.
 
 ## Question
 
-What factorization and matrix-element statements follow exactly on a finite
-`SU(3)` character-basis truncation once the middle operator is explicitly
-supplied as positive, character-diagonal, and conjugation-symmetric?
+What follows exactly from the finite character recurrence when the middle
+operator is supplied by a nonnegative swap-symmetric diagonal sequence?
 
-## Answer
+## Typed inputs
 
-Fix a finite character box, the self-adjoint source recurrence `J`, and
+Fix `N >= 0` and the finite square character box
 
-`M_beta := exp[(beta / 2) J]`.
+`B_N := {(p,q) : 0 <= p,q <= N}`.
 
-Supply an operator `D_beta` by its character-basis action
+Let
 
-`D_beta chi_(p,q) = kappa_(p,q)(beta) chi_(p,q)`,
+`H_N := span{chi_(p,q) : (p,q) in B_N}`
 
-where every `kappa_(p,q)(beta)` is real and nonnegative and
+with the irreducible characters as an orthonormal basis, and let `P_N` be the
+orthogonal projection onto `H_N`.
 
-`kappa_(p,q)(beta) = kappa_(q,p)(beta)`.
-
-Define
-
-`T_beta := M_beta D_beta M_beta`.
-
-Then `T_beta` is positive semidefinite, self-adjoint, and invariant under the
-character-conjugation swap. Its matrix elements are exactly
-
-`(T_beta)_(lambda,mu)
- = sum_nu (M_beta)_(lambda,nu) kappa_nu(beta) (M_beta)_(nu,mu)`.
-
-This is a conditional theorem for a supplied `D_beta`. It does not derive a
-Wilson residual operator, prove that a stripped Wilson compression is
-character-diagonal, or compute any physical `kappa_(p,q)(beta)`.
-
-## Finite character truncation
-
-Fix `N >= 0` and let
-
-`B_N := {(p,q) : 0 <= p,q <= N}`,
-
-`H_N := span{chi_(p,q) : (p,q) in B_N}`,
-
-with the irreducible characters taken as an orthonormal basis. Let `P_N` be
-orthogonal projection onto `H_N`. Define the compressed source recurrence by
-
-`J_N := P_N [(chi_(1,0) + chi_(0,1))/6] P_N`.
-
-Equivalently, its action is the six-neighbour recurrence
+The first operator input is the explicit real six-neighbor recurrence
 
 `J_N chi_(p,q) = (1/6) P_N [
     chi_(p+1,q) + chi_(p-1,q+1) + chi_(p,q-1)
   + chi_(p,q+1) + chi_(p+1,q-1) + chi_(p-1,q)]`,
 
-where terms with a negative label or outside `B_N` are omitted. The finite
-recurrence graph is undirected, so `J_N` is real self-adjoint.
+where labels outside `B_N` are omitted. Equivalently,
 
-Let `S_N` be the conjugation swap
+`J_N := P_N [(chi_(1,0) + chi_(0,1))/6] P_N`.
+
+Let the swap be
 
 `S_N chi_(p,q) := chi_(q,p)`.
 
-The recurrence is invariant under `(p,q) <-> (q,p)`, hence
-`S_N J_N = J_N S_N`. For real `beta`, define
+For a supplied real number `beta`, set
 
 `M_beta := exp[(beta/2) J_N]`.
 
-Functional calculus then gives, exactly:
+The second operator input is a supplied sequence
 
-- `M_beta` is self-adjoint;
-- `M_beta` is strictly positive and invertible;
-- `S_N M_beta = M_beta S_N`.
+`kappa_(p,q)(beta) in R`,
 
-No floating-point exponentiation is needed for these conclusions.
-
-## Supplied diagonal hypothesis
-
-The theorem assumes, rather than derives, a real coefficient family
+typed by
 
 `kappa_(p,q)(beta) >= 0`,
 
 `kappa_(p,q)(beta) = kappa_(q,p)(beta)`.
 
-Define
+It defines the character-diagonal operator
 
 `D_beta := sum_((p,q) in B_N)
               kappa_(p,q)(beta) |chi_(p,q)><chi_(p,q)|`.
 
-Thus character diagonality, positivity, and swap symmetry are explicit input
-hypotheses. Zeros are allowed, so `D_beta` and `T_beta` may be semidefinite.
-No normalization such as `kappa_(0,0)=1` is required by this theorem.
+Zeros are allowed, and no normalization of the supplied sequence is required.
 
-## Theorem
+## Theorem and outputs
 
-Under the finite-truncation and supplied-`D_beta` hypotheses above, define
+Define
 
 `T_beta := M_beta D_beta M_beta`.
 
-Then the following statements hold.
+Then all of the following hold.
 
-### 1. Exact matrix-element sum
+### 1. Properties of `M_beta`
 
-For `lambda,mu in B_N`, insert the character-basis resolution of the identity:
+The recurrence graph is undirected, so `J_N=J_N^*`. Its neighbor list is
+preserved by `(p,q) <-> (q,p)`, hence
+
+`S_N J_N = J_N S_N`.
+
+The spectral theorem therefore gives
+
+`M_beta = M_beta^* > 0`,
+
+`M_beta^(-1) = exp[-(beta/2)J_N]`,
+
+`S_N M_beta = M_beta S_N`.
+
+Thus `M_beta` is self-adjoint, strictly positive, invertible, and
+swap-commuting for every real `beta`.
+
+### 2. Exact finite matrix-element sum
+
+For `lambda,mu in B_N`, insertion of the character-basis resolution of the
+identity gives
 
 `(T_beta)_(lambda,mu)
  = <chi_lambda, M_beta D_beta M_beta chi_mu>`
@@ -119,22 +100,18 @@ For `lambda,mu in B_N`, insert the character-basis resolution of the identity:
 `= sum_(nu in B_N)
    (M_beta)_(lambda,nu) kappa_nu(beta) (M_beta)_(nu,mu)`.
 
-This is an exact finite sum and is simply the matrix law for the explicitly
-supplied diagonal operator.
+The order of both `M_beta` indices is fixed by the row-column convention in
+this displayed formula.
 
-### 2. Positivity and self-adjointness
+### 3. Positivity, self-adjointness, and exact Gram factorization
 
 For every `v in H_N`,
 
 `<v,T_beta v>
  = <M_beta v,D_beta M_beta v>
- = sum_nu kappa_nu(beta) |(M_beta v)_nu|^2 >= 0`.
+ = sum_(nu in B_N) kappa_nu(beta) |(M_beta v)_nu|^2 >= 0`.
 
-Also
-
-`T_beta^* = M_beta^* D_beta^* M_beta^* = T_beta`.
-
-Equivalently, with
+With
 
 `B_beta := D_beta^(1/2) M_beta`,
 
@@ -142,23 +119,45 @@ one has the exact Gram factorization
 
 `T_beta = B_beta^* B_beta`.
 
-### 3. Conjugation symmetry
+Consequently `T_beta` is positive semidefinite and self-adjoint.
 
-Because both `M_beta` and `D_beta` commute with `S_N`,
+### 4. Swap symmetry
+
+The supplied coefficient symmetry is exactly the statement
+
+`S_N D_beta = D_beta S_N`.
+
+Together with the corresponding identity for `M_beta`, this gives
 
 `S_N T_beta = T_beta S_N`.
 
-### 4. Rank, kernel, and spectral bounds
+### 5. Rank and kernel
 
-Since `M_beta` is invertible,
+Invertibility of `M_beta` gives the exact congruence identities
 
 `rank(T_beta) = rank(D_beta)`,
 
 `ker(T_beta) = M_beta^(-1) ker(D_beta)`.
 
-Write `m_-` and `m_+` for the smallest and largest eigenvalues of `M_beta`,
-and `d_-` and `d_+` for the smallest and largest supplied coefficients.
-Then
+Thus each supplied zero contributes exactly one null direction, transported
+by `M_beta^(-1)`.
+
+### 6. Spectral bounds and definiteness
+
+Let
+
+`m_- := lambda_min(M_beta)`, `m_+ := lambda_max(M_beta)`,
+
+`d_- := min_(nu in B_N) kappa_nu(beta)`,
+`d_+ := max_(nu in B_N) kappa_nu(beta)`.
+
+For every unit vector `v`,
+
+`d_- m_-^2
+ <= <v,T_beta v>
+ <= d_+ m_+^2`.
+
+Hence
 
 `d_- m_-^2 <= lambda_min(T_beta)`
 
@@ -166,114 +165,59 @@ and
 
 `lambda_max(T_beta) <= d_+ m_+^2`.
 
-In particular, `T_beta` is positive definite exactly when every supplied
-coefficient is strictly positive; supplied zeros give the corresponding
-semidefinite nullity through the invertible congruence.
+In particular, `T_beta` is positive definite if and only if every supplied
+coefficient is strictly positive. If any supplied coefficient is zero,
+`T_beta` is positive semidefinite with the rank and kernel stated above.
 
 ## The `beta = 6` specialization
 
-For `beta=6`, and only after a diagonal operator `D_6` has been supplied,
+At `beta=6`,
 
 `M_6 = exp(3J_N)`,
 
 `T_6 = exp(3J_N) D_6 exp(3J_N)`,
 
-with
+and
 
 `(T_6)_(lambda,mu)
- = sum_nu (exp(3J_N))_(lambda,nu)
+ = sum_(nu in B_N) (exp(3J_N))_(lambda,nu)
           kappa_nu(6)
           (exp(3J_N))_(nu,mu)`.
 
-This specialization does not identify `D_6` with a Wilson residual and does
-not turn a generic coefficient sequence into Wilson data.
+The same positivity, self-adjointness, swap, rank, kernel, spectral-bound, and
+definiteness conclusions apply.
 
-## Retracted Wilson inference and the missing stronger condition
+This theorem accepts `D_beta` through its typed supplied sequence and returns
+`T_beta` with the outputs above.
 
-An earlier version inferred that a stripped Wilson residual compression was a
-central convolution operator, hence character-diagonal, from reality,
-positivity, self-adjointness, and simultaneous-conjugation invariance. That
-inference is retracted.
+## Boundary
 
-Those properties do not force character diagonality. On `H_N` with `N>=1`,
-let
+No Wilson residual or physical compression is among the typed inputs. The
+theorem therefore makes no character-diagonality statement about an actual
+stripped Wilson compression and supplies no central-convolution or
+Peter-Weyl bridge to one. Any such identification, and any physical
+`kappa_(p,q)(beta)` data, require a separate source theorem.
 
-`v := chi_(0,0) + chi_(1,1)`,
+## Verification
 
-`C := I + |v><v|`.
+The runner separates exact algebra from deterministic numerical support:
 
-Then `C` is strictly positive and self-adjoint, and it commutes with `S_N`
-because `S_N v=v`. But
+- `Fraction`-only boxes verify recurrence self-adjointness and swap
+  commutation, including `N=0`;
+- exact rational matrices verify the matrix-element convention, Gram
+  orientation, rank/kernel identities, and strictly-positive, partly-zero,
+  all-zero, and `beta=0` cases;
+- deterministic symmetric eigendecompositions support the exponential and
+  spectral statements on several larger boxes and irregular supplied
+  sequences, including `beta=6`;
+- mutation validators reject malformed diagonal input, a wrong matrix-element
+  contraction, the wrong Gram-factor orientation, a negative coefficient for
+  the positivity conclusion, broken coefficient swap symmetry for the swap
+  conclusion, and singular or non-positive multiplier surrogates for
+  invertibility-dependent conclusions.
 
-`<chi_(0,0), C chi_(1,1)> = 1`,
-
-so `C` mixes characters and is not diagonal. Replacing `C` by `diag(C)` loses
-the cross terms in `M_beta C M_beta`; a `kappa`-only formula is therefore not
-valid for a general positive swap-symmetric operator.
-
-The corresponding finite kernel
-
-`K_C(U,V) := sum_(lambda,mu) C_(lambda,mu)
-chi_lambda(U) overline(chi_mu(V))`
-
-is separately conjugation invariant in `U` and `V`, hence in particular
-simultaneous-conjugation invariant. Thus the hostile example satisfies the old
-invariance premise as well as positivity and self-adjointness.
-
-The representation-theoretic condition that would justify character
-diagonality is stronger: for example, derive an actual kernel
-
-`K(U,V) = k(U V^(-1))`
-
-with `k` a central class function. Alternatively, after extending the operator
-to the relevant `L^2(SU(3))` representation space, prove the full left/right
-regular-action intertwining conditions whose commutant gives central
-convolution. Then Schur/Peter-Weyl theory gives character eigenvectors.
-Simultaneous conjugation alone only commutes with the conjugation action; it
-does not provide this translation/convolution structure.
-
-For the Wilson application, the remaining wall is therefore an explicit
-calculation or theorem showing that the algebraically stripped, compressed
-two-slice Wilson residual has this stronger structure, or a direct calculation
-of its character-basis matrix showing that every off-diagonal entry vanishes.
-Current-main static spatial-environment coefficient calculations do not by
-themselves identify that static convolution with the stripped two-slice
-operator.
-
-## Exact theorem versus runner witnesses
-
-The proof above is exact finite-dimensional linear algebra. The runner keeps
-that proof boundary visible:
-
-- a small `N=1` case uses `Fraction`-only rational matrices with an explicitly
-  supplied invertible rational `M`, including an exact Gram identity and the
-  hostile mixing operator `C`;
-- multiple larger boxes use deterministic floating-point matrix exponentials
-  only as finite witnesses;
-- the floating residuals and eigenspectra are not described as exact proofs;
-- the tested supplied sequences include irregular positive rational data,
-  algebraic data, same-total-weight asymmetry compatible with conjugation,
-  and zero/semidefinite cases;
-- a guarded diagonal helper accepts supplied diagonal `D` and rejects the
-  hostile off-diagonal `C`.
-
-## What this closes
-
-- the exact finite-dimensional matrix-element formula for a supplied positive
-  character-diagonal `D_beta`;
-- exact positivity, self-adjointness, conjugation symmetry, rank/kernel, and
-  spectral consequences of that supplied-operator theorem;
-- the conditional `beta=6` specialization for a supplied `D_6`.
-
-## What remains open
-
-- derivation of the actual stripped Wilson residual as a central convolution
-  or direct proof of its character diagonality;
-- proof that stripping/compression preserves any additional positivity or
-  operator structure needed in the physical Wilson construction;
-- physical `kappa_(p,q)(6)` data;
-- a `beta=6` Wilson Perron state, plaquette value, or repo-wide numerical
-  repinning.
+Floating residuals are reported only as numerical support; the theorem is the
+finite-dimensional argument above.
 
 ## Command
 

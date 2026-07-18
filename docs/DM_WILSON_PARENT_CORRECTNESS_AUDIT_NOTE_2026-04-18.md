@@ -82,9 +82,8 @@ From
   `T_src(6) = exp(3 J) D_6 exp(3 J)`
 
   is known algebraically when a positive character-diagonal `D_6` is supplied,
-- but neither the note nor its runner derives character diagonality for the
-  stripped Wilson residual; the runner includes an explicit positive
-  swap-symmetric off-diagonal counterexample.
+- and its runner verifies the typed supplied-diagonal inputs together with the
+  exact matrix, Gram, rank, and kernel outputs.
 
 From
 [GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md](./GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md):

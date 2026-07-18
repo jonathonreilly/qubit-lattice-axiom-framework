@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_vacuum_plaquette_compression_scope_rho_complete_interface_narrow_2026_06_12.py
-runner_sha256: 175220f86b612dff5ba00a5a6c7b1ca35155f1d613b5b6ec0ad4e2493fe4f706
+runner_sha256: 48e99b1b97060c062f5270863bd77f3c2c83ba35b3e2559c2d73b81301205d6f
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 0.80
 status: ok
 ----- stdout -----
 Gauge-vacuum plaquette compression-scope rho-complete interface runner
@@ -67,9 +67,8 @@ PASS: paired theorem note exists as a durable repository file
 PASS: copying an equal supplied rho vector leaves the operator readout unchanged
 PASS: diagonal extraction is idempotent on an already diagonal supplied operator
 PASS: the hostile raw operator cannot be reconstructed from its diagonal interface
-PASS: the primary exact hostile control independently rejects a kappa-only physical inference
 
-TOTAL: PASS=18, FAIL=0
+TOTAL: PASS=17, FAIL=0
 
 ----- stderr -----
 

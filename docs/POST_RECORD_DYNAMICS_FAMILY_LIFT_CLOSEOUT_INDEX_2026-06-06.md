@@ -91,7 +91,7 @@ The runner verifies:
   and the source note names its primary runner;
 - the extended index consumes the repaired directed-certificate
   `SUMMARY: PASS=64 FAIL=0`, repaired stack-map `SUMMARY: PASS=53 FAIL=0`,
-  and repaired campaign-closeout `SUMMARY: PASS=46 FAIL=0` certificates;
+  and repaired campaign-closeout `SUMMARY: PASS=53 FAIL=0` certificates;
 - the stack has one `proposed_retained exact structural theorem`, five
   `exact-support` entries, one `bounded-support` entry, and three `no-go`
   entries;

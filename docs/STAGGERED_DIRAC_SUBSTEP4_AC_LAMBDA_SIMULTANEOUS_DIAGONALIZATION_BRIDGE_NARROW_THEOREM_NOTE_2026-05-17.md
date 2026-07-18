@@ -349,13 +349,8 @@ verifies via sympy exact symbolic arithmetic:
    `K = (1+2i)E_12`, for which `K_12 ≠ 0` but `K_21 = 0`, and a dense
    complex non-Hermitian matrix with all six ordered off-diagonal
    entries nonzero. Verify that the distinguishing commutators detect
-   these directions. This demonstrates missing coverage in the old
-   Hermitian certificate; it is not a counterexample to the theorem.
-9. **Non-distinct-spectrum boundary.** Replace the triple by
-   `T_1 = T_2 = T_3 = I`. Verify that the same dense non-diagonal
-   complex matrix then commutes with the triple and that every
-   separation weight vanishes, confirming that pairwise joint-spectrum
-   distinctness is load-bearing.
+   these directions. This exercises coverage missing in the old
+   Hermitian certificate while remaining an in-scope noncommuting control.
 
 The previous Hermitian ansatz linked `K_βα` to the conjugate of
 `K_αβ` and restricted the diagonal entries to real values. It therefore

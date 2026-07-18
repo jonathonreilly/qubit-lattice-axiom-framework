@@ -2,17 +2,17 @@
 """
 Gauge-holonomy CHARACTER CAP on the Koide ratio: the algebraic bound r_R <= r0 (cap-only).
 
-SOURCE CONTENT (algebraic): the framework's b-term (the C3[111] doublet coupling) is a hop-RETURN
-that traverses a gauge link (matter_gauge_minimal_coupling / koide_gamma_axis_covariant, retained);
-the a-term is ON-SITE (no link). Dressing the hop with a background link U in gauge rep R and forming
-the gauge-invariant (fibre-averaged) effective generation operator gives
+CONDITIONAL ALGEBRA: supply a closed based holonomy tensor dressing of the
+`b` coefficient, a normalized conjugation-invariant fibre trace, and an
+unchanged onsite `a != 0`. Then
 
     b_eff = b * chi_R(U)/d_R ,   a_eff = a ,   r_R = r0 * |chi_R(U)/d_R|^2 ,
 
 where chi_R(U)=Tr_R(U), d_R=dim R, and r0=|b|^2/a^2 is the trivial-rep value.
 Since |chi_R(U)| <= d_R for every unitary (sum of d_R unit-modulus eigenvalues), |chi_R(U)/d_R| <= 1,
-so r_R <= r0 ALWAYS, with equality iff U is a center (scalar-phase) element. This is a bounded
-algebraic inequality; it is rep-agnostic and uses NO physical sector-to-representation assignment.
+so r_R <= r0, with equality iff U_R is a scalar phase in the chosen
+representation. This conditional algebra uses no physical
+sector-to-representation assignment and does not derive the dressing.
 
 OPEN BRIDGE (not source content; narrowed 2026-06-20): the *physical* reading that "a gauge
 holonomy suppresses the OBSERVED lepton/quark Koide ratio below the leptonic value and so gives the
@@ -29,19 +29,30 @@ Prints "TOTAL: PASS=N FAIL=0".
 """
 import numpy as np
 
-PASS = 0
-FAIL = 0
+ALGEBRA_PASS = 0
+ALGEBRA_FAIL = 0
+CONDITIONAL_PASS = 0
+CONDITIONAL_FAIL = 0
 rng = np.random.default_rng(20260615)
 
 
-def check(name, cond):
-    global PASS, FAIL
+def check(name, cond, *, kind="algebra"):
+    global ALGEBRA_PASS, ALGEBRA_FAIL, CONDITIONAL_PASS, CONDITIONAL_FAIL
+    if kind not in {"algebra", "conditional"}:
+        raise ValueError(f"unknown check kind: {kind}")
+    prefix = kind.upper()
     if cond:
-        PASS += 1
-        print(f"  PASS  {name}")
+        if kind == "algebra":
+            ALGEBRA_PASS += 1
+        else:
+            CONDITIONAL_PASS += 1
+        print(f"  {prefix} PASS  {name}")
     else:
-        FAIL += 1
-        print(f"  FAIL  {name}")
+        if kind == "algebra":
+            ALGEBRA_FAIL += 1
+        else:
+            CONDITIONAL_FAIL += 1
+        print(f"  {prefix} FAIL  {name}")
 
 
 def haar(d):
@@ -82,7 +93,7 @@ def effective_r(a, b, U):
 # bare (free) couplings; set r0 = (b/a)^2 = 1/2 so the trivial-rep value = the leptonic value
 a, b = 1.0, np.sqrt(0.5)
 r0 = b ** 2 / a ** 2
-check("bare trivial-rep value r0 = 1/2 (free input, leptonic reference)", abs(r0 - 0.5) < 1e-12)
+check("bare trivial-rep value r0 = 1/2 (free input)", abs(r0 - 0.5) < 1e-12)
 
 
 # ============================================================================
@@ -118,15 +129,15 @@ check("normalized character magnitude |chi/d| <= 1 (the bound's source)",
 
 
 # ============================================================================
-# 3. EQUALITY iff center: a scalar-phase background gives no suppression; generic strictly suppresses.
+# 3. Representation-level equality: scalar phase gives no suppression.
 # ============================================================================
-print("\n[3] equality r_R=r0 iff U is a center (scalar-phase) element")
+print("\n[3] equality r_R=r0 iff U_R is scalar phase in the chosen representation")
 for dR, ph in [(3, w3), (2, -1), (8, 1j)]:
-    Uc = ph * np.eye(dR, dtype=complex)       # center element = scalar phase
+    Uc = ph * np.eye(dR, dtype=complex)
     r_c, _, nc_c = effective_r(a, b, Uc)
-    check(f"center (d={dR}, phase) gives r_R = r0 (no suppression, |chi/d|=1)",
+    check(f"scalar phase (d={dR}) gives r_R = r0 (|chi/d|=1)",
           abs(r_c - r0) < 1e-10 and abs(nc_c - 1) < 1e-10)
-# a generic (non-center) background strictly suppresses
+# a generic non-scalar matrix strictly suppresses
 r_g, _, _ = effective_r(a, b, haar(3))
 check("a generic U(3) background strictly suppresses: r_R < r0", r_g < r0 - 1e-6)
 
@@ -148,14 +159,14 @@ r_lep, r_down, r_up = 0.5, 0.597, 0.773      # observed (anchors, not derivation
 # premise this r0 would equal the leptonic r_lep -- that equality is the unsupplied identification.
 ceiling = r0
 check("[conditional] algebraic cap value r0 = 1/2 equals leptonic anchor IF bridge held (open premise)",
-      abs(ceiling - r_lep) < 1e-12)
+      abs(ceiling - r_lep) < 1e-12, kind="conditional")
 check("[conditional] observed r_down = 0.597 exceeds the cap value (arithmetic of anchors)",
-      r_down > ceiling + 1e-3)
+      r_down > ceiling + 1e-3, kind="conditional")
 check("[conditional] observed r_up = 0.773 exceeds the cap value (arithmetic of anchors)",
-      r_up > ceiling + 1e-3)
+      r_up > ceiling + 1e-3, kind="conditional")
 check("[conditional] => IF the unsupplied bridge held, the holonomy channel would give the WRONG "
       "ordering (r_quark>cap observed; <=cap predicted) -- bridge NOT asserted here",
-      r_down > ceiling and r_up > ceiling)
+      r_down > ceiling and r_up > ceiling, kind="conditional")
 
 
 # ============================================================================
@@ -180,5 +191,12 @@ check("the bound is the same inequality for two distinct free r0 (0.5 and 0.31) 
       abs(r0 - 0.5) < 1e-12 and abs(r0b - 0.31) < 1e-12 and r0 != r0b)
 
 
-print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
-assert FAIL == 0, "discriminating checks failed"
+total_pass = ALGEBRA_PASS + CONDITIONAL_PASS
+total_fail = ALGEBRA_FAIL + CONDITIONAL_FAIL
+print(
+    f"\nSCORECARD ALGEBRA_PASS={ALGEBRA_PASS} ALGEBRA_FAIL={ALGEBRA_FAIL} "
+    f"CONDITIONAL_PASS={CONDITIONAL_PASS} CONDITIONAL_FAIL={CONDITIONAL_FAIL}"
+)
+print(f"TOTAL: PASS={total_pass} FAIL={total_fail}")
+if total_fail:
+    raise SystemExit(1)

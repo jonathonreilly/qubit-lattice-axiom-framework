@@ -5099,6 +5099,59 @@
         "total_pass": 35
       },
       "verdict_rationale": "The fixed-eigenvector algebra and simple-spectrum phase argument are valid class-A closures, and the runner genuinely performs all 35 reported checks rather than printing hard-coded conclusions. Issue: the note also asserts a derived no-go boundary; N1 has fewer than five distinct attack mechanisms, N2 leaves degenerate-rotation and unlabeled-permutation walls, N3 confirms the label convention is load-bearing, N4 provides no prior residual witness, N5 lacks live five-resolution checks, N6 and N8 are not fully dispositioned in a compliant gate, and N7 lacks an independently evidenced steelman resolution. Why this blocks: the development-tier rules forbid audited_clean for that asserted boundary without a complete passing N1-N8 packet, despite the mathematical soundness of the displayed counterexample. Claim boundary until fixed: retain the fixed-eigenvector unitarity, double-stochasticity, and phase-invariance core as clean algebra."
+    },
+    {
+      "archived_at": "2026-07-18T06:58:14.506395+00:00",
+      "audit_date": "2026-07-18T06:58:02.658723+00:00",
+      "audit_invocation_history": [
+        "18c32b8e7e3e4a329a6f498d1ae76929"
+      ],
+      "audit_invocation_id": "18c32b8e7e3e4a329a6f498d1ae76929",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 17.984,
+        "runner_hash": "563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f",
+        "transitive_descendants": 715
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-drain-ready-20260717-80f5cbf2998544dd9e3b6404d508d32b-dm_leptogenesis_pmns_pro-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The fixed-basis and ordered simple-spectrum algebra closes. Clean closure of the full artifact is withheld because its derived negative boundaries lack the required N1-N8 stress packet, particularly five distinct attack routes and resolution-complete live evidence.",
+      "claim_scope": "intrinsic ordered pair-to-packet object only for simple spectra with ascending-eigenvalue labels",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-18T06:58:02.658723+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "With simple spectra and ascending-eigenvalue labels, any other allowed diagonalizers differ only by diagonal phases, so |U_e^dagger U_nu|^2 is unchanged.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: add current-cycle N1-N8 evidence for the degenerate-spectrum and unlabeled-permutation boundaries, including five distinct attack routes and the required resolution-tagged stdout, then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 14,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The positive algebra is correct: products of unitaries are unitary, squared entry magnitudes are doubly stochastic, and ordered simple-spectrum diagonalizers differ only by phases. However, the note also asserts derived no-go boundaries for degenerate spectra and absent eigenvalue labels; the current evidence supplies phase, permutation, and one finite degenerate-basis test but not five distinct N1 attack mechanisms, a complete N2 wall-independence treatment, or complete N3-N4 scans. For N5-N7, stdout lacks the required five-resolution rhetoric checks, exhaustive partial-closure dispositions, and an independently evidenced steelman resolution. The N8 index is present, but its candidates are not exhaustively dispositioned here, so the no-go-discipline gate cannot pass even though the narrow algebraic result is sound."
     }
   ],
   "prose_corrections": [],

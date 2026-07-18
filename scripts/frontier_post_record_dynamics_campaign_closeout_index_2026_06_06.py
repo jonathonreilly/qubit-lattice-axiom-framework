@@ -27,7 +27,7 @@ STACK = (
     StackPr(2856, "supplied kernel selection rule", "exact-support", "SUMMARY: PASS=39 FAIL=0"),
     StackPr(2858, "target-vector firewall", "no-go", "SUMMARY: PASS=36 FAIL=0"),
     StackPr(2861, "admitted sample target-vector", "exact-support", "SUMMARY: PASS=30 FAIL=0"),
-    StackPr(2864, "dynamics authority stack map", "exact-support", "SUMMARY: PASS=52 FAIL=0"),
+    StackPr(2864, "dynamics authority stack map", "exact-support", "SUMMARY: PASS=53 FAIL=0"),
 )
 
 LOGS = (

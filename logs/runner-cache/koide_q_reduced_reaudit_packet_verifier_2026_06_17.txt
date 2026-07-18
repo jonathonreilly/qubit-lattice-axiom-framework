@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/koide_q_reduced_reaudit_packet_verifier_2026_06_17.py
-runner_sha256: 937a4959f63e7b36de889185fd72cd1a9542571a9d51cdc153633f25c6638786
+runner_sha256: 91177e10201443b239cebb162086aac7ac389438efc3711023f3913c1acff683
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Koide Q reduced-carrier restricted packet verifier
@@ -23,7 +23,7 @@ PASS parent preserves exact reduced determinant support
 PASS parent leaves audit authority external
 PASS carrier obstruction records 'reduced two-slot carrier'
 PASS carrier obstruction records 'coarse-graining/readout'
-PASS carrier obstruction records 'Record/Quantum axioms do not supply the missing readout context'
+PASS carrier obstruction records 'Record/Qubit axioms do not supply the missing readout context'
 PASS carrier obstruction records 'not been derived as the physical'
 PASS carrier obstruction records 'add a new axiom'
 PASS D_red no-go records 'For every `c > 0`'
@@ -44,7 +44,7 @@ PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_
 PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt records runner path -- runner=scripts/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.py
 PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt exits zero -- exit_code=0
 PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt status ok -- status=ok
-PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt sha matches source -- cache=d53d5d90e8cb77dd727ca2b543ad6c18d69e49d392131a1f20837f33d2d4e05c, live=d53d5d90e8cb77dd727ca2b543ad6c18d69e49d392131a1f20837f33d2d4e05c
+PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt sha matches source -- cache=8ea426d05ea31424e21913500e4f4b78bfca7141363a194974c59db900bbd8a7, live=8ea426d05ea31424e21913500e4f4b78bfca7141363a194974c59db900bbd8a7
 PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt contains 'TOTAL: PASS=13 FAIL=0'
 PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt contains 'missing bridge is a real readout/coarse-graining theorem'
 PASS scripts/koide_q_dred_normalization_freedom_no_go_2026_06_15.py exists

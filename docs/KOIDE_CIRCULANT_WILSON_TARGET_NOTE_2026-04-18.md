@@ -1,6 +1,7 @@
 # Koide Circulant Wilson-Target Note
 
 **Date:** 2026-04-18
+**Claim type:** positive_theorem
 **Status:** support - structural or confirmatory support note
 **Runner:** `scripts/frontier_koide_circulant_wilson_target.py`
 
@@ -20,9 +21,10 @@ verbatim from:
 Companion structural inputs already in the one-hop deps:
 
 - [`KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md`](KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)
-  — abstract three-coordinate reconstruction of the cyclic projection of a
-  supplied `H in Herm(3)` on `B0 = I`, `B1 = C + C^2`, and
-  `B2 = i(C - C^2)`; no Wilson responses are derived.
+  — for a supplied real-linear functional `ell` on the Hermitian
+  adjacent-chain space, abstract three-response Riesz reconstruction on
+  `B0 = I`, `B1 = C + C^2`, and `B2 = i(C - C^2)`; conversely, the same trace
+  responses recover every cyclic Hermitian matrix.
 - [`KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md`](KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md)
   — exact algebraic compression of a supplied Hermitian block to those three
   cyclic coordinates.
@@ -229,11 +231,11 @@ Koide lane itself asks for.
 
 The companion
 [KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md](./KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md)
-does not perform Step 2. It makes only the target-space algebra exact: after a
-Hermitian matrix has been supplied, its cyclic projection is reconstructed
-from the three trace coordinates on `B0 = I`, `B1 = C + C^2`, and
-`B2 = i(C - C^2)`, and the cone equation is equivalent to
-`2 r0^2 = r1^2 + r2^2`. The companion
+does not perform Step 2. Given a supplied real-linear functional `ell`, it
+constructs only the unique Riesz representative of `ell` restricted to the
+cyclic subspace from the responses on `B0 = I`, `B1 = C + C^2`, and
+`B2 = i(C - C^2)`. It also proves that the abstract cone equation is
+equivalent to `2 r0^2 = r1^2 + r2^2`. The companion
 [KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md](./KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md)
 supplies only the exact compression of a given Hermitian block to those same
 three cyclic coordinates.

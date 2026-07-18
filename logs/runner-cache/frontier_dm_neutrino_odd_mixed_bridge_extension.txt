@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_odd_mixed_bridge_extension.py
-runner_sha256: c3d8891a43d980f24ba3d8d296488fd2adb3844cbe21260910b19fb39733bf17
+runner_sha256: 2ec302b8fe7a50d897b627dc3091f7d8ff5731806603b8f32e0b41770d9cb184
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.09
@@ -11,7 +11,7 @@ DM ODD-SLOT MINIMAL MIXED-BRIDGE EXTENSION
 ========================================================================================
 
 Authority stack:
-  - bounded supplied-matrix Hermitian-circulant / P23 algebra lemma
+  - positive finite-matrix Hermitian-circulant / P23 algebra theorem
   - DM odd-circulant current-stack zero law
   - DM two-Higgs minimality theorem
   - DM two-Higgs continuity sheet theorem
@@ -23,7 +23,7 @@ Question:
 ========================================================================================
 PART 1: THE CURRENT BANK ELIMINATES THE EVEN / ADDITIVE ROUTES
 ========================================================================================
-  [PASS] The bounded algebra lemma identifies one unique P23-odd local class
+  [PASS] The positive finite-matrix theorem identifies one unique P23-odd local class
   [PASS] The current-zero-law note records c_odd,current = 0
   [PASS] The current-zero-law note says the present bank is residual-Z2 even
 
@@ -63,3 +63,4 @@ RESULT
 PASS=7  FAIL=0
 
 ----- stderr -----
+

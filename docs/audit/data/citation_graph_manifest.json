@@ -1,6 +1,6 @@
 {
- "edge_count": 14484,
- "node_count": 3967,
+ "edge_count": 14442,
+ "node_count": 3966,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -327,8 +327,8 @@
    "out_degree": 1
   },
   "active_sector_grounded_by_mass_vs_k_dominant_operator_sieve_narrow_theorem_note_2026-06-06": {
-   "deps_hash": "b156bfeac8a2",
-   "out_degree": 6
+   "deps_hash": "709c3097cb26",
+   "out_degree": 4
   },
   "activity_energy_bound_witnesses_bounded_note_2026-07-08": {
    "deps_hash": "e3b0c44298fc",
@@ -1417,6 +1417,10 @@
   "boundary_law_robustness_note_2026-04-11": {
    "deps_hash": "5168a3e4ccde",
    "out_degree": 1
+  },
+  "bounded_additive_on_interval_linearity_rebuilt_support_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "bounded_admission_registry_proposal_note_2026-06-15": {
    "deps_hash": "e3b0c44298fc",
@@ -3199,8 +3203,8 @@
    "out_degree": 4
   },
   "dm_leptogenesis_pmns_constrained_optimization_algebra_narrow_theorem_note_2026-05-17": {
-   "deps_hash": "fbfaa23064ca",
-   "out_degree": 3
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "dm_leptogenesis_pmns_constructive_continuity_closure_theorem_note_2026-04-17": {
    "deps_hash": "68c41e7ca64e",
@@ -3235,8 +3239,8 @@
    "out_degree": 9
   },
   "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16": {
-   "deps_hash": "5bbbf5bf9795",
-   "out_degree": 1
+   "deps_hash": "be5728d32778",
+   "out_degree": 3
   },
   "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16": {
    "deps_hash": "e3b0c44298fc",
@@ -3379,8 +3383,8 @@
    "out_degree": 2
   },
   "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": {
-   "deps_hash": "b5ee876b571b",
-   "out_degree": 1
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16": {
    "deps_hash": "f857a30401e8",
@@ -4579,20 +4583,20 @@
    "out_degree": 11
   },
   "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18": {
-   "deps_hash": "d62897410292",
-   "out_degree": 6
+   "deps_hash": "917abdd4b61b",
+   "out_degree": 5
   },
   "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15": {
-   "deps_hash": "0ea368cf8788",
-   "out_degree": 7
+   "deps_hash": "a2620873862b",
+   "out_degree": 6
   },
   "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15": {
-   "deps_hash": "5aaf9d56b041",
-   "out_degree": 8
+   "deps_hash": "99a98bbc5360",
+   "out_degree": 7
   },
   "flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18": {
-   "deps_hash": "698bccb7c46b",
-   "out_degree": 5
+   "deps_hash": "a4aaf215eb85",
+   "out_degree": 4
   },
   "flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31": {
    "deps_hash": "bedccd29d028",
@@ -5371,8 +5375,8 @@
    "out_degree": 2
   },
   "gauge_vacuum_plaquette_connected_hierarchy_theorem_note": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "2e3de81cbff5",
+   "out_degree": 2
   },
   "gauge_vacuum_plaquette_constant_lift_obstruction_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5495,8 +5499,8 @@
    "out_degree": 9
   },
   "gauge_vacuum_plaquette_framework_point_underdetermination_note": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "8b642437ba42",
+   "out_degree": 1
   },
   "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": {
    "deps_hash": "c21cb86da8c4",
@@ -5511,8 +5515,8 @@
    "out_degree": 1
   },
   "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note": {
-   "deps_hash": "2abec248e680",
-   "out_degree": 2
+   "deps_hash": "25b2451ac0b8",
+   "out_degree": 4
   },
   "gauge_vacuum_plaquette_internal_link_contraction_derived_narrow_theorem_note_2026-06-12": {
    "deps_hash": "74f9d3a4e180",
@@ -5631,8 +5635,8 @@
    "out_degree": 0
   },
   "gauge_vacuum_plaquette_susceptibility_flow_theorem_note": {
-   "deps_hash": "1584319856fe",
-   "out_degree": 2
+   "deps_hash": "8b642437ba42",
+   "out_degree": 1
   },
   "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12": {
    "deps_hash": "76bba2ead1d3",
@@ -6463,8 +6467,8 @@
    "out_degree": 18
   },
   "higgs_mass_derived_note": {
-   "deps_hash": "8277fa90f62a",
-   "out_degree": 14
+   "deps_hash": "d061e9581599",
+   "out_degree": 13
   },
   "higgs_mass_derived_note_2026-05-17": {
    "deps_hash": "4fbc4ff44eb4",
@@ -6763,8 +6767,8 @@
    "out_degree": 1
   },
   "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03": {
-   "deps_hash": "7f4a7c2d3319",
-   "out_degree": 3
+   "deps_hash": "7680adde7def",
+   "out_degree": 2
   },
   "inertial_closure_width_independent_acceleration_two_step_surface_bounded_theorem_note_2026-07-08": {
    "deps_hash": "cc15ea2aa286",
@@ -7071,8 +7075,8 @@
    "out_degree": 23
   },
   "koide_bae_probe_kappa_prediction_test_partial_falsification_note_2026-05-09_probe29": {
-   "deps_hash": "a2e74374b42f",
-   "out_degree": 23
+   "deps_hash": "57a55330f728",
+   "out_degree": 2
   },
   "koide_bae_probe_lepton_triplet_c3_cycle_bounded_note_2026-05-09_probe23": {
    "deps_hash": "df28b11e8041",
@@ -7103,8 +7107,8 @@
    "out_degree": 9
   },
   "koide_bae_probe_wilson_chain_mass_note_2026-05-09_probe19": {
-   "deps_hash": "e2e3eee24a4a",
-   "out_degree": 11
+   "deps_hash": "e3e2ce41dfe3",
+   "out_degree": 10
   },
   "koide_bae_probe_wilson_dimensional_consistency_bounded_note_2026-05-09_probe26": {
    "deps_hash": "033a7e226439",
@@ -7175,8 +7179,8 @@
    "out_degree": 2
   },
   "koide_circulant_character_derivation_note_2026-04-18": {
-   "deps_hash": "5c6132469757",
-   "out_degree": 12
+   "deps_hash": "3708d70b5f52",
+   "out_degree": 11
   },
   "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
@@ -7219,8 +7223,8 @@
    "out_degree": 1
   },
   "koide_cyclic_wilson_descendant_law_note_2026-04-18": {
-   "deps_hash": "451e00b984c8",
-   "out_degree": 1
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "koide_delta_azimuth_selector_is_chirality_odd_records_mirror_degeneracy_no_go_note_2026-06-08": {
    "deps_hash": "3a0234d7cad0",
@@ -7935,8 +7939,8 @@
    "out_degree": 4
   },
   "koide_weighted_character_source_axis_theorem_note_2026-04-20": {
-   "deps_hash": "5464136b0a82",
-   "out_degree": 2
+   "deps_hash": "ba26a115e10f",
+   "out_degree": 1
   },
   "koide_x_bae_pauli_antisymmetrization_note_2026-05-08_probex_bae_pauli": {
    "deps_hash": "4224fd7a4a5f",
@@ -7975,8 +7979,8 @@
    "out_degree": 0
   },
   "koide_z3_qubit_radian_bridge_no_go_note_2026-04-20": {
-   "deps_hash": "d21efac924a2",
-   "out_degree": 6
+   "deps_hash": "e142665071e8",
+   "out_degree": 5
   },
   "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": {
    "deps_hash": "e3b0c44298fc",
@@ -10103,8 +10107,8 @@
    "out_degree": 4
   },
   "plaquette_4d_mc_support_note_2026-05-04": {
-   "deps_hash": "75b087c72077",
-   "out_degree": 4
+   "deps_hash": "f3319678ed24",
+   "out_degree": 3
   },
   "plaquette_alpha_s_chain_audit_map_synthesis_meta_note_2026-05-10": {
    "deps_hash": "ff012eac938a",
@@ -10123,12 +10127,12 @@
    "out_degree": 5
   },
   "plaquette_bootstrap_framework_integration_note_2026-05-03": {
-   "deps_hash": "b10fc14eb614",
-   "out_degree": 4
+   "deps_hash": "d49077fea065",
+   "out_degree": 3
   },
   "plaquette_bootstrap_framework_specific_positivity_note_2026-05-03": {
-   "deps_hash": "298f827dba90",
-   "out_degree": 5
+   "deps_hash": "ebb41ad5e63b",
+   "out_degree": 4
   },
   "plaquette_c6_derivation_framework_su3_narrow_theorem_note_2026-05-27": {
    "deps_hash": "658cb3921873",
@@ -10155,8 +10159,8 @@
    "out_degree": 3
   },
   "plaquette_observable_uniqueness_bounded_note_2026-05-25": {
-   "deps_hash": "541aa0047535",
-   "out_degree": 5
+   "deps_hash": "135e3893191e",
+   "out_degree": 4
   },
   "plaquette_per_step_per_plaquette_normalization_bridge_narrow_theorem_note_2026-06-12": {
    "deps_hash": "f98ce20816b9",
@@ -14014,10 +14018,6 @@
    "deps_hash": "3e5774e17b1d",
    "out_degree": 1
   },
-  "theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17": {
-   "deps_hash": "2f32a26caa82",
-   "out_degree": 5
-  },
   "theta_defect_closure_from_admissibility_test_bounded_note_2026-07-03": {
    "deps_hash": "a37578c80ad0",
    "out_degree": 2
@@ -14101,10 +14101,6 @@
   "theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_bounded_theorem_note_2026-07-02": {
    "deps_hash": "0f6f95392b53",
    "out_degree": 4
-  },
-  "theta_post_erasure_odd_side_collapse_record_facing_tail_bounded_theorem_note_2026-07-18": {
-   "deps_hash": "7d56779087d7",
-   "out_degree": 1
   },
   "theta_quark_determinant_cross_sector_readout_derivation_obligation": {
    "deps_hash": "e3b0c44298fc",

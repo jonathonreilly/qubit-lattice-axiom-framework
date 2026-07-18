@@ -29,13 +29,18 @@ THEN the following identities hold on the abstract B_4 packet:
   (T3) Uniqueness: rho^(1) = rho^(2) iff their diagonal operators agree.
 
   (T4) Positivity / self-adjointness / swap-symmetry of R under the
-       abstract hypotheses (rho >= 0, rho symmetric, rho_(0,0) = 1).
+       real nonnegative swap-symmetric hypotheses. The separate condition
+       rho_(0,0) = 1 fixes the trivial-channel normalization used in T2.
 
-This is pure abstract finite-dimensional SU(3) representation theory on an
-abstract real coefficient sequence (rho_(p,q)) over the SU(3) character
-basis. **No** Wilson action,
-**no** unmarked spatial environment, **no** beta = 6 framework-point
-input, and **no** physical coefficient data are consumed.
+The input surface is the finite B_4 SU(3) character basis, normalized Haar
+probability measure, an abstract real nonnegative swap-symmetric sequence
+(rho_(p,q)) with rho_(0,0) = 1, and standard compact-group representation
+algebra. The output surface is T1 Schur orthogonality, T2 equality of
+normalized convolution and diagonal action on V_4, T3 coefficient uniqueness,
+and T4 positivity, self-adjointness, and swap symmetry. In the parent
+Wilson-environment program, a physical coefficient result supplies the
+sequence with its own authority; this runner verifies the algebraic map after
+that typed input is present.
 
 The load-bearing verification expands chi_lambda(V W^-1) into generic
 representation-matrix entries and contracts the three matrix indices using
@@ -44,7 +49,7 @@ deterministic Haar-random SU(3) calculation checks the convolution using
 explicit fundamental, antifundamental, adjoint, and low symmetric-power
 character formulas. Hostile mutations reject a missing 1/d factor, W in
 place of W^-1, conjugating the target character, and returning rho_target
-without the V-dependent character.
+alone in place of the V-dependent value rho_target chi_target(V).
 """
 
 from __future__ import annotations
@@ -208,7 +213,7 @@ section("Part 2 (T2): exact matrix-index contraction for character convolution")
 # The dictionaries below are exact symbolic polynomials in the generic
 # entries D^lambda(V)_(a,b): matrix indices are keys and Fraction values are
 # their coefficients. Thus the 1/d factor and the surviving diagonal trace
-# are produced by the indexed contraction, not inserted by a final helper.
+# are produced directly by the indexed contraction.
 MatrixPolynomial = dict[tuple[int, int], Fraction]
 ConvolutionPolynomial = dict[tuple[tuple[int, int], int, int], Fraction | float]
 
@@ -310,7 +315,7 @@ check(
 )
 
 # Hostile mutation: omit the Schur 1/d normalization. It produces Tr D(V),
-# not Tr D(V)/d, already for the fundamental representation.
+# which differs by a factor of d from the required fundamental contraction.
 missing_dimension_mutant = {
     (c, c): Fraction(1) for c in range(d_su3(1, 0))
 }
@@ -411,8 +416,8 @@ rho1 = make_positive_symmetric({
 })
 
 # Apply the finite sum only after the raw contraction and dimension
-# cancellation have been checked. Compare full generic matrix polynomials,
-# not a scalar coefficient lookup.
+# cancellation have been checked. Compare full generic matrix polynomials
+# against independently constructed expected polynomials.
 all_targets_ok = True
 for target in B_N:
     actual = apply_z_convolution(rho1, target)
@@ -474,10 +479,10 @@ check(
 # =============================================================================
 section("Part 4 (T4): positivity, self-adjointness, conjugation-symmetry of R")
 # =============================================================================
-# Under the abstract hypothesis (rho >= 0, rho_(p,q) = rho_(q,p), rho_(0,0) = 1),
-# R is a diagonal operator with non-negative real eigenvalues. In the
-# Schur-orthonormal character basis, R is diagonal with real entries, hence
-# self-adjoint.
+# Under the abstract hypotheses rho >= 0 and rho_(p,q) = rho_(q,p), R is a
+# diagonal operator with non-negative real eigenvalues. In the Schur-orthonormal
+# character basis, R is diagonal with real entries, hence self-adjoint. The
+# separate condition rho_(0,0) = 1 fixes the trivial-channel normalization in T2.
 R_matrix = np.diag([float(r) for r in rho1])
 swap_matrix = np.zeros_like(R_matrix)
 for i, (p, q) in enumerate(B_N):
@@ -507,10 +512,10 @@ check(
     detail=f"||[swap, R]||_inf = {commute_err:.3e}",
 )
 
-# Normalization
+# Trivial-channel normalization used in T2
 norm_err = abs(float(rho1[INDEX[(0, 0)]]) - 1.0)
 check(
-    "(T4) Normalization: rho_(0,0) = 1 exactly",
+    "(T2) Trivial-channel normalization: rho_(0,0) = 1 exactly",
     norm_err < 1e-15,
     detail=f"|rho_(0,0) - 1| = {norm_err:.3e}",
 )
@@ -542,8 +547,8 @@ check(
 # =============================================================================
 section("Part 6: independent deterministic Haar-SU(3) convolution check")
 # =============================================================================
-# The Monte Carlo convolution below does not use the Weyl integration routine
-# or the symbolic contraction table. It samples Haar-random 3 x 3 SU(3)
+# The Monte Carlo convolution below is independent of the Weyl integration
+# routine and symbolic contraction table. It samples Haar-random 3 x 3 SU(3)
 # matrices and evaluates explicit trace formulas for 1, 3, 3bar, 8, 6, 6bar,
 # 10, and 10bar. A small preflight separately cross-checks those formulas
 # against the Weyl formula at fixed torus points.
@@ -827,18 +832,21 @@ print("""
     (T4)  R is positive, self-adjoint (in the Schur-orthonormal character basis),
           and commutes with the conjugation swap (p,q) <-> (q,p).
 
-  Load-bearing step class:
-    (A) - pure finite-dim SU(3) representation theory on an abstract real
-    coefficient sequence. No Wilson action, no unmarked spatial environment,
-    no beta = 6 framework-point input, no identification with the parent
-    plaquette environment operator R_beta^env.
+  INPUT AND AUTHORITY SURFACE:
+    The complete input is the finite B_4 SU(3) character basis, normalized
+    Haar probability measure, an abstract real nonnegative swap-symmetric
+    sequence with rho_(0,0) = 1, and standard compact-group representation
+    algebra.
 
-  This narrow theorem isolates the abstract algebraic equivalence between
-  diagonal-coefficient operators and convolution-by-central-class-function
-  operators on the finite SU(3) B_4 character truncation. It does NOT close the
-  parent gate. The remaining physical-Wilson-coefficient derivation is
-  separately addressed by the bounded companion
-  GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.
+  OUTPUT SURFACE:
+    T1 Schur orthogonality; T2 equality of normalized convolution and diagonal
+    action on V_4; T3 coefficient uniqueness; T4 positivity,
+    self-adjointness, and swap symmetry.
+
+  PARENT PROGRAM DIVISION OF LABOR:
+    A physical Wilson-environment coefficient result supplies the sequence
+    with its own source authority. This theorem supplies the algebraic
+    convolution/diagonal equivalence after that typed input is present.
 """)
 
 

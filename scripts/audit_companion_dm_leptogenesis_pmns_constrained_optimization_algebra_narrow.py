@@ -20,8 +20,8 @@ THEN the constrained problem  min { J(z) : z in F }  satisfies
   (T3)  multiplier formula:
         lambda_* = <grad J(z_*), grad C(z_*)> / || grad C(z_*) ||^2.
 
-This narrow-theorem companion runner adds a sympy-based exact-symbolic
-verification:
+This narrow-theorem companion runner gives a sympy-based exact-symbolic
+verification of the abstract implication:
 
   (a) realizes a generic strictly convex C^2 J(z) (a symbolic SPD
       quadratic on R^n with n=2 for tractability of symbolic gradients);
@@ -29,13 +29,13 @@ verification:
       affine constraint c^T z - d, regular by construction);
   (c) computes the closed-form constrained minimizer z_* via the
       Lagrange system and verifies (T1)-(T3) symbolically;
-  (d) verifies the three derivable corollaries (C1)-(C3);
+  (d) verifies (C1)-(C2) parametrically and illustrates (C3) at an exact
+      rational sample;
   (e) free-symbol bookkeeping for the multiplier substitution;
   (f) numerical FP cross-check at one independent random SPD/affine
       sample;
-  (g) counterfactual probe: necessity of (H1) (strict convexity) via
-      a degenerate J = c^T z linear case admitting an affine subspace
-      of minimizers;
+  (g) counterfactual probe: necessity of (H1) on a bounded open convex
+      domain, with (H2)-(H4) and (H1') kept true;
   (h) counterfactual probe: necessity of (H2) (constraint regularity)
       via a constraint with vanishing gradient, breaking (L-formula);
   (i) sanity probe: the convex-uniqueness (T1) argument via strict
@@ -43,18 +43,13 @@ verification:
       midpoint of a hypothetical pair of minimizers.
 
 Companion role: not a new claim row, not a new source note, no status
-promotion. Provides audit-friendly evidence that the parent's
-load-bearing standalone calculus content holds at exact symbolic
+promotion. It verifies the standalone calculus content at exact symbolic
 precision under the four explicit supplied hypotheses plus (H1'). The
-supplied hypotheses themselves are not re-derived; in particular, the
-strict convexity of I_seed and the constraint regularity of
-eta_{i_*}/eta_obs - 1 remain conditional imports from the parent row
-and from the cited
-dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16
-authority.
+supplied hypotheses themselves are not re-derived. Any downstream mapping to
+`I_seed` or `eta_{i_*}/eta_obs - 1` is informative and does not supply or
+discharge those hypotheses.
 """
 
-from pathlib import Path
 import sys
 
 try:
@@ -64,12 +59,9 @@ try:
         Rational,
         Symbol,
         diff,
-        eye,
         simplify,
         solve,
         symbols,
-        sqrt,
-        Eq,
         expand,
         zeros,
     )
@@ -158,10 +150,11 @@ def main() -> int:
     print(f"  grad J(z) = {grad_J.tolist()}")
     print(f"  grad C(z) = {grad_C.tolist()}")
 
-    # SPD discriminant nonvanishing (supplied (H1): A SPD)
+    # Exact discriminant identity. Positivity is the separate supplied (H1)
+    # premise and is not self-certified by this expression.
     check(
-        "A SPD discriminant det(A) = A11 A22 - A12^2 (supplied positive under (H1))",
-        det_A != 0,
+        "det(A) equals the displayed discriminant A11 A22 - A12^2 exactly",
+        simplify(A.det() - det_A) == 0,
         detail=f"det_A = {det_A}",
     )
 
@@ -264,10 +257,8 @@ def main() -> int:
     L_at_zero = (grad_J_star - 0 * grad_C_star)
     L_at_zero_simpl = Matrix([simplify(L_at_zero[i]) for i in range(2)])
     # The implication is: if lambda were 0, then grad_J_star must be 0.
-    # We test the converse: a generic (a, A) makes grad J(z_*) nonzero
-    # when c is generic, hence lambda_* must be nonzero on generic data.
-    # Numeric exhibition: with a = (1, 0), A = I, c = (1, 1), d = 0,
-    # grad J(z_*) is nonzero, so lambda_* =/= 0.
+    # The exact parametric implication is already the identity (L). We also
+    # exhibit it at one rational sample with nonzero grad J and lambda.
     sample_c3 = {A11: 1, A22: 1, A12: 0, a1: 1, a2: 0, c1: 1, c2: 1, d: 0}
     lam_star_c3 = lam_star.subs(sample_c3)
     grad_J_star_c3 = Matrix([grad_J_star[i].subs(sample_c3) for i in range(2)])
@@ -332,76 +323,76 @@ def main() -> int:
     )
 
     # ---------------------------------------------------------------------
-    section("Part 7: counterfactual probe -- necessity of (H1) (strict convexity)")
+    section("Part 7: counterfactual probe -- drop (H1) while keeping (H2)-(H4) and (H1')")
     # ---------------------------------------------------------------------
-    # Replace J by a linear function J_lin(z) = c1' z1 + c2' z2.
-    # Then grad J_lin = (c1', c2') is CONSTANT and the Lagrange system
-    # becomes (c1', c2') = lambda (c1, c2), C(z) = 0. This is
-    # OVER-determined in lambda but UNDER-determined in z: any z on the
-    # constraint affine line gives the same value of J_lin (only if
-    # (c1', c2') parallel to (c1, c2)) or no minimum at all otherwise.
-    # In either case, (T1) (unique global minimum) fails.
-    c1p, c2p = symbols("c1p c2p", real=True)
-    J_lin = c1p * z1 + c2p * z2
-    grad_J_lin = Matrix([diff(J_lin, v) for v in (z1, z2)])
-    # Try to solve grad J_lin = lambda grad C, C(z) = 0:
-    eqs_lin = [grad_J_lin[0] - lam * grad_C[0], grad_J_lin[1] - lam * grad_C[1], C_expr]
-    sol_lin = solve(eqs_lin, (z1, z2, lam), dict=True)
-    # If (c1', c2') parallel to (c1, c2), z is free along the constraint.
-    # If not parallel, no solution (J_lin unbounded below on F).
-    # Either way, no unique minimizer -- (T1) fails.
-    # For the parallel case c1p = c1, c2p = c2: any z on C(z)=0 is a
-    # stationary candidate, so the constrained problem has infinitely
-    # many minimizers in J = constant along F.
-    sample_parallel = {c1p: c1, c2p: c2}
-    eqs_par = [
-        grad_J_lin[0].subs(sample_parallel) - lam * grad_C[0],
-        grad_J_lin[1].subs(sample_parallel) - lam * grad_C[1],
-        C_expr,
-    ]
-    sol_par = solve(eqs_par, (z1, z2, lam), dict=True)
-    # sympy returns an infinite-family solution (lambda = 1) with z free
-    # along the constraint. We detect this by checking that z1 or z2 is
-    # a free symbol in the resulting solution dict (or sol_par contains
-    # multiple distinct symbolic candidates).
-    cf_h1_no_unique = (
-        not sol_par
-        or len(sol_par) == 0
-        or any(
-            (z1 in s and z2 not in s) or (z2 in s and z1 not in s)
-            for s in sol_par
-        )
-    )
-    # More robust: at c1p = c1, c2p = c2, J_lin = c1 z1 + c2 z2 = d
-    # everywhere on C(z) = 0 by direct substitution. Hence J is
-    # CONSTANT on F, no unique minimizer.
-    J_lin_par_on_F = simplify(
-        J_lin.subs(sample_parallel).subs({z2: (d - c1 * z1) / c2}) - d
+    # Let Omega_cf = (-2,2)^2, C_cf(z) = z2, and J_cf(z) = z2^2.
+    # Then F_cf = (-2,2) x {0}: it is non-empty, bounded, convex and hence
+    # segment-feasible; grad C_cf = (0,1) is regular; and J_cf attains its
+    # minimum 0 at every feasible point. H1 alone fails because the Hessian
+    # diag(0,2) is not positive definite.
+    J_flat = z2**2
+    C_flat = z2
+    grad_C_flat = Matrix([diff(C_flat, v) for v in (z1, z2)])
+    hessian_J_flat = Matrix([[diff(J_flat, vi, vj) for vj in (z1, z2)] for vi in (z1, z2)])
+    z_flat_a = {z1: -1, z2: 0}
+    z_flat_b = {z1: 1, z2: 0}
+    check(
+        "(H1) counterfactual keeps regularity: grad C_cf = (0,1)",
+        grad_C_flat == Matrix([0, 1]),
+        detail=f"grad C_cf = {grad_C_flat.T.tolist()}",
     )
     check(
-        "(H1) counterfactual: linear J on affine constraint is constant on F (no unique min)",
-        J_lin_par_on_F == 0,
-        detail=f"J_lin - d on F = {J_lin_par_on_F} (zero means J constant)",
+        "(H1) counterfactual objective is not strictly convex",
+        hessian_J_flat.det() == 0,
+        detail=f"Hessian J_cf = {hessian_J_flat.tolist()}",
+    )
+    check(
+        "(H1) counterfactual has two distinct feasible global minimizers in bounded Omega_cf",
+        z_flat_a != z_flat_b
+        and C_flat.subs(z_flat_a) == 0
+        and C_flat.subs(z_flat_b) == 0
+        and J_flat.subs(z_flat_a) == 0
+        and J_flat.subs(z_flat_b) == 0
+        and simplify(J_flat.subs(z2, 0)) == 0,
+        detail="Omega_cf=(-2,2)^2; z_a=(-1,0), z_b=(1,0); J_cf|F_cf=0",
     )
 
     # ---------------------------------------------------------------------
     section("Part 8: counterfactual probe -- necessity of (H2) (constraint regularity)")
     # ---------------------------------------------------------------------
-    # Replace C by C_cf(z) = (z1)^2 + (z2)^2 - r^2 at the point z = (0, 0),
-    # but the supplied feasible point is z_feas = (0, 0). At z_feas,
-    # grad C_cf = (2 z1, 2 z2) = (0, 0), so (H2) fails.
-    # The (L-formula) lambda_* = <gJ, gC> / ||gC||^2 has zero denominator.
-    r = Symbol("r", positive=True, real=True)
-    C_cf = z1**2 + z2**2 - r**2
+    # Replace C by C_cf(z) = z1^2 + z2^2. Its feasible set is the singleton
+    # {(0,0)}, where grad C_cf vanishes. Choose the strictly convex objective
+    # J_cf = (z1 - 1)^2 + z2^2, whose gradient is nonzero at the feasible
+    # minimizer. No lambda can satisfy grad J_cf = lambda grad C_cf there,
+    # and the projection formula has zero denominator.
+    C_cf = z1**2 + z2**2
+    J_cf = (z1 - 1) ** 2 + z2**2
     grad_C_cf = Matrix([diff(C_cf, v) for v in (z1, z2)])
+    grad_J_cf = Matrix([diff(J_cf, v) for v in (z1, z2)])
+    C_cf_at0 = C_cf.subs({z1: 0, z2: 0})
     grad_C_cf_at0 = grad_C_cf.subs({z1: 0, z2: 0})
+    grad_J_cf_at0 = grad_J_cf.subs({z1: 0, z2: 0})
     norm_grad_C_cf_at0_sq = (grad_C_cf_at0.T @ grad_C_cf_at0)[0, 0]
     check(
-        "(H2) counterfactual: || grad C_cf ||^2 at (0,0) is 0 (regularity fails)",
+        "(H2) counterfactual point (0,0) is feasible for C_cf = z1^2 + z2^2",
+        simplify(C_cf_at0) == 0,
+        detail=f"C_cf(0,0) = {C_cf_at0}",
+    )
+    check(
+        "(H2) counterfactual has grad C_cf(0,0) = 0 but grad J_cf(0,0) nonzero",
+        grad_C_cf_at0 == zeros(2, 1) and grad_J_cf_at0 != zeros(2, 1),
+        detail=f"grad C_cf = {grad_C_cf_at0.T.tolist()}, grad J_cf = {grad_J_cf_at0.T.tolist()}",
+    )
+    check(
+        "(H2) counterfactual cannot satisfy Lagrange stationarity for any lambda",
+        simplify(grad_J_cf_at0 - lam * grad_C_cf_at0) != zeros(2, 1),
+        detail=f"grad J_cf - lambda grad C_cf = {(grad_J_cf_at0 - lam * grad_C_cf_at0).T.tolist()}",
+    )
+    check(
+        "(H2) counterfactual makes the multiplier-formula denominator zero",
         simplify(norm_grad_C_cf_at0_sq) == 0,
         detail=f"|| grad C_cf(0,0) ||^2 = {norm_grad_C_cf_at0_sq}",
     )
-    # Hence (L-formula) is ill-defined at this z (zero denominator).
 
     # ---------------------------------------------------------------------
     section("Part 9: (T1) midpoint strict-convexity probe")
@@ -413,6 +404,7 @@ def main() -> int:
     z_a_val = Matrix([1, 0])
     z_b_val = Matrix([0, 1])
     z_m_val = Matrix([Rational(1, 2), Rational(1, 2)])
+    C_t1 = z1 + z2 - 1
     J_a = (
         Rational(1, 2)
         * ((z_a_val - a.subs(sample_t1)).T @ A.subs(sample_t1) @ (z_a_val - a.subs(sample_t1)))[0, 0]
@@ -428,8 +420,11 @@ def main() -> int:
     avg = (J_a + J_b) / 2
     strict_ineq = simplify(avg - J_m) > 0
     check(
-        "(T1) midpoint strict-convexity inequality at sample (z_a=(1,0), z_b=(0,1))",
-        bool(strict_ineq),
+        "(T1) affine-feasible midpoint sample satisfies the strict-convexity inequality",
+        C_t1.subs({z1: z_a_val[0], z2: z_a_val[1]}) == 0
+        and C_t1.subs({z1: z_b_val[0], z2: z_b_val[1]}) == 0
+        and C_t1.subs({z1: z_m_val[0], z2: z_m_val[1]}) == 0
+        and bool(strict_ineq),
         detail=f"J((z_a+z_b)/2) = {J_m}, (J(z_a)+J(z_b))/2 = {avg}, diff = {simplify(avg - J_m)}",
     )
 
@@ -453,9 +448,9 @@ def main() -> int:
     print("  Verified at exact sympy precision:")
     print("    (T2) Lagrange stationarity grad J(z_*) = lambda_* grad C(z_*)")
     print("    (T3) multiplier formula lambda_* = <gJ, gC>/||gC||^2")
-    print("    (C1)-(C3) corollaries all reduce to 0 / hold parametrically")
+    print("    (C1)-(C2) reduce to 0 parametrically; (C3) follows from (L) and has an exact sample")
     print("    Numerical FP cross-check at random SPD/affine sample (constraint and (L))")
-    print("    (H1) counterfactual: linear J on affine F is constant -> no unique min")
+    print("    (H1) counterfactual: bounded regular segment with flat J_cf|F_cf -> no unique min")
     print("    (H2) counterfactual: vanishing-grad C breaks (L-formula) denominator")
     print("    (T1) midpoint strict-convexity inequality at one sample")
     print("    Hessian of J equals A (strict convexity <=> A SPD)")

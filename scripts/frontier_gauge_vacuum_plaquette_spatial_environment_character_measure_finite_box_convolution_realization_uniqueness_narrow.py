@@ -31,10 +31,10 @@ on the finite weight box B = {(p, q) : 0 <= p, q <= 4}. Specifically:
        supplied, the normalized finite character polynomial realizing it
        by convolution is unique;
 
-  (M5) witness-source consistency: instantiating rho := rho(6) from the
-       bounded companion gives a Z_(6)^env|_B that equals the canonical
-       normalized single-link SU(3) Wilson boundary class function
-       truncation to machine precision;
+  (M5) chosen-packet consistency: instantiating rho := rho(6) from the
+       bounded companion gives the finite character polynomial of that
+       stipulated integral packet to machine precision; no environment
+       identification is inferred;
 
   (M6) symbolic NMAX_SYM = 2 check that (M3) holds exactly via sympy
        character-coefficient inversion.
@@ -59,7 +59,7 @@ import sympy as sp
 
 
 # Make the bounded-companion module importable so the narrow runner consumes
-# the same coefficient routine, not a witness.
+# its stipulated finite-evaluation routine rather than a hard-coded table.
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 if SCRIPT_DIR not in sys.path:
     sys.path.insert(0, SCRIPT_DIR)
@@ -105,7 +105,7 @@ def weights_box(nmax: int) -> list[tuple[int, int]]:
 
 
 def companion_rho_finite_box(nmax: int) -> np.ndarray:
-    """Use the bounded-companion's exact Bessel-determinant routine."""
+    """Use the bounded companion's stipulated Bessel-determinant evaluation."""
     weights = weights_box(nmax)
     c00 = _companion.wilson_character_coefficient_bessel(0, 0)
     rho = np.zeros(len(weights), dtype=float)
@@ -318,27 +318,27 @@ def main() -> int:
         f"||R - R_perturbed||_2 = {pair_break_err:.3e}",
     )
 
-    # ---- M5: witness-source consistency with canonical single-link Wilson
+    # ---- M5: chosen-packet consistency with the stipulated integral
     # The constructed Z|_B (with rho := rho(6) and z_00 := c_(0,0)(6)) must
-    # equal the canonical normalized single-link Wilson boundary class
-    # function truncation by direct numerical character-coefficient
+    # equal the finite character polynomial of the stipulated integral by
+    # direct numerical character-coefficient
     # evaluation:
-    #   c_(p,q)(6) = canonical Wilson character integral
+    #   c_(p,q)(6) = stipulated character integral
     # vs
     #   z_00 d_(p,q) rho_(p,q)(6) = c_(0,0)(6) * d_(p,q) * c_(p,q)(6) /
     #                               (d_(p,q) c_(0,0)(6))
     #                            = c_(p,q)(6).
     # So Z|_B character coefficient on chi_(p,q) equals c_(p,q)(6) exactly.
-    canonical_wilson_match_err = 0.0
+    stipulated_packet_match_err = 0.0
     for i, (p, q) in enumerate(weights):
-        canonical = float(_companion.wilson_character_coefficient_bessel(p, q))
-        canonical_wilson_match_err = max(
-            canonical_wilson_match_err, float(abs(Z_coeffs[i] - canonical))
+        stipulated = float(_companion.wilson_character_coefficient_bessel(p, q))
+        stipulated_packet_match_err = max(
+            stipulated_packet_match_err, float(abs(Z_coeffs[i] - stipulated))
         )
     check(
-        "(M5) supplied single-link Wilson packet reproduces its own finite character polynomial",
-        canonical_wilson_match_err < 1e-12,
-        f"|Z_coeff - c_(p,q)(6)| max = {canonical_wilson_match_err:.3e}",
+        "(M5) chosen stipulated-integral packet reproduces its own finite character polynomial",
+        stipulated_packet_match_err < 1e-12,
+        f"|Z_coeff - c_(p,q)(6)| max = {stipulated_packet_match_err:.3e}",
     )
 
     # ---- M6: symbolic NMAX_SYM = 2 check that (M3) holds exactly via sympy

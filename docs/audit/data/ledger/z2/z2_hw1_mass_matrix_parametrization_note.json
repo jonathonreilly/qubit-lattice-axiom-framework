@@ -34,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "a3e39af11d492e5f4ab45c8d71a83f8fbe111081f8cd2bc3188315f73cd5f571",
+  "note_hash": "4bfcec29c67a04ed7324c713e02586fe8c6b041efc4898c15848221ca6e688fb",
   "note_path": "docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Residual-environment finite coefficient packet on the accepted Wilson 3+1
-surface.
+Consumer-defined finite coefficient packet on a truncated source-sector
+matrix model.
 
 Previously this runner injected a generic positive conjugation-symmetric
 diagonal witness rho_env(p,q) and verified packaging only. The auditor
 correctly flagged that as identification-by-naming rather than computation. This
-revised runner replaces the witness with the canonical normalized single-link
-SU(3) Wilson boundary character coefficients
+revised runner substitutes a reproducible finite packet from the explicitly
+stipulated single-link-form SU(3) character integral
 
   rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q) c_(0,0)(6)),
   c_(p,q)(6)   = int_{SU(3)} chi_(p,q)(U) exp((6/3) Re tr U) dU,
@@ -19,15 +19,15 @@ performs and cross-checks against direct Weyl integration to machine precision.
 
 What this runner does on the finite 0 <= p,q <= NMAX box:
 
-- computes rho_(p,q)(6) directly from the canonical Wilson character integral
-  rather than asserting a witness sequence;
+- computes rho_(p,q)(6) directly from the stipulated character integral rather
+  than hard-coding a witness table;
 - verifies the finite diagonal packet action
   R_6^packet chi_(p,q) = rho_(p,q)(6) chi_(p,q) with the computed values;
-- verifies the factorized framework-point law
-  exp(3 J) D_6^loc R_6^packet exp(3 J) is self-adjoint,
+- verifies the consumer-defined finite packaging law
+  exp(3 J) D_6^packet R_6^packet exp(3 J) is self-adjoint,
   conjugation-symmetric and Perron-positive with those computed values;
-- documents the explicit numerical distance from the prior witness so an
-  auditor can confirm the witness has actually been replaced.
+- documents the explicit numerical distance from the prior witness so the
+  chosen finite input is not confused with the old hard-coded table.
 
 What this revised runner explicitly does NOT close (still open):
 
@@ -149,9 +149,8 @@ def dominant_eigenpair(m: np.ndarray) -> tuple[float, np.ndarray]:
 def prior_witness_residual_identification(p: int, q: int) -> float:
     """The retired hand-picked witness sequence from the prior runner.
 
-    Retained here only so the new computation can certify that the witness has
-    actually been replaced by computed Wilson environment data, not silently
-    relabelled.
+    Retained only to certify that the chosen computed packet differs from the
+    old table; this does not select either packet as physical environment data.
     """
     return float(np.exp(-0.27 * (p + q) - 0.07 * ((p - q) ** 2)))
 
@@ -168,10 +167,10 @@ def main() -> int:
     )
     d_local = np.diag(local**4)
 
-    # Computed (not witness-injected) finite-box residual-environment data.
-    # The canonical normalized single-link SU(3) Wilson boundary character
-    # coefficient is computed by the same Schur-Weyl Bessel-determinant
-    # identity that wilson_character_coefficient already uses for D_6^loc.
+    # Chosen finite-box packet from the stipulated integral.  The same
+    # Schur-Weyl Bessel-determinant identity is used for the consumer's
+    # separately constructed D_6^packet;
+    # no physical residual-environment identification follows from that choice.
     rho_env = local.copy()
     r_env = np.diag(rho_env)
 
@@ -192,7 +191,7 @@ def main() -> int:
     rho_at_00 = float(rho_env[index[(0, 0)]])
 
     # Direct eigen-action check on the marked class-function basis: the finite
-    # diagonal packet, built from the computed Wilson coefficients, acts on
+    # diagonal packet, built from the stipulated-integral coefficients, acts on
     # each chi_(p,q) (here represented by e_(p,q)) with eigenvalue
     # rho_(p,q)(6).
     eig_action_err = 0.0
@@ -208,13 +207,13 @@ def main() -> int:
     expectation = float(psi @ (jmat @ psi))
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE RESIDUAL ENVIRONMENT FINITE COEFFICIENT PACKET")
+    print("CONSUMER-DEFINED FINITE COEFFICIENT MATRIX PACKET")
     print("=" * 78)
     print()
     print("Exact already-fixed pieces")
     print(f"  source-operator symmetry error        = {float(np.max(np.abs(jmat - jmat.T))):.3e}")
     print(f"  half-slice multiplier min eig         = {float(np.min(np.linalg.eigvalsh(multiplier))):.12f}")
-    print(f"  local-factor min/max                  = {float(np.min(np.diag(d_local))):.12e}, {float(np.max(np.diag(d_local))):.12f}")
+    print(f"  fourth-power diagonal min/max         = {float(np.min(np.diag(d_local))):.12e}, {float(np.max(np.diag(d_local))):.12f}")
     print()
     print("Computed finite packet coefficients (Bessel-determinant, finite box)")
     print(f"  rho_(0,0)(6)                          = {rho_at_00:.16f}")
@@ -242,45 +241,44 @@ def main() -> int:
         detail=f"min eigenvalue={float(np.min(np.linalg.eigvalsh(multiplier))):.6f}",
     )
     check(
-        "the normalized mixed-kernel local factor D_6^loc is explicit, positive, diagonal, and conjugation-symmetric",
+        "the separately constructed fourth-power diagonal D_6^packet is positive, diagonal, and conjugation-symmetric",
         float(np.min(np.diag(d_local))) > 0.0 and float(np.max(np.abs(swap @ d_local - d_local @ swap))) < 1.0e-12,
-        detail=f"min diagonal entry={float(np.min(np.diag(d_local))):.6e}",
+        detail=f"min diagonal entry={float(np.min(np.diag(d_local))):.6e}; no local-factor authority is claimed",
     )
     check(
-        "the finite diagonal packet R_6^packet is built from the computed normalized single-link Wilson character coefficients rho_(p,q)(6) (Bessel-determinant identity), not from a hand-picked witness sequence",
-        witness_diff_abs > 1.0e-2 and abs(rho_at_00 - 1.0) < 1.0e-12 and rho_min > 0.0,
-        detail=f"rho_(0,0)(6)={rho_at_00:.12f}, min rho={rho_min:.6e}, max |rho - prior_witness|={witness_diff_abs:.3e}",
+        "the finite diagonal packet R_6^packet uses normalized positive stipulated-integral coefficients rho_(p,q)(6)",
+        abs(rho_at_00 - 1.0) < 1.0e-12 and rho_min > 0.0,
+        detail=f"rho_(0,0)(6)={rho_at_00:.12f}, min rho={rho_min:.6e}",
     )
     check(
-        "R_6^packet acts diagonally on the marked-plaquette class-function basis with R_6^packet chi_(p,q) = rho_(p,q)(6) chi_(p,q) using the computed Wilson coefficients",
+        "the chosen R_6^packet acts diagonally on the finite class-function basis with R_6^packet chi_(p,q) = rho_(p,q)(6) chi_(p,q)",
         eig_action_err < 1.0e-14,
         detail=f"eigen-action error = {eig_action_err:.3e}",
     )
     check(
-        "with the computed rho_env replacing the prior witness, the finite package exp(3 J) D_6^loc R_6^packet exp(3 J) is self-adjoint, conjugation-symmetric, and positivity-improving on the truncated source sector",
+        "with the chosen stipulated-integral packet substituted, the finite package exp(3 J) D_6^packet R_6^packet exp(3 J) is self-adjoint, conjugation-symmetric, and positivity-improving on the truncated source sector",
         rho_sym < 1.0e-12 and commute_err < 1.0e-12 and transfer_sym < 1.0e-12 and transfer_swap < 1.0e-12 and transfer_min > 0.0,
         detail=f"rho_swap={rho_sym:.3e}, [D,R]={commute_err:.3e}, transfer_sym={transfer_sym:.3e}, transfer_swap={transfer_swap:.3e}, min entry={transfer_min:.3e}",
     )
 
     check(
-        "the finite diagonal packet R_6^packet is structurally distinct from the local mixed-kernel factor D_6^loc and is isolated as its own source-sector object",
-        float(np.max(np.abs(np.diag(r_env) - 1.0))) > 1.0e-3,
-        detail="the mixed kernel is fixed by D_6^loc; R_6^packet supplies the computed finite coefficient slot",
+        "regression: the chosen stipulated-integral packet differs from the retired hard-coded witness table",
+        witness_diff_abs > 1.0e-2,
+        detail=f"max |rho - prior_witness|={witness_diff_abs:.3e}; this is bookkeeping, not mathematical evidence",
         bucket="SUPPORT",
     )
     check(
-        "with the computed rho_env, the finite package Perron expectation <J> is positive on the truncated source sector",
+        "the finite diagonal packet R_6^packet is algebraically distinct from the separately constructed D_6^packet diagonal",
+        float(np.max(np.abs(np.diag(r_env) - 1.0))) > 1.0e-3,
+        detail="the two consumer-defined matrices differ; no physical placement is inferred",
+        bucket="SUPPORT",
+    )
+    check(
+        "with the chosen finite packet, the constructed package Perron expectation <J> is positive on the truncated source sector",
         expectation > 0.0,
         detail=f"Perron <J> = {expectation:.6f}",
         bucket="SUPPORT",
     )
-    check(
-        "the computed canonical single-link Wilson coefficients used here for rho_env on this finite box match those independently computed by the companion runner frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py (same Bessel-determinant identity)",
-        abs(rho_at_00 - 1.0) < 1.0e-12,
-        detail="rho_(0,0)(6)=1 exactly is the normalization both runners share; companion runner cross-checks against Weyl integration to ~1e-14",
-        bucket="SUPPORT",
-    )
-
     print()
     print("=" * 78)
     print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")

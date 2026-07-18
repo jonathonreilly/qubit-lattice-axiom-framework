@@ -10,21 +10,18 @@ central class function `Z(W)` of marked plaquette holonomy `W` with character
 expansion `Z(W) = z_(0,0) sum_(p,q) d_(p,q) rho_(p,q) chi_(p,q)(W)` acts on
 the character basis exactly by the diagonal eigen-rule
 `C_Z chi_(p,q) = rho_(p,q) chi_(p,q)`; and that when the character
-coefficients `rho_(p,q)` are instantiated with the bounded coefficient
-companion's runner-computed Wilson single-link boundary values
+coefficients `rho_(p,q)` are instantiated with the bounded companion's
+runner-computed normalized values of the explicitly stipulated integral
 `rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q) c_(0,0)(6))` for `0 <= p,q <= 4`, the
-finite-box diagonal operator coincides on the same finite box with the
-finite-box residual factor *as defined* by the source-sector decomposition
-`K_6^src = exp(3 J) D_6^loc R_6^env exp(3 J)` (i.e. the definitional residual
-factor after stripping the marked half-slice multiplier and the normalized
-mixed-kernel local factor). This is the narrow finite-box bounded-coefficient
-identification fact; no all-weight Wilson environment law and no
-framework-point analytic closure of `P(6)` is consumed or asserted.
-**Scoped inputs** (named, not load-bearing on this note's finite-box
-algebraic correctness, but relevant to its physical reading):
+result is one explicit positive diagonal instance `R[rho(6)]`. An optional
+consumer-defined package `K[rho] = exp(3J) D R[rho] exp(3J)` round-trips to the
+same chosen input. That construct-then-strip check is bookkeeping, not an
+environment identification or independent mathematical evidence.
+**Scoped context** (not load-bearing on this note's finite-box algebraic
+correctness):
 - the source-sector decomposition
   `K_beta^src = exp[(beta/2) J] D_beta^loc R_beta^env exp[(beta/2) J]` is taken
-  as a **definition** of `R_beta^env` for the purposes of this narrow note;
+  only as context for the optional consumer-defined round trip;
   the upstream derivations of that decomposition
   (`GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`,
   `GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md`)
@@ -32,8 +29,8 @@ algebraic correctness, but relevant to its physical reading):
   algebraic identity proven below;
 - the bounded coefficient companion
   [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
-  supplies the runner-computed `rho_(p,q)(6)` values on the finite box
-  `0 <= p,q <= 4` as bounded numerical input; the narrow note proves the
+  supplies only the runner-computed normalized stipulated-integral values on
+  the finite box `0 <= p,q <= 4` as bounded numerical input; the narrow note proves the
   finite-box diagonal-action identity *for any* such coefficient sequence and
   *instantiates* it with the companion's values.
 **Status authority:** independent audit lane only. This source note does not
@@ -43,20 +40,18 @@ pipeline after independent review.
 
 ## Source boundary (2026-06-12)
 
-**Boundary:** finite-box algebraic support plus definitional residual
-packaging. Effective status is audit-derived; this source records only the
-claim boundary.
+**Boundary:** finite-box algebraic support plus an explicitly circular
+consumer-defined packaging check. Effective status is audit-derived; this
+source records only the claim boundary.
 
 The finite Peter-Weyl diagonal-convolution calculation is sound on the stated
-box, but the residual factor is introduced by the decomposition and then
-stripped back by the runner. That verifies packaging, not an independent
-derivation of the residual environment.
+box. The optional diagonal slot is introduced in a consumer-defined package
+and then stripped back by the runner. That verifies packaging only.
 
 This note may be cited for the finite-box diagonal-action identity and for
 bounded coefficient bookkeeping on `0 <= p,q <= 4`. It may not be cited as a
-retained residual-environment theorem, an all-weight Wilson environment law, a
-beta=6 physical plaquette closure, or an independent derivation of
-`R_6^env`.
+residual-environment theorem, an all-weight Wilson environment law, a beta=6
+physical plaquette closure, or a derivation of `R_6^env`.
 
 ## Statement
 
@@ -115,8 +110,7 @@ restricted to the finite box `B`. The proof is the elementary character
 orthogonality calculation, done line by line in the proof section below.
 
 **Conclusion (N3) (finite-box bounded-coefficient instantiation).** Take
-the bounded coefficient companion's runner-computed normalized single-link
-`SU(3)` Wilson boundary values
+the bounded companion's runner-computed normalized stipulated-integral values
 
 ```text
 rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q) c_(0,0)(6)),                         (6)
@@ -129,15 +123,13 @@ for `(p, q) in B`. Substituting `rho := rho(6)` into `(N1)`/`(N2)`:
   conjugation-symmetric on `H_B`,
 - it acts by `R[rho(6)] chi_(p,q) = rho_(p,q)(6) chi_(p,q)` for
   `(p, q) in B`,
-- and it coincides on `H_B` with `R_6^env` as defined by the source-sector
-  decomposition `K_6^src = exp(3 J) D_6^loc R_6^env exp(3 J)`, restricted
-  to the same finite box.
+- and it may be inserted into a consumer-defined finite package
+  `K[rho(6)] = exp(3J) D R[rho(6)] exp(3J)`.
 
-This last coincidence is a definitional fact at finite-box scope: the
-decomposition stripping defines the finite-box residual factor's action on
-`chi_(p,q)` by a real diagonal scalar in this restricted class-function
-sector, and the bounded coefficient companion supplies the numerical values
-of that sequence on `B`.
+Stripping that constructed package back to `D R[rho(6)]` is a definitional
+round trip at finite-box scope. The companion supplies only the numerical
+values of the stipulated integral; neither the values nor the unchanged-array
+round trip selects an actual residual environment.
 
 ## Proof
 
@@ -165,7 +157,7 @@ we have
 ```text
 (Z * f)(W)
   = c_0 sum_{a, b in B} d_b rho_b f_a (chi_b * chi_a)(W)
-  = c_0 sum_{a in B} d_a rho_a f_a (chi_a * chi_a)(W) / d_a · d_a
+  = c_0 sum_{a in B} d_a rho_a f_a (chi_a * chi_a)(W)
   = c_0 sum_{a in B} rho_a f_a chi_a(W),
 ```
 
@@ -178,35 +170,34 @@ C_Z f = sum_{a in B} rho_a f_a chi_a,                                     (9)
 
 i.e. `C_Z chi_(p,q) = rho_(p,q) chi_(p,q)` on `B`. This is `(5)`.
 
-`(N3)`. The narrow source-sector decomposition
+`(N3)`. For the optional packaging check, define
 
 ```text
-K_beta^src = exp[(beta / 2) J] D_beta^loc R_beta^env exp[(beta / 2) J]    (10)
+K_beta[rho] = exp[(beta / 2) J] D_beta^packet R[rho] exp[(beta / 2) J].   (10)
 ```
 
-is taken as the **definition** of `R_beta^env`. This note does not prove an
-operator-theoretic inversion theorem for the full source-sector kernel. It
-checks the finite-box residual factor directly:
+This note does not identify `K_beta[rho]` with a Wilson source-sector kernel or
+prove an operator-theoretic inversion theorem for such a kernel. It checks the
+chosen finite-box instance directly:
 
 - positivity: every imported `rho_(p,q)(6)` on `B` is positive;
 - self-adjointness: `R[rho(6)]` is a real diagonal matrix on the character
   basis;
 - class-sector diagonality: the restricted operator acts on the character
   basis by its coefficient eigenvalues;
-- forward source-sector consistency: the runner builds
-  `K_6^src = exp(3 J) D_6^loc R[rho(6)] exp(3 J)` and strips the two
-  half-slice factors back to `D_6^loc R[rho(6)]` at machine precision.
+- forward packaging consistency: the runner builds
+  `K_6[rho(6)] = exp(3 J) D_6^packet R[rho(6)] exp(3 J)` and strips the two
+  half-slice factors back to `D_6^packet R[rho(6)]` at machine precision.
 
-For the narrow finite-box theorem, `R_beta^env|_{H_B}` is represented by a
-positive self-adjoint diagonal operator in the character basis on `B`. Such
+For the narrow finite-box theorem, `R[rho]` is a positive self-adjoint
+diagonal operator in the character basis on `B`. Such
 an operator is uniquely determined by its character eigenvalues `rho_(p,q)`.
-The bounded companion's `rho_(p,q)(6)` values satisfy positivity and
-conjugation symmetry on `B` (verified at runner time), and therefore
-determine the defined `R_6^env|_{H_B}` on the finite box.
-By `(N2)` applied to the unmarked spatial Wilson environment's boundary
-class function `Z_6^env|_B` (which has those character coefficients by
-construction in the bounded companion), this `R_6^env|_{H_B}` equals
-`C_(Z_6^env)|_{H_B}`. ∎
+The companion's finite normalized values satisfy positivity and conjugation
+symmetry on `B` (verified at runner time), and therefore define one admissible
+diagonal instance `R[rho(6)]`. Applying `(N2)` to the finite character
+polynomial constructed from those coefficients gives its corresponding
+convolution operator. No equality with an unmarked spatial Wilson environment
+is inferred. ∎
 
 ## What this claims
 
@@ -214,9 +205,9 @@ construction in the bounded companion), this `R_6^env|_{H_B}` equals
   `R[rho]` on `H_B` for any nonnegative conjugation-symmetric `rho`.
 - `(N2)`: the standard Peter-Weyl convolution-on-characters identity
   restricted to the finite box `B`.
-- `(N3)`: that instantiating `rho := rho(6)` from the bounded coefficient
-  companion makes `R[rho(6)]|_{H_B}` the defined finite-box residual factor,
-  with no witness injection.
+- `(N3)`: the explicitly chosen instantiation `rho := rho(6)` from the bounded
+  companion and the resulting definitional construction/stripping round trip,
+  with no claim that the companion selects a physical residual factor.
 
 ## What this does NOT claim
 
@@ -227,29 +218,23 @@ construction in the bounded companion), this `R_6^env|_{H_B}` equals
 - Does **not** claim analytic closure of canonical `P(6)`.
 - Does **not** claim retained status for the parent residual-environment
   identification or spatial-environment character-measure notes.
-- Does **not** claim derivation of the source-sector decomposition `(10)`
-  from the physical Cl(3) local algebra and Z^3 spatial substrate baseline
-  alone; the decomposition is the upstream operator-realization setup,
-  treated here as a **definition** of `R_6^env` on the finite box.
-  The narrow note's correctness does not depend on the upstream
-  derivation; only the narrow note's *physical reading* of `R_6^env` as
-  "the residual Wilson environment factor after stripping" depends on the
-  upstream derivations named above.
+- Does **not** identify the optional package `(10)` with a physical
+  source-sector kernel or its diagonal input with a residual environment.
 - Does **not** consume any PDG observed value, literature numerical
   comparator, fitted selector, or admitted unit convention.
 
 ## Relation to the parent residual-environment identification note
 
 `GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md`
-states the source-sector identification theorem in the full physical Wilson
-context: `R_beta^env` is the compressed unmarked spatial environment operator.
-This narrow note is a bounded finite-box companion to that gate. It does not
-by itself promote the parent; the parent's all-weight statement remains
-outside this note's scope.
+names the intended physical identification as an open target; it does not
+establish that `R_beta^env` is a compressed unmarked spatial environment.
+This narrow note supplies independent finite-box diagonal and convolution
+mathematics only. It does not promote the parent; the parent's all-weight
+statement remains outside this note's scope.
 What this narrow note provides is:
 
-- a self-contained finite-box bounded-coefficient identification theorem
-  with no witness injection, with the bounded companion's runner-computed
+- a self-contained finite-box diagonal/convolution theorem, with the bounded
+  companion's runner-computed
   `rho_(p,q)(6)` consumed only as finite support;
 - a runner that verifies the finite-box diagonal-action identity using
   the bounded companion's values, plus the Peter-Weyl convolution-on-
@@ -257,19 +242,18 @@ What this narrow note provides is:
 - structural class checks (positive, self-adjoint, and conjugation-symmetric)
   on the finite-box operator `R[rho(6)]`.
 
-The all-weight Wilson environment tensor-transfer law and analytic
-framework-point Perron closure remain open at this note's narrow scope.
+The all-weight Wilson environment tensor-transfer law and any physical Perron
+closure remain open at this note's narrow scope.
 
 ## Cited dependencies
 
-- [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md) — bounded finite-box numerical
-  coefficients `rho_(p,q)(6)` consumed as finite support input in `(N3)`.
+- [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md) — finite evaluation of the stipulated integral, consumed only as a chosen numerical packet in `(N3)`; it supplies no residual-environment identification.
 
 The following are context pointers, not load-bearing for the
 finite-box algebraic identity proven in `(N1)` and `(N2)`:
 
 - `GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md` — source-sector decomposition `(10)` taken as a definition here.
-- `GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md` — `D_beta^loc` taken as a definitional local factor here.
+- `GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md` — context for the separately constructed fourth-power diagonal only; no local-factor authority is imported here.
 - `GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md` — parent note this narrow finite-box bounded-coefficient companion supports.
 
 ## Forbidden imports check
@@ -295,19 +279,18 @@ verifies on the finite box `0 <= p,q <= 4`:
    values yields an `R[rho(6)]` that satisfies the finite-box diagonal
    action `R[rho(6)] chi_(p,q) = rho_(p,q)(6) chi_(p,q)` with eigen-action
    error `0` (exact);
-4. coincidence with the residual factor obtained by stripping
-   `exp(3 J) D_6^loc · · · exp(3 J)` from the explicit one-step Wilson
-   source-sector kernel restricted to the finite box: the stripped
-   diagonal eigenvalues equal `rho(6)` to machine precision;
-5. cross-check that the runner's `rho(6)` finite-box values come from the
-   bounded companion's computation, not from a fresh witness sequence,
-   via direct call to the companion's coefficient routine and a numerical
-   identity check;
+4. consumer-defined round trip: the package constructed as
+   `exp(3 J) D_6^packet R[rho(6)] exp(3 J)` strips back to
+   `D_6^packet R[rho(6)]` to machine precision; this is support-only
+   bookkeeping and makes no residual-factor identification;
+5. provenance check that the runner imports the stipulated finite values from
+   the bounded companion rather than a hard-coded witness table; this is
+   bookkeeping, not mathematical evidence for a physical identification;
 6. swap-commutator identity `[S, R[rho(6)]] = 0` exactly on the finite
    box (a sympy symbolic check on a representative subspace).
 
 Expected summary:
 
 ```text
-THEOREM PASS=14 FAIL=0
+THEOREM PASS=6 SUPPORT=8 FAIL=0
 ```

@@ -1,82 +1,90 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py
-runner_sha256: bfdf556657218223514049e8a5b46fe7173f31187e153132eebecf9608cfb63e
+runner_sha256: d2008a29b010c938a510e6d5028331f0314be2b66e44afa4809c5b434f4b96fb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.88
+elapsed_sec: 0.87
 status: ok
 ----- stdout -----
 ==============================================================================
-GAUGE-VACUUM PLAQUETTE rho_(p,q)(6) WILSON-ENVIRONMENT COMPUTATION
+STIPULATED SU(3) CHARACTER INTEGRAL: FINITE EVALUATION AT x=2
 ==============================================================================
 
-Deterministic inputs / current execution environment
-  beta=6.0, argument=beta/3=2.0, box=0<=p,q<=4
-  Bessel mode sum=-80..80, Weyl grid=160x160
+Supplied mathematical inputs
+  group=SU(3), Haar measure=probability measure, beta label=6.0
+  x=beta/3=2.0, finite box=0<=p,q<=4
+  Weyl domain: theta1,theta2 in [0,2pi), theta3=-theta1-theta2
+  Haar density: |Delta|^2 / (6 (2pi)^2)
+  Bessel modes=-80..80; cutoff check=-12..12
+  Weyl grid ladder=24 -> 32 -> 40 -> 64
   arithmetic=float64, Python=3.12.8, NumPy=2.4.1, SciPy=1.17.0
   platform=macOS-26.5.2-arm64-arm-64bit, mantissa bits=53
 
-Computed boundary character coefficients rho_(p,q)(6) (closed form, Bessel-det)
-  rho_(0,0)(6) = 1.000000000000e+00   (Weyl quadrature: 1.000000000000e+00)
-  rho_(1,0)(6) = 4.225317396500e-01   (Weyl quadrature: 4.225317396500e-01)
-  rho_(0,1)(6) = 4.225317396500e-01   (Weyl quadrature: 4.225317396500e-01)
-  rho_(1,1)(6) = 1.622597994799e-01   (Weyl quadrature: 1.622597994799e-01)
-  rho_(2,0)(6) = 1.359617273634e-01   (Weyl quadrature: 1.359617273634e-01)
-  rho_(0,2)(6) = 1.359617273634e-01   (Weyl quadrature: 1.359617273634e-01)
-  rho_(2,1)(6) = 4.828805556745e-02   (Weyl quadrature: 4.828805556744e-02)
-  rho_(1,2)(6) = 4.828805556745e-02   (Weyl quadrature: 4.828805556744e-02)
-  rho_(3,0)(6) = 3.505738045167e-02   (Weyl quadrature: 3.505738045167e-02)
-  rho_(0,3)(6) = 3.505738045167e-02   (Weyl quadrature: 3.505738045167e-02)
-  rho_(2,2)(6) = 1.350507888830e-02   (Weyl quadrature: 1.350507888829e-02)
+Normalized finite values rho_(p,q)=c_(p,q)/(d_(p,q)c_(0,0))
+  rho_(0,0) = 1.000000000000e+00   (direct Weyl: 1.000000000000e+00)
+  rho_(1,0) = 4.225317396500e-01   (direct Weyl: 4.225317396500e-01)
+  rho_(0,1) = 4.225317396500e-01   (direct Weyl: 4.225317396500e-01)
+  rho_(1,1) = 1.622597994799e-01   (direct Weyl: 1.622597994799e-01)
+  rho_(2,0) = 1.359617273634e-01   (direct Weyl: 1.359617273634e-01)
+  rho_(0,2) = 1.359617273634e-01   (direct Weyl: 1.359617273634e-01)
+  rho_(2,1) = 4.828805556745e-02   (direct Weyl: 4.828805556745e-02)
+  rho_(1,2) = 4.828805556745e-02   (direct Weyl: 4.828805556745e-02)
+  rho_(3,0) = 3.505738045167e-02   (direct Weyl: 3.505738045167e-02)
+  rho_(0,3) = 3.505738045167e-02   (direct Weyl: 3.505738045167e-02)
+  rho_(2,2) = 1.350507888830e-02   (direct Weyl: 1.350507888830e-02)
+  rho_(4,4) = 2.275225312476e-05   (direct Weyl: 2.275225312477e-05)
 
-Cross-check Bessel-det (Method A) vs Weyl integration (Method B)
-  max |rho_A - rho_B| (absolute)        = 4.136e-15 at (p,q)=(2, 0)
-  max |rho_A - rho_B| / |rho_A|         = 8.205e-14 at (p,q)=(4, 4)
-  raw absolute maximum (float64)        = 4.1355807667287081e-15
-  raw relative maximum (float64)        = 8.2051681014240727e-14
+Convergence and independent cross-check
+  Bessel normalized drift M=12 -> M=80 = 6.776e-21
+  Weyl normalized drift N=24 -> N=32       = 3.561e-13
+  Weyl normalized drift N=32 -> N=40       = 2.220e-16
+  Weyl normalized drift N=40 -> N=64       = 1.110e-16
+  max Weyl coefficient imaginary residual          = 1.044e-15
+  max raw-coefficient absolute cross-error          = 1.332e-15
+  max raw-coefficient relative cross-error          = 1.952e-14
+  max normalized absolute cross-error               = 1.110e-16 at (0, 2)
+  max normalized relative cross-error               = 1.911e-14 at (3, 4)
+  c_(0,0)(x=2)                                      = 3.441440354988
+  finite-box rho min/max                            = 2.275225312476e-05, 1.000000000000
 
-Symmetry / positivity / structural gates
-  rho_(p,q)(6) min/max                  = 2.275225312476e-05, 1.000000000000
-  rho_swap_err (rho_(p,q) = rho_(q,p))  = 2.776e-17
-  rho_(0,0)(6)                          = 1.0000000000000000
-  R_env chi_(p,q) = rho chi_(p,q) error = 0.000e+00
+Hostile-mutation separations from the unmutated evaluation
+  sign x -> -x                                      = 6.225e-01
+  omit d_(p,q) in rho normalization                 = 1.136e+00
+  replace [0,2pi)^2 by [0,pi)^2                    = 4.113e-03
+  replace Haar density by flat torus measure        = 4.978e-01
+  omit Weyl factor 1/6 in raw coefficients          = 2.234e+01
+  attach highest-weight index to determinant row    = 4.225e-01
 
-Distance from prior witness injections (was the prior runner using witnesses?)
-  max |rho_env - prior_char_measure|    = 4.565e-01
-  max |rho_env - prior_residual_id|     = 4.205e-01
+  [PASS] [THEOREM] the Weyl formula has Haar probability normalization and character orthogonality at x=0
+         |c_(0,0)(0)-1|=2.220e-16; max nontrivial |c_(p,q)(0)|=6.277e-16
+  [PASS] [THEOREM] the Bessel-determinant evaluation is stable under the disclosed mode-cutoff refinement
+         max normalized drift from M=12 to M=80: 6.776e-21
+  [PASS] [THEOREM] the direct Weyl evaluation is stable on the final disclosed periodic-grid refinement
+         max normalized drift from N=40 to N=64: 1.110e-16
+  [PASS] [THEOREM] the Bessel series and wall-stable direct Weyl quadrature agree on all 25 supplied weights
+         raw max abs=1.332e-15, raw max rel=1.952e-14; rho max abs=1.110e-16, rho max rel=1.911e-14
+  [PASS] [THEOREM] the definition gives rho_(0,0)=1 and the finite values obey conjugation symmetry
+         |rho_(0,0)-1|=0.000e+00; swap error=2.776e-17
+  [PASS] [THEOREM] all 25 numerically evaluated normalized coefficients are strictly positive
+         minimum finite-box value=2.275225312476e-05
+  [PASS] [SUPPORT] hostile sign mutation x -> -x is detected
+         max separation=6.225e-01
+  [PASS] [SUPPORT] hostile omission of d_(p,q) from rho is detected
+         max separation=1.136e+00
+  [PASS] [SUPPORT] hostile half-domain torus integration is detected
+         max separation=4.113e-03
+  [PASS] [SUPPORT] hostile flat-torus replacement of Haar density is detected
+         max separation=4.978e-01
+  [PASS] [SUPPORT] hostile omission of the Weyl factor 1/6 is detected in raw coefficients
+         max separation=2.234e+01
+  [PASS] [SUPPORT] hostile determinant highest-weight row/column index swap is detected
+         max separation=4.225e-01
 
-Resulting factorized transfer witness (with computed rho_env)
-  transfer symmetry error               = 2.220e-16
-  transfer swap error                   = 6.453e-16
-  transfer min entry                    = 6.176469e-10
-  local/environment commutator          = 0.000e+00
-  Perron <J>                            = 0.435516533272
-
-  Z(beta=6) = c_(0,0)(6)                = 3.441440354988
-
-  [PASS] [THEOREM] Method A (Bessel-determinant) and Method B (Weyl integration on the Cartan torus) produce normalized rho_(p,q)(6) values that agree within the 1e-10 acceptance tolerance on the finite 0 <= p,q <= 4 box
-         max abs=4.136e-15, max rel=8.205e-14; two distinct evaluation methods agree, with a float64 roundoff-scale discrepancy in this disclosed run
-  [PASS] [THEOREM] the boundary character coefficients rho_(p,q)(6) satisfy rho_(0,0)(6) = 1 exactly (normalized Wilson character measure)
-         |rho_(0,0)(6) - 1| = 0.000e+00
-  [PASS] [THEOREM] rho_(p,q)(6) is conjugation-symmetric: rho_(p,q)(6) = rho_(q,p)(6) on the finite marked-plaquette class-function box
-         max |swap rho - rho swap| = 2.776e-17
-  [PASS] [THEOREM] rho_(p,q)(6) is strictly positive on every finite-box weight, matching the positive-type expectation for the single-link boundary class function Z_6^env
-         min rho_(p,q)(6) = 2.275225e-05
-  [PASS] [THEOREM] the finite diagonal coefficient operator R_6^env acts on chi_(p,q) by R_6^env chi_(p,q) = rho_(p,q)(6) chi_(p,q) with the computed Wilson coefficients
-         eigen-action error = 0.000e+00; the bounded coefficient object is numerically explicit
-  [PASS] [THEOREM] the finite factorized framework-point source-sector witness exp(3 J) D_6^loc R_6^env exp(3 J) is self-adjoint and conjugation-symmetric with the computed rho_env (no witness injection)
-         sym=2.220e-16, swap=6.453e-16, min entry=6.176e-10
-  [PASS] [THEOREM] the previous witness injections rho_env_witness(p,q) (both spatial_environment_character_measure and residual_environment_identification runners) differ from the computed Wilson coefficients by a definite tabulated amount, confirming this runner is not just relabelling the prior witness
-         max |rho - witness_char|=4.565e-01, max |rho - witness_resid|=4.205e-01
-  [PASS] [SUPPORT] Z(6) = c_(0,0)(6) > 0 confirms the SU(3) Wilson partition function is well-defined and the normalization is consistent
-         Z(6) = 3.441440
-  [PASS] [SUPPORT] the local mixed-kernel factor D_6^loc and the residual environment factor R_6^env commute as positive diagonal operators on the character basis
-         commutator error = 0.000e+00
-  [PASS] [SUPPORT] with explicit bounded rho_(p,q)(6) the factorized transfer Perron expectation <J> is positive, matching the structural Perron-positivity expectation of the source sector
-         Perron <J> = 0.435517
+Scope boundary: this certificate evaluates only the stipulated integral/data.
+It supplies no canonical or physical environment identification and no plaquette readout.
 
 ==============================================================================
-SUMMARY: THEOREM PASS=7 SUPPORT=3 FAIL=0
+SUMMARY: THEOREM PASS=6 SUPPORT=6 FAIL=0
 ==============================================================================
 
 ----- stderr -----

@@ -11,9 +11,11 @@ set or predict an audit outcome.
 
 ## Claim
 
-On the current retained finite link surface, the gauge-invariant fibre average
-of a generation hop dressed by a unitary link representation multiplies the
-hop coefficient by the normalized character
+Condition on a supplied tensor construction in which `U_R` is a closed based
+holonomy (or an explicitly endpoint-identified transporter), transforms by
+conjugation, dresses the hopping coefficient `b`, and leaves the onsite
+coefficient `a != 0` unchanged. The conjugation-invariant normalized fibre
+trace then multiplies `b` by the character factor
 
 ```text
     chi_R(U) / d_R.
@@ -34,10 +36,12 @@ is transformed only as
 The holonomy channel can suppress the ratio or leave it unchanged. It cannot
 enhance it above the trivial-link/trivial-representation value.
 
-## Framework Surface
+## Conditional Construction And Cited Context
 
-The result uses only the following already retained or retained-bounded
-surfaces:
+The character inequality below is finite algebra conditional on the displayed
+dressing. The following source notes motivate pieces of that construction,
+but this note does not claim that they authenticate a closed spatial holonomy,
+endpoint identification, or this particular tensor dressing:
 
 - [`MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md`](MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md)
   and
@@ -46,9 +50,11 @@ surfaces:
 - [`KOIDE_GAMMA_AXIS_COVARIANT_FULL_CUBE_ORBIT_LAW_NOTE_2026-04-18.md`](KOIDE_GAMMA_AXIS_COVARIANT_FULL_CUBE_ORBIT_LAW_NOTE_2026-04-18.md)
   for the hop-return reading of the generation doublet coefficient.
 - [`KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md`](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md)
-  and
-  [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
-  for the finite circulant form and the `r = |b|^2/a^2` readout.
+  for the finite circulant form and the abstract ratio definition
+  `r = |b|^2/a^2`. The separately located
+  `KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`
+  is only an abstract Fourier-coordinate identity; this kernel does not use it
+  as physical carrier, mass-spectrum, or readout authority.
 - [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
   for the shared generation carrier.
 
@@ -60,8 +66,10 @@ readout bridges.
 
 ## Proof On The Finite Link Surface
 
-Work in any finite-dimensional unitary link representation `R`. Since `U_R` is
-unitary, it is unitarily diagonalizable with eigenvalues
+Work in any finite-dimensional unitary representation `R` of a closed based
+holonomy. Under a gauge-frame change `U_R -> g U_R g^-1`, its trace is
+invariant. Since `U_R` is unitary, it is unitarily diagonalizable with
+eigenvalues
 
 ```text
     z_1, ..., z_d,        |z_i| = 1.
@@ -92,8 +100,8 @@ The character bound is the finite identity
     d^2 - |sum z_i|^2 = sum_{i<j}|z_i-z_j|^2 >= 0.
 ```
 
-It is an identity on the same finite link representation, not an imported
-continuum or textbook value. Therefore
+It is an identity for the supplied finite-dimensional unitary representation,
+not an imported continuum or fitted value. Therefore
 
 ```text
     |chi_R(U)| / d = |sum_i z_i| / d <= 1
@@ -113,8 +121,6 @@ suppresses the fibre-averaged hop.
 
 The runner checks:
 
-- all named dependencies used by the kernel are retained-grade in the live
-  ledger;
 - the finite identity
   `d^2 - |sum z_i|^2 = sum_{i<j}|z_i-z_j|^2` on a deterministic phase grid;
 - equality only when all phases are equal on that grid;
@@ -125,11 +131,18 @@ The runner checks:
 - the parent holonomy no-go cites this kernel while preserving the open
   physical sector-to-representation/readout bridge.
 
-## What This Closes
+The source-firewall checks are reported separately from the computed algebra;
+they are not counted as theorem evidence.
+The universal inequality is the analytic identity proved above. The finite
+roots-of-unity grid in the runner is a regression certificate, not a finite
+substitute for that proof.
 
-This retires the imported "standard lattice-gauge character suppression" step
-inside the holonomy no-go. The suppression kernel is now proved on the finite
-framework link surface and checked by a runner/cache pair.
+## Exact Scope
+
+This proves the character bound and its propagation through the explicitly
+supplied fibre-trace construction. It does not derive that construction from
+the cited framework sources and therefore does not close a framework-native
+holonomy channel.
 
 ## What This Does Not Close
 
@@ -146,6 +159,6 @@ framework link surface and checked by a runner/cache pair.
 
 No new axiom, fitted value, PDG value, observed `r` value, continuum limit, or
 textbook theorem is load-bearing. The finite unitary character bound is proved
-directly on the retained link-representation surface. Literature may describe
+directly for the supplied representation and dressing. Literature may describe
 the same character-suppression intuition, but it is parallel context rather
 than an imported proof input here.

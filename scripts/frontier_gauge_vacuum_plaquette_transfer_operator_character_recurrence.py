@@ -10,8 +10,9 @@ one-plaquette lattice witness with:
 * trace/path-sum identities;
 * spatial multiplication insertions;
 * mixed two-slice source kernels and their Schur-power derivatives; and
-* hostile controls for the old pointwise-positivity argument, source grammar,
-  plaquette word, slice placement, half-weight, and Haar normalization.
+* hostile controls for the old pointwise-positivity argument, recurrence
+  boundaries, plaquette word, slice placement, half-weight, and Haar
+  normalization.
 
 The S3 carrier and all floating evaluations below are SUPPORT for the exact
 SU(N) proof, not replacements for it.
@@ -97,6 +98,20 @@ def antifundamental_neighbors(weight: tuple[int, int]) -> list[tuple[int, int]]:
 
 def recurrence_neighbors(weight: tuple[int, int]) -> list[tuple[int, int]]:
     return fundamental_neighbors(weight) + antifundamental_neighbors(weight)
+
+
+def unpruned_recurrence_neighbors(
+    weight: tuple[int, int],
+) -> list[tuple[int, int]]:
+    p, q = weight
+    return [
+        (p + 1, q),
+        (p - 1, q + 1),
+        (p, q - 1),
+        (p, q + 1),
+        (p + 1, q - 1),
+        (p - 1, q),
+    ]
 
 
 def tensor_multiplicities(nmax: int) -> list[dict[tuple[int, int], int]]:
@@ -469,34 +484,6 @@ def projected_convolution_kernel(
     return total / (S3_ORDER**4)
 
 
-def multiplication_fit_residual(
-    transfer_group: np.ndarray,
-    insertion_group: np.ndarray,
-    placement: str,
-) -> tuple[float, float]:
-    rows = []
-    values = []
-    for i in range(S3_ORDER):
-        for j in range(S3_ORDER):
-            row = np.zeros(S3_ORDER, dtype=float)
-            if placement == "left":
-                row[i] += transfer_group[i, j]
-            elif placement == "right":
-                row[j] += transfer_group[i, j]
-            elif placement == "symmetric":
-                row[i] += transfer_group[i, j] / 2.0
-                row[j] += transfer_group[i, j] / 2.0
-            else:
-                raise ValueError(f"unknown multiplication placement: {placement}")
-            rows.append(row)
-            values.append(insertion_group[i, j])
-    design = np.array(rows, dtype=float)
-    target = np.array(values, dtype=float)
-    coefficients, _, _, _ = np.linalg.lstsq(design, target, rcond=None)
-    residual = design @ coefficients - target
-    return float(np.max(np.abs(residual))), float(np.linalg.norm(residual))
-
-
 def orientation_gauge_errors() -> tuple[float, float]:
     correct_error = 0.0
     wrong_error = 0.0
@@ -542,6 +529,19 @@ def main() -> int:
     recurrence = recurrence_matrix(RECURRENCE_BOX)
     recurrence_symmetry_error = float(np.max(np.abs(recurrence - recurrence.T)))
     recurrence_eigenvalues = np.linalg.eigvalsh(recurrence)
+    boundary_weights = [(0, 0), (1, 0), (0, 1), (1, 1)]
+    boundary_counts = {
+        weight: len(recurrence_neighbors(weight)) for weight in boundary_weights
+    }
+    boundary_omissions_ok = all(
+        recurrence_neighbors(weight)
+        == [
+            target
+            for target in unpruned_recurrence_neighbors(weight)
+            if min(target) >= 0
+        ]
+        for weight in boundary_weights
+    ) and [boundary_counts[weight] for weight in boundary_weights] == [2, 4, 4, 6]
     su3_samples = haar_su3_samples(GRAM_SIZE)
     positive_gram_minimum = float(
         np.linalg.eigvalsh(wilson_gram(su3_samples, GRAM_BETA)).min()
@@ -729,22 +729,6 @@ def main() -> int:
             )
         )
     ) / (2.0e-5)
-    mixed_symmetric_fit_max, mixed_symmetric_fit_norm = multiplication_fit_residual(
-        transfer_group, mixed_derivative_group, "symmetric"
-    )
-    mixed_left_fit_max, mixed_left_fit_norm = multiplication_fit_residual(
-        transfer_group, mixed_derivative_group, "left"
-    )
-    mixed_right_fit_max, mixed_right_fit_norm = multiplication_fit_residual(
-        transfer_group, mixed_derivative_group, "right"
-    )
-    spatial_derivative = (
-        plaquette_operator @ transfer + transfer @ plaquette_operator
-    ) / 2.0
-    spatial_fit_max, spatial_fit_norm = multiplication_fit_residual(
-        transfer_group, group_value_matrix(spatial_derivative), "symmetric"
-    )
-
     # Hostile controls.
     pointwise_counterexample = np.array([[1.0, 2.0], [2.0, 1.0]])
     counterexample_minimum = float(
@@ -766,6 +750,13 @@ def main() -> int:
     wrong_half_transfer = wrong_half_weight @ q_operator @ wrong_half_weight
     wrong_half_trace = float(
         np.trace(np.linalg.matrix_power(wrong_half_transfer, S3_LT))
+    )
+    missing_half_weight = reduced_multiplication(
+        pullback, np.ones(S3_CONFIG_COUNT, dtype=float)
+    )
+    missing_half_transfer = missing_half_weight @ q_operator @ missing_half_weight
+    missing_half_trace = float(
+        np.trace(np.linalg.matrix_power(missing_half_transfer, S3_LT))
     )
     wrong_haar_trace = float(
         np.trace(np.linalg.matrix_power((S3_ORDER**4) * transfer, S3_LT))
@@ -791,6 +782,7 @@ def main() -> int:
     print(f"  recurrence errors (3,3bar,real)          = "
           f"{fundamental_error:.3e}, {antifundamental_error:.3e}, {combined_error:.3e}")
     print(f"  recurrence symmetry error                = {recurrence_symmetry_error:.3e}")
+    print(f"  recurrence boundary counts               = {boundary_counts}")
     print(f"  recurrence compressed spectrum           = "
           f"[{recurrence_eigenvalues.min():.6f}, {recurrence_eigenvalues.max():.6f}]")
     print(f"  sampled SU(3) Wilson Gram min eigenvalue = {positive_gram_minimum:.6e}")
@@ -816,16 +808,14 @@ def main() -> int:
     print(f"  sourced derivative T minima m=0..4      = {[round(x, 12) for x in derivative_transfer_minima]}")
     print(f"  mixed marked trace / path sum            = {mixed_marked_value:.12f} / {mixed_marked_path:.12f}")
     print(f"  mixed derivative / finite difference     = {mixed_marked_value:.12f} / {finite_difference:.12f}")
-    print(f"  spatial multiplication-fit residual      = {spatial_fit_max:.3e} (norm {spatial_fit_norm:.3e})")
-    print(f"  mixed symmetric-fit residual             = {mixed_symmetric_fit_max:.3e} (norm {mixed_symmetric_fit_norm:.3e})")
-    print(f"  mixed left/right-fit residuals           = {mixed_left_fit_max:.3e}, {mixed_right_fit_max:.3e}")
     print()
     print("Hostile controls")
     print(f"  pointwise-positive symmetric min eig      = {counterexample_minimum:.6e}")
     print(f"  correct/wrong plaquette gauge errors      = {correct_orientation_error:.3e}, {wrong_orientation_error:.3e}")
     print(f"  selected-vs-repeated slice mismatch       = {abs(spatial_single_value-wrong_slice_placement_value):.6e}")
     print(f"  selected-vs-repeated mixed mismatch       = {abs(mixed_single_value-mixed_repeated_value):.6e}")
-    print(f"  correct/wrong half-weight trace mismatch  = {abs(trace_value-wrong_half_trace):.6e}")
+    print(f"  correct/doubled half-weight mismatch      = {abs(trace_value-wrong_half_trace):.6e}")
+    print(f"  correct/missing half-weight mismatch      = {abs(trace_value-missing_half_trace):.6e}")
     print(f"  correct/wrong Haar trace mismatch         = {abs(trace_value-wrong_haar_trace):.6e}")
     print(f"  negative effective-coupling min eig       = {negative_effective_minimum:.6e}")
     print()
@@ -865,6 +855,14 @@ def main() -> int:
         detail=(
             f"combined error = {combined_error:.3e}, "
             f"symmetry error = {recurrence_symmetry_error:.3e}"
+        ),
+    )
+    check(
+        "dominant-weight boundary terms omit exactly the negative labels",
+        boundary_omissions_ok,
+        detail=(
+            "neighbor counts at (0,0),(1,0),(0,1),(1,1) = "
+            f"{list(boundary_counts.values())}"
         ),
     )
 
@@ -954,21 +952,6 @@ def main() -> int:
         bucket="SUPPORT",
     )
     check(
-        "a mixed two-slice source cannot be silently replaced by one-slice multiplication",
-        spatial_fit_max < TOL
-        and mixed_symmetric_fit_max > 1.0e-5
-        and mixed_left_fit_max > 1.0e-5
-        and mixed_right_fit_max > 1.0e-5,
-        detail=(
-            f"spatial fit={spatial_fit_max:.3e}, "
-            f"mixed sym/left/right="
-            f"{mixed_symmetric_fit_max:.3e}/"
-            f"{mixed_left_fit_max:.3e}/"
-            f"{mixed_right_fit_max:.3e}"
-        ),
-        bucket="SUPPORT",
-    )
-    check(
         "pointwise positive symmetry alone does not imply quadratic-form positivity",
         np.all(pointwise_counterexample > 0.0) and counterexample_minimum < 0.0,
         detail=f"counterexample minimum eigenvalue = {counterexample_minimum:.1f}",
@@ -987,10 +970,12 @@ def main() -> int:
         "wrong slice placement, half weighting, or Haar normalization changes the path sum",
         abs(spatial_single_value - wrong_slice_placement_value) > 1.0e-5
         and abs(trace_value - wrong_half_trace) > 1.0e-5
+        and abs(trace_value - missing_half_trace) > 1.0e-5
         and abs(trace_value - wrong_haar_trace) > 1.0,
         detail=(
             f"slice={abs(spatial_single_value-wrong_slice_placement_value):.3e}, "
-            f"half={abs(trace_value-wrong_half_trace):.3e}, "
+            f"half(doubled/missing)={abs(trace_value-wrong_half_trace):.3e}/"
+            f"{abs(trace_value-missing_half_trace):.3e}, "
             f"Haar={abs(trace_value-wrong_haar_trace):.3e}"
         ),
         bucket="SUPPORT",

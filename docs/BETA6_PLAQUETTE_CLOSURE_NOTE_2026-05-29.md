@@ -62,7 +62,7 @@ that prior synthesis notes recorded with older statuses have since moved**
 | claim_id | effective_status | what it gives |
 |---|---|---|
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | retained | Exact one-clock realization Z=Tr[T^Lt]; plaquette source = multiplication by J=(chi_{1,0}+chi_{0,1})/6; exact six-neighbour SU(3) dominant-weight recurrence; spectrum(J) in [-1/2,1]. Names the open piece as transfer-state identification at beta=6. |
-| `gauge_vacuum_plaquette_reduction_existence_theorem_note` | retained | Existence + uniqueness + analyticity + strict monotonicity of the implicit reduction law beta_eff,L(beta)=P_1plaq^{-1}(P_L(beta)); bijection [0,inf)->[0,1); onset beta_eff=beta+beta^5/26244+O(beta^6). |
+| `gauge_vacuum_plaquette_reduction_existence_theorem_note` | historical 2026-05-29 ledger read-off; source repaired 2026-07-18 | Finite-volume inverse-coordinate theorem: `P_1plaq` and `P_L` have the proved analytic/strictly increasing `[0,1)` behavior, and `beta_eff,L := P_1plaq^{-1} o P_L` is a unique analytic strictly increasing coordinate. The composed equality is true by definition, not a physical reduction law; this row supplies no higher-order onset coefficient or beta-6 value. |
 | `plaquette_self_consistency_note` | retained_bounded | Finite Wilson <P> is a unique bounded observable of Z_L(beta); 0.5934 is an admitted comparison/reuse number, value-closure language withdrawn 2026-05-25. |
 | `plaquette_observable_uniqueness_bounded_note_2026-05-25` | retained_bounded | Affine identity <P>=1+(1/N_plaq) d ln Z/d beta; structural uniqueness of the observable, numeric-value half explicitly excluded. |
 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | retained_bounded | SINGLE-LINK normalized Wilson coefficients rho_{p,q}(6) on box 0<=p,q<=4 by two independent integrators (agree 4e-15). NOT the multi-link environment coefficients. |
@@ -77,7 +77,7 @@ that prior synthesis notes recorded with older statuses have since moved**
 | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | retained_bounded | Supplies a finite diagonal reference packet and names the intended physical residual target; it does not identify static boundary data with the stripped two-slice Wilson operator. |
 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | retained_bounded | Two REFERENCE Perron solves with rho supplied as input: rho=1 -> P_loc(6)=0.4524, rho=delta -> P_triv(6)=0.4225. Houses the Theorem-3 underdetermination statement. |
 | `plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05` | retained_bounded | The only in-repo route reaching the target: P_inf=0.59400 +/- 0.00037 (1/L^4 fit, L in {3,4,5,6,8}); numerical, not analytic, comparator-only. |
-| `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | retained | Exact first nonlinear coefficient: P_full(beta)=P_1plaq(beta)+beta^5/472392+O(beta^6); the order-5 survivors are four closed cube shells (4/18^5). |
+| `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | historical 2026-05-29 read-off; current source remains unaudited | Imported support-only cube-shell coefficient `beta^5/472392`. It is not supplied by the inverse-coordinate theorem and is not a universal `L=2` periodic-volume onset because wrapping sheets contribute earlier there. |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | retained | Exact BBGKY source-derivative identity d/dbeta = sum_r d/dJ_r. |
 | `su3_wigner_intertwiner_block1_theorem_note_2026-05-03` | retained | SU(3) fusion/adjoint-generator/Casimir primitives. |
 | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | retained | 4-fold Haar projector P^G_{(1,1)^4} on C^4096, rank-8 exact link-integration primitive. |
@@ -233,14 +233,13 @@ read-off.
 15. **Re-derive P(6) / beta_eff(6) from the existing conditional source-sector
     transfer / Perron-Jacobi stack**
     (`gauge_vacuum_plaquette_perron_jacobi_underdetermination_note`,
-    retained_no_go; `gauge_vacuum_plaquette_framework_point_underdetermination_note`,
-    retained_no_go). The source-operator stack does not force the beta-6 Perron
-    moments / Jacobi coefficients after the local marked-link factor is fixed;
-    the finite jet + analyticity + monotonicity do not force beta_eff(6).
-16. **Observable bridge <P>_full = R_O(beta_eff) from the current Wilson
-    primitive packet** (`gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03`,
-    retained_no_go). BRIDGE only PINS the missing nonperturbative number;
-    escape requires a NEW independently-audited primitive.
+    retained_no_go). That source-operator row carries the beta-6 Perron/Jacobi
+    boundary after the local marked-link factor is fixed.
+16. **Observable bridge <P>_full = R_O(beta_eff) interface**
+    (`gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03`,
+    source-corrected open gate). The injective local block gives a positive
+    two-way interface once either exact input is independently derived; a
+    sourced full-Wilson bridge theorem remains required.
 17. **Spatial-environment transfer underdetermination**
     (`gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`,
     retained_no_go). The spatial-environment transfer is underdetermined
@@ -287,9 +286,7 @@ content collides with one of two recorded foreclosures:
   does not evaluate the missing spatial-environment Perron data.
 - **Algebraic underdetermination by local data.** Local character +
   intertwiner data + any 1-parameter rho-family do not select rho_{p,q}(6)
-  (Theorem-3, `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`); the
-  finite jet + analyticity + monotonicity do not force beta_eff(6)
-  (`gauge_vacuum_plaquette_framework_point_underdetermination_note`).
+  (Theorem-3, `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note`).
 
 In one sentence: **the static boundary data `rho_{p,q}(6)` remain
 underdetermined/intractable on the recorded routes, and even supplied static
@@ -345,7 +342,7 @@ row: route, lens, review fields (`closure_ready` / `already_blocked` /
 
 | # | Route (one line) | closure_ready | already_blocked | feasibility | Blocking obstruction (one line) |
 |---|---|---|---|---|---|
-| 1 | Conformally-mapped Borel-Pade / d-log-Pade resummation of the connected-shell (linked-cluster) plaquette series | false | false | long-shot | The blocker is not a missing coefficient engine: exact source notes now reach `d_9` (`d_5=1/472392`, `d_6=7/5668704`, `d_7=5/17006112`, `d_8=5/272097792`, `d_9=-2035/264479053824`). Per-cluster SU(3) link integrals stay small on this frontier; the treewidth-29 wall bites the `rho_{p,q}(6)` spatial-environment contraction object, not these coefficient checks. Borel-Leroy remains a category error for a finite-radius series. The surviving beta-plane d-log-Pade kernel is only an open diagnostic: the single-complex-pair prediction fails at `d_8`, while the activated `[1/1]` from `d_5..d_8` gets the `d_9` sign but not the magnitude and returns a spurious real pole. |
+| 1 | Conformally-mapped Borel-Pade / d-log-Pade resummation of the connected-shell (linked-cluster) plaquette series | false | false | long-shot | Imported support-only source notes reach `d_9` (`d_5=1/472392`, `d_6=7/5668704`, `d_7=5/17006112`, `d_8=5/272097792`, `d_9=-2035/264479053824`); their finite-volume wrapping domain remains source-scoped and is not supplied by the inverse-coordinate theorem. Per-cluster SU(3) link integrals stay small on this frontier; the treewidth-29 wall bites the `rho_{p,q}(6)` spatial-environment contraction object, not these coefficient checks. Borel-Leroy remains a category error for a finite-radius series. The surviving beta-plane d-log-Pade kernel is only an open diagnostic: the single-complex-pair prediction fails at `d_8`, while the activated `[1/1]` from `d_5..d_8` gets the `d_9` sign but not the magnitude and returns a spurious real pole. |
 | 2 | Finite-volume holonomic (Picard-Fuchs) continuation of L_s>=3 Z(beta) from strong coupling to beta=6, then 1/L^4 FSS | false | false | infeasible | Strong-coupling Taylor data for finite-volume Z_L at depth 40-80 needs ~10^36-10^72 connected supports (repo has computed exactly one nontrivial coefficient, beta^5); no a-priori D-finite (R,D) bound (closure bound R <= 3^81 ~ 10^232), so the ODE is a fit, not a certificate. |
 | 3 | Collective-field (Jevicki-Sakita) large-N_c saddle of the spatial-environment kernel, 1/N_c^2 fluctuation at N_c=3 | false | false | infeasible | Leading saddle lands on blocked values (flat strong-phase density -> rho=delta -> 0.4225; self-consistent -> Drouffe-Itzykson -> 0.8740); the coupled-resolvent core is the unsolved d>2 SU(N) master field; 1/N^2 continuation has wrong analytic structure across a large-N bulk transition. |
 | 4 | Transverse-slab self-consistent Perron closure for the source-sector eigenvalue sequence kappa_{p,q}(6) | false | true | infeasible | Dimensional collapse rests on an invalid axis-swap of the temporal-gauge linkwise factorization (proven only in temporal gauge; in-slab spatial plaquettes couple the crossing links). The rho=kappa/a^4 re-target is circular (now audited_renaming = packaging). Correct kernel is the treewidth-29-foreclosed 3D contraction. |
@@ -361,7 +358,7 @@ longer the lane's next open step.
 
 ### 6a. Completed increment and updated next step
 
-Current exact connected coefficients for
+Conditional imported connected coefficients for
 `Delta(beta) = P(beta) - P_1plaq(beta)` are:
 
 ```text

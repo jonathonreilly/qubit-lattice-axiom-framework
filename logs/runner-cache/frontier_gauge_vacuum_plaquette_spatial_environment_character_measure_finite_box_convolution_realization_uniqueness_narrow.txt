@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py
-runner_sha256: ec52d778e29e59b9b888431866914e3e6a3bfb89deefb42f7df917d877f51858
+runner_sha256: 116929476e3d55bc20ae6360b76b0790834561368767884c451c58135ceb3351
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.82
 status: ok
 ----- stdout -----
 Finite-box inverse Peter-Weyl convolution-realization
@@ -29,7 +29,7 @@ uniqueness runner -- NMAX=4, beta=6.0, |B|=25.
          ||R - R_recovered||_2 = 2.776e-17
   [PASS] [THEOREM] (M4) perturbing norm_Z breaks equality with the supplied R
          ||R - R_perturbed||_2 = 1.000e-02
-  [PASS] [THEOREM] (M5) supplied single-link Wilson packet reproduces its own finite character polynomial
+  [PASS] [THEOREM] (M5) chosen stipulated-integral packet reproduces its own finite character polynomial
          |Z_coeff - c_(p,q)(6)| max = 1.110e-16
   [PASS] [THEOREM] (M6) sympy NMAX_SYM=2: inverse Peter-Weyl eigenvalue recovery is exact
          checked 9 characters in B_SYM

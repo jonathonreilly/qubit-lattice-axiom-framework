@@ -11,9 +11,8 @@ set or predict an audit outcome.
 
 ## Claim
 
-On the retained three-generation observable surface, any gauge action that
-acts through a shared generation-carrier scalar is degree-zero inert on the
-Koide ratio
+For a stipulated nonzero common real scalar rescaling
+`(a,b) -> (s a,s b)` with `s in R\{0}`, on the domain `a != 0`, the abstract ratio
 
 ```text
 r = |b|^2/a^2.
@@ -26,28 +25,34 @@ by the same gauge-sector scalar `s`, then
 r' = |s b|^2 / |s a|^2 = |b|^2/a^2 = r.
 ```
 
-Equivalently, `r = |b|^2/a^2 is invariant` under any such
-generation-uniform scalar action.
+Equivalently, `r = |b|^2/a^2 is invariant` under this common-scalar
+rescaling.
 
-Thus a generation-uniform carrier action cannot select or change the sector
-ratio. Moving `r` would require a non-uniform action that distinguishes the
-singlet and doublet coefficients, which is not supplied by the shared retained
-generation-carrier surface.
+This is an exact homogeneity lemma, not a theorem that every
+generation-uniform gauge action has common-scalar form. Generation uniformity
+alone does not imply identical dressing of the onsite coefficient `a` and the
+hopping coefficient `b`; the adjacent holonomy construction is a concrete
+generation-uniform channel that dresses only `b`. Thus the cited
+generation-carrier surface does not by itself supply the common-scalar premise.
 
-## Retained Inputs
+## Cited Context
 
-The core uses:
+The lemma is algebraic. The following source notes motivate its possible
+application, but their audit status and a physical common-scalar premise are
+not upgraded here:
 
 - [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
   and
   [`THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md`](THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md)
-  for the retained `M_3(C)` generation surface;
+  for the cited `M_3(C)` generation surface (current ledger unaudited);
 - [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md)
   for the no-proper-generation-quotient boundary;
 - [`KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md`](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md)
-  and
-  [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
-  for the finite circulant form and `r = |b|^2/a^2` readout.
+  for the finite circulant form and abstract ratio definition
+  `r = |b|^2/a^2`. The separately located
+  `KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`
+  proves only an abstract Fourier-coordinate identity and supplies no physical
+  generation carrier or readout to this core.
 
 ## What This Splits From The Parent
 
@@ -55,7 +60,7 @@ The parent no-go
 `FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md`
 has two layers:
 
-1. the framework-native generation-uniform core above; and
+1. the exact common-scalar homogeneity lemma above; and
 2. a physical sector-representation premise: the standard assignment of
    charged leptons, neutrinos, up quarks, and down quarks to SM colour/weak
    representations.
@@ -90,7 +95,6 @@ representation assignment from the framework.
 
 The runner checks:
 
-- retained-grade status for the generation and Koide-ratio dependencies;
 - exact invariance of `r` under uniform scalar multiplication of `a` and `b`;
 - a discriminating non-uniform control that would move `r`;
 - the conditional two-class colour-representation count under the parent
@@ -98,4 +102,6 @@ The runner checks:
 - parent citations and firewalls preserving the open SM representation
   assignment and parent audit status.
 
-Expected result: `SCORECARD PASS=9 FAIL=0`.
+Expected result: `CORE_PASS=2`, `CONDITIONAL_PASS=2`, `SOURCE_PASS=4`, and
+zero failures in every class. The conditional and source-firewall checks are
+not presented as framework-native theorem evidence.

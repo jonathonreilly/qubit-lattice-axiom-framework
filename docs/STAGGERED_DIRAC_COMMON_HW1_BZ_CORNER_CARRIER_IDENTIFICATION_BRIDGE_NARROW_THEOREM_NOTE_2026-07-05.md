@@ -16,7 +16,7 @@ pipeline after independent review.
 A 2026-07-05 independent audit of the labeling-convention bridge found that
 its step (B1) consumed a **common physical carrier** — one hw=1 BZ-corner
 triplet with fixed `C_3` action and distinct translation-eigenvalue triples —
-from retained notes that each establish their content only on their own
+from separately scoped notes that each establish their content only on their own
 abstract surface, with the identification deliberately out of scope. The
 AC_λ bridge states this explicitly: its facts "make **no** claim that the
 framework's hw=1 carrier on the physical lattice substrate IS this 3-dim
@@ -24,7 +24,7 @@ complex space with these specific lattice translations."
 
 This note supplies exactly that identification as a narrow theorem on the
 framework's finite periodic `2 x 2 x 2` representative — the same concrete
-carrier already used, within audited scope, by
+character construction recorded by
 [FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md](FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md).
 It derives no labeling, no mass value, and no `AC_φλ` sub-admission content.
 
@@ -74,11 +74,10 @@ sites by cyclic coordinate permutation, inducing `R` on `C^8` with
 `R U_mu R^{-1} = U_{sigma(mu)}` exactly; `R` preserves `V` and acts on the
 ordered character basis as the cyclic generator `C` (a regular `Z/3Z`
 action: order 3, transitive, no fixed basis vector). This is the same joint
-axes-and-corners action whose axiom-supplied status is the retained subject
-of
+axes-and-corners action whose axiom-supplied status is separately proposed in
 [STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md](STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md),
-and the transitive corner permutation recorded, at audited scope, by the
-momentum-type note.
+and the transitive corner permutation recorded by the finite
+translation-character note.
 
 **Corollary (what this wires).** One concrete triple
 `(V, (U_mu|_V), R|_V)` simultaneously realizes: the abstract Hamming hw=1
@@ -92,28 +91,27 @@ scopes.
 ## What is deliberately NOT identified
 
 [STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
-supplies, at its audited scope, `d = 4` taste/spinor **counting identities**
-with explicit boundaries: its (R4) records that the taste-count factor is
-"**not** forced by the cited upstream", and its (R5) records that the
-arithmetic factorization "is **not** the same as a derivation that the
-framework's specific staggered-Dirac realization implements a Kogut-Susskind
-`4`-taste reduction". This bridge therefore identifies **no**
-species-reduction surface — there is none in retained scope to identify —
-and downstream consumers must cite that note for counting identities only.
-The runner checks both boundary quotes verbatim.
+supplies separately specified finite mathematical facts. Its (R4) constructs
+an exact four-copy decomposition of a displayed defined-operator module. Its
+(R5) keeps the carriers distinct and states that the (R4) copy index carries
+no taste, species, generation, field, or physical-carrier role. This bridge
+therefore consumes that row only for its defined-module decomposition and
+scope boundary. The runner checks both current source sentences.
 
 ## Scope boundary
 
 - Narrow identification theorem on the finite periodic `2 x 2 x 2`
-  framework representative — the same representative, used at the same
-  scope, as the retained momentum-type note. No continuum, thermodynamic, or
+  framework representative — the same representative and character basis
+  constructed by the finite translation-character note. No continuum, thermodynamic, or
   infinite-volume claim.
-- No labeling is derived (the labeling no-go stands); no `r`, `delta`, mass
+- No physical labeling is supplied or derived here; no `r`, `delta`, mass
   value, occupancy weight, or other `AC_φλ` sub-admission content is
-  touched.
-- The identification consumes each cited note strictly at its audited
-  scope: abstract combinatorics (Hamming note), abstract algebra (AC_λ
-  note), concrete carrier and transitivity (momentum-type note),
+  touched. This authority limit does not exhaust labeling or readout routes.
+- The identification consumes each cited note strictly at its stated source
+  scope, while audit and effective status remain pipeline-owned: abstract
+  combinatorics (Hamming note), abstract algebra (AC_λ
+  note), concrete character construction and transitivity
+  (finite translation-character note),
   axiom-supplied joint action (automorphism bridge), counting boundaries
   (species-reduction note).
 
@@ -124,9 +122,9 @@ The runner checks both boundary quotes verbatim.
 | [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md) | `Z^3` lattice with standard translations and proper cubic rotations (the representative's symmetry source) |
 | [STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md) | abstract Hamming grading and `S_3` orbit facts (H1-H6) |
 | [STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md](STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md) | abstract triple `(V_3, tau)` and identities (L1)-(L4), eq (2a)-(2c) |
-| [FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md](FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) | the concrete `2 x 2 x 2` representative, its character basis, and the transitive `C_3` corner permutation |
+| [FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md](FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) | the concrete `2 x 2 x 2` translations, character basis, three distinct supplied `hw=1` characters, and transitive `C_3` permutation |
 | [STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md](STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md) | axiom-supplied status of the joint axes-and-corners `C_3` action |
-| [STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) | (R4)/(R5) boundary quotes — establishing that no species-reduction surface exists in retained scope to identify |
+| [STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) | (R4) exact four-copy defined-module decomposition and (R5) separation of that copy index from physical roles |
 
 ## Runner verification map
 
@@ -136,7 +134,7 @@ The runner checks both boundary quotes verbatim.
 | K2 | (I1) bijection `k ↦ b(k)` intertwines the coordinate action; grading `(1,3,3,1)`; hw=1 level = the 3 corner momenta; `S_3`-level facts re-verified concretely |
 | K3 | (I2) matrix identity `U_mu|_V = T_mu` against eq (2a)-(2c); pairwise-distinct triples; commutant of `{U_mu|_V}` re-computed = diagonal algebra `C^3` |
 | K4 | (I3) `R U_mu R^{-1} = U_sigma(mu)` exactly; `R V = V`; `R|_V` = cyclic `C`, order 3, regular (no fixed basis vector) |
-| K5 | consumed-scope text checks: AC_λ's own out-of-scope disclaimer; momentum-type transitivity sentence; species-reduction (R4)/(R5) boundary quotes |
+| K5 | consumed-scope text checks: AC_λ's own out-of-scope disclaimer; finite translation-character distinctness/transitivity sentences; species-reduction (R4)/(R5) boundary quotes |
 | K6 | negative control: the hw=2 level is a distinct 3-element orbit not equal to `V`'s corner set (the identification does not blur hw levels) |
 
 **No check passes by literal stipulation.**

@@ -90,10 +90,10 @@ The runner verifies:
   from the current upstream repair (`SUMMARY: PASS=64 FAIL=0`,
   `PHYSICAL_ORIENTATION_BRIDGE=OPEN`);
 - the five authority layers and their statuses;
-- no audit verdict, audit-data write, retained/promoted claim,
-  Record-derived arrow, unsupplied kernel selection, Record-derived rule,
-  Record-derived target vector, sample-as-law, stable-setting dial selection,
-  or generation/Koide selection flag is set.
+- packet-wide exclusion of forbidden overclaim phrases (Record-derived
+  orientation/law/arrow, closed orientation bridge, unsupplied kernel
+  selection, Record-derived rule or target vector, sample-as-law, and
+  dial-selection wording) over the five stack notes.
 
 Run:
 

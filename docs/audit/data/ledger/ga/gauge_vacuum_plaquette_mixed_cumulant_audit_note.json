@@ -231,6 +231,59 @@
         "total_pass": 7
       },
       "verdict_rationale": "The distinct-support enumeration is substantive, but it cannot establish the claimed full mixed-cumulant coefficient without an exhaustive argument for repeated non-tree supports. The per-shell routine also inserts the two-orientation and 3^(V-E) contraction factors rather than independently evaluating them, while the repeated-support support check is an unconditional True. Because the note asserts a derived negative boundary through beta^4, the discipline check is triggered: N1 lacks five distinct attack routes; N2 lacks independence checks; N3 lacks a hidden-premise scan; N4 lacks residual matching; N5 lacks five-resolution live tests; N6 leaves indexed candidates undispositioned; N7 lacks a resolved steelman; and N8 leaves cross-cycle echoes undispositioned."
+    },
+    {
+      "archived_at": "2026-07-18T04:39:55.532100+00:00",
+      "audit_date": "2026-07-18T04:39:44.948779+00:00",
+      "audit_invocation_history": [
+        "8e16a372ad144c59a15680fe8e1ff29e"
+      ],
+      "audit_invocation_id": "8e16a372ad144c59a15680fe8e1ff29e",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 16.118,
+        "runner_hash": "ee013ee9d87ca89cbda5fd6c7229d4d31cdb9c1eba027aeb7881f31f4d6a4fdc",
+        "transitive_descendants": 785
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-drain-ready-20260717-cc13e8608be44deeb21a216e2aa616bf-gauge_vacuum_plaquette_m-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner enumerates only five-distinct-action-plaquette supports; it never tests the four-distinct-plus-one-repeat multiplicity sector. Leaf peeling does not eliminate a repeated insertion when its distinct-support graph is leafless.",
+      "claim_scope": "The presented derivation of the small-beta beta^5 coefficient of P_full-P_1plaq and the induced beta_eff coefficient, including repeated plaquette insertions.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-18T04:39:44.948779+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "After leaf peeling, every surviving order-beta^5 nonlocal term is treated as a distinct support containing one plaquette on each observed edge plus one extra distinct plaquette.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after the runner explicitly enumerates the four-distinct-plus-one-repeat sector and independently computes the cube-shell Haar contraction rather than inserting its orientation and color-contraction factors.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "N1/N7 fail because the strongest stress route\u2014one repeated insertion on a leafless four-distinct support\u2014is neither enumerated nor independently resolved; the leaf lemma handles only a leaf plaquette. N2/N4 provide no independent wall or prior residual witness closing that multiplicity sector, while N3's authenticated boundary, canonical, and does-not occurrences are non-load-bearing scope disclaimers. N5 cannot be completed from the supplied stdout because it contains no per-element, per-site, per-mode, per-block, and lattice-wide resolution tests; N6/N8 supply no retained or accepted candidate that repairs the missing calculation within this packet. Separately, the cube-coefficient function inserts the two-orientation and 3^-4 contraction factors instead of deriving them, so its equality checks do not independently verify the contested coefficient."
     }
   ],
   "prose_corrections": [],

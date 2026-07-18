@@ -108,7 +108,7 @@ def main() -> int:
     carrier_needles = [
         "reduced two-slot carrier",
         "coarse-graining/readout",
-        "Record/Quantum axioms do not supply the missing readout context",
+        "Record/Qubit axioms do not supply the missing readout context",
         "not been derived as the physical",
         "add a new axiom",
     ]

@@ -422,6 +422,66 @@
         "total_pass": 22
       },
       "verdict_rationale": "Part 4 verifies a genuine class-(A) algebraic identity, but Lane A's columns are themselves generated from the same Schur effective blocks used by Lane B, so the result is a conditional inversion check rather than a framework-first source law. All 22 passes operate on author-supplied fixtures, and the downstream comparisons reuse the same Hermitian closure. The negative boundary is evidenced only for transfer summaries by a two-block counterexample; N1-N8 do not close a broader no-go because alternative mechanisms, wall independence, five-resolution testing, the steelman, and indexed cross-cycle candidates are not exhaustively resolved."
+    },
+    {
+      "archived_at": "2026-07-18T06:37:38.463020+00:00",
+      "audit_date": "2026-07-18T06:37:23.573913+00:00",
+      "audit_invocation_history": [
+        "2a11c82fdff8482bab7b1f3b271d1d91"
+      ],
+      "audit_invocation_id": "2a11c82fdff8482bab7b1f3b271d1d91",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/frontier_pmns_corner_transport_active_block.py": "fae2bb85913dda3d6deffc3abe20274bd5168258189b5352eeea60ac5bc47edd",
+          "scripts/frontier_pmns_lower_level_end_to_end_closure.py": "b02c46d593c30a3a667ac3c0467dba8893c5809d462fc7bb26853ba595d0c21e",
+          "scripts/frontier_pmns_transfer_operator_dominant_mode.py": "567a6d4d685e7af7801c1762f4c74d08f667c7fa0c409738c664727d94ad1b6f",
+          "scripts/pmns_lower_level_utils.py": "173bc6d96d2640f742e13fa915d5db141adccd5c4819d10833868f042846a583"
+        },
+        "load_bearing_score": 11.992,
+        "runner_hash": "34232b6e543efe5ae326194488051136a82963c94f0aa8d0ab238ffd6b793245",
+        "transitive_descendants": 719
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-drain-ready-20260717-af2dd5dbb8b24beb9f6483d4946c3cdb-pmns_hw1_source_transfer-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic chain closes on the explicitly supplied fixtures: column construction followed by inversion returns the Schur effective block, and identical downstream routines therefore return identical outputs. It does not close the broader axiom-first derivation of the fixtures or conventions.",
+      "claim_scope": "On the supplied fixture sector operators and admitted probe/tau conventions, response-column inversion reproduces the direct Schur effective blocks and hence the same retained pair and shared downstream outputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-18T06:37:23.573913+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Stacking the supplied response columns gives K = (I - lam * delta)^-1, so delta = (I - K^-1) / lam recovers the same effective block obtained directly by the Schur complement.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation of the sector operators, tau classifier, probe weights, and response-column convention from accepted framework premises, then rerun the bridge check.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "Within the narrowed fixture-conditional scope, the Part 4 identity is valid and the completed runner reports agreement at numerical precision. The result remains conditional because the sector operators, tau classifier, probe weights, and response-column convention are admitted, while the runner constructs its fixtures from hard-coded active and passive blocks rather than deriving them from the accepted framework premises. N1: direct Schur evaluation is the only tested alternative route; N2: fixture selection and tau/probe conventions are independent walls; N3: the note exposes those admissions; N4: no prior retained residual witness is supplied; N5: negative language is bounded to transfer-only blindness and current-bank nonderivation; N6: indexed premises and reframes do not close the walls; N7: the direct Schur path is the strongest steelman; N8: the cross-cycle index supplies no applicable closure of the missing source-pack derivation."
     }
   ],
   "prose_corrections": [],

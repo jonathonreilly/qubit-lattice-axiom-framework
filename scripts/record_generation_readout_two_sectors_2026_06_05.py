@@ -7,10 +7,12 @@ Theorem (conditional on the supplied readout context):
   The generation readout context resolves exactly TWO central sectors under its
   supplied fixed K/CPT conjugation: a SINGLET (dim 1) and a DOUBLET (dim 2).
 
-Supplied readout context (NOT re-derived here; cited provenance):
-  - The emergent 3-generation carrier is the hw=1 BZ-corner orbit {e1,e2,e3}
-    carrying the regular representation of C3 = Z3
-    (CL3_TASTE_GENERATION_THEOREM / FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED).
+Supplied readout context (cited provenance):
+  - The hw=1 BZ-corner orbit {e1,e2,e3} carrying the regular representation of
+    C3 = Z3 is a supplied finite readout surface.  Its cited provenance
+    supplies exact character/orbit/projector data, not a physical generation
+    or readout identification (CL3_TASTE_GENERATION_THEOREM /
+    FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED).
   - The readout context is a finite central-sector decomposition with a fixed
     K/CPT conjugation. The Record axiom, MINIMAL_AXIOMS_2026-06-05, names the
     realized K/CPT orbit and makes scalar readout I finitely additive over

@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow.py
-runner_sha256: eecb8a83b53fef204496e8525392bee204a96c7a4da8da6a97a43d5e845fea06
+runner_sha256: d5e2822eee72edbfb446877c5b0a843bcd2e2c50a11f9fd1ec139233385b6dd6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 ==============================================================================
-GAUGE-VACUUM PLAQUETTE RESIDUAL-ENVIRONMENT FINITE-BOX STRIPPING-UNIQUENESS
+FINITE-BOX MATRIX-FACTORIZATION STRIPPING UNIQUENESS
 ==============================================================================
 
 Finite box: 0 <= p,q <= 3, dim H_B = 16, beta = 6.0, mpmath dps = 60
@@ -17,7 +17,7 @@ Stripping factors (float64 context)
   J|_B swap commutator error            = 0.000e+00
   min eigenvalue of M = exp((beta/2) J|_B)= 0.311686452038
   det M (float64)                       = 1.000000e+00
-  min diagonal of D_beta^loc|_B         = 2.118758e-13
+  min diagonal of D_beta^packet|_B      = 2.118758e-13
   det D (float64)                       = 1.112541e-91
 
 mpmath invertibility certificates
@@ -27,8 +27,8 @@ mpmath invertibility certificates
 Algebraic stripping round-trip (mpmath, dps=60)
   ||R1 - strip(reconstruct(R1))||       = 2.471e-51
   ||R2 - strip(reconstruct(R2))||       = 5.287e-51
-  ||K1 - K2|| (kernel distinctness)     = 6.568e-01
-  ||R1 - R2|| (residual distinctness)   = 6.704464e-01
+  ||K1 - K2|| (matrix distinctness)     = 6.568e-01
+  ||R1 - R2|| (operator distinctness)   = 6.704464e-01
 
 Hostile structural control (mpmath, dps=60)
   K_hostile self-adj err                = 3.889e-62
@@ -38,7 +38,7 @@ Hostile structural control (mpmath, dps=60)
   recovered C swap err                  = 1.605e-55
   recovered C off-diagonal magnitude    = 1.000e+00
 
-Bounded-companion cross-check (canonical Wilson rho(6), mpmath)
+Bounded-companion input round-trip (stipulated-integral rho(6), mpmath)
   rho_(0,0)(6)                          = 1.0000000000000000
   ||R[rho(6)] - strip(reconstruct(R[rho(6)]))|| = 2.213e-51
   recovered R[rho(6)] off-diagonal err  = 2.213e-51
@@ -46,25 +46,25 @@ Bounded-companion cross-check (canonical Wilson rho(6), mpmath)
 
   [PASS] [THEOREM] (U1) the half-slice multiplier exp[(beta/2) J|_B] is positive definite, has positive determinant, and is invertible to mpmath precision on the finite box
          min eig=0.311686, det=1.000e+00, ||M M^-1 - I||=4.297e-64
-  [PASS] [THEOREM] (U2) the local Wilson factor D_beta^loc|_B has strictly positive diagonal entries, positive determinant, and is invertible to mpmath precision on the finite box
+  [PASS] [THEOREM] (U2) the fourth-power diagonal D_beta^packet|_B has strictly positive entries, positive determinant, and is invertible to mpmath precision on the finite box
          min diag=2.119e-13, det=1.113e-91, ||D D^-1 - I||=7.779e-62
-  [PASS] [THEOREM] (U3a) the stripping identity (S) recovers a positive diagonal candidate residual R1 exactly from K = reconstruct(R1) on the finite box (mpmath round-trip)
+  [PASS] [THEOREM] (U3a) the stripping identity (S) recovers a positive diagonal candidate operator R1 exactly from K = reconstruct(R1) on the finite box (mpmath round-trip)
          ||R1 - strip(reconstruct(R1))||=2.471e-51
-  [PASS] [THEOREM] (U3b) the stripping identity (S) recovers a SECOND, distinct positive diagonal candidate residual R2 exactly from K = reconstruct(R2) on the finite box, establishing that (S) is a function (no admissibility freedom in the stripped residual)
+  [PASS] [THEOREM] (U3b) the stripping identity (S) recovers a SECOND, distinct positive diagonal candidate operator R2 exactly from K = reconstruct(R2) on the finite box, establishing that (S) is a function
          ||R2 - strip(reconstruct(R2))||=5.287e-51, ||R1 - R2||=6.704e-01, ||K1 - K2||=6.568e-01
-  [PASS] [THEOREM] (U4 hostile) positive self-adjoint swap-symmetric kernel data can strip to a positive self-adjoint swap-symmetric operator with off-diagonal character mixing
+  [PASS] [THEOREM] (U4 hostile) positive self-adjoint swap-symmetric matrix data can strip to a positive self-adjoint swap-symmetric operator with off-diagonal character mixing
          min eig(K)=1.038e-13; K sym/swap=(3.889e-62,0.000e+00); round-trip=7.518e-51; C sym/swap/offdiag=(7.518e-51,1.605e-55,1.000e+00)
-  [PASS] [THEOREM] (U5) when K_6^src|_B is constructed from the bounded companion's canonical Wilson rho_(p,q)(6) coefficients, (S) recovers a diagonal operator whose entries equal rho_(p,q)(6) on the finite box (mpmath)
+  [PASS] [SUPPORT] (U5) when K_6|_B is constructed from independently recomputed stipulated-integral rho_(p,q)(6) values, (S) recovers that chosen diagonal input on the finite box (mpmath)
          ||R[rho(6)] - strip(...)||=2.213e-51, off-diag=2.213e-51, diag match=7.721e-53
-  [PASS] [SUPPORT] the source operator J|_B is real symmetric and swap-invariant on the finite box
+  [PASS] [SUPPORT] the recurrence matrix J|_B is real symmetric and swap-invariant on the finite box
          ||J - J^T||=0.000e+00, ||[S,J]||=0.000e+00
-  [PASS] [SUPPORT] the bounded companion's rho_(0,0)(6) = 1 normalization is reproduced exactly by the local Wilson factor diagonal entry consumed here (consistent normalization across the two sister bounded notes)
-         rho_(0,0)(6) = 1.0000000000000000
-  [PASS] [SUPPORT] the algebraic stripping (S) is independent of any specific witness or computed coefficient sequence (the two distinct candidate residuals R1, R2 used in (U3a)/(U3b) are random, with ||R1 - R2|| > 0.05)
-         residual distinctness ||R1 - R2|| = 6.704e-01
+  [PASS] [SUPPORT] the independently recomputed chosen input has rho_(0,0)(6) = 1 by its normalization definition
+         rho_(0,0)(6) = 1.0000000000000000; this is not a local-factor or environment identification
+  [PASS] [SUPPORT] the algebraic stripping (S) is independent of any specific witness or computed coefficient sequence (the two distinct candidate operators R1, R2 used in (U3a)/(U3b) are random, with ||R1 - R2|| > 0.05)
+         operator distinctness ||R1 - R2|| = 6.704e-01
 
 ==============================================================================
-SUMMARY: THEOREM PASS=6 SUPPORT=3 FAIL=0
+SUMMARY: THEOREM PASS=5 SUPPORT=4 FAIL=0
 ==============================================================================
 
 ----- stderr -----

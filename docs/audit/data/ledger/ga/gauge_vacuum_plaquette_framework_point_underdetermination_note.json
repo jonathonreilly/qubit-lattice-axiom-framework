@@ -14,7 +14,7 @@
   "chain_closure_explanation": null,
   "claim_id": "gauge_vacuum_plaquette_framework_point_underdetermination_note",
   "claim_scope": null,
-  "claim_type": "positive_theorem",
+  "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": null,
@@ -1423,6 +1423,65 @@
         "total_pass": 7
       },
       "verdict_rationale": "The explicit c beta^6 witness establishes underdetermination by the finite jet and monotonicity, but it does not establish underdetermination by the advertised full exact stack; the numerical two-point plaquette comparison also does not prove the imported global monotonicity theorem. N1 tests only one witness-family route, N2 leaves full-stack witness compatibility as the distinct wall, N3 finds the obstruction language load-bearing rather than an accepted premise, and N4 has no retained prior witness authority. N5 lacks per-element, per-site, per-mode, per-block, and lattice-wide resolution tests; N6's indexed primitives and reframes do not supply witness admissibility; N7's strongest c beta^6 steelman closes only the reduced regularity surface; and N8's similar plaquette records cannot substitute for a restricted-packet proof. The broad conclusion therefore remains conditional on a theorem showing that at least two distinct witnesses satisfy every claimed full-stack constraint."
+    },
+    {
+      "archived_at": "2026-07-18T04:22:26.380335+00:00",
+      "audit_date": "2026-07-18T04:22:14.923797+00:00",
+      "audit_invocation_history": [
+        "d381751e6149498abf04cba162459ef8"
+      ],
+      "audit_invocation_id": "d381751e6149498abf04cba162459ef8",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+          "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py": "96cfa9c6348eeeae32929f3c1fa5109d1c4aa48987120cbfa64656e390ff3d45",
+          "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py": "ee013ee9d87ca89cbda5fd6c7229d4d31cdb9c1eba027aeb7881f31f4d6a4fdc",
+          "scripts/frontier_scalar_3plus1_temporal_ratio.py": "dba67f913ce7daa6ddfd894860d9429fd6fa26e6a6abac9bc6312c30cbaf04e2"
+        },
+        "load_bearing_score": 14.124,
+        "runner_hash": "80bcb543583d1df6f747db1328fa9c7e72fa2886517318b4ec6020db146b2a41",
+        "transitive_descendants": 788
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-drain-ready-20260717-e7a3e7df41b8424b8e0d6f34d5fa165d-gauge_vacuum_plaquette_f-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The witnesses establish underdetermination by the finite onset jet plus monotonicity only. The missing step is proof that both witnesses also satisfy the asserted infinite connected-hierarchy and compact positive spectral-measure constraints.",
+      "claim_scope": "Whether the two finite-jet witnesses prove that the full stated exact plaquette stack fails to determine beta_eff(6) and analytic P(6).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-18T04:22:14.923797+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "There exist two real-analytic strictly increasing witness laws with the same onset jet through beta^5 but different values at beta=6.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary",
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after either proving that both witnesses satisfy every claimed hierarchy and spectral-measure constraint or narrowing the theorem explicitly to finite-jet-plus-monotonicity underdetermination.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The explicit functions correctly demonstrate that analyticity, strict monotonicity, and the beta^5 jet alone leave beta_eff(6) variable. They are not shown to be realizable models of the full exact stack, especially its connected hierarchy and compact spectral-measure constraints, so the advertised inference fails. Under N1-N8, the packet supplies only this finite-jet counterfamily and lacks complete alternative-route, residual-matching, five-resolution, and independent-steelman evidence."
     }
   ],
   "prose_corrections": [],

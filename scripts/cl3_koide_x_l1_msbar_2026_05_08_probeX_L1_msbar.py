@@ -1,5 +1,5 @@
 """
-Probe X-L1-MSbar — Beta-function coefficients in a lattice/<P> scheme.
+Probe X-L1-MSbar — Beta-function source check and incomplete lattice/<P> rescaling.
 
 Authority role
 --------------
@@ -9,36 +9,35 @@ the independent audit lane.
 Purpose
 =======
 Test whether the physical Cl(3) local algebra / Z^3 framework's source content can derive the
-3-loop (beta_2) and 4-loop (beta_3) QCD beta-function coefficients in
-the framework's natural lattice/<P>-scheme, converting "scheme-dependent
-literature import" into "framework-native derivation."
+3-loop (beta_2) and 4-loop (beta_3) MSbar QCD beta-function coefficients,
+and whether the stipulated lattice/<P> rescaling defines such coefficients.
 
 Verdict structure
 =================
 The probe is an open_gate (bounded diagnostic, mostly negative on full
-derivation, with positive source checks on universal coefficients and on
-the color-tensor skeleton).
+derivation, with conditional/supplied-formula coefficient checks and
+candidate-monomial diagnostics).
 
-Positive source checks (PASS expected):
-  1. beta_0 = (11 N_color − 2 N_quark)/3 = 7 at N_f=6 (universal,
-     upstream-supported via S1+Casimir)
+Conditional, supplied-formula, and arithmetic checks (PASS expected):
+  1. beta_0 = (11 N_color − 2 N_quark)/3 = 7 at N_f=6 (conditional
+     upstream re-expression via S1+matter count)
   2. beta_1 = (34/3) C_A^2 − (20/3) C_A T_F N_f − 4 C_F T_F N_f = 26
-     at N_f=6 (universal at 2-loop)
-  3. Color-tensor skeleton at 3-loop: 9-channel decomposition source-supported
-  4. Color-tensor skeleton at 4-loop: extended quartic-Casimir source-supported
+     at N_f=6 (supplied standard-continuum formula; substitution check)
+  3. Candidate Casimir monomials: arithmetic diagnostic only
+  4. Candidate quartic-Casimir monomials: arithmetic diagnostic only
   5. <P>_HK_SU(3)(s_t) = 1 - exp(-(4/3) s_t) closed form used as
-     framework-native renormalization point
-  6. Scheme distinction <P> vs MSbar is structurally REAL
+     stipulated coupling rescaling
+  6. The <P> rescaling differs algebraically from the bare coupling; no full
+     renormalization scheme or higher beta coefficient is inferred
 
-Bounded admissions (PASS=ADMITTED expected, no derivation):
-  7. beta_2 in any scheme: scalar 3-loop integral primitives required
-     are NOT in current source content
-  8. beta_3 in any scheme: same obstruction at 4-loop, plus 4-loop
-     lattice PT not even published in literature
+Open inputs (reported, no derivation):
+  7. beta_2 in MSbar: matching/integral data are NOT in current source content;
+     the stipulated <P> rescaling defines no beta coefficient
+  8. beta_3: same MSbar source gap and incomplete-<P> boundary at 4-loop
 
 Numerical comparators (PASS expected on literature cross-check):
   9. beta_2^MSbar(N_f=6) = -65/2 = -32.5  (Tarasov-Vladimirov-Zharkov 1980)
- 10. beta_3^MSbar(N_f=6) ≈ 643.83 ≈ 3863/6  (van Ritbergen et al. 1997)
+ 10. beta_3^MSbar(N_f=6) ≈ 2472.28  (van Ritbergen et al. 1997)
 
 Forbidden imports respected:
 - NO PDG observed values used as derivation input
@@ -53,7 +52,8 @@ References
 - van Ritbergen T., Vermaseren J.A.M., Larin S.A. (1997), Phys. Lett. B 400, 379.
 - Czakon M. (2005), Nucl. Phys. B 710, 485.
 - Lüscher M., Weisz P. (1995), Nucl. Phys. B 452, 234.
-- Christou C., Panagopoulos H. (1998), Nucl. Phys. B 525, 387.
+- Christou C., Feo A., Panagopoulos H., Vicari E. (1998),
+  Nucl. Phys. B 525, 387 (with erratum).
 
 Source-note authority
 =====================
@@ -76,12 +76,12 @@ from fractions import Fraction
 # ----------------------------------------------------------------------
 
 class Counter:
-    """Simple counter for PASS / FAIL / ADMITTED outcomes."""
+    """Simple counter for PASS / FAIL / OPEN outcomes."""
 
     def __init__(self) -> None:
         self.passed = 0
         self.failed = 0
-        self.admitted = 0
+        self.open_inputs = 0
         self.failures: list[str] = []
 
     def record(self, name: str, ok: bool, detail: str = "") -> None:
@@ -96,22 +96,22 @@ class Counter:
             self.failed += 1
             self.failures.append(name)
 
-    def admit(self, name: str, detail: str = "") -> None:
+    def open_input(self, name: str, detail: str = "") -> None:
         if detail:
-            print(f"  [ADMITTED] {name} | {detail}")
+            print(f"  [OPEN] {name} | {detail}")
         else:
-            print(f"  [ADMITTED] {name}")
-        self.admitted += 1
+            print(f"  [OPEN] {name}")
+        self.open_inputs += 1
 
     def summary(self) -> None:
         print()
-        print(f"SUMMARY: PASS={self.passed} FAIL={self.failed} ADMITTED={self.admitted}")
+        print(f"SUMMARY: PASS={self.passed} FAIL={self.failed} OPEN={self.open_inputs}")
         if self.failed:
             print(f"FAILURES: {', '.join(self.failures)}")
 
 
 # ----------------------------------------------------------------------
-# Retained Casimir authority
+# Supplied and cited Casimir context
 # ----------------------------------------------------------------------
 
 # SU(3) Casimirs from YT_EW_COLOR_PROJECTION_THEOREM.md (D7) +
@@ -127,20 +127,21 @@ T_F = Fraction(1, 2)
 
 
 # ----------------------------------------------------------------------
-# SECTION 1 — POSITIVE SOURCE CHECK: beta_0 (1-loop, universal)
+# SECTION 1 — CONDITIONAL SOURCE CHECK: beta_0
 # ----------------------------------------------------------------------
 
-def section1_beta_0_retained(c: Counter) -> None:
+def section1_beta_0_conditional(c: Counter) -> None:
     """beta_0 = (11 N_color − 2 N_quark)/3 = 7 at N_f=6.
 
     From SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26
     inline companion form b_3 (QCD): b_3 = (11 N_color − 2 N_quark)/3.
     At upstream N_color=3, N_quark=6: b_3 = (33-12)/3 = 21/3 = 7.
 
-    This coefficient is SCHEME-INDEPENDENT (universal at 1-loop in
-    MSbar, MOM, lattice, <P>-scheme — all the same).
+    This coefficient is universal at one loop across suitably normalized
+    mass-independent coupling conventions. No coefficient is assigned here
+    to the incomplete stipulated <P> prescription.
     """
-    print("Section 1 — POSITIVE SOURCE CHECK: beta_0 (1-loop) = 7 universal")
+    print("Section 1 — CONDITIONAL SOURCE CHECK: beta_0 (1-loop) = 7")
 
     # Direct from S1 + Casimir
     beta_0_S1 = Fraction(11 * N_COLOR - 2 * N_QUARK, 3)
@@ -166,18 +167,17 @@ def section1_beta_0_retained(c: Counter) -> None:
         f"both = {beta_0_S1}",
     )
 
-    print("    → beta_0 is source-supported on framework via S1+Casimir.")
-    print("    → SCHEME-INDEPENDENT: same value in MSbar, MOM, lattice, <P>.")
+    print("    → beta_0 has the cited conditional S1/matter-count re-expression.")
 
 
 # ----------------------------------------------------------------------
-# SECTION 2 — POSITIVE SOURCE CHECK: beta_1 (2-loop, universal)
+# SECTION 2 — SUPPLIED-FORMULA CHECK: beta_1 (2-loop)
 # ----------------------------------------------------------------------
 
-def section2_beta_1_retained(c: Counter) -> None:
+def section2_beta_1_supplied_formula(c: Counter) -> None:
     """beta_1 = (34/3) C_A^2 − (20/3) C_A T_F N_f − 4 C_F T_F N_f at N_f=6.
 
-    Universal (scheme-independent) two-loop QCD beta function.
+    Supplied standard-continuum two-loop QCD formula.
     With upstream (C_F=4/3, C_A=3, T_F=1/2, N_f=6):
       term_gauge = (34/3)·9 = 102
       term_mixed = -(20/3)·3·(1/2)·6 = -60
@@ -185,7 +185,7 @@ def section2_beta_1_retained(c: Counter) -> None:
       sum = 102 - 60 - 16 = 26
     """
     print()
-    print("Section 2 — POSITIVE SOURCE CHECK: beta_1 (2-loop) = 26 universal")
+    print("Section 2 — SUPPLIED-FORMULA CHECK: beta_1 (2-loop) = 26")
 
     term_gauge = Fraction(34, 3) * C_A * C_A
     term_mixed = -Fraction(20, 3) * C_A * T_F * N_F
@@ -213,30 +213,26 @@ def section2_beta_1_retained(c: Counter) -> None:
         f"= {beta_1} (target 26)",
     )
 
-    print("    → beta_1 is source-supported on framework via Casimir algebra.")
-    print("    → SCHEME-INDEPENDENT: universal at 2-loop in MSbar, MOM, lattice, <P>.")
+    print("    → Substitution reproduces the supplied standard-continuum formula.")
+    print("    → Casimirs do not derive the scalar weights 34/3, 20/3, and 4.")
 
 
 # ----------------------------------------------------------------------
-# SECTION 3 — POSITIVE STRUCTURAL: 3-loop Casimir-tensor skeleton
+# SECTION 3 — ALGEBRAIC DIAGNOSTIC: candidate Casimir monomials
 # ----------------------------------------------------------------------
 
 def section3_three_loop_color_skeleton(c: Counter) -> None:
-    """At 3-loop QCD, the beta function decomposes into 9 Casimir-tensor
-    channels, each with a scalar weight that depends on the scheme.
+    """Evaluate a finite candidate list of Casimir monomials.
 
-    The framework source supports the SKELETON (the channel basis from
-    Casimir algebra) but NOT the channel weights (scalars).
-
-    This is the same pattern as YT_P3_K_3: color tensors source-supported,
-    integral primitives cited.
+    This arithmetic does not enumerate Feynman topologies or establish the
+    actual nonzero three-loop beta-function basis.
     """
     print()
-    print("Section 3 — POSITIVE STRUCTURAL: 3-loop Casimir-tensor skeleton source-supported")
+    print("Section 3 — ALGEBRAIC DIAGNOSTIC: candidate 3-loop Casimir monomials")
 
-    # The 9 channels at 3-loop QCD (matter + gauge), evaluated at
+    # Nine candidate monomials, evaluated at
     # (C_F=4/3, C_A=3, T_F=1/2, N_f=6).
-    channels_3loop = [
+    candidate_monomials_3loop = [
         ("C_F^3", C_F * C_F * C_F, Fraction(64, 27)),
         ("C_F^2 C_A", C_F * C_F * C_A, Fraction(16, 3)),
         ("C_F C_A^2", C_F * C_A * C_A, Fraction(12, 1)),
@@ -253,45 +249,46 @@ def section3_three_loop_color_skeleton(c: Counter) -> None:
         ("C_A (T_F N_f)^2", C_A * (T_F * N_F) ** 2, Fraction(27, 1)),
     ]
 
-    for name, computed, expected in channels_3loop:
+    for name, computed, expected in candidate_monomials_3loop:
         c.record(
-            f"3-loop channel '{name}' Casimir value at SU(3), N_f=6",
+            f"3-loop candidate monomial '{name}' value at SU(3), N_f=6",
             computed == expected,
             f"= {computed} (target {expected})",
         )
 
-    print("    → All 9 Casimir channels at 3-loop are framework source-supported.")
-    print("    → The channel WEIGHTS (scalars c_FFF, ..., c_Ann) are NOT.")
-    print("    → This matches the K_2/K_3 pattern: skeleton source-supported,")
-    print("      integral primitives cited from QCD literature.")
+    print("    → Candidate-monomial arithmetic is reproduced.")
+    print("    → No exhaustive diagrammatic basis or monomial weights follow.")
 
 
 # ----------------------------------------------------------------------
-# SECTION 4 — POSITIVE STRUCTURAL: 4-loop quartic-Casimir extension
+# SECTION 4 — ALGEBRAIC DIAGNOSTIC: quartic Casimir values
 # ----------------------------------------------------------------------
 
 def section4_four_loop_color_skeleton(c: Counter) -> None:
     """At 4-loop, the Casimir basis extends to include quartic invariants
     d_F^{abcd} d_F^{abcd} / N_R and d_F^{abcd} d_A^{abcd} / N_R for
     SU(3). For the fundamental representation:
-      d_F^{abcd} d_F^{abcd} / N_F = 5/12
+      d_F^{abcd} d_F^{abcd} / N_F = 5/36
       d_F^{abcd} d_A^{abcd} / N_F = 5/2
       d_A^{abcd} d_A^{abcd} / N_A = 135/8
 
-    These are still source-supported Casimir algebra (the quartic invariants
-    are computed from group theory alone; no integral primitives needed).
+    Their values do not establish the actual nonzero four-loop beta basis.
     """
     print()
-    print("Section 4 — POSITIVE STRUCTURAL: 4-loop quartic-Casimir basis source-supported")
+    print("Section 4 — ALGEBRAIC DIAGNOSTIC: quartic Casimir values")
 
-    # Quartic Casimir invariants at SU(3), fundamental rep
-    d_FF_over_NF = Fraction(5, 12)
-    d_FA_over_NF = Fraction(5, 2)
-    d_AA_over_NA = Fraction(135, 8)
+    # Recompute the SU(N) quartic invariants from their group-theory formulas.
+    nc = N_COLOR
+    d_FF_over_NF = Fraction(
+        (nc ** 2 - 1) * (nc ** 4 - 6 * nc ** 2 + 18),
+        96 * nc ** 3,
+    )
+    d_FA_over_NF = Fraction((nc ** 2 - 1) * (nc ** 2 + 6), 48)
+    d_AA_over_NA = Fraction(nc ** 2 * (nc ** 2 + 36), 24)
 
     c.record(
-        "Quartic invariant d_F^abcd d_F^abcd / N_F = 5/12 (SU(3) fundamental)",
-        d_FF_over_NF == Fraction(5, 12),
+        "Quartic invariant d_F^abcd d_F^abcd / N_F = 5/36 (SU(3) fundamental)",
+        d_FF_over_NF == Fraction(5, 36),
         f"= {d_FF_over_NF}",
     )
     c.record(
@@ -305,25 +302,23 @@ def section4_four_loop_color_skeleton(c: Counter) -> None:
         f"= {d_AA_over_NA}",
     )
 
-    print("    → 4-loop quartic Casimir basis is framework source-supported (group theory only).")
-    print("    → Channel weights at 4-loop NOT framework-derived.")
+    print("    → Quartic-invariant arithmetic is reproduced.")
+    print("    → No exhaustive four-loop diagrammatic basis follows.")
 
 
 # ----------------------------------------------------------------------
-# SECTION 5 — POSITIVE STRUCTURAL: <P>_HK closed form (framework-native)
+# SECTION 5 — CONVENTION DIAGNOSTIC: stipulated <P> rescaling
 # ----------------------------------------------------------------------
 
-def section5_p_scheme_native(c: Counter) -> None:
-    """The <P>-scheme renormalization point is framework-native:
+def section5_p_rescaling(c: Counter) -> None:
+    """Evaluate the stipulated <P> rescaling expression:
        <P>_HK_SU(3)(s_t) = 1 - exp(-(4/3) s_t)
     with s_t = g^2 / (2 xi).
 
-    This is NOT MSbar — it's structurally distinct. The <P>-scheme
-    uses the plaquette expectation value as its renormalization
-    condition, while MSbar uses dimensional-regularization subtraction.
+    This does not by itself specify a complete renormalization condition.
     """
     print()
-    print("Section 5 — POSITIVE STRUCTURAL: <P>-scheme is framework-native")
+    print("Section 5 — CONVENTION DIAGNOSTIC: stipulated <P> rescaling")
 
     # Verify <P>_HK closed form for representative s_t values
     def P_HK_SU3(s_t: float) -> float:
@@ -353,91 +348,54 @@ def section5_p_scheme_native(c: Counter) -> None:
         f"closed = {P_HK_small:.8f}, Taylor = {P_HK_taylor:.8f}",
     )
 
-    # The structural distinction: <P>-scheme renormalization point
+    # The stipulated rescaling is not a renormalization point or scheme.
     # alpha_<P>(beta) = alpha_bare(beta) / <P>(beta)
     # This is structurally different from
     # alpha_MSbar(mu) = alpha_bare(beta) * Z_MSbar(beta, a*mu)
-    print("    → <P>_HK_SU(3) closed form is framework-native (Casimir-derived).")
-    print("    → Defines the <P>-scheme renormalization point distinct from MSbar.")
+    print("    → The stipulated <P> expression is evaluated algebraically.")
+    print("    → It does not alone define a full renormalization scheme.")
 
 
 # ----------------------------------------------------------------------
-# SECTION 6 — POSITIVE STRUCTURAL: scheme distinction is REAL
+# SECTION 6 — CONVENTION DIAGNOSTIC: <P> rescaling differs from bare coupling
 # ----------------------------------------------------------------------
 
-def section6_scheme_distinction_real(c: Counter) -> None:
-    """The <P> scheme and MSbar scheme are genuinely structurally
-    different — they do not differ by a relabeling of bare coupling.
-
-    Specifically: at the same bare coupling alpha_bare(beta), the
-    renormalization conditions
-        alpha_<P>(beta) = alpha_bare(beta) / <P>(beta)
-        alpha_MSbar(mu) = alpha_bare(beta) * Z_MSbar(beta, a*mu)
-    yield different running coupling functions.
-
-    This implies beta_2^<P> ≠ beta_2^MSbar (genuine scheme dependence).
-    """
+def section6_rescaling_difference(c: Counter) -> None:
+    """Verify only that the stipulated <P> rescaling changes alpha_bare."""
     print()
-    print("Section 6 — POSITIVE STRUCTURAL: <P> vs MSbar scheme distinction is REAL")
+    print("Section 6 — CONVENTION DIAGNOSTIC: <P> rescaling differs from bare coupling")
 
-    # The 1-loop matching delta_1 between schemes:
-    # alpha_<P> / alpha_MSbar = 1 + delta_1 * alpha_MSbar + O(alpha^2)
-    # In the framework's natural variable, the <P> scheme has
-    # alpha_<P> = alpha_bare / <P>, so the leading correction is
-    # delta_1^framework_candidate ~ -(8 pi)/3 + O(<P>) (rough estimate;
-    # full lattice → MSbar matching requires tadpole integrals beyond
-    # current source content)
-
-    # We can verify the qualitative claim that the schemes differ
-    # by computing <P>_HK at a typical renormalization point and
-    # showing the renormalized coupling differs from MSbar
+    # Evaluate the stipulated rescaling at one representative point.
     s_t_canonical = 1.0 / 12.0  # corresponds to xi=6, g^2=1
     P_HK = 1.0 - math.exp(-(4.0 / 3.0) * s_t_canonical)
     P_HK_canonical = P_HK
-    # In the <P>-scheme: alpha_<P>(beta=6) = alpha_bare / <P>
+    # Stipulated algebraic rescaling: alpha_<P>(beta=6) = alpha_bare / <P>
     # alpha_bare = g_bare^2/(4 pi) = 1/(4 pi) [upstream g_bare=1]
     alpha_bare = 1.0 / (4.0 * math.pi)
-    alpha_P_scheme = alpha_bare / P_HK_canonical
-    # In MSbar at the same beta=6, alpha_MSbar(mu=2.0/a) ~ 0.27 (typical
-    # lattice → MSbar conversion at beta=6); these differ by factor ~3.
-
+    alpha_P_rescaled = alpha_bare / P_HK_canonical
     c.record(
-        "At beta=6: alpha_<P> ≠ alpha_bare ≠ alpha_MSbar (3 distinct couplings)",
-        alpha_P_scheme != alpha_bare,
-        f"alpha_bare = {alpha_bare:.5f}, alpha_<P> = {alpha_P_scheme:.5f}, "
+        "at beta=6 the stipulated alpha_<P> differs from alpha_bare",
+        alpha_P_rescaled != alpha_bare,
+        f"alpha_bare = {alpha_bare:.5f}, alpha_<P> = {alpha_P_rescaled:.5f}, "
         f"<P>_HK_canonical = {P_HK_canonical:.5f}",
     )
 
-    # The scheme distinction propagates to beta_2:
-    # beta_2^<P> ≠ beta_2^MSbar (literature: lattice scheme ~10× smaller
-    # for Wilson action, depending on details)
-    print("    → Scheme distinction is structurally real, NOT just relabeling.")
-    print("    → beta_2 in <P>-scheme genuinely differs from beta_2^MSbar.")
-    print("    → Framework's <P>-scheme is structurally privileged because")
-    print("      <P> IS framework-derivable while Z_MSbar is foreign.")
+    print("    → The stipulated <P> rescaling differs algebraically from alpha_bare.")
+    print("    → This does not define a full renormalization condition or beta_2.")
 
 
 # ----------------------------------------------------------------------
-# SECTION 7 — BOUNDED ADMISSION: beta_2 in any scheme NOT derivable
+# SECTION 7 — OPEN INPUT: MSbar beta_2; incomplete <P> rescaling
 # ----------------------------------------------------------------------
 
-def section7_beta_2_bounded_admission(c: Counter) -> None:
-    """At 3-loop, the scalar coefficients of the 9 Casimir channels are
-    SCHEME-DEPENDENT integral primitives outside current source content.
-
-    For MSbar: c_FFF, c_FFA, c_FAA, c_AAA = (rational + zeta_3 + zeta_5)
-                                            from dim-reg integrals
-    For <P>:    c_FFF, ..., c_AAA different rationals from lattice
-                                  perturbation theory integrals
-
-    Neither set is in current source content. The framework has the
-    SKELETON but not the SCALARS.
+def section7_beta_2_open_inputs(c: Counter) -> None:
+    """At 3-loop, the occurrence and weights of nine candidate Casimir
+    monomials are not determined by their arithmetic values.
     """
     print()
-    print("Section 7 — BOUNDED ADMISSION: beta_2 in any scheme NOT derivable")
+    print("Section 7 — OPEN INPUT: MSbar beta_2; <P> rescaling defines no beta_2")
 
-    # Document the obstruction via the channels:
-    channels_3loop_names = [
+    candidate_monomial_3loop_names = [
         "c_FFF (C_F^3)",
         "c_FFA (C_F^2 C_A)",
         "c_FAA (C_F C_A^2)",
@@ -448,39 +406,31 @@ def section7_beta_2_bounded_admission(c: Counter) -> None:
         "c_Fnn (C_F (T_F N_f)^2)",
         "c_Ann (C_A (T_F N_f)^2)",
     ]
-    for name in channels_3loop_names:
-        c.admit(
-            f"3-loop channel scalar '{name}'",
-            "scalar requires 3-loop integral primitive (dim-reg or lattice PT) "
-            "outside current Cl(3)/Z^3 source content",
+    for name in candidate_monomial_3loop_names:
+        c.open_input(
+            f"3-loop candidate monomial occurrence/weight '{name}'",
+            "candidate occurrence and weight are not supplied by this arithmetic",
         )
 
-    print("    → 9 scalar 3-loop channel weights are NOT framework-derived.")
-    print("    → Both MSbar and <P>-scheme require non-framework integral primitives.")
-    print("    → Bounded admission: framework has skeleton but not full beta_2.")
+    print("    → Nine candidate-monomial occurrences/weights are NOT framework-derived.")
+    print("    → MSbar requires imported matching/integral data.")
+    print("    → The stipulated <P> rescaling defines no beta coefficient.")
+    print("    → Other schemes defined by finite coupling redefinitions are not excluded.")
 
 
 # ----------------------------------------------------------------------
-# SECTION 8 — BOUNDED ADMISSION: beta_3 same obstruction at 4-loop
+# SECTION 8 — OPEN INPUT: MSbar beta_3; incomplete <P> rescaling
 # ----------------------------------------------------------------------
 
-def section8_beta_3_bounded_admission(c: Counter) -> None:
-    """At 4-loop, the obstruction is the same as at 3-loop, plus:
-    - 4-loop MSbar fully published (van Ritbergen-Vermaseren-Larin 1997)
-    - 4-loop lattice scheme NOT published for any standard action
-      (Wilson, Symanzik improved, ...) at N_f=6.
-
-    So even the LITERATURE comparator for the lattice/<P>-scheme at
-    4-loop does not exist. This is a genuine asymmetry: the framework's
-    natural <P>-scheme is BLIND at 4-loop in the sense that not even
-    a literature value exists, let alone a derivation.
+def section8_beta_3_open_inputs(c: Counter) -> None:
+    """At 4-loop MSbar requires external perturbative data, while the
+    incomplete stipulated <P> rescaling defines no beta coefficient. This is
+    a source-content/definition gap, not a claim about the complete literature.
     """
     print()
-    print("Section 8 — BOUNDED ADMISSION: beta_3 in any scheme NOT derivable;")
-    print("              <P>-scheme even blind in literature at 4-loop")
+    print("Section 8 — OPEN INPUT: MSbar beta_3; <P> rescaling defines no beta_3")
 
-    # 4-loop has more channels (~14 in MSbar including quartic Casimir)
-    channels_4loop_names = [
+    candidate_monomial_4loop_names = [
         "c_F^4 (C_F^4)",
         "c_F^3 A (C_F^3 C_A)",
         "c_F^2 A^2 (C_F^2 C_A^2)",
@@ -499,15 +449,14 @@ def section8_beta_3_bounded_admission(c: Counter) -> None:
         "c_F n^3 (C_F (T_F N_f)^3)",
         "c_A n^3 (C_A (T_F N_f)^3)",
     ]
-    for name in channels_4loop_names:
-        c.admit(
-            f"4-loop channel scalar '{name}'",
-            "scalar requires 4-loop integral primitive; for <P>-scheme, "
-            "no published lattice computation at N_f=6 exists",
+    for name in candidate_monomial_4loop_names:
+        c.open_input(
+            f"4-loop candidate monomial occurrence/weight '{name}'",
+            "candidate occurrence and weight are not supplied by this arithmetic",
         )
 
-    print("    → 17+ channel scalars at 4-loop NOT framework-derived.")
-    print("    → For <P>-scheme at 4-loop, even literature value unavailable.")
+    print("    → 17 candidate-monomial occurrences/weights are NOT framework-derived.")
+    print("    → The stipulated <P> rescaling defines no beta coefficient.")
 
 
 # ----------------------------------------------------------------------
@@ -580,26 +529,19 @@ def section9_msbar_literature_comparator(c: Counter) -> None:
     # to alternate numerical values.
     c.record(
         "MSbar beta_3(N_f=6) numerical value from VVL formula reproduced",
-        # Sanity: the VVL formula evaluates without errors and gives
-        # a definite literature number. We document the value, not match
-        # an arbitrary user quote, since beta_3 has multiple normalization
-        # conventions in the literature.
-        beta_3_VVL_numerical > 0,
+        math.isclose(
+            beta_3_VVL_numerical,
+            2472.2837425797165,
+            rel_tol=0.0,
+            abs_tol=1e-9,
+        ),
         f"= {beta_3_VVL_numerical:.4f} "
         f"(VVL 1997 formula evaluation; convention beta = -beta_0 g^3 ...)",
     )
 
-    # Note on user-quoted ~3863/6 ≈ 643.83: this value matches a
-    # different normalization convention common in some references where
-    # beta_3 is reported with an additional 1/(16 pi^2) absorbed into
-    # the coefficient. The precise convention is documented for audit
-    # transparency, but the LOAD-BEARING claim of this probe is that
-    # beta_3 in any scheme is NOT framework-derivable.
-    c.record(
-        "beta_3^MSbar(N_f=6) is BOUNDED ADMISSION across normalization conventions",
-        True,
-        "literature comparator; bounded admission stands regardless of convention",
-    )
+    # Keep this comparator tied to the formula and convention above.
+    print("    INFO  The numerical beta_3 value is tied to the displayed convention;")
+    print("          it is a comparator, not a framework derivation or all-scheme claim.")
 
     print("    → MSbar values reproduced from published formulas at N_f=6.")
     print("    → These are literature comparators, NOT framework derivations.")
@@ -610,57 +552,26 @@ def section9_msbar_literature_comparator(c: Counter) -> None:
 # ----------------------------------------------------------------------
 
 def section10_lattice_scheme_comparator(c: Counter) -> None:
-    """Lüscher-Weisz 1995: lattice → MSbar matching at 2-loop for
-    SU(N) gauge theories with Wilson plaquette action.
+    """Keep fixed Wilson bare-lattice results distinct from this probe's
+    incomplete stipulated <P> prescription.
 
-    For Wilson plaquette action at N_f=0:
-      alpha_MSbar(mu) / alpha_lat(beta) = 1 + d_1 alpha_lat(beta)
-                                          + d_2 alpha_lat(beta)^2 + ...
-    with d_1, d_2 computed from lattice 1-loop and 2-loop self-energy
-    diagrams. d_1 involves the lattice tadpole integral
-    Sigma_W ≈ 0.07959, related to the plaquette expectation.
-
-    This is bounded — the framework has the structural ingredients
-    (<P>) but not the lattice perturbation theory machinery to assemble
-    d_1 in closed form from current source content alone. The 2-loop
-    coefficient d_2 (Lüscher-Weisz 1995) is a published lattice number
-    not on the framework source surface.
-
-    For N_f=6 with dynamical quarks, the lattice → MSbar matching
-    gets additional fermion-loop contributions; d_1, d_2 with quarks
-    are similarly cited from later literature (e.g.,
-    Christou-Panagopoulos 1998 for clover fermions).
+    Lüscher-Weisz 1995 computes a two-loop bare-to-MSbar relation.
+    Christou-Feo-Panagopoulos-Vicari 1998 computes the three-loop
+    bare-lattice beta-function coefficient with Wilson fermions and the
+    two-loop MSbar-to-bare relation. That fixed Wilson prescription does
+    not define the stipulated <P> prescription used here.
     """
     print()
     print("Section 10 — LATTICE SCHEME COMPARATOR: lattice → MSbar matching cited")
 
-    # Document the lattice tadpole integral (1-loop matching ingredient)
-    # Wilson plaquette action: Sigma_W = 0.07959 (Brillouin-zone integral)
-    Sigma_W_pub = 0.07959
-
-    c.record(
-        "Lüscher-Weisz 1995: lattice tadpole Sigma_W ≈ 0.07959 (Wilson plaq, 1-loop)",
-        True,
-        "literature comparator only; full Brillouin-zone integral not in current source content",
+    c.open_input(
+        "beta_3 for the stipulated lattice/<P> rescaling at N_f=6",
+        "undefined until a completed renormalization prescription is supplied",
     )
 
-    # The 2-loop Lüscher-Weisz coefficient (Wilson plaq, N_f=0)
-    # Approximation: d_2 ~ 0.3 for plaquette scheme (rough)
-    c.record(
-        "Lüscher-Weisz 1995: d_2 (Wilson plaq, N_f=0) ~0.3-ish (literature)",
-        True,
-        "no framework-native derivation; cited from lattice perturbation theory",
-    )
-
-    # 4-loop lattice scheme at N_f=6: NOT in literature
-    c.admit(
-        "4-loop lattice/<P>-scheme beta_3 at N_f=6",
-        "no published literature value for any standard lattice action",
-    )
-
-    print("    → Lattice → MSbar matching at 2-loop is cited literature.")
-    print("    → 4-loop lattice scheme at N_f=6 has NO published value.")
-    print("    → Framework's <P>-scheme is genuinely beyond literature at 4-loop.")
+    print("    → Fixed Wilson bare-lattice perturbative results are cited literature.")
+    print("    → They do not complete the stipulated <P> prescription.")
+    print("    → No higher coefficient is inferred from this source-content inventory.")
 
 
 # ----------------------------------------------------------------------
@@ -675,30 +586,25 @@ def section11_verdict(c: Counter) -> None:
     print("=" * 72)
     print()
     print("Claim type: open_gate (bounded diagnostic, mostly negative on full derivation,")
-    print("            with positive source support at 1-loop, 2-loop, and")
-    print("            color-tensor skeletons at 3-loop and 4-loop)")
+    print("            with conditional/supplied checks at 1-loop, 2-loop, and")
+    print("            candidate-monomial diagnostics)")
     print()
-    print("POSITIVE source checks:")
-    print("  ✓ beta_0 = (11 N_color − 2 N_quark)/3 = 7 (universal)")
+    print("Coefficient checks:")
+    print("  ✓ beta_0 = (11 N_color − 2 N_quark)/3 = 7 (conditional re-expression)")
     print("  ✓ beta_1 = (34/3) C_A^2 − (20/3) C_A T_F N_f − 4 C_F T_F N_f = 26")
-    print("    (universal at 2-loop)")
-    print("  ✓ 9-channel 3-loop Casimir-tensor skeleton")
-    print("  ✓ Extended quartic-Casimir 4-loop skeleton")
-    print("  ✓ <P>_HK_SU(3)(s_t) = 1 - exp(-(4/3) s_t) framework-native")
-    print("  ✓ Scheme distinction <P> vs MSbar is structurally real")
+    print("    (supplied standard-continuum formula; substitution only)")
+    print("  ✓ Candidate Casimir-monomial arithmetic reproduced")
+    print("  ✓ <P>_HK_SU(3)(s_t) stipulated rescaling reproduced")
     print()
-    print("BOUNDED admissions:")
-    print("  ⚠ beta_2 scalar channel weights: NOT derivable in any scheme")
-    print("  ⚠ beta_3 scalar channel weights: NOT derivable in any scheme")
-    print("  ⚠ 4-loop lattice scheme at N_f=6: not even published literature")
+    print("OPEN inputs:")
+    print("  ⚠ MSbar beta_2 and beta_3 remain external comparators")
+    print("  ⚠ the stipulated <P> rescaling defines no beta_2 or beta_3")
     print()
     print("Net contribution to Lane 1:")
-    print("  - Confirms that beta_0=7, beta_1=26 are upstream-supported")
-    print("  - Adds structural source support for 3-loop, 4-loop color skeletons")
-    print("  - Identifies <P>-scheme as structurally privileged but not")
-    print("    sufficient by itself to derive beta_2, beta_3")
-    print("  - Does NOT change current Lane 1 admission status (2-loop MSbar")
-    print("    bridge remains the same)")
+    print("  - Separates beta_0's conditional re-expression from supplied beta_1")
+    print("  - Candidate monomial arithmetic supplies no exhaustive loop basis")
+    print("  - The stipulated <P> rescaling defines no beta_2 or beta_3")
+    print("  - Does NOT change the supplied two-loop bridge")
     print()
 
 
@@ -708,7 +614,7 @@ def section11_verdict(c: Counter) -> None:
 
 def main() -> int:
     print("=" * 72)
-    print("Probe X-L1-MSbar — Beta-function coefficients in lattice/<P> scheme")
+    print("Probe X-L1-MSbar — MSbar source check and incomplete lattice/<P> rescaling")
     print("Date: 2026-05-10")
     print("Source-note authority:")
     print("  docs/KOIDE_X_L1_MSBAR_NATIVE_SCHEME_NOTE_2026-05-08_probeX_L1_msbar.md")
@@ -717,14 +623,14 @@ def main() -> int:
 
     counter = Counter()
 
-    section1_beta_0_retained(counter)
-    section2_beta_1_retained(counter)
+    section1_beta_0_conditional(counter)
+    section2_beta_1_supplied_formula(counter)
     section3_three_loop_color_skeleton(counter)
     section4_four_loop_color_skeleton(counter)
-    section5_p_scheme_native(counter)
-    section6_scheme_distinction_real(counter)
-    section7_beta_2_bounded_admission(counter)
-    section8_beta_3_bounded_admission(counter)
+    section5_p_rescaling(counter)
+    section6_rescaling_difference(counter)
+    section7_beta_2_open_inputs(counter)
+    section8_beta_3_open_inputs(counter)
     section9_msbar_literature_comparator(counter)
     section10_lattice_scheme_comparator(counter)
     section11_verdict(counter)

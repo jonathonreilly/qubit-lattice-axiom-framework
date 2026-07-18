@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py
-runner_sha256: 9d6922ea80eee081cd497c53435f3ad6c41c9685958a0658d43a0357e711bcc4
+runner_sha256: ae61790f38d64365e1b5d170a70f1a624353c17e22d59c711a935774a36c80cf
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.26

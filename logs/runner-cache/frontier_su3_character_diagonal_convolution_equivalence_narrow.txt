@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py
-runner_sha256: 1359799bb51b8c94ad2e6910731437592b43c8f8cbe22906e71f4ef3b806d220
+runner_sha256: cb80613c581f7a42c446bc3a0670dac14dd7ca2fa5fb70d7de6febdd0ccf4890
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 9.17
+elapsed_sec: 9.22
 status: ok
 ----- stdout -----
 
@@ -38,7 +38,7 @@ Part 4 (T4): positivity, self-adjointness, conjugation-symmetry of R
   [PASS (A)] (T4) R is positive: rho_(p,q) >= 0 on every weight in B_4  (min rho = 0.00125 >= 0)
   [PASS (A)] (T4) R is self-adjoint (diagonal with real entries)  (||R - R^T||_inf = 0.000e+00)
   [PASS (A)] (T4) R commutes with the conjugation swap (p,q) <-> (q,p)  (||[swap, R]||_inf = 0.000e+00)
-  [PASS (A)] (T4) Normalization: rho_(0,0) = 1 exactly  (|rho_(0,0) - 1| = 0.000e+00)
+  [PASS (A)] (T2) Trivial-channel normalization: rho_(0,0) = 1 exactly  (|rho_(0,0) - 1| = 0.000e+00)
 
 ----------------------------------------------------------------------------------------
 Part 5: concrete instance — trivial coefficient sequence collapses to projection
@@ -90,18 +90,21 @@ Narrow theorem summary
     (T4)  R is positive, self-adjoint (in the Schur-orthonormal character basis),
           and commutes with the conjugation swap (p,q) <-> (q,p).
 
-  Load-bearing step class:
-    (A) - pure finite-dim SU(3) representation theory on an abstract real
-    coefficient sequence. No Wilson action, no unmarked spatial environment,
-    no beta = 6 framework-point input, no identification with the parent
-    plaquette environment operator R_beta^env.
+  INPUT AND AUTHORITY SURFACE:
+    The complete input is the finite B_4 SU(3) character basis, normalized
+    Haar probability measure, an abstract real nonnegative swap-symmetric
+    sequence with rho_(0,0) = 1, and standard compact-group representation
+    algebra.
 
-  This narrow theorem isolates the abstract algebraic equivalence between
-  diagonal-coefficient operators and convolution-by-central-class-function
-  operators on the finite SU(3) B_4 character truncation. It does NOT close the
-  parent gate. The remaining physical-Wilson-coefficient derivation is
-  separately addressed by the bounded companion
-  GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.
+  OUTPUT SURFACE:
+    T1 Schur orthogonality; T2 equality of normalized convolution and diagonal
+    action on V_4; T3 coefficient uniqueness; T4 positivity,
+    self-adjointness, and swap symmetry.
+
+  PARENT PROGRAM DIVISION OF LABOR:
+    A physical Wilson-environment coefficient result supplies the sequence
+    with its own source authority. This theorem supplies the algebraic
+    convolution/diagonal equivalence after that typed input is present.
 
 
 ========================================================================================

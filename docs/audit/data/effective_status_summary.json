@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2070,
-    "decoration": 21,
+    "bounded_theorem": 2069,
+    "decoration": 23,
     "meta": 360,
     "no_go": 441,
     "open_gate": 202,
-    "positive_theorem": 676
+    "positive_theorem": 675
   },
   "cycle_examples": [
     [
@@ -80,11 +80,10 @@
   ],
   "cycles_detected": 62,
   "effective_status_counts": {
-    "audit_in_progress": 24,
-    "audited_conditional": 20,
-    "audited_failed": 1,
+    "audit_in_progress": 18,
+    "audited_conditional": 23,
     "audited_numerical_match": 6,
-    "audited_renaming": 18,
+    "audited_renaming": 16,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
     "decoration_under_graph_first_su3_integration_note": 8,
@@ -92,18 +91,20 @@
     "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
+    "decoration_under_plaquette_self_consistency_note": 1,
     "meta": 353,
     "open_gate": 2,
-    "retained": 76,
-    "retained_bounded": 306,
-    "retained_pending_chain": 4,
-    "unaudited": 2946
+    "retained": 79,
+    "retained_bounded": 308,
+    "retained_pending_chain": 5,
+    "unaudited": 2945
   },
-  "retained_pending_chain_count": 4,
+  "retained_pending_chain_count": 5,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "cl3_taste_generation_theorem",
     "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-    "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+    "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+    "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
   ]
 }

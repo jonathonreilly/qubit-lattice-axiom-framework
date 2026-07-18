@@ -4,8 +4,8 @@ DM odd-slot minimal mixed-bridge extension theorem.
 
 Question:
   If a separate source/activation bridge requires c_odd != 0, what is the
-  smallest extension class left after the odd-direction algebra lemma and the
-  current-stack zero law?
+  smallest extension class left after the positive finite-matrix theorem and
+  the current-stack zero law?
 
 Answer:
   A residual-Z2-odd non-additive mixed bridge with one real amplitude slot.

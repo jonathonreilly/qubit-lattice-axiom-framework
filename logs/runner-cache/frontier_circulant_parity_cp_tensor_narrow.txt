@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_circulant_parity_cp_tensor_narrow.py
-runner_sha256: b41e886bfbd1d523bbb26a721bf95721a367b1542f8801d40eb5393196e05a21
+runner_sha256: 73f083bb9cf5ac7cb3fd9a8030cae20e31874445fc9e63b51cbd44a1ad95108a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.70
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
-Pattern A narrow theorem: Hermitian circulant parity + CP tensor
+Pattern A narrow theorem: Hermitian circulant parity + coordinate polynomial
 ----------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ Part 3: K(d, c_even, c_odd) parity decomposition
   [PASS (C)] P_{23} K P_{23} = d I + c_even(S+S^2) - i c_odd(S-S^2) (parity sends c_odd -> -c_odd)  ()
 
 ----------------------------------------------------------------------------------------
-Part 4: CP-tensor formula Im[(K_01)^2] = 2 c_even c_odd
+Part 4: coordinate polynomial Im[(K_01)^2] = 2 c_even c_odd
 ----------------------------------------------------------------------------------------
 
   K[0, 1] = c_even + I*c_odd
@@ -68,17 +68,17 @@ Narrow theorem summary
     (i)   P_{23} S P_{23} = S^2 (residual-Z_2 swap of S, S^2);
     (ii)  I and (S + S^2) are residual-Z_2-even; i(S - S^2) is residual-Z_2-odd;
     (iii) P_{23} K P_{23} sends c_odd -> -c_odd, leaves d, c_even fixed;
-    (iv)  Im[(K_01)^2] = 2 c_even c_odd  (exact CP-tensor formula);
+    (iv)  Im[(K_01)^2] = 2 c_even c_odd  (exact coordinate polynomial);
     (v)   c_odd = 0 forces Im[(K_01)^2] = 0.
 
   Audit-lane class:
     pure linear algebra on 3x3 Hermitian circulants and a residual Z_2
-    transposition. No DM-side / Wilson-environment / weak-axis-split / two-Higgs
-    right-Gram / standard CP tensor readout authority consumed.
+    transposition. No DM-side / weak-axis-split / two-Higgs right-Gram /
+    physical-readout authority consumed.
 
-  This narrow theorem isolates the circulant parity decomposition + CP-tensor
-  formula from any DM-side framework-specific framing, so it can be
-  checked independently of the parent's authority-stack inputs.
+  This separate narrow theorem overlaps the displayed parity and coordinate
+  identities in the complete finite-matrix theorem; neither theorem supplies
+  a physical carrier, activation law, or readout.
 
 
 ========================================================================================

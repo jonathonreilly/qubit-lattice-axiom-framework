@@ -170,7 +170,7 @@ So it is a route-selection theorem, not full two-Higgs closure.
 
 - the bare axiom already forces two Higgs with no bridge condition
 - the local two-Higgs coefficients are already derived
-- the bounded odd-circulant algebra lemma derives a physical CP or
+- the positive finite-matrix Hermitian-circulant theorem derives a physical CP or
   leptogenesis observable
 
 ## Command

@@ -10,8 +10,8 @@ nonzero odd-coefficient target
 ## Question
 
 If a separate source/activation bridge requires `c_odd != 0`, what is the
-smallest extension class left after the odd-direction algebra lemma and the
-current-stack zero law?
+smallest extension class left after the positive finite-matrix theorem and
+the current-stack zero law?
 
 ## Bottom line
 
@@ -39,15 +39,15 @@ Under the note's explicit assumptions, the branch knows:
    branch
 4. the local sheet on that lane is already fixed on the DM circulant route
 
-The supplied-matrix lemma contributes only item 1. It does not supply a
+The positive finite-matrix theorem contributes only item 1. It does not supply a
 physical carrier, a source law, or a reason to require a nonzero odd
 coefficient.
 
 ## Theorem-level statement
 
 **Theorem (Conditional minimal extension class for a nonzero odd
-coefficient).** Assume a separate target requiring `c_odd != 0`, the bounded
-supplied-matrix odd-direction lemma, the DM odd-slot current-stack zero law,
+coefficient).** Assume a separate target requiring `c_odd != 0`, the positive
+finite-matrix Hermitian-circulant theorem, the DM odd-slot current-stack zero law,
 the DM two-Higgs minimality theorem, and the DM two-Higgs continuity sheet
 theorem. Then any realization of that target must:
 

@@ -99,16 +99,19 @@ statement.
 
 ## No-Go Discipline Gate
 
-**Status: PASS for the scoped artifact boundary below.** The positive theorem
-is the cadence-defect identity and all-time monomial criterion under the
-declared imports. The only negative gated here is:
+**Status: `FAIL / DO NOT SHIP` for any negative inference from the scoped
+artifact.** The cadence-defect identity and all-time monomial criterion under
+the declared imports remain positive bounded results. The candidate negative
+tested was:
 
 > The objects constructed in this note and its paired runner do not by
 > themselves define a physical Record, occurrence rule, probability law, or
 > clock.
 
-This is a typed statement about the displayed construction, not a claim that
-those bridges are impossible in the framework.
+The sentence is an import inventory for the displayed construction, not a
+claim that those bridges are impossible in the framework. Because the route
+outcomes below are current tests without per-route retained authority, it is
+not shipped as a no-go.
 
 ### N1 -- alternative routes
 
@@ -124,6 +127,11 @@ those bridges are impossible in the framework.
 The [minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md) supply neither
 the missing instrument semantics nor a time metric. The paired runner tests
 the finite algebraic identities and does not assert those bridges.
+
+All six route outcomes are current source analysis. None has a per-route
+retained-authority citation closing the physical alternatives. **N1 therefore
+fails**, and the negative disposition is `partial-narrowing`; only the exact
+finite identity and monomial criterion are submitted for independent audit.
 
 ### N2 -- wall independence
 
@@ -149,13 +157,13 @@ unitary recurrence, determinant multiplicativity, and the Hadamard bound.
 
 ### N4 -- residual matching
 
-| source | residual there | residual used here | match? |
+| cited witness (exact path and line) | residual there | residual used here | match? |
 |---|---|---|---:|
-| [minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md) | Record supplies no update law, probability rule, or time metric | the construction does not inherit those objects from Record | yes |
-| [paired runner](../scripts/read_reset_cadence_interference_channel_bounded_2026_07_18.py) | finite channel/kernel identities only | exact theorem scope | yes |
-| `LOCKING_CADENCE_RECORD_KERNEL_DISCRIMINATOR_CYCLE223_NOTE_2026-07-17.md` in work history | conditional application to a supplied candidate | not used as authority for the canonical theorem | no; historical context only |
+| `docs/MINIMAL_AXIOMS_2026-06-29.md:65,105-113,164-168` | Record supplies no update law, probability rule, or time metric | the construction does not inherit those objects from Record | yes; approved source boundary only |
+| `scripts/read_reset_cadence_interference_channel_bounded_2026_07_18.py:100-181` | finite channel/kernel identities, order control, and monomial/nonmonomial checks | exact positive theorem scope | yes; current unaudited compute, so it cannot make N1 pass |
 
-No historical application is used to support the canonical claim.
+No prior no-go, historical application, or campaign is used as supporting
+authority for the canonical claim.
 
 ### N5 -- rhetoric and resolution audit
 
@@ -184,11 +192,20 @@ is why this note claims only the finite conditional theorem.
 
 ### N8 -- cross-cycle echo
 
-The nearby read-twice work separated pointer copying from Record, probability,
-and time; the continuation-refinement work separated a static availability
-menu from successor dynamics. Those earlier type separations are preserved
-here. None has been retired merely by renaming an update index or a dephasing
-map.
+The repository echo search covered `cadence`, `dephasing`, `Record`,
+`unistochastic`, `update count`, `time metric`, `Born`, `no retained
+primitive`, and `requires new axiom`.
+
+| prior surface | similar wall | retired mechanism/status | application here |
+|---|---|---|---|
+| `docs/READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md` | finite copying and Hilbert pairing were overread as Record, probability, or time | current bounded candidate; negative gate failed and physical bridges remain open | no pointer-copy or weight result is imported as a cadence law |
+| `docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md` | an availability menu was overread as successor dynamics | current bounded candidate; finite append witness does not select the physical rule | the declared read/reset schedule remains an import |
+| `docs/TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md` | update order was overread as rate or metric duration | order/axis separated from calibration; unaudited | integer exponents are not called physical time |
+| `docs/READOUT_BRIDGE_FRAME_EXTENSION_UNIFIES_MARGINAL_READ_AND_REGISTERED_FACTOR_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md` | finite additivity was overread as a probability representation | FRAME-EXT remains conditional and unaudited | squared-modulus/reset semantics stay declared imports |
+
+No listed wall has a retained retirement mechanism omitted here. A naming
+change cannot supply an instrument, occurrence, or clock calibration, so the
+negative gate remains `FAIL`.
 
 ## Primary comparisons
 

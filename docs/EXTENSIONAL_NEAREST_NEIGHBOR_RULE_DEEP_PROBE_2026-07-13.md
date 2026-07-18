@@ -228,10 +228,11 @@ No additional axiom is declared necessary by this probe.
 
 ## No-Go Discipline Gate
 
-**Gate result:** `PASS` for the exact finite census, displayed constructions,
-and the scoped record-graph non-entailment witness. No broad no-go or axiom-
-necessity conclusion is claimed. The finite witnesses show non-entailment and
-route prices; they do not show that a framework-complete rule cannot exist.
+**Gate result:** `FAIL / DO NOT SHIP` for any negative inference from the
+finite census or displayed constructions. The exact census, append relation,
+and pair of inequivalent finite carriers remain positive bounded results. No
+broad no-go, minimum-content, axiom-necessity, or framework-complete
+non-entailment conclusion is shipped.
 
 ### N1 -- alternative routes
 
@@ -248,6 +249,12 @@ Stable-subalgebra, topological, and branching-history constructions remain
 live routes against any broader framework no-go. They are not needed to defeat
 the exact statement that the displayed record graph alone is compatible with
 two inequivalent finite global algebras.
+
+All six rows are current-cycle attempts. None has a per-route
+retained-authority citation closing it, and several rows explicitly succeed as
+partial routes. **N1 therefore fails.** The negative disposition is demoted to
+`partial-narrowing`; the finite existence constructions remain the bounded
+claim submitted for independent audit.
 
 ### N2 -- wall independence
 
@@ -277,13 +284,14 @@ the physical rule.
 
 ### N4 -- residual matching
 
-| cited source | residual there | residual used here | match? |
+| cited witness (exact path and line) | residual there | residual used here | match? |
 |---|---|---|---:|
-| [minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md), Admissibility/dynamics boundary | one fixed covariant rule is named but no predictive table or successor dynamics is supplied | structural clauses do not select the displayed table | yes |
-| [paired runner](../scripts/extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py), blocks B-C | exact rule census and append construction | finite selection count and record-layer theorem | yes |
-| [generated-composition theorem](GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md), extension witnesses | local products do not exclude extra global sectors | identical record graph does not determine global algebra | yes |
-| [Schumacher-Werner QCA](https://arxiv.org/abs/quant-ph/0405174) | QCA assumes an infinite quantum lattice algebra and reversible update | route price for a quantum local rule | yes, context only |
-| probability or actualization notes | weighting/selection rather than rule-table or composition residuals | finite rule census | no; not used as support |
+| `docs/MINIMAL_AXIOMS_2026-06-29.md:57-60,105-113` | one fixed covariant rule is named while Admissibility is expressly not successor dynamics | structural clauses do not select the displayed table | yes; approved source boundary, not proof of the new constructions |
+| `scripts/extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py:160-205,284-386` | exact rule census, append construction, and duplicate-carrier comparison | finite census and carrier-pair existence results | yes; current unaudited compute, so it cannot make N1 pass |
+
+The generated-composition note and Schumacher-Werner QCA are comparison
+context, not prior no-go witnesses. Probability and actualization residuals
+concern weighting or selection and are dropped from the witness count.
 
 ### N5 -- resolution audit
 
@@ -310,13 +318,18 @@ but this probe does not weaken it.
 
 ### N8 -- cross-cycle echo
 
+The repository echo search covered `successor support`, `fixed rule`, `tensor
+composition`, `local tomography`, `no retained primitive`, and `requires new
+axiom`. The nearest prior surfaces are:
+
 | prior surface | repeated wall | retirement mechanism/status | treatment here |
 |---|---|---|---|
-| [continuation-refinement note](ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md) | an availability menu was overread as successor support | explicit append semantics closes the record-layer witness conditionally | the rule remains a constructed witness, not the physical law |
-| [generated-composition theorem](GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md) | local copies were overread as the whole composite | generatedness isolates the exact extra condition | record-graph data are not used to retire it |
-| [read-twice finite fan-out](READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md) | a finite tensor carrier and write were overread as formation/probability | the live note exposes carrier and frame imports | the instrument route repeats those imports explicitly |
-| earlier rule-table work in work history | supplied examples were overread as the fixed physical rule | historical demotion preserved the examples without authority | no historical example selects the current rule |
+| `docs/BOOTSTRAP_CONTINUATION_AVAILABILITY_NONEMPTY_FREE_ORBIT_REDUCTION_PROPAGATION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-07-04.md` | availability was overread as complete continuation support | unaudited conditional propagation only | explicit append semantics is a constructed witness, not the physical rule |
+| `docs/GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md` | local copies were overread as the whole composite | current unaudited equivalence isolates generatedness | record-graph data are not used to retire that import |
+| `docs/RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md` | occurrence/append typing was overread as a total formation law | unaudited bounded surface; site/value/weight/rate remain open | append construction here selects no realized member |
+| `docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md` | locality was overread as composition | unaudited no-go; local-tomography route remains live | not counted as authority for carrier nonuniqueness |
 
 The same repair mechanisms—explicit construction, generated-domain theorem,
 or retained operational bridge—remain available. No similar wall is declared
-to require a new axiom.
+to require a new axiom. Because none is a retained per-route closure, the
+negative gate remains `FAIL`.

@@ -183,11 +183,11 @@ formation or constitutional claims that this reconciliation removes.
 
 ## No-Go Discipline Gate
 
-**Status: PASS for the scoped finite boundaries below.** The only negative
-claim is that the displayed fan-out, pairing, and finite frame-function checks
-do not by themselves derive absolute permanence, physical probability, or
-time. No claim is made that a larger operational reconstruction cannot derive
-those objects.
+**Status: `FAIL / DO NOT SHIP` for any negative inference from the finite
+fixtures below.** The fan-out, pairing, nonlinear frame-function control, and
+restricted-undo calculations remain positive bounded results. No
+absolute-permanence, probability, time, minimum-content, or axiom-pressure
+negative is shipped.
 
 ### N1 -- alternative routes
 
@@ -206,6 +206,13 @@ classification](RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_TH
 and [frame-extension
 condition](READOUT_BRIDGE_FRAME_EXTENSION_UNIFIES_MARGINAL_READ_AND_REGISTERED_FACTOR_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md)
 remain explicit dependencies rather than hidden authority.
+
+The six outcomes are current tests, not six routes closed by retained
+authority. The two named dependencies do not close the composite,
+prepared-state, permanence, probability, and clock alternatives route by
+route. **N1 therefore fails**, and the negative disposition is
+`partial-narrowing`; only the finite positive constructions are submitted for
+independent audit.
 
 ### N2 -- wall independence
 
@@ -232,13 +239,13 @@ describe those imports; no appeal to “the framework provides,” “naturally,
 
 ### N4 -- residual matching
 
-| source | residual there | residual used here | match? |
+| cited witness (exact path and line) | residual there | residual used here | match? |
 |---|---|---|---:|
-| [minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md) | no composite, probability rule, or time metric is supplied | those objects are not inferred from finite fan-out | yes |
-| [controlled-copy classification](RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md) | conditional finite write class | the fan-out consumes that class only | yes |
-| [frame-extension condition](READOUT_BRIDGE_FRAME_EXTENSION_UNIFIES_MARGINAL_READ_AND_REGISTERED_FACTOR_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md) | finite additivity does not yet supply the full frame hypotheses | the conditional read-side statement names the gap | yes |
-| [generated-composition theorem](GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md) | ordinary finite composition follows only under generatedness in the stated category | the supplied tensor carrier is not attributed to the one-site axiom | yes |
-| [paired runner](../scripts/read_twice_packet_derive_first_unification_2026_07_13.py) | finite fan-out, pairing, nonlinear qubit control, and restricted undo examples | exactly the bounded content claimed here | yes |
+| `docs/MINIMAL_AXIOMS_2026-06-29.md:47,105-113,164-168` | no finite composite, probability rule, or time metric is supplied | those objects are not attributed to the finite fan-out | yes; approved source boundary only |
+| `docs/RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md:63-99` | conditional finite controlled-copy class | the fan-out consumes that class only | yes; current pipeline status remains unaudited |
+| `docs/READOUT_BRIDGE_FRAME_EXTENSION_UNIFIES_MARGINAL_READ_AND_REGISTERED_FACTOR_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md:137-185` | per-site additivity has an exact `M_2` loophole and FRAME-EXT remains conditional | the read-side construction names rather than closes that gap | yes; current pipeline status remains unaudited |
+| `docs/GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md:22-76` | ordinary finite composition is obtained under generatedness in the stated category | the supplied tensor carrier is not attributed to the one-site axiom | yes; current unaudited dependency |
+| `scripts/read_twice_packet_derive_first_unification_2026_07_13.py:161-192,328-342,507-552` | finite fan-out, nonlinear qubit control, and restricted undo examples | exactly the positive bounded computations claimed here | yes; current unaudited compute, so it cannot make N1 pass |
 
 No formation or time no-go is borrowed as evidence for the finite lemmas.
 
@@ -272,11 +279,21 @@ route defeats every broad no-go and leaves only the scoped finite boundaries.
 
 ### N8 -- cross-cycle echo
 
-Earlier record work repeatedly separated copying from formation, local
-redundancy from unrestricted permanence, update count from time, and a
-Hilbert-space expectation from a probability derivation. The generated-
-composition and continuation-refinement notes preserve the same separations.
-No similar wall is treated here as retired by a naming convention.
+The repository echo search covered `copying`, `formation`, `permanence`,
+`frame extension`, `Born`, `update count`, `time metric`, `no retained
+primitive`, and `requires new axiom`.
+
+| prior surface | similar wall | retired mechanism/status | application here |
+|---|---|---|---|
+| `docs/RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md` | a controlled copy was overread as a complete Record theorem | finite write class isolated; unaudited and no all-future restriction | supplies the finite isometry class only |
+| `docs/READOUT_BRIDGE_FRAME_EXTENSION_UNIFIES_MARGINAL_READ_AND_REGISTERED_FACTOR_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md` | finite record additivity was overread as Born representation | exact `M_2` loophole exposed; FRAME-EXT remains conditional and unaudited | the same conditional is explicit here |
+| `docs/TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md` | monotone order was overread as metric time | order/axis separated from rate and duration; unaudited | update count receives no clock calibration here |
+| `docs/GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md` | finite carrier use was overread as composition forced by the one-site axiom | current unaudited generatedness equivalence | remains an explicit dependency, not axiom content |
+
+No listed wall has a retained retirement mechanism omitted from this note.
+Naming conventions close none of the physical composite, permanence,
+probability, or clock residuals. Their live status is another reason the
+negative gate remains `FAIL`.
 
 ## Boundary
 

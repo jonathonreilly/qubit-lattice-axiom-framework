@@ -113,15 +113,19 @@ tomography; those require the operational reconstruction interface.
 
 ## No-Go Discipline Gate
 
-**Result:** the displayed equivalence is proved inside the stated
-finite-dimensional complex `C*` class. No universal physical-minimality claim
-or constitutional no-go is asserted.
+**Gate result:** `FAIL / DO NOT SHIP` for any negative inference beyond the
+displayed finite equivalence and its two explicit extension witnesses. The
+positive algebra theorem remains the bounded claim. No universal
+physical-minimality claim, minimum-content conclusion, constitutional no-go,
+or axiom-pressure claim is shipped.
 
 ### N1 -- alternative routes
 
-The scoped negative is only that faithful commuting local copies, without
-generatedness or an equivalent extra condition, do not force the declared
-global algebra to equal their generated subalgebra.
+The candidate negative tested was that faithful commuting local copies,
+without generatedness or an equivalent extra condition, do not force the
+declared global algebra to equal their generated subalgebra. The table is an
+attempt inventory against generalizing the explicit finite witnesses; it is
+not a list of routes closed by retained authority.
 
 | attempted route | marker | result against the scoped negative | evidence |
 |---|---|---|---|
@@ -134,8 +138,10 @@ global algebra to equal their generated subalgebra.
 
 The [minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md) supply the
 one-site algebra but no finite composition clause. The proof and paired runner
-are the new bounded evidence submitted for independent audit; no prior audit
-status is claimed for them.
+are new unaudited evidence. Because none of the six attempted-route outcomes
+has a per-route retained-authority citation, **N1 fails** and the candidate
+negative is demoted to `partial-narrowing`. The exact equivalence and concrete
+extension constructions remain available for independent audit.
 
 ### N2 -- wall independence
 
@@ -156,12 +162,14 @@ all algebraic projectors/effects and operational tomography are not inferred.
 
 ### N4 -- residual matching
 
-| cited source | residual there | residual used here | match? |
+| cited witness (exact path and line) | residual there | residual used here | match? |
 |---|---|---|---:|
-| [minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md), Qubit and open-gates sections | one-site `M_2(C)` is supplied while finite composition is not | composition cannot be attributed to the one-site axiom | yes |
-| [paired runner](../scripts/generated_finite_composition_minimality_2026_07_13.py), blocks B-C | local Pauli products span the ordinary block; direct-sum and spectator observables lie outside that span | exact no-extra-global-generation residual | yes |
-| [extensional-rule note](EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md), same-record-graph construction | one record successor graph fits ordinary and duplicate-sector carriers | record-graph data alone do not select the global algebra | yes |
-| probability, formation, statistics, and readout notes | different physical bridges | finite algebra generation | no; not used as witnesses |
+| `docs/MINIMAL_AXIOMS_2026-06-29.md:47,105-110` | one-site `M_2(C)` is supplied while Admissibility is expressly not a dynamics or composition law | composition cannot be attributed to the one-site axiom | yes; approved source boundary, not proof of the new theorem |
+| `scripts/generated_finite_composition_minimality_2026_07_13.py:78-127` | local Pauli products span the ordinary block; direct-sum and spectator observables lie outside that span | exact finite extension-witness residual | yes; current unaudited compute, so it cannot make N1 pass |
+
+No prior no-go or campaign is used as supporting authority. Probability,
+formation, statistics, record-graph, and readout residuals differ from finite
+algebra generation and are dropped from the witness count.
 
 ### N5 -- rhetoric and resolution audit
 
@@ -187,12 +195,17 @@ not constitutional necessity.
 
 ### N8 -- cross-cycle echo
 
+The repository echo search covered `tensor composition`, `local tomography`,
+`qubit tensor carrier`, `no retained primitive`, and `requires new axiom`.
+The nearest prior surfaces are:
+
 | prior surface | similar wall | later mechanism/status | treatment here |
 |---|---|---|---|
-| [read-twice finite fan-out](READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md) | finite fan-out begins on a supplied tensor carrier | generated composition is now isolated as a separate bounded dependency | the carrier is not treated as axiom content |
-| [extensional-rule note](EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md) | one record graph is compatible with a duplicate central sector | exact finite counterexample remains live | used only for the matching composition residual |
-| earlier tensor-product constructions in work history | ordinary carrier was supplied and then overread as forced | archival classification keeps those surfaces historical | no historical status is inherited |
+| `docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | finite two-site carrier is imported for downstream work | unaudited; no retained generation theorem | carrier use is not treated as axiom content |
+| `docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md` | locality was overread as full composition | unaudited no-go; local-tomography route remains named | not counted as authority for this theorem |
+| `docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md` | tensor-product translation was supplied conditionally | audited decoration but retained chain still pending | no retained composition closure is inherited |
 
 The reusable retirement mechanisms are a generated law domain, a proved
 operational quotient, or an irreducibility/duality theorem. All remain live;
-none is misclassified as requiring a new axiom.
+none is misclassified as requiring a new axiom. The live mechanisms and lack
+of retained per-route closure are why the negative gate remains `FAIL`.

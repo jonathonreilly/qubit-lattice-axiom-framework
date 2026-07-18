@@ -1,5 +1,5 @@
 {
- "edge_count": 14722,
+ "edge_count": 14717,
  "node_count": 4388,
  "nodes": {
   "3d_correction_master_note": {
@@ -4375,8 +4375,8 @@
    "out_degree": 1
   },
   "extensional_nearest_neighbor_rule_deep_probe_2026-07-13": {
-   "deps_hash": "47bdd56db7ab",
-   "out_degree": 4
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",
@@ -5767,8 +5767,8 @@
    "out_degree": 1
   },
   "generated_finite_composition_minimality_theorem_2026-07-13": {
-   "deps_hash": "bf4029e958ca",
-   "out_degree": 3
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "generated_geometry_synthesis_note": {
    "deps_hash": "e3b0c44298fc",

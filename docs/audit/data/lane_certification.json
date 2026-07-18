@@ -1577,7 +1577,7 @@
         },
         {
           "claim_id": "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "lhcm_y_normalization_from_anomaly_and_convention_note_2026-05-02",
@@ -2895,6 +2895,6 @@
       "uncertified_count": 661
     }
   ],
-  "repo_head": "a88537d8704f421f21b6d27cded0b23608151b20",
+  "repo_head": "dff46683ef459767735303792c4143fc93956a58",
   "schema": "lane_certification_v2"
 }

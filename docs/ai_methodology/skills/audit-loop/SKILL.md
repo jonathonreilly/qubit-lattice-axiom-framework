@@ -197,7 +197,30 @@ premises, and permitted metadata context satisfy the marker. Treat a lane's
 cascade queues: draining those rows moves a flagship lane toward
 certification.
 
-## Scaling: The One Canonical Fan-Out (owner-directed 2026-07-17)
+## Default Entry: Do The Right Thing, In Parallel (owner-directed 2026-07-17)
+
+Invoking this skill WITHOUT a specific named claim means: drain the lane, in
+parallel, with the canonical machinery — no topology decisions required from
+the invoker. The default session is:
+
+1. Setup per "Setup For Each Session" below (fetch, clean worktree,
+   pipeline, strict lint).
+2. Finish pending judicial work first — it gates flagship rows:
+   `python3 docs/audit/scripts/orchestrate_judicial_panel.py`
+   (this reseats any disagreement whose recorded seats are unrecoverable —
+   see the reseat contract below — and panels the validly-seated rest).
+3. Drain the development tier in parallel:
+   `python3 docs/audit/scripts/orchestrate_audit_batch.py --lane <dispatch
+   lane> --max-workers 4` (raise toward 6 only in a quiet pool per the
+   budget below), and repeat while the queue has ready rows and budget
+   remains. Reseated rows from step 2 re-enter here and finish.
+4. Run the forensic tier as a single canary (rule below), never in the
+   parallel lane.
+
+The single-claim manual procedure later in this skill remains the special
+case for targeted rows; it is not the default.
+
+## Scaling: The One Canonical Fan-Out
 
 There is exactly one sanctioned way to parallelize this lane — the
 repo-native batch drainer:
@@ -240,14 +263,20 @@ after a canary lands may the forensic lane run more than one seat, and never
 more than two. Parallelizing a failing forensic path multiplies model burn
 with zero landings.
 
-**Seat-blocked judicial rows are frozen automatically.** The panel
-orchestrator skips any disagreement row whose recorded seats cannot back a
-valid packet (missing or non-invocation-bound rationales) and memoizes the
-current set in `docs/audit/data/judicial_seat_blocked.json` (a pure
-projection, rewritten each panel run). Controllers must consult the memo and
-must NOT re-invoke panels for memoized rows on main advances; the row
-unfreezes by itself once its cross-confirmation seats are re-run under the
-rationale-preserving apply contract, which is the named repair.
+**Seat-blocked judicial rows are reseated, never frozen and never retried
+as recorded.** A disagreement whose recorded seats lack invocation-bound
+full rationales can never finish through a panel, so the panel orchestrator
+resolves it instead of burning launches on it, via this ladder: (1) envelope
+backfill (`backfill_cross_seat_rationales.py`) when the original seat
+envelopes still exist; (2) otherwise RESEAT — archive the broken seats into
+`previous_audits` with full provenance and the recorded reseat reason, and
+reopen the row as `unaudited` for fresh two-seat cross-confirmation under
+the rationale-preserving apply contract (the orchestrator does this by
+default; `--no-reseat` reports instead). Fresh seats that agree land the
+row; a fresh disagreement reaches a panel whose packet is now valid. Either
+way the audit finishes — no toggle, no memo, no standing freeze. Reseats
+persist through the same per-claim gate ladder as verdicts (pipeline, strict
+lint, serialized commit, race-retried push) and mint nothing.
 
 **Apply-gate rejections are data.** When a finished audit is rejected at the
 apply gate (decoration/claim-type mismatch or any compatibility error),

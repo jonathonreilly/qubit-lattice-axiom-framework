@@ -11,12 +11,6 @@ from pathlib import Path
 
 import numpy as np
 
-from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
-    SOURCE_SECTOR_SURFACE,
-    exact_small_case as source_factorization_exact_small_case,
-)
-
-
 ROOT = Path(__file__).resolve().parents[1]
 
 PASS_COUNT = 0
@@ -87,7 +81,7 @@ def main() -> int:
 
     transfer = read("docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md")
     strong_cp = read("docs/STRONG_CP_THETA_ZERO_NOTE.md")
-    factor_exact = source_factorization_exact_small_case()
+    factorization = read("docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md")
     underdet = read("docs/GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md")
     observable = read("docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md")
     support = read("docs/SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md")
@@ -122,15 +116,11 @@ def main() -> int:
         "explicit transfer-state identification at `beta = 6` still open" in transfer,
     )
     check(
-        "The source-sector typed interface and exact helper verify the supplied-diagonal inputs and positive outputs",
-        SOURCE_SECTOR_SURFACE.complete_typed_inputs
-        and SOURCE_SECTOR_SURFACE.complete_outputs
-        and bool(factor_exact["d_exact"])
-        and bool(factor_exact["formula_exact"])
-        and bool(factor_exact["gram_exact"])
-        and bool(factor_exact["rank_kernel_exact"])
-        and bool(factor_exact["positive_case_exact"])
-        and bool(factor_exact["zero_case_exact"]),
+        "The source-sector theorem is explicitly conditional on a supplied diagonal and excludes a Wilson-compression identification",
+        "The second operator input is a supplied sequence" in factorization
+        and "`T_beta := M_beta D_beta M_beta`" in factorization
+        and "No Wilson residual or physical compression is among the typed inputs." in factorization
+        and "makes no character-diagonality statement about an actual" in factorization,
     )
     check(
         "The Perron/Jacobi note says even the sharpened factorized class still does not force unique framework-point data",

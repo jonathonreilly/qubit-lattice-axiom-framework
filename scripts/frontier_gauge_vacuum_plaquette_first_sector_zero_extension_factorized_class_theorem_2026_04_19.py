@@ -30,8 +30,7 @@ from frontier_gauge_vacuum_plaquette_local_environment_factorization import (
     wilson_character_coefficient,
 )
 from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
-    SOURCE_SECTOR_SURFACE,
-    exact_small_case as source_factorization_exact_small_case,
+    validate_supplied_sequence,
 )
 
 
@@ -71,7 +70,6 @@ def main() -> int:
     print("  Does the supplied finite packet admit a minimal-support")
     print("  zero extension inside the declared diagonal model class?")
 
-    source_exact = source_factorization_exact_small_case()
     v_min, z_min = completed_sector_data()
     z00_min = float(v_min[0])
     rho_packet = v_min / z00_min
@@ -88,6 +86,12 @@ def main() -> int:
     rho_ext[index[(1, 1)]] = rho_packet[3]
     r_ext = np.diag(rho_ext)
     t_ext = multiplier @ d_local @ r_ext @ multiplier
+    combined_diagonal = np.diag(d_local) * rho_ext
+    try:
+        validate_supplied_sequence(weights, combined_diagonal.tolist())
+        supplied_diagonal_interface = True
+    except (TypeError, ValueError):
+        supplied_diagonal_interface = False
 
     sym_err = float(np.max(np.abs(t_ext - t_ext.T)))
     swap_err = float(np.max(np.abs(swap @ t_ext - t_ext @ swap)))
@@ -109,12 +113,8 @@ def main() -> int:
     print()
 
     check(
-        "The source theorem exposes complete supplied-diagonal inputs and verifies its exact positive outputs",
-        SOURCE_SECTOR_SURFACE.complete_typed_inputs
-        and SOURCE_SECTOR_SURFACE.complete_outputs
-        and bool(source_exact["formula_exact"])
-        and bool(source_exact["gram_exact"])
-        and bool(source_exact["rank_kernel_exact"]),
+        "The local factor times the zero-extended packet satisfies the source theorem's supplied diagonal interface",
+        supplied_diagonal_interface,
     )
     check(
         "The completion producers supply one finite four-coefficient packet with nonzero trivial component",
@@ -141,10 +141,9 @@ def main() -> int:
         f"||z_recon-Z_min||={recon_gap:.3e}",
     )
     check(
-        "The finite zero-extension witness leaves physical Wilson compression and diagonality open",
-        recon_gap < 1.0e-12
-        and eig_min > -1.0e-10,
-        f"z00_min={z00_min:.6f}",
+        "The supplied zero-extension has proper support and reconstructs the finite packet",
+        recon_gap < 1.0e-12 and 0 < np.count_nonzero(rho_ext) < len(weights),
+        f"z00_min={z00_min:.6f}, nonzero count={int(np.count_nonzero(rho_ext))}",
     )
 
     print("\n" + "=" * 112)

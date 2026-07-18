@@ -15,12 +15,6 @@ from pathlib import Path
 import numpy as np
 from scipy.special import iv
 
-from frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization import (
-    SOURCE_SECTOR_SURFACE,
-    exact_small_case as source_factorization_exact_small_case,
-)
-
-
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / (
     "NATIVE_GAUGE_TRANSFER_BETA_IDENTIFICATION_PHYSICAL_PLAQUETTE_RELATIONSHIP"
@@ -32,6 +26,7 @@ PLAQUETTE_SELF = ROOT / "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md"
 WILSON_POSITIVITY = ROOT / "docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md"
 FIXED_GAP = ROOT / "docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md"
 SU3_GAP_REDUCTION = ROOT / "docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md"
+SOURCE_FACTORIZATION = ROOT / "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md"
 
 BETA = 6.0
 MODE_MAX = 80
@@ -153,7 +148,7 @@ def main() -> int:
 
     note = read(NOTE)
     recurrence = read(CHAR_RECURRENCE)
-    source_exact = source_factorization_exact_small_case()
+    source_factorization = read(SOURCE_FACTORIZATION)
     tensor = read(TENSOR_TRANSFER)
     plaquette = read(PLAQUETTE_SELF)
     wilson = read(WILSON_POSITIVITY)
@@ -177,15 +172,11 @@ def main() -> int:
         in tensor,
     )
     check(
-        "source-sector typed interface and exact helper verify the supplied-diagonal inputs and positive outputs",
-        SOURCE_SECTOR_SURFACE.complete_typed_inputs
-        and SOURCE_SECTOR_SURFACE.complete_outputs
-        and bool(source_exact["d_exact"])
-        and bool(source_exact["formula_exact"])
-        and bool(source_exact["gram_exact"])
-        and bool(source_exact["rank_kernel_exact"])
-        and bool(source_exact["positive_case_exact"])
-        and bool(source_exact["zero_case_exact"]),
+        "source-sector note supplies only a typed diagonal theorem and excludes a Wilson-compression identification",
+        "The second operator input is a supplied sequence" in source_factorization
+        and "`T_beta := M_beta D_beta M_beta`" in source_factorization
+        and "No Wilson residual or physical compression is among the typed inputs." in source_factorization
+        and "makes no character-diagonality statement about an actual" in source_factorization,
     )
     check(
         "plaquette note states the finite Wilson action and average plaquette object",

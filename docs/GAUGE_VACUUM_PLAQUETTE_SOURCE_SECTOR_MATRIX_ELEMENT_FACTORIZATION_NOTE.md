@@ -190,6 +190,14 @@ definiteness conclusions apply.
 This theorem accepts `D_beta` through its typed supplied sequence and returns
 `T_beta` with the outputs above.
 
+## Boundary
+
+No Wilson residual or physical compression is among the typed inputs. The
+theorem therefore makes no character-diagonality statement about an actual
+stripped Wilson compression and supplies no central-convolution or
+Peter-Weyl bridge to one. Any such identification, and any physical
+`kappa_(p,q)(beta)` data, require a separate source theorem.
+
 ## Verification
 
 The runner separates exact algebra from deterministic numerical support:
@@ -203,9 +211,10 @@ The runner separates exact algebra from deterministic numerical support:
   spectral statements on several larger boxes and irregular supplied
   sequences, including `beta=6`;
 - mutation validators reject malformed diagonal input, a wrong matrix-element
-  contraction, a negative coefficient for the positivity conclusion, broken
-  coefficient swap symmetry for the swap conclusion, and singular or
-  non-positive multiplier surrogates for invertibility-dependent conclusions.
+  contraction, the wrong Gram-factor orientation, a negative coefficient for
+  the positivity conclusion, broken coefficient swap symmetry for the swap
+  conclusion, and singular or non-positive multiplier surrogates for
+  invertibility-dependent conclusions.
 
 Floating residuals are reported only as numerical support; the theorem is the
 finite-dimensional argument above.

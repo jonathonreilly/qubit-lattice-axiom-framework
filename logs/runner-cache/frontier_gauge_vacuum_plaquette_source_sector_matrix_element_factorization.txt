@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py
-runner_sha256: 1578ca00d474b06ed95d82e6c48e661bb115716a6cd22900af025e810cbe7a4f
+runner_sha256: 86a68b339ce0d69b660dd107633ba4a055fd981a3df98d7e864372ecf46797cb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -15,7 +15,6 @@ Outputs: M properties; exact M D M sum and Gram form; symmetry, rank, kernel, bo
 EXACT FRACTION CHECKS
   [PASS] [EXACT] the six-neighbor recurrence is exactly self-adjoint and swap-commuting on N=0,1,2,3
   [PASS] [EXACT] the N=0 recurrence and swap edge case are exact
-  [PASS] [EXACT] the positive input/output surface is complete
   [PASS] [EXACT] the nontrivial rational multiplier is exactly self-adjoint, positive, invertible, and swap-commuting
   [PASS] [EXACT] the supplied zero-containing sequence defines an exact diagonal swap-commuting D
   [PASS] [EXACT] the displayed row-middle-column matrix-element sum equals M D M exactly
@@ -53,13 +52,14 @@ DETERMINISTIC NUMERICAL EXPONENTIAL SUPPORT (not exact proof)
 LOAD-BEARING MUTATION VALIDATORS
   [PASS] [MUTATION] the diagonal-sequence validator rejects an off-diagonal operator matrix
   [PASS] [MUTATION] the matrix-element validator rejects a contraction with the wrong kappa index
+  [PASS] [MUTATION] the Gram validator rejects the wrong M D^(1/2) factor orientation
   [PASS] [MUTATION] the supplied-sequence validator rejects a negative coefficient for the PSD conclusion
   [PASS] [MUTATION] the supplied-sequence validator rejects broken swap symmetry for the swap conclusion
   [PASS] [MUTATION] the multiplier validator rejects a singular surrogate for rank/kernel consequences
   [PASS] [MUTATION] the multiplier validator rejects a non-positive surrogate
 
 ============================================================================================
-SUMMARY: EXACT PASS=13 SUPPORT PASS=8 MUTATION PASS=6 FAIL=0
+SUMMARY: EXACT PASS=12 SUPPORT PASS=8 MUTATION PASS=7 FAIL=0
 ============================================================================================
 
 ----- stderr -----

@@ -37,52 +37,6 @@ FAIL = 0
 
 
 @dataclass(frozen=True)
-class SourceSectorSurface:
-    finite_square_character_box_input: bool
-    explicit_recurrence_and_swap_input: bool
-    real_beta_input: bool
-    supplied_nonnegative_swap_symmetric_sequence_input: bool
-    multiplier_properties_output: bool
-    matrix_sum_and_gram_output: bool
-    swap_rank_kernel_output: bool
-    spectral_and_definiteness_output: bool
-
-    @property
-    def complete_typed_inputs(self) -> bool:
-        return all(
-            (
-                self.finite_square_character_box_input,
-                self.explicit_recurrence_and_swap_input,
-                self.real_beta_input,
-                self.supplied_nonnegative_swap_symmetric_sequence_input,
-            )
-        )
-
-    @property
-    def complete_outputs(self) -> bool:
-        return all(
-            (
-                self.multiplier_properties_output,
-                self.matrix_sum_and_gram_output,
-                self.swap_rank_kernel_output,
-                self.spectral_and_definiteness_output,
-            )
-        )
-
-
-SOURCE_SECTOR_SURFACE = SourceSectorSurface(
-    finite_square_character_box_input=True,
-    explicit_recurrence_and_swap_input=True,
-    real_beta_input=True,
-    supplied_nonnegative_swap_symmetric_sequence_input=True,
-    multiplier_properties_output=True,
-    matrix_sum_and_gram_output=True,
-    swap_rank_kernel_output=True,
-    spectral_and_definiteness_output=True,
-)
-
-
-@dataclass(frozen=True)
 class SuppliedDiagonalSequence:
     weights: tuple[Weight, ...]
     values: tuple[Fraction, ...]
@@ -373,6 +327,21 @@ def validate_exact_matrix_element_claim(
         raise ValueError("the submitted matrix-element contraction has the wrong index order")
 
 
+def validate_exact_gram_claim(
+    multiplier: ExactMatrix,
+    kappa: Sequence[Fraction],
+    sqrt_kappa: Sequence[Fraction],
+    gram_factor: ExactMatrix,
+) -> None:
+    if len(kappa) != len(sqrt_kappa) or any(
+        root < 0 or root * root != value for value, root in zip(kappa, sqrt_kappa)
+    ):
+        raise ValueError("the submitted square-root diagonal does not match kappa")
+    direct = matrix_multiply(matrix_multiply(multiplier, diagonal_matrix(kappa)), multiplier)
+    if matrix_multiply(transpose(gram_factor), gram_factor) != direct:
+        raise ValueError("the Gram factor must have orientation D^(1/2) M")
+
+
 def mutated_wrong_contraction(multiplier: ExactMatrix, kappa: Sequence[Fraction]) -> ExactMatrix:
     size = len(multiplier)
     return [
@@ -445,8 +414,6 @@ def exact_small_case() -> dict[str, object]:
     n0_swap = exact_swap(n0_weights, n0_index)
 
     return {
-        "input_surface_exact": SOURCE_SECTOR_SURFACE.complete_typed_inputs,
-        "output_surface_exact": SOURCE_SECTOR_SURFACE.complete_outputs,
         "j_exact": recurrence == transpose(recurrence)
         and matrix_multiply(swap, recurrence) == matrix_multiply(recurrence, swap),
         "m_exact": multiplier == transpose(multiplier)
@@ -670,10 +637,6 @@ def main() -> int:
     )
     check("the N=0 recurrence and swap edge case are exact", bool(exact["n0_exact"]))
     check(
-        "the positive input/output surface is complete",
-        bool(exact["input_surface_exact"]) and bool(exact["output_surface_exact"]),
-    )
-    check(
         "the nontrivial rational multiplier is exactly self-adjoint, positive, invertible, and swap-commuting",
         bool(exact["m_exact"]) and bool(exact["m_positive"]) and bool(exact["m_invertible"]),
     )
@@ -805,6 +768,17 @@ def main() -> int:
         mutation_rejected(
             lambda: validate_exact_matrix_element_claim(
                 multiplier, kappa, mutated_wrong_contraction(multiplier, kappa)
+            )
+        ),
+        bucket="MUTATION",
+    )
+    sqrt_kappa = [Fraction(1), Fraction(2), Fraction(2), Fraction(0)]
+    wrong_gram_factor = matrix_multiply(multiplier, diagonal_matrix(sqrt_kappa))
+    check(
+        "the Gram validator rejects the wrong M D^(1/2) factor orientation",
+        mutation_rejected(
+            lambda: validate_exact_gram_claim(
+                multiplier, kappa, sqrt_kappa, wrong_gram_factor
             )
         ),
         bucket="MUTATION",

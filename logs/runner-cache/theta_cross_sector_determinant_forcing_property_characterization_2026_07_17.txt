@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py
+runner_sha256: b974f7cf853dae9002b84ad571ea9f464e72e05de2c61ffb2d5259245f9e9802
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+FLAG: P1/T1 are not consequences of finite disjoint-record additivity alone. They are checked only with the separately supplied conjugation-pair/trivial-sector normalization.
+PASS: C1 symbolic conjugation reverses the phase
+PASS: C1 principal-branch argument reversal at exact witnesses
+PASS: C2 formal odd-and-even elimination
+PASS: C2 generic odd-family evenness forces its coefficient to zero
+PASS: P1 additivity plus conjugation-pair normalization implies oddness
+PASS: P2 principal-range argument is additive at exact witnesses
+PASS: P2 character exponent is additive identically
+PASS: P2 symbolic two-by-two block determinant law
+PASS: W1a nonzero-character phase functional is odd identically
+PASS: W1a character composes multiplicatively at exact witnesses
+PASS: W1b k=1 character breaks orbit constancy
+PASS: W1c k=1 character registers phase
+PASS: W2a cosine is even identically
+PASS: W2a cosine is not odd
+PASS: W2b cosine breaks multiplicative homomorphism
+PASS: W2c cosine breaks the additivity-oddness consequence
+PASS: W2d cosine registers phase
+PASS: W3 k=0 modulus character is orbit-constant and phase-silent
+PASS: X1 wrapping witness: principal argument composes modulo two pi
+PASS: X2 branch convention: the branch point z=-1 maps to itself under conjugation with principal argument pi
+PASS: X3 silent-without-properties witness: 1+|z| is orbit-constant and phase-silent yet neither additive nor multiplicative under blocks
+PASS: X4 additive-route consequence-level witness: sin is odd, registers, and is not even
+PASS: T1 landed additive-plus-orbit mechanism re-derived
+PASS: T2 character-family evenness for all phases forces k=0
+PASS: T3 characterization corollary: W1 removes orbit constancy on the homomorphic route, sin removes it at the additive route's consequence level, W2 removes the odd side
+PASS: N1 obligation exact-target needle
+PASS: N2 obligation insufficiency needle
+PASS: N3 phase-erasure hostile-guard needle
+PASS: N4 registrable-note mechanism needle
+PASS: N5 characterization-note identifier, properties, and reduction needle
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

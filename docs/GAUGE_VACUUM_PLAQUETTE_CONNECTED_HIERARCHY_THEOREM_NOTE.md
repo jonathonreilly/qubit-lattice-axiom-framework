@@ -145,7 +145,7 @@ the exact onset statement is
 `sum_(r,s) C_3(p_0,r,s;beta)
  = chi_1plaq'(beta) + 5 beta^3 / 118098 + O(beta^4)`.
 
-Equivalently,
+Subtracting the local baseline gives
 
 `sum_(r,s) C_3(p_0,r,s;beta) - chi_1plaq'(beta)
  = 5 beta^3 / 118098 + O(beta^4)`.

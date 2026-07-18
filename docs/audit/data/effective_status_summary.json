@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2070,
-    "decoration": 21,
+    "bounded_theorem": 2069,
+    "decoration": 22,
     "meta": 360,
     "no_go": 441,
     "open_gate": 202,
@@ -92,12 +92,13 @@
     "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
+    "decoration_under_plaquette_self_consistency_note": 1,
     "meta": 353,
     "open_gate": 2,
     "retained": 78,
     "retained_bounded": 307,
     "retained_pending_chain": 4,
-    "unaudited": 2947
+    "unaudited": 2946
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [

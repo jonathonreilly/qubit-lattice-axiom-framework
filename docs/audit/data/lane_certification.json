@@ -444,10 +444,6 @@
           "effective_status": "meta"
         },
         {
-          "claim_id": "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26",
           "effective_status": "unaudited"
         },
@@ -2908,9 +2904,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 664
+      "uncertified_count": 663
     }
   ],
-  "repo_head": "26a1583cb15d96b31d607c285af9663fc99f6664",
+  "repo_head": "2fc709c0fd1873e3e5829eebb30ef1b3c4c4df7a",
   "schema": "lane_certification_v2"
 }

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_weighted_character_source_axis_theorem.py
-runner_sha256: 6cfa4854d8ba25abe5107579e4651d0999ccc5ab90d303fd380a2b4bc60af346
+runner_sha256: 0608b8bb9f48b619b95c8e3262def7855a7705303a3faf4c349be8a125678865
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.44
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -54,15 +54,15 @@ PART 4: UNIQUE TOP EIGENVECTOR CASE
 ========================================================================================
 PART 5: DEGENERATE TOP CASE
 ========================================================================================
-  [PASS] [NUMERIC] Twofold-degenerate tops leave a two-real top eigenspace  (eigs=[0.9999999999999991, 6.999999999999996, 7.0000000000000036])
-  [PASS] [NUMERIC] Threefold-degenerate tops recover the identity kernel and force no ray at all  (eigs=[0.9999999999999996, 1.0, 1.0000000000000004])
+  [PASS] [NUMERIC] Twofold-degenerate tops leave a two-real top eigenspace  (eigs=[0.9999999999999991, 7.000000000000001, 7.000000000000006])
+  [PASS] [NUMERIC] Threefold-degenerate tops recover the identity kernel and force no ray at all  (eigs=[1.0, 1.0, 1.0000000000000004])
 
 Interpretation:
-  Allowing arbitrary left/right central class-function weights on the
-  canonical Z3 character sources does not rescue the charged-lepton
-  source-response route. The kernel always stays diagonal in the source
-  basis. Unique tops pick basis axes, which sit off the Koide cone;
-  degenerate tops leave the ray unfixed.
+  For real left/right central class-function weights on the canonical
+  Z3 character sources, principal/top-eigenspace selection does not
+  produce a unique Koide ray. The kernel stays diagonal in the source
+  basis: unique tops pick axes off the Koide cone, while degenerate
+  tops leave the ray unfixed. Other supplied selection rules are open.
 
 PASS=31 FAIL=0
 

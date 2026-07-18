@@ -61,10 +61,13 @@ def canonical_cycle() -> sp.Matrix:
     return sp.Matrix(((0, 0, 1), (1, 0, 0), (0, 1, 0)))
 
 
-def canonical_basis() -> tuple[sp.Matrix, sp.Matrix, sp.Matrix]:
-    cycle = canonical_cycle()
+def basis_for_cycle(cycle: sp.Matrix) -> tuple[sp.Matrix, sp.Matrix, sp.Matrix]:
     cycle2 = cycle**2
     return sp.eye(3), cycle + cycle2, sp.I * (cycle - cycle2)
+
+
+def canonical_basis() -> tuple[sp.Matrix, sp.Matrix, sp.Matrix]:
+    return basis_for_cycle(canonical_cycle())
 
 
 def matrix_is_zero(matrix: sp.Matrix) -> object:
@@ -417,24 +420,28 @@ def source_support_checks() -> None:
 
 def theorem_contract_errors(
     cycle: sp.Matrix,
+    declared_basis: tuple[sp.Matrix, sp.Matrix, sp.Matrix],
     claimed_dimension: int,
     gram_denominators: tuple[int, int, int],
     projector_denominator: int,
     response_basis: tuple[sp.Matrix, sp.Matrix, sp.Matrix],
     reconstruction_basis: tuple[sp.Matrix, sp.Matrix, sp.Matrix],
     koide_factor: int,
+    response_cone_coefficients: tuple[int, int, int],
 ) -> set[str]:
     errors: set[str] = set()
-    canonical = canonical_cycle()
-    canonical_responses = canonical_basis()
-    if not matrices_equal(cycle, canonical):
-        errors.add("cycle_orientation")
+    basis_from_declared_cycle = basis_for_cycle(cycle)
+    if not all(
+        matrices_equal(declared, derived)
+        for declared, derived in zip(declared_basis, basis_from_declared_cycle)
+    ):
+        errors.add("cycle_basis_orientation")
 
     actual_dimension = 9 - commutator_map(cycle).rank()
     if claimed_dimension != actual_dimension:
         errors.add("commutant_dimension")
 
-    actual_gram = gram_matrix(canonical_responses)
+    actual_gram = gram_matrix(declared_basis)
     claimed_gram = sp.diag(*gram_denominators)
     if actual_gram != claimed_gram:
         errors.add("gram_denominator")
@@ -445,13 +452,13 @@ def theorem_contract_errors(
         for item in projected_basis
     ) and all(
         matrices_equal(cyclic_projector(item, cycle, projector_denominator), item)
-        for item in canonical_responses
+        for item in declared_basis
     )
     if not projector_ok:
         errors.add("projector_normalization")
 
     a, x, y = sp.symbols("ma mx my", real=sp.S.true)
-    target = a * canonical_responses[0] + x * canonical_responses[1] + y * canonical_responses[2]
+    target = a * declared_basis[0] + x * declared_basis[1] + y * declared_basis[2]
     responses = tuple(real_trace_pair(item, target) for item in response_basis)
     reconstructed = sum(
         (
@@ -468,8 +475,11 @@ def theorem_contract_errors(
 
     r0, r1, r2 = sp.symbols("mr0 mr1 mr2", real=sp.S.true)
     scaled_cone = sp.expand(18 * ((r0 / 3) ** 2 - koide_factor * ((r1 / 6) ** 2 + (r2 / 6) ** 2)))
-    expected_cone = 2 * r0**2 - r1**2 - r2**2
-    if sp.simplify(scaled_cone - expected_cone) != 0:
+    declared_response_cone = sum(
+        coefficient * response**2
+        for coefficient, response in zip(response_cone_coefficients, (r0, r1, r2))
+    )
+    if sp.simplify(scaled_cone - declared_response_cone) != 0:
         errors.add("koide_factor")
     return errors
 
@@ -493,18 +503,41 @@ def mutation_checks() -> None:
     basis = canonical_basis()
     base = {
         "cycle": cycle,
+        "declared_basis": basis,
         "claimed_dimension": 3,
         "gram_denominators": (3, 6, 6),
         "projector_denominator": 3,
         "response_basis": basis,
         "reconstruction_basis": basis,
         "koide_factor": 2,
+        "response_cone_coefficients": (2, -1, -1),
     }
     baseline_errors = theorem_contract_errors(**base)
-    EVIDENCE.check("MUTATION", "canonical theorem contract is accepted before mutation", len(baseline_errors) == 0, detail=str(sorted(baseline_errors)))
+    reversed_cycle = cycle.T
+    reversed_basis = basis_for_cycle(reversed_cycle)
+    reversed_control = dict(base)
+    reversed_control.update(
+        {
+            "cycle": reversed_cycle,
+            "declared_basis": reversed_basis,
+            "response_basis": reversed_basis,
+            "reconstruction_basis": reversed_basis,
+        }
+    )
+    reversed_control_errors = theorem_contract_errors(**reversed_control)
+    EVIDENCE.check(
+        "MUTATION",
+        "canonical and coherently reversed orientation controls are accepted",
+        len(baseline_errors) == 0 and len(reversed_control_errors) == 0,
+        detail=f"canonical={sorted(baseline_errors)} reversed={sorted(reversed_control_errors)}",
+    )
 
     mutations = (
-        ("wrong cycle orientation", "cycle_orientation", {"cycle": cycle.T}),
+        (
+            "reversed declared cycle with unreversed B2 basis orientation",
+            "cycle_basis_orientation",
+            {"cycle": reversed_cycle},
+        ),
         ("missing commutant dimension", "commutant_dimension", {"claimed_dimension": 2}),
         ("extra commutant dimension", "commutant_dimension", {"claimed_dimension": 4}),
         ("wrong Gram denominator", "gram_denominator", {"gram_denominators": (3, 5, 6)}),

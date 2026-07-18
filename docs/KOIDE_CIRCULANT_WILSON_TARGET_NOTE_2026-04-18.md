@@ -1,6 +1,7 @@
 # Koide Circulant Wilson-Target Note
 
 **Date:** 2026-04-18
+**Claim type:** positive_theorem
 **Status:** support - structural or confirmatory support note
 **Runner:** `scripts/frontier_koide_circulant_wilson_target.py`
 

@@ -3,11 +3,10 @@ Frontier runner - Koide Z_3-qubit radian-bridge no-go diagnostic.
 
 Companion to `docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md`.
 
-Diagnostic verification that the radian-bridge postulate P cannot be closed
-from retained Cl(3)/Z_3 + d=3 ingredients on the physical selected-line CP^1
-base. Four candidate retained closures are tested and documented to fail;
-the structural obstruction is characterised; and the minimal additional
-input needed to close P is named.
+Diagnostic verification that four enumerated Cl(3)/Z_3 + d=3 constructions on
+the selected-line CP^1 base do not close radian-bridge postulate P. This finite
+bank is not an exhaustive classification of repo-native constructions; three
+other structural routes are recorded only as open examples.
 
 No hardcoded True annotations -- every PASS is a genuine failure check of
 the corresponding candidate closure hypothesis.
@@ -37,7 +36,7 @@ def check(label: str, cond: bool, detail: str = "") -> None:
 
 
 # ---------------------------------------------------------------------------
-# Canonical qubit structure (retained R1 + R3)
+# Canonical qubit structure (supplied R1 + R3)
 # ---------------------------------------------------------------------------
 
 
@@ -61,7 +60,7 @@ def pb_phase_per_zd_element(d: int) -> tuple[float, float]:
 
 
 # ---------------------------------------------------------------------------
-# Physical selected-line base data (retained R1 reference points)
+# Selected-line base data (supplied R1 reference points)
 # ---------------------------------------------------------------------------
 
 # Retained physical selected-line reference points from the Berry-phase
@@ -124,50 +123,53 @@ print()
 print("(F2) General-d check: per-Z_d-element PB phase vs 2/d^2")
 print("-" * 72)
 
-d_values = [2, 3, 4, 5, 7, 11]
-print("  {:>4} | {:>14} | {:>14} | {:>14} | {:>14}".format(
-    "d", "gamma_PB(g)", "pi/d", "2/d^2", "ratio"
-))
-all_mismatch = True
-for d in d_values:
-    _, arg_d = pb_phase_per_zd_element(d)
-    target_piover_d = math.pi / d
-    target_2_over_d2 = 2.0 / d**2
-    ratio = arg_d / target_2_over_d2 if target_2_over_d2 != 0 else float("inf")
-    agrees_piover_d = abs(abs(arg_d) - abs(target_piover_d)) < 1e-12
-    agrees_2_over_d2 = abs(abs(arg_d) - target_2_over_d2) < 1e-4
-    if agrees_2_over_d2:
-        all_mismatch = False
-    print(f"  {d:>4} | {arg_d:>+14.9f} | {target_piover_d:>+14.9f} | "
-          f"{target_2_over_d2:>+14.9f} | {ratio:>+14.9f}")
-
-check(
-    "(F2a) PB phase per Z_d element equals pi/d (magnitude) at every d checked",
-    True,  # Verified by table above; detailed check below
-    "each row: |gamma_PB(g_d)| = pi/d",
-)
-
-# Strong general-d check. The closed-form PB phase per Z_d element on the
-# primary projective doublet ray is
-#   gamma_PB(g_d) = -2 pi / d + pi * 1[cos(2pi/d) < 0]  (mod 2pi, branch (-pi, pi])
-# i.e. -2pi/d for d >= 4 (where cos is nonneg) and pi/3 for d=3 (where cos<0).
-# At d=2 it is 0. In all cases it is a rational multiple of pi.
 
 def expected_pb_per_zd(d: int) -> float:
+    """Closed form on the principal phase branch for nonzero overlaps."""
     x = 2.0 * math.pi / d
     base = -x
     if math.cos(x) < 0:
         base = base + math.pi
-    # Reduce to (-pi, pi]
     while base <= -math.pi:
         base += 2 * math.pi
     while base > math.pi:
         base -= 2 * math.pi
     return base
 
+d_values = [2, 3, 5, 7, 11]
+print("  {:>4} | {:>14} | {:>14} | {:>14} | {:>14}".format(
+    "d", "gamma_PB(g)", "pi/d", "2/d^2", "ratio"
+))
+all_mismatch = True
+closed_form_deviations = []
+for d in d_values:
+    _, arg_d = pb_phase_per_zd_element(d)
+    target_piover_d = math.pi / d
+    target_2_over_d2 = 2.0 / d**2
+    ratio = arg_d / target_2_over_d2 if target_2_over_d2 != 0 else float("inf")
+    agrees_2_over_d2 = abs(abs(arg_d) - target_2_over_d2) < 1e-4
+    if agrees_2_over_d2:
+        all_mismatch = False
+    closed_form_deviations.append(abs(arg_d - expected_pb_per_zd(d)))
+    print(f"  {d:>4} | {arg_d:>+14.9f} | {target_piover_d:>+14.9f} | "
+          f"{target_2_over_d2:>+14.9f} | {ratio:>+14.9f}")
+
+check(
+    "(F2a) Nondegenerate tested PB phases match the independently stated closed form",
+    max(closed_form_deviations) < 1e-12,
+    f"max deviation = {max(closed_form_deviations):.2e}",
+)
+
+# Strong general-d check. The closed-form PB phase per Z_d element on the
+# primary projective doublet ray is
+#   gamma_PB(g_d) = -2 pi / d + pi * 1[cos(2pi/d) < 0]  (mod 2pi, branch (-pi, pi])
+# i.e. -2pi/d for the checked d > 4 and pi/3 for d=3 (where cos<0).
+# At d=2 it is 0. Every checked nonzero-overlap case is a rational multiple
+# of pi; d=4 is excluded because its overlap vanishes and its phase is undefined.
+
 max_dev_closed_form = max(
     abs(np.angle(pb_phase_overlap(0.0, 2 * math.pi / d)) - expected_pb_per_zd(d))
-    for d in d_values if d != 4  # d=4 is magnitude-zero, phase degenerate
+    for d in d_values
 )
 check(
     "(F2b) PB phase per Z_d element equals (rational) x pi at every d in {2,3,5,7,11}",
@@ -176,7 +178,7 @@ check(
 )
 
 check(
-    "(F2c) The PB-per-element identity does NOT match 2/d^2 at any d in {2,3,4,5,7,11}",
+    "(F2c) The PB-per-element identity does NOT match 2/d^2 at any d in {2,3,5,7,11}",
     all_mismatch,
     "so the failure at d=3 is structural, not a specific-d coincidence",
 )
@@ -203,7 +205,7 @@ check(
 )
 # pi / d^2 at d=3 is pi/9, not 2/9; and pi/d is pi/3, not 2/9.
 check(
-    "(F3b) No rational-coefficient rescaling of closed Bargmann phase gives 2/9",
+    "(F3b) None of the three tested closed-Bargmann rescalings gives 2/9",
     abs(math.pi / 9.0 - 2.0 / 9.0) > 1e-3
     and abs(math.pi / 3.0 - 2.0 / 9.0) > 1e-3
     and abs(math.pi - 2.0 / 9.0) > 1e-3,
@@ -238,33 +240,33 @@ check(
 
 
 print()
-print("(F5) Fractional position of m_* in (0, pi/12) is not a retained rational")
+print("(F5) Fractional position of m_* is absent from the explicit rational bank")
 print("-" * 72)
 
 frac = DELTA_STAR / DELTA_POS
 expected_fraction = 8.0 / (3.0 * math.pi)
 check(
-    "(F5a) delta_*/delta_pos = 8/(3 pi) (irrational multiple, not a retained Cl(3)/Z_3 rational)",
+    "(F5a) delta_*/delta_pos equals 8/(3 pi)",
     abs(frac - expected_fraction) < 1e-12,
     f"ratio = {frac:.8f} = 8/(3pi) = {expected_fraction:.8f}",
 )
 
-# Try common retained Cl(3)/Z_3 rationals: 1/2, 1/3, 2/3, 3/4, 1/4, 5/6, 7/8, ...
-retained_rationals = [1/2, 1/3, 2/3, 3/4, 1/4, 5/6, 7/8, 2/3, 5/8, 3/8]
-min_gap = min(abs(frac - r) for r in retained_rationals)
+# This is an explicit finite test bank, not an exhaustive structural taxonomy.
+tested_rationals = [1/2, 1/3, 2/3, 3/4, 1/4, 5/6, 7/8, 2/3, 5/8, 3/8]
+min_gap = min(abs(frac - r) for r in tested_rationals)
 check(
-    "(F5b) delta_*/delta_pos is NOT any retained pure rational up to precision 1e-3",
+    "(F5b) delta_*/delta_pos is absent from the explicit rational bank at 1e-3",
     min_gap > 1e-3,
     f"closest rational gap = {min_gap:.6f}",
 )
 
 
 print()
-print("(F6) Every retained radian on Cl(3)/Z_3 is (rational) x pi")
+print("(F6) Every angle in the enumerated native-angle bank is (rational) x pi")
 print("-" * 72)
 
-# Retained radian quantities from Cl(3)/Z_3 + selected-line structure:
-retained_radians = {
+# Explicit angle bank from the supplied Cl(3)/Z_3 + selected-line formulas:
+tested_native_angles = {
     "2 pi / 3 (Z_3 step)": 2 * math.pi / 3,
     "pi / 3 (per-Z_3 PB)": math.pi / 3,
     "pi (closed-orbit Bargmann)": math.pi,
@@ -277,36 +279,40 @@ retained_radians = {
 # All of these divided by pi give pure rationals:
 all_rat_times_pi = all(
     abs(v / math.pi - round(v / math.pi * 12) / 12) < 1e-12
-    for v in retained_radians.values()
+    for v in tested_native_angles.values()
 )
 check(
-    "(F6a) Every retained radian is (rational) x pi (verified against standard rational set)",
+    "(F6a) Every angle in the enumerated bank is (rational) x pi",
     all_rat_times_pi,
-    "all retained radians are commensurate with pi",
+    "all explicitly listed angles are commensurate with pi",
 )
 
-# The target 2/9 is a pure rational, not a rational multiple of pi.
-# 2/9 / pi is irrational.
+# Compare the target coefficient to the explicitly declared finite rational
+# coefficient bank; this is not a universal rationality classifier.
 target_ratio_to_pi = DELTA_STAR / math.pi
-is_target_rational_pi = any(
+tested_rational_coefficients = (
+    [1 / n for n in range(1, 100)]
+    + [k / n for k in range(1, 20) for n in range(1, 20)]
+)
+is_target_in_tested_coefficients = any(
     abs(target_ratio_to_pi - r) < 1e-10
-    for r in [1 / n for n in range(1, 100)] + [k / n for k in range(1, 20) for n in range(1, 20)]
+    for r in tested_rational_coefficients
 )
 check(
-    "(F6b) The target delta = 2/9 is NOT a rational multiple of pi",
-    not is_target_rational_pi,
-    f"2/9 / pi = {target_ratio_to_pi:.12f} is not in {{k/n : k,n small}}",
+    "(F6b) The target coefficient (2/9)/pi is absent from the declared rational bank",
+    not is_target_in_tested_coefficients,
+    f"2/(9pi) = {target_ratio_to_pi:.12f}; tested finite {{k/n}} bank",
 )
 
 check(
-    "(F6c) No retained radian in Cl(3)/Z_3 equals 2/9 within 1e-3",
-    all(abs(v - DELTA_STAR) > 1e-3 for v in retained_radians.values()),
-    f"min gap of retained radians to 2/9 = {min(abs(v - DELTA_STAR) for v in retained_radians.values()):.6f}",
+    "(F6c) No angle in the enumerated bank equals 2/9 within 1e-3",
+    all(abs(v - DELTA_STAR) > 1e-3 for v in tested_native_angles.values()),
+    f"min bank gap to 2/9 = {min(abs(v - DELTA_STAR) for v in tested_native_angles.values()):.6f}",
 )
 
 
 print()
-print("(F7) Plancherel weight 2/d^2 is dimensionless, with no retained radian map")
+print("(F7) Plancherel weight 2/d^2 is dimensionless; the tested bank supplies no map")
 print("-" * 72)
 
 # Plancherel / Frobenius weights on Herm_d, circulant subfamily:
@@ -326,11 +332,9 @@ check(
     "ratio = 2/9 at d=3 as a pure dimensionless count",
 )
 
-# The natural map from dimensionless ratios to radians would require a
-# retained Cl(3)/Z_3 quantity EXACTLY equal to 1 radian (the implicit
-# conversion factor in postulate P). Check that every retained Cl(3)/Z_3
-# radian is a rational multiple of pi, hence NEVER exactly 1 radian.
-cl3_retained_angles = {
+# The direct tested conversion would require an angle equal to 1 radian (the
+# implicit conversion factor in postulate P). Check the enumerated bank only.
+tested_conversion_angles = {
     "2 pi / 3": 2 * math.pi / 3,
     "pi / 3": math.pi / 3,
     "pi / 6": math.pi / 6,
@@ -339,14 +343,12 @@ cl3_retained_angles = {
     "pi": math.pi,
     "2 pi": 2 * math.pi,
 }
-# No rational-multiple-of-pi can equal 1 exactly (pi is transcendental).
-# Operationally: if we check equality to 1 at machine precision, all fail.
-all_not_exactly_one = all(abs(v - 1.0) > 1e-6 for v in cl3_retained_angles.values())
+# Operational finite-bank comparison.
+all_outside_one_tolerance = all(abs(v - 1.0) > 1e-6 for v in tested_conversion_angles.values())
 check(
-    "(F7b) No retained Cl(3)/Z_3 radian equals 1 exactly (pi is transcendental, all retained radians are rational multiples of pi)",
-    all_not_exactly_one,
-    f"closest retained angle to 1 rad = {min(abs(v - 1.0) for v in cl3_retained_angles.values()):.6f} "
-    "(but no rational multiple of pi can equal 1 exactly)",
+    "(F7b) No angle in the enumerated conversion bank lies within 1e-6 of 1 rad",
+    all_outside_one_tolerance,
+    f"closest enumerated angle to 1 rad = {min(abs(v - 1.0) for v in tested_conversion_angles.values()):.6f}",
 )
 
 
@@ -374,7 +376,7 @@ check(
 
 
 print()
-print("(F9) Summary: all four retained closure candidates fail")
+print("(F9) Summary: all four enumerated closure candidates fail")
 print("-" * 72)
 
 candidate_results = {
@@ -386,8 +388,9 @@ candidate_results = {
 print("  Candidate                          | value       | matches 2/9?")
 print("  " + "-" * 62)
 for name, v in candidate_results.items():
-    matches = abs(v - DELTA_STAR) < 1e-3 and name.startswith("C") is False
-    print(f"  {name:<35} | {v:>10.6f} | {'no (pi/x)' if 'pi' in name.lower() else 'yes'}")
+    matches_numerically = abs(v - DELTA_STAR) < 1e-3
+    disposition = "numeric only; wrong units" if name.startswith("C") else ("yes" if matches_numerically else "no")
+    print(f"  {name:<35} | {v:>10.6f} | {disposition}")
 
 # Candidate C matches numerically but is DIMENSIONLESS (not radians), so
 # the identification is the postulate P itself, not a theorem.

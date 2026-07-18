@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_cyclic_wilson_descendant_law.py
-runner_sha256: 2653516b95254092623f980a6115aa98c5498cb12fafd6f89fa5630aadbed211
+runner_sha256: c1af82e5b432588c6b8a772c6296b8c750e7f8aca3d3ab3498d232e264d88264
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.01
+elapsed_sec: 1.17
 status: ok
 ----- stdout -----
 ADJACENT-CHAIN CYCLIC-RESPONSE COMPRESSION / RIESZ CERTIFICATE
@@ -57,8 +57,8 @@ SUPPORT: source scope, wiring, and evidence hygiene
 ============================================================================================
 MUTATION: hostile theorem-contract variants must be rejected
 ============================================================================================
-  [PASS][MUTATION] canonical theorem contract is accepted before mutation  ([])
-  [PASS][MUTATION] validator kills wrong cycle orientation  (errors=['cycle_orientation'])
+  [PASS][MUTATION] canonical and coherently reversed orientation controls are accepted  (canonical=[] reversed=[])
+  [PASS][MUTATION] validator kills reversed declared cycle with unreversed B2 basis orientation  (errors=['cycle_basis_orientation'])
   [PASS][MUTATION] validator kills missing commutant dimension  (errors=['commutant_dimension'])
   [PASS][MUTATION] validator kills extra commutant dimension  (errors=['commutant_dimension'])
   [PASS][MUTATION] validator kills wrong Gram denominator  (errors=['gram_denominator', 'response_reconstruction'])

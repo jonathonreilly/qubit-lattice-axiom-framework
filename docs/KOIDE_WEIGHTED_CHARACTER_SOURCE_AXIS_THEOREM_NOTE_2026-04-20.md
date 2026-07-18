@@ -1,8 +1,9 @@
-# Koide Weighted Character-Source Axis Theorem
+# Koide Weighted Character-Source Principal-Axis No-Go
 
 **Date:** 2026-04-20  
+**Claim type:** no_go
 **Status:** exact no-go sharpening on the charged-lepton observable-principle /
-character-source route  
+character-source principal-eigenspace route
 **Runner:** `scripts/frontier_koide_weighted_character_source_axis_theorem.py`
 
 ## Question
@@ -13,16 +14,15 @@ Plancherel kernel on the charged-lepton source triplet is exactly
 
 That still left one honest loophole:
 
-> perhaps the same canonical character sources become nontrivial once one
-> allows general left/right `Z_3` class-function weights, rather than the
-> uniform Plancherel choice.
+> perhaps real left/right `Z_3` class-function weights, followed by selection
+> of the principal/top eigenspace, evade the uniform Plancherel result.
 
-Does that larger weighted source-kernel class contain a genuine Koide
-selector?
+Can that specified rule force a unique Koide ray?
 
 ## Bottom line
 
-No.
+No for the specified principal/top-eigenspace rule. Other selection rules are
+outside this no-go.
 
 Let the canonical character sources be
 
@@ -58,6 +58,9 @@ S_(mu,nu) = diag(mu_0 nu_0, mu_1 nu_2, mu_2 nu_1).
 
 So the whole class stays diagonal in the canonical source basis.
 
+For real weights the kernel is Hermitian, so a principal/top eigenspace is
+defined.
+
 That forces a clean dichotomy:
 
 1. if the top eigenvalue is unique, the selected ray is one of the three basis
@@ -65,8 +68,9 @@ That forces a clean dichotomy:
 2. if the top eigenvalue is degenerate, the kernel does not force a unique
    ray at all.
 
-Therefore the weighted character-source class cannot furnish a unique Koide
-selector.
+Therefore real central reweighting cannot furnish a unique Koide selector by
+the specified principal/top-eigenspace rule. This does not exclude a different
+selection rule imposed on the same diagonal family.
 
 ## Input stack
 
@@ -159,9 +163,10 @@ which recovers the old no-go exactly.
 So the earlier identity kernel was not an accident of one pairing convention.
 It was the uniform member of a larger diagonal family.
 
-## Corollary 2: a unique top eigenvalue selects a basis axis, not Koide
+## Corollary 2: for real weights, a unique top eigenvalue selects a basis axis, not Koide
 
-If one diagonal entry of `S_(mu,nu)` is strictly largest, then the principal
+Now restrict to real `mu_q, nu_q`, as in the runner. If one diagonal entry of
+`S_(mu,nu)` is strictly largest, then the principal
 eigenvector is one of the three basis axes
 
 ```text
@@ -197,7 +202,8 @@ So the degenerate branch does not rescue the route either: even if the top
 eigenspace happens to contain Koide-admissible vectors, the kernel does not
 single one out.
 
-Hence the entire weighted character-source class fails in both possible ways:
+Hence the principal/top-eigenspace rule on the real weighted
+character-source class fails in both possible ways:
 
 - unique top: wrong ray,
 - degenerate top: no unique ray.
@@ -207,10 +213,12 @@ Hence the entire weighted character-source class fails in both possible ways:
 This closes a natural loophole in the charged-lepton first-principles attack
 map.
 
-The observable-principle / source-response route is **not** rescued by
-reweighting the canonical `Z_3` character sources with arbitrary central
-left/right class functions. That whole class remains too rigid: it can only
-produce diagonal source kernels.
+The observable-principle / source-response route is **not** rescued by using
+the principal/top eigenspace after reweighting the canonical `Z_3` character
+sources with real central left/right class functions. The exact algebraic
+identity is broader: arbitrary central weights still produce only diagonal
+source kernels, but the present no-go conclusion is limited to the stated
+real-weight principal-eigenspace selection rule.
 
 So the remaining live observable-principle seam is narrower than before:
 

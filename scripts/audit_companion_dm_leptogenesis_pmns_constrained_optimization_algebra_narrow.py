@@ -20,8 +20,8 @@ THEN the constrained problem  min { J(z) : z in F }  satisfies
   (T3)  multiplier formula:
         lambda_* = <grad J(z_*), grad C(z_*)> / || grad C(z_*) ||^2.
 
-This narrow-theorem companion runner adds a sympy-based exact-symbolic
-verification:
+This narrow-theorem companion runner gives a sympy-based exact-symbolic
+verification of the abstract implication:
 
   (a) realizes a generic strictly convex C^2 J(z) (a symbolic SPD
       quadratic on R^n with n=2 for tractability of symbolic gradients);
@@ -29,7 +29,8 @@ verification:
       affine constraint c^T z - d, regular by construction);
   (c) computes the closed-form constrained minimizer z_* via the
       Lagrange system and verifies (T1)-(T3) symbolically;
-  (d) verifies the three derivable corollaries (C1)-(C3);
+  (d) verifies (C1)-(C2) parametrically and illustrates (C3) at an exact
+      rational sample;
   (e) free-symbol bookkeeping for the multiplier substitution;
   (f) numerical FP cross-check at one independent random SPD/affine
       sample;
@@ -43,18 +44,13 @@ verification:
       midpoint of a hypothetical pair of minimizers.
 
 Companion role: not a new claim row, not a new source note, no status
-promotion. Provides audit-friendly evidence that the parent's
-load-bearing standalone calculus content holds at exact symbolic
+promotion. It verifies the standalone calculus content at exact symbolic
 precision under the four explicit supplied hypotheses plus (H1'). The
-supplied hypotheses themselves are not re-derived; in particular, the
-strict convexity of I_seed and the constraint regularity of
-eta_{i_*}/eta_obs - 1 remain conditional imports from the parent row
-and from the cited
-dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16
-authority.
+supplied hypotheses themselves are not re-derived. Any downstream mapping to
+`I_seed` or `eta_{i_*}/eta_obs - 1` is informative and does not supply or
+discharge those hypotheses.
 """
 
-from pathlib import Path
 import sys
 
 try:
@@ -64,12 +60,9 @@ try:
         Rational,
         Symbol,
         diff,
-        eye,
         simplify,
         solve,
         symbols,
-        sqrt,
-        Eq,
         expand,
         zeros,
     )
@@ -158,10 +151,11 @@ def main() -> int:
     print(f"  grad J(z) = {grad_J.tolist()}")
     print(f"  grad C(z) = {grad_C.tolist()}")
 
-    # SPD discriminant nonvanishing (supplied (H1): A SPD)
+    # Exact discriminant identity. Positivity is the separate supplied (H1)
+    # premise and is not self-certified by this expression.
     check(
-        "A SPD discriminant det(A) = A11 A22 - A12^2 (supplied positive under (H1))",
-        det_A != 0,
+        "det(A) equals the displayed discriminant A11 A22 - A12^2 exactly",
+        simplify(A.det() - det_A) == 0,
         detail=f"det_A = {det_A}",
     )
 
@@ -264,10 +258,8 @@ def main() -> int:
     L_at_zero = (grad_J_star - 0 * grad_C_star)
     L_at_zero_simpl = Matrix([simplify(L_at_zero[i]) for i in range(2)])
     # The implication is: if lambda were 0, then grad_J_star must be 0.
-    # We test the converse: a generic (a, A) makes grad J(z_*) nonzero
-    # when c is generic, hence lambda_* must be nonzero on generic data.
-    # Numeric exhibition: with a = (1, 0), A = I, c = (1, 1), d = 0,
-    # grad J(z_*) is nonzero, so lambda_* =/= 0.
+    # The exact parametric implication is already the identity (L). We also
+    # exhibit it at one rational sample with nonzero grad J and lambda.
     sample_c3 = {A11: 1, A22: 1, A12: 0, a1: 1, a2: 0, c1: 1, c2: 1, d: 0}
     lam_star_c3 = lam_star.subs(sample_c3)
     grad_J_star_c3 = Matrix([grad_J_star[i].subs(sample_c3) for i in range(2)])
@@ -387,21 +379,39 @@ def main() -> int:
     # ---------------------------------------------------------------------
     section("Part 8: counterfactual probe -- necessity of (H2) (constraint regularity)")
     # ---------------------------------------------------------------------
-    # Replace C by C_cf(z) = (z1)^2 + (z2)^2 - r^2 at the point z = (0, 0),
-    # but the supplied feasible point is z_feas = (0, 0). At z_feas,
-    # grad C_cf = (2 z1, 2 z2) = (0, 0), so (H2) fails.
-    # The (L-formula) lambda_* = <gJ, gC> / ||gC||^2 has zero denominator.
-    r = Symbol("r", positive=True, real=True)
-    C_cf = z1**2 + z2**2 - r**2
+    # Replace C by C_cf(z) = z1^2 + z2^2. Its feasible set is the singleton
+    # {(0,0)}, where grad C_cf vanishes. Choose the strictly convex objective
+    # J_cf = (z1 - 1)^2 + z2^2, whose gradient is nonzero at the feasible
+    # minimizer. No lambda can satisfy grad J_cf = lambda grad C_cf there,
+    # and the projection formula has zero denominator.
+    C_cf = z1**2 + z2**2
+    J_cf = (z1 - 1) ** 2 + z2**2
     grad_C_cf = Matrix([diff(C_cf, v) for v in (z1, z2)])
+    grad_J_cf = Matrix([diff(J_cf, v) for v in (z1, z2)])
+    C_cf_at0 = C_cf.subs({z1: 0, z2: 0})
     grad_C_cf_at0 = grad_C_cf.subs({z1: 0, z2: 0})
+    grad_J_cf_at0 = grad_J_cf.subs({z1: 0, z2: 0})
     norm_grad_C_cf_at0_sq = (grad_C_cf_at0.T @ grad_C_cf_at0)[0, 0]
     check(
-        "(H2) counterfactual: || grad C_cf ||^2 at (0,0) is 0 (regularity fails)",
+        "(H2) counterfactual point (0,0) is feasible for C_cf = z1^2 + z2^2",
+        simplify(C_cf_at0) == 0,
+        detail=f"C_cf(0,0) = {C_cf_at0}",
+    )
+    check(
+        "(H2) counterfactual has grad C_cf(0,0) = 0 but grad J_cf(0,0) nonzero",
+        grad_C_cf_at0 == zeros(2, 1) and grad_J_cf_at0 != zeros(2, 1),
+        detail=f"grad C_cf = {grad_C_cf_at0.T.tolist()}, grad J_cf = {grad_J_cf_at0.T.tolist()}",
+    )
+    check(
+        "(H2) counterfactual cannot satisfy Lagrange stationarity for any lambda",
+        simplify(grad_J_cf_at0 - lam * grad_C_cf_at0) != zeros(2, 1),
+        detail=f"grad J_cf - lambda grad C_cf = {(grad_J_cf_at0 - lam * grad_C_cf_at0).T.tolist()}",
+    )
+    check(
+        "(H2) counterfactual makes the multiplier-formula denominator zero",
         simplify(norm_grad_C_cf_at0_sq) == 0,
         detail=f"|| grad C_cf(0,0) ||^2 = {norm_grad_C_cf_at0_sq}",
     )
-    # Hence (L-formula) is ill-defined at this z (zero denominator).
 
     # ---------------------------------------------------------------------
     section("Part 9: (T1) midpoint strict-convexity probe")
@@ -453,7 +463,7 @@ def main() -> int:
     print("  Verified at exact sympy precision:")
     print("    (T2) Lagrange stationarity grad J(z_*) = lambda_* grad C(z_*)")
     print("    (T3) multiplier formula lambda_* = <gJ, gC>/||gC||^2")
-    print("    (C1)-(C3) corollaries all reduce to 0 / hold parametrically")
+    print("    (C1)-(C2) reduce to 0 parametrically; (C3) follows from (L) and has an exact sample")
     print("    Numerical FP cross-check at random SPD/affine sample (constraint and (L))")
     print("    (H1) counterfactual: linear J on affine F is constant -> no unique min")
     print("    (H2) counterfactual: vanishing-grad C breaks (L-formula) denominator")

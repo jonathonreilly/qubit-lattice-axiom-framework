@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact certificate for an abstract supplied-chart Hermitian product.
+"""Exact certificate for an abstract explicitly defined Hermitian product.
 
 The historical filename is retained for claim-graph continuity.  The symbols
 are six real coordinates and one real phase in an explicitly defined matrix;
@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import cmath
+import math
 import sys
 from itertools import combinations
 from typing import TypeAlias
@@ -94,13 +95,32 @@ def normal_checks() -> int:
     assert isinstance(h_matrix, sp.MatrixBase)
     assert isinstance(expected, sp.MatrixBase)
 
-    print("Abstract supplied-chart Hermitian-product conjugation-parity theorem")
+    print("Abstract Hermitian-product conjugation-parity theorem for an explicit matrix family")
     section("Direct product, order, and conjugation")
     check("direct Y Y^dagger multiplication gives all displayed entries", matrix_zero(h_matrix - expected))
     check("the computed product is Hermitian", matrix_zero(h_matrix - h_matrix.conjugate().T))
     check(
         "sign reversal is entrywise conjugation",
         matrix_zero(h_matrix.subs(delta, -delta) - h_matrix.conjugate()),
+    )
+    phase_independent = ((0, 0), (0, 1), (1, 0), (1, 1), (1, 2), (2, 1), (2, 2))
+    check(
+        "the seven phase-independent entries are individually even",
+        all(equivalent(h_matrix[i, j].subs(delta, -delta), h_matrix[i, j]) for i, j in phase_independent),
+    )
+    phase_sensitive_coordinates = {
+        x1: sp.Rational(2, 3),
+        y3: sp.Rational(5, 7),
+    }
+    sample_phase = sp.Rational(2, 5)
+    check(
+        "the two phase-sensitive entries are conjugation-paired, not generically entrywise even",
+        equivalent(h_matrix[0, 2].subs(delta, -delta), h_matrix[2, 0])
+        and equivalent(h_matrix[2, 0].subs(delta, -delta), h_matrix[0, 2])
+        and not equivalent(
+            h_matrix[0, 2].subs(phase_sensitive_coordinates).subs(delta, -sample_phase),
+            h_matrix[0, 2].subs(phase_sensitive_coordinates).subs(delta, sample_phase),
+        ),
     )
     alternate_order = y_matrix.conjugate().T * y_matrix
     check(
@@ -301,19 +321,21 @@ def numeric_principal_minors(matrix: ComplexMatrix) -> tuple[complex, ...]:
 
 def independent_numeric_checks() -> None:
     samples = (
-        ((0.4, 0.6, 0.7), (0.2, 0.3, 0.5), 0.37),
-        ((1.0, -0.2, 0.9), (0.8, 0.1, -0.4), 1.2),
-        ((-0.5, 0.25, 0.75), (0.6, -0.3, 0.2), -0.9),
+        ("generic-positive", (0.4, 0.6, 0.7), (0.2, 0.3, 0.5), 0.37),
+        ("mixed-sign", (1.0, -0.2, 0.9), (0.8, 0.1, -0.4), 1.2),
+        ("second-mixed-sign", (-0.5, 0.25, 0.75), (0.6, -0.3, 0.2), -0.9),
+        ("all-zero", (0.0, 0.0, 0.0), (0.0, 0.0, 0.0), 0.61),
+        ("rank-deficient", (1.0, 1.0, 1.0), (1.0, 1.0, 1.0), math.pi),
     )
-    for sample_index, (x_values, y_values, delta) in enumerate(samples, start=1):
+    for sample_name, x_values, y_values, delta in samples:
         h_pos = independent_numeric_h(x_values, y_values, delta)
         h_neg = independent_numeric_h(x_values, y_values, -delta)
         check(
-            f"numeric sample {sample_index} sign-flip conjugation",
+            f"numeric {sample_name} sample sign-flip conjugation",
             max_difference(h_neg, conjugate_numeric(h_pos)) < 1e-12,
         )
         check(
-            f"numeric sample {sample_index} Hermiticity",
+            f"numeric {sample_name} sample Hermiticity",
             max_difference(h_pos, conjugate_numeric([list(row) for row in zip(*h_pos)])) < 1e-12,
         )
         det_y = (
@@ -321,25 +343,25 @@ def independent_numeric_checks() -> None:
             + y_values[0] * y_values[1] * y_values[2] * cmath.exp(1j * delta)
         )
         check(
-            f"numeric sample {sample_index} determinant equals |det(Y)|^2",
+            f"numeric {sample_name} sample determinant equals |det(Y)|^2",
             abs(numeric_det(h_pos) - abs(det_y) ** 2) < 1e-10,
         )
         coeff_pos = numeric_char_coefficients(h_pos)
         coeff_neg = numeric_char_coefficients(h_neg)
         check(
-            f"numeric sample {sample_index} characteristic coefficients are even",
+            f"numeric {sample_name} sample characteristic coefficients are even",
             max(abs(a - b) for a, b in zip(coeff_pos, coeff_neg, strict=True)) < 1e-10,
         )
         minors = numeric_principal_minors(h_pos)
         check(
-            f"numeric sample {sample_index} all principal minors are nonnegative real",
+            f"numeric {sample_name} sample all principal minors are nonnegative real",
             all(abs(value.imag) < 1e-10 and value.real >= -1e-10 for value in minors),
         )
 
 
 def independent_checks() -> int:
     """Run the independently coded symbolic and numerical reconstructions."""
-    print("Abstract supplied-chart theorem: independent reconstruction")
+    print("Abstract matrix-family theorem: independent reconstruction")
     section("Column outer products and manual characteristic polynomial")
     independent_symbolic_checks()
     section("Independent numerical and principal-minor route")
@@ -358,7 +380,7 @@ def hostile_reference_and_symbols() -> tuple[sp.Matrix, tuple[sp.Symbol, ...]]:
 
 def hostile_checks() -> int:
     """Recompute and reject every requested mutation."""
-    print("Abstract supplied-chart theorem: hostile mutation controls")
+    print("Abstract matrix-family theorem: hostile mutation controls")
     section("Mutated products and premises")
     y_matrix, symbols = hostile_reference_and_symbols()
     c1, c2, c3, d1, d2, d3, phi = symbols

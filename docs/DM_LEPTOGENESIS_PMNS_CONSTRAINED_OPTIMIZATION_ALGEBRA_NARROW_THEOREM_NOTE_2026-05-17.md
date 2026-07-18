@@ -23,8 +23,9 @@ for a unique scalar `lambda_* in R`. The narrow theorem is the
 load-bearing class-(A) calculus identity at the heart of the
 "choose the one minimizing `I_seed`" step in the parent
 `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
-row: that step is exactly an instance of `(P)` with `J = I_seed` and
-`C(z) = eta_{i_*}(z) / eta_obs - 1`. The five hypotheses
+row: that step has the formal shape of `(P)` with `J = I_seed` and
+`C(z) = eta_{i_*}(z) / eta_obs - 1`. It becomes an instance of this theorem
+only if the five hypotheses
 `(i)-(v)` are explicit supplied hypotheses of the present narrow note; the
 narrow theorem does not derive any of them and in particular does not
 derive `I_seed` from the current four-axiom framework baseline. The selector
@@ -40,10 +41,10 @@ audit pipeline after independent review.
 **Authority role:** narrow rescope of the load-bearing algebraic core of the parent
 `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
 row. The broad parent additionally adopts the explicit information-cost
-functional `I_seed = D_KL(x || x_seed) + D_KL(y || y_seed) + (1 - cos delta)`
-as a post-axiom selector definition imported from information geometry,
-and the explicit finite-fixture column index `i_*` from the conditional
-[`DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)
+functional `I_seed = D_KL(x/sum(x) || x_seed/sum(x_seed))`
+`+ D_KL(y/sum(y) || y_seed/sum(y_seed)) + (1 - cos delta)`
+as a downstream selector definition imported from information geometry,
+and the explicit finite-fixture column index `i_* = 0` as a supplied parent
 input. This narrow theorem isolates only the abstract
 calculus content of "constrained-minimum existence and stationarity
 characterization under supplied strict convexity and supplied constraint
@@ -172,22 +173,25 @@ All follow algebraically from `(T1)-(T3)` and the supplied hypotheses
 Identifying the abstract data of the narrow theorem with the parent row:
 
 ```text
-n        :=  free-parameter count of the (x, y, delta) chart at fixed
-             native N_e seed surface (parent: 5 real parameters)
+n        :=  free-parameter count of the supplied parent parameterization
+             (parent: 5 real parameters)
 Omega    :=  open subset on which I_seed is strictly convex; in
              particular delta in (-pi/2, pi/2) so (1 - cos delta) is
              locally strictly convex
 J        :=  I_seed
 C(z)     :=  eta_{i_*}(z) / eta_obs  -  1
 F        :=  { z in Omega : C(z) = 0 }    (parent: closure manifold)
-i_*      :=  column index returned by the supplied finite transport fixture
-             in dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16
+i_*      :=  column index supplied by the parent finite fixture
 z_0      :=  feasible point exhibited by the parent runner
 ```
 
-Then `(P)` is exactly "choose the one minimizing `I_seed`", and
-`(T1)-(T3)` characterize the unique minimizer `z_*` via `(L)` and
-`(L-formula)`. The narrow theorem makes no numerical claim.
+This is only a formal identification of symbols. `(T1)-(T3)` characterize a
+unique global minimizer via `(L)` and `(L-formula)` only if the parent problem
+separately verifies `(H1)-(H4)` and `(H1')`. The parent runner establishes one
+feasible local numerical candidate, but does not verify global strict
+convexity in its parameterization, global constraint regularity, boundedness,
+attainment, or segment-feasibility. The narrow theorem makes no numerical or
+parent-minimality claim.
 
 ## What this claims
 
@@ -208,21 +212,18 @@ Then `(P)` is exactly "choose the one minimizing `I_seed`", and
   selector-agnostic: any supplied strictly-convex `C^2` `J` satisfies
   `(T1)-(T3)` under the same supplied constraint-regularity inputs.
 - Does **not** derive strict convexity of `I_seed`. That is supplied
-  via `(H1)` and is internal to the parent row's adopted information
-  geometry (`D_KL` strict convexity is a standard convex-analysis
-  identity; the present narrow theorem does not need to re-derive it).
+  via `(H1)` for this theorem and is not verified for the parent's chosen
+  parameterization by the present note.
 - Does **not** derive the constraint-regularity `(H2)` (non-vanishing
   `grad C` on `F`). That is supplied as a hypothesis; smoothness alone does not
-  establish it. The
-  flavored transport map. The parent runner exhibits a feasible point
-  `z_0` and the analytic structure of `eta_{i_*}(z)`; the present
-  narrow theorem does not re-derive these.
+  establish it. The parent runner numerically checks a nonzero constraint
+  gradient only at its reported local candidate; the present narrow theorem
+  does not derive global regularity.
 - Does **not** derive the existence or boundedness of `F`. That is
-  supplied via `(H3)` and is exhibited by the parent runner.
-- Does **not** identify `i_*`. The column index is the conditional output of
-  the supplied finite transport fixture in
-  `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`,
-  not re-derived or physically interpreted here.
+  supplied via `(H3)`. The parent runner's single feasible point establishes
+  neither boundedness nor global attainment.
+- Does **not** identify `i_*`. The parent supplies the finite-fixture index
+  `i_* = 0`; it is not re-derived or physically interpreted here.
 - Does **not** supply or constrain the numerical readout `(x_*, y_*, delta_*)`
   or the multiplier `lambda_*`. Those are downstream numerical
   consequences and not part of the standalone calculus identity.
@@ -240,12 +241,10 @@ The broad parent row bundles the calculus identity above with several
 distinct items, all explicitly listed in the parent's "Scope and honest
 framing" section:
 
-1. The explicit information-cost selector `I_seed` as a post-axiom
+1. The explicit information-cost selector `I_seed` as a downstream
    adopted definition imported from information geometry.
-2. The conditional flavor-column functional identity
-   (`dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`,
-   conditional on supplied transport equations, profiles, and packet),
-   supplying the finite-fixture index `i_*`.
+2. The supplied finite-fixture index `i_* = 0` and the conditional transport
+   equations, profiles, and packet used to evaluate its equality constraint.
 3. The numerical readout `(x_min, y_min, delta_min)` from the parent
    runner, conditional on adopting `I_seed`.
 4. The open premise boundary: `I_seed` is "explicitly adopted rather
@@ -259,19 +258,13 @@ open premise boundary 4 is preserved as the load-bearing
 supplied hypothesis `(H1)` (strict convexity of the selector). The narrow
 theorem does not promote, restate, or attempt to discharge that hole.
 
-## Cited dependencies
+## Informative parent context
 
-- [`DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)
-  — parent row supplying the abstract identification
-  `(J, C, Omega, F)` with `(I_seed, eta-constraint, positivity chart,
-  closure surface)`; cited for scientific inputs, not for a mutable generated
-  status.
-- [`DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)
-  — conditional supplied-fixture input for the column index `i_*` used to
-  define the constraint `C(z)` in the abstract identification; the present
-  calculus theorem does not inherit transport provenance, packet canonicity,
-  or physical readout authority from that input.
-
+The historical parent row
+`DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md`
+motivates the symbol mapping `(J, C, Omega, F)`. It is not a load-bearing
+authority for the standalone theorem, which depends only on `(H1)-(H4)` and
+`(H1')` as stated here.
 ## Forbidden imports check
 
 - No PDG observed values consumed.
@@ -299,7 +292,9 @@ verifies symbolically (sympy `simplify` to 0) that:
 3. `(T3)`: the multiplier formula
    `lambda_* = <grad J(z_*), grad C(z_*)> / || grad C(z_*) ||^2` holds
    parametrically.
-4. Three corollary identities `(C1)-(C3)` reduce to 0 parametrically.
+4. `(C1)-(C2)` reduce to 0 parametrically; `(C3)` is the immediate implication
+   `lambda_* = 0 => grad J(z_*) = 0` of `(L)` and is also illustrated at one
+   exact rational sample.
 5. Free-symbol bookkeeping: the difference `grad J - lambda grad C` has
    free symbols that vanish when `lambda` is substituted by the
    `(L-formula)` value.
@@ -311,9 +306,10 @@ verifies symbolically (sympy `simplify` to 0) that:
    non-strictly-convex quadratic `J(z) = c^T z` (linear) admits an
    entire affine subspace of minimizers on `F`, demonstrating that
    `(T1)` fails without strict convexity.
-8. Counterfactual probe (necessity of `(H2)`): replacing `C` with a
-   constraint whose gradient vanishes at a feasible point breaks
-   `(L-formula)` (denominator zero).
+8. Counterfactual probe (necessity of `(H2)`): for
+   `C_cf(z) = z1^2 + z2^2`, the feasible set is `{0}` but its constraint
+   gradient vanishes there; a strictly convex objective with nonzero gradient
+   at `0` satisfies neither `(L)` nor `(L-formula)`.
 
 The runner closes with PASS=N FAIL=0 at exact sympy precision.
 
@@ -322,7 +318,5 @@ The runner closes with PASS=N FAIL=0 at exact sympy precision.
 - `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
   (parent broad row; bundles items 1-5; this narrow theorem isolates only
   item 5).
-- `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`
-  (conditional supplied-fixture source of `i_*`; no status inheritance).
 - `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`
   (sibling broad-multistart support note).

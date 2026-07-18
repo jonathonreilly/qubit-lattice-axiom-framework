@@ -1,4 +1,4 @@
-# Supplied-Chart Hermitian-Product Conjugation-Parity Theorem
+# Abstract Hermitian-Product Conjugation-Parity Theorem for an Explicit Matrix Family
 
 **Date:** 2026-04-16; abstract-matrix source rescope 2026-07-18
 **Status:** bounded theorem in finite matrix algebra
@@ -93,7 +93,9 @@ v^dagger H v
 ```
 
 Thus `H` is positive semidefinite. This conclusion uses the displayed
-`Y Y^dagger` order.
+`Y Y^dagger` order. It does not require `Y` to be invertible: the Gram-matrix
+argument includes zero coordinates, singular matrices, and every
+rank-deficient case.
 
 ## Conjugation parity and the universal corollary
 
@@ -104,6 +106,18 @@ so every remaining entry is fixed by conjugation. Hence
 ```text
 H(-delta) = conjugate(H(delta)).
 ```
+
+The seven phase-independent entries are individually even. The two
+phase-sensitive entries are only conjugation-paired:
+
+```text
+H13(-delta) = conjugate(H13(delta)) = H31(delta),
+H31(-delta) = conjugate(H31(delta)) = H13(delta).
+```
+
+They are not individually even for generic real coordinates and phase. The
+real-coordinate premise is essential to the displayed parity implication;
+allowing arbitrary complex coordinates need not preserve it.
 
 Now let `F` be any scalar function on this family with
 `F(conjugate(H)) = F(H)`. Then
@@ -183,16 +197,15 @@ nonnegative, consistently with the Gram-matrix proof above.
 
 ## Scope boundary
 
-No repository theorem currently derives this explicitly defined matrix family
-from the framework baseline. In particular, this row does not identify the
-family as a PMNS chart, a Yukawa law, a charged-lepton carrier, or a
-leptogenesis input. It supplies no selector, stationary system, KKT solution,
-branch classification, branch-minimality result, CP-asymmetry law, or physical
-phase-selection mechanism.
+This note does not derive the explicitly defined matrix family from the
+framework baseline or identify it as a PMNS chart, a Yukawa law, a
+charged-lepton carrier, or a leptogenesis input. It supplies no selector,
+stationary system, KKT solution, branch classification, branch-minimality
+result, CP-asymmetry law, or physical phase-selection mechanism.
 
-A future physical use would require a separate retained bridge deriving both
-the matrix family and the proposed interpretation. That bridge remains open
-and is not load-bearing here.
+A physical use would require a separate retained bridge deriving both the
+matrix family and the proposed interpretation. No such bridge is cited or
+load-bearing here; the physical bridge remains open in this note.
 
 ## Verification
 

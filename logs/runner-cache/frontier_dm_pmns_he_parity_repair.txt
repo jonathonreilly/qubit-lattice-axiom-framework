@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_he_parity_repair.py
-runner_sha256: 64a70e3a3988c52b27a5ca93aa8ad329a72bbc2c5750f1ae64848fd3be0968af
+runner_sha256: 166097fdc2a93c7b941938d54739bc35777bebb4b53d0f68dd0ed3f935467aa4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.06
+elapsed_sec: 1.11
 status: ok
 ----- stdout -----
-Abstract supplied-chart Hermitian-product conjugation-parity theorem
+Abstract Hermitian-product conjugation-parity theorem for an explicit matrix family
 
 ----------------------------------------------------------------------------------
 Direct product, order, and conjugation
@@ -14,6 +14,8 @@ Direct product, order, and conjugation
 [PASS] direct Y Y^dagger multiplication gives all displayed entries
 [PASS] the computed product is Hermitian
 [PASS] sign reversal is entrywise conjugation
+[PASS] the seven phase-independent entries are individually even
+[PASS] the two phase-sensitive entries are conjugation-paired, not generically entrywise even
 [PASS] Y^dagger Y is generically distinct from the certified Y Y^dagger product
 
 ----------------------------------------------------------------------------------
@@ -47,7 +49,7 @@ Characteristic data and invariant readouts
 [PASS] Frobenius norm squared is even
 [PASS] sign reversal preserves the full characteristic polynomial
 
-SUMMARY: MODE=normal PASS=27 FAIL=0
+SUMMARY: MODE=normal PASS=29 FAIL=0
 
 ----- stderr -----
 

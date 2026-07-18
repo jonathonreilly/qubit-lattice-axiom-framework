@@ -1,7 +1,7 @@
 ---
 claim_id: theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_bounded_theorem_note_2026-07-18
 claim_type: bounded_theorem
-claim_scope: "Bridge-conditional structure theorem on the phase-erased (k = 0) slice of the supplied determinant-channel readout surface, three exact slices. Log equivalence: for strictly positive modulus readouts, independent-block multiplicativity is exactly equivalent to additivity of the logarithmic-coordinate readout (both directions through the exponential bridge); with the standard bounded-additive-function theorem on a nondegenerate interval (stated, note-carried), the family is the modulus-character class. Additivity incompatibility: on this slice, where the channel value composes multiplicatively and the readout is a fixed nonnegative function of it, the parent's scalar record-additive shape admits only the identically-zero readout (exact two-step proof), and block multiplicativity does not imply scalar additivity (exact witness F(x) = x); so the parent block's two odd-side routes are genuinely distinct here, and the viable odd-side ingredient on this slice is the homomorphism form (equivalently its logarithmic-coordinate presentation). Non-reconstruction boundary: pre-erasure readouts with identical logarithmic modulus content can differ in multiplicativity (exact two-readout discriminator), so log-modulus data reconstruct neither the phase nor the block law. Bookkeeping corollary: the parent T2 tail, on this slice, sharpens to transported K/CPT orbit constancy plus the homomorphism ingredient; whether any Record/log bridge connects the registrable additive shape to logarithmic coordinates is named as the exact open link, not claimed. No physical readout, carrier, exhaustion, or orientation is derived; the obligation stays open; the gauge side and theta-bar are untouched."
+claim_scope: "Bridge-conditional structure theorem on the phase-erased (k = 0) slice of the supplied determinant-channel readout surface, three exact slices. Log equivalence: for strictly positive modulus readouts, independent-block multiplicativity is exactly equivalent to additivity of the logarithmic-coordinate readout (both directions through the exponential bridge); with the rebuilt bounded-additive linearity support theorem (repo-native, every step gated), the family is the modulus-character class. Additivity incompatibility: on this slice, where the channel value composes multiplicatively and the readout is a fixed nonnegative function of it, the parent's scalar record-additive shape admits only the identically-zero readout (exact two-step proof), and block multiplicativity does not imply scalar additivity (exact witness F(x) = x); so the parent block's two odd-side routes are genuinely distinct here, and the viable odd-side ingredient on this slice is the homomorphism form (equivalently its logarithmic-coordinate presentation). Non-reconstruction boundary: pre-erasure readouts with identical logarithmic modulus content can differ in multiplicativity (exact two-readout discriminator), so log-modulus data reconstruct neither the phase nor the block law. Bookkeeping corollary: the parent T2 tail, on this slice, sharpens to transported K/CPT orbit constancy plus the homomorphism ingredient; whether any Record/log bridge connects the registrable additive shape to logarithmic coordinates is named as the exact open link, not claimed. No physical readout, carrier, exhaustion, or orientation is derived; the obligation stays open; the gauge side and theta-bar are untouched."
 upstream_dependencies:
   - minimal_axioms
   - theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17
@@ -68,10 +68,13 @@ nondegenerate multiplicative `F` is strictly positive, so `G` is defined.
 
 **T1 (log equivalence).** For strictly positive `F`, (P-hom, slice form)
 holds iff (P-log) holds — both directions exact through the bijective
-exponential bridge `e^u·e^v = e^{u+v}`. With the standard theorem that an
-additive function bounded on a nondegenerate interval is linear (stated
-here as named standard mathematics carried by the note's text; the
-runner's cells are consistency instances, not a derivation of it),
+exponential bridge `e^u·e^v = e^{u+v}`. With the rebuilt repo-native support theorem
+[`BOUNDED_ADDITIVE_ON_INTERVAL_LINEARITY_REBUILT_SUPPORT_NOTE_2026-07-18.md`](BOUNDED_ADDITIVE_ON_INTERVAL_LINEARITY_REBUILT_SUPPORT_NOTE_2026-07-18.md)
+(an additive function bounded on an interval of positive length is
+linear — rational homogeneity, the centered triangle decomposition, the
+integer-scaling rational sandwich, and the Archimedean squeeze, each
+gated exactly there; this note's runner cells remain consistency
+instances of that authority, not a re-derivation),
 `G(u) = s·u` and `F(x) = x^s` — the modulus-character family. The
 homomorphism ingredient and its logarithmic-coordinate presentation are
 one supply; the parent's scalar additive shape is not part of this

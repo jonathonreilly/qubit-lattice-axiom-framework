@@ -36,7 +36,7 @@ This theorem combines:
 - [DM_LEPTOGENESIS_UNIVERSAL_YUKAWA_NO_GO_NOTE_2026-04-15.md](./DM_LEPTOGENESIS_UNIVERSAL_YUKAWA_NO_GO_NOTE_2026-04-15.md) — universal-Yukawa leptogenesis no-go
 - [DM_NEUTRINO_TWO_HIGGS_RIGHT_GRAM_BRIDGE_NOTE_2026-04-15.md](./DM_NEUTRINO_TWO_HIGGS_RIGHT_GRAM_BRIDGE_NOTE_2026-04-15.md) — DM two-Higgs right-Gram bridge theorem
 - [DM_NEUTRINO_Z3_CIRCULANT_CP_TOOL_NOTE_2026-04-15.md](./DM_NEUTRINO_Z3_CIRCULANT_CP_TOOL_NOTE_2026-04-15.md) — cited source for the supplied circulant target family
-- [DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md](./DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md) — bounded supplied-matrix Hermitian-circulant / `P_23` even-odd algebra lemma; it classifies the odd direction but does not identify a physical carrier or observable
+- [DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md](./DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md) — positive finite-matrix Hermitian-circulant / `P_23` even-odd algebra theorem; it classifies the unique odd coordinate and the displayed entry identity
 
 The single-Higgs monomial obstruction (every fixed-charge single-Higgs lane
 gives `Y = D P_q` with `P_q` a support permutation, hence `Y^dag Y` diagonal)

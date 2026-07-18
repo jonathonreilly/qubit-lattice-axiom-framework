@@ -73,10 +73,10 @@ def part1_current_bank_eliminates_even_additive_routes() -> None:
     slot = read("docs/DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md")
 
     check(
-        "The bounded algebra lemma identifies one unique P23-odd local class",
-        "the `P_23`-odd" in slot
-        and "subspace has real dimension one" in slot
-        and "`c_odd` is the unique" in slot,
+        "The positive finite-matrix theorem identifies one unique P23-odd local class",
+        "`(2 even, 1 odd)`" in slot
+        and "`c_odd` is the unique odd coordinate" in slot
+        and "span_R {B_0, B_+, B_-}" in slot,
     )
     check(
         "The current-zero-law note records c_odd,current = 0",
@@ -147,7 +147,7 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Authority stack:")
-    print("  - bounded supplied-matrix Hermitian-circulant / P23 algebra lemma")
+    print("  - positive finite-matrix Hermitian-circulant / P23 algebra theorem")
     print("  - DM odd-circulant current-stack zero law")
     print("  - DM two-Higgs minimality theorem")
     print("  - DM two-Higgs continuity sheet theorem")

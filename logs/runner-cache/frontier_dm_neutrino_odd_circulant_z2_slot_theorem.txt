@@ -1,87 +1,97 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_odd_circulant_z2_slot_theorem.py
-runner_sha256: 3dd661748bb093b2e0f9b705ba10751fa7c7133e8a260b88f4710fd8e5c1e359
+runner_sha256: 4e3622ac6b11d4350fa7f37bb1e055357ce70983fd5ea7a424fb59798ce6352a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
 ============================================================================================
-SUPPLIED 3x3 HERMITIAN-CIRCULANT / P23 EVEN-ODD ALGEBRA LEMMA
+SUPPLIED 3x3 HERMITIAN-CIRCULANT / P23 EVEN-ODD ALGEBRA THEOREM
 ============================================================================================
 
-Scope:
-  finite supplied-matrix algebra only
-  no physical carrier, source, observable, or transport identification
+Typed surface:
+  input  = displayed finite matrices, basis, indices, and trace pairing
+  output = exact commutant, extraction, parity, and coordinate identity
 
 ============================================================================================
-PART 1: FULL HERMITIAN COMMUTANT PARAMETRIZATION
+PART 1: EXACT FULL HERMITIAN COMMUTANT
 ============================================================================================
-  [PASS] The Hermitian commutant of the supplied S has real dimension three  (constraint rank=6, nullity=3)
-  [PASS] I, S+S^2, and i(S-S^2) are independent Hermitian commutant elements  (rank=3, max commutator=0.00e+00, max Hermiticity error=0.00e+00)
-  [PASS] Those three matrices span the full Hermitian commutant  (projector error=1.32e-15)
-  [PASS] Hostile Hermitian but noncirculant matrix is rejected by the commutator constraint  (hostile commutator norm=2.449490)
+  [PASS] The supplied cyclic shift convention is exact
+  [PASS] Independent nine-real-coordinate constraints have rank six  (rank=6, nullity=3)
+  [PASS] I, S+S^2, and i(S-S^2) are independent Hermitian commutant elements  (basis rank=3)
+  [PASS] The displayed basis spans the full Hermitian commutant  (commutant dimension=3, basis rank=3)
 
 ============================================================================================
-PART 2: UNIQUE P23 PARITY SPLIT
+PART 2: EXACT GRAM MATRIX, EXTRACTION, AND PARITY REPRESENTATION
 ============================================================================================
-  [PASS] P23 exchanges S and S^2 in the supplied convention
-  [PASS] Parity acts as diag(+1,+1,-1) on the extracted coefficient space  (representation error=0.00e+00)
-  [PASS] The P23-odd Hermitian-circulant subspace is uniquely one-dimensional  (even multiplicity=2, odd multiplicity=1)
-  [PASS] Hostile wrong-parity assignment of S+S^2 as odd is rejected
-  [PASS] Hostile wrong-parity assignment of i(S-S^2) as even is rejected
+  [PASS] P23 exchanges S and S^2
+  [PASS] The Hilbert-Schmidt Gram matrix is diag(3,6,6)  (G=Matrix([[3, 0, 0], [0, 6, 0], [0, 0, 6]]))
+  [PASS] Hilbert-Schmidt extraction recovers the symbolic coefficient triple
+  [PASS] The independently extracted parity representation is diag(+1,+1,-1)  (R=Matrix([[1, 0, 0], [0, 1, 0], [0, 0, -1]]))
+  [PASS] The exact parity multiplicities are two even and one odd  (multiplicities=(2, 1))
 
 ============================================================================================
-PART 3: EXACT COEFFICIENT EXTRACTION AND SIGN CONVENTION
+PART 3: EXACT SIGNED AND ZERO COEFFICIENT CASES
 ============================================================================================
-  [PASS] Sample 0: Hilbert-Schmidt extraction recovers signed/zero coefficients  (expected=(2.5, 1.25, 0.75), extracted=(np.float64(2.5), np.float64(1.25), np.float64(0.75)))
-  [PASS] Sample 1: Hilbert-Schmidt extraction recovers signed/zero coefficients  (expected=(-1.0, -2.0, 3.0), extracted=(np.float64(-1.0), np.float64(-2.0), np.float64(3.0)))
-  [PASS] Sample 2: Hilbert-Schmidt extraction recovers signed/zero coefficients  (expected=(0.0, 4.5, -0.5), extracted=(np.float64(0.0), np.float64(4.5), np.float64(-0.5)))
-  [PASS] Sample 3: Hilbert-Schmidt extraction recovers signed/zero coefficients  (expected=(3.0, 0.0, 2.0), extracted=(np.float64(3.0), np.float64(0.0), np.float64(2.0)))
-  [PASS] Sample 4: Hilbert-Schmidt extraction recovers signed/zero coefficients  (expected=(7.0, -1.5, 0.0), extracted=(np.float64(7.0), np.float64(-1.5), np.float64(0.0)))
-  [PASS] Sample 5: Hilbert-Schmidt extraction recovers signed/zero coefficients  (expected=(0.0, 0.0, 0.0), extracted=(np.float64(0.0), np.float64(0.0), np.float64(0.0)))
-  [PASS] The supplied zero-based convention has K_01 = c_even + i c_odd  (K01=(1.5-0.25j), K02=(1.5+0.25j))
+  [PASS] Case 0: extraction and reconstruction recover all coefficients  (expected=(5/2, 5/4, 3/4), extracted=(5/2, 5/4, 3/4))
+  [PASS] Case 1: extraction and reconstruction recover all coefficients  (expected=(-1, -2, 3), extracted=(-1, -2, 3))
+  [PASS] Case 2: extraction and reconstruction recover all coefficients  (expected=(0, 9/2, -1/2), extracted=(0, 9/2, -1/2))
+  [PASS] Case 3: extraction and reconstruction recover all coefficients  (expected=(3, 0, 2), extracted=(3, 0, 2))
+  [PASS] Case 4: extraction and reconstruction recover all coefficients  (expected=(7, -3/2, 0), extracted=(7, -3/2, 0))
+  [PASS] Case 5: extraction and reconstruction recover all coefficients  (expected=(0, 0, 0), extracted=(0, 0, 0))
+  [PASS] The supplied entry convention has K_01 = c_even + i c_odd  (K_01=3/2 - I/4, K_02=3/2 + I/4)
 
 ============================================================================================
-PART 4: COORDINATE POLYNOMIAL Im[(K_01)^2]
+PART 4: EXACT COORDINATE POLYNOMIAL
 ============================================================================================
-  [PASS] Sample 0: direct entry multiplication gives 2 c_even c_odd  ((d,even,odd)=(0.0, 2.0, 3.0), direct=12.000000, expected=12.000000)
-  [PASS] Sample 1: direct entry multiplication gives 2 c_even c_odd  ((d,even,odd)=(1.0, -2.0, 3.0), direct=-12.000000, expected=-12.000000)
-  [PASS] Sample 2: direct entry multiplication gives 2 c_even c_odd  ((d,even,odd)=(-4.0, 2.0, -3.0), direct=-12.000000, expected=-12.000000)
-  [PASS] Sample 3: direct entry multiplication gives 2 c_even c_odd  ((d,even,odd)=(5.0, -2.0, -3.0), direct=12.000000, expected=12.000000)
-  [PASS] Sample 4: direct entry multiplication gives 2 c_even c_odd  ((d,even,odd)=(2.0, 0.0, 5.0), direct=0.000000, expected=0.000000)
-  [PASS] Sample 5: direct entry multiplication gives 2 c_even c_odd  ((d,even,odd)=(-1.0, 4.0, 0.0), direct=0.000000, expected=0.000000)
-  [PASS] Sample 6: direct entry multiplication gives 2 c_even c_odd  ((d,even,odd)=(3.0, 0.0, 0.0), direct=0.000000, expected=0.000000)
-  [PASS] Sample 7: direct entry multiplication gives 2 c_even c_odd  ((d,even,odd)=(0.0, 0.5, -0.25), direct=-0.250000, expected=-0.250000)
-  [PASS] The coordinate polynomial is P23-odd on the supplied family  (A(K)=-1.000000, A(PKP)=1.000000)
-  [PASS] Hostile overall-sign formula -2 c_even c_odd is rejected  (direct=-1.000000, hostile=1.000000)
+  [PASS] Actual symbolic entry multiplication gives 2 c_even c_odd  (A_01=2*c_even*c_odd)
+  [PASS] P23 changes the exact coordinate polynomial by one minus sign  (A_01(PKP)=-2*c_even*c_odd)
+  [PASS] Case 0: actual matrix multiplication matches the coordinate identity  (coefficients=(5/2, 5/4, 3/4))
+  [PASS] Case 1: actual matrix multiplication matches the coordinate identity  (coefficients=(-1, -2, 3))
+  [PASS] Case 2: actual matrix multiplication matches the coordinate identity  (coefficients=(0, 9/2, -1/2))
+  [PASS] Case 3: actual matrix multiplication matches the coordinate identity  (coefficients=(3, 0, 2))
+  [PASS] Case 4: actual matrix multiplication matches the coordinate identity  (coefficients=(7, -3/2, 0))
+  [PASS] Case 5: actual matrix multiplication matches the coordinate identity  (coefficients=(0, 0, 0))
 
 ============================================================================================
-PART 5: BASIS-COVARIANT COEFFICIENTS, COORDINATE-DEPENDENT ENTRY POLYNOMIAL
+PART 5: EXACT SIMULTANEOUS BASIS TRANSFORMATION
 ============================================================================================
-  [PASS] Simultaneous unitary conjugation preserves Hilbert-Schmidt coefficients  (coefficient drift=5.35e-16)
-  [PASS] Simultaneous unitary conjugation preserves the one-dimensional odd parity class  (odd parity error=1.44e-15)
-  [PASS] Hostile claim that the raw 01-entry polynomial is basis invariant is rejected  (original A01=-0.560000, transformed raw A01=0.016757)
+  [PASS] The chosen basis transformation is exactly unitary
+  [PASS] Simultaneous conjugation preserves the symbolic coefficient triple
+  [PASS] Simultaneous conjugation preserves parity multiplicities
+  [PASS] The raw 01-entry polynomial changes under this basis transformation  (original=-14/25, transformed=0)
 
 ============================================================================================
-PART 6: SOURCE-SCOPE FIREWALL
+PART 6: POSITIVE THEOREM-SURFACE CONSISTENCY
 ============================================================================================
-  [PASS] Source declares the bounded supplied-matrix scope and all missing bridges  (missing=[])
-  [PASS] Source contains no legacy physical-observable or activation wording  (leaked=[])
-  [PASS] Runner does not contain the former definitional cp_tensor helper
-  [PASS] Exit policy is truthful: zero failures exits zero and any failure exits nonzero
+  [PASS] The note declares every finite-matrix input and theorem output  (missing count=0)
+  [PASS] The theorem surface contains only its positive finite-matrix content  (stale-term count=0)
+  [PASS] Exit policy maps every positive failure count to a nonzero exit
+
+============================================================================================
+PART 7: HOSTILE MUTATIONS THROUGH LOAD-BEARING VALIDATORS
+============================================================================================
+  [PASS] Hostile mutation killed: noncirculant Hermitian member
+  [PASS] Hostile mutation killed: wrong even/odd parity assignment
+  [PASS] Hostile mutation killed: reversed overall sign in the coordinate identity
+  [PASS] Hostile mutation killed: raw-entry basis-invariance assertion
+  [PASS] Hostile mutation killed: altered coefficient-extraction denominator
+  [PASS] Hostile mutation killed: reversed cyclic-shift convention
 
 ============================================================================================
 RESULT
 ============================================================================================
-  Bounded result:
-    - the supplied Hermitian commutant is exactly three-real-dimensional
-    - its P23-odd subspace is uniquely one-dimensional
-    - Hilbert-Schmidt extraction recovers (d, c_even, c_odd)
+  Positive finite-matrix theorem:
+    - the Hermitian commutant is exactly three-real-dimensional
+    - its parity multiplicities are exactly two even and one odd
+    - Hilbert-Schmidt extraction returns (d, c_even, c_odd)
     - in the displayed basis Im[(K_01)^2] = 2 c_even c_odd
-    - the entry polynomial is not promoted to a physical observable
+    - simultaneous conjugation preserves coefficients and parity
+    - the raw 01-entry polynomial is coordinate-dependent
 
-PASS=33  FAIL=0
+MUTATION KILLS=6/6
+PASS=37  FAIL=0
 
 ----- stderr -----
 

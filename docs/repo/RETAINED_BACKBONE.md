@@ -19,7 +19,7 @@ file per claim), summarized in
 | Retained positive rows | 78 |
 | Retained bounded rows | 307 |
 | Retained no-go rows | 0 |
-| Boxed decorations under retained parents | 14 |
+| Boxed decorations under retained parents | 15 |
 
 ## Retained positive rows (78)
 
@@ -420,11 +420,12 @@ Sorted by load-bearing graph score (descending).
 
 - none at present
 
-## Boxed decorations under retained parents (14)
+## Boxed decorations under retained parents (15)
 
 - [`left_handed_charge_matching_note`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md) — score 29.027; audited 2026-05-24T20:35:17.186937+00:00; under `graph_first_su3_integration_note`
 - [`ew_current_fierz_channel_decomposition_note_2026-05-01`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) — score 22.675; audited 2026-05-23T14:25:12.301143+00:00; under `graph_first_su3_integration_note`
 - [`yukawa_color_projection_theorem`](../../docs/YUKAWA_COLOR_PROJECTION_THEOREM.md) — score 15.291; audited 2026-05-25T10:18:49.309520+00:00; under `graph_first_su3_integration_note`
+- [`canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`](../../docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) — score 13.721; audited 2026-07-18T03:30:46.114644+00:00; under `plaquette_self_consistency_note`
 - [`newton_law_derived_note`](../../docs/NEWTON_LAW_DERIVED_NOTE.md) — score 13.609; audited 2026-07-12T18:58:38.545638+00:00; under `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
 - [`lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) — score 12.531; audited 2026-05-22T16:04:50.374175+00:00; under `graph_first_su3_integration_note`
 - [`lhcm_matter_assignment_from_su3_representation_note_2026-05-02`](../../docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md) — score 12.454; audited 2026-05-24T20:47:44.313664+00:00; under `graph_first_su3_integration_note`

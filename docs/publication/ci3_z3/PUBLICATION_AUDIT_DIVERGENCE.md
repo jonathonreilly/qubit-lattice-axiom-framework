@@ -17,11 +17,11 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 244 |
+| critical | `unaudited` | 245 |
 | high | `unaudited` | 172 |
 | medium | `unaudited` | 131 |
 | ? | `unresolved` | 4 |
-| critical | `audit_in_progress` | 4 |
+| critical | `audit_in_progress` | 3 |
 | critical | `audited_conditional` | 3 |
 | critical | `audited_renaming` | 3 |
 | critical | `audited_numerical_match` | 1 |
@@ -113,7 +113,7 @@ publication tables phrase it.
 | critical | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
+| critical | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

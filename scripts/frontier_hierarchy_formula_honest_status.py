@@ -17,7 +17,8 @@ D1 and bounded readout appendix C1):
             det(u_0 D + m) = (m^2 + 4 u_0^2)^8 per color; at m = 0 the
             magnitude is (2 u_0)^16 = 4^8 u_0^16 — u_0-degree exactly
             equal to the species count 16 (exact Fraction arithmetic);
-      (iii) selector (7/8)^(1/4) = g(4) = (eta(4)/zeta(4))^(1/4), with
+      (iii) dimensionless factor (7/8)^(1/4) = g(4)
+            = (eta(4)/zeta(4))^(1/4), with
             eta(4)/zeta(4) = 1 - 2^(1-4) = 7/8 exact (Fraction algebra
             plus rigorously bracketed series);
       (iv)  suppression constant K := (7/8)^(1/4) alpha_LM^16
@@ -55,7 +56,7 @@ structure were softer than claimed):
         displace by x 0.124 and x 8.0651 = u_0^(-16).  This identifies
         B4 as the open transport gate rather than accepting it as a
         premise.
-    F3  selector displacement: removing (7/8)^(1/4) displaces by
+    F3  factor displacement: removing (7/8)^(1/4) displaces by
         +3.39 %, two orders above the B1 resolution window.
     F4  anti-tuning: the plaquette value that would reproduce the PDG
         VEV exactly differs from the licensed 0.5934 by LESS than the
@@ -133,7 +134,7 @@ ALPHA_S_V = ALPHA_BARE / U_0 ** 2    # canonical-surface alpha_s(v)
 M_PL = 1.2209e19                     # B2: declared Planck-lane anchor (GeV)
 M_PL_HALF_STEP_REL = 0.00005 / 1.2209  # B2 quoted-precision half-step (rel)
 N_EXPONENT = 16                      # B3b: declared regulator/species surface
-APBC = (7.0 / 8.0) ** 0.25           # selector, recomputed in [C]
+APBC = (7.0 / 8.0) ** 0.25           # dimensionless factor, recomputed in [C]
 
 # Published constants of the note (reproducibility targets, class A).
 V_CAND_PUBLISHED = 246.282818290129  # GeV (corollary C1)
@@ -237,7 +238,7 @@ def v_cand_of(p, m_pl, n_exp):
 # ---------------------------------------------------------------------------
 def section_c():
     print("\n--- [C] T1 first-principles compute (species count -> "
-          "determinant degree -> selector) ---")
+          "determinant degree -> dimensionless factor) ---")
 
     # C1: per-direction symbol zero set {0, pi} on even-L grids.
     zero_sets = {}
@@ -304,7 +305,7 @@ def section_c():
           det_id_ok and mag_ok and degree_ok,
           "exact at rational (u_0, m) test points")
 
-    # C7: selector (7/8)^(1/4): exact closed form and bracketed series.
+    # C7: dimensionless factor (7/8)^(1/4): exact closed form and brackets.
     closed = Fraction(1) - Fraction(2) ** (1 - 4)
     big_n = 50
     zeta_part = sum(Fraction(1, n ** 4) for n in range(1, big_n + 1))
@@ -317,7 +318,8 @@ def section_c():
     ratio_lo = eta_lo / zeta_hi
     ratio_hi = eta_hi / zeta_lo
     width = float(ratio_hi - ratio_lo)
-    check("C", "selector: eta(4)/zeta(4) = 1 - 2^(1-4) = 7/8 exact "
+    check("C", "dimensionless factor: eta(4)/zeta(4) = 1 - 2^(1-4) "
+               "= 7/8 exact "
                "(Fraction algebra); bracketed series interval contains "
                "7/8", closed == Fraction(7, 8)
           and ratio_lo <= Fraction(7, 8) <= ratio_hi and width < 1e-4,
@@ -408,9 +410,9 @@ def section_a():
           and abs(r_sv - U_0 ** -16) < 1e-9,
           f"x {u_ratio:.4e} / x {r_bare:.5f} / x {r_sv:.5f}")
 
-    # A8: falsification leg F3 — selector displacement.
+    # A8: falsification leg F3 — dimensionless-factor displacement.
     r_sel = 1.0 / APBC
-    check("A", "F3 selector displacement: removing (7/8)^(1/4) -> "
+    check("A", "F3 factor displacement: removing (7/8)^(1/4) -> "
                "x 1.033946 (+3.39 %), two orders above the B1 window",
           abs(r_sel - 1.0339463) < 1e-6
           and (r_sel - 1.0) > 100.0 * 4.0 * (P_HALF_STEP / P_BOUNDARY),
@@ -439,6 +441,7 @@ def section_a():
 # ---------------------------------------------------------------------------
 def section_b():
     print("\n--- [B] cross-note inputs, parent-note hygiene, self-scans ---")
+    note_text = NOTE_PATH.read_text()
 
     # B1: canonical plaquette helper residuals (B1 chain recomputed).
     check("B", "B1 matches canonical helper: <P> = 0.5934, u_0, "
@@ -467,16 +470,21 @@ def section_b():
                "exact-count claim",
           "realizes exactly `2^d` species" in naive_text)
 
-    # B4: joint Riemann-Dirichlet fourth-root theorem on disk with the
-    # closed form and the integer-d uniqueness clause.
+    # B4: this consumer uses only parts (A)-(C) of the joint source theorem:
+    # the closed form and the integer-s uniqueness clause. Its part (D)
+    # supplies no normalization, sign convention, carrier, or physical mass.
     joint = (REPO_ROOT / "docs" /
              "HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT"
              "_NARROW_THEOREM_NOTE_2026-05-10.md")
     joint_text = joint.read_text() if joint.exists() else ""
-    check("B", "joint fourth-root theorem on disk: (7/8)^(1/4) closed "
-               "form and integer-d uniqueness at s = 4",
+    check("B", "joint fourth-root source consumed at parts (A)-(C) only: "
+               "(7/8)^(1/4) closed form and integer-s uniqueness at s = 4",
           "(7/8)^(1/4)" in joint_text
-          and "if and only if `s = 4`" in joint_text)
+          and "if and only if `s = 4`" in joint_text
+          and "Dimensional analysis fixes only the exponent" in joint_text
+          and "uses only its parts (A)-(C)" in note_text
+          and "does not infer a unit" in note_text
+          and "physical hierarchy scale or empirical mass" in note_text)
 
     # B5: regulator-dependence no-go on disk; B3b's declaration mirrors it.
     nogo = (REPO_ROOT / "docs" /
@@ -487,8 +495,6 @@ def section_b():
                "regulator-dependent (Wilson: 1, twisted-mass: 2, "
                "staggered: 4, domain-wall: 1, overlap: 1)",
           "regulator-dependent" in nogo_text and "Wilson: 1" in nogo_text)
-
-    note_text = NOTE_PATH.read_text()
 
     # B6: kinetic-isotropy primitive supplies only the B3a substrate split.
     kinetic_text = (KINETIC_PRIMITIVE_PATH.read_text()

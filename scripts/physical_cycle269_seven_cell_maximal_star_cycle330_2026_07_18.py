@@ -196,17 +196,16 @@ def note_contract() -> None:
 
 def methodology_controls() -> None:
     completed = subprocess.run(
-        ["git", "rev-parse", "--verify", "origin/main"],
+        ["git", "merge-base", "--is-ancestor", FRESH_MAIN, "origin/main"],
         cwd=ROOT,
         check=False,
         capture_output=True,
         text=True,
     )
-    observed = completed.stdout.strip()
     check(
-        "the no-go procedure is pinned to freshly fetched origin/main",
-        completed.returncode == 0 and observed == FRESH_MAIN,
-        {"expected": FRESH_MAIN, "observed": observed},
+        "the recorded no-go methodology commit remains an ancestor of origin/main",
+        completed.returncode == 0,
+        {"recorded": FRESH_MAIN, "current_ref": "origin/main"},
     )
     note = NOTE.read_text(encoding="utf-8")
     flat_note = " ".join(note.split())

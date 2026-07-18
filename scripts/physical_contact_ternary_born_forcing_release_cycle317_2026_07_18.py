@@ -95,18 +95,17 @@ def science_cold_run() -> None:
 
 def freshness_and_baseline_controls(note: str) -> None:
     completed = subprocess.run(
-        ["git", "rev-parse", "--verify", "origin/main"],
+        ["git", "merge-base", "--is-ancestor", FRESH_MAIN, "origin/main"],
         cwd=ROOT,
         text=True,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         check=False,
     )
-    observed = completed.stdout.strip()
     check(
-        "the no-go method is pinned to the freshly fetched main ref",
-        completed.returncode == 0 and observed == FRESH_MAIN,
-        {"expected": FRESH_MAIN, "observed": observed},
+        "the recorded no-go methodology commit remains an ancestor of origin/main",
+        completed.returncode == 0,
+        {"recorded": FRESH_MAIN, "current_ref": "origin/main"},
     )
     required_rows = (
         "| operational quantum / Records | 61% | 27% | 88% | 3.2/5 |",

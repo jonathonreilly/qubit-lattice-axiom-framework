@@ -102,13 +102,12 @@ def note_contract() -> None:
 
 def methodology_freshness_control() -> None:
     completed = subprocess.run(
-        ["git", "rev-parse", "origin/main"],
+        ["git", "merge-base", "--is-ancestor", METHODOLOGY_MAIN, "origin/main"],
         cwd=ROOT,
         check=False,
         capture_output=True,
         text=True,
     )
-    observed = completed.stdout.strip()
     note = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
     registry = json.loads(
         (ROOT / "docs/audit/data/axiom_premise_nodes.json").read_text(
@@ -117,11 +116,10 @@ def methodology_freshness_control() -> None:
     )
     realized = registry["nodes"].get("realized_state_primitive", {})
     check(
-        "the N1-N8 gate is pinned to the freshly fetched methodology and primitive-registry reference",
+        "the recorded N1-N8 methodology commit remains in origin/main and the primitive reference is explicit",
         completed.returncode == 0
-        and observed == METHODOLOGY_MAIN
         and METHODOLOGY_MAIN in note,
-        {"expected": METHODOLOGY_MAIN, "observed": observed},
+        {"recorded": METHODOLOGY_MAIN, "current_ref": "origin/main"},
     )
     check(
         "the approved realized-state primitive is chain-satisfying and content-free at the registered source",

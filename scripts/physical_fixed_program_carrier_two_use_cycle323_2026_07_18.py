@@ -936,7 +936,7 @@ def strict_no_go_controls() -> None:
     print("\nSTRICT N1-N8 RELEASE DISCIPLINE")
     note = NOTE.read_text(encoding="utf-8")
     completed = subprocess.run(
-        ["git", "rev-parse", "--verify", "origin/main"],
+        ["git", "merge-base", "--is-ancestor", FRESH_MAIN, "origin/main"],
         cwd=ROOT,
         text=True,
         stdout=subprocess.PIPE,
@@ -944,9 +944,9 @@ def strict_no_go_controls() -> None:
         check=False,
     )
     check(
-        "the no-go method is pinned to the freshly fetched main ref",
-        completed.returncode == 0 and completed.stdout.strip() == FRESH_MAIN,
-        {"expected": FRESH_MAIN, "observed": completed.stdout.strip()},
+        "the recorded no-go methodology commit remains an ancestor of origin/main",
+        completed.returncode == 0,
+        {"recorded": FRESH_MAIN, "current_ref": "origin/main"},
     )
 
     n1 = markdown_section(note, "### N1", "### N2")

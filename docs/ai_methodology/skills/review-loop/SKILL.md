@@ -200,7 +200,11 @@ no topology decisions required from the invoker.
    in this repo's history.
 3. **One reviewer process per PR at a time**, applicable lenses combined
    into a single pass (two for large diffs), findings written incrementally
-   to an untracked file in that PR's worktree, verdict line last. This is
+   to an untracked file in that PR's worktree, verdict line last. Freeze
+   the PR's original changed-file snapshot BEFORE creating the findings
+   file; the findings file and any reviewer scratch artifacts are named
+   scope exclusions — they never enter `files_to_review`, the changed-file
+   set, or any commit. This is
    the budget-adapted default of the Reviewer Fanout section below: under
    the shared-pool budget, cross-PR parallelism replaces per-lens
    parallelism; full per-lens fanout inside one PR remains available in a
@@ -223,7 +227,22 @@ no topology decisions required from the invoker.
    conflict touching only `docs/audit/data/citation_graph_manifest.json`
    is resolved by regenerating it from the landed tree
    (`build_citation_graph.py` then `write_citation_graph_manifest.py`),
-   never by hand-merge.
+   never by hand-merge. The fail-closed landing loop is, exactly:
+   ```bash
+   for i in 1 2 3 4; do
+     git cherry-pick --abort 2>/dev/null || true
+     git fetch -q origin
+     git checkout -q --detach origin/main
+     if git cherry-pick <commits-oldest-first>; then
+       git checkout -q -- docs/audit/data docs/publication 2>/dev/null || true
+       if git push origin HEAD:main; then echo LANDED; break; fi
+     fi
+     sleep 3
+   done
+   ```
+   Everything conditioned — never a stray `;` before the push (a failed
+   cherry-pick would then push a no-op reported as landed). Verify after:
+   `git fetch && git branch -r --contains <landed-sha> | grep origin/main`.
 6. **Who may kick it off: any orchestrator** — any Claude tier, a codex
    session, or a human. The orchestration is process: every finding and
    every PASS/FAIL verdict comes from the configured reviewer model's seats,
@@ -361,9 +380,12 @@ lint to regenerate it.
 On each iteration, set `files_to_review` to the files that changed since their
 last clean review. On iteration 1, use all original changed files.
 
-Run all applicable reviewers in parallel through the available agent/subagent
-mechanism. If parallel agents are unavailable, run the same reviewer passes
-locally and report that limitation.
+Run every applicable reviewer lens. Under the shared-pool concurrency
+budget (Default Entry above), combine the lenses into one or two passes per
+PR — full per-lens parallel fanout through the available agent/subagent
+mechanism is the quiet-pool mode. If parallel agents are unavailable, run
+the same reviewer passes locally and report that limitation. In every mode,
+each applicable lens must be explicitly covered and named in the findings.
 
 ### Required Reviewers
 

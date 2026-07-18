@@ -1,44 +1,66 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-18T05:01:08.653524+00:00",
+  "audit_invocation_history": [
+    "6eea7f49e33247ee91170159223411a4"
+  ],
+  "audit_invocation_id": "6eea7f49e33247ee91170159223411a4",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem."
+    },
+    "dep_claim_type": {
+      "site_phase_cube_shift_intertwiner_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "site_phase_cube_shift_intertwiner_note": "retained"
+    },
+    "deps": [
+      "site_phase_cube_shift_intertwiner_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 17.555,
+    "runner_hash": "59c1d39e0018083285034d2fcdd37b3e451c5cfb64db12b17fbd8cc4578524a1",
+    "transitive_descendants": 751
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-loop-drain-ready-20260717-306a43c27edc46f29c6bffc3d31d5bfb-three_generation_hw1_dis-001",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Given the three diagonal matrices as hypotheses, direct matrix multiplication establishes the distinct characters, projector identities, and direct-sum decomposition. No physical interpretation or derivation of the operator surface is needed within the audited scope.",
   "claim_id": "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
-  "claim_scope": null,
-  "claim_type": "bounded_theorem",
+  "claim_scope": "Exact linear-algebra theorem on abstract C^3: the specified diagonal involutions have distinct joint sign characters on X_1, X_2, X_3 and yield the rank-1 sector-projector decomposition, with no physical-generation identification audited.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-18T05:01:08.653524+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "three_generation_observable_theorem_note",
   "deps": [
     "site_phase_cube_shift_intertwiner_note"
   ],
   "direct_in_degree": 16,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained_pending_chain",
+  "effective_status_reason": "decoration_waiting_on:three_generation_observable_theorem_note",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "retained_pending_chain",
   "load_bearing_score": 17.555,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Because the three factor projectors commute, P(s) is the joint eigenprojector, giving P(chi(X_i)) = e_i e_i^T and zero for the other five sign triples.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "59853330ccd958897bb7b979cfecf06850968a9d9201a9ebbd16612e9a388586",
   "note_path": "docs/THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -140,14 +162,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 62,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 62
   },
   "runner_path": "scripts/audit_companion_three_generation_hw1_distinct_characters_exact.py",
   "title": "Three-Generation `hw=1` Distinct Translation Characters Narrow Theorem",
   "transitive_descendants": 751,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner genuinely instantiates the stated matrices and performs exact symbolic algebra; it is not merely printing expected results. All load-bearing checks are class (A), with no external comparator or new physical content. The note explicitly repackages the distinct-character and projector portion of the named parent observable theorem, so it is an exact algebraic decoration rather than an independent bounded theorem."
 }

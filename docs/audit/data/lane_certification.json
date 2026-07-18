@@ -2550,7 +2550,7 @@
         },
         {
           "claim_id": "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "retained_pending_chain"
         },
         {
           "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
@@ -2899,6 +2899,6 @@
       "uncertified_count": 662
     }
   ],
-  "repo_head": "c9f09c535f75d1ec879e978652e7d30967b5f67a",
+  "repo_head": "3cac23052cebc2eced11f80d6cb61b7bcbd81de8",
   "schema": "lane_certification_v2"
 }

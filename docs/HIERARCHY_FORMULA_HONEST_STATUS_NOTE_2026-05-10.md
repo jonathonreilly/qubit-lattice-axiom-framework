@@ -4,7 +4,8 @@
 packet); 2026-06-11 (theorem/boundary-input restructure — see changelog
 below); 2026-06-15 (audit-unblock boundary sharpening — see changelog
 below); 2026-06-16 (B3 kinetic-substrate split — see changelog below);
-2026-06-17 (B3 supplier-cascade source repair — see changelog below)
+2026-06-17 (B3 supplier-cascade source repair — see changelog below);
+2026-07-18 (A-C-only fourth-root consumer boundary — see changelog below)
 **Claim type:** bounded_theorem
 **Claim scope:** one load-bearing structural-support theorem (T1), one
 declared candidate-map appendix (D1), one bounded numeric readout
@@ -20,7 +21,7 @@ integer); (ii) on the minimal `2^4` all-antiperiodic mean-field block,
 `det(u_0 D + m) = (m^2 + 4 u_0^2)^8` per color, so at `m = 0` the
 determinant magnitude is `(2 u_0)^16 = 4^8 u_0^16` — `u_0`-degree
 exactly equal to the naive-surface species count `16`; (iii) the
-selector `(7/8)^(1/4)` is the exact closed form
+dimensionless factor `(7/8)^(1/4)` is the exact closed form
 `g(4) = (eta(4)/zeta(4))^(1/4) = (1 - 2^(1-4))^(1/4)`; (iv) after the
 symbol `alpha_LM := alpha_bare/u_0` is declared over B1, the arithmetic
 constant `K := (7/8)^(1/4) alpha_LM^16 = 2.017224e-17` has zero
@@ -48,6 +49,20 @@ anti-tuning certificates and four falsification legs, checks the
 note and its own source for overclaim/back-propagation tokens, and
 quarantines all PDG comparators in a terminal class-D section.
 Deterministic, stdlib-only, well under one minute.
+
+## Changelog — A-C-only fourth-root consumer boundary (2026-07-18)
+
+The source theorem cited at S5 has been narrowed at its dimensional part.
+This consumer uses only its parts (A)-(C): the eta/zeta closed form, strict
+integer-`s` monotonicity, and the unique value `g(4) = (7/8)^(1/4)`. It does
+not use that theorem's conditional part (D), does not infer a unit
+coefficient or sign convention from dimensional bookkeeping, and does not
+obtain a physical hierarchy scale or empirical mass from S5. The occurrence
+of `(7/8)^(1/4)` in T1 is a dimensionless number-theoretic factor. D1 remains
+this note's separately declared candidate map over B2 and the open B3b/B4/B5
+gates; it is not supplied or normalized by part (D) of the source theorem.
+This boundary edit preserves the independent species, determinant,
+arithmetic, and sensitivity results and does not set an audit verdict.
 
 ## Changelog — B3 supplier-cascade source repair (2026-06-17)
 
@@ -111,7 +126,7 @@ derived. This repair narrows the auditable claim surface without
 discarding the useful science:
 
 1. **T1 is now the load-bearing target.** The exact native content is
-   the species-count/determinant-degree/selector/arithmetic/sensitivity
+   the species-count/determinant-degree/factor/arithmetic/sensitivity
    support theorem recomputed by the runner. It is framework-native
    support for the hierarchy lane, not a proof of the physical
    hierarchy formula by itself.
@@ -153,7 +168,7 @@ comparator grade for `v`. Six defects fixed:
    mirroring the Higgs-note F2 pattern).
 2. **(Critical) No structural-theorem/readout split.** The formula was
    carried whole as a "match". Fix: T1 (species count; determinant
-   `u_0`-degree; exact selector; zero-knob suppression constant;
+   `u_0`-degree; exact dimensionless factor; zero-knob suppression constant;
    sensitivity algebra) is separated from D1 (declared candidate map)
    and C1 (bounded numeric readout), in the proven
    theorem/definition/corollary pattern of
@@ -217,7 +232,8 @@ scope. Nothing else in this note changed.
 **This note proves** (T1) the structural support skeleton of the
 hierarchy lane by local algebra: the naive four-direction surface has
 computed species count `16`; the minimal-block determinant carries
-exactly the matching `u_0`-degree `16`; the selector `(7/8)^(1/4)` is
+exactly the matching `u_0`-degree `16`; the dimensionless factor
+`(7/8)^(1/4)` is
 exact Riemann-Dirichlet algebra; and, after the B1 symbol
 `alpha_LM := alpha_bare/u_0` is declared, the arithmetic constant
 `K = 2.017224e-17` is a zero-continuous-knob number with computed
@@ -364,11 +380,15 @@ formula-closure gates rather than accepted authorities:
    `HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md`,
    file-pointer context) lives on a different (`L_s = 2`, pinned
    spatial-corner) surface and is not consumed here.
-3. **Exact selector.** `g(4) = (eta(4)/zeta(4))^(1/4) = (7/8)^(1/4)`,
+3. **Exact dimensionless factor.** `g(4) =
+   (eta(4)/zeta(4))^(1/4) = (7/8)^(1/4)`,
    with `eta(4)/zeta(4) = 1 - 2^(1-4) = 7/8` exact. Authority: the
-   retained joint narrow theorem
+   joint source theorem at its audit-owned scope
    [`HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md)
-   (closed form, monotonicity, and integer-`d` uniqueness at `d = 4`).
+   (parts (A)-(C): closed form, monotonicity, and integer-`s` uniqueness
+   at `s = 4`). Part (D)'s conditional dimensional map is not consumed:
+   S5 supplies no unit normalization, sign convention, physical carrier,
+   or empirical mass.
    (Runner: exact Fraction algebra plus rigorously bracketed
    eta/zeta partial sums whose ratio interval contains `7/8`.)
 4. **Zero-knob suppression constant.** `K := (7/8)^(1/4) alpha_LM^16
@@ -394,7 +414,7 @@ formula-closure gates rather than accepted authorities:
 | S3a | four-direction kinetic-form substrate (`c_t = c_s`, OS0 hypercubic form) | approved framework primitive; no dimensionless dynamical content | [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) |
 | S3b | regulator-conditionality of the exponent (boundary narrowing only) | open formula-closure gate (B3b) | [`HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md`](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md) |
 | S4 | `det(u_0 D + m) = (m^2 + 4 u_0^2)^8`; `u_0`-degree `16` at `m = 0` | (C) first-principles compute on the minimal block | this note + registered runner (exact arithmetic) |
-| S5 | `(7/8)^(1/4) = g(4)` exact | (A) exact algebra + bracketed series | [`HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md) + runner |
+| S5 | `(7/8)^(1/4) = g(4)` exact; parts (A)-(C) only, with no part-(D) normalization or mass authority | (A) exact algebra + bracketed series | [`HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md) + runner |
 | S6 | `K = 2.017224e-17`; identity (S); sensitivity algebra | (A) exact/verified arithmetic over B1 | this note + registered runner |
 | S7 | `v_cand := M_Pl x K` | (E) declared candidate map D1 over B2 | this note (declared; B5 explicitly not claimed) |
 | S8 | `v_cand = 246.282818290129 GeV` | (A) exact arithmetic over B1/B2 | corollary C1 below |
@@ -472,7 +492,7 @@ input scale:
     transport gate); by `alpha_bare^16 -> x 0.1240` (readout `30.54
     GeV`); by `alpha_s(v)^16 = (alpha_bare/u_0^2)^16 -> x 8.0651
     = u_0^(-16)` (readout `1986.3 GeV`).
-  - F3 selector: removing `(7/8)^(1/4) -> x 1.033946` (`+3.39 %`,
+  - F3 factor: removing `(7/8)^(1/4) -> x 1.033946` (`+3.39 %`,
     `100x` the B1 resolution window; readout `254.64 GeV`).
 
   The structure is therefore rigid at the declared inputs: no discrete
@@ -518,8 +538,8 @@ pins map onto the ruler/input plus open-gate surfaces as follows:
 
 None of B2-B5 is closed by this restructure. What changed is that the
 parts of the lane that DO close from local algebra and retained rows —
-the species count, the determinant degree, the exact selector, the
-zero-knob suppression constant, and the sensitivity algebra — are now
+the species count, the determinant degree, the exact dimensionless factor,
+the zero-knob suppression constant, and the sensitivity algebra — are now
 packaged as theorem T1 with a registered runner that recomputes them,
 instead of being implicit inside a comparator match.
 
@@ -596,8 +616,10 @@ must be recomputed); or if the Planck lane shifts `M_Pl` (elasticity
   no regulator/species realization, dynamics, coupling, readout, or
   formula closure.
 - [`HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — retained narrow theorem for `(7/8)^(1/4) = g(4)` with integer-`d`
-  uniqueness (S5; also recomputed by the runner).
+  — source theorem for `(7/8)^(1/4) = g(4)` with integer-`s`
+  uniqueness in parts (A)-(C) (S5; also recomputed by the runner).
+  Its conditional dimensional part (D) is not consumed and supplies no
+  coefficient, sign convention, carrier, physical scale, or empirical mass.
 - [`HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md`](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md)
   — B3 boundary-policing citation (S3): the exponent identification is
   regulator-dependent; consumed as a restriction on what this note may
@@ -640,6 +662,6 @@ Expected result (deterministic, pure Python stdlib, runtime well under
 one minute):
 
 ```text
-Breakdown: A=9 B=11 C=7 D=2
+Breakdown: A=10 B=11 C=6 D=2
 TOTAL: PASS=29 FAIL=0
 ```

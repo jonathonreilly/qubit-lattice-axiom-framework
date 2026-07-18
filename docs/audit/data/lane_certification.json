@@ -369,7 +369,7 @@
         },
         {
           "claim_id": "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
@@ -2899,6 +2899,6 @@
       "uncertified_count": 662
     }
   ],
-  "repo_head": "7125cdc4fcb6bacdebf415f4160a05b4c473ecb3",
+  "repo_head": "b94a8d1f0ca6384331d3237f568176f2bb592937",
   "schema": "lane_certification_v2"
 }

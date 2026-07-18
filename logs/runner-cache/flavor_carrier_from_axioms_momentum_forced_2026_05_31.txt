@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py
-runner_sha256: 85d76015914d4e7ff2918d29313f1a30fe7bd9e4c7a05db544962251825ce7a0
+runner_sha256: d3ac60c66d4bfa508867fe00769d7a42cacde9fc48f296e28c231325ea696972
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.33
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 [PASS] A1 the 3 hw=1 corners carry DISTINCT joint translation characters (-1,1,1),(1,-1,1),(1,1,-1)
@@ -18,9 +18,9 @@ status: ok
        Wilson mass by hw = {0:0, 1:2, 2:4, 3:6} on this supplied comparison operator
 [PASS] C1 delta=L_3(1,2)=2/9 (equivariant-eta/Atiyah-Bott density), distinct from the bare doublet character omega+omega^2=-1
        L_3(1,2)=0.222222; bare char=-1.0
-[PASS] D1 derive Q(F)=Tr(F^2)/Tr(F)^2 = 1/3 + (2/3)|b|^2/a^2 from F=aI+b(J-I)
+[PASS] D1 derive Q(F)=Tr(F^2)/Tr(F)^2 = 1/3 + (2/3)b^2/a^2 for real F=aI+b(J-I)
        Tr F=3*a_sym, Tr F^2=3*a_sym**2 + 6*b_sym**2, Q=(a_sym**2 + 2*b_sym**2)/(3*a_sym**2)
-[PASS] D2 basepoint r=|b|^2/a^2 is FREE: r=1/2->Q=2/3, r=1->Q=1; unconstrained by corner kinematics
+[PASS] D2 basepoint r=b^2/a^2 is FREE: r=1/2->Q=2/3, r=1->Q=1; unconstrained by corner kinematics
        discrete pole/corner structure fixes delta=2/9 only; the continuous Yukawa modulus r is a separate input
 [PASS] E0 parent source declares the canonical open_gate author hint
        source metadata keeps the combined parent open

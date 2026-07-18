@@ -27,9 +27,10 @@ basis while the neutrino operator is `C_3`-structured. Then:
 - `V_CKM = U_up^dagger U_dn = I` in the exactly aligned case;
 - a supplied small rotation of one quark basis gives a near-diagonal Cabibbo
   block;
-- the `C_3` singlet vector `W=(1,1,1)/sqrt(3)` is a trimaximal PMNS column
-  when the neutrino eigenbasis is the `C_3` character basis relative to the
-  supplied charged-lepton basis.
+- a supplied Hermitian circulant neutrino matrix with simple spectrum has the
+  full `C_3` character basis as its eigenbasis; relative to the supplied
+  charged-lepton basis, every squared-modulus PMNS entry is `1/3` (and hence
+  every column is trimaximal).
 
 The shared-circulant permutation result is the exact upstream algebraic fact in
 [`QUARK_C3_CIRCULANT_SOURCE_LAW_BOUNDARY_NOTE_2026-04-28`](QUARK_C3_CIRCULANT_SOURCE_LAW_BOUNDARY_NOTE_2026-04-28.md).
@@ -78,11 +79,12 @@ The runner verifies seven positive finite statements:
 2. aligned quark eigenbases give the identity;
 3. a supplied small rotation gives the displayed Cabibbo block;
 4. the displayed CKM matrix has the reported column profiles;
-5. the supplied `C_3` neutrino basis contains a trimaximal column relative to
-   the supplied charged-lepton basis;
-6. the displayed PMNS matrix has the reported off-diagonal entries;
+5. the supplied Hermitian circulant neutrino matrix commutes with `C_3`, has
+   simple spectrum, and its eigenbasis consists of three trimaximal columns
+   relative to the supplied charged-lepton basis;
+6. every squared-modulus entry of the displayed PMNS matrix is `1/3`;
 7. every coordinate-projector expectation on the three Fourier characters is
-   exactly `1/3` numerically.
+   `1/3` to numerical precision.
 
 Run:
 

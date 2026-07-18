@@ -19,7 +19,9 @@ Verifies:
   (1) both CIRCULANT on a shared C3 -> CKM is a permutation;
   (2) aligned mass eigenbases (U_up=U_dn=I) -> CKM = identity;
   (3) a small registered deviation -> small Cabibbo CKM with trimaximal-column count zero;
-  (4) C3-structured neutrino vs corner-basis charged lepton -> large PMNS WITH a column;
+  (4) a simple-spectrum Hermitian circulant neutrino matrix vs a corner-basis
+      charged lepton -> the full C3 character basis and a PMNS matrix whose
+      squared-modulus entries are all 1/3;
   (5) every coordinate-projector expectation on the three Fourier characters is 1/3.
 """
 
@@ -43,8 +45,6 @@ def check(name, condition, detail=""):
 
 w = np.exp(2j * np.pi / 3)
 C = np.array([[0, 1, 0], [0, 0, 1], [1, 0, 0]], dtype=complex)
-J = np.ones((3, 3))
-P0 = J / 3                                          # C3-singlet projector (= |W><W|)
 
 
 def eigb(H):
@@ -86,14 +86,18 @@ def main() -> int:
     check("CKM trimaximal-column count equals zero on the displayed matrix",
           len(trimax_cols(Vckm)) == 0)
 
-    # ---- (4) C3-structured neutrino vs corner-basis charged lepton -> large + column ----
-    rng = np.random.default_rng(1); A = rng.standard_normal((3, 3)); A = A + A.T
-    Mnu = 2 * P0 + (np.eye(3) - P0) @ A @ (np.eye(3) - P0)   # C3-structured (W an eigenvector)
+    # ---- (4) simple-spectrum Hermitian circulant -> full C3 character basis ----
+    b_nu = 0.3 + 0.4j
+    Mnu = 2 * np.eye(3) + b_nu * C + b_nu.conjugate() * C.conj().T
+    nu_eigs = np.linalg.eigvalsh(Mnu)
+    simple_spectrum = np.min(np.diff(nu_eigs)) > 1e-8
+    commutes_with_c3 = np.allclose(Mnu @ C, C @ Mnu)
     Upmns = np.abs((np.eye(3)).conj().T @ eigb(Mnu)) ** 2
-    check("C3-structured neutrino vs corner-basis charged lepton -> PMNS has a TRIMAXIMAL column",
-          len(trimax_cols(Upmns)) >= 1, detail=f"col={trimax_cols(Upmns)}")
-    check("PMNS is LARGE (off-diagonal O(1)), unlike CKM",
-          Upmns.max(axis=1).min() < 0.8)
+    check("simple-spectrum Hermitian circulant neutrino matrix -> full C3 character eigenbasis",
+          commutes_with_c3 and simple_spectrum and len(trimax_cols(Upmns)) == 3,
+          detail=f"trimaximal_cols={trimax_cols(Upmns)}")
+    check("PMNS squared-modulus matrix is exactly the uniform 1/3 profile numerically",
+          np.allclose(Upmns, np.full((3, 3), 1 / 3)))
 
     # ---- (5) finite-profile check: exact uniform DFT coordinate profiles ----
     Fm = np.array([[np.exp(2j * np.pi * x * k / 3) for x in range(3)] for k in range(3)]) / np.sqrt(3)
@@ -106,7 +110,7 @@ def main() -> int:
     print("=" * 72)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL:
-        print("VERDICT: CKM readout-context conditional FAILED.")
+        print("CHECK FAILURE: one or more finite matrix assertions were not satisfied.")
         return 1
     print("SUMMARY: small-CKM-vs-large-PMNS maps to a supplied readout-context misalignment")
     print("(conditional on aligned quark bases and a C3-structured neutrino basis).")

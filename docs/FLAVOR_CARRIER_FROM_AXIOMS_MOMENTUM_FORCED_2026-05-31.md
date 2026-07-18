@@ -90,13 +90,14 @@ The runner independently checks the finite cyclotomic density equality
 L_3(1,2) = 2/9
 ```
 
-and, for the displayed abstract circulant family `F=aI+b(J-I)`,
+and, for the displayed real symmetric circulant family
+`F=aI+b(J-I)` with real `a != 0` and `b`,
 
 ```text
 Tr(F) = 3a,
 Tr(F^2) = 3a^2 + 6b^2,
 Q(F) = Tr(F^2)/Tr(F)^2 = 1/3 + (2/3)r,
-r = |b|^2/a^2.
+r = b^2/a^2.
 ```
 
 The points `r=1/2` and `Q=2/3` obey the displayed algebraic relation. Physical

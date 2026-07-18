@@ -98,20 +98,21 @@ def main():
         abs(L12 - 2.0 / 9.0) < 1e-12 and abs((W + W ** 2) + 1) < 1e-12,
         f"L_3(1,2)={L12.real:.6f}; bare char={float((W+W**2).real):.1f}"))
 
-    a_sym, b_sym = sp.symbols("a_sym b_sym", positive=True, real=True)
+    a_sym = sp.symbols("a_sym", nonzero=True, real=True)
+    b_sym = sp.symbols("b_sym", real=True)
     J3 = sp.ones(3)
     F = a_sym * sp.eye(3) + b_sym * (J3 - sp.eye(3))
     tr_F = sp.simplify(sp.trace(F))
     tr_F2 = sp.simplify(sp.trace(F * F))
     Q_F = sp.simplify(tr_F2 / (tr_F ** 2))
     passed.append(check(
-        "D1 derive Q(F)=Tr(F^2)/Tr(F)^2 = 1/3 + (2/3)|b|^2/a^2 from F=aI+b(J-I)",
+        "D1 derive Q(F)=Tr(F^2)/Tr(F)^2 = 1/3 + (2/3)b^2/a^2 for real F=aI+b(J-I)",
         tr_F == 3 * a_sym
         and tr_F2 == 3 * a_sym ** 2 + 6 * b_sym ** 2
         and sp.simplify(Q_F - (sp.Rational(1, 3) + sp.Rational(2, 3) * (b_sym ** 2 / a_sym ** 2))) == 0,
         f"Tr F={tr_F}, Tr F^2={tr_F2}, Q={Q_F}"))
     passed.append(check(
-        "D2 basepoint r=|b|^2/a^2 is FREE: r=1/2->Q=2/3, r=1->Q=1; unconstrained by corner kinematics",
+        "D2 basepoint r=b^2/a^2 is FREE: r=1/2->Q=2/3, r=1->Q=1; unconstrained by corner kinematics",
         abs((1 / 3 + 2 / 3 * 0.5) - 2 / 3) < 1e-12 and abs((1 / 3 + 2 / 3 * 1.0) - 1.0) < 1e-12,
         "discrete pole/corner structure fixes delta=2/9 only; the continuous Yukawa modulus r is a separate input"))
 

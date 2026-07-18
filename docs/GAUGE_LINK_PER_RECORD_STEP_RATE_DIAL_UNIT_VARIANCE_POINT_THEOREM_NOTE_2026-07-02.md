@@ -25,10 +25,10 @@ dimensionless parameter the class carries, whose value `tau = 1/2` per
 step coincides, under the explicitly defined leading map
 `tau_lead(beta)=N_c/beta`, with the unit-variance point `beta = 2 N_c`?
 
-Answer, proved below: composition conserves the rate exactly; the rate is
-the **complete surviving invariant** of step composition (two different
-microscopic step kernels calibrated to the same rate become
-indistinguishable under refinement — form is forgotten, the rate is kept);
+Answer, proved below: composition conserves the heat-kernel rate exactly; two
+specified microscopic step kernels calibrated to the same fundamental-block
+rate show shrinking cross-kernel deviations on the adjoint and sextet blocks
+under three stated refinements;
 every named structural premise of the lane is **rate-blind**; the rate is
 dimensionless, so the approved scale-reference primitive — which by its
 own declaration carries "zero dimensionless content" — does not cover it;
@@ -73,10 +73,11 @@ w_R(tau) = exp(-tau C_2(R)),
 ```
 
 with `C_2` the half-trace Casimir, and carries exactly one dimensionless
-parameter: the per-record-step rate `tau > 0`. The record-step counter is
-the axiom-level record count (an integer count; not rescalable), and the
-group metric is the rigidity-fixed trace form (not rescalable), so `tau`
-is a sharp dimensionless number, not a units artifact.
+parameter: the per-record-step rate `tau > 0`. This packet stipulates an
+integer per-record-step index, and the group metric is the rigidity-fixed
+trace form. Thus `tau` is well defined relative to that stipulated step
+index. A different coarse-grained index changes the per-step rate by the rule
+stated in the Boundary; no absolute microscopic step resolution is claimed.
 
 ## Claim
 
@@ -93,16 +94,17 @@ map `tau_lead(beta):=N_c/beta`. The exact arithmetic layer below concerns this
 defined leading map, not an exact finite-`beta` equality
 `tau_eff=tau_lead`; nothing is imported from the transport row.
 
-**Theorem R1 (the rate is the complete surviving invariant).**
+**Theorem R1 (exact rate additivity and tested cross-kernel convergence).**
 (i) Composition adds rates exactly: `w_R(tau_1) w_R(tau_2) =
 w_R(tau_1 + tau_2)` (exact in exponents). (ii) Cross-kernel collapse: two
 different microscopic step kernels — the Wilson-type member and an
 eigenphase-Gaussian member — calibrated to the same rate on the
-fundamental block alone, agree on all other tested blocks of the composed
-kernel, with deviations strictly shrinking under step refinement at fixed
-accumulated rate. One calibrated number predicts every block: the
-composed dynamics remembers the accumulated rate and forgets every other
-microscopic detail of the step kernel.
+fundamental block alone, show shrinking deviations on the adjoint and sextet
+blocks of the composed kernel under the three stated refinements at fixed
+accumulated rate. One calibrated number predicts those two tested blocks to
+the stated tolerance for these two kernel families. This finite exhibit is
+consistent with diffusive universality; it does not prove that every kernel,
+block, or microscopic detail collapses.
 
 **Theorem R2 (premise rate-blindness).** Each named premise of the class
 — positivity/record-compatibility, covariant-channel (class-function)
@@ -146,7 +148,7 @@ is supplied by it." Therefore the primitive does **not** cover the rate:
 `tau` is not a units conversion, and identifying `tau = 1/2` is not
 discharged by the approved dimensionful reference. The rate is a genuine
 dimensionless residual of the dynamics lane — a dial with `tau = 1/2` as
-its distinguished heat-kernel setting (unit variance per record step). The
+its distinguished heat-kernel setting (unit variance per record step).
 No coordinate, magnetic, or physical-coupling identification is inferred or
 forced by the lane's premises.
 
@@ -211,15 +213,14 @@ This note does not claim:
 - a continuum running-coupling value or phenomenological coupling;
 - an audit verdict or any effective-status promotion.
 
-Step-counter remark: the per-step rate is stated relative to the
-axiom-level record counter (records are countable; the readout `I` is
-additive). Coarse-graining `k` micro-steps into one macro-step multiplies
-the rate by the integer `k`; no continuum step limit is claimed or
-needed.
+Step-counter remark: the per-step rate is stated relative to the stipulated
+integer step index used by this packet. Coarse-graining `k` micro-steps into
+one macro-step multiplies the rate by `k`; no continuum step limit or uniquely
+preferred microscopic step resolution is claimed.
 
 The forward surface this opens: with the form conditional on the named
-dynamical premise and the rate now isolated as the single dimensionless
-residual, a native derivation of the per-step update — supplying both the
+dynamical premise and the rate isolated within the displayed heat-kernel
+family, a native derivation of the per-step update — supplying both the
 premise and the rate from admissibility/record constraints — is the
 remaining derivation surface of this program; it is outside this row.
 
@@ -229,10 +230,9 @@ The packet would fail if any of the following were true:
 
 - the supplied Wilson member's constructed rate failed the asymptotic law
   `tau_eff/(N_c/beta) -> 1` (R0);
-- composition failed to add rates exactly, or the cross-kernel collapse
+- composition failed to add rates exactly, or the tested cross-kernel convergence
   failed (deviations not shrinking, or a single calibrated rate failing
-  to predict the other blocks) — the rate would then not be the complete
-  surviving invariant (R1);
+  to predict the two nonfundamental blocks) — the finite R1 exhibit would fail;
 - some structural premise of the class selected a rate (pass patterns
   differing across `tau`), or a contrast witness failed to break its
   named premise (R2);

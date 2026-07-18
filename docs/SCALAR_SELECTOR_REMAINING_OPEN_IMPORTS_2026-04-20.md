@@ -40,7 +40,7 @@ physical Brannen-phase bridge by itself.
 
 | Import | Lane | Current status | What closes it |
 |---|---|---|---|
-| Koide relation `Q = 2/3` | κ, θ | executable Frobenius-isotype / AM-GM support package isolates the Koide point as the unique extremum of the admitted block-total functional, but the physical/source-law extremal-principle bridge remains open | derive why the physical charged-lepton packet must extremize the block-total Frobenius functional, or an equivalent accepted source law that forces the same point |
+| Koide relation `Q = 2/3` | κ, θ | executable Frobenius-isotype / AM-GM support package isolates the Koide point as the unique extremum of the supplied block-total functional, but the physical/source-law extremal-principle bridge remains open | derive why the physical charged-lepton packet must extremize the block-total Frobenius functional, or an equivalent accepted source law that forces the same point |
 | Brannen phase `δ = 2/9` on the physical base | θ | executable APS / ABSS support package isolates the exact ambient topological value `η = 2/9`, but the physical selected-line Brannen-phase bridge remains open | derive `δ_physical = η_APS`, equivalently an ambient one-clock `3+1` transport / endpoint / Wilson law whose selected-line pullback is the physical Brannen phase |
 | Selected-line witness ratio `w/v ≈ 4.101` | m_* (selected-line point) | conditionally pinned by the exact selected-line scalar-phase bridge once the physical Brannen phase is fixed; still open because the Brannen-phase bridge is open | the same physical Brannen-phase bridge that closes `δ = 2/9`, or an equivalent ambient endpoint law that fixes the selected-line point directly |
 
@@ -54,8 +54,9 @@ physical Brannen-phase bridge by itself.
   `docs/DM_ABCC_CHAMBER_BOUND_DERIVATION_NOTE_2026-04-20.md`.
 - **MRU demotion closed.** The SO(2)-quotient is **not**
   retained-derived from the observable principle; MRU is now supplementary
-  only, and the primary κ route is the spectrum/operator bridge plus the
-  block-total Frobenius measure. See
+  only. The spectrum/operator row is abstract Fourier algebra and the
+  block-total row is supplied-functional support; neither supplies the open
+  physical carrier and scalar-measure selector. See
   `docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`.
 - **Basin enumeration completeness closed.** Basin enumeration completeness is now certified in
   `archive_unlanded/dm-abcc-finite-search-salvage-2026-04-30/DM_ABCC_BASIN_ENUMERATION_COMPLETENESS_THEOREM_NOTE_2026-04-20.md`.
@@ -324,7 +325,8 @@ Nature-grade statement for this cycle is:
 > extremal-principle bridge, (ii) an executable ABSS fixed-point /
 > topological-robustness support stack that isolates the exact ambient APS
 > value `η = 2/9` but still leaves open the physical Brannen-phase bridge, (iii) an exact
-> Fourier-bridge algebraic reduction of operator-side κ = 2 to spectrum-side Q = 2/3,
+> exact abstract equivalence of the Fourier and coordinate polynomial zero
+> loci, without a physical spectrum/operator or mass readout,
 > (iv) a Sylvester-inertia reduction of A-BCC, now closed on the retained
 > measurement framework via a multi-observable sigma-chain that combines
 > retained Cl(3)/Z³ theorems with the PMNS
@@ -343,14 +345,14 @@ The cycle-2 housekeeping imports are now closed, but the package surface still
 has three live frontier items: the Koide extremal-principle bridge, the
 physical Brannen-phase bridge, and the PMNS angle-triple point-selection law.
 
-## §3 Reproduction of current retained-conditional state
+## §3 Reproduction of the current conditional diagnostic state
 
-All runners currently pass. For each of the four Tier-1 lanes
-the primary closure runner and its verification counts are:
+All runners currently pass. For each of the four Tier-1 lanes the principal
+diagnostic runner and its verification counts are:
 
 | Lane | Primary runner | PASS | Notes |
 |---|---|---|---|
-| Koide κ (spectrum/operator bridge) | `frontier_koide_kappa_spectrum_operator_bridge_theorem.py` | 9 | exact sympy identity `a_0² − 2|z|² = 3(a² − 2|b|²)` |
+| Abstract Hermitian-circulant Fourier invariant | `frontier_koide_kappa_spectrum_operator_bridge_theorem.py` | 12 normal / 10 independent / 10 hostile | exact finite identity `a_0² − 2|z|² = 3(a² − 2|b|²)`; no physical mass/carrier interpretation |
 | Koide κ (block-total Frobenius corroboration) | `frontier_koide_kappa_block_total_frobenius_measure_theorem.py` | 16 | independent functional reaching same `κ = 2` |
 | Koide θ (Berry identification on selected line) | `frontier_koide_berry_phase_theorem.py` | 24 | ambient-S² calculation § + selected-line CP¹ § + natural-selector no-go § |
 | Koide θ (scalar-phase bridge) | `frontier_koide_selected_line_cyclic_response_bridge.py` | 20 | `κ_sel(δ)` exact identity |

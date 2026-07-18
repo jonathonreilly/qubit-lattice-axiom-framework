@@ -74,7 +74,7 @@ The runner verifies:
 - cached summaries are present for each stack layer;
 - the directed-certificate layer consumes the repaired
   `SUMMARY: PASS=64 FAIL=0` row-bucketing certificate and the stack-map layer
-  consumes the repaired `SUMMARY: PASS=52 FAIL=0` authority-map certificate;
+  consumes the repaired `SUMMARY: PASS=53 FAIL=0` authority-map certificate;
 - the stack has four `exact-support` entries and two `no-go` entries;
 - no audit verdict, audit-data write, retained/promoted claim, unsupplied
   kernel selection, Record-derived rule/target, sample-as-law, stable-setting
@@ -92,7 +92,7 @@ corresponding cached runner logs:
 | #2856 | `SUMMARY: PASS=39 FAIL=0` |
 | #2858 | `SUMMARY: PASS=36 FAIL=0` |
 | #2861 | `SUMMARY: PASS=30 FAIL=0` |
-| #2864 | `SUMMARY: PASS=52 FAIL=0` |
+| #2864 | `SUMMARY: PASS=53 FAIL=0` |
 
 Run:
 

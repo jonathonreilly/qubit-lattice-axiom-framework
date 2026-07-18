@@ -146,6 +146,11 @@ def validate_packet(packet: MatrixPacket) -> None:
             raise HypothesisViolation(f"T_{index} has the wrong dimension")
         if not matrix_equal(generator, generator.conjugate().T):
             raise HypothesisViolation(f"T_{index} is not Hermitian")
+    for index, coefficient in enumerate(packet.coefficients):
+        if sp.simplify(coefficient).is_real is not True:
+            raise HypothesisViolation(
+                f"f_{index} is not a provably real coefficient"
+            )
     gram = sp.Matrix(
         [
             [sp.simplify(sp.trace(left * right)) for right in packet.generators]
@@ -181,7 +186,11 @@ def certify_by_derivatives(packet: MatrixPacket) -> TaylorCertificate:
     trace_a = sp.simplify(sp.trace(matrix_a))
     trace_a2 = sp.expand(sp.trace(matrix_a**2))
     trace_a4 = sp.expand(sp.trace(matrix_a**4))
-    d0 = sp.Integer(0)
+    # For Z(x)=1-Tr exp(i x A)/n, Z^(k)(0)=-(i^k/n)Tr(A^k).
+    # D=Re Z.  Hermiticity makes Tr(A) real, hence Re(-i Tr(A)/n)=0.
+    # D(0) is evaluated from the defining deficit at x=0, not assigned.
+    zero_exponential = (sp.I * sp.Integer(0) * matrix_a).exp()
+    d0 = sp.simplify(1 - sp.re(sp.trace(zero_exponential)) / n)
     d1 = sp.simplify(sp.re(-sp.I * trace_a / n))
     d2 = sp.simplify(sp.re(trace_a2 / n))
     return TaylorCertificate(
@@ -214,6 +223,20 @@ def expect_rejection(
     if record_check:
         check(label, ok, detail)
     return ok, detail
+
+
+def formal_rescaled_quadratic_term() -> tuple[sp.Expr, sp.Expr, tuple[sp.Symbol, ...]]:
+    """Derive the rescaled x^2 F2 term from D''=Tr(A^2)/n and Tr(A^2)=F2/2."""
+    x, f2_symbol, w, s = sp.symbols("x F2 w s", real=True)
+    dimension = sp.symbols("n", integer=True, positive=True)
+    trace_a2 = sp.symbols("trace_A2", real=True)
+    d2_from_trace = trace_a2 / dimension
+    quadratic_term = (d2_from_trace / 2) * x**2
+    rescaled = sp.expand(w * quadratic_term.subs(x, s * x)).subs(
+        trace_a2, f2_symbol / 2
+    )
+    coefficient = sp.Poly(rescaled, x, f2_symbol).coeff_monomial(x**2 * f2_symbol)
+    return rescaled, sp.simplify(coefficient), (x, f2_symbol, w, s, dimension)
 
 
 def normal_route() -> None:
@@ -251,7 +274,8 @@ def normal_route() -> None:
     check("A9 the scalar deficit has fourth derivative -cos(y)", sp.diff(scalar_deficit, y, 4) == -sp.cos(y))
     check(
         "A10 the fourth derivative is globally bounded by one on the real line",
-        sp.trigsimp(1 - sp.cos(y) ** 2) == sp.sin(y) ** 2,
+        sp.trigsimp(1 - sp.cos(y) ** 2) == sp.sin(y) ** 2
+        and sp.ask(sp.Q.nonnegative(sp.sin(y) ** 2)) is True,
         "1-cos(y)^2=sin(y)^2>=0",
     )
     matrix_a = matrix_from_packet(packet)
@@ -295,13 +319,12 @@ def normal_route() -> None:
         str(one_certificate.complex_linear_coefficient),
     )
 
-    w, s, dimension = sp.symbols("w s n", positive=True)
-    native = w * s**2 / (4 * dimension)
-    series_substitution = w * (s**2 / (4 * dimension))
+    rescaled_term, native, formal_symbols = formal_rescaled_quadratic_term()
+    _, _, w, s, dimension = formal_symbols
     check(
-        "A17 substitution in w D(sx) gives coefficient w*s^2/(4n)",
-        sp.simplify(native - series_substitution) == 0,
-        str(native),
+        "A17 extracting x^2*F2 after substitution in w D(sx) gives w*s^2/(4n)",
+        sp.simplify(native - w * s**2 / (4 * dimension)) == 0,
+        f"term={rescaled_term}, coefficient={native}",
     )
     check(
         "A18 scalar rescaling is quadratic in s",
@@ -357,7 +380,7 @@ def independent_route() -> None:
     )
 
     # Genuinely complex-off-diagonal Hermitian packet, reconstructed with
-    # NumPy eigenvalues and matrix exponentials rather than SymPy derivatives.
+    # NumPy eigenvalues and scalar cosine rather than SymPy derivatives.
     complex_packet = complex_offdiagonal_packet()
     validate_packet(complex_packet)
     complex_a_sp = matrix_from_packet(complex_packet)
@@ -374,21 +397,24 @@ def independent_route() -> None:
         np.allclose(eigenvalues, [-np.sqrt(13) / 2, 0.0, 0.0, np.sqrt(13) / 2], atol=1e-12),
         str(eigenvalues),
     )
-    h = 1e-4
-    d_h = float(np.mean(1.0 - np.cos(h * eigenvalues)))
-    d_2h = float(np.mean(1.0 - np.cos(2.0 * h * eigenvalues)))
-    d2_richardson = (16.0 * d_h - d_2h) / (6.0 * h**2)
+    reconstructions = []
+    for h in (1e-2, 1e-3, 1e-4):
+        # 1-cos(z)=2 sin^2(z/2) avoids cancellation at small z.
+        d_h = float(np.mean(2.0 * np.sin(0.5 * h * eigenvalues) ** 2))
+        d_2h = float(np.mean(2.0 * np.sin(h * eigenvalues) ** 2))
+        reconstructions.append((16.0 * d_h - d_2h) / (6.0 * h**2))
+    expected_d2 = f2 / (2.0 * complex_packet.dimension)
     check(
-        "B14 numerical finite-difference reconstruction gives D''(0)=F2/(2n)",
-        abs(d2_richardson - f2 / (2.0 * complex_packet.dimension)) < 1e-8,
-        f"reconstructed={d2_richardson:.12f}",
+        "B14 stable finite differences across three step sizes give D''(0)=F2/(2n)",
+        max(abs(value - expected_d2) for value in reconstructions) < 3e-9,
+        "reconstructed=" + ",".join(f"{value:.12f}" for value in reconstructions),
     )
     fourth_moment = float(np.sum(eigenvalues**4))
     test_points = (-9.0, -2.5, -0.1, 0.0, 0.3, 4.0, 11.0)
     residuals = []
     bounds = []
     for point in test_points:
-        d_value = float(np.mean(1.0 - np.cos(point * eigenvalues)))
+        d_value = float(np.mean(2.0 * np.sin(0.5 * point * eigenvalues) ** 2))
         residuals.append(abs(d_value - point**2 * float(np.sum(eigenvalues**2)) / (2.0 * complex_packet.dimension)))
         bounds.append(abs(point) ** 4 * fourth_moment / (24.0 * complex_packet.dimension))
     check(
@@ -455,14 +481,14 @@ def hostile_rejections(record_checks: bool = True) -> dict[str, tuple[bool, str]
     record("false-remainder-constant", reject_false_remainder_constant)
 
     nonhermitian = MatrixPacket(
-        2,
-        (sp.diag(sp.I, sp.sqrt(sp.Rational(3, 2))),),
-        (sp.Integer(1),),
+        1,
+        (sp.Matrix([[1 / sp.sqrt(2)]]),),
+        (sp.I * sp.sqrt(2),),
     )
 
     def reject_nonhermitian() -> None:
         matrix_a = matrix_from_packet(nonhermitian)
-        d1 = sp.simplify(sp.re(-sp.I * sp.trace(matrix_a) / 2))
+        d1 = sp.simplify(sp.re(-sp.I * sp.trace(matrix_a)))
         if d1 != 0:
             try:
                 validate_packet(nonhermitian)
@@ -482,8 +508,8 @@ def hostile_rejections(record_checks: bool = True) -> dict[str, tuple[bool, str]
     record("false-complex-linear-zero", reject_false_complex_linear_zero)
 
     def reject_wrong_rescaling_power() -> None:
-        w, s, n = sp.symbols("w s n", positive=True)
-        actual = w * s**2 / (4 * n)
+        _, actual, formal_symbols = formal_rescaled_quadratic_term()
+        _, _, w, s, n = formal_symbols
         proposed = w * s / (4 * n)
         if sp.simplify(actual - proposed) != 0:
             raise FormulaMismatch("substitution x->s*x is quadratic in s")
@@ -491,10 +517,11 @@ def hostile_rejections(record_checks: bool = True) -> dict[str, tuple[bool, str]
     record("wrong-rescaling-power", reject_wrong_rescaling_power)
 
     def reject_illicit_target_inference() -> None:
-        w, s, n = sp.symbols("w s n", positive=True)
+        _, actual, formal_symbols = formal_rescaled_quadratic_term()
+        _, _, w, _, _ = formal_symbols
         target_1, target_2 = sp.Rational(1, 3), sp.Rational(5, 7)
-        solution_1 = sp.solve(sp.Eq(w * s**2 / (4 * n), target_1), w)[0]
-        solution_2 = sp.solve(sp.Eq(w * s**2 / (4 * n), target_2), w)[0]
+        solution_1 = sp.solve(sp.Eq(actual, target_1), w)[0]
+        solution_2 = sp.solve(sp.Eq(actual, target_2), w)[0]
         if sp.simplify(solution_1 - solution_2) != 0:
             raise FormulaMismatch(
                 "native coefficient admits distinct external targets and cannot select one"

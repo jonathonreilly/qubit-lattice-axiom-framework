@@ -1,93 +1,19 @@
-"""
-Koide A1 Route D — Newton-Girard polynomial structure: bounded obstruction verification.
+"""Narrow Newton-Girard/free-ratio checks for a supplied circulant.
 
-Investigates whether the structural identification
+For H=aI+bC+conj(b)C^2 and a!=0, the runner recomputes
 
-    p_2 / e_1^2  =  2/3      (equivalently  e_1^2  =  6 e_2)
+  p_2/e_1^2 = 1/3 + (2/3)(|b|/a)^2,
+  e_1^2-6e_2 = 9(2|b|^2-a^2).
 
-(proposed in `KOIDE_A1_DERIVATION_STATUS_NOTE.md` Route D as the
-Newton-Girard polynomial-coefficient closure candidate for A1)
-can be derived from retained Cl(3)/Z^3 content with no empirical
-loading and no new axioms.
-
-Where (lambda_0, lambda_1, lambda_2) are the eigenvalues of the
-retained C_3-equivariant Hermitian circulant `H = aI + bC + bbarC^2`
-on hw=1, and (p_k, e_k) are the power sums and elementary symmetric
-polynomials in those eigenvalues:
-
-    p_1  =  lambda_0 + lambda_1 + lambda_2
-    p_2  =  lambda_0^2 + lambda_1^2 + lambda_2^2
-    e_1  =  p_1
-    e_2  =  lambda_0 lambda_1 + lambda_0 lambda_2 + lambda_1 lambda_2
-
-Newton-Girard identity (textbook):  p_2  =  e_1^2  -  2 e_2.
-
-VERDICT: STRUCTURAL OBSTRUCTION CONFIRMED.
-
-Five structural barriers are checked, distinct in profile from the
-norm-convention barriers that closed Routes E and F negatively:
-
-  Barrier D1 (Newton-Girard is identity, not constraint): the
-  Newton-Girard identity holds for ANY 3-tuple of (real or complex)
-  eigenvalues. It does not single out the A1 ratio. Counterexamples
-  with arbitrary (a, b) circulants verify the identity exactly, while
-  taking arbitrary values of p_2/e_1^2 in the half-line [1/3, infinity).
-  Thus the Newton-Girard machinery alone does not pick out 2/3.
-
-  Barrier D2 (Block-counting weight ambiguity): the polynomial
-  identity `e_1^2 = 6 e_2` corresponds to choosing the (1, 1)
-  multiplicity-weight extremum on Herm_circ(3); the equally-natural
-  (1, 2) dimensional-weight extremum gives `e_1^2 = 3 e_2` (kappa=1).
-  Both are retained natural functionals; the (1,1)-vs-(1,2) choice
-  is exactly the weight-class ambiguity flagged by the retained
-  KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM as a "minor
-  structural residue". Route D's "6 coefficient" reproduces this
-  ambiguity in polynomial-coefficient clothing, NOT escapes it.
-
-  Barrier D3 (Required additional input - Hermiticity / cyclic form):
-  the polynomial-coefficient derivation only yields p_2/e_1^2 = 2/3
-  on the Brannen circulant ansatz lambda_k = a + 2|b|cos(arg b + 2 pi k/3).
-  Without that ansatz (i.e., on a generic Hermitian operator outside
-  Herm_circ(3)), the Newton-Girard relations don't single out any
-  specific ratio. So Route D requires R1+R2 (retained) PLUS some
-  additional principle to fix the SPECIFIC value of |b|/a.
-
-  Barrier D4 (Polynomial-coefficient circularity): the polynomial form
-  V(Phi) = [e_1^2 - 6 e_2]^2 = 0 is ALGEBRAICALLY EQUIVALENT to the
-  Frobenius equipartition condition `3a^2 = 6|b|^2`. The two are the
-  same statement in different coordinates. Substituting Brannen
-  parameters into the polynomial gives `81(a^2 - 2|b|^2)^2`. So
-  "deriving 2/3 from polynomial structure" reduces to "deriving
-  a^2 = 2|b|^2 from Frobenius structure", which is exactly the
-  open A1 admission this route was supposed to close.
-
-  Barrier D5 (No selection from elementary symmetric extremization):
-  no natural symmetric-polynomial functional on (e_1, e_2, e_3) of
-  Herm_circ(3) without further input has its critical point at
-  e_1^2 = 6 e_2. A scan over candidate functionals (discriminant,
-  Tschirnhaus form coefficients, Vandermonde products, etc.) confirms
-  no extremization principle uniquely selects A1 from polynomial
-  invariants alone.
-
-These five barriers establish that the Newton-Girard formulation cannot
-close A1 from retained content alone. The polynomial-coefficient profile
-is materially DIFFERENT from Routes E/F (which fell to root-length /
-hypercharge normalization conventions), but it falls to a structurally
-analogous trap: the value 2/3 is a CONVENTION-DEPENDENT (multiplicity
-vs dimensional) weight-class choice, not a forced structural number.
-
-Source-note authority:
-[`docs/KOIDE_A1_ROUTE_D_NEWTON_GIRARD_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routed.md`](../docs/KOIDE_A1_ROUTE_D_NEWTON_GIRARD_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routed.md)
-
-Forbidden imports respected:
-- NO PDG observed values used as derivation input (anchor-only at end,
-  clearly marked).
-- NO lattice MC empirical measurements
-- NO fitted matching coefficients
-- NO new axioms
+Thus Newton-Girard identities alone do not select the target ratio, and the
+displayed polynomial zero is a rewrite of it. A finite named candidate scan is
+also performed: discriminant statements are scoped to the nondegenerate
+delta=2/9 slice, while depressed-cubic and ratio derivatives are checked at
+their stated points. No exhaustive claim about all symmetric-polynomial
+functionals or all cited-content routes is made. Sibling-route tables, prose
+synthesis, and PDG comparators are visible but uncounted.
 """
 
-from fractions import Fraction
 import math
 
 import numpy as np
@@ -146,7 +72,7 @@ def section1_newton_girard_identity():
     any 3-tuple of eigenvalues, and that A1 is equivalent to
     e_1^2 = 6 e_2 (i.e., p_2/e_1^2 = 2/3).
     """
-    print("Section 1 — Newton-Girard identity and the A1 polynomial form")
+    print("Section 1 — Newton-Girard identity and the Koide equipartition polynomial form")
     results = []
 
     # 1.1 — Symbolic verification: p_2 = e_1^2 - 2 e_2 (always)
@@ -190,20 +116,16 @@ def section1_newton_girard_identity():
         f"p_2/e_1^2 at degenerate = {Q_at_b0}",
     ))
 
-    # 1.5 — As r -> infinity, p_2/e_1^2 -> infinity (no upper bound)
-    # Show the ratio is unbounded by sampling
-    bounded = True
-    for r_val in [1.0, 10.0, 100.0]:
-        Q_at_r = float(Q_lin.subs([(a_sym, 1.0), (r_sym, r_val), (delta_sym, 0.5)]))
-        if not (Q_at_r > 1.0):
-            # at r=1 with a=1, p_2/e_1^2 = 1/3 + 2/3 = 1, not strictly > 1; let's check r=10
-            if r_val == 1.0:
-                continue
-            bounded = False
+    # 1.5 — The exact expression is 1/3 + (2/3)(r/a)^2.  For a > 0
+    # and r >= 0 this has image [1/3, infinity), rather than merely
+    # exhibiting a few sampled values.
+    ratio_image_certificate = sp.simplify(
+        Q_lin - (sp.Rational(1, 3) + sp.Rational(2, 3) * (r_sym / a_sym) ** 2)
+    ) == 0
     results.append(passfail(
         "p_2/e_1^2 takes ALL values in [1/3, infinity) as r/a varies",
-        bounded,
-        "Newton-Girard alone does not single out 2/3; ratio is continuous in r/a",
+        ratio_image_certificate,
+        "Exact nonnegative-square parametrization; Newton-Girard alone does not single out 2/3",
     ))
 
     return results
@@ -255,7 +177,7 @@ def section2_barrier_d1_identity_not_constraint():
     results.append(passfail(
         "Random circulants give p_2/e_1^2 over a wide range (NOT pinned at 2/3)",
         diff_range_wide,
-        f"min = {diff_min:.4f}, max = {diff_max:.4f} — ratio is FREE under retained R1+R2",
+        f"min = {diff_min:.4f}, max = {diff_max:.4f} — ratio is FREE under supplied R1+R2",
     ))
 
     # 2.3 — Counterexamples: explicit (a, b) circulants violating A1
@@ -290,10 +212,13 @@ def section2_barrier_d1_identity_not_constraint():
 # --------------------------------------------------------------------
 
 def section3_barrier_d2_weight_ambiguity():
-    """Show that the polynomial coefficient '6' in `e_1^2 = 6 e_2` is the
-    (1, 1) multiplicity-weight extremum, while the equally-natural
-    (1, 2) dimensional-weight extremum gives `e_1^2 = 3 e_2` (kappa=1).
-    The retained KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM
+    """Compare the polynomial coefficient '6' in `e_1^2 = 6 e_2`
+    with the distinct (1, 1) and (1, 2) block-total log laws.
+
+    The (1, 2) log law lands at kappa=1, but it is not represented by
+    `e_1^2 - 3e_2 = 0`; the checks below explicitly prevent that false
+    one-to-one identification.
+    The cited KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM
     (Section 4 "Residue") flags this exact same ambiguity.
     """
     print("Section 3 — Barrier D2: (1,1) vs (1,2) weight ambiguity in polynomial form")
@@ -360,17 +285,9 @@ def section3_barrier_d2_weight_ambiguity():
         f"different polynomial structure than V_(1,1) zero (κ=2 = A1)",
     ))
 
-    # 3.3 — Both V_(1,1) and V_(1,2) are polynomial-coefficient natural; the
-    # framework does not select between them without an additional principle.
-    # This is exactly the (1,1) vs (1,2) weight-class ambiguity called out
-    # by KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM as a "minor
-    # structural residue".
-    results.append(passfail(
-        "Polynomial-coefficient framing reproduces the (1,1)-vs-(1,2) weight ambiguity",
-        True,
-        "Choice between e_1^2 = 6 e_2 (A1) and e_1^2 = 3 e_2 (kappa=1) is the SAME convention "
-        "choice as multiplicity vs dimensional weighting in the block-total Frobenius theorem",
-    ))
+    print("  [BOUNDARY — not counted] The two block-total weightings select")
+    print("       different extrema. The tested polynomial coefficient zeros are")
+    print("       not in one-to-one correspondence with those extrema.")
 
     return results
 
@@ -384,7 +301,7 @@ def section4_barrier_d3_brannen_ansatz_required():
     p_2/e_1^2 = 2/3 on the Brannen circulant ansatz lambda_k = a + 2|b|cos(...).
     On a generic Hermitian operator (NOT cyclic-equivariant), Newton-Girard
     relations don't single out any specific ratio. Thus Route D requires
-    R1+R2 (retained C_3-equivariance and circulant form) PLUS an additional
+    R1+R2 (supplied C_3-equivariance and circulant form) PLUS an additional
     principle to fix |b|/a.
     """
     print("Section 4 — Barrier D3: Newton-Girard alone needs Brannen ansatz + extra input")
@@ -423,15 +340,9 @@ def section4_barrier_d3_brannen_ansatz_required():
         f"min (b=0) = {Q_at_b0}, A1 (r=a/sqrt(2)) = {Q_at_A1}, r=2a = {Q_at_r2}",
     ))
 
-    # 4.3 — Even with R1+R2 retained, the SPECIFIC ratio 2/3 requires a
-    # SEPARATE principle to fix r/a = 1/sqrt(2). Newton-Girard is a tool, not
-    # a derivation.
-    results.append(passfail(
-        "R1+R2 alone is insufficient — the specific value 2/3 needs another principle",
-        True,
-        "Newton-Girard provides the ALGEBRAIC FORM of the relation, but the SPECIFIC"
-        " value of p_2/e_1^2 is not pinned without external input",
-    ))
+    print("  [BOUNDARY — not counted] The computed free-ratio family shows that")
+    print("       the displayed circulant ansatz plus Newton-Girard identities do")
+    print("       not by themselves impose the value 2/3.")
 
     return results
 
@@ -447,10 +358,10 @@ def section5_barrier_d4_circularity():
     coordinates. Substituting Brannen parameters into the polynomial
     gives `81 (a^2 - 2|b|^2)^2`. So "deriving 2/3 from polynomial
     structure" reduces to "deriving a^2 = 2|b|^2 from Frobenius
-    structure", which is exactly the open A1 admission this route
+    structure", which is exactly the open equipartition condition this route
     was supposed to close.
     """
-    print("Section 5 — Barrier D4: polynomial-coefficient form is circular w.r.t. A1")
+    print("Section 5 — Barrier D4: polynomial-coefficient form rewrites equipartition")
     results = []
 
     # 5.1 — Symbolic identity: e_1^2 - 6 e_2 = 9 (2 r^2 - a^2)
@@ -479,27 +390,19 @@ def section5_barrier_d4_circularity():
         "Vanishing of V is exactly the Frobenius condition ‖aI‖_F^2 = ‖bC + bbarC^2‖_F^2",
     ))
 
-    # 5.3 — Therefore "deriving 2/3" via polynomial = "deriving a^2 = 2|b|^2"
-    # The two are coordinates on the same admission. Polynomial routing does
-    # not escape the A1 admission; it relabels it.
-    results.append(passfail(
-        "Polynomial-coefficient route is CIRCULAR w.r.t. A1 admission",
-        True,
-        "The 'forced 6 coefficient' = the Frobenius admission. Same admission, "
-        "different coordinates — not a derivation.",
-    ))
+    print("  [BOUNDARY — not counted] These two computed identities show that")
+    print("       imposing the displayed polynomial zero is equivalent to imposing")
+    print("       a^2 = 2|b|^2; the rewrite itself supplies no selection premise.")
 
     return results
 
 
 # --------------------------------------------------------------------
-# Section 6 — Barrier D5: no symmetric-polynomial extremization picks A1
+# Section 6 — Tested symmetric-polynomial extremizations do not pick A1
 # --------------------------------------------------------------------
 
 def section6_barrier_d5_no_extremization():
-    """Show that no natural symmetric-polynomial functional on
-    (e_1, e_2, e_3) of Herm_circ(3) without additional input has its
-    critical point at e_1^2 = 6 e_2.
+    """Test a named finite family of symmetric-polynomial functionals.
 
     Candidate symmetric-polynomial-only functionals tested:
       - Discriminant of the characteristic polynomial
@@ -507,9 +410,11 @@ def section6_barrier_d5_no_extremization():
       - Vandermonde product squared
       - Various rational ratios e_k^a / e_l^b
 
-    None has a critical-point equation that uniquely lands at A1.
+    None of these tested candidates has a critical-point equation that
+    uniquely lands at A1.  This is not an exhaustive no-go over all
+    symmetric-polynomial functionals.
     """
-    print("Section 6 — Barrier D5: no symmetric-polynomial-only extremization picks A1")
+    print("Section 6 — Tested symmetric-polynomial extremizations do not pick equipartition")
     results = []
 
     a_sym, r_sym, delta_sym = sp.symbols('a r delta', real=True, positive=True)
@@ -529,7 +434,7 @@ def section6_barrier_d5_no_extremization():
     # Check by using a specific delta
     disc_at_A1_specific = sp.simplify(disc_at_A1.subs(delta_sym, sp.Rational(2, 9)))
     results.append(passfail(
-        "Discriminant does NOT vanish at A1 (eigenvalues remain non-degenerate)",
+        "Discriminant is nonzero at A1 on the chosen nondegenerate delta=2/9 slice",
         sp.simplify(disc_at_A1_specific) != 0,
         f"Disc |_(A1, delta=2/9) = {disc_at_A1_specific}",
     ))
@@ -541,7 +446,7 @@ def section6_barrier_d5_no_extremization():
     d_disc_dr_at_A1 = sp.simplify(sp.trigsimp(d_disc_dr.subs(r_sym, a_sym / sp.sqrt(2))))
     d_disc_at_A1_specific = sp.simplify(d_disc_dr_at_A1.subs([(a_sym, 1), (delta_sym, sp.Rational(2, 9))]))
     results.append(passfail(
-        "d(Disc)/dr does NOT vanish at A1 — Disc is NOT extremized at A1",
+        "d(Disc)/dr is nonzero at A1 on the chosen delta=2/9 slice",
         sp.simplify(d_disc_at_A1_specific) != 0,
         f"d(Disc)/dr |_(A1) ≈ {float(d_disc_at_A1_specific):.4f}; A1 is not a critical point",
     ))
@@ -584,16 +489,9 @@ def section6_barrier_d5_no_extremization():
         f"d/dr [e_1^2/e_2] |_A1 ≈ {float(d_ratio_specific):.4f}",
     ))
 
-    # 6.7 — Therefore: no natural symmetric-polynomial functional has a
-    # critical-point equation that uniquely lands at A1. The "selection" of
-    # A1 must come from external input (block-counting weights, Frobenius
-    # equipartition, etc.), not from polynomial extremization alone.
-    results.append(passfail(
-        "No natural symmetric-polynomial extremization picks A1 uniquely",
-        True,
-        "Discriminant, Tschirnhaus form, e_1^2/e_2, etc., do NOT have critical "
-        "points at A1; the value 2/3 is a SELECTION not a DERIVATION",
-    ))
+    print("  [SCOPE — not counted] The named candidates tested above do not")
+    print("       extremize at A1. No exhaustive statement about every possible")
+    print("       symmetric-polynomial functional is claimed.")
 
     return results
 
@@ -610,23 +508,10 @@ def section7_comparison_routes_e_f():
     print("Section 7 — Comparison with Routes E (Kostant) and F (Casimir-difference)")
     results = []
 
-    # 7.1 — Routes E and F: norm-convention dependence
-    # Route E: |rho|^2 ∈ {1/4, 1/2, 1} under {|alpha|^2 = 1, 2, 4} normalizations
-    # Route F: T(T+1) - Y^2 ∈ {1/2, -1/4} under {Y_PDG = -1/2, Y_SU5 = -1} conventions
-    routeE_norms = [Fraction(1, 4), Fraction(1, 2), Fraction(1)]
-    routeF_norms = [Fraction(1, 2), Fraction(-1, 4)]
-    different_e = (routeE_norms[0] != routeE_norms[1]) and (routeE_norms[1] != routeE_norms[2])
-    different_f = (routeF_norms[0] != routeF_norms[1])
-    results.append(passfail(
-        "Route E (Kostant) values vary under root-length normalization: {1/4, 1/2, 1}",
-        different_e,
-        f"three Cartan-Killing convention give three different |rho|^2 values",
-    ))
-    results.append(passfail(
-        "Route F (Casimir-diff) values vary under hypercharge normalization: {1/2, -1/4}",
-        different_f,
-        f"PDG (Y_L = -1/2) gives 1/2; SU(5) (Y_L = -1) gives -1/4",
-    ))
+    # 7.1 — The sibling-route tables are imported context from their source
+    # notes, not recomputed by this runner and therefore not counted here.
+    print("  [CONTEXT — not counted] Route E/F normalization tables belong to")
+    print("       their sibling sources; this runner does not certify those values.")
 
     # 7.2 — Route D's trap: weight-class (1, 1) vs (1, 2)
     # multiplicity weighting: (1, 1) -> e_1^2 = 6 e_2 -> kappa = 2 (A1)
@@ -680,30 +565,16 @@ def section7_comparison_routes_e_f():
     # The key takeaway: BOTH choices V_(1,1) = e_1^2 - 6 e_2 and V_(1,2)-related
     # forms exist as natural polynomial forms; the framework does not select among them.
 
-    results.append(passfail(
-        "Route D weight ambiguity: (mu=1, nu=1) gives V = e_1^2 - 6 e_2; (mu=1, nu=2) gives different",
-        True,
-        "Both natural polynomial forms exist; selection requires extra input "
-        "(same as block-total Frobenius weight residue)",
-    ))
+    print("  [BOUNDARY — not counted] The (1,1) and (1,2) log laws select")
+    print("       different block-energy extrema; no polynomial-zero identification")
+    print("       for the (1,2) extremum is asserted.")
 
     # 7.3 — Materially different trap profile but structurally analogous
     # Route E/F trap: norm-convention dependence (continuous family of conventions)
     # Route D trap: weight-class choice (discrete family — multiplicity vs dimensional)
-    different_profile = True  # the profiles are clearly different
-    structurally_analogous = True  # both fail because the framework does not select a convention
-    results.append(passfail(
-        "Route D's trap profile is MATERIALLY different from Routes E/F",
-        different_profile,
-        "E/F: continuous root-length / hypercharge normalization;"
-        " D: discrete weight-class (1,1) vs (1,2)",
-    ))
-    results.append(passfail(
-        "But Route D's trap is STRUCTURALLY analogous: convention-dependent value",
-        structurally_analogous,
-        "All three routes: 'the value depends on a choice the framework "
-        "does not make'",
-    ))
+    print("  [COMPARISON — not counted] E/F vary normalization conventions;")
+    print("       the tested block-total laws vary discrete weights. This is a")
+    print("       descriptive comparison, not theorem evidence.")
 
     return results
 
@@ -746,19 +617,13 @@ def section8_falsifiability_anchor():
     Q_lin_target = 0.5
     fit_lin_ok = abs(Q_lin_anchor - Q_lin_target) < 1e-3
 
-    results.append(passfail(
-        "ANCHOR ONLY: PDG charged-lepton sqrt-mass Koide Q = 2/3",
-        fit_ok,
-        f"Q(PDG) = {Q_anchor:.6f}, target = 2/3 = {Q_target:.6f}",
-    ))
-    results.append(passfail(
-        "ANCHOR ONLY: PDG charged-lepton linear-eigenvalue Q_lin = 1/2 (Koide in lambda^2 = m form)",
-        fit_lin_ok,
-        f"Q_lin(PDG) = {Q_lin_anchor:.6f}, target = 1/2 = {Q_lin_target:.6f}",
-    ))
+    print(f"  [ANCHOR — not counted] Q(PDG) = {Q_anchor:.6f}; "
+          f"within 1e-3 of 2/3: {fit_ok}")
+    print(f"  [ANCHOR — not counted] Q_lin(PDG) = {Q_lin_anchor:.6f}; "
+          f"within 1e-3 of 1/2: {fit_lin_ok}")
 
     print("       NOTE: PDG match (Q ~ 2/3) confirms A1 is OBSERVATIONALLY consistent")
-    print("       but does NOT derive A1 from retained content. A1 admission unchanged.")
+    print("       but does NOT derive equipartition from the supplied premises. Premise surface unchanged.")
     print()
 
     return results
@@ -769,49 +634,22 @@ def section8_falsifiability_anchor():
 # --------------------------------------------------------------------
 
 def section9_obstruction_theorem():
-    """Verify the bounded-obstruction theorem statement: Route D cannot
-    close A1 from retained content because five independent barriers
-    (Newton-Girard identity-not-constraint, weight-class ambiguity,
-    Brannen-ansatz-required, polynomial circularity, no extremization)
-    each block the proposed derivation.
-    """
-    print("Section 9 — Bounded-obstruction theorem verification")
+    """State the narrow conclusion supported by Sections 1-7."""
+    print("Section 9 — Narrow obstruction synthesis")
     results = []
-
-    # All five barriers independently block closure
-    barrier_d1_blocks = True   # Newton-Girard is identity, not constraint (Sec 2)
-    barrier_d2_blocks = True   # (1,1)-vs-(1,2) weight ambiguity (Sec 3)
-    barrier_d3_blocks = True   # Brannen ansatz + extra input required (Sec 4)
-    barrier_d4_blocks = True   # polynomial-coefficient circularity (Sec 5)
-    barrier_d5_blocks = True   # no symmetric-polynomial extremization (Sec 6)
-
-    all_barriers = barrier_d1_blocks and barrier_d2_blocks and barrier_d3_blocks and barrier_d4_blocks and barrier_d5_blocks
-    results.append(passfail(
-        "All five structural barriers independently block Route D closure",
-        all_barriers,
-        "D1 (NG identity) + D2 (weight ambiguity) + D3 (Brannen needed) + D4 (circularity) + D5 (no extremization) = "
-        "no retained-content path to derive |b|^2/a^2 = 1/2 from Newton-Girard alone",
-    ))
-
-    print("       VERDICT: Route D Newton-Girard polynomial structure cannot close")
-    print("       A1 on the retained Cl(3)/Z^3 framework. The polynomial coefficient")
+    print("       VERDICT: Newton-Girard identities and the named candidate")
+    print("       functionals tested here do not select A1. The polynomial coefficient")
     print("       '6' (in V = e_1^2 - 6 e_2) is the Frobenius equipartition condition")
     print("       in different coordinates, NOT a derivation-from-axioms.")
     print()
     print("       The Newton-Girard formulation has a MATERIALLY DIFFERENT trap")
-    print("       profile from Routes E/F (discrete weight-class vs continuous norm-")
-    print("       convention), but it is STRUCTURALLY ANALOGOUS: both fail because")
-    print("       the framework does not select a single convention/weight-class.")
+    print("       profile from the tested Routes E/F examples (discrete block weights")
+    print("       versus normalization choices). No exhaustive cited-source no-go")
+    print("       is inferred from that comparison.")
     print()
-    print("       AC_φλ residual (from substep 4) is unaffected. The A1 admission")
+    print("       AC_φλ residual (from substep 4) is unaffected. The equipartition condition")
     print("       count remains UNCHANGED.")
     print()
-
-    results.append(passfail(
-        "Route D bounded-obstruction theorem holds",
-        all_barriers,
-        "Five-barrier structural argument: no closure path from retained content",
-    ))
 
     return results
 
@@ -822,7 +660,7 @@ def section9_obstruction_theorem():
 
 def main():
     print("=" * 70)
-    print("Koide A1 Route D — Newton-Girard Polynomial Structure Bounded Obstruction")
+    print("Newton-Girard Polynomial Candidate (historical Koide Route D) — Bounded Obstruction")
     print("Source note:")
     print("  docs/KOIDE_A1_ROUTE_D_NEWTON_GIRARD_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routed.md")
     print("=" * 70)
@@ -844,7 +682,7 @@ def main():
 
     print()
     print("=" * 70)
-    print(f"EXACT      : PASS = {n_pass}, FAIL = {n_fail}")
+    print(f"COMPUTED   : PASS = {n_pass}, FAIL = {n_fail}")
     print(f"BOUNDED    : PASS = 0, FAIL = 0")
     print(f"TOTAL      : PASS = {n_pass}, FAIL = {n_fail}")
     print("=== TOTAL: PASS=" + str(n_pass) + ", FAIL=" + str(n_fail) + " ===")
@@ -852,17 +690,14 @@ def main():
     print()
     print("Bounded-obstruction verdict:")
     if n_fail == 0:
-        print("  Route D structurally barred: Newton-Girard polynomial structure")
-        print("  cannot close |b|^2/a^2 = 1/2 from retained content alone. Five")
-        print("  independent structural barriers (NG identity-not-constraint +")
-        print("  weight-class ambiguity + Brannen ansatz + circularity +")
-        print("  no extremization) each block the proposed derivation.")
+        print("  Newton-Girard identities and the named candidate functionals")
+        print("  tested here do not select |b|^2/a^2 = 1/2. The exact identities")
+        print("  expose rewrites of the target condition, not a selection rule.")
         print()
-        print("  Trap profile: MATERIALLY DIFFERENT from Routes E/F (discrete")
-        print("  weight-class vs continuous norm convention), but STRUCTURALLY")
-        print("  ANALOGOUS (the framework doesn't select a unique convention).")
+        print("  The imported sibling-route comparison is descriptive and")
+        print("  uncounted; this runner certifies no universal trap-profile claim.")
         print()
-        print("  A1 admission count UNCHANGED. No new axiom proposed.")
+        print("  Premise and registry surfaces UNCHANGED. No new axiom proposed.")
         print()
         print("  Falsifiability anchor: PDG charged-lepton masses fit A1 at")
         print("  0.1% precision (consistent but NOT derivation).")

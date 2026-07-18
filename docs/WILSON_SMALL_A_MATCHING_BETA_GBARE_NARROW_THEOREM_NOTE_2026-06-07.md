@@ -1,6 +1,6 @@
 # Abstract Hermitian Matrix-Trace Deficit Taylor and Global Remainder Theorem
 
-**Date:** 2026-06-07. Clean-retention repair: 2026-07-18.
+**Date:** 2026-06-07. Abstract-matrix scope repair: 2026-07-18.
 **Claim type:** positive_theorem
 **Status authority:** independent audit lane only. This source note does not
 set, predict, or apply an audit verdict.
@@ -11,10 +11,17 @@ set, predict, or apply an audit verdict.
 
 ## Scope
 
-The stable paths are retained for claim identity and existing citations. The
-result itself is a native finite-dimensional matrix theorem. It has no
-comparison coefficient, parameter-selection rule, or interpretation outside
-the matrix problem defined below.
+The earlier version started from a supplied action, a supplied exponential
+dictionary, and a supplied continuum coefficient. Its algebra was correct
+inside that packet, but those inputs were not derived by the note. This repair
+removes every physical identification from the theorem and **withdraws** the
+prior conditional physical proposition on this row: the earlier
+Wilson-action/continuum reading is superseded, is no longer claimed at any
+strength here, and survives only in the row's archived audit history. The
+stable filename is kept so existing citations can be repaired in place; the
+row's live claim content is solely the native finite-dimensional matrix
+theorem below. It has no comparison coefficient, parameter-selection rule, or
+interpretation outside the matrix problem defined here.
 
 ## Hypotheses and definitions
 
@@ -55,7 +62,16 @@ Under exactly those hypotheses:
        <= |x|^4 Tr(A^4)/(24n).
    ```
 
-5. For arbitrary formal positive scalars `w,s`, rescaling alone gives
+5. For supplied real scalars `w,s`, rescaling alone gives the homogeneous
+   quadratic term
+
+   ```text
+   [x^2] w D(sx) = w s^2 F2/(4n).
+   ```
+
+   Equivalently, when `m>=1` and `f_a,w,s` are treated as commuting formal
+   indeterminates over the reals, the coefficient multiplying the named
+   quadratic form `x^2 F2` is
 
    ```text
    [x^2 F2] w D(sx) = w s^2/(4n).
@@ -63,7 +79,8 @@ Under exactly those hypotheses:
 
 Item 5 is only substitution `x -> sx` followed by multiplication by `w`.
 It does not compare the resulting coefficient with another expression and
-does not select either scalar.
+does not select either scalar. For the empty family, the first display is the
+zero identity; the separate coefficient-of-`F2` notation is simply omitted.
 
 ## Proof
 
@@ -131,8 +148,9 @@ multiplication prove item 5.
 - Tracelessness is not used. For any Hermitian `A`, even with
   `Tr(A) != 0`, the real-part derivative vanishes because
   `Re(i Tr A)=0`.
-- The positivity of formal `w,s` states their intended scalar domain; the
-  coefficient substitution itself is algebraic.
+- The real-scalar statement for `w,s` and its formal-polynomial restatement
+  use only commuting scalar multiplication; no positivity or invertibility is
+  needed.
 
 For comparison with the real-part statement only, the complex deficit
 
@@ -163,11 +181,11 @@ The proof already includes the following cases without extra assumptions:
 The runner provides independent proof and falsification routes:
 
 - `normal`: exact matrix derivatives, Gram contraction, the scalar remainder
-  mechanism, rescaling algebra, and the zero/rank-deficient/repeated/negative
-  and `n=1` cases;
+  mechanism, formal coefficient extraction, and the zero and `n=1` cases;
 - `independent`: a separate spectral power-series reconstruction plus a
-  numerical complex-off-diagonal Hermitian reconstruction that does not use
-  the normal route's expected-value table;
+  numerical complex-off-diagonal Hermitian reconstruction, including the
+  rank-deficient/repeated/negative cases, that does not use the normal route's
+  expected-value table;
 - `hostile`: recomputed mutations for a wrong Gram factor, omitted `1/n`,
   confusion of `D''(0)` with `[x^2]D`, a false fourth-order constant,
   non-Hermitian input, a false complex-deficit linear statement, a wrong
@@ -186,6 +204,11 @@ quadratic coefficient, global fourth-order bound, and the coefficient
 `w s^2/(4n)` of the formally rescaled expression. Any comparison target,
 parameter equation, preferred value, or interpretation outside this abstract
 matrix packet requires separate authority and remains outside this theorem.
+
+**Downstream-hygiene record (2026-07-18, PR #5502):** direct consumers were
+narrowed to the displayed matrix coefficient/remainder scope or had the
+dependency removed. Until a separately audited action/plaquette/continuum
+bridge exists, this row must not be cited for a physical normalization.
 
 ## Verification
 

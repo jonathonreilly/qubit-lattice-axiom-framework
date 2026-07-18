@@ -4,7 +4,7 @@
 This runner deliberately stays source-side. It does not read audit ledgers,
 audit queues, publication matrices, or effective-status files.
 
-Checked content (all constructed, nothing assigned):
+Checked content (constructed and explicitly defined; no dial value selected):
 
   K1  the temporal-gauge one-step per-link kernel of the supplied standard
       Wilson plaquette action, W_beta(M) = exp((beta/N_c) Re Tr M), is a
@@ -18,11 +18,11 @@ Checked content (all constructed, nothing assigned):
       generator basis carries (anchored here by sum_a T_a T_a = (4/3) I_3
       at the fundamental). Mechanism companions: U(1) with kernel
       e^{beta cos}: 2 beta eps_n -> n^2; SU(2): beta eps_j / 2 -> j(j+1).
-  K3  kernel coefficient: defining the conjugate-slot label by
-      eps_R = (g_E^2 / 2) C_2(R) (1 + O(1/beta)), the constructed values
-      satisfy beta * g_E^2 -> 2 N_c, derived inside this packet from K2.
-      The generator is a function of C_2 alone at leading order
-      (R-independence of the extracted dial).
+  K3  kernel coefficient: for each fixed nontrivial R, defining the
+      representation-indexed label exactly by
+      g_{E,R}^2(beta) = 2 eps_R(beta) / C_2(R), the constructed values
+      satisfy beta * g_{E,R}^2(beta) -> 2 N_c, derived from K2. The
+      finite-beta labels may depend on R; their leading coefficient does not.
   K4  normalization-point coincidence (exact rational layer): the leading
       dial map g_lead^2(beta) = 2 N_c / beta takes the value 1 exactly at
       beta = 2 N_c = 6, where the leading per-step generator is the
@@ -300,25 +300,25 @@ def section_E() -> dict[str, dict[float, float]]:
 # ---------------------------------------------------------------------------
 
 def section_F(fs: dict[str, dict[float, float]]) -> None:
-    print("\nSECTION F: dial transport — beta * g_E^2 -> 2 N_c, R-independent")
+    print("\nSECTION F: representation-indexed dial transport — beta * g_{E,R}^2 -> 2 N_c")
     print("-" * 78)
     lam = REPS["fund(1,0,0)"]
     C2 = float(casimir_half_trace(lam))
     bg = {b: b * (2.0 * su3_eps(lam, b) / C2) for b in (12.0, 24.0, 48.0)}
     check(
-        "beta * g_E^2 strictly decreasing toward 2 N_c = 6",
+        "beta * g_{E,fund}^2 strictly decreasing toward 2 N_c = 6",
         bg[12.0] > bg[24.0] > bg[48.0] > 6.0,
         f"values={bg[12.0]:.4f}, {bg[24.0]:.4f}, {bg[48.0]:.4f}",
     )
     r1 = 2.0 * bg[48.0] - bg[24.0]
-    check("transport Richardson(24,48): beta * g_E^2 hits 2 N_c = 6", abs(r1 - 6.0) < 8e-2, f"R1={r1:.5f}")
+    check("transport Richardson(24,48): beta * g_{E,fund}^2 hits 2 N_c = 6", abs(r1 - 6.0) < 8e-2, f"R1={r1:.5f}")
     r2 = (8.0 * bg[48.0] - 6.0 * bg[24.0] + bg[12.0]) / 3.0
-    check("transport Richardson2(12,24,48): beta * g_E^2 hits 2 N_c = 6", abs(r2 - 6.0) < 2e-2, f"R2={r2:.5f}")
+    check("transport Richardson2(12,24,48): beta * g_{E,fund}^2 hits 2 N_c = 6", abs(r2 - 6.0) < 2e-2, f"R2={r2:.5f}")
 
     for other in ("adj(2,1,0)", "sym(2,0,0)"):
         ratio = fs[other][48.0] / fs["fund(1,0,0)"][48.0]
         check(
-            f"extracted dial is R-independent at beta=48 ({other} vs fund)",
+            f"representation-indexed leading estimates agree at beta=48 ({other} vs fund)",
             abs(ratio - 1.0) < 5e-3,
             f"ratio={ratio:.6f}",
         )

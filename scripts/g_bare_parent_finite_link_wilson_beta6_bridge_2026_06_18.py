@@ -4,10 +4,11 @@
 This runner deliberately stays source-side. It does not read audit ledgers,
 audit queues, publication matrices, or effective-status files.
 
-The runner constructs both scalar slots from the supplied link/plaquette data
-and compares them without assigning ``g_wilson_sq = g_link_sq``. The checked
-content is algebraic; the same-slot convention is guarded on a separate meta
-surface:
+The runner constructs the link slot from supplied link/plaquette data. The
+matched slot is constructed conditionally from the action coefficient plus the
+separately supplied W-PHYS target; the runner compares them without assigning
+``g_wilson_sq = g_link_sq``. The checked content is algebraic; the same-slot
+convention is guarded on a separate meta surface:
 
   T1  plaquette exponent construction: for links built from canonical
       su(3) coordinates C at spacing a, the plaquette exponent is
@@ -29,7 +30,8 @@ surface:
       gamma*(beta)^2 = 2 N_c / beta for each tested beta (never assigned).
   T4  link slot, constructed: the canonical-coordinate readback of the
       constructed link via the principal logarithm gives s = 1.
-  T5  comparison: the two constructed slots agree at beta = 2 N_c and
+  T5  comparison: the constructed link slot and W-PHYS-conditional matched
+      slot agree at beta = 2 N_c and
       disagree at beta in {24, 3/2, 12} on identical link/plaquette data
       (mismatched-slot exhibit; pin equivalence gamma* = s iff
       beta = 2 N_c).
@@ -356,7 +358,7 @@ def section_D(cfg: FieldConfig, F_lat: np.ndarray) -> dict[float, float]:
         g2 = matched_slot_sq(cfg, beta, a, FF)
         g2_pred = 2.0 * N_C / beta
         check(
-            f"beta={beta}: constructed matched slot gamma*^2 -> 2 N_c / beta",
+            f"beta={beta}: W-PHYS-conditional matched slot gamma*^2 -> 2 N_c / beta",
             abs(g2 - g2_pred) / g2_pred < 5e-3,
             f"gamma*^2={g2:.6f}, pred={g2_pred:.6f}",
         )
@@ -373,7 +375,7 @@ def section_D(cfg: FieldConfig, F_lat: np.ndarray) -> dict[float, float]:
         )
         out[beta] = g2
 
-    # Convergence of the constructed matched slot at the algebraic pin
+    # Convergence of the W-PHYS-conditional matched slot at the algebraic pin
     # beta = 2 N_c. The trace-level
     # O(a) correction cancels by cyclicity (Tr(F [C, F]) = 0 for the linear
     # fields used here), so the remainder is higher order; the check asserts

@@ -1,307 +1,385 @@
-"""
-Frontier runner — Koide kappa spectrum-operator bridge theorem.
+#!/usr/bin/env python3
+"""Exact checks for the abstract Hermitian-circulant Fourier invariant.
 
-Companion to
-`docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`.
-
-Claim.  On the cyclic-compression bridge
-`H = a I + b C + bbar C^2  <->  circulant operator with Fourier eigenvalues
-a_0, z, zbar`, the exact symbolic identity
-
-    a_0^2 - 2 |z|^2  =  3 (a^2 - 2 |b|^2)
-
-holds identically on Herm_circ(3). Therefore spectrum-side Koide
-`Q = 2/3` (equivalently `a_0^2 = 2 |z|^2`) IS operator-side `kappa = 2`
-(equivalently `a^2 = 2 |b|^2`). No independent operator-side primitive
-is needed once the spectrum-side condition is supplied.
-
-Tasks exercised by the runner (T1 .. T9) use sympy for the symbolic
-bridge identity, a numerical realization at PDG charged-lepton masses,
-and a random-matrix family scan to rule out coincidence. Every PASS is
-keyed to a substantive computation; there are no hard-coded True values.
-
-  T1 Hermitian circulant construction is algebraically closed
-  T2 Eigenvalues lam_k = a + b omega^k + bbar omega^{-k} are real
-  T3 Bridge  a_0 = sqrt(3) a  (exact symbolic)
-  T4 Bridge  |z|^2 = 3 |b|^2  (exact symbolic)
-  T5 Bridge identity a_0^2 - 2|z|^2 = 3 (a^2 - 2 |b|^2)  (exact symbolic)
-  T6 PDG charged-lepton Q ~ 2/3
-  T7 PDG numerical kappa = a^2/|b|^2 ~ 2
-  T8 Bridge holds pointwise on 200 random Herm_circ(3) samples
-  T9 Bridge residual collapses Koide-condition equivalence
+The companion note is
+``docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md``.
+This runner has no physical mass, carrier, selector, P1, MRU, or empirical
+comparison input.
 """
 
 from __future__ import annotations
 
-import math
-from pathlib import Path
+import argparse
+from dataclasses import dataclass
 
-import numpy as np
 import sympy as sp
 
 
-PASS = 0
-FAIL = 0
+@dataclass
+class Score:
+    passed: int = 0
+    failed: int = 0
 
-ROOT = Path(__file__).resolve().parents[1]
-BRIDGE_NOTE = ROOT / "docs" / "KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md"
-DEMOTION_NOTE = ROOT / "docs" / "KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md"
-
-
-def check(label: str, cond: bool, detail: str = "") -> bool:
-    global PASS, FAIL
-    status = "PASS" if cond else "FAIL"
-    if cond:
-        PASS += 1
-    else:
-        FAIL += 1
-    suffix = f"  ({detail})" if detail else ""
-    print(f"  [{status}] {label}{suffix}")
-    return cond
+    def check(self, label: str, condition: bool, detail: str = "") -> None:
+        status = "PASS" if condition else "FAIL"
+        self.passed += int(condition)
+        self.failed += int(not condition)
+        suffix = f"  ({detail})" if detail else ""
+        print(f"  [{status}] {label}{suffix}")
 
 
-def normalize(text: str) -> str:
-    return " ".join(text.split()).lower()
+def matrix_zero(matrix: sp.Matrix) -> bool:
+    return all(sp.simplify(entry) == 0 for entry in matrix)
 
 
-# ---------------------------------------------------------------------------
-# T1 / T2 — Hermitian circulant construction and real eigenvalues
-# ---------------------------------------------------------------------------
+def matrix_nonzero(matrix: sp.Matrix) -> bool:
+    return any(sp.simplify(entry) != 0 for entry in matrix)
 
-print("Section A — symbolic Hermitian circulant and Fourier bridge")
 
-a_sym = sp.symbols("a", real=True)
-b1_sym, b2_sym = sp.symbols("b1 b2", real=True)
-b_sym = b1_sym + sp.I * b2_sym
+def exact_zero(expr: sp.Expr) -> bool:
+    return sp.simplify(sp.expand_complex(expr)) == 0
 
-omega = sp.exp(2 * sp.pi * sp.I / 3)
-C = sp.Matrix(
-    [
-        [0, 1, 0],
-        [0, 0, 1],
-        [1, 0, 0],
-    ]
-)
-I3 = sp.eye(3)
 
-H_sym = a_sym * I3 + b_sym * C + sp.conjugate(b_sym) * (C ** 2)
+def exact_nonzero(expr: sp.Expr) -> bool:
+    return sp.simplify(sp.expand_complex(expr)) != 0
 
-# T1 — Hermiticity symbolic
-Hdag = H_sym.H
-check(
-    "T1 Hermitian circulant: H = H^H symbolically",
-    sp.simplify(H_sym - Hdag) == sp.zeros(3, 3),
-)
 
-# Eigenvalues of the cyclic-compression bridge
-lam = []
-for k in range(3):
-    lk = a_sym + b_sym * omega ** k + sp.conjugate(b_sym) * sp.conjugate(omega ** k)
-    lam.append(sp.simplify(lk))
+def normal_mode(score: Score) -> None:
+    """Roots-of-unity diagonalization in the declared complex DFT basis."""
 
-# T2 — eigenvalues are real
-t2_real = all(sp.simplify(sp.im(lk)) == 0 for lk in lam)
-check(
-    "T2 Fourier eigenvalues lam_k are real",
-    t2_real,
-    detail=f"lam_k = {[sp.simplify(sp.re(lk)) for lk in lam]}",
-)
+    print("NORMAL — complex Fourier derivation")
+    a, x, y = sp.symbols("a x y", real=True)
+    b = x + sp.I * y
+    bbar = sp.conjugate(b)
+    sqrt3 = sp.sqrt(3)
+    omega = -sp.Rational(1, 2) + sp.I * sqrt3 / 2
+    identity = sp.eye(3)
+    cyclic_shift = sp.Matrix([[0, 1, 0], [0, 0, 1], [1, 0, 0]])
 
-lam_r = [sp.simplify(sp.re(lk)) for lk in lam]
-
-# ---------------------------------------------------------------------------
-# T3 / T4 / T5 — exact symbolic bridge identities
-# ---------------------------------------------------------------------------
-
-sqrt3 = sp.sqrt(3)
-a0 = sp.simplify((lam_r[0] + lam_r[1] + lam_r[2]) / sqrt3)
-z = sp.simplify((lam_r[0] + sp.conjugate(omega) * lam_r[1] + omega * lam_r[2]) / sqrt3)
-z_mag_sq = sp.simplify(sp.re(z) ** 2 + sp.im(z) ** 2)
-
-check(
-    "T3 bridge a_0 = sqrt(3) * a  (symbolic)",
-    sp.simplify(a0 - sqrt3 * a_sym) == 0,
-    detail=f"a_0 = {a0}",
-)
-
-check(
-    "T4 bridge |z|^2 = 3 |b|^2  (symbolic)",
-    sp.simplify(z_mag_sq - 3 * (b1_sym ** 2 + b2_sym ** 2)) == 0,
-    detail=f"|z|^2 = {z_mag_sq}",
-)
-
-lhs_spectrum = sp.simplify(a0 ** 2 - 2 * z_mag_sq)
-rhs_operator = 3 * (a_sym ** 2 - 2 * (b1_sym ** 2 + b2_sym ** 2))
-check(
-    "T5 bridge identity a_0^2 - 2|z|^2 = 3 (a^2 - 2 |b|^2)",
-    sp.simplify(lhs_spectrum - rhs_operator) == 0,
-)
-
-# T6 — exact cubic trace diagnostic used by the MRU demotion note.
-tr_h3 = sp.expand(sp.trace(H_sym ** 3))
-phase_piece = sp.expand(tr_h3 - 3 * a_sym ** 3 - 18 * a_sym * (b1_sym ** 2 + b2_sym ** 2))
-expected_phase_piece = sp.expand(3 * (b_sym ** 3 + sp.conjugate(b_sym) ** 3))
-obsolete_phase_piece = sp.expand(a_sym * (b_sym ** 3 + sp.conjugate(b_sym) ** 3))
-check(
-    "T6 tr(H^3) phase term is 3(b^3+bbar^3), not a(b^3+bbar^3)",
-    sp.simplify(phase_piece - expected_phase_piece) == 0
-    and sp.simplify(phase_piece - obsolete_phase_piece) != 0,
-    detail=f"phase piece = {sp.simplify(phase_piece)}",
-)
-
-# ---------------------------------------------------------------------------
-# T7 / T8 — PDG numerical realization
-# ---------------------------------------------------------------------------
-
-print("\nSection B — PDG charged-lepton numerical realization")
-
-m_e = 0.51099895000
-m_mu = 105.6583755
-m_tau = 1776.86
-v = np.array([math.sqrt(m_e), math.sqrt(m_mu), math.sqrt(m_tau)])
-
-Q_num = float(np.sum(v ** 2) / np.sum(v) ** 2)
-check(
-    "T7 PDG Koide Q ~ 2/3",
-    abs(Q_num - 2.0 / 3.0) < 3e-5,
-    detail=f"Q = {Q_num:.8f}",
-)
-
-w = np.exp(2j * np.pi / 3)
-a_op = float(np.sum(v) / 3.0)
-b_op = (v[0] + np.conj(w) * v[1] + w * v[2]) / 3.0
-kappa_num = (a_op ** 2) / abs(b_op) ** 2
-check(
-    "T8 PDG operator-side kappa = a^2/|b|^2 ~ 2",
-    abs(kappa_num - 2.0) < 3e-4,
-    detail=f"kappa = {kappa_num:.8f}",
-)
-
-# ---------------------------------------------------------------------------
-# T9 — bridge holds pointwise on random Herm_circ(3) samples
-# ---------------------------------------------------------------------------
-
-print("\nSection C — random Herm_circ(3) sample scan")
-
-rng = np.random.default_rng(20260419)
-max_residual = 0.0
-N_samples = 200
-
-for _ in range(N_samples):
-    a_val = float(rng.normal())
-    b_val = complex(rng.normal(), rng.normal())
-    lam_vec = np.array(
-        [a_val + b_val * w ** k + np.conj(b_val) * np.conj(w ** k) for k in range(3)]
+    score.check(
+        "N1 shift algebra C^3=I and C^dagger=C^2",
+        matrix_zero(cyclic_shift**3 - identity)
+        and matrix_zero(cyclic_shift.H - cyclic_shift**2),
     )
-    # Force real projection — should already be real up to numerical error
-    lam_vec = lam_vec.real
-    a0_n = np.sum(lam_vec) / math.sqrt(3.0)
-    z_n = (lam_vec[0] + np.conj(w) * lam_vec[1] + w * lam_vec[2]) / math.sqrt(3.0)
-    lhs = a0_n ** 2 - 2 * abs(z_n) ** 2
-    rhs = 3 * (a_val ** 2 - 2 * abs(b_val) ** 2)
-    max_residual = max(max_residual, abs(lhs - rhs))
 
-check(
-    "T9 bridge identity holds on 200 random samples (max residual < 1e-10)",
-    max_residual < 1e-10,
-    detail=f"max residual = {max_residual:.3e}",
-)
+    h_matrix = a * identity + b * cyclic_shift + bbar * cyclic_shift**2
+    score.check(
+        "N2 H=aI+bC+conjugate(b)C^2 is Hermitian and circulant",
+        matrix_zero(h_matrix - h_matrix.H)
+        and matrix_zero(h_matrix * cyclic_shift - cyclic_shift * h_matrix),
+    )
 
-# ---------------------------------------------------------------------------
-# T10 — condition-equivalence
-# ---------------------------------------------------------------------------
+    fourier = sp.Matrix.hstack(
+        *[
+            sp.Matrix([1, omega**k, omega ** (2 * k)]) / sqrt3
+            for k in range(3)
+        ]
+    )
+    shift_spectrum = sp.diag(1, omega, omega**2)
+    score.check(
+        "N3 declared DFT orientation has C f_k=omega^k f_k",
+        matrix_zero(fourier.H * fourier - identity)
+        and matrix_zero(cyclic_shift * fourier - fourier * shift_spectrum),
+    )
 
-print("\nSection D — condition equivalence under bridge")
+    eigenvalues = [
+        a + 2 * x,
+        a - x - sqrt3 * y,
+        a - x + sqrt3 * y,
+    ]
+    score.check(
+        "N4 Fourier basis exactly diagonalizes H",
+        matrix_zero(fourier.H * h_matrix * fourier - sp.diag(*eigenvalues)),
+    )
+    score.check(
+        "N5 the three eigenvalues are real",
+        all(exact_zero(sp.im(value)) for value in eigenvalues),
+        detail=str(eigenvalues),
+    )
 
-# Check that: spectrum-side Koide Q = 2/3 iff operator-side kappa = 2.
-# We test by sampling values that satisfy one side and verify they satisfy the other.
+    a0 = sp.simplify(sum(eigenvalues) / sqrt3)
+    z = sp.simplify(
+        sum(eigenvalues[k] * omega ** (-k) for k in range(3)) / sqrt3
+    )
+    z_abs_sq = sp.simplify(sp.re(z) ** 2 + sp.im(z) ** 2)
+    radius_sq = x**2 + y**2
 
-# Pick b, solve for a so that a^2 = 2 |b|^2 (operator-side kappa = 2).
-for trial in range(50):
-    b_val = complex(rng.normal(), rng.normal())
-    a_val = math.sqrt(2.0 * abs(b_val) ** 2)
-    lam_vec = np.array(
-        [a_val + b_val * w ** k + np.conj(b_val) * np.conj(w ** k) for k in range(3)]
-    ).real
-    a0_n = np.sum(lam_vec) / math.sqrt(3.0)
-    z_n = (lam_vec[0] + np.conj(w) * lam_vec[1] + w * lam_vec[2]) / math.sqrt(3.0)
-    spec_residual = a0_n ** 2 - 2 * abs(z_n) ** 2
-    if abs(spec_residual) > 1e-10:
-        break
-else:
-    spec_residual = 0.0
+    score.check("N6 a_0=sqrt(3)a", exact_zero(a0 - sqrt3 * a), detail=f"a_0={a0}")
+    score.check("N7 z=sqrt(3)b with the declared orientation", exact_zero(z - sqrt3 * b))
+    score.check("N8 |z|^2=3|b|^2", exact_zero(z_abs_sq - 3 * radius_sq))
 
-check(
-    "T10 operator kappa = 2 implies spectrum a_0^2 = 2|z|^2 (zero residual on sample set)",
-    abs(spec_residual) < 1e-10,
-    detail=f"|spectrum residual| = {abs(spec_residual):.3e}",
-)
+    fourier_residual = sp.expand(a0**2 - 2 * z_abs_sq)
+    coordinate_residual = sp.expand(a**2 - 2 * radius_sq)
+    score.check(
+        "N9 global polynomial invariant has exact factor 3",
+        exact_zero(fourier_residual - 3 * coordinate_residual),
+    )
+    score.check(
+        "N10 b=0 boundary reduces to 3a^2 and meets the zero locus only at a=0",
+        exact_zero(fourier_residual.subs({x: 0, y: 0}) - 3 * a**2)
+        and sp.solve(sp.Eq(3 * a**2, 0), a) == [0],
+    )
 
-# ---------------------------------------------------------------------------
-# T11 .. T15 — source-boundary checks for the MRU demotion note
-# ---------------------------------------------------------------------------
+    radius_nonzero = sp.symbols("rho", positive=True)
+    kappa = a**2 / radius_nonzero
+    score.check(
+        "N11 ratio form is equivalent only on the nonzero-denominator domain",
+        radius_nonzero.is_nonzero
+        and exact_zero((a**2 - 2 * radius_nonzero) / radius_nonzero - (kappa - 2)),
+    )
 
-print("\nSection E — MRU demotion source-boundary checks")
+    trace_h3 = sp.expand(sp.trace(h_matrix**3))
+    expected_trace_h3 = sp.expand(
+        3 * a**3 + 18 * a * radius_sq + 3 * (b**3 + bbar**3)
+    )
+    score.check(
+        "N12 tr(H^3)=3a^3+18a|b|^2+3(b^3+conjugate(b)^3)",
+        exact_zero(trace_h3 - expected_trace_h3),
+    )
 
-demotion_note = DEMOTION_NOTE.read_text(encoding="utf-8")
-demotion_norm = normalize(demotion_note)
-bridge_note = BRIDGE_NOTE.read_text(encoding="utf-8")
-bridge_norm = normalize(bridge_note)
 
-check(
-    "T11 demotion note records the 2026-06-18 source-boundary repair",
-    "## 2026-06-18 source-boundary repair" in demotion_note,
-)
-check(
-    "T12 clean claim is bounded demotion / bridge-corollary support",
-    "bounded demotion / bridge-corollary" in demotion_norm
-    and "primary exact bridge-corollary route" in demotion_norm,
-)
-check(
-    "T13 block-total route is bounded support, not standalone closure",
-    "independent bounded support" in demotion_norm
-    and "not a standalone full physical scalar-measure closure theorem" in demotion_norm,
-)
-check(
-    "T14 demotion note prints the corrected cubic trace diagnostic",
-    "tr(h^3) = 3 a^3 + 18 a |b|^2 + 3 (b^3 + bbar^3)" in demotion_norm
-    and "not to `a (b^3 + bbar^3)`" in demotion_norm,
-)
-check(
-    "T15 demotion note removes old retained-route overclaim phrases",
-    "primary retained closure route" not in demotion_norm
-    and "two retained independent routes" not in demotion_norm
-    and "independent second closure route" not in demotion_norm,
-)
-check(
-    "T16 demotion note narrows the SO(2) quotient failure to Path A",
-    "path a cannot close" in demotion_norm
-    and "displayed spectral-observable route" in demotion_norm
-    and "checks path a only" in demotion_norm,
-)
-check(
-    "T17 demotion note leaves alternative quotient attack routes open",
-    "other attack routes" in demotion_norm
-    and "remain open, not closed" in demotion_norm
-    and "alternative attack routes remain open" in demotion_norm
-    and "no currently retained framework theorem delivers it" not in demotion_norm
-    and "not a corollary of any retained framework theorem currently" not in demotion_norm,
-)
-check(
-    "T18 bridge note declares bounded_theorem source claim type",
-    "**Type:** bounded_theorem" in bridge_note
-    and "**Claim type:** bounded_theorem" in bridge_note
-    and "bounded bridge-corollary support" in bridge_norm,
-)
-check(
-    "T19 bridge note removes retained-proposal and independent-closure overclaim phrases",
-    ("proposed_" + "retained positive theorem") not in bridge_norm
-    and "second independent closure route" not in bridge_norm
-    and "closure comes free" not in bridge_norm
-    and "does not independently derive the spectrum-side koide condition" in bridge_norm
-    and "does not apply or predict an audit verdict" in bridge_norm,
-)
+def independent_mode(score: Score) -> None:
+    """Direct matrix/characteristic-polynomial and real-DFT reconstruction."""
 
-print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
-if FAIL > 0:
-    raise SystemExit(1)
+    print("INDEPENDENT — characteristic polynomial, traces, and real DFT")
+    c, u, v = sp.symbols("c u v", real=True)
+    t = sp.Symbol("t")
+    sqrt3 = sp.sqrt(3)
+    rho = u**2 + v**2
+    beta = u + sp.I * v
+    beta_bar = u - sp.I * v
+
+    # Construct the matrix entry by entry; do not call the normal route or use
+    # its C/F tables.
+    h_direct = sp.Matrix(
+        [
+            [c, beta, beta_bar],
+            [beta_bar, c, beta],
+            [beta, beta_bar, c],
+        ]
+    )
+    characteristic = sp.expand(h_direct.charpoly(t).as_expr())
+    expected_characteristic = sp.expand(
+        (t - c) ** 3 - 3 * rho * (t - c) - (beta**3 + beta_bar**3)
+    )
+    score.check(
+        "I1 direct characteristic polynomial reconstruction",
+        exact_zero(characteristic - expected_characteristic),
+    )
+
+    score.check(
+        "I2 direct traces tr(H) and tr(H^2)",
+        exact_zero(sp.trace(h_direct) - 3 * c)
+        and exact_zero(sp.trace(h_direct**2) - (3 * c**2 + 6 * rho)),
+    )
+    direct_trace_h3 = sp.expand(sp.trace(h_direct**3))
+    score.check(
+        "I3 direct cubic trace including phase coefficient",
+        exact_zero(
+            direct_trace_h3
+            - (3 * c**3 + 18 * c * rho + 3 * (beta**3 + beta_bar**3))
+        ),
+    )
+
+    real_roots = sp.Matrix(
+        [
+            c + 2 * u,
+            c - u - sqrt3 * v,
+            c - u + sqrt3 * v,
+        ]
+    )
+    root_residues = [
+        sp.expand(characteristic.subs(t, root)) for root in real_roots
+    ]
+    score.check(
+        "I4 the three explicit real values are roots of the direct characteristic polynomial",
+        all(exact_zero(residue) for residue in root_residues),
+    )
+
+    real_dft = sp.Matrix(
+        [
+            [1 / sqrt3, 1 / sqrt3, 1 / sqrt3],
+            [1 / sqrt3, -1 / (2 * sqrt3), -1 / (2 * sqrt3)],
+            [0, -sp.Rational(1, 2), sp.Rational(1, 2)],
+        ]
+    )
+    weighted_metric = sp.diag(1, 2, 2)
+    score.check(
+        "I5 explicit real DFT obeys R^T diag(1,2,2) R=I",
+        matrix_zero(real_dft.T * weighted_metric * real_dft - sp.eye(3)),
+    )
+
+    real_coordinates = sp.simplify(real_dft * real_roots)
+    expected_coordinates = sp.Matrix([sqrt3 * c, sqrt3 * u, sqrt3 * v])
+    score.check(
+        "I6 explicit real DFT reconstructs (a_0,Re z,Im z)",
+        matrix_zero(real_coordinates - expected_coordinates),
+        detail=str(real_coordinates.T),
+    )
+
+    independent_a0 = real_coordinates[0]
+    independent_z_sq = real_coordinates[1] ** 2 + real_coordinates[2] ** 2
+    score.check("I7 independent a_0 identity", exact_zero(independent_a0 - sqrt3 * c))
+    score.check("I8 independent |z|^2 identity", exact_zero(independent_z_sq - 3 * rho))
+    score.check(
+        "I9 independent polynomial invariant",
+        exact_zero(
+            independent_a0**2
+            - 2 * independent_z_sq
+            - 3 * (c**2 - 2 * rho)
+        ),
+    )
+    score.check(
+        "I10 spectral cubic sum equals the direct matrix trace",
+        exact_zero(sum(root**3 for root in real_roots) - direct_trace_h3),
+    )
+
+
+def hostile_mode(score: Score) -> None:
+    """Require each named load-bearing mutation to be detected exactly."""
+
+    print("HOSTILE — mutation-kill checks")
+    a, x, y = sp.symbols("a x y", real=True)
+    b = x + sp.I * y
+    bbar = x - sp.I * y
+    sqrt3 = sp.sqrt(3)
+    omega = -sp.Rational(1, 2) + sp.I * sqrt3 / 2
+    identity = sp.eye(3)
+    cyclic_shift = sp.Matrix([[0, 1, 0], [0, 0, 1], [1, 0, 0]])
+    eigenvalues = [
+        a + b * omega**k + bbar * omega ** (-k) for k in range(3)
+    ]
+    correct_z = sp.simplify(
+        sum(eigenvalues[k] * omega ** (-k) for k in range(3)) / sqrt3
+    )
+    radius_sq = x**2 + y**2
+    correct_a0 = sp.simplify(sum(eigenvalues) / sqrt3)
+    correct_z_sq = sp.simplify(sp.re(correct_z) ** 2 + sp.im(correct_z) ** 2)
+    coordinate_residual = a**2 - 2 * radius_sq
+    fourier_residual = sp.expand(correct_a0**2 - 2 * correct_z_sq)
+
+    reversed_z = sp.simplify(
+        sum(eigenvalues[k] * omega**k for k in range(3)) / sqrt3
+    )
+    score.check(
+        "H1 KILL reversed DFT orientation (it returns conjugate(b), not b)",
+        exact_nonzero(reversed_z - sqrt3 * b),
+    )
+
+    unnormalized_z = sp.simplify(
+        sum(eigenvalues[k] * omega ** (-k) for k in range(3))
+    )
+    score.check(
+        "H2 KILL missing 1/sqrt(3) Fourier normalization",
+        exact_nonzero(unnormalized_z - sqrt3 * b),
+    )
+
+    missing_conjugation = a * identity + b * cyclic_shift + b * cyclic_shift**2
+    score.check(
+        "H3 KILL missing conjugation in H",
+        matrix_nonzero(missing_conjugation - missing_conjugation.H),
+    )
+
+    inverse_shift = cyclic_shift**2
+    inverse_h = a * identity + b * inverse_shift + bbar * inverse_shift**2
+    inverse_fourier_diagonal = sp.simplify(
+        sp.Matrix.hstack(
+            *[
+                sp.Matrix([1, omega**k, omega ** (2 * k)]) / sqrt3
+                for k in range(3)
+            ]
+        ).H
+        * inverse_h
+        * sp.Matrix.hstack(
+            *[
+                sp.Matrix([1, omega**k, omega ** (2 * k)]) / sqrt3
+                for k in range(3)
+            ]
+        )
+    )
+    inverse_lambdas = [inverse_fourier_diagonal[k, k] for k in range(3)]
+    inverse_z = sp.simplify(
+        sum(inverse_lambdas[k] * omega ** (-k) for k in range(3)) / sqrt3
+    )
+    score.check(
+        "H4 KILL inverse cyclic shift under the declared DFT orientation",
+        exact_nonzero(inverse_z - sqrt3 * b),
+    )
+
+    score.check(
+        "H5 KILL wrong invariant prefactor 3/2",
+        exact_nonzero(
+            fourier_residual - sp.Rational(3, 2) * coordinate_residual
+        ),
+    )
+    score.check(
+        "H6 KILL wrong modulus factor |z|^2=(3/2)|b|^2",
+        exact_nonzero(correct_z_sq - sp.Rational(3, 2) * radius_sq),
+    )
+
+    origin = {a: 0, x: 0, y: 0}
+    score.check(
+        "H7 KILL global kappa-ratio extension using the b=0 origin counterexample",
+        exact_zero(fourier_residual.subs(origin))
+        and exact_zero(radius_sq.subs(origin)),
+        detail="polynomial residual=0 while the proposed ratio denominator=0",
+    )
+
+    h_matrix = a * identity + b * cyclic_shift + bbar * cyclic_shift**2
+    trace_h3 = sp.expand(sp.trace(h_matrix**3))
+    wrong_cubic_coefficient = sp.expand(
+        3 * a**3 + 18 * a * radius_sq + (b**3 + bbar**3)
+    )
+    score.check(
+        "H8 KILL cubic phase coefficient 1 in place of 3",
+        exact_nonzero(trace_h3 - wrong_cubic_coefficient),
+    )
+    wrong_a_scaled_cubic = sp.expand(
+        3 * a**3 + 18 * a * radius_sq + 3 * a * (b**3 + bbar**3)
+    )
+    score.check(
+        "H9 KILL an a-scaled cubic phase term",
+        exact_nonzero(trace_h3 - wrong_a_scaled_cubic),
+    )
+
+    missing_conjugate_eigenvalues = [
+        a + b * omega**k + b * omega ** (-k) for k in range(3)
+    ]
+    score.check(
+        "H10 KILL missing conjugation in the eigenvalue formula",
+        any(exact_nonzero(sp.im(value)) for value in missing_conjugate_eigenvalues),
+    )
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--mode",
+        choices=("all", "normal", "independent", "hostile"),
+        default="all",
+    )
+    return parser.parse_args()
+
+
+def main() -> int:
+    args = parse_args()
+    modes = {
+        "normal": normal_mode,
+        "independent": independent_mode,
+        "hostile": hostile_mode,
+    }
+    selected = tuple(modes) if args.mode == "all" else (args.mode,)
+    total = Score()
+    for mode in selected:
+        score = Score()
+        modes[mode](score)
+        print(f"TOTAL mode={mode} PASS={score.passed} FAIL={score.failed}")
+        total.passed += score.passed
+        total.failed += score.failed
+    if args.mode == "all":
+        print(f"TOTAL mode=all PASS={total.passed} FAIL={total.failed}")
+    return int(total.failed != 0)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

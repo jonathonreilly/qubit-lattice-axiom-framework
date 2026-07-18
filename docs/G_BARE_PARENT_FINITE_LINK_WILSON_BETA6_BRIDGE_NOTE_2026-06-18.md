@@ -190,17 +190,17 @@ when `beta = 2 N_c`. No same-slot convention is chosen in this argument.
 
 ## Mismatched-slot exhibit
 
-What a mismatched-slot reading gives, on identical constructed data: at
-`beta = 24` the same canonical links, the same plaquette matrices, and
-the same per-plaquette action values yield the constructed matched scalar
+What a mismatched-slot reading gives on the same underlying link and plaquette
+matrices: at `beta = 24` the action coefficient changes with `beta`, and the
+W-PHYS-conditional matched scalar is
 
 ```text
 gamma*(24)^2 = 6/24 = 1/4,    gamma*(24) = 1/2 != 1 = s,
 ```
 
 with the Wilson identity holding as `24 * (1/4) = 6 = 2 N_c`, and the
-same-slot statement false. Nothing in the constructed surface data
-changed between the same-slot pin `beta = 2 N_c` and `beta = 24`. This
+same-slot statement false. The underlying links and plaquette matrices are
+unchanged, while the Wilson action weighting changes with `beta`. This
 exhibits that the same-slot identification does real selecting work — it is the choice of
 the `beta = 2 N_c` point on the one-parameter family
 `beta = 2 N_c / gamma*^2` — and is therefore a declaration, not a
@@ -253,7 +253,8 @@ The packet would fail if any of the following were true:
 - the constructed matched scalar deviated from
   `gamma*(beta)^2 = 2 N_c / beta` (Theorem 3);
 - the constructed link-canonical readback gave `s != 1`;
-- the two constructed slots agreed at some tested `beta != 2 N_c` or
+- the constructed link slot and W-PHYS-conditional matched slot agreed at
+  some tested `beta != 2 N_c` or
   disagreed at `beta = 2 N_c` (pin equivalence);
 
 The runner checks these as source-boundary and construction checks rather

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py
-runner_sha256: f0fe749c00d549b311bb03a812f22746d7b7b89102b4ddcab5f86cfac74fc84f
+runner_sha256: 7fa4839d775ac00baa1bf2c196fb3907154df96c09b206e44364825397f8440c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -31,7 +31,7 @@ Part A: exact derivative, Gram, remainder, and rescaling route
   [PASS (A)] A14 tracelessness is unnecessary for the real deficit derivative  (Tr(A)=1, D'(0)=0)
   [PASS (A)] A15 the n=1 packet has D''(0)=1 and [x^2]D=1/2
   [PASS (A)] A16 its complex deficit retains the nonzero linear coefficient -i  (-I)
-  [PASS (A)] A17 substitution in w D(sx) gives coefficient w*s^2/(4n)  (s**2*w/(4*n))
+  [PASS (A)] A17 extracting x^2*F2 after substitution in w D(sx) gives w*s^2/(4n)  (term=F2*s**2*w*x**2/(4*n), coefficient=s**2*w/(4*n))
   [PASS (A)] A18 scalar rescaling is quadratic in s
 
 ================================================================================================

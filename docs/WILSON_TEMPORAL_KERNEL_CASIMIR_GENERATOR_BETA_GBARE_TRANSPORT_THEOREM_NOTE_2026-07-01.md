@@ -21,7 +21,8 @@ normalization. This note lands the first theorem package on that route.
 
 What is proved here: the temporal-gauge one-step kernel of the supplied
 Wilson action has the independently reconstructed Casimir asymptotic
-coefficient `beta * g_E^2 -> 2 N_c`. The point `beta = 2 N_c` is therefore
+coefficient `beta * g_{E,R}^2(beta) -> 2 N_c` for each fixed nontrivial
+representation `R`. The point `beta = 2 N_c` is therefore
 precisely where this packet's leading per-step generator is the
 unit-coefficient canonical kinetic form. This is a kernel-side statement;
 no identification with a different scalar slot is claimed.
@@ -50,7 +51,7 @@ equivalent to on the operator side.
    scope.
 
 No other physical input is used. The objects defined below
-(`w_R`, `eps_R`, `g_E^2`) are definitions internal to this packet, made on
+(`w_R`, `eps_R`, `g_{E,R}^2`) are definitions internal to this packet, made on
 the supplied surfaces; no new axiom, import, or comparator is introduced.
 
 ## Definitions
@@ -103,18 +104,17 @@ fixes the canonical coordinates. Mechanism companions with their exact
 constants: `U(1)` with kernel `e^{beta cos theta}` has
 `2 beta eps_n -> n^2`; `SU(2)` has `beta eps_j / 2 -> j(j+1)`.
 
-**Theorem K3 (kernel coefficient).** Define the kernel-side label `g_E^2`
-by the unit-mass-normalized reading
-`eps_R = (g_E^2 / 2) C_2(R) (1 + O(1/beta))`. Then
+**Theorem K3 (kernel coefficient).** For each fixed nontrivial `R`, define
+the representation-indexed kernel-side label `g_{E,R}^2(beta)` exactly by
+`g_{E,R}^2(beta) := 2 eps_R(beta) / C_2(R)`. Then
 
 ```text
-beta * g_E^2  ->  2 N_c,
+beta * g_{E,R}^2(beta)  ->  2 N_c.
 ```
 
-This packet proves the kernel-side coefficient directly from K2.
-At leading order the extracted dial is `R`-independent (the generator is a
-multiple of the canonical Laplacian, not of a representation-dependent
-deformation).
+This packet proves the kernel-side coefficient directly from K2. The
+finite-`beta` label is allowed to depend on `R`; only its leading
+large-`beta` coefficient is `R`-independent.
 
 **Corollary K4 (unit-coefficient point).** The leading dial map
 `g_lead^2(beta) = 2 N_c / beta` takes the value `1` exactly at
@@ -160,10 +160,10 @@ representations and the `U(1)`/`SU(2)` companions with their exact
 constants (`tau_eff = 1/(2 beta)` for the `U(1)` kernel `e^{beta cos}`,
 `tau_eff = 2/beta` for `SU(2)`, `tau_eff = 3/beta` for `SU(3)`).
 
-**K3.** Substituting K2 into the definition of `g_E^2` gives
-`g_E^2 = 2 eps_R / C_2(R) -> 2 N_c / beta`, i.e.
-`beta g_E^2 -> 2 N_c`.
-`R`-independence at leading order is K2's statement that `eps_R` is
+**K3.** Substituting K2 into the definition of `g_{E,R}^2(beta)` gives
+`g_{E,R}^2(beta) = 2 eps_R(beta) / C_2(R) -> 2 N_c / beta`, i.e.
+`beta g_{E,R}^2(beta) -> 2 N_c` for each fixed nontrivial `R`.
+Leading-coefficient `R`-independence is K2's statement that `eps_R` is
 proportional to `C_2(R)` with an `R`-independent coefficient.
 
 **K4.** Exact rational arithmetic on the leading map
@@ -188,7 +188,7 @@ This note does not claim:
   `beta -> infinity` leading-coefficient theorems, verified by
   Richardson-extrapolated numeric character integrals at finite `beta`;
 - a continuum running-coupling value or a phenomenological coupling;
-- a dictionary identifying `g_E` with `g_bare` or any physical coupling;
+- a dictionary identifying any `g_{E,R}` with `g_bare` or any physical coupling;
 - an audit verdict or any effective-status promotion.
 
 The forward surface this opens: the declared normalization bit now has the
@@ -209,8 +209,9 @@ The packet would fail if any of the following were true:
 - `beta * eps_R / N_c` failed to converge to the half-trace Casimir
   `C_2(R)` for any tested representation, or the `U(1)`/`SU(2)`
   companions missed their exact constants (K2);
-- `beta * g_E^2` failed to converge to `2 N_c`, or the extracted dial were
-  representation-dependent at leading order (K3);
+- `beta * g_{E,R}^2(beta)` failed to converge to `2 N_c` for a fixed
+  nontrivial `R`, or the extracted leading coefficient were
+  representation-dependent (K3);
 - the leading dial map failed `g_lead^2(2 N_c) = 1`, or the mismatched
   reading at `beta = 24` failed to give coefficient `1/4` on the same
   construction (K4);

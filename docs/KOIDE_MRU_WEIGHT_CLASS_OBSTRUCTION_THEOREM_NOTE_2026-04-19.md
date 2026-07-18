@@ -27,8 +27,8 @@ It does **not** derive the physical quotient bridge.
 The companion
 `KOIDE_MRU_DEMOTION_NOTE_2026-04-20` already records that this MRU route is
 supplementary / alternative-framing support for operator-side `kappa = 2`;
-the operator-side gate is carried elsewhere without an `SO(2)` quotient
-postulate.
+the abstract operator identity is carried elsewhere, but the physical
+carrier/readout and scalar-measure selector remain open.
 
 ---
 
@@ -47,7 +47,8 @@ For the weighted block-log-volume family
 S_{mu,nu} = mu log(E_+) + nu log(E_perp)
 ```
 
-at fixed `E_tot = E_+ + E_perp`, every interior stationary leaf is
+at fixed `E_tot = E_+ + E_perp`, every interior stationary leaf (so
+`b != 0`) is
 
 ```text
 kappa := a^2 / |b|^2 = 2 mu / nu.
@@ -206,10 +207,11 @@ selects
 kappa = 2 * 1 / 2 = 1.
 ```
 
-That is the exact obstruction:
+That is the exact determinant-specific obstruction:
 
-> no log-volume law applied on the unreduced `3 x 3` isotypic-scalar carrier
-> can force MRU.
+> the unreduced determinant/log-determinant law on the `3 x 3`
+> isotypic-scalar carrier has weights `(1,2)` and lands at `kappa=1`, so that
+> particular carrier law cannot force MRU.
 
 ---
 
@@ -414,13 +416,13 @@ To promote a separate positive MRU quotient route, the missing work is:
 Those tasks are not prerequisites for the bounded theorem claimed here,
 because that theorem is the unreduced obstruction.
 
-Per the demotion note already on main, the `kappa = 2` operator-side
-gate does **not** depend on supplying (1)/(2): two independent
-routes (`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19`
-and `KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19`)
-already carry it without any `SO(2)`-quotient postulate. The Path A
-work above is a path to promote **this** row, not a prerequisite for the
-operator-side closure.
+The two adjacent algebra notes do not remove this physical boundary.
+`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19` now proves
+only an abstract Fourier polynomial identity, and
+`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19` leaves
+its physical scalar-measure choice open. The Path A work above remains a
+possible route to promote **this** conditional MRU framing; no operator-side
+physical closure is imported from either adjacent algebra note.
 
 ## 10. Boundaries
 
@@ -433,9 +435,9 @@ This note does **not**:
 - override the `KOIDE_MRU_DEMOTION_NOTE_2026-04-20` reclassification
   of this row's MRU route as supplementary / alternative-framing
   support;
-- close the operator-side `kappa = 2` gate (already carried on main by
-  the spectrum-operator bridge and block-total Frobenius routes
-  without any `SO(2)`-quotient assumption);
+- close or physically select the operator-side `kappa = 2` gate; neither
+  adjacent algebra note supplies a physical carrier or scalar-measure
+  selector;
 - dispute the unreduced `(1, 2)` weight-class obstruction calculation
   itself, which the audit accepts as exact algebra on the unreduced
   `3 x 3` carrier.

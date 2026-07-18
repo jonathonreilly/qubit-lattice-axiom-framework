@@ -4,19 +4,16 @@
 This runner deliberately stays source-side. It does not read audit ledgers,
 audit queues, publication matrices, or effective-status files.
 
-Checked content (all constructed, nothing assigned):
+Checked content (constructed and explicitly defined; no dial value selected):
 
   R0  the supplied Wilson temporal-gauge per-link kernel lies in the
       bi-invariant positive class with per-step rate tau_eff(beta) =
       N_c/beta (1 + O(1/beta)) — constructed from character data.
-  R1  the accumulated rate is the COMPLETE surviving invariant of step
-      composition: (i) rates add exactly under composition (semigroup,
-      exact in exponents); (ii) two DIFFERENT step kernels (Wilson-type
-      and eigenphase-Gaussian/Manton-type) calibrated to the same rate on
-      the fundamental block collapse onto the same composed kernel on the
-      OTHER blocks, with deviations shrinking under step refinement at
-      fixed accumulated rate. Microscopic form is forgotten; the rate is
-      kept; nothing else survives.
+  R1  rates add exactly under heat-kernel composition; two specified step
+      kernels (Wilson-type and eigenphase-Gaussian) calibrated to the same
+      fundamental-block rate show shrinking deviations on the adjoint and
+      sextet blocks across three stated refinements at fixed accumulated
+      rate. This is a finite tested-family exhibit, not a completeness claim.
   R2  every named structural premise of the dynamics lane is RATE-BLIND:
       positivity/record-compatibility, class-function (two-end covariant
       channel) form, step composition, and the diffusive moment law hold
@@ -235,7 +232,7 @@ def section_B(T1, T2) -> None:
 
 
 # ---------------------------------------------------------------------------
-# Section C: Theorem R1 — the rate is the complete surviving invariant
+# Section C: Theorem R1 — exact additivity and tested cross-kernel convergence
 # ---------------------------------------------------------------------------
 
 def section_C(T1, T2) -> None:
@@ -302,7 +299,7 @@ def section_C(T1, T2) -> None:
             f"k|W-M|={d64:.2e}",
         )
     check(
-        "single calibrated number predicts all tested blocks (rate = complete invariant)",
+        "single calibrated number predicts the two tested nonfundamental blocks",
         all(results[1.0 / 64][1][name][1] < 1e-3 for name in ("adj(2,1,0)", "sym(2,0,0)")),
     )
 
@@ -320,7 +317,7 @@ def section_D(T1, T2) -> None:
         wvals = {name: np.exp(-tf * float(casimir_half_trace(lam))) for name, lam in REPS.items()}
         p1 = all(0.0 < w <= 1.0 for w in wvals.values())
         check(
-            f"tau={tau}: positivity/record-compatibility (0 < w_R <= 1, all reps)",
+            f"tau={tau}: positivity/record-compatibility (0 < w_R <= 1, enumerated reps)",
             p1,
         )
         # class-function/covariant-channel form: the member is defined by real
@@ -472,7 +469,7 @@ def section_G() -> None:
     require_contains("note", note_flat, "does not derive `tau = 1/2`")
     require_contains("note", note_flat, "per-record-step")
     require_contains("note", note_flat, "rate-blind")
-    require_contains("note", note_flat, "complete surviving invariant")
+    require_contains("note", note_flat, "tested cross-kernel convergence")
     require_contains("note", note_flat, "unit-variance")
     require_contains("note", note_flat, "tau_lead(beta):=N_c/beta")
     require_contains("note", note_flat, "distinguished heat-kernel setting")

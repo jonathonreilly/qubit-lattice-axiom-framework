@@ -52,9 +52,9 @@ This runner does NOT close:
     is itself unique (see the existing
     `G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md`,
     which classifies the normalization itself as the framework convention).
-  - Dynamical fixed-point selection of g_bare (see the existing
-    `G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md`,
-    which closes the dynamical class negatively).
+  - Dynamical fixed-point selection of g_bare. The separate L=4 detector
+    obstruction is outside this runner and is not imported as a broad
+    dynamical-class conclusion.
   - Any audit verdict, effective-status update, or publication-status update.
 
 Self-contained: numpy + standard library only.
@@ -315,7 +315,7 @@ def section_C_wilson_small_a(T_triplet, N_c: int = 3):
         )
 
     # The finite-link/Wilson bridge supplies g^2 = 1 as the canonical
-    # scalar slot. The formal identity plus W-PHYS then gives beta=2N_c.
+    # scalar slot. The W-PHYS-supplied comparison relation then gives beta=2N_c.
     beta_from_wilson_match = 2 * N_c
     check(
         "with W-PHYS and finite-link slot g^2=1, the conditional read gives beta=6",
@@ -482,7 +482,8 @@ def section_F_no_circular_input(T_triplet, N_c: int = 3):
     )
 
     # Step 4: finite-link rigidity supplies s^2=1. SLOT-ID conditionally maps
-    # that slot to g_bare; the formal identity plus W-PHYS then gives beta=2N_c.
+    # that slot to g_bare; the W-PHYS-supplied comparison relation then gives
+    # beta=2N_c.
     root = Path(__file__).resolve().parent.parent
     parent_flat = " ".join(
         (root / "docs" / "G_BARE_DERIVATION_NOTE.md")

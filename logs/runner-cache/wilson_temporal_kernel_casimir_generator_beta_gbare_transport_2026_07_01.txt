@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_2026_07_01.py
-runner_sha256: 7c27557557b36e51dc584c0a055188d22fd0f02362c11a4562acb2b23d8f98b7
+runner_sha256: 3046589df0f8d597aa33e1adcfb5e7c909acae4a9f41321af5c1e167f9c7ab63
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.63
+elapsed_sec: 1.94
 status: ok
 ----- stdout -----
 Wilson temporal-kernel Casimir generator / beta-g_bare dial transport check
@@ -60,13 +60,13 @@ SECTION E: SU(3) — beta eps_R / N_c -> C_2(R), half-trace normalization
 [PASS] SU(3) sym(2,0,0): Richardson(24,48) hits 1 (R1=0.999340)
 [PASS] SU(3) sym(2,0,0): Richardson2(12,24,48) hits 1 (R2=0.997650)
 
-SECTION F: dial transport — beta * g_E^2 -> 2 N_c, R-independent
+SECTION F: representation-indexed dial transport — beta * g_{E,R}^2 -> 2 N_c
 ------------------------------------------------------------------------------
-[PASS] beta * g_E^2 strictly decreasing toward 2 N_c = 6 (values=7.0037, 6.4721, 6.2274)
-[PASS] transport Richardson(24,48): beta * g_E^2 hits 2 N_c = 6 (R1=5.98257)
-[PASS] transport Richardson2(12,24,48): beta * g_E^2 hits 2 N_c = 6 (R2=5.99654)
-[PASS] extracted dial is R-independent at beta=48 (adj(2,1,0) vs fund) (ratio=0.999369)
-[PASS] extracted dial is R-independent at beta=48 (sym(2,0,0) vs fund) (ratio=0.999243)
+[PASS] beta * g_{E,fund}^2 strictly decreasing toward 2 N_c = 6 (values=7.0037, 6.4721, 6.2274)
+[PASS] transport Richardson(24,48): beta * g_{E,fund}^2 hits 2 N_c = 6 (R1=5.98257)
+[PASS] transport Richardson2(12,24,48): beta * g_{E,fund}^2 hits 2 N_c = 6 (R2=5.99654)
+[PASS] representation-indexed leading estimates agree at beta=48 (adj(2,1,0) vs fund) (ratio=0.999369)
+[PASS] representation-indexed leading estimates agree at beta=48 (sym(2,0,0) vs fund) (ratio=0.999243)
 
 SECTION G: exact leading-dial layer — coincidence at beta = 2 N_c
 ------------------------------------------------------------------------------

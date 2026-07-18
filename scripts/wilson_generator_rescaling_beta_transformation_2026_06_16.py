@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Exact scalar-argument rescaling and Gram-transformation certificate.
+"""Exact scalar-argument rescaling and Gram-covariance certificate.
 
-For q(w,s,n)=w*s^2/(4n), the paired map w'=c^2*w, s'=s/c leaves q
-invariant.  If T'_a=c*T_a, then s'*T'_a=s*T_a while the half-Gram form
-scales by c^2.  No external target or preferred parameter is inferred.
+For a fixed half-Gram family, q(w,s,n)=w*s^2/(4n) obeys
+q(c^2*w,s/c,n)=q(w,s,n). Separately, T'_a=c*T_a and s'=s/c preserve the
+exponent while the Gram factor scales by c^2; the weighted deficit is then
+preserved only at fixed w. No external target or preferred parameter is
+inferred.
 """
 
 from __future__ import annotations
@@ -36,6 +38,12 @@ def q(w: Fraction, s_sq: Fraction, n: Fraction) -> Fraction:
     return w * s_sq / (4 * n)
 
 
+def q_gram(
+    w: Fraction, s_sq: Fraction, n: Fraction, gram_scale: Fraction
+) -> Fraction:
+    return w * s_sq * gram_scale / (4 * n)
+
+
 def gram_diag(c_sq: Fraction) -> Fraction:
     return c_sq * Fraction(1, 2)
 
@@ -54,6 +62,8 @@ def part0_source_boundaries() -> None:
         "q(w',s',n)",
         "s'T'_a = sT_a",
         "Tr(T'_a T'_b) = c^2 delta_ab/2",
+        "It preserves the weighted expression only when `w'=w`",
+        "q_kappa(w,s,n) = w s^2 kappa/(4n)",
         "does not choose a comparison coefficient",
         "Any use beyond the displayed matrix and scalar algebra requires separate authority",
     ]
@@ -85,7 +95,7 @@ def part1_matrix_source() -> None:
 
 def part2_exact_transform() -> None:
     print()
-    print("Part 2: exact native-coefficient transform")
+    print("Part 2: fixed-family scalar coefficient identity")
     samples = [
         (Fraction(3, 2), Fraction(1), Fraction(1)),
         (Fraction(5, 7), Fraction(9, 4), Fraction(2)),
@@ -101,7 +111,7 @@ def part2_exact_transform() -> None:
             w_new = c_sq * w
             s_sq_new = s_sq / c_sq
             check(
-                f"paired rescaling preserves q at w={w}, s^2={s_sq}, c={c}",
+                f"fixed-family scalar map preserves q at w={w}, s^2={s_sq}, c={c}",
                 q(w_new, s_sq_new, n) == q_old,
                 f"q'={q(w_new, s_sq_new, n)}",
             )
@@ -115,6 +125,9 @@ def part3_generator_and_gram_transform() -> None:
     print()
     print("Part 3: exponent-product preservation and Gram change")
     s = Fraction(5, 3)
+    s_sq = s * s
+    w = Fraction(11, 7)
+    n = Fraction(3)
     generator_entry = Fraction(7, 4)
     for c in [Fraction(1, 2), Fraction(1), Fraction(2), Fraction(3)]:
         c_sq = c * c
@@ -128,6 +141,17 @@ def part3_generator_and_gram_transform() -> None:
             f"half-Gram transforms by c^2 under c={c}",
             gram_diag(c_sq) == c_sq / 2,
             f"diagonal={gram_diag(c_sq)}",
+        )
+        base_q = q_gram(w, s_sq, n, Fraction(1))
+        transformed_fixed_w = q_gram(w, s_sq / c_sq, n, c_sq)
+        check(
+            f"generator covariance preserves the quadratic coefficient at fixed w under c={c}",
+            transformed_fixed_w == base_q,
+        )
+        transformed_scaled_w = q_gram(c_sq * w, s_sq / c_sq, n, c_sq)
+        check(
+            f"adding w'=c^2 w scales the generator-transformed coefficient by c^2 under c={c}",
+            transformed_scaled_w == c_sq * base_q,
         )
         if c != 1:
             check(

@@ -1,6 +1,6 @@
 # Formal Scalar-Argument Rescaling and Gram Transformation
 
-**Date:** 2026-06-16. Clean-retention rescope: 2026-07-18.
+**Date:** 2026-06-16. Abstract-algebra rescope: 2026-07-18.
 **Claim type:** positive_theorem
 **Status authority:** independent audit lane only. This source note does not
 set, predict, or apply an audit verdict.
@@ -21,7 +21,9 @@ The cited matrix theorem gives, for a Gram-normalized Hermitian family,
 q(w,s,n) := [x^2 F2] w D(sx) = w s^2/(4n).
 ```
 
-## Theorem
+## Theorem: two distinct transformations
+
+### 1. Fixed normalized family: scalar coefficient identity
 
 Let `n>=1` and let `w,s,c>0`. Define
 
@@ -38,6 +40,12 @@ q(w',s',n)
   = q(w,s,n).
 ```
 
+This is an identity between scalar-coordinate values of `q` for the same
+half-Gram family. For `c != 1`, changing `s` changes the exponent argument; no
+generator transformation is part of this first statement.
+
+### 2. Generator covariance: exponent identity and Gram change
+
 If the supplied Hermitian family also satisfies
 `Tr(T_a T_b)=delta_ab/2`, define `T'_a=c T_a`. Then
 
@@ -46,9 +54,22 @@ s'T'_a = sT_a,
 Tr(T'_a T'_b) = c^2 delta_ab/2.
 ```
 
-Thus the paired transformation preserves the product in the exponent and the
-native quadratic coefficient, while a nontrivial generator rescaling changes
-the supplied Gram relation.
+Writing `A'=sum_a f_a T'_a=cA`, the simultaneous map `s'=s/c` preserves the
+exponent and deficit exactly: `s'A'=sA` and `D_{T'}(s'x)=D_T(sx)`. It preserves
+the weighted expression only when `w'=w`. If one also imposes the first
+statement's `w'=c^2w`, the weighted deficit and its quadratic coefficient
+scale by `c^2`; they are not invariant.
+
+Equivalently, for a family with
+`Tr(T_aT_b)=kappa delta_ab/2`, direct Gram contraction gives
+
+```text
+q_kappa(w,s,n) = w s^2 kappa/(4n).
+```
+
+Under `T'=cT`, `s'=s/c`, and hence `kappa'=c^2 kappa`, this quantity is
+invariant for fixed `w`, while it scales by `c^2` if `w'=c^2w` is imposed as
+well.
 
 ## Proof
 
@@ -60,7 +81,10 @@ All statements are direct substitution and trace bilinearity:
 Tr((cT_a)(cT_b)) = c^2 Tr(T_aT_b).
 ```
 
-Positivity makes every displayed division defined. No other input is used.
+The generalized coefficient follows by replacing the half-Gram contraction
+with `Tr(A^2)=kappa F2/2`. Positivity of `c` makes the displayed division
+defined; the scalar coefficient identity itself is algebraic. No other input
+is used.
 
 ## Boundary
 
@@ -79,5 +103,5 @@ python3 scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py
 Expected:
 
 ```text
-TOTAL: PASS=81 FAIL=0
+TOTAL: PASS=91 FAIL=0
 ```

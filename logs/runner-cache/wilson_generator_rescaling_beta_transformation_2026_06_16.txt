@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py
-runner_sha256: 08cfaab5a41cafa340cea6b11769be4f42ae279b34161c7a3f62b2dff0d0a198
+runner_sha256: 92d8459fff4336fe7842057d54464614a9bf5ef38bf2816ad18c37adbac659e0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Formal scalar-argument rescaling and Gram transformation
@@ -18,6 +18,8 @@ Part 0: source boundaries
 [PASS] rescaling note contains marker: q(w',s',n)
 [PASS] rescaling note contains marker: s'T'_a = sT_a
 [PASS] rescaling note contains marker: Tr(T'_a T'_b) = c^2 delta_ab/2
+[PASS] rescaling note contains marker: It preserves the weighted expression only when `w'=w`
+[PASS] rescaling note contains marker: q_kappa(w,s,n) = w s^2 kappa/(4n)
 [PASS] rescaling note contains marker: does not choose a comparison coefficient
 [PASS] rescaling note contains marker: Any use beyond the displayed matrix and scalar algebra requi
 [PASS] removed target/status marker absent: preferred parameter value
@@ -30,74 +32,82 @@ Part 1: native matrix coefficient authority surface
 [PASS] matrix theorem contains marker: does not select either scalar
 [PASS] matrix theorem contains marker: requires separate authority and remains outside this theorem
 
-Part 2: exact native-coefficient transform
+Part 2: fixed-family scalar coefficient identity
 [PASS] native coefficient is positive for w=3/2, s^2=1, n=1  [q=3/8]
-[PASS] paired rescaling preserves q at w=3/2, s^2=1, c=1/3  [q'=3/8]
+[PASS] fixed-family scalar map preserves q at w=3/2, s^2=1, c=1/3  [q'=3/8]
 [PASS] paired scalar product cancels c^2 at c=1/3
-[PASS] paired rescaling preserves q at w=3/2, s^2=1, c=1/2  [q'=3/8]
+[PASS] fixed-family scalar map preserves q at w=3/2, s^2=1, c=1/2  [q'=3/8]
 [PASS] paired scalar product cancels c^2 at c=1/2
-[PASS] paired rescaling preserves q at w=3/2, s^2=1, c=1  [q'=3/8]
+[PASS] fixed-family scalar map preserves q at w=3/2, s^2=1, c=1  [q'=3/8]
 [PASS] paired scalar product cancels c^2 at c=1
-[PASS] paired rescaling preserves q at w=3/2, s^2=1, c=2  [q'=3/8]
+[PASS] fixed-family scalar map preserves q at w=3/2, s^2=1, c=2  [q'=3/8]
 [PASS] paired scalar product cancels c^2 at c=2
-[PASS] paired rescaling preserves q at w=3/2, s^2=1, c=5/2  [q'=3/8]
+[PASS] fixed-family scalar map preserves q at w=3/2, s^2=1, c=5/2  [q'=3/8]
 [PASS] paired scalar product cancels c^2 at c=5/2
-[PASS] paired rescaling preserves q at w=3/2, s^2=1, c=3  [q'=3/8]
+[PASS] fixed-family scalar map preserves q at w=3/2, s^2=1, c=3  [q'=3/8]
 [PASS] paired scalar product cancels c^2 at c=3
 [PASS] native coefficient is positive for w=5/7, s^2=9/4, n=2  [q=45/224]
-[PASS] paired rescaling preserves q at w=5/7, s^2=9/4, c=1/3  [q'=45/224]
+[PASS] fixed-family scalar map preserves q at w=5/7, s^2=9/4, c=1/3  [q'=45/224]
 [PASS] paired scalar product cancels c^2 at c=1/3
-[PASS] paired rescaling preserves q at w=5/7, s^2=9/4, c=1/2  [q'=45/224]
+[PASS] fixed-family scalar map preserves q at w=5/7, s^2=9/4, c=1/2  [q'=45/224]
 [PASS] paired scalar product cancels c^2 at c=1/2
-[PASS] paired rescaling preserves q at w=5/7, s^2=9/4, c=1  [q'=45/224]
+[PASS] fixed-family scalar map preserves q at w=5/7, s^2=9/4, c=1  [q'=45/224]
 [PASS] paired scalar product cancels c^2 at c=1
-[PASS] paired rescaling preserves q at w=5/7, s^2=9/4, c=2  [q'=45/224]
+[PASS] fixed-family scalar map preserves q at w=5/7, s^2=9/4, c=2  [q'=45/224]
 [PASS] paired scalar product cancels c^2 at c=2
-[PASS] paired rescaling preserves q at w=5/7, s^2=9/4, c=5/2  [q'=45/224]
+[PASS] fixed-family scalar map preserves q at w=5/7, s^2=9/4, c=5/2  [q'=45/224]
 [PASS] paired scalar product cancels c^2 at c=5/2
-[PASS] paired rescaling preserves q at w=5/7, s^2=9/4, c=3  [q'=45/224]
+[PASS] fixed-family scalar map preserves q at w=5/7, s^2=9/4, c=3  [q'=45/224]
 [PASS] paired scalar product cancels c^2 at c=3
 [PASS] native coefficient is positive for w=11/5, s^2=3/5, n=3  [q=11/100]
-[PASS] paired rescaling preserves q at w=11/5, s^2=3/5, c=1/3  [q'=11/100]
+[PASS] fixed-family scalar map preserves q at w=11/5, s^2=3/5, c=1/3  [q'=11/100]
 [PASS] paired scalar product cancels c^2 at c=1/3
-[PASS] paired rescaling preserves q at w=11/5, s^2=3/5, c=1/2  [q'=11/100]
+[PASS] fixed-family scalar map preserves q at w=11/5, s^2=3/5, c=1/2  [q'=11/100]
 [PASS] paired scalar product cancels c^2 at c=1/2
-[PASS] paired rescaling preserves q at w=11/5, s^2=3/5, c=1  [q'=11/100]
+[PASS] fixed-family scalar map preserves q at w=11/5, s^2=3/5, c=1  [q'=11/100]
 [PASS] paired scalar product cancels c^2 at c=1
-[PASS] paired rescaling preserves q at w=11/5, s^2=3/5, c=2  [q'=11/100]
+[PASS] fixed-family scalar map preserves q at w=11/5, s^2=3/5, c=2  [q'=11/100]
 [PASS] paired scalar product cancels c^2 at c=2
-[PASS] paired rescaling preserves q at w=11/5, s^2=3/5, c=5/2  [q'=11/100]
+[PASS] fixed-family scalar map preserves q at w=11/5, s^2=3/5, c=5/2  [q'=11/100]
 [PASS] paired scalar product cancels c^2 at c=5/2
-[PASS] paired rescaling preserves q at w=11/5, s^2=3/5, c=3  [q'=11/100]
+[PASS] fixed-family scalar map preserves q at w=11/5, s^2=3/5, c=3  [q'=11/100]
 [PASS] paired scalar product cancels c^2 at c=3
 [PASS] native coefficient is positive for w=7/2, s^2=25/9, n=5/2  [q=35/36]
-[PASS] paired rescaling preserves q at w=7/2, s^2=25/9, c=1/3  [q'=35/36]
+[PASS] fixed-family scalar map preserves q at w=7/2, s^2=25/9, c=1/3  [q'=35/36]
 [PASS] paired scalar product cancels c^2 at c=1/3
-[PASS] paired rescaling preserves q at w=7/2, s^2=25/9, c=1/2  [q'=35/36]
+[PASS] fixed-family scalar map preserves q at w=7/2, s^2=25/9, c=1/2  [q'=35/36]
 [PASS] paired scalar product cancels c^2 at c=1/2
-[PASS] paired rescaling preserves q at w=7/2, s^2=25/9, c=1  [q'=35/36]
+[PASS] fixed-family scalar map preserves q at w=7/2, s^2=25/9, c=1  [q'=35/36]
 [PASS] paired scalar product cancels c^2 at c=1
-[PASS] paired rescaling preserves q at w=7/2, s^2=25/9, c=2  [q'=35/36]
+[PASS] fixed-family scalar map preserves q at w=7/2, s^2=25/9, c=2  [q'=35/36]
 [PASS] paired scalar product cancels c^2 at c=2
-[PASS] paired rescaling preserves q at w=7/2, s^2=25/9, c=5/2  [q'=35/36]
+[PASS] fixed-family scalar map preserves q at w=7/2, s^2=25/9, c=5/2  [q'=35/36]
 [PASS] paired scalar product cancels c^2 at c=5/2
-[PASS] paired rescaling preserves q at w=7/2, s^2=25/9, c=3  [q'=35/36]
+[PASS] fixed-family scalar map preserves q at w=7/2, s^2=25/9, c=3  [q'=35/36]
 [PASS] paired scalar product cancels c^2 at c=3
 
 Part 3: exponent-product preservation and Gram change
 [PASS] s'T'=sT under c=1/2
 [PASS] half-Gram transforms by c^2 under c=1/2  [diagonal=1/8]
+[PASS] generator covariance preserves the quadratic coefficient at fixed w under c=1/2
+[PASS] adding w'=c^2 w scales the generator-transformed coefficient by c^2 under c=1/2
 [PASS] nontrivial c=1/2 changes the half-Gram value
 [PASS] s'T'=sT under c=1
 [PASS] half-Gram transforms by c^2 under c=1  [diagonal=1/2]
+[PASS] generator covariance preserves the quadratic coefficient at fixed w under c=1
+[PASS] adding w'=c^2 w scales the generator-transformed coefficient by c^2 under c=1
 [PASS] s'T'=sT under c=2
 [PASS] half-Gram transforms by c^2 under c=2  [diagonal=2]
+[PASS] generator covariance preserves the quadratic coefficient at fixed w under c=2
+[PASS] adding w'=c^2 w scales the generator-transformed coefficient by c^2 under c=2
 [PASS] nontrivial c=2 changes the half-Gram value
 [PASS] s'T'=sT under c=3
 [PASS] half-Gram transforms by c^2 under c=3  [diagonal=9/2]
+[PASS] generator covariance preserves the quadratic coefficient at fixed w under c=3
+[PASS] adding w'=c^2 w scales the generator-transformed coefficient by c^2 under c=3
 [PASS] nontrivial c=3 changes the half-Gram value
 
-TOTAL: PASS=81 FAIL=0
+TOTAL: PASS=91 FAIL=0
 
 ----- stderr -----
 

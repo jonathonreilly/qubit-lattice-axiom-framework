@@ -3,7 +3,7 @@ runner: scripts/frontier_g_bare_constraint_surface_check.py
 runner_sha256: 069e8c5e827a42aa5bc16826758a2c65cb064a432763d17f16be0a0a5483815e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 [PASS] source boundary marker present: conditional-support / bounded algebraic surface only

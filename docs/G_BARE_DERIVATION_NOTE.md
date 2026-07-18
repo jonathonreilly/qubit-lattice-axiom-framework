@@ -173,8 +173,6 @@ explicitly imposed:**
 - Wilson action-form selection remains outside this parent.
 - Global logarithm branch selection and continuum gauge-field limits remain
   outside this parent.
-- The mean-field, maximum-entropy, and lattice-beta-function routes still do
-  not select `g = 1`.
 
 **Numerical consequence (downstream only after independent re-audit):**
 
@@ -201,14 +199,6 @@ explicitly imposed:**
 4. **The other two DM imports still stand:**
    - `sigma_v = pi * alpha_s^2 / m^2` (perturbative QFT cross-section)
    - `V(r) = -C_F * alpha_s / r` (one-gluon exchange potential)
-
-5. **Approaches that do not work:**
-   - Strong-coupling fixed point: `SU(3)` has no nontrivial fixed point.
-   - Maximum entropy: selects `g -> infinity`, not `g = 1`.
-   - Mean-field iteration: diverges, does not converge to `g = 1`.
-   - Plaquette self-consistency: not uniquely selecting.
-
----
 
 ## Paper-Safe Wording
 
@@ -273,7 +263,5 @@ publication matrices, or effective-status surfaces.
 | Approach | Result | Status |
 |---|---|---|
 | Unitarity bound | `g=1` makes `U` unitary, but so does any real `g` | Not selecting |
-| Strong-coupling fixed point | `SU(3)` has no nontrivial fixed point | Does not work |
 | Finite-link rigidity + native matrix coefficient + `W-PHYS` + `SLOT-ID` | conditional `g_bare^2=1`, `beta=6` on explicit Wilson surface | Source-side conditional candidate; re-audit required |
-| Maximum entropy | Selects `g -> infinity` | Does not work |
 | Staggered Dirac normalization | Consistent with `g = 1` | Supporting, not standalone |

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_derivation.py
-runner_sha256: 200bfbd2925d004a86e8863fa9c01832c1fb1c690073ecad4d7d272c2c19e8ab
+runner_sha256: 4dad4b220fc4e40cb0babe324be9313b91e0aa3b60ebb6347809eba38bd91828
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -102,10 +102,10 @@ SECTION F: end-to-end derivation chain (no circular use of g_bare = 1)
 ========================================================================================
 SECTION G: source-side finite-link/Wilson bridge visibility
 ========================================================================================
-  [PASS] [BOUNDED] parent note exists  (/private/tmp/science-fix-wilson-taylor-core-20260718-0530/docs/G_BARE_DERIVATION_NOTE.md)
-  [PASS] [BOUNDED] bridge note exists  (/private/tmp/science-fix-wilson-taylor-core-20260718-0530/docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
-  [PASS] [BOUNDED] finite-link rigidity note exists  (/private/tmp/science-fix-wilson-taylor-core-20260718-0530/docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
-  [PASS] [BOUNDED] Wilson small-a note exists  (/private/tmp/science-fix-wilson-taylor-core-20260718-0530/docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+  [PASS] [BOUNDED] parent note exists  (/private/tmp/review-pr-5502-wilson-taylor-20260718-0648/docs/G_BARE_DERIVATION_NOTE.md)
+  [PASS] [BOUNDED] bridge note exists  (/private/tmp/review-pr-5502-wilson-taylor-20260718-0648/docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
+  [PASS] [BOUNDED] finite-link rigidity note exists  (/private/tmp/review-pr-5502-wilson-taylor-20260718-0648/docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
+  [PASS] [BOUNDED] Wilson small-a note exists  (/private/tmp/review-pr-5502-wilson-taylor-20260718-0648/docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
   [PASS] [BOUNDED] source marker present: No step uses `beta = 6` as a premise for `g_bare = 1`.
   [PASS] [BOUNDED] source marker present: G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06
   [PASS] [BOUNDED] source marker present: same scalar slot

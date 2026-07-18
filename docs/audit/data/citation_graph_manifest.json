@@ -1,6 +1,6 @@
 {
- "edge_count": 14438,
- "node_count": 3965,
+ "edge_count": 14443,
+ "node_count": 3966,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6837,6 +6837,10 @@
   "kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_bounded_theorem_note_2026-07-17": {
    "deps_hash": "3492e302d6ba",
    "out_degree": 4
+  },
+  "kcpt_corner_carrier_two_presentation_swap_proper_rotation_conjugacy_bounded_theorem_note_2026-07-18": {
+   "deps_hash": "31650363616a",
+   "out_degree": 5
   },
   "kcpt_coupling_triple_berezin_count_binary_measure_collapse_bounded_theorem_note_2026-07-17": {
    "deps_hash": "79fc309444f4",

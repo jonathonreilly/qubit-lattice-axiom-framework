@@ -28,6 +28,7 @@ import subprocess
 import sys
 import time
 import uuid
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -445,14 +446,56 @@ def launch_worker(
     }
 
 
+PROGRESS = {"t0": None, "last": 0.0, "interval_sec": 900, "report": None, "remaining": None}
+
+
+def maybe_progress_summary(jobs: list[dict] | None = None, force: bool = False) -> None:
+    """Print a one-block session summary at most every 15 minutes.
+
+    Interpretation-free: outcome counts come straight from the session
+    report entries, active workers from live process state. Console output
+    only — nothing tracked is written, so cadence cannot perturb any
+    artifact.
+    """
+    now = time.monotonic()
+    if PROGRESS["t0"] is None:
+        PROGRESS["t0"] = now
+        PROGRESS["last"] = now
+        if not force:
+            return
+    if not force and now - PROGRESS["last"] < PROGRESS["interval_sec"]:
+        return
+    PROGRESS["last"] = now
+    entries = PROGRESS.get("report") or []
+    counts = Counter(str(entry.get("result")) for entry in entries)
+    outcomes = ", ".join(f"{key} x{val}" for key, val in counts.most_common(8))
+    active = []
+    for job in jobs or []:
+        if job.get("returncode") is None and job["proc"].poll() is None:
+            minutes = int((now - job.get("started", now)) // 60)
+            active.append(f"{job['row']['claim_id']}#p{job.get('pass', '?')}({minutes}m)")
+    elapsed = int((now - PROGRESS["t0"]) // 60)
+    parts = [
+        f"== drain summary [{elapsed // 60}h{elapsed % 60:02d}m]",
+        f"outcomes so far: {outcomes or 'none yet'}",
+        f"active workers: {len(active)}"
+        + (f" [{', '.join(active[:8])}]" if active else ""),
+    ]
+    if PROGRESS.get("remaining") is not None:
+        parts.append(f"dep-ready remaining this round: {PROGRESS['remaining']}")
+    print("; ".join(parts), flush=True)
+
+
 def wait_workers(jobs: list[dict], stall_minutes: int = 45) -> None:
     pending = set(range(len(jobs)))
     stall_seconds = stall_minutes * 60
     try:
         while pending:
             now = time.monotonic()
+            maybe_progress_summary(jobs)
             for index in list(pending):
                 job = jobs[index]
+                job.setdefault("started", now)
                 output = job["raw_output"]
                 output_size = output.stat().st_size if output.exists() else 0
                 log_size = job["log_path"].stat().st_size if job["log_path"].exists() else 0
@@ -1021,6 +1064,7 @@ def main() -> int:
         or f"/tmp/audit_batch_{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')}_{uuid.uuid4().hex[:8]}"
     )
     report: list[dict] = []
+    PROGRESS["report"] = report
     session_skipped: set[str] = set()
     if not args.dry_run:
         try:
@@ -1060,6 +1104,8 @@ def main() -> int:
         scope.difference_update(session_skipped)
         targets, skipped = compute_targets(scope, rows, retarget=retarget)
         print(f"== round {round_no}: {len(targets)} dep-ready targets, {len(skipped)} skipped")
+        PROGRESS["remaining"] = len(targets)
+        maybe_progress_summary(force=(round_no == 1))
         for line in skipped:
             print(f"   skip: {line}")
         missing = [line for line in skipped if line.endswith("missing ledger row")]
@@ -1140,6 +1186,7 @@ def main() -> int:
                 report.append({"cid": cid, "result": "judicial_panel_required"})
             break
 
+    maybe_progress_summary(force=True)
     print("== batch report ==")
     for item in report:
         pass_label = f" p{item['pass']}" if "pass" in item else ""

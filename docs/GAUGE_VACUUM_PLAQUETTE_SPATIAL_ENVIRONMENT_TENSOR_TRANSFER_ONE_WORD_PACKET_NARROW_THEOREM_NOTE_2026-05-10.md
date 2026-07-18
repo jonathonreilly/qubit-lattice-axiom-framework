@@ -290,10 +290,9 @@ verifies:
   claim. This narrow theorem isolates the finite-linear-algebra packet
   and does not consume or assert the parent's structural identification.
 - `GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`
-  — bounded-theorem note for the explicitly stipulated integral values
-  `c_(p,q)(6) / (d_(p,q) c_(0,0)(6))` on `B_4`. This narrow
+  — bounded-theorem note for the single-link Wilson coefficient
+  computation `c_(p,q)(6) / (d_(p,q) c_(0,0)(6))` on `B_4`. This narrow
   theorem mentions it as the supplier of one default reference-instance
   diagonal used by the runner, but the abstract narrow statement is
   independent of any specific `c_(p,q)` choice as long as the abstract
-  hypotheses (positivity, conjugation symmetry) hold. The citation supplies no
-  physical environment or tensor-transfer identification.
+  hypotheses (positivity, conjugation symmetry) hold.

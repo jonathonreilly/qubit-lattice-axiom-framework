@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py
-runner_sha256: a43ad241047071f12ffb6bd19069ede1f8f9c42e53258488bd8d26d300004570
+runner_sha256: 9985025d743e2ed898bfecf5f8440c8b0a206e7b538352b6cb97429d530c6a0d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
 
 ========================================================================================
  frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py
 ========================================================================================
- Bounded source note: one explicit positive matrix tensor_word,
+ Bounded source note: one explicit nonnegative-entry matrix tensor_word,
  constructed at NMAX = 4, MODE_MAX = 80, x = 2 from stipulated
  finite integral coefficients and SU(3) fusion multiplicities.
  Verifies three load-bearing structural properties (P1)-(P3) at
@@ -26,7 +26,7 @@ status: ok
   [PASS] contains: claim_type: bounded_theorem  (marker = 'Claim type:** bounded_theorem')
   [PASS] contains: bounded status phrase  (marker = 'finite truncated tensor-word packet only')
   [PASS] contains: Claim section header  (marker = '## Claim')
-  [PASS] contains: Bounded admissions section header  (marker = '## Bounded admissions')
+  [PASS] contains: Bounded inputs section header  (marker = '## Bounded inputs')
   [PASS] contains: Proof-Walk section header  (marker = '## Proof-Walk')
   [PASS] contains: Dependencies section header  (marker = '## Dependencies')
   [PASS] contains: Boundaries section header  (marker = '## Boundaries')
@@ -35,11 +35,10 @@ status: ok
   [PASS] contains: (P2) conjugation-swap stated  (marker = '(P2) **Conjugation-swap')
   [PASS] contains: (P3) boundary nonneg stated  (marker = '(P3) **Nonnegative boundary amplitude')
   [PASS] contains: (P3-corollary) S·boundary0=boundary0 derived from (P2)  (marker = 'Derived corollary of (P2)')
-  [PASS] contains: BA-1 stipulated finite integral coefficients stated  (marker = '(BA-1) **Stipulated finite integral coefficients.**')
-  [PASS] contains: BA-2 fusion multiplicities stated  (marker = '(BA-2) **`SU(3)` fundamental and anti-fundamental fusion')
+  [PASS] contains: I-1 stipulated finite integral coefficients stated  (marker = '(I-1) **Stipulated finite integral coefficients.**')
+  [PASS] contains: I-2 fusion multiplicities stated  (marker = '(I-2) **`SU(3)` fundamental and anti-fundamental fusion')
   [PASS] contains: parent-note cite: GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER  (marker = 'GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md')
   [PASS] contains: Wilson-environment companion cited (rho_pq6)  (marker = 'GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09')
-  [PASS] contains: MINIMAL_AXIOMS upstream cited  (marker = 'MINIMAL_AXIOMS_2026-05-03')
   [PASS] contains: explicit not-claimed: parent's matrix-element identity  (marker = "claim the parent note's structural matrix-element identity")
   [PASS] contains: explicit not-claimed: full untruncated case  (marker = 'close the full untruncated tensor-transfer construction')
   [PASS] contains: split-note finite-packet framing  (marker = 'split note for one finite tensor-word packet')
@@ -85,22 +84,21 @@ status: ok
 ----------------------------------------------------------------------------------------
   [PASS] upstream exists: docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md
   [PASS] upstream exists: docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md
-  [PASS] upstream exists: docs/MINIMAL_AXIOMS_2026-05-03.md
 
 ----------------------------------------------------------------------------------------
  Part 4: construct tensor_word; verify (P1), (P2), (P3.a), (P3.b)
 ----------------------------------------------------------------------------------------
   truncation: NMAX = 4 (weight box [0..4]^2 = 25 states)
-             MODE_MAX = 80 (Wilson Bessel mode sum)
+             MODE_MAX = 80 (Bessel mode sum)
              beta = 6.0, beta/3 = 2.0
 
-  [PASS] (BA-2) N_f entries in {0, 1}
-  [PASS] (BA-2) N_fbar entries in {0, 1}
-  [PASS] (BA-2) S · N_f = N_fbar · S (fundamental ↔ anti-fundamental conjugation)  (max |S·N_f - N_fbar·S| = 0)
-  [PASS] (BA-2) S · N_fbar = N_f · S (conjugation symmetry)  (max |S·N_fbar - N_f·S| = 0)
-  [PASS] (BA-1) c_(0,0)(6) > 0  (c_(0,0)(6) = 3.441440)
-  [PASS] (BA-1) normalized[(0,0)] = 1 (definition)  (normalized[(0,0)] = 1.000000000000000)
-  [PASS] (BA-1) c_(p,q)(6) = c_(q,p)(6) up to normalization (conjugation symmetry)  (max |normalized - swap·normalized| = 2.78e-17)
+  [PASS] (I-2) N_f entries in {0, 1}
+  [PASS] (I-2) N_fbar entries in {0, 1}
+  [PASS] (I-2) S · N_f = N_fbar · S (fundamental ↔ anti-fundamental conjugation)  (max |S·N_f - N_fbar·S| = 0)
+  [PASS] (I-2) S · N_fbar = N_f · S (conjugation symmetry)  (max |S·N_fbar - N_f·S| = 0)
+  [PASS] (I-1) c_(0,0)(x=2) > 0  (c_(0,0)(2) = 3.441440)
+  [PASS] (I-1) normalized[(0,0)] = 1 (definition)  (normalized[(0,0)] = 1.000000000000000)
+  [PASS] (I-1) c_(p,q)(2) = c_(q,p)(2) up to normalization (conjugation symmetry)  (max |normalized - swap·normalized| = 2.78e-17)
 
   tensor_word: 25 x 25 real matrix
                built from diag_c · (N_f+N_fbar) · diag_c · (N_f+N_fbar)^T · diag_c
@@ -138,13 +136,13 @@ status: ok
   [PASS] note explicitly does not claim: change any parent or companion source row
   [PASS] claim_type: bounded_theorem stated
   [PASS] split-note finite-packet framing referenced
-  [PASS] (BA-1) and (BA-2) admitted as bounded textbook inputs
+  [PASS] (I-1) and (I-2) are declared supplied mathematical inputs
 
 ========================================================================================
- TOTAL: PASS=76, FAIL=0
+ TOTAL: PASS=74, FAIL=0
 ========================================================================================
 
- RESULT: one explicit positive matrix tensor_word constructed from
+ RESULT: one explicit nonnegative-entry matrix tensor_word constructed from
  stipulated finite integral coefficients (NMAX=4, MODE_MAX=80,
  x=2) and SU(3) fusion multiplicities verifies three load-bearing
  structural properties at double precision: (P1) nonnegativity of

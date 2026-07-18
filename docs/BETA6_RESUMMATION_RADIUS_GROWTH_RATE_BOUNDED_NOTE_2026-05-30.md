@@ -244,9 +244,9 @@ comparator). These are **not** in conflict: `8.2052` is cube-sector /
 single-plaquette context, while a sub-`6` thermodynamic singularity, if it
 exists, must come from at least one residual not controlled here: tree-sector
 growth `g_tree >= 81`, compact K-built face-deficit growth, or the baryon-channel
-sector. The location `|beta_c|`
-remains the under-determined `rho_{p,q}(6)` object restated in the beta-plane
-(`BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md`).
+sector. The thermodynamic location `|beta_c|` and any physical boundary
+coefficient sequence are separate open inputs. The stipulated finite integral
+table supplies neither (`BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md`).
 
 ## 5. No-Go Discipline Gate
 
@@ -283,14 +283,15 @@ as proof inputs.
 **N4 — Residual matching.** The residual attacked is the tree K-built growth
 budget and the false all-K-built fixed-increment bridge, not the full beta=6
 plaquette value and not the full thermodynamic radius.
-The cited beta-plane frontier note is context for that same residual.
+The cited beta-plane frontier note concerns a separate analytic-continuation
+residual; it is context only, not a restatement of the tree-growth budget.
 
 **N5 — Rhetoric audit.** The claim is sector-scoped. It does not assert a
 lattice-wide closure, a full-series convergence theorem, a beta=6 value, or a
 proof that the thermodynamic Fisher-zero surface is absent.
 
 **N6 — Partial-closure path scan.** The legitimate retirement path is to supply
-a later audited/admitted cluster-expansion bound proving `g_tree < 81`, a compact
+a separately approved cluster-expansion bound proving `g_tree < 81`, a compact
 K-built face-deficit/area-growth bound, and a separate bound on the `>=3`-face
 baryon/epsilon sector. No new baseline premise is requested.
 
@@ -300,10 +301,10 @@ cumulants may push `g_tree >= 81`; even if they do not, compact face deficits
 can weaken Euler suppression while staying K-built. This is exactly why the
 branch is tree-scoped and not landed as a full K-built closure.
 
-**N8 — Cross-cycle echo.** The same beta=6 wall appears in the analytic-class
-frontier and `rho_{p,q}(6)` notes. This note preserves that wall, but makes one
-piece of it discoverable as the concrete tree-sector product bound
-`g_tree < 81` and another piece discoverable as the compact-deficit wall.
+**N8 — Cross-cycle separation.** The tree-sector product bound, the compact
+face-deficit wall, the thermodynamic analytic-continuation input, and any
+physical boundary coefficient sequence are distinct residuals. The stipulated
+`rho_(p,q)(6)` integral table is not evidence for any of those physical walls.
 
 ## 6. Runner scorecard
 

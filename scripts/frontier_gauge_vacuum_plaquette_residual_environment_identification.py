@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Residual-environment finite coefficient packet on the accepted Wilson 3+1
-surface.
+Consumer-defined finite coefficient packet on a truncated source-sector
+matrix model.
 
 Previously this runner injected a generic positive conjugation-symmetric
 diagonal witness rho_env(p,q) and verified packaging only. The auditor
@@ -23,8 +23,8 @@ What this runner does on the finite 0 <= p,q <= NMAX box:
   than hard-coding a witness table;
 - verifies the finite diagonal packet action
   R_6^packet chi_(p,q) = rho_(p,q)(6) chi_(p,q) with the computed values;
-- verifies the factorized framework-point law
-  exp(3 J) D_6^loc R_6^packet exp(3 J) is self-adjoint,
+- verifies the consumer-defined finite packaging law
+  exp(3 J) D_6^packet R_6^packet exp(3 J) is self-adjoint,
   conjugation-symmetric and Perron-positive with those computed values;
 - documents the explicit numerical distance from the prior witness so the
   chosen finite input is not confused with the old hard-coded table.
@@ -168,7 +168,8 @@ def main() -> int:
     d_local = np.diag(local**4)
 
     # Chosen finite-box packet from the stipulated integral.  The same
-    # Schur-Weyl Bessel-determinant identity is used for the consumer's D_6^loc;
+    # Schur-Weyl Bessel-determinant identity is used for the consumer's
+    # separately constructed D_6^packet;
     # no physical residual-environment identification follows from that choice.
     rho_env = local.copy()
     r_env = np.diag(rho_env)
@@ -190,7 +191,7 @@ def main() -> int:
     rho_at_00 = float(rho_env[index[(0, 0)]])
 
     # Direct eigen-action check on the marked class-function basis: the finite
-    # diagonal packet, built from the computed Wilson coefficients, acts on
+    # diagonal packet, built from the stipulated-integral coefficients, acts on
     # each chi_(p,q) (here represented by e_(p,q)) with eigenvalue
     # rho_(p,q)(6).
     eig_action_err = 0.0
@@ -206,13 +207,13 @@ def main() -> int:
     expectation = float(psi @ (jmat @ psi))
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE RESIDUAL ENVIRONMENT FINITE COEFFICIENT PACKET")
+    print("CONSUMER-DEFINED FINITE COEFFICIENT MATRIX PACKET")
     print("=" * 78)
     print()
     print("Exact already-fixed pieces")
     print(f"  source-operator symmetry error        = {float(np.max(np.abs(jmat - jmat.T))):.3e}")
     print(f"  half-slice multiplier min eig         = {float(np.min(np.linalg.eigvalsh(multiplier))):.12f}")
-    print(f"  local-factor min/max                  = {float(np.min(np.diag(d_local))):.12e}, {float(np.max(np.diag(d_local))):.12f}")
+    print(f"  fourth-power diagonal min/max         = {float(np.min(np.diag(d_local))):.12e}, {float(np.max(np.diag(d_local))):.12f}")
     print()
     print("Computed finite packet coefficients (Bessel-determinant, finite box)")
     print(f"  rho_(0,0)(6)                          = {rho_at_00:.16f}")
@@ -240,14 +241,14 @@ def main() -> int:
         detail=f"min eigenvalue={float(np.min(np.linalg.eigvalsh(multiplier))):.6f}",
     )
     check(
-        "the normalized mixed-kernel local factor D_6^loc is explicit, positive, diagonal, and conjugation-symmetric",
+        "the separately constructed fourth-power diagonal D_6^packet is positive, diagonal, and conjugation-symmetric",
         float(np.min(np.diag(d_local))) > 0.0 and float(np.max(np.abs(swap @ d_local - d_local @ swap))) < 1.0e-12,
-        detail=f"min diagonal entry={float(np.min(np.diag(d_local))):.6e}",
+        detail=f"min diagonal entry={float(np.min(np.diag(d_local))):.6e}; no local-factor authority is claimed",
     )
     check(
-        "the finite diagonal packet R_6^packet is built from the stipulated-integral coefficients rho_(p,q)(6), not from a hard-coded witness table",
-        witness_diff_abs > 1.0e-2 and abs(rho_at_00 - 1.0) < 1.0e-12 and rho_min > 0.0,
-        detail=f"rho_(0,0)(6)={rho_at_00:.12f}, min rho={rho_min:.6e}, max |rho - prior_witness|={witness_diff_abs:.3e}",
+        "the finite diagonal packet R_6^packet uses normalized positive stipulated-integral coefficients rho_(p,q)(6)",
+        abs(rho_at_00 - 1.0) < 1.0e-12 and rho_min > 0.0,
+        detail=f"rho_(0,0)(6)={rho_at_00:.12f}, min rho={rho_min:.6e}",
     )
     check(
         "the chosen R_6^packet acts diagonally on the finite class-function basis with R_6^packet chi_(p,q) = rho_(p,q)(6) chi_(p,q)",
@@ -255,15 +256,21 @@ def main() -> int:
         detail=f"eigen-action error = {eig_action_err:.3e}",
     )
     check(
-        "with the chosen stipulated-integral packet substituted, the finite package exp(3 J) D_6^loc R_6^packet exp(3 J) is self-adjoint, conjugation-symmetric, and positivity-improving on the truncated source sector",
+        "with the chosen stipulated-integral packet substituted, the finite package exp(3 J) D_6^packet R_6^packet exp(3 J) is self-adjoint, conjugation-symmetric, and positivity-improving on the truncated source sector",
         rho_sym < 1.0e-12 and commute_err < 1.0e-12 and transfer_sym < 1.0e-12 and transfer_swap < 1.0e-12 and transfer_min > 0.0,
         detail=f"rho_swap={rho_sym:.3e}, [D,R]={commute_err:.3e}, transfer_sym={transfer_sym:.3e}, transfer_swap={transfer_swap:.3e}, min entry={transfer_min:.3e}",
     )
 
     check(
-        "the finite diagonal packet R_6^packet is structurally distinct from the local mixed-kernel factor D_6^loc and is isolated as its own source-sector object",
+        "regression: the chosen stipulated-integral packet differs from the retired hard-coded witness table",
+        witness_diff_abs > 1.0e-2,
+        detail=f"max |rho - prior_witness|={witness_diff_abs:.3e}; this is bookkeeping, not mathematical evidence",
+        bucket="SUPPORT",
+    )
+    check(
+        "the finite diagonal packet R_6^packet is algebraically distinct from the separately constructed D_6^packet diagonal",
         float(np.max(np.abs(np.diag(r_env) - 1.0))) > 1.0e-3,
-        detail="the mixed kernel is fixed by D_6^loc; R_6^packet supplies the computed finite coefficient slot",
+        detail="the two consumer-defined matrices differ; no physical placement is inferred",
         bucket="SUPPORT",
     )
     check(

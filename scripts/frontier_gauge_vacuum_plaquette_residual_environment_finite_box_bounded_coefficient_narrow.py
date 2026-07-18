@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Narrow finite-box bounded-coefficient identification runner for the
-plaquette residual-environment operator.
+Narrow finite-box bounded-coefficient runner for an abstract diagonal
+character operator.
 
 Verifies the standalone finite-truncation algebraic identity stated in
 
@@ -25,10 +25,9 @@ on the finite weight box B = {(p, q) : 0 <= p, q <= 4}. Specifically:
              (not a re-derivation by witness),
          (b) checking diagonal action R[rho(6)] chi_(p,q) = rho_(p,q)(6) chi_(p,q)
              with eigen-action error 0,
-         (c) checking the definitional round trip obtained by stripping
-             exp(3 J) and D_6^loc from the explicit one-step Wilson source-
-             sector restricted to the finite box equals R[rho(6)] to
-             machine precision on H_B,
+         (c) checking that a consumer-defined construct-then-strip package
+             returns D_6^packet R[rho(6)] to machine precision on H_B; this is
+             bookkeeping, not evidence for an environment identification,
          (d) cross-check that rho(6) differs from the prior witness
              sequences used in the parent residual_environment runner and
              the parent spatial_environment_character_measure runner;
@@ -72,6 +71,7 @@ _spec.loader.exec_module(_companion)
 
 
 THEOREM_PASS = 0
+SUPPORT_PASS = 0
 FAIL = 0
 
 NMAX = 4
@@ -79,14 +79,17 @@ BETA = 6.0
 ARG = BETA / 3.0
 
 
-def check(name: str, condition: bool, detail: str = "") -> None:
-    global THEOREM_PASS, FAIL
+def check(name: str, condition: bool, detail: str = "", bucket: str = "THEOREM") -> None:
+    global THEOREM_PASS, SUPPORT_PASS, FAIL
     status = "PASS" if condition else "FAIL"
     if condition:
-        THEOREM_PASS += 1
+        if bucket == "SUPPORT":
+            SUPPORT_PASS += 1
+        else:
+            THEOREM_PASS += 1
     else:
         FAIL += 1
-    print(f"  [{status}] [THEOREM] {name}")
+    print(f"  [{status}] [{bucket}] {name}")
     if detail:
         print(f"         {detail}")
 
@@ -162,13 +165,37 @@ def prior_residual_identification_witness(p: int, q: int) -> float:
     return float(np.exp(-0.27 * (p + q) - 0.07 * ((p - q) ** 2)))
 
 
-def wilson_local_factor_finite_box(nmax: int) -> np.ndarray:
-    """D_beta^loc = diag(a_(p,q)^4) where a_(p,q) = rho_(p,q) (single-link
-    Wilson normalized coefficient). The local factor uses the same single-
-    link coefficient as a consumer-side stipulation.  The companion does not
-    derive this local/environment identification."""
-    rho = companion_rho_finite_box(nmax)
-    return rho ** 4
+def consumer_fourth_power_diagonal(nmax: int) -> np.ndarray:
+    """Independently evaluate the consumer-stipulated fourth-power diagonal.
+
+    This recomputation deliberately does not import the companion packet as
+    authority for the separately constructed matrix.
+    """
+    weights = weights_box(nmax)
+
+    def coefficient(p: int, q: int) -> float:
+        lam = [p + q, q, 0]
+        return float(
+            sum(
+                np.linalg.det(
+                    np.array(
+                        [
+                            [iv(mode + lam[j] + i - j, ARG) for j in range(3)]
+                            for i in range(3)
+                        ],
+                        dtype=float,
+                    )
+                )
+                for mode in range(-80, 81)
+            )
+        )
+
+    c00 = coefficient(0, 0)
+    local = np.asarray(
+        [coefficient(p, q) / (dim_su3(p, q) * c00) for p, q in weights],
+        dtype=float,
+    )
+    return local**4
 
 
 def main() -> int:
@@ -241,32 +268,30 @@ def main() -> int:
         expected = rho[i] * e
         eig_action_err = max(eig_action_err, float(np.max(np.abs(action - expected))))
 
-    # ---- N3(c): coincidence with explicit-stripping definition
-    # Build the explicit one-step Wilson source-sector kernel on H_B as
-    #   K_6^src = exp(3 J) D_6^loc R_6^env exp(3 J),
-    # taking D_6^loc = diag(rho^4) by the local/environment factorization
-    # (the parent local note's bounded statement), and R_6^env := diag(rho).
-    # Then strip the half-slice multipliers and D_6^loc to recover R_6^env.
-    local_diag = wilson_local_factor_finite_box(NMAX)
-    D_loc = np.diag(local_diag)
-    K_src = multiplier @ D_loc @ R @ multiplier
+    # ---- N3(c): consumer-defined construct-then-strip bookkeeping check.
+    # The fourth-power diagonal is independently recomputed in this consumer.
+    # The round trip supplies no environment or operator-placement authority to the
+    # companion packet.
+    packet_diag = consumer_fourth_power_diagonal(NMAX)
+    D_packet = np.diag(packet_diag)
+    K_packet = multiplier @ D_packet @ R @ multiplier
     # Strip: multiply on both sides by exp(-3 J) = multiplier^{-1} and then
-    # divide D_loc.
+    # divide D_packet.
     multiplier_inv = np.linalg.inv(multiplier)
-    stripped_intermediate = multiplier_inv @ K_src @ multiplier_inv
-    # stripped_intermediate should equal D_loc @ R
-    DR_err = float(np.max(np.abs(stripped_intermediate - D_loc @ R)))
+    stripped_intermediate = multiplier_inv @ K_packet @ multiplier_inv
+    # stripped_intermediate should equal D_packet @ R
+    DR_err = float(np.max(np.abs(stripped_intermediate - D_packet @ R)))
     # Off-diagonal of stripped_intermediate must vanish for the recovery to be
     # well-defined
     off_diag_resid = float(
         np.max(np.abs(stripped_intermediate - np.diag(np.diag(stripped_intermediate))))
     )
-    # Structural recovery is the *forward* test: build K_6^src from
-    #   K_6^src := exp(3J) D_6^loc R[rho(6)] exp(3J)
+    # Structural recovery is the *forward* test: build K_6[rho] from
+    #   K_6[rho] := exp(3J) D_6^packet R[rho(6)] exp(3J)
     # and verify that pre-multiplying by exp(-3J) on both sides recovers
-    # D_6^loc R[rho(6)], i.e. recovers D_loc @ R EXACTLY (the DR_err check
-    # above). The reverse division "stripped/D_loc -> rho" is numerically
-    # unstable because D_loc = rho^4 has min entry ~rho_min^4 = (2.3e-5)^4
+    # D_6^packet R[rho(6)], i.e. recovers D_packet @ R EXACTLY (the DR_err check
+    # above). The reverse division "stripped/D_packet -> rho" is numerically
+    # unstable because D_packet = rho^4 has min entry ~rho_min^4 = (2.3e-5)^4
     # ~3e-19, which is below the noise floor after matrix conjugation.
     # The forward test DR_err < 1e-12 is the structurally correct version
     # of the recovery statement; division by a near-zero positive diagonal
@@ -313,8 +338,7 @@ def main() -> int:
     sym_match = nontrivial == expected_constraints
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE RESIDUAL-ENVIRONMENT FINITE-BOX BOUNDED")
-    print("COEFFICIENT NARROW")
+    print("FINITE-BOX DIAGONAL CHARACTER-OPERATOR COEFFICIENT PACKET")
     print("=" * 78)
     print()
     print(f"NMAX = {NMAX}, finite box size = {len(weights)}")
@@ -336,11 +360,11 @@ def main() -> int:
     print()
     print("Finite-box diagonal-action and stripping checks")
     print(f"  eigen-action error                 = {eig_action_err:.3e}")
-    print(f"  K_src stripping intermediate err   = {DR_err:.3e}")
+    print(f"  K_packet stripping intermediate err= {DR_err:.3e}")
     print(f"  stripped off-diagonal residual     = {off_diag_resid:.3e}")
     # Forward stripping recovery (the structurally correct test) reported via
-    # DR_err above; the reverse division "stripped / D_loc -> rho" is omitted
-    # as numerically meaningless when D_loc has entries < 1e-19.
+    # DR_err above; the reverse division "stripped / D_packet -> rho" is omitted
+    # as numerically meaningless when D_packet has entries < 1e-19.
     print()
     print("Witness cross-check")
     print(f"  max |rho(6) - prior char witness | = {diff_char:.3e}")
@@ -376,9 +400,10 @@ def main() -> int:
         detail=f"max swap-commutator residual = {swap_err:.3e}",
     )
     check(
-        "N2 finite-box Peter-Weyl convolution-on-characters identity chi_a * chi_b = (delta_(a,b)/d_a) chi_a holds for every (a, b) in B x B",
+        "N2 structure-constant encoding matches chi_a * chi_b = (delta_(a,b)/d_a) chi_a for every (a, b) in B x B",
         pw_max == 0.0,
-        detail=f"max algebraic error = {pw_max:.3e}",
+        detail=f"max encoding error = {pw_max:.3e}; the note's orthogonality proof is the mathematical evidence",
+        bucket="SUPPORT",
     )
     companion_provenance_ok = (
         os.path.realpath(_companion.__file__) == os.path.realpath(_companion_path)
@@ -387,36 +412,43 @@ def main() -> int:
         "N3(a) provenance: rho(6) values are consumed from the stipulated-integral companion rather than a hard-coded witness table",
         companion_provenance_ok,
         detail=f"loaded companion source basename: {os.path.basename(_companion.__file__)}",
+        bucket="SUPPORT",
     )
     check(
         "N3(b) R[rho(6)] chi_(p,q) = rho_(p,q)(6) chi_(p,q) on every finite-box weight",
         eig_action_err == 0.0,
         detail=f"max eigen-action error = {eig_action_err:.3e}",
+        bucket="SUPPORT",
     )
     check(
-        "N3(c) stripping exp(3 J) from K_6^src yields D_6^loc R_6^env exactly on the finite box",
+        "N3(c) stripping exp(3 J) from the constructed K_6[rho] returns D_6^packet R[rho] on the finite box",
         DR_err < 1.0e-12,
         detail=f"max stripping residual = {DR_err:.3e}",
+        bucket="SUPPORT",
     )
     check(
-        "N3(c) the stripped operator has no off-diagonal residual on the finite-box character basis (forces a diagonal residual)",
+        "N3(c) the constructed diagonal input round-trips without an off-diagonal residual",
         off_diag_resid < 1.0e-12,
-        detail=f"off-diagonal residual = {off_diag_resid:.3e}",
+        detail=f"off-diagonal residual = {off_diag_resid:.3e}; no diagonality is inferred for an independently supplied kernel",
+        bucket="SUPPORT",
     )
     check(
-        "N3(c) the consumer-defined identity K_6^src = exp(3 J) D_6^loc R[rho(6)] exp(3 J) round-trips at machine precision on the finite box",
+        "N3(c) the consumer-defined identity K_6[rho] = exp(3 J) D_6^packet R[rho(6)] exp(3 J) round-trips at machine precision on the finite box",
         DR_err < 1.0e-12 and off_diag_resid < 1.0e-12,
-        detail=f"forward identity verified to {DR_err:.3e}; reverse division by D_loc omitted as numerically meaningless when min D_loc entry ~ {float(np.min(local_diag)):.3e}",
+        detail=f"forward identity verified to {DR_err:.3e}; reverse division by D_packet omitted as numerically meaningless when min D_packet entry ~ {float(np.min(packet_diag)):.3e}",
+        bucket="SUPPORT",
     )
     check(
-        "N3(d) rho(6) differs from the prior character-measure witness sequence by a definite tabulated amount (not a relabeling)",
+        "N3(d) regression: rho(6) differs from the prior character-measure witness sequence",
         diff_char > 1.0e-3,
-        detail=f"max difference = {diff_char:.3e}",
+        detail=f"max difference = {diff_char:.3e}; this is bookkeeping, not mathematical evidence",
+        bucket="SUPPORT",
     )
     check(
-        "N3(d) rho(6) differs from the prior residual-identification witness sequence by a definite tabulated amount (not a relabeling)",
+        "N3(d) regression: rho(6) differs from the prior residual-identification witness sequence",
         diff_resid > 1.0e-3,
-        detail=f"max difference = {diff_resid:.3e}",
+        detail=f"max difference = {diff_resid:.3e}; this is bookkeeping, not mathematical evidence",
+        bucket="SUPPORT",
     )
     check(
         "N4 sympy symbolic check: the swap-commutator constraint generates exactly the conjugation-symmetry constraint rho_(p,q) = rho_(q,p) on the finite box (no extra constraint required)",
@@ -426,7 +458,7 @@ def main() -> int:
 
     print()
     print("=" * 78)
-    print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} FAIL={FAIL}")
+    print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")
     print("=" * 78)
     return 0 if FAIL == 0 else 1
 

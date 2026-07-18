@@ -167,14 +167,13 @@ The row also does not supply an all-weight formula, a uniform truncation-error
 bound, an untruncated tensor-transfer/Perron result, or analytic closure of
 `P(6)`.
 
-## Audit consequence
+## Machine-readable source metadata
 
 ```yaml
 claim_id: gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09
 note_path: docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md
 runner_path: scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py
 claim_type: bounded_theorem
-intrinsic_status: unaudited
 deps: []
 audit_authority: independent audit lane only
 ```

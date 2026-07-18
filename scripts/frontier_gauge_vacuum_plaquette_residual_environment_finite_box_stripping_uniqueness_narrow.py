@@ -3,34 +3,35 @@
 Finite-box stripping-uniqueness narrow runner on the marked-plaquette SU(3)
 class-function sector.
 
-Closes, at finite-box scope `0 <= p,q <= NMAX`, the algebraic uniqueness of
-the stripped residual factor R_beta^env in the source-sector decomposition
+Checks, at finite-box scope `0 <= p,q <= NMAX`, the algebraic uniqueness of
+an operator R in the supplied matrix factorization
 
-    K_beta^src|_B = exp[(beta/2) J|_B] D_beta^loc|_B R_beta^env|_B exp[(beta/2) J|_B].
+    K|_B = exp[(beta/2) J|_B] D_beta^packet|_B R|_B exp[(beta/2) J|_B].
 
 The half-slice multiplier exp[(beta/2) J|_B] is positive definite (so
-invertible) because J|_B is real symmetric. The local Wilson factor
-D_beta^loc|_B is positive diagonal (so invertible) because a_(p,q)(beta) > 0
-for beta > 0. Therefore the decomposition algebraically inverts to
+invertible) because J|_B is real symmetric. The separately constructed
+fourth-power diagonal D_beta^packet|_B is positive (so invertible) because
+a_(p,q)(beta) > 0 for beta > 0. Therefore the factorization algebraically
+inverts to
 
-    R_beta^env|_B = (D_beta^loc|_B)^{-1} exp[-(beta/2) J|_B] K_beta^src|_B exp[-(beta/2) J|_B],
+    R|_B = (D_beta^packet|_B)^{-1} exp[-(beta/2) J|_B] K|_B exp[-(beta/2) J|_B],
 
-which uniquely determines the finite-box stripped residual factor from the
-kernel and stripping data.
+which uniquely determines the finite-box operator from the supplied matrix
+and factors. It does not identify any factor with a physical Wilson object.
 
-Numerics. The local Wilson factor D_beta^loc has eigenvalues that span ~14
+Numerics. The fourth-power diagonal D_beta^packet has eigenvalues that span ~14
 orders of magnitude even on the modest finite box used here, so naive
 float64 inversion of D loses precision. The runner therefore uses mpmath
 high-precision arithmetic for the algebraic stripping checks, and float64
 only for context printout.
 
-This runner does not duplicate the iter-b7 / bounded-companion numerical
-witness sourcing (Wilson character integrals); it consumes the bounded
-companion's rho_(p,q)(6) values only as input for the (U5) cross-check.
+This runner independently recomputes the stipulated character integral used for the
+(U5) chosen-input cross-check. The bounded companion is a separate numerical
+evaluation, not operator-placement authority.
 The runner's load-bearing claim is the algebraic uniqueness of (S), not
-the numerical value of the canonical Wilson single-link boundary character
+the numerical value of the stipulated single-link-form character
 coefficients.  A hostile positive self-adjoint swap-symmetric off-diagonal
-residual is included to show that stripping uniqueness does not imply
+operator is included to show that stripping uniqueness does not imply
 character diagonality.
 """
 
@@ -248,30 +249,30 @@ def main() -> int:
     M_det = float(np.linalg.det(M_f64))
 
     c00 = wilson_character_coefficient(0, 0)
-    local = np.array(
+    coefficients = np.array(
         [wilson_character_coefficient(p, q) / (dim_su3(p, q) * c00) for p, q in weights],
         dtype=float,
     )
     # Enforce swap symmetry of the stipulated finite integral coefficient
-    # (a_(p,q) = a_(q,p)) at float64 precision so D and the local
+    # (a_(p,q) = a_(q,p)) at float64 precision so D and the coefficient
     # array do not carry asymmetric float64 round-off that would propagate
     # through the mpmath checks in (U4).
     for k, (p, q) in enumerate(weights):
         k_swap = index[(q, p)]
         if k_swap > k:
-            avg = 0.5 * (local[k] + local[k_swap])
-            local[k] = avg
-            local[k_swap] = avg
-    D_loc_f64 = np.diag(local**4)
-    D_min_eig = float(np.min(np.diag(D_loc_f64)))
-    D_det = float(np.linalg.det(D_loc_f64))
+            avg = 0.5 * (coefficients[k] + coefficients[k_swap])
+            coefficients[k] = avg
+            coefficients[k_swap] = avg
+    D_packet_f64 = np.diag(coefficients**4)
+    D_min_eig = float(np.min(np.diag(D_packet_f64)))
+    D_det = float(np.linalg.det(D_packet_f64))
 
     # ---- mpmath high-precision algebra ----
     M = mp_matrix_exponential_symmetric(jmat, BETA / 2.0)
     M_inv = mp_inv(M)
     M_invert_err = mp_max_abs_diff(M * M_inv, mp.eye(n))
 
-    D = mp_diag(local**4)
+    D = mp_diag(coefficients**4)
     D_inv = mp_inv_diag(D)
     D_invert_err = mp_max_abs_diff(D * D_inv, mp.eye(n))
 
@@ -299,9 +300,9 @@ def main() -> int:
     K2 = reconstruct(R2)
     R2_recovered = strip(K2)
     round_trip_err_R2 = mp_max_abs_diff(R2_recovered, R2)
-    distinct_residual_err = float(np.max(np.abs(diag_a - diag_b)))
+    distinct_operator_err = float(np.max(np.abs(diag_a - diag_b)))
 
-    # (U3c) INJECTIVITY: distinct residuals yield distinct kernels.
+    # (U3c) INJECTIVITY: distinct operators yield distinct matrices K.
     K_distinctness = mp_max_abs_diff(K1, K2)
 
     # (U4) HOSTILE CONTROL: the conjugate pair (0,1),(1,0) has equal D
@@ -332,11 +333,11 @@ def main() -> int:
     )
     R_recovered_diag_err = mp_off_diag_max(R_hostile_recovered)
 
-    # (U5) FINITE-BOX AGREEMENT WITH THE BOUNDED COMPANION:
+    # (U5) SUPPORT-ONLY CHOSEN-INPUT ROUND TRIP:
     # Build K from a chosen R[rho(6)] whose values come from the stipulated
     # integral (same Bessel-determinant identity used by the bounded companion),
     # then strip via (S) and verify that this input round trip recovers rho(6).
-    rho_6 = local.copy()
+    rho_6 = coefficients.copy()
     R_rho6 = mp_diag(rho_6)
     K_rho6 = reconstruct(R_rho6)
     R_rho6_recovered = strip(K_rho6)
@@ -355,7 +356,7 @@ def main() -> int:
 
     # Header / context printout.
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE RESIDUAL-ENVIRONMENT FINITE-BOX STRIPPING-UNIQUENESS")
+    print("FINITE-BOX MATRIX-FACTORIZATION STRIPPING UNIQUENESS")
     print("=" * 78)
     print()
     print(f"Finite box: 0 <= p,q <= {NMAX}, dim H_B = {n}, beta = {BETA}, mpmath dps = {MP_DPS}")
@@ -365,7 +366,7 @@ def main() -> int:
     print(f"  J|_B swap commutator error            = {j_swap_err:.3e}")
     print(f"  min eigenvalue of M = exp((beta/2) J|_B)= {M_min_eig:.12f}")
     print(f"  det M (float64)                       = {M_det:.6e}")
-    print(f"  min diagonal of D_beta^loc|_B         = {D_min_eig:.6e}")
+    print(f"  min diagonal of D_beta^packet|_B      = {D_min_eig:.6e}")
     print(f"  det D (float64)                       = {D_det:.6e}")
     print()
     print("mpmath invertibility certificates")
@@ -375,8 +376,8 @@ def main() -> int:
     print("Algebraic stripping round-trip (mpmath, dps=60)")
     print(f"  ||R1 - strip(reconstruct(R1))||       = {round_trip_err_R1:.3e}")
     print(f"  ||R2 - strip(reconstruct(R2))||       = {round_trip_err_R2:.3e}")
-    print(f"  ||K1 - K2|| (kernel distinctness)     = {K_distinctness:.3e}")
-    print(f"  ||R1 - R2|| (residual distinctness)   = {distinct_residual_err:.6e}")
+    print(f"  ||K1 - K2|| (matrix distinctness)     = {K_distinctness:.3e}")
+    print(f"  ||R1 - R2|| (operator distinctness)   = {distinct_operator_err:.6e}")
     print()
     print("Hostile structural control (mpmath, dps=60)")
     print(f"  K_hostile self-adj err                = {K_hostile_self_adj_err:.3e}")
@@ -400,22 +401,22 @@ def main() -> int:
         detail=f"min eig={M_min_eig:.6f}, det={M_det:.3e}, ||M M^-1 - I||={M_invert_err:.3e}",
     )
     check(
-        "(U2) the local Wilson factor D_beta^loc|_B has strictly positive diagonal entries, positive determinant, and is invertible to mpmath precision on the finite box",
+        "(U2) the fourth-power diagonal D_beta^packet|_B has strictly positive entries, positive determinant, and is invertible to mpmath precision on the finite box",
         D_min_eig > 0.0 and D_det > 0.0 and D_invert_err < TOL,
         detail=f"min diag={D_min_eig:.3e}, det={D_det:.3e}, ||D D^-1 - I||={D_invert_err:.3e}",
     )
     check(
-        "(U3a) the stripping identity (S) recovers a positive diagonal candidate residual R1 exactly from K = reconstruct(R1) on the finite box (mpmath round-trip)",
+        "(U3a) the stripping identity (S) recovers a positive diagonal candidate operator R1 exactly from K = reconstruct(R1) on the finite box (mpmath round-trip)",
         round_trip_err_R1 < TOL,
         detail=f"||R1 - strip(reconstruct(R1))||={round_trip_err_R1:.3e}",
     )
     check(
-        "(U3b) the stripping identity (S) recovers a SECOND, distinct positive diagonal candidate residual R2 exactly from K = reconstruct(R2) on the finite box, establishing that (S) is a function (no admissibility freedom in the stripped residual)",
-        round_trip_err_R2 < TOL and distinct_residual_err > 0.05 and K_distinctness > 1.0e-20,
-        detail=f"||R2 - strip(reconstruct(R2))||={round_trip_err_R2:.3e}, ||R1 - R2||={distinct_residual_err:.3e}, ||K1 - K2||={K_distinctness:.3e}",
+        "(U3b) the stripping identity (S) recovers a SECOND, distinct positive diagonal candidate operator R2 exactly from K = reconstruct(R2) on the finite box, establishing that (S) is a function",
+        round_trip_err_R2 < TOL and distinct_operator_err > 0.05 and K_distinctness > 1.0e-20,
+        detail=f"||R2 - strip(reconstruct(R2))||={round_trip_err_R2:.3e}, ||R1 - R2||={distinct_operator_err:.3e}, ||K1 - K2||={K_distinctness:.3e}",
     )
     check(
-        "(U4 hostile) positive self-adjoint swap-symmetric kernel data can strip to a positive self-adjoint swap-symmetric operator with off-diagonal character mixing",
+        "(U4 hostile) positive self-adjoint swap-symmetric matrix data can strip to a positive self-adjoint swap-symmetric operator with off-diagonal character mixing",
         K_hostile_min_eig > 0.0
         and K_hostile_self_adj_err < TOL and K_hostile_swap_err < TOL
         and hostile_round_trip_err < TOL
@@ -424,28 +425,29 @@ def main() -> int:
         detail=f"min eig(K)={K_hostile_min_eig:.3e}; K sym/swap=({K_hostile_self_adj_err:.3e},{K_hostile_swap_err:.3e}); round-trip={hostile_round_trip_err:.3e}; C sym/swap/offdiag=({R_recovered_self_adj_err:.3e},{R_recovered_swap_err:.3e},{R_recovered_diag_err:.3e})",
     )
     check(
-        "(U5) when K_6^src|_B is constructed from the bounded companion's stipulated-integral rho_(p,q)(6) values, (S) recovers that chosen diagonal input on the finite box (mpmath)",
+        "(U5) when K_6|_B is constructed from independently recomputed stipulated-integral rho_(p,q)(6) values, (S) recovers that chosen diagonal input on the finite box (mpmath)",
         rho6_recovery_err < TOL and rho6_diagonal_err < TOL and rho6_diag_match < TOL,
         detail=f"||R[rho(6)] - strip(...)||={rho6_recovery_err:.3e}, off-diag={rho6_diagonal_err:.3e}, diag match={rho6_diag_match:.3e}",
+        bucket="SUPPORT",
     )
 
     # ---- SUPPORT CHECKS ----
     check(
-        "the source operator J|_B is real symmetric and swap-invariant on the finite box",
+        "the recurrence matrix J|_B is real symmetric and swap-invariant on the finite box",
         j_sym_err < 1.0e-15 and j_swap_err < 1.0e-12,
         detail=f"||J - J^T||={j_sym_err:.3e}, ||[S,J]||={j_swap_err:.3e}",
         bucket="SUPPORT",
     )
     check(
-        "the bounded companion's rho_(0,0)(6) = 1 normalization is reproduced exactly by the local Wilson factor diagonal entry consumed here (consistent normalization across the two sister bounded notes)",
+        "the independently recomputed chosen input has rho_(0,0)(6) = 1 by its normalization definition",
         abs(rho_6[index[(0, 0)]] - 1.0) < 1.0e-12,
-        detail=f"rho_(0,0)(6) = {rho_6[index[(0,0)]]:.16f}",
+        detail=f"rho_(0,0)(6) = {rho_6[index[(0,0)]]:.16f}; this is not a local-factor or environment identification",
         bucket="SUPPORT",
     )
     check(
-        "the algebraic stripping (S) is independent of any specific witness or computed coefficient sequence (the two distinct candidate residuals R1, R2 used in (U3a)/(U3b) are random, with ||R1 - R2|| > 0.05)",
-        distinct_residual_err > 0.05,
-        detail=f"residual distinctness ||R1 - R2|| = {distinct_residual_err:.3e}",
+        "the algebraic stripping (S) is independent of any specific witness or computed coefficient sequence (the two distinct candidate operators R1, R2 used in (U3a)/(U3b) are random, with ||R1 - R2|| > 0.05)",
+        distinct_operator_err > 0.05,
+        detail=f"operator distinctness ||R1 - R2|| = {distinct_operator_err:.3e}",
         bucket="SUPPORT",
     )
 

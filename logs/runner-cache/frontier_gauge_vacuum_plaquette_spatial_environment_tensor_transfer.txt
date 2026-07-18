@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py
-runner_sha256: 789813d7d97bd1694dc43741cdc73475db6bd8d163759bf66dd0e0092685879f
+runner_sha256: 2181c6a37386d3a3b9aa4f6ca2973d76aaecb5b2eef3b5e7ce27796bf97f7d7e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 ==============================================================================
-GAUGE-VACUUM PLAQUETTE SPATIAL ENVIRONMENT FINITE TENSOR PACKET
+FINITE SU(3) COEFFICIENT/PIERI MATRIX-WORD PACKET
 ==============================================================================
 
-Finite Wilson local coefficients at beta = 6
-  audited truncations                    = NMAX = 4, MODE_MAX = 80
+Finite stipulated-integral coefficients at x = 2
+  disclosed truncations                  = NMAX = 4, MODE_MAX = 80
   c_(0,0)                              = 3.441440354987777
   normalized c(0, 0)      = 1.000000000000000   dim = 1
   normalized c(1, 0)      = 0.422531739649983   dim = 3
@@ -26,26 +26,26 @@ Finite SU(3) fusion primitives on the dominant-weight box
   swap intertwining error (N_f)        = 0
   swap intertwining error (N_fbar)     = 0
 
-Tensor-transfer support word from exact ingredients
+Constructed matrix word from finite inputs
   tensor-word minimum entry            = 0.000000000000
   tensor-word swap error               = 1.388e-17
   boundary-amplitude minimum           = 0.000000000000
   boundary-amplitude swap error        = 1.388e-17
 
-  [PASS] [THEOREM] the Wilson local class-function coefficients at beta = 6 are explicit, positive, and conjugation-symmetric on the audited SU(3) irreps
+  [PASS] [THEOREM] the stipulated integral coefficients at x = 2 are explicit, positive, and conjugation-symmetric on the finite box
          min normalized coefficient=2.275225e-05, swap error=2.776e-17
-  [PASS] [THEOREM] multiplication by the fundamental and antifundamental characters gives exact nonnegative dominant-weight fusion primitives
-         the exact SU(3) recurrence matrices furnish the local intertwiner primitives on the class sector
-  [PASS] [THEOREM] the constructed truncated tensor-transfer word built from those exact Wilson coefficients and fusion primitives is positivity-preserving on the audited class sector
+  [PASS] [THEOREM] the fundamental and antifundamental Pieri recurrences give exact nonnegative finite matrices
+         the exact SU(3) recurrence matrices are independent mathematical inputs
+  [PASS] [THEOREM] the constructed finite matrix word has nonnegative entries and a nonnegative unit-vector readout
          word min=0.000000e+00, amplitude min=0.000000e+00
-  [PASS] [THEOREM] the constructed finite unit-vector boundary amplitude is compatible with an explicit positive tensor-transfer packet rather than a generic free positive sequence
+  [PASS] [THEOREM] the constructed finite matrix word and its unit-vector readout obey conjugation-swap symmetry
          tensor-word swap=1.388e-17, amplitude swap=1.388e-17
-  [PASS] [SUPPORT] the finite tensor-transfer packet is atlas-reusable independently of any full beta=6 Perron solve
-         the remaining problem is the full environment Perron evaluation, not local coefficient ambiguity
-  [PASS] [SUPPORT] the finite packet localizes the remaining plaquette gap to a tensor-transfer boundary-state problem
+  [PASS] [SUPPORT] the constructed matrix word is nonconstant on the finite box
+         finite diagnostic only; no transfer or environment interpretation is inferred
+  [PASS] [SUPPORT] the displayed unit-vector component of the constructed matrix is positive
          trivial-channel boundary amplitude=8.450635e-01
-  [PASS] [SUPPORT] the tensor-transfer packet strengthens the environment lane without claiming analytic P(6)
-         the explicit local tensor ingredients are closed; the beta=6 Perron state still is not
+  [PASS] [SUPPORT] all constructed coefficients, matrix entries, and readout entries are finite
+         numerical-health diagnostic only
 
 ==============================================================================
 SUMMARY: THEOREM PASS=4 SUPPORT=3 FAIL=0

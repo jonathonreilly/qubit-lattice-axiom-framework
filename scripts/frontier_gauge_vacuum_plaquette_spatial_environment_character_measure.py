@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Bounded character-measure packet for the plaquette transfer route on the
-accepted Wilson 3+1 surface.
+Bounded consumer-defined character-measure packet on a finite class-function
+matrix model.
 
 This does not close analytic P(6), the full unmarked spatial Wilson
 environment, or the operator-realization bridge R_beta^actual = C_(Z_beta^env).
@@ -149,7 +149,7 @@ def main() -> int:
         [wilson_character_coefficient(p, q) / (dim_su3(p, q) * c00) for p, q in weights],
         dtype=float,
     )
-    d_local = np.diag(local**4)
+    d_packet = np.diag(local**4)
 
     # Chosen bounded packet: normalized values of the stipulated integral
     #   rho_(p,q)(beta) = c_(p,q)(beta) / (d_(p,q) c_(0,0)(beta)).
@@ -165,7 +165,7 @@ def main() -> int:
     rho_packet = local.copy()
     z_packet = np.array([dim_su3(p, q) * rho for (p, q), rho in zip(weights, rho_packet)], dtype=float)
     c_packet = np.diag(rho_packet)
-    transfer = multiplier @ d_local @ c_packet @ multiplier
+    transfer = multiplier @ d_packet @ c_packet @ multiplier
 
     transfer_sym = float(np.max(np.abs(transfer - transfer.T)))
     transfer_swap = float(np.max(np.abs(swap @ transfer - transfer @ swap)))
@@ -178,13 +178,13 @@ def main() -> int:
     expectation = float(psi @ (jmat @ psi))
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE SPATIAL ENVIRONMENT CHARACTER MEASURE")
+    print("FINITE CONSUMER-DEFINED CHARACTER-MEASURE PACKET")
     print("=" * 78)
     print()
-    print("Exact already-fixed pieces")
+    print("Finite consumer-side pieces")
     print(f"  source-operator symmetry error        = {float(np.max(np.abs(jmat - jmat.T))):.3e}")
     print(f"  half-slice multiplier min eig         = {float(np.min(np.linalg.eigvalsh(multiplier))):.12f}")
-    print(f"  local-factor min/max                  = {float(np.min(np.diag(d_local))):.12e}, {float(np.max(np.diag(d_local))):.12f}")
+    print(f"  fourth-power diagonal min/max         = {float(np.min(np.diag(d_packet))):.12e}, {float(np.max(np.diag(d_packet))):.12f}")
     print()
     print("Boundary character packet (chosen stipulated-integral values)")
     print(f"  rho_packet min/max                    = {rho_min:.12f}, {float(np.max(rho_packet)):.12f}")
@@ -201,8 +201,8 @@ def main() -> int:
     print(f"  Perron <J>                            = {expectation:.12f}")
     print()
 
-    # Independent in-runner recomputation of the stipulated-integral packet.
-    # This checks formula consistency, not any physical identification.
+    # Repeated in-runner recomputation of the stipulated-integral packet.
+    # This is bookkeeping, not independent evidence or a physical identification.
     rho_wilson_check = np.array(
         [wilson_character_coefficient(p, q) / (dim_su3(p, q) * c00) for p, q in weights],
         dtype=float,
@@ -219,17 +219,19 @@ def main() -> int:
     check(
         "the explicit plaquette source operator J is self-adjoint and conjugation-symmetric on the source sector",
         float(np.max(np.abs(jmat - jmat.T))) < 1.0e-15 and float(np.max(np.abs(swap @ jmat - jmat @ swap))) < 1.0e-12,
-        detail="the accepted source operator is one exact self-adjoint six-neighbor recurrence",
+        detail="the supplied source operator is one exact self-adjoint six-neighbor recurrence",
     )
     check(
         "the chosen bounded packet equals the normalized values of the stipulated integral rho_(p,q)(6) = c_(p,q)(6)/(d_(p,q) c_(0,0)(6))",
         rho_packet_formula_check < 1.0e-15,
-        detail=f"max abs formula-consistency deviation = {rho_packet_formula_check:.3e}",
+        detail=f"max abs repeated-computation deviation = {rho_packet_formula_check:.3e}; bookkeeping only",
+        bucket="SUPPORT",
     )
     check(
         "the bounded character packet is not the abstract exp(-0.24 (p+q) - 0.08 (p-q)^2) witness previously used (regression guard against witness-injection)",
         rho_packet_distinct_from_prior > 1.0e-3,
-        detail=f"max abs distance from prior abstract witness = {rho_packet_distinct_from_prior:.3e}",
+        detail=f"max abs distance from prior abstract witness = {rho_packet_distinct_from_prior:.3e}; bookkeeping only",
+        bucket="SUPPORT",
     )
     check(
         "the stipulated finite data can be packaged as one positive conjugation-symmetric coefficient sequence rho_(p,q)(6)",
@@ -242,9 +244,9 @@ def main() -> int:
         detail="Z_6^packet(W) = z_(0,0)^packet sum d_(p,q) rho_(p,q)(6) chi_(p,q)(W)",
     )
     check(
-        "the finite framework-point source-sector packet reduces to exp(3 J) D_6^loc C_(Z_6^packet) exp(3 J)",
+        "the consumer-defined finite matrix packet has the form exp(3 J) D_6^packet C_(Z_6^packet) exp(3 J)",
         transfer_sym < 1.0e-12 and transfer_swap < 1.0e-12,
-        detail="within the finite packet, the character-measure slot is computed rather than an abstract diagonal freedom",
+        detail="finite matrix identity only; no operator placement is inferred",
     )
 
     check(
@@ -254,13 +256,13 @@ def main() -> int:
         bucket="SUPPORT",
     )
     check(
-        "the boundary character packet is a reusable plaquette tool distinct from the already-fixed local mixed-kernel factor",
+        "the chosen character packet is algebraically distinct from the separately constructed fourth-power diagonal",
         float(np.max(np.abs(rho_packet - 1.0))) > 1.0e-3,
-        detail="the bounded datum sits in Z_6^packet rather than D_6^loc",
+        detail="the two constructed diagonal sequences differ; no physical placement is inferred",
         bucket="SUPPORT",
     )
     check(
-        "once Z_6^packet is explicit, the finite framework-point packet has one concrete Perron readout",
+        "the constructed finite packet has one numerical Perron diagnostic",
         expectation > 0.0,
         detail=f"Perron <J> = {expectation:.6f}",
         bucket="SUPPORT",

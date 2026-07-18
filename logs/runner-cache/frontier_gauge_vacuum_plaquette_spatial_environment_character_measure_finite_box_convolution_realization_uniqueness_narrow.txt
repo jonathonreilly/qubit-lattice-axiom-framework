@@ -3,7 +3,7 @@ runner: scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_me
 runner_sha256: 116929476e3d55bc20ae6360b76b0790834561368767884c451c58135ceb3351
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.82
 status: ok
 ----- stdout -----
 Finite-box inverse Peter-Weyl convolution-realization

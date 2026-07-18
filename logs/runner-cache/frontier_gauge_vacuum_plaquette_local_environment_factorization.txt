@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_local_environment_factorization.py
-runner_sha256: 23bc6ec06fcdfc0fc5083992c43a1daebc59816f8a0b9dff5371db3033f95e66
+runner_sha256: 2c0548a485e40f440f4043248cd8cb28df3fb5ca5b3326f5a08e3ba2bef238e8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 ==============================================================================
-GAUGE-VACUUM PLAQUETTE LOCAL WILSON FACTOR FINITE PACKET
+FINITE FOURTH-POWER DIAGONAL MATRIX PACKET
 ==============================================================================
 
-Exact one-link Wilson character coefficients at beta = 6
+Stipulated integral coefficients at x = 2
   c_(0,0)                              = 3.441440354987777
   a_link(0, 0)      = 1.000000000000000   a_link^4 = 1.000000000000000
   a_link(1, 0)      = 0.422531739649983   a_link^4 = 0.031874057444848
@@ -18,35 +18,34 @@ Exact one-link Wilson character coefficients at beta = 6
   a_link(1, 1)      = 0.162259799479938   a_link^4 = 0.000693176354575
   a_link(2, 0)      = 0.135961727363391   a_link^4 = 0.000341717085993
 
-Finite local Wilson packet
+Finite fourth-power diagonal packet
   non-marked trivial-channel factor     = 1.000000000000000
   scalar-insertion normalized spread    = 0.000e+00
-  local-factor swap error               = 2.711e-19
-  min/max local factor                  = 0.000000000000, 1.000000000000
+  fourth-power swap error               = 2.711e-19
+  min/max fourth-power diagonal         = 0.000000000000, 1.000000000000
 
-Finite source-sector package
-  local package symmetry error          = 2.220e-16
-  local package swap error              = 4.441e-16
-  local package Perron <J>              = 0.452407043968
-  |local-only - 0.5934|                 = 1.409930e-01
+Finite constructed matrix package
+  constructed package symmetry error    = 1.110e-16
+  constructed package swap error        = 4.441e-16
+  constructed package Perron <J>        = 0.452407043968
 
-  [PASS] [THEOREM] the one-link Wilson class function has explicit normalized SU(3) character coefficients from the Bessel-determinant mode sum
+  [PASS] [THEOREM] the stipulated integral has explicit normalized SU(3) coefficients from the Bessel-determinant mode sum
          c_(0,0)=3.441440354988, a_(0,0)=1.000000000000
-  [PASS] [THEOREM] trivial-channel scalar insertions do not alter the normalized finite local packet
-         this is a finite packet normalization check, not the actual mixed-kernel compression bridge
-  [PASS] [THEOREM] the finite local plaquette-loop packet D_6^loc = diag(a_(p,q)(6)^4) is positive and conjugation-symmetric
-         local-factor symmetry=2.711e-19, min local factor=8.821392e-26
-  [PASS] [THEOREM] the finite source-sector local package exp(3 J) D_6^loc exp(3 J) is self-adjoint and conjugation-symmetric
-         package symmetry=2.220e-16, swap=4.441e-16
-  [PASS] [SUPPORT] the finite local packet alone does not already reproduce the full same-surface plaquette value
-         |local-only - 0.5934| = 1.409930e-01
-  [PASS] [SUPPORT] the remaining framework-point ambiguity is outside the finite local Wilson packet
-         this packet supplies D_6^loc only; it does not solve the residual environment or actual compression bridge
-  [PASS] [SUPPORT] the finite local Wilson link factor is explicit and reusable as an atlas tool even though full analytic P(6) remains open
-         this finite factor can now be reused independently of the still-open residual source-sector environment solve
+  [PASS] [SUPPORT] the constructed trivial-channel scalar normalization is unity
+         support-only normalization bookkeeping
+  [PASS] [THEOREM] the finite fourth-power matrix D_6^packet = diag(a_(p,q)(6)^4) is positive and conjugation-symmetric
+         matrix symmetry=2.711e-19, min diagonal=8.821392e-26; no local-factor authority is claimed
+  [PASS] [THEOREM] the finite constructed package exp(3 J) D_6^packet exp(3 J) is self-adjoint and conjugation-symmetric
+         package symmetry=1.110e-16, swap=4.441e-16
+  [PASS] [SUPPORT] the constructed package has a finite positive Perron diagnostic
+         constructed <J> = 4.524070e-01; no physical readout is inferred
+  [PASS] [SUPPORT] the fourth-power diagonal is nonconstant on the finite box
+         finite diagnostic only
+  [PASS] [SUPPORT] all constructed coefficient and matrix entries are finite
+         numerical-health diagnostic only
 
 ==============================================================================
-SUMMARY: THEOREM PASS=4 SUPPORT=3 FAIL=0
+SUMMARY: THEOREM PASS=3 SUPPORT=4 FAIL=0
 ==============================================================================
 
 ----- stderr -----

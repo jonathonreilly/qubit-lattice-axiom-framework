@@ -3,7 +3,7 @@ runner: scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_comp
 runner_sha256: d2008a29b010c938a510e6d5028331f0314be2b66e44afa4809c5b434f4b96fb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.87
 status: ok
 ----- stdout -----
 ==============================================================================

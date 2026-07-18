@@ -13,7 +13,7 @@ from one chosen normalized stipulated-integral coefficient sequence
 `rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q)c_(0,0)(6))`, verifies that this chosen
 packet differs from the prior hand-picked witness, and checks the corresponding finite
 source-sector packaging
-`exp(3J) D_6^loc R_6^packet exp(3J)` for self-adjointness,
+`exp(3J) D_6^packet R_6^packet exp(3J)` for self-adjointness,
 conjugation-swap symmetry, positivity improving entries, and positive
 truncated Perron readout.
 **Status authority:** source-note proposal only; audit verdict and effective
@@ -31,10 +31,8 @@ repo-wide plaquette repinning.
 
 ## Question
 
-After the marked half-slice factor and the normalized mixed-kernel local factor
-are separated, can the finite coefficient slot used for the remaining
-source-sector package be computed rather than supplied as a generic positive
-witness?
+Can one consumer-defined finite coefficient slot be instantiated reproducibly
+rather than supplied as a generic positive witness?
 
 ## Answer
 
@@ -51,14 +49,14 @@ Those coefficients are the same finite stipulated-integral values checked by
 the bounded companion row. The current note uses them only as the chosen finite
 diagonal packet `R_6^packet` inserted into the source-sector package
 
-`exp(3J) D_6^loc R_6^packet exp(3J)`.
+`exp(3J) D_6^packet R_6^packet exp(3J)`.
 
 This produces a reproducible packet distinct from the prior arbitrary witness
 sequence on the finite box. It does not select that packet on physical grounds
 or prove that `R_6^packet` is the actual compressed unmarked spatial
 environment operator.
 
-## Bounded Ingredient 1: computed finite Wilson coefficients
+## Bounded Ingredient 1: chosen stipulated-integral coefficients
 
 On the finite box used by the runner, the coefficients are computed in-runner
 by the Schur-Weyl Bessel-determinant identity. The bounded companion
@@ -78,12 +76,12 @@ The runner constructs the finite matrices:
 
 - the source recurrence `J` on the finite dominant-weight box,
 - the marked half-slice multiplier `exp(3J)`,
-- the diagonal local factor `D_6^loc`,
+- a separately constructed fourth-power diagonal `D_6^packet`,
 - the computed diagonal packet `R_6^packet`.
 
 It then checks the finite package
 
-`K_6^packet = exp(3J) D_6^loc R_6^packet exp(3J)`
+`K_6^packet = exp(3J) D_6^packet R_6^packet exp(3J)`
 
 for:
 
@@ -114,8 +112,8 @@ readout at `beta = 6`.
 
 - bounded construction using a reproducible chosen packet that differs from
   the prior arbitrary positive witness;
-- bounded construction of a finite diagonal source-sector packet from computed
-  Wilson coefficients;
+- bounded construction of a finite diagonal source-sector packet from chosen
+  stipulated-integral coefficients;
 - bounded verification that the finite package remains self-adjoint,
   conjugation-symmetric, positivity improving on the truncation, and Perron
   positive.
@@ -138,18 +136,19 @@ python3 scripts/frontier_gauge_vacuum_plaquette_residual_environment_identificat
 
 Expected summary:
 
-- `THEOREM PASS=6 SUPPORT=2 FAIL=0`
+- `THEOREM PASS=6 SUPPORT=3 FAIL=0`
 
 The theorem-grade checks are bounded to the finite packet:
 
 - `J` is self-adjoint and conjugation-symmetric on the finite source sector;
 - `exp(3J)` is positive and self-adjoint;
-- `D_6^loc` is explicit, positive, diagonal, and conjugation-symmetric;
-- `R_6^packet` is built from computed normalized Wilson coefficients, not the
-  prior witness;
+- `D_6^packet` is a constructed positive, diagonal, conjugation-symmetric
+  finite matrix, without local-factor authority;
+- `R_6^packet` is built from the chosen normalized stipulated-integral
+  coefficients;
 - `R_6^packet` acts diagonally with eigenvalues `rho_(p,q)(6)` on the finite
   class-function basis;
-- `exp(3J) D_6^loc R_6^packet exp(3J)` is self-adjoint,
+- `exp(3J) D_6^packet R_6^packet exp(3J)` is self-adjoint,
   conjugation-symmetric, and positivity improving on the finite source sector.
 
 ## Audit Dependency Repair Links

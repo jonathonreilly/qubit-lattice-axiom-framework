@@ -18,14 +18,14 @@ on the finite weight box B = {(p, q) : 0 <= p, q <= 4}. Specifically:
        checked algebraically on the finite-box character basis for every
        pair (a, b) in B x B;
 
-  (N3) instantiation with the bounded coefficient companion's runner-
-       computed rho_(p,q)(6) values, verified by:
+  (N3) chosen instantiation with the bounded companion's runner-computed
+       normalized stipulated-integral values, verified by:
          (a) calling the companion's Bessel-determinant routine and
              reading the exact same values used in the companion runner
              (not a re-derivation by witness),
          (b) checking diagonal action R[rho(6)] chi_(p,q) = rho_(p,q)(6) chi_(p,q)
              with eigen-action error 0,
-         (c) checking that the residual factor obtained by stripping
+         (c) checking the definitional round trip obtained by stripping
              exp(3 J) and D_6^loc from the explicit one-step Wilson source-
              sector restricted to the finite box equals R[rho(6)] to
              machine precision on H_B,
@@ -54,7 +54,7 @@ from scipy.special import iv
 
 
 # Make the bounded-companion module importable so the narrow runner consumes
-# the same coefficient routine, not a witness.
+# the stipulated finite-evaluation routine, not a hard-coded witness table.
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 if SCRIPT_DIR not in sys.path:
     sys.path.insert(0, SCRIPT_DIR)
@@ -143,7 +143,7 @@ def matrix_exponential_symmetric(m: np.ndarray, tau: float) -> np.ndarray:
 
 
 def companion_rho_finite_box(nmax: int) -> np.ndarray:
-    """Use the bounded-companion's exact Bessel-determinant routine."""
+    """Use the bounded companion's stipulated Bessel-determinant evaluation."""
     weights = weights_box(nmax)
     c00 = _companion.wilson_character_coefficient_bessel(0, 0)
     rho = np.zeros(len(weights), dtype=float)
@@ -152,11 +152,21 @@ def companion_rho_finite_box(nmax: int) -> np.ndarray:
     return rho
 
 
+def prior_character_measure_witness(p: int, q: int) -> float:
+    """Historical consumer-local table, used only for a regression distance."""
+    return float(np.exp(-0.24 * (p + q) - 0.08 * ((p - q) ** 2)))
+
+
+def prior_residual_identification_witness(p: int, q: int) -> float:
+    """Historical consumer-local table, used only for a regression distance."""
+    return float(np.exp(-0.27 * (p + q) - 0.07 * ((p - q) ** 2)))
+
+
 def wilson_local_factor_finite_box(nmax: int) -> np.ndarray:
     """D_beta^loc = diag(a_(p,q)^4) where a_(p,q) = rho_(p,q) (single-link
     Wilson normalized coefficient). The local factor uses the same single-
-    link coefficient (this is the parent local/environment factorization
-    statement)."""
+    link coefficient as a consumer-side stipulation.  The companion does not
+    derive this local/environment identification."""
     rho = companion_rho_finite_box(nmax)
     return rho ** 4
 
@@ -264,10 +274,10 @@ def main() -> int:
 
     # ---- N3(d): cross-check that rho(6) is NOT either prior witness
     prior_char_witness = np.array(
-        [_companion.prior_witness_character_measure(p, q) for p, q in weights]
+        [prior_character_measure_witness(p, q) for p, q in weights]
     )
     prior_resid_witness = np.array(
-        [_companion.prior_witness_residual_identification(p, q) for p, q in weights]
+        [prior_residual_identification_witness(p, q) for p, q in weights]
     )
     diff_char = float(np.max(np.abs(rho - prior_char_witness)))
     diff_resid = float(np.max(np.abs(rho - prior_resid_witness)))
@@ -370,10 +380,13 @@ def main() -> int:
         pw_max == 0.0,
         detail=f"max algebraic error = {pw_max:.3e}",
     )
+    companion_provenance_ok = (
+        os.path.realpath(_companion.__file__) == os.path.realpath(_companion_path)
+    )
     check(
-        "N3(a) rho(6) values are consumed via direct call to the bounded-companion's wilson_character_coefficient_bessel routine (not a witness re-derivation)",
-        True,
-        detail="rho_pq imported from frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.rho_pq",
+        "N3(a) provenance: rho(6) values are consumed from the stipulated-integral companion rather than a hard-coded witness table",
+        companion_provenance_ok,
+        detail=f"loaded companion source basename: {os.path.basename(_companion.__file__)}",
     )
     check(
         "N3(b) R[rho(6)] chi_(p,q) = rho_(p,q)(6) chi_(p,q) on every finite-box weight",
@@ -391,7 +404,7 @@ def main() -> int:
         detail=f"off-diagonal residual = {off_diag_resid:.3e}",
     )
     check(
-        "N3(c) the forward identity K_6^src = exp(3 J) D_6^loc R[rho(6)] exp(3 J) holds at machine precision on the finite box (definitional coincidence with R_6^env in the source-sector stripping decomposition)",
+        "N3(c) the consumer-defined identity K_6^src = exp(3 J) D_6^loc R[rho(6)] exp(3 J) round-trips at machine precision on the finite box",
         DR_err < 1.0e-12 and off_diag_resid < 1.0e-12,
         detail=f"forward identity verified to {DR_err:.3e}; reverse division by D_loc omitted as numerically meaningless when min D_loc entry ~ {float(np.min(local_diag)):.3e}",
     )

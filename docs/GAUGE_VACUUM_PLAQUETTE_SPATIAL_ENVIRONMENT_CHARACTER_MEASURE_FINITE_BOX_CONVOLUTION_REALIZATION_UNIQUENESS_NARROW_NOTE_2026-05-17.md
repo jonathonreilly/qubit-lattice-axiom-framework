@@ -128,14 +128,15 @@ by `diag(C)` loses operator information.
 ## Numerical witness boundary
 
 The runner instantiates several supplied coefficient packets, including the
-finite single-link Wilson coefficient sequence
+normalized values of the explicitly stipulated finite integral
 
 ```text
 rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q)c_(0,0)(6)).
 ```
 
-That is a bounded witness of the conditional algebra. It is not a derivation
-of the compressed multi-link spatial Wilson environment.
+That is a chosen bounded witness of the conditional algebra. The cited row
+supplies only the integral evaluation; it is not a derivation or selection of
+the compressed multi-link spatial Wilson environment.
 
 ## What remains open
 
@@ -151,7 +152,7 @@ conjugation-swap symmetry alone do not supply that result.
 - [SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md](SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md)
   supplies the character/convolution normalization.
 - [GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
-  supplies the finite single-link coefficient witness only.
+  supplies the finite stipulated-integral values used as a chosen witness only.
 
 Context only:
 `docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`

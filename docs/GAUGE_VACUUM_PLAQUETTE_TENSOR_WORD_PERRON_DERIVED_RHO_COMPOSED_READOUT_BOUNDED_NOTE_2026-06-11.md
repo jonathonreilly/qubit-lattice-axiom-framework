@@ -38,7 +38,8 @@ The one-hop authorities for the finite computation are:
   and
   [GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
   for the normalized finite coefficient convention `rho_(0,0)=1` and the
-  single-link comparison packet.
+  stipulated-integral comparison packet only. The latter citation supplies no
+  physical environment identification or readout authority.
 - [PLAQUETTE_SELF_CONSISTENCY_NOTE.md](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
   for the admitted comparison/reuse-number license used in the fenced
   comparator block below.

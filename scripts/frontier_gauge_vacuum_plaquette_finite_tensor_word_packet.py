@@ -21,8 +21,8 @@ The construction is:
   N_fbar    = SU(3) anti-fundamental fusion-multiplicity matrix on the box
   tensor_word = diag_c · (N_f + N_fbar) · diag_c · (N_f + N_fbar)^T · diag_c
 
-where c_(p,q)(6) is computed via Schur-Weyl Bessel-determinant truncated
-to MODE_MAX = 80 modes (matching the Wilson-environment companion
+where c_(p,q)(x=2) is computed via a Schur-Weyl Bessel determinant truncated
+to MODE_MAX = 80 modes (matching the stipulated-integral companion
 GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09).
 
 This is a split note following prior audit feedback on the parent
@@ -32,7 +32,7 @@ between the constructed matrix and actual spatial-environment boundary
 amplitudes is NOT claimed here.
 
 Imports: numpy + scipy.special.iv (family convention; matches the
-Wilson-environment companion runner
+stipulated-integral companion runner
 frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py).
 """
 
@@ -76,7 +76,7 @@ def section(title: str) -> None:
     print("-" * 88)
 
 
-# Truncation parameters and physical inputs (match Wilson-environment companion)
+# Stipulated finite-evaluation parameters (match the companion integral).
 BETA = 6.0
 ARG = BETA / 3.0
 MODE_MAX = 80
@@ -87,7 +87,7 @@ NOTE_FLAT = re.sub(r"\s+", " ", NOTE_TEXT)
 
 
 # ---------------------------------------------------------------------------
-# Canonical truncated local Wilson coefficient (Schur-Weyl Bessel determinant)
+# Stipulated finite integral coefficient (Schur-Weyl Bessel determinant)
 # Matches companion frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute
 # ---------------------------------------------------------------------------
 def dim_su3(p: int, q: int) -> int:
@@ -174,8 +174,8 @@ def part1_note_structure():
         ("(P3) boundary nonneg stated", "(P3) **Nonnegative boundary amplitude"),
         ("(P3-corollary) S·boundary0=boundary0 derived from (P2)",
          "Derived corollary of (P2)"),
-        ("BA-1 truncated Wilson coefficients stated",
-         "(BA-1) **Canonical truncated local Wilson coefficients.**"),
+        ("BA-1 stipulated finite integral coefficients stated",
+         "(BA-1) **Stipulated finite integral coefficients.**"),
         ("BA-2 fusion multiplicities stated",
          "(BA-2) **`SU(3)` fundamental and anti-fundamental fusion"),
         ("parent-note cite: GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER",
@@ -447,8 +447,8 @@ def part6_boundary_check():
 def main() -> int:
     banner("frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py")
     print(" Bounded source note: one explicit positive matrix tensor_word,")
-    print(" constructed at NMAX = 4, MODE_MAX = 80, beta = 6 from canonical")
-    print(" truncated Wilson coefficients and SU(3) fusion multiplicities.")
+    print(" constructed at NMAX = 4, MODE_MAX = 80, x = 2 from stipulated")
+    print(" finite integral coefficients and SU(3) fusion multiplicities.")
     print(" Verifies three load-bearing structural properties (P1)-(P3) at")
     print(" double precision, plus the (P3-corollary) consistency check that")
     print(" S·amp = amp follows from (P2) since S·boundary0 = boundary0.")
@@ -469,8 +469,8 @@ def main() -> int:
     if FAIL == 0:
         print()
         print(" RESULT: one explicit positive matrix tensor_word constructed from")
-        print(" canonical truncated local Wilson coefficients (NMAX=4, MODE_MAX=80,")
-        print(" beta=6) and SU(3) fusion multiplicities verifies three load-bearing")
+        print(" stipulated finite integral coefficients (NMAX=4, MODE_MAX=80,")
+        print(" x=2) and SU(3) fusion multiplicities verifies three load-bearing")
         print(" structural properties at double precision: (P1) nonnegativity of")
         print(" matrix entries, (P2) conjugation-swap symmetry, (P3) nonnegative")
         print(" boundary amplitude under (0,0)-component unit-vector readout. The")

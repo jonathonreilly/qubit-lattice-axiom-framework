@@ -1,7 +1,7 @@
 # Gauge-Vacuum Plaquette Residual Environment Finite Coefficient Packet
 
 **Date:** 2026-04-17 (residual-env structural identification);
-2026-05-16 (witness replaced by computed Wilson coefficients on finite box);
+2026-05-16 (finite packet instantiated with computed integral values);
 2026-05-23 (scope repaired to a bounded finite coefficient packet).
 **Type:** bounded_theorem
 **Claim scope (post-2026-05-23 narrowing):** the load-bearing claim is only
@@ -9,9 +9,9 @@ the finite source-sector coefficient packet checked by
 `scripts/frontier_gauge_vacuum_plaquette_residual_environment_identification.py`.
 On the finite dominant-weight box `0 <= p,q <= NMAX`, at `beta = 6` and
 `MODE_MAX = 80`, the runner constructs a diagonal finite coefficient factor
-from computed normalized single-link Wilson character coefficients
-`rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q)c_(0,0)(6))`, verifies that the prior
-hand-picked witness has been replaced, and checks the corresponding finite
+from one chosen normalized stipulated-integral coefficient sequence
+`rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q)c_(0,0)(6))`, verifies that this chosen
+packet differs from the prior hand-picked witness, and checks the corresponding finite
 source-sector packaging
 `exp(3J) D_6^loc R_6^packet exp(3J)` for self-adjointness,
 conjugation-swap symmetry, positivity improving entries, and positive
@@ -38,38 +38,39 @@ witness?
 
 ## Answer
 
-Yes, on the bounded finite coefficient packet.
+Yes, as a reproducible chosen finite coefficient packet.
 
-The runner computes the finite coefficients from the canonical normalized
-single-link `SU(3)` Wilson character integral:
+The runner computes the finite coefficients from the explicitly stipulated
+single-link-form `SU(3)` character integral:
 
 `rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q)c_(0,0)(6))`,
 
 `c_(p,q)(6) = int_SU(3) chi_(p,q)(U) exp((6/3) Re tr U) dU`.
 
-Those coefficients are the same finite-box Wilson coefficients checked by the
-retained bounded companion row. The current note uses them only as the finite
+Those coefficients are the same finite stipulated-integral values checked by
+the bounded companion row. The current note uses them only as the chosen finite
 diagonal packet `R_6^packet` inserted into the source-sector package
 
 `exp(3J) D_6^loc R_6^packet exp(3J)`.
 
-This replaces the prior arbitrary witness sequence on the finite box. It does
-not prove that `R_6^packet` is the actual compressed unmarked spatial
+This produces a reproducible packet distinct from the prior arbitrary witness
+sequence on the finite box. It does not select that packet on physical grounds
+or prove that `R_6^packet` is the actual compressed unmarked spatial
 environment operator.
 
 ## Bounded Ingredient 1: computed finite Wilson coefficients
 
 On the finite box used by the runner, the coefficients are computed in-runner
-by the Schur-Weyl Bessel-determinant identity. The retained bounded companion
-cross-checks the same coefficients against direct Weyl integration on the
+by the Schur-Weyl Bessel-determinant identity. The bounded companion
+cross-checks the same stipulated integral against direct Weyl integration on the
 Cartan torus with Vandermonde-squared measure.
 
-The finite packet therefore has a retained bounded source for:
+The finite packet therefore has a numerical source for:
 
 - positivity of the normalized finite coefficients,
 - conjugation symmetry `rho_(p,q)(6) = rho_(q,p)(6)`,
 - normalization `rho_(0,0)(6) = 1`,
-- replacement of the retired hand-picked witness sequence.
+- distinction from the retired hand-picked witness sequence.
 
 ## Bounded Ingredient 2: finite source-sector packaging
 
@@ -111,8 +112,8 @@ readout at `beta = 6`.
 
 ## What This Closes
 
-- bounded replacement of the prior arbitrary positive witness on the finite
-  coefficient packet;
+- bounded construction using a reproducible chosen packet that differs from
+  the prior arbitrary positive witness;
 - bounded construction of a finite diagonal source-sector packet from computed
   Wilson coefficients;
 - bounded verification that the finite package remains self-adjoint,
@@ -137,7 +138,7 @@ python3 scripts/frontier_gauge_vacuum_plaquette_residual_environment_identificat
 
 Expected summary:
 
-- `THEOREM PASS=6 SUPPORT=3 FAIL=0`
+- `THEOREM PASS=6 SUPPORT=2 FAIL=0`
 
 The theorem-grade checks are bounded to the finite packet:
 
@@ -153,15 +154,15 @@ The theorem-grade checks are bounded to the finite packet:
 
 ## Audit Dependency Repair Links
 
-This graph-bookkeeping section records the explicit retained bounded input for
+This graph-bookkeeping section records the explicit finite numerical input for
 the finite packet. It does not promote this note, apply an audit verdict, or
 close the full residual-environment identification theorem.
 
 - [gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
-  has current pipeline-derived effective status `retained_bounded` and
-  computes the bounded normalized single-link Wilson coefficients on a finite
-  weight box by two independent methods. This is the load-bearing coefficient
-  authority for the finite packet used here.
+  evaluates an explicitly stipulated `SU(3)` integral on a finite weight box
+  by independently implemented Bessel and Weyl routes. This note chooses that
+  numerical table for its finite packet; the cited row supplies no physical
+  environment selection or replacement authority.
 - [gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md)
   supplies the source-side all-weight **formal diagonal-convolution**
   bridge for the stripped residual eigenvalue sequence:

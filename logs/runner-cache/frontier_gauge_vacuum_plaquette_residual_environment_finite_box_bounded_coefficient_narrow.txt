@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow.py
-runner_sha256: 6a438ec910b2c88575d721d9fe02472e77806a7117f6e5ff7724197e4d4f6f1e
+runner_sha256: fe3ad3e75434100927e79d8b5a4d7937c5645f785f9fbd5c51f0776ff9772d65
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.77
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -34,8 +34,8 @@ Peter-Weyl convolution-on-characters finite-box check
 
 Finite-box diagonal-action and stripping checks
   eigen-action error                 = 0.000e+00
-  K_src stripping intermediate err   = 7.779e-16
-  stripped off-diagonal residual     = 7.779e-16
+  K_src stripping intermediate err   = 9.739e-16
+  stripped off-diagonal residual     = 9.739e-16
 
 Witness cross-check
   max |rho(6) - prior char witness | = 4.565e-01
@@ -56,16 +56,16 @@ Sympy symbolic conjugation-symmetry constraint check
          max swap-commutator residual = 2.776e-17
   [PASS] [THEOREM] N2 finite-box Peter-Weyl convolution-on-characters identity chi_a * chi_b = (delta_(a,b)/d_a) chi_a holds for every (a, b) in B x B
          max algebraic error = 0.000e+00
-  [PASS] [THEOREM] N3(a) rho(6) values are consumed via direct call to the bounded-companion's wilson_character_coefficient_bessel routine (not a witness re-derivation)
-         rho_pq imported from frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.rho_pq
+  [PASS] [THEOREM] N3(a) provenance: rho(6) values are consumed from the stipulated-integral companion rather than a hard-coded witness table
+         loaded companion source basename: frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py
   [PASS] [THEOREM] N3(b) R[rho(6)] chi_(p,q) = rho_(p,q)(6) chi_(p,q) on every finite-box weight
          max eigen-action error = 0.000e+00
   [PASS] [THEOREM] N3(c) stripping exp(3 J) from K_6^src yields D_6^loc R_6^env exactly on the finite box
-         max stripping residual = 7.779e-16
+         max stripping residual = 9.739e-16
   [PASS] [THEOREM] N3(c) the stripped operator has no off-diagonal residual on the finite-box character basis (forces a diagonal residual)
-         off-diagonal residual = 7.779e-16
-  [PASS] [THEOREM] N3(c) the forward identity K_6^src = exp(3 J) D_6^loc R[rho(6)] exp(3 J) holds at machine precision on the finite box (definitional coincidence with R_6^env in the source-sector stripping decomposition)
-         forward identity verified to 7.779e-16; reverse division by D_loc omitted as numerically meaningless when min D_loc entry ~ 2.680e-19
+         off-diagonal residual = 9.739e-16
+  [PASS] [THEOREM] N3(c) the consumer-defined identity K_6^src = exp(3 J) D_6^loc R[rho(6)] exp(3 J) round-trips at machine precision on the finite box
+         forward identity verified to 9.739e-16; reverse division by D_loc omitted as numerically meaningless when min D_loc entry ~ 2.680e-19
   [PASS] [THEOREM] N3(d) rho(6) differs from the prior character-measure witness sequence by a definite tabulated amount (not a relabeling)
          max difference = 4.565e-01
   [PASS] [THEOREM] N3(d) rho(6) differs from the prior residual-identification witness sequence by a definite tabulated amount (not a relabeling)

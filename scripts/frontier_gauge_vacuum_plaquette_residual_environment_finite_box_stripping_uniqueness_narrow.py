@@ -252,8 +252,8 @@ def main() -> int:
         [wilson_character_coefficient(p, q) / (dim_su3(p, q) * c00) for p, q in weights],
         dtype=float,
     )
-    # Enforce swap symmetry of the canonical single-link Wilson character
-    # coefficient (a_(p,q) = a_(q,p)) at float64 precision so D and the local
+    # Enforce swap symmetry of the stipulated finite integral coefficient
+    # (a_(p,q) = a_(q,p)) at float64 precision so D and the local
     # array do not carry asymmetric float64 round-off that would propagate
     # through the mpmath checks in (U4).
     for k, (p, q) in enumerate(weights):
@@ -333,10 +333,9 @@ def main() -> int:
     R_recovered_diag_err = mp_off_diag_max(R_hostile_recovered)
 
     # (U5) FINITE-BOX AGREEMENT WITH THE BOUNDED COMPANION:
-    # Build K from R[rho(6)] with rho(6) = canonical Wilson single-link
-    # boundary character coefficients (same Bessel-determinant identity used
-    # by the bounded companion runner), then strip via (S) and verify the
-    # recovered R diagonal entries match rho(6).
+    # Build K from a chosen R[rho(6)] whose values come from the stipulated
+    # integral (same Bessel-determinant identity used by the bounded companion),
+    # then strip via (S) and verify that this input round trip recovers rho(6).
     rho_6 = local.copy()
     R_rho6 = mp_diag(rho_6)
     K_rho6 = reconstruct(R_rho6)
@@ -387,7 +386,7 @@ def main() -> int:
     print(f"  recovered C swap err                  = {R_recovered_swap_err:.3e}")
     print(f"  recovered C off-diagonal magnitude    = {R_recovered_diag_err:.3e}")
     print()
-    print("Bounded-companion cross-check (canonical Wilson rho(6), mpmath)")
+    print("Bounded-companion input round-trip (stipulated-integral rho(6), mpmath)")
     print(f"  rho_(0,0)(6)                          = {rho_6[index[(0,0)]]:.16f}")
     print(f"  ||R[rho(6)] - strip(reconstruct(R[rho(6)]))|| = {rho6_recovery_err:.3e}")
     print(f"  recovered R[rho(6)] off-diagonal err  = {rho6_diagonal_err:.3e}")
@@ -425,7 +424,7 @@ def main() -> int:
         detail=f"min eig(K)={K_hostile_min_eig:.3e}; K sym/swap=({K_hostile_self_adj_err:.3e},{K_hostile_swap_err:.3e}); round-trip={hostile_round_trip_err:.3e}; C sym/swap/offdiag=({R_recovered_self_adj_err:.3e},{R_recovered_swap_err:.3e},{R_recovered_diag_err:.3e})",
     )
     check(
-        "(U5) when K_6^src|_B is constructed from the bounded companion's canonical Wilson rho_(p,q)(6) coefficients, (S) recovers a diagonal operator whose entries equal rho_(p,q)(6) on the finite box (mpmath)",
+        "(U5) when K_6^src|_B is constructed from the bounded companion's stipulated-integral rho_(p,q)(6) values, (S) recovers that chosen diagonal input on the finite box (mpmath)",
         rho6_recovery_err < TOL and rho6_diagonal_err < TOL and rho6_diag_match < TOL,
         detail=f"||R[rho(6)] - strip(...)||={rho6_recovery_err:.3e}, off-diag={rho6_diagonal_err:.3e}, diag match={rho6_diag_match:.3e}",
     )

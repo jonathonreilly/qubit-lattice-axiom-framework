@@ -283,13 +283,12 @@ this row can safely claim:
 A bounded partial input also exists on the single-link side:
 
 - [gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
-  has current pipeline-derived effective status `retained_bounded` and
-  computes the bounded normalized single-link Wilson boundary coefficients
+  evaluates the explicitly stipulated integral and normalized values
   `rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q) c_(0,0)(6))` on the finite weight
-  box `0 <= p,q <= 4` by two independent integrators (Schur-Weyl
-  Bessel-determinant and Weyl-Cartan torus integration). This is bounded
-  support for the single-link factor `c_lambda(6)` referenced in bounded
-  ingredient 1 above, on the finite box only.
+  box `0 <= p,q <= 4` by independently implemented Schur-Weyl
+  Bessel-determinant and Weyl-Cartan routes. This citation supplies only that
+  finite numerical input; it does not identify the values with a physical
+  local factor, environment coefficient sequence, or tensor-transfer readout.
 
 These bounded inputs do **not** supply: the all-weight closed form, the
 full untruncated tensor-transfer operator at `beta = 6`,

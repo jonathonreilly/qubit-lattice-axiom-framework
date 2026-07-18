@@ -14,8 +14,8 @@ to the finite packet, without claiming the broader parent theorem. It
 does **not** claim the parent structural matrix-element identity
 `z_(p,q)^env(beta) = <chi_(p,q), (T_beta^env,tensor)^(L_perp-1)
 eta_beta^env>`. It claims only three explicit numerical properties of
-one specific matrix constructed at `beta = 6` from canonical truncated
-local ingredients.
+one specific matrix constructed from stipulated truncated coefficients at
+`x=2` and separately supplied fusion data.
 
 **Construction.** On the truncated dominant-weight box `0 ≤ p, q ≤
 NMAX = 4` and Wilson Bessel mode sum truncated to `MODE_MAX = 80`,
@@ -36,8 +36,8 @@ tensor_word
 ```
 
 This is a real square matrix indexed by `(p, q) ∈ [0..4]² → [0..24]`
-(25 dominant-weight states), built only from `c_(p,q)(6)` truncated
-Wilson coefficients, the corresponding `SU(3)` representation
+(25 dominant-weight states), built only from the stipulated finite values
+`c_(p,q)(x=2)`, the corresponding `SU(3)` representation
 dimensions `d_(p,q)`, and integer-valued fusion multiplicities `N_f,
 N_fbar` on the same box.
 
@@ -82,21 +82,22 @@ S · amp  =  S · tensor_word · boundary0
 ```
 
 The runner verifies (P1), (P2), (P3) at full numpy double-precision
-tolerance on the explicit matrix constructed from the truncated
-canonical inputs, and additionally verifies the (P3-corollary) numerical
+tolerance on the explicit matrix constructed from the stipulated truncated
+inputs, and additionally verifies the (P3-corollary) numerical
 identity to confirm the chain `S · boundary0 = boundary0` plus (P2)
 combine consistently.
 
 ## Bounded admissions
 
-(BA-1) **Canonical truncated local Wilson coefficients.** The values
-`c_(p,q)(6)` on the `NMAX = 4` weight box, truncated to the
+(BA-1) **Stipulated finite integral coefficients.** The values
+`c_(p,q)(x=2)` on the `NMAX = 4` weight box, truncated to the
 `MODE_MAX = 80` Bessel mode sum in the Schur-Weyl determinant
 representation, are imported from
 [`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
-which checks the same construction by two independent integrators (Schur-Weyl
-Bessel-determinant and Weyl-Cartan torus integration) at the same
-truncation parameters.
+which evaluates the explicitly stipulated `SU(3)` integral by independently
+implemented Bessel-determinant and Weyl-Cartan routes. This citation imports
+only those finite values; it does not identify them as a canonical physical
+local factor or environment coefficient sequence.
 
 (BA-2) **`SU(3)` fundamental and anti-fundamental fusion
 multiplicities.** The integer-valued matrices `N_f` and `N_fbar`
@@ -115,7 +116,7 @@ textbook compact-Lie-group facts on the finite truncated box.
 
 | Step | Argument | Load-bearing input |
 |---|---|---|
-| Construct `diag_c` from `c_(p,q)(6)` and `d_(p,q)` per (1) | algebraic substitution + (BA-1) | (BA-1) truncated Wilson coefficients |
+| Construct `diag_c` from `c_(p,q)(x=2)` and `d_(p,q)` per (1) | algebraic substitution + (BA-1) | (BA-1) stipulated finite integral coefficients |
 | Construct `N_f`, `N_fbar` per (2) via standard six-neighbor `SU(3)` recurrence on the `NMAX = 4` box | (BA-2) `SU(3)` fusion multiplicities | (BA-2) elementary `SU(3)` rep theory |
 | Construct `tensor_word` per (3) by direct matrix products | algebra over real entries | none beyond (BA-1)–(BA-2) |
 | (P1) check `min(tensor_word) ≥ 0` by direct entry-wise minimum | numerical computation on the constructed matrix | runner-direct |
@@ -132,10 +133,9 @@ plus the runner's matrix construction; no further authority is invoked.
 The runner verifies, on the full `NMAX = 4`, `MODE_MAX = 80` truncation:
 
 (A) **Construction reproducibility.** `diag_c[(0,0)] = 1` exactly
-(definition of normalization); `diag_c[(p,q)] = c_(p,q)(6) / (d_(p,q)
-· c_(0,0)(6))` matches the Wilson-environment companion values on the
-same box to machine precision (cross-check via the companion's
-two-integrator agreement).
+(definition of normalization); `diag_c[(p,q)] = c_(p,q)(2) / (d_(p,q)
+· c_(0,0)(2))` matches the stipulated-integral companion values on the
+same box to machine precision. This is a numerical input cross-check only.
 
 (B) **(BA-2) fusion-multiplicity construction.** `N_f` and `N_fbar`
 have entries in `{0, 1}`, are conjugate to each other under `S`
@@ -158,14 +158,14 @@ both `S · boundary0 = boundary0` exactly and the numerical
 this is a consistency check, not a separate load-bearing property.
 
 (G) **Forbidden-import audit.** Imports limited to numpy + scipy
-(family convention with the Wilson-environment companion
+(family convention with the stipulated-integral companion
 `frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py`).
 
 ## Dependencies
 
 - [`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
-  for the bounded truncated `c_(p,q)(6)` Wilson coefficients on the
-  `NMAX = 4` box.
+  for the finite evaluation of the stipulated `c_(p,q)(x=2)` integral on the
+  `NMAX = 4` box only.
 - `GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md`
   for parent context only. The parent's broader structural
   identification of spatial-environment boundary data with the
@@ -211,8 +211,8 @@ Expected:
 ```text
 TOTAL: PASS=N FAIL=0
 RESULT: one explicit positive matrix tensor_word constructed from
-canonical truncated local Wilson coefficients (NMAX=4, MODE_MAX=80,
-beta=6) and SU(3) fusion multiplicities verifies three structural
+stipulated finite integral coefficients (NMAX=4, MODE_MAX=80,
+x=2) and SU(3) fusion multiplicities verifies three structural
 properties at double precision: (P1) nonnegativity of matrix entries,
 (P2) conjugation-swap symmetry, (P3) nonnegative boundary amplitude
 under (0,0)-component unit-vector readout. The boundary-amplitude

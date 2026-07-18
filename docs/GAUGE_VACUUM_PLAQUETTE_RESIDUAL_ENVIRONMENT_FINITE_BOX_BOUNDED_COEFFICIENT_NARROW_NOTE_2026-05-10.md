@@ -10,8 +10,8 @@ central class function `Z(W)` of marked plaquette holonomy `W` with character
 expansion `Z(W) = z_(0,0) sum_(p,q) d_(p,q) rho_(p,q) chi_(p,q)(W)` acts on
 the character basis exactly by the diagonal eigen-rule
 `C_Z chi_(p,q) = rho_(p,q) chi_(p,q)`; and that when the character
-coefficients `rho_(p,q)` are instantiated with the bounded coefficient
-companion's runner-computed Wilson single-link boundary values
+coefficients `rho_(p,q)` are instantiated with the bounded companion's
+runner-computed normalized values of the explicitly stipulated integral
 `rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q) c_(0,0)(6))` for `0 <= p,q <= 4`, the
 finite-box diagonal operator coincides on the same finite box with the
 finite-box residual factor *as defined* by the source-sector decomposition
@@ -32,8 +32,8 @@ algebraic correctness, but relevant to its physical reading):
   algebraic identity proven below;
 - the bounded coefficient companion
   [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
-  supplies the runner-computed `rho_(p,q)(6)` values on the finite box
-  `0 <= p,q <= 4` as bounded numerical input; the narrow note proves the
+  supplies only the runner-computed normalized stipulated-integral values on
+  the finite box `0 <= p,q <= 4` as bounded numerical input; the narrow note proves the
   finite-box diagonal-action identity *for any* such coefficient sequence and
   *instantiates* it with the companion's values.
 **Status authority:** independent audit lane only. This source note does not
@@ -115,8 +115,7 @@ restricted to the finite box `B`. The proof is the elementary character
 orthogonality calculation, done line by line in the proof section below.
 
 **Conclusion (N3) (finite-box bounded-coefficient instantiation).** Take
-the bounded coefficient companion's runner-computed normalized single-link
-`SU(3)` Wilson boundary values
+the bounded companion's runner-computed normalized stipulated-integral values
 
 ```text
 rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q) c_(0,0)(6)),                         (6)
@@ -133,11 +132,11 @@ for `(p, q) in B`. Substituting `rho := rho(6)` into `(N1)`/`(N2)`:
   decomposition `K_6^src = exp(3 J) D_6^loc R_6^env exp(3 J)`, restricted
   to the same finite box.
 
-This last coincidence is a definitional fact at finite-box scope: the
-decomposition stripping defines the finite-box residual factor's action on
-`chi_(p,q)` by a real diagonal scalar in this restricted class-function
-sector, and the bounded coefficient companion supplies the numerical values
-of that sequence on `B`.
+This last coincidence is a definitional round trip at finite-box scope: this
+note chooses the companion's values for the diagonal slot, constructs the
+finite package from that choice, and strips it back. The companion supplies
+only the numerical values of the stipulated integral; it does not derive that
+choice from an actual residual environment.
 
 ## Proof
 
@@ -200,13 +199,12 @@ checks the finite-box residual factor directly:
 For the narrow finite-box theorem, `R_beta^env|_{H_B}` is represented by a
 positive self-adjoint diagonal operator in the character basis on `B`. Such
 an operator is uniquely determined by its character eigenvalues `rho_(p,q)`.
-The bounded companion's `rho_(p,q)(6)` values satisfy positivity and
-conjugation symmetry on `B` (verified at runner time), and therefore
-determine the defined `R_6^env|_{H_B}` on the finite box.
-By `(N2)` applied to the unmarked spatial Wilson environment's boundary
-class function `Z_6^env|_B` (which has those character coefficients by
-construction in the bounded companion), this `R_6^env|_{H_B}` equals
-`C_(Z_6^env)|_{H_B}`. ∎
+The companion's finite normalized values satisfy positivity and conjugation
+symmetry on `B` (verified at runner time), and therefore define one admissible
+diagonal instance `R[rho(6)]`. Applying `(N2)` to the finite character
+polynomial constructed from those coefficients gives its corresponding
+convolution operator. No equality with an unmarked spatial Wilson environment
+is inferred. ∎
 
 ## What this claims
 
@@ -214,9 +212,9 @@ construction in the bounded companion), this `R_6^env|_{H_B}` equals
   `R[rho]` on `H_B` for any nonnegative conjugation-symmetric `rho`.
 - `(N2)`: the standard Peter-Weyl convolution-on-characters identity
   restricted to the finite box `B`.
-- `(N3)`: that instantiating `rho := rho(6)` from the bounded coefficient
-  companion makes `R[rho(6)]|_{H_B}` the defined finite-box residual factor,
-  with no witness injection.
+- `(N3)`: the explicitly chosen instantiation `rho := rho(6)` from the bounded
+  companion and the resulting definitional construction/stripping round trip,
+  with no claim that the companion selects a physical residual factor.
 
 ## What this does NOT claim
 
@@ -262,8 +260,7 @@ framework-point Perron closure remain open at this note's narrow scope.
 
 ## Cited dependencies
 
-- [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md) — bounded finite-box numerical
-  coefficients `rho_(p,q)(6)` consumed as finite support input in `(N3)`.
+- [`gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md) — finite evaluation of the stipulated integral, consumed only as a chosen numerical packet in `(N3)`; it supplies no residual-environment identification.
 
 The following are context pointers, not load-bearing for the
 finite-box algebraic identity proven in `(N1)` and `(N2)`:
@@ -299,10 +296,9 @@ verifies on the finite box `0 <= p,q <= 4`:
    `exp(3 J) D_6^loc · · · exp(3 J)` from the explicit one-step Wilson
    source-sector kernel restricted to the finite box: the stripped
    diagonal eigenvalues equal `rho(6)` to machine precision;
-5. cross-check that the runner's `rho(6)` finite-box values come from the
-   bounded companion's computation, not from a fresh witness sequence,
-   via direct call to the companion's coefficient routine and a numerical
-   identity check;
+5. provenance check that the runner imports the stipulated finite values from
+   the bounded companion rather than a hard-coded witness table; this is
+   bookkeeping, not mathematical evidence for a physical identification;
 6. swap-commutator identity `[S, R[rho(6)]] = 0` exactly on the finite
    box (a sympy symbolic check on a representative subspace).
 

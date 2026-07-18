@@ -56,9 +56,11 @@ mixed-kernel compression on the marked plaquette sector equals this packet.
 ## Bounded Ingredient 1: computed one-link Wilson coefficients
 
 On the finite box used by the runner, the coefficients are computed in-runner
-by the Schur-Weyl Bessel-determinant identity. The bounded companion
-cross-checks the same normalized Wilson coefficients against direct Weyl
-integration on the Cartan torus with Vandermonde-squared measure.
+by the Schur-Weyl Bessel-determinant identity. The bounded companion evaluates
+the same explicitly stipulated integral against direct Weyl integration on
+the Cartan torus with Vandermonde-squared measure. That citation is a finite
+numerical cross-check only; it does not derive the identification of those
+values with this note's local packet.
 
 The finite packet therefore has a bounded companion source for:
 
@@ -167,9 +169,10 @@ packet. It does not promote this note, apply an audit verdict, or close the
 actual mixed-kernel compression bridge.
 
 - [gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
-  has current pipeline-derived effective status `retained_bounded` and
-  computes the same normalized one-link Wilson coefficients on a finite weight
-  box by two independent methods.
+  evaluates the explicitly stipulated `SU(3)` integral on a finite weight box
+  by independently implemented Bessel and Weyl routes. This note separately
+  stipulates where those values enter its constructed local packet; the cited
+  row supplies no physical or framework-selection bridge.
 - [gauge_vacuum_plaquette_transfer_operator_character_recurrence_note](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md)
   supplies the finite source recurrence `J` used in the packet runner.
 - [gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)

@@ -231,9 +231,10 @@ reproven ingredients:
 
 None is pinned here; these are the same class of input the campaign already
 named — an externally-supplied cluster-expansion / no-real-bulk-transition
-certificate on the externally-computed series, never on the circular
-`kappa/witness` pair
-(`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`).
+certificate on the externally-computed series. The finite stipulated-integral
+evaluation in
+`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`
+does not supply such a certificate or a physical environment sequence.
 
 ## 4. Comparator reconciliation
 

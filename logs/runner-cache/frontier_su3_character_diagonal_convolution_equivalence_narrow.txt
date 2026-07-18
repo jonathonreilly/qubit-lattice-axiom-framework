@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py
-runner_sha256: 075dd32a359505addab8b4b98d24b01195bf2bdbf3c978cbb4552b2ed767e437
+runner_sha256: cb80613c581f7a42c446bc3a0670dac14dd7ca2fa5fb70d7de6febdd0ccf4890
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 8.62
+elapsed_sec: 9.22
 status: ok
 ----- stdout -----
 
@@ -38,7 +38,7 @@ Part 4 (T4): positivity, self-adjointness, conjugation-symmetry of R
   [PASS (A)] (T4) R is positive: rho_(p,q) >= 0 on every weight in B_4  (min rho = 0.00125 >= 0)
   [PASS (A)] (T4) R is self-adjoint (diagonal with real entries)  (||R - R^T||_inf = 0.000e+00)
   [PASS (A)] (T4) R commutes with the conjugation swap (p,q) <-> (q,p)  (||[swap, R]||_inf = 0.000e+00)
-  [PASS (A)] (T4) Normalization: rho_(0,0) = 1 exactly  (|rho_(0,0) - 1| = 0.000e+00)
+  [PASS (A)] (T2) Trivial-channel normalization: rho_(0,0) = 1 exactly  (|rho_(0,0) - 1| = 0.000e+00)
 
 ----------------------------------------------------------------------------------------
 Part 5: concrete instance — trivial coefficient sequence collapses to projection

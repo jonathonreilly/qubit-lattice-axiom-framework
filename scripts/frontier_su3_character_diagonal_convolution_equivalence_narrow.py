@@ -29,7 +29,8 @@ THEN the following identities hold on the abstract B_4 packet:
   (T3) Uniqueness: rho^(1) = rho^(2) iff their diagonal operators agree.
 
   (T4) Positivity / self-adjointness / swap-symmetry of R under the
-       abstract hypotheses (rho >= 0, rho symmetric, rho_(0,0) = 1).
+       real nonnegative swap-symmetric hypotheses. The separate condition
+       rho_(0,0) = 1 fixes the trivial-channel normalization used in T2.
 
 The input surface is the finite B_4 SU(3) character basis, normalized Haar
 probability measure, an abstract real nonnegative swap-symmetric sequence
@@ -478,10 +479,10 @@ check(
 # =============================================================================
 section("Part 4 (T4): positivity, self-adjointness, conjugation-symmetry of R")
 # =============================================================================
-# Under the abstract hypothesis (rho >= 0, rho_(p,q) = rho_(q,p), rho_(0,0) = 1),
-# R is a diagonal operator with non-negative real eigenvalues. In the
-# Schur-orthonormal character basis, R is diagonal with real entries, hence
-# self-adjoint.
+# Under the abstract hypotheses rho >= 0 and rho_(p,q) = rho_(q,p), R is a
+# diagonal operator with non-negative real eigenvalues. In the Schur-orthonormal
+# character basis, R is diagonal with real entries, hence self-adjoint. The
+# separate condition rho_(0,0) = 1 fixes the trivial-channel normalization in T2.
 R_matrix = np.diag([float(r) for r in rho1])
 swap_matrix = np.zeros_like(R_matrix)
 for i, (p, q) in enumerate(B_N):
@@ -511,10 +512,10 @@ check(
     detail=f"||[swap, R]||_inf = {commute_err:.3e}",
 )
 
-# Normalization
+# Trivial-channel normalization used in T2
 norm_err = abs(float(rho1[INDEX[(0, 0)]]) - 1.0)
 check(
-    "(T4) Normalization: rho_(0,0) = 1 exactly",
+    "(T2) Trivial-channel normalization: rho_(0,0) = 1 exactly",
     norm_err < 1e-15,
     detail=f"|rho_(0,0) - 1| = {norm_err:.3e}",
 )

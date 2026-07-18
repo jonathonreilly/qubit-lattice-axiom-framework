@@ -94,6 +94,10 @@ is:
 - conjugation-symmetric: it commutes with the involution
   `swap: chi_(p,q) -> chi_(q,p)` on `V_4`.
 
+The condition `rho_(0,0) = 1` is used only to fix the trivial-channel
+normalization `Z_(0,0) = 1` in `(T2)`. Conclusion `(T4)` uses the real,
+nonnegative, swap-symmetric properties of the sequence.
+
 ## Proof
 
 `(T1)` This is the Schur character orthogonality relation for

@@ -33,7 +33,7 @@
         },
         {
           "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
@@ -969,7 +969,7 @@
         },
         {
           "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "flavor_einselection_2sector_modulo_kreality_2026-06-02",
@@ -2927,6 +2927,6 @@
       "uncertified_count": 667
     }
   ],
-  "repo_head": "7fc33d2f41c741ba7613cd307a299224a4b3dcc9",
+  "repo_head": "cb0b730229ff4ad168f2e811aeb1931b5f76ecb6",
   "schema": "lane_certification_v2"
 }

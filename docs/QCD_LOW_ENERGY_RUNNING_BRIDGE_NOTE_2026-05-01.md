@@ -1,335 +1,315 @@
-# QCD `v -> M_Z` Running Transfer-Map Kernel Theorem: domain-scoped, boundary-value-free
+# QCD `v -> M_Z` Supplied-Input Transfer-Map Theorem
 
-**Date:** 2026-05-01 (bounded source hint added 2026-05-24; boundary
-narrowed 2026-05-25); repaired 2026-06-10 (re-scoped to the transfer-map
-kernel theorem; numerical-match structure removed)
+**Date:** 2026-05-01; two-loop EFT repair 2026-07-18
 **Type:** bounded_theorem
-**Claim scope:** A kernel theorem (K1)-(K5), quantified over the whole
-admissible domain `D = [0.085, 0.130]`, about the `alpha_s` transfer map
-`T : alpha_s(v) -> alpha_s(M_Z)` defined by the declared imports below.
-The exact 1-loop map satisfies `1/T_1(a) = 1/a - L` with
-`L = (7/2pi) ln(v/m_t) + ((23/3)/2pi) ln(m_t/M_Z) = 1.1746670551`, and
-the 2-loop matched map `T_2` is grid-certified across `D` for
-well-definedness, strict increase, expansivity, and a center-point inverse
-round-trip. **No specific boundary value `alpha_s(v)` appears anywhere in
-the claim.** PDG comparisons are confined to a labeled class-D appendix
-and are not load-bearing.
-**Status authority:** independent audit lane only. This source note does
+**Claim scope:** the exact piecewise one-loop transfer formula on
+`D = [0.085, 0.130]`, plus finite numerical observations for an explicitly
+defined piecewise two-loop QCD EFT map on the ten-point grid
+`G = {0.085, 0.090, ..., 0.130}` and at the separate center point `0.1075`.
+**Status authority:** the independent audit lane only. This source note does
 not set or predict an audit outcome.
 **Primary runner:** `scripts/frontier_qcd_low_energy_running_bridge.py`
 
-## Why this note exists
+## 1. Repair and narrow boundary
 
-The previous revision of this note verified the standard SM running
-transfer at one imported boundary value and checked the result against
-the PDG world average. The 2026-05-25 independent review classified that
-load-bearing step as a numerical-match case, with the rationale:
+The previous two-loop implementation was not the system named by the note. It
+changed the one-loop `n_f` coefficient below `m_t` while retaining the
+six-flavor Standard Model two-loop `g_3` term and continuing to evolve an
+active top Yukawa. That hybrid is neither the full un-decoupled Standard Model
+nor a five-flavor QCD EFT. The previous note also inferred a threshold bracket
+for that coupled flow from `beta_0(5) > beta_0(6)` alone and called
+`T_2 - T_1` a truncation envelope without a higher-order remainder argument.
 
-> However, the load-bearing result depends on the specific admitted value
-> alpha_s(v)=0.103304 and fixed auxiliary boundary inputs, then checks
-> agreement with the PDG comparator. Under the rubric tie-breaker,
-> dependence on a chosen imported numerical boundary value makes this
-> class G rather than a clean first-principles closure.
+This repair keeps the exact one-loop theorem and replaces the hybrid with the
+narrow scalar QCD EFT map defined below. It makes only finite-grid claims for
+the two-loop ordering and expansivity observations, and it reports
+`T_2 - T_1` only as an observed order-to-order shift.
 
-That criticism is correct: a claim of the form "this particular imported
-number runs to the PDG value" is exactly the rubric's worked example of a
-class-(G) numerical match, no matter how carefully the running is
-implemented. The repair is a re-scope, not a patch. The honest content of
-this row was never the boundary value — it is the **transfer map
-itself**: the kernel that any accepted `alpha_s(v)` must pass through on
-the way to `M_Z`. This revision states and verifies that kernel as a
-theorem quantified over an entire domain, with no preferred input value,
-and demotes every PDG comparison to a labeled appendix. Downstream rows
-(e.g. the `alpha_s` derivation lane) need precisely this kernel; they
-supply their own boundary value and own its provenance.
+No PDG target value, preferred `alpha_s(v)` boundary value, or target-matching
+boolean is part of this packet. Comparator uses remain the responsibility of
+downstream notes and are not evidence for this theorem.
 
-## Declared imports (the boundary of the bounded theorem)
+## 2. Supplied data and external infrastructure
 
-The theorem below is **about the transfer map these imports define**; it
-is not a derivation of `alpha_s` from the framework axioms. The imports
-are:
+The theorem is about the transfer map defined by these supplied inputs; it is
+not a derivation of QCD, `alpha_s(v)`, or any physical scale from the framework
+axioms.
 
-1. **Continuum 2-loop SM MSbar RGE coefficients** — the standard
-   Machacek-Vaughn (1984) / Arason et al. (1992) two-loop beta functions
-   for `(g_1, g_2, g_3, y_t, lambda)`, used as published continuum
-   infrastructure. The SU(3) group factors entering the gauge
-   coefficient are **recomputed inside the runner** from the Gell-Mann
-   generators: `T_F = 1/2` from the trace normalization
-   `Tr(T^a T^b) = T_F delta_ab`, `C_A = 3` from the structure-constant
-   contraction `f^{acd} f^{bcd} = C_A delta^{ab}` (with `f^{abc}` itself
-   computed from commutators and verified totally antisymmetric), and
-   `C_F = 4/3` from the fundamental Casimir. Hence the 1-loop coefficient
-   `b0(n_f) = (11/3) C_A - (4/3) T_F n_f`, giving `b0(6) = 7` and
-   `b0(5) = 23/3`, is **derived within the packet**, not asserted.
-2. **Scales** — `v = 246.282818290129 GeV` (framework scale convention),
-   `m_t = 172.69 GeV` (PDG top pole mass), `M_Z = 91.1876 GeV` (PDG).
-   Only the top threshold lies between `v` and `M_Z`; the lower
-   thresholds `m_b`, `m_c` are **not crossed and are not part of this
-   note's claim surface** (the previous revision carried unused `m_b/m_c`
-   threshold machinery, removed here).
-3. **Auxiliary EW tuple** — `g_1(v) = 0.46228`, `g_2(v) = 0.65184`,
-   `y_t(v) = 0.93737`, `lambda(v) = 0.13`, fixed declared inputs to the
-   2-loop system. Theorem leg (K4) shows this tuple is **not a tuning
-   knob**: 5% variations move `T_2` by less than `3.1e-6`, five orders of
-   magnitude below the claimed structure.
-4. **PDG band** `alpha_s(M_Z) = 0.1180 +/- 0.0009` — comparator only,
-   quarantined in the class-D appendix.
+1. The external continuum input is the massless `MSbar` QCD beta function
+   through two loops for `n_f` active fundamental quark flavors.
+2. The supplied scales are
 
-## The transfer maps (definitions)
+   ```text
+   v   = 246.282818290129 GeV,
+   m_t = 172.69 GeV  (supplied pole-mass threshold),
+   M_Z = 91.1876 GeV.
+   ```
 
-Write `a := alpha_s(v)` and `t := ln(mu)`. The 1-loop QCD running of
-`1/alpha_s` is linear in `t` with slope `b0(n_f)/(2pi)`:
+   Only the supplied top marker lies between `v` and `M_Z`; bottom and charm
+   thresholds are not crossed.
+3. At `mu = m_t`, the map uses the supplied identity matching prescription
+
+   ```text
+   alpha_s^(5)(m_t) := alpha_s^(6)(m_t).
+   ```
+
+   This is the one-loop matching prescription at the chosen pole-mass
+   threshold, not an all-orders no-jump theorem. In the standard decoupling
+   relation at `mu = m_h`, the one-loop constant is zero; for a pole mass the
+   first nonzero constant shown by the official QCD review is the coefficient
+   multiplying `alpha_s^2` in the matching bracket. Thus the first omitted
+   nonzero change in `alpha_s` is absolute order `alpha_s^3`. This packet sets
+   that and all higher matching corrections to zero by definition and supplies
+   no bound on them.
+4. The domain and finite grid are
+
+   ```text
+   D = [0.085, 0.130],
+   G = {0.085, 0.090, 0.095, 0.100, 0.105,
+        0.110, 0.115, 0.120, 0.125, 0.130}.
+   ```
+
+No electroweak auxiliary tuple is supplied or evolved. In particular, no
+un-decoupled `y_t`, `g_1`, `g_2`, or Higgs coupling is carried into the
+five-flavor segment.
+
+## 3. Coefficients and convention conversion
+
+Let `T^a = lambda^a/2` be the fundamental Gell-Mann generators. The runner
+reconstructs
 
 ```text
-d(1/alpha_s)/d ln(mu) = b0(n_f) / (2 pi),   b0(n_f) = (11/3) C_A - (4/3) T_F n_f .
+Tr(T^a T^b) = T_F delta^(ab),     T_F = 1/2,
+f^(acd) f^(bcd) = C_A delta^(ab), C_A = 3,
+sum_a T^a T^a = C_F I,            C_F = 4/3.
 ```
 
-- **`T_1` (exact 1-loop matched map).** Integrating from `v` down to
-  `M_Z` with `n_f = 6` above `m_t` and `n_f = 5` below (leading-order
-  continuous matching at `m_t`) gives the exact closed form
+In the convention
 
-  ```text
-  1/T_1(a) = 1/a - L ,
-  L = (b0(6)/2pi) ln(v/m_t) + (b0(5)/2pi) ln(m_t/M_Z)
-    = (7/2pi) ln(v/m_t) + ((23/3)/2pi) ln(m_t/M_Z)
-    = 1.1746670551 .
-  ```
+```text
+dg/d ln(mu)
+  = -beta_0 g^3/(16 pi^2) - beta_1 g^5/(16 pi^2)^2,
+```
 
-- **`T_2` (2-loop matched map).** The map obtained by integrating the
-  full 2-loop SM RGE for `(g_1, g_2, g_3, y_t, lambda)` from `v` to
-  `M_Z`, with the same leading-order matching at `m_t` and the auxiliary
-  tuple fixed at its declared values, then reading off
-  `alpha_s(M_Z) = g_3(M_Z)^2 / 4pi`.
+the standard two coefficients are
 
-- **Domain.** `D = [0.085, 0.130]`, a wide window containing every
-  physically discussed value of `alpha_s` at the electroweak scale (the
-  PDG pullback window of the appendix sits well inside it).
+```text
+beta_0 = (11/3) C_A - (4/3) T_F n_f,
 
-## Kernel theorem (K1-K5)
+beta_1 = (34/3) C_A^2
+         - [(20/3) C_A + 4 C_F] T_F n_f.
+```
 
-**Load-bearing statement.** `1/T_1(a) = 1/a - L` with
-`L = (7/2pi) ln(v/m_t) + ((23/3)/2pi) ln(m_t/M_Z) = 1.1746670551`
-exactly. The 2-loop transfer map `T_2` is independently integrated and
-grid-certified on `D = [0.085, 0.130]`: finite and positive at all grid
-points, strictly increasing across the grid, expansive on every grid
-secant, with a checked center-point inverse round-trip.
+Substitution gives
 
-- **(K1) Well-definedness (Landau margin).** For all `a` in `D`,
-  `1 - L a > 0`: the 1-loop Landau pole sits at `a* = 1/L = 0.8513`, a
-  derived factor `(1/L)/a_max = 6.55` above the domain edge. Hence `T_1`
-  is finite and positive on all of `D`, and the 2-loop flow integrates
-  without singularity at all checked grid points on `[M_Z, v]`. *Proof:*
-  exact algebra for `T_1` (the closed form above); grid verification for
-  `T_2`.
+```text
+(beta_0, beta_1) at n_f=6 = (7, 26),
+(beta_0, beta_1) at n_f=5 = (23/3, 116/3).
+```
 
-- **(K2) Exact 1-loop closed form.** The closed form is not a fit: the
-  separable 1-loop ODE integrates exactly to `1/T_1 = 1/a - L`. The
-  runner confirms the closed form against an independent RK45 integration
-  with residual at machine precision (~`6e-16` at the domain center, and
-  below `1e-12` at every grid point), and cross-checks the 2-loop
-  integrator against a second independent method (RK45 vs DOP853,
-  agreement ~`4e-15`).
+For `alpha_s = g^2/(4 pi)`, the chain rule
 
-- **(K3) Monotonicity and expansivity certificate.** `T_1` obeys the
-  exact Jacobian identity
+```text
+d alpha_s/d ln(mu) = [g/(2 pi)] dg/d ln(mu)
+```
 
-  ```text
-  dT_1/da = 1/(1 - L a)^2 = (T_1(a)/a)^2 > 1   on D,
-  ```
+gives the scalar equation used by the runner:
 
-  so `T_1` is strictly increasing and expansive on `D`. `T_2` is
-  numerically certified on a uniform 10-point grid: the sampled values
-  are strictly increasing, every grid secant slope is `> 1`, the central
-  Jacobian is `J_2 = dT_2/da |_(a=0.1075) = 1.328`, and the center-point
-  inverse round-trip `T_2^{-1}(T_2(a))` recovers `a` to `< 1e-9`.
+```text
+d alpha_s/d ln(mu)
+  = -beta_0 alpha_s^2/(2 pi)
+    -beta_1 alpha_s^3/(8 pi^2).
+```
 
-- **(K4) Auxiliary-tuple insensitivity (anti-tuning).** Varying any one
-  of `(g_1, g_2, y_t, lambda)` by `+/-5%` — or all four jointly — moves
-  `T_2` at the domain center by `< 3.1e-6`. The auxiliary tuple is a
-  declared import, not a tuning degree of freedom at the checked center
-  point: nothing in the theorem is adjusted through it.
+The factor `1/(8 pi^2)` is therefore fixed by the displayed `g` convention;
+it is not a fitted normalization.
 
-- **(K5) Truncation envelope.** At the domain center,
-  `T_2 - T_1 = +5.7e-4`: the 2-loop correction to the exact 1-loop
-  kernel is positive and bounded, and is quoted as the conservative
-  truncation envelope of the kernel (the PDG reference running is
-  4-loop; the 1-to-2-loop step bounds the order of the residual).
+## 4. Transfer-map definitions
 
-All five legs are stated on the declared domain `D`. The exact `T_1`
-legs are analytic on `D`; the `T_2` legs are evaluated at the domain
-center `a = 0.1075` and on the uniform 10-point grid, never at a
-preferred imported boundary value.
+Write `a = alpha_s(v)`.
 
-### Falsifiability structure
+### `T_1`: exact piecewise one-loop map
 
-Two falsification legs show the theorem has teeth:
+Run with `n_f=6` from `v` to `m_t`, apply the supplied identity matching map,
+then run with `n_f=5` from `m_t` to `M_Z`. Direct integration gives
 
-- **Sign flip.** The sign-flipped kernel `1/T = 1/a + L` *contracts*
-  (`T(a) < a`, Jacobian `< 1`): expansivity is a real property of the
-  asymptotically free sign, not a tautology of the map's form.
-- **Threshold removal.** Deleting the top threshold (running `n_f = 6`
-  throughout) shifts `T_2` by `1.03e-3` — more than `1e4` times the
-  two-integrator residual — and the matched map satisfies the **derived
-  strict bracket**
+```text
+1/T_1(a) = 1/a - L,
 
-  ```text
-  T_2[n_f = 6 only]  <  T_2[matched]  <  T_2[n_f = 5 only] ,
-  ```
+L = [7/(2 pi)] ln(v/m_t) + [(23/3)/(2 pi)] ln(m_t/M_Z)
+  = 1.1746670550677...
+```
 
-  which follows from `b0(5) = 23/3 > b0(6) = 7 > 0`. (The previous
-  revision's threshold "continuity check" compared a quantity to itself
-  and was vacuous; this bracket replaces it with a non-trivial,
-  sign-definite consequence of the flavor structure.)
+This is the preserved exact result. Since `1 - L a > 0` throughout `D`, it is
+finite and positive there. Its exact derivative is
 
-## What the runner checks (test -> claim map)
+```text
+dT_1/da = 1/(1 - L a)^2 = [T_1(a)/a]^2 > 1 on D.
+```
 
-`scripts/frontier_qcd_low_energy_running_bridge.py`, deterministic,
-runs in about a second, `SUMMARY: PASS=27 FAIL=0`. Every check is tagged:
+### `T_2`: supplied piecewise two-loop QCD EFT map
 
-| Part | Checks | Class | Claim leg |
-|------|--------|-------|-----------|
-| 1 | 5 | A | SU(3) group factors `T_F = 1/2`, `f^{abc}` antisymmetric, `C_A = 3`, `C_F = 4/3` computed from Gell-Mann generators; `b0(6) = 7`, `b0(5) = 23/3` derived |
-| 2 | 3 | A | (K1) `L` matches declared digits; Landau margin 6.55; `T_1` finite/positive on grid |
-| 3 | 3 | A | (K2) closed form vs independent RK45 (center + grid); RK45 vs DOP853 two-integrator independence |
-| 4 | 5 | A | (K3) exact `T_1` Jacobian identity; `T_2` grid monotonicity; grid-secanted expansivity with center Jacobian `J_2 = 1.328`; center inverse round-trip |
-| 5 | 2 | A | (K4) single-parameter and joint 5% auxiliary variations `< 3.1e-6` |
-| 6 | 4 | A | (K5) envelope `+5.7e-4`; derived threshold bracket; threshold-removal and sign-flip falsification legs |
-| 7 | 3 | B | note/runner manifest sync (same `L`, same domain, same scales; boundary value confined to appendix) |
-| 8 | 2 | D | labeled PDG comparator appendix (below) — **not load-bearing** |
+`T_2(a)` is defined by solving the scalar two-loop equation with `n_f=6` on
+`[m_t,v]`, carrying `alpha_s` identically at `m_t`, and solving it with
+`n_f=5` on `[M_Z,m_t]`. It is a two-loop-running/one-loop-matching map. It is
+not a full coupled Standard Model flow and is not a complete decoupled
+electroweak EFT.
 
-Check-class mix: **A=22, B=3, D=2**. The class-D comparators are a
-labeled minority; the previous revision's majority-load-bearing PDG
-comparisons (0 C-passes, 8 D-passes) are gone. No class-C
-(first-principles-from-axioms) claim is made anywhere: this is a bounded
-theorem about declared imports.
+For an independent constant-`n_f` check, set
 
-## What this rules out
+```text
+c_f = beta_1/(4 pi beta_0),
+Phi_f(alpha) = 1/alpha + c_f ln[alpha/(1 + c_f alpha)].
+```
 
-- Treating this row as a numerical match at a tuned input: the claim
-  quantifies over all of `D` and contains no preferred boundary value.
-- Treating the `-23/3` coefficient or the threshold structure as
-  asserted-by-citation: `C_A`, `T_F`, `C_F`, and `b0(n_f)` are computed
-  from the generators, and the threshold map is pinned by the derived
-  strict bracket rather than a vacuous continuity identity.
-- Treating the auxiliary EW tuple as a hidden tuning channel (K4).
+Each segment obeys the implicit analytic relation
 
-## Not in scope (explicit non-claims)
+```text
+Phi_f(alpha_out) - Phi_f(alpha_in)
+  = [beta_0/(2 pi)] ln(mu_out/mu_in).
+```
 
-- An analytic proof of global `T_2` monotonicity between grid points. The
-  exact global statement is for `T_1`; `T_2` is the bounded
-  runner-certified transfer kernel under the declared continuum imports.
-- A framework-native derivation of `alpha_s(v)`, of the QCD beta
-  function beyond the recomputed SU(3) group factors, of `M_Z`, or of
-  `m_t`. These are the declared imports; the upstream plaquette /
-  Wilson-loop lanes (`docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md`,
-  `docs/ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md`,
-  named by file path only — neither is a one-hop authority of this row)
-  own the boundary-value problem.
-- Any claim about scales below `M_Z`: the `m_b`/`m_c` threshold
-  machinery of the previous revision is removed from the claim surface
-  (declared unused; those thresholds are never crossed on `[M_Z, v]`).
-- Precision beyond the 2-loop truncation envelope (K5).
-- Promotion of any downstream `alpha_s(M_Z)` value to framework-derived
-  status. A downstream row that feeds a boundary value through this
-  kernel must cite its own retained-grade boundary authority.
+The runner solves this relation independently on each segment and compares it
+with direct numerical integration.
 
-### Adjacent threshold-kernel extension
+## 5. Narrow kernel theorem (K1-K5)
 
+### K1. Coefficient and conversion certificate
+
+The matrix reconstruction gives `T_F=1/2`, `C_A=3`, and `C_F=4/3`; the
+displayed group formulas then give `(7,26)` for `n_f=6` and
+`(23/3,116/3)` for `n_f=5`. Direct chain-rule evaluation of the `g` equation
+agrees with the implemented `alpha_s` equation at every point of `G` for both
+flavor counts, with maximum residual `1.1e-17`.
+
+### K2. Exact one-loop theorem on the whole domain
+
+The formula `1/T_1(a)=1/a-L` and its derivative identity hold analytically for
+every `a` in `D`. The pole `1/L = 0.851305...` lies a factor `6.5485` above
+the upper domain edge. Independent one-loop integration agrees with the
+closed form at every grid point with maximum residual `7.3e-16`.
+
+### K3. Finite two-loop grid certificate
+
+At every point of the declared ten-point grid `G`, `T_2` is finite and
+positive. Its grid image is
+
+```text
+[T_2(0.085), T_2(0.130)]
+  = [0.094774427..., 0.154884028...].
+```
+
+RK45 and DOP853 agree across the full grid to at most `8.2e-15`; RK45 and the
+independent implicit segment solution agree to at most `7.7e-15`. The sampled
+values are strictly increasing, every adjacent grid secant is greater than
+one (minimum `1.256627`), and the separate center-point inverse round-trip
+recovers `0.1075` to `9.1e-16`.
+
+These are finite observations on `G` plus one center check. They are not an
+analytic continuum theorem for `T_2` between grid points and do not establish
+a global two-loop bijection on `D`.
+
+### K4. Threshold ordering is a finite observation
+
+The runner separately computes the `n_f=6`-only, matched, and `n_f=5`-only
+maps using the same scalar two-loop equation. At all ten points of `G` it
+observes
+
+```text
+T_2[n_f=6 only] < T_2[matched] < T_2[n_f=5 only].
+```
+
+The smallest matched-minus-`n_f=6` gap is `6.882e-4`; the smallest
+`n_f=5`-minus-matched gap is `3.854e-4`. The theorem claims only this tested
+finite ordering. It does not infer a continuum comparison theorem from the
+coefficient inequalities alone.
+
+### K5. Observed order-to-order shift, not a remainder bound
+
+Across `G`, the observed difference `T_2-T_1` is positive and ranges from
+`3.461e-4` to `1.454e-3`. At the separate center point,
+
+```text
+T_1(0.1075) = 0.123036665...,
+T_2(0.1075) = 0.123794102...,
+T_2 - T_1   = 7.574e-4.
+```
+
+This difference is only the observed change between the two defined
+truncations. It is not a conservative estimate, envelope, error bar,
+higher-order remainder, or bound on omitted running or threshold terms. The
+runner supplies a computed counterexample family with an unconstrained
+`alpha_s^4` beta-function term for which the next change exceeds
+`|T_2-T_1|`; that family is a logic counterexample, not a physical `beta_2`
+input.
+
+## 6. Independent reconstruction and hostile mutations
+
+The primary runner provides three modes:
+
+```bash
+python3 scripts/frontier_qcd_low_energy_running_bridge.py
+python3 scripts/frontier_qcd_low_energy_running_bridge.py --independent
+python3 scripts/frontier_qcd_low_energy_running_bridge.py --hostile
+```
+
+The normal mode reports `PASS=15 FAIL=0`. The independent mode reconstructs
+`beta_0`, `beta_1`, and all ten outputs using separate exact-rational
+coefficient substitution and fixed-step RK4, without reading a primary result
+table; it reports `PASS=5 FAIL=0`. The hostile mode reports `PASS=7 FAIL=0`
+and detects:
+
+- omitted/wrong `beta_1`;
+- the wrong factor of two in the two-loop term;
+- a beta-function sign flip;
+- a missing top threshold;
+- `n_f=5` above and `n_f=6` below the threshold;
+- reversed scale direction;
+- false remainder/envelope semantics.
+
+## 7. What this map does and does not establish
+
+Downstream rows may use this note only as a supplied-input map. They must own
+the provenance and scheme identification of any boundary value they feed into
+it, and they must label target comparisons separately.
+
+This note does not establish:
+
+- a framework-native value of `alpha_s(v)` or `alpha_s(M_Z)`;
+- a PDG match or prediction;
+- a full coupled Standard Model RGE below `m_t`;
+- finite-mass top effects, a decoupled electroweak EFT, or matching beyond the
+  supplied identity prescription;
+- a continuum two-loop monotonicity, expansivity, or ordering theorem between
+  grid points;
+- a higher-order running or matching uncertainty;
+- any statement below `M_Z`.
+
+The adjacent
 `ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md`
-is now a domain-independent exact lemma for explicitly defined rational
-piecewise-affine maps and identity-carry markers.  It supplies no QCD beta
-coefficient, physical threshold, coupling-continuity or no-jump condition,
-mass placement, or decoupling rule, and it cannot substitute for threshold
-physics.  This QCD-low bridge therefore remains a `v -> M_Z` transfer-map
-theorem.  A downstream physical argument may cite the 2026-06-18 note only for
-the abstract composition and inverse algebra after independently supplying
-and justifying every physical identification.
+proves exact algebra only for defined rational piecewise-affine maps and
+identity carries. It supplies no physical QCD coefficient, threshold
+placement, or decoupling rule and is not load-bearing for the physics inputs
+here. In particular, it supplies no QCD beta coefficient and cannot substitute for threshold physics.
 
-## Reuse rule
+## 8. Sources for the declared continuum infrastructure
 
-Downstream lanes may cite this note as the registered one-hop authority
-for the `v -> M_Z` transfer kernel of `alpha_s`. What they inherit is
-the kernel theorem (K1)-(K5): the exact 1-loop closed form on
-`D = [0.085, 0.130]`, plus the bounded 2-loop grid certificate and
-comparator appendix. Provenance of the boundary value is entirely the
-consumer's obligation.
+- W. E. Caswell, “Asymptotic Behavior of Non-Abelian Gauge Theories to
+  Two-Loop Order,” *Phys. Rev. Lett.* **33**, 244 (1974),
+  [doi:10.1103/PhysRevLett.33.244](https://doi.org/10.1103/PhysRevLett.33.244).
+- D. R. T. Jones, “Two Loop Diagrams in Yang-Mills Theory,” *Nucl. Phys. B*
+  **75**, 531 (1974),
+  [doi:10.1016/0550-3213(74)90093-5](https://doi.org/10.1016/0550-3213(74)90093-5).
+- Particle Data Group, “Quantum Chromodynamics,” 2025 update, Sec. 9.1.1,
+  Eqs. (9.3)-(9.4),
+  [official review](https://pdg.lbl.gov/2025/reviews/rpp2025-rev-qcd.pdf).
 
-## Comparator appendix (class D; not load-bearing)
+These references support the declared standard continuum formulas and
+matching convention; they are not new framework premises or registry entries.
 
-This appendix records external PDG context for downstream consumers. It
-is no part of the kernel theorem and carries exactly two labeled class-D
-runner checks.
+## 9. Frozen-baseline and audit boundary
 
-- **PDG band pullback.** The PDG 2025 world average is
-  `alpha_s(M_Z) = 0.1180 +/- 0.0009`. Because `T_2` is a strictly
-  increasing bijection (K3), the band pulls back through the kernel to a
-  unique boundary window
-
-  ```text
-  T_2^{-1}([0.1171, 0.1189]) = [0.10257, 0.10394]   (interior to D).
-  ```
-
-  Any future framework derivation of `alpha_s(v)` is PDG-compatible
-  if and only if it lands in this window — a sharp, falsifiable target
-  produced by the kernel, not a confirmation of any current value.
-- **Worked example.** The historical plaquette-lane boundary value
-  `alpha_s(v) = 0.103304` (the number whose load-bearing use made the
-  previous revision class (G)) maps to `T_2(0.103304) = 0.118067`,
-  inside the PDG band. Here it is one labeled example point inside the
-  pullback window, nothing more; no load-bearing check evaluates at it.
-
-## Standard infrastructure references
-
-- M. E. Machacek and M. T. Vaughn, "Two-loop renormalization group
-  equations in a general quantum field theory," Nucl. Phys. B 222, 83
-  (1983); B 236, 221 (1984); B 249, 70 (1985).
-- H. Arason, D. J. Castano, B. Kesthelyi, S. Mikaelian, E. J. Piard,
-  P. Ramond, B. D. Wright, "Renormalization-group study of the standard
-  model and its extensions: The standard model," Phys. Rev. D 46, 3945
-  (1992).
-- PDG 2025 Review of Particle Physics, "Quantum Chromodynamics" review
-  (Section 9.4) — `alpha_s(M_Z) = 0.1180 +/- 0.0009` (comparator
-  appendix only).
-
-## Cited authorities (one hop)
-
-None. No repository source note is load-bearing for this kernel theorem:
-the theorem needs no boundary value, and all imports are declared
-external infrastructure above. The plaquette and Wilson-loop lanes are
-named by file path only (see "Not in scope"), preserving the no-back-edge
-convention; the shared 2-loop RGE block also appears in
-`scripts/frontier_yt_zero_import_chain.py` (file-path reference, not a
-note citation).
-
-## Changelog
-
-- **2026-05-01** — original note: bounded numerical transfer of the
-  historical boundary value through the standard 2-loop RGE, checked
-  against the PDG average.
-- **2026-05-24 / 2026-05-25** — bounded source hint added; boundary
-  narrowed (plaquette note dropped as one-hop authority).
-- **2026-06-10** — kernel-theorem re-scope (this revision), responding
-  to the 2026-05-25 numerical-match classification:
-  (a) **headline re-scoped** from "the imported value 0.103304 runs to
-  the PDG average" (the rubric's worked example of class G) to the
-  transfer-map kernel theorem (K1)-(K5), quantified over
-  `D = [0.085, 0.130]`, with no specific `alpha_s(v)` anywhere in the
-  claim;
-  (b) **comparator demotion**: the old runner had 0 C-passes and 8
-  load-bearing D-passes; the new mix is A=22, B=3, D=2 with the PDG
-  comparators a labeled appendix minority;
-  (c) **derived, not asserted**: `C_A = 3` and `T_F = 1/2` are computed
-  from the Gell-Mann generators (structure constants + trace
-  normalization), so `b0(5) = 23/3` is derived; the vacuous
-  threshold-continuity check (which compared `g3(m_t)` to itself) is
-  replaced by the derived strict bracket
-  `T_2[n_f=6] < T_2[matched] < T_2[n_f=5]`;
-  (d) **no preferred evaluation point**: load-bearing checks evaluate at
-  the domain center `0.1075` and on a uniform 10-point grid; the
-  historical value appears only in the comparator appendix;
-  (e) **unused machinery removed**: the `m_b`/`m_c` threshold table is
-  off the claim surface (never crossed on `[M_Z, v]`);
-  (f) **runner rebuilt**: every check tagged [A]/[B]/[D] with residuals
-  printed, two-integrator independence (RK45 vs DOP853), and two
-  falsification legs (sign-flipped kernel contracts; threshold removal
-  shifts `T_2` by `1.03e-3`, four orders above the integrator residual).
+This repair adds no axiom, admission, primitive, carrier, physical input,
+premise-registry entry, or publication-governance change. It edits no audit
+verdict, ledger, queue, dispatch, effective-publication, or front-door output.
+A fresh independent review and audit remain separate later steps.

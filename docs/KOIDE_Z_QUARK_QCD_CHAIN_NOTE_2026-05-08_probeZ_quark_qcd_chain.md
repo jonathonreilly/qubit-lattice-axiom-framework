@@ -82,8 +82,8 @@ Specifically:
    `m_τ^pred = Λ_QCD/α_s(M_Z) = 1.7782 GeV` vs PDG `m_τ = 1.77686 GeV`
    at **0.073% precision**. This near-coincidence is *not* an
    independent positive result, because `Λ_QCD = 210 MeV` is itself
-   *derived* from `α_s(M_Z) = 0.1181` via 2-loop QCD running per
-   [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md):
+   *derived* from the supplied `α_s(M_Z) = 0.1181` context via 2-loop QCD
+   inversion in [`CONFINEMENT_STRING_TENSION_NOTE.md`](CONFINEMENT_STRING_TENSION_NOTE.md):
    ```
    Λ_MS̄^(5) = M_Z · exp(−1/(2·β_0·α_s(M_Z))) · (corrections)
    ```
@@ -91,7 +91,9 @@ Specifically:
    two independent source-stack inputs. The near-equality
    `m_τ ≈ Λ_QCD/α_s(M_Z)` therefore tests a *one-parameter* relation
    already encoded in standard QCD infrastructure, not a two-parameter
-   structural identity.
+   structural identity. The QCD low-energy bridge supplies only the
+   `v -> M_Z` transfer map for a separately supplied boundary; it does not
+   derive `Lambda_QCD` or certify the rounded `0.1181` target value.
 
 3. **(Structural-C single-quark hits fail density-of-rationals control
    at the 1% gate.)** The single-quark near-hits in §1.1 sit at:
@@ -228,7 +230,7 @@ pipeline-derived; this note does not promote them.
 | `u_0` | `⟨P⟩^{1/4}` ≈ 0.87768 | Lepage-Mackenzie tadpole (source-stack value) |
 | `α_LM` | `α_bare/u_0` ≈ 0.090668 | Geometric-mean coupling (source-stack value) |
 | `α_s(v) ` | `α_bare/u_0²` ≈ 0.1033 | Vertex-power chain (bounded analytic insertion gap) |
-| `α_s(M_Z)` | 0.1181 | Low-energy running bridge from `α_s(v)` per [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) (bounded) |
+| `α_s(M_Z)` | 0.1181 | Supplied rounded downstream context used by this no-go scan; [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) supplies only the narrow transfer map, not this value or a target match |
 | `Λ_MS̄^(5)` | 210 MeV | 2-loop QCD running from `α_s(M_Z)` per [`CONFINEMENT_STRING_TENSION_NOTE.md`](CONFINEMENT_STRING_TENSION_NOTE.md) Step 4 (bounded) |
 | `Λ_MS̄^(4)` | 290 MeV | 2-loop QCD running with `m_b` threshold (bounded) |
 | `Λ_MS̄^(3)` | 332 MeV | 2-loop QCD running with `m_c` threshold (bounded) |

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_z_quark_qcd_chain_2026_05_08_probeZ_quark_qcd_chain.py
-runner_sha256: 5dbdad148b7371089c14725aa44153814898cb73a8f6b05a601bbf3db709430c
+runner_sha256: 96ed76a6ec3656e4b4a3ef0f59dcfb260ef98a7a0c8f456ab92ea1528fcfb942
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -78,7 +78,7 @@ SECTION 4: m_tau STRUCTURAL CIRCULARITY
 ========================================================================
   m_tau ~ Lambda_QCD / alpha_s(M_Z) at 0.073% is structurally circular
   because Lambda_QCD is itself derived from alpha_s(M_Z) via 2-loop
-  running per QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md.
+  supplied rounded downstream context; the QCD bridge supplies only the transfer map.
 
   1-loop sanity: Lambda_pred = M_Z * exp(-1/(2*beta_0*alpha_s))
     beta_0 (nf=5) = 0.610094

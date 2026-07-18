@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_sommer_scale_from_wilson_chain_2026_05_10_sommer.py
-runner_sha256: 627b42ca4340b20c518c763d44ab5e268a3c161de40e8806304eb1ace98a92ba
+runner_sha256: 0eefcef956d9e4c1e778d6f4d80c0f0879374e21b12418a51f7513c0b03c7fee
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -18,7 +18,7 @@ SECTION 1: RETAINED WILSON CHAIN INPUTS
   retained alpha_s(v)      = 0.1033038161  (= alpha_bare/u_0^2, n_link=2)
   retained (7/8)^(1/4)     = 0.9671682101
   retained v_EW           = 246.3030 GeV
-  retained alpha_s(M_Z)    = 0.118100  (post-bridge: v->M_Z via 2-loop SM RGE)
+  supplied alpha_s(M_Z)    = 0.118100  (downstream rounded context input)
   conventional M_Z         = 91.1876 GeV (PDG-standard scale, comparator)
   PASS  retained v_EW formula reproduces PDG to <0.1%
         v_EW(formula) = 246.3030 GeV vs PDG 246.22 GeV, rel = 3.3706e-04
@@ -40,70 +40,70 @@ SECTION 2: BETA-FUNCTION COEFFICIENTS (RETAINED GROUP THEORY)
   m_c (PDG infrastructure)    = 1.27 GeV   (used for N_F=4 -> N_F=3 threshold)
 
 ========================================================================
-SECTION 3: LAMBDA_QCD DERIVATION FROM RETAINED CHAIN
+SECTION 3: CONDITIONAL LAMBDA_QCD INVERSION
 ========================================================================
-  Starting input: alpha_s(M_Z=91.1876 GeV) = 0.118100 (retained framework prediction)
+  Starting input: alpha_s(M_Z=91.1876 GeV) = 0.118100 (supplied downstream context)
   Cross-check: Lambda^(N_F=6) from alpha_s(v=246.3,N_F=6) = 92.94 MeV
   Lambda^(N_F=5) [from alpha_s(M_Z) inversion at N_F=5] = 227.51 MeV
   PASS  Lambda^(5) round-trip alpha_s(M_Z) consistency
-        recovered alpha_s(M_Z) = 0.1181000000, target = 0.1181000000
+        recovered alpha_s(M_Z) = 0.1181000000, supplied input = 0.1181000000
   Lambda^(N_F=4) [matched at m_b = 4.18 GeV]    = 176.63 MeV
   Lambda^(N_F=3) [matched at m_c = 1.27 GeV]    = 150.84 MeV
   Lambda^(N_F=6) [matched at m_t = 172.57 GeV]   = 404.97 MeV
   PDG comparator: Lambda_MS-bar^(N_F=5) = 210 +/- 14 MeV
-  Framework prediction: Lambda^(5) = 227.51 MeV
+  Conditional result: Lambda^(5) = 227.51 MeV
   Relative deviation: 8.34%
-  PASS  Lambda^(5) framework prediction within 30% of PDG (loose, 2-loop)
+  PASS  conditional Lambda^(5) result within 30% of PDG comparator
         deviation = 8.34% from PDG 210 MeV
-  PASS  Lambda^(5) framework prediction within PDG 1-sigma band
+  PASS  conditional Lambda^(5) result within five PDG sigma
         |Lambda^(5) - PDG| = 17.51 MeV vs 5sigma = 70 MeV
   PASS  Lambda^(5) is finite, positive, in expected QCD range (50-500 MeV)
         Lambda^(5) = 227.51 MeV
 
 ========================================================================
-SECTION 4: LAMBDA_QCD AS FRAMEWORK-DERIVED
+SECTION 4: LAMBDA_QCD CONDITIONAL ON SUPPLIED INPUT
 ========================================================================
 
-  Inputs used for Lambda derivation:
-    - alpha_s(M_Z) = 0.1181  [retained framework prediction post-bridge]
+  Declared inputs and cross-check context:
+    - alpha_s(M_Z) = 0.1181  [supplied downstream context input]
     - alpha_s(v) = alpha_bare/u_0^2  [retained CMT, for cross-check]
     - v_EW = M_Pl*(7/8)^(1/4)*alpha_LM^16  [retained hierarchy]
     - b_3 = -7 (-> beta_0^(N_F=6) = 7/(4 pi))  [retained group theory]
     - m_t = 172.57 GeV  [retained framework prediction]
     - m_b, m_c  [PDG infrastructure, threshold matching only]
 
-  Lambda^(5) = 227.51 MeV  (framework-derived; PDG: 210 MeV, dev: 8.3%)
-  Lambda^(3) = 150.84 MeV  (framework-derived; cf. CONFINEMENT_STRING_TENSION_NOTE 389 MeV)
-  PASS  Lambda is framework-derived from retained chain, not imported
-        All derivation inputs are retained or framework-predicted
+  Lambda^(5) = 227.51 MeV  (conditional; PDG comparator: 210 MeV, dev: 8.3%)
+  Lambda^(3) = 150.84 MeV  (conditional; cf. CONFINEMENT_STRING_TENSION_NOTE 389 MeV)
+  PASS  Lambda result is explicitly conditional on supplied alpha_s(M_Z)
+        the coupling input is supplied, not derived by the QCD bridge
   PASS  Lambda^(5) consistent with existing chain reading (CONFINEMENT_STRING_TENSION_NOTE)
         this runner: 227.51 MeV vs existing chain reading: 210 MeV
 
 ========================================================================
 SECTION 5: r_0 FROM LAMBDA (DIMENSIONAL INVERSION)
 ========================================================================
-  r_0 * Lambda is a dimensionless SU(3) Yang-Mills observable
-  (a pure prediction of the gauge theory, not a fitted parameter).
+  r_0 * Lambda is a dimensionless SU(3) gauge-theory quantity
+  (supplied here; this runner does not calculate it).
 
   Reference numbers (SU(3) YM lattice dynamics):
     r_0 * Lambda^(N_F=0) = 0.602 (Necco-Sommer 2002, quenched)
     r_0 * Lambda^(N_F=5) ~ 0.535 (from r_0 = 0.5 fm, Lambda^(5) = 210 MeV)
-  r_0 (framework Lambda^(5) inversion, using SU(3) YM ratio) = 0.4640 fm
+  r_0 (conditional Lambda^(5), using supplied ratio) = 0.4640 fm
   Sommer convention r_0 = 0.5 fm
   Relative deviation: 7.21%
-  PASS  r_0 from framework Lambda^(5) within 30% of conventional Sommer 0.5 fm
+  PASS  conditional r_0 readout within 30% of conventional Sommer 0.5 fm
         r_0 = 0.4640 fm vs Sommer 0.5 fm, dev 7.21%
   hbar*c / Lambda^(5) = 0.8672 fm  (natural length scale)
   PASS  r_0 ~ O(1) * 1/Lambda^(5) (correct dimensional structure)
         r_0/Lambda_inv = 0.5350
 
 ========================================================================
-SECTION 6: HONEST SPLIT — CLOSED vs ADMITTED
+SECTION 6: HONEST CONDITIONAL SPLIT
 ========================================================================
-  POSITIVE CLOSURE (this probe):
-    Lambda_MS-bar^(N_F=5) = 227.51 MeV  (framework-derived)
-    Lambda is fully derivable from retained alpha_s(v) + retained b_3 = -7
-    Threshold matching uses retained m_t plus standard infrastructure m_b, m_c
+  COMPUTED CONDITIONAL CONSEQUENCE:
+    Lambda_MS-bar^(N_F=5) = 227.51 MeV
+    This value depends load-bearingly on supplied alpha_s(M_Z)=0.1181
+    Threshold matching additionally uses declared m_t, m_b, and m_c inputs
 
   ADMITTED OBSTRUCTION (this probe DOES NOT close):
     The dimensionless ratio r_0 * Lambda is a SU(3) YM observable
@@ -114,32 +114,28 @@ SECTION 6: HONEST SPLIT — CLOSED vs ADMITTED
             structural obstruction.
 
   NET LANE 1 IMPORT-COUNT EFFECT:
-    Pre-probe: 4 imports (Sommer r_0, 4-loop running, threshold matching, sea-quark)
-    Post-probe: 3 imports + 1 SU(3) YM-shelf item (r_0 * Lambda)
-    The Sommer scale r_0 itself splits into the framework-derived Lambda
-    component (closed) and the SU(3) YM-dimensionless r_0*Lambda
-    component (admitted as SU(3) YM observable, not as literature import).
+    None. Both supplied alpha_s(M_Z) and admitted r_0*Lambda remain
+    load-bearing, so the algebraic split does not close an import.
 
-  This is a PARTIAL closure: Sommer scale is no longer 'just an import',
-  but the dimensionless SU(3) YM ratio remains an admitted SU(3) YM number.
-  PASS  partial closure verdict: Sommer scale split into framework-derived Lambda + SU(3) YM ratio
-        honest verdict per source-note brief Outcome 2 (partial)
+  This is a bounded conditional decomposition, not a partial closure.
+  PASS  bounded verdict: supplied coupling and admitted ratio remain explicit
+        no framework-native Lambda or Sommer-scale claim
 
 ========================================================================
 SECTION 7: NO-PDG-INPUT AUDIT
 ========================================================================
   PDG comparators (post-derivation only):
     v_EW PDG = 246.22 (comparator for retained v_EW formula)
-    Lambda^(5) PDG = 0.21 (comparator for derived Lambda^(5))
-    r_0 Sommer = 0.5 (comparator for derived r_0)
+    Lambda^(5) PDG = 0.21 (comparator for conditional Lambda^(5))
+    r_0 Sommer = 0.5 (comparator for conditional r_0)
 
   Infrastructure inputs (threshold matching only):
     M_Z = 91.1876 (conventional Z-pole scale (PDG-standard scale identification))
     m_b = 4.18 (threshold infrastructure (per CHAIN section 8.4))
     m_c = 1.27 (threshold infrastructure (per CHAIN section 8.4))
 
-  Framework-retained / derived (load-bearing inputs):
-    alpha_s(M_Z) = 0.1181 (retained framework prediction post-bridge)
+  Declared inputs and source statuses:
+    alpha_s(M_Z) = 0.1181 (supplied downstream context input)
     alpha_s(v) = 0.10330381612226712 (retained CMT alpha_bare/u_0^2)
     v_EW = 246.3029905252253 (retained hierarchy theorem)
     alpha_LM = 0.09066783601728631 (retained ALPHA_LM_GEOMETRIC_MEAN_IDENTITY)
@@ -147,11 +143,11 @@ SECTION 7: NO-PDG-INPUT AUDIT
     m_t = 172.57 (retained framework prediction)
     b_3 = -7 = -7 (retained group theory)
   PASS  PDG values used only as comparators or threshold infrastructure
-        all load-bearing inputs are retained or framework-predicted
+        supplied alpha_s(M_Z) is separately and explicitly labeled
   PASS  no new axioms introduced
-        all derivation inputs trace to A1+A2 via retained chain
-  PASS  no new imports introduced
-        Lambda derivation uses only retained b_3 = -7 group theory
+        this repair narrows source semantics without changing the baseline
+  PASS  no new input introduced by this repair
+        the existing supplied alpha_s(M_Z) dependence remains explicit
 
 ========================================================================
 SECTION 8: LANE 1 IMPORT-COUNT ACCOUNTING
@@ -170,21 +166,18 @@ SECTION 8: LANE 1 IMPORT-COUNT ACCOUNTING
       - threshold matching at heavy-quark thresholds
       - sea-quark / full-QCD bridge
 
-  After this probe (Sommer scale partial closure):
-    Lane 1 imports: 3.5 - 0.5 = 3.0
+  After this bounded conditional decomposition:
+    No further decrement is justified.
       - Sommer r_0 splits into:
-          * Lambda_MS-bar^(N_F=5)  [framework-derived, this probe]
-          * r_0 * Lambda^(5)        [SU(3) YM-shelf observable]
+          * Lambda_MS-bar^(N_F=5)  [conditional on supplied alpha_s(M_Z)]
+          * r_0 * Lambda^(5)        [admitted ratio]
       - 4-loop QCD running [partially derived in PR #917]
       - threshold matching at heavy-quark thresholds
       - sea-quark / full-QCD bridge
 
-  Audit-lane-recommendation: rename the Sommer-scale import as
-  'r_0 * Lambda SU(3) YM-shelf admission' alongside the existing
-  '<P> = 0.5934 SU(3) YM-shelf admission'. The Lambda piece is
-  promoted to framework-derived.
+  The earlier source-side 3.0 count and Lambda promotion are withdrawn.
   PASS  Lane 1 import-count update accounting consistent
-        Sommer split: Lambda (closed) + r_0*Lambda (SU(3) YM shelf)
+        no decrement from a result that depends on two supplied inputs
 
 ========================================================================
 RESULTS

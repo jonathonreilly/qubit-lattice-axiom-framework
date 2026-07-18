@@ -181,7 +181,8 @@ beta_3 in <P>-scheme closed form: NOT derivable; same obstruction at
 [FALSIFIABLE PREDICTION]
 Total framework-native gain on Lane 1 bridge from this probe:
   - converts "MSbar β_0, β_1 are imports" → "β_0, β_1 are upstream-supported"
-    (strong: narrows the 2-loop MSbar truncation envelope claim)
+    (strong: narrows the coefficients used by the two-loop map; it does not
+    turn the observed one-loop-to-two-loop shift into a remainder bound)
   - β_2, β_3 remain bounded admissions in any scheme
 ```
 
@@ -292,8 +293,10 @@ implements:
   for the framework-native `<P>_HK_SU(3) = 1 - exp(-(4/3) s_t)` closed
   form used as the structural `<P>`-scheme renormalization point.
 - [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
-  for the existing 2-loop SM RGE bridge (Machacek-Vaughn) treated as
-  bounded standard infrastructure.
+  for the supplied-input piecewise two-loop `MSbar` QCD EFT map (`n_f=6`
+  then `n_f=5`, with supplied identity matching at `m_t`) treated as bounded
+  standard infrastructure. It does not supply a boundary value, target match,
+  or higher-order remainder bound.
 
 These are imported authorities for a bounded diagnostic.
 
@@ -310,7 +313,7 @@ This note does NOT claim:
 - **Promotion of any current MSbar import to retained.** The MSbar
   values for `beta_2, beta_3` remain external numerical inputs.
 - **Direct contribution to closing Lane 1 alpha_s(M_Z).** Currently
-  Lane 1 uses 2-loop MSbar bridge via
+  Lane 1 uses the supplied-input piecewise two-loop MSbar QCD map via
   [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md);
   the upstream-supported `beta_0, beta_1` surface covers that bridge,
   so this probe does NOT change Lane 1 status.

@@ -293,8 +293,10 @@ implements:
   for the parent X-L1 negative result (this probe extends X-L1 with a
   resurgence-tool angle and confirms the bounded admission stands).
 - [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
-  for the existing 2-loop SM RGE bridge (Machacek-Vaughn) treated as
-  bounded standard infrastructure.
+  for the supplied-input piecewise two-loop `MSbar` QCD EFT map (`n_f=6`
+  then `n_f=5`, with supplied identity matching at `m_t`) treated as bounded
+  standard infrastructure. It does not supply a boundary value, target match,
+  or higher-order remainder bound.
 
 These are imported authorities for a bounded theorem.
 
@@ -314,7 +316,7 @@ This note does NOT claim:
   This is structurally suggestive but NOT a theorem; it would be a
   candidate follow-on probe.
 - **Direct contribution to closing Lane 1 alpha_s(M_Z).** Currently
-  Lane 1 uses 2-loop MS-bar bridge via
+  Lane 1 uses the supplied-input piecewise two-loop MSbar QCD map via
   [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md);
   this probe does NOT change Lane 1 status.
 - **Resurgence as a free shortcut to non-perturbative content.**

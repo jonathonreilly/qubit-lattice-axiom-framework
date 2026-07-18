@@ -237,7 +237,7 @@ def main():
 
     print("  m_tau ~ Lambda_QCD / alpha_s(M_Z) at 0.073% is structurally circular")
     print("  because Lambda_QCD is itself derived from alpha_s(M_Z) via 2-loop")
-    print("  running per QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md.")
+    print("  supplied rounded downstream context; the QCD bridge supplies only the transfer map.")
     print()
 
     # 1-loop sanity: Lambda ~ M_Z * exp(-1/(2*beta_0*alpha_s(M_Z)))

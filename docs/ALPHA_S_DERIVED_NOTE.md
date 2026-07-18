@@ -3,7 +3,7 @@
 **Date:** 2026-04-15 (status amended 2026-05-01; bounded source hint added
 2026-05-24; T1/C1 repair 2026-06-10; B3 algebraic half grounded in the
 tadpole-improvement narrow theorem 2026-06-11; B3 operator-counting
-authority wired 2026-06-11)
+authority wired 2026-06-11; C1 piecewise-QCD repair 2026-07-18)
 **Type:** bounded_theorem
 **Claim scope:** One load-bearing theorem plus one explicitly quarantined
 corollary.
@@ -15,8 +15,8 @@ with the exact coupling-chain identity
 `alpha_LM^2 = alpha_bare * alpha_s(v)`.
 (C1, bounded corollary, explicitly NOT load-bearing for T1) Transferring
 the T1 output through the registered standard-infrastructure running
-kernel from `v` to `M_Z` gives `alpha_s(M_Z) = 0.118067 ~ 0.1181`, with
-a 1-loop/2-loop truncation envelope `~5e-4`. C1 uses the running
+kernel from `v` to `M_Z` gives `alpha_s(M_Z) = 0.118233`. The observed
+one-loop-to-two-loop shift is `+0.000662` and is not a remainder bound. C1 uses the running
 bridge's bounded transfer-kernel scope and is excluded from the T1 claim
 surface.
 **Status authority:** independent audit lane only. This source note is a
@@ -79,9 +79,9 @@ This repair fixes five defects:
    T1 forward from the declared boundary inputs and tags every check
    [A]/[B]/[D].
 
-The arithmetic of the prior note was verified correct and is retained:
-`u_0 = 0.877681381`, `alpha_s(v) = 0.10330382`, 2-loop run
-`-> 0.118067 ~ 0.1181`.
+The T1 arithmetic of the prior note was verified correct and is retained:
+`u_0 = 0.877681381` and `alpha_s(v) = 0.10330382`. The old hybrid-SM C1
+readout is superseded by the corrected piecewise-QCD readout below.
 
 ## Declared boundary inputs (B1-B4)
 
@@ -193,7 +193,7 @@ form `1 / (4 pi sqrt(<P>))`, plus a third log-domain route) agreeing to
 | S2 | `u_0 = <P>^(1/4) = 0.877681381` | (A) exact arithmetic | this note + dedicated runner |
 | S3 | `alpha_bare = g_bare^2/(4 pi) = 1/(4 pi)` | (A) over declared normalization | B2 (declared in this note) |
 | S4 | `alpha_s(v) = alpha_bare/u_0^2 = 1/(4 pi sqrt(<P>)) = 0.10330382`; `alpha_LM^2 = alpha_bare alpha_s(v)` | (A) exact arithmetic over boundary inputs | algebraic identities: [`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md); operator count `n_link = 2` for the staggered-Dirac gauge vacuum-polarization channel: [`YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md`](YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md) under the staggered-Dirac realization gate, link-exponential convention, and bare-coupling-map identity admission; channel-selection + scheme/scale: B3 + B4 (declared in this note) |
-| S5 | (C1 only) `v -> M_Z` standard 2-loop transfer: `alpha_s(M_Z) = 0.118067 ~ 0.1181` | bounded standard-infrastructure transfer | [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) (scoped to C1 only) |
+| S5 | (C1 only) supplied piecewise two-loop QCD EFT transfer: `alpha_s(M_Z) = 0.118233` | bounded standard-infrastructure transfer; numerical readout over the supplied T1 boundary | [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) (scoped to C1 only) |
 
 The load-bearing claim surface of this note is S1-S4 (theorem T1). S5
 belongs exclusively to corollary C1.
@@ -201,30 +201,30 @@ belongs exclusively to corollary C1.
 ## Corollary C1 (bounded; explicitly not load-bearing for T1)
 
 Transferring the T1 output `alpha_s(v) = 0.10330382` through the
-standard SM 2-loop RGE (Machacek-Vaughn 1984; Arason et al. 1992) with
-leading-order active-flavor threshold matching (only the top threshold
-`m_t = 172.69 GeV` lies between `v` and `M_Z`), holding the auxiliary
-standard SM boundary inputs
-`(g_1, g_2, y_t, lambda)(v) = (0.46228, 0.65184, 0.93737, 0.13)` fixed,
-gives
+piecewise two-loop `MSbar` QCD EFT equation with `n_f=6` above
+`m_t = 172.69 GeV`, `n_f=5` below, and the bridge's supplied identity
+matching prescription at `m_t` gives
 
 ```text
-alpha_s(M_Z) = 0.118067 ~ 0.1181
-1-loop/2-loop truncation envelope ~ 5e-4
+alpha_s(M_Z) = 0.118233
+observed T_2 - T_1 = +0.000662
 ```
+
+The second line is an observed adjacent-order shift only. It is not a
+truncation envelope, uncertainty, error bar, or bound on omitted running or
+threshold terms.
 
 C1 is a corollary, not part of the T1 claim surface:
 
 - the running kernel, the quark-mass threshold, and `M_Z` are standard
   external infrastructure (registered one hop away in the bridge note),
   not framework-native results;
-- the bridge note currently states a bounded transfer-map kernel over
-  `D = [0.085, 0.130]`, with PDG comparisons quarantined in its
-  comparator appendix; C1 honestly inherits exactly that bounded
-  standard-infrastructure scope;
+- the bridge note states an exact one-loop map over `D = [0.085, 0.130]`
+  and finite-grid observations for a piecewise two-loop QCD EFT map; C1
+  inherits exactly that supplied-input scope;
 - removing C1 entirely leaves T1 intact — the runner computes T1 first
-  and independently, and its C1 section is a self-contained 2-loop RGE
-  reimplementation used only for the corollary readout and envelope.
+  and independently, and its C1 section is a self-contained scalar QCD RGE
+  reimplementation used only for the corollary readout and observed shift.
 
 ## Dependency-status declaration (one-hop license statements)
 
@@ -256,8 +256,9 @@ is consumed is:
    or the channel-selection identification into
    `alpha_s(v) := alpha_bare/u_0^2`.
 4. [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
-   (claim `qcd_low_energy_running_bridge_note_2026-05-01`; bounded
-   transfer-map kernel over `D = [0.085, 0.130]`). **Scoped to
+   (claim `qcd_low_energy_running_bridge_note_2026-05-01`; exact one-loop
+   map over `D = [0.085, 0.130]` plus finite-grid observations for the
+   supplied piecewise two-loop QCD map). **Scoped to
    corollary step S5 only.** T1 does not read, transfer, or depend on
    any value from this row. Per the bridge note's own reuse rule, C1
    reads the `v -> M_Z` kernel as bounded standard infrastructure, never
@@ -343,9 +344,8 @@ This note does **not** claim:
 - a framework-native derivation of the QCD beta function, the quark
   mass thresholds, or `M_Z` (C1 standard infrastructure, one hop away
   in the bridge note);
-- a framework-native prediction `alpha_s(M_Z) = 0.1181` (C1 is a
-  bounded corollary using the bridge row's bounded transfer-kernel
-  scope);
+- a framework-native prediction or target match for `alpha_s(M_Z)` (C1 is a
+  bounded supplied-input corollary using the bridge row's narrow map);
 - any audit outcome or status promotion (status authority is the
   independent audit lane only).
 
@@ -372,8 +372,9 @@ The runner computes T1 forward from the declared boundary inputs B1-B4 (the
 helper module `scripts/canonical_plaquette_surface.py` is consulted only
 for tagged class-(B) consistency residuals), checks two independent
 evaluation routes to `1e-16`, the exact-identity and sensitivity
-residuals, and then runs a self-contained 2-loop SM RGE reimplementation
-for C1 with its truncation envelope. PDG constants appear only in the
+residuals, and then runs a self-contained piecewise two-loop QCD EFT
+reimplementation for C1. It reports the one-loop-to-two-loop difference only
+as an observed shift. PDG constants appear only in the
 terminal class-(D) section. Every check is tagged [A]/[B]/[D].
 
 ## Changelog
@@ -399,9 +400,14 @@ terminal class-(D) section. Every check is tagged [A]/[B]/[D].
   `scripts/frontier_alpha_s_derived_bounded_chain.py` registered,
   replacing the shared `scripts/frontier_yt_zero_import_chain.py`
   registration (that shared runner is unchanged). Prior arithmetic
-  verified and retained: `u_0 = 0.877681381`,
-  `alpha_s(v) = 0.10330382`, 2-loop `-> 0.118067 ~ 0.1181`, envelope
-  `~5e-4`.
+  verified and retained for T1: `u_0 = 0.877681381` and
+  `alpha_s(v) = 0.10330382`.
+- **2026-07-18.** C1 source repair following the running-bridge correction.
+  Replaced the hybrid coupled-SM/five-flavor implementation with the scalar
+  two-loop QCD EFT (`n_f=6` then `n_f=5`) and supplied identity matching at
+  `m_t`. The corrected readout is `0.118233`; `T_2-T_1=+0.000662` is labeled
+  only as an observed order-to-order shift. T1 and its independent authority
+  surface are unchanged; the class-D comparator checks remain quarantined.
 - **2026-06-10.** B1 retirement-interface citation (follow-up). The B1
   admission paragraph now cites
   `docs/PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`

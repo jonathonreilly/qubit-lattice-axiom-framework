@@ -24,11 +24,12 @@ Claim under check (theorem T1 of the note):
     is exact zero-free-parameter arithmetic over those inputs.
 
 Corollary C1 (bounded, explicitly NOT load-bearing for T1): transferring
-the T1 output through the standard SM 2-loop RGE (Machacek-Vaughn 1984;
-Arason et al. 1992) with leading-order top-threshold matching, v -> M_Z,
-gives alpha_s(M_Z) = 0.118067 ~ 0.1181 with a 1-loop/2-loop truncation
-envelope ~5e-4.  The RGE block below is a self-contained fixed-step RK4
-reimplementation; it does not import any shared frontier runner.
+the T1 output through the supplied piecewise two-loop QCD EFT map, with
+n_f=6 above m_t, n_f=5 below m_t, and identity matching at m_t, gives a
+numerical M_Z readout.  The difference from the exact one-loop map is reported
+only as an observed order-to-order shift.  The scalar RGE block below is a
+self-contained fixed-step RK4 reimplementation; it does not import any shared
+frontier runner.
 
 Check classes (each PASS line is tagged):
 
@@ -36,9 +37,9 @@ Check classes (each PASS line is tagged):
       (8 checks: T1 forward computation, two independent evaluation
       routes, exact identities, analytic sensitivity).
   [B] cross-note input consistency (9 checks: helper-module residuals
-      against scripts/canonical_plaquette_surface.py, the bridge note's
-      boundary value, the bridge note's published 0.1181 readout for
-      C1, the truncation envelope of the C1 transfer, and
+      against scripts/canonical_plaquette_surface.py, membership of the
+      bridge domain, fixed-step convergence for C1, the observed order shift,
+      and
       source-firewall wording for the remaining B1/B3/B4 bridge
       blockers).
   [D] external comparator (2 checks: PDG bands, quarantined terminal
@@ -92,19 +93,14 @@ N_LINK = 2                    # B3: VP-channel operator count used by T1
 # B3 also declares channel selection; B4 declares scheme/scale:
 # alpha_s(mu=v) := alpha_bare / u_0^n_link.
 
-# Boundary value registered by the running-bridge note (its own rounded
-# declared value; class-B consistency target only).
-BRIDGE_ALPHA_S_V_BOUNDARY = 0.103304
-BRIDGE_ALPHA_S_MZ_PUBLISHED = 0.1181
+# Domain supplied by the running-bridge note (class-B consistency only).
+BRIDGE_A_MIN = 0.085
+BRIDGE_A_MAX = 0.130
 
 # Standard-infrastructure constants used ONLY inside corollary C1.
 V_BOUNDARY = 246.282818290129  # GeV (C1 electroweak boundary scale)
 M_T_POLE = 172.69              # GeV (PDG pole mass; C1 threshold only)
 M_Z = 91.1876                  # GeV (PDG; C1 terminal scale only)
-G1_V = 0.46228                 # auxiliary SM boundary inputs at v
-G2_V = 0.65184                 # (same tuple the bridge note registers)
-YT_V = 0.93737
-LAMBDA_V = 0.13
 
 # PDG comparators — quarantined class-D terminal section only.
 ALPHA_S_MZ_PDG = 0.1180
@@ -134,95 +130,46 @@ def alpha_s_v_route_three(p: float) -> float:
 
 
 # ---------------------------------------------------------------------------
-# Self-contained 2-loop SM RGE (corollary C1 only).
+# Self-contained piecewise 2-loop QCD EFT RGE (corollary C1 only).
 # ---------------------------------------------------------------------------
 
-def beta_2loop(y: list[float], n_f: int) -> list[float]:
-    """Standard MSbar 2-loop SM RGE for (g1, g2, g3, yt, lambda).
-
-    Coefficients: Machacek-Vaughn, Nucl. Phys. B 222, 83 (1983);
-    B 236, 221 (1984); Arason et al., Phys. Rev. D 46, 3945 (1992).
-    Reimplemented here so the corollary is checkable without importing
-    any shared frontier runner.
-    """
-    g1, g2, g3, yt, lam = y
-    fac = 1.0 / (16.0 * PI ** 2)
-    fac2 = fac * fac
-    g1s, g2s, g3s, yts = g1 * g1, g2 * g2, g3 * g3, yt * yt
-
-    b1_1 = (41.0 / 10.0) * g1 ** 3
-    b2_1 = -(19.0 / 6.0) * g2 ** 3
-    b3_1 = -(11.0 - 2.0 * n_f / 3.0) * g3 ** 3
-    byt_1 = yt * (4.5 * yts - (17.0 / 20.0) * g1s - 2.25 * g2s - 8.0 * g3s)
-    blam_1 = (24.0 * lam * lam + 12.0 * lam * yts - 6.0 * yts * yts
-              - 3.0 * lam * (3.0 * g2s + g1s)
-              + (3.0 / 8.0) * (2.0 * g2s ** 2 + (g2s + g1s) ** 2))
-
-    b1_2 = g1 ** 3 * ((199.0 / 50.0) * g1s + (27.0 / 10.0) * g2s
-                      + (44.0 / 5.0) * g3s - (17.0 / 10.0) * yts)
-    b2_2 = g2 ** 3 * ((9.0 / 10.0) * g1s + (35.0 / 6.0) * g2s
-                      + 12.0 * g3s - 1.5 * yts)
-    b3_2 = g3 ** 3 * ((11.0 / 10.0) * g1s + 4.5 * g2s - 26.0 * g3s - 2.0 * yts)
-    byt_2 = yt * (-12.0 * yts * yts
-                  + yts * (36.0 * g3s + (225.0 / 16.0) * g2s
-                           + (131.0 / 80.0) * g1s)
-                  + (1187.0 / 216.0) * g1s ** 2 - (23.0 / 4.0) * g2s ** 2
-                  - 108.0 * g3s ** 2
-                  + (19.0 / 15.0) * g1s * g3s + (9.0 / 4.0) * g2s * g3s
-                  + 6.0 * lam * lam - 6.0 * lam * yts)
-
-    return [fac * b1_1 + fac2 * b1_2,
-            fac * b2_1 + fac2 * b2_2,
-            fac * b3_1 + fac2 * b3_2,
-            fac * byt_1 + fac2 * byt_2,
-            fac * blam_1]
+def beta_coefficients(n_f: int) -> tuple[float, float]:
+    return 11.0 - 2.0 * n_f / 3.0, 102.0 - 38.0 * n_f / 3.0
 
 
-def rk4_2loop(y: list[float], t0: float, t1: float, n_f: int,
-              n_steps: int = 4000) -> list[float]:
-    """Deterministic fixed-step RK4 integration of the 2-loop system."""
+def beta_alpha_2loop(alpha: float, n_f: int) -> float:
+    beta_0, beta_1 = beta_coefficients(n_f)
+    return (-beta_0 * alpha ** 2 / (2.0 * PI)
+            - beta_1 * alpha ** 3 / (8.0 * PI ** 2))
+
+
+def rk4_alpha(alpha: float, t0: float, t1: float, n_f: int,
+              n_steps: int) -> float:
+    """Deterministic fixed-step RK4 integration of the scalar QCD EFT."""
     h = (t1 - t0) / n_steps
     for _ in range(n_steps):
-        k1 = beta_2loop(y, n_f)
-        k2 = beta_2loop([y[j] + 0.5 * h * k1[j] for j in range(5)], n_f)
-        k3 = beta_2loop([y[j] + 0.5 * h * k2[j] for j in range(5)], n_f)
-        k4 = beta_2loop([y[j] + h * k3[j] for j in range(5)], n_f)
-        y = [y[j] + (h / 6.0) * (k1[j] + 2.0 * k2[j] + 2.0 * k3[j] + k4[j])
-             for j in range(5)]
-    return y
+        k1 = beta_alpha_2loop(alpha, n_f)
+        k2 = beta_alpha_2loop(alpha + 0.5 * h * k1, n_f)
+        k3 = beta_alpha_2loop(alpha + 0.5 * h * k2, n_f)
+        k4 = beta_alpha_2loop(alpha + h * k3, n_f)
+        alpha += (h / 6.0) * (k1 + 2.0 * k2 + 2.0 * k3 + k4)
+    return alpha
 
 
-def beta_1loop_g3(g3: float, n_f: int) -> float:
-    return -(11.0 - 2.0 * n_f / 3.0) * g3 ** 3 / (16.0 * PI ** 2)
-
-
-def rk4_1loop_g3(g3: float, t0: float, t1: float, n_f: int,
-                 n_steps: int = 4000) -> float:
-    h = (t1 - t0) / n_steps
-    for _ in range(n_steps):
-        k1 = beta_1loop_g3(g3, n_f)
-        k2 = beta_1loop_g3(g3 + 0.5 * h * k1, n_f)
-        k3 = beta_1loop_g3(g3 + 0.5 * h * k2, n_f)
-        k4 = beta_1loop_g3(g3 + h * k3, n_f)
-        g3 = g3 + (h / 6.0) * (k1 + 2.0 * k2 + 2.0 * k3 + k4)
-    return g3
-
-
-def run_v_to_mz_2loop(alpha_s_v: float) -> float:
-    """C1 transfer: v -> m_t (n_f=6), LO continuity matching, m_t -> M_Z
-    (n_f=5).  Only the top threshold lies inside the interval."""
-    g3_v = math.sqrt(4.0 * PI * alpha_s_v)
-    y = [G1_V, G2_V, g3_v, YT_V, LAMBDA_V]
-    y = rk4_2loop(y, math.log(V_BOUNDARY), math.log(M_T_POLE), n_f=6)
-    y = rk4_2loop(y, math.log(M_T_POLE), math.log(M_Z), n_f=5)
-    return y[2] ** 2 / (4.0 * PI)
+def run_v_to_mz_2loop(alpha_s_v: float, n_steps: int = 12000) -> float:
+    """C1: n_f=6 then n_f=5 with supplied identity matching at m_t."""
+    alpha = rk4_alpha(alpha_s_v, math.log(V_BOUNDARY), math.log(M_T_POLE),
+                      n_f=6, n_steps=n_steps)
+    return rk4_alpha(alpha, math.log(M_T_POLE), math.log(M_Z),
+                     n_f=5, n_steps=n_steps)
 
 
 def run_v_to_mz_1loop(alpha_s_v: float) -> float:
-    g3 = math.sqrt(4.0 * PI * alpha_s_v)
-    g3 = rk4_1loop_g3(g3, math.log(V_BOUNDARY), math.log(M_T_POLE), n_f=6)
-    g3 = rk4_1loop_g3(g3, math.log(M_T_POLE), math.log(M_Z), n_f=5)
-    return g3 ** 2 / (4.0 * PI)
+    beta0_6, _ = beta_coefficients(6)
+    beta0_5, _ = beta_coefficients(5)
+    length = (beta0_6 * math.log(V_BOUNDARY / M_T_POLE)
+              + beta0_5 * math.log(M_T_POLE / M_Z)) / (2.0 * PI)
+    return alpha_s_v / (1.0 - length * alpha_s_v)
 
 
 # ---------------------------------------------------------------------------
@@ -303,10 +250,9 @@ def part_cross_note_consistency(a_v: float) -> None:
           abs(cps.CANONICAL_ALPHA_S_V - a_v) <= 1e-15,
           f"|helper - T1| = {abs(cps.CANONICAL_ALPHA_S_V - a_v):.3e}")
 
-    check("B", "bridge note's boundary alpha_s(v) = 0.103304 is the "
-               "6-decimal rounding of the T1 value",
-          abs(BRIDGE_ALPHA_S_V_BOUNDARY - a_v) < 5e-7,
-          f"|0.103304 - {a_v:.8f}| = {abs(BRIDGE_ALPHA_S_V_BOUNDARY - a_v):.3e}")
+    check("B", "T1 output lies inside the running bridge's supplied domain",
+          BRIDGE_A_MIN <= a_v <= BRIDGE_A_MAX,
+          f"{BRIDGE_A_MIN} <= {a_v:.8f} <= {BRIDGE_A_MAX}")
 
 
 def part_source_firewall() -> None:
@@ -335,21 +281,20 @@ def part_c1_corollary(a_v: float) -> float:
 
     a_mz_2l = run_v_to_mz_2loop(a_v)
     a_mz_1l = run_v_to_mz_1loop(a_v)
-    envelope = abs(a_mz_2l - a_mz_1l)
+    order_shift = a_mz_2l - a_mz_1l
     print(f"  2-loop alpha_s(M_Z) = {a_mz_2l:.6f}")
     print(f"  1-loop alpha_s(M_Z) = {a_mz_1l:.6f}")
-    print(f"  truncation envelope = {envelope:.6f}")
+    print(f"  observed order shift = {order_shift:+.6f}")
 
-    check("B", "C1: self-contained 2-loop transfer reproduces the bridge "
-               "note's published 0.1181 within 0.001",
-          abs(a_mz_2l - BRIDGE_ALPHA_S_MZ_PUBLISHED) < 1e-3,
-          f"alpha_s(M_Z) = {a_mz_2l:.6f}, bridge note value = "
-          f"{BRIDGE_ALPHA_S_MZ_PUBLISHED}")
+    coarse = run_v_to_mz_2loop(a_v, n_steps=6000)
+    check("B", "C1: independent RK4 step refinement is converged",
+          abs(a_mz_2l - coarse) < 1e-11,
+          f"|12000-step - 6000-step| = {abs(a_mz_2l-coarse):.3e}")
 
-    check("B", "C1 truncation envelope: 1-loop/2-loop shift ~5e-4, positive "
-               "and below 1% of the readout",
-          0.0 < envelope < 0.01 * a_mz_2l and abs(envelope - 5e-4) < 2e-4,
-          f"envelope = {envelope:.6f}")
+    check("B", "C1 observed one-loop-to-two-loop shift is positive and is "
+               "reported without remainder semantics",
+          0.0 < order_shift < 0.01 * a_mz_2l,
+          f"observed shift = {order_shift:.6f}")
 
     return a_mz_2l
 
@@ -394,9 +339,10 @@ def main() -> None:
     print("  - B3 consumes n_link = 2 as the staggered-Dirac gauge")
     print("    vacuum-polarization channel count; the channel-selection step")
     print("    into alpha_s(v) := alpha_bare/u_0^2 is declared in the note.")
-    print("  - C1 uses a self-contained 2-loop SM RGE reimplementation with")
-    print("    LO top-threshold matching; PDG constants appear only in the")
-    print("    terminal class-D section and in the C1 threshold/scale inputs.")
+    print("  - C1 uses a self-contained piecewise 2-loop QCD EFT map with")
+    print("    n_f=6 then n_f=5 and supplied identity matching at m_t.")
+    print("    Its order shift is not a remainder bound; PDG targets appear")
+    print("    only in the terminal class-D comparator section.")
     print("  - The M_Z readout uses the running-bridge note's bounded")
     print("    transfer-kernel scope; it is a corollary, not part of")
     print("    the T1 claim surface.")

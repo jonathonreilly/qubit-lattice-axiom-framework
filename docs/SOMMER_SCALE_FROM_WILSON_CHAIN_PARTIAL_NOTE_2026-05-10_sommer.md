@@ -1,7 +1,7 @@
-# Sommer Scale `r_0` from the Retained Wilson Chain — Lane 1 Sub-Import Probe (Partial Closure)
+# Sommer Scale `r_0` from Supplied Wilson-Chain Inputs — Lane 1 Bounded Probe
 
 **Date:** 2026-05-10
-**Type:** bounded_theorem (partial closure with named SU(3) YM-shelf admission)
+**Type:** bounded_theorem (conditional computation with named supplied inputs)
 **Claim type:** bounded_theorem
 **Status:** source-note proposal — Lane 1 sub-import probe testing whether
 the Sommer scale `r_0 ≈ 0.5 fm`, listed as one of four standard
@@ -9,7 +9,7 @@ lattice-QCD imports in
 [`ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md`](ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md)
 and the Lane 1 row of
 [`BRIDGE_LANES_PROMOTION_PROPOSAL_NOTE_2026-05-10_lanes.md`](BRIDGE_LANES_PROMOTION_PROPOSAL_NOTE_2026-05-10_lanes.md),
-can be derived from already-retained Wilson chain content.
+can be decomposed using the declared Wilson-chain context inputs.
 **Authority role:** source-note proposal; effective status set only by
 the independent audit lane.
 **Loop:** sommer-scale-wilson-chain-20260510-sommer
@@ -39,14 +39,17 @@ verdicts and does not promote any downstream theorem.
   `Cl(3)` local algebra and `Z^3` spatial substrate baseline (legacy
   aliases `A1`/`A2`) per
   [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
-- **No new imports.** The Λ_QCD inversion uses retained group theory
+- **No new inputs added by the 2026-07-18 consumer repair.** The Lambda_QCD
+  inversion continues to use its existing supplied `alpha_s(M_Z)=0.1181`
+  context plus the standard two-loop formula and group-theory input
   (`b_3 = -7` per [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md)
   Section 3.2). PDG values for `M_Z`, `m_b`, `m_c` are infrastructure only
   (per CHAIN Section 8.4), not derivation inputs.
-- **No PDG values as derivation inputs.** The PDG `Λ_MS-bar^(5) = 210 ± 14 MeV`
+- **Comparators remain separate.** The PDG `Λ_MS-bar^(5) = 210 ± 14 MeV`
   and `r_0 = 0.5 fm` appear only as falsifiability comparators after the
-  derivation is constructed. The framework's own retained
-  `α_s(M_Z) = 0.1181` (post-bridge) is the load-bearing input.
+  conditional computation is constructed. The rounded
+  `α_s(M_Z) = 0.1181` is itself a supplied load-bearing context input, not a
+  theorem output of the QCD low-energy bridge.
 
 ## 0. Question
 
@@ -70,39 +73,34 @@ can it be split into framework-derived components?
 
 ## 1. Answer (verdict)
 
-**PARTIAL CLOSURE.** The Sommer scale splits into two distinct pieces:
+**BOUNDED CONDITIONAL DECOMPOSITION, NOT A PARTIAL CLOSURE.** The Sommer
+scale splits algebraically into two distinct pieces:
 
-1. **`Λ_MS-bar^(N_F=5)` is framework-derivable** from the retained Wilson
-   chain. The runner gives `Λ^(5) = 227.5 MeV`, within 8.3% of PDG
-   `210 ± 14 MeV` and well inside the 1σ band's `5σ` envelope. This
-   piece is no longer an import.
+1. **`Λ_MS-bar^(N_F=5)` is conditionally computable** from the supplied
+   `alpha_s(M_Z)=0.1181` context and the declared two-loop inversion. The
+   runner gives `Λ^(5) = 227.5 MeV`. Because the coupling value is supplied,
+   this is not a framework-native derivation and does not retire an import.
 
-2. **The dimensionless ratio `r_0 · Λ_MS-bar`** is a pure SU(3)
-   Yang-Mills observable. The framework's retained gauge identification
-   (graph-first SU(3) gauge sector = SU(3) YM, per
-   [`CONFINEMENT_STRING_TENSION_NOTE.md`](CONFINEMENT_STRING_TENSION_NOTE.md)
-   Step 5) makes this number a framework prediction, but the framework
-   has *not* analytically computed it. It sits on the same shelf as
-   `<P> = 0.5934`: a SU(3) YM number computable in principle by
-   framework MC, currently admitted via the gauge identification.
+2. **The dimensionless ratio `r_0 · Λ_MS-bar`** is a supplied SU(3)
+   gauge-theory observable here. The framework's retained gauge
+   identification does not numerically calculate it. It sits on the same
+   admission shelf as `<P> = 0.5934` and remains load-bearing.
 
-Combining the two: using `r_0 · Λ^(5) ≈ 0.535` (Necco-Sommer-style
-quenched value adjusted to N_F=5) and the framework's
+Combining the two supplied ingredients: using `r_0 · Λ^(5) ≈ 0.535`
+(Necco-Sommer-style quenched value adjusted to N_F=5) and the conditional
 `Λ^(5) = 227.5 MeV` gives `r_0 = 0.464 fm`, within 7.2% of the
 conventional Sommer value `r_0 = 0.5 fm`.
 
-**Net effect on Lane 1 import count:** the Sommer scale was previously
-counted as one full import; it splits into a framework-derived `Λ`
-component and a SU(3) YM-shelf `r_0 · Λ` component. The "Sommer scale
-is a literature import" framing is no longer accurate; the residual
-piece is a SU(3) YM dimensionless ratio identical in character to
-`<P>`. Lane 1 import count: 4 → 3.5 (after PR #917) → **3.0** (after
-this probe), with one SU(3) YM-shelf admission in place of the
-literature-import slot.
+**Net effect on Lane 1 import count:** none from this conditional computation.
+Both the supplied `alpha_s(M_Z)` context and the `r_0 Lambda` ratio remain
+load-bearing inputs. The earlier proposed decrement to **3.0** is withdrawn;
+this source repair makes no publication-governance change.
 
-## 2. Setup — retained Wilson chain content
+## 2. Setup — supplied Wilson-chain context
 
-All values from existing retained / retained_bounded sources
+The values below retain their individual source status; this note does not
+promote them collectively. In particular, the running bridge is used only for
+its supplied-input map scope
 ([`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md),
 [`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md),
 [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md),
@@ -115,7 +113,7 @@ All values from existing retained / retained_bounded sources
 | `u_0` | `<P>^(1/4)` ≈ 0.87768 | Lepage-Mackenzie tadpole (retained) |
 | `α_LM` | `α_bare / u_0` ≈ 0.09067 | Geometric-mean coupling (retained) |
 | `α_s(v)` | `α_bare / u_0^2` ≈ 0.10330 | Coupling Map Theorem, n_link=2 (retained CMT) |
-| `α_s(M_Z)` | 0.1181 | Post-bridge retained framework prediction |
+| `α_s(M_Z)` | 0.1181 | Downstream supplied rounded context input; the running bridge supplies only a transfer map |
 | `M_Pl` | 1.221 × 10^19 GeV | Framework UV cutoff |
 | `(7/8)^(1/4)` | ≈ 0.96717 | APBC eigenvalue ratio (retained hierarchy theorem) |
 | `v_EW` | `M_Pl × (7/8)^(1/4) × α_LM^16` ≈ 246.30 GeV | Hierarchy theorem (retained) |
@@ -124,15 +122,17 @@ All values from existing retained / retained_bounded sources
 
 ## 3. Derivation chain
 
-### Step 1 — `Λ_MS-bar^(5)` from retained `α_s(M_Z)` (positive theorem)
+### Step 1 — `Λ_MS-bar^(5)` from supplied `α_s(M_Z)` context
 
-The framework retains `α_s(M_Z) = 0.1181` as a post-bridge prediction
-(per CHAIN Section 5.2: predicted `0.1181`, observed `0.1179`,
-deviation `+0.14%`). This is the standard SM 2-loop RGE bridge from
-the framework-side `α_s(v) = 0.1033` down to `M_Z`, on the
-retained_bounded
+This downstream probe supplies the rounded value `α_s(M_Z) = 0.1181` as a
+context input for its independent `Lambda` inversion and comparator exercise.
+The running-bridge row supplies only the piecewise QCD transfer map from a
+separately supplied `alpha_s(v)` boundary; it does not certify `0.1181` as a
+framework prediction or target match. Under the corrected map, the nearby
+boundary `alpha_s(v)=0.103304` maps to approximately `0.118233`, but that
+worked value is not load-bearing here. See
 [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
-infrastructure.
+for the exact map scope and matching limitation.
 
 **Beta-function coefficients are retained group theory:** per CHAIN
 Section 3.2, `b_3 = -7` is the SM RGE coefficient derived from "group
@@ -146,9 +146,10 @@ N_F = 4: β_0 = 25/(12π) ≈ 0.663146
 N_F = 3: β_0 = 27/(12π) = 9/(4π) ≈ 0.716197
 ```
 
-The runner verifies that the framework's `b_3 = -7` directly yields
-`β_0(N_F=6) = 7/(4π)` with the standard convention conversion, so the
-running coefficients are framework-derived group theory, not imported.
+The runner verifies that `b_3 = -7` yields
+`β_0(N_F=6) = 7/(4π)` under the displayed convention. The two-loop
+continuum running formula remains declared standard QCD infrastructure; the
+group-factor arithmetic does not derive the full RGE from the framework.
 
 **2-loop perturbative inversion:** at `M_Z = 91.1876 GeV` with
 `α_s(M_Z) = 0.1181` and `N_F = 5`, solving
@@ -160,7 +161,7 @@ running coefficients are framework-derived group theory, not imported.
 with `t = ln(μ²/Λ²)`, gives:
 
 ```text
-Λ_MS-bar^(N_F=5) = 227.51 MeV    (framework-derived)
+Λ_MS-bar^(N_F=5) = 227.51 MeV    (conditional on supplied alpha_s(M_Z))
 ```
 
 PDG comparator: `210 ± 14 MeV`. Deviation: 8.3% (within `2σ`).
@@ -207,9 +208,9 @@ r_0 · Λ_MS-bar^(N_F=5)  ≈  0.535             (= 0.5 fm × 210 MeV / ℏc)
 The framework's retained gauge identification ("graph-first SU(3) =
 SU(3) YM" per
 [`CONFINEMENT_STRING_TENSION_NOTE.md`](CONFINEMENT_STRING_TENSION_NOTE.md)
-Step 5) makes the dimensionless ratio `r_0 · Λ^(5) ≈ 0.535` a SU(3)
-YM observable that the framework's gauge sector inherits as a pure
-prediction of the gauge dynamics.
+Step 5) classifies the ratio as a gauge-theory observable; it does not supply
+the numerical value `0.535`. That value is admitted for this conditional
+readout.
 
 Inverting:
 
@@ -225,13 +226,13 @@ PDG/Sommer-convention comparator: `r_0 = 0.5 fm`. Deviation: 7.2%.
 
 | Component | Status | Source |
 |---|---|---|
-| `α_s(M_Z) = 0.1181` | **retained** (post-bridge) | `COMPLETE_PREDICTION_CHAIN` Section 5.2 |
+| `α_s(M_Z) = 0.1181` | **supplied rounded context input** | this downstream probe; the QCD bridge supplies only the map |
 | `b_3 = -7` ⇒ β-function coefficients | **retained** (group theory) | `COMPLETE_PREDICTION_CHAIN` Section 3.2 |
 | `m_t = 172.57 GeV` (threshold input) | **retained** (framework prediction) | `COMPLETE_PREDICTION_CHAIN` y_t/m_t chain |
 | `m_b = 4.18 GeV`, `m_c = 1.27 GeV` (threshold inputs) | infrastructure | CHAIN Section 8.4 |
-| **`Λ_MS-bar^(N_F=5) = 227.5 MeV`** | **framework-derived** ✓ | this probe |
+| **`Λ_MS-bar^(N_F=5) = 227.5 MeV`** | **conditional computed consequence** | supplied `alpha_s(M_Z)` plus declared two-loop inversion |
 | **`r_0 · Λ ≈ 0.535`** | **SU(3) YM-shelf admission** | gauge-identification inheritance |
-| **`r_0 ≈ 0.464 fm`** | **partial closure** | Λ derived + ratio admitted |
+| **`r_0 ≈ 0.464 fm`** | **bounded conditional readout** | supplied coupling + admitted ratio |
 
 The shape of the residual obstruction matches the existing `<P> =
 0.5934` shelf item: a number that the framework's gauge identification
@@ -250,39 +251,33 @@ becomes:
 
 | Import | Pre-probe state | Post-probe state |
 |---|---|---|
-| Sommer scale `r_0 = 0.5 fm` | full literature import | **split**: `Λ` framework-derived (closed) + `r_0·Λ` SU(3) YM-shelf (admitted as SU(3) YM observable, same shelf as `<P>`) |
+| Sommer scale `r_0 = 0.5 fm` | full literature import | algebraically decomposed, but not retired: `Λ` depends on supplied `alpha_s(M_Z)` and `r_0·Λ` remains admitted |
 | 4-loop QCD running | full standard correction | partially derived in PR #917 |
 | Threshold matching at heavy-quark thresholds | full standard correction | unchanged |
 | Sea-quark / full-QCD bridge | full standard correction | unchanged |
 
-**Lane 1 import count:** 4 → 3.5 (PR #917) → **3.0** (this probe).
+**Lane 1 import count:** no decrement is justified by this probe. The earlier
+source-side proposal `4 -> 3.5 -> 3.0` is withdrawn.
 
-The audit-lane recommendation under the source-note framework is to
-*rename* the Sommer-scale residual from "Sommer scale is a literature
-standard correction" (per honest-status audit Section 1) to "**`r_0 ·
-Λ` SU(3) YM-shelf admission**" alongside the existing `<P> = 0.5934`
-admission. This is bookkeeping at the import-count level, not a
-promotion of Lane 1 itself.
+The algebraic split remains useful bookkeeping, but it does not replace the
+Sommer-scale residual with only one shelf item: the supplied coupling input
+also remains load-bearing.
 
 ## 5. Honest scope (audit-readable)
 
 ```yaml
 proposed_claim_type: bounded_theorem
 proposed_claim_scope: |
-  Sommer scale r_0 splits into the framework-derived Lambda_MS-bar^(N_F=5)
-  component (closed under retained Wilson chain + retained group theory)
-  and the dimensionless r_0 * Lambda SU(3) Yang-Mills observable
-  (admitted on the same shelf as <P> = 0.5934). With the framework's
-  Lambda^(5) = 227.5 MeV (8.3% from PDG 210 MeV) and the standard SU(3)
-  YM ratio r_0 * Lambda^(5) ≈ 0.535, the implied r_0 ≈ 0.464 fm matches
-  the conventional Sommer 0.5 fm to 7.2%. The Lane 1 sub-import "Sommer
-  scale is a literature standard correction" is replaced by "r_0 *
-  Lambda is a SU(3) YM-shelf admission".
+  Given supplied alpha_s(M_Z)=0.1181, the declared two-loop inversion gives
+  Lambda^(5)=227.5 MeV. Given additionally the admitted dimensionless ratio
+  r_0*Lambda≈0.535, the implied r_0≈0.464 fm. This is a bounded conditional
+  decomposition and comparator readout, not a framework-native derivation or
+  an import-count reduction.
 
-closed_admissions_this_probe:
-  - lambda_qcd_NF5_framework_derived  # 227.5 MeV from retained alpha_s(M_Z) + b_3=-7
+computed_consequences_this_probe:
+  - lambda_qcd_NF5_from_supplied_alpha_s_context  # 227.5 MeV from supplied alpha_s(M_Z) + b_3=-7
   - lambda_qcd_perturbative_inversion_consistency
-  - threshold_matching_uses_only_retained_m_t_plus_infrastructure_m_b_m_c
+  - threshold_matching_from_supplied_or_infrastructure_masses
 
 residual_admissions_this_probe:
   - r_0_lambda_su3_ym_dimensionless_ratio  # same shelf as <P> = 0.5934
@@ -307,42 +302,35 @@ admitted_context_inputs:
   - 2-loop perturbative inversion truncation (dominant ~8% residual on
     Lambda^(5))
 
-load_bearing_step_class: bounded_theorem  # partial closure with named admissions
+load_bearing_step_class: bounded_theorem  # conditional result with named inputs
 proposal_allowed: true
 audit_required_before_effective_status_change: true
 
 lane_1_import_count_update:
   pre_probe: 4  # Sommer, 4-loop running, threshold matching, sea-quark
   post_pr_917: 3.5  # 4-loop running partially derived
-  post_this_probe: 3.0  # Sommer split into framework-derived Lambda + SU(3) YM-shelf r_0*Lambda
+  post_this_probe: null  # no decrement justified by this conditional computation
 
 audit_lane_recommendation_for_lane_1:
-  rename_sommer_residual_as: r_0_lambda_su3_ym_shelf_admission
-  alongside: P_avg_su3_ym_shelf_admission
+  preserve_existing_import_count: true
   no_promotion_of_lane_1_overall: true  # consistent with bridge-lanes-promotion verdict
 ```
 
 ## 6. What this note DOES establish
 
-1. **Λ_MS-bar^(N_F=5) is framework-derivable.** The retained
-   `α_s(M_Z) = 0.1181` (post-bridge) plus retained `b_3 = -7` group theory
-   gives `Λ^(5) = 227.5 MeV`, within 8.3% of PDG. No literature input
-   used.
+1. **Conditional inversion is reproducible.** The supplied
+   `α_s(M_Z) = 0.1181` context plus the declared two-loop formula gives
+   `Λ^(5) = 227.5 MeV`. This does not derive the coupling input.
 
-2. **r_0 splits cleanly.** The Sommer scale decomposes into a
-   framework-derived `Λ` piece and a SU(3) YM dimensionless `r_0 · Λ`
-   piece. The latter is on the same shelf as `<P> = 0.5934` — a SU(3) YM
-   observable that the framework's gauge identification inherits.
+2. **r_0 splits algebraically.** The Sommer scale decomposes into a
+   conditionally computed `Λ` piece and a supplied SU(3) YM dimensionless
+   `r_0 · Λ` piece.
 
-3. **Lane 1 import-count drops by 0.5.** The Sommer-scale slot is no
-   longer a "literature standard correction"; it is a framework-derived
-   `Λ` plus an SU(3) YM-shelf admission. Net post-probe count: 3.0
-   (down from 3.5 after PR #917).
+3. **No Lane 1 import-count drop follows.** Both supplied quantities remain
+   load-bearing.
 
-4. **No new axioms, no new imports, no PDG values as derivation
-   inputs.** All load-bearing inputs are retained or
-   framework-predicted; PDG values appear only as falsifiability
-   comparators.
+4. **Frozen baseline.** This repair adds no axiom or registry input; it makes
+   the existing supplied-input dependence explicit.
 
 ## 7. What this note does NOT establish
 

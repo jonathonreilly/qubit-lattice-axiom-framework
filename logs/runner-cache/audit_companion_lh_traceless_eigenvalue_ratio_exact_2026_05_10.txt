@@ -1,116 +1,106 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py
-runner_sha256: e42092156023d4baadd83b1eb05f13511b8cfc5c59b1654fcbd08b5187cd3a85
+runner_sha256: d282a2b66448197e5a7b5aec348be0110a602cf71eceaec6bb5da8e57ba990f9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
-========================================================================================
-Audit companion (exact-symbolic) for
-LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10
-Goal: sympy-symbolic verification of (R1)-(R4) over abstract n_color,
-then concrete sweep over n_color in {1, 2, 3, 4, 5, 7, 9, 11, 12}
-========================================================================================
+================================================================================================
+LH traceless projective-ratio theorem evidence runner
+mode: all
+Clean clause: trace + positive-integer count + nonzero pair => [a:b]=[1:-n_color]
+Conditional clauses: b=-1 and Q=T3+Y/2 arithmetic remain supplied-convention support
+================================================================================================
 
-----------------------------------------------------------------------------------------
-Part 0: symbolic setup
-----------------------------------------------------------------------------------------
-  symbolic n_color = n_color, eigenvalues a, b real
-  trace equation (L1): 2 n_color a + 2 b = 0
+------------------------------------------------------------------------------------------------
+NORMAL: direct symbolic proof of the homogeneous/projective implication
+------------------------------------------------------------------------------------------------
+  [PASS THEOREM] dividing the trace equation by 2 gives n_color*a + b  (trace/2 - reduced = 0)
+  [PASS THEOREM] trace equation solves to b = -n_color*a  (b = -a*n_color)
+  [PASS THEOREM] trace plus a=0 has the single solution (a,b)=(0,0)  (solutions = {(0, 0)})
+  [PASS THEOREM] trace plus b=0 has the single solution (a,b)=(0,0) for nonzero n_color  (solutions = {(0, 0)})
+  [PASS THEOREM] projective equality follows by the division-free determinant test  (det((a,b),(1,-n_color)) = -a*n_color - b)
+  [PASS THEOREM] every nonzero scale lambda gives a trace-zero representative  (representative = Matrix([[lambda, -lambda*n_color]]))
+  [PASS THEOREM] the representative is lambda*(1,-n_color)
+  [PASS THEOREM] division occurs only on the nonzero representative and gives a/b=-1/n_color  (a/b = -1/n_color)
+  [PASS THEOREM] n_color=1 gives the projective point [1:-1]
+  [PASS THEOREM] positive, negative, and fractional nonzero scales preserve the n_color=5 class  (scales = (2, -3, 5/7))
 
-----------------------------------------------------------------------------------------
-Part 1: (R1) parametric eigenvalue ratio a : b = 1 : (-n_color)
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R1) parametric: b = -n_color * a forced by (L1)  (b_solved = -a*n_color)
-  [PASS (A)] (R1) parametric: a / b = -1 / n_color (equivalent ratio form)  (a/b + 1/n_color simplifies to 0)
+------------------------------------------------------------------------------------------------
+NORMAL: explicitly convention-supplied arithmetic (not theorem evidence)
+------------------------------------------------------------------------------------------------
+  [PASS CONDITIONAL_SUPPORT] under supplied b=-1, a=1/n_color  (a = 1/n_color)
+  [PASS CONDITIONAL_SUPPORT] under supplied Q=T3+Y/2, Q(up)=(n_color+1)/(2*n_color)  (Q(up) = (n_color + 1)/(2*n_color))
+  [PASS CONDITIONAL_SUPPORT] under supplied Q=T3+Y/2, Q(down)=(1-n_color)/(2*n_color)  (Q(down) = (1 - n_color)/(2*n_color))
+  [PASS CONDITIONAL_SUPPORT] the two supplied-convention charges differ by one
+  [PASS CONDITIONAL_SUPPORT] the supplied-convention charges sum to 1/n_color
 
-----------------------------------------------------------------------------------------
-Part 1b: zero-solution guard for the (R1) ratio claim
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R1) guard (i): degenerate pair (a, b) = (0, 0) satisfies (L1)  ((L1) at (0,0) = 0)
-  [PASS (A)] (R1) guard (ii): (0,0) is the unique (L2)-excluded solution of (L1)  (branch b = -a_param*n_color; zero only at a = 0)
-  [PASS (A)] (R1) guard (iii): on nonzero branch, ratio a:b = 1:(-n_color) with b != 0  (a/b + 1/n_color = 0; denom = -a_param*n_color)
-  [PASS (A)] (R1) guard at n_color = 1: nonzero branch excludes (0,0), ratio a:b = 1:(-1) holds  ((a, b) = (1, -1), a/b = -1)
-  [PASS (A)] (R1) guard at n_color = 2: nonzero branch excludes (0,0), ratio a:b = 1:(-2) holds  ((a, b) = (1, -2), a/b = -1/2)
-  [PASS (A)] (R1) guard at n_color = 3: nonzero branch excludes (0,0), ratio a:b = 1:(-3) holds  ((a, b) = (1, -3), a/b = -1/3)
-  [PASS (A)] (R1) guard at n_color = 5: nonzero branch excludes (0,0), ratio a:b = 1:(-5) holds  ((a, b) = (1, -5), a/b = -1/5)
+------------------------------------------------------------------------------------------------
+INDEPENDENT: exact nullspace/projective route
+------------------------------------------------------------------------------------------------
+  [PASS THEOREM] the exact trace row has a one-dimensional nullspace  (basis = [Matrix([
+[-1/n_color],
+[         1]])])
+  [PASS THEOREM] the nullspace basis is projectively equal to (1,-n_color)  (basis = Matrix([[-1/n_color, 1]]))
+  [PASS THEOREM] finite hostile enumeration finds no nonzero off-projective solution for n_color=1..7  (nonzero trace-zero pairs tested = 60)
+  [PASS THEOREM] independent Fraction arithmetic agrees at n_color=11 across four scales  (scales = (Fraction(-7, 3), Fraction(-1, 2), Fraction(1, 5), Fraction(9, 4)))
 
-----------------------------------------------------------------------------------------
-Part 2: (R2) convention b = -1 fixes a = 1/n_color
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R2) parametric: under b = -1 convention, a = 1 / n_color  (a = 1/n_color)
+------------------------------------------------------------------------------------------------
+INDEPENDENT: Euclidean/GCD route for conditional support
+------------------------------------------------------------------------------------------------
+  [PASS CONDITIONAL_SUPPORT] two-way Bezout combinations prove both gcd reductions for arbitrary integer n_color  (up=(2,2n): (2, 2*n_color); down=(2,2n): (2, 2*n_color))
+  [PASS CONDITIONAL_SUPPORT] the two residue classes modulo 2 prove the common gcd is 1 for even and 2 for odd n_color  (residue certificate = {0: (1, 1), 1: (2, 2)})
+  [PASS CONDITIONAL_SUPPORT] the parity gcd certificate gives denominator n_color for odd and 2*n_color for even counts
+  [PASS CONDITIONAL_SUPPORT] regression-only sweep confirms Euclidean gcd reductions for n_color=1..64  (finite sweep supports but does not prove the universal identity)
+  [PASS CONDITIONAL_SUPPORT] regression-only sweep finds denominator n_color for odd n_color=1..63
+  [PASS CONDITIONAL_SUPPORT] regression-only sweep finds denominator 2*n_color for even n_color=2..64
 
-----------------------------------------------------------------------------------------
-Part 3: (R3) closed-form Q(u_L), Q(d_L) parametric in n_color
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R3) Q(u_L) parametric: (n_color + 1) / (2 n_color)  (Q(u_L) = (n_color + 1)/(2*n_color))
-  [PASS (A)] (R3) Q(d_L) parametric: (1 - n_color) / (2 n_color)  (Q(d_L) = (1 - n_color)/(2*n_color))
+------------------------------------------------------------------------------------------------
+HOSTILE: counterdomains, normalization freedom, and alternate readout
+------------------------------------------------------------------------------------------------
+  [PASS BOUNDARY] the excluded zero pair satisfies the homogeneous trace equation
+  [PASS BOUNDARY] the zero pair has no projective class under the executable determinant guard
+  [PASS BOUNDARY] at n_color=0, (1,0) is trace-zero and refutes the two-nonzero conclusion
+  [PASS BOUNDARY] negative n_color=-2 preserves the projective algebra outside the count domain
+  [PASS BOUNDARY] noninteger n_color=1/2 preserves the projective algebra but has no integer parity class
+  [PASS BOUNDARY] irrational nonzero parameter preserves the projective identity outside rational gcd arithmetic
+  [PASS BOUNDARY] alternate scale lambda=2 at n_color=3 satisfies trace but has b=-6
+  [PASS BOUNDARY] alternate sign scale lambda=-3 at n_color=3 satisfies trace but has b=+9
+  [PASS BOUNDARY] two unequal scales give the same projective point and different absolute eigenvalues
+  [PASS BOUNDARY] alternate Q=T3+Y changes both R3 charge clauses at fixed normalization  (Q_half=(Fraction(2, 3), Fraction(-1, 3)), Q_full=(Fraction(5, 6), Fraction(-1, 6)))
+  [PASS BOUNDARY] alternate Q=T3+Y changes the R4 reduced-denominator readout
+  [PASS BOUNDARY] supplying Q=T3+Y/2 without b=-1 leaves the charge scale-dependent  (scaled Q=3/2, normalized Q=2/3)
+  [PASS BOUNDARY] without supplied normalization the conditional readout remains open
+  [PASS BOUNDARY] without a supplied charge functional the conditional readout remains open
 
-----------------------------------------------------------------------------------------
-Part 4: (C1), (C2) derivable corollaries
-----------------------------------------------------------------------------------------
-  [PASS (A)] (C1) Q(u_L) - Q(d_L) = 1 (independent of n_color)  (Q_uL - Q_dL = 1)
-  [PASS (A)] (C2) Q(u_L) + Q(d_L) = a = 1/n_color  (Q_uL + Q_dL = 1/n_color)
+------------------------------------------------------------------------------------------------
+HOSTILE: N1-N8 boundary evidence
+------------------------------------------------------------------------------------------------
+  [PASS BOUNDARY] N1 ATTEMPTED six distinct attack routes and computed every disposition  (alternate_charge_functional=True, alternate_scale=True, negative_parameter=True, noninteger_parameter=True, zero_pair=True, zero_parameter=True)
+  [PASS BOUNDARY] N2 normalization does not close the charge-functional condition  (b=-1 held fixed while the charge functional changed)
+  [PASS BOUNDARY] N2 charge-functional convention does not close the normalization condition  (Q=T3+Y/2 held fixed while the common scale changed)
+  [PASS HYGIENE] N3 hidden-wall phrase scan has no unclassified trigger  (hits = {'we assume': 0, 'by construction': 0, 'as is standard': 0, 'the framework provides': 0, 'bridge context': 0, 'background': 0, 'naturally': 0, 'obviously': 0, 'standard qft': 0, 'registered': 0, 'canonical': 0, 'requires a new axiom': 0, 'no retained primitive': 0})
+  [PASS HYGIENE] N4 is N/A because the self-contained note cites no prior Markdown witness  (Markdown note links = [])
+  [PASS BOUNDARY] N5 alternate scale blocks an absolute-eigenvalue reading of the projective theorem
+  [PASS BOUNDARY] N5 alternate charge functional blocks a physical-charge reading of the projective theorem
+  [PASS BOUNDARY] N6 convention-supplied partial closure reproduces the conditional n_color=3 arithmetic
+  [PASS BOUNDARY] N7 steelman closes the support arithmetic by definition without enlarging R1
+  [PASS BOUNDARY] N8 direct rearrangement and independent nullspace routes agree projectively at n_color=5  (direct=Matrix([[1, -5]]), nullspace=Matrix([[-1/5, 1]]))
+  [PASS HYGIENE] changed note has no absolute local markdown link target
+  [PASS HYGIENE] broad-negative phrase scan finds no unqualified foreclosure wording  (hits = {'nothing else': 0, 'cannot be derived': 0, 'unique': 0, 'forced': 0})
 
-----------------------------------------------------------------------------------------
-Part 5: (R4) reduced-denominator parity rule via concrete sweep
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R4) at n_color = 1 (odd): d_red = 1 (got Q_uL denom 1, Q_dL denom 1)  (Q_uL = 1, Q_dL = 0)
-  [PASS (A)] (R4) at n_color = 2 (even): d_red = 4 (got Q_uL denom 4, Q_dL denom 4)  (Q_uL = 3/4, Q_dL = -1/4)
-  [PASS (A)] (R4) at n_color = 3 (odd): d_red = 3 (got Q_uL denom 3, Q_dL denom 3)  (Q_uL = 2/3, Q_dL = -1/3)
-  [PASS (A)] (R4) at n_color = 4 (even): d_red = 8 (got Q_uL denom 8, Q_dL denom 8)  (Q_uL = 5/8, Q_dL = -3/8)
-  [PASS (A)] (R4) at n_color = 5 (odd): d_red = 5 (got Q_uL denom 5, Q_dL denom 5)  (Q_uL = 3/5, Q_dL = -2/5)
-  [PASS (A)] (R4) at n_color = 7 (odd): d_red = 7 (got Q_uL denom 7, Q_dL denom 7)  (Q_uL = 4/7, Q_dL = -3/7)
-  [PASS (A)] (R4) at n_color = 9 (odd): d_red = 9 (got Q_uL denom 9, Q_dL denom 9)  (Q_uL = 5/9, Q_dL = -4/9)
-  [PASS (A)] (R4) at n_color = 11 (odd): d_red = 11 (got Q_uL denom 11, Q_dL denom 11)  (Q_uL = 6/11, Q_dL = -5/11)
-  [PASS (A)] (R4) at n_color = 12 (even): d_red = 24 (got Q_uL denom 24, Q_dL denom 24)  (Q_uL = 13/24, Q_dL = -11/24)
-
-----------------------------------------------------------------------------------------
-Part 6: framework instance n_color = 3 rational closed form
-----------------------------------------------------------------------------------------
-  [PASS (A)] framework n_color = 3: a = 1/3  (a = 1/3)
-  [PASS (A)] framework n_color = 3: Q(u_L) = 2/3  (Q(u_L) = 2/3)
-  [PASS (A)] framework n_color = 3: Q(d_L) = -1/3  (Q(d_L) = -1/3)
-  [PASS (A)] framework n_color = 3: reduced denominator = 3 (odd-parity branch)  (confirms d_red(3) = n_color = 3 directly)
-
-----------------------------------------------------------------------------------------
-Part 7: parity-branch counterfactual at n_color = 2
-----------------------------------------------------------------------------------------
-  [PASS (A)] counterfactual at n_color = 2 (even): reduced denominator = 4 != 2  (Q(u_L) = 3/4, Q(d_L) = -1/4)
-  [PASS (A)] counterfactual at n_color = 4 (even): reduced denominator = 8  (Q(u_L) = 5/8, Q(d_L) = -3/8)
-
-----------------------------------------------------------------------------------------
-Part 8: parity rule via sympy gcd identity
-----------------------------------------------------------------------------------------
-  [PASS (A)] (R4) gcd(n_color + 1, 2 n_color) at n_color = 1 is 2  (gcd_uL = 2, gcd_dL = 2)
-  [PASS (A)] (R4) gcd(n_color + 1, 2 n_color) at n_color = 2 is 1  (gcd_uL = 1, gcd_dL = 1)
-  [PASS (A)] (R4) gcd(n_color + 1, 2 n_color) at n_color = 3 is 2  (gcd_uL = 2, gcd_dL = 2)
-  [PASS (A)] (R4) gcd(n_color + 1, 2 n_color) at n_color = 4 is 1  (gcd_uL = 1, gcd_dL = 1)
-  [PASS (A)] (R4) gcd(n_color + 1, 2 n_color) at n_color = 5 is 2  (gcd_uL = 2, gcd_dL = 2)
-  [PASS (A)] (R4) gcd(n_color + 1, 2 n_color) at n_color = 7 is 2  (gcd_uL = 2, gcd_dL = 2)
-  [PASS (A)] (R4) gcd(n_color + 1, 2 n_color) at n_color = 9 is 2  (gcd_uL = 2, gcd_dL = 2)
-  [PASS (A)] (R4) gcd(n_color + 1, 2 n_color) at n_color = 11 is 2  (gcd_uL = 2, gcd_dL = 2)
-  [PASS (A)] (R4) gcd(n_color + 1, 2 n_color) at n_color = 12 is 1  (gcd_uL = 1, gcd_dL = 1)
-
-----------------------------------------------------------------------------------------
-Summary
-----------------------------------------------------------------------------------------
-  Verified at exact sympy precision:
-    (R1) parametric eigenvalue ratio a:b = 1:(-n_color)
-    (R1) zero-solution guard: (0,0) satisfies (L1), excluded by (L2),
-         ratio holds on nonzero branch with nonzero denominator
-    (R2) under b = -1 convention, a = 1/n_color
-    (R3) Q(u_L), Q(d_L) closed forms parametric in n_color
-    (R4) reduced-denominator parity rule, sweep across both parities
-    (C1), (C2) sum/difference corollaries
-    Framework n_color = 3 instance: (a, Q(u_L), Q(d_L)) = (1/3, 2/3, -1/3)
-    Counterfactual: parity-even branch (n_color = 2, 4) reduces differently
-    Parity rule via sympy gcd identity across both parities
-
-========================================================================================
-TOTAL: PASS=38, FAIL=0
-========================================================================================
+================================================================================================
+EVIDENCE COUNTS
+  THEOREM: PASS=14 FAIL=0
+  CONDITIONAL_SUPPORT: PASS=11 FAIL=0
+  BOUNDARY: PASS=22 FAIL=0
+  HYGIENE: PASS=4 FAIL=0
+TOTAL: PASS=51 FAIL=0
+Clean clause: homogeneous/projective implication stated above.
+Conditional clauses: normalization, charge readout, and denominator support.
+No audit verdict is issued by this runner.
+================================================================================================
 
 ----- stderr -----
 

@@ -1,16 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py
-runner_sha256: b11cd56dd254c3518e2d29713b2ad9f5ecd36cc130b33e885e617cf42505563b
+runner_sha256: 31f3d6ad0a1b91c254ddbd8709d4774eaebdca20ff6694bc190494d8df874433
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.64
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10
 Goal: verify (R1)-(R4) closed forms satisfy anomaly equations
-parametric in n_color, plus framework n_color=3 sanity
+parametric in n_color, plus condition-supplied regression instances
+Slot aliases do not assert physical species identification
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
@@ -21,7 +22,7 @@ Part 0: symbolic setup
   (R1) Y_uR  = a + 1
   (R2) Y_dR  = a - 1
   (R3) Y_eR  = b - 1
-  (R4) Y_nuR = b + 1 (neutral branch gives Y_nuR = 0 at b = -1)
+  (R4) Y_nuR = b + 1 (fourth slot is 0 at supplied b = -1)
 
 ----------------------------------------------------------------------------------------
 Part 1: color SU(3)_c anomaly under closed forms
@@ -41,43 +42,43 @@ Part 3: cubic [U(1)_Y]^3 anomaly under closed forms
   [PASS (A)] cubic anomaly under LH trace b = -n_color a: vanishes identically  (cubic_anom under trace = 0)
 
 ----------------------------------------------------------------------------------------
-Part 4: (R1)-(R4) framework instance n_color = 3, b = -1, a = 1/3
+Part 4: regression support at supplied n_color = 3, b = -1, a = 1/3
 ----------------------------------------------------------------------------------------
-  [PASS (A)] framework n_color=3: Y_uR = 4/3  (Y_uR = 4/3)
-  [PASS (A)] framework n_color=3: Y_dR = -2/3  (Y_dR = -2/3)
-  [PASS (A)] framework n_color=3: Y_eR = -2  (Y_eR = -2)
-  [PASS (A)] framework n_color=3: Y_nuR = 0 (neutral branch under b=-1)  (Y_nuR = 0)
+  [PASS (SUPPORT)] framework n_color=3: Y_uR = 4/3  (Y_uR = 4/3)
+  [PASS (SUPPORT)] framework n_color=3: Y_dR = -2/3  (Y_dR = -2/3)
+  [PASS (SUPPORT)] framework n_color=3: Y_eR = -2  (Y_eR = -2)
+  [PASS (SUPPORT)] framework n_color=3: fourth slot Y_nuR = 0 under supplied b=-1  (Y_nuR = 0)
 
 ----------------------------------------------------------------------------------------
-Part 5: anomalies vanish numerically at framework n_color = 3
+Part 5: anomaly regression at supplied n_color = 3
 ----------------------------------------------------------------------------------------
-  [PASS (A)] framework n_color=3: (COLOR_ANOM) SU(3)_c anomaly = 0  (color_anom at framework = 0)
-  [PASS (A)] framework n_color=3: (GRAV_ANOM) gauge-gravity anomaly = 0  (grav_anom at framework = 0)
-  [PASS (A)] framework n_color=3: (CUBIC_ANOM) cubic [U(1)_Y]^3 anomaly = 0  (cubic_anom at framework = 0)
+  [PASS (SUPPORT)] framework n_color=3: (COLOR_ANOM) SU(3)_c anomaly = 0  (color_anom at framework = 0)
+  [PASS (SUPPORT)] framework n_color=3: (GRAV_ANOM) gauge-gravity anomaly = 0  (grav_anom at framework = 0)
+  [PASS (SUPPORT)] framework n_color=3: (CUBIC_ANOM) cubic [U(1)_Y]^3 anomaly = 0  (cubic_anom at framework = 0)
 
 ----------------------------------------------------------------------------------------
-Part 6: broad-note hypercharge readouts at n_color = 3
+Part 6: non-load-bearing broad-note literal regression at n_color = 3
 ----------------------------------------------------------------------------------------
-  [PASS (A)] broad-note readout at framework n_color=3: Y_uR = 4/3  (Y_uR = 4/3; broad note uses (1,3)_{+4/3})
-  [PASS (A)] broad-note readout at framework n_color=3: Y_dR = -2/3  (Y_dR = -2/3; broad note uses (1,3)_{-2/3})
-  [PASS (A)] broad-note readout at framework n_color=3: Y_eR = -2  (Y_eR = -2; broad note uses (1,1)_{-2})
-  [PASS (A)] broad-note readout at framework n_color=3: Y_nuR = 0  (Y_nuR = 0; broad note uses (1,1)_{0})
+  [PASS (SUPPORT)] broad-note readout at framework n_color=3: Y_uR = 4/3  (Y_uR = 4/3; broad note uses (1,3)_{+4/3})
+  [PASS (SUPPORT)] broad-note readout at framework n_color=3: Y_dR = -2/3  (Y_dR = -2/3; broad note uses (1,3)_{-2/3})
+  [PASS (SUPPORT)] broad-note readout at framework n_color=3: Y_eR = -2  (Y_eR = -2; broad note uses (1,1)_{-2})
+  [PASS (SUPPORT)] broad-note readout at framework n_color=3: Y_nuR = 0  (Y_nuR = 0; broad note uses (1,1)_{0})
 
 ----------------------------------------------------------------------------------------
 Part 7: non-framework instance n_color = 5, b = -1, a = 1/5
 ----------------------------------------------------------------------------------------
-  [PASS (A)] non-framework n_color=5: Y_uR = 6/5  (Y_uR = 6/5)
-  [PASS (A)] non-framework n_color=5: Y_dR = -4/5  (Y_dR = -4/5)
-  [PASS (A)] non-framework n_color=5: Y_eR = -2 (independent of n_color)  (Y_eR = -2)
-  [PASS (A)] non-framework n_color=5: Y_nuR = 0 (independent of n_color, neutral branch)  (Y_nuR = 0)
-  [PASS (A)] non-framework n_color=5: all three anomalies vanish  ((color_anom, grav_anom, cubic_anom) = (0, 0, 0))
+  [PASS (SUPPORT)] non-framework n_color=5: Y_uR = 6/5  (Y_uR = 6/5)
+  [PASS (SUPPORT)] non-framework n_color=5: Y_dR = -4/5  (Y_dR = -4/5)
+  [PASS (SUPPORT)] non-framework n_color=5: Y_eR = -2 (independent of n_color)  (Y_eR = -2)
+  [PASS (SUPPORT)] non-framework n_color=5: fourth slot Y_nuR = 0 under supplied b=-1  (Y_nuR = 0)
+  [PASS (SUPPORT)] non-framework n_color=5: all three anomalies vanish  ((color_anom, grav_anom, cubic_anom) = (0, 0, 0))
 
 ----------------------------------------------------------------------------------------
-Part 8: discrete e_R <-> nu_R relabelling branch is anomaly-consistent
+Part 8: lepton-slot exchange shows absence of a naming selector
 ----------------------------------------------------------------------------------------
-  [PASS (A)] discrete branch e_R <-> nu_R: (GRAV_ANOM) still vanishes  (A3_swap = 0)
-  [PASS (A)] discrete branch e_R <-> nu_R: (CUBIC_ANOM) still vanishes  (A4_swap = 0)
-  [PASS (A)] discrete branch at framework n_color=3: Y_eR_swap = 0, Y_nuR_swap = -2  (swap: Y_eR = 0, Y_nuR = -2)
+  [PASS (BOUNDARY)] lepton-slot exchange: (GRAV_ANOM) still vanishes  (A3_swap = 0)
+  [PASS (BOUNDARY)] lepton-slot exchange: (CUBIC_ANOM) still vanishes  (A4_swap = 0)
+  [PASS (BOUNDARY)] lepton-slot exchange at n_color=3 swaps 0 and -2 without selecting names  (swap: Y_eR = 0, Y_nuR = -2)
 
 ----------------------------------------------------------------------------------------
 Part 9: (C1) sum of all hypercharges (gravitational trace) vanishes
@@ -97,10 +98,10 @@ Summary
     Color SU(3)_c anomaly vanishes identically
     Gauge-gravity anomaly vanishes under LH trace b = -n_color a
     Cubic [U(1)_Y]^3 anomaly vanishes under LH trace
-    Framework n_color=3: (Y_uR, Y_dR, Y_eR, Y_nuR) = (4/3, -2/3, -2, 0)
-    Hypercharge readouts match broad-note rep-literal subscripts at n_color=3
-    Non-framework n_color=5: (Y_uR, Y_dR, Y_eR, Y_nuR) = (6/5, -4/5, -2, 0)
-    Discrete e_R <-> nu_R relabelling branch is anomaly-consistent
+    Supplied n_color=3 regression: slot values (4/3, -2/3, -2, 0)
+    Non-load-bearing broad-note literal regression agrees at n_color=3
+    Supplied n_color=5 regression: slot values (6/5, -4/5, -2, 0)
+    Lepton-slot exchange is anomaly-invariant and selects no names
     (C1), (C2) corollaries verified
 
 ========================================================================================

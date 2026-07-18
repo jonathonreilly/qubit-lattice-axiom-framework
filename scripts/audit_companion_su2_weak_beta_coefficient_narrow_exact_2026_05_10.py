@@ -6,15 +6,14 @@ The narrow theorem's load-bearing content is the algebraic substitution
 implication: given
 
   (X0) Native SU(2)_L and graph-first structural SU(3)_c color supplied by
-       retained gauge-count upstreams; standard SU(2) group theory
+       the linked gauge-count upstreams; standard SU(2) group theory
        gives C_2(adj of SU(2)) = 2, recorded as N_pair = 2.
-  (X1) N_W = (N_color + 1) * N_gen  (LH SU(2) Weyl-doublet count from
-       the retained_bounded lh_traceless_eigenvalue_ratio narrow theorem),
-  (X2) N_gen = 3  (retained three_generation_observable_count corollary),
-  (X3) n_S^complex_components = 2  (retained ew_higgs_gauge_mass_diagonalization),
-  (X4a) d = 4 Yang-Mills marginal tangent (retained),
+  (X1) N_W = (N_color + 1) * N_gen  (explicit supplied LH field inventory),
+  (X2) N_gen = 3  (linked three_generation_observable_count source),
+  (X3) n_H^complex_doublets = 1  (explicit one-Higgs-doublet inventory),
+  (X4a) d = 4 Yang-Mills marginal tangent (linked source),
   (X4b) explicit d=4 background-field / heat-kernel coefficient kernel:
-         b = (11/3) C_2(adj) - (2/3) T(F_W) N_W - (1/6) T(F_S) n_S
+         b = (11/3) C_2(adj) - (2/3) T(F_W) N_W - (1/3) T(F_S) n_H
        with the SU(2) trace data verified in this runner:
          C_2(adj of SU(2)) = N_pair and T(F^Weyl) = T(F^scalar) = 1/2,
 
@@ -96,12 +95,12 @@ def main() -> int:
     print("Audit companion (exact-symbolic) for")
     print("SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10")
     print("Goal: sympy verification of b_2 = 19/6 closed form")
-    print("Inputs (cited):")
-    print("  (X0) native_gauge_closure retained + graph_first_su3_integration retained")
-    print("  (X1) lh_traceless_eigenvalue_ratio_narrow ... retained_bounded")
-    print("  (X2) three_generation_observable_count_corollary ... retained")
-    print("  (X3) ew_higgs_gauge_mass_diagonalization ... retained_bounded")
-    print("  (X4a) yang_mills_coupling_marginality_forces_d_four ... retained")
+    print("Inputs and explicit conditions:")
+    print("  (X0) linked native_gauge_closure + graph_first_su3_integration sources")
+    print("  (X1) explicit supplied LH inventory N_W=(N_color+1)*N_gen")
+    print("  (X2) linked three_generation_observable_count_corollary source")
+    print("  (X3) explicit one-Higgs-doublet inventory")
+    print("  (X4a) linked yang_mills_coupling_marginality_forces_d_four source")
     print("  (X4b) explicit d=4 background-field coefficient kernel")
     print("=" * 88)
 
@@ -116,14 +115,14 @@ def main() -> int:
     print(f"  symbolic N_color = {N_color}")
     print(f"  symbolic N_gen   = {N_gen}")
 
-    # Cited input (X1): N_W = (N_color + 1) * N_gen
+    # Explicit supplied field-inventory condition (X1).
     N_W = (N_color + 1) * N_gen
 
-    # Cited input (X3): n_S^complex_components = 2 (one Higgs doublet)
-    n_S_complex_components = Rational(2)
+    # Cited input (X3): one complex Higgs representation doublet.
+    n_H_complex_doublets = Rational(1)
 
     print(f"  (X1) N_W = (N_color + 1) * N_gen = {N_W}")
-    print(f"  (X3) n_S^complex_components = {n_S_complex_components}")
+    print(f"  (X3) n_H^complex_doublets = {n_H_complex_doublets}")
     print("  (X4a) d = 4 Yang-Mills marginal tangent supplied upstream")
 
     # ---------------------------------------------------------------------
@@ -161,11 +160,11 @@ def main() -> int:
     # not derived in this runner.
     k_gauge_ghost = Rational(11, 3)
     k_weyl = -Rational(2, 3)
-    k_complex_scalar_component = -Rational(1, 6)
+    k_complex_scalar_multiplet = -Rational(1, 3)
     boundary(
         "X4' spin-sector rational table is an explicit bounded d=4 QFT kernel, not derived here",
         detail=(
-            "gauge+ghost: 11/3, Weyl: -2/3, complex scalar component: -1/6; "
+            "gauge+ghost: 11/3, Weyl: -2/3, complex scalar multiplet: -1/3; "
             "convention b>0 = asymptotic freedom"
         ),
     )
@@ -175,11 +174,11 @@ def main() -> int:
     # ---------------------------------------------------------------------
     # Explicit X4' coefficient kernel:
     #   b  =  (11/3) C_2(adj)  -  (2/3) T(F_W) N_W
-    #         -  (1/6) T(F_S) n_S
+    #         -  (1/3) T(F_S) n_H
     b_2_native = (
         k_gauge_ghost * C2_adj_SU2
         + k_weyl * T_F_Weyl * N_W
-        + k_complex_scalar_component * T_F_scalar * n_S_complex_components
+        + k_complex_scalar_multiplet * T_F_scalar * n_H_complex_doublets
     )
 
     # Claim (P1): the above simplifies to
@@ -234,10 +233,12 @@ def main() -> int:
     # Three additive contributions at framework counts:
     #   gauge boson + ghost:    +(11/3) N_pair                =  +22/3
     #   LH SU(2) Weyl matter:   -(1/3) (N_color + 1) N_gen    =  -4
-    #   1 Higgs doublet:        -(1/6) * (1/2) * 2 = -1/6     =  -1/6
+    #   1 Higgs doublet:        -(1/3) * (1/2) * 1 = -1/6     =  -1/6
     gauge_contrib_sym = Rational(11, 3) * N_pair
     matter_contrib_sym = -Rational(1, 3) * (N_color + 1) * N_gen
-    higgs_contrib_sym = -Rational(1, 6)
+    higgs_contrib_sym = (
+        k_complex_scalar_multiplet * T_F_scalar * n_H_complex_doublets
+    )
 
     gauge_at_fw = simplify(gauge_contrib_sym.subs(framework))
     matter_at_fw = simplify(matter_contrib_sym.subs(framework))
@@ -256,7 +257,7 @@ def main() -> int:
     check(
         "(P3) 1-Higgs-doublet scalar contribution is -1/6",
         higgs_at_fw == -Rational(1, 6),
-        detail=f"- (1/6) * (1/2) * 2 = {higgs_at_fw}",
+        detail=f"- (1/3) * (1/2) * 1 = {higgs_at_fw}",
     )
 
     # Sum of three contributions equals 19/6.
@@ -370,7 +371,7 @@ def main() -> int:
     # (no symbols) and confirm the final value.
     gauge_num = Rational(11, 3) * 2  # = 22/3
     matter_num = -Rational(1, 3) * (3 + 1) * 3  # = -4
-    higgs_num = -Rational(1, 6)
+    higgs_num = -Rational(1, 3) * Rational(1, 2) * 1
     total_num = gauge_num + matter_num + higgs_num
 
     check(

@@ -6,12 +6,13 @@
 hypercharge assignment `(Y_QL, Y_LL) = (a, b)` with `a : b = 1 : (-n_color)`
 fixed by tracelessness on the LH `2 n_color + 2` state count, the four
 right-handed singlet hypercharges `(Y_uR, Y_dR, Y_eR, Y_nuR)` have the
-closed-form neutral-branch completion
+condition-supplied shift completion
 `(a+1, a-1, b-1, b+1)`, hence `(1/n_color + 1, 1/n_color - 1, -2, 0)` under
 `b = -1`, and this completion satisfies the standard anomaly-cancellation
-equations. The charged/neutral lepton singlet relabelling remains a branch
-convention, not a derived selector. This is purely a statement about checking
-a fixed algebraic completion in four real unknowns; no axiom, no
+equations. The four symbols are historical algebraic slot names; this theorem
+does not identify particles or select a physical charged/neutral assignment.
+This is purely a statement about checking a fixed algebraic completion in four
+real unknowns; no axiom, no
 graph-first selector, no anomaly-forces-time bridge, no staggered-Dirac
 realization, no PDG comparator, and no SM electroweak-symmetry-breaking
 input enters.
@@ -37,13 +38,17 @@ lepton hypercharges as
 `Y_QL = a`, `Y_LL = b = -n_color a` (the trace-equation forcing from the
 sister narrow theorem
 `LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`),
-with the labelling convention `b = -1` so `a = 1/n_color`.
+and separately supply the local normalization convention `b = -1`, so the
+projective relation gives `a = 1/n_color`. The sister theorem supplies the
+ratio relation; it does not supply this normalization.
 
 Consider four right-handed SU(2)_L-singlet hypercharges
-`(Y_uR, Y_dR, Y_eR, Y_nuR)`. Impose:
+`(Y_uR, Y_dR, Y_eR, Y_nuR)`. These symbols are kept as historical
+implementation aliases for four supplied algebraic slots. They do not assert
+a physical species map. Impose:
 
-**(SHIFT) Standard singlet charge-readout / Y-shift relation** on the up-,
-down-, charged-lepton, and neutral-lepton sectors, with
+**(SHIFT) Supplied singlet charge-readout / Y-shift relation** on the four
+labelled algebraic slots, with
 `Q(u) = a/2 + 1/2`, `Q(d) = a/2 - 1/2`, `Q(e) = b/2 - 1/2 = -1` under
 `b = -1`, and `Q(nu) = b/2 + 1/2 = 0` under `b = -1`:
 
@@ -93,24 +98,22 @@ fermions)**:
         -  n_color Y_uR^3  -  n_color Y_dR^3  -  Y_eR^3  -  Y_nuR^3  =  0.
 ```
 
-**(NEUTRAL_BRANCH) Branch-selection convention** (named, not derived in this row):
-the neutral-singlet branch keeps `Y_nuR = b + 1`, so `Y_nuR = 0` under the
-`b = -1` convention. The `e_R <-> nu_R` relabelling swaps the two lepton
-singlet values and is a discrete symmetry that `(COLOR_ANOM)`-`(CUBIC_ANOM)`
-admit.
+**Permutation boundary.** Exchanging the two lepton-slot values leaves
+`(COLOR_ANOM)`-`(CUBIC_ANOM)` unchanged. The anomaly equations therefore do
+not select which slot receives which physical lepton name.
 
-**Conclusion.** Under `(SHIFT)`-`(NEUTRAL_BRANCH)`, the four right-handed hypercharges are
+**Conclusion.** Under `(SHIFT)`, the four slot values are
 forced to the closed forms
 
 ```text
 (R1)  Y_uR    =  a + 1   =  (n_color + 1) / n_color,
 (R2)  Y_dR    =  a - 1   =  (1 - n_color) / n_color,
 (R3)  Y_eR    =  b - 1   =  -2     under  b = -1,
-(R4)  Y_nuR   =  b + 1   =  0      under  b = -1, by branch convention
-      (NEUTRAL_BRANCH).
+(R4)  Y_nuR   =  b + 1   =  0      under  b = -1.
 ```
 
-The framework instance `n_color = 3` gives the rational closed-form readout
+As regression support only, separately setting `n_color = 3` gives the
+rational readout
 
 ```text
 Y_uR   =  4/3,
@@ -119,17 +122,16 @@ Y_eR   =  -2,
 Y_nuR  =  0.
 ```
 
-In the `Q = T_3 + Y/2` convention used by
-`ONE_GENERATION_MATTER_CLOSURE_NOTE.md`,
-`u_R : (1,3)_{+4/3}`, `d_R : (1,3)_{-2/3}`, `e_R : (1,1)_{-2}`, `nu_R : (1,1)_0`),
-the values match the broad note's right-handed Y assignment at `n_color = 3`.
+These numbers match the broad note's four literals in its separately supplied
+`Q = T_3 + Y/2` convention. That comparison is not a theorem corollary and
+does not identify the algebraic slots with physical species.
 
 ## Proof
 
 `(R1)`, `(R2)`, `(R3)` follow directly from `(SHIFT)` by substitution.
 
-For `(R4)`, the neutral-singlet branch in `(SHIFT.nu)` gives
-`Y_nuR = b + 1`, so the convention `b = -1` gives `Y_nuR = 0`.
+For `(R4)`, `(SHIFT.nu)` gives `Y_nuR = b + 1`, so the supplied convention
+`b = -1` gives `Y_nuR = 0`.
 
 The anomaly checks are then direct:
 
@@ -154,36 +156,33 @@ the two lepton singlet values is anomaly-consistent. ∎
         Y_uR + Y_dR + Y_eR + Y_nuR  =  2 a + 2 b
                                      =  2 / n_color - 2   under b = -1.
 (C3)  Cubic identity (CUBIC_ANOM) closes at the forced values for any n_color.
-(C4)  At n_color = 3, the broad-note hypercharge readouts agree:
-        Y_uR  =  4/3,
-        Y_dR  =  -2/3,
-        Y_eR  =  -2,
-        Y_nuR =  0.
 ```
+
+Regression-support specialization, not a theorem corollary: if a separate
+source supplies `n_color = 3`, the four slot values are
+`(4/3, -2/3, -2, 0)`. The finite comparison to the broad note tests the
+implementation but supplies no authority for `n_color = 3` or particle names.
 
 ## What this claims
 
 - The closed-form right-handed hypercharges `(R1)`-`(R4)` under
-  `(SHIFT)`-`(NEUTRAL_BRANCH)`.
-- The four corollary identities `(C1)`-`(C4)`.
+  `(SHIFT)`.
+- The three corollary identities `(C1)`-`(C3)`.
 
-All conclusions follow from applying the `(SHIFT)` completion, naming the
-discrete branch selection `(NEUTRAL_BRANCH)`, and checking
-`(COLOR_ANOM)`-`(CUBIC_ANOM)` exactly.
+All conclusions follow from applying the supplied `(SHIFT)` completion and
+checking `(COLOR_ANOM)`-`(CUBIC_ANOM)` exactly.
 
 ## What this does NOT claim
 
-- Does **not** derive the branch convention `Y_nuR = 0` (vs the relabelled
-  `Y_eR = 0` branch). The anomaly equations `(COLOR_ANOM)`-`(CUBIC_ANOM)` admit the
-  `e_R <-> nu_R` relabelling as a discrete symmetry; choosing one branch is
-  a labelling convention matching the conventional SM right-handed neutrino
-  assignment, not a derivation from framework primitives in this
-  row.
+- Does **not** select a physical name for either lepton-singlet slot. The
+  anomaly equations admit exchange of the two values; the aliases in the
+  formulas and runner are historical algebraic labels only.
 - Does **not** derive the LH trace equation `b = -n_color a`. That comes
   from the sister narrow theorem
   `LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`.
 - Does **not** derive the labelling convention `b = -1` (the LH lepton
-  doublet hypercharge scale). That comes from the same sister theorem.
+  doublet hypercharge scale). It is an explicit local condition of this
+  bounded completion.
 - Does **not** derive `n_color = 3`. The argument is parametric in any
   positive integer `n_color`; the framework-specific value is separate.
 - Does **not** identify the four right-handed singlets with SM particles.
@@ -206,30 +205,31 @@ bundles the anomaly-algebra above with several distinct downstream items:
    `ANOMALY_FORCES_TIME_THEOREM.md`.
 2. The LH charge surface from
    `LEFT_HANDED_CHARGE_MATCHING_NOTE.md`.
-3. The neutral-singlet branch convention `Y_nuR = 0`.
+3. The downstream physical naming of the two lepton-singlet slots.
 4. The pure anomaly-algebra closure of the right-handed singlets.
 
 This narrow theorem isolates item 4. The chirality assignment of the four
 right-handed singlets is taken as a hypothesis; the LH trace relation
-`b = -n_color a` and the convention `b = -1` are imported from the
-sister narrow LH-trace theorem; the branch convention `Y_nuR = 0` is named
-explicitly. The anomaly-algebra closure of the four right-handed Y values
-closes independently of items 1-3.
+`b = -n_color a` is imported from the sister narrow LH-trace theorem; the
+normalization `b = -1`, charge-shift relation, and singlet inventory are
+explicit local conditions. The anomaly-algebra closure of the
+four right-handed Y values is the conditional algebra checked here.
 
 ## Cited dependencies
 
 - [`LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`](LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md) -
-  sister narrow theorem supplying the LH-trace relation `b = -n_color a` and
-  the labelling convention `b = -1`.
+  sister narrow theorem supplying the projective LH-trace relation
+  `b = -n_color a` for a nonzero pair. It supplies no absolute normalization,
+  charge functional, singlet inventory, or species labels.
 
 ## Forbidden imports check
 
 - No PDG observed values consumed.
 - No literature numerical comparators consumed.
 - No fitted selectors consumed.
-- No admitted unit conventions load-bearing on the claim
-  (the `Q = T_3 + Y/2`, `b = -1`, and `Y_nuR = 0` choices are named as
-  conventions, not derivations).
+- The `Q = T_3 + Y/2`, `b = -1`, and four-slot `(SHIFT)` relation are explicit
+  non-chain-satisfying conditions of this bounded theorem, not framework
+  derivations.
 - No same-surface family arguments.
 - No staggered-Dirac realization input.
 - No anomaly-forces-time chirality input (chirality assignment is a hypothesis).
@@ -241,27 +241,27 @@ verifies via exact sympy `Rational` / `simplify` arithmetic:
 
 1. `(R1)`-`(R4)` parametric in `n_color` and `a, b` with `b = -n_color a`.
 2. `(COLOR_ANOM)` SU(3)_c anomaly: vanishes identically under the closed forms.
-3. `(GRAV_ANOM)` mixed gravitational anomaly: vanishes identically under the closed
-   forms with `Y_nuR = 0` branch.
+3. `(GRAV_ANOM)` mixed gravitational anomaly: vanishes identically under the
+   four supplied closed forms.
 4. `(CUBIC_ANOM)` cubic `[U(1)_Y]^3` anomaly: vanishes identically under the closed
    forms.
-5. Discrete `e_R <-> nu_R` relabelling produces an equally-anomaly-consistent
-   alternative branch with `Y_eR = 0, Y_nuR = -2`.
-6. Framework instance `n_color = 3` returns
+5. Exchanging the two lepton-slot values is equally anomaly-consistent,
+   confirming that anomaly algebra supplies no physical naming selector.
+6. Regression support at separately supplied `n_color = 3` returns
    `(Y_uR, Y_dR, Y_eR, Y_nuR) = (4/3, -2/3, -2, 0)`.
 7. Non-framework instance `n_color = 5` returns
    `(Y_uR, Y_dR, Y_eR, Y_nuR) = (6/5, -4/5, -2, 0)`.
-8. Hypercharge readouts at `n_color = 3` match the broad note literals
+8. The regression-support readout at `n_color = 3` matches the broad note literals
    `(Y_uR, Y_dR, Y_eR, Y_nuR) = (4/3, -2/3, -2, 0)`.
 
 ## Open derivation gap
 
-- Why the discrete `e_R <-> nu_R` branch selection (`Y_nuR = 0` vs
-  `Y_eR = 0`). Carried by the broad note as a named convention (audit-prep
-  2026-05-07 boundary disclosure); not closed here.
+- Why either lepton-singlet slot should receive a particular physical name.
+  The exchange symmetry proves that the anomaly equations do not close that
+  selector.
 - Why `n_color = 3`. Carried by the graph-first SU(3) lane.
-- The convention `b = -1`. Carried by the sister LH-trace narrow theorem
-  with the same boundary status.
+- The convention `b = -1`. It remains an explicit local normalization
+  condition rather than a conclusion inherited from the sister theorem.
 - The chirality assignment of the four right-handed singlets to single-clock
   `(3, 1)` Minkowski signature. Carried by
   `ANOMALY_FORCES_TIME_THEOREM.md`.
@@ -270,11 +270,11 @@ verifies via exact sympy `Rational` / `simplify` arithmetic:
 
 - `ONE_GENERATION_MATTER_CLOSURE_NOTE.md` -
   broad parent note carrying the full one-generation matter closure under
-  chirality + LH-charge + branch-convention inputs; this narrow theorem
+  chirality, LH-charge, and physical-naming inputs; this narrow theorem
   isolates the anomaly-algebra step.
 - `LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md` -
-  sister wave-2 narrow theorem supplying the LH trace relation and
-  the `b = -1` convention.
+  sister wave-2 narrow theorem supplying the projective LH trace relation;
+  the present note supplies its own normalization condition.
 - `STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md` -
   downstream broad note pinning the full one-generation electric charge set;
   this narrow theorem covers the right-handed-Y solving step parametric in

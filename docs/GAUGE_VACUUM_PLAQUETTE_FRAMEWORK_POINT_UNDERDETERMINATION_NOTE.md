@@ -10,15 +10,16 @@ status remain owned by the independent audit lane
 
 ## Question
 
-Can the exact order-`beta^5` onset coefficient, a compact positive interval,
-and a strictly increasing local one-plaquette block support an explicit pair
-of separated analytic witnesses at `beta = 6`?
+Can a fixed finite Taylor jet, a compact positive interval, and a strictly
+increasing local one-plaquette block support an explicit pair of separated
+analytic witnesses at `beta = 6`?
 
 ## Answer
 
-Yes. Two rational polynomials give a complete positive construction. They
-agree coefficient-by-coefficient through degree five, have derivatives bounded
-below by `1` throughout `[0,6]`, and differ at the right endpoint by the exact
+Yes. For any nonnegative rational degree-five coefficient `a`, two rational
+polynomials give a complete positive construction. They agree
+coefficient-by-coefficient through degree five, have derivatives bounded below
+by `1` throughout `[0,6]`, and differ at the right endpoint by the exact
 positive rational `729/156250 = 0.0046656`. Strict increase of the local
 one-plaquette block preserves that order under composition.
 
@@ -26,12 +27,14 @@ one-plaquette block preserves that order under composition.
 
 | Input | Exact value or statement | Authority and role |
 |---|---|---|
-| onset coefficient | `a = 1/26244 > 0` | [Gauge-vacuum plaquette mixed-cumulant audit](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md), Corollary 2; the runner imports its exact `Fraction` calculation |
+| common degree-five coefficient | arbitrary rational `a >= 0`; runner instance `a = 1/10^5` | rational construction parameter; no Wilson onset coefficient or mixed-cumulant authority is imported |
 | evaluation interval | `beta in [0,6]` | stipulated construction domain; no comparator value, physical framework-point identification, or full-Wilson realization is imported |
 | separation coefficient | `c = 1/10^7 > 0` | an explicit rational construction choice in this theorem; it is not fitted data or a physical input |
-| local composition block | `P_1plaq'(x) = Var_x(X) > 0` for the displayed positive arguments | [Gauge-vacuum plaquette reduction existence theorem](GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md), Theorem 1; the variance proof is restated below and the Bessel helper evaluates only the local block |
+| local composition block | `P_1plaq'(x) = Var_x(X) > 0` for the displayed positive arguments | [Finite-volume Wilson plaquette inverse-coordinate theorem](GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md), Theorem 1; only its local variance lemma is used, the proof is restated below, and the Bessel helper evaluates only the local block |
 
-These four rows are the complete input surface of this construction.
+These four rows are the complete input surface of this construction. The
+parameterized proof is independent of the value of any Wilson onset
+coefficient.
 
 ## Construction
 
@@ -55,9 +58,11 @@ Their first differing coefficient is at degree six, where
 
 At the right endpoint,
 
-`f_-(6) = 170/27 = 6.296296296296...`,
+for the runner's explicit instance `a = 1/10^5`,
 
-`f_+(6) = 26582183/4218750 = 6.300961896296...`,
+`f_-(6) = 18993/3125 = 6.07776`,
+
+`f_+(6) = 950379/156250 = 6.0824256`,
 
 and therefore
 
@@ -79,9 +84,9 @@ nonnegative. Thus the exact analytic lower bounds are
 Both derivatives are therefore strictly positive throughout the full
 interval. For an endpoint cross-check,
 
-`f_-'(6) = 101/81`,
+`f_-'(6) = 1331/1250`,
 
-`f_+'(6) = 15840299/12656250`.
+`f_+'(6) = 83552/78125`.
 
 The derivative certificate is coefficient-based and exact; sampled values
 are not used to prove interval positivity.
@@ -110,9 +115,9 @@ strict increase gives
 
 The runner's independently formulated Bessel and Weyl evaluations give
 
-`P_1plaq(f_-(6)) = 0.441402699435447...`,
+`P_1plaq(f_-(6)) = 0.427552773371913...`,
 
-`P_1plaq(f_+(6)) = 0.441694136647056...`.
+`P_1plaq(f_+(6)) = 0.427852498360518...`.
 
 These are local one-plaquette block values at the constructed arguments.
 
@@ -122,12 +127,12 @@ The theorem output is the explicit ordered pair
 
 `(f_-, f_+)`
 
-on the finite order-`beta^5` jet plus interval-monotonicity surface, together
+on the finite degree-five jet plus interval-monotonicity surface, together
 with the exact endpoint separation and the strictly ordered local-block
 compositions above.
 
 Connected-hierarchy compatibility, compact spectral-measure compatibility,
-finite Wilson reduction-law realizability, and the physical full-surface
+finite Wilson inverse-coordinate realizability, and the physical full-surface
 symbol `P(6)` belong to their own source packages. They are not inputs or
 outputs of this finite polynomial construction, and the functions here are
 not registered as realizations of those structures.

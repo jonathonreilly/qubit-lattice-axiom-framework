@@ -194,8 +194,9 @@ formal-Taylor truncation argument near `t = 0` alone.
   parent obstruction note -> this lemma note, not the reverse.
 - [`GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md)
   for adjacent gauge-vacuum-plaquette analytic context (compact-Laplace
-  concentration on the maximum-action gauge orbit appears in that
-  retained authority on a sister surface).
+  concentration and the finite-volume endpoint are proved directly there).
+  This citation consumes only that finite Wilson endpoint theorem, not the
+  inverse-coordinate identity or any physical reduction interpretation.
 - `MINIMAL_AXIOMS_2026-05-03.md`
   for the framework baseline of physical `Cl(3)` local algebra and
   the `Z^3` spatial substrate. This bounded note does not invoke that

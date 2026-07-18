@@ -105,10 +105,10 @@ confirms the affine derivative relation is single-valued and real.
   measure whose Laplace transform generates the finite connected
   plaquette hierarchy.
 - [`GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md)
-  for the retained exact finite-volume theorem that the one-plaquette
-  inverse defines a unique implicit `beta_eff,L(beta)` on every finite
-  periodic SU(3) Wilson `L^4` evaluation surface with analytic, strictly
-  increasing behavior.
+  for the finite-volume source theorem that, for `L >= 2`, the
+  one-plaquette inverse defines a unique analytic, strictly increasing
+  coordinate `beta_eff,L(beta)`. The resulting plaquette equality is true by
+  definition and is not used here as a physical reduction law.
 These are imported authorities for a bounded theorem. The row remains
 unaudited until the independent audit lane reviews this note, its
 dependencies, and the runner.

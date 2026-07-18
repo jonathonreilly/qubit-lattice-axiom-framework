@@ -185,11 +185,12 @@ explicitly queued as out-of-scope follow-up.
 
 ## Why this matters for the famous-problem attack
 
-The framework's existing reduction theorem
-`GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md`
-expresses `⟨P⟩(β=6, L→∞)` via the boundary character measure
-`ρ_{(p,q)}(6)` of the 3D unmarked spatial Wilson environment with
-marked-plaquette boundary. The framework's `Theorem 3` no-go
+The finite-volume inverse-coordinate theorem
+`GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md` does not express
+`⟨P⟩(β=6, L→∞)` or derive a boundary character measure. It only proves the
+finite-`L` analytic/monotone premises under which `P_1plaq^(-1) o P_L` is a
+defined coordinate once `P_L` is already known. Separately, the framework's
+`Theorem 3` no-go
 `GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md`
 proves that `c_R(6)` and SU(3) intertwiners alone cannot fix
 `ρ_{(p,q)}(6)`; the residual is genuinely 3D-geometric.

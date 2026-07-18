@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_framework_point_underdetermination.py
-runner_sha256: 9f2a6d4cbe14c8715b8a6fbe36e896dac7bc63978dc786ea0ff1c4e51cb9dc06
+runner_sha256: edef48f4547f57fcde2a8e871ef43ed4dbaf75d0750ebde33f87579c21360d19
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -11,7 +11,7 @@ GAUGE-VACUUM PLAQUETTE FINITE-JET WITNESS SEPARATION
 ==============================================================================
 
 Typed exact inputs
-  a (mixed-cumulant Fraction helper)   = 1/26244
+  a (rational construction choice)    = 1/100000
   interval                             = [0, 6]
   c (rational construction choice)    = 1/10000000
   local monotonicity authority         = docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md
@@ -25,24 +25,24 @@ Rational-polynomial construction
 Exact interval and endpoint certificate
   derivative lower bound for f_-      = 1
   derivative lower bound for f_+      = 1
-  f_-(6)                               = 170/27 = 6.296296296296297
-  f_+(6)                               = 26582183/4218750 = 6.300961896296296
+  f_-(6)                               = 18993/3125 = 6.077760000000000
+  f_+(6)                               = 950379/156250 = 6.082425600000000
   exact separation                    = 729/156250 = 0.004665600000000
   floating-evaluation separation      = 0.004665600000000
-  f_-'(6)                              = 101/81
-  f_+'(6)                              = 15840299/12656250
+  f_-'(6)                              = 1331/1250
+  f_+'(6)                              = 83552/78125
 
 Separate local one-plaquette composition
   exact theorem                        = P_1plaq'(x) = Var_x(X) > 0
   authority needles verified          = True
-  P_1plaq(f_-(6)) Bessel              = 0.441402699435447 (mode cutoff m=8)
-  P_1plaq(f_-(6)) Weyl                = 0.441402699435449
-  P_1plaq(f_+(6)) Bessel              = 0.441694136647056 (mode cutoff m=8)
-  P_1plaq(f_+(6)) Weyl                = 0.441694136647059
-  local-block separation              = 0.000291437211609
+  P_1plaq(f_-(6)) Bessel              = 0.427552773371913 (mode cutoff m=8)
+  P_1plaq(f_-(6)) Weyl                = 0.427552773371917
+  P_1plaq(f_+(6)) Bessel              = 0.427852498360518 (mode cutoff m=8)
+  P_1plaq(f_+(6)) Weyl                = 0.427852498360523
+  local-block separation              = 0.000299724988606
 
-  [PASS] [THEOREM] typed inputs are the exact positive rationals and interval endpoint declared by the theorem
-         a=1/26244, c=1/10000000, interval=[0,6]
+  [PASS] [THEOREM] typed construction inputs are exact positive rationals on the declared interval
+         a=1/100000, c=1/10000000, interval=[0,6]
   [PASS] [THEOREM] both witnesses are entire real functions represented as exact rational polynomials
          degrees=(5,6)
   [PASS] [THEOREM] exact coefficient calculation gives a common Taylor jet through degree five and first difference at degree six
@@ -54,11 +54,11 @@ Separate local one-plaquette composition
   [PASS] [THEOREM] exact Fraction evaluation gives the required positive beta=6 separation
          delta=729/156250=0.0046656 exactly
   [PASS] [THEOREM] strict increase of the sourced local one-plaquette block preserves the exact input order
-         0 < 170/27 < 26582183/4218750; P_1plaq'(x)=Var_x(X)>0 on the displayed positive arguments
+         0 < 18993/3125 < 950379/156250; P_1plaq'(x)=Var_x(X)>0 on the displayed positive arguments
   [PASS] [SUPPORT] direct floating polynomial evaluation agrees with the exact endpoint separation
          float delta=0.004665600000000, exact delta=0.004665600000000
   [PASS] [SUPPORT] Bessel and Weyl local-block evaluations agree and retain strict output order
-         Bessel-Weyl deltas=(2.442e-15,2.998e-15); output delta=0.000291437211609
+         Bessel-Weyl deltas=(4.163e-15,4.496e-15); output delta=0.000299724988606
   [PASS] [CONTROL] degree-five perturbation is rejected by the common-jet validator
          mutated difference={5: Fraction(1, 10000000)}
   [PASS] [CONTROL] c=0 mutation is rejected by the exact separation validator
@@ -66,7 +66,7 @@ Separate local one-plaquette composition
   [PASS] [CONTROL] negative-linear-sign mutation is rejected by the interval derivative validator
          mutated exact lower bound=-1
   [PASS] [CONTROL] swapped local plaquette values are rejected by the strict-output-order validator
-         mutated output delta=-0.000291437211609
+         mutated output delta=-0.000299724988606
   [PASS] [CONTROL] missing composition factor is rejected by the exact input-order validator
          mutated composition factor=0
 

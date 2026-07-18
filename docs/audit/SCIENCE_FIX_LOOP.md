@@ -5,7 +5,7 @@
 ## What this is
 
 `scripts/science_fix_loop.py` reads `docs/audit/MISSING_DERIVATION_PROMPTS.md`
-and, for each row that hasn't been attempted yet, drives Codex GPT-5.5
+and, for each row that hasn't been attempted yet, drives the configured Codex model (default gpt-5.6-sol)
 (at xhigh reasoning) to attempt closing the chain and opens a PR for
 human review and re-audit.
 
@@ -17,12 +17,13 @@ the independent audit lane verifies correctness after merge.
 ## Mechanics
 
 Candidate order (2026-07-18): within each difficulty bucket
-(easy → medium → hard → unknown), publication-lane rows first (admitted set
-from the tracked `docs/audit/data/publication_lane_manifest.json` — fix
-effort chips at the publication gap, the same retarget philosophy as the
-audit lane), then mechanical categories before bridge science
-(renaming → numerical_match → runner_artifact → scope → open_gate →
-failed → missing_bridge_theorem), then descendants descending.
+(easy → medium → hard → unknown), mechanical categories before bridge
+science (renaming → numerical_match → runner_artifact → scope →
+open_gate → failed → missing_bridge_theorem), then descendants
+descending. Publication-lane prioritization is deliberately absent: the
+lane manifest is a shadow-only authority until the owner's cutover
+ratification (dispatch-retarget design note, Ratification Log); the lane
+term returns to the sort key only after that ratification.
 
 For each prompt the loop:
 
@@ -50,7 +51,7 @@ For each prompt the loop:
   "attempts": {
     "<claim_id>": {
       "attempted_at": "2026-05-06T...",
-      "outcome": "in_progress" | "stale_in_progress" | "pr_opened" | "no_edits" | "timeout" | "codex_failed" | "push_failed" | "pr_failed" | "error",
+      "outcome": "in_progress" | "stale_in_progress" | "pr_opened" | "no_edits" | "timeout" | "codex_failed" | "push_failed" | "pr_failed" | "skipped_open_pr_exists" | "error",
       "worker_id": "pid12345-abcd1234",
       "elapsed_sec": 248.3,
       "category": "renaming",
@@ -79,7 +80,7 @@ throughput ~20x).
 ## Commands
 
 ```bash
-# Try the next 5 prompts (sorted by leverage within category)
+# Try the next 5 prompts (difficulty bucket, then mechanical categories, then descendants)
 python3 scripts/science_fix_loop.py --n 5
 
 # Dry-run: show targets without invoking codex
@@ -138,6 +139,7 @@ python3 scripts/science_fix_loop.py --n 5 --codex-timeout-sec 600
 | `in_progress` | A worker has reserved the row and may still be editing | Leave it alone unless the worker is known dead |
 | `stale_in_progress` | An explicit stale-reclaim run demoted an old reservation | Retry with `--retry-failed` after confirming no older worker is alive |
 | `pr_opened` | Codex made edits, PR exists | Run review-loop on the PR; land or close |
+| `skipped_open_pr_exists` | Another workspace already has an open PR for this claim | Nothing — review-loop drains that PR; retry only if it closes unlanded |
 | `no_edits` | Codex punted — couldn't see how to close | This row is hard; either revise the note manually or accept the verdict |
 | `timeout` | Codex didn't finish in budget | Try `--retry-failed` with longer `--codex-timeout-sec`, or skip |
 | `codex_failed` | Codex crashed / returncode != 0 | Read the stderr in the state file; usually transient |

@@ -1,7 +1,7 @@
 # Probe Z-Quark-QCD-Chain — Heavy-Quark Mass via Λ_QCD-Anchored α_s Chain: Bounded-Tier Source Note (NEGATIVE)
 
 **Date:** 2026-05-10
-**Claim type:** bounded_theorem (negative; QCD-anchored chain route foreclosed for heavy quarks)
+**Claim type:** bounded_theorem (negative scan at the explicitly declared gates)
 **Sub-gate:** Lane 1 parallel QCD-confinement chain test
 **Status authority:** independent audit lane only; effective status is
 pipeline-derived.
@@ -46,7 +46,7 @@ bounded source stack per
 `C` is drawn from the explicit structural-candidate prefactor list below,
 and `n_q` is an integer or simple rational within the tested ansatz.
 
-## 1. Bounded no-go claim (QCD-chain route foreclosed for heavy quarks)
+## 1. Bounded negative claim at the declared gates
 
 **Bounded no-go claim (Z-Quark-QCD-Chain).** On the repo baseline of the
 `physical Cl(3) local algebra` and `Z^3 spatial substrate`, with cited
@@ -55,10 +55,9 @@ bounded/source-stack Wilson and QCD inputs `(M_Pl, ⟨P⟩, α_bare, u_0,
 only as observational targets for falsifying the ansatz, the heavy-quark
 mass triplet `(m_t, m_b, m_c)` is NOT simultaneously represented as
 `m_q = Λ_QCD × C × α_s(M_Z)^{n_q}` with a single structural prefactor
-`C ∈ {1, 2, 3, 4, 4/3, 3/4, 7/8, 2/3, π, e^γ, √2, √3, √6, 1/√2, 1/√3,
-(7/8)^{1/4}, u_0, α_bare, α_LM, ...}` from the candidate list below
+`C` drawn from exactly the 30-element candidate table in §3
 and integer `n_q` to the 5% mass precision gate, NOR with simple-
-rational `n_q` (denominator ≤ 6) to the **1% structurally-significant
+rational `n_q` (denominator in `{1, 2, 3, 4, 6}`) to the **1% structurally-significant
 mass gate** (where density-of-rationals random density drops to ~8%).
 
 Specifically:
@@ -77,13 +76,13 @@ Specifically:
    Each best-fit `C` is **different** for each quark; no single
    candidate structural `C` works for all three.
 
-2. **(τ-scale near-coincidence is structurally circular.)** With `C = 1`,
+2. **(τ-scale near-coincidence is non-independent under the cited convention.)** With `C = 1`,
    `n_q = −1`, `Λ_QCD = 210 MeV`, `α_s(M_Z) = 0.1181`, one obtains
    `m_τ^pred = Λ_QCD/α_s(M_Z) = 1.7782 GeV` vs PDG `m_τ = 1.77686 GeV`
    at **0.073% precision**. This near-coincidence is *not* an
    independent positive result, because `Λ_QCD = 210 MeV` is itself
-   *derived* from `α_s(M_Z) = 0.1181` via 2-loop QCD running per
-   [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md):
+   *derived* from the supplied `α_s(M_Z) = 0.1181` context via 2-loop QCD
+   inversion in [`CONFINEMENT_STRING_TENSION_NOTE.md`](CONFINEMENT_STRING_TENSION_NOTE.md):
    ```
    Λ_MS̄^(5) = M_Z · exp(−1/(2·β_0·α_s(M_Z))) · (corrections)
    ```
@@ -91,29 +90,30 @@ Specifically:
    two independent source-stack inputs. The near-equality
    `m_τ ≈ Λ_QCD/α_s(M_Z)` therefore tests a *one-parameter* relation
    already encoded in standard QCD infrastructure, not a two-parameter
-   structural identity.
+   structural identity. The QCD low-energy bridge supplies only the
+   `v -> M_Z` transfer map for a separately supplied boundary; it does not
+   derive `Lambda_QCD` or certify the rounded `0.1181` target value.
 
-3. **(Structural-C single-quark hits fail density-of-rationals control
-   at the 1% gate.)** The single-quark near-hits in §1.1 sit at:
+3. **(Single-quark hits do not supply a common-prefactor triplet closure.)**
+   The single-quark near-hits in §1.1 sit at:
    - m_t at 1.57% (above 1% gate — borderline coincidence zone)
    - m_b at 4.20% (well above 1% gate)
-   - m_c at 1.00% (at the 1% gate)
+   - m_c at 0.9965% (just inside the 1% gate; displayed as 1.00%)
 
    At the 5% mass gate, ~37% of random reals `n` in `[−5, 5]` admit
-   *some* `p/q` with `q ≤ 6` matching at the 5% threshold (see §5
+   *some* `p/q` with denominator in `{1, 2, 3, 4, 6}` matching at the 5% threshold (see §5
    density-of-rationals control). At the 1% gate the random hit rate
-   drops to ~8%. None of the three heavy-quark single-quark hits in
-   §1.1 are below the 1% gate; the m_t hit at 1.57% with `C = C_F = 4/3`
-   is the structurally most plausible (color Casimir is QCD-natural)
-   but still falls outside the 1% structural-significance gate.
+   drops to ~8%. The m_t and m_b individual hits are outside the 1% gate;
+   m_c alone is just inside it. These use different prefactors and therefore
+   do not alter the tested single-prefactor triplet result.
 
-4. **(Light-quark sector also fails.)** With `C = 1`, `α_s(M_Z) = 0.1181`,
+4. **(The `C = 1` light-quark route also fails.)** With `C = 1`, `α_s(M_Z) = 0.1181`,
    integer `n_q`:
    - m_s at `n_q = 0` → 124.84% mass error
    - m_u at `n_q = 2` → 35.60% mass error
    - m_d at `n_q = 2` → 37.28% mass error
-   No simple structural prefactor closes any light quark at 5% mass
-   precision either.
+   None of the three closes for `C = 1` at 5% mass precision. Other
+   prefactors are not excluded by this light-quark check.
 
 5. **(EW-chain ratio comparator m_b/m_c ≈ α_LM^{−1/2} at 0.9%
    does NOT extend to QCD-chain ratios.)** With `α_s(M_Z) = 0.1181`:
@@ -129,19 +129,21 @@ Specifically:
 - **Single-`C` integer-`n_q` QCD chain: foreclosed for heavy-quark
   triplet at the 5% precision tier.** No candidate structural `C` admits
   `(m_t, m_b, m_c)` simultaneously at integer `n_q` to 5% mass error.
-- **Single-`C` simple-rational-`n_q` QCD chain (q ≤ 6): foreclosed for
+- **Single-`C` simple-rational-`n_q` QCD chain (denominator in `{1, 2, 3, 4, 6}`): foreclosed for
   heavy-quark triplet at the 1% structurally-significant precision
   tier.** Per-quark hits with three different `C` values exist (m_t at
   1.57% with `C_F`, m_c at 1.00% with `1/√2`, m_b at 4.20% with `√6`),
   and a single `C = √2` admits all three within the 5% gate (m_t −3,
-  m_b −5/4, m_c −2/3 → 2.6%–4.4%) — but this 5% q ≤ 6 closure falls
-  inside the density-of-rationals random band (37% at q ≤ 6 / 5%) and
+  m_b −5/4, m_c −2/3 → 2.6%–4.4%) — but this 5% closure over the
+  tested denominator set falls
+  inside the density-of-rationals random band (37% for the tested denominator set / 5%) and
   therefore carries no structural information. At the 1% structurally-
-  significant gate (random density ~8% at q ≤ 6), no single candidate
+  significant gate (random density ~8% for the tested denominator set), no single candidate
   structural `C` admits all three.
-- **The m_τ ≈ Λ_QCD/α_s(M_Z) near-coincidence at 0.073% is structurally
-  circular** because `Λ_QCD` is itself derived from `α_s(M_Z)` via
-  2-loop running. No new structural information.
+- **The m_τ ≈ Λ_QCD/α_s(M_Z) near-coincidence at 0.073% is not independent
+  under the cited convention** because that convention obtains `Λ_QCD` by
+  inverting the same supplied `α_s(M_Z)` context. No new structural
+  information follows.
 - **The m_b/m_c ≈ α_LM^{−1/2} ratio comparator (0.9%) does
   NOT extend to the QCD chain** (Δn(m_b/m_c) is 0.058 from −1/2 with
   α_s(M_Z), much less clean than 0.0037 with α_LM).
@@ -161,8 +163,8 @@ Specifically:
 
   Recorded as a **post-hoc empirical observation**, not promoted.
 
-- **m_c at `(C, n_q) = (1/√2, −1)` closes to 1.00%** at the 1% gate
-  exactly. `1/√2` is not a standard QCD constant (no obvious color
+- **m_c at `(C, n_q) = (1/√2, −1)` has 0.9965% relative error, just
+  inside the 1% gate.** `1/√2` is not a standard QCD constant (no obvious color
   factor, generation index, or Casimir gives `1/√2` directly).
   Recorded as a possible numerical coincidence, not promoted.
 
@@ -181,37 +183,33 @@ Specifically:
 
 ### What this changes (positively)
 
-Closing the QCD-chain route narrows the strategic option space:
+The bounded scan narrows the tested option space:
 
 > "The EW Wilson chain hits only τ. Maybe quarks couple to a parallel
 > QCD chain anchored at Λ_QCD with α_s instead of α_LM."
 > — Probe Z design rationale
 
-After this probe, the parallel QCD-chain hypothesis is **closed within
-the tested ansatz** at the 5% gate for the heavy-quark triplet under any
-single candidate structural prefactor. The structural option for "single
-QCD-anchored chain, single prefactor, integer/simple-rational exponents"
-is exhausted for the QCD anchor.
+The parallel QCD-chain hypothesis fails for a single candidate prefactor with
+integer exponents at the 5% gate, and with rational exponents whose denominator
+is in `{1, 2, 3, 4, 6}` at the 1% gate. It is not closed for rational exponents at 5%:
+`C = sqrt(2)` supplies an explicit common-prefactor fit there, but that fit
+lies inside the measured density-of-rationals band and is not promoted.
 
 The strategic implication is sharpened:
 
-1. **Heavy-quark masses do not lie on the tested QCD-anchored
-   coupling-chain at any integer or simple-rational exponent** with any
-   tested candidate structural prefactor at the 5% gate.
-2. **Generation-dependent structure is required.** If a chain works at
-   all, it must use generation-dependent (or quark-specific)
-   prefactors `C_q`, not a universal `C`. Such generation-dependent
-   structure is itself an open question — the framework does not
-   currently have a derivation of `C_t = 4/3`, `C_b = √6`, `C_c = 1/√2`
-   from the current source stack (and these specific values may themselves be
-   numerical accidents rather than derivations).
-3. **The Wilson-chain and QCD-chain inputs are not fully independent**
-   in this source stack because
-   `Λ_QCD = 210 MeV` is derived from `α_s(M_Z) = 0.1181` which is
-   itself derived (bounded) from `α_s(v) = α_bare/u_0² = 0.1033` via
-   the registered low-energy running bridge. The "parallel" chain is
-   not actually independent of the EW chain — both go through the
-   same `(α_bare, ⟨P⟩, u_0)` source-stack content.
+1. **The tested integer route fails at 5%, and the tested rational route
+   fails at 1%.** Those are the only negative gates established here.
+2. **Generation-dependent prefactors remain one possible extension, not a
+   necessity inferred by this scan.** The per-quark values
+   `C_t = 4/3`, `C_b = √6`, `C_c = 1/√2` are post-hoc observations, while
+   the common `C = √2` rational 5% fit shows why the broader necessity claim
+   would be false.
+3. **The two QCD-chain numerical inputs are not independent under the cited
+   convention.** The confinement note obtains `Λ_QCD = 210 MeV` by inverting
+   the supplied rounded `α_s(M_Z) = 0.1181` context. The QCD low-energy bridge
+   does not derive that coupling and supplies no authority connecting it to
+   `(α_bare, ⟨P⟩, u_0)`; this probe therefore makes no shared-EW-authority
+   claim.
 
 ## 3. Setup
 
@@ -228,7 +226,7 @@ pipeline-derived; this note does not promote them.
 | `u_0` | `⟨P⟩^{1/4}` ≈ 0.87768 | Lepage-Mackenzie tadpole (source-stack value) |
 | `α_LM` | `α_bare/u_0` ≈ 0.090668 | Geometric-mean coupling (source-stack value) |
 | `α_s(v) ` | `α_bare/u_0²` ≈ 0.1033 | Vertex-power chain (bounded analytic insertion gap) |
-| `α_s(M_Z)` | 0.1181 | Low-energy running bridge from `α_s(v)` per [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) (bounded) |
+| `α_s(M_Z)` | 0.1181 | Supplied rounded downstream context used by this no-go scan; [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) supplies only the narrow transfer map, not this value or a target match |
 | `Λ_MS̄^(5)` | 210 MeV | 2-loop QCD running from `α_s(M_Z)` per [`CONFINEMENT_STRING_TENSION_NOTE.md`](CONFINEMENT_STRING_TENSION_NOTE.md) Step 4 (bounded) |
 | `Λ_MS̄^(4)` | 290 MeV | 2-loop QCD running with `m_b` threshold (bounded) |
 | `Λ_MS̄^(3)` | 332 MeV | 2-loop QCD running with `m_c` threshold (bounded) |
@@ -246,20 +244,19 @@ QCD-natural factors:
 
 | C | Origin |
 |---|---|
-| 1 | trivial |
+| 1, 2, 4 | trivial/small integers |
 | 4/3 | `C_F = (N_c²−1)/(2 N_c)` for `N_c = 3` (color Casimir, fundamental) |
 | 3 | `C_A = N_c` (color Casimir, adjoint) |
 | 1/2 | `T_F` (color matrix half) |
 | 8/9 | `(N_c²−1)/N_c²` (color factor) |
-| 2/3 | Koide Q candidate |
+| 2/3, 3/4 | small rational candidates |
 | 7/8 | APBC eigenvalue ratio |
 | `(7/8)^{1/4}` | Wilson prefix factor |
 | `u_0`, `1/u_0` | tadpole/inverse |
 | `α_bare`, `α_LM` | source-stack couplings |
-| 2, 3, 4 | small integers |
-| 1/2, 1/3, 1/4 | small reciprocals |
-| `√2, √3, √6, 1/√2, 1/√3` | Clebsch-Gordan / generation roots |
-| `π, π/2, 2π, 4π, 1/π` | trig-based |
+| 1/3, 1/4 | small reciprocals |
+| `√2, √3, √6, 1/√2, 1/√3, 1/√6` | root candidates |
+| `π, π/2, 2π, 4π, 1/π, 1/(4π)` | pi-based |
 | `e^γ` | Euler-Mascheroni |
 
 ### PDG comparators (falsification targets only)
@@ -307,7 +304,7 @@ m_s/m_u/m_d marginal/positive.
 | e | 5.110e-4 | +2.817 | 3 | 3.460e-4 | 32.31% |
 
 **Observation A.** Only m_τ closes at integer `n_q` with `C = 1`,
-to 0.073%. This near-coincidence is structurally circular (see §1.2):
+to 0.073%. This near-coincidence is non-independent under the cited convention (see §1.2):
 `Λ_QCD = 210 MeV` is *derived* from `α_s(M_Z) = 0.1181` via 2-loop
 running, so `Λ_QCD/α_s(M_Z) = 1.7782 GeV` is a one-parameter relation
 already encoded in standard QCD infrastructure, not a two-parameter
@@ -341,7 +338,7 @@ fundamental SU(3) color Casimir).
 at integer `n_q` to 5%.* Best-fits use three different `C` values, two
 of which (√6, 1/√2) are not standard QCD constants.
 
-### Step 3: Test simple-rational `n_q` (q ≤ 6) with candidate `C`
+### Step 3: Test simple-rational `n_q` (denominator in `{1, 2, 3, 4, 6}`) with candidate `C`
 
 Same protocol but allowing `n_q = p/q` with `q ∈ {2, 3, 4, 6}`. With
 the larger search space, per-quark fits with **different** rational
@@ -358,32 +355,32 @@ different denominators** (3, 4, 6). Crucially:
 
 1. **No single candidate structural `C` admits all three at 5%
    simultaneously** with integer `n_q` (Step 2 verdict).
-2. **A single `C = √2` does close all three at q ≤ 6 within the 5%
+2. **A single `C = √2` does close all three over the tested denominator set within the 5%
    gate** (m_t at −3 → 4.4%, m_b at −5/4 → 2.6%, m_c at −2/3 → 2.9%),
    but this falls within the **density-of-rationals random band**
-   (~37% of random reals admit some q ≤ 6 fit at 5% — see §5). At
-   the 1% gate (random density ~8% at q ≤ 6), `C = √2` does **not**
+   (~37% of random reals admit a fit over this set at 5% — see §5). At
+   the 1% gate (random density ~8% for this set), `C = √2` does **not**
    close any of the three.
 3. **No single candidate structural `C` admits all three at the 1% mass
-   gate** with q ≤ 6 rationals. The 1% gate is the structurally
+   gate** with the tested denominator set. The 1% gate is the structurally
    significant threshold (Probe 19 closes m_τ at 0.017%, well below 1%).
 
 **Result for Step 3:** the simple-rational-`n_q` route, like the
 integer-`n_q` route, fails at the 1% structurally-significant gate.
-The 5% q ≤ 6 closure with `C = √2` is a density-of-rationals
+The 5% tested-denominator closure with `C = √2` is a density-of-rationals
 coincidence within the 37% random band, not a structural identity.
 
 ### Step 4: Density-of-rationals control
 
 Monte Carlo over 10000 random reals `n` uniform in `[−5, 5]`:
 
-| Gate | Integer-only | q ≤ 6 | q ≤ 12 |
+| Gate | Integer-only | q in `{1,2,3,4,6}` | q ≤ 12 |
 |---|---|---|---|
 | 5% mass | ~5% | ~37% | ~92% |
 | 1% mass | ~1% | ~8% | ~30% |
 
 Random density at the 5% gate is ~5% for integers and ~37% for
-`q ≤ 6`. The single-quark hits in Step 2 (1.57%, 4.20%, 1.00%) are
+the tested denominator set. The single-quark hits in Step 2 (1.57%, 4.20%, 1.00%) are
 within the random-density 5% band but only m_c at 1.00% is at the 1%
 gate (where random density drops to ~8%). The m_t hit at 1.57% with
 C_F = 4/3 sits in the borderline zone — between the 1% gate (~8%
@@ -391,14 +388,12 @@ random density) and the 5% gate (~37% random density).
 
 ### Step 5: Sensitivity to bounded/source-stack inputs
 
-The probe verifies robustness to:
+For the integer-exponent 5% route only, the probe verifies robustness to:
 - `Λ_QCD` choice: `Λ^(5) = 210` vs `Λ^(4) = 290` vs `Λ^(3) = 332` vs
-  `Λ^(3)_framework = 389` MeV. Result (no single-`C` closure for all
-  three heavy quarks at 5%) is robust across these choices.
+  `Λ^(3)_framework = 389` MeV. Result (no single-`C` integer-exponent
+  closure for all three heavy quarks at 5%) is robust across these choices.
 - `α_s(M_Z)` choice: `0.1181` vs PDG world average `0.1180 ± 0.0009`.
-  Result robust to the ±0.0009 envelope.
-- `⟨P⟩` choice: `0.5934` vs MC value `0.5973 ± 0.0006`. Result robust
-  to the 0.7% finite-size effect.
+  The integer-exponent result is robust to the ±0.0009 envelope.
 
 ### Step 6: Cross-ratio test (m_b/m_c via α_s)
 
@@ -450,11 +445,11 @@ Same density-of-rationals methodology, but with `α_s(M_Z)` instead of
 
 Results (per Step 4 table). Random hit rate at 5% mass gate:
 - Integer-only: ~5%
-- q ≤ 6: ~37%
+- q in `{1,2,3,4,6}`: ~37%
 - q ≤ 12: ~92%
 
 The single-quark hits in §1.1 (m_t 1.57%, m_b 4.20%, m_c 1.00%) are
-all within the q ≤ 6 random-density band at 5% gate. Only m_c at
+all within the tested-denominator random-density band at 5% gate. Only m_c at
 1.00% is at the 1% gate; the m_t at 1.57% (with C_F) and m_b at 4.20%
 (with √6) are not.
 
@@ -489,7 +484,8 @@ This probe does not address:
   not load-bearing dependencies for this QCD-chain no-go.
 - Confinement and string tension authority:
   [`CONFINEMENT_STRING_TENSION_NOTE.md`](CONFINEMENT_STRING_TENSION_NOTE.md)
-- α_s(M_Z) bounded source note:
+- Adjacent alpha-s forward-computation note (context only; not authority for
+  the supplied rounded `0.1181` value):
   [`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md)
 - Low-energy running bridge:
   [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
@@ -499,13 +495,12 @@ This probe does not address:
 This probe does NOT claim:
 - A framework-native derivation of `Λ_QCD` (it is bounded standard QCD
   infrastructure derived from `α_s(M_Z)`).
-- A framework-native derivation of `α_s(M_Z)` independent of the
-  upstream plaquette analytic insertion gap (per
-  [`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md) bounded scope).
+- A framework-native derivation or target match for `α_s(M_Z)`; `0.1181` is
+  supplied rounded context here, and the QCD bridge supplies only a map.
 - That the m_t at C_F = 4/3, n = −3 hit (1.57%) is structurally
   derivable; it is recorded as a post-hoc observation only.
 - That the m_τ ≈ Λ_QCD/α_s(M_Z) near-coincidence at 0.073% is an
-  independent positive result; it is structurally circular per §1.2.
+  independent positive result; it is non-independent under the cited convention per §1.2.
 - Any change to the existing bounded/source-note scope of `Λ_QCD`,
   `α_s(M_Z)`, or any upstream authority.
 
@@ -514,15 +509,14 @@ This probe does NOT claim:
 This is a **source-note proposal**. Pipeline-derived status and
 downstream propagation are set only by the independent audit lane,
 not by this note. The result recorded here is **negative/bounded**:
-the parallel QCD-confinement chain `m_q = Λ_QCD × C × α_s^{n_q}` does
-NOT close the heavy-quark mass triplet `(m_t, m_b, m_c)` at the 5%
-mass precision gate under any single candidate structural
-prefactor `C`.
+the parallel QCD-confinement chain `m_q = Λ_QCD × C × α_s^{n_q}` has no
+single-prefactor integer closure for `(m_t, m_b, m_c)` at the 5% gate and no
+single-prefactor rational closure over denominators `{1, 2, 3, 4, 6}` at the 1% gate.
+The explicit common-`C=sqrt(2)` rational fit at 5% prevents a broader claim.
 
-The probe contributes one closure to the strategic option space:
-the parallel QCD-anchored chain is now known to fail within the tested
-single-chain ansatz. Broader statements comparing all EW and QCD routes
-should wait for the sibling EW-chain probes to land.
+The probe contributes only those two bounded negative observations. Broader
+claims about the rational 5% route or comparisons across all EW and QCD routes
+do not follow.
 
 ## 10. Constraints respected
 
@@ -535,7 +529,7 @@ should wait for the sibling EW-chain probes to land.
 - **No fitting of new constants.** All `C` candidates are predeclared
   structural candidates; none are introduced to tune this probe.
 - **No promotion.** The two near-hits (m_τ at 0.073%, m_t at 1.57%)
-  are recorded as observations, not promoted; the m_τ hit is
-  identified as structurally circular.
+  are recorded as observations, not promoted; the m_τ hit is identified as
+  non-independent under the cited input convention.
 
-PASS = 27, FAIL = 0 across all probe checks (see runner output cache).
+PASS = 25, FAIL = 0 across all probe checks (see runner output cache).

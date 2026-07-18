@@ -1,119 +1,94 @@
 #!/usr/bin/env python3
-"""QCD v -> M_Z running transfer-map kernel theorem (K1-K5).
+"""QCD v -> M_Z supplied-input transfer-map theorem.
 
-Status: bounded kernel theorem about the transfer map T defined by the
-        declared imports (continuum 2-loop SM MSbar RGE coefficients,
-        Machacek-Vaughn 1984 / Arason et al 1992; scale convention
-        v = 246.282818290129 GeV; PDG scales m_t, M_Z; fixed auxiliary
-        EW tuple).  The theorem is quantified over the whole admissible
-        domain D = [0.085, 0.130]; NO specific boundary value alpha_s(v)
-        appears anywhere in the load-bearing claim.  This responds to the
-        2026-05-25 numerical-match classification, whose load-bearing
-        step depended on one imported boundary value.
+The exact one-loop result is analytic on D = [0.085, 0.130].  The two-loop
+object is the explicitly defined piecewise QCD EFT map
 
-Verifies the claims of QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md:
+    d alpha_s / d ln(mu)
+      = -beta_0 alpha_s^2/(2 pi) - beta_1 alpha_s^3/(8 pi^2),
 
-  K1. Well-definedness: 1 - L*a > 0 on D with derived Landau margin
-      1/(L*a_max) = 6.55; T_1 and T_2 are finite and positive on D.
-  K2. Exact 1-loop closed form 1/T_1(a) = 1/a - L with
-      L = (7/2pi) ln(v/m_t) + ((23/3)/2pi) ln(m_t/M_Z) = 1.1746670551,
-      verified against an independent numerical integration.
-  K3. T_1 obeys the exact Jacobian identity dT_1/da = (T_1/a)^2 > 1 on D;
-      T_2 is grid-certified as strictly increasing and expansive
-      (J_2 = 1.328 at the domain center), with a center inverse round-trip.
-  K4. Auxiliary-tuple insensitivity: 5% variations of (g1, g2, yt, lambda)
-      shift T_2 by < 3.1e-6 (anti-tuning).
-  K5. Truncation envelope: T_2 - T_1 = +5.7e-4 at the domain center.
+with n_f=6 from v to m_t, n_f=5 from m_t to M_Z, and the supplied identity
+matching prescription alpha_s^(5)(m_t) := alpha_s^(6)(m_t).  No electroweak
+coupling or un-decoupled top Yukawa is evolved below the threshold.
 
-Group factors C_A = 3 and T_F = 1/2 are COMPUTED from the Gell-Mann
-generators (structure constants + trace normalization), so the 1-loop
-coefficient b0(n_f) = (11/3) C_A - (4/3) T_F n_f is derived inside this
-packet rather than asserted.
+Normal mode checks the group factors, coefficient/factor conventions, exact
+one-loop formula, the complete declared ten-point grid, two independent
+solve_ivp methods, and the implicit analytic two-loop solution on each
+constant-n_f segment.  ``--independent`` reconstructs the key values with a
+separate fixed-step RK4 implementation.  ``--hostile`` verifies that nine
+computed mutations are detected, including a counterexample to interpreting
+the one-loop-to-two-loop difference as a remainder bound.
 
-Every check is tagged [A] (algebraic identity on declared inputs),
-[B] (note/runner manifest sync), or [D] (external PDG comparator,
-appendix only, not load-bearing).  Two-integrator independence
-(RK45 vs DOP853) and two falsification legs (sign-flipped kernel
-contracts; threshold removal shifts T_2 by ~1e-3, four orders above the
-integrator residual) guard against vacuous passes.
-
-Deterministic; runs in about a second.  Self-contained except numpy/scipy.
+Deterministic; self-contained except for NumPy and SciPy.
 """
 from __future__ import annotations
 
+import argparse
+import math
 import sys
-from pathlib import Path
+from dataclasses import dataclass
+from fractions import Fraction
 
 import numpy as np
 from scipy.integrate import solve_ivp
 from scipy.optimize import brentq
 
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
-CLASS_COUNTS = {"A": 0, "B": 0, "D": 0}
 
-PI = np.pi
-NOTE_PATH = (
-    Path(__file__).resolve().parents[1]
-    / "docs"
-    / "QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md"
-)
+PI = math.pi
+V_SCALE = 246.282818290129
+M_T = 172.69
+M_Z = 91.1876
 
-# ---------------------------------------------------------------------------
-# Declared imports (the boundary of the bounded theorem; see note section
-# "Declared imports").  These define the transfer map; the theorem is about
-# the map, not about any particular boundary value fed into it.
-# ---------------------------------------------------------------------------
-V_SCALE = 246.282818290129   # GeV — framework scale convention v
-M_T = 172.69                 # GeV — PDG top pole mass (declared import)
-M_Z = 91.1876                # GeV — PDG Z mass (declared import)
-
-# Auxiliary EW boundary tuple (fixed declared import; K4 shows it is
-# non-tuning at the < 3.1e-6 level under 5% variations).
-G1_AUX = 0.46228
-G2_AUX = 0.65184
-YT_AUX = 0.93737
-LAM_AUX = 0.13
-
-# Kernel domain D (the whole quantified domain of the theorem).
 A_MIN = 0.085
 A_MAX = 0.130
-A_CENTER = 0.5 * (A_MIN + A_MAX)          # 0.1075
-GRID = np.linspace(A_MIN, A_MAX, 10)       # uniform 10-point grid on D
-
-# Note-declared closed-form constant (B-class manifest sync target).
-L_DECLARED = 1.1746670551
-
-# -- PDG comparator (class D, appendix only; NOT load-bearing) --------------
-ALPHA_S_MZ_PDG = 0.1180
-ALPHA_S_MZ_PDG_SIGMA = 0.0009
-# Historical plaquette-lane boundary value: appears ONLY in the labeled
-# comparator appendix, never in any load-bearing check.
-ALPHA_S_V_COMPARATOR = 0.103304
-PULLBACK_WINDOW_DECLARED = (0.10257, 0.10394)
+A_CENTER = (A_MIN + A_MAX) / 2.0
+GRID = np.linspace(A_MIN, A_MAX, 10)
 
 
-def check(name: str, condition: bool, detail: str = "", kind: str = "A") -> bool:
+@dataclass(frozen=True)
+class Segment:
+    mu_start: float
+    mu_end: float
+    n_f: int
+
+
+MATCHED_SEGMENTS = (
+    Segment(V_SCALE, M_T, 6),
+    Segment(M_T, M_Z, 5),
+)
+NF6_ONLY_SEGMENTS = (Segment(V_SCALE, M_Z, 6),)
+NF5_ONLY_SEGMENTS = (Segment(V_SCALE, M_Z, 5),)
+WRONG_FLAVOR_SEGMENTS = (
+    Segment(V_SCALE, M_T, 5),
+    Segment(M_T, M_Z, 6),
+)
+REVERSED_SEGMENTS = (
+    Segment(M_Z, M_T, 5),
+    Segment(M_T, V_SCALE, 6),
+)
+
+
+def check(name: str, condition: bool, detail: str = "") -> bool:
     global PASS_COUNT, FAIL_COUNT
     status = "PASS" if condition else "FAIL"
     if condition:
         PASS_COUNT += 1
     else:
         FAIL_COUNT += 1
-    CLASS_COUNTS[kind] = CLASS_COUNTS.get(kind, 0) + 1
-    msg = f"  [{status}] [{kind}] {name}"
-    if detail:
-        msg += f"  ({detail})"
-    print(msg)
+    suffix = f"  ({detail})" if detail else ""
+    print(f"  [{status}] {name}{suffix}")
     return condition
 
 
 # ---------------------------------------------------------------------------
-#  Part 1: SU(3) group factors computed from the Gell-Mann generators
+# SU(3) factors and beta-function conventions
 # ---------------------------------------------------------------------------
 
 def gell_mann_generators() -> list[np.ndarray]:
-    """The eight SU(3) generators T^a = lambda^a / 2 (fundamental rep)."""
+    """Return T^a=lambda^a/2 in the fundamental representation."""
     l1 = np.array([[0, 1, 0], [1, 0, 0], [0, 0, 0]], dtype=complex)
     l2 = np.array([[0, -1j, 0], [1j, 0, 0], [0, 0, 0]], dtype=complex)
     l3 = np.array([[1, 0, 0], [0, -1, 0], [0, 0, 0]], dtype=complex)
@@ -121,402 +96,549 @@ def gell_mann_generators() -> list[np.ndarray]:
     l5 = np.array([[0, 0, -1j], [0, 0, 0], [1j, 0, 0]], dtype=complex)
     l6 = np.array([[0, 0, 0], [0, 0, 1], [0, 1, 0]], dtype=complex)
     l7 = np.array([[0, 0, 0], [0, 0, -1j], [0, 1j, 0]], dtype=complex)
-    l8 = np.array([[1, 0, 0], [0, 1, 0], [0, 0, -2]], dtype=complex) / np.sqrt(3.0)
-    return [m / 2.0 for m in (l1, l2, l3, l4, l5, l6, l7, l8)]
+    l8 = np.array([[1, 0, 0], [0, 1, 0], [0, 0, -2]], dtype=complex) / math.sqrt(3.0)
+    return [matrix / 2.0 for matrix in (l1, l2, l3, l4, l5, l6, l7, l8)]
 
 
-def derive_group_factors():
-    """Compute T_F, f^{abc}, C_A, C_F from the generators (no assertion)."""
-    T = gell_mann_generators()
-    n = len(T)
-    # Trace normalization Tr(T^a T^b) = T_F delta_ab
-    tr = np.array([[np.trace(T[a] @ T[b]) for b in range(n)] for a in range(n)])
-    t_f = float(np.real(tr[0, 0]))
-    tr_offdiag_max = float(np.max(np.abs(tr - t_f * np.eye(n))))
-    # Structure constants from [T^a, T^b] = i f^{abc} T^c with the derived
-    # normalization: f^{abc} = -2i/(2 T_F) * Tr([T^a, T^b] T^c).
-    f = np.zeros((n, n, n))
-    for a in range(n):
-        for b in range(n):
-            comm = T[a] @ T[b] - T[b] @ T[a]
-            for c in range(n):
-                f[a, b, c] = float(np.real(-1j / t_f * np.trace(comm @ T[c])))
-    # Adjoint Casimir from f^{acd} f^{bcd} = C_A delta^{ab}
-    ff = np.einsum("acd,bcd->ab", f, f)
-    c_a = float(ff[0, 0])
-    ff_offdiag_max = float(np.max(np.abs(ff - c_a * np.eye(n))))
-    # Fundamental Casimir sum_a T^a T^a = C_F * I
-    casimir = sum(t @ t for t in T)
+def derive_group_factors() -> tuple[float, float, float, float, float, float]:
+    """Compute T_F, C_A, and C_F, returning their matrix residuals too."""
+    generators = gell_mann_generators()
+    count = len(generators)
+    traces = np.array(
+        [[np.trace(generators[a] @ generators[b]) for b in range(count)]
+         for a in range(count)]
+    )
+    t_f = float(np.real(traces[0, 0]))
+    trace_residual = float(np.max(np.abs(traces - t_f * np.eye(count))))
+
+    structure = np.zeros((count, count, count))
+    for a in range(count):
+        for b in range(count):
+            commutator = generators[a] @ generators[b] - generators[b] @ generators[a]
+            for c in range(count):
+                structure[a, b, c] = float(
+                    np.real(-1j * np.trace(commutator @ generators[c]) / t_f)
+                )
+    adjoint = np.einsum("acd,bcd->ab", structure, structure)
+    c_a = float(adjoint[0, 0])
+    adjoint_residual = float(np.max(np.abs(adjoint - c_a * np.eye(count))))
+
+    casimir = sum(generator @ generator for generator in generators)
     c_f = float(np.real(casimir[0, 0]))
-    cf_dev = float(np.max(np.abs(casimir - c_f * np.eye(3))))
-    return T, t_f, tr_offdiag_max, f, c_a, ff_offdiag_max, c_f, cf_dev
+    fundamental_residual = float(np.max(np.abs(casimir - c_f * np.eye(3))))
+    return t_f, c_a, c_f, trace_residual, adjoint_residual, fundamental_residual
 
 
-def b0(n_f: int, c_a: float = 3.0, t_f: float = 0.5) -> float:
-    """Positive 1-loop coefficient: d(1/alpha)/d ln mu = b0/(2 pi)."""
-    return (11.0 / 3.0) * c_a - (4.0 / 3.0) * t_f * n_f
+def beta_coefficients(
+    n_f: int,
+    c_a: float = 3.0,
+    c_f: float = 4.0 / 3.0,
+    t_f: float = 0.5,
+) -> tuple[float, float]:
+    """Return beta_0 and beta_1 in dg/dln(mu)'s standard convention."""
+    beta_0 = (11.0 / 3.0) * c_a - (4.0 / 3.0) * t_f * n_f
+    beta_1 = ((34.0 / 3.0) * c_a ** 2
+              - ((20.0 / 3.0) * c_a + 4.0 * c_f) * t_f * n_f)
+    return beta_0, beta_1
 
 
-def part_1_group_factors():
-    print("\n=== Part 1: SU(3) group factors derived from Gell-Mann generators ===\n")
-    (_T, t_f, tr_dev, f, c_a, ff_dev, c_f, cf_dev) = derive_group_factors()
-    check("trace normalization Tr(T^a T^b) = T_F delta_ab with T_F = 1/2",
-          abs(t_f - 0.5) < 1e-14 and tr_dev < 1e-14,
-          f"T_F = {t_f:.15f}, max off-diagonal deviation = {tr_dev:.2e}")
-    anti_ab = float(np.max(np.abs(f + np.transpose(f, (1, 0, 2)))))
-    anti_bc = float(np.max(np.abs(f + np.transpose(f, (0, 2, 1)))))
-    check("structure constants f^{abc} totally antisymmetric (computed, not asserted)",
-          anti_ab < 1e-13 and anti_bc < 1e-13,
-          f"max |f^abc + f^bac| = {anti_ab:.2e}, max |f^abc + f^acb| = {anti_bc:.2e}")
-    check("adjoint Casimir f^{acd} f^{bcd} = C_A delta^ab with C_A = 3",
-          abs(c_a - 3.0) < 1e-12 and ff_dev < 1e-12,
-          f"C_A = {c_a:.15f}, max off-diagonal deviation = {ff_dev:.2e}")
-    check("fundamental Casimir sum_a T^a T^a = C_F * I with C_F = 4/3",
-          abs(c_f - 4.0 / 3.0) < 1e-14 and cf_dev < 1e-14,
-          f"C_F = {c_f:.15f}, deviation from C_F*I = {cf_dev:.2e}")
-    b0_6 = b0(6, c_a, t_f)
-    b0_5 = b0(5, c_a, t_f)
-    check("b0(n_f) = (11/3)C_A - (4/3)T_F n_f gives b0(6) = 7, b0(5) = 23/3 "
-          "(= 11 - 2 n_f/3, derived not asserted)",
-          abs(b0_6 - 7.0) < 1e-12 and abs(b0_5 - 23.0 / 3.0) < 1e-12
-          and b0_5 > b0_6 > 0.0,
-          f"b0(6) = {b0_6:.12f}, b0(5) = {b0_5:.12f}; b0(5) > b0(6) > 0")
-    return c_a, t_f
+def beta_g(g: float, n_f: int) -> float:
+    """Two-loop dg/dln(mu) convention used for the conversion check."""
+    beta_0, beta_1 = beta_coefficients(n_f)
+    loop = 16.0 * PI ** 2
+    return -beta_0 * g ** 3 / loop - beta_1 * g ** 5 / loop ** 2
+
+
+def beta_alpha(
+    alpha: float,
+    n_f: int,
+    *,
+    beta0_multiplier: float = 1.0,
+    beta1_multiplier: float = 1.0,
+    two_loop_factor: float = 1.0,
+    flow_sign: float = -1.0,
+) -> float:
+    """Two-loop d alpha_s/dln(mu); optional controls are hostile fixtures."""
+    beta_0, beta_1 = beta_coefficients(n_f)
+    magnitude = (beta0_multiplier * beta_0 * alpha ** 2 / (2.0 * PI)
+                 + two_loop_factor * beta1_multiplier
+                 * beta_1 * alpha ** 3 / (8.0 * PI ** 2))
+    return flow_sign * magnitude
 
 
 # ---------------------------------------------------------------------------
-#  Transfer maps
+# Exact one-loop and numerical/implicit two-loop transfer maps
 # ---------------------------------------------------------------------------
 
-def closed_form_L(c_a: float = 3.0, t_f: float = 0.5) -> float:
-    """L = (b0(6)/2pi) ln(v/m_t) + (b0(5)/2pi) ln(m_t/M_Z)."""
-    return (b0(6, c_a, t_f) / (2.0 * PI)) * np.log(V_SCALE / M_T) \
-        + (b0(5, c_a, t_f) / (2.0 * PI)) * np.log(M_T / M_Z)
+def one_loop_L() -> float:
+    beta0_6, _ = beta_coefficients(6)
+    beta0_5, _ = beta_coefficients(5)
+    return (beta0_6 * math.log(V_SCALE / M_T)
+            + beta0_5 * math.log(M_T / M_Z)) / (2.0 * PI)
 
 
-def t1_closed(a: float, L: float) -> float:
-    """Exact 1-loop transfer map: 1/T_1(a) = 1/a - L."""
-    return a / (1.0 - L * a)
+def t1_closed(alpha: float) -> float:
+    return alpha / (1.0 - one_loop_L() * alpha)
 
 
-def t1_jacobian_analytic(a: float, L: float) -> float:
-    """dT_1/da = 1/(1 - L a)^2 (exact)."""
-    return 1.0 / (1.0 - L * a) ** 2
+def t1_jacobian(alpha: float) -> float:
+    return 1.0 / (1.0 - one_loop_L() * alpha) ** 2
 
 
-def beta_g3_1loop(t, y, n_f: int):
-    g3, = y
-    return [-(b0(n_f) / (16.0 * PI ** 2)) * g3 ** 3]
+def transfer_numeric(
+    alpha: float,
+    segments: tuple[Segment, ...] = MATCHED_SEGMENTS,
+    *,
+    method: str = "RK45",
+    beta0_multiplier: float = 1.0,
+    beta1_multiplier: float = 1.0,
+    two_loop_factor: float = 1.0,
+    flow_sign: float = -1.0,
+) -> float:
+    """Integrate the declared piecewise map, carrying alpha identically at markers."""
+    current = float(alpha)
+    for segment in segments:
+        solution = solve_ivp(
+            lambda _t, y: [
+                beta_alpha(
+                    float(y[0]),
+                    segment.n_f,
+                    beta0_multiplier=beta0_multiplier,
+                    beta1_multiplier=beta1_multiplier,
+                    two_loop_factor=two_loop_factor,
+                    flow_sign=flow_sign,
+                )
+            ],
+            (math.log(segment.mu_start), math.log(segment.mu_end)),
+            [current],
+            method=method,
+            rtol=1e-12,
+            atol=1e-14,
+        )
+        if not solution.success:
+            raise RuntimeError(f"two-loop segment failed: {solution.message}")
+        current = float(solution.y[0, -1])
+    return current
 
 
-def t1_numeric(a: float, method: str = "RK45") -> float:
-    """Independent numerical 1-loop transfer (same map, integrated)."""
-    g3 = np.sqrt(4.0 * PI * a)
-    for (t_s, t_e, n_f) in [(np.log(V_SCALE), np.log(M_T), 6),
-                            (np.log(M_T), np.log(M_Z), 5)]:
-        sol = solve_ivp(lambda t, y: beta_g3_1loop(t, y, n_f),
-                        [t_s, t_e], [g3], method=method,
-                        rtol=1e-13, atol=1e-15)
-        if not sol.success:
-            raise RuntimeError(f"1-loop segment failed: {sol.message}")
-        g3 = float(sol.y[0, -1])
-    return g3 ** 2 / (4.0 * PI)
+def transfer_with_matching_jump(alpha: float, jump: float) -> float:
+    """Hostile fixture with an additive non-identity jump at the top marker."""
+    above = transfer_numeric(alpha, (MATCHED_SEGMENTS[0],))
+    return transfer_numeric(above + jump, (MATCHED_SEGMENTS[1],))
 
 
-def beta_2loop_full(t, y, n_f: int):
-    """Standard MSbar 2-loop SM RGE (Machacek-Vaughn 1984; Arason 1992).
+def transfer_one_loop_numeric(alpha: float) -> float:
+    current = float(alpha)
+    for segment in MATCHED_SEGMENTS:
+        beta_0, _ = beta_coefficients(segment.n_f)
+        solution = solve_ivp(
+            lambda _t, y: [-beta_0 * float(y[0]) ** 2 / (2.0 * PI)],
+            (math.log(segment.mu_start), math.log(segment.mu_end)),
+            [current],
+            rtol=1e-13,
+            atol=1e-15,
+        )
+        if not solution.success:
+            raise RuntimeError(f"one-loop segment failed: {solution.message}")
+        current = float(solution.y[0, -1])
+    return current
 
-    Declared continuum import; the SU(3) group factors entering the gauge
-    coefficient are recomputed in Part 1.
-    """
-    g1, g2, g3, yt, lam = y
-    fac = 1.0 / (16.0 * PI ** 2)
-    fac2 = fac ** 2
-    g1sq, g2sq, g3sq, ytsq = g1 ** 2, g2 ** 2, g3 ** 2, yt ** 2
 
-    beta_g1_1 = (41.0 / 10.0) * g1 ** 3
-    beta_g2_1 = -(19.0 / 6.0) * g2 ** 3
-    beta_g3_1 = -b0(n_f) * g3 ** 3
-    beta_yt_1 = yt * (9.0 / 2.0 * ytsq - 17.0 / 20.0 * g1sq
-                      - 9.0 / 4.0 * g2sq - 8.0 * g3sq)
-    beta_lam_1 = (24.0 * lam ** 2 + 12.0 * lam * ytsq - 6.0 * ytsq ** 2
-                  - 3.0 * lam * (3.0 * g2sq + g1sq)
-                  + 3.0 / 8.0 * (2.0 * g2sq ** 2 + (g2sq + g1sq) ** 2))
+def implicit_primitive(alpha: float, n_f: int) -> float:
+    """Primitive Phi with Phi(alpha_out)-Phi(alpha_in)=A ln(mu_out/mu_in)."""
+    beta_0, beta_1 = beta_coefficients(n_f)
+    c = beta_1 / (4.0 * PI * beta_0)
+    return 1.0 / alpha + c * math.log(alpha / (1.0 + c * alpha))
 
-    beta_g1_2 = g1 ** 3 * (199.0 / 50.0 * g1sq + 27.0 / 10.0 * g2sq
-                           + 44.0 / 5.0 * g3sq - 17.0 / 10.0 * ytsq)
-    beta_g2_2 = g2 ** 3 * (9.0 / 10.0 * g1sq + 35.0 / 6.0 * g2sq
-                           + 12.0 * g3sq - 3.0 / 2.0 * ytsq)
-    beta_g3_2 = g3 ** 3 * (11.0 / 10.0 * g1sq + 9.0 / 2.0 * g2sq
-                           - 26.0 * g3sq - 2.0 * ytsq)
-    beta_yt_2 = yt * (
-        -12.0 * ytsq ** 2
-        + ytsq * (36.0 * g3sq + 225.0 / 16.0 * g2sq + 131.0 / 80.0 * g1sq)
-        + 1187.0 / 216.0 * g1sq ** 2 - 23.0 / 4.0 * g2sq ** 2
-        - 108.0 * g3sq ** 2
-        + 19.0 / 15.0 * g1sq * g3sq + 9.0 / 4.0 * g2sq * g3sq
-        + 6.0 * lam ** 2 - 6.0 * lam * ytsq
+
+def implicit_segment(alpha: float, segment: Segment) -> float:
+    """Solve one constant-n_f two-loop segment from its implicit formula."""
+    beta_0, _ = beta_coefficients(segment.n_f)
+    target = (implicit_primitive(alpha, segment.n_f)
+              + beta_0 * math.log(segment.mu_end / segment.mu_start) / (2.0 * PI))
+
+    def residual(candidate: float) -> float:
+        return implicit_primitive(candidate, segment.n_f) - target
+
+    if segment.mu_end < segment.mu_start:
+        lower = alpha
+        upper = max(2.0 * alpha, alpha + 0.05)
+        while residual(lower) * residual(upper) > 0.0:
+            upper *= 1.5
+            if upper > 10.0:
+                raise RuntimeError("failed to bracket downward implicit solution")
+    else:
+        lower = max(1e-12, alpha / 2.0)
+        upper = alpha
+        while residual(lower) * residual(upper) > 0.0:
+            lower /= 2.0
+            if lower < 1e-15:
+                raise RuntimeError("failed to bracket upward implicit solution")
+    return float(brentq(residual, lower, upper, xtol=1e-14, rtol=1e-14))
+
+
+def transfer_implicit(
+    alpha: float,
+    segments: tuple[Segment, ...] = MATCHED_SEGMENTS,
+) -> float:
+    current = float(alpha)
+    for segment in segments:
+        current = implicit_segment(current, segment)
+    return current
+
+
+def transfer_with_unconstrained_third_coefficient(alpha: float, coefficient: float) -> float:
+    """Hostile counterexample family; coefficient is not a physical beta_2 input."""
+    current = float(alpha)
+    for segment in MATCHED_SEGMENTS:
+        def rhs(_t: float, y: np.ndarray) -> list[float]:
+            value = float(y[0])
+            return [beta_alpha(value, segment.n_f)
+                    - coefficient * value ** 4 / (32.0 * PI ** 3)]
+
+        solution = solve_ivp(
+            rhs,
+            (math.log(segment.mu_start), math.log(segment.mu_end)),
+            [current],
+            rtol=1e-12,
+            atol=1e-14,
+        )
+        if not solution.success:
+            raise RuntimeError(f"hostile higher-term segment failed: {solution.message}")
+        current = float(solution.y[0, -1])
+    return current
+
+
+# ---------------------------------------------------------------------------
+# Normal certificate
+# ---------------------------------------------------------------------------
+
+def run_normal() -> None:
+    print("=== Coefficients and convention conversion ===")
+    t_f, c_a, c_f, tr_res, ca_res, cf_res = derive_group_factors()
+    check(
+        "Gell-Mann matrices give T_F=1/2, C_A=3, C_F=4/3",
+        abs(t_f - 0.5) < 1e-14
+        and abs(c_a - 3.0) < 1e-12
+        and abs(c_f - 4.0 / 3.0) < 1e-14
+        and max(tr_res, ca_res, cf_res) < 2e-12,
+        f"T_F={t_f:.15f}, C_A={c_a:.15f}, C_F={c_f:.15f}",
+    )
+    beta0_6, beta1_6 = beta_coefficients(6, c_a, c_f, t_f)
+    beta0_5, beta1_5 = beta_coefficients(5, c_a, c_f, t_f)
+    check(
+        "derived coefficients are (beta_0,beta_1)_6=(7,26) and "
+        "(beta_0,beta_1)_5=(23/3,116/3)",
+        abs(beta0_6 - 7.0) < 1e-12
+        and abs(beta1_6 - 26.0) < 1e-12
+        and abs(beta0_5 - 23.0 / 3.0) < 1e-12
+        and abs(beta1_5 - 116.0 / 3.0) < 1e-12,
+        f"nf6=({beta0_6:.12f},{beta1_6:.12f}), "
+        f"nf5=({beta0_5:.12f},{beta1_5:.12f})",
+    )
+    conversion_residuals = []
+    for n_f in (5, 6):
+        for alpha in GRID:
+            g = math.sqrt(4.0 * PI * float(alpha))
+            converted = g * beta_g(g, n_f) / (2.0 * PI)
+            conversion_residuals.append(abs(converted - beta_alpha(float(alpha), n_f)))
+    check(
+        "alpha_s=g^2/(4 pi) converts the g RGE to the declared alpha_s RGE",
+        max(conversion_residuals) < 2e-16,
+        f"max chain-rule residual={max(conversion_residuals):.3e}",
     )
 
-    return [fac * beta_g1_1 + fac2 * beta_g1_2,
-            fac * beta_g2_1 + fac2 * beta_g2_2,
-            fac * beta_g3_1 + fac2 * beta_g3_2,
-            fac * beta_yt_1 + fac2 * beta_yt_2,
-            fac * beta_lam_1]
+    print("\n=== Exact one-loop theorem on D ===")
+    length = one_loop_L()
+    pole = 1.0 / length
+    check(
+        "exact one-loop denominator stays positive on all of D",
+        1.0 - length * A_MAX > 0.0,
+        f"L={length:.13f}, 1/L={pole:.6f}, pole/a_max={pole/A_MAX:.4f}",
+    )
+    one_loop_residual = max(
+        abs(t1_closed(float(alpha)) - transfer_one_loop_numeric(float(alpha)))
+        for alpha in GRID
+    )
+    check(
+        "1/T_1=1/a-L matches independent one-loop integration at every grid point",
+        one_loop_residual < 2e-12,
+        f"max residual={one_loop_residual:.3e}",
+    )
+    check(
+        "T_1 is strictly increasing and expansive everywhere on D",
+        t1_jacobian(A_MIN) > 1.0,
+        f"min analytic Jacobian={t1_jacobian(A_MIN):.6f}",
+    )
 
+    print("\n=== Piecewise two-loop QCD finite-grid certificate ===")
+    rk45 = [transfer_numeric(float(alpha), method="RK45") for alpha in GRID]
+    dop853 = [transfer_numeric(float(alpha), method="DOP853") for alpha in GRID]
+    implicit = [transfer_implicit(float(alpha)) for alpha in GRID]
+    cross_integrator = max(abs(left - right) for left, right in zip(rk45, dop853))
+    cross_implicit = max(abs(left - right) for left, right in zip(rk45, implicit))
+    check(
+        "T_2 is finite and positive at every point of the declared ten-point grid",
+        all(math.isfinite(value) and value > 0.0 for value in rk45),
+        f"grid image=[{rk45[0]:.9f},{rk45[-1]:.9f}]",
+    )
+    check(
+        "RK45 and DOP853 agree at every declared grid point",
+        cross_integrator < 2e-11,
+        f"max residual={cross_integrator:.3e}",
+    )
+    check(
+        "numerical integration matches the implicit analytic solution segment by segment",
+        cross_implicit < 2e-11,
+        f"max grid residual={cross_implicit:.3e}",
+    )
+    slopes = [
+        (rk45[index + 1] - rk45[index]) / (GRID[index + 1] - GRID[index])
+        for index in range(len(GRID) - 1)
+    ]
+    check(
+        "finite observation: T_2 values increase and all adjacent grid secants exceed one",
+        all(rk45[index + 1] > rk45[index] for index in range(len(rk45) - 1))
+        and min(slopes) > 1.0,
+        f"min adjacent secant={min(slopes):.6f}",
+    )
+    center_target = transfer_numeric(A_CENTER)
+    center_back = brentq(
+        lambda alpha: transfer_numeric(alpha) - center_target,
+        A_MIN,
+        A_MAX,
+        xtol=1e-12,
+    )
+    check(
+        "finite observation: center inverse round-trip recovers the supplied input",
+        abs(center_back - A_CENTER) < 1e-9,
+        f"round-trip residual={abs(center_back-A_CENTER):.3e}",
+    )
 
-SEGMENTS_MATCHED = [(np.log(V_SCALE), np.log(M_T), 6),
-                    (np.log(M_T), np.log(M_Z), 5)]
-SEGMENTS_NF6_ONLY = [(np.log(V_SCALE), np.log(M_Z), 6)]
-SEGMENTS_NF5_ONLY = [(np.log(V_SCALE), np.log(M_Z), 5)]
-
-
-def t2(a: float, method: str = "RK45", segments=None,
-       aux=(G1_AUX, G2_AUX, YT_AUX, LAM_AUX)) -> float:
-    """2-loop matched transfer map T_2: alpha_s(v) -> alpha_s(M_Z).
-
-    Defined for any a in the kernel domain; the auxiliary tuple is a fixed
-    declared import (K4 quantifies its (in)sensitivity).
-    """
-    if segments is None:
-        segments = SEGMENTS_MATCHED
-    g3 = np.sqrt(4.0 * PI * a)
-    y = [aux[0], aux[1], g3, aux[2], aux[3]]
-    for (t_s, t_e, n_f) in segments:
-        sol = solve_ivp(lambda t, yy: beta_2loop_full(t, yy, n_f),
-                        [t_s, t_e], y, method=method,
-                        rtol=1e-12, atol=1e-14)
-        if not sol.success:
-            raise RuntimeError(f"2-loop segment failed: {sol.message}")
-        y = list(sol.y[:, -1])
-    return y[2] ** 2 / (4.0 * PI)
-
-
-# ---------------------------------------------------------------------------
-#  Parts 2-6: kernel theorem K1-K5 (all class A, quantified over D)
-# ---------------------------------------------------------------------------
-
-def part_2_k1_landau_margin(L: float):
-    print("\n=== Part 2 (K1): well-definedness on D = [0.085, 0.130] ===\n")
-    check("closed-form constant L matches the note-declared value 1.1746670551",
-          abs(L - L_DECLARED) < 1e-9,
-          f"L = {L:.13f}, |L - declared| = {abs(L - L_DECLARED):.2e}")
-    landau_pole = 1.0 / L
-    margin = landau_pole / A_MAX
-    check("Landau margin: pole 1/L lies a factor 6.55 above the domain edge "
-          "(1 - L a > 0 on all of D)",
-          margin > 6.5 and (1.0 - L * A_MAX) > 0.0,
-          f"1/L = {landau_pole:.6f}, margin (1/L)/a_max = {margin:.4f}")
-    t1_vals = [t1_closed(a, L) for a in GRID]
-    check("T_1 finite and positive at every point of the 10-point grid on D",
-          all(np.isfinite(v) and 0.0 < v < 1.0 for v in t1_vals),
-          f"T_1 range on D: [{t1_vals[0]:.6f}, {t1_vals[-1]:.6f}]")
-
-
-def part_3_k2_closed_form(L: float):
-    print("\n=== Part 3 (K2): exact 1-loop closed form vs independent integration ===\n")
-    res_center = abs(t1_closed(A_CENTER, L) - t1_numeric(A_CENTER))
-    check("closed form 1/T_1 = 1/a - L matches RK45 integration at the domain "
-          "center a = 0.1075",
-          res_center < 1e-12,
-          f"residual = {res_center:.2e}")
-    res_grid = max(abs(t1_closed(a, L) - t1_numeric(a)) for a in GRID)
-    check("closed form matches RK45 at every grid point of D",
-          res_grid < 1e-12,
-          f"max residual over grid = {res_grid:.2e}")
-    two_int = abs(t2(A_CENTER, method="RK45") - t2(A_CENTER, method="DOP853"))
-    check("two-integrator independence: T_2 via RK45 vs DOP853 agree",
-          two_int < 1e-12,
-          f"|RK45 - DOP853| = {two_int:.2e}")
-    return two_int
-
-
-def part_4_k3_expansive_bijection(L: float):
-    print("\n=== Part 4 (K3): exact T_1 plus T_2 grid monotonicity/expansivity ===\n")
-    jac_dev = max(abs(t1_jacobian_analytic(a, L) - (t1_closed(a, L) / a) ** 2)
-                  for a in GRID)
-    h = 1e-6
-    fd = (t1_closed(A_CENTER + h, L) - t1_closed(A_CENTER - h, L)) / (2.0 * h)
-    fd_dev = abs(fd - t1_jacobian_analytic(A_CENTER, L)) / fd
-    check("exact Jacobian identity dT_1/da = (T_1/a)^2 holds on the grid "
-          "(and matches a finite difference at the center)",
-          jac_dev < 1e-12 and fd_dev < 1e-8,
-          f"max |1/(1-La)^2 - (T_1/a)^2| = {jac_dev:.2e}, FD rel dev = {fd_dev:.2e}")
-    t1_vals = [t1_closed(a, L) for a in GRID]
-    j1_min = t1_jacobian_analytic(A_MIN, L)
-    check("T_1 strictly increasing and expansive on D (dT_1/da > 1 everywhere)",
-          all(t1_vals[i + 1] > t1_vals[i] for i in range(len(GRID) - 1))
-          and j1_min > 1.0,
-          f"min dT_1/da on D = {j1_min:.6f} > 1")
-    t2_vals = [t2(a) for a in GRID]
-    check("T_2 strictly increasing on the 10-point grid",
-          all(t2_vals[i + 1] > t2_vals[i] for i in range(len(GRID) - 1)),
-          f"T_2 image on grid: [{t2_vals[0]:.6f}, {t2_vals[-1]:.6f}]")
-    slopes = [(t2_vals[i + 1] - t2_vals[i]) / (GRID[i + 1] - GRID[i])
-              for i in range(len(GRID) - 1)]
-    j2_center = (t2(A_CENTER + 1e-5) - t2(A_CENTER - 1e-5)) / 2e-5
-    check("T_2 grid expansivity: every grid slope > 1; central Jacobian J_2 = 1.328",
-          min(slopes) > 1.0 and abs(j2_center - 1.328) < 5e-3,
-          f"min slope = {min(slopes):.4f}, J_2(0.1075) = {j2_center:.4f}")
-    target = t2(A_CENTER)
-    a_back = brentq(lambda a: t2(a) - target, A_MIN, A_MAX, xtol=1e-12)
-    check("inverse round-trip: T_2^{-1}(T_2(0.1075)) recovers 0.1075",
-          abs(a_back - A_CENTER) < 1e-9,
-          f"|round-trip - 0.1075| = {abs(a_back - A_CENTER):.2e}")
-    return t2_vals
-
-
-def part_5_k4_auxiliary_insensitivity():
-    print("\n=== Part 5 (K4): auxiliary-tuple insensitivity (anti-tuning) ===\n")
-    t2_center = t2(A_CENTER)
-    base = [G1_AUX, G2_AUX, YT_AUX, LAM_AUX]
-    names = ["g1", "g2", "yt", "lambda"]
-    worst = 0.0
-    worst_name = ""
-    for i, name in enumerate(names):
-        for fac in (1.05, 0.95):
-            varied = list(base)
-            varied[i] *= fac
-            d = abs(t2(A_CENTER, aux=tuple(varied)) - t2_center)
-            print(f"    {name} x {fac:.2f}: |delta T_2| = {d:.3e}")
-            if d > worst:
-                worst, worst_name = d, name
-    check("max single-parameter 5% variation of the auxiliary tuple shifts "
-          "T_2 by < 3.1e-6",
-          worst < 3.1e-6,
-          f"worst = {worst:.3e} ({worst_name}); the tuple is not a tuning knob")
-    joint_up = abs(t2(A_CENTER, aux=tuple(x * 1.05 for x in base)) - t2_center)
-    joint_dn = abs(t2(A_CENTER, aux=tuple(x * 0.95 for x in base)) - t2_center)
-    check("joint 5% variation of all four auxiliary parameters shifts T_2 by "
-          "< 3.1e-6",
-          max(joint_up, joint_dn) < 3.1e-6,
-          f"joint up/down = {joint_up:.3e} / {joint_dn:.3e}")
-
-
-def part_6_k5_envelope_and_falsification(L: float, two_int_residual: float):
-    print("\n=== Part 6 (K5 + falsification legs): envelope, threshold bracket, "
-          "sign flip ===\n")
-    t2_c = t2(A_CENTER)
-    t1_c = t1_closed(A_CENTER, L)
-    envelope = t2_c - t1_c
-    check("truncation envelope T_2 - T_1 = +5.7e-4 at the domain center "
-          "(positive, bounded)",
-          0.0 < envelope < 1e-3 and abs(envelope - 5.7e-4) < 5e-5,
-          f"T_2 - T_1 = {envelope:+.3e}")
-    t2_nf6 = t2(A_CENTER, segments=SEGMENTS_NF6_ONLY)
-    t2_nf5 = t2(A_CENTER, segments=SEGMENTS_NF5_ONLY)
-    check("derived strict threshold bracket T_2[nf=6 only] < T_2[matched] < "
-          "T_2[nf=5 only] (from b0(5) > b0(6) > 0)",
-          t2_nf6 < t2_c < t2_nf5,
-          f"{t2_nf6:.6f} < {t2_c:.6f} < {t2_nf5:.6f}")
-    shift = abs(t2_c - t2_nf6)
-    check("falsification: removing the top threshold shifts T_2 by ~1.03e-3, "
-          "more than 1e4 x the two-integrator residual (check is not vacuous)",
-          shift > 1e4 * max(two_int_residual, 1e-15)
-          and abs(shift - 1.03e-3) < 5e-5,
-          f"shift = {shift:.3e}, 1e4 x residual = {1e4 * max(two_int_residual, 1e-15):.3e}")
-    t_flip = A_CENTER / (1.0 + L * A_CENTER)
-    j_flip = (t_flip / A_CENTER) ** 2
-    check("falsification: sign-flipped kernel 1/T = 1/a + L contracts "
-          "(T < a, Jacobian < 1) — expansivity is a real property, not a tautology",
-          t_flip < A_CENTER and j_flip < 1.0,
-          f"T_flip(0.1075) = {t_flip:.6f} < 0.1075, J_flip = {j_flip:.4f} < 1")
+    print("\n=== Threshold observations and order-to-order shift ===")
+    nf6_only = [transfer_numeric(float(alpha), NF6_ONLY_SEGMENTS) for alpha in GRID]
+    nf5_only = [transfer_numeric(float(alpha), NF5_ONLY_SEGMENTS) for alpha in GRID]
+    lower_gaps = [matched - lower for matched, lower in zip(rk45, nf6_only)]
+    upper_gaps = [upper - matched for upper, matched in zip(nf5_only, rk45)]
+    check(
+        "finite observation on all ten grid points: nf6-only < matched < nf5-only",
+        min(lower_gaps) > 0.0 and min(upper_gaps) > 0.0,
+        f"minimum lower/upper gaps={min(lower_gaps):.3e}/{min(upper_gaps):.3e}",
+    )
+    check(
+        "removing the threshold changes every declared grid value well above integration residual",
+        min(lower_gaps) > 1000.0 * max(cross_integrator, 1e-15),
+        f"minimum shift={min(lower_gaps):.3e}",
+    )
+    shifts = [value - t1_closed(float(alpha)) for value, alpha in zip(rk45, GRID)]
+    check(
+        "observed one-loop-to-two-loop shift is positive at every declared grid point",
+        min(shifts) > 0.0,
+        f"observed shift range=[{min(shifts):.3e},{max(shifts):.3e}]",
+    )
+    hostile_third = transfer_with_unconstrained_third_coefficient(A_CENTER, 5000.0)
+    center_shift = center_target - t1_closed(A_CENTER)
+    hostile_change = abs(hostile_third - center_target)
+    check(
+        "counterexample: adjacent-order shift does not bound an unconstrained omitted term",
+        hostile_change > abs(center_shift),
+        f"hostile next-term change={hostile_change:.3e} > observed shift={abs(center_shift):.3e}",
+    )
+    print(
+        f"\n  center: T_1={t1_closed(A_CENTER):.9f}, "
+        f"T_2={center_target:.9f}, observed shift={center_shift:+.3e}"
+    )
 
 
 # ---------------------------------------------------------------------------
-#  Part 7: note/runner manifest sync (class B)
+# Independent fixed-step reconstruction
 # ---------------------------------------------------------------------------
 
-def _section(text: str, heading: str) -> str:
-    """Return the body of a markdown section starting at `heading`."""
-    idx = text.find(heading)
-    if idx < 0:
-        return ""
-    rest = text[idx + len(heading):]
-    nxt = rest.find("\n## ")
-    return rest if nxt < 0 else rest[:nxt]
+def run_independent() -> None:
+    print("=== Independent coefficient and fixed-step RK4 reconstruction ===")
 
+    def independent_coefficients(n_f: int) -> tuple[float, float]:
+        c_a = Fraction(3, 1)
+        c_f = Fraction(4, 3)
+        t_f = Fraction(1, 2)
+        beta_0 = Fraction(11, 3) * c_a - Fraction(4, 3) * t_f * n_f
+        beta_1 = (Fraction(34, 3) * c_a ** 2
+                  - (Fraction(20, 3) * c_a + 4 * c_f) * t_f * n_f)
+        return float(beta_0), float(beta_1)
 
-def part_7_manifest_sync(L: float):
-    print("\n=== Part 7: note/runner manifest sync (bookkeeping, class B) ===\n")
-    note = NOTE_PATH.read_text(encoding="utf-8")
-    check("note declares the same closed-form constant L = 1.1746670551 and "
-          "the same kernel domain [0.085, 0.130]",
-          "1.1746670551" in note and "[0.085, 0.130]" in note
-          and abs(L - L_DECLARED) < 1e-9,
-          "note text carries the runner's L and domain", kind="B")
-    check("note declares the same import scales v, m_t, M_Z and auxiliary tuple",
-          "246.282818290129" in note and "172.69" in note and "91.1876" in note
-          and "0.46228" in note and "0.65184" in note and "0.93737" in note,
-          f"v = {V_SCALE}, m_t = {M_T}, M_Z = {M_Z}", kind="B")
-    theorem_sec = _section(note, "## Kernel theorem")
-    appendix_sec = _section(note, "## Comparator appendix")
-    check("the boundary value 0.103304 is absent from the kernel-theorem claim "
-          "surface and confined to the labeled class-D comparator appendix",
-          bool(theorem_sec) and bool(appendix_sec)
-          and "0.103304" not in theorem_sec
-          and "0.103304" in appendix_sec
-          and "class D" in appendix_sec and "not load-bearing" in appendix_sec,
-          "claim surface is boundary-value-free", kind="B")
+    def independent_rhs(alpha: float, n_f: int) -> float:
+        beta_0, beta_1 = independent_coefficients(n_f)
+        return (-beta_0 * alpha ** 2 / (2.0 * PI)
+                - beta_1 * alpha ** 3 / (8.0 * PI ** 2))
+
+    def fixed_segment(alpha: float, segment: Segment, steps: int = 12000) -> float:
+        start = math.log(segment.mu_start)
+        end = math.log(segment.mu_end)
+        step = (end - start) / steps
+        current = alpha
+        for _ in range(steps):
+            k1 = independent_rhs(current, segment.n_f)
+            k2 = independent_rhs(current + 0.5 * step * k1, segment.n_f)
+            k3 = independent_rhs(current + 0.5 * step * k2, segment.n_f)
+            k4 = independent_rhs(current + step * k3, segment.n_f)
+            current += step * (k1 + 2.0 * k2 + 2.0 * k3 + k4) / 6.0
+        return current
+
+    def fixed_transfer(alpha: float, segments: tuple[Segment, ...]) -> float:
+        current = alpha
+        for segment in segments:
+            current = fixed_segment(current, segment)
+        return current
+
+    reconstructed = [fixed_transfer(float(alpha), MATCHED_SEGMENTS) for alpha in GRID]
+    implicit = [transfer_implicit(float(alpha)) for alpha in GRID]
+    primary = [transfer_numeric(float(alpha)) for alpha in GRID]
+    coeff_residual = max(
+        abs(left - right)
+        for n_f in (5, 6)
+        for left, right in zip(independent_coefficients(n_f), beta_coefficients(n_f))
+    )
+    check(
+        "independent rational group-factor substitution reconstructs beta_0 and beta_1",
+        coeff_residual < 1e-14,
+        f"max coefficient residual={coeff_residual:.3e}",
+    )
+    fixed_vs_primary = max(abs(left - right) for left, right in zip(reconstructed, primary))
+    fixed_vs_implicit = max(abs(left - right) for left, right in zip(reconstructed, implicit))
+    check(
+        "independent fixed-step RK4 matches solve_ivp at every declared grid point",
+        fixed_vs_primary < 2e-10,
+        f"max residual={fixed_vs_primary:.3e}",
+    )
+    check(
+        "independent fixed-step RK4 matches the implicit segment solution",
+        fixed_vs_implicit < 2e-10,
+        f"max residual={fixed_vs_implicit:.3e}",
+    )
+    nf6 = [fixed_transfer(float(alpha), NF6_ONLY_SEGMENTS) for alpha in GRID]
+    nf5 = [fixed_transfer(float(alpha), NF5_ONLY_SEGMENTS) for alpha in GRID]
+    check(
+        "independent reconstruction observes the threshold ordering at all ten points",
+        all(low < middle < high for low, middle, high in zip(nf6, reconstructed, nf5)),
+        f"center triple={nf6[4]:.9f}/{reconstructed[4]:.9f}/{nf5[4]:.9f}",
+    )
+    check(
+        "independent grid is strictly increasing",
+        all(reconstructed[index + 1] > reconstructed[index]
+            for index in range(len(reconstructed) - 1)),
+        f"grid image=[{reconstructed[0]:.9f},{reconstructed[-1]:.9f}]",
+    )
+    print("\n  independently reconstructed grid:")
+    for alpha, value in zip(GRID, reconstructed):
+        print(f"    a={float(alpha):.6f} -> T_2(a)={value:.9f}")
 
 
 # ---------------------------------------------------------------------------
-#  Part 8: comparator appendix (class D; NOT load-bearing)
+# Hostile computed mutations
 # ---------------------------------------------------------------------------
 
-def part_8_comparator_appendix():
-    print("\n=== Part 8: comparator appendix (class D; NOT load-bearing) ===\n")
-    print("  These two checks are external PDG comparisons recorded for")
-    print("  downstream context only. The kernel theorem K1-K5 above does not")
-    print("  depend on them; the T2 theorem surface is grid/center certified over D.\n")
-    a_mz = t2(ALPHA_S_V_COMPARATOR)
-    check("worked example: T_2(0.103304) = 0.118067, inside the PDG band "
-          "0.1180 +/- 0.0009",
-          abs(a_mz - 0.118067) < 5e-6
-          and abs(a_mz - ALPHA_S_MZ_PDG) <= ALPHA_S_MZ_PDG_SIGMA,
-          f"T_2(0.103304) = {a_mz:.6f}", kind="D")
-    band_lo = ALPHA_S_MZ_PDG - ALPHA_S_MZ_PDG_SIGMA
-    band_hi = ALPHA_S_MZ_PDG + ALPHA_S_MZ_PDG_SIGMA
-    w_lo = brentq(lambda a: t2(a) - band_lo, A_MIN, A_MAX, xtol=1e-12)
-    w_hi = brentq(lambda a: t2(a) - band_hi, A_MIN, A_MAX, xtol=1e-12)
-    check("PDG-band pullback window T_2^{-1}([0.1171, 0.1189]) = "
-          "[0.10257, 0.10394] (interior to D)",
-          abs(w_lo - PULLBACK_WINDOW_DECLARED[0]) < 5e-5
-          and abs(w_hi - PULLBACK_WINDOW_DECLARED[1]) < 5e-5
-          and A_MIN < w_lo < w_hi < A_MAX,
-          f"window = [{w_lo:.5f}, {w_hi:.5f}]", kind="D")
+def run_hostile() -> None:
+    print("=== Hostile computed mutation kills ===")
+    correct = [transfer_implicit(float(alpha)) for alpha in GRID]
+    separation = 1e-7
+
+    wrong_beta1 = [
+        transfer_numeric(float(alpha), beta1_multiplier=0.0) for alpha in GRID
+    ]
+    check(
+        "kills wrong beta_1 (omitted two-loop coefficient)",
+        max(abs(left - right) for left, right in zip(correct, wrong_beta1)) > separation,
+    )
+
+    wrong_beta0 = [
+        transfer_numeric(float(alpha), beta0_multiplier=0.9) for alpha in GRID
+    ]
+    check(
+        "kills wrong beta_0 coefficient",
+        min(abs(left - right) for left, right in zip(correct, wrong_beta0)) > separation,
+    )
+
+    wrong_factor = [
+        transfer_numeric(float(alpha), two_loop_factor=2.0) for alpha in GRID
+    ]
+    check(
+        "kills wrong factor of two in the two-loop alpha_s term",
+        max(abs(left - right) for left, right in zip(correct, wrong_factor)) > separation,
+    )
+
+    wrong_sign = [
+        transfer_numeric(float(alpha), flow_sign=1.0) for alpha in GRID
+    ]
+    check(
+        "kills the beta-function sign flip",
+        all(value < float(alpha) for value, alpha in zip(wrong_sign, GRID)),
+    )
+
+    missing_threshold = [
+        transfer_numeric(float(alpha), NF6_ONLY_SEGMENTS) for alpha in GRID
+    ]
+    check(
+        "kills the missing-threshold mutation",
+        min(abs(left - right) for left, right in zip(correct, missing_threshold)) > separation,
+    )
+
+    wrong_matching = [
+        transfer_with_matching_jump(float(alpha), 1e-3) for alpha in GRID
+    ]
+    check(
+        "kills a non-identity threshold-matching jump",
+        min(abs(left - right) for left, right in zip(correct, wrong_matching)) > separation,
+    )
+
+    wrong_flavor = [
+        transfer_numeric(float(alpha), WRONG_FLAVOR_SEGMENTS) for alpha in GRID
+    ]
+    check(
+        "kills wrong segment flavor assignment (n_f=5 above, n_f=6 below)",
+        min(abs(left - right) for left, right in zip(correct, wrong_flavor)) > separation,
+    )
+
+    reversed_direction = [
+        transfer_numeric(float(alpha), REVERSED_SEGMENTS) for alpha in GRID
+    ]
+    check(
+        "kills reversed scale direction",
+        all(value < float(alpha) for value, alpha in zip(reversed_direction, GRID)),
+    )
+
+    two_loop = transfer_implicit(A_CENTER)
+    observed_shift = abs(two_loop - t1_closed(A_CENTER))
+    unconstrained_next = transfer_with_unconstrained_third_coefficient(A_CENTER, 5000.0)
+    check(
+        "kills false remainder/envelope semantics with a computed higher-term counterexample",
+        abs(unconstrained_next - two_loop) > observed_shift,
+        f"counterexample change={abs(unconstrained_next-two_loop):.3e}, "
+        f"adjacent-order shift={observed_shift:.3e}",
+    )
 
 
-def main() -> None:
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--independent", action="store_true")
+    mode.add_argument("--hostile", action="store_true")
+    return parser.parse_args()
+
+
+def main() -> int:
+    args = parse_args()
     print("=" * 78)
-    print("QCD v -> M_Z running transfer-map kernel theorem (K1-K5)")
+    print("QCD v -> M_Z supplied-input transfer-map theorem")
     print("=" * 78)
-    print()
-    print("Theorem surface: exact T_1 on D plus a bounded T_2 grid certificate")
-    print(f"over D = [{A_MIN}, {A_MAX}] under the declared imports.")
-    print("No specific boundary value alpha_s(v) appears in any load-bearing check;")
-    print("PDG comparisons are confined to the labeled class-D appendix (Part 8).")
-
-    c_a, t_f = part_1_group_factors()
-    L = closed_form_L(c_a, t_f)
-    part_2_k1_landau_margin(L)
-    two_int_residual = part_3_k2_closed_form(L)
-    part_4_k3_expansive_bijection(L)
-    part_5_k4_auxiliary_insensitivity()
-    part_6_k5_envelope_and_falsification(L, two_int_residual)
-    part_7_manifest_sync(L)
-    part_8_comparator_appendix()
-
-    print()
-    print("=" * 78)
-    print(f"CHECK CLASSES: A={CLASS_COUNTS['A']}  B={CLASS_COUNTS['B']}  "
-          f"D={CLASS_COUNTS['D']}  (D-comparators are a labeled minority; "
-          "no C-class first-principles claims made)")
-    print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
-    print("=" * 78)
-
-    sys.exit(1 if FAIL_COUNT else 0)
+    if args.independent:
+        run_independent()
+    elif args.hostile:
+        run_hostile()
+    else:
+        run_normal()
+    print(f"\nSUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    return 1 if FAIL_COUNT else 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

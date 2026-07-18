@@ -1,4 +1,4 @@
-# Probe X-L1-MSbar — Beta-Function Coefficients in a Lattice/`<P>` Scheme: Bounded-Tier Source Note
+# Probe X-L1-MSbar — MSbar Beta-Function Source Check and Incomplete Lattice/`<P>` Rescaling: Open-Gate Source Note
 
 **Date:** 2026-05-10
 **Claim type:** open_gate (bounded diagnostic; mostly negative)
@@ -13,16 +13,18 @@ audit lane.
 
 ## 0. Probe context
 
-The Lane 1 strong-coupling chain currently relies on the standard
-SM 2-loop MSbar RGE plus optional 3-loop / 4-loop MSbar coefficients
-(see [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md))
-when running `alpha_s(v)` to `alpha_s(M_Z)`. The two-loop coefficients
-`beta_0 = 7` and `beta_1 = 26` at `N_f = 6` have framework-native
-structural support via the S1 Identification Source Theorem
+The adjacent running note defines a supplied-input piecewise two-loop `MSbar`
+QCD EFT map with `n_f=6` above `m_t`, `n_f=5` below, and supplied identity
+matching at the pole-mass threshold
+(see [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)).
+It does not include optional three- or four-loop coefficients. At `N_f=6`,
+`beta_0 = 7` has a conditional upstream re-expression via the S1
+Identification Source Theorem
 ([`SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md`](SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md)
-companion form `b_3 = (11 N_color − 2 N_quark)/3 = 7` for QCD plus
-the universal 2-loop `b_3' = (102 - 38 N_f / 3)` which at `N_f = 6` gives
-`(102 - 76)/1 = 26` upon rescaling).
+companion form `b_3 = (11 N_color − 2 N_quark)/3 = 7` for QCD).
+`beta_1 = 102 - 38 N_f/3 = 26` is instead a supplied standard-continuum
+QCD coefficient; the Casimirs and matter counts alone do not derive its
+scalar weights.
 
 The 3-loop and 4-loop coefficients `beta_2` and `beta_3` are
 **scheme-dependent** and currently treated as unaudited "MSbar literature
@@ -31,28 +33,33 @@ imports."
 This probe asks: can the framework's current source content
 (physical Cl(3) local algebra, Z^3 spatial substrate, Casimir algebra,
 plaquette structure, Wilson-loop expectation
-`<P>`) directly derive `beta_2` and `beta_3` in the framework's natural
-**lattice / `<P>` scheme** (not MSbar) in closed form, converting a
-scheme-dependent literature import into a framework-native derivation?
+`<P>`) directly derive the imported MSbar `beta_2` and `beta_3`, or define
+them for the stipulated **lattice / `<P>` rescaling**? The displayed
+rescaling is not itself a completed renormalization scheme.
 
 ## 1. Open Gate (bounded diagnostic, mostly negative)
 
 **Open gate (X-L1-MSbar; bounded diagnostic).** On the physical Cl(3)
 local algebra, Z^3 spatial substrate, and current framework source content,
-the three-loop and four-loop QCD beta-function coefficients are NOT
-fully derivable in any scheme without additional integral primitives
-not present in the current source content. Specifically:
+the three-loop and four-loop QCD beta-function coefficients are not
+derived for MSbar by current source content, while the stipulated
+lattice/`<P>` rescaling does not yet define coefficients at all.
+This is not an all-scheme no-go: finite coupling redefinitions can assign
+higher beta coefficients in other schemes. Specifically:
 
-1. **(beta_0, beta_1 are universal and already upstream-supported.)** The 1-loop
+1. **(The declared beta_0 and beta_1 coefficients have distinct authority.)** The 1-loop
    coefficient `beta_0 = (11 N_color − 2 N_quark)/3 = 7` at `N_f = 6` and
    the 2-loop coefficient `beta_1 = (34/3) C_A² − (20/3) C_A T_F N_f −
-   4 C_F T_F N_f = 26` at `N_f = 6` are scheme-INDEPENDENT (universal).
-   They are derivable from S1 + upstream Casimirs `(C_F = 4/3, C_A = 3,
-   T_F = 1/2)`. **No scheme conversion needed.**
+   4 C_F T_F N_f = 26` at `N_f = 6` are the standard coefficients used by
+   the adjacent map. The first has the cited conditional upstream
+   re-expression. The second is supplied standard-continuum input:
+   substituting `(C_F = 4/3, C_A = 3, T_F = 1/2)` verifies `26` but does
+   not derive the weights `34/3`, `20/3`, and `4`. Its usual universality is
+   limited to the corresponding mass-independent coupling conventions.
 
-2. **(beta_2 in any scheme requires 3-loop integral primitives.)**
-   At 3-loop, the QCD beta function decomposes into Casimir-tensor
-   channels:
+2. **(The MSbar beta_2 import requires its perturbative calculation; the
+   `<P>` rescaling requires a completed prescription.)**
+   At 3-loop, consider the following candidate Casimir-tensor monomials:
 
    ```
    beta_2  =  c_FFF · C_F³  +  c_FFA · C_F² C_A  +  c_FAA · C_F C_A²
@@ -61,11 +68,12 @@ not present in the current source content. Specifically:
             + c_Ann · C_A (T_F N_f)²
    ```
 
-   The **color-tensor skeleton** (the basis of products of `C_F, C_A,
-   T_F N_f`) is framework-derivable from upstream Casimir algebra.
-   The **scalar coefficients `c_FFF, ..., c_Ann`** are scheme-dependent
+   The displayed products of `C_F, C_A, T_F N_f` are a candidate Casimir-
+   monomial enumeration, not a derivation of the actual nonzero diagrammatic
+   basis. In particular, Casimir algebra alone does not decide which monomials
+   occur. The **scalar coefficients `c_FFF, ..., c_Ann`** are scheme-dependent
    3-loop integrals that depend on:
-   - choice of regularization (dim reg vs lattice cutoff vs `<P>`-scheme),
+   - choice of regularization and a completed renormalization condition,
    - choice of subtraction (MS-bar vs MOM vs Wilson-loop scheme),
    - 3-loop topology integrals (sunsets, ladders, cross diagrams).
 
@@ -75,120 +83,104 @@ not present in the current source content. Specifically:
    require explicit Brillouin-zone integrals over the Wilson lattice
    propagator that are not part of the current source stack).
 
-3. **(beta_3 status: same obstruction at higher order.)** At 4-loop, the
-   color-tensor skeleton extends with quartic Casimir tensors `(C_F⁴,
+3. **(beta_3 status: MSbar import and incomplete `<P>` rescaling.)** At 4-loop, a
+   candidate monomial list extends with quartic Casimir tensors `(C_F⁴,
    C_F³ C_A, C_F² C_A², C_F C_A³, C_A⁴)` plus mixed `T_F N_f` terms; for
    QCD the higher-rank invariants `d_F^{abcd} d_F^{abcd} / N_R` and
    `d_F^{abcd} d_A^{abcd} / N_R` enter as Casimir
-   algebra. But the scalar 4-loop coefficients are again scheme-dependent
-   integral primitives outside the current source content. Same verdict.
+   algebra. The runner does not derive which candidate monomials occur or their
+   scalar weights. MSbar requires its perturbative calculation; the `<P>`
+   rescaling first requires a completed prescription.
 
-4. **(<P>-scheme is structurally distinct from MSbar.)** This is a
-   POSITIVE structural observation: in the framework's natural lattice
-   substrate, the renormalization point IS the plaquette `<P>(beta)`
-   rather than the dimensional-regularization scale `mu_MS`. The scheme
-   conversion is
+4. **(The stipulated `<P>` rescaling differs from the bare coupling.)**
+   The runner evaluates
 
    ```
    alpha_<P>(beta)  =  alpha_bare(beta) / <P>(beta)
-   alpha_MSbar(mu)   =  alpha_bare(beta) · Z_MSbar(beta, a mu)
    ```
 
-   where `<P>(beta)` IS framework-derivable (heat-kernel limit
+   where the displayed `<P>(beta)` is supplied by the cited heat-kernel limit
    `<P>_HK = 1 - exp(-(4/3) s_t)` per
    [`C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md`](C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md)).
-   The `Z_MSbar` factor, by contrast, is computed in dimensional
-   regularization and is foreign to the framework. The framework's
-   `<P>` scheme is therefore **structurally privileged**: scheme
-   distinction is real and load-bearing, not just a relabeling.
+   This is a stipulated coupling convention in this probe; by itself it does
+   not define a complete renormalization condition, an MSbar conversion, or a
+   beta function.
 
-5. **(But the <P>-scheme beta_2 still requires 3-loop lattice
-   perturbation theory.)** Even in the framework-native `<P>` scheme,
-   computing `beta_2^<P>` requires:
+5. **(No beta_2 follows from the stipulated rescaling.)** A separately
+   completed lattice renormalization prescription and calculation could use:
    - 3-loop self-energy diagrams on a lattice (Wilson action),
    - tadpole-improved propagator integrals over the Brillouin zone,
    - mixing with the lattice-specific zero-mode and gauge fixing.
 
-   None of these primitives exist on current source content. The
-   scheme distinction is genuine; the framework cannot reach 3-loop in
-   ANY scheme without importing additional perturbation-theory primitives.
+   None is performed here, so no `beta_2` for the `<P>` rescaling is defined
+   or inferred.
 
 ## 2. What this closes vs. does not close
 
 ### Closed (positive observations)
 
-- **beta_0, beta_1 are universal and upstream-supported.** Confirmed: the 1-loop
-  and 2-loop QCD beta-function coefficients are scheme-independent and
-  derivable from upstream Casimir algebra + S1. No scheme distinction
-  affects them.
-- **Color-tensor skeleton at 3-loop is source-supported.** The basis of nine
-  Casimir-tensor channels at 3-loop QCD `(C_F³, C_F² C_A, C_F C_A²,
-  C_A³, C_F² T_F N_f, C_F C_A T_F N_f, C_A² T_F N_f, C_F (T_F N_f)²,
-  C_A (T_F N_f)²)` is derivable on current source content; the four-loop
-  basis with quartic Casimirs is also source-supported as algebra.
-- **Scheme distinction is structurally real.** The `<P>` scheme and
-  MSbar scheme are genuinely different renormalization conventions, not
-  just relabelings: they differ in the choice of finite parts of the
-  3-loop subtraction. The framework's `<P>` scheme is structurally
-  privileged because `<P>(beta)` IS framework-derivable while
-  `Z_MSbar(beta, a mu)` is not.
+- **The declared beta coefficients are reproduced with explicit authority.**
+  `beta_0=7` has the cited conditional upstream re-expression; `beta_1=26`
+  is reproduced from the supplied standard-continuum formula and Casimir
+  values, without claiming a framework-native derivation of its weights.
+- **Candidate Casimir monomials are evaluated algebraically.** The runner
+  evaluates a finite monomial list but does not establish the actual nonzero
+  three- or four-loop diagrammatic basis.
+- **The stipulated `<P>` rescaling differs algebraically from the bare
+  coupling.** This is a convention check only; it does not establish a full
+  renormalization scheme or its higher beta coefficients.
 
-### Not closed (frontier remaining; bounded admission)
+### Open inputs and undefined rescaling data
 
-- **beta_2 closed-form derivation in any scheme.** The scalar
-  3-loop integral primitives that fix the channel coefficients
+- **beta_2 closed-form derivation in `MSbar`.** The scalar
+  3-loop integral primitives that fix the candidate-monomial occurrences and coefficients
   `c_FFF, ..., c_Ann` are not in the current source content; they must be either
   (a) imported from MSbar literature [Tarasov-Vladimirov-Zharkov 1980,
       Larin-Vermaseren 1993], or
   (b) imported from lattice perturbation theory literature
-      [Lüscher-Weisz 1995, Christou-Panagopoulos 1998],
+      [Lüscher-Weisz 1995, Christou-Feo-Panagopoulos-Vicari 1998],
   or computed on a NEW perturbation-theory primitive layer outside
-  current source content.
-- **beta_3 same as beta_2 plus quartic-Casimir 4-loop integrals**
-  [van Ritbergen-Vermaseren-Larin 1997 in MSbar; no published full
-  4-loop lattice scheme]. Same verdict.
-- **Scheme conversion factor between MSbar and `<P>`-scheme.** In
-  principle the conversion involves the framework-derivable `<P>(beta)`
-  ratio `alpha_<P>/alpha_MSbar = 1 + delta_1 alpha_MSbar + delta_2
-  alpha_MSbar² + ...` with `delta_1, delta_2, ...` computable from
-  upstream `<P>` plus 1-loop, 2-loop matching integrals. The 1-loop
-  matching `delta_1 = -(4 pi)/(3 <P>)` could be a follow-on
-  framework-native theorem; full 3-loop conversion is beyond current
-  source content.
+  current source content. A beta coefficient for the stipulated `<P>`
+  rescaling remains undefined until a full prescription is supplied.
+- **beta_3.** The MSbar coefficient is an
+  external comparator [van Ritbergen-Vermaseren-Larin 1997], while current
+  source content contains neither a completed `<P>` prescription nor the
+  perturbative data needed to calculate its coefficient.
+- **MSbar conversion from the stipulated `<P>` rescaling.** A separately
+  defined renormalization condition and matching calculation are required;
+  no conversion coefficient is inferred here.
 
 ### Final bounded statement
 
 ```
 [POSITIVE]
-beta_0 = (11 N_color − 2 N_quark)/3 = 7  (scheme-independent, upstream-supported via S1+Casimir)
+beta_0 = (11 N_color − 2 N_quark)/3 = 7  (conditional upstream re-expression)
 beta_1 = ((34/3) C_A² − (20/3) C_A T_F N_f − 4 C_F T_F N_f) = 26 at N_f=6
-        (scheme-independent universal, upstream-supported via S1+Casimir)
+        (supplied standard-continuum formula; substitution check, not weight derivation)
 
-[STRUCTURALLY SOURCE-SUPPORTED]
-3-loop Casimir-tensor SKELETON: nine-channel decomposition of beta_2
-4-loop Casimir-tensor SKELETON: extended decomposition with quartic Casimirs
-Scheme distinction <P> vs MSbar: structurally REAL on the framework
-                                 substrate
-<P>(beta) closed form: <P>_HK_SU(3) = 1 - exp(-(4/3) s_t)
+[ALGEBRAIC DIAGNOSTICS]
+Candidate Casimir monomials: evaluated, not an exhaustive beta-function basis
+<P>(beta) heat-kernel expression: stipulated coupling rescaling for this probe
 
-[BOUNDED ADMISSION]
-beta_2 in <P>-scheme closed form: NOT derivable from current source content;
-        requires 3-loop lattice perturbation theory primitives
-beta_3 in <P>-scheme closed form: NOT derivable; same obstruction at
-        4-loop (worse: full 4-loop lattice PT not even published in
-        literature for any standard lattice action)
+[OPEN INPUTS]
+beta_2 and beta_3 for the stipulated <P> rescaling: UNDEFINED here;
+        a completed prescription is required before matching or direct
+        perturbative data can determine them
 
 [FALSIFIABLE PREDICTION]
 Total framework-native gain on Lane 1 bridge from this probe:
-  - converts "MSbar β_0, β_1 are imports" → "β_0, β_1 are upstream-supported"
-    (strong: narrows the 2-loop MSbar truncation envelope claim)
-  - β_2, β_3 remain bounded admissions in any scheme
+  - records the conditional upstream re-expression of β_0 and supplied
+    standard-continuum authority of β_1; it does not turn the observed
+    one-loop-to-two-loop shift into a remainder bound
+  - MSbar β_2, β_3 remain external comparators; the stipulated <P>
+    rescaling defines no beta coefficients;
+    no claim is made for schemes defined by other finite coupling redefinitions
 ```
 
-## 3. Conditional admissions
+## 3. Supplied and imported context
 
-This open gate uses the conditional admissions of the
-underlying framework, plus the named scheme-conversion frontier above:
+This open gate uses the named supplied context and scheme-conversion
+frontier above:
 
 - `g_bare = 1` per [`G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md`](G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md)
 - S1 Identification Source Theorem per [`CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md`](CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md)
@@ -208,17 +200,16 @@ underlying framework, plus the named scheme-conversion frontier above:
   N_f + (50065/162 + 6472 zeta_3 / 81) N_f² + 1093/729 N_f³` per
   van Ritbergen-Vermaseren-Larin 1997; at `N_f = 6` numerically the
   VVL formula in convention `beta(g) = -beta_0 g^3/(16 pi^2) - ...`
-  evaluates to `beta_3 ≈ 2472.28`. NOTE: alternate normalization
-  conventions in the literature absorb factors of `(16 pi^2)^n` into
-  the coefficients, leading to alternate numerical values such as
-  `~ 643.83 ≈ 3863/6`. The bounded-admission verdict stands across
-  all conventions; the exact numerical value depends on convention but
-  is in any case not framework-derivable from current source content.
-- Lattice `beta_2^lat` for Wilson action at `N_f = 0`:
-  Lüscher-Weisz 1995, `beta_2^lat ≈ 0.4523`; at `N_f = 6` not directly
-  available in published tables.
+  evaluates to `beta_3 ≈ 2472.28`. This comparator remains tied to the
+  displayed formula and convention; no unrelated `643.83` value is treated
+  as an alternate normalization of it.
+- Christou-Feo-Panagopoulos-Vicari 1998 computes the three-loop
+  bare-lattice beta-function coefficient for Wilson fermions and the
+  two-loop MSbar-to-bare-coupling relation. That fixed Wilson bare-lattice
+  result does not complete or define the different stipulated `<P>`
+  prescription used by this probe.
 
-These are imported authorities for a bounded theorem comparator; the
+These are imported numerical comparators for this open diagnostic; the
 runner verifies them at the level of literature-cross-check, NOT
 framework-native derivation.
 
@@ -227,56 +218,50 @@ framework-native derivation.
 The runner [`scripts/cl3_koide_x_l1_msbar_2026_05_08_probeX_L1_msbar.py`](../scripts/cl3_koide_x_l1_msbar_2026_05_08_probeX_L1_msbar.py)
 implements:
 
-1. **POSITIVE source check 1**: `beta_0 = (11 N_color − 2 N_quark)/3 = 7`
-   at `N_f = 6` from S1 + upstream Casimirs. Direct from
+1. **CONDITIONAL source check 1**: `beta_0 = (11 N_color − 2 N_quark)/3 = 7`
+   at `N_f = 6` from the cited S1/matter-count re-expression. Direct from
    `SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md`
    companion form for QCD.
 
-2. **POSITIVE source check 2**: `beta_1 = (34/3) C_A² − (20/3) C_A T_F
-   N_f − 4 C_F T_F N_f = 26` at `N_f = 6` from upstream Casimirs. This
-   is scheme-INDEPENDENT (universal at 2-loop in MSbar, MOM, lattice,
-   `<P>`-scheme).
+2. **SUPPLIED-FORMULA check 2**: `beta_1 = (34/3) C_A² − (20/3) C_A T_F
+   N_f − 4 C_F T_F N_f = 26` at `N_f = 6`. The runner verifies the
+   substitution in the supplied standard-continuum formula; it does not derive
+   the scalar weights from the Casimirs.
 
-3. **POSITIVE structural check 3**: Color-tensor skeleton at 3-loop is
-   exactly the nine-channel Casimir-tensor decomposition. Verified by
-   enumerating 3-loop topologies and assigning the unique color tensor
-   to each.
+3. **ALGEBRAIC diagnostic 3**: A nine-element candidate Casimir-monomial
+   list is evaluated. The runner does not enumerate Feynman topologies or
+   establish that this is the actual nonzero three-loop basis.
 
-4. **POSITIVE structural check 4**: `<P>_HK_SU(3)(s_t) = 1 - exp(-(4/3)
-   s_t)` is framework-derivable; this constitutes the framework-native
-   `<P>`-scheme renormalization point. (Cross-references C-iso SU(3)
-   NLO bounded note.)
+4. **CONVENTION diagnostic 4**: `<P>_HK_SU(3)(s_t) = 1 - exp(-(4/3)
+   s_t)` is used as a stipulated coupling rescaling. This does not by itself
+   constitute a complete renormalization condition.
 
-5. **BOUNDED admission check 5**: For each Casimir-tensor channel
-   `c_FFF, ..., c_Ann`, document that the scalar value requires 3-loop
-   integral primitives outside current source content. Show that the
-   framework HAS the algebraic skeleton (channel decomposition) but
-   NOT the integral content (channel weights).
+5. **OPEN-INPUT check 5**: For each candidate Casimir monomial, document
+   that its occurrence and scalar weight in MSbar are not
+   established by the monomial arithmetic.
 
 6. **NUMERICAL comparator check 6**: Verify via direct rational
    arithmetic that the published MSbar values reproduce literature
    numbers at `N_f = 6`:
    - `beta_2^MSbar(N_f=6) = -65/2 = -32.5`
-   - `beta_3^MSbar(N_f=6) ≈ 643.83 ≈ 3863/6 ≈ 643.833`
+   - `beta_3^MSbar(N_f=6) ≈ 2472.28` in the displayed convention
    These are reported as literature-comparator only, NOT as framework
    derivations.
 
-7. **BOUNDED admission check 7**: Document the lattice scheme β_2^lat
-   for Wilson action: Lüscher-Weisz 1995 give the 1-loop coefficient
-   exactly and 2-loop with significant tadpole improvement, but the
-   3-loop lattice beta function for Wilson action at `N_f = 6` is not
-   published. Lattice scheme is genuinely structurally distinct, but
-   accessing it would still require 3-loop lattice perturbation theory
-   primitives outside current source content.
+7. **SOURCE-CONTENT check 7**: Cite the fixed Wilson bare-lattice
+   perturbative calculation without treating it as the coefficient of the
+   incompletely specified `<P>` prescription. Current source content supplies
+   neither that conversion nor a completed `<P>` renormalization condition.
 
-8. **HONEST verdict**: bounded; MOSTLY NEGATIVE on the closed-form
-   derivation, with positive structural source support at 1-loop, 2-loop,
-   and the color-tensor skeleton at 3-loop.
+8. **HONEST verdict**: open diagnostic for the MSbar source-content gap and
+   incomplete `<P>` rescaling;
+   coefficient substitution and candidate-monomial arithmetic do not close
+   higher-loop coefficients.
 
 ## 5. Dependencies
 
 - Framework baseline: physical Cl(3) local algebra and Z^3 spatial substrate
-  (repo baseline; not a new admission in this note).
+  (repo baseline; not a new premise in this note).
 - [`SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md`](SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md)
   for the SM gauge `b_2, b_3, b_QED` 1-loop trio in S1-structural form
   (companion `b_3 = 7` for QCD reused as `beta_0` here).
@@ -286,14 +271,16 @@ implements:
   for upstream `(C_F, C_A, T_F)` Casimir authority.
 - [`YT_P3_MSBAR_TO_POLE_K2_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md`](YT_P3_MSBAR_TO_POLE_K2_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md)
   and [`YT_P3_MSBAR_TO_POLE_K3_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md`](YT_P3_MSBAR_TO_POLE_K3_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md)
-  for the precedent pattern: color-tensor skeleton source-supported, scalar
-  integral primitives cited from QCD literature.
+  for related color-factor bookkeeping; they do not establish an exhaustive
+  beta-function channel basis here.
 - [`C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md`](C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md)
-  for the framework-native `<P>_HK_SU(3) = 1 - exp(-(4/3) s_t)` closed
-  form used as the structural `<P>`-scheme renormalization point.
+  for the `<P>_HK_SU(3) = 1 - exp(-(4/3) s_t)` expression used in the
+  stipulated rescaling diagnostic.
 - [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
-  for the existing 2-loop SM RGE bridge (Machacek-Vaughn) treated as
-  bounded standard infrastructure.
+  for the supplied-input piecewise two-loop `MSbar` QCD EFT map (`n_f=6`
+  then `n_f=5`, with supplied identity matching at `m_t`) treated as bounded
+  standard infrastructure. It does not supply a boundary value, target match,
+  or higher-order remainder bound.
 
 These are imported authorities for a bounded diagnostic.
 
@@ -301,22 +288,20 @@ These are imported authorities for a bounded diagnostic.
 
 This note does NOT claim:
 
-- **Framework-native closed form for `beta_2` or `beta_3` in any scheme.**
-  The honest verdict is BOUNDED ADMISSION: the framework reaches the
-  color-tensor skeleton at 3-loop but does not have the integral
-  content to fix the channel weights. The scheme distinction is
-  structurally real, but it does not by itself give `beta_2^<P>` in
-  closed form.
+- **Framework-native closed form for `beta_2` or `beta_3` in `MSbar`, or
+  any beta coefficient for the stipulated `<P>` rescaling.**
+  Candidate-monomial arithmetic does not supply the MSbar perturbative data,
+  and the rescaling is not a completed prescription. Other schemes are not
+  excluded.
 - **Promotion of any current MSbar import to retained.** The MSbar
   values for `beta_2, beta_3` remain external numerical inputs.
 - **Direct contribution to closing Lane 1 alpha_s(M_Z).** Currently
-  Lane 1 uses 2-loop MSbar bridge via
+  Lane 1 uses the supplied-input piecewise two-loop MSbar QCD map via
   [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md);
-  the upstream-supported `beta_0, beta_1` surface covers that bridge,
+  the declared `beta_0, beta_1` formulas cover that bridge,
   so this probe does NOT change Lane 1 status.
 - **Closed-form derivation of the lattice → MSbar scheme conversion.**
-  The 1-loop matching `delta_1 = -(4 pi)/(3 <P>)` is a candidate
-  follow-on; full 3-loop conversion is beyond current source content.
+  No matching coefficient is inferred from the stipulated rescaling.
 
 ## 7. Standard QCD beta-function literature
 
@@ -333,9 +318,10 @@ This note does NOT claim:
 - **Lüscher M., Weisz P.** (1995), *Computation of the relation between the
   bare lattice coupling and the MSbar coupling in SU(N) gauge theories to
   two loops*, Nucl. Phys. B 452, 234. Lattice → MSbar matching at 2-loop.
-- **Christou C., Panagopoulos H.** (1998), *Two-loop additive mass renormalization
-  with clover fermions and Symanzik improved gluons*, Nucl. Phys. B 525,
-  387. 2-loop lattice scheme.
+- **Christou C., Feo A., Panagopoulos H., Vicari E.** (1998), *The
+  three-loop beta-function of SU(N) lattice gauge theories with Wilson
+  fermions*, Nucl. Phys. B 525, 387 (with erratum). Three-loop
+  bare-lattice coefficient and two-loop MSbar-to-bare relation.
 - **Bode A., Weisz P., Wolff U. (ALPHA collaboration)** (2000), *Two-loop
   computation of the Schrödinger functional in lattice QCD*, Nucl. Phys.
   B 576, 517. Schrödinger-functional scheme at 2-loop.
@@ -346,17 +332,15 @@ This note does NOT claim:
 
 | Quantity | Scheme | Review status | Source |
 |---|---|---|---|
-| `beta_0 = 7` (N_f=6) | universal | upstream-supported input | S1 + Casimir, this probe |
-| `beta_1 = 26` (N_f=6) | universal (2-loop) | upstream-supported input | S1 + Casimir, this probe |
-| 3-loop Casimir-tensor skeleton (9 channels) | universal | source-supported bounded result, unaudited | This probe (color tensors) |
-| 4-loop Casimir-tensor skeleton with quartic invariants | universal | source-supported bounded result, unaudited | This probe (extended Casimir algebra) |
-| `<P>_HK_SU(3)` closed form | `<P>`-scheme native | upstream-supported input | C_ISO_SU3_NLO bounded note |
-| Scheme distinction `<P>` vs MSbar | structural | source-supported bounded result, unaudited | This probe (positive observation) |
+| `beta_0 = 7` (N_f=6) | standard one-loop convention | conditional upstream re-expression | S1/matter-count note + this probe |
+| `beta_1 = 26` (N_f=6) | supplied standard-continuum formula | substitution check only | standard QCD formula + Casimir values |
+| Candidate 3-/4-loop Casimir monomials | diagnostic only | not an exhaustive diagrammatic basis | This probe |
+| `<P>_HK_SU(3)` expression | stipulated rescaling | supplied by cited bounded note | C_ISO_SU3_NLO bounded note |
+| `<P>` vs bare coupling | algebraic convention difference | not a full renormalization-scheme derivation | This probe |
 | `beta_2^MSbar(N_f=6) = -65/2` | MSbar | bounded import/comparator | Tarasov-Vladimirov-Zharkov 1980 |
-| `beta_3^MSbar(N_f=6) ≈ 3863/6` | MSbar | bounded import/comparator | van Ritbergen et al. 1997 |
-| `beta_2^<P>(N_f=6)` closed form | `<P>`-scheme | open gate: not derivable from current source content | This probe (negative result) |
-| `beta_3^<P>(N_f=6)` closed form | `<P>`-scheme | open gate: not derivable from current source content | This probe (negative result) |
-| 1-loop scheme conversion `delta_1 = -(4 pi)/(3 <P>)` | conversion | candidate follow-on | This probe (open) |
+| `beta_3^MSbar(N_f=6) ≈ 2472.28` | MSbar | external comparator | van Ritbergen et al. 1997 |
+| `beta_2`, `beta_3` for the `<P>` rescaling | incomplete stipulated prescription | not defined by this rescaling | This probe |
+| `<P>` to MSbar conversion coefficient | conversion | open; not computed | This probe |
 
 ## 9. Falsifiable structural claims
 
@@ -365,15 +349,12 @@ This note does NOT claim:
 2. `beta_1 = (34/3) C_A² − (20/3) C_A T_F N_f − 4 C_F T_F N_f` evaluated
    at upstream `(C_F = 4/3, C_A = 3, T_F = 1/2, N_f = 6)` gives
    `(34/3)·9 − (20/3)·3·(1/2)·6 − 4·(4/3)·(1/2)·6 = 102 − 60 − 16 = 26`.
-3. The 3-loop and 4-loop QCD beta-function color-tensor skeletons are
-   exactly determined by upstream Casimirs alone; the channel weights
-   (scalars) are NOT framework-derivable.
-4. Scheme conversion between MSbar and `<P>`-scheme is not the identity
-   — they yield genuinely different `beta_2, beta_3` values; this
-   asymmetry is a real structural feature, not a relabeling.
-5. The framework's privileged `<P>`-scheme renormalization point is
-   `<P>_HK = 1 - exp(-(4/3) s_t)`; this gives the framework a
-   structurally distinct renormalization condition from MSbar.
+3. The displayed candidate Casimir monomials have the runner's stated values;
+   no exhaustive QCD beta-function basis is inferred from that arithmetic.
+4. The stipulated `<P>` rescaling changes `alpha_bare`; no MSbar conversion
+   or higher beta coefficient follows from that algebraic fact.
+5. The stipulated `<P>` rescaling uses `<P>_HK = 1 - exp(-(4/3) s_t)`;
+   the runner does not derive a complete renormalization condition from it.
 
 ## 10. Reproduction
 
@@ -381,9 +362,6 @@ This note does NOT claim:
 python3 scripts/cl3_koide_x_l1_msbar_2026_05_08_probeX_L1_msbar.py
 ```
 
-Expected: a sequence of PASS lines for the positive structural
-source checks (beta_0, beta_1, color-tensor skeleton, scheme distinction)
-and explicit BOUNDED-ADMISSION lines for the obstructions
-(scalar 3-loop and 4-loop integral primitives), with a final summary
-classifying the probe verdict as an `open_gate`
-(positive on source support, mostly negative on full closed-form derivation).
+Expected: coefficient-substitution and candidate-monomial arithmetic checks,
+explicit OPEN lines for missing MSbar data and the incomplete rescaling, and a final
+`open_gate` summary. No exhaustive loop basis or all-scheme no-go is claimed.

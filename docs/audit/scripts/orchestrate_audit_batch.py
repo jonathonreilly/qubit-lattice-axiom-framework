@@ -57,8 +57,31 @@ PACKET_COMPLETION_POLL_SECONDS = 15
 PACKET_COMPLETION_EXIT_GRACE_SECONDS = 10
 
 
+def _repo_identity() -> str:
+    """Canonical identity shared by every git worktree of one clone.
+
+    The lock must not key on the checkout root: two worktrees of the same
+    clone would then hold different locks and race pushes anyway. The git
+    common directory is shared across a clone's worktrees. Boundary: an
+    INDEPENDENT clone of the same remote has its own common dir and its own
+    lock — cross-clone coordination stays with the skill's coexistence
+    contract, not this lock.
+    """
+    proc = subprocess.run(
+        ["git", "rev-parse", "--git-common-dir"],
+        cwd=REPO_ROOT, capture_output=True, text=True,
+    )
+    common = (proc.stdout or "").strip()
+    if proc.returncode != 0 or not common:
+        return str(REPO_ROOT.resolve())
+    path = Path(common)
+    if not path.is_absolute():
+        path = REPO_ROOT / path
+    return str(path.resolve())
+
+
 def acquire_exclusive_drain_lock(label: str):
-    """One audit-lane orchestrator per repository per machine.
+    """One audit-lane orchestrator per clone (all its worktrees) per machine.
 
     Verdict/reseat commits ship the full regenerated audit-surface set, so
     two concurrent audit-lane orchestrators race every push and each race
@@ -68,7 +91,7 @@ def acquire_exclusive_drain_lock(label: str):
     released automatically on process exit. Returns an open handle to keep
     referenced, or None when another orchestrator already holds it.
     """
-    key = hashlib.sha256(str(REPO_ROOT).encode("utf-8")).hexdigest()[:12]
+    key = hashlib.sha256(_repo_identity().encode("utf-8")).hexdigest()[:12]
     lock_path = Path(tempfile.gettempdir()) / f"audit-lane-{key}.lock"
     handle = open(lock_path, "w")
     try:

@@ -301,7 +301,10 @@ def main() -> int:
     )
 
     print("\nPart 3: exact chiral family, Casimir, and Gram identities")
-    run_exact("Y_i has P_R-to-P_L orientation", chiral_orientation_residuals())
+    run_exact(
+        "Y_i maps the P_L subspace to the P_R subspace",
+        chiral_orientation_residuals(),
+    )
     run_exact("Y_i obeys the vector commutator", vector_residuals(B_16, Y))
     run_exact(
         "C^8 Gamma family has adjoint Casimir 2",

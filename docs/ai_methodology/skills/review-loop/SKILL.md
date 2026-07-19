@@ -893,7 +893,10 @@ title/body names the row or quotes its audit repair target):
    a sibling-runner pin sweep was done before every note edit (grep
    `scripts/` for runners pinning the edited sentences); no authored grade
    language anywhere; no `docs/audit/data/` content beyond
-   dispatcher-sidecar targeting metadata.
+   dispatcher-sidecar targeting metadata and the citation-graph manifest
+   acknowledgment (`docs/audit/data/citation_graph_manifest.json`) when the
+   landed commits change graph dependencies (see the landing loop's
+   proactive rule).
 
 7. **Pipeline-output-stripped PASS gate (hard).** After running the pipeline
    for validation, the framework PR must NOT land any pipeline-regenerated
@@ -903,7 +906,11 @@ title/body names the row or quotes its audit repair target):
    merge. The following must hold for review-loop to issue PASS:
 
 ```bash
-# Must produce no output. Any change here means the working tree has
+# Must produce no output EXCEPT, when the landing changes citation-graph
+# dependencies, exactly one staged line for
+# docs/audit/data/citation_graph_manifest.json (the stage-18 delta
+# acknowledgment, which MUST co-land per the landing loop's proactive
+# rule). Any other change here means the working tree has
 # pipeline-regenerated audit-lane outputs left over from validation;
 # drop them (see below) before recommitting.
 git status --porcelain docs/audit/AUDIT_LEDGER.md \

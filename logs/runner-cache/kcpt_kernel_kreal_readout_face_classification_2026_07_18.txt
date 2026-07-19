@@ -1,0 +1,100 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_kernel_kreal_readout_face_classification_2026_07_18.py
+runner_sha256: 845c027b5353bc2e06eb8c8bda9ee28725ea89b722c4483d49537dafd5a89671
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 8.70
+status: ok
+----- stdout -----
+== B1 construction and ambient-K compatibility ==
+[B1.1] PASS D2 integer antisymmetric (D2==-D2.T), entries in {-1,0,1}
+[B1.2] PASS exact rank(D2)==56 so dim ker==8 (got 56)
+[B1.3] PASS D2 @ V8 == 0 exactly (corner waves span the kernel)
+[B1.4] PASS V8.T @ V8 == 64 I8 exactly (orthogonal corner-wave frame)
+[B1.5] PASS Hamming grading of SUBSETS == [0,1,1,1,2,2,2,3] (counts 1+3+3+1)
+[B1.6] PASS conj(V8 c) == V8 conj(c) entrywise (V8 real: kernel K is ambient K restricted)
+== B2 group, central complex structure, commutant (found, not hardcoded) ==
+[B2.1] PASS generator scan yields exactly 24 distinct induced images (got 24)
+[B2.2a] PASS closure under mul has order exactly 96 (got 96)
+[B2.2b] PASS the closure contains -64 I8
+[B2.3] PASS center (commuting with all 96) has order exactly 4 (got 4)
+[B2.4] PASS exactly 2 central elements satisfy mul(g,g)==-64 I8 (got 2)
+[B2.5] PASS selection rule: exactly ONE central square-root has entry [i_vac,i_x2] > 0 (that is J64)
+[B2.6a] PASS closed-form gate: J64[idx(S^{1}),idx(S)] == 64*(-1)^{|S&{0,2}|}*(+1 iff 1 in S)
+[B2.6b] PASS J64 has exactly 8 nonzero entries
+[B2.7a] PASS J64.T == -J64
+[B2.7b] PASS mul(J64,J64) == -64 I8 (so j^2 == -I)
+[B2.7c] PASS trace(J64) == 0
+[B2.8] PASS j == Z (x) iY (x) Z on the parity qubits (Z=diag(1,-1), iY=[[0,1],[-1,0]])
+[B2.9] PASS genpair: the first scan-order induced pair whose closure has order 96 exists
+[B2.10a] PASS rational commutant (stacked kron equations) has nullspace length exactly 2 (got 2)
+[B2.10b] PASS both I8 and j commute with the two normalized generators and are linearly independent
+== B3 T1 Hermitian bridge (symbolic) ==
+[B3.1] PASS H1=(A+A^T)/2 is Hermitian and K-even (conjugate(H1)==H1)
+[B3.2] PASS H2=-i(A-A^T)/2 is Hermitian and K-odd (conjugate(H2)==-H2)
+[B3.3] PASS A == H1 + i H2; rigid split dims 36 + 28 == 64 (symmetric/antisymmetric counts)
+[B3.4a] PASS E(H1,w) == (E(A,w)+conjugate(E(A,w)))/2 (real part)
+[B3.4b] PASS E(H2,w) == (E(A,w)-conjugate(E(A,w)))/(2 i) (imaginary part)
+[B3.5] PASS conjugate-values lemma: E(A,conjugate(w)) == conjugate(E(A,w)) (A real)
+[B3.6] PASS lemma instance for the concrete real matrix j
+== B4 T2/T3 face classification ==
+[B4.1] PASS F = a I + c (i j) is Hermitian for real a,c
+[B4.2] PASS rejectors: I + j is NOT Hermitian; i I is NOT Hermitian
+[B4.3a] PASS conjugate(F) - F == -2 c (i j) (identity)
+[B4.3b] PASS at c==1 the K-defect -2 c (i j) is nonzero: K-reality of F forces c==0
+[B4.3c] PASS entrywise reality: i j FAILS the all-real test, I PASSES
+[B4.4] PASS i j is Hermitian (a=0 case) and K-odd (conjugate(i j) == -(i j))
+[B4.5] PASS P_W=(I - i j)/2, P_Wbar=(I + i j)/2 orthogonal idempotents; sum I; diff == i j
+[B4.6] PASS eigenaction: j P_W == i P_W and j P_Wbar == -i P_Wbar
+[B4.7] PASS rank(P_W)==4 and rank(P_Wbar)==4 (exact sympy rank)
+[B4.8] PASS conjugate(P_W) == P_Wbar (the projectors are non-K-real)
+[B4.9] PASS value table on (v0, conj v0): |v0|^2=2; P_W->(2,0); P_Wbar->(0,2); i j->(-2,+2)
+[B4.10] PASS E_j(w)=i|w|^2 on pair: E(j,v0)=2i, E(j,conj v0)=-2i; equal (zero) real parts; j real, j^T==-j
+[B4.11a] PASS generic witness: E(j, u - i j u) == 2 i (u^T u)
+[B4.11b] PASS generic norm: |u - i j u|^2 == 2 (u^T u)
+== B5 T4 bilinear nullity (transpose pairing, NO conjugation) ==
+[B5.1] PASS j v0 == i v0 (v0 lies in W)
+[B5.2] PASS total isotropy: B(I, u - i j u, u' - i j u') == 0 on W
+[B5.3] PASS integer certificate g j == j g AND g + j g j == 0 holds for all 96 members (count 96)
+[B5.4a] PASS spot-check: B(g1, w, w') == 0 on W (first normalized generator)
+[B5.4b] PASS spot-check: B(g1, w, w') == 0 on Wbar
+[B5.5] PASS non-null control: B(I, e_0, e_0) == 1 (real vectors register)
+[B5.6] PASS discriminator: E_00=e_0 e_0^T fails the certificate and registers 1 on W
+== B6 T5 neutrality, negative controls, ambient scale ==
+[B6.1] PASS orientation swap: (I - i(-j))/2 == P_Wbar
+[B6.2] PASS the OTHER central square-root of -64 I8 equals -J64
+[B6.3] PASS exactly 4 graded members of G, all diagonal
+[B6.4] PASS r-neutral: each graded triplet restriction commutes with diag(w1,w2,w3)
+[B6.5] PASS wrong-axis rejector: axis-1 word fails centrality on some g in G
+[B6.6] PASS wrong-axis rejector: axis-3 word fails centrality on some g in G
+[B6.7] PASS wrong-sign polarization rejector: P_W - P_Wbar == -(i j) and != i j
+[B6.8] PASS wrong-eigenvalue rejector: j v0 != -i v0
+[B6.9] PASS K-reality battery: real for j and I; NOT real for i j and P_W
+[B6.10] PASS ambient scale: (V8 v)^dag (V8 j V8^T)(V8 v) == 4096 E(j,v), 4096 == 64^2
+[B6.11] PASS ambient norm: |V8 v0|^2 == 128 == 64*2
+== B7 verbatim quote gates ==
+[B7.Q1] PASS verbatim fragment present in source AND in the new note
+[B7.Q2] PASS verbatim fragment present in source AND in the new note
+[B7.Q3] PASS verbatim fragment present in source AND in the new note
+[B7.Q4] PASS verbatim fragment present in source AND in the new note
+[B7.Q5] PASS verbatim fragment present in source AND in the new note
+[B7.Q6] PASS verbatim fragment present in source AND in the new note
+[B7.Q7] PASS verbatim fragment present in source AND in the new note
+[B7.Q8] PASS verbatim fragment present in source AND in the new note
+[B7.Q9] PASS verbatim fragment present in source AND in the new note
+[B7.Q10] PASS verbatim fragment present in source AND in the new note
+[B7.Q11] PASS verbatim fragment present in source AND in the new note
+== B8 sharded-ledger existence ==
+[B8.1] PASS ledger shard exists: kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_bounded_theorem_note_2026-07-17.json
+[B8.2] PASS ledger shard exists: kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_bounded_theorem_note_2026-07-16.json
+[B8.3] PASS ledger shard exists: minimal_axioms.json
+== B9 note hygiene ==
+[B9.1] PASS forbidden route/status strings absent (found: [])
+[B9.2] PASS no bare-decimal literal [0-9].[0-9] in note (match: None)
+[B9.3] PASS link set == exactly the 4 dependencies + 2 artifacts; each dependency exists in docs/
+[B9.4] PASS required strings present (missing: [])
+[B9.5] PASS PRESERVE-VERBATIM math strings present (missing: [])
+TOTAL: PASS=79 FAIL=0
+
+----- stderr -----
+

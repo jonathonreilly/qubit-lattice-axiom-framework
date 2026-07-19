@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py
+runner_sha256: 1bb9163d5557b0584a731964421001fe7a9d53aee5bf3af4365cb3f08fb51d98
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.18
+status: ok
+----- stdout -----
+PASS: A1 two menu normalizations eliminate to partial additivity
+PASS: A2 binary menu normalization gives the complement law
+PASS: A3-d2 noncommuting rational M2 effects have a positive menu remainder
+PASS: A3-d4 noncommuting rational M4 effects have a positive menu remainder
+PASS: A4 menu checker rejects a negative remainder eigenvalue
+PASS: B1-r3 3-fold menu elimination gives rational homogeneity
+PASS: B1-r5 5-fold menu elimination gives rational homogeneity
+PASS: B2 partial additivity and nonnegative difference weight imply monotonicity
+PASS: B3 exact operator squeeze and formal weight chain hold between 1/2 and 2/3
+PASS: B4 checker detects a non-monotone toy assignment on an effect chain
+PASS: C1-effects the four M2 identity-plus-Pauli basis elements are effects
+PASS: C1-gram the exact M2 effect-basis trace Gram matrix is nonsingular
+PASS: C2-effects the sixteen M4 identity-plus-Pauli-product basis elements are effects
+PASS: C2-gram the exact M4 effect-basis trace Gram matrix is nonsingular
+PASS: C3 scaled effect additivity makes positive-cone cancellation well-defined
+PASS: D1 M2 trace-pairing solve equals the landed Bloch reconstruction
+PASS: D2 M2 trace pairing reproduces the generic effect-basis linear extension
+PASS: D3 M4 sixteen-value solve reproduces a generic Pauli-product extension
+PASS: D4-d2 M2 Gram nonsingularity forces uniqueness of the trace representative
+PASS: D4-d4 M4 Gram nonsingularity forces uniqueness of the trace representative
+PASS: E1 the reconstructed identity value one gives trace one in both dimensions
+PASS: E2 the projector trace equals the symbolic bra-ket quadratic form
+PASS: E3-vectors the named four-vector principal-minor scaffolding gives exact lower bounds
+PASS: E3-family witness-family quadratic nonnegativity is exactly the PSD eigenvalue criterion
+PASS: T2a lexicographic hemisphere values respect the nz-ny-nx tuple order
+PASS: T2b normalization and two rogue values force trace value one-half at u
+PASS: T2c affine Bloch control remains consistent with its forced trace value
+PASS: T2d-1 hemisphere rule complements an exact antipodal tie-aware pair
+PASS: T2d-2 hemisphere rule complements an exact antipodal tie-aware pair
+PASS: T2d-3 hemisphere rule complements an exact antipodal tie-aware pair
+PASS: T2d-4 hemisphere rule complements an exact antipodal tie-aware pair
+PASS: T3a single-site overlap and real sum-of-squares force the antipode
+PASS: T3b product-projector overlap factorizes into the two Bloch overlaps
+PASS: T3b-factor-uniqueness partial traces recover both nonzero product-projection factors
+PASS: T3c three mutually antipodal unit directions are inconsistent
+PASS: T3d product-projector ranks are exactly 0, 1, 2, and 4
+PASS: T3d-rank-partitions rank additivity exhausts product menus into four partitions
+PASS: T3e a rank-one product below P(-a) tensor I has first slot -a
+PASS: T3e-211-exhaustion both rank 2-1-1 branches have the forced complementary tree form
+PASS: T3f mixed rank-two sum is not identity by a null vector and square trace
+PASS: T3f-four-leaf-exhaustion factor-color pigeonhole and forced complements certify both four-leaf rootings
+PASS: T3g-tree4 complement identities normalize both rooted four-leaf tree menus
+PASS: T3g-211 complement identities normalize both site-swapped 2-1-1 menus
+PASS: T3g-coarse complement identities normalize both 2-2 menus and the identity menu
+PASS: T3h pair-state restriction is affine and conflicts with the product rogue
+PASS: T3j the extension is additive on within-family product merges (both classified cases)
+PASS: T3k the reviewer witness shows the extension is not globally additive (defect minus one)
+PASS: T3i Bell projection is entangled and therefore outside product menus
+PASS: T5a Pauli-conjugation invariance forces a symbolic Hermitian matrix scalar
+PASS: T5b trace normalization gives I/2 and uniform embedded binary weights
+PASS: N1 axiom memo pins record readability to record content alone
+PASS: N2 axiom memo limits the axioms to their named primitive content
+PASS: N3 source note pins its exact claim identifier
+PASS: N4 source note names both finite-effect assumptions descriptively
+PASS: N5 source note identifies the simultaneous additivity and menu-family change
+PASS: N6 source note carries a complete N1 through N8 negative-claim record
+PASS: N7 source note defines the full-domain non-product completion explicitly
+PASS: N8 source note keeps literature and comparison documents off the proof surface
+TOTAL: PASS=58 FAIL=0
+
+----- stderr -----
+

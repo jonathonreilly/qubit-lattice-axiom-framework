@@ -206,24 +206,27 @@ default session is:
 
 1. Setup per "Setup For Each Session" below (fetch, clean worktree,
    pipeline, strict lint).
-2. Finish pending judicial work first — it gates flagship rows:
-   `python3 docs/audit/scripts/orchestrate_judicial_panel.py`
-   (this reseats any disagreement whose recorded seats are unrecoverable —
-   see the reseat contract below — and panels the validly-seated rest).
-3. Drain the development tier in parallel with
-   `python3 docs/audit/scripts/orchestrate_audit_batch.py --lane <name>
-   --max-workers 4` (raise toward 6 only in a quiet pool per the budget
-   below). Default scope rule — no invoker judgment required: use the
-   owner-named lane if one was given; otherwise iterate the lanes of
-   `docs/audit/data/lane_certification_config.json` in listed order,
-   starting from the first lane whose entry in the generated
-   `docs/audit/data/lane_certification.json` reports blocking rows.
-   Reseated rows from step 2 re-enter through whichever lane closure
-   contains them.
-4. Repeat steps 2-3 until a full pass lands nothing new (fresh
-   disagreements surfaced by step 3 get their panel on the next pass),
-   then run the forensic tier as a single canary (rule below), never in
-   the parallel lane.
+2. Launch the panel-aware top-level drainer:
+
+   ```bash
+   python3 docs/audit/scripts/orchestrate_audit_loop.py --max-workers 4
+   ```
+
+   This command owns the complete control loop: finish pending judicial work,
+   drain configured development lanes in order, immediately panel every fresh
+   cross-seat disagreement, resume the same lane after the panel lands, repeat
+   until a full pass lands nothing new, then run one forensic canary. Raise
+   toward 6 workers only in a quiet pool per the budget below.
+3. If the user names a lane, pass `--lane <name>`. Otherwise the orchestrator
+   iterates lanes from `docs/audit/data/lane_certification_config.json`,
+   selecting entries whose generated `lane_certification.json` record still
+   has blocking rows.
+
+Do not detach `orchestrate_audit_batch.py` as the whole `/audit-loop`
+campaign. A batch is one inner development-tier step and intentionally yields
+when cross-seat disagreement appears. Only `orchestrate_audit_loop.py` owns
+the automatic panel-and-resume edge; treating `judicial_panel_required` as a
+terminal campaign failure is an orchestration defect.
 
 The single-claim manual procedure later in this skill remains the special
 case for targeted rows; it is not the default.
@@ -254,7 +257,8 @@ least every 15 minutes — never silence for a long run.
 ## Scaling: The One Canonical Fan-Out
 
 There is exactly one sanctioned way to parallelize this lane — the
-repo-native batch drainer:
+repo-native batch drainer, invoked directly for a scoped inner step or by the
+top-level panel-aware orchestrator for the default backlog drain:
 
 ```bash
 python3 docs/audit/scripts/orchestrate_audit_batch.py \

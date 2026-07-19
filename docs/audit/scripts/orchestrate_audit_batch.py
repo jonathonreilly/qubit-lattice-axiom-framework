@@ -51,6 +51,7 @@ SUCCESS_RESULTS = {
     "audited_decoration", "audited_numerical_match", "audited_failed",
     "compute_required",
 }
+RESUMABLE_HANDOFF_RESULTS = {"judicial_panel_required"}
 MIN_DELIVERY_BYTES = 200
 PACKET_COMPLETION_STALL_SECONDS = 20 * 60
 PACKET_COMPLETION_POLL_SECONDS = 15
@@ -1282,8 +1283,21 @@ def main() -> int:
             encoding="utf-8",
         )
         print(f"report: {workdir / 'report.jsonl'}")
-    blocked = any(item.get("result") not in SUCCESS_RESULTS for item in report)
+    blocked = report_has_hard_blocker(report)
     return 1 if blocked else 0
+
+
+def report_has_hard_blocker(report: list[dict]) -> bool:
+    """Return true only for outcomes that cannot be resumed canonically.
+
+    A cross-seat disagreement is not a failed audit round. It is an explicit
+    handoff to ``orchestrate_judicial_panel.py``. The top-level audit-loop
+    orchestrator consumes that handoff immediately and then resumes the same
+    lane, so returning nonzero here would incorrectly collapse a normal
+    control-flow edge into a campaign stop.
+    """
+    accepted = SUCCESS_RESULTS | RESUMABLE_HANDOFF_RESULTS
+    return any(item.get("result") not in accepted for item in report)
 
 
 if __name__ == "__main__":

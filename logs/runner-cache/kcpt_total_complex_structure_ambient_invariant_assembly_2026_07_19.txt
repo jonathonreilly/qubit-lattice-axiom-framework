@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_total_complex_structure_ambient_invariant_assembly_2026_07_19.py
+runner_sha256: c47f1bb1d392e6cf1e42ba2924365b9e59e68f3f4a85f8697c2a70feccd3b932
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 26.80
+status: ok
+----- stdout -----
+[B0.1] PASS - v1 delivery: 'its exact rank is `56`' present
+[B0.2] PASS - v2 kernel: 'two-dimensional, `span{I, j}`' present
+[B0.3] PASS - v3 ambient: 'the ambient group `G_amb` of order `768`' present
+[B0.4] PASS - v4 ambient: '12 = 2 + 2*0 + 10' present
+[B0.5] PASS - v5 bulk: 'J_m = D2 P_m / (2 sqrt(m))' present
+[B1.1] PASS - D2 == -D2.T (antisymmetric), entries in {-1,0,1}
+[B1.2] PASS - exact rank(D2) == 56 (kernel dimension 8)
+[B1.3] PASS - D2 @ V8 == 0 exactly (V8 spans the kernel)
+[B1.4] PASS - V8.T @ V8 == 64 I_8 exactly
+[B1.5] PASS - rejector: D2 diagonal is all zeros (no self-loops), D2 nonzero
+[B2.1] PASS - M == D2 @ D2 and M == M.T
+[B2.2] PASS - carrier identity: M == 2*(T200 + T020 + T002) - 6 I
+[B2.3] PASS - rejector: diagonal coefficient is -6 not -5
+[B2.4] PASS - minimal polynomial M(M+4I)(M+8I)(M+12I) == 0
+[B2.5] PASS - normalizers N_m = prod(lambda_m - lambda_m') == [384, -128, 128, -384]; N_0 == 384 not 128
+[B2.6] PASS - eigen-projector action M Q_m == lambda_m Q_m for all m
+[B2.7] PASS - idempotence up to scale Q_m^2 == N_m Q_m for all m
+[B2.8] PASS - orthogonality Q_m Q_m' == 0 for m != m'
+[B2.9] PASS - partition of unity Q_0 - 3Q_1 + 3Q_2 - Q_3 == 384 I (coefficient pinned)
+[B2.10] PASS - stratum dims from tr Q_m / N_m == [8, 24, 24, 8] (expected 8,24,24,8)
+[info] stratum dims d_m = [8, 24, 24, 8]
+[B3.1] PASS - j = J64/64 squares to -I_8 (J64 @ J64 == -64^2 I_8)
+[B3.2] PASS - j.T == -j (J64 antisymmetric)
+[B3.3] PASS - tr(j) == 0
+[B3.4] PASS - rejector: j @ j != +I_8
+[B3.5] PASS - J_ker @ J_ker == -P_ker (rational)
+[B3.6] PASS - J_ker.T == -J_ker (integer lift antisymmetric)
+[B3.7] PASS - J_ker rational; 64^2 J_ker integer and equals V8 J64 V8.T
+[B3.8] PASS - P_ker @ P_ker == P_ker (idempotent)
+[B3.9] PASS - tr(P_ker) == 8
+[B4.1] PASS - P_0 == P_ker: Q_0 == 6 V8 V8.T and Q_0/384 == V8 V8.T/64
+[B4.2] PASS - A_0 = D2 Q_0 == 0 (adjacency vanishes on the kernel shell)
+[B4.3] PASS - A_m @ A_m == -4 m N_m Q_m (integer) for m=1,2,3
+[B4.4] PASS - B_m @ B_m == -4 m P_m (rational) for m=1,2,3
+[B4.5] PASS - B_m == D2 @ P_m (rational construction cross-check)
+[B4.6] PASS - rejector: B_1 @ B_1 != -8 P_1 (not the m=2 value)
+[B5.1] PASS - fact 1: B_m @ B_m == -4 m P_m for m=1,2,3
+[B5.2] PASS - fact 2: B_m @ B_m' == 0 for every m != m' in {1,2,3}
+[B5.3] PASS - fact 3: J_ker @ B_m == 0 for m=1,2,3 (support orthogonality)
+[B5.4] PASS - fact 4: B_m @ J_ker == 0 for m=1,2,3 (support orthogonality)
+[B5.5] PASS - fact 5: J_ker @ J_ker == -P_ker
+[B5.6] PASS - fact 6: P_ker + P_bulk == I_64 and P_ker @ P_bulk == 0 (P_bulk = P_1+P_2+P_3)
+[B5.7] PASS - Rational(1,4m) (B_m @ B_m) == -P_m for m=1,2,3
+[B5.8] PASS - J_full^2 == (-P_ker) + sum_m Rational(1,4m)(B_m @ B_m) == -I_64 (purely rational)
+[B5.9] PASS - rejectors: dropping shell 3, or 1/(4m+1) mis-normalization, does NOT give -I_64
+[B5.10] PASS - [FLOAT SANITY - non-load-bearing] float J_full @ J_full == -I_64 (atol 1e-10)
+[B5.11] PASS - [FLOAT SANITY - non-load-bearing] wrong 2 sqrt(m+1) normalizer does NOT give -I (residual > 0.5)
+[B6.1] PASS - regenerated ambient group |G_amb| == 768, all distinct
+[B6.2] PASS - U @ J_ker_int == J_ker_int @ U for all 768 (integer lift, exact)
+[B6.3] PASS - U @ A_m == A_m @ U for all 768 and m=1,2,3 (so J_full commutes: scalars 1/(2 sqrt m) are central)
+[B6.4] PASS - sampled U commutes with the rational J_ker and every B_m (exact)
+[B6.5] PASS - rejector: odd translation T100 is NOT in G_amb (fails to commute with D2 and with A_1) though it commutes with the translation-invariant M
+[B6.6] PASS - [FLOAT SANITY - non-load-bearing] float J_full commutes with a handful of U (atol 1e-10)
+[B7.1] PASS - P_ker @ J_ker @ P_ker == J_ker (J_ker in the kernel block)
+[B7.2] PASS - P_bulk @ J_ker == 0 and J_ker @ P_bulk == 0
+[B7.3] PASS - P_bulk @ B_m @ P_bulk == B_m for m=1,2,3 (each carrier in the image block)
+[B7.4] PASS - P_ker @ B_m == 0 for m=1,2,3
+[B8.1] PASS - J_full is real: integer lift J_ker_int and every A_m are integer, P_m/J_ker rational
+[B8.2] PASS - holomorphic dim = sum tr(P_m)//2 == (4, 12, 12, 4) == 4+12+12+4 == 32
+[B8.3] PASS - bulk contributes 28 conjugate pairs, kernel contributes 4 (Unit 2 dim W = 4); 28 + 4 = 32
+[B8.4] PASS - [FLOAT SANITY - non-load-bearing] eig(J_full): 32 at +i, 32 at -i, conj(v_+) in the -i eigenspace
+[B9.1] PASS - J_alt @ J_alt == -I_64 via the same rational facts (sign-independent square)
+[B9.2] PASS - sign-blindness: (-B_m)@(-B_m) == B_m@B_m for m=1,2,3
+[B9.3] PASS - J_alt commutes with all 768 (built from the same U @ J_ker_int, U @ A_m facts)
+[B9.4] PASS - J_alt != J_full: J_full - J_alt = 2 J_bulk != 0 (B_1 is nonzero)
+[B9.5] PASS - [FLOAT SANITY - non-load-bearing] float J_alt @ J_alt == -I and J_alt differs from J_full
+[B10.1] PASS - required verbatim strings present (all present)
+[B10.2] PASS - forbidden substrings absent from the note (none)
+[B10.3] PASS - exactly the five dependency notes are markdown-linked, once each (5 links)
+[B10.4] PASS - note carries bounded_theorem front matter, Claim boundary, Setting, and the two named sections
+[note] all [FLOAT SANITY - non-load-bearing] gates are confirmations; every load-bearing gate above uses exact integer/rational arithmetic.
+TOTAL: PASS=69 FAIL=0
+
+----- stderr -----
+

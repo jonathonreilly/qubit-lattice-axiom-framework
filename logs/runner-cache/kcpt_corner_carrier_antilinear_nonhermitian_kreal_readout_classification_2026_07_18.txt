@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_corner_carrier_antilinear_nonhermitian_kreal_readout_classification_2026_07_18.py
-runner_sha256: 29e3ffa07265b910612fa8b0c7245b5b91c6d9efd56842032d9522105a40e8f6
-timeout_sec: 300
+runner_sha256: c923585f8dce13d8751c58e1ed561f60898610e4763ded3bf8eba307f890f251
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 5.90
+elapsed_sec: 4.77
 status: ok
 ----- stdout -----
 PASS B1.1 carrier C^3 = I_3
@@ -35,6 +35,7 @@ PASS B2.13 escape witness A = C - C^2 gives E(vwb) = -3*i*sqrt(3)
 PASS B2.14 character projector P_w = vw vw^dag / 3 is Hermitian idempotent with C P_w = w P_w
 PASS B2.15 polarization identity i(C - C^2) = -sqrt(3) (P_w - P_wb)
 PASS B2.16 linear escape witness is K-real (conj A = A) yet non-Hermitian (A != A^dag)
+PASS B2.17 Hermitian equality requires K-reality: i(C-C^2) is Hermitian, K-odd, and separates the pair
 PASS B3.1 commutant of C has complex dimension 3 (real solution space dim 6)
 PASS B3.2 the three powers {I, C, C^2} are linearly independent
 PASS B3.3 equivariance forward: A in span{I,C,C^2} gives B(C psi) = C(B psi)
@@ -56,7 +57,8 @@ PASS B4.11 escape witness A = vwb vwb^T gives F_B(vwb) = 0
 PASS B4.12 mirror witness A = vw vw^T gives F_B(vw) = 0 and F_B(vwb) = 9
 PASS B4.13 both witnesses are non-K-real (conj A != A)
 PASS B4.14 both witnesses break equivariance (C A != A C)
-PASS B4.15 rejector A = E11 (K-real, non-equivariant) gives F_B(vw) = 1 != 0
+PASS B4.15 rejector A = E11 is K-real and non-equivariant and gives the non-null pair (1,1)
+PASS B4.16 K-real phase witness has distinct conjugate values 2w and 2conj(w) but equal modulus squared 4
 PASS B5.1 closed form E(v0) = 3(al + 2 be)
 PASS B5.2 closed form E(vw) = 3(al - be) + 3*sqrt(3)*ga*i
 PASS B5.3 channel-value map (al,be,ga)->(mu0, Re mu_w, Im mu_w) has determinant -3*sqrt(3)
@@ -117,7 +119,8 @@ PASS B9.7 staggered gate note appears as a backticked handle and not as a markdo
 PASS B9.8 note carries all four required boundary sentences verbatim
 PASS B9.9 registry id appears exactly once in the note header
 PASS B9.10 note declares the bounded-theorem claim type and points at runner and cache
-TOTAL: PASS=111 FAIL=0
+PASS B9.11 note states the narrowed face-specific classification and its internal complex-value separation
+TOTAL: PASS=114 FAIL=0
 
 ----- stderr -----
 

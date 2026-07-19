@@ -6,20 +6,25 @@ Run the repo-native physics review loop from:
 
 ## Invocation
 
-`/review-loop [focus] [--max-iterations N] [--no-fix] [--no-commit]`
+`/review-loop [target] [focus] [--max-iterations N] [--no-fix] [--no-commit]`
 
-An UNSPECIFIED invocation (`/review-loop` with no focus and no named
-PR/branch) starts the parallel open-PR backlog drain per the skill's
-Default Entry: enumerate open non-draft PRs, one reviewer slot per PR in
-parallel, each worker landing its own PR end to end. Reviewing a specific
-branch or single PR requires naming it as `[focus]`.
+Mode selection:
+- **Zero arguments** (`/review-loop`): the parallel open-PR backlog drain
+  per the skill's Default Entry — enumerate open non-draft PRs, one
+  reviewer slot per PR, each worker landing its own PR end to end.
+- **Named `[target]`** (a branch or PR): focused mode — review only that
+  target's changes against `origin/main` or `main`.
+- **Free-text `[focus]` without a target** (e.g. `/review-loop imports`):
+  the backlog drain with that review emphasis applied in every slot.
+- **Flags without a named target are invalid**: `--no-fix`/`--no-commit`
+  contradict the drain's land-end-to-end contract, so they require a named
+  `[target]`; a bare flag form must stop and ask for one.
 
 ## Required Behavior
 
 1. Read the skill file above before acting.
-2. With a `[focus]`: review only that branch/PR's changes against
-   `origin/main` or `main`. With no focus: run the Default Entry backlog
-   drain instead.
+2. Select the mode per the Invocation section above; focused mode only
+   when a `[target]` is named.
 3. Fan out the physics reviewers in parallel when the agent environment allows:
    `CodeRunnerReviewer`, `PhysicsClaimReviewer`, `ImportSupportReviewer`,
    `NatureRetentionReviewer`, `NoGoDisciplineReviewer` (when negative claims

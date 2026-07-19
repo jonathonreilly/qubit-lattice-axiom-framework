@@ -187,12 +187,15 @@ and must not apply audit verdicts.
 
 ## Default Entry: Parallel PR Review, Any Orchestrator (owner-directed 2026-07-17)
 
-An UNSPECIFIED invocation — no focus, no named branch or PR — IS the
-parallel backlog drain, as is invoking against a SET of open PRs ("review
-the open PRs", "drain the PR backlog"): enumerate the backlog, review in
-parallel, land serially — no topology decisions required from the invoker.
-Reviewing one branch or one PR is the special case that requires naming
-it.
+An UNSPECIFIED invocation — no named branch or PR — IS the parallel
+backlog drain, as is invoking against a SET of open PRs ("review the open
+PRs", "drain the PR backlog"): enumerate the backlog, review in parallel,
+land serially — no topology decisions required from the invoker. Free-text
+focus without a named target (e.g. "imports") is the drain with that
+emphasis applied in every slot. Reviewing one branch or one PR is the
+special case that requires naming the target, and the review-only flags
+(`--no-fix`, `--no-commit`) are valid only with a named target — they
+contradict the drain's land-end-to-end contract.
 
 1. **Enumerate targets**: open, non-draft PRs in scope (drafts stay out of
    scope per the draft rule below). Detect stacks and cumulative-tower

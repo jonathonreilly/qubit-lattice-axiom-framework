@@ -1,5 +1,5 @@
 {
- "edge_count": 14738,
+ "edge_count": 14743,
  "node_count": 4395,
  "nodes": {
   "3d_correction_master_note": {
@@ -1855,8 +1855,8 @@
    "out_degree": 9
   },
   "chsh_structural_bound_narrow_theorem_note_2026-05-17": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "b4045977da31",
+   "out_degree": 5
   },
   "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20": {
    "deps_hash": "09a1f481009d",

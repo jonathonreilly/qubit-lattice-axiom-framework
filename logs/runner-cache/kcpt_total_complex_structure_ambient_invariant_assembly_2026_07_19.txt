@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_total_complex_structure_ambient_invariant_assembly_2026_07_19.py
-runner_sha256: c47f1bb1d392e6cf1e42ba2924365b9e59e68f3f4a85f8697c2a70feccd3b932
+runner_sha256: effab3d97ef9d97e6acf556f7c7efd56671e9bc7c0d4cc5fd2e0f4078f3a10f6
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 26.80
+elapsed_sec: 28.51
 status: ok
 ----- stdout -----
 [B0.1] PASS - v1 delivery: 'its exact rank is `56`' present
@@ -53,7 +53,7 @@ status: ok
 [B5.9] PASS - rejectors: dropping shell 3, or 1/(4m+1) mis-normalization, does NOT give -I_64
 [B5.10] PASS - [FLOAT SANITY - non-load-bearing] float J_full @ J_full == -I_64 (atol 1e-10)
 [B5.11] PASS - [FLOAT SANITY - non-load-bearing] wrong 2 sqrt(m+1) normalizer does NOT give -I (residual > 0.5)
-[B6.1] PASS - regenerated ambient group |G_amb| == 768, all distinct
+[B6.1] PASS - scan has 64 commuting members per base, 192 total; regenerated ambient group |G_amb| == 768, all distinct
 [B6.2] PASS - U @ J_ker_int == J_ker_int @ U for all 768 (integer lift, exact)
 [B6.3] PASS - U @ A_m == A_m @ U for all 768 and m=1,2,3 (so J_full commutes: scalars 1/(2 sqrt m) are central)
 [B6.4] PASS - sampled U commutes with the rational J_ker and every B_m (exact)

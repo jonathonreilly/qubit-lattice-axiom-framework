@@ -88,19 +88,29 @@ def remaining_blocker_count() -> int | None:
     )
 
 
+def audit_status_snapshot() -> dict[str, str | None]:
+    """Read the materialized ledger without refreshing or rewriting caches."""
+    ledger_cache = DATA / "audit_ledger.json"
+    try:
+        payload = json.loads(ledger_cache.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return {
+        cid: row.get("audit_status")
+        for cid, row in payload.get("rows", {}).items()
+        if isinstance(row, dict)
+    }
+
+
 def landed_verdict_counts() -> Counter:
     baseline = PROGRESS.get("baseline_status") or {}
     if not baseline:
         return Counter()
-    try:
-        rows = batch.load_rows()
-    except (OSError, ValueError, json.JSONDecodeError):
-        return Counter()
+    current = audit_status_snapshot()
     return Counter(
-        str(row.get("audit_status"))
-        for cid, row in rows.items()
-        if row.get("audit_status") != baseline.get(cid)
-        and str(row.get("audit_status", "")).startswith("audited_")
+        str(status)
+        for cid, status in current.items()
+        if status != baseline.get(cid) and str(status or "").startswith("audited_")
     )
 
 
@@ -418,12 +428,7 @@ def main(argv: list[str] | None = None) -> int:
             _DRAIN_LOCK_HANDLE = None
             return 2
 
-    try:
-        PROGRESS["baseline_status"] = {
-            cid: row.get("audit_status") for cid, row in batch.load_rows().items()
-        }
-    except (OSError, ValueError, json.JSONDecodeError):
-        PROGRESS["baseline_status"] = {}
+    PROGRESS["baseline_status"] = audit_status_snapshot()
     PROGRESS["started"] = time.monotonic()
     PROGRESS["attempts"] = 0
     PROGRESS["failures"] = []

@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py
+runner_sha256: 1a3f9ed5b5925c3958d8b8243f5e8cb917f0fe2bfa15b9bab1bbc446fe699c6c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+PASS: G1 terms per site: 6 bonds and 12 faces (radii 4 and 5)
+PASS: G2 bond degrees: (10 bonds, 20 faces) for EVERY bond orientation (radii 4 and 5)
+PASS: G3 face degrees: (20 bonds, 32 faces) for EVERY face orientation, box-stable, and the hand inclusion-exclusion 48-18+4-1 = 33 minus self = 32 agrees
+PASS: G4 carrier diameters: bond 1, face 2
+PASS: G5 mixed length-2 walks from one site: 804 <= 936 = 18*52
+PASS: G6 reach is exactly 2k at k = 1, 2, 3
+PASS: R1 series start: 2k >= d iff k >= ceil(d/2) — symbolic even/odd ceiling cases with the k = r boundary failure, plus instances d = 1..5
+PASS: R2 face-jump sharpness: one adjoint step reaches distance 2 (k=0 commutes, k=1 does not)
+PASS: M1 mixed-dim reduction: [h23, A] = 0 and [H, A] = [h12, A] != 0
+PASS: M2 mixed-dim cone: k = 0, 1 below (d = 2), k = 2 arrives
+PASS: M3 mixed-dim terms Hermitian with exact Kronecker norms (||X ⊗ diag(1,2,3)|| = 3)
+PASS: M4 mixed-dim FOUR-SITE face term: Hermitian, commutes with the far factor, and one adjoint step reaches the opposite corner
+PASS: Z1 magnetic operator lies in the declared face carrier algebra, with strict three-site minimal support, and commutes with the far link
+PASS: Z2 electric operator lies in the declared bond carrier algebra, with strict one-site minimal support and identity padding
+PASS: Z3 the gauge dynamics is nontrivial: [B_p, E_l1] != 0
+PASS: T1 coefficient assembly (2J)^k n 52^(k-1) = (n/52)(104J)^k
+PASS: T2 tail mechanism re-gate: binomial domination d!/k! <= 1/(k-d)! plus an exact 38-term partial-sum instance below the closed form
+PASS: N1 target declares nonminimal carriers, identity padding, and same-carrier summation
+PASS: N2 axiom memo supplies no dynamics
+PASS: N3 sibling chain authorities
+PASS: N4 target identifiers, theorem, non-sharpness, non-claims
+PASS: N5 No-Go evidence structure presence: N1-N8, at least five attempted routes, ten wall pairs, and corrected PASS line
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

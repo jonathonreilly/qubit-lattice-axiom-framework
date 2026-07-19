@@ -1,4 +1,4 @@
-# TOE framework campaign handoff — 2026-07-18, Cycle 411
+# TOE framework campaign handoff — 2026-07-18, Cycle 411, refreshed through Cycle 414
 
 ## OVERALL GOAL — READ THIS FIRST
 
@@ -21,23 +21,23 @@ launched the physical-M2 compiler campaign.
 
 ## Exact handoff boundary
 
-Observed at Cycle-411 drafting:
+Observed after the Cycle-414 science package was pushed:
 
 | item | exact boundary |
 |---|---|
 | repository | `Physics-baremetal-probes` |
 | active branch | `codex/toe-cross-lane-campaign-20260718` |
-| last retained science head before this packet | `f801d6ea1be3b56b20987d321c28c84030685434` |
-| observed matching remote science head | `f801d6ea1be3b56b20987d321c28c84030685434` |
+| last retained science head before this refreshed packet | `55edb3456a72a14d5cdfae5f2dad6c68ca5a1f5a` |
+| observed matching remote science head | `55edb3456a72a14d5cdfae5f2dad6c68ca5a1f5a` |
 | only active parking surface | draft PR #5523, `Science: exact Record formation candidates and cross-lane bridges` |
 | PR base / state | `main` / open draft |
 | PR URL | <https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5523> |
 | local `main` | `fdb599edf8aaab375a719cd6d726e7120b5e9c57` |
-| local `origin/main` tracking ref | `1774ebf31ce32460024e82af100393bea9e7d333` |
+| local `origin/main` tracking ref | `8b164506f490a0a266b9470c9aa4b5331b3b49ca` |
 | live remote `main` from `ls-remote` | `8b164506f490a0a266b9470c9aa4b5331b3b49ca` |
-| observed tracking `origin/main...science head` | 23 commits unique to tracking `origin/main`; 22 unique to the science head |
-| live remote divergence | not computed because the newer live commit was deliberately not fetched; refresh before integration work |
-| observed local `main...science head` | 0 commits unique to local `main`; 277 unique to the science head |
+| observed tracking `origin/main...science head` | 26 commits unique to tracking `origin/main`; 24 unique to the science head |
+| live remote divergence | same as the tracking-ref divergence above at this observation |
+| observed local `main...science head` | 0 commits unique to local `main`; 279 unique to the science head |
 | authority | none |
 | audit | unset |
 | constitutional effect | none |
@@ -74,22 +74,26 @@ Read these completely, in order:
 4. [Cycle 229: Fock modular boundary](./FOCK_MODULAR_BOUNDARY_CURRENT_CYCLE229_NOTE_2026-07-17.md).
 5. [Cycle 228: generator/source tournament](./LOCAL_GENERATOR_SOURCE_TOURNAMENT_CYCLE228_NOTE_2026-07-17.md).
 6. [Cycle 219: common matter/field coin family](./COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md).
-7. [Current minimal axioms](../../../MINIMAL_AXIOMS_2026-06-29.md).
-8. [Cycle 276: final three-route M64 compiler tournament synthesis](./FINAL_M64_PHYSICAL_M2_COMPILER_TOURNAMENT_SYNTHESIS_CYCLE276_NOTE_2026-07-17.md).
-9. [Cycle 311: common six-mode M64 fixed seam](./PHYSICAL_CYCLE269_COMMON_M64_FIXED_SEAM_CYCLE311_NOTE_2026-07-18.md).
-10. [Cycle 315: overlap-aware two-cell compiler](./PHYSICAL_CYCLE269_OVERLAP_AWARE_TWO_CELL_CYCLE315_NOTE_2026-07-18.md).
-11. [Cycle 330: seven-cell maximal-star discriminator](./PHYSICAL_CYCLE269_SEVEN_CELL_MAXIMAL_STAR_CYCLE330_NOTE_2026-07-18.md).
-12. [Cycle 367: Record-formation law tournament](./PHYSICAL_RECORD_FORMATION_LAW_TOURNAMENT_SYNTHESIS_CYCLE367_NOTE_2026-07-18.md).
-13. [Cycle 393: physical-menu and reciprocal-edge synthesis](./PHYSICAL_MENU_COMPILER_AND_RECIPROCAL_EDGE_SYNTHESIS_CYCLE393_NOTE_2026-07-18.md).
-14. [Cycle 396: strict shared-middle source compiler](./PHYSICAL_SHARED_MIDDLE_THREE_CELL_SOURCE_COMPILER_CYCLE396_NOTE_2026-07-18.md).
-15. [Cycle 399: source-response/Record-counter interface](./PHYSICAL_SOURCE_RESPONSE_RECORD_COUNTER_INTERFACE_CYCLE399_NOTE_2026-07-18.md).
-16. [Cycle 403: response-facing actualization-law tournament](./PHYSICAL_SOURCE_RESPONSE_ACTUALIZATION_LAW_TOURNAMENT_CYCLE403_NOTE_2026-07-18.md).
-17. [Cycle 405: numerical/actualization bridge synthesis](./PHYSICAL_NUMERICAL_ACTUALIZATION_BRIDGE_SYNTHESIS_CYCLE405_NOTE_2026-07-18.md).
-18. [Cycle 406: reversible candidate-Record payload dilation](./PHYSICAL_SOURCE_RESPONSE_REVERSIBLE_RECORD_APPEND_DILATION_CYCLE406_NOTE_2026-07-18.md).
-19. [Cycle 407: operational discriminator between two extension-face members](./PHYSICAL_EXTENSION_FACE_OPERATIONAL_DISCRIMINATOR_CYCLE407_NOTE_2026-07-18.md).
-20. [Cycle 408: frame-covariant effect-identity tournament](./PHYSICAL_FRAME_COVARIANT_EFFECT_IDENTITY_TOURNAMENT_CYCLE408_NOTE_2026-07-18.md).
-21. [Cycle 409: independent selector-preparation dynamics](./PHYSICAL_INDEPENDENT_SELECTOR_PREPARATION_DYNAMICS_CYCLE409_NOTE_2026-07-18.md).
-22. [Cycle 410: candidate dependency/depth-label dilation](./PHYSICAL_CANDIDATE_DEPENDENCY_DEPTH_LABEL_DILATION_CYCLE410_NOTE_2026-07-18.md).
+7. [Cycle 294: physical-M2 gravity/source bridge tournament synthesis](./PHYSICAL_M2_GRAVITY_SOURCE_BRIDGE_TOURNAMENT_SYNTHESIS_CYCLE294_NOTE_2026-07-17.md).
+8. [Current minimal axioms](../../../MINIMAL_AXIOMS_2026-06-29.md).
+9. [Cycle 276: final three-route M64 compiler tournament synthesis](./FINAL_M64_PHYSICAL_M2_COMPILER_TOURNAMENT_SYNTHESIS_CYCLE276_NOTE_2026-07-17.md).
+10. [Cycle 311: common six-mode M64 fixed seam](./PHYSICAL_CYCLE269_COMMON_M64_FIXED_SEAM_CYCLE311_NOTE_2026-07-18.md).
+11. [Cycle 315: overlap-aware two-cell compiler](./PHYSICAL_CYCLE269_OVERLAP_AWARE_TWO_CELL_CYCLE315_NOTE_2026-07-18.md).
+12. [Cycle 330: seven-cell maximal-star discriminator](./PHYSICAL_CYCLE269_SEVEN_CELL_MAXIMAL_STAR_CYCLE330_NOTE_2026-07-18.md).
+13. [Cycle 367: Record-formation law tournament](./PHYSICAL_RECORD_FORMATION_LAW_TOURNAMENT_SYNTHESIS_CYCLE367_NOTE_2026-07-18.md).
+14. [Cycle 393: physical-menu and reciprocal-edge synthesis](./PHYSICAL_MENU_COMPILER_AND_RECIPROCAL_EDGE_SYNTHESIS_CYCLE393_NOTE_2026-07-18.md).
+15. [Cycle 396: strict shared-middle source compiler](./PHYSICAL_SHARED_MIDDLE_THREE_CELL_SOURCE_COMPILER_CYCLE396_NOTE_2026-07-18.md).
+16. [Cycle 399: source-response/Record-counter interface](./PHYSICAL_SOURCE_RESPONSE_RECORD_COUNTER_INTERFACE_CYCLE399_NOTE_2026-07-18.md).
+17. [Cycle 403: response-facing actualization-law tournament](./PHYSICAL_SOURCE_RESPONSE_ACTUALIZATION_LAW_TOURNAMENT_CYCLE403_NOTE_2026-07-18.md).
+18. [Cycle 405: numerical/actualization bridge synthesis](./PHYSICAL_NUMERICAL_ACTUALIZATION_BRIDGE_SYNTHESIS_CYCLE405_NOTE_2026-07-18.md).
+19. [Cycle 406: reversible candidate-Record payload dilation](./PHYSICAL_SOURCE_RESPONSE_REVERSIBLE_RECORD_APPEND_DILATION_CYCLE406_NOTE_2026-07-18.md).
+20. [Cycle 407: operational discriminator between two extension-face members](./PHYSICAL_EXTENSION_FACE_OPERATIONAL_DISCRIMINATOR_CYCLE407_NOTE_2026-07-18.md).
+21. [Cycle 408: frame-covariant effect-identity tournament](./PHYSICAL_FRAME_COVARIANT_EFFECT_IDENTITY_TOURNAMENT_CYCLE408_NOTE_2026-07-18.md).
+22. [Cycle 409: independent selector-preparation dynamics](./PHYSICAL_INDEPENDENT_SELECTOR_PREPARATION_DYNAMICS_CYCLE409_NOTE_2026-07-18.md).
+23. [Cycle 410: candidate dependency/depth-label dilation](./PHYSICAL_CANDIDATE_DEPENDENCY_DEPTH_LABEL_DILATION_CYCLE410_NOTE_2026-07-18.md).
+24. [Cycle 412: physical reversible oriented-Bloch interface](./PHYSICAL_LOCAL_REVERSIBLE_ORIENTED_BLOCH_INTERFACE_CYCLE412_NOTE_2026-07-18.md).
+25. [Cycle 413: selector-dependency cross-grid](./PHYSICAL_SELECTOR_DEPENDENCY_CROSS_GRID_CYCLE413_NOTE_2026-07-18.md).
+26. [Cycle 414: candidate-append renewal/concurrency adversary](./PHYSICAL_CANDIDATE_APPEND_RENEWAL_CONCURRENCY_ADVERSARY_CYCLE414_NOTE_2026-07-18.md).
 
 Read the direct child notes and runners only when auditing exact construction
 details. Do not let the one-dimensional bound-state benchmark become the
@@ -215,7 +219,7 @@ physical-order, full-number, overlap, recurrence, and renewal imports. There
 is no common failed clause across all constructive routes and therefore no
 compiler-derived axiom pressure.
 
-## Strongest constructive results through Cycle 410
+## Strongest constructive results through Cycle 414
 
 ### Operational quantum and locality
 
@@ -249,6 +253,14 @@ compiler-derived axiom pressure.
    gates reversibly label the adjacent edge and counterfactual child depth
    five when the Cycle-406 candidate-history bit is one. The actual Cycle-170/
    255 graph remains unchanged with depth four.
+5. **Cycle 414 candidate concurrency and finite reuse.** One literal shared
+   predecessor/response spine drives two bounded candidate targets. Distinct
+   blank targets commute on the declared code input; a supplied alias bit
+   drives no-priority write suppression; occupied/dirty refusal is local; and
+   one supplied 32-M2 blank reserve supports one exact exchange and repeat.
+   The outputs remain reversible candidate labels, not Records. The alias,
+   invocation, target allocation, and reserve are supplied, and no blank is
+   generated.
 
 ### Numerical/Born-facing surface
 
@@ -287,6 +299,16 @@ compiler-derived axiom pressure.
    canonical one-particle held input; typed-Record permanence selects B1.
    They disagree on the held input and neither dependency is selected by the
    framework.
+7. Cycle 412 compiles Cycle 408's proper-cubic tuple action into one fixed
+   182-M2 reversible nearest-neighbor circuit. It acts on all 3,347 installed
+   classes and all 24 frames, with 4,256 logical and 636,944 routed gates,
+   exact raw inverse, and zero failures across 1,927,872 frame-product tests.
+   Effect-to-tuple genesis and the 13-decimal resolution remain supplied.
+8. Cycle 413 freezes the Cartesian grid `N=0,1,2` by typed blank/non-Record
+   versus lawful permanent root before scoring. Contact support predicts
+   `(0,0,0,0,1,1)` and permanence predicts `(0,1,0,1,0,1)`: exactly three
+   agreements and three disagreements. Both routes are exact on 1,686-M2
+   physical lines, but the grid maps the hypotheses rather than selecting one.
 
 These numerators, finite grades, squared norms, flags, and selector bits are
 not probability, Born weight, frequency, occurrence, or actuality.
@@ -310,6 +332,11 @@ not probability, Born weight, frequency, occurrence, or actuality.
    `2bc2b272629ef89db2910d9598e8ef523f4ac3c2d998b8bf5ff1d719c5da11e7`.
 4. Cycles 406 and 410 carry the same response weights into candidate payload
    and candidate edge/depth-label sectors with exact enlarged-state inverses.
+5. Cycle 414 carries that one common response into two candidate targets,
+   collision suppression, and one finite exchange/repeat without duplicating
+   the predecessor/response preparation. Joint and individual candidate
+   sectors retain the one-response weight; they are correlated labels, not
+   independent confirmations.
 
 The displayed weights are coherent state-sector squared norms, not Born
 probabilities. A contact-sensitive response is not physical energy, stress,
@@ -334,6 +361,9 @@ rate, lapse, or proper time. Circuit order and compiler layers are not time.
 | 408 | `10 PASS / 0 FAIL`; corrected `2063 x 3347`, exact rank 1,158; 24 frames, 576 products, 13,824 associativity triples, 80,352 direct re-encodings, and 1,928,448 action products pass | constructive finite host-side codec; 13-decimal resolution, equality radius, identity policy, label genesis, and any physical M2 codec/action compiler remain supplied/open |
 | 409 | `6 PASS / 0 FAIL`; 1,656-M2 NN line; contact route 5,699 logical / 5,619,783 routed primitives; Record route 4,874 / 5,610,302; exact E/G and inverse; all 24 frames | two independent candidate dependencies disagree; no selected selector, grade, or actuality law |
 | 410 | `14 PASS / 0 FAIL`; 11 new M2; 10 layers; 12 gates; exact inverse; all 24 frames; actual/counterfactual Cycle-170/255 certificates agree on depths four/five | actual graph, Records, and depth remain unchanged; output is a reversible proposal label |
+| 412 | `10 PASS / 0 FAIL`; 182-M2 interface, 138-M2 active union; 4,256 logical / 636,944 routed primitives; all 3,347 classes, 24 frames, 576 products, and 1,927,872 class-product tests pass; exact raw inverse | finite physical tuple-action compiler only; effect-to-tuple genesis, resolution/equality policy, clean work/frame preparation, and any numerical/Born law remain supplied |
+| 413 | `7 PASS / 0 FAIL`; exact six-row prediction grid; three agreements and three disagreements; two 1,686-M2 NN routes; all 24 frames and held N8/N16; exact E/G and inverse | supplied matter/status preparations and two candidate dependencies; no independent law-selecting observable, grade, probability, or actual member |
+| 414 | `14 PASS / 0 FAIL`; 388-M2 bounded adversary; 549-layer two-target/collision circuit; 824-layer exchange/repeat route; exact inverse on distinct, collision, refusal, and held L5/L6 routes; all 24 frames | supplied alias, allocation, invocation, target blocks, and one blank reserve; no actual Record, autonomous address equality, blank genesis, renewal law, conservation, or recurrence theorem |
 
 Latest runner SHA-256 checks at handoff drafting:
 
@@ -343,26 +373,29 @@ Cycle 407  25e7a73503575a2d950e57effd146b087c0f72c14ddff8ad390d6d3c9d859bdc
 Cycle 408  309d55a53b4671af221990879ef6a483d9d81cff3dfaf77e6ce7664b6ab672b0
 Cycle 409  3fe50a8242f27ea0a45ef74ca071915f131309943b89cc06ae4af26e4045f0b0
 Cycle 410  a9fd22a33a990cde513af1ab9682d2f1d37dd64b3d9254548e6c8264de29f1ea
+Cycle 412  142b467703374809809aa2f43d5147fa2ceed9b527193cb50fd4c4a93d8742d5
+Cycle 413  1fb8edb35daa39e12d8752649bf6ee1c3c4474854705f48210036ec11b0ca293
+Cycle 414  0c1630bd089c9c2c931bf9e75d9306f83b2fff807856eb3f279a2908b5cedf96
 ```
 
 Pass counts are executable contract checks, not counts of independent
 physical predictions. Held-size tests are finite extrapolation controls, not
 unbounded theorems.
 
-## Twelve-field law-completeness contract through Cycle 410
+## Twelve-field law-completeness contract through Cycle 414
 
 | field | strongest retained state | explicit remaining import |
 |---|---|---|
-| `domain` | finite physical-M2 code blocks; declared fixed-seam, two-cell, maximal-star, menu, response, candidate-payload, and candidate-edge grammars; trained and held domains explicit | homogeneous unbounded/full-lattice domain and recurrent-volume law |
-| `state` | physical matter/source/controller/table/environment/Record and preallocated candidate registers are explicit | autonomous state preparation, lawful blank genesis, reusable reservoirs, and full-volume state law |
-| `context` | all 24 proper-cubic spatial frames; fixed programs/banks; contact and Record selector candidates; held source-response fixtures | endogenous apparatus, program, selector, reference, and context selection |
+| `domain` | finite physical-M2 code blocks; declared fixed-seam, two-cell, maximal-star, menu, response, candidate-payload/edge, six-row selector grid, and two-target/reuse grammars; trained and held domains explicit | homogeneous unbounded/full-lattice domain and recurrent-volume law |
+| `state` | physical matter/source/controller/table/environment/Record, oriented-tuple, preallocated candidate, collision, and one blank-reserve register are explicit | autonomous state preparation, lawful tuple/reference/alias/blank genesis, reusable reservoirs, and full-volume state law |
+| `context` | all 24 proper-cubic spatial frames; fixed programs/banks; independent occupation/status grid; contact and Record selector candidates; held source-response fixtures | endogenous apparatus, program, selector, reference, address relation, and context selection |
 | `atomic_law` | fixed reversible carrier/menu/source/selector/candidate-label compilers and three conditional Record-formation hypotheses | selected universal physical update, formation/commit law, and law-choice discriminator |
-| `continuation` | exact two-use compositions; fixed counter continuation; bounded formation chains; fixed source depth; reversible candidate payload and edge/depth proposal | indefinite recurrence, actual append continuation, renewal, and collision-safe volume evolution |
-| `availability` | finite exact M2, work, pointer, environment, payload, role, and Record-capacity inventories | renewable capacity and a physical resource/availability law |
-| `concurrency` | disjoint replicas, shared-read cases, ordered local schedules, one maximal-star slot comparator, and explicit local conflicts | autonomous arbitration across overlapping stars/targets and recurrent volume; schedule is not time |
-| `record` | typed/permanent Records are preserved; three exact formation semantics exist; Cycle 406 computes a branchwise correct candidate payload | selected formation law, admitted irreversible commit/permanence, actual identity law, autonomous tags/links/blanks, and renewal |
+| `continuation` | exact two-use compositions; fixed counter continuation; bounded formation chains; fixed source depth; reversible candidate payload/edge proposal; one exact blank exchange and repeat | indefinite recurrence, actual append continuation, renewable blanks, garbage handling, and collision-safe volume evolution |
+| `availability` | finite exact M2, work, pointer, environment, payload, role, Record-capacity, and one blank-reserve inventory | renewable capacity and a physical resource/availability law |
+| `concurrency` | disjoint replicas, shared reads, declared-code distinct-target order independence, supplied-alias no-priority suppression, target-local refusal, and one exact exchange/reuse | autonomous address comparison, arbitration/law selection, allocation, overlapping-volume recurrence, and homogeneous invocation; schedule is not time |
+| `record` | typed/permanent Records are preserved; three exact formation semantics exist; candidate payload/edge and two-target/reuse labels are exact | selected formation law, admitted irreversible commit/permanence, actual identity law, autonomous tags/links/addresses/blanks, and renewal |
 | `actuality` | coherent alternatives, conditional candidate outputs, and counterfactual graph labels only | actual-member and realized-history selection |
-| `statistics` | corrected rank-1,158 finite composed surface; a 19-dimensional B face; physically distinct B0/B1 points; two physical selector candidates | selected/calibrated grade, probability meaning, sampler, frequency theorem, and Born law; physical label genesis and a universal or interval-certified codec |
+| `statistics` | corrected rank-1,158 finite composed surface; physical 3,347-class proper-cubic tuple action; a 19-dimensional B face; physically distinct B0/B1 points; two selector candidates mapped on a frozen six-row grid | selected/calibrated grade, probability meaning, sampler, frequency theorem, and Born law; physical tuple/label genesis and a universal or interval-certified equality policy |
 | `resource` | exact M2, gate, support, layer, and capacity ledgers | physical energy/resource identity, conservation/renewal theorem, and thermodynamic meaning |
 | `source/response` | strict shared-middle contact-sensitive response reaches environment, candidate payload, candidate edge, and candidate depth labels | derived physical source functional, energy/stress identity, and reciprocal metric/clock/gravity response |
 
@@ -372,15 +405,15 @@ copying is not a Record; a coherent candidate payload is not an actual Record;
 dependency depth is not time; and a coarse CAR cell is not itself a
 physical-site compiler.
 
-## Six-wall dependency ledger through Cycle 410
+## Six-wall dependency ledger through Cycle 414
 
 | wall | movement through this campaign | exact live residual |
 |---|---|---|
-| `C_ref` | three bounded Record-formation/reference hypotheses; typed-Record permanence can physically drive the Cycle-407 selector; candidate payload/edge registers preserve prior Record identities | selection and physical admission of formation/permanence/identity; actual member; autonomous reference, tags, links, blanks, preparation, and renewal |
-| `C_num` | corrected finite composed surface reaches rank 1,158 under an exact proper-cubic action; exact nine-to-55 map; B face dimension 19; B0/B1 are physically distinguishable; two physical selector candidates disagree | selected/calibrated grade; broader admitted menu law; physical label/action compiler and autonomous genesis; universal or interval-certified equality; sampler, frequency, Born meaning, and actuality |
+| `C_ref` | three bounded Record-formation/reference hypotheses; permanence can drive a selector; candidate payload/edge identities survive a literal shared-spine two-target calculation, supplied-alias suppression, local refusal, and one exchange/reuse | selection and physical admission of formation/permanence/identity; actual member/edge; autonomous reference, address/alias comparison, tags, links, blanks, preparation, and indefinite renewal |
+| `C_num` | corrected rank-1,158 surface has an exact proper-cubic action and a bounded physical tuple-action compiler; exact nine-to-55 map; B face dimension 19; B0/B1 are physically distinct; two selector dependencies have a frozen six-row disagreement grid | selected/calibrated grade; broader admitted menu law; physical effect-to-tuple/label genesis; universal or interval-certified equality; independent selector observable; sampler, frequency, Born meaning, and actuality |
 | `C_wrap` | source response can coherently label a counterfactual dependency extension from depth four to five | no actual edge or depth-five member; no event equivalence, recurrence, interval, unit, synchronization, rate, lapse, or proper time |
 | `C_int` | actual Cycle-230 contact is load-bearing in physical menus/source response and in the exact `Q_ge2` selector predicate; one-particle fixtures survive | interaction/law selection, occurrence, protection/stability, recurrent scattering, and interaction-to-rate/source interpretation |
-| `C_local` | bounded common M64 fixed seam, full two-cell seam, low-number maximal star, physical menu/table/source compilers, and local reversible candidate payload/edge labels | full number on maximal stars; 5,032 unmaterialized physical orders or exact replacement; adjacent-star compatibility; primitive synthesis; autonomous reference/input/blank genesis; commit, invocation, recurrence, arbitration, and renewal |
+| `C_local` | bounded common M64 fixed seam, full two-cell seam, low-number maximal star, physical menu/table/source and tuple-action compilers, frozen selector grid, shared-spine two-target calculation, supplied-alias suppression, local refusal, and one exact exchange/reuse | full number on maximal stars; 5,032 unmaterialized orders or exact replacement; adjacent-star compatibility; primitive genesis; autonomous address/reference/input/blank genesis; commit, invocation, recurrent allocation/collisions, arbitration, and renewal |
 | `C_source` | strict shared-middle response reaches reversible environment, candidate Record-payload, and candidate edge/depth interfaces | physical energy/stress/source functional, empirical units, conservation/resource identity, universal coupling, and reciprocal metric/clock/nonlinear gravity law |
 
 The walls are dependency coordinates, not asserted independent axioms. Closing
@@ -395,13 +428,13 @@ These are integrated / strict physical-substrate floor / conditional bridge
 coordinates. They are planning aids, not probabilities that the framework is
 true, not empirical confidence intervals, and not audit verdicts.
 
-| TOE lane | through Cycle 405 | through Cycle 410 | maturity `0--5` | reason for movement |
+| TOE lane | through Cycle 410 | through Cycle 414 | maturity `0--5` | reason for movement |
 |---|---:|---:|---:|---|
-| operational quantum / Records | `85/44/99` | `86/45/99` | `4.7` | exact local candidate-payload and edge/depth oracles add a physical reversible interface while preserving Record identity; actual formation/commit remains absent |
-| causal time | `55/33/94` | `57/33/96` | `3.7` | physical candidate edge/depth labels now reproduce the counterfactual `4 -> 5` graph calculation, raising integrated and conditional reach; the actual graph remains depth four, all 24 frames are spatial, and no interval/rate law moves the strict floor |
+| operational quantum / Records | `86/45/99` | `87/45/99` | `4.7` | the shared-spine two-target, supplied-alias suppression, refusal, and one exchange/reuse construction advances integrated candidate-append architecture while preserving identity; no output becomes an actual Record |
+| causal time | `57/33/96` | `57/33/96` | `3.7` | unchanged: the actual graph remains depth four, all 24 frames are spatial, and no interval/rate/proper-time law moves the strict floor |
 | inertia / matter | `78/38/99` | `78/38/99` | `4.5` | mass, Q, number, vector, contact, seam, and held controls survive; no new matter-law or spectrum selection occurs |
-| gravity / source / resource | `53/24/86` | `54/25/87` | `3.3` | strict shared-middle response reaches coherent candidate payload and edge/depth interfaces with exact physical controls; physical source identity and reciprocal metric response remain open |
-| Born / probability / realized history | `64/36/99` | `69/39/99` | `4.3` | the finite frame-covariant codec corrects one raw class/rank split; two B-face members are physically distinguished and two independent selector dynamics disagree; no grade or actual member is selected |
+| gravity / source / resource | `54/25/87` | `54/25/87` | `3.3` | unchanged in meaning: one operational response reaches more candidate infrastructure, but physical source identity, conservation, units, and reciprocal metric/clock response remain open |
+| Born / probability / realized history | `69/39/99` | `71/40/99` | `4.3` | the proper-cubic tuple action is now a bounded physical circuit and the two selector dependencies are mapped on an independently frozen matter/status grid; no grade, probability law, or actual member is selected |
 
 Do not convert these planning coordinates into scientific completion claims.
 The highest conditional maturity remains operational quantum/matter. The
@@ -450,7 +483,10 @@ update order; finite boundaries and held splits; menu/program/table registries;
 formation predicates and payload grammars; threshold and commit semantics;
 partial trace; response fixtures; selector rules and polarities; graph
 fixture, parent, child, and binary depth representation; observation and
-comparison conventions. None is silently promoted to a universal law.
+comparison conventions; effect-to-tuple genesis and decimal equality radius;
+the Cycle-413 matter/status preparations; and Cycle-414 alias, target,
+invocation, and blank-reserve labels. None is silently promoted to a universal
+law.
 
 ### N4 — residual matching
 
@@ -459,8 +495,11 @@ exchange is not cited against Cycle-311 fixed seams; Cycle-330 sampled physical
 orders are not presented as all 5,040 matrices; Cycle-402's A certificate is
 not generalized beyond its fixed finite premises; Cycle-406 branchwise payload
 agreement is not called a Record append; Cycle-410's counterfactual graph is
-not called an actual graph mutation. No unrelated route failure is borrowed
-as evidence for a shared obstruction.
+not called an actual graph mutation; Cycle-412's tuple action is not called
+tuple genesis; Cycle-413's disagreement grid is not called law selection; and
+Cycle-414's supplied-alias response and one blank exchange are not called
+autonomous arbitration or renewal. No unrelated route failure is borrowed as
+evidence for a shared obstruction.
 
 ### N5 — rhetoric audit
 
@@ -477,8 +516,9 @@ Every major wall has an ordinary constructive path that does not presume an
 axiom edit: materialize/compress the remaining physical orders; test adjacent
 stars and full number; synthesize primitive gates; generate and renew local
 references and blanks; discriminate Record/selector candidates on independent
-held physics; admit or derive an actual formation/history rule; derive a
-source functional; and only then test reciprocal metric/clock response.
+held physics; compile local address equality and finite-pool allocation; admit
+or derive an actual formation/history rule; derive a source functional; and
+only then test reciprocal metric/clock response.
 
 ### N7 — steelman against any broad no-go
 
@@ -501,50 +541,54 @@ uncompiled response-facing payload became Cycle 406's reversible label, and a
 host-set numerical face comparison became Cycles 407 and 409's physical
 discriminator and candidate selector dynamics. Cycle 404's rounded-key frame
 defect became Cycle 408's covariant oriented codec and exact one-class/one-rank
-correction. These cross-cycle retirements show why current unfinished routes
-cannot be constitutional evidence.
+correction; Cycle 412 then compiled that finite action into physical M2. The
+two-selector single-input disagreement became Cycle 413's frozen six-row grid,
+and one-shot candidate append became Cycle 414's two-target/collision/finite-
+reuse adversary. These cross-cycle retirements show why current unfinished
+routes cannot be constitutional evidence.
 
 **Disposition:** no shared obstruction, no minimum-content theorem, and no
 axiom pressure. Do not draft axiom language.
 
 ## Optimal next campaign
 
-The highest-value next campaign is an **independent cross-lane law-selection
-and renewal tournament**, with recurrent-volume compilation kept as a coupled
-physical control.
+The highest-value next campaign is an **independent selector/formation-law
+discrimination tournament**, coupled to physically derived address equality
+and finite-pool allocation. Cycles 412--414 have retired host-only tuple
+action, the first matter/status cross-grid, and one one-shot collision/reuse
+construction. They have not supplied the independent observable that could
+select a law.
 
 ### Decisive question
 
-Can one predeclared, independently held physical consistency test select or
-falsify among the two Cycle-409 numerical-selector dependencies and among the
-three Cycle-367 Record-formation hypotheses, while the selected candidate is
-implemented with renewable local state and without reading the Cycle-407
-`(0,1)` comparator output to choose the rule?
+Can one predeclared held observable, independent of B0/B1 and the Cycle-407
+comparator, select or falsify among the two Cycle-409 selector dependencies
+and the three Cycle-367 Record-formation hypotheses when address equality and
+finite-pool allocation are computed physically rather than supplied as alias,
+target, invocation, and blank labels?
 
 ### Required routes
 
-1. **Matter-sector route.** Vary occupation independently across `N_x=0,1,2`
-   and held coherent combinations. Test whether the contact-active selector
-   makes stable predictions under a predeclared response, renewal, and
-   deletion grammar.
-2. **Record-status route.** Vary lawful formation/permanence independently of
-   matter occupation. Test immediate, migrating, and threshold formation
-   interfaces without treating a supplied permanence bit as actuality.
-3. **Source/response route.** Use the strict shared-middle response and a
-   predeclared physical source-candidate functional to test both selector and
-   formation hypotheses. Do not identify contact response, gate count, or
-   squared norm with energy/source by naming.
-4. **Renewal/recurrent-volume adversary.** On adjacent maximal stars, compile
-   blank/work/role renewal and collision arbitration at least through the
-   lowest sector that can falsify the selected rule. Materialize all needed
-   physical role orders or give an exact bounded replacement. This route
-   guards against selecting a law that only works with one-shot supplied
-   host initialization.
-5. **Codec/genesis control.** Compile the Cycle-408 oriented proper-cubic class
-   action into a bounded reversible M2 register and test an exact-algebraic or
-   interval-certified replacement for the supplied decimal equality radius.
-   Keep label genesis, effect functionality, and physical law selection
-   separate; a host-side finite codec is not yet a physical identity law.
+1. **Independent-observable route.** Freeze a physical or empirical
+   consistency observable before either selector runs. It must not read B0/B1,
+   the held flag, or any downstream score to choose the route.
+2. **Formation cross-grid route.** Run immediate, migrating, and threshold
+   candidates across the frozen Cycle-413 matter-by-status grid and held
+   coherent extensions. A permanence bit remains a control, not actuality.
+3. **Address/allocation route.** Compute local target equality from physical
+   target labels, select from a finite multi-blank pool, and test at least two
+   exchanges plus same-target and overlapping-neighbor collisions. Treat this
+   as infrastructure unless it couples to the independent observable.
+4. **Numerical-genesis route.** Physicalize effect-to-oriented-tuple genesis
+   and test exact-algebraic or interval-certified equality in place of the
+   supplied 13-decimal radius. Keep codec, equality policy, grade selection,
+   and Born meaning distinct.
+5. **Source/clock far-side route.** If no independent law-selecting observable
+   is available, retask to Cycle 294's carried two-level source register, full
+   hard-core many-field ledger, and two-slice/off-diagonal even-CAR current on
+   one common physical code. Test the resulting balance against the
+   Cycle-213/216 scalar response and Cycle-170/46 clock/metric receiving
+   contracts. Do not infer gravity from a contact response or depth label.
 
 ### Success contract
 
@@ -557,21 +601,18 @@ Require:
 - Record identity, mass, number, contact, seam, leakage, deletion, and lawful-
   domain controls;
 - autonomous or explicitly imported blank/reference/selector genesis;
-- renewal and same-target/concurrent-use controls;
+- at least two reserve uses plus same-target and overlapping-neighbor controls;
 - an exact supplied/derived/open inventory; and
 - full N1--N8 before any impossibility, minimum-content, shared-obstruction, or
   axiom-pressure statement.
 
-A positive result would be the first evidence that one common physical
-dependency can discriminate both a numerical proposal and a Record-formation
-law without circularly consulting the downstream score. A split result would
-sharpen the law inventory. A route-specific failure would remain only a
-route-specific failure.
-
-If that tournament closes early, retask immediately to the next highest-value
-far-side wall: derive and test a physical source functional with reciprocal
-metric/clock response. Do not infer gravity from a source-facing Record or
-depth label alone.
+A positive result would be the first evidence that one independent physical
+dependency discriminates both a numerical proposal and a Record-formation law
+without circular score consultation. A split result would sharpen the law
+inventory. If no independent observable exists, physicalize address/allocation
+or the source/clock far side honestly as infrastructure; do not pretend that
+more one-shot candidate labels have selected a law. A route-specific failure
+would remain only a route-specific failure.
 
 ## Restart and packaging instructions
 

@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_fermionic_even_car_walk_expansion_2026_07_18.py
+runner_sha256: b7ae056b640573b9f01ad4c3c3bfbeb9bb6fc79daa6051f54037f5b4b4727678
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+PASS: CAR relations hold for every ordered four-site generator pair
+PASS: Two disjoint two-site PBW families each contain sixteen representatives
+PASS: Each PBW family has full rank sixteen
+PASS: Each PBW representative is nonzero and pairwise distinct
+PASS: All 256 PBW pairs obey the graded sign and 192 reject the p-plus-q sign
+PASS: PBW rank gate kills a duplicated-generator mutation missed by a bare sign check
+PASS: Even disjoint CAR elements commute with both observable parities
+PASS: Odd disjoint CAR elements anticommute and need not commute
+PASS: Hopping and pairing bonds are Hermitian, even, norm one, and disjoint-local
+PASS: An odd Hermitian disjoint term breaks ordinary boundary reduction
+PASS: Even-source ordinary commutators vanish through order two and arrive at three
+PASS: Odd-odd graded commutators vanish through order two and arrive at three
+PASS: Odd-odd ordinary Taylor coefficients do not obey a distance-three start
+PASS: Even-bond inhomogeneity reaches the odd probe only at recursive order two
+PASS: Odd-source flow splits exactly into homogeneous transport and inhomogeneity
+PASS: Unitary homogeneous transport preserves the initial commutator norm
+PASS: Even Hamiltonian adjoints preserve both even and odd parity sectors
+PASS: Fermionic boundary reduction removes both far bonds from the local density flow
+PASS: Self-bond deletion leaves the adjacent reduced generator contribution
+PASS: Reduced generator sums remain Hermitian and even
+PASS: Fixed-order JW image of a nonadjacent hop is not supported on its endpoint qubits
+PASS: The same nonadjacent hop remains intrinsically CAR-local at the intermediate site
+PASS: Cubic nearest-neighbor geometry gives six first bonds and ten nonself continuations
+PASS: Four-site exact chains distinguish below-cone orders from distance-three arrival
+PASS: Walk coefficient assembles as (2J)^k n_X 10^(k-1)=(n_X/10)(20J)^k
+PASS: Factorial-tail coefficient domination holds on an exact integer grid
+PASS: Exponential reweighting identity is exact at every tested tail order
+PASS: Disconnected components have zero graded and inhomogeneous cross-component tails
+PASS: Disconnected odd observables retain a nonzero ordinary statistical initial term
+PASS: Empty Hamiltonian leaves the ordinary commutator equal to its initial datum
+PASS: Family use distinguishes finite J-star from the algebraically unbounded J_n=n
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

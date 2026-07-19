@@ -1,6 +1,6 @@
 {
- "edge_count": 14806,
- "node_count": 4411,
+ "edge_count": 14820,
+ "node_count": 4413,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1587,8 +1587,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "65c5fffb3e72",
-   "out_degree": 309
+   "deps_hash": "1e630e6b31a0",
+   "out_degree": 311
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -2625,6 +2625,10 @@
   "cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25_note_2026-05-17": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "cross_sector_front_speed_b4_two_surface_alignment_bounded_theorem_note_2026-07-16": {
+   "deps_hash": "9d5ef3fb252d",
+   "out_degree": 6
   },
   "cte_rconn_spatial_tensor_color_bridge_is_a_cross_domain_coincidence_narrow_no_go_note_2026-06-08": {
    "deps_hash": "825a4024d61b",
@@ -8837,6 +8841,10 @@
   "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09": {
    "deps_hash": "39d65aeb687b",
    "out_degree": 2
+  },
+  "microcausality_fermionic_even_car_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18": {
+   "deps_hash": "190e5331eafb",
+   "out_degree": 6
   },
   "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": {
    "deps_hash": "61305a7e0862",

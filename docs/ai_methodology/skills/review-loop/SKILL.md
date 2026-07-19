@@ -193,9 +193,9 @@ PRs", "drain the PR backlog"): enumerate the backlog, review in parallel,
 land serially — no topology decisions required from the invoker. Free-text
 focus without a named target (e.g. "imports") is the drain with that
 emphasis applied in every slot. Reviewing one branch or one PR is the
-special case that requires naming the target, and the review-only flags
-(`--no-fix`, `--no-commit`) are valid only with a named target — they
-contradict the drain's land-end-to-end contract.
+special case that requires naming the target, and ANY flag without a named
+target is invalid — stop and ask for a target (see Arguments; the
+review-only flags contradict the drain's land-end-to-end contract).
 
 1. **Enumerate targets**: open, non-draft PRs in scope (drafts stay out of
    scope per the draft rule below). Detect stacks and cumulative-tower
@@ -317,12 +317,23 @@ close-with-reason path; the checklist adds no new disposition.
 
 ## Arguments
 
-Parse:
+Parse, in this order:
 
-- focus text: optional free-text review focus;
-- `--max-iterations N`: optional cap, default `5`;
-- `--no-fix`: review only, do not edit;
+- `[target]`: optional named branch or PR (a PR number/URL, or a token that
+  matches an existing branch). Resolve the target FIRST: a named target
+  selects focused single-target mode; anything that is not a resolvable
+  branch/PR is focus text, not a target.
+- focus text: optional free-text review emphasis. With a target it scopes
+  that review; without a target it scopes every slot of the backlog drain.
+- `--max-iterations N`: optional iteration cap, default `5`.
+- `--no-fix`: review only, do not edit.
 - `--no-commit`: fix locally but do not create iteration commits.
+
+ANY flag without a named target is an invalid invocation — flags configure
+a focused single-target run and contradict or under-specify the drain
+(`--no-fix`/`--no-commit` contradict its land-end-to-end contract) — stop
+and ask for a target instead of guessing. Only the zero-argument and
+focus-text-only forms select the backlog drain.
 
 ## Setup
 

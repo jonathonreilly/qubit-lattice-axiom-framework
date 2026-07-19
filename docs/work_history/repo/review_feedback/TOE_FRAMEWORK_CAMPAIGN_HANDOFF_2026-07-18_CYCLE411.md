@@ -97,6 +97,10 @@ Read these completely, in order:
 27. [Cycle 415: local request-equality and finite-pool exchange](./PHYSICAL_LOCAL_ADDRESS_POOL_ALLOCATOR_CYCLE415_NOTE_2026-07-18.md).
 28. [Cycle 416: strict-response source-balance receiver seam](./PHYSICAL_STRICT_RESPONSE_SOURCE_CLOCK_METRIC_RECEIVER_CYCLE416_NOTE_2026-07-18.md).
 29. [Cycle 417: coherent physical receiver-source ports](./PHYSICAL_COHERENT_RECEIVER_SOURCE_INJECTION_CYCLE417_NOTE_2026-07-18.md).
+30. [Cycle 295: conjugate-source bridge follow-on synthesis](./CONJUGATE_SOURCE_BRIDGE_FOLLOWON_SYNTHESIS_CYCLE295_NOTE_2026-07-17.md).
+31. [Cycle 296: dynamic/static source-interface synthesis](./DYNAMIC_STATIC_SOURCE_INTERFACE_SYNTHESIS_CYCLE296_NOTE_2026-07-17.md).
+32. [Local conjugate-reservoir source/field repair](./LOCAL_CONJUGATE_RESERVOIR_SOURCE_FIELD_LEDGER_REPAIR_NOTE_2026-07-17.md).
+33. [Carried internal-species source/field ledger](./CARRIED_INTERNAL_SPECIES_SOURCE_FIELD_LEDGER_REPAIR_NOTE_2026-07-17.md).
 
 Read the direct child notes and runners only when auditing exact construction
 details. Do not let the one-dimensional bound-state benchmark become the

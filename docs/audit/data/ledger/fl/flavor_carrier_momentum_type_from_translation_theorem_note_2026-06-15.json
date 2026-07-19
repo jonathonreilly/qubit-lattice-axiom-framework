@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-19T18:40:33.052086+00:00",
+  "audit_date": "2026-07-19T18:40:33.055350+00:00",
   "audit_invocation_history": [
-    "9c34c2bf5ccb490cbee55c5690b607a4"
+    "9c34c2bf5ccb490cbee55c5690b607a4",
+    "6a7796853e6040bab6bf0ac5dc077d5a"
   ],
-  "audit_invocation_id": "9c34c2bf5ccb490cbee55c5690b607a4",
+  "audit_invocation_id": "6a7796853e6040bab6bf0ac5dc077d5a",
   "audit_state_snapshot": {
     "criticality": "critical",
     "dep_axiom_premise_note_hash": {},
@@ -17,20 +18,20 @@
     "transitive_descendants": 1177
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260719-433ce1e6",
+  "auditor": "codex-audit-batch-B-20260719-5d59cb9d",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The exact finite-dimensional algebra closes conditional on the displayed definitions. The missing step is a derivation of the periodic 2 x 2 x 2 quotient and supplied K_1 locus from the accepted framework premises.",
+  "chain_closure_explanation": "The finite-dimensional algebra itself is correctly constructed and all ten exact checks pass. Audit-chain closure is nevertheless blocked because an audited-clean verdict requires a complete N1-N8 discipline packet, while the supplied live stdout lacks enough distinct route-class and resolution-level evidence to construct one honestly.",
   "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
-  "claim_scope": "Given the supplied periodic 2 x 2 x 2 cell and K_1 subset, the Z_2^3 character basis has uniform position-diagonal expectations and Kronecker momentum-projector expectations.",
+  "claim_scope": "On the supplied periodic 2 x 2 x 2 cell, all translation characters have identical expectations for every position-diagonal operator, while their rank-one character projectors give the Kronecker-delta expectation matrix.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-19T18:40:33.052086+00:00",
+  "claim_type_last_reviewed": "2026-07-19T18:40:33.055350+00:00",
   "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
@@ -40,17 +41,17 @@
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 11.702,
-  "load_bearing_step": "Orthonormality follows from the finite character sum (1/8) sum_n (-1)^((k+q).n) = delta_(kq), from which the uniform expectations and projector identities follow.",
+  "load_bearing_step": "For every translation character, every position-diagonal operator has expectation (1/8) sum_n w_n, whereas the rank-one character projectors satisfy <psi_k, P_q psi_k> = delta_(kq).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "negative_assertion_classes": [],
   "note_hash": "bfcd06cbd71305062c6dfc58211cae68ef684291ba0be63c39c9b3230603c34d",
   "note_path": "docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md",
-  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the periodic 2 x 2 x 2 quotient and supplied K_1 locus from an accepted premise, or keep downstream uses explicitly conditional on them and add a dated downstream-hygiene line to this note's own boundary.",
+  "notes_for_re_audit_if_any": "runner_artifact_issue: add current-cycle runner output sufficient to populate the complete N1-N8 discipline packet, including five distinct evidenced N1 mechanism classes and all five N5 resolution-class tests, then re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -276,5 +277,5 @@
   "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py",
   "title": "Finite Translation-Character Profiles and Projectors Theorem",
   "transitive_descendants": 1177,
-  "verdict_rationale": "The runner genuinely constructs the matrices and verifies all ten stated identities with exact symbolic arithmetic. Those checks are class (A) consequences of a periodic eight-site domain and K_1 subset introduced directly by the note, rather than a class (C) derivation of that domain from the framework baseline. The result is therefore sound as a bounded finite construction but conditional on its supplied finite-cell setup and carries no derived physical flavor identification."
+  "verdict_rationale": "Issue: the exact finite equalities pass, but the mandatory clean-verdict N1-N8 evidence packet cannot be completed from the supplied runner stdout. Why this blocks: the stdout does not evidence five distinct N1 mechanism classes or the five required N5 resolution tests, so an audited-clean result would violate the packet rules. Repair target: extend the current-cycle runner evidence with the required distinct stress routes and resolution-class tests, then rerun the restricted audit. Claim boundary until fixed: the displayed finite-cell identities remain exactly runner-supported, but clean audit ratification is withheld."
 }

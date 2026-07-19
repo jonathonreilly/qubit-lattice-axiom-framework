@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 30.612,
+  "load_bearing_score": 30.614,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -456,6 +456,6 @@
   },
   "runner_path": "scripts/frontier_three_generation_structure_narrow_spectrum.py",
   "title": "Three-Generation Matter Structure Note",
-  "transitive_descendants": 1106,
+  "transitive_descendants": 1107,
   "verdict_rationale": null
 }

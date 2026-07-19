@@ -25,37 +25,37 @@ file per claim), summarized in
 
 Sorted by load-bearing graph score (descending).
 
-- [`graph_first_su3_integration_note`](../../docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) — score 64.182; audited 2026-05-22T15:30:10.285410+00:00
-- [`native_gauge_closure_note`](../../docs/NATIVE_GAUGE_CLOSURE_NOTE.md) — score 37.146; audited 2026-05-23T14:13:39.056923+00:00
-- [`cpt_exact_note`](../../docs/CPT_EXACT_NOTE.md) — score 31.801; audited 2026-07-18T15:57:45.306298+00:00
-- [`koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10`](../../docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md) — score 30.690; audited 2026-07-18T04:09:14.626536+00:00
-- [`koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`](../../docs/KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md) — score 25.692; audited 2026-07-18T01:25:36.958473+00:00
-- [`graph_first_selector_derivation_note`](../../docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md) — score 25.168; audited 2026-05-22T15:33:35.673777+00:00
-- [`gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10`](../../docs/GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 24.886; audited 2026-06-06T22:50:14.735139+00:00
-- [`alpha_lm_geometric_mean_identity_theorem_note_2026-04-24`](../../docs/ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md) — score 24.820; audited 2026-07-15T18:45:38.154373+00:00
-- [`koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`](../../docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) — score 24.527; audited 2026-07-12T18:27:34Z
-- [`site_phase_cube_shift_intertwiner_note`](../../docs/SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) — score 23.986; audited 2026-05-02T15:37:57.008099+00:00
-- [`staggered_only_det_positivity_case_a_note_2026-05-17`](../../docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md) — score 21.188; audited 2026-05-23T19:08:58.399053+00:00
-- [`s3_taste_cube_decomposition_note`](../../docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md) — score 18.980; audited 2026-05-23T14:10:38.971653+00:00
-- [`gauge_scalar_temporal_completion_theorem_note`](../../docs/GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md) — score 17.693; audited 2026-05-23T13:36:42.061961+00:00
-- [`naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`](../../docs/NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 16.184; audited 2026-05-22T16:13:26.228372+00:00
-- [`taste_scalar_isotropy_theorem_note`](../../docs/TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md) — score 15.683; audited 2026-05-05T09:07:06.655756+00:00
-- [`reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`](../../docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md) — score 15.172; audited 2026-05-29T01:07:36.331883+00:00
-- [`hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10`](../../docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md) — score 14.860; audited 2026-07-18T03:11:38.381968+00:00
+- [`graph_first_su3_integration_note`](../../docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) — score 64.183; audited 2026-05-22T15:30:10.285410+00:00
+- [`native_gauge_closure_note`](../../docs/NATIVE_GAUGE_CLOSURE_NOTE.md) — score 37.147; audited 2026-05-23T14:13:39.056923+00:00
+- [`cpt_exact_note`](../../docs/CPT_EXACT_NOTE.md) — score 31.803; audited 2026-07-18T15:57:45.306298+00:00
+- [`koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10`](../../docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md) — score 30.692; audited 2026-07-18T04:09:14.626536+00:00
+- [`koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`](../../docs/KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md) — score 25.694; audited 2026-07-18T01:25:36.958473+00:00
+- [`graph_first_selector_derivation_note`](../../docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md) — score 25.169; audited 2026-05-22T15:33:35.673777+00:00
+- [`gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10`](../../docs/GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 24.887; audited 2026-06-06T22:50:14.735139+00:00
+- [`alpha_lm_geometric_mean_identity_theorem_note_2026-04-24`](../../docs/ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md) — score 24.822; audited 2026-07-15T18:45:38.154373+00:00
+- [`koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`](../../docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) — score 24.529; audited 2026-07-12T18:27:34Z
+- [`site_phase_cube_shift_intertwiner_note`](../../docs/SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) — score 23.987; audited 2026-05-02T15:37:57.008099+00:00
+- [`staggered_only_det_positivity_case_a_note_2026-05-17`](../../docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md) — score 21.190; audited 2026-05-23T19:08:58.399053+00:00
+- [`s3_taste_cube_decomposition_note`](../../docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md) — score 18.981; audited 2026-05-23T14:10:38.971653+00:00
+- [`gauge_scalar_temporal_completion_theorem_note`](../../docs/GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md) — score 17.695; audited 2026-05-23T13:36:42.061961+00:00
+- [`naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`](../../docs/NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 16.185; audited 2026-05-22T16:13:26.228372+00:00
+- [`taste_scalar_isotropy_theorem_note`](../../docs/TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md) — score 15.685; audited 2026-05-05T09:07:06.655756+00:00
+- [`reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`](../../docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md) — score 15.174; audited 2026-05-29T01:07:36.331883+00:00
+- [`hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10`](../../docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md) — score 14.861; audited 2026-07-18T03:11:38.381968+00:00
 - [`koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18`](../../docs/KOIDE_GAMMA_AXIS_COVARIANT_FULL_CUBE_ORBIT_LAW_NOTE_2026-04-18.md) — score 14.281; audited 2026-05-10T14:44:09.593722+00:00
-- [`cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10`](../../docs/CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md) — score 13.972; audited 2026-05-22T03:13:54.866266+00:00
+- [`cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10`](../../docs/CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md) — score 13.974; audited 2026-05-22T03:13:54.866266+00:00
 - [`koide_anticommuting_operator_derivation_theorem_note_2026-05-10`](../../docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md) — score 13.644; audited 2026-07-10T16:57:30.154028+00:00
-- [`alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md) — score 13.616; audited 2026-06-11T13:12:46.274572+00:00
+- [`alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md) — score 13.618; audited 2026-06-11T13:12:46.274572+00:00
 - [`koide_gamma_orbit_selector_bridge_note_2026-04-18`](../../docs/KOIDE_GAMMA_ORBIT_SELECTOR_BRIDGE_NOTE_2026-04-18.md) — score 12.833; audited 2026-05-10T14:37:33.189790+00:00
-- [`koide_dweh_cyclic_compression_note_2026-04-18`](../../docs/KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md) — score 12.478; audited 2026-05-05T09:49:41.642799+00:00
+- [`koide_dweh_cyclic_compression_note_2026-04-18`](../../docs/KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md) — score 12.480; audited 2026-05-05T09:49:41.642799+00:00
 - [`i3_zero_exact_theorem_note`](../../docs/I3_ZERO_EXACT_THEOREM_NOTE.md) — score 12.160; audited 2026-05-03T12:43:10.800116+00:00
-- [`beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`](../../docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md) — score 11.987; audited 2026-06-06T16:26:01.015460+00:00
-- [`sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06`](../../docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md) — score 11.951; audited 2026-06-13T22:42:56.743023+00:00
+- [`beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`](../../docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md) — score 11.989; audited 2026-06-06T16:26:01.015460+00:00
+- [`sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06`](../../docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md) — score 11.953; audited 2026-06-13T22:42:56.743023+00:00
 - [`universal_gr_supermetric_normal_form_note`](../../docs/UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md) — score 11.562; audited 2026-05-07T01:31:04.953494+00:00
 - [`three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10`](../../docs/THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md) — score 11.285; audited 2026-07-12T19:21:35.332691+00:00
 - [`staggered_graph_portability_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_NOTE.md) — score 11.170; audited 2026-05-05T06:31:24.580329+00:00
-- [`cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`](../../docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md) — score 10.949; audited 2026-05-29T02:03:27.054059+00:00
-- [`eta_holonomy_base_flux_scope_boundary_note_2026-06-06`](../../docs/ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md) — score 10.057; audited 2026-07-18T06:29:49.810608+00:00
+- [`cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`](../../docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md) — score 10.951; audited 2026-05-29T02:03:27.054059+00:00
+- [`eta_holonomy_base_flux_scope_boundary_note_2026-06-06`](../../docs/ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md) — score 10.058; audited 2026-07-18T06:29:49.810608+00:00
 - [`scalar_3plus1_temporal_ratio_note`](../../docs/SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md) — score 8.822; audited 2026-05-23T13:54:19.575626+00:00
 - [`koide_cone_three_form_equivalence_narrow_theorem_note_2026-05-02`](../../docs/KOIDE_CONE_THREE_FORM_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-02.md) — score 8.781; audited 2026-05-05T11:37:06.412053+00:00
 - [`koide_cone_completing_root_narrow_theorem_note_2026-05-02`](../../docs/KOIDE_CONE_COMPLETING_ROOT_NARROW_THEOREM_NOTE_2026-05-02.md) — score 8.281; audited 2026-05-05T11:38:02.248823+00:00
@@ -110,45 +110,45 @@ Sorted by load-bearing graph score (descending).
 
 Sorted by load-bearing graph score (descending).
 
-- [`plaquette_self_consistency_note`](../../docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md) — score 49.260; audited 2026-07-18T01:04:58.329581+00:00
-- [`s3_cap_uniqueness_note`](../../docs/S3_CAP_UNIQUENESS_NOTE.md) — score 21.734; audited 2026-05-28T01:33:46.485182+00:00
-- [`lattice_greens_function_maradudin_textbook_import_note_2026-05-18`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) — score 19.607; audited 2026-06-10T02:32:15.539017+00:00
-- [`spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10`](../../docs/SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 15.755; audited 2026-07-18T01:07:50.223817+00:00
+- [`plaquette_self_consistency_note`](../../docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md) — score 49.261; audited 2026-07-18T01:04:58.329581+00:00
+- [`s3_cap_uniqueness_note`](../../docs/S3_CAP_UNIQUENESS_NOTE.md) — score 21.735; audited 2026-05-28T01:33:46.485182+00:00
+- [`lattice_greens_function_maradudin_textbook_import_note_2026-05-18`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) — score 19.609; audited 2026-06-10T02:32:15.539017+00:00
+- [`spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10`](../../docs/SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 15.756; audited 2026-07-18T01:07:50.223817+00:00
 - [`gate_b_grown_distance_law_note`](../../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md) — score 15.619; audited 2026-05-05T00:56:01.672707+00:00
-- [`pl_topology_infrastructure_textbook_import_note_2026-05-17`](../../docs/PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — score 15.235; audited 2026-05-26T19:25:11.724360+00:00
-- [`plaquette_v1_picard_fuchs_ode_note_2026-05-05`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) — score 15.092; audited 2026-06-08T18:55:20.964216+00:00
+- [`pl_topology_infrastructure_textbook_import_note_2026-05-17`](../../docs/PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — score 15.236; audited 2026-05-26T19:25:11.724360+00:00
+- [`plaquette_v1_picard_fuchs_ode_note_2026-05-05`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) — score 15.094; audited 2026-06-08T18:55:20.964216+00:00
 - [`claude_complex_action_grown_companion_note`](../../docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md) — score 14.858; audited 2026-05-11T22:49:29.676859+00:00
-- [`hierarchy_spatial_bc_and_u0_scaling_note`](../../docs/HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md) — score 13.692; audited 2026-05-05T09:59:06.642371+00:00
+- [`hierarchy_spatial_bc_and_u0_scaling_note`](../../docs/HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md) — score 13.693; audited 2026-05-05T09:59:06.642371+00:00
 - [`valley_linear_action_note`](../../docs/VALLEY_LINEAR_ACTION_NOTE.md) — score 13.190; audited 2026-05-11T22:50:45.104109+00:00
 - [`alt_connectivity_family_sign_note`](../../docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md) — score 12.687; audited 2026-05-04T23:31:29.820978+00:00
 - [`alt_connectivity_family_basin_note`](../../docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md) — score 12.100; audited 2026-05-05T04:20:10.208839+00:00
 - [`second_grown_family_sign_note`](../../docs/SECOND_GROWN_FAMILY_SIGN_NOTE.md) — score 12.100; audited 2026-05-06T02:47:50.916426+00:00
-- [`lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10`](../../docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md) — score 11.970; audited 2026-05-29T20:59:18.926390+00:00
-- [`pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26`](../../docs/PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md) — score 11.945; audited 2026-07-12T13:49:19.662643+00:00
+- [`lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10`](../../docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md) — score 11.972; audited 2026-05-29T20:59:18.926390+00:00
+- [`pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26`](../../docs/PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md) — score 11.947; audited 2026-07-12T13:49:19.662643+00:00
 - [`causal_propagating_field_live_packet_note_2026-06-05`](../../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md) — score 11.615; audited 2026-06-21T05:47:30.165796+00:00
-- [`pmns_oriented_cycle_selection_structure_note`](../../docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md) — score 11.543; audited 2026-07-11T18:19:30.117160+00:00
-- [`physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30`](../../docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md) — score 11.502; audited 2026-07-11T18:19:42.644325+00:00
-- [`wave_equation_gravity_note`](../../docs/WAVE_EQUATION_GRAVITY_NOTE.md) — score 11.443; audited 2026-05-05T11:29:56.869099+00:00
-- [`abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md) — score 11.410; audited 2026-07-13T02:07:44.434211+00:00
+- [`pmns_oriented_cycle_selection_structure_note`](../../docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md) — score 11.545; audited 2026-07-11T18:19:30.117160+00:00
+- [`physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30`](../../docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md) — score 11.504; audited 2026-07-11T18:19:42.644325+00:00
+- [`wave_equation_gravity_note`](../../docs/WAVE_EQUATION_GRAVITY_NOTE.md) — score 11.445; audited 2026-05-05T11:29:56.869099+00:00
+- [`abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md) — score 11.412; audited 2026-07-13T02:07:44.434211+00:00
 - [`lattice_nn_continuum_note`](../../docs/LATTICE_NN_CONTINUUM_NOTE.md) — score 11.200; audited 2026-05-07T02:02:43.497032+00:00
 - [`dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md) — score 11.172; audited 2026-05-28T03:50:47.795466+00:00
 - [`wave_direct_dm_h025_two_point_synthesis_note`](../../docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md) — score 10.907; audited 2026-05-28T03:20:36.628226+00:00
 - [`persistent_object_top4_multistage_transfer_sweep_note_2026-04-16`](../../docs/PERSISTENT_OBJECT_TOP4_MULTISTAGE_TRANSFER_SWEEP_NOTE_2026-04-16.md) — score 10.883; audited 2026-05-07T01:03:58.230291+00:00
 - [`dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17`](../../docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — score 10.728; audited 2026-05-28T03:49:02.790570+00:00
 - [`broad_gravity_derivation_note`](../../docs/BROAD_GRAVITY_DERIVATION_NOTE.md) — score 10.700; audited 2026-07-12T19:45:52.169484+00:00
-- [`staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11`](../../docs/STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md) — score 10.674; audited 2026-07-18T01:33:18.664218+00:00
+- [`staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11`](../../docs/STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md) — score 10.675; audited 2026-07-18T01:33:18.664218+00:00
 - [`dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16`](../../docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md) — score 10.650; audited 2026-07-17T18:30:59.911543+00:00
-- [`staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06`](../../docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) — score 10.558; audited 2026-07-18T06:23:44.930462+00:00
-- [`pmns_tm2_residual_consequence_bounded_note_2026-05-26`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md) — score 10.443; audited 2026-07-09T23:15:26.782964+00:00
-- [`wave_equation_self_field_note`](../../docs/WAVE_EQUATION_SELF_FIELD_NOTE.md) — score 10.443; audited 2026-05-05T11:30:16.636142+00:00
+- [`staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06`](../../docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) — score 10.560; audited 2026-07-18T06:23:44.930462+00:00
+- [`pmns_tm2_residual_consequence_bounded_note_2026-05-26`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md) — score 10.445; audited 2026-07-09T23:15:26.782964+00:00
+- [`wave_equation_self_field_note`](../../docs/WAVE_EQUATION_SELF_FIELD_NOTE.md) — score 10.445; audited 2026-05-05T11:30:16.636142+00:00
 - [`lattice_nn_deterministic_rescale_note`](../../docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md) — score 10.407; audited 2026-05-07T02:10:44.293387+00:00
 - [`gate_b_nonlabel_sign_grown_transfer_note`](../../docs/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER_NOTE.md) — score 10.358; audited 2026-05-25T11:31:42.705039+00:00
 - [`persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16`](../../docs/PERSISTENT_OBJECT_TOP4_MULTISTAGE_OUTER_TRANSFER_SWEEP_NOTE_2026-04-16.md) — score 10.085; audited 2026-05-12T00:36:53.941331+00:00
 - [`dimensional_gravity_table`](../../docs/DIMENSIONAL_GRAVITY_TABLE.md) — score 10.066; audited 2026-05-17T12:41:43.286700+00:00
 - [`shapiro_static_discriminator_note`](../../docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md) — score 9.992; audited 2026-07-17T18:02:00.319833+00:00
 - [`linear_response_true_kubo_note`](../../docs/LINEAR_RESPONSE_TRUE_KUBO_NOTE.md) — score 9.977; audited 2026-05-05T09:30:52.833678+00:00
-- [`wave_static_boundary_sensitivity_note`](../../docs/WAVE_STATIC_BOUNDARY_SENSITIVITY_NOTE.md) — score 9.943; audited 2026-05-11T22:57:20.232607+00:00
-- [`wave_static_matrixfree_fixed_beam_boundary_note`](../../docs/WAVE_STATIC_MATRIXFREE_FIXED_BEAM_BOUNDARY_NOTE.md) — score 9.943; audited 2026-05-11T22:57:40.812865+00:00
+- [`wave_static_boundary_sensitivity_note`](../../docs/WAVE_STATIC_BOUNDARY_SENSITIVITY_NOTE.md) — score 9.945; audited 2026-05-11T22:57:20.232607+00:00
+- [`wave_static_matrixfree_fixed_beam_boundary_note`](../../docs/WAVE_STATIC_MATRIXFREE_FIXED_BEAM_BOUNDARY_NOTE.md) — score 9.945; audited 2026-05-11T22:57:40.812865+00:00
 - [`bell_inequality_derived_note`](../../docs/BELL_INEQUALITY_DERIVED_NOTE.md) — score 9.875; audited 2026-06-05T17:07:28.466859+00:00
 - [`persistent_object_compact_inertial_probe_note_2026-04-16`](../../docs/PERSISTENT_OBJECT_COMPACT_INERTIAL_PROBE_NOTE_2026-04-16.md) — score 9.833; audited 2026-05-05T10:42:06.049441+00:00
 - [`persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16`](../../docs/PERSISTENT_OBJECT_INWARD_BOUNDARY_FLOOR_DIAGNOSIS_NOTE_2026-04-16.md) — score 9.615; audited 2026-05-12T00:25:13.086147+00:00
@@ -425,15 +425,15 @@ Sorted by load-bearing graph score (descending).
 
 ## Boxed decorations under retained parents (15)
 
-- [`left_handed_charge_matching_note`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md) — score 29.058; audited 2026-05-24T20:35:17.186937+00:00; under `graph_first_su3_integration_note`
-- [`ew_current_fierz_channel_decomposition_note_2026-05-01`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) — score 22.711; audited 2026-05-23T14:25:12.301143+00:00; under `graph_first_su3_integration_note`
-- [`yukawa_color_projection_theorem`](../../docs/YUKAWA_COLOR_PROJECTION_THEOREM.md) — score 15.338; audited 2026-05-25T10:18:49.309520+00:00; under `graph_first_su3_integration_note`
-- [`canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`](../../docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) — score 13.760; audited 2026-07-18T03:30:46.114644+00:00; under `plaquette_self_consistency_note`
+- [`left_handed_charge_matching_note`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md) — score 29.059; audited 2026-05-24T20:35:17.186937+00:00; under `graph_first_su3_integration_note`
+- [`ew_current_fierz_channel_decomposition_note_2026-05-01`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) — score 22.712; audited 2026-05-23T14:25:12.301143+00:00; under `graph_first_su3_integration_note`
+- [`yukawa_color_projection_theorem`](../../docs/YUKAWA_COLOR_PROJECTION_THEOREM.md) — score 15.339; audited 2026-05-25T10:18:49.309520+00:00; under `graph_first_su3_integration_note`
+- [`canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`](../../docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) — score 13.762; audited 2026-07-18T03:30:46.114644+00:00; under `plaquette_self_consistency_note`
 - [`newton_law_derived_note`](../../docs/NEWTON_LAW_DERIVED_NOTE.md) — score 13.609; audited 2026-07-12T18:58:38.545638+00:00; under `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
-- [`lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) — score 12.562; audited 2026-05-22T16:04:50.374175+00:00; under `graph_first_su3_integration_note`
-- [`lhcm_matter_assignment_from_su3_representation_note_2026-05-02`](../../docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md) — score 12.487; audited 2026-05-24T20:47:44.313664+00:00; under `graph_first_su3_integration_note`
-- [`native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23`](../../docs/NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23.md) — score 11.906; audited 2026-05-23T15:46:24.593087+00:00; under `graph_first_su3_integration_note`
-- [`abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18`](../../docs/ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md) — score 10.904; audited 2026-06-21T06:10:08.172181+00:00; under `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23`
+- [`lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) — score 12.563; audited 2026-05-22T16:04:50.374175+00:00; under `graph_first_su3_integration_note`
+- [`lhcm_matter_assignment_from_su3_representation_note_2026-05-02`](../../docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md) — score 12.489; audited 2026-05-24T20:47:44.313664+00:00; under `graph_first_su3_integration_note`
+- [`native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23`](../../docs/NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23.md) — score 11.907; audited 2026-05-23T15:46:24.593087+00:00; under `graph_first_su3_integration_note`
+- [`abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18`](../../docs/ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md) — score 10.905; audited 2026-06-21T06:10:08.172181+00:00; under `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23`
 - [`kubo_range_of_validity_note`](../../docs/KUBO_RANGE_OF_VALIDITY_NOTE.md) — score 6.024; audited 2026-05-05T11:26:50.315429+00:00; under `linear_response_true_kubo_note`
 - [`lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17`](../../docs/LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17.md) — score 5.255; audited 2026-07-10T03:19:43.094692+00:00; under `graph_first_su3_integration_note`
 - [`cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02`](../../docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md) — score 2.500; audited 2026-06-03T02:09:41.602441+00:00; under `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`

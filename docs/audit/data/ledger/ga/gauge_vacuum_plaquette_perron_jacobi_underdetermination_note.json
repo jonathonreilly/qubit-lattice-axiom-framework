@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.687,
+  "load_bearing_score": 12.688,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -259,6 +259,6 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py",
   "title": "Gauge-Vacuum Plaquette Perron/Jacobi Underdetermination",
-  "transitive_descendants": 823,
+  "transitive_descendants": 824,
   "verdict_rationale": null
 }

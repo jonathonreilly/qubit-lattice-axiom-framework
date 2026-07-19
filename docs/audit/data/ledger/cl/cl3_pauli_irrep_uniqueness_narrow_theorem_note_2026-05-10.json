@@ -31,7 +31,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 17.756,
+  "load_bearing_score": 17.757,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -1460,6 +1460,61 @@
         "total_pass": 51
       },
       "verdict_rationale": "The basis, central-idempotent decomposition, matrix-unit construction, module classification, real faithfulness calculation, and conditional unitary argument form a coherent exact class-(A) proof with no cited dependency. The assertions that irreducible complexified modules are not faithful and that bare complex equivalence does not imply unitary equivalence are derived negative boundaries, so they trigger the no-go-discipline gate despite the mechanical source-shape value being false. N2 distinguishes the two boundaries, N3 reveals no load-bearing hidden premise, N4 reports no reused residual, N5 supplies all five resolution scales, N6 supplies partial-closure dispositions, N7 independently resolves the faithful-direct-sum steelman, and N8 supplies the restricted cross-cycle index; however, the clipped live artifact does not expose five complete evidenced N1 routes. A clean verdict therefore cannot be authenticated from this packet."
+    },
+    {
+      "archived_at": "2026-07-19T18:42:27.599195+00:00",
+      "audit_date": "2026-07-19T18:40:33.047036+00:00",
+      "audit_invocation_history": [
+        "223db25b557249e0bed6b70c77ab85f2"
+      ],
+      "audit_invocation_id": "223db25b557249e0bed6b70c77ab85f2",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f"
+        },
+        "load_bearing_score": 17.756,
+        "runner_hash": "6eaf62118f0bf14a92574d4dbe175b2d197afdb6cf3018ed87e9ef1f0bfad6ce",
+        "transitive_descendants": 1728
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260719-9fe5854f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note presents a coherent exact algebraic proof, but the restricted packet clips both the primary runner source and the live stdout before three of the five claimed N1 routes can be authenticated. Consequently the mandatory clean-verdict negative-boundary gate cannot be completed from the supplied evidence.",
+      "claim_scope": "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-19T18:40:33.047036+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The four elements in (12) span each ideal and satisfy the matrix-unit identities, so each ideal is isomorphic to M_2(C), yielding the two irreducible module classes.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete primary runner source and complete current-cycle stdout for all five N1 routes, then repeat the fresh-context audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 51,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 51
+      },
+      "verdict_rationale": "Issue: the packet truncates the primary runner source and omits complete live evidence for three of the five N1 routes required to authenticate the derived faithfulness and unitary-equivalence boundaries. Why this blocks: an audited-clean verdict requires a complete PASS no-go-discipline packet, and ATTEMPTED routes must be evidenced by current live stdout rather than source code. Repair target: rerender the packet with the complete primary runner source and untruncated live stdout containing all five N1 route records. Claim boundary until fixed: the internal algebraic argument remains locally coherent, but this audit cannot ratify the full scoped theorem and its derived negative boundaries as clean."
     }
   ],
   "prose_corrections": [],
@@ -1473,6 +1528,6 @@
   },
   "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
   "title": "Cl(3) Pauli Irrep Uniqueness Narrow Theorem",
-  "transitive_descendants": 1728,
+  "transitive_descendants": 1729,
   "verdict_rationale": null
 }

@@ -27,13 +27,13 @@
     "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
     "staggered_only_det_positivity_case_a_note_2026-05-17"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.122,
+  "load_bearing_score": 11.138,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/rp_multislice_halfspace_os_gram_certificate.py",
   "title": "Coupled multi-slice half-space SU(3) gauge + staggered OS Gram \u2014 narrow theorem note",
-  "transitive_descendants": 787,
+  "transitive_descendants": 796,
   "verdict_rationale": null
 }

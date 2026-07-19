@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 14.012,
+  "load_bearing_score": 14.029,
   "load_bearing_step": "By class-A inversion of A2, `L = G_0^{-1} = H = -Delta_lat`.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1499,6 +1499,6 @@
   },
   "runner_path": null,
   "title": "Conditional Poisson Forcing under the Self-Consistency Identification (Bounded)",
-  "transitive_descendants": 729,
+  "transitive_descendants": 738,
   "verdict_rationale": "The scoped implication is mathematically valid provided the stated two-sided inverses exist: substituting `L^{-1} = G_0 = H^{-1}` and inverting gives `L = H`. It remains audited_conditional because A2 is an explicit modelling premise and no supplied authority derives it from the accepted framework premises. No runner stdout or source was supplied, so the judgment rests on the note text; the algebraic implication does not require a completed computation."
 }

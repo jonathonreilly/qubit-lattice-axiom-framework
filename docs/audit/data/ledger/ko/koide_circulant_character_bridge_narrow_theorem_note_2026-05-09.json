@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 25.681,
+  "load_bearing_score": 25.692,
   "load_bearing_step": "Root-of-unity orthogonality makes the defining character sums equal to 3a and 3b, yielding a_0 = \u221a3a and z = \u221a3b.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -236,6 +236,6 @@
   },
   "runner_path": "scripts/frontier_koide_circulant_character_bridge_narrow.py",
   "title": "Koide Circulant / Character Bridge Narrow Theorem",
-  "transitive_descendants": 1160,
+  "transitive_descendants": 1169,
   "verdict_rationale": "The note gives a complete exact algebraic proof with no cited or hidden load-bearing input beyond the standard cube-root-of-unity identity. The supplied runner genuinely performs symbolic matrix and polynomial computations and reports 16 consistent class-A checks, including the eigenvalue formula and all three conclusions. The audited scope contains no physical identification or empirical comparison."
 }

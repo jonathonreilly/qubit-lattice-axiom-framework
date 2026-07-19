@@ -45,12 +45,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 21.922,
+  "load_bearing_score": 21.941,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "70686afe8ac50868fa7ea8e91f7dba2e566d95e80a379a986b0652962f6448f2",
+  "note_hash": "e6952f8bb3fb033a96e9fac6e10d877b3b3576f7ead872f2140ed832ac166700",
   "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -737,7 +737,7 @@
   },
   "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
   "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
-  "transitive_descendants": 685,
+  "transitive_descendants": 694,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

@@ -52,7 +52,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 15.692,
+  "load_bearing_score": 15.707,
   "load_bearing_step": "Given g_bosonic = 28, g_fermionic = 90, and fermion weight 7/8, g_* = 28 + (7/8) * 90 = 427/4 = 106.75.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -206,6 +206,6 @@
   },
   "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py",
   "title": "Standard-Model Relativistic Degrees-of-Freedom Count \u2014 Finite Inventory Arithmetic",
-  "transitive_descendants": 826,
+  "transitive_descendants": 835,
   "verdict_rationale": "The exact arithmetic is correct, and the runner genuinely computes the multiplicity products and Fraction sum rather than merely printing a passing result. However, the Standard Model inventory and its interpretation as relativistic thermal states are expressly declared external physical inputs; only the 7/8 weight is supplied by a retained one-hop authority. The result is therefore a valid conditional arithmetic certificate, not clean retained closure of the physical g_* value."
 }

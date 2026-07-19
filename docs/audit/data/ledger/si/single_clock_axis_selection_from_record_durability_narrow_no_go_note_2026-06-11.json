@@ -42,12 +42,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.922,
+  "load_bearing_score": 9.941,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "30a6a7938a2730bca38a624abf31656ef109df0addd4695b41e13ccd3ca258e5",
+  "note_hash": "d4274288b02d25927935e75a723c9bc375ca9ccf600d628a7f99ef9fcf34b3e2",
   "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -63,6 +63,6 @@
   },
   "runner_path": "scripts/single_clock_axis_selection_check_2026_06_11.py",
   "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
-  "transitive_descendants": 685,
+  "transitive_descendants": 694,
   "verdict_rationale": null
 }

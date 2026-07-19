@@ -35,12 +35,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.924,
+  "load_bearing_score": 9.943,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "ff9c7668bd94cd1cf5b072a6d97abaf53dd0ad5a93e4b85a140d70f21c7f28f6",
+  "note_hash": "73f3c5686c6937e1fab136458a6116d478ff2911bbe5cec720da476b58c586de",
   "note_path": "docs/SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -177,6 +177,6 @@
   },
   "runner_path": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py",
   "title": "Single-Clock Physical-Clock Admission Inventory N5 Support",
-  "transitive_descendants": 686,
+  "transitive_descendants": 695,
   "verdict_rationale": null
 }

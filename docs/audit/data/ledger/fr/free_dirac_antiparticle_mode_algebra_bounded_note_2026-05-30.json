@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.892,
+  "load_bearing_score": 6.2,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -253,7 +253,7 @@
   },
   "runner_path": "scripts/free_dirac_antiparticle_mode_algebra_2026_05_30.py",
   "title": "Free Dirac Antiparticle Mode Algebra (Bounded Support)",
-  "transitive_descendants": 20,
+  "transitive_descendants": 25,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

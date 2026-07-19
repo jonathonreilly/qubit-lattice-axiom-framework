@@ -290,13 +290,16 @@ def mval(k):
 
 allk = list(itertools.product(range(4), repeat=3))
 eig_ok = True
+wave_norm_ok = True
 for k in allk:
     wr, wi = wave(k)
     lm = -4 * mval(k)
     if not eqm(M @ wr, lm * wr) or not eqm(M @ wi, lm * wi):
         eig_ok = False
-gate("B4.1", eig_ok,
-     "every momentum wave phi_k is an M-eigenvector at lambda = -4 m(k) (re and im parts)")
+    if int(wr @ wr + wi @ wi) != N:
+        wave_norm_ok = False
+gate("B4.1", eig_ok and wave_norm_ok,
+     "every nonzero unit-modulus momentum wave phi_k is an M-eigenvector at lambda = -4 m(k) (re and im parts)")
 re10, im10 = wave((1, 0, 0))
 gate("B4.2", eqm(M @ re10, -4 * re10) and not eqm(M @ re10, ZERO[:, 0])
      and not eqm(M @ re10, -8 * re10) and np.any(re10 != 0),
@@ -469,7 +472,7 @@ gate("B7.6", total == 12,
 kerpi_mats = even_tr
 S_sub = sum(trUQ(T, Q[1]) ** 2 for T in kerpi_mats)
 e1_sub = Fraction(S_sub, len(kerpi_mats) * Nm[1] ** 2)
-gate("B7.7", e1_sub != e_val[1],
+gate("B7.7", e1_sub == 192 and e1_sub != e_val[1],
      f"group-is-load-bearing rejector: e_1 over the 8 ker-pi translations == {e1_sub} != 4")
 
 print(f"[info] commutant dims e_m = {e_int}")
@@ -495,7 +498,7 @@ a_m = [a // 2 for a in a_m]
 s_m = [s // 2 for s in s_m]
 gate("B8.3", half_ok and a_m == [1, 1, 2, 1],
      f"invariant antisymmetric dims a_m = (e_m - nu_m)/2 == {a_m}")
-gate("B8.4", s_m == [1, 3, 2, 1],
+gate("B8.4", half_ok and s_m == [1, 3, 2, 1],
      f"invariant symmetric dims s_m = (e_m + nu_m)/2 == {s_m}")
 gate("B8.5", all(a_m[m] + s_m[m] == e_int[m] and s_m[m] - a_m[m] == nu_int[m] for m in range(4))
      and all(a_m[m] >= 0 and s_m[m] >= 0 for m in range(4)),
@@ -544,9 +547,11 @@ Seed1 = Q[1] @ K0 @ Q[1]
 Zpert = DQ[1] + Seed1
 gate("B9.6", a_m[1] == 1 and invariant(DQ[1]) and not eqm(DQ[1], ZERO),
      "shell 1 is adjacency-pinned: a_1 == 1 and D2 Q_1 is a nonzero invariant axis")
-gate("B9.7", (not invariant(Seed1)) and (not proportional(Zpert, DQ[1])),
+gate("B9.7", (not eqm(Seed1, ZERO)) and eqm(Zpert.T, -Zpert)
+     and (not invariant(Seed1)) and (not proportional(Zpert, DQ[1])),
      "rejector: the perturbed non-invariant antisymmetric Zpert fails span(D2 Q_1)")
-gate("B9.8", proportional(avg_of(Zpert), DQ[1]),
+AvgZpert = avg_of(Zpert)
+gate("B9.8", (not eqm(AvgZpert, ZERO)) and proportional(AvgZpert, DQ[1]),
      "group-average of Zpert lands back in span(D2 Q_1) (invariant axis restored)")
 gate("B9.9", a_m[3] == 1 and invariant(DQ[3]) and not eqm(DQ[3], ZERO),
      "shell 3 is adjacency-pinned: a_3 == 1 and D2 Q_3 is a nonzero invariant axis")
@@ -559,7 +564,8 @@ u21 = np.zeros(N, dtype=np.int64); u21[21] = 1
 K0b = np.outer(u0, u21) - np.outer(u21, u0)
 Adj2 = Q[2] @ avg_of(K0) @ Q[2]
 Alt2 = Q[2] @ avg_of(K0b) @ Q[2]
-gate("B9.10", a_m[2] == 2 and (not eqm(Alt2, ZERO)) and invariant(Alt2)
+gate("B9.10", a_m[2] == 2 and (not eqm(Adj2, ZERO))
+     and (not eqm(Alt2, ZERO)) and invariant(Alt2)
      and eqm(Alt2.T, -Alt2) and (not proportional(Alt2, DQ[2]))
      and proportional(Adj2, DQ[2]),
      "shell 2 not adjacency-rigid: a_2 == 2, a second invariant antisym axis off span(D2 Q_2)")
@@ -659,7 +665,7 @@ DEP_LINKS = [
     "KCPT_AMBIENT_LATTICE_SYMMETRY_KERNEL_ISOLATION_AVERAGED_COMPLEX_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-19.md",
 ]
 link_targets = set(re.findall(r"\]\(([^)]+)\)", note_raw))
-links_present = all(any(d in lt for lt in link_targets) for d in DEP_LINKS)
+links_present = set(DEP_LINKS).issubset(link_targets)
 deps_exist = all(os.path.isfile(os.path.join(DOCS, d)) for d in DEP_LINKS)
 gate("B11.3", links_present and deps_exist,
      "all five dependency links present as markdown links and the deps exist")

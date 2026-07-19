@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_bulk_block_eigenvalue_stratification_2026_07_19.py
-runner_sha256: 23036f1d29e3dd7ff942bd00d820ab15e7fc936780322e858f2db232de56d232
+runner_sha256: 236664b798318484de7cd004d3d289114125adfcdc3e5ac6267dbaf6c37b9e7d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 42.80
+elapsed_sec: 24.73
 status: ok
 ----- stdout -----
 [B1.1] PASS - D2 integer, antisymmetric (D2 == -D2.T), entries in {-1,0,1}
@@ -27,7 +27,7 @@ status: ok
 [B3.10] PASS - kernel projector matches corner frame: Q_0 == 6 * V8 @ V8.T
 [B3.11] PASS - bulk rank rank(Q_1)+rank(Q_2)+rank(Q_3) == 56 == 24+24+8 == rank D2
 [info] stratum dims d_m = [8, 24, 24, 8]
-[B4.1] PASS - every momentum wave phi_k is an M-eigenvector at lambda = -4 m(k) (re and im parts)
+[B4.1] PASS - every nonzero unit-modulus momentum wave phi_k is an M-eigenvector at lambda = -4 m(k) (re and im parts)
 [B4.2] PASS - wrong-eigenvalue rejector: M phi_(1,0,0) == -4 phi, not 0 and not -8 phi
 [B4.3] PASS - per-stratum momentum counts == [8, 24, 24, 8] (== stratum dims d_m)
 [B4.4] PASS - K: k -> -k (mod 4) preserves every stratum, m(-k) == m(k)

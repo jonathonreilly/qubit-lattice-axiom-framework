@@ -16,9 +16,10 @@ Mode selection:
   target's changes against `origin/main` or `main`.
 - **Free-text `[focus]` without a target** (e.g. `/review-loop imports`):
   the backlog drain with that review emphasis applied in every slot.
-- **Flags without a named target are invalid**: `--no-fix`/`--no-commit`
-  contradict the drain's land-end-to-end contract, so they require a named
-  `[target]`; a bare flag form must stop and ask for one.
+- **ANY flag without a named target is invalid** (including
+  `--max-iterations`): flags configure a focused single-target run, and
+  `--no-fix`/`--no-commit` contradict the drain's land-end-to-end
+  contract; a bare flag form must stop and ask for a `[target]`.
 
 ## Required Behavior
 

@@ -646,6 +646,40 @@ held sizes without expectation feedback?
    before running the Cycle-413 x Cycle-367 law grid; never consult B0/B1 or a
    downstream comparator to choose the rule.
 
+### Exact seed for the next run
+
+Start with the Cycle-416-to-six-rail reservoir lift
+
+```text
+E |source=1, mediator=0> = |R=1, F=000000>
+E |source=0, mediator=1> = -|R=0, s_F>
+s_F = (1/sqrt(6)) sum_d |1_d>
+```
+
+and require `E G_416(r) = G_7(r) E` for `r=0,1` at the retained angle
+`0.36272452333990834`. The minus convention matches Cycle 416's `+i`
+rotation. Use a full local hard-core field block rather than a global zero/one
+field blockade.
+
+The initial declared test ladder for this candidate construction is:
+
+1. the two-dimensional source/scalar-field code for exact E/G and inverse;
+2. one M64 matter cell, one reservoir M2, and all 64 local hard-core field
+   occupations for unitarity, number balance, contact commutation, and leakage;
+3. two neighboring field blocks as exact directed-SWAP basis permutations;
+4. two separated source excitations in total source-plus-field number two,
+   requiring a genuine two-field sector that the old blockade cannot fake;
+5. blind L6 preservation of the four Cycle-416 mediator expectations plus a
+   fixed-N=6 pair-count `6/7` X/Y contact contrast with adjoint-sign, `g=0`,
+   Q-only, and global-phase controls.
+
+The retained two-slice vertex is not already this intertwiner: its angle is
+occupation-dependent, `kappa m n`, whereas Cycle 416 requires fixed
+`kappa m` controlled by the strict response. Changing that coefficient would
+silently alter the held receiver fixture. Use the full hard-core/reservoir
+route as carrier first and the two-slice X/Y block only as the contact-
+sensitive coordinate unless a new exact common vertex is constructed.
+
 ### Success contract
 
 Require:

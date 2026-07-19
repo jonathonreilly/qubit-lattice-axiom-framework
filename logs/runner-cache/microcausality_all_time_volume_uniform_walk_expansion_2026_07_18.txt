@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_all_time_volume_uniform_walk_expansion_2026_07_18.py
+runner_sha256: 2ebdf33882b34b36354110cf5d76f28eb206a295742786a6ee9eae13084b0b98
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+PASS: G1a Jacobi rearrangement identity (symbolic zero)
+PASS: G1b conjugation distributes over the commutator (symbolic zero)
+PASS: G1c boundary reduction: bonds missing the support commute exactly
+PASS: G1d self-term drop: [h, h] = 0 and [H, h_12] = [h_23, h_12]
+PASS: G2a unitarity preserved: d/dt(WV) = 0 (symbolic zero)
+PASS: G2b intertwiner: d/dt(W f V) = W R V (symbolic zero)
+PASS: G2c variation-of-constants identity (exact rational-spectrum instance)
+PASS: G2d unitary invariance of the norm (spectrum of M^T M preserved)
+PASS: G2e finite-sum triangle inequality (exact, strict witness 1 < 3)
+PASS: G2f negative time via H -> -H: tau_{-t}^{H} = tau_{t}^{-H} exactly
+PASS: G3a stationary bond and conjugation closed form
+PASS: G3b instance closed forms: LHS = -2i sin(2theta) Y1Y2, RHS rate 4J
+PASS: G3c |sin x| <= x at exact instances x = 1/2, 1, 3
+PASS: G3d instance norm is even in t: ||.||^2 = 4 sin^2(2theta)
+PASS: G4a iterated integral gives t^3/3! exactly
+PASS: G4b depth-2 assembly identity (symbolic zero)
+PASS: G4c remainder ratio < 1 past the threshold (symbolic) and instance
+PASS: G4d previous-bond Jacobi flow matches the direct derivative exactly
+PASS: G4e self-bond-forcing mutation is killed on the three-site chain
+PASS: G4f direct finite-chain expansion first vanishes and second reaches
+PASS: G4g exact k=2 coefficient obeys the headline walk majorant
+PASS: G5a bonds incident to one site = 6 exactly
+PASS: G5b bond-adjacency degree = 10 exactly, box-stable (5 and 7)
+PASS: G5c walk counts: |W_2| = 60 = 6*10 and 100 = 10^2 for EVERY start bond
+PASS: G5d reach lemma sharp at d = 3: lengths 1,2 never, length 3 yes
+PASS: G5e walk sites stay within distance k of X (k = 1, 2, 3)
+PASS: G6a coefficient assembly (2J)^k n 10^(k-1) = (n/10)(20J)^k
+PASS: G6b tail lemma: binomial >= 1 mechanism and exact partial instance
+PASS: G6c cone-decay ratio 20Jt/(d+1) < 1 (instance J=1, t=1/10, d=2)
+PASS: G6d large-d smallness certificate 3^200 200^800/800! < 10^-40
+PASS: G6e disjoint supports commute (d >= 1) and the d = 0 rejector trips
+PASS: G6e2 nonempty-support distance is defined; empty support is rejected
+PASS: G6e3 d = 0 exclusion is necessary: ||[A,B]|| = 2 > 1/5 = claimed RHS
+PASS: G6e4 empty-bond J=0 convention and disconnected evolution are static
+PASS: G6f mu-reweighting identity (symbolic); drop via exponent comparison (symbolic) plus exp-monotonicity instances
+PASS: G6g mu-bound instance: sum_{k>=2} (3/2)^k/k! < e^{-2 + (3/2)e}
+TOTAL: PASS=36 FAIL=0
+
+----- stderr -----
+

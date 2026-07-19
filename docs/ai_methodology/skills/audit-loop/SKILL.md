@@ -216,7 +216,11 @@ default session is:
    drain configured development lanes in order, immediately panel every fresh
    cross-seat disagreement, resume the same lane after the panel lands, repeat
    until a full pass lands nothing new, then run one forensic canary. Raise
-   toward 6 workers only in a quiet pool per the budget below.
+   toward 6 workers only in a quiet pool per the budget below. The supervisor
+   holds the clone-wide audit lock for the complete campaign and hands that
+   lock to its batch/panel children. It runs the panel sweep after every batch
+   termination before propagating any unrelated hard batch failure, so a mixed
+   result cannot strand a valid judicial handoff.
 3. If the user names a lane, pass `--lane <name>`. Otherwise the orchestrator
    iterates lanes from `docs/audit/data/lane_certification_config.json`,
    selecting entries whose generated `lane_certification.json` record still

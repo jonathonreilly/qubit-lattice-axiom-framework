@@ -27,6 +27,21 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-07-19-unit-singlet-physical-consumer-projection-repair`
+  Scope: the two-Ward/Step-3 notes and runners that consume the abstract
+  central-positive Hilbert--Schmidt theorem, together with their canonical
+  harness and raw derivation-atlas descriptions.
+  Finding: the abstract theorem and its three-mode runner are independently
+  valid, but the physical consumers combine a direct-color Fierz coordinate
+  with a crossed-spin scalar projection. That mixed pairing does not establish
+  the claimed `1/6` scalar coefficient, residual, same-1PI exhaustion, or
+  `g_bare` pin. Several sibling runners also remain stale-green or retain
+  obsolete accepted/retained authority language. PR #5501 salvages only the
+  self-contained abstract theorem; none of those physical conclusions lands
+  through that repair.
+  Disposition: `science-needed` for a coherent color x spin projector and
+  Grassmann sign; `fix on main` for the stale consumer/control-plane wording
+  once the physics coefficient is recomputed.
 - `2026-07-18-toe-bounded-notes-failed-negative-gate-packaging`
   Scope: the five unaudited bounded claim candidates for continuation
   refinement, extensional nearest-neighbor construction, generated finite

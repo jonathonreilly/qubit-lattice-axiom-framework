@@ -28,13 +28,13 @@
     "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12",
     "minimal_axioms"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.0,
+  "load_bearing_score": 3.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -181,6 +181,6 @@
   },
   "runner_path": "scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py",
   "title": "Theta P2 K/CPT Determinant-Character Phase Erasure: Bounded Candidate Route",
-  "transitive_descendants": 3,
+  "transitive_descendants": 4,
   "verdict_rationale": null
 }

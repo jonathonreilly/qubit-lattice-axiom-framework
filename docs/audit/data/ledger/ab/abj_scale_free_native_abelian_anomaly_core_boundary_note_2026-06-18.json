@@ -47,7 +47,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
-  "load_bearing_score": 10.905,
+  "load_bearing_score": 10.906,
   "load_bearing_step": "Using the 6 and 2 multiplicities with charges a and -3a gives Tr[Y_a]=0, Tr[Y_a^3]=-48a^3, Tr[SU(3)^2Y_a]=a, Tr[SU(2)^2Y_a]=0, and substituting (4a,-2a,-6a,0) gives matching opposite-chirality anomalies.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -68,6 +68,6 @@
   },
   "runner_path": "scripts/frontier_abj_scale_free_native_abelian_anomaly_core_2026_06_18.py",
   "title": "ABJ Scale-Free Native Abelian Anomaly Core Boundary",
-  "transitive_descendants": 1355,
+  "transitive_descendants": 1356,
   "verdict_rationale": "The load-bearing work is exact algebra over the single retained-grade decorated parent and standard T(F)=1/2 normalization. The runner source performs symbolic and rational arithmetic for the anomaly identities and witness, while the remaining PASS checks are source-firewall string checks rather than independent physics derivations. No external comparator, fitted normalization, or tuned scale is used. Because the chain is a class-A corollary of one upstream surface rather than a new first-principles computation, the conservative verdict is audited_decoration."
 }

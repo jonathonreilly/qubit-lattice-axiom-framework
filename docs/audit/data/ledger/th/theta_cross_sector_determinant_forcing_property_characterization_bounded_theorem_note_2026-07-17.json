@@ -31,13 +31,13 @@
     "strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12",
     "theta_mass_determinant_axiom_update_no_go_note_2026-07-04"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -58,6 +58,6 @@
   },
   "runner_path": "scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py",
   "title": "Theta Cross-Sector Determinant Readout: Two Conditional Phase-Erasure Forcing Pairs",
-  "transitive_descendants": 0,
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

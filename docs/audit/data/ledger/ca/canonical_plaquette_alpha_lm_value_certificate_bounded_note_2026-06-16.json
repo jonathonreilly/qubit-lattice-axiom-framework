@@ -56,7 +56,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "decoration_under_plaquette_self_consistency_note",
-  "load_bearing_score": 13.762,
+  "load_bearing_score": 13.763,
   "load_bearing_step": "Given P = 0.5934, u_0 = P^(1/4), alpha_bare = 1/(4 pi), alpha_LM = alpha_bare/u_0, and alpha_s(v) = alpha_bare/u_0^2, the displayed constants follow by arithmetic.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -134,6 +134,6 @@
   },
   "runner_path": "scripts/frontier_canonical_plaquette_alpha_lm_value_certificate_2026_06_16.py",
   "title": "Canonical Plaquette Alpha_LM Value Certificate: Bounded Arithmetic Note",
-  "transitive_descendants": 867,
+  "transitive_descendants": 868,
   "verdict_rationale": "The load-bearing content is exact arithmetic over one scoped parent input, with no first-principles computation or external comparator. The helper hard-codes P = 0.5934 and derives the remaining values directly, while the runner checks those identities and the scope firewalls. This is an algebraic decoration of the retained-bounded parent surface, not an independent plaquette-value or physical-coupling theorem."
 }

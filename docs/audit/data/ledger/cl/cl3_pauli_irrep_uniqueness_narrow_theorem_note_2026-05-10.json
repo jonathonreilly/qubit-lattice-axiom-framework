@@ -1528,6 +1528,6 @@
   },
   "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
   "title": "Cl(3) Pauli Irrep Uniqueness Narrow Theorem",
-  "transitive_descendants": 1729,
+  "transitive_descendants": 1730,
   "verdict_rationale": null
 }

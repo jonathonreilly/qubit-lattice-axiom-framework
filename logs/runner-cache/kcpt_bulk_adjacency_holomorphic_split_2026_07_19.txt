@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_bulk_adjacency_holomorphic_split_2026_07_19.py
-runner_sha256: b66ac59629892bbbb246b5447fc0573df11a246f43a437377b0ad6cb091beefe
+runner_sha256: 5cadad2034ad7131d56ed55e1e131869f702d83309efcc86d535465557a91089
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 31.02
+elapsed_sec: 57.20
 status: ok
 ----- stdout -----
 [a1] PASS - drop-one Lagrange normalizers N_m = [384, -128, 128, -384]
 [a2] PASS - stratum multiplicities d_m = [8, 24, 24, 8], sum 64
 [a3] PASS - D2 is real antisymmetric (D2 + D2^T = 0)
 [a4] PASS - D2 has exact rank 56 (8-dimensional kernel)
-[a5] PASS - D2 annihilates the 8 staggered sign vectors V8
-[t1a] PASS - each P_m is idempotent (P_m^2 = P_m)
+[a5] PASS - V8 has rank 8 and D2 annihilates its staggered sign vectors
+[t1a] PASS - P_m are symmetric pairwise-orthogonal idempotents
 [t1b] PASS - stratum projectors are complete (sum_m P_m = I)
 [t1c] PASS - each A_m is real antisymmetric (A_m + A_m^T = 0)
 [t1d] PASS - each P_m commutes with D2
@@ -21,7 +21,7 @@ status: ok
 [t2a] PASS - per-shell conjugate-half multiplicities [12, 12, 4]
 [t2b] PASS - holomorphic bulk dimension sum_m d_m/2 = 28
 [t2c] PASS - 28 (+) + 28 (-) + 8 kernel account for the full space (64)
-[t2d] PASS - plane-wave momentum count reproduces d_m = [8, 24, 24, 8]
+[t2d] PASS - plane waves obey M psi_k = -4m(k) psi_k and reproduce d_m = [8, 24, 24, 8]
 [t3.1a] PASS - stratum m=1: A_m v(+) = +2 i sqrt(m) v(+)
 [t3.1b] PASS - stratum m=1: A_m v(-) = -2 i sqrt(m) v(-)
 [t3.1c] PASS - stratum m=1: entrywise conjugation sends v(+) to v(-)
@@ -36,11 +36,11 @@ status: ok
 [t3.3d] PASS - stratum m=3: v(+) is nonzero and distinct from v(-)
 [t3g1] PASS - 56 bulk momenta organize into 28 conjugate momentum pairs
 [t3g2] PASS - conjugation of each bulk plane wave equals the k -> -k partner
-[t3g3] PASS - each bulk plane wave has unit modulus at every site (re.re + im.im = 64)
+[t3g3] PASS - each bulk plane wave has unit modulus at every site
 [t4a] PASS - adjacency face: A_0 is exactly the zero matrix
 [t4b] PASS - kernel-basis face: D2 V8 is exactly the zero matrix
 [t5a] PASS - J_bulk^2 = -P_bulk on the bulk
-[t5b] PASS - J_bulk is real (equals its entrywise conjugate)
+[t5b] PASS - J_bulk is real and orthogonal on the bulk
 [t5c] PASS - J_bulk carries 28 holomorphic degrees of freedom
 [w1] PASS - reject: A_1^2 is NOT -8 P_1 (correct eigenvalue is -4)
 [w2] PASS - reject: A_2^2 is NOT -12 P_2 (correct eigenvalue is -8)
@@ -50,7 +50,7 @@ status: ok
 [v1] PASS - delivery note carries the verbatim rank-56 sentence
 [v2] PASS - Unit-2 kernel note carries the verbatim conjugation-fixes sentence
 [v3] PASS - Unit-5 ambient note carries the verbatim zero-registration sentence
-[v4] PASS - two-presentation note carries the verbatim named-clauses sentence
+[v4] PASS - minimal-axioms note carries the verbatim K/CPT boundary sentence
 [v5] PASS - Unit-6 stratification note carries the verbatim stratum-dimension sentence
 TOTAL: PASS=46 FAIL=0
 

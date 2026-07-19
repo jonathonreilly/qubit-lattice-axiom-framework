@@ -24,8 +24,8 @@ the staggered phases, then checks by exact integer / rational / sympy algebra:
 
 Group W are wrong-value rejectors: each asserts a deliberately mislabeled
 identity is genuinely NOT satisfied, so an accidental all-true collapse cannot
-hide behind them. Group V greps four verbatim sentences out of the four on-disk
-dependency notes, so the ledger edges cannot be faked by paraphrase.
+hide behind them. Group V greps five verbatim sentences out of the five quoted
+on-disk dependency notes, so those quoted edges cannot be faked by paraphrase.
 
 The construction takes no target value as input: the stratum eigenvalues seed
 the Lagrange interpolation nodes only, and every reported multiplicity, rank,
@@ -135,15 +135,19 @@ gate("a3", (D2s + D2s.T).is_zero_matrix,
      "D2 is real antisymmetric (D2 + D2^T = 0)")
 gate("a4", D2s.rank() == 56,
      "D2 has exact rank 56 (8-dimensional kernel)")
-gate("a5", (D2s @ V8s).is_zero_matrix,
-     "D2 annihilates the 8 staggered sign vectors V8")
+gate("a5", V8s.rank() == 8 and (D2s @ V8s).is_zero_matrix,
+     "V8 has rank 8 and D2 annihilates its staggered sign vectors")
 
 # =====================================================================
 # Group T1: P_m orthogonal idempotents; A_m real antisymmetric, commute
 # with D2, square to -4m P_m, vanish on kernel, sum to D2 on the bulk.
 # =====================================================================
-gate("t1a", all((Pm[m] * Pm[m] - Pm[m]).is_zero_matrix for m in range(4)),
-     "each P_m is idempotent (P_m^2 = P_m)")
+gate("t1a",
+     all((Pm[m] * Pm[m] - Pm[m]).is_zero_matrix
+         and (Pm[m] - Pm[m].T).is_zero_matrix for m in range(4))
+     and all((Pm[m] * Pm[mp]).is_zero_matrix
+             for m in range(4) for mp in range(m + 1, 4)),
+     "P_m are symmetric pairwise-orthogonal idempotents")
 gate("t1b", (Pm[0] + Pm[1] + Pm[2] + Pm[3] - sp.eye(N)).is_zero_matrix,
      "stratum projectors are complete (sum_m P_m = I)")
 gate("t1c", all((Am[m] + Am[m].T).is_zero_matrix for m in range(4)),
@@ -179,6 +183,13 @@ def mval(k):
     return int((k[0] % 2) + (k[1] % 2) + (k[2] % 2))
 
 
+def plane_wave_in_stratum(k):
+    re, im = wave(k)
+    eigenvalue = -4 * mval(k)
+    return (np.array_equal(M @ re, eigenvalue * re)
+            and np.array_equal(M @ im, eigenvalue * im))
+
+
 allk = list(itertools.product(range(4), repeat=3))
 cnt = [sum(1 for k in allk if mval(k) == m) for m in range(4)]
 half = [dm[m] // 2 for m in (1, 2, 3)]
@@ -190,8 +201,9 @@ gate("t2b", splus == 28,
      "holomorphic bulk dimension sum_m d_m/2 = 28")
 gate("t2c", 2 * splus + dm[0] == 64,
      "28 (+) + 28 (-) + 8 kernel account for the full space (64)")
-gate("t2d", cnt == [8, 24, 24, 8],
-     "plane-wave momentum count reproduces d_m = [8, 24, 24, 8]")
+gate("t2d", cnt == [8, 24, 24, 8]
+     and all(plane_wave_in_stratum(k) for k in allk),
+     "plane waves obey M psi_k = -4m(k) psi_k and reproduce d_m = [8, 24, 24, 8]")
 
 # =====================================================================
 # Group T3: per-stratum holomorphic / antiholomorphic eigenpairs and
@@ -232,20 +244,25 @@ bulk = [k for k in allk if mval(k) >= 1]
 pairs = set(frozenset((k, tuple((-ki) % 4 for ki in k))) for k in bulk)
 
 
-def cwave(k):
+def conjugate_wave_matches(k):
     re, im = wave(k)
-    return re + 1j * im
+    partner = tuple((-ki) % 4 for ki in k)
+    partner_re, partner_im = wave(partner)
+    return (np.array_equal(re, partner_re)
+            and np.array_equal(-im, partner_im))
 
 
-gate("t3g1", len(bulk) == 56 and len(pairs) == 28,
+gate("t3g1", len(bulk) == 56 and len(pairs) == 28
+     and all(tuple((-ki) % 4 for ki in k) in bulk
+             and tuple((-ki) % 4 for ki in k) != k for k in bulk),
      "56 bulk momenta organize into 28 conjugate momentum pairs")
 gate("t3g2",
-     all(np.array_equal(np.conjugate(cwave(k)), cwave(tuple((-ki) % 4 for ki in k)))
-         for k in bulk),
+     all(conjugate_wave_matches(k) for k in bulk),
      "conjugation of each bulk plane wave equals the k -> -k partner")
 gate("t3g3",
-     all(int(re @ re + im @ im) == N for re, im in (wave(k) for k in bulk)),
-     "each bulk plane wave has unit modulus at every site (re.re + im.im = 64)")
+     all(np.array_equal(re * re + im * im, np.ones(N, dtype=np.int64))
+         for re, im in (wave(k) for k in bulk)),
+     "each bulk plane wave has unit modulus at every site")
 
 # =====================================================================
 # Group T4: the two kernel faces register exactly zero.
@@ -263,8 +280,9 @@ Pbulk = Pm[1] + Pm[2] + Pm[3]
 Jbulk = sum((Am[m] / (2 * sp.sqrt(m)) for m in (1, 2, 3)), sp.zeros(N))
 gate("t5a", sp.simplify(Jbulk * Jbulk + Pbulk).is_zero_matrix,
      "J_bulk^2 = -P_bulk on the bulk")
-gate("t5b", sp.simplify(Jbulk - Jbulk.conjugate()).is_zero_matrix,
-     "J_bulk is real (equals its entrywise conjugate)")
+gate("t5b", sp.simplify(Jbulk - Jbulk.conjugate()).is_zero_matrix
+     and sp.simplify(Jbulk.T * Jbulk - Pbulk).is_zero_matrix,
+     "J_bulk is real and orthogonal on the bulk")
 gate("t5c", dm[1] // 2 + dm[2] // 2 + dm[3] // 2 == 28,
      "J_bulk carries 28 holomorphic degrees of freedom")
 
@@ -308,9 +326,9 @@ gate("v3",
               "registers exactly zero on both `w0` and its conjugate though it is not the zero matrix"),
      "Unit-5 ambient note carries the verbatim zero-registration sentence")
 gate("v4",
-     contains("KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md",
-              "satisfy the same named clauses and exchange every K-odd seed"),
-     "two-presentation note carries the verbatim named-clauses sentence")
+     contains("MINIMAL_AXIOMS_2026-06-29.md",
+              "`K`/CPT orbit structure, central-sector decomposition"),
+     "minimal-axioms note carries the verbatim K/CPT boundary sentence")
 gate("v5",
      contains("KCPT_BULK_BLOCK_EIGENVALUE_STRATIFICATION_ADJACENCY_NATIVE_COMPLEX_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-19.md",
               "tr Q_m / N_m = (8, 24, 24, 8)"),

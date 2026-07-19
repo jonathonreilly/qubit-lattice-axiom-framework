@@ -187,9 +187,12 @@ and must not apply audit verdicts.
 
 ## Default Entry: Parallel PR Review, Any Orchestrator (owner-directed 2026-07-17)
 
-Invoking this skill against a SET of open PRs ("review the open PRs",
-"drain the PR backlog") means: review them in parallel, land them serially —
-no topology decisions required from the invoker.
+An UNSPECIFIED invocation — no focus, no named branch or PR — IS the
+parallel backlog drain, as is invoking against a SET of open PRs ("review
+the open PRs", "drain the PR backlog"): enumerate the backlog, review in
+parallel, land serially — no topology decisions required from the invoker.
+Reviewing one branch or one PR is the special case that requires naming
+it.
 
 1. **Enumerate targets**: open, non-draft PRs in scope (drafts stay out of
    scope per the draft rule below). Detect stacks and cumulative-tower

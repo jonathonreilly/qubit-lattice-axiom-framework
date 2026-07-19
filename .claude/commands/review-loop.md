@@ -8,10 +8,18 @@ Run the repo-native physics review loop from:
 
 `/review-loop [focus] [--max-iterations N] [--no-fix] [--no-commit]`
 
+An UNSPECIFIED invocation (`/review-loop` with no focus and no named
+PR/branch) starts the parallel open-PR backlog drain per the skill's
+Default Entry: enumerate open non-draft PRs, one reviewer slot per PR in
+parallel, each worker landing its own PR end to end. Reviewing a specific
+branch or single PR requires naming it as `[focus]`.
+
 ## Required Behavior
 
 1. Read the skill file above before acting.
-2. Review only branch/local changes against `origin/main` or `main`.
+2. With a `[focus]`: review only that branch/PR's changes against
+   `origin/main` or `main`. With no focus: run the Default Entry backlog
+   drain instead.
 3. Fan out the physics reviewers in parallel when the agent environment allows:
    `CodeRunnerReviewer`, `PhysicsClaimReviewer`, `ImportSupportReviewer`,
    `NatureRetentionReviewer`, `NoGoDisciplineReviewer` (when negative claims

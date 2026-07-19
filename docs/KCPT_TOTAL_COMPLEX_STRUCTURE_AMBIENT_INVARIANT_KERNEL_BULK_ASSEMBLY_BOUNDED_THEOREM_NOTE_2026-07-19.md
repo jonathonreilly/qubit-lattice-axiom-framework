@@ -1,0 +1,67 @@
+# KCPT total complex structure: ambient-invariant kernel⊕bulk assembly
+
+Date: 2026-07-19
+
+**Type:** bounded_theorem
+
+**Claim boundary:** This is a bounded theorem on one fixed finite surface — the full `4^3` staggered lattice `C^64`, its antisymmetric integer adjacency `D2`, its corner-wave kernel frame `V8`, and the bulk operator `M = D2 @ D2` — established with exact integer, exact `Fraction`, and exact `sympy` arithmetic only, with no floating point in any load-bearing gate (every float line is tagged `[FLOAT SANITY — non-load-bearing]` and only confirms an identity that already has an exact gate). It assembles the kernel-supported complex structure and the summed bulk complex structure into a single operator on the whole space and proves, purely rationally, that it squares to minus the identity, commutes with the ambient symmetry group, and carries one global conjugation flag. It fixes no free parameter, selects no orientation, chooses no dynamics, and forces nothing pre-record; it is r-neutral and orientation-neutral; the paired runner recomputes every gated quantity from the site construction rather than reading any value back.
+
+## Setting
+
+The surface is the one built in [the corner-carrier delivery note](KCPT_CORNER_CARRIER_LATTICE_DELIVERY_HW1_DOUBLET_PAIR_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md): the staggered `4^3` Dirac graph with phases `eta_1 = 1`, `eta_2(x) = (-1)^{x_1}`, `eta_3(x) = (-1)^{x_1 + x_2}`, whose antisymmetric integer adjacency `D2` carries an eight-dimensional kernel spanned by the corner waves `V8`. The delivery note states of `D2` that "its exact rank is `56`", so the kernel dimension is eight. The symmetry inputs are the lattice symmetries of [the minimal-axioms note](MINIMAL_AXIOMS_2026-06-29.md), the "standard translations, and proper cubic rotations", dressed by the staggered sign fields.
+
+[The kernel note](KCPT_KERNEL_INDUCED_REPRESENTATION_CENTRAL_COMPLEX_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-18.md) reads the kernel block: the central complex structure `j` whose "exact commutant of `G` over the rationals is two-dimensional, `span{I, j}`". Lifting `j` to the whole space through `V8` gives the kernel-supported operator `J_ker = V8 @ J64 @ V8^T / 64^2`, real and antisymmetric, supported on the `m = 0` shell. [The ambient isolation note](KCPT_AMBIENT_LATTICE_SYMMETRY_KERNEL_ISOLATION_AVERAGED_COMPLEX_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-19.md) assembles the dressed symmetries into the ambient group `G_amb` of order `768` — the `D2`-commuting closure of three named base classes — and resolves the whole-lattice commutant as `dim_C End_{G_amb}(C^64) = 12`, splitting it by kernel and image blocks as "`12 = 2 + 2*0 + 10`": two dimensions on the kernel block, ten on the image block, and each kernel-image cross term exactly zero. [The bulk-stratification note](KCPT_BULK_BLOCK_EIGENVALUE_STRATIFICATION_ADJACENCY_NATIVE_COMPLEX_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-19.md) resolves that image block into the Hamming shells of `M`, with drop-one projectors `Q_m`, normalizers `N_m = (384, -128, 128, -384)`, shell idempotents `P_m = Q_m / N_m`, and the adjacency-native shell complex structures `J_m = D2 P_m / (2 sqrt(m))` satisfying `J_m^2 = -P_m` on each bulk shell `m = 1, 2, 3`.
+
+This note takes the last free move the four dependency notes leave on the table: they give a complex structure on the kernel block and a complex structure on each bulk shell separately, but no single operator on all of `C^64`. Summing them is the obvious candidate; the theorem is that the sum works, that it works for a purely rational reason, and that it inherits the full ambient symmetry and a single global conjugation flag. The bounded theorem has five parts.
+
+## T1 — the assembly and its rational square
+
+Write the kernel-supported piece as `J_ker = V8 @ J64 @ V8^T / 64^2` and the summed bulk piece as `J_bulk = sum_{m=1,2,3} D2 P_m / (2 sqrt(m))`, the shell structures of the bulk note added across the three bulk shells. The total complex structure is their sum,
+
+`J_full = J_ker + J_bulk`.
+
+The kernel shell coincides with the corner frame, `P_ker = P_0 = V8 V8^T / 64` (equivalently `Q_0 = 6 (V8 V8^T)`), and the four shell idempotents partition the identity, `P_ker + P_bulk = I` with `P_bulk = P_1 + P_2 + P_3`; the two blocks are orthogonal, `P_ker P_bulk = 0`.
+
+The square is established with no square root anywhere in the proof. Setting `B_m = D2 P_m` (the rational adjacency carrier of shell `m`), six exact rational facts do all the work: (1) `B_m B_m = -4 m P_m`; (2) `B_m B_{m'} = 0` for `m != m'`; (3) `J_ker B_m = 0`; (4) `B_m J_ker = 0`; (5) `J_ker J_ker = -P_ker`; and (6) `P_ker + P_1 + P_2 + P_3 = I`. Expanding `J_full^2 = J_ker^2 + (J_ker J_bulk + J_bulk J_ker) + J_bulk^2`, the middle term vanishes by (3),(4); the bulk-bulk cross terms vanish by (2); and each surviving diagonal term is `(1/(2 sqrt(m)))^2 (B_m B_m) = (1/(4 m))(-4 m P_m) = -P_m` by (1) — the only place a `sqrt(m)` would appear, and it cancels exactly against `B_m B_m = -4 m P_m`. Hence
+
+`J_full^2 = -P_ker + sum_{m=1,2,3} (1/(4 m)) (B_m B_m) = -P_ker - (P_1 + P_2 + P_3) = -I_64`,
+
+so `J_full^2 = -I_64`. Every step here is an identity of integer numerators over integer denominators; `sqrt(m)` appears only inside `J_full` itself, never inside any gated equation. Two discriminators show the identity is not free: dropping the `m = 3` term, or replacing the normalizer `1/(4 m)` by `1/(4 m + 1)`, both fail to return `-I_64`.
+
+## T2 — ambient invariance
+
+The kernel lift `J_ker` and every adjacency carrier `D2 Q_m` are ambient-invariant. Regenerating `G_amb` independently — scanning the three dressed base classes over the sixty-four sign fields and sixty-four translations, keeping the `192` members that commute with `D2`, and closing to order `768` — every member `U` satisfies `U J_ker = J_ker U` and `U (D2 Q_m) = (D2 Q_m) U` for `m = 1, 2, 3`. Because `P_m` is a polynomial in `M` and the scalars `1/(2 sqrt(m))` are central, `J_full` inherits the commutation: `U J_full = J_full U` for all `768`. A non-member rejector confirms the criterion discriminates: the odd translation `T_100` fails to commute with `D2` and with the carrier `D2 Q_1`, and is absent from the regenerated group, even though it commutes with the translation-invariant `M = 2(T_200 + T_020 + T_002) - 6 I` (a sum of even translations); the obstruction lives at the adjacency level, not the bulk-operator level.
+
+## T3 — commutant home
+
+`J_full` lives inside the ambient commutant the ambient note counts. That commutant has `dim_C End_{G_amb}(C^64) = 12`, split by block as `12 = 2 + 2*0 + 10`. The kernel piece sits in the two-dimensional kernel block: `P_ker J_ker P_ker = J_ker` and `P_bulk J_ker = J_ker P_bulk = 0`, so `J_ker` is the antisymmetric generator of the kernel block's `span{I, j}`. Each bulk carrier sits in the ten-dimensional image block: `P_bulk (D2 P_m) P_bulk = D2 P_m` and `P_ker (D2 P_m) = 0` for `m = 1, 2, 3`. So `J_full` is block-diagonal across the kernel⊕bulk split with `J_ker` in the two-dimensional kernel block and `J_bulk` in the ten-dimensional image block — a single element of the `12`-dimensional commutant, assembled from the pieces the two upstream notes placed in the two blocks.
+
+## T4 — the global FLAG
+
+`J_full` is a real matrix — `J_ker` is a rational multiple of the integer lift `V8 J64 V8^T`, and each carrier `D2 Q_m` is integer — so a single entrywise conjugation `K` (complex conjugation of coordinates) exchanges its `+i` and `-i` eigenspaces on both blocks at once. This is the one global flag that unifies the kernel note's entrywise `K` and the bulk note's per-shell `K` into a single conjugation on `C^64`. The holomorphic (`+i`) dimension is the sum of the per-shell half-dimensions `tr(P_m)/2 = (4, 12, 12, 4)`, so it is `32 = 4 + 12 + 12 + 4`, exactly half of `64`, with the conjugate `-i` eigenspace the other `32`. The kernel block contributes `4` holomorphic dimensions (the four-dimensional carrier of the kernel note) and the three bulk shells contribute `12 + 12 + 4 = 28` — the `28` conjugate pairs on the `56` bulk momenta the bulk note's `K`-geometry already names. So the global flag is `32 = 4 + 28`, one conjugation splitting the whole space into holomorphic and antiholomorphic halves.
+
+## T5 — boundary
+
+The assembly does not select a relative sign. Because the square depends only on `B_m B_m` and not on the sign of `B_m` — sign-blindness `(-B_m)(-B_m) = B_m B_m` — the operator `J_alt = J_ker - J_bulk` (bulk piece negated relative to the kernel piece) squares to `-I_64` by the identical six rational facts, and it commutes with all `768` for the identical reason. It is a genuinely different operator, `J_full - J_alt = 2 J_bulk != 0`, yet an equally valid `G_amb`-invariant complex structure on `C^64`. So the relative kernel↔bulk orientation is a second binary the global `K` does not fix, and the per-block `±` sign of each shell carrier remains open on top of it. This unit selects none of these; it exhibits the assembly and its symmetry, and leaves every orientation choice where the upstream notes left it.
+
+## What the runner checks
+
+| Block | What it checks | Gates |
+|-------|----------------|-------|
+| B0 | verbatim source-quote greps into the five dependency notes (rank `56`; `span{I, j}`; `G_amb` of order `768`; `12 = 2 + 2*0 + 10`; `J_m = D2 P_m / (2 sqrt(m))`) | 5 |
+| B1 | surface anchor: `D2` antisymmetry, exact rank `56`, `D2 @ V8 = 0`, `V8` orthogonality, no self-loops | 5 |
+| B2 | bulk operator: carrier identity `M = 2(T_200 + T_020 + T_002) - 6 I`, minimal polynomial, projectors `Q_m`, normalizers `(384, -128, 128, -384)`, orthogonality, dims `8, 24, 24, 8`, diagonal/normalizer rejectors | 10 |
+| B3 | kernel structure: `j = J64/64` squares to `-I_8`, `J_ker J_ker = -P_ker`, antisymmetry, integer lift, `P_ker` idempotent, `tr(P_ker) = 8` | 9 |
+| B4 | the `P_0 = P_ker` bridge, `A_0 = D2 Q_0 = 0`, `A_m A_m = -4 m N_m Q_m`, `B_m B_m = -4 m P_m`, construction cross-check, wrong-value rejector | 6 |
+| B5 | the rational assembly: six facts, `(-P_ker) + sum_m (1/4m)(B_m B_m) = -I_64`, drop-term and mis-normalizer rejectors, two flagged float confirmations | 11 |
+| B6 | regenerate `G_amb` at `768`, `U J_ker = J_ker U` and `U A_m = A_m U` over all `768`, sampled rational commutation, `T_100` non-member rejector, one flagged float confirmation | 6 |
+| B7 | commutant home: `P_ker J_ker P_ker = J_ker`, `P_bulk J_ker = 0`, `P_bulk B_m P_bulk = B_m`, `P_ker B_m = 0` | 4 |
+| B8 | global flag: `J_full` real, holomorphic dim `32 = 4 + 12 + 12 + 4`, bulk `28` and kernel `4`, one flagged float eigenvector confirmation | 4 |
+| B9 | the second binary: `J_alt J_alt = -I_64` via the same facts, sign-blindness, `J_alt` commutes with `768`, `J_alt != J_full`, one flagged float confirmation | 5 |
+| B10 | note hygiene: required verbatim strings, forbidden strings absent, exactly the five dependency links once each, front matter | 4 |
+
+## Honest auditor read
+
+This note claims exactly one thing and its immediate structure: a single operator `J_full = J_ker + J_bulk` on the finite space `C^64` that squares to `-I_64` for a purely rational reason, commutes with the regenerated ambient group of order `768`, sits inside the `12`-dimensional ambient commutant with `J_ker` in the kernel block and `J_bulk` in the image block, and carries one global entrywise conjugation with holomorphic dimension `32`. It reads structure of a fixed finite symmetry action; it is not a dynamical selection, not a measurement process, and not a probability-weight derivation. It fixes no free parameter and derives no `r`; it selects no orientation — the sibling `J_alt = J_ker - J_bulk` is equally valid, and the relative kernel↔bulk sign and the per-block `±` signs stay open, a binary the global flag does not resolve. It is a finite fixed-surface statement (`L = 4` torus); no continuum or infinite-volume claim is made, no Hamiltonian or admissibility dynamics is chosen, no physical identification is asserted, and nothing pre-record is forced. The face and orientation choices remain open and outside the claim.
+
+A final line: the [paired runner](../scripts/kcpt_total_complex_structure_ambient_invariant_assembly_2026_07_19.py) recomputes every gated quantity from the site construction — `D2`, `V8`, `J64`, `M`, the projectors `Q_m` and `P_m`, the carriers `B_m`, the regenerated `768`-member `G_amb`, the rational assembly, the global flag, and the sibling `J_alt` — with exact integer, exact `Fraction`/object-integer, and exact `sympy` arithmetic, no floating point in any load-bearing gate; it prints `TOTAL: PASS=N FAIL=0` and exits nonzero on any failure. Its cached output belongs at `logs/runner-cache/kcpt_total_complex_structure_ambient_invariant_assembly_2026_07_19.txt`.

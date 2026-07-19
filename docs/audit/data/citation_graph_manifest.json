@@ -1,6 +1,6 @@
 {
- "edge_count": 14801,
- "node_count": 4410,
+ "edge_count": 14806,
+ "node_count": 4411,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6929,6 +6929,10 @@
   "kcpt_orbit_count_is_the_partition_not_the_weight_holomorphic_readout_measure_neutral_narrow_theorem_note_2026-06-06": {
    "deps_hash": "5e400429bb58",
    "out_degree": 4
+  },
+  "kcpt_total_complex_structure_ambient_invariant_kernel_bulk_assembly_bounded_theorem_note_2026-07-19": {
+   "deps_hash": "e92a4cdadd94",
+   "out_degree": 5
   },
   "key_terminology": {
    "deps_hash": "5832e77696fd",

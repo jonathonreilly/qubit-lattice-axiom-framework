@@ -927,8 +927,13 @@ git status --porcelain docs/audit/AUDIT_LEDGER.md \
                        docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md
 ```
 
-If this command prints any lines, BLOCK PASS and instruct the operator to
-DROP the regenerated files before recommitting:
+If this command prints any line OTHER than the single allowed staged
+`docs/audit/data/citation_graph_manifest.json` entry (allowed only when the
+landed commits change graph dependencies), BLOCK PASS and instruct the
+operator to DROP the regenerated files before recommitting. The drop
+sequence deliberately erases everything — including the manifest — and then
+deterministically regenerates and re-stages the manifest when (and only
+when) the landing changes graph dependencies:
 
 ```bash
 git checkout origin/main -- docs/audit/data/ \
@@ -937,6 +942,10 @@ git checkout origin/main -- docs/audit/data/ \
                             'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
                             docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
 git clean -fd -- docs/audit/data/
+# Only when the landed commits change citation-graph dependencies:
+python3 docs/audit/scripts/build_citation_graph.py
+python3 docs/audit/scripts/write_citation_graph_manifest.py
+git add docs/audit/data/citation_graph_manifest.json
 ```
 
 The pipeline is run for VALIDATION only — to confirm the source repair is

@@ -199,6 +199,59 @@
         "total_pass": 27
       },
       "verdict_rationale": "The kernel-invariance and irreducibility inference is valid standard finite-dimensional algebra once the two imported inputs are granted. However, section 2 explicitly provides no cited authorities, while the runner hard-codes the generator representation and treats several concluding claims as unconditional True checks; therefore it verifies the conditional algebraic model but not its retained-input provenance. The N1-N8 stress test is non-clean: N1 lacks five independently evidenced alternative routes; N2 supports only the stated quotient boundary; N3 exposes the two unpacketized imports; N4 supplies no matching retained witness; N5 lacks the required five-resolution execution; N6 candidates do not establish those imports; N7 resolves the zero-target countercase only by the theorem's nonzero-target assumption; and N8 supplies no substitute for the missing one-hop authorities."
+    },
+    {
+      "archived_at": "2026-07-19T19:03:37.073314+00:00",
+      "audit_date": "2026-07-19T18:52:37.852233+00:00",
+      "audit_invocation_history": [
+        "7ae2a85e4a6e49dfb974bf8c43eff00f"
+      ],
+      "audit_invocation_id": "7ae2a85e4a6e49dfb974bf8c43eff00f",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 11.629,
+        "runner_hash": "09070c3f94208a84370d18d8eb08493dc1d8b442789b06328d050e3fd3ae087e",
+        "transitive_descendants": 98
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260719-96cf3b9e",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The linear-algebraic implication closes conditionally on the orbit-count, generator-representation, and observable-descent inputs, but the restricted packet supplies none of their cited authorities. The runner assigns the contested generators and marks kernel invariance as cited rather than deriving their retained authority from the supplied premise surface.",
+      "claim_scope": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-19T18:52:37.852233+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Any nonzero quotient preserving all retained generators has an M_3(C)-invariant kernel, hence its kernel is zero and dim(H_red) = 3.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the two named upstream notes as direct ledger dependencies, include any distinct observable-descent authority in the restricted packet, and rerun the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "Issue: the proof imports the orbit/spectral result, the retained generator representation, and the observable-descent lemma, while section 2 supplies no one-hop cited authorities and the runner hard-codes or cites those inputs. Why this blocks: the finite calculations verify consistency after those assignments but cannot authenticate that the assignments and descent bridge are retained-grade inputs. Repair target: register docs/THREE_GENERATION_STRUCTURE_NOTE.md and docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md as direct dependencies, include their full one-hop content and any distinct observable-descent authority, then re-audit. Claim boundary until fixed: given those inputs and an explicitly nonzero quotient, the kernel argument proves dimension three, but the derived quotient-exclusion boundary is not independently closed by this packet."
     }
   ],
   "prose_corrections": [],

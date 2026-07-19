@@ -1,6 +1,6 @@
 {
- "edge_count": 14808,
- "node_count": 4411,
+ "edge_count": 14815,
+ "node_count": 4412,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1587,8 +1587,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "c395c4356f63",
-   "out_degree": 310
+   "deps_hash": "1e630e6b31a0",
+   "out_degree": 311
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -8837,6 +8837,10 @@
   "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09": {
    "deps_hash": "39d65aeb687b",
    "out_degree": 2
+  },
+  "microcausality_fermionic_even_car_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18": {
+   "deps_hash": "190e5331eafb",
+   "out_degree": 6
   },
   "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": {
    "deps_hash": "61305a7e0862",

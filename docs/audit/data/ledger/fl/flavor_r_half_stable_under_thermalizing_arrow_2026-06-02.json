@@ -179,6 +179,61 @@
         "total_pass": 5
       },
       "verdict_rationale": "The fixed-point and multiplier calculation is correct, and the matrix and entropy checks are algebraic computations on explicitly chosen inputs. The result remains conditional because neither g nor the 2-isotype coarse-graining is selected by the provided framework premises; moreover, the endpoint spectra alone do not establish that every admissible charged-lepton configuration lies in (0,1). N1/N7 present no closed attack-route set or independently resolved steelman; N2/N3 expose two distinct explicit conditions rather than hidden premises; N4 supplies no prior residual witness; N5 supplies no five-resolution negative test; and N6/N8 provide no accepted premise or indexed echo closing either condition. Thus the named-wall rhetoric cannot support a clean physical-selection verdict, although the scoped map theorem itself is sound."
+    },
+    {
+      "archived_at": "2026-07-19T19:00:27.362003+00:00",
+      "audit_date": "2026-07-19T18:52:37.847497+00:00",
+      "audit_invocation_history": [
+        "067ce5f1527b4b3aa7337621b9dbd6dc"
+      ],
+      "audit_invocation_id": "067ce5f1527b4b3aa7337621b9dbd6dc",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 11.322,
+        "runner_hash": "85c0d8a5eb226af022773118b3f5b0e0b246095a154258f799c35083d98e9f70",
+        "transitive_descendants": 79
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260719-4f15f229",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner correctly verifies the algebraic consequences of the supplied map and two-sector partition. The restricted packet contains no authority deriving either condition as the physical charged-lepton partition or evolution law.",
+      "claim_scope": "Conditional stability of r=1/2 under the supplied map g(r)=sqrt(r/2), together with HS two-sector equipartition, Q=1/3+(2/3)r, and the endpoint spectra, excluding physical partition and arrow selection.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-19T18:52:37.847497+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For the supplied map g(r)=sqrt(r/2), r=1/2 is a fixed point with g'(1/2)=1/2<1.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and cite a retained two-isotype partition selector and framework-native physical r-evolution theorem, then re-audit the bounded stability claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the map g(r)=sqrt(r/2) and the two-isotype coarse-graining are supplied conditions rather than consequences of a cited retained authority; the runner also correctly shows that the proposed r\u21941-r relabeling is not a Casimir-preserving dynamical symmetry. Why this blocks: the calculations establish stability and equipartition only after those choices, so they do not establish a framework-native physical arrow or partition selector. Repair target: derive a retained theorem selecting the two-isotype partition and binding physical charged-lepton r evolution to g or to a specified flow with the same proved stability. Claim boundary until fixed: the map stability, HS identity, Q identity, endpoint spectra, and rejection of symmetry protection remain valid as a conditional bounded result only."
     }
   ],
   "prose_corrections": [],

@@ -377,9 +377,18 @@ gate("B5.3", (S1 // G) == (S2 // D) + 2 * (S3 // D) + (S4 // D)
      and (S1 // G) == 2 + 2 * 0 + 10,
      "consistency: 12 == 2 + 2*0 + 10")
 trt = [int(np.trace(TR[t])) for t in itertools.product(range(L), repeat=3)]
+ktr = [int(np.trace(induced(TR[t]))) for t in itertools.product(range(L), repeat=3)]
 St = sum(x * x for x in trt)
-gate("B5.4", St == 64 ** 2 and St // 64 == 64,
-     "translation-only control: sum(tr^2) == 64^2, commutant 64 (>> 12)")
+Skt = sum(k * k for k in ktr)
+Sxt = sum((64 * t - k) * k for t, k in zip(trt, ktr))
+Sbt = sum((64 * t - k) ** 2 for t, k in zip(trt, ktr))
+Dt = 64 ** 2 * 64
+gate("B5.4", St == 64 ** 2 and St // 64 == 64
+     and Skt % Dt == 0 and Skt // Dt == 8
+     and Sxt % Dt == 0 and Sxt // Dt == 0
+     and Sbt % Dt == 0 and Sbt // Dt == 56,
+     "translation-only split: 64 == 8 + 2*0 + 56; cross blocks already vanish, "
+     "full group sharpens the internal commutants")
 
 a_all = [U @ V8[:, 0] for U in Gamb]
 c_all = [U @ V8[:, 2] for U in Gamb]

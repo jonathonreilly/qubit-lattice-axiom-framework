@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_ambient_lattice_symmetry_kernel_isolation_2026_07_19.py
-runner_sha256: 59d8ffd1cbbfb62c13faa6e5e95c732de991763b3c9214f6a48f210585e220ba
+runner_sha256: d460baf86d666c0c2351127be9db83cfa14616c27f109f39a68c2d77612c8138
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 24.08
+elapsed_sec: 23.95
 status: ok
 ----- stdout -----
 [B1.1] PASS - D2 integer, antisymmetric (D2 == -D2.T), entries in {-1,0,1}
@@ -44,7 +44,7 @@ status: ok
 [B5.2c] PASS - sum((64t-k)k)/(64^2*768) == 0 (kernel-image cross blocks vanish)
 [B5.2d] PASS - sum((64t-k)^2)/(64^2*768) == 10 (image-block commutant)
 [B5.3] PASS - consistency: 12 == 2 + 2*0 + 10
-[B5.4] PASS - translation-only control: sum(tr^2) == 64^2, commutant 64 (>> 12)
+[B5.4] PASS - translation-only split: 64 == 8 + 2*0 + 56; cross blocks already vanish, full group sharpens the internal commutants
 [B5.5] PASS - cross average vanishes: E_cross nonzero but sum_U U@E_cross@U.T == 0
 [B5.6a] PASS - corner average: 2 * S_kk == 3 * Jr exactly
 [B5.6b] PASS - corner average: S_kk == 96 * (V8 @ (J64//64) @ V8.T)

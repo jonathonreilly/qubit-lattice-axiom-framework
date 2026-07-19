@@ -18,7 +18,7 @@ The motivating question is the delivery note's own untested row. That note state
 
 ## T1 — the ambient symmetry group
 
-The symmetry inputs are the lattice symmetries of [the minimal-axioms note](MINIMAL_AXIOMS_2026-06-29.md), the "standard translations, and proper cubic rotations", dressed by the staggered sign fields. Taking the three named base classes — the identity base, one improper axis swap, and one proper rotation — each dressed by one of the sixty-four sign fields and composed with one of the sixty-four translations, the members that commute exactly with `D2` number exactly `192`, sixty-four per class. Their closure under composition is the ambient group `G_amb` of order `768`.
+The symmetry inputs are the lattice symmetries of [the minimal-axioms note](MINIMAL_AXIOMS_2026-06-29.md), the "standard translations, and proper cubic rotations", dressed by the staggered sign fields. Taking the three named base classes — the identity base, one order-two proper rotation whose kernel action swaps the first two parity axes, and one order-three proper rotation — each dressed by one of the sixty-four sign fields and composed with one of the sixty-four translations, the members that commute exactly with `D2` number exactly `192`, sixty-four per class. Their closure under composition is the ambient group `G_amb` of order `768`.
 
 Every member of `G_amb` commutes with `D2` and preserves its kernel, so compression by the corner-wave frame `V8` induces a homomorphism onto exactly the landed `96`-element group `G`; the runner checks this by regenerating `G` independently from the compressed generators and gating set equality. The kernel of the homomorphism consists of exactly the eight pure even translations indexed by `{0, 2}^3` — an elementary abelian `(Z/2)^3` with every member squaring to the identity — and it is normal in `G_amb` under full conjugation. Each ambient member is a signed permutation, orthogonal at unit scale. The count identity `768 = 8 * 96` ties the three counts together; the next path this opens is the ambient lift of the kernel's complex structure.
 
@@ -30,7 +30,7 @@ In normalized language, `J = V8 j V8^T / 64` satisfies `J^2 = -P_ker` with `P_ke
 
 ## T3 — kernel-block isolation and the averaged complex structure
 
-Exact character sums over all `768` members give the total commutant dimension `dim_C End_{G_amb}(C^64) = 12`, which splits by kernel and image blocks as `12 = 2 + 2*0 + 10`: two dimensions on the kernel block, matching the rational commutant `span{I, j}`; ten on the image block; and each of the two kernel-image cross terms exactly zero. The vanishing of the cross terms is representation-theoretic — on this finite surface the kernel block admits no nonzero equivariant map to the image block. Control: the sixty-four pure translations alone have commutant dimension sixty-four, far larger than twelve, so the translations by themselves do not isolate the blocks; the dressed rotation and swap classes are load-bearing.
+Exact character sums over all `768` members give the total commutant dimension `dim_C End_{G_amb}(C^64) = 12`, which splits by kernel and image blocks as `12 = 2 + 2*0 + 10`: two dimensions on the kernel block, matching the rational commutant `span{I, j}`; ten on the image block; and each of the two kernel-image cross terms exactly zero. The vanishing of the cross terms is representation-theoretic — on this finite surface the kernel block admits no nonzero equivariant map to the image block. The translation-only control has the exact split `64 = 8 + 2*0 + 56`: translations already isolate the kernel and image blocks, while the full dressed group sharpens their internal commutants from eight and fifty-six dimensions to two and ten. The two proper-rotation classes are load-bearing for that internal rigidity, not for cross-block isolation.
 
 The isolation has an explicit averaging discriminator, a pair of group sums computed by the same code. The sum of the kernel-to-image transition `E_cross = outer(V8[:, 0], D2[:, 0])` — a nonzero integer matrix — over the whole group vanishes identically. The sum of the kernel-internal corner transition `E = outer(V8[:, 0], V8[:, 2])` does not vanish: it lands exactly on the lifted complex structure, `sum_{U in G_amb} U E U^T = 96 * (V8 @ j @ V8.T)`, equivalently `2 * sum = 3 * Jr`. The group average is therefore `Phi(E) = 8 J`. This identity is a group-average computation stated register-not-read: because `E` is traceless the identity coefficient `alpha = 0` is forced, so the average registers no identity component and its entire surviving content is the central complex structure. The pairing of the two sums shows the cross vanishing is a fact of the group action, not a code artifact.
 
@@ -54,7 +54,7 @@ The averaged K-real readout registers identical values on the conjugate pair, `E
 
 ## Negative controls
 
-- Translation-only commutant is sixty-four, far larger than twelve: the pure translations by themselves do not isolate the kernel and image blocks; the dressed rotation and swap classes are load-bearing.
+- Translation-only commutant split is `64 = 8 + 2*0 + 56`: the pure translations already isolate the kernel and image blocks, while the full dressed group sharpens the two internal commutants to dimensions two and ten.
 - The unaveraged K-real compression `V8.T @ F_re @ V8` is not a multiple of `I8` (two unequal diagonal entries): invariance, not K-reality alone, produces the norm form.
 - The cross transition sum vanishes while the corner transition sum does not, computed by the same summation code: the pair discriminates, so the cross vanishing is representation-theoretic and not a code artifact.
 - The identity coefficient `alpha = 0` is forced in the corner average because `E` is traceless: there is no identity admixture in `Phi(E) = 8 J`.
@@ -77,7 +77,7 @@ The averaged K-real readout registers identical values on the conjugate pair, `E
 | B2 | ambient group: scan of `192`, representation self-check, closure to `768`, kernel preservation, `ker pi` = `(Z/2)^3`, normality, orthogonality, count identity | 11 |
 | B3 | induced image equals `G` at `96` by independent regeneration, central roots, `J64` selection and closed form | 9 |
 | B4 | ambient lift `Jr`, `Pr`: square, annihilation, centrality, kernel support, compression, lift bijection | 6 |
-| B5 | character sums `12 = 2 + 2*0 + 10`, translation control, cross vanishing, corner average `Phi(E) = 8 J`, forced `alpha` | 12 |
+| B5 | character sums `12 = 2 + 2*0 + 10`, translation split `64 = 8 + 2*0 + 56`, cross vanishing, corner average `Phi(E) = 8 J`, forced `alpha` | 12 |
 | B6 | lattice-wide K-real face, both axes live, forced `c = 0`, value tables, flag registration, bulk-blindness | 13 |
 | B7 | verbatim source quotes present in both source and note | 14 |
 | B8 | dependency ledger shard existence | 3 |

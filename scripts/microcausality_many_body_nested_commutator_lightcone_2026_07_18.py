@@ -1,19 +1,7 @@
 #!/usr/bin/env python3
-"""Exact checks for the many-body nested-commutator lightcone note."""
-
-from pathlib import Path
+"""Exact checks for the finite-volume nested-commutator support note."""
 
 import sympy as sp
-
-
-ROOT = Path(__file__).resolve().parents[1]
-TARGET_NOTE = ROOT / "docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md"
-CT_NOTE = ROOT / "docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md"
-AXIOM_NOTE = ROOT / "docs/MINIMAL_AXIOMS_2026-06-29.md"
-
-
-def normalized_whitespace(text):
-    return " ".join(text.split())
 
 
 class CheckRunner:
@@ -29,15 +17,6 @@ class CheckRunner:
         else:
             self.failed += 1
             print(f"FAIL: {label}")
-
-    def needle(self, label, path, needles):
-        haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
-        if isinstance(needles, str):
-            needles = (needles,)
-        self.check(
-            label,
-            all(normalized_whitespace(n) in haystack for n in needles),
-        )
 
     def finish(self):
         print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
@@ -62,6 +41,13 @@ def com(a, b):
 
 def is_zero(m):
     return sp.simplify(m) == sp.zeros(*m.shape)
+
+
+def adjoint_power(h, a, order):
+    out = a
+    for _ in range(order):
+        out = com(h, out)
+    return out
 
 
 def main():
@@ -104,6 +90,17 @@ def main():
         "T1c k=2 commutator is nonzero at the cone distance",
         not is_zero(com(ad2, probe_x3)),
     )
+    disconnected_h = bond_12_xx
+    checks.check(
+        "T1d disconnected site-3 component stays unreachable through k=8",
+        all(
+            is_zero(com(adjoint_power(disconnected_h, site_a, order), probe_x3))
+            and is_zero(
+                com(adjoint_power(disconnected_h, site_a, order), probe_z3)
+            )
+            for order in range(9)
+        ),
+    )
 
     # Group T2 -- commuting-chain stall exhibit.
     commuting_h = bond_12_xx + bond_23_xx
@@ -127,15 +124,31 @@ def main():
         is_zero(com(bond_12_xx, bond_23_xx))
         and not is_zero(com(bond_12_xx, bond_23_zz)),
     )
+    checks.check(
+        "T2e full-H adjoints equal near-bond adjoints through k=8",
+        all(
+            adjoint_power(commuting_h, site_a, order)
+            == adjoint_power(bond_12_xx, site_a, order)
+            for order in range(9)
+        ),
+    )
 
     # Group T3 -- series-bound ingredients.
-    k_val, d_val = 5, 2
+    factorial_grid = [
+        (k_val, d_val)
+        for d_val in range(9)
+        for k_val in range(d_val, 17)
+    ]
     checks.check(
-        "T3a factorial tail domination d!/k! <= 1/(k-d)! via binomial >= 1",
-        sp.binomial(k_val, d_val) >= 1
-        and sp.Rational(sp.factorial(d_val), sp.factorial(k_val))
-        <= sp.Rational(1, sp.factorial(k_val - d_val)),
+        "T3a factorial domination on exact grid 0<=d<=8 and d<=k<=16",
+        all(
+            sp.binomial(k_val, d_val) >= 1
+            and sp.Rational(sp.factorial(d_val), sp.factorial(k_val))
+            <= sp.Rational(1, sp.factorial(k_val - d_val))
+            for k_val, d_val in factorial_grid
+        ),
     )
+    k_val, d_val = 5, 2
     x = sp.Rational(3, 2)
     lhs_tail = sum(x**k / sp.factorial(k) for k in range(d_val, 12))
     rhs_tail = (x**d_val / sp.factorial(d_val)) * sp.exp(x)
@@ -172,32 +185,6 @@ def main():
             (sp.sqrt(pq_norm_sq) + sp.sqrt(qp_norm_sq)) ** 2 - comm_norm_sq
         ).is_nonnegative
         is True,
-    )
-
-    # Group N -- source needles.  __TOTAL__ deliberately not matched.
-    checks.needle(
-        "N1 cited note names the many-body slice as a separate open task",
-        CT_NOTE,
-        "The `U`-integrated, many-body, and\n  sharp-rate problems are "
-        "separate open tasks, not walls claimed here.",
-    )
-    checks.needle(
-        "N2 axiom memo supplies no dynamics",
-        AXIOM_NOTE,
-        (
-            "Admissibility is not a dynamics axiom.",
-            "choose a Hamiltonian or transfer operator",
-        ),
-    )
-    checks.needle(
-        "N3 target identifier and labels",
-        TARGET_NOTE,
-        (
-            "microcausality_many_body_nested_commutator_lightcone_bounded_theorem_note_2026-07-18",
-            "**L1 (one-neighborhood support growth, exact).**",
-            "commuting exhibit, exact, all orders).**",
-            "zero of order **at least** `d(X, Y)` at `t = 0`",
-        ),
     )
 
     return checks.finish()

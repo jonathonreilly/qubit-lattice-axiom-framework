@@ -1,4 +1,4 @@
-# KCPT corner-carrier antilinear and non-Hermitian K-real readout classification: every explicitly K-real functional face registers the conjugate doublet pair degenerately (bounded theorem)
+# KCPT corner-carrier antilinear and non-Hermitian K-real readout classification: conjugation constraints, equivariant nullity, and exact separation modes (bounded theorem)
 
 Registry id: `kcpt_corner_carrier_antilinear_nonhermitian_kreal_readout_classification_bounded_theorem_note_2026-07-18`
 Date: 2026-07-18
@@ -11,23 +11,27 @@ Runner cache: `logs/runner-cache/kcpt_corner_carrier_antilinear_nonhermitian_kre
 The landed corner-carrier work supplies a real cyclic carrier `C` with `C^3 = I_3`
 and `C^T = C^2`, entrywise conjugation `K`, and the shared conjugate doublet lines
 `vw` and `vwb = conj(vw)` on which `C vw = w vw` and `C vwb = conj(w) vwb`, with
-`w = -1/2 + (sqrt(3)/2)*i`. The parent delivery note classified Hermitian linear
-readouts and left antilinear and non-Hermitian functionals open. This note answers
-that stated opening as a bounded theorem: it classifies the explicitly `K`-real
-readout faces and shows that each one registers the two conjugate doublet lines
-degenerately, while every named sharp separator carries an explicitly `K`-odd or
-non-`K`-real ingredient.
+`w = -1/2 + (sqrt(3)/2)*i`. The parent delivery note classified Hermitian
+`K`-real linear readouts and left antilinear and non-Hermitian functionals open.
+This note answers that stated opening as a bounded theorem: it classifies the
+explicitly `K`-real faces and the broader equivariant antilinear face. Their exact
+relations range from equality and nullity to complex-conjugate values with equal
+real parts or equal moduli. This is not a universal degeneracy or
+indistinguishability claim.
 
-Three faces are treated on one carrier. A linear non-Hermitian but `K`-real
+Three new faces are treated alongside the landed Hermitian `K`-real baseline. A
+linear non-Hermitian but `K`-real
 functional splits by the Hermitian bridge into a `K`-even symmetric part and a
 `K`-odd skew part, and always returns complex-conjugate values on `vw` and `vwb`,
-so their real parts coincide. An antilinear equivariant functional built from the
+so their real parts coincide while their full complex values can distinguish the
+lines. An antilinear equivariant functional built from the
 commutant span of `C` vanishes identically on both doublet lines. An
 antilinear `K`-real functional (equivariance dropped) is a bilinear form whose two
-doublet values are complex conjugates, so the two doublet rays carry equal moduli.
-Every degeneracy is register-not-read: it is a property of the explicitly `K`-real
-face, not a bound on the carrier, and named non-`K`-real or `K`-odd separators
-split the pair sharply. The same statements are delivered to the landed `4^3`
+doublet values are complex conjugates, so equal-normalized representatives of the
+two doublet rays carry equal moduli. These are face-specific register-not-read
+relations, not a universal indistinguishability claim; exact escapes through
+`K`-odd, non-`K`-real, and non-equivariant ingredients remain explicit. The same
+statements are delivered to the landed `4^3`
 staggered surface through the `hw=1` triplet lift with exact compression scale
 `4096 = 64^2`. All results are exact and independently reproduced by the paired
 runner.
@@ -61,26 +65,31 @@ the split is rigid.
 `E_A(K psi) = conj(E_A(psi))`. Hence `E_A(vwb) = conj(E_A(vw))` and the two
 doublet values share one real part. The symmetric part alone fixes that common
 real part; the imaginary separation `E_A(vw) - E_A(vwb) = 2i*Im E_A(vw)` is
-carried entirely by the skew part. The sharpest separating witness is the real
+carried entirely by the skew part. An exact separating witness is the real
 non-Hermitian `A = C - C^2`, with `E(vw) = 3*i*sqrt(3)` and
 `E(vwb) = -3*i*sqrt(3)`, encoded by the polarization identity
-`i*(C - C^2) = -sqrt(3)*(P_w - P_wb)`.
+`i*(C - C^2) = -sqrt(3)*(P_w - P_wb)`. This witness stays inside the row and
+separates the full complex values; the theorem supplies only the equal-real-part
+constraint and does not posit a real-part-only physical readout.
 
 **T3 (antilinear equivariant face).** The commutant of `C` is the span of
-`{I, C, C^2}`, of complex dimension `3`. For `A` in this span the antilinear `B`
-is `C`-equivariant, sends `vw` to `conj(a + b*w + c*w^2) vwb`, and gives
+`{I, C, C^2}`, of complex dimension `3`; `K`-reality is not required in this
+face. For `A` in this span the antilinear `B` is `C`-equivariant, sends `vw` to
+`conj(a + b*w + c*w^2) vwb`, and gives
 `F_B(vw) = F_B(vwb) = 0`: the equivariant antilinear face is identically null on
 both doublet lines, while the singlet value `F_B(v0) = 3*conj(a + b + c)` stays
 free.
 
 **T4 (antilinear `K`-real face, equivariance dropped).** `K B K = B` holds iff
 `A` is entrywise real. Then `F_B(vw) = vwb^T A vwb`, only the symmetric part
-contributes, `F_B(vwb) = conj(F_B(vw))`, and the two doublet rays carry equal
-moduli `|F_B(vw)| = |F_B(vwb)|`. Antilinear phase covariance is
-`F_B(c*psi) = conj(c)^2 * F_B(psi)`. The degeneracy is register-not-read: the
+contributes, and `F_B(vwb) = conj(F_B(vw))` for the displayed conjugate,
+equal-normalized representatives. Antilinear phase covariance is
+`F_B(c*psi) = conj(c)^2 * F_B(psi)`, so the complex value is not a ray invariant
+but its modulus is. The exact separation modes remain explicit: the
 non-`K`-real `A = vwb vwb^T` returns `(F_B(vw), F_B(vwb)) = (9, 0)`, its
 conjugate mirror `A = vw vw^T` returns `(0, 9)`, and the `K`-real but
-non-equivariant rejector `E_11` returns `F_B(vw) = 1`.
+non-equivariant rejector `E_11` returns `(1, 1)`, breaking equivariant nullity
+without breaking the equal-modulus relation.
 
 **T5 (value freedom and neutrality).** On the equivariant channel family
 `A = al*I + be*(C + C^2) + ga*(C - C^2)` the closed forms are
@@ -102,27 +111,32 @@ delivered non-`K`-real antilinear witness `V64 vwb vwb^T V64^T` gives
 
 **T6-corollary (delivered class identity).** Because `V64^T V64 = 64*I_3`, the
 delivered `K`-real antilinear class equals `4096` times the carrier `K`-real
-class, so the equal-moduli degeneracy and its named separators transport
+class, so the equal-moduli relation and its named separators transport
 unchanged to the staggered surface.
 
-## Unified bounded reading
+## Unified face-by-face classification
 
-| Face | Operator class | Doublet values `(vw, vwb)` | Degeneracy registered |
+| Face | Operator class | Doublet values `(vw, vwb)` | Exact registered relation |
 | --- | --- | --- | --- |
-| Hermitian linear | `A = A^dag` | equal real, equal imaginary | equal expectation values |
-| linear non-Hermitian `K`-real | `A` real, `A != A^dag` | complex conjugates | equal real parts |
-| antilinear equivariant | `A` in span `{I, C, C^2}` | `(0, 0)` | identically null |
-| antilinear `K`-real | `A` real | complex conjugates | equal moduli |
+| Hermitian linear `K`-real | `A = A^dag`, `A` real | equal real values | equal expectation values |
+| linear non-Hermitian `K`-real | `A` real, `A != A^dag` | complex conjugates, generally distinct | equal real parts; full complex values can differ |
+| antilinear equivariant (`K`-reality not required) | `A` in span `{I, C, C^2}` | `(0, 0)` | identically null |
+| antilinear `K`-real | `A` real | complex conjugates | equal moduli for equal-normalized representatives |
 
-Each explicitly `K`-real row registers the two conjugate doublet lines
-degenerately; each degeneracy is broken only by leaving the row, either by a
-`K`-odd Hermitian imaginary part (linear) or by a non-`K`-real seed (antilinear).
+The four rows impose four different relations. The real non-Hermitian witness
+`C - C^2` separates full complex values while remaining inside its row. The real
+`E_11` seed leaves equivariance and changes the equivariant antilinear pair from
+`(0, 0)` to `(1, 1)` while remaining `K`-real. The non-`K`-real rank-one seeds
+break the antilinear equal-modulus relation, while the Hermitian separator
+`i*(C - C^2)` leaves the Hermitian `K`-real row through its `K`-odd part.
 
 ## Boundary
 
-This is a classification of explicitly K-real readout functionals on the supplied
-corner carrier and its landed lattice delivery, not a nonderivability claim: K-odd
-and non-K-real separators remain derivable and registrable.
+This is a classification of named readout-functional faces on the supplied corner
+carrier and its landed lattice delivery, not a nonderivability,
+universal-degeneracy, or indistinguishability claim: the K-real non-Hermitian face
+already separates full complex values, and K-odd, non-K-real, or non-equivariant
+escapes remain explicit.
 
 No orientation is selected: every statement is invariant under the joint relabeling
 `w <-> conj(w)`, and the mechanism note's two-model FLAG and live Qualification stand
@@ -138,6 +152,8 @@ and interacting extensions are untested here and are the next paths this opens.
 
 - No dynamics, formation rule, Born weight, or probability is asserted; the
   channel values are static readouts on supplied kernel states.
+- No real-part-only physical readout is supplied for the linear non-Hermitian
+  face; its full complex values distinguish the displayed conjugate lines.
 - No new axiom, import, or primitive is registered. The carrier, the lift `V64`,
   the staggered phases, and the doublet lines are taken from the landed
   dependencies below.
@@ -157,13 +173,15 @@ convention flips the corresponding gate, and the paired runner carries those
 negative controls. The load-bearing modeling choice is the identification of the
 antilinear composed functional `F_B` with `B = K` composed with `A`; the
 classification is a statement about that supplied functional family, not a claim
-that no other readout convention exists. The independent audit lane sets status.
+that no other readout convention exists. No physical bridge selects only the
+common real part of the non-Hermitian linear values. The independent audit lane
+sets status.
 
 ## Dependency roles
 
 - [KCPT_CORNER_CARRIER_LATTICE_DELIVERY_HW1_DOUBLET_PAIR_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md](KCPT_CORNER_CARRIER_LATTICE_DELIVERY_HW1_DOUBLET_PAIR_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md)
   supplies the carrier, the `hw=1` lift `V64`, the staggered operator `2D` with
-  exact rank `56`, the rotation intertwiner, and the Hermitian-linear
+  exact rank `56`, the rotation intertwiner, and the Hermitian `K`-real linear
   classification this note extends to the antilinear and non-Hermitian faces.
 - [KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md](KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md)
   supplies the carrier presentation, the character projectors, the entrywise

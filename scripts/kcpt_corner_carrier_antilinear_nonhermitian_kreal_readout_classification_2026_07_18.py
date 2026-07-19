@@ -222,6 +222,11 @@ check("B2.15", "polarization identity i(C - C^2) = -sqrt(3) (P_w - P_wb)",
 # supporting extra: witness A = C - C^2 is real (K-real) yet non-Hermitian
 check("B2.16", "linear escape witness is K-real (conj A = A) yet non-Hermitian (A != A^dag)",
       mz(Awit.conjugate() - Awit) and not mz(Awit - Awit.H))
+Hwit = I * Awit
+check("B2.17", "Hermitian equality requires K-reality: i(C-C^2) is Hermitian, K-odd, and separates the pair",
+      mz(Hwit - Hwit.H) and mz(Hwit.conjugate() + Hwit)
+      and zc(E_lin(Hwit, vw) + 3 * sqrt(3))
+      and zc(E_lin(Hwit, vwb) - 3 * sqrt(3)))
 
 # ===========================================================================
 # B3 - T3 antilinear equivariant face
@@ -324,8 +329,18 @@ check("B4.14", "both witnesses break equivariance (C A != A C)",
       (not mz(C3 * A_esc - A_esc * C3)) and (not mz(C3 * A_mir - A_mir * C3)))
 E11 = zeros(3, 3)
 E11[0, 0] = 1
-check("B4.15", "rejector A = E11 (K-real, non-equivariant) gives F_B(vw) = 1 != 0",
-      zc(F_anti(E11, vw) - 1))
+check("B4.15", "rejector A = E11 is K-real and non-equivariant and gives the non-null pair (1,1)",
+      mz(E11.conjugate() - E11) and not mz(C3 * E11 - E11 * C3)
+      and zc(F_anti(E11, vw) - 1) and zc(F_anti(E11, vwb) - 1))
+A_phase = zeros(3, 3)
+A_phase[0, 1] = 1
+A_phase[1, 0] = 1
+check("B4.16", "K-real phase witness has distinct conjugate values 2w and 2conj(w) but equal modulus squared 4",
+      mz(A_phase.conjugate() - A_phase)
+      and zc(F_anti(A_phase, vw) - 2 * w)
+      and zc(F_anti(A_phase, vwb) - 2 * conjugate(w))
+      and zc(F_anti(A_phase, vw) * conjugate(F_anti(A_phase, vw)) - 4)
+      and zc(F_anti(A_phase, vwb) * conjugate(F_anti(A_phase, vwb)) - 4))
 
 # ===========================================================================
 # B5 - T5 free values, orientation-neutrality, r-neutrality
@@ -578,9 +593,11 @@ check("B9.7", "staggered gate note appears as a backticked handle and not as a m
       f"`{gate_handle}`" in RAW and f"{gate_handle}.md)" not in RAW and f"]({gate_handle}" not in RAW)
 
 BOUNDARY = [
-    ("This is a classification of explicitly K-real readout functionals on the supplied "
-     "corner carrier and its landed lattice delivery, not a nonderivability claim: K-odd "
-     "and non-K-real separators remain derivable and registrable."),
+    ("This is a classification of named readout-functional faces on the supplied corner "
+     "carrier and its landed lattice delivery, not a nonderivability, "
+     "universal-degeneracy, or indistinguishability claim: the K-real non-Hermitian face "
+     "already separates full complex values, and K-odd, non-K-real, or non-equivariant "
+     "escapes remain explicit."),
     ("No orientation is selected: every statement is invariant under the joint relabeling "
      "`w <-> conj(w)`, and the mechanism note's two-model FLAG and live Qualification stand "
      "unchanged."),
@@ -598,6 +615,11 @@ check("B9.10", "note declares the bounded-theorem claim type and points at runne
       "bounded_theorem" in RAW
       and "kcpt_corner_carrier_antilinear_nonhermitian_kreal_readout_classification_2026_07_18.py" in RAW
       and "logs/runner-cache/kcpt_corner_carrier_antilinear_nonhermitian_kreal_readout_classification_2026_07_18.txt" in RAW)
+check("B9.11", "note states the narrowed face-specific classification and its internal complex-value separation",
+      "Hermitian linear `K`-real" in flat_note
+      and "full complex values can differ" in flat_note
+      and "antilinear equivariant (`K`-reality not required)" in flat_note
+      and "not a universal degeneracy or indistinguishability claim" in flat_note)
 
 # ===========================================================================
 # Summary

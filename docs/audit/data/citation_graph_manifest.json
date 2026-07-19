@@ -1,6 +1,6 @@
 {
- "edge_count": 14754,
- "node_count": 4398,
+ "edge_count": 14759,
+ "node_count": 4399,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6857,6 +6857,10 @@
   "k_dependence_review_safe_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "kcpt_ambient_lattice_symmetry_kernel_isolation_averaged_complex_structure_bounded_theorem_note_2026-07-19": {
+   "deps_hash": "dafb468bb9c4",
+   "out_degree": 5
   },
   "kcpt_corner_carrier_antilinear_nonhermitian_kreal_readout_classification_bounded_theorem_note_2026-07-18": {
    "deps_hash": "08a54366d6a4",

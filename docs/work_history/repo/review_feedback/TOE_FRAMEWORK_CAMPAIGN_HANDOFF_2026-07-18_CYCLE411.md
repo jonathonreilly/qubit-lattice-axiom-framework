@@ -684,6 +684,32 @@ silently alter the held receiver fixture. Use the full hard-core/reservoir
 route as carrier first and the two-slice X/Y block only as the contact-
 sensitive coordinate unless a new exact common vertex is constructed.
 
+Cold restart controls were rerun after Cycle 417. The local seven-M2
+reservoir route remains `20/0`, with source/field ledger residual
+`3.4166566809407604e-16` and full-update inverse
+`7.263701286747599e-15`. Cycle 295 remains `5/0`; its four children are
+`20/0`, `19/0`, `16/0`, and `15/0`. Cycle 296 remains `5/0`.
+
+The exact seams for the next common update are therefore already measured:
+
+- carried ordinary-SWAP versus FSWAP differs by norm `2` outside the executed
+  one-matter sector;
+- the full hard-core two-tick history has missing conjugate source coordinate
+  `-0.15248255286187232` while genuinely producing a two-field sector of
+  weight `0.002201473975253681`;
+- the two-slice contact/exchange identity closes at `6.04e-16` but is not yet
+  joined to carried streams;
+- fixed-reservoir streaming leaves a tagged-state residual
+  `1.322195737303133`, whereas co-moving transport closes at zero and the
+  staggered catch-up inverse is `1.02811195848043e-15`; and
+- the fixed Cycle-296 held-L9 profile remains `6.985955e-4` from the Cycle-216
+  comparator and contains no matter/contact.
+
+Do not splice these charges as if they were already the same observable. The
+next runner must cancel the missing source coordinate, preserve the contact
+identity and Cycle-416 held weights, and use one FSWAP-correct carried physical
+code before any source/gravity interpretation.
+
 ### Success contract
 
 Require:

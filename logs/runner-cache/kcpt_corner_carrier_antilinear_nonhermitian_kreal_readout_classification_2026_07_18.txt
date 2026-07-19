@@ -1,0 +1,123 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_corner_carrier_antilinear_nonhermitian_kreal_readout_classification_2026_07_18.py
+runner_sha256: 29e3ffa07265b910612fa8b0c7245b5b91c6d9efd56842032d9522105a40e8f6
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 5.90
+status: ok
+----- stdout -----
+PASS B1.1 carrier C^3 = I_3
+PASS B1.2 carrier transpose C^T = C^2
+PASS B1.3 carrier is real: K C K = conj(C) = C
+PASS B1.4 cube-root identity 1 + w + w^2 = 0 and w^3 = 1
+PASS B1.5 conj(w) = w^2 and w*conj(w) = 1
+PASS B1.6 doublet eigen C vw = w vw
+PASS B1.7 conjugate doublet eigen C vwb = conj(w) vwb
+PASS B1.8 singlet eigen C v0 = v0
+PASS B1.9 conjugation swaps doublet vectors conj(vw) = vwb
+PASS B1.10 Hermitian orthogonality <vw,vwb> = 0
+PASS B1.11 Hermitian norms <vw,vw> = 3 and <v0,v0> = 3
+PASS B1.12 cyclotomic bilinear self-sums vw^T vw = 0 and vwb^T vwb = 0
+PASS B1.13 cyclotomic bilinear cross-sum vwb^T vw = 3
+PASS B2.1 bridge parts H1, H2 are Hermitian (generic complex A)
+PASS B2.2 bridge reconstruction A = H1 + i H2 (generic complex A)
+PASS B2.3 bridge uniqueness: Hermitian and anti-Hermitian force zero (rank 18)
+PASS B2.4 real A: symmetric part H1 is K-even (conj H1 = H1)
+PASS B2.5 real A: skew part H2 is K-odd (conj H2 = -H2) and i H2 is real
+PASS B2.6 bridge converse: conj(A)-A = (H1-conjH1) + i(H2+conjH2), so K-even+K-odd => real A
+PASS B2.7 conjugate-values law E_A(K psi) = conj(E_A(psi)) (real A, generic psi)
+PASS B2.8 doublet values are conjugates E_A(vwb) = conj(E_A(vw)); equal real parts
+PASS B2.9 symmetric part gives equal doublet values E_sym(vw) = E_sym(vwb)
+PASS B2.10 skew part gives opposite imaginary values E_skew(vwb) = -E_skew(vw), purely imaginary
+PASS B2.11 separation E_A(vw)-E_A(vwb) = 2 i Im E_A(vw) carried entirely by the skew part
+PASS B2.12 escape witness A = C - C^2 gives E(vw) = 3*i*sqrt(3)
+PASS B2.13 escape witness A = C - C^2 gives E(vwb) = -3*i*sqrt(3)
+PASS B2.14 character projector P_w = vw vw^dag / 3 is Hermitian idempotent with C P_w = w P_w
+PASS B2.15 polarization identity i(C - C^2) = -sqrt(3) (P_w - P_wb)
+PASS B2.16 linear escape witness is K-real (conj A = A) yet non-Hermitian (A != A^dag)
+PASS B3.1 commutant of C has complex dimension 3 (real solution space dim 6)
+PASS B3.2 the three powers {I, C, C^2} are linearly independent
+PASS B3.3 equivariance forward: A in span{I,C,C^2} gives B(C psi) = C(B psi)
+PASS B3.4 equivariance reverse: B C = C B forces A into the 3-dim span (real dim 6)
+PASS B3.5 doublet transport B vw = conj(a + b w + c w^2) vwb and singlet B v0 = conj(a+b+c) v0
+PASS B3.6 equivariant antilinear functional vanishes on both doublet lines F_B(vw)=F_B(vwb)=0
+PASS B3.7 singlet value stays free F_B(v0) = 3 conj(a + b + c)
+PASS B4.1 structural (K B K)(v) = A conj(v): composing K, B, K on a generic complex A
+PASS B4.2 structural (K B K - B)(v) = (A - conj(A)) conj(v)
+PASS B4.3 K-reality K B K = B iff A entrywise real (defect A - conj A vanishes on 9 imag dofs)
+PASS B4.4 K-real antilinear functional is the bilinear form F_B(vw) = vwb^T A vwb (real A)
+PASS B4.5 only the symmetric part contributes: skew A gives F_B(vw)=0, F_B(vw)=vwb^T A_sym vwb
+PASS B4.6 conjugate law F_B(vwb) = conj(F_B(vw)) (real A)
+PASS B4.7 equal moduli |F_B(vw)| = |F_B(vwb)| (real A)
+PASS B4.8 phase covariance F_B(c psi) = conj(c)^2 F_B(psi) (generic c, psi, real A)
+PASS B4.9 phase covariance at c = w: F_B(w vw) = conj(w)^2 F_B(vw)
+PASS B4.10 escape witness A = vwb vwb^T gives F_B(vw) = 9
+PASS B4.11 escape witness A = vwb vwb^T gives F_B(vwb) = 0
+PASS B4.12 mirror witness A = vw vw^T gives F_B(vw) = 0 and F_B(vwb) = 9
+PASS B4.13 both witnesses are non-K-real (conj A != A)
+PASS B4.14 both witnesses break equivariance (C A != A C)
+PASS B4.15 rejector A = E11 (K-real, non-equivariant) gives F_B(vw) = 1 != 0
+PASS B5.1 closed form E(v0) = 3(al + 2 be)
+PASS B5.2 closed form E(vw) = 3(al - be) + 3*sqrt(3)*ga*i
+PASS B5.3 channel-value map (al,be,ga)->(mu0, Re mu_w, Im mu_w) has determinant -3*sqrt(3)
+PASS B5.4 antilinear singlet value F_B(v0) = v0^T A v0 is real and reaches every real t (A = t E11)
+PASS B5.5 orientation swap on linear escape: values 3*i*sqrt(3) and -3*i*sqrt(3) are conjugate partners
+PASS B5.6 orientation swap A->conj(A) sends escape (9,0) to (0,9)
+PASS B5.7 orientation swap A->conj(A) sends mirror (0,9) to (9,0)
+PASS B5.8 no class condition references the sign of i: real-A and span{I,C,C^2} are conj-closed
+PASS B5.9 joint relabeling w <-> conj(w) swaps vw <-> vwb
+PASS B6.1 staggered D2 is an integer antisymmetric matrix with entries in {-1,0,1}
+PASS B6.2 staggered operator exact rank D2 = 56
+PASS B6.3 hw=1 triplet overlap V64^T V64 = 64 I_3
+PASS B6.4 hw=1 triplet lies in the kernel D2 @ V64 = 0
+PASS B6.5 rotation UR is a permutation (UR^T UR = I_64, UR^3 = I_64)
+PASS B6.6 rotation intertwines the carrier UR @ V64 = V64 @ C
+PASS B6.7 elementary delivery E_00 compresses to 4096 * E_00 (4096 = 64^2)
+PASS B6.8 elementary delivery E_01 compresses to 4096 * E_01 (4096 = 64^2)
+PASS B6.9 elementary delivery E_02 compresses to 4096 * E_02 (4096 = 64^2)
+PASS B6.10 elementary delivery E_10 compresses to 4096 * E_10 (4096 = 64^2)
+PASS B6.11 elementary delivery E_11 compresses to 4096 * E_11 (4096 = 64^2)
+PASS B6.12 elementary delivery E_12 compresses to 4096 * E_12 (4096 = 64^2)
+PASS B6.13 elementary delivery E_20 compresses to 4096 * E_20 (4096 = 64^2)
+PASS B6.14 elementary delivery E_21 compresses to 4096 * E_21 (4096 = 64^2)
+PASS B6.15 elementary delivery E_22 compresses to 4096 * E_22 (4096 = 64^2)
+PASS B6.16 conjugation commutes with the lift: conj(V64 z) = V64 conj(z)
+PASS B6.17 delivered doublet norm |V64 vw|^2 = 192 = 64 * 3
+PASS B6.18 delivered linear escape W = V64 (C - C^2) V64^T gives E(psi_w) = 4096 * 3 * i * sqrt(3)
+PASS B6.19 delivered conjugate-values law E(conj psi_w) = conj(E(psi_w))
+PASS B6.20 delivered equivariant antilinear is doublet-null and gives F(psi_0) = 4096*3*(2-1+5)
+PASS B6.21 delivered K-real antilinear compresses to 4096 * (carrier K-real face) on the doublet channel
+PASS B6.22 delivered non-K-real witness V64 vwb vwb^T V64^T gives F(psi_w)=36864=4096*9, F(psi_wb)=0
+PASS B6.23 delivered class equals the carrier K-real class: V64^T V64 = 64 I forces the 4096 scale
+PASS B7.1 rejector fires: F_B(vw) = 1 is nonzero where the equivariant class is null
+PASS B7.2 non-K-real witnesses fail the K-reality membership test (conj A != A)
+PASS B7.3 wrong-sign polarization is rejected: i(C - C^2) != +sqrt(3)(P_w - P_wb)
+PASS B7.4 wrong-scale compression is rejected: elementary delivery E_00 != 4095 * E_00
+PASS B7.5 transpose-convention rotation fails delivery: UR^T @ V64 = V64 @ C^2 != V64 @ C
+PASS B7.6 wrong doublet chirality is rejected: C vw != conj(w) vw
+PASS B8.1 quote Q1 (untested antilinear/non-Hermitian row) present in the delivery note
+PASS B8.2 quote Q2 (further-paths classification) present in the delivery note
+PASS B8.3 quote Q3 (hardening: equal doublet expectation values) present in the delivery note
+PASS B8.4 quote Q4 (Kawamoto-Smit phases and exact rank 56) present in the delivery note
+PASS B8.5 quote Q5 (corner carrier, character projectors, K) present in the spectral-pairing note
+PASS B8.6 quote Q5b (K-real derivable initial data) present in the spectral-pairing note
+PASS B8.7 quote Q6 (entrywise-conjugate presentations, live Qualification) present in the mechanism note
+PASS B8.8 quote Q7 (cubic lattice sites, proper cubic rotations) present in the axiom memo
+PASS B8.9 ledger shard exists for dependency kcpt_corner_carrier_latt...
+PASS B8.10 ledger shard exists for dependency kcpt_coupling_triple_two...
+PASS B8.11 ledger shard exists for dependency kcpt_orbit_constant_regi...
+PASS B8.12 ledger shard exists for dependency minimal_axioms...
+PASS B9.1 note omits closing/over-claim language
+PASS B9.2 note omits audit-status language
+PASS B9.3 note omits unlanded-material references
+PASS B9.4 note omits spec meta-language
+PASS B9.5 note has no bare decimal literals
+PASS B9.6 note links exactly the four dependency markdown files
+PASS B9.7 staggered gate note appears as a backticked handle and not as a markdown link
+PASS B9.8 note carries all four required boundary sentences verbatim
+PASS B9.9 registry id appears exactly once in the note header
+PASS B9.10 note declares the bounded-theorem claim type and points at runner and cache
+TOTAL: PASS=111 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py
+runner_sha256: 98ea38526b4708c98b0b748244445f404c21d9dfc211c04871d5d4ed707ae5d4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+PASS: W1-k2 ordered sequence sum equals the nested adjoint
+PASS: W1-k3 ordered sequence sum equals the nested adjoint
+PASS: W2a inner-miss sequences vanish exactly
+PASS: W2b a later bond missing the current support kills the word
+PASS: W2c every length-one word is below the distance-two cone
+PASS: W2d a disconnected far site remains silent through order eight
+PASS: W3a exact incidence counts obey the local 6s bound
+PASS: W3b N_0 and independent product-majorant values are exact
+PASS: W3c the product majorant satisfies bar_N_{k+1}=6(m+k)bar_N_k
+PASS: W3d exact survivor counts lie below the product majorant
+PASS: W4a exact adjoints through order four match the Pauli-word derivation
+PASS: W4b the k=2 coefficient obeys actual- and product-count bounds
+PASS: W4c order two reaches X3 and Y3 while Z3 stays silent
+PASS: W4d every order-three word and their sum are silent for all far probes
+PASS: W4e order four re-arrives at X3 and Y3 while Z3 stays silent
+PASS: W5a ratio monotonicity reduces exactly to m-1
+PASS: W5b consecutive product-majorant terms have the stated ratio
+PASS: W5c an independent ratio instance fixes the coefficient 12
+PASS: W5d the sufficient window has constant 12 and half-window ratio one-half
+PASS: W5e exact partial tail is below bar_a_d/(1-r_*)
+PASS: W5f family-level uniformity requires a finite J_*
+PASS: W5g d=0, zero-norm, zero-time, and zero-coupling cases are separate
+PASS: W5h a zero sequence count forces every recurrence majorant afterward to zero
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

@@ -697,6 +697,10 @@ def deletion_domain_controls(controller: MassController, menu: tuple[Sector, ...
         sector, controller.cayley, c444.HELD_SIZE, 2, c444.HELD_START, "delay",
         source_enabled=False, calibration=calibration,
     )
+    mass_deleted = branch_experiment(
+        sector, np.zeros_like(controller.cayley), c444.HELD_SIZE, 2, c444.HELD_START, "delay",
+        source_enabled=True, calibration=calibration,
+    )
     transport_deleted = branch_experiment(
         sector, controller.cayley, c444.HELD_SIZE, 2, c444.HELD_START, "delay",
         source_enabled=True, calibration=calibration, delete_transport=True,
@@ -712,11 +716,17 @@ def deletion_domain_controls(controller: MassController, menu: tuple[Sector, ...
     echo_deletions = {
         "transport": c444.observe_echo(c444.HELD_SIZE, 2, c444.HELD_START, delete_transport=True).interval,
         "reflection": c444.observe_echo(c444.HELD_SIZE, 2, c444.HELD_START, delete_reflection=True).interval,
+        "reflection-certificate": c444.observe_echo(c444.HELD_SIZE, 2, c444.HELD_START, delete_reflector_certificate=True).interval,
         "detector": c444.observe_echo(c444.HELD_SIZE, 2, c444.HELD_START, delete_detector=True).interval,
         "latch": c444.observe_echo(c444.HELD_SIZE, 2, c444.HELD_START, delete_latch=True).interval,
+        "Record-edge": c444.observe_echo(c444.HELD_SIZE, 2, c444.HELD_START, delete_record_edge=True).interval,
         "formation": c444.observe_echo(c444.HELD_SIZE, 2, c444.HELD_START, delete_formation=True).interval,
+        "identity": c444.observe_echo(c444.HELD_SIZE, 2, c444.HELD_START, delete_identity=True).interval,
         "predecessor": c444.observe_echo(c444.HELD_SIZE, 2, c444.HELD_START, delete_predecessor=True).interval,
     }
+    oscillator_deleted = c444.observe_echo(
+        c444.HELD_SIZE, 2, c444.HELD_START, delete_oscillator=True
+    ).interval
     wrapped = c444.observe_echo(c444.TRAIN_SIZE, 1, 15)
 
     malformed = 0
@@ -740,18 +750,23 @@ def deletion_domain_controls(controller: MassController, menu: tuple[Sector, ...
         "source, selected transport, response control, echo/latch/formation/predecessor, calibration, and wrap deletions are visible",
         baseline1.fine_cells == 3
         and all(item.receiver == 0 for item in source_deleted)
+        and all(item.receiver == 0 for item in mass_deleted)
         and all(item.receiver == 0 for item in transport_deleted)
         and control1.fine_cells == 4
         and all(item.ratio_to_source_off is None for item in calibration_deleted)
         and all(value is None for value in echo_deletions.values())
+        and oscillator_deleted is not None
+        and oscillator_deleted.fine_cells != 4
         and wrapped.interval is None,
         {
             "baseline_receiver_branch": baseline1,
             "source_deleted": source_deleted,
+            "mass_observable_deleted": mass_deleted,
             "transport_deleted": transport_deleted,
             "response_control_deleted": control_deleted,
             "calibration_deleted": calibration_deleted,
             "echo_and_record_deletions": echo_deletions,
+            "oscillator_deleted_interval": oscillator_deleted,
             "wrap_interval": wrapped.interval,
         },
     )
@@ -794,6 +809,7 @@ def inventory_scope_controls() -> None:
             "Record occurrence/formation and realized branch/history",
             "physical lapse, proper time, universal calibration, continuum/boost theorem",
             "energy/stress source, gravity law and passive trajectory consumer",
+            "primitive nearest-neighbour synthesis of the supplied dense functional controls",
             "frontier broad-gravity inputs L^{-1}=G_0, rho=|psi|^2, S=L(1-phi)",
         ),
     }

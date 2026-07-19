@@ -86,7 +86,8 @@ including:
 - bounded local support in all 24 proper-cubic frames;
 - independent reversible schedules and no preferred cubic frame;
 - source, selected transport, response-control, echo, detector, latch,
-  conditional formation, predecessor, calibration, and wrap deletions;
+  conditional formation, Record edge, identity, predecessor, calibration, and
+  wrap deletions;
 - malformed-code and lawful-domain refusals; and
 - a complete supplied-structure inventory.
 
@@ -95,6 +96,13 @@ endpoints but makes every reported clock-rate/lapse candidate undefined.  The
 Cycle-444 wrap refusal remains in force.  Record formation and occurrence,
 event identities, branch actualization, echo standard, scale conversion,
 source law, response law, and the mass route all remain supplied or open.
+
+As in Cycle 441, the nine-site matrix functions and their mass-controlled
+source exponential are supplied bounded dense controls.  Cycle 445 checks
+their finite physical-code action and the local source-star/receiver/response
+support, but it does not supply a primitive nearest-neighbour synthesis of
+those dense functional controls.  It is therefore an adapter certificate, not
+a new physical-site compiler.
 
 ## Relation to Cycle 442 and broad gravity
 

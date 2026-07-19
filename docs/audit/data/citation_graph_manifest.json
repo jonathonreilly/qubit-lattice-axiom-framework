@@ -1,6 +1,6 @@
 {
- "edge_count": 14746,
- "node_count": 4396,
+ "edge_count": 14750,
+ "node_count": 4397,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6857,6 +6857,10 @@
   "k_dependence_review_safe_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "kcpt_corner_carrier_antilinear_nonhermitian_kreal_readout_classification_bounded_theorem_note_2026-07-18": {
+   "deps_hash": "08a54366d6a4",
+   "out_degree": 4
   },
   "kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_bounded_theorem_note_2026-07-17": {
    "deps_hash": "3492e302d6ba",

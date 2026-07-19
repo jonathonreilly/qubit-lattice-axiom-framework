@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_bulk_block_eigenvalue_stratification_2026_07_19.py
+runner_sha256: 23036f1d29e3dd7ff942bd00d820ab15e7fc936780322e858f2db232de56d232
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 42.80
+status: ok
+----- stdout -----
+[B1.1] PASS - D2 integer, antisymmetric (D2 == -D2.T), entries in {-1,0,1}
+[B1.2] PASS - exact rank(D2) == 56 via sympy (kernel dimension 8)
+[B1.3] PASS - D2 @ V8 == 0 exactly
+[B1.4] PASS - V8.T @ V8 == 64 * I8 exactly
+[B1.5] PASS - Hamming-weight grading of the kernel frame == 1 + 3 + 3 + 1
+[B2.1] PASS - M = D2 @ D2 is symmetric (D2 antisymmetric)
+[B2.2] PASS - carrier identity: M == 2*(T_200 + T_020 + T_002) - 6*I exactly
+[B2.3] PASS - rejectors: the -6 diagonal and the even-shift T_200 are both pinned
+[B2.4] PASS - M commutes with every even translation (the (Z/2)^3 ker-pi carrier)
+[B3.1] PASS - minimal polynomial M(M+4I)(M+8I)(M+12I) == 0 exactly
+[B3.2] PASS - every drop-one product Q_m = prod_{m'!=m}(M - lambda_m' I) is nonzero
+[B3.3] PASS - normalizers N_m = prod(lambda_m - lambda_m') == [384, -128, 128, -384]
+[B3.4] PASS - eigen-projector action: M Q_m == lambda_m Q_m for all m
+[B3.5] PASS - idempotence up to scale: Q_m^2 == N_m Q_m for all m
+[B3.6] PASS - orthogonality: Q_m Q_m' == 0 for m != m'
+[B3.7] PASS - partition of unity: Q_0 - 3Q_1 + 3Q_2 - Q_3 == 384 I (coefficient pinned)
+[B3.8] PASS - each Q_m is real symmetric
+[B3.9] PASS - stratum dims from tr Q_m / N_m == [8, 24, 24, 8] (expected 8,24,24,8)
+[B3.10] PASS - kernel projector matches corner frame: Q_0 == 6 * V8 @ V8.T
+[B3.11] PASS - bulk rank rank(Q_1)+rank(Q_2)+rank(Q_3) == 56 == 24+24+8 == rank D2
+[info] stratum dims d_m = [8, 24, 24, 8]
+[B4.1] PASS - every momentum wave phi_k is an M-eigenvector at lambda = -4 m(k) (re and im parts)
+[B4.2] PASS - wrong-eigenvalue rejector: M phi_(1,0,0) == -4 phi, not 0 and not -8 phi
+[B4.3] PASS - per-stratum momentum counts == [8, 24, 24, 8] (== stratum dims d_m)
+[B4.4] PASS - K: k -> -k (mod 4) preserves every stratum, m(-k) == m(k)
+[B4.5] PASS - K fixes exactly the 8 kernel (m=0) momenta
+[B4.6] PASS - K is fixed-point-free on the 56 bulk momenta (28 conjugate pairs)
+[B5.1] PASS - block resolution: 8 Q_m == N_m * sum_{wt(eps)=m} R8_eps for all m
+[B5.2] PASS - wrong-weight rejector: 8 Q_1 != N_1 * sum_{wt(eps)=2} R8_eps
+[B6.1] PASS - scan keeps 192 D2-commuting members, 64 per class ({'stab': 64, 'U2': 64, 'UR': 64})
+[B6.2] PASS - BFS closure of the 192 has order exactly 768, all distinct
+[B6.3] PASS - every one of the 768 commutes with D2 exactly
+[B6.4] PASS - orthogonality: U U^T == I64 for all 768 (signed permutations)
+[B6.5] PASS - signed-perm representation self-check: conj_sp == dense U M U^T (sampled)
+[B6.6] PASS - every ambient member commutes with M and with every Q_m
+[B6.7] PASS - G_amb conjugation permutes the 8 ker-pi blocks, preserving Hamming weight
+[B6.8] PASS - block orbits are exactly the weight classes, sizes [1, 1, 3, 3] == 1,3,3,1
+[B7.1] PASS - commutant character sums e_m are exact integers (768 N_m^2 divides the sum)
+[B7.2] PASS - per-stratum commutant dims e_m == [2, 4, 4, 2] (computed by character sum)
+[B7.3] PASS - all cross terms h_{m,m'} == 0 (strata share no equivariant maps)
+[B7.4] PASS - the parent's ten on the image block resolves as 10 = 4 + 4 + 2
+[B7.5] PASS - the kernel shell keeps e_0 == 2 (matching span{I, j})
+[B7.6] PASS - reconciliation: sum_m e_m + 2 sum_{m<m'} h == 12 == parent total 12
+[B7.7] PASS - group-is-load-bearing rejector: e_1 over the 8 ker-pi translations == 192 != 4
+[info] commutant dims e_m = [2, 4, 4, 2]
+[info] cross terms h_(m,m') = { (0, 1): 0, (0, 2): 0, (0, 3): 0, (1, 2): 0, (1, 3): 0, (2, 3): 0 }
+[B8.1] PASS - Frobenius-Schur sums nu_m are exact integers (768 N_m divides the sum)
+[B8.2] PASS - Frobenius-Schur indicators nu_m == [0, 2, 0, 0] (computed by character sum)
+[B8.3] PASS - invariant antisymmetric dims a_m = (e_m - nu_m)/2 == [1, 1, 2, 1]
+[B8.4] PASS - invariant symmetric dims s_m = (e_m + nu_m)/2 == [1, 3, 2, 1]
+[B8.5] PASS - consistency: a_m + s_m == e_m, s_m - a_m == nu_m, all nonnegative
+[info] Frobenius-Schur nu_m = [0, 2, 0, 0]
+[info] invariant antisymmetric dims a_m = [1, 1, 2, 1]
+[info] invariant symmetric dims s_m = [1, 3, 2, 1]
+[B9.1] PASS - D2 commutes with every Q_m (it is a polynomial in M = D2^2)
+[B9.2] PASS - D2 Q_0 == 0: the adjacency vanishes on the kernel stratum
+[B9.3] PASS - each D2 Q_m (m >= 1) is a nonzero real antisymmetric operator
+[B9.4] PASS - each D2 Q_m (m >= 1) commutes with all 768 ambient members
+[B9.5] PASS - square identity: (D2 Q_m)^2 == -4 m N_m Q_m for all m
+[B9.6] PASS - shell 1 is adjacency-pinned: a_1 == 1 and D2 Q_1 is a nonzero invariant axis
+[B9.7] PASS - rejector: the perturbed non-invariant antisymmetric Zpert fails span(D2 Q_1)
+[B9.8] PASS - group-average of Zpert lands back in span(D2 Q_1) (invariant axis restored)
+[B9.9] PASS - shell 3 is adjacency-pinned: a_3 == 1 and D2 Q_3 is a nonzero invariant axis
+[B9.10] PASS - shell 2 not adjacency-rigid: a_2 == 2, a second invariant antisym axis off span(D2 Q_2)
+[B9.11] PASS - complex-structure sign: (D2 Q_m)^2 == -4 m N_m^2 P_m is a negative multiple of the idempotent P_m = Q_m/N_m on every bulk shell, though raw -4 m N_m = (0,512,-1024,4608) is not uniformly negative
+[B10.1] PASS - v = Q_1[:,0] is a nonzero stratum-1 vector: M v == -4 v
+[B10.2] PASS - doublet: D2 A == -2 B and D2 B == 2 A (so J_1 = D2/2 gives J_1 w == i w)
+[B10.3] PASS - doublet norm |w|^2 == A.A + B.B == 8 |v|^2 (|v|^2 = 6144, |w|^2 = 49152)
+[B10.4] PASS - K-odd separator i(D2 Q_1): opposite nonzero values (12582912, -12582912)
+[B10.5] PASS - projector pair one-zero with K swap: 2Q_1-i(D2Q_1)->(-25165824,0), 2Q_1+i(D2Q_1)->(0,-25165824)
+[B10.6] PASS - K-real symmetric face Q_1: SAME value on the conjugate pair (-6291456, -6291456)
+[info] m=1 value tables: |v|^2=6144, |w|^2=49152, i(D2Q1) on (w, conj w)=(12582912, -12582912), projector 2Q1-i(D2Q1) on (w, conj w)=(-25165824, 0), Q1 face=(-6291456, -6291456)
+[B11.1] PASS - forbidden substrings absent from the note (none)
+[B11.2] PASS - required verbatim strings present (all present)
+[B11.3] PASS - all five dependency links present as markdown links and the deps exist
+[B11.4] PASS - note carries the bounded_theorem front matter, claim boundary, and Boundary section
+TOTAL: PASS=69 FAIL=0
+
+----- stderr -----
+

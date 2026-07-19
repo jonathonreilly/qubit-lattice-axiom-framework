@@ -160,6 +160,18 @@ class CampaignContractTest(unittest.TestCase):
         self.assertEqual(rc, 2)
         run_panel.assert_not_called()
 
+    def test_verdict_summary_never_rematerializes_ledger_cache(self):
+        with mock.patch.object(
+            audit_loop, "audit_status_snapshot", return_value={"row": "audited_clean"}
+        ), mock.patch.object(batch, "load_rows") as load_rows:
+            with mock.patch.dict(
+                audit_loop.PROGRESS,
+                {"baseline_status": {"row": "audit_in_progress"}},
+            ):
+                counts = audit_loop.landed_verdict_counts()
+        self.assertEqual(counts["audited_clean"], 1)
+        load_rows.assert_not_called()
+
 
 if __name__ == "__main__":
     unittest.main()

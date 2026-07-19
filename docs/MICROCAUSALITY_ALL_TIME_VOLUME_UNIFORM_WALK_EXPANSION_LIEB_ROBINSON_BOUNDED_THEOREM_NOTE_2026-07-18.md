@@ -307,14 +307,14 @@ listed in N2.
 
 **N1 — alternative attacks and routes.**
 
-| Route | Marker | Attempt and retained-authority result |
+| Route | Marker | Current-cycle result and source status |
 |---|---|---|
-| Invoke a generic interaction-path Lieb-Robinson theorem and treat G6 as new generic closure | ATTEMPTED | The current [sequence-count sibling](MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md) records that stronger generic theorems already exist. This defeats novelty, not the narrower self-contained specialization. |
-| Derive the supplied Hamiltonian or physical clock from Admissibility | RULED OUT BY PRIOR | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) explicitly supplies neither a Hamiltonian/transfer operator nor a time metric or physical persistence dynamics. |
-| Use the earlier finite-range bridge as automatic placement of the exact reconstructed many-body `H` | RULED OUT BY PRIOR | [`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md) proves a finite-range lemma but records failure of the strict finite-range exact-log reading and makes quasilocal reuse conditional. |
-| Use the spatial-cluster path theorem to bypass transfer-H construction/control | RULED OUT BY PRIOR | [`SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md`](SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md) assumes a local Hamiltonian satisfying its range, norm, and degree conditions; it does not construct the reconstructed many-body transfer Hamiltonian. |
-| Promote the free-bilinear quasilocal closure to the interacting many-body sector | RULED OUT BY PRIOR | [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md) explicitly restricts its exact-log kernel and quasilocal LR composition to the free bilinear sector. |
-| Read the all-time supplied-`H` bound as already `U`-integrated or sharp | ATTEMPTED | G1-G7 contain neither a `U` integral nor an optimization theorem. [`GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md`](GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md) names the `U`-integrated, many-body, and sharp-rate tasks separately. |
+| Invoke a generic interaction-path Lieb-Robinson theorem and treat G6 as new generic closure | ATTEMPTED | Direct comparison in this cycle shows that such a theorem would defeat novelty, not the narrower self-contained specialization proved in G1-G7. The [sequence-count sibling](MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md) is contextual corroboration only: its tracked status is `bounded_theorem / unaudited / unaudited`, so it is not used as retained authority. |
+| Derive the supplied Hamiltonian or physical clock from Admissibility | RULED OUT BY PRIOR | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) explicitly supplies neither a Hamiltonian/transfer operator nor a time metric or physical persistence dynamics. Its tracked status is `meta / unaudited / meta`, and it is the registered axiom-source authority for this limited negative boundary. |
+| Use the earlier finite-range bridge as automatic placement of the exact reconstructed many-body `H` | ATTEMPTED | Source-scope inspection in this cycle finds that [`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md) makes quasilocal reuse conditional rather than placing this exact many-body `H`. Its tracked status is `bounded_theorem / unaudited / unaudited`; the inspection tests this route but does not promote the source to retained authority. |
+| Use the spatial-cluster path theorem to bypass transfer-H construction/control | ATTEMPTED | Source-scope inspection in this cycle finds that [`SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md`](SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md) assumes a local Hamiltonian satisfying its range, norm, and degree conditions; it does not construct the reconstructed many-body transfer Hamiltonian. Its tracked status is `bounded_theorem / unaudited / unaudited`, so only its stated hypothesis mismatch is used here. |
+| Promote the free-bilinear quasilocal closure to the interacting many-body sector | ATTEMPTED | Source-scope inspection in this cycle finds that [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md) restricts its exact-log kernel and quasilocal LR composition to the free bilinear sector. Its tracked status is `bounded_theorem / unaudited / unaudited`; the sector mismatch is tested without treating that source as retained authority. |
+| Read the all-time supplied-`H` bound as already `U`-integrated or sharp | ATTEMPTED | Direct inspection of G1-G7 in this cycle finds neither a `U` integral nor an optimization theorem. [`GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md`](GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md) is non-authoritative context with tracked status `bounded_theorem / unaudited / unaudited`; it is not needed for the self-contained result. |
 
 **N2 — premise and residual independence.** The theorem premises are `P1`,
 finite tensor-product algebra with nonempty disjoint supports; `P2`, a supplied
@@ -401,20 +401,34 @@ history contain no labeling-only reframe that constructs a physical generator;
 therefore this residual is not misclassified as “new axiom required.” No new
 axiom is requested.
 
-Prior partial closures are material and are retained explicitly:
+Prior partial closures are material and are listed explicitly without treating
+their source-authored statements as retained authority:
 
+- [`MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md`](MICROCAUSALITY_VOLUME_UNIFORM_SEQUENCE_COUNT_COEFFICIENT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-07-18.md)
+  — status `bounded_theorem / unaudited / unaudited`; its stated generic
+  path-counting comparison would close only the generic-mechanism part, not
+  transfer-H construction or the physical reuse residuals.
 - [`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
-  proves a finite-range LR bridge and reframes exact-log reuse as quasilocal.
+  — status `bounded_theorem / unaudited / unaudited`; its stated finite-range
+  bridge and quasilocal reframe would partially narrow `R1-R2` if independently
+  validated.
 - [`SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md`](SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md)
-  already carries generic interaction-graph path counting.
+  — status `bounded_theorem / unaudited / unaudited`; its stated generic
+  interaction-graph path counting would close only the generic-mechanism part,
+  not transfer-H construction.
 - [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md)
-  closes quasilocal LR composition in the free bilinear exact-log sector.
+  — status `bounded_theorem / unaudited / unaudited`; its stated free-bilinear
+  composition would close quasilocal LR composition only in that restricted
+  sector.
 - [`GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md`](GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md)
-  supplies fixed-background single-particle quasilocality.
+  — status `bounded_theorem / unaudited / unaudited`; its stated
+  fixed-background single-particle quasilocality would close only that carrier.
 
-These surfaces retire any generic-path wall and narrow `R1-R2`; none silently
-upgrades its restricted carrier to the reconstructed interacting many-body
-Hamiltonian.
+These unaudited surfaces identify partial-closure paths but do not supply
+retained closure. The present G1-G7 proof independently removes generic
+nearest-neighbor path counting from this note's wall set; none of the cited
+restricted carriers is silently upgraded to the reconstructed interacting
+many-body Hamiltonian.
 
 **N7 — hostile steelman.** A hostile reviewer can correctly argue that the
 generic Duhamel/interaction-path theorem already exists in repository source,

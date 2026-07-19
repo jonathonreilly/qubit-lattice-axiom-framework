@@ -1,4 +1,4 @@
-# TOE framework campaign handoff — 2026-07-18, Cycle 411, refreshed through Cycle 416
+# TOE framework campaign handoff — 2026-07-18, Cycle 411, refreshed through Cycle 417
 
 ## OVERALL GOAL — READ THIS FIRST
 
@@ -21,23 +21,23 @@ launched the physical-M2 compiler campaign.
 
 ## Exact handoff boundary
 
-Observed after the Cycle-416 science package was pushed:
+Observed after the Cycle-417 science package was pushed:
 
 | item | exact boundary |
 |---|---|
 | repository | `Physics-baremetal-probes` |
 | active branch | `codex/toe-cross-lane-campaign-20260718` |
-| last retained science head before this refreshed packet | `c462be7c24dee549e498b6b82914c64b233a1af6` |
-| observed matching remote science head | `c462be7c24dee549e498b6b82914c64b233a1af6` |
+| last retained science head before this refreshed packet | `e1bed57e401b161e87fe8776676d4fc6146083b4` |
+| observed matching remote science head | `e1bed57e401b161e87fe8776676d4fc6146083b4` |
 | only active parking surface | draft PR #5523, `Science: exact Record formation candidates and cross-lane bridges` |
 | PR base / state | `main` / open draft |
 | PR URL | <https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5523> |
 | local `main` | `fdb599edf8aaab375a719cd6d726e7120b5e9c57` |
 | local `origin/main` tracking ref | `8b164506f490a0a266b9470c9aa4b5331b3b49ca` |
 | live remote `main` from `ls-remote` | `8b164506f490a0a266b9470c9aa4b5331b3b49ca` |
-| observed tracking `origin/main...science head` | 26 commits unique to tracking `origin/main`; 26 unique to the science head |
+| observed tracking `origin/main...science head` | 26 commits unique to tracking `origin/main`; 28 unique to the science head |
 | live remote divergence | same as the tracking-ref divergence above at this observation |
-| observed local `main...science head` | 0 commits unique to local `main`; 281 unique to the science head |
+| observed local `main...science head` | 0 commits unique to local `main`; 283 unique to the science head |
 | authority | none |
 | audit | unset |
 | constitutional effect | none |
@@ -96,6 +96,7 @@ Read these completely, in order:
 26. [Cycle 414: candidate-append renewal/concurrency adversary](./PHYSICAL_CANDIDATE_APPEND_RENEWAL_CONCURRENCY_ADVERSARY_CYCLE414_NOTE_2026-07-18.md).
 27. [Cycle 415: local request-equality and finite-pool exchange](./PHYSICAL_LOCAL_ADDRESS_POOL_ALLOCATOR_CYCLE415_NOTE_2026-07-18.md).
 28. [Cycle 416: strict-response source-balance receiver seam](./PHYSICAL_STRICT_RESPONSE_SOURCE_CLOCK_METRIC_RECEIVER_CYCLE416_NOTE_2026-07-18.md).
+29. [Cycle 417: coherent physical receiver-source ports](./PHYSICAL_COHERENT_RECEIVER_SOURCE_INJECTION_CYCLE417_NOTE_2026-07-18.md).
 
 Read the direct child notes and runners only when auditing exact construction
 details. Do not let the one-dimensional bound-state benchmark become the
@@ -221,7 +222,7 @@ physical-order, full-number, overlap, recurrence, and renewal imports. There
 is no common failed clause across all constructive routes and therefore no
 compiler-derived axiom pressure.
 
-## Strongest constructive results through Cycle 416
+## Strongest constructive results through Cycle 417
 
 ### Operational quantum and locality
 
@@ -353,6 +354,12 @@ not probability, Born weight, frequency, occurrence, or actuality.
    source map, preserving the unit/coefficient distinction. The far-side
    receivers are not physical-M2 compilers and no source, energy, clock,
    metric, or gravity law is selected.
+7. Cycle 417 replaces expectation-controlled port preparation with two fixed
+   local CNOTs from the mediator M2 into blank retarded/static source-port M2.
+   All eight route/L/origin cases preserve the mediator and joint port weights
+   with exact cleanup. These are correlated control labels, not cloned states,
+   conserved excitations, independent confirmations, field receivers, or
+   selected source quanta; downstream consumption remains open.
 
 The displayed weights are coherent state-sector squared norms, not Born
 probabilities. A contact-sensitive response is not physical energy, stress,
@@ -382,6 +389,7 @@ rate, lapse, or proper time. Circuit order and compiler layers are not time.
 | 414 | `14 PASS / 0 FAIL`; 388-M2 bounded adversary; 549-layer two-target/collision circuit; 824-layer exchange/repeat route; exact inverse on distinct, collision, refusal, and held L5/L6 routes; all 24 frames | supplied alias, allocation, invocation, target blocks, and one blank reserve; no actual Record, autonomous address equality, blank genesis, renewal law, conservation, or recurrence theorem |
 | 415 | `10 PASS / 0 FAIL`; 452 M2; 43-layer/53-gate equality circuit; 561-layer/1,260-gate exchange schedule; all 36 comparator pairs; one distinct and one equal-label end-to-end route plus 24 frame orbits; exact inverse and held L6 | supplied request-label genesis/binding, distinct target blocks, two blank slots, and fixed schedule; no shared-register race, search, replenishment, actual Record, or renewal law |
 | 416 | `9 PASS / 0 FAIL`; one strict response plus two new M2; exact conserved rotation/inverse; held unit transfer `7.501679264744504e-07`, coefficient-two `3.7828627925537926e-06`; receiver residuals at most `9.301122374345847e-21` | supplied dense gate, preparation/invocation, expectation-to-source map, scalar receiver laws, and separate candidate diamond; far side is not a physical-M2 compiler; no selected source/clock/metric/gravity law |
+| 417 | `6 PASS / 0 FAIL`; two new receiver-port M2; two fixed local CNOTs; exact inverse; all eight L5/held-L6 route/origin cases and all 24 declared scalar frames pass | blank ports, meanings, and downstream protocol supplied; correlated control fanout only, not conserved transfer or a physical field receiver; consumption/cleanup, profiles, signs, propagation, recurrence, and source selection open |
 
 Latest runner SHA-256 checks at handoff drafting:
 
@@ -396,18 +404,19 @@ Cycle 413  1fb8edb35daa39e12d8752649bf6ee1c3c4474854705f48210036ec11b0ca293
 Cycle 414  0c1630bd089c9c2c931bf9e75d9306f83b2fff807856eb3f279a2908b5cedf96
 Cycle 415  0a427b88200320fce6cb5ac75dbdc91a010ff1a2541cc60090124ffba52f082a
 Cycle 416  ba99d29160f12d1133d9c5d8ec5a04f853ba20fb25f67d5f1b5f1473773f08c4
+Cycle 417  a359d119d97d74b6ff6d7eff495fd48d040ba41645ed90c472ffcd1fe05d5732
 ```
 
 Pass counts are executable contract checks, not counts of independent
 physical predictions. Held-size tests are finite extrapolation controls, not
 unbounded theorems.
 
-## Twelve-field law-completeness contract through Cycle 416
+## Twelve-field law-completeness contract through Cycle 417
 
 | field | strongest retained state | explicit remaining import |
 |---|---|---|
 | `domain` | finite physical-M2 code blocks; declared fixed-seam, two-cell, maximal-star, menu, response, candidate-payload/edge, six-row selector grid, and two-target/reuse grammars; trained and held domains explicit | homogeneous unbounded/full-lattice domain and recurrent-volume law |
-| `state` | physical matter/source/controller/table/environment/Record, oriented-tuple, preallocated candidate, request-comparator, two blank-pool, and source/mediator registers are explicit | autonomous state preparation, lawful tuple/reference/address/blank/source genesis, reusable reservoirs, and full-volume state law |
+| `state` | physical matter/source/controller/table/environment/Record, oriented-tuple, candidate/request/pool, balanced source/mediator, and two receiver-port registers are explicit | autonomous state preparation, lawful tuple/reference/address/blank/source/port genesis, reusable reservoirs, and full-volume state law |
 | `context` | all 24 proper-cubic spatial frames; fixed programs/banks; independent occupation/status grid; contact and Record selector candidates; held source-response fixtures | endogenous apparatus, program, selector, reference, address relation, and context selection |
 | `atomic_law` | fixed reversible carrier/menu/source/selector/candidate-label compilers and three conditional Record-formation hypotheses | selected universal physical update, formation/commit law, and law-choice discriminator |
 | `continuation` | exact two-use compositions; fixed counter continuation; bounded formation chains; fixed source depth; reversible candidate payload/edge proposal; one exact blank exchange and repeat | indefinite recurrence, actual append continuation, renewable blanks, garbage handling, and collision-safe volume evolution |
@@ -417,7 +426,7 @@ unbounded theorems.
 | `actuality` | coherent alternatives, conditional candidate outputs, and counterfactual graph labels only | actual-member and realized-history selection |
 | `statistics` | corrected rank-1,158 finite composed surface; physical 3,347-class proper-cubic tuple action; a 19-dimensional B face; physically distinct B0/B1 points; two selector candidates mapped on a frozen six-row grid | selected/calibrated grade, probability meaning, sampler, frequency theorem, and Born law; physical tuple/label genesis and a universal or interval-certified equality policy |
 | `resource` | exact M2/gate/support/capacity ledgers plus one exact source-plus-mediator number balance | physical energy/resource identity, universal conservation/renewal theorem, and thermodynamic meaning |
-| `source/response` | strict response reaches a balanced three-M2 source/mediator register; each actual mediator expectation reaches two scalar numerical receivers through a supplied map | coherent physical-M2 receiver coupling, derived physical source/energy/stress identity, calibration, recoil, universal coupling, and reciprocal metric/clock/gravity response |
+| `source/response` | strict response reaches a balanced source/mediator register and coherently fans the mediator control into two physical source ports; numerical receivers remain available through the supplied expectation map | reversible port consumption/cleanup, physical field encoding/profile/sign/propagation, derived source/energy/stress identity, calibration, recoil, universal coupling, and reciprocal metric/clock/gravity response |
 
 No field is silently completed by renaming an implementation label. A wrapped
 phase is not physical energy; a generator element is not a rate; pointer
@@ -425,7 +434,7 @@ copying is not a Record; a coherent candidate payload is not an actual Record;
 dependency depth is not time; and a coarse CAR cell is not itself a
 physical-site compiler.
 
-## Six-wall dependency ledger through Cycle 416
+## Six-wall dependency ledger through Cycle 417
 
 | wall | movement through this campaign | exact live residual |
 |---|---|---|
@@ -433,8 +442,8 @@ physical-site compiler.
 | `C_num` | prior rank/codec/selector surface plus exact source-plus-mediator number balance | selected/calibrated grade; physical effect-to-tuple genesis; universal equality; independent selector observable; physical energy/source meaning; sampler, frequency, Born meaning, and actuality |
 | `C_wrap` | source response can coherently label a counterfactual dependency extension from depth four to five | no actual edge or depth-five member; no event equivalence, recurrence, interval, unit, synchronization, rate, lapse, or proper time |
 | `C_int` | actual contact remains load-bearing; Cycle 294's Route-A emission factor is realized in the balanced gate | interaction/law selection, occurrence, recoil/contact work, protection/stability, full mediator history, recurrence, and interaction-to-rate/source interpretation |
-| `C_local` | prior bounded compilers plus a local request-equality circuit, fixed two-slot exchange schedule, and a bounded three-M2 source/mediator gate | full-number/adjacent-star completion; primitive synthesis; autonomous request/reference/input/blank/source genesis; actual arbitration, search, commit, invocation, recurrence, receiver physicalization, and renewal |
-| `C_source` | each strict route-dependent response reaches an exact number-balanced register and both scalar numerical receivers through a supplied expectation-to-source seam | coherent physical-M2 receiver coupling; physical energy/stress/source identity, empirical units/calibration, recoil, recurrence, universal coupling, and reciprocal metric/clock/nonlinear gravity law |
+| `C_local` | prior bounded compilers plus local request equality, fixed two-slot exchange, a balanced source/mediator gate, and two local coherent source-port controls | full-number/adjacent-star completion; primitive synthesis; autonomous request/reference/input/blank/source/port genesis; arbitration, search, recurrence, downstream receiver consumption, and renewal |
+| `C_source` | each route-dependent strict response reaches an exact balanced register, coherent retarded/static control ports, and separately the scalar numerical receivers | physical field registers/profile/sign/propagation, reversible port consumption/cleanup, source identity/calibration, recoil, recurrence, universal coupling, and reciprocal metric/clock/nonlinear gravity law |
 
 The walls are dependency coordinates, not asserted independent axioms. Closing
 one does not presently prove another closed: numerical-law selection does not
@@ -448,12 +457,12 @@ These are integrated / strict physical-substrate floor / conditional bridge
 coordinates. They are planning aids, not probabilities that the framework is
 true, not empirical confidence intervals, and not audit verdicts.
 
-| TOE lane | through Cycle 414 | through Cycle 416 | maturity `0--5` | reason for movement |
+| TOE lane | through Cycle 416 | through Cycle 417 | maturity `0--5` | reason for movement |
 |---|---:|---:|---:|---|
-| operational quantum / Records | `87/45/99` | `88/46/99` | `4.7` | physical local request equality and a fixed two-slot exchange schedule advance bounded reference/local infrastructure; actual Record formation, shared-target arbitration, blank replenishment, and renewal remain absent |
+| operational quantum / Records | `88/46/99` | `88/46/99` | `4.7` | unchanged: the new source ports are reversible correlated controls, not Records, permanence, or actual history |
 | causal time | `57/33/96` | `57/33/96` | `3.7` | unchanged: the actual graph remains depth four, all 24 frames are spatial, and no interval/rate/proper-time law moves the strict floor |
 | inertia / matter | `78/38/99` | `78/38/99` | `4.5` | mass, Q, number, vector, contact, seam, and held controls survive; no new matter-law or spectrum selection occurs |
-| gravity / source / resource | `54/25/87` | `55/26/88` | `3.4` | the route-dependent strict response now reaches an exact balanced source/mediator gate and both scalar numerical receivers; the expectation seam, source identity/calibration, coherent physical receivers, recoil, and metric response remain open |
+| gravity / source / resource | `55/26/88` | `56/27/89` | `3.4` | two fixed local M2 gates replace expectation feedback for physical source-port preparation; the ports remain control labels, and consumption, field dynamics, source identity, recoil, and metric response remain open |
 | Born / probability / realized history | `71/40/99` | `71/40/99` | `4.3` | unchanged: the proper-cubic tuple action and frozen selector grid remain exact, but no grade, probability law, sampler, frequency theorem, or actual member is selected |
 
 Do not convert these planning coordinates into scientific completion claims.
@@ -568,13 +577,15 @@ reuse adversary. Cycle 415 then replaced the supplied equality bit with a
 physical local request-label comparator and two-use exchange schedule. Cycle
 416 joined the strict response to an exact balanced source/mediator gate and
 route-dependent scalar receivers, while exposing the remaining coherent
-physical receiver seam. These cross-cycle retirements show why current
-unfinished routes cannot be constitutional evidence.
+physical receiver seam. Cycle 417 then installed two coherent local source-
+port controls without expectation feedback, moving the boundary to reversible
+port consumption and physical field dynamics. These cross-cycle retirements
+show why current unfinished routes cannot be constitutional evidence.
 
 **Disposition:** no shared obstruction, no minimum-content theorem, and no
 axiom pressure. Do not draft axiom language.
 
-## Independent-observable reconnaissance through Cycle 416
+## Independent-observable reconnaissance through Cycle 417
 
 A scoped repository-wide audit found no retained surface that simultaneously
 has: a common physical code with the Cycle-413 inputs; independence from
@@ -590,7 +601,9 @@ surface, but content binding is uncompiled. The diamond/NV `Y`, phase, and
 phase-ramp proposal is the strongest empirical-facing surface, but it is not
 yet coupled to either selector or formation law. Counters, depths, corpus
 weights, capacity counts, and candidate truth tables report the hypothesis's
-own computation rather than independent truth.
+own computation rather than independent truth. Cycle 417's two correlated
+source ports copy one mediator control cause and therefore add no independent
+confirmation or external observation.
 
 Full N1--N8 keeps the conclusion scoped: external endpoint binding, symmetric
 formation/resource adapters, a real experimental corpus, physical receiver
@@ -608,10 +621,10 @@ experimental corpus is supplied.
 
 ### Decisive question
 
-Can the strict response's mediator excitation drive physical-M2 retarded and
-static receiver source terms coherently and locally, without a host
-expectation readout, while one common update balances matter, mediator,
-contact work, recoil, and a renewable source register across held sizes?
+Can the Cycle-417 source ports be consumed and coherently cleaned by physical-
+M2 retarded/static field updates, while one common recurrent update balances
+matter, mediator, contact work, recoil, and a carried source register across
+held sizes without expectation feedback?
 
 ### Required routes
 
@@ -623,9 +636,10 @@ contact work, recoil, and a renewable source register across held sizes?
 3. **Two-slice/off-diagonal route.** Construct a physical even-CAR action
    current that carries contact work and distinguishes emission, absorption,
    and recoil.
-4. **Physical receiver route.** Couple the mediator register coherently into
-   physical-M2 implementations of the Cycle-213/216 source terms; forbid a
-   global expectation readout or host scalar injection.
+4. **Physical receiver route.** Reversibly consume the Cycle-417 source ports
+   into physical-M2 point-profile/sign/field registers, execute the local
+   retarded/static dynamics, and coherently uncompute or restore the ports;
+   forbid global expectation readout or host scalar injection.
 5. **Clock/metric and law-selection controls.** Keep Cycle-170/46 labels
    separate until actual Records, density calibration, and source identity are
    derived. If an external endpoint/experimental corpus appears, freeze it

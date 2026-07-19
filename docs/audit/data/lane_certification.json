@@ -33,7 +33,7 @@
         },
         {
           "claim_id": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
@@ -2867,6 +2867,6 @@
       "uncertified_count": 655
     }
   ],
-  "repo_head": "2286956a6c805f1ccfc4ff7730d50cb3caa0a761",
+  "repo_head": "a0f17ae865158aa0e89900da3d098b83067b95ca",
   "schema": "lane_certification_v2"
 }

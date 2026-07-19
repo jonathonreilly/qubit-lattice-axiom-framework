@@ -108,16 +108,9 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Live conditional/failed rows that would park | 0 |
 | Live rows fail-open (legacy/unversioned snapshot) | 20 |
 | Lane rows already in actual ready top-10 | 2 |
-| Lane rows added since prior pass | 2 |
-| Lane rows removed since prior pass | 3 |
+| Lane rows added since prior pass | 0 |
+| Lane rows removed since prior pass | 0 |
 | Non-lane rows deferred by simulated interleave | 113 |
-
-Named lane membership churn since the prior pass:
-- added: `gauge_vacuum_plaquette_reduction_existence_theorem_note`
-- added: `koide_q_readout_factorization_theorem_2026-04-22`
-- removed: `cpt_exact_note`
-- removed: `plaquette_self_consistency_note`
-- removed: `unit_singlet_overlap_narrow_theorem_note_2026-05-02`
 
 Admitted ids currently absent from lane candidates:
 - `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06`

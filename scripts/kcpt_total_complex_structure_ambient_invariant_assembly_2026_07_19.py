@@ -2,10 +2,12 @@
 """KCPT total complex structure: ambient-invariant kernel-plus-bulk assembly.
 
 Class-A finite check on the fixed 4^3 staggered surface. The staggered adjacency
-D2, the corner-wave kernel frame V8, the kernel monomial J64, the bulk operator
-M = D2 @ D2 with its drop-one projectors Q_m, and the ambient D2-commuting dressed
-closure G_amb of order 768 are all rebuilt from the site construction (machinery
-copied from the landed bulk-stratification runner) -- never hardcoded.
+D2, the corner-wave kernel frame V8, the bulk operator M = D2 @ D2 with its
+drop-one projectors Q_m, and the ambient D2-commuting dressed closure G_amb of
+order 768 are rebuilt from the site construction (machinery copied from the
+landed bulk-stratification runner). The kernel monomial J64 is reconstructed from
+the explicit subset rule in the linked kernel note and its required properties are
+checked here; imported commutant-dimension facts are source-pinned, not rederived.
 
 The kernel-supported complex structure J_ker = V8 @ J64 @ V8.T / 64**2 and the
 summed bulk complex structure J_bulk = sum_{m=1,2,3} D2 @ P_m / (2 sqrt m) are
@@ -447,8 +449,11 @@ for name, base in BASES.items():
     commuting[name] = lst
 amb_scan = [U for n in BASES for U in commuting[n]]
 Gamb = closure_amb(amb_scan)
-gate("B6.1", len(Gamb) == 768 and len(set(U.tobytes() for U in Gamb)) == 768,
-     "regenerated ambient group |G_amb| == 768, all distinct")
+gate("B6.1", [len(commuting[name]) for name in BASES] == [64, 64, 64]
+     and len(amb_scan) == 192
+     and len(Gamb) == 768 and len(set(U.tobytes() for U in Gamb)) == 768,
+     "scan has 64 commuting members per base, 192 total; regenerated ambient "
+     "group |G_amb| == 768, all distinct")
 commute_Jker = all(eqm(U @ Jker_int, Jker_int @ U) for U in Gamb)
 gate("B6.2", commute_Jker,
      "U @ J_ker_int == J_ker_int @ U for all 768 (integer lift, exact)")
@@ -487,7 +492,7 @@ gate("B7.4", all(riszero(rmm(Pker, Bm[m])) for m in (1, 2, 3)),
      "P_ker @ B_m == 0 for m=1,2,3")
 
 # ============================================================================
-# B8 - global FLAG (integer dims; flagged float for eigvecs)
+# B8 - global entrywise-conjugation pairing (integer dims; flagged float for eigvecs)
 # ============================================================================
 constituents_real = (np.issubdtype(Jker_int.dtype, np.integer)
                      and all(np.issubdtype(A[m].dtype, np.integer) for m in (1, 2, 3))
@@ -511,7 +516,7 @@ gate("B8.4", n_plus == 32 and n_minus == 32 and resid_conj < 1e-8,
      "[FLOAT SANITY - non-load-bearing] eig(J_full): 32 at +i, 32 at -i, conj(v_+) in the -i eigenspace")
 
 # ============================================================================
-# B9 - boundary: the second binary (rational + integer)
+# B9 - boundary: independent bulk-shell sign family (rational + integer)
 # ============================================================================
 # J_alt = J_ker - J_bulk.  Its square uses J_ker - B_m pieces; the middle terms
 # still vanish (facts 3,4) and each diagonal (-B_m)@(-B_m) == B_m@B_m, so the

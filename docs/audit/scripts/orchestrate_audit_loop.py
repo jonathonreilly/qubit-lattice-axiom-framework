@@ -21,8 +21,10 @@ import subprocess
 import sys
 import threading
 import time
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import TextIO
 
 
 SCRIPTS = Path(__file__).resolve().parent
@@ -44,8 +46,14 @@ PROGRESS = {
     "phase": "startup",
     "pass": 0,
     "lane": None,
+    "attempts": 0,
+    "failures": [],
+    "panel_state": "not_started",
+    "canary_state": "not_started",
+    "baseline_status": {},
 }
 _STOP_HEARTBEAT = threading.Event()
+_DRAIN_LOCK_HANDLE: TextIO | None = None
 
 
 def emit(message: str) -> None:
@@ -53,15 +61,77 @@ def emit(message: str) -> None:
     print(f"[{now}] {message}", flush=True)
 
 
+def ready_row_count() -> int | None:
+    try:
+        payload = json.loads(QUEUE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    return sum(1 for row in payload.get("queue", []) if row.get("ready"))
+
+
+def remaining_blocker_count() -> int | None:
+    try:
+        payload = json.loads(CERTIFICATION.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    lanes = payload.get("lanes", payload) if isinstance(payload, dict) else payload
+    if isinstance(lanes, dict):
+        rows = lanes.values()
+    elif isinstance(lanes, list):
+        rows = lanes
+    else:
+        return None
+    return sum(
+        len(row.get("blocking", []) or [])
+        for row in rows
+        if isinstance(row, dict)
+    )
+
+
+def landed_verdict_counts() -> Counter:
+    baseline = PROGRESS.get("baseline_status") or {}
+    if not baseline:
+        return Counter()
+    try:
+        rows = batch.load_rows()
+    except (OSError, ValueError, json.JSONDecodeError):
+        return Counter()
+    return Counter(
+        str(row.get("audit_status"))
+        for cid, row in rows.items()
+        if row.get("audit_status") != baseline.get(cid)
+        and str(row.get("audit_status", "")).startswith("audited_")
+    )
+
+
+def summary_line(final: bool = False) -> str:
+    elapsed = int(time.monotonic() - PROGRESS["started"])
+    verdicts = landed_verdict_counts()
+    verdict_text = ",".join(
+        f"{name}:{count}" for name, count in verdicts.most_common()
+    ) or "none"
+    failures = Counter(PROGRESS.get("failures") or [])
+    failure_text = ",".join(
+        f"{reason}:{count}" for reason, count in failures.most_common(3)
+    ) or "none"
+    ready = ready_row_count()
+    blockers = remaining_blocker_count()
+    return (
+        f"== audit-loop {'final ' if final else ''}summary "
+        f"elapsed={elapsed // 3600}h{(elapsed % 3600) // 60:02d}m "
+        f"phase={PROGRESS['phase']} pass={PROGRESS['pass']} "
+        f"lane={PROGRESS['lane'] or '-'} attempts={PROGRESS['attempts']} "
+        f"failures={sum(failures.values())} top_failure_reasons={failure_text} "
+        f"verdicts_landed={verdict_text} panel_reseat={PROGRESS['panel_state']} "
+        f"canary={PROGRESS['canary_state']} "
+        f"ready_rows={ready if ready is not None else 'unknown'} "
+        f"remaining_lane_blockers={blockers if blockers is not None else 'unknown'}"
+    )
+
+
 def heartbeat() -> None:
     while not _STOP_HEARTBEAT.wait(15 * 60):
-        elapsed = int(time.monotonic() - PROGRESS["started"])
-        emit(
-            "== audit-loop summary "
-            f"elapsed={elapsed // 3600}h{(elapsed % 3600) // 60:02d}m "
-            f"phase={PROGRESS['phase']} pass={PROGRESS['pass']} "
-            f"lane={PROGRESS['lane'] or '-'}"
-        )
+        emit(summary_line())
 
 
 def git_head() -> str:
@@ -77,8 +147,32 @@ def git_head() -> str:
 
 def run_command(label: str, command: list[str], env: dict[str, str] | None = None) -> int:
     PROGRESS["phase"] = label
+    PROGRESS["attempts"] += 1
+    if label.startswith("panel-"):
+        PROGRESS["panel_state"] = f"running:{label}"
+    if label.startswith("forensic-canary-"):
+        PROGRESS["canary_state"] = f"running:{label}"
     emit(f"START {label}: {' '.join(command)}")
-    proc = subprocess.run(command, cwd=REPO_ROOT, env=env)
+    child_env = dict(os.environ) if env is None else dict(env)
+    pass_fds: tuple[int, ...] = ()
+    if _DRAIN_LOCK_HANDLE is not None:
+        lock_fd = _DRAIN_LOCK_HANDLE.fileno()
+        child_env[batch.INHERITED_DRAIN_LOCK_FD_ENV] = str(lock_fd)
+        pass_fds = (lock_fd,)
+    proc = subprocess.run(
+        command,
+        cwd=REPO_ROOT,
+        env=child_env,
+        pass_fds=pass_fds,
+    )
+    if label.startswith("panel-"):
+        state = "complete" if proc.returncode == 0 else f"failed_exit_{proc.returncode}"
+        PROGRESS["panel_state"] = f"{state}:{label}"
+    if label.startswith("forensic-canary-"):
+        state = "complete" if proc.returncode == 0 else f"failed_exit_{proc.returncode}"
+        PROGRESS["canary_state"] = f"{state}:{label}"
+    if proc.returncode != 0:
+        PROGRESS["failures"].append(f"{label}:exit={proc.returncode}")
     emit(f"END {label}: exit={proc.returncode} head={git_head()}")
     return proc.returncode
 
@@ -98,14 +192,24 @@ def _lane_names(payload: object) -> list[str]:
     return []
 
 
+def configured_lane_names() -> list[str]:
+    return _lane_names(json.loads(CONFIG.read_text(encoding="utf-8")))
+
+
+def validate_requested_lanes(requested: list[str] | None) -> None:
+    if not requested:
+        return
+    known = configured_lane_names()
+    unknown = [name for name in requested if name not in known]
+    if unknown:
+        raise ValueError(f"unknown lane(s): {', '.join(unknown)}")
+
+
 def blocking_lanes(requested: list[str] | None = None) -> list[tuple[str, int]]:
-    config = json.loads(CONFIG.read_text(encoding="utf-8"))
     certification = json.loads(CERTIFICATION.read_text(encoding="utf-8"))
-    names = _lane_names(config)
+    names = configured_lane_names()
     if requested:
-        unknown = [name for name in requested if name not in names]
-        if unknown:
-            raise ValueError(f"unknown lane(s): {', '.join(unknown)}")
+        validate_requested_lanes(requested)
         names = [name for name in names if name in requested]
     cert_lanes = (
         certification.get("lanes", certification)
@@ -182,17 +286,19 @@ def drain_lane(lane: str, args: argparse.Namespace) -> tuple[int, bool]:
             emit(f"STOP lane cycle safety bound reached: lane={lane}")
             return 4, made_progress
         before = git_head()
-        rc = run_command(
+        batch_rc = run_command(
             f"batch-{lane}-cycle-{cycle}",
             batch_command(lane, args),
         )
-        if rc != 0:
-            return rc, made_progress
-        # This is intentionally unconditional: a no-target panel is cheap,
-        # while missing a newly recorded disagreement stops the whole lane.
-        rc = run_panel(args, f"panel-after-{lane}-cycle-{cycle}")
-        if rc != 0:
-            return rc, made_progress
+        # This is intentionally unconditional, including after a hard batch
+        # result: another row in the same batch may already have recorded a
+        # panel-eligible disagreement. Preserve the hard result only after the
+        # judicial sweep has consumed every resumable handoff.
+        panel_rc = run_panel(args, f"panel-after-{lane}-cycle-{cycle}")
+        if panel_rc != 0:
+            return panel_rc, made_progress
+        if batch_rc != 0:
+            return batch_rc, made_progress
         after = git_head()
         if after == before:
             return 0, made_progress
@@ -209,7 +315,7 @@ def first_ready_forensic_claim() -> str | None:
         if (
             row.get("ready")
             and row.get("audit_status") in {"unaudited", "audit_in_progress"}
-            and row.get("claim_type") == "no_go"
+            and batch.source_requires_forensic(row)
         ):
             claim_id = row.get("claim_id")
             if isinstance(claim_id, str) and claim_id:
@@ -220,7 +326,7 @@ def first_ready_forensic_claim() -> str | None:
 def run_forensic_canary(args: argparse.Namespace) -> int:
     claim_id = first_ready_forensic_claim()
     if not claim_id:
-        emit("no ready no_go row available for the forensic canary")
+        emit("no ready forensic-tier row available for the forensic canary")
         return 0
     command = [
         sys.executable,
@@ -274,6 +380,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None) -> int:
+    global _DRAIN_LOCK_HANDLE
     args = build_parser().parse_args(argv)
     positive = (
         args.max_workers,
@@ -287,16 +394,42 @@ def main(argv: list[str] | None = None) -> int:
         raise SystemExit("worker, round, timeout, and retry values must be positive")
     if args.max_passes < 0 or args.max_lane_cycles < 0:
         raise SystemExit("pass and cycle safety bounds must be non-negative")
+    try:
+        validate_requested_lanes(args.lane)
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
+        emit(str(exc))
+        return 2
     if not args.dry_run:
+        _DRAIN_LOCK_HANDLE = batch.acquire_exclusive_drain_lock(
+            "orchestrate_audit_loop"
+        )
+        if _DRAIN_LOCK_HANDLE is None:
+            return 3
         error = batch.clean_main_error()
         if error:
             emit(f"refusing to run: {error}. Use a dedicated clean main checkout.")
+            _DRAIN_LOCK_HANDLE.close()
+            _DRAIN_LOCK_HANDLE = None
             return 2
         ok, detail = batch.sync_origin_main()
         if not ok:
             emit(f"refusing to run: {detail}")
+            _DRAIN_LOCK_HANDLE.close()
+            _DRAIN_LOCK_HANDLE = None
             return 2
 
+    try:
+        PROGRESS["baseline_status"] = {
+            cid: row.get("audit_status") for cid, row in batch.load_rows().items()
+        }
+    except (OSError, ValueError, json.JSONDecodeError):
+        PROGRESS["baseline_status"] = {}
+    PROGRESS["started"] = time.monotonic()
+    PROGRESS["attempts"] = 0
+    PROGRESS["failures"] = []
+    PROGRESS["panel_state"] = "not_started"
+    PROGRESS["canary_state"] = "not_started"
+    _STOP_HEARTBEAT.clear()
     thread = threading.Thread(target=heartbeat, daemon=True)
     thread.start()
     try:
@@ -336,11 +469,10 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     finally:
         _STOP_HEARTBEAT.set()
-        elapsed = int(time.monotonic() - PROGRESS["started"])
-        emit(
-            "== audit-loop final summary "
-            f"elapsed={elapsed // 3600}h{(elapsed % 3600) // 60:02d}m"
-        )
+        emit(summary_line(final=True))
+        if _DRAIN_LOCK_HANDLE is not None:
+            _DRAIN_LOCK_HANDLE.close()
+            _DRAIN_LOCK_HANDLE = None
 
 
 if __name__ == "__main__":

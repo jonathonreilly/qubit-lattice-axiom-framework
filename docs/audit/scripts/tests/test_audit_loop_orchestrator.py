@@ -2,7 +2,10 @@
 from __future__ import annotations
 
 import argparse
+import json
+import os
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -38,6 +41,21 @@ class BatchExitSemanticsTest(unittest.TestCase):
         report = [{"cid": "row", "result": "validation_failed"}]
         self.assertTrue(batch.report_has_hard_blocker(report))
 
+    def test_mixed_failure_records_the_judicial_handoff(self):
+        report = [{"cid": "broken", "result": "validation_failed"}]
+        selected = [{"claim_id": "disputed"}]
+        current = {
+            "disputed": {"cross_confirmation": {"status": "disagreement"}}
+        }
+
+        disagreements = batch.append_judicial_handoffs(selected, current, report)
+
+        self.assertEqual(disagreements, ["disputed"])
+        self.assertIn(
+            {"cid": "disputed", "result": "judicial_panel_required"}, report
+        )
+        self.assertTrue(batch.report_has_hard_blocker(report))
+
 
 class AutomaticPanelResumeTest(unittest.TestCase):
     def test_disagreement_batch_is_panelled_then_same_lane_resumes(self):
@@ -67,13 +85,13 @@ class AutomaticPanelResumeTest(unittest.TestCase):
             ],
         )
 
-    def test_batch_hard_failure_stops_before_panel(self):
+    def test_batch_hard_failure_panels_before_stopping(self):
         args = _args()
         labels: list[str] = []
 
         def fake_run(label, command, env=None):
             labels.append(label)
-            return 1
+            return 1 if label.startswith("batch-") else 0
 
         with mock.patch.object(audit_loop, "git_head", return_value="h0"), \
              mock.patch.object(audit_loop, "run_command", side_effect=fake_run):
@@ -81,7 +99,66 @@ class AutomaticPanelResumeTest(unittest.TestCase):
 
         self.assertEqual(rc, 1)
         self.assertFalse(progressed)
-        self.assertEqual(labels, ["batch-lane_a-cycle-1"])
+        self.assertEqual(
+            labels,
+            ["batch-lane_a-cycle-1", "panel-after-lane_a-cycle-1"],
+        )
+
+
+class CampaignContractTest(unittest.TestCase):
+    def test_inherited_campaign_lock_is_reentrant_for_child(self):
+        held = batch.acquire_exclusive_drain_lock("top-level-test")
+        self.assertIsNotNone(held)
+        try:
+            with mock.patch.dict(
+                os.environ,
+                {batch.INHERITED_DRAIN_LOCK_FD_ENV: str(held.fileno())},
+            ):
+                inherited = batch.acquire_exclusive_drain_lock("child-test")
+            self.assertIsNotNone(inherited)
+            inherited.close()
+        finally:
+            held.close()
+
+    def test_forensic_selector_uses_canonical_source_predicate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            queue = Path(tmp) / "queue.json"
+            queue.write_text(
+                json.dumps(
+                    {
+                        "queue": [
+                            {
+                                "claim_id": "bounded_obstruction",
+                                "ready": True,
+                                "audit_status": "unaudited",
+                                "claim_type": "bounded_theorem",
+                                "note_path": "docs/EXAMPLE_OBSTRUCTION_NOTE.md",
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with mock.patch.object(audit_loop, "QUEUE", queue), mock.patch.object(
+                batch, "source_requires_forensic", return_value=True
+            ):
+                selected = audit_loop.first_ready_forensic_claim()
+        self.assertEqual(selected, "bounded_obstruction")
+
+    def test_unknown_lane_fails_before_opening_panel(self):
+        with mock.patch.object(
+            audit_loop, "configured_lane_names", return_value=["lane_a"]
+        ), mock.patch.object(audit_loop, "run_panel") as run_panel:
+            rc = audit_loop.main(
+                [
+                    "--dry-run",
+                    "--skip-forensic-canary",
+                    "--lane",
+                    "definitely_unknown",
+                ]
+            )
+        self.assertEqual(rc, 2)
+        run_panel.assert_not_called()
 
 
 if __name__ == "__main__":

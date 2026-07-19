@@ -56,6 +56,7 @@ MIN_DELIVERY_BYTES = 200
 PACKET_COMPLETION_STALL_SECONDS = 20 * 60
 PACKET_COMPLETION_POLL_SECONDS = 15
 PACKET_COMPLETION_EXIT_GRACE_SECONDS = 10
+INHERITED_DRAIN_LOCK_FD_ENV = "AUDIT_DRAIN_LOCK_FD"
 
 
 def _repo_identity() -> str:
@@ -92,6 +93,19 @@ def acquire_exclusive_drain_lock(label: str):
     released automatically on process exit. Returns an open handle to keep
     referenced, or None when another orchestrator already holds it.
     """
+    inherited_fd = os.environ.get(INHERITED_DRAIN_LOCK_FD_ENV)
+    if inherited_fd:
+        try:
+            fd = int(inherited_fd)
+            fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            return os.fdopen(os.dup(fd), "w")
+        except (OSError, ValueError):
+            print(
+                "refusing to run: invalid inherited audit-lane lock fd "
+                f"for {label}"
+            )
+            return None
+
     key = hashlib.sha256(_repo_identity().encode("utf-8")).hexdigest()[:12]
     lock_path = Path(tempfile.gettempdir()) / f"audit-lane-{key}.lock"
     handle = open(lock_path, "w")
@@ -1254,23 +1268,13 @@ def main() -> int:
         # every remaining round and burns seats re-auditing an unchanged
         # claim toward the same outcome. Repair, not repetition, moves it.
         session_skipped.update(row["claim_id"] for row in batch)
-        if not applied_ok or launch_blocked:
-            break
+        current_rows = load_rows()
+        disagreements = append_judicial_handoffs(batch, current_rows, report)
         (workdir / "report.jsonl").write_text(
             "".join(json.dumps(item, sort_keys=True) + "\n" for item in report),
             encoding="utf-8",
         )
-
-        current_rows = load_rows()
-        disagreements = [
-            row["claim_id"]
-            for row in batch
-            if (current_rows.get(row["claim_id"], {}).get("cross_confirmation") or {}).get("status")
-            in {"disagreement", "three_way_disagreement", "disagreement_irresolvable"}
-        ]
-        if disagreements:
-            for cid in disagreements:
-                report.append({"cid": cid, "result": "judicial_panel_required"})
+        if disagreements or not applied_ok or launch_blocked:
             break
 
     print("== batch report ==")
@@ -1298,6 +1302,29 @@ def report_has_hard_blocker(report: list[dict]) -> bool:
     """
     accepted = SUCCESS_RESULTS | RESUMABLE_HANDOFF_RESULTS
     return any(item.get("result") not in accepted for item in report)
+
+
+def append_judicial_handoffs(
+    selected_rows: list[dict], current_rows: dict[str, dict], report: list[dict]
+) -> list[str]:
+    """Record every disagreement that became panel-eligible in this batch."""
+    existing = {
+        item.get("cid")
+        for item in report
+        if item.get("result") == "judicial_panel_required"
+    }
+    disagreements = [
+        row["claim_id"]
+        for row in selected_rows
+        if (current_rows.get(row["claim_id"], {}).get("cross_confirmation") or {}).get(
+            "status"
+        )
+        in {"disagreement", "three_way_disagreement", "disagreement_irresolvable"}
+    ]
+    for cid in disagreements:
+        if cid not in existing:
+            report.append({"cid": cid, "result": "judicial_panel_required"})
+    return disagreements
 
 
 if __name__ == "__main__":

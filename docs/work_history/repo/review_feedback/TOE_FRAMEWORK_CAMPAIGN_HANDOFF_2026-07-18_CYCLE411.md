@@ -1,4 +1,4 @@
-# TOE framework campaign handoff — 2026-07-18, Cycle 411, refreshed through Cycle 414
+# TOE framework campaign handoff — 2026-07-18, Cycle 411, refreshed through Cycle 416
 
 ## OVERALL GOAL — READ THIS FIRST
 
@@ -21,23 +21,23 @@ launched the physical-M2 compiler campaign.
 
 ## Exact handoff boundary
 
-Observed after the Cycle-414 science package was pushed:
+Observed after the Cycle-416 science package was pushed:
 
 | item | exact boundary |
 |---|---|
 | repository | `Physics-baremetal-probes` |
 | active branch | `codex/toe-cross-lane-campaign-20260718` |
-| last retained science head before this refreshed packet | `55edb3456a72a14d5cdfae5f2dad6c68ca5a1f5a` |
-| observed matching remote science head | `55edb3456a72a14d5cdfae5f2dad6c68ca5a1f5a` |
+| last retained science head before this refreshed packet | `c462be7c24dee549e498b6b82914c64b233a1af6` |
+| observed matching remote science head | `c462be7c24dee549e498b6b82914c64b233a1af6` |
 | only active parking surface | draft PR #5523, `Science: exact Record formation candidates and cross-lane bridges` |
 | PR base / state | `main` / open draft |
 | PR URL | <https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5523> |
 | local `main` | `fdb599edf8aaab375a719cd6d726e7120b5e9c57` |
 | local `origin/main` tracking ref | `8b164506f490a0a266b9470c9aa4b5331b3b49ca` |
 | live remote `main` from `ls-remote` | `8b164506f490a0a266b9470c9aa4b5331b3b49ca` |
-| observed tracking `origin/main...science head` | 26 commits unique to tracking `origin/main`; 24 unique to the science head |
+| observed tracking `origin/main...science head` | 26 commits unique to tracking `origin/main`; 26 unique to the science head |
 | live remote divergence | same as the tracking-ref divergence above at this observation |
-| observed local `main...science head` | 0 commits unique to local `main`; 279 unique to the science head |
+| observed local `main...science head` | 0 commits unique to local `main`; 281 unique to the science head |
 | authority | none |
 | audit | unset |
 | constitutional effect | none |
@@ -94,6 +94,8 @@ Read these completely, in order:
 24. [Cycle 412: physical reversible oriented-Bloch interface](./PHYSICAL_LOCAL_REVERSIBLE_ORIENTED_BLOCH_INTERFACE_CYCLE412_NOTE_2026-07-18.md).
 25. [Cycle 413: selector-dependency cross-grid](./PHYSICAL_SELECTOR_DEPENDENCY_CROSS_GRID_CYCLE413_NOTE_2026-07-18.md).
 26. [Cycle 414: candidate-append renewal/concurrency adversary](./PHYSICAL_CANDIDATE_APPEND_RENEWAL_CONCURRENCY_ADVERSARY_CYCLE414_NOTE_2026-07-18.md).
+27. [Cycle 415: local request-equality and finite-pool exchange](./PHYSICAL_LOCAL_ADDRESS_POOL_ALLOCATOR_CYCLE415_NOTE_2026-07-18.md).
+28. [Cycle 416: strict-response source-balance receiver seam](./PHYSICAL_STRICT_RESPONSE_SOURCE_CLOCK_METRIC_RECEIVER_CYCLE416_NOTE_2026-07-18.md).
 
 Read the direct child notes and runners only when auditing exact construction
 details. Do not let the one-dimensional bound-state benchmark become the
@@ -219,7 +221,7 @@ physical-order, full-number, overlap, recurrence, and renewal imports. There
 is no common failed clause across all constructive routes and therefore no
 compiler-derived axiom pressure.
 
-## Strongest constructive results through Cycle 414
+## Strongest constructive results through Cycle 416
 
 ### Operational quantum and locality
 
@@ -261,6 +263,13 @@ compiler-derived axiom pressure.
    The outputs remain reversible candidate labels, not Records. The alias,
    invocation, target allocation, and reserve are supplied, and no blank is
    generated.
+6. **Cycle 415 local request equality and two-use pool.** A reversible
+   six-rail comparator derives equality for all 36 ordered nearest-neighbor
+   request-label pairs. On one perpendicular distinct pair, one equal-label
+   representative, and their 24 frame orbits, a fixed two-slot schedule
+   exchanges target A twice and reverses exactly. The physical target blocks,
+   label-to-block binding, blank slots, and schedule remain supplied; this is
+   not a shared-register race, availability search, or renewable allocator.
 
 ### Numerical/Born-facing surface
 
@@ -337,6 +346,13 @@ not probability, Born weight, frequency, occurrence, or actuality.
    the predecessor/response preparation. Joint and individual candidate
    sectors retain the one-response weight; they are correlated labels, not
    independent confirmations.
+6. Cycle 416 joins the strict response to a three-M2 source/mediator rotation
+   with exact number balance and inverse. Each actual route/L/origin mediator
+   expectation then drives the existing Cycle-213 retarded and Cycle-216
+   static numerical receivers through an explicit supplied expectation-to-
+   source map, preserving the unit/coefficient distinction. The far-side
+   receivers are not physical-M2 compilers and no source, energy, clock,
+   metric, or gravity law is selected.
 
 The displayed weights are coherent state-sector squared norms, not Born
 probabilities. A contact-sensitive response is not physical energy, stress,
@@ -364,6 +380,8 @@ rate, lapse, or proper time. Circuit order and compiler layers are not time.
 | 412 | `10 PASS / 0 FAIL`; 182-M2 interface, 138-M2 active union; 4,256 logical / 636,944 routed primitives; all 3,347 classes, 24 frames, 576 products, and 1,927,872 class-product tests pass; exact raw inverse | finite physical tuple-action compiler only; effect-to-tuple genesis, resolution/equality policy, clean work/frame preparation, and any numerical/Born law remain supplied |
 | 413 | `7 PASS / 0 FAIL`; exact six-row prediction grid; three agreements and three disagreements; two 1,686-M2 NN routes; all 24 frames and held N8/N16; exact E/G and inverse | supplied matter/status preparations and two candidate dependencies; no independent law-selecting observable, grade, probability, or actual member |
 | 414 | `14 PASS / 0 FAIL`; 388-M2 bounded adversary; 549-layer two-target/collision circuit; 824-layer exchange/repeat route; exact inverse on distinct, collision, refusal, and held L5/L6 routes; all 24 frames | supplied alias, allocation, invocation, target blocks, and one blank reserve; no actual Record, autonomous address equality, blank genesis, renewal law, conservation, or recurrence theorem |
+| 415 | `10 PASS / 0 FAIL`; 452 M2; 43-layer/53-gate equality circuit; 561-layer/1,260-gate exchange schedule; all 36 comparator pairs; one distinct and one equal-label end-to-end route plus 24 frame orbits; exact inverse and held L6 | supplied request-label genesis/binding, distinct target blocks, two blank slots, and fixed schedule; no shared-register race, search, replenishment, actual Record, or renewal law |
+| 416 | `9 PASS / 0 FAIL`; one strict response plus two new M2; exact conserved rotation/inverse; held unit transfer `7.501679264744504e-07`, coefficient-two `3.7828627925537926e-06`; receiver residuals at most `9.301122374345847e-21` | supplied dense gate, preparation/invocation, expectation-to-source map, scalar receiver laws, and separate candidate diamond; far side is not a physical-M2 compiler; no selected source/clock/metric/gravity law |
 
 Latest runner SHA-256 checks at handoff drafting:
 
@@ -376,28 +394,30 @@ Cycle 410  a9fd22a33a990cde513af1ab9682d2f1d37dd64b3d9254548e6c8264de29f1ea
 Cycle 412  142b467703374809809aa2f43d5147fa2ceed9b527193cb50fd4c4a93d8742d5
 Cycle 413  1fb8edb35daa39e12d8752649bf6ee1c3c4474854705f48210036ec11b0ca293
 Cycle 414  0c1630bd089c9c2c931bf9e75d9306f83b2fff807856eb3f279a2908b5cedf96
+Cycle 415  0a427b88200320fce6cb5ac75dbdc91a010ff1a2541cc60090124ffba52f082a
+Cycle 416  ba99d29160f12d1133d9c5d8ec5a04f853ba20fb25f67d5f1b5f1473773f08c4
 ```
 
 Pass counts are executable contract checks, not counts of independent
 physical predictions. Held-size tests are finite extrapolation controls, not
 unbounded theorems.
 
-## Twelve-field law-completeness contract through Cycle 414
+## Twelve-field law-completeness contract through Cycle 416
 
 | field | strongest retained state | explicit remaining import |
 |---|---|---|
 | `domain` | finite physical-M2 code blocks; declared fixed-seam, two-cell, maximal-star, menu, response, candidate-payload/edge, six-row selector grid, and two-target/reuse grammars; trained and held domains explicit | homogeneous unbounded/full-lattice domain and recurrent-volume law |
-| `state` | physical matter/source/controller/table/environment/Record, oriented-tuple, preallocated candidate, collision, and one blank-reserve register are explicit | autonomous state preparation, lawful tuple/reference/alias/blank genesis, reusable reservoirs, and full-volume state law |
+| `state` | physical matter/source/controller/table/environment/Record, oriented-tuple, preallocated candidate, request-comparator, two blank-pool, and source/mediator registers are explicit | autonomous state preparation, lawful tuple/reference/address/blank/source genesis, reusable reservoirs, and full-volume state law |
 | `context` | all 24 proper-cubic spatial frames; fixed programs/banks; independent occupation/status grid; contact and Record selector candidates; held source-response fixtures | endogenous apparatus, program, selector, reference, address relation, and context selection |
 | `atomic_law` | fixed reversible carrier/menu/source/selector/candidate-label compilers and three conditional Record-formation hypotheses | selected universal physical update, formation/commit law, and law-choice discriminator |
 | `continuation` | exact two-use compositions; fixed counter continuation; bounded formation chains; fixed source depth; reversible candidate payload/edge proposal; one exact blank exchange and repeat | indefinite recurrence, actual append continuation, renewable blanks, garbage handling, and collision-safe volume evolution |
-| `availability` | finite exact M2, work, pointer, environment, payload, role, Record-capacity, and one blank-reserve inventory | renewable capacity and a physical resource/availability law |
-| `concurrency` | disjoint replicas, shared reads, declared-code distinct-target order independence, supplied-alias no-priority suppression, target-local refusal, and one exact exchange/reuse | autonomous address comparison, arbitration/law selection, allocation, overlapping-volume recurrence, and homogeneous invocation; schedule is not time |
+| `availability` | finite exact M2, work, pointer, environment, payload, role, Record-capacity, and two supplied blank-pool words | availability search, blank genesis/replenishment, renewable capacity, and a physical resource law |
+| `concurrency` | disjoint replicas, shared reads, declared-code distinct-target order independence, local equality-context suppression, target-local refusal, and a fixed two-use exchange schedule | request genesis/binding, actual shared-target arbitration, allocation/search, overlapping-volume recurrence, and homogeneous invocation; schedule is not time |
 | `record` | typed/permanent Records are preserved; three exact formation semantics exist; candidate payload/edge and two-target/reuse labels are exact | selected formation law, admitted irreversible commit/permanence, actual identity law, autonomous tags/links/addresses/blanks, and renewal |
 | `actuality` | coherent alternatives, conditional candidate outputs, and counterfactual graph labels only | actual-member and realized-history selection |
 | `statistics` | corrected rank-1,158 finite composed surface; physical 3,347-class proper-cubic tuple action; a 19-dimensional B face; physically distinct B0/B1 points; two selector candidates mapped on a frozen six-row grid | selected/calibrated grade, probability meaning, sampler, frequency theorem, and Born law; physical tuple/label genesis and a universal or interval-certified equality policy |
-| `resource` | exact M2, gate, support, layer, and capacity ledgers | physical energy/resource identity, conservation/renewal theorem, and thermodynamic meaning |
-| `source/response` | strict shared-middle contact-sensitive response reaches environment, candidate payload, candidate edge, and candidate depth labels | derived physical source functional, energy/stress identity, and reciprocal metric/clock/gravity response |
+| `resource` | exact M2/gate/support/capacity ledgers plus one exact source-plus-mediator number balance | physical energy/resource identity, universal conservation/renewal theorem, and thermodynamic meaning |
+| `source/response` | strict response reaches a balanced three-M2 source/mediator register; each actual mediator expectation reaches two scalar numerical receivers through a supplied map | coherent physical-M2 receiver coupling, derived physical source/energy/stress identity, calibration, recoil, universal coupling, and reciprocal metric/clock/gravity response |
 
 No field is silently completed by renaming an implementation label. A wrapped
 phase is not physical energy; a generator element is not a rate; pointer
@@ -405,16 +425,16 @@ copying is not a Record; a coherent candidate payload is not an actual Record;
 dependency depth is not time; and a coarse CAR cell is not itself a
 physical-site compiler.
 
-## Six-wall dependency ledger through Cycle 414
+## Six-wall dependency ledger through Cycle 416
 
 | wall | movement through this campaign | exact live residual |
 |---|---|---|
-| `C_ref` | three bounded Record-formation/reference hypotheses; permanence can drive a selector; candidate payload/edge identities survive a literal shared-spine two-target calculation, supplied-alias suppression, local refusal, and one exchange/reuse | selection and physical admission of formation/permanence/identity; actual member/edge; autonomous reference, address/alias comparison, tags, links, blanks, preparation, and indefinite renewal |
-| `C_num` | corrected rank-1,158 surface has an exact proper-cubic action and a bounded physical tuple-action compiler; exact nine-to-55 map; B face dimension 19; B0/B1 are physically distinct; two selector dependencies have a frozen six-row disagreement grid | selected/calibrated grade; broader admitted menu law; physical effect-to-tuple/label genesis; universal or interval-certified equality; independent selector observable; sampler, frequency, Born meaning, and actuality |
+| `C_ref` | prior state plus exact equality of supplied local request labels and a fixed two-slot/two-repeat candidate-storage schedule | selection/admission of formation/permanence/identity; actual member/edge; autonomous reference, request genesis/binding, actual shared-target arbitration, tags, links, blanks, search, replenishment, and indefinite renewal |
+| `C_num` | prior rank/codec/selector surface plus exact source-plus-mediator number balance | selected/calibrated grade; physical effect-to-tuple genesis; universal equality; independent selector observable; physical energy/source meaning; sampler, frequency, Born meaning, and actuality |
 | `C_wrap` | source response can coherently label a counterfactual dependency extension from depth four to five | no actual edge or depth-five member; no event equivalence, recurrence, interval, unit, synchronization, rate, lapse, or proper time |
-| `C_int` | actual Cycle-230 contact is load-bearing in physical menus/source response and in the exact `Q_ge2` selector predicate; one-particle fixtures survive | interaction/law selection, occurrence, protection/stability, recurrent scattering, and interaction-to-rate/source interpretation |
-| `C_local` | bounded common M64 fixed seam, full two-cell seam, low-number maximal star, physical menu/table/source and tuple-action compilers, frozen selector grid, shared-spine two-target calculation, supplied-alias suppression, local refusal, and one exact exchange/reuse | full number on maximal stars; 5,032 unmaterialized orders or exact replacement; adjacent-star compatibility; primitive genesis; autonomous address/reference/input/blank genesis; commit, invocation, recurrent allocation/collisions, arbitration, and renewal |
-| `C_source` | strict shared-middle response reaches reversible environment, candidate Record-payload, and candidate edge/depth interfaces | physical energy/stress/source functional, empirical units, conservation/resource identity, universal coupling, and reciprocal metric/clock/nonlinear gravity law |
+| `C_int` | actual contact remains load-bearing; Cycle 294's Route-A emission factor is realized in the balanced gate | interaction/law selection, occurrence, recoil/contact work, protection/stability, full mediator history, recurrence, and interaction-to-rate/source interpretation |
+| `C_local` | prior bounded compilers plus a local request-equality circuit, fixed two-slot exchange schedule, and a bounded three-M2 source/mediator gate | full-number/adjacent-star completion; primitive synthesis; autonomous request/reference/input/blank/source genesis; actual arbitration, search, commit, invocation, recurrence, receiver physicalization, and renewal |
+| `C_source` | each strict route-dependent response reaches an exact number-balanced register and both scalar numerical receivers through a supplied expectation-to-source seam | coherent physical-M2 receiver coupling; physical energy/stress/source identity, empirical units/calibration, recoil, recurrence, universal coupling, and reciprocal metric/clock/nonlinear gravity law |
 
 The walls are dependency coordinates, not asserted independent axioms. Closing
 one does not presently prove another closed: numerical-law selection does not
@@ -428,13 +448,13 @@ These are integrated / strict physical-substrate floor / conditional bridge
 coordinates. They are planning aids, not probabilities that the framework is
 true, not empirical confidence intervals, and not audit verdicts.
 
-| TOE lane | through Cycle 410 | through Cycle 414 | maturity `0--5` | reason for movement |
+| TOE lane | through Cycle 414 | through Cycle 416 | maturity `0--5` | reason for movement |
 |---|---:|---:|---:|---|
-| operational quantum / Records | `86/45/99` | `87/45/99` | `4.7` | the shared-spine two-target, supplied-alias suppression, refusal, and one exchange/reuse construction advances integrated candidate-append architecture while preserving identity; no output becomes an actual Record |
+| operational quantum / Records | `87/45/99` | `88/46/99` | `4.7` | physical local request equality and a fixed two-slot exchange schedule advance bounded reference/local infrastructure; actual Record formation, shared-target arbitration, blank replenishment, and renewal remain absent |
 | causal time | `57/33/96` | `57/33/96` | `3.7` | unchanged: the actual graph remains depth four, all 24 frames are spatial, and no interval/rate/proper-time law moves the strict floor |
 | inertia / matter | `78/38/99` | `78/38/99` | `4.5` | mass, Q, number, vector, contact, seam, and held controls survive; no new matter-law or spectrum selection occurs |
-| gravity / source / resource | `54/25/87` | `54/25/87` | `3.3` | unchanged in meaning: one operational response reaches more candidate infrastructure, but physical source identity, conservation, units, and reciprocal metric/clock response remain open |
-| Born / probability / realized history | `69/39/99` | `71/40/99` | `4.3` | the proper-cubic tuple action is now a bounded physical circuit and the two selector dependencies are mapped on an independently frozen matter/status grid; no grade, probability law, or actual member is selected |
+| gravity / source / resource | `54/25/87` | `55/26/88` | `3.4` | the route-dependent strict response now reaches an exact balanced source/mediator gate and both scalar numerical receivers; the expectation seam, source identity/calibration, coherent physical receivers, recoil, and metric response remain open |
+| Born / probability / realized history | `71/40/99` | `71/40/99` | `4.3` | unchanged: the proper-cubic tuple action and frozen selector grid remain exact, but no grade, probability law, sampler, frequency theorem, or actual member is selected |
 
 Do not convert these planning coordinates into scientific completion claims.
 The highest conditional maturity remains operational quantum/matter. The
@@ -544,75 +564,95 @@ defect became Cycle 408's covariant oriented codec and exact one-class/one-rank
 correction; Cycle 412 then compiled that finite action into physical M2. The
 two-selector single-input disagreement became Cycle 413's frozen six-row grid,
 and one-shot candidate append became Cycle 414's two-target/collision/finite-
-reuse adversary. These cross-cycle retirements show why current unfinished
-routes cannot be constitutional evidence.
+reuse adversary. Cycle 415 then replaced the supplied equality bit with a
+physical local request-label comparator and two-use exchange schedule. Cycle
+416 joined the strict response to an exact balanced source/mediator gate and
+route-dependent scalar receivers, while exposing the remaining coherent
+physical receiver seam. These cross-cycle retirements show why current
+unfinished routes cannot be constitutional evidence.
 
 **Disposition:** no shared obstruction, no minimum-content theorem, and no
 axiom pressure. Do not draft axiom language.
 
+## Independent-observable reconnaissance through Cycle 416
+
+A scoped repository-wide audit found no retained surface that simultaneously
+has: a common physical code with the Cycle-413 inputs; independence from
+B0/B1 and the comparator; the same interface for both Cycle-409 selectors and
+all three Cycle-367 formation laws; distinct predictions; an externally held
+or empirical meaning not generated by the candidate; and a route-independent
+resource/apparatus grammar. This is an inventory result, not an impossibility.
+
+The strongest physical held candidate is the Cycle-374/387 contact-sensitive
+pointer response, but it is contact-conditioned and would circularly favor the
+contact selector. Cycle 334 is the strongest realized-endpoint receiving
+surface, but content binding is uncompiled. The diamond/NV `Y`, phase, and
+phase-ramp proposal is the strongest empirical-facing surface, but it is not
+yet coupled to either selector or formation law. Counters, depths, corpus
+weights, capacity counts, and candidate truth tables report the hypothesis's
+own computation rather than independent truth.
+
+Full N1--N8 keeps the conclusion scoped: external endpoint binding, symmetric
+formation/resource adapters, a real experimental corpus, physical receiver
+coupling, and source/clock common-code routes all remain live. Therefore this
+campaign does not run a circular law-selection score and produces no axiom
+pressure.
+
 ## Optimal next campaign
 
-The highest-value next campaign is an **independent selector/formation-law
-discrimination tournament**, coupled to physically derived address equality
-and finite-pool allocation. Cycles 412--414 have retired host-only tuple
-action, the first matter/status cross-grid, and one one-shot collision/reuse
-construction. They have not supplied the independent observable that could
-select a law.
+Because no retained independent law-selecting observable satisfies the scoped
+contract, the highest-value executable next campaign is a **coherent physical
+source-receiver and universal-balance tournament**. An independent selector/
+formation tournament immediately outranks it if a real external endpoint or
+experimental corpus is supplied.
 
 ### Decisive question
 
-Can one predeclared held observable, independent of B0/B1 and the Cycle-407
-comparator, select or falsify among the two Cycle-409 selector dependencies
-and the three Cycle-367 Record-formation hypotheses when address equality and
-finite-pool allocation are computed physically rather than supplied as alias,
-target, invocation, and blank labels?
+Can the strict response's mediator excitation drive physical-M2 retarded and
+static receiver source terms coherently and locally, without a host
+expectation readout, while one common update balances matter, mediator,
+contact work, recoil, and a renewable source register across held sizes?
 
 ### Required routes
 
-1. **Independent-observable route.** Freeze a physical or empirical
-   consistency observable before either selector runs. It must not read B0/B1,
-   the held flag, or any downstream score to choose the route.
-2. **Formation cross-grid route.** Run immediate, migrating, and threshold
-   candidates across the frozen Cycle-413 matter-by-status grid and held
-   coherent extensions. A permanence bit remains a control, not actuality.
-3. **Address/allocation route.** Compute local target equality from physical
-   target labels, select from a finite multi-blank pool, and test at least two
-   exchanges plus same-target and overlapping-neighbor collisions. Treat this
-   as infrastructure unless it couples to the independent observable.
-4. **Numerical-genesis route.** Physicalize effect-to-oriented-tuple genesis
-   and test exact-algebraic or interval-certified equality in place of the
-   supplied 13-decimal radius. Keep codec, equality policy, grade selection,
-   and Born meaning distinct.
-5. **Source/clock far-side route.** If no independent law-selecting observable
-   is available, retask to Cycle 294's carried two-level source register, full
-   hard-core many-field ledger, and two-slice/off-diagonal even-CAR current on
-   one common physical code. Test the resulting balance against the
-   Cycle-213/216 scalar response and Cycle-170/46 clock/metric receiving
-   contracts. Do not infer gravity from a contact response or depth label.
+1. **Carried-source route.** Extend Cycle 416's source excitation through a
+   recurrent carried two-level register with explicit preparation, return,
+   deletion, and held-history controls.
+2. **Full hard-core route.** Execute Cycle 294 Route A on the full many-field
+   local occupation ledger without the earlier global-blockade comparator.
+3. **Two-slice/off-diagonal route.** Construct a physical even-CAR action
+   current that carries contact work and distinguishes emission, absorption,
+   and recoil.
+4. **Physical receiver route.** Couple the mediator register coherently into
+   physical-M2 implementations of the Cycle-213/216 source terms; forbid a
+   global expectation readout or host scalar injection.
+5. **Clock/metric and law-selection controls.** Keep Cycle-170/46 labels
+   separate until actual Records, density calibration, and source identity are
+   derived. If an external endpoint/experimental corpus appears, freeze it
+   before running the Cycle-413 x Cycle-367 law grid; never consult B0/B1 or a
+   downstream comparator to choose the rule.
 
 ### Success contract
 
 Require:
 
-- candidate rules and held discriminator frozen before any output is read;
+- candidate source/current laws and all held discriminators frozen before output;
 - one explicit physical-M2 encoding and fixed local update per route;
 - exact E/G and inverse or an explicitly isolated admitted nonunitary step;
 - all 24 proper-cubic frames and held sizes/sectors;
 - Record identity, mass, number, contact, seam, leakage, deletion, and lawful-
   domain controls;
-- autonomous or explicitly imported blank/reference/selector genesis;
-- at least two reserve uses plus same-target and overlapping-neighbor controls;
+- autonomous or explicitly imported source/mediator/reference preparation;
+- recurrence, recoil, contact-work, and full local number-balance controls;
 - an exact supplied/derived/open inventory; and
 - full N1--N8 before any impossibility, minimum-content, shared-obstruction, or
   axiom-pressure statement.
 
-A positive result would be the first evidence that one independent physical
-dependency discriminates both a numerical proposal and a Record-formation law
-without circular score consultation. A split result would sharpen the law
-inventory. If no independent observable exists, physicalize address/allocation
-or the source/clock far side honestly as infrastructure; do not pretend that
-more one-shot candidate labels have selected a law. A route-specific failure
-would remain only a route-specific failure.
+A positive result would remove the supplied expectation-to-source seam and
+create the first common physical balance capable of testing a reciprocal
+matter/clock receiver. It would still not select gravity, time, or a Record
+law by naming. A split result would sharpen the source inventory. A route-
+specific failure would remain only a route-specific failure.
 
 ## Restart and packaging instructions
 

@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/bounded_additive_on_interval_linearity_rebuilt_2026_07_18.py
+runner_sha256: 4f89c41fc7ca3c34d15c1fee6fc9bebb3e104a33a94255129a7b68cb8cf7d6d5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+PASS: S1a G(0)=2G(0) forces G(0)=0
+PASS: S1b the additive pair to zero gives G(-u)=-G(u)
+PASS: S1c integer iteration gives G(nu)=nG(u) (n=3 elimination)
+PASS: S1d rational scaling G((2/5)u)=(2/5)G(u) by combining integers
+PASS: S2a the centered value decomposes exactly as G(w+a)-G(a)
+PASS: S2b exact finite sign cases are consistent with the triangle bound
+PASS: S3-n1 exact residual identity and window membership
+PASS: S3-n2 exact residual identity and window membership
+PASS: S3-n3 exact residual identity and window membership
+PASS: S3-n4 exact residual identity and window membership
+PASS: S3e the sandwich elimination isolates G(u)-(r/n)G(1) as tail/n
+PASS: S4a the bound c/n has exact limit zero
+PASS: S4b an integer witness n=floor(c/X)+1 gives c/n<X exactly
+PASS: R1 finite proof guard: a positive mesh fits only a positive window
+PASS: N1 target identifier, statement, and step labels
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

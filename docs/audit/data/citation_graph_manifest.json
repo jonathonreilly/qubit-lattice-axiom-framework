@@ -1,6 +1,6 @@
 {
- "edge_count": 14768,
- "node_count": 4402,
+ "edge_count": 14773,
+ "node_count": 4404,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1425,6 +1425,10 @@
   "boundary_law_robustness_note_2026-04-11": {
    "deps_hash": "5168a3e4ccde",
    "out_degree": 1
+  },
+  "bounded_additive_on_interval_linearity_rebuilt_support_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "bounded_admission_registry_proposal_note_2026-06-15": {
    "deps_hash": "e3b0c44298fc",
@@ -14165,6 +14169,10 @@
   "theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_bounded_theorem_note_2026-07-02": {
    "deps_hash": "0f6f95392b53",
    "out_degree": 4
+  },
+  "theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_bounded_theorem_note_2026-07-18": {
+   "deps_hash": "4d31c69320a7",
+   "out_degree": 5
   },
   "theta_quark_determinant_cross_sector_readout_derivation_obligation": {
    "deps_hash": "e3b0c44298fc",

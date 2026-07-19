@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.py
+runner_sha256: c2b0667f37bdf09d8b8bdf04efa5c1f0820d03bb2d1e4a853282debc24bd555f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+PASS: M1 symbolic modulus is multiplicative across blocks
+PASS: M2 exponential and logarithmic bridges are exact on positive domains
+PASS: M3 a power-family instance has G(u)=s*u
+PASS: T1a multiplicative-to-additive direction on strictly positive values
+PASS: T1b additive-to-multiplicative direction through exp
+PASS: T1c the power conclusion is guarded by the explicit P-bdd premise
+PASS: D1 F(1)=F(1)^2 has exactly the values zero and one
+PASS: D2 a zero propagates through the multiplicative factorization
+PASS: INC1 the product-to-sum law at the unit forces F(1)=0
+PASS: INC2 a nonnegative pair summing to zero has no positive member
+PASS: INC3 F(x)=x is multiplicative but gives the exact witness 6!=5
+PASS: A1 signed log is a nonzero full-group product-to-sum solution
+PASS: A2 log is a nonnegative nonzero solution on the inverse-free submonoid
+PASS: A3 disjoint cardinalities add while channel scalars multiply
+PASS: A4 a positive constant solves only the baseline-shifted law
+PASS: A5 sparse support permits a nonzero nonnegative product relation
+PASS: B1 flat and twisted readouts have the same zero log modulus
+PASS: B2 the twisted readout is K-even at the exact conjugate pair
+PASS: B3 identical log modulus does not fix the phase at i
+PASS: B4 the flat readout is multiplicative at (i,-i)
+PASS: B5 the twisted readout is not multiplicative at (i,-i)
+PASS: C1 log modulus reconstructs a strictly positive readout
+PASS: C2 known bounded power class is reconstructed from its log modulus
+PASS: C3 log modulus plus winding reconstructs a character instance
+PASS: C4 the supplied phase-cocycle defect detects nonmultiplicativity
+PASS: N1 current parent retains two route-specific supplied conditions
+PASS: N2 erasure source limits k=0 to the determinant-character family
+PASS: N3 registrability source separates phase-group and Record additivity
+PASS: N4 support source refuses to supply a consumer's boundedness premise
+PASS: N5 target identifier, exact labels, and narrow no-go status
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

@@ -236,7 +236,14 @@ review-only flags contradict the drain's land-end-to-end contract).
    never by hand-merge; a manifest regeneration touches only that generated
    acknowledgment surface, so it needs no new reviewer round — any OTHER
    conflict fails the landing closed and returns the PR to its worker for
-   re-review on a rebased head. Generated-output restoration is a
+   re-review on a rebased head. PROACTIVE rule, not just on conflict: when
+   the commits being landed change any citation-graph dependency (new or
+   edited notes with markdown links), the landing set must INCLUDE a
+   refreshed `docs/audit/data/citation_graph_manifest.json`
+   (`build_citation_graph.py` then `write_citation_graph_manifest.py`,
+   staged into the landing) — otherwise the enforced stage-18 guard blocks
+   every subsequent pipeline run on main until someone lands the
+   acknowledgment for you. Generated-output restoration is a
    COMMIT-time rule (see the audit-compatibility gate), not a landing-time
    step: the commits being landed are already clean. The fail-closed
    landing loop is, exactly:

@@ -5,6 +5,8 @@ producer schemas, lifecycle projection against archived decoys, and a
 hermetic golden check that shadow tagging leaves queue membership and order
 untouched."""
 
+import copy
+import hashlib
 import json
 import sys
 import tempfile
@@ -33,23 +35,27 @@ def _row(status="audited_conditional", snapshot=None, previous=None):
     return row
 
 
+DEP_HASH = hashlib.sha256(b"dep note").hexdigest()
 V1_SNAPSHOT = {
     "schema": "blocker_fingerprint_v1",
     "dep_effective_status": {"dep_a": "unaudited"},
     "dep_claim_type": {"dep_a": "no_go"},
     "dep_claim_scope": {"dep_a": "s"},
-    "dep_axiom_premise_note_hash": {"dep_a": "h1"},
+    "dep_axiom_premise_note_hash": {"dep_a": DEP_HASH},
+    "runner_path": None,
+    "runner_present": False,
+    "runner_hash": None,
     "helper_runner_hashes": {},
     "runner_cache_state": {},
     "artifact_classifier_state": {},
-    "policy_versions": {},
-    "premise_registry_epoch": 1,
+    "policy_versions": caq.fingerprint_policy_versions(),
+    "premise_registry_epoch": caq.fingerprint_premise_registry_epoch(),
 }
 LEGACY_SNAPSHOT = {  # no schema marker: legacy, always dispatch-open
     "dep_effective_status": {"dep_a": "unaudited"},
 }
 DEP_UNCHANGED = {"dep_a": {"effective_status": "unaudited", "claim_type": "no_go",
-                           "claim_scope": "s", "note_hash": "h1"}}
+                           "claim_scope": "s", "note_hash": DEP_HASH}}
 
 
 class LiveWouldParkTest(unittest.TestCase):
@@ -74,18 +80,44 @@ class LiveWouldParkTest(unittest.TestCase):
             self.assertIn("changed", reason)
 
     def test_v1_unparks_on_helper_hash_change(self):
-        snap = dict(V1_SNAPSHOT)
-        snap["helper_runner_hashes"] = {"scripts/h.py": "old"}
-        row = _row(snapshot=snap)
-        row["helper_runner_paths"] = ["scripts/h.py"]
-        row["helper_runner_hashes_current"] = {"scripts/h.py": "new"}
-        parked, reason = caq._live_conditional_would_park(row, dict(DEP_UNCHANGED))
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            helper = root / "scripts" / "h.py"
+            helper.parent.mkdir(parents=True)
+            old_hash = hashlib.sha256(b"old").hexdigest()
+            helper.write_bytes(b"new")
+            snap = copy.deepcopy(V1_SNAPSHOT)
+            snap["helper_runner_hashes"] = {"scripts/h.py": old_hash}
+            snap["runner_cache_state"] = {
+                "scripts/h.py": {
+                    "cache_freshness": "missing",
+                    "cache_runner_sha256": None,
+                    "cache_status": None,
+                    "cache_exit_code": None,
+                }
+            }
+            row = _row(snapshot=snap)
+            row["helper_runner_paths"] = ["scripts/h.py"]
+            with mock.patch.object(caq, "REPO_ROOT", root):
+                parked, reason = caq._live_conditional_would_park(
+                    row, dict(DEP_UNCHANGED)
+                )
         self.assertFalse(parked)
         self.assertIn("helper_runner_hash_changed", reason)
 
     def test_v1_unparks_on_helper_membership_change(self):
-        snap = dict(V1_SNAPSHOT)
-        snap["helper_runner_hashes"] = {"scripts/h.py": "old"}
+        snap = copy.deepcopy(V1_SNAPSHOT)
+        snap["helper_runner_hashes"] = {
+            "scripts/h.py": hashlib.sha256(b"old").hexdigest()
+        }
+        snap["runner_cache_state"] = {
+            "scripts/h.py": {
+                "cache_freshness": "missing",
+                "cache_runner_sha256": None,
+                "cache_status": None,
+                "cache_exit_code": None,
+            }
+        }
         row = _row(snapshot=snap)
         row["helper_runner_paths"] = []  # helper removed
         parked, reason = caq._live_conditional_would_park(row, dict(DEP_UNCHANGED))
@@ -100,11 +132,21 @@ class LiveWouldParkTest(unittest.TestCase):
         self.assertEqual(reason, "dep_membership_changed")
 
     def test_v1_unparks_on_each_opaque_channel(self):
-        for snap_key, current_key in caq.FINGERPRINT_V1_OPAQUE_CHANNELS:
-            row = _row(snapshot=dict(V1_SNAPSHOT))
+        for snap_key, _current_key in caq.FINGERPRINT_V1_OPAQUE_CHANNELS:
+            row = _row(snapshot=copy.deepcopy(V1_SNAPSHOT))
             row["deps"] = ["dep_a"]
-            row[current_key] = {"changed": True} if snap_key != "premise_registry_epoch" else 2
-            parked, reason = caq._live_conditional_would_park(row, dict(DEP_UNCHANGED))
+            current = caq.fingerprint_v1_current_channels(row)
+            current[snap_key] = (
+                {"changed": True}
+                if snap_key != "premise_registry_epoch"
+                else hashlib.sha256(b"changed").hexdigest()
+            )
+            with mock.patch.object(
+                caq, "fingerprint_v1_current_channels", return_value=current
+            ):
+                parked, reason = caq._live_conditional_would_park(
+                    row, dict(DEP_UNCHANGED)
+                )
             self.assertFalse(parked, snap_key)
             self.assertEqual(reason, f"{snap_key}_changed")
 
@@ -252,6 +294,14 @@ class GoldenQueueInvarianceTest(unittest.TestCase):
     def test_membership_and_order_unchanged_by_shadow_tags(self):
         with tempfile.TemporaryDirectory() as tmp:
             base = Path(tmp)
+            parked_snapshot = copy.deepcopy(V1_SNAPSHOT)
+            for key in (
+                "dep_effective_status",
+                "dep_claim_type",
+                "dep_claim_scope",
+                "dep_axiom_premise_note_hash",
+            ):
+                parked_snapshot[key] = {}
             rows = {
                 # cond_parked and plain_high compete in the SAME
                 # (criticality, ready) band: a shadow-derived sort term would
@@ -263,17 +313,7 @@ class GoldenQueueInvarianceTest(unittest.TestCase):
                                 "transitive_descendants": 4,
                                 "load_bearing_score": 0.5,
                                 "note_path": "docs/B.md",
-                                "audit_state_snapshot": {
-                                    "schema": "blocker_fingerprint_v1",
-                                    "dep_effective_status": {},
-                                    "dep_claim_type": {},
-                                    "dep_claim_scope": {},
-                                    "dep_axiom_premise_note_hash": {},
-                                    "helper_runner_hashes": {},
-                                    "runner_cache_state": {},
-                                    "artifact_classifier_state": {},
-                                    "policy_versions": {},
-                                    "premise_registry_epoch": 1}},
+                                "audit_state_snapshot": parked_snapshot},
                 "plain_high": {"audit_status": "unaudited",
                                "criticality": "high", "deps": [],
                                "transitive_descendants": 2,
@@ -297,6 +337,14 @@ class GoldenQueueInvarianceTest(unittest.TestCase):
             )
             with mock.patch.multiple(caq, **patches), \
                     mock.patch.object(caq, "REPO_ROOT", base), \
+                    mock.patch.object(
+                        caq,
+                        "fingerprint_v1_current_channels",
+                        return_value={
+                            key: parked_snapshot[key]
+                            for key, _current in caq.FINGERPRINT_V1_OPAQUE_CHANNELS
+                        },
+                    ), \
                     mock.patch.object(caq.ledger_io, "ensure_cache", lambda: None):
                 caq.main()
             queue = json.loads((base / "audit_queue.json").read_text())

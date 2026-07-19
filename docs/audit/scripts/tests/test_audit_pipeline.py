@@ -690,6 +690,23 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
     module.REPO_ROOT = tmp_root
     module.DATA_DIR = tmp_root / "docs" / "audit" / "data"
     module.LEDGER_PATH = module.DATA_DIR / "audit_ledger.json"
+    # Conditional/failed verdict writers now hash required policy surfaces
+    # fail-loudly. General apply-audit fixtures provide real minimal surfaces;
+    # dedicated fingerprint tests separately exercise missing/read failures.
+    if hasattr(module, "snapshot_audit_state"):
+        prompt = tmp_root / "docs" / "audit" / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
+        prompt.parent.mkdir(parents=True, exist_ok=True)
+        if not prompt.exists():
+            prompt.write_text("# Fixture audit prompt\n", encoding="utf-8")
+        registry = module.DATA_DIR / "axiom_premise_nodes.json"
+        registry.parent.mkdir(parents=True, exist_ok=True)
+        if not registry.exists():
+            registry.write_text(
+                json.dumps({"schema_version": 1, "canonical_ids": []}) + "\n",
+                encoding="utf-8",
+            )
+        module.AXIOM_PREMISE_NODES_PATH = registry
+        module._AXIOM_PREMISE_IDS = None
     # Writers persist through the sharded ledger; point the module's OWN
     # bound ledger_io instance at the fixture data dir so tests never touch
     # the real repository shards. (_import force-fresh-imports, so a fresh

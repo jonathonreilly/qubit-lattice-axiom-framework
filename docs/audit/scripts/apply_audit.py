@@ -42,10 +42,8 @@ import audit_invocation
 
 import ledger_io
 
-# Shared constants/validation for the blocker_fingerprint_v1 stamp: the
-# writer imports the comparator's required-keys table so the two can never
-# drift (dispatch-retarget design note, 2026-07-16, section 3b).
-import classify_runner_passes
+# Shared producers and the single blocker_fingerprint_v1 validation predicate
+# used by both the verdict writer and the live comparator.
 import compute_audit_queue
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -449,7 +447,7 @@ def _canonicalize_existing_auditor_family(family: str | None) -> str | None:
 
 
 ALLOWED_JUDICIAL_SIDES = {"first", "second", "hybrid", "neither"}
-AUDIT_TUPLE_AGREEMENT_SCHEMA = "audit_tuple_v2"
+AUDIT_TUPLE_AGREEMENT_SCHEMA = compute_audit_queue.AUDIT_TUPLE_AGREEMENT_SCHEMA
 JUDICIAL_REVIEWABLE_STATUSES = {
     "disagreement",
     "third_confirmed_first",
@@ -711,102 +709,24 @@ def judicial_summary_from_blob(judgment: dict) -> dict:
 FINGERPRINT_STAMP_VERDICTS = {"audited_conditional", "audited_failed"}
 
 
-def _sha256_file(path: Path) -> str | None:
-    """SHA-256 of a file's bytes; None when unreadable/missing."""
-    try:
-        return hashlib.sha256(path.read_bytes()).hexdigest()
-    except OSError:
-        return None
-
-
 def _fingerprint_policy_versions() -> dict:
-    """Packet/prompt/gate policy versions in force at verdict-write time.
-
-    Computed from the live policy surfaces during this apply pass — never
-    from a cached report. Content hashes are used where no declared version
-    constant exists, so any policy movement is visible as a channel delta.
-    """
-    return {
-        "audit_tuple_agreement_schema": AUDIT_TUPLE_AGREEMENT_SCHEMA,
-        "n8_source_corpus_version": no_go_discipline_gate.N8_SOURCE_CORPUS_VERSION,
-        "no_go_discipline_gate_sha256": _sha256_file(
-            Path(no_go_discipline_gate.__file__)
-        ),
-        "audit_prompt_template_sha256": _sha256_file(
-            REPO_ROOT / "docs" / "audit" / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
-        ),
-    }
+    """Shared, strict policy identity producer used by writer/comparator."""
+    return compute_audit_queue.fingerprint_policy_versions(REPO_ROOT)
 
 
 def _fingerprint_premise_registry_epoch() -> str:
-    """Content identity of the premise registry at verdict-write time.
-
-    The registry (axiom_premise_nodes.json) carries no epoch counter, so the
-    honest epoch marker is its content hash: it changes exactly when the
-    registry changes, and never otherwise (deterministic, timestamp-free).
-    """
-    digest = _sha256_file(
-        REPO_ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
-    )
-    return digest if digest is not None else "premise_registry_absent"
+    """Shared, strict premise-registry content identity producer."""
+    return compute_audit_queue.fingerprint_premise_registry_epoch(REPO_ROOT)
 
 
 def _fingerprint_runner_cache_state(row: dict) -> dict:
-    """Per-path runner-cache identity for the row's runner and helpers.
-
-    Records the SHA-pinned cache header fields plus freshness, read from
-    disk during this apply pass (logs/runner-cache is the canonical cache
-    surface; see runner_cache.py). Header fields carry no timestamps, so
-    the recorded state is deterministic for a given repo state.
-    """
-    state: dict[str, dict] = {}
-    paths = [
-        p
-        for p in [row.get("runner_path"), *(row.get("helper_runner_paths") or [])]
-        if p
-    ]
-    for path in sorted(set(paths)):
-        _cache_path, header, _body = runner_cache.load_cache(path)
-        header = header or {}
-        state[path] = {
-            "cache_freshness": runner_cache.cache_status(path),
-            "cache_runner_sha256": header.get("runner_sha256"),
-            "cache_status": header.get("status"),
-            "cache_exit_code": header.get("exit_code"),
-        }
-    return state
+    """Shared per-path runner-cache identity producer."""
+    return compute_audit_queue.fingerprint_runner_cache_state(row)
 
 
 def _fingerprint_artifact_classifier_state(row: dict) -> dict:
-    """Static classifier view of the row's runner at verdict-write time.
-
-    Recomputed from the runner source via classify_runner_passes (the same
-    routines the pipeline classifier uses), never read from the generated
-    runner_classification.json — that file may be stale relative to this
-    apply pass. Mirrors the per_runner entry shape.
-    """
-    runner_path = row.get("runner_path")
-    if not runner_path:
-        return {}
-    p = REPO_ROOT / runner_path
-    if not p.exists():
-        return {"runner_path": runner_path, "exists": False}
-    try:
-        source = p.read_text(encoding="utf-8", errors="replace")
-    except OSError:
-        return {"runner_path": runner_path, "exists": True, "read_error": True}
-    counts = classify_runner_passes.classify_source(source)
-    dominant = max(counts, key=lambda k: counts[k]) if any(counts.values()) else None
-    return {
-        "runner_path": runner_path,
-        "exists": True,
-        "counts": counts,
-        "assert_count": classify_runner_passes.count_assert_pass_lines(source),
-        "dominant_class": dominant,
-        "decoration_candidate": (
-            counts["D"] == 0 and counts["C"] == 0 and counts["A"] + counts["B"] > 0
-        ),
-    }
+    """Shared strict static-classifier producer."""
+    return compute_audit_queue.fingerprint_artifact_classifier_state(row, REPO_ROOT)
 
 
 def snapshot_audit_state(row: dict, rows: dict[str, dict]) -> dict:
@@ -876,26 +796,32 @@ def snapshot_audit_state(row: dict, rows: dict[str, dict]) -> dict:
     # re-audited. Every channel value above and below is computed during
     # this apply pass; nothing is copied from a stale cache or report.
     if row.get("audit_status") in FINGERPRINT_STAMP_VERDICTS:
+        runner_path, runner_present, runner_hash = (
+            compute_audit_queue.fingerprint_runner_state(row, REPO_ROOT)
+        )
         snapshot["schema"] = compute_audit_queue.BLOCKER_FINGERPRINT_V1
+        snapshot["runner_path"] = runner_path
+        snapshot["runner_present"] = runner_present
+        snapshot["runner_hash"] = runner_hash
+        snapshot["helper_runner_hashes"] = {
+            helper_path: compute_audit_queue.fingerprint_runner_state(
+                {"runner_path": helper_path}, REPO_ROOT
+            )[2]
+            for helper_path in sorted(set(row.get("helper_runner_paths") or []))
+        }
         snapshot["runner_cache_state"] = _fingerprint_runner_cache_state(row)
         snapshot["artifact_classifier_state"] = (
             _fingerprint_artifact_classifier_state(row)
         )
         snapshot["policy_versions"] = _fingerprint_policy_versions()
         snapshot["premise_registry_epoch"] = _fingerprint_premise_registry_epoch()
-        # Writer-side mirror of the comparator's validation matrix: a v1
-        # writer that omits or ill-types a required baseline is a bug and
-        # must fail LOUDLY at write time, never land a snapshot the
-        # comparator would explode on (FingerprintV1Invalid downstream).
-        problems = [
-            key
-            for key, typ in compute_audit_queue.FINGERPRINT_V1_REQUIRED_KEYS.items()
-            if key not in snapshot or not isinstance(snapshot.get(key), typ)
-        ]
+        # The writer executes the comparator-owned predicate itself. There is
+        # no mirrored type loop that can silently drift from read-time rules.
+        problems = compute_audit_queue.fingerprint_v1_problems(snapshot)
         if problems:
             raise compute_audit_queue.FingerprintV1Invalid(
-                "refusing to write an incomplete/ill-typed v1 snapshot "
-                f"(missing/ill-typed baselines {problems}) on "
+                "refusing to write an invalid v1 snapshot "
+                f"(baseline problems {problems}) on "
                 f"{row.get('note_path') or row.get('claim_id')}"
             )
     return snapshot

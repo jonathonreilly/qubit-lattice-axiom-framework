@@ -83,6 +83,7 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import runner_cache as rc  # noqa: E402
 import no_go_discipline_gate  # noqa: E402
 
+import compute_audit_queue
 import ledger_io
 
 
@@ -437,9 +438,39 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
 
     snap = row.get("audit_state_snapshot")
     if snap is not None:
+        is_v1 = snap.get("schema") == compute_audit_queue.BLOCKER_FINGERPRINT_V1
+        if is_v1:
+            problems = compute_audit_queue.fingerprint_v1_problems(snap)
+            if problems:
+                raise compute_audit_queue.FingerprintV1Invalid(
+                    f"invalid v1 snapshot on {row.get('claim_id')}: {problems}"
+                )
+            snap_runner_path = snap["runner_path"]
+            cur_runner_path = row.get("runner_path") or None
+            if snap_runner_path != cur_runner_path:
+                return "runner_path_changed"
+            snap_runner_present = snap["runner_present"]
+            cur_runner_hash = rc.runner_sha256(cur_runner_path or "")
+            cur_runner_present = cur_runner_hash is not None
+            if snap_runner_present != cur_runner_present:
+                before = "present" if snap_runner_present else "missing"
+                after = "present" if cur_runner_present else "missing"
+                return f"runner_presence_changed:{before}->{after}"
+            if snap["runner_hash"] != cur_runner_hash:
+                before = snap["runner_hash"]
+                before_short = before[:8] if isinstance(before, str) else "missing"
+                after_short = (
+                    cur_runner_hash[:8]
+                    if isinstance(cur_runner_hash, str)
+                    else "missing"
+                )
+                return f"runner_hash_changed:{before_short}->{after_short}"
+
         snap_runner_hash = snap.get("runner_hash")
         cur_runner_hash = rc.runner_sha256(row.get("runner_path") or "")
         if (
+            not is_v1
+            and
             snap_runner_hash is not None
             and cur_runner_hash is not None
             and snap_runner_hash != cur_runner_hash

@@ -21,10 +21,15 @@ Writes:
 """
 from __future__ import annotations
 
+import hashlib
 import json
+import re
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+import classify_runner_passes
+import no_go_discipline_gate
 import premise_nodes
 import ledger_io
 
@@ -34,6 +39,9 @@ LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 CYCLE_INVENTORY_PATH = DATA_DIR / "cycle_inventory.json"
 QUEUE_JSON = DATA_DIR / "audit_queue.json"
 QUEUE_MD = REPO_ROOT / "docs" / "audit" / "AUDIT_QUEUE.md"
+
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+import runner_cache  # noqa: E402
 
 
 CRITICALITY_RANK = {"critical": 3, "high": 2, "medium": 1, "leaf": 0}
@@ -155,27 +163,42 @@ def cycle_break_targets(rows: dict[str, dict]) -> list[dict]:
 
 
 BLOCKER_FINGERPRINT_V1 = "blocker_fingerprint_v1"
-# The design note's v1 channel baselines. A snapshot carrying the v1 marker
-# must have every one of these keys present (fail LOUDLY otherwise); a
-# snapshot without the marker is legacy and always dispatch-open.
+AUDIT_TUPLE_AGREEMENT_SCHEMA = "audit_tuple_v2"
+_SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
+_POLICY_VERSION_KEYS = {
+    "audit_tuple_agreement_schema",
+    "n8_source_corpus_version",
+    "no_go_discipline_gate_sha256",
+    "audit_prompt_template_sha256",
+}
+_RUNNER_CACHE_ENTRY_KEYS = {
+    "cache_freshness",
+    "cache_runner_sha256",
+    "cache_status",
+    "cache_exit_code",
+}
+_CLASSIFIER_COUNT_KEYS = {"A", "B", "C", "D"}
+
+# A v1 marker promises a complete, internally consistent baseline. Keep the
+# public table for callers/tests, but put all substantive validation in
+# fingerprint_v1_problems() so writer and comparator execute one predicate.
 FINGERPRINT_V1_REQUIRED_KEYS = {
-    # key -> required type(s); every key must be present AND well-typed,
-    # otherwise the v1 snapshot is structurally invalid (loud failure).
     "dep_effective_status": dict,
     "dep_claim_type": dict,
     "dep_claim_scope": dict,
     "dep_axiom_premise_note_hash": dict,
+    "runner_path": (str, type(None)),
+    "runner_present": bool,
+    "runner_hash": (str, type(None)),
     "helper_runner_hashes": dict,
     "runner_cache_state": dict,
     "artifact_classifier_state": dict,
     "policy_versions": dict,
-    "premise_registry_epoch": (int, str),
+    "premise_registry_epoch": str,
 }
-# Opaque v1 channels compared by equality against the row's CURRENT
-# projection field (populated by the v1-stamping implementation phase;
-# synthetic fixtures populate it in tests). An absent current projection
-# compares as unchanged — the stamping writer and these projections mature
-# together, and the comparator itself is complete and mutation-testable now.
+# The second element is retained as a compatibility label for older test and
+# report consumers. The comparator no longer trusts synthetic row projections;
+# it recomputes every channel from the current repository state.
 FINGERPRINT_V1_OPAQUE_CHANNELS = (
     ("runner_cache_state", "runner_cache_state_current"),
     ("artifact_classifier_state", "artifact_classifier_state_current"),
@@ -188,6 +211,248 @@ class FingerprintV1Invalid(ValueError):
     """A snapshot marked blocker_fingerprint_v1 is incomplete or malformed.
     Per the design note's validation matrix this fails LOUDLY (a v1 writer
     that omits a required baseline is a bug, never a silent fail-open)."""
+
+
+def _is_sha256(value: object) -> bool:
+    return isinstance(value, str) and bool(_SHA256_RE.fullmatch(value))
+
+
+def _sha256_file(path: Path) -> str:
+    """Read a required policy/input surface and return its content identity.
+
+    OSError intentionally propagates: a v1 snapshot must never turn an
+    unreadable required surface into a valid-looking parked baseline.
+    """
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def fingerprint_policy_versions(repo_root: Path | None = None) -> dict:
+    root = REPO_ROOT if repo_root is None else repo_root
+    return {
+        "audit_tuple_agreement_schema": AUDIT_TUPLE_AGREEMENT_SCHEMA,
+        "n8_source_corpus_version": no_go_discipline_gate.N8_SOURCE_CORPUS_VERSION,
+        "no_go_discipline_gate_sha256": _sha256_file(
+            Path(no_go_discipline_gate.__file__)
+        ),
+        "audit_prompt_template_sha256": _sha256_file(
+            root / "docs" / "audit" / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
+        ),
+    }
+
+
+def fingerprint_premise_registry_epoch(repo_root: Path | None = None) -> str:
+    root = REPO_ROOT if repo_root is None else repo_root
+    return _sha256_file(
+        root / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
+    )
+
+
+def fingerprint_runner_cache_state(row: dict) -> dict:
+    state: dict[str, dict] = {}
+    paths = [
+        path
+        for path in [
+            row.get("runner_path"),
+            *(row.get("helper_runner_paths") or []),
+        ]
+        if isinstance(path, str) and path
+    ]
+    for path in sorted(set(paths)):
+        _cache_path, header, _body = runner_cache.load_cache(path)
+        header = header or {}
+        state[path] = {
+            "cache_freshness": runner_cache.cache_status(path),
+            "cache_runner_sha256": header.get("runner_sha256"),
+            "cache_status": header.get("status"),
+            "cache_exit_code": header.get("exit_code"),
+        }
+    return state
+
+
+def fingerprint_artifact_classifier_state(
+    row: dict, repo_root: Path | None = None
+) -> dict:
+    root = REPO_ROOT if repo_root is None else repo_root
+    runner_path = row.get("runner_path")
+    if not runner_path:
+        return {}
+    path = root / runner_path
+    if not path.exists():
+        return {"runner_path": runner_path, "exists": False}
+    source = path.read_text(encoding="utf-8", errors="replace")
+    counts = classify_runner_passes.classify_source(source)
+    dominant = max(counts, key=lambda key: counts[key]) if any(counts.values()) else None
+    return {
+        "runner_path": runner_path,
+        "exists": True,
+        "counts": counts,
+        "assert_count": classify_runner_passes.count_assert_pass_lines(source),
+        "dominant_class": dominant,
+        "decoration_candidate": (
+            counts["D"] == 0
+            and counts["C"] == 0
+            and counts["A"] + counts["B"] > 0
+        ),
+    }
+
+
+def fingerprint_runner_state(
+    row: dict, repo_root: Path | None = None
+) -> tuple[str | None, bool, str | None]:
+    root = REPO_ROOT if repo_root is None else repo_root
+    runner_path = row.get("runner_path") or None
+    if runner_path is None:
+        return None, False, None
+    path = root / runner_path
+    if not path.exists():
+        return runner_path, False, None
+    return runner_path, True, _sha256_file(path)
+
+
+def fingerprint_v1_current_channels(
+    row: dict, repo_root: Path | None = None
+) -> dict:
+    root = REPO_ROOT if repo_root is None else repo_root
+    return {
+        "runner_cache_state": fingerprint_runner_cache_state(row),
+        "artifact_classifier_state": fingerprint_artifact_classifier_state(row, root),
+        "policy_versions": fingerprint_policy_versions(root),
+        "premise_registry_epoch": fingerprint_premise_registry_epoch(root),
+    }
+
+
+def fingerprint_v1_problems(snapshot: object) -> list[str]:
+    """Return every structural defect in a purported v1 snapshot."""
+    if not isinstance(snapshot, dict):
+        return ["snapshot:not_object"]
+    problems: list[str] = []
+    if snapshot.get("schema") != BLOCKER_FINGERPRINT_V1:
+        problems.append("schema:not_blocker_fingerprint_v1")
+    for key, expected_type in FINGERPRINT_V1_REQUIRED_KEYS.items():
+        if key not in snapshot:
+            problems.append(f"{key}:missing")
+        elif not isinstance(snapshot[key], expected_type):
+            problems.append(f"{key}:wrong_type")
+
+    if problems:
+        return problems
+
+    dep_status = snapshot["dep_effective_status"]
+    dep_type = snapshot["dep_claim_type"]
+    dep_scope = snapshot["dep_claim_scope"]
+    dep_axiom_hash = snapshot["dep_axiom_premise_note_hash"]
+    if not all(isinstance(k, str) and isinstance(v, str) and v for k, v in dep_status.items()):
+        problems.append("dep_effective_status:invalid_entry")
+    if set(dep_type) != set(dep_status):
+        problems.append("dep_claim_type:key_mismatch")
+    if set(dep_scope) != set(dep_status):
+        problems.append("dep_claim_scope:key_mismatch")
+    if not all(
+        isinstance(k, str) and (v is None or isinstance(v, str))
+        for k, v in dep_type.items()
+    ):
+        problems.append("dep_claim_type:invalid_entry")
+    if not all(
+        isinstance(k, str) and (v is None or isinstance(v, str))
+        for k, v in dep_scope.items()
+    ):
+        problems.append("dep_claim_scope:invalid_entry")
+    if not set(dep_axiom_hash).issubset(dep_status):
+        problems.append("dep_axiom_premise_note_hash:not_dependency_subset")
+    if not all(isinstance(k, str) and _is_sha256(v) for k, v in dep_axiom_hash.items()):
+        problems.append("dep_axiom_premise_note_hash:invalid_entry")
+
+    runner_path = snapshot["runner_path"]
+    runner_present = snapshot["runner_present"]
+    runner_hash = snapshot["runner_hash"]
+    if runner_path is not None and not runner_path:
+        problems.append("runner_path:empty")
+    if type(runner_present) is not bool:  # bool must not be admitted as int-like data
+        problems.append("runner_present:not_bool")
+    if runner_present and not _is_sha256(runner_hash):
+        problems.append("runner_hash:required_sha256_when_present")
+    if not runner_present and runner_hash is not None:
+        problems.append("runner_hash:must_be_null_when_absent")
+    if runner_present and runner_path is None:
+        problems.append("runner_path:required_when_present")
+
+    helper_hashes = snapshot["helper_runner_hashes"]
+    if not all(
+        isinstance(path, str)
+        and bool(path)
+        and (digest is None or _is_sha256(digest))
+        for path, digest in helper_hashes.items()
+    ):
+        problems.append("helper_runner_hashes:invalid_entry")
+
+    cache_state = snapshot["runner_cache_state"]
+    expected_cache_paths = set(helper_hashes)
+    if runner_path is not None:
+        expected_cache_paths.add(runner_path)
+    if set(cache_state) != expected_cache_paths:
+        problems.append("runner_cache_state:path_set_mismatch")
+    for path, entry in cache_state.items():
+        if not isinstance(path, str) or not isinstance(entry, dict):
+            problems.append("runner_cache_state:invalid_entry")
+            continue
+        if set(entry) != _RUNNER_CACHE_ENTRY_KEYS:
+            problems.append(f"runner_cache_state:{path}:wrong_keys")
+            continue
+        if entry["cache_freshness"] not in {
+            "fresh", "missing", "corrupt", "sha_mismatch"
+        }:
+            problems.append(f"runner_cache_state:{path}:bad_freshness")
+        cache_sha = entry["cache_runner_sha256"]
+        if cache_sha is not None and not _is_sha256(cache_sha):
+            problems.append(f"runner_cache_state:{path}:bad_sha256")
+        if entry["cache_status"] is not None and not isinstance(entry["cache_status"], str):
+            problems.append(f"runner_cache_state:{path}:bad_status")
+        if entry["cache_exit_code"] is not None and not isinstance(entry["cache_exit_code"], str):
+            problems.append(f"runner_cache_state:{path}:bad_exit_code")
+
+    classifier = snapshot["artifact_classifier_state"]
+    if runner_path is None:
+        if classifier != {}:
+            problems.append("artifact_classifier_state:unexpected_without_runner")
+    elif not runner_present:
+        if classifier != {"runner_path": runner_path, "exists": False}:
+            problems.append("artifact_classifier_state:bad_missing_runner_shape")
+    else:
+        expected_classifier_keys = {
+            "runner_path", "exists", "counts", "assert_count",
+            "dominant_class", "decoration_candidate",
+        }
+        if set(classifier) != expected_classifier_keys:
+            problems.append("artifact_classifier_state:wrong_keys")
+        else:
+            counts = classifier["counts"]
+            if classifier["runner_path"] != runner_path or classifier["exists"] is not True:
+                problems.append("artifact_classifier_state:runner_mismatch")
+            if not isinstance(counts, dict) or set(counts) != _CLASSIFIER_COUNT_KEYS:
+                problems.append("artifact_classifier_state:bad_counts")
+            elif not all(type(value) is int and value >= 0 for value in counts.values()):
+                problems.append("artifact_classifier_state:bad_count_value")
+            if type(classifier["assert_count"]) is not int or classifier["assert_count"] < 0:
+                problems.append("artifact_classifier_state:bad_assert_count")
+            if classifier["dominant_class"] not in _CLASSIFIER_COUNT_KEYS | {None}:
+                problems.append("artifact_classifier_state:bad_dominant_class")
+            if type(classifier["decoration_candidate"]) is not bool:
+                problems.append("artifact_classifier_state:bad_decoration_candidate")
+
+    policy = snapshot["policy_versions"]
+    if set(policy) != _POLICY_VERSION_KEYS:
+        problems.append("policy_versions:wrong_keys")
+    else:
+        if not isinstance(policy["audit_tuple_agreement_schema"], str) or not policy["audit_tuple_agreement_schema"]:
+            problems.append("policy_versions:bad_audit_tuple_schema")
+        if not isinstance(policy["n8_source_corpus_version"], str) or not policy["n8_source_corpus_version"]:
+            problems.append("policy_versions:bad_n8_version")
+        for key in ("no_go_discipline_gate_sha256", "audit_prompt_template_sha256"):
+            if not _is_sha256(policy[key]):
+                problems.append(f"policy_versions:{key}:bad_sha256")
+    if not _is_sha256(snapshot["premise_registry_epoch"]):
+        problems.append("premise_registry_epoch:not_sha256")
+    return problems
 
 
 def _live_conditional_would_park(row: dict, rows: dict[str, dict]) -> tuple[bool, str]:
@@ -212,13 +477,10 @@ def _live_conditional_would_park(row: dict, rows: dict[str, dict]) -> tuple[bool
     version = snapshot.get("schema")
     if version != BLOCKER_FINGERPRINT_V1:
         return False, "fail_open_legacy_unversioned"
-    problems = [
-        k for k, typ in FINGERPRINT_V1_REQUIRED_KEYS.items()
-        if k not in snapshot or not isinstance(snapshot.get(k), typ)
-    ]
+    problems = fingerprint_v1_problems(snapshot)
     if problems:
         raise FingerprintV1Invalid(
-            f"v1 snapshot missing/ill-typed required baselines {problems} on "
+            f"v1 snapshot has invalid baselines {problems} on "
             f"{row.get('note_path') or row.get('claim_id')}"
         )
     # dependency MEMBERSHIP: an added or removed dependency is movement
@@ -238,19 +500,50 @@ def _live_conditional_would_park(row: dict, rows: dict[str, dict]) -> tuple[bool
         for dep, then_value in snapshot[snap_field].items():
             if dep in rows and rows[dep].get(field) != then_value:
                 return False, f"{snap_field}_changed:{dep}"
-    # helper-runner MEMBERSHIP and hashes: path add/remove is movement;
-    # hash values compare against the current projection when present
+    # Primary runner identity includes configured path, presence, and bytes.
+    # These distinctions prevent present/missing and byte-identical path
+    # replacement from being mistaken for an unchanged blocker surface.
+    try:
+        now_runner_path, now_runner_present, now_runner_hash = fingerprint_runner_state(
+            row
+        )
+    except OSError as exc:
+        raise FingerprintV1Invalid(
+            f"cannot read current primary runner for v1 comparison: {exc}"
+        ) from exc
+    if now_runner_path != snapshot["runner_path"]:
+        return False, "runner_path_changed"
+    if now_runner_present != snapshot["runner_present"]:
+        return False, "runner_presence_changed"
+    if now_runner_hash != snapshot["runner_hash"]:
+        return False, "runner_hash_changed"
+
+    # Helper-runner membership and bytes are recomputed from the live repo.
     then_helpers = snapshot["helper_runner_hashes"]
     now_helper_paths = set(row.get("helper_runner_paths") or [])
     if set(then_helpers) != now_helper_paths:
         return False, "helper_runner_membership_changed"
-    now_helpers = row.get("helper_runner_hashes_current") or {}
     for path, then_hash in then_helpers.items():
-        if path in now_helpers and now_helpers[path] != then_hash:
+        try:
+            helper_path = REPO_ROOT / path
+            now_hash = _sha256_file(helper_path) if helper_path.exists() else None
+        except OSError as exc:
+            raise FingerprintV1Invalid(
+                f"cannot read current helper runner {path!r}: {exc}"
+            ) from exc
+        if now_hash != then_hash:
             return False, f"helper_runner_hash_changed:{path}"
-    # opaque v1 channels vs current projections
-    for snap_key, current_key in FINGERPRINT_V1_OPAQUE_CHANNELS:
-        if current_key in row and row[current_key] != snapshot[snap_key]:
+
+    # Recompute every remaining v1 channel. Stored `*_current` row fields are
+    # deliberately ignored: no cached/synthetic projection may certify a park.
+    try:
+        current_channels = fingerprint_v1_current_channels(row)
+    except OSError as exc:
+        raise FingerprintV1Invalid(
+            f"cannot read current v1 blocker surface: {exc}"
+        ) from exc
+    for snap_key, _compat_current_key in FINGERPRINT_V1_OPAQUE_CHANNELS:
+        if current_channels[snap_key] != snapshot[snap_key]:
             return False, f"{snap_key}_changed"
     return True, "no_recorded_blocker_movement"
 

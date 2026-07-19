@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_corner_class_factorization_discharge_2026_07_18.py
+runner_sha256: 5b2affe404c7eb0204dd8991c373e9f725265aa20c504de9858215732072ed6b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.46
+status: ok
+----- stdout -----
+PASS: D1 occupation action of Gamma(t) = e^{dGamma(ln t)}: diagonal (1, l2, l1, l1*l2), and Tr = (1+l1)(1+l2) = det(1+t)
+PASS: D2 non-diagonal realization: Tr Gamma(t) = det(1+t) = 25/4 for a rotated positive matrix with spectrum {1/4, 4}
+PASS: D3 multiplicativity on COMMUTING positive pairs (symbolic diagonal family) with the domain rejector: a non-commuting positive product is non-Hermitian (outside the definition)
+PASS: D4 log identity -log Gamma(t) = dGamma(-log t): two-mode diagonal exemplar supporting the written proof (symbolic)
+PASS: D5 composition H_MB = -log Gamma(e^{-2 a_tau h})/(2 a_tau) = dGamma(h): two-mode diagonal exemplar (symbolic), and -log t = 2E at a_tau = 1
+PASS: D6 positivity window from the mass gap: m^2 + s^2 >= m^2 (symbolic), E >= arcsinh(m) with a strict instance, and 0 < t <= e^{-2 arcsinh(m)} < 1 at m = 1/2 and m = 2
+PASS: D7 native 1D envelope: shell count 2 composed as 2*2*2 = 8, telescoping gate, instance 9K at x = 1/2, BOTH threshold directions (mu = eta -/+ delta instances), and the aggregate n_ch * 9K with the identical-3-channel value 27K
+PASS: D8 the intertwiner pins the functor: e^{dGamma} satisfies vacuum fixing and the creation intertwiner (symbolic); the review's permutation-conjugated functor preserves the trace (det(1+t) = 72) but BREAKS the log identity (two-particle blocks 6,10 swapped)
+PASS: D9 periodic-wrap exhibit: the wrap activity ratio between L = 41 and L = 9 is e^{8} > 1 (grows without bound), so the volume-uniform envelope is scoped to open boundaries
+PASS: N1 corner free note: the displayed identity, kernels, per-channel form, tensor product, trace product, 1+1d scope, and the fork-independence sentence
+PASS: N2 corner gauge note: trace correspondence, lambda = 1 forcing, fixed-background firewall
+PASS: N3 engine note: the many-body definition sentence, the import row this note retires, the hedge, and the spectrum sentence
+PASS: N3b RP-positivity note: the defining intertwiner and the in-repo derivation sentence (the uniqueness authority)
+PASS: N4 CT note: h definition, arcsinh form, and the mass-gap display sourcing strict positivity
+PASS: N5 sibling block08: the hypothesis discharged, the scalar-drop, and the counterexample marking the boundary
+PASS: N6 axiom memo supplies no dynamics
+PASS: N7 target identifiers, dimension scoping, glyph disambiguation, Status
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

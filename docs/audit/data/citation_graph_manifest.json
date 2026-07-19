@@ -1,6 +1,6 @@
 {
- "edge_count": 14722,
- "node_count": 4389,
+ "edge_count": 14738,
+ "node_count": 4395,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2550,6 +2550,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "coupled_periodic_two_seam_su3_wilson_staggered_reflected_gram_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "1f68cb010723",
+   "out_degree": 3
+  },
   "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17": {
    "deps_hash": "381c41107f12",
    "out_degree": 2
@@ -4869,6 +4873,14 @@
   "free_sector_spin_statistics_level1_mechanism_and_reconstruction_reduction_bounded_note_2026-05-30": {
    "deps_hash": "d1d61e252dcd",
    "out_degree": 6
+  },
+  "free_staggered_3plus1_reflected_gram_car_fock_representation_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "ea739f7e2b20",
+   "out_degree": 1
+  },
+  "free_staggered_3plus1_same_action_transfer_gaussian_continuum_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "73a7a5f4762a",
+   "out_degree": 5
   },
   "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17": {
    "deps_hash": "02cde96f4a48",
@@ -9898,6 +9910,10 @@
    "deps_hash": "4a473da69b2d",
    "out_degree": 7
   },
+  "periodic_staggered_os_circle_failure_twisted_antiperiodic_free_repair_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "aebdd24cfc28",
+   "out_degree": 3
+  },
   "persistent_inertial_object_probe_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -14286,6 +14302,10 @@
    "deps_hash": "3f7cd343351a",
    "out_degree": 7
   },
+  "two_band_bdg_strict_time_flat_spectrum_and_cubic_scalar_boundary_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13": {
    "deps_hash": "6f1ba1004e07",
    "out_degree": 1
@@ -14305,6 +14325,10 @@
   "two_field_retarded_probe_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "two_seam_forest_gauge_polyakov_holonomy_preservation_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "5fc9a31251f2",
+   "out_degree": 3
   },
   "two_sign_comparison_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_real_record_no_i_unification_2026_06_04.py
+runner_sha256: 04a06167b14bf025323f4b0be7dc53a59954d0799c8d138898c84ce8824f8794
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
 
 === (C) flavor: real C3-invariant record algebra is 2-dim -> 2-sector ===
 [PASS] real C3-invariant operator a*I + b*S has a DEGENERATE doublet (1 + 2 equal eigs)  [eigs=[0.6 0.6 1.8]]
@@ -35,4 +43,7 @@ LOAD-BEARING CLAIM (Layer 1, forced by the proposed clarification):
   is the Quantum axiom's, the Record is its real readout.
 RESIDUAL (Layer 2, explicitly NOT forced here): r=1/2 EXACTLY = the 2-sector
   full bit (equipartition) -- to be derived (max-entropy), not axiomatized.
+
+
+----- stderr -----
 

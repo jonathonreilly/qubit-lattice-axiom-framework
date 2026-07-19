@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_ckm_barred_circumradius_exact_closed_form_exact.py
+runner_sha256: 2ef6bf6756a6ba5be7fd10785f2f8bd42a84fa87740f794320352b3f35677d5b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 ckm_barred_circumradius_exact_closed_form_theorem_note_2026-04-25
@@ -98,3 +106,6 @@ Summary
 ========================================================================================
 TOTAL: PASS=20, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

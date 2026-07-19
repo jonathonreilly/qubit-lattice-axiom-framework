@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_publication_ci3_z3_claims_table_hostile_audit_findings.py
+runner_sha256: 2e505cd8868769b24b7c39f834cd391525697bf2a47277c1f4d1ad7ffeed8313
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 ==============================================================================
 AUDIT-PREP VERIFIER — publication.ci3_z3.claims_table
 ==============================================================================
@@ -14,3 +22,6 @@ PART 2 — not-cited deps (0 hits):
 ==============================================================================
 SUMMARY: 5 PASS / 0 FAIL  (Class-A: 5)
 ==============================================================================
+
+----- stderr -----
+

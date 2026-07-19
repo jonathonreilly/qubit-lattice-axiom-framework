@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py
+runner_sha256: ce55d50af52009dae1554346c1b767b4876e2d31edbcf6c3152a5f12deea6ab7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
 ==============================================================================
 P-LH NCG primitive underdetermination boundary
 ==============================================================================
@@ -98,3 +106,6 @@ SUMMARY: PASS=63  FAIL=0
 RESULT:
   P-LH NCG underdetermination boundary is complete iff FAIL=0.
   The route remains open unless NCG structures are derived or approved.
+
+----- stderr -----
+

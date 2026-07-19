@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py
+runner_sha256: 12f65e337b3b942cde8f9c8fc7b7fbfef1e6db6668285a4399df802b82ae80f5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 9.94
+status: ok
+----- stdout -----
 V1 PASS qubit_full_domain
 V1 PASS qubit_real_presentation
 V1 PASS no_possibility_privileged
@@ -76,3 +84,6 @@ PATH runner=scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py
 PATH cache=logs/runner-cache/kcpt_orbit_constant_registered_occupancy_2026_07_12.txt
 TOTAL: PASS=73 FAIL=0
 FLAGS: none
+
+----- stderr -----
+

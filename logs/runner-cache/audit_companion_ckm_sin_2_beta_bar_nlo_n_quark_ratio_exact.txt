@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_ckm_sin_2_beta_bar_nlo_n_quark_ratio_exact.py
+runner_sha256: 9c338e042a5d4a845a8d756c85122d61ebe13345aaacafb597dd17462ebbea25
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 ckm_sin_2_beta_bar_nlo_n_quark_ratio_theorem_note_2026-04-25
@@ -105,3 +113,6 @@ Summary
 ========================================================================================
 TOTAL: PASS=27, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

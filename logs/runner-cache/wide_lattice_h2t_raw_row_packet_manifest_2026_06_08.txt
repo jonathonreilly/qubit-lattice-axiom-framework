@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/wide_lattice_h2t_raw_row_packet_manifest_2026_06_08.py
+runner_sha256: 4384d7bd06b76c1b7b359dc5d4c47b7ddfcd87c062353bcd2614187b01ad9510
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 WIDE LATTICE RAW ROW PACKET MANIFEST
 note=docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md
 frozen_log=logs/2026-04-05-wide-lattice-h2t-distance-replay.txt
@@ -28,3 +36,6 @@ PASS peak-tail recompute visible
 PASS far-tail recompute visible
 PASS F~M exponent visible
 RAW_ROW_PACKET PASS=25 FAIL=0
+
+----- stderr -----
+

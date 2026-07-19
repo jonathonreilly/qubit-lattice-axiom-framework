@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_repo_active_review_queue_hostile_audit_findings.py
+runner_sha256: dac32bbcba9bb207c37918c6130cfd981a937ebd84efec85b19b980dfdec783b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 ==============================================================================
 AUDIT-PREP VERIFIER — repo.active_review_queue
 ==============================================================================
@@ -11,3 +19,6 @@ PART 2 — not-cited deps (0 hits):
 ==============================================================================
 SUMMARY: 2 PASS / 0 FAIL  (Class-A: 2)
 ==============================================================================
+
+----- stderr -----
+

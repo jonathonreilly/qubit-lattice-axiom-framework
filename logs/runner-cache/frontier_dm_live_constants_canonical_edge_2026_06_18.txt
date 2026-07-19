@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py
+runner_sha256: a3ffc6a4188f5b89d280718131a0649effc63aa26fae4f11dcea33e5e0d7b48d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.76
+status: ok
+----- stdout -----
 ============================================================================
 DM live constants canonical edge certificate
 ============================================================================
@@ -103,3 +111,6 @@ SUMMARY: PASS=59  FAIL=0
 RESULT:
   DM live-constant edge certificate is complete iff FAIL=0.
   Parent DM closure still needs selector/completeness authority and audit.
+
+----- stderr -----
+

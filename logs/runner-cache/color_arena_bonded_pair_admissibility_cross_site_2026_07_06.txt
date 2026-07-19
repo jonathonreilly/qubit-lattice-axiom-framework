@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/color_arena_bonded_pair_admissibility_cross_site_2026_07_06.py
+runner_sha256: ecd97bb9a58b5dea484209a08c7d21fb1953d6ad7e851892478a56c84fd0b817
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
 [PASS] SWAP squares to identity
 [PASS] SWAP is transpose-self
 [PASS] SWAP is adjoint-self
@@ -33,3 +41,6 @@
 [PASS] AST self-scan: no Path write helpers
 TOTAL: 33 PASS / 0 FAIL
 DECLARATION: bounded bonded-pair arena verified; no color, carrier, transport, dynamics, or global obstruction discharge is claimed.
+
+----- stderr -----
+

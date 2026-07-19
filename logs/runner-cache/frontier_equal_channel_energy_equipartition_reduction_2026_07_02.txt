@@ -1,3 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/frontier_equal_channel_energy_equipartition_reduction_2026_07_02.py
+runner_sha256: a095ef07188b07156d3f618b07d57b82350860cc40c8a4ea1b230bf3fc5eaeb6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 CHECKS: PASS=16 FAIL=0
 VALUES: component r=1/2 Q=2/3; slot r=1 Q=1; S3 outside=True
 TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

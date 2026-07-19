@@ -1,3 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/frontier_eident_decomposition_ctx_match_2026_07_02.py
+runner_sha256: eb7026d3becc6274dfd0a1b039797a82653c6ef9a949b7bf3645bde4a94c2b16
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 PASS: T1 exact proportionality, cancellation, and equal-weight iff equal-energy.
 PASS: fixed-set reuse and textual anchors for weights, norms, and CTX-match floor.
 TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

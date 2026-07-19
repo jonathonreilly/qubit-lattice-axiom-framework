@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py
+runner_sha256: 94fcf082ad09da7bb02cd54e07ed89506c653330aefa9354ceef27b8f87de996
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 ==============================================================================
 LENSING FINITE-PATH: RESTRICTED SOURCE PACKET MANIFEST
 ==============================================================================
@@ -65,3 +73,6 @@ LENSING FINITE-PATH: RESTRICTED SOURCE PACKET MANIFEST
 SUMMARY: LENSING SOURCE PACKET PASS=60 FAIL=0
 ==============================================================================
 Output written: outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json
+
+----- stderr -----
+

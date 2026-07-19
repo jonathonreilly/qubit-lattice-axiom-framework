@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/cubic_matching_product_qubit_qca_schedule_orbit_2026_07_11.py
+runner_sha256: e05cf8c462b7fcf5dae6016333cf014f153f65c44404748c7cc684f097431823
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
 PASS G01: the six matching labels have exactly 6!=720 schedules
 PASS G02: each L=6 layer is a perfect matching
 PASS G03: the six layers partition every undirected nearest-neighbor edge
@@ -27,3 +35,6 @@ PASS N05: source contains boundary marker: does not establish that an axiom upda
 BOUNDARY: the six-layer macro-tick, gate choice, even periodic torus, supplied quasi-local extension, and schedule semantics are conditional inputs.
 BOUNDARY: CZ closes schedule dependence conditionally; iSWAP leaves eight symmetry-related ticks and no one-site-invariant member.
 TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

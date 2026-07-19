@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_ckm_barred_triangle_pythagorean_rho_lambda_sum_rule_exact.py
+runner_sha256: 6c7e5c3c6a2bca5336e71d6677f9edfcbdad3a4b3553fdee1cc4292e26e65b42
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 ckm_barred_triangle_pythagorean_rho_lambda_sum_rule_theorem_note_2026-04-25
@@ -86,3 +94,6 @@ Summary
 ========================================================================================
 TOTAL: PASS=17, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

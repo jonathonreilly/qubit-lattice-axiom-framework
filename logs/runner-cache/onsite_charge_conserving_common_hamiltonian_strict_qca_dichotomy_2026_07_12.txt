@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/onsite_charge_conserving_common_hamiltonian_strict_qca_dichotomy_2026_07_12.py
+runner_sha256: b61cc35f63d1d91a3c518b3bfd1438ff40ce57df92d6df761d8db8493d62d791
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
 PASS A01: the four normal-form operators are linearly independent
 PASS A02: all four operators are exactly endpoint-SWAP symmetric
 PASS A03: all four operators exactly conserve the supplied onsite charge
@@ -40,3 +48,6 @@ PASS E10: the doubled 16-mode Laurent coefficients define a Hermitian finite-ran
 PASS E11: the radius-one coefficient convolution preserves CAR with inverse at the same radius; local Fock dimension is 2^16
 PASS E12: the exact CAR bilinear commutator fixes the transposed coefficient in H_flat and generates the displayed U_t derivative
 SUMMARY PASS=41 FAIL=0
+
+----- stderr -----
+

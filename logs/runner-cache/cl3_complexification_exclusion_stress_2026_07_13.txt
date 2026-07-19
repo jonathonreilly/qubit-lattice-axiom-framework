@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/cl3_complexification_exclusion_stress_2026_07_13.py
+runner_sha256: 2c480ed92e1dd9dcd929cf0650143a6e527160c946b2148e2a9627522ec39221
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.33
+status: ok
+----- stdout -----
 Dedicated exact exclusion stress runner
 Source: docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md
 Arithmetic: exact SymPy/stdlib; no random or floating-point checks
@@ -127,3 +135,6 @@ TOTAL
 [PASS] UNIVERSAL EXCLUSION CERTIFICATE | faithful irreducible complex Cl(3,0) representations have dimension 2; d=1 is impossible
 TOTAL: PASS=62 FAIL=0
 FLAGS: none
+
+----- stderr -----
+

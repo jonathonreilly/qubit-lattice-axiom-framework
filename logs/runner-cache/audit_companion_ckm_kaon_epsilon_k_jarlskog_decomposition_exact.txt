@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_ckm_kaon_epsilon_k_jarlskog_decomposition_exact.py
+runner_sha256: 8ba763c7c7b6c2dd3fbbf368002f1bae22d0f3f07baca51d3dfeefe5b9324de4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 ckm_kaon_epsilon_k_jarlskog_decomposition_theorem_note_2026-04-25
@@ -87,3 +95,6 @@ Summary
 ========================================================================================
 TOTAL: PASS=19, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

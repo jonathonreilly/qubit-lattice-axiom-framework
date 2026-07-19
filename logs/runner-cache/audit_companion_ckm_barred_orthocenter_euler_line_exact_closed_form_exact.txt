@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_ckm_barred_orthocenter_euler_line_exact_closed_form_exact.py
+runner_sha256: eca254128126e458d429dbf3949de18457eeb50302bf4ebafd104af5d5bd0781
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 ckm_barred_orthocenter_euler_line_exact_closed_form_theorem_note_2026-04-25
@@ -109,3 +117,6 @@ Summary
 ========================================================================================
 TOTAL: PASS=31, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

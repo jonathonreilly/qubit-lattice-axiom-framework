@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_exact_qgen_metzler_all_odd_n_2026_07_02.py
+runner_sha256: 277c495a98905058a3511762e99c0d7821c77aa4e08db3a86dd368e4ba09ee4a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 22.67
+status: ok
+----- stdout -----
 PASS odd_closed_form_N5_j1: direct-minus-closed=0
 PASS odd_closed_form_N5_j2: direct-minus-closed=0
 PASS odd_closed_form_N5_j3: direct-minus-closed=0
@@ -110,3 +118,6 @@ PASS even_j2_metzler_violation_N14: L_2=-1/(2*sin(pi/7)**2) < 0
 SUMMARY PASS=109 FAIL=0 TOTAL=109
 SUMMARY ODD_CLOSED_FORM verified_N=5,7,9,11,13 all_j; odd_j2_negative_N=5..41
 SUMMARY EVEN_SCOPE convention=residues_-N/2+1..N/2; closed_form_verified_N=6,8,10,12,14 all_j; sampled_j2_negative_N=6,8,10,12,14; theorem=even_N>=4_j2_negative_under_this_convention
+
+----- stderr -----
+

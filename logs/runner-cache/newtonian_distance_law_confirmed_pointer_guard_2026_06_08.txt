@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/newtonian_distance_law_confirmed_pointer_guard_2026_06_08.py
+runner_sha256: bea2110b2fc3e306623961aa41abc24f74ec4d3e0e63cb7af0b6c56490740255
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 NEWTONIAN DISTANCE-LAW HISTORICAL POINTER GUARD 2026-06-08
 PASS docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md exists
 PASS docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md exists
@@ -20,3 +28,6 @@ PASS frozen log has nine raw distance rows :: rows=9
 PASS pointer includes all raw distance rows :: all parsed z/delta/direction rows are present in pointer table
 PASS pointer records recomputed far-tail fit
 SCORECARD PASS=20 FAIL=0
+
+----- stderr -----
+

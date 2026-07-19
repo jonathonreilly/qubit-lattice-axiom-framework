@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lanes_open_science_03_quark_mass_retention_open_lane_2026_04_26_hostile_audit_findings.py
+runner_sha256: 113f99d3b4dd39b86988a8cdc4d74546d7ae189c150c933b9f4c5659a777632c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 ==============================================================================
 AUDIT-PREP VERIFIER — lanes.open_science.03_quark_mass_retention_open_lane_2026-04-26
 ==============================================================================
@@ -11,3 +19,6 @@ PART 2 — not-cited deps (0 hits):
 ==============================================================================
 SUMMARY: 2 PASS / 0 FAIL  (Class-A: 2)
 ==============================================================================
+
+----- stderr -----
+

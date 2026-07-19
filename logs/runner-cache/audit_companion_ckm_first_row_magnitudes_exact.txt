@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_ckm_first_row_magnitudes_exact.py
+runner_sha256: 43105cdafc953b7e3054a27caf53952be6fa54570084e26379dc6e153f2c6cf2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 ckm_first_row_magnitudes_theorem_note_2026-04-24
@@ -79,3 +87,6 @@ Summary
 ========================================================================================
 TOTAL: PASS=16, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/gauge_factor_local_selector_normalizer_2026_06_18.py
+runner_sha256: e138031d0582518463a85b63f8aecb21dd21a9512f2b8d27e2460a5917d7c344
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 GAUGE FACTOR-LOCAL SELECTOR NORMALIZER THEOREM
 ========================================================================
 [PASS] local factor-preserving span has dimension 12 = 8 + 3 + 1
@@ -9,11 +17,11 @@ GAUGE FACTOR-LOCAL SELECTOR NORMALIZER THEOREM
 [PASS] factor-algebra preservation constraints have nullity 12 inside u(6)
        constraint_rank=24; nullity=12
 [PASS] every local generator preserves both factor observable algebras
-       max residual=1.855e-15
+       max residual=1.794e-15
 [PASS] every nonzero su(3) x su(2) cross tensor fails factor-algebra preservation
        minimum cross residual=4.000e+00
 [PASS] local factor-preserving span is Lie closed
-       max Lie residual=1.351e-15
+       max Lie residual=2.030e-15
 [PASS] su(3) x I_2 and I_3 x su(2) commute inside the selected local span
        max commutator norm=0.000e+00
 [PASS] source-note firewall present: does **not** supply that physical bridge
@@ -25,3 +33,6 @@ GAUGE FACTOR-LOCAL SELECTOR NORMALIZER THEOREM
 ========================================================================
 SCORECARD PASS=14 FAIL=0
 VERDICT (exact-support boundary): on the supplied C^3 x C^2 carrier, factor-observable preservation has the unique 12-dimensional normalizer su(3)+su(2)+u(1). The 24 cross tensors are precisely the nonlocal complement to full u(6). This proves the finite algebra once a factor-local rule is supplied; it does not derive MR_color, the rule's physical source, chiral su(2)_L, or any audit status.
+
+----- stderr -----
+

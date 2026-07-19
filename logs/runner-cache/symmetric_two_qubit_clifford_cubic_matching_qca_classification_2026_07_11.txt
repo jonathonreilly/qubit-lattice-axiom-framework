@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/symmetric_two_qubit_clifford_cubic_matching_qca_classification_2026_07_11.py
+runner_sha256: 75bcf25902e91f3229a9bb57d4800a51d43b41808a6b4b36d74dff27db2608b3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 18.85
+status: ok
+----- stdout -----
 PASS G01: H, S, and CNOT generate all 11,520 projective two-qubit Clifford automorphisms
 PASS G02: exactly 192 projective Clifford automorphisms commute with endpoint SWAP
 PASS G03: uniform onsite Clifford basis changes form the 24-element one-qubit projective Clifford group
@@ -24,3 +32,6 @@ PASS N05: source contains boundary marker: does not establish that an axiom upda
 BOUNDARY: tensor carrier, symmetric Clifford gate class, parity matchings, exactly-once grammar, and macro-tick are supplied.
 BOUNDARY: the exhaustive result is projective-automorphism level; global unitary phase and physical process selection remain open.
 TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

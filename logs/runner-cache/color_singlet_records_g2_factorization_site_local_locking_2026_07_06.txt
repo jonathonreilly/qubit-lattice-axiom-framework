@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/color_singlet_records_g2_factorization_site_local_locking_2026_07_06.py
+runner_sha256: 858d6b09d28ee5145679a34e3cfd5a7c4d76775beb2df55096d843e408303b7c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
 [PASS] text_record_axiom_quotes_present :: quotes=3
 [PASS] text_g2_antecedent_present
 [PASS] text_g2_residual_present
@@ -17,3 +25,6 @@
 [PASS] ast_self_scan_read_only_no_network_no_subprocess
 [PASS] DECLARATION_color_singlet_records_g2_factorization_site_local_locking_2026_07_06 :: bounded factorization runner; no audit verdicts applied
 TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

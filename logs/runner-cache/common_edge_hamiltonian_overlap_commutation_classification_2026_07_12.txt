@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/common_edge_hamiltonian_overlap_commutation_classification_2026_07_12.py
+runner_sha256: 9bda9a015543bdce21f32d1a451a9e31e0d5149c14488e0a1ac9697089a3efb4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
 PASS A01: the endpoint-SWAP-symmetric Hermitian Pauli space has dimension ten
 PASS A02: all ten basis elements commute exactly with endpoint SWAP
 PASS A03: all 36 nonzero Pauli coefficients are exactly row-field or row-row cross products
@@ -24,3 +32,6 @@ PASS T02: the full one-defect sector is exactly position-degenerate
 PASS T03: a one-axis defect shifts energy by -12 beta -12 gamma with no hopping matrix element
 PASS T04: an exact four-site chain image cancels the nonincident edge, so support does not iterate beyond one hop
 SUMMARY PASS=25 FAIL=0
+
+----- stderr -----
+

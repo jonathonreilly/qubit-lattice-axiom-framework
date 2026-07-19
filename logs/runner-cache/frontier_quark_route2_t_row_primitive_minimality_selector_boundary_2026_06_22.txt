@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_t_row_primitive_minimality_selector_boundary_2026_06_22.py
+runner_sha256: be576f6f70b9ad55f6e7af7a375f0a4b337491ce180c1f50d1918c15f9490a0b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
 Route-2 T-row primitive/minimality selector boundary
 ==============================================================================
 
@@ -90,3 +98,6 @@ PASS: note records fixed-shell beta-family miss
 ==============================================================================
 TOTAL: PASS=74, FAIL=0
 STATUS: scoped no-go/exact support. The enumerated primitive-integer and minimality selectors do not select the full Route-2 T row (1,-2,2); the missing positive premise is a non-circular multiplicity-two or full-row selector.
+
+----- stderr -----
+

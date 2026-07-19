@@ -1,9 +1,9 @@
-===== runner cache v2 =====
+===== runner cache v1 =====
 runner: scripts/frontier_hkd_correspondence_equivalence_2026_06_12.py
 runner_sha256: 4a8e0ee5c971d4370e53d07e3ddfdd3e93aecfc3ac48b1a8a65efddc86bef0ec
-timeout_sec: 3600
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.86
+elapsed_sec: 1.06
 status: ok
 ----- stdout -----
 H_kd correspondence structural equivalence runner

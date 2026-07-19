@@ -1,100 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/audit_structural_issues_verifier.py
+runner_sha256: 54ab12fa00e64c584dea22eefb581df5407f8ceb5724da399f5c8acaf11dca29
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.51
+status: ok
+----- stdout -----
 
 ==============================================================================
 AUDIT-PROCESS STRUCTURAL-ISSUE VERIFIER
 ==============================================================================
 
-Repo root: /Users/jonreilly/Projects/Physics/.claude/worktrees/jolly-maxwell-c50482
+Repo root: /Users/jonBridger/Toy Physics/.claude/worktrees/cleanup-local-worktrees-5f598b
 Pipeline-fix landed at: 2026-05-17T13:14:44Z
-Total ledger rows: 2248
+Total ledger rows: 3776
 
 
 ## ISS-1 — Orchestrator not consuming helper_runner_paths
 
-  Count: 3
-  Definition: helpers populated in ledger AND audited after pipeline-fix landed AND rationale cites missing-helper language.
-  These prove the orchestrator (external Codex caller) is NOT
-  reading helper_runner_paths when assembling packets.
-
-  - asymmetry_persistence_mass_scaling_note
-      audit_date: 2026-05-17T13:22:57.707107+00:00
-      status:     audited_conditional
-      signal:     '\\bunprovided\\b'
-      helpers:    ['scripts/asymmetry_persistence_joint_card.py', 'scripts/asymmetry_persistence_pilot.py', 'scripts/gap_topological_asymmetry.py']...
-      rationale:  Issue: the claimed mass-window improvement rests on a runner whose primary file delegates the hard geometry and propagation implementation to unprovided helper 
-
-  - asymmetry_persistence_mass_window_note
-      audit_date: 2026-05-17T13:16:39.135841+00:00
-      status:     audited_conditional
-      signal:     'helper module'
-      helpers:    ['scripts/asymmetry_persistence_joint_card.py', 'scripts/asymmetry_persistence_pilot.py', 'scripts/gap_topological_asymmetry.py']...
-      rationale:  The provided runner cache reproduces the note's quoted LN fits, and the runner source shows those fits are computed from generated graphs and propagation output
-
-  - mirror_2d_validation_note
-      audit_date: 2026-05-17T13:15:56.366829+00:00
-      status:     audited_conditional
-      signal:     'imported.{0,50}?not.{0,30}?(?:provided|supplied|in.+packet)'
-      helpers:    ['scripts/mirror_born_audit.py']
-      rationale:  The primary runner source performs nontrivial numerical propagation, Sorkin Born checks, MI/purity/dTV calculations, and gravity summaries matching the cached s
-
+  Count: 0
+  None. Orchestrator integration appears complete.
 
 ## ISS-2 — Stale-numerics pattern (note tables disagree with runner output)
 
-  Count: 16
-  Definition: verdict rationale cites that source-note numerical
-  tables disagree with current runner stdout. Mechanical fix:
-  regen the note's tables from the current runner output.
-
-  - asymmetry_persistence_collapse_note  (audited_failed)
-      audit_date: 2026-05-10T17:49:55.237717+00:00
-      signal:     'stale relative to'
-      rationale:  Issue: the note's bounded tables are stale relative to the supplied runner source/stdout, and the runner depends on unlisted imported infras
-
-  - born_lane_comparison_note  (audited_failed)
-      audit_date: 2026-05-17T15:13:48.929393+00:00
-      signal:     'stale relative to'
-      rationale:  The computational chain is class C in form: the primary runner uses included helper code to construct modular and central-band graphs and co
-
-  - central_band_collapse_note  (audited_failed)
-      audit_date: 2026-05-10T18:47:35.498976+00:00
-      signal:     'stale relative to'
-      rationale:  Issue: the note's exact recorded joint card is stale relative to the supplied completed runner output. Why this blocks: the claim is the num
-
-  - central_band_dense_boundary_note  (audited_failed)
-      audit_date: 2026-05-10T18:57:09.081568+00:00
-      signal:     'stale relative to'
-      rationale:  Issue: the note is stale relative to the supplied runner stdout, including seeds/realizations and key gravity/purity values at N=80 r=3.0,3.
-
-  - central_band_dense_largen_note  (audited_failed)
-      audit_date: 2026-05-10T19:01:53.472778+00:00
-      signal:     'contradict[s]? the (?:source note|note) (?:table|rows|numbers)'
-      rationale:  Issue: completed runner stdout contradicts the source note table: N = 80 collapse gravity is -0.498+/-0.072, not -0.576+/-0.045, and N = 100
-
-  - critical_exponents_topology_note_2026-04-10  (audited_failed)
-      audit_date: 2026-04-26
-      signal:     'stale relative to'
-      rationale:  Issue: the source note's current-output table is stale relative to scripts/frontier_critical_exponents.py; the live output gives random_geom
-
-  - distance_law_note  (audited_failed)
-      audit_date: 2026-04-26
-      signal:     'stale relative to'
-      rationale:  Issue: the note's candidate retained-grade status claims a far-field alpha around -1.5 and continued steepening, but the note's own later co
-
-  - edge_deletion_boundary_note  (audited_failed)
-      audit_date: 2026-05-10T19:51:27.590626+00:00
-      signal:     'stale relative to'
-      rationale:  Issue: the note's table and headline claim are stale relative to the supplied runner stdout. Why this blocks: the current completed sweep sh
-
-  - lattice_3d_dense_spent_delay_note  (audited_failed)
-      audit_date: 2026-04-26
-      signal:     'stale relative to'
-      rationale:  Issue: the source note's load-bearing attractive-window claim includes z=6, but the named live runner and checked log only test z=2,3,4,5 an
-
-  - source_resolved_transverse_propagating_green_note  (audited_failed)
-      audit_date: 2026-04-27
-      signal:     'stale relative to'
-      rationale:  Issue: The note's load-bearing positive transverse correction is stale relative to scripts/source_resolved_transverse_propagating_green.py. 
-
-  ... and 6 more
+  Count: 0
+  None.
 
 ## ISS-3 — Hash-drift orphans (note edited; ledger hash stale)
 
@@ -103,27 +33,22 @@ Total ledger rows: 2248
 
 ## ISS-4 — Audited rows whose declared runner file is missing on disk
 
-  Count: 3
-  Definition: runner_path declared in ledger but file doesn't
-  exist. The audit ran without runner source available.
-
-  - gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19  (audited_failed)
-      missing runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_2026_04_19.py
-  - gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19  (audited_failed)
-      missing runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_2026_04_19.py
-  - second_grown_family_note  (audited_failed)
-      missing runner: scripts/second_grown_family_battery.py
+  Count: 0
+  None.
 
 ==============================================================================
 SUMMARY
 ==============================================================================
 
-  ISS-1 (orchestrator gap):        3
-  ISS-2 (stale numerics):           16
+  ISS-1 (orchestrator gap):        0
+  ISS-2 (stale numerics):           0
   ISS-3 (hash-drift orphans):       0
-  ISS-4 (missing runner files):     3
+  ISS-4 (missing runner files):     0
 
-  Total structural-issue instances: 22
+  Total structural-issue instances: 0
 
 Re-run anytime to refresh:
   python3 scripts/audit_structural_issues_verifier.py
+
+----- stderr -----
+

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/scalar_cubic_car_qca_triviality_six_direction_escape_2026_07_11.py
+runner_sha256: 4d98eef8b3beb5dd30be87ded29f10c79371e677cf442080aed2d67b72748067
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
 PASS G01: the proper cubic rotation group has 24 exact signed-permutation matrices
 PASS G02: every generated cubic matrix has determinant +1
 PASS G03: the only vector fixed by every proper cubic rotation is zero
@@ -35,3 +43,6 @@ PASS N05: source contains boundary marker: does not establish that an axiom upda
 BOUNDARY: the CAR algebra, linear number-preserving update, finite Laurent range, and cubic action are explicit conditional inputs.
 BOUNDARY: the one-mode theorem is exhaustive only for scalar Gaussian/CAR ticks; interacting and general qubit QCAs remain open.
 TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

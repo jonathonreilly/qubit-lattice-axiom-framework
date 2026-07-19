@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_alpha_s_sommer_static_potential_root_kernel_2026_06_18.py
+runner_sha256: 5bc2eea09bc7c90573dacd4a9bb8e7f9fe7ee1bb42942c35a60f2e851630c0e2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 === Source-boundary checks ===
 [PASS] note declares boundary: dimensionless Sommer root kernel
 [PASS] note declares boundary: This note does not derive the physical anchor r0 = 0.5 fm.
@@ -34,3 +42,6 @@
 [PASS] domain guard rejects nonpositive sigma
 
 SUMMARY: PASS=23 FAIL=0
+
+----- stderr -----
+

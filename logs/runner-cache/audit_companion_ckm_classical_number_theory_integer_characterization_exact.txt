@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_ckm_classical_number_theory_integer_characterization_exact.py
+runner_sha256: c1f840fca15d9f6b101932a0a32fe6e47950b76f89987751a8cce1ac399b7fec
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 ckm_classical_number_theory_integer_characterization_theorem_note_2026-04-25
@@ -115,3 +123,6 @@ Summary
 ========================================================================================
 TOTAL: PASS=30, FAIL=0
 ========================================================================================
+
+----- stderr -----
+

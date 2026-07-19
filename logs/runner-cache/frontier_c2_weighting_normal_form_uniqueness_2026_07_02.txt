@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_c2_weighting_normal_form_uniqueness_2026_07_02.py
+runner_sha256: a3ebb18ac4cf97e35a8812ac30c3120db21d0d247f9dbacaebae49b4f8f04f17
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 [PASS] reachability (Fraction(2, 3), Fraction(5, 7))
 [PASS] reachability (Fraction(0, 1), Fraction(4, 9))
 [PASS] reachability (Fraction(11, 6), Fraction(0, 1))
@@ -34,3 +42,6 @@
 Block11 C2 weighting normal form uniqueness
 checks: reachability, finite Cauchy, reconstruction, counterexample, degenerates
 TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.py
+runner_sha256: 6d57cbb405f96d0c47dcf139a47c0729a9d0d0e2cd4b62940277c544aa4d6456
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 ==============================================================================
 V=1 SU(3) Wilson Picard-Fuchs: SOURCE PACKET MANIFEST
 ==============================================================================
@@ -59,3 +67,6 @@ V=1 SU(3) Wilson Picard-Fuchs: SOURCE PACKET MANIFEST
 SUMMARY: SOURCE PACKET MANIFEST PASS=54 FAIL=0
 ==============================================================================
 Output written: outputs/su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.json
+
+----- stderr -----
+

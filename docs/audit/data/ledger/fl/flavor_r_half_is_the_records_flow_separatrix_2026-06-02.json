@@ -1667,6 +1667,60 @@
         "total_pass": 4
       },
       "verdict_rationale": "All four runner checks are valid class-A calculations over the supplied formulas, but they do not derive the stipulated L\u00fcders law or physical two-sector record basis from accepted premises. N1 leaves alternative update laws and record bases outside the proof; N2 finds those two dependencies independent; N3 finds the boundary, initial-condition, primitive, and sector language explicit rather than hidden; and N4 has no supplied one-hop retained witness. N5 confines the negative result to the stipulated-map scope; N6 supplies no candidate closing the physical identification; N7 supports only the conditional algebraic steelman; and N8 supplies no cross-cycle closure of that identification. The restricted chain therefore remains conditional even though the map mathematics is internally correct."
+    },
+    {
+      "archived_at": "2026-07-19T20:11:35.360167+00:00",
+      "audit_date": "2026-07-19T20:06:32.104141+00:00",
+      "audit_invocation_history": [
+        "49f63a6c8f4d4639893775b10a926caf"
+      ],
+      "audit_invocation_id": "49f63a6c8f4d4639893775b10a926caf",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 15.459,
+        "runner_hash": "bd114ae01808ec8e319c59bccb66af4d46c27d16e8ef5490620feddc98283560",
+        "transitive_descendants": 87
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260719-411f35d9",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic consequences follow from the stipulated update and sector weights, but the packet supplies no cited authority deriving or ratifying those inputs.",
+      "claim_scope": "Conditional algebraic audit of the stipulated two-sector L\u00fcders update: r maps to 2r\u00b2, r=1/2 is repelling, and the S2 and S3 entropy maxima occur at r=1/2 and r=1 respectively.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-19T20:06:32.104141+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Sharpening p\u2192p\u00b2/Z on p_singlet=1/(1+2r) and p_doublet=2r/(1+2r) reduces to r\u21a62r\u00b2.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the named luders_rule_from_composition_consistency source as a direct dependency, include its retained authority in the restricted packet, and re-check that it supplies the L\u00fcders update and two-sector application used here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: N1/N7 confirm the runner's algebraic, fixed-point, entropy, and local-perturbation checks only for the stipulated update; N2-N6/N8 leave the negative conclusion map-specific, reveal the uncited provenance of the update and sector partition, invoke no prior residual witness, and supply no accepted premise that establishes those inputs. Why this blocks: class-A checks establish consequences of stipulated inputs but not an independently retained derivation of the inputs, so the audit chain remains conditional despite the correct computations. Repair target: add the named luders_rule_from_composition_consistency authority as a direct dependency and verify that it proves both the update law and its application to the stated two-sector weights. Claim boundary until fixed: for the stipulated map, r=1/2 is repelling and the S2 and S3 maxima are r=1/2 and r=1 respectively; no physical charged-lepton records-flow identification is audited."
     }
   ],
   "prose_corrections": [],

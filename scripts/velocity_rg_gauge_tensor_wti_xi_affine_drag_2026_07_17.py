@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Velocity-RG gauge tensor block, exact lattice WTI, xi-affine drag -- exact-support runner.
+"""Four-dimensional Euclidean gauge-tensor and static-proxy runner.
 
 Companion runner for
 docs/VELOCITY_RG_GAUGE_TENSOR_WTI_XI_AFFINE_DRAG_EXACT_SUPPORT_NOTE_2026-07-17.md
@@ -58,22 +58,27 @@ WITNESS TIER (labeled finite-grid one-loop witnesses; no continuum claim):
           PLUS tadpole (sigma_tad_split);
         gauge two-point: Gamma_2 = M/g^2 + Pi with Pi the second variation
           of -tr log Dslash[A] (bubble + seagull signs as coded; the
-          transversality of the DEFORMED-kernel Pi is re-certified here).
+          exact finite-torus transversality of the DEFORMED-kernel Pi is
+          re-certified here at lattice-compatible external momenta).
       Witnesses: gauge sector faster => fermion velocity response POSITIVE
       (dragged toward the gauge speed); fermion sector faster => induced
       gauge transverse anisotropy POSITIVE (gauge dragged toward the fermion
       speed). These are finite-grid STATIC self-energy responses at fixed
       probes (no shell derivative, counterterm split, or log-coefficient
-      extraction): direction PROXIES, not RG beta coefficients. In the 2x2
-      exchange algebra built from the proxies the difference mode contracts
-      (eigenstructure checked exactly).
+      extraction): direction PROXIES, not RG beta coefficients. In a standalone
+      2x2 algebra built from those proxies the difference mode contracts
+      (eigenstructure checked exactly). This does not instantiate a retained
+      velocity-RG exchange row.
   V7  Finite-grid robustness proxies: A_F sign stable N=10 -> N=12; fermion
       drag sign stable and monotone under halving the deformation.
 
-Units: both responses are quoted per unit g^2 with the group factors shown
-explicitly (C_F = 3/4 fermion line, su(2) fundamental; T_F = 1/2 already
-inside Pi via the 0.5 color-trace factor, seagull-runner convention).
-Axis 0 = temporal throughout; the offset (half-integer) BZ grid avoids the
+The finite object is a periodic N^4 Euclidean lattice with one declared 4x4
+naive-Dirac block. Units: both responses are quoted per unit g^2 with the group
+factors shown explicitly (C_F = 3/4 fermion line, one su(2)-fundamental block;
+T_F = 1/2 already inside Pi via the 0.5 color-trace factor). No blocked 16x16
+staggered carrier, taste/BZ multiplicity, N_f factor, continuous-time bridge,
+or physical pole-speed observable is supplied. Axis 0 is the Euclidean
+temporal direction throughout; the offset (half-integer) BZ grid avoids the
 massless propagator pole.
 
 Prints are platform-stable: pass/fail details quote the bound, not raw
@@ -88,6 +93,8 @@ from __future__ import annotations
 import math
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 280
 
 PASS = 0
 FAIL = 0
@@ -665,8 +672,8 @@ def ward(Pi, qv):
 # V6 -- drag-direction convention table (both sectors, shared bookkeeping)
 # ---------------------------------------------------------------------------
 def part_6() -> dict:
-    hr("V6: drag directions, BOTH sectors, one shared sign-bookkeeping "
-       "convention (two proxy reconstructions)")
+    hr("V6: standalone static-proxy directions, BOTH sectors, one shared "
+       "sign-bookkeeping convention (two Euclidean reconstructions)")
     # Discharge C_F from the SU(2) fundamental generator algebra (no import):
     # T^a = sigma^a/2, sum_a T^a T^a = C_F * I.
     paulis = [
@@ -689,6 +696,8 @@ def part_6() -> dict:
 
     print("  Convention (shared Euclidean sign bookkeeping, two proxy "
           "reconstructions; sign chain in the note):")
+    print("    carrier: one declared 4x4 naive-Dirac block on periodic N^4; "
+          "no taste, N_f, or blocked-carrier multiplicity")
     print("    fermion: S^-1 = S0^-1 - Sigma (rainbow + tadpole); kinetic "
           "coeffs v_mu -> v_mu - g^2 C_F out_mu (linear in v)")
     print("    gauge:   Gamma_2 = M/g^2 + Pi (Pi = second variation of "
@@ -718,20 +727,24 @@ def part_6() -> dict:
     # Gauge response to a FASTER fermion sector: v = (1-e/2, 1+e/2, ...)
     # (linear coefficients) => offset dv_F = v_s/v_t - 1.
     N = 12
+    q_probe = 2 * np.pi / N
     v_def = np.array([1 - 0.05, 1 + 0.05, 1 + 0.05, 1 + 0.05])
     dvF_off = float(v_def[1] / v_def[0] - 1.0)
-    Pi_t = np.real(pi_munu([0.3, 0.0, 0.0, 0.0], N, v_def))
-    Pi_s = np.real(pi_munu([0.0, 0.3, 0.0, 0.0], N, v_def))
-    w_t = ward(Pi_t, [0.3, 0.0, 0.0, 0.0])
-    w_s = ward(Pi_s, [0.0, 0.3, 0.0, 0.0])
-    ok = max(w_t, w_s) < 0.05
+    q_t = [q_probe, 0.0, 0.0, 0.0]
+    q_s = [0.0, q_probe, 0.0, 0.0]
+    Pi_t = np.real(pi_munu(q_t, N, v_def))
+    Pi_s = np.real(pi_munu(q_s, N, v_def))
+    w_t = ward(Pi_t, q_t)
+    w_s = ward(Pi_s, q_s)
+    ok = max(w_t, w_s) < 1e-10
     check(
-        "deformed-kernel Pi stays TRANSVERSE at both probes (the sign chain "
-        "consumes the -tr log assembly this certifies)",
+        "deformed-kernel Pi is TRANSVERSE to machine precision at both exact "
+        "finite-torus external momenta",
         ok,
-        f"normalized Ward residuals ({w_t:.4f}, {w_s:.4f}) < 0.05 (N=12)",
+        bd("max normalized Ward residual", "1e-10", ok, max(w_t, w_s))
+        + f"; N=12, q=2*pi/N={q_probe:.5f}",
     )
-    kh2 = float(qhat([0.3, 0.0, 0.0, 0.0])[0] ** 2)
+    kh2 = float(qhat(q_t)[0] ** 2)
     piT_t = float(Pi_t[1, 1]) / kh2
     piT_s = float(Pi_s[2, 2]) / kh2
     ind = piT_s - piT_t
@@ -743,18 +756,18 @@ def part_6() -> dict:
         "fermion speed",
         ok,
         f"dv_B response = (piT_s - piT_t)/2 = {dvB_resp:+.5f} per g^2 "
-        f"(T_F=1/2 inside Pi; N=12, probe q=0.3, spatial polarization both)",
+        f"(T_F=1/2 inside Pi; one 4x4 block; N=12, exact torus probe "
+        f"q=2*pi/N={q_probe:.5f}, spatial polarization both)",
     )
 
     a_proxy = dvF_resp / dvB_off
     b_proxy = dvB_resp / dvF_off
     ok = a_proxy > 0 and b_proxy > 0
     check(
-        "exchange-matrix coefficients: a-proxy > 0 AND b-proxy > 0 "
-        "(finite-grid STATIC-RESPONSE sign witnesses for the named open "
-        "input of the exchange-matrix support note; NOT RG beta-function "
-        "coefficients -- no shell derivative or log-coefficient "
-        "extraction; physical-coefficient signs remain open)",
+        "standalone 2x2 proxy coefficients: a-proxy > 0 AND b-proxy > 0 "
+        "(finite-grid STATIC-RESPONSE signs only; NOT retained-chain inputs "
+        "or RG beta-function coefficients -- no carrier bridge, pole-speed "
+        "observable, shell derivative, or log-coefficient extraction)",
         ok,
         f"a-proxy={a_proxy:+.4f} b-proxy={b_proxy:+.4f} per g^2 "
         "(magnitudes are labeled finite-grid scheme proxies; the signs are "
@@ -767,8 +780,8 @@ def part_6() -> dict:
     null = F @ np.array([1.0, 1.0])
     ok = ok_eig and float(np.max(np.abs(null))) < 1e-10
     check(
-        "2x2 exchange algebra: eigenvalues {0, -(a+b)}; null direction "
-        "(1,1) (common speed); the DIFFERENCE mode contracts",
+        "standalone 2x2 proxy algebra: eigenvalues {0, -(a+b)}; null "
+        "direction (1,1); the proxy DIFFERENCE mode contracts",
         ok,
         f"contraction rate a+b = {a_proxy + b_proxy:+.4f} per g^2"
         if ok
@@ -813,10 +826,10 @@ def part_7(p5: dict, p6: dict) -> None:
 
 
 def main() -> int:
-    print("Velocity-RG gauge tensor block, exact WTI, xi-affine drag -- "
-          "exact-support runner")
+    print("Four-dimensional Euclidean gauge tensor, exact WTI, xi-affine "
+          "static proxies -- bounded runner")
     print("(exact tier V1-V3; labeled finite-grid witness tier V4-V7; "
-          "see companion note)")
+          "standalone N^4 naive-Dirac reconstruction; see companion note)")
     rng = np.random.default_rng(7)
     part_1(rng)
     part_2(rng)

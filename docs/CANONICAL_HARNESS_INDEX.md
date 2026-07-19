@@ -138,6 +138,7 @@ index does not promote any row to retained grade.
 | conditional site-tagged continuation refinement | [ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md](ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md) | `frontier_admissibility_record_continuation_refinement_2026_07_13.py` |
 | read-twice finite fan-out and frame-function controls | [READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md](READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md) | `read_twice_packet_derive_first_unification_2026_07_13.py` |
 | read/reset cadence-defect identity and all-time monomial criterion | [READ_RESET_CADENCE_INTERFERENCE_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-17.md](READ_RESET_CADENCE_INTERFERENCE_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-17.md) | `read_reset_cadence_interference_channel_bounded_2026_07_18.py` |
+| standalone periodic `N^4` Euclidean gauge tensor, lattice WTI, and static-response proxies (no target-surface, blocked-carrier, pole-speed, or RG-coefficient reachability) | [VELOCITY_RG_GAUGE_TENSOR_WTI_XI_AFFINE_DRAG_EXACT_SUPPORT_NOTE_2026-07-17.md](VELOCITY_RG_GAUGE_TENSOR_WTI_XI_AFFINE_DRAG_EXACT_SUPPORT_NOTE_2026-07-17.md) | `velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py` |
 
 ## Remaining Live Gates
 

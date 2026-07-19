@@ -1,294 +1,329 @@
-# Velocity RG Gauge Tensor Block, Exact Lattice WTI, And Xi-Affine Drag: Exact Support
+# Four-Dimensional Euclidean Gauge Tensor, Exact Lattice WTI, And Xi-Affine Static Proxies (Bounded)
 
 **Date:** 2026-07-17
+
 **Claim type:** bounded_theorem
-**Type:** exact support theorem / upstream support (exact tier + labeled finite-grid witness tier)
+
+**Type:** bounded exact algebra plus labeled finite-grid static proxies
+
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome.
+
 **Primary runner:**
 [`scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py`](../scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py)
+
 **Cached runner output:**
 [`logs/runner-cache/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.txt`](../logs/runner-cache/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.txt)
 
 ```yaml
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
-conditional_surface_status: "Exact gauge tensor block, exact lattice WTI, exact xi-affinity of the one-loop rainbow drag over a DECLARED gauge-line family D_w(xi), and the exact tadpole closed form (1 - xi)(C_s - C_t); finite-grid one-loop STATIC-RESPONSE sign witnesses that BOTH mutual-drag PROXIES are positive (a-proxy, b-proxy > 0) in one shared formal sign-bookkeeping convention carried by two proxy reconstructions, with the total xi-slope witnessed decreasing strictly through the sampled probe ladder (family-internal trend; no limit claim). The signs of the physical RG coefficients a, b, the anisotropic-inverse gauge line, RG-coefficient extraction, continuum limits, physical magnitudes, the spatial mixing coefficient, and LV sufficiency remain open."
+actual_current_surface_status: bounded-support
+trace_class: frontier_discovery
+reachability_to_target: none
+conditional_surface_status: "On one declared periodic N^4 Euclidean naive-Dirac reconstruction, the runner proves the Wilson gauge tensor block, midpoint lattice WTI, xi-affinity of a declared gauge-line family, and a tadpole closed form, and records positive fixed-probe static-response proxy signs. The result is not a bridge to the framework's continuous-time/spatial-Z^3 target, retained blocked 16x16 staggered carrier, physical pole speed, or RG coefficients."
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "This supplies finite-grid sign witnesses and exact algebraic support for the velocity-RG chain. It does not derive continuum one-loop coefficients or the downstream LV comparison."
+proposal_allowed_reason: "This is a standalone finite-object calculation, not a target-surface or carrier bridge. It cannot supply the physical mutual-drag coefficients of the velocity-RG chain."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-## Target And Blocker
+## Standalone Scope And Comparison Boundary
 
-This note targets the named residual of
-`emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18`
-(all chain rows cited here are unaudited and are cited as surfaces, not as
-retained authorities). That note's import ledger names, verbatim:
+The runner studies a declared four-periodic `N^4` Euclidean lattice. Its
+fermion matrix is `4 x 4` at each momentum and its loop grid covers the full
+naive-fermion Brillouin zone. Color is one `su(2)` fundamental block. The
+calculation does **not** implement:
 
-```text
-| Positive mutual-drag coefficients `a,b` | Load-bearing attraction condition | open physical loop input | named residual |
-```
+- the continuous-time plus spatial-`Z^3` action surface of the velocity-RG
+  target;
+- the retained blocked `16 x 16` staggered carrier, its four-dimensional taste
+  commutant, a reduced-zone Jacobian, or a matched taste/`N_f` normalization;
+- a pole, on-shell, group-velocity, or other physical-speed observable; or
+- a shell derivative, counterterm split, or beta-function extraction.
 
-and its "What Remains Open" asks for a framework-specific one-loop
-calculation that "instantiate[s] positive `a,b` in this exact exchange
-matrix." The parent conditional row is
-`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`; the
-adjacent chain surfaces are
-`velocity_rg_logflow_framework_internal_2026-06-21` and
-`velocity_rg_gauge_seagull_transverse_vacuum_polarization_2026-06-22`
-(whose seagull-runner conventions this runner adopts and re-certifies
-internally).
-
-This note supplies: (exact tier) the gauge quadratic form, its xi-family
-closed inverse (isotropic weights), the lattice Ward-Takahashi identity
-with anisotropic velocities, the exact xi-affinity of the one-loop
-rainbow drag response over a DECLARED anisotropic gauge-line family
-`D_w(xi)` with a WTI-derived slope, and the exact tadpole closed form
-`(out_s - out_t)_tad = (1 - xi)(C_s - C_t)`; (witness tier) finite-grid
-one-loop STATIC-RESPONSE sign witnesses that BOTH mutual-drag proxies are
-positive in one shared formal sign-bookkeeping convention (carried by TWO
-proxy reconstructions — see the Sign Chain section), so the
-exchange-matrix difference mode contracts in the proxy algebra, plus a
-witness that the TOTAL drag's xi-slope decreases strictly through the
-sampled probe ladder (family-internal trend; no limit claim). It does
-not derive the anisotropic-inverse gauge line, RG beta-function
-coefficients (in particular, the SIGNS of the physical RG coefficients
-`a, b` remain open — only fixed-probe proxy signs are witnessed),
-continuum coefficients, the spatial-only power-divergent
-mixing coefficient, the fixed-point anomalous dimension, or LV-bound
-sufficiency.
+The filenames
+`EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md`,
+`EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md`,
+`velocity_rg_logflow_framework_internal_2026-06-21`, and
+`VELOCITY_RG_GAUGE_SEAGULL_TRANSVERSE_VACUUM_POLARIZATION_2026-06-22.md`
+are therefore comparison surfaces only. Their open residuals motivate the
+diagnostic, but they do not supply premises to this theorem and this note does
+not close or partially close any of them. In particular, “positive mutual
+drag” below always means positivity in the standalone fixed-probe proxy
+algebra, never positivity of physical RG coefficients `a,b`.
 
 ## Statement
 
-**Exact tier (machine precision on the stated finite objects):**
+### Exact tier on the declared finite objects
 
-1. Gauge tensor block: plaquette quadratic form `== K delta - qhat qhat^T`
-   (link-midpoint), exact zero mode, exact xi-family closed inverse;
-   `tr(T^a T^b) = delta^{ab}/2`.
-2. Exact lattice WTI with anisotropic velocities; midpoint vertex is the
-   Ward-exact vertex (control violates).
-3. The drag integrals use the DECLARED anisotropic gauge-line family
-   `D_w(xi)_munu = (delta_munu - (1 - xi) qhat_mu qhat_nu / K_w) / K_w`,
-   `K_w = sum_mu w_mu qhat_mu^2`: equal to the item-1 closed inverse at
-   `w = 1` for `xi > 0` (at `xi = 0` it is the Landau-limit pseudoinverse
-   `P_T/K`, not the ordinary inverse tested in item 1), but for `w != 1`
-   NOT transverse (`qhat^T D_w(0) != 0`) and
-   NOT the inverse of an anisotropic Wilson tensor — a declared
-   definition, disclosed in the import ledger. Over this family the
-   one-loop RAINBOW drag response `a_rb(xi)` is EXACTLY affine in the
-   gauge parameter over `xi in {0, 0.5, 1.0, 1.7}` (deviation < 1e-11),
-   and its xi-slope equals a WTI-derived longitudinal closed form
-   assembled WITHOUT vertex functions (< 1e-10). The same-order
-   fermion-line seagull TADPOLE has the exact closed form
-   `(out_s - out_t)_tad = (1 - xi)(C_s - C_t)` (probe-independent;
-   deviation < 1e-11), so its xi-slope is `-(C_s - C_t)`. The sign of the
-   TOTAL drag `a_rb(xi) + a_tad(xi)` is xi-robust across the SAMPLED
-   WINDOW `xi in [0, 1.7]` (family-internal statement; the affine total
-   crosses zero near `xi ~ 26`, far outside the sampled window, so no
-   all-xi sign claim is made).
+1. **Gauge tensor.** In the link-midpoint mode convention, direct plaquette
+   summation gives
+   `M_mn = K delta_mn - qhat_m qhat_n`, `K = sum_m qhat_m^2`, including the
+   exact gauge zero mode and covariant-gauge inverse. The tested modes are
+   non-self-conjugate, for which the real-mode normalization is `V/4`.
+   The runner also verifies `tr(T^a T^b) = delta^{ab}/2`.
+2. **Lattice WTI.** For arbitrary tested anisotropic coefficients `v_mu`, the
+   midpoint vertex obeys
+   `khat.Gamma(p,p-k) = S0^-1(p) - S0^-1(p-k)` to the `1e-11` gate. A
+   no-half-shift control fails at order one.
+3. **Declared xi-family.** The loop calculation defines
+   `D_w(xi)_mn = [delta_mn - (1-xi) qhat_m qhat_n/K_w]/K_w`, with
+   `K_w = sum_m w_m qhat_m^2`. At `w=1` this is the covariant inverse for
+   `xi>0` and its Landau-limit pseudoinverse at `xi=0`. At `w!=1` it is neither
+   the inverse of an anisotropic Wilson tensor nor generically transverse; at
+   some momenta its `xi=0` form is indefinite. These are defining limitations,
+   not properties of a physical gauge covariance.
+4. **Affine identities.** On this declared family, the rainbow response is
+   exactly affine over `xi in {0,0.5,1.0,1.7}` and its slope agrees within
+   `1e-10` with the WTI-reduced longitudinal expression assembled without
+   vertex functions. The fermion-line seagull satisfies exactly
+   `(out_s-out_t)_tad = (1-xi)(C_s-C_t)`. The total proxy keeps one sign only
+   on the sampled `xi` window; its affine zero is near `xi=26`, so no all-`xi`
+   claim is made.
 
-**Witness tier (labeled finite-grid one-loop witnesses; no continuum
-claim):**
+### Labeled finite-grid witness tier
 
-4. At the smallest sampled probe `delta = 0.05`, the RAINBOW xi-slope is
-   within rel. `5e-3` of `+(C_s - C_t)`, a PURE gauge-line integral (no
-   `delta -> 0` limit claim); `C_s`, `C_t` individually still grow at `N = 24`
-   (log-divergent pieces) while the difference's increments shrink
-   through `N = 24` (`+0.000823`, last increment 0.3% of the value) — a
-   finite-grid convergence witness for the split.
-5. The xi-shift of the rainbow response is constant-dominated over the
-   log/const fit window (log-coefficient shift 11% of the constant
-   shift; the log/const split is a fit-pivot-dependent diagnostic, not
-   an extracted RG coefficient), the per-delta rainbow xi-slopes
-   approach the V4 constant monotonically through the sampled ladder,
-   and the TOTAL xi-slope (rainbow plus tadpole) decreases strictly
-   through the four sampled probes (`+0.000127 -> +0.000018` against
-   the scale `C_s - C_t = +0.000797`): a family-internal xi-robustness
-   TREND witness (finite samples; no `delta -> 0` limit claim).
-6. Drag directions, both sectors, one shared sign-bookkeeping convention
-   (finite-grid STATIC
-   self-energy responses at fixed probes — direction proxies, NOT RG
-   beta-function coefficients; no shell derivative, counterterm split,
-   or log-coefficient extraction is performed):
-   gauge sector faster (exact offset
-   `dv_B = sqrt(1.05/0.95) - 1 = +0.05131`) gives fermion response
-   `dv_F = +0.00098 g^2` (POSITIVE: dragged toward the gauge speed;
-   kinetic split: rainbow `-0.00210`, tadpole `+0.00080`, total
-   `-0.00131`, and `dv_F = -g^2 C_F` times the total; `C_F = 3/4`
-   discharged in-runner from the su(2) generator algebra);
-   fermion sector faster (`dv_F = +0.10526`) gives gauge response
-   `dv_B = +0.03017 g^2` (POSITIVE: dragged toward the fermion speed).
-   In the exchange-matrix convention this supplies fixed-probe
-   PROXY-SIGN support: `a`-proxy `= +0.0191 g^2 > 0` and
-   `b`-proxy `= +0.2866 g^2 > 0`, difference-mode
-   contraction rate `(a+b)`-proxy `= +0.3057 g^2` (eigenstructure
-   `{0, -(a+b)}` with common-speed null direction `(1,1)` checked
-   exactly on the proxy matrix). Magnitudes are finite-grid scheme
-   proxies (probe and deformation conventions stated in the runner); the
-   PROXY signs are the witnessed content, and the signs of the physical
-   RG coefficients `a, b` remain open.
-7. Robustness proxies: drag sign and magnitude stable `N = 10 -> 12` at
-   all four probe deltas (at `xi = 1` the tadpole split vanishes, so
-   this checks the total); TOTAL fermion drag (rainbow plus tadpole)
-   sign stable and monotone under halving the gauge deformation
-   (`-0.00131 -> -0.00066`).
+5. At `N=10`, the rainbow xi-slope at `delta=0.05` is within relative `5e-3`
+   of the gauge-line integral `C_s-C_t`. Through `N=24`, the individual
+   `C_s,C_t` terms still grow while the increments of their difference shrink.
+   This is a finite-grid trend, not a continuum limit.
+6. On the stated fit window, the xi-shift is constant-dominated and the total
+   rainbow-plus-tadpole xi-slope decreases through the four sampled probes.
+   The log/constant split is pivot-dependent and is not an RG-coefficient
+   extraction.
+7. In one shared Euclidean sign convention, two separate reconstructions give
+   positive static-response directions:
 
-## Sign Chain: Shared Sign Bookkeeping, Both Sector Signs
+   - gauge weights with exact offset `dv_B=+0.05131` give a fermion response
+     `dv_F=+0.00098 g^2`;
+   - fermion coefficients with offset `dv_F=+0.10526` give a gauge response
+     `dv_B=+0.02177 g^2` at `N=12` and exact torus momentum
+     `q=2*pi/N=0.52360`.
 
-All two-point objects below are reconstructions (calculational devices of
-the finite-lattice Euclidean calculus), not registered content. The shared
-sign-bookkeeping input is the Euclidean weight on the finite lattice:
+   At the two tested torus-compatible external momenta, the normalized Ward
+   residual is below `1e-10` (roundoff-level in the live run). Reading the
+   transverse component at these two momenta therefore does not rely on the
+   former percent-level off-grid tolerance.
+8. Dividing by the declared deformation offsets gives standalone proxies
+   `a_proxy=+0.0191 g^2` and `b_proxy=+0.2068 g^2`. The associated purely
+   algebraic `2 x 2` proxy matrix has eigenvalues
+   `{0,-(a_proxy+b_proxy)}`, common-direction null vector `(1,1)`, and proxy
+   contraction rate `+0.2259 g^2`. This arithmetic does not instantiate the
+   exchange matrix of any retained physical chain.
+9. The signs remain stable under `N=10 -> 12` for the sampled fermion probes,
+   and the total fermion proxy retains its sign and decreases in magnitude
+   when the gauge deformation is halved.
+
+## Sign Bookkeeping On The Declared Euclidean Reconstruction
+
+All two-point objects in this section are calculational reconstructions, not
+registered framework observables. The bookkeeping starts from
 
 ```text
-Z = Int dA dpsibar dpsi exp( -S_G[A] - psibar Dslash[A] psi ),
+Z = Int dA dpsibar dpsi exp(-S_G[A] - psibar Dslash[A] psi).
 ```
 
-with `S_G` the Wilson plaquette action at quadratic (abelianized) level and
-`Dslash[A]` the midpoint-gauged anisotropic kernel (velocities `v_mu`;
-one-gluon vertex `v_mu cos(k_mu + q_mu/2)`; seagull `-v_mu sin(k_mu)`).
-Everything downstream is mechanical:
+At quadratic abelianized order, `S_G` is the four-dimensional Wilson
+plaquette form and `Dslash` is the midpoint-gauged naive-Dirac kernel. The
+one-gluon vertex is `v_mu cos(k_mu+q_mu/2)` and the seagull is
+`-v_mu sin(k_mu)`.
 
-- **Gauge quadratic form (exact, V1).** The plaquette action on the mode
-  `A_mu(x) = Re[eps_mu e^{i q.(x + e_mu/2)}]` equals
-  `(V/4) eps^T M eps` (with `V = N^4` the site count; the `V/4` carries
-  the quadratic-expansion `1/2` times the `Re[]` mode-average `V/2`, as
-  coded in the runner — valid for non-self-conjugate modes
-  `q != -q mod 2pi`, the modes the runner samples; self-conjugate modes
-  carry twice this) with `M = K delta - qhat qhat^T`, `qhat = 2 sin(q/2)`,
-  `K = sum qhat^2` — EXACTLY, by direct lattice sum (link-midpoint
-  convention; the site-centered half-shift candidate misses the closed
-  form at the 5.6e-2 level, so between the two stated candidates the
-  control selects link-midpoint). `M qhat = 0` exactly (gauge orbit), and
-  the xi-family fixed form has the exact closed inverse
-  `(M + xi^-1 qhat qhat^T)^-1 = P_T/K + xi qhat qhat^T/K^2`.
-- **Ward identity (exact, V2).** The midpoint vertex satisfies
-  `khat.Gamma(p, p-k) = S0^-1(p) - S0^-1(p-k)` exactly, INCLUDING
-  anisotropic `v_mu` (a no-half-shift control violates it at O(1)).
-- **Fermion sector sign.** Expanding the interacting propagator gives, at
-  the same second order, TWO connected insertions: the RAINBOW (one-gluon
-  exchange) and the fermion-line seagull TADPOLE, `S^-1 = S0^-1 - Sigma`
-  with `Sigma = Sigma_rb + Sigma_tad`. The gauge line inside both is the
-  DECLARED family `D_w(xi)` of the Statement (item 3): at the deformed
-  weights `w != 1` it is a declared definition, NOT the inverse of an
-  anisotropic Wilson tensor, and NOT the covariance of any positive
-  Euclidean weight (`D_w(0)` has a negative eigenvalue at some momenta
-  for `w != 1`), so every xi-statement in this chain is
-  family-internal. The tadpole's kinetic split has
-  the exact closed form `(out_s - out_t)_tad = (1 - xi)(C_s - C_t)`
-  (probe-independent; V3), so its xi-slope `-(C_s - C_t)` near-cancels
-  the rainbow's smallest-sampled-probe xi-slope, gated in-runner within
-  rel. `5e-3` of `+(C_s - C_t)` at probe `delta = 0.05` (V4/V5;
-  finite-probe witness, no `delta -> 0` limit claim).
-  Near the probe
-  the kinetic coefficients read `v_mu -> v_mu - g^2 C_F out_mu` (linear
-  in `v`), so with `v_F = v_s/v_t` the drag response is
-  `dv_F = -g^2 C_F (out_s - out_t)`, `C_F = 3/4` (su(2) fundamental,
-  discharged in-runner from the generator algebra).
-- **Gauge sector sign.** Integrating the fermions exactly:
-  `det Dslash = e^{+tr log Dslash}`, so
-  `S_eff[A] = S_G[A] - tr log Dslash[A]`. The second variation of
-  `-tr log Dslash` gives `Pi_munu = tr[S V_mu S V_nu] - delta_munu
-  tr[S d2D]` (bubble plus seagull, the signs coded in the runner; color
-  trace supplies `T_F = 1/2`). Hence `Gamma_2 = M/g^2 + Pi`: the fermion
-  loop ADDS to the gauge kernel. The transverse weights read
-  `c_mu = w_mu + g^2 Pi_T/qhat^2` and `v_B = sqrt(c_s/c_t)`, so
-  `dv_B = +g^2 (Pi_T,s - Pi_T,t)/2` per unit `qhat^2`. The runner
-  re-certifies that the deformed-kernel `Pi` is transverse to the stated
-  proxy tolerance (normalized Ward residuals < 0.05 at both probes),
-  which is what licenses reading a single transverse coefficient at this
-  grid size.
+- Expanding the fermion propagator gives
+  `S^-1=S0^-1-Sigma`, with rainbow and fermion-line seagull insertions. Near
+  the declared probe, `v_mu -> v_mu-g^2 C_F out_mu`, so the ratio proxy obeys
+  `dv_F=-g^2 C_F(out_s-out_t)`. The runner derives `C_F=3/4` from the three
+  fundamental `su(2)` generators.
+- Integrating the declared fermion block gives
+  `S_eff=S_G-tr log Dslash`. Its second variation has the coded bubble and
+  seagull signs, and one fundamental color trace supplies `T_F=1/2`. At the
+  exact torus momenta used in item 7, the complete finite sum is transverse to
+  roundoff and its selected component has the stated positive sign.
+- The fermion-side loop replaces the covariance by the declared `D_w(xi)`
+  family, while the gauge-side loop uses the deformed naive-Dirac kernel.
+  Thus the two signs share formal sign bookkeeping but are not derived from a
+  single established positive functional integral at `w!=1`.
 
-Both sector SIGN proxies therefore share one formal sign bookkeeping,
-carried by TWO proxy reconstructions: the fermion-sector proxy from the
-expansion of `e^{-S}` with the gauge line replaced by the declared
-family `D_w(xi)`, and the gauge-sector proxy from `-tr log Dslash`
-against the deformed kernel. (This is a shared-bookkeeping statement,
-not a claim that one established functional integral produces both — at
-`w != 1` the declared family is not the covariance of any positive
-Euclidean weight.) The `w = 1` gauge quadratic form is positive
-on the transverse sector, so the weight orientation is not a free dial;
-the remaining naming freedoms — the joint rephasing `A -> -A`,
-`g -> -g`, and where the minus sign is placed in the definition of
-`Sigma` — leave every O(g^2) observable, in particular both relative
-drag signs, invariant. The drag DIRECTIONS (toward each other or away
-from each other) are the witnessed content at the stated finite grids.
+The `4 x 4` spin matrix, full naive Brillouin zone, and one fundamental color
+block are exactly what is coded. No taste multiplicity, number of physical
+flavors, reduced-zone Jacobian, or gauge-coupling matching factor should be
+inferred from `C_F` or `T_F`.
 
 ## What This Supplies
 
-The exchange-matrix note states: for ANY positive pair `a, b > 0` the
-speed-difference mode contracts at rate `a + b`. Its named residual was
-the positivity itself — "open physical loop input." This note supplies
-finite-grid one-loop STATIC-RESPONSE sign witnesses for both proxies
-from the chain's own reconstruction objects (midpoint-gauged anisotropic
-kernel, Wilson quadratic form — the unaudited action surface restated
-and re-certified here), in one shared sign-bookkeeping convention
-(carried by two proxy reconstructions) whose residual naming freedoms
-are checked drag-sign-invariant, plus the exact algebraic scaffolding
-(tensor block, WTI, rainbow xi-affinity over the declared gauge-line
-family, tadpole closed form) that makes the witness xi-robust within
-the sampled window `xi in [0, 1.7]` of that declared family rather than
-a single-gauge accident. The signs of the physical RG coefficients
-`a, b` and physical gauge independence proper (the anisotropic-inverse
-gauge line) are named open below.
+This note supplies a reproducible finite-object theorem: the Wilson tensor,
+midpoint WTI, affine `xi` identities, an exact finite-torus Ward gate at two
+external momenta, and static proxy signs on one declared four-dimensional
+Euclidean naive-Dirac reconstruction. It is useful as a test fixture for a
+future calculation that explicitly supplies the missing bridges.
 
-The next path this opens: with both static-response signs witnessed and
-the TOTAL drag's xi-slope witnessed decreasing strictly through the
-sampled probe ladder (a family-internal xi-robustness trend at finite
-grid), the remaining physical inputs for the parent row are (i) the
-anisotropic-inverse gauge line (replacing the declared family with the
-true inverse of the deformed Wilson tensor), (ii) RG-coefficient
-extraction (shell derivative / log-coefficient), and (iii)
-magnitude-level items (continuum extrapolation of `a, b`, the
-spatial-only power-divergent mixing coefficient, the fixed-point
-anomalous dimension, and the LV-bound sufficiency comparison).
+It supplies **no direct target reachability**. In particular, it does not
+convert the static ratios into physical speeds, determine physical `a,b`, or
+show that the proxy signs survive target-surface, carrier, normalization,
+true-inverse, counterterm, volume, or on-shell matching.
 
-## What Remains Open
+## What Remains Open: Corrected Independent Wall Set
 
-- Continuum limits: all loop integrals are finite-grid
-  (`N <= 12` fermion-loop, `N <= 24` gauge-line); magnitudes are scheme
-  proxies at stated probes (`delta = 0.30`, `q = 0.3`,
-  `eps in {0.05, 0.10}`). No continuum coefficient is claimed.
-- The anisotropic gauge line is the DECLARED family `D_w(xi)` (the
-  isotropic transverse-tensor FORM with `K` replaced by `K_w`; not a
-  projector for `w != 1`): for `w != 1` it is not transverse, not the
-  inverse of an anisotropic Wilson tensor, and not the covariance of any
-  positive Euclidean weight. Re-deriving the drag from the
-  true deformed-tensor inverse — and hence physical gauge independence
-  proper — is open.
-- The V6 witnesses are STATIC self-energy responses at fixed probes, not
-  RG beta-function coefficients; no shell derivative, counterterm split,
-  or log-coefficient extraction is performed. The V5 log/const split is
-  a fit-pivot-dependent diagnostic.
-- One-loop (rainbow plus fermion-line tadpole) at quadratic (abelianized)
-  gauge level with su(2) color factors; full nonabelian self-interactions
-  are not included.
-- Each sector's response is computed against a fixed deformed background
-  for the other sector (consistent at one loop); no self-consistent
-  coupled flow is solved here.
-- The parent row's other repair items — the spatial-only power-divergent
-  mixing coefficient and the anomalous-dimension/LV-bound sufficiency
-  comparison — are untouched.
-- The speed identifications `v_F = v_s/v_t` (linear kinetic coefficients)
-  and `v_B = sqrt(c_s/c_t)` (quadratic kernel weights) are definitions of
-  the finite-lattice reconstruction, disclosed as such.
+- **W1 — target surface:** bridge from the periodic `N^4` Euclidean kernel to
+  the continuous-time/spatial-`Z^3` target action.
+- **W2 — carrier and normalization:** embed the calculation in the retained
+  blocked `16 x 16` staggered carrier and derive taste, reduced-BZ Jacobian,
+  `N_f`, and coupling normalization.
+- **W3 — true gauge inverse:** replace `D_w(xi)` by the inverse of the actual
+  anisotropic gauge tensor and establish the appropriate gauge-independence
+  statement.
+- **W4 — physical speed:** define and control a pole/on-shell or otherwise
+  physical velocity observable; the finite Euclidean coefficient ratios are
+  off-shell reconstruction definitions.
+- **W5 — RG extraction:** perform shell/counterterm/log extraction and derive
+  the signs and magnitudes of physical RG coefficients `a,b`.
+- **W6 — limits and probes:** control finite-volume, external-momentum,
+  deformation, probe, and continuum limits. Exact transversality has been
+  shown only at the two tested torus momenta.
+- **W7 — nonabelian completion:** include the omitted nonabelian gauge
+  self-interactions and all diagrams at the claimed order.
+- **W8 — coupled flow:** replace the two fixed-background responses with a
+  self-consistent coupled flow.
+- **W9 — spatial coefficient:** derive the spatial-only power-divergent mixing
+  coefficient required by the comparison chain.
+- **W10 — anomalous dimension:** derive the relevant fixed-point anomalous
+  dimension.
+- **W11 — LV sufficiency:** complete the quantitative Lorentz-violation bound
+  comparison.
+
+Closing any one wall does not close the others. The complete independence
+record appears in N2 below.
 
 ## Import Ledger
 
 | Input | Role | Class | Disposition |
 |---|---|---|---|
-| Euclidean weight `e^{-S}` on the finite lattice | shared sign bookkeeping for both sector proxies (carried by two proxy reconstructions; not one established functional integral producing both) | reconstruction-calculus definition (no new axiom) | disclosed |
-| Wilson quadratic level + midpoint gauging | action surface of the chain under test | stated by unaudited chain rows; restated and re-certified internally here (no chain row consumed as an authority; deps intentionally empty) | disclosed |
-| su(2) factors `C_F = 3/4`, `T_F = 1/2` | group normalization | exact arithmetic; `C_F` computed in-runner from `sum_a T^a T^a = C_F I` | discharged by runner |
-| Anisotropic gauge-line family `D_w(xi)` (isotropic transverse-tensor form over `K_w`; not a projector for `w != 1`) | drag propagator in all V3-V7 integrals | declared definition; equals the exact closed inverse at `w = 1` for `xi > 0`; NOT the deformed-tensor inverse for `w != 1`; `D_w(0)` not positive semidefinite for `w != 1` | disclosed; anisotropic-inverse route named open |
-| Half-integer BZ grid `k = ((n + 1/2)/N) 2 pi - pi` | zero-mode-avoiding loop discretization | stated sampling convention | disclosed |
-| Positive mutual drag `a, b > 0` | the exchange-matrix note's named residual | finite-grid one-loop PROXY sign witnesses, both sectors (rainbow plus tadpole totals) | not discharged; finite-grid PROXY sign witnesses only; physical RG-coefficient signs, continuum, and framework-level positivity open |
-| Physical magnitudes of `a, b` | downstream quantitative input | finite-grid scheme proxies only | named residual |
-| Spatial mixing coefficient; anomalous dimension; LV sufficiency | parent-row remaining items | open bridge | not addressed |
+| Periodic `N^4` Euclidean lattice, Wilson quadratic form, midpoint-gauged `4 x 4` naive-Dirac kernel | complete calculation surface | declared reconstruction definition | disclosed; not the target action |
+| Full half-integer loop grid `k=((n+1/2)/N)2*pi-pi` | zero-mode-avoiding finite sum | declared sampling convention | disclosed; no boundary-condition or continuum claim |
+| Exact external probe `q=2*pi/N` in V6 | finite-torus Ward-compatible momentum | finite-grid control | discharged at the two tested orientations; broader limit remains W6 |
+| `C_F=3/4`, `T_F=1/2` | one `su(2)` fundamental color block | exact group arithmetic | discharged; no taste or `N_f` factor inferred |
+| Blocked staggered spin/taste structure | boundary against carrier identification | retained boundary authority: [blocked four-taste module](STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md) and [spin/taste Clifford core](ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md) | not consumed as this runner's carrier; W2 open |
+| `D_w(xi)` | propagator-shaped object in V3–V7 | declared definition; true inverse only at `w=1` | W3 open |
+| `v_F=v_s/v_t`, `v_B=sqrt(c_s/c_t)` | static direction proxies | reconstruction definitions | not physical pole speeds; W4 open |
+| Positive physical mutual drag | conceptual comparison residual | not imported | not discharged; W1–W8 remain |
+| Spatial coefficient, anomalous dimension, LV bound | downstream comparison inputs | not imported | W9–W11 remain |
+
+## No-Go Discipline Gate
+
+This gate audits the boundary of the narrowed standalone claim. It does not
+claim that the eleven physical walls are no-go results.
+
+### N1 — Alternative routes
+
+| Route | Marker | Precise locator and result |
+|---|---|---|
+| Standalone `N^4` Euclidean algebra | ATTEMPTED | Statement items 1–4 and runner `part_1`–`part_3`; succeeds only on the declared finite objects. |
+| Continuous-time/spatial-`Z^3` surface | ATTEMPTED | Standalone Scope and W1; no such kernel is coded, so the bridge remains open. |
+| Retained blocked staggered carrier | ATTEMPTED | Import Ledger links and W2; retained `16 x 16` spin/taste structure is identified as a different carrier, not silently equated to the runner. |
+| Exact torus external momentum | ATTEMPTED | Statement item 7 and runner `part_6`; `q=2*pi/N` restores the finite-sum Ward identity to the strict `1e-10` gate while preserving the positive proxy sign. |
+| True anisotropic Wilson inverse | ATTEMPTED | Statement item 3 and W3; the current `D_w` is proven not to be that inverse for `w!=1`, so this viable route remains open. |
+| Pole/on-shell velocity | ATTEMPTED | Standalone Scope and W4; no pole or physical-energy prescription is present. |
+| Shell/counterterm/log extraction | ATTEMPTED | Statement items 6 and 8 plus W5; the runner exposes a fit diagnostic but does not extract an RG coefficient. |
+| Finite-volume/probe/continuum control | ATTEMPTED | Statement items 5, 7, and 9 plus W6; finite samples and two exact torus momenta do not establish a limit. |
+| Full nonabelian and coupled-flow routes | ATTEMPTED | W7–W8; omitted diagrams and fixed-background structure are explicit. |
+
+The scoped standalone route succeeds. Every route needed to identify it with
+the physical velocity-RG target remains visibly open.
+
+### N2 — Wall independence
+
+For each pair, `N/N/I` means closing the left wall does not close the right,
+closing the right does not close the left, and no shared unresolved premise
+makes them duplicates.
+
+| Left wall | Later-wall pairs, all `N/N/I` |
+|---|---|
+| W1 | W2, W3, W4, W5, W6, W7, W8, W9, W10, W11 |
+| W2 | W3, W4, W5, W6, W7, W8, W9, W10, W11 |
+| W3 | W4, W5, W6, W7, W8, W9, W10, W11 |
+| W4 | W5, W6, W7, W8, W9, W10, W11 |
+| W5 | W6, W7, W8, W9, W10, W11 |
+| W6 | W7, W8, W9, W10, W11 |
+| W7 | W8, W9, W10, W11 |
+| W8 | W9, W10, W11 |
+| W9 | W10, W11 |
+| W10 | W11 |
+
+### N3 — Hidden-assumption scan
+
+| Candidate hidden premise | Resolution |
+|---|---|
+| “Same action surface” | Rejected explicitly: W1 separates periodic Euclidean time from the target surface. |
+| “Same fermion carrier” | Rejected explicitly: W2 and the Import Ledger separate `4 x 4` naive spin matrices from the retained blocked `16 x 16` carrier. |
+| “Color factor equals total multiplicity” | Rejected explicitly: `C_F,T_F` cover one color block only; taste/BZ/`N_f` matching remains W2. |
+| “Finite coefficient ratio is physical speed” | Rejected explicitly: ratios are static definitions; W4 remains. |
+| “Transverse at arbitrary external momentum” | Rejected explicitly: the strict claim is only for two tested `q=2*pi/N` orientations; W6 remains. |
+| “Static sign is RG sign” | Rejected explicitly in Statement item 8 and W5. |
+| “Declared `D_w` is a covariance” | Rejected explicitly in Statement item 3 and W3. |
+
+No undeclared axiom is needed for the finite-object theorem; none of these
+premises is smuggled into target reachability.
+
+### N4 — Residual matching
+
+| Comparison surface | Its residual | Output here | Match? |
+|---|---|---|---|
+| Exchange-matrix note | physical framework one-loop counterterms and positive `a,b` | static finite-grid ratios on another regulator/carrier | No; conceptual comparison only |
+| Interacting parent | continuous-time/spatial-`Z^3` physical coefficient | periodic `N^4` Euclidean response | No |
+| Log-flow row | full tensor/vertex/counterterm calculation | exact tensor/WTI plus declared non-covariance `D_w`, no counterterm | Partial method overlap, no closure |
+| Seagull row | taste/doubler normalization | one unnormalized naive block over the full BZ | No; W2 |
+
+Because no residual matches completely, `reachability_to_target` is `none`.
+
+### N5 — Rhetoric audit
+
+- “Exact” refers only to the explicitly gated finite algebra and finite sums.
+- “Transverse” refers only to the two tested torus-compatible momenta and the
+  `1e-10` normalized Ward gate.
+- “Proxy,” “static,” “finite-grid,” and “standalone” are retained wherever a
+  sign or contraction is discussed.
+- “Velocity-RG coefficient,” “physical speed,” “chain action surface,” and
+  “one-hop authority” are not claimed.
+- The finite-grid trend language makes no `delta->0`, volume, or continuum
+  inference.
+
+### N6 — Partial-closure paths
+
+No new axiom is proposed. Viable partial routes are: transfer the exact WTI
+calculus to the retained carrier (W2), repeat V6 with a true anisotropic gauge
+inverse (W3), define an on-shell speed observable (W4), and then perform the
+counterterm/RG extraction (W5). Exact torus momenta already repair the narrow
+finite-sum Ward gate but do not repair the remaining walls.
+
+### N7 — Steelman
+
+The strongest defensible reading is useful but narrow: exact V1–V3 algebra,
+an exact torus-momentum Ward control, and two reproducible positive static
+proxy signs form a good regression fixture. The retained blocked carrier's
+spin-block decomposition suggests a taste-singlet extension may preserve the
+sign, but only an explicit normalization and carrier calculation can establish
+that. The current artifact itself stops before that inference.
+
+### N8 — Cross-cycle echo
+
+Current-main comparison exposes four recurring mechanisms, all reflected in
+the corrected walls:
+
+- the retained [blocked four-taste module](STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md)
+  and [spin/taste core](ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md)
+  motivate W2 without being substituted into this runner;
+- `FREE_STAGGERED_POLE_RESIDUE_DIRAC_CARRIER_CAR_RELABELING_BOUNDED_THEOREM_NOTE_2026-07-17.md`
+  keeps the pole/physical-observable route visible but is not consumed as
+  retained authority, matching W4;
+- `VELOCITY_RG_GAUGE_SEAGULL_TRANSVERSE_VACUUM_POLARIZATION_2026-06-22.md`
+  records the taste/doubler-normalization problem, now W2; and
+- `velocity_rg_logflow_framework_internal_2026-06-21` records the missing
+  counterterm/RG extraction, now W5.
+
+The narrowed boundary therefore does not erase mechanisms already discovered
+elsewhere.
+
+**Overall N1–N8 status for the narrowed standalone claim: PASS.**
 
 ## Verification
 
@@ -304,9 +339,12 @@ Expected final line:
 TOTAL: PASS=25 FAIL=0
 ```
 
+The runner declares `AUDIT_TIMEOUT_SEC = 280` and its output is deterministic
+under the repository cache contract.
+
 ## Audit Boundary
 
-This note does not run audit, set audit status, or promote any chain row.
-It is an exact-support artifact plus labeled finite-grid witnesses for one
-named residual. Independent review and audit must decide whether it can
-serve as a one-hop authority in the velocity-RG chain.
+This note does not run audit, set audit status, or promote any chain row. An
+independent audit may evaluate only the bounded standalone surface stated
+here. No audit status should propagate from this candidate to any velocity-RG
+parent or comparison row.

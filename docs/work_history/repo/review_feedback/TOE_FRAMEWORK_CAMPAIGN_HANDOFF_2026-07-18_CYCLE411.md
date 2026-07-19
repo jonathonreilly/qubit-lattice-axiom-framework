@@ -27,15 +27,15 @@ Observed after the Cycle-417 science package was pushed:
 |---|---|
 | repository | `Physics-baremetal-probes` |
 | active branch | `codex/toe-cross-lane-campaign-20260718` |
-| last retained science head before this refreshed packet | `e1bed57e401b161e87fe8776676d4fc6146083b4` |
-| observed matching remote science head | `e1bed57e401b161e87fe8776676d4fc6146083b4` |
+| last retained science head before this refreshed packet | `e1bed57e40b2b34f71da0cbe448433b066b91582` |
+| observed matching remote science head | `e1bed57e40b2b34f71da0cbe448433b066b91582` |
 | only active parking surface | draft PR #5523, `Science: exact Record formation candidates and cross-lane bridges` |
 | PR base / state | `main` / open draft |
 | PR URL | <https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5523> |
 | local `main` | `fdb599edf8aaab375a719cd6d726e7120b5e9c57` |
-| local `origin/main` tracking ref | `8b164506f490a0a266b9470c9aa4b5331b3b49ca` |
-| live remote `main` from `ls-remote` | `8b164506f490a0a266b9470c9aa4b5331b3b49ca` |
-| observed tracking `origin/main...science head` | 26 commits unique to tracking `origin/main`; 28 unique to the science head |
+| local `origin/main` tracking ref | `05904b497febc6df6844a71086a3aa6184dea560` |
+| live remote `main` from `ls-remote` | `05904b497febc6df6844a71086a3aa6184dea560` |
+| observed tracking `origin/main...science head` | 29 commits unique to tracking `origin/main`; 28 unique to the science head |
 | live remote divergence | same as the tracking-ref divergence above at this observation |
 | observed local `main...science head` | 0 commits unique to local `main`; 283 unique to the science head |
 | authority | none |

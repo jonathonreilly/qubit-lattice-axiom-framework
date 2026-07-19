@@ -199,9 +199,10 @@ certification.
 
 ## Default Entry: Do The Right Thing, In Parallel (owner-directed 2026-07-17)
 
-Invoking this skill WITHOUT a specific named claim means: drain the lane, in
-parallel, with the canonical machinery — no topology decisions required from
-the invoker. The default session is:
+Invoking this skill WITHOUT a specific named claim — including a bare,
+argument-less invocation — means: drain the backlog, in parallel, with the
+canonical machinery — no topology decisions required from the invoker. The
+default session is:
 
 1. Setup per "Setup For Each Session" below (fetch, clean worktree,
    pipeline, strict lint).

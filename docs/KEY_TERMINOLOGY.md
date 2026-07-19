@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=dc02750e482ab935590058a2194f976ba8fba24eb54d6abde65acc594de73d05 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=b5fcd9f5243480a1670df2c411782a7a6efff6d9b5951c3f749372055942d336 -->
 # Key Terminology
 
 **Claim type:** meta
@@ -146,6 +146,10 @@ Every vocab / policy / process doc in the repo references back here.
 ## P
 
 - **positive_theorem** — `claim_type` value: derived positive result. Can earn `effective_status: retained` after clean audit + retained-grade deps. → [docs/audit/README.md](audit/README.md)
+- **proof-search finding class** — process-only enum: `PROOF_OBLIGATION` or `EQUIVALENT_STRENGTH_GAP`; records a missing proof leaf/reduction/admissibility check or a route that merely relocates the target into an equivalent-or-stronger gap. → [proof-search-governance.md](ai_methodology/skills/physics-loop/references/proof-search-governance.md), `docs/repo/CONTROLLED_VOCABULARY.md §Proof-search operational vocabulary`
+- **proof-search reviewer disposition** — process-only enum: `CLOSED`, `CONDITIONAL`, `EQUIVALENT-GAP`, or `FAIL`. It summarizes exact-target proof-obligation closure and does not set `audit_status`. → [proof-search-governance.md](ai_methodology/skills/physics-loop/references/proof-search-governance.md), `docs/repo/CONTROLLED_VOCABULARY.md §Proof-search operational vocabulary`
+- **proof-search status** — approach-family state: `unexplored`, `active`, `provisional`, `blocked-local`, `blocked-equivalent`, `retired`, or `candidate-complete`. → [proof-search-governance.md](ai_methodology/skills/physics-loop/references/proof-search-governance.md), `docs/repo/CONTROLLED_VOCABULARY.md §Proof-search operational vocabulary`
+- **proof-search strength relation** — relation of a terminal obligation to the exact target: `weaker`, `unknown/comparable`, `target-equivalent`, or `stronger`. → [proof-search-governance.md](ai_methodology/skills/physics-loop/references/proof-search-governance.md), `docs/repo/CONTROLLED_VOCABULARY.md §Proof-search operational vocabulary`
 - **primary_break_target** — audit-queue field: the node in a citation cycle designated for audit-induced cycle-break. → [docs/audit/AUDIT_QUEUE.md](audit/AUDIT_QUEUE.md), `docs/audit/data/audit_queue.json`
 - **promoted** — publication-capture disposition: main-paper publication-core family carried in the current paper package. → `docs/repo/CONTROLLED_VOCABULARY.md §Publication-Capture Dispositions`
 - **promoted quantitative package** — claim-strength label: quantitative package strong enough for the current main-paper surface. → `docs/repo/CONTROLLED_VOCABULARY.md §Claim-Strength / Release Labels`

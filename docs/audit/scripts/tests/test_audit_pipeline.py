@@ -8387,6 +8387,23 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "A path whose manifest role is `source` cannot be `retained_authority`",
             template_flat,
         )
+
+    def test_prompt_carries_proof_obligation_closure_gate(self):
+        template = (
+            PROJECT_ROOT / "docs" / "audit" / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
+        ).read_text(encoding="utf-8")
+        template_flat = " ".join(template.split())
+        self.assertIn("Proof-obligation closure gate", template)
+        self.assertIn("Reconstruct the proof-obligation graph", template_flat)
+        self.assertIn("target-equivalent or stronger missing lemma", template_flat)
+        self.assertIn(
+            "Use `audited_failed` when the source claims to have proved the target",
+            template_flat,
+        )
+        self.assertIn(
+            "Use `audited_conditional` only when the lemma is an explicit named premise",
+            template_flat,
+        )
         self.assertIn(
             "symmetry_or_representation`: symmetry, invariant, representation",
             template_flat,

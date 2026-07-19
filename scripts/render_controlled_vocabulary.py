@@ -301,6 +301,25 @@ def render_audit_lane_field_vocabulary(data: dict) -> str:
         lines.append(f"- `{name}` — {entry['definition']}")
     lines.append("")
 
+    # Proof-search operational vocabulary.
+    lines.append("### Proof-search operational vocabulary")
+    lines.append("")
+    proof_vocab = tf["proof_search_operational_vocabulary"]
+    lines.append(proof_vocab["description"])
+    lines.append("")
+    proof_group_titles = {
+        "strength_relation": "Strength relation",
+        "search_status": "Approach-family search status",
+        "reviewer_disposition": "Reviewer disposition",
+        "finding_class": "Finding class",
+    }
+    for group_name, group in proof_vocab["groups"].items():
+        lines.append(f"**{proof_group_titles[group_name]}.** {group['description']}")
+        lines.append("")
+        for name, definition in group["values"].items():
+            lines.append(f"- `{name}` — {definition}")
+        lines.append("")
+
     # independence
     lines.append("### Independence tiers")
     lines.append("")

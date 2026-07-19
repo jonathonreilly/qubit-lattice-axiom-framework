@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=dc02750e482ab935590058a2194f976ba8fba24eb54d6abde65acc594de73d05 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=b5fcd9f5243480a1670df2c411782a7a6efff6d9b5951c3f749372055942d336 -->
 # Controlled Vocabulary
 
 > **Front-door lookup:** Looking up a single term? Go to
@@ -433,6 +433,39 @@ Packetless legacy negative authority is invalidated with the controlled reason:
 - `bounded_with_named_walls` — Asserts a bounded result conditional on named walls or admissions.
 - `derived_no_go_boundary` — Asserts a derived no-go boundary inside a positive theorem, such as a per-element identity that does not lift.
 - `conditional_wall_rationale` — An audit rationale that names a residual wall as the reason a verdict is conditional.
+
+### Proof-search operational vocabulary
+
+Process-only vocabulary for theorem and hard-reduction search. These labels classify search state and review disposition; they carry no physics premise or audit-status weight.
+
+**Strength relation.** Relation between a route's terminal obligation and the exact target.
+
+- `weaker` — The terminal obligation is strictly weaker than the target.
+- `unknown/comparable` — Available work does not yet decide whether the obligation and target differ materially in strength.
+- `target-equivalent` — The target and terminal obligation imply one another up to routine translation.
+- `stronger` — The terminal obligation is strictly stronger than the target.
+
+**Approach-family search status.** State of an approach family in the proof-search registry.
+
+- `unexplored` — No concrete route-local attempt has been returned.
+- `active` — A materially live mechanism is under investigation.
+- `provisional` — A concrete core exists but required checks or leaves remain open.
+- `blocked-local` — The route is blocked by a narrower local obligation.
+- `blocked-equivalent` — The route terminates at a target-equivalent or stronger obligation without a new mechanism.
+- `retired` — The route has been set aside with a recorded reason and reopen condition.
+- `candidate-complete` — A candidate proof has discharged its obligation graph and awaits independent audit.
+
+**Reviewer disposition.** Proof-obligation disposition recorded by review-loop.
+
+- `CLOSED` — The exact target closes and every proof-obligation leaf is discharged.
+- `CONDITIONAL` — A named premise or dependency remains explicit and the claim is honestly conditional on it.
+- `EQUIVALENT-GAP` — The route stops at a target-equivalent or stronger missing lemma.
+- `FAIL` — The claimed proof is wrong, circular, inadmissible, or otherwise does not close on its own terms.
+
+**Finding class.** Review-loop finding classes for proof-obligation defects.
+
+- `PROOF_OBLIGATION` — A required proof leaf, hypothesis-preserving reduction, or admissibility check is missing.
+- `EQUIVALENT_STRENGTH_GAP` — A claimed advance merely relocates the target into an equivalent or stronger unresolved lemma.
 
 ### Independence tiers
 

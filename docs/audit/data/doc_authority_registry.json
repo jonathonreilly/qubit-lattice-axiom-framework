@@ -57,6 +57,13 @@
       "note": "Methodology overview; process authority only."
     },
     {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "class": "E",
+      "status": "in_flight_pr",
+      "pr": 5413,
+      "note": "Proof-search operating protocol for theorem and hard-reduction lanes; process authority only, with no physics premise weight."
+    },
+    {
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "class": "G",
       "status": "landed",

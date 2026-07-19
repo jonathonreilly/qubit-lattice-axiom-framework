@@ -670,11 +670,23 @@ may still be true but the artifact is not reliable enough to judge it.
 When in doubt, choose the more conservative non-clean verdict.
 
 If a proof or reduction terminates at a target-equivalent or stronger missing
-lemma, do not grant `audited_clean`. Use `audited_conditional`, normally with
-`notes_for_re_audit_if_any: missing_bridge_theorem`, and name both the exact
-terminal obligation and why its strength is comparable to or greater than the
-headline target. If a clean narrow lemma survives independently, state that
-narrow boundary in `claim_scope`.
+lemma, do not grant `audited_clean`. Route the defect by the claim actually
+made:
+
+- use `audited_failed` when the source claims to discharge the target but the
+  proof ends at an unproved, circular, or merely renamed terminal lemma;
+- use `audited_conditional` only when the terminal lemma is disclosed as an
+  explicit named premise or dependency on which the claim is honestly
+  conditional;
+- for that conditional case, use `scope_too_broad` when a clean narrow core is
+  overextended, `other` for a pure mathematical proof obligation not covered
+  by a more specific class, and `missing_bridge_theorem` only for the physical
+  carrier/readout/unit/boundary/sector/normalization/observable bridge kinds
+  defined below.
+
+In every case name the exact terminal obligation and explain why its strength
+is comparable to or greater than the headline target. If a clean narrow lemma
+survives independently, state that narrow boundary in `claim_scope`.
 
 For claims with `claim_type: no_go`, `bounded_theorem` whose source note names walls/open conditions, or any verdict that would record walls in `verdict_rationale`, apply the No-Go Discipline gate (`no-go-discipline` skill, N1-N8) before recording. Any FAIL forbids `audited_clean`; instead, choose the non-clean verdict whose `verdict_rationale` reflects the corrected narrower claim scope. Specifically:
 

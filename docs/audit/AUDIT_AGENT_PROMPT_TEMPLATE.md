@@ -157,6 +157,32 @@ include that limitation in `verdict_rationale`.
 
 ### 4. The audit rubric
 
+#### 4.0 Proof-obligation closure gate
+
+For any theorem, multi-step mathematical bridge, or hard reduction, perform
+this neutral checklist before choosing a verdict:
+
+- Restate the exact target with its quantifiers, domain, allowed premises,
+  forbidden weakenings, and required edge or degenerate cases.
+- Reconstruct the proof-obligation graph. Check that it is acyclic, that every
+  leaf is discharged, and that every reduction preserves hypotheses, domains,
+  admissibility, normalization, and conventions.
+- Identify the strongest unresolved terminal lemma. Decide whether it is
+  weaker than, comparable/target-equivalent to, or stronger than the target.
+- Reject circular imports, renamings of the target, and computational evidence
+  used as proof when it is neither exhaustive nor backed by a decisive theorem.
+
+A target-equivalent or stronger missing lemma never earns `audited_clean` and
+is not evidence of near closure. Use `audited_failed` when the source claims to
+have proved the target but leaves that lemma unproved or circular. Use
+`audited_conditional` only when the lemma is an explicit named premise or
+dependency and choose its repair class by the controlled definitions:
+`scope_too_broad` for an overextended clean core, `other` for an otherwise
+unclassified pure mathematical obligation, and `missing_bridge_theorem` only
+for the defined physical bridge kinds. Record the exact terminal obligation
+and strength comparison in `verdict_rationale`; no new response-schema field
+is required.
+
 #### 4a. No-Go Discipline gate
 
 The orchestrator's source-shape check says this row requires the gate:

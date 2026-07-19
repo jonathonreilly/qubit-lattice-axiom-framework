@@ -199,6 +199,41 @@ term_families:
       no_go_discipline_packet_missing:
         definition: "A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative."
 
+  proof_search_operational_vocabulary:
+    description: "Process-only vocabulary for theorem and hard-reduction search. These labels classify search state and review disposition; they carry no physics premise or audit-status weight."
+    authority: docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md
+    scope_tag: core_process
+    groups:
+      strength_relation:
+        description: "Relation between a route's terminal obligation and the exact target."
+        values:
+          weaker: "The terminal obligation is strictly weaker than the target."
+          unknown/comparable: "Available work does not yet decide whether the obligation and target differ materially in strength."
+          target-equivalent: "The target and terminal obligation imply one another up to routine translation."
+          stronger: "The terminal obligation is strictly stronger than the target."
+      search_status:
+        description: "State of an approach family in the proof-search registry."
+        values:
+          unexplored: "No concrete route-local attempt has been returned."
+          active: "A materially live mechanism is under investigation."
+          provisional: "A concrete core exists but required checks or leaves remain open."
+          blocked-local: "The route is blocked by a narrower local obligation."
+          blocked-equivalent: "The route terminates at a target-equivalent or stronger obligation without a new mechanism."
+          retired: "The route has been set aside with a recorded reason and reopen condition."
+          candidate-complete: "A candidate proof has discharged its obligation graph and awaits independent audit."
+      reviewer_disposition:
+        description: "Proof-obligation disposition recorded by review-loop."
+        values:
+          CLOSED: "The exact target closes and every proof-obligation leaf is discharged."
+          CONDITIONAL: "A named premise or dependency remains explicit and the claim is honestly conditional on it."
+          EQUIVALENT-GAP: "The route stops at a target-equivalent or stronger missing lemma."
+          FAIL: "The claimed proof is wrong, circular, inadmissible, or otherwise does not close on its own terms."
+      finding_class:
+        description: "Review-loop finding classes for proof-obligation defects."
+        values:
+          PROOF_OBLIGATION: "A required proof leaf, hypothesis-preserving reduction, or admissibility check is missing."
+          EQUIVALENT_STRENGTH_GAP: "A claimed advance merely relocates the target into an equivalent or stronger unresolved lemma."
+
   negative_assertion_classes:
     description: "Mandatory auditor declaration on every incoming audit: the no-go-discipline policy classes the artifact asserts, judged semantically from the full note. Any non-empty declaration requires the N1-N8 packet; an empty declaration never bypasses the mechanical trigger."
     authority: docs/ai_methodology/skills/no-go-discipline/SKILL.md

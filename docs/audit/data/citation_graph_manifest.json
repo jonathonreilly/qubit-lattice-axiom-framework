@@ -1,6 +1,6 @@
 {
- "edge_count": 14760,
- "node_count": 4400,
+ "edge_count": 14767,
+ "node_count": 4401,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14073,6 +14073,10 @@
   "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09": {
    "deps_hash": "3e5774e17b1d",
    "out_degree": 1
+  },
+  "theta_cross_sector_determinant_forcing_property_characterization_bounded_theorem_note_2026-07-17": {
+   "deps_hash": "82d05c244a05",
+   "out_degree": 7
   },
   "theta_defect_closure_from_admissibility_test_bounded_note_2026-07-03": {
    "deps_hash": "a37578c80ad0",

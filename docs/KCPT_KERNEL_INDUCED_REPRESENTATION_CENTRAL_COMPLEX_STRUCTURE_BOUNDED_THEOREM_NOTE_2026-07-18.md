@@ -2,12 +2,14 @@
 
 Date: 2026-07-18
 
-Claim type: bounded theorem — a structure theorem on a fixed finite surface,
-established by exact integer and rational arithmetic (numpy int64 plus sympy; no
-floating point in any load-bearing gate). It states what the induced symmetry
-action on the corner-wave kernel *is*; it fixes no free parameter and forces
-nothing pre-record. The paired runner recomputes every gated quantity from the
-construction, so this note carries no number that the runner does not derive.
+**Type:** bounded_theorem
+
+**Claim boundary:** bounded theorem on a fixed finite surface, established by
+exact integer and rational arithmetic (numpy int64 plus sympy; no floating point
+in any load-bearing gate). It states what the induced symmetry action on the
+corner-wave kernel *is*; it fixes no free parameter and forces nothing pre-record.
+The paired runner recomputes every gated quantity from the construction, so this
+note carries no number that the runner does not derive.
 
 ## Setting
 
@@ -16,7 +18,7 @@ Kawamoto-Smit staggered phases of the corner-carrier construction: `eta_1 = 1`,
 `eta_2(x) = (-1)^{x_1}`, `eta_3(x) = (-1)^{x_1 + x_2}` (the corner-carrier delivery
 note fixes these and records that "its exact rank is `56`", leaving an eight-
 dimensional kernel; see the
-[corner-carrier note](docs/KCPT_CORNER_CARRIER_LATTICE_DELIVERY_HW1_DOUBLET_PAIR_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md)).
+[corner-carrier note](KCPT_CORNER_CARRIER_LATTICE_DELIVERY_HW1_DOUBLET_PAIR_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md)).
 The integer antisymmetric operator is written `D2` here, `D2[i, j]` accumulating
 `eta_mu(x)` for the forward neighbour and `-eta_mu(x)` for the backward neighbour
 along each of the three axes, with site order `idx(x1, x2, x3) = (x1*L + x2)*L + x3`,
@@ -32,7 +34,7 @@ Each base surface symmetry is dressed. The three bases are the stabiliser
 (identity), the order-two proper rotation `U2: x -> (-x2, -x1, -x3) mod 4`, and the
 proper cubic rotation `UR: x -> (x2, x3, x1)`; these are exactly the
 "standard translations, and proper cubic rotations" admitted by the
-[minimal-axioms note](docs/MINIMAL_AXIOMS_2026-06-29.md). A dressed candidate is
+[minimal-axioms note](MINIMAL_AXIOMS_2026-06-29.md). A dressed candidate is
 `U = diag(d) @ base @ trans(t)`, where `trans(t): x -> x - t mod 4` ranges over all
 `64` translations and the quadratic sign field is
 
@@ -43,6 +45,11 @@ ranging over all `64` sign patterns. Each base therefore carries a dressed class
 induced operator `K8 = V8^T @ U @ V8`, an integer `8 x 8` matrix. The staggered
 realisation gate handle `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03` is the
 context for reading `D2` as the staggered Dirac operator on this surface.
+
+Write `k8 = K8 / 64` for the normalized action. Group-theoretic notation below
+refers to the normalized rational matrices `k8`; when a raw integer representative
+is needed it is named explicitly. The runner stores the raw matrices and uses the
+exact scaled product `mul(A, B) = (A @ B) // 64`.
 
 ## T1 — whole-class kernel preservation and the parity-qubit dictionary
 
@@ -94,19 +101,24 @@ stabiliser class, with counts `16 / 0 / 0` across stabiliser / U2 / UR (gate B2-
 and the `16` stabiliser grading-preservers are exactly the `a = (0, 0, 0)` members,
 each a pure parity diagonal. The stabiliser Hamming-block support census is
 `32 / 16 / 16` over the three named supports (gate B2-7). The dichotomy is sharp
-at class level: the non-trivial base symmetries can be realised on the kernel at
-all only at their forced quadratic price, no quadratically-dressed member
-preserves the Hamming grading or the triplet, and within the purely-linear
-stabiliser class preservation is confined to the trivially-dressed members.
+among members that commute with `D2`: the non-trivial base symmetries can commute
+with `D2` only at their forced quadratic price. No quadratically-dressed commuting
+member preserves the Hamming grading or the triplet, and within the purely-linear
+commuting stabiliser class preservation is confined to the trivially-dressed
+members. The undressed `U2` and `UR` still act on the kernel as T1 states; they fail
+the additional commutation condition.
 
 ## T3 — the induced group
 
-The distinct induced images generate a group `G` of order `|G| = 96` (gate B3-1).
+The distinct normalized induced images generate a group `G` of order `|G| = 96`
+(gate B3-1).
 Per-class images close to proper subgroups of orders `16 / 32 / 48`, and among the
 three base pairs only `U2` together with `UR` generates all of `G`
-(closures `32 / 48 / 96`; gate B3-2). The scalar `-64 I` lies in `G`; the centre has
-order `4`, namely `{+/- I, +/- J}`, and exactly two central elements square to `-I`
-(gate B3-3). The exponent is `24`; there are `16` conjugacy classes with sizes
+(closures `32 / 48 / 96`; gate B3-2). The scalar `-I` lies in `G`; its raw
+representative is `-64 I`. The normalized centre has order `4`, namely
+`{+/- I, +/- j}`; its raw representatives are `{+/- 64 I, +/- J64}`, where
+`J64 = 64 j`, and exactly two normalized central elements square to `-I` (gate
+B3-3). The exponent is `24`; there are `16` conjugacy classes with sizes
 `[1,1,1,1,6,6,6,6,6,6,8,8,8,8,12,12]`; the commutator subgroup has order `24` and the
 abelianisation has order `4` (gate B3-4). The grading-preserving subgroup of `G` has
 order `4`, equal to the triplet-preserving subgroup, with triplet restrictions
@@ -116,27 +128,30 @@ zero matrix, so `G` fixes no vector in the kernel (gate B3-6).
 
 ## T4 — central complex structure and rational irreducibility (headline)
 
-The exact commutant of `G` over the rationals is two-dimensional, `span{I, J}`, and
-`Q(J)` is isomorphic to `Q(i)` (gate B4-3). The element `J` is a canonical central
-complex structure: the runner *finds* it as the unique central element that squares
-to `-I` and carries the weight-one corner wave `chi_{x2}` to the vacuum corner
-wave with a `+` sign (canonical orientation),
-and only then gates the found matrix against its closed form — `J` is never hard-
-coded. It satisfies `J^2 = -I`, `J^T = -J`, `trace J = 0`, and is integer-exact at
-scale `64` (gates B4-4, B4-5). Its closed form is the real Pauli word
+The exact commutant of `G` over the rationals is two-dimensional, `span{I, j}`,
+and `Q(j)` is isomorphic to `Q(i)` (gate B4-3). The runner first *finds* the raw
+integer representative `J64` as the unique raw central square-root of `-64 I`
+whose vacuum-row, `chi_{x2}`-column entry is positive. It then defines
+`j = J64 / 64` and only afterward gates `J64` against its closed form; neither
+matrix is hard-coded. The normalized complex structure satisfies `j^2 = -I`,
+`j^T = -j`, and `trace j = 0` (gates B4-4, B4-5). Its real Pauli word is
 `Z (x) iY (x) Z` on the three parity qubits, with the complex axis on the middle
 `x2` parity qubit — the middle link of the staggering chain (`eta_2`, `eta_3`
-above): `J[index(S xor {1}), index(S)] = 64 (-1)^{|S and {0,2}|} (+1 if 1 in S else -1)`,
-with Hamming-block support `{(0,1),(1,0),(1,2),(2,1),(2,3),(3,2)}` and vacuum column
-`-64 e_{(1,)}`.
+above). The raw integer rule is
+`J64[index(S xor {1}), index(S)] = 64 (-1)^{|S and {0,2}|} (+1 if 1 in S else -1)`,
+with Hamming-block support `{(0,1),(1,0),(1,2),(2,1),(2,3),(3,2)}` and raw vacuum
+column `-64 e_{(1,)}`.
 
-Because `Q(J)` is a field, `G` admits no proper rational invariant subspace: the
-characteristic polynomial of `J` is `(lambda^2 + 1)^4`, and
-`det(a I + b J) = (a^2 + b^2)^4` factors over the rationals with no linear factor
-(gates B4-6, B4-7). Over the complex numbers the representation splits as exactly one
-conjugate pair `W + Wbar` with `dim W = 4`: the `+i` and `-i` eigenspaces of `J` each
-have dimension `4`, and the character satisfies `<chi, chi> = 2` with Frobenius-Schur
-sum `0`, the complex type (gates B4-1, B4-2, B4-6). The orbit of a single
+The characteristic polynomial of `j` is `(lambda^2 + 1)^4`, and
+`det(a I + b j) = (a^2 + b^2)^4`, so every nonzero rational element of the
+commutant is invertible (gates B4-6, B4-7). Since `G` is finite, its rational
+representation is semisimple by Maschke's theorem. A proper rational invariant
+subspace would therefore give a nontrivial idempotent projection in the
+commutant, while the field `Q(j)` has no such idempotent; hence the rational
+representation is irreducible. Over the complex numbers it splits as exactly one
+conjugate pair `W + Wbar` with `dim W = 4`: the `+i` and `-i` eigenspaces of `j`
+each have dimension `4`, and the character satisfies `<chi, chi> = 2` with
+Frobenius-Schur sum `0`, the complex type (gates B4-1, B4-2, B4-6). The orbit of a single
 Hamming-weight-one corner wave under `G` spans the whole eight-dimensional kernel
 (rank `8`; gate B4-8): each weight-one corner wave is a cyclic vector, so any
 `G`-stable subspace containing one is the whole kernel. The four graded members
@@ -148,18 +163,21 @@ full `G` is carried entirely by the members off the graded subgroup (gate B4-9).
 
 The two-presentation binary of the coupling-triple mechanism registers on this
 surface as an orientation choice. The
-[two-presentation mechanism note](docs/KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md)
+[two-presentation mechanism note](KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md)
 records:
 
 > **FLAG — two-model mechanism:** the entrywise-conjugate presentations in L-K2 satisfy the same named clauses and exchange every K-odd seed.
 
 > The memo's live Qualification leaves the unfixed choice conditional/open.
 
-At the kernel level: entrywise complex conjugation fixes the entire real induced
-group `G` (every member is a real integer matrix) and carries `ker(J - iI)` onto
-`ker(J + iI)`, exchanging `W` and `Wbar` (gate B5-1). The two entrywise-conjugate
-presentations therefore materialise here as the two central complex structures `+J`
-and `-J` — a choice of which central complex structure is called `i`. The vacuum
+At the kernel level, entrywise complex conjugation fixes the entire real induced
+group `G` (each normalized member is real rational and has a raw integer
+representative) and carries `ker(j - iI)` onto `ker(j + iI)`, exchanging `W` and
+`Wbar` (gate B5-1). The two entrywise-conjugate presentations therefore register
+here as the two normalized central complex structures `+j` and `-j` — a choice of
+which central complex structure is called `i`. This induced-kernel registration
+does not identify, resolve, or reclassify the mechanism note's larger Pauli/corner
+presentation FLAG. The vacuum
 orbit under `G` has size `48` and mixes every Hamming level (its support set spans
 weights `0` through `3`; gate B5-2), so no graded, vacuum-anchored splitting exists to
 prefer one orientation over the other. The graded restrictions commute with a free
@@ -168,7 +186,7 @@ diagonal `diag(w1, w2, w3)`, so the theorem attaches no per-slot weight relation
 
 ## Boundary — what this does NOT establish
 
-- It does NOT select the orientation: `+J` versus `-J` remains the two-presentation
+- It does NOT select the orientation: `+j` versus `-j` remains the two-presentation
   choice, exactly as flagged; the theorem exhibits the binary, it does not break it.
 - It does NOT act on the mechanism note's live Qualification: the unfixed choice
   stays conditional and open at the memo level; this surface adds structure around
@@ -178,14 +196,16 @@ diagonal `diag(w1, w2, w3)`, so the theorem attaches no per-slot weight relation
 - It is a finite-surface structure theorem: no continuum limit and no interacting
   claim are asserted, only exact facts about the `8`-dimensional kernel of a fixed
   `4^3` operator.
-- Register-not-read: the corner-wave kernel is the record-carrier surface and the
-  induced group is a reconstruction-level symmetry action. The theorem registers
-  structural facts about that carrier and forces nothing pre-record.
+- Finite algebraic carrier only: the corner-wave kernel is the bounded
+  corner-carrier surface and the induced group is its finite symmetry action. The
+  theorem records structural facts about that carrier; it supplies no record,
+  write, readout, or reconstruction-level physical identification and forces
+  nothing pre-record.
 
 ## Negative controls
 
 - The undressed rotations `U2` and `UR` do not commute with `D2`, so dressing is
-  required, not cosmetic (gate B6-1).
+  required for commutation, not for their kernel action (gate B6-1).
 - A one-bit change to the T1 exemplar (flipping `b13`, bits `(0,1,0,1,1,0)`, same
   `t`) breaks commutation with `D2` (gate B6-2).
 - The two wrong-axis Pauli words — the same formula with the complex axis moved to
@@ -221,17 +241,17 @@ spanning several bases or items expand to one line each) and a final
 | B2-7 | stabiliser Hamming-block-support census `32 / 16 / 16` |
 | B3-1 | `\|G\| = 96` from the `24` distinct generators |
 | B3-2 | single-base closures `16 / 32 / 48`; only `U2 + UR` gives all of `G` |
-| B3-3 | `-64 I` in `G`; centre order `4`; two central squares of `-I` |
+| B3-3 | normalized `-I` in `G`; centre order `4`; two normalized central squares of `-I` |
 | B3-4 | exponent `24`; `16` conjugacy classes; commutator `24`; abelianisation `4` |
 | B3-5 | graded subgroup order `4`; triplet restrictions; `x1`, `x2` sign-locked |
 | B3-6 | sum over `G` is the zero matrix |
 | B4-1 | sum of `tr(K8)^2` gives `<chi, chi> = 2` |
 | B4-2 | Frobenius-Schur sum `0` |
 | B4-3 | exact commutant over the rationals has dimension `2` |
-| B4-4 | unique canonical `J` found; the other central square of `-I` is `-J` |
-| B4-5 | `J` closed form, `J^2 = -I`, `J^T = -J`, `trace 0`, central, named support, vacuum column |
-| B4-6 | charpoly `(lambda^2 + 1)^4`; both `J`-eigenspaces dimension `4` |
-| B4-7 | `det(aI + bJ) = (a^2 + b^2)^4`, so the commutant is a field |
+| B4-4 | unique canonical raw `J64` found; the other raw central root is `-J64`; define `j = J64 / 64` |
+| B4-5 | raw `J64` closed form; normalized `j^2 = -I`, `j^T = -j`, `trace 0`; central, named support, vacuum column |
+| B4-6 | charpoly `(lambda^2 + 1)^4`; both `j`-eigenspaces dimension `4` |
+| B4-7 | `det(aI + bj) = (a^2 + b^2)^4`; commutant field plus Maschke gives rational irreducibility |
 | B4-8 | orbit of one Hamming-weight-one carrier spans the kernel (rank `8`) |
 | B4-9 | the four graded members of `G` are diagonal |
 | B5-1 | conjugation fixes `G` and swaps `W` and `Wbar` |
@@ -245,10 +265,10 @@ spanning several bases or items expand to one line each) and a final
 | B8-1..B8-3 | consumed-dependency ledger shards exist and parse |
 | B9-1..B9-5 | note hygiene: forbidden strings absent, no bare decimals, link inventory, required and verbatim strings present |
 
-## Paired runner and cache
+## Runner and cache
 
-- [paired runner](scripts/kcpt_kernel_induced_representation_central_complex_structure_2026_07_18.py)
-- [runner cache](logs/runner-cache/kcpt_kernel_induced_representation_central_complex_structure_2026_07_18.txt)
+- [paired runner](../scripts/kcpt_kernel_induced_representation_central_complex_structure_2026_07_18.py)
+- [runner cache](../logs/runner-cache/kcpt_kernel_induced_representation_central_complex_structure_2026_07_18.txt)
 
 The cache path is
 `logs/runner-cache/kcpt_kernel_induced_representation_central_complex_structure_2026_07_18.txt`;

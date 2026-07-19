@@ -1,5 +1,5 @@
 {
- "edge_count": 14743,
+ "edge_count": 14746,
  "node_count": 4396,
  "nodes": {
   "3d_correction_master_note": {
@@ -6875,8 +6875,8 @@
    "out_degree": 5
   },
   "kcpt_kernel_induced_representation_central_complex_structure_bounded_theorem_note_2026-07-18": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "fc3a499e3c8b",
+   "out_degree": 3
   },
   "kcpt_orbit_clause_kinvariant_surface_equivalence_narrow_theorem_note_2026-06-10": {
    "deps_hash": "ddf6440cc1c2",

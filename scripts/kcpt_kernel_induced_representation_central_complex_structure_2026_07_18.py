@@ -4,9 +4,10 @@
 Integer / rational-exact verification runner. Every gated quantity is recomputed
 from the construction (D2 from the eta phases, V8 from the corner subsets, the
 dressed classes from their definitions); expected values appear only on the
-comparison side of each gate. The complex structure J is FOUND by the runner
-(central element squaring to -I, canonical orientation) and then gated against
-its closed-form Pauli word -- it is never hard-coded.
+comparison side of each gate. The raw complex-structure representative J64 is
+FOUND by the runner (central raw element squaring to -64 I, canonical orientation),
+normalized as j = J64/64, and then gated against its closed-form Pauli word -- it
+is never hard-coded.
 
 Group elements are 64 times an orthogonal matrix and 80 of the 96 carry half-unit
 (+-32) entries, so a scalar floor-divide by 64 would corrupt them. Commutant,
@@ -22,6 +23,7 @@ import os
 import re
 import sys
 import json
+import subprocess
 import itertools
 import numpy as np
 from sympy import Matrix, eye, symbols, factor, simplify, I as sy_I
@@ -474,52 +476,55 @@ commutant_dim = len(Matrix.vstack(*blocks).nullspace())
 gate("B4.3b", commutant_dim == 2,
      f"exact commutant over Q (raw kron equations) has dimension 2 (got {commutant_dim})")
 
-# find J: central, squares to -I, orientation J[index(()),index((1,))] > 0
+# Find raw J64: central, scaled-square -64 I, orientation
+# J64[index(()),index((1,))] > 0. Then normalize exactly as j = J64/64.
 i_vac = sub_index[()]
 i_x2 = sub_index[(1,)]
-cand_J = [g for g in central_sq if g[i_vac, i_x2] > 0]
-gate("B4.4a", len(cand_J) == 1, "unique central square-(-I) element with J chi_{x2}=+chi_{}")
-J = cand_J[0]
-otherJ = [g for g in central_sq if not eqm(g, J)][0]
-gate("B4.4b", eqm(otherJ, -J), "the other central square-(-I) element == -J")
+cand_J64 = [g for g in central_sq if g[i_vac, i_x2] > 0]
+gate("B4.4a", len(cand_J64) == 1,
+     "unique raw central root with J64 chi_{x2}=+64 chi_{}")
+J64 = cand_J64[0]
+otherJ64 = [g for g in central_sq if not eqm(g, J64)][0]
+gate("B4.4b", eqm(otherJ64, -J64), "the other raw central root == -J64")
 
-assert np.all(J % 64 == 0)
-nz = int(np.count_nonzero(J))
+assert np.all(J64 % 64 == 0)
+nz = int(np.count_nonzero(J64))
 formula_ok = True
 for c, S in enumerate(SUBSETS):
     r = sub_index[sub_xor(S, (1,))]
     val = 64 * ((-1) ** len(set(S) & {0, 2})) * (1 if 1 in S else -1)
-    if int(J[r, c]) != val:
+    if int(J64[r, c]) != val:
         formula_ok = False
 gate("B4.5a", nz == 8 and formula_ok,
-     "J/64 has 8 nonzeros; J[index(S^{1}),index(S)]==64*(-1)^{|S&{0,2}|}*(+1 iff 1 in S)")
+     "J64 has 8 nonzeros; J64[index(S^{1}),index(S)]==64*(-1)^{|S&{0,2}|}*(+1 iff 1 in S)")
 gate("B4.5b",
-     int(np.trace(J)) == 0 and eqm(J.T, -J) and eqm(mul(J, J), -I8),
-     "trace(J)==0, J.T==-J, mul(J,J)==-64 I")
-gate("B4.5c", all(eqm(J @ g, g @ J) for g in GEN),
-     "J commutes with every generator (central)")
-Jsupp = {(HW[i], HW[j]) for i in range(8) for j in range(8) if J[i, j] != 0}
+     int(np.trace(J64)) == 0 and eqm(J64.T, -J64) and eqm(mul(J64, J64), -I8),
+     "trace(J64)==0, J64.T==-J64, mul(J64,J64)==-64 I; hence j^2==-I")
+gate("B4.5c", all(eqm(J64 @ g, g @ J64) for g in GEN),
+     "J64 (equivalently j) commutes with every generator")
+Jsupp = {(HW[i], HW[j]) for i in range(8) for j in range(8) if J64[i, j] != 0}
 gate("B4.5d", Jsupp == {(0, 1), (1, 0), (1, 2), (2, 1), (2, 3), (3, 2)},
-     "hw-block support of J == {(0,1),(1,0),(1,2),(2,1),(2,3),(3,2)}")
-col0 = J[:, i_vac].copy()
+     "hw-block support of J64 == {(0,1),(1,0),(1,2),(2,1),(2,3),(3,2)}")
+col0 = J64[:, i_vac].copy()
 expcol = np.zeros(8, dtype=np.int64)
 expcol[i_x2] = -64
-gate("B4.5e", eqm(col0, expcol), "J column 0 == -64 * e_{(1,)} (vacuum -> minus chi_{x2})")
+gate("B4.5e", eqm(col0, expcol),
+     "J64 column 0 == -64 * e_{(1,)} (j maps vacuum -> minus chi_{x2})")
 
 lam = symbols('lambda')
-Jm = Matrix((J // 64).tolist())
-cp = Jm.charpoly(lam).as_expr()
+j = Matrix((J64 // 64).tolist())
+cp = j.charpoly(lam).as_expr()
 gate("B4.6a", simplify(cp - (lam ** 2 + 1) ** 4) == 0,
-     "charpoly(J/64) == (lambda^2 + 1)^4")
-rp = (Jm - sy_I * eye(8)).rank()
-rm = (Jm + sy_I * eye(8)).rank()
+     "charpoly(j) == (lambda^2 + 1)^4")
+rp = (j - sy_I * eye(8)).rank()
+rm = (j + sy_I * eye(8)).rank()
 gate("B4.6b", rp == 4 and rm == 4,
-     "rank(J/64 - iI)==4 and rank(J/64 + iI)==4 (W and Wbar both 4-dim)")
+     "rank(j - iI)==4 and rank(j + iI)==4 (W and Wbar both 4-dim)")
 
 sa, sb = symbols('a b')
-detexpr = (sa * eye(8) + sb * Jm).det()
+detexpr = (sa * eye(8) + sb * j).det()
 gate("B4.7", simplify(detexpr - (sa ** 2 + sb ** 2) ** 4) == 0,
-     "factor(det(aI + bJ/64)) == (a^2 + b^2)^4 so Q[J] is a field (no proper invariant subspace)")
+     "det(aI + bj) == (a^2 + b^2)^4; Q[j] is a field, and Maschke gives rational irreducibility")
 
 e1 = np.zeros(8, dtype=np.int64)
 e1[1] = 1
@@ -552,12 +557,12 @@ gate("B4.9", len(gG) == 4 and all(eqm(g, np.diag(np.diag(g))) for g in gG),
 # ============================================================================ B5
 print("== B5 FLAG registration and neutrality ==")
 gate("B5.1a", all(g.dtype == np.int64 for g in G) and all(np.isreal(g).all() for g in G),
-     "entrywise conjugation fixes every element of G (all real integer matrices)")
-basis_plus = (Jm - sy_I * eye(8)).nullspace()
-Aminus = Jm + sy_I * eye(8)
+     "entrywise conjugation fixes G (normalized elements real rational; raw representatives integer)")
+basis_plus = (j - sy_I * eye(8)).nullspace()
+Aminus = j + sy_I * eye(8)
 swap_ok = len(basis_plus) == 4 and all((Aminus * v.conjugate()).is_zero_matrix for v in basis_plus)
 gate("B5.1b", swap_ok,
-     "conjugation carries ker(J/64 - iI) into ker(J/64 + iI): swaps W <-> Wbar")
+     "conjugation carries ker(j - iI) into ker(j + iI): swaps W <-> Wbar")
 
 e0 = np.zeros(8, dtype=np.int64)
 e0[0] = 1
@@ -695,9 +700,36 @@ else:
     gate("B9.2", dec is None,
          f"no bare-decimal literal [0-9].[0-9] in note (match: {dec.group(0) if dec else None})")
     links = re.findall(r'\]\(([^)]+)\)', note_raw)
-    docs_links = [u for u in links if 'docs/' in u]
-    gate("B9.3a", len(docs_links) == 3,
-         f"exactly 3 markdown links into docs/ (got {len(docs_links)})")
+    dependency_links = {
+        "KCPT_CORNER_CARRIER_LATTICE_DELIVERY_HW1_DOUBLET_PAIR_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+        "KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md",
+        "MINIMAL_AXIOMS_2026-06-29.md",
+    }
+    artifact_links = {
+        "../scripts/kcpt_kernel_induced_representation_central_complex_structure_2026_07_18.py",
+        "../logs/runner-cache/kcpt_kernel_induced_representation_central_complex_structure_2026_07_18.txt",
+    }
+    expected_links = dependency_links | artifact_links
+    note_dir = os.path.dirname(NOTE_PATH)
+    resolved = [os.path.normpath(os.path.join(note_dir, u.split("#", 1)[0])) for u in links]
+    tracked = []
+    for path in resolved:
+        rel = os.path.relpath(path, ROOT)
+        proc = subprocess.run(
+            ["git", "-C", ROOT, "ls-files", "--error-unmatch", "--", rel],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+        )
+        tracked.append(proc.returncode == 0)
+    link_ok = (
+        len(links) == len(expected_links)
+        and set(links) == expected_links
+        and all(os.path.isfile(path) for path in resolved)
+        and all(tracked)
+    )
+    gate("B9.3a", link_ok,
+         "exactly 3 authorities and 2 paired artifacts; every target resolves and is tracked")
     handle = "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03"
     backticked = ("`" + handle + "`") in note_raw
     not_linked = not any(handle in u for u in links)
@@ -705,7 +737,8 @@ else:
          "STAGGERED_DIRAC handle appears backticked and NOT as a link")
     runner_rel = "scripts/kcpt_kernel_induced_representation_central_complex_structure_2026_07_18.py"
     cache_rel = "logs/runner-cache/kcpt_kernel_induced_representation_central_complex_structure_2026_07_18.txt"
-    required = ["bounded theorem", "does NOT select", "Boundary", runner_rel, cache_rel]
+    required = ["**Type:** bounded_theorem", "bounded theorem", "does NOT select",
+                "Boundary", runner_rel, cache_rel]
     missing = [s for s in required if s not in note_raw]
     gate("B9.4", not missing, f"required strings present (missing: {missing})")
     verbatim_math = ["Z (x) iY (x) Z", "(a^2 + b^2)^4", "(lambda^2 + 1)^4"]

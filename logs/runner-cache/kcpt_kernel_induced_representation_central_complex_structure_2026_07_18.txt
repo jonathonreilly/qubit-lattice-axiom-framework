@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_kernel_induced_representation_central_complex_structure_2026_07_18.py
-runner_sha256: 90510792c0019c850a2461d1a90130c233ab8f950374ecfc0ce83cc01fae2935
+runner_sha256: 74a16c00da36d3132e70dea295dc9966ddfe8931a10db3efac94a49ecb1e05de
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 16.81
+elapsed_sec: 13.22
 status: ok
 ----- stdout -----
 == B1 surface and whole-class kernel preservation ==
@@ -64,22 +64,22 @@ status: ok
 [B4.2] PASS Frobenius-Schur sum over G of tr(mul(K,K))==0 (got 0)
 [B4.3a] PASS a 2-element generating subset closes to all 96
 [B4.3b] PASS exact commutant over Q (raw kron equations) has dimension 2 (got 2)
-[B4.4a] PASS unique central square-(-I) element with J chi_{x2}=+chi_{}
-[B4.4b] PASS the other central square-(-I) element == -J
-[B4.5a] PASS J/64 has 8 nonzeros; J[index(S^{1}),index(S)]==64*(-1)^{|S&{0,2}|}*(+1 iff 1 in S)
-[B4.5b] PASS trace(J)==0, J.T==-J, mul(J,J)==-64 I
-[B4.5c] PASS J commutes with every generator (central)
-[B4.5d] PASS hw-block support of J == {(0,1),(1,0),(1,2),(2,1),(2,3),(3,2)}
-[B4.5e] PASS J column 0 == -64 * e_{(1,)} (vacuum -> minus chi_{x2})
-[B4.6a] PASS charpoly(J/64) == (lambda^2 + 1)^4
-[B4.6b] PASS rank(J/64 - iI)==4 and rank(J/64 + iI)==4 (W and Wbar both 4-dim)
-[B4.7] PASS factor(det(aI + bJ/64)) == (a^2 + b^2)^4 so Q[J] is a field (no proper invariant subspace)
+[B4.4a] PASS unique raw central root with J64 chi_{x2}=+64 chi_{}
+[B4.4b] PASS the other raw central root == -J64
+[B4.5a] PASS J64 has 8 nonzeros; J64[index(S^{1}),index(S)]==64*(-1)^{|S&{0,2}|}*(+1 iff 1 in S)
+[B4.5b] PASS trace(J64)==0, J64.T==-J64, mul(J64,J64)==-64 I; hence j^2==-I
+[B4.5c] PASS J64 (equivalently j) commutes with every generator
+[B4.5d] PASS hw-block support of J64 == {(0,1),(1,0),(1,2),(2,1),(2,3),(3,2)}
+[B4.5e] PASS J64 column 0 == -64 * e_{(1,)} (j maps vacuum -> minus chi_{x2})
+[B4.6a] PASS charpoly(j) == (lambda^2 + 1)^4
+[B4.6b] PASS rank(j - iI)==4 and rank(j + iI)==4 (W and Wbar both 4-dim)
+[B4.7] PASS det(aI + bj) == (a^2 + b^2)^4; Q[j] is a field, and Maschke gives rational irreducibility
 [B4.8a] PASS rank of 96x8 orbit {K@e_1} == 8 (single hw=1 carrier spans kernel) (got 8)
 [B4.8b] PASS iterative rref from span{e1,e2,e3} stabilizes at dimension 8
 [B4.9] PASS the 4 graded members of G are DIAGONAL (reducible-contrast discriminator)
 == B5 FLAG registration and neutrality ==
-[B5.1a] PASS entrywise conjugation fixes every element of G (all real integer matrices)
-[B5.1b] PASS conjugation carries ker(J/64 - iI) into ker(J/64 + iI): swaps W <-> Wbar
+[B5.1a] PASS entrywise conjugation fixes G (normalized elements real rational; raw representatives integer)
+[B5.1b] PASS conjugation carries ker(j - iI) into ker(j + iI): swaps W <-> Wbar
 [B5.2a] PASS vacuum orbit under G has size 48 (got 48)
 [B5.2b] PASS vacuum-orbit hw-support set matches the mixed-grade spec set
 [B5.3] PASS each triplet restriction commutes with diag(w1,w2,w3): no per-slot weight relation (r-neutral)
@@ -104,7 +104,7 @@ status: ok
 == B9 note hygiene ==
 [B9.1] PASS forbidden route/status strings absent (found: [])
 [B9.2] PASS no bare-decimal literal [0-9].[0-9] in note (match: None)
-[B9.3a] PASS exactly 3 markdown links into docs/ (got 3)
+[B9.3a] PASS exactly 3 authorities and 2 paired artifacts; every target resolves and is tracked
 [B9.3b] PASS STAGGERED_DIRAC handle appears backticked and NOT as a link
 [B9.4] PASS required strings present (missing: [])
 [B9.5] PASS PRESERVE-VERBATIM math strings present (missing: [])

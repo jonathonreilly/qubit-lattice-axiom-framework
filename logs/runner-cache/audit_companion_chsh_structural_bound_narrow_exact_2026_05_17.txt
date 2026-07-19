@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_chsh_structural_bound_narrow_exact_2026_05_17.py
-runner_sha256: ab3bf911ea6f8763eb38e56ccd2281ae6ae47c0f5664de2af2a53abcb632a07b
+runner_sha256: 0794e57d1c7d6d0822217cfa00fa5591f13322316a0063ad3a38e2eb025fbf43
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -60,7 +60,7 @@ Part 3: Saturating witness in Cl(3) per-site Hilbert dim two
   [PASS (A)] Part 3 — quantum saturation S/2 = sqrt(2) exceeds classical bound 1  (S_quantum / S_classical = sqrt(2) ~ 1.414214)
 
 ----------------------------------------------------------------------------------------
-Part 4: Product-state corollary recovers |S| <= 2 (G=0 null)
+Part 4: Product-state bound |S| <= 2 (G=0 bridge not tested; stays open)
 ----------------------------------------------------------------------------------------
   [PASS (A)] Part 4 — product-state grid (625 cases): |S| <= 2 always  (max |S_product| = 2 (theoretical max = 2 at corners))
   [PASS (A)] Part 4 — product state |+>|+>: |S| <= 2 (verified non-entangled gives bounded)  (S(|+>|+>) = sqrt(2) = 1.414213562373)
@@ -76,7 +76,7 @@ Part 5: Cross-check vs cited one-hop inputs + boundary guards
   [BOUNDARY] explicit boundary guards (printed only):
     - This note does NOT derive the Born rule P=|A|^2 from nothing (R1 imported).
     - This note does NOT claim the framework Hamiltonian saturates 2*sqrt(2) at derived couplings.
-    - This note does NOT close bell_inequality_derived_note from G to C; only sub-questions (a) and (b) are closed.
+    - This note does NOT close bell_inequality_derived_note from G to C; only sub-question (a) is closed, and (b) is narrowed to its algebraic core (product-state bound |S| <= 2) with the G=0 separability bridge and the saturation equality still open.
     - This note does NOT derive a physical normalization of G or its continuum scaling.
     - This note does NOT address experimental Bell-test loopholes (detection, locality).
 

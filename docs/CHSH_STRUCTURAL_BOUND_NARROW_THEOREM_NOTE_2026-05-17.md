@@ -240,7 +240,7 @@ at `(±1, ±1)` corners (e.g. `b_0 = 1, b_1 = -1` gives `0 + 2 = 2`; with
 the same `A` factors saturating ±1 we recover `|S| ≤ 2`).
 
 The framework's `G = 0` runner result `|S| = 2.000` is *consistent* with
-this bound (it sits at a product-state corner). Turning that observation
+this bound (it equals the product-state upper bound). Turning that observation
 into the implication `G = 0 ⇒ |S| = 2` would additionally require (i)
 that the `G = 0` framework dynamics preserve product separability, and
 (ii) a saturation argument selecting the corner; neither is derived in

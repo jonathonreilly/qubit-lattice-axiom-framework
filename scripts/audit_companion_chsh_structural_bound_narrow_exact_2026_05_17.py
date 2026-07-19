@@ -17,8 +17,9 @@ primitives.
                              B_1=(sigma_z-sigma_x)/sqrt(2)
                              gives S = 2*sqrt(2) EXACTLY.
   Part 4 (product=>|S|<=2):  Product state in H_A (x) H_B always gives
-                             |S| <= 2 (recovering G=0 null control of
-                             the framework runner).
+                             |S| <= 2 (product-state bound only; the
+                             G=0 separability bridge and the saturation
+                             equality are NOT tested here and stay open).
 
 One-hop inputs consumed (statuses per live audit ledger):
   (R1) Born quadratic surface P=|A|^2 (i3_zero_exact_theorem_note, cited)
@@ -373,7 +374,7 @@ def main() -> int:
     )
 
     # ==================================================================
-    section("Part 4: Product-state corollary recovers |S| <= 2 (G=0 null)")
+    section("Part 4: Product-state bound |S| <= 2 (G=0 bridge not tested; stays open)")
     # ==================================================================
     # For any product state |psi> = |alpha>_A (x) |beta>_B,
     # <A_i (x) B_j> = <alpha|A_i|alpha> * <beta|B_j|beta> = a_i * b_j.
@@ -444,7 +445,7 @@ def main() -> int:
     boundary_guards = [
         "This note does NOT derive the Born rule P=|A|^2 from nothing (R1 imported).",
         "This note does NOT claim the framework Hamiltonian saturates 2*sqrt(2) at derived couplings.",
-        "This note does NOT close bell_inequality_derived_note from G to C; only sub-questions (a) and (b) are closed.",
+        "This note does NOT close bell_inequality_derived_note from G to C; only sub-question (a) is closed, and (b) is narrowed to its algebraic core (product-state bound |S| <= 2) with the G=0 separability bridge and the saturation equality still open.",
         "This note does NOT derive a physical normalization of G or its continuum scaling.",
         "This note does NOT address experimental Bell-test loopholes (detection, locality).",
     ]

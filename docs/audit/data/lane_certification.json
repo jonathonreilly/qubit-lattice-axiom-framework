@@ -44,10 +44,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
           "effective_status": "unaudited"
         },
@@ -123,7 +119,7 @@
       "roots": [
         "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
       ],
-      "uncertified_count": 28
+      "uncertified_count": 27
     },
     {
       "blocking": [
@@ -1349,10 +1345,6 @@
         },
         {
           "claim_id": "koide_a1_route_f_casimir_difference_bounded_obstruction_note_2026-05-08_routef",
-          "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
           "effective_status": "unaudited"
         },
         {
@@ -2864,9 +2856,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 655
+      "uncertified_count": 654
     }
   ],
-  "repo_head": "5675ca604472388b8855b814f2ea0eb033af0a59",
+  "repo_head": "b51f7002c923a255223e3b3a0b0dcffd94ffac4e",
   "schema": "lane_certification_v2"
 }

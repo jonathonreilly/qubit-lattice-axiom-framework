@@ -1,46 +1,76 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-19T20:19:41.809063+00:00",
+  "audit_invocation_history": [
+    "21ed603ea31f4a9f9448725826a9c12f"
+  ],
+  "audit_invocation_id": "21ed603ea31f4a9f9448725826a9c12f",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "For the supplied 2*pi/3 proper cubic rotation about the (1,1,1) body diagonal, each nonidentity C3 element has real normal-plane determinant det(I-g)=3 and the defined inverse-normal-determinant group average is 2/9.",
+      "pl_topology_infrastructure_textbook_import_note_2026-05-17": "Finite cone-cap construction certificate for the explicit cubical-boundary family at R = 2, 3, 4 only; no arbitrary PL cap, S^3, homogeneity, or physical-closure claim is audited here.",
+      "s3_cap_uniqueness_note": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: finite boundary, cone, link, face-pairing, and Euler-characteristic checks only. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited."
+    },
+    "dep_claim_type": {
+      "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "positive_theorem",
+      "pl_topology_infrastructure_textbook_import_note_2026-05-17": "bounded_theorem",
+      "s3_cap_uniqueness_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained",
+      "pl_topology_infrastructure_textbook_import_note_2026-05-17": "retained_bounded",
+      "s3_cap_uniqueness_note": "retained_bounded"
+    },
+    "deps": [
+      "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+      "pl_topology_infrastructure_textbook_import_note_2026-05-17",
+      "s3_cap_uniqueness_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 13.988,
+    "runner_hash": "073fc0ac6bd58fa40b8f9fb2d220dc7e56211fbfdd47b95b2b6af5e432677659",
+    "transitive_descendants": 717
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260719-84843a34",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The retained fixed-locus authority already establishes the C3 normal representation, determinants, finite-average definition, and value 2/9. This row closes as an exact algebraic restatement of that single upstream theorem.",
   "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
-  "claim_scope": null,
-  "claim_type": "bounded_theorem",
+  "claim_scope": "For the body-diagonal C3 normal representation and the defined inverse-normal-determinant finite average, the local density equals 2/9; global APS and physical-readout claims are excluded.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-19T20:19:41.809063+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
   "deps": [
     "s3_cap_uniqueness_note",
     "pl_topology_infrastructure_textbook_import_note_2026-05-17",
     "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
   ],
   "direct_in_degree": 9,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
   "load_bearing_score": 13.988,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For the body-diagonal C3 representation, the two inverse-normal-determinant terms are each 1/3, so the defined finite average is (1/3)(1/3 + 1/3) = 2/9.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "1d28bdbe4690d857345212de4a6b4c16305505191b587893c1e69d938b4e1ffc",
   "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1760,14 +1790,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 11,
+    "B": 8,
+    "C": 13,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 32
   },
   "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
   "title": "Delta Support Route C3 Local-Density Boundary Manifest",
   "transitive_descendants": 717,
-  "verdict_rationale": null
+  "verdict_rationale": "The direct matrix, spectrum, determinant, and finite-average arithmetic is computed and closes exactly. The three runner failures arise from stale metadata guards requiring the upstream row to be retained_bounded with older scope wording, whereas the supplied authority is retained and remains narrowly local. Because that retained authority already proves the identical C3 inverse-normal-determinant result and this row adds no independent comparator or physical content, the row is algebraic decoration."
 }

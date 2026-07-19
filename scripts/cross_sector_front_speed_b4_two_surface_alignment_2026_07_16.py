@@ -1,23 +1,21 @@
 #!/usr/bin/env python3
-"""Cross-sector front-speed B4 two-surface alignment -- bounded-theorem runner.
+"""Cross-sector orbit-averaged Euclidean marginal-coefficient alignment runner.
 
 Companion runner for
 docs/CROSS_SECTOR_FRONT_SPEED_B4_TWO_SURFACE_ALIGNMENT_BOUNDED_THEOREM_NOTE_2026-07-16.md
 
-Conditional bounded theorem; THREE supplied legs are declared in the note:
+Conditional bounded theorem; TWO supplied theorem legs are declared in the note:
   (leg 1) ALLORDERS_B4 premise (A): exact B4 invariance of the regulated
        action and measure on the Z^4 surface is SUPPLIED, not derived from
        the four axioms.
-  (leg 2) `taste_orbit_summed_front_speed_readout_context`: the taste-orbit-
-       SUMMED marginal curvature is identified as the fermion-side observable.
-       Declared supplied context, not derived; on the single-taste reading
-       the alignment theorem does NOT follow from this runner.
-  (leg 3) `euclidean_marginal_front_speed_bridge_context`: the finite-grid
-       EUCLIDEAN marginal coefficient ratio is identified with a physical
-       (Lorentzian) front speed. No pole readout or Euclidean-to-Lorentzian
-       continuation is constructed here; what the runner certifies is the
-       Euclidean marginal coefficient statement, and every "front speed"
-       phrase is conditional on this declared bridge.
+  (leg 2) `uniform_hw2_orbit_average_context`: the uniformly taste-orbit-
+       AVERAGED marginal curvature is the fermion-side mathematical object.
+       Declared supplied convention, not derived; on a single-taste object the
+       alignment theorem does NOT follow from this runner.
+
+No physical-velocity bridge is supplied or consumed. This runner constructs no
+pole, spectral function, continuation, OS/Wightman reconstruction, common
+two-sector Lorentzian clock/frame, causal characteristic, or wavefront limit.
 
 Statement verified (Euclidean marginal coefficients, conditional): on the Z^4
 B4-covariant Wilson+staggered surface, B4 pins EACH sector's diagonal marginal
@@ -48,15 +46,14 @@ Verification map (explicit-name-first; the V-codes key the note's table):
       seagull block set); W_B taste-rotation unitarity + conjugation for all
       16 taste shifts B; gauged cos-vertex taste covariance
       cos((p+piB-q/2)_mu) = (-1)^{B_mu} cos((p-q/2)_mu).
-  V2  Gauge sector (seagull-runner kernel, T_F=1/2, 0.5*Pi/tot): seagull-
-      completed Pi transverse (normalized Ward residual |khat.Pi|/(|khat||Pi|);
-      thresholds stated at the checks) with the bubble (no seagull) assembly
-      much worse; B4 isotropy piT(temporal)==piT(spatial) at v=1; eta=1 fixed
-      point (induced anisotropy vanishes at isotropic input); the anisotropic
-      control gauges the DEFORMED kernel consistently -- v_mu enters the
-      propagators, the vertices, AND the seagull (gauging
-      sum_mu v_mu sin(k_mu + A_mu)) -- and the deformed-kernel Pi stays
-      transverse at the same normalized-Ward threshold.
+  V2  Gauge sector (seagull-runner kernel, T_F=1/2, 0.5*Pi/tot): at external
+      lattice momenta with components in {0, 2*pi/N}, seagull-completed Pi
+      satisfies the exact discrete Ward identity to roundoff while the bubble
+      (no seagull) fails decisively; no off-grid convergence claim. B4 isotropy
+      piT(temporal)==piT(spatial) at isotropic input; the anisotropic control
+      gauges the DEFORMED kernel consistently -- v_mu enters propagators,
+      vertices, AND the seagull -- and satisfies the same exact grid-compatible
+      Ward gate.
   V3  Fermion sector, three kernels on the honest observable
       G_hon = Dinv(p) - Sigma(p,B) (the observable READS the taste shift B --
       non-degeneracy gates, never a W_B-conjugation define-away):
@@ -84,13 +81,14 @@ Verification map (explicit-name-first; the V-codes key the note's table):
       exactly 3 of the 6 hw2 tastes, so UNIFORM taste averaging (the leg-2
       orbit sum) composed with the Reynolds projector has rank 1 with
       isotropic image; joint time-fixing S3 rank 6, averaging to rank 2.
-  V6  Speed arithmetic (sympy exact + numeric): constant kinetic
-      normalizations Z_F, Z_G cancel in v = sqrt(c_s/c_t); pinned-surface
-      ratio = 1 identically; broken-surface ratio = sqrt(a_F/a_G) depends
+  V6  Euclidean marginal-ratio arithmetic (sympy exact + numeric): constant
+      kinetic normalizations Z_F, Z_G cancel in r = sqrt(c_s/c_t); the
+      pinned-surface quotient R = r_F/r_G is 1 identically; the broken-surface
+      quotient sqrt(a_F/a_G) depends
       only on the quotient of the two independent per-sector anisotropies
       (scale-invariance gated) -- symmetry counting only, no
-      dynamical-freedom claim; numeric delta(v_F/v_G) = sqrt(vF2/vG2) - 1
-      = 0 on-surface, primary gate on the gauged cos-vertex curvatures with
+      dynamical-freedom claim; numeric R - 1 = sqrt(rF2/rG2) - 1 is zero
+      on-surface, primary gate on the gauged cos-vertex curvatures with
       the rainbow curvatures as a labeled robustness gate.
 
 Platform-stable output policy: gated prints are bound checks at the pass
@@ -112,6 +110,7 @@ import sys
 import numpy as np
 import sympy as sp
 
+AUDIT_TIMEOUT_SEC = 300
 np.seterr(all="ignore")
 PASS = 0
 FAIL = 0
@@ -398,19 +397,24 @@ def part_2() -> dict:
     hr("Gauge sector: seagull-completed transverse Pi, B4 isotropy, eta=1 (V2)")
     N = 12
     iso = np.array([1.0, 1.0, 1.0, 1.0])
-    qvs = ([0.0, 0.4, 0.0, 0.0], [0.3, 0.3, 0.0, 0.0], [0.0, 0.0, 0.0, 0.5])
+    q_unit = 2.0 * np.pi / N
+    qvs = ([0.0, q_unit, 0.0, 0.0], [q_unit, q_unit, 0.0, 0.0],
+           [0.0, 0.0, 0.0, q_unit])
     w_sea = [ward(np.real(pi_munu(qv, N, iso)), qv) for qv in qvs]
-    check("normalized Ward residual |khat.Pi|/(|khat||Pi|) < 5% WITH seagull (N=12)",
-          max(w_sea) < 0.05, f"worst residual={max(w_sea):.4f} < 0.05")
+    ok = max(w_sea) < 1e-9
+    check("exact grid-compatible Ward identity WITH seagull (N=12; components "
+          "in {0,2*pi/N})",
+          ok, bound_detail("normalized residual", max(w_sea), "1e-9", ok))
     w_bub = [ward(np.real(pi_munu(qv, N, iso, include_seagull=False)), qv) for qv in qvs]
     check("bubble (no seagull) Ward residual is LARGE (seagull is load-bearing)",
-          min(w_bub) > 0.25 and min(w_bub) > 3 * max(w_sea),
-          f"bubble min={min(w_bub):.4f} > 0.25 and > 3x seagull worst")
+          min(w_bub) > 0.5 and min(w_bub) > 1e8 * max(w_sea),
+          f"bubble min={min(w_bub):.4f} > 0.5 and > 1e8 x seagull worst")
     v_def = np.array([1 - 0.05, 1 + 0.05, 1 + 0.05, 1 + 0.05])
     w_def = [ward(np.real(pi_munu(qv, N, v_def)), qv) for qv in qvs]
-    check("DEFORMED-kernel Pi stays transverse (v_mu in propagators, vertices, "
-          "seagull; eps=0.10)",
-          max(w_def) < 0.05, f"worst residual={max(w_def):.4f} < 0.05")
+    ok = max(w_def) < 1e-9
+    check("DEFORMED-kernel exact grid-compatible Ward identity (v_mu in "
+          "propagators, vertices, seagull; eps=0.10)",
+          ok, bound_detail("normalized residual", max(w_def), "1e-9", ok))
 
     qq = [0.5, 0.3, 0.18]
     diffs = [abs(piT(0, q, N, iso) - piT(1, q, N, iso)) for q in qq]
@@ -664,46 +668,46 @@ def part_5() -> None:
 
 
 def part_6(p3: dict) -> None:
-    hr("Speed arithmetic: Z cancellation, pinned ratio = 1, broken freedom (V6)")
+    hr("Euclidean marginal-ratio arithmetic: Z cancellation and two surfaces (V6)")
     ZF, ZG = sp.symbols("Z_F Z_G", positive=True)
     ctF, csF, ctG, csG = sp.symbols("c_tF c_sF c_tG c_sG", positive=True)
-    vF = sp.sqrt((ZF * csF) / (ZF * ctF))
-    vG = sp.sqrt((ZG * csG) / (ZG * ctG))
-    ratio = vF / vG
-    check("overall kinetic normalizations Z_F, Z_G CANCEL in v_F/v_G (exact)",
-          sp.simplify(ratio - sp.sqrt(csF * ctG / (ctF * csG))) == 0,
-          "v_F/v_G = sqrt(c_sF c_tG / (c_tF c_sG)) -- no Z dependence")
-    pinned = sp.simplify(ratio.subs({csF: ctF, csG: ctG}) - 1)
-    check("on the B4-pinned surface (c_t=c_s per sector) v_F/v_G = 1 IDENTICALLY",
+    rF = sp.sqrt((ZF * csF) / (ZF * ctF))
+    rG = sp.sqrt((ZG * csG) / (ZG * ctG))
+    quotient = rF / rG
+    check("overall kinetic normalizations Z_F, Z_G CANCEL in R=r_F/r_G (exact)",
+          sp.simplify(quotient - sp.sqrt(csF * ctG / (ctF * csG))) == 0,
+          "R = sqrt(c_sF c_tG / (c_tF c_sG)) -- no Z dependence")
+    pinned = sp.simplify(quotient.subs({csF: ctF, csG: ctG}) - 1)
+    check("on the B4-pinned surface (c_t=c_s per sector) R = 1 IDENTICALLY",
           pinned == 0, f"residual={pinned}")
     aF, aG = sp.symbols("a_F a_G", positive=True)
     lam = sp.symbols("lambda_s", positive=True)
-    broken = ratio.subs({csF: aF * ctF, csG: aG * ctG})
+    broken = quotient.subs({csF: aF * ctF, csG: aG * ctG})
     dF = sp.simplify(sp.diff(broken, aF))
     dG = sp.simplify(sp.diff(broken, aG))
     scale_inv = sp.simplify(broken.subs({aF: lam * aF, aG: lam * aG}, simultaneous=True)
                             - broken) == 0
-    check("broken-B4 surface: v_F/v_G = sqrt(a_F/a_G) -- two independent per-sector "
-          "anisotropies, ratio depends only on their quotient (scale-invariant)",
+    check("broken-B4 surface: R = sqrt(a_F/a_G) -- two independent per-sector "
+          "anisotropies; symmetry fixes neither quotient (scale-invariant)",
           sp.simplify(broken - sp.sqrt(aF / aG)) == 0 and dF != 0 and dG != 0
           and scale_inv,
           f"ratio={sp.simplify(broken)}; ratio(lam aF, lam aG) == ratio")
 
     # numeric two-surface witness from the computed data. delta is taken on the
-    # SPEED ratio v_F/v_G = sqrt(vF2/vG2), not on the squared ratio. Primary
+    # coefficient quotient R = sqrt(rF2/rG2), not on the squared quotient. Primary
     # gate: the gauged cos-vertex curvatures; the rainbow
     # curvatures are kept as a labeled robustness gate.
-    vG2 = _P2["pit1"] / _P2["pit0"]
+    rG2 = _P2["pit1"] / _P2["pit0"]
     for label, curv in (("gauged cos-vertex (primary)", p3["cog"]),
                         ("rainbow (robustness)", p3["co"])):
-        vF2 = np.mean(curv[1:]) / curv[0]
-        delta = float(np.sqrt(vF2 / vG2)) - 1.0
-        ok = abs(vF2 - 1) < 1e-6 and abs(vG2 - 1) < 1e-8 and abs(delta) < 1e-6
-        check(f"NUMERIC delta(v_F/v_G)=sqrt(vF2/vG2)-1 = 0 on-surface -- {label}",
+        rF2 = np.mean(curv[1:]) / curv[0]
+        delta = float(np.sqrt(rF2 / rG2)) - 1.0
+        ok = abs(rF2 - 1) < 1e-6 and abs(rG2 - 1) < 1e-8 and abs(delta) < 1e-6
+        check(f"NUMERIC R-1=sqrt(rF2/rG2)-1 = 0 on-surface -- {label}",
               ok,
-              "|vF^2 ratio - 1| < 1e-6 AND |vG^2 ratio - 1| < 1e-8 AND "
+              "|rF^2 ratio - 1| < 1e-6 AND |rG^2 ratio - 1| < 1e-8 AND "
               "|delta| < 1e-6 (bounds hold; residuals suppressed)" if ok else
-              f"vF2-1={vF2 - 1!r} vG2-1={vG2 - 1!r} delta={delta!r}")
+              f"rF2-1={rF2 - 1!r} rG2-1={rG2 - 1!r} delta={delta!r}")
 
 
 _P2 = {}
@@ -711,9 +715,9 @@ _P2 = {}
 
 def main() -> int:
     global _P2
-    print("Cross-sector front-speed B4 two-surface alignment -- bounded-theorem runner")
-    print("(conditional on ALLORDERS_B4 premise (A) and the declared supplied context")
-    print(" `taste_orbit_summed_front_speed_readout_context`; see companion note)")
+    print("Cross-sector orbit-averaged Euclidean marginal-coefficient alignment")
+    print("(conditional theorem legs: ALLORDERS_B4 premise (A) and")
+    print(" `uniform_hw2_orbit_average_context`; no physical-velocity bridge supplied)")
     part_1()
     _P2 = part_2()
     p3 = part_3()

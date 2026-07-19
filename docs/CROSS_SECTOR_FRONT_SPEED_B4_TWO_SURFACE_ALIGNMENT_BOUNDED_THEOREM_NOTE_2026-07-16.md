@@ -1,4 +1,4 @@
-# Cross-Sector Front-Speed Alignment: Per-Sector B4 Pinning as the Custodial Mechanism (Two-Surface Bounded Theorem)
+# Cross-Sector Orbit-Averaged Euclidean Marginal-Coefficient Alignment Under B4 (Two-Surface Bounded Theorem)
 
 > **Key terms used in this doc** are indexed A–Z at `docs/KEY_TERMINOLOGY.md`;
 > each row points to the canonical source-of-truth doc.
@@ -6,7 +6,7 @@
 **Date:** 2026-07-16
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
-**Premise weight:** conditional (three named supplied legs, declared below)
+**Premise weight:** conditional (two named supplied legs, declared below)
 **Status authority:** independent audit lane. This source note does not set or
 predict an audit outcome. Any `audit_status` and `effective_status` fields are
 pipeline-derived.
@@ -22,25 +22,24 @@ This note does **not** amend, narrow, retire, or re-approve any registered
 primitive (the kinetic-isotropy primitive
 [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
 is unchanged), does not set the status of any lane row, and does not edit any
-landed note. Conditional on three named supplied legs, it proves a **two-surface**
-statement about the cross-sector ratio `v_F/v_G` of **Euclidean marginal
-coefficient ratios** (the physical front-speed reading of that ratio is itself
-a supplied bridge — leg 3 below; every "front speed" phrase in this note is
-conditional on it):
+landed note. Conditional on two named supplied legs, it proves a **two-surface**
+statement about the cross-sector quotient `R = r_F/r_G` of **Euclidean marginal
+coefficient ratios**, where `r_alpha = sqrt(c_salpha/c_talpha)`. It does not
+identify `r_alpha` with a Lorentzian pole, group, signal, or wavefront velocity:
 
 - **On the `Z^4` `B4`-covariant regulated surface** (the surface the landed
   `ALLORDERS_B4` note supplies in its premise (A)): `B4` invariance pins **each
   sector's** diagonal marginal kinetic form isotropic, `c_t = c_s` per sector,
   order-by-order in the loop expansion. The kinetic normalizations `Z_F`, `Z_G`
-  cancel exactly in the ratio, so `v_F/v_G = 1` identically, order-by-order.
-  Per-sector `B4` pinning — a common rigid frame both sectors separately
-  respect — **is** the custodial mechanism; no inter-sector Ward identity is
-  involved, and off-surface the time-fixing symmetry alone does not force
-  cross-sector equality (a symmetry-counting statement only; see below).
+  cancel exactly in the quotient, so `R = 1` identically, order-by-order.
+  Per-sector `B4` pinning in one common **Euclidean** coordinate frame is
+  sufficient; no inter-sector Ward identity is involved. Off-surface the
+  time-fixing symmetry alone does not force equality of these marginal ratios
+  (a symmetry-counting statement only; see below).
 - **On the time-fixed surface** (`Z^3` plus continuous tick — the continuous-time
   horn where `B4` is broken): the same exact counting leaves each sector's
   `c_t/c_s` an independent singlet of the time-fixing subgroup, and
-  `v_F/v_G = sqrt(a_F/a_G)` is not forced to `1` by symmetry — it is set by
+  `R = sqrt(a_F/a_G)` is not forced to `1` by symmetry — it is set by
   the two independent per-sector anisotropies through their quotient alone.
   This is **symmetry counting only**: whether dynamics fixes the quotient is a
   separate question, and the landed velocity-RG mutual-drag flow
@@ -55,7 +54,7 @@ Companion to the landed
 [`ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md`](ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md), and
 [`TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md`](TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md).
 
-## Supplied-context declaration (three legs)
+## Supplied-context declaration (two theorem legs)
 
 > **Declared supplied context — leg 1: the `ALLORDERS_B4` premise (A) surface.**
 > The regulated `Z^4` action and measure used here (gauged staggered/Kähler-Dirac
@@ -71,42 +70,50 @@ Companion to the landed
 > the four axioms; it is not derived here, and every claim below is conditional
 > on it.
 
-> **Declared supplied context — leg 2: `taste_orbit_summed_front_speed_readout_context`.**
-> The physical fermion front-speed observable is identified as the
-> **taste-orbit-summed** marginal curvature: the mean of the dispersion
+> **Declared supplied context — leg 2: `uniform_hw2_orbit_average_context`.**
+> The fermion-side mathematical object is defined to be the **uniform
+> taste-orbit average** of the marginal curvatures: the mean of the dispersion
 > curvatures of the honest observable (`G_hon = Dinv - Sigma`, per the landed
 > taste note) over the six-element Hamming-weight-2 taste orbit `hw2`.
-> None of the landed notes cited here licenses either the orbit-summed or the
-> single-taste reading as the physical front-speed readout, and Record supplies
-> no readout selector (see the honest boundary). On the **single-taste** reading the
-> alignment theorem does **not** follow from this note: the per-taste marginal
-> anisotropy is nonzero and kernel-dependent (runner V3). The identification is
-> supplied here as a declared readout context; it is not derived here, and every
-> fermion-side claim below is conditional on it.
+> This is a supplied averaging convention, not a claim that the orbit average
+> is a physical observable. On a **single-taste** object the alignment theorem
+> does **not** follow from this note: the per-taste marginal anisotropy is nonzero
+> and kernel-dependent (runner V3). Every fermion-side claim below is conditional
+> on this explicitly uniform average.
 
-> **Declared supplied context — leg 3: `euclidean_marginal_front_speed_bridge_context`.**
-> Everything computed here is a **finite-grid Euclidean marginal coefficient**:
-> the curvature of a Euclidean 1PI kernel at a regulated grid point. The
-> identification of the coefficient ratio `sqrt(c_s/c_t)` with a **physical
-> (Lorentzian) front speed** — a pole/group-velocity readout after analytic
-> continuation — is a bridge this note does not construct: no spectral
-> function, no pole position, and no continuation are computed. Every "front
-> speed" phrase in this note is conditional on this bridge. It is supplied
-> here as a declared context; it is not derived, and none of the landed notes
-> cited here derives it.
+These are the note's two supplied theorem legs; beyond them, this note introduces
+no import, axiom, or comparator of its own.
 
-These are the note's three supplied legs; beyond them, this note introduces no
-import, axiom, or comparator of its own.
+## Physical application walls (outside the theorem)
+
+Everything computed here is a Euclidean marginal coefficient or an exact
+representation-theory statement. A physical velocity comparison would require,
+at minimum, two additional independent ingredients that are **not** supplied or
+consumed here:
+
+- one shared two-sector continuation/reconstruction with compatible pole sheets,
+  one clock normalization, and one Lorentzian comparison frame; and
+- a license selecting the relevant regulated surface and the physical fermion
+  readout.
+
+No pole, spectral function, continuation, OS/Wightman reconstruction, causal
+characteristic, or wavefront limit is computed. In particular, a low-momentum
+pole/group velocity would not by itself be a wavefront velocity. Current
+`main`'s
+`FREE_STAGGERED_POLE_RESIDUE_DIRAC_CARRIER_CAR_RELABELING_BOUNDED_THEOREM_NOTE_2026-07-17.md`
+partially advances the free mathematical pole/carrier route but explicitly does
+not supply the interacting/gauged two-sector OS/Wightman bridge used by such a
+physical claim. The present theorem therefore remains Euclidean and bounded.
 
 ## Theorem (two-surface, conditional on the declared legs)
 
 Per sector, the Euclidean marginal kinetic form is
-`c_t p_t^2 + c_s (p_x^2+p_y^2+p_z^2)` with marginal coefficient ratio
-`v = sqrt(c_s/c_t)` (read as the front speed under leg 3); the cross-sector
-ratio is
+`c_t p_t^2 + c_s (p_x^2+p_y^2+p_z^2)` with the dimensionless marginal
+coefficient ratio `r = sqrt(c_s/c_t)`; the cross-sector quotient is
 
 ```text
-v_F/v_G = sqrt( (c_sF/c_tF) / (c_sG/c_tG) ) = sqrt( c_sF c_tG / (c_tF c_sG) ).
+R = r_F/r_G = sqrt( (c_sF/c_tF) / (c_sG/c_tG) )
+  = sqrt( c_sF c_tG / (c_tF c_sG) ).
 ```
 
 ### L1. Exact invariant counting (runner V5, exact sympy rationals)
@@ -164,14 +171,14 @@ transport: joint `B4` covariance of `c_{B,mu}` plus uniform `hw2` averaging
 forces the averaged vector isotropic. No inter-sector identity is used: the
 pinning is per-sector, by the shared rigid frame.
 
-### L3. Speed arithmetic (runner V6, exact sympy + numeric gates)
+### L3. Marginal-ratio arithmetic (runner V6, exact sympy + numeric gates)
 
 Per sector the marginal form carries a constant (momentum-independent) kinetic
 normalization `Z_alpha` — the value at the marginal order; a momentum-dependent
-normalization contributes beyond marginal order and does not enter the front
-speed, and a direction-dependent normalization at marginal order is precisely
-the anisotropy `B4` forbids (L1). `Z_F` and `Z_G` cancel exactly in `v_F/v_G`
-(symbolic). On the `B4`-pinned surface (`c_t = c_s` per sector) the ratio is
+normalization contributes beyond marginal order and does not enter `r_alpha`,
+and a direction-dependent normalization at marginal order is precisely the
+anisotropy `B4` forbids (L1). `Z_F` and `Z_G` cancel exactly in `R` (symbolic).
+On the `B4`-pinned surface (`c_t = c_s` per sector) the quotient is
 `1` **identically** — no tuning, no flow. On the time-fixed surface, with
 `a_F = c_sF/c_tF` and `a_G = c_sG/c_tG`, the ratio `sqrt(a_F/a_G)` is not
 fixed by the symmetry: it depends only on the quotient of the two independent
@@ -192,43 +199,43 @@ separately in V4 (direction-blind on-surface, hence an isotropic marginal
 renormalization there). Each channel's own `B4` covariance is what the theorem
 consumes; the instances are witnesses, not the proof.
 
-- **Gauge sector** (seagull-completed transverse `Pi`, `T_F = 1/2`): lattice
-  Ward transversality holds (worst normalized residual
-  `|khat.Pi|/(|khat||Pi|) = 0.043` at `N=12`) while the bubble (no seagull)
-  violates it at `0.74`; the **fully gauged anisotropic control** — `v_mu` in
-  the propagators, the vertices, **and** the seagull (gauging
-  `sum_mu v_mu sin(k_mu + A_mu)`) — stays transverse under deformation (worst
-  residual `0.045` at `eps = 0.10`); `piT(temporal) = piT(spatial)` within
-  `1e-8` at isotropic input; `eta = 1` is a fixed point (induced anisotropy
-  within `1e-8` at zero deformation).
+- **Gauge sector** (seagull-completed transverse `Pi`, `T_F = 1/2`): at the
+  lattice-compatible external momenta with components in `{0, 2*pi/N}`, the
+  normalized Ward residual `|khat.Pi|/(|khat||Pi|)` is below `1e-9` at `N=12`,
+  while the bubble (no seagull) has residual above `0.5`; the **fully gauged
+  anisotropic control** — `v_mu` in the propagators, the vertices, **and** the
+  seagull (gauging `sum_mu v_mu sin(k_mu + A_mu)`) — also satisfies the exact
+  grid-compatible Ward gate below `1e-9` at `eps = 0.10`.
+  `piT(temporal) = piT(spatial)` holds within `1e-8` at isotropic input, and
+  `eta = 1` is a fixed point (induced anisotropy within `1e-8` at zero
+  deformation). No off-grid convergence claim is made.
 - **Fermion sector** (orbit-summed observable, leg 2): three kernels — rainbow
   scalar-gluon; gauged cos-vertex on the Wilson block, Feynman `xi=1`; gauged
   cos-vertex, Landau `xi=0` — all give `hw2` orbit-summed marginal anisotropy
   within `1e-6` on-surface, at `N=12` and `N=10`, on the honest observable
   `G_hon` (the observable reads the taste shift: non-degeneracy gate `> 1e-4`;
   no `W_B`-conjugation define-away).
-- **Numeric ratio gates:** `|v_F^2 - 1| < 1e-6`, `|v_G^2 - 1| < 1e-8`, and
-  `|delta(v_F/v_G)| = |sqrt(v_F^2/v_G^2) - 1| < 1e-6` from the computed
+- **Numeric quotient gates:** `|r_F^2 - 1| < 1e-6`, `|r_G^2 - 1| < 1e-8`, and
+  `|R - 1| = |sqrt(r_F^2/r_G^2) - 1| < 1e-6` from the computed
   curvatures and `piT` — primary gate on the gauged cos-vertex curvatures, with
   the rainbow curvatures as a labeled robustness gate.
 
 ### Scoped result
 
-On the `Z^4` surface, conditional on the three declared legs, `v_F/v_G = 1`
-order-by-order: **per-sector `B4` pinning is the cross-sector custodial
-mechanism** — a common rigid frame, not an inter-sector Ward identity. In the
-tightest wording: **conditional on exact joint covariance and uniform `hw2`
-averaging, the orbit-averaged Euclidean marginal coefficient vector is
-isotropic; time-fixing symmetry alone does not force cross-sector equality.**
-On the time-fixed surface the symmetry protection genuinely fails and the
-ratio is set by the quotient of the two per-sector anisotropies; the landed
-velocity-RG mutual-drag flow remains the live dynamical route toward equality
-there (scoped below).
+On the `Z^4` surface, conditional on the two declared legs, `R = 1`
+order-by-order. In the tightest wording: **conditional on exact joint covariance
+and uniform `hw2` averaging, the orbit-averaged Euclidean marginal coefficient
+vector is isotropic; time-fixing symmetry alone does not force equality of the
+two sectors' marginal ratios.** On the time-fixed surface the `B4`
+diagonal-marginal/orbit-average pinning is absent, and `R` is the quotient of the
+two per-sector anisotropies as far as symmetry counting is concerned. The
+landed velocity-RG mutual-drag flow remains a live dynamical route toward
+equality there (scoped below). No physical-velocity conclusion follows.
 
-## Custodial frame, not inter-sector identity (runner V4)
+## Per-sector Euclidean pinning, not an inter-sector identity (runner V4)
 
-The runner's off-surface controls (V4) are **symmetry-tracking witnesses** of
-the mechanism class (each sector's isotropy responds to its own kernel's
+The runner's off-surface controls (V4) are **symmetry-tracking witnesses**
+(each sector's isotropy responds to its own kernel's
 covariance) — they are not a dynamical-unconstraint claim:
 
 - Deforming the temporal edge of the Wilson gluon block
@@ -263,15 +270,15 @@ signs differ). The orbit-summed zero is symmetry-driven, not kernel tuning.
    computed confirmations were fermion-side; its gauge-channel instance and the
    cross-sector ratio corollary were not stated there.
 2. **Off-surface deformation-response witnesses** (V4): symmetry-tracking
-   controls that distinguish the custodial-frame mechanism class from an
+   controls that distinguish per-sector Euclidean covariance from an
    inter-sector identity (each sector's isotropy tracks its own kernel's
    covariance; no dynamical-unconstraint claim).
-3. **Exact Reynolds counting applied to the cross-sector ratio** (V5 + V6):
-   rank 1 per sector pins `v_F/v_G = 1`; rank 2 per sector frees it — the
-   two-surface split as a theorem about the **ratio**, not just per-sector
+3. **Exact Reynolds counting applied to the cross-sector quotient** (V5 + V6):
+   rank 1 per sector pins `R = 1`; rank 2 per sector leaves it unpinned — the
+   two-surface split as a theorem about the **coefficient quotient**, not just per-sector
    coefficients.
-4. **Speed arithmetic with exact `Z` cancellation** and the numeric
-   `delta(v_F/v_G)` gate (V6).
+4. **Marginal-ratio arithmetic with exact `Z` cancellation** and the numeric
+   `R - 1` gate (V6).
 5. **Gauge robustness of the orbit-summed protection** (V3): the orbit-summed
    anisotropy is zero in **both** Feynman (`xi=1`) and Landau (`xi=0`) gauge.
    The seagull note's named open item (lines 86–90) is that "The **precise
@@ -306,15 +313,16 @@ lines 20–22:
 > of emergent Lorentz invariance: `B4` does not cover it (the relative speed is a
 > free `B4` invariant), and the only handle is the velocity-RG mutual-drag flow.
 
-**Derived scope.** The clause "the relative speed is a free `B4` invariant" is
-verified here **as symmetry content on the time-fixed surface**: there the
+**Derived scope.** This note verifies only the Euclidean marginal-coefficient
+content underlying those physical parentheticals. On the time-fixed surface the
 acting symmetry is the time-fixing subgroup, its Reynolds rank is 2 per sector
 (joint rank 2 after averaging, V5), each sector's `c_t/c_s` is an independent
-singlet, and `v_F/v_G = sqrt(a_F/a_G)` is not fixed by the symmetry (V6). What
-is proved is that **time-fixing symmetry does not force equality** — not that
-dynamics leaves the ratio free: the parentheticals' own mutual-drag flow is the
-live dynamical mechanism on that surface. This is the continuous-time horn
-where the landed `ALLORDERS_B4` note (lines 178–184) already records:
+singlet, and `R = sqrt(a_F/a_G)` is not fixed by the symmetry (V6). What is proved
+is that **time-fixing symmetry does not force equality of the marginal
+ratios** — not that dynamics leaves them free and not that they are physical
+velocities. The parentheticals' own mutual-drag flow is a live dynamical
+mechanism on that surface. This is the continuous-time horn where the landed
+`ALLORDERS_B4` note (lines 178–184) already records:
 
 > It does
 > **not** address: non-perturbative effects; the `a -> 0` continuum limit; genuine
@@ -325,37 +333,33 @@ where the landed `ALLORDERS_B4` note (lines 178–184) already records:
 > `kinetic_isotropy_primitive` (`c_t = c_s`, OS0).
 
 On the `Z^4` `B4`-covariant surface (leg 1) the same counting gives rank 1 per
-sector, both ratios are pinned, and the relative speed is **not** free:
-`v_F/v_G = 1` order-by-order (L2 + L3). The two parentheticals are therefore
-precise broken-`B4`-surface statements; they do not hold on the leg-1 surface.
-Both landed notes stand as written — this note scopes them by surface and edits
-neither.
+sector and the **Euclidean marginal quotient** is pinned: `R = 1`
+order-by-order (L2 + L3). This does not prove the quoted physical front-speed
+claim because the reconstruction and surface-license walls remain open. Both
+landed notes stand as written; this note narrows the exact Euclidean content and
+edits neither.
 
 The logflow note also states the demand (lines 116–117):
 
 > Closing it needs a cross-sector custodial symmetry or an
 > `O(1)` anomalous dimension the framework does not currently supply.
 
-On the leg-1 surface, per-sector `B4` pinning is a cross-sector custodial
-mechanism of exactly the requested kind — supplied by the same premise (A) the
-lane already consumes, acting as a common rigid frame rather than an
-inter-sector Ward identity (V4). Conditional on the three declared legs, the
-alignment question therefore **relocates** from the velocity-RG flow to the
-**surface license**: which regulated surface — `Z^4` `B4`-covariant, or `Z^3`
-plus continuous tick — is licensed for the front-speed readout. That license is
-not settled here, and none of the landed notes cited here settles it; it is the
-next path this opens (the temporal-axis / emergent-time question).
+On the leg-1 surface, per-sector `B4` pinning supplies an exact Euclidean
+coefficient-alignment corollary in a common Euclidean frame rather than an
+inter-sector Ward identity (V4). It does **not** supply the requested physical
+custodial mechanism. Closing that physical question still requires the common
+two-sector reconstruction/clock/frame and a surface/readout license named in
+the physical-application boundary above. The velocity-RG route is neither
+retired nor replaced by this theorem.
 
 ## Honest boundary (auditor-first)
 
-- **All three legs are supplied, not derived.** Leg 1 carries the same weight
+- **Both theorem legs are supplied, not derived.** Leg 1 carries the same weight
   the `ALLORDERS_B4` note assigns its premise (A) (quoted above). Leg 2 is a
-  readout identification with no origin/main license in either direction. Leg 3
-  (the Euclidean-marginal-to-front-speed bridge) carries the weight of an
-  unconstructed analytic continuation: the runner computes finite-grid
-  Euclidean marginal coefficients only, and every "front speed" phrase in this
-  note is conditional on that bridge. The
-  landed taste note states the dichotomy (lines 229–235):
+  uniform mathematical averaging convention with no physical readout license.
+  The runner computes finite-grid Euclidean marginal coefficients only. The
+  landed taste note states the physical-interpretation dichotomy (lines
+  229–235):
 
   > The **per-single-taste `O(0.2)` anisotropy is the genuine
   > residual**: whether it constitutes a physical Lorentz violation depends on the
@@ -365,18 +369,16 @@ next path this opens (the temporal-axis / emergent-time question).
   > interpretation; it reports the taste-sum protection and the per-taste residual
   > honestly.
 
-  The single-taste reading stays live:
-  [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-  treats the BZ-corner taste-cube structure as species-relevant. On that
-  reading the alignment theorem does **not** follow from this note.
-- **Record supplies no readout selector.** Per the landed
-  [`EW_KAPPA_REGISTRATION_REGISTERS_ALL_COLOR_SECTORS_NO_GO_NOTE_2026-06-09.md`](EW_KAPPA_REGISTRATION_REGISTERS_ALL_COLOR_SECTORS_NO_GO_NOTE_2026-06-09.md)
-  (lines 48–51): "This is a channel under test, not a new axiom and not
-  something Record supplies by itself. Record supplies no decomposition,
-  weighting, normalization, probability rule, measurement/decoherence dynamics,
-  source/action bridge, or readout selector." Accordingly, nothing in the
-  record ontology is invoked here to justify orbit-summing; leg 2 is an
-  explicit declaration, which is why it must be named as supplied context.
+  The single-taste object therefore remains open, and the alignment theorem
+  does **not** apply to it.
+- **Record supplies no readout selector at the minimal-axiom level.** The direct
+  framework authority
+  [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
+  places observable identification and readout context downstream of the four
+  axioms (notably its scope statements around lines 76–79 and 128–133).
+  Accordingly, nothing in the record ontology is invoked here to justify
+  orbit-summing; leg 2 is an explicit mathematical convention. This is not a
+  no-go against a downstream dynamical or operational selector.
 - **The time-fixed horn is symmetry-unprotected — a counting statement only.**
   What is proved on that surface is that time-fixing symmetry alone does not
   force `c_t = c_s` (joint averaged rank 2, V5); the ratio is then set by the
@@ -384,10 +386,13 @@ next path this opens (the temporal-axis / emergent-time question).
   concerned**. Whether dynamics selects equality there is untouched: the
   landed velocity-RG mutual-drag flow (`eta -> 1` for any `a, b > 0`) is the
   live route, and nothing here constrains it.
-- **The surface license is open.** None of the three legs selects which surface is
-  licensed for the front-speed readout; the theorem is a conditional alignment
-  on the `Z^4` surface plus an exact freedom statement on the time-fixed
-  surface. The license question is the next path this opens.
+- **Physical reconstruction and surface license remain open.** Neither theorem
+  leg supplies a common two-sector Lorentzian reconstruction/clock/frame or
+  selects which surface and readout are physical. The current-main free-pole
+  carrier note named above is a partial mathematical closure only; it explicitly
+  leaves OS/Wightman and interacting/gauged closure open. The present theorem is
+  a conditional Euclidean alignment on the `Z^4` surface plus an exact
+  symmetry-nonforcing statement on the time-fixed surface.
 - **Order and proxy level.** The gauge-sector computations are one-loop
   (seagull-completed `Pi`); the all-orders reach is the symmetry transport of
   `ALLORDERS_B4` (C) applied on leg 1, not a diagram-by-diagram computation.
@@ -419,8 +424,7 @@ next path this opens (the temporal-axis / emergent-time question).
 | [`TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md`](TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md) | unaudited | honest observable `G_hon = Dinv - Sigma`, `hw2` orbit, rainbow kernel; per-taste dichotomy quoted |
 | [`VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md`](VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md) | unaudited | scoped parenthetical (lines 30–35); custodial-demand sentence (lines 116–117) |
 | [`VELOCITY_RG_GAUGE_SEAGULL_TRANSVERSE_VACUUM_POLARIZATION_2026-06-22.md`](VELOCITY_RG_GAUGE_SEAGULL_TRANSVERSE_VACUUM_POLARIZATION_2026-06-22.md) | unaudited | seagull-completed `Pi` kernel (`T_F = 1/2`); scoped parenthetical (lines 20–22); gauge-prescription open item |
-| [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md) | unaudited | keeps the single-taste reading live against leg 2 |
-| [`EW_KAPPA_REGISTRATION_REGISTERS_ALL_COLOR_SECTORS_NO_GO_NOTE_2026-06-09.md`](EW_KAPPA_REGISTRATION_REGISTERS_ALL_COLOR_SECTORS_NO_GO_NOTE_2026-06-09.md) | unaudited | Record supplies no readout selector (why leg 2 must be declared) |
+| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | meta (framework authority) | direct authority that observable/readout identification is downstream of the four axioms; why leg 2 is declared rather than derived |
 | [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) | meta (registered primitive) | unchanged; consumed (not derived) through the leg-1 surface, per `ALLORDERS_B4` |
 
 Graded rows in this lane — `taste_scalar_isotropy_theorem_note` (retained;
@@ -434,11 +438,11 @@ scopes.
 | Part | Checks | What it certifies |
 |---|---|---|
 | V1 | 4 | Clifford algebra for both landed gamma conventions; `W_B` conjugation identity for all 16 taste shifts; gauged cos-vertex taste covariance |
-| V2 | 5 | seagull-completed `Pi` transversality (normalized Ward residual `< 5%` at `N=12`) vs large bubble (no seagull) violation; deformed-kernel transversality (`v_mu` in propagators, vertices, seagull; `eps = 0.10`); `B4` isotropy `piT(t) = piT(s)`; `eta = 1` fixed point |
+| V2 | 5 | exact grid-compatible seagull-completed `Pi` Ward identity (normalized residual `< 1e-9` at `N=12`) vs large bubble (no seagull) violation; exact deformed-kernel Ward identity (`v_mu` in propagators, vertices, seagull; `eps = 0.10`); `B4` isotropy `piT(t) = piT(s)`; `eta = 1` fixed point; no off-grid convergence claim |
 | V3 | 11 | honest-observable (`G_hon`) non-degeneracy (both kernels); per-taste anisotropy nonzero with kernel-dependent values and signs (three kernels, matched `N=10`); `hw2` orbit-summed anisotropy zero on-surface at `N=12` and `N=10`, Feynman and Landau |
 | V4 | 7 | off-surface deformation-response witnesses: orbit anisotropy revives with a sign straddle across `xi=1` (two samples); `Pi` feels the fermion deformation; the gluon-edge deformation moves the fermion orbit sum; tadpole direction-blind on-surface, direction-sensitive off-surface |
 | V5 | 9 | exact sympy Reynolds counting: `B4` (`S4` quotient) rank 1 with isotropic image; time-fixing subgroup rank 2 with `(1,0,0,0)` surviving; joint 24-dim `(hw2 taste, axis)` lemma — joint `S4` rank 2 (orbit indicators), each axis in exactly 3 of 6 tastes, uniform averaging composed with Reynolds rank 1 isotropic, joint time-fixing `S3` rank 6 mapping to averaged rank 2 |
-| V6 | 5 | exact `Z_F`, `Z_G` cancellation; pinned-surface ratio `= 1` identically; broken-surface ratio `sqrt(a_F/a_G)` depending only on the anisotropy quotient (scale-invariance gated); numeric `delta(v_F/v_G)` gates — gauged cos-vertex primary, rainbow robustness |
+| V6 | 5 | exact `Z_F`, `Z_G` cancellation; pinned-surface quotient `R = 1` identically; broken-surface quotient `sqrt(a_F/a_G)` depending only on the anisotropy quotient (scale-invariance gated); numeric `R - 1` gates — gauged cos-vertex primary, rainbow robustness |
 
 Runner gates are tolerance bounds around structure (zero/nonzero/sign/rank);
 gated prints are bound checks at pass tolerances (platform-stable output).

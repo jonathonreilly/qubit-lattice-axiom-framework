@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/cross_sector_front_speed_b4_two_surface_alignment_2026_07_16.py
-runner_sha256: 463b17b1537811a1ed0c7c7dfedf1ae5f9a06b516a3d6c2f39c699735c37daa5
+runner_sha256: 218129efd1da08bdebde9773e1b4f4962b0265ad54b662f5cf82eb4879aadb53
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 6.42
+elapsed_sec: 7.53
 status: ok
 ----- stdout -----
-Cross-sector front-speed B4 two-surface alignment -- bounded-theorem runner
-(conditional on ALLORDERS_B4 premise (A) and the declared supplied context
- `taste_orbit_summed_front_speed_readout_context`; see companion note)
+Cross-sector orbit-averaged Euclidean marginal-coefficient alignment
+(conditional theorem legs: ALLORDERS_B4 premise (A) and
+ `uniform_hw2_orbit_average_context`; no physical-velocity bridge supplied)
 
 ==============================================================================
 Clifford (both sets), W_B conjugation, cos-vertex taste covariance (V1)
@@ -21,9 +21,9 @@ Clifford (both sets), W_B conjugation, cos-vertex taste covariance (V1)
 ==============================================================================
 Gauge sector: seagull-completed transverse Pi, B4 isotropy, eta=1 (V2)
 ==============================================================================
-[PASS] normalized Ward residual |khat.Pi|/(|khat||Pi|) < 5% WITH seagull (N=12)  ::  worst residual=0.0426 < 0.05
-[PASS] bubble (no seagull) Ward residual is LARGE (seagull is load-bearing)  ::  bubble min=0.7390 > 0.25 and > 3x seagull worst
-[PASS] DEFORMED-kernel Pi stays transverse (v_mu in propagators, vertices, seagull; eps=0.10)  ::  worst residual=0.0447 < 0.05
+[PASS] exact grid-compatible Ward identity WITH seagull (N=12; components in {0,2*pi/N})  ::  |normalized residual| < 1e-9 (bound holds; residual suppressed)
+[PASS] bubble (no seagull) Ward residual is LARGE (seagull is load-bearing)  ::  bubble min=0.7905 > 0.5 and > 1e8 x seagull worst
+[PASS] DEFORMED-kernel exact grid-compatible Ward identity (v_mu in propagators, vertices, seagull; eps=0.10)  ::  |normalized residual| < 1e-9 (bound holds; residual suppressed)
 [PASS] B4 isotropy at v=1: piT(temporal)==piT(spatial) (< 1e-8)  ::  |max piT diff (q in {0.5,0.3,0.18})| < 1e-8 (bound holds; residual suppressed)
 [PASS] eta=1 fixed point: induced Pi anisotropy vanishes at eps=0  ::  |induced(0)| < 1e-8 (bound holds; residual suppressed)
 
@@ -67,13 +67,13 @@ Exact invariant counting + joint (hw2 taste, axis) representation lemma (V5)
 [PASS] uniform hw2 averaging o time-fixing S3 Reynolds: rank 2 -- time-fixing symmetry alone does NOT force c_t = c_s (symmetry counting only)  ::  rank=2
 
 ==============================================================================
-Speed arithmetic: Z cancellation, pinned ratio = 1, broken freedom (V6)
+Euclidean marginal-ratio arithmetic: Z cancellation and two surfaces (V6)
 ==============================================================================
-[PASS] overall kinetic normalizations Z_F, Z_G CANCEL in v_F/v_G (exact)  ::  v_F/v_G = sqrt(c_sF c_tG / (c_tF c_sG)) -- no Z dependence
-[PASS] on the B4-pinned surface (c_t=c_s per sector) v_F/v_G = 1 IDENTICALLY  ::  residual=0
-[PASS] broken-B4 surface: v_F/v_G = sqrt(a_F/a_G) -- two independent per-sector anisotropies, ratio depends only on their quotient (scale-invariant)  ::  ratio=sqrt(a_F)/sqrt(a_G); ratio(lam aF, lam aG) == ratio
-[PASS] NUMERIC delta(v_F/v_G)=sqrt(vF2/vG2)-1 = 0 on-surface -- gauged cos-vertex (primary)  ::  |vF^2 ratio - 1| < 1e-6 AND |vG^2 ratio - 1| < 1e-8 AND |delta| < 1e-6 (bounds hold; residuals suppressed)
-[PASS] NUMERIC delta(v_F/v_G)=sqrt(vF2/vG2)-1 = 0 on-surface -- rainbow (robustness)  ::  |vF^2 ratio - 1| < 1e-6 AND |vG^2 ratio - 1| < 1e-8 AND |delta| < 1e-6 (bounds hold; residuals suppressed)
+[PASS] overall kinetic normalizations Z_F, Z_G CANCEL in R=r_F/r_G (exact)  ::  R = sqrt(c_sF c_tG / (c_tF c_sG)) -- no Z dependence
+[PASS] on the B4-pinned surface (c_t=c_s per sector) R = 1 IDENTICALLY  ::  residual=0
+[PASS] broken-B4 surface: R = sqrt(a_F/a_G) -- two independent per-sector anisotropies; symmetry fixes neither quotient (scale-invariant)  ::  ratio=sqrt(a_F)/sqrt(a_G); ratio(lam aF, lam aG) == ratio
+[PASS] NUMERIC R-1=sqrt(rF2/rG2)-1 = 0 on-surface -- gauged cos-vertex (primary)  ::  |rF^2 ratio - 1| < 1e-6 AND |rG^2 ratio - 1| < 1e-8 AND |delta| < 1e-6 (bounds hold; residuals suppressed)
+[PASS] NUMERIC R-1=sqrt(rF2/rG2)-1 = 0 on-surface -- rainbow (robustness)  ::  |rF^2 ratio - 1| < 1e-6 AND |rG^2 ratio - 1| < 1e-8 AND |delta| < 1e-6 (bounds hold; residuals suppressed)
 
 ==============================================================================
 SCORECARD

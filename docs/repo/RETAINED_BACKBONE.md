@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 80 |
+| Retained positive rows | 81 |
 | Retained bounded rows | 308 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 16 |
 
-## Retained positive rows (80)
+## Retained positive rows (81)
 
 Sorted by load-bearing graph score (descending).
 
@@ -46,6 +46,7 @@ Sorted by load-bearing graph score (descending).
 - [`cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10`](../../docs/CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md) — score 13.978; audited 2026-05-22T03:13:54.866266+00:00
 - [`koide_anticommuting_operator_derivation_theorem_note_2026-05-10`](../../docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md) — score 13.651; audited 2026-07-10T16:57:30.154028+00:00
 - [`alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md) — score 13.620; audited 2026-06-11T13:12:46.274572+00:00
+- [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) — score 13.478; audited 2026-07-19T20:40:28.715868+00:00
 - [`koide_gamma_orbit_selector_bridge_note_2026-04-18`](../../docs/KOIDE_GAMMA_ORBIT_SELECTOR_BRIDGE_NOTE_2026-04-18.md) — score 12.833; audited 2026-05-10T14:37:33.189790+00:00
 - [`koide_dweh_cyclic_compression_note_2026-04-18`](../../docs/KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md) — score 12.484; audited 2026-05-05T09:49:41.642799+00:00
 - [`i3_zero_exact_theorem_note`](../../docs/I3_ZERO_EXACT_THEOREM_NOTE.md) — score 12.160; audited 2026-05-03T12:43:10.800116+00:00

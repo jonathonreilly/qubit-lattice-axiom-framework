@@ -52,10 +52,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
           "effective_status": "unaudited"
         },
@@ -119,7 +115,7 @@
       "roots": [
         "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
       ],
-      "uncertified_count": 27
+      "uncertified_count": 26
     },
     {
       "blocking": [
@@ -1434,10 +1430,6 @@
         {
           "claim_id": "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19",
           "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
@@ -2856,9 +2848,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 654
+      "uncertified_count": 653
     }
   ],
-  "repo_head": "e8e19b0b4ad917b362b30bc50b4121b2ede1d82e",
+  "repo_head": "79930fd055562e252d7250718bb45ac73ed39a53",
   "schema": "lane_certification_v2"
 }

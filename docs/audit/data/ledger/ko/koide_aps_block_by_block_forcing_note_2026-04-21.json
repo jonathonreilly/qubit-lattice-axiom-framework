@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-19T20:19:41.809063+00:00",
+  "audit_date": "2026-07-19T20:19:41.817771+00:00",
   "audit_invocation_history": [
-    "21ed603ea31f4a9f9448725826a9c12f"
+    "21ed603ea31f4a9f9448725826a9c12f",
+    "d2d7c3685a6d4049b84bb2d082ca8e4d"
   ],
-  "audit_invocation_id": "21ed603ea31f4a9f9448725826a9c12f",
+  "audit_invocation_id": "d2d7c3685a6d4049b84bb2d082ca8e4d",
   "audit_state_snapshot": {
     "criticality": "critical",
     "dep_axiom_premise_note_hash": {},
@@ -33,20 +34,20 @@
     "transitive_descendants": 717
   },
   "audit_status": "audited_decoration",
-  "auditor": "codex-audit-batch-A-20260719-84843a34",
+  "auditor": "codex-audit-batch-B-20260719-427a34e6",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": true,
-  "chain_closure_explanation": "The retained fixed-locus authority already establishes the C3 normal representation, determinants, finite-average definition, and value 2/9. This row closes as an exact algebraic restatement of that single upstream theorem.",
+  "chain_closure_explanation": "The retained fixed-locus authority supplies the body-diagonal C3 normal representation and the defined finite average, after which the exact determinant identity gives 2/9. The runner's three failures are stale status/scope guards rather than failures of the load-bearing algebra.",
   "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
-  "claim_scope": "For the body-diagonal C3 normal representation and the defined inverse-normal-determinant finite average, the local density equals 2/9; global APS and physical-readout claims are excluded.",
+  "claim_scope": "Conditional algebraic restatement of the retained C3 inverse-normal-determinant theorem: for the body-diagonal C3 normal representation and the defined finite average, the value is 2/9; no global APS or physical-readout claim is audited.",
   "claim_type": "decoration",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-19T20:19:41.809063+00:00",
+  "claim_type_last_reviewed": "2026-07-19T20:19:41.817771+00:00",
   "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
@@ -60,17 +61,17 @@
   "effective_status": "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
   "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
   "load_bearing_score": 13.988,
-  "load_bearing_step": "For the body-diagonal C3 representation, the two inverse-normal-determinant terms are each 1/3, so the defined finite average is (1/3)(1/3 + 1/3) = 2/9.",
+  "load_bearing_step": "L_C_3(N) = (1/3)(1/3 + 1/3) = 2/9.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "negative_assertion_classes": [],
   "note_hash": "1d28bdbe4690d857345212de4a6b4c16305505191b587893c1e69d938b4e1ffc",
   "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
-  "notes_for_re_audit_if_any": "",
+  "notes_for_re_audit_if_any": "Repair runner guards 0d, 0e, and i3 to accept the supplier's current retained status and explicit local theorem-domain boundary, then update the stale 35/35 PASS statement.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1790,14 +1791,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 11,
-    "B": 8,
-    "C": 13,
+    "A": 28,
+    "B": 4,
+    "C": 0,
     "D": 0,
     "total_pass": 32
   },
   "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
   "title": "Delta Support Route C3 Local-Density Boundary Manifest",
   "transitive_descendants": 717,
-  "verdict_rationale": "The direct matrix, spectrum, determinant, and finite-average arithmetic is computed and closes exactly. The three runner failures arise from stale metadata guards requiring the upstream row to be retained_bounded with older scope wording, whereas the supplied authority is retained and remains narrowly local. Because that retained authority already proves the identical C3 inverse-normal-determinant result and this row adds no independent comparator or physical content, the row is algebraic decoration."
+  "verdict_rationale": "The direct result repeats the finite average already proved by the retained fixed-locus authority and applies only exact algebra. It adds no independent framework computation and has no external comparator checks, so it is a single-parent algebraic decoration rather than a new bounded theorem. The runner failures expect the supplier's former retained_bounded status and older claim-scope wording, while the supplied current retained theorem still explicitly covers the local representation and density."
 }

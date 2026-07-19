@@ -41,7 +41,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_numerical_match",
-  "load_bearing_score": 10.098,
+  "load_bearing_score": 10.1,
   "load_bearing_step": "On the declared exact 3D lattice family, the broad sweep and conservative pocket replay satisfy all five explicit threshold gates, yielding RUNNER PASS=5 FAIL=0.",
   "load_bearing_step_class": "G",
   "max_descendant_status": "audit_in_progress",
@@ -307,6 +307,6 @@
   },
   "runner_path": "scripts/source_driven_field_recovery_sweep.py",
   "title": "Source-Driven Field Recovery Sweep",
-  "transitive_descendants": 774,
+  "transitive_descendants": 775,
   "verdict_rationale": "The self-contained runner genuinely computes its five passing gates and does not hard-code the reported output values. The load-bearing recovery pocket nevertheless depends on scaling the generated field to selected target maxima and on chosen dynamics and thresholds, so the scientific inference is class G rather than a class C derivation from the framework baseline. The note accurately limits the result to that calibrated runner family; its statements about missing upstream derivations are scope disclosures rather than a no-go assertion."
 }

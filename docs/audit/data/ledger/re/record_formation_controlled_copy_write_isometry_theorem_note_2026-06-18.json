@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.644,
+  "load_bearing_score": 9.658,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -287,6 +287,6 @@
   },
   "runner_path": "scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py",
   "title": "Record Formation Controlled-Copy Write-Isometry Theorem",
-  "transitive_descendants": 99,
+  "transitive_descendants": 100,
   "verdict_rationale": null
 }

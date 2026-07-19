@@ -31,7 +31,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 17.757,
+  "load_bearing_score": 17.758,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -1515,6 +1515,62 @@
         "total_pass": 51
       },
       "verdict_rationale": "Issue: the packet truncates the primary runner source and omits complete live evidence for three of the five N1 routes required to authenticate the derived faithfulness and unitary-equivalence boundaries. Why this blocks: an audited-clean verdict requires a complete PASS no-go-discipline packet, and ATTEMPTED routes must be evidenced by current live stdout rather than source code. Repair target: rerender the packet with the complete primary runner source and untruncated live stdout containing all five N1 route records. Claim boundary until fixed: the internal algebraic argument remains locally coherent, but this audit cannot ratify the full scoped theorem and its derived negative boundaries as clean."
+    },
+    {
+      "archived_at": "2026-07-19T20:08:23.053762+00:00",
+      "audit_date": "2026-07-19T20:06:32.093705+00:00",
+      "audit_invocation_history": [
+        "38c06c2ec17f422e8630b167e449e8fd"
+      ],
+      "audit_invocation_id": "38c06c2ec17f422e8630b167e449e8fd",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f"
+        },
+        "load_bearing_score": 17.757,
+        "runner_hash": "6eaf62118f0bf14a92574d4dbe175b2d197afdb6cf3018ed87e9ef1f0bfad6ce",
+        "transitive_descendants": 1730
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260719-53ca83a1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed algebraic proof is internally coherent and the runner reports 51 exact class-A checks passing. Clean certification nevertheless fails because the clipped live stdout contains only two complete N1 route records and a partial third, leaving three required current-cycle routes without complete live evidence.",
+      "claim_scope": "The direct-sum decomposition of complexified Cl(3,0), its two dimension-two irreducible complex modules, real-restriction faithfulness, complexified kernels, and the Hermitian conditional unitary refinement.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-19T20:06:32.093705+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The four elements in (12) have rank four and span each ideal A_s, so sending them to the standard matrix units defines an algebra isomorphism A_s to M_2(C).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide unclipped current-cycle stdout or a cached live certificate containing complete N1 records for complex-kernel-solve, central-character-separation, and finite-simple-counterexamples, then rerun the clean gate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 51,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 51
+      },
+      "verdict_rationale": "The class-A derivation supports the stated decomposition, module classification, faithfulness distinction, and conditional unitary refinement, and no mathematical contradiction was found. N2 through N8 are dispositioned, including the independent N7 resolution and authenticated index metadata. N1 cannot pass from the rendered packet because only faithful-direct-sum-carrier and gram-normalization appear as complete live route records; complex-kernel-solve and central-character-separation are absent, while finite-simple-counterexamples is clipped. This is a runner-evidence defect rather than evidence against the theorem."
     }
   ],
   "prose_corrections": [],
@@ -1528,6 +1584,6 @@
   },
   "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
   "title": "Cl(3) Pauli Irrep Uniqueness Narrow Theorem",
-  "transitive_descendants": 1730,
+  "transitive_descendants": 1731,
   "verdict_rationale": null
 }

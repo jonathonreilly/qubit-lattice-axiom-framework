@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 15.647,
+  "load_bearing_score": 15.649,
   "load_bearing_step": "Because the static spatial hop h[U] is anti-Hermitian, the two-step classical transfer decomposes into 2-by-2 modal blocks with eigenvalues exp(\u00b12 asinh(sqrt(m^2+lambda_j^2))), which are positive real numbers.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1612,6 +1612,6 @@
   },
   "runner_path": "scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py",
   "title": "Fixed-Gauge RP Transfer Positivity + Standalone Relabeling Invariance",
-  "transitive_descendants": 801,
+  "transitive_descendants": 802,
   "verdict_rationale": "Issue: the exact modal factorization and permutation identities are correct, but the staggered KS recurrence and static temporal-gauge carrier are imported construction inputs rather than consequences of the accepted premise surface. Why this blocks: the supplied minimal axioms expressly do not select a Hamiltonian, transfer operator, or staggered kinetic branch, and no one-hop authority supplies that bridge. Repair target: provide a retained construction theorem deriving this recurrence and carrier, or explicitly present the result solely as a theorem conditional on those inputs. Claim boundary until fixed: positivity of the stated static classical matrix and finite conjugation invariance remain supported, while quantum-transfer and dynamical-gauge conclusions remain excluded."
 }

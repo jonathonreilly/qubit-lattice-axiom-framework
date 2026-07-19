@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.07,
+  "load_bearing_score": 12.085,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -282,6 +282,6 @@
   },
   "runner_path": "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py",
   "title": "K/CPT Orbit Constancy And Determinant-Character Boundary Supplied-Context Bridge",
-  "transitive_descendants": 94,
+  "transitive_descendants": 95,
   "verdict_rationale": null
 }

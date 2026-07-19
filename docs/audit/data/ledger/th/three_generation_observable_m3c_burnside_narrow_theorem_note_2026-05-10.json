@@ -41,7 +41,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "retained",
-  "load_bearing_score": 11.285,
+  "load_bearing_score": 11.304,
   "load_bearing_step": "The explicit identities E_ij = P_i C^((i-j) mod 3) P_j place all nine matrix units in A, so A = M_3(C).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -150,6 +150,6 @@
   },
   "runner_path": "scripts/frontier_three_generation_observable_m3c_burnside_narrow.py",
   "title": "Three-Generation Observable M_3(C) Burnside Narrow Theorem",
-  "transitive_descendants": 77,
+  "transitive_descendants": 78,
   "verdict_rationale": "The load-bearing matrix-unit construction is a genuine algebraic closure over the matrices explicitly defined in the note. The runner source performs exact symbolic calculations rather than printing hard-coded expected results, and its 50 successful checks support the stated projector, spanning, irreducibility, and rank-one conclusions. Two displayed scalar-factor annotations in the P_1 calculations are typographical errors, but the resulting projector actions and the load-bearing derivation remain correct."
 }

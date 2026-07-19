@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.029,
+  "load_bearing_score": 10.031,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -1668,6 +1668,6 @@
   },
   "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
   "title": "Cubic-Lattice Green's Function Asymptotic Native Reroute",
-  "transitive_descendants": 738,
+  "transitive_descendants": 739,
   "verdict_rationale": null
 }

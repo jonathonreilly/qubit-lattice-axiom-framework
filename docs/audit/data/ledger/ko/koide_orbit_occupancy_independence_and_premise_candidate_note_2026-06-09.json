@@ -69,7 +69,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 11.672,
+  "load_bearing_score": 11.7,
   "load_bearing_step": "Using E_s = 3a^2, E_d = 6|b|^2, E_s = epsilon, and E_d = n_d epsilon gives r = n_d/2 and Q = (1+n_d)/3.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -710,6 +710,6 @@
   },
   "runner_path": "scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py",
   "title": "Koide Orbit-Occupancy Gaussian Moments and the Aggregate Equipartition-Granularity Fork",
-  "transitive_descendants": 50,
+  "transitive_descendants": 51,
   "verdict_rationale": "Issue: The local Gaussian, trace, and aggregate-fork algebra survives independent recomputation, but the direct Q-dictionary and K/CPT orbit-context authorities are not retained-grade. Why this blocks: Their unaudited status prevents the supplied orbit indexing and adjacent Q authority from propagating, even though the narrow N1-N8 nonselection gate passes and the finite supplied-condition law-domain checks are locally decidable, invariant under the checked actions, and extensionally distinct. Repair target: Independently audit the two named direct dependencies and require a retained certificate before any per-outcome-cell condition is adopted as a law domain. Claim boundary until fixed: Conditionally on the enumerated local surface, the Gaussian gives r=1 and a supplied n_d gives the exact fork, but neither n_d=1 nor a full-lattice physical readout law is derived."
 }

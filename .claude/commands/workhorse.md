@@ -86,23 +86,35 @@ regardless of executor.
    round-trip trivial fixes through the executor).
 6. **Cache regen** (only when a runner changed):
    `python3 -c "import sys; sys.path.insert(0,'scripts'); from runner_cache
-   import execute_runner, write_cache; r=execute_runner('scripts/<runner>.py',
-   120); write_cache('scripts/<runner>.py', r)"`
-   Size the timeout to the runner — 120 s default; raise it (e.g. 300) for
-   heavy group-closure/symbolic runners rather than letting the regen die.
-7. **Citation-graph manifest (only when the PR adds a NEW note).** Stage 18
-   of the audit pipeline (`repo_invariants_check.py --check --enforce-links`)
-   HARD-FAILS any PR that adds a note without acknowledging the
-   citation-graph delta. In the PR worktree: (a) run the full pipeline
-   `docs/audit/scripts/run_pipeline.sh` — stage 1 builds the untracked
-   citation graph that the manifest writer needs; running
-   `write_citation_graph_manifest.py` alone FileNotFoundErrors in a fresh
-   checkout; (b) stage ONLY `docs/audit/data/citation_graph_manifest.json`,
-   then `git checkout -- docs/audit docs/repo docs/publication` to discard
-   the other derived rewrites; (c) `rm` the auto-created untracked ledger
-   shard for the new note — the audit lane owns ledger-row creation; (d)
-   commit as a separate `audit-infra:` commit. This manifest refresh is the
-   SOLE sanctioned change under `docs/audit/data/`.
+   import execute_runner, runner_timeout_for, write_cache;
+   p='scripts/<runner>.py'; r=execute_runner(p, runner_timeout_for(p));
+   write_cache(p, r)"`
+   `runner_timeout_for` honors the runner's top-level `AUDIT_TIMEOUT_SEC`,
+   then legacy overrides, then the 120 s default. New heavy runners declare
+   `AUDIT_TIMEOUT_SEC = N` so cache regen and the audit runner agree.
+7. **Citation-graph manifest (whenever graph topology changes).** An added or
+   removed included note, or an added, removed, or retargeted markdown
+   dependency, must co-land with a refreshed
+   `docs/audit/data/citation_graph_manifest.json`. Stage 18 compares the
+   generated graph with the manifest in the Git index, so pre-stage every
+   intended landing path, then build, write, and stage the manifest BEFORE the
+   full validation pipeline:
+   `git add <all-intended-landing-paths> &&
+   python3 docs/audit/scripts/build_citation_graph.py &&
+   python3 docs/audit/scripts/write_citation_graph_manifest.py &&
+   git add docs/audit/data/citation_graph_manifest.json`.
+   Then run `docs/audit/scripts/run_pipeline.sh`, strict audit lint, and
+   `git diff --check`. Restore pipeline rewrites from the prepared index with
+   `git restore --worktree -- docs/audit docs/repo docs/publication`; preview
+   newly seeded shards with `git clean -nd -- docs/audit/data/ledger/`, and
+   only after confirming every listed path is pipeline-created, remove them
+   with `git clean -fd -- docs/audit/data/ledger/`. Pre-staging is what makes
+   the restore preserve legitimate source/tooling/controlled-data edits.
+   The manifest is the only pipeline-generated audit-data output retained by
+   an ordinary topology-changing framework PR; intentionally reviewed
+   controlled-data or dispatcher inputs are separate source changes. Commit
+   the intended set and manifest together in step 8. Generated ledger,
+   verdict, queue, and effective-status state remains audit-lane-owned.
 8. **Commit/push/PR (planner).** Conventional commit; PR body states what
    verdict/goal the work responds to, what changed, runner numbers, and
    downstream order if PRs chain. `git worktree remove --force` after push.
@@ -212,10 +224,12 @@ Line-by-line review is the only thing that catches them. The six patterns
    citation is wrong, and the executor may pin its runner to the same wrong
    source, making the pair self-consistently green. Defense: specs put the
    authoritative text inline AND require a runner gate that reads the ledger
-   row shard (`docs/audit/data/ledger/<rid[:2]>/<rid>.json`, rid = lowercase
-   note basename without `.md`; the monolithic `audit_ledger.json` no longer
-   exists) directly and pins the note's quote to the ledger field; review
-   re-derives the quote from the ledger, never from the note file.
+   row shard (`docs/audit/data/ledger/<claim_id[:2]>/<claim_id>.json`, using
+   the exact canonical `claim_id` emitted by `build_citation_graph.py`;
+   `ledger_io.shard_path` is the path authority) directly and pins the note's
+   quote to the ledger field. The monolithic `audit_ledger.json` is an ignored,
+   non-authoritative read cache materialized by the pipeline. Review re-derives
+   the quote from the shard, never from the note file.
 
 **Discriminating-gate test:** recompute every completeness/identity gate with
 a term dropped/perturbed; if it still passes, it's tautological — demand a

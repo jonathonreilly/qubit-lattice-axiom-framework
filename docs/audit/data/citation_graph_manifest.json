@@ -1,6 +1,6 @@
 {
- "edge_count": 14930,
- "node_count": 4450,
+ "edge_count": 14933,
+ "node_count": 4451,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -8881,6 +8881,10 @@
   "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": {
    "deps_hash": "61305a7e0862",
    "out_degree": 4
+  },
+  "microcausality_finite_range_plaquette_class_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18": {
+   "deps_hash": "9be822641b14",
+   "out_degree": 3
   },
   "microcausality_many_body_nested_commutator_lightcone_bounded_theorem_note_2026-07-18": {
    "deps_hash": "c8eee4235fc9",

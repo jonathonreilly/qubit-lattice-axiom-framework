@@ -1,34 +1,84 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_relativistic_dof_finite_inventory.py
-runner_sha256: 714decb544f077fe780563f30351a64ae5f86709f1df5579e8640bccbb025fb5
+runner_sha256: b6bb4af047494b3acea94b65f00453dec5b6225c4bdcb0f27f2204cce7379338
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
-[PASS] [A] note boundary contains: finite declared-inventory arithmetic certificate
-[PASS] [A] note boundary contains: not a framework derivation
-[PASS] [A] note boundary contains: does not claim:
-[PASS] [A] note boundary contains: a framework derivation of the Standard Model particle inventory
-[PASS] [A] note boundary contains: a framework derivation of the fermion thermal factor
-[PASS] [A] note boundary contains: any new axiom or audit verdict
-[PASS] [A] note boundary contains: Downstream physical use of `g_* = 106.75` still has to carry
-[PASS] [A] note omits stale wrapper phrase: one-hop dependency rather than carry the count
-[PASS] [A] note omits stale wrapper phrase: This wrapper note is a named-import-only bounded theorem
-[PASS] [A] note omits stale wrapper phrase: This count is NOT derived
+=== literature attribution and dependency classification ===
+[PASS] [B] literature locator present: [doi:10.3390/galaxies4040078](https://doi.org/10.3390/galaxies4040078)
+[PASS] [B] literature locator present: [arXiv:1609.04979](https://arxiv.org/abs/1609.04979)
+[PASS] [B] literature locator present: Section 3 and Table 1; Sections 4.3–4.5
+[PASS] [B] literature locator present: [arXiv:astro-ph/0703730](https://arxiv.org/abs/astro-ph/0703730)
+[PASS] [B] literature locator present: Appendix B.4, pp. 159–160, Eqs. (B.40)–(B.43)
+[PASS] [B] source-to-claim mapping present: totals them as `28` bosonic and `90` fermionic degrees of freedom
+[PASS] [B] source-to-claim mapping present: approximation that chemical potentials are set to zero
+[PASS] [B] source-to-claim mapping present: expands the quark count as `6*2*2*3=72`
+[PASS] [B] source-to-claim mapping present: gives `18` leptonic states
+[PASS] [B] source-to-claim mapping present: expands the bosonic count as `16+8+4=28`
+[PASS] [B] source-to-claim mapping present: obtains `g_rho=g_s=106.75`
+[PASS] [B] conditional thermal scope contains: minimal Standard Model particle content with three generations and one
+[PASS] [B] conditional thermal scope contains: no thermally populated sterile/right-handed-neutrino states
+[PASS] [B] conditional thermal scope contains: thermodynamic-equilibrium ideal plasma with chemical potentials neglected
+[PASS] [B] conditional thermal scope contains: electroweak symmetry is restored
+[PASS] [B] conditional thermal scope contains: interaction, finite-mass, threshold, decoupling
+[PASS] [B] conditional thermal scope contains: beyond-Standard-Model corrections
+[PASS] [B] import boundary contains: remain load-bearing literature inputs
+[PASS] [B] import boundary contains: does not claim retained closure
+[PASS] [B] import boundary contains: not framework derivations
+[PASS] [B] import boundary contains: not chain-satisfying premises merely because they are cited
+[PASS] [B] import boundary contains: does not fetch, reproduce, or independently prove the cited physics
+[PASS] [B] import boundary contains: citations remove anonymous attribution; they do not close
+[PASS] [B] import boundary contains: inventory remains a non-satisfying condition
+[PASS] [B] import boundary contains: a new axiom, approved primitive, document-authority role, or audit verdict
+[PASS] [A] displayed arithmetic binding is exact: Therefore `g_bosonic = 16 + 6 + 2 + 4 = 28`.
+[PASS] [A] displayed arithmetic binding is exact: Therefore `g_fermionic = 72 + 12 + 6 = 90`.
+[PASS] [A] displayed arithmetic binding is exact: = 28 + (7/8) * 90
+[PASS] [A] displayed arithmetic binding is exact: = 427/4
+[PASS] [A] displayed arithmetic binding is exact: = 106.75.
+[PASS] [A] 7/8 dependency ledger claim id matches
+[PASS] [A] 7/8 dependency is retained-grade (retained)
+[PASS] [A] 7/8 dependency scope contains exact ratio
 
 === finite inventory arithmetic ===
-[PASS] [A] gluons count ((8, 2) -> 16)
-[PASS] [A] su2_l_gauge_bosons count ((3, 2) -> 6)
-[PASS] [A] u1_y_gauge_boson count ((1, 2) -> 2)
-[PASS] [A] complex_higgs_doublet count ((4,) -> 4)
-[PASS] [A] quarks count ((6, 3, 2, 2) -> 72)
-[PASS] [A] charged_leptons count ((3, 2, 2) -> 12)
-[PASS] [A] active_neutrinos count ((3, 2) -> 6)
-[PASS] [A] gluons_broken_bookkeeping count ((8, 2) -> 16)
-[PASS] [A] photon count ((1, 2) -> 2)
-[PASS] [A] massive_w_w_z count ((3, 3) -> 9)
-[PASS] [A] higgs_scalar count ((1,) -> 1)
+[PASS] [A] note has the exact expected bosonic sectors (['SU(2)_L gauge bosons', 'U(1)_Y gauge boson', 'complex Higgs doublet', 'gluons'])
+[PASS] [A] note has the exact expected fermionic sectors (['active neutrinos', 'charged leptons', 'quarks'])
+[PASS] [A] gluons row is present
+[PASS] [A] gluons factors match the attributed inventory ((8, 2))
+[PASS] [A] gluons displayed count matches the attributed inventory (16)
+[PASS] [A] gluons multiplication ((8, 2) -> 16)
+[PASS] [A] SU(2)_L gauge bosons row is present
+[PASS] [A] SU(2)_L gauge bosons factors match the attributed inventory ((3, 2))
+[PASS] [A] SU(2)_L gauge bosons displayed count matches the attributed inventory (6)
+[PASS] [A] SU(2)_L gauge bosons multiplication ((3, 2) -> 6)
+[PASS] [A] U(1)_Y gauge boson row is present
+[PASS] [A] U(1)_Y gauge boson factors match the attributed inventory ((1, 2))
+[PASS] [A] U(1)_Y gauge boson displayed count matches the attributed inventory (2)
+[PASS] [A] U(1)_Y gauge boson multiplication ((1, 2) -> 2)
+[PASS] [A] complex Higgs doublet row is present
+[PASS] [A] complex Higgs doublet factors match the attributed inventory ((4,))
+[PASS] [A] complex Higgs doublet displayed count matches the attributed inventory (4)
+[PASS] [A] complex Higgs doublet multiplication ((4,) -> 4)
+[PASS] [A] quarks row is present
+[PASS] [A] quarks factors match the attributed inventory ((6, 3, 2, 2))
+[PASS] [A] quarks displayed count matches the attributed inventory (72)
+[PASS] [A] quarks multiplication ((6, 3, 2, 2) -> 72)
+[PASS] [A] charged leptons row is present
+[PASS] [A] charged leptons factors match the attributed inventory ((3, 2, 2))
+[PASS] [A] charged leptons displayed count matches the attributed inventory (12)
+[PASS] [A] charged leptons multiplication ((3, 2, 2) -> 12)
+[PASS] [A] active neutrinos row is present
+[PASS] [A] active neutrinos factors match the attributed inventory ((3, 2))
+[PASS] [A] active neutrinos displayed count matches the attributed inventory (6)
+[PASS] [A] active neutrinos multiplication ((3, 2) -> 6)
+[PASS] [A] gluons_broken_bookkeeping multiplication ((8, 2) -> 16)
+[PASS] [A] photon multiplication ((1, 2) -> 2)
+[PASS] [A] massive_w_w_z multiplication ((3, 3) -> 9)
+[PASS] [A] higgs_scalar multiplication ((1,) -> 1)
+[PASS] [A] source bosonic grouping is 16+8+4 ((16, 8, 4))
+[PASS] [A] local electroweak-vector rows refine source subtotal 8 (8)
+[PASS] [A] source leptonic total is charged 12 plus active-neutrino 6 (18)
 [PASS] [A] bosonic total is 28 (28)
 [PASS] [A] fermionic total is 90 (90)
 [PASS] [A] broken-phase bosonic total matches unbroken total (28)
@@ -36,9 +86,10 @@ status: ok
 [PASS] [A] g_star exact fraction is 427/4 (427/4)
 [PASS] [A] g_star decimal is 106.75 (106.75)
 [PASS] [A] no right-handed-neutrino states are counted (6)
+[PASS] [A] broken-phase displayed bookkeeping is bound
 
 SM relativistic DOF finite inventory certificate: PASS
-PASS=28 FAIL=0
+PASS=78 FAIL=0
 
 ----- stderr -----
 

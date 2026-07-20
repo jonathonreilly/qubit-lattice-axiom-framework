@@ -16,7 +16,7 @@ runner: scripts/microcausality_weighted_quasilocal_class_walk_expansion_2026_07_
 
 **Date:** 2026-07-18
 **Type:** bounded_theorem
-**Claim type:** unaudited bounded theorem
+**Claim type:** bounded_theorem
 **Audit authority:** the independent audit lane only; this note assigns no
 audit verdict.
 **Primitive status:** no primitive is approved, registered, or enlarged here.

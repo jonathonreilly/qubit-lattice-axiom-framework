@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/covariant_effect_map_nonselection_repeat_certainty_collapse_2026_07_11.py
+runner_sha256: ffe62c5d58d0a74ecedebfb17c6e8825bd0bb014e32778125e8c28c10fa6b743
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
 PASS F01basisd2m0: rank-one menu effects normalize
 PASS F02basisd2m0: all transformed menu elements obey 0<=E<=I
 PASS F01basisd2m1_3: rank-one menu effects normalize
@@ -57,3 +65,6 @@ PASS S06: source contains boundary marker: does not establish that the axioms re
 BOUNDARY: additivity, menu normalization, effects, and repeat certainty are named conditional hypotheses with zero premise weight.
 BOUNDARY: the collapse theorem selects E_i=P_i only after the named condition RC_i=Tr(P_i E_i)=1.
 TOTAL: PASS=56 FAIL=0
+
+----- stderr -----
+

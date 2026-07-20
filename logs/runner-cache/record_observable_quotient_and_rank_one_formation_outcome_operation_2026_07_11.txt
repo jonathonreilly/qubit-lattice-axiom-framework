@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/record_observable_quotient_and_rank_one_formation_outcome_operation_2026_07_11.py
+runner_sha256: e01fb4910adcfd0911fd50ec286743b32ef7443a53c066012254c610cabcb517
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
 PASS R01: connected all-|0> additions are available at insertion
 PASS R02: all-|0> history also satisfies the stronger continual-admissibility reading
 PASS R03: readout is the monotone record count
@@ -38,3 +46,6 @@ BOUNDARY: record-equivalence is operational; deleting record-null ontology requi
 BOUNDARY: the rank-one outcome-operation normal form fixes neither E, full-instrument normalization, firing site/rate, nor coherent evolution.
 BOUNDARY: same-carrier permanence excludes both SWAP and ordinary hopping, so it is not a Dirac selector.
 TOTAL: PASS=36 FAIL=0
+
+----- stderr -----
+

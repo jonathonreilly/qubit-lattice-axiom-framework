@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/minimal_record_instrument_dilation_scalar_exchange_nonselection_2026_07_11.py
+runner_sha256: 5c029206b3cacde6b5fe5063005cf7d5458104c298f9d9c87ee5fcdb4f35c4d5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
 PASS C01: U_theta is unitary for real theta
 PASS C02: theta=pi/2 is exactly the edge SWAP
 PASS C03a: full two-qubit SWAP commutes with all common-frame su(2) generators
@@ -55,3 +63,6 @@ BOUNDARY: minimality is relative to the supplied finite CP instrument/channel, n
 BOUNDARY: absorbing label histories use a fresh append-only register that is not derived as a framework Record.
 BOUNDARY: the witness is a supplied one-excitation edge sector, not the full edge algebra, a cubic QCA, or a continuum theory.
 TOTAL: PASS=53 FAIL=0
+
+----- stderr -----
+

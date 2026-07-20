@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/overlapping_edge_instrument_order_time_rate_nonselection_2026_07_11.py
+runner_sha256: a5484e153b21e5473c278ba0eac64fdc51ece84d82056c47527ece744227b9cf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.85
+status: ok
+----- stdout -----
 PASS L01A: edge A is a complete five-outcome CPTP instrument
 PASS L02A: edge A no-record effect is q I
 PASS L01B: edge B is a complete five-outcome CPTP instrument
@@ -56,3 +64,6 @@ PASS S05: source contains boundary marker: does not establish that the axioms re
 BOUNDARY: the finite edge Kraus rule, overlapping-support schedules, first-nonempty stopping, and clock maps are explicit conditional inputs.
 BOUNDARY: separate edge normalization and identical edge rules do not select overlap composition or order; event order does not select metric time or rate.
 TOTAL: PASS=55 FAIL=0
+
+----- stderr -----
+

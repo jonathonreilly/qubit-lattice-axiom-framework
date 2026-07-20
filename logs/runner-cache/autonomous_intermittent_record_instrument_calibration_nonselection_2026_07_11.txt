@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/autonomous_intermittent_record_instrument_calibration_nonselection_2026_07_11.py
+runner_sha256: 27a1ebb1f5ddb10cad94e1c0e7f78428883d53a2912504d3f43b9ea4bc10e604
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.31
+status: ok
+----- stdout -----
 PASS C01: PSD plus a zero cross-label diagonal kills the complex off-diagonal
 PASS C02: the first repeat-exclusive effect is e_0 P_0
 PASS C03: normalization fixes the diagonal no-record effect
@@ -42,3 +50,6 @@ PASS S06: source contains boundary marker: does not establish that the axioms re
 BOUNDARY: finite Kraus representation is named mathematical authority; physical CP-instrument applicability, the supplied menu, probability semantics, cross-label exclusion, and event neutrality remain conditional/open and gain no chain-satisfying premise authority.
 BOUNDARY: auxiliary locked-register absorption and same-map reuse do not imply blank-sector cross-label exclusion.
 TOTAL: PASS=41 FAIL=0
+
+----- stderr -----
+

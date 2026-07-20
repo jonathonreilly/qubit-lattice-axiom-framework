@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/record_faithful_cubic_neighbor_response_2026_07_11.py
+runner_sha256: 36329c890fe77b5e8cdc01e4ecff0b830651cef1dadd506a55b80db65a7719be
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
 PASS G01: proper cubic rotations=24
 PASS G02: all det=+1
 PASS G03: 24-element set is closed
@@ -29,3 +37,6 @@ BOUNDARY: F01-F03 exclude b=0 only if spectral record-faithfulness is separately
 BOUNDARY: K03-K06 use a separately supplied oriented-link response-to-symbol realization.
 BOUNDARY: current Admissibility does not identify availability projectors with these response coefficients.
 TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

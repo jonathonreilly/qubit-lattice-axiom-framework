@@ -344,6 +344,36 @@ record the exact rejection with the row id in the run report. Recurring
 rejection classes get selection-time filters in the drainer — burning a full
 audit to discover an incompatibility twice is a defect.
 
+**Schema-invalid delivery is not a science verdict.** It means an auditor
+returned JSON that the audit contract cannot apply (for example malformed
+JSON, an incomplete N1-N8 packet, or a field whose value contradicts the
+schema). It does not show that the source claim is false or needs editing.
+
+- Give parseable N1-N8 structural-packet rejects bounded, error-specific
+  completion attempts in the same restricted seat. Preserve every top-level
+  scientific judgment; only repair the rejected structural packet. Malformed
+  JSON and other contract rejects without a narrow judgment-preserving repair
+  target go directly to the same exhausted-delivery path.
+- If a valid critical clean seat survives beside an invalid peer, bank the
+  valid seat and let the next top-level batch retry only the missing peer. If
+  no valid delivery survives, record every exact validator error and
+  quarantine the claim for the current top-level campaign. Continue draining
+  other ready rows. Pass the campaign quarantine file to every inner batch so
+  a new batch cycle cannot immediately burn the same row again.
+- Do not apply a verdict, mutate the ledger, or launch a science-editing PR
+  from malformed output. A source-repair PR requires a validated non-clean
+  verdict with a concrete rationale and repair target.
+- After a validated `audited_failed`, `audited_renaming`,
+  `audited_numerical_match`, or repair-actionable `audited_conditional` lands,
+  hand that verdict to `scripts/science_fix_loop.py`. Run one detached
+  science-fix process per completed audit batch; it may edit only an isolated
+  worktree and may only open a PR. Review-loop and a later independent audit
+  remain mandatory before any repair reaches retained state.
+
+Reaching a development fixed point with schema quarantines means the
+actionable queue drained except for the explicitly reported malformed
+deliveries; never describe that state as a fully empty ready queue.
+
 ## Setup For Each Session
 
 1. Fetch `origin/main`.

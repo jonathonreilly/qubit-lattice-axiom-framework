@@ -37,6 +37,7 @@ from pathlib import Path
 SCRIPTS = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPTS.parents[2]
 DATA = REPO_ROOT / "docs" / "audit" / "data"
+SCIENCE_FIX = REPO_ROOT / "scripts" / "science_fix_loop.py"
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import codex_audit_runner as audit_runner  # noqa: E402
 import ledger_io  # noqa: E402
@@ -52,6 +53,16 @@ SUCCESS_RESULTS = {
     "compute_required",
 }
 RESUMABLE_HANDOFF_RESULTS = {"judicial_panel_required"}
+SCHEMA_INVALID_RESULTS = {"malformed_json", "validation_failed"}
+SCHEMA_QUARANTINE_RESULT = "schema_invalid_quarantined"
+SCHEMA_DEFERRED_RESULT = "schema_invalid_peer_deferred"
+SCHEMA_SUPERSEDED_RESULT = "schema_invalid_attempt_superseded"
+SCHEMA_RECOVERY_RESULTS = {
+    SCHEMA_QUARANTINE_RESULT,
+    SCHEMA_DEFERRED_RESULT,
+    SCHEMA_SUPERSEDED_RESULT,
+}
+SCIENCE_FIX_RESULTS = {"science_fix_dispatched", "science_fix_dispatch_failed"}
 MIN_DELIVERY_BYTES = 200
 PACKET_COMPLETION_STALL_SECONDS = 20 * 60
 PACKET_COMPLETION_POLL_SECONDS = 15
@@ -640,6 +651,37 @@ def terminate_workers(jobs: list[dict]) -> None:
             job["log_handle"].close()
 
 
+def schema_repair_guidance(blob: dict, validator_error: str | None) -> str:
+    """Render exact, judgment-preserving guidance for known schema errors."""
+    if not validator_error:
+        return ""
+    match = re.fullmatch(
+        r"N8 echo (\d+)\.disposition must name its indexed mechanism",
+        validator_error,
+    )
+    if match:
+        index = int(match.group(1)) - 1
+        packet = blob.get("no_go_discipline")
+        echoes = (
+            packet.get("N8_cross_cycle_echo", {}).get("echoes")
+            if isinstance(packet, dict)
+            else None
+        )
+        if isinstance(echoes, list) and 0 <= index < len(echoes):
+            echo = echoes[index]
+            mechanism = echo.get("mechanism") if isinstance(echo, dict) else None
+            if isinstance(mechanism, str) and mechanism.strip():
+                quoted = json.dumps(mechanism, ensure_ascii=False)
+                return (
+                    "\nMechanical repair guidance: preserve every judgment and "
+                    f"copy the exact mechanism string {quoted} verbatim into "
+                    f"N8_cross_cycle_echo.echoes[{index}].disposition. The "
+                    "validator requires that exact normalized substring; do not "
+                    "paraphrase it or change the mechanism field.\n"
+                )
+    return ""
+
+
 def packet_completion_pass(
     job: dict,
     blob: dict,
@@ -665,6 +707,7 @@ def packet_completion_pass(
     error_block = (
         "\nThe validator rejected the previous packet with EXACTLY this "
         f"error — fix precisely this, nothing else:\n    {validator_error}\n"
+        f"{schema_repair_guidance(blob, validator_error)}"
         if validator_error
         else ""
     )
@@ -1000,14 +1043,180 @@ def apply_one_serialized(
     return False, {"cid": cid, "pass": pass_no, "result": "unreachable"}
 
 
+def science_fix_handoff(job: dict, envelope: dict) -> dict | None:
+    """Build a source-repair handoff only from a validated non-clean audit."""
+    audit = envelope.get("audit")
+    if not isinstance(audit, dict):
+        return None
+    verdict = audit.get("verdict")
+    category = {
+        "audited_renaming": "renaming",
+        "audited_failed": "failed",
+        "audited_numerical_match": "numerical_match",
+    }.get(verdict)
+    notes = str(audit.get("notes_for_re_audit_if_any") or "").strip()
+    if verdict == "audited_conditional":
+        conditional_categories = {
+            "runner_artifact_issue": "conditional_runner_artifact_issue",
+            "scope_too_broad": "conditional_scope_too_broad",
+            "missing_bridge_theorem": "conditional_missing_bridge_theorem",
+        }
+        prefix = notes.split("—", 1)[0].split(":", 1)[0].strip().lower()
+        category = conditional_categories.get(prefix)
+    if category is None:
+        return None
+
+    row = job["row"]
+    cid = job["cid"]
+    note_path = str(row.get("note_path") or "").strip()
+    if not note_path:
+        return None
+    claim_scope = str(audit.get("claim_scope") or "").strip()
+    rationale = str(audit.get("verdict_rationale") or "").strip()
+    load_bearing = str(audit.get("load_bearing_step") or "").strip()
+    claim_type = str(audit.get("claim_type") or row.get("claim_type") or "")
+    step_class = str(
+        audit.get("load_bearing_step_class")
+        or row.get("load_bearing_step_class")
+        or "?"
+    )
+    prompt = f"""Use the physics-loop skill to repair the validated non-clean audit on {note_path}.
+
+Claim id: {cid}
+Audit verdict: {verdict}
+Claim type: {claim_type}
+Load-bearing step class: {step_class}
+Claim scope: {claim_scope}
+
+Validated auditor rationale:
+{rationale}
+
+Auditor-quoted load-bearing step:
+{load_bearing}
+
+Auditor repair target:
+{notes}
+
+Make source or runner edits only where the validated audit identifies a real
+defect. Open no new axiom or primitive. The goal is a reviewable PR whose
+merged result can be independently re-audited; do not edit audit-ledger or
+generated audit-status surfaces.
+"""
+    return {
+        "category": category,
+        "claim_id": cid,
+        "note_path": note_path,
+        "descendants": int(row.get("transitive_descendants") or 0),
+        "cls": step_class,
+        "prompt_body": prompt.strip(),
+        "audit_invocation_id": str(audit.get("audit_invocation_id") or ""),
+    }
+
+
+def launch_science_fix_worker(
+    handoffs: list[dict], workdir: Path,
+) -> tuple[int, Path, Path] | None:
+    """Launch one detached PR-producing repair worker for validated handoffs."""
+    unique = {row["claim_id"]: row for row in handoffs}
+    if not unique:
+        return None
+    handoff_path = workdir / "science-fix-handoff.json"
+    handoff_path.write_text(
+        json.dumps(
+            {
+                "schema": "audit_science_fix_handoff_v1",
+                "generated_at": datetime.now(timezone.utc).isoformat(),
+                "rows": [unique[cid] for cid in sorted(unique)],
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    log_path = workdir / "science-fix-worker.log"
+    log = log_path.open("a", encoding="utf-8")
+    try:
+        proc = subprocess.Popen(
+            [
+                sys.executable,
+                str(SCIENCE_FIX),
+                "--handoff-file",
+                str(handoff_path),
+                "--n",
+                str(len(unique)),
+                # A newly applied audit is fresh repair evidence. Retry an old
+                # no-edit/timeout attempt for these bounded handoff rows while
+                # science_fix_loop still excludes active or open-PR claims.
+                "--retry-failed",
+            ],
+            cwd=REPO_ROOT,
+            stdin=subprocess.DEVNULL,
+            stdout=log,
+            stderr=subprocess.STDOUT,
+            start_new_session=True,
+        )
+    finally:
+        log.close()
+    return proc.pid, handoff_path, log_path
+
+
+def load_campaign_quarantine(path: Path | None) -> set[str]:
+    if path is None or not path.exists():
+        return set()
+    claim_ids: set[str] = set()
+    for line in path.read_text(encoding="utf-8").splitlines():
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        cid = row.get("claim_id") if isinstance(row, dict) else None
+        if isinstance(cid, str) and cid:
+            claim_ids.add(cid)
+    return claim_ids
+
+
+def persist_campaign_quarantine(
+    path: Path | None,
+    claim_ids: set[str],
+    report: list[dict],
+) -> None:
+    if path is None or not claim_ids:
+        return
+    existing = load_campaign_quarantine(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as handle:
+        for cid in sorted(claim_ids - existing):
+            failures = [
+                item
+                for item in report
+                if item.get("cid") == cid
+                and item.get("result") in SCHEMA_INVALID_RESULTS
+            ]
+            handle.write(
+                json.dumps(
+                    {
+                        "claim_id": cid,
+                        "reason": SCHEMA_QUARANTINE_RESULT,
+                        "failures": failures,
+                        "recorded_at": datetime.now(timezone.utc).isoformat(),
+                    },
+                    sort_keys=True,
+                )
+                + "\n"
+            )
+
+
 def apply_serialized(
     jobs: list[dict],
     report: list[dict],
     retries: int = 3,
-) -> tuple[bool, set[str]]:
+) -> tuple[bool, set[str], set[str], list[dict]]:
     deliveries: dict[tuple[str, int], tuple[dict, dict]] = {}
     invalid_claims: set[str] = set()
     compute_skips: set[str] = set()
+    invalid_results: dict[str, list[dict]] = {}
+    science_handoffs: dict[str, dict] = {}
     for job in sorted(jobs, key=lambda item: (item["cid"], item["pass"])):
         envelope, result = finalize_worker(job)
         if envelope is None:
@@ -1016,8 +1225,19 @@ def apply_serialized(
                 compute_skips.add(job["cid"])
             else:
                 invalid_claims.add(job["cid"])
+                invalid_results.setdefault(job["cid"], []).append(result)
             continue
         deliveries[(job["cid"], job["pass"])] = (job, envelope)
+
+    schema_invalid_claims = {
+        cid
+        for cid, failures in invalid_results.items()
+        if failures
+        and all(item.get("result") in SCHEMA_INVALID_RESULTS for item in failures)
+    }
+    validated_claims = {cid for cid, _ in deliveries}
+    schema_quarantines = schema_invalid_claims - validated_claims
+    invalid_claims.difference_update(validated_claims)
 
     for cid in compute_skips:
         for key in [key for key in deliveries if key[0] == cid]:
@@ -1034,12 +1254,13 @@ def apply_serialized(
         if cid in compute_skips:
             continue
         if not available:
-            invalid_claims.add(cid)
-            report.append({
-                "cid": cid,
-                "result": "critical_peer_delivery_missing",
-                "detail": "validated seats=[]; required=[1, 2]",
-            })
+            if cid not in schema_quarantines:
+                invalid_claims.add(cid)
+                report.append({
+                    "cid": cid,
+                    "result": "critical_peer_delivery_missing",
+                    "detail": "validated seats=[]; required=[1, 2]",
+                })
         elif available != {1, 2}:
             # Bank the single validated seat instead of discarding it. The
             # apply contract natively supports this: a lone clean seat lands
@@ -1061,6 +1282,39 @@ def apply_serialized(
                 ),
             })
 
+    for cid in sorted(schema_invalid_claims):
+        failures = invalid_results[cid]
+        valid = [
+            envelope["audit"].get("verdict")
+            for (delivery_cid, _), (_, envelope) in deliveries.items()
+            if delivery_cid == cid
+        ]
+        if cid in schema_quarantines:
+            result = SCHEMA_QUARANTINE_RESULT
+            disposition = "campaign-scoped quarantine after bounded schema repair"
+        elif cid in fresh_critical and valid and all(
+            verdict == "audited_clean" for verdict in valid
+        ):
+            result = SCHEMA_DEFERRED_RESULT
+            disposition = (
+                "validated clean seat banked; missing peer remains eligible in "
+                "the next top-level batch cycle"
+            )
+        else:
+            result = SCHEMA_SUPERSEDED_RESULT
+            disposition = "validated delivery superseded the malformed attempt"
+        report.append({
+            "cid": cid,
+            "result": result,
+            "detail": (
+                f"{disposition}; "
+                + "; ".join(
+                    f"p{item.get('pass', '?')}={item.get('detail') or item.get('result')}"
+                    for item in failures
+                )
+            ),
+        })
+
     for key in sorted(deliveries):
         job, envelope = deliveries[key]
         if job["cid"] in invalid_claims:
@@ -1068,8 +1322,22 @@ def apply_serialized(
         ok, result = apply_one_serialized(job, envelope, retries)
         report.append(result)
         if not ok:
-            return False, compute_skips
-    return not invalid_claims, compute_skips
+            return (
+                False,
+                compute_skips,
+                schema_quarantines,
+                list(science_handoffs.values()),
+            )
+        handoff = science_fix_handoff(job, envelope)
+        if handoff is not None:
+            science_handoffs[job["cid"]] = handoff
+    hard_invalid_claims = invalid_claims - schema_quarantines
+    return (
+        not hard_invalid_claims,
+        compute_skips,
+        schema_quarantines,
+        list(science_handoffs.values()),
+    )
 
 
 def selected_batch(targets: list[dict], max_workers: int) -> list[dict]:
@@ -1111,6 +1379,15 @@ def scope_for_args(args: argparse.Namespace, rows: dict[str, dict]) -> set[str]:
 
 
 def main() -> int:
+    drain_lock = None
+
+    def finish(code: int) -> int:
+        nonlocal drain_lock
+        if drain_lock is not None:
+            drain_lock.close()
+            drain_lock = None
+        return code
+
     parser = argparse.ArgumentParser(description="Parallel development-tier audit drainer")
     scope_group = parser.add_mutually_exclusive_group(required=True)
     scope_group.add_argument("--lane", help="lane name from lane_certification_config.json")
@@ -1131,13 +1408,27 @@ def main() -> int:
     parser.add_argument("--stall-minutes", type=int, default=45)
     parser.add_argument("--runner-timeout-sec", type=int, default=120)
     parser.add_argument("--push-retries", type=int, default=3)
+    parser.add_argument(
+        "--campaign-quarantine-file",
+        type=Path,
+        default=None,
+        help=(
+            "JSONL file shared by one top-level campaign; exhausted "
+            "schema-invalid claims are skipped for the rest of that campaign"
+        ),
+    )
+    parser.add_argument(
+        "--skip-science-fix-dispatch",
+        action="store_true",
+        help="do not launch PR-producing repair workers for validated non-clean verdicts",
+    )
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     PROGRESS["dry_run"] = bool(args.dry_run)
     if not args.dry_run:
         drain_lock = acquire_exclusive_drain_lock("orchestrate_audit_batch")
         if drain_lock is None:
-            return 3
+            return finish(3)
     if (
         args.max_workers < 1
         or args.rounds < 1
@@ -1156,7 +1447,7 @@ def main() -> int:
         error = clean_main_error()
         if error:
             print(f"refusing to run: {error}. Use a dedicated clean main checkout.")
-            return 2
+            return finish(2)
 
     workdir = Path(
         os.environ.get("AUDIT_BATCH_WORKDIR")
@@ -1164,7 +1455,8 @@ def main() -> int:
     )
     report: list[dict] = []
     PROGRESS["report"] = report
-    session_skipped: set[str] = set()
+    session_skipped = load_campaign_quarantine(args.campaign_quarantine_file)
+    science_handoffs: dict[str, dict] = {}
     if not args.dry_run:
         try:
             workdir.mkdir(parents=True, exist_ok=False)
@@ -1174,14 +1466,14 @@ def main() -> int:
                 "Each run requires a fresh workdir; remove it or point "
                 "AUDIT_BATCH_WORKDIR at a new path."
             )
-            return 2
+            return finish(2)
 
     if not args.dry_run and not (DATA / "citation_graph.json").exists():
         print("derived audit caches missing (fresh clone); running the pipeline once")
         bootstrap = sh(["bash", str(SCRIPTS / "run_pipeline.sh")], timeout=1800)
         if bootstrap.returncode != 0:
             print(f"pipeline bootstrap failed: {(bootstrap.stderr or bootstrap.stdout)[-300:]}")
-            return 2
+            return finish(2)
 
     for round_no in range(1, args.rounds + 1):
         rows = load_rows()
@@ -1189,7 +1481,7 @@ def main() -> int:
             scope = scope_for_args(args, rows)
         except ValueError as exc:
             print(str(exc))
-            return 2
+            return finish(2)
         existing_disagreements = sorted(
             cid
             for cid in scope
@@ -1211,13 +1503,13 @@ def main() -> int:
             print(f"   skip: {line}")
         missing = [line for line in skipped if line.endswith("missing ledger row")]
         if args.claims and missing:
-            return 2
+            return finish(2)
         if not targets:
             break
         batch = selected_batch(targets, args.max_workers)
         if not batch:
             print("no target fits the configured worker limit (critical rows require two seats)")
-            return 2
+            return finish(2)
         if args.dry_run:
             for row in batch:
                 print(f"   would audit: {row['claim_id']} (passes={len(passes_for_row(row))})")
@@ -1260,8 +1552,22 @@ def main() -> int:
             break
         print(f"   launched {len(jobs)} detached workers; waiting (stall {args.stall_minutes}m)")
         wait_workers(jobs, args.stall_minutes)
-        applied_ok, compute_skips = apply_serialized(jobs, report, args.push_retries)
+        (
+            applied_ok,
+            compute_skips,
+            schema_quarantines,
+            round_science_handoffs,
+        ) = apply_serialized(jobs, report, args.push_retries)
         session_skipped.update(compute_skips)
+        session_skipped.update(schema_quarantines)
+        persist_campaign_quarantine(
+            args.campaign_quarantine_file,
+            schema_quarantines,
+            report,
+        )
+        science_handoffs.update(
+            {row["claim_id"]: row for row in round_science_handoffs}
+        )
         # One audit attempt per claim per run. A non-terminal verdict
         # (audited_conditional) re-enters the ledger as unaudited repair-queue
         # work immediately, so without this a conditional row is re-targeted
@@ -1277,6 +1583,38 @@ def main() -> int:
         if disagreements or not applied_ok or launch_blocked:
             break
 
+    judicial_claims = {
+        item.get("cid")
+        for item in report
+        if item.get("result") == "judicial_panel_required"
+    }
+    repair_rows = [
+        row
+        for cid, row in sorted(science_handoffs.items())
+        if cid not in judicial_claims
+    ]
+    if repair_rows and not args.dry_run and not args.skip_science_fix_dispatch:
+        try:
+            launched = launch_science_fix_worker(repair_rows, workdir)
+            if launched is None:
+                raise ValueError("no unique science-fix handoff rows")
+            pid, handoff_path, log_path = launched
+            for row in repair_rows:
+                report.append({
+                    "cid": row["claim_id"],
+                    "result": "science_fix_dispatched",
+                    "detail": (
+                        f"pid={pid} handoff={handoff_path} log={log_path}"
+                    ),
+                })
+        except (OSError, ValueError) as exc:
+            for row in repair_rows:
+                report.append({
+                    "cid": row["claim_id"],
+                    "result": "science_fix_dispatch_failed",
+                    "detail": f"{type(exc).__name__}: {exc}",
+                })
+
     print("== batch report ==")
     for item in report:
         pass_label = f" p{item['pass']}" if "pass" in item else ""
@@ -1288,7 +1626,7 @@ def main() -> int:
         )
         print(f"report: {workdir / 'report.jsonl'}")
     blocked = report_has_hard_blocker(report)
-    return 1 if blocked else 0
+    return finish(1 if blocked else 0)
 
 
 def report_has_hard_blocker(report: list[dict]) -> bool:
@@ -1300,8 +1638,26 @@ def report_has_hard_blocker(report: list[dict]) -> bool:
     lane, so returning nonzero here would incorrectly collapse a normal
     control-flow edge into a campaign stop.
     """
-    accepted = SUCCESS_RESULTS | RESUMABLE_HANDOFF_RESULTS
-    return any(item.get("result") not in accepted for item in report)
+    accepted = (
+        SUCCESS_RESULTS
+        | RESUMABLE_HANDOFF_RESULTS
+        | SCIENCE_FIX_RESULTS
+        | SCHEMA_RECOVERY_RESULTS
+    )
+    recovered = {
+        item.get("cid")
+        for item in report
+        if item.get("result") in SCHEMA_RECOVERY_RESULTS
+    }
+    quarantine_companions = SCHEMA_INVALID_RESULTS | {"critical_peer_pending"}
+    return any(
+        item.get("result") not in accepted
+        and not (
+            item.get("cid") in recovered
+            and item.get("result") in quarantine_companions
+        )
+        for item in report
+    )
 
 
 def append_judicial_handoffs(

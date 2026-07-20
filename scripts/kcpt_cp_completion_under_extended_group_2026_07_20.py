@@ -526,7 +526,7 @@ gate("G12", Hdims_sorted == [8, 8, 12, 12, 12, 12] and sum(Hdims_sorted) == 64
      f"over 6 terms => every m_i==1 (the two 8's inequivalent, the four 12's pairwise inequivalent; a "
      f"repeated irrep would push c_H>=8). REJECTORS != [8,8,12,12,24] (c_H=5 non-split) / != [4,4,6,6,12,32]")
 
-# ---- 12^+/12^- split -- three independent proofs -------------------------------------
+# ---- 12^+/12^- split -- three complementary checks -----------------------------------
 overlaps = [ov["Wp"], ov["Hmp"], ov["Wm"], ov["Hmm"]]
 mix_ok = all(o is not None and abs(o - 6.0) < 1e-6 for o in overlaps)
 not_trivial = all(o is not None and abs(o) > 1.0 and abs(o - 12.0) > 1.0 for o in overlaps)

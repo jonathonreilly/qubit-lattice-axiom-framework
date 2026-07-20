@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-20T22:55:56.911207+00:00",
+  "audit_invocation_history": [
+    "49e8f1cfb495448eae163e508e823d40"
+  ],
+  "audit_invocation_id": "49e8f1cfb495448eae163e508e823d40",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 18,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_s3_mass_matrix_no_go.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 14.008,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_s3_mass_matrix_no_go.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "9f1dcfd06d37ff045f096da2828a909943ae8e6eeaaf520e18e44a3bc73bdf61",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "9f1dcfd06d37ff045f096da2828a909943ae8e6eeaaf520e18e44a3bc73bdf61",
+    "runner_path": "scripts/frontier_s3_mass_matrix_no_go.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 1455
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-cli-gpt-5.6-sol-20260720-224630-dc976c7b-dc976c7bcc024e7ba6be4d761388c0e9-s3_mass_matrix_condition-001",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The conditional representation-theory chain closes: Schur's lemma yields the two-projector commutant, and restriction to 2 A_+ direct-sum A_- gives real Hermitian-commutant dimension 2^2+1^2=5. Physical carrier identification is outside the audited target.",
   "claim_id": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
-  "claim_scope": null,
+  "claim_scope": "For a supplied unitary three-dimensional S_3 representation isomorphic to A_1 direct-sum E, invariant Hermitian operators have spectrum {alpha, alpha, alpha + beta}, and the transposition-generated Z_2 Hermitian commutant has real dimension five.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-20T22:55:56.911207+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 7,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 14.008,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Because the irreducible summands A_1 and E occur with multiplicity one, Schur's lemma makes every invariant Hermitian operator scalar on each summand.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "c02adb4be1a11a19ee988fbdfffe5bf60eae8ca8a561b68d9138a6587fadb192",
   "note_path": "docs/S3_MASS_MATRIX_CONDITIONAL_DEGENERACY_NOTE_2026-07-11.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: Preserve the supplied-representation qualifier; if the claim is later promoted to a physical-carrier statement, add and audit the corresponding carrier-identification bridge before re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -113,14 +159,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 22,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 22
   },
   "runner_path": "scripts/frontier_s3_mass_matrix_no_go.py",
   "title": "S_3 Mass-Matrix Conditional Degeneracy Lemma",
   "transitive_descendants": 1455,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The A_1 direct-sum E carrier is a supplied hypothesis rather than a result derived from retained framework content. Why this blocks: The correct algebraic proof and runner establish only the conditional representation-theory statement. Repair target: Add and audit a carrier-identification bridge if promotion to a physical-carrier claim is intended. Claim boundary until fixed: No physical-generation, lattice-taste, or hw=1 carrier conclusion follows."
 }

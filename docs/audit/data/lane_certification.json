@@ -77,7 +77,7 @@
         },
         {
           "claim_id": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "s3_mass_matrix_no_go_note",
@@ -2141,7 +2141,7 @@
         },
         {
           "claim_id": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "s3_mass_matrix_no_go_note",
@@ -2839,6 +2839,6 @@
       "uncertified_count": 651
     }
   ],
-  "repo_head": "698cbfc09425721ae7aadc5291101cb9473322d1",
+  "repo_head": "80ed1cfdbe3f4330ebacffcadbde5e0e786ee225",
   "schema": "lane_certification_v2"
 }

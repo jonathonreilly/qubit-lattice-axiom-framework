@@ -1,218 +1,370 @@
-# Wave-Retardation Lab Prediction — NEGATIVE (No Clean v/c Scaling)
+# Wave-Retardation Schedule-Rate Sweep — Controlled Finite-Carrier Negative
 
-**Date:** 2026-04-07
-**Status:** proposed_retained negative — two sweeps on the wave-retardation lane (varying v/c with trajectory-range coupled, then with trajectory-range fixed) show that the M − I gap is **configuration-dependent and non-monotonic in v/c**, not a clean power law. The original Lane 6 / Lane 8b 25-30% gap was a single-point result that does not extrapolate to lab v/c via any simple scaling. The lab prediction card is **blocked** until the configuration dependence is disentangled. The flagship wave-equation physics (Lanes 4–8b) is unaffected; only the lab translation is blocked.
+**Date:** 2026-07-18 (source repair of the 2026-04-07 packet)
+**Type:** bounded_theorem
+**Status:** source-repaired bounded finite-carrier result; this note does not assert an audit disposition
+
+## Claim
+
+For the finite carrier and schedules defined below, the computed moving-field
+versus instantaneous-comparator difference does **not** identify a single
+monotone schedule-rate-only power law or a laboratory prediction card.
+
+This is a statement about the named finite computations, not about every
+possible discretization, a continuum limit, a universal retardation law, or a
+physical laboratory observable.  One of the two controlled relative-gap
+curves is monotone; that fact is reported rather than hidden.  Its raw
+difference is non-monotone, and matched finite counterchecks show dependence
+on trajectory location and post-motion buffer at fixed schedule rate/trajectory.
 
 ## Artifact chain
 
-- [`scripts/wave_retardation_velocity_sweep.py`](../scripts/wave_retardation_velocity_sweep.py)
-- [`logs/2026-04-07-wave-retardation-velocity-sweep.txt`](../logs/2026-04-07-wave-retardation-velocity-sweep.txt)
+- primary runner:
+  [`scripts/wave_retardation_velocity_sweep.py`](../scripts/wave_retardation_velocity_sweep.py)
+- finite wave/comparator/beam helper:
+  [`scripts/wave_retarded_gravity.py`](../scripts/wave_retarded_gravity.py)
+- exact runner/helper-SHA cache:
+  [`logs/runner-cache/wave_retardation_velocity_sweep.txt`](../logs/runner-cache/wave_retardation_velocity_sweep.txt)
 
-## Question
+Run all evidence classes with:
 
-The Lane 6 / Lane 8b retardation result was a single point: at
-v/c = 0.30 (source moving in z over 20 active layers), the retarded
-field M and the instantaneous comparator I differ in beam deflection
-by 25% on Fam1 (and 26-31% on (3+1)D promotion across three families).
+```bash
+python3 scripts/wave_retardation_velocity_sweep.py --mode all
+```
 
-For an experimental prediction card, the obvious question is: how
-does (M − I) scale with v/c? The candidate scalings are:
+The `normal`, `independent`, and `hostile` modes are also separately
+executable.  The tables below are live output from the repaired code.
 
-- (v/c)^1 → first-order post-Newtonian retardation
-- (v/c)^2 → second-order relativistic corrections
-- (v/c)^0 → saturated, geometry-dominated effect
+**Controlled-result fingerprint:** `73717ea7d1cf5a8c8e88d3d19259d9b9d0b7b7948e0341a6593c4dbed95c53c8`
 
-This lane runs two sweeps:
+## Why the old packet failed
 
-1. **First sweep**: v varied over {0.05, 0.10, 0.15, 0.20, 0.25,
-   0.30, 0.40} with n_active fixed at 20 layers. The trajectory
-   range varies with v.
-2. **Second sweep**: trajectory range fixed at iz: 6 → 0 (always
-   6 cells), velocity varied by varying n_active over {60, 30, 20,
-   15, 12, 10, 8}. The trajectory range is now constant; only the
-   velocity changes.
+The pre-repair runner was replayed before editing.  With the corrected
+discrete-Poisson helper already present on `main`, its first relative-gap
+sweep was
 
-If the first sweep gives a power law and the second sweep gives
-the same power law, the scaling is genuine. If they diverge, the
-"scaling" was a confound between velocity and trajectory geometry.
+`19.22%, 13.49%, 7.19%, 0.79%, 5.92%, 13.75%, 37.16%`,
 
-## First sweep result (range-coupled)
+and its second was
 
-| v/c | iz_end | dM | dI | rel gap |
-| ---: | ---: | ---: | ---: | ---: |
-| 0.05 | 5 | +0.0082 | +0.0164 | **50.1%** |
-| 0.10 | 4 | +0.0085 | +0.0157 | 45.8% |
-| 0.15 | 3 | +0.0088 | +0.0148 | 40.9% |
-| 0.20 | 2 | +0.0089 | +0.0139 | 36.0% |
-| 0.25 | 1 | +0.0089 | +0.0128 | 30.8% |
-| 0.30 | 0 | +0.0085 | +0.0112 | 24.8% |
-| 0.40 | −2 | +0.0076 | +0.0076 | **0.00%** |
+`35.74%, 42.22%, 33.41%, 36.82%, 44.46%, 44.15%, 77.08%`.
 
-The gap **decreases** with v/c, hitting zero at v/c = 0.40. The
-log-log fit gives slope ≈ −2.79, but this is **meaningless**: at
-v/c = 0.40, the source overshoots from iz=6 to iz=−2, an 8-cell
-trajectory that crosses the lattice symmetry point z = 2. M and I
-both give the same averaged response because the trajectory is
-symmetric about the lattice center, **not because of a velocity
-effect**.
+Those live values contradicted both old note tables and their printed slopes,
+zero, sign flip, minimum, and equal-rate comparison.  More importantly, the
+old alleged fixed-trajectory loop changed `NL`, recomputed onset as `NL//3`,
+changed the final measurement layer, and continued moving beyond its nominal
+endpoint.  Some runs overshot cell 0.  Thus it did not hold the advertised
+controls fixed.  The old dated stdout is historical evidence only and is not
+the source for any result below.
 
-This sweep conflated v/c with trajectory range. Its slope is not
-a velocity scaling.
+## Explicit finite carrier
 
-## Second sweep result (trajectory-fixed)
+The carrier is a numerical test object, not a new framework primitive or an
+observable map.
 
-| n_active | v/c | dM | dI | M − I | rel |
+| Quantity | Fixed value |
+| --- | ---: |
+| lattice layers `NL` | 78 (`t = 0,...,77`) |
+| transverse spacing `H` | 0.5 |
+| transverse half-width `PW` | 8 (source-cell boundary at `±16`) |
+| maximum physical hop / angular weight | `MAX_D_PHYS=3`, `BETA=0.8` |
+| source onset | `t = 10` |
+| source start / endpoint | cell `6` / cell `0` |
+| family / geometry seed | Fam1-like `seed=0`, `drift=0.20`, `restore=0.70` |
+| field strength / beam number | `S=0.004`, `K=5.0` |
+| moving field | the helper's finite leapfrog update |
+| instantaneous comparator | discrete Dirichlet Poisson solve at each occupied source cell |
+| SOR controls | `omega=1.8`, tolerance `1e-11`, maximum `20000` iterations |
+| beam detector | intensity centroid on the explicitly named layer |
+| relative-gap denominator | `max(abs(dM), abs(dI))`; undefined if both are at most `1e-10` |
+
+The wave update used here has plane-wave dispersion
+
+```text
+sin^2(omega/2) = H^2 [sin^2(k_y/2) + sin^2(k_z/2)].
+```
+
+Its long-wavelength numerical propagation rate is therefore `H=0.5`
+transverse cells per layer.  The source entries below are schedule rates in
+cells per layer, not fractions of a physical light speed.  They range from
+`0.2` to `1.5` times this numerical long-wavelength rate; the two fastest
+schedules exceed it.  No continuum or laboratory normalization is supplied.
+
+Before onset the schedule returns cell 6 but the source is off.  Let `D` be
+the number of elapsed motion intervals.  The source is on at cell 6 on
+`t=10`, reaches cell 0 on `t=10+D`, and is clamped at cell 0 on every later
+layer.  At an intermediate layer `t`, the cell is
+
+```text
+6 + int(round((-6) * (t - 10) / D))
+```
+
+with elapsed time clamped to `[0,D]`; Python's ties-to-even `round` is part of
+this finite schedule.  There are `D+1` on-trajectory samples, including both
+endpoints.  The source stays strictly inside the `±16` boundary in every run.
+No source boundary crossing occurs.
+
+### Exact trajectory map
+
+Run-length encoding `cell × number-of-sampled-layers` gives every sampled
+position from onset through the endpoint:
+
+| `D` | schedule rate (cells/layer) | endpoint layer | sampled positions | fixed-final buffer | fixed-buffer detector |
+| ---: | ---: | ---: | --- | ---: | ---: |
+| 60 | 0.100 | 70 | `6×6,5×9,4×11,3×9,2×11,1×9,0×6` | 7 | 77 |
+| 30 | 0.200 | 40 | `6×3,5×5,4×5,3×5,2×5,1×5,0×3` | 37 | 47 |
+| 20 | 0.300 | 30 | `6×2,5×3,4×4,3×3,2×4,1×3,0×2` | 47 | 37 |
+| 15 | 0.400 | 25 | `6×2,5×2,4×3,3×2,2×3,1×2,0×2` | 52 | 32 |
+| 12 | 0.500 | 22 | `6×2,5×1,4×3,3×1,2×3,1×1,0×2` | 55 | 29 |
+| 10 | 0.600 | 20 | `6×1,5×2,4×2,3×1,2×2,1×2,0×1` | 57 | 27 |
+| 8 | 0.750 | 18 | `6×1,5×1,4×2,3×1,2×2,1×1,0×1` | 59 | 25 |
+
+This table also exposes a residual discretization change: the dwell counts
+at integer cells necessarily change with `D`.  The realized displacement on
+every elapsed layer is exactly the difference between successive RLE samples,
+so each step is either 0 or -1 cell; no multi-cell jump occurs.
+
+## Constraint fact: what cannot all be fixed
+
+For fixed geometric endpoints,
+
+```text
+D = abs(end - start) / schedule_rate
+measurement_layer = onset + D + post_motion_buffer.
+```
+
+Consequently, varying schedule rate while holding onset and endpoints fixed forces
+`D` to vary.  If the measurement layer is fixed, the propagation buffer must
+vary.  If the buffer is fixed, the measurement layer must vary.  A
+one-dimensional sweep cannot simultaneously hold endpoints, onset, duration,
+buffer, measurement time, and schedule rate fixed while changing schedule rate.  This is a
+narrow parameter-constraint fact, not a statement that no redesigned or
+higher-dimensional experiment can isolate a schedule-rate effect.
+
+## Controlled results
+
+`dM` and `dI` are detector-centroid changes relative to the same free beam.
+`M-I` is signed.  Within every displayed row `dM` and `dI` have the same
+nonzero sign, so no relative-gap denominator is near zero.  Sign reversals
+*between* sweep rows are retained and disclosed below; absolute-value slopes
+must not be read through those reversals as physical exponents.
+
+### A. Fixed final detector layer 77
+
+Onset, endpoints, lattice, carrier geometry, solver controls, and measurement
+layer are fixed.  Schedule rate and duration vary together, and the buffer varies as
+required by the identity above.
+
+| `D` | schedule rate | endpoint | buffer | `dM` | `dI` | `M-I` | relative gap |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 60 | 0.100 | 70 | 7 | -0.007349 | -0.002555 | -0.004794 | 65.24% |
+| 30 | 0.200 | 40 | 37 | -0.009959 | -0.004078 | -0.005881 | 59.05% |
+| 20 | 0.300 | 30 | 47 | -0.009399 | -0.004345 | -0.005054 | 53.77% |
+| 15 | 0.400 | 25 | 52 | -0.008722 | -0.004906 | -0.003816 | 43.75% |
+| 12 | 0.500 | 22 | 55 | -0.009290 | -0.005610 | -0.003680 | 39.61% |
+| 10 | 0.600 | 20 | 57 | -0.009658 | -0.005779 | -0.003880 | 40.17% |
+| 8 | 0.750 | 18 | 59 | -0.010013 | -0.006321 | -0.003691 | 36.87% |
+
+Both `abs(M-I)` and the relative gap are non-monotone.  Their log-log
+diagnostic slopes are respectively `-0.198` and `-0.308`.  Because the data
+are non-monotone and the buffer co-varies, these are shape diagnostics, not
+scaling exponents.
+
+### B. Fixed seven-layer post-motion buffer
+
+Onset, endpoints, lattice, carrier geometry, solver controls, and buffer are
+fixed.  Schedule rate and duration vary together, and the detector layer varies as
+required.
+
+| `D` | schedule rate | endpoint | detector | `dM` | `dI` | `M-I` | relative gap |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 60 | 0.100 | 70 | 77 | -0.007349 | -0.002555 | -0.004794 | 65.24% |
+| 30 | 0.200 | 40 | 47 | +0.010738 | +0.004870 | +0.005868 | 54.65% |
+| 20 | 0.300 | 30 | 37 | +0.011365 | +0.006249 | +0.005115 | 45.01% |
+| 15 | 0.400 | 25 | 32 | +0.008619 | +0.004965 | +0.003654 | 42.40% |
+| 12 | 0.500 | 22 | 29 | +0.006517 | +0.004068 | +0.002448 | 37.57% |
+| 10 | 0.600 | 20 | 27 | +0.005160 | +0.003638 | +0.001523 | 29.51% |
+| 8 | 0.750 | 18 | 25 | +0.003945 | +0.003134 | +0.000811 | 20.55% |
+
+Here `abs(M-I)` is non-monotone while the relative gap is strictly
+decreasing.  Their log-log diagnostic slopes are `-0.844` and `-0.512`.
+The signed response reverses between schedule rates 0.100 and 0.200; no intervening
+zero was located by this sample set.
+The monotone relative-gap curve alone is not a schedule-rate-only scaling law:
+measurement layer/duration still co-vary, the raw difference is non-monotone,
+and the matched counterchecks below show dependence on other finite controls.
+
+### C. Same trajectory and schedule rate, varied buffer
+
+For `D=20`, schedule rate 0.300 cells/layer, onset 10, and trajectory 6 to 0, only the detector
+layer/post-motion buffer changes:
+
+| buffer | detector | `dM` | `dI` | `M-I` | relative gap |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| 60 | 0.10 | +0.0058 | **−0.0030** | +0.0088 | **151.5%** (sign flip) |
-| 30 | 0.20 | +0.0126 | +0.0139 | −0.0013 | 9.4% |
-| 20 | 0.30 | +0.0106 | +0.0114 | −0.0008 | 7.1% |
-| 15 | 0.40 | +0.0074 | +0.0077 | −0.0003 | **3.8% (minimum)** |
-| 12 | 0.50 | +0.0058 | +0.0052 | +0.0006 | 10.3% |
-| 10 | 0.60 | +0.0050 | +0.0039 | +0.0011 | 21.1% |
-| 8 | 0.75 | +0.0036 | +0.0012 | +0.0024 | 66.6% |
+| 4 | 34 | +0.010995 | +0.006776 | +0.004219 | 38.37% |
+| 7 | 37 | +0.011365 | +0.006249 | +0.005115 | 45.01% |
+| 12 | 42 | +0.010451 | +0.005398 | +0.005053 | 48.35% |
+| 20 | 50 | +0.004773 | +0.002336 | +0.002437 | 51.06% |
+| 47 | 77 | -0.009399 | -0.004345 | -0.005054 | 53.77% |
 
-The gap is **non-monotonic** in v/c: it has a minimum near v/c ≈ 0.4
-(3.8%), grows on both sides, and even **flips sign** at very low
-velocity (n_active = 60, where the instantaneous comparator gives a
-sign-flipped dI of −0.003).
+The output therefore depends on the measurement/buffer choice even with the
+source schedule and schedule rate fixed.  The signed response also reverses somewhere
+between the sampled buffers 20 and 47; this scan does not locate a zero.
 
-The log-log fit gives slope ≈ −0.51, but this is also **meaningless**
-because the relationship is not a power law.
+### D. Same schedule rate and timing, shifted trajectory geometry
 
-## Three findings that block the lab card
+At schedule rate 0.300 cells/layer, `D=20`, onset 10, detector 37, and buffer 7:
 
-### 1. The Lane 6 25% number is configuration-specific
+| source path | `dM` | `dI` | `M-I` | relative gap |
+| --- | ---: | ---: | ---: | ---: |
+| cell 6 to cell 0 | +0.011365 | +0.006249 | +0.005115 | 45.01% |
+| cell 8 to cell 2 | +0.015095 | +0.010550 | +0.004545 | 30.11% |
 
-At v/c = 0.30 the original Lane 6 reported `M − I = 25%`. The
-trajectory-fixed sweep at v/c = 0.30 gives **7.1%**, three times
-smaller. The original lane had a specific combination of `(NL=30,
-n_active=20, src_layer=10, iz_start=6, iz_end=0)`. Other
-parameterizations of the same v/c give different gaps.
+The same displacement, schedule rate, duration, buffer, and measurement layer do not
+give the same output after shifting the path in the finite transverse grid.
+This is a finite geometry counterexample to a schedule-rate-only reading.
 
-The 25% gap is real but it is **a point measurement**, not a robust
-prediction of "wave-retardation gives a 25% deviation from
-instantaneous Newton at v/c = 0.30."
+## Independent and hostile evidence
 
-### 2. There is no clean v/c power law
+The independent mode reconstructs the seeded carrier, schedules, leapfrog
+history, beam propagation, and detector readout as array operations without
+calling the helper implementation.  It uses a factorized sparse-direct
+Dirichlet Poisson solve instead of the normal SOR route.  It recomputes the
+fixed-buffer `D=60,20,8` subset without importing result tables and agrees
+within `3e-8` in `dM` and `dI`.
 
-Both sweeps give numerically meaningful slopes (−2.79 and −0.51)
-but neither is a true scaling exponent — the first is dominated by
-trajectory-range effects, the second is non-monotonic. Lab
-extrapolation by power law is invalid.
+The hostile mode contains eight executable evidence objects.  It requires
+fail-closed detection of continued post-endpoint motion, moving onset,
+changing lattice size, and changing a purportedly fixed detector layer.  It
+also compares every formatted table row and the live numerical fingerprint to
+this note, verifies the exact runner and helper SHAs, cache status, and cached fingerprint,
+rejects the superseded table fragments, exercises zero and opposite-sign
+denominators, guards against power-law/lab-observable rhetoric, and mutates
+the load-bearing equal-rate geometry comparison.  During cache creation the
+guard recognizes the cache tool's in-progress log; a mandatory post-refresh
+hostile replay then requires the completed exact-SHA cache.
 
-### 3. The simulation-length and source-onset confound the gap
+Evidence counts emitted by `--mode all` are:
 
-The trajectory-fixed sweep varies NL = src_layer + n_active + buffer.
-That means the total beam propagation length and the source onset
-time both change with v/c. The gap is sensitive to all three —
-v/c, n_active, and total NL — and the harness as written cannot
-disentangle them in a single 1D sweep.
+- normal: 21 displayed finite measurement rows, representing 20 unique
+  measurements because the `D=20`, buffer-7 row appears in two controlled
+  surfaces;
+- independent: 3 separately reconstructed numerical records;
+- hostile: 8 mutation or prose/data guards.
 
-A clean velocity scaling would require fixing NL, n_active,
-source onset, AND trajectory range, while varying only v. That is
-**not possible in a single parameter sweep** because n_active = (range / v),
-so v and n_active are inversely related when range is fixed.
+## Current-cycle N1-N8 evidence
 
-## Why a naïve lab card is meaningless
+### N1 — normalized real alternative routes
 
-Both sweeps' "lab extrapolation" tables predict absurd numbers
-(rel_gap ≈ 10²¹ at cold-atom scales, etc.) because they assume a
-power law that doesn't exist. The honest lab translation is:
+The current cycle marks the following routes `ATTEMPTED`: fixed-final detector
+(`R3`), fixed post-motion buffer (`R4`), fixed-trajectory buffer scan (`R5`),
+equal-rate shifted path (`R6`), and a separate array/sparse-direct numerical
+implementation (`R7`).  Each route has a printed numerical outcome and a
+named residual control.  The historical replays `R1` and `R2` are no-go
+memory, not support for the current result.  Continuum refinement and an
+independent laboratory-observable bridge are `UNTESTED` and excluded from the
+bounded conclusion.
 
-- The model has a (3+1)D wave equation with finite c
-- The model has retarded gravitational interaction at the lattice scale
-- The dimensionless ratio (M − I) / max(|M|, |I|) at the lattice
-  scale is **configuration-dependent**, ranging from ~4% to >150%
-  across the swept parameter set
-- **No simple scaling translates the lattice prediction to lab v/c**
-- A clean lab card requires either:
-  - A continuum-limit analysis (H → 0, NL → ∞) where lattice
-    artifacts vanish and a genuine v/c dependence emerges
-  - A redesigned harness with independent controls for v, NL,
-    n_active, and trajectory range
-  - A direct identification of which dimensionless lattice ratio
-    maps to which lab observable, with the mapping validated
-    against a known physical limit
+### N2 — independently shown walls only
 
-None of these are short lanes. Each is a substantial new piece of
-work.
+The exact timing identity proves only the necessary duration/buffer/measurement
+coupling.  The buffer scan independently shows finite readout-time dependence;
+the shifted pair independently shows finite absolute-geometry dependence.
+Neither wall implies the other.  A broader physical conclusion would also
+require a controlled continuum construction and an observable bridge, but
+those are open routes rather than inflated conclusions from these finite
+walls.
 
-## What this does NOT undermine
+### N3 — hidden-assumption scan
 
-The flagship wave-equation physics is **completely unaffected**:
+The result imports the finite leapfrog stencil, Dirichlet transverse boundary,
+point-source coupling, integer-cell rounding, stationary endpoint clamp,
+Fam1-like grown-DAG realization, path-sum beam propagation, centroid readout,
+discrete Poisson comparator, SOR tolerance, sparse-direct residual threshold,
+and the chosen source/detector schedule.  None is derived from the minimal
+axioms in this packet.  There is no empirical calibration, physical speed,
+physical phase map, continuum selector, or universal observable map.
 
-- **Lane 4** (Poisson 3D static gravity, F~M = 0.9999): static, no v/c
-- **Lane 5** (lightcone): strict `first_dt = r`, independent of v/c
-- **Lane 6** (retarded ≠ instantaneous, single point): *exists* at the
-  Fam1/2/3 v/c = 0.30 configuration; the existence is not in question
-- **Lane 7** ((2+1)D radiation slope −0.47): independent of source motion
-- **Lane 8** ((3+1)D radiation slope −1.14): independent of source motion
-- **Lane 8b** ((3+1)D lightcone + retarded ≠ instantaneous): the
-  retardation existence at v/c = 0.23 is also not in question
+### N4 — residual matching
 
-What is in question is **only the lab translation** of the Lane 6 /
-Lane 8b retardation result. The lane shows the wave equation
-qualitatively has retarded gravity (M ≠ I in some regime), but the
-quantitative claim "the gap is X% at v/c = Y" is not robust enough
-to extrapolate to lab values without further work.
+The stale legacy tables and the old confounded schedule attack source
+integrity and experimental design; they do not prove the repaired bounded
+conclusion and are dropped as support.  The bounded conclusion instead rests
+on the fresh controlled rows, exact timing identity, matched finite pairs, and
+independent reconstruction.  It remains lattice- and schedule-specific and
+does not rule out a continuum scaling, another discretization, a factorial
+design with more independent degrees of freedom, or a physical model with a
+supplied observable map.
 
-## Frontier map adjustment (Update 8)
+### N5 — five resolution surfaces
 
-| Row | Update 7 (post second-order Kubo) | This lane |
-| --- | --- | --- |
-| Strength against harshest critique | first-order Kubo on linearity regime | unchanged |
-| Compact underlying principle | bounded at 15/41 by Taylor approach | unchanged |
-| Theory compression | second-order does NOT extend | unchanged |
-| **Experimental prediction card** | open | **NEGATIVE — lab card blocked by configuration dependence; not a v/c scaling** |
-| Wave-retardation flagship physics | retained (Lanes 6, 8b) | **unchanged** (existence holds, only lab translation blocked) |
+- per-element: the rounded cell at every source layer is specified;
+- per-site: all source cells are interior to the `±16` boundary;
+- per-mode: no Fourier/mode-resolved scaling was computed, so no mode claim is
+  made;
+- per-block: the named moving-field/comparator/beam block is evaluated in the
+  four controlled surfaces;
+- lattice-wide: only the stated detector-layer centroid is read out.
 
-## What to attack next
+### N6 — partial controlled closures and primitive check
 
-This lane closes the "easy lab card" path. Three remaining moves:
+Fixed final time closes measurement-time drift but leaves buffer coupled to
+duration.  Fixed buffer closes buffer drift but leaves measurement time
+coupled.  Equal-rate shifted geometry closes schedule rate/timing but changes
+absolute path location.  The buffer scan closes the full source schedule but
+changes readout time.  Their intersection supports the bounded conclusion and
+nothing stronger.  The approved primitives do not supply a wave carrier,
+continuum selector, or observable map, and this packet requires no new axiom;
+redesigned factorial, continuum, and observable-bridge routes remain open.
 
-1. **Continuum-limit analysis of the wave-retardation gap** — take
-   H → 0, NL → ∞ at fixed physical parameters, see whether a clean
-   v/c scaling emerges in the limit. Substantial new lane.
-2. **Non-perturbative full path-sum / resummation** for the
-   classifier-failing families — the user's named "right next
-   theory move." Independent of the lab card.
-3. **Born preservation derivation** — small one-line proof that
-   adds a third battery condition to the derivation column.
+### N7 — strongest steelman
 
-The continuum-limit analysis (1) is the natural follow-on to this
-negative because it directly addresses the configuration dependence
-that blocks the lab card. The non-perturbative path-sum (2) and the
-Born derivation (3) are orthogonal — they advance the theory column
-but not the experimental column.
+The strongest live counterargument is that the fixed-buffer relative gap is
+monotone across all seven schedule rates and might become part of a physical
+model after measurement time is controlled independently.  That observation
+does not defeat the narrower result here: measurement time co-varies in this
+surface, the raw difference is non-monotone, and the matched buffer and
+geometry routes show that the current residual-coupled rows do not identify a
+schedule-rate-only law.  A preregistered factorial design remains an open
+discriminator rather than a result of this packet.
 
-## Honest read
+### N8 — retired-wall and cross-cycle check
 
-The experimental prediction card is **blocked**. The wave-retardation
-result exists at the lattice scale but its v/c dependence is
-configuration-dependent and non-monotonic, so simple extrapolation
-to lab v/c values is invalid. Both sweeps in this lane gave
-numerically clean fits that turned out to be artifacts of the
-sweep parameterization.
+The prior version of this row was retired after its replay exposed stale
+tables, moving controls, and an unclamped endpoint.  This cycle does not reuse
+that failed wall as support: it repairs the controls and narrows the claim to
+fresh common finite facts.  Similar finite-surrogate and missing-observable
+walls elsewhere in the repository remain open; the already named reopening
+mechanisms are a redesigned factorial harness, controlled continuum
+refinement, and an independently validated observable bridge.  No approved
+primitive or convention reviewed in this cycle retires those mechanisms.
 
-This is the **right kind of negative** to retain: it stops the
-program from writing an over-claiming lab card, identifies exactly
-why the simple translation fails, and points to the specific
-follow-on (continuum limit) that would unblock it.
+## Boundary and dependency disposition
 
-## Bottom line
+This row does not inherit or certify finite-c propagation, retarded gravity,
+the old single-point magnitude, or any other wave lane.  Such claims require
+their own sources.  Conversely, this packet supplies no premise to the
+continuum-limit or retarded-gravity notes; their independent science must
+stand on their own runners and sources.
 
-> "Two velocity sweeps on the wave-retardation lane (range-coupled
-> and trajectory-fixed) show that the M − I gap is configuration-
-> dependent and non-monotonic in v/c. The first sweep's apparent
-> scaling exponent of −2.79 conflated velocity with trajectory range.
-> The trajectory-fixed sweep gives a non-monotonic gap with a
-> minimum near v/c ≈ 0.4 (3.8%) and sign flips at extreme parameters.
-> The original Lane 6 25% gap is a point measurement specific to its
-> (NL, n_active, src_layer) configuration; the trajectory-fixed
-> sweep at the same v/c = 0.30 gives 7.1%, three times smaller.
-> No simple v/c power law extrapolates the lattice result to lab
-> velocities. The experimental prediction card is blocked until a
-> continuum-limit analysis or a redesigned harness with independent
-> controls for v, n_active, and total NL is built. The flagship
-> wave-equation physics (Lanes 4–8b) is unaffected; only the lab
-> translation is blocked."
+The numerical carrier is not promoted to an axiom, admission, primitive,
+physical input, empirical value, dependency authority, selector, or observable
+map.  The table entries are only source schedule rates in cells per layer.
+They are not normalized to a physical propagation constant or calibrated to a
+laboratory speed.
+
+An immutable generated front-door file may continue to list this claim until
+publication governance is refreshed by its own process.  That listing is not
+a conclusion of this note and was not edited in this repair.
+
+## Strongest honest conclusion
+
+The named finite computations fail to supply one monotone schedule-rate-only power
+law or a unique laboratory card.  The fixed-final surface is non-monotone, the
+fixed-buffer raw difference is non-monotone, and finite matched pairs establish
+dependence on buffer/readout time and absolute trajectory location.  A
+monotone relative-gap curve on one residual-coupling surface is reported as a
+diagnostic, not promoted into a scaling exponent.
+
+No statement is made about a continuum limit, a redesigned harness, a
+universal retardation mechanism, or any laboratory observable.

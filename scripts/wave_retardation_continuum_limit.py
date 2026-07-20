@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Continuum-limit refinement of the wave-retardation gap.
 
-The previous lab-card lane (wave_retardation_velocity_sweep.py) showed
-that the Lane 6 / Lane 8b 25-30% retardation gap is configuration-dependent
-and does not have a clean v/c power law. The two specific blockers were:
-  - The gap depends on n_active, NL, source-onset, and trajectory range
-    in ways that don't reduce to a single physical scaling
-  - Different parameterizations of the same nominal v/c give wildly
-    different gaps
+An earlier version of the lab-card runner
+(`wave_retardation_velocity_sweep.py`) motivated this lane with magnitude and
+velocity-scaling claims that are no longer sourced by the repaired runner.
+The repaired finite packet instead records residual timing constraints and
+matched dependence on non-velocity controls.  This continuum runner's claims
+must therefore stand on its own computation rather than inherit the old lab
+packet.
 
 This lane tests whether those configuration-dependence problems are
 **lattice artifacts that vanish in the continuum limit**.

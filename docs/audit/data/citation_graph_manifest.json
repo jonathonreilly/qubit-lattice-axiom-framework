@@ -1,5 +1,5 @@
 {
- "edge_count": 14866,
+ "edge_count": 14864,
  "node_count": 4432,
  "nodes": {
   "3d_correction_master_note": {
@@ -15067,16 +15067,16 @@
    "out_degree": 0
   },
   "wave_retardation_continuum_limit_note": {
-   "deps_hash": "b71cd60aae5b",
-   "out_degree": 1
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "wave_retardation_lab_prediction_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
   "wave_retarded_gravity_note": {
-   "deps_hash": "88cba87975ba",
-   "out_degree": 5
+   "deps_hash": "653b357e67dd",
+   "out_degree": 4
   },
   "wave_static_boundary_sensitivity_note": {
    "deps_hash": "e3b0c44298fc",

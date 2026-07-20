@@ -330,7 +330,7 @@ gate("B6.2",
      np.max(np.abs(K_iI + iI)) < 1e-12
      and np.max(np.abs(S_iI - iI)) < 1e-12
      and np.max(np.abs(K_iI - S_iI)) > 0.5,
-     "[STRUCTURAL] antilinear K conjugates i (iI -> -iI); linear S_eps preserves it (iI -> +iI); opposite action")
+     "[FLOAT SANITY][STRUCTURAL] antilinear K conjugates i (iI -> -iI); linear S_eps preserves it (iI -> +iI); opposite action")
 s6a = float(np.max(np.abs(Seps.astype(float) @ Jfullf @ Seps.astype(float) + Jfullf)))
 s6b = float(np.max(np.abs(Seps.astype(float) @ Jaltf @ Seps.astype(float) + Jaltf)))
 gate("B6.3", s6a < 1e-9 and s6b < 1e-9,

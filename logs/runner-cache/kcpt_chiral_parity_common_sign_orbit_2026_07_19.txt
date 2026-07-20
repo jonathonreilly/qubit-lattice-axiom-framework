@@ -31,7 +31,7 @@
 [B5.1] PASS - S_eps A_m S_eps == -A_m for m=1,2,3 (every bulk carrier flipped)
 [B5.2] PASS - rejector: S_eps does NOT fix A_1
 [B6.1] PASS - EXACT: every additive piece of J_full flips (J_ker and each A_m) => S_eps J_full S_eps = -J_full
-[B6.2] PASS - [STRUCTURAL] antilinear K conjugates i (iI -> -iI); linear S_eps preserves it (iI -> +iI); opposite action
+[B6.2] PASS - [FLOAT SANITY][STRUCTURAL] antilinear K conjugates i (iI -> -iI); linear S_eps preserves it (iI -> +iI); opposite action
 [B6.3] PASS - [FLOAT SANITY] S_eps J_full S_eps == -J_full and S_eps J_alt S_eps == -J_alt (res 0.0e+00,0.0e+00)
 [B7.1] PASS - S_eps NOT in G_amb (anticommutes with D2; excluded from the D2-commutant)
 [B7.2] PASS - S_eps normalizes G_amb: S_eps g S_eps in G_amb for all 768 g

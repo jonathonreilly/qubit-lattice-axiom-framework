@@ -184,7 +184,7 @@
     "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md": "c3e0b9162170f5e87e486f9d34068114d1d56b2f80db5c57df7ff7536820a93e",
     "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md": "9373dd8a9c8275b2b86e075a84d0ebe8621d3e39f52895f0b9ef406ee3d082ad",
     "scripts/d3_bar_location_engine_ext_2026_07_10.py": "71189dad66e4427673a4a83ad216c122cbc461b0353086c105762e3d81e6cb27",
-    "scripts/d3_bar_window_measurement_2026_07_11.py": "63cbd32e9a889d366df5b56dadc9ded5d928b1bc009611eecbf94a03d5aaa97d",
+    "scripts/d3_bar_window_measurement_2026_07_11.py": "b11077be706ae3d74b779319362a793ce7a73bd8ee05fb331d8fa4ab40b21d29",
     "scripts/d3_cubic_orbit_engine_2026_07_09.py": "4eb603fc229bc441ef254e9edc04c1cfeec1fe221be4a1af82fcee24f30bd60b"
   },
   "schema": "d3-bar-window-committed-evidence-v1"

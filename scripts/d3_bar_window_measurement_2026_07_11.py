@@ -3494,13 +3494,12 @@ def run_report() -> int:
     lines = _six_output_lines(result, identity)
     if prior_report is not None and prior_report.get("stdout_lines") != lines:
         raise RuntimeError("regenerated report is not byte-equivalent to report cache")
-    _write_report_cache(
-        identity=identity,
-        basis_checksum=basis_checksum,
-        lookup_checksum=lookup_checksum,
-        result=result,
-        lines=lines,
-    )
+    # Report mode is the audit-runner entry point.  It must remain read-only:
+    # writing REPORT_CACHE_PATH here changes the declared-input directory while
+    # the runner-cache orchestrator is authenticating it.  Full generation owns
+    # the optional local report artifact; report mode only verifies it when one
+    # is already present and regenerates the six stdout lines from committed
+    # evidence.
     for line in lines:
         print(line)
     return int(result["exit_code"])

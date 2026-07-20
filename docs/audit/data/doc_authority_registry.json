@@ -130,6 +130,30 @@
       "class": "F",
       "status": "landed",
       "note": "Plain-language orientation memo: ratified backbone vs landed-but-unaudited frontier vs open walls, with an edge-free orientation map (no derivation semantics). No premise or interpretive weight; citable for orientation and scope discipline only; excluded from the citation graph per class-F policy; status words dated to the ledger state they quote; the ledger is authoritative."
+    },
+    {
+      "path": "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
+      "claim_id": "sm_relativistic_dof_count_import_note_2026-05-17",
+      "class": "C",
+      "status": "landed",
+      "authority_role": "scope_pinned_external_physical_input",
+      "pre_audit_premise_weight": "none",
+      "external_authorities": [
+        {
+          "id": "husdal_2016_galaxies_4_78",
+          "primary_locator": "https://doi.org/10.3390/galaxies4040078",
+          "secondary_locator": "https://arxiv.org/abs/1609.04979",
+          "exact_item": "Table 1; Sections 3, 4.4, 4.5",
+          "supplies": "minimal-Standard-Model inventory degeneracies, totals 28 bosonic and 90 fermionic states, and the ultrarelativistic equilibrium thermal interpretation"
+        },
+        {
+          "id": "giovannini_astro_ph_0703730",
+          "primary_locator": "https://arxiv.org/abs/astro-ph/0703730",
+          "exact_item": "Appendix B.4, pp. 159-160, Eqs. B.40-B.43",
+          "supplies": "independent factorized counts 72 quark, 18 lepton, 28 bosonic, 90 fermionic, and g_rho = g_s = 106.75 in the electroweak-symmetric equilibrium scope"
+        }
+      ],
+      "note": "Runner-carried, scope-pinned external physical-input bridge plus exact finite arithmetic for the ideal-gas high-temperature minimal-Standard-Model inventory. Registration supplies no premise weight before independent audit and does not make the inventory framework-derived."
     }
   ]
 }

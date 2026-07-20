@@ -1,0 +1,23 @@
+loop_slug: sm-relativistic-dof-count-import-closure
+mode: run
+target_claim_id: sm_relativistic_dof_count_import_note_2026-05-17
+target_status: best-honest-status
+actual_current_surface_status: exact-support
+cycle_count: 1
+block_count: 1
+active_route: registered-class-c-literature-bridge-in-same-note
+hard_residual: independent audit of the registered scope and external source items
+files_touched:
+  - docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
+  - docs/audit/data/doc_authority_registry.json
+  - scripts/frontier_sm_relativistic_dof_finite_inventory.py
+  - logs/runner-cache/frontier_sm_relativistic_dof_finite_inventory.txt
+open_imports: []
+no_go_routes:
+  - generic admission registry forbidden by current authority policy
+  - full framework derivation not available from retained one-hop dependencies
+trace_gate: direct_blocker_closure
+review_disposition: passed_after_fixes
+pr_status: pending_review
+next_exact_action: package the reviewed science block for independent audit
+stop_condition: independent-review-ready bounded physical-input bridge and passing runner

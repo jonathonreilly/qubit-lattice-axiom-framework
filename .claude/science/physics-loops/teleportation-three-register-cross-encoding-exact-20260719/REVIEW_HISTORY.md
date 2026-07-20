@@ -29,3 +29,6 @@
   remains pending for the independent review process.
 - No audit-loop or audit-verdict application was run; audit-owned generated
   surfaces are unchanged.
+- Delivery verification: ready PR #5539 is open with base `main`, exact base
+  commit `81ef8341b11de9c9f984bd75dbac5605297221fa`, and clean merge state at
+  creation.

@@ -19,7 +19,7 @@ no_go_routes:
   - random_state_trials_as_input_space_proof
 trace_gate_classification: direct_blocker_closure
 review_disposition: not_run_by_author
-pr_status: ready_for_creation
-pr_url: null
-next_exact_action: "Commit the verified source block, push the codex branch, and open a ready PR against main."
+pr_status: open_ready
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5539"
+next_exact_action: "Run independent review on PR #5539; after landing, route the changed source claim through independent audit."
 stop_condition: "The source/cache/packet are current on the coordinated main tip and a ready PR is open for independent review."

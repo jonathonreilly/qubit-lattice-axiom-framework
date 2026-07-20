@@ -1,5 +1,5 @@
 # PR Backlog
 
-No delivery failure is currently recorded. The branch is being prepared for a
-ready PR against `main`. If delivery fails, record the exact remote branch,
-base, error, and recovery command here without changing the science result.
+No delivery failure is recorded. Ready PR
+[#5539](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5539)
+is open from `codex/recover-teleportation-cross-encoding-20260719` to `main`.

@@ -6,6 +6,8 @@ Branch: `codex/recover-teleportation-cross-encoding-20260719`, reconstructed
 from coordinated `main` commit
 `81ef8341b11de9c9f984bd75dbac5605297221fa`.
 
+Ready PR: [#5539](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5539).
+
 The source note and runner now replace sampled-triple completeness with an
 exact factorized logical proof. The geometry-dependent certificate checks all
 131 default encoding isometries and Pauli pairs; the geometry-independent
@@ -19,5 +21,5 @@ preparation, transport, noise, durable-record, matter-transfer, or physical
 teleportation claim. No audit verdict was authored or applied, and
 independent review/audit remain required.
 
-Next exact action: review the ready PR, then route the changed claim through
-the repository's independent audit process after landing.
+Next exact action: run independent review on PR #5539, then route the changed
+claim through the repository's independent audit process after landing.

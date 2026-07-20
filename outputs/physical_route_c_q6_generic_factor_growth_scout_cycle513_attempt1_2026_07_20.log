@@ -1,0 +1,21 @@
+{"audit":"unset","authority":"none","deletion_variants_executed":0,"dense_X_or_Y_constructed":false,"error":"axis1 frozen prefix or geometry equivalence failed","error_type":"RuntimeError","held_rows_executed":0,"joint_species_Schmidt_core_constructed":false,"joint_species_Schmidt_rank_computed":false,"mode":"factor-growth-scout","occupation_or_bond_fields_emitted":0,"packed_joint_constructed":false,"post_collision_update3_mediator_stream_executed":false,"refit":false,"response_rows_executed":0,"response_values_emitted":0,"revision":1,"science_rows_executed":0,"selector":false,"state_hashes_emitted":0,"status":"fail-closed-exception"}
+real 63.70
+user 62.13
+sys 0.46
+           159645696  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               43342  page reclaims
+                 355  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1575  voluntary context switches
+               90770  involuntary context switches
+        928912268036  instructions retired
+        218289640170  cycles elapsed
+           177160792  peak memory footprint

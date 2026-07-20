@@ -1,0 +1,103 @@
+{
+  "schema": "cycle513-route-c-q6-generic-factor-growth-attempt1-receipt-v1",
+  "status": "factor-growth-scout-attempt1-failed-closed-axis1-compound-fixture-mismatch",
+  "pass": false,
+  "authority": "none",
+  "audit": "unset",
+  "source": {
+    "runner_path": "scripts/physical_route_c_q6_generic_factor_growth_preflight_cycle513_2026_07_20.py",
+    "runner_sha256": "84ccd28c0ef428a851d0f9328ba7988c13a59ac1627d218e1ca9b9ee0b01a297",
+    "dry_transcript_path": "outputs/physical_route_c_q6_generic_factor_growth_preflight_cycle513_2026_07_20.log",
+    "dry_transcript_sha256": "e6c92ffb2158230afcb755bc7ad987c25f0eefa83aa444eb4bcbd5c3566fb762",
+    "dry_transcript_exit_code": 0,
+    "attempt1_transcript_path": "outputs/physical_route_c_q6_generic_factor_growth_scout_cycle513_attempt1_2026_07_20.log",
+    "attempt1_transcript_sha256": "e4ac928931cdd77445a690e767b64e56b70118f12a467e667c8c3e5fc35d5cd7",
+    "attempt1_transcript_exit_code": 1,
+    "upstream_Cycle512_evidence": {
+      "runner_path": "scripts/physical_route_c_q6_factorized_resource_scout_cycle512_2026_07_20.py",
+      "runner_sha256": "d90525f7c25c92762851ac07b9ea58c28123c378fd0fdea6ce3ab565108834fe",
+      "raw_transcript_path": "outputs/physical_route_c_q6_factorized_resource_scout_cycle512_2026_07_20.log",
+      "raw_transcript_sha256": "203a24590329119b44ce13f2c3c39581f011457cd4db217e62c3f985ea840f67",
+      "typed_receipt_path": "outputs/physical_route_c_q6_factorized_resource_scout_cycle512_receipt_2026_07_20.json",
+      "typed_receipt_sha256": "40de95deab66e3d32113d1f91cb14d9a1ac92e96fc7cae27b2ea87c56980b983",
+      "note_path": "docs/work_history/repo/review_feedback/PHYSICAL_ROUTE_C_Q6_FACTORIZED_RESOURCE_SCOUT_CYCLE512_NOTE_2026-07-20.md",
+      "note_sha256": "f027e124f71450e3d24c9961b74c8445129621c52a1c2ea473a03ab7aef28506"
+    }
+  },
+  "dry_contract": {
+    "status": "cycle513-generic-factor-growth-contract-ready",
+    "pass": true,
+    "tests_passed": 9,
+    "tests_total": 9,
+    "global_amplitude_states_evolved": 0,
+    "factor_growth_scout_executed": false,
+    "science_rows_executed": 0,
+    "response_rows_executed": 0,
+    "held_rows_executed": 0,
+    "response_values_emitted": 0,
+    "state_hashes_emitted": 0
+  },
+  "authorized_attempt1": {
+    "single_authorized_invocation_consumed": true,
+    "authorization_token_recorded_in_receipt": false,
+    "mode": "factor-growth-scout",
+    "process_exit_code": 1,
+    "runner_status": "fail-closed-exception",
+    "runner_pass": false,
+    "error_type": "RuntimeError",
+    "error": "axis1 frozen prefix or geometry equivalence failed",
+    "failure_classification": "axis1 compound frozen-prefix-or-geometry fixture mismatch",
+    "exact_failing_compound_subcondition_emitted": false,
+    "elapsed_seconds": 63.70,
+    "user_cpu_seconds": 62.13,
+    "system_cpu_seconds": 0.46,
+    "maximum_RSS_bytes": 159645696,
+    "process_swap_count": 0,
+    "resource_limit_reached": false,
+    "control_flow_only": {
+      "axis0_iteration_reached_completion_before_axis1": true,
+      "basis": "the frozen loop can enter the axis1 compound gate only after the axis0 iteration returns past its prefix, geometry, factor-growth, and Gram checks",
+      "axis0_component_row_emitted_in_failure_payload": false,
+      "axis0_component_row_retained": false,
+      "axis0_result_recoverable_from_attempt1_transcript": false,
+      "axis0_implication_is_science_evidence": false,
+      "axis1_factor_growth_entered": false,
+      "all_axis_factor_growth_completed": false
+    }
+  },
+  "quarantine": {
+    "science_rows_executed": 0,
+    "response_rows_executed": 0,
+    "held_rows_executed": 0,
+    "response_values_emitted": 0,
+    "occupation_or_bond_fields_emitted": 0,
+    "state_hashes_emitted": 0,
+    "deletion_variants_executed": 0,
+    "selector": false,
+    "refit": false,
+    "packed_joint_constructed": false,
+    "dense_X_or_Y_constructed": false,
+    "post_collision_update3_mediator_stream_executed": false,
+    "joint_species_Schmidt_core_constructed": false,
+    "joint_species_Schmidt_rank_computed": false
+  },
+  "diagnosis": {
+    "status": "strongest-cause-likely-but-unproven",
+    "strongest_current_cause": "an axis0-derived machine-exact zero/nonzero support fixture likely changed under axis1 floating-point accumulation order",
+    "cause_proven": false,
+    "reason_unproven": "the runner raised on a compound prefix-or-geometry predicate and did not emit its individual subconditions or axis1 observed support row",
+    "route_geometry_or_local_algebra_failure_established": false,
+    "rerun_authorized": false,
+    "old_single_invocation_may_be_reused": false
+  },
+  "scientific_disposition": {
+    "science_result": false,
+    "completed_update3_result": false,
+    "all_axis_factor_growth_result": false,
+    "resource_obstruction": false,
+    "substrate_obstruction": false,
+    "axiom_pressure": false,
+    "impossibility_claim": false,
+    "interpretation": "Attempt 1 is fail-closed implementation/control evidence only. It neither validates nor falsifies the physical compiler route."
+  }
+}

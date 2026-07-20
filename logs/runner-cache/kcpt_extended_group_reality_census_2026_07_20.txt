@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_extended_group_reality_census_2026_07_20.py
+runner_sha256: 93aebf06fefc4f25172e6042e936588ca2e47f713e36797b4115be9dc3a5e9ef
+input_fingerprint_sha256: bf54f35fb9ea467695a0449da5b1e6e55255988a79424b07a38008e53eea639d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 24.50
+status: ok
+----- stdout -----
+PASS G-CONSTRUCT-J2 - [FLOAT] independent rebuild J_full^2 = -I_64 (||J^2+I||=4.4e-16<1e-9, well within spec's <0.13), antisymmetric (||J+J^T||=0.0e+00<1e-9): shell/kernel machinery, no sign proxy
+PASS G-CONSTRUCT-PROXY - ANTI-PROXY REJECTOR: the sqrt(m)->1 rational stand-in (/2.0 for /(2 sqrt m)) FAILS J^2=-I (||J_proxy^2+I||=0.625~0.6, >0.1) and differs from J_full (0.126>1e-6): the shell normalizers are load-bearing
+PASS G-CONSTRUCT-SEPS - S_eps J_full S_eps = -J_full [FLOAT] (||.+J||=0.0e+00<1e-9), REJECTOR != +J_full (||.-J||=0.748>1e-6); and EXACT integer S_eps D2 S_eps = -D2 (!= +D2): S_eps carries W <-> H_-
+PASS G-DECOMP-IDEM - [FLOAT] all six P6 idempotent: max||P^2-P||=4.0e-16<1e-8
+PASS G-DECOMP-COMPLETE - [FLOAT] the six P6 tile the identity: ||Sum P6 - I_64||=1.8e-15<1e-8
+PASS G-DECOMP-RANKS - integer ranks sorted [8, 8, 12, 12, 12, 12]==[8,8,12,12,12,12] summing to 64==64; REJECTORS !=[8,8,12,12,24] (unsplit real-12) and !=[4,4,6,6,12,32] (holomorphic-only, no CP-completion)
+PASS G-FSGROUP-COMM - PRECONDITION (else the FS group-sum is void): every P_i commutes with every H generator, max||[P_i, R(gen_H)]||=2.8e-14<1e-8
+PASS G-FSGROUP-FS - METHOD A group-sum FS_i = tr(P_i . T), T = mean_H h@h: FS_group.real = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0] all == +1.0 (|.-1|<1e-6), max|Im| 2.0e-31<1e-6 -- all six REAL/orthogonal type
+PASS G-FSFORM-CP - METHOD B symmetric-form min-sv (CP-completed) = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0] all >1e-6 (~1.0): B(u,v)=u^T v nondegenerate on every CP-completed block -> +1
+PASS G-FSFORM-WONLY - BUILT-IN W-ONLY REJECTOR (W totally B-isotropic): form min-sv on holomorphic-only PW[k] (k=0..3, complex-type) = ['2.7e-16', '6.6e-16', '2.1e-16', '8.3e-17'] all <1e-6, while CP-completed all >1e-6 -- reality is CAUSED by the S_eps CP-doubling, not assumed
+PASS G-AGREE - methods A and B AGREE on all six (A=[1, 1, 1, 1, 1, 1], B=[1, 1, 1, 1, 1, 1], both all +1); no constituent complex-type (all |FS_group|=1: min 1.0000) and none symplectic (no -1: min Re 1.0000>0)
+PASS G-REALCHAR - chi_i(h) = tr(P_i h) REAL over all 1536 h in H: max_h|Im chi_i(h)| over the six constituents = 5.5e-15<1e-9 -- self-dual/real-type directly
+PASS G-REALIFY-BEFORE - BEFORE census over G_amb on the FIVE holomorphic PW (ranks 4,4,6,6,12): FS_G sorted [0, 0, 0, 0, 1]==[0,0,0,0,1] (four complex-type 0 + one real +1), sum 1==1 [reproduces Unit-13 (0, 0, 0, 0, +1)]
+PASS G-REALIFY-AFTER - AFTER census over H: sum(FS_H)=6==6 vs sum(FS_G)=1==1 -- CP-completion REALIFIES. The four complex-type W-blocks FLIP 0->+1 (True); the unique real 12 STAYS +1 in BOTH split halves (True)
+PASS G-COUNT - c_H = (Sum_{h in H} tr(h)^2)/|H| = 9216/1536 = 6==6 [EXACT INTEGER signed-perm traces] -- six distinct H-constituents; REJECTORS c_H != 5 (unsplit) / != 7
+PASS G-PIN-U14 - SOURCE PIN Unit 14: CP-completion note contains `C^64 = 8 + 8 + 12 + 12 + 12⁺ + 12⁻` (the six-constituent decomposition being censused)
+PASS G-PIN-U13 - SOURCE PIN Unit 13: reality/CP-census note contains `FS = (0, 0, 0, 0, +1)` (the before-census)
+PASS G-PIN-SELF - SELF-NOTE DEPENDENCY DISCIPLINE: total KCPT-links 2==2 (Unit14 1==1, Unit13 1==1); Unit9 0==0 and Unit10 0==0 markdown links (backticked names only)
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

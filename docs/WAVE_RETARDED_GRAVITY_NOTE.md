@@ -160,11 +160,9 @@ authorities on the current dependency surface:
 - standard parallel perturbation propagator and beam-deflection readout for
   the linear gravitational response:
   [`LINEAR_RESPONSE_TRUE_KUBO_NOTE.md`](LINEAR_RESPONSE_TRUE_KUBO_NOTE.md);
-- continuum-stable static-slice construction and the wave-equation field's
-  finite-c lightcone certification:
-  [`WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md`](WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md)
-  and
-  [`WAVE_RETARDATION_LAB_PREDICTION_NOTE.md`](WAVE_RETARDATION_LAB_PREDICTION_NOTE.md);
+- continuum/static-slice and finite-c lightcone claims used here, to the
+  extent stated by their own source:
+  [`WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md`](WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md);
 - grown-DAG geometry families Fam1/Fam2/Fam3 used for the portability check:
   [`KUBO_CONTINUUM_LIMIT_NOTE.md`](KUBO_CONTINUUM_LIMIT_NOTE.md).
 
@@ -172,6 +170,10 @@ The note's contribution is the bounded numerical M − I existence-of-difference
 on three families against the now-derived exact c=∞ comparator. The c=∞
 identification is no longer a conditional input; it is supplied by the bridge
 theorem above.
+
+The repaired `WAVE_RETARDATION_LAB_PREDICTION_NOTE.md` is finite-sweep
+context only.  It supplies neither the lightcone premise nor the numerical
+existence result in this note.
 
 ## Discrete Green-function context
 

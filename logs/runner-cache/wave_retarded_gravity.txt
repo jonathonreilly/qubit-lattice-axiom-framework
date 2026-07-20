@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/wave_retarded_gravity.py
-runner_sha256: 910035dc9e1e820e26213ce9340d5b527e7634bf6e976be1ce73120c8b558607
+runner_sha256: 97cd921b9152ab4e2b32696bba95a7c18f0fa950680046665cc4330179f70fc9
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 122.92
+elapsed_sec: 89.79
 status: ok
 ----- stdout -----
 ======================================================================
@@ -40,7 +40,7 @@ v = -0.3000 cells/layer (|v|/c = 0.3000)
   Fam3: F~M = 0.9963
 
 5. BORN TEST on moving-source field (Fam1)
-  Born |I3|/P = 3.59e-16
+  Born |I3|/P = 6.21e-16
 
 6. NULL TEST (s=0, moving source)
   delta_z = +0.000000e+00

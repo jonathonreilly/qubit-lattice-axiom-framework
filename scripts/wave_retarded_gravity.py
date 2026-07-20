@@ -56,7 +56,17 @@ S = 0.004
 FAMILIES = [("Fam1", 0.20, 0.70), ("Fam2", 0.05, 0.30), ("Fam3", 0.50, 0.90)]
 
 
-def grow(seed, drift, restore):
+def grow(seed, drift, restore, *, n_layers=None):
+    """Grow one finite carrier with an explicit layer count.
+
+    ``n_layers`` defaults to the historical module-level ``NL`` so the
+    original runner is unchanged.  Controlled callers pass it explicitly;
+    they never mutate ``NL`` while sweeping another parameter.
+    """
+    if n_layers is None:
+        n_layers = NL
+    if n_layers < 2:
+        raise ValueError("n_layers must be at least 2")
     rng = random.Random(seed)
     hw = int(PW / H)
     md = max(1, round(MAX_D_PHYS / H))
@@ -65,7 +75,7 @@ def grow(seed, drift, restore):
     nmap = {}
     pos.append((0.0, 0.0, 0.0))
     nmap[(0, 0, 0)] = 0
-    for layer in range(1, NL):
+    for layer in range(1, n_layers):
         x = layer * H
         for iy in range(-hw, hw + 1):
             for iz in range(-hw, hw + 1):
@@ -104,12 +114,16 @@ def _laplacian_yz(f, nw):
     return lap
 
 
-def _solve_wave_moving(strength, src_layer_start, iz_of_t):
+def _solve_wave_moving(strength, src_layer_start, iz_of_t, *, n_layers=None):
     """Wave evolution with source at (iy=0, iz=iz_of_t(t)) for t >= src_layer_start.
 
     iz_of_t: function from layer index -> integer iz offset (relative to grid center)
     Source is on for all layers t >= src_layer_start.
     """
+    if n_layers is None:
+        n_layers = NL
+    if not 2 <= src_layer_start < n_layers:
+        raise ValueError("src_layer_start must lie inside the simulated layers")
     hw = int(PW / H)
     nw = 2 * hw + 1
     f_prev = [[0.0] * nw for _ in range(nw)]
@@ -119,7 +133,7 @@ def _solve_wave_moving(strength, src_layer_start, iz_of_t):
         [[0.0] * nw for _ in range(nw)],
     ]
     h2 = H * H
-    for t in range(2, NL):
+    for t in range(2, n_layers):
         active = t >= src_layer_start
         iz_now = iz_of_t(t)
         sy = 0 + nw // 2
@@ -136,28 +150,34 @@ def _solve_wave_moving(strength, src_layer_start, iz_of_t):
     return history
 
 
-def _field_at(history, layer, iy, iz):
+def _field_at(history, layer, iy, iz, *, n_layers=None):
+    if n_layers is None:
+        n_layers = NL
     hw = int(PW / H)
     nw = 2 * hw + 1
     sy = iy + nw // 2
     sz = iz + nw // 2
-    if 0 <= layer < NL and 0 <= sy < nw and 0 <= sz < nw:
+    if 0 <= layer < n_layers and 0 <= sy < nw and 0 <= sz < nw:
         return history[layer][sy][sz]
     return 0.0
 
 
-def _prop_beam(pos, adj, nmap, history, k, sources=None):
+def _prop_beam(pos, adj, nmap, history, k, sources=None, *, n_layers=None):
+    if n_layers is None:
+        n_layers = NL
     n = len(pos)
     hw = int(PW / H)
     nw = 2 * hw + 1
     field = [0.0] * n
     if history is not None:
-        for layer in range(NL):
+        for layer in range(n_layers):
             for iy in range(-hw, hw + 1):
                 for iz in range(-hw, hw + 1):
                     idx = nmap.get((layer, iy, iz))
                     if idx is not None:
-                        field[idx] = _field_at(history, layer, iy, iz)
+                        field[idx] = _field_at(
+                            history, layer, iy, iz, n_layers=n_layers
+                        )
     order = sorted(range(n), key=lambda i: pos[i][0])
     amps = [0j] * n
     if sources is None:
@@ -195,6 +215,23 @@ def _cz(amps, pos):
     return sum(abs(amps[i]) ** 2 * pos[i][2] for i in range(ds, n)) / t
 
 
+def _cz_at_layer(amps, pos, nmap, layer):
+    """Intensity centroid on one explicitly selected detector layer."""
+    hw = int(PW / H)
+    indices = [
+        nmap[(layer, iy, iz)]
+        for iy in range(-hw, hw + 1)
+        for iz in range(-hw, hw + 1)
+        if (layer, iy, iz) in nmap
+    ]
+    if not indices:
+        raise ValueError(f"no carrier nodes on detector layer {layer}")
+    total = sum(abs(amps[i]) ** 2 for i in indices)
+    if total <= 0.0:
+        return 0.0
+    return sum(abs(amps[i]) ** 2 * pos[i][2] for i in indices) / total
+
+
 def _dp(amps, pos):
     hw = int(PW / H)
     npl = (2 * hw + 1) ** 2
@@ -202,16 +239,25 @@ def _dp(amps, pos):
     return sum(abs(amps[i]) ** 2 for i in range(ds, len(pos)))
 
 
-def _make_field(s, iz_of_t):
-    return _solve_wave_moving(s, NL // 3, iz_of_t)
+def _make_field(s, iz_of_t, *, src_layer_start=None, n_layers=None):
+    if n_layers is None:
+        n_layers = NL
+    if src_layer_start is None:
+        src_layer_start = n_layers // 3
+    return _solve_wave_moving(
+        s, src_layer_start, iz_of_t, n_layers=n_layers
+    )
 
 
 def _frozen(iz_const):
     return lambda t: iz_const
 
 
-def _moving(iz_start, v_cells_per_layer):
-    src_layer_start = NL // 3
+def _moving(iz_start, v_cells_per_layer, *, src_layer_start=None, n_layers=None):
+    if n_layers is None:
+        n_layers = NL
+    if src_layer_start is None:
+        src_layer_start = n_layers // 3
     return lambda t: iz_start + int(round(v_cells_per_layer * (t - src_layer_start)))
 
 
@@ -256,11 +302,23 @@ def _solve_poisson_static(strength, iz_now, omega=1.8, tol=1e-11, max_iter=20000
                     max_delta = d
                 row[iz] = val
         if max_delta < tol:
-            break
-    return f
+            return f
+    raise RuntimeError(
+        "discrete Poisson SOR did not reach the requested tolerance "
+        f"{tol:.3e} in {max_iter} iterations (last max delta {max_delta:.3e})"
+    )
 
 
-def _make_instantaneous(s, iz_of_t):
+def _make_instantaneous(
+    s,
+    iz_of_t,
+    *,
+    src_layer_start=None,
+    n_layers=None,
+    omega=1.8,
+    tol=1e-11,
+    max_iter=20000,
+):
     """Build a stitched instantaneous (c=infinity) field history.
 
     At each layer t, the field everywhere on that layer is set to the EXACT
@@ -270,17 +328,26 @@ def _make_instantaneous(s, iz_of_t):
     field that everywhere instantaneously tracks the CURRENT source position
     with no propagation delay. Static slices are cached per source position.
     """
+    if n_layers is None:
+        n_layers = NL
+    if src_layer_start is None:
+        src_layer_start = n_layers // 3
+    if not 0 < omega < 2:
+        raise ValueError("SOR omega must lie in (0, 2)")
+    if tol <= 0 or max_iter <= 0:
+        raise ValueError("SOR tolerance and iteration cap must be positive")
     hw = int(PW / H)
     nw = 2 * hw + 1
-    src_layer_start = NL // 3
     cache = {}
-    history = [[[0.0] * nw for _ in range(nw)] for _ in range(NL)]
-    for t in range(NL):
+    history = [[[0.0] * nw for _ in range(nw)] for _ in range(n_layers)]
+    for t in range(n_layers):
         if t < src_layer_start:
             continue
         iz_now = iz_of_t(t)
         if iz_now not in cache:
-            cache[iz_now] = _solve_poisson_static(s, iz_now)
+            cache[iz_now] = _solve_poisson_static(
+                s, iz_now, omega=omega, tol=tol, max_iter=max_iter
+            )
         history[t] = [row[:] for row in cache[iz_now]]
     return history
 

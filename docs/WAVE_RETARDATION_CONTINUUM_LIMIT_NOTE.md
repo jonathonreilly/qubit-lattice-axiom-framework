@@ -10,11 +10,13 @@
 
 ## Question
 
-The lab-card lane (`WAVE_RETARDATION_LAB_PREDICTION_NOTE.md`) showed
-that the Lane 6 / Lane 8b 25-30% retardation gap is configuration-dependent
-and does not have a clean v/c power law. This lane tests whether the
-configuration dependence is a **finite-lattice-spacing artifact that
-vanishes in the continuum limit**:
+An earlier version of the lab-card lane
+`WAVE_RETARDATION_LAB_PREDICTION_NOTE.md` motivated this test with a claimed
+25-30% configuration-dependent gap.  That source packet was later repaired
+and no longer supplies either that magnitude or a continuum conclusion.  The
+present lane's claims therefore stand or fall on its own runner and cited
+artifacts.  It asks whether its separately computed configuration dependence
+is a **finite-lattice-spacing artifact that vanishes in the continuum limit**:
 
 - Hold physical parameters approximately constant
 - Refine H ∈ {0.5, 0.35, 0.25}
@@ -537,8 +539,7 @@ Promoting from bounded conditional to retained would require:
 4. Adding a direct discrete static solve or an analytic discrete
    Green-function comparator for the implemented lattice operator.
 
-## Audit dependency repair links
+## Historical context boundary
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [wave_retardation_lab_prediction_note](WAVE_RETARDATION_LAB_PREDICTION_NOTE.md)
+The repaired `WAVE_RETARDATION_LAB_PREDICTION_NOTE.md` is historical context,
+not a premise or dependency for this note's independent numerical claims.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/wave_retardation_continuum_limit.py
-runner_sha256: 0c1ffd073cb1f811e2c74507d6bbefe658c4798efcd5cca3522c16fe2ea8c2e1
+runner_sha256: a90ebbe71f18a690f94aac016c658087964cffbbc30cb686239ad594f0af9c90
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 304.28
+elapsed_sec: 190.24
 status: ok
 ----- stdout -----
 ====================================================================================================

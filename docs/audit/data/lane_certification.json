@@ -2129,7 +2129,7 @@
         },
         {
           "claim_id": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "s3_anomaly_spacetime_lift_note",
@@ -2229,7 +2229,7 @@
         },
         {
           "claim_id": "sm_relativistic_dof_count_import_note_2026-05-17",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "source_driven_field_recovery_sweep_note",
@@ -2557,10 +2557,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "wave_retardation_lab_prediction_note",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "wave_static_direct_probe_fine_note",
           "effective_status": "unaudited"
         },
@@ -2842,15 +2838,15 @@
         }
       ],
       "certified": false,
-      "closure_size": 709,
+      "closure_size": 708,
       "lane": "theta_retirement",
       "root": "strong_cp_theta_zero_note",
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 653
+      "uncertified_count": 652
     }
   ],
-  "repo_head": "df260137e4aa84b679095d07073b54f84d69b25f",
+  "repo_head": "d75c659c97a05ff738d9aeed87f062edaabad424",
   "schema": "lane_certification_v2"
 }

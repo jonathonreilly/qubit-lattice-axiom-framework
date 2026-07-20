@@ -2418,7 +2418,36 @@ drive.
 
 Auditor judged the load-bearing step blocked by a runner, log, classifier, threshold, import, or pass/fail accounting problem. To close: repair the runner per the auditor's repair_target sentence and rerun, or replace the runner with a self-contained certificate.
 
-_0 rows in this category._
+_1 rows in this category._
+
+
+### `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`
+
+**Note:** [docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md](../FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md)  |  **Descendants:** 1192  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: On the supplied periodic 2 x 2 x 2 cell, all translation characters have identical expectations for every position-diagonal operator, while their rank-one character projectors give the Kronecker-delta expectation matrix.
+
+Auditor's verdict_rationale:
+Issue: the exact finite equalities pass, but the mandatory clean-verdict N1-N8 evidence packet cannot be completed from the supplied runner stdout. Why this blocks: the stdout does not evidence five distinct N1 mechanism classes or the five required N5 resolution tests, so an audited-clean result would violate the packet rules. Repair target: extend the current-cycle runner evidence with the required distinct stress routes and resolution-class tests, then rerun the restricted audit. Claim boundary until fixed: the displayed finite-cell identities remain exactly runner-supported, but clean audit ratification is withheld.
+
+Auditor-quoted load-bearing step:
+For every translation character, every position-diagonal operator has expectation (1/8) sum_n w_n, whereas the rank-one character projectors satisfy <psi_k, P_q psi_k> = delta_(kq).
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: add current-cycle runner output sufficient to populate the complete N1-N8 discipline packet, including five distinct evidenced N1 mechanism classes and all five N5 resolution-class tests, then re-audit.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
 
 
 ## audited_conditional_scope_too_broad
@@ -2432,12 +2461,12 @@ _0 rows in this category._
 
 Auditor judged that the chain needs a new theorem for a physical carrier, readout, unit map, boundary condition, sector choice, normalization, or observable bridge. To close: derive the missing bridge from retained primitives so the audited claim no longer asserts it.
 
-_8 rows in this category._
+_6 rows in this category._
 
 
 ### `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`
 
-**Note:** [docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md](../ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md)  |  **Descendants:** 1354  |  **Class:** A
+**Note:** [docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md](../ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md)  |  **Descendants:** 1370  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md.
@@ -2466,7 +2495,7 @@ drive.
 
 ### `hypercharge_identification_note`
 
-**Note:** [docs/HYPERCHARGE_IDENTIFICATION_NOTE.md](../HYPERCHARGE_IDENTIFICATION_NOTE.md)  |  **Descendants:** 1011  |  **Class:** A
+**Note:** [docs/HYPERCHARGE_IDENTIFICATION_NOTE.md](../HYPERCHARGE_IDENTIFICATION_NOTE.md)  |  **Descendants:** 1027  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/HYPERCHARGE_IDENTIFICATION_NOTE.md.
@@ -2493,38 +2522,9 @@ drive.
 ```
 
 
-### `sm_relativistic_dof_count_import_note_2026-05-17`
-
-**Note:** [docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md](../SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)  |  **Descendants:** 835  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Given the explicitly declared Standard Model inventory totals of 28 bosonic and 90 fermionic states and the retained 7/8 weight, exact finite arithmetic gives g_* = 427/4 = 106.75; inventory selection and thermal applicability are excluded.
-
-Auditor's verdict_rationale:
-The exact arithmetic is correct, and the runner genuinely computes the multiplicity products and Fraction sum rather than merely printing a passing result. However, the Standard Model inventory and its interpretation as relativistic thermal states are expressly declared external physical inputs; only the 7/8 weight is supplied by a retained one-hop authority. The result is therefore a valid conditional arithmetic certificate, not clean retained closure of the physical g_* value.
-
-Auditor-quoted load-bearing step:
-Given g_bosonic = 28, g_fermionic = 90, and fermion weight 7/8, g_* = 28 + (7/8) * 90 = 427/4 = 106.75.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add a retained one-hop inventory theorem or explicitly registered physical-input authority establishing the Standard Model state multiplicities and their thermal-count interpretation, then re-audit the finite arithmetic wrapper.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
 ### `dm_neutrino_cascade_geometry_note_2026-04-14`
 
-**Note:** [docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md](../DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md)  |  **Descendants:** 816  |  **Class:** A
+**Note:** [docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md](../DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md)  |  **Descendants:** 832  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md.
@@ -2551,38 +2551,9 @@ drive.
 ```
 
 
-### `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28`
-
-**Note:** [docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md](../RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)  |  **Descendants:** 799  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Static fixed-background classical staggered two-step recurrence positivity and finite permutation-conjugation invariance of det/spec/trace; the quantum transfer-kernel/second-quantization identification and all U-integrated, P2, and AC_phi_lambda consequences are excluded.
-
-Auditor's verdict_rationale:
-Issue: the exact modal factorization and permutation identities are correct, but the staggered KS recurrence and static temporal-gauge carrier are imported construction inputs rather than consequences of the accepted premise surface. Why this blocks: the supplied minimal axioms expressly do not select a Hamiltonian, transfer operator, or staggered kinetic branch, and no one-hop authority supplies that bridge. Repair target: provide a retained construction theorem deriving this recurrence and carrier, or explicitly present the result solely as a theorem conditional on those inputs. Claim boundary until fixed: positivity of the stated static classical matrix and finite conjugation invariance remain supported, while quantum-transfer and dynamical-gauge conclusions remain excluded.
-
-Auditor-quoted load-bearing step:
-Because the static spatial hop h[U] is anti-Hermitian, the two-step classical transfer decomposes into 2-by-2 modal blocks with eigenvalues exp(±2 asinh(sqrt(m^2+lambda_j^2))), which are positive real numbers.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add a retained theorem deriving the static staggered recurrence and fermionic carrier from the accepted premise surface, or narrow the source explicitly to a conditional finite-matrix theorem before re-audit.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
 ### `gravity_full_self_consistency_note`
 
-**Note:** [docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md](../GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)  |  **Descendants:** 738  |  **Class:** A
+**Note:** [docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md](../GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)  |  **Descendants:** 754  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md.
@@ -2611,7 +2582,7 @@ drive.
 
 ### `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 734  |  **Class:** A
+**Note:** [docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](../DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)  |  **Descendants:** 750  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md.
@@ -2640,7 +2611,7 @@ drive.
 
 ### `ac_reta_hclass_hunit_readout_derivation_obligation`
 
-**Note:** [docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md](../AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)  |  **Descendants:** 86  |  **Class:** F
+**Note:** [docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md](../AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)  |  **Descendants:** 93  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md.

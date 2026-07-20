@@ -61,7 +61,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 23.993,
+  "load_bearing_score": 24.002,
   "load_bearing_step": "On the eight BZ-corner basis with Phi|alpha>=|X_alpha>, lattice site phases P_mu act as alpha -> alpha xor e_mu, so Phi^dagger P_mu Phi is the cube-shift S_mu and the joint eigensystem is the Z_2^3 Hadamard character basis.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "retained_pending_chain",
@@ -109,6 +109,6 @@
   },
   "runner_path": "scripts/frontier_site_phase_cube_shift_intertwiner.py",
   "title": "Site-Phase / Cube-Shift Intertwiner Note",
-  "transitive_descendants": 1440,
+  "transitive_descendants": 1449,
   "verdict_rationale": "Issue checked: whether the lattice site-phase operators and abstract cube shifts are exactly intertwined on the restricted BZ-corner support. The runner directly checks the bit-flip law, the isometry, pulled-back operators, and all joint eigenstates with zero reported discrepancies. The note explicitly avoids identifying the support with physical generations, so the scoped theorem closes as exact algebra rather than an unratified physical bridge."
 }

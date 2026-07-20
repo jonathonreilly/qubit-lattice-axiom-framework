@@ -54,7 +54,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 10.457,
+  "load_bearing_score": 10.476,
   "load_bearing_step": "Solving the stated discrete wave equation with a static source gives the Poisson-like field used by the path-sum tests, and a single-layer pulse gives first-arrival time equal to lattice offset.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -146,6 +146,6 @@
   },
   "runner_path": "scripts/wave_equation_self_field.py",
   "title": "Wave-Equation Self-Field: Time-Dependent Field from One Local Equation",
-  "transitive_descendants": 702,
+  "transitive_descendants": 711,
   "verdict_rationale": "The runner source performs actual numerical evolution of the stated second-order stencil and propagates amplitudes through the generated field; it does not merely print constants or import the contested results. The static, F~M, Born, null, gravity-sign, and retardation outputs are computed internally from the specified finite lattice setup. The clean verdict is bounded to this runner-level numerical theorem, not to broader physical equivalence with GR or untested multi-source/backreaction claims."
 }

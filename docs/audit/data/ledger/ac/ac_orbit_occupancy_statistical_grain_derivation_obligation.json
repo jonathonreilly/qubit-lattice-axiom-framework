@@ -37,7 +37,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_renaming",
-  "load_bearing_score": 14.409,
+  "load_bearing_score": 14.476,
   "load_bearing_step": "A closing theorem must derive the physical matter action and its measure, then distinguish the count-once det_C/holomorphic realization from the count-twice |det_C|^2/realified realization.",
   "load_bearing_step_class": "E",
   "max_descendant_status": "audit_in_progress",
@@ -58,6 +58,6 @@
   },
   "runner_path": null,
   "title": "AC Orbit-Occupancy Statistical-Grain Derivation Obligation",
-  "transitive_descendants": 84,
+  "transitive_descendants": 88,
   "verdict_rationale": "The source honestly defines an open derivation obligation and expressly selects neither counting horn. It contains no derivation from the framework premises, cited authority, or computational certificate. With no runner source available, the classification rests on the note text alone."
 }

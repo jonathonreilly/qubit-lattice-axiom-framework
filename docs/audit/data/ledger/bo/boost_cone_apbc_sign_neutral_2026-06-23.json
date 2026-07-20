@@ -14,9 +14,9 @@
   "chain_closure_explanation": null,
   "claim_id": "boost_cone_apbc_sign_neutral_2026-06-23",
   "claim_scope": null,
-  "claim_type": "no_go",
-  "claim_type_author_hint": "no_go",
-  "claim_type_author_hint_raw": "no_go",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
   "criticality": "leaf",
@@ -24,12 +24,13 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "record_tick_signature_neutral_2026-06-23",
-    "axiom_first_microcausality_lieb_robinson_note_2026-05-17",
     "lattice_nn_light_cone_note",
+    "axiom_first_microcausality_lieb_robinson_note_2026-05-17",
     "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07",
     "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16",
     "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
-    "single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17"
+    "single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17",
+    "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
@@ -42,7 +43,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "7994e467aa291a01c74a5192e891616eb8a434125deb01265a42353f6145a09c",
+  "note_hash": "e670ca42e8d94e4c4a57e596123bf6677df2ce06a24013c522fb5dafdaabe3d3",
   "note_path": "docs/BOOST_CONE_APBC_SIGN_NEUTRAL_2026-06-23.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -57,7 +58,7 @@
     "total_pass": 0
   },
   "runner_path": "scripts/boost_cone_apbc_sign_neutral_2026_06_23.py",
-  "title": "Boost-Cone and Antiperiodic-Boundary Sign Routes: Checked No-Go Boundaries",
+  "title": "Boost-Cone and Antiperiodic-Boundary Sign Routes: Exact Finite Counterchecks and Open Bridges",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

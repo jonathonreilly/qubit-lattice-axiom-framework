@@ -2530,7 +2530,7 @@
         },
         {
           "claim_id": "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
-          "effective_status": "audited_renaming"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "universal_gr_a1_invariant_section_note",
@@ -2851,6 +2851,6 @@
       "uncertified_count": 653
     }
   ],
-  "repo_head": "79930fd055562e252d7250718bb45ac73ed39a53",
+  "repo_head": "df260137e4aa84b679095d07073b54f84d69b25f",
   "schema": "lane_certification_v2"
 }

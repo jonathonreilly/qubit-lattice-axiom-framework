@@ -50,7 +50,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "audited_numerical_match",
-  "load_bearing_score": 16.053,
+  "load_bearing_score": 16.06,
   "load_bearing_step": "Given imported comparator targets, two complex carrier coefficients xi_u and xi_d are solved numerically to reproduce the quark mass-ratio and CKM/J surface to about 1% or better while keeping arg det(M_u M_d)=0 mod 2pi.",
   "load_bearing_step_class": "G",
   "max_descendant_status": "audit_in_progress",
@@ -236,6 +236,6 @@
   },
   "runner_path": "scripts/frontier_quark_cp_carrier_completion.py",
   "title": "Quark CP-Carrier Completion on the Live Mass-Ratio Lane",
-  "transitive_descendants": 750,
+  "transitive_descendants": 754,
   "verdict_rationale": "The load-bearing step is explicitly a tuned numerical completion against imported observation/atlas comparator targets, so it is class G. The primary runner is substantive rather than a trivial printout: it computes the matrices, diagonalizes them, forms CKM observables, and checks determinant phase closure. The co-cycle citation to docs/QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md is non-load-bearing/informational for this bounded fit verdict; source-graph repair is still needed to remove or rewrite that markdown link before effective_status can leave retained_pending_chain. The result closes only as a bounded numerical match, not as a first-principles retained derivation."
 }

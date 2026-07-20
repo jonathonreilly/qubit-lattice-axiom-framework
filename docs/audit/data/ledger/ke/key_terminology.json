@@ -29,12 +29,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 44.814,
+  "load_bearing_score": 44.82,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "open_gate",
   "max_descendant_status_rank": 40,
-  "note_hash": "0e0a4b55213d0c158a8f35808ea4e28b448a1d23114fb8adfb31b4d90e753557",
+  "note_hash": "31fd1e1bea20f662912d9138eef0c3340702cbc74185151c39b3d6b3f883f5f3",
   "note_path": "docs/KEY_TERMINOLOGY.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -50,6 +50,6 @@
   },
   "runner_path": "scripts/render_controlled_vocabulary.py",
   "title": "Key Terminology",
-  "transitive_descendants": 1272,
+  "transitive_descendants": 1277,
   "verdict_rationale": null
 }

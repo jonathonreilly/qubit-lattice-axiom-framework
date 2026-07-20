@@ -28,13 +28,13 @@
     "kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_bounded_theorem_note_2026-07-16",
     "kcpt_orbit_constant_registered_occupancy_weights_derivable_protocol_class_bounded_theorem_note_2026-07-12"
   ],
-  "direct_in_degree": 6,
+  "direct_in_degree": 8,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.807,
+  "load_bearing_score": 7.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_2026_07_17.py",
   "title": "KCPT corner-carrier lattice delivery: the gate-note hw=1 triplet realizes the supplied corner surface, and doublet-pair separation is K-gated (bounded theorem)",
-  "transitive_descendants": 6,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

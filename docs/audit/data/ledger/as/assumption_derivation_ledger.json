@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 13.225,
+  "load_bearing_score": 13.231,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -154,7 +154,7 @@
   },
   "runner_path": "scripts/assumption_derivation_ledger_meta_check.py",
   "title": "Assumption / Derivation Ledger",
-  "transitive_descendants": 845,
+  "transitive_descendants": 849,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

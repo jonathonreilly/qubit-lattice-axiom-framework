@@ -19,20 +19,20 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "velocity_rg_logflow_framework_internal_2026-06-21",
     "kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 4.2,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/velocity_rg_gauge_seagull_transverse_vacuum_polarization_2026_06_22.py",
   "title": "Gauge-Sector Velocity Drag from the Seagull-Completed Transverse Vacuum Polarization",
-  "transitive_descendants": 0,
+  "transitive_descendants": 12,
   "verdict_rationale": null
 }

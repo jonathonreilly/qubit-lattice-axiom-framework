@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.907,
+  "load_bearing_score": 10.912,
   "load_bearing_step": "Direct substitution of the supplied multiplicities, y values, and representation indices gives the five traces (0, -16/9, 1/3, 0, 2).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -235,6 +235,6 @@
   },
   "runner_path": "scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
   "title": "ABJ Left-Handed Formal Trace Arithmetic Boundary",
-  "transitive_descendants": 1357,
+  "transitive_descendants": 1361,
   "verdict_rationale": "The runner genuinely computes each trace with Fraction arithmetic and its output agrees with direct substitution. The packet's multiplicities, eigenvalues, indices, signs, and normalization are nevertheless explicitly supplied hypotheses, so the result is not clean closure from retained-grade inputs. The note accurately confines its conclusion to formal arithmetic and makes no physical hypercharge or anomaly claim."
 }

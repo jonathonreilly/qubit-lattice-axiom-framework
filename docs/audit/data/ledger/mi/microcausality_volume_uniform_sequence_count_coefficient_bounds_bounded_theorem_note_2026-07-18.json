@@ -26,13 +26,13 @@
     "microcausality_many_body_nested_commutator_lightcone_bounded_theorem_note_2026-07-18",
     "minimal_axioms"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.085,
+  "load_bearing_score": 4.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py",
   "title": "Microcausality: Volume-Uniform Sequence-Count Coefficient Bounds And A Local Time Window",
-  "transitive_descendants": 11,
+  "transitive_descendants": 13,
   "verdict_rationale": null
 }

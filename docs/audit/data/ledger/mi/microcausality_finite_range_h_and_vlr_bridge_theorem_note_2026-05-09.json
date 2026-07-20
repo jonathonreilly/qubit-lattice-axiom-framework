@@ -28,13 +28,13 @@
     "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
     "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
   ],
-  "direct_in_degree": 8,
+  "direct_in_degree": 9,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.613,
+  "load_bearing_score": 14.122,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -651,7 +651,7 @@
   },
   "runner_path": "scripts/microcausality_finite_range_h_bridge_2026_05_09.py",
   "title": "Bounded Action-Support Budgets and a Proved Finite-Range Lieb-Robinson Bridge for Microcausality",
-  "transitive_descendants": 782,
+  "transitive_descendants": 787,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

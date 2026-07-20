@@ -52,7 +52,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "audited_renaming",
-  "load_bearing_score": 19.217,
+  "load_bearing_score": 19.222,
   "load_bearing_step": "Using the microscopic trace flux of the same field as the source term j, the sourced boundary action has Euler-Lagrange equation Lambda_R f - j = 0.",
   "load_bearing_step_class": "E",
   "max_descendant_status": "audit_in_progress",
@@ -211,6 +211,6 @@
   },
   "runner_path": "scripts/frontier_oh_schur_boundary_action.py",
   "title": "Exact Schur-Complement Boundary Action for the `O_h` Strong-Field Shell Law",
-  "transitive_descendants": 1189,
+  "transitive_descendants": 1193,
   "verdict_rationale": "Issue: the source chooses j from the trace flux of the already-selected harmonic field, so the Euler-Lagrange residual vanishes by definition. Why this blocks: the runner verifies the Schur identity and strict convexity but does not independently derive the source coupling or select the shell trace. Repair target: construct j from a microscopic source/action independently of f and then solve the boundary equation. Claim boundary until fixed: the size-15 Dirichlet lattice has the stated Schur quadratic form, and any f is stationary when j is defined as Lambda_R f."
 }

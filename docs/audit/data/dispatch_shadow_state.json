@@ -1,5 +1,5 @@
 {
- "as_of_date": "2026-07-19",
+ "as_of_date": "2026-07-20",
  "lane_ids": [
   "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
   "a3_r1_review_confirms_obstruction_note_2026-05-08_r1hr",
@@ -263,7 +263,6 @@
   "koide_a1_fractional_topology_no_go_synthesis_note_2026-04-24",
   "koide_a1_o13_cheeger_simons_rz_no_go_note_2026-04-24",
   "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
-  "koide_aps_block_by_block_forcing_note_2026-04-21",
   "koide_axiom_native_support_batch_note_2026-04-22",
   "koide_berry_bundle_obstruction_theorem_note_2026-04-19",
   "koide_berry_phase_theorem_note_2026-04-19",
@@ -285,7 +284,6 @@
   "koide_gamma_orbit_selected_line_closure_note_2026-04-18",
   "koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20",
   "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19",
-  "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
   "koide_microscopic_scalar_selector_target_note_2026-04-18",
   "koide_native_dimensionless_note_2026-04-24",
   "koide_native_zero_section_closure_route_note_2026-04-24",
@@ -502,6 +500,7 @@
   "translation_covariance_local_op_theorem_note_2026-05-02",
   "u1_fermion_number_conservation_theorem_note_2026-05-02",
   "unified_matter_content_ewsb_harness_theorem_note_2026-05-03",
+  "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
   "universal_gr_a1_invariant_section_note",
   "universal_gr_block_constraint_interpretation_note",
   "universal_gr_casimir_block_localization_note",

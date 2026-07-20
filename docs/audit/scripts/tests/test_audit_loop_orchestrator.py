@@ -27,6 +27,7 @@ def _args() -> argparse.Namespace:
         runner_timeout_sec=120,
         codex_timeout_sec=2700,
         push_retries=3,
+        dispatch_science_fixes=False,
         skip_forensic_canary=True,
         dry_run=False,
     )
@@ -141,6 +142,9 @@ class SchemaRecoveryTest(unittest.TestCase):
         actionable = {
             "audit": {
                 "verdict": "audited_conditional",
+                "claim_type": "bounded_theorem",
+                "claim_scope": "The asserted bound under stated inputs.",
+                "load_bearing_step_class": "B",
                 "notes_for_re_audit_if_any": (
                     "missing_bridge_theorem — prove the missing implication"
                 ),
@@ -157,7 +161,18 @@ class SchemaRecoveryTest(unittest.TestCase):
             handoff["category"],
             "conditional_missing_bridge_theorem",
         )
-        self.assertIn("prove the missing implication", handoff["prompt_body"])
+        self.assertIn("prove the missing implication", handoff["repair_target"])
+        self.assertNotIn("prompt_body", handoff)
+
+        for verdict in (
+            "audited_failed",
+            "audited_renaming",
+            "audited_numerical_match",
+        ):
+            incomplete = {"audit": dict(actionable["audit"], verdict=verdict)}
+            incomplete["audit"]["verdict_rationale"] = ""
+            with self.subTest(verdict=verdict):
+                self.assertIsNone(batch.science_fix_handoff(job, incomplete))
 
     def test_batch_emits_handoff_only_after_validated_verdict_applies(self):
         job = {
@@ -173,7 +188,11 @@ class SchemaRecoveryTest(unittest.TestCase):
         envelope = {
             "audit": {
                 "verdict": "audited_failed",
+                "claim_type": "bounded_theorem",
+                "claim_scope": "The central equality in this note.",
                 "verdict_rationale": "The central equality is contradicted.",
+                "load_bearing_step": "The claimed equality holds.",
+                "load_bearing_step_class": "B",
                 "notes_for_re_audit_if_any": "Replace the false equality.",
                 "audit_invocation_id": "c" * 32,
             }
@@ -240,7 +259,13 @@ class SchemaRecoveryTest(unittest.TestCase):
             "note_path": "docs/ROW.md",
             "descendants": 0,
             "cls": "(B)",
-            "prompt_body": "Repair the validated failure.",
+            "audit_invocation_id": "d" * 32,
+            "audit_verdict": "audited_failed",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "The central equality.",
+            "verdict_rationale": "The equality is contradicted.",
+            "load_bearing_step": "The claimed equality holds.",
+            "repair_target": "Replace the false equality.",
         }
         with tempfile.TemporaryDirectory() as tmp, mock.patch.object(
             batch.subprocess,
@@ -375,13 +400,18 @@ class CampaignContractTest(unittest.TestCase):
     def test_inner_batches_share_campaign_quarantine_and_dispatch_policy(self):
         args = _args()
         args.campaign_quarantine_file = Path("/tmp/campaign/quarantine.jsonl")
-        args.skip_science_fix_dispatch = True
 
         command = audit_loop.batch_command("lane_a", args)
 
         self.assertIn("--campaign-quarantine-file", command)
         self.assertIn(str(args.campaign_quarantine_file), command)
-        self.assertIn("--skip-science-fix-dispatch", command)
+        self.assertNotIn("--dispatch-science-fixes", command)
+
+        args.dispatch_science_fixes = True
+        self.assertIn(
+            "--dispatch-science-fixes",
+            audit_loop.batch_command("lane_a", args),
+        )
 
 
 if __name__ == "__main__":

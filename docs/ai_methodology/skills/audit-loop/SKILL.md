@@ -363,12 +363,14 @@ schema). It does not show that the source claim is false or needs editing.
 - Do not apply a verdict, mutate the ledger, or launch a science-editing PR
   from malformed output. A source-repair PR requires a validated non-clean
   verdict with a concrete rationale and repair target.
-- After a validated `audited_failed`, `audited_renaming`,
-  `audited_numerical_match`, or repair-actionable `audited_conditional` lands,
-  hand that verdict to `scripts/science_fix_loop.py`. Run one detached
-  science-fix process per completed audit batch; it may edit only an isolated
-  worktree and may only open a PR. Review-loop and a later independent audit
-  remain mandatory before any repair reaches retained state.
+- Only when the user explicitly requested source repair and the orchestrator
+  was invoked with `--dispatch-science-fixes`, hand a newly landed validated
+  `audited_failed`, `audited_renaming`, `audited_numerical_match`, or
+  repair-actionable `audited_conditional` verdict to
+  `scripts/science_fix_loop.py`. Run one detached science-fix process per
+  completed audit batch; it may edit only an isolated worktree and may only
+  open a PR. Review-loop and a later independent audit remain mandatory before
+  any repair reaches retained state.
 
 Reaching a development fixed point with schema quarantines means the
 actionable queue drained except for the explicitly reported malformed
@@ -766,6 +768,13 @@ explicit citation/dependency edge, auditing a named dependency first, creating
 an open bridge theorem, splitting the clean bounded core from the conditional
 extension, or repairing/slicing the runner. Do not repair during the audit
 unless the user explicitly asks for repair work.
+
+Only when the user explicitly requests source repair as part of the audit
+episode, pass `--dispatch-science-fixes` to the audit orchestrator. Repair
+dispatch is off by default. The dispatched handoff is accepted only after its
+claim id, audit invocation, verdict, scope, rationale, load-bearing step, and
+repair target match the current canonical sharded ledger row on `origin/main`;
+the repair prompt is reconstructed from those verified fields.
 
 ## Apply The Audit
 

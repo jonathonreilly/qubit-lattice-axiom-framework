@@ -305,8 +305,8 @@ def batch_command(lane: str, args: argparse.Namespace) -> list[str]:
     quarantine_file = getattr(args, "campaign_quarantine_file", None)
     if quarantine_file is not None:
         command.extend(["--campaign-quarantine-file", str(quarantine_file)])
-    if getattr(args, "skip_science_fix_dispatch", False):
-        command.append("--skip-science-fix-dispatch")
+    if getattr(args, "dispatch_science_fixes", False):
+        command.append("--dispatch-science-fixes")
     if args.dry_run:
         command.append("--dry-run")
     return command
@@ -419,9 +419,12 @@ def build_parser() -> argparse.ArgumentParser:
         help="preserve campaign-scoped quarantine/report artifacts in this directory",
     )
     parser.add_argument(
-        "--skip-science-fix-dispatch",
+        "--dispatch-science-fixes",
         action="store_true",
-        help="do not launch PR-producing repair workers after validated non-clean verdicts",
+        help=(
+            "launch PR-producing repair workers after complete validated "
+            "non-clean verdicts; requires an explicit source-repair request"
+        ),
     )
     parser.add_argument("--skip-forensic-canary", action="store_true")
     parser.add_argument("--dry-run", action="store_true")

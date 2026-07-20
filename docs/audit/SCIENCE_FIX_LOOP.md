@@ -9,12 +9,16 @@ and, for each row that hasn't been attempted yet, drives the configured Codex mo
 (at xhigh reasoning) to attempt closing the chain and opens a PR for
 human review and re-audit.
 
-The audit batch may also invoke the loop with `--handoff-file` after a
-validated non-clean verdict lands. The handoff uses schema
-`audit_science_fix_handoff_v1` and carries the same audited rationale and
-repair target without waiting for the nightly prompt snapshot. Malformed or
-schema-invalid audit output is never eligible: it is not a scientific verdict
-and cannot authorize source edits.
+When source repair was explicitly requested, the audit batch may be run with
+`--dispatch-science-fixes` to invoke this loop with `--handoff-file` after a
+validated non-clean verdict lands. Dispatch is off by default. The handoff uses
+schema `audit_science_fix_handoff_v1`; before any edit-capable worker starts,
+the consumer refreshes `origin/main`, verifies the claim, invocation, verdict,
+scope, rationale, load-bearing step, and repair target against the canonical
+sharded ledger row, then reconstructs the prompt from those verified fields.
+Malformed, stale, locally fabricated, or schema-invalid audit output is never
+eligible: it is not a current scientific verdict and cannot authorize source
+edits.
 
 Designed to chip through the medium-difficulty backlog autonomously
 while leaving the hard problems for a human. The loop only makes

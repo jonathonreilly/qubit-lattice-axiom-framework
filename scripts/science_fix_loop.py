@@ -292,7 +292,105 @@ def parse_prompts(prompts_file: Path = PROMPTS_FILE):
     return rows
 
 
-def parse_audit_handoff(path: Path) -> list[dict]:
+def audit_repair_category(audit_verdict: str, repair_target: str) -> str | None:
+    """Map an applied non-clean audit verdict to a supported repair lane."""
+    category = {
+        "audited_renaming": "renaming",
+        "audited_failed": "failed",
+        "audited_numerical_match": "numerical_match",
+    }.get(audit_verdict)
+    if audit_verdict == "audited_conditional":
+        conditional_categories = {
+            "runner_artifact_issue": "conditional_runner_artifact_issue",
+            "scope_too_broad": "conditional_scope_too_broad",
+            "missing_bridge_theorem": "conditional_missing_bridge_theorem",
+        }
+        prefix = repair_target.split("—", 1)[0].split(":", 1)[0].strip().lower()
+        category = conditional_categories.get(prefix)
+    return category
+
+
+def audit_handoff_prompt(row: dict) -> str:
+    """Reconstruct the worker prompt from ledger-verified audit fields."""
+    return f"""Use the physics-loop skill to repair the validated non-clean audit on {row['note_path']}.
+
+Claim id: {row['claim_id']}
+Audit verdict: {row['audit_verdict']}
+Claim type: {row['claim_type']}
+Load-bearing step class: {row['cls']}
+Claim scope: {row['claim_scope']}
+
+Validated auditor rationale:
+{row['verdict_rationale']}
+
+Auditor-quoted load-bearing step:
+{row['load_bearing_step']}
+
+Auditor repair target:
+{row['repair_target']}
+
+Make source or runner edits only where the validated audit identifies a real
+defect. Open no new axiom or primitive. The goal is a reviewable PR whose
+merged result can be independently re-audited; do not edit audit-ledger or
+generated audit-status surfaces.
+""".strip()
+
+
+def refresh_origin_main_for_handoff() -> None:
+    """Refresh the only trusted provenance surface before consuming a handoff."""
+    try:
+        result = subprocess.run(
+            ["git", "fetch", "origin", "main", "-q"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=60,
+        )
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        raise ValueError(f"cannot refresh origin/main for audit handoff: {exc}") from exc
+    if result.returncode != 0:
+        detail = (result.stderr or result.stdout).strip()
+        raise ValueError(
+            "cannot refresh origin/main for audit handoff"
+            + (f": {detail}" if detail else "")
+        )
+
+
+def load_origin_main_audit_row(claim_id: str) -> dict:
+    """Load one canonical sharded audit row from the refreshed origin/main."""
+    if re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]*", claim_id) is None:
+        raise ValueError(f"unsafe audit claim id {claim_id!r}")
+    ledger_path = f"docs/audit/data/ledger/{claim_id[:2]}/{claim_id}.json"
+    try:
+        result = subprocess.run(
+            ["git", "show", f"origin/main:{ledger_path}"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        raise ValueError(
+            f"cannot load audit ledger row for {claim_id!r}: {exc}"
+        ) from exc
+    if result.returncode != 0:
+        raise ValueError(
+            f"audit claim {claim_id!r} is absent from the origin/main ledger"
+        )
+    try:
+        row = json.loads(result.stdout)
+    except json.JSONDecodeError as exc:
+        raise ValueError(
+            f"origin/main ledger row for {claim_id!r} is invalid JSON"
+        ) from exc
+    if not isinstance(row, dict) or row.get("claim_id") != claim_id:
+        raise ValueError(
+            f"origin/main ledger row for {claim_id!r} has mismatched identity"
+        )
+    return row
+
+
+def parse_audit_handoff(path: Path, ledger_loader=None) -> list[dict]:
     """Load validated audit-to-science repair handoffs.
 
     A handoff is deliberately downstream of a successfully applied non-clean
@@ -307,6 +405,10 @@ def parse_audit_handoff(path: Path) -> list[dict]:
     raw_rows = payload.get("rows")
     if not isinstance(raw_rows, list):
         raise ValueError("science-fix handoff rows must be a list")
+    if ledger_loader is None:
+        refresh_origin_main_for_handoff()
+        ledger_loader = load_origin_main_audit_row
+
     rows: list[dict] = []
     for index, row in enumerate(raw_rows, 1):
         if not isinstance(row, dict):
@@ -315,7 +417,14 @@ def parse_audit_handoff(path: Path) -> list[dict]:
             "category": row.get("category"),
             "claim_id": row.get("claim_id"),
             "note_path": row.get("note_path"),
-            "prompt_body": row.get("prompt_body"),
+            "cls": row.get("cls"),
+            "audit_invocation_id": row.get("audit_invocation_id"),
+            "audit_verdict": row.get("audit_verdict"),
+            "claim_type": row.get("claim_type"),
+            "claim_scope": row.get("claim_scope"),
+            "verdict_rationale": row.get("verdict_rationale"),
+            "load_bearing_step": row.get("load_bearing_step"),
+            "repair_target": row.get("repair_target"),
         }
         missing = [
             name
@@ -336,19 +445,62 @@ def parse_audit_handoff(path: Path) -> list[dict]:
             raise ValueError(
                 f"science-fix handoff row {index}.descendants must be a non-negative integer"
             )
-        invocation_id = row.get("audit_invocation_id")
-        provenance = f"validated applied audit verdict for `{row['claim_id']}`"
-        if isinstance(invocation_id, str) and invocation_id.strip():
-            provenance += f" (invocation `{invocation_id}`)"
-        rows.append({
+
+        canonical = ledger_loader(row["claim_id"])
+        if not isinstance(canonical, dict):
+            raise ValueError(
+                f"origin/main ledger row for {row['claim_id']!r} is not an object"
+            )
+        expected = {
+            "claim_id": canonical.get("claim_id"),
+            "note_path": canonical.get("note_path"),
+            "cls": canonical.get("load_bearing_step_class"),
+            "audit_invocation_id": canonical.get("audit_invocation_id"),
+            "audit_verdict": canonical.get("audit_status"),
+            "claim_type": canonical.get("claim_type"),
+            "claim_scope": canonical.get("claim_scope"),
+            "verdict_rationale": canonical.get("verdict_rationale"),
+            "load_bearing_step": canonical.get("load_bearing_step"),
+            "repair_target": canonical.get("notes_for_re_audit_if_any"),
+            "descendants": canonical.get("transitive_descendants", 0),
+        }
+        mismatches = [
+            name for name, value in expected.items() if row.get(name) != value
+        ]
+        if mismatches:
+            raise ValueError(
+                f"science-fix handoff row {index} does not match origin/main "
+                f"ledger fields {mismatches}"
+            )
+        canonical_category = audit_repair_category(
+            expected["audit_verdict"], expected["repair_target"]
+        )
+        if canonical_category != row["category"]:
+            raise ValueError(
+                f"science-fix handoff row {index} category does not match "
+                "the origin/main audit verdict"
+            )
+
+        verified = {
             "category": row["category"],
             "claim_id": row["claim_id"],
             "note_path": row["note_path"],
             "descendants": descendants,
-            "cls": str(row.get("cls") or "?"),
-            "prompt_body": row["prompt_body"].strip(),
-            "prompt_source": provenance,
-        })
+            "cls": row["cls"],
+            "audit_invocation_id": row["audit_invocation_id"],
+            "audit_verdict": row["audit_verdict"],
+            "claim_type": row["claim_type"],
+            "claim_scope": row["claim_scope"],
+            "verdict_rationale": row["verdict_rationale"],
+            "load_bearing_step": row["load_bearing_step"],
+            "repair_target": row["repair_target"],
+        }
+        verified["prompt_body"] = audit_handoff_prompt(verified)
+        verified["prompt_source"] = (
+            f"validated applied audit verdict for `{row['claim_id']}` "
+            f"(invocation `{row['audit_invocation_id']}` on `origin/main`)"
+        )
+        rows.append(verified)
     return rows
 
 

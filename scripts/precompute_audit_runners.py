@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""Refresh the SHA-pinned runner output cache (`logs/runner-cache/`).
+"""Refresh the source-identity-pinned runner output cache (`logs/runner-cache/`).
 
 The audit lane stores one canonical cache file per runner at:
 
     logs/runner-cache/<runner-stem>.txt
 
-The cache header pins each cache to the runner's content SHA-256. A cache
-is fresh iff `runner_sha256` in the header equals the runner's current
-SHA-256. This script ensures that every runner referenced from the audit
-queue (or the full ledger) has a fresh cache, executing only the runners
-whose caches are missing or stale.
+The cache header pins each cache to the runner's content SHA-256 and, when the
+runner declares ``AUDIT_INPUT_PATHS``, a deterministic fingerprint of those
+inputs. This script ensures that every in-scope runner has a fresh cache and
+refuses to bind output if a runner or declared input changes during execution.
 
 Modes:
 
@@ -20,13 +19,13 @@ Modes:
       Refresh stale caches for runners in the full ledger, not just queue.
 
   precompute_audit_runners.py --staged-only
-      Refresh stale caches only for runners that are git-staged (for
-      pre-commit hook use).
+      Refresh stale caches for staged runners and for known runners whose
+      declared inputs are staged (for pre-commit hook use).
 
   precompute_audit_runners.py --pr-diff origin/main
-      Cover only runners changed in this branch vs <base-ref>. PR-scoped
-      analog of --staged-only; intended for the audit-lane PR CI check
-      so unrelated PRs don't fail on pre-existing main-branch drift.
+      Cover runners or declared inputs changed in this branch vs <base-ref>.
+      PR-scoped analog of --staged-only; intended for the audit-lane PR CI
+      check so unrelated PRs don't fail on pre-existing main-branch drift.
 
   precompute_audit_runners.py --check-only
       Do not execute anything; exit 1 with a list of stale caches if any
@@ -154,28 +153,45 @@ def collect_runners_from_ledger() -> list[str]:
     return list(seen.keys())
 
 
-def collect_runners_from_staged() -> list[str]:
-    """Return staged cached runners under scripts/.
+def known_cached_or_ledger_runners() -> list[str]:
+    """Return the stable universe used for diff-to-declared-input mapping."""
+    seen = {canonical_runner_path(path) for path in collect_runners_from_ledger()}
+    if CACHE_DIR.is_dir():
+        for cache in CACHE_DIR.glob("*.txt"):
+            candidate = f"scripts/{cache.stem}.py"
+            if (REPO_ROOT / candidate).exists():
+                seen.add(candidate)
+    return sorted(seen)
 
-    A runner is in scope when it is ledger-registered OR already has a
-    canonical cache. The latter covers sibling/boundary runners whose output
-    is committed even though no ledger row names them directly. Uncached
-    helpers remain excluded.
-    """
+
+def runners_for_changed_paths(changed_paths: list[str]) -> list[str]:
+    """Map changed runners and declared inputs to known cached/ledger runners."""
+    changed = set(changed_paths)
+    known = known_cached_or_ledger_runners()
+    known_set = set(known)
+    selected: set[str] = set()
+    for path in changed:
+        if path.startswith("scripts/") and path.endswith(".py"):
+            canonical = canonical_runner_path(path)
+            if canonical in known_set or rc.cache_path_for(canonical).exists():
+                selected.add(canonical)
+    for runner in known:
+        declared = rc.declared_input_paths(runner)
+        if declared and changed.intersection(declared):
+            selected.add(runner)
+    return sorted(selected)
+
+
+def collect_runners_from_staged() -> list[str]:
+    """Return known runners selected by staged runner or input changes."""
     res = subprocess.run(
         ["git", "diff", "--cached", "--name-only", "--diff-filter=ACMR"],
         cwd=REPO_ROOT, capture_output=True, text=True, check=False,
     )
-    staged = [s for s in res.stdout.split("\n") if s.startswith("scripts/") and s.endswith(".py")]
-    if not staged:
-        return []
-    known_runners = set(collect_runners_from_ledger())
-    out: list[str] = []
-    for p in staged:
-        canonical = canonical_runner_path(p)
-        if canonical in known_runners or rc.cache_path_for(canonical).exists():
-            out.append(canonical)
-    return out
+    staged = [s for s in res.stdout.splitlines() if s]
+    if any(path in _CACHE_INVALIDATORS for path in staged):
+        return collect_runners_from_ledger()
+    return runners_for_changed_paths(staged)
 
 
 # Helpers that, if changed, can invalidate every cache header at once.
@@ -214,19 +230,10 @@ def collect_runners_from_pr_diff(base_ref: str) -> list[str]:
         if res.stderr.strip():
             print(res.stderr.strip(), file=sys.stderr)
         sys.exit(2)
-    changed = [s for s in res.stdout.split("\n")
-               if s.startswith("scripts/") and s.endswith(".py")]
+    changed = [s for s in res.stdout.splitlines() if s]
     if any(c in _CACHE_INVALIDATORS for c in changed):
         return collect_runners_from_ledger()
-    if not changed:
-        return []
-    known_runners = set(collect_runners_from_ledger())
-    out: list[str] = []
-    for p in changed:
-        canonical = canonical_runner_path(p)
-        if canonical in known_runners or rc.cache_path_for(canonical).exists():
-            out.append(canonical)
-    return out
+    return runners_for_changed_paths(changed)
 
 
 # --- git helpers for direct-to-main commits ---
@@ -281,10 +288,15 @@ def commit_and_push_logs(message: str, paths: list[Path],
 
 def run_one(runner_path: str) -> dict:
     timeout_sec = runner_timeout_for(runner_path)
-    result = rc.execute_runner(runner_path, timeout_sec=timeout_sec)
+    result, cache_p = rc.execute_and_write_cache(
+        runner_path, timeout_sec=timeout_sec
+    )
     if result["status"] == "missing":
         return result
-    cache_p = rc.write_cache(runner_path, result)
+    if cache_p is None:
+        raise rc.RunnerIdentityChangedError(
+            f"runner disappeared before cache write: {runner_path}"
+        )
     result["cache_path"] = str(cache_p.relative_to(REPO_ROOT))
     return result
 

@@ -92,8 +92,9 @@ def main() -> int:
         f"[cache refresh] {runner} ({status}; timeout_sec={timeout_sec})",
         file=sys.stderr,
     )
-    result = rc.execute_runner(runner, timeout_sec=timeout_sec)
-    cache_path = rc.write_cache(runner, result)
+    result, cache_path = rc.execute_and_write_cache(runner, timeout_sec=timeout_sec)
+    if cache_path is None:
+        raise SystemExit(f"runner disappeared before cache write: {runner}")
     cache_text = cache_path.read_text(encoding="utf-8", errors="replace")
     print_cache_text(cache_text, args.tail_chars)
     return 0

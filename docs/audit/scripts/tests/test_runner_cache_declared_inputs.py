@@ -12,6 +12,7 @@ SCRIPT_DIR = Path(__file__).resolve().parents[4] / "scripts"
 sys.path.insert(0, str(SCRIPT_DIR))
 
 import runner_cache as rc  # noqa: E402
+import precompute_audit_runners as precompute  # noqa: E402
 
 
 class DeclaredInputFreshnessTest(unittest.TestCase):
@@ -36,6 +37,13 @@ class DeclaredInputFreshnessTest(unittest.TestCase):
         )
         patcher.start()
         self.addCleanup(patcher.stop)
+        precompute_patcher = mock.patch.multiple(
+            precompute,
+            REPO_ROOT=self.root,
+            CACHE_DIR=self.root / "logs" / "runner-cache",
+        )
+        precompute_patcher.start()
+        self.addCleanup(precompute_patcher.stop)
         self.result = {
             "stdout": "PASS\n",
             "stderr": "",
@@ -82,6 +90,40 @@ class DeclaredInputFreshnessTest(unittest.TestCase):
         )
         with self.assertRaises(ValueError):
             rc.write_cache(self.runner, dict(self.result))
+
+    def test_input_mutation_during_execution_refuses_cache_write(self) -> None:
+        before = rc.capture_runner_identity(self.runner)
+
+        def mutate_while_running(_runner: str, timeout_sec: int) -> dict:
+            self.source.write_text("v2\n", encoding="utf-8")
+            return dict(self.result, timeout_sec=timeout_sec)
+
+        with mock.patch.object(rc, "execute_runner", side_effect=mutate_while_running):
+            with self.assertRaises(rc.RunnerIdentityChangedError):
+                rc.execute_and_write_cache(self.runner, timeout_sec=120)
+        self.assertNotEqual(before, rc.capture_runner_identity(self.runner))
+        self.assertFalse(rc.cache_path_for(self.runner).exists())
+
+    def test_staged_input_only_change_selects_declaring_runner(self) -> None:
+        completed = __import__("subprocess").CompletedProcess(
+            args=[], returncode=0, stdout="docs/source.md\n", stderr=""
+        )
+        with mock.patch.object(
+            precompute, "collect_runners_from_ledger", return_value=[self.runner]
+        ), mock.patch.object(precompute.subprocess, "run", return_value=completed):
+            self.assertEqual(precompute.collect_runners_from_staged(), [self.runner])
+
+    def test_pr_diff_input_only_change_selects_declaring_runner(self) -> None:
+        completed = __import__("subprocess").CompletedProcess(
+            args=[], returncode=0, stdout="docs/source.md\n", stderr=""
+        )
+        with mock.patch.object(
+            precompute, "collect_runners_from_ledger", return_value=[self.runner]
+        ), mock.patch.object(precompute.subprocess, "run", return_value=completed):
+            self.assertEqual(
+                precompute.collect_runners_from_pr_diff("origin/main"),
+                [self.runner],
+            )
 
 
 if __name__ == "__main__":

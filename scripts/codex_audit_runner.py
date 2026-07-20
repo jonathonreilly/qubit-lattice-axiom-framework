@@ -45,9 +45,8 @@ import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
-# Shared SHA-pinned runner cache. The audit prompt's Section 3 (runner
-# stdout) is sourced from logs/runner-cache/<stem>.txt; cache freshness
-# is keyed on the runner's content SHA-256.
+# Shared source-identity-pinned runner cache. A header always pins the runner
+# SHA and additionally pins declared mutable repository inputs when present.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import runner_cache as rc
 
@@ -773,11 +772,10 @@ def canonical_runner_path(runner_path: str | Path) -> str:
 
 
 def find_cached_runner_output(runner_path: str) -> str | None:
-    """Return cached runner stdout via the SHA-pinned cache layout
-    (`logs/runner-cache/<stem>.txt`). Returns None if no cache exists or
-    if the cache header's `runner_sha256` does not match the runner's
-    current SHA — a stale cache is treated as if absent. Refresh via
-    `python3 scripts/precompute_audit_runners.py`.
+    """Return cached stdout only while every required source identity matches.
+
+    A stale runner SHA or declared-input fingerprint is treated as absent.
+    Refresh via `python3 scripts/precompute_audit_runners.py`.
     """
     if not runner_path:
         return None
@@ -789,9 +787,10 @@ def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
                       use_cache: bool = False) -> str:
     """Get runner output, live by default.
 
-    Source-SHA caches do not authenticate mutable note/data/registry inputs,
-    so authority-bearing audit callers must keep ``use_cache=False``. The
-    opt-in cache path remains for non-authoritative diagnostics.
+    Caches authenticate only the repository inputs a runner explicitly
+    declares; they cannot authenticate undeclared environment/network state.
+    Authority-bearing audit callers therefore keep ``use_cache=False`` by
+    default. The opt-in cache path remains for non-authoritative diagnostics.
     """
     if not runner_path:
         return ""

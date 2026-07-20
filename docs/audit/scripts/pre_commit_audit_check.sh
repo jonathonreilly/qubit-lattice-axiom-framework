@@ -20,19 +20,16 @@ cd "${REPO_ROOT}"
 
 STAGED="$(git diff --cached --name-only)"
 
-# Runner cache staleness: if any staged file is a primary runner under
-# scripts/, its cache MUST reflect the new SHA-256. Otherwise the
-# auditor would read stale evidence — exactly what the cache exists to
-# prevent.
-if echo "$STAGED" | grep -qE '^scripts/.*\.py$'; then
-    if ! python3 scripts/precompute_audit_runners.py --staged-only --check-only; then
-        echo "[pre-commit] runner cache STALE for one or more staged runners."
-        echo "  Refresh with:"
-        echo "    python3 scripts/precompute_audit_runners.py --staged-only"
-        echo "  then 'git add logs/runner-cache/' and commit again."
-        echo "  (Pass --no-verify only if you understand the audit-evidence cost.)"
-        exit 1
-    fi
+# Runner cache staleness: the selector reverse-maps every staged path to known
+# runners whose AUDIT_INPUT_PATHS include it, in addition to staged runners.
+# Run it unconditionally so a declared-input-only edit cannot evade the gate.
+if ! python3 scripts/precompute_audit_runners.py --staged-only --check-only; then
+    echo "[pre-commit] runner cache STALE for a staged runner or declared input."
+    echo "  Refresh with:"
+    echo "    python3 scripts/precompute_audit_runners.py --staged-only"
+    echo "  then 'git add logs/runner-cache/' and commit again."
+    echo "  (Pass --no-verify only if you understand the audit-evidence cost.)"
+    exit 1
 fi
 
 # Quick path: skip ledger checks if no docs/ files are staged.

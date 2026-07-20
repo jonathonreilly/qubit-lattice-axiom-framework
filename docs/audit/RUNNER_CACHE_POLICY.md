@@ -1,18 +1,21 @@
 # Runner Cache Policy
 
-**Status:** binding for all PRs that modify runners under `scripts/`.
+**Status:** binding for all PRs that modify cached runners under `scripts/` or
+any repository input declared by those runners.
 
 ## What this is
 
-Every primary runner referenced from a ledger row has a SHA-pinned cache
-file at:
+Every primary runner referenced from a ledger row has a source-identity-pinned
+cache file at:
 
 ```
 logs/runner-cache/<runner-stem>.txt
 ```
 
-The cache header pins the file to the runner's content SHA-256. The
-audit prompt's Section 3 (runner output) is sourced from this cache.
+The cache header pins the file to the runner's content SHA-256. A runner that
+reads mutable repository files must declare them in `AUDIT_INPUT_PATHS`; its
+header also pins a deterministic fingerprint of those files. The audit prompt's
+Section 3 uses the cache only while every required identity matches.
 
 The cache is **version-controlled**: cache files live in git on every
 branch and are landed alongside the runner change that produced them.
@@ -22,9 +25,10 @@ branch and are landed alongside the runner change that produced them.
 The audit lane's auditor uses the strongest configured full Codex GPT
 model at maximum reasoning by default. It judges each claim from a
 restricted packet that includes the runner's source code and the runner's
-stdout. If the runner changes but the cached stdout doesn't, the auditor
-sees a stale picture and may issue a verdict that doesn't match the
-current code. The cache must therefore stay synchronized with its runner.
+stdout. If the runner or one of its repository inputs changes but the cached
+stdout doesn't, the auditor sees a stale picture and may issue a verdict that
+doesn't match the current evidence. The cache must therefore stay synchronized
+with both its runner and its declared inputs.
 
 A naive "always run live" approach has two costs we explicitly do not
 want to pay: long compute jobs (`frontier_alpha_s`, lattice plaquette
@@ -39,10 +43,11 @@ analysis command:
 python3 scripts/cached_runner_output.py scripts/<runner>.py
 ```
 
-This command prints a fresh SHA-pinned cache if one exists. If the cache is
-missing or stale, it runs the runner once, writes the canonical cache, and then
-prints that cached result. Use `--check-only` when analysis must refuse live
-execution, and use `--refresh` only when intentionally replacing a fresh cache.
+This command prints a fresh source-identity-pinned cache if one exists. If the
+cache is missing or stale, it runs the runner once, writes the canonical cache,
+and then prints that cached result. Use `--check-only` when analysis must refuse
+live execution, and use `--refresh` only when intentionally replacing a fresh
+cache.
 
 ## Cache file format
 
@@ -50,6 +55,7 @@ execution, and use `--refresh` only when intentionally replacing a fresh cache.
 ===== runner cache v1 =====
 runner: scripts/<name>.py
 runner_sha256: <hex>
+input_fingerprint_sha256: <hex>  # present only with AUDIT_INPUT_PATHS
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 12.34
@@ -60,49 +66,86 @@ status: ok          # ok | nonzero_exit | timeout | error
 <stderr, capped at 50 KB tail>
 ```
 
-No timestamps anywhere. The file is purely a function of the runner SHA
-and the execution result, so re-running `precompute_audit_runners.py` on
-an already-fresh cache is a byte-level no-op (gate-clean).
+No timestamps anywhere. The file is purely a function of the captured runner
+SHA, optional declared-input fingerprint, and execution result, so re-running
+`precompute_audit_runners.py` on an already-fresh cache is a byte-level no-op
+(gate-clean).
+
+## Declared repository inputs
+
+A cached runner that reads mutable repository files declares every such file
+with a literal top-level tuple or list:
+
+```python
+AUDIT_INPUT_PATHS = (
+    "docs/SOURCE_NOTE.md",
+    "docs/audit/data/source_fixture.json",
+)
+```
+
+The declaration must be non-empty, unique, normalized, repo-relative, and
+contain no `..` segment. It is parsed with `ast.literal_eval`; the cache layer
+never imports the runner to discover inputs. An invalid declaration or an
+unreadable declared file blocks cache writing. Environment variables, network
+responses, machine-local files, randomness, wall-clock state, and other
+mutable inputs must be eliminated or explicitly fixtured before a cache can be
+treated as canonical evidence.
 
 ## Freshness rule
 
-A cache file is **fresh** iff its header `runner_sha256` equals the
-SHA-256 of the runner file on disk. Anything else is **stale**:
+A cache file is **fresh** iff its header `runner_sha256` equals the SHA-256 of
+the runner file on disk and, when `AUDIT_INPUT_PATHS` is declared, its
+`input_fingerprint_sha256` equals the deterministic fingerprint of the current
+path/content sequence. Anything else is **stale**:
 
 | Status         | Meaning                                                         |
 | -------------- | --------------------------------------------------------------- |
-| `fresh`        | `runner_sha256` matches current SHA — auditor uses this cache   |
+| `fresh`        | Runner SHA and any required input fingerprint match             |
 | `missing`      | No cache file exists for this runner                            |
 | `corrupt`      | Cache file exists but the header is malformed                   |
 | `sha_mismatch` | Header SHA differs from current runner SHA — runner was edited  |
+| `input_mismatch` | Declared inputs are invalid, unreadable, missing from the header, or differ from the current fingerprint |
 
-`missing`, `corrupt`, and `sha_mismatch` all require refresh.
+Every status other than `fresh` requires repair or refresh.
 
 ## Policy
 
 Three surfaces keep runner caches fresh without making open PRs noisy:
 
 1. **Pre-commit hook** (`docs/audit/scripts/pre_commit_audit_check.sh`)
-   When a developer stages a Python file under `scripts/`, the hook
-   runs `precompute_audit_runners.py --staged-only --check-only` and
-   blocks the commit if any staged runner has a stale cache. The
-   developer's fix is to run `precompute_audit_runners.py --staged-only`
-   and stage the resulting `logs/runner-cache/` files.
+   The hook always runs
+   `precompute_audit_runners.py --staged-only --check-only`. The selector
+   includes staged known runners and reverse-maps every staged path to known
+   cached/ledger runners whose `AUDIT_INPUT_PATHS` contain it. The hook blocks
+   if any selected cache is stale. The developer's fix is to run
+   `precompute_audit_runners.py --staged-only` and stage the resulting
+   `logs/runner-cache/` files.
 
 2. **PR CI advisory** (`.github/workflows/audit.yml`)
    Every PR runs a diff-scoped
-   `precompute_audit_runners.py --pr-diff <base> --check-only` and
-   reports stale caches as warnings/job-summary advisories. It does not
-   red-fail the PR because `main` moves continuously and PRs may stay
-   open while review catches up. Review-loop remains responsible for
-   regenerating caches from current `main` before landing.
+   `precompute_audit_runners.py --pr-diff <base> --check-only`. The same
+   reverse map includes declared-input-only changes. It reports stale caches as
+   warnings/job-summary advisories rather than a red check because `main` moves
+   continuously and PRs may stay open while review catches up. Review-loop's
+   landing gate remains responsible for regenerating caches from current
+   `main` before landing.
 
 3. **Audit-runner consumption** (`scripts/codex_audit_runner.py`)
-   The audit runner reads cache files only when their SHA matches.
-   A stale cache is treated as if absent, and the audit runner falls
-   back to live execution. Live execution writes back to the cache,
-   so the first audit after a missed refresh is slow but
-   self-healing.
+   The audit runner reads cache files only when the runner SHA and any required
+   declared-input fingerprint match. A stale cache is treated as if absent,
+   and authority-bearing audit calls execute the runner live by default. Those
+   live audit calls do not write the canonical cache; intentional refreshes use
+   the precompute or cache-first command and the concurrency check below.
+
+## Execution/concurrency binding
+
+Before execution, the cache layer captures the runner SHA and declared-input
+fingerprint. After execution it recomputes both. If either identity moved, it
+deletes the in-progress log, refuses the canonical cache write, reports an
+orchestrator error, and leaves the previous cache stale. When identities agree,
+the header is written from the *pre-execution* capture. Therefore an edit in the
+small interval after the post-check cannot bind old output to new bytes: the
+pre-run header immediately mismatches the edited file.
 
 ## Per-runner timeouts
 
@@ -168,7 +211,7 @@ python3 scripts/precompute_audit_runners.py
 # Cover the full ledger, not just queue
 python3 scripts/precompute_audit_runners.py --all
 
-# Refresh only currently-staged runners (pre-commit fix)
+# Refresh runners selected by staged runner or declared-input changes
 python3 scripts/precompute_audit_runners.py --staged-only
 
 # Specific runners by path
@@ -189,8 +232,8 @@ python3 scripts/precompute_audit_runners.py --cleanup-orphans
 
 | File                                          | Role                                          |
 | --------------------------------------------- | --------------------------------------------- |
-| `scripts/runner_cache.py`                     | Shared module: SHA, paths, format, execution |
-| `scripts/precompute_audit_runners.py`         | Refresh tool with all the modes above         |
+| `scripts/runner_cache.py`                     | Shared module: identities, paths, format, execution binding |
+| `scripts/precompute_audit_runners.py`         | Refresh tool and changed-input reverse selector |
 | `scripts/cached_runner_output.py`             | Cache-first stdout command for analysis work  |
 | `scripts/codex_audit_runner.py`               | Reads cache via `runner_cache.cache_excerpt_for_audit` |
 | `docs/audit/scripts/pre_commit_audit_check.sh`| Pre-commit gate                               |
@@ -199,7 +242,7 @@ python3 scripts/precompute_audit_runners.py --cleanup-orphans
 
 ## Bypass
 
-`git commit --no-verify` skips the pre-commit hook. Do this only when
-you understand the audit-evidence cost: any subsequent audit reading the
-stale cache will be misled. The CI gate cannot be bypassed; PRs with
-stale caches cannot be merged.
+`git commit --no-verify` skips the local hook. The PR check is advisory, so it
+is not an enforcement substitute. Review-loop must still reject or refresh any
+stale selected cache before landing; audit consumption independently refuses a
+cache whose current identities do not match.

@@ -26,9 +26,10 @@ Format (no timestamps anywhere — gate-clean):
     ----- stderr -----
     <stderr, capped at 50KB tail>
 
-The audit runner reads from this cache; pre-commit refreshes any cache
-whose runner has been modified; CI fails any PR whose caches drift from
-their runners' SHAs.
+The audit runner reads from this cache; pre-commit and CI select a cache when
+either its runner or one of its declared inputs changes. Refresh binds the
+output to identities captured before execution and refuses to write if the
+runner or any declared input moves during execution.
 """
 from __future__ import annotations
 
@@ -39,6 +40,7 @@ import re
 import subprocess
 import sys
 import time
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
@@ -84,6 +86,18 @@ TIMEOUT_LEGACY_OVERRIDES: list[tuple[str, int]] = [
     ("frontier_self_consistent_field", 600),
     ("frontier_emergent_lorentz", 600),
 ]
+
+
+@dataclass(frozen=True)
+class RunnerIdentity:
+    """Immutable source identities to which one execution result is bound."""
+
+    runner_sha256: str
+    input_fingerprint_sha256: str | None
+
+
+class RunnerIdentityChangedError(RuntimeError):
+    """The runner or a declared input changed while the runner executed."""
 
 
 def declared_timeout_for(runner_path: str | Path) -> int | None:
@@ -204,6 +218,24 @@ def declared_input_fingerprint(runner_path: str | Path) -> str | None:
         digest.update(len(body).to_bytes(8, "big"))
         digest.update(body)
     return digest.hexdigest()
+
+
+def capture_runner_identity(runner_path: str | Path) -> RunnerIdentity | None:
+    """Capture the runner SHA and declared-input fingerprint atomically enough
+    for pre/post execution comparison.
+
+    ``None`` means the runner is absent. Invalid declarations and unreadable
+    declared inputs fail loudly rather than being treated as input-free.
+    """
+    runner_sha = runner_sha256(runner_path)
+    if runner_sha is None:
+        return None
+    input_fp = declared_input_fingerprint(runner_path)
+    if input_fp == "":
+        raise ValueError(
+            f"invalid or unreadable AUDIT_INPUT_PATHS declaration: {runner_path}"
+        )
+    return RunnerIdentity(runner_sha, input_fp)
 
 
 def cache_path_for(runner_path: str | Path) -> Path:
@@ -383,18 +415,33 @@ def execute_runner(runner_path: str, timeout_sec: int) -> dict:
     }
 
 
-def write_cache(runner_path: str, result: dict, runner_sha: str | None = None) -> Path:
+def write_cache(
+    runner_path: str,
+    result: dict,
+    runner_sha: str | None = None,
+    *,
+    identity: RunnerIdentity | None = None,
+) -> Path:
     """Write the result of execute_runner to the canonical cache path.
-    Pure function of runner SHA + execution result — no timestamps."""
-    if runner_sha is None:
-        runner_sha = runner_sha256(runner_path)
-    if runner_sha is None:
+    Pure function of captured runner/input identities plus execution result.
+
+    Execution callers must pass the pre-run ``identity`` after comparing it to
+    a post-run capture. Direct fixture/migration callers may omit it, in which
+    case the current identity is captured at write time.
+    """
+    if identity is not None and runner_sha is not None:
+        raise ValueError("pass identity or runner_sha, not both")
+    if identity is None:
+        captured = capture_runner_identity(runner_path)
+        if captured is None:
+            raise FileNotFoundError(f"runner missing on disk: {runner_path}")
+        if runner_sha is not None:
+            captured = RunnerIdentity(runner_sha, captured.input_fingerprint_sha256)
+        identity = captured
+    runner_sha = identity.runner_sha256
+    input_fp = identity.input_fingerprint_sha256
+    if not runner_sha:
         raise FileNotFoundError(f"runner missing on disk: {runner_path}")
-    input_fp = declared_input_fingerprint(runner_path)
-    if input_fp == "":
-        raise ValueError(
-            f"invalid or unreadable AUDIT_INPUT_PATHS declaration: {runner_path}"
-        )
     cache_p = cache_path_for(runner_path)
     cache_p.parent.mkdir(parents=True, exist_ok=True)
 
@@ -428,6 +475,34 @@ def write_cache(runner_path: str, result: dict, runner_sha: str | None = None) -
     except OSError:
         pass
     return cache_p
+
+
+def execute_and_write_cache(
+    runner_path: str, timeout_sec: int
+) -> tuple[dict, Path | None]:
+    """Execute once and cache only if pre/post source identities agree.
+
+    The written header always uses the pre-execution identity. If a concurrent
+    edit lands after the post-check but before the write, the pre-run header is
+    immediately stale; it can never certify output against the new bytes.
+    """
+    before = capture_runner_identity(runner_path)
+    result = execute_runner(runner_path, timeout_sec=timeout_sec)
+    if before is None or result.get("status") == "missing":
+        return result, None
+    after = capture_runner_identity(runner_path)
+    if after != before:
+        live = live_log_path_for(runner_path)
+        try:
+            if live.exists():
+                live.unlink()
+        except OSError:
+            pass
+        raise RunnerIdentityChangedError(
+            f"runner or declared input changed during execution: {runner_path}; "
+            f"before={before!r}; after={after!r}"
+        )
+    return result, write_cache(runner_path, result, identity=before)
 
 
 def cache_excerpt_for_audit(runner_path: str | Path,

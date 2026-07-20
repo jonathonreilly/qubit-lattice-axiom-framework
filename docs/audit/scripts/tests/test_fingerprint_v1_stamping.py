@@ -289,11 +289,13 @@ class FingerprintV1StampingTest(unittest.TestCase):
         self.assertEqual(
             snap["runner_cache_state"][RUNNER_PATH],
             {"cache_freshness": "fresh", "cache_runner_sha256": runner_sha,
+             "cache_input_fingerprint_sha256": None,
              "cache_status": "ok", "cache_exit_code": "0"},
         )
         self.assertEqual(
             snap["runner_cache_state"][HELPER_PATH],
             {"cache_freshness": "fresh", "cache_runner_sha256": helper_sha,
+             "cache_input_fingerprint_sha256": None,
              "cache_status": "ok", "cache_exit_code": "0"},
         )
         self.assertEqual(
@@ -436,6 +438,54 @@ class FingerprintV1StampingTest(unittest.TestCase):
         )
         self.assertFalse(parked)
         self.assertEqual(reason, "premise_registry_epoch_changed")
+
+    def test_declared_input_movement_survives_cache_refresh(self):
+        self.fx._write("docs/fixture_input.md", "v1\n")
+        self.fx._write(
+            RUNNER_PATH,
+            "AUDIT_INPUT_PATHS = ('docs/fixture_input.md',)\n" + RUNNER_BODY,
+        )
+        self.fx.write_runner_caches()
+        row = copy.deepcopy(self._apply("audited_conditional"))
+        before_fp = row["audit_state_snapshot"]["runner_cache_state"][
+            RUNNER_PATH
+        ]["cache_input_fingerprint_sha256"]
+
+        self.fx._write("docs/fixture_input.md", "v2\n")
+        self.fx.write_runner_caches()
+        after_state = caq.fingerprint_runner_cache_state(row)[RUNNER_PATH]
+        self.assertNotEqual(
+            before_fp, after_state["cache_input_fingerprint_sha256"]
+        )
+        self.assertEqual(after_state["cache_freshness"], "fresh")
+        parked, reason = caq._live_conditional_would_park(
+            row, self.fx.ledger["rows"]
+        )
+        self.assertFalse(parked)
+        self.assertEqual(reason, "runner_cache_state_changed")
+
+    def test_input_mismatch_is_a_valid_freshness_enum(self):
+        row = copy.deepcopy(self._apply("audited_conditional"))
+        row["audit_state_snapshot"]["runner_cache_state"][RUNNER_PATH][
+            "cache_freshness"
+        ] = "input_mismatch"
+        self.assertNotIn(
+            f"runner_cache_state:{RUNNER_PATH}:bad_freshness",
+            caq.fingerprint_v1_problems(row["audit_state_snapshot"]),
+        )
+
+    def test_legacy_four_field_cache_entries_remain_valid_and_comparable(self):
+        row = copy.deepcopy(self._apply("audited_conditional"))
+        for entry in row["audit_state_snapshot"]["runner_cache_state"].values():
+            del entry["cache_input_fingerprint_sha256"]
+        self.assertEqual(
+            caq.fingerprint_v1_problems(row["audit_state_snapshot"]), []
+        )
+        parked, reason = caq._live_conditional_would_park(
+            row, self.fx.ledger["rows"]
+        )
+        self.assertTrue(parked)
+        self.assertEqual(reason, "no_recorded_blocker_movement")
 
     def test_classifier_current_channel_is_recomputed_from_live_source(self):
         row = self._apply("audited_conditional")

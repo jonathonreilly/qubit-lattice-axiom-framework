@@ -171,11 +171,14 @@ _POLICY_VERSION_KEYS = {
     "no_go_discipline_gate_sha256",
     "audit_prompt_template_sha256",
 }
-_RUNNER_CACHE_ENTRY_KEYS = {
+_RUNNER_CACHE_ENTRY_KEYS_LEGACY = {
     "cache_freshness",
     "cache_runner_sha256",
     "cache_status",
     "cache_exit_code",
+}
+_RUNNER_CACHE_ENTRY_KEYS = _RUNNER_CACHE_ENTRY_KEYS_LEGACY | {
+    "cache_input_fingerprint_sha256",
 }
 _CLASSIFIER_COUNT_KEYS = {"A", "B", "C", "D"}
 
@@ -263,6 +266,9 @@ def fingerprint_runner_cache_state(row: dict) -> dict:
         state[path] = {
             "cache_freshness": runner_cache.cache_status(path),
             "cache_runner_sha256": header.get("runner_sha256"),
+            "cache_input_fingerprint_sha256": header.get(
+                "input_fingerprint_sha256"
+            ),
             "cache_status": header.get("status"),
             "cache_exit_code": header.get("exit_code"),
         }
@@ -395,16 +401,23 @@ def fingerprint_v1_problems(snapshot: object) -> list[str]:
         if not isinstance(path, str) or not isinstance(entry, dict):
             problems.append("runner_cache_state:invalid_entry")
             continue
-        if set(entry) != _RUNNER_CACHE_ENTRY_KEYS:
+        entry_keys = frozenset(entry)
+        if entry_keys not in {
+            frozenset(_RUNNER_CACHE_ENTRY_KEYS_LEGACY),
+            frozenset(_RUNNER_CACHE_ENTRY_KEYS),
+        }:
             problems.append(f"runner_cache_state:{path}:wrong_keys")
             continue
         if entry["cache_freshness"] not in {
-            "fresh", "missing", "corrupt", "sha_mismatch"
+            "fresh", "missing", "corrupt", "sha_mismatch", "input_mismatch"
         }:
             problems.append(f"runner_cache_state:{path}:bad_freshness")
         cache_sha = entry["cache_runner_sha256"]
         if cache_sha is not None and not _is_sha256(cache_sha):
             problems.append(f"runner_cache_state:{path}:bad_sha256")
+        input_fp = entry.get("cache_input_fingerprint_sha256")
+        if input_fp is not None and not _is_sha256(input_fp):
+            problems.append(f"runner_cache_state:{path}:bad_input_fingerprint")
         if entry["cache_status"] is not None and not isinstance(entry["cache_status"], str):
             problems.append(f"runner_cache_state:{path}:bad_status")
         if entry["cache_exit_code"] is not None and not isinstance(entry["cache_exit_code"], str):
@@ -543,7 +556,25 @@ def _live_conditional_would_park(row: dict, rows: dict[str, dict]) -> tuple[bool
             f"cannot read current v1 blocker surface: {exc}"
         ) from exc
     for snap_key, _compat_current_key in FINGERPRINT_V1_OPAQUE_CHANNELS:
-        if current_channels[snap_key] != snapshot[snap_key]:
+        current_value = current_channels[snap_key]
+        snapshot_value = snapshot[snap_key]
+        if snap_key == "runner_cache_state":
+            # Existing v1 snapshots predate declared-input identity. Preserve
+            # their four-field comparison shape instead of failing them as a
+            # malformed migration. Newly stamped entries carry the fifth field
+            # and therefore detect input movement even after cache refresh.
+            current_value = {
+                path: (
+                    {k: v for k, v in entry.items()
+                     if k != "cache_input_fingerprint_sha256"}
+                    if path in snapshot_value
+                    and "cache_input_fingerprint_sha256"
+                    not in snapshot_value[path]
+                    else entry
+                )
+                for path, entry in current_value.items()
+            }
+        if current_value != snapshot_value:
             return False, f"{snap_key}_changed"
     return True, "no_recorded_blocker_movement"
 

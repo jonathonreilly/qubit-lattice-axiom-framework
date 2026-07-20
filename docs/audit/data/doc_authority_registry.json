@@ -59,8 +59,7 @@
     {
       "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
       "class": "E",
-      "status": "in_flight_pr",
-      "pr": 5413,
+      "status": "landed",
       "note": "Proof-search operating protocol for theorem and hard-reduction lanes; process authority only, with no physics premise weight."
     },
     {

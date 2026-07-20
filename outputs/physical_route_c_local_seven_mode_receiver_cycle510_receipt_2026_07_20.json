@@ -1,0 +1,20 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "direct_dependency_map_canonical_sha256": "016c9248154063abdb5ca998c240be0a1c1e8980e0305d3580785e6fbc60b5fb",
+  "direct_dependency_map_hash_method": "sha256(jq -cS .dependencies output + newline)",
+  "environment": {
+    "numpy": "2.4.4",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.5",
+    "scipy": "1.17.1"
+  },
+  "result_transcript_sha256": "f8c12e463d6b44df22964b04a05d0b60e332ab408e4340fdd61421555762d84a",
+  "runner_sha256": "57592ac109321cb273f73b312d205cefc18427329d20c34f18f63d56dcbd5175",
+  "schema": "cycle510-local-pre-response-receipt-v1",
+  "scientific_payload_excluding_resources_sha256": "7ee5dcebc9a1b53816df87db754f97b783cb3963b0ee08895dd6d090540af1d8",
+  "scientific_payload_hash_method": "sha256(jq -cS 'del(.resources)' output + newline)",
+  "status": "local-pre-response-certificate",
+  "tests_passed": 18,
+  "tests_total": 18
+}

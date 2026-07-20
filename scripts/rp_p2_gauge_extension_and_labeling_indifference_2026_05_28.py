@@ -102,13 +102,19 @@ def expected_spectrum_from_h(h: np.ndarray, m: float) -> np.ndarray:
 def matrix_diagnostics(h: np.ndarray, m: float) -> dict[str, float]:
     """Check anti-Hermiticity, Hermiticity, positivity, and modal equality."""
     cmat = two_step_matrix(h, m)
+    dim = h.shape[0]
+    identity = np.eye(dim, dtype=complex)
+    zero = np.zeros((dim, dim), dtype=complex)
+    t_even = np.block([[-2.0 * (m * identity + h), identity], [identity, zero]])
     antiherm_err = float(np.max(np.abs(h + h.conj().T)))
     herm_err = float(np.max(np.abs(cmat - cmat.conj().T)))
+    factor_err = float(np.max(np.abs(cmat - t_even.conj().T @ t_even)))
     observed = np.linalg.eigvalsh((cmat + cmat.conj().T) / 2.0)
     expected = expected_spectrum_from_h(h, m)
     return {
         "antiherm_err": antiherm_err,
         "herm_err": herm_err,
+        "factor_err": factor_err,
         "min_eig": float(np.min(observed)),
         "modal_residual": float(np.max(np.abs(np.sort(observed) - expected))),
     }
@@ -160,6 +166,7 @@ def scan_static_links(factory, *, length: int, count: int, m: float) -> dict[str
     """Regression scan over supplied static unitary-link matrices."""
     worst_antiherm = 0.0
     worst_herm = 0.0
+    worst_factor = 0.0
     worst_modal = 0.0
     min_eig = math.inf
     failures = 0
@@ -168,11 +175,13 @@ def scan_static_links(factory, *, length: int, count: int, m: float) -> dict[str
         diag = matrix_diagnostics(spatial_hop_matrix(links), m)
         worst_antiherm = max(worst_antiherm, diag["antiherm_err"])
         worst_herm = max(worst_herm, diag["herm_err"])
+        worst_factor = max(worst_factor, diag["factor_err"])
         worst_modal = max(worst_modal, diag["modal_residual"])
         min_eig = min(min_eig, diag["min_eig"])
         if (
             diag["antiherm_err"] >= TOL
             or diag["herm_err"] >= TOL
+            or diag["factor_err"] >= TOL
             or diag["modal_residual"] >= TOL
             or diag["min_eig"] <= 0.0
         ):
@@ -181,6 +190,7 @@ def scan_static_links(factory, *, length: int, count: int, m: float) -> dict[str
         "count": count,
         "worst_antiherm": worst_antiherm,
         "worst_herm": worst_herm,
+        "worst_factor": worst_factor,
         "worst_modal": worst_modal,
         "min_eig": min_eig,
         "failures": failures,
@@ -294,6 +304,7 @@ def main() -> int:
         print(f"    supplied link lists    = {scan['count']}")
         print(f"    max ||h+h^dag||        = {scan['worst_antiherm']:.3e}")
         print(f"    max ||C-C^dag||        = {scan['worst_herm']:.3e}")
+        print(f"    max ||C-T_even^dag T_even|| = {scan['worst_factor']:.3e}")
         print(f"    max modal residual     = {scan['worst_modal']:.3e}")
         print(f"    min eig(C)             = {scan['min_eig']:.6e}")
         print(f"    failed lists           = {scan['failures']} / {scan['count']}")

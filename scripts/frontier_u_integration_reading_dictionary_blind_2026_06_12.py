@@ -416,8 +416,27 @@ print("=" * 78)
 
 dep_texts = {key: path.read_text(encoding="utf-8") for key, path in DEPS.items()}
 check(
-    "Dependency grep: RP/P2 supplies config-by-config fixed-background phrase",
-    "config-by-config" in dep_texts["rp_p2"] and "fixed-background" in dep_texts["rp_p2"],
+    "Dependency contract: conditional anti-Hermitian recurrence theorem is explicit",
+    "h^dag = -h" in dep_texts["rp_p2"]
+    and "Supply the alternating recurrence" in dep_texts["rp_p2"]
+    and "`C(h,m)` is Hermitian positive definite" in dep_texts["rp_p2"],
+)
+check(
+    "Dependency firewall: physical transfer, RP, and P2 are explicitly excluded",
+    "No quantum-transfer, reflection-positivity, dynamical-gauge, P2" in dep_texts["rp_p2"]
+    and "a second-quantized or many-body operator `Gamma(t1)`" in dep_texts["rp_p2"],
+)
+check(
+    "Dependency firewall: deleted physical/RP claims remain absent",
+    not any(
+        claim in dep_texts["rp_p2"]
+        for claim in (
+            "T_hat^2[U] = B[U]^dag B[U]",
+            "positive Hermitian config-by-config",
+            "Fixed-Gauge RP Transfer Positivity",
+            "This is exactly the two-step reflection-positivity statement",
+        )
+    ),
 )
 check(
     "Dependency grep: Substep1 supplies det(M) and single-pair Grassmann phrases",

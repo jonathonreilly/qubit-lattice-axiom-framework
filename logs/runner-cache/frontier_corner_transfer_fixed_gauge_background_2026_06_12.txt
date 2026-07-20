@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_corner_transfer_fixed_gauge_background_2026_06_12.py
-runner_sha256: 0819995c541a7066b84a232a881ee5c6be76d24e57d8bf65cc18dc6acdb8e90e
+runner_sha256: 3727786952364761cf45f4d5ebe55cdae595f9dfc5361a15e44e82a3096b7c62
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -55,9 +55,10 @@ N5 -- assembly
 ----------------------------------------------------------------------------------------
 B-checks -- source-note and dependency hygiene
 ----------------------------------------------------------------------------------------
-  [PASS] engine grep: config-by-config phrase present
-  [PASS] engine grep: B[U]^dag B[U] two-step phrase present
-  [PASS] engine grep: fixed arbitrary SU(3)/U(1) temporal-gauge authority present
+  [PASS] engine contract: anti-Hermitian recurrence inputs are explicit
+  [PASS] engine contract: exact positive-definite modal theorem is present
+  [PASS] engine firewall: physical transfer, RP, and P2 are explicitly excluded
+  [PASS] engine firewall: deleted physical/RP claims remain absent
   [PASS] substep1 grep: canonical Berezin determinant side present
   [PASS] registrability grep: Record-registrable / phase-free class present
   [PASS] firewall sentence: fixed background only
@@ -69,7 +70,7 @@ B-checks -- source-note and dependency hygiene
   [PASS] No-promotion statement present
   [PASS] Berezin self-check flag is true
 
-SCORECARD: PASS=30 FAIL=0
+SCORECARD: PASS=31 FAIL=0
 SUMMARY: fixed-background corner transfer checks complete; U-integrated gauge dynamics remains the named open.
 
 ----- stderr -----

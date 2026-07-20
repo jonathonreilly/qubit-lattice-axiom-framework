@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_u_integration_reading_dictionary_blind_2026_06_12.py
-runner_sha256: 8ff3f15d239e198252785c319aee4d7fff4eae848702081125678badb4f09fe3
+runner_sha256: aefc45153f49aafc50bcbc76fcafa5eea5cdf49b04dfb7ec3f09a5f3999ef4fa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 SYMBOLIC AND FIXED-BACKGROUND SURFACE CHECKS
 ==============================================================================
   [PASS] Supplied circulant eigenvector identity gives lambda_k = a + 2B cos(delta + 2 pi k/3)  --  sympy roots-of-unity check
   [PASS] Positivity domain holds at both sampled parameter points  --  min lambda=0.660712456268
-  [PASS] Dispersion residual at U=1 is reproved from the supplied circulant class  --  max residual=1.554e-15
+  [PASS] Dispersion residual at U=1 is reproved from the supplied circulant class  --  max residual=1.443e-15
   [PASS] Per-channel transfer operators are positive on the witness background scan  --  minimum eigenvalue=0.420114361051
 
 Q1 FACTORIZATION: MATTER-BLIND WEIGHTS
@@ -60,7 +60,9 @@ Q4 ASSEMBLY
 
 B-CHECKS: DEPENDENCIES AND FIREWALL TEXT
 ==============================================================================
-  [PASS] Dependency grep: RP/P2 supplies config-by-config fixed-background phrase
+  [PASS] Dependency contract: conditional anti-Hermitian recurrence theorem is explicit
+  [PASS] Dependency firewall: physical transfer, RP, and P2 are explicitly excluded
+  [PASS] Dependency firewall: deleted physical/RP claims remain absent
   [PASS] Dependency grep: Substep1 supplies det(M) and single-pair Grassmann phrases
   [PASS] Dependency grep: registrability note supplies Additivity and Orbit/orbit-constant content
   [PASS] Firewall sentences are present, including WALLS-MOVE next-path language
@@ -72,9 +74,9 @@ B-CHECKS: DEPENDENCIES AND FIREWALL TEXT
 
 SUMMARY
 ==============================================================================
-SUMMARY PASS=24 FAIL=0
+SUMMARY PASS=26 FAIL=0
 Computed residual maxima:
-  dispersion=1.554e-15
+  dispersion=1.443e-15
   pointwise_reading_gap=0.000e+00
   integrated_reading_gap=0.000e+00
   matter_aware_negative_gap_min=1.168741e+00

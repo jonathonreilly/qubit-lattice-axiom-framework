@@ -81,7 +81,19 @@ not declared to be a quantum kernel.
 
 ### Proof
 
-Anti-Hermiticity makes `h` normal, so a unitary `U` exists with
+Because `m` is real and `h^dag=-h`, one has
+
+```text
+A_odd = A_even^dag,              T_odd = T_even^dag,
+C(h,m) = T_even^dag T_even.
+```
+
+The matrix `T_even` is invertible: if `T_even(x,y)=(0,0)`, its lower
+component gives `x=0` and its upper component then gives `y=0`. Consequently
+`C(h,m)` is Hermitian positive definite directly.
+
+It remains to compute its exact spectrum. Anti-Hermiticity makes `h` normal,
+so a unitary `U` exists with
 
 ```text
 U^dag h U = diag(i lambda_1, ..., i lambda_n),    lambda_j in R.
@@ -111,8 +123,7 @@ Put `q = sqrt(m^2 + lambda^2)`. The two eigenvalues are
   = exp(+/- 2 asinh(q)).
 ```
 
-They are strictly positive. Hence every modal block, and therefore their
-unitary direct sum `C(h,m)`, is Hermitian positive definite. QED.
+They are strictly positive, in agreement with the factorization above. QED.
 
 ### A supplied static-link realization of the hypothesis
 
@@ -178,7 +189,7 @@ The paired runner checks seven consequences of the two theorem statements:
 |---|---|---|
 | modal formula | scalar mode `h = i lambda` | displayed eigenvalues agree with `exp(+/-2 asinh(sqrt(m^2+lambda^2)))` |
 | identity-link specialization | supplied periodic `U_x = I` matrices | finite position-space spectrum agrees with the Fourier evaluation of the same supplied recurrence |
-| sampled `SU(3)` matrices | 200 lists of supplied unitary `3 x 3` links | `h^dag=-h`, `C^dag=C`, and `min eig(C)>0` for every list; modal spectrum agrees |
+| sampled `SU(3)` matrices | 200 lists of supplied unitary `3 x 3` links | `h^dag=-h`, `C^dag=C`, `C=T_even^dag T_even`, and `min eig(C)>0` for every list; modal spectrum agrees |
 | sampled `U(1)` matrices | 200 lists of supplied phases | same matrix checks |
 | determinant invariance | finite `M -> P M P^dag` | invariant for all tested relabelings |
 | spectrum invariance | finite Hermitian `H -> P H P^dag` | invariant for all six permutations of a three-mode carrier |

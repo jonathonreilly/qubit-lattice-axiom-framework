@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py
-runner_sha256: 23a7a19d0769d02265bdf0590a2c59deb6a510dab79cbc8dfa4d9aa4a029598d
+runner_sha256: 08e97c0fa45ef482f5618c1b4c32cee2532e802999ff1a232b0f52948f1bcfb6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -30,6 +30,7 @@ SAMPLED SU(3) STATIC-LINK MATRIX EXHIBIT
     supplied link lists    = 200
     max ||h+h^dag||        = 0.000e+00
     max ||C-C^dag||        = 0.000e+00
+    max ||C-T_even^dag T_even|| = 0.000e+00
     max modal residual     = 1.155e-14
     min eig(C)             = 1.458981e-01
     failed lists           = 0 / 200
@@ -39,6 +40,7 @@ SAMPLED U(1) STATIC-LINK MATRIX EXHIBIT
     supplied link lists    = 200
     max ||h+h^dag||        = 0.000e+00
     max ||C-C^dag||        = 0.000e+00
+    max ||C-T_even^dag T_even|| = 0.000e+00
     max modal residual     = 8.882e-15
     min eig(C)             = 1.458988e-01
     failed lists           = 0 / 200

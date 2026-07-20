@@ -8,7 +8,7 @@ clamps the endpoint, regenerates two controlled tables, and adds matched
 buffer/geometry counterchecks plus independent and hostile modes.
 
 The bounded conclusion is that these named finite controls do not identify a
-single monotone velocity-only power law or a laboratory card.  A continuum or
+single monotone schedule-rate-only power law or a laboratory card.  A continuum or
 redesigned carrier may behave differently.
 
 ## Validation and remaining work

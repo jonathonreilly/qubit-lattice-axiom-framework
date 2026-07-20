@@ -8,5 +8,5 @@ and hostile evidence.
 
 The target is not an audit verdict and not a proof of continuum or physical
 retardation.  Success is a narrow finite-carrier negative: the named controls
-do not identify one monotone velocity-only law or a laboratory card, with all
+do not identify one monotone schedule-rate-only law or a laboratory card, with all
 remaining couplings disclosed.

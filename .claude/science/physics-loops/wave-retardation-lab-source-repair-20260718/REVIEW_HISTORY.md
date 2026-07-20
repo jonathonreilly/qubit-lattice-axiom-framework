@@ -33,3 +33,24 @@ post-cache hostile replay reported exact-SHA/status/stdout agreement.  Focused
 re-review returned PASS with no remaining source blocker.
 
 No audit was run and no audit verdict was authored or applied.
+
+## Fresh external Sol xhigh review-loop — iteration 1, PASS
+
+The exact PR head was independently reviewed across code/math,
+physics/imports, proof obligations, no-go discipline, Nature retention, and
+repository governance.  It found three blockers: the source rates were
+incorrectly normalized as physical speed, N4/N7/N8 did not implement residual
+matching/steelman/retired-wall checks, and the purported independent route
+shared the helper carrier, beam propagation, and detector readout.
+
+Iteration 1 labels the source inputs as schedule rates in cells/layer,
+publishes the exact finite-stencil dispersion and `H=0.5` long-wave numerical
+rate, and states that the fastest schedules exceed that rate.  It rewrites the
+full N1-N8 packet and replaces the shared implementation with a separate
+array reconstruction plus sparse-direct Poisson solve.  Exact runner and
+helper SHAs now participate in the cache guard.  Two fresh all-mode runs were
+byte-identical at SHA-256
+`1bc37770b1bd264783dca40d5faf6981ed819290606042c39f052857555728b1`;
+the focused re-review found no remaining source blocker.
+
+No audit worker ran and no audit verdict was authored or applied.

@@ -22,7 +22,7 @@
 
 Completed: exact-SHA caches for all three changed runners are fresh; two full
 all-mode runs have identical stdout SHA-256
-`0addbc20a0f440c84bb071f7fcb5d8591c968f575646717f1963a23e733b6992`;
+`1bc37770b1bd264783dca40d5faf6981ed819290606042c39f052857555728b1`;
 the fresh review returned PASS; optimized/no-site fail-closed probes passed;
 and detached compatibility passed after staging the refreshed citation
 manifest only in the disposable worktree.  Generated governance/audit files

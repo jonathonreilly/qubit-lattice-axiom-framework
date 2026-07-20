@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
-"""Controlled finite-carrier checks for the wave-retardation sweep.
+"""Controlled finite-carrier checks for the moving-source schedule sweep.
 
 This runner does not infer a continuum law or a laboratory prediction.  It
 recomputes two explicitly controlled finite sweeps and matched counterchecks:
 
-* fixed final detector layer, so the post-motion buffer varies with speed;
-* fixed post-motion buffer, so the detector layer varies with speed;
-* fixed-speed, shifted-trajectory and fixed-trajectory, varied-buffer pairs.
+* fixed final detector layer, so the post-motion buffer varies with schedule rate;
+* fixed post-motion buffer, so the detector layer varies with schedule rate;
+* equal-rate shifted-trajectory and fixed-trajectory, varied-buffer pairs.
 
 The source moves from integer cell 6 to integer cell 0.  Its onset, rounding
 rule, elapsed motion intervals, endpoint, stationary clamp and measurement
-layers are all explicit.  The printed log-log slopes are shape diagnostics
-only; they are never reported as scaling exponents.
+layers are all explicit.  Rates are in source cells per layer and are not
+normalized to a physical propagation constant.  The printed log-log slopes
+are shape diagnostics only; they are never reported as scaling exponents.
 """
 
 from __future__ import annotations
@@ -25,6 +26,7 @@ import hashlib
 import json
 import math
 import os
+import random
 from dataclasses import dataclass, replace
 from pathlib import Path
 import sys
@@ -32,6 +34,13 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import wave_retarded_gravity as wrg
+
+
+HELPER_PATH = Path(wrg.__file__).resolve()
+
+
+def sha256_file(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
 @dataclass(frozen=True)
@@ -340,6 +349,8 @@ def normal_evidence(*, verbose=True):
             "PW": wrg.PW,
             "beta": wrg.BETA,
             "max_d_phys": wrg.MAX_D_PHYS,
+            "long_wavelength_rate_cells_per_layer": wrg.H,
+            "helper_sha256": sha256_file(HELPER_PATH),
             "strength": CARRIER.strength,
             "beam_k": CARRIER.beam_k,
             "poisson_omega": CARRIER.poisson_omega,
@@ -389,10 +400,10 @@ def format_gap(value):
 
 def print_rows(title, rows):
     print("\n" + title)
-    print("  dur     v   end  meas  buf       dM         dI        M-I       rel  sign")
+    print("  dur  cell/layer  end  meas  buf       dM         dI        M-I       rel  sign")
     for row in rows:
         print(
-            f"  {row['duration']:>3d}  {row['speed']:.3f}  {row['endpoint_layer']:>4d}"
+            f"  {row['duration']:>3d}      {row['speed']:.3f}  {row['endpoint_layer']:>4d}"
             f"  {row['measurement_layer']:>4d}  {row['buffer']:>3d}"
             f"  {row['d_moving']:+.6f}  {row['d_instantaneous']:+.6f}"
             f"  {row['difference']:+.6f}  {format_gap(row['relative_gap']):>8s}"
@@ -419,15 +430,23 @@ def print_normal(evidence):
         "max_iterations={poisson_max_iterations}".format(**c)
     )
     print("Schedule: D elapsed intervals; endpoint at onset+D; stationary clamp thereafter")
-    print("Identity: D=|end-start|/v and measurement=onset+D+buffer")
     print(
-        "Therefore fixed endpoints plus varying v force D to vary; "
+        "Wave dispersion: sin^2(omega/2)=H^2[sin^2(ky/2)+sin^2(kz/2)]; "
+        f"long-wave rate={c['long_wavelength_rate_cells_per_layer']:.3f} cell/layer"
+    )
+    print(f"helper_sha256={c['helper_sha256']}")
+    print("Identity: D=|end-start|/schedule_rate and measurement=onset+D+buffer")
+    print(
+        "Therefore fixed endpoints plus varying schedule rate force D to vary; "
         "final time or buffer must vary."
     )
     print_rows("A. FIXED FINAL LAYER (buffer varies)", evidence["fixed_final"])
     print_rows("B. FIXED SEVEN-LAYER BUFFER (measurement layer varies)", evidence["fixed_buffer"])
     print_rows("C. D=20 FIXED TRAJECTORY, BUFFER SCAN", evidence["buffer_scan"])
-    print_rows("D. SAME v=0.300 AND D=20, SHIFTED GEOMETRY", evidence["geometry_pair"])
+    print_rows(
+        "D. SAME 0.300 CELL/LAYER AND D=20, SHIFTED GEOMETRY",
+        evidence["geometry_pair"],
+    )
 
     for name in ("fixed_final", "fixed_buffer"):
         rows = evidence[name]
@@ -462,79 +481,178 @@ def independent_position(layer, onset, start_cell, end_cell, duration):
     return start_cell + int(round((end_cell - start_cell) * elapsed / duration))
 
 
-def independent_wave_history(strength, position, onset, n_layers):
-    """Independent spelling of the leapfrog route (does not call _make_field)."""
-    half = int(wrg.PW / wrg.H)
+def independent_carrier():
+    """Rebuild the seeded carrier as layer arrays without the helper graph."""
+    import numpy as np
+
+    half = 16
     width = 2 * half + 1
-    previous = [[0.0] * width for _ in range(width)]
-    current = [[0.0] * width for _ in range(width)]
-    history = [[row[:] for row in previous], [row[:] for row in current]]
-    h2 = wrg.H * wrg.H
-    for layer in range(2, n_layers):
-        following = [[0.0] * width for _ in range(width)]
-        source_z = position(layer) + half
-        for iy in range(width):
-            for iz in range(width):
-                laplacian = 0.0
-                if 0 < iy < width - 1 and 0 < iz < width - 1:
-                    laplacian = (
-                        current[iy - 1][iz]
-                        + current[iy + 1][iz]
-                        + current[iy][iz - 1]
-                        + current[iy][iz + 1]
-                        - 4.0 * current[iy][iz]
-                    )
-                source = strength if layer >= onset and iy == half and iz == source_z else 0.0
-                following[iy][iz] = (
-                    2.0 * current[iy][iz] - previous[iy][iz] + h2 * (laplacian + source)
+    y = np.zeros((CARRIER.n_layers, width, width), dtype=float)
+    z = np.zeros_like(y)
+    coordinates = np.arange(-half, half + 1, dtype=float) * 0.5
+    y[1] = coordinates[:, None]
+    z[1] = coordinates[None, :]
+    rng = random.Random(CARRIER.seed)
+    for layer in range(2, CARRIER.n_layers):
+        for ai, iy in enumerate(range(-half, half + 1)):
+            for aj, iz in enumerate(range(-half, half + 1)):
+                next_y = y[layer - 1, ai, aj] + rng.gauss(
+                    0.0, CARRIER.drift * 0.5
                 )
+                next_z = z[layer - 1, ai, aj] + rng.gauss(
+                    0.0, CARRIER.drift * 0.5
+                )
+                y[layer, ai, aj] = (
+                    (1.0 - CARRIER.restore) * next_y
+                    + CARRIER.restore * iy * 0.5
+                )
+                z[layer, ai, aj] = (
+                    (1.0 - CARRIER.restore) * next_z
+                    + CARRIER.restore * iz * 0.5
+                )
+    return y, z
+
+
+def independent_wave_history(strength, position):
+    """Array-stencil leapfrog route with no helper calls."""
+    import numpy as np
+
+    half = 16
+    width = 2 * half + 1
+    history = np.zeros((CARRIER.n_layers, width, width), dtype=float)
+    previous = np.zeros((width, width), dtype=float)
+    current = np.zeros_like(previous)
+    for layer in range(2, CARRIER.n_layers):
+        laplacian = np.zeros_like(current)
+        laplacian[1:-1, 1:-1] = (
+            current[:-2, 1:-1]
+            + current[2:, 1:-1]
+            + current[1:-1, :-2]
+            + current[1:-1, 2:]
+            - 4.0 * current[1:-1, 1:-1]
+        )
+        source = np.zeros_like(current)
+        if layer >= CARRIER.onset:
+            source[half, half + position(layer)] = strength
+        following = 2.0 * current - previous + 0.25 * (laplacian + source)
+        history[layer] = following
         previous, current = current, following
-        history.append([row[:] for row in current])
     return history
 
 
-def independent_poisson(strength, source_cell):
-    """Independent Gauss-Seidel solve (omega=1) for the static comparator."""
-    half = int(wrg.PW / wrg.H)
-    width = 2 * half + 1
-    field = [[0.0] * width for _ in range(width)]
-    source_z = source_cell + half
-    for _ in range(80000):
-        max_delta = 0.0
-        for iy in range(1, width - 1):
-            for iz in range(1, width - 1):
-                source = strength if iy == half and iz == source_z else 0.0
-                value = 0.25 * (
-                    field[iy - 1][iz]
-                    + field[iy + 1][iz]
-                    + field[iy][iz - 1]
-                    + field[iy][iz + 1]
-                    + source
-                )
-                max_delta = max(max_delta, abs(value - field[iy][iz]))
-                field[iy][iz] = value
-        if max_delta < CARRIER.poisson_tolerance:
-            return field
-    raise AssertionError("independent Gauss-Seidel comparator did not converge")
+def independent_poisson_solver():
+    """Sparse-direct Dirichlet solve, algebraically distinct from primary SOR."""
+    import numpy as np
+    from scipy.sparse import diags, eye, kron
+    from scipy.sparse.linalg import factorized
+
+    interior = 31
+    one_d = diags(
+        [
+            -np.ones(interior - 1),
+            2.0 * np.ones(interior),
+            -np.ones(interior - 1),
+        ],
+        [-1, 0, 1],
+        format="csc",
+    )
+    operator = (
+        kron(eye(interior, format="csc"), one_d)
+        + kron(one_d, eye(interior, format="csc"))
+    ).tocsc()
+    solve = factorized(operator)
+
+    def field(strength, source_cell):
+        rhs = np.zeros(interior * interior, dtype=float)
+        rhs[(16 - 1) * interior + (16 + source_cell - 1)] = strength
+        result = np.zeros((33, 33), dtype=float)
+        interior_result = solve(rhs).reshape(interior, interior)
+        residual = operator @ interior_result.ravel() - rhs
+        if float(np.max(np.abs(residual))) > 1e-12:
+            raise AssertionError("independent sparse Poisson residual is too large")
+        result[1:-1, 1:-1] = interior_result
+        return result
+
+    return field
 
 
-def independent_instantaneous_history(strength, position, onset, n_layers):
-    half = int(wrg.PW / wrg.H)
-    width = 2 * half + 1
-    history = [[[0.0] * width for _ in range(width)] for _ in range(n_layers)]
+def independent_instantaneous_history(strength, position, solve_poisson):
+    import numpy as np
+
+    history = np.zeros((CARRIER.n_layers, 33, 33), dtype=float)
     cache = {}
-    for layer in range(onset, n_layers):
+    for layer in range(CARRIER.onset, CARRIER.n_layers):
         source_cell = position(layer)
         if source_cell not in cache:
-            cache[source_cell] = independent_poisson(strength, source_cell)
-        history[layer] = [row[:] for row in cache[source_cell]]
+            cache[source_cell] = solve_poisson(strength, source_cell)
+        history[layer] = cache[source_cell]
     return history
+
+
+def independent_centroids(histories, y, z, detector_layer):
+    """Propagate layer arrays and compute centroids without helper calls."""
+    import numpy as np
+
+    fields = np.stack(histories)
+    channel_count = len(histories)
+    amplitude = np.zeros((channel_count, 33, 33), dtype=complex)
+    amplitude[:, 16, 16] = 1.0
+    for layer in range(detector_layer):
+        following = np.zeros_like(amplitude)
+        for offset_y in range(-6, 7):
+            sy0 = max(0, -offset_y)
+            sy1 = min(33, 33 - offset_y)
+            dy0 = sy0 + offset_y
+            dy1 = sy1 + offset_y
+            for offset_z in range(-6, 7):
+                sz0 = max(0, -offset_z)
+                sz1 = min(33, 33 - offset_z)
+                dz0 = sz0 + offset_z
+                dz1 = sz1 + offset_z
+                source_amplitude = amplitude[:, sy0:sy1, sz0:sz1]
+                delta_y = (
+                    y[layer + 1, dy0:dy1, dz0:dz1]
+                    - y[layer, sy0:sy1, sz0:sz1]
+                )
+                delta_z = (
+                    z[layer + 1, dy0:dy1, dz0:dz1]
+                    - z[layer, sy0:sy1, sz0:sz1]
+                )
+                length = np.sqrt(0.25 + delta_y * delta_y + delta_z * delta_z)
+                angle = np.arctan2(
+                    np.sqrt(delta_y * delta_y + delta_z * delta_z), 0.5
+                )
+                weight = np.exp(-0.8 * angle * angle) * 0.25 / (length * length)
+                local_field = 0.5 * (
+                    fields[:, layer, sy0:sy1, sz0:sz1]
+                    + fields[:, layer + 1, dy0:dy1, dz0:dz1]
+                )
+                phase = np.exp(
+                    1j * 5.0 * length[None] * (1.0 - local_field)
+                )
+                following[:, dy0:dy1, dz0:dz1] += (
+                    np.where(
+                        np.abs(source_amplitude) > 1e-30,
+                        source_amplitude,
+                        0.0,
+                    )
+                    * phase
+                    * weight[None]
+                )
+        amplitude = following
+    intensity = np.abs(amplitude) ** 2
+    totals = intensity.sum(axis=(1, 2))
+    if np.any(totals <= 0.0):
+        raise AssertionError("independent route reached zero detector intensity")
+    return (intensity * z[detector_layer]).sum(axis=(1, 2)) / totals
 
 
 def independent_evidence(context=None, expected=None, *, verbose=True):
-    if context is None:
-        context = build_context()
-    pos, adj, nmap, free = context
+    import numpy as np
+
+    del context
+    y, z = independent_carrier()
+    solve_poisson = independent_poisson_solver()
     rows = []
     for duration in INDEPENDENT_DURATIONS:
         position = lambda layer, d=duration: independent_position(
@@ -544,27 +662,19 @@ def independent_evidence(context=None, expected=None, *, verbose=True):
         layer = endpoint + CARRIER.fixed_buffer
         if any(position(t) != CARRIER.end_cell for t in range(endpoint, CARRIER.n_layers)):
             raise AssertionError("independent route failed its endpoint clamp")
-        moving_field = independent_wave_history(
-            CARRIER.strength, position, CARRIER.onset, CARRIER.n_layers
-        )
+        moving_field = independent_wave_history(CARRIER.strength, position)
         instantaneous_field = independent_instantaneous_history(
-            CARRIER.strength, position, CARRIER.onset, CARRIER.n_layers
+            CARRIER.strength, position, solve_poisson
         )
-        moving = wrg._prop_beam(
-            pos, adj, nmap, moving_field, CARRIER.beam_k, n_layers=CARRIER.n_layers
+        centroids = independent_centroids(
+            (np.zeros_like(moving_field), moving_field, instantaneous_field),
+            y,
+            z,
+            layer,
         )
-        instantaneous = wrg._prop_beam(
-            pos,
-            adj,
-            nmap,
-            instantaneous_field,
-            CARRIER.beam_k,
-            n_layers=CARRIER.n_layers,
-        )
-        z_free = wrg._cz_at_layer(free, pos, nmap, layer)
         value = measure(
-            wrg._cz_at_layer(moving, pos, nmap, layer) - z_free,
-            wrg._cz_at_layer(instantaneous, pos, nmap, layer) - z_free,
+            float(centroids[1] - centroids[0]),
+            float(centroids[2] - centroids[0]),
         )
         row = {
             "duration": duration,
@@ -592,7 +702,10 @@ def independent_evidence(context=None, expected=None, *, verbose=True):
                         f"independent {key} mismatch at duration {row['duration']}"
                     )
     if verbose:
-        print_rows("INDEPENDENT ROUTE: SEPARATE SCHEDULE/STENCIL/GAUSS-SEIDEL", rows)
+        print_rows(
+            "INDEPENDENT ROUTE: ARRAY CARRIER/BEAM/READOUT + SPARSE-DIRECT POISSON",
+            rows,
+        )
         print("independent evidence objects: 3")
     return rows
 
@@ -628,6 +741,7 @@ def verify_cache_or_active_refresh(fingerprint):
             f"runner_sha256: {current_sha}",
             "exit_code: 0",
             "status: ok",
+            f"helper_sha256={sha256_file(HELPER_PATH)}",
             f"controlled-result fingerprint: {fingerprint}",
         )
         if all(fragment in text for fragment in required):
@@ -786,6 +900,7 @@ def hostile_evidence(normal=None, context=None, *, verbose=True):
 
     forbidden = (
         "PURE" + " velocity scaling",
+        "v" + "/c",
         "LAB" + " EXTRAPOLATION",
         "inferred scaling" + " exponent",
         "translates to a measurable" + " phase shift",
@@ -799,9 +914,9 @@ def hostile_evidence(normal=None, context=None, *, verbose=True):
     base_row, shifted_row = normal["geometry_pair"]
     geometry_change = abs(shifted_row["difference"] - base_row["difference"])
     if geometry_change <= 5e-4:
-        raise AssertionError("load-bearing same-v geometry countercheck was neutralized")
+        raise AssertionError("load-bearing equal-rate geometry countercheck was neutralized")
     checks.append(
-        "same-v geometry mutation remains load-bearing: "
+        "equal-rate geometry mutation remains load-bearing: "
         f"delta(M-I)={geometry_change:.6f}"
     )
 
@@ -838,7 +953,7 @@ def main(argv=None):
     elif args.mode == "all":
         independent_evidence(context, normal)
         hostile_evidence(normal, context)
-        print("\nbounded conclusion: these named finite controls do not identify a velocity-only")
+        print("\nbounded conclusion: these named finite controls do not identify a schedule-rate-only")
         print("monotone power law or laboratory card; no continuum/universal claim is made.")
 
 

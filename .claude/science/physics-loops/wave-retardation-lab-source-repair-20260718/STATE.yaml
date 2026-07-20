@@ -15,7 +15,7 @@ block_count: 1
 active_route: controlled_finite_carrier_counterchecks
 hard_residual: >-
   No supplied continuum limit, laboratory observable map, physical
-  calibration, or redesign that makes velocity the only independent control.
+  calibration, or redesign that makes schedule rate the only independent control.
 produced_claim_id: wave_retardation_lab_prediction_note
 actual_current_surface_status: bounded finite-carrier negative
 trace_class: direct_blocker_closure
@@ -44,16 +44,16 @@ open_imports_for_stronger_claim:
   - a validated continuum limit
   - a physical calibration and laboratory observable map
   - an independently justified carrier redesign
-  - a velocity-only identification strategy beyond the timing constraint
+  - a schedule-rate-only identification strategy beyond the timing constraint
 no_go_routes:
   - legacy direct-velocity sweep changed trajectory range and overshot
   - legacy allegedly fixed trajectory changed lattice, onset, and measurement
   - fixed-final controlled sweep leaves buffer coupled
   - fixed-buffer controlled sweep leaves measurement time coupled
-  - same-speed shifted path changes the finite output
+  - equal-rate shifted path changes the finite output
   - same trajectory with varied buffer changes the finite output
 trace_gate_classification: direct_blocker_closure
-review_disposition: fresh_single_lens_pass
+review_disposition: fresh_external_sol_xhigh_pass_iteration_1
 audit_compatibility_validation: >-
   PASS on detached disposable commit 68a27d8a79: full pipeline reached only
   the expected unstaged-manifest acknowledgment gate; after staging the
@@ -62,8 +62,8 @@ audit_compatibility_validation: >-
 pr_status: open_ready_unmerged
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5514
 next_exact_action: >-
-  Fresh independent Sol xhigh review-loop worker reviews PR 5514; source
-  author does not merge it or apply an audit verdict.
+  Land the exact reviewed PR head by normal merge after detached compatibility;
+  no audit verdict is authored or applied in this source review.
 stop_condition: >-
   Achieved: one honestly bounded, source-repaired, reviewed,
   compatibility-tested ready PR is open without an audit verdict or merge.

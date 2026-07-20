@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/wave_retardation_velocity_sweep.py
-runner_sha256: dd75d10682b251e93d9f7a0f1840e185c5a30d1a5cd81d721476b9264d565451
+runner_sha256: e6fcaf347376f30a4bb482883b1a0115e8578da3a3f3a797b1babab40d702fbd
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 104.31
+elapsed_sec: 76.42
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -13,41 +13,43 @@ NL=78 onset=10 start=6 endpoint=0 detector_final=77
 H=0.5 PW=8 max_d_phys=3 beta=0.8 seed=0 drift=0.2 restore=0.7 S=0.004 K=5.0
 SOR omega=1.8 tolerance=1.0e-11 max_iterations=20000
 Schedule: D elapsed intervals; endpoint at onset+D; stationary clamp thereafter
-Identity: D=|end-start|/v and measurement=onset+D+buffer
-Therefore fixed endpoints plus varying v force D to vary; final time or buffer must vary.
+Wave dispersion: sin^2(omega/2)=H^2[sin^2(ky/2)+sin^2(kz/2)]; long-wave rate=0.500 cell/layer
+helper_sha256=97cd921b9152ab4e2b32696bba95a7c18f0fa950680046665cc4330179f70fc9
+Identity: D=|end-start|/schedule_rate and measurement=onset+D+buffer
+Therefore fixed endpoints plus varying schedule rate force D to vary; final time or buffer must vary.
 
 A. FIXED FINAL LAYER (buffer varies)
-  dur     v   end  meas  buf       dM         dI        M-I       rel  sign
-   60  0.100    70    77    7  -0.007349  -0.002555  -0.004794    65.24%  same
-   30  0.200    40    77   37  -0.009959  -0.004078  -0.005881    59.05%  same
-   20  0.300    30    77   47  -0.009399  -0.004345  -0.005054    53.77%  same
-   15  0.400    25    77   52  -0.008722  -0.004906  -0.003816    43.75%  same
-   12  0.500    22    77   55  -0.009290  -0.005610  -0.003680    39.61%  same
-   10  0.600    20    77   57  -0.009658  -0.005779  -0.003880    40.17%  same
-    8  0.750    18    77   59  -0.010013  -0.006321  -0.003691    36.87%  same
+  dur  cell/layer  end  meas  buf       dM         dI        M-I       rel  sign
+   60      0.100    70    77    7  -0.007349  -0.002555  -0.004794    65.24%  same
+   30      0.200    40    77   37  -0.009959  -0.004078  -0.005881    59.05%  same
+   20      0.300    30    77   47  -0.009399  -0.004345  -0.005054    53.77%  same
+   15      0.400    25    77   52  -0.008722  -0.004906  -0.003816    43.75%  same
+   12      0.500    22    77   55  -0.009290  -0.005610  -0.003680    39.61%  same
+   10      0.600    20    77   57  -0.009658  -0.005779  -0.003880    40.17%  same
+    8      0.750    18    77   59  -0.010013  -0.006321  -0.003691    36.87%  same
 
 B. FIXED SEVEN-LAYER BUFFER (measurement layer varies)
-  dur     v   end  meas  buf       dM         dI        M-I       rel  sign
-   60  0.100    70    77    7  -0.007349  -0.002555  -0.004794    65.24%  same
-   30  0.200    40    47    7  +0.010738  +0.004870  +0.005868    54.65%  same
-   20  0.300    30    37    7  +0.011365  +0.006249  +0.005115    45.01%  same
-   15  0.400    25    32    7  +0.008619  +0.004965  +0.003654    42.40%  same
-   12  0.500    22    29    7  +0.006517  +0.004068  +0.002448    37.57%  same
-   10  0.600    20    27    7  +0.005160  +0.003638  +0.001523    29.51%  same
-    8  0.750    18    25    7  +0.003945  +0.003134  +0.000811    20.55%  same
+  dur  cell/layer  end  meas  buf       dM         dI        M-I       rel  sign
+   60      0.100    70    77    7  -0.007349  -0.002555  -0.004794    65.24%  same
+   30      0.200    40    47    7  +0.010738  +0.004870  +0.005868    54.65%  same
+   20      0.300    30    37    7  +0.011365  +0.006249  +0.005115    45.01%  same
+   15      0.400    25    32    7  +0.008619  +0.004965  +0.003654    42.40%  same
+   12      0.500    22    29    7  +0.006517  +0.004068  +0.002448    37.57%  same
+   10      0.600    20    27    7  +0.005160  +0.003638  +0.001523    29.51%  same
+    8      0.750    18    25    7  +0.003945  +0.003134  +0.000811    20.55%  same
 
 C. D=20 FIXED TRAJECTORY, BUFFER SCAN
-  dur     v   end  meas  buf       dM         dI        M-I       rel  sign
-   20  0.300    30    34    4  +0.010995  +0.006776  +0.004219    38.37%  same
-   20  0.300    30    37    7  +0.011365  +0.006249  +0.005115    45.01%  same
-   20  0.300    30    42   12  +0.010451  +0.005398  +0.005053    48.35%  same
-   20  0.300    30    50   20  +0.004773  +0.002336  +0.002437    51.06%  same
-   20  0.300    30    77   47  -0.009399  -0.004345  -0.005054    53.77%  same
+  dur  cell/layer  end  meas  buf       dM         dI        M-I       rel  sign
+   20      0.300    30    34    4  +0.010995  +0.006776  +0.004219    38.37%  same
+   20      0.300    30    37    7  +0.011365  +0.006249  +0.005115    45.01%  same
+   20      0.300    30    42   12  +0.010451  +0.005398  +0.005053    48.35%  same
+   20      0.300    30    50   20  +0.004773  +0.002336  +0.002437    51.06%  same
+   20      0.300    30    77   47  -0.009399  -0.004345  -0.005054    53.77%  same
 
-D. SAME v=0.300 AND D=20, SHIFTED GEOMETRY
-  dur     v   end  meas  buf       dM         dI        M-I       rel  sign
-   20  0.300    30    37    7  +0.011365  +0.006249  +0.005115    45.01%  same
-   20  0.300    30    37    7  +0.015095  +0.010550  +0.004545    30.11%  same
+D. SAME 0.300 CELL/LAYER AND D=20, SHIFTED GEOMETRY
+  dur  cell/layer  end  meas  buf       dM         dI        M-I       rel  sign
+   20      0.300    30    37    7  +0.011365  +0.006249  +0.005115    45.01%  same
+   20      0.300    30    37    7  +0.015095  +0.010550  +0.004545    30.11%  same
 
 fixed_final diagnostics: |M-I|=non-monotone; relative gap=non-monotone
   signed M-I reversals across adjacent rows=0
@@ -59,14 +61,14 @@ fixed_buffer diagnostics: |M-I|=non-monotone; relative gap=decreasing
   log-log absolute difference slope=-0.844 (diagnostic only, not an exponent)
   log-log relative gap slope=-0.512 (diagnostic only, not an exponent)
 
-controlled-result fingerprint: 5b212aa736207745110e303194c6fb90007d9fe08f4e32cd8bac587dd899f890
+controlled-result fingerprint: 73717ea7d1cf5a8c8e88d3d19259d9b9d0b7b7948e0341a6593c4dbed95c53c8
 normal evidence objects: 21
 
-INDEPENDENT ROUTE: SEPARATE SCHEDULE/STENCIL/GAUSS-SEIDEL
-  dur     v   end  meas  buf       dM         dI        M-I       rel  sign
-   60  0.100    70    77    7  -0.007349  -0.002555  -0.004794    65.24%  same
-   20  0.300    30    37    7  +0.011365  +0.006249  +0.005115    45.01%  same
-    8  0.750    18    25    7  +0.003945  +0.003134  +0.000811    20.55%  same
+INDEPENDENT ROUTE: ARRAY CARRIER/BEAM/READOUT + SPARSE-DIRECT POISSON
+  dur  cell/layer  end  meas  buf       dM         dI        M-I       rel  sign
+   60      0.100    70    77    7  -0.007349  -0.002555  -0.004794    65.24%  same
+   20      0.300    30    37    7  +0.011365  +0.006249  +0.005115    45.01%  same
+    8      0.750    18    25    7  +0.003945  +0.003134  +0.000811    20.55%  same
 independent evidence objects: 3
 
 HOSTILE MUTATION/GUARD EVIDENCE
@@ -77,10 +79,10 @@ HOSTILE MUTATION/GUARD EVIDENCE
   H5: live note rows/fingerprint and cache guard: matched; cache refresh in progress; post-refresh hostile replay required
   H6: denominator/sign pathology guard: undefined zero and 200% opposite-sign gap
   H7: power-law/lab-rhetoric guard: clear
-  H8: same-v geometry mutation remains load-bearing: delta(M-I)=0.000570
+  H8: equal-rate geometry mutation remains load-bearing: delta(M-I)=0.000570
 hostile evidence objects: 8
 
-bounded conclusion: these named finite controls do not identify a velocity-only
+bounded conclusion: these named finite controls do not identify a schedule-rate-only
 monotone power law or laboratory card; no continuum/universal claim is made.
 
 ----- stderr -----

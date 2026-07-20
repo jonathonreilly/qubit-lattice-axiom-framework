@@ -1,0 +1,23 @@
+loop_slug: lattice-nn-forward-reachability-hygiene-20260719
+mode: run
+target: exact-support
+base_commit: 81ef8341b11de9c9f984bd75dbac5605297221fa
+current_goal: remove author-status promotion and direct-consumer overread without changing the exact theorem or certificate
+cycle_count: 1
+active_route: source-boundary repair on current main
+hard_residual: null
+files_touched:
+  - docs/LATTICE_NN_LIGHT_CONE_NOTE.md
+  - docs/BOOST_CONE_APBC_SIGN_NEUTRAL_2026-06-23.md
+  - docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md
+  - docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md
+  - docs/STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-09.md
+runner_and_cache_changed: false
+open_imports: []
+no_go_routes: []
+trace_gate_classification: methodology
+review_disposition: block
+review_disposition_reason: separate review-loop pending; author does not self-audit
+pr_status: ready to open
+next_exact_action: run separate review-loop, then independently re-audit the changed target note hash after landing
+stop_condition: ready PR opened against the exact current main base

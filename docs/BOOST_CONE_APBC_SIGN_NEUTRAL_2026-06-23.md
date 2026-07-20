@@ -38,18 +38,23 @@ has a non-compact (boost) stabilizer generator iff exactly one sign is `-1`
 stabilizer **is** `eps = -1` — so "derive `eps` from the boost symmetry"
 presupposes the boost, i.e. presupposes the answer.
 
-**(B) The checked discrete record-causal cone admits only a compact automorphism
-group.** The cone is the Lieb-Robinson nearest-neighbor forward-reachability
-polytope `{t >= 0, ||x||_1 <= v t}` (per
-[AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_NOTE_2026-05-17.md](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_NOTE_2026-05-17.md)
-and [LATTICE_NN_LIGHT_CONE_NOTE.md](LATTICE_NN_LIGHT_CONE_NOTE.md)).
+**(B) The checked chosen discrete reachability polytope has no hyperbolic boost
+symmetry.** [LATTICE_NN_LIGHT_CONE_NOTE.md](LATTICE_NN_LIGHT_CONE_NOTE.md)
+supplies only the finite-graph recursion `C_t`; it does not identify that set
+with a record-causal, Lieb-Robinson, metric-speed, or physical-spacetime cone.
+After separately choosing the nearest-neighbor `Z^3` relation and a tick index,
+the cumulative reachability sets have the combinatorial polytope form
+`{t >= 0, ||x||_1 <= t}` in edge/tick coordinates. The Hamiltonian-side
+bound, when used, belongs to
+[AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_NOTE_2026-05-17.md](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_NOTE_2026-05-17.md).
 A hyperbolic boost preserves
-this polytope **only in 1+1**; for spatial dimension `>= 2` (the actual case) it
+this chosen polytope **only in 1+1**; for spatial dimension `>= 2` (the actual case) it
 shears the `l1`/`l_inf` cone outside itself, so it is **not** a cone
-automorphism. The surviving linear automorphisms are the finite hyperoctahedral
-(signed axis permutation) group `×` discrete time-translation — **compact**, no
-unbounded orbit. A finite-circle boundary identification cannot enlarge a compact
-group to a non-compact one.
+automorphism. The surviving linear spatial automorphisms are the finite
+hyperoctahedral (signed axis permutation) group. Discrete tick translation is
+not a boost and supplies no continuous unbounded boost orbit. A finite-circle
+boundary identification cannot enlarge this finite spatial group into a
+non-compact one.
 
 **(C) The antiperiodic-`tau` datum is sign-neutral, not sign-bearing.** Its wrap
 operator (`C^L = -I`) has eigenvalues **exactly on the unit circle**

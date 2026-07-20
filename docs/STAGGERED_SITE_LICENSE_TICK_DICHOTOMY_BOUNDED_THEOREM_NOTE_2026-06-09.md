@@ -119,7 +119,7 @@ dichotomy is the load-bearing item).
 
 | block01 premise | status after this cycle |
 |---|---|
-| P1 strict license reading | SHARPENED to the site-radius reading (same retained note, same verbatim definition, read in site units) |
+| P1 strict license reading | SHARPENED to the site-radius reading (same finite-graph definition, currently unaudited; the realized site-radius license remains a separate reading) |
 | P2 unitary-tick reading | still a named conditional (unchanged) |
 | P3 CPT pairing of the tick spectrum | **DISCHARGED** — not used anywhere |
 | P4 nonzero band winding (chirality) | **REDUCED** to "the realized tick is dispersive (nonflat)" at the natural periodicity — winding itself is forced, no cell selection remains |
@@ -208,7 +208,9 @@ tick exists."
 
 ## Dependencies
 
-- [LATTICE_NN_LIGHT_CONE_NOTE.md](LATTICE_NN_LIGHT_CONE_NOTE.md) — the license (retained); read here at site radius.
+- [LATTICE_NN_LIGHT_CONE_NOTE.md](LATTICE_NN_LIGHT_CONE_NOTE.md) — finite-graph
+  reachability/locality definition only (currently unaudited); it is not a
+  realized-tick license and supplies no inherited retained status.
 - [KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md](KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md) — block01: the monomial lemma (consumed) and the premises discharged here; landed but unaudited, so conditionality is inherited.
 - [STAGGERED_SCHEME_FORCED_BY_ONE_QUBIT_PER_SITE_LOCALITY_NARROW_THEOREM_NOTE_2026-06-06.md](STAGGERED_SCHEME_FORCED_BY_ONE_QUBIT_PER_SITE_LOCALITY_NARROW_THEOREM_NOTE_2026-06-06.md) — one Grassmann per site; landed but unaudited, so conditionality is inherited.
 - [STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) — landed phase formulas used in the per-axis constancy check; landed but unaudited, so conditionality is inherited for that realization tie.

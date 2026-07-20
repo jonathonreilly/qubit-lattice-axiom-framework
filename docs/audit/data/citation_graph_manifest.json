@@ -1,6 +1,6 @@
 {
- "edge_count": 14929,
- "node_count": 4449,
+ "edge_count": 14930,
+ "node_count": 4450,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6937,6 +6937,10 @@
   "kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_bounded_theorem_note_2026-07-16": {
    "deps_hash": "2e8f0e7f8554",
    "out_degree": 5
+  },
+  "kcpt_kahler_triple_ambient_invariant_metric_symplectic_bounded_theorem_note_2026-07-19": {
+   "deps_hash": "7dbbc3154bd8",
+   "out_degree": 1
   },
   "kcpt_kernel_induced_representation_central_complex_structure_bounded_theorem_note_2026-07-18": {
    "deps_hash": "fc3a499e3c8b",

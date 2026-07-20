@@ -215,20 +215,24 @@ claim that the eleven physical walls are no-go results.
 
 ### N1 — Alternative routes
 
-| Route | Marker | Precise locator and result |
-|---|---|---|
-| Standalone `N^4` Euclidean algebra | ATTEMPTED | Statement items 1–4 and runner `part_1`–`part_3`; succeeds only on the declared finite objects. |
-| Continuous-time/spatial-`Z^3` surface | ATTEMPTED | Standalone Scope and W1; no such kernel is coded, so the bridge remains open. |
-| Retained blocked staggered carrier | ATTEMPTED | Import Ledger links and W2; retained `16 x 16` spin/taste structure is identified as a different carrier, not silently equated to the runner. |
-| Exact torus external momentum | ATTEMPTED | Statement item 7 and runner `part_6`; `q=2*pi/N` restores the finite-sum Ward identity to the strict `1e-10` gate while preserving the positive proxy sign. |
-| True anisotropic Wilson inverse | ATTEMPTED | Statement item 3 and W3; the current `D_w` is proven not to be that inverse for `w!=1`, so this viable route remains open. |
-| Pole/on-shell velocity | ATTEMPTED | Standalone Scope and W4; no pole or physical-energy prescription is present. |
-| Shell/counterterm/log extraction | ATTEMPTED | Statement items 6 and 8 plus W5; the runner exposes a fit diagnostic but does not extract an RG coefficient. |
-| Finite-volume/probe/continuum control | ATTEMPTED | Statement items 5, 7, and 9 plus W6; finite samples and two exact torus momenta do not establish a limit. |
-| Full nonabelian and coupled-flow routes | ATTEMPTED | W7–W8; omitted diagrams and fixed-background structure are explicit. |
+The counted rows below are normalized by primary object, load-bearing
+mechanism, and terminal obligation. They are executed mathematical attacks,
+not different agents, phrasings, or statements that a calculation is absent.
 
-The scoped standalone route succeeds. Every route needed to identify it with
-the physical velocity-RG target remains visibly open.
+| Normalized attack route | Marker | Executed test and exact boundary | Authority locator for the unresolved residual |
+|---|---|---|---|
+| Finite Euclidean tensor algebra / explicit `4 x 4` matrices / verify the declared identities | ATTEMPTED | Runner `part_1`–`part_3` reconstructs the matrices, projectors, `D_w(xi)`, and affine split exactly. It succeeds for the declared finite objects, but that success has no carrier-identification step. | The retained blocked module proves a `16 x 16` spin/taste decomposition, not this naive block: `STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md:163-185`. |
+| External-momentum Ward route / exact finite-torus shifts / establish transversality | ATTEMPTED | Runner V6 tests both temporal and spatial `q=2*pi/N` orientations at the `1e-10` gate; the in-memory off-grid `q=0.3` mutation fails that gate. The result therefore establishes only the exact finite-torus statement. | The gauge-seagull boundary leaves the physical prescription and magnitude open: `VELOCITY_RG_GAUGE_SEAGULL_TRANSVERSE_VACUUM_POLARIZATION_2026-06-22.md:87-93`. |
+| Contact-term route / midpoint seagull completion / protect the Ward identity | ATTEMPTED | The omitted-seagull mutation fails V6, while the completed bubble-plus-seagull tensor passes. This distinguishes the contact-term mechanism but does not construct an interacting counterterm. | The exact exchange support names the interacting vertices and one-loop counterterm as the remaining bridge: `EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md:98-111`. |
+| Gauge-line route / test `D_w(xi)` as a true anisotropic inverse / obtain a physical covariance | ATTEMPTED | V3 plus an independent temporal-mode calculation at `w=(0.95,1.05,1.05,1.05)` gives nonzero `||qhat^T D_w(0)||` and one negative eigenvalue. Thus the declared family is not a true anisotropic covariance for `w!=1`; W3 remains a constructive replacement route. | The log-flow source explicitly requires construction of the full lattice gauge tensor and vertex: `VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md:121-133`. |
+| Carrier/taste route / compare the naive block with retained staggered structure / fix multiplicity and taste normalization | ATTEMPTED | The runner independently verifies only one `su(2)` color block (`C_F=3/4`, `T_F=1/2`); the import comparison then checks that the retained carrier has a four-dimensional taste commutant. The dimensions and commutants differ, so no identification or multiplicity is inferred. | The retained spin/taste core proves the `16`-dimensional commutant and taste dressing: `ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md:57-80`; the gauge-seagull row flags the remaining overall taste/doubler normalization at lines 91-93. |
+| Scale-extraction route / vary the probe and fit the affine response / obtain an RG logarithm | ATTEMPTED | V7 computes several finite probes and a pivot-dependent diagnostic slope; decreasing-probe values change and no shell derivative is invariantly extracted. The executed trend test therefore fails to supply a counterterm or log coefficient. | The log-flow source labels a full one-loop counterterm as the missing bridge at `VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md:121-133`. |
+| Dynamic mutual-drag route / insert the two static signs into the exact `2 x 2` proxy / establish target attraction | ATTEMPTED | V6 checks both positive static responses and V8 checks only the abstract eigenvalues; reversing the static-response sign triggers three failures. No time-dependent flow, on-shell observable, or coupled beta function is produced, so the physical inference is rejected. | The exchange-matrix authority makes positive physical `a,b` an open input and names the physical bridge: `EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md:98-121`. |
+
+Continuous-time/spatial-`Z^3`, pole/on-shell, full nonabelian, and coupled-flow
+constructions remain **OPEN ROUTES (not counted as ATTEMPTED)**. Their absence
+is a wall disclosure, not evidence that they fail or cannot be completed. The
+seven counted attacks support only the bounded standalone surface.
 
 ### N2 — Wall independence
 
@@ -251,41 +255,49 @@ makes them duplicates.
 
 ### N3 — Hidden-assumption scan
 
-| Candidate hidden premise | Resolution |
-|---|---|
-| “Same action surface” | Rejected explicitly: W1 separates periodic Euclidean time from the target surface. |
-| “Same fermion carrier” | Rejected explicitly: W2 and the Import Ledger separate `4 x 4` naive spin matrices from the retained blocked `16 x 16` carrier. |
-| “Color factor equals total multiplicity” | Rejected explicitly: `C_F,T_F` cover one color block only; taste/BZ/`N_f` matching remains W2. |
-| “Finite coefficient ratio is physical speed” | Rejected explicitly: ratios are static definitions; W4 remains. |
-| “Transverse at arbitrary external momentum” | Rejected explicitly: the strict claim is only for two tested `q=2*pi/N` orientations; W6 remains. |
-| “Static sign is RG sign” | Rejected explicitly in Statement item 8 and W5. |
-| “Declared `D_w` is a covariance” | Rejected explicitly in Statement item 3 and W3. |
+A literal scan of this note, its primary runner, and its committed cache used
+the complete No-Go Discipline N3 trigger list. The only substantive source
+hits or close variants are classified here; none is silently promoted to
+authority.
 
-No undeclared axiom is needed for the finite-object theorem; none of these
-premises is smuggled into target reachability.
+| Literal hit / locator | Classification | Resolution |
+|---|---|---|
+| “registered framework observables” in Statement item 8 | non-load-bearing comparison context | It names what would be required downstream; this note explicitly supplies only static direction proxies and leaves W4–W5 open. |
+| “fixed-background responses” in W8 and the N1 dynamic route | explicit hidden condition promoted to W8 | The background is not evolved. W8 is already one of the eleven disclosed walls, and the N2 count includes it. |
+
+The conceptual premise scan then rejects same-action, same-carrier,
+color-equals-total-multiplicity, finite-ratio-equals-speed,
+arbitrary-momentum transversality, static-sign-equals-RG-sign, and
+`D_w`-equals-covariance readings through W1–W6. Promoting the fixed-background
+condition does not change the wall count because it is exactly W8.
 
 ### N4 — Residual matching
 
-| Comparison surface | Its residual | Output here | Match? |
+| Witness locator | Residual attacked by witness | Residual tested here | Exact match? / disposition |
 |---|---|---|---|
-| Exchange-matrix note | physical framework one-loop counterterms and positive `a,b` | static finite-grid ratios on another regulator/carrier | No; conceptual comparison only |
-| Interacting parent | continuous-time/spatial-`Z^3` physical coefficient | periodic `N^4` Euclidean response | No |
-| Log-flow row | full tensor/vertex/counterterm calculation | exact tensor/WTI plus declared non-covariance `D_w`, no counterterm | Partial method overlap, no closure |
-| Seagull row | taste/doubler normalization | one unnormalized naive block over the full BZ | No; W2 |
+| `EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md:98-121` | interacting vertices/counterterm must supply physical positive `a,b` and LV-bound sufficiency | two static finite-grid responses on a declared different regulator/carrier | No; drop as closure witness, retain only as comparison boundary. |
+| `EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md:18-27,34-45` | continuous-time/spatial-`Z^3` physical coefficient and anomalous-dimension bridge | periodic `N^4` Euclidean sums with no continuous-time action | No; drop as closure witness. |
+| `VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md:121-133` | full gauge tensor, vertex, and one-loop counterterm | exact declared tensor/WTI plus a deliberately non-covariant `D_w`; no counterterm | No; method overlap is not residual closure, so drop as closure witness. |
+| `VELOCITY_RG_GAUGE_SEAGULL_TRANSVERSE_VACUUM_POLARIZATION_2026-06-22.md:87-93` | gauge-invariant velocity prescription plus taste/doubler normalization | one unnormalized naive color block over the full BZ | No; drop as closure witness. |
 
-Because no residual matches completely, `reachability_to_target` is `none`.
+Recount after dropping all four non-matches: exact target-closure witnesses
+`= 0`. They remain citations only for boundary accounting. Therefore
+`reachability_to_target` stays `none`; the bounded finite-object results do not
+inherit any comparison row's stronger residual.
 
 ### N5 — Rhetoric audit
 
-- “Exact” refers only to the explicitly gated finite algebra and finite sums.
-- “Transverse” refers only to the two tested torus-compatible momenta and the
-  `1e-10` normalized Ward gate.
-- “Proxy,” “static,” “finite-grid,” and “standalone” are retained wherever a
-  sign or contraction is discussed.
-- “Velocity-RG coefficient,” “physical speed,” “chain action surface,” and
-  “one-hop authority” are not claimed.
-- The finite-grid trend language makes no `delta->0`, volume, or continuum
-  inference.
+| Negative or limiting phrase | Per-element / site resolution | Mode resolution | Block resolution | Lattice-wide resolution | Narrowest supported wording |
+|---|---|---|---|---|---|
+| `D_w` is not a true anisotropic covariance for `w!=1` | not a site claim | one explicit temporal momentum falsifies transversality | full `4 x 4` eigenvalue/inverse test at that mode | no all-momentum classification attempted | the declared family is generally non-covariant, witnessed by an explicit mode; no impossibility theorem for another covariance is claimed |
+| finite static sign is not an RG coefficient | integrand contributions are summed, not interpreted separately | several finite probe values are tested | one naive spin/color block only | `N=10,12` finite-grid averages only | this artifact does not perform a shell derivative, counterterm, or log extraction; it does not claim none can exist |
+| torus transversality is not arbitrary-momentum transversality | not a site claim | exactly two `q=2*pi/N` orientations pass and the off-grid mutation fails | complete declared tensor at those modes | one finite torus per test | transverse only at the two gated finite-torus momenta; no continuum statement |
+| naive block is not the retained physical carrier | not a site claim | no pole-mode identification attempted | `4 x 4` naive block compared with retained `16 x 16` spin/taste structure | no interacting physical lattice model assembled | carriers are distinct until an explicit intertwiner, multiplicity, and normalization are supplied |
+| static proxy is not physical speed | not a site claim | no on-shell dispersion is solved | ratios use one declared block | finite-grid direction averages only | static direction proxy only; no pole speed or beta function |
+
+Thus “exact” refers only to gated finite algebra/sums; “proxy,” “static,”
+“finite-grid,” and “standalone” stay attached to every sign statement. Untested
+resolutions are reported as open, never converted into universal negatives.
 
 ### N6 — Partial-closure paths
 
@@ -297,31 +309,40 @@ finite-sum Ward gate but do not repair the remaining walls.
 
 ### N7 — Steelman
 
-The strongest defensible reading is useful but narrow: exact V1–V3 algebra,
-an exact torus-momentum Ward control, and two reproducible positive static
-proxy signs form a good regression fixture. The retained blocked carrier's
-spin-block decomposition suggests a taste-singlet extension may preserve the
-sign, but only an explicit normalization and carrier calculation can establish
-that. The current artifact itself stops before that inference.
+**Hostile reviewer steelman.** The strongest attack on this boundary is that
+the retained blocked carrier already decomposes into four intertwined
+four-dimensional spin summands, while the retained Clifford core identifies a
+taste-singlet spin algebra (`STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md:163-185` and
+`ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md:57-80`). A careful
+taste-singlet lift could therefore preserve the finite Ward and sign
+calculation, defeating any suggestion that the naive block is useless. The
+terminal obligation is concrete: construct the intertwiner on the retained
+carrier, include the correct taste/BZ multiplicity and true anisotropic gauge
+inverse, and recompute the on-shell counterterm. This route is unclosed, so the
+note makes no no-go claim against it; it ships only the finite regression
+fixture and names that lift as the next constructive test.
 
 ### N8 — Cross-cycle echo
 
-Current-main comparison exposes four recurring mechanisms, all reflected in
-the corrected walls:
+Both `docs/` and all repository `NO_GO_LEDGER.md` files were searched for
+velocity, anisotropy, carrier, normalization, counterterm, pole, taste,
+doubler, static, and continuous-time echoes.
 
-- the retained [blocked four-taste module](STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md)
-  and [spin/taste core](ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md)
-  motivate W2 without being substituted into this runner;
-- `FREE_STAGGERED_POLE_RESIDUE_DIRAC_CARRIER_CAR_RELABELING_BOUNDED_THEOREM_NOTE_2026-07-17.md`
-  keeps the pole/physical-observable route visible but is not consumed as
-  retained authority, matching W4;
-- `VELOCITY_RG_GAUGE_SEAGULL_TRANSVERSE_VACUUM_POLARIZATION_2026-06-22.md`
-  records the taste/doubler-normalization problem, now W2; and
-- `velocity_rg_logflow_framework_internal_2026-06-21` records the missing
-  counterterm/RG extraction, now W5.
+| Prior echo and locator | Since retired? | Mechanism / applicability here |
+|---|---|---|
+| Retained blocked module and spin/taste core cited above | Partially advanced, not retired | Exact decomposition and commutant now supply a constructive carrier-lift route, but no velocity counterterm or normalization. This is W2's escape, not closure. |
+| `FREE_STAGGERED_POLE_RESIDUE_DIRAC_CARRIER_CAR_RELABELING_BOUNDED_THEOREM_NOTE_2026-07-17.md` | Bounded carrier theorem exists; physical identification remains open | It keeps the pole/CAR route available, matching W4, but is not imported as target closure. |
+| `VELOCITY_RG_GAUGE_SEAGULL_TRANSVERSE_VACUUM_POLARIZATION_2026-06-22.md:87-93` and `VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md:121-133` | Not retired | They name gauge-invariant prescription, taste normalization, full tensor/vertex, and counterterm routes; these are W2–W5. |
+| `.claude/science/physics-loops/free-dirac-carrier-retirement-20260717/NO_GO_LEDGER.md:7-12` | Narrow carrier result only; Wightman/physical lift not retired | Its “Euclidean 2-point is not Wightman reconstruction” boundary directly forbids promoting this finite Euclidean fixture. |
+| `.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md:10-12` | Partial constructive route, not retired | A native taste extension exists, but temporal operator/copy selection remains open; this reinforces the steelman rather than a no-go. |
+| `.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md:6-8` | One eta-product route closed; broader anisotropic dynamics explicitly open | The retirement mechanism is exact parity/isotropy on a specified operator, not applicable to this missing interacting counterterm. |
+| `.claude/science/physics-loops/conformal-causal-source-repair-block01-20260716/NO_GO_LEDGER.md:3-28` | Abstract word/count-to-clock shortcut blocked; dynamics escape open | It confirms that finite ordering/rate proxies do not supply a physical clock, matching the refusal to infer a beta flow from static responses. |
 
-The narrowed boundary therefore does not erase mechanisms already discovered
-elsewhere.
+No prior ledger records a convention, ratification, or theorem that retires
+W1–W8 for this target. The mechanisms that did retire narrower routes have all
+been considered: carrier decomposition becomes the explicit W2 lift; exact
+operator parity does not construct the counterterm; and a dynamics/clock input
+remains required for a physical flow.
 
 **Overall N1–N8 status for the narrowed standalone claim: PASS.**
 

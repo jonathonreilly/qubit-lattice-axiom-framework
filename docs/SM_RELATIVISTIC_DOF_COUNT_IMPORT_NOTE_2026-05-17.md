@@ -98,6 +98,8 @@ equality, not a thermal-phase derivation.
 This row claims exact finite arithmetic conditional on the explicitly named
 literature inputs and thermal scope above. The citations remove anonymous
 attribution; they do not close the existing conditional audit by themselves.
+In particular, this literature-conditioned inventory is not a framework
+derivation of which particles nature contains.
 The row does not claim:
 
 - a framework derivation of the Standard Model particle inventory;

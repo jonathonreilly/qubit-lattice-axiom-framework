@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_cp_completion_under_extended_group_2026_07_20.py
+runner_sha256: e874b99b090fc71560ef3a981b27a897325d6bd45c9ab85863442d7a9a40c268
+input_fingerprint_sha256: e9bb99323e9412521626a6316dae5cb87c670e3ad56c3a1cb6c84e07b8a07fe1
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 23.98
+status: ok
+----- stdout -----
+PASS G1 - |G_amb|=768==768; every U commutes with D2 (max int dev 0==0, witness TR[(1,0,0)] dev 2>0 non-vacuous); [FLOAT] every U commutes with J_full (max 0.0e+00<1e-9): complex-linear G_amb action
+PASS G2 - [FLOAT] J_full^2=-I (||J^2+I||=4.4e-16<1e-9), antisym (||J+J^T||=0.0e+00); ANTI-PROXY REJECTOR: sqrt(m)->1 proxy fails J^2=-I (||.||=0.625>1e-6) and differs from J_full (0.126>1e-6) -- shell normalizers load-bearing, J_full no sign proxy
+PASS G3 - [FLOAT] +i eigenspace dim 32==32 (holo W) and -i dim 32==32 (anti-holo H_-), sum 64==64
+PASS G4 - EXACT: S_eps D2 S_eps == -D2 (S_eps anticommutes with the adjacency; every nearest-neighbor hop flips site parity); != +D2, D2 nonzero
+PASS G5 - [FLOAT] landed Unit-9 identity S_eps J_full S_eps == -J_full (||.+J||=0.0e+00<1e-9); REJECTOR != +J_full (||.-J||=0.748>1e-6): S_eps conjugates +i- to -i-eigenvectors, carrying W -> H_- (pinned by source-grep at G-PIN-U9)
+PASS G6 - |H|=1536==1536==2*768; G_amb subset H (True); the coset S_eps*G_amb subset H (True) and DISJOINT from G_amb (True: index 2); REJECTORS |H|!=768 (S_eps genuinely extends, S_eps not in G_amb) and |H|!=3072
+PASS G7 - c_G = (Sum_{g in G_amb} tr(g)^2)/|G_amb| = 9216/768 = 12==12 [EXACT INTEGER traces]; Sum tr^2 9216==9216, Sum % 768 == 0 (True); REJECTORS c_G != 10/11/13
+PASS G8 - c_H = (Sum_{h in H} tr(h)^2)/|H| = 9216/1536 = 6==6 [EXACT INTEGER traces]; Sum tr^2 9216==9216, Sum % 1536 == 0 (True); REJECTORS c_H != 5 (a single unsplit 24) / != 7. THE DISCRIMINATOR:  c_H = 6  <=>  real 12 splits
+PASS G9 - coset traceless: Sum_{c in S_eps*G_amb} tr(c)^2 = 0==0 and max|tr(c)|=0==0 [EXACT INTEGER: coset carries W <-> H_-, zero diagonal]; NON-VACUITY len(coset)=768==768 and G_amb NOT all-traceless (Sum_G tr^2=9216>0): tracelessness is coset-specific
+PASS G10 - [FLOAT] tiling: Sum_k PW_k == Pi_W=B B^H (||.||=3.9e-16<1e-8) and Sum_k PHm_k == Pi_{H_-}=Bm Bm^H (||.||=2.1e-15<1e-8; S_eps maps W onto H_-), PHm_k=S_eps PW_k S_eps (0.0e+00) each supported in H_- (||Pi_{H_-} PHm_k Pi_{H_-} - PHm_k||=1.1e-15<1e-8)
+PASS G11 - [FLOAT] each block PW_k+PHm_k H-invariant (restr-unitary dev max 2.2e-15<1e-8); H-commutant dims per block = [1, 1, 1, 1, 2] paired to W-ranks [4, 4, 6, 6, 12]: dim 2 is EXACTLY the rank-12 block (True), the other four dim 1; Sum_k d_k=6==6==c_H; REJECTOR not-all-1 (True, real 12 splits) and no d_k>=3
+PASS G12 - FULL H-decomposition dims (sorted) [8, 8, 12, 12, 12, 12]==[8,8,12,12,12,12], sum 64==64, count 6==6==c_H. MULT-FREE COROLLARY: count==6 with c_H==6 forces Sum_i m_i^2=6 over 6 terms => every m_i==1 (the two 8's inequivalent, the four 12's pairwise inequivalent; a repeated irrep would push c_H>=8). REJECTORS != [8,8,12,12,24] (c_H=5 non-split) / != [4,4,6,6,12,32]
+PASS G13 - PROOF 1 (H-commutant): the real-12 block's H-commutant dim == 2 (two inequivalent H-irreps), sub-idempotents 12^+,12^- of equal rank [12, 12]==[12,12]. CP-MIXING [FLOAT]: each half meets W and H_- evenly -- tr(Pi_12+ Pi_W)=6.0000, tr(Pi_12+ Pi_H-)=6.0000, tr(Pi_12- Pi_W)=6.0000, tr(Pi_12- Pi_H-)=6.0000 all ==6 (<1e-6); REJECTOR neither overlap 0 nor 12 (split is CP-diagonal, not a W/H_- relabelling)
+PASS G14 - PROOF 2 (G_amb-commutant = M_2): the SAME 24-block's G_amb-restricted commutant dim = 4==4=M_2 -- under G_amb ALONE the 24 is two copies of ONE irrep (the self-conjugate real 12). REJECTORS != 2 (two distinct G_amb-irreps) / != 1. G_amb-commutant 4 (M_2, same content) vs H-commutant 2 (split by the coset)
+PASS G15 - PROOF 3 (opposite coset character = chi_sgn): a coset element has half-characters (chi_a,chi_b)=(-2.8284,+2.8284), |chi_a+chi_b|=0.0e+00<1e-6 (opposite) and |chi_a-chi_b|=5.657>1e-3 (distinct, nonzero) -- this IS chi_sgn, so 12^- = 12^+ (x) chi_sgn; while on G_amb the two halves are EQUAL (max gap 3.6e-15<1e-6). [value +-2*sqrt(2) irrational, NOT gated -- only the opposite-sign structure]
+PASS G-MEM - MEMORY-BUDGET: small deterministic greedy generating sets close exactly -- G_amb 4 gens -> 768==768, H 5 gens -> 1536==1536 (1<len<=16/20, actual printed, never called minimal); commutant kron stacks use these generators, never a per-element stack over 768/1536 (OOM-avoiding, peak < ~3 GB)
+PASS G-PIN-U9 - SOURCE PIN Unit 9: common-sign-orbit note contains `S_eps J_full S_eps = -J_full` (the sign reversal used by G5/G9)
+PASS G-PIN-U12 - SOURCE PIN Unit 12: holomorphic-rep note contains `4 + 4 + 6 + 6 + 12 = 32` (the decomposition that CP-completes)
+PASS G-PIN-U13 - SOURCE PIN Unit 13: reality/CP-census note contains `FS = (0, 0, 0, 0, +1)` (rank-12 the unique self-conjugate)
+PASS G-PIN-SELF - SELF-NOTE DEPENDENCY DISCIPLINE: total KCPT-links 3==3 (Unit12 1==1, Unit13 1==1, Unit9 1==1); Unit8/10/11 linked 0/0/0==0/0/0 (backticked only, never `](...)`)
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

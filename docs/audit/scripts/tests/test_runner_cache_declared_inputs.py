@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import sys
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -52,6 +53,22 @@ class DeclaredInputFreshnessTest(unittest.TestCase):
             "elapsed_sec": 0.0,
             "status": "ok",
         }
+
+    def _git(self, *args: str) -> subprocess.CompletedProcess[str]:
+        return subprocess.run(
+            ["git", *args],
+            cwd=self.root,
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+
+    def _init_git(self) -> None:
+        self._git("init")
+        self._git("config", "user.name", "Runner Cache Test")
+        self._git("config", "user.email", "runner-cache@example.invalid")
+        self._git("add", "scripts/fixture.py", "docs/source.md")
+        self._git("commit", "-m", "fixture base")
 
     def test_declared_input_mutation_invalidates_cache(self) -> None:
         cache = rc.write_cache(self.runner, dict(self.result))
@@ -104,6 +121,25 @@ class DeclaredInputFreshnessTest(unittest.TestCase):
         self.assertNotEqual(before, rc.capture_runner_identity(self.runner))
         self.assertFalse(rc.cache_path_for(self.runner).exists())
 
+    def test_input_aba_mutation_during_execution_refuses_cache_write(self) -> None:
+        before = rc.capture_runner_identity(self.runner)
+
+        def mutate_read_restore(_runner: str, timeout_sec: int) -> dict:
+            self.source.write_text("v2\n", encoding="utf-8")
+            observed = self.source.read_text(encoding="utf-8").strip()
+            self.source.write_text("v1\n", encoding="utf-8")
+            return dict(
+                self.result,
+                stdout=f"observed={observed}\n",
+                timeout_sec=timeout_sec,
+            )
+
+        with mock.patch.object(rc, "execute_runner", side_effect=mutate_read_restore):
+            with self.assertRaises(rc.RunnerIdentityChangedError):
+                rc.execute_and_write_cache(self.runner, timeout_sec=120)
+        self.assertEqual(before, rc.capture_runner_identity(self.runner))
+        self.assertFalse(rc.cache_path_for(self.runner).exists())
+
     def test_staged_input_only_change_selects_declaring_runner(self) -> None:
         completed = __import__("subprocess").CompletedProcess(
             args=[], returncode=0, stdout="docs/source.md\n", stderr=""
@@ -124,6 +160,44 @@ class DeclaredInputFreshnessTest(unittest.TestCase):
                 precompute.collect_runners_from_pr_diff("origin/main"),
                 [self.runner],
             )
+
+    def test_real_staged_deletion_selects_declaring_runner(self) -> None:
+        self._init_git()
+        self.source.unlink()
+        self._git("add", "-u", "docs/source.md")
+        with mock.patch.object(
+            precompute, "collect_runners_from_ledger", return_value=[self.runner]
+        ):
+            self.assertEqual(precompute.collect_runners_from_staged(), [self.runner])
+
+    def test_real_staged_rename_selects_old_declared_path(self) -> None:
+        self._init_git()
+        self._git("mv", "docs/source.md", "docs/source-renamed.md")
+        with mock.patch.object(
+            precompute, "collect_runners_from_ledger", return_value=[self.runner]
+        ):
+            self.assertEqual(precompute.collect_runners_from_staged(), [self.runner])
+
+    def test_real_pr_diff_deletion_selects_declaring_runner(self) -> None:
+        self._init_git()
+        self._git("branch", "base")
+        self.source.unlink()
+        self._git("add", "-u", "docs/source.md")
+        self._git("commit", "-m", "delete declared input")
+        with mock.patch.object(
+            precompute, "collect_runners_from_ledger", return_value=[self.runner]
+        ):
+            self.assertEqual(precompute.collect_runners_from_pr_diff("base"), [self.runner])
+
+    def test_real_pr_diff_rename_selects_old_declared_path(self) -> None:
+        self._init_git()
+        self._git("branch", "base")
+        self._git("mv", "docs/source.md", "docs/source-renamed.md")
+        self._git("commit", "-m", "rename declared input")
+        with mock.patch.object(
+            precompute, "collect_runners_from_ledger", return_value=[self.runner]
+        ):
+            self.assertEqual(precompute.collect_runners_from_pr_diff("base"), [self.runner])
 
 
 if __name__ == "__main__":

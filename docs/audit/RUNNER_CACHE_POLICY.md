@@ -121,14 +121,15 @@ Three surfaces keep runner caches fresh without making open PRs noisy:
    `precompute_audit_runners.py --staged-only` and stage the resulting
    `logs/runner-cache/` files.
 
-2. **PR CI advisory** (`.github/workflows/audit.yml`)
-   Every PR runs a diff-scoped
-   `precompute_audit_runners.py --pr-diff <base> --check-only`. The same
-   reverse map includes declared-input-only changes. It reports stale caches as
-   warnings/job-summary advisories rather than a red check because `main` moves
-   continuously and PRs may stay open while review catches up. Review-loop's
-   landing gate remains responsible for regenerating caches from current
-   `main` before landing.
+2. **Review-loop landing gate**
+   Review-loop runs diff-scoped selection with
+   `precompute_audit_runners.py --pr-diff <base> --check-only`, then refreshes
+   selected stale caches from current `main` before landing. The same reverse
+   map includes declared-input-only changes, deletions, and both sides of
+   renames. This repository does **not** currently run that command on every
+   pull request: `.github/workflows/audit.yml` is scheduled/manual audit-lane
+   automation, not PR cache enforcement. Other automation may invoke
+   `--pr-diff`, but its presence is not assumed by this policy.
 
 3. **Audit-runner consumption** (`scripts/codex_audit_runner.py`)
    The audit runner reads cache files only when the runner SHA and any required
@@ -139,13 +140,17 @@ Three surfaces keep runner caches fresh without making open PRs noisy:
 
 ## Execution/concurrency binding
 
-Before execution, the cache layer captures the runner SHA and declared-input
-fingerprint. After execution it recomputes both. If either identity moved, it
-deletes the in-progress log, refuses the canonical cache write, reports an
-orchestrator error, and leaves the previous cache stale. When identities agree,
-the header is written from the *pre-execution* capture. Therefore an edit in the
-small interval after the post-check cannot bind old output to new bytes: the
-pre-run header immediately mismatches the edited file.
+Before execution, the cache layer captures the runner SHA, declared-input
+fingerprint, and filesystem-generation tokens (device, inode, size, mtime, and
+ctime) for every bound source. After execution it recomputes them. This catches
+ordinary ABA edits where bytes change, the runner reads the changed version,
+and the original bytes are restored before completion: the content hashes may
+match again, but the filesystem generation does not. If any observation moved,
+the cache layer deletes the in-progress log, refuses the canonical cache write,
+reports an orchestrator error, and leaves the previous cache stale. When they
+agree, the header is written from the *pre-execution content* capture.
+Therefore an edit in the small interval after the post-check cannot bind old
+output to new bytes: the pre-run header immediately mismatches the edited file.
 
 ## Per-runner timeouts
 
@@ -218,7 +223,7 @@ python3 scripts/precompute_audit_runners.py --staged-only
 python3 scripts/precompute_audit_runners.py \
     --runners scripts/foo.py,scripts/bar.py
 
-# Dry verification (CI gate behavior; exit 1 if any stale)
+# Dry verification (review/automation behavior; exit 1 if any stale)
 python3 scripts/precompute_audit_runners.py --all --check-only
 
 # Re-run even fresh caches
@@ -237,12 +242,12 @@ python3 scripts/precompute_audit_runners.py --cleanup-orphans
 | `scripts/cached_runner_output.py`             | Cache-first stdout command for analysis work  |
 | `scripts/codex_audit_runner.py`               | Reads cache via `runner_cache.cache_excerpt_for_audit` |
 | `docs/audit/scripts/pre_commit_audit_check.sh`| Pre-commit gate                               |
-| `.github/workflows/audit.yml`                 | CI gate                                       |
+| `.github/workflows/audit.yml`                 | Scheduled/manual audit lane; not a PR cache gate |
 | `docs/audit/templates/audit_workflow.yml`     | Template for the workflow file                |
 
 ## Bypass
 
-`git commit --no-verify` skips the local hook. The PR check is advisory, so it
-is not an enforcement substitute. Review-loop must still reject or refresh any
-stale selected cache before landing; audit consumption independently refuses a
-cache whose current identities do not match.
+`git commit --no-verify` skips the local hook. There is no repository-wide PR
+cache check to replace it. Review-loop must reject or refresh every stale
+selected cache before landing; audit consumption independently refuses a cache
+whose current identities do not match.

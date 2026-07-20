@@ -2,7 +2,7 @@
 """Cache-first runner output for analysis.
 
 Use this instead of `python3 scripts/<runner>.py` when an analysis task needs
-runner stdout. It prints the SHA-pinned cache when fresh; if the cache is
+runner stdout. It prints the source-identity-pinned cache when fresh; if the cache is
 missing or stale, it executes the runner once, writes
 `logs/runner-cache/<runner-stem>.txt`, and prints the resulting cache.
 """
@@ -43,7 +43,7 @@ def print_cache_text(cache_text: str, tail_chars: int | None) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Print SHA-pinned runner output, refreshing the cache only when needed.",
+        description="Print source-identity-pinned runner output, refreshing only when needed.",
     )
     parser.add_argument("runner", help="Runner path under scripts/, e.g. scripts/foo.py.")
     parser.add_argument(

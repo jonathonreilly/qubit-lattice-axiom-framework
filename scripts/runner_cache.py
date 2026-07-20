@@ -8,8 +8,8 @@ The header always pins the cache to the runner's content SHA-256. A runner
 that reads mutable repository inputs may additionally declare a top-level
 ``AUDIT_INPUT_PATHS`` tuple. For such a runner the header also pins a
 deterministic fingerprint of those files, and cache consumption rejects any
-input drift. Pre-commit and CI gates enforce that no runner or declared input
-change lands without an updated cache.
+input drift. The optional pre-commit hook and the mandatory review-loop
+landing gate select changed runners and declared inputs.
 
 Format (no timestamps anywhere — gate-clean):
 
@@ -26,10 +26,11 @@ Format (no timestamps anywhere — gate-clean):
     ----- stderr -----
     <stderr, capped at 50KB tail>
 
-The audit runner reads from this cache; pre-commit and CI select a cache when
-either its runner or one of its declared inputs changes. Refresh binds the
-output to identities captured before execution and refuses to write if the
-runner or any declared input moves during execution.
+The audit runner reads from this cache; the pre-commit hook and review-loop
+landing gate select a cache when either its runner or one of its declared
+inputs changes. Refresh binds the output to identities captured before
+execution and refuses to write if the runner or any declared input moves
+during execution.
 """
 from __future__ import annotations
 
@@ -94,6 +95,20 @@ class RunnerIdentity:
 
     runner_sha256: str
     input_fingerprint_sha256: str | None
+
+
+@dataclass(frozen=True)
+class ExecutionIdentity:
+    """Content identity plus filesystem-generation observations.
+
+    Cache freshness stays content-addressed.  The extra stat tokens are used
+    only across one execution so an edit/read/restore (ABA) cycle cannot make
+    changed bytes look continuously immutable merely because final content
+    equals initial content.
+    """
+
+    content: RunnerIdentity
+    source_stat_tokens: tuple[tuple[str, int, int, int, int, int], ...]
 
 
 class RunnerIdentityChangedError(RuntimeError):
@@ -236,6 +251,78 @@ def capture_runner_identity(runner_path: str | Path) -> RunnerIdentity | None:
             f"invalid or unreadable AUDIT_INPUT_PATHS declaration: {runner_path}"
         )
     return RunnerIdentity(runner_sha, input_fp)
+
+
+def _execution_source_paths(runner_path: str | Path) -> tuple[tuple[str, Path], ...]:
+    runner = (
+        runner_path
+        if isinstance(runner_path, Path) and runner_path.is_absolute()
+        else REPO_ROOT / runner_path
+    )
+    try:
+        runner_label = runner.relative_to(REPO_ROOT).as_posix()
+    except ValueError:
+        runner_label = str(runner)
+    declared = declared_input_paths(runner_path)
+    if declared == ():
+        raise ValueError(
+            f"invalid or unreadable AUDIT_INPUT_PATHS declaration: {runner_path}"
+        )
+    paths = [(runner_label, runner)]
+    if declared is not None:
+        paths.extend((rel, REPO_ROOT / rel) for rel in declared)
+    return tuple(paths)
+
+
+def _source_stat_tokens(
+    runner_path: str | Path,
+) -> tuple[tuple[str, int, int, int, int, int], ...]:
+    tokens: list[tuple[str, int, int, int, int, int]] = []
+    for label, path in _execution_source_paths(runner_path):
+        try:
+            stat = path.stat()
+        except OSError as exc:
+            raise ValueError(f"execution source is unreadable: {label}") from exc
+        tokens.append(
+            (
+                label,
+                int(stat.st_dev),
+                int(stat.st_ino),
+                int(stat.st_size),
+                int(stat.st_mtime_ns),
+                int(stat.st_ctime_ns),
+            )
+        )
+    return tuple(tokens)
+
+
+def capture_runner_execution_identity(
+    runner_path: str | Path,
+) -> ExecutionIdentity | None:
+    """Capture content plus filesystem generations for one execution.
+
+    A stable before/content/after observation is required so a source edit
+    racing the capture itself is rejected.  ``ctime_ns`` is deliberately part
+    of the token: ordinary write-then-restore cycles retain the same content
+    hash but advance the file's metadata generation.
+    """
+
+    for _attempt in range(3):
+        try:
+            stats_before = _source_stat_tokens(runner_path)
+        except ValueError:
+            if runner_sha256(runner_path) is None:
+                return None
+            raise
+        content = capture_runner_identity(runner_path)
+        if content is None:
+            return None
+        stats_after = _source_stat_tokens(runner_path)
+        if stats_before == stats_after:
+            return ExecutionIdentity(content, stats_before)
+    raise RunnerIdentityChangedError(
+        f"runner or declared input changed while identity was captured: {runner_path}"
+    )
 
 
 def cache_path_for(runner_path: str | Path) -> Path:
@@ -480,17 +567,19 @@ def write_cache(
 def execute_and_write_cache(
     runner_path: str, timeout_sec: int
 ) -> tuple[dict, Path | None]:
-    """Execute once and cache only if pre/post source identities agree.
+    """Execute once and cache only if pre/post execution identities agree.
 
-    The written header always uses the pre-execution identity. If a concurrent
-    edit lands after the post-check but before the write, the pre-run header is
-    immediately stale; it can never certify output against the new bytes.
+    Content hashes bind the cache header. Filesystem-generation tokens close
+    the ordinary ABA gap where a source is changed, read by the runner, and
+    restored to its original bytes before the post-check. If a concurrent edit
+    lands after the post-check but before the write, the pre-run content header
+    is immediately stale; it cannot certify output against the new bytes.
     """
-    before = capture_runner_identity(runner_path)
+    before = capture_runner_execution_identity(runner_path)
     result = execute_runner(runner_path, timeout_sec=timeout_sec)
     if before is None or result.get("status") == "missing":
         return result, None
-    after = capture_runner_identity(runner_path)
+    after = capture_runner_execution_identity(runner_path)
     if after != before:
         live = live_log_path_for(runner_path)
         try:
@@ -502,7 +591,7 @@ def execute_and_write_cache(
             f"runner or declared input changed during execution: {runner_path}; "
             f"before={before!r}; after={after!r}"
         )
-    return result, write_cache(runner_path, result, identity=before)
+    return result, write_cache(runner_path, result, identity=before.content)
 
 
 def cache_excerpt_for_audit(runner_path: str | Path,

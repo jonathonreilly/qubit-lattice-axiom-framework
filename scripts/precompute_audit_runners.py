@@ -24,12 +24,13 @@ Modes:
 
   precompute_audit_runners.py --pr-diff origin/main
       Cover runners or declared inputs changed in this branch vs <base-ref>.
-      PR-scoped analog of --staged-only; intended for the audit-lane PR CI
-      check so unrelated PRs don't fail on pre-existing main-branch drift.
+      PR-scoped analog of --staged-only for review-loop and optional local or
+      external automation. The repository's scheduled workflow does not call
+      this command for pull requests.
 
   precompute_audit_runners.py --check-only
       Do not execute anything; exit 1 with a list of stale caches if any
-      exist. Used by CI gate and `--staged-only --check-only` pre-commit.
+      exist. Used by review-loop and `--staged-only --check-only` pre-commit.
 
   precompute_audit_runners.py --runners scripts/foo.py,scripts/bar.py
       Refresh only the listed runners (comma-separated).
@@ -41,8 +42,8 @@ Modes:
       Delete cache files whose runner no longer exists on disk.
 
 Direct-to-main commit/push behavior is preserved for the bulk seeding
-case (--push-mode=batch, default). Pre-commit / CI invocations use
---push-mode=none implicitly via --check-only.
+case (--push-mode=batch, default). Pre-commit and review invocations use
+--push-mode=none implicitly via --check-only or diff-scoped selection.
 
 The cache file format is documented in `scripts/runner_cache.py`.
 """
@@ -183,9 +184,17 @@ def runners_for_changed_paths(changed_paths: list[str]) -> list[str]:
 
 
 def collect_runners_from_staged() -> list[str]:
-    """Return known runners selected by staged runner or input changes."""
+    """Return known runners selected by staged runner or input changes.
+
+    Rename detection is disabled so both sides of a rename appear as an
+    add/delete pair; deletions remain visible for reverse mapping against a
+    runner that still declares the old path.
+    """
     res = subprocess.run(
-        ["git", "diff", "--cached", "--name-only", "--diff-filter=ACMR"],
+        [
+            "git", "diff", "--cached", "--name-only", "--no-renames",
+            "--diff-filter=ACMRD",
+        ],
         cwd=REPO_ROOT, capture_output=True, text=True, check=False,
     )
     staged = [s for s in res.stdout.splitlines() if s]
@@ -214,11 +223,15 @@ def collect_runners_from_pr_diff(base_ref: str) -> list[str]:
     existing canonical cache (matching `collect_runners_from_staged`;
     uncached helpers like precompute itself are excluded). If a
     cache-invalidator helper changed, escalates to the full ledger
-    because every cache header is potentially stale.
+    because every cache header is potentially stale. Rename detection is
+    disabled and deletions are included so old declared paths cannot vanish
+    from selection.
     """
     res = subprocess.run(
-        ["git", "diff", "--name-only", "--diff-filter=ACMR",
-         f"{base_ref}...HEAD"],
+        [
+            "git", "diff", "--name-only", "--no-renames",
+            "--diff-filter=ACMRD", f"{base_ref}...HEAD",
+        ],
         cwd=REPO_ROOT, capture_output=True, text=True, check=False,
     )
     if res.returncode != 0:
@@ -336,12 +349,12 @@ def main() -> int:
     p.add_argument("--check-only", action="store_true",
                    help="Do not execute anything. Exit 1 if any cache is "
                         "stale, with a list of which runners need refresh. "
-                        "Used by CI and --staged-only --check-only.")
+                        "Used by review-loop and --staged-only --check-only.")
     p.add_argument("--pr-diff", default="",
                    help="Cover only runners changed vs <base-ref> "
                         "(e.g. 'origin/main'). PR-scoped analog of "
-                        "--staged-only; used by the audit-lane PR CI "
-                        "check. Falls back to the full ledger if a "
+                        "--staged-only; available to review-loop and "
+                        "optional automation. Falls back to the full ledger if a "
                         "cache-invalidator helper changed.")
     p.add_argument("--runners", default="",
                    help="Comma-separated runner paths to refresh "

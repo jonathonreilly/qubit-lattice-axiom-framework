@@ -56,23 +56,24 @@ separate physical bridges.
 
 The actual current lane was replayed before this theorem:
 
-- the composite Gleason bridge reports `PASS=24 FAIL=0` and is
-  `audited_conditional`; it assumes grading, orthogonal additivity,
+- the composite Gleason bridge reports `PASS=24 FAIL=0`; it assumes grading, orthogonal additivity,
   noncontextuality, full `M_4` projection menus including entangled
   resolutions, and the named Gleason theorem;
-- the graded-interface v2 runner reports `PASS=7 FAIL=0` and is
-  `audited_conditional`; v2 is candidate and unregistered;
+- the graded-interface v2 runner reports `PASS=7 FAIL=0`; its v2 interface is
+  a candidate input rather than a registered premise;
 - the qubit Busch/effect runner reports `40 PASS / 0 FAIL` and correctly proves
-  trace form from named conditional POVM-effect axioms M1--M3, but its row is unaudited
-  and it does not derive M1--M3;
+  trace form from named conditional POVM-effect axioms M1--M3, but it does not
+  derive M1--M3;
 - the post-record count firewall (`56/0`) and finite-frequency boundary
   (`35/0`) show that realized counts do not supply predictive weights, IID
   structure, or convergence;
-- the finite ideal-record Born parent is unaudited and still conditionally
-  identifies a pre-record reference state.
+- the finite ideal-record Born parent conditionally identifies a pre-record
+  reference state.
 
-These replayed rows are non-load-bearing comparators whose statuses may change;
-the present nonselection, duality, and collapse proofs are self-contained.
+These replayed rows are non-load-bearing comparators; their current audit and
+effective statuses live only on the pipeline-derived ledger and are not
+snapshotted here. The present nonselection, duality, and collapse proofs are
+self-contained.
 The Busch comparator is
 `BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`.
 The arbitrary locked-output effect is derived, under that note's own named

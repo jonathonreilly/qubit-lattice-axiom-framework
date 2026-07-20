@@ -51,14 +51,11 @@ theorem:
   update, context, time, or rate;
 
 - finite normalized isometry implies Kraus completeness, a CPTP unconditional
-  map, and positive normalized selective branches; the relevant rows are still
-  in independent-audit processing;
+  map, and positive normalized selective branches;
 - the reconciled finite-dimensional
   [`Kraus--Choi authority`](KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md)
   supplies existence of a Kraus representation for a named CP map with the
-  normalization convention kept explicit; current-main validation records the
-  row as `audited_clean` / effective `retained`, with status remaining
-  pipeline-derived;
+  normalization convention kept explicit;
 - any named normalized Kraus family gives an explicit block-column Stinespring
   isometry (`29/0`), but the physical family is not selected;
 - the controlled-copy/fresh-fragment model gives projective `K_i=P_i`,
@@ -82,7 +79,9 @@ J_i(rho)=Tr(E_i rho) P_i,       E_i>=0.                    (1)
 
 Apart from the named finite Kraus-representation authority, all algebra below
 is proved directly. Earlier intermittent and raw-menu results are
-comparators, not additional proof authority.
+comparators, not additional proof authority. Current audit and effective
+statuses for every comparator above live only on the pipeline-derived ledger
+and are not snapshotted here.
 
 ## 1. Full intermittent effect classification
 

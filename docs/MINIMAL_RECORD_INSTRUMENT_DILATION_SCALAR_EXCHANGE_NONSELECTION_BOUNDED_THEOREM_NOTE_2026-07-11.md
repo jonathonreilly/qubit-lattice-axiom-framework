@@ -94,10 +94,11 @@ instrument lane:
   operation, while leaving the full instrument and coherent no-record block
   open.
 
-The corresponding retained/source runners reproduce at `29/0`, `75/0`,
+The corresponding comparator/source runners reproduce at `29/0`, `75/0`,
 `37/0`, and `30/0` for the persistent-instrument, Kraus bridge,
 controlled-copy, and blocking-isometry checks respectively. Audit status is
-not inferred from runner success.
+not inferred from runner success; current audit and effective statuses live
+only on the pipeline-derived ledger and are not snapshotted here.
 
 The finite CP/Kraus/Choi representation used below is the scoped mathematical
 authority in

@@ -54,15 +54,15 @@ The actual order/time stack and its runners were read before this derivation.
   overlapping cells.
 - The history-order, clock/rate, count-arrow, Markov-embeddability, finite-reset,
   IID, and clock-axis rows all give narrow finite route pruning or conditional
-  interfaces. On the current validation surface the directly relevant rows are
-  mostly unaudited; none is used as proof authority here.
-- The formation-arrow model is still in audit processing and conditions on a
-  finite broadcast model plus a low-record boundary; it does not select an
-  overlap schedule.
+  interfaces; none is used as proof authority here.
+- The formation-arrow model conditions on a finite broadcast model plus a
+  low-record boundary; it does not select an overlap schedule.
 - The classical record-composition note concerns convolution of named weight
   kernels, not composition of overlapping CP instruments.
 The finite CP/Kraus mathematics below is recomputed directly. Current-main
 Kraus--Choi authority supplies only the general representation convention.
+Current audit and effective statuses for the comparators live only on the
+pipeline-derived ledger and are not snapshotted here.
 
 ## 1. One normalized full-edge rule
 

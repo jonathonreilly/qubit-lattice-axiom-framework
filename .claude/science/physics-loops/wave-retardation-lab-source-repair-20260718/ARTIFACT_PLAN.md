@@ -25,7 +25,7 @@ all-mode runs have identical stdout SHA-256
 `1bc37770b1bd264783dca40d5faf6981ed819290606042c39f052857555728b1`;
 the fresh review returned PASS; optimized/no-site fail-closed probes passed;
 and detached compatibility passed after staging the refreshed citation
-manifest only in the disposable worktree.  Generated governance/audit files
-were discarded with that worktree.
+manifest.  That acknowledgment co-lands; every other generated
+governance/audit file was discarded with the disposable worktree.
 
 No audit worker, audit verdict, ledger edit, or merge belongs to this plan.

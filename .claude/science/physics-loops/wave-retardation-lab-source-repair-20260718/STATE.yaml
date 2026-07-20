@@ -55,15 +55,16 @@ no_go_routes:
 trace_gate_classification: direct_blocker_closure
 review_disposition: fresh_external_sol_xhigh_pass_iteration_1
 audit_compatibility_validation: >-
-  PASS on detached disposable commit 68a27d8a79: full pipeline reached only
+  PASS on detached disposable commit 55eb3e3b50: full pipeline reached only
   the expected unstaged-manifest acknowledgment gate; after staging the
   refreshed manifest in that worktree, enforced invariants, strict lint,
-  staged claim typing, and diff checks passed. Generated files were discarded.
+  staged claim typing, and diff checks passed. The manifest co-lands; all other
+  generated files were discarded.
 pr_status: open_ready_unmerged
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5514
 next_exact_action: >-
   Land the exact reviewed PR head by normal merge after detached compatibility;
   no audit verdict is authored or applied in this source review.
 stop_condition: >-
-  Achieved: one honestly bounded, source-repaired, reviewed,
-  compatibility-tested ready PR is open without an audit verdict or merge.
+  Achieved when the exact honestly bounded, source-repaired, reviewed,
+  compatibility-tested PR head is normally merged without an audit verdict.

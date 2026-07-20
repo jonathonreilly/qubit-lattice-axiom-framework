@@ -13,23 +13,24 @@ redesigned carrier may behave differently.
 
 ## Validation and remaining work
 
-Fresh review-loop passed after two rounds of focused guard fixes.  Normal,
+Fresh external Sol xhigh review-loop passed after one additional focused
+repair iteration.  Normal,
 independent, hostile, and all modes pass; two all-mode runs are byte-identical;
 all three changed-runner caches are exact-SHA fresh.  Optimized/no-site
 fail-closed probes, compile, vocabulary, premise purity, staged cache checks,
 and diff checks pass.
 
-Detached compatibility ran the full mechanical pipeline.  It initially
-reached only the expected graph-manifest acknowledgment gate; staging the
-refreshed citation manifest in that disposable worktree made enforced
-invariants pass.  Strict lint had no errors and staged claim typing resolved
-the target as `bounded_theorem`.  The reconstructed graph has zero inbound
-edges and zero transitive descendants because both overreading consumers were
-narrowed.  All generated audit/status/queue/dispatch/publication/front-door
-and manifest changes were discarded.
+Detached compatibility on reviewed commit `55eb3e3b50` ran the full mechanical
+pipeline.  It reached only the expected graph-manifest acknowledgment gate;
+staging the refreshed citation manifest made enforced invariants pass.  Strict
+lint had no errors, and staged claim typing resolved the target as
+`bounded_theorem`, unaudited.  The reconstructed graph has zero inbound edges
+and zero transitive descendants because both overreading consumers were
+narrowed.  The citation manifest acknowledgment co-lands; all other generated
+audit/status/queue/dispatch/publication/front-door changes were discarded with
+the disposable worktree.
 
 Ready review PR
 [#5514](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5514)
-is open and unmerged.  The next action is a fresh independent Sol xhigh
-review-loop pass.  Independent audit is deliberately outside this worker's
-authority, and the source author must not merge the PR.
+is open and ready for a normal merge of the exact reviewed head.  Independent
+audit is deliberately outside this worker's authority and was not run here.

@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_symplectic_leg_chisgn_covariance_omega_pairing_2026_07_20.py
+runner_sha256: d8855987de4fc26e49b050f3618b447442075a6de074b18d8fcb9e9cf4b5b76b
+input_fingerprint_sha256: b31ae0092f088ef75bb9d92134d3e48598c850610d7df644fc712b38a226d094
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 25.74
+status: ok
+----- stdout -----
+
+=== Unit 16: symplectic-leg chi_sgn-covariance of omega=-J_full + omega-pairing census ===
+PASS G-CONSTRUCT-J2 - inherited J_full^2 = -I (Unit 8 total complex structure)
+PASS G-DECOMP-COMPLETE - six Unit-14 constituent projectors resolve the identity (sum = I_64)
+PASS G-DECOMP-RANKS - constituent ranks [8, 8, 12, 12, 12, 12] == [8, 8, 12, 12, 12, 12]
+PASS G-OMEGA-DEF - omega = -J_full antisymmetric (||w+w^T|| = 0.0e+00) and full rank 64 == 64
+PASS G-OMEGA-INV - g^T w g = +w on all 768 G_amb (max dev 0.0e+00); wrong-sign rejector 0.748 > max|w| 0.374
+PASS G-OMEGA-COSET - c^T w c = -w on all 768 S_eps-coset (max dev 0.0e+00); wrong-sign rejector 0.748 > max|w| 0.374
+PASS G-OMEGA-SEPS - S_eps^T w S_eps = -w (dev 0.0e+00); wrong-sign rejector 0.748 > max|w| 0.374
+PASS G-PAIR-INDUCED - induced self-blocks nondegenerate, ranks [8, 8, 12, 12] == [8, 8, 12, 12]
+PASS G-PAIR-ISOTROPIC - omega vanishes within 12+ (||1.0e-14||) and within 12- (||1.0e-14||)
+PASS G-PAIR-CROSS - 12+ <-> 12- cross-pairing nondegenerate, rank 12 == 12
+PASS G-PAIR-OFFDIAG - all remaining pairs vanish (max off-block ||3.7e-13||)
+PASS G-PAIR-RANK - assembled G antisymmetric, rank 64 == 64; accounting 40 + 2*12 = 64 == 64
+PASS G-CONTRAST-SYMVSANTI - 12+: symmetric form min-sv 1.000 nondegenerate (== form_cp[4] 1.000); omega self ||1.0e-14|| isotropic
+PASS G-PIN-U14 - Unit-14 six-constituent pin present in KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md
+PASS G-PIN-U10 - Unit-10 symplectic-leg pins present: 'J_full^T g = -J_full' and 'U^T omega U = omega'
+PASS G-PIN-SELF - self-note dep edges: total 2==2, U14 1==1, U10 1==1, U9/U13/U15 = 0/0/0==0
+
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

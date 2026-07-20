@@ -9,6 +9,13 @@ and, for each row that hasn't been attempted yet, drives the configured Codex mo
 (at xhigh reasoning) to attempt closing the chain and opens a PR for
 human review and re-audit.
 
+The audit batch may also invoke the loop with `--handoff-file` after a
+validated non-clean verdict lands. The handoff uses schema
+`audit_science_fix_handoff_v1` and carries the same audited rationale and
+repair target without waiting for the nightly prompt snapshot. Malformed or
+schema-invalid audit output is never eligible: it is not a scientific verdict
+and cannot authorize source edits.
+
 Designed to chip through the medium-difficulty backlog autonomously
 while leaving the hard problems for a human. The loop only makes
 candidate PRs. Those PRs still require review-loop before landing, and
@@ -99,6 +106,9 @@ python3 scripts/science_fix_loop.py --n 5 --category conditional_missing_bridge_
 
 # Try a specific row
 python3 scripts/science_fix_loop.py --claim-id <claim_id>
+
+# Consume immediate repair candidates emitted by an audit batch
+python3 scripts/science_fix_loop.py --handoff-file /tmp/audit_batch_.../science-fix-handoff.json --n 2
 
 # Re-attempt rows that previously timed out / errored / punted
 # (skips only rows that successfully opened a PR)

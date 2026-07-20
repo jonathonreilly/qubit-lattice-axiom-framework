@@ -41,6 +41,34 @@ class BatchExitSemanticsTest(unittest.TestCase):
         report = [{"cid": "row", "result": "validation_failed"}]
         self.assertTrue(batch.report_has_hard_blocker(report))
 
+    def test_campaign_quarantine_makes_only_its_schema_failures_resumable(self):
+        report = [
+            {"cid": "quarantined", "result": "validation_failed"},
+            {"cid": "quarantined", "result": "schema_invalid_quarantined"},
+        ]
+        self.assertFalse(batch.report_has_hard_blocker(report))
+
+        report.append({"cid": "other", "result": "validation_failed"})
+        self.assertTrue(batch.report_has_hard_blocker(report))
+
+    def test_banked_clean_seat_defers_only_the_invalid_peer(self):
+        report = [
+            {"cid": "row", "result": "validation_failed"},
+            {"cid": "row", "result": "critical_peer_pending"},
+            {"cid": "row", "result": "schema_invalid_peer_deferred"},
+            {"cid": "row", "result": "audited_clean"},
+        ]
+        self.assertFalse(batch.report_has_hard_blocker(report))
+
+    def test_science_fix_dispatch_is_a_sidecar_not_an_audit_blocker(self):
+        for result in ("science_fix_dispatched", "science_fix_dispatch_failed"):
+            with self.subTest(result=result):
+                self.assertFalse(
+                    batch.report_has_hard_blocker(
+                        [{"cid": "repairable", "result": result}]
+                    )
+                )
+
     def test_mixed_failure_records_the_judicial_handoff(self):
         report = [{"cid": "broken", "result": "validation_failed"}]
         selected = [{"claim_id": "disputed"}]
@@ -55,6 +83,178 @@ class BatchExitSemanticsTest(unittest.TestCase):
             {"cid": "disputed", "result": "judicial_panel_required"}, report
         )
         self.assertTrue(batch.report_has_hard_blocker(report))
+
+
+class SchemaRecoveryTest(unittest.TestCase):
+    def test_known_n8_failure_gets_exact_mechanism_repair_guidance(self):
+        blob = {
+            "no_go_discipline": {
+                "N8_cross_cycle_echo": {
+                    "echoes": [
+                        {
+                            "mechanism": "projector-kernel obstruction",
+                            "disposition": "paraphrased obstruction",
+                        }
+                    ]
+                }
+            }
+        }
+
+        guidance = batch.schema_repair_guidance(
+            blob,
+            "N8 echo 1.disposition must name its indexed mechanism",
+        )
+
+        self.assertIn('"projector-kernel obstruction"', guidance)
+        self.assertIn("copy the exact mechanism string", guidance)
+
+    def test_campaign_quarantine_persists_exact_failures_once(self):
+        report = [
+            {
+                "cid": "row",
+                "pass": 1,
+                "result": "validation_failed",
+                "detail": "N8 exact validator error",
+            }
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "quarantine.jsonl"
+            batch.persist_campaign_quarantine(path, {"row"}, report)
+            batch.persist_campaign_quarantine(path, {"row"}, report)
+
+            records = [json.loads(line) for line in path.read_text().splitlines()]
+
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0]["claim_id"], "row")
+        self.assertEqual(records[0]["failures"][0]["detail"], "N8 exact validator error")
+
+    def test_science_handoff_requires_valid_actionable_verdict(self):
+        job = {
+            "cid": "row",
+            "row": {
+                "note_path": "docs/ROW.md",
+                "claim_type": "bounded_theorem",
+                "transitive_descendants": 7,
+            },
+        }
+        clean = {"audit": {"verdict": "audited_clean"}}
+        actionable = {
+            "audit": {
+                "verdict": "audited_conditional",
+                "notes_for_re_audit_if_any": (
+                    "missing_bridge_theorem — prove the missing implication"
+                ),
+                "verdict_rationale": "The implication is only asserted.",
+                "load_bearing_step": "Therefore the bound follows.",
+                "audit_invocation_id": "a" * 32,
+            }
+        }
+
+        self.assertIsNone(batch.science_fix_handoff(job, clean))
+        handoff = batch.science_fix_handoff(job, actionable)
+        self.assertIsNotNone(handoff)
+        self.assertEqual(
+            handoff["category"],
+            "conditional_missing_bridge_theorem",
+        )
+        self.assertIn("prove the missing implication", handoff["prompt_body"])
+
+    def test_batch_emits_handoff_only_after_validated_verdict_applies(self):
+        job = {
+            "cid": "row",
+            "pass": 1,
+            "row": {
+                "claim_id": "row",
+                "note_path": "docs/ROW.md",
+                "claim_type": "bounded_theorem",
+                "criticality": None,
+            },
+        }
+        envelope = {
+            "audit": {
+                "verdict": "audited_failed",
+                "verdict_rationale": "The central equality is contradicted.",
+                "notes_for_re_audit_if_any": "Replace the false equality.",
+                "audit_invocation_id": "c" * 32,
+            }
+        }
+        with mock.patch.object(
+            batch,
+            "finalize_worker",
+            return_value=(envelope, {"result": "delivery_validated"}),
+        ), mock.patch.object(
+            batch,
+            "apply_one_serialized",
+            return_value=(True, {"cid": "row", "result": "audited_failed"}),
+        ):
+            ok, _, quarantines, handoffs = batch.apply_serialized([job], [])
+
+        self.assertTrue(ok)
+        self.assertEqual(quarantines, set())
+        self.assertEqual([row["claim_id"] for row in handoffs], ["row"])
+
+    def test_banked_clean_seat_does_not_quarantine_whole_claim(self):
+        row = {
+            "claim_id": "row",
+            "note_path": "docs/ROW.md",
+            "claim_type": "bounded_theorem",
+            "criticality": "critical",
+            "audit_status": "unaudited",
+            "cross_confirmation": None,
+        }
+        jobs = [
+            {"cid": "row", "pass": 1, "row": row},
+            {"cid": "row", "pass": 2, "row": row},
+        ]
+
+        def finalize(job):
+            if job["pass"] == 1:
+                return {"audit": {"verdict": "audited_clean"}}, {"ok": True}
+            return None, {
+                "cid": "row",
+                "pass": 2,
+                "result": "validation_failed",
+                "detail": "N8 exact validator error",
+            }
+
+        report = []
+        with mock.patch.object(batch, "finalize_worker", side_effect=finalize), \
+                mock.patch.object(
+                    batch,
+                    "apply_one_serialized",
+                    return_value=(True, {"cid": "row", "result": "audited_clean"}),
+                ):
+            ok, _, quarantines, _ = batch.apply_serialized(jobs, report)
+
+        self.assertTrue(ok)
+        self.assertEqual(quarantines, set())
+        self.assertIn(
+            "schema_invalid_peer_deferred",
+            {item["result"] for item in report},
+        )
+
+    def test_dispatch_serializes_one_handoff_and_starts_detached_worker(self):
+        handoff = {
+            "claim_id": "row",
+            "category": "failed",
+            "note_path": "docs/ROW.md",
+            "descendants": 0,
+            "cls": "(B)",
+            "prompt_body": "Repair the validated failure.",
+        }
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(
+            batch.subprocess,
+            "Popen",
+            return_value=mock.Mock(pid=1234),
+        ) as popen:
+            launched = batch.launch_science_fix_worker([handoff], Path(tmp))
+            payload = json.loads(launched[1].read_text(encoding="utf-8"))
+
+        self.assertEqual(launched[0], 1234)
+        self.assertEqual(payload["schema"], "audit_science_fix_handoff_v1")
+        self.assertEqual(payload["rows"][0]["claim_id"], "row")
+        self.assertTrue(popen.call_args.kwargs["start_new_session"])
+        self.assertIn("--retry-failed", popen.call_args.args[0])
 
 
 class AutomaticPanelResumeTest(unittest.TestCase):
@@ -171,6 +371,17 @@ class CampaignContractTest(unittest.TestCase):
                 counts = audit_loop.landed_verdict_counts()
         self.assertEqual(counts["audited_clean"], 1)
         load_rows.assert_not_called()
+
+    def test_inner_batches_share_campaign_quarantine_and_dispatch_policy(self):
+        args = _args()
+        args.campaign_quarantine_file = Path("/tmp/campaign/quarantine.jsonl")
+        args.skip_science_fix_dispatch = True
+
+        command = audit_loop.batch_command("lane_a", args)
+
+        self.assertIn("--campaign-quarantine-file", command)
+        self.assertIn(str(args.campaign_quarantine_file), command)
+        self.assertIn("--skip-science-fix-dispatch", command)
 
 
 if __name__ == "__main__":

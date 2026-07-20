@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -83,6 +84,64 @@ class OpenScienceFixPrTest(unittest.TestCase):
         self.assertIsNone(self._probe(returncode=1))
         self.assertIsNone(self._probe(stdout="not-json"))
         self.assertIsNone(self._probe(raises=OSError("gh missing")))
+
+
+class AuditHandoffTest(unittest.TestCase):
+    def _write(self, payload) -> Path:
+        directory = tempfile.TemporaryDirectory()
+        self.addCleanup(directory.cleanup)
+        path = Path(directory.name) / "handoff.json"
+        path.write_text(json.dumps(payload), encoding="utf-8")
+        return path
+
+    def test_parses_validated_audit_handoff_with_provenance(self):
+        invocation = "b" * 32
+        path = self._write(
+            {
+                "schema": "audit_science_fix_handoff_v1",
+                "rows": [
+                    {
+                        "category": "conditional_missing_bridge_theorem",
+                        "claim_id": "claim_x",
+                        "note_path": "docs/X.md",
+                        "descendants": 4,
+                        "cls": "(B)",
+                        "prompt_body": "Repair the validated missing bridge.",
+                        "audit_invocation_id": invocation,
+                    }
+                ],
+            }
+        )
+
+        rows = sfl.parse_audit_handoff(path)
+
+        self.assertEqual(rows[0]["claim_id"], "claim_x")
+        self.assertIn(invocation, rows[0]["prompt_source"])
+
+    def test_rejects_untrusted_or_incomplete_handoff(self):
+        cases = (
+            [],
+            {"schema": "wrong", "rows": []},
+            {
+                "schema": "audit_science_fix_handoff_v1",
+                "rows": [{"category": "failed", "claim_id": "claim_x"}],
+            },
+            {
+                "schema": "audit_science_fix_handoff_v1",
+                "rows": [
+                    {
+                        "category": "invented",
+                        "claim_id": "claim_x",
+                        "note_path": "docs/X.md",
+                        "prompt_body": "Do something.",
+                    }
+                ],
+            },
+        )
+        for payload in cases:
+            with self.subTest(payload=payload):
+                with self.assertRaises(ValueError):
+                    sfl.parse_audit_handoff(self._write(payload))
 
 
 

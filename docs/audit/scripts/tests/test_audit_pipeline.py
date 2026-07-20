@@ -9938,7 +9938,7 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
                 report.append(
                     {"cid": job["cid"], "pass": 1, "result": "audited_conditional"}
                 )
-            return True, set()
+            return True, set(), set(), []
 
         launch = mock.Mock(
             side_effect=lambda row, all_rows, pass_no, wd, timeout, round_no=1: {
@@ -14408,7 +14408,7 @@ class BatchOrchestratorSeatBankingTest(unittest.TestCase):
         report = []
         with mock.patch.object(m, "finalize_worker", side_effect=fake_finalize), \
                 mock.patch.object(m, "apply_one_serialized", side_effect=fake_apply_one):
-            ok, _ = m.apply_serialized(jobs, report)
+            ok, _, _, _ = m.apply_serialized(jobs, report)
         return ok, report, applied, jobs[0]["row"]
 
     def test_single_validated_seat_banks(self):
@@ -14431,7 +14431,10 @@ class BatchOrchestratorSeatBankingTest(unittest.TestCase):
                 results = [item["result"] for item in report]
                 self.assertIn("validation_failed", results)
                 self.assertIn("critical_peer_pending", results)
+                self.assertIn("schema_invalid_peer_deferred", results)
+                self.assertNotIn("schema_invalid_quarantined", results)
                 self.assertNotIn("critical_peer_delivery_missing", results)
+                self.assertFalse(m.report_has_hard_blocker(report))
                 self.assertEqual(row["audit_status"], "audit_in_progress")
                 self.assertEqual(
                     row["cross_confirmation"]["status"], "awaiting_second"
@@ -14467,19 +14470,22 @@ class BatchOrchestratorSeatBankingTest(unittest.TestCase):
             sum(item["result"] == "validation_failed" for item in report), 2
         )
 
-        # The incomplete pair result stays outside main's success set, so a
-        # banked run exits nonzero even though applied_ok remains true.
+        # The incomplete-pair marker stays outside the ordinary success set,
+        # but its paired peer deferral makes the batch resumable.
         self.assertNotIn("critical_peer_pending", m.SUCCESS_RESULTS)
+        self.assertFalse(m.report_has_hard_blocker(report))
 
-    def test_zero_validated_seats_still_reports_missing(self):
+    def test_zero_schema_valid_seats_are_quarantined_without_stopping_lane(self):
         m = _import("orchestrate_audit_batch")
         ok, report, applied, _ = self._run(
             m, self._jobs(m, {1: "failed", 2: "failed"})
         )
-        self.assertFalse(ok)
+        self.assertTrue(ok)
         self.assertEqual(applied, [])
         results = {item["result"] for item in report}
-        self.assertIn("critical_peer_delivery_missing", results)
+        self.assertIn("schema_invalid_quarantined", results)
+        self.assertNotIn("critical_peer_delivery_missing", results)
+        self.assertFalse(m.report_has_hard_blocker(report))
 
         queue = _import("compute_audit_queue")
         for verdict in ("audited_conditional", "audited_failed"):
@@ -14492,6 +14498,7 @@ class BatchOrchestratorSeatBankingTest(unittest.TestCase):
                 results = [item["result"] for item in report]
                 self.assertIn("validation_failed", results)
                 self.assertIn("critical_peer_pending", results)
+                self.assertIn("schema_invalid_attempt_superseded", results)
                 self.assertEqual(row["audit_status"], verdict)
                 self.assertNotEqual(m.passes_for_row(row), [2])
                 pending, reason = queue.needs_audit(row)

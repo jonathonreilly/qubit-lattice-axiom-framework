@@ -19,6 +19,7 @@ import json
 import os
 import subprocess
 import sys
+import tempfile
 import threading
 import time
 from collections import Counter
@@ -51,6 +52,7 @@ PROGRESS = {
     "panel_state": "not_started",
     "canary_state": "not_started",
     "baseline_status": {},
+    "quarantine_file": None,
 }
 _STOP_HEARTBEAT = threading.Event()
 _DRAIN_LOCK_HANDLE: TextIO | None = None
@@ -86,6 +88,26 @@ def remaining_blocker_count() -> int | None:
         for row in rows
         if isinstance(row, dict)
     )
+
+
+def schema_quarantine_count() -> int:
+    path = PROGRESS.get("quarantine_file")
+    if not isinstance(path, Path) or not path.exists():
+        return 0
+    claim_ids: set[str] = set()
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return 0
+    for line in lines:
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        cid = row.get("claim_id") if isinstance(row, dict) else None
+        if isinstance(cid, str) and cid:
+            claim_ids.add(cid)
+    return len(claim_ids)
 
 
 def audit_status_snapshot() -> dict[str, str | None]:
@@ -135,7 +157,8 @@ def summary_line(final: bool = False) -> str:
         f"verdicts_landed={verdict_text} panel_reseat={PROGRESS['panel_state']} "
         f"canary={PROGRESS['canary_state']} "
         f"ready_rows={ready if ready is not None else 'unknown'} "
-        f"remaining_lane_blockers={blockers if blockers is not None else 'unknown'}"
+        f"remaining_lane_blockers={blockers if blockers is not None else 'unknown'} "
+        f"schema_quarantined={schema_quarantine_count()}"
     )
 
 
@@ -279,6 +302,11 @@ def batch_command(lane: str, args: argparse.Namespace) -> list[str]:
         "--push-retries",
         str(args.push_retries),
     ]
+    quarantine_file = getattr(args, "campaign_quarantine_file", None)
+    if quarantine_file is not None:
+        command.extend(["--campaign-quarantine-file", str(quarantine_file)])
+    if getattr(args, "skip_science_fix_dispatch", False):
+        command.append("--skip-science-fix-dispatch")
     if args.dry_run:
         command.append("--dry-run")
     return command
@@ -384,6 +412,17 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--runner-timeout-sec", type=int, default=120)
     parser.add_argument("--codex-timeout-sec", type=int, default=2700)
     parser.add_argument("--push-retries", type=int, default=3)
+    parser.add_argument(
+        "--campaign-workdir",
+        type=Path,
+        default=None,
+        help="preserve campaign-scoped quarantine/report artifacts in this directory",
+    )
+    parser.add_argument(
+        "--skip-science-fix-dispatch",
+        action="store_true",
+        help="do not launch PR-producing repair workers after validated non-clean verdicts",
+    )
     parser.add_argument("--skip-forensic-canary", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     return parser
@@ -404,6 +443,13 @@ def main(argv: list[str] | None = None) -> int:
         raise SystemExit("worker, round, timeout, and retry values must be positive")
     if args.max_passes < 0 or args.max_lane_cycles < 0:
         raise SystemExit("pass and cycle safety bounds must be non-negative")
+    campaign_dir = args.campaign_workdir or Path(
+        tempfile.mkdtemp(prefix="audit_loop_campaign_")
+    )
+    campaign_dir.mkdir(parents=True, exist_ok=True)
+    args.campaign_quarantine_file = campaign_dir / "schema-invalid-quarantine.jsonl"
+    PROGRESS["quarantine_file"] = args.campaign_quarantine_file
+    emit(f"campaign artifacts: {campaign_dir}")
     try:
         validate_requested_lanes(args.lane)
     except (OSError, ValueError, json.JSONDecodeError) as exc:
@@ -467,6 +513,11 @@ def main(argv: list[str] | None = None) -> int:
             emit(f"development pass {pass_number}: before={before} after={after}")
             if after == before:
                 emit("development fixed point reached: full pass landed nothing new")
+                if schema_quarantine_count():
+                    emit(
+                        "fixed point excludes campaign-scoped schema-invalid "
+                        f"quarantines: {args.campaign_quarantine_file}"
+                    )
                 break
 
         if not args.skip_forensic_canary:

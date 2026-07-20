@@ -242,9 +242,13 @@ ROW_BLOCK_RE = re.compile(
 )
 
 
-def parse_prompts():
+def parse_prompts(prompts_file: Path = PROMPTS_FILE):
     """Return list of dicts: {category, claim_id, note_path, descendants, cls, prompt_body}."""
-    text = PROMPTS_FILE.read_text(encoding="utf-8")
+    text = prompts_file.read_text(encoding="utf-8")
+    try:
+        prompt_source = str(prompts_file.relative_to(REPO_ROOT))
+    except ValueError:
+        prompt_source = str(prompts_file)
     # Find category headers + their byte spans
     categories = []
     header_pattern = (
@@ -283,7 +287,68 @@ def parse_prompts():
                 "descendants": int(rm.group(3)),
                 "cls": rm.group(4),
                 "prompt_body": rm.group(5).strip(),
+                "prompt_source": prompt_source,
             })
+    return rows
+
+
+def parse_audit_handoff(path: Path) -> list[dict]:
+    """Load validated audit-to-science repair handoffs.
+
+    A handoff is deliberately downstream of a successfully applied non-clean
+    verdict.  Schema-invalid audit output never enters this surface because it
+    is not a scientific judgment and therefore cannot authorize source edits.
+    """
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict):
+        raise ValueError("science-fix handoff root must be an object")
+    if payload.get("schema") != "audit_science_fix_handoff_v1":
+        raise ValueError("science-fix handoff has unsupported schema")
+    raw_rows = payload.get("rows")
+    if not isinstance(raw_rows, list):
+        raise ValueError("science-fix handoff rows must be a list")
+    rows: list[dict] = []
+    for index, row in enumerate(raw_rows, 1):
+        if not isinstance(row, dict):
+            raise ValueError(f"science-fix handoff row {index} must be an object")
+        required = {
+            "category": row.get("category"),
+            "claim_id": row.get("claim_id"),
+            "note_path": row.get("note_path"),
+            "prompt_body": row.get("prompt_body"),
+        }
+        missing = [
+            name
+            for name, value in required.items()
+            if not isinstance(value, str) or not value.strip()
+        ]
+        if missing:
+            raise ValueError(
+                f"science-fix handoff row {index} lacks non-empty {missing}"
+            )
+        if row["category"] not in CATEGORIES:
+            raise ValueError(
+                f"science-fix handoff row {index} has unsupported category "
+                f"{row['category']!r}"
+            )
+        descendants = row.get("descendants", 0)
+        if not isinstance(descendants, int) or descendants < 0:
+            raise ValueError(
+                f"science-fix handoff row {index}.descendants must be a non-negative integer"
+            )
+        invocation_id = row.get("audit_invocation_id")
+        provenance = f"validated applied audit verdict for `{row['claim_id']}`"
+        if isinstance(invocation_id, str) and invocation_id.strip():
+            provenance += f" (invocation `{invocation_id}`)"
+        rows.append({
+            "category": row["category"],
+            "claim_id": row["claim_id"],
+            "note_path": row["note_path"],
+            "descendants": descendants,
+            "cls": str(row.get("cls") or "?"),
+            "prompt_body": row["prompt_body"].strip(),
+            "prompt_source": provenance,
+        })
     return rows
 
 
@@ -688,7 +753,7 @@ def target_settled_on_main(claim_id: str) -> tuple[bool, str]:
 
 
 def commit_and_push(claim_id: str, worktree: Path, branch: str,
-                    summary: str) -> tuple[bool, str]:
+                    summary: str, prompt_source: str) -> tuple[bool, str]:
     # Framework PRs are forbidden from landing audit-lane outputs (rationale:
     # the audit lane on main is the sole authority over these surfaces; PRs
     # that ship them overwrite ratified state at merge). The codex run may
@@ -733,8 +798,8 @@ def commit_and_push(claim_id: str, worktree: Path, branch: str,
     msg = (
         f"science-fix: attempt to close {claim_id} derivation\n\n"
         f"Automated by scripts/science_fix_loop.py.\n"
-        f"Codex {RUNTIME['model']} at {RUNTIME['reasoning']} attempted the derivation per the prompt in\n"
-        f"docs/audit/MISSING_DERIVATION_PROMPTS.md. Review carefully — the\n"
+        f"Codex {RUNTIME['model']} at {RUNTIME['reasoning']} attempted the derivation from\n"
+        f"{prompt_source}. Review carefully — the\n"
         f"independent audit only runs after merge.\n\n"
         f"Diff summary:\n{summary}\n"
     )
@@ -749,7 +814,7 @@ def commit_and_push(claim_id: str, worktree: Path, branch: str,
 
 def open_pr(claim_id: str, branch: str, prompt_body: str,
             descendants: int, category: str, codex_tail: str,
-            worktree: Path) -> tuple[bool, str]:
+            worktree: Path, prompt_source: str) -> tuple[bool, str]:
     title = f"science-fix: attempt to close {claim_id}"
     if len(title) > 70:
         title = title[:67] + "..."
@@ -760,7 +825,7 @@ derivation in `{claim_id}`.
 
 - **Category:** `{category}`
 - **Transitive descendants if closed:** {descendants}
-- **Original prompt:** see `docs/audit/MISSING_DERIVATION_PROMPTS.md` (search for `{claim_id}`)
+- **Repair source:** {prompt_source}
 
 ## What this PR does
 
@@ -843,6 +908,15 @@ def main() -> int:
                         "scripts/classify_missing_derivations.py.")
     p.add_argument("--claim-id", default=None,
                    help="Run on this specific claim_id only")
+    p.add_argument(
+        "--handoff-file",
+        type=Path,
+        default=None,
+        help=(
+            "Read repair candidates from an audit_science_fix_handoff_v1 JSON "
+            "file produced only after validated non-clean audit verdicts"
+        ),
+    )
     p.add_argument("--retry-failed", action="store_true",
                    help="Re-attempt rows whose prior attempt did not open a PR")
     p.add_argument("--dry-run", action="store_true",
@@ -885,9 +959,18 @@ def main() -> int:
           f"{args.stale_after_sec}s  edit_deadline: "
           f"{args.edit_deadline_sec}s  poll: {args.poll_interval_sec}s")
 
-    rows = parse_prompts()
+    try:
+        rows = (
+            parse_audit_handoff(args.handoff_file)
+            if args.handoff_file is not None
+            else parse_prompts()
+        )
+    except (OSError, json.JSONDecodeError, ValueError) as exc:
+        print(f"Cannot load science-fix candidates: {exc}")
+        return 2
     if not rows:
-        print(f"No prompts found in {PROMPTS_FILE.relative_to(REPO_ROOT)}")
+        source = args.handoff_file or PROMPTS_FILE.relative_to(REPO_ROOT)
+        print(f"No prompts found in {source}")
         return 1
 
     # Optional: sweep stale in-progress markers from prior crashed runs. This
@@ -1118,7 +1201,12 @@ def main() -> int:
                     outcome["pr_url"] = racing_pr
                     record_outcome(cid, outcome)
                     continue
-                ok2, msg = commit_and_push(cid, worktree, branch, summary)
+                prompt_source = r.get("prompt_source") or str(
+                    PROMPTS_FILE.relative_to(REPO_ROOT)
+                )
+                ok2, msg = commit_and_push(
+                    cid, worktree, branch, summary, prompt_source
+                )
                 if not ok2:
                     print(f"  push failed: {msg}")
                     outcome["outcome"] = "push_failed"
@@ -1129,7 +1217,7 @@ def main() -> int:
                         cid, branch, r["prompt_body"],
                         r["descendants"], r["category"],
                         stdout or "",
-                        worktree,
+                        worktree, prompt_source,
                     )
                     if not pr_ok:
                         print(f"  PR create failed: {pr_msg}")

@@ -13,8 +13,8 @@ sub-route:
 
   (A) the boost-cone-automorphism route is CIRCULAR -- a non-compact stabilizer
       of a 4D cone exists iff one metric sign is -1, which IS eps=-1;
-  (B) the discrete record-causal cone (the Lieb-Robinson NN forward-reachability
-      polytope) admits only a COMPACT automorphism group: a hyperbolic boost
+  (B) after separately choosing the NN relation and tick index, the resulting
+      discrete reachability polytope has no hyperbolic boost symmetry: a boost
       preserves the l1/l_inf cone only in 1+1 and shears it out for spatial
       dim >= 2;
   (C) the antiperiodic-tau datum is SIGN-NEUTRAL, not sign-bearing: its wrap
@@ -28,9 +28,9 @@ sub-route:
       class for eps=-1.
 
 This maps checked sub-routes as circular or sign-neutral; it does NOT reduce,
-amend, narrow, retire, or re-approve any registered primitive or admission, and
-adds no axiom/import. If the lane uses eps=-1, that sign remains a separate
-register-not-read input/admission.
+amend, narrow, retire, or re-approve any registered primitive or derivation
+obligation, and adds no axiom/import. If the lane uses eps=-1, that sign remains
+a separate explicit conditional input with no premise weight.
 Negative/structural result. Class-A, finite, deterministic, memory-trivial.
 Expected: TOTAL: PASS=N FAIL=0.
 """
@@ -154,16 +154,18 @@ check("the faithful K=-i sigma/2 closes so(3,1) but REQUIRES the explicit i (not
 banner("SUMMARY")
 print("The named checked sub-routes to eps=e_4^2=-1 from the boundary datum / cone are mapped:")
 print("  (A) boost-cone-automorphism is CIRCULAR (boost-stabilizer EXISTS iff a metric sign is -1 = eps);")
-print("  (B) the discrete record-cone is a polytope whose automorphism group is COMPACT")
+print("  (B) the chosen discrete reachability polytope has no hyperbolic boost symmetry")
 print("      (a hyperbolic boost shears the l1/l_inf cone for spatial dim >= 2);")
 print("  (C) the antiperiodic-tau datum is SIGN-NEUTRAL: compact unit-circle wrap, the Z_2")
 print("      group has no sqrt(-1), and the time<->space exchange is real-orthogonal")
 print("      (axis-labeling, not signature); eps=-1 lives in the Clifford fiber (the Wick i);")
 print("  (D) the peripheral phase is a compact SO(2) angle, not a boost (wrong generator class);")
 print("  (E) and independently, the on-site local algebra does not force the boost.")
-print("So eps=-1 remains a separate binary input/admission if the lane uses Lorentzian signature.")
+print("So eps=-1 remains a separate conditional input with no premise weight if the lane uses Lorentzian signature.")
 print("A remaining firewall-clean opening is an EMERGENT non-compact symmetry of the")
 print("record-formation DYNAMICS (the S4-transport note's open gate, owner-framing-gated),")
 print("orthogonal to the static cone, the boundary datum, and the peripheral phase checked here.")
-print("Maps sub-routes only; no primitive/admission status touched; no axiom/import.")
+print("Maps sub-routes only; no primitive or derivation obligation changed; no axiom/import.")
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
+if FAIL:
+    raise SystemExit(1)

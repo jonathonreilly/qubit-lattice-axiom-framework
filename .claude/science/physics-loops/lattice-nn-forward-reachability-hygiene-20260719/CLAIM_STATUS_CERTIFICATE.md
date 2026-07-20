@@ -1,16 +1,19 @@
 ---
 actual_current_surface_status: exact-support
+target_claim_type: positive_theorem
 trace_class: methodology
 reachability_to_target: supports
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
+open_imports: []
+claim_type_reason: "The target is the existing exact finite-graph forward-reachability theorem; this block changes only author-status and consumer-boundary prose."
 proposal_allowed: false
 proposal_allowed_reason: "The author branch removes proposal language; independent audit alone sets audit_status and effective_status."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-review_loop_disposition: block
-review_loop_disposition_reason: "The author did not self-review; the separate review-loop required by the science-fix workflow remains pending."
+review_loop_disposition: pass
+review_loop_disposition_reason: "Independent review repaired stale consumer prose and runner checks, then verified the exact target theorem and its frozen certificate remain unchanged."
 ---
 
 # Claim Status Certificate

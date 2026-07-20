@@ -5,7 +5,7 @@ target_blocker_text: "Remove branch-authored proposed_retained or verdict langua
 source_of_blocker_text: user_goal
 reachability_to_target: supports
 artifact_role: demotion
-next_trace_action: "Run separate review-loop, land only if it passes, then independently re-audit the changed source hash."
+next_trace_action: "Land the independently reviewed repair, then independently re-audit the changed source hashes."
 ---
 
 # Trace Gate

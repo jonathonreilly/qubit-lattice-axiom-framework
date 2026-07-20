@@ -25,9 +25,9 @@ might hope to source from the per-axis `Z_2` **antiperiodic-`tau` boundary
 datum** (fermionic APBC on the temporal circle vs PBC on spatial circles). This
 note maps the checked boost-cone, boundary-datum, and peripheral-phase
 sub-routes as circular or sign-neutral. It does **not** reduce, amend, narrow,
-retire, or re-approve any registered primitive or admission, and adds no
-axiom/import. If the lane uses `eps = -1`, that sign remains a separate
-register-not-read input/admission.
+retire, or re-approve any registered primitive or derivation obligation, and
+adds no axiom/import. If the lane uses `eps = -1`, that sign remains a separate
+explicit conditional input.
 
 ## Runner-Checked Facts (`PASS=16 FAIL=0`, memory-trivial)
 
@@ -89,15 +89,15 @@ plus a matter-attachment selector. The runner reproduces both.
 
 ## Consequence and honest boundary
 
-`eps = e_4^2 = -1` remains a separate binary input/admission if the lane uses the
-Lorentzian sign (the Wick `i` / a supplied registration-direction plus a minimal
-bridge), in the register-not-read import class alongside `r = 1/2` and the
-readout admissions. With
+`eps = e_4^2 = -1` remains a separate binary conditional input if the lane uses
+the Lorentzian sign (the Wick `i` / a supplied registration-direction plus a
+minimal bridge). It supplies no premise weight. With
 [RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23.md](RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23.md)
 and this note, the checked boundary-datum sub-lane is mapped.
 
 - This is a **negative / sub-route-mapping** result. It does not derive
-  `eps = -1`, does not change any admission's status, and touches no primitive.
+  `eps = -1`, does not close any derivation obligation, and touches no
+  primitive.
 - The boundary datum is **out of scope** of the axis-supplier no-go on the
   *signature* question — a genuine crack-shaped gap exists there — but the
   antiperiodic-`tau` datum provably cannot fill it (facts C above); that is a

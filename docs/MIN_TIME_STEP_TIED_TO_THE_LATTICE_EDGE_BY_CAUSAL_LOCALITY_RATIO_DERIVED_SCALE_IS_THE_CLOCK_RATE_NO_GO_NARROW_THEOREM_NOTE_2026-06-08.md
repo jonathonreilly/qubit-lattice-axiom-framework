@@ -1,27 +1,30 @@
-# Tying the Lattice Minimum Connection to the Minimum Time Step: One Tick = One Edge (Causal Locality); the Ratio is Derived, the Absolute Scale is the Clock-Rate No-Go — Narrow Theorem
+# Minimum-Time / Lattice-Edge Identification Boundary
 
 **Date:** 2026-06-08
-**Claim type:** bounded_theorem (a derivation of the time-step ↔ lattice-edge tie + the ratio/scale split)
-**Status:** unaudited candidate. Graph-visible only so the independent audit lane can decide.
+**Claim type:** open_gate
+**Status:** open physical tick/edge identification gate with bounded
+combinatorial reachability support. Audit outcome and effective status belong
+exclusively to the independent audit lane.
 **Primary runner:** [`scripts/min_time_step_tied_to_lattice_edge_by_locality_runner.py`](../scripts/min_time_step_tied_to_lattice_edge_by_locality_runner.py)
 **Cached output:** [`logs/runner-cache/min_time_step_tied_to_lattice_edge_by_locality_runner.txt`](../logs/runner-cache/min_time_step_tied_to_lattice_edge_by_locality_runner.txt)
 
 ## Source boundary (2026-06-12)
 
-**Boundary:** renaming / bounded reachability support only. Effective status
-is audit-derived; this source records only the claim boundary.
+**Boundary:** open tick/edge identification gate with bounded reachability
+support only. Effective status is audit-derived; this source records only the
+claim boundary.
 
 The runner checks finite 6-NN reachability and no-diagonal arithmetic, but the
 identity between update tick, record tick, `a_tau`, and one lattice edge is
 introduced as the row's naming convention.
 
 This note may be cited only for the finite reachability facts and for the
-explicit scale-boundary split. It may not be cited as a retained derivation of
-the physical minimum time step, record/update tick identity, clock-rate
+explicit scale-boundary split. It may not be cited as a derivation of the
+physical minimum time step, record/update tick identity, clock-rate
 normalization, or absolute time/length scale.
 
-Promotion beyond renaming support requires a retained bridge theorem deriving
-the record/update tick as the time coordinate rather than defining it.
+Closing the gate requires an independently audited bridge theorem deriving the
+record/update tick as the time coordinate rather than defining it.
 
 ## Audit context
 
@@ -34,46 +37,12 @@ only here: its currently unaudited theorem says that a separately declared
 update relation, make every allowed dependency active, identify record ticks
 with update ticks, derive a metric, or fix a physical speed or time/edge ratio.
 
-## Historical Candidate Statement (Superseded)
+## Historical Provenance
 
-The theorem wording in this section is preserved as provenance for the paired
-runner. It is superseded by the source boundary and audit context above and is
-not a live conclusion of this note.
-
-**Theorem (one tick = one edge; ratio derived, scale = no-go).**
-
-1. **One minimum time step reaches exactly one edge.** The minimum time step is one elementary
-   dynamical update = one record **tick**. Under the local (6-NN) update, one tick propagates influence
-   to **exactly the 6 nearest neighbors** — graph-distance 1, Euclidean reach **1.000 edge** (verified
-   by BFS). So **one tick ≡ one hop**: the lattice spatial minimum `a_s` and the time minimum `a_τ` are
-   the **same elementary causal event**, locked together.
-2. **"No diagonals" is load-bearing.** With diagonals (26-NN) one tick reaches **26** sites out to
-   Euclidean **√3** — body diagonals — so the tick would span up to `√3` edges and **decouple** from
-   the edge. The `LATTICE` axiom's **no-diagonal** clause is precisely what **pins** `a_τ ↔ a_s` to one
-   edge per tick.
-3. **The forward cone is one edge per tick.** The reachability front advances exactly one graph-edge
-   per tick (verified to 5 ticks) — the front speed `v_front = a_s/a_τ`. The reconstructed dispersion's
-   group velocity `v_LR = max|∇E| ≤ 1` is the **signal** speed *within* this cone (≤ the front).
-4. **Ratio derived; absolute scale = the clock-rate no-go.** The **ratio** `a_τ/a_s = 1/v_front` (one
-   tick per edge) is **derived** — causal locality (the declared reachability relation) + the no-diagonal clause
-   — and is the **conformal class** (this session's records-derived causal structure). The **absolute
-   scale** (`a_s` in metres, `a_τ` in seconds) is the **conformal factor** = the records' clock-rate
-   **boundary** ([`POST_RECORD_CLOCK_RATE_INTERFACE`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md),
-   `retained_no_go`; [`RECORD_CLOCK_RATE_NORMALIZATION_GATE`](RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md),
-   `retained`): the records give the tick/edge **count**, not the physical unit — the approved
-   scale-reference primitive sets the common absolute scale.
-
-## Historical Candidate Answer (Superseded)
-
-**The lattice minimum connection and the minimum time step are tied because they are the same
-elementary causal event — one nearest-neighbor hop is one record tick — with "no diagonals" locking
-`a_τ ↔ a_s` to one edge per tick. That fixes their *ratio* (`= 1/v_front`, records-derived); their
-common *absolute* scale is the records-clock-rate boundary supplied by the approved
-scale-reference primitive.**
-
-This is the clean resolution of "where does the minimum time step come from": it is **not** an
-independent input — it is the spatial edge, read along the causal (time) direction. Only the shared
-unit (the conformal factor) remains a supplied primitive.
+Earlier versions bundled the runner's chosen update relation with a physical
+one-tick/one-edge interpretation. That interpretation was not derived. Git
+history preserves the superseded wording; it is intentionally not repeated on
+this live source surface.
 
 ## Live Boundary
 
@@ -99,13 +68,11 @@ matrices).
 
 ## Runner check breakdown
 
-The labels below are the historical runner's own candidate labels. They report
-BFS and model arithmetic; they are not four independent theorem-grade checks
-and do not override the live boundary above.
-
-Class A: (A1) one tick reaches exactly one edge (6 NN, Euclidean reach 1.0); (A2) no-diagonals
-load-bearing (diagonals span `√3`/tick, decoupling); (A3) the forward cone is one edge per tick,
-`v_LR ≤ 1` in-cone; (A4) the ratio is derived, the absolute scale is the clock-rate no-go. Expected
+The runner performs four bounded diagnostics: the chosen 6-NN one-step count
+and Euclidean radius, the chosen 26-neighbor comparison, the five-step 6-NN
+BFS graph radius, and a separate model's finite-grid group velocity. They are
+not four independent theorem-grade checks and do not override the live
+boundary above. The classification is
 `runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}`.
 
 ## Source-Side Runner Interpretation
@@ -116,7 +83,8 @@ velocity is computed on another model surface. Neither calculation establishes
 that all allowed neighbors change, that the framework realizes either update
 relation, that a record tick is an update tick, or that graph coordinates are
 physical space/time coordinates. The physical tick/edge ratio therefore
-remains open here. Effective status remains `unaudited`.
+remains open here. Effective status is pipeline-derived after independent
+audit.
 
 ## Runner
 

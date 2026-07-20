@@ -35,6 +35,47 @@ self-audit is part of this block.
 
 ## Independent review disposition
 
-`block` pending the separate review-loop required by the science-fix workflow.
-This records separation of duties, not a scientific defect found by the
-author. No review-loop verdict is pre-authored here.
+`pass` after narrow repairs. Review found three stale-green boundaries outside
+the target theorem:
+
+- the minimum-time note and paired runner still described a chosen graph
+  recurrence as a physical one-tick/one-edge derivation;
+- the boost note and paired runner used a retired admission class and
+  record-causal/Lieb-Robinson framing for a separately chosen reachability
+  polytope; and
+- the kinetic runner expected downstream bridge packets to appear as upstream
+  proof dependencies.
+
+The fixes relabel those checks to the quantities actually computed, remove the
+unsupported historical minimum-time theorem, and make every repaired runner
+exit nonzero on failure. The corresponding canonical caches were refreshed.
+No numerical calculation or target-theorem statement changed. The target
+runner, dated output, and cache remain byte-identical to the base commit.
+
+### No-go discipline review
+
+The changed boost note passes the negative-result discipline for its scoped
+routes:
+
+- N1: it distinguishes the metric-stabilizer, chosen `l1` polytope, APBC
+  unit-circle, real-orthogonal, peripheral-unitary, and local-algebra routes;
+- N2: those are distinct inputs and mechanisms, not one wall multiplied by
+  renaming;
+- N3: the chosen relation/tick, metric ansatz, APBC phase, and faithful matter
+  selector are explicit rather than smuggled premises;
+- N4: each residual matches its cited source's actual scope;
+- N5: the prose is limited to those chosen routes and does not exclude all
+  possible Lorentz emergence;
+- N6: dynamical emergence of a noncompact symmetry remains open;
+- N7: nonlinear, projective, or record-formation dynamics are the steelman
+  alternatives, and the note leaves them open; and
+- N8: future bridge dynamics can retire these scoped walls without changing
+  the present calculations.
+
+The kinetic and staggered negative packets retain their existing N1--N8 scope;
+only dependency direction changed. The minimum-time artifact is now an
+`open_gate`; its legacy filename is not treated as a theorem or global no-go.
+
+The exact target theorem remains `positive_theorem`/`unaudited`. Review-loop
+does not set audit status or effective status; independent re-audit remains a
+post-landing requirement.

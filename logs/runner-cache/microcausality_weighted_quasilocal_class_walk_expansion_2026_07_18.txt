@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_weighted_quasilocal_class_walk_expansion_2026_07_18.py
+runner_sha256: 284b8513bae9fd2182d11b9df39eaa673b05548f0561a7fd41a54b277750a39b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+PASS: l1-sphere-count exact 4r^2+2 values at r=1..4
+PASS: ambient-chain-diameter all subset chains obey sum diameters>=distance, attained
+PASS: bond-incidence-ladder union=12 distinct=11 nonself=10
+PASS: site-weighted-activity exact size and positive-diameter factors reject omissions
+PASS: meeting-row-bound exact finite family obeys sum meeting wstar<=size*kappa
+PASS: peeling-power exact nX*kappa^(k-1) value rejects kappa^k
+PASS: exhaustive-chain-peeling all 31 supports and lengths 1..3 satisfy the bound
+PASS: duhamel-resummation exact order series, slope, and prefactor/sign rejectors
+PASS: decay-sign-rejector negative exponent decreases with distance while positive grows
+PASS: bond-envelope six incident size-two bonds give 12Jemu and rate ratio 6/5
+PASS: pair-activity-closed-form sphere sum and size-two factor reject half-value
+PASS: pair-activity-values exact 3D values 14,684 and 1D value 4
+PASS: even-car-locality distant even term commutes off support and reduction is exact
+PASS: tensor-support-reduction mixed three-site and bond terms obey exact locality
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 14942,
- "node_count": 4454,
+ "edge_count": 14943,
+ "node_count": 4455,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1595,8 +1595,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "49f781b02653",
-   "out_degree": 314
+   "deps_hash": "64bd7bd0d55f",
+   "out_degree": 315
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -8901,6 +8901,10 @@
   "microcausality_volume_uniform_sequence_count_coefficient_bounds_bounded_theorem_note_2026-07-18": {
    "deps_hash": "6848dd238023",
    "out_degree": 2
+  },
+  "microcausality_weighted_quasilocal_class_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08": {
    "deps_hash": "3c3e26353fe0",

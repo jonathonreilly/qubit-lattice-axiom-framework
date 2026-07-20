@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-20T11:55:10.958168+00:00",
+  "audit_invocation_history": [
+    "df7711c277794829bc4c1c1440a69a5b"
+  ],
+  "audit_invocation_id": "df7711c277794829bc4c1c1440a69a5b",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 15.585,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "bd114ae01808ec8e319c59bccb66af4d46c27d16e8ef5490620feddc98283560",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "bd114ae01808ec8e319c59bccb66af4d46c27d16e8ef5490620feddc98283560",
+    "runner_path": "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 95
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260720-ff259a7b",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The algebraic conclusions follow from the stipulated update and distribution, but the restricted packet supplies no cited authority or axiom derivation licensing that update as a records-flow rule.",
   "claim_id": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-  "claim_scope": null,
+  "claim_scope": "Conditional algebraic audit of the stipulated two-sector L\u00fcders update: r maps to 2r\u00b2, r=1/2 is repelling, and the S2 and S3 entropy maxima occur at r=1/2 and r=1 respectively.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-20T11:55:10.958168+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 18,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 15.585,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Sharpening p\u2192p\u00b2/Z on the two-sector distribution reduces precisely to r\u21a62r\u00b2.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "5a72dfb482e8898e3d043e5b91df6dcd065a182fe063ca92afc41ec2254ba46a",
   "note_path": "docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_dependency_edge: cite and include the retained L\u00fcders composition-consistency authority, then replace the sampled exactness and entropy-max checks with symbolic identities before re-auditing.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1868,14 +1914,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 4,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 4
   },
   "runner_path": "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py",
   "title": "Flavor \u2014 stipulated records map: `r=1/2` is the unstable separatrix of `r\u21922r\u00b2`.",
   "transitive_descendants": 95,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner correctly verifies the fixed points, local stability, basin behavior, and entropy comparators for the stipulated one-dimensional map, although its exact-map and entropy checks are partly finite-sample rather than symbolic. The unresolved terminal obligation is the derivation or retained-grade licensing of the two-sector L\u00fcders update as a records flow; that physical identification is stronger than the conditional map theorem but prevents an unconditional framework chain. The note properly excludes that identification from its bounded scope, so the conditional algebraic result survives while clean framework closure does not."
 }

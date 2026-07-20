@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_holomorphic_gamb_representation_2026_07_20.py
+runner_sha256: b110ca7b0a4d912032a9a7cf7c5333fb51b60b51da8a4d35032d1e5157258586
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 30.75
+status: ok
+----- stdout -----
+PASS G1 - J_full^2 = -I_64: ||J_full^2 + I|| < 1e-12 (genuine complex structure)
+PASS G2 - J_full antisymmetric and nonzero: ||J+J^T|| < 1e-12 and ||J|| > 1e-6
+PASS G3 - REJECTOR: sqrt(m)->1 rational proxy is NOT a complex structure and differs from J_full (the sqrt(m) shell normalizers are load-bearing; J_full is not a sign proxy)
+PASS G4 - [FLOAT SANITY] +i eigenspace dim 32==32, -i dim 32==32, sum==64
+PASS G5 - |G_amb| = 768 == 768
+PASS G6 - every U commutes with D2 (max int dev 0==0) AND witness TR[(1,0,0)] does NOT (dev 2>0): the D2-commutation constraint is non-vacuous
+PASS G7 - COMPLEX-LINEAR ACTION: every U commutes with J_full (max dev 0.0e+00) AND witness S_eps (not in G_amb) does NOT (dev 0.748>1e-6): commutation is a genuine constraint
+PASS G8 - S0 = Sum (tr U)^2 = 9216 == 12*768 (=9216) and != 11*768 (=8448)  [EXACT INTEGER]
+PASS G9 - SJ = Sum (tr(U*J_full))^2 = 6144.000000, round == 8*768 (=6144), |SJ-6144| < 1e-6, round != 9*768 (=6912)  [integer by group symmetry; per-term irrational]
+PASS G10 - BRIDGE (S0/768 + SJ/768)/4 = 5.0 == 5 and != 4 and != 6
+PASS G11 - generating set of 4 elements closes to 768==768; W-frame B is orthonormal (dim 32==32)
+PASS G12 - W is invariant (max||UB-BC|| 1.5e-15) with non-trivial action (max||C-I|| 1.313); generator-commutant dim 5==5 (clean sv-gap 1.4e+14), != 12,4,6
+PASS G13 - commutant basis commutes with generators (1.2e-15), is COMMUTATIVE (1.8e-16), and is UNITAL (I_32 in span, residual 1.1e-14) => C^5 algebra
+PASS G14 - MEMORY-BUDGET: char-norm (S0+SJ)/(4*768) = 5.000000 == 5 == generator-commutant dim 5 (scalar loop, no 768-block matrix materialized)
+PASS G15 - HOLO-RANKS (generic self-adjoint commutant element, seed 0 chosen by separation only): sorted multiplicities [4, 4, 6, 6, 12] == [4,4,6,6,12], sum 32, != [4,4,4,8,12], != [2,6,6,6,12]
+PASS G16 - the 5 eigenspaces are orthogonal idempotents: Sum P_k = I_32, P_k^2 = P_k, P_j P_k = 0, ranks {4,4,6,6,12} => genuine direct sum 32 = 4+4+6+6+12
+PASS G17 - MULTIPLICITY-FREE: #distinct blocks 5==5 equals Sum m_i^2 = (S0+SJ)/(4*768) = 5.000==5, forcing every multiplicity = 1
+PASS G18 - SOURCE PIN Unit 8: total-complex-structure note contains 'J_full^2 = -I_64'
+PASS G19 - SOURCE PIN Unit 10: Kaehler-triple note contains 'mean(chi^2) = 12 = 7 + 5'
+PASS G20 - SELF-NOTE DEPENDENCY DISCIPLINE: Unit8-link 1==1, Unit10-link 1==1, total KCPT-links 2==2 (Unit 9/11 not linked)
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

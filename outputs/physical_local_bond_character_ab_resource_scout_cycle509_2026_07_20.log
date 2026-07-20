@@ -1,0 +1,21 @@
+RESOURCE_RESULT {"counts":{"canonical_interacting_forward_trajectories":1,"canonical_matched_free_forward_trajectories":1,"canonical_repeated_free_forward_trajectories":1,"carried_interacting_forward_trajectories":24,"forward_trajectories":27,"forward_update_calls":135,"held_rows":0,"inverse_trajectories":1,"inverse_update_calls":5,"post_car_technical_captures":135,"post_word_technical_captures":135,"refit_performed":false,"resource_invocations":1,"routeC_allocations":0,"science_train_rows":0,"trajectory_calls":28},"digests":{"basis_sha256":"811ac0bed19745f1ae5be7b9cb8d89e8cd8fa56e075cd2d375b36426d51a62f6","contract_note_sha256":"733aa72a2b2ef43f5b3a049903a85fa81b18c1413bcbe4d66f2a17345dce1d50","contract_runner_sha256":"44a0430dafd31db471e6ada2435aa4a819637d09ac0af15ac387126e61ccd458","geometry_sha256":"13d6826584aeb200f50575d4eded8167fd08c8aa2e326609b9fe7e3807194b68","held_manifest_sha256":"7dcaf19fb91b49bbe6528f124e4f428d7d54774390ff608e6afef5841657facf","structural_mask_sha256":"6a39a03e19062bcf8aa7b59506f9ac508fa7ea959edec92e639c74b685053b57","support_sha256":"edde6241e7ebb9779bca7d014aaf77f53aba61ef1f2f2efc5770b8f2796d41e9","train_manifest_sha256":"d235ce413eaba7ac62c9100d45ef93824c246a4646f4cd9316c5a0191f1c73d8"},"passes":{"all":true,"resource":true,"technical":true},"residuals":{"boundary_shell":0.0,"car_kernel":1.1966678176173787e-14,"car_number":4.440892098500626e-15,"dynamic_axial_seam_ceiling":0.0,"dynamic_band_floor":0.0,"dynamic_contact_floor":0.0,"inverse":1.603892261729805e-15,"lawfulness":6.274242475589535e-16,"maximum_all24_complete_word_state_covariance":2.947833672630185e-16,"mediator_charge":7.37188088351104e-14,"norm":7.37188088351104e-14,"post_stream_continuity":1.1934897514720433e-15,"repeat":0.0,"safe_train_mass":4.440892098500626e-16},"resource_usage":{"elapsed_seconds":38.96159225003794,"maximum_RSS_bytes":1794654208,"serialized_bytes":2128,"swaps":0},"shapes":{"basis_modes_by_update":[6,18,107,316,688,1276],"mediator_keys_by_update":[1,3,7,11,15,19],"proper_cubic_frames":24},"structural_mask_sizes":[[306,0,0],[14733,0,0],[187500,3600,212]],"verdict":"technical-resource-qualified"}
+real 39.65
+user 28.67
+sys 7.44
+          1794654208  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             3090697  page reclaims
+                 873  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1355  voluntary context switches
+               84689  involuntary context switches
+        316773054370  instructions retired
+        127013344050  cycles elapsed
+          2059110512  peak memory footprint

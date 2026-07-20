@@ -94,9 +94,12 @@ held evaluation are unreachable in this runner.
 Authorized transcript:
 
 ```text
-/tmp/cycle509-parameterized-ab-resource-scout-authorized-20260720.log
+outputs/physical_local_bond_character_ab_resource_scout_cycle509_2026_07_20.log
 SHA-256 0c4ca3eadd9b4a078af7f7d63fb513ada1270a99b210ef2801cd1d660cf7b597
 ```
+
+The authorized process originally wrote the byte-identical transcript to
+`/tmp/cycle509-parameterized-ab-resource-scout-authorized-20260720.log`.
 
 The embedded result and external `/usr/bin/time -lp` controls give:
 
@@ -145,4 +148,3 @@ rate, time variable, probability, Record, or realized-history law. It also
 does not compile the Cycle-230 CAR cell into physical M2 sites. It validates a
 bounded numerical evaluator for the already declared coarse carrier and
 local/global diagnostics.
-

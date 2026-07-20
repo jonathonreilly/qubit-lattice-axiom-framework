@@ -27,7 +27,8 @@ the shortest-center and Schur-tail localization from the
 [external-shortest-center theorem](WILSON_STAGGERED_EXTERNAL_SHORTEST_SCHUR_CENTER_HAAR_TAIL_PROJECTED_QUADRATIC_WEYL_CONDITIONAL_REFERENCE_BOUNDED_THEOREM_NOTE_2026-07-12.md),
 the completed physical joint graph and atom return from
 [Block46](WILSON_STAGGERED_SCALAR_PRODUCT_REFERENCE_COMPLETED_JOINT_OUTER_HAAR_ACTUAL_OUTPUT_ATOM_RETURN_BOUNDED_THEOREM_NOTE_2026-07-13.md),
-and the exact covariance/Hessian tube from
+and the exact Hessian identities, open two-root obligation, and conditional
+tube arithmetic from
 [Block47](WILSON_STAGGERED_COMPLETED_JOINT_TWO_MARK_COVARIANCE_NONLINEAR_SOURCE_OUTPUT_TUBE_BOUNDED_THEOREM_NOTE_2026-07-13.md).
 
 Use the same Wilson--staggered `SU(3)`, `beta=0` finite-sector grammar, but
@@ -388,7 +389,7 @@ non-implication from the displayed certificate, not a physical RG no-go.
 | Treat the whole raw onsite jet as contractive residual | `ATTEMPTED` | Rejected: its normalized response is affine with derivative one. Section 2 instead translates it into the running base. |
 | Ignore the old/new onsite reference change | `ATTEMPTED` | Rejected: Section 3 either uses the exact field torsor or pays the fixed-field `T_ref` row. |
 | Keep `m=10^64` at the enhanced moments | `ATTEMPTED` | Fails the freshly recomputed upstream activity, before any return inference. |
-| Freshly recompute at enhanced moments and larger finite mass | `ATTEMPTED` | Positive at `m=10^96`; equations (0.3)--(0.7) close. |
+| Freshly recompute at enhanced moments and larger finite mass | `ATTEMPTED` | Base rows are positive at `m=10^96`; equations (0.4)--(0.7) close only conditional on Block47's open inequality. |
 | Iterate the black-box moment recurrence unchanged | `ATTEMPTED` | Rejected: both moments halve after fixed surcharges, and a prescribed output forces growing backward moments/mass. |
 
 Live outside NG48 are a lineage-sensitive carrier that avoids the full site

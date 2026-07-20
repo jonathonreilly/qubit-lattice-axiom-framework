@@ -619,6 +619,8 @@ def main() -> None:
         "proves an autonomous invariant ball",
         "proves all-horizon control",
         "proves a continuum limit",
+        "exact covariance/Hessian tube",
+        "equations (0.3)--(0.7) close",
         "requires a new axiom",
         "NOT_TESTED",
         "f=P_rel E_ref H",

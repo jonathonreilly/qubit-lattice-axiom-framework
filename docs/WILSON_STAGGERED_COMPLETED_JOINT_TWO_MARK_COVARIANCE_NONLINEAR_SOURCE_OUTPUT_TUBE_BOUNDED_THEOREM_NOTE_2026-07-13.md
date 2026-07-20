@@ -118,7 +118,7 @@ DR_Phi[F]=E_Phi[F],
 D^2R_Phi[F,G]=-Cov_Phi(F,G).                                     (1.4)
 ```
 
-The contracted transformation in this theorem is the quadratic-center-
+The contracted transformation in this open-gate diagnostic is the quadratic-center-
 complement residual map on the restricted class (1.2a):
 
 ```text
@@ -343,8 +343,8 @@ python3 scripts/wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07
 The runner independently checks: exact vanishing of fiber-constant Hessian
 blocks in a nontrivially tilted finite model; a nonzero centered/centered
 covariance; the mixed derivative sign and absence of an extra factor two; the
-two-layer `n+1` one-side series and the conservative
-`[1+H]^2=(1-tau)^(-4)` pair envelope; all uniform
+two-layer `n+1` one-side series and the conditional
+`[1+H]^2=(1-tau)^(-4)` scalar pair series; all uniform
 ball, conditional Hessian/Taylor, gap, `eta`, atom, and factor rows; an independent
 80-digit Decimal reconstruction of the activity, optimizer, Hessian, and tube;
 the source contract;
@@ -472,8 +472,8 @@ The strongest objection is that a source/output tube is not yet an RG
 invariant ball.  The objection is correct: Block46's target atom chart has
 smaller spatial and diameter exponents than this note's centered source
 chart, and no identity embeds it back.  A scale-indexed Banach bundle or
-lineage-preserving section could nevertheless turn exactly this tube into one
-step of an all-horizon induction.  That live route defeats any broader no-go
+lineage-preserving section could nevertheless turn the conditional tube, if
+proved, into one step of an all-horizon induction. That live route defeats any broader no-go
 but does not discharge the prior two-root proof obligation.
 
 ### N8 — cross-cycle echo

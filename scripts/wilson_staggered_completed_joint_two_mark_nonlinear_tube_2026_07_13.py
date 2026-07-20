@@ -378,6 +378,8 @@ def main() -> None:
         "proves an autonomous RG ball",
         "proves a physical fixed point",
         "proves a continuum limit",
+        "in this theorem",
+        "turn exactly this tube",
         "requires a new axiom",
         "NOT_TESTED",
     ]

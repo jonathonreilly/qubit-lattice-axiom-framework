@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07_13.py
-runner_sha256: 8cba8eb0744f689255e78ac26077a83a3b9e785659d2f72d75697c98ff6709ef
+runner_sha256: 1c0915d65d8fca2643cd1fb4691057ef0727cd69ac67e31b2d519c62fda740a2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 PASS fiber_constant_raw_hessian_blocks_vanish: Cov(raw,raw)=-2.220e-16, Cov(raw,Fo)=0.000e+00, Cov_Phi(Fo,Go)=0.463437555205, direct E0 pair=0.600000000000

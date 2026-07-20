@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_kahler_triple_ambient_invariant_metric_symplectic_2026_07_19.py
+runner_sha256: aab124a0358a2a85992ad553f2afb52c3972db783ba0070f63d7f00b44c9a475
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 21.95
+status: ok
+----- stdout -----
+=== T1: G_amb ⊂ O(64), g=I invariant ===
+PASS G1 len(Gamb)==768 [sanity]
+      max_U |U^T U - I|_int = 0
+PASS G2 EXACT: max_U |U^T@U - I|_int == 0 (U^T I U = U^T U = I ⇒ g invariant)
+PASS G3 REJECTOR: EXISTS U with ||U^T gp U - gp|| > 0.5, gp=I+e00 (g=I special, not generic)
+=== T2: J_full ∈ O(64), g-compatible ===
+PASS G4 EXACT: Nker+Nker^T==0 and A[m]+A[m]^T==0 for m in {1,2,3} (integer-numerator antisymmetry)
+PASS G5 [FLOAT SANITY — non-load-bearing]: ||Jfull@Jfull + I|| < 1e-10 (cites Unit-8 J_full^2=-I)
+PASS G6 [FLOAT SANITY — non-load-bearing]: ||Jfull^T@Jfull - I|| < 1e-10 (T2 orthogonality)
+PASS G7 DISCRIMINATING: ||Jfull^T@Jfull - (-(Jfull@Jfull))|| < 1e-12 (T2 = -J^2 via antisymmetry)
+PASS G8 [FLOAT SANITY — non-load-bearing]: round(det(Jfull))==1 (cites Unit-8 det J_full=+1)
+=== T3: omega = g·J_full is an invariant symplectic form ===
+PASS G9 EXACT: ||omega - Jfull^T|| < 1e-15 (omega = -Jfull = Jfull^T)
+PASS G10 EXACT: ||omega + omega^T|| < 1e-15 (antisym; same integer numerators as G4)
+PASS G11 [FLOAT SANITY — non-load-bearing]: round(det(omega))==1 (nondegenerate)
+      max_U ||U^T omega U - omega|| = 0.0e+00
+PASS G12 EXACT-over-float: max_U ||U^T@omega@U - omega|| < 1e-12 (since U^T J_full U = J_full)
+      omega is a single constant-coefficient matrix (basepoint-independent 2-form) ⇒ dω = 0
+PASS G13 closedness: omega represented by ONE constant matrix ⇒ dω=0 (documented structural gate)
+=== T4: Kähler mutual compatibility ===
+PASS G14 EXACT: ||omega - Jfull^T|| < 1e-15 (omega(x,y) = g(J_full x, y))
+PASS G15 [FLOAT SANITY — non-load-bearing]: ||Jfull^T@omega@Jfull - omega|| < 1e-10 (omega(J·,J·)=omega)
+=== T5: h = g + i·omega posdef Hermitian on the 32-dim holomorphic space ===
+PASS G16 [FLOAT SANITY — non-load-bearing]: holomorphic (+i) dim == 32 (cites Unit-8 holo dim 32)
+      [diagnostic, non-load-bearing] H posdef (min eig > 1e-8): True | wrong-sign Hbad collapses ~0: min/max eig = -2.46e-16 / 4.57e-16
+PASS G17 DISCRIMINATING: H Hermitian & posdef (min eig>1e-8); wrong ω-sign NOT posdef (collapses to ~0)
+PASS G18 EXACT: g=I is positive-definite — min eig(I) == 1.0 (Kähler positivity source for T5)
+=== T6: honest boundary — invariant-form census + metric non-uniqueness ===
+      dim_sym=7.000000000  dim_alt=5.000000000  dim_comm=12.000000000
+PASS G19 EXACT DISCRIMINATING: dim_sym within 1e-9 of 7 and round==7
+PASS G20 EXACT DISCRIMINATING: dim_alt within 1e-9 of 5 and round==5
+PASS G21 EXACT DISCRIMINATING: dim_comm within 1e-9 of 12, round==12, and 7+5==12
+      invariant-symmetric rank r=7 ; T eigenvalues: +1 count=5, -1 count=2 ; max||ev|-1|=8.7e-15
+PASS G22: invariant-symmetric rank==7, T eigs all ±1, +1-count==5 (J-compat family), g=I in it & posdef
+      ||omega - omega_alt||_F = 14.967 (= ||2 J_bulk||_F ; orientation is a free binary here too)
+PASS G23 DISCRIMINATING: ||omega-omega_alt||_F>1 (2 J_bulk≠0); omega_alt also G_amb-invariant; antisym & det==1
+=== SUMMARY ===
+Surface: L=4, N=64 (C^64), |G_amb|=768, shell normalizers Nm=[384, -128, 128, -384]
+Gate families: T1 (G1-G3), T2 (G4-G8), T3 (G9-G13), T4 (G14-G15), T5 (G16-G18), T6 (G19-G23)
+Load-bearing gates are exact-integer (G2,G4,G9,G10,G14,G18,G19,G20,G21) or reconstruct-and-cite
+the Unit-8 facts (G5,G6,G8,G16); float confirmations are tagged [FLOAT SANITY — non-load-bearing].
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

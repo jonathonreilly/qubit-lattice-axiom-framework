@@ -1,6 +1,6 @@
 {
- "edge_count": 14968,
- "node_count": 4460,
+ "edge_count": 14971,
+ "node_count": 4461,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6941,6 +6941,10 @@
   "kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_bounded_theorem_note_2026-07-16": {
    "deps_hash": "2e8f0e7f8554",
    "out_degree": 5
+  },
+  "kcpt_cp_completion_under_extended_group_bounded_theorem_note_2026-07-20": {
+   "deps_hash": "f2454b007e3d",
+   "out_degree": 3
   },
   "kcpt_holomorphic_gamb_representation_bounded_theorem_note_2026-07-20": {
    "deps_hash": "7437a31a290a",

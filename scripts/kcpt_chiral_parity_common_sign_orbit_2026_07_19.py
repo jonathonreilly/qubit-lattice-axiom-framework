@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""KCPT Unit 9 runner (DRAFT for self-verification before spec embed).
+"""KCPT Unit 9 exact common-sign-orbit runner.
 
-Chiral parity S_eps = diag((-1)^{x1+x2+x3}) (staggered Gamma_5) on the L=4,
+Chiral parity S_eps = diag((-1)^{x1+x2+x3}) (site-parity grading) on the L=4,
 N=64 staggered lattice.  Establishes:
 
   T1  S_eps is a real involution that ANTICOMMUTES with the staggered
@@ -9,13 +9,14 @@ N=64 staggered lattice.  Establishes:
   T2  kernel reversal (crux): S_eps J_ker S_eps = -J_ker, via corner-wave
       complementation S -> S^c with sign(S^c) = -sign(S).
   T3  bulk reversal: S_eps A_m S_eps = -A_m for every integer carrier.
-  T4  total linear reversal: S_eps J_full S_eps = -J_full (a REAL involution
-      realizing J -> -J, distinct from Unit 8's ANTILINEAR K which FIXES the
-      real J_full).
+  T4  total complex-structure sign reversal: S_eps J_full S_eps = -J_full
+      (a REAL involution realizing J -> -J, distinct from Unit 8's ANTILINEAR
+      K which FIXES the real J_full).  This is not a real-orientation reversal.
   T5  <G_amb, S_eps> has order 1536 = 2*768; every element locks kernel-sign
       == bulk-sign, so it sends J_full -> +-J_full only (census 768 / 768).
-  T6  therefore the relative kernel<->bulk orientation (J_full vs J_alt) is a
-      free binary, unreached by the full lattice+chiral symmetry group.
+  T6  therefore orbit_H(J_full) = {J_full, -J_full}; J_alt is outside that
+      orbit.  The full 16-member sign family modulo common sign has 8 relative
+      classes, so this runner does not collapse the relative freedom to a bit.
 
 All load-bearing gates are exact integer.  Float gates are labelled
 [FLOAT SANITY] and are not load-bearing.
@@ -32,7 +33,7 @@ KER_NOTE = "KCPT_KERNEL_INDUCED_REPRESENTATION_CENTRAL_COMPLEX_STRUCTURE_BOUNDED
 COR_NOTE = "KCPT_CORNER_CARRIER_LATTICE_DELIVERY_HW1_DOUBLET_PAIR_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md"
 AX_NOTE = "MINIMAL_AXIOMS_2026-06-29.md"
 AMB_NOTE = "KCPT_AMBIENT_LATTICE_SYMMETRY_KERNEL_ISOLATION_AVERAGED_COMPLEX_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-19.md"
-SELF_NOTE = "KCPT_CHIRAL_PARITY_ORIENTATION_REVERSAL_RELATIVE_BINARY_BOUNDED_THEOREM_NOTE_2026-07-19.md"
+SELF_NOTE = "KCPT_CHIRAL_PARITY_COMMON_SIGN_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-19.md"
 
 PASS = FAIL = 0
 
@@ -51,6 +52,28 @@ def note_text(basename):
             return fh.read()
     except OSError:
         return ""
+
+
+def rank_mod_prime(a, prime=1_000_000_007):
+    """Return matrix rank over F_prime using exact modular elimination."""
+    work = [[int(v) % prime for v in row] for row in a.tolist()]
+    nrow, ncol = len(work), len(work[0])
+    rank = 0
+    for col in range(ncol):
+        pivot = next((r for r in range(rank, nrow) if work[r][col]), None)
+        if pivot is None:
+            continue
+        work[rank], work[pivot] = work[pivot], work[rank]
+        inv = pow(work[rank][col], prime - 2, prime)
+        work[rank] = [(v * inv) % prime for v in work[rank]]
+        for r in range(nrow):
+            if r != rank and work[r][col]:
+                factor = work[r][col]
+                work[r] = [(x - factor * y) % prime for x, y in zip(work[r], work[rank])]
+        rank += 1
+        if rank == nrow:
+            break
+    return rank
 
 
 # ---------------- construction (self-contained; from the landed units) -------
@@ -210,34 +233,56 @@ gate("B0.1", "J_full = J_ker + J_bulk" in u8, "Unit 8 note contains 'J_full = J_
 gate("B0.2", "J_alt = J_ker - J_bulk" in u8, "Unit 8 note contains 'J_alt = J_ker - J_bulk'")
 gate("B0.3", "the upstream kernel sign remains open separately" in u8,
      "Unit 8 note contains 'the upstream kernel sign remains open separately'")
-gate("B0.4", "span{I, j}" in note_text(KER_NOTE), "kernel note contains 'span{I, j}'")
-gate("B0.5", "pairs the two doublet channels" in note_text(COR_NOTE),
+ker_txt = note_text(KER_NOTE)
+gate("B0.4", "span{I, j}" in ker_txt, "kernel note contains 'span{I, j}'")
+gate("B0.5", "J64[index(S xor {1}), index(S)] = 64" in ker_txt,
+     "kernel note pins the explicit upstream J64 action and normalization")
+gate("B0.6", "pairs the two doublet channels" in note_text(COR_NOTE),
      "corner note contains 'pairs the two doublet channels'")
-gate("B0.6", "M_2(C)" in note_text(AX_NOTE), "minimal-axioms contains 'M_2(C)'")
-gate("B0.7", "the ambient group `G_amb` of order `768`" in note_text(AMB_NOTE),
+gate("B0.7", "M_2(C)" in note_text(AX_NOTE), "minimal-axioms contains 'M_2(C)'")
+gate("B0.8", "the ambient group `G_amb` of order `768`" in note_text(AMB_NOTE),
      "ambient note contains 'the ambient group `G_amb` of order `768`'")
 self_txt = note_text(SELF_NOTE)
 linkcount = {b: self_txt.count("](" + b) for b in (U8_NOTE, KER_NOTE, COR_NOTE, AX_NOTE, AMB_NOTE)}
-gate("B0.8", self_txt != "" and all(v == 1 for v in linkcount.values()),
+gate("B0.9", self_txt != "" and all(v == 1 for v in linkcount.values()),
      f"self-note markdown-links exactly the 5 deps once each: {linkcount}")
 
 # ============================ B1: construction sanity ========================
 gate("B1.1", eqm(D2.T, -D2) and set(np.unique(D2)) <= {-1, 0, 1},
      "D2^T == -D2, entries in {-1,0,1} (antisymmetric staggered adjacency)")
-gate("B1.2", np.linalg.matrix_rank(D2) == 56, "rank(D2) == 56 (kernel dim 8)")
+rank_p = rank_mod_prime(D2)
+gate("B1.2",
+     rank_p == 56 and eqm(D2 @ V8, np.zeros((N, 8), dtype=np.int64))
+     and eqm(V8.T @ V8, 64 * np.eye(8, dtype=np.int64)),
+     f"EXACT: rank_Fp(D2)={rank_p} gives rank_Q>=56; 8 independent null vectors give rank_Q<=56")
 gate("B1.3", eqm(V8.T @ V8, 64 * np.eye(8, dtype=np.int64)) and eqm(D2 @ V8, np.zeros((N, 8), dtype=np.int64)),
      "V8^T V8 == 64 I_8 and D2 V8 == 0")
 gate("B1.4", eqm(J64 @ J64, -(64 ** 2) * np.eye(8, dtype=np.int64)),
      "J64 J64 == -64^2 I_8 (monomial squares to -I: J_ker^2 = -P_ker)")
-gate("B1.5", eqm(Jker_int, V8 @ J64 @ V8.T), "Jker_int == V8 J64 V8^T (integer kernel lift)")
+J64_expected = np.zeros((8, 8), dtype=np.int64)
+for col, S in enumerate(SUBSETS):
+    row = sidx[frozenset(S) ^ frozenset({1})]
+    upstream_sign = ((-1) ** len(frozenset(S) & frozenset({0, 2}))) * (1 if 1 in S else -1)
+    J64_expected[row, col] = 64 * upstream_sign
+Jker_expected = np.zeros((N, N), dtype=np.int64)
+for row in range(8):
+    for col in range(8):
+        if J64_expected[row, col]:
+            Jker_expected += J64_expected[row, col] * np.outer(V8[:, row], V8[:, col])
+gate("B1.5", eqm(J64, J64_expected) and eqm(Jker_int, Jker_expected),
+     "EXACT: local J64 and lift match an independently expanded upstream monomial and normalization")
 T200 = perm(lambda x: (x[0] - 2, x[1], x[2]))
 T020 = perm(lambda x: (x[0], x[1] - 2, x[2]))
 T002 = perm(lambda x: (x[0], x[1], x[2] - 2))
+fourier_counts = {}
+for k1, k2, k3 in itertools.product(range(4), repeat=3):
+    eigenvalue = 2 * (((-1) ** k1) + ((-1) ** k2) + ((-1) ** k3)) - 6
+    fourier_counts[eigenvalue] = fourier_counts.get(eigenvalue, 0) + 1
 gate("B1.6",
-     sorted(set(int(round(v)) for v in np.linalg.eigvalsh(M))) == [-12, -8, -4, 0]
+     fourier_counts == {0: 8, -4: 24, -8: 24, -12: 8}
      and eqm(M, 2 * (T200 + T020 + T002) - 6 * np.eye(N, dtype=np.int64))
      and bool(np.all(np.diag(M) == -6)),
-     "M=D2@D2: eigs {0,-4,-8,-12}, M==2(T200+T020+T002)-6I, diag==-6")
+     f"EXACT: translation identity and Fourier characters give spectrum counts {fourier_counts}")
 gate("B1.7", eqm(A[0], np.zeros((N, N), dtype=np.int64)) and all(np.any(A[m] != 0) for m in (1, 2, 3)),
      "A_0 == 0 (kernel carrier vanishes); A_1,A_2,A_3 nonzero")
 
@@ -247,13 +292,13 @@ gate("B2.1", np.count_nonzero(Seps - np.diag(np.diag(Seps))) == 0 and set(np.uni
 gate("B2.2", eqm(Seps @ Seps, np.eye(N, dtype=np.int64)), "S_eps^2 == I")
 gate("B2.3", int(np.trace(Seps)) == 0, "trace(S_eps) == 0")
 gate("B2.4", eqm(np.diag(Seps), np.array([(-1) ** int(coords[i].sum()) for i in range(N)])),
-     "S_eps == diag((-1)^{x1+x2+x3}) (staggered Gamma_5)")
+     "S_eps == diag((-1)^{x1+x2+x3}) (site-parity grading)")
 
 # ============================ B3: chiral anticommutation ======================
 gate("B3.1", eqm(Seps @ D2 @ Seps, -D2), "CHIRAL: S_eps D2 S_eps == -D2 (anticommutes)")
 gate("B3.2", eqm(Seps @ M @ Seps, M), "S_eps M S_eps == +M (commutes with M=D2^2)")
 gate("B3.3", all(eqm(Seps @ Q[m] @ Seps, Q[m]) for m in range(4)),
-     "S_eps Q_m S_eps == Q_m for all m (spectral projectors fixed)")
+     "S_eps fixes each drop-one Q_m and hence each normalized projector P_m=Q_m/N_m")
 gate("B3.4", not eqm(Seps @ D2 @ Seps, D2), "rejector: S_eps D2 S_eps != +D2 (genuine anticommutation)")
 
 # ============================ B4: kernel reversal + witness ==================
@@ -320,15 +365,21 @@ gate("B7.4", locked, "SIGN-LOCK: every h locks kernel-sign == bulk-sign (both in
 gate("B7.5", n_plus == 768 and n_minus == 768,
      f"census: {n_plus} fix J_full (G_amb), {n_minus} send J_full->-J_full (S_eps coset)")
 
-# ============================ B8: the free relative binary ===================
+# ============================ B8: exact common-sign orbit ====================
 gate("B8.1", np.any(Jker_int != 0),
      "EXACT: -J_full != J_alt  (since -J_full - J_alt = -2 J_ker, and J_ker != 0)")
 gate("B8.2", np.any(A[1] != 0),
      "EXACT: J_full != J_alt  (since J_full - J_alt = 2 J_bulk, and B_1 != 0)")
 no_reach_alt = all(not (sk == -sb) for sk, sb in signs)     # signs never opposite => J_alt unreachable
-gate("B8.3", no_reach_alt and n_plus + n_minus == 1536,
-     "EXACT: no h in <G_amb,S_eps> has opposite kernel/bulk signs => J_alt unreachable (orbit is {+-J_full})")
-# [FLOAT SANITY] the 16-member sign family all square to -I; orbit of J_full is 2 of 16
+coefficient_image = {(sk, sb, sb, sb) for sk, sb in signs}
+gate("B8.3", no_reach_alt and n_plus + n_minus == 1536
+     and coefficient_image == {(+1, +1, +1, +1), (-1, -1, -1, -1)},
+     "EXACT: H coefficient image is the common sign only; orbit_H(J_full)={+-J_full}, excluding J_alt")
+sign_family = list(itertools.product((+1, -1), repeat=4))
+relative_classes = {(ek * e1, ek * e2, ek * e3) for ek, e1, e2, e3 in sign_family}
+gate("B8.4", len(sign_family) == 16 and len(relative_classes) == 8,
+     "EXACT: 16 sign tuples modulo common sign give 8 relative classes, represented by (ek*e1,ek*e2,ek*e3)")
+# [FLOAT SANITY] all sign-family members square to -I; not used for the orbit count
 sq_ok = True
 for ek in (+1, -1):
     for e1 in (+1, -1):
@@ -338,7 +389,8 @@ for ek in (+1, -1):
                      + e2 * D2f @ Pf[2] / (2 * np.sqrt(2)) + e3 * D2f @ Pf[3] / (2 * np.sqrt(3))
                 if np.max(np.abs(Je @ Je + np.eye(N))) > 1e-9:
                     sq_ok = False
-gate("B8.4", sq_ok,
-     "[FLOAT SANITY] all 16 sign-members J(e_ker,e_1,e_2,e_3) square to -I (S_eps orbit reaches 2 of 16)")
+gate("B8.5", sq_ok,
+     "[FLOAT SANITY] all 16 sign-members square to -I; the exact common-sign orbit reaches 2 of 16")
 
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+raise SystemExit(1 if FAIL else 0)

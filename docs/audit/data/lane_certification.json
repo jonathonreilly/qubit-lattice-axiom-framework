@@ -105,7 +105,7 @@
         },
         {
           "claim_id": "z2_hw1_mass_matrix_parametrization_note",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         }
       ],
       "certified": false,
@@ -2834,7 +2834,7 @@
         },
         {
           "claim_id": "z2_hw1_mass_matrix_parametrization_note",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         }
       ],
       "certified": false,
@@ -2847,6 +2847,6 @@
       "uncertified_count": 652
     }
   ],
-  "repo_head": "cd3082a0fe9b490d54ab4c4cf51a89e84d522f5e",
+  "repo_head": "e9d00a2d1575b93ec9be7deb1ae621b5e2dcfb84",
   "schema": "lane_certification_v2"
 }

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_kahler_triple_ambient_invariant_metric_symplectic_2026_07_19.py
-runner_sha256: d6eda08489006db65bde3eb325574d2872b58dddc322f93fc296d715b1f15533
+runner_sha256: 9d51e00ae036b6351992191f76ec32ae45f42b7a3c0607ef3fd4b920e63251a6
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 17.91

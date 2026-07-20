@@ -239,14 +239,14 @@ eHbad=np.linalg.eigvalsh(Hbad)
 posdef = eH.min() > 1e-8
 # Discriminator on the sign of omega: on the +i eigenspace, omega = -Jfull acts as -i, so
 # (Ifull - i·omega) annihilates it (it is the positive-definite form on the -i eigenspace instead);
-# its restriction Hbad collapses to the ZERO form ⇒ min eig(Hbad) ≈ 0, i.e. NOT positive-definite.
+# its restriction Hbad collapses to the ZERO form, so every eigenvalue has
+# absolute magnitude below the numerical tolerance.
 # Because omega is antisymmetric (zero diagonal), NO form g ± i·omega is negative-definite on a
 # J-invariant subspace: a wrong sign manifests as LOSS of positive-definiteness (degeneracy), never a
 # negative spectrum. This rejects a fabricated/omega=0 object (then Hbad = Gram > 0, failing this test)
 # and rejects the wrong global omega sign (then H itself collapses, failing the posdef test above).
-# [DEVIATION from the spec's literal "min eig(Hbad) < -1e-8": the honest, genuinely-discriminating
-#  signal is degeneracy (min eig ≈ 0 < 1e-8), not a negative spectrum. Surfaced in the report.]
-wrong_not_posdef = eHbad.min() < 1e-8 and eHbad.max() < 1e-6
+# The absolute spectral bound rejects large negative and indefinite false passes.
+wrong_not_posdef = float(np.max(np.abs(eHbad))) < 1e-6
 print("      [diagnostic, non-load-bearing] H posdef (min eig > 1e-8): %s | wrong-sign Hbad collapses ~0: min/max eig = %.2e / %.2e"
       %(bool(eH.min()>1e-8), float(eHbad.min()), float(eHbad.max())))
 check("G17 [FLOAT SANITY -- non-load-bearing]: H Hermitian/posdef; wrong omega sign collapses on H+",

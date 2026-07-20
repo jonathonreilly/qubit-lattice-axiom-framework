@@ -18,6 +18,6 @@ no_go_routes:
   - full framework derivation not available from retained one-hop dependencies
 trace_gate: direct_blocker_closure
 review_disposition: passed_after_fixes
-pr_status: pending_review
-next_exact_action: package the reviewed science block for independent audit
+pr_status: draft_pr_5537_open
+next_exact_action: independent audit of the registered source and runner packet
 stop_condition: independent-review-ready bounded physical-input bridge and passing runner

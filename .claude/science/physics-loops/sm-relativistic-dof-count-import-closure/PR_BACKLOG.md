@@ -1,4 +1,4 @@
-# PR Backlog
+# PR Delivery Record
 
-PR packaging is pending completion of the required local review-loop and final
-verification. No PR creation failure has occurred.
+Draft PR [#5537](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5537)
+is open against `main`. No delivery backlog remains.

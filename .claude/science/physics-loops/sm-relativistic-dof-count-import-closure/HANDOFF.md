@@ -12,6 +12,11 @@ load-bearing-step class A arithmetic and retained dependency checks.
 `exact-support`; independent audit is still required. No source-authored audit
 verdict or framework derivation is claimed.
 
+## Review PR
+
+Draft PR [#5537](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5537)
+packages this coherent science block against `main`.
+
 ## Verification
 
 - `PYTHONPATH=scripts python3 scripts/frontier_sm_relativistic_dof_finite_inventory.py`

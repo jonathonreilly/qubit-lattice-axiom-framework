@@ -38,15 +38,21 @@ zero by the S_eps sign reversal, not a global fluke), discriminated by the S_eps
 COMMUTING insertion I whose per-term traces do NOT vanish (Sum_g tr(U^2 . I) = A =
 1536, per-term max 64) -- the vanishing is specific to J anticommuting with S_eps.
 No individual (mixed rational/irrational) character is ever gated equal to
-a target -- only the summed exact class-sums A, B and the integer FS indicators.  The
-commutant is computed from a MINIMAL generating set (verified closure == 768), so the
-kron stack is Sum over ~7 generators of a 1024x1024 map, NOT over all 768 (which would
+a target -- only the summed exact class-sums A, B and the integer FS indicators.
+The commutant is computed from a small deterministic greedy generating set (verified
+closure == 768), so the kron stack uses that set, NOT all 768 elements (which would
 OOM the 8 GB machine).  Every completeness / identity gate carries a discriminating
 wrong-value rejector; float eig / rank / SVD / spectrum checks are tagged [FLOAT].
 """
 import itertools
 import os
 import numpy as np
+
+AUDIT_INPUT_PATHS = (
+    "docs/KCPT_CHIRAL_PARITY_COMMON_SIGN_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-19.md",
+    "docs/KCPT_HOLOMORPHIC_GAMB_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-07-20.md",
+    "docs/KCPT_HOLOMORPHIC_REALITY_CP_CENSUS_FROBENIUS_SCHUR_BOUNDED_THEOREM_NOTE_2026-07-20.md",
+)
 
 L, N = 4, 64
 TOL0 = 1e-12      # exact rational-zero level
@@ -236,7 +242,7 @@ for name, base in BASES.items():
 Gamb = closure_amb(commuting)
 Gamb_set = {U.tobytes() for U in Gamb}
 
-# deterministic greedy minimal generating set (commutant of a generating set == of the group)
+# small deterministic greedy generating set (commutant of a generating set == of the group)
 Gsorted = sorted(Gamb, key=lambda U: U.tobytes())
 gens = []
 gen_closure = 0
@@ -328,19 +334,25 @@ for seed in range(128):
 # ---------------- per-constituent Frobenius-Schur indicators + characters ---------------
 FS = None
 imchi = None
+block_chars = None
 if Projs is not None:
     FS = []
     imchi = []
+    block_chars = []
     for Pk in Projs:
-        acc = 0.0
+        acc = 0.0j
         maxim = 0.0
+        chars_k = []
         for gi in range(len(Gamb)):
             Cg = Cs[Gamb[gi].tobytes()]
-            maxim = max(maxim, abs(np.trace(Pk @ Cg).imag))
+            chi = np.trace(Pk @ Cg)
+            chars_k.append(chi)
+            maxim = max(maxim, abs(chi.imag))
             Cg2 = Cs[g2keys[gi]]
-            acc += np.trace(Pk @ Cg2).real
+            acc += np.trace(Pk @ Cg2)
         FS.append(acc / len(Gamb))
         imchi.append(maxim)
+        block_chars.append(np.asarray(chars_k))
 
 # =============================================================================== gates ==
 # ---- group / structure sanity --------------------------------------------------------
@@ -377,18 +389,19 @@ sig_commute = max(int(np.max(np.abs(W @ D2 - D2 @ W))) for W in sigma_img)
 bijection = len(set(sig_bytes)) == 768 and set(sig_bytes) == Gamb_set
 n_moved = sum(1 for gi in range(len(Gamb)) if not eqm(sigma_img[gi], Gamb[gi]))
 seps_not_in = Seps_int.tobytes() not in Gamb_set
-gate("G5", in_amb and sig_commute == 0 and bijection and n_moved > 0 and seps_not_in,
+gate("G5", in_amb and sig_commute == 0 and bijection and n_moved == 384 and seps_not_in,
      f"S_eps normalizes G_amb: every W=S_eps U S_eps commutes with D2 (dev {sig_commute}==0) and lies "
      f"in G_amb; sigma is a BIJECTION of the 768 (|image|=={len(set(sig_bytes))}); REJECTOR sigma moves "
-     f"{n_moved}>0 elements and S_eps not in G_amb ({seps_not_in})")
+     f"{n_moved}==384 elements and S_eps not in G_amb ({seps_not_in})")
 
 sq_central = all(eqm(Seps_int @ (Gamb[gi] @ Gamb[gi]) @ Seps_int, Gamb[gi] @ Gamb[gi])
                  for gi in range(len(Gamb)))
 seps_inv = eqm(Seps_int @ Seps_int, I64i)
-gate("G6", sq_central and seps_inv and 0 < n_moved < 768,
+centralizer_order = 768 - n_moved
+gate("G6", sq_central and seps_inv and centralizer_order == 384 and n_moved == 384,
      f"EXACT: every square U_g^2 centralizes S_eps (S_eps U_g^2 S_eps == U_g^2 for all 768; "
-     f"S_eps^2==I: {seps_inv}); DISCRIMINATOR: only {768 - n_moved} of 768 group elements centralize "
-     f"S_eps -- {n_moved} do NOT (0<{n_moved}<768), so the squares land specifically in C(S_eps), "
+     f"S_eps^2==I: {seps_inv}); |C_G(S_eps)|={centralizer_order}==384 (index 2), while {n_moved}==384 "
+     f"group elements do NOT centralize S_eps, so the squares land specifically in C(S_eps), "
      f"not because S_eps is central")
 
 sjs = nrm(Seps @ Jfull @ Seps + Jfull)
@@ -405,12 +418,17 @@ gate("G8", Trank == 32 and Tuni < TOL_F,
      f"(||T^H T - I||={Tuni:.1e}<1e-9)")
 
 maxconj = 0.0
+maxsame = 0.0
 for U in Gamb:
     Uc = U.astype(complex)
-    maxconj = max(maxconj, abs(np.trace(Bm.conj().T @ Uc @ Bm) - np.conj(np.trace(Bh.conj().T @ Uc @ Bh))))
-gate("G9", maxconj < TOL_F,
-     f"[FLOAT] anti-holo restriction == conj(holo restriction) over ALL 768: "
-     f"max|tr(Bm^H U Bm) - conj(tr(B^H U B))|={maxconj:.1e}<1e-9 (H_- is the complex conjugate of W)")
+    chi_m = np.trace(Bm.conj().T @ Uc @ Bm)
+    chi_p = np.trace(Bh.conj().T @ Uc @ Bh)
+    maxconj = max(maxconj, abs(chi_m - np.conj(chi_p)))
+    maxsame = max(maxsame, abs(chi_m - chi_p))
+gate("G9", maxconj < TOL_F and maxsame > 1e-3,
+     f"[FLOAT] anti-holo character == conj(holo character) over ALL 768: "
+     f"max|chi_-(g) - conj(chi_+(g))|={maxconj:.1e}<1e-9, while max|chi_-(g)-chi_+(g)|="
+     f"{maxsame:.3f}>1e-3 (DISCRIMINATOR: conjugation, not equality; H_- is equivalent to conj(W))")
 
 # ---- exact-integer bridge (load-bearing) ---------------------------------------------
 gate("G10", A_int == 1536 and A_int == 2 * 768 and A_int != 768 and A_int != 2304,
@@ -424,31 +442,36 @@ gate("G11", abs(B_val) < TOL_F and maxbJ_term < TOL_F and A_int == 1536 and maxb
      f"S_eps-COMMUTING insertion I gives Sum_g tr(U_g^2 . I)=A={A_int}!=0, per-term max {maxbI}==64>0, "
      f"so the vanishing is specific to J anticommuting with S_eps, not an all-traces-zero artifact")
 
-FS_W = ((A_int - 1j * B_val) / 2).real / len(Gamb)
 half = (A_int - 1j * B_val) / 2
+FS_W = half / len(Gamb)
 gate("G12", abs(FS_W - 1) < TOL_F and abs(FS_W) > 0.5 and abs(FS_W - 2) > 0.5,
-     f"FS_W = ((A - iB)/2).real/|G| = {FS_W:.6f} == 1; REJECTORS != 0, != 2. "
-     f"(A - iB)/2 = {half:.4f} == 768 == |G|*FS_W = {len(Gamb) * int(round(FS_W))}")
+     f"FS_W = ((A - iB)/2)/|G| = {FS_W:.6f} == 1; REJECTORS != 0, != 2. "
+     f"(A - iB)/2 = {half:.4f} == 768 == |G|*FS_W = {len(Gamb) * int(round(FS_W.real))}")
 
 gate("G13", 1 < len(gens) <= 10 and gen_closure == 768 and dimc == 5,
-     f"MEMORY-BUDGET: commutant from MINIMAL generating set ({len(gens)} gens, 1<..<=10, closure "
-     f"{gen_closure}==768); generator-commutant dim {dimc}==5 (OOM-avoiding kron over ~7 gens, not 768)")
+     f"MEMORY-BUDGET: commutant from small deterministic greedy generating set ({len(gens)} gens, "
+     f"1<..<=10, closure {gen_closure}==768); generator-commutant dim {dimc}==5 "
+     f"(OOM-avoiding kron over {len(gens)} gens, not 768)")
 
 # ---- per-constituent reality census --------------------------------------------------
 idem_sumI = nrm(sum(Projs) - np.eye(n)) if Projs is not None else 1.0
 idem_sq = max(nrm(P @ P - P) for P in Projs) if Projs is not None else 1.0
 idem_orth = max((nrm(Projs[i] @ Projs[j]) for i in range(len(Projs)) for j in range(len(Projs)) if i != j),
                 default=1.0) if Projs is not None else 1.0
+proj_comm = max((nrm(P @ C - C @ P) for P in Projs for C in Cgens),
+                default=1.0) if Projs is not None else 1.0
 gate("G14", dimc == 5 and gap > 1e6 and Projs is not None and idem_sumI < TOL_EIG and idem_sq < TOL_EIG
-     and idem_orth < TOL_EIG and ranks == [4, 4, 6, 6, 12] and sum(ranks) == 32
+     and idem_orth < TOL_EIG and proj_comm < TOL_EIG
+     and ranks == [4, 4, 6, 6, 12] and sum(ranks) == 32
      and ranks != [4, 4, 4, 8, 12] and ranks != [2, 6, 6, 6, 12],
      f"commutant dim {dimc}==5 (clean sv-gap {gap:.1e}>1e6); 5 idempotents orthogonal (Sum P=I "
-     f"{idem_sumI:.1e}, P^2=P {idem_sq:.1e}, P_iP_j=0 {idem_orth:.1e}), sorted ranks {ranks}==[4,4,6,6,12] "
+     f"{idem_sumI:.1e}, P^2=P {idem_sq:.1e}, P_iP_j=0 {idem_orth:.1e}), invariant under generators "
+     f"(max|[P_k,C_gen]|={proj_comm:.1e}<1e-8), sorted ranks {ranks}==[4,4,6,6,12] "
      f"sum {sum(ranks) if ranks else -1}; REJECTORS != [4,4,4,8,12], != [2,6,6,6,12]")
 
-FS_round = sorted(int(round(x)) for x in FS) if FS is not None else []
-FS_res = max(abs(x - round(x)) for x in FS) if FS is not None else 1.0
-plus_one_idx = [k for k in range(len(FS))if round(FS[k]) == 1] if FS is not None else []
+FS_round = sorted(int(round(x.real)) for x in FS) if FS is not None else []
+FS_res = max(abs(x - round(x.real)) for x in FS) if FS is not None else 1.0
+plus_one_idx = [k for k in range(len(FS)) if round(FS[k].real) == 1] if FS is not None else []
 plus_is_12 = len(plus_one_idx) == 1 and ranks[plus_one_idx[0]] == 12 if FS is not None else False
 gate("G15", FS is not None and FS_res < TOLREJ and FS_round == [0, 0, 0, 0, 1] and sum(FS_round) == 1
      and plus_is_12 and FS_round != [0, 0, 0, 0, 0] and FS_round != [1, 1, 1, 1, 1]
@@ -459,15 +482,32 @@ gate("G15", FS is not None and FS_res < TOLREJ and FS_round == [0, 0, 0, 0, 1] a
 
 im12 = [imchi[k] for k in range(len(ranks)) if ranks[k] == 12] if imchi is not None else []
 im_other = [imchi[k] for k in range(len(ranks)) if ranks[k] != 12] if imchi is not None else []
+conj_dev = None
+conj_matches = []
+min_non12_conj_gap = 0.0
+if block_chars is not None:
+    conj_dev = np.array([[np.max(np.abs(block_chars[j] - np.conj(block_chars[i])))
+                          for j in range(len(block_chars))] for i in range(len(block_chars))])
+    conj_matches = [(i, j) for i in range(len(ranks)) for j in range(len(ranks))
+                    if conj_dev[i, j] < TOLREJ]
+    non12_idx = [i for i, rank in enumerate(ranks) if rank != 12]
+    min_non12_conj_gap = min(conj_dev[i, j] for i in non12_idx for j in range(len(ranks)))
+rank12_idx = [i for i, rank in enumerate(ranks) if rank == 12]
+expected_conj_matches = [(rank12_idx[0], rank12_idx[0])] if len(rank12_idx) == 1 else []
 gate("G16", imchi is not None and len(im12) == 1 and im12[0] < TOLREJ
-     and len(im_other) == 4 and all(v > 1e-3 for v in im_other),
+     and len(im_other) == 4 and all(v > 1e-3 for v in im_other)
+     and conj_matches == expected_conj_matches and min_non12_conj_gap > 1e-3,
      f"[FLOAT] rank-12 constituent self-conjugate (max|Im chi_12|={im12[0]:.1e}<1e-6); the four "
-     f"rank-4/6 constituents NOT self-conjugate (min max|Im chi|={min(im_other):.3f}>1e-3): a real 12 "
-     f"vs four genuinely complex modes")
+     f"rank-4/6 constituents NOT self-conjugate (min max|Im chi|={min(im_other):.3f}>1e-3) and have "
+     f"NO conjugate-character match anywhere in W (min all-candidate gap={min_non12_conj_gap:.3f}>1e-3; "
+     f"only match ranks={[(ranks[i], ranks[j]) for i, j in conj_matches]}): a real 12 vs four "
+     f"genuinely complex constituents")
 
-sum_FSk = int(round(sum(FS))) if FS is not None else -99
-gate("G17", sum_FSk == 1 and sum_FSk == int(round(FS_W)),
-     f"CONSISTENCY: Sum_k FS_k = {sum_FSk} == FS_W = {int(round(FS_W))} (both == 1): "
+sum_FSk = sum(FS) if FS is not None else complex(-99)
+fs_consistency_res = abs(sum_FSk - FS_W)
+gate("G17", abs(sum_FSk - 1) < TOLREJ and abs(FS_W - 1) < TOL_F and fs_consistency_res < TOLREJ,
+     f"CONSISTENCY: Sum_k FS_k = {sum_FSk:.6f} == FS_W = {FS_W:.6f} (residual "
+     f"{fs_consistency_res:.1e}<1e-6; both == 1): "
      f"per-constituent census agrees with the exact-integer bridge")
 
 # ---- source pins + self-note dependency discipline -----------------------------------

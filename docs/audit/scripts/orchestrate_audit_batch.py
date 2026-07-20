@@ -1074,42 +1074,43 @@ def science_fix_handoff(job: dict, envelope: dict) -> dict | None:
     claim_scope = str(audit.get("claim_scope") or "").strip()
     rationale = str(audit.get("verdict_rationale") or "").strip()
     load_bearing = str(audit.get("load_bearing_step") or "").strip()
-    claim_type = str(audit.get("claim_type") or row.get("claim_type") or "")
+    claim_type = str(
+        audit.get("claim_type") or row.get("claim_type") or ""
+    ).strip()
     step_class = str(
         audit.get("load_bearing_step_class")
         or row.get("load_bearing_step_class")
-        or "?"
-    )
-    prompt = f"""Use the physics-loop skill to repair the validated non-clean audit on {note_path}.
-
-Claim id: {cid}
-Audit verdict: {verdict}
-Claim type: {claim_type}
-Load-bearing step class: {step_class}
-Claim scope: {claim_scope}
-
-Validated auditor rationale:
-{rationale}
-
-Auditor-quoted load-bearing step:
-{load_bearing}
-
-Auditor repair target:
-{notes}
-
-Make source or runner edits only where the validated audit identifies a real
-defect. Open no new axiom or primitive. The goal is a reviewable PR whose
-merged result can be independently re-audited; do not edit audit-ledger or
-generated audit-status surfaces.
-"""
+        or ""
+    ).strip()
+    invocation_id = str(audit.get("audit_invocation_id") or "").strip()
+    # Auto-dispatch is allowed only for a complete, independently checkable
+    # action packet.  Successful application alone does not make an empty or
+    # vague repair request safe to hand to a source-editing worker.
+    if not all(
+        (
+            invocation_id,
+            claim_type,
+            step_class,
+            claim_scope,
+            rationale,
+            load_bearing,
+            notes,
+        )
+    ):
+        return None
     return {
         "category": category,
         "claim_id": cid,
         "note_path": note_path,
         "descendants": int(row.get("transitive_descendants") or 0),
         "cls": step_class,
-        "prompt_body": prompt.strip(),
-        "audit_invocation_id": str(audit.get("audit_invocation_id") or ""),
+        "audit_invocation_id": invocation_id,
+        "audit_verdict": verdict,
+        "claim_type": claim_type,
+        "claim_scope": claim_scope,
+        "verdict_rationale": rationale,
+        "load_bearing_step": load_bearing,
+        "repair_target": notes,
     }
 
 
@@ -1418,9 +1419,12 @@ def main() -> int:
         ),
     )
     parser.add_argument(
-        "--skip-science-fix-dispatch",
+        "--dispatch-science-fixes",
         action="store_true",
-        help="do not launch PR-producing repair workers for validated non-clean verdicts",
+        help=(
+            "launch PR-producing repair workers for complete validated "
+            "non-clean verdicts; use only when source repair was explicitly requested"
+        ),
     )
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
@@ -1593,7 +1597,7 @@ def main() -> int:
         for cid, row in sorted(science_handoffs.items())
         if cid not in judicial_claims
     ]
-    if repair_rows and not args.dry_run and not args.skip_science_fix_dispatch:
+    if repair_rows and not args.dry_run and args.dispatch_science_fixes:
         try:
             launched = launch_science_fix_worker(repair_rows, workdir)
             if launched is None:

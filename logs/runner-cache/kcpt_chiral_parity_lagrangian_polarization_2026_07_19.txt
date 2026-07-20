@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_chiral_parity_lagrangian_polarization_2026_07_19.py
+runner_sha256: dd18736504ae7ea3ecc9b1a18cdc0476f285a673d0444b18f6aec835800fcf25
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 23.58
+status: ok
+----- stdout -----
+PASS G1 - S_eps real orthogonal involution: S^2=I, S^T S=I, trace=0, entries in {-1,+1}
+PASS G2 - dim L_+ = dim L_- = 32 and L_+ (+) L_- partitions the 64 basis sites
+PASS G3 - landed Unit-9 T4: ||S_eps J_full S_eps + J_full|| < 1e-12
+PASS G4 - LAGRANGIAN: omega vanishes on L_+ and on L_- (diagonal parity blocks = 0)
+PASS G5 - REJECTOR: off-diagonal L_+ x L_- block of omega is nonzero (vanishing is block-specific)
+PASS G6 - omega nondegenerate: |round(det omega)| = 1 >= 1
+PASS G7 - J_full anticommutes with S_eps: ||S_eps J_full + J_full S_eps|| < 1e-12
+PASS G8 - REJECTOR: ||S_eps J_full - J_full S_eps|| nonzero (genuine anticommutation, not both-zero)
+PASS G9 - J_full diagonal parity blocks vanish: J(L_+) subset L_-, J(L_-) subset L_+
+PASS G10 - J_full: L_+ -> L_- is a rank-32 isomorphism (== 32)
+PASS G11 - ANTISYMPLECTIC: ||S_eps^T omega S_eps + omega|| < 1e-12
+PASS G12 - REALITY/CP: ||S_eps^T h S_eps - conj(h)|| < 1e-12 (h -> conj(h) = g - i*omega)
+PASS G13 - REJECTOR: ||h - conj(h)|| nonzero (omega != 0, so conj(h) != h)
+PASS G14 - ANTI-HOLOMORPHIC: +i eigenspace dim 32==32; S_eps sends it to the -i eigenspace (< 1e-8)
+PASS G15 - |G_amb| = 768 == 768 and |C_G_amb(S_eps)| = 384 == 384
+PASS G16 - AMBIENT INDEX-2 GRADING: preserve 384 (== centralizer 384), swap 384, neither 0; 384+384==768
+PASS G17a - ORIENTATION NEUTRALITY (a): ||S_eps J_alt S_eps + J_alt|| < 1e-12
+PASS G17b - ORIENTATION NEUTRALITY (b): J_alt also exchanges the same L_+- (diagonal parity blocks = 0)
+PASS G17c - REJECTOR (non-vacuity): J_full - J_alt = 2 J_bulk, nonzero (the two orientations genuinely differ)
+PASS G18 - REJECTOR: ||J_full^2 + I|| and ||J_alt^2 + I|| < 1e-12 (genuine complex structures)
+PASS G19 - h Hermitian; g is G_amb-invariant, J_full-compatible, posdef (genuine Unit-10 metric)
+PASS G20 - SOURCE PIN Unit 9: note contains 'S_eps J_full S_eps = -J_full' and 'common-sign orbit'
+PASS G21 - SOURCE PIN Unit 10: note contains 'omega(x,y) = g(J_full x,y)'
+PASS G22 - SELF-NOTE DEPENDENCY DISCIPLINE: Unit9-link 1==1, Unit10-link 1==1, total KCPT-links 2==2
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

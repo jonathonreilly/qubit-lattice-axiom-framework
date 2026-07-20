@@ -1,5 +1,5 @@
 {
- "edge_count": 14928,
+ "edge_count": 14929,
  "node_count": 4449,
  "nodes": {
   "3d_correction_master_note": {
@@ -1379,8 +1379,8 @@
    "out_degree": 0
   },
   "boost_cone_apbc_sign_neutral_2026-06-23": {
-   "deps_hash": "5b93d4d58e88",
-   "out_degree": 7
+   "deps_hash": "84900cda3dc7",
+   "out_degree": 8
   },
   "bootstrap_continuation_availability_nonempty_free_orbit_reduction_propagation_closure_bounded_theorem_note_2026-07-04": {
    "deps_hash": "fc7df57903e1",

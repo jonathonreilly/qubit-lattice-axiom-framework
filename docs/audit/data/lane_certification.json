@@ -273,7 +273,7 @@
         },
         {
           "claim_id": "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
@@ -2839,6 +2839,6 @@
       "uncertified_count": 651
     }
   ],
-  "repo_head": "80ed1cfdbe3f4330ebacffcadbde5e0e786ee225",
+  "repo_head": "c2d69d609e84106503a37003693fb8623f0fc0e5",
   "schema": "lane_certification_v2"
 }

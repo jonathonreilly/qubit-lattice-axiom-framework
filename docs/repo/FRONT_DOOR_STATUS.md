@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 308 |
 | Boxed decorations under retained parents | 16 |
 | Open gates | 2 |
-| Unaudited rows | 3022 |
+| Unaudited rows | 3021 |
 | Retained-pending-chain rows | 5 |
 | Audited conditional rows | 21 |
 | Audited renaming rows | 15 |
@@ -70,7 +70,7 @@ Next ready rows by queue order:
 - [`s3_mass_matrix_conditional_degeneracy_note_2026-07-11`](../../docs/S3_MASS_MATRIX_CONDITIONAL_DEGENERACY_NOTE_2026-07-11.md) - critical; non_terminal_conditional
 - [`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`abj_epsilon_index_square_block_no_go_note_2026-05-30`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md) - critical; unaudited
-- [`abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md) - critical; unaudited
+- [`abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md) - critical; audit_in_progress
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and

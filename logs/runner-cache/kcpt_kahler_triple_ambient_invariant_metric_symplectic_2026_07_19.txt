@@ -1,53 +1,61 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_kahler_triple_ambient_invariant_metric_symplectic_2026_07_19.py
-runner_sha256: aab124a0358a2a85992ad553f2afb52c3972db783ba0070f63d7f00b44c9a475
-timeout_sec: 180
+runner_sha256: d6eda08489006db65bde3eb325574d2872b58dddc322f93fc296d715b1f15533
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 21.95
+elapsed_sec: 17.91
 status: ok
 ----- stdout -----
+=== T0: exact Unit-8 source pins ===
+      parent=KCPT_TOTAL_COMPLEX_STRUCTURE_AMBIENT_INVARIANT_KERNEL_BULK_ASSEMBLY_BOUNDED_THEOREM_NOTE_2026-07-19.md
+      source pins present=['ambient_invariance', 'ambient_order', 'bulk_sign_family', 'commutant_count', 'holomorphic_count', 'kernel_sign_open', 'square'] ; missing=[]
+PASS G0 EXACT SOURCE PIN: Unit-8 square/group/holomorphic/commutant/sign-family statements are present
 === T1: G_amb ⊂ O(64), g=I invariant ===
 PASS G1 len(Gamb)==768 [sanity]
       max_U |U^T U - I|_int = 0
 PASS G2 EXACT: max_U |U^T@U - I|_int == 0 (U^T I U = U^T U = I ⇒ g invariant)
-PASS G3 REJECTOR: EXISTS U with ||U^T gp U - gp|| > 0.5, gp=I+e00 (g=I special, not generic)
+PASS G3 EXACT REJECTOR: EXISTS U with U^T gp U != gp, gp=I+e00 (g=I special, not generic)
 === T2: J_full ∈ O(64), g-compatible ===
 PASS G4 EXACT: Nker+Nker^T==0 and A[m]+A[m]^T==0 for m in {1,2,3} (integer-numerator antisymmetry)
-PASS G5 [FLOAT SANITY — non-load-bearing]: ||Jfull@Jfull + I|| < 1e-10 (cites Unit-8 J_full^2=-I)
-PASS G6 [FLOAT SANITY — non-load-bearing]: ||Jfull^T@Jfull - I|| < 1e-10 (T2 orthogonality)
-PASS G7 DISCRIMINATING: ||Jfull^T@Jfull - (-(Jfull@Jfull))|| < 1e-12 (T2 = -J^2 via antisymmetry)
-PASS G8 [FLOAT SANITY — non-load-bearing]: round(det(Jfull))==1 (cites Unit-8 det J_full=+1)
-=== T3: omega = g·J_full is an invariant symplectic form ===
-PASS G9 EXACT: ||omega - Jfull^T|| < 1e-15 (omega = -Jfull = Jfull^T)
-PASS G10 EXACT: ||omega + omega^T|| < 1e-15 (antisym; same integer numerators as G4)
-PASS G11 [FLOAT SANITY — non-load-bearing]: round(det(omega))==1 (nondegenerate)
-      max_U ||U^T omega U - omega|| = 0.0e+00
-PASS G12 EXACT-over-float: max_U ||U^T@omega@U - omega|| < 1e-12 (since U^T J_full U = J_full)
-      omega is a single constant-coefficient matrix (basepoint-independent 2-form) ⇒ dω = 0
-PASS G13 closedness: omega represented by ONE constant matrix ⇒ dω=0 (documented structural gate)
+PASS G5 [FLOAT SANITY -- non-load-bearing]: ||Jfull@Jfull + I|| < 1e-10 (source-pinned Unit-8 square)
+PASS G6 [FLOAT SANITY -- non-load-bearing]: ||Jfull^T@Jfull - I|| < 1e-10 (T2 orthogonality)
+PASS G7 EXACT STRUCTURAL: integer-numerator antisymmetry + source-pinned J^2=-I imply J^T J=I
+PASS G8 EXACT STRUCTURAL: real dim 64 and J^2=-I give 32 conjugate (+i,-i) pairs, hence det(J)=+1
+=== T3: omega(x,y)=g(J_full x,y), matrix omega=J_full^T g=-J_full ===
+PASS G9 EXACT STRUCTURAL: convention omega(x,y)=g(Jx,y) gives matrix J^T g=-J for g=I
+PASS G10 EXACT STRUCTURAL: omega is antisymmetric by the same integer numerators as G4
+PASS G10b [FLOAT SANITY -- non-load-bearing]: reconstructed omega equals Jfull^T and omega+omega^T=0
+PASS G11 EXACT STRUCTURAL: J^2=-I gives omega inverse and det(omega)=+1 in real dimension 64
+PASS G12 EXACT: every ambient signed permutation commutes with Nker and A1,A2,A3, hence preserves omega
+      omega is constant on the affine amplitude space underlying V_R, hence d omega = 0
+PASS G13 STRUCTURAL: one basepoint-independent matrix on affine V_R gives d omega=0
 === T4: Kähler mutual compatibility ===
-PASS G14 EXACT: ||omega - Jfull^T|| < 1e-15 (omega(x,y) = g(J_full x, y))
-PASS G15 [FLOAT SANITY — non-load-bearing]: ||Jfull^T@omega@Jfull - omega|| < 1e-10 (omega(J·,J·)=omega)
+PASS G14 EXACT STRUCTURAL: omega(x,y)=g(Jx,y) is the declared matrix convention J^T g
+PASS G15 EXACT STRUCTURAL: J^T omega J=omega follows from J^T=-J, omega=-J, and J^2=-I
+PASS G15b [FLOAT SANITY -- non-load-bearing]: reconstructed J^T omega J equals omega
 === T5: h = g + i·omega posdef Hermitian on the 32-dim holomorphic space ===
-PASS G16 [FLOAT SANITY — non-load-bearing]: holomorphic (+i) dim == 32 (cites Unit-8 holo dim 32)
-      [diagnostic, non-load-bearing] H posdef (min eig > 1e-8): True | wrong-sign Hbad collapses ~0: min/max eig = -2.46e-16 / 4.57e-16
-PASS G17 DISCRIMINATING: H Hermitian & posdef (min eig>1e-8); wrong ω-sign NOT posdef (collapses to ~0)
-PASS G18 EXACT: g=I is positive-definite — min eig(I) == 1.0 (Kähler positivity source for T5)
+PASS G16 [FLOAT SANITY -- non-load-bearing]: dim_C H+ == 32 (source-pinned Unit-8 count)
+      [diagnostic, non-load-bearing] H posdef (min eig > 1e-8): True | wrong-sign Hbad collapses ~0: min/max eig = -2.22e-16 / 4.11e-16
+PASS G17 [FLOAT SANITY -- non-load-bearing]: H Hermitian/posdef; wrong omega sign collapses on H+
+PASS G18 EXACT STRUCTURAL: g=I is positive-definite and I+i omega=2I on H+
 === T6: honest boundary — invariant-form census + metric non-uniqueness ===
-      dim_sym=7.000000000  dim_alt=5.000000000  dim_comm=12.000000000
-PASS G19 EXACT DISCRIMINATING: dim_sym within 1e-9 of 7 and round==7
-PASS G20 EXACT DISCRIMINATING: dim_alt within 1e-9 of 5 and round==5
-PASS G21 EXACT DISCRIMINATING: dim_comm within 1e-9 of 12, round==12, and 7+5==12
-      invariant-symmetric rank r=7 ; T eigenvalues: +1 count=5, -1 count=2 ; max||ev|-1|=8.7e-15
-PASS G22: invariant-symmetric rank==7, T eigs all ±1, +1-count==5 (J-compat family), g=I in it & posdef
-      ||omega - omega_alt||_F = 14.967 (= ||2 J_bulk||_F ; orientation is a free binary here too)
-PASS G23 DISCRIMINATING: ||omega-omega_alt||_F>1 (2 J_bulk≠0); omega_alt also G_amb-invariant; antisym & det==1
+      exact numerators: sym=10752/1536 alt=7680/1536 comm=9216/768
+PASS G19 EXACT DISCRIMINATING: invariant symmetric dimension is 10752/1536=7
+PASS G20 EXACT DISCRIMINATING: invariant antisymmetric dimension is 7680/1536=5
+PASS G21 EXACT DISCRIMINATING: real commutant is 9216/768=12=7+5
+      exact Tr(T) coefficients [1,sqrt2,sqrt3,sqrt6] = ['3', '0', '0', '0']
+PASS G22 EXACT: Tr(T)=3 with radical coefficients zero; involution split is +1^5 / -1^2
+      [float sanity] invariant-symmetric rank r=7 ; T eigenvalues: +1 count=5, -1 count=2
+PASS G22b [FLOAT SANITY -- non-load-bearing]: rank 7, T^2=I, real +/-1 spectrum 5+2, g=I compatible/posdef
+PASS G23 EXACT STRUCTURAL: Unit-8 eight-member bulk-sign family is pinned; bulk dim 28 gives orientation ratio +1
+      [float sanity] ||omega-omega_alt||_F=14.967 ; signed-identity residual=0.0e+00
+PASS G23b [FLOAT SANITY -- non-load-bearing]: omega-omega_alt=-2 J_bulk !=0; sibling invariant/antisymmetric
 === SUMMARY ===
-Surface: L=4, N=64 (C^64), |G_amb|=768, shell normalizers Nm=[384, -128, 128, -384]
-Gate families: T1 (G1-G3), T2 (G4-G8), T3 (G9-G13), T4 (G14-G15), T5 (G16-G18), T6 (G19-G23)
-Load-bearing gates are exact-integer (G2,G4,G9,G10,G14,G18,G19,G20,G21) or reconstruct-and-cite
-the Unit-8 facts (G5,G6,G8,G16); float confirmations are tagged [FLOAT SANITY — non-load-bearing].
-TOTAL: PASS=23 FAIL=0
+Surface: L=4, V_R=R^64, complexification=C^64, |G_amb|=768, shell normalizers Nm=[384, -128, 128, -384]
+Gate families: T0 source pins; T1 metric; T2 complex structure; T3 symplectic form; T4 compatibility; T5 Hermitian restriction; T6 exact census/boundary
+Load-bearing gates use exact integers, exact Q(sqrt2,sqrt3), structural deductions, or explicit parent pins.
+Every NumPy norm/SVD/eigenspace/spectrum confirmation is tagged [FLOAT SANITY -- non-load-bearing].
+TOTAL: PASS=28 FAIL=0
 
 ----- stderr -----
 

@@ -15,6 +15,7 @@ runner: scripts/microcausality_weighted_quasilocal_class_walk_expansion_2026_07_
 # Microcausality: a weighted quasilocal-class walk bound
 
 **Date:** 2026-07-18
+**Type:** bounded_theorem
 **Claim type:** unaudited bounded theorem
 **Audit authority:** the independent audit lane only; this note assigns no
 audit verdict.
@@ -51,7 +52,8 @@ need not vanish for odd--odd observables.  It vanishes for tensor-local
 observables and in the even CAR sector.
 
 The finite-matrix Heisenberg convention is `τ_t(A)=exp(iHt)Aexp(-iHt)`.  The
-axioms do not choose `H`, `μ`, `κ`, `A`, or `B`.
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
+memo does not choose `H`, `μ`, `κ`, `A`, or `B`.
 
 ## Incidence-chain estimate
 
@@ -135,13 +137,23 @@ the missing-`|S|` half-values.
 The five science dependencies in the front matter are unaudited bounded
 parents or comparators, not correctness oracles for this runner:
 
-- the all-time walk note supplies the finite-volume Duhamel convention;
-- the even-CAR note supplies the parity/locality convention;
-- the finite-range bridge is the narrower interaction comparator;
-- the exponential-decay note records that a pure exponential has no uniform
-  reproducing-convolution constant;
-- the free-bilinear note is a pair-interaction comparator, with this note's
-  `κ=2W_μ` because of the explicit `|S|=2` factor.
+- the
+  [`MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md`](MICROCAUSALITY_ALL_TIME_VOLUME_UNIFORM_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md)
+  supplies the finite-volume Duhamel convention;
+- the
+  [`MICROCAUSALITY_FERMIONIC_EVEN_CAR_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md`](MICROCAUSALITY_FERMIONIC_EVEN_CAR_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md)
+  supplies the parity/locality convention;
+- the
+  [`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+  is the narrower interaction comparator;
+- the
+  [`EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md`](EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md)
+  records that a pure exponential has no uniform reproducing-convolution
+  constant;
+- the
+  [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md)
+  is a pair-interaction comparator, with this note's `κ=2W_μ` because of the
+  explicit `|S|=2` factor.
 
 The reproducing-convolution obstruction does not prove or disprove (7): the
 derivation above extracts `exp(-μd)` on each chain before applying one-center

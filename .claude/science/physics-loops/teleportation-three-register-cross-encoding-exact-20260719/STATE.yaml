@@ -1,0 +1,25 @@
+loop_slug: teleportation-three-register-cross-encoding-exact-20260719
+mode: run
+goal: "Replace sampled-triple completeness with an exact factorized proof on the finite ideal logical three-register encoding surface."
+target_status: exact-support
+runtime_budget: "single bounded recovery block"
+cycle_count: 1
+block_count: 1
+active_route: per_encoding_factorization_plus_logical_operator_basis_certificate
+hard_residual: null
+base_commit: "81ef8341b11de9c9f984bd75dbac5605297221fa"
+files_touched:
+  - docs/TELEPORTATION_THREE_REGISTER_CROSS_ENCODING_NOTE.md
+  - scripts/frontier_teleportation_three_register_cross_encoding.py
+  - logs/runner-cache/frontier_teleportation_three_register_cross_encoding.txt
+  - .claude/science/physics-loops/teleportation-three-register-cross-encoding-exact-20260719/
+open_imports: []
+no_go_routes:
+  - sampled_triples_as_completeness_proof
+  - random_state_trials_as_input_space_proof
+trace_gate_classification: direct_blocker_closure
+review_disposition: "PASS WITH BOUNDED CLAIMS"
+pr_status: review_clean
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5539"
+next_exact_action: "Land reviewed PR #5539; after landing, route the changed source claim through independent audit."
+stop_condition: "The source, runner cache, and physics-loop packet are review-clean on the finite ideal logical claim boundary."

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Three-register cross-encoding taste-qubit teleportation audit.
+"""Three-register cross-encoding taste-qubit teleportation certificate.
 
-Status: exact-support telemetry for the ideal logical three-register
-cross-encoding map.  It extends the bounded cross-encoding audit from two
+Scope: exact finite-algebra support for the ideal logical three-register
+cross-encoding map.  It extends the bounded cross-encoding check from two
 independently chosen
 encodings to three independently chosen encodings:
 
@@ -15,9 +15,11 @@ factorization used by the protocol, portability, and cross-encoding runners:
 
     C^(side^dim) = C^((side/2)^dim cells) tensor C^(2^dim tastes)
 
-This is ordinary quantum state teleportation only.  It does not claim matter
-transport, mass transfer, charge transfer, energy transfer, object transport,
-or faster-than-light signaling.
+This checks only the ideal finite-dimensional logical teleportation identity.
+It does not claim a physical teleportation implementation, apparatus or
+resource preparation, Hamiltonian or matter transport, noise tolerance,
+durable-record production, an unbounded-lattice result, mass, charge, or
+energy transfer, object transport, or faster-than-light signaling.
 """
 
 from __future__ import annotations
@@ -94,6 +96,39 @@ class BellProjectorMetrics:
     resolution_error: float
     idempotence_error: float
     orthogonality_error: float
+
+
+@dataclasses.dataclass(frozen=True)
+class LogicalTeleportationCertificate:
+    bell_projector_rank_one_count: int
+    bell_projector_resolution_error: float
+    bell_projector_idempotence_error: float
+    bell_projector_orthogonality_error: float
+    bell_projector_outer_product_error: float
+    branch_map_error: float
+    branch_channel_basis_error: float
+    corrected_branch_map_error: float
+    corrected_channel_basis_error: float
+    pauli_twirl_basis_error: float
+
+
+@dataclasses.dataclass(frozen=True)
+class StructuralCertificate:
+    total_encodings: int
+    expected_encodings: int
+    unique_encoding_count: int
+    implied_ordered_triples: int
+    expected_ordered_triples: int
+    certified_ordered_triples: int
+    isometry_pass_count: int
+    canonical_pauli_pass_count: int
+    max_isometry_error: float
+    max_projector_error: float
+    max_canonical_z_error: float
+    max_canonical_x_error: float
+    max_pauli_square_error: float
+    max_pauli_anticommutator_error: float
+    logical: LogicalTeleportationCertificate
 
 
 @dataclasses.dataclass(frozen=True)
@@ -375,6 +410,15 @@ def leakage_norm(op: np.ndarray, indices: tuple[int, int]) -> float:
 
 def max_abs(op: np.ndarray) -> float:
     return float(np.max(np.abs(op)))
+
+
+def encoding_isometry(encoding: Encoding) -> np.ndarray:
+    """Return V_E with the ordered encoded site states as its columns."""
+
+    isometry = np.zeros((encoding.geometry.n_sites, 2), dtype=complex)
+    for logical_bit, site_index in enumerate(encoding.indices):
+        isometry[site_index, logical_bit] = 1.0
+    return isometry
 
 
 def signed_pauli_match(
@@ -703,6 +747,220 @@ def teleportation_metrics_pass(metrics: TeleportationMetrics, tolerance: float) 
         and metrics.max_pairwise_pre_message_distance < tolerance
         and metrics.max_corrected_trace_error < tolerance
         and set(metrics.outcomes_seen) == set(OUTCOME_ORDER)
+    )
+
+
+def logical_teleportation_certificate(
+    tolerance: float,
+) -> LogicalTeleportationCertificate:
+    """Check the two-dimensional theorem independently of the encodings.
+
+    Bell-projector algebra is checked directly in the logical basis.  Branch
+    Kraus maps, corrected channels, and the Pauli twirl are checked on the four
+    matrix units spanning the full 2x2 operator space, so no random-state
+    completeness assumption enters the factorized certificate.
+    """
+
+    phi = np.array([1.0, 0.0, 0.0, 1.0], dtype=complex) / np.sqrt(2.0)
+    phi_matrix = phi.reshape(2, 2)
+    projectors: list[np.ndarray] = []
+    rank_one_count = 0
+    max_outer_product_error = 0.0
+    max_branch_map_error = 0.0
+    max_branch_channel_basis_error = 0.0
+    max_corrected_branch_map_error = 0.0
+    max_corrected_channel_basis_error = 0.0
+
+    matrix_units: list[np.ndarray] = []
+    for row in range(2):
+        for column in range(2):
+            matrix_unit = np.zeros((2, 2), dtype=complex)
+            matrix_unit[row, column] = 1.0
+            matrix_units.append(matrix_unit)
+
+    branch_paulis: list[np.ndarray] = []
+    for z_bit, x_bit in OUTCOME_ORDER:
+        z_power = Z2 if z_bit else I2
+        x_power = X2 if x_bit else I2
+        branch_pauli = x_power @ z_power
+        correction = z_power @ x_power
+        bell_state = np.kron(I2, branch_pauli) @ phi
+        projector = bell_projector(Z2, X2, Z2, X2, z_bit, x_bit)
+        projectors.append(projector)
+        branch_paulis.append(branch_pauli)
+
+        rank_one_count += int(np.linalg.matrix_rank(projector, tol=tolerance) == 1)
+        max_outer_product_error = max(
+            max_outer_product_error,
+            max_abs(projector - np.outer(bell_state, bell_state.conj())),
+        )
+
+        branch_map = np.einsum(
+            "ar,rb->ba",
+            bell_state.reshape(2, 2).conj(),
+            phi_matrix,
+        )
+        max_branch_map_error = max(
+            max_branch_map_error,
+            max_abs(branch_map - 0.5 * branch_pauli),
+        )
+        max_corrected_branch_map_error = max(
+            max_corrected_branch_map_error,
+            max_abs(correction @ branch_map - 0.5 * I2),
+        )
+
+        for matrix_unit in matrix_units:
+            branch_channel = branch_map @ matrix_unit @ branch_map.conj().T
+            expected_branch_channel = (
+                0.25 * branch_pauli @ matrix_unit @ branch_pauli.conj().T
+            )
+            max_branch_channel_basis_error = max(
+                max_branch_channel_basis_error,
+                max_abs(branch_channel - expected_branch_channel),
+            )
+            corrected_channel = (
+                correction @ branch_channel @ correction.conj().T
+            )
+            max_corrected_channel_basis_error = max(
+                max_corrected_channel_basis_error,
+                max_abs(corrected_channel - 0.25 * matrix_unit),
+            )
+
+    projector_metrics = bell_projector_metrics(Z2, X2, Z2, X2)
+    max_pauli_twirl_basis_error = 0.0
+    for matrix_unit in matrix_units:
+        twirled = sum(
+            (
+                0.25
+                * pauli
+                @ matrix_unit
+                @ pauli.conj().T
+            )
+            for pauli in branch_paulis
+        )
+        expected = 0.5 * np.trace(matrix_unit) * I2
+        max_pauli_twirl_basis_error = max(
+            max_pauli_twirl_basis_error,
+            max_abs(twirled - expected),
+        )
+
+    return LogicalTeleportationCertificate(
+        bell_projector_rank_one_count=rank_one_count,
+        bell_projector_resolution_error=projector_metrics.resolution_error,
+        bell_projector_idempotence_error=projector_metrics.idempotence_error,
+        bell_projector_orthogonality_error=projector_metrics.orthogonality_error,
+        bell_projector_outer_product_error=max_outer_product_error,
+        branch_map_error=max_branch_map_error,
+        branch_channel_basis_error=max_branch_channel_basis_error,
+        corrected_branch_map_error=max_corrected_branch_map_error,
+        corrected_channel_basis_error=max_corrected_channel_basis_error,
+        pauli_twirl_basis_error=max_pauli_twirl_basis_error,
+    )
+
+
+def build_structural_certificate(
+    encodings_by_geometry: dict[Geometry, list[Encoding]],
+    tolerance: float,
+) -> StructuralCertificate:
+    """Exhaust the local premises whose Cartesian product defines triples."""
+
+    total_encodings = 0
+    expected_encodings = 0
+    encoding_keys: set[tuple[int, int, tuple[int, int]]] = set()
+    implied_ordered_triples = 0
+    expected_ordered_triples = 0
+    isometry_pass_count = 0
+    canonical_pauli_pass_count = 0
+    max_isometry_error = 0.0
+    max_projector_error = 0.0
+    max_canonical_z_error = 0.0
+    max_canonical_x_error = 0.0
+    max_pauli_square_error = 0.0
+    max_pauli_anticommutator_error = 0.0
+
+    for geometry, encodings in encodings_by_geometry.items():
+        expected_geometry_encodings = (
+            geometry.n_cells * geometry.dim * (2 ** (geometry.dim - 1))
+        )
+        expected_encodings += expected_geometry_encodings
+        expected_ordered_triples += expected_geometry_encodings**3
+        implied_ordered_triples += len(encodings) ** 3
+        for encoding in encodings:
+            total_encodings += 1
+            encoding_keys.add(
+                (geometry.dim, geometry.side, encoding.indices)
+            )
+            isometry = encoding_isometry(encoding)
+            projector = isometry @ isometry.conj().T
+            isometry_error = max_abs(isometry.conj().T @ isometry - I2)
+            projector_error = max_abs(projector @ projector - projector)
+            max_isometry_error = max(max_isometry_error, isometry_error)
+            max_projector_error = max(max_projector_error, projector_error)
+            if isometry_error < tolerance and projector_error < tolerance:
+                isometry_pass_count += 1
+
+            canonical_z = encoding.canonical_z_logical
+            canonical_x = encoding.canonical_adapted_x_logical
+            z_error = max_abs(canonical_z - Z2)
+            x_error = max_abs(canonical_x - X2)
+            square_error = max(
+                max_abs(canonical_z @ canonical_z - I2),
+                max_abs(canonical_x @ canonical_x - I2),
+            )
+            anticommutator_error = max_abs(
+                canonical_z @ canonical_x + canonical_x @ canonical_z
+            )
+            max_canonical_z_error = max(max_canonical_z_error, z_error)
+            max_canonical_x_error = max(max_canonical_x_error, x_error)
+            max_pauli_square_error = max(max_pauli_square_error, square_error)
+            max_pauli_anticommutator_error = max(
+                max_pauli_anticommutator_error,
+                anticommutator_error,
+            )
+            if max(z_error, x_error, square_error, anticommutator_error) < tolerance:
+                canonical_pauli_pass_count += 1
+
+    logical = logical_teleportation_certificate(tolerance)
+    logical_pass = bool(
+        logical.bell_projector_rank_one_count == len(OUTCOME_ORDER)
+        and logical.bell_projector_resolution_error < tolerance
+        and logical.bell_projector_idempotence_error < tolerance
+        and logical.bell_projector_orthogonality_error < tolerance
+        and logical.bell_projector_outer_product_error < tolerance
+        and logical.branch_map_error < tolerance
+        and logical.branch_channel_basis_error < tolerance
+        and logical.corrected_branch_map_error < tolerance
+        and logical.corrected_channel_basis_error < tolerance
+        and logical.pauli_twirl_basis_error < tolerance
+    )
+    local_premises_pass = bool(
+        total_encodings == expected_encodings
+        and len(encoding_keys) == total_encodings
+        and implied_ordered_triples == expected_ordered_triples
+        and isometry_pass_count == total_encodings
+        and canonical_pauli_pass_count == total_encodings
+        and logical_pass
+    )
+    certified_ordered_triples = (
+        expected_ordered_triples if local_premises_pass else 0
+    )
+
+    return StructuralCertificate(
+        total_encodings=total_encodings,
+        expected_encodings=expected_encodings,
+        unique_encoding_count=len(encoding_keys),
+        implied_ordered_triples=implied_ordered_triples,
+        expected_ordered_triples=expected_ordered_triples,
+        certified_ordered_triples=certified_ordered_triples,
+        isometry_pass_count=isometry_pass_count,
+        canonical_pauli_pass_count=canonical_pauli_pass_count,
+        max_isometry_error=max_isometry_error,
+        max_projector_error=max_projector_error,
+        max_canonical_z_error=max_canonical_z_error,
+        max_canonical_x_error=max_canonical_x_error,
+        max_pauli_square_error=max_pauli_square_error,
+        max_pauli_anticommutator_error=max_pauli_anticommutator_error,
+        logical=logical,
     )
 
 
@@ -1075,6 +1333,78 @@ def print_requirement_summary(requirements: RequirementSummary) -> None:
     )
 
 
+def print_structural_certificate(certificate: StructuralCertificate) -> None:
+    logical = certificate.logical
+    print("Exhaustive factorized structural certificate:")
+    print(
+        "  encoding supports enumerated from the closed-form count: "
+        f"{certificate.total_encodings}/{certificate.expected_encodings}"
+    )
+    print(
+        "  ordered encoding isometries certified: "
+        f"{certificate.isometry_pass_count}/{certificate.total_encodings}"
+    )
+    print(
+        "  distinct ordered encoding supports certified: "
+        f"{certificate.unique_encoding_count}/{certificate.total_encodings}"
+    )
+    print(
+        "  canonical logical Pauli pairs certified: "
+        f"{certificate.canonical_pauli_pass_count}/{certificate.total_encodings}"
+    )
+    print(
+        "  ordered A/R/B triples covered by the factorized theorem: "
+        f"{certificate.certified_ordered_triples}/"
+        f"{certificate.expected_ordered_triples}"
+    )
+    print(f"  max V_E^dag V_E-I error: {certificate.max_isometry_error:.3e}")
+    print(f"  max P_E^2-P_E error: {certificate.max_projector_error:.3e}")
+    print(f"  max canonical Z_E-Z error: {certificate.max_canonical_z_error:.3e}")
+    print(f"  max canonical X_E-X error: {certificate.max_canonical_x_error:.3e}")
+    print(f"  max logical Pauli square error: {certificate.max_pauli_square_error:.3e}")
+    print(
+        "  max logical Pauli anticommutator error: "
+        f"{certificate.max_pauli_anticommutator_error:.3e}"
+    )
+    print(
+        "  rank-one logical Bell projectors certified: "
+        f"{logical.bell_projector_rank_one_count}/{len(OUTCOME_ORDER)}"
+    )
+    print(
+        "  max logical Bell-projector resolution error: "
+        f"{logical.bell_projector_resolution_error:.3e}"
+    )
+    print(
+        "  max logical Bell-projector idempotence error: "
+        f"{logical.bell_projector_idempotence_error:.3e}"
+    )
+    print(
+        "  max logical Bell-projector orthogonality error: "
+        f"{logical.bell_projector_orthogonality_error:.3e}"
+    )
+    print(
+        "  max logical Bell-projector outer-product error: "
+        f"{logical.bell_projector_outer_product_error:.3e}"
+    )
+    print(f"  max logical Bell-branch map error: {logical.branch_map_error:.3e}")
+    print(
+        "  max logical branch-channel error on the matrix-unit basis: "
+        f"{logical.branch_channel_basis_error:.3e}"
+    )
+    print(
+        "  max corrected logical branch-map error: "
+        f"{logical.corrected_branch_map_error:.3e}"
+    )
+    print(
+        "  max corrected channel error on the matrix-unit basis: "
+        f"{logical.corrected_channel_basis_error:.3e}"
+    )
+    print(
+        "  max Pauli-twirl error on the matrix-unit basis: "
+        f"{logical.pauli_twirl_basis_error:.3e}"
+    )
+
+
 def print_summary(
     geometries: list[Geometry],
     skipped: list[tuple[int, int, str]],
@@ -1085,6 +1415,7 @@ def print_summary(
     fixed_bell_summary: MapSummary,
     bob_fixed_summary: MapSummary,
     wrong_resource_summary: MapSummary,
+    structural_certificate: StructuralCertificate,
     dims: tuple[int, ...],
     sides: tuple[int, ...],
     n_trials: int,
@@ -1092,8 +1423,8 @@ def print_summary(
     tolerance: float,
     max_triples_per_geometry: int,
 ) -> bool:
-    print("THREE-REGISTER CROSS-ENCODING TASTE-QUBIT TELEPORTATION AUDIT")
-    print("Status: exact-support logical audit; quantum state teleportation only")
+    print("THREE-REGISTER CROSS-ENCODING TASTE-QUBIT TELEPORTATION CERTIFICATE")
+    print("Scope: exact finite logical algebra; ideal state-transfer identity only")
     print()
     print(f"Requested dimensions: {dims}")
     print(f"Requested side lengths: {sides}")
@@ -1119,6 +1450,9 @@ def print_summary(
             f"  dim={geometry.dim} side={geometry.side}: "
             f"{n_encodings} encodings, {n_encodings ** 3} possible A/R/B triples"
         )
+    print()
+
+    print_structural_certificate(structural_certificate)
     print()
 
     print_requirement_summary(requirements)
@@ -1156,13 +1490,48 @@ def print_summary(
     )
     print()
     print("Claim boundary:")
-    print("  This is a finite algebraic audit on ideal encoded taste qubits.")
+    print("  This is a finite algebraic certificate on ideal encoded taste qubits.")
     print("  It does not derive apparatus dynamics, durable records, resource")
     print("  preparation, Hamiltonian transport, noise tolerance, matter transfer,")
     print("  object transport, charge transfer, mass transfer, energy transfer,")
-    print("  or FTL signaling.")
+    print("  physical teleportation, an unbounded-lattice result, or FTL signaling.")
 
+    logical = structural_certificate.logical
     pass_checks = {
+        "exhaustive encoding-isometry premises": (
+            structural_certificate.isometry_pass_count
+            == structural_certificate.total_encodings
+            == structural_certificate.expected_encodings
+        ),
+        "distinct ordered encoding supports": (
+            structural_certificate.unique_encoding_count
+            == structural_certificate.total_encodings
+        ),
+        "exhaustive canonical logical-Pauli premises": (
+            structural_certificate.canonical_pauli_pass_count
+            == structural_certificate.total_encodings
+        ),
+        "logical Bell-projector algebra": (
+            logical.bell_projector_rank_one_count == len(OUTCOME_ORDER)
+            and logical.bell_projector_resolution_error < tolerance
+            and logical.bell_projector_idempotence_error < tolerance
+            and logical.bell_projector_orthogonality_error < tolerance
+            and logical.bell_projector_outer_product_error < tolerance
+        ),
+        "logical branch and correction channels on operator basis": (
+            logical.branch_map_error < tolerance
+            and logical.branch_channel_basis_error < tolerance
+            and logical.corrected_branch_map_error < tolerance
+            and logical.corrected_channel_basis_error < tolerance
+        ),
+        "logical Pauli twirl on operator basis": (
+            logical.pauli_twirl_basis_error < tolerance
+        ),
+        "factorized ordered-triple coverage": (
+            structural_certificate.certified_ordered_triples
+            == structural_certificate.expected_ordered_triples
+            == requirements.total_possible_triples
+        ),
         "axis-adapted three-register maps": adapted_summary.unexpected_results == 0
         and adapted_summary.teleportation_pass == adapted_summary.total_cases,
         "axis-adapted all Bell outcomes": adapted_summary.outcomes_seen == set(OUTCOME_ORDER),
@@ -1255,6 +1624,10 @@ def main() -> int:
         tolerance=args.tolerance,
         max_triples_per_geometry=args.max_triples_per_geometry,
     )
+    structural_certificate = build_structural_certificate(
+        encodings_by_geometry,
+        tolerance=args.tolerance,
+    )
     ok = print_summary(
         geometries=geometries,
         skipped=skipped,
@@ -1265,6 +1638,7 @@ def main() -> int:
         fixed_bell_summary=fixed_bell_summary,
         bob_fixed_summary=bob_fixed_summary,
         wrong_resource_summary=wrong_resource_summary,
+        structural_certificate=structural_certificate,
         dims=dims,
         sides=sides,
         n_trials=args.trials,

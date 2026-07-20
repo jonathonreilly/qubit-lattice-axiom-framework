@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_holomorphic_reality_cp_census_2026_07_20.py
+runner_sha256: d0a8f7ec4e750fbc76a03ad7e9451158c07b0302854214e3d2d081a0ce72d7e5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 25.13
+status: ok
+----- stdout -----
+PASS G1 - |G_amb|=768==768; every U commutes with D2 (max int dev 0==0, witness TR[(1,0,0)] dev 2>0 non-vacuous); [FLOAT] every U commutes with J_full (max 0.0e+00<1e-9): complex-linear action
+PASS G2 - [FLOAT] J_full^2=-I (||J^2+I||=4.4e-16<1e-9), antisym (||J+J^T||=0.0e+00); ANTI-PROXY REJECTOR: sqrt(m)->1 proxy fails J^2=-I (||.||=0.625>1e-6) and differs from J_full (0.126>1e-6) -- shell normalizers load-bearing, J_full no sign proxy
+PASS G3 - [FLOAT] +i eigenspace dim 32==32 (holo W) and -i dim 32==32 (anti-holo H_-), sum 64==64
+PASS G4 - EXACT: S_eps D2 S_eps == -D2 (S_eps anticommutes with the adjacency); != +D2 (D2 nonzero)
+PASS G5 - S_eps normalizes G_amb: every W=S_eps U S_eps commutes with D2 (dev 0==0) and lies in G_amb; sigma is a BIJECTION of the 768 (|image|==768); REJECTOR sigma moves 384>0 elements and S_eps not in G_amb (True)
+PASS G6 - EXACT: every square U_g^2 centralizes S_eps (S_eps U_g^2 S_eps == U_g^2 for all 768; S_eps^2==I: True); DISCRIMINATOR: only 384 of 768 group elements centralize S_eps -- 384 do NOT (0<384<768), so the squares land specifically in C(S_eps), not because S_eps is central
+PASS G7 - [FLOAT] landed Unit-9 identity S_eps J_full S_eps == -J_full (||.+J||=0.0e+00<1e-9); REJECTOR != +J_full (||.-J||=0.748>1e-6): the sign reversal is real
+PASS G8 - [FLOAT] S_eps carries W -> H_-: T=Bm^H S_eps B is 32x32 rank 32==32 and unitary (||T^H T - I||=8.9e-16<1e-9)
+PASS G9 - [FLOAT] anti-holo restriction == conj(holo restriction) over ALL 768: max|tr(Bm^H U Bm) - conj(tr(B^H U B))|=0.0e+00<1e-9 (H_- is the complex conjugate of W)
+PASS G10 - A = Sum_g tr(U_g^2) = 1536 == 1536 == 2*768 [EXACT INTEGER: U^2 signed perm]; REJECTORS A != 768, A != 2304
+PASS G11 - [FLOAT] B = Sum_g tr(U_g^2 J_full) = 0.00e+00 (|B|<1e-9), and EACH term individually zero (max_g|tr(U_g^2 J_full)|=0.0e+00<1e-9): forced by G6 (U_g^2 centralizes S_eps) + G7 (S_eps J S_eps=-J) -> tr(U_g^2 J)=tr(U_g^2 S_eps J S_eps)=-tr(U_g^2 J)=0. DISCRIMINATOR: the S_eps-COMMUTING insertion I gives Sum_g tr(U_g^2 . I)=A=1536!=0, per-term max 64==64>0, so the vanishing is specific to J anticommuting with S_eps, not an all-traces-zero artifact
+PASS G12 - FS_W = ((A - iB)/2).real/|G| = 1.000000 == 1; REJECTORS != 0, != 2. (A - iB)/2 = 768.0000+0.0000j == 768 == |G|*FS_W = 768
+PASS G13 - MEMORY-BUDGET: commutant from MINIMAL generating set (4 gens, 1<..<=10, closure 768==768); generator-commutant dim 5==5 (OOM-avoiding kron over ~7 gens, not 768)
+PASS G14 - commutant dim 5==5 (clean sv-gap 1.4e+14>1e6); 5 idempotents orthogonal (Sum P=I 1.3e-15, P^2=P 3.9e-16, P_iP_j=0 2.1e-16), sorted ranks [4, 4, 6, 6, 12]==[4,4,6,6,12] sum 32; REJECTORS != [4,4,4,8,12], != [2,6,6,6,12]
+PASS G15 - [FLOAT] per-constituent FS_k round to integers (residual 5.9e-17<1e-6), sorted [0, 0, 0, 0, 1]==[0,0,0,0,1], sum 1==1; the unique +1 is the rank-12 constituent; REJECTORS != [0,0,0,0,0], != [1,1,1,1,1], != [0,0,0,1,1]
+PASS G16 - [FLOAT] rank-12 constituent self-conjugate (max|Im chi_12|=2.7e-15<1e-6); the four rank-4/6 constituents NOT self-conjugate (min max|Im chi|=1.732>1e-3): a real 12 vs four genuinely complex modes
+PASS G17 - CONSISTENCY: Sum_k FS_k = 1 == FS_W = 1 (both == 1): per-constituent census agrees with the exact-integer bridge
+PASS G18 - SOURCE PIN Unit 9: common-sign-orbit note contains `S_eps J_full S_eps = -J_full`
+PASS G19 - SOURCE PIN Unit 12: holomorphic-rep note contains `4 + 4 + 6 + 6 + 12 = 32`
+PASS G20 - SELF-NOTE DEPENDENCY DISCIPLINE: total KCPT-links 2==2 (Unit12 1==1, Unit9 1==1); Unit8/10/11 linked 0/0/0 == 0/0/0 (backticked only, never `](...)`)
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

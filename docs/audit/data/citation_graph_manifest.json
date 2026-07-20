@@ -1,6 +1,6 @@
 {
- "edge_count": 14870,
- "node_count": 4433,
+ "edge_count": 14923,
+ "node_count": 4445,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15202,6 +15202,18 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "wilson_staggered_block_saturated_product_reference_split_handoff_scalar_next_activity_boundary_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "46ec9d33b2c9",
+   "out_degree": 5
+  },
+  "wilson_staggered_combined_haar_gaussian_reference_split_residual_colored_interpolation_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "6845f9904b64",
+   "out_degree": 4
+  },
+  "wilson_staggered_completed_joint_two_mark_covariance_nonlinear_source_output_tube_bounded_theorem_note_2026-07-13": {
+   "deps_hash": "4a54902184ba",
+   "out_degree": 4
+  },
   "wilson_staggered_constrained_fiber_dobrushin_and_raw_rg_unit_directions_bounded_theorem_note_2026-07-12": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -15222,8 +15234,36 @@
    "deps_hash": "577f6d5f534e",
    "out_degree": 1
   },
+  "wilson_staggered_enhanced_completed_joint_running_local_jet_target_to_next_product_source_return_bounded_theorem_note_2026-07-13": {
+   "deps_hash": "ebe9ed27d33a",
+   "out_degree": 5
+  },
+  "wilson_staggered_enhanced_moment_generated_base_decorated_factor_return_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "87f2893d623d",
+   "out_degree": 5
+  },
+  "wilson_staggered_external_shortest_schur_center_haar_tail_projected_quadratic_weyl_conditional_reference_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "9134fad0e314",
+   "out_degree": 5
+  },
+  "wilson_staggered_extracted_s2_future_center_product_reference_counterterm_persistent_gap_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "6e3ed1b349dd",
+   "out_degree": 3
+  },
+  "wilson_staggered_fixed_background_correlated_berezin_cross_wick_cluster_locality_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "ec2c0824a9b3",
+   "out_degree": 4
+  },
   "wilson_staggered_gaussian_adapted_berezin_handoff_and_shortest_quadratic_center_bounded_theorem_note_2026-07-12": {
    "deps_hash": "1fc586e7517c",
+   "out_degree": 4
+  },
+  "wilson_staggered_joint_boundary_canonical_future_atom_superstrong_strong_coarse_shadow_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "13ca3fafbee8",
+   "out_degree": 5
+  },
+  "wilson_staggered_joint_product_reference_determinant_counterterm_outer_haar_colored_response_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "de821b3ea4dc",
    "out_degree": 4
   },
   "wilson_staggered_k_retaining_marked_attachment_strong_weak_contraction_bounded_theorem_note_2026-07-12": {
@@ -15245,6 +15285,14 @@
   "wilson_staggered_retained_grassmann_two_layer_kp_polymer_norm_bounded_theorem_note_2026-07-12": {
    "deps_hash": "2fa9e03034d0",
    "out_degree": 2
+  },
+  "wilson_staggered_scalar_product_reference_completed_joint_outer_haar_actual_output_atom_return_bounded_theorem_note_2026-07-13": {
+   "deps_hash": "5e543e4639cb",
+   "out_degree": 4
+  },
+  "wilson_staggered_site_block_syntactic_support_tree_span_marked_response_return_bounded_theorem_note_2026-07-12": {
+   "deps_hash": "218b7662e4dd",
+   "out_degree": 5
   },
   "wilson_staggered_split_derivative_and_unlocalized_cauchy_certificate_boundary_bounded_theorem_note_2026-07-12": {
    "deps_hash": "fc32ab3a6dde",

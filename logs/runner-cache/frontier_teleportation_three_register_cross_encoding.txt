@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_three_register_cross_encoding.py
-runner_sha256: 55f3b925cbee375c4df63e7387dc53c867fc511817d26f271039d3dcc9f4d59f
+runner_sha256: 2f8368e032383845fa4ed68eb294906e3ca2e001e3a71d26df7c77ae4f33d3ad
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 12.71
+elapsed_sec: 3.27
 status: ok
 ----- stdout -----
-THREE-REGISTER CROSS-ENCODING TASTE-QUBIT TELEPORTATION AUDIT
-Status: exact-support logical audit; quantum state teleportation only
+THREE-REGISTER CROSS-ENCODING TASTE-QUBIT TELEPORTATION CERTIFICATE
+Scope: exact finite logical algebra; quantum state teleportation only
 
 Requested dimensions: (1, 2, 3)
 Requested side lengths: (2, 4)
@@ -25,6 +25,29 @@ Encoding totals:
   dim=2 side=4: 16 encodings, 4096 possible A/R/B triples
   dim=3 side=2: 12 encodings, 1728 possible A/R/B triples
   dim=3 side=4: 96 encodings, 884736 possible A/R/B triples
+
+Exhaustive factorized structural certificate:
+  encoding supports enumerated from the closed-form count: 131/131
+  ordered encoding isometries certified: 131/131
+  distinct ordered encoding supports certified: 131/131
+  canonical logical Pauli pairs certified: 131/131
+  ordered A/R/B triples covered by the factorized theorem: 890633/890633
+  max V_E^dag V_E-I error: 0.000e+00
+  max P_E^2-P_E error: 0.000e+00
+  max canonical Z_E-Z error: 0.000e+00
+  max canonical X_E-X error: 0.000e+00
+  max logical Pauli square error: 0.000e+00
+  max logical Pauli anticommutator error: 0.000e+00
+  rank-one logical Bell projectors certified: 4/4
+  max logical Bell-projector resolution error: 0.000e+00
+  max logical Bell-projector idempotence error: 0.000e+00
+  max logical Bell-projector orthogonality error: 0.000e+00
+  max logical Bell-projector outer-product error: 1.110e-16
+  max logical Bell-branch map error: 1.110e-16
+  max logical branch-channel error on the matrix-unit basis: 1.110e-16
+  max corrected logical branch-map error: 1.110e-16
+  max corrected channel error on the matrix-unit basis: 1.110e-16
+  max Pauli-twirl error on the matrix-unit basis: 0.000e+00
 
 Three-register requirement classification:
   geometry: dim side surveyed/possible triples
@@ -190,13 +213,20 @@ Interpretation:
   If R and B differ, the Bell resource requires an explicit R->B site partial isometry; a wrong logical B-side conversion preserves pre-message no-signaling but fails post-message fidelity.
 
 Claim boundary:
-  This is a finite algebraic audit on ideal encoded taste qubits.
+  This is a finite algebraic certificate on ideal encoded taste qubits.
   It does not derive apparatus dynamics, durable records, resource
   preparation, Hamiltonian transport, noise tolerance, matter transfer,
   object transport, charge transfer, mass transfer, energy transfer,
   or FTL signaling.
 
 Acceptance gates:
+  exhaustive encoding-isometry premises: PASS
+  distinct ordered encoding supports: PASS
+  exhaustive canonical logical-Pauli premises: PASS
+  logical Bell-projector algebra: PASS
+  logical branch and correction channels on operator basis: PASS
+  logical Pauli twirl on operator basis: PASS
+  factorized ordered-triple coverage: PASS
   axis-adapted three-register maps: PASS
   axis-adapted all Bell outcomes: PASS
   axis-adapted Bob pre-message input-independence: PASS

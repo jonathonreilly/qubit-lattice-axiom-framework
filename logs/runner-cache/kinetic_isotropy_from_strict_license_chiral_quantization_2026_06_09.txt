@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py
-runner_sha256: a6cccdc0a027ed2614d63dc18aa256e1f7445596253d97263a7200475d2bf5f6
+runner_sha256: ce9fb07a68019ea5c30751df3c932424383576bd43c998f94301f06c26433883
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.55
+elapsed_sec: 1.53
 status: ok
 ----- stdout -----
 
@@ -20,7 +20,7 @@ PART B -- the monomial lemma (exact case analysis; the quantization core)
   [PASS] B3 monomial dispersion: v = u'/(i u) = n exactly, n in {-1, 0, +1}  --  velocity quantized to integer edges/tick; |v| <= radius and v in Z
   [PASS] B4 radius-r cascade: top coefficient is again an extreme product (conj(a)*d)  --  monomial z^n with |n| <= r in general
 
-PART C -- strictness: Hamiltonian-generated ticks violate the retained license
+PART C -- strictness: Hamiltonian-generated ticks violate the stated radius-1 condition
 ==============================================================================
   [PASS] C1 one Hamiltonian tick leaks to distance 2: A_2 = -(a*kappa)^2/8 + O(kappa^4) != 0  --  A_2 series = -a_tau**2*kappa**2/8
   [PASS] C2 distance-2 leak is nonzero for every sampled nonzero hopping  --  |U[2,0]| = ['1.25e-03', '3.06e-02', '1.15e-01']

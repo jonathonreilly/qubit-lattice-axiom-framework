@@ -1,33 +1,32 @@
 #!/usr/bin/env python3
 """
-The boost-cone-automorphism and antiperiodic-tau boundary-datum routes to
-eps = e_4^2 = -1 are checked no-go boundaries: the boost route is circular and
-the boundary datum is sign-neutral.
+Finite instances of proposed boost-cone-automorphism and antiperiodic-tau
+boundary-datum routes to eps = e_4^2 = -1 are counterchecked here.  These
+instances neither exhaust the routes nor establish a no-go boundary.
 
 Companion to RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23. That note showed the
 checked record-tick channels are signature-neutral and named one harder open
-route: the metric sign eps=-1 is equivalent to a NON-COMPACT (boost) symmetry
-of the emergent record-causal cone, which one might hope to ride on the per-axis
-Z_2 (fermionic antiperiodic-tau) boundary datum. This runner checks that
-sub-route:
+proposal: after supplying the Lorentzian metric, compare its standard
+NON-COMPACT boost stabilizer with a candidate causal cone and seek a bridge
+from the per-axis Z_2 (fermionic antiperiodic-tau) boundary datum.  This runner
+does not establish the metric, an emergent record-causal cone, or equivalence
+between them.  It checks these finite sub-routes:
 
-  (A) the boost-cone-automorphism route is CIRCULAR -- a non-compact stabilizer
-      of a 4D cone exists iff one metric sign is -1, which IS eps=-1;
-  (B) after separately choosing the NN relation and tick index, the resulting
-      discrete reachability polytope has no hyperbolic boost symmetry: a boost
-      preserves the l1/l_inf cone only in 1+1 and shears it out for spatial
-      dim >= 2;
-  (C) the antiperiodic-tau datum is SIGN-NEUTRAL, not sign-bearing: its wrap
-      operator is compact (eigenvalues on the unit circle), the Z_2 wrap group
-      has no element squaring to -1, and the time<->space exchange map is
-      real-orthogonal (preserves the Euclidean form -> carries which-axis, never
-      what-signature). eps=-1 lives in a different object, the Clifford fiber
-      (the i in gamma^j = i gamma^E_j);
-  (D) the peripheral/unitary summand's phase is a compact SO(2) angle (on the
-      unit circle), not a boost (off the unit circle) -- the wrong generator
-      class for eps=-1.
+  (A) for the explicitly compared Euclidean and one-time Lorentzian diagonal
+      forms, invoking the target form's non-compact stabilizer as the source of
+      its sign is circular; no classification of all signatures is claimed;
+  (B) after separately choosing the NN relation and tick index, one explicit
+      hyperbolic boost family fails to preserve the discrete l1 reachability
+      polytope for spatial dim >= 2.  This is a counterexample to that proposed
+      boost action, not a classification of every cone automorphism;
+  (C) the instantiated base-scalar subgroup has no square root of -1 and the
+      selected real exchange preserves the Euclidean form.  The full matrix
+      group <C> is not exhausted: at L=6, (C^3)^2=-I, so projective/Clifford
+      attachment remains open;
+  (D) the sampled SO(2) matrix is not the sampled SO(1,1) boost.  No signature
+      conclusion or exhaustive peripheral classification is claimed.
 
-This maps checked sub-routes as circular or sign-neutral; it does NOT reduce,
+This records only the displayed finite outcomes; it does NOT reduce,
 amend, narrow, retire, or re-approve any registered primitive or derivation
 obligation, and adds no axiom/import. If the lane uses eps=-1, that sign remains
 a separate explicit conditional input with no premise weight.
@@ -44,7 +43,7 @@ def check(name, ok, detail=""):
 def banner(t): print("\n" + "=" * 76 + f"\n{t}\n" + "=" * 76)
 
 # ---------------------------------------------------------------------------
-banner("(A) boost-cone-automorphism route is CIRCULAR: non-compact stabilizer <=> eps=-1")
+banner("(A) compared Euclidean vs one-time Lorentzian stabilizers: target-sign circularity")
 # A diagonal metric diag(s0,s1,s2,s3) has a non-compact (boost) stabilizer
 # generator iff exactly one sign differs. Count antisymmetric-in-metric
 # generators that are BOOSTS (mix a + and a - axis) vs ROTATIONS (same sign).
@@ -54,11 +53,12 @@ def boost_count(sig):
 euclid = boost_count([1, 1, 1, 1]); lorentz = boost_count([-1, 1, 1, 1])
 check("Euclidean diag(+,+,+,+): 0 boost generators (compact O(4))", euclid == 0, f"boosts={euclid}")
 check("Lorentzian diag(-,+,+,+): 3 boost generators (non-compact O(3,1))", lorentz == 3, f"boosts={lorentz}")
-check("a non-compact boost stabilizer EXISTS iff a metric sign is -1, which IS eps=-1 (circular)",
-      euclid == 0 and lorentz == 3, "'derive eps from the boost' presupposes the boost = presupposes eps")
+check("for the compared pair, invoking the target stabilizer to derive its sign is circular",
+      euclid == 0 and lorentz == 3,
+      "Euclidean count 0 versus chosen one-time Lorentzian count 3; no all-signature classification")
 
 # ---------------------------------------------------------------------------
-banner("(B) the record-cone polytope admits only COMPACT automorphisms (boost shears it for dim>=2)")
+banner("(B) the selected hyperbolic boost fails on the chosen l1 reachability polytope for dim>=2")
 def boost_preserves_l1_cone(spatial_dim, eta=0.7):
     # forward cone {t>=0, ||x||_1 <= t}; boost in the (t,x1) plane.
     c, s = np.cosh(eta), np.sinh(eta)
@@ -78,15 +78,16 @@ def boost_preserves_l1_cone(spatial_dim, eta=0.7):
     return True
 check("boost preserves the l1 forward cone in 1+1 (spatial dim 1)", boost_preserves_l1_cone(1))
 check("boost SHEARS the l1 cone out for spatial dim 2 (NOT an automorphism)", not boost_preserves_l1_cone(2))
-check("boost SHEARS the l1 cone out for spatial dim 3 (the actual record-cone)", not boost_preserves_l1_cone(3))
-# the surviving checked linear symmetries are finite signed axis permutations (compact).
+check("boost SHEARS the chosen l1 cone out for spatial dim 3", not boost_preserves_l1_cone(3))
+# Signed spatial axis permutations are one explicitly checked finite subgroup.
+# This runner does not claim that they exhaust the full automorphism group.
 hyperoctahedral_count = (2 ** 3) * 6
-check("the checked record-cone symmetries are finite signed axis permutations x Z (compact)",
+check("signed spatial axis permutations form a finite l1-preserving subgroup (not an exhaustion claim)",
       hyperoctahedral_count == 48 and not boost_preserves_l1_cone(3),
-      "signed axis permutations preserve ||x||_1 and t; |B_3|=48 finite, no unbounded orbit")
+      "signed axis permutations preserve ||x||_1 and t; |B_3|=48")
 
 # ---------------------------------------------------------------------------
-banner("(C) the antiperiodic-tau datum is SIGN-NEUTRAL, not sign-bearing")
+banner("(C) selected base-scalar and exchange checks; the full matrix group remains open")
 L = 6
 # cyclic-shift-with-antiperiodic-sign C on Z_L: C e_k = e_{k+1}, with wrap sign -1 (C^L = -I).
 C = np.zeros((L, L), complex)
@@ -100,8 +101,11 @@ check("APBC wrap operator C (C^L = -I): eigenvalues lie EXACTLY on the unit circ
 # the Z_2 wrap group {+1,-1}: no element squares to -1 (so it cannot host e_4, e_4^2=-1)
 z2 = [1.0, -1.0]
 no_root = all(abs(g * g - (-1.0)) > 1e-12 for g in z2)
-check("the Z_2 wrap holonomy group {+1,-1} has NO element squaring to -1 (cannot host e_4)",
-      no_root, "eps=-1 needs e_4^2=-1, which lives in the Clifford fiber (i in gamma^j=i gamma^E_j), not the base Z_2")
+check("the base scalar subgroup {+1,-1} has NO element squaring to -1",
+      no_root, "this does not exhaust the full matrix group generated by C")
+full_group_root = np.allclose(np.linalg.matrix_power(np.linalg.matrix_power(C, 3), 2), -np.eye(L))
+check("OPEN-ROUTE WITNESS: at L=6, (C^3)^2 == -I in the full matrix group <C>",
+      full_group_root, "a projective/Clifford matter-attachment bridge is not tested here")
 # the time<->space exchange map W is real-orthogonal -> preserves the Euclidean (+,+,+,+) form
 rng_perm = [1, 0, 2, 3]                                  # swap axes 0<->1 (tau<->x1)
 P = np.eye(4)[rng_perm]
@@ -117,23 +121,23 @@ apbc_axis_label_only = (
     and abs(abs(np.linalg.det(W)) - 1.0) < 1e-12
     and np.isrealobj(W)
 )
-check("=> APBC carries WHICH axis wraps (axis-labeling), not WHAT signature in this check",
+check("=> the selected real exchange W carries an axis label without changing this Euclidean form",
       apbc_axis_label_only,
       "consistent with the SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER axis-supply scope")
 
 # ---------------------------------------------------------------------------
-banner("(D) the peripheral/unitary summand carries a COMPACT phase, not a boost")
+banner("(D) sampled SO(2) and SO(1,1) matrices have different spectra")
 theta = 0.5
 SO2 = np.array([[np.cos(theta), -np.sin(theta)], [np.sin(theta), np.cos(theta)]])   # compact rotation
 SO11 = np.array([[np.cosh(theta), np.sinh(theta)], [np.sinh(theta), np.cosh(theta)]])  # boost
 rot_ev = np.abs(np.linalg.eigvals(SO2)); boost_ev = np.abs(np.linalg.eigvals(SO11))
-check("a peripheral phase e^{i theta} is a COMPACT SO(2) angle: eigenvalues ON the unit circle (eps=+1)",
+check("the sampled SO(2) matrix has eigenvalues ON the unit circle",
       np.allclose(rot_ev, 1.0), f"|lambda(SO2)| = {np.round(rot_ev,4).tolist()}")
-check("a boost SO(1,1) has eigenvalues OFF the unit circle (e^{+-eta}, eps=-1) -- different generator class",
+check("the sampled SO(1,1) boost has eigenvalues OFF the unit circle",
       np.all(np.abs(boost_ev - 1.0) > 1e-6), f"|lambda(SO11)| = {np.round(boost_ev,4).tolist()}")
-check("=> even a nonzero peripheral phase is compact (eps=+1), so the peripheral summand cannot supply the boost",
+check("=> the sampled SO(2) matrix is not the sampled SO(1,1) boost",
       np.allclose(rot_ev, 1.0) and np.all(np.abs(boost_ev - 1.0) > 1e-6),
-      "forcing eps=-1 needs an unbounded/non-unitary generator OFF the peripheral |lambda|=1 summand")
+      "no signature conclusion or exhaustive peripheral claim")
 
 # ---------------------------------------------------------------------------
 banner("(E) corroboration: the on-site local algebra does not force the boost (boost-faith no-go)")
@@ -153,13 +157,12 @@ check("the faithful K=-i sigma/2 closes so(3,1) but REQUIRES the explicit i (not
 
 banner("SUMMARY")
 print("The named checked sub-routes to eps=e_4^2=-1 from the boundary datum / cone are mapped:")
-print("  (A) boost-cone-automorphism is CIRCULAR (boost-stabilizer EXISTS iff a metric sign is -1 = eps);")
-print("  (B) the chosen discrete reachability polytope has no hyperbolic boost symmetry")
-print("      (a hyperbolic boost shears the l1/l_inf cone for spatial dim >= 2);")
-print("  (C) the antiperiodic-tau datum is SIGN-NEUTRAL: compact unit-circle wrap, the Z_2")
-print("      group has no sqrt(-1), and the time<->space exchange is real-orthogonal")
-print("      (axis-labeling, not signature); eps=-1 lives in the Clifford fiber (the Wick i);")
-print("  (D) the peripheral phase is a compact SO(2) angle, not a boost (wrong generator class);")
+print("  (A) for the compared diagonal forms, using the target stabilizer to derive its sign is circular;")
+print("  (B) the selected hyperbolic boost fails to preserve the chosen l1 reachability polytope")
+print("      for spatial dim >= 2; no full automorphism-group classification is claimed;")
+print("  (C) the base scalar subgroup has no sqrt(-1), while the selected exchange is real-orthogonal;")
+print("      the full matrix group is open and explicitly has (C^3)^2=-I at L=6;")
+print("  (D) the sampled SO(2) matrix is not the sampled SO(1,1) boost; no exhaustive claim;")
 print("  (E) and independently, the on-site local algebra does not force the boost.")
 print("So eps=-1 remains a separate conditional input with no premise weight if the lane uses Lorentzian signature.")
 print("A remaining firewall-clean opening is an EMERGENT non-compact symmetry of the")

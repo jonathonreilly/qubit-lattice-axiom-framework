@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_site_license_tick_dichotomy_2026_06_09.py
-runner_sha256: 51946fa2582b4744663577ebf8c9cf3d894be46a41b3d94522262d0318e588f2
+runner_sha256: 387c41b45490c56e3673aeca2e4a786f48bdcce8e9d908918f72d063ed3c1cbb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 10.89
+elapsed_sec: 7.78
 status: ok
 ----- stdout -----
 

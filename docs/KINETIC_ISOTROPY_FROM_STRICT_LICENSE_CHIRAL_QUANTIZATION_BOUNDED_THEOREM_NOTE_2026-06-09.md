@@ -250,14 +250,15 @@ then quantizes that real-time ratio for the winding carrier; the OS0
 
 ## Consequence map (no status claim)
 
-The `audited_renaming` verdict on
+An archived prior audit rationale on
 [`MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md`](MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md)
-states: *"Re-audit if a retained bridge theorem derives the record/update tick
+said: *"Re-audit if a retained bridge theorem derives the record/update tick
 as the time coordinate rather than defining it."* Under P1-P4 the winding
 carrier transports exactly one edge per tick IN AMPLITUDE (not merely in
 reachability support): the tick-to-edge tie becomes the carrier's own
 transport fact rather than a definition. Consequence recorded only; re-audit
-decisions belong to the audit lane.
+decisions and the current row status belong to the audit lane. The quotation is
+historical context, not a source-authored current verdict.
 
 ## What this note does NOT claim
 
@@ -357,9 +358,9 @@ winding cell" and "winding is impossible in continuous time."
 - [PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md](PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md) — the strict-reading precedent (NOT a premise; cited for the reading only, since its D2 consumes the target primitive).
 - `SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md` — non-dependency source-side candidate discharge for the finite-period P1/P4 licensed-tick dichotomy residual. It consumes this note's monomial/winding-budget lemma when read as an all-period bridge, so it must not be represented as an upstream authority of this note.
 - [TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md](TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md) — source-side candidate discharge reducing the bare P2/P3 tick readings to spectrum-reflection transport plus the channel envelope.
-- `docs/KINETIC_BW_OS0_IDENTIFICATION_BRIDGE_INTERFACE_NO_GO_NOTE_2026-06-16.md` — downstream negative route-pruning packet: B-W is not automatic from unit real-time slope; a retained closure must derive the `r=1` OS0 readout/normalization rule.
-- [RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md](RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md) — the `phi` offset class (retained).
-- [MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md](MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md) — the consequence-map row (`audited_renaming`).
+- `docs/KINETIC_BW_OS0_IDENTIFICATION_BRIDGE_INTERFACE_NO_GO_NOTE_2026-06-16.md` — downstream negative route-pruning packet: B-W is not automatic from unit real-time slope; a future closure must derive the `r=1` OS0 readout/normalization rule.
+- [RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md](RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md) — the `phi` offset-class context; current status belongs to the audit lane.
+- [MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md](MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md) — the consequence-map row; current status belongs to the audit lane.
 
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency or of the kinetic-isotropy primitive. The

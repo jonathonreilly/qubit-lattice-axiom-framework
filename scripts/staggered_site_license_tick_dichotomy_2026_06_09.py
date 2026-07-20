@@ -53,8 +53,9 @@ degree-1 diagonal Bloch entries = distance-2 site hops -- both excluded by
 {scheme-forcing density + site license}.  Computed below.
 
 WHAT THIS DOES NOT CLAIM.  No audit status is set or predicted.  Conditional
-on (P1') the site-radius strict reading of the retained license + (P2) the
-unitary-tick reading + the block01 source row (landed, unaudited) + the
+on (P1') the site-radius strict reading of the currently unaudited finite-graph
+locality definition + (P2) the unitary-tick reading + the block01 source row
+(landed, unaudited) + the
 landed scheme-forcing surface (unaudited) + the KS per-axis tie where the
 per-axis realization is invoked (landed, unaudited) + 2-site periodicity
 (the staggered carrier's natural bipartite periodicity; larger unit cells are

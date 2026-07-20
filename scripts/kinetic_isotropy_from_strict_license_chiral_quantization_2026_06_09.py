@@ -10,9 +10,9 @@ CONTEXT.  The registered kinetic_isotropy_primitive supplies the OS0 kinetic-for
 equality c_t = c_s ("one tick is one edge in FORM").  The #3360 independence
 support showed the LISTED structures do not fix xi := c_t/c_s -- on a BOSONIC
 positive-transfer witness family.  This runner checks structures that
-list omits -- (P1) the retained adjacency license read strictly as radius-1
-strictness of the realized tick (a reading of a retained theorem's own locality
-definition), (P2) unitarity of the real-time one-tick update (named conditional
+list omits -- (P1) the currently unaudited finite-graph locality definition
+read as a separate radius-1 strictness condition on the realized tick,
+(P2) unitarity of the real-time one-tick update (named conditional
 reading), (P3) K/CPT omega <-> -omega pairing of the TICK spectrum (named
 conditional reading: the retained CPT note constrains the continuous-time
 staggered Hamiltonian, not the strict tick), (P4) nonzero band winding =
@@ -173,7 +173,7 @@ check("B4 radius-r cascade: top coefficient is again an extreme product (conj(a)
 
 
 # ----------------------------------------------------------------------------
-print("\nPART C -- strictness: Hamiltonian-generated ticks violate the retained license")
+print("\nPART C -- strictness: Hamiltonian-generated ticks violate the stated radius-1 condition")
 print("=" * 78)
 kap, at = sp.symbols('kappa a_tau', positive=True)
 integrand_series = sp.series(sp.exp(sp.I * at * kap * sp.cos(k)), kap, 0, 3).removeO()

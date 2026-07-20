@@ -1,19 +1,22 @@
-"""SHA-pinned runner output cache for the audit lane.
+"""Content-pinned runner output cache for the audit lane.
 
 Each runner under `scripts/` has one canonical cache file at:
 
     logs/runner-cache/<runner-stem>.txt
 
-The header pins the cache to the runner's content SHA-256. The cache is
-considered fresh iff `runner_sha256` in the header matches the current
-SHA-256 of the runner file. Pre-commit and CI gates enforce that no
-runner change lands without an updated cache.
+The header always pins the cache to the runner's content SHA-256. A runner
+that reads mutable repository inputs may additionally declare a top-level
+``AUDIT_INPUT_PATHS`` tuple. For such a runner the header also pins a
+deterministic fingerprint of those files, and cache consumption rejects any
+input drift. Pre-commit and CI gates enforce that no runner or declared input
+change lands without an updated cache.
 
 Format (no timestamps anywhere — gate-clean):
 
     ===== runner cache v1 =====
     runner: scripts/<name>.py
     runner_sha256: <hex>
+    input_fingerprint_sha256: <hex>  # only with AUDIT_INPUT_PATHS
     timeout_sec: 120
     exit_code: 0
     elapsed_sec: 12.34
@@ -29,6 +32,7 @@ their runners' SHAs.
 """
 from __future__ import annotations
 
+import ast
 import hashlib
 import os
 import re
@@ -44,6 +48,10 @@ LIVE_LOG_DIR = CACHE_DIR / ".in-progress"
 
 CACHE_HEADER_PREFIX = "===== runner cache v1 ====="
 SHA_RE = re.compile(r"^runner_sha256:\s*([0-9a-f]{64})\s*$", re.MULTILINE)
+INPUT_FINGERPRINT_RE = re.compile(
+    r"^input_fingerprint_sha256:\s*([0-9a-f]{64})\s*$",
+    re.MULTILINE,
+)
 RUNNER_PATH_RE = re.compile(r"^runner:\s*(.+)$", re.MULTILINE)
 STATUS_RE = re.compile(r"^status:\s*(\S+)\s*$", re.MULTILINE)
 EXIT_CODE_RE = re.compile(r"^exit_code:\s*(\S+)\s*$", re.MULTILINE)
@@ -131,6 +139,73 @@ def runner_sha256(runner_path: str | Path) -> str | None:
         return None
 
 
+def declared_input_paths(runner_path: str | Path) -> tuple[str, ...] | None:
+    """Return a runner's literal ``AUDIT_INPUT_PATHS`` declaration.
+
+    ``None`` means the runner makes no declaration. An empty tuple means a
+    declaration exists but is invalid; callers must reject it rather than
+    silently treating the runner as input-free. Only non-empty tuples/lists of
+    unique, normalized repo-relative paths are accepted. The runner is parsed,
+    never imported or executed.
+    """
+    p = runner_path if isinstance(runner_path, Path) and runner_path.is_absolute() \
+        else REPO_ROOT / runner_path
+    try:
+        tree = ast.parse(p.read_text(encoding="utf-8", errors="replace"))
+    except (OSError, SyntaxError):
+        return None
+    for node in tree.body:
+        if not isinstance(node, (ast.Assign, ast.AnnAssign)):
+            continue
+        targets = node.targets if isinstance(node, ast.Assign) else [node.target]
+        if not any(isinstance(t, ast.Name) and t.id == "AUDIT_INPUT_PATHS"
+                   for t in targets):
+            continue
+        try:
+            value = ast.literal_eval(node.value)
+        except (ValueError, TypeError):
+            return ()
+        if not isinstance(value, (tuple, list)) or not value:
+            return ()
+        out: list[str] = []
+        for raw in value:
+            if not isinstance(raw, str):
+                return ()
+            rel = Path(raw)
+            if (rel.is_absolute() or not rel.parts or ".." in rel.parts
+                    or rel.as_posix() != raw or raw in out):
+                return ()
+            out.append(raw)
+        return tuple(out)
+    return None
+
+
+def declared_input_fingerprint(runner_path: str | Path) -> str | None:
+    """Return the v1 fingerprint for declared inputs.
+
+    ``None`` means no declaration. The empty string means the declaration is
+    invalid or a declared input is unreadable, which callers must reject.
+    """
+    paths = declared_input_paths(runner_path)
+    if paths is None:
+        return None
+    if not paths:
+        return ""
+    digest = hashlib.sha256()
+    digest.update(b"runner-cache-input-fingerprint-v1\0")
+    for rel in paths:
+        try:
+            body = (REPO_ROOT / rel).read_bytes()
+        except OSError:
+            return ""
+        rel_bytes = rel.encode("utf-8")
+        digest.update(len(rel_bytes).to_bytes(8, "big"))
+        digest.update(rel_bytes)
+        digest.update(len(body).to_bytes(8, "big"))
+        digest.update(body)
+    return digest.hexdigest()
+
+
 def cache_path_for(runner_path: str | Path) -> Path:
     """Canonical cache path for a runner. One file per runner stem."""
     return CACHE_DIR / f"{Path(runner_path).stem}.txt"
@@ -138,7 +213,8 @@ def cache_path_for(runner_path: str | Path) -> Path:
 
 def parse_cache_header(text: str) -> dict | None:
     """Parse a cache file body. Returns dict with keys
-    runner_path, runner_sha256, status, exit_code (str), or None on bad header.
+    runner_path, runner_sha256, input_fingerprint_sha256, status, exit_code
+    (str), or None on bad header.
     """
     if not text.startswith(CACHE_HEADER_PREFIX):
         return None
@@ -150,6 +226,10 @@ def parse_cache_header(text: str) -> dict | None:
     return {
         "runner_path": rp_m.group(1).strip(),
         "runner_sha256": sha_m.group(1),
+        "input_fingerprint_sha256": (
+            INPUT_FINGERPRINT_RE.search(head).group(1)
+            if INPUT_FINGERPRINT_RE.search(head) else None
+        ),
         "status": (STATUS_RE.search(head).group(1) if STATUS_RE.search(head) else None),
         "exit_code": (EXIT_CODE_RE.search(head).group(1) if EXIT_CODE_RE.search(head) else None),
     }
@@ -168,9 +248,11 @@ def load_cache(runner_path: str | Path) -> tuple[Path, dict | None, str | None]:
 
 
 def cache_status(runner_path: str | Path) -> str:
-    """Return one of: 'fresh' | 'missing' | 'corrupt' | 'sha_mismatch'.
+    """Return a cache freshness classification.
 
-    'fresh' means cache exists with header SHA matching current runner SHA.
+    Values are ``fresh``, ``missing``, ``corrupt``, ``sha_mismatch``, or
+    ``input_mismatch``. ``fresh`` means the runner SHA matches and, when the
+    runner declares mutable inputs, their fingerprint also matches.
     Caller is responsible for handling the missing-runner case (the runner
     file itself absent from disk — those runners shouldn't have caches).
     """
@@ -185,12 +267,18 @@ def cache_status(runner_path: str | Path) -> str:
     cur = runner_sha256(runner_path)
     if cur is None or header.get("runner_sha256") != cur:
         return "sha_mismatch"
+    input_fp = declared_input_fingerprint(runner_path)
+    if input_fp is not None and (
+        not input_fp or header.get("input_fingerprint_sha256") != input_fp
+    ):
+        return "input_mismatch"
     return "fresh"
 
 
 def stale_runners(runner_paths: Iterable[str]) -> list[tuple[str, str]]:
     """Return [(runner_path, reason)] for caches that need refreshing.
-    Reason is one of 'missing' | 'corrupt' | 'sha_mismatch'.
+    Reason is one of 'missing' | 'corrupt' | 'sha_mismatch' |
+    'input_mismatch'.
     Runners absent from disk are excluded — orphan cache cleanup is a
     separate concern.
     """
@@ -302,6 +390,11 @@ def write_cache(runner_path: str, result: dict, runner_sha: str | None = None) -
         runner_sha = runner_sha256(runner_path)
     if runner_sha is None:
         raise FileNotFoundError(f"runner missing on disk: {runner_path}")
+    input_fp = declared_input_fingerprint(runner_path)
+    if input_fp == "":
+        raise ValueError(
+            f"invalid or unreadable AUDIT_INPUT_PATHS declaration: {runner_path}"
+        )
     cache_p = cache_path_for(runner_path)
     cache_p.parent.mkdir(parents=True, exist_ok=True)
 
@@ -314,6 +407,8 @@ def write_cache(runner_path: str, result: dict, runner_sha: str | None = None) -
         f"{CACHE_HEADER_PREFIX}\n"
         f"runner: {runner_path}\n"
         f"runner_sha256: {runner_sha}\n"
+        + (f"input_fingerprint_sha256: {input_fp}\n" if input_fp else "")
+        +
         f"timeout_sec: {result.get('timeout_sec')}\n"
         f"exit_code: {result.get('exit_code')}\n"
         f"elapsed_sec: {elapsed:.2f}\n"
@@ -343,8 +438,7 @@ def cache_excerpt_for_audit(runner_path: str | Path,
     p, header, body = load_cache(runner_path)
     if not (header and body):
         return None
-    cur_sha = runner_sha256(runner_path)
-    if cur_sha is None or header.get("runner_sha256") != cur_sha:
+    if cache_status(runner_path) != "fresh":
         return None
     clipped = len(body) > tail_chars
     excerpt = body[-tail_chars:] if clipped else body

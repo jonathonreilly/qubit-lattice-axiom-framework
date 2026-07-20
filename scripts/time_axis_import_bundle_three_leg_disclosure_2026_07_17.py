@@ -3,23 +3,13 @@
 """
 time_axis_import_bundle_three_leg_disclosure_2026_07_17.py
 
-Paired runner for
+Paired runner for the meta inventory and finite-witness note
 
   TIME_AXIS_IMPORT_BUNDLE_THREE_LEG_DISCLOSURE_BOUNDED_NOTE_2026-07-17.md
 
-The note discloses at least three supplied legs consumed by the phrase
-"the Z^4 operator block with OS time" (equivalently "Z^3 + tick"):
-
-  leg A -- axis existence / compactification: the representation-faithfulness
-           bridge; BOTH sub-legs (realized-history origin, periodic
-           compactification) are named OPEN by the time-axis bounded note;
-  leg B -- axis label: the axis-label clause of B-AXIS.2; narrow no-go on
-           derivability from the current retained surface (that note's own
-           scope), with a computed sufficient supplier shape (one per-axis
-           Z_2 BC-asymmetry datum, or a declared registration-direction
-           bridge);
-  leg C -- axis rate / spacing: B-AXIS.1a/1b, supplied, walled by the
-           count-not-rate firewalls.
+The note is not a theorem that a phrase necessarily consumes an A/B/C bundle.
+It is a navigation inventory that points consumers to the underlying source
+rows and keeps only two independently checked finite witness families.
 
 Blocks:
   [L2-W]         leg-B computed witnesses re-run from scratch (numpy; explicit
@@ -34,14 +24,14 @@ Blocks:
                  both generic witnesses with named degenerate fixtures; the
                  second witness is gated as a window-automorphism image of
                  the first.
-  [SOURCE_GATES] a load-bearing anchor fragment of every consumed clause is
-                 literally present (whitespace-normalized substring) in its
-                 on-main source file AND in the disclosure note.
+  [PROVENANCE]   selected navigation anchors remain present in the four source
+                 files. These lexical checks are not semantic theorem support.
   [NOTE_HYGIENE] lexical guards on the note itself (section presence, phrase
                  absence, decimal placement).
 
 All printed numerics are platform-stable (bound booleans, exact discrete
 values, integers); no raw noise digits are printed. Deterministic, no RNG.
+The cache layer fingerprints every mutable file read by this runner.
 
 This runner is a source-note artifact. It does not set or predict an audit
 outcome; the independent audit lane is the only authority for effective
@@ -64,6 +54,14 @@ TIME_AXIS_NOTE = "TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUND
 SINGLE_CLOCK_NOTE = "SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md"
 AXIOM_FIRST_NOTE = "AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md"
 AXIOMS_FILE = "MINIMAL_AXIOMS_2026-06-29.md"
+
+AUDIT_INPUT_PATHS = (
+    "docs/TIME_AXIS_IMPORT_BUNDLE_THREE_LEG_DISCLOSURE_BOUNDED_NOTE_2026-07-17.md",
+    "docs/TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md",
+    "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
+    "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+)
 
 
 def record(tag: str, label: str, passed: bool, detail: str = "") -> None:
@@ -373,8 +371,7 @@ def block_REC():
 
 
 # ---------------------------------------------------------------------
-# [SOURCE_GATES] anchor fragments of consumed clauses present in source
-# AND in the note
+# [PROVENANCE] selected navigation anchors present in the source rows
 # ---------------------------------------------------------------------
 
 GATES = (
@@ -385,8 +382,7 @@ GATES = (
      "are named OPEN. Not proved here."),
     ("leg C firewall", TIME_AXIS_NOTE,
      "No time metric, clock rate, blocked step, or spacing is derived; "
-     "B-AXIS.1a/1b stay as supplied, walled by the count-not-rate firewalls "
-     "(unaudited post-reset)."),
+     "B-AXIS.1a/1b stay as supplied, walled by the count-not-rate firewalls"),
     ("leg B narrow no-go", SINGLE_CLOCK_NOTE,
      "so the axis-label component of B-AXIS.2 (= scope-boundary N4) is not "
      "derivable from the current retained surface."),
@@ -408,22 +404,18 @@ GATES = (
 )
 
 
-def block_SOURCE_GATES():
+def block_PROVENANCE():
     print()
     print("-" * 72)
-    print("[SOURCE_GATES] anchor fragments of consumed clauses present in source "
-          "AND in the note")
+    print("[PROVENANCE] selected navigation anchors present in source rows")
     print("-" * 72)
-    note = read_doc(NOTE_NAME)
     cache = {}
     for label, src_name, needle in GATES:
         if src_name not in cache:
             cache[src_name] = read_doc(src_name)
         in_src = contains_norm(cache[src_name], needle)
-        in_note = contains_norm(note, needle)
-        record("B", f"gate ({label}): anchor fragment present in `{src_name}` AND "
-               "in the disclosure note", in_src and in_note,
-               f"in source: {in_src}, in note: {in_note}")
+        record("B", f"source anchor ({label}) present in `{src_name}`",
+               in_src, f"in source: {in_src}")
 
 
 # ---------------------------------------------------------------------
@@ -446,13 +438,13 @@ def block_NOTE_HYGIENE():
 
     record("D", "type/claim-strength/status-authority lines present (audit lane is "
            "the sole status authority)",
-           "**Type:**" in note and "**Claim strength:**" in note
+           "**Type:** meta" in note and "**Claim strength:**" in note
            and "**Status authority:** independent audit lane only" in note
            and "does not set or predict an audit outcome" in note)
 
-    required = ("## Purpose", "## Supplied objects", "## Declared symbols",
-                "## Bounded consequence", "## Honest auditor read", "## Non-claims",
-                "## Relation to prior notes", "## Load-bearing dependencies",
+    required = ("## Purpose", "## Source navigation inventory",
+                "## Finite witness claims", "## Honest boundary", "## Non-claims",
+                "## Source dependencies",
                 "## Runner verification map")
     missing = [s for s in required if s not in note]
     record("D", "required sections present",
@@ -478,18 +470,16 @@ def block_NOTE_HYGIENE():
 
 def main() -> None:
     print("=" * 72)
-    print("TIME-AXIS IMPORT BUNDLE: THREE-LEG DISCLOSURE RUNNER (2026-07-17)")
+    print("TIME-AXIS SOURCE INVENTORY + FINITE WITNESS RUNNER (2026-07-17)")
     print("=" * 72)
     print()
-    print("Discloses at least three supplied legs consumed by 'the Z^4 operator")
-    print("block with OS time': leg A (axis existence/compactification, OPEN),")
-    print("leg B (axis label, sufficient supplier shape computed), leg C")
-    print("(rate/spacing, supplied). Re-runs the computable witnesses and gates")
-    print("a load-bearing anchor fragment of every consumed clause.")
+    print("Re-runs two finite witness families and checks selected source anchors.")
+    print("The A/B/C/D inventory is navigation only; downstream claims must cite")
+    print("and classify the underlying source rows directly.")
 
     block_L2_W()
     block_REC()
-    block_SOURCE_GATES()
+    block_PROVENANCE()
     block_NOTE_HYGIENE()
 
     print()

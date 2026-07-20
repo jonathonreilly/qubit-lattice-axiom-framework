@@ -1,20 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/time_axis_import_bundle_three_leg_disclosure_2026_07_17.py
-runner_sha256: 749f150901d6d7349473cc81c8d2d2865ab913996a2c4aa95c5af6bdbdb33a7f
-timeout_sec: 280
+runner_sha256: 5e75f2b6bd3f6ae2907e094652e73fa1c960b93e1e54c2bd533eb678bd31fe69
+input_fingerprint_sha256: 4002cb5af39dc2a84ea000b6b23eb62c5716bdae006e981f5fe2cd349a96779e
+timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================
-TIME-AXIS IMPORT BUNDLE: THREE-LEG DISCLOSURE RUNNER (2026-07-17)
+TIME-AXIS SOURCE INVENTORY + FINITE WITNESS RUNNER (2026-07-17)
 ========================================================================
 
-Discloses at least three supplied legs consumed by 'the Z^4 operator
-block with OS time': leg A (axis existence/compactification, OPEN),
-leg B (axis label, sufficient supplier shape computed), leg C
-(rate/spacing, supplied). Re-runs the computable witnesses and gates
-a load-bearing anchor fragment of every consumed clause.
+Re-runs two finite witness families and checks selected source anchors.
+The A/B/C/D inventory is navigation only; downstream claims must cite
+and classify the underlying source rows directly.
 
 ------------------------------------------------------------------------
 [L2-W] LEG B WITNESSES (re-run from scratch on the explicit block)
@@ -46,18 +45,18 @@ a load-bearing anchor fragment of every consumed clause.
   [PASS][A] (iii) uniqueness on the second symmetry-related witness
 
 ------------------------------------------------------------------------
-[SOURCE_GATES] anchor fragments of consumed clauses present in source AND in the note
+[PROVENANCE] selected navigation anchors present in source rows
 ------------------------------------------------------------------------
-  [PASS][B] gate (leg A header): anchor fragment present in `TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md` AND in the disclosure note  -- in source: True, in note: True
-  [PASS][B] gate (leg A both sub-legs): anchor fragment present in `TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md` AND in the disclosure note  -- in source: True, in note: True
-  [PASS][B] gate (leg C firewall): anchor fragment present in `TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md` AND in the disclosure note  -- in source: True, in note: True
-  [PASS][B] gate (leg B narrow no-go): anchor fragment present in `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md` AND in the disclosure note  -- in source: True, in note: True
-  [PASS][B] gate (leg B pin datum): anchor fragment present in `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md` AND in the disclosure note  -- in source: True, in note: True
-  [PASS][B] gate (leg B record-shaped supplier): anchor fragment present in `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md` AND in the disclosure note  -- in source: True, in note: True
-  [PASS][B] gate (B-AXIS.1 clause): anchor fragment present in `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md` AND in the disclosure note  -- in source: True, in note: True
-  [PASS][B] gate (B-AXIS.2 clause): anchor fragment present in `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md` AND in the disclosure note  -- in source: True, in note: True
-  [PASS][B] gate (B-AXIS.3 clause): anchor fragment present in `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md` AND in the disclosure note  -- in source: True, in note: True
-  [PASS][B] gate (Record permanence sentence): anchor fragment present in `MINIMAL_AXIOMS_2026-06-29.md` AND in the disclosure note  -- in source: True, in note: True
+  [PASS][B] source anchor (leg A header) present in `TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md`  -- in source: True
+  [PASS][B] source anchor (leg A both sub-legs) present in `TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md`  -- in source: True
+  [PASS][B] source anchor (leg C firewall) present in `TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md`  -- in source: True
+  [PASS][B] source anchor (leg B narrow no-go) present in `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`  -- in source: True
+  [PASS][B] source anchor (leg B pin datum) present in `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`  -- in source: True
+  [PASS][B] source anchor (leg B record-shaped supplier) present in `SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md`  -- in source: True
+  [PASS][B] source anchor (B-AXIS.1 clause) present in `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`  -- in source: True
+  [PASS][B] source anchor (B-AXIS.2 clause) present in `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`  -- in source: True
+  [PASS][B] source anchor (B-AXIS.3 clause) present in `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`  -- in source: True
+  [PASS][B] source anchor (Record permanence sentence) present in `MINIMAL_AXIOMS_2026-06-29.md`  -- in source: True
 
 ------------------------------------------------------------------------
 [NOTE_HYGIENE] structural guards on the note

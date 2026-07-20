@@ -16,7 +16,7 @@ multiplicity-free and decomposes as 32 = 4 (+) 4 (+) 6 (+) 6 (+) 12.
   T3  the 5 central idempotents have holo-ranks {4,4,6,6,12}, an internal direct
       sum 32 = 4+4+6+6+12.                                   [G15,G16]
   T4  the exact-integer bridge S0 = 12*768, SJ = 8*768, (12+8)/4 = 5 ties the
-      count to the Unit-10 census (12) and a new J-twisted class-sum (8).
+      commutant dimension to the Unit-10 census and a new J-twisted class-sum.
                                                              [G8,G9,G10]
 
 ANTI-FABRICATION DISCIPLINE.  J_full is built ONLY from the shell/kernel
@@ -24,21 +24,31 @@ machinery (V8*J64*V8^T / 64^2 plus Sum_m D2*P_m/(2*sqrt m)); G3 proves a rationa
 sqrt(m)->1 proxy is NOT a complex structure, so no parity/sign proxy can stand in
 for it.  The two load-bearing class-sums S0 = Sum (tr U)^2 and SJ = Sum (tr(U*J))^2
 are accumulated as per-element trace SCALARS in a loop over all 768 elements --
-never a materialized 768-block matrix -- and no individual (irrational) character
-tr(U*J_full) is ever gated.  The commutant is computed from a SMALL generating set
+never a materialized 768-block matrix -- and no individual field-valued character
+tr(U*J_full), which can be irrational, is ever gated.  The commutant is computed from a SMALL generating set
 (verified closure == 768), a ~4096x1024 map, so the OOM-prone 786432x1024 full
 build is avoided; the character-norm (S0+SJ)/(4*768) confirms the same 5 from a
-scalar loop (G14).  Every completeness/identity gate carries a discriminating
-wrong-value rejector; float eig/rank/SVD/spectrum checks are tagged redundant.
+scalar loop (G14).  Load-bearing target gates include explicit wrong-value or
+counter-object rejectors; identity and completeness gates use direct residuals
+and cross-checks.  Numerical commutant and block-rank checks carry explicit
+invariance residuals and clean separation gaps.
 """
 import itertools
 import os
+from fractions import Fraction
+
 import numpy as np
 
 L, N = 4, 64
 TOL0 = 1e-12      # exact rational-zero level
 TOL_EIG = 1e-8    # eigen / rank / restriction
 TOLREJ = 1e-6     # rejector floor
+
+AUDIT_INPUT_PATHS = (
+    "docs/KCPT_TOTAL_COMPLEX_STRUCTURE_AMBIENT_INVARIANT_KERNEL_BULK_ASSEMBLY_BOUNDED_THEOREM_NOTE_2026-07-19.md",
+    "docs/KCPT_KAHLER_TRIPLE_AMBIENT_INVARIANT_METRIC_SYMPLECTIC_BOUNDED_THEOREM_NOTE_2026-07-19.md",
+    "docs/KCPT_HOLOMORPHIC_GAMB_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-07-20.md",
+)
 
 DOCS = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "docs"))
 U8_NOTE = "KCPT_TOTAL_COMPLEX_STRUCTURE_AMBIENT_INVARIANT_KERNEL_BULK_ASSEMBLY_BOUNDED_THEOREM_NOTE_2026-07-19.md"
@@ -142,6 +152,15 @@ Jkerf = Jker_int.astype(float) / (64.0 ** 2)
 Jbulk = sum(D2f @ Pf[m] / (2.0 * np.sqrt(m)) for m in (1, 2, 3))
 Jfull = Jkerf + Jbulk
 
+# Exact radical decomposition
+#   J_full = J0/d0 + sqrt(2) J2/d2 + sqrt(3) J3/d3.
+# This certifies the full SJ class sum in Q(sqrt(2),sqrt(3)); individual
+# twisted traces are never compared with targets.
+Aint = [D2 @ Q[m] for m in range(4)]
+J0_int, d0 = Jker_int - 16 * Aint[1], 4096
+J2_int, d2 = Aint[2], 4 * Nm[2]
+J3_int, d3 = Aint[3], 6 * Nm[3]
+
 # rational sqrt(m)->1 proxy, used ONLY as a discriminating counter-object in G3
 Jbulk_proxy = sum(D2f @ Pf[m] / 2.0 for m in (1, 2, 3))
 Jfull_proxy = Jkerf + Jbulk_proxy
@@ -213,7 +232,7 @@ for name, base in BASES.items():
                 commuting.append(U.copy())
 Gamb = closure_amb(commuting)
 
-# minimal generating set (deterministic greedy; closure verified == 768 in G11)
+# small generating set (deterministic greedy; closure verified == 768 in G11)
 Gsorted = sorted(Gamb, key=lambda U: U.tobytes())
 I64 = np.eye(N, dtype=np.int64)
 gens = []
@@ -266,19 +285,41 @@ gate("G7", maxJ < TOL_EIG and witnessJ > TOLREJ,
 
 # ---- T4: the two exact-integer class-sums and the bridge (per-element scalar loop) ---
 S0 = 0
-SJ = 0.0
+SJ_float = 0.0
+sj00 = sj22 = sj33 = sj02 = sj03 = sj23 = 0
+max_trace_field_dev = 0.0
 for U in Gamb:
-    a = int(round(np.trace(U)))                         # integer signed-perm character
-    b = float(np.sum(U * Jfull.T))                      # tr(U*J_full) (irrational, never gated alone)
+    a = int(np.trace(U))                                # integer signed-permutation character
+    b = float(np.sum(U * Jfull.T))                      # direct real trace tr(U*J_full)
+    t0 = int(np.sum(U * J0_int.T, dtype=np.int64))
+    t2 = int(np.sum(U * J2_int.T, dtype=np.int64))
+    t3 = int(np.sum(U * J3_int.T, dtype=np.int64))
+    b_field = float(Fraction(t0, d0)) + np.sqrt(2.0) * float(Fraction(t2, d2)) \
+        + np.sqrt(3.0) * float(Fraction(t3, d3))
+    max_trace_field_dev = max(max_trace_field_dev, abs(b - b_field))
     S0 += a * a
-    SJ += b * b
+    SJ_float += b * b
+    sj00 += t0 * t0
+    sj22 += t2 * t2
+    sj33 += t3 * t3
+    sj02 += t0 * t2
+    sj03 += t0 * t3
+    sj23 += t2 * t3
+
+# Exact coefficients of SJ in the field basis [1, sqrt(2), sqrt(3), sqrt(6)].
+SJ0 = Fraction(sj00, d0 * d0) + 2 * Fraction(sj22, d2 * d2) + 3 * Fraction(sj33, d3 * d3)
+SJ2 = 2 * Fraction(sj02, d0 * d2)
+SJ3 = 2 * Fraction(sj03, d0 * d3)
+SJ6 = 2 * Fraction(sj23, d2 * d3)
 gate("G8", S0 == 12 * 768 and S0 != 11 * 768,
      f"S0 = Sum (tr U)^2 = {S0} == 12*768 (=9216) and != 11*768 (=8448)  [EXACT INTEGER]")
-gate("G9", round(SJ) == 8 * 768 and abs(SJ - 8 * 768) < TOLREJ and round(SJ) != 9 * 768,
-     f"SJ = Sum (tr(U*J_full))^2 = {SJ:.6f}, round == 8*768 (=6144), |SJ-6144| < 1e-6, "
-     f"round != 9*768 (=6912)  [integer by group symmetry; per-term irrational]")
-bridge = (S0 / 768 + round(SJ) / 768) / 4
-gate("G10", abs(bridge - 5) < TOL0 and abs(bridge - 4) > 0.5 and abs(bridge - 6) > 0.5,
+gate("G9", SJ0 == 8 * 768 and SJ2 == 0 and SJ3 == 0 and SJ6 == 0 and SJ0 != 9 * 768
+     and max_trace_field_dev < TOL0 and abs(SJ_float - float(SJ0)) < TOLREJ,
+     f"SJ exact field coefficients [1,sqrt2,sqrt3,sqrt6] = "
+     f"[{SJ0},{SJ2},{SJ3},{SJ6}] == [8*768,0,0,0], != [9*768,0,0,0]; "
+     f"direct real-trace sum {SJ_float:.6f} agrees (max trace dev {max_trace_field_dev:.1e})")
+bridge = (Fraction(S0, 768) + SJ0 / 768) / 4
+gate("G10", bridge == 5 and bridge != 4 and bridge != 6 and SJ2 == 0 and SJ3 == 0 and SJ6 == 0,
      f"BRIDGE (S0/768 + SJ/768)/4 = {bridge} == 5 and != 4 and != 6")
 
 # ---- T2: the holomorphic representation and its commutant ----------------------------
@@ -327,14 +368,17 @@ gate("G13", maxcommgen < TOL_EIG and maxcomm < TOL_EIG and res_id < TOL_EIG,
      f"({maxcomm:.1e}), and is UNITAL (I_32 in span, residual {res_id:.1e}) => C^5 algebra")
 
 # MEMORY-BUDGET cross-check: character-norm full-group commutant, scalar loop, == generator dim
-char_norm = (S0 + SJ) / (4.0 * 768)
-gate("G14", abs(char_norm - 5) < TOLREJ and abs(char_norm - dimc) < TOLREJ,
-     f"MEMORY-BUDGET: char-norm (S0+SJ)/(4*768) = {char_norm:.6f} == 5 == generator-commutant "
-     f"dim {dimc} (scalar loop, no 768-block matrix materialized)")
+char_norm = (Fraction(S0) + SJ0) / (4 * 768)
+char_norm_float = (S0 + SJ_float) / (4.0 * 768)
+gate("G14", char_norm == 5 and char_norm == dimc and SJ2 == 0 and SJ3 == 0 and SJ6 == 0
+     and abs(char_norm_float - float(char_norm)) < TOLREJ,
+     f"MEMORY-BUDGET: exact char-norm (S0+SJ)/(4*768) = {char_norm} == 5 == "
+     f"generator-commutant dim {dimc}; direct real-trace value {char_norm_float:.6f} agrees "
+     f"(scalar loop, no 768-block matrix materialized)")
 
 # ---- T3: the multiplicity-free block dimensions {4,4,6,6,12} -------------------------
 # generic self-adjoint commutant element; SELECT ONLY on numerical separation quality
-mult = None
+block_ranks = None
 Wproj = None
 chosen_seed = -1
 for seed in range(64):
@@ -358,15 +402,17 @@ for seed in range(64):
         if len(groups) > 1 else 0.0
     # accept purely on unambiguous separation, NOT on the multiplicities themselves
     if len(groups) >= 2 and inter > 1e6 * max(intra, 1e-18):
-        mult = sorted(len(g) for g in groups)
+        block_ranks = sorted(len(g) for g in groups)
         Wproj = [Vv[:, g] for g in groups]
         chosen_seed = seed
         break
 
-gate("G15", mult is not None and mult == [4, 4, 6, 6, 12] and sum(mult) == 32
-     and mult != [4, 4, 4, 8, 12] and mult != [2, 6, 6, 6, 12],
+gate("G15", block_ranks is not None and block_ranks == [4, 4, 6, 6, 12]
+     and sum(block_ranks) == 32 and block_ranks != [4, 4, 4, 8, 12]
+     and block_ranks != [2, 6, 6, 6, 12],
      f"HOLO-RANKS (generic self-adjoint commutant element, seed {chosen_seed} chosen by "
-     f"separation only): sorted multiplicities {mult} == [4,4,6,6,12], sum 32, != [4,4,4,8,12], != [2,6,6,6,12]")
+     f"separation only): sorted block ranks {block_ranks} == [4,4,6,6,12], sum 32, "
+     f"!= [4,4,4,8,12], != [2,6,6,6,12]")
 
 # the five eigenspaces are genuine orthogonal idempotents summing to I_32
 idem_ok = False
@@ -376,15 +422,18 @@ if Wproj is not None:
     idem = max(nrm(Pk @ Pk - Pk) for Pk in Projs)
     orth = max((nrm(Projs[i] @ Projs[j]) for i in range(len(Projs)) for j in range(len(Projs)) if i != j),
                default=1.0)
+    proj_comm = max(nrm(Pk @ C - C @ Pk) for Pk in Projs for C in Cs)
     ranks = sorted(int(round(np.trace(Pk).real)) for Pk in Projs)
-    idem_ok = sum_I < TOL_EIG and idem < TOL_EIG and orth < TOL_EIG and ranks == [4, 4, 6, 6, 12]
+    idem_ok = (sum_I < TOL_EIG and idem < TOL_EIG and orth < TOL_EIG and proj_comm < TOL_EIG
+               and ranks == [4, 4, 6, 6, 12])
 gate("G16", idem_ok,
-     "the 5 eigenspaces are orthogonal idempotents: Sum P_k = I_32, P_k^2 = P_k, P_j P_k = 0, "
-     "ranks {4,4,6,6,12} => genuine direct sum 32 = 4+4+6+6+12")
+     "the 5 eigenspaces are invariant orthogonal idempotents: [P_k,rho(g_j)] = 0, "
+     "Sum P_k = I_32, P_k^2 = P_k, P_j P_k = 0, ranks {4,4,6,6,12} "
+    "=> genuine direct sum 32 = 4+4+6+6+12")
 
 # ---- multiplicity-free logical closure: Sum m_i^2 == number of blocks ----------------
-num_blocks = len(mult) if mult is not None else -1
-gate("G17", num_blocks == 5 and abs(char_norm - 5) < TOLREJ,
+num_blocks = len(block_ranks) if block_ranks is not None else -1
+gate("G17", num_blocks == 5 and char_norm == 5,
      f"MULTIPLICITY-FREE: #distinct blocks {num_blocks}==5 equals Sum m_i^2 = "
      f"(S0+SJ)/(4*768) = {char_norm:.3f}==5, forcing every multiplicity = 1")
 

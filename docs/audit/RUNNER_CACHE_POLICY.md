@@ -84,12 +84,13 @@ AUDIT_INPUT_PATHS = (
 ```
 
 The declaration must be non-empty, unique, normalized, repo-relative, and
-contain no `..` segment. It is parsed with `ast.literal_eval`; the cache layer
-never imports the runner to discover inputs. An invalid declaration or an
-unreadable declared file blocks cache writing. Environment variables, network
-responses, machine-local files, randomness, wall-clock state, and other
-mutable inputs must be eliminated or explicitly fixtured before a cache can be
-treated as canonical evidence.
+contain no `..` segment. Neither the file nor any lexical path component may
+be a symlink. The declaration is parsed with `ast.literal_eval`; the cache
+layer never imports the runner to discover inputs. An invalid declaration,
+symlinked path, or unreadable declared file blocks cache writing. Environment
+variables, network responses, machine-local files, randomness, wall-clock
+state, and other mutable inputs must be eliminated or explicitly fixtured
+before a cache can be treated as canonical evidence.
 
 ## Freshness rule
 
@@ -121,15 +122,15 @@ Three surfaces keep runner caches fresh without making open PRs noisy:
    `precompute_audit_runners.py --staged-only` and stage the resulting
    `logs/runner-cache/` files.
 
-2. **Review-loop landing gate**
-   Review-loop runs diff-scoped selection with
-   `precompute_audit_runners.py --pr-diff <base> --check-only`, then refreshes
-   selected stale caches from current `main` before landing. The same reverse
-   map includes declared-input-only changes, deletions, and both sides of
-   renames. This repository does **not** currently run that command on every
-   pull request: `.github/workflows/audit.yml` is scheduled/manual audit-lane
-   automation, not PR cache enforcement. Other automation may invoke
-   `--pr-diff`, but its presence is not assumed by this policy.
+2. **Optional diff-scoped selection**
+   Operators or external automation may run
+   `precompute_audit_runners.py --pr-diff <base> --check-only`. The reverse map
+   includes declared-input-only changes, deletions, and both sides of renames.
+   This repository does **not** currently invoke that command from every pull
+   request or from the installed review-loop skill:
+   `.github/workflows/audit.yml` is scheduled/manual audit-lane automation,
+   not PR cache enforcement. The command is a verification tool, not evidence
+   that an automatic gate ran.
 
 3. **Audit-runner consumption** (`scripts/codex_audit_runner.py`)
    The audit runner reads cache files only when the runner SHA and any required
@@ -141,16 +142,19 @@ Three surfaces keep runner caches fresh without making open PRs noisy:
 ## Execution/concurrency binding
 
 Before execution, the cache layer captures the runner SHA, declared-input
-fingerprint, and filesystem-generation tokens (device, inode, size, mtime, and
-ctime) for every bound source. After execution it recomputes them. This catches
-ordinary ABA edits where bytes change, the runner reads the changed version,
-and the original bytes are restored before completion: the content hashes may
-match again, but the filesystem generation does not. If any observation moved,
-the cache layer deletes the in-progress log, refuses the canonical cache write,
-reports an orchestrator error, and leaves the previous cache stale. When they
-agree, the header is written from the *pre-execution content* capture.
-Therefore an edit in the small interval after the post-check cannot bind old
-output to new bytes: the pre-run header immediately mismatches the edited file.
+fingerprint, and filesystem-generation tokens (mode, device, inode, size,
+mtime, and ctime) for every bound source and each lexical path component.
+Symlinked components are rejected. After execution it recomputes the same
+observations. This catches ordinary ABA edits where bytes change, the runner
+reads the changed version, and the original bytes are restored before
+completion; it also catches a temporary leaf or parent-directory redirect.
+The content hashes may match again, but a filesystem generation moved. If any
+observation moved, the cache layer deletes the in-progress log, refuses the
+canonical cache write, reports an orchestrator error, and leaves the previous
+cache stale. When they agree, the header is written from the *pre-execution
+content* capture. Therefore an edit in the small interval after the post-check
+cannot bind old output to new bytes: the pre-run header immediately mismatches
+the edited file.
 
 ## Per-runner timeouts
 
@@ -248,6 +252,7 @@ python3 scripts/precompute_audit_runners.py --cleanup-orphans
 ## Bypass
 
 `git commit --no-verify` skips the local hook. There is no repository-wide PR
-cache check to replace it. Review-loop must reject or refresh every stale
-selected cache before landing; audit consumption independently refuses a cache
-whose current identities do not match.
+or installed-review-loop cache check to replace it. A landing operator must
+explicitly run the appropriate freshness check and reject or refresh every
+stale selected cache; audit consumption independently refuses a cache whose
+current identities do not match.

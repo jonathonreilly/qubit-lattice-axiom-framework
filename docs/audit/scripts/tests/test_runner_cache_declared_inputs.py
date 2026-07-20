@@ -140,6 +140,42 @@ class DeclaredInputFreshnessTest(unittest.TestCase):
         self.assertEqual(before, rc.capture_runner_identity(self.runner))
         self.assertFalse(rc.cache_path_for(self.runner).exists())
 
+    def test_declared_input_symlink_is_rejected(self) -> None:
+        target = self.root / "docs" / "target.md"
+        target.write_text("v1\n", encoding="utf-8")
+        self.source.unlink()
+        self.source.symlink_to(target.name)
+
+        with self.assertRaises(ValueError):
+            rc.write_cache(self.runner, dict(self.result))
+        with self.assertRaises(ValueError):
+            rc.execute_and_write_cache(self.runner, timeout_sec=120)
+        self.assertFalse(rc.cache_path_for(self.runner).exists())
+
+    def test_input_symlink_aba_during_execution_refuses_cache_write(self) -> None:
+        before = rc.capture_runner_identity(self.runner)
+        alternate = self.root / "docs" / "source-v2.md"
+        parked = self.root / "docs" / "source-v1-parked.md"
+        alternate.write_text("v2\n", encoding="utf-8")
+
+        def redirect_read_restore(_runner: str, timeout_sec: int) -> dict:
+            self.source.replace(parked)
+            self.source.symlink_to(alternate.name)
+            observed = self.source.read_text(encoding="utf-8").strip()
+            self.source.unlink()
+            parked.replace(self.source)
+            return dict(
+                self.result,
+                stdout=f"observed={observed}\n",
+                timeout_sec=timeout_sec,
+            )
+
+        with mock.patch.object(rc, "execute_runner", side_effect=redirect_read_restore):
+            with self.assertRaises(rc.RunnerIdentityChangedError):
+                rc.execute_and_write_cache(self.runner, timeout_sec=120)
+        self.assertEqual(before, rc.capture_runner_identity(self.runner))
+        self.assertFalse(rc.cache_path_for(self.runner).exists())
+
     def test_staged_input_only_change_selects_declaring_runner(self) -> None:
         completed = __import__("subprocess").CompletedProcess(
             args=[], returncode=0, stdout="docs/source.md\n", stderr=""

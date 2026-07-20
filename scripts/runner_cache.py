@@ -8,8 +8,8 @@ The header always pins the cache to the runner's content SHA-256. A runner
 that reads mutable repository inputs may additionally declare a top-level
 ``AUDIT_INPUT_PATHS`` tuple. For such a runner the header also pins a
 deterministic fingerprint of those files, and cache consumption rejects any
-input drift. The optional pre-commit hook and the mandatory review-loop
-landing gate select changed runners and declared inputs.
+input drift. The optional pre-commit hook and diff-scoped CLI can select
+changed runners and declared inputs for an operator or external automation.
 
 Format (no timestamps anywhere — gate-clean):
 
@@ -26,11 +26,10 @@ Format (no timestamps anywhere — gate-clean):
     ----- stderr -----
     <stderr, capped at 50KB tail>
 
-The audit runner reads from this cache; the pre-commit hook and review-loop
-landing gate select a cache when either its runner or one of its declared
-inputs changes. Refresh binds the output to identities captured before
-execution and refuses to write if the runner or any declared input moves
-during execution.
+The audit runner reads from this cache; the pre-commit hook and diff-scoped
+CLI can select a cache when either its runner or one of its declared inputs
+changes. Refresh binds the output to identities captured before execution and
+refuses to write if the runner or any declared input moves during execution.
 """
 from __future__ import annotations
 
@@ -38,6 +37,7 @@ import ast
 import hashlib
 import os
 import re
+import stat
 import subprocess
 import sys
 import time
@@ -108,7 +108,7 @@ class ExecutionIdentity:
     """
 
     content: RunnerIdentity
-    source_stat_tokens: tuple[tuple[str, int, int, int, int, int], ...]
+    source_stat_tokens: tuple[tuple[str, int, int, int, int, int, int], ...]
 
 
 class RunnerIdentityChangedError(RuntimeError):
@@ -224,8 +224,9 @@ def declared_input_fingerprint(runner_path: str | Path) -> str | None:
     digest.update(b"runner-cache-input-fingerprint-v1\0")
     for rel in paths:
         try:
+            _lexical_path_stat_tokens(rel, REPO_ROOT / rel)
             body = (REPO_ROOT / rel).read_bytes()
-        except OSError:
+        except (OSError, ValueError):
             return ""
         rel_bytes = rel.encode("utf-8")
         digest.update(len(rel_bytes).to_bytes(8, "big"))
@@ -274,25 +275,49 @@ def _execution_source_paths(runner_path: str | Path) -> tuple[tuple[str, Path], 
     return tuple(paths)
 
 
-def _source_stat_tokens(
-    runner_path: str | Path,
-) -> tuple[tuple[str, int, int, int, int, int], ...]:
-    tokens: list[tuple[str, int, int, int, int, int]] = []
-    for label, path in _execution_source_paths(runner_path):
+def _lexical_path_stat_tokens(
+    label: str, path: Path
+) -> tuple[tuple[str, int, int, int, int, int, int], ...]:
+    """Observe each repo-relative path component without following links."""
+    try:
+        relative = path.relative_to(REPO_ROOT)
+    except ValueError as exc:
+        raise ValueError(f"execution source escapes repository: {label}") from exc
+    component = REPO_ROOT
+    tokens: list[tuple[str, int, int, int, int, int, int]] = []
+    for part in relative.parts:
+        component /= part
+        component_label = component.relative_to(REPO_ROOT).as_posix()
         try:
-            stat = path.stat()
+            observed = component.lstat()
         except OSError as exc:
-            raise ValueError(f"execution source is unreadable: {label}") from exc
+            raise ValueError(
+                f"execution source is unreadable: {component_label}"
+            ) from exc
+        if stat.S_ISLNK(observed.st_mode):
+            raise ValueError(
+                f"execution source path may not contain symlinks: {component_label}"
+            )
         tokens.append(
             (
-                label,
-                int(stat.st_dev),
-                int(stat.st_ino),
-                int(stat.st_size),
-                int(stat.st_mtime_ns),
-                int(stat.st_ctime_ns),
+                component_label,
+                int(observed.st_mode),
+                int(observed.st_dev),
+                int(observed.st_ino),
+                int(observed.st_size),
+                int(observed.st_mtime_ns),
+                int(observed.st_ctime_ns),
             )
         )
+    return tuple(tokens)
+
+
+def _source_stat_tokens(
+    runner_path: str | Path,
+) -> tuple[tuple[str, int, int, int, int, int, int], ...]:
+    tokens: list[tuple[str, int, int, int, int, int, int]] = []
+    for label, path in _execution_source_paths(runner_path):
+        tokens.extend(_lexical_path_stat_tokens(label, path))
     return tuple(tokens)
 
 
@@ -304,7 +329,9 @@ def capture_runner_execution_identity(
     A stable before/content/after observation is required so a source edit
     racing the capture itself is rejected.  ``ctime_ns`` is deliberately part
     of the token: ordinary write-then-restore cycles retain the same content
-    hash but advance the file's metadata generation.
+    hash but advance the file's metadata generation. Every lexical path
+    component is observed with ``lstat`` and symlinks are rejected, so swapping
+    a parent or leaf link cannot redirect the runner between the two captures.
     """
 
     for _attempt in range(3):

@@ -1,6 +1,6 @@
 {
- "edge_count": 14933,
- "node_count": 4451,
+ "edge_count": 14936,
+ "node_count": 4452,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1595,8 +1595,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "1e630e6b31a0",
-   "out_degree": 311
+   "deps_hash": "553abc7bbdac",
+   "out_degree": 312
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -14924,6 +14924,10 @@
   },
   "velocity_rg_gauge_seagull_transverse_vacuum_polarization_2026-06-22": {
    "deps_hash": "ba165747f24b",
+   "out_degree": 2
+  },
+  "velocity_rg_gauge_tensor_wti_xi_affine_drag_exact_support_note_2026-07-17": {
+   "deps_hash": "0663883c06e3",
    "out_degree": 2
   },
   "velocity_rg_logflow_framework_internal_2026-06-21": {

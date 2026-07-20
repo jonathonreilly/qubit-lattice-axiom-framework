@@ -1,0 +1,41 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "contract_sha256": {
+    "authorization": "b351db1be8de62acdbfacca9cbfa89424705d230f564d5c4bc6cb6358be3d83e",
+    "boundary": "5436bd18ae02e5fc88a508967094dc95a60e102738048a3730c1ce45867afc26",
+    "deletion": "00555251b807eb0b8040717f9a77c1c7af485b64317ace2973c299c7fb94520b",
+    "free": "19f170f573833451e8025b70cc0ca8a01bdd75f3f6cbb9bc900900c2eb18f4af",
+    "observable": "c1e36d84110591c225c3c6062ddd8e0dfa7c261bdc4647061225da8b18d30102",
+    "occupation_species": "7103fe496547e8c25117347aea7ab5cc0c20e3e5195a81c7571feb20609b6ecf",
+    "packet": "c77a770aeae53aa84bfd48a1692ea8f1599ca22f1d3121f6a5aac06cb5e4145c",
+    "preservation": "ba9ae4779f05b0f79fd24f3149f2655957ec662ca61ad19e3e475d2cd94c4597",
+    "update": "1f2aff2a0021afa3fd3584d3e460114945d46e59af23e4618f7b7195793ef545"
+  },
+  "direct_evidence_map_canonical_sha256": "d6f0dffc898370f93076a577ec6cee22270d37f16a4baff7c59c33520ce5dcf5",
+  "direct_evidence_map_hash_method": "sha256(jq -cS .bound_evidence.strict_file_hashes transcript + newline)",
+  "environment": {
+    "numpy": "2.4.4",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.5",
+    "scipy": "1.17.1"
+  },
+  "manifest_sha256": {
+    "RouteC8": "bb3ea5f4f6d951ea55071daab10b0417c99bbf8da95497165ecb5c6fd8ba59ef",
+    "atomic_held13": "09912359e4a0ed89f256c16ba01893be9d596e26f7831b7291c71ac901c4e9f6",
+    "combined_train42": "d4e1fcc51327a3b514a1323932fddbf39f7ee59aeb1eb2ff0c402d84b694dd03",
+    "immutable_AB34": "f6dfdbd48ef38a10f2b7659ef5192950a0c17c257c042be8515da355999a44b2",
+    "immutable_AB_held10": "66c6e1a9a4667b367424c3d69208d7b3a9a98dcb308febb1e67035fb0388b1a3"
+  },
+  "resource_scout_executed": false,
+  "response_rows_executed": 0,
+  "held_rows_executed": 0,
+  "result_transcript_sha256": "ed623f427638319184fad61ad7ac0b6de1db2c1a04760a97e4e864dfacb0d4ec",
+  "runner_sha256": "d80285b0338072dbf3053177c9685c669ed26aa2e7c9fd055b58ecaea963e5b0",
+  "schema": "cycle511-route-c-revision4-preflight-receipt-v1",
+  "selected_science_payload_sha256": "f76b5602fcd6ae9e7f33e66c290eef7f9855f20c26cacb98974d78e36103c29f",
+  "selected_science_payload_hash_method": "sha256(jq -cS '{contracts,packet_numeric_controls,geometry_controls,observable_domain_controls,finite_stream_controls,boundary_controls,causal_timing_controls,Boolean_overlap_controls,manifests:(.manifests|del(.RouteC8,.atomic_held13)),execution,tests}' transcript + newline)",
+  "status": "response-revision4-contract-frozen",
+  "tests_passed": 21,
+  "tests_total": 21
+}

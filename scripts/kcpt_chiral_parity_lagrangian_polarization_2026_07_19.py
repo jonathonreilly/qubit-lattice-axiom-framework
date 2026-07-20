@@ -2,13 +2,13 @@
 """KCPT Unit 11 exact Lagrangian-polarization runner.
 
 Reads the landed Units 8/9/10 objects on the L=4, N=64 staggered lattice through
-standard symplectic / Kaehler geometry.  Writing C^64 = L_+ (+) L_- for the +-1
-eigenspaces of the staggered chiral parity S_eps = diag((-1)^{x1+x2+x3}) (Unit 9),
+standard symplectic / Kaehler geometry.  Writing V_R = R^64 = L_+ (+) L_- for the
+real +-1 eigenspaces of staggered chiral parity S_eps = diag((-1)^{x1+x2+x3}) (Unit 9),
 and taking the Unit-10 symplectic convention omega(x,y) = g(J_full x,y) with
 g = I_64 (matrix omega = J_full^T g = -J_full), it verifies:
 
   T1  S_eps is a real involution; L_+ , L_- are the even/odd staggered-parity site
-      sets, dim 32 each, L_+ (+) L_- = C^64.                        [G1, G2]
+      sets, dim 32 each, L_+ (+) L_- = V_R.                         [G1, G2]
   T2  each L_+- is LAGRANGIAN for omega: the diagonal parity blocks of omega (hence
       of J_full) vanish -- this is Unit 9's T4 S_eps J_full S_eps = -J_full written
       in parity blocks; omega is nondegenerate.                     [G3, G4, G5, G6]
@@ -16,7 +16,8 @@ g = I_64 (matrix omega = J_full^T g = -J_full), it verifies:
       rank-32 isomorphism L_+ -> L_- (the Kaehler polarization intertwiner).
                                                                     [G7, G8, G9, G10]
   T4  S_eps is ANTISYMPLECTIC (S_eps^T omega S_eps = -omega) and acts on h = g + i*omega
-      as the reality/CP conjugation h -> conj(h), swapping the +-i eigenspaces of J_full.
+      as anti-holomorphic reality conjugation h -> conj(h), swapping the +-i eigenspaces
+      of J_full.  "CP-like" is a geometric label only, not a physical CP identification.
                                                                 [G11, G12, G13, G14, G19]
   T5  every element of the order-768 ambient group G_amb preserves the unordered pair
       {L_+, L_-}; the subgroup fixing each plane is the centralizer C_G_amb(S_eps) of
@@ -35,12 +36,18 @@ import itertools
 import os
 import numpy as np
 
+AUDIT_INPUT_PATHS = (
+    "docs/KCPT_CHIRAL_PARITY_COMMON_SIGN_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-19.md",
+    "docs/KCPT_KAHLER_TRIPLE_AMBIENT_INVARIANT_METRIC_SYMPLECTIC_BOUNDED_THEOREM_NOTE_2026-07-19.md",
+    "docs/KCPT_CHIRAL_PARITY_LAGRANGIAN_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-19.md",
+)
+
 L, N = 4, 64
 TOL0 = 1e-12      # rational-zero blocks
 TOL_EIG = 1e-8    # eigen / rank
 TOLREJ = 1e-6     # rejector floor
 
-DOCS = os.environ.get("KCPT_DOCS", os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "docs"))
+DOCS = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "docs"))
 U9_NOTE = "KCPT_CHIRAL_PARITY_COMMON_SIGN_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-19.md"
 U10_NOTE = "KCPT_KAHLER_TRIPLE_AMBIENT_INVARIANT_METRIC_SYMPLECTIC_BOUNDED_THEOREM_NOTE_2026-07-19.md"
 SELF_NOTE = "KCPT_CHIRAL_PARITY_LAGRANGIAN_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-19.md"
@@ -248,14 +255,14 @@ gate("G8", nrm(Sf @ Jfull - Jfull @ Sf) > TOLREJ,
      "REJECTOR: ||S_eps J_full - J_full S_eps|| nonzero (genuine anticommutation, not both-zero)")
 gate("G9", nrm(Jfull[Ip][:, Ip]) < TOL0 and nrm(Jfull[Im][:, Im]) < TOL0,
      "J_full diagonal parity blocks vanish: J(L_+) subset L_-, J(L_-) subset L_+")
-rk = int(np.linalg.matrix_rank(Jfull[Im][:, Ip], tol=1e-9))
+rk = int(np.linalg.matrix_rank(Jfull[Im][:, Ip], tol=TOL_EIG))
 gate("G10", rk == 32, f"J_full: L_+ -> L_- is a rank-{rk} isomorphism (== 32)")
 
 # T4 -- S_eps antisymplectic reality involution
 gate("G11", nrm(Sf.T @ w @ Sf + w) < TOL0,
      "ANTISYMPLECTIC: ||S_eps^T omega S_eps + omega|| < 1e-12")
 gate("G12", nrm(Sf.T @ h @ Sf - np.conj(h)) < TOL0,
-     "REALITY/CP: ||S_eps^T h S_eps - conj(h)|| < 1e-12 (h -> conj(h) = g - i*omega)")
+     "ANTI-HOLOMORPHIC REALITY: ||S_eps^T h S_eps - conj(h)|| < 1e-12 (no physical CP identification)")
 gate("G13", nrm(h - np.conj(h)) > TOLREJ,
      "REJECTOR: ||h - conj(h)|| nonzero (omega != 0, so conj(h) != h)")
 evals, evecs = np.linalg.eig(Jfull)
@@ -270,17 +277,24 @@ cent = sum(1 for U in Gamb if eqm(U @ Seps, Seps @ U))
 gate("G15", len(Gamb) == 768 and cent == 384,
      f"|G_amb| = {len(Gamb)} == 768 and |C_G_amb(S_eps)| = {cent} == 384")
 preserve = swap = neither = 0
+centralizer_matches = True
 for U in Gamb:
     col_img = np.argmax(np.abs(U), axis=0)        # image site of each column (signed perm)
-    par = eps[col_img[Ip]]                        # parity of the images of the L_+ basis
-    if np.all(par == 1):
+    par_p = eps[col_img[Ip]]                      # parity of images of the L_+ basis
+    par_m = eps[col_img[Im]]                      # parity of images of the L_- basis
+    is_preserve = np.all(par_p == 1) and np.all(par_m == -1)
+    is_swap = np.all(par_p == -1) and np.all(par_m == 1)
+    commutes = eqm(U @ Seps, Seps @ U)
+    centralizer_matches = centralizer_matches and (is_preserve == commutes) and (is_swap != commutes)
+    if is_preserve:
         preserve += 1
-    elif np.all(par == -1):
+    elif is_swap:
         swap += 1
     else:
         neither += 1
-gate("G16", neither == 0 and preserve + swap == 768 and preserve == 384 == cent and swap == 384,
-     f"AMBIENT INDEX-2 GRADING: preserve {preserve} (== centralizer 384), swap {swap}, neither {neither}; 384+384==768")
+gate("G16", centralizer_matches and neither == 0 and preserve + swap == 768
+     and preserve == 384 == cent and swap == 384,
+     f"AMBIENT INDEX-2 GRADING: preserve {preserve} (elementwise == centralizer 384), swap {swap}, neither {neither}")
 
 # T6 -- orientation neutrality over the SAME polarization
 gate("G17a", nrm(Sf @ Jalt @ Sf + Jalt) < TOL0,

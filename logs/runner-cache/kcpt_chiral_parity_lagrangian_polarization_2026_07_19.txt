@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_chiral_parity_lagrangian_polarization_2026_07_19.py
-runner_sha256: dd18736504ae7ea3ecc9b1a18cdc0476f285a673d0444b18f6aec835800fcf25
+runner_sha256: 5d91ed5d983558817952d47df2f5bca11129ab2c35673c58e55ce64078e9193d
+input_fingerprint_sha256: dc0ce303249b061431627570c8967e43a99095b6a2f775d295ab89b713f11fd8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 23.58
+elapsed_sec: 22.47
 status: ok
 ----- stdout -----
 PASS G1 - S_eps real orthogonal involution: S^2=I, S^T S=I, trace=0, entries in {-1,+1}
@@ -17,11 +18,11 @@ PASS G8 - REJECTOR: ||S_eps J_full - J_full S_eps|| nonzero (genuine anticommuta
 PASS G9 - J_full diagonal parity blocks vanish: J(L_+) subset L_-, J(L_-) subset L_+
 PASS G10 - J_full: L_+ -> L_- is a rank-32 isomorphism (== 32)
 PASS G11 - ANTISYMPLECTIC: ||S_eps^T omega S_eps + omega|| < 1e-12
-PASS G12 - REALITY/CP: ||S_eps^T h S_eps - conj(h)|| < 1e-12 (h -> conj(h) = g - i*omega)
+PASS G12 - ANTI-HOLOMORPHIC REALITY: ||S_eps^T h S_eps - conj(h)|| < 1e-12 (no physical CP identification)
 PASS G13 - REJECTOR: ||h - conj(h)|| nonzero (omega != 0, so conj(h) != h)
 PASS G14 - ANTI-HOLOMORPHIC: +i eigenspace dim 32==32; S_eps sends it to the -i eigenspace (< 1e-8)
 PASS G15 - |G_amb| = 768 == 768 and |C_G_amb(S_eps)| = 384 == 384
-PASS G16 - AMBIENT INDEX-2 GRADING: preserve 384 (== centralizer 384), swap 384, neither 0; 384+384==768
+PASS G16 - AMBIENT INDEX-2 GRADING: preserve 384 (elementwise == centralizer 384), swap 384, neither 0
 PASS G17a - ORIENTATION NEUTRALITY (a): ||S_eps J_alt S_eps + J_alt|| < 1e-12
 PASS G17b - ORIENTATION NEUTRALITY (b): J_alt also exchanges the same L_+- (diagonal parity blocks = 0)
 PASS G17c - REJECTOR (non-vacuity): J_full - J_alt = 2 J_bulk, nonzero (the two orientations genuinely differ)

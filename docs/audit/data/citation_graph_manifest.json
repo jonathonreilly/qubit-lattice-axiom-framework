@@ -1,5 +1,5 @@
 {
- "edge_count": 14939,
+ "edge_count": 14938,
  "node_count": 4453,
  "nodes": {
   "3d_correction_master_note": {
@@ -1595,8 +1595,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "f06455e7e815",
-   "out_degree": 313
+   "deps_hash": "553abc7bbdac",
+   "out_degree": 312
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -6918,6 +6918,10 @@
    "deps_hash": "014a171441f6",
    "out_degree": 5
   },
+  "kcpt_chiral_parity_lagrangian_polarization_bounded_theorem_note_2026-07-19": {
+   "deps_hash": "9e478d1e19b0",
+   "out_degree": 2
+  },
   "kcpt_corner_carrier_antilinear_nonhermitian_kreal_readout_classification_bounded_theorem_note_2026-07-18": {
    "deps_hash": "08a54366d6a4",
    "out_degree": 4
@@ -8869,10 +8873,6 @@
   "microcausality_all_time_volume_uniform_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18": {
    "deps_hash": "24f1d3024687",
    "out_degree": 8
-  },
-  "microcausality_directional_tilt_axis_cone_refinement_bounded_theorem_note_2026-07-18": {
-   "deps_hash": "13b131bdf713",
-   "out_degree": 2
   },
   "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09": {
    "deps_hash": "39d65aeb687b",

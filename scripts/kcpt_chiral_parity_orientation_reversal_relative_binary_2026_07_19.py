@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""KCPT Unit 9 runner (DRAFT for self-verification before spec embed).
+"""KCPT Unit 9 runner.
 
-Chiral parity S_eps = diag((-1)^{x1+x2+x3}) (staggered Gamma_5) on the L=4,
+Chiral parity S_eps = diag((-1)^{x1+x2+x3}) (staggered chiral grading) on the L=4,
 N=64 staggered lattice.  Establishes:
 
   T1  S_eps is a real involution that ANTICOMMUTES with the staggered
@@ -14,8 +14,8 @@ N=64 staggered lattice.  Establishes:
       real J_full).
   T5  <G_amb, S_eps> has order 1536 = 2*768; every element locks kernel-sign
       == bulk-sign, so it sends J_full -> +-J_full only (census 768 / 768).
-  T6  therefore the relative kernel<->bulk orientation (J_full vs J_alt) is a
-      free binary, unreached by the full lattice+chiral symmetry group.
+  T6  therefore the aligned-bulk relative sign (J_full vs J_alt) is preserved
+      and the two members are not related by the full lattice+chiral group.
 
 All load-bearing gates are exact integer.  Float gates are labelled
 [FLOAT SANITY] and are not load-bearing.
@@ -166,6 +166,27 @@ def eqm(a, b):
     return np.array_equal(a, b)
 
 
+def rank_mod(a, p=101):
+    """Exact row rank over F_p, used as a rational-rank lower certificate."""
+    b = np.array(a, dtype=np.int64, copy=True) % p
+    nrow, ncol = b.shape
+    rank = 0
+    for col in range(ncol):
+        pivot = next((row for row in range(rank, nrow) if b[row, col]), None)
+        if pivot is None:
+            continue
+        if pivot != rank:
+            b[[rank, pivot]] = b[[pivot, rank]]
+        b[rank] = (b[rank] * pow(int(b[rank, col]), -1, p)) % p
+        for row in range(nrow):
+            if row != rank and b[row, col]:
+                b[row] = (b[row] - int(b[row, col]) * b[rank]) % p
+        rank += 1
+        if rank == nrow:
+            break
+    return rank
+
+
 def closure_amb(gs):
     gs = [g.copy() for g in gs]
     elts = {g.tobytes(): g for g in gs}
@@ -224,7 +245,11 @@ gate("B0.8", self_txt != "" and all(v == 1 for v in linkcount.values()),
 # ============================ B1: construction sanity ========================
 gate("B1.1", eqm(D2.T, -D2) and set(np.unique(D2)) <= {-1, 0, 1},
      "D2^T == -D2, entries in {-1,0,1} (antisymmetric staggered adjacency)")
-gate("B1.2", np.linalg.matrix_rank(D2) == 56, "rank(D2) == 56 (kernel dim 8)")
+rank_lower = rank_mod(D2) == 56
+rank_upper = eqm(D2 @ V8, np.zeros((N, 8), dtype=np.int64)) \
+             and eqm(V8.T @ V8, 64 * np.eye(8, dtype=np.int64))
+gate("B1.2", rank_lower and rank_upper,
+     "EXACT: rank(D2)==56 (rank mod 101 lower bound; 8 independent integer null vectors upper bound)")
 gate("B1.3", eqm(V8.T @ V8, 64 * np.eye(8, dtype=np.int64)) and eqm(D2 @ V8, np.zeros((N, 8), dtype=np.int64)),
      "V8^T V8 == 64 I_8 and D2 V8 == 0")
 gate("B1.4", eqm(J64 @ J64, -(64 ** 2) * np.eye(8, dtype=np.int64)),
@@ -233,11 +258,17 @@ gate("B1.5", eqm(Jker_int, V8 @ J64 @ V8.T), "Jker_int == V8 J64 V8^T (integer k
 T200 = perm(lambda x: (x[0] - 2, x[1], x[2]))
 T020 = perm(lambda x: (x[0], x[1] - 2, x[2]))
 T002 = perm(lambda x: (x[0], x[1], x[2] - 2))
+I64 = np.eye(N, dtype=np.int64)
+projector_resolution = all(eqm(Q[m] @ Q[m], Nm[m] * Q[m]) for m in range(4)) \
+    and all(eqm(Q[m] @ Q[mp], np.zeros((N, N), dtype=np.int64))
+            for m in range(4) for mp in range(m + 1, 4)) \
+    and eqm(sum((384 // Nm[m]) * Q[m] for m in range(4)), 384 * I64) \
+    and [int(np.trace(Q[m]) // Nm[m]) for m in range(4)] == [8, 24, 24, 8]
 gate("B1.6",
-     sorted(set(int(round(v)) for v in np.linalg.eigvalsh(M))) == [-12, -8, -4, 0]
-     and eqm(M, 2 * (T200 + T020 + T002) - 6 * np.eye(N, dtype=np.int64))
+     projector_resolution
+     and eqm(M, 2 * (T200 + T020 + T002) - 6 * I64)
      and bool(np.all(np.diag(M) == -6)),
-     "M=D2@D2: eigs {0,-4,-8,-12}, M==2(T200+T020+T002)-6I, diag==-6")
+     "EXACT: M spectrum 0^8,-4^24,-8^24,-12^8 by integer projector resolution; M==2(T200+T020+T002)-6I")
 gate("B1.7", eqm(A[0], np.zeros((N, N), dtype=np.int64)) and all(np.any(A[m] != 0) for m in (1, 2, 3)),
      "A_0 == 0 (kernel carrier vanishes); A_1,A_2,A_3 nonzero")
 
@@ -247,13 +278,13 @@ gate("B2.1", np.count_nonzero(Seps - np.diag(np.diag(Seps))) == 0 and set(np.uni
 gate("B2.2", eqm(Seps @ Seps, np.eye(N, dtype=np.int64)), "S_eps^2 == I")
 gate("B2.3", int(np.trace(Seps)) == 0, "trace(S_eps) == 0")
 gate("B2.4", eqm(np.diag(Seps), np.array([(-1) ** int(coords[i].sum()) for i in range(N)])),
-     "S_eps == diag((-1)^{x1+x2+x3}) (staggered Gamma_5)")
+     "S_eps == diag((-1)^{x1+x2+x3}) (staggered chiral grading)")
 
 # ============================ B3: chiral anticommutation ======================
 gate("B3.1", eqm(Seps @ D2 @ Seps, -D2), "CHIRAL: S_eps D2 S_eps == -D2 (anticommutes)")
 gate("B3.2", eqm(Seps @ M @ Seps, M), "S_eps M S_eps == +M (commutes with M=D2^2)")
 gate("B3.3", all(eqm(Seps @ Q[m] @ Seps, Q[m]) for m in range(4)),
-     "S_eps Q_m S_eps == Q_m for all m (spectral projectors fixed)")
+     "S_eps Q_m S_eps == Q_m for all m (drop-one polynomials, hence P_m=Q_m/N_m, fixed)")
 gate("B3.4", not eqm(Seps @ D2 @ Seps, D2), "rejector: S_eps D2 S_eps != +D2 (genuine anticommutation)")
 
 # ============================ B4: kernel reversal + witness ==================
@@ -285,7 +316,7 @@ gate("B6.2",
      np.max(np.abs(K_iI + iI)) < 1e-12
      and np.max(np.abs(S_iI - iI)) < 1e-12
      and np.max(np.abs(K_iI - S_iI)) > 0.5,
-     "[STRUCTURAL] antilinear K conjugates i (iI -> -iI); linear S_eps preserves it (iI -> +iI); opposite action")
+     "[FLOAT SANITY][STRUCTURAL] antilinear K conjugates i (iI -> -iI); linear S_eps preserves it (iI -> +iI)")
 s6a = float(np.max(np.abs(Seps.astype(float) @ Jfullf @ Seps.astype(float) + Jfullf)))
 s6b = float(np.max(np.abs(Seps.astype(float) @ Jaltf @ Seps.astype(float) + Jaltf)))
 gate("B6.3", s6a < 1e-9 and s6b < 1e-9,
@@ -324,10 +355,10 @@ gate("B7.5", n_plus == 768 and n_minus == 768,
 gate("B8.1", np.any(Jker_int != 0),
      "EXACT: -J_full != J_alt  (since -J_full - J_alt = -2 J_ker, and J_ker != 0)")
 gate("B8.2", np.any(A[1] != 0),
-     "EXACT: J_full != J_alt  (since J_full - J_alt = 2 J_bulk, and B_1 != 0)")
+     "EXACT: J_full != J_alt  (since J_full - J_alt = 2 J_bulk, and A_1 != 0)")
 no_reach_alt = all(not (sk == -sb) for sk, sb in signs)     # signs never opposite => J_alt unreachable
 gate("B8.3", no_reach_alt and n_plus + n_minus == 1536,
-     "EXACT: no h in <G_amb,S_eps> has opposite kernel/bulk signs => J_alt unreachable (orbit is {+-J_full})")
+     "EXACT: no h in <G_amb,S_eps> has opposite kernel/common-bulk signs => aligned J_alt unreachable (orbit {+-J_full})")
 # [FLOAT SANITY] the 16-member sign family all square to -I; orbit of J_full is 2 of 16
 sq_ok = True
 for ek in (+1, -1):
@@ -342,3 +373,4 @@ gate("B8.4", sq_ok,
      "[FLOAT SANITY] all 16 sign-members J(e_ker,e_1,e_2,e_3) square to -I (S_eps orbit reaches 2 of 16)")
 
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+raise SystemExit(1 if FAIL else 0)

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_chiral_parity_orientation_reversal_relative_binary_2026_07_19.py
-runner_sha256: 336c3c6fdea52e0e531dab22fa913c6379ba6228e3be71371f70cf79044e5dc5
+runner_sha256: b0562c2515019f5ad00b33182e7ea58f2870f68d4c0996d6ed24d553cefb403d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 19.96
+elapsed_sec: 28.11
 status: ok
 ----- stdout -----
 [B0.1] PASS - Unit 8 note contains 'J_full = J_ker + J_bulk'
@@ -15,19 +15,19 @@ status: ok
 [B0.7] PASS - ambient note contains 'the ambient group `G_amb` of order `768`'
 [B0.8] PASS - self-note markdown-links exactly the 5 deps once each: {'KCPT_TOTAL_COMPLEX_STRUCTURE_AMBIENT_INVARIANT_KERNEL_BULK_ASSEMBLY_BOUNDED_THEOREM_NOTE_2026-07-19.md': 1, 'KCPT_KERNEL_INDUCED_REPRESENTATION_CENTRAL_COMPLEX_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-18.md': 1, 'KCPT_CORNER_CARRIER_LATTICE_DELIVERY_HW1_DOUBLET_PAIR_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md': 1, 'MINIMAL_AXIOMS_2026-06-29.md': 1, 'KCPT_AMBIENT_LATTICE_SYMMETRY_KERNEL_ISOLATION_AVERAGED_COMPLEX_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-19.md': 1}
 [B1.1] PASS - D2^T == -D2, entries in {-1,0,1} (antisymmetric staggered adjacency)
-[B1.2] PASS - rank(D2) == 56 (kernel dim 8)
+[B1.2] PASS - EXACT: rank(D2)==56 (rank mod 101 lower bound; 8 independent integer null vectors upper bound)
 [B1.3] PASS - V8^T V8 == 64 I_8 and D2 V8 == 0
 [B1.4] PASS - J64 J64 == -64^2 I_8 (monomial squares to -I: J_ker^2 = -P_ker)
 [B1.5] PASS - Jker_int == V8 J64 V8^T (integer kernel lift)
-[B1.6] PASS - M=D2@D2: eigs {0,-4,-8,-12}, M==2(T200+T020+T002)-6I, diag==-6
+[B1.6] PASS - EXACT: M spectrum 0^8,-4^24,-8^24,-12^8 by integer projector resolution; M==2(T200+T020+T002)-6I
 [B1.7] PASS - A_0 == 0 (kernel carrier vanishes); A_1,A_2,A_3 nonzero
 [B2.1] PASS - S_eps diagonal with entries in {-1,+1}
 [B2.2] PASS - S_eps^2 == I
 [B2.3] PASS - trace(S_eps) == 0
-[B2.4] PASS - S_eps == diag((-1)^{x1+x2+x3}) (staggered Gamma_5)
+[B2.4] PASS - S_eps == diag((-1)^{x1+x2+x3}) (staggered chiral grading)
 [B3.1] PASS - CHIRAL: S_eps D2 S_eps == -D2 (anticommutes)
 [B3.2] PASS - S_eps M S_eps == +M (commutes with M=D2^2)
-[B3.3] PASS - S_eps Q_m S_eps == Q_m for all m (spectral projectors fixed)
+[B3.3] PASS - S_eps Q_m S_eps == Q_m for all m (drop-one polynomials, hence P_m=Q_m/N_m, fixed)
 [B3.4] PASS - rejector: S_eps D2 S_eps != +D2 (genuine anticommutation)
 [B4.1] PASS - CRUX: S_eps J_ker S_eps == -J_ker
 [B4.2] PASS - rejector: S_eps does NOT fix J_ker
@@ -38,7 +38,7 @@ status: ok
 [B5.1] PASS - S_eps A_m S_eps == -A_m for m=1,2,3 (every bulk carrier flipped)
 [B5.2] PASS - rejector: S_eps does NOT fix A_1
 [B6.1] PASS - EXACT: every additive piece of J_full flips (J_ker and each A_m) => S_eps J_full S_eps = -J_full
-[B6.2] PASS - [STRUCTURAL] antilinear K conjugates i (iI -> -iI); linear S_eps preserves it (iI -> +iI); opposite action
+[B6.2] PASS - [FLOAT SANITY][STRUCTURAL] antilinear K conjugates i (iI -> -iI); linear S_eps preserves it (iI -> +iI)
 [B6.3] PASS - [FLOAT SANITY] S_eps J_full S_eps == -J_full and S_eps J_alt S_eps == -J_alt (res 0.0e+00,0.0e+00)
 [B7.1] PASS - S_eps NOT in G_amb (anticommutes with D2; excluded from the D2-commutant)
 [B7.2] PASS - S_eps normalizes G_amb: S_eps g S_eps in G_amb for all 768 g
@@ -46,8 +46,8 @@ status: ok
 [B7.4] PASS - SIGN-LOCK: every h locks kernel-sign == bulk-sign (both in {+1,-1})
 [B7.5] PASS - census: 768 fix J_full (G_amb), 768 send J_full->-J_full (S_eps coset)
 [B8.1] PASS - EXACT: -J_full != J_alt  (since -J_full - J_alt = -2 J_ker, and J_ker != 0)
-[B8.2] PASS - EXACT: J_full != J_alt  (since J_full - J_alt = 2 J_bulk, and B_1 != 0)
-[B8.3] PASS - EXACT: no h in <G_amb,S_eps> has opposite kernel/bulk signs => J_alt unreachable (orbit is {+-J_full})
+[B8.2] PASS - EXACT: J_full != J_alt  (since J_full - J_alt = 2 J_bulk, and A_1 != 0)
+[B8.3] PASS - EXACT: no h in <G_amb,S_eps> has opposite kernel/common-bulk signs => aligned J_alt unreachable (orbit {+-J_full})
 [B8.4] PASS - [FLOAT SANITY] all 16 sign-members J(e_ker,e_1,e_2,e_3) square to -I (S_eps orbit reaches 2 of 16)
 TOTAL: PASS=43 FAIL=0
 

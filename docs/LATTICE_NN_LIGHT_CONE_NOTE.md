@@ -8,10 +8,11 @@
 
 **Audit authority:** independent audit lane only
 
-**Status:** proposed_retained as a finite-graph forward-reachability theorem
-only. This is not an emergent-relativity, Lorentz-invariance,
-physical-spacetime light-cone, or universal-speed-law claim. Audit outcome and
-effective status belong to the independent audit lane.
+**Status:** exact support for a finite-graph forward-reachability theorem only.
+This author-side label is not an audit verdict. The current note/runner surface
+is unaudited; audit outcome and effective status belong exclusively to the
+independent audit lane. This is not an emergent-relativity, Lorentz-invariance,
+physical-spacetime light-cone, or universal-speed-law claim.
 
 This note states the finite-graph local-update forward-reachability theorem.
 The words "light cone" in the historical filename are shorthand only. Under an

@@ -1,5 +1,5 @@
 {
- "edge_count": 14923,
+ "edge_count": 14920,
  "node_count": 4445,
  "nodes": {
   "3d_correction_master_note": {
@@ -8875,8 +8875,8 @@
    "out_degree": 4
   },
   "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08": {
-   "deps_hash": "6118e3a765d4",
-   "out_degree": 3
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "minimal_absorbing_horizon_probe_note": {
    "deps_hash": "a6594b392dd3",

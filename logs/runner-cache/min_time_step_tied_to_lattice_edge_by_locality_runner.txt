@@ -1,42 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/min_time_step_tied_to_lattice_edge_by_locality_runner.py
-runner_sha256: 645c2764d305388a31f8537c259f119e2b6cdb080c3fb0555a448403ab5c32e4
-timeout_sec: 90
+runner_sha256: adcff662547dd82a7b31fa53001347d0ae6d70d69f92f7f877d614ee89c76b70
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ==============================================================================
-A1. one TIME STEP (one local update / record tick) reaches exactly ONE EDGE
+A1. chosen 6-neighbor relation: one-step combinatorial support
 ==============================================================================
-   6-NN: one tick reaches 6 sites at graph-distance 1 = the nearest neighbors (one edge)
-   max Euclidean reach in one tick = 1.000 edge
-  [PASS] the minimum time step (one update/tick) reaches exactly one lattice edge: one tick == one hop  | a_tau <-> a_s locked by causal locality
+   6-NN: the chosen relation has 6 graph-distance-1 successors
+   max Euclidean radius of those relation edges = 1.000 lattice edge
+  [PASS] chosen 6-NN relation has six successors at Euclidean edge radius 1  | combinatorial relation fact only
 
 ==============================================================================
-A2. 'NO DIAGONALS' is LOAD-BEARING: with diagonals the tick decouples from the edge
+A2. chosen 26-neighbor comparison includes face and body diagonals
 ==============================================================================
-   26-NN (with diagonals): one tick reaches 26 sites, max Euclidean = 1.732 (sqrt3)
-   so WITH diagonals one tick spans up to sqrt3 edges => the tick no longer = one edge
-  [PASS] the no-diagonal clause locks one-tick-one-edge (diagonals would span sqrt2/sqrt3 per tick)  | the LATTICE axiom's 'no diagonals' is what pins the tie
+   26-neighbor relation: 26 graph-distance-1 successors, max Euclidean radius 1.732
+  [PASS] chosen 26-neighbor comparison reaches body-diagonal radius sqrt(3)  | comparison of declared relations, not a physical time statement
 
 ==============================================================================
-A3. the forward reachability cone advances exactly ONE EDGE PER TICK (v_front = a_s/a_tau)
+A3. chosen 6-neighbor cumulative reachability has graph radius five at step five
 ==============================================================================
-   6-NN forward cone: max graph-distance after k=5 ticks = 5 -> front = 1 edge/tick
-   group velocity v_LR = max|grad E| = 0.9351 <= 1 (the signal speed inside the cone)
-  [PASS] the reachability front is one edge per tick; v_LR is the <=1 signal speed within it  | the cone speed v_front = a_s/a_tau (records-derived ratio)
+   chosen 6-NN relation: maximum graph distance after five recurrences = 5
+  [PASS] chosen 6-NN cumulative relation reaches graph radius five at step five  | potential relation support only; not guaranteed realized differences
 
 ==============================================================================
-A4. the RATIO is derived; the ABSOLUTE scale is the clock-rate NO-GO
+A4. separate dispersion-model finite-grid group-velocity diagnostic
 ==============================================================================
-   DERIVED (the conformal CLASS): a_tau/a_s = 1/v_front = 1 tick per edge -- from causal locality
-     (the retained LATTICE_NN_LIGHT_CONE reachability) + the no-diagonal clause. The lattice minimum
-     connection and the minimum time step are the SAME elementary causal event.
-   NO-GO (the conformal FACTOR): the ABSOLUTE scale (a_s metres, a_tau seconds) is the records'
-     clock-rate no-go (post_record_clock_rate_interface): records give the tick/edge COUNT, not the
-     physical unit -> a supplied Planck/clock-reference primitive sets the absolute a_s, a_tau.
-  [PASS] min-time-step <-> lattice-edge RATIO derived (one tick = one edge); absolute scale = clock-rate no-go  | the tie is causal locality; the common scale needs a Planck primitive
+   separate model max|grad E| on the finite grid = 0.9351
+  [PASS] separate dispersion model has sampled max|grad E| <= 1  | model diagnostic only; not a Lieb-Robinson or physical-speed theorem
 
 runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
 TOTAL: PASS=4 FAIL=0

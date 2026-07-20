@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/boost_cone_apbc_sign_neutral_2026_06_23.py
-runner_sha256: 8f317fb9519a51a8d08dcc11baa954e12ad54cb4ed98a8d93ac0865df5bb09c2
+runner_sha256: 78e75f392ba8afe7083b2eb5ed4901ef9be005a10053d42a76a94ef6ab42bfaa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -25,7 +25,7 @@ status: ok
 ============================================================================
 (C) the antiperiodic-tau datum is SIGN-NEUTRAL, not sign-bearing
 ============================================================================
-[PASS] APBC wrap operator C (C^L = -I): eigenvalues lie EXACTLY on the unit circle (compact) -- max||lambda|-1| = 1.0e-15; C is a compact U(1)/Z_2 phase, NOT a boost (off-circle)
+[PASS] APBC wrap operator C (C^L = -I): eigenvalues lie EXACTLY on the unit circle (compact) -- max||lambda|-1| = 1.3e-15; C is a compact U(1)/Z_2 phase, NOT a boost (off-circle)
 [PASS] the Z_2 wrap holonomy group {+1,-1} has NO element squaring to -1 (cannot host e_4) -- eps=-1 needs e_4^2=-1, which lives in the Clifford fiber (i in gamma^j=i gamma^E_j), not the base Z_2
 [PASS] the tau<->x1 exchange W is REAL-orthogonal (W W^T = I, det = +-1) -- det(W) = -1; a real-orthogonal map preserves the Euclidean form -> transports APBC across axes with NO sign flip
 [PASS] => APBC carries WHICH axis wraps (axis-labeling), not WHAT signature in this check -- consistent with the SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER axis-supply scope
@@ -48,18 +48,18 @@ SUMMARY
 ============================================================================
 The named checked sub-routes to eps=e_4^2=-1 from the boundary datum / cone are mapped:
   (A) boost-cone-automorphism is CIRCULAR (boost-stabilizer EXISTS iff a metric sign is -1 = eps);
-  (B) the discrete record-cone is a polytope whose automorphism group is COMPACT
+  (B) the chosen discrete reachability polytope has no hyperbolic boost symmetry
       (a hyperbolic boost shears the l1/l_inf cone for spatial dim >= 2);
   (C) the antiperiodic-tau datum is SIGN-NEUTRAL: compact unit-circle wrap, the Z_2
       group has no sqrt(-1), and the time<->space exchange is real-orthogonal
       (axis-labeling, not signature); eps=-1 lives in the Clifford fiber (the Wick i);
   (D) the peripheral phase is a compact SO(2) angle, not a boost (wrong generator class);
   (E) and independently, the on-site local algebra does not force the boost.
-So eps=-1 remains a separate binary input/admission if the lane uses Lorentzian signature.
+So eps=-1 remains a separate conditional input with no premise weight if the lane uses Lorentzian signature.
 A remaining firewall-clean opening is an EMERGENT non-compact symmetry of the
 record-formation DYNAMICS (the S4-transport note's open gate, owner-framing-gated),
 orthogonal to the static cone, the boundary datum, and the peripheral phase checked here.
-Maps sub-routes only; no primitive/admission status touched; no axiom/import.
+Maps sub-routes only; no primitive or derivation obligation changed; no axiom/import.
 
 TOTAL: PASS=16 FAIL=0
 

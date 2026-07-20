@@ -111,9 +111,9 @@ retirement, not a proof input for this band theorem, and not an audit verdict.
 
 ## Premises, with provenance (each graded honestly)
 
-- **(P1) Strictness of the realized tick** — a retained source note plus a
-  realized-tick reading, now with an exact finite-period discharge candidate.
-  The retained reachability note
+- **(P1) Strictness of the realized tick** — a finite-graph source note plus a
+  separate realized-tick reading, now with an exact finite-period discharge
+  candidate. The currently unaudited reachability note
   ([`LATTICE_NN_LIGHT_CONE_NOTE.md`](LATTICE_NN_LIGHT_CONE_NOTE.md)) defines
   R-locality with *"no arguments outside the listed dependency set"* (its
   hypothesis-side locality definition); asserting the framework's realized
@@ -345,7 +345,9 @@ winding cell" and "winding is impossible in continuous time."
 
 ## Dependencies
 
-- [LATTICE_NN_LIGHT_CONE_NOTE.md](LATTICE_NN_LIGHT_CONE_NOTE.md) — P1 (retained theorem; its locality definition, read on the realized tick).
+- [LATTICE_NN_LIGHT_CONE_NOTE.md](LATTICE_NN_LIGHT_CONE_NOTE.md) — finite-graph
+  locality definition only (currently unaudited); it does not supply a
+  realized-tick radius, a physical speed, or inherited retained status.
 - [CPT_EXACT_NOTE.md](CPT_EXACT_NOTE.md) — the retained CPT surface P3's reading transfers from.
 - [SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) — what P2 is NOT supplied by.
 - [SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md](SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md) — the transfer-relative boundary.

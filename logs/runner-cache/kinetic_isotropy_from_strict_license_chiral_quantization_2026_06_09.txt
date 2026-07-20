@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py
-runner_sha256: 2642f69602fdecaaffb3c979dfe80e6068d61bcbf5def1e7ba691a5659847ba7
+runner_sha256: a6cccdc0a027ed2614d63dc18aa256e1f7445596253d97263a7200475d2bf5f6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.12
+elapsed_sec: 1.55
 status: ok
 ----- stdout -----
 
@@ -66,7 +66,7 @@ PART H -- source-side premise-discharge wiring and status firewall
   [PASS] H2 all-period site-license packet states the finite-period flat-or-saturating discharge without status overreach  --  candidate packet narrows P1/P4 but keeps license/unitarity as named readings
   [PASS] H3 tick-unitarity packet reduces P2/P3 to spectrum-reflection transport plus channel envelope  --  candidate packet narrows P2/P3 without bundling OS0 c_t/c_s
   [PASS] H4 target source keeps primitive retirement, B-W, and audit authority firewalled  --  repair is source-side wiring only, not a retained-status claim
-  [PASS] H5 target source wires the B-W bridge-chain packets as explicit markdown dependencies  --  re-audit now has concrete upstream rows for the old B-W residual
+  [PASS] H5 target source keeps downstream B-W inspection rows out of upstream dependencies  --  re-audit sees the downstream bridge rows without reversing the source dependency graph
   [PASS] H6 B-W bridge packet reduces OS0 identification to W-IR while refuting full Wick pairing  --  B-W is no longer a naked bridge, but its residual remains named
   [PASS] H7 WIR and realization packets expose the remaining readings without primitive retirement  --  bridge residual is now record-stack/realization/unit readings, not hidden OS0 prose
 

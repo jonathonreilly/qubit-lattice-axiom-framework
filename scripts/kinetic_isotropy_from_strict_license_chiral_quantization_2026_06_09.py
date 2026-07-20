@@ -534,13 +534,13 @@ check("H4 target source keeps primitive retirement, B-W, and audit authority fir
       and "No primitive retirement or registry action" in target_text,
       "repair is source-side wiring only, not a retained-status claim")
 
-check("H5 target source wires the B-W bridge-chain packets as explicit markdown dependencies",
+check("H5 target source keeps downstream B-W inspection rows out of upstream dependencies",
       "## 2026-06-16 B-W bridge-chain source graph" in target_text
-      and "BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_CONSUMES_ONLY_IR_SLOPE_BOUNDED_THEOREM_NOTE_2026-06-10.md" in target_text
-      and "WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-06-11.md" in target_text
-      and "REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026-06-11.md" in target_text
-      and "source-side audit candidates and bridge-chain dependencies, not status authorities" in target_flat,
-      "re-audit now has concrete upstream rows for the old B-W residual")
+      and "`docs/BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_CONSUMES_ONLY_IR_SLOPE_BOUNDED_THEOREM_NOTE_2026-06-10.md`" in target_text
+      and "`docs/WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-06-11.md`" in target_text
+      and "`docs/REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026-06-11.md`" in target_text
+      and "downstream bridge-chain inspection rows, not proof inputs" in target_flat,
+      "re-audit sees the downstream bridge rows without reversing the source dependency graph")
 
 check("H6 B-W bridge packet reduces OS0 identification to W-IR while refuting full Wick pairing",
       "B-W = (T1)-(T2) exact computation + (W-IR) one named premise" in bw_flat

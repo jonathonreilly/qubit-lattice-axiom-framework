@@ -25,9 +25,9 @@ might hope to source from the per-axis `Z_2` **antiperiodic-`tau` boundary
 datum** (fermionic APBC on the temporal circle vs PBC on spatial circles). This
 note maps the checked boost-cone, boundary-datum, and peripheral-phase
 sub-routes as circular or sign-neutral. It does **not** reduce, amend, narrow,
-retire, or re-approve any registered primitive or admission, and adds no
-axiom/import. If the lane uses `eps = -1`, that sign remains a separate
-register-not-read input/admission.
+retire, or re-approve any registered primitive or derivation obligation, and
+adds no axiom/import. If the lane uses `eps = -1`, that sign remains a separate
+explicit conditional input.
 
 ## Runner-Checked Facts (`PASS=16 FAIL=0`, memory-trivial)
 
@@ -38,18 +38,23 @@ has a non-compact (boost) stabilizer generator iff exactly one sign is `-1`
 stabilizer **is** `eps = -1` — so "derive `eps` from the boost symmetry"
 presupposes the boost, i.e. presupposes the answer.
 
-**(B) The checked discrete record-causal cone admits only a compact automorphism
-group.** The cone is the Lieb-Robinson nearest-neighbor forward-reachability
-polytope `{t >= 0, ||x||_1 <= v t}` (per
-[AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_NOTE_2026-05-17.md](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_NOTE_2026-05-17.md)
-and [LATTICE_NN_LIGHT_CONE_NOTE.md](LATTICE_NN_LIGHT_CONE_NOTE.md)).
+**(B) The checked chosen discrete reachability polytope has no hyperbolic boost
+symmetry.** [LATTICE_NN_LIGHT_CONE_NOTE.md](LATTICE_NN_LIGHT_CONE_NOTE.md)
+supplies only the finite-graph recursion `C_t`; it does not identify that set
+with a record-causal, Lieb-Robinson, metric-speed, or physical-spacetime cone.
+After separately choosing the nearest-neighbor `Z^3` relation and a tick index,
+the cumulative reachability sets have the combinatorial polytope form
+`{t >= 0, ||x||_1 <= t}` in edge/tick coordinates. The Hamiltonian-side
+bound, when used, belongs to
+[AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_NOTE_2026-05-17.md](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_NOTE_2026-05-17.md).
 A hyperbolic boost preserves
-this polytope **only in 1+1**; for spatial dimension `>= 2` (the actual case) it
+this chosen polytope **only in 1+1**; for spatial dimension `>= 2` (the actual case) it
 shears the `l1`/`l_inf` cone outside itself, so it is **not** a cone
-automorphism. The surviving linear automorphisms are the finite hyperoctahedral
-(signed axis permutation) group `×` discrete time-translation — **compact**, no
-unbounded orbit. A finite-circle boundary identification cannot enlarge a compact
-group to a non-compact one.
+automorphism. The surviving linear spatial automorphisms are the finite
+hyperoctahedral (signed axis permutation) group. Discrete tick translation is
+not a boost and supplies no continuous unbounded boost orbit. A finite-circle
+boundary identification cannot enlarge this finite spatial group into a
+non-compact one.
 
 **(C) The antiperiodic-`tau` datum is sign-neutral, not sign-bearing.** Its wrap
 operator (`C^L = -I`) has eigenvalues **exactly on the unit circle**
@@ -84,15 +89,15 @@ plus a matter-attachment selector. The runner reproduces both.
 
 ## Consequence and honest boundary
 
-`eps = e_4^2 = -1` remains a separate binary input/admission if the lane uses the
-Lorentzian sign (the Wick `i` / a supplied registration-direction plus a minimal
-bridge), in the register-not-read import class alongside `r = 1/2` and the
-readout admissions. With
+`eps = e_4^2 = -1` remains a separate binary conditional input if the lane uses
+the Lorentzian sign (the Wick `i` / a supplied registration-direction plus a
+minimal bridge). It supplies no premise weight. With
 [RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23.md](RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23.md)
 and this note, the checked boundary-datum sub-lane is mapped.
 
 - This is a **negative / sub-route-mapping** result. It does not derive
-  `eps = -1`, does not change any admission's status, and touches no primitive.
+  `eps = -1`, does not close any derivation obligation, and touches no
+  primitive.
 - The boundary datum is **out of scope** of the axis-supplier no-go on the
   *signature* question — a genuine crack-shaped gap exists there — but the
   antiperiodic-`tau` datum provably cannot fill it (facts C above); that is a

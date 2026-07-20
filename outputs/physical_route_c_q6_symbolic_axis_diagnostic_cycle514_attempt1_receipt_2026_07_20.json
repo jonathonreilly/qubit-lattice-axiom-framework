@@ -1,0 +1,157 @@
+{
+  "schema": "cycle514-route-c-q6-symbolic-axis-diagnostic-attempt1-receipt-v1",
+  "date": "2026-07-20",
+  "authority": "none",
+  "audit": "unset",
+  "status": "symbolic-axis-precollision-diagnostic-complete-conditional",
+  "pass": true,
+  "artifacts": {
+    "runner": {
+      "path": "scripts/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_2026_07_20.py",
+      "sha256": "74d9231d0c78ad6c85c028cea69cc7ac29c7b1b0c04259513d7223c5e8ae19fe"
+    },
+    "dry_contract": {
+      "path": "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_dry_2026_07_20.log",
+      "sha256": "e09d664911f681a3a85f6cf180b744c4c63fb84362fe8232af6b64400903a83f",
+      "tests_passed": 14,
+      "tests_total": 14
+    },
+    "authorized_attempt1": {
+      "path": "outputs/physical_route_c_q6_symbolic_axis_diagnostic_cycle514_attempt1_2026_07_20.log",
+      "sha256": "48c37e6ec11eb9cb7278e94f825ac5ab1f5569dc6f3c9b1fd247b1fe6c698847"
+    },
+    "note": "docs/work_history/repo/review_feedback/PHYSICAL_ROUTE_C_Q6_SYMBOLIC_AXIS_DIAGNOSTIC_CYCLE514_NOTE_2026-07-20.md"
+  },
+  "frozen_parents": {
+    "cycle512_runner_sha256": "d90525f7c25c92762851ac07b9ea58c28123c378fd0fdea6ce3ab565108834fe",
+    "cycle512_receipt_sha256": "40de95deab66e3d32113d1f91cb14d9a1ac92e96fc7cae27b2ea87c56980b983",
+    "cycle513_runner_sha256": "84ccd28c0ef428a851d0f9328ba7988c13a59ac1627d218e1ca9b9ee0b01a297",
+    "cycle513_receipt_sha256": "fbae7dfced0ace45d490651dc4a36c5018743be91ac0792df8651d2f03a68fd3",
+    "cycle513_note_sha256": "4330e0b21ba86f8d5a12703292f35fa1e8fa7fc5b9b007a3b63a208e21745b1f"
+  },
+  "authorization": {
+    "single_authorized_invocation_consumed": true,
+    "old_invocation_reusable": false,
+    "only_present_authorization_variable": "CYCLE511_ROUTE_C_SCOUT_AUTHORIZATION",
+    "exact_frozen_cycle511_token_match": true,
+    "runner_integrity_sha256_match": true,
+    "new_token_or_scope_introduced": false,
+    "selector": false,
+    "refit": false
+  },
+  "result": {
+    "axes_completed": [0, 1, 2],
+    "axis_predicates_passed": 36,
+    "axis_predicates_total": 36,
+    "factor_rows_passed": 27,
+    "factor_rows_total": 27,
+    "actual_touched_cells_per_axis": [14, 14, 14],
+    "missing_touched_cells_per_axis": [0, 0, 0],
+    "unexpected_touched_cells_per_axis": [0, 0, 0],
+    "omitted_nonidentity_actions_per_axis": [0, 0, 0],
+    "matter_support_by_label_class": {
+      "II": {
+        "stored": 46425,
+        "exact": 30207,
+        "raw_update3_coin_contributions": 176286,
+        "machine_nonzero_by_axis": [35857, 35815, 35756],
+        "above_1e-14_by_axis": [30207, 30207, 30207],
+        "machine_nonzero_excess_by_axis": [5650, 5608, 5549],
+        "below_ceiling_squared_norm_by_axis": [
+          1.0539408857784601e-31,
+          1.0552907227680999e-31,
+          1.0722512480718073e-31
+        ]
+      },
+      "one_non_I": {
+        "labels": ["ID", "IX", "DI", "XI"],
+        "stored": 1800,
+        "exact": 1620,
+        "raw_update3_coin_contributions": 3456,
+        "machine_nonzero": 1800,
+        "above_1e-14": 1620,
+        "machine_nonzero_excess": 180
+      },
+      "two_non_I": {
+        "labels": ["DD", "DX", "XD", "XX"],
+        "stored": 36,
+        "exact": 36,
+        "raw_update3_coin_contributions": 36,
+        "machine_nonzero": 36,
+        "above_1e-14": 36,
+        "machine_nonzero_excess": 0
+      }
+    },
+    "mediator_named_history_support_by_label_class": {
+      "II": 4096,
+      "one_non_I": 1024,
+      "two_non_I": 256,
+      "one_history_and_one_monomial_per_configuration": true,
+      "numerical_amplitudes_consulted": false,
+      "C_S_D_nonzero_is_supplied_premise": true
+    },
+    "proper_cubic": {
+      "frames": 24,
+      "factor_state_comparisons": 216,
+      "packet_sign_census": {
+        "plus": 12,
+        "minus": 12
+      },
+      "maximum_matter_exterior_CAR_residual": 2.323425094822377e-16,
+      "maximum_mediator_hard_core_residual": 1.738403497303146e-17,
+      "exact_matter_tag_failures": 0,
+      "phase_fitted": false
+    },
+    "resource": {
+      "payload_elapsed_seconds": 61.96381025004666,
+      "external_real_seconds": 62.50,
+      "maximum_RSS_bytes": 320503808,
+      "process_swap_count": 0,
+      "resource_wall": null
+    }
+  },
+  "cycle513_diagnosis": {
+    "failing_subpredicate_established": true,
+    "failing_subpredicate": "axis-0-frozen update3 II machine-exact matter-nonzero count",
+    "axis0_expected": 35857,
+    "axis1_observed": 35815,
+    "algebraic_exact_support_all_axes": 30207,
+    "above_ceiling_support_all_axes": 30207,
+    "licensed_conclusion": "the Cycle513 axis1 compound gate failed its machine-exact-zero representation fixture",
+    "dictionary_or_accumulation_order_microcause_proven": false
+  },
+  "representation_decision": {
+    "selected": "symbolic exact support for structural support and resource proofs",
+    "numerical_role": "retained amplitude evolution and declared residual diagnostics, never structural support oracle",
+    "sparse_polynomial_DAG_now_required": false,
+    "sparse_polynomial_DAG_reopen_condition": "multiple named monomials collide or cross-branch cancellations enter generic update3 growth",
+    "physical_selector_or_schedule": false
+  },
+  "quarantine": {
+    "science_result": false,
+    "completed_update3": false,
+    "generic_update3_collision_growth_executed": false,
+    "post_collision_update3_mediator_stream_executed": false,
+    "joint_species_Schmidt_core_constructed": false,
+    "joint_species_Schmidt_rank_computed": false,
+    "forward_reverse_collision_cell_order_compared": false,
+    "full_inverse_update3_executed": false,
+    "state_orbit72_executed": false,
+    "depth5_completed": false,
+    "response_rows_executed": 0,
+    "held_rows_executed": 0,
+    "deletion_variants_executed": 0,
+    "packed_joint_constructed": false,
+    "dense_X_or_Y_constructed": false,
+    "physical_compiler_covariance_established": false,
+    "physical_parity_superselection_compiler_open": true
+  },
+  "claim_boundary": {
+    "toe_maturity_score_change": false,
+    "compiler_obstruction": false,
+    "shared_substrate_obstruction": false,
+    "minimum_content_claim": false,
+    "axiom_pressure": false,
+    "novelty_or_priority_claim": false
+  }
+}

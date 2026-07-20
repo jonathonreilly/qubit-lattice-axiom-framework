@@ -10,7 +10,8 @@ anti-holomorphic 32-planes W = ker(J_full - iI) and H_- = ker(J_full + iI), and 
 five holomorphic G_amb-idempotents {4,4,6,6,12} of the Unit-12 census.
 
 It adjoins S_eps to G_amb to form the order-1536 group H = <G_amb, S_eps> in which
-G_amb is index 2, and decomposes the FULL real carrier C^64 = W (+) H_- under H:
+G_amb is index 2, and decomposes the complexified full carrier
+V_R (x) C ~= C^64 = W (+) H_- under H:
 
   T1  C^64 = 8 (+) 8 (+) 12 (+) 12 (+) 12^+ (+) 12^- : six multiplicity-free
       constituents. The four COMPLEX-type G_amb constituents (two 4's, two 6's,
@@ -24,12 +25,13 @@ G_amb is index 2, and decomposes the FULL real carrier C^64 = W (+) H_- under H:
       chi(h) = tr(h) in Z of the actual 768 / 1536 elements. c_H = 6 (six pieces)
       rather than 5 (a single unsplit 24) IS the statement that the real 12 splits;
       every element of the coset S_eps*G_amb is traceless (Sum_coset tr^2 = 0), the
-      index-2 CP signature.                                      [G7,G8,G9]
-  T3  the 12^+/12^- split, THREE independent ways: (1) the 24-block's H-commutant
+      W <-> H_- signature inside the separately verified index-2 extension. [G7,G8,G9]
+  T3  the 12^+/12^- split, THREE complementary checks: (1) the 24-block's H-commutant
       dim = 2 (two inequivalent H-irreps); (2) its G_amb-commutant dim = 4 = M_2
       (two copies of the SAME self-conjugate real 12 under G_amb alone -- the split
       is created by the coset, not by G_amb); (3) a coset element carries opposite
-      half-characters chi_{12^-} = -chi_{12^+} on the coset (equal on G_amb) -- the
+      half-characters chi_{12^-} = -chi_{12^+} on the full coset (equal on every
+      G_amb element) -- the
       sign character chi_sgn of H/G_amb = Z/2, so 12^- = 12^+ (x) chi_sgn. [G13,G14,G15]
 
 ANTI-FABRICATION DISCIPLINE.  J_full is built ONLY from the shell/kernel machinery
@@ -39,9 +41,9 @@ parity/sign proxy stands in for it.  The commutant dimensions c_G, c_H and the
 coset trace-sum are accumulated from the REAL integer traces of the ACTUAL 768 /
 1536 group elements, NEVER from their targets; each carries wrong-value rejectors
 (c_G != 10/11/13, c_H != 5/7, coset non-vacuity + G_amb NOT all-traceless).  The
-12^+/12^- split is certified THREE genuinely independent ways -- an H-commutant
-dim, a G_amb-commutant dim, and an opposite coset half-character -- each a real
-computed quantity able to fail on its own.  Every completeness / identity gate
+12^+/12^- split is checked THREE complementary ways -- an H-commutant dim, a
+G_amb-commutant dim, and a full-group opposite-coset half-character comparison --
+each a real computed quantity able to fail on its own.  Every completeness / identity gate
 carries a discriminating rejector.  In the full 64-rep every h in H is a signed
 permutation so tr(h) in Z is an INTEGER (coset elements traceless, tr = 0);
 irrationality (+-2*sqrt(2) in Q(sqrt 2)) appears ONLY on the 24-block-RESTRICTED
@@ -286,6 +288,7 @@ SG = sum(int(np.trace(g)) ** 2 for g in Gamb)     # = |G_amb| * dim End_{G_amb}(
 SH = sum(int(np.trace(h)) ** 2 for h in Hgrp)     # = |H|     * dim End_H(C^64)
 Scoset = sum(int(np.trace(c)) ** 2 for c in coset)
 maxtr_coset = max(abs(int(np.trace(c))) for c in coset)
+maxtr_G = max(abs(int(np.trace(g))) for g in Gamb)
 cG = SG // len(Gamb)
 cH = SH // len(Hgrp)
 
@@ -371,6 +374,8 @@ dG24 = None
 ov = {"Wp": None, "Hmp": None, "Wm": None, "Hmm": None}
 coset_best = None
 gamb_gap = None
+coset_opp_gap = None
+half_char_imag = None
 for k in range(len(PW)):
     wrank = ranksW[k]
     block = PW[k] + PHm[k]
@@ -407,22 +412,21 @@ for k in range(len(PW)):
     ov["Hmp"] = float(np.trace(Pip @ PiHm).real)
     ov["Wm"] = float(np.trace(Pim @ PiW).real)
     ov["Hmm"] = float(np.trace(Pim @ PiHm).real)
-    # proof 3 (G15): a coset element carries opposite half-characters (= chi_sgn)
-    best = None
-    for c in coset:
-        cc0 = c.astype(complex)
-        ta = float(np.trace(ZhalfW[0].conj().T @ cc0 @ ZhalfW[0]).real)
-        tb = float(np.trace(ZhalfW[1].conj().T @ cc0 @ ZhalfW[1]).real)
-        if abs(ta) > 1.0 and (best is None or abs(ta) > abs(best[0])):
-            best = (ta, tb)
-    coset_best = best
-    gg = 0.0                                                     # ... while EQUAL on G_amb
-    for g in [I64i] + gens_G:
-        gc = g.astype(complex)
-        ta = float(np.trace(ZhalfW[0].conj().T @ gc @ ZhalfW[0]).real)
-        tb = float(np.trace(ZhalfW[1].conj().T @ gc @ ZhalfW[1]).real)
-        gg = max(gg, abs(ta - tb))
-    gamb_gap = gg
+    # character cross-check (G15): equal on ALL of G_amb, opposite on ALL of the
+    # coset, and real.  The accepted condition never keys on the observed +-2*sqrt(2).
+    def half_chars(x):
+        xc = x.astype(complex)
+        return (np.trace(ZhalfW[0].conj().T @ xc @ ZhalfW[0]),
+                np.trace(ZhalfW[1].conj().T @ xc @ ZhalfW[1]))
+
+    gchars = [half_chars(g) for g in Gamb]
+    cchars = [half_chars(c) for c in coset]
+    gamb_gap = max(abs(ta - tb) for ta, tb in gchars)
+    coset_opp_gap = max(abs(ta + tb) for ta, tb in cchars)
+    half_char_imag = max(abs(z.imag) for pair in gchars + cchars for z in pair)
+    coset_best = max(cchars, key=lambda pair: abs(pair[0]))
+    if abs(coset_best[0]) <= 1.0:
+        coset_best = None
 
 Hdims_sorted = sorted(Hdims)
 
@@ -479,10 +483,11 @@ gate("G8", SH == 9216 and SH % 1536 == 0 and cH == 6 and cH != 5 and cH != 7,
      f"Sum tr^2 {SH}==9216, Sum % 1536 == 0 ({SH % 1536 == 0}); REJECTORS c_H != 5 (a single unsplit "
      f"24) / != 7. THE DISCRIMINATOR:  c_H = 6  <=>  real 12 splits")
 
-gate("G9", Scoset == 0 and maxtr_coset == 0 and len(coset) == 768 and SG > 0,
+gate("G9", Scoset == 0 and maxtr_coset == 0 and len(coset) == 768 and SG > 0 and maxtr_G == 64,
      f"coset traceless: Sum_{{c in S_eps*G_amb}} tr(c)^2 = {Scoset}==0 and max|tr(c)|={maxtr_coset}==0 "
      f"[EXACT INTEGER: coset carries W <-> H_-, zero diagonal]; NON-VACUITY len(coset)={len(coset)}==768 "
-     f"and G_amb NOT all-traceless (Sum_G tr^2={SG}>0): tracelessness is coset-specific")
+     f"and G_amb NOT all-traceless (Sum_G tr^2={SG}>0, max|tr(g)|={maxtr_G}==64): tracelessness is "
+     f"coset-specific")
 
 # ---- full H-decomposition (lift 5 W-idempotents, pair with S_eps-images, restrict to H)
 sumPW = sum(PW) if PW else np.zeros((N, N), dtype=complex)
@@ -539,16 +544,20 @@ gate("G14", dG24 == 4 and dG24 != 2 and dG24 != 1,
      f"!= 2 (two distinct G_amb-irreps) / != 1. G_amb-commutant 4 (M_2, same content) vs "
      f"H-commutant 2 (split by the coset)")
 
-chi_a, chi_b = coset_best if coset_best is not None else (0.0, 0.0)
+chi_a, chi_b = coset_best if coset_best is not None else (0.0j, 0.0j)
 opp = abs(chi_a + chi_b) < 1e-6
 distinct = abs(chi_a - chi_b) > 1e-3
 gamb_equal = gamb_gap is not None and gamb_gap < 1e-6
-gate("G15", coset_best is not None and opp and distinct and gamb_equal,
-     f"PROOF 3 (opposite coset character = chi_sgn): a coset element has half-characters "
-     f"(chi_a,chi_b)=({chi_a:+.4f},{chi_b:+.4f}), |chi_a+chi_b|={abs(chi_a + chi_b):.1e}<1e-6 (opposite) "
-     f"and |chi_a-chi_b|={abs(chi_a - chi_b):.3f}>1e-3 (distinct, nonzero) -- this IS chi_sgn, so "
-     f"12^- = 12^+ (x) chi_sgn; while on G_amb the two halves are EQUAL (max gap {gamb_gap:.1e}<1e-6). "
-     f"[value +-2*sqrt(2) irrational, NOT gated -- only the opposite-sign structure]")
+coset_all_opposite = coset_opp_gap is not None and coset_opp_gap < 1e-6
+characters_real = half_char_imag is not None and half_char_imag < 1e-6
+gate("G15", coset_best is not None and opp and distinct and gamb_equal and coset_all_opposite
+     and characters_real,
+     f"CHARACTER CROSS-CHECK (opposite coset character = chi_sgn): all 768 G_amb character pairs are "
+     f"EQUAL (max complex gap {gamb_gap:.1e}<1e-6); all 768 coset pairs are OPPOSITE (max complex sum "
+     f"{coset_opp_gap:.1e}<1e-6); all half-characters are REAL (max |Im| {half_char_imag:.1e}<1e-6). "
+     f"One nonzero coset witness has (chi_a,chi_b)=({chi_a.real:+.4f},{chi_b.real:+.4f}) with "
+     f"|chi_a-chi_b|={abs(chi_a - chi_b):.3f}>1e-3 -- hence 12^- = 12^+ (x) chi_sgn. "
+     f"[observed value +-2*sqrt(2), NOT gated -- only equality/opposition, nonzero distinction, and reality]")
 
 # ---- memory-budget gate (build discipline) -------------------------------------------
 gate("G-MEM", gen_closure_G == 768 and gen_closure_H == 1536
